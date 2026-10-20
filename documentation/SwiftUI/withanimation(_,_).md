@@ -1,7 +1,8 @@
 # withAnimation(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the result of recomputing the view’s body with the provided animation.
 
@@ -22,20 +23,21 @@ func withAnimation<Result>(_ animation: Animation? = .default, _ body: () throws
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
-- [Managing user interface state](managing-user-interface-state.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
+- [Managing user interface state](./managing-user-interface-state.md)
 
 #### Discussion
 
-This function sets the given [`Animation`](animation.md) as the [`animation`](transaction/animation.md) property of the thread’s current [`Transaction`](transaction.md).
+This function sets the given [`Animation`](./animation.md) as the [`animation`](./transaction/animation.md) property of the thread’s current [`Transaction`](./transaction.md).
 
 ## See Also
 
-- [func withAnimation<Result>(Animation?, completionCriteria: AnimationCompletionCriteria, () throws -> Result, completion: () -> Void) rethrows -> Result](withanimation(_:completioncriteria:_:completion:).md)
+### Adding state-based animation to an action
+- [func withAnimation<Result>(Animation?, completionCriteria: AnimationCompletionCriteria, () throws -> Result, completion: () -> Void) rethrows -> Result](./withanimation%28_,completioncriteria,_,completion%29.md)
   Returns the result of recomputing the view’s body with the provided animation, and runs the completion when all animations are complete.
-- [struct AnimationCompletionCriteria](animationcompletioncriteria.md)
+- [struct AnimationCompletionCriteria](./animationcompletioncriteria.md)
   The criteria that determines when an animation is considered finished.
-- [struct Animation](animation.md)
+- [struct Animation](./animation.md)
   The way a view changes over time to create a smooth visual transition from one state to another.
 
 

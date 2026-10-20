@@ -1,7 +1,8 @@
 # VZSingleDirectoryShare
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the directory share for a single directory.
 
@@ -14,6 +15,10 @@ An object that defines the directory share for a single directory.
 class VZSingleDirectoryShare
 ```
 
+```objc
+@interface VZSingleDirectoryShare : VZDirectoryShare
+```
+
 #### Overview
 
 This directory share exposes a single directory from the host file system to the guest.
@@ -21,35 +26,37 @@ This directory share exposes a single directory from the host file system to the
 ## Topics
 
 ### Creating a directory share
-- [init(directory: VZSharedDirectory)](vzsingledirectoryshare/init(directory:).md)
+- [init(directory: VZSharedDirectory)](./vzsingledirectoryshare/init%28directory%29.md)
   Creates a directory share with a directory that you specify on the host.
 ### Accessing directory properties
-- [var directory: VZSharedDirectory](vzsingledirectoryshare/directory.md)
+- [var directory: VZSharedDirectory](./vzsingledirectoryshare/directory.md)
   The directory on the host to share with the guest VM.
 
 ## Relationships
 
 ### Inherits From
-- [VZDirectoryShare](vzdirectoryshare.md)
+- [VZDirectoryShare](./vzdirectoryshare.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZDirectorySharingDeviceConfiguration](vzdirectorysharingdeviceconfiguration.md)
+### Related Documentation
+- [class VZDirectorySharingDeviceConfiguration](./vzdirectorysharingdeviceconfiguration.md)
   The base class for a directory sharing device configuration.
-- [class VZMultipleDirectoryShare](vzmultipledirectoryshare.md)
+### Directory Shares
+- [class VZMultipleDirectoryShare](./vzmultipledirectoryshare.md)
   An object that describes a directory share for multiple directories.
-- [class VZSharedDirectory](vzshareddirectory.md)
+- [class VZSharedDirectory](./vzshareddirectory.md)
   A directory on the host that you can expose to a guest.
-- [class VZDirectoryShare](vzdirectoryshare.md)
+- [class VZDirectoryShare](./vzdirectoryshare.md)
   The base class for a directory share.
-- [class VZLinuxRosettaDirectoryShare](vzlinuxrosettadirectoryshare.md)
+- [class VZLinuxRosettaDirectoryShare](./vzlinuxrosettadirectoryshare.md)
   The Linux directory share for Rosetta.
 
 

@@ -1,6 +1,7 @@
 # Wrapping Text Around a Component
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Define the layout of a text component to wrap around another component.
 
@@ -15,27 +16,28 @@ Consider the following figure:
 - A `pullquote` component starts in column 4 and spans 3 columns.
 - A `pullquote` component contains an `Ancho`r object that aligns the pull quote with a character range in the second paragraph of the body component.
 
-![Screenshot of an article layout with body and pull quote.](/images/com.apple.applenews/media-4087468@2x.png)
+![Screenshot of an article layout with body and pull quote.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4087468@2x.png)
 
-> 💡 **Tip**:  For a step-by-step process for creating an inset pull quote, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md). Get started at [`Setting Up the Advanced Tutorials`](setting-up-the-advanced-tutorials.md).
+> 💡 **Tip**:  For a step-by-step process for creating an inset pull quote, see [Advanced Design Tutorial 2: Layout and Positioning](./apple-news-format-tutorials.md#Advanced-Design-Tutorial-2-Layout-and-Positioning). Get started at [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md).
 
 ## See Also
 
-- [Planning the Layout for Your Article](planning-the-layout-for-your-article.md)
+### Article Layout
+- [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md)
   Define a layout that supports the look you want for your article.
-- [Positioning the Content in Your Article](positioning-the-content-in-your-article.md)
+- [Positioning the Content in Your Article](./positioning-the-content-in-your-article.md)
   Align article components with columns in your layout.
-- [object Layout](../applenewsformat/layout.md)
+- [object Layout](https://developer.apple.com/documentation/applenewsformat/layout)
   The object for defining columns, gutters, and margins for your article’s designed width.
-- [object ComponentLayout](../applenewsformat/componentlayout.md)
+- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object Anchor](../applenewsformat/anchor.md)
+- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
   The object for anchoring one component to another component in your article’s layout.
-- [object Margin](../applenewsformat/margin.md)
+- [object Margin](https://developer.apple.com/documentation/applenewsformat/margin)
   The object for defining the space above and below a component.
-- [object AutoPlacementLayout](../applenewsformat/autoplacementlayout.md)
+- [object AutoPlacementLayout](https://developer.apple.com/documentation/applenewsformat/autoplacementlayout)
   The object for defining the margin above and below advertising components.
-- [object AdvertisingLayout](../applenewsformat/advertisinglayout.md)
+- [object AdvertisingLayout](https://developer.apple.com/documentation/applenewsformat/advertisinglayout)
   The object for defining the margin above and below advertising components.
 
 

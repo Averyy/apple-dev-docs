@@ -1,7 +1,8 @@
 # FPUIActionExtensionContext
 
 **Framework**: File Provider UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An extension context provided to File Provider UI extensions.
 
@@ -18,44 +19,49 @@ An extension context provided to File Provider UI extensions.
 class FPUIActionExtensionContext
 ```
 
+```objc
+@interface FPUIActionExtensionContext : NSExtensionContext
+```
+
 ## Mentions
 
-- [Adding Actions to the Context Menu](adding-actions-to-the-context-menu.md)
+- [Adding Actions to the Context Menu](./adding-actions-to-the-context-menu.md)
 
 ## Topics
 
 ### Completing the Action
-- [func completeRequest()](fpuiactionextensioncontext/completerequest.md)
+- [func completeRequest()](./fpuiactionextensioncontext/completerequest%28%29.md)
   Marks the action as complete.
-- [func cancelRequest(withError: any Error)](fpuiactionextensioncontext/cancelrequest(witherror:).md)
+- [func cancelRequest(withError: any Error)](./fpuiactionextensioncontext/cancelrequest%28witherror%29.md)
   Cancels the action and returns the provided error.
 ### Identifying the Domain
-- [var domainIdentifier: NSFileProviderDomainIdentifier?](fpuiactionextensioncontext/domainidentifier.md)
+- [var domainIdentifier: NSFileProviderDomainIdentifier?](./fpuiactionextensioncontext/domainidentifier.md)
   The identifier for the domain managed by the current file provider.
-- [struct NSFileProviderDomainIdentifier](../fileprovider/nsfileproviderdomainidentifier.md)
+- [struct NSFileProviderDomainIdentifier](../FileProvider/nsfileproviderdomainidentifier.md)
   A unique identifier for a file provider’s domain.
 
 ## Relationships
 
 ### Inherits From
-- [NSExtensionContext](../foundation/nsextensioncontext.md)
+- [NSExtensionContext](../Foundation/nsextensioncontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prepare(forAction: String, itemIdentifiers: [NSFileProviderItemIdentifier])](fpuiactionextensionviewcontroller/prepare(foraction:itemidentifiers:).md)
+### Working with Actions
+- [func prepare(forAction: String, itemIdentifiers: [NSFileProviderItemIdentifier])](./fpuiactionextensionviewcontroller/prepare%28foraction,itemidentifiers%29.md)
   Performs any necessary setup or configuration for the specified action.
-- [func prepare(forError: any Error)](fpuiactionextensionviewcontroller/prepare(forerror:).md)
+- [func prepare(forError: any Error)](./fpuiactionextensionviewcontroller/prepare%28forerror%29.md)
   Performs any necessary setup or configuration when an authentication error occurs.
-- [var extensionContext: FPUIActionExtensionContext](fpuiactionextensionviewcontroller/extensioncontext.md)
+- [var extensionContext: FPUIActionExtensionContext](./fpuiactionextensionviewcontroller/extensioncontext.md)
   The extension context provided by the host app.
 
 

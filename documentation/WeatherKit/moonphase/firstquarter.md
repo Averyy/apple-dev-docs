@@ -1,7 +1,8 @@
 # MoonPhase.firstQuarter
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The disk is half lit.
 
@@ -22,19 +23,20 @@ case firstQuarter
 
 ## See Also
 
-- [MoonPhase.full](moonphase/full.md)
+### Getting the moon phase
+- [MoonPhase.full](./full.md)
   The disk is fully lit where the moon is visible.
-- [MoonPhase.lastQuarter](moonphase/lastquarter.md)
+- [MoonPhase.lastQuarter](./lastquarter.md)
   The disk is half lit.
-- [MoonPhase.new](moonphase/new.md)
+- [MoonPhase.new](./new.md)
   The disk is unlit where the moon is not visible.
-- [MoonPhase.waningCrescent](moonphase/waningcrescent.md)
+- [MoonPhase.waningCrescent](./waningcrescent.md)
   The disk is partially lit as the moon is waning.
-- [MoonPhase.waningGibbous](moonphase/waninggibbous.md)
+- [MoonPhase.waningGibbous](./waninggibbous.md)
   The disk is half lit as the moon is waning.
-- [MoonPhase.waxingCrescent](moonphase/waxingcrescent.md)
+- [MoonPhase.waxingCrescent](./waxingcrescent.md)
   The disk is partially lit as the moon is waxing.
-- [MoonPhase.waxingGibbous](moonphase/waxinggibbous.md)
+- [MoonPhase.waxingGibbous](./waxinggibbous.md)
   The disk is half lit as the moon is waxing.
 
 

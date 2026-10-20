@@ -1,7 +1,8 @@
 # isStatusBarHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the status bar is currently hidden.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether the status bar is currently hidden.
 var isStatusBarHidden: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isStatusBarHidden) BOOL statusBarHidden;
+```
+
 #### Discussion
 
-To customize the status bar’s visibility for each of your view controllers, override your view controller’s [`prefersStatusBarHidden`](uiviewcontroller/prefersstatusbarhidden.md) property.
+To customize the status bar’s visibility for each of your view controllers, override your view controller’s [`prefersStatusBarHidden`](../uiviewcontroller/prefersstatusbarhidden.md) property.
 
 ## See Also
 
-- [var statusBarStyle: UIStatusBarStyle](uistatusbarmanager/statusbarstyle.md)
+### Getting the status bar configuration
+- [var statusBarStyle: UIStatusBarStyle](./statusbarstyle.md)
   The current appearance of the status bar.
 
 

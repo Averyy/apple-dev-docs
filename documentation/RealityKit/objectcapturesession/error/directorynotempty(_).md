@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Error.directoryNotEmpty(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 We cannot continue a pre-existing capture, so if an output directory is provided that already exists and it is not empty, this error is thrown.
 

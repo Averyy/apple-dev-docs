@@ -1,7 +1,8 @@
 # init(table:startingRow:rowSpan:startingColumn:columnSpan:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized text table block.
 
@@ -12,6 +13,10 @@ Returns an initialized text table block.
 
 ```swift
 init(table: NSTextTable, startingRow row: Int, rowSpan: Int, startingColumn column: Int, columnSpan: Int)
+```
+
+```objc
+- (instancetype) initWithTable:(NSTextTable *) table startingRow:(NSInteger) row rowSpan:(NSInteger) rowSpan startingColumn:(NSInteger) column columnSpan:(NSInteger) columnSpan;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ This is the designated initializer.
 
 ## See Also
 
-- [class NSTextTable](nstexttable.md)
+### Related Documentation
+- [class NSTextTable](../nstexttable.md)
   An object that represents a text table as a whole.
 
 

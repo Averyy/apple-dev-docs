@@ -1,7 +1,8 @@
 # present(for:using:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the picker with an existing capture stream, allowing for a single type of capture selection.
 
@@ -15,6 +16,10 @@ Displays the picker with an existing capture stream, allowing for a single type 
 func present(for stream: SCStream, using contentStyle: SCShareableContentStyle)
 ```
 
+```objc
+- (void) presentPickerForStream:(SCStream *) stream usingContentStyle:(SCShareableContentStyle) contentStyle;
+```
+
 ## Parameters
 
 - `stream`: The stream to display in the picker.
@@ -22,11 +27,12 @@ func present(for stream: SCStream, using contentStyle: SCShareableContentStyle)
 
 ## See Also
 
-- [func present()](sccontentsharingpicker/present.md)
+### Picker display
+- [func present()](./present%28%29.md)
   Displays the picker with no active selection for capture.
-- [func present(for: SCStream)](sccontentsharingpicker/present(for:).md)
+- [func present(for: SCStream)](./present%28for%29.md)
   Displays the picker with an already running capture stream.
-- [func present(using: SCShareableContentStyle)](sccontentsharingpicker/present(using:).md)
+- [func present(using: SCShareableContentStyle)](./present%28using%29.md)
   Displays the picker for a single type of capture selection.
 
 

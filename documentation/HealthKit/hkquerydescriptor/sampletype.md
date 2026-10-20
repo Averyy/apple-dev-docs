@@ -1,7 +1,8 @@
 # sampleType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of samples that match this descriptor.
 
@@ -20,13 +21,18 @@ The data type of samples that match this descriptor.
 var sampleType: HKSampleType { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) HKSampleType * sampleType;
+```
+
 #### Discussion
 
-For more information, see [`Data types`](data-types.md).
+For more information, see [Data types](../data-types.md).
 
 ## See Also
 
-- [var predicate: NSPredicate?](hkquerydescriptor/predicate.md)
+### Accessing Descriptor Data
+- [var predicate: NSPredicate?](./predicate.md)
   The predicate that filters samples matching this descriptor.
 
 

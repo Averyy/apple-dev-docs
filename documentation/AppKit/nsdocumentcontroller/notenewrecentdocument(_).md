@@ -1,12 +1,13 @@
 # noteNewRecentDocument(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds or replaces an Open Recent menu item corresponding to the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Adds or replaces an Open Recent menu item corresponding to the document.
 func noteNewRecentDocument(_ document: NSDocument)
 ```
 
+```objc
+- (void) noteNewRecentDocument:(NSDocument *) document;
+```
+
 #### Discussion
 
-This method constructs a URL and calls [`noteNewRecentDocumentURL(_:)`](nsdocumentcontroller/notenewrecentdocumenturl(_:).md). Subclasses might override this method to prevent certain documents or kinds of documents from getting into the list.
+This method constructs a URL and calls [`noteNewRecentDocumentURL(_:)`](./notenewrecentdocumenturl%28_%29.md). Subclasses might override this method to prevent certain documents or kinds of documents from getting into the list.
 
 ## Parameters
 
@@ -24,13 +29,14 @@ This method constructs a URL and calls [`noteNewRecentDocumentURL(_:)`](nsdocume
 
 ## See Also
 
-- [var maximumRecentDocumentCount: Int](nsdocumentcontroller/maximumrecentdocumentcount.md)
+### Managing the Open Recent Menu
+- [var maximumRecentDocumentCount: Int](./maximumrecentdocumentcount.md)
   The maximum number of items that may be presented in the standard Open Recent menu.
-- [func clearRecentDocuments(Any?)](nsdocumentcontroller/clearrecentdocuments(_:).md)
+- [func clearRecentDocuments(Any?)](./clearrecentdocuments%28_%29.md)
   Empties the recent documents list for the application.
-- [func noteNewRecentDocumentURL(URL)](nsdocumentcontroller/notenewrecentdocumenturl(_:).md)
+- [func noteNewRecentDocumentURL(URL)](./notenewrecentdocumenturl%28_%29.md)
   Adds or replaces an Open Recent menu item corresponding to the data located by the URL.
-- [var recentDocumentURLs: [URL]](nsdocumentcontroller/recentdocumenturls.md)
+- [var recentDocumentURLs: [URL]](./recentdocumenturls.md)
   The list of recent-document URLs.
 
 

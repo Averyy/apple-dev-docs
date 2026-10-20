@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvents
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of dock accessory events.
 
@@ -20,19 +21,19 @@ struct AccessoryEvents
 ## Topics
 
 ### Structures
-- [DockAccessory.AccessoryEvents.Iterator](dockaccessory/accessoryevents-swift.struct/iterator.md)
+- [DockAccessory.AccessoryEvents.Iterator](./accessoryevents-swift.struct/iterator.md)
   An object that allows iteration over dock accessory events.
 ### Instance Methods
-- [func makeAsyncIterator() -> DockAccessory.AccessoryEvents.Iterator](dockaccessory/accessoryevents-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> DockAccessory.AccessoryEvents.Iterator](./accessoryevents-swift.struct/makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory events.
 ### Type Aliases
-- [DockAccessory.AccessoryEvents.Element](dockaccessory/accessoryevents-swift.struct/element.md)
+- [DockAccessory.AccessoryEvents.Element](./accessoryevents-swift.struct/element.md)
   A dock accessory event.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

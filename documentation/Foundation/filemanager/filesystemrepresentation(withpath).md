@@ -1,7 +1,8 @@
 # fileSystemRepresentation(withPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a C-string representation of a given path that properly encodes Unicode strings for use by the file system.
 
@@ -20,6 +21,10 @@ Returns a C-string representation of a given path that properly encodes Unicode 
 func fileSystemRepresentation(withPath path: String) -> UnsafePointer<CChar>
 ```
 
+```objc
+- (const char *) fileSystemRepresentationWithPath:(NSString *) path;
+```
+
 #### Return Value
 
 A C-string representation of `path` that properly encodes Unicode strings for use by the file system.
@@ -36,8 +41,9 @@ This method raises an exception if `path` is `nil` or contains the empty string.
 
 ## See Also
 
-- [func string(withFileSystemRepresentation: UnsafePointer<CChar>, length: Int) -> String](filemanager/string(withfilesystemrepresentation:length:).md)
-  Returns an [`NSString`](nsstring.md) object whose contents are derived from the specified C-string path.
+### Converting file paths to strings
+- [func string(withFileSystemRepresentation: UnsafePointer<CChar>, length: Int) -> String](./string%28withfilesystemrepresentation,length%29.md)
+  Returns an [`NSString`](../nsstring.md) object whose contents are derived from the specified C-string path.
 
 
 ---

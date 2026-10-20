@@ -1,7 +1,8 @@
 # filterBy
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate used to filter which models are included in the results.
 
@@ -22,20 +23,21 @@ final var filterBy: Predicate<Element>? { get set }
 
 #### Discussion
 
-Setting this property updates the underlying [`fetchDescriptor`](resultsobserver/fetchdescriptor.md)’s predicate and immediately refetches on the calling actor — results are synchronously up to date before the setter returns. Set to `nil` to remove filtering and include all models of this type.
+Setting this property updates the underlying [`fetchDescriptor`](./fetchdescriptor.md)’s predicate and immediately refetches on the calling actor — results are synchronously up to date before the setter returns. Set to `nil` to remove filtering and include all models of this type.
 
 ## See Also
 
-- [var fetchDescriptor: FetchDescriptor<Element>](resultsobserver/fetchdescriptor.md)
+### Accessing observer properties
+- [var fetchDescriptor: FetchDescriptor<Element>](./fetchdescriptor.md)
   The fetch descriptor used to query the model context.
-- [let modelContext: ModelContext](resultsobserver/modelcontext.md)
+- [let modelContext: ModelContext](./modelcontext.md)
   The model context from which models are fetched.
-- [var sortBy: [SortDescriptor<Element>]](resultsobserver/sortby.md)
+- [var sortBy: [SortDescriptor<Element>]](./sortby.md)
   The sort descriptors used to order the results.
-- [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
+- [var sectionBy: PartialKeyPath<Element>?](./sectionby.md)
   The key path on the element used to determine section grouping.
-- [var sections: SectionedResults<Element, SectionTitle>?](resultsobserver/sections.md)
-  The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
+- [var sections: SectionedResults<Element, SectionTitle>?](./sections.md)
+  The sections computed from the current results, grouped by [`sectionBy`](./sectionby.md).
 
 
 ---

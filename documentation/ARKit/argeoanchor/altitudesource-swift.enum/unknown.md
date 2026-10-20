@@ -1,7 +1,8 @@
 # ARGeoAnchor.AltitudeSource.unknown
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Altitude isn’t yet set.
 
@@ -15,13 +16,18 @@ Altitude isn’t yet set.
 case unknown
 ```
 
+```c
+ARAltitudeSourceUnknown
+```
+
 ## See Also
 
-- [ARGeoAnchor.AltitudeSource.precise](argeoanchor/altitudesource-swift.enum/precise.md)
+### Sources
+- [ARGeoAnchor.AltitudeSource.precise](./precise.md)
   The framework sets the altitude using a high-resolution digital-elevation model.
-- [ARGeoAnchor.AltitudeSource.coarse](argeoanchor/altitudesource-swift.enum/coarse.md)
+- [ARGeoAnchor.AltitudeSource.coarse](./coarse.md)
   The framework sets the altitude using a coarse digital-elevation model.
-- [ARGeoAnchor.AltitudeSource.userDefined](argeoanchor/altitudesource-swift.enum/userdefined.md)
+- [ARGeoAnchor.AltitudeSource.userDefined](./userdefined.md)
   The app defines the altitude.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets or sets the component of the specified type.
 
@@ -11,7 +12,7 @@ Gets or sets the component of the specified type.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,17 @@ Gets or sets the component of the specified type.
 @preconcurrency subscript<T>(componentType: T.Type, backDeploy: Void = ()) -> T? where T : Component { get set }
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency subscript<T>(componentType: T.Type, backDeploy: Void = ()) -> T? where T : _ImplicitlyAnimatableBuiltinComponent { get set }
+```
+
 ## See Also
 
-- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-8y2jv.md)
+### Accessing components
+- [subscript<T>(componentType _: T.Type) -> T?](./subscript%28componenttype%29-8y2jv.md)
   Gets or sets the component of the specified type.
 
 

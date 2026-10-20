@@ -1,7 +1,8 @@
 # HomeScreenLayout
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the Home Screen layout.
 
@@ -13,7 +14,7 @@ The payload that configures the Home Screen layout.
 
 ## Declaration
 
-```swift
+```
 object HomeScreenLayout
 ```
 
@@ -25,9 +26,9 @@ This payload defines a layout of apps, folders, and web clips for the Home Scree
 
 If a Home Screen layout puts more than four items in the iPhone Dock the location of the fifth and succeeding items may be undefined but they will not be omitted.
 
-To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restrictions`](restrictions.md).
+To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restrictions`](./restrictions.md).
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +40,7 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -180,7 +181,7 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 ## Topics
 
 ### Objects
-- [object HomeScreenLayout.IconItem](homescreenlayout/iconitem.md)
+- [object HomeScreenLayout.IconItem](./homescreenlayout/iconitem.md)
   An array of dictionaries that conform to the icon dictionary format.
 
 ## Properties
@@ -190,23 +191,24 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Desktop](desktop.md)
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

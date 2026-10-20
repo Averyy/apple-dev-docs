@@ -1,7 +1,8 @@
 # AVVideoAverageNonDroppableFrameRateKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The desired average number of non-droppable frames to be encoded for each second of video.
 
@@ -19,9 +20,14 @@ The desired average number of non-droppable frames to be encoded for each second
 let AVVideoAverageNonDroppableFrameRateKey: String
 ```
 
+```c
+extern NSString * const AVVideoAverageNonDroppableFrameRateKey;
+```
+
 ## See Also
 
-- [let AVVideoExpectedSourceFrameRateKey: String](avvideoexpectedsourceframeratekey.md)
+### Frame rate
+- [let AVVideoExpectedSourceFrameRateKey: String](./avvideoexpectedsourceframeratekey.md)
   The expected source frame rate.
 
 

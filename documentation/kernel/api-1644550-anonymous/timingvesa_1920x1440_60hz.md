@@ -1,14 +1,15 @@
 # timingVESA_1920x1440_60hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 timingVESA_1920x1440_60hz = 304
 ```
 

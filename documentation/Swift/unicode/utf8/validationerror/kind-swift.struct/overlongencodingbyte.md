@@ -1,7 +1,8 @@
 # overlongEncodingByte
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A byte in an overlong encoding sequence
 

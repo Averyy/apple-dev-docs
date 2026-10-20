@@ -1,16 +1,19 @@
 # UserAclListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A container for ACL call responses.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object UserAclListResponse
 ```
 
@@ -22,15 +25,16 @@ object UserAclListResponse
 
 ## See Also
 
-- [Get User ACL](get-user-acl.md)
+### Access Control List
+- [Get User ACL](./get-user-acl.md)
   Fetches roles and organizations that the API has access to.
-- [object UserAcl](useracl.md)
+- [object UserAcl](./useracl.md)
   The response to ACL requests.
-- [Get Me Details](get-me-details.md)
+- [Get Me Details](./get-me-details.md)
   Fetches details of an API caller.
-- [object MeDetail](medetail.md)
+- [object MeDetail](./medetail.md)
   The API caller identifiers.
-- [object MeDetailResponse](medetailresponse.md)
+- [object MeDetailResponse](./medetailresponse.md)
   The response from me detail calls.
 
 

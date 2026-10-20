@@ -1,7 +1,8 @@
 # playerViewController(_:didSelect:in:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user selects a media option from a media selection group.
 
@@ -12,6 +13,10 @@ Tells the delegate when the user selects a media option from a media selection g
 
 ```swift
 optional func playerViewController(_ playerViewController: AVPlayerViewController, didSelect mediaSelectionOption: AVMediaSelectionOption?, in mediaSelectionGroup: AVMediaSelectionGroup)
+```
+
+```objc
+- (void) playerViewController:(AVPlayerViewController *) playerViewController didSelectMediaSelectionOption:(AVMediaSelectionOption *) mediaSelectionOption inMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
 ## Parameters

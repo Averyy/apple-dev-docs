@@ -1,7 +1,8 @@
 # IOUSBHostStream
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class responsible for sending stream data for function drivers.
 
@@ -15,45 +16,50 @@ The class responsible for sending stream data for function drivers.
 class IOUSBHostStream
 ```
 
+```objc
+@interface IOUSBHostStream : IOUSBHostIOSource
+```
+
 #### Overview
 
-The [`copyStream(withStreamID:)`](iousbhostpipe/copystream(withstreamid:).md) method creates stream objects.
+The [`copyStream(withStreamID:)`](./iousbhostpipe/copystream%28withstreamid%29.md) method creates stream objects.
 
 ## Topics
 
 ### Sending I/O
-- [typealias IOUSBHostCompletionHandler](iousbhostcompletionhandler.md)
+- [typealias IOUSBHostCompletionHandler](./iousbhostcompletionhandler.md)
   The completion handler for asynchronous control, bulk, and interrupt transfers.
-- [func enqueueIORequest(with: NSMutableData?, completionHandler: ((IOReturn, Int) -> Void)?) throws](iousbhoststream/enqueueiorequest(with:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData?, completionHandler: ((IOReturn, Int) -> Void)?) throws](./iousbhoststream/enqueueiorequest%28with,completionhandler%29.md)
   Enqueues an input/output request on the stream.
-- [func abort(with: IOUSBHostAbortOption) throws](iousbhoststream/abort(with:).md)
+- [func abort(with: IOUSBHostAbortOption) throws](./iousbhoststream/abort%28with%29.md)
   Aborts pending input/output requests.
-- [func abort() throws](iousbhoststream/abort.md)
+- [func abort() throws](./iousbhoststream/abort%28%29.md)
   Aborts pending input/output requests synchronously.
 ### Getting the Pipe Object
-- [var hostPipe: IOUSBHostPipe](iousbhoststream/hostpipe.md)
+- [var hostPipe: IOUSBHostPipe](./iousbhoststream/hostpipe.md)
   The pipe that creates the stream.
 ### Getting the Stream ID
-- [var streamID: Int](iousbhoststream/streamid.md)
+- [var streamID: Int](./iousbhoststream/streamid.md)
   The ID for the stream.
 
 ## Relationships
 
 ### Inherits From
-- [IOUSBHostIOSource](iousbhostiosource.md)
+- [IOUSBHostIOSource](./iousbhostiosource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostInterface](iousbhostinterface.md)
+### Function Drivers
+- [class IOUSBHostInterface](./iousbhostinterface.md)
   The class for accessing USB-related services.
-- [class IOUSBHostPipe](iousbhostpipe.md)
+- [class IOUSBHostPipe](./iousbhostpipe.md)
   The class that sends control, bulk, interrupt, and isochronous input/output requests for function drivers, and manages stream capabilities.
 
 

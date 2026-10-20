@@ -1,7 +1,8 @@
 # trackID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A persistent unique identifier for a track.
 
@@ -19,17 +20,22 @@ A persistent unique identifier for a track.
 var trackID: CMPersistentTrackID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMPersistentTrackID trackID;
+```
+
 ## See Also
 
-- [var mediaType: AVMediaType](avassetsegmenttrackreport/mediatype.md)
+### Inspecting a report
+- [var mediaType: AVMediaType](./mediatype.md)
   The type of media a track contains.
-- [var duration: CMTime](avassetsegmenttrackreport/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of a track.
-- [var earliestPresentationTimeStamp: CMTime](avassetsegmenttrackreport/earliestpresentationtimestamp.md)
+- [var earliestPresentationTimeStamp: CMTime](./earliestpresentationtimestamp.md)
   The earliest presentation timestamp (PTS) for this track.
-- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](avassetsegmenttrackreport/firstvideosampleinformation.md)
+- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](./firstvideosampleinformation.md)
   Information about the first video sample in a track.
-- [class AVAssetSegmentReportSampleInformation](avassetsegmentreportsampleinformation.md)
+- [class AVAssetSegmentReportSampleInformation](../avassetsegmentreportsampleinformation.md)
   An object that provides information about sample data in a track.
 
 

@@ -1,7 +1,8 @@
 # VTOpticalFlowParameters.SubmissionMode.sequential
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A submission follow presentation time order without a jump or skip when compared to a previous submission.
 
@@ -17,13 +18,18 @@ A submission follow presentation time order without a jump or skip when compared
 case sequential
 ```
 
+```c
+VTOpticalFlowParametersSubmissionModeSequential
+```
+
 #### Discussion
 
 This submission mode will yield a better performance.
 
 ## See Also
 
-- [VTOpticalFlowParameters.SubmissionMode.random](vtopticalflowparameters/submissionmode-swift.enum/random.md)
+### Enumeration Cases
+- [VTOpticalFlowParameters.SubmissionMode.random](./random.md)
   A submission follow presentation time order with a jump or skip in a frame sequence.
 
 

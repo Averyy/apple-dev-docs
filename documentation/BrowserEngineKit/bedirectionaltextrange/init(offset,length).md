@@ -1,7 +1,8 @@
 # init(offset:length:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a range for a text selection that also specifies a direction.
 
@@ -23,7 +24,8 @@ The sign of the `length` argument determines the selection’s direction from th
 
 ## See Also
 
-- [init()](bedirectionaltextrange/init.md)
+### Creating a directional text range
+- [init()](./init%28%29.md)
   Creates an empty directional text range.
 
 

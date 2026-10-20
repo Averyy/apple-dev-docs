@@ -1,7 +1,8 @@
 # PGResumeErrorCode
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for suspend-resume actions.
 
@@ -15,45 +16,50 @@ Error codes for suspend-resume actions.
 enum PGResumeErrorCode
 ```
 
+```c
+enum PGResumeErrorCode : NSUInteger;
+```
+
 ## Topics
 
 ### Errors
-- [PGResumeErrorCode.incompatibleDevice](pgresumeerrorcode/incompatibledevice.md)
+- [PGResumeErrorCode.incompatibleDevice](./pgresumeerrorcode/incompatibledevice.md)
   The resume device is missing capabilities that the suspended device provided.
-- [PGResumeErrorCode.internalFault](pgresumeerrorcode/internalfault.md)
+- [PGResumeErrorCode.internalFault](./pgresumeerrorcode/internalfault.md)
   An internal error occurred.
-- [PGResumeErrorCode.invalidContent](pgresumeerrorcode/invalidcontent.md)
+- [PGResumeErrorCode.invalidContent](./pgresumeerrorcode/invalidcontent.md)
   The content of the suspend state or the guest memory isn’t valid.
-- [PGResumeErrorCode.invalidGuestVersion](pgresumeerrorcode/invalidguestversion.md)
+- [PGResumeErrorCode.invalidGuestVersion](./pgresumeerrorcode/invalidguestversion.md)
   The guest version is incompatible with this framework version.
-- [PGResumeErrorCode.invalidSuspendStateVersion](pgresumeerrorcode/invalidsuspendstateversion.md)
+- [PGResumeErrorCode.invalidSuspendStateVersion](./pgresumeerrorcode/invalidsuspendstateversion.md)
   The suspend state version is incompatible with this framework version.
 ### Enumeration Cases
-- [PGResumeErrorCode.invalidDisplayPortCount](pgresumeerrorcode/invaliddisplayportcount.md)
+- [PGResumeErrorCode.invalidDisplayPortCount](./pgresumeerrorcode/invaliddisplayportcount.md)
 ### Initializers
-- [init?(rawValue: UInt)](pgresumeerrorcode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./pgresumeerrorcode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func willSuspend()](pgdevice/willsuspend.md)
+### Suspending and Resuming Graphics Processing
+- [func willSuspend()](./pgdevice/willsuspend%28%29.md)
   Notifies the virtual graphics device to start suspending graphics activities.
-- [func finishSuspend() -> Data?](pgdevice/finishsuspend.md)
+- [func finishSuspend() -> Data?](./pgdevice/finishsuspend%28%29.md)
   Notifies the virtualized graphics device to finish suspending graphics activities.
-- [func willResume(withSuspendState: Data, error: NSErrorPointer) -> Bool](pgdevice/willresume(withsuspendstate:error:).md)
+- [func willResume(withSuspendState: Data, error: NSErrorPointer) -> Bool](./pgdevice/willresume%28withsuspendstate,error%29.md)
   Tells a new device object to load a previously saved device’s suspend state.
-- [func didResume()](pgdevice/didresume.md)
+- [func didResume()](./pgdevice/didresume%28%29.md)
   Tells the device object to finish any remaining work to resume processing of a previously saved device’s suspend state.
-- [let PGResumeErrorDomain: String](pgresumeerrordomain.md)
+- [let PGResumeErrorDomain: String](./pgresumeerrordomain.md)
   The error domain for suspend-resume actions.
 
 

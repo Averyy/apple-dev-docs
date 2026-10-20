@@ -1,23 +1,30 @@
 # queryCompletionBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute after CloudKit retrieves all of the records.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 15.0
+- iPadOS 8.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.10+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use queryResultBlock instead
 
 ## Declaration
 
 ```swift
 var queryCompletionBlock: ((CKQueryOperation.Cursor?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^queryCompletionBlock)(CKQueryCursor *cursor, NSError *operationError);
 ```
 
 #### Discussion
@@ -29,13 +36,14 @@ The closure returns no value and takes the following parameters:
 
 This closure executes only once, and represents your final opportunity to process the results. It executes after all of the individual record fetch closures. The closure executes serially with respect to the other closures of the operation.
 
-If the number of records that the operation intends to return exceeds [`resultsLimit`](ckqueryoperation/resultslimit.md), the operation provides a cursor that you can use to retrieve the next batch of results. You must create a separate operation using the cursor to fetch the next batch of results.
+If the number of records that the operation intends to return exceeds [`resultsLimit`](./resultslimit.md), the operation provides a cursor that you can use to retrieve the next batch of results. You must create a separate operation using the cursor to fetch the next batch of results.
 
 Update the value of this property before you execute the operation or submit it to a queue.
 
 ## See Also
 
-- [var recordFetchedBlock: ((CKRecord) -> Void)?](ckqueryoperation/recordfetchedblock.md)
+### Processing the Query Results
+- [var recordFetchedBlock: ((CKRecord) -> Void)?](./recordfetchedblock.md)
   The closure to execute when a record becomes available.
 
 

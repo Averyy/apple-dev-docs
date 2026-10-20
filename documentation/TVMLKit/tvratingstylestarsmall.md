@@ -1,14 +1,16 @@
 # TVRatingStyleStarSmall
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: Article
 
 A small star image is used.
 
 ## See Also
 
-- [TVRatingStyleStarMedium](tvratingstylestarmedium.md)
+### Constants
+- [TVRatingStyleStarMedium](./tvratingstylestarmedium.md)
   A medium star image is used.
-- [TVRatingStyleStarLarge](tvratingstylestarlarge.md)
+- [TVRatingStyleStarLarge](./tvratingstylestarlarge.md)
   A large star image is used.
 
 

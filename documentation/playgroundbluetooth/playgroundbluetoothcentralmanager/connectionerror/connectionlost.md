@@ -1,7 +1,8 @@
 # PlaygroundBluetoothCentralManager.ConnectionError.connectionLost
 
 **Framework**: Playground Bluetooth  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 The error that occurs when a peripheral connection to the central manager fails.
 
@@ -21,13 +22,14 @@ This error doesn’t occur when a connection to the central manager is intention
 
 ## See Also
 
-- [PlaygroundBluetoothCentralManager.ConnectionError.connectionFailed](playgroundbluetoothcentralmanager/connectionerror/connectionfailed.md)
+### Handling Errors
+- [PlaygroundBluetoothCentralManager.ConnectionError.connectionFailed](./connectionfailed.md)
   The error that occurs when a peripheral fails to connect to the central manager.
-- [PlaygroundBluetoothCentralManager.ConnectionError.excessiveConnections](playgroundbluetoothcentralmanager/connectionerror/excessiveconnections.md)
+- [PlaygroundBluetoothCentralManager.ConnectionError.excessiveConnections](./excessiveconnections.md)
   The error that occurs when a peripheral rejects a connection to the central manager because there are too many others.
-- [PlaygroundBluetoothCentralManager.ConnectionError.invalidState](playgroundbluetoothcentralmanager/connectionerror/invalidstate.md)
+- [PlaygroundBluetoothCentralManager.ConnectionError.invalidState](./invalidstate.md)
   The error that occurs when the central manager is in a state that can’t make connections.
-- [PlaygroundBluetoothCentralManager.ConnectionError.timeoutExpired](playgroundbluetoothcentralmanager/connectionerror/timeoutexpired.md)
+- [PlaygroundBluetoothCentralManager.ConnectionError.timeoutExpired](./timeoutexpired.md)
   The error that occurs when a peripheral fails to connect to the central manager before the timeout period expires.
 
 

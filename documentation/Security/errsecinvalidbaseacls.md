@@ -1,7 +1,8 @@
 # errSecInvalidBaseACLs
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The base access control lists are not valid.
 
@@ -18,6 +19,10 @@ The base access control lists are not valid.
 
 ```swift
 var errSecInvalidBaseACLs: OSStatus { get }
+```
+
+```c
+errSecInvalidBaseACLs
 ```
 
 

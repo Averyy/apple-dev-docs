@@ -13,18 +13,26 @@ framework: HIG
 
 Multitasking lets people switch quickly from one app to another, performing tasks in each.
 
-![A sketch of two side-by-side windows in a split view arrangement, suggesting multitasking. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-multitasking-intro~dark@2x.png)
+![A sketch of two side-by-side windows in a split view arrangement, suggesting multitasking. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://developer.apple.com/tutorials/images/com.apple.HIG/patterns-multitasking-intro@2x.png)
+
 People expect to use multitasking on their devices, and they may think something is wrong if your app doesn’t allow it. With rare exceptions — such as some games, and Apple Vision Pro apps running in a Full Space — every app needs to work well with multitasking.
+
 In addition to app switching, multitasking can present different experiences on different devices; see [Platform considerations](multitasking.md#Platform-considerations).
 
 ## Best practices
 A great multitasking experience helps people accomplish tasks in multiple apps by managing content in a variety of simultaneous contexts. Because you don’t know when people will initiate multitasking, your app or game always needs to be prepared to save and restore their context.
+
 **Pause activities that require people’s attention or active participation when they switch away.** If your app is a game or a media-viewing app, for example, make sure people don’t miss anything when they switch to another app. When they switch back, let them continue as if they never left.
+
 **Respond smoothly to audio interruptions.** Occasionally, audio from another app or the system itself may interrupt your app’s audio. For example, an incoming phone call or a music playlist initiated by Siri might interrupt your app’s audio. When situations like these occur, people expect your app to respond in the following ways:
+
 - Pause audio indefinitely for primary audio interruptions, such as playing music, podcasts, or audiobooks.
 - Temporarily lower the volume or pause the audio for shorter interruptions, such as GPS directional notifications, and resume the original volume or playback when the interruption ends.
+
 For guidance, see [Playing audio](playing-audio.md).
+
 **Finish user-initiated tasks in the background.** When someone starts a task like downloading assets or processing a video file, they expect it to finish even if they switch away from your app. If your app is in the middle of performing a task that doesn’t need additional input, complete it in the background before suspending.
+
 **Use notifications sparingly.** Your app can send notifications when it’s suspended or running in the background. If people start an important or time-sensitive task in your app, and then switch away from it, they might appreciate receiving a notification when the task completes so they can switch back to your app and take the next step. In contrast, people don’t generally need to know the moment a routine or secondary task completes. In this scenario, avoid sending an unnecessary notification; instead, let people check on the task when they return to your app. For guidance, see [Managing notifications](managing-notifications.md).
 
 ## Platform considerations
@@ -32,19 +40,29 @@ For guidance, see [Playing audio](playing-audio.md).
 
 ### iOS
 On iPhone, multitasking lets people use FaceTime or watch a video in Picture in Picture while they also use a different app.
-![A screenshot of the app switcher on iPhone, showing four open apps.](/images/com.apple.HIG/multitasking-app-switcher-iphone~dark@2x.png)
-![A screenshot of Mail on iPhone, showing an individual email. On top of the email body content, a small image in the bottom-left corner shows the person currently in a FaceTime call.](/images/com.apple.HIG/multitasking-pip-iphone~dark@2x.png)
+
+![A screenshot of the app switcher on iPhone, showing four open apps.](https://developer.apple.com/tutorials/images/com.apple.HIG/multitasking-app-switcher-iphone@2x.png)
+The app switcher displays all currently open apps.
+
+![A screenshot of Mail on iPhone, showing an individual email. On top of the email body content, a small image in the bottom-left corner shows the person currently in a FaceTime call.](https://developer.apple.com/tutorials/images/com.apple.HIG/multitasking-pip-iphone@2x.png)
+A current FaceTime call can continue while people use another app.
 
 ### iPadOS
-On iPad, people can view and interact with the [Windows](windows.md) of several different apps at the same time. An individual app can also support multiple open windows, which lets people view and interact with more than one window in the same app at one time.
+On iPad, people can view and interact with the [windows](windows.md) of several different apps at the same time. An individual app can also support multiple open windows, which lets people view and interact with more than one window in the same app at one time.
+
 People can use iPad with either full-screen or windowed apps. When full screen, apps occupy the full screen, and people can switch between individual app windows using the app switcher.
-![A screenshot of the iPad app switcher in landscape orientation, showing five open apps. Thumbnail representations of the apps are arranged in a grid.](/images/com.apple.HIG/multitasking-ipad-app-switcher~dark@2x.png)
-When using windowed apps, app windows are resizable, and people can arrange them to suit their needs with behavior similar to macOS. The system provides window controls for common tiling configurations, entering full screen, minimizing, and closing windows. The system identifies the frontmost window by coloring its window controls and casting a drop shadow on windows behind it. For guidance, see [iPadOS](windows.md#iPadOS).
-![A screenshot of two windowed apps on iPad in landscape orientation. The frontmost app window overlaps and casts a shadow on the one behind it, and has colored window controls to indicate that the window is active. Both windows sit atop the Home Screen background, and the Dock appears at the bottom.](/images/com.apple.HIG/multitasking-ipad-windows-maps-landmarks~dark@2x.png)
+
+![A screenshot of the iPad app switcher in landscape orientation, showing five open apps. Thumbnail representations of the apps are arranged in a grid.](https://developer.apple.com/tutorials/images/com.apple.HIG/multitasking-ipad-app-switcher@2x.png)
+
+When using windowed apps, app windows are resizable, and people can arrange them to suit their needs with behavior similar to macOS. The system provides window controls for common tiling configurations, entering full screen, minimizing, and closing windows. The system identifies the frontmost window by coloring its window controls and casting a drop shadow on windows behind it. For guidance, see [Windows > iPadOS](windows.md#iPadOS).
+
+![A screenshot of two windowed apps on iPad in landscape orientation. The frontmost app window overlaps and casts a shadow on the one behind it, and has colored window controls to indicate that the window is active. Both windows sit atop the Home Screen background, and the Dock appears at the bottom.](https://developer.apple.com/tutorials/images/com.apple.HIG/multitasking-ipad-windows-maps-landmarks@2x.png)
+
 Additionally, videos and FaceTime calls can also play in a Picture in Picture overlay above other content regardless of whether apps are full screen or windowed.
 
 > **Note:** Apps don’t control multitasking configurations or receive any indication of the ones that people choose.
-To help your app respond correctly when people open it while windowed, make sure it adapts gracefully to different screen sizes. For guidance, see [Layout](layout.md) and [Windows](windows.md); for developer guidance, see [Multitasking on iPad, Mac, and Apple Vision Pro](../uikit/multitasking-on-ipad-mac-and-apple-vision-pro.md). To learn more about how people use iPad multitasking features, see [Use multitasking on your iPad](https://support.apple.com/en-us/HT207582).
+
+To help your app respond correctly when people open it while windowed, make sure it adapts gracefully to different screen sizes. For guidance, see [Layout](layout.md) and [Windows](windows.md); for developer guidance, see [Multitasking on iPad, Mac, and Apple Vision Pro](../UIKit/multitasking-on-ipad-mac-and-apple-vision-pro.md). To learn more about how people use iPad multitasking features, see [Use multitasking on your iPad](https://support.apple.com/en-us/HT207582).
 
 ### macOS
 On Mac, multitasking is the default experience because people typically run more than one app at a time, switching between windows and tasks as they work. When multiple app windows are open, macOS applies drop shadows that make the windows appear layered on the desktop, and applies other visual effects to help people distinguish different window states; for guidance, see [macOS window states](windows.md#macOS-window-states).
@@ -54,25 +72,32 @@ On Apple TV, people can play or browse content while also playing movies or TV s
 
 ### visionOS
 On Apple Vision Pro, people can run multiple apps at the same time in the Shared Space, viewing and switching between windows and volumes throughout the space.
+
 Only one window is active at a time in the Shared Space. When people look from one window to another, the window they’re currently looking at becomes active while the previous window becomes more translucent and appears to recede along the z-axis. Closing an app window in the Shared Space transitions the app to the background without quitting it.
 
 > **Note:** When an app is the Now Playing app, closing its window automatically pauses audio playback; if people want to resume playback, they can do so in Control Center without opening the window.
+
 **Avoid interfering with the system-provided multitasking behavior.** When people look from one window to another, visionOS applies a feathered mask to the window they look away from to clarify its changed state. To avoid interfering with this visual feedback, don’t change the appearance of a window’s edges.
 
-[Video: visionos-multiple-windows.mp4](/videos/com.apple.HIG/visionos-multiple-windows.mp4)
+[Video: A recording showing the Notes app and the Settings app in the Shared Space in visionOS. The viewer first repositions the Notes window to slightly overlap the Settings window before activating Settings and then switching back to Notes. Each time an app becomes active, the system applies feathering to the inactive app's window.](https://developer.apple.com/tutorials/videos/com.apple.HIG/visionos-multiple-windows.mp4)
+
 **Don’t pause a window’s video playback when people look away from it.** In visionOS, as in macOS, people expect the playback they start in one window to continue while they view or perform a task in another window.
+
 **Be prepared for situations where your audio can duck.** Unless an app is currently the Now Playing app, its audio can duck when people look away from it to another app.
 
 ## Resources
 
 #### Related
 [Layout](layout.md)
+
 [Windows](windows.md)
+
 [Playing video](playing-video.md)
 
 #### Developer documentation
-[Responding to the launch of your app](../uikit/responding-to-the-launch-of-your-app.md) — UIKit
-[Multitasking on iPad, Mac, and Apple Vision Pro](../uikit/multitasking-on-ipad-mac-and-apple-vision-pro.md) — UIKit
+[Responding to the launch of your app](../UIKit/responding-to-the-launch-of-your-app.md) — UIKit
+
+[Multitasking on iPad, Mac, and Apple Vision Pro](../UIKit/multitasking-on-ipad-mac-and-apple-vision-pro.md) — UIKit
 
 #### Videos
 - [Elevate the design of your iPad app](https://developer.apple.com/videos/play/wwdc2025/208) - Make your app look and feel great on iPadOS. Learn best practices for designing a responsive layout for resizable app windows. Get familiar with window controls and explore the best ways to accommodate them. Discover the building blocks of a great menu bar. And meet the new pointer and its updated effects.
@@ -84,9 +109,6 @@ Only one window is active at a time in the Shared Space. When people look from o
 | June 9, 2025 | Reorganized guidance in platform considerations, and added guidance for multitasking with multiple windows in iPadOS. |
 | December 5, 2023 | Added artwork for primary and auxiliary windows in iPadOS. |
 | June 21, 2023 | Updated to include guidance for visionOS. |
-
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/multitasking](https://developer.apple.com/design/human-interface-guidelines/multitasking)*

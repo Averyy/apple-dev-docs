@@ -1,7 +1,8 @@
 # RCSService.RemoveGroupChatParticipantsRequest.Result
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure representing the result of a request to remove participants from a group chat.
 
@@ -17,14 +18,14 @@ struct Result
 ## Topics
 
 ### Accessing result properties
-- [let removed: [RCSHandle.URI]](rcsservice/removegroupchatparticipantsrequest/result/removed.md)
+- [let removed: [RCSHandle.URI]](./result/removed.md)
   Participants that were removed by this operation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

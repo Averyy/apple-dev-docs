@@ -1,7 +1,8 @@
 # defaultClient
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default world for clients.
 
@@ -16,6 +17,10 @@ The default world for clients.
 
 ```swift
 class var defaultClient: WKContentWorld { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) WKContentWorld * defaultClientWorld;
 ```
 
 

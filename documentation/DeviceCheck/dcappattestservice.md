@@ -1,7 +1,8 @@
 # DCAppAttestService
 
 **Framework**: DeviceCheck  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A service that you use to validate the instance of your app running on a device.
 
@@ -20,63 +21,68 @@ A service that you use to validate the instance of your app running on a device.
 class DCAppAttestService
 ```
 
+```objc
+@interface DCAppAttestService : NSObject
+```
+
 ## Mentions
 
-- [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
-- [Validating apps that connect to your server](validating-apps-that-connect-to-your-server.md)
+- [Establishing your app’s integrity](./establishing-your-app-s-integrity.md)
+- [Validating apps that connect to your server](./validating-apps-that-connect-to-your-server.md)
 
 #### Overview
 
-Use the [`shared`](dcappattestservice/shared.md) instance of the [`DCAppAttestService`](dcappattestservice.md) class to assert the legitimacy of a particular instance of your app to your server. After ensuring service availability by reading the [`isSupported`](dcappattestservice/issupported.md) property, you use the service to:
+Use the [`shared`](./dcappattestservice/shared.md) instance of the [`DCAppAttestService`](./dcappattestservice.md) class to assert the legitimacy of a particular instance of your app to your server. After ensuring service availability by reading the [`isSupported`](./dcappattestservice/issupported.md) property, you use the service to:
 
-- Create a cryptographic key in the Secure Enclave by calling the [`generateKey(completionHandler:)`](dcappattestservice/generatekey(completionhandler:).md) method.
-- Ask Apple to certify the key by calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method. - Prepare an assertion of your app’s integrity to accompany any or all server requests using the [`generateAssertion(_:clientDataHash:completionHandler:)`](dcappattestservice/generateassertion(_:clientdatahash:completionhandler:).md) method.
+- Create a cryptographic key in the Secure Enclave by calling the [`generateKey(completionHandler:)`](./dcappattestservice/generatekey%28completionhandler%29.md) method.
+- Ask Apple to certify the key by calling the [`attestKey(_:clientDataHash:completionHandler:)`](./dcappattestservice/attestkey%28_,clientdatahash,completionhandler%29.md) method. - Prepare an assertion of your app’s integrity to accompany any or all server requests using the [`generateAssertion(_:clientDataHash:completionHandler:)`](./dcappattestservice/generateassertion%28_,clientdatahash,completionhandler%29.md) method.
 
-For more information about how to support App Attest in your app, see [`Establishing your app’s integrity`](establishing-your-app-s-integrity.md). For information about the complementary procedures you implement on your server, see [`Validating apps that connect to your server`](validating-apps-that-connect-to-your-server.md).
+For more information about how to support App Attest in your app, see [Establishing your app’s integrity](./establishing-your-app-s-integrity.md). For information about the complementary procedures you implement on your server, see [Validating apps that connect to your server](./validating-apps-that-connect-to-your-server.md).
 
-> **Note**: To use the App Attest service, your app must have an app ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
+> **Note**: To use the App Attest service, your app must have an app ID that you register on the [Apple Developer](https://developer.apple.com/account/) website.
 
 ## Topics
 
 ### Accessing the service
-- [class var shared: DCAppAttestService](dcappattestservice/shared.md)
+- [class var shared: DCAppAttestService](./dcappattestservice/shared.md)
   The shared App Attest service that you use to validate your app.
-- [var isSupported: Bool](dcappattestservice/issupported.md)
+- [var isSupported: Bool](./dcappattestservice/issupported.md)
   A Boolean value that indicates whether a particular device provides the App Attest service.
 ### Preparing a key
-- [func generateKey(completionHandler: (String?, (any Error)?) -> Void)](dcappattestservice/generatekey(completionhandler:).md)
+- [func generateKey(completionHandler: (String?, (any Error)?) -> Void)](./dcappattestservice/generatekey%28completionhandler%29.md)
   Creates a new cryptographic key for use with the App Attest service.
-- [func attestKey(String, clientDataHash: Data, completionHandler: (Data?, (any Error)?) -> Void)](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md)
+- [func attestKey(String, clientDataHash: Data, completionHandler: (Data?, (any Error)?) -> Void)](./dcappattestservice/attestkey%28_,clientdatahash,completionhandler%29.md)
   Asks Apple to attest to the validity of a generated cryptographic key.
 ### Validating the app instance
-- [func generateAssertion(String, clientDataHash: Data, completionHandler: (Data?, (any Error)?) -> Void)](dcappattestservice/generateassertion(_:clientdatahash:completionhandler:).md)
+- [func generateAssertion(String, clientDataHash: Data, completionHandler: (Data?, (any Error)?) -> Void)](./dcappattestservice/generateassertion%28_,clientdatahash,completionhandler%29.md)
   Creates a block of data that demonstrates the legitimacy of an instance of your app running on a device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
+### App Attest
+- [Establishing your app’s integrity](./establishing-your-app-s-integrity.md)
   Ensure that requests your server receives come from legitimate instances of your app.
-- [Validating apps that connect to your server](validating-apps-that-connect-to-your-server.md)
+- [Validating apps that connect to your server](./validating-apps-that-connect-to-your-server.md)
   Verify that connections to your server come from legitimate instances of your app.
-- [Assessing fraud risk](assessing-fraud-risk.md)
+- [Assessing fraud risk](./assessing-fraud-risk.md)
   Request and analyze risk data using server-to-server calls.
-- [Preparing to use the app attest service](preparing-to-use-the-app-attest-service.md)
+- [Preparing to use the app attest service](./preparing-to-use-the-app-attest-service.md)
   Test your implementation in a development environment and onboard users gradually.
-- [Attestation Object Validation Guide](attestation-object-validation-guide.md)
+- [Attestation Object Validation Guide](./attestation-object-validation-guide.md)
   Use this guide to validate your implementation of verifying the attestation object verification process.
-- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../BundleResources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

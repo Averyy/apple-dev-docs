@@ -1,7 +1,8 @@
 # islamicTabularCalendar
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the Islamic tabular calendar with Thursday (astronomical) origin.
 
@@ -20,31 +21,36 @@ Specifies the Islamic tabular calendar with Thursday (astronomical) origin.
 static let islamicTabularCalendar: CFCalendarIdentifier!
 ```
 
+```c
+extern CFCalendarIdentifier const kCFIslamicTabularCalendar;
+```
+
 ## See Also
 
-- [static let gregorianCalendar: CFCalendarIdentifier!](cfcalendaridentifier/gregoriancalendar.md)
-  The name of the calendar currently supported by the [`calendarName`](cfdateformatterkey/calendarname.md) property.
-- [static let buddhistCalendar: CFCalendarIdentifier!](cfcalendaridentifier/buddhistcalendar.md)
+### Constants
+- [static let gregorianCalendar: CFCalendarIdentifier!](./gregoriancalendar.md)
+  The name of the calendar currently supported by the [`calendarName`](../cfdateformatterkey/calendarname.md) property.
+- [static let buddhistCalendar: CFCalendarIdentifier!](./buddhistcalendar.md)
   Specifies the Buddhist calendar.
-- [static let chineseCalendar: CFCalendarIdentifier!](cfcalendaridentifier/chinesecalendar.md)
+- [static let chineseCalendar: CFCalendarIdentifier!](./chinesecalendar.md)
   Specifies the Chinese calendar.
-- [static let hebrewCalendar: CFCalendarIdentifier!](cfcalendaridentifier/hebrewcalendar.md)
+- [static let hebrewCalendar: CFCalendarIdentifier!](./hebrewcalendar.md)
   Specifies the Hebrew calendar.
-- [static let islamicCalendar: CFCalendarIdentifier!](cfcalendaridentifier/islamiccalendar.md)
+- [static let islamicCalendar: CFCalendarIdentifier!](./islamiccalendar.md)
   Specifies the Islamic calendar.
-- [static let islamicCivilCalendar: CFCalendarIdentifier!](cfcalendaridentifier/islamiccivilcalendar.md)
+- [static let islamicCivilCalendar: CFCalendarIdentifier!](./islamiccivilcalendar.md)
   Specifies the Islamic tabular calendar with Friday (civil) origin.
-- [static let islamicUmmAlQuraCalendar: CFCalendarIdentifier!](cfcalendaridentifier/islamicummalquracalendar.md)
+- [static let islamicUmmAlQuraCalendar: CFCalendarIdentifier!](./islamicummalquracalendar.md)
   Specifies the Islamic Umm Al Qura calendar.
-- [static let japaneseCalendar: CFCalendarIdentifier!](cfcalendaridentifier/japanesecalendar.md)
+- [static let japaneseCalendar: CFCalendarIdentifier!](./japanesecalendar.md)
   Specifies the Japanese calendar.
-- [static let republicOfChinaCalendar: CFCalendarIdentifier!](cfcalendaridentifier/republicofchinacalendar.md)
+- [static let republicOfChinaCalendar: CFCalendarIdentifier!](./republicofchinacalendar.md)
   Specifies the calendar for the Republic of China.
-- [static let persianCalendar: CFCalendarIdentifier!](cfcalendaridentifier/persiancalendar.md)
+- [static let persianCalendar: CFCalendarIdentifier!](./persiancalendar.md)
   Specifies the Persian calendar.
-- [static let indianCalendar: CFCalendarIdentifier!](cfcalendaridentifier/indiancalendar.md)
+- [static let indianCalendar: CFCalendarIdentifier!](./indiancalendar.md)
   Specifies the Indian calendar.
-- [static let cfiso8601Calendar: CFCalendarIdentifier!](cfcalendaridentifier/cfiso8601calendar.md)
+- [static let cfiso8601Calendar: CFCalendarIdentifier!](./cfiso8601calendar.md)
   Specifies the ISO 8601 calendar.
 
 

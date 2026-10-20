@@ -1,18 +1,23 @@
 # outlineView(_:didDrag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent at the time the mouse button goes up in `outlineView` and `tableColumn` has been dragged during the time the mouse button was down.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func outlineView(_ outlineView: NSOutlineView, didDrag tableColumn: NSTableColumn)
+```
+
+```objc
+- (void) outlineView:(NSOutlineView *) outlineView didDragTableColumn:(NSTableColumn *) tableColumn;
 ```
 
 ## Parameters
@@ -22,9 +27,10 @@ optional func outlineView(_ outlineView: NSOutlineView, didDrag tableColumn: NST
 
 ## See Also
 
-- [func outlineView(NSOutlineView, mouseDownInHeaderOf: NSTableColumn)](nsoutlineviewdelegate/outlineview(_:mousedowninheaderof:).md)
+### Working with Table Columns
+- [func outlineView(NSOutlineView, mouseDownInHeaderOf: NSTableColumn)](./outlineview%28_,mousedowninheaderof%29.md)
   Sent to the delegate whenever the mouse button is clicked in `outlineView` while the cursor is in a column header `tableColumn`.
-- [func outlineView(NSOutlineView, didClick: NSTableColumn)](nsoutlineviewdelegate/outlineview(_:didclick:).md)
+- [func outlineView(NSOutlineView, didClick: NSTableColumn)](./outlineview%28_,didclick%29.md)
   Sent at the time the mouse button subsequently goes up in `outlineView` and `tableColumn` has been “clicked” without having been dragged anywhere.
 
 

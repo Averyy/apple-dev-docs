@@ -1,7 +1,8 @@
 # streams
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 List of audio streams exposed by this device.
 
@@ -12,6 +13,10 @@ List of audio streams exposed by this device.
 
 ```swift
 var streams: [VZVirtioSoundDeviceStreamConfiguration] { get set }
+```
+
+```objc
+@property (copy) NSArray<VZVirtioSoundDeviceStreamConfiguration *> * streams;
 ```
 
 #### Discussion

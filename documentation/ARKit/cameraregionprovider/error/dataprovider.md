@@ -1,7 +1,8 @@
 # dataProvider
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data provider which encountered an error (if any).
 

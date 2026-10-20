@@ -1,18 +1,25 @@
 # AVAudioSessionDelegate
 
 **Framework**: AVFAudio  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines responses to changes in state for the audio session.
 
 **Availability**:
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: The use of this protocol is deprecated in iOS 6 and later. Instead, you should use the notifications declared in [`AVAudioSession`](./avaudiosession.md).
 
 ## Declaration
 
 ```swift
 protocol AVAudioSessionDelegate : NSObjectProtocol
+```
+
+```objc
+@protocol AVAudioSessionDelegate <NSObject>
 ```
 
 #### Overview
@@ -24,28 +31,29 @@ The delegate of an `AVAudioSession` object must adopt the `AVAudioSessionDelegat
 
 An `AVAudioSession` delegate can respond to interruptions at the audio session level. You can use this interface along with any iOS audio technology. For example, your `AVAudioSession` delegate can handle interruptions for OpenAL and audio unit playback.
 
-When using the AVFoundation framework for recording or playback, you can also respond to interruptions at the individual recorder or player level. To do this, create audio recorder or audio player delegates using the protocols described in [`AVAudioRecorderDelegate`](avaudiorecorderdelegate.md) and [`AVAudioPlayerDelegate`](avaudioplayerdelegate.md).
+When using the AVFoundation framework for recording or playback, you can also respond to interruptions at the individual recorder or player level. To do this, create audio recorder or audio player delegates using the protocols described in [`AVAudioRecorderDelegate`](./avaudiorecorderdelegate.md) and [`AVAudioPlayerDelegate`](./avaudioplayerdelegate.md).
 
 ## Topics
 
 ### Responding to session events
-- [func beginInterruption()](avaudiosessiondelegate/begininterruption.md)
+- [func beginInterruption()](./avaudiosessiondelegate/begininterruption%28%29.md)
   Called after your audio session is interrupted.
-- [func endInterruption()](avaudiosessiondelegate/endinterruption.md)
+- [func endInterruption()](./avaudiosessiondelegate/endinterruption%28%29.md)
   Called after your audio session interruption ends.
-- [func endInterruption(withFlags: Int)](avaudiosessiondelegate/endinterruption(withflags:).md)
+- [func endInterruption(withFlags: Int)](./avaudiosessiondelegate/endinterruption%28withflags%29.md)
   Called after your audio session interruption ends, with flags indicating the state of the audio session.
-- [func inputIsAvailableChanged(Bool)](avaudiosessiondelegate/inputisavailablechanged(_:).md)
+- [func inputIsAvailableChanged(Bool)](./avaudiosessiondelegate/inputisavailablechanged%28_%29.md)
   Called after the availability of audio input changes on a device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any AVAudioSessionDelegate)?](avaudiosession/delegate.md)
+### Responding to audio session changes
+- [var delegate: (any AVAudioSessionDelegate)?](./avaudiosession/delegate.md)
   The delegate object for the audio session.
 
 

@@ -1,7 +1,8 @@
 # SFSafariServicesAvailable(_:)
 
 **Framework**: Safari Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Indicates whether a given version of Safari services is available.
 
@@ -16,7 +17,8 @@ func SFSafariServicesAvailable(_ version: SFSafariServicesVersion = SFSafariServ
 
 ## See Also
 
-- [enum SFSafariServicesVersion](sfsafariservicesversion.md)
+### Availability
+- [enum SFSafariServicesVersion](./sfsafariservicesversion.md)
   The version of Safari services.
 
 

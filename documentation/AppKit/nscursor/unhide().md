@@ -1,9 +1,10 @@
 # unhide()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Negates an earlier call to [`hide()`](nscursor/hide().md) by showing the current cursor.
+Negates an earlier call to [`hide()`](./hide%28%29.md) by showing the current cursor.
 
 **Availability**:
 - iOS 13.0+
@@ -17,19 +18,24 @@ Negates an earlier call to [`hide()`](nscursor/hide().md) by showing the current
 class func unhide()
 ```
 
+```objc
++ (void) unhide;
+```
+
 #### Discussion
 
-Each invocation of `unhide` must be balanced by an invocation of [`hide()`](nscursor/hide().md) in order for the cursor display to be correct.
+Each invocation of `unhide` must be balanced by an invocation of [`hide()`](./hide%28%29.md) in order for the cursor display to be correct.
 
 ## See Also
 
-- [var image: UIImage](nscursor/image.md)
+### Setting cursor attributes
+- [var image: UIImage](./image.md)
   The cursor’s image.
-- [var hotSpot: NSPoint](nscursor/hotspot.md)
+- [var hotSpot: NSPoint](./hotspot.md)
   The position of the click location within the cursor.
-- [class func hide()](nscursor/hide.md)
+- [class func hide()](./hide%28%29.md)
   Makes the current cursor invisible.
-- [class func setHiddenUntilMouseMoves(Bool)](nscursor/sethiddenuntilmousemoves(_:).md)
+- [class func setHiddenUntilMouseMoves(Bool)](./sethiddenuntilmousemoves%28_%29.md)
   Sets whether the cursor is hidden until the mouse moves.
 
 

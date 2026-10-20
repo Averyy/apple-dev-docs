@@ -1,7 +1,8 @@
 # NSSplitView.DidResizeSubviewsMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct DidResizeSubviewsMessage
 ## Topics
 
 ### Initializers
-- [init(splitView: NSSplitView, dividerIndex: Int?, userResize: Bool?)](nssplitview/didresizesubviewsmessage/init(splitview:dividerindex:userresize:).md)
+- [init(splitView: NSSplitView, dividerIndex: Int?, userResize: Bool?)](./didresizesubviewsmessage/init%28splitview,dividerindex,userresize%29.md)
 ### Instance Properties
-- [var dividerIndex: Int?](nssplitview/didresizesubviewsmessage/dividerindex.md)
-- [var splitView: NSSplitView](nssplitview/didresizesubviewsmessage/splitview.md)
-- [var userResize: Bool](nssplitview/didresizesubviewsmessage/userresize.md)
+- [var dividerIndex: Int?](./didresizesubviewsmessage/dividerindex.md)
+- [var splitView: NSSplitView](./didresizesubviewsmessage/splitview.md)
+- [var userResize: Bool](./didresizesubviewsmessage/userresize.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

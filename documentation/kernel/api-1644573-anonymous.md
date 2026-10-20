@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,22 +18,22 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kAllModesSafe](1644573-anonymous/kallmodessafe.md)
-- [kAllModesValid](1644573-anonymous/kallmodesvalid.md)
-- [kBuiltInConnection](1644573-anonymous/kbuiltinconnection.md)
-- [kConnectionInactive](1644573-anonymous/kconnectioninactive.md)
-- [kDependentConnection](1644573-anonymous/kdependentconnection.md)
-- [kFastCheckForDDC](1644573-anonymous/kfastcheckforddc.md)
-- [kHasDDCConnection](1644573-anonymous/khasddcconnection.md)
-- [kHasDirectConnection](1644573-anonymous/khasdirectconnection.md)
-- [kIsMonoDev](1644573-anonymous/kismonodev.md)
-- [kOverrideConnection](1644573-anonymous/koverrideconnection.md)
-- [kReportsDDCConnection](1644573-anonymous/kreportsddcconnection.md)
-- [kReportsHotPlugging](1644573-anonymous/kreportshotplugging.md)
-- [kReportsTagging](1644573-anonymous/kreportstagging.md)
-- [kStereoSyncConnection](1644573-anonymous/kstereosyncconnection.md)
-- [kTaggingInfoNonStandard](1644573-anonymous/ktagginginfononstandard.md)
-- [kUncertainConnection](1644573-anonymous/kuncertainconnection.md)
+- [kAllModesSafe](./api-1644573-anonymous/kallmodessafe.md)
+- [kAllModesValid](./api-1644573-anonymous/kallmodesvalid.md)
+- [kBuiltInConnection](./api-1644573-anonymous/kbuiltinconnection.md)
+- [kConnectionInactive](./api-1644573-anonymous/kconnectioninactive.md)
+- [kDependentConnection](./api-1644573-anonymous/kdependentconnection.md)
+- [kFastCheckForDDC](./api-1644573-anonymous/kfastcheckforddc.md)
+- [kHasDDCConnection](./api-1644573-anonymous/khasddcconnection.md)
+- [kHasDirectConnection](./api-1644573-anonymous/khasdirectconnection.md)
+- [kIsMonoDev](./api-1644573-anonymous/kismonodev.md)
+- [kOverrideConnection](./api-1644573-anonymous/koverrideconnection.md)
+- [kReportsDDCConnection](./api-1644573-anonymous/kreportsddcconnection.md)
+- [kReportsHotPlugging](./api-1644573-anonymous/kreportshotplugging.md)
+- [kReportsTagging](./api-1644573-anonymous/kreportstagging.md)
+- [kStereoSyncConnection](./api-1644573-anonymous/kstereosyncconnection.md)
+- [kTaggingInfoNonStandard](./api-1644573-anonymous/ktagginginfononstandard.md)
+- [kUncertainConnection](./api-1644573-anonymous/kuncertainconnection.md)
 
 
 ---

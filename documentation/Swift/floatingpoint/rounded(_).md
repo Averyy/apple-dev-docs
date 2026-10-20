@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns this value rounded to an integral value using the specified rounding rule.
@@ -59,6 +60,12 @@ print(x.rounded())
 ## Parameters
 
 - `rule`: The rounding rule to use.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [func rounded(FloatingPointRoundingRule) -> Self](./rounded%28_%29-rkwb.md)
+  Returns this value rounded to an integral value using the specified rounding rule.
 
 
 ---

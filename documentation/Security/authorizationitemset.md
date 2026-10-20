@@ -1,7 +1,8 @@
 # AuthorizationItemSet
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure containing a set of authorization items.
 
@@ -15,6 +16,10 @@ A structure containing a set of authorization items.
 struct AuthorizationItemSet
 ```
 
+```c
+typedef struct { ... } AuthorizationItemSet;
+```
+
 #### Overview
 
 Because it is actually a set, the list of items should not contain any duplicates.
@@ -22,20 +27,20 @@ Because it is actually a set, the list of items should not contain any duplicate
 ## Topics
 
 ### Initializers
-- [init()](authorizationitemset/init.md)
+- [init()](./authorizationitemset/init%28%29.md)
   Initializes an authorization item set.
-- [init(count: UInt32, items: UnsafeMutablePointer<AuthorizationItem>?)](authorizationitemset/init(count:items:).md)
+- [init(count: UInt32, items: UnsafeMutablePointer<AuthorizationItem>?)](./authorizationitemset/init%28count,items%29.md)
   Initializes an authorization item set with the given items.
 ### Instance Properties
-- [var count: UInt32](authorizationitemset/count.md)
+- [var count: UInt32](./authorizationitemset/count.md)
   The number of elements in the `items` array.
-- [var items: UnsafeMutablePointer<AuthorizationItem>?](authorizationitemset/items.md)
+- [var items: UnsafeMutablePointer<AuthorizationItem>?](./authorizationitemset/items.md)
   A pointer to an array of authorization items.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

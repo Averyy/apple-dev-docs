@@ -1,7 +1,8 @@
 # couponCode
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial coupon code for the payment request.
 
@@ -18,6 +19,10 @@ The initial coupon code for the payment request.
 var couponCode: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * couponCode;
+```
+
 #### Discussion
 
 Set the value to `nil` or the empty string to indicate that there’s no initial coupon.
@@ -26,7 +31,8 @@ Set the value to `nil` or the empty string to indicate that there’s no initial
 
 ## See Also
 
-- [var supportsCouponCode: Bool](pkpaymentrequest/supportscouponcode.md)
+### Working with coupon codes
+- [var supportsCouponCode: Bool](./supportscouponcode.md)
   A Boolean value that determines whether the payment sheet displays the coupon code field.
 
 

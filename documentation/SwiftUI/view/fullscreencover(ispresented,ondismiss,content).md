@@ -1,7 +1,8 @@
 # fullScreenCover(isPresented:onDismiss:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a modal view that covers as much of the screen as possible when binding to a Boolean value you provide is true.
 
@@ -55,7 +56,7 @@ struct FullScreenCoverPresentedOnDismiss: View {
 }
 ```
 
-![A full-screen modal view with the text A full-screen modal view](/images/com.apple.SwiftUI/SwiftUI-FullScreenCoverIsPresented@2x.png)
+![A full-screen modal view with the text A full-screen modal view](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FullScreenCoverIsPresented@2x.png)
 
 ## Parameters
 
@@ -65,17 +66,18 @@ struct FullScreenCoverPresentedOnDismiss: View {
 
 ## See Also
 
-- [func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View](view/sheet(ispresented:ondismiss:content:).md)
+### Showing a sheet, cover, or popover
+- [func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View](./sheet%28ispresented,ondismiss,content%29.md)
   Presents a sheet when a binding to a Boolean value that you provide is true.
-- [func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](view/sheet(item:ondismiss:content:).md)
+- [func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](./sheet%28item,ondismiss,content%29.md)
   Presents a sheet using the given item as a data source for the sheet’s content.
-- [func fullScreenCover<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](view/fullscreencover(item:ondismiss:content:).md)
+- [func fullScreenCover<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View](./fullscreencover%28item,ondismiss,content%29.md)
   Presents a modal view that covers as much of the screen as possible using the binding you provide as a data source for the sheet’s content.
-- [func popover<Item, Content>(item: Binding<Item?>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: (Item) -> Content) -> some View](view/popover(item:attachmentanchor:arrowedge:content:).md)
+- [func popover<Item, Content>(item: Binding<Item?>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: (Item) -> Content) -> some View](./popover%28item,attachmentanchor,arrowedge,content%29.md)
   Presents a popover using the given item as a data source for the popover’s content.
-- [func popover<Content>(isPresented: Binding<Bool>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: () -> Content) -> some View](view/popover(ispresented:attachmentanchor:arrowedge:content:).md)
+- [func popover<Content>(isPresented: Binding<Bool>, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, content: () -> Content) -> some View](./popover%28ispresented,attachmentanchor,arrowedge,content%29.md)
   Presents a popover when a given condition is true.
-- [enum PopoverAttachmentAnchor](popoverattachmentanchor.md)
+- [enum PopoverAttachmentAnchor](../popoverattachmentanchor.md)
   An attachment anchor for a popover.
 
 

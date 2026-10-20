@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerCanonDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image from a Canon camera.
 
@@ -18,6 +19,10 @@ A dictionary of key-value pairs for an image from a Canon camera.
 
 ```swift
 let kCGImagePropertyMakerCanonDictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyMakerCanonDictionary;
 ```
 
 

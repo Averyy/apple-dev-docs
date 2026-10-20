@@ -1,7 +1,8 @@
 # ManagedPackageLibrary.ManagedPackages
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An array of managed apps that updates as apps become available or unavailable.
 
@@ -18,19 +19,19 @@ struct ManagedPackages
 ## Topics
 
 ### Structures
-- [ManagedPackageLibrary.ManagedPackages.AsyncIterator](managedpackagelibrary/managedpackages/asynciterator.md)
+- [ManagedPackageLibrary.ManagedPackages.AsyncIterator](./managedpackages/asynciterator.md)
   The iterator for managed apps.
 ### Instance Methods
-- [func makeAsyncIterator() -> ManagedPackageLibrary.ManagedPackages.AsyncIterator](managedpackagelibrary/managedpackages/makeasynciterator.md)
+- [func makeAsyncIterator() -> ManagedPackageLibrary.ManagedPackages.AsyncIterator](./managedpackages/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
 ### Type Aliases
-- [ManagedPackageLibrary.ManagedPackages.Element](managedpackagelibrary/managedpackages/element.md)
+- [ManagedPackageLibrary.ManagedPackages.Element](./managedpackages/element.md)
   The type of element this asynchronous sequence produces.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

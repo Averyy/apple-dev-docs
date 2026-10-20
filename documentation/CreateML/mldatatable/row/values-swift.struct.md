@@ -1,7 +1,8 @@
 # MLDataTable.Row.Values
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -20,29 +21,30 @@ struct Values
 ## Topics
 
 ### Accessing columns
-- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:).md)
+- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](./subscript%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../../Swift/bidirectionalcollection.md)
+- [Collection](../../../Swift/collection.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [RandomAccessCollection](../../../Swift/randomaccesscollection.md)
+- [Sequence](../../../Swift/sequence.md)
 
 ## See Also
 
-- [var keys: MLDataTable.Row.Keys](mldatatable/row/keys-swift.property.md)
-- [var values: MLDataTable.Row.Values](mldatatable/row/values-swift.property.md)
-- [MLDataTable.Row.Key](mldatatable/row/key.md)
-- [MLDataTable.Row.Keys](mldatatable/row/keys-swift.typealias.md)
-- [MLDataTable.Row.Value](mldatatable/row/value.md)
+### Accessing parameters
+- [var keys: MLDataTable.Row.Keys](./keys-swift.property.md)
+- [var values: MLDataTable.Row.Values](./values-swift.property.md)
+- [MLDataTable.Row.Key](./key.md)
+- [MLDataTable.Row.Keys](./keys-swift.typealias.md)
+- [MLDataTable.Row.Value](./value.md)
 
 
 ---

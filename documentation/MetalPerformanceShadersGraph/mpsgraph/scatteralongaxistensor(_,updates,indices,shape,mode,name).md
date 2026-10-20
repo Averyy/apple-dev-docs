@@ -1,7 +1,8 @@
 # scatterAlongAxisTensor(_:updates:indices:shape:mode:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a ScatterAlongAxis operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a ScatterAlongAxis operation and returns the result tensor.
 
 ```swift
 func scatterAlongAxisTensor(_ axisTensor: MPSGraphTensor, updates updatesTensor: MPSGraphTensor, indices indicesTensor: MPSGraphTensor, shape: [NSNumber], mode: MPSGraphScatterMode, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) scatterAlongAxisTensor:(MPSGraphTensor *) axisTensor withUpdatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor shape:(MPSShape *) shape mode:(MPSGraphScatterMode) mode name:(NSString *) name;
 ```
 
 #### Return Value

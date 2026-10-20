@@ -1,7 +1,8 @@
 # GameCenterGroupGameCenterLeaderboardSetsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data for updating the leaderboard sets associated with a Game Center group.
 
@@ -10,14 +11,14 @@ The resource linkage data for updating the leaderboard sets associated with a Ga
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroupGameCenterLeaderboardSetsLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSets`
 
 
 ---

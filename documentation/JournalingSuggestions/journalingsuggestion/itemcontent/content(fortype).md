@@ -1,7 +1,8 @@
 # content(forType:)
 
 **Framework**: Journaling Suggestions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a suggestion’s contents by returning a structure specific to the given content type.
 
@@ -20,17 +21,18 @@ An instance of the requested type, if it exists in the suggestion.
 
 #### Discussion
 
-The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
+The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](../../journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 
-> **Note**: An error if the journaling suggestions picker encounters an unexpected issue.
+> **Throws**: An error if the journaling suggestions picker encounters an unexpected issue.
 
 ## Parameters
 
-- `content`: A type conforming to [`JournalingSuggestionAsset`](journalingsuggestionasset.md) protocol.
+- `content`: A type conforming to [`JournalingSuggestionAsset`](../../journalingsuggestionasset.md) protocol.
 
 ## See Also
 
-- [func hasContent<Content>(ofType: Content.Type) -> Bool](journalingsuggestion/itemcontent/hascontent(oftype:).md)
+### Accessing suggestion data by type
+- [func hasContent<Content>(ofType: Content.Type) -> Bool](./hascontent%28oftype%29.md)
   Checks if the suggestion contains information for the given type.
 
 

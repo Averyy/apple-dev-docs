@@ -1,7 +1,8 @@
 # AssistantSchemas.BrowserEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe data for web browsing functionality.
 
@@ -23,20 +24,20 @@ protocol BrowserEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var bookmark: some AssistantSchemas.Entity](assistantschemas/browserentity/bookmark.md)
+- [var bookmark: some AssistantSchemas.Entity](./browserentity/bookmark.md)
   The app entity describes a bookmark.
-- [var tab: some AssistantSchemas.Entity](assistantschemas/browserentity/tab.md)
+- [var tab: some AssistantSchemas.Entity](./browserentity/tab.md)
   The app entity describes a browser tab.
-- [var window: some AssistantSchemas.Entity](assistantschemas/browserentity/window.md)
+- [var window: some AssistantSchemas.Entity](./browserentity/window.md)
   The app entity describes a browser window.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

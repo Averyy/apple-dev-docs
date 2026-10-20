@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: AVFoundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns data captured by the specified capture output, using subscript syntax.
 
@@ -17,13 +18,17 @@ Returns data captured by the specified capture output, using subscript syntax.
 subscript(key: AVCaptureOutput) -> AVCaptureSynchronizedData? { get }
 ```
 
+```objc
+- (AVCaptureSynchronizedData *) objectForKeyedSubscript:(AVCaptureOutput *) key;
+```
+
 #### Return Value
 
 A synchronized data object corresponding to the specified capture output.
 
 #### Discussion
 
-This call is equivalent to the [`synchronizedData(for:)`](avcapturesynchronizeddatacollection/synchronizeddata(for:).md) method, but allows subscript syntax.
+This call is equivalent to the [`synchronizedData(for:)`](./synchronizeddata%28for%29.md) method, but allows subscript syntax.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ This call is equivalent to the [`synchronizedData(for:)`](avcapturesynchronizedd
 
 ## See Also
 
-- [var count: Int](avcapturesynchronizeddatacollection/count.md)
+### Accessing synchronized data
+- [var count: Int](./count.md)
   The number of synchronized data objects in the collection.
-- [func synchronizedData(for: AVCaptureOutput) -> AVCaptureSynchronizedData?](avcapturesynchronizeddatacollection/synchronizeddata(for:).md)
+- [func synchronizedData(for: AVCaptureOutput) -> AVCaptureSynchronizedData?](./synchronizeddata%28for%29.md)
   Returns synchronized data captured by the specified capture output.
 
 

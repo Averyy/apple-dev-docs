@@ -1,7 +1,8 @@
 # replaceAll(_:preservingWorldTransforms:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all children from this entity and adds the specified list of entities as the new children.
 
@@ -11,13 +12,20 @@ Removes all children from this entity and adds the specified list of entities as
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency func replaceAll<S>(_ children: S, preservingWorldTransforms: Bool = false) where S : Sequence, S.Element : Entity
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func replaceAll(_ children: [Entity], preservingWorldTransforms: Bool = false)
 ```
 
 ## Parameters
@@ -27,7 +35,8 @@ Removes all children from this entity and adds the specified list of entities as
 
 ## See Also
 
-- [func replaceAll([Entity], preservingWorldTransforms: Bool)](entity/childcollection/replaceall(_:preservingworldtransforms:)-4mgff.md)
+### Replacing entities
+- [func replaceAll([Entity], preservingWorldTransforms: Bool)](./replaceall%28_,preservingworldtransforms%29-4mgff.md)
   Removes all children from this entity and adds the specified list of entities as the new children.
 
 

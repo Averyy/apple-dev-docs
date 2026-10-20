@@ -1,7 +1,8 @@
 # kCATransactionDisableActions
 
 **Framework**: Core Animation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates whether implicit actions for property changes made within the transaction group are suppressed.
 
@@ -19,16 +20,21 @@ A key whose value indicates whether implicit actions for property changes made w
 let kCATransactionDisableActions: String
 ```
 
+```c
+extern NSString * const kCATransactionDisableActions;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), implicit actions for property changes made within the transaction group are suppressed.  The value for this key must be an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+If [`true`](../Swift/true.md), implicit actions for property changes made within the transaction group are suppressed.  The value for this key must be an instance of [`NSNumber`](../Foundation/nsnumber.md).
 
 ## See Also
 
-- [let kCATransactionAnimationDuration: String](kcatransactionanimationduration.md)
+### Constants
+- [let kCATransactionAnimationDuration: String](./kcatransactionanimationduration.md)
   Duration, in seconds, for animations triggered within the transaction group.
-- [let kCATransactionAnimationTimingFunction: String](kcatransactionanimationtimingfunction.md)
-- [let kCATransactionCompletionBlock: String](kcatransactioncompletionblock.md)
+- [let kCATransactionAnimationTimingFunction: String](./kcatransactionanimationtimingfunction.md)
+- [let kCATransactionCompletionBlock: String](./kcatransactioncompletionblock.md)
 
 
 ---

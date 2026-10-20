@@ -1,6 +1,8 @@
 # Creating an immersive space in visionOS
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [CreatingImmersiveSpacesInVisionOSWithSwiftUI.zip](https://docs-assets.developer.apple.com/published/66347c531199/CreatingImmersiveSpacesInVisionOSWithSwiftUI.zip)
 
 Enhance your visionOS app by adding an immersive space using RealityKit.
 
@@ -10,11 +12,13 @@ Enhance your visionOS app by adding an immersive space using RealityKit.
 
 #### Overview
 
-This sample code project demonstrates how to create an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) in visionOS, showcasing a collection of rocks orbiting around a person, like the scene in the following video:
+This sample code project demonstrates how to create an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) in visionOS, showcasing a collection of rocks orbiting around a person, like the scene in the following video:
+
+[Video: A screen recording of a visionOS app in Simulator that has one translucent window and a series of 3D rock entities rotating around the user.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-immersive.1-main-view.mp4)
 
 The `TurnTableSystem` runs the core functionality to manage the rotational dynamics of entities through the `TurnTableComponent`, which defines the speed and rotation axis. The `Entity` class extends with a method to populate the immersive space with 3D rock entities and then apply a random transformation to create a halo effect. The `ImmersiveView` integrates these features and showcases the potential of SwiftUI and RealityKit to build an exciting augmented reality experience.
 
-##### Create the Turntable System
+##### Create the turntable system
 
 The sample creates a custom system and corresponding component to apply a series of random rotations to the content in the immersive environment, resulting in a collection of objects that orbit around a person.
 
@@ -75,9 +79,9 @@ struct TurnTableSystem: System {
 }
 ```
 
-##### Extend the Entity Class
+##### Extend the entity class
 
-The sample extends the [`Entity`](https://developer.apple.com/documentation/realitykit/entity) class to load a file as a model component and apply the model for the halo effect.
+The sample extends the [`Entity`](../RealityKit/entity.md) class to load a file as a model component and apply the model for the halo effect.
 
 ```swift
 import RealityKit
@@ -153,7 +157,7 @@ extension Entity {
 
 The method constructs and returns a single entity that contains multiple subentities, each with a model that applies unique rotations and speed through the `TurnTableComponent`.
 
-##### Create the Immersive View
+##### Create the immersive view
 
 The sample defines a custom view for an immersive space that creates a single entity and applies the `addHalo()` method.
 
@@ -196,7 +200,7 @@ struct ImmersiveView: View {
 
 The `rootEntity` includes a `TurnTableComponent` to enable an orbit effect similar to the collective rotation of all the rock entities.
 
-##### Run the Immersive Scene
+##### Run the immersive scene
 
 The `Immersion` app structure includes an `ImmersiveSpace` entry to the scene to include in the app’s environment.
 
@@ -218,7 +222,7 @@ struct Immersion: App {
 }
 ```
 
-The sample’s main view uses the [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) instance property to call the immersive space that the `Immersion` app structure defines.
+The sample’s main view uses the [`openImmersiveSpace`](../SwiftUI/environmentvalues/openimmersivespace.md) instance property to call the immersive space that the `Immersion` app structure defines.
 
 ```swift
 import SwiftUI
@@ -241,9 +245,27 @@ struct MainView: View {
 
 ```
 
-###### Related Samples
+#### See Also
 
-###### Related Articles
+###### Related samples
+
+- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+  Use attachments to place 2D content relative to 3D content in your visionOS app.
+- [Building an immersive experience with RealityKit](../RealityKit/building-an-immersive-experience-with-realitykit.md)
+  Use systems and postprocessing effects to create a realistic underwater scene.
+- [Construct an immersive environment for visionOS](../RealityKit/construct-an-immersive-environment-for-visionos.md)
+  Build efficient custom worlds for your app.
+- [Creating an interactive 3D model in visionOS](./creating-an-interactable-3d-model-in-visionos.md)
+  Display an interactive car model using gestures in a reality view.
+
+###### Related articles
+
+- [Understanding the modular architecture of RealityKit](./understanding-the-realitykit-modular-architecture.md)
+  Learn how everything fits together in RealityKit.
+- [Creating fully immersive experiences in your app](./creating-fully-immersive-experiences.md)
+  Build fully immersive experiences by combining spaces with content you create using RealityKit or Metal.
+- [Implementing systems for entities in a scene](../RealityKit/implementing-systems-for-entities-in-a-scene.md)
+  Apply behaviors and physical effects to the objects and characters in a RealityKit scene with the Entity Component System (ECS).
 
 
 ---

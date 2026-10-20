@@ -1,7 +1,8 @@
 # AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the replacement policy when a video frame is dropped.
 
@@ -18,6 +19,10 @@ Constants indicating the replacement policy when a video frame is dropped.
 enum DroppedFrameReplacementPolicy
 ```
 
+```c
+enum AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicy : NSInteger;
+```
+
 #### Overview
 
 These constants specify how the broadcast video output should handle dropped frames by providing replacement content.
@@ -25,22 +30,22 @@ These constants specify how the broadcast video output should handle dropped fra
 ## Topics
 
 ### Enumeration Cases
-- [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy.blackFrame](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.enum/blackframe.md)
+- [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy.blackFrame](./droppedframereplacementpolicy-swift.enum/blackframe.md)
   Insert a black frame as replacement. When a frame is dropped, a black frame is inserted at the expected presentation time. This maintains output timing continuity while providing a clear visual indication of the dropped frame.
-- [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy.repeatPreviousFrame](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.enum/repeatpreviousframe.md)
+- [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy.repeatPreviousFrame](./droppedframereplacementpolicy-swift.enum/repeatpreviousframe.md)
   Repeat the previous frame as replacement. When a frame is dropped, the most recent successfully output frame is repeated at the expected presentation time. This is the default behavior and provides smoother visual continuity.
 ### Initializers
-- [init?(rawValue: Int)](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./droppedframereplacementpolicy-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

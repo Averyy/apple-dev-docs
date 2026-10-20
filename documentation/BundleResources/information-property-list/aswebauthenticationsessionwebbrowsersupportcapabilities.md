@@ -1,36 +1,39 @@
 # ASWebAuthenticationSessionWebBrowserSupportCapabilities
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `ASWebAuthenticationSessionWebBrowserSupportCapabilities` (ASWeb Authentication Session Browser Support Capabilities)
+- **Type**: dictionary
 
 #### Discussion
 
-Add a dictionary for this key to your app’s [`Information Property List`](information-property-list.md) if your app is a web browser and it supports web authentication. In the dictionary, include the capability keys listed below to indicate your browser app’s capabilities. For more information, see [`Supporting Single Sign-On in a Web Browser App`](https://developer.apple.com/documentation/authenticationservices/supporting-single-sign-on-in-a-web-browser-app).
+Add a dictionary for this key to your app’s [`Information Property List`](../information-property-list.md) if your app is a web browser and it supports web authentication. In the dictionary, include the capability keys listed below to indicate your browser app’s capabilities. For more information, see [Supporting Single Sign-On in a Web Browser App](../../AuthenticationServices/supporting-single-sign-on-in-a-web-browser-app.md).
 
 ## Topics
 
 ### Capabilities
-- [IsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/issupported.md)
+- [IsSupported](./aswebauthenticationsessionwebbrowsersupportcapabilities/issupported.md)
   A Boolean that indicates whether the app acts as a browser that supports authentication sessions.
-- [EphemeralBrowserSessionIsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/ephemeralbrowsersessionissupported.md)
+- [EphemeralBrowserSessionIsSupported](./aswebauthenticationsessionwebbrowsersupportcapabilities/ephemeralbrowsersessionissupported.md)
   A Boolean that indicates whether the app supports ephemeral browsing when conducting authentication sessions.
-- [CallbackURLMatchingIsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/callbackurlmatchingissupported.md)
+- [CallbackURLMatchingIsSupported](./aswebauthenticationsessionwebbrowsersupportcapabilities/callbackurlmatchingissupported.md)
   A Boolean that indicates whether the app can handle callbacks to match authentication URLs.
-- [AdditionalHeaderFieldsAreSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/additionalheaderfieldsaresupported.md)
+- [AdditionalHeaderFieldsAreSupported](./aswebauthenticationsessionwebbrowsersupportcapabilities/additionalheaderfieldsaresupported.md)
   A Boolean that indicates whether the app supports additional header fields in requests.
 
 ## See Also
 
-- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](information-property-list/asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
+### Authentication
+- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](./asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
   A Boolean value that indicates the system shouldn’t show security recommendation prompts when users sign in using the app.
 
 

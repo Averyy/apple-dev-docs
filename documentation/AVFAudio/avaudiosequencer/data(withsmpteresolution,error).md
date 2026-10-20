@@ -1,7 +1,8 @@
 # data(withSMPTEResolution:error:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a data object that contains the events from the sequence.
 
@@ -19,6 +20,10 @@ Gets a data object that contains the events from the sequence.
 func data(withSMPTEResolution SMPTEResolution: Int, error outError: NSErrorPointer) -> Data
 ```
 
+```objc
+- (NSData *) dataWithSMPTEResolution:(NSInteger) SMPTEResolution error:(NSError **) outError;
+```
+
 #### Discussion
 
 The client controls the lifetime of the data value this method returns.
@@ -30,23 +35,24 @@ The client controls the lifetime of the data value this method returns.
 
 ## See Also
 
-- [var isPlaying: Bool](avaudiosequencer/isplaying.md)
+### Getting sequence properties
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether the sequencer’s player is in a playing state.
-- [var rate: Float](avaudiosequencer/rate.md)
+- [var rate: Float](./rate.md)
   The playback rate of the sequencer’s player.
-- [var tracks: [AVMusicTrack]](avaudiosequencer/tracks.md)
+- [var tracks: [AVMusicTrack]](./tracks.md)
   An array that contains all the tracks in the sequence.
-- [var currentPositionInBeats: TimeInterval](avaudiosequencer/currentpositioninbeats.md)
+- [var currentPositionInBeats: TimeInterval](./currentpositioninbeats.md)
   The current playback position, in beats.
-- [var currentPositionInSeconds: TimeInterval](avaudiosequencer/currentpositioninseconds.md)
+- [var currentPositionInSeconds: TimeInterval](./currentpositioninseconds.md)
   The current playback position, in seconds.
-- [var tempoTrack: AVMusicTrack](avaudiosequencer/tempotrack.md)
+- [var tempoTrack: AVMusicTrack](./tempotrack.md)
   The track that contains tempo information about the sequence.
-- [var userInfo: [String : Any]](avaudiosequencer/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   A dictionary that contains metadata from a sequence.
-- [AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey.md)
+- [AVAudioSequencer.InfoDictionaryKey](./infodictionarykey.md)
   Constants that defines metadata keys for a sequencer.
-- [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
+- [var AVMusicTimeStampEndOfTrack: Double](../avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
 
 

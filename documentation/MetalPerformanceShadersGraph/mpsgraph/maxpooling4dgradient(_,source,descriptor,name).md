@@ -1,7 +1,8 @@
 # maxPooling4DGradient(_:source:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a max-pooling gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a max-pooling gradient operation and returns the result tensor.
 
 ```swift
 func maxPooling4DGradient(_ gradient: MPSGraphTensor, source: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) maxPooling4DGradientWithGradientTensor:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

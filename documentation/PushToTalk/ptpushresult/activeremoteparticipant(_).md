@@ -1,7 +1,8 @@
 # activeRemoteParticipant(_:)
 
 **Framework**: Push to Talk  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a push result for reporting that a remote participant started to speak.
 
@@ -16,9 +17,13 @@ Creates a push result for reporting that a remote participant started to speak.
 class func activeRemoteParticipant(_ participant: PTParticipant) -> PTPushResult
 ```
 
+```objc
++ (PTPushResult *) pushResultForActiveRemoteParticipant:(PTParticipant *) participant;
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 ## Parameters
 

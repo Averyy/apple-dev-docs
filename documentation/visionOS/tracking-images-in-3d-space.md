@@ -1,6 +1,7 @@
 # Tracking preregistered images in 3D space
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Place content based on the current position of a known image in a person’s surroundings.
 
@@ -39,33 +40,34 @@ func updateImage(_ anchor: ImageAnchor) {
 }
 ```
 
-If you know the real-world dimensions of the images you’re tracking, use the [`physicalSize`](https://developer.apple.com/documentation/arkit/referenceimage/physicalsize) property to improve tracking accuracy. The [`estimatedScaleFactor`](https://developer.apple.com/documentation/arkit/imageanchor/estimatedscalefactor) property provides information about how the scale of the tracked image differs from the expected physical size you provide.
+If you know the real-world dimensions of the images you’re tracking, use the [`physicalSize`](../ARKit/referenceimage/physicalsize.md) property to improve tracking accuracy. The [`estimatedScaleFactor`](../ARKit/imageanchor/estimatedscalefactor.md) property provides information about how the scale of the tracked image differs from the expected physical size you provide.
 
 ## See Also
 
-- [Happy Beam](happybeam.md)
+### ARKit
+- [Happy Beam](./happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Setting up access to ARKit data](setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [Incorporating real-world surroundings in an immersive experience](incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](./incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
-- [Placing content on detected planes](placing-content-on-detected-planes.md)
+- [Placing content on detected planes](./placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [Tracking specific points in world space](tracking-points-in-world-space.md)
+- [Tracking specific points in world space](./tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Exploring object tracking with ARKit](exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](./exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
+- [Object tracking with Reality Composer Pro experiences](./object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
+- [Building local experiences with room tracking](./building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
-- [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](./placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+- [Drawing in the air and on surfaces with a spatial stylus](./drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
-- [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](./working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 
 

@@ -1,7 +1,8 @@
 # matches(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collection containing all non-overlapping matches of the regex, created by the given closure.
 
@@ -19,6 +20,8 @@ Returns a collection containing all non-overlapping matches of the regex, create
 ```swift
 func matches<Output>(@RegexComponentBuilder of content: () -> some RegexComponent) -> [Regex<Output>.Match]
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

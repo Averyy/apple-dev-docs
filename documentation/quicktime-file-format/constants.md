@@ -1,8 +1,9 @@
 # Constants
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
-#### Vr World Atom Types
+#### VR World atom types
 
 ```c
 enum {
@@ -16,7 +17,7 @@ enum {
 };
 ```
 
-#### Node Information Atom Types
+#### Node information atom types
 
 ```c
 enum {
@@ -107,7 +108,7 @@ enum QTVRControlSettings {
 };
 ```
 
-#### Controller Subtype and Id
+#### Controller Subtype and ID
 
 ```c
 enum {
@@ -147,7 +148,8 @@ enum {
 
 ## See Also
 
-- [Data types](data_types.md)
+### C Summary
+- [Data types](./data_types.md)
 
 
 ---

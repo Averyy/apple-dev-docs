@@ -1,7 +1,8 @@
 # errorAppName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An `NSString` that specifies the name of the application that generated the error.
 
@@ -14,15 +15,20 @@ An `NSString` that specifies the name of the application that generated the erro
 class let errorAppName: String
 ```
 
+```c
+extern NSString * const NSAppleScriptErrorAppName;
+```
+
 ## See Also
 
-- [class let errorMessage: String](nsapplescript/errormessage.md)
+### Constants
+- [class let errorMessage: String](./errormessage.md)
   An `NSString` that supplies a detailed description of the error condition.
-- [class let errorNumber: String](nsapplescript/errornumber.md)
+- [class let errorNumber: String](./errornumber.md)
   An `NSNumber` that specifies the error number.
-- [class let errorBriefMessage: String](nsapplescript/errorbriefmessage.md)
+- [class let errorBriefMessage: String](./errorbriefmessage.md)
   An `NSString` that provides a brief description of the error.
-- [class let errorRange: String](nsapplescript/errorrange.md)
+- [class let errorRange: String](./errorrange.md)
   An `NSValue` that specifies a range.
 
 

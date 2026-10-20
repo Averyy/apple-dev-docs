@@ -1,7 +1,8 @@
 # init(array:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a counted set object initialized with the contents of a given array.
 
@@ -20,6 +21,10 @@ Returns a counted set object initialized with the contents of a given array.
 convenience init(array: [Any])
 ```
 
+```objc
+- (instancetype) initWithArray:(NSArray<id> *) array;
+```
+
 #### Return Value
 
 An initialized counted set object with the contents of `array`. The returned object might be different than the original receiver.
@@ -30,12 +35,14 @@ An initialized counted set object with the contents of `array`. The returned obj
 
 ## See Also
 
-- [Collections Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
-- [convenience init(array: [Any])](nsset/init(array:).md)
+### Related Documentation
+- [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+- [convenience init(array: [Any])](../nsset/init%28array%29.md)
   Initializes a newly allocated set with the objects that are contained in a given array.
-- [convenience init(set: Set<AnyHashable>)](nscountedset/init(set:).md)
+### Initializing a Counted Set
+- [convenience init(set: Set<AnyHashable>)](./init%28set%29.md)
   Returns a counted set object initialized with the contents of a given set.
-- [init(capacity: Int)](nscountedset/init(capacity:).md)
+- [init(capacity: Int)](./init%28capacity%29.md)
   Returns a counted set object initialized with enough memory to hold a given number of objects.
 
 

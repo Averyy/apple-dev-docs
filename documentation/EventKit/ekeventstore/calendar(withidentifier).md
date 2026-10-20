@@ -1,7 +1,8 @@
 # calendar(withIdentifier:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Locates a calendar with the specified identifier.
 
@@ -19,9 +20,13 @@ Locates a calendar with the specified identifier.
 func calendar(withIdentifier identifier: String) -> EKCalendar?
 ```
 
+```objc
+- (EKCalendar *) calendarWithIdentifier:(NSString *) identifier;
+```
+
 #### Return Value
 
-A calendar with a [`calendarIdentifier`](ekcalendar/calendaridentifier.md) that matches the specified identifier.
+A calendar with a [`calendarIdentifier`](../ekcalendar/calendaridentifier.md) that matches the specified identifier.
 
 ## Parameters
 
@@ -29,17 +34,18 @@ A calendar with a [`calendarIdentifier`](ekcalendar/calendaridentifier.md) that 
 
 ## See Also
 
-- [var defaultCalendarForNewEvents: EKCalendar?](ekeventstore/defaultcalendarfornewevents.md)
+### Accessing calendars
+- [var defaultCalendarForNewEvents: EKCalendar?](./defaultcalendarfornewevents.md)
   The calendar that events are added to by default, as specified by user settings.
-- [func defaultCalendarForNewReminders() -> EKCalendar?](ekeventstore/defaultcalendarfornewreminders.md)
+- [func defaultCalendarForNewReminders() -> EKCalendar?](./defaultcalendarfornewreminders%28%29.md)
   Identifies the default calendar for adding reminders to, as specified by user settings.
-- [func calendars(for: EKEntityType) -> [EKCalendar]](ekeventstore/calendars(for:).md)
+- [func calendars(for: EKEntityType) -> [EKCalendar]](./calendars%28for%29.md)
   Identifies the calendars that support a given entity type, such as reminders or events.
-- [func saveCalendar(EKCalendar, commit: Bool) throws](ekeventstore/savecalendar(_:commit:).md)
+- [func saveCalendar(EKCalendar, commit: Bool) throws](./savecalendar%28_,commit%29.md)
   Saves a calendar to the event store by either committing or batching the changes.
-- [func removeCalendar(EKCalendar, commit: Bool) throws](ekeventstore/removecalendar(_:commit:).md)
+- [func removeCalendar(EKCalendar, commit: Bool) throws](./removecalendar%28_,commit%29.md)
   Removes a calendar from the event store by either committing or batching the changes.
-- [var calendars: [EKCalendar]](ekeventstore/calendars.md)
+- [var calendars: [EKCalendar]](./calendars.md)
   The calendars associated with the event store.
 
 

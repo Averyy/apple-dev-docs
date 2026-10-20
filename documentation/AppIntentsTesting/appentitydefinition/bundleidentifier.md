@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the app that includes the app entity.
 
@@ -22,7 +23,8 @@ let bundleIdentifier: String
 
 ## See Also
 
-- [let typeIdentifier: String](appentitydefinition/typeidentifier.md)
+### Identifying the entity
+- [let typeIdentifier: String](./typeidentifier.md)
   The entity type’s unique identifier.
 
 

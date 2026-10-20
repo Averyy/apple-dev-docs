@@ -1,29 +1,30 @@
 # Transform3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(scale: Size3D, rotation: Rotation3D, translation: Vector3D)](affinetransform3d/init(scale:rotation:translation:)-3somu.md)
+- [init(scale: Size3D, rotation: Rotation3D, translation: Vector3D)](./init%28scale,rotation,translation%29-3somu.md)
   Creates an affine transform from the specified scale, rotate, and translate transforms.
-- [init(shear: AxisWithFactors)](affinetransform3d/init(shear:).md)
+- [init(shear: AxisWithFactors)](./init%28shear%29.md)
   Creates an affine transform from the specified shear transform.
 ### Instance Properties
-- [var inverse: AffineTransform3D?](affinetransform3d/inverse.md)
+- [var inverse: AffineTransform3D?](./inverse.md)
   The affine transform’s inverse.
-- [var rotation: Rotation3D?](affinetransform3d/rotation.md)
+- [var rotation: Rotation3D?](./rotation.md)
   The affine transform’s rotation.
-- [var translation: Vector3D](affinetransform3d/translation.md)
+- [var translation: Vector3D](./translation.md)
   The translation component of the affine transform.
 ### Instance Methods
-- [func flip(along: Axis3D)](affinetransform3d/flip(along:).md)
+- [func flip(along: Axis3D)](./flip%28along%29.md)
   Flips an affine transform along the specified axis.
-- [func flipped(along: Axis3D) -> AffineTransform3D](affinetransform3d/flipped(along:).md)
+- [func flipped(along: Axis3D) -> AffineTransform3D](./flipped%28along%29.md)
   Returns an affine transform that results from flipping it along the specified axis.
-- [func isApproximatelyEqual(to: AffineTransform3D, tolerance: Double) -> Bool](affinetransform3d/isapproximatelyequal(to:tolerance:).md)
+- [func isApproximatelyEqual(to: AffineTransform3D, tolerance: Double) -> Bool](./isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two transforms are equal within a specified tolerance.
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](affinetransform3d/isuniform(overdimensions:).md)
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./isuniform%28overdimensions%29.md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
 
 

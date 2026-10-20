@@ -1,7 +1,8 @@
 # rootElement()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the root element of the receiver.
 
@@ -15,13 +16,18 @@ Returns the root element of the receiver.
 func rootElement() -> XMLElement?
 ```
 
+```objc
+- (NSXMLElement *) rootElement;
+```
+
 #### Return Value
 
 The root element of the receiver.
 
 ## See Also
 
-- [func setRootElement(XMLElement)](xmldocument/setrootelement(_:).md)
+### Managing the Root Element
+- [func setRootElement(XMLElement)](./setrootelement%28_%29.md)
   Set the root element of the receiver.
 
 

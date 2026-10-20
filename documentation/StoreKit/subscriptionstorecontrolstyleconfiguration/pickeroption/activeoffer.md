@@ -1,7 +1,8 @@
 # activeOffer
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -19,13 +20,14 @@ var activeOffer: Product.SubscriptionOffer? { get }
 
 ## See Also
 
-- [var subscription: Product](subscriptionstorecontrolstyleconfiguration/pickeroption/subscription.md)
+### Getting properties of the subscription picker option
+- [var subscription: Product](./subscription.md)
   The auto-renewable subscription that the picker option represents.
-- [let isSelected: Bool](subscriptionstorecontrolstyleconfiguration/pickeroption/isselected.md)
+- [let isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the picker option is in a selected state.
-- [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](subscriptionstorecontrolstyleconfiguration/pickeroption/icon.md)
+- [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./icon.md)
   The subscription option’s icon.
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/pickeroption/id.md)
+- [var id: Product.ID](./id.md)
 
 
 ---

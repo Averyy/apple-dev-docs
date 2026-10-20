@@ -1,7 +1,8 @@
 # AssistantSchemas.WhiteboardIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer whiteboard functionality.
 
@@ -23,28 +24,28 @@ protocol WhiteboardIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var createBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/createboard.md)
+- [var createBoard: some AssistantSchemas.Intent](./whiteboardintent/createboard.md)
   The app intent conforms to the schema for creating a new whiteboard canvas.
-- [var createItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/createitem.md)
+- [var createItem: some AssistantSchemas.Intent](./whiteboardintent/createitem.md)
   The app intent conforms to the schema for creating an item on a whiteboard canvas.
-- [var deleteBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/deleteboard.md)
+- [var deleteBoard: some AssistantSchemas.Intent](./whiteboardintent/deleteboard.md)
   The app intent conforms to the schema for deleting a whiteboard canvas.
-- [var deleteItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/deleteitem.md)
+- [var deleteItem: some AssistantSchemas.Intent](./whiteboardintent/deleteitem.md)
   The app intent conforms to the schema for deleting an item on a whiteboard canvas.
-- [var openBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/openboard.md)
+- [var openBoard: some AssistantSchemas.Intent](./whiteboardintent/openboard.md)
   The app intent conforms to the schema for opening a new whiteboard canvas.
-- [var updateBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/updateboard.md)
+- [var updateBoard: some AssistantSchemas.Intent](./whiteboardintent/updateboard.md)
   The app intent conforms to the schema for updating a whiteboard canvas.
-- [var updateItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/updateitem.md)
+- [var updateItem: some AssistantSchemas.Intent](./whiteboardintent/updateitem.md)
   The app intent conforms to the schema for updating an item on a whiteboard canvas.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The data format you use for indexing into the tensor.
@@ -18,6 +19,10 @@ The data format you use for indexing into the tensor.
 
 ```swift
 var indexType: MTLDataType { get }
+```
+
+```objc
+@property (readonly) MTLDataType indexType;
 ```
 
 

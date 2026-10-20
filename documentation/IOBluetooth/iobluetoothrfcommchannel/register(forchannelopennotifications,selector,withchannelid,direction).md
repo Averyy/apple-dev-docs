@@ -1,17 +1,22 @@
 # register(forChannelOpenNotifications:selector:withChannelID:direction:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allows a client to register for RFCOMM channel open notifications for certain types of RFCOMM channels.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func register(forChannelOpenNotifications object: Any!, selector: Selector!, withChannelID channelID: BluetoothRFCOMMChannelID, direction inDirection: IOBluetoothUserNotificationChannelDirection) -> IOBluetoothUserNotification!
+```
+
+```objc
++ (IOBluetoothUserNotification *) registerForChannelOpenNotifications:(id) object selector:(SEL) selector withChannelID:(BluetoothRFCOMMChannelID) channelID direction:(IOBluetoothUserNotificationChannelDirection) inDirection;
 ```
 
 #### Discussion

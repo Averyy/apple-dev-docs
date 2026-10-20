@@ -1,7 +1,8 @@
 # setTitle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the switch title to the specified string.
 
@@ -12,6 +13,10 @@ Sets the switch title to the specified string.
 
 ```swift
 func setTitle(_ title: String?)
+```
+
+```objc
+- (void) setTitle:(NSString *) title;
 ```
 
 #### Discussion
@@ -26,8 +31,10 @@ The switch title is drawn using the font and styling information from your story
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setAttributedTitle(NSAttributedString?)](wkinterfaceswitch/setattributedtitle(_:).md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Setting the Switch’s Title
+- [func setAttributedTitle(NSAttributedString?)](./setattributedtitle%28_%29.md)
   Sets the switch title to the specified attributed string.
 
 

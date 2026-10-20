@@ -1,7 +1,8 @@
 # allowsPrivateRelay
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the assessment allows iCloud Private Relay to be active.
 
@@ -13,6 +14,10 @@ A Boolean value that indicates whether the assessment allows iCloud Private Rela
 
 ```swift
 var allowsPrivateRelay: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsPrivateRelay;
 ```
 
 #### Discussion

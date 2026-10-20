@@ -1,7 +1,8 @@
 # MTLFXSpatialScalerColorProcessingMode.linear
 
 **Framework**: MetalFX  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates your input and output textures use a linear color space.
 
@@ -19,11 +20,16 @@ Indicates your input and output textures use a linear color space.
 case linear
 ```
 
+```c
+MTLFXSpatialScalerColorProcessingModeLinear
+```
+
 ## See Also
 
-- [MTLFXSpatialScalerColorProcessingMode.perceptual](mtlfxspatialscalercolorprocessingmode/perceptual.md)
+### Color space modes
+- [MTLFXSpatialScalerColorProcessingMode.perceptual](./perceptual.md)
   Indicates your input and output textures use a perceptual color space.
-- [MTLFXSpatialScalerColorProcessingMode.hdr](mtlfxspatialscalercolorprocessingmode/hdr.md)
+- [MTLFXSpatialScalerColorProcessingMode.hdr](./hdr.md)
   Indicates your input and output textures use a high dynamic range color space.
 
 

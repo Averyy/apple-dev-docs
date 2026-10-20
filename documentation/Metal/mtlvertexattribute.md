@@ -1,7 +1,8 @@
 # MTLVertexAttribute
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance that represents an attribute of a vertex function.
 
@@ -10,7 +11,7 @@ An instance that represents an attribute of a vertex function.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,49 +20,54 @@ An instance that represents an attribute of a vertex function.
 class MTLVertexAttribute
 ```
 
+```objc
+@interface MTLVertexAttribute : NSObject
+```
+
 #### Overview
 
-An [`MTLVertexAttribute`](mtlvertexattribute.md) instance represents an attribute for per-vertex input in a vertex function. You use vertex attribute instances to inspect the inputs of a vertex function by examining the [`vertexAttributes`](mtlfunction/vertexattributes.md) property of the corresponding [`MTLFunction`](mtlfunction.md) instance.
+An [`MTLVertexAttribute`](./mtlvertexattribute.md) instance represents an attribute for per-vertex input in a vertex function. You use vertex attribute instances to inspect the inputs of a vertex function by examining the [`vertexAttributes`](./mtlfunction/vertexattributes.md) property of the corresponding [`MTLFunction`](./mtlfunction.md) instance.
 
 ## Topics
 
 ### Describing the attribute
-- [var name: String](mtlvertexattribute/name.md)
+- [var name: String](./mtlvertexattribute/name.md)
   The name of the attribute.
-- [var attributeIndex: Int](mtlvertexattribute/attributeindex.md)
+- [var attributeIndex: Int](./mtlvertexattribute/attributeindex.md)
   The index of the attribute, as declared in Metal shader source code.
-- [var attributeType: MTLDataType](mtlvertexattribute/attributetype.md)
+- [var attributeType: MTLDataType](./mtlvertexattribute/attributetype.md)
   The data type for the attribute, as declared in Metal shader source code.
-- [var isActive: Bool](mtlvertexattribute/isactive.md)
+- [var isActive: Bool](./mtlvertexattribute/isactive.md)
   A Boolean value that indicates whether this vertex attribute is active.
-- [var isPatchControlPointData: Bool](mtlvertexattribute/ispatchcontrolpointdata.md)
+- [var isPatchControlPointData: Bool](./mtlvertexattribute/ispatchcontrolpointdata.md)
   A Boolean value that indicates whether this vertex attribute represents control point data.
-- [var isPatchData: Bool](mtlvertexattribute/ispatchdata.md)
+- [var isPatchData: Bool](./mtlvertexattribute/ispatchdata.md)
   A Boolean value that indicates whether this vertex attribute represents patch data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLAttribute](mtlattribute.md)
+### Function arguments
+- [class MTLAttribute](./mtlattribute.md)
   An object that describes an attribute defined in the stage-in argument for a shader.
-- [class MTLArgument](mtlargument.md)
+- [class MTLArgument](./mtlargument.md)
   Information about an argument of a graphics or compute function.
-- [typealias MTLAutoreleasedArgument](mtlautoreleasedargument.md)
+- [typealias MTLAutoreleasedArgument](./mtlautoreleasedargument.md)
   A convenience type alias for an autoreleased argument instance.
-- [enum MTLArgumentType](mtlargumenttype.md)
+- [enum MTLArgumentType](./mtlargumenttype.md)
   The resource type for an argument of a function.
-- [typealias MTLArgumentAccess](mtlargumentaccess.md)
+- [typealias MTLArgumentAccess](./mtlargumentaccess.md)
   Function access restrictions to argument data in the shading language code.
 
 

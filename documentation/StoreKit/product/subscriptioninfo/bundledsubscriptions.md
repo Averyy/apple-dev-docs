@@ -1,7 +1,8 @@
 # bundledSubscriptions
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties and functionality specific to auto-renewable subscriptions included in a subscription bundle.
 

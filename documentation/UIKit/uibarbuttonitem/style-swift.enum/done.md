@@ -1,21 +1,26 @@
 # done
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A button style for a done button.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 26.0 (renamed: UIBarButtonItem.Style.prominent)
+- iPadOS 2.0+ - Deprecated in 26.0 (renamed: UIBarButtonItem.Style.prominent)
+- Mac Catalyst 13.1+ - Deprecated in 26.0 (renamed: UIBarButtonItem.Style.prominent)
+- tvOS - Deprecated in 26.0 (renamed: UIBarButtonItem.Style.prominent)
+- visionOS 1.0+ - Deprecated in 26.0 (renamed: UIBarButtonItem.Style.prominent)
 
 ## Declaration
 
 ```swift
 static var done: UIBarButtonItem.Style { get }
+```
+
+```c
+UIBarButtonItemStyleDone
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ For example, use this style for a button that completes some task and returns to
 
 ## See Also
 
-- [UIBarButtonItem.Style.plain](uibarbuttonitem/style-swift.enum/plain.md)
+### Constants
+- [UIBarButtonItem.Style.plain](./plain.md)
   A button style with plain text styling.
-- [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
+- [UIBarButtonItem.Style.prominent](./prominent.md)
   A button item style for a prominent button.
-- [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
+- [UIBarButtonItem.Style.bordered](./bordered.md)
   A simple button style with a border.
 
 

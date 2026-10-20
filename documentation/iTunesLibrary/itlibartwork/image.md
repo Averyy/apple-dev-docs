@@ -1,7 +1,8 @@
 # image
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The artwork image.
 
@@ -15,12 +16,17 @@ The artwork image.
 var image: NSImage? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) NSImage * image;
+```
+
 ## See Also
 
-- [var imageData: Data?](itlibartwork/imagedata.md)
-  The raw image data of the artwork in the format that [`imageDataFormat`](itlibartwork/imagedataformat.md) specifies.
-- [var imageDataFormat: ITLibArtworkFormat](itlibartwork/imagedataformat.md)
-  The format of the artwork image data that [`imageData`](itlibartwork/imagedata.md) returns.
+### Getting Artwork Info
+- [var imageData: Data?](./imagedata.md)
+  The raw image data of the artwork in the format that [`imageDataFormat`](./imagedataformat.md) specifies.
+- [var imageDataFormat: ITLibArtworkFormat](./imagedataformat.md)
+  The format of the artwork image data that [`imageData`](./imagedata.md) returns.
 
 
 ---

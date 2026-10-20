@@ -1,7 +1,8 @@
 # contactAccessButtonCaption(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,8 +18,9 @@
 
 ## See Also
 
-- [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](view/contactaccessbuttonstyle(_:).md)
-- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
+### Managing contact access
+- [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](./contactaccessbuttonstyle%28_%29.md)
+- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](./contactaccesspicker%28ispresented,completionhandler%29.md)
   Modally present UI which allows the user to select which contacts your app has access to.
 
 

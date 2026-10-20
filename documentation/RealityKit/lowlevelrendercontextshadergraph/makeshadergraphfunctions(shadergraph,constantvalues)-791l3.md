@@ -2,9 +2,10 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:)-791l3.md) for non-async callers.
+A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](./makeshadergraphfunctions%28shadergraph,constantvalues%29-791l3.md) for non-async callers.
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +19,16 @@ A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)
 func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) throws -> sending LowLevelMaterialResource.ShaderGraphOutput
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
+```
+
 #### Return Value
 
-The compiled functions for use in a [`LowLevelMaterialResource`](lowlevelmaterialresource.md).
+The compiled functions for use in a [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 
 ## Parameters
 
@@ -29,7 +37,8 @@ The compiled functions for use in a [`LowLevelMaterialResource`](lowlevelmateria
 
 ## See Also
 
-- [func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:)-9d8oc.md)
+### Creating shader graph functions
+- [func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput](./makeshadergraphfunctions%28shadergraph,constantvalues%29-9d8oc.md)
   Compiles a ShaderGraph into a geometry modifier and surface shader.
 
 

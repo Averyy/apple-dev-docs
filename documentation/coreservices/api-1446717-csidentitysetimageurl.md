@@ -1,7 +1,8 @@
 # CSIdentitySetImageURL(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentitySetImageURL(_ identity: CSIdentity!, _ url: CFURL!)
+```
+
+```c
+void CSIdentitySetImageURL(CSIdentityRef identity, CFURLRef url);
 ```
 
 

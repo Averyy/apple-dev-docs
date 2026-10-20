@@ -1,7 +1,8 @@
 # scaleFactor
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the scale factor between input and output.
 
@@ -17,28 +18,33 @@ Indicates the scale factor between input and output.
 var scaleFactor: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger scaleFactor;
+```
+
 ## See Also
 
-- [var frameWidth: Int](vtsuperresolutionscalerconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frame in pixels.
-- [var frameHeight: Int](vtsuperresolutionscalerconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frame in pixels.
-- [var inputType: VTSuperResolutionScalerConfiguration.InputType](vtsuperresolutionscalerconfiguration/inputtype-swift.property.md)
+- [var inputType: VTSuperResolutionScalerConfiguration.InputType](./inputtype-swift.property.md)
   Indicates the type of input.
-- [VTSuperResolutionScalerConfiguration.InputType](vtsuperresolutionscalerconfiguration/inputtype-swift.enum.md)
+- [VTSuperResolutionScalerConfiguration.InputType](./inputtype-swift.enum.md)
   Available super-resolution processor input types.
-- [var usesPrecomputedFlow: Bool](vtsuperresolutionscalerconfiguration/usesprecomputedflow.md)
+- [var usesPrecomputedFlow: Bool](./usesprecomputedflow.md)
   Indicates that you provide optical flow.
-- [var usesPrecomputedFlow: Bool](vtsuperresolutionscalerconfiguration/usesprecomputedflow.md)
+- [var usesPrecomputedFlow: Bool](./usesprecomputedflow.md)
   Indicates that you provide optical flow.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtsuperresolutionscalerconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtsuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var supportedPixelFormats: [OSType]](vtsuperresolutionscalerconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritization](vtsuperresolutionscalerconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [var qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.property.md)
   A parameter to control quality and performance levels.
-- [VTSuperResolutionScalerConfiguration.QualityPrioritization](vtsuperresolutionscalerconfiguration/qualityprioritization-swift.enum.md)
+- [VTSuperResolutionScalerConfiguration.QualityPrioritization](./qualityprioritization-swift.enum.md)
   Configuration value you set to prioritize quality or performance.
 
 

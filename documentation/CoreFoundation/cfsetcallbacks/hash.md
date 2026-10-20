@@ -1,23 +1,28 @@
 # hash
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The callback used to compute a hash code for values in a collection. If `NULL`, the collection computes a hash code by converting the pointer value to an integer. See [`CFSetHashCallBack`](cfsethashcallback.md) for a description of this callback.
+The callback used to compute a hash code for values in a collection. If `NULL`, the collection computes a hash code by converting the pointer value to an integer. See [`CFSetHashCallBack`](../cfsethashcallback.md) for a description of this callback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var hash: CFSetHashCallBack!
+```
+
+```c
+CFSetHashCallBack hash;
 ```
 
 

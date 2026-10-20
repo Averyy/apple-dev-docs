@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style that applies to the action’s button.
 
@@ -9,7 +10,7 @@ The style that applies to the action’s button.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The style that applies to the action’s button.
 var style: UIAlertAction.Style { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIAlertActionStyle style;
+```
+
 #### Discussion
 
-This property is set to the value you specified in the [`init(title:style:handler:)`](uialertaction/init(title:style:handler:).md) method.
+This property is set to the value you specified in the [`init(title:style:handler:)`](./init%28title,style,handler%29.md) method.
 
 ## See Also
 
-- [var title: String?](uialertaction/title.md)
+### Getting the action’s attributes
+- [var title: String?](./title.md)
   The title of the action’s button.
-- [var isEnabled: Bool](uialertaction/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the action is currently enabled.
 
 

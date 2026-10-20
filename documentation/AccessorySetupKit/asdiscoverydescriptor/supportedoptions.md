@@ -1,7 +1,8 @@
 # supportedOptions
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options supported by an accessory.
 
@@ -15,9 +16,14 @@ Options supported by an accessory.
 var supportedOptions: ASAccessory.SupportOptions { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) ASAccessorySupportOptions supportedOptions;
+```
+
 ## See Also
 
-- [ASAccessory.SupportOptions](asaccessory/supportoptions.md)
+### Specifying options
+- [ASAccessory.SupportOptions](../asaccessory/supportoptions.md)
   Options of discoverable accessories.
 
 

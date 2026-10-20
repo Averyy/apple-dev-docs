@@ -1,7 +1,8 @@
 # thumbnailSize
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the maximum width and height of the thumbnails in the thumbnail view.
 
@@ -15,8 +16,28 @@ Returns the maximum width and height of the thumbnails in the thumbnail view.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var thumbnailSize: CGSize { get set }
+```
+
+*macOS*
+
 ```swift
 var thumbnailSize: NSSize { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic) CGSize thumbnailSize;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSSize thumbnailSize;
 ```
 
 #### Return Value

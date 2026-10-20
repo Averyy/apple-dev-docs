@@ -1,7 +1,8 @@
 # metricGroup
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metric group this metric belongs to.
 
@@ -19,7 +20,7 @@ var metricGroup: MetricGroup { get }
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 
 ---

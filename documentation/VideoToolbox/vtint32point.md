@@ -1,7 +1,8 @@
 # VTInt32Point
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a 32-bit integer point value.
 
@@ -19,6 +20,10 @@ A structure that represents a 32-bit integer point value.
 struct VTInt32Point
 ```
 
+```c
+typedef struct VTInt32Point { ... } VTInt32Point;
+```
+
 #### Overview
 
 Use this structure to represent a point at an (x, y) location.
@@ -26,27 +31,28 @@ Use this structure to represent a point at an (x, y) location.
 ## Topics
 
 ### Creating a Point
-- [init()](vtint32point/init.md)
+- [init()](./vtint32point/init%28%29.md)
   Creates a size with coordinates equal to zero.
-- [init(x: Int32, y: Int32)](vtint32point/init(x:y:).md)
+- [init(x: Int32, y: Int32)](./vtint32point/init%28x,y%29.md)
   Creates a point with coordinates specified as integer values.
 ### Accessing the Coordinates
-- [var x: Int32](vtint32point/x.md)
+- [var x: Int32](./vtint32point/x.md)
   The x-coordinate of the point.
-- [var y: Int32](vtint32point/y.md)
+- [var y: Int32](./vtint32point/y.md)
   The y-coordinate of the point.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [VTSession](vtsession-api-collection.md)
+### Data Types
+- [VTSession](./vtsession-api-collection.md)
   An abstract object that provides the common interface to configure VideoToolbox session objects.
-- [struct VTInt32Size](vtint32size.md)
+- [struct VTInt32Size](./vtint32size.md)
   A structure that represents a 32-bit integer size value.
 
 

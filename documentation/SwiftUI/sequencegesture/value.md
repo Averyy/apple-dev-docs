@@ -1,7 +1,8 @@
 # SequenceGesture.Value
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The value of a sequence gesture that helps to detect whether the first gesture succeeded, so the second gesture can start.
 
@@ -24,17 +25,17 @@ enum Value
 ## Topics
 
 ### Getting gesture values
-- [SequenceGesture.Value.first(_:)](sequencegesture/value/first(_:).md)
+- [SequenceGesture.Value.first(_:)](./value/first%28_%29.md)
   The first gesture hasn’t ended.
-- [case second(First.Value, Second.Value?)](sequencegesture/value/second(_:_:).md)
+- [case second(First.Value, Second.Value?)](./value/second%28_,_%29.md)
   The first gesture has ended.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

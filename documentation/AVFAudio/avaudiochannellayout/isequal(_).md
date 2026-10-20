@@ -1,7 +1,8 @@
 # isEqual(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether another audio channel layout is exactly equal to the current layout.
 
@@ -20,9 +21,13 @@ Indicates whether another audio channel layout is exactly equal to the current l
 func isEqual(_ object: Any) -> Bool
 ```
 
+```objc
+- (BOOL) isEqual:(id) object;
+```
+
 #### Return Value
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) indicates whether they are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+A value of [`true`](../../Swift/true.md) indicates whether they are equal; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ A value of [`true`](https://developer.apple.com/documentation/swift/true) indica
 
 ## See Also
 
-- [typealias AVAudioChannelCount](avaudiochannelcount.md)
+### Getting audio channel layout properties
+- [typealias AVAudioChannelCount](../avaudiochannelcount.md)
   The number of audio channels.
-- [var channelCount: AVAudioChannelCount](avaudiochannellayout/channelcount.md)
+- [var channelCount: AVAudioChannelCount](./channelcount.md)
   The number of channels of audio data.
-- [var layout: UnsafePointer<AudioChannelLayout>](avaudiochannellayout/layout.md)
+- [var layout: UnsafePointer<AudioChannelLayout>](./layout.md)
   The underlying audio channel layout.
-- [var layoutTag: AudioChannelLayoutTag](avaudiochannellayout/layouttag.md)
+- [var layoutTag: AudioChannelLayoutTag](./layouttag.md)
   The audio channel’s underlying layout tag.
 
 

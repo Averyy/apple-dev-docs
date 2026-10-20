@@ -1,7 +1,8 @@
 # videoEditorControllerDidCancel(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the user cancels a movie editing operation.
 
@@ -17,13 +18,18 @@ Notifies the delegate when the user cancels a movie editing operation.
 optional func videoEditorControllerDidCancel(_ editor: UIVideoEditorController)
 ```
 
+```objc
+- (void) videoEditorControllerDidCancel:(UIVideoEditorController *) editor;
+```
+
 ## Parameters
 
 - `editor`: The video editor that the user canceled, not wanting to save changes.
 
 ## See Also
 
-- [func videoEditorController(UIVideoEditorController, didSaveEditedVideoToPath: String)](uivideoeditorcontrollerdelegate/videoeditorcontroller(_:didsaveeditedvideotopath:).md)
+### Closing the video editor
+- [func videoEditorController(UIVideoEditorController, didSaveEditedVideoToPath: String)](./videoeditorcontroller%28_,didsaveeditedvideotopath%29.md)
   Notifies the delegate after the system finishes saving an edited movie.
 
 

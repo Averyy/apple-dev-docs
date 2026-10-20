@@ -1,7 +1,8 @@
 # FocusFilterAppContext
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains app-specific contextual information for a particular Focus, such as the notification filter criteria to apply.
 
@@ -11,7 +12,7 @@ A type that contains app-specific contextual information for a particular Focus,
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,25 +24,26 @@ struct FocusFilterAppContext
 ## Topics
 
 ### Creating the app context
-- [init(notificationFilterPredicate: NSPredicate?)](focusfilterappcontext/init(notificationfilterpredicate:).md)
+- [init(notificationFilterPredicate: NSPredicate?)](./focusfilterappcontext/init%28notificationfilterpredicate%29.md)
   Creates a `FocusFilterAppContext` with a specified `notificationFilterPredicate`
 ### Getting the filter predicate
-- [let notificationFilterPredicate: NSPredicate?](focusfilterappcontext/notificationfilterpredicate.md)
+- [let notificationFilterPredicate: NSPredicate?](./focusfilterappcontext/notificationfilterpredicate.md)
   An `NSPredicate` for system to filter the user’s notifications of the app when a Focus is active.
 ### Initializers
-- [init(notificationFilterPredicate: NSPredicate?, targetContentIdentifierPrefix: String?)](focusfilterappcontext/init(notificationfilterpredicate:targetcontentidentifierprefix:).md)
+- [init(notificationFilterPredicate: NSPredicate?, targetContentIdentifierPrefix: String?)](./focusfilterappcontext/init%28notificationfilterpredicate,targetcontentidentifierprefix%29.md)
   Creates a focus filter context with a specified predicate and identifier prefix.
 ### Instance Properties
-- [let targetContentIdentifierPrefix: String?](focusfilterappcontext/targetcontentidentifierprefix.md)
+- [let targetContentIdentifierPrefix: String?](./focusfilterappcontext/targetcontentidentifierprefix.md)
   An identifier you provide to the system for use in scheme prefixes for Focus.
 
 ## See Also
 
-- [protocol SetFocusFilterIntent](setfocusfilterintent.md)
+### Focus filters
+- [protocol SetFocusFilterIntent](./setfocusfilterintent.md)
   An interface for providing an app intent that you use to adapt your app’s behavior when Focus changes.
-- [Defining your app’s Focus filter](defining-your-app-s-focus-filter.md)
+- [Defining your app’s Focus filter](./defining-your-app-s-focus-filter.md)
   Customize your app’s behavior to reflect the device’s current Focus.
-- [struct FocusFilterSuggestionContext](focusfiltersuggestioncontext.md)
+- [struct FocusFilterSuggestionContext](./focusfiltersuggestioncontext.md)
   A type you use to suggest app configurations for a given Focus.
 
 

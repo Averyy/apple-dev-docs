@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The set of query properties supported by this query.
@@ -12,7 +13,7 @@ The set of query properties supported by this query.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,9 +24,10 @@ static var properties: Self.QueryProperties { get }
 
 ## See Also
 
-- [EntityPropertyQuery.QueryProperties](entitypropertyquery/queryproperties.md)
-- [EntityPropertyQuery.Property](entitypropertyquery/property.md)
-- [associatedtype ComparatorMappingType](entitypropertyquery/comparatormappingtype.md)
+### Specifying the queryable properties
+- [EntityPropertyQuery.QueryProperties](./queryproperties.md)
+- [EntityPropertyQuery.Property](./property.md)
+- [associatedtype ComparatorMappingType](./comparatormappingtype.md)
   Type produced by `EntityQueryComparator` mapping closures and supplied as input to `results`.
 
 

@@ -1,7 +1,8 @@
 # XPCArray.IndexValuePair
 
 **Framework**: XPC  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that contains an index and the object at that index.
 
@@ -11,7 +12,7 @@ A type that contains an index and the object at that index.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ typealias IndexValuePair = (index: Int, value: xpc_object_t)
 
 #### Discussion
 
-[`XPCArray`](xpcarray.md) exposes its values as instances of [`xpc_object_t`](xpc_object_t.md) even if they were originally set with other types.
+[`XPCArray`](../xpcarray.md) exposes its values as instances of [`xpc_object_t`](../xpc_object_t.md) even if they were originally set with other types.
 
 
 ---

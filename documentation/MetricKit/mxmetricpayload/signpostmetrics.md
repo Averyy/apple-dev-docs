@@ -1,21 +1,28 @@
 # signpostMetrics
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the custom metrics for the reporting period.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](../metricresult.md), and read the [`SignpostIntervalMetric`](../signpostintervalmetric.md) case instead.
 
 ## Declaration
 
 ```swift
 var signpostMetrics: [MXSignpostMetric]? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSArray<MXSignpostMetric *> * signpostMetrics;
 ```
 
 

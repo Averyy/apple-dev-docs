@@ -1,7 +1,8 @@
 # alphaMultiply(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that multiplies the alpha component by a given color.
 

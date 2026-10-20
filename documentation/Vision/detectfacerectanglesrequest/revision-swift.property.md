@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm or implementation the request uses.
 
@@ -22,9 +23,10 @@ let revision: DetectFaceRectanglesRequest.Revision
 
 ## See Also
 
-- [static let supportedRevisions: [DetectFaceRectanglesRequest.Revision]](detectfacerectanglesrequest/supportedrevisions.md)
+### Getting the revision
+- [static let supportedRevisions: [DetectFaceRectanglesRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
-- [DetectFaceRectanglesRequest.Revision](detectfacerectanglesrequest/revision-swift.enum.md)
+- [DetectFaceRectanglesRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

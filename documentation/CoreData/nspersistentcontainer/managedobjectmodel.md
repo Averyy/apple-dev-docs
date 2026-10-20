@@ -1,7 +1,8 @@
 # managedObjectModel
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container’s managed object model.
 
@@ -20,19 +21,24 @@ The container’s managed object model.
 var managedObjectModel: NSManagedObjectModel { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectModel * managedObjectModel;
+```
+
 ## Mentions
 
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Setting up a Core Data stack](../setting-up-a-core-data-stack.md)
 
 #### Discussion
 
-This property contains a reference to the [`NSManagedObjectModel`](nsmanagedobjectmodel.md) object associated with this persistent container.
+This property contains a reference to the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object associated with this persistent container.
 
 ## See Also
 
-- [var name: String](nspersistentcontainer/name.md)
+### Getting the Container’s Configuration
+- [var name: String](./name.md)
   The container’s name.
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator](nspersistentcontainer/persistentstorecoordinator.md)
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator](./persistentstorecoordinator.md)
   The container’s persistent store coordinator.
 
 

@@ -1,7 +1,8 @@
 # videoFrameRateRangeForReactionEffectsInProgress
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the minimum and maximum frame rates available when a reaction effect runs.
 
@@ -18,13 +19,18 @@ Indicates the minimum and maximum frame rates available when a reaction effect r
 var videoFrameRateRangeForReactionEffectsInProgress: AVFrameRateRange? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForReactionEffectsInProgress;
+```
+
 #### Discussion
 
 Unlike other video effects, enabling reaction effects doesn’t limit the stream’s frame rate because most of the time the system isn’t rendering the effect. The frame rate only ramps down when the system renders a reaction on the stream.
 
 ## See Also
 
-- [var reactionEffectsSupported: Bool](avcapturedevice/format/reactioneffectssupported.md)
+### Determining reaction effects support
+- [var reactionEffectsSupported: Bool](./reactioneffectssupported.md)
   A Boolean value that indicates whether the device supports reaction effects.
 
 

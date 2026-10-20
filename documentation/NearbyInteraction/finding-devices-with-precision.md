@@ -1,6 +1,8 @@
 # Finding devices with precision
 
-**Framework**: Nearby Interaction
+**Framework**: Nearby Interaction  
+**Role**: Sample Code  
+**Download**: [FindingDevicesWithPrecision.zip](https://docs-assets.developer.apple.com/published/07951274a4f9/FindingDevicesWithPrecision.zip)
 
 Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
 
@@ -19,10 +21,10 @@ This sample code project demonstrates how to use ARKit to find devices equipped 
 To use the Nearby Interaction framework in your app, it needs to implement the following three processes to use precision device finding:
 
 1. Check for availability of UWB and specific versions according to iOS releases if your app needs capabilities such as EDM.
-2. Start [`ARKit`](https://developer.apple.com/documentation/arkit), begin ranging for peer devices, and respond to changes in their status — this is how your app discovers compatible nearby devices and responds to changes in their availability.
+2. Start [ARKit](../ARKit/ARKit.md), begin ranging for peer devices, and respond to changes in their status — this is how your app discovers compatible nearby devices and responds to changes in their availability.
 3. Implement a distance quality estimator function, if your app needs to take advantage of the EDM capabilities of the second-generation UWB chip. This is a function that uses data the Nearby Interaction framework returns to make decisions about signal quality to estimate the distance and direction between devices. This sample code project includes one possible implementation of a distance quality estimator function and its use to guide the people using the appropriate UI.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the app:
 
@@ -38,7 +40,7 @@ To run the app:
 
 > **Note**: This sample app doesn’t support Apple Watch and, because Camera Assistance uses ARKit, the app doesn’t support Simulator.
 
-##### Check Availability
+##### Check availability
 
 Because there are two types of UWB chips, always check to ensure that the peer devices support the mode the app is interested in, as shown in the example below:
 
@@ -62,9 +64,9 @@ if #available(iOS 17.0, watchOS 10.0, *) {
 }
 ```
 
-##### Start Arkit and Ranging for Peer Devices
+##### Start ARKit and ranging for peer devices
 
-Before the app can start ranging for potential peer devices, it needs to setup ARKit and the [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) frameworks, as shown in this example:
+Before the app can start ranging for potential peer devices, it needs to setup ARKit and the [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) frameworks, as shown in this example:
 
 ```swift
 func startup() {
@@ -89,11 +91,11 @@ func startup() {
 }
 ```
 
-##### Respond to Changes in Peer Devices
+##### Respond to changes in peer devices
 
 After the app initializes the Multipeer Connectivity framework, the Nearby Interaction framework provides a protocol for tracking changes to peer devices and provides information necessary to interact with peers it discovers in the environment.
 
-Use [`session(_:didUpdate:)`](nisessiondelegate/session(_:didupdate:).md) to track changes to peer connectivity, as shown in the sample below:
+Use [`session(_:didUpdate:)`](./nisessiondelegate/session%28_,didupdate%29.md) to track changes to peer connectivity, as shown in the sample below:
 
 ```swift
 func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
@@ -125,7 +127,7 @@ func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
 }
 ```
 
-When peers drop out of range or their session validity (user permissions) changes, the framework announces these changes using [`session(_:didInvalidateWith:)`](nisessiondelegate/session(_:didinvalidatewith:).md) and the app responds accordingly, as shown here:
+When peers drop out of range or their session validity (user permissions) changes, the framework announces these changes using [`session(_:didInvalidateWith:)`](./nisessiondelegate/session%28_,didinvalidatewith%29.md) and the app responds accordingly, as shown here:
 
 ```swift
 func session(_ session: NISession, didInvalidateWith error: Error) {
@@ -158,7 +160,7 @@ func session(_ session: NISession, didInvalidateWith error: Error) {
 }
 ```
 
-When the app sets [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true`, the framework provides coaching suggestions through [`session(_:didUpdateAlgorithmConvergence:for:)`](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md), as shown here:
+When the app sets [`isCameraAssistanceEnabled`](./ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true`, the framework provides coaching suggestions through [`session(_:didUpdateAlgorithmConvergence:for:)`](./nisessiondelegate/session%28_,didupdatealgorithmconvergence,for%29.md), as shown here:
 
 ```swift
 func session(_ session: NISession, didUpdateAlgorithmConvergence convergence: NIAlgorithmConvergence, for object: NINearbyObject?) {
@@ -177,7 +179,7 @@ func session(_ session: NISession, didUpdateAlgorithmConvergence convergence: NI
 }
 ```
 
-##### Define a Distance Quality Estimator
+##### Define a distance quality estimator
 
 Finally, the key to using EDM is by creating a distance quality estimator function that the app uses to determine which peers to interact with. The specific criteria for such estimators are specific to your app’s use case; the following example is one such implementation:
 

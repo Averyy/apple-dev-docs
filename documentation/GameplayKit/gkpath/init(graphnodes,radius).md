@@ -1,7 +1,8 @@
 # init(graphNodes:radius:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a path using the positions of the specified graph nodes.
 
@@ -19,17 +20,21 @@ Initializes a path using the positions of the specified graph nodes.
 init(graphNodes: [GKGraphNode], radius: Float)
 ```
 
+```objc
+- (instancetype) initWithGraphNodes:(NSArray<GKGraphNode *> *) graphNodes radius:(float) radius;
+```
+
 #### Return Value
 
 A new path object.
 
 #### Discussion
 
-Use this initializer to turn a list of nodes from a navigation graph (as returned by the [`GKGraph`](gkgraph.md) [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method) into a path-following goal for an agent. If the nodes are [`GKGraphNode2D`](gkgraphnode2d.md) objects, this initializer creates a 2D path; if the nodes are [`GKGraphNode3D`](gkgraphnode3d.md) objects, this initializer creates a 3D path.
+Use this initializer to turn a list of nodes from a navigation graph (as returned by the [`GKGraph`](../gkgraph.md) [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method) into a path-following goal for an agent. If the nodes are [`GKGraphNode2D`](../gkgraphnode2d.md) objects, this initializer creates a 2D path; if the nodes are [`GKGraphNode3D`](../gkgraphnode3d.md) objects, this initializer creates a 3D path.
 
 The `radius` parameter defines the space occupied by the path—think of this space as the area created by sweeping a circle (or sphere, for 3D paths) of the specified radius along the path from vertex to vertex. Agents with path-related goals will attempt to move to or stay within this area.
 
-To use the newly created path to constrain an agent’s behavior, create a goal with the [`init(toStayOn:maxPredictionTime:)`](gkgoal/init(tostayon:maxpredictiontime:).md) or [`init(toFollow:maxPredictionTime:forward:)`](gkgoal/init(tofollow:maxpredictiontime:forward:).md) method.
+To use the newly created path to constrain an agent’s behavior, create a goal with the [`init(toStayOn:maxPredictionTime:)`](../gkgoal/init%28tostayon,maxpredictiontime%29.md) or [`init(toFollow:maxPredictionTime:forward:)`](../gkgoal/init%28tofollow,maxpredictiontime,forward%29.md) method.
 
 ## Parameters
 

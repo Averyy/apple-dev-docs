@@ -1,7 +1,8 @@
 # sensor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A collision filter for an entity that collides with everything.
 
@@ -11,7 +12,7 @@ A collision filter for an entity that collides with everything.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ static let sensor: CollisionFilter
 
 #### Discussion
 
-The sensor collision filter is typically used by rays in ray casts, shapes in convex shape casts, and trigger volumes. It corresponds to a [`group`](collisionfilter/group.md) and [`mask`](collisionfilter/mask.md) both set to [`all`](collisiongroup/all.md).
+The sensor collision filter is typically used by rays in ray casts, shapes in convex shape casts, and trigger volumes. It corresponds to a [`group`](./group.md) and [`mask`](./mask.md) both set to [`all`](../collisiongroup/all.md).
 
 ## See Also
 
-- [init(group: CollisionGroup, mask: CollisionGroup)](collisionfilter/init(group:mask:).md)
+### Creating a collision filter
+- [init(group: CollisionGroup, mask: CollisionGroup)](./init%28group,mask%29.md)
   Creates a collision filter.
-- [static let `default`: CollisionFilter](collisionfilter/default.md)
+- [static let `default`: CollisionFilter](./default.md)
   The default collision filter.
 
 

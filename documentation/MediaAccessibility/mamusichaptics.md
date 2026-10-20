@@ -1,7 +1,8 @@
 # MAMusicHaptics
 
 **Framework**: Media Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A namespace for Music Haptics symbols.
 
@@ -22,14 +23,14 @@ struct MAMusicHaptics
 ## Topics
 
 ### Initializers
-- [init()](mamusichaptics/init.md)
+- [init()](./mamusichaptics/init%28%29.md)
 ### Type Properties
-- [static var enabledStatusDidChangeNotification: Notification.Name](mamusichaptics/enabledstatusdidchangenotification.md)
+- [static var enabledStatusDidChangeNotification: Notification.Name](./mamusichaptics/enabledstatusdidchangenotification.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

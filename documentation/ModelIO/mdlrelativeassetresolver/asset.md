@@ -1,7 +1,8 @@
 # asset
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 weak var asset: MDLAsset? { get set }
+```
+
+```objc
+@property (nonatomic, weak, readwrite) MDLAsset * asset;
 ```
 
 

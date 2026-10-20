@@ -1,6 +1,7 @@
 # Improving rendering performance with vertex amplification
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Run draw commands that render to different outputs using the same vertex data multiple times.
 
@@ -8,23 +9,23 @@ Run draw commands that render to different outputs using the same vertex data mu
 
 With *vertex amplification*, you can encode drawing commands that process the same vertex multiple times, one per render target. Vertex amplification generates copies of a command’s vertex data for each render pipeline. Vertex amplification is more efficient than encoding the command multiple times with the same vertex because the GPU fetches the vertex data only once. The GPU then calls your vertex function multiple times — equal to the amplification multiplier — for each vertex.
 
-![A flow diagram that begins with a single instance of vertex data that flows into a single vertex stage. The vertex stage then produces two outputs that flow into two separate,  parallel render pipeline instances.](/images/com.apple.metal/improving-rendering-performance-with-vertex-amplification-1@2x.png)
+![A flow diagram that begins with a single instance of vertex data that flows into a single vertex stage. The vertex stage then produces two outputs that flow into two separate,  parallel render pipeline instances.](https://developer.apple.com/tutorials/images/com.apple.metal/improving-rendering-performance-with-vertex-amplification-1@2x.png)
 
 For example, you can use vertex amplification to implement cascaded shadow maps, with an amplification multiplier that’s equal to the number of cascade levels.
 
-Apps typically leverage vertex amplification to render the same vertices to different texture layers or to multiple viewports. For more information about these techniques, see [`Rendering to multiple texture slices in a draw command`](rendering-to-multiple-texture-slices-in-a-draw-command.md) and [`Rendering to multiple viewports in a draw command`](rendering-to-multiple-viewports-in-a-draw-command.md).
+Apps typically leverage vertex amplification to render the same vertices to different texture layers or to multiple viewports. For more information about these techniques, see [Rendering to multiple texture slices in a draw command](./rendering-to-multiple-texture-slices-in-a-draw-command.md) and [Rendering to multiple viewports in a draw command](./rendering-to-multiple-viewports-in-a-draw-command.md).
 
-##### Check Whether a Gpu Supports a Vertex Amplification Multiplier
+##### Check whether a GPU supports a vertex amplification multiplier
 
-Confirm whether the GPU supports a specific multiplier for vertex amplification by passing its integer value to an [`MTLDevice`](mtldevice.md) instance’s [`supportsVertexAmplificationCount(_:)`](mtldevice/supportsvertexamplificationcount(_:).md) method. Pass an amplification multiplier value that’s `2` or greater. A value of `1` has no effect because it effectively disables vertex amplification.
+Confirm whether the GPU supports a specific multiplier for vertex amplification by passing its integer value to an [`MTLDevice`](./mtldevice.md) instance’s [`supportsVertexAmplificationCount(_:)`](./mtldevice/supportsvertexamplificationcount%28_%29.md) method. Pass an amplification multiplier value that’s `2` or greater. A value of `1` has no effect because it effectively disables vertex amplification.
 
-> ❗ **Important**:  Passing a multiplier value of `1` or less to the [`supportsVertexAmplificationCount(_:)`](mtldevice/supportsvertexamplificationcount(_:).md) method triggers an API validation error.
+> ❗ **Important**:  Passing a multiplier value of `1` or less to the [`supportsVertexAmplificationCount(_:)`](./mtldevice/supportsvertexamplificationcount%28_%29.md) method triggers an API validation error.
 
 After your app confirms that the GPU supports a vertex amplification multiplier at runtime, it can safely configure a pipeline state to use that multiplier.
 
-##### Set a Render Pipeline Descriptors Largest Vertex Amplification Multiplier
+##### Set a render pipeline descriptor’s largest vertex amplification multiplier
 
-Configure an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance’s [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to a multiplier value that the GPU supports. Any encoders you create with the descriptor can support any vertex amplification factor in the range `[1, `[`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)`]`.
+Configure an [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) instance’s [`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to a multiplier value that the GPU supports. Any encoders you create with the descriptor can support any vertex amplification factor in the range `[1, `[`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)`]`.
 
 **Swift**:
 
@@ -48,13 +49,13 @@ pipelineStateDescriptor.maxVertexAmplificationCount = 2;
 ...
 ```
 
-Continue configuring your pipeline descriptor and create an [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance with it that you can assign to a render command encoder.
+Continue configuring your pipeline descriptor and create an [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md) instance with it that you can assign to a render command encoder.
 
-The example above sets the descriptor’s [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to `2`. Most apps typically set this property to the largest amplification factor the GPU supports. That way, an encoder that uses the pipeline state from that descriptor has the option to use any valid vertex amplification factor for that GPU.
+The example above sets the descriptor’s [`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to `2`. Most apps typically set this property to the largest amplification factor the GPU supports. That way, an encoder that uses the pipeline state from that descriptor has the option to use any valid vertex amplification factor for that GPU.
 
-##### Enable Vertex Amplification for a Render Pass
+##### Enable vertex amplification for a render pass
 
-Configure an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance to apply vertex amplification for subsequent rendering commands by calling its [`setVertexAmplificationCount(_:viewMappings:)`](mtlrendercommandencoder/setvertexamplificationcount(_:viewmappings:).md) method.
+Configure an [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) instance to apply vertex amplification for subsequent rendering commands by calling its [`setVertexAmplificationCount(_:viewMappings:)`](./mtlrendercommandencoder/setvertexamplificationcount%28_,viewmappings%29.md) method.
 
 **Swift**:
 
@@ -68,11 +69,11 @@ renderEncoder.setVertexAmplificationCount(2, viewMappings: nil)
 [renderEncoder setVertexAmplificationCount:2 viewMappings:nil];
 ```
 
-Set the vertex amplification count parameter to a value that’s less than or equal to the [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property that configures the current render pipeline.
+Set the vertex amplification count parameter to a value that’s less than or equal to the [`maxVertexAmplificationCount`](./mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property that configures the current render pipeline.
 
-You can also provide an array of [`MTLVertexAmplificationViewMapping`](mtlvertexamplificationviewmapping.md) instances as you configure vertex amplification. Apps typically provide view mappings to render to multiple textures or viewports with vertex amplification.
+You can also provide an array of [`MTLVertexAmplificationViewMapping`](./mtlvertexamplificationviewmapping.md) instances as you configure vertex amplification. Apps typically provide view mappings to render to multiple textures or viewports with vertex amplification.
 
-The following example sets the [`renderTargetArrayIndexOffset`](mtlvertexamplificationviewmapping/rendertargetarrayindexoffset.md) values to `0` and `1` for the first and second mappings, respectively. It also sets the [`viewportArrayIndexOffset`](mtlvertexamplificationviewmapping/viewportarrayindexoffset.md) values to `1` and `2` for the first and second mappings, respectively.
+The following example sets the [`renderTargetArrayIndexOffset`](./mtlvertexamplificationviewmapping/rendertargetarrayindexoffset.md) values to `0` and `1` for the first and second mappings, respectively. It also sets the [`viewportArrayIndexOffset`](./mtlvertexamplificationviewmapping/viewportarrayindexoffset.md) values to `1` and `2` for the first and second mappings, respectively.
 
 The GPU adds these offsets to the vertex shader outputs with the corresponding attribute. In this example, the GPU adds `0` and `1` to the output value with the `[[render_target_array_index]]` attribute for the first and second pipeline invocations, respectively. It also adds `1` and `2` to the output value with the `[[viewport_array_index]]` attribute for the first and second pipeline invocations, respectively.
 
@@ -124,9 +125,9 @@ func configureEncoder(_ renderEncoder: MTLRenderCommandEncoder) {
 }
 ```
 
-See the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for information about applying an attribute to a parameter of a GPU function (shader and kernel).
+See the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for information about applying an attribute to a parameter of a GPU function (shader and kernel).
 
-##### Add Vertex Amplification to Your Vertex Shader
+##### Add vertex amplification to your vertex shader
 
 Implement vertex amplification in your shader code by adding parameters that represent the amplification ID and amplification factor. Designate which parameter is which by appending an attribute to each.
 
@@ -178,7 +179,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 
 You can also invoke shaders that have these parameters with a draw call that’s not applying vertex amplification. In those scenarios, the GPU calls the shader once per vertex, and sets the parameters with `[[amplification_id]]` and `[[amplification_count]]` to `0` and `1`, respectively.
 
-##### Mark Values Common to All Vertices As Shared
+##### Mark values common to all vertices as shared
 
 You can help reduce the GPU’s runtime workload by annotating values that are the same for all amplification IDs of a vertex. The Metal compiler detects values that remain consistent across all amplification IDs as *shared* values. You can also tell the compiler which values you consider shared by adding the `[[shared]]` attribute.
 
@@ -315,7 +316,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 }
 ```
 
-##### Combine Vertex Amplification with Primitive Instancing
+##### Combine vertex amplification with primitive instancing
 
 *Primitive instancing* is another way to generate copies of vertex data by providing additional data that modifies the original vertices for each instance. For example, you might animate a model by altering its vertex data with a sequence of pose offsets, each corresponding to a frame of animation.
 
@@ -327,11 +328,12 @@ The total number of render pipelines instances is equal to the product of the ve
 
 ## See Also
 
-- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+### Applying rendering techniques
+- [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md)
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Customizing render pass setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](./customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](./setting-load-and-store-actions.md)
   Set actions that define how a render pass loads and stores a render target.
 
 

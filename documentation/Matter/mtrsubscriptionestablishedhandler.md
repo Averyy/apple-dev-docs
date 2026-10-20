@@ -1,7 +1,8 @@
 # MTRSubscriptionEstablishedHandler
 
 **Framework**: Matter  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias MTRSubscriptionEstablishedHandler = () -> Void
+```
+
+```c
+typedef void (^)(void) MTRSubscriptionEstablishedHandler;
 ```
 
 

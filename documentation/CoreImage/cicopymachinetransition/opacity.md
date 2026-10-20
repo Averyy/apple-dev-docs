@@ -2,22 +2,27 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The opacity of the copier light.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var opacity: Float { get set }
+```
+
+```objc
+@property (nonatomic) float opacity;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ A value of 0.0 is transparent. A value of 1.0 is opaque.
 
 ## See Also
 
-- [var angle: Float](cicopymachinetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the copier light.
-- [var color: CIColor](cicopymachinetransition/color.md)
+- [var color: CIColor](./color.md)
   The color of the copier light.
-- [var extent: CGRect](cicopymachinetransition/extent.md)
+- [var extent: CGRect](./extent.md)
   A rectangle that defines the extent of the effect.
-- [var width: Float](cicopymachinetransition/width.md)
+- [var width: Float](./width.md)
   The width of the copier light.
 
 

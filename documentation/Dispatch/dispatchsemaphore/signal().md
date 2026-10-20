@@ -1,18 +1,19 @@
 # signal()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signals (increments) a semaphore.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,7 +28,7 @@ This function returns non-zero if a thread is woken. Otherwise, zero is returned
 
 #### Discussion
 
-Increment the counting semaphore. If the previous value was less than zero, this function wakes a thread currently waiting in [`dispatch_semaphore_wait`](dispatch_semaphore_wait.md).
+Increment the counting semaphore. If the previous value was less than zero, this function wakes a thread currently waiting in [`dispatch_semaphore_wait`](../dispatch_semaphore_wait.md).
 
 
 ---

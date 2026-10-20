@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Divides the first value by the second and stores the quotient in the left-hand-side variable.
 

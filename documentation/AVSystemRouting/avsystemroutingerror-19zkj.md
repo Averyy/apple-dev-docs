@@ -1,7 +1,8 @@
 # AVSystemRoutingError
 
 **Framework**: AVSystemRouting  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -17,25 +18,26 @@ struct AVSystemRoutingError
 ## Topics
 
 ### Type Properties
-- [static var connectionFailed: AVSystemRoutingError.Code](avsystemroutingerror-19zkj/connectionfailed.md)
-- [static var errorDomain: String](avsystemroutingerror-19zkj/errordomain.md)
+- [static var connectionFailed: AVSystemRoutingError.Code](./avsystemroutingerror-19zkj/connectionfailed.md)
+- [static var errorDomain: String](./avsystemroutingerror-19zkj/errordomain.md)
 ### Enumerations
-- [AVSystemRoutingError.Code](avsystemroutingerror-19zkj/code.md)
+- [AVSystemRoutingError.Code](./avsystemroutingerror-19zkj/code.md)
   An error that an AVSystemRouting operation throws when it fails.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVSystemRoutingError](avsystemroutingerror-7miya.md)
+### Errors
+- [struct AVSystemRoutingError](./avsystemroutingerror-7miya.md)
   An error that an AVSystemRouting operation throws when it fails.
 
 

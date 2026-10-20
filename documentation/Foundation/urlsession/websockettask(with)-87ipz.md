@@ -1,7 +1,8 @@
 # webSocketTask(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a WebSocket task for the provided URL.
 
@@ -20,6 +21,10 @@ Creates a WebSocket task for the provided URL.
 func webSocketTask(with url: URL) -> URLSessionWebSocketTask
 ```
 
+```objc
+- (NSURLSessionWebSocketTask *) webSocketTaskWithURL:(NSURL *) url;
+```
+
 #### Discussion
 
 The provided URL must have a `ws` or `wss` scheme.
@@ -30,13 +35,14 @@ The provided URL must have a `ws` or `wss` scheme.
 
 ## See Also
 
-- [func webSocketTask(with: URLRequest) -> URLSessionWebSocketTask](urlsession/websockettask(with:)-mtks.md)
+### Adding WebSocket tasks to a session
+- [func webSocketTask(with: URLRequest) -> URLSessionWebSocketTask](./websockettask%28with%29-mtks.md)
   Creates a WebSocket task for the provided URL request.
-- [func webSocketTask(with: URL, protocols: [String]) -> URLSessionWebSocketTask](urlsession/websockettask(with:protocols:).md)
+- [func webSocketTask(with: URL, protocols: [String]) -> URLSessionWebSocketTask](./websockettask%28with,protocols%29.md)
   Creates a WebSocket task given a URL and an array of protocols.
-- [class URLSessionWebSocketTask](urlsessionwebsockettask.md)
+- [class URLSessionWebSocketTask](../urlsessionwebsockettask.md)
   A URL session task that communicates over the WebSockets protocol standard.
-- [protocol URLSessionWebSocketDelegate](urlsessionwebsocketdelegate.md)
+- [protocol URLSessionWebSocketDelegate](../urlsessionwebsocketdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks.
 
 

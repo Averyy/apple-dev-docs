@@ -1,7 +1,8 @@
 # supportIndirectCommandBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var supportIndirectCommandBuffers: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL supportIndirectCommandBuffers;
 ```
 
 

@@ -1,7 +1,8 @@
 # subscribeAttributeCapabilityMinima(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeCapabilityMinima(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTRBasicInformationClusterCapabilityMinimaStruct?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeCapabilityMinimaWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTRBasicInformationClusterCapabilityMinimaStruct *value, NSError *error)) reportHandler;
 ```
 
 

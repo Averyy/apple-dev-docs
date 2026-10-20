@@ -1,7 +1,8 @@
 # RoleEntry
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A customer’s role for a single product within a group.
 
@@ -10,19 +11,19 @@ A customer’s role for a single product within a group.
 
 ## Declaration
 
-```swift
+```
 object RoleEntry
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-Each [`GroupEntry`](groupentry.md) contains an array of `RoleEntry` values. The array contains one role entry for each of your products for which the group provides the customer access.
+Each [`GroupEntry`](./groupentry.md) contains an array of `RoleEntry` values. The array contains one role entry for each of your products for which the group provides the customer access.
 
-Read the [`role`](roleentry/role.md) for the [`productId`](roleentry/productid.md) you’re evaluating. A customer can hold the `ADMIN` role for one product and the `NONE` role for another within the same group.
+Read the [`role`](./roleentry/role.md) for the [`productId`](./roleentry/productid.md) you’re evaluating. A customer can hold the `ADMIN` role for one product and the `NONE` role for another within the same group.
 
 ## Properties
 
@@ -31,7 +32,8 @@ Read the [`role`](roleentry/role.md) for the [`productId`](roleentry/productid.m
 
 ## See Also
 
-- [object GroupEntry](groupentry.md)
+### Response data types
+- [object GroupEntry](./groupentry.md)
   The identifier, type, and per-product roles for a group that a customer belongs to.
 
 

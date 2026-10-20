@@ -1,7 +1,8 @@
 # supportedFeatures
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that returns a set of supported features, or an empty set if the current platform doesn’t support Wi-Fi Aware.
 
@@ -26,7 +27,8 @@ let isSupported = WACapabilities.supportedFeatures.contains(feature)
 
 ## See Also
 
-- [WACapabilities.Feature](wacapabilities/feature.md)
+### Checking features supported by host device
+- [WACapabilities.Feature](./feature.md)
   Features that your app’s current host device can support.
 
 

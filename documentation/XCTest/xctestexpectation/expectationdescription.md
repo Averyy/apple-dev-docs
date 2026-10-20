@@ -1,7 +1,8 @@
 # expectationDescription
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human readable string used to describe the expectation in log output and test reports.
 
@@ -11,10 +12,15 @@ A human readable string used to describe the expectation in log output and test 
 var expectationDescription: String { get set }
 ```
 
+```objc
+@property (copy) NSString * expectationDescription;
+```
+
 ## See Also
 
-- [init(description: String)](xctestexpectation/init(description:).md)
-  Creates a new [`XCTestExpectation`](xctestexpectation.md) with the provided description.
+### Creating Expectations
+- [init(description: String)](./init%28description%29.md)
+  Creates a new [`XCTestExpectation`](../xctestexpectation.md) with the provided description.
 
 
 ---

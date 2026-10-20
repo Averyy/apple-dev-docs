@@ -1,7 +1,8 @@
 # SparseFactor(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the specified factorization of a sparse matrix of complex double values.
 
@@ -20,6 +21,10 @@ Returns the specified factorization of a sparse matrix of complex double values.
 func SparseFactor(_ type: SparseFactorization_t, _ Matrix: SparseMatrix_Complex_Double) -> SparseOpaqueFactorization_Complex_Double
 ```
 
+```c
+static SparseOpaqueFactorization_Complex_Double SparseFactor(SparseFactorization_t type, SparseMatrix_Complex_Double Matrix);
+```
+
 ## Parameters
 
 - `type`: The type of factorization to perform.
@@ -27,11 +32,12 @@ func SparseFactor(_ type: SparseFactorization_t, _ Matrix: SparseMatrix_Complex_
 
 ## See Also
 
-- [func SparseFactor(SparseFactorization_t, SparseMatrixStructureComplex) -> SparseOpaqueSymbolicFactorization](sparsefactor(_:_:)-55tzk.md)
+### Complex matrix factorization functions
+- [func SparseFactor(SparseFactorization_t, SparseMatrixStructureComplex) -> SparseOpaqueSymbolicFactorization](./sparsefactor%28_,_%29-55tzk.md)
   Returns a symbolic factorization of the requested type for a complex matrix with the given structure.
-- [func SparseFactor(SparseOpaqueSymbolicFactorization, SparseMatrix_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparsefactor(_:_:)-5zzpu.md)
+- [func SparseFactor(SparseOpaqueSymbolicFactorization, SparseMatrix_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](./sparsefactor%28_,_%29-5zzpu.md)
   Returns the factorization of a sparse matrix of complex double values corresponding to the supplied symbolic factorization.
-- [func SparseFactor(SparseFactorization_t, SparseMatrix_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](sparsefactor(_:_:)-73n38.md)
+- [func SparseFactor(SparseFactorization_t, SparseMatrix_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](./sparsefactor%28_,_%29-73n38.md)
   Returns the specified factorization of a sparse matrix of complex float values.
 
 

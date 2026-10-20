@@ -1,7 +1,8 @@
 # MACaptionAppearanceSetDisplayType(_:_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the preference for the type of caption.
 
@@ -19,20 +20,25 @@ Sets the preference for the type of caption.
 func MACaptionAppearanceSetDisplayType(_ domain: MACaptionAppearanceDomain, _ displayType: MACaptionAppearanceDisplayType)
 ```
 
+```c
+extern void MACaptionAppearanceSetDisplayType(MACaptionAppearanceDomain domain, MACaptionAppearanceDisplayType displayType);
+```
+
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
-- `displayType`: A value representing options to use only forced captions, to allow system locale to override the language of the audio track, or to choose the best available captioning track from CC, SDH, or subtitles. See [`MACaptionAppearanceDisplayType`](macaptionappearancedisplaytype.md).
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](./macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](./macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `displayType`: A value representing options to use only forced captions, to allow system locale to override the language of the audio track, or to choose the best available captioning track from CC, SDH, or subtitles. See [`MACaptionAppearanceDisplayType`](./macaptionappearancedisplaytype.md).
 
 ## See Also
 
-- [let kMACaptionAppearanceSettingsChangedNotification: CFString](kmacaptionappearancesettingschangednotification.md)
+### General settings
+- [let kMACaptionAppearanceSettingsChangedNotification: CFString](./kmacaptionappearancesettingschangednotification.md)
   A notification that occurs when any user-defined caption settings change.
-- [func MACaptionAppearanceDidDisplayCaptions(CFArray)](macaptionappearancediddisplaycaptions(_:).md)
+- [func MACaptionAppearanceDidDisplayCaptions(CFArray)](./macaptionappearancediddisplaycaptions%28_%29.md)
   Informs accessibility clients when captions display onscreen.
-- [func MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](macaptionappearancecopypreferredcaptioningmediacharacteristics(_:).md)
+- [func MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](./macaptionappearancecopypreferredcaptioningmediacharacteristics%28_%29.md)
   Returns the preferences for captioning sounds.
-- [func MACaptionAppearanceGetDisplayType(MACaptionAppearanceDomain) -> MACaptionAppearanceDisplayType](macaptionappearancegetdisplaytype(_:).md)
+- [func MACaptionAppearanceGetDisplayType(MACaptionAppearanceDomain) -> MACaptionAppearanceDisplayType](./macaptionappearancegetdisplaytype%28_%29.md)
   Returns the preferred type of captions to display.
 
 

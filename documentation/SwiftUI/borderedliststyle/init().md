@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bordered list style.
 
@@ -16,7 +17,8 @@ init()
 
 ## See Also
 
-- [init(alternatesRowBackgrounds: Bool)](borderedliststyle/init(alternatesrowbackgrounds:).md)
+### Creating the list style
+- [init(alternatesRowBackgrounds: Bool)](./init%28alternatesrowbackgrounds%29.md)
   Creates a bordered list style with optional alternating row backgrounds.
 
 

@@ -1,7 +1,8 @@
 # ownerIdentity
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identity of the share’s owner.
 
@@ -21,11 +22,16 @@ The identity of the share’s owner.
 var ownerIdentity: CKUserIdentity { get }
 ```
 
+```objc
+@property (copy, readonly) CKUserIdentity * ownerIdentity;
+```
+
 ## See Also
 
-- [var share: CKShare](ckshare/metadata/share.md)
+### Accessing the Share
+- [var share: CKShare](./share.md)
   The share that owns the metadata.
-- [var containerIdentifier: String](ckshare/metadata/containeridentifier.md)
+- [var containerIdentifier: String](./containeridentifier.md)
   The ID of the share’s container.
 
 

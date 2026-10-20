@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate to which expectation fulfillment events will be reported.
 
@@ -11,11 +12,16 @@ The delegate to which expectation fulfillment events will be reported.
 weak var delegate: (any XCTWaiterDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<XCTWaiterDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol XCTWaiterDelegate](xctwaiterdelegate.md)
-  Defines methods that are called when [`XCTWaiter`](xctwaiter.md) expectations are fulfilled correctly or incorrectly.
-- [var fulfilledExpectations: [XCTestExpectation]](xctwaiter/fulfilledexpectations.md)
+### Responding to Expectation Fulfilment
+- [protocol XCTWaiterDelegate](../xctwaiterdelegate.md)
+  Defines methods that are called when [`XCTWaiter`](../xctwaiter.md) expectations are fulfilled correctly or incorrectly.
+- [var fulfilledExpectations: [XCTestExpectation]](./fulfilledexpectations.md)
   An array of expectations that were fulfilled, in order, up until the waiter stopped waiting.
 
 

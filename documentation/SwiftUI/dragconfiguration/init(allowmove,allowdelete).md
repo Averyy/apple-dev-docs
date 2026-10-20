@@ -1,7 +1,8 @@
 # init(allowMove:allowDelete:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a drag configuration that can support drag-to-move and drag-to-delete in addition to drag-to-copy.
 

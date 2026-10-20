@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A map region that provides a hint about the geographic area to search.
 
@@ -10,7 +11,7 @@ A map region that provides a hint about the geographic area to search.
 
 ## Declaration
 
-```swift
+```
 get region(): CoordinateRegion | null;
 set region(value: CoordinateRegionData | null);
 ```

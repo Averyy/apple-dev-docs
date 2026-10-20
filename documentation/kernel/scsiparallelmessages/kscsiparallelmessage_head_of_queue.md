@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_HEAD_OF_QUEUE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_HEAD_OF_QUEUE = 0x21
 ```
 

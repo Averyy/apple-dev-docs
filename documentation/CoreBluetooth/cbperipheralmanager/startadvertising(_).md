@@ -1,7 +1,8 @@
 # startAdvertising(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advertises peripheral manager data.
 
@@ -20,13 +21,17 @@ Advertises peripheral manager data.
 func startAdvertising(_ advertisementData: [String : Any]?)
 ```
 
+```objc
+- (void) startAdvertising:(NSDictionary<NSString *,id> *) advertisementData;
+```
+
 #### Discussion
 
-When you start advertising peripheral data, the peripheral manager calls the [`peripheralManagerDidStartAdvertising(_:error:)`](cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising(_:error:).md) method of its delegate object.
+When you start advertising peripheral data, the peripheral manager calls the [`peripheralManagerDidStartAdvertising(_:error:)`](../cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising%28_,error%29.md) method of its delegate object.
 
-Core Bluetooth advertises data on a “best effort” basis, due to limited space and because there may be multiple apps advertising simultaneously. While in the foreground, your app can use up to 28 bytes of space in the initial advertisement data for any combination of the supported advertising data keys. If no this space remains, there’s an additional 10 bytes of space in the scan response, usable only for the local name (represented by the value of the [`CBAdvertisementDataLocalNameKey`](cbadvertisementdatalocalnamekey.md) key). Note that these sizes don’t include the 2 bytes of header information required for each new data type.
+Core Bluetooth advertises data on a “best effort” basis, due to limited space and because there may be multiple apps advertising simultaneously. While in the foreground, your app can use up to 28 bytes of space in the initial advertisement data for any combination of the supported advertising data keys. If no this space remains, there’s an additional 10 bytes of space in the scan response, usable only for the local name (represented by the value of the [`CBAdvertisementDataLocalNameKey`](../cbadvertisementdatalocalnamekey.md) key). Note that these sizes don’t include the 2 bytes of header information required for each new data type.
 
-Any service UUIDs contained in the value of the [`CBAdvertisementDataServiceUUIDsKey`](cbadvertisementdataserviceuuidskey.md) key that don’t fit in the allotted space go to a special “overflow” area. These services are discoverable only by an iOS device explicitly scanning for them.
+Any service UUIDs contained in the value of the [`CBAdvertisementDataServiceUUIDsKey`](../cbadvertisementdataserviceuuidskey.md) key that don’t fit in the allotted space go to a special “overflow” area. These services are discoverable only by an iOS device explicitly scanning for them.
 
 While your app is in the background, the local name isn’t advertised and all service UUIDs are in the overflow area.
 
@@ -34,20 +39,21 @@ For details about the format of advertising and response data, see the Bluetooth
 
 ## Parameters
 
-- `advertisementData`: An optional dictionary containing the data you want to advertise. The peripheral manager only supports two keys: [`CBAdvertisementDataLocalNameKey`](cbadvertisementdatalocalnamekey.md) and [`CBAdvertisementDataServiceUUIDsKey`](cbadvertisementdataserviceuuidskey.md).
+- `advertisementData`: An optional dictionary containing the data you want to advertise. The peripheral manager only supports two keys: [`CBAdvertisementDataLocalNameKey`](../cbadvertisementdatalocalnamekey.md) and [`CBAdvertisementDataServiceUUIDsKey`](../cbadvertisementdataserviceuuidskey.md).
 
 ## Topics
 
 ### Related Documentation
-- [let CBAdvertisementDataOverflowServiceUUIDsKey: String](cbadvertisementdataoverflowserviceuuidskey.md)
+- [let CBAdvertisementDataOverflowServiceUUIDsKey: String](../cbadvertisementdataoverflowserviceuuidskey.md)
   An array of UUIDs found in the overflow area of the advertisement data.
 
 ## See Also
 
-- [Advertising Data](advertising-data.md)
-- [func stopAdvertising()](cbperipheralmanager/stopadvertising.md)
+### Managing Advertising
+- [Advertising Data](../advertising-data.md)
+- [func stopAdvertising()](./stopadvertising%28%29.md)
   Stops advertising peripheral manager data.
-- [var isAdvertising: Bool](cbperipheralmanager/isadvertising.md)
+- [var isAdvertising: Bool](./isadvertising.md)
   A Boolean value that indicates whether the peripheral is advertising data.
 
 

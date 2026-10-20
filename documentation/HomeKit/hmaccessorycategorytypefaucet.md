@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeFaucet
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A faucet accessory.
 
@@ -19,11 +20,16 @@ A faucet accessory.
 let HMAccessoryCategoryTypeFaucet: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeFaucet;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeSprinkler: String](hmaccessorycategorytypesprinkler.md)
+### Water
+- [let HMAccessoryCategoryTypeSprinkler: String](./hmaccessorycategorytypesprinkler.md)
   A sprinkler system accessory.
-- [let HMAccessoryCategoryTypeShowerHead: String](hmaccessorycategorytypeshowerhead.md)
+- [let HMAccessoryCategoryTypeShowerHead: String](./hmaccessorycategorytypeshowerhead.md)
   A shower head accessory.
 
 

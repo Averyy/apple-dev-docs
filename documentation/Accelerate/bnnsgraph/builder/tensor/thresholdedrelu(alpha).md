@@ -1,7 +1,8 @@
 # thresholdedReLU(alpha:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Thresholded Leaky Rectified Linear Unit (ReLU) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Thresholded Leaky Rectified Linear Unit (ReLU) activation operation to th
 ```swift
 func thresholdedReLU(alpha: Float) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

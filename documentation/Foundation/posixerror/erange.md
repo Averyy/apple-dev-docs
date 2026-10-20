@@ -1,7 +1,8 @@
 # ERANGE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Result too large.
 

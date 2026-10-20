@@ -1,12 +1,15 @@
 # isSetOnMouseEntered
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value indicating whether the receiver becomes current on receiving a [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) message.
+A Boolean value indicating whether the receiver becomes current on receiving a [`mouseEntered(with:)`](./mouseentered%28with%29.md) message.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: This method is not used.
 
 ## Declaration
 
@@ -14,28 +17,33 @@ A Boolean value indicating whether the receiver becomes current on receiving a [
 var isSetOnMouseEntered: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSetOnMouseEntered) BOOL setOnMouseEntered;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver will become current when it receives a [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) message; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver will become current when it receives a [`mouseEntered(with:)`](./mouseentered%28with%29.md) message; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class var currentSystem: NSCursor?](nscursor/currentsystem.md)
+### Deprecated properties
+- [class var currentSystem: NSCursor?](./currentsystem.md)
   Returns the current system cursor.
-- [class var resizeDown: NSCursor](nscursor/resizedown.md)
+- [class var resizeDown: NSCursor](./resizedown.md)
   Returns the resize-down system cursor.
-- [class var resizeLeft: NSCursor](nscursor/resizeleft.md)
+- [class var resizeLeft: NSCursor](./resizeleft.md)
   Returns the resize-left system cursor.
-- [class var resizeLeftRight: NSCursor](nscursor/resizeleftright.md)
+- [class var resizeLeftRight: NSCursor](./resizeleftright.md)
   Returns the resize-left-and-right system cursor.
-- [class var resizeRight: NSCursor](nscursor/resizeright.md)
+- [class var resizeRight: NSCursor](./resizeright.md)
   Returns the resize-right system cursor.
-- [class var resizeUp: NSCursor](nscursor/resizeup.md)
+- [class var resizeUp: NSCursor](./resizeup.md)
   Returns the resize-up system cursor.
-- [class var resizeUpDown: NSCursor](nscursor/resizeupdown.md)
+- [class var resizeUpDown: NSCursor](./resizeupdown.md)
   Returns the resize-up-and-down system cursor.
-- [var isSetOnMouseExited: Bool](nscursor/issetonmouseexited.md)
-  A Boolean value indicating whether the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message.
+- [var isSetOnMouseExited: Bool](./issetonmouseexited.md)
+  A Boolean value indicating whether the receiver becomes current when it receives a [`mouseExited(with:)`](./mouseexited%28with%29.md) message.
 
 
 ---

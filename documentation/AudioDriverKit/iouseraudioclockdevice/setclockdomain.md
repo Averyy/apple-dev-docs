@@ -1,7 +1,8 @@
 # SetClockDomain
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the clock domain value of the clock device.
 
@@ -10,13 +11,13 @@ Sets the clock domain value of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetClockDomain(uint32_t in_clock_domain);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,7 +29,8 @@ Drivers can change the transport type of the clock device dynamically. If succes
 
 ## See Also
 
-- [GetClockDomain](iouseraudioclockdevice/getclockdomain.md)
+### Working with Clock Domain
+- [GetClockDomain](./getclockdomain.md)
   Gets the clock domain value of the clock device.
 
 

@@ -1,17 +1,22 @@
 # setKeyboardFocusRingNeedsDisplay(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the area around the focus ring.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setKeyboardFocusRingNeedsDisplay(_ rect: NSRect)
+```
+
+```objc
+- (void) setKeyboardFocusRingNeedsDisplayInRect:(NSRect) rect;
 ```
 
 ## Parameters
@@ -20,15 +25,16 @@ func setKeyboardFocusRingNeedsDisplay(_ rect: NSRect)
 
 ## See Also
 
-- [var focusRingType: NSFocusRingType](nsview/focusringtype.md)
+### Drawing the Focus Ring
+- [var focusRingType: NSFocusRingType](./focusringtype.md)
   The type of focus ring drawn around the view.
-- [var focusRingMaskBounds: NSRect](nsview/focusringmaskbounds.md)
+- [var focusRingMaskBounds: NSRect](./focusringmaskbounds.md)
   The focus ring mask bounds, specified in the view’s coordinate space.
-- [func drawFocusRingMask()](nsview/drawfocusringmask.md)
+- [func drawFocusRingMask()](./drawfocusringmask%28%29.md)
   Draws the focus ring mask for the view.
-- [func noteFocusRingMaskChanged()](nsview/notefocusringmaskchanged.md)
+- [func noteFocusRingMaskChanged()](./notefocusringmaskchanged%28%29.md)
   Invoked to notify the view that the focus ring mask requires updating.
-- [class var defaultFocusRingType: NSFocusRingType](nsview/defaultfocusringtype.md)
+- [class var defaultFocusRingType: NSFocusRingType](./defaultfocusringtype.md)
   Returns the default focus ring type.
 
 

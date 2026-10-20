@@ -1,7 +1,8 @@
 # curveType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the curve type.
 
@@ -17,6 +18,10 @@ Controls the curve type.
 
 ```swift
 var curveType: MTLCurveType { get set }
+```
+
+```objc
+@property (nonatomic) MTLCurveType curveType;
 ```
 
 #### Discussion

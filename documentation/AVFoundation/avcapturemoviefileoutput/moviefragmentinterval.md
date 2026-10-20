@@ -1,7 +1,8 @@
 # movieFragmentInterval
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds of output that are written per fragment.
 
@@ -18,9 +19,13 @@ The number of seconds of output that are written per fragment.
 var movieFragmentInterval: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime movieFragmentInterval;
+```
+
 #### Discussion
 
-The default is 10 seconds. To disable movie fragment writing (not typically recommended), set to [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+The default is 10 seconds. To disable movie fragment writing (not typically recommended), set to [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
 A QuickTime movie contains media samples and a table identifying their location in the file. A movie file without a sample table is unreadable.
 
@@ -28,7 +33,8 @@ In a processed file, the sample table typically appears at the beginning of the 
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]?](avcapturemoviefileoutput/metadata.md)
+### Configuring movies
+- [var metadata: [AVMetadataItem]?](./metadata.md)
   The metadata for the output file.
 
 

@@ -1,7 +1,8 @@
 # makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates or restores a training session.
 
@@ -19,6 +20,12 @@ Creates or restores a training session.
 static func makeTrainingSession(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLRandomForestRegressor.ModelParameters = .init(validation: .split(strategy: .automatic)), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLTrainingSession<MLRandomForestRegressor>
 ```
 
+**Other overloads**:
+
+```swift
+static func makeTrainingSession(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLRandomForestRegressor.ModelParameters = ModelParameters(validation: .split(strategy: .automatic)), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLTrainingSession<MLRandomForestRegressor>
+```
+
 #### Return Value
 
 A `MLTrainingSession` that can be used to start or resume training.
@@ -28,16 +35,17 @@ A `MLTrainingSession` that can be used to start or resume training.
 - `trainingData`: A DataTable specifying training data.
 - `targetColumn`: A String specifying the target column name in the trainingData
 - `featureColumns`: An optional list of Strings specifying feature columns to be used to predict the target, if not provided, default to use all the other columns in the trainingData, except the one specified by targetColumn
-- `parameters`: Model training parameters. See [`MLRandomForestRegressor.ModelParameters`](mlrandomforestregressor/modelparameters-swift.struct.md) for the defaults.
-- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) for the defaults.
+- `parameters`: Model training parameters. See [`MLRandomForestRegressor.ModelParameters`](./modelparameters-swift.struct.md) for the defaults.
+- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) for the defaults.
 
 ## See Also
 
-- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+### Training a random forest regressor
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./train%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Trains a random forest regressor.
-- [static func resume(MLTrainingSession<MLRandomForestRegressor>) throws -> MLJob<MLRandomForestRegressor>](mlrandomforestregressor/resume(_:).md)
+- [static func resume(MLTrainingSession<MLRandomForestRegressor>) throws -> MLJob<MLRandomForestRegressor>](./resume%28_%29.md)
   Resumes a training session from the last checkpoint if available.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLRandomForestRegressor>](mlrandomforestregressor/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLRandomForestRegressor>](./restoretrainingsession%28sessionparameters%29.md)
   Restores an existing training session.
 
 

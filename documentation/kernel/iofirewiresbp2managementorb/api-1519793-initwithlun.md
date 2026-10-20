@@ -1,14 +1,15 @@
 # initWithLUN
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithLUN(IOFireWireSBP2LUN *lun, void *refCon, FWSBP2ManagementCallback completion);
 ```
 

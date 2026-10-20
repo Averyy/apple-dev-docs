@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 The height of the arrow (measured in points) from its base to its tip.
@@ -18,13 +19,18 @@ The height of the arrow (measured in points) from its base to its tip.
 static func arrowHeight() -> CGFloat
 ```
 
+```objc
++ (CGFloat) arrowHeight;
+```
+
 #### Discussion
 
 Use this method to return the height of the arrow used by your popover background content. The arrow height must be the same for all possible directions and that height must not change.
 
 ## See Also
 
-- [static func arrowBase() -> CGFloat](uipopoverbackgroundviewmethods/arrowbase.md)
+### Accessing the arrow metrics
+- [static func arrowBase() -> CGFloat](./arrowbase%28%29.md)
   The width of the arrow triangle at its base.
 
 

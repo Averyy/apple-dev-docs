@@ -1,7 +1,8 @@
 # SFrameReadingError.unsupportedArchive(_:)
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the scalable data frame contains an archive version or layout the framework doesn’t support.
 
@@ -26,17 +27,18 @@ The associated value contains a description of the error.
 
 ## See Also
 
-- [SFrameReadingError.badArchive(_:)](sframereadingerror/badarchive(_:).md)
+### Getting Error Information
+- [SFrameReadingError.badArchive(_:)](./badarchive%28_%29.md)
   An error that indicates the scalable data frame directory’s archive file is corrupt.
-- [SFrameReadingError.badEncoding(_:)](sframereadingerror/badencoding(_:).md)
+- [SFrameReadingError.badEncoding(_:)](./badencoding%28_%29.md)
   An error that indicates the scalable data frame contains bad data encoding.
-- [SFrameReadingError.missingArchive](sframereadingerror/missingarchive.md)
+- [SFrameReadingError.missingArchive](./missingarchive.md)
   An error that indicates the scalable data frame directory is missing an archive file.
-- [SFrameReadingError.missingColumn(_:)](sframereadingerror/missingcolumn(_:).md)
+- [SFrameReadingError.missingColumn(_:)](./missingcolumn%28_%29.md)
   An error that indicates the scalable data frame is missing one of the requested columns.
-- [SFrameReadingError.unsupportedLayout(_:)](sframereadingerror/unsupportedlayout(_:).md)
+- [SFrameReadingError.unsupportedLayout(_:)](./unsupportedlayout%28_%29.md)
   An error that indicates the scalable data frame contains an unsupported data layout.
-- [SFrameReadingError.unsupportedType(_:)](sframereadingerror/unsupportedtype(_:).md)
+- [SFrameReadingError.unsupportedType(_:)](./unsupportedtype%28_%29.md)
   An error that indicates the scalable data frame contains an unknown or unsupported data type.
 
 

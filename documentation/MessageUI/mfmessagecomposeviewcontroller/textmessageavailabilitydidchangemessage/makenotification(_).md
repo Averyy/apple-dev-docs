@@ -1,7 +1,8 @@
 # makeNotification(_:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Transform a type-safe Message into a legacy Notification
 

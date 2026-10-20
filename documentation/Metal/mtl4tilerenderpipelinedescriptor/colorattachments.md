@@ -1,7 +1,8 @@
 # colorAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access an array of descriptors that configure the properties of each color attachment in the tile render pipeline.
 
@@ -17,6 +18,10 @@ Access an array of descriptors that configure the properties of each color attac
 
 ```swift
 var colorAttachments: MTLTileRenderPipelineColorAttachmentDescriptorArray { get }
+```
+
+```objc
+@property (readonly) MTLTileRenderPipelineColorAttachmentDescriptorArray * colorAttachments;
 ```
 
 

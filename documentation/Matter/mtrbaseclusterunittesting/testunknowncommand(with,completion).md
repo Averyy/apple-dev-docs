@@ -1,7 +1,8 @@
 # testUnknownCommand(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testUnknownCommand(with params: MTRUnitTestingClusterTestUnknownCommandParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func testUnknownCommand(with params: MTRUnitTestingClusterTestUnknownCommandParams?) async throws
+```
+
+```objc
+- (void) testUnknownCommandWithParams:(MTRUnitTestingClusterTestUnknownCommandParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

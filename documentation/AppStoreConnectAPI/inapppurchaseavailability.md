@@ -1,7 +1,8 @@
 # InAppPurchaseAvailability
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The territory availability configuration for an In-App Purchase, specifying which App Store regions it’s offered in.
 
@@ -10,16 +11,16 @@ The territory availability configuration for an In-App Purchase, specifying whic
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAvailability
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAvailability.Attributes](inapppurchaseavailability/attributes-data.dictionary.md)
+- [object InAppPurchaseAvailability.Attributes](./inapppurchaseavailability/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase availability resource.
-- [object InAppPurchaseAvailability.Relationships](inapppurchaseavailability/relationships-data.dictionary.md)
+- [object InAppPurchaseAvailability.Relationships](./inapppurchaseavailability/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,15 +29,16 @@ object InAppPurchaseAvailability
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (InAppPurchaseAvailability.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseAvailabilities`
 
 ## See Also
 
-- [object InAppPurchaseAvailabilityCreateRequest](inapppurchaseavailabilitycreaterequest.md)
+### Objects
+- [object InAppPurchaseAvailabilityCreateRequest](./inapppurchaseavailabilitycreaterequest.md)
   The request body you use to create an In-App Purchase availability.
-- [object InAppPurchaseAvailabilityResponse](inapppurchaseavailabilityresponse.md)
+- [object InAppPurchaseAvailabilityResponse](./inapppurchaseavailabilityresponse.md)
   A response containing a single territory availability configuration for an In-App Purchase.
-- [object InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse](inapppurchaseavailabilityavailableterritorieslinkagesresponse.md)
+- [object InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse](./inapppurchaseavailabilityavailableterritorieslinkagesresponse.md)
 
 
 ---

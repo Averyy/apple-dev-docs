@@ -1,14 +1,15 @@
 # audioMix(effectIntensity:renderingStyle:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an instance of `AVAudioMix` encapsulating all spatial audio related data with specified effect intesnsity and rendering style.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 - tvOS 26.0+
 

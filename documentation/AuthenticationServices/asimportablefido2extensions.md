@@ -1,7 +1,8 @@
 # ASImportableFIDO2Extensions
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of FIDO2 extensions as defined in CXF.
 
@@ -21,22 +22,22 @@ struct ASImportableFIDO2Extensions
 ## Topics
 
 ### Initializers
-- [init(hmacCredentials: ASImportableFIDO2HMACCredential?, largeBlob: ASImportableFIDO2LargeBlob?)](asimportablefido2extensions/init(hmaccredentials:largeblob:).md)
+- [init(hmacCredentials: ASImportableFIDO2HMACCredential?, largeBlob: ASImportableFIDO2LargeBlob?)](./asimportablefido2extensions/init%28hmaccredentials,largeblob%29.md)
 ### Instance Properties
-- [var hmacCredentials: ASImportableFIDO2HMACCredential?](asimportablefido2extensions/hmaccredentials.md)
+- [var hmacCredentials: ASImportableFIDO2HMACCredential?](./asimportablefido2extensions/hmaccredentials.md)
   PRF extension.
-- [var largeBlob: ASImportableFIDO2LargeBlob?](asimportablefido2extensions/largeblob.md)
+- [var largeBlob: ASImportableFIDO2LargeBlob?](./asimportablefido2extensions/largeblob.md)
   Large blob extension.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

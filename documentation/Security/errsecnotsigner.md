@@ -1,7 +1,8 @@
 # errSecNotSigner
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate is not signed by its proposed parent.
 
@@ -18,6 +19,10 @@ The certificate is not signed by its proposed parent.
 
 ```swift
 var errSecNotSigner: OSStatus { get }
+```
+
+```c
+errSecNotSigner
 ```
 
 

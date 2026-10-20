@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetLocalizationV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard set localization create request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard set localization cr
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data
 ```
 
@@ -23,15 +24,15 @@ object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Attributes](gamecenterleaderboardsetlocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
-- [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships](gamecenterleaderboardsetlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
 
 - `attributes` (GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSetLocalizations`
 
 
 ---

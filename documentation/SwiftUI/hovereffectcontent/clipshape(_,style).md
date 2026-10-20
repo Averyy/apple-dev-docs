@@ -1,7 +1,8 @@
 # clipShape(_:style:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a clipping shape for the view.
 

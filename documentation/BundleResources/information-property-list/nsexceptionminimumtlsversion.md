@@ -1,7 +1,8 @@
 # NSExceptionMinimumTLSVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The minimum Transport Layer Security (TLS) version for network connections.
 
@@ -11,9 +12,19 @@ The minimum Transport Layer Security (TLS) version for network connections.
 - macOS 10.11+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `NSExceptionMinimumTLSVersion`
+- **Type**: string
+
+## Possible Values
+
+- `TLSv1.0`: Require a minimum TLS version of 1.0.
+- `TLSv1.1`: Require a minimum TLS version of 1.1.
+- `TLSv1.2`: Require a minimum TLS version of 1.2.
+- `TLSv1.3`: Require a minimum TLS version of 1.3.
 
 
-**Type**: string
 
 **Default**: `TLSv1.2`
 
@@ -25,13 +36,14 @@ This key is optional. The value is a string, with a default value of `TLSv1.2`.
 
 ## See Also
 
-- [NSExceptionAllowsInsecureHTTPLoads](information-property-list/nsexceptionallowsinsecurehttploads.md)
+### Exceptions
+- [NSExceptionAllowsInsecureHTTPLoads](./nsexceptionallowsinsecurehttploads.md)
   A Boolean value indicating whether to allow insecure HTTP loads.
-- [NSExceptionRequiresForwardSecrecy](information-property-list/nsexceptionrequiresforwardsecrecy.md)
+- [NSExceptionRequiresForwardSecrecy](./nsexceptionrequiresforwardsecrecy.md)
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
-- [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
+- [NSRequiresCertificateTransparency](./nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
-- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+- [NSExceptionRequiresNIAPTLSPackageVersion](./nsexceptionrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 

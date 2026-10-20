@@ -1,7 +1,8 @@
 # free
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the service.
 
@@ -10,25 +11,26 @@ Performs any final cleanup for the service.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 #### Discussion
 
-Override this method inherited from [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice).
+Override this method inherited from [`IOService`](../../DriverKit/ioservice.md).
 
-Use this method to perform any final cleanup of your service, such as deallocating any memory you allocated. The system calls this method at some point after it calls your service’s [`Stop`](iouseraudiodriver/stop.md) method.
+Use this method to perform any final cleanup of your service, such as deallocating any memory you allocated. The system calls this method at some point after it calls your service’s [`Stop`](./stop.md) method.
 
 Always call `super` at the end of your custom implementation.
 
 ## See Also
 
-- [init](iouseraudiodriver/init.md)
+### Running the Driver Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Start](iouseraudiodriver/start.md)
+- [Start](./start.md)
   Starts the current service and associates it with the specified provider.
-- [Stop](iouseraudiodriver/stop.md)
+- [Stop](./stop.md)
   Stops the service associated with the specified provider.
 
 

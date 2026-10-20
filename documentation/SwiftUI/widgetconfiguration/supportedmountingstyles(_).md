@@ -1,7 +1,8 @@
 # supportedMountingStyles(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the mounting style for this widget.
 

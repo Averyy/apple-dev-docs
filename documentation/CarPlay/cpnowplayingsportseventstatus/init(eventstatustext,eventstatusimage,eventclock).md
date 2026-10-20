@@ -1,7 +1,8 @@
 # init(eventStatusText:eventStatusImage:eventClock:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an event status with optional event status text, an optional event status image, and an optional event clock.
 
@@ -14,6 +15,10 @@ Initialize an event status with optional event status text, an optional event st
 
 ```swift
 init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPlayingSportsClock?)
+```
+
+```objc
+- (instancetype) initWithEventStatusText:(NSArray<NSString *> *) eventStatusText eventStatusImage:(UIImage *) eventStatusImage eventClock:(CPNowPlayingSportsClock *) eventClock;
 ```
 
 #### Discussion

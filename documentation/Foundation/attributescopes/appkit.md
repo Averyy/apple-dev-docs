@@ -1,7 +1,8 @@
 # appKit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing the attribute scopes that AppKit defines.
 
@@ -16,7 +17,8 @@ var appKit: AttributeScopes.AppKitAttributes.Type { get }
 
 ## See Also
 
-- [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
+### AppKit-Defined Attributes
+- [AttributeScopes.AppKitAttributes](./appkitattributes.md)
   Attribute scopes that AppKit defines.
 
 

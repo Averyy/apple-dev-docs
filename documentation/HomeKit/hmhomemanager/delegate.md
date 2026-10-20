@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that receives updates on the collection of homes.
 
@@ -19,9 +20,14 @@ A delegate that receives updates on the collection of homes.
 weak var delegate: (any HMHomeManagerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<HMHomeManagerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol HMHomeManagerDelegate](hmhomemanagerdelegate.md)
+### Keeping track of connected homes
+- [protocol HMHomeManagerDelegate](../hmhomemanagerdelegate.md)
   An interface the home manager uses to communicate changes to the state of the home network.
 
 

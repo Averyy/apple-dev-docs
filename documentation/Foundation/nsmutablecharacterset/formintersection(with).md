@@ -1,7 +1,8 @@
 # formIntersection(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the receiver so it contains only characters that exist in both the receiver and another set.
 
@@ -20,13 +21,18 @@ Modifies the receiver so it contains only characters that exist in both the rece
 func formIntersection(with otherSet: CharacterSet)
 ```
 
+```objc
+- (void) formIntersectionWithCharacterSet:(NSCharacterSet *) otherSet;
+```
+
 ## Parameters
 
 - `otherSet`: The character set with which to perform the intersection.
 
 ## See Also
 
-- [func formUnion(with: CharacterSet)](nsmutablecharacterset/formunion(with:).md)
+### Combining Character Sets
+- [func formUnion(with: CharacterSet)](./formunion%28with%29.md)
   Modifies the receiver so it contains all characters that exist in either the receiver or another set.
 
 

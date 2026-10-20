@@ -1,7 +1,8 @@
 # validateTag(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks to see whether a Virtio tag is valid.
 
@@ -14,9 +15,13 @@ Checks to see whether a Virtio tag is valid.
 class func validateTag(_ tag: String) throws
 ```
 
+```objc
++ (BOOL) validateTag:(NSString *) tag error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
+- [Running Intel Binaries in Linux VMs](../running-intel-binaries-in-linux-vms.md)
 
 #### Discussion
 

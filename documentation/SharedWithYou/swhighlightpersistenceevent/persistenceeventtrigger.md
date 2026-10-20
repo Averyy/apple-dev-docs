@@ -1,7 +1,8 @@
 # persistenceEventTrigger
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistence event trigger for the highlight.
 
@@ -18,9 +19,14 @@ The persistence event trigger for the highlight.
 var persistenceEventTrigger: SWHighlightPersistenceEventTrigger { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SWHighlightPersistenceEventTrigger persistenceEventTrigger;
+```
+
 ## See Also
 
-- [enum SWHighlightPersistenceEventTrigger](swhighlightpersistenceeventtrigger.md)
+### Accessing an event trigger
+- [enum SWHighlightPersistenceEventTrigger](../swhighlightpersistenceeventtrigger.md)
   Signifies the type of persistence event trigger.
 
 

@@ -1,6 +1,7 @@
 # Applying materials to an asset
 
-**Framework**: Reality Composer Pro
+**Framework**: Reality Composer Pro  
+**Role**: Article
 
 Assign and configure surface materials on 3D model assets in Reality Composer Pro.
 
@@ -20,7 +21,7 @@ Reality Composer Pro displays materials in the active scene hierarchy with a pai
 
 > 💡 **Tip**: If an imported USDZ file contains Shader Graph materials, Reality Composer Pro creates those as well. You can also create materials manually, either to change the appearance of an entity loaded from a USDZ file or to use PBR rendering with procedurally created entities.
 
-#### Apply a Material to an Asset
+#### Apply a material to an asset
 
 Apply a material to an asset or entity through the Inspector, under the Material Slots section.
 
@@ -30,7 +31,7 @@ When you select a **Physically Based** (PBR) material in the hierarchy view, its
 
 In the Inspector, under **Material Slots**, click the material field next to **Material**. The field may be blank or set to `default_material`. Select a material from the list.
 
-#### Configure General Material Options
+#### Configure general material options
 
 Available options vary depending on the type of material.
 
@@ -54,7 +55,7 @@ Options include Back, Front, or None.
 
 **Writes Depth (toggle)** When toggled on, the material writes its depth into the RealityKit depth buffer.
 
-#### Configure Physically Based Material Options
+#### Configure physically based material options
 
 The following properties appear when you set **Shader** to **Physically Based**.
 
@@ -99,7 +100,7 @@ The following properties appear when you set **Shader** to **Physically Based**.
 
 **Opacity Threshold** A threshold below which RealityKit ignores opacity. A setting of `0.0` means no additional masking occurs. If set above `0.0`, the material renders areas where the Opacity is greater than the Opacity Threshold.
 
-#### Configure Shader Graph Material Options
+#### Configure Shader Graph material options
 
 The following property appears when you set **Shader** to **Shader Graph**.
 
@@ -117,15 +118,16 @@ The following property appears when you set **Shader** to **Shader Graph**.
 
 > 💡 **Tip**: You can replace images, colors, or values for any of the PBR attributes with another image, color, or value of your choosing. Any changes you make to a material affect any entity bound to that material.
 
-![A screenshot of the Inspector view showing material properties.](/images/RealityComposerPro/PBRProperties@2x.png)
+![A screenshot of the Inspector view showing material properties.](https://developer.apple.com/tutorials/images/RealityComposerPro/PBRProperties@2x.png)
 
 ## See Also
 
-- [Building materials in Reality Composer Pro](building-materials-in-reality-composer-pro.md)
+### Materials
+- [Building materials in Reality Composer Pro](./building-materials-in-reality-composer-pro.md)
   Apply surface properties to 3D entities to control how they look in your scene.
-- [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
+- [Designing materials with Shader Graph](./designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
-- [Creating a procedural Shader Graph material](creating-a-procedural-shader-graph-material.md)
+- [Creating a procedural Shader Graph material](./creating-a-procedural-shader-graph-material.md)
   Learn how to build an organic, pulsing, color-shifting material in the Reality Composer Pro 3 Shader Graph.
 
 

@@ -1,7 +1,8 @@
 # kAXLabelUIElementsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXLabelUIElementsAttribute: String { get }
+```
+
+```c
+#define kAXLabelUIElementsAttribute
 ```
 
 #### Discussion

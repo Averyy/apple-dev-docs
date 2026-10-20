@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeCAST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 CAST algorithm.
 
@@ -12,6 +13,10 @@ CAST algorithm.
 
 ```swift
 let kSecAttrKeyTypeCAST: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeCAST;
 ```
 
 

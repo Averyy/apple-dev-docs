@@ -1,18 +1,19 @@
 # init(imageNamed:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new texture object from an image file stored in the app bundle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,14 @@ Create a new texture object from an image file stored in the app bundle.
 convenience init(imageNamed name: String)
 ```
 
+```objc
++ (instancetype) textureWithImageNamed:(NSString *) name;
+```
+
 ## Mentions
 
-- [About Texture Atlases](about-texture-atlases.md)
-- [Loading and Using Textures](loading-and-using-textures.md)
+- [About Texture Atlases](../about-texture-atlases.md)
+- [Loading and Using Textures](../loading-and-using-textures.md)
 
 #### Return Value
 

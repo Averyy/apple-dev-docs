@@ -7,25 +7,26 @@ Get'ter for filterAction variable.
 
 ## Declaration
 
-```swift
+```cpp
 virtual Filter getFilterAction() const;
 ```
 
-#### Return_value
+#### Return Value
 
 value of filterAction.
 
 ## See Also
 
-- [disableInterruptOccurred](iofilterinterrupteventsource/1810540-disableinterruptoccurred.md)
+### Miscellaneous
+- [disableInterruptOccurred](./api-1810540-disableinterruptoccurred.md)
   Override $link IOInterruptEventSource::disableInterruptOccurred to make a filter callout.
-- [filterInterruptEventSource](iofilterinterrupteventsource/1810599-filterinterrupteventsource.md)
+- [filterInterruptEventSource](./api-1810599-filterinterrupteventsource.md)
   Factor method to create and initialise an IOFilterInterruptEventSource. See $link init.
-- [init](iofilterinterrupteventsource/1810702-init.md)
+- [init](./api-1810702-init.md)
   Primary initialiser for the IOFilterInterruptEventSource class.
-- [normalInterruptOccurred](iofilterinterrupteventsource/1810739-normalinterruptoccurred.md)
+- [normalInterruptOccurred](./api-1810739-normalinterruptoccurred.md)
   Override $link IOInterruptEventSource::normalInterruptOccured to make a filter callout.
-- [signalInterrupt](iofilterinterrupteventsource/1810772-signalinterrupt.md)
+- [signalInterrupt](./api-1810772-signalinterrupt.md)
   Cause the work loop to schedule the action.
 
 

@@ -1,23 +1,25 @@
 # Exit
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Exit(const char reason[1024]);
 ```
 
 ## See Also
 
-- [LoadModule](iouserserver/loadmodule.md)
+### Managing the Server Lifecycle
+- [LoadModule](./loadmodule.md)
 
 
 ---

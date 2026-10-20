@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOKitDebugUserOptions](2923488-anonymous/kiokitdebuguseroptions.md)
+- [kIOKitDebugUserOptions](./api-2923488-anonymous/kiokitdebuguseroptions.md)
 
 
 ---

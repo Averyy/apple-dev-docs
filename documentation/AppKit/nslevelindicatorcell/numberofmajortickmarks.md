@@ -1,12 +1,13 @@
 # numberOfMajorTickMarks
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of major tick marks displayed by the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The number of major tick marks displayed by the control.
 var numberOfMajorTickMarks: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfMajorTickMarks;
+```
+
 #### Discussion
 
-The value in this property must be less than or equal to the value in the [`numberOfTickMarks`](nslevelindicatorcell/numberoftickmarks.md) property.
+The value in this property must be less than or equal to the value in the [`numberOfTickMarks`](./numberoftickmarks.md) property.
 
 ## See Also
 
-- [var tickMarkPosition: NSSlider.TickMarkPosition](nslevelindicatorcell/tickmarkposition.md)
+### Managing Tick Marks
+- [var tickMarkPosition: NSSlider.TickMarkPosition](./tickmarkposition.md)
   The placement of tick marks on the level indicator control.
-- [var numberOfTickMarks: Int](nslevelindicatorcell/numberoftickmarks.md)
+- [var numberOfTickMarks: Int](./numberoftickmarks.md)
   The number of tick marks displayed by the control.
-- [func tickMarkValue(at: Int) -> Double](nslevelindicatorcell/tickmarkvalue(at:).md)
+- [func tickMarkValue(at: Int) -> Double](./tickmarkvalue%28at%29.md)
   Returns the receiver’s value represented by the tick mark at index (the minimum-value tick mark has an index of 0).
-- [func rectOfTickMark(at: Int) -> NSRect](nslevelindicatorcell/rectoftickmark(at:).md)
+- [func rectOfTickMark(at: Int) -> NSRect](./rectoftickmark%28at%29.md)
   Returns the bounding rectangle of the tick mark identified by `index` (the minimum-value tick mark is at index 0).
 
 

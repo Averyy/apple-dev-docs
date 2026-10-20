@@ -1,7 +1,8 @@
 # init(device:lossImageSize:labelsImage:weightsImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, lossImageSize: MTLSize, labelsImage: MPSImage, weightsImage: MPSImage?)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device lossImageSize:(MTLSize) lossImageSize labelsImage:(MPSImage *) labelsImage weightsImage:(MPSImage *) weightsImage;
 ```
 
 

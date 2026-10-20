@@ -1,7 +1,8 @@
 # CreativeLocalizationWithAssets.AppPreviewDeviceWithAssets
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A map of app preview device assets.
 
@@ -10,7 +11,7 @@ A map of app preview device assets.
 
 ## Declaration
 
-```swift
+```
 object CreativeLocalizationWithAssets.AppPreviewDeviceWithAssets
 ```
 

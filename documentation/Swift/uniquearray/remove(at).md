@@ -1,7 +1,8 @@
 # remove(at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the element at the specified position.
 
@@ -29,7 +30,7 @@ The removed element.
 
 All the elements following the specified position are moved to close the gap.
 
-> **Note**: O(`self.count`)
+> **Complexity**: O(`self.count`)
 
 ## Parameters
 

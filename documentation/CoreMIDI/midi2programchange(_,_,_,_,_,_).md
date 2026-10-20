@@ -1,16 +1,17 @@
 # MIDI2ProgramChange(_:_:_:_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,23 +19,28 @@
 func MIDI2ProgramChange(_ group: UInt8, _ channel: UInt8, _ bankIsValid: Bool, _ program: UInt8, _ bank_msb: UInt8, _ bank_lsb: UInt8) -> MIDIMessage_64
 ```
 
+```c
+static MIDIMessage_64 MIDI2ProgramChange(UInt8 group, UInt8 channel, bool bankIsValid, UInt8 program, UInt8 bank_msb, UInt8 bank_lsb);
+```
+
 ## See Also
 
-- [func MIDI2ChannelVoiceMessage(UInt8, UInt8, UInt8, UInt16, UInt32) -> MIDIMessage_64](midi2channelvoicemessage(_:_:_:_:_:).md)
-- [func MIDI2NoteOn(UInt8, UInt8, UInt8, UInt8, UInt16, UInt16) -> MIDIMessage_64](midi2noteon(_:_:_:_:_:_:).md)
-- [func MIDI2NoteOff(UInt8, UInt8, UInt8, UInt8, UInt16, UInt16) -> MIDIMessage_64](midi2noteoff(_:_:_:_:_:_:).md)
-- [func MIDI2ControlChange(UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2controlchange(_:_:_:_:).md)
-- [func MIDI2PitchBend(UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2pitchbend(_:_:_:).md)
-- [func MIDI2PerNotePitchBend(UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2pernotepitchbend(_:_:_:_:).md)
-- [func MIDI2ChannelPressure(UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2channelpressure(_:_:_:).md)
-- [func MIDI2PolyPressure(UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2polypressure(_:_:_:_:).md)
-- [func MIDI2AssignableControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2assignablecontrol(_:_:_:_:_:).md)
-- [func MIDI2RelRegisteredControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2relregisteredcontrol(_:_:_:_:_:).md)
-- [func MIDI2AssignablePNC(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2assignablepnc(_:_:_:_:_:).md)
-- [func MIDI2RegisteredPNC(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2registeredpnc(_:_:_:_:_:).md)
-- [func MIDI2RelAssignableControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2relassignablecontrol(_:_:_:_:_:).md)
-- [func MIDI2RegisteredControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](midi2registeredcontrol(_:_:_:_:_:).md)
-- [func MIDI2PerNoteManagment(UInt8, UInt8, UInt8, Bool, Bool) -> MIDIMessage_64](midi2pernotemanagment(_:_:_:_:_:).md)
+### MIDI 2.0 Messages
+- [func MIDI2ChannelVoiceMessage(UInt8, UInt8, UInt8, UInt16, UInt32) -> MIDIMessage_64](./midi2channelvoicemessage%28_,_,_,_,_%29.md)
+- [func MIDI2NoteOn(UInt8, UInt8, UInt8, UInt8, UInt16, UInt16) -> MIDIMessage_64](./midi2noteon%28_,_,_,_,_,_%29.md)
+- [func MIDI2NoteOff(UInt8, UInt8, UInt8, UInt8, UInt16, UInt16) -> MIDIMessage_64](./midi2noteoff%28_,_,_,_,_,_%29.md)
+- [func MIDI2ControlChange(UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2controlchange%28_,_,_,_%29.md)
+- [func MIDI2PitchBend(UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2pitchbend%28_,_,_%29.md)
+- [func MIDI2PerNotePitchBend(UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2pernotepitchbend%28_,_,_,_%29.md)
+- [func MIDI2ChannelPressure(UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2channelpressure%28_,_,_%29.md)
+- [func MIDI2PolyPressure(UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2polypressure%28_,_,_,_%29.md)
+- [func MIDI2AssignableControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2assignablecontrol%28_,_,_,_,_%29.md)
+- [func MIDI2RelRegisteredControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2relregisteredcontrol%28_,_,_,_,_%29.md)
+- [func MIDI2AssignablePNC(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2assignablepnc%28_,_,_,_,_%29.md)
+- [func MIDI2RegisteredPNC(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2registeredpnc%28_,_,_,_,_%29.md)
+- [func MIDI2RelAssignableControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2relassignablecontrol%28_,_,_,_,_%29.md)
+- [func MIDI2RegisteredControl(UInt8, UInt8, UInt8, UInt8, UInt32) -> MIDIMessage_64](./midi2registeredcontrol%28_,_,_,_,_%29.md)
+- [func MIDI2PerNoteManagment(UInt8, UInt8, UInt8, Bool, Bool) -> MIDIMessage_64](./midi2pernotemanagment%28_,_,_,_,_%29.md)
 
 
 ---

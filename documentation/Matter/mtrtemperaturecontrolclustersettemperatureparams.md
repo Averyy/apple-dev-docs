@@ -1,7 +1,8 @@
 # MTRTemperatureControlClusterSetTemperatureParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 class MTRTemperatureControlClusterSetTemperatureParams
 ```
 
+```objc
+@interface MTRTemperatureControlClusterSetTemperatureParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var serverSideProcessingTimeout: NSNumber?](mtrtemperaturecontrolclustersettemperatureparams/serversideprocessingtimeout.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrtemperaturecontrolclustersettemperatureparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var targetTemperature: NSNumber?](mtrtemperaturecontrolclustersettemperatureparams/targettemperature.md)
-- [var targetTemperatureLevel: NSNumber?](mtrtemperaturecontrolclustersettemperatureparams/targettemperaturelevel.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrtemperaturecontrolclustersettemperatureparams/timedinvoketimeoutms.md)
+- [var targetTemperature: NSNumber?](./mtrtemperaturecontrolclustersettemperatureparams/targettemperature.md)
+- [var targetTemperatureLevel: NSNumber?](./mtrtemperaturecontrolclustersettemperatureparams/targettemperaturelevel.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrtemperaturecontrolclustersettemperatureparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

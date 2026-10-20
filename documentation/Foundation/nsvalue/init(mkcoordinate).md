@@ -1,7 +1,8 @@
 # init(MKCoordinate:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value object containing the specified CoreLocation geographic coordinate structure.
 
@@ -17,7 +18,15 @@ Creates a new value object containing the specified CoreLocation geographic coor
 ## Declaration
 
 ```swift
+init(MKCoordinate coordinate: CLLocationCoordinate2D)
+```
+
+```swift
 init(mkCoordinate coordinate: CLLocationCoordinate2D)
+```
+
+```objc
++ (NSValue *) valueWithMKCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
 #### Return Value
@@ -30,13 +39,15 @@ A new value object that contains the geographic coordinate information.
 
 ## See Also
 
-- [struct CLLocationCoordinate2D](../corelocation/cllocationcoordinate2d.md)
+### Related Documentation
+- [struct CLLocationCoordinate2D](../../CoreLocation/cllocationcoordinate2d.md)
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
-- [init(MKCoordinateSpan: MKCoordinateSpan)](nsvalue/init(mkcoordinatespan:).md)
+### Working with Geographic Coordinate Values
+- [init(MKCoordinateSpan: MKCoordinateSpan)](./init%28mkcoordinatespan%29.md)
   Creates a new value object containing the specified MapKit coordinate span structure.
-- [var mkCoordinateValue: CLLocationCoordinate2D](nsvalue/mkcoordinatevalue.md)
+- [var mkCoordinateValue: CLLocationCoordinate2D](./mkcoordinatevalue.md)
   The CoreLocation geographic coordinate structure representation of the value.
-- [var mkCoordinateSpanValue: MKCoordinateSpan](nsvalue/mkcoordinatespanvalue.md)
+- [var mkCoordinateSpanValue: MKCoordinateSpan](./mkcoordinatespanvalue.md)
   The MapKit coordinate span structure representation of the value.
 
 

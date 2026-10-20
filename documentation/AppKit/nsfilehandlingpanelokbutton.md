@@ -1,12 +1,13 @@
 # NSFileHandlingPanelOKButton
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The OK button.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13 (renamed: NSApplication.ModalResponse.OK)
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The OK button.
 var NSFileHandlingPanelOKButton: Int { get }
 ```
 
+```c
+NSFileHandlingPanelOKButton
+```
+
 ## See Also
 
-- [var NSFileHandlingPanelCancelButton: Int](nsfilehandlingpanelcancelbutton.md)
+### Constants
+- [var NSFileHandlingPanelCancelButton: Int](./nsfilehandlingpanelcancelbutton.md)
   The Cancel button.
 
 

@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The joint group names available in the observation.
 
@@ -22,32 +23,33 @@ enum JointsGroupName
 ## Topics
 
 ### Getting the group name
-- [HumanHandPoseObservation.JointsGroupName.indexFinger](humanhandposeobservation/jointsgroupname/indexfinger.md)
+- [HumanHandPoseObservation.JointsGroupName.indexFinger](./jointsgroupname/indexfinger.md)
   A joint name that represents the index finger.
-- [HumanHandPoseObservation.JointsGroupName.littleFinger](humanhandposeobservation/jointsgroupname/littlefinger.md)
+- [HumanHandPoseObservation.JointsGroupName.littleFinger](./jointsgroupname/littlefinger.md)
   A joint name that represents the little finger.
-- [HumanHandPoseObservation.JointsGroupName.middleFinger](humanhandposeobservation/jointsgroupname/middlefinger.md)
+- [HumanHandPoseObservation.JointsGroupName.middleFinger](./jointsgroupname/middlefinger.md)
   A joint name that represents the middle finger.
-- [HumanHandPoseObservation.JointsGroupName.ringFinger](humanhandposeobservation/jointsgroupname/ringfinger.md)
+- [HumanHandPoseObservation.JointsGroupName.ringFinger](./jointsgroupname/ringfinger.md)
   A joint name that represents the ring finger.
-- [HumanHandPoseObservation.JointsGroupName.thumb](humanhandposeobservation/jointsgroupname/thumb.md)
+- [HumanHandPoseObservation.JointsGroupName.thumb](./jointsgroupname/thumb.md)
   A joint name that represents the thumb.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [HumanHandPoseObservation.JointName](humanhandposeobservation/jointname.md)
+### Getting the joints
+- [HumanHandPoseObservation.JointName](./jointname.md)
   The supported joint names for the hand pose.
 
 

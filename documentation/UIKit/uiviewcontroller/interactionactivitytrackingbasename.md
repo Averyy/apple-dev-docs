@@ -1,7 +1,8 @@
 # interactionActivityTrackingBaseName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base name the view controller uses for logging signposts that annotate user interactions.
 
@@ -18,9 +19,13 @@ The base name the view controller uses for logging signposts that annotate user 
 var interactionActivityTrackingBaseName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * interactionActivityTrackingBaseName;
+```
+
 #### Discussion
 
-To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](https://developer.apple.com/documentation/foundation/processinfo/activityoptions) for tracking: [`animationTrackingEnabled`](https://developer.apple.com/documentation/foundation/processinfo/activityoptions/animationtrackingenabled) or [`trackingEnabled`](https://developer.apple.com/documentation/foundation/processinfo/activityoptions/trackingenabled).
+To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](../../Foundation/processinfo/activityoptions.md) for tracking: [`animationTrackingEnabled`](../../Foundation/processinfo/activityoptions/animationtrackingenabled.md) or [`trackingEnabled`](../../Foundation/processinfo/activityoptions/trackingenabled.md).
 
 Use this property to customize the tracking name the activity uses in the signpost messages. Scroll views that can derive their enclosing view controller also use the tracking name to annotate interactive dragging and programmatic scrolling events.
 
@@ -46,9 +51,9 @@ func showImagesSwitchDidChange(_ sender: UISwitch) {
 }
 ```
 
-When not explicitly set, custom subclasses use their class name as the base name, while base classes may use the [`accessibilityIdentifier`](uiaccessibilityidentification/accessibilityidentifier.md) of the controller’s managed view.
+When not explicitly set, custom subclasses use their class name as the base name, while base classes may use the [`accessibilityIdentifier`](../uiaccessibilityidentification/accessibilityidentifier.md) of the controller’s managed view.
 
-If the view controller is a prominent child view controller of a [`UINavigationController`](uinavigationcontroller.md), [`UITabBarController`](uitabbarcontroller.md), or [`UISplitViewController`](uisplitviewcontroller.md), the parent may derive a name by applying a prefix:
+If the view controller is a prominent child view controller of a [`UINavigationController`](../uinavigationcontroller.md), [`UITabBarController`](../uitabbarcontroller.md), or [`UISplitViewController`](../uisplitviewcontroller.md), the parent may derive a name by applying a prefix:
 
 - `UINC-` for a navigation controller
 - `UITBC-` for a tab bar controller
@@ -65,9 +70,10 @@ For example, UIKit uses the tracking name `UINC-MyListTableViewController-Appear
 
 ## See Also
 
-- [Recording Performance Data](../os/recording-performance-data.md)
+### Related Documentation
+- [Recording Performance Data](../../os/recording-performance-data.md)
   Add signposts to record interesting time-based events.
-- [Improving app responsiveness](../xcode/improving-app-responsiveness.md)
+- [Improving app responsiveness](../../Xcode/improving-app-responsiveness.md)
   Create a user experience that feels responsive by removing hangs and hitches from your app.
 
 

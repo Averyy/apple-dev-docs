@@ -1,7 +1,8 @@
 # kMDItemMeteringMode
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The metering mode used to take the image. A CFString.
 
@@ -12,6 +13,10 @@ The metering mode used to take the image. A CFString.
 
 ```swift
 let kMDItemMeteringMode: CFString!
+```
+
+```c
+const CFStringRef kMDItemMeteringMode;
 ```
 
 #### Discussion

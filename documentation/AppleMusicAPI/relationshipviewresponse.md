@@ -1,7 +1,8 @@
 # RelationshipViewResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response for a direct resource view fetch.
 
@@ -10,16 +11,16 @@ The response for a direct resource view fetch.
 
 ## Declaration
 
-```swift
+```
 object RelationshipViewResponse
 ```
 
 ## Topics
 
 ### Related Objects
-- [object RelationshipViewResponse.Attributes](relationshipviewresponse/attributes-data.dictionary.md)
+- [object RelationshipViewResponse.Attributes](./relationshipviewresponse/attributes-data.dictionary.md)
   The attribute metadata for the view.
-- [object RelationshipViewResponse.Meta](relationshipviewresponse/meta-data.dictionary.md)
+- [object RelationshipViewResponse.Meta](./relationshipviewresponse/meta-data.dictionary.md)
   Contextual data about the view.
 
 ## Properties

@@ -1,7 +1,8 @@
 # ScrollTransitionPhase.identity
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scroll transition is being applied to a view that is in the visible area.
 
@@ -26,9 +27,10 @@ In this phase, a transition should show its steady state appearance, which will 
 
 ## See Also
 
-- [ScrollTransitionPhase.topLeading](scrolltransitionphase/topleading.md)
+### Getting the phase
+- [ScrollTransitionPhase.topLeading](./topleading.md)
   The scroll transition is being applied to a view that is about to move into the visible area at the top edge of a vertical scroll view, or the leading edge of a horizont scroll view.
-- [ScrollTransitionPhase.bottomTrailing](scrolltransitionphase/bottomtrailing.md)
+- [ScrollTransitionPhase.bottomTrailing](./bottomtrailing.md)
   The scroll transition is being applied to a view that is about to move into the visible area at the bottom edge of a vertical scroll view, or the trailing edge of a horizontal scroll view.
 
 

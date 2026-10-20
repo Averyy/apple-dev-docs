@@ -1,7 +1,8 @@
 # rotate(by:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rotates the user coordinate system in a context.
 
@@ -10,7 +11,7 @@ Rotates the user coordinate system in a context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Rotates the user coordinate system in a context.
 func rotate(by angle: CGFloat)
 ```
 
+```c
+extern void CGContextRotateCTM(CGContextRef c, CGFloat angle);
+```
+
 #### Discussion
 
-The direction that the context is rotated may appear to be altered by the state of the current transformation matrix prior to executing this function. For example, on iOS, a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) applies a transformation to the graphics context that inverts the Y-axis (by multiplying it by `-1`). Rotating the user coordinate system on coordinate system that was previously flipped results in a rotation in the opposite direction (that is, positive values appear to rotate the coordinate system in the clockwise direction).
+The direction that the context is rotated may appear to be altered by the state of the current transformation matrix prior to executing this function. For example, on iOS, a [`UIView`](../../UIKit/uiview.md) applies a transformation to the graphics context that inverts the Y-axis (by multiplying it by `-1`). Rotating the user coordinate system on coordinate system that was previously flipped results in a rotation in the opposite direction (that is, positive values appear to rotate the coordinate system in the clockwise direction).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The direction that the context is rotated may appear to be altered by the state 
 
 ## See Also
 
-- [var ctm: CGAffineTransform](cgcontext/ctm.md)
+### Working with the Current Transformation Matrix
+- [var ctm: CGAffineTransform](./ctm.md)
   Returns the current transformation matrix.
-- [func scaleBy(x: CGFloat, y: CGFloat)](cgcontext/scaleby(x:y:).md)
+- [func scaleBy(x: CGFloat, y: CGFloat)](./scaleby%28x,y%29.md)
   Changes the scale of the user coordinate system in a context.
-- [func translateBy(x: CGFloat, y: CGFloat)](cgcontext/translateby(x:y:).md)
+- [func translateBy(x: CGFloat, y: CGFloat)](./translateby%28x,y%29.md)
   Changes the origin of the user coordinate system in a context.
-- [func concatenate(CGAffineTransform)](cgcontext/concatenate(_:).md)
+- [func concatenate(CGAffineTransform)](./concatenate%28_%29.md)
   Transforms the user coordinate system in a context using a specified matrix.
 
 

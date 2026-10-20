@@ -1,14 +1,15 @@
 # InterruptOccurred
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t InterruptOccurred(IORPC rpc, OSAction *action, uint64_t count, uint64_t time, OSDispatchMethod supermethod);
 ```
 

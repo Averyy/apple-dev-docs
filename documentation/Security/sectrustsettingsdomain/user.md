@@ -1,7 +1,8 @@
 # SecTrustSettingsDomain.user
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Per-user trust settings.
 
@@ -13,6 +14,10 @@ Per-user trust settings.
 
 ```swift
 case user
+```
+
+```c
+kSecTrustSettingsDomainUser
 ```
 
 

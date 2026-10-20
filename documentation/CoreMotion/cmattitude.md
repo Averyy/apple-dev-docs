@@ -1,7 +1,8 @@
 # CMAttitude
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The device’s orientation relative to a known frame of reference at a point in time.
 
@@ -19,63 +20,68 @@ The device’s orientation relative to a known frame of reference at a point in 
 class CMAttitude
 ```
 
+```objc
+@interface CMAttitude : NSObject
+```
+
 #### Overview
 
-The `CMAttitude` class offers three different mathematical representations of attitude: a rotation matrix, a quaternion, and Euler angles (roll, pitch, and yaw values). You access `CMAttitude` objects through the attitude property of each [`CMDeviceMotion`](cmdevicemotion.md) objects passed to an application. An application starts receiving these device-motion objects as a result of calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md) method, the [`startDeviceMotionUpdates(using:)`](cmmotionmanager/startdevicemotionupdates(using:).md) method, or the [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md) method of the [`CMMotionManager`](cmmotionmanager.md) class.
+The `CMAttitude` class offers three different mathematical representations of attitude: a rotation matrix, a quaternion, and Euler angles (roll, pitch, and yaw values). You access `CMAttitude` objects through the attitude property of each [`CMDeviceMotion`](./cmdevicemotion.md) objects passed to an application. An application starts receiving these device-motion objects as a result of calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28using,to,withhandler%29.md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28to,withhandler%29.md) method, the [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md) method, or the [`startDeviceMotionUpdates()`](./cmmotionmanager/startdevicemotionupdates%28%29.md) method of the [`CMMotionManager`](./cmmotionmanager.md) class.
 
 > **Note**:  Core Motion outputs a direction cosine matrix (DCM)—basically a rotation from the last “old” orientation to the new orientation of the device.
 
 ## Topics
 
 ### Getting a Mathematical Representation of Attitude as Euler Angles
-- [var roll: Double](cmattitude/roll.md)
+- [var roll: Double](./cmattitude/roll.md)
   The roll of the device, in radians.
-- [var pitch: Double](cmattitude/pitch.md)
+- [var pitch: Double](./cmattitude/pitch.md)
   The pitch of the device, in radians.
-- [var yaw: Double](cmattitude/yaw.md)
+- [var yaw: Double](./cmattitude/yaw.md)
   The yaw of the device, in radians.
 ### Getting a Mathematical Representation of Attitude as a Rotation Matrix
-- [var rotationMatrix: CMRotationMatrix](cmattitude/rotationmatrix.md)
+- [var rotationMatrix: CMRotationMatrix](./cmattitude/rotationmatrix.md)
   Returns a rotation matrix representing the device’s attitude.
-- [struct CMRotationMatrix](cmrotationmatrix.md)
+- [struct CMRotationMatrix](./cmrotationmatrix.md)
   The type of a structure representing a rotation matrix.
 ### Getting a Mathematical Representation of Attitude as a Quaternion
-- [var quaternion: CMQuaternion](cmattitude/quaternion.md)
+- [var quaternion: CMQuaternion](./cmattitude/quaternion.md)
   Returns a quaternion representing the device’s attitude.
-- [struct CMQuaternion](cmquaternion.md)
+- [struct CMQuaternion](./cmquaternion.md)
   The type for a quaternion representing a measurement of attitude.
 ### Obtaining the Change in Attitude
-- [func multiply(byInverseOf: CMAttitude)](cmattitude/multiply(byinverseof:).md)
+- [func multiply(byInverseOf: CMAttitude)](./cmattitude/multiply%28byinverseof%29.md)
   Yields the change in attitude given a specific attitude.
 ### Initializers
-- [init?(coder: NSCoder)](cmattitude/init(coder:).md)
+- [init?(coder: NSCoder)](./cmattitude/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+### Device motion
+- [Getting processed device-motion data](./getting-processed-device-motion-data.md)
   Retrieve motion data that the system processed to remove environmental bias, such as the effects of gravity.
-- [class CMDeviceMotion](cmdevicemotion.md)
+- [class CMDeviceMotion](./cmdevicemotion.md)
   Encapsulated measurements of the attitude, rotation rate, and acceleration of a device.
-- [struct CMAttitudeReferenceFrame](cmattitudereferenceframe.md)
+- [struct CMAttitudeReferenceFrame](./cmattitudereferenceframe.md)
   Constants that indicate the frame of reference for attitude-related motion data.
-- [class CMHeadphoneMotionManager](cmheadphonemotionmanager.md)
+- [class CMHeadphoneMotionManager](./cmheadphonemotionmanager.md)
   An object that starts and manages headphone motion services.
-- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+- [protocol CMBodyIdentifiable](./cmbodyidentifiable.md)
   A type that identifies a physical body or view for device-motion calculations.
 
 

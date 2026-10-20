@@ -1,7 +1,8 @@
 # entityType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type identifier that defines what kind of entity this is.
 

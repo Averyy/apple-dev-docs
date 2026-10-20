@@ -1,7 +1,8 @@
 # scene
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The LookAround scene.
 
@@ -17,6 +18,10 @@ The LookAround scene.
 ```swift
 @NSCopying
 var scene: MKLookAroundScene? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MKLookAroundScene * scene;
 ```
 
 

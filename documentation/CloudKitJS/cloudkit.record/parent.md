@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to a parent object used for sharing.
 
@@ -10,7 +11,7 @@ A reference to a parent object used for sharing.
 
 ## Declaration
 
-```swift
+```
 attribute CKReference parent;
 ```
 

@@ -1,7 +1,8 @@
 # preferredLanguages
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of language identifiers in preferred order.
 
@@ -20,11 +21,16 @@ An array of language identifiers in preferred order.
 var preferredLanguages: [String]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSString *> * preferredLanguages;
+```
+
 ## See Also
 
-- [var preferredMediaCharacteristics: [AVMediaCharacteristic]?](avplayermediaselectioncriteria/preferredmediacharacteristics.md)
+### Retrieving selection criteria settings
+- [var preferredMediaCharacteristics: [AVMediaCharacteristic]?](./preferredmediacharacteristics.md)
   An array of media characteristics in preferred order.
-- [var principalMediaCharacteristics: [AVMediaCharacteristic]?](avplayermediaselectioncriteria/principalmediacharacteristics.md)
+- [var principalMediaCharacteristics: [AVMediaCharacteristic]?](./principalmediacharacteristics.md)
   An array of media characteristics that are essential to select when choosing media with a particular characteristic.
 
 

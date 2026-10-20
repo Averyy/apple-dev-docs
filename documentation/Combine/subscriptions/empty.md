@@ -1,7 +1,8 @@
 # empty
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the “empty” subscription.
 
@@ -22,7 +23,7 @@ static var empty: any Subscription { get }
 
 #### Discussion
 
-Use the empty subscription when you need a [`Subscription`](subscription.md) that ignores requests and cancellation.
+Use the empty subscription when you need a [`Subscription`](../subscription.md) that ignores requests and cancellation.
 
 
 ---

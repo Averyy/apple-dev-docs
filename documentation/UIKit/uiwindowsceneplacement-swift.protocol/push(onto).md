@@ -1,7 +1,8 @@
 # push(onto:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -11,6 +12,8 @@
 ```swift
 static func push(onto sceneSession: UISceneSession) -> Self
 ```
+
+Available when `Self` is `UIWindowScenePushPlacement`.
 
 
 ---

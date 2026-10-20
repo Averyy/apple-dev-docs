@@ -1,10 +1,11 @@
 # kBluetoothVoiceSettingAirCodingFormatALaw
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothVoiceSettingAirCodingFormatALaw: Int { get }
 ```
 
+```c
+kBluetoothVoiceSettingAirCodingFormatALaw
+```
+
 ## See Also
 
-- [var kBluetoothVoiceSettingAirCodingFormatCVSD: Int](kbluetoothvoicesettingaircodingformatcvsd.md)
-- [var kBluetoothVoiceSettingAirCodingFormatMask: Int](kbluetoothvoicesettingaircodingformatmask.md)
-- [var kBluetoothVoiceSettingAirCodingFormatTransparentData: Int](kbluetoothvoicesettingaircodingformattransparentdata.md)
-- [var kBluetoothVoiceSettingAirCodingFormatULaw: Int](kbluetoothvoicesettingaircodingformatulaw.md)
+### Constants
+- [var kBluetoothVoiceSettingAirCodingFormatCVSD: Int](./kbluetoothvoicesettingaircodingformatcvsd.md)
+- [var kBluetoothVoiceSettingAirCodingFormatMask: Int](./kbluetoothvoicesettingaircodingformatmask.md)
+- [var kBluetoothVoiceSettingAirCodingFormatTransparentData: Int](./kbluetoothvoicesettingaircodingformattransparentdata.md)
+- [var kBluetoothVoiceSettingAirCodingFormatULaw: Int](./kbluetoothvoicesettingaircodingformatulaw.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a page scroll notification with an attributed string value.
 
@@ -22,9 +23,10 @@ init(_ announcement: AttributedString)
 
 ## See Also
 
-- [init(String)](accessibilitynotification/pagescrolled/init(_:)-28520.md)
+### Creating a page scroll notification
+- [init(String)](./init%28_%29-28520.md)
   Creates a page scroll notification with a string.
-- [init(NSAttributedString)](accessibilitynotification/pagescrolled/init(_:)-2lkx.md)
+- [init(NSAttributedString)](./init%28_%29-2lkx.md)
   Creates a page scroll notification with an attributed string object.
 
 

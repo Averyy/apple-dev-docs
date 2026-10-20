@@ -1,7 +1,8 @@
 # HMCameraStreamState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states associated with a camera stream.
 
@@ -19,41 +20,46 @@ The states associated with a camera stream.
 enum HMCameraStreamState
 ```
 
+```c
+enum HMCameraStreamState : NSUInteger;
+```
+
 ## Topics
 
 ### Observing the streaming state
-- [HMCameraStreamState.notStreaming](hmcamerastreamstate/notstreaming.md)
+- [HMCameraStreamState.notStreaming](./hmcamerastreamstate/notstreaming.md)
   The state when the camera stream is not active.
-- [HMCameraStreamState.starting](hmcamerastreamstate/starting.md)
+- [HMCameraStreamState.starting](./hmcamerastreamstate/starting.md)
   The state when the camera stream start request is processing.
-- [HMCameraStreamState.stopping](hmcamerastreamstate/stopping.md)
+- [HMCameraStreamState.stopping](./hmcamerastreamstate/stopping.md)
   The state when the camera stream is stopping.
-- [HMCameraStreamState.streaming](hmcamerastreamstate/streaming.md)
+- [HMCameraStreamState.streaming](./hmcamerastreamstate/streaming.md)
   The state when the camera stream is currently in progress.
 ### Initializers
-- [init?(rawValue: UInt)](hmcamerastreamstate/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hmcamerastreamstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func startStream()](hmcamerastreamcontrol/startstream.md)
+### Controlling the stream
+- [func startStream()](./hmcamerastreamcontrol/startstream%28%29.md)
   Starts the camera stream.
-- [func stopStream()](hmcamerastreamcontrol/stopstream.md)
+- [func stopStream()](./hmcamerastreamcontrol/stopstream%28%29.md)
   Stops the camera stream.
-- [var cameraStream: HMCameraStream?](hmcamerastreamcontrol/camerastream.md)
+- [var cameraStream: HMCameraStream?](./hmcamerastreamcontrol/camerastream.md)
   The current camera stream.
-- [class HMCameraStream](hmcamerastream.md)
+- [class HMCameraStream](./hmcamerastream.md)
   An object that represents a camera’s audiovisual stream.
-- [var streamState: HMCameraStreamState](hmcamerastreamcontrol/streamstate.md)
+- [var streamState: HMCameraStreamState](./hmcamerastreamcontrol/streamstate.md)
   The current state of the camera stream.
 
 

@@ -1,7 +1,8 @@
 # teams
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of teams fetched.
 
@@ -10,7 +11,7 @@ The array of teams fetched.
 
 ## Declaration
 
-```swift
+```
 attribute Team[] teams;
 ```
 

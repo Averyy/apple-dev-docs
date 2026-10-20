@@ -1,7 +1,8 @@
 # timescale
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time scale for tracks that contain the `moov` atom.
 
@@ -19,19 +20,24 @@ The time scale for tracks that contain the `moov` atom.
 var timescale: CMTimeScale { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CMTimeScale timescale;
+```
+
 #### Discussion
 
 The default media time is `0`. Set this property on any new, empty tracks before any edits are performed on the track.
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avmutablemovietrack/timerange.md)
+### Accessing temporal information
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the track within the overall timeline of the asset.
-- [var naturalTimeScale: CMTimeScale](avmutablemovietrack/naturaltimescale.md)
+- [var naturalTimeScale: CMTimeScale](./naturaltimescale.md)
   The natural time scale of the media that a track references.
-- [var estimatedDataRate: Float](avmutablemovietrack/estimateddatarate.md)
+- [var estimatedDataRate: Float](./estimateddatarate.md)
   The estimated data rate, in bits per second, of the media that the track references.
-- [func samplePresentationTime(forTrackTime: CMTime) -> CMTime](avmutablemovietrack/samplepresentationtime(fortracktime:).md)
+- [func samplePresentationTime(forTrackTime: CMTime) -> CMTime](./samplepresentationtime%28fortracktime%29.md)
   Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
 
 

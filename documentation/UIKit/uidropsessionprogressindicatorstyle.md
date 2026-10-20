@@ -1,7 +1,8 @@
 # UIDropSessionProgressIndicatorStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The drop-progress indicator styles for the drop session, used while data is moving from the source to the destination.
 
@@ -17,33 +18,38 @@ The drop-progress indicator styles for the drop session, used while data is movi
 enum UIDropSessionProgressIndicatorStyle
 ```
 
+```c
+enum UIDropSessionProgressIndicatorStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Progress indicator styles
-- [UIDropSessionProgressIndicatorStyle.default](uidropsessionprogressindicatorstyle/default.md)
+- [UIDropSessionProgressIndicatorStyle.default](./uidropsessionprogressindicatorstyle/default.md)
   The indicator style for using the system’s default drop-progress indication.
-- [UIDropSessionProgressIndicatorStyle.none](uidropsessionprogressindicatorstyle/none.md)
+- [UIDropSessionProgressIndicatorStyle.none](./uidropsessionprogressindicatorstyle/none.md)
   The indicator style for no drop-progress indication.
 ### Initializers
-- [init?(rawValue: UInt)](uidropsessionprogressindicatorstyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uidropsessionprogressindicatorstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol UIDropSession](uidropsession.md)
+### Drop destinations
+- [protocol UIDropSession](./uidropsession.md)
   The interface for querying a drop session about its state and associated drag items.
-- [class UIDropProposal](uidropproposal.md)
+- [class UIDropProposal](./uidropproposal.md)
   A configuration for the behavior of a drop interaction, required if a view accepts drop activities.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](./uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
 
 

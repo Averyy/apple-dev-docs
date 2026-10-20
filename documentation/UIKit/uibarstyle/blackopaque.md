@@ -1,14 +1,17 @@
 # blackOpaque
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A deprecated opaque style.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`UIBarStyle.black`](./black.md) instead.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ A deprecated opaque style.
 static var blackOpaque: UIBarStyle { get }
 ```
 
+```c
+UIBarStyleBlackOpaque
+```
+
 ## See Also
 
-- [UIBarStyle.default](uibarstyle/default.md)
+### Bar styles
+- [UIBarStyle.default](./default.md)
   The default style normally associated with the given view.
-- [UIBarStyle.black](uibarstyle/black.md)
+- [UIBarStyle.black](./black.md)
   A black background with light content.
-- [UIBarStyle.blackTranslucent](uibarstyle/blacktranslucent.md)
+- [UIBarStyle.blackTranslucent](./blacktranslucent.md)
   A deprecated translucent style.
 
 

@@ -1,7 +1,8 @@
 # setObjects(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an array of item providers for the pasteboard, based on a specified array of objects.
 
@@ -9,7 +10,7 @@ Sets an array of item providers for the pasteboard, based on a specified array o
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,15 +24,16 @@ func setObjects<T>(_ objects: [T]) where T : _ObjectiveCBridgeable, T._Objective
 
 ## See Also
 
-- [var itemProviders: [NSItemProvider]](uipasteboard/itemproviders.md)
+### Getting and setting item providers
+- [var itemProviders: [NSItemProvider]](./itemproviders.md)
   An array of item providers for the pasteboard.
-- [func setItemProviders([NSItemProvider], localOnly: Bool, expirationDate: Date?)](uipasteboard/setitemproviders(_:localonly:expirationdate:).md)
+- [func setItemProviders([NSItemProvider], localOnly: Bool, expirationDate: Date?)](./setitemproviders%28_,localonly,expirationdate%29.md)
   Sets and configures an explicit array of item providers for the pasteboard.
-- [func setObjects([any NSItemProviderWriting])](uipasteboard/setobjects(_:)-lljo.md)
+- [func setObjects([any NSItemProviderWriting])](./setobjects%28_%29-lljo.md)
   Sets an array of item providers for the pasteboard, based on a specified array of objects.
-- [func setObjects([any NSItemProviderWriting], localOnly: Bool, expirationDate: Date?)](uipasteboard/setobjects(_:localonly:expirationdate:)-3h3iz.md)
+- [func setObjects([any NSItemProviderWriting], localOnly: Bool, expirationDate: Date?)](./setobjects%28_,localonly,expirationdate%29-3h3iz.md)
   Sets and configures an array of item providers for the pasteboard, based on a specified array of objects.
-- [func setObjects<T>([T], localOnly: Bool, expirationDate: Date?)](uipasteboard/setobjects(_:localonly:expirationdate:)-26u8o.md)
+- [func setObjects<T>([T], localOnly: Bool, expirationDate: Date?)](./setobjects%28_,localonly,expirationdate%29-26u8o.md)
   Sets and configures an array of item providers for the pasteboard, based on a specified array of objects.
 
 

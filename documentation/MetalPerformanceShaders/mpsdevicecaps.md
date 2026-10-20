@@ -1,15 +1,16 @@
 # MPSDeviceCaps
 
 **Framework**: Metal Performance Shaders  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,15 +18,20 @@
 typealias MPSDeviceCaps = UInt32
 ```
 
+```c
+typedef uint32_t MPSDeviceCaps;
+```
+
 ## See Also
 
-- [typealias MPSAccelerationStructureCompletionHandler](mpsaccelerationstructurecompletionhandler.md)
+### Data Types
+- [typealias MPSAccelerationStructureCompletionHandler](./mpsaccelerationstructurecompletionhandler.md)
   A block of code that’s invoked when an operation on an acceleration structure has completed.
-- [typealias MPSAxisAlignedBoundingBox](mpsaxisalignedboundingbox-swift.typealias.md)
+- [typealias MPSAxisAlignedBoundingBox](./mpsaxisalignedboundingbox-swift.typealias.md)
   An axis-aligned bounding box.
-- [typealias MPSFunctionConstant](mpsfunctionconstant.md)
-- [typealias MPSFunctionConstantInMetal](mpsfunctionconstantinmetal.md)
-- [typealias MPSGradientNodeBlock](mpsgradientnodeblock.md)
+- [typealias MPSFunctionConstant](./mpsfunctionconstant.md)
+- [typealias MPSFunctionConstantInMetal](./mpsfunctionconstantinmetal.md)
+- [typealias MPSGradientNodeBlock](./mpsgradientnodeblock.md)
 
 
 ---

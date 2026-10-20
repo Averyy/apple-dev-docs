@@ -1,7 +1,8 @@
 # MSServiceAccount
 
 **Framework**: Media Setup  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Account details for accessing a streaming media service.
 
@@ -17,42 +18,47 @@ Account details for accessing a streaming media service.
 class MSServiceAccount
 ```
 
+```objc
+@interface MSServiceAccount : NSObject
+```
+
 ## Topics
 
 ### Presenting Account Information to the User
-- [init(serviceName: String, accountName: String)](msserviceaccount/init(servicename:accountname:).md)
+- [init(serviceName: String, accountName: String)](./msserviceaccount/init%28servicename,accountname%29.md)
   Creates a new account.
-- [var serviceName: String](msserviceaccount/servicename.md)
+- [var serviceName: String](./msserviceaccount/servicename.md)
   The localized name of the streaming media service.
-- [var accountName: String](msserviceaccount/accountname.md)
+- [var accountName: String](./msserviceaccount/accountname.md)
   The user’s display name, email address, or other identifier in a streaming media service.
 ### Providing Parameters for an OAuth Request
-- [var authorizationTokenURL: URL?](msserviceaccount/authorizationtokenurl.md)
+- [var authorizationTokenURL: URL?](./msserviceaccount/authorizationtokenurl.md)
   A URL the system can access to request an OAuth token for the user’s HomePod speakers.
-- [var authorizationScope: String?](msserviceaccount/authorizationscope.md)
+- [var authorizationScope: String?](./msserviceaccount/authorizationscope.md)
   A list of permissions for the token request.
-- [var clientID: String?](msserviceaccount/clientid.md)
+- [var clientID: String?](./msserviceaccount/clientid.md)
   A user identifier for the token request.
-- [var clientSecret: String?](msserviceaccount/clientsecret.md)
+- [var clientSecret: String?](./msserviceaccount/clientsecret.md)
   A string that authenticates the user’s setup request.
-- [var configurationURL: URL?](msserviceaccount/configurationurl.md)
+- [var configurationURL: URL?](./msserviceaccount/configurationurl.md)
   The path to access the configuration endpoint of your streaming media service for HomePod.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MSSetupSession](mssetupsession.md)
+### HomePod Configuration
+- [class MSSetupSession](./mssetupsession.md)
   An object that manages the transfer of configuration information between your app, the system, your media service, and HomePod speakers.
 
 

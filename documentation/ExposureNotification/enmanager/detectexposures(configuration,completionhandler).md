@@ -1,19 +1,26 @@
 # detectExposures(configuration:completionHandler:)
 
 **Framework**: Exposure Notification  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detects exposures using the specified configuration to control the scoring algorithm.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 func detectExposures(configuration: ENExposureConfiguration, completionHandler: @escaping ENDetectExposuresHandler) -> Progress
+```
+
+```objc
+- (NSProgress *) detectExposuresWithConfiguration:(ENExposureConfiguration *) configuration completionHandler:(ENDetectExposuresHandler) completionHandler;
 ```
 
 #### Return Value
@@ -24,9 +31,11 @@ The progress of the method.
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
-This method allows recalculating a new score using different configuration parameters. If you’ve previously called   [`detectExposures(configuration:diagnosisKeyURLs:completionHandler:)`](enmanager/detectexposures(configuration:diagnosiskeyurls:completionhandler:).md), any keys you submitted in the previous 14 days are cached. Only use this method if your app specifies an `ENAPIVersion` of `2` in its `Info.plist` file, because older versions did not cache keys.
+This method allows recalculating a new score using different configuration parameters. If you’ve previously called   [`detectExposures(configuration:diagnosisKeyURLs:completionHandler:)`](./detectexposures%28configuration,diagnosiskeyurls,completionhandler%29.md), any keys you submitted in the previous 14 days are cached. Only use this method if your app specifies an `ENAPIVersion` of `2` in its `Info.plist` file, because older versions did not cache keys.
 
-> ❗ **Important**:  On iOS 13.6 and later, you’re limited to using this method a maximum of 15 times per 24-hour period. If you’re on iOS 13.7 and later and specify `2` as the `ENAPIVersion` in your app’s `Info.plist` file, you’re limited to using this method a maximum of 6 times per 24-hour period. On iOS 13.5, you can only submit 15 uncached key files per 24-hour period, regardless of the number of API calls you make.
+> ❗ **Important**:  On iOS 13.6 and later, you’re limited to using this method a maximum of 15 times per 24-hour period. If you’re on iOS 13.7 and later and specify `2` as the `ENAPIVersion` in your app’s `Info.plist` file, you’re limited to using this method a maximum of 6 times per 24-hour period.
+>
+> On iOS 13.5, you can only submit 15 uncached key files per 24-hour period, regardless of the number of API calls you make.
 
 ## Parameters
 
@@ -35,17 +44,18 @@ This method allows recalculating a new score using different configuration param
 
 ## See Also
 
-- [func detectExposures(configuration: ENExposureConfiguration, diagnosisKeyURLs: [URL], completionHandler: ENDetectExposuresHandler) -> Progress](enmanager/detectexposures(configuration:diagnosiskeyurls:completionhandler:).md)
+### Obtaining Exposure Information
+- [func detectExposures(configuration: ENExposureConfiguration, diagnosisKeyURLs: [URL], completionHandler: ENDetectExposuresHandler) -> Progress](./detectexposures%28configuration,diagnosiskeyurls,completionhandler%29.md)
   Detects exposures using the configuration that you specify for controlling the scoring algorithm.
-- [func getExposureWindows(summary: ENExposureDetectionSummary, completionHandler: ENGetExposureWindowsHandler) -> Progress](enmanager/getexposurewindows(summary:completionhandler:).md)
+- [func getExposureWindows(summary: ENExposureDetectionSummary, completionHandler: ENGetExposureWindowsHandler) -> Progress](./getexposurewindows%28summary,completionhandler%29.md)
   Obtains information from the provided summary about the user’s exposure within a window of time.
-- [typealias ENGetExposureWindowsHandler](engetexposurewindowshandler.md)
+- [typealias ENGetExposureWindowsHandler](../engetexposurewindowshandler.md)
   The handler the system invokes when the acquisition of windows completes.
-- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](./getusertraveled%28completionhandler%29.md)
   Obtains information about the user’s travel within an exposure period.
-- [typealias ENGetUserTraveledHandler](engetusertraveledhandler.md)
+- [typealias ENGetUserTraveledHandler](../engetusertraveledhandler.md)
   The handler the system invokes when acquistiion of the user’s travel status completes.
-- [func getExposureInfo(summary: ENExposureDetectionSummary, userExplanation: String, completionHandler: ENGetExposureInfoHandler) -> Progress](enmanager/getexposureinfo(summary:userexplanation:completionhandler:).md)
+- [func getExposureInfo(summary: ENExposureDetectionSummary, userExplanation: String, completionHandler: ENGetExposureInfoHandler) -> Progress](./getexposureinfo%28summary,userexplanation,completionhandler%29.md)
   Returns information about each exposure.
 
 

@@ -1,7 +1,8 @@
 # MMSMessage
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the data of an MMS message.
 
@@ -17,40 +18,41 @@ struct MMSMessage
 ## Topics
 
 ### Creating an MMS message
-- [init(cellularServiceID: CellularServiceID, messageID: MMSMessageID, content: MMSContent)](mmsmessage/init(cellularserviceid:messageid:content:).md)
+- [init(cellularServiceID: CellularServiceID, messageID: MMSMessageID, content: MMSContent)](./mmsmessage/init%28cellularserviceid,messageid,content%29.md)
   Initializes an MMS message for sending to a receipient.
 ### Accessing message content
-- [var content: MMSContent](mmsmessage/content.md)
+- [var content: MMSContent](./mmsmessage/content.md)
   The body content of the message.
-- [struct MMSContent](mmscontent.md)
+- [struct MMSContent](./mmscontent.md)
   A structure that holds the content of an MMS message.
 ### Accessing message properties
-- [var cellularServiceID: CellularServiceID](mmsmessage/cellularserviceid.md)
+- [var cellularServiceID: CellularServiceID](./mmsmessage/cellularserviceid.md)
   The cellular service identifier associated with the message.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](./cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [var messageID: MMSMessageID](mmsmessage/messageid.md)
+- [var messageID: MMSMessageID](./mmsmessage/messageid.md)
   A message identifier for the message.
-- [struct MMSMessageID](mmsmessageid.md)
+- [struct MMSMessageID](./mmsmessageid.md)
   A structure that represents an MMS message identifier.
-- [var totalSize: Measurement<UnitInformationStorage>](mmsmessage/totalsize.md)
+- [var totalSize: Measurement<UnitInformationStorage>](./mmsmessage/totalsize.md)
   The total size of the message.
-- [var description: String](mmsmessage/description.md)
+- [var description: String](./mmsmessage/description.md)
   A textual representation of the message.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sendMessage(MMSMessage) async throws](mmsservice/sendmessage(_:).md)
+### Sending messages
+- [func sendMessage(MMSMessage) async throws](./mmsservice/sendmessage%28_%29.md)
   Sends an MMS message to the given destination.
 
 

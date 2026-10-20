@@ -1,7 +1,8 @@
 # peopleSuggestions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,9 +16,13 @@
 static var peopleSuggestions: UIActivitySectionTypes { get }
 ```
 
+```c
+UIActivitySectionTypesPeopleSuggestions
+```
+
 ## Mentions
 
-- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+- [Collaborating and sharing copies of your data](../collaborating-and-sharing-copies-of-your-data.md)
 
 
 ---

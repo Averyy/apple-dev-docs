@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of an SMS message.
 

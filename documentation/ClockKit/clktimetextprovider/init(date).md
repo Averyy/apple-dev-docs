@@ -1,17 +1,24 @@
 # init(date:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a text provider for displaying the specified time.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 convenience init(date: Date)
+```
+
+```objc
++ (instancetype) textProviderWithDate:(NSDate *) date;
 ```
 
 #### Return Value
@@ -28,7 +35,8 @@ The text provider created by this method uses the default time zone information 
 
 ## See Also
 
-- [convenience init(date: Date, timeZone: TimeZone?)](clktimetextprovider/init(date:timezone:).md)
+### Creating a Text Provider
+- [convenience init(date: Date, timeZone: TimeZone?)](./init%28date,timezone%29.md)
   Creates and returns a text provider for displaying the specified time.
 
 

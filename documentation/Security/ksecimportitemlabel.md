@@ -1,7 +1,8 @@
 # kSecImportItemLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Item label.
 
@@ -20,9 +21,13 @@ Item label.
 let kSecImportItemLabel: CFString
 ```
 
+```c
+extern CFStringRef const kSecImportItemLabel;
+```
+
 ## Mentions
 
-- [Importing an Identity](importing-an-identity.md)
+- [Importing an Identity](./importing-an-identity.md)
 
 #### Discussion
 

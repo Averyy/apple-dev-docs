@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value that represents the given context.
 

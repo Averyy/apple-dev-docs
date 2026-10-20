@@ -1,7 +1,8 @@
 # makeDefaultGeometryModifier()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a pass-through geometry modifier that performs no vertex transformation.
 
@@ -19,7 +20,7 @@ final func makeDefaultGeometryModifier() -> sending LowLevelMaterialResource.Geo
 
 #### Return Value
 
-A pass-through [`LowLevelMaterialResource.GeometryModifier`](lowlevelmaterialresource/geometrymodifier.md).
+A pass-through [`LowLevelMaterialResource.GeometryModifier`](../lowlevelmaterialresource/geometrymodifier.md).
 
 
 ---

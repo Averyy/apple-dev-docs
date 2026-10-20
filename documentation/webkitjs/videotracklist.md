@@ -1,7 +1,8 @@
 # VideoTrackList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface VideoTrackList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](videotracklist/1633213-length.md)
-- [onaddtrack](videotracklist/1634021-onaddtrack.md)
-- [onchange](videotracklist/1630983-onchange.md)
-- [onremovetrack](videotracklist/1633179-onremovetrack.md)
-- [selectedIndex](videotracklist/1633261-selectedindex.md)
+- [length](./videotracklist/api-1633213-length.md)
+- [onaddtrack](./videotracklist/api-1634021-onaddtrack.md)
+- [onchange](./videotracklist/api-1630983-onchange.md)
+- [onremovetrack](./videotracklist/api-1633179-onremovetrack.md)
+- [selectedIndex](./videotracklist/api-1633261-selectedindex.md)
 ### Instance Methods
-- [getTrackById](videotracklist/1633879-gettrackbyid.md)
-- [item](videotracklist/1634489-item.md)
+- [getTrackById](./videotracklist/api-1633879-gettrackbyid.md)
+- [item](./videotracklist/api-1634489-item.md)
 
 ## Relationships
 

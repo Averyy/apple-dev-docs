@@ -1,7 +1,8 @@
 # checkPromisedItemIsReachable()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the promised item URL’s resource exists and is reachable.
 
@@ -26,7 +27,8 @@ This method synchronously checks if the resource’s backing store is reachable.
 
 ## See Also
 
-- [func promisedItemResourceValues(forKeys: Set<URLResourceKey>) throws -> URLResourceValues](url/promiseditemresourcevalues(forkeys:).md)
+### Working with promised items
+- [func promisedItemResourceValues(forKeys: Set<URLResourceKey>) throws -> URLResourceValues](./promiseditemresourcevalues%28forkeys%29.md)
   Gets resource values from URLs of ‘promised’ items.
 
 

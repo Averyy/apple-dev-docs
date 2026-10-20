@@ -1,7 +1,8 @@
 # imageSequence
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the particle image is a sprite sheet (used for animation).
 

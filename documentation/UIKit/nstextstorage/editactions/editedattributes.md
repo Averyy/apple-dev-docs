@@ -1,7 +1,8 @@
 # editedAttributes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Attributes were added, removed, or changed.
 
@@ -18,9 +19,14 @@ Attributes were added, removed, or changed.
 static var editedAttributes: NSTextStorage.EditActions { get }
 ```
 
+```c
+NSTextStorageEditedAttributes
+```
+
 ## See Also
 
-- [static var editedCharacters: NSTextStorage.EditActions](nstextstorage/editactions/editedcharacters.md)
+### Constants
+- [static var editedCharacters: NSTextStorage.EditActions](./editedcharacters.md)
   Characters were added, removed, or replaced.
 
 

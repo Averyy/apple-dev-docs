@@ -1,12 +1,15 @@
 # MTLDeviceLocation.external
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A GPU location that indicates a person connected the GPU to the system with an external interface, such as Thunderbolt.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
+
+> **Deprecated**: Not applicable on Apple Silicon
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A GPU location that indicates a person connected the GPU to the system with an e
 case external
 ```
 
+```c
+MTLDeviceLocationExternal
+```
+
 ## See Also
 
-- [MTLDeviceLocation.builtIn](mtldevicelocation/builtin.md)
+### Determining the GPU’s location
+- [MTLDeviceLocation.builtIn](./builtin.md)
   A location that indicates the GPU is permanently connected to the system internally.
-- [MTLDeviceLocation.slot](mtldevicelocation/slot.md)
+- [MTLDeviceLocation.slot](./slot.md)
   A GPU location that indicates a person connected the GPU to a system’s internal slot.
-- [MTLDeviceLocation.unspecified](mtldevicelocation/unspecified.md)
+- [MTLDeviceLocation.unspecified](./unspecified.md)
   A value that indicates the system can’t determine how the GPU connects to it.
 
 

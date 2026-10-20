@@ -1,7 +1,8 @@
 # SubscriptionGroupVersionsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response with the related resource identifiers for the versions of a subscription group.
 
@@ -10,14 +11,14 @@ A response with the related resource identifiers for the versions of a subscript
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupVersionsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object SubscriptionGroupVersionsLinkagesResponse.Data](subscriptiongroupversionslinkagesresponse/data-data.dictionary.md)
+- [object SubscriptionGroupVersionsLinkagesResponse.Data](./subscriptiongroupversionslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
 ## Properties
@@ -28,15 +29,16 @@ object SubscriptionGroupVersionsLinkagesResponse
 
 ## See Also
 
-- [object SubscriptionGroupVersion](subscriptiongroupversion.md)
+### Objects
+- [object SubscriptionGroupVersion](./subscriptiongroupversion.md)
   A draft version of a subscription group that captures its localized metadata for App Review submission.
-- [object SubscriptionGroupVersionCreateRequest](subscriptiongroupversioncreaterequest.md)
+- [object SubscriptionGroupVersionCreateRequest](./subscriptiongroupversioncreaterequest.md)
   The request body you use to create a draft version of a subscription group.
-- [object SubscriptionGroupVersionLocalizationsLinkagesResponse](subscriptiongroupversionlocalizationslinkagesresponse.md)
+- [object SubscriptionGroupVersionLocalizationsLinkagesResponse](./subscriptiongroupversionlocalizationslinkagesresponse.md)
   A response with the related resource identifiers for a subscription group version’s localizations.
-- [object SubscriptionGroupVersionResponse](subscriptiongroupversionresponse.md)
+- [object SubscriptionGroupVersionResponse](./subscriptiongroupversionresponse.md)
   The response body for endpoints that create or read a subscription group version.
-- [object SubscriptionGroupVersionsResponse](subscriptiongroupversionsresponse.md)
+- [object SubscriptionGroupVersionsResponse](./subscriptiongroupversionsresponse.md)
   The response body for endpoints that list subscription group versions.
 
 

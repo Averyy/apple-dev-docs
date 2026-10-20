@@ -1,7 +1,8 @@
 # SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships.SandboxTesters](sandboxtestersclearpurchasehistoryrequestv2createrequest/data-data.dictionary/relationships-data.dictionary/sandboxtesters-data.dictionary.md)
+- [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships.SandboxTesters](./relationships-data.dictionary/sandboxtesters-data.dictionary.md)
 
 ## Properties
 

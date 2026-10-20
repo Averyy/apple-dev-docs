@@ -1,7 +1,8 @@
 # GameCenterAchievementVersionV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2.Relationships
 ```
 
@@ -22,9 +23,9 @@ object GameCenterAchievementVersionV2.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementVersionV2.Relationships.Achievement](gamecenterachievementversionv2/relationships-data.dictionary/achievement-data.dictionary.md)
+- [object GameCenterAchievementVersionV2.Relationships.Achievement](./relationships-data.dictionary/achievement-data.dictionary.md)
   The data that describes the achievement of the Game Center achievement version v2.
-- [object GameCenterAchievementVersionV2.Relationships.Localizations](gamecenterachievementversionv2/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object GameCenterAchievementVersionV2.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
   The data and links that describe the localizations of the Game Center achievement version v2.
 
 ## Properties
@@ -34,7 +35,8 @@ object GameCenterAchievementVersionV2.Relationships
 
 ## See Also
 
-- [object GameCenterAchievementVersionV2.Attributes](gamecenterachievementversionv2/attributes-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementVersionV2.Attributes](./attributes-data.dictionary.md)
 
 
 ---

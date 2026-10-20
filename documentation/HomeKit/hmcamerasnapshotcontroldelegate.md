@@ -1,7 +1,8 @@
 # HMCameraSnapshotControlDelegate
 
 **Framework**: HomeKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods used to observe the camera’s snapshot activity.
 
@@ -19,22 +20,27 @@ A set of methods used to observe the camera’s snapshot activity.
 protocol HMCameraSnapshotControlDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol HMCameraSnapshotControlDelegate <NSObject>
+```
+
 ## Topics
 
 ### Observing snapshot activity
-- [func cameraSnapshotControl(HMCameraSnapshotControl, didTake: HMCameraSnapshot?, error: (any Error)?)](hmcamerasnapshotcontroldelegate/camerasnapshotcontrol(_:didtake:error:).md)
+- [func cameraSnapshotControl(HMCameraSnapshotControl, didTake: HMCameraSnapshot?, error: (any Error)?)](./hmcamerasnapshotcontroldelegate/camerasnapshotcontrol%28_,didtake,error%29.md)
   Tells the delegate that the camera has taken a new snapshot.
-- [func cameraSnapshotControlDidUpdateMostRecentSnapshot(HMCameraSnapshotControl)](hmcamerasnapshotcontroldelegate/camerasnapshotcontroldidupdatemostrecentsnapshot(_:).md)
+- [func cameraSnapshotControlDidUpdateMostRecentSnapshot(HMCameraSnapshotControl)](./hmcamerasnapshotcontroldelegate/camerasnapshotcontroldidupdatemostrecentsnapshot%28_%29.md)
   Tells the delegate that the most recent snapshot has been updated.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any HMCameraSnapshotControlDelegate)?](hmcamerasnapshotcontrol/delegate.md)
+### Observing snapshot activity
+- [var delegate: (any HMCameraSnapshotControlDelegate)?](./hmcamerasnapshotcontrol/delegate.md)
   Delegate that receives updates as the camera takes snapshots.
 
 

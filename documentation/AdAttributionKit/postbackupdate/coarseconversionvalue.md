@@ -1,7 +1,8 @@
 # coarseConversionValue
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enumeration that represents the coarse conversion value.
 

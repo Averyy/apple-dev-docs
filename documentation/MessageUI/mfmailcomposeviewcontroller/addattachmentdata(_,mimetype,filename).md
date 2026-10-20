@@ -1,7 +1,8 @@
 # addAttachmentData(_:mimeType:fileName:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified data as an attachment to the message.
 
@@ -17,6 +18,10 @@ Adds the specified data as an attachment to the message.
 func addAttachmentData(_ attachment: Data, mimeType: String, fileName filename: String)
 ```
 
+```objc
+- (void) addAttachmentData:(NSData *) attachment mimeType:(NSString *) mimeType fileName:(NSString *) filename;
+```
+
 #### Discussion
 
 This method attaches the specified data after the message body, but before the user’s signature. You may attach multiple files (using different file names), but must do so prior to displaying the mail composition interface. Don’t call this method after presenting the interface to the user.
@@ -24,22 +29,23 @@ This method attaches the specified data after the message body, but before the u
 ## Parameters
 
 - `attachment`: The data to attach. Typically, this is the contents of a file that you want to include. This parameter must not be `nil`.
-- `mimeType`: The MIME type of the specified data. (For example, the MIME type for a JPEG image is `image/jpeg`.) For a list of valid MIME types, see [`http://www.iana.org/assignments/media-types/`](https://developer.apple.comhttp://www.iana.org/assignments/media-types/). This parameter must not be `nil`.
+- `mimeType`: The MIME type of the specified data. (For example, the MIME type for a JPEG image is `image/jpeg`.) For a list of valid MIME types, see [http://www.iana.org/assignments/media-types/](http://www.iana.org/assignments/media-types/). This parameter must not be `nil`.
 - `filename`: The preferred filename to associate with the data. This is the default name applied to the file when it is transferred to its destination. Any path separator (`/`) characters in the filename are converted to underscore (`_`) characters prior to transmission. This parameter must not be `nil`.
 
 ## See Also
 
-- [func setSubject(String)](mfmailcomposeviewcontroller/setsubject(_:).md)
+### Setting mail fields programmatically
+- [func setSubject(String)](./setsubject%28_%29.md)
   Sets the initial text for the subject line of the email.
-- [func setToRecipients([String]?)](mfmailcomposeviewcontroller/settorecipients(_:).md)
+- [func setToRecipients([String]?)](./settorecipients%28_%29.md)
   Sets the initial recipients to include in the email’s To field.
-- [func setCcRecipients([String]?)](mfmailcomposeviewcontroller/setccrecipients(_:).md)
+- [func setCcRecipients([String]?)](./setccrecipients%28_%29.md)
   Sets the initial recipients to include in the email’s Cc field.
-- [func setBccRecipients([String]?)](mfmailcomposeviewcontroller/setbccrecipients(_:).md)
+- [func setBccRecipients([String]?)](./setbccrecipients%28_%29.md)
   Sets the initial recipients to include in the email’s Bcc field.
-- [func setMessageBody(String, isHTML: Bool)](mfmailcomposeviewcontroller/setmessagebody(_:ishtml:).md)
+- [func setMessageBody(String, isHTML: Bool)](./setmessagebody%28_,ishtml%29.md)
   Sets the initial body text to include in the email.
-- [func setPreferredSendingEmailAddress(String)](mfmailcomposeviewcontroller/setpreferredsendingemailaddress(_:).md)
+- [func setPreferredSendingEmailAddress(String)](./setpreferredsendingemailaddress%28_%29.md)
   Sets the preferred email address to use in the From field, if such an address is available.
 
 

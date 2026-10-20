@@ -1,7 +1,8 @@
 # remove(attachment:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified attachment from the journal on all sessions.
 
@@ -25,7 +26,7 @@ Call this method to remove an attachment that is no longer relevant. For example
 
 ## Parameters
 
-- `attachment`: The attachment object associated with the item. You receive this object when you call the [`add(_:)`](groupsessionjournal/add(_:).md) or [`add(_:metadata:)`](groupsessionjournal/add(_:metadata:).md) method.
+- `attachment`: The attachment object associated with the item. You receive this object when you call the [`add(_:)`](./add%28_%29.md) or [`add(_:metadata:)`](./add%28_,metadata%29.md) method.
 
 
 ---

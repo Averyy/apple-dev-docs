@@ -1,7 +1,8 @@
 # duplicate(as:options:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Duplicates this file descriptor and returns the newly created copy.
 
@@ -37,7 +38,7 @@ The corresponding C function is `dup3`.
 
 ## Parameters
 
-- `retryOnInterrupt`: Whether to retry the duplicate operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
+- `retryOnInterrupt`: Whether to retry the duplicate operation if it throws [`interrupted`](../errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
 
 
 ---

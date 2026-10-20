@@ -1,7 +1,8 @@
 # dequeueConfiguredReusableCell(using:for:item:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dequeues a configured reusable cell object.
 
@@ -10,7 +11,7 @@ Dequeues a configured reusable cell object.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,19 +26,20 @@ A configured reusable cell object.
 
 ## Parameters
 
-- `registration`: The cell registration for configuring the cell object. See [`UICollectionView.CellRegistration`](uicollectionview/cellregistration.md).
+- `registration`: The cell registration for configuring the cell object. See [`UICollectionView.CellRegistration`](./cellregistration.md).
 - `indexPath`: The index path that specifies the location of the cell in the collection view.
 - `item`: The item that provides data for the cell.
 
 ## See Also
 
-- [UICollectionView.CellRegistration](uicollectionview/cellregistration.md)
+### Creating cells
+- [UICollectionView.CellRegistration](./cellregistration.md)
   A registration for the collection view’s cells.
-- [func register(AnyClass?, forCellWithReuseIdentifier: String)](uicollectionview/register(_:forcellwithreuseidentifier:)-3vaho.md)
+- [func register(AnyClass?, forCellWithReuseIdentifier: String)](./register%28_,forcellwithreuseidentifier%29-3vaho.md)
   Registers a class for use in creating new collection view cells.
-- [func register(UINib?, forCellWithReuseIdentifier: String)](uicollectionview/register(_:forcellwithreuseidentifier:)-6z6t4.md)
+- [func register(UINib?, forCellWithReuseIdentifier: String)](./register%28_,forcellwithreuseidentifier%29-6z6t4.md)
   Registers a nib file for use in creating new collection view cells.
-- [func dequeueReusableCell(withReuseIdentifier: String, for: IndexPath) -> UICollectionViewCell](uicollectionview/dequeuereusablecell(withreuseidentifier:for:).md)
+- [func dequeueReusableCell(withReuseIdentifier: String, for: IndexPath) -> UICollectionViewCell](./dequeuereusablecell%28withreuseidentifier,for%29.md)
   Dequeues a reusable cell object located by its identifier.
 
 

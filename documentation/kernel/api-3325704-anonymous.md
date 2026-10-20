@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,18 +18,18 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMemoryMapCacheModeCopyback](3325704-anonymous/kiomemorymapcachemodecopyback.md)
-- [kIOMemoryMapCacheModeDefault](3325704-anonymous/kiomemorymapcachemodedefault.md)
-- [kIOMemoryMapCacheModeInhibit](3325704-anonymous/kiomemorymapcachemodeinhibit.md)
-- [kIOMemoryMapCacheModeRealTime](3325704-anonymous/kiomemorymapcachemoderealtime.md)
-- [kIOMemoryMapCacheModeWriteThrough](3325704-anonymous/kiomemorymapcachemodewritethrough.md)
-- [kIOMemoryMapFixedAddress](3325704-anonymous/kiomemorymapfixedaddress.md)
-- [kIOMemoryMapGuardedDefault](3325704-anonymous/kiomemorymapguardeddefault.md)
-- [kIOMemoryMapGuardedLarge](3325704-anonymous/kiomemorymapguardedlarge.md)
-- [kIOMemoryMapGuardedMask](3325704-anonymous/kiomemorymapguardedmask.md)
-- [kIOMemoryMapGuardedNone](3325704-anonymous/kiomemorymapguardednone.md)
-- [kIOMemoryMapGuardedSmall](3325704-anonymous/kiomemorymapguardedsmall.md)
-- [kIOMemoryMapReadOnly](3325704-anonymous/kiomemorymapreadonly.md)
+- [kIOMemoryMapCacheModeCopyback](./api-3325704-anonymous/kiomemorymapcachemodecopyback.md)
+- [kIOMemoryMapCacheModeDefault](./api-3325704-anonymous/kiomemorymapcachemodedefault.md)
+- [kIOMemoryMapCacheModeInhibit](./api-3325704-anonymous/kiomemorymapcachemodeinhibit.md)
+- [kIOMemoryMapCacheModeRealTime](./api-3325704-anonymous/kiomemorymapcachemoderealtime.md)
+- [kIOMemoryMapCacheModeWriteThrough](./api-3325704-anonymous/kiomemorymapcachemodewritethrough.md)
+- [kIOMemoryMapFixedAddress](./api-3325704-anonymous/kiomemorymapfixedaddress.md)
+- [kIOMemoryMapGuardedDefault](./api-3325704-anonymous/kiomemorymapguardeddefault.md)
+- [kIOMemoryMapGuardedLarge](./api-3325704-anonymous/kiomemorymapguardedlarge.md)
+- [kIOMemoryMapGuardedMask](./api-3325704-anonymous/kiomemorymapguardedmask.md)
+- [kIOMemoryMapGuardedNone](./api-3325704-anonymous/kiomemorymapguardednone.md)
+- [kIOMemoryMapGuardedSmall](./api-3325704-anonymous/kiomemorymapguardedsmall.md)
+- [kIOMemoryMapReadOnly](./api-3325704-anonymous/kiomemorymapreadonly.md)
 
 
 ---

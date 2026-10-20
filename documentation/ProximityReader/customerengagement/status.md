@@ -1,7 +1,8 @@
 # CustomerEngagement.Status
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A predefined set of customer engagement screen states.
 
@@ -19,23 +20,23 @@ enum Status
 ## Topics
 
 ### Getting the status
-- [CustomerEngagement.Status.paymentCompleted](customerengagement/status/paymentcompleted.md)
+- [CustomerEngagement.Status.paymentCompleted](./status/paymentcompleted.md)
   A screen indicating a payment is complete.
-- [CustomerEngagement.Status.paymentFailed](customerengagement/status/paymentfailed.md)
+- [CustomerEngagement.Status.paymentFailed](./status/paymentfailed.md)
   A screen indicating a payment failure.
-- [CustomerEngagement.Status.ready](customerengagement/status/ready.md)
+- [CustomerEngagement.Status.ready](./status/ready.md)
   A screen indicating the session is ready for customer interaction.
 ### Enumeration Cases
-- [CustomerEngagement.Status.checkoutCompleted](customerengagement/status/checkoutcompleted.md)
+- [CustomerEngagement.Status.checkoutCompleted](./status/checkoutcompleted.md)
   A screen indicating the checkout is complete.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Haptic
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The haptic effects channel.
 
@@ -10,21 +11,22 @@ The haptic effects channel.
 
 ## Declaration
 
-```swift
+```c
 Haptic
 ```
 
 ## See Also
 
-- [ClickTrack](audiodriverkit/iouseraudiochannellabel/clicktrack.md)
+### Alternate Content Channels
+- [ClickTrack](./clicktrack.md)
   The click track channel.
-- [DialogCentricMix](audiodriverkit/iouseraudiochannellabel/dialogcentricmix.md)
+- [DialogCentricMix](./dialogcentricmix.md)
   The dialog-centric mix channel.
-- [ForeignLanguage](audiodriverkit/iouseraudiochannellabel/foreignlanguage.md)
+- [ForeignLanguage](./foreignlanguage.md)
   The foreign language channel.
-- [HearingImpaired](audiodriverkit/iouseraudiochannellabel/hearingimpaired.md)
+- [HearingImpaired](./hearingimpaired.md)
   The audio for the hearing-impaired channel.
-- [Narration](audiodriverkit/iouseraudiochannellabel/narration.md)
+- [Narration](./narration.md)
   The narration channel.
 
 

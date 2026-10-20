@@ -1,7 +1,8 @@
 # AccessibilityDeclarationCreateRequest.Data.Relationships.App.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the app resource that you relate with the accessibility declaration resource you create.
 
@@ -10,14 +11,14 @@ The type and ID of the app resource that you relate with the accessibility decla
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationCreateRequest.Data.Relationships.App.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `apps`
 
 
 ---

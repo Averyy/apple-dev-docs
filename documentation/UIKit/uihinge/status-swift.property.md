@@ -1,7 +1,8 @@
 # status
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of the hinge
 
@@ -18,11 +19,16 @@ The current status of the hinge
 var status: UIHinge.Status { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIHingeStatus status;
+```
+
 ## See Also
 
-- [var angle: CGFloat](uihinge/angle.md)
+### Getting the hinge state
+- [var angle: CGFloat](./angle.md)
   The current angle of the hinge, in radians.
-- [UIHinge.Status](uihinge/status-swift.enum.md)
+- [UIHinge.Status](./status-swift.enum.md)
   The status of an individual hinge
 
 

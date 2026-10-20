@@ -1,7 +1,8 @@
 # SecTrustCopyPolicies(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the policies used by a given trust management object.
 
@@ -20,22 +21,27 @@ Retrieves the policies used by a given trust management object.
 func SecTrustCopyPolicies(_ trust: SecTrust, _ policies: UnsafeMutablePointer<CFArray?>) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustCopyPolicies(SecTrustRef trust, CFArrayRef*policies);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetPolicies(_:_:)`](sectrustsetpolicies(_:_:).md) function for the same trust management object on another thread.
+It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetPolicies(_:_:)`](./sectrustsetpolicies%28_,_%29.md) function for the same trust management object on another thread.
 
 ## Parameters
 
 - `trust`: The trust management object whose policies you wish to retrieve.
-- `policies`: On return, an array of [`SecPolicy`](secpolicy.md) objects for the policies used by this trust management object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `policies`: On return, an array of [`SecPolicy`](./secpolicy.md) objects for the policies used by this trust management object. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
 ## See Also
 
-- [func SecTrustSetPolicies(SecTrust, CFTypeRef) -> OSStatus](sectrustsetpolicies(_:_:).md)
+### Related Documentation
+- [func SecTrustSetPolicies(SecTrust, CFTypeRef) -> OSStatus](./sectrustsetpolicies%28_,_%29.md)
   Sets the policies to use in an evaluation.
 
 

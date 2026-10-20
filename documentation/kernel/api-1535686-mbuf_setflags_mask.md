@@ -1,18 +1,19 @@
 # mbuf_setflags_mask
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_setflags_mask(mbuf_t mbuf, mbuf_flags_t flags, mbuf_flags_t mask);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

@@ -1,7 +1,8 @@
 # capturesShadowsOnly
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the stream only captures shadows.
 
@@ -15,23 +16,28 @@ A Boolean value that indicates if the stream only captures shadows.
 var capturesShadowsOnly: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL capturesShadowsOnly;
+```
+
 #### Discussion
 
 The default value is `false`.
 
 ## See Also
 
-- [var showsCursor: Bool](scstreamconfiguration/showscursor.md)
+### Configuring captured elements
+- [var showsCursor: Bool](./showscursor.md)
   A Boolean value that determines whether the cursor is visible in the stream.
-- [var shouldBeOpaque: Bool](scstreamconfiguration/shouldbeopaque.md)
+- [var shouldBeOpaque: Bool](./shouldbeopaque.md)
   A Boolean value that indicates if semitransparent content presents as opaque.
-- [var ignoreShadowsDisplay: Bool](scstreamconfiguration/ignoreshadowsdisplay.md)
+- [var ignoreShadowsDisplay: Bool](./ignoreshadowsdisplay.md)
   A Boolean value that indicates if the stream ignores the capturing of window shadows when streaming in display style.
-- [var ignoreShadowsSingleWindow: Bool](scstreamconfiguration/ignoreshadowssinglewindow.md)
+- [var ignoreShadowsSingleWindow: Bool](./ignoreshadowssinglewindow.md)
   A Boolean value that indicates if the stream ignores the capturing of window shadows when streaming in window style.
-- [var ignoreGlobalClipDisplay: Bool](scstreamconfiguration/ignoreglobalclipdisplay.md)
+- [var ignoreGlobalClipDisplay: Bool](./ignoreglobalclipdisplay.md)
   A Boolean value that indicates if the stream ignores content clipped past the edge of a display, when streaming in display style.
-- [var ignoreGlobalClipSingleWindow: Bool](scstreamconfiguration/ignoreglobalclipsinglewindow.md)
+- [var ignoreGlobalClipSingleWindow: Bool](./ignoreglobalclipsinglewindow.md)
   A Boolean value that indicates if the stream ignores content clipped past the edge of a display, when streaming in window style.
 
 

@@ -1,7 +1,8 @@
 # registrationsChangedNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the component manager generates when it updates its list of components.
 
@@ -19,9 +20,14 @@ A notification the component manager generates when it updates its list of compo
 class let registrationsChangedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioUnitComponentManagerRegistrationsChangedNotification;
+```
+
 ## See Also
 
-- [AVAudioUnitComponentManager.RegistrationsChangedMessage](avaudiounitcomponentmanager/registrationschangedmessage.md)
+### Observing registration changes
+- [AVAudioUnitComponentManager.RegistrationsChangedMessage](./registrationschangedmessage.md)
   Type-safe notification message for audio unit component registration changes.
 
 

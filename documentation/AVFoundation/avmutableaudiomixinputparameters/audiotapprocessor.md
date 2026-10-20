@@ -1,7 +1,8 @@
 # audioTapProcessor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio processing tap associated with the track.
 
@@ -17,6 +18,10 @@ The audio processing tap associated with the track.
 
 ```swift
 var audioTapProcessor: MTAudioProcessingTap? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) MTAudioProcessingTapRef audioTapProcessor;
 ```
 
 #### Discussion

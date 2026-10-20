@@ -1,7 +1,8 @@
 # SpeechBusySystemWide()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines if any speech is currently being synthesizedin your application or elsewhere on the computer.
 
@@ -14,7 +15,11 @@ Determines if any speech is currently being synthesizedin your application or el
 func SpeechBusySystemWide() -> Int16
 ```
 
-#### Return_value
+```c
+SInt16 SpeechBusySystemWide(void);
+```
+
+#### Return Value
 
 The total number ofspeech channels currently synthesizing speech on the computer, whetherthey were initiated by your application or process’s code or bysome other process executing concurrently. Paused speech channelsare counted among those channels that are synthesizing speech. 
 
@@ -24,15 +29,16 @@ This function is useful when you want to ensure that no speechis currently being
 
 ## See Also
 
-- [func CopySpeechProperty(SpeechChannel, CFString, UnsafeMutablePointer<CFTypeRef?>) -> OSErr](1459075-copyspeechproperty.md)
+### Obtaining Information About Speech and Speech Channels
+- [func CopySpeechProperty(SpeechChannel, CFString, UnsafeMutablePointer<CFTypeRef?>) -> OSErr](./api-1459075-copyspeechproperty.md)
   Gets the value associated with the specified property of a speech channel.
-- [func GetSpeechPitch(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](1464774-getspeechpitch.md)
+- [func GetSpeechPitch(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](./api-1464774-getspeechpitch.md)
   Gets a speech channel’s current speech pitch.
-- [func GetSpeechRate(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](1460797-getspeechrate.md)
+- [func GetSpeechRate(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](./api-1460797-getspeechrate.md)
   Gets a speech channel’s current speech rate.
-- [func SpeechBusy() -> Int16](1464581-speechbusy.md)
+- [func SpeechBusy() -> Int16](./api-1464581-speechbusy.md)
   Determines whether any channels of speech are currentlysynthesizing speech.
-- [func SpeechManagerVersion() -> NumVersion](1462334-speechmanagerversion.md)
+- [func SpeechManagerVersion() -> NumVersion](./api-1462334-speechmanagerversion.md)
   Determines the current version of the Speech SynthesisManager installed in the system.
 
 

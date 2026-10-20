@@ -1,7 +1,8 @@
 # Collection.IndexDistance
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -11,6 +12,8 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: all index distances are now of type Int
 
 ## Declaration
 

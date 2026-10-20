@@ -1,7 +1,8 @@
 # errSecMultipleValuesUnsupported
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Multiple values are not supported.
 
@@ -18,6 +19,10 @@ Multiple values are not supported.
 
 ```swift
 var errSecMultipleValuesUnsupported: OSStatus { get }
+```
+
+```c
+errSecMultipleValuesUnsupported
 ```
 
 

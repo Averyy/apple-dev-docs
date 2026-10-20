@@ -1,7 +1,8 @@
 # time
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hour and minute at which the alarm alerts, relative to the device’s current timezone.
 
@@ -18,9 +19,10 @@ var time: Alarm.Schedule.Relative.Time
 
 ## See Also
 
-- [var repeats: Alarm.Schedule.Relative.Recurrence](alarm/schedule-swift.enum/relative/repeats.md)
+### Describing an alarm
+- [var repeats: Alarm.Schedule.Relative.Recurrence](./repeats.md)
   The cadence at which the alarm repeats, if any.
-- [Alarm.Schedule.Relative.Recurrence](alarm/schedule-swift.enum/relative/recurrence.md)
+- [Alarm.Schedule.Relative.Recurrence](./recurrence.md)
   Describes the cadence at which an alarm will repeat, if any.
 
 

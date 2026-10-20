@@ -1,7 +1,8 @@
 # AntialiasingMode.none
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not apply any technique to smooth jagged edges.
 
@@ -25,7 +26,8 @@ This option has no performance cost.
 
 ## See Also
 
-- [AntialiasingMode.multisample4X](antialiasingmode/multisample4x.md)
+### Setting the antialiasing mode
+- [AntialiasingMode.multisample4X](./multisample4x.md)
   Multisampling renders each pixel multiple times and combines the results, creating a higher quality image at a performance cost proportional to the number of samples used.
 
 

@@ -1,7 +1,8 @@
 # annotation
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ground truth annotation.
 
@@ -22,7 +23,8 @@ var annotation: Annotation
 
 ## See Also
 
-- [var prediction: Prediction](annotatedprediction/prediction.md)
+### Getting the properties
+- [var prediction: Prediction](./prediction.md)
   The predicted value.
 
 

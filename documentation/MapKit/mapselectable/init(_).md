@@ -2,6 +2,7 @@
 
 **Framework**: MapKit  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # playgroundLiveViewRepresentation
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A representation of the live view that this object is a proxy for.
 
@@ -18,7 +19,7 @@ var playgroundLiveViewRepresentation: PlaygroundLiveViewRepresentation { get }
 ## Relationships
 
 ### From Protocol
-- [PlaygroundLiveViewable](playgroundliveviewable.md)
+- [PlaygroundLiveViewable](../playgroundliveviewable.md)
 
 
 ---

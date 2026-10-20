@@ -1,7 +1,8 @@
 # init(keySystem:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content key session to manage a collection of content decryption keys.
 
@@ -20,13 +21,17 @@ Creates a content key session to manage a collection of content decryption keys.
 convenience init(keySystem: AVContentKeySystem)
 ```
 
+```objc
++ (instancetype) contentKeySessionWithKeySystem:(AVContentKeySystem) keySystem;
+```
+
 #### Return Value
 
-Returns a new [`AVContentKeySession`](avcontentkeysession.md) instance.
+Returns a new [`AVContentKeySession`](../avcontentkeysession.md) instance.
 
 #### Discussion
 
-The `AVContentKeySession` instance returned is capable of managing a collection of content decryption keys that correspond to the input key system. An [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) is raised when the value of `keySystem` is unsupported.
+The `AVContentKeySession` instance returned is capable of managing a collection of content decryption keys that correspond to the input key system. An [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) is raised when the value of `keySystem` is unsupported.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ The `AVContentKeySession` instance returned is capable of managing a collection 
 
 ## See Also
 
-- [convenience init(keySystem: AVContentKeySystem, storageDirectoryAt: URL)](avcontentkeysession/init(keysystem:storagedirectoryat:).md)
+### Creating a session
+- [convenience init(keySystem: AVContentKeySystem, storageDirectoryAt: URL)](./init%28keysystem,storagedirectoryat%29.md)
   Creates a content key session to manage a collection of content decryption keys; points to a directory that stores abnormal session termination reports.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the sum of this value and the given value, along with a Boolean value indicating whether overflow occurred in the operation.

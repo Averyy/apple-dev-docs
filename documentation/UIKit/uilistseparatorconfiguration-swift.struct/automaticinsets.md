@@ -1,7 +1,8 @@
 # automaticInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that specifies a placeholder size for separator insets.
 
@@ -9,7 +10,7 @@ A constant that specifies a placeholder size for separator insets.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ Use the values from the edges in this constant to indicate that an edge’s inse
 
 ## See Also
 
-- [var topSeparatorInsets: NSDirectionalEdgeInsets](uilistseparatorconfiguration-swift.struct/topseparatorinsets.md)
+### Configuring separator insets
+- [var topSeparatorInsets: NSDirectionalEdgeInsets](./topseparatorinsets.md)
   Insets to apply to the top separator of the item the configuration applies to.
-- [var bottomSeparatorInsets: NSDirectionalEdgeInsets](uilistseparatorconfiguration-swift.struct/bottomseparatorinsets.md)
+- [var bottomSeparatorInsets: NSDirectionalEdgeInsets](./bottomseparatorinsets.md)
   Insets to apply to the bottom separator of the item the configuration applies to.
 
 

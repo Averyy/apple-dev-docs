@@ -1,17 +1,22 @@
 # webView(_:unableToImplementPolicyWithError:frame:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles or drops events that were rejected by a policy maker.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ webView: WebView!, unableToImplementPolicyWithError error: (any Error)!, frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) webView unableToImplementPolicyWithError:(NSError *) error frame:(WebFrame *) frame;
 ```
 
 #### Discussion

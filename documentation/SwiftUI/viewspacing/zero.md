@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A view spacing instance that contains zero on all edges.
 
@@ -26,7 +27,8 @@ You typically only use this value for an empty view.
 
 ## See Also
 
-- [init()](viewspacing/init.md)
+### Creating spacing instances
+- [init()](./init%28%29.md)
   Initializes an instance with default spacing values.
 
 

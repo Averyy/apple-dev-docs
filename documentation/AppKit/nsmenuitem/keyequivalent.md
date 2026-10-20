@@ -1,12 +1,13 @@
 # keyEquivalent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item’s unmodified key equivalent.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,21 @@ The menu item’s unmodified key equivalent.
 var keyEquivalent: String { get set }
 ```
 
+```objc
+@property (copy) NSString * keyEquivalent;
+```
+
 #### Discussion
 
-If you want to specify the Backspace key as the key equivalent for a menu item, use a single character string with [`NSBackspaceCharacter`](nsbackspacecharacter.md) (defined in `NSText.h` as `0x08`) and for the Forward Delete key, use [`NSDeleteCharacter`](nsdeletecharacter.md) (defined in `NSText.h` as `0x7F`). Note that these are not the same characters you get from an [`NSEvent`](nsevent.md) key-down event when pressing those keys.
+If you want to specify the Backspace key as the key equivalent for a menu item, use a single character string with [`NSBackspaceCharacter`](../nsbackspacecharacter.md) (defined in `NSText.h` as `0x08`) and for the Forward Delete key, use [`NSDeleteCharacter`](../nsdeletecharacter.md) (defined in `NSText.h` as `0x7F`). Note that these are not the same characters you get from an [`NSEvent`](../nsevent.md) key-down event when pressing those keys.
 
 ## See Also
 
-- [var userKeyEquivalent: String](nsmenuitem/userkeyequivalent.md)
+### Related Documentation
+- [var userKeyEquivalent: String](./userkeyequivalent.md)
   The user-assigned key equivalent for the menu item.
-- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](nsmenuitem/keyequivalentmodifiermask.md)
+### Managing key equivalents
+- [var keyEquivalentModifierMask: NSEvent.ModifierFlags](./keyequivalentmodifiermask.md)
   The menu item’s keyboard equivalent modifiers.
 
 

@@ -1,7 +1,8 @@
 # nextRefreshDate
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The next date for refreshing the personal recommendation.
 

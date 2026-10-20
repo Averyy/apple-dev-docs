@@ -1,9 +1,10 @@
 # flags
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-Launch flags. For possible values, see [`LSLaunchFlags`](lslaunchflags.md).
+Launch flags. For possible values, see [`LSLaunchFlags`](../lslaunchflags.md).
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
@@ -12,6 +13,10 @@ Launch flags. For possible values, see [`LSLaunchFlags`](lslaunchflags.md).
 
 ```swift
 var flags: LSLaunchFlags
+```
+
+```c
+LSLaunchFlags flags;
 ```
 
 

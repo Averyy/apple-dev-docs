@@ -1,7 +1,8 @@
 # appendingFormat(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string created by appending a string constructed from a given format string and the following arguments.
 

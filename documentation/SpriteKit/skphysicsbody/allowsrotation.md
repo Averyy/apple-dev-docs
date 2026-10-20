@@ -1,18 +1,19 @@
 # allowsRotation
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the physics body is affected by angular forces and impulses applied to it.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the physics body is affected by angular f
 var allowsRotation: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsRotation;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). This property is ignored on edge-based bodies, which are unaffected by forces in the system.
+The default value is [`true`](../../Swift/true.md). This property is ignored on edge-based bodies, which are unaffected by forces in the system.
 
 ## See Also
 
-- [var affectedByGravity: Bool](skphysicsbody/affectedbygravity.md)
+### Defining How Forces Affect a Physics Body
+- [var affectedByGravity: Bool](./affectedbygravity.md)
   A Boolean value that indicates whether this physics body is affected by the physics world’s gravity.
-- [var isDynamic: Bool](skphysicsbody/isdynamic.md)
+- [var isDynamic: Bool](./isdynamic.md)
   A Boolean value that indicates whether the physics body is moved by the physics simulation.
 
 

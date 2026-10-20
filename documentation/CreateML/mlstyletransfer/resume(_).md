@@ -1,7 +1,8 @@
 # resume(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Begins or continues an asynchronous style transfer model-training session.
 
@@ -20,19 +21,20 @@ static func resume(_ session: MLTrainingSession<MLStyleTransfer>) throws -> MLJo
 
 #### Return Value
 
-An [`MLJob`](mljob.md) that represents the style transfer model-training session.
+An [`MLJob`](../mljob.md) that represents the style transfer model-training session.
 
 ## Parameters
 
-- `session`: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
+- `session`: An [`MLTrainingSession`](../mltrainingsession.md) instance that represents the training session.
 
 ## See Also
 
-- [static func train(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLStyleTransfer>](mlstyletransfer/train(trainingdata:parameters:sessionparameters:).md)
+### Training a style transfer model asynchronously
+- [static func train(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLStyleTransfer>](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous style transfer model-training session.
-- [static func makeTrainingSession(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLStyleTransfer>](mlstyletransfer/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLStyleTransfer>](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous training session for a style transfer model.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLStyleTransfer>](mlstyletransfer/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLStyleTransfer>](./restoretrainingsession%28sessionparameters%29.md)
   Creates an asynchronous training session for a style transfer model by restoring an existing training session’s state from its parameters.
 
 

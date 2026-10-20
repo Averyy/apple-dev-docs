@@ -1,7 +1,8 @@
 # MessageComposeResult
 
 **Framework**: Message UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants describe the result of the message-composition interface.
 
@@ -17,31 +18,36 @@ These constants describe the result of the message-composition interface.
 enum MessageComposeResult
 ```
 
+```c
+enum MessageComposeResult : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MessageComposeResult.cancelled](messagecomposeresult/cancelled.md)
+- [MessageComposeResult.cancelled](./messagecomposeresult/cancelled.md)
   The user canceled the composition.
-- [MessageComposeResult.sent](messagecomposeresult/sent.md)
+- [MessageComposeResult.sent](./messagecomposeresult/sent.md)
   The user successfully queued or sent the message.
-- [MessageComposeResult.failed](messagecomposeresult/failed.md)
+- [MessageComposeResult.failed](./messagecomposeresult/failed.md)
   The user’s attempt to save or send the message was unsuccessful.
 ### Initializers
-- [init?(rawValue: Int)](messagecomposeresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./messagecomposeresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func messageComposeViewController(MFMessageComposeViewController, didFinishWith: MessageComposeResult)](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md)
+### Responding to the Message Completion
+- [func messageComposeViewController(MFMessageComposeViewController, didFinishWith: MessageComposeResult)](./mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller%28_,didfinishwith%29.md)
   Tells the delegate that the user finished composing the message.
 
 

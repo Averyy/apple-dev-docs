@@ -1,7 +1,8 @@
 # spellCheckerDocumentTag
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
@@ -12,9 +13,14 @@
 var spellCheckerDocumentTag: Int { get set }
 ```
 
+```objc
+@property NSInteger spellCheckerDocumentTag;
+```
+
 ## See Also
 
-- [var client: any NSTextCheckingClient](nstextcheckingcontroller/client.md)
+### Instance Properties
+- [var client: any NSTextCheckingClient](./client.md)
 
 
 ---

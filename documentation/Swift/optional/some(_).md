@@ -1,7 +1,8 @@
 # Optional.some(_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The presence of a value, stored as `Wrapped`.
 
@@ -22,7 +23,8 @@ case some(Wrapped)
 
 ## See Also
 
-- [init(consuming Wrapped)](optional/init(_:).md)
+### Creating an Optional Value
+- [init(consuming Wrapped)](./init%28_%29.md)
   Creates an instance that stores the given value.
 
 

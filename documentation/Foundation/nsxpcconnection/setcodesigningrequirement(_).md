@@ -1,7 +1,8 @@
 # setCodeSigningRequirement(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the code signing requirement for this connection.
 
@@ -12,6 +13,10 @@ Sets the code signing requirement for this connection.
 
 ```swift
 func setCodeSigningRequirement(_ requirement: String)
+```
+
+```objc
+- (void) setCodeSigningRequirement:(NSString *) requirement;
 ```
 
 #### Discussion
@@ -55,11 +60,11 @@ c.remoteObjectInterface = getServerInterface();
 
 Calling this method with a malformed `requirement` results in a fatal error in Swift, or throws an exception in Objective-C. If new messages don’t match the requirement, the connection becomes invalidated.
 
-Call this method before calling [`resume()`](nsxpcconnection/resume().md), since it’s an XPC error to call this method more than once.
+Call this method before calling [`resume()`](./resume%28%29.md), since it’s an XPC error to call this method more than once.
 
 ## Parameters
 
-- `requirement`: A string that describes requirements expected of the connection peer. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/) for more information on the code signing format.
+- `requirement`: A string that describes requirements expected of the connection peer. See [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/) for more information on the code signing format.
 
 
 ---

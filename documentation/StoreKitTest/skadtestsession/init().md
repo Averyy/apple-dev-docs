@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: StoreKit Test  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an SKAdNetwork test session.
 
@@ -14,6 +15,10 @@ Initializes an SKAdNetwork test session.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Discussion

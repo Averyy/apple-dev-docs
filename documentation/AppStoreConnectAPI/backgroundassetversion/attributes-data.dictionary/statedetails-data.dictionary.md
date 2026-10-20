@@ -1,7 +1,8 @@
 # BackgroundAssetVersion.Attributes.StateDetails
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Details about errors, warnings, and informational messages related to the state.
 
@@ -10,7 +11,7 @@ Details about errors, warnings, and informational messages related to the state.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersion.Attributes.StateDetails
 ```
 

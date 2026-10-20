@@ -1,24 +1,29 @@
 # adjust(toNormalizedSliderPosition:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Manipulates the UI to change the value the slider displays to a new value, based on a normalized position.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func adjust(toNormalizedSliderPosition normalizedSliderPosition: CGFloat)
+```
+
+```objc
+- (void) adjustToNormalizedSliderPosition:(CGFloat) normalizedSliderPosition;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ A normalized slider value of `0` corresponds to the minimum value of the slider,
 
 ## See Also
 
-- [var normalizedSliderPosition: CGFloat](xcuielement/normalizedsliderposition.md)
+### Interacting with sliders
+- [var normalizedSliderPosition: CGFloat](./normalizedsliderposition.md)
   Returns the position of the slider’s indicator as a normalized value.
 
 

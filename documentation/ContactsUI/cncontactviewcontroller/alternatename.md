@@ -1,7 +1,8 @@
 # alternateName
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name to use if the contact has no display name.
 
@@ -17,13 +18,18 @@ The name to use if the contact has no display name.
 var alternateName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * alternateName;
+```
+
 ## See Also
 
-- [var contact: CNContact](cncontactviewcontroller/contact.md)
+### Displaying Contact Properties
+- [var contact: CNContact](./contact.md)
   The contact being displayed.
-- [var message: String?](cncontactviewcontroller/message.md)
+- [var message: String?](./message.md)
   The message displayed under the name of the contact.
-- [var displayedPropertyKeys: [Any]?](cncontactviewcontroller/displayedpropertykeys.md)
+- [var displayedPropertyKeys: [Any]?](./displayedpropertykeys.md)
   The contact property keys to display.
 
 

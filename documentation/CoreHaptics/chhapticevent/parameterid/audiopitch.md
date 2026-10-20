@@ -1,7 +1,8 @@
 # audioPitch
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pitch of an audio event.
 
@@ -19,17 +20,22 @@ The pitch of an audio event.
 static let audioPitch: CHHapticEvent.ParameterID
 ```
 
+```c
+extern CHHapticEventParameterID CHHapticEventParameterIDAudioPitch;
+```
+
 #### Discussion
 
 This parameter value ranges from -1.0 (lowest pitch) to 1.0 (highest pitch).
 
 ## See Also
 
-- [static let audioVolume: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiovolume.md)
+### Audio Event Parameter IDs
+- [static let audioVolume: CHHapticEvent.ParameterID](./audiovolume.md)
   The volume of an audio event.
-- [static let audioPan: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopan.md)
+- [static let audioPan: CHHapticEvent.ParameterID](./audiopan.md)
   The stereo panning of an audio event.
-- [static let audioBrightness: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiobrightness.md)
+- [static let audioBrightness: CHHapticEvent.ParameterID](./audiobrightness.md)
   The high-frequency content of an audio event.
 
 

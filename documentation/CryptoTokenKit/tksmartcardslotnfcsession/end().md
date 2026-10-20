@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the NFC slot session and dismisses the system-presented NFC UI (if present).
 
@@ -15,6 +16,10 @@ Ends the NFC slot session and dismisses the system-presented NFC UI (if present)
 
 ```swift
 func end()
+```
+
+```objc
+- (void) endSession;
 ```
 
 

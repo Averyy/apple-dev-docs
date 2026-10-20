@@ -1,7 +1,8 @@
 # mergeType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The merge type.
 
@@ -10,7 +11,7 @@ The merge type.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ The merge type.
 var mergeType: NSMergePolicyType { get }
 ```
 
+```objc
+@property (readonly) NSMergePolicyType mergeType;
+```
+
 ## See Also
 
-- [init(merge: NSMergePolicyType)](nsmergepolicy/init(merge:).md)
+### Getting a Merge Policy
+- [init(merge: NSMergePolicyType)](./init%28merge%29.md)
   Returns a merge policy initialized with a given policy type.
 
 

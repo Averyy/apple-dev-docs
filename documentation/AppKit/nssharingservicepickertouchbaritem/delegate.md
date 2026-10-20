@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate of the sharing service picker bar item.
 
@@ -14,9 +15,14 @@ The object that acts as the delegate of the sharing service picker bar item.
 weak var delegate: (any NSSharingServicePickerTouchBarItemDelegate)? { get set }
 ```
 
+```objc
+@property (weak) id<NSSharingServicePickerTouchBarItemDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSSharingServicePickerTouchBarItemDelegate](nssharingservicepickertouchbaritemdelegate.md)
+### Setting the delegate
+- [protocol NSSharingServicePickerTouchBarItemDelegate](../nssharingservicepickertouchbaritemdelegate.md)
   A protocol that a sharing service picker item delegate uses to provide a list of items eligible for sharing.
 
 

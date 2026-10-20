@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A status that indicates whether the receiver is still running.
 
@@ -15,21 +16,27 @@ A status that indicates whether the receiver is still running.
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRunning) BOOL running;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is still running, otherwise [`false`](https://developer.apple.com/documentation/swift/false). [`false`](https://developer.apple.com/documentation/swift/false) means either the receiver could not run or it has terminated.
+[`true`](../../Swift/true.md) if the receiver is still running, otherwise [`false`](../../Swift/false.md). [`false`](../../Swift/false.md) means either the receiver could not run or it has terminated.
 
 ## See Also
 
-- [func waitUntilExit()](process/waituntilexit.md)
+### Related Documentation
+- [func waitUntilExit()](./waituntilexit%28%29.md)
   Blocks the process until the receiver is finished.
-- [func launch()](process/launch.md)
+- [func launch()](./launch%28%29.md)
   Launches the task represented by the receiver.
-- [func terminate()](process/terminate.md)
+- [func terminate()](./terminate%28%29.md)
   Sends a terminate signal to the receiver and all of its subtasks.
-- [var terminationStatus: Int32](process/terminationstatus.md)
+### Querying the process state
+- [var terminationStatus: Int32](./terminationstatus.md)
   The exit status the receiver’s executable returns.
-- [var terminationReason: Process.TerminationReason](process/terminationreason-swift.property.md)
+- [var terminationReason: Process.TerminationReason](./terminationreason-swift.property.md)
   The reason the system terminated the task.
 
 

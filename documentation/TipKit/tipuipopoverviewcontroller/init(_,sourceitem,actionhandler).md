@@ -1,7 +1,8 @@
 # init(_:sourceItem:actionHandler:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a popover controller with the specified tip.
 

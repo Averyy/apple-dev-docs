@@ -1,7 +1,8 @@
 # init(sensitivityPoints:startDate:endDate:device:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.1+

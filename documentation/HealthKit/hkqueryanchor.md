@@ -1,7 +1,8 @@
 # HKQueryAnchor
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to identify all the samples previously returned by an anchored object query.
 
@@ -19,34 +20,38 @@ An object used to identify all the samples previously returned by an anchored ob
 class HKQueryAnchor
 ```
 
+```objc
+@interface HKQueryAnchor : NSObject
+```
+
 #### Overview
 
-The system returns [`HKQueryAnchor`](hkqueryanchor.md) objects in both the anchored object query’s results handler and it’s update handler. Use the anchors to query for samples added or deleted after the result or update.
+The system returns [`HKQueryAnchor`](./hkqueryanchor.md) objects in both the anchored object query’s results handler and it’s update handler. Use the anchors to query for samples added or deleted after the result or update.
 
 ## Topics
 
 ### Creating Anchor Objects
-- [convenience init(fromValue: Int)](hkqueryanchor/init(fromvalue:).md)
+- [convenience init(fromValue: Int)](./hkqueryanchor/init%28fromvalue%29.md)
   Returns an anchor object from the provided anchor value.
 ### Initializers
-- [init?(coder: NSCoder)](hkqueryanchor/init(coder:).md)
+- [init?(coder: NSCoder)](./hkqueryanchor/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

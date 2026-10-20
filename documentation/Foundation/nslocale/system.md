@@ -1,7 +1,8 @@
 # system
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A locale representing the generic root values with little localization.
 
@@ -20,21 +21,26 @@ A locale representing the generic root values with little localization.
 class var system: Locale { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSLocale * systemLocale;
+```
+
 #### Return Value
 
 The generic locale that contains fixed “backstop” settings that provide values for otherwise undefined keys.
 
 #### Discussion
 
-Use the system locale when you don’t want any localizations. If you want localizations that match the user’s region settings, use the locale given by the [`current`](nslocale/current.md) or the [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md) property instead.
+Use the system locale when you don’t want any localizations. If you want localizations that match the user’s region settings, use the locale given by the [`current`](./current.md) or the [`autoupdatingCurrent`](./autoupdatingcurrent.md) property instead.
 
 ## See Also
 
-- [class var autoupdatingCurrent: Locale](nslocale/autoupdatingcurrent.md)
+### Getting the User’s Locale
+- [class var autoupdatingCurrent: Locale](./autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.
-- [class var current: Locale](nslocale/current.md)
+- [class var current: Locale](./current.md)
   A locale that represents the user’s region settings at the time the property is read.
-- [class let currentLocaleDidChangeNotification: NSNotification.Name](nslocale/currentlocaledidchangenotification.md)
+- [class let currentLocaleDidChangeNotification: NSNotification.Name](./currentlocaledidchangenotification.md)
   A notification that indicates that the user’s locale changed.
 
 

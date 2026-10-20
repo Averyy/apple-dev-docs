@@ -1,7 +1,8 @@
 # set()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the shadow of subsequent drawing operations to the current shadow.
 
@@ -12,6 +13,10 @@ Sets the shadow of subsequent drawing operations to the current shadow.
 
 ```swift
 func set()
+```
+
+```objc
+- (void) set;
 ```
 
 #### Discussion

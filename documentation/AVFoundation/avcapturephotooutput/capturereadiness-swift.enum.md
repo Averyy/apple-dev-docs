@@ -1,7 +1,8 @@
 # AVCapturePhotoOutput.CaptureReadiness
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate whether the output is ready to receive capture requests.
 
@@ -18,51 +19,56 @@ Constants that indicate whether the output is ready to receive capture requests.
 enum CaptureReadiness
 ```
 
+```c
+enum AVCapturePhotoOutputCaptureReadiness : NSInteger;
+```
+
 ## Topics
 
 ### Readiness states
-- [AVCapturePhotoOutput.CaptureReadiness.sessionNotRunning](avcapturephotooutput/capturereadiness-swift.enum/sessionnotrunning.md)
+- [AVCapturePhotoOutput.CaptureReadiness.sessionNotRunning](./capturereadiness-swift.enum/sessionnotrunning.md)
   Indicates that the session isn’t running and the output isn’t ready to receive requests.
-- [AVCapturePhotoOutput.CaptureReadiness.notReadyMomentarily](avcapturephotooutput/capturereadiness-swift.enum/notreadymomentarily.md)
+- [AVCapturePhotoOutput.CaptureReadiness.notReadyMomentarily](./capturereadiness-swift.enum/notreadymomentarily.md)
   Indicates that the output isn’t ready to receive requests, but may be ready shortly.
-- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForCapture](avcapturephotooutput/capturereadiness-swift.enum/notreadywaitingforcapture.md)
+- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForCapture](./capturereadiness-swift.enum/notreadywaitingforcapture.md)
   Indicates that the output isn’t ready to receive requests for a longer duration because it’s busy capturing.
-- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForProcessing](avcapturephotooutput/capturereadiness-swift.enum/notreadywaitingforprocessing.md)
+- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForProcessing](./capturereadiness-swift.enum/notreadywaitingforprocessing.md)
   Indicates that the output isn’t ready to receive requests for a longer duration because it’s busy processing.
-- [AVCapturePhotoOutput.CaptureReadiness.ready](avcapturephotooutput/capturereadiness-swift.enum/ready.md)
+- [AVCapturePhotoOutput.CaptureReadiness.ready](./capturereadiness-swift.enum/ready.md)
   Indicates that the output is ready to receive new requests.
 ### Initializers
-- [init?(rawValue: Int)](avcapturephotooutput/capturereadiness-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./capturereadiness-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var captureReadiness: AVCapturePhotoOutput.CaptureReadiness](avcapturephotooutput/capturereadiness-swift.property.md)
+### Managing responsive capture
+- [var captureReadiness: AVCapturePhotoOutput.CaptureReadiness](./capturereadiness-swift.property.md)
   A value that specifies whether the photo output is ready to respond to new capture requests in a timely manner.
-- [var isAutoDeferredPhotoDeliveryEnabled: Bool](avcapturephotooutput/isautodeferredphotodeliveryenabled.md)
+- [var isAutoDeferredPhotoDeliveryEnabled: Bool](./isautodeferredphotodeliveryenabled.md)
   A Boolean value that indicates the enabled state of automatic deferred photo delivery.
-- [var isAutoDeferredPhotoDeliverySupported: Bool](avcapturephotooutput/isautodeferredphotodeliverysupported.md)
+- [var isAutoDeferredPhotoDeliverySupported: Bool](./isautodeferredphotodeliverysupported.md)
   A Boolean value that indicates whether the photo output supports deferred photo delivery.
-- [var isFastCapturePrioritizationSupported: Bool](avcapturephotooutput/isfastcaptureprioritizationsupported.md)
+- [var isFastCapturePrioritizationSupported: Bool](./isfastcaptureprioritizationsupported.md)
   A Boolean value that indicates whether the photo output supports fast capture prioritization.
-- [var isFastCapturePrioritizationEnabled: Bool](avcapturephotooutput/isfastcaptureprioritizationenabled.md)
+- [var isFastCapturePrioritizationEnabled: Bool](./isfastcaptureprioritizationenabled.md)
   A Boolean value that indicates whether the output enables fast capture prioritization.
-- [var isResponsiveCaptureSupported: Bool](avcapturephotooutput/isresponsivecapturesupported.md)
+- [var isResponsiveCaptureSupported: Bool](./isresponsivecapturesupported.md)
   A Boolean value that indicates whether the photo output supports responsive capture.
-- [var isResponsiveCaptureEnabled: Bool](avcapturephotooutput/isresponsivecaptureenabled.md)
+- [var isResponsiveCaptureEnabled: Bool](./isresponsivecaptureenabled.md)
   A Boolean value that indicates whether the photo output configuration enables responsive capture.
-- [var isZeroShutterLagSupported: Bool](avcapturephotooutput/iszeroshutterlagsupported.md)
+- [var isZeroShutterLagSupported: Bool](./iszeroshutterlagsupported.md)
   A Boolean value that indicates whether the photo output supports zero shutter lag.
-- [var isZeroShutterLagEnabled: Bool](avcapturephotooutput/iszeroshutterlagenabled.md)
+- [var isZeroShutterLagEnabled: Bool](./iszeroshutterlagenabled.md)
   A Boolean value that indicates whether the photo output configuration enables zero shutter lag.
 
 

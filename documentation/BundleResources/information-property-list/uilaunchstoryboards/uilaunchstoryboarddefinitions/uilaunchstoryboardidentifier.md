@@ -1,7 +1,8 @@
 # UILaunchStoryboardIdentifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A user-specified identifier for a launch storyboard.
 
@@ -9,13 +10,15 @@ A user-specified identifier for a launch storyboard.
 - iOS 9.0+
 - iPadOS 9.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UILaunchStoryboardIdentifier`
+- **Type**: string
 
 ## See Also
 
-- [UILaunchStoryboardFile](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md)
+### Specifying Storyboard Identifiers
+- [UILaunchStoryboardFile](./uilaunchstoryboardfile.md)
   A launch storyboard file or xib.
 
 

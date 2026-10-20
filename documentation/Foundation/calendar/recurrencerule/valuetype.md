@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.ValueType
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.2+
@@ -20,8 +21,9 @@ typealias ValueType = Calendar.RecurrenceRule
 
 ## See Also
 
-- [Calendar.RecurrenceRule.Specification](calendar/recurrencerule/specification.md)
-- [Calendar.RecurrenceRule.UnwrappedType](calendar/recurrencerule/unwrappedtype.md)
+### Type Aliases
+- [Calendar.RecurrenceRule.Specification](./specification.md)
+- [Calendar.RecurrenceRule.UnwrappedType](./unwrappedtype.md)
 
 
 ---

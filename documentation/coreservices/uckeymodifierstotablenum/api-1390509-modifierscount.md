@@ -1,7 +1,8 @@
 # modifiersCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 32-bit integer specifying the range of modifier bit combinations for which there are entries in the `tableNum[]` field.
 
@@ -13,6 +14,10 @@ An unsigned 32-bit integer specifying the range of modifier bit combinations for
 
 ```swift
 var modifiersCount: UInt32
+```
+
+```c
+UInt32 modifiersCount;
 ```
 
 

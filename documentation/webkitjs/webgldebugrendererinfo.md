@@ -1,7 +1,8 @@
 # WebGLDebugRendererInfo
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLDebugRendererInfo
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [UNMASKED_RENDERER_WEBGL](webgldebugrendererinfo/1633343-unmasked_renderer_webgl.md)
-- [UNMASKED_VENDOR_WEBGL](webgldebugrendererinfo/1629809-unmasked_vendor_webgl.md)
+- [UNMASKED_RENDERER_WEBGL](./webgldebugrendererinfo/api-1633343-unmasked_renderer_webgl.md)
+- [UNMASKED_VENDOR_WEBGL](./webgldebugrendererinfo/api-1629809-unmasked_vendor_webgl.md)
 
 
 ---

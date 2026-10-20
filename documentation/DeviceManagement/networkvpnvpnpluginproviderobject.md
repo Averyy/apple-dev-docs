@@ -1,7 +1,8 @@
 # NetworkVPNVPNPluginProviderObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about the provider.
 
@@ -15,30 +16,37 @@ Specifies details about the provider.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNVPNPluginProviderObject
 ```
 
 ## Properties
 
-- `ComposedIdentifier` (string): If the `SubType` field contains the bundle identifier of an app that contains multiple VPN providers of the same type (app-proxy or packet-tunnel), then the system uses this field to choose which provider to use for this configuration. If the VPN provider is implemented as a System Extension, then this field is required. In iOS, tvOS, and visionOS, the identifier is a bundle ID, for example, “com.example.app”. In macOS, the identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app” for the bundle ID format, or “com.example.app {anchor apple generic}” for the designated requirement format.
+- `ComposedIdentifier` (string): If the `SubType` field contains the bundle identifier of an app that contains multiple VPN providers of the same type (app-proxy or packet-tunnel), then the system uses this field to choose which provider to use for this configuration. If the VPN provider is implemented as a System Extension, then this field is required.
+
+  In iOS, tvOS, and visionOS, the identifier is a bundle ID, for example, “com.example.app”.
+
+  In macOS, the identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app” for the bundle ID format, or “com.example.app {anchor apple generic}” for the designated requirement format.
 - `Type` (string): The type of VPN service. If the value is `app-proxy`, the service tunnels traffic at the app level. If the value is `packet-tunnel`, the service tunnels traffic at the IP layer.
+
+  **Default**: `packet-tunnel`; **Allowed Values**: `packet-tunnel`, `app-proxy`
 
 ## See Also
 
-- [object NetworkVPNVPNPluginAuthenticationObject](networkvpnvpnpluginauthenticationobject.md)
+### Objects
+- [object NetworkVPNVPNPluginAuthenticationObject](./networkvpnvpnpluginauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNVPNPluginDNSObject](networkvpnvpnplugindnsobject.md)
+- [object NetworkVPNVPNPluginDNSObject](./networkvpnvpnplugindnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNVPNPluginIdleObject](networkvpnvpnpluginidleobject.md)
+- [object NetworkVPNVPNPluginIdleObject](./networkvpnvpnpluginidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNVPNPluginNetworkRoutingObject](networkvpnvpnpluginnetworkroutingobject.md)
+- [object NetworkVPNVPNPluginNetworkRoutingObject](./networkvpnvpnpluginnetworkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNVPNPluginOnDemandObject](networkvpnvpnpluginondemandobject.md)
+- [object NetworkVPNVPNPluginOnDemandObject](./networkvpnvpnpluginondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNVPNPluginProxiesObject](networkvpnvpnpluginproxiesobject.md)
+- [object NetworkVPNVPNPluginProxiesObject](./networkvpnvpnpluginproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNVPNPluginVendorConfigObject](networkvpnvpnpluginvendorconfigobject.md)
+- [object NetworkVPNVPNPluginVendorConfigObject](./networkvpnvpnpluginvendorconfigobject.md)
   The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 
 

@@ -1,7 +1,8 @@
 # AVCaption.Decoration
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Text decorations for caption text.
 
@@ -17,42 +18,47 @@ Text decorations for caption text.
 struct Decoration
 ```
 
+```c
+enum AVCaptionDecoration : NSUInteger;
+```
+
 ## Topics
 
 ### Decorations
-- [static var underline: AVCaption.Decoration](avcaption/decoration/underline.md)
+- [static var underline: AVCaption.Decoration](./decoration/underline.md)
   A decoration representing a line under the text.
-- [static var lineThrough: AVCaption.Decoration](avcaption/decoration/linethrough.md)
+- [static var lineThrough: AVCaption.Decoration](./decoration/linethrough.md)
   A decoration representing a line through the text.
-- [static var overline: AVCaption.Decoration](avcaption/decoration/overline.md)
+- [static var overline: AVCaption.Decoration](./decoration/overline.md)
   A decoration representing a line over the text.
 ### Initializers
-- [init(rawValue: UInt)](avcaption/decoration/init(rawvalue:).md)
+- [init(rawValue: UInt)](./decoration/init%28rawvalue%29.md)
   Creates a caption decoration by using a string.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func fontStyle(at: String.Index) -> (AVCaption.FontStyle, Range<String.Index>)](avcaption/fontstyle(at:).md)
+### Accessing font styles
+- [func fontStyle(at: String.Index) -> (AVCaption.FontStyle, Range<String.Index>)](./fontstyle%28at%29.md)
   Returns the font style and range at the index position.
-- [AVCaption.FontStyle](avcaption/fontstyle.md)
+- [AVCaption.FontStyle](./fontstyle.md)
   Font styles for caption text.
-- [func fontWeight(at: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)](avcaption/fontweight(at:).md)
+- [func fontWeight(at: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)](./fontweight%28at%29.md)
   Returns the font weight and range at the index position.
-- [AVCaption.FontWeight](avcaption/fontweight.md)
+- [AVCaption.FontWeight](./fontweight.md)
   Font weights for a caption.
-- [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](avcaption/decoration(at:).md)
+- [func decoration(at: String.Index) -> (AVCaption.Decoration, Range<String.Index>)](./decoration%28at%29.md)
   Returns the text decoration at the index position.
 
 

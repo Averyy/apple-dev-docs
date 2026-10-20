@@ -1,7 +1,8 @@
 # GLKVector2AllEqualToScalar(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that states whether all the components of the source vector are equal to a scalar value.
 
@@ -17,9 +18,13 @@ Returns a Boolean value that states whether all the components of the source vec
 func GLKVector2AllEqualToScalar(_ vector: GLKVector2, _ value: Float) -> Bool
 ```
 
+```c
+static bool GLKVector2AllEqualToScalar(GLKVector2 vector, float value);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if all of the vector’s components are equal to `value`, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../Swift/true.md) if all of the vector’s components are equal to `value`, [`false`](../Swift/false.md) otherwise.
 
 ## Parameters
 
@@ -28,15 +33,16 @@ func GLKVector2AllEqualToScalar(_ vector: GLKVector2, _ value: Float) -> Bool
 
 ## See Also
 
-- [func GLKVector2AllEqualToVector2(GLKVector2, GLKVector2) -> Bool](glkvector2allequaltovector2(_:_:).md)
+### Comparison Operations
+- [func GLKVector2AllEqualToVector2(GLKVector2, GLKVector2) -> Bool](./glkvector2allequaltovector2%28_,_%29.md)
   Returns a Boolean value that indicates whether each component of the first vector is equal to the corresponding component of a second vector.
-- [func GLKVector2AllGreaterThanOrEqualToScalar(GLKVector2, Float) -> Bool](glkvector2allgreaterthanorequaltoscalar(_:_:).md)
+- [func GLKVector2AllGreaterThanOrEqualToScalar(GLKVector2, Float) -> Bool](./glkvector2allgreaterthanorequaltoscalar%28_,_%29.md)
   Returns a Boolean value that states whether all the components of the source vector are greater than or equal to a scalar value.
-- [func GLKVector2AllGreaterThanOrEqualToVector2(GLKVector2, GLKVector2) -> Bool](glkvector2allgreaterthanorequaltovector2(_:_:).md)
+- [func GLKVector2AllGreaterThanOrEqualToVector2(GLKVector2, GLKVector2) -> Bool](./glkvector2allgreaterthanorequaltovector2%28_,_%29.md)
   Returns a Boolean value that indicates whether each component of the first vector is greater than or equal to the corresponding component of a second vector.
-- [func GLKVector2AllGreaterThanScalar(GLKVector2, Float) -> Bool](glkvector2allgreaterthanscalar(_:_:).md)
+- [func GLKVector2AllGreaterThanScalar(GLKVector2, Float) -> Bool](./glkvector2allgreaterthanscalar%28_,_%29.md)
   Returns a Boolean value that states whether all the components of the source vector are greater than a scalar value.
-- [func GLKVector2AllGreaterThanVector2(GLKVector2, GLKVector2) -> Bool](glkvector2allgreaterthanvector2(_:_:).md)
+- [func GLKVector2AllGreaterThanVector2(GLKVector2, GLKVector2) -> Bool](./glkvector2allgreaterthanvector2%28_,_%29.md)
   Returns a Boolean value that indicates whether each component of the first vector is greater than the corresponding component of a second vector.
 
 

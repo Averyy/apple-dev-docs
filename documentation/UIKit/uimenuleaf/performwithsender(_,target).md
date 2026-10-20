@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs the element’s primary action.
@@ -19,9 +20,14 @@ Performs the element’s primary action.
 func performWithSender(_ sender: Any?, target: Any?)
 ```
 
+```objc
+- (void) performWithSender:(id) sender target:(id) target;
+```
+
 ## See Also
 
-- [var sender: Any?](uimenuleaf/sender.md)
+### Performing actions
+- [var sender: Any?](./sender.md)
   The object on behalf of which to perform the menu element’s primary action.
 
 

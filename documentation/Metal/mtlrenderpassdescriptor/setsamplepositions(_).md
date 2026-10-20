@@ -1,7 +1,8 @@
 # setSamplePositions(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the programmable sample positions for a render pass.
 
@@ -11,7 +12,7 @@ Sets the programmable sample positions for a render pass.
 - Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,7 @@ Programmable sample positions need to be floating-point values in the `[0.0, 1.0
 
 If the length of the array is `0`, the GPU uses the default sample positions for the render pass.
 
-> **Note**:  Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine whether the device object supports a specific sample count.
+> **Note**:  Call the [`supportsTextureSampleCount(_:)`](../mtldevice/supportstexturesamplecount%28_%29.md) method to determine whether the device object supports a specific sample count.
 
 ## Parameters
 
@@ -33,9 +34,10 @@ If the length of the array is `0`, the GPU uses the default sample positions for
 
 ## See Also
 
-- [func MTLSamplePositionMake(Float, Float) -> MTLSamplePosition](mtlsamplepositionmake(_:_:).md)
+### Using programmable sample positions
+- [func MTLSamplePositionMake(Float, Float) -> MTLSamplePosition](../mtlsamplepositionmake%28_,_%29.md)
   Returns a new sample position on a subpixel grid.
-- [func getSamplePositions() -> [MTLSamplePosition]](mtlrenderpassdescriptor/getsamplepositions.md)
+- [func getSamplePositions() -> [MTLSamplePosition]](./getsamplepositions%28%29.md)
   Returns the programmable sample positions set for a render pass.
 
 

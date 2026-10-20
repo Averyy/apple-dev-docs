@@ -1,7 +1,8 @@
 # kPMFaxToLabelStr
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMFaxToLabelStr: String { get }
+```
+
+```c
+#define kPMFaxToLabelStr
 ```
 
 

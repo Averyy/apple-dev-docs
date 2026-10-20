@@ -1,7 +1,8 @@
 # Stop
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the service that matches the specified provider.
 
@@ -10,13 +11,13 @@ Stops the service that matches the specified provider.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Stop(IOService *provider);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,17 +25,18 @@ Before terminating a provider, the system calls this method to stop the service 
 
 ## Parameters
 
-- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/start) method.
+- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](../../SerialDriverKit/iouserserial/start.md) method.
 
 ## See Also
 
-- [init](iouserusbserial/init.md)
+### Configuring the Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Start](iouserusbserial/start.md)
+- [Start](./start.md)
   Starts the service for the specified provider.
-- [free](iouserusbserial/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
-- [initWith](iouserusbserial/initwith.md)
+- [initWith](./initwith.md)
   Initializes the private data structures associated with this class.
 
 

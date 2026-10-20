@@ -1,7 +1,8 @@
 # textContentManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that represents the current content manager.
 
@@ -12,6 +13,10 @@ The value that represents the current content manager.
 
 ```swift
 weak var textContentManager: NSTextContentManager? { get set }
+```
+
+```objc
+@property (weak, nullable) NSTextContentManager * textContentManager;
 ```
 
 

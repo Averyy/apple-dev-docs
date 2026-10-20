@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty query operation.
 
@@ -10,7 +11,7 @@ Creates an empty query operation.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,11 +21,16 @@ Creates an empty query operation.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(query: CKQuery)](ckqueryoperation/init(query:).md)
+### Creating a Query Operation
+- [convenience init(query: CKQuery)](./init%28query%29.md)
   Creates an operation that searches for records in the specified record zone.
-- [convenience init(cursor: CKQueryOperation.Cursor)](ckqueryoperation/init(cursor:).md)
+- [convenience init(cursor: CKQueryOperation.Cursor)](./init%28cursor%29.md)
   Creates an operation with additional results from a previous search.
 
 

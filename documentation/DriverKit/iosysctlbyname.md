@@ -1,17 +1,18 @@
 # IOSysCtlByName
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t IOSysCtlByName(const char *name, void *oldp, size_t *oldlenp, void *newp, size_t newlen);
 ```
 

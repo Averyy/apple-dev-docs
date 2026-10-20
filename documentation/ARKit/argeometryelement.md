@@ -1,7 +1,8 @@
 # ARGeometryElement
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for index data, such as vertex indices of a face.
 
@@ -15,63 +16,68 @@ A container for index data, such as vertex indices of a face.
 class ARGeometryElement
 ```
 
+```objc
+@interface ARGeometryElement : NSObject
+```
+
 #### Overview
 
-[`ARMeshGeometry`](armeshgeometry.md) uses geometry-elements to store face data (see [`faces`](armeshgeometry/faces.md)). Each face is defined by the primitive type, for example, [`ARGeometryPrimitiveType.triangle`](argeometryprimitivetype/triangle.md).
+[`ARMeshGeometry`](./armeshgeometry.md) uses geometry-elements to store face data (see [`faces`](./armeshgeometry/faces.md)). Each face is defined by the primitive type, for example, [`ARGeometryPrimitiveType.triangle`](./argeometryprimitivetype/triangle.md).
 
-To demonstrate, an [`ARMeshGeometry`](armeshgeometry.md) instance with two triangle-type faces results in the following configuration:
+To demonstrate, an [`ARMeshGeometry`](./armeshgeometry.md) instance with two triangle-type faces results in the following configuration:
 
-- `faces` [`count`](argeometryelement/count.md) `= 2`
-- `faces` [`indexCountPerPrimitive`](argeometryelement/indexcountperprimitive.md) `= 3` (because [`primitiveType`](argeometryelement/primitivetype.md) is [`ARGeometryPrimitiveType.triangle`](argeometryprimitivetype/triangle.md))
-- `faces` [`bytesPerIndex`](argeometryelement/bytesperindex.md) `= 4` (because vertex indices are the type [`UInt32`](https://developer.apple.com/documentation/swift/uint32))
-- The buffer’s total size in bytes `=` [`count`](argeometryelement/count.md) `*` [`indexCountPerPrimitive`](argeometryelement/indexcountperprimitive.md) `*` [`bytesPerIndex`](argeometryelement/bytesperindex.md) (which in this case, is `2 * 3 * 4 = 24` bytes)
+- `faces` [`count`](./argeometryelement/count.md) `= 2`
+- `faces` [`indexCountPerPrimitive`](./argeometryelement/indexcountperprimitive.md) `= 3` (because [`primitiveType`](./argeometryelement/primitivetype.md) is [`ARGeometryPrimitiveType.triangle`](./argeometryprimitivetype/triangle.md))
+- `faces` [`bytesPerIndex`](./argeometryelement/bytesperindex.md) `= 4` (because vertex indices are the type [`UInt32`](../Swift/uint32.md))
+- The buffer’s total size in bytes `=` [`count`](./argeometryelement/count.md) `*` [`indexCountPerPrimitive`](./argeometryelement/indexcountperprimitive.md) `*` [`bytesPerIndex`](./argeometryelement/bytesperindex.md) (which in this case, is `2 * 3 * 4 = 24` bytes)
 
 ## Topics
 
 ### Accessing Index Data
-- [subscript(Int) -> [Int32]](argeometryelement/subscript(_:).md)
+- [subscript(Int) -> [Int32]](./argeometryelement/subscript%28_%29.md)
   Provides an array of vertex indices that respresents the geometric primitive at the subscripted index.
-- [var buffer: any MTLBuffer](argeometryelement/buffer.md)
+- [var buffer: any MTLBuffer](./argeometryelement/buffer.md)
   A Metal buffer containing primitive data.
 ### Getting Index Information
-- [var bytesPerIndex: Int](argeometryelement/bytesperindex.md)
+- [var bytesPerIndex: Int](./argeometryelement/bytesperindex.md)
   The number of bytes for each index.
-- [var count: Int](argeometryelement/count.md)
+- [var count: Int](./argeometryelement/count.md)
   The number of primitives in the buffer.
-- [var indexCountPerPrimitive: Int](argeometryelement/indexcountperprimitive.md)
+- [var indexCountPerPrimitive: Int](./argeometryelement/indexcountperprimitive.md)
   The number of indices for each primitive.
-- [var primitiveType: ARGeometryPrimitiveType](argeometryelement/primitivetype.md)
+- [var primitiveType: ARGeometryPrimitiveType](./argeometryelement/primitivetype.md)
   The geometry’s type of data (triangle, or line).
-- [enum ARGeometryPrimitiveType](argeometryprimitivetype.md)
+- [enum ARGeometryPrimitiveType](./argeometryprimitivetype.md)
   The kind of connection between vertices.
 ### Initializers
-- [init?(coder: NSCoder)](argeometryelement/init(coder:).md)
+- [init?(coder: NSCoder)](./argeometryelement/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var classification: ARGeometrySource?](armeshgeometry/classification.md)
+### Getting Geometry Information
+- [var classification: ARGeometrySource?](./armeshgeometry/classification.md)
   Classification for each face in the mesh.
-- [enum ARMeshClassification](armeshclassification.md)
+- [enum ARMeshClassification](./armeshclassification.md)
   Enumeration of different classes of real-world objects that ARKit can identify.
-- [var faces: ARGeometryElement](armeshgeometry/faces.md)
+- [var faces: ARGeometryElement](./armeshgeometry/faces.md)
   An object that contains a buffer of vertex indices of the geometry’s faces.
-- [var normals: ARGeometrySource](armeshgeometry/normals.md)
+- [var normals: ARGeometrySource](./armeshgeometry/normals.md)
   Rays that define which direction is outside for each face.
 
 

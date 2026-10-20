@@ -1,7 +1,8 @@
 # BlendMode.multiply
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ case multiply
 
 ## See Also
 
-- [BlendMode.darken](blendmode/darken.md)
-- [BlendMode.colorBurn](blendmode/colorburn.md)
-- [BlendMode.plusDarker](blendmode/plusdarker.md)
+### Darkening
+- [BlendMode.darken](./darken.md)
+- [BlendMode.colorBurn](./colorburn.md)
+- [BlendMode.plusDarker](./plusdarker.md)
 
 
 ---

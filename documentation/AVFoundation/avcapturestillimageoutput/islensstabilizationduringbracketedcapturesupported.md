@@ -1,14 +1,17 @@
 # isLensStabilizationDuringBracketedCaptureSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture output supports lens stabilization across the duration of a bracketed capture.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
+- iOS 9.0+ - Deprecated in 10.0
+- iPadOS 9.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVCapturePhotoOutput lensStabilizationDuringBracketedCaptureSupported instead.
 
 ## Declaration
 
@@ -16,21 +19,26 @@ A Boolean value that indicates whether the capture output supports lens stabiliz
 var isLensStabilizationDuringBracketedCaptureSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLensStabilizationDuringBracketedCaptureSupported) BOOL lensStabilizationDuringBracketedCaptureSupported;
+```
+
 #### Discussion
 
-You may set the [`isLensStabilizationDuringBracketedCaptureEnabled`](avcapturestillimageoutput/islensstabilizationduringbracketedcaptureenabled.md) property only if this property’s value is [`true`](https://developer.apple.com/documentation/swift/true). This value may change as the session’s [`sessionPreset`](avcapturesession/sessionpreset.md) property or the input device’s [`activeFormat`](avcapturedevice/activeformat.md) property changes.
+You may set the [`isLensStabilizationDuringBracketedCaptureEnabled`](./islensstabilizationduringbracketedcaptureenabled.md) property only if this property’s value is [`true`](../../Swift/true.md). This value may change as the session’s [`sessionPreset`](../avcapturesession/sessionpreset.md) property or the input device’s [`activeFormat`](../avcapturedevice/activeformat.md) property changes.
 
 This property supports key-value observing.
 
 ## See Also
 
-- [func captureStillImageBracketAsynchronously(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (CMSampleBuffer?, AVCaptureBracketedStillImageSettings?, (any Error)?) -> Void)](avcapturestillimageoutput/capturestillimagebracketasynchronously(from:withsettingsarray:completionhandler:).md)
+### Still image bracketed capture
+- [func captureStillImageBracketAsynchronously(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (CMSampleBuffer?, AVCaptureBracketedStillImageSettings?, (any Error)?) -> Void)](./capturestillimagebracketasynchronously%28from,withsettingsarray,completionhandler%29.md)
   Captures a still image bracket.
-- [var maxBracketedCaptureStillImageCount: Int](avcapturestillimageoutput/maxbracketedcapturestillimagecount.md)
+- [var maxBracketedCaptureStillImageCount: Int](./maxbracketedcapturestillimagecount.md)
   Specifies the maximum number of still images that may be taken in a single bracket.
-- [func prepareToCaptureStillImageBracket(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (Bool, (any Error)?) -> Void)](avcapturestillimageoutput/preparetocapturestillimagebracket(from:withsettingsarray:completionhandler:).md)
+- [func prepareToCaptureStillImageBracket(from: AVCaptureConnection, withSettingsArray: [AVCaptureBracketedStillImageSettings], completionHandler: (Bool, (any Error)?) -> Void)](./preparetocapturestillimagebracket%28from,withsettingsarray,completionhandler%29.md)
   Allows the receiver to prepare resources in advance of capturing a still image bracket.
-- [var isLensStabilizationDuringBracketedCaptureEnabled: Bool](avcapturestillimageoutput/islensstabilizationduringbracketedcaptureenabled.md)
+- [var isLensStabilizationDuringBracketedCaptureEnabled: Bool](./islensstabilizationduringbracketedcaptureenabled.md)
   A Boolean value that specifies whether to stabilize the lens across the duration of a bracketed capture.
 
 

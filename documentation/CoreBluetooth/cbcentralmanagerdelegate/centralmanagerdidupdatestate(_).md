@@ -2,6 +2,7 @@
 
 **Framework**: Core Bluetooth  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate the central manager’s state updated.
@@ -21,9 +22,13 @@ Tells the delegate the central manager’s state updated.
 func centralManagerDidUpdateState(_ central: CBCentralManager)
 ```
 
+```objc
+- (void) centralManagerDidUpdateState:(CBCentralManager *) central;
+```
+
 #### Discussion
 
-You implement this required method to ensure that the central device supports Bluetooth low energy and that it’s available to use. You should issue commands to the central manager only when the central manager’s [`state`](cbmanager/state.md) indicates it’s powered on. A state with a value lower than [`CBManagerState.poweredOn`](cbmanagerstate/poweredon.md) implies that scanning has stopped, which in turn disconnects any previously-connected peripherals. If the state moves below [`CBManagerState.poweredOff`](cbmanagerstate/poweredoff.md), all [`CBPeripheral`](cbperipheral.md) objects obtained from this central manager become invalid; you must retrieve or discover these peripherals again. For a complete list of possible states, see [`CBManagerState`](cbmanagerstate.md).
+You implement this required method to ensure that the central device supports Bluetooth low energy and that it’s available to use. You should issue commands to the central manager only when the central manager’s [`state`](../cbmanager/state.md) indicates it’s powered on. A state with a value lower than [`CBManagerState.poweredOn`](../cbmanagerstate/poweredon.md) implies that scanning has stopped, which in turn disconnects any previously-connected peripherals. If the state moves below [`CBManagerState.poweredOff`](../cbmanagerstate/poweredoff.md), all [`CBPeripheral`](../cbperipheral.md) objects obtained from this central manager become invalid; you must retrieve or discover these peripherals again. For a complete list of possible states, see [`CBManagerState`](../cbmanagerstate.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ You implement this required method to ensure that the central device supports Bl
 
 ## See Also
 
-- [func centralManager(CBCentralManager, willRestoreState: [String : Any])](cbcentralmanagerdelegate/centralmanager(_:willrestorestate:).md)
+### Monitoring the Central Manager’s State
+- [func centralManager(CBCentralManager, willRestoreState: [String : Any])](./centralmanager%28_,willrestorestate%29.md)
   Tells the delegate the system is about to restore the central manager.
 
 

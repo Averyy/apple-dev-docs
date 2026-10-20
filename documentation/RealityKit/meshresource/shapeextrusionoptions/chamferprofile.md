@@ -1,7 +1,8 @@
 # chamferProfile
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A path that determines the cross-sectional contour of each chamfered edge.
 
@@ -29,7 +30,7 @@ The chamfer profile needs to satisfy the following conditions:
 - The first point on the path is at (0, 0) and the last point is at (1, 1).
 - The value of x along the profile either increases or stays the same. In other words, the profile curve may not wrap back on itself.
 
-To learn more about SwiftUI’s [`Path`](https://developer.apple.com/documentation/swiftui/path) structure, see [`Drawing paths and shapes`](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes).
+To learn more about SwiftUI’s [`Path`](../../../SwiftUI/path.md) structure, see [Drawing paths and shapes](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes).
 
 
 ---

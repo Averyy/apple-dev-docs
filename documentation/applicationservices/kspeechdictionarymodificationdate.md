@@ -1,7 +1,8 @@
 # kSpeechDictionaryModificationDate
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The date the dictionary was last modified.
 
@@ -12,6 +13,10 @@ The date the dictionary was last modified.
 
 ```swift
 let kSpeechDictionaryModificationDate: CFString
+```
+
+```c
+const CFStringRef kSpeechDictionaryModificationDate;
 ```
 
 

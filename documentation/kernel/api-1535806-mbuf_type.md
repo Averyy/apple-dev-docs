@@ -1,18 +1,19 @@
 # mbuf_type
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 mbuf_type_t mbuf_type(const mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 The type.
 

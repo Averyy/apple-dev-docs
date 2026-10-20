@@ -1,7 +1,8 @@
 # ASError.Code
 
 **Framework**: AccessorySetupKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes that describe errors encountered during accessory discovery.
 
@@ -15,62 +16,67 @@ Codes that describe errors encountered during accessory discovery.
 enum Code
 ```
 
+```c
+enum ASErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Activation errors
-- [ASError.Code.activationFailed](aserror/code/activationfailed.md)
+- [ASError.Code.activationFailed](./code/activationfailed.md)
   Session activation failed.
 ### Timeout and life cycle errors
-- [ASError.Code.discoveryTimeout](aserror/code/discoverytimeout.md)
+- [ASError.Code.discoveryTimeout](./code/discoverytimeout.md)
   Accessory discovery timed out.
-- [ASError.Code.invalidated](aserror/code/invalidated.md)
+- [ASError.Code.invalidated](./code/invalidated.md)
   The session invalidated prior to completing the operation.
 ### Configuration errors
-- [ASError.Code.extensionNotFound](aserror/code/extensionnotfound.md)
+- [ASError.Code.extensionNotFound](./code/extensionnotfound.md)
   The framework couldn’t find the app extension.
-- [ASError.Code.userRestricted](aserror/code/userrestricted.md)
+- [ASError.Code.userRestricted](./code/userrestricted.md)
   The person using the app restricted access.
-- [ASError.Code.invalidRequest](aserror/code/invalidrequest.md)
+- [ASError.Code.invalidRequest](./code/invalidrequest.md)
   The session received an invalid request.
 ### Picker errors
-- [ASError.Code.pickerRestricted](aserror/code/pickerrestricted.md)
+- [ASError.Code.pickerRestricted](./code/pickerrestricted.md)
   The picker can’t be used because the app is in the background.
-- [ASError.Code.pickerAlreadyActive](aserror/code/pickeralreadyactive.md)
+- [ASError.Code.pickerAlreadyActive](./code/pickeralreadyactive.md)
   The picker received a show request when it was already active.
 ### Cancellation errors
-- [ASError.Code.userCancelled](aserror/code/usercancelled.md)
+- [ASError.Code.userCancelled](./code/usercancelled.md)
   The person using the app canceled the operation.
 ### Communication errors
-- [ASError.Code.connectionFailed](aserror/code/connectionfailed.md)
+- [ASError.Code.connectionFailed](./code/connectionfailed.md)
   The session was unable to establish a connection.
 ### Success cases
-- [ASError.Code.success](aserror/code/success.md)
+- [ASError.Code.success](./code/success.md)
   A code that represents a successful action.
 ### Unclassified errors
-- [ASError.Code.unknown](aserror/code/unknown.md)
+- [ASError.Code.unknown](./code/unknown.md)
   An underlying failure with an unknown cause.
 ### Accessing the error domain
-- [static var errorDomain: String](aserror/errordomain.md)
-- [let ASErrorDomain: String](aserrordomain.md)
+- [static var errorDomain: String](./errordomain.md)
+- [let ASErrorDomain: String](../aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
 ### Working with raw values
-- [init?(rawValue: Int)](aserror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ASError](aserror.md)
+### Errors
+- [struct ASError](../aserror.md)
   An error encountered during accessory discovery.
-- [let ASErrorDomain: String](aserrordomain.md)
+- [let ASErrorDomain: String](../aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
 
 

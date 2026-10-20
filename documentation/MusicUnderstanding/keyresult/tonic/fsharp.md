@@ -1,7 +1,8 @@
 # KeyResult.Tonic.fSharp
 
 **Framework**: Music Understanding  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the song is in an F-sharp key.
 

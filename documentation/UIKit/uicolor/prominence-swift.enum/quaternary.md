@@ -1,7 +1,8 @@
 # UIColor.Prominence.quaternary
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A color with a quaternary prominence, the least prominent in the interface.
 
@@ -18,13 +19,18 @@ A color with a quaternary prominence, the least prominent in the interface.
 case quaternary
 ```
 
+```c
+UIColorProminenceQuaternary
+```
+
 ## See Also
 
-- [UIColor.Prominence.primary](uicolor/prominence-swift.enum/primary.md)
+### Constants
+- [UIColor.Prominence.primary](./primary.md)
   A color with a primary prominence, the most prominent in the interface.
-- [UIColor.Prominence.secondary](uicolor/prominence-swift.enum/secondary.md)
+- [UIColor.Prominence.secondary](./secondary.md)
   A color with a secondary prominence.
-- [UIColor.Prominence.tertiary](uicolor/prominence-swift.enum/tertiary.md)
+- [UIColor.Prominence.tertiary](./tertiary.md)
   A color with a tertiary prominence.
 
 

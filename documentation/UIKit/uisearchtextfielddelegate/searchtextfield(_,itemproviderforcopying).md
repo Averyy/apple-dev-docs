@@ -1,7 +1,8 @@
 # searchTextField(_:itemProviderForCopying:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for an object that can provide a token when the copied token is pasted.
 
@@ -17,15 +18,19 @@ Asks the delegate for an object that can provide a token when the copied token i
 optional func searchTextField(_ searchTextField: UISearchTextField, itemProviderForCopying token: UISearchToken) -> NSItemProvider
 ```
 
+```objc
+- (NSItemProvider *) searchTextField:(UISearchTextField *) searchTextField itemProviderForCopyingToken:(UISearchToken *) token;
+```
+
 #### Return Value
 
 An item provider that provides a token if the user pastes or drops the token.
 
 #### Discussion
 
-To support drag and drop and the Cut and Copy commands, your delegate must implement this method and return an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) for the requested token. Your delegate can provide a plain text representation for pasting in other contexts, but should register a custom type identifier so it can recognize and reconstruct the token when pasted into the same field.
+To support drag and drop and the Cut and Copy commands, your delegate must implement this method and return an [`NSItemProvider`](../../Foundation/nsitemprovider.md) for the requested token. Your delegate can provide a plain text representation for pasting in other contexts, but should register a custom type identifier so it can recognize and reconstruct the token when pasted into the same field.
 
-The system only calls this delegate method if either [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) or [`allowsDeletingTokens`](uisearchtextfield/allowsdeletingtokens.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The system only calls this delegate method if either [`allowsCopyingTokens`](../uisearchtextfield/allowscopyingtokens.md) or [`allowsDeletingTokens`](../uisearchtextfield/allowsdeletingtokens.md) is [`true`](../../Swift/true.md).
 
 ## Parameters
 

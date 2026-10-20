@@ -1,7 +1,8 @@
 # init(intervalStart:intervalEnd:repeats:warningTime:)
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new schedule.
 
@@ -18,7 +19,7 @@ init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, 
 
 #### Discussion
 
-> ❗ **Important**: If the current date falls in between [`intervalStart`](deviceactivityschedule/intervalstart.md) and [`intervalEnd`](deviceactivityschedule/intervalend.md), the system calls the [`intervalDidStart(for:)`](deviceactivitymonitor/intervaldidstart(for:).md) method immediately upon starting to monitor the activity. If the current date doesn’t fall in between `intervalStart` and `intervalEnd`, then `intervalDidStart(for:)` calls at the next date matching `intervalStart`.
+> ❗ **Important**: If the current date falls in between [`intervalStart`](./intervalstart.md) and [`intervalEnd`](./intervalend.md), the system calls the [`intervalDidStart(for:)`](../deviceactivitymonitor/intervaldidstart%28for%29.md) method immediately upon starting to monitor the activity. If the current date doesn’t fall in between `intervalStart` and `intervalEnd`, then `intervalDidStart(for:)` calls at the next date matching `intervalStart`.
 
 ## Parameters
 
@@ -29,15 +30,16 @@ init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, 
 
 ## See Also
 
-- [var intervalEnd: DateComponents](deviceactivityschedule/intervalend.md)
+### Creating a Schedule
+- [var intervalEnd: DateComponents](./intervalend.md)
   The date components that represent the end time for a schedule’s interval.
-- [var intervalStart: DateComponents](deviceactivityschedule/intervalstart.md)
+- [var intervalStart: DateComponents](./intervalstart.md)
   The date components that represent the start time for a schedule’s interval.
-- [var nextInterval: DateInterval?](deviceactivityschedule/nextinterval.md)
+- [var nextInterval: DateInterval?](./nextinterval.md)
   The schedule’s next interval or the current interval if one is ongoing.
-- [var repeats: Bool](deviceactivityschedule/repeats.md)
+- [var repeats: Bool](./repeats.md)
   A Boolean value that indicates whether the schedule recurs.
-- [var warningTime: DateComponents?](deviceactivityschedule/warningtime.md)
+- [var warningTime: DateComponents?](./warningtime.md)
   Optional components that generate a warning prior to regularly scheduled events.
 
 

@@ -1,7 +1,8 @@
 # AVAudioConverterInputStatus.endOfStream
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates you’re at the end of an audio stream.
 
@@ -20,11 +21,16 @@ A status that indicates you’re at the end of an audio stream.
 case endOfStream
 ```
 
+```c
+AVAudioConverterInputStatus_EndOfStream
+```
+
 ## See Also
 
-- [AVAudioConverterInputStatus.haveData](avaudioconverterinputstatus/havedata.md)
+### Reporting input status
+- [AVAudioConverterInputStatus.haveData](./havedata.md)
   A status that indicates the normal case where you supply data to the converter.
-- [AVAudioConverterInputStatus.noDataNow](avaudioconverterinputstatus/nodatanow.md)
+- [AVAudioConverterInputStatus.noDataNow](./nodatanow.md)
   A status that indicates you’re out of data.
 
 

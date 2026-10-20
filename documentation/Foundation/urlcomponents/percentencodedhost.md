@@ -1,18 +1,21 @@
 # percentEncodedHost
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host subcomponent, percent-encoded.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 27.2
+- iPadOS 8.0+ - Deprecated in 27.2
+- Mac Catalyst 8.0+ - Deprecated in 27.2
+- macOS 10.10+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`encodedHost`](./encodedhost.md) instead.
 
 ## Declaration
 
@@ -26,19 +29,20 @@ The getter for this property retains any percent encoding this component may hav
 
 ## See Also
 
-- [var percentEncodedFragment: String?](urlcomponents/percentencodedfragment.md)
+### Accessing components in URL-encoded format
+- [var percentEncodedFragment: String?](./percentencodedfragment.md)
   The fragment subcomponent, percent-encoded.
-- [var percentEncodedPassword: String?](urlcomponents/percentencodedpassword.md)
+- [var percentEncodedPassword: String?](./percentencodedpassword.md)
   The password subcomponent, percent-encoded.
-- [var percentEncodedPath: String](urlcomponents/percentencodedpath.md)
+- [var percentEncodedPath: String](./percentencodedpath.md)
   The path subcomponent, percent-encoded.
-- [var percentEncodedQuery: String?](urlcomponents/percentencodedquery.md)
+- [var percentEncodedQuery: String?](./percentencodedquery.md)
   The query subcomponent, percent-encoded.
-- [var percentEncodedQueryItems: [URLQueryItem]?](urlcomponents/percentencodedqueryitems.md)
+- [var percentEncodedQueryItems: [URLQueryItem]?](./percentencodedqueryitems.md)
   The query subcomponent, as an array of percent-encoded query items.
-- [struct URLQueryItem](urlqueryitem.md)
+- [struct URLQueryItem](../urlqueryitem.md)
   A single name-value pair from the query portion of a URL.
-- [var percentEncodedUser: String?](urlcomponents/percentencodeduser.md)
+- [var percentEncodedUser: String?](./percentencodeduser.md)
   The user subcomponent, percent-encoded.
 
 

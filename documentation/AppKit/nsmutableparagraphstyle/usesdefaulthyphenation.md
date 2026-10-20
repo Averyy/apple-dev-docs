@@ -1,7 +1,8 @@
 # usesDefaultHyphenation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,17 +13,22 @@
 var usesDefaultHyphenation: Bool { get set }
 ```
 
+```objc
+@property (readwrite) BOOL usesDefaultHyphenation;
+```
+
 ## See Also
 
-- [var lineBreakMode: NSLineBreakMode](nsmutableparagraphstyle/linebreakmode.md)
+### Setting line-break information
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The mode for breaking lines in the paragraph.
-- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](nsmutableparagraphstyle/linebreakstrategy.md)
+- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](./linebreakstrategy.md)
   The strategies that the text system may use to break lines while laying out the paragraph.
-- [var hyphenationFactor: Float](nsmutableparagraphstyle/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
-- [var tighteningFactorForTruncation: Float](nsmutableparagraphstyle/tighteningfactorfortruncation.md)
+- [var tighteningFactorForTruncation: Float](./tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
-- [var allowsDefaultTighteningForTruncation: Bool](nsmutableparagraphstyle/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](./allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text.
 
 

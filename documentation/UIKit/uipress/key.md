@@ -1,7 +1,8 @@
 # key
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key pressed or released on a physical keyboard.
 
@@ -18,9 +19,13 @@ The key pressed or released on a physical keyboard.
 var key: UIKey? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIKey * key;
+```
+
 ## Mentions
 
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
 #### Discussion
 
@@ -28,11 +33,12 @@ This property is `nil` when the press event isn’t from a keyboard; for example
 
 ## See Also
 
-- [var type: UIPress.PressType](uipress/type.md)
+### Getting press attributes
+- [var type: UIPress.PressType](./type.md)
   The type of the specified press.
-- [var phase: UIPress.Phase](uipress/phase-swift.property.md)
+- [var phase: UIPress.Phase](./phase-swift.property.md)
   The current press phase of the object.
-- [var timestamp: TimeInterval](uipress/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the press occurred or when it was last mutated.
 
 

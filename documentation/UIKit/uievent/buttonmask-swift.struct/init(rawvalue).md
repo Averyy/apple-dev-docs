@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button mask with the specified raw value.
 
@@ -19,7 +20,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [static func button(Int) -> UIEvent.ButtonMask](uievent/buttonmask-swift.struct/button(_:).md)
+### Creating button masks
+- [static func button(Int) -> UIEvent.ButtonMask](./button%28_%29.md)
   Creates a button mask from the specified button index.
 
 

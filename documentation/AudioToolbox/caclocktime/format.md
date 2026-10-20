@@ -1,15 +1,20 @@
 # format
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var format: CAClockTimeFormat
+```
+
+```c
+CAClockTimeFormat format;
 ```
 
 

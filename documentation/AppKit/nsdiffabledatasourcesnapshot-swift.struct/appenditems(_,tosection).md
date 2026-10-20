@@ -1,7 +1,8 @@
 # appendItems(_:toSection:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the items with the specified identifiers to the specified section of the snapshot.
 
@@ -21,9 +22,10 @@ mutating func appendItems(_ identifiers: [ItemIdentifierType], toSection section
 
 ## See Also
 
-- [init()](nsdiffabledatasourcesnapshot-swift.struct/init.md)
+### Creating a Snapshot
+- [init()](./init%28%29.md)
   Creates an empty snapshot.
-- [func appendSections([SectionIdentifierType])](nsdiffabledatasourcesnapshot-swift.struct/appendsections(_:).md)
+- [func appendSections([SectionIdentifierType])](./appendsections%28_%29.md)
   Adds the sections with the specified identifiers to the snapshot.
 
 

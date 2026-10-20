@@ -1,7 +1,8 @@
 # kSecAttrProtocolFTPAccount
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A client side FTP account.
 
@@ -18,6 +19,10 @@ A client side FTP account.
 
 ```swift
 let kSecAttrProtocolFTPAccount: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolFTPAccount;
 ```
 
 

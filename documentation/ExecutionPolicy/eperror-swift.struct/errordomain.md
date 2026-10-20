@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Execution Policy  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 13.1+

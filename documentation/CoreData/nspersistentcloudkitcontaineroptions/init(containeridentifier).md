@@ -1,7 +1,8 @@
 # init(containerIdentifier:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes container options using the given CloudKit container identifier.
 
@@ -20,11 +21,16 @@ Initializes container options using the given CloudKit container identifier.
 init(containerIdentifier: String)
 ```
 
+```objc
+- (instancetype) initWithContainerIdentifier:(NSString *) containerIdentifier;
+```
+
 ## See Also
 
-- [var containerIdentifier: String](nspersistentcloudkitcontaineroptions/containeridentifier.md)
+### Creating Container Options
+- [var containerIdentifier: String](./containeridentifier.md)
   The identifier of the CloudKit container associated with a given store description.
-- [var databaseScope: CKDatabase.Scope](nspersistentcloudkitcontaineroptions/databasescope-4c72t.md)
+- [var databaseScope: CKDatabase.Scope](./databasescope-4c72t.md)
   The database scope — public, private, or shared — to use for a specified store in a persistent CloudKit container.
 
 

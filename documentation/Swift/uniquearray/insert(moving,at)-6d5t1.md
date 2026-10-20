@@ -1,7 +1,8 @@
 # insert(moving:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the elements of an output span into this array, starting at the specified position, and leaving the span empty.
 
@@ -26,7 +27,7 @@ All existing elements at or following the specified position are moved to make r
 
 If the array does not have sufficient capacity to hold the new elements, then this reallocates storage to extend its capacity, using a geometric growth rate.
 
-> **Note**: O(`self.count` + `items.count`)
+> **Complexity**: O(`self.count` + `items.count`)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # legalPageURL
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A link to the legal attribution page that contains copyright information about the weather data sources.
 
@@ -22,13 +23,14 @@ var legalPageURL: URL { get set }
 
 ## See Also
 
-- [var combinedMarkDarkURL: URL](weatherattribution/combinedmarkdarkurl.md)
+### Getting the properties
+- [var combinedMarkDarkURL: URL](./combinedmarkdarkurl.md)
   A URL for the combined “ Apple Weather” mark, in dark variant.
-- [var combinedMarkLightURL: URL](weatherattribution/combinedmarklighturl.md)
+- [var combinedMarkLightURL: URL](./combinedmarklighturl.md)
   A URL for the combined “ Apple Weather” mark, in light variant.
-- [var serviceName: String](weatherattribution/servicename.md)
+- [var serviceName: String](./servicename.md)
   The weather data provider name.
-- [var squareMarkURL: URL](weatherattribution/squaremarkurl.md)
+- [var squareMarkURL: URL](./squaremarkurl.md)
   A URL for the square Apple Weather mark.
 
 

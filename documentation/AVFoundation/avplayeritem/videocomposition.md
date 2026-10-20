@@ -1,7 +1,8 @@
 # videoComposition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video composition settings to be applied during playback.
 
@@ -20,15 +21,20 @@ The video composition settings to be applied during playback.
 nonisolated var videoComposition: AVVideoComposition? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
+```
+
 #### Discussion
 
 A video composition can only be used with file-based media and is not supported for use with media served using HTTP Live Streaming.
 
 ## See Also
 
-- [var customVideoCompositor: (any AVVideoCompositing)?](avplayeritem/customvideocompositor.md)
+### Configuring video compositing
+- [var customVideoCompositor: (any AVVideoCompositing)?](./customvideocompositor.md)
   The custom video compositor.
-- [var seekingWaitsForVideoCompositionRendering: Bool](avplayeritem/seekingwaitsforvideocompositionrendering.md)
+- [var seekingWaitsForVideoCompositionRendering: Bool](./seekingwaitsforvideocompositionrendering.md)
   A Boolean value that indicates whether the item’s timing follows the displayed video frame when seeking with a video composition.
 
 

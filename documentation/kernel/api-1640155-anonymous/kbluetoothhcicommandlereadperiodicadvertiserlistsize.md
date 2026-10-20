@@ -1,14 +1,15 @@
 # kBluetoothHCICommandLEReadPeriodicAdvertiserListSize
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandLEReadPeriodicAdvertiserListSize = 0x004A
 ```
 

@@ -1,7 +1,8 @@
 # realtime
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The property that configures parameters that prioritize latency at the expense of throughput, power consumption, and other concurrent Wi-Fi use cases.
 
@@ -22,7 +23,8 @@ Realtime parameters.
 
 ## See Also
 
-- [static let defaults: WAParameters](waparameters/defaults.md)
+### Setting common configurations
+- [static let defaults: WAParameters](./defaults.md)
   The property that configures default parameters that prioritize bulk throughput, power consumption, and other concurrent Wi-Fi use cases.
 
 

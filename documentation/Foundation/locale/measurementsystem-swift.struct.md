@@ -1,7 +1,8 @@
 # Locale.MeasurementSystem
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the measurement system used by a locale, like metric or the US system.
 
@@ -23,52 +24,53 @@ struct MeasurementSystem
 ## Topics
 
 ### Creating a measurement system instance
-- [init(String)](locale/measurementsystem-swift.struct/init(_:).md)
+- [init(String)](./measurementsystem-swift.struct/init%28_%29.md)
   Creates a measurement system instance from a BCP 47 identifier.
-- [init(stringLiteral: String)](locale/measurementsystem-swift.struct/init(stringliteral:).md)
+- [init(stringLiteral: String)](./measurementsystem-swift.struct/init%28stringliteral%29.md)
   Creates a measurement system instance from a BCP 47 identifier as a string literal.
 ### Inspecting measurement system properties
-- [var identifier: String](locale/measurementsystem-swift.struct/identifier.md)
+- [var identifier: String](./measurementsystem-swift.struct/identifier.md)
   The measurement system’s BCP 47 identifier.
 ### Using common measurement systems
-- [static var measurementSystems: [Locale.MeasurementSystem]](locale/measurementsystem-swift.struct/measurementsystems.md)
+- [static var measurementSystems: [Locale.MeasurementSystem]](./measurementsystem-swift.struct/measurementsystems.md)
   An array of the measurement systems defined by the Unicode Common Locale Data Repository (CLDR).
-- [static let metric: Locale.MeasurementSystem](locale/measurementsystem-swift.struct/metric.md)
+- [static let metric: Locale.MeasurementSystem](./measurementsystem-swift.struct/metric.md)
   The metric measurement system.
-- [static let uk: Locale.MeasurementSystem](locale/measurementsystem-swift.struct/uk.md)
+- [static let uk: Locale.MeasurementSystem](./measurementsystem-swift.struct/uk.md)
   The United Kingdom measurement system.
-- [static let us: Locale.MeasurementSystem](locale/measurementsystem-swift.struct/us.md)
+- [static let us: Locale.MeasurementSystem](./measurementsystem-swift.struct/us.md)
   The United States measurement system.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var currency: Locale.Currency?](locale/currency-swift.property.md)
+### Getting measurement and counting components
+- [var currency: Locale.Currency?](./currency-swift.property.md)
   The currency used by the locale.
-- [Locale.Currency](locale/currency-swift.struct.md)
+- [Locale.Currency](./currency-swift.struct.md)
   A type that represents the currency system used by a locale, like dollars or euros.
-- [var measurementSystem: Locale.MeasurementSystem](locale/measurementsystem-swift.property.md)
+- [var measurementSystem: Locale.MeasurementSystem](./measurementsystem-swift.property.md)
   The measurement system used by the locale, like metric or the US system.
-- [var numberingSystem: Locale.NumberingSystem](locale/numberingsystem-swift.property.md)
+- [var numberingSystem: Locale.NumberingSystem](./numberingsystem-swift.property.md)
   The numbering system used by the locale.
-- [var availableNumberingSystems: [Locale.NumberingSystem]](locale/availablenumberingsystems.md)
+- [var availableNumberingSystems: [Locale.NumberingSystem]](./availablenumberingsystems.md)
   An array containing all the valid numbering systems for the locale.
-- [Locale.NumberingSystem](locale/numberingsystem-swift.struct.md)
+- [Locale.NumberingSystem](./numberingsystem-swift.struct.md)
   A type that represents the numbering system used in a locale.
 
 

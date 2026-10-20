@@ -1,7 +1,8 @@
 # releaseState
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The release state of the game activity definition in App Store Connect.
 
@@ -19,9 +20,14 @@ The release state of the game activity definition in App Store Connect.
 var releaseState: GKReleaseState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GKReleaseState releaseState;
+```
+
 ## See Also
 
-- [struct GKReleaseState](gkreleasestate.md)
+### Getting the release state
+- [struct GKReleaseState](../gkreleasestate.md)
   Describes the release state of an App Store Connect resource, such as an Achievement or Leaderboard.
 
 

@@ -1,7 +1,8 @@
 # approve
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system-preferred choice to approve a permission request.
 
@@ -20,15 +21,16 @@ static let approve: PermissionChoice
 
 ## Mentions
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+- [Creating a communication experience](../creating-a-communication-experience.md)
 
 ## See Also
 
-- [var answer: PermissionChoice.Answer](permissionchoice/answer-swift.property.md)
+### Accessing answers
+- [var answer: PermissionChoice.Answer](./answer-swift.property.md)
   The type of answer this choice represents.
-- [PermissionChoice.Answer](permissionchoice/answer-swift.enum.md)
+- [PermissionChoice.Answer](./answer-swift.enum.md)
   An answer to the permission request.
-- [static let decline: PermissionChoice](permissionchoice/decline.md)
+- [static let decline: PermissionChoice](./decline.md)
   The system-preferred choice to decline a permission request.
 
 

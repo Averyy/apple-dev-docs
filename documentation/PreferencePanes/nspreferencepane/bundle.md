@@ -1,7 +1,8 @@
 # bundle
 
 **Framework**: Preference Panes  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preference pane’s bundle.
 
@@ -15,11 +16,16 @@ The preference pane’s bundle.
 var bundle: Bundle { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) NSBundle * bundle;
+```
+
 ## See Also
 
-- [var mainNibName: String](nspreferencepane/mainnibname.md)
+### Getting the Bundle Information
+- [var mainNibName: String](./mainnibname.md)
   The name of the preference pane’s nib file.
-- [var mainView: NSView](nspreferencepane/mainview.md)
+- [var mainView: NSView](./mainview.md)
   The main view of the preference pane.
 
 

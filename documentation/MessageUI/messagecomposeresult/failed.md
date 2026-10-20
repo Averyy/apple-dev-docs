@@ -1,7 +1,8 @@
 # MessageComposeResult.failed
 
 **Framework**: Message UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user’s attempt to save or send the message was unsuccessful.
 
@@ -17,11 +18,16 @@ The user’s attempt to save or send the message was unsuccessful.
 case failed
 ```
 
+```c
+MessageComposeResultFailed
+```
+
 ## See Also
 
-- [MessageComposeResult.cancelled](messagecomposeresult/cancelled.md)
+### Constants
+- [MessageComposeResult.cancelled](./cancelled.md)
   The user canceled the composition.
-- [MessageComposeResult.sent](messagecomposeresult/sent.md)
+- [MessageComposeResult.sent](./sent.md)
   The user successfully queued or sent the message.
 
 

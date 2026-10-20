@@ -1,7 +1,8 @@
 # hasTag(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns true if the container values contain a tag matching a given value.
 

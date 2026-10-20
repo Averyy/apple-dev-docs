@@ -1,7 +1,8 @@
 # formUnion(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Expands the bounding box to contain the specified bounds.
 
@@ -11,12 +12,18 @@ Expands the bounding box to contain the specified bounds.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 mutating func formUnion(_ other: BoundingBox)
+```
+
+**Other overloads**:
+
+```swift
+mutating func formUnion(_ point: SIMD3<Float>)
 ```
 
 ## Parameters

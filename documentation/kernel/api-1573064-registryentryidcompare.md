@@ -1,22 +1,24 @@
 # RegistryEntryIDCompare
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 Boolean RegistryEntryIDCompare(const RegEntryID *id1, const RegEntryID *id2);
 ```
 
 ## See Also
 
-- [RegistryEntryIDInit](1573061-registryentryidinit.md)
-- [RegistryEntryIDCopy](1573153-registryentryidcopy.md)
-- [RegistryEntryIDDispose](1573067-registryentryiddispose.md)
+### Entry IDs
+- [RegistryEntryIDInit](./api-1573061-registryentryidinit.md)
+- [RegistryEntryIDCopy](./api-1573153-registryentryidcopy.md)
+- [RegistryEntryIDDispose](./api-1573067-registryentryiddispose.md)
 
 
 ---

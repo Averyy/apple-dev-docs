@@ -1,14 +1,15 @@
 # kIOUSBEndpointDescriptorReserved
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointDescriptorReserved = IOUSBBitRange(13, 15)
 ```
 

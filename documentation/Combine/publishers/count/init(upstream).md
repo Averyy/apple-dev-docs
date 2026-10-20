@@ -1,7 +1,8 @@
 # init(upstream:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that publishes the number of elements received from the upstream publisher.
 

@@ -1,7 +1,8 @@
 # Font face
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 16-bit integer that indicates the font’s style.
 
@@ -21,25 +22,26 @@ Set this field to `0` for normal text. You can enable other style options by usi
 
 ## See Also
 
-- [Display flags](text_sample_description/display_flags.md)
+### Data fields
+- [Display flags](./display_flags.md)
   A 32-bit integer containing flags that describe how the text should be drawn.
-- [Text justification](text_sample_description/text_justification.md)
+- [Text justification](./text_justification.md)
   A 32-bit integer that indicates how the text should be aligned.
-- [Background color](text_sample_description/background_color.md)
+- [Background color](./background_color.md)
   A 48-bit RGB color that specifies the text’s background color.
-- [Default text box](text_sample_description/default_text_box.md)
+- [Default text box](./default_text_box.md)
   A 64-bit rectangle that specifies an area to receive text (top, left, bottom, right).
-- [Reserved](text_sample_description/reserved.md)
+- [Reserved](./reserved.md)
   A 64-bit value.
-- [Font number](text_sample_description/font_number.md)
+- [Font number](./font_number.md)
   A 16-bit value.
-- [Reserved](text_sample_description/reserved2.md)
+- [Reserved](./reserved2.md)
   An 8-bit value.
-- [Reserved](text_sample_description/reserved3.md)
+- [Reserved](./reserved3.md)
   A 16-bit value.
-- [Foreground color](text_sample_description/foreground_color.md)
+- [Foreground color](./foreground_color.md)
   A 48-bit RGB color that specifies the text’s foreground color.
-- [Text name](text_sample_description/text_name.md)
+- [Text name](./text_name.md)
   A Pascal string specifying the name of the font to use to display the text.
 
 

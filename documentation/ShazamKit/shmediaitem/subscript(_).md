@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: ShazamKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the property for the specified key for reading.
 
@@ -20,6 +21,10 @@ Accesses the property for the specified key for reading.
 subscript(key: SHMediaItemProperty) -> Any { get }
 ```
 
+```objc
+- (id) objectForKeyedSubscript:(SHMediaItemProperty) key;
+```
+
 #### Return Value
 
 The value of the property; otherwise, `nil`.
@@ -30,11 +35,12 @@ The value of the property; otherwise, `nil`.
 
 ## See Also
 
-- [struct SHMediaItemProperty](shmediaitemproperty.md)
+### Working with media item properties
+- [struct SHMediaItemProperty](../shmediaitemproperty.md)
   Constants for the media item property names.
-- [var timeRanges: [Range<TimeInterval>]](shmediaitem/timeranges-8msna.md)
+- [var timeRanges: [Range<TimeInterval>]](./timeranges-8msna.md)
   An array of ranges that indicate the offsets within the reference signature that this media item describes.
-- [var frequencySkewRanges: [Range<Float>]](shmediaitem/frequencyskewranges-1j7d3.md)
+- [var frequencySkewRanges: [Range<Float>]](./frequencyskewranges-1j7d3.md)
   An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
 
 

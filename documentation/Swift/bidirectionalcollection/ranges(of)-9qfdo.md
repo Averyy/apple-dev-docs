@@ -1,7 +1,8 @@
 # ranges(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the ranges of the all non-overlapping matches for the regex within this collection, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Returns the ranges of the all non-overlapping matches for the regex within this 
 ```swift
 func ranges(@RegexComponentBuilder of content: () -> some RegexComponent) -> [Range<Self.Index>]
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

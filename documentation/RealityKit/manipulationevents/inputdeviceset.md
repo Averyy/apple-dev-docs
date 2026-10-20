@@ -1,7 +1,8 @@
 # ManipulationEvents.InputDeviceSet
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - visionOS 26.0+

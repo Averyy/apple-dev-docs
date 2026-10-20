@@ -1,7 +1,8 @@
 # readAttributeLabelList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLabelList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLabelList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeLabelListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

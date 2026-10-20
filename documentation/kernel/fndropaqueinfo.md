@@ -1,14 +1,15 @@
 # FndrOpaqueInfo
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct FndrOpaqueInfo {
     ...
 } FndrOpaqueInfo;
@@ -17,7 +18,7 @@ typedef struct FndrOpaqueInfo {
 ## Topics
 
 ### Instance Properties
-- [opaque](fndropaqueinfo/1578117-opaque.md)
+- [opaque](./fndropaqueinfo/api-1578117-opaque.md)
 
 
 ---

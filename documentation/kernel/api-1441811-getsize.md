@@ -1,14 +1,15 @@
 # getSize
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_size_t getSize(void);
 ```
 

@@ -1,7 +1,8 @@
 # FinanceStore.ContainsOrderResult
 
 **Framework**: FinanceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Result type for queries against the finance store’s orders.
 
@@ -23,33 +24,34 @@ These values represent the possible results of the `containsOrder` method you us
 ## Topics
 
 ### Enumeration Cases
-- [FinanceStore.ContainsOrderResult.exists](financestore/containsorderresult/exists.md)
+- [FinanceStore.ContainsOrderResult.exists](./containsorderresult/exists.md)
   The specified order exists.
-- [FinanceStore.ContainsOrderResult.newerExists](financestore/containsorderresult/newerexists.md)
+- [FinanceStore.ContainsOrderResult.newerExists](./containsorderresult/newerexists.md)
   A newer order than the one you specified exists.
-- [FinanceStore.ContainsOrderResult.notFound](financestore/containsorderresult/notfound.md)
+- [FinanceStore.ContainsOrderResult.notFound](./containsorderresult/notfound.md)
   The specified order doesn’t exist.
-- [FinanceStore.ContainsOrderResult.olderExists](financestore/containsorderresult/olderexists.md)
+- [FinanceStore.ContainsOrderResult.olderExists](./containsorderresult/olderexists.md)
   A older order than the one you specified exists.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FinanceStore.DataType](financestore/datatype.md)
+### Enumerations
+- [FinanceStore.DataType](./datatype.md)
   Values that describe the kinds of data in the finance store.
-- [FinanceStore.SaveOrderResult](financestore/saveorderresult.md)
+- [FinanceStore.SaveOrderResult](./saveorderresult.md)
   Result type for the finance store’s save order method.
-- [FinanceStore.BackgroundDataType](financestore/backgrounddatatype.md)
+- [FinanceStore.BackgroundDataType](./backgrounddatatype.md)
   Types of data in the finance store supported by background delivery.
-- [FinanceStore.UpdateFrequency](financestore/updatefrequency.md)
+- [FinanceStore.UpdateFrequency](./updatefrequency.md)
   Frequencies of background delivery updates.
 
 

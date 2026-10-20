@@ -1,7 +1,8 @@
 # kDNSServiceProperty_DaemonVersion
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The daemon version property.
 
@@ -20,9 +21,13 @@ The daemon version property.
 var kDNSServiceProperty_DaemonVersion: String { get }
 ```
 
+```c
+#define kDNSServiceProperty_DaemonVersion
+```
+
 #### Discussion
 
-When requesting [`kDNSServiceProperty_DaemonVersion`](kdnsserviceproperty_daemonversion.md), the result pointer must point to a 32-bit unsigned integer, and the size parameter must be set to sizeof(uint32_t).
+When requesting [`kDNSServiceProperty_DaemonVersion`](./kdnsserviceproperty_daemonversion.md), the result pointer must point to a 32-bit unsigned integer, and the size parameter must be set to sizeof(uint32_t).
 
 On return, the 32-bit unsigned integer contains the version number, formatted as follows:
 
@@ -53,16 +58,17 @@ Example usage:
 
 ## See Also
 
-- [var DNS_SD_ORIGINAL_ENCODING_VERSION_NUMBER_MAX: Int32](dns_sd_original_encoding_version_number_max.md)
-- [let kDNSServiceAttributeAAAAFallback: _](kdnsserviceattributeaaaafallback.md)
-- [var kDNSServiceInterfaceIndexAny: Int32](kdnsserviceinterfaceindexany.md)
-- [var kDNSServiceInterfaceIndexBLE: UInt32](kdnsserviceinterfaceindexble.md)
-- [var kDNSServiceInterfaceIndexInfra: UInt32](kdnsserviceinterfaceindexinfra.md)
-- [var kDNSServiceInterfaceIndexLocalOnly: UInt32](kdnsserviceinterfaceindexlocalonly.md)
-- [var kDNSServiceInterfaceIndexP2P: UInt32](kdnsserviceinterfaceindexp2p.md)
-- [var kDNSServiceInterfaceIndexUnicast: UInt32](kdnsserviceinterfaceindexunicast.md)
-- [var kDNSServiceMaxDomainName: Int32](kdnsservicemaxdomainname.md)
-- [var kDNSServiceMaxServiceName: Int32](kdnsservicemaxservicename.md)
+### Constants
+- [var DNS_SD_ORIGINAL_ENCODING_VERSION_NUMBER_MAX: Int32](./dns_sd_original_encoding_version_number_max.md)
+- [let kDNSServiceAttributeAAAAFallback: _](./kdnsserviceattributeaaaafallback.md)
+- [var kDNSServiceInterfaceIndexAny: Int32](./kdnsserviceinterfaceindexany.md)
+- [var kDNSServiceInterfaceIndexBLE: UInt32](./kdnsserviceinterfaceindexble.md)
+- [var kDNSServiceInterfaceIndexInfra: UInt32](./kdnsserviceinterfaceindexinfra.md)
+- [var kDNSServiceInterfaceIndexLocalOnly: UInt32](./kdnsserviceinterfaceindexlocalonly.md)
+- [var kDNSServiceInterfaceIndexP2P: UInt32](./kdnsserviceinterfaceindexp2p.md)
+- [var kDNSServiceInterfaceIndexUnicast: UInt32](./kdnsserviceinterfaceindexunicast.md)
+- [var kDNSServiceMaxDomainName: Int32](./kdnsservicemaxdomainname.md)
+- [var kDNSServiceMaxServiceName: Int32](./kdnsservicemaxservicename.md)
 
 
 ---

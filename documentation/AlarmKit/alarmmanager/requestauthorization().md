@@ -1,7 +1,8 @@
 # requestAuthorization()
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests permission to use the alarm system if it hasn’t been requested before.
 

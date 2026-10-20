@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoCloseHex
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A hex string was missing a “$” or “»” character.
 

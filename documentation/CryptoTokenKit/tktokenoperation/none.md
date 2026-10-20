@@ -1,7 +1,8 @@
 # TKTokenOperation.none
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,16 +19,21 @@
 case none
 ```
 
+```c
+TKTokenOperationNone
+```
+
 #### Discussion
 
 No operation
 
 ## See Also
 
-- [TKTokenOperation.readData](tktokenoperation/readdata.md)
-- [TKTokenOperation.signData](tktokenoperation/signdata.md)
-- [TKTokenOperation.decryptData](tktokenoperation/decryptdata.md)
-- [TKTokenOperation.performKeyExchange](tktokenoperation/performkeyexchange.md)
+### Constants
+- [TKTokenOperation.readData](./readdata.md)
+- [TKTokenOperation.signData](./signdata.md)
+- [TKTokenOperation.decryptData](./decryptdata.md)
+- [TKTokenOperation.performKeyExchange](./performkeyexchange.md)
 
 
 ---

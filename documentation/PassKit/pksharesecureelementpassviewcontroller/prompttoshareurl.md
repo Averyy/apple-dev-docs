@@ -1,7 +1,8 @@
 # promptToShareURL
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var promptToShareURL: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL promptToShareURL;
 ```
 
 

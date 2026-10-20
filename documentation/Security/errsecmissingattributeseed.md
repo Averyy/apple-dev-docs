@@ -1,7 +1,8 @@
 # errSecMissingAttributeSeed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A seed attribute is missing.
 
@@ -18,6 +19,10 @@ A seed attribute is missing.
 
 ```swift
 var errSecMissingAttributeSeed: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeSeed
 ```
 
 

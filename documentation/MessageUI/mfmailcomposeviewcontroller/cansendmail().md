@@ -1,7 +1,8 @@
 # canSendMail()
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean that indicates whether the current device is able to send email.
 
@@ -17,13 +18,17 @@ Returns a Boolean that indicates whether the current device is able to send emai
 class func canSendMail() -> Bool
 ```
 
+```objc
++ (BOOL) canSendMail;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device is configured for sending email or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if the device is configured for sending email or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 
-You should call this method before attempting to display the mail composition interface. If it returns [`false`](https://developer.apple.com/documentation/swift/false), you must not display the mail composition interface.
+You should call this method before attempting to display the mail composition interface. If it returns [`false`](../../Swift/false.md), you must not display the mail composition interface.
 
 
 ---

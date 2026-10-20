@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The x and y position to use as the center of the line screen pattern.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The x and y position to use as the center of the line screen pattern.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var angle: Float](cilinescreen/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the pattern.
-- [var inputImage: CIImage?](cilinescreen/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var sharpness: Float](cilinescreen/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The sharpness of the pattern.
-- [var width: Float](cilinescreen/width.md)
+- [var width: Float](./width.md)
   The distance between lines in the pattern.
 
 

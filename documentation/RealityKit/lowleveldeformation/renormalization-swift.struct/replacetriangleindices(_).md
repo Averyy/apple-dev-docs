@@ -1,7 +1,8 @@
 # replaceTriangleIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the triangle index buffer using the given closure.
 
@@ -25,7 +26,7 @@ The value returned by `body`.
 
 After the closure returns, the framework validates every vertex index against the vertex count. An out-of-range index causes a throw.
 
-> **Note**: If any vertex index is outside `[0, vertexCount)`.
+> **Throws**: If any vertex index is outside `[0, vertexCount)`.
 
 ## Parameters
 

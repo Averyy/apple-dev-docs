@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an `Image` with an image resource.
 
@@ -22,9 +23,10 @@ init(_ resource: ImageResource)
 
 ## See Also
 
-- [init(String, bundle: Bundle?)](image/init(_:bundle:).md)
+### Creating an image
+- [init(String, bundle: Bundle?)](./init%28_,bundle%29.md)
   Creates a labeled image that you can use as content for controls.
-- [init(String, variableValue: Double?, bundle: Bundle?)](image/init(_:variablevalue:bundle:).md)
+- [init(String, variableValue: Double?, bundle: Bundle?)](./init%28_,variablevalue,bundle%29.md)
   Creates a labeled image that you can use as content for controls, with a variable value.
 
 

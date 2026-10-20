@@ -1,7 +1,8 @@
 # deviceAccountIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the device-specific account number.
 
@@ -11,7 +12,7 @@ The unique identifier for the device-specific account number.
 
 ## Declaration
 
-```swift
+```
 DOMString deviceAccountIdentifier;
 ```
 
@@ -21,11 +22,12 @@ This number is not the account number itself. If the pass has not been provision
 
 ## See Also
 
-- [primaryAccountIdentifier](applepaypaymentpass/primaryaccountidentifier.md)
+### Account Identity
+- [primaryAccountIdentifier](./primaryaccountidentifier.md)
   The unique identifier for the primary account number for the payment card.
-- [primaryAccountNumberSuffix](applepaypaymentpass/primaryaccountnumbersuffix.md)
+- [primaryAccountNumberSuffix](./primaryaccountnumbersuffix.md)
   A version of the primary account number suitable for display in your UI.
-- [deviceAccountNumberSuffix](applepaypaymentpass/deviceaccountnumbersuffix.md)
+- [deviceAccountNumberSuffix](./deviceaccountnumbersuffix.md)
   A version of the device account number suitable for display in your UI.
 
 

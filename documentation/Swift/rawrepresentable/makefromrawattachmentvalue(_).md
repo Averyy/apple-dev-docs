@@ -1,7 +1,8 @@
 # makeFromRawAttachmentValue(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static func makeFromRawAttachmentValue(_ repr: CVAttachmentRawValue) -> Self?
 ```
+
+Available when `RawValue` conforms to `CVAttachmentValueRepresentable`.
 
 
 ---

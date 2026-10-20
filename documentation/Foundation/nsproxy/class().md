@@ -1,7 +1,8 @@
 # class()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns `self` (the class object).
 
@@ -20,15 +21,20 @@ Returns `self` (the class object).
 class func `class`() -> AnyClass
 ```
 
+```objc
++ (Class) class;
+```
+
 #### Return Value
 
 `self`. Because this is a class method, it returns the class object
 
 ## See Also
 
-- [var description: String](nsproxy/description.md)
+### Describing a Proxy Class or Object
+- [var description: String](./description.md)
   A string containing the real class name and the id of the receiver as a hexadecimal number.
-- [var debugDescription: String](nsproxy/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A string containing a human-readable description of the receiver suitable for debugging.
 
 

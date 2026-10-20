@@ -1,7 +1,8 @@
 # filterItems(matching:contains:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters items by a given relationship that matches a specific value.
 

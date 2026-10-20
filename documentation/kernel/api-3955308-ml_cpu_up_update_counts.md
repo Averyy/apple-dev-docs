@@ -1,14 +1,15 @@
 # ml_cpu_up_update_counts
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_cpu_up_update_counts(int cpu_id);
 ```
 

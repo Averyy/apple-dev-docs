@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel buffer specified when the object was created.
 
@@ -19,9 +20,14 @@ The pixel buffer specified when the object was created.
 var buffer: CVPixelBuffer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CVPixelBufferRef buffer;
+```
+
 ## See Also
 
-- [var presentationTimeStamp: CMTime](vtframeprocessorframe/presentationtimestamp.md)
+### Inspecting the frame
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The presentation timestamp specified when the object was created.
 
 

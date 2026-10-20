@@ -1,7 +1,8 @@
 # toolTip
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display in the tooltip.
 
@@ -17,13 +18,18 @@ The text to display in the tooltip.
 var toolTip: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * toolTip;
+```
+
 #### Discussion
 
-To set the tooltip text, create a tooltip configuration object using either the [`init(toolTip:)`](uitooltipconfiguration/init(tooltip:).md) or [`init(toolTip:in:)`](uitooltipconfiguration/init(tooltip:in:).md) methods.
+To set the tooltip text, create a tooltip configuration object using either the [`init(toolTip:)`](./init%28tooltip%29.md) or [`init(toolTip:in:)`](./init%28tooltip,in%29.md) methods.
 
 ## See Also
 
-- [var sourceRect: CGRect?](uitooltipconfiguration/sourcerect-8zvo1.md)
+### Accessing the configuration settings
+- [var sourceRect: CGRect?](./sourcerect-8zvo1.md)
   The region of the view or control where the pointer must hover to trigger the appearance of the tooltip.
 
 

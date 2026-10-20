@@ -1,7 +1,8 @@
 # matrix
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The matrix as a SIMD `double3x3`.
 

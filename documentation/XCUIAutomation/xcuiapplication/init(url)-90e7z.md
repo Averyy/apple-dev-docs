@@ -1,12 +1,13 @@
 # init(url:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a proxy for the application at the specified file system URL.
 
 **Availability**:
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration
@@ -15,15 +16,20 @@ Creates a proxy for the application at the specified file system URL.
 init(url: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
+```
+
 #### Discussion
 
 This initializer is only available on macOS.
 
 ## See Also
 
-- [init()](xcuiapplication/init.md)
+### Creating an application proxy
+- [init()](./init%28%29.md)
   Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.
-- [init(bundleIdentifier: String)](xcuiapplication/init(bundleidentifier:).md)
+- [init(bundleIdentifier: String)](./init%28bundleidentifier%29.md)
   Creates a proxy for an application for the specified bundle identifier.
 
 

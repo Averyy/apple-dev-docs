@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Response
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A WebSocket handshake reponse sent from a server to a client.
 
@@ -23,26 +24,27 @@ struct Response
 ## Topics
 
 ### Sending Handshake Responses
-- [init(status: NWProtocolWebSocket.Response.Status, subprotocol: String?, additionalHeaders: [(name: String, value: String)]?)](nwprotocolwebsocket/response/init(status:subprotocol:additionalheaders:).md)
+- [init(status: NWProtocolWebSocket.Response.Status, subprotocol: String?, additionalHeaders: [(name: String, value: String)]?)](./response/init%28status,subprotocol,additionalheaders%29.md)
   Initializes a WebSocket server response with a status, selected subprotocol, and additional HTTP headers.
-- [NWProtocolWebSocket.Response.Status](nwprotocolwebsocket/response/status-swift.enum.md)
+- [NWProtocolWebSocket.Response.Status](./response/status-swift.enum.md)
   Status values that are sent with a WebSocket server response.
-- [let status: NWProtocolWebSocket.Response.Status](nwprotocolwebsocket/response/status-swift.property.md)
+- [let status: NWProtocolWebSocket.Response.Status](./response/status-swift.property.md)
   The status of a WebSocket server response.
-- [let subprotocol: String?](nwprotocolwebsocket/response/subprotocol.md)
+- [let subprotocol: String?](./response/subprotocol.md)
   The selected subprotocol in a WebSocket server response.
-- [let additionalHeaders: [(name: String, value: String)]?](nwprotocolwebsocket/response/additionalheaders.md)
+- [let additionalHeaders: [(name: String, value: String)]?](./response/additionalheaders.md)
   Any additional HTTP headers in a WebSocket server response.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setClientRequestHandler(DispatchQueue, handler: ([String], [(name: String, value: String)]) -> NWProtocolWebSocket.Response)](nwprotocolwebsocket/options/setclientrequesthandler(_:handler:).md)
+### Handling Server Handshakes
+- [func setClientRequestHandler(DispatchQueue, handler: ([String], [(name: String, value: String)]) -> NWProtocolWebSocket.Response)](./options/setclientrequesthandler%28_,handler%29.md)
   Sets a handler to react to as a server to inbound WebSocket client handshakes.
 
 

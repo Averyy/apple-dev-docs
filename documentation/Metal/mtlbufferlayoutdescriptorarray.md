@@ -1,7 +1,8 @@
 # MTLBufferLayoutDescriptorArray
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An array of buffer layout descriptor objects.
 
@@ -19,37 +20,42 @@ An array of buffer layout descriptor objects.
 class MTLBufferLayoutDescriptorArray
 ```
 
+```objc
+@interface MTLBufferLayoutDescriptorArray : NSObject
+```
+
 #### Overview
 
-An [`MTLBufferLayoutDescriptorArray`](mtlbufferlayoutdescriptorarray.md) defines the data layout and loading for compute data, using [`MTLBufferLayoutDescriptor`](mtlbufferlayoutdescriptor.md) instances.
+An [`MTLBufferLayoutDescriptorArray`](./mtlbufferlayoutdescriptorarray.md) defines the data layout and loading for compute data, using [`MTLBufferLayoutDescriptor`](./mtlbufferlayoutdescriptor.md) instances.
 
 ## Topics
 
 ### Array accessors
-- [subscript(Int) -> MTLBufferLayoutDescriptor!](mtlbufferlayoutdescriptorarray/subscript(_:).md)
+- [subscript(Int) -> MTLBufferLayoutDescriptor!](./mtlbufferlayoutdescriptorarray/subscript%28_%29.md)
   Returns the state of the specified buffer layout.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var stageInputDescriptor: MTLStageInputOutputDescriptor?](mtlcomputepipelinedescriptor/stageinputdescriptor.md)
+### Configuring compute pass inputs
+- [var stageInputDescriptor: MTLStageInputOutputDescriptor?](./mtlcomputepipelinedescriptor/stageinputdescriptor.md)
   The organization of input and output data for the next kernel call.
-- [class MTLAttributeDescriptor](mtlattributedescriptor.md)
+- [class MTLAttributeDescriptor](./mtlattributedescriptor.md)
   A descriptor of an argument’s format and where its data is in memory.
-- [class MTLAttributeDescriptorArray](mtlattributedescriptorarray.md)
+- [class MTLAttributeDescriptorArray](./mtlattributedescriptorarray.md)
   An array of attribute descriptor objects.
-- [class MTLBufferLayoutDescriptor](mtlbufferlayoutdescriptor.md)
+- [class MTLBufferLayoutDescriptor](./mtlbufferlayoutdescriptor.md)
   A description of how a compute function fetches input data for an attribute.
 
 

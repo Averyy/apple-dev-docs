@@ -1,7 +1,8 @@
 # computeNormBackward(input:output:axes:outputGradient:generatingInputGradient:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Backpropogates gradients for the compute norm function.
 
@@ -11,8 +12,10 @@ Backpropogates gradients for the compute norm function.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -30,13 +33,14 @@ static func computeNormBackward(input: BNNSNDArrayDescriptor, output: BNNSNDArra
 
 ## See Also
 
-- [static func computeNorm(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]?) throws](bnns/computenorm(input:output:axes:).md)
+### Compute norm functions
+- [static func computeNorm(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]?) throws](./computenorm%28input,output,axes%29.md)
   Computes the Euclidean norm and writes the result to the output tensor.
-- [func BNNSComputeNorm(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](bnnscomputenorm(_:_:_:_:).md)
+- [func BNNSComputeNorm(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](../bnnscomputenorm%28_,_,_,_%29.md)
   Computes the specified norm over an entire tensor or the specified axes.
-- [func BNNSComputeNormBackward(UnsafeRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafeRawPointer, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](bnnscomputenormbackward(_:_:_:_:_:_:).md)
+- [func BNNSComputeNormBackward(UnsafeRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafeRawPointer, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](../bnnscomputenormbackward%28_,_,_,_,_,_%29.md)
   Backpropogates gradients for the compute norm function.
-- [struct BNNSNormType](bnnsnormtype.md)
+- [struct BNNSNormType](../bnnsnormtype.md)
   Constants that describe norm types.
 
 

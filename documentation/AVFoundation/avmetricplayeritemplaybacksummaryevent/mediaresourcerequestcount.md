@@ -1,7 +1,8 @@
 # mediaResourceRequestCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,17 +19,22 @@
 var mediaResourceRequestCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger mediaResourceRequestCount;
+```
+
 ## See Also
 
-- [var errorEvent: AVMetricErrorEvent?](avmetricplayeritemplaybacksummaryevent/errorevent.md)
-- [var playbackDuration: Int](avmetricplayeritemplaybacksummaryevent/playbackduration.md)
-- [var recoverableErrorCount: Int](avmetricplayeritemplaybacksummaryevent/recoverableerrorcount.md)
-- [var stallCount: Int](avmetricplayeritemplaybacksummaryevent/stallcount.md)
-- [var timeSpentInInitialStartup: TimeInterval](avmetricplayeritemplaybacksummaryevent/timespentininitialstartup.md)
-- [var timeSpentRecoveringFromStall: TimeInterval](avmetricplayeritemplaybacksummaryevent/timespentrecoveringfromstall.md)
-- [var timeWeightedAverageBitrate: Int](avmetricplayeritemplaybacksummaryevent/timeweightedaveragebitrate.md)
-- [var timeWeightedPeakBitrate: Int](avmetricplayeritemplaybacksummaryevent/timeweightedpeakbitrate.md)
-- [var variantSwitchCount: Int](avmetricplayeritemplaybacksummaryevent/variantswitchcount.md)
+### Inspecting the event
+- [var errorEvent: AVMetricErrorEvent?](./errorevent.md)
+- [var playbackDuration: Int](./playbackduration.md)
+- [var recoverableErrorCount: Int](./recoverableerrorcount.md)
+- [var stallCount: Int](./stallcount.md)
+- [var timeSpentInInitialStartup: TimeInterval](./timespentininitialstartup.md)
+- [var timeSpentRecoveringFromStall: TimeInterval](./timespentrecoveringfromstall.md)
+- [var timeWeightedAverageBitrate: Int](./timeweightedaveragebitrate.md)
+- [var timeWeightedPeakBitrate: Int](./timeweightedpeakbitrate.md)
+- [var variantSwitchCount: Int](./variantswitchcount.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # RCSService.Business.OpenURLAction.Detent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration that represents a height to apply when opening a URL.
 
@@ -17,22 +18,22 @@ enum Detent
 ## Topics
 
 ### Accessing detent values
-- [RCSService.Business.OpenURLAction.Detent.large](rcsservice/business/openurlaction/detent/large.md)
+- [RCSService.Business.OpenURLAction.Detent.large](./detent/large.md)
   Full screen overlay.
-- [RCSService.Business.OpenURLAction.Detent.medium](rcsservice/business/openurlaction/detent/medium.md)
+- [RCSService.Business.OpenURLAction.Detent.medium](./detent/medium.md)
   Half screen overlay.
-- [RCSService.Business.OpenURLAction.Detent.mediumLarge](rcsservice/business/openurlaction/detent/mediumlarge.md)
+- [RCSService.Business.OpenURLAction.Detent.mediumLarge](./detent/mediumlarge.md)
   Three-quarters screen overlay.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isHolding(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether this value holds a value of type `T`.
 

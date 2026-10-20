@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance initialized with `elements`.
 

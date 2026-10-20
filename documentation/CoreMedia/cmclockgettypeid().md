@@ -1,7 +1,8 @@
 # CMClockGetTypeID()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the core foundation type identifier of a clock type.
 
@@ -20,11 +21,16 @@ Returns the core foundation type identifier of a clock type.
 func CMClockGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID CMClockGetTypeID();
+```
+
 ## See Also
 
-- [class CMClock](cmclock.md)
+### Data Types
+- [class CMClock](./cmclock.md)
   An object that represents a source of time.
-- [typealias CMClockOrTimebase](cmclockortimebase.md)
+- [typealias CMClockOrTimebase](./cmclockortimebase.md)
   A type you use in argument lists and function results to indicate that you can pass either a clock or timebase.
 
 

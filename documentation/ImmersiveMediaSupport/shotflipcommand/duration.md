@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the command.
 

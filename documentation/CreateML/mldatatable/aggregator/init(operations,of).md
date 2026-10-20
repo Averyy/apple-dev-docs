@@ -1,7 +1,8 @@
 # init(operations:of:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an aggregator with the given operations to perform on the given column.
 

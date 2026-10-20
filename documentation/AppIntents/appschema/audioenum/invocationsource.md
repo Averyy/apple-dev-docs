@@ -1,7 +1,8 @@
 # invocationSource
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enum schema for an invocation source parameter.
 
@@ -20,7 +21,7 @@ var invocationSource: some AppSchemaEnum { get }
 
 #### Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `audio` domain and a parameter type matches the `invocationSource` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .audio.invocationSource)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `audio` domain and a parameter type matches the `invocationSource` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .audio.invocationSource)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an app enum that conforms to the `invocationSource` schema:
 
@@ -42,21 +43,22 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var activity: some AppSchemaEnum](appschema/audioenum/activity.md)
+### Types for static parameters
+- [var activity: some AppSchemaEnum](./activity.md)
   An enum schema for an activity parameter.
-- [var affinityState: some AppSchemaEnum](appschema/audioenum/affinitystate.md)
+- [var affinityState: some AppSchemaEnum](./affinitystate.md)
   An enum schema for an affinity state parameter.
-- [var appViewIdentifier: some AppSchemaEnum](appschema/audioenum/appviewidentifier.md)
+- [var appViewIdentifier: some AppSchemaEnum](./appviewidentifier.md)
   An enum schema for an app view identifier parameter.
-- [var playbackAttributes: some AppSchemaEnum](appschema/audioenum/playbackattributes.md)
+- [var playbackAttributes: some AppSchemaEnum](./playbackattributes.md)
   An enum schema for a playback attributes parameter.
-- [var queueInsertionLocation: some AppSchemaEnum](appschema/audioenum/queueinsertionlocation.md)
+- [var queueInsertionLocation: some AppSchemaEnum](./queueinsertionlocation.md)
   An enum schema for a queue insertion location parameter.
-- [AppSchema.AudioEnum](appschema/audioenum.md)
+- [AppSchema.AudioEnum](../audioenum.md)
   Identifies enum schemas in the audio domain.
 
 

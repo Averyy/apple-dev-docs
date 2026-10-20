@@ -1,7 +1,8 @@
 # fillAll
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
 

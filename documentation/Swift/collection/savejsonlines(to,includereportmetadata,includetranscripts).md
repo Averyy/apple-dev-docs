@@ -1,7 +1,8 @@
 # saveJSONLines(to:includeReportMetadata:includeTranscripts:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the array of evaluation results as a JSONL file
 
@@ -18,6 +19,8 @@ Saves the array of evaluation results as a JSONL file
 @discardableResult
 func saveJSONLines(to url: URL, includeReportMetadata: Bool = false, includeTranscripts: Bool = false) throws -> URL
 ```
+
+Available when `Element` is `EvaluationResult`.
 
 #### Return Value
 

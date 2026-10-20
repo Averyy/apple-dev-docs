@@ -1,6 +1,7 @@
 # Single-precision floating-point vectors
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform operations on vectors that contain single-precision floating-point elements.
 
@@ -19,35 +20,36 @@ The compiler flag defines the behavior of the default variant. Ordinarily, the c
 ## Topics
 
 ### Vector data types
-- [typealias simd_float1](../simd/simd_float1.md)
+- [typealias simd_float1](https://developer.apple.com/documentation/simd/simd_float1)
   A vector of one 32-bit floating-point element.
-- [typealias simd_float2](../simd/simd_float2.md)
+- [typealias simd_float2](https://developer.apple.com/documentation/simd/simd_float2)
   A vector of two 32-bit floating-point elements.
-- [typealias simd_float3](../simd/simd_float3.md)
+- [typealias simd_float3](https://developer.apple.com/documentation/simd/simd_float3)
   A vector of three 32-bit floating-point elements.
-- [typealias simd_float4](../simd/simd_float4.md)
+- [typealias simd_float4](https://developer.apple.com/documentation/simd/simd_float4)
   A vector of four 32-bit floating-point elements.
-- [typealias simd_float8](../simd/simd_float8.md)
+- [typealias simd_float8](https://developer.apple.com/documentation/simd/simd_float8)
   A vector of eight 32-bit floating-point elements.
-- [typealias simd_float16](../simd/simd_float16.md)
+- [typealias simd_float16](https://developer.apple.com/documentation/simd/simd_float16)
   A vector of sixteen 32-bit floating-point elements.
 ### Packed vector data types
-- [typealias simd_packed_float2](../simd/simd_packed_float2.md)
+- [typealias simd_packed_float2](https://developer.apple.com/documentation/simd/simd_packed_float2)
   A packed vector of two 32-bit floating-point elements.
-- [typealias simd_packed_float4](../simd/simd_packed_float4.md)
+- [typealias simd_packed_float4](https://developer.apple.com/documentation/simd/simd_packed_float4)
   A packed vector of four 32-bit floating-point elements.
-- [typealias simd_packed_float8](../simd/simd_packed_float8.md)
+- [typealias simd_packed_float8](https://developer.apple.com/documentation/simd/simd_packed_float8)
   A packed vector of eight 32-bit floating-point elements.
-- [typealias simd_packed_float16](../simd/simd_packed_float16.md)
+- [typealias simd_packed_float16](https://developer.apple.com/documentation/simd/simd_packed_float16)
   A packed vector of sixteen 32-bit floating-point elements.
 
 ## See Also
 
-- [Working with Vectors](working-with-vectors.md)
+### Floating-Point Vectors
+- [Working with Vectors](./working-with-vectors.md)
   Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values.
-- [Half-precision floating-point vectors](half-precision-floating-point-vectors.md)
+- [Half-precision floating-point vectors](./half-precision-floating-point-vectors.md)
   Perform operations on vectors that contain half-precision floating-point elements.
-- [Double-precision floating-point vectors](double-precision-floating-point-vectors.md)
+- [Double-precision floating-point vectors](./double-precision-floating-point-vectors.md)
   Perform operations on vectors that contain double-precision floating-point elements.
 
 

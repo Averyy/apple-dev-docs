@@ -1,14 +1,15 @@
 # aes_des
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier that indicates the Data Encryption Standard (DES) encryption algorithm.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCFeliCaEncryptionId.AES_DES)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCFeliCaEncryptionId.AES_DES)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCFeliCaEncryptionId.AES_DES)
 
 ## Declaration
 
@@ -16,9 +17,14 @@ An identifier that indicates the Data Encryption Standard (DES) encryption algor
 static var aes_des: NFCFeliCaEncryptionId { get }
 ```
 
+```c
+EncryptionIdAES_DES
+```
+
 ## See Also
 
-- [static var aes: NFCFeliCaEncryptionId](nfcfelicaencryptionid/aes-swift.type.property.md)
+### Identifiers
+- [static var aes: NFCFeliCaEncryptionId](./aes-swift.type.property.md)
   An identifier that indicates the Advanced Encryption Standard (AES) encryption algorithm.
 
 

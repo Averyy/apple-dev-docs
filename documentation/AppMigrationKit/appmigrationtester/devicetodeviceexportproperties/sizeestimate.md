@@ -1,7 +1,8 @@
 # sizeEstimate
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size estimate provided by the app extension.
 
@@ -17,9 +18,10 @@ let sizeEstimate: Int
 
 ## See Also
 
-- [let uncompressedBytes: Int](appmigrationtester/devicetodeviceexportproperties/uncompressedbytes.md)
+### Inspecting data size properties
+- [let uncompressedBytes: Int](./uncompressedbytes.md)
   The number of uncompressed bytes written to the exporter.
-- [let compressedBytes: Int?](appmigrationtester/devicetodeviceexportproperties/compressedbytes.md)
+- [let compressedBytes: Int?](./compressedbytes.md)
   The number of compressed bytes written to the migration infrastructure, if the extension uses compression.
 
 

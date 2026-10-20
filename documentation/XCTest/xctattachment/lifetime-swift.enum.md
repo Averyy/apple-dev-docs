@@ -1,7 +1,8 @@
 # XCTAttachment.Lifetime
 
 **Framework**: XCTest  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible lifetime values for a test attachment.
 
@@ -11,29 +12,34 @@ The possible lifetime values for a test attachment.
 enum Lifetime
 ```
 
+```c
+enum XCTAttachmentLifetime : NSInteger;
+```
+
 ## Topics
 
 ### Attachment Lifetimes
-- [XCTAttachment.Lifetime.deleteOnSuccess](xctattachment/lifetime-swift.enum/deleteonsuccess.md)
+- [XCTAttachment.Lifetime.deleteOnSuccess](./lifetime-swift.enum/deleteonsuccess.md)
   Indicates that the attachment should be deleted if the test passes.
-- [XCTAttachment.Lifetime.keepAlways](xctattachment/lifetime-swift.enum/keepalways.md)
+- [XCTAttachment.Lifetime.keepAlways](./lifetime-swift.enum/keepalways.md)
   Indicates that the attachment should be persisted as part of the test’s results even if the test passes.
 ### Initializers
-- [init?(rawValue: Int)](xctattachment/lifetime-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./lifetime-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var lifetime: XCTAttachment.Lifetime](xctattachment/lifetime-swift.property.md)
+### Setting an Attachment’s Lifetime
+- [var lifetime: XCTAttachment.Lifetime](./lifetime-swift.property.md)
   Indicates whether the attachment is kept or discarded when its associated test passes.
 
 

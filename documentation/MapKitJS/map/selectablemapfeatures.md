@@ -1,7 +1,8 @@
 # selectableMapFeatures
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of map features that users can select from the map.
 
@@ -10,20 +11,21 @@ An array of map features that users can select from the map.
 
 ## Declaration
 
-```swift
+```
 get selectableMapFeatures(): MapFeatureType[];
 set selectableMapFeatures(value: MapFeatureType[]);
 ```
 
 #### Discussion
 
-This is an array of the selectable map features the map displays from the types available in [`MapFeatureType`](mapfeaturetype.md).
+This is an array of the selectable map features the map displays from the types available in [`MapFeatureType`](../mapfeaturetype.md).
 
 ## See Also
 
-- [selectableMapFeatureSelectionAccessory](map/selectablemapfeatureselectionaccessory.md)
+### Selecting map features
+- [selectableMapFeatureSelectionAccessory](./selectablemapfeatureselectionaccessory.md)
   An accessory for displaying place information when a person selects a map feature.
-- [annotationForMapFeature](map/annotationformapfeature.md)
+- [annotationForMapFeature](./annotationformapfeature.md)
   The method MapKit JS calls when the framework creates a map feature annotation.
 
 

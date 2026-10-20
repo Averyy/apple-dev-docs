@@ -1,18 +1,19 @@
 # AVLayerVideoGravity
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ A structure that defines how a layer displays a player’s visual content within
 struct AVLayerVideoGravity
 ```
 
+```c
+typedef NSString * AVLayerVideoGravity;
+```
+
 ## Topics
 
 ### Video gravities
-- [static let resize: AVLayerVideoGravity](avlayervideogravity/resize.md)
+- [static let resize: AVLayerVideoGravity](./avlayervideogravity/resize.md)
   The video stretches to fill the layer’s bounds.
-- [static let resizeAspect: AVLayerVideoGravity](avlayervideogravity/resizeaspect.md)
+- [static let resizeAspect: AVLayerVideoGravity](./avlayervideogravity/resizeaspect.md)
   The video preserves its aspect ratio and fits it within the layer’s bounds.
-- [static let resizeAspectFill: AVLayerVideoGravity](avlayervideogravity/resizeaspectfill.md)
+- [static let resizeAspectFill: AVLayerVideoGravity](./avlayervideogravity/resizeaspectfill.md)
   The video preserves its aspect ratio and fills the layer’s bounds.
 ### Initializers
-- [init(rawValue: String)](avlayervideogravity/init(rawvalue:).md)
+- [init(rawValue: String)](./avlayervideogravity/init%28rawvalue%29.md)
   Creates a video gravity with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var videoRect: CGRect](avplayerlayer/videorect.md)
+### Configuring the presentation
+- [var videoRect: CGRect](./avplayerlayer/videorect.md)
   The current size and position of the video image that displays within the layer’s bounds.
-- [var videoGravity: AVLayerVideoGravity](avplayerlayer/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./avplayerlayer/videogravity.md)
   A value that specifies how the layer displays the player’s visual content within the layer’s bounds.
 
 

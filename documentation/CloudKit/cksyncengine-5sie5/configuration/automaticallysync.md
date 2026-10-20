@@ -1,7 +1,8 @@
 # automaticallySync
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the engine syncs automatically.
 
@@ -11,7 +12,7 @@ A Boolean value that determines whether the engine syncs automatically.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,17 +25,18 @@ var automaticallySync: Bool
 
 By default, the sync engine uses the system scheduler to automatically schedule both send and fetch operations. If an operation fails due to a recoverable error, such as a network failure or when the server is enforcing request limits, the engine reschedules those operations as necessary. Unless you have a specific need, prefer to use the default behavior in your app.
 
-If you set this property’s value to `false`, use [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) and [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) to invoke immediate sync operations, allowing for more control over when your app syncs its records. For example, you may want to sync at a specific time of day or deterministically simulate certain conditions in your unit tests.
+If you set this property’s value to `false`, use [`fetchChanges(_:)`](../fetchchanges%28_%29.md) and [`sendChanges(_:)`](../sendchanges%28_%29.md) to invoke immediate sync operations, allowing for more control over when your app syncs its records. For example, you may want to sync at a specific time of day or deterministically simulate certain conditions in your unit tests.
 
 The default value is `true`.
 
 ## See Also
 
-- [var database: CKDatabase](cksyncengine-5sie5/configuration/database.md)
+### Managing attributes
+- [var database: CKDatabase](./database.md)
   The associated database.
-- [var subscriptionID: CKSubscription.ID?](cksyncengine-5sie5/configuration/subscriptionid.md)
+- [var subscriptionID: CKSubscription.ID?](./subscriptionid.md)
   The subscription identifier for the associated database.
-- [var stateSerialization: CKSyncEngine.State.Serialization?](cksyncengine-5sie5/configuration/stateserialization.md)
+- [var stateSerialization: CKSyncEngine.State.Serialization?](./stateserialization.md)
   The sync engine’s serialized state.
 
 

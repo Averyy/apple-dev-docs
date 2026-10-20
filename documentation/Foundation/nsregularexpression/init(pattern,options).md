@@ -1,7 +1,8 @@
 # init(pattern:options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized NSRegularExpression instance with the specified regular expression pattern and options.
 
@@ -20,18 +21,24 @@ Returns an initialized NSRegularExpression instance with the specified regular e
 init(pattern: String, options: NSRegularExpression.Options = []) throws
 ```
 
+```objc
+- (instancetype) initWithPattern:(NSString *) pattern options:(NSRegularExpressionOptions) options error:(NSError **) error;
+```
+
 #### Return Value
 
 An instance of `NSRegularExpression` for the specified regular expression and options.
 
 #### Discussion
 
-> **Note**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
 - `pattern`: The regular expression pattern to compile.
-- `options`: The regular expression options that are applied to the expression during matching. See [`NSRegularExpression.Options`](nsregularexpression/options-swift.struct.md) for possible values.
+- `options`: The regular expression options that are applied to the expression during matching. See [`NSRegularExpression.Options`](./options-swift.struct.md) for possible values.
 
 
 ---

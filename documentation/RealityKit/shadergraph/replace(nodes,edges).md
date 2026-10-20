@@ -1,7 +1,8 @@
 # replace(nodes:edges:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all nodes and edges in the graph.
 
@@ -19,7 +20,7 @@ final func replace(nodes: [String : ShaderGraph.Node], edges: [ShaderGraph.Edge]
 
 #### Discussion
 
-> **Note**: If the provided nodes and edges do not form a valid graph.
+> **Throws**: If the provided nodes and edges do not form a valid graph.
 
 
 ---

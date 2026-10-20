@@ -1,7 +1,8 @@
 # inheritedAnimationDuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the inherited duration of the current animation.
 
@@ -18,25 +19,30 @@ Returns the inherited duration of the current animation.
 class var inheritedAnimationDuration: TimeInterval { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSTimeInterval inheritedAnimationDuration;
+```
+
 #### Return Value
 
 The duration of the current animation.
 
 #### Discussion
 
-This method only returns a non-zero value if called within a [`UIView`](uiview.md) animation block.
+This method only returns a non-zero value if called within a [`UIView`](../uiview.md) animation block.
 
 ## See Also
 
-- [var canBecomeFocused: Bool](uiview/canbecomefocused.md)
+### Working with focus
+- [var canBecomeFocused: Bool](./canbecomefocused.md)
   A Boolean value that indicates whether the view is currently capable of being focused.
-- [var isFocused: Bool](uiview/isfocused.md)
+- [var isFocused: Bool](./isfocused.md)
   A Boolean value that indicates whether the item is currently focused.
-- [var focusGroupIdentifier: String?](uiview/focusgroupidentifier.md)
+- [var focusGroupIdentifier: String?](./focusgroupidentifier.md)
   The identifier of the focus group that this view belongs to.
-- [var focusEffect: UIFocusEffect?](uiview/focuseffect.md)
+- [var focusEffect: UIFocusEffect?](./focuseffect.md)
   The visual effect to apply when the view becomes focused.
-- [var focusGroupPriority: UIFocusGroupPriority](uiview/focusgrouppriority.md)
+- [var focusGroupPriority: UIFocusGroupPriority](./focusgrouppriority.md)
   The importance of the item within a focus group, used by the focus system to determine the group’s primary item.
 
 

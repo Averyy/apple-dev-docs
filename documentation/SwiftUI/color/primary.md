@@ -1,7 +1,8 @@
 # primary
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for primary content.
 
@@ -22,9 +23,10 @@ static let primary: Color
 
 ## See Also
 
-- [static var accentColor: Color](color/accentcolor.md)
+### Getting semantic colors
+- [static var accentColor: Color](./accentcolor.md)
   A color that reflects the accent color of the system or app.
-- [static let secondary: Color](color/secondary.md)
+- [static let secondary: Color](./secondary.md)
   The color to use for secondary content.
 
 

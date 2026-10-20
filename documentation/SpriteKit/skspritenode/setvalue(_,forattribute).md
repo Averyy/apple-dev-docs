@@ -1,7 +1,8 @@
 # setValue(_:forAttribute:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an attribute value for an attached shader.
 
@@ -20,6 +21,10 @@ Sets an attribute value for an attached shader.
 func setValue(_ value: SKAttributeValue, forAttribute key: String)
 ```
 
+```objc
+- (void) setValue:(SKAttributeValue *) value forAttributeNamed:(NSString *) key;
+```
+
 ## Parameters
 
 - `value`: An attribute value object containing the scalar or vector value to set in the attached shader.
@@ -27,13 +32,14 @@ func setValue(_ value: SKAttributeValue, forAttribute key: String)
 
 ## See Also
 
-- [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
+### Adding a Custom Shader to a Sprite
+- [Applying Shaders to a Sprite](../applying-shaders-to-a-sprite.md)
   Write custom GLSL code that modifies the look of your sprite.
-- [var shader: SKShader?](skspritenode/shader.md)
+- [var shader: SKShader?](./shader.md)
   A text file that defines code that does custom per-pixel drawing or colorization.
-- [var attributeValues: [String : SKAttributeValue]](skspritenode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skspritenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./value%28forattributenamed%29.md)
   Sets the value of a shader attribute.
 
 

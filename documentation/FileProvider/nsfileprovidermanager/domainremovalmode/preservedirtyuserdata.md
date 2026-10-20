@@ -1,7 +1,8 @@
 # NSFileProviderManager.DomainRemovalMode.preserveDirtyUserData
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deletes the domain but keeps any items with unsynced, local changes.
 
@@ -14,11 +15,16 @@ Deletes the domain but keeps any items with unsynced, local changes.
 case preserveDirtyUserData
 ```
 
+```c
+NSFileProviderDomainRemovalModePreserveDirtyUserData
+```
+
 ## See Also
 
-- [NSFileProviderManager.DomainRemovalMode.removeAll](nsfileprovidermanager/domainremovalmode/removeall.md)
+### Options
+- [NSFileProviderManager.DomainRemovalMode.removeAll](./removeall.md)
   Deletes all items in the domain.
-- [NSFileProviderManager.DomainRemovalMode.preserveDownloadedUserData](nsfileprovidermanager/domainremovalmode/preservedownloadeduserdata.md)
+- [NSFileProviderManager.DomainRemovalMode.preserveDownloadedUserData](./preservedownloadeduserdata.md)
   Deletes the domain, but keeps the downloaded user data.
 
 

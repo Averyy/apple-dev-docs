@@ -1,7 +1,8 @@
 # LodgingReservation
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A hotel reservation or other booking for a place to stay.
 
@@ -10,20 +11,20 @@ A hotel reservation or other booking for a place to stay.
 
 ## Declaration
 
-```swift
+```
 object LodgingReservation
 ```
 
 ## Topics
 
 ### Defining a Lodging Reservation
-- [object LodgingBusiness](lodgingbusiness.md)
+- [object LodgingBusiness](./lodgingbusiness.md)
   A hotel, inn, or other lodging location.
 
 ## Properties
 
 - `@context` (@context) *(required)*
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `LodgingReservation`
 - `checkinTime` (dateTimeISO8601) *(required)*: The earliest the guest may check in.
 - `checkoutTime` (dateTimeISO8601) *(required)*: The latest the guest may check out.
 - `reservationFor` (LodgingBusiness) *(required)*: The location of the lodging, such as a hotel or inn.
@@ -35,9 +36,10 @@ object LodgingReservation
 
 ## See Also
 
-- [object EventReservation](eventreservation.md)
+### Food, Lodging, and Events
+- [object EventReservation](./eventreservation.md)
   A reservation for a movie, sporting event, live show, or other scheduled event.
-- [object FoodEstablishmentReservation](foodestablishmentreservation.md)
+- [object FoodEstablishmentReservation](./foodestablishmentreservation.md)
   A restaurant reservation.
 
 

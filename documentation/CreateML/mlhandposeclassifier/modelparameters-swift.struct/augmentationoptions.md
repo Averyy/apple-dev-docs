@@ -1,7 +1,8 @@
 # augmentationOptions
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variations the training session uses to add more variety to its training dataset.
 
@@ -20,13 +21,14 @@ var augmentationOptions: MLHandPoseClassifier.ImageAugmentationOptions
 
 ## See Also
 
-- [var maximumIterations: Int](mlhandposeclassifier/modelparameters-swift.struct/maximumiterations.md)
+### Accessing hand pose training parameters
+- [var maximumIterations: Int](./maximumiterations.md)
   The largest number of training iterations you allow the training session to use.
-- [var batchSize: Int](mlhandposeclassifier/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int](./batchsize.md)
   The number of images the model training session uses for each training iteration.
-- [var algorithm: MLHandPoseClassifier.ModelParameters.ModelAlgorithmType](mlhandposeclassifier/modelparameters-swift.struct/algorithm.md)
+- [var algorithm: MLHandPoseClassifier.ModelParameters.ModelAlgorithmType](./algorithm.md)
   The algorithm the training session uses to create the hand pose classifier.
-- [var validation: MLHandPoseClassifier.ModelParameters.ValidationData](mlhandposeclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLHandPoseClassifier.ModelParameters.ValidationData](./validation.md)
   A dataset the hand pose classifier task uses to evaluate the model that’s distinct from the training dataset.
 
 

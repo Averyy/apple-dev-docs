@@ -1,7 +1,8 @@
 # allowsNonContiguousRanges
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the instance could produce selections with multiple noncontiguous selections.
 
@@ -18,17 +19,22 @@ Determines if the instance could produce selections with multiple noncontiguous 
 var allowsNonContiguousRanges: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsNonContiguousRanges;
+```
+
 ## See Also
 
-- [var rotatesCoordinateSystemForLayoutOrientation: Bool](nstextselectionnavigation/rotatescoordinatesystemforlayoutorientation.md)
+### Selection characteristics
+- [var rotatesCoordinateSystemForLayoutOrientation: Bool](./rotatescoordinatesystemforlayoutorientation.md)
   Determines if the framework rotates the coordinate system to match the layout orientation.
-- [NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier.md)
+- [NSTextSelectionNavigation.Modifier](./modifier.md)
   Values that describe how the framework handles different kinds of selection modifiers.
-- [NSTextSelectionNavigation.Destination](nstextselectionnavigation/destination.md)
+- [NSTextSelectionNavigation.Destination](./destination.md)
   Values that affect how the framework handles navigation across different textual boundaries during a selection.
-- [NSTextSelectionNavigation.Direction](nstextselectionnavigation/direction.md)
+- [NSTextSelectionNavigation.Direction](./direction.md)
   Values that describe the direction of a selection.
-- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](nstextselectionnavigation/textselection(for:enclosing:incontainerat:).md)
+- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](./textselection%28for,enclosing,incontainerat%29.md)
   Returns a text selection that expands to the nearest boundaries for selection granularity and an enclosing point you specify.
 
 

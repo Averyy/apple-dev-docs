@@ -1,7 +1,8 @@
 # BNNSTensorGetAllocationSize(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the minimum allocation size, in bytes, of the specified tensor.
 
@@ -20,6 +21,10 @@ Returns the minimum allocation size, in bytes, of the specified tensor.
 func BNNSTensorGetAllocationSize(_ tensor: UnsafePointer<BNNSTensor>) -> Int
 ```
 
+```c
+size_t BNNSTensorGetAllocationSize(const BNNSTensor *tensor);
+```
+
 #### Return Value
 
 The minimum allocation size, in bytes, of the specified tensor.
@@ -30,11 +35,12 @@ The minimum allocation size, in bytes, of the specified tensor.
 
 ## See Also
 
-- [struct BNNSTensor](bnnstensor.md)
+### Specifying and querying a tensor’s properties
+- [struct BNNSTensor](./bnnstensor.md)
   A structure that describes the shape, stride, data type, and, optionally, the memory location of an n-dimensional array.
-- [func BNNSGraphContextGetTensor(bnns_graph_context_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, Bool, UnsafeMutablePointer<BNNSTensor>) -> Int32](bnnsgraphcontextgettensor(_:_:_:_:_:).md)
+- [func BNNSGraphContextGetTensor(bnns_graph_context_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, Bool, UnsafeMutablePointer<BNNSTensor>) -> Int32](./bnnsgraphcontextgettensor%28_,_,_,_,_%29.md)
   Sets the properties of a tensor for the specified function argument.
-- [func BNNSGraphTensorFillStrides(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, UnsafeMutablePointer<BNNSTensor>) -> Int32](bnnsgraphtensorfillstrides(_:_:_:_:).md)
+- [func BNNSGraphTensorFillStrides(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, UnsafeMutablePointer<BNNSTensor>) -> Int32](./bnnsgraphtensorfillstrides%28_,_,_,_%29.md)
   Sets the stride of the specifed tensor for compatibility with the given model’s input or output argument based on its current shape.
 
 

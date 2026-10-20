@@ -1,13 +1,14 @@
 # Apple Archive structures
 
-**Framework**: Apple Archive
+**Framework**: Apple Archive  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [struct AEAContextTraits](aeacontexttraits.md)
-- [struct ArchiveFlags](archiveflags.md)
-- [struct ArchiveHash](archivehash.md)
+- [struct AEAContextTraits](./aeacontexttraits.md)
+- [struct ArchiveFlags](./archiveflags.md)
+- [struct ArchiveHash](./archivehash.md)
 
 
 ---

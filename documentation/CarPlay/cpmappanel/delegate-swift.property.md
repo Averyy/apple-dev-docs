@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app-specific object that the system notifies when it hides and shows the panel.
 
@@ -16,9 +17,13 @@ The app-specific object that the system notifies when it hides and shows the pan
 weak var delegate: (any CPMapPanel.Delegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CPMapPanelDelegate> delegate;
+```
+
 #### Discussion
 
-Specify a custom object that adopts the [`CPMapPanel.Delegate`](cpmappanel/delegate-swift.protocol.md) protocol if you want to know when the map panel appears or disappears from your CarPlay interface. The system maintains a weak reference to the object you provide, so keep a reference to the object in your own code.
+Specify a custom object that adopts the [`CPMapPanel.Delegate`](./delegate-swift.protocol.md) protocol if you want to know when the map panel appears or disappears from your CarPlay interface. The system maintains a weak reference to the object you provide, so keep a reference to the object in your own code.
 
 
 ---

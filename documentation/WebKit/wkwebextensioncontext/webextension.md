@@ -1,7 +1,8 @@
 # webExtension
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension this context represents.
 
@@ -16,6 +17,10 @@ The extension this context represents.
 
 ```swift
 var webExtension: WKWebExtension { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WKWebExtension * webExtension;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the tab accessibility elements for the tab view.
@@ -17,11 +18,12 @@ func accessibilityTabs() -> [Any]?
 
 ## See Also
 
-- [func accessibilityOverflowButton() -> Any?](nsaccessibilityprotocol/accessibilityoverflowbutton.md)
+### Configuring tabs and toolbars
+- [func accessibilityOverflowButton() -> Any?](./accessibilityoverflowbutton%28%29.md)
   Returns the overflow button for the toolbar.
-- [func setAccessibilityOverflowButton(Any?)](nsaccessibilityprotocol/setaccessibilityoverflowbutton(_:).md)
+- [func setAccessibilityOverflowButton(Any?)](./setaccessibilityoverflowbutton%28_%29.md)
   Sets the overflow button for the toolbar.
-- [func setAccessibilityTabs([Any]?)](nsaccessibilityprotocol/setaccessibilitytabs(_:).md)
+- [func setAccessibilityTabs([Any]?)](./setaccessibilitytabs%28_%29.md)
   Sets the tab accessibility elements for the tab view.
 
 

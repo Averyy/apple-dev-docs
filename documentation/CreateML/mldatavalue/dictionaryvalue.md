@@ -1,7 +1,8 @@
 # dictionaryValue
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying dictionary.
 
@@ -21,7 +22,8 @@ var dictionaryValue: MLDataValue.DictionaryType? { get }
 
 ## See Also
 
-- [MLDataValue.DictionaryType](mldatavalue/dictionarytype.md)
+### Accessing dictionary values
+- [MLDataValue.DictionaryType](./dictionarytype.md)
   A dictionary of named data values.
 
 

@@ -1,7 +1,8 @@
 # keychainReference
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A persistent reference to the key in the keychain.
 
@@ -19,15 +20,20 @@ A persistent reference to the key in the keychain.
 var keychainReference: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * keychainReference;
+```
+
 #### Discussion
 
-The keychain item needs to have the class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/security/ksecclassgenericpassword).
+The keychain item needs to have the class [`kSecClassGenericPassword`](../../Security/ksecclassgenericpassword.md).
 
 ## See Also
 
-- [var identifier: String](nevpnikev2ppkconfiguration/identifier.md)
+### Accessing the configuration parameters
+- [var identifier: String](./identifier.md)
   The identifier for the PPK.
-- [var isMandatory: Bool](nevpnikev2ppkconfiguration/ismandatory.md)
+- [var isMandatory: Bool](./ismandatory.md)
   A Boolean value that indicates whether it’s mandatory for the VPN server to use this PPK.
 
 

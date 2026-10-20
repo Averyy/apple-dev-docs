@@ -1,7 +1,8 @@
 # commissionDevice(in:onboardingPayload:commissioningID:)
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Commissions the device with the onboarding payload.
 
@@ -10,7 +11,7 @@ Commissions the device with the onboarding payload.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

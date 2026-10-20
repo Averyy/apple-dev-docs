@@ -1,7 +1,8 @@
 # roughness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional roughness texture for the decal.
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValuePictureMode
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Modes of the television picture.
 
@@ -19,49 +20,53 @@ Modes of the television picture.
 enum HMCharacteristicValuePictureMode
 ```
 
+```c
+enum HMCharacteristicValuePictureMode : NSInteger;
+```
+
 ## Topics
 
 ### Television states
-- [HMCharacteristicValuePictureMode.bright](hmcharacteristicvaluepicturemode/bright.md)
+- [HMCharacteristicValuePictureMode.bright](./hmcharacteristicvaluepicturemode/bright.md)
   A bright picture mode.
-- [HMCharacteristicValuePictureMode.calibrated](hmcharacteristicvaluepicturemode/calibrated.md)
+- [HMCharacteristicValuePictureMode.calibrated](./hmcharacteristicvaluepicturemode/calibrated.md)
   A calibrated picture mode.
-- [HMCharacteristicValuePictureMode.computer](hmcharacteristicvaluepicturemode/computer.md)
+- [HMCharacteristicValuePictureMode.computer](./hmcharacteristicvaluepicturemode/computer.md)
   A computer picture mode.
-- [HMCharacteristicValuePictureMode.custom1](hmcharacteristicvaluepicturemode/custom1.md)
+- [HMCharacteristicValuePictureMode.custom1](./hmcharacteristicvaluepicturemode/custom1.md)
   A customized picture mode.
-- [HMCharacteristicValuePictureMode.custom2](hmcharacteristicvaluepicturemode/custom2.md)
+- [HMCharacteristicValuePictureMode.custom2](./hmcharacteristicvaluepicturemode/custom2.md)
   A customized picture mode.
-- [HMCharacteristicValuePictureMode.custom3](hmcharacteristicvaluepicturemode/custom3.md)
+- [HMCharacteristicValuePictureMode.custom3](./hmcharacteristicvaluepicturemode/custom3.md)
   A customized picture mode.
-- [HMCharacteristicValuePictureMode.dark](hmcharacteristicvaluepicturemode/dark.md)
+- [HMCharacteristicValuePictureMode.dark](./hmcharacteristicvaluepicturemode/dark.md)
   A dark picture mode.
-- [HMCharacteristicValuePictureMode.game](hmcharacteristicvaluepicturemode/game.md)
+- [HMCharacteristicValuePictureMode.game](./hmcharacteristicvaluepicturemode/game.md)
   A game picture mode.
-- [HMCharacteristicValuePictureMode.movie](hmcharacteristicvaluepicturemode/movie.md)
+- [HMCharacteristicValuePictureMode.movie](./hmcharacteristicvaluepicturemode/movie.md)
   A movie picture mode.
-- [HMCharacteristicValuePictureMode.night](hmcharacteristicvaluepicturemode/night.md)
+- [HMCharacteristicValuePictureMode.night](./hmcharacteristicvaluepicturemode/night.md)
   A night picture mode.
-- [HMCharacteristicValuePictureMode.photo](hmcharacteristicvaluepicturemode/photo.md)
+- [HMCharacteristicValuePictureMode.photo](./hmcharacteristicvaluepicturemode/photo.md)
   A photo picture mode.
-- [HMCharacteristicValuePictureMode.sport](hmcharacteristicvaluepicturemode/sport.md)
+- [HMCharacteristicValuePictureMode.sport](./hmcharacteristicvaluepicturemode/sport.md)
   A sport picture mode.
-- [HMCharacteristicValuePictureMode.standard](hmcharacteristicvaluepicturemode/standard.md)
+- [HMCharacteristicValuePictureMode.standard](./hmcharacteristicvaluepicturemode/standard.md)
   A standard picture mode.
-- [HMCharacteristicValuePictureMode.vivid](hmcharacteristicvaluepicturemode/vivid.md)
+- [HMCharacteristicValuePictureMode.vivid](./hmcharacteristicvaluepicturemode/vivid.md)
   A vivid picture mode.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluepicturemode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluepicturemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # numberOfChannels
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of channels described by this `ManagedAudioChannelLayout`.
 
@@ -11,7 +12,7 @@ The number of channels described by this `ManagedAudioChannelLayout`.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

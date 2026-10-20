@@ -1,7 +1,8 @@
 # HMCharacteristicValueProgramMode
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for scheduled programs.
 
@@ -19,27 +20,31 @@ Possible values for scheduled programs.
 enum HMCharacteristicValueProgramMode
 ```
 
+```c
+enum HMCharacteristicValueProgramMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [HMCharacteristicValueProgramMode.notScheduled](hmcharacteristicvalueprogrammode/notscheduled.md)
+- [HMCharacteristicValueProgramMode.notScheduled](./hmcharacteristicvalueprogrammode/notscheduled.md)
   No program is scheduled.
-- [HMCharacteristicValueProgramMode.scheduleOverriddenToManual](hmcharacteristicvalueprogrammode/scheduleoverriddentomanual.md)
+- [HMCharacteristicValueProgramMode.scheduleOverriddenToManual](./hmcharacteristicvalueprogrammode/scheduleoverriddentomanual.md)
   The user has manually overridden the scheduled program.
-- [HMCharacteristicValueProgramMode.scheduled](hmcharacteristicvalueprogrammode/scheduled.md)
+- [HMCharacteristicValueProgramMode.scheduled](./hmcharacteristicvalueprogrammode/scheduled.md)
   A program is scheduled.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueprogrammode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueprogrammode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

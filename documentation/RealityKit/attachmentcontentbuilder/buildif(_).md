@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides support for “if” statements in multi-statement closures, producing an optional view that is visible only when the condition evaluates to `true`.
 

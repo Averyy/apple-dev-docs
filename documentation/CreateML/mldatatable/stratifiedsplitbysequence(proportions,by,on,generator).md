@@ -1,7 +1,8 @@
 # stratifiedSplitBySequence(proportions:by:on:generator:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Randomly split a MLDataTable into partitions on a user-define label column, while keeping rows from the same sequence in the original order.
 
@@ -36,12 +37,13 @@ The proportions specified will be applied uniformly to each label being partitio
 
 ## See Also
 
-- [func randomSplitBySequence(proportion: Double, by: String, on: String, seed: Int) -> (MLDataTable, remaining: MLDataTable)](mldatatable/randomsplitbysequence(proportion:by:on:seed:).md)
-- [func stratifiedSplit<RNG>(proportions: [Double], on: String, generator: inout RNG) throws -> MLDataTable](mldatatable/stratifiedsplit(proportions:on:generator:).md)
+### Splitting a data table
+- [func randomSplitBySequence(proportion: Double, by: String, on: String, seed: Int) -> (MLDataTable, remaining: MLDataTable)](./randomsplitbysequence%28proportion,by,on,seed%29.md)
+- [func stratifiedSplit<RNG>(proportions: [Double], on: String, generator: inout RNG) throws -> MLDataTable](./stratifiedsplit%28proportions,on,generator%29.md)
   Randomly split a MLDataTable into a number partitions while stratifying on a user-define label column.
-- [func stratifiedSplit(proportions: [Double], on: String, seed: Int) throws -> MLDataTable](mldatatable/stratifiedsplit(proportions:on:seed:).md)
+- [func stratifiedSplit(proportions: [Double], on: String, seed: Int) throws -> MLDataTable](./stratifiedsplit%28proportions,on,seed%29.md)
   Randomly split a MLDataTable into a number partitions while stratifying on a user-define label column.
-- [func stratifiedSplitBySequence(proportions: [Double], by: String, on: String, seed: Int) throws -> MLDataTable](mldatatable/stratifiedsplitbysequence(proportions:by:on:seed:).md)
+- [func stratifiedSplitBySequence(proportions: [Double], by: String, on: String, seed: Int) throws -> MLDataTable](./stratifiedsplitbysequence%28proportions,by,on,seed%29.md)
   Randomly split a MLDataTable into partitions on a user-define label column, while keeping rows from the same sequence in the original order.
 
 

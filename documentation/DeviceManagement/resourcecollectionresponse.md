@@ -1,7 +1,8 @@
 # ResourceCollectionResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains the resource objects for the request.
 
@@ -10,7 +11,7 @@ A response that contains the resource objects for the request.
 
 ## Declaration
 
-```swift
+```
 object ResourceCollectionResponse
 ```
 
@@ -20,15 +21,16 @@ object ResourceCollectionResponse
 
 ## See Also
 
-- [object ResultsResponse](resultsresponse.md)
+### Interpreting responses
+- [object ResultsResponse](./resultsresponse.md)
   A response that contains the resource objects for the request.
-- [object AppsResponse](appsresponse.md)
+- [object AppsResponse](./appsresponse.md)
   A response that contains the resource objects for the request.
-- [object BooksResponse](booksresponse.md)
+- [object BooksResponse](./booksresponse.md)
   A response that contains the resource objects for the request.
-- [object UnauthorizedResponse](unauthorizedresponse.md)
+- [object UnauthorizedResponse](./unauthorizedresponse.md)
   A response that indicates an incorrect authorization header.
-- [object ErrorsResponse](errorsresponse.md)
+- [object ErrorsResponse](./errorsresponse.md)
   The collection of errors that occurred while processing the request.
 
 

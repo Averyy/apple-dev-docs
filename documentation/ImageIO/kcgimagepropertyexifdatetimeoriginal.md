@@ -1,7 +1,8 @@
 # kCGImagePropertyExifDateTimeOriginal
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The original date and time.
 
@@ -20,21 +21,26 @@ The original date and time.
 let kCGImagePropertyExifDateTimeOriginal: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifDateTimeOriginal;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifDateTimeDigitized: CFString](kcgimagepropertyexifdatetimedigitized.md)
+### Timestamp
+- [let kCGImagePropertyExifDateTimeDigitized: CFString](./kcgimagepropertyexifdatetimedigitized.md)
   The digitized date and time.
-- [let kCGImagePropertyExifSubsecTime: CFString](kcgimagepropertyexifsubsectime.md)
+- [let kCGImagePropertyExifSubsecTime: CFString](./kcgimagepropertyexifsubsectime.md)
   The fraction of seconds for the date and time tag.
-- [let kCGImagePropertyExifSubsecTimeOrginal: CFString](kcgimagepropertyexifsubsectimeorginal.md)
+- [let kCGImagePropertyExifSubsecTimeOrginal: CFString](./kcgimagepropertyexifsubsectimeorginal.md)
   The fraction of seconds for the original date and time tag.
-- [let kCGImagePropertyExifSubsecTimeOriginal: CFString](kcgimagepropertyexifsubsectimeoriginal.md)
+- [let kCGImagePropertyExifSubsecTimeOriginal: CFString](./kcgimagepropertyexifsubsectimeoriginal.md)
   The fraction of seconds for the original date and time tag.
-- [let kCGImagePropertyExifSubsecTimeDigitized: CFString](kcgimagepropertyexifsubsectimedigitized.md)
+- [let kCGImagePropertyExifSubsecTimeDigitized: CFString](./kcgimagepropertyexifsubsectimedigitized.md)
   The fraction of seconds for the digitized date and time tag.
-- [let kCGImagePropertyExifOffsetTime: CFString](kcgimagepropertyexifoffsettime.md)
-- [let kCGImagePropertyExifOffsetTimeOriginal: CFString](kcgimagepropertyexifoffsettimeoriginal.md)
-- [let kCGImagePropertyExifOffsetTimeDigitized: CFString](kcgimagepropertyexifoffsettimedigitized.md)
+- [let kCGImagePropertyExifOffsetTime: CFString](./kcgimagepropertyexifoffsettime.md)
+- [let kCGImagePropertyExifOffsetTimeOriginal: CFString](./kcgimagepropertyexifoffsettimeoriginal.md)
+- [let kCGImagePropertyExifOffsetTimeDigitized: CFString](./kcgimagepropertyexifoffsettimedigitized.md)
 
 
 ---

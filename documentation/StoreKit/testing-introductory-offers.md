@@ -1,6 +1,7 @@
 # Testing introductory offers
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Test your introductory pricing in a variety of user scenarios.
 
@@ -10,7 +11,7 @@ To test introductory offers, verify that users see the same subscription and int
 
 To test introductory offers:
 
-1. Configure test accounts, as described in [`Create a sandbox tester account`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev8b997bee1). Create a variety of accounts that are eligible or ineligible for offers.
+1. Configure test accounts, as described in [Create a sandbox tester account](https://help.apple.com/app-store-connect/#/dev8b997bee1). Create a variety of accounts that are eligible or ineligible for offers.
 2. Initiate Apple In-App Purchases from within the app for each test user.
 3. Verify that the user experience and pricing information dynamically represent the accurate price of your subscription.
 
@@ -20,13 +21,14 @@ Introductory offers are only offered once, but when testing your app, you can re
 2. Tap the expired subscription you want to reactivate. The subscription products that appear are those you configured in App Store Connect under the same subscription group.
 3. If the test account used an introductory offer, then the system diplays a Reset Eligibility button that lets you reset and redeem another introductory offer.
 
-![A screenshot of the edit subscriptions sheet for an app’s subscriptions. The sheet shows the app’s subscription options and the currently selected subscription. Below the subscription options, the sheet displays a Reset Eligibility button and a Cancel Free Trial button.](/images/com.apple.storekit/media-3866189@2x.png)
+![A screenshot of the edit subscriptions sheet for an app’s subscriptions. The sheet shows the app’s subscription options and the currently selected subscription. Below the subscription options, the sheet displays a Reset Eligibility button and a Cancel Free Trial button.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3866189@2x.png)
 
 ## See Also
 
-- [Implementing introductory offers in your app](implementing-introductory-offers-in-your-app.md)
+### Introductory offers
+- [Implementing introductory offers in your app](./implementing-introductory-offers-in-your-app.md)
   Offer introductory pricing for auto-renewable subscriptions to eligible users.
-- [class SKProductDiscount](skproductdiscount.md)
+- [class SKProductDiscount](./skproductdiscount.md)
   The details of an introductory offer or a promotional offer for an auto-renewable subscription.
 
 

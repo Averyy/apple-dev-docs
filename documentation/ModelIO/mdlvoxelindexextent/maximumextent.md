@@ -1,7 +1,8 @@
 # maximumExtent
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highest x, y, and z coordinates in the volume.
 
@@ -17,6 +18,10 @@ The highest x, y, and z coordinates in the volume.
 
 ```swift
 var maximumExtent: MDLVoxelIndex
+```
+
+```c
+MDLVoxelIndex maximumExtent;
 ```
 
 

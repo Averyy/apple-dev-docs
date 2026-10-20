@@ -1,7 +1,8 @@
 # XMLHttpRequestProgressEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface XMLHttpRequestProgressEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [position](xmlhttprequestprogressevent/1628999-position.md)
-- [totalSize](xmlhttprequestprogressevent/1631837-totalsize.md)
+- [position](./xmlhttprequestprogressevent/api-1628999-position.md)
+- [totalSize](./xmlhttprequestprogressevent/api-1631837-totalsize.md)
 
 ## Relationships
 
 ### Inherits From
-- [ProgressEvent](progressevent.md)
+- [ProgressEvent](./progressevent.md)
 
 
 ---

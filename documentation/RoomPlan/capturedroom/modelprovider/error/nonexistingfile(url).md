@@ -1,7 +1,8 @@
 # CapturedRoom.ModelProvider.Error.nonExistingFile(url:)
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a model-URL query failed to return a result.
 
@@ -26,7 +27,8 @@ This error occurs when the app hasn’t associated a URL to the attributes in a 
 
 ## See Also
 
-- [CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported](capturedroom/modelprovider/error/attributecombinationnotsupported.md)
+### Interpreting the error
+- [CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported](./attributecombinationnotsupported.md)
   An error that indicates the framework doesn’t support the attributes set in a model-URL query.
 
 

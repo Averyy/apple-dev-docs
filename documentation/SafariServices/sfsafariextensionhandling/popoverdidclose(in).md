@@ -1,7 +1,8 @@
 # popoverDidClose(in:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the handler that the app extension’s popover was closed.
 
@@ -14,9 +15,13 @@ Tells the handler that the app extension’s popover was closed.
 optional func popoverDidClose(in window: SFSafariWindow)
 ```
 
+```objc
+- (void) popoverDidCloseInWindow:(SFSafariWindow *) window;
+```
+
 ## Mentions
 
-- [Adjusting settings for a toolbar item](adjusting-settings-for-a-toolbar-item.md)
+- [Adjusting settings for a toolbar item](../adjusting-settings-for-a-toolbar-item.md)
 
 ## Parameters
 
@@ -24,9 +29,10 @@ optional func popoverDidClose(in window: SFSafariWindow)
 
 ## See Also
 
-- [func popoverViewController() -> SFSafariExtensionViewController](sfsafariextensionhandling/popoverviewcontroller.md)
+### Working with Popovers
+- [func popoverViewController() -> SFSafariExtensionViewController](./popoverviewcontroller%28%29.md)
   Asks the handler to provide a popover view controller for display.
-- [func popoverWillShow(in: SFSafariWindow)](sfsafariextensionhandling/popoverwillshow(in:).md)
+- [func popoverWillShow(in: SFSafariWindow)](./popoverwillshow%28in%29.md)
   Tells the handler that the app extension’s popover is about to be opened.
 
 

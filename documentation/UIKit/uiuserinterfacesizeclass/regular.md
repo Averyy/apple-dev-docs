@@ -1,7 +1,8 @@
 # UIUserInterfaceSizeClass.regular
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a regular size class.
 
@@ -9,7 +10,7 @@ Indicates a regular size class.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Indicates a regular size class.
 case regular
 ```
 
+```c
+UIUserInterfaceSizeClassRegular
+```
+
 ## Mentions
 
-- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+- [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
 
 ## See Also
 
-- [UIUserInterfaceSizeClass.unspecified](uiuserinterfacesizeclass/unspecified.md)
+### Constants
+- [UIUserInterfaceSizeClass.unspecified](./unspecified.md)
   Indicates the size class hasn’t been specified.
-- [UIUserInterfaceSizeClass.compact](uiuserinterfacesizeclass/compact.md)
+- [UIUserInterfaceSizeClass.compact](./compact.md)
   Indicates a compact size class.
 
 

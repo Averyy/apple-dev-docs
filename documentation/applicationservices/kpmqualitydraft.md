@@ -1,7 +1,8 @@
 # kPMQualityDraft
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies to print at the highest speed, with the amount of ink used as a secondary consideration.
 

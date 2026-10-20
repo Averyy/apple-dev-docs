@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the compositor that the composition changed render contexts.
@@ -20,13 +21,18 @@ Tells the compositor that the composition changed render contexts.
 func renderContextChanged(_ newRenderContext: AVVideoCompositionRenderContext)
 ```
 
+```objc
+- (void) renderContextChanged:(AVVideoCompositionRenderContext *) newRenderContext;
+```
+
 ## Parameters
 
 - `newRenderContext`: The new render context of the video composition.
 
 ## See Also
 
-- [class AVVideoCompositionRenderContext](avvideocompositionrendercontext.md)
+### Observing render context changes
+- [class AVVideoCompositionRenderContext](../avvideocompositionrendercontext.md)
   An object that defines the context in which custom compositors render pixel buffers.
 
 

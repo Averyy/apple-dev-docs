@@ -2,16 +2,17 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the input delegate when text is about to change in the document.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Tells the input delegate when text is about to change in the document.
 func textWillChange(_ textInput: (any UITextInput)?)
 ```
 
+```objc
+- (void) textWillChange:(id<UITextInput>) textInput;
+```
+
 ## Mentions
 
-- [Configuring a custom keyboard interface](configuring-a-custom-keyboard-interface.md)
+- [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
 ## Parameters
 
@@ -29,9 +34,11 @@ func textWillChange(_ textInput: (any UITextInput)?)
 
 ## See Also
 
-- [func selectionWillChange((any UITextInput)?)](uitextinputdelegate/selectionwillchange(_:).md)
+### Related Documentation
+- [func selectionWillChange((any UITextInput)?)](./selectionwillchange%28_%29.md)
   Tells the input delegate when the selection is about to change in the document.
-- [func textDidChange((any UITextInput)?)](uitextinputdelegate/textdidchange(_:).md)
+### Notifying the delegate of textual changes
+- [func textDidChange((any UITextInput)?)](./textdidchange%28_%29.md)
   Tells the input delegate when text has changed in the document.
 
 

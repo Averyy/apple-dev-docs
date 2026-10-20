@@ -1,7 +1,8 @@
 # kIOUSB30HubPortStatusCodeCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port status code count.
 
@@ -10,7 +11,7 @@ The port status code count.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubPortStatusCodeCount = 3
 ```
 

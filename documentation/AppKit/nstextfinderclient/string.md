@@ -1,12 +1,13 @@
 # string
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows the client to specify a single string for searching.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Allows the client to specify a single string for searching.
 optional var string: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * string;
+```
+
 #### Discussion
 
-If the client cannot logically or efficiently flatten itself into a single string, then the [`string(at:effectiveRange:endsWithSearchBoundary:)`](nstextfinderclient/string(at:effectiverange:endswithsearchboundary:).md) and [`stringLength()`](nstextfinderclient/stringlength().md) methods should be implemented instead.
+If the client cannot logically or efficiently flatten itself into a single string, then the [`string(at:effectiveRange:endsWithSearchBoundary:)`](./string%28at,effectiverange,endswithsearchboundary%29.md) and [`stringLength()`](./stringlength%28%29.md) methods should be implemented instead.
 
 ## See Also
 
-- [func string(at: Int, effectiveRange: NSRangePointer, endsWithSearchBoundary: UnsafeMutablePointer<ObjCBool>) -> String](nstextfinderclient/string(at:effectiverange:endswithsearchboundary:).md)
+### String Searching
+- [func string(at: Int, effectiveRange: NSRangePointer, endsWithSearchBoundary: UnsafeMutablePointer<ObjCBool>) -> String](./string%28at,effectiverange,endswithsearchboundary%29.md)
   Returns the found string that is created by conceptually mapping its content to a single string, which is composed of a concatenation of all its substrings.
-- [func stringLength() -> Int](nstextfinderclient/stringlength.md)
+- [func stringLength() -> Int](./stringlength%28%29.md)
   Returns the full length of the conceptually concatenated string return by the `stringAtIndex:effectiveRange:endsWithSearchBoundary:` method.
 
 

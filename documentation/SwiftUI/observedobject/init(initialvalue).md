@@ -1,7 +1,8 @@
 # init(initialValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an observed object with an initial value.
 
@@ -23,7 +24,7 @@ Creates an observed object with an initial value.
 
 #### Discussion
 
-This initializer has the same behavior as the [`init(wrappedValue:)`](observedobject/init(wrappedvalue:).md) initializer. See that initializer for more information.
+This initializer has the same behavior as the [`init(wrappedValue:)`](./init%28wrappedvalue%29.md) initializer. See that initializer for more information.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ This initializer has the same behavior as the [`init(wrappedValue:)`](observedob
 
 ## See Also
 
-- [init(wrappedValue: ObjectType)](observedobject/init(wrappedvalue:).md)
+### Creating an observed object
+- [init(wrappedValue: ObjectType)](./init%28wrappedvalue%29.md)
   Creates an observed object with an initial wrapped value.
 
 

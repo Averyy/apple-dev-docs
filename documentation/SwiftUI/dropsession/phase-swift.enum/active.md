@@ -1,7 +1,8 @@
 # DropSession.Phase.active
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drop session is active inside the drop destination.
 

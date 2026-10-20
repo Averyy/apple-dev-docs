@@ -1,7 +1,8 @@
 # CardDAV.CommunicationServiceRules
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The communication service handler rules for this account.
 
@@ -13,14 +14,14 @@ The communication service handler rules for this account.
 
 ## Declaration
 
-```swift
+```
 object CardDAV.CommunicationServiceRules
 ```
 
 ## Topics
 
 ### Objects
-- [object CardDAV.CommunicationServiceRules.DefaultServiceHandlers](carddav/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
+- [object CardDAV.CommunicationServiceRules.DefaultServiceHandlers](./communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   A dictionary defining the default service handlers for this account.
 
 ## Properties

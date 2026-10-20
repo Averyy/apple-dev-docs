@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_in_arpalive {
     ...
 };
@@ -17,7 +17,7 @@ struct kev_in_arpalive {
 ## Topics
 
 ### Instance Properties
-- [link_data](kev_in_arpalive/3754419-link_data.md)
+- [link_data](./kev_in_arpalive/api-3754419-link_data.md)
 
 
 ---

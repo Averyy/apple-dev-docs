@@ -1,7 +1,8 @@
 # vImage.MorphologyOperation
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes which morphology operation to perform.
 
@@ -11,7 +12,7 @@ Describes which morphology operation to perform.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,44 +24,45 @@ enum MorphologyOperation<ComponentType>
 ## Topics
 
 ### Enumeration Cases
-- [case dilate(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)](vimage/morphologyoperation/dilate(structuringelement:).md)
+- [case dilate(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)](./morphologyoperation/dilate%28structuringelement%29.md)
   Applies dilation using a structuring element.
-- [case erode(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)](vimage/morphologyoperation/erode(structuringelement:).md)
+- [case erode(structuringElement: vImage.ConvolutionKernel2D<ComponentType>)](./morphologyoperation/erode%28structuringelement%29.md)
   Applies erosion using a structuring element.
-- [vImage.MorphologyOperation.maximize(kernelSize:)](vimage/morphologyoperation/maximize(kernelsize:).md)
+- [vImage.MorphologyOperation.maximize(kernelSize:)](./morphologyoperation/maximize%28kernelsize%29.md)
   Maximizes using an implicit kernel of a specified size.
-- [vImage.MorphologyOperation.minimize(kernelSize:)](vimage/morphologyoperation/minimize(kernelsize:).md)
+- [vImage.MorphologyOperation.minimize(kernelSize:)](./morphologyoperation/minimize%28kernelsize%29.md)
   Minimizes using an implicit kernel of a specified size.
 ### Instance Properties
-- [var structuringElement: vImage.ConvolutionKernel2D<ComponentType>?](vimage/morphologyoperation/structuringelement.md)
+- [var structuringElement: vImage.ConvolutionKernel2D<ComponentType>?](./morphologyoperation/structuringelement.md)
   The dilation or erosion structuring element.
-- [var height: vImagePixelCount](vimage/morphologyoperation/height.md)
+- [var height: vImagePixelCount](./morphologyoperation/height.md)
   The height of the morphology kernel.
-- [var width: vImagePixelCount](vimage/morphologyoperation/width.md)
+- [var width: vImagePixelCount](./morphologyoperation/width.md)
   The width of the morphology kernel.
 
 ## See Also
 
-- [vImage.BlendMode](vimage/blendmode.md)
+### Enumerations
+- [vImage.BlendMode](./blendmode.md)
   Constants that specify an alpha blending mode.
-- [vImage.BufferType](vimage/buffertype.md)
+- [vImage.BufferType](./buffertype.md)
   Codes that represent vImage buffer types.
-- [vImage.ChannelOrdering](vimage/channelordering.md)
+- [vImage.ChannelOrdering](./channelordering.md)
   Constants that specify the channel ordering of a pixel buffer.
-- [vImage.CompositeMode](vimage/compositemode.md)
+- [vImage.CompositeMode](./compositemode.md)
   Constants that specify whether the format of layers is premultiplied or nonpremultiplied.
-- [vImage.EdgeMode](vimage/edgemode.md)
+- [vImage.EdgeMode](./edgemode.md)
   Constants that specify edge modes for convolution operations.
-- [vImage.Error](vimage/error.md)
+- [vImage.Error](./error.md)
   An error that occurs during a vImage operation.
-- [vImage.FloodFillConnectivity](vimage/floodfillconnectivity.md)
-- [vImage.Gamma](vimage/gamma.md)
+- [vImage.FloodFillConnectivity](./floodfillconnectivity.md)
+- [vImage.Gamma](./gamma.md)
   Describes either a used-defined or constant gamma.
-- [vImage.ReflectionAxis](vimage/reflectionaxis.md)
+- [vImage.ReflectionAxis](./reflectionaxis.md)
   The axis to reflect an image.
-- [vImage.Rotation](vimage/rotation.md)
+- [vImage.Rotation](./rotation.md)
   The angle to rotate an image.
-- [vImage.ShearDirection](vimage/sheardirection.md)
+- [vImage.ShearDirection](./sheardirection.md)
   The shear direction.
 
 

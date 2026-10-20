@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns an iterator that traverses the list of dock accessory motion states.
 
@@ -19,9 +20,10 @@ func makeAsyncIterator() -> DockAccessory.MotionStates.Iterator
 
 ## See Also
 
-- [DockAccessory.MotionStates.Iterator](dockaccessory/motionstates-swift.struct/iterator.md)
+### Iterating over motion states
+- [DockAccessory.MotionStates.Iterator](./iterator.md)
   An object that allows iteration over dock accessory motion states.
-- [DockAccessory.MotionStates.Element](dockaccessory/motionstates-swift.struct/element.md)
+- [DockAccessory.MotionStates.Element](./element.md)
   A dock accessory motion state.
 
 

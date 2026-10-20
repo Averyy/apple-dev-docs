@@ -1,7 +1,8 @@
 # PIRServerURL
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The URL of the PIR server.
 
@@ -10,13 +11,15 @@ The URL of the PIR server.
 - iPadOS 27.2+
 - macOS 27.2+
 
+## Details
 
-
-**Type**: string
+- **Name**: `PIRServerURL`
+- **Type**: string
 
 ## See Also
 
-- [PrivacyPassIssuerURL](information-property-list/nspirconfiguration/privacypassissuerurl.md)
+### Configuring URLs
+- [PrivacyPassIssuerURL](./privacypassissuerurl.md)
   The URL of the Privacy Pass issuer.
 
 

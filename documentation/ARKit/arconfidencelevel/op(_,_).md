@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: ARKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns whether one confidence level is less than another.
 

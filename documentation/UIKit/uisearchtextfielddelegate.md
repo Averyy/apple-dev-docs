@@ -1,15 +1,16 @@
 # UISearchTextFieldDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for the delegate of a search field.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,32 +19,37 @@ The interface for the delegate of a search field.
 protocol UISearchTextFieldDelegate : UITextFieldDelegate
 ```
 
+```objc
+@protocol UISearchTextFieldDelegate <UITextFieldDelegate>
+```
+
 #### Overview
 
-A search field asks its delegate for an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) when the user starts to copy or move a token. To support these interactions, set the search field’s [`delegate`](uitextfield/delegate.md) to an instance of [`UISearchTextFieldDelegate`](uisearchtextfielddelegate.md) that implements [`searchTextField(_:itemProviderForCopying:)`](uisearchtextfielddelegate/searchtextfield(_:itemproviderforcopying:).md) and set the search field’s [`allowsCopyingTokens`](uisearchtextfield/allowscopyingtokens.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+A search field asks its delegate for an [`NSItemProvider`](../Foundation/nsitemprovider.md) when the user starts to copy or move a token. To support these interactions, set the search field’s [`delegate`](./uitextfield/delegate.md) to an instance of [`UISearchTextFieldDelegate`](./uisearchtextfielddelegate.md) that implements [`searchTextField(_:itemProviderForCopying:)`](./uisearchtextfielddelegate/searchtextfield%28_,itemproviderforcopying%29.md) and set the search field’s [`allowsCopyingTokens`](./uisearchtextfield/allowscopyingtokens.md) property to [`true`](../Swift/true.md).
 
-The search field’s [`pasteDelegate`](uitextpasteconfigurationsupporting/pastedelegate.md) handles pasting and dropping tokens as well as text.
+The search field’s [`pasteDelegate`](./uitextpasteconfigurationsupporting/pastedelegate.md) handles pasting and dropping tokens as well as text.
 
 ## Topics
 
 ### Providing information to copy and drag
-- [func searchTextField(UISearchTextField, itemProviderForCopying: UISearchToken) -> NSItemProvider](uisearchtextfielddelegate/searchtextfield(_:itemproviderforcopying:).md)
+- [func searchTextField(UISearchTextField, itemProviderForCopying: UISearchToken) -> NSItemProvider](./uisearchtextfielddelegate/searchtextfield%28_,itemproviderforcopying%29.md)
   Asks the delegate for an object that can provide a token when the copied token is pasted.
 ### Responding to search suggestion selections
-- [func searchTextField(UISearchTextField, didSelect: any UISearchSuggestion)](uisearchtextfielddelegate/searchtextfield(_:didselect:).md)
+- [func searchTextField(UISearchTextField, didSelect: any UISearchSuggestion)](./uisearchtextfielddelegate/searchtextfield%28_,didselect%29.md)
   Tells the delegate when a person selects a search suggestion in the search text field.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UITextFieldDelegate](uitextfielddelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UITextFieldDelegate](./uitextfielddelegate.md)
 
 ## See Also
 
-- [class UISearchTextField](uisearchtextfield.md)
+### Search field
+- [class UISearchTextField](./uisearchtextfield.md)
   A view for displaying and editing text and search tokens.
-- [class UISearchToken](uisearchtoken.md)
+- [class UISearchToken](./uisearchtoken.md)
   Search criteria in a search text field, represented by text and an optional icon.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSBCModePageRigidDiskGeometry_RPL_Mask](1645303-anonymous/ksbcmodepagerigiddiskgeometry_rpl_mask.md)
+- [kSBCModePageRigidDiskGeometry_RPL_Mask](./api-1645303-anonymous/ksbcmodepagerigiddiskgeometry_rpl_mask.md)
 
 
 ---

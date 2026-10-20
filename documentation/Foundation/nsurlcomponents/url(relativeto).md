@@ -1,7 +1,8 @@
 # url(relativeTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL object derived from the components object.
 
@@ -20,13 +21,17 @@ Returns a URL object derived from the components object.
 func url(relativeTo baseURL: URL?) -> URL?
 ```
 
+```objc
+- (NSURL *) URLRelativeToURL:(NSURL *) baseURL;
+```
+
 #### Discussion
 
 If the components object has an authority component (user, password, host, or port) and a path component, then the path must either begin with `"/"` or be an empty string. Otherwise, this property contains `nil`.
 
 If the `NSURLComponents`*does not* have an authority component (user, password, host, or port) and has a path component, the path component must not start with `"//"`. If it does, this property contains `nil`.
 
-To configure a components object based on an existing URL, call either the [`componentsWithURL:resolvingAgainstBaseURL:`](nsurlcomponents/componentswithurl:resolvingagainstbaseurl:.md) or [`init(url:resolvingAgainstBaseURL:)`](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md) method.
+To configure a components object based on an existing URL, call either the [`componentsWithURL:resolvingAgainstBaseURL:`](./componentswithurl_resolvingagainstbaseurl_.md) or [`init(url:resolvingAgainstBaseURL:)`](./init%28url,resolvingagainstbaseurl%29-3bbte.md) method.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ To configure a components object based on an existing URL, call either the [`com
 
 ## See Also
 
-- [var string: String?](nsurlcomponents/string.md)
+### Getting the URL
+- [var string: String?](./string.md)
   A URL derived from the components object, in string form.
-- [var url: URL?](nsurlcomponents/url.md)
+- [var url: URL?](./url.md)
   A URL object derived from the components object.
 
 

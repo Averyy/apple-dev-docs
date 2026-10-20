@@ -1,7 +1,8 @@
 # init(ints:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new column of integers by converting the elements of another column.
 
@@ -21,7 +22,7 @@ init(ints: MLUntypedColumn)
 
 #### Return Value
 
-A new untyped column of integers; otherwise an invalid column if any element of the given column cannot be converted to [`Int`](https://developer.apple.com/documentation/swift/int).
+A new untyped column of integers; otherwise an invalid column if any element of the given column cannot be converted to [`Int`](../../Swift/int.md).
 
 #### Discussion
 
@@ -36,7 +37,7 @@ print(stringColumn)
  */
 ```
 
-Then use [`init(ints:)`](mluntypedcolumn/init(ints:).md) to convert the column to a column of integers.
+Then use [`init(ints:)`](./init%28ints%29.md) to convert the column to a column of integers.
 
 ```swift
 let intsColumn = MLUntypedColumn(ints: stringColumn)
@@ -53,15 +54,16 @@ print(intsColumn)
 
 ## See Also
 
-- [init(doubles: MLUntypedColumn)](mluntypedcolumn/init(doubles:).md)
+### Creating an untyped column by converting another column
+- [init(doubles: MLUntypedColumn)](./init%28doubles%29.md)
   Creates a new column of doubles by converting the elements of another column.
-- [init(strings: MLUntypedColumn)](mluntypedcolumn/init(strings:).md)
+- [init(strings: MLUntypedColumn)](./init%28strings%29.md)
   Creates a new column of strings by converting the elements of another column.
-- [init(sequences: MLUntypedColumn)](mluntypedcolumn/init(sequences:).md)
+- [init(sequences: MLUntypedColumn)](./init%28sequences%29.md)
   Creates a new column of machine learning sequences by converting the elements of another column.
-- [init(dictionaries: MLUntypedColumn)](mluntypedcolumn/init(dictionaries:).md)
+- [init(dictionaries: MLUntypedColumn)](./init%28dictionaries%29.md)
   Creates a new column of machine learning dictionaries by converting the elements of another column.
-- [init(multiArrays: MLUntypedColumn)](mluntypedcolumn/init(multiarrays:).md)
+- [init(multiArrays: MLUntypedColumn)](./init%28multiarrays%29.md)
   Creates a MLUntypedColumn of type MLMultiArray from the specified MLUntypedColumn if the values of the given MLUntypedColumn are convertible to MLDataValue.MultiArrayType.
 
 

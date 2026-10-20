@@ -1,7 +1,8 @@
 # SVGTRefElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGTRefElement
 ```
 
 ## Relationships
 
 ### Inherits From
-- [SVGTextPositioningElement](svgtextpositioningelement.md)
+- [SVGTextPositioningElement](./svgtextpositioningelement.md)
 
 
 ---

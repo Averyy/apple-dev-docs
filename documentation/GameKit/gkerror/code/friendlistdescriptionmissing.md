@@ -1,7 +1,8 @@
 # GKError.Code.friendListDescriptionMissing
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Access to the local player’s list of friends denied for lack of a reason.
 
@@ -20,17 +21,22 @@ Access to the local player’s list of friends denied for lack of a reason.
 case friendListDescriptionMissing
 ```
 
+```c
+GKErrorFriendListDescriptionMissing
+```
+
 #### Discussion
 
-If your game wants access to the player’s friends, provide a reason by adding the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) key to the information property list.
+If your game wants access to the player’s friends, provide a reason by adding the [`NSGKFriendListUsageDescription`](../../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key to the information property list.
 
 ## See Also
 
-- [GKError.Code.friendListRestricted](gkerror/code/friendlistrestricted.md)
+### Friend List Errors
+- [GKError.Code.friendListRestricted](./friendlistrestricted.md)
   Access to the local player’s list of friends restricted.
-- [GKError.Code.friendListDenied](gkerror/code/friendlistdenied.md)
+- [GKError.Code.friendListDenied](./friendlistdenied.md)
   Access to the local player’s list of friends denied.
-- [GKError.Code.friendRequestNotAvailable](gkerror/code/friendrequestnotavailable.md)
+- [GKError.Code.friendRequestNotAvailable](./friendrequestnotavailable.md)
   The player can’t send a friend request at this time from this device.
 
 

@@ -1,7 +1,8 @@
 # isMultiple(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 
@@ -20,6 +21,8 @@ Returns `true` if this value is a multiple of the given value, and `false` other
 func isMultiple(of other: Self) -> Bool
 ```
 
+Available when `Self` conforms to `FixedWidthInteger`.
+
 #### Discussion
 
 For two integers *a* and *b*, *a* is a multiple of *b* if there exists a third integer *q* such that *a = q*b*. For example, *6* is a multiple of *3* because *6 = 2*3*. Zero is a multiple of everything because *0 = 0*x* for any integer *x*.
@@ -35,11 +38,12 @@ Two edge cases are worth particular attention:
 
 ## See Also
 
-- [Integer Operators](integer-operators.md)
+### Performing Calculations
+- [Integer Operators](../integer-operators.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func negate()](int/negate.md)
+- [func negate()](./negate%28%29.md)
   Replaces this value with its additive inverse.
-- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](int/quotientandremainder(dividingby:).md)
+- [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](./quotientandremainder%28dividingby%29.md)
   Returns the quotient and remainder of this value divided by the given value.
 
 

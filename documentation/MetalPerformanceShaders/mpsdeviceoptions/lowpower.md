@@ -1,7 +1,8 @@
 # lowPower
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.2+
@@ -15,6 +16,10 @@
 
 ```swift
 static var lowPower: MPSDeviceOptions { get }
+```
+
+```c
+MPSDeviceOptionsLowPower
 ```
 
 

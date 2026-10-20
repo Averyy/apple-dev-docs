@@ -1,7 +1,8 @@
 # navigationBar(_:didPush:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an item was pushed onto the navigation bar.
 
@@ -9,13 +10,17 @@ Tells the delegate that an item was pushed onto the navigation bar.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem)
+```
+
+```objc
+- (void) navigationBar:(UINavigationBar *) navigationBar didPushItem:(UINavigationItem *) item;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ If pushing an item onto the navigation bar is animated, this method is invoked a
 
 ## See Also
 
-- [func navigationBar(UINavigationBar, shouldPush: UINavigationItem) -> Bool](uinavigationbardelegate/navigationbar(_:shouldpush:).md)
+### Pushing items
+- [func navigationBar(UINavigationBar, shouldPush: UINavigationItem) -> Bool](./navigationbar%28_,shouldpush%29.md)
   Returns a Boolean value indicating whether the navigation bar should push an item.
 
 

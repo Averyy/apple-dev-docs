@@ -1,7 +1,8 @@
 # init(object:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a set that contains a single given object.
 
@@ -20,23 +21,28 @@ Creates and returns a set that contains a single given object.
 convenience init(object: Any)
 ```
 
+```objc
++ (instancetype) setWithObject:(ObjectType) object;
+```
+
 #### Return Value
 
 A new set that contains a single member, `object`.
 
 ## Parameters
 
-- `object`: The object to add to the new set. `object` receives a [`retain`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain) message after being added to the set.
+- `object`: The object to add to the new set. `object` receives a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message after being added to the set.
 
 ## See Also
 
-- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsset/init(objects:count:)-65ni4.md)
+### Creating a Set
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./init%28objects,count%29-65ni4.md)
   Creates and returns a set containing a specified number of objects from a given C array of objects.
-- [func adding(Any) -> Set<AnyHashable>](nsset/adding(_:).md)
+- [func adding(Any) -> Set<AnyHashable>](./adding%28_%29.md)
   Returns a new set formed by adding a given object to the receiving set.
-- [func addingObjects(from: Set<AnyHashable>) -> Set<AnyHashable>](nsset/addingobjects(from:)-2i31h.md)
+- [func addingObjects(from: Set<AnyHashable>) -> Set<AnyHashable>](./addingobjects%28from%29-2i31h.md)
   Returns a new set formed by adding the objects in a given set to the receiving set.
-- [func addingObjects(from: [Any]) -> Set<AnyHashable>](nsset/addingobjects(from:)-544m9.md)
+- [func addingObjects(from: [Any]) -> Set<AnyHashable>](./addingobjects%28from%29-544m9.md)
   Returns a new set formed by adding the objects in a given array to the receiving set.
 
 

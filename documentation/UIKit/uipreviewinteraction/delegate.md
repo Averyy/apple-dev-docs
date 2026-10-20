@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that acts as the delegate of the preview interaction.
 
@@ -17,13 +18,18 @@ An object that acts as the delegate of the preview interaction.
 weak var delegate: (any UIPreviewInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPreviewInteractionDelegate> delegate;
+```
+
 #### Discussion
 
-The preview interaction informs the delegate of state and progress changes throughout the 3D Touch process. Create an object that conforms to the [`UIPreviewInteractionDelegate`](uipreviewinteractiondelegate.md) protocol and assign it to this property.
+The preview interaction informs the delegate of state and progress changes throughout the 3D Touch process. Create an object that conforms to the [`UIPreviewInteractionDelegate`](../uipreviewinteractiondelegate.md) protocol and assign it to this property.
 
 ## See Also
 
-- [protocol UIPreviewInteractionDelegate](uipreviewinteractiondelegate.md)
+### Preparing preview interactions
+- [protocol UIPreviewInteractionDelegate](../uipreviewinteractiondelegate.md)
   A set of methods for communicating the progress of a preview interaction.
 
 

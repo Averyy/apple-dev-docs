@@ -1,7 +1,8 @@
 # MKDirections.ETAResponse
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The travel-time information that Apple servers return.
 
@@ -20,52 +21,57 @@ The travel-time information that Apple servers return.
 class ETAResponse
 ```
 
+```objc
+@interface MKETAResponse : NSObject
+```
+
 #### Overview
 
-You don’t create instances of this class directly. Instead, you initiate a request for the travel time by calling the [`calculateETA(completionHandler:)`](mkdirections/calculateeta(completionhandler:).md) method of an [`MKDirections`](mkdirections.md) object. The completion handler you pass to that method receives an `MKDirections.ETAResponse` object with the results.
+You don’t create instances of this class directly. Instead, you initiate a request for the travel time by calling the [`calculateETA(completionHandler:)`](./calculateeta%28completionhandler%29.md) method of an [`MKDirections`](../mkdirections.md) object. The completion handler you pass to that method receives an `MKDirections.ETAResponse` object with the results.
 
 ## Topics
 
 ### Getting the end points
-- [var source: MKMapItem](mkdirections/etaresponse/source.md)
+- [var source: MKMapItem](./etaresponse/source.md)
   The start point of the route.
-- [var destination: MKMapItem](mkdirections/etaresponse/destination.md)
+- [var destination: MKMapItem](./etaresponse/destination.md)
   The end point of the route.
 ### Getting the travel information
-- [var expectedTravelTime: TimeInterval](mkdirections/etaresponse/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./etaresponse/expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var expectedDepartureDate: Date](mkdirections/etaresponse/expecteddeparturedate.md)
+- [var expectedDepartureDate: Date](./etaresponse/expecteddeparturedate.md)
   The expected departure time.
-- [var expectedArrivalDate: Date](mkdirections/etaresponse/expectedarrivaldate.md)
+- [var expectedArrivalDate: Date](./etaresponse/expectedarrivaldate.md)
   The expected arrival time.
-- [var distance: CLLocationDistance](mkdirections/etaresponse/distance.md)
+- [var distance: CLLocationDistance](./etaresponse/distance.md)
   The expected travel distance, in meters.
-- [var transportType: MKDirectionsTransportType](mkdirections/etaresponse/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./etaresponse/transporttype.md)
   The type of conveyance to use for determining the travel time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKDirections](mkdirections.md)
+### Directions
+- [class MKDirections](../mkdirections.md)
   A utility object that computes directions and travel-time information based on the route information you provide.
-- [MKDirections.Request](mkdirections/request.md)
+- [MKDirections.Request](./request.md)
   The start and end points of a route, along with the planned mode of transportation.
-- [MKDirections.Response](mkdirections/response.md)
+- [MKDirections.Response](./response.md)
   The route information that Apple servers return in response to your request for directions.
-- [class MKRoute](mkroute.md)
+- [class MKRoute](../mkroute.md)
   A single route between a requested start and end point.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](../mkroute/step.md)
   One portion of an overall route.
 
 

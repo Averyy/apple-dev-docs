@@ -1,7 +1,8 @@
 # WINetworkSharingAskToShareState.approved
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person allowed the accessory to use the network.
 
@@ -18,9 +19,10 @@ case approved
 
 ## See Also
 
-- [WINetworkSharingAskToShareState.undetermined](winetworksharingasktosharestate/undetermined.md)
+### Checking authorization state
+- [WINetworkSharingAskToShareState.undetermined](./undetermined.md)
   The person hasn’t decided whether to share the network with the accessory.
-- [WINetworkSharingAskToShareState.denied](winetworksharingasktosharestate/denied.md)
+- [WINetworkSharingAskToShareState.denied](./denied.md)
   The person chose not to share the network with the accessory.
 
 

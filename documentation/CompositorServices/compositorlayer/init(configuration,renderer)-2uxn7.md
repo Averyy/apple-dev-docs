@@ -1,9 +1,10 @@
 # init(configuration:renderer:)
 
 **Framework**: Compositor Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`CompositorLayer`](compositorlayer.md) instance.
+Creates a [`CompositorLayer`](../compositorlayer.md) instance.
 
 **Availability**:
 - macOS 26.0+

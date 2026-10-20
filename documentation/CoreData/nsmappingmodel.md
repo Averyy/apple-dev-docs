@@ -1,7 +1,8 @@
 # NSMappingModel
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A model instance that specifies how to map a model from a source to a destination managed object model.
 
@@ -10,7 +11,7 @@ A model instance that specifies how to map a model from a source to a destinatio
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,47 +21,52 @@ A model instance that specifies how to map a model from a source to a destinatio
 class NSMappingModel
 ```
 
+```objc
+@interface NSMappingModel : NSObject
+```
+
 ## Topics
 
 ### Creating a Mapping
-- [init?(from: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](nsmappingmodel/init(from:forsourcemodel:destinationmodel:).md)
+- [init?(from: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](./nsmappingmodel/init%28from,forsourcemodel,destinationmodel%29.md)
   Returns the mapping model that will translate data from the source to the destination model.
-- [class func inferredMappingModel(forSourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel](nsmappingmodel/inferredmappingmodel(forsourcemodel:destinationmodel:).md)
+- [class func inferredMappingModel(forSourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel](./nsmappingmodel/inferredmappingmodel%28forsourcemodel,destinationmodel%29.md)
   Returns a newly created mapping model that will migrate data from the source to the destination model.
-- [init?(contentsOf: URL?)](nsmappingmodel/init(contentsof:).md)
+- [init?(contentsOf: URL?)](./nsmappingmodel/init%28contentsof%29.md)
   Returns a mapping model initialized from a given URL.
 ### Managing Entity Mappings
-- [var entityMappings: [NSEntityMapping]!](nsmappingmodel/entitymappings.md)
+- [var entityMappings: [NSEntityMapping]!](./nsmappingmodel/entitymappings.md)
   The entity mappings for the mapping model.
-- [var entityMappingsByName: [String : NSEntityMapping]](nsmappingmodel/entitymappingsbyname.md)
+- [var entityMappingsByName: [String : NSEntityMapping]](./nsmappingmodel/entitymappingsbyname.md)
   The entity mappings for the mapping model, keyed by name.
 ### Initializers
-- [init?(contentsOfURL: URL?)](nsmappingmodel/init(contentsofurl:).md)
-- [init?(fromBundles: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](nsmappingmodel/init(frombundles:forsourcemodel:destinationmodel:).md)
+- [init?(contentsOfURL: URL?)](./nsmappingmodel/init%28contentsofurl%29.md)
+- [init?(fromBundles: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](./nsmappingmodel/init%28frombundles,forsourcemodel,destinationmodel%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSMigrationManager](nsmigrationmanager.md)
+### Entity Mapping
+- [class NSMigrationManager](./nsmigrationmanager.md)
   A migration manager instance that performs a migration of data from one persistent store to another using a given mapping model.
-- [class NSEntityMapping](nsentitymapping.md)
+- [class NSEntityMapping](./nsentitymapping.md)
   A mapping instance that specifies how to map an entity from a source to a destination managed object model.
-- [class NSEntityMigrationPolicy](nsentitymigrationpolicy.md)
+- [class NSEntityMigrationPolicy](./nsentitymigrationpolicy.md)
   A policy instance that customizes the migration process for an entity mapping.
-- [enum NSEntityMappingType](nsentitymappingtype.md)
+- [enum NSEntityMappingType](./nsentitymappingtype.md)
   The types for mapping an entity between a source model and a destination model.
-- [class NSPropertyMapping](nspropertymapping.md)
+- [class NSPropertyMapping](./nspropertymapping.md)
   A mapping instance that specifies in a model how to map from a property in a source entity to a property in a destination entity.
 
 

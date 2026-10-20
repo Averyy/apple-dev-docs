@@ -1,7 +1,8 @@
 # multiDateSelection(_:canSelectDate:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether a user can select a date represented by date components in the calendar view.
 
@@ -15,6 +16,10 @@ Returns whether a user can select a date represented by date components in the c
 
 ```swift
 optional func multiDateSelection(_ selection: UICalendarSelectionMultiDate, canSelectDate dateComponents: DateComponents) -> Bool
+```
+
+```objc
+- (BOOL) multiDateSelection:(UICalendarSelectionMultiDate *) selection canSelectDate:(NSDateComponents *) dateComponents;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ The calendar view displays non-selectable dates as disabled.
 
 ## See Also
 
-- [func multiDateSelection(UICalendarSelectionMultiDate, canDeselectDate: DateComponents) -> Bool](uicalendarselectionmultidatedelegate/multidateselection(_:candeselectdate:).md)
+### Getting selectable dates
+- [func multiDateSelection(UICalendarSelectionMultiDate, canDeselectDate: DateComponents) -> Bool](./multidateselection%28_,candeselectdate%29.md)
   Returns whether a user can deselect a date represented by date components in the calendar view.
 
 

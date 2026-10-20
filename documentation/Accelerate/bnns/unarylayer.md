@@ -1,7 +1,8 @@
 # BNNS.UnaryLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for layers that accept a single input.
 
@@ -11,8 +12,10 @@ The base class for layers that accept a single input.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,30 +26,31 @@ class UnaryLayer
 ## Topics
 
 ### Applying a Unary Layer
-- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](bnns/unarylayer/apply(batchsize:input:output:).md)
+- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](./unarylayer/apply%28batchsize,input,output%29.md)
   Applies the layer to a set of input objects, writing the result to a set of output objects.
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](bnns/unarylayer/applybackward(batchsize:input:output:outputgradient:generatinginputgradient:).md)
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](./unarylayer/applybackward%28batchsize,input,output,outputgradient,generatinginputgradient%29.md)
   Applies the layer backward to generate input gradients.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.Layer](bnns/layer.md)
+- [BNNS.Layer](./layer.md)
 ### Inherited By
-- [BNNS.ActivationLayer](bnns/activationlayer.md)
-- [BNNS.ConvolutionLayer](bnns/convolutionlayer.md)
-- [BNNS.DropoutLayer](bnns/dropoutlayer.md)
-- [BNNS.GramLayer](bnns/gramlayer.md)
-- [BNNS.PaddingLayer](bnns/paddinglayer.md)
-- [BNNS.PermuteLayer](bnns/permutelayer.md)
-- [BNNS.ReductionLayer](bnns/reductionlayer.md)
-- [BNNS.ResizeLayer](bnns/resizelayer.md)
+- [BNNS.ActivationLayer](./activationlayer.md)
+- [BNNS.ConvolutionLayer](./convolutionlayer.md)
+- [BNNS.DropoutLayer](./dropoutlayer.md)
+- [BNNS.GramLayer](./gramlayer.md)
+- [BNNS.PaddingLayer](./paddinglayer.md)
+- [BNNS.PermuteLayer](./permutelayer.md)
+- [BNNS.ReductionLayer](./reductionlayer.md)
+- [BNNS.ResizeLayer](./resizelayer.md)
 
 ## See Also
 
-- [class Layer](bnns/layer.md)
+### Base Classes
+- [class Layer](./layer.md)
   The base class for layer objects that wrap filters and manage deinitialization.
-- [class BinaryLayer](bnns/binarylayer.md)
+- [class BinaryLayer](./binarylayer.md)
   The base class for layers that accept two inputs.
 
 

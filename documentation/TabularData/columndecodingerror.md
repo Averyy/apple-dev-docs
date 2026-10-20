@@ -1,7 +1,8 @@
 # ColumnDecodingError
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A column decoding error.
 
@@ -27,38 +28,39 @@ This error wraps a decoding error and includes the column name and row index whe
 ## Topics
 
 ### Creating a Decoding Error
-- [init(columnName: String, rowIndex: Int, decodingError: DecodingError)](columndecodingerror/init(columnname:rowindex:decodingerror:).md)
+- [init(columnName: String, rowIndex: Int, decodingError: DecodingError)](./columndecodingerror/init%28columnname,rowindex,decodingerror%29.md)
   Creates a column decoding error.
 ### Getting Error Information
-- [var columnName: String](columndecodingerror/columnname.md)
+- [var columnName: String](./columndecodingerror/columnname.md)
   The name of the column with the error.
-- [var debugDescription: String](columndecodingerror/debugdescription.md)
+- [var debugDescription: String](./columndecodingerror/debugdescription.md)
   A text representation of the column decoding error suitable for debugging.
-- [var decodingError: DecodingError](columndecodingerror/decodingerror.md)
+- [var decodingError: DecodingError](./columndecodingerror/decodingerror.md)
   The underlying decoding error.
-- [var rowIndex: Int](columndecodingerror/rowindex.md)
+- [var rowIndex: Int](./columndecodingerror/rowindex.md)
   The index of the column’s element with the error.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum JSONReadingError](jsonreadingerror.md)
+### Errors
+- [enum JSONReadingError](./jsonreadingerror.md)
   A JSON reading error.
-- [enum CSVReadingError](csvreadingerror.md)
+- [enum CSVReadingError](./csvreadingerror.md)
   A CSV reading error.
-- [enum CSVWritingError](csvwritingerror.md)
+- [enum CSVWritingError](./csvwritingerror.md)
   A CSV writing error.
-- [struct ColumnEncodingError](columnencodingerror.md)
+- [struct ColumnEncodingError](./columnencodingerror.md)
   A column encoding error.
-- [enum SFrameReadingError](sframereadingerror.md)
+- [enum SFrameReadingError](./sframereadingerror.md)
   An error when reading a Turi Create scalable data frame.
 
 

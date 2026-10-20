@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason for the suspension.
 
@@ -19,15 +20,20 @@ The reason for the suspension.
 var reason: AVCoordinatedPlaybackSuspension.Reason { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCoordinatedPlaybackSuspensionReason reason;
+```
+
 #### Discussion
 
 The coordinator communicates the suspension reason to other participants.
 
 ## See Also
 
-- [var beginDate: Date](avcoordinatedplaybacksuspension/begindate.md)
+### Inspecting a suspension
+- [var beginDate: Date](./begindate.md)
   The time the suspension begins.
-- [AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct.md)
+- [AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct.md)
   Constants that identify playback suspension reasons.
 
 

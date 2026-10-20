@@ -1,7 +1,8 @@
 # init(originFromAnchorTransform:sharedWithNearbyParticipants:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a world anchor with a transform and indicate if it should be shared with nearby participants.
 
@@ -16,8 +17,10 @@ init(originFromAnchorTransform: simd_float4x4, sharedWithNearbyParticipants: Boo
 
 #### Discussion
 
-> **Note**: - Nearby participants refer to participants that are nearby to the local participant in a SharePlay session.
-- World anchors that are marked for sharing do not get persisted and their lifetime is limited to that of the SharePlay session.
+> **Note**:
+>
+> - Nearby participants refer to participants that are nearby to the local participant in a SharePlay session.
+> - World anchors that are marked for sharing do not get persisted and their lifetime is limited to that of the SharePlay session.
 
 ## Parameters
 

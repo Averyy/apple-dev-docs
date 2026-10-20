@@ -1,7 +1,8 @@
 # TextureResource.Format.ColorSpace.displayP3
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 DCI P3 primaries with a D65 white point.
 

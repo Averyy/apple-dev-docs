@@ -1,7 +1,8 @@
 # CFHostInfoType.names
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that names are to be resolved or that names were resolved.
 
@@ -19,11 +20,16 @@ Specifies that names are to be resolved or that names were resolved.
 case names
 ```
 
+```c
+kCFHostNames
+```
+
 ## See Also
 
-- [CFHostInfoType.addresses](cfhostinfotype/addresses.md)
+### Constants
+- [CFHostInfoType.addresses](./addresses.md)
   Specifies that addresses are to be resolved or that addresses were resolved.
-- [CFHostInfoType.reachability](cfhostinfotype/reachability.md)
+- [CFHostInfoType.reachability](./reachability.md)
   Specifies that reachability information is to be resolved or that reachability information was resolved.
 
 

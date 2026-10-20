@@ -1,7 +1,8 @@
 # addChild(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child node at the end of the receiver’s current list of children.
 
@@ -15,6 +16,10 @@ Adds a child node at the end of the receiver’s current list of children.
 func addChild(_ child: XMLNode)
 ```
 
+```objc
+- (void) addChild:(NSXMLNode *) child;
+```
+
 #### Discussion
 
 The new node has an index value that is one greater than the last of the current children.
@@ -25,17 +30,18 @@ The new node has an index value that is one greater than the last of the current
 
 ## See Also
 
-- [func insertChild(XMLNode, at: Int)](xmlelement/insertchild(_:at:).md)
+### Manipulating Child Elements
+- [func insertChild(XMLNode, at: Int)](./insertchild%28_,at%29.md)
   Inserts a new child node at a specified location in the receiver’s list of child nodes.
-- [func insertChildren([XMLNode], at: Int)](xmlelement/insertchildren(_:at:).md)
+- [func insertChildren([XMLNode], at: Int)](./insertchildren%28_,at%29.md)
   Inserts an array of child nodes at a specified location in the receiver’s list of children.
-- [func removeChild(at: Int)](xmlelement/removechild(at:).md)
+- [func removeChild(at: Int)](./removechild%28at%29.md)
   Removes the child node of the receiver identified by a given index.
-- [func replaceChild(at: Int, with: XMLNode)](xmlelement/replacechild(at:with:).md)
+- [func replaceChild(at: Int, with: XMLNode)](./replacechild%28at,with%29.md)
   Replaces a child node at a specified location with another child node.
-- [func setChildren([XMLNode]?)](xmlelement/setchildren(_:).md)
+- [func setChildren([XMLNode]?)](./setchildren%28_%29.md)
   Sets all child nodes of the receiver at once, replacing any existing children.
-- [func normalizeAdjacentTextNodesPreservingCDATA(Bool)](xmlelement/normalizeadjacenttextnodespreservingcdata(_:).md)
+- [func normalizeAdjacentTextNodesPreservingCDATA(Bool)](./normalizeadjacenttextnodespreservingcdata%28_%29.md)
   Coalesces adjacent text nodes of the receiver that you have explicitly added, optionally including CDATA sections.
 
 

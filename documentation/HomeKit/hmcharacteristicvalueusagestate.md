@@ -1,7 +1,8 @@
 # HMCharacteristicValueUsageState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the usage state of an accessory.
 
@@ -19,25 +20,29 @@ Possible values for the usage state of an accessory.
 enum HMCharacteristicValueUsageState
 ```
 
+```c
+enum HMCharacteristicValueUsageState : NSInteger;
+```
+
 ## Topics
 
 ### Usage States
-- [HMCharacteristicValueUsageState.notInUse](hmcharacteristicvalueusagestate/notinuse.md)
+- [HMCharacteristicValueUsageState.notInUse](./hmcharacteristicvalueusagestate/notinuse.md)
   The accessory is not in use.
-- [HMCharacteristicValueUsageState.inUse](hmcharacteristicvalueusagestate/inuse.md)
+- [HMCharacteristicValueUsageState.inUse](./hmcharacteristicvalueusagestate/inuse.md)
   The accessory is currently in use.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueusagestate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueusagestate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

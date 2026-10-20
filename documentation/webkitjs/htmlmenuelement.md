@@ -1,7 +1,8 @@
 # HTMLMenuElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLMenuElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compact](htmlmenuelement/1630996-compact.md)
+- [compact](./htmlmenuelement/api-1630996-compact.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

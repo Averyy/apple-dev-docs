@@ -1,10 +1,11 @@
 # NSAccessibilityYearMonthDateTimeComponentsFlag
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var NSAccessibilityYearMonthDateTimeComponentsFlag: Int { get }
 ```
 
+```c
+NSAccessibilityYearMonthDateTimeComponentsFlag
+```
+
 ## See Also
 
-- [var NSAccessibilityHourMinuteDateTimeComponentsFlag: Int](nsaccessibilityhourminutedatetimecomponentsflag.md)
-- [var NSAccessibilityHourMinuteSecondDateTimeComponentsFlag: Int](nsaccessibilityhourminuteseconddatetimecomponentsflag.md)
-- [var NSAccessibilityYearMonthDayDateTimeComponentsFlag: Int](nsaccessibilityyearmonthdaydatetimecomponentsflag.md)
+### Component flags
+- [var NSAccessibilityHourMinuteDateTimeComponentsFlag: Int](./nsaccessibilityhourminutedatetimecomponentsflag.md)
+- [var NSAccessibilityHourMinuteSecondDateTimeComponentsFlag: Int](./nsaccessibilityhourminuteseconddatetimecomponentsflag.md)
+- [var NSAccessibilityYearMonthDayDateTimeComponentsFlag: Int](./nsaccessibilityyearmonthdaydatetimecomponentsflag.md)
 
 
 ---

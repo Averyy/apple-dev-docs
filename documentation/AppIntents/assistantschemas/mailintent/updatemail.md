@@ -1,7 +1,8 @@
 # updateMail
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for updating email messages.
 
@@ -48,7 +49,7 @@ struct UpdateMailIntent: AppIntent {
 }
 ```
 
-For more information about the `.mail` app intent domain, see [`Mail`](app-schema-domain-mail.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.mail` app intent domain, see [Mail](../../app-schema-domain-mail.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

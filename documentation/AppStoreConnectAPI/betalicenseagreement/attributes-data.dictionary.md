@@ -1,7 +1,8 @@
 # BetaLicenseAgreement.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Beta License Agreements resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Beta License Agreements resource.
 
 ## Declaration
 
-```swift
+```
 object BetaLicenseAgreement.Attributes
 ```
 
@@ -20,9 +21,11 @@ object BetaLicenseAgreement.Attributes
 
 ## See Also
 
-- [Beta License Agreements](beta-license-agreements.md)
+### Related Documentation
+- [Beta License Agreements](../beta-license-agreements.md)
   Beta license agreements for apps.
-- [object BetaLicenseAgreement.Relationships](betalicenseagreement/relationships-data.dictionary.md)
+### Objects
+- [object BetaLicenseAgreement.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

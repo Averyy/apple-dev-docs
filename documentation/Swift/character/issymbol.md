@@ -1,7 +1,8 @@
 # isSymbol
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this character represents a symbol.
 
@@ -22,7 +23,7 @@ var isSymbol: Bool { get }
 
 #### Discussion
 
-This property is `true` only for characters composed of scalars in the “Math_Symbol”, “Currency_Symbol”, “Modifier_Symbol”, or “Other_Symbol” categories in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This property is `true` only for characters composed of scalars in the “Math_Symbol”, “Currency_Symbol”, “Modifier_Symbol”, or “Other_Symbol” categories in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 For example, the following characters all represent symbols:
 
@@ -32,17 +33,18 @@ For example, the following characters all represent symbols:
 
 ## See Also
 
-- [var isLetter: Bool](character/isletter.md)
+### Inspecting a Character
+- [var isLetter: Bool](./isletter.md)
   A Boolean value indicating whether this character is a letter.
-- [var isPunctuation: Bool](character/ispunctuation.md)
+- [var isPunctuation: Bool](./ispunctuation.md)
   A Boolean value indicating whether this character represents punctuation.
-- [var isNewline: Bool](character/isnewline.md)
+- [var isNewline: Bool](./isnewline.md)
   A Boolean value indicating whether this character represents a newline.
-- [var isWhitespace: Bool](character/iswhitespace.md)
+- [var isWhitespace: Bool](./iswhitespace.md)
   A Boolean value indicating whether this character represents whitespace, including newlines.
-- [var isMathSymbol: Bool](character/ismathsymbol.md)
+- [var isMathSymbol: Bool](./ismathsymbol.md)
   A Boolean value indicating whether this character represents a symbol that naturally appears in mathematical contexts.
-- [var isCurrencySymbol: Bool](character/iscurrencysymbol.md)
+- [var isCurrencySymbol: Bool](./iscurrencysymbol.md)
   A Boolean value indicating whether this character represents a currency symbol.
 
 

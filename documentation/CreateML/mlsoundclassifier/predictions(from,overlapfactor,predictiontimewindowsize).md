@@ -1,7 +1,8 @@
 # predictions(from:overlapFactor:predictionTimeWindowSize:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates predictions that use an overlap factor and time window size for an array of audio files.
 
@@ -30,7 +31,8 @@ An array of prediction labels for the audio files.
 
 ## See Also
 
-- [func predictions(from: [URL]) throws -> [String]](mlsoundclassifier/predictions(from:).md)
+### Testing a sound classifier
+- [func predictions(from: [URL]) throws -> [String]](./predictions%28from%29.md)
   Generates predictions for an array of audio files.
 
 

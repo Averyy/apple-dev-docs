@@ -1,7 +1,8 @@
 # stateUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives connection state updates.
 
@@ -23,9 +24,10 @@ final var stateUpdateHandler: (@Sendable (NWConnection.State) -> Void)? { get se
 
 ## See Also
 
-- [var state: NWConnection.State](nwconnection/state-swift.property.md)
+### Handling State Updates
+- [var state: NWConnection.State](./state-swift.property.md)
   The current state of the connection.
-- [NWConnection.State](nwconnection/state-swift.enum.md)
+- [NWConnection.State](./state-swift.enum.md)
   States indicating whether a connection can be used to send and receive data.
 
 

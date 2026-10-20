@@ -1,7 +1,8 @@
 # sidebar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The sidebar of a tab view.
 
@@ -22,7 +23,7 @@ static let sidebar: TabBarPlacement
 
 #### Discussion
 
-A tab bar can appear as a sidebar in [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) on iPad, macOS, visionOS, and tvOS.
+A tab bar can appear as a sidebar in [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) on iPad, macOS, visionOS, and tvOS.
 
 
 ---

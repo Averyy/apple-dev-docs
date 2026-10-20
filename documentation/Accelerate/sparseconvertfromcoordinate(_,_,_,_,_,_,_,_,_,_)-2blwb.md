@@ -1,7 +1,8 @@
 # SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Convert from coordinate format arrays to a  matrix of complex float values, dropping out-of-range entries and summing duplicates.
 
@@ -20,9 +21,13 @@ Convert from coordinate format arrays to a  matrix of complex float values, drop
 func SparseConvertFromCoordinate(_ rowCount: Int32, _ columnCount: Int32, _ blockCount: Int, _ blockSize: UInt8, _ attributes: SparseAttributesComplex_t, _ row: UnsafePointer<Int32>, _ column: UnsafePointer<Int32>, _ data: OpaquePointer, _ storage: UnsafeMutableRawPointer, _ workspace: UnsafeMutableRawPointer) -> SparseMatrix_Complex_Float
 ```
 
+```c
+static SparseMatrix_Complex_Float SparseConvertFromCoordinate(int rowCount, int columnCount, long blockCount, uint8_t blockSize, SparseAttributesComplex_t attributes, const int *row, const int *column, const __SPARSE_float_complex *data, void *storage, void *workspace);
+```
+
 ## Mentions
 
-- [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
+- [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
 
 #### Return Value
 
@@ -34,7 +39,7 @@ For symmetric (Hermitian) matrices, entries are accepted in either triangle (if 
 
 Define `storage` as a block of memory of size at least:
 
-```None
+```
   48 + (columnCount+1)*sizeof(long) + blockCount*sizeof(int)
     + blockCount*blockSize*blockSize*sizeof(float) * 2
 ```
@@ -56,11 +61,12 @@ The returned structures `.structure.columnStarts`, `.structure.rowIndices`, and 
 
 ## See Also
 
-- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer) -> SparseMatrix_Complex_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-58kub.md)
+### Support for complex coordinate format arrays
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer) -> SparseMatrix_Complex_Double](./sparseconvertfromcoordinate%28_,_,_,_,_,_,_,_%29-58kub.md)
   Convert from coordinate format arrays to a matrix of complex double values, dropping out-of-range entries and summing duplicates.
-- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer) -> SparseMatrix_Complex_Float](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-58lgv.md)
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer) -> SparseMatrix_Complex_Float](./sparseconvertfromcoordinate%28_,_,_,_,_,_,_,_%29-58lgv.md)
   Convert from coordinate format arrays to a  matrix of complex float values, dropping out-of-range entries and summing duplicates.
-- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Complex_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-6ocm1.md)
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributesComplex_t, UnsafePointer<Int32>, UnsafePointer<Int32>, OpaquePointer, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Complex_Double](./sparseconvertfromcoordinate%28_,_,_,_,_,_,_,_,_,_%29-6ocm1.md)
   Convert from coordinate format arrays to a  matrix of complex double values, dropping out-of-range entries and summing duplicates.
 
 

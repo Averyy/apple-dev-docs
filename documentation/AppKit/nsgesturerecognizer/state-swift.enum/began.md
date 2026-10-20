@@ -1,7 +1,8 @@
 # NSGestureRecognizer.State.began
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The gesture recognizer has recognized a sequence of events as a continuous gesture. It calls its action method at the next cycle of the run loop.
 
@@ -14,20 +15,25 @@ The gesture recognizer has recognized a sequence of events as a continuous gestu
 case began
 ```
 
+```c
+NSGestureRecognizerStateBegan
+```
+
 ## See Also
 
-- [NSGestureRecognizer.State.possible](nsgesturerecognizer/state-swift.enum/possible.md)
+### Getting state values
+- [NSGestureRecognizer.State.possible](./possible.md)
   The gesture recognizer has not yet recognized its gesture but may be evaluating events. This is the default state.
-- [NSGestureRecognizer.State.changed](nsgesturerecognizer/state-swift.enum/changed.md)
+- [NSGestureRecognizer.State.changed](./changed.md)
   The gesture recognizer has detected a change to a continuous gesture. It calls its action method at the next cycle of the run loop.
-- [NSGestureRecognizer.State.ended](nsgesturerecognizer/state-swift.enum/ended.md)
-  The gesture recognizer has detected the end of a continuous gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md).
-- [NSGestureRecognizer.State.cancelled](nsgesturerecognizer/state-swift.enum/cancelled.md)
-  The gesture recognizer received events that resulted in the cancellation of a continuous gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md).
-- [NSGestureRecognizer.State.failed](nsgesturerecognizer/state-swift.enum/failed.md)
-  The gesture recognizer failed to recognize its gesture and will not call its action method. The gesture recognizer resets itself to the [`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md) state.
-- [static var recognized: NSGestureRecognizer.State](nsgesturerecognizer/state-swift.enum/recognized.md)
-  The gesture recognizer successfully recognized its gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md).
+- [NSGestureRecognizer.State.ended](./ended.md)
+  The gesture recognizer has detected the end of a continuous gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](./possible.md).
+- [NSGestureRecognizer.State.cancelled](./cancelled.md)
+  The gesture recognizer received events that resulted in the cancellation of a continuous gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](./possible.md).
+- [NSGestureRecognizer.State.failed](./failed.md)
+  The gesture recognizer failed to recognize its gesture and will not call its action method. The gesture recognizer resets itself to the [`NSGestureRecognizer.State.possible`](./possible.md) state.
+- [static var recognized: NSGestureRecognizer.State](./recognized.md)
+  The gesture recognizer successfully recognized its gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](./possible.md).
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the remainder of this value divided by the given value.
@@ -45,11 +46,17 @@ let x1 = 0.75 * q + r
 // x1 == 8.625
 ```
 
-If this value and `other` are finite numbers, the remainder is in the closed range `-abs(other / 2)...abs(other / 2)`. The `remainder(dividingBy:)` method is always exact. This method implements the remainder operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+If this value and `other` are finite numbers, the remainder is in the closed range `-abs(other / 2)...abs(other / 2)`. The `remainder(dividingBy:)` method is always exact. This method implements the remainder operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
 - `other`: The value to use when dividing this value.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [func remainder(dividingBy: Self) -> Self](./remainder%28dividingby%29-15z1e.md)
+  Returns the remainder of this value divided by the given value.
 
 
 ---

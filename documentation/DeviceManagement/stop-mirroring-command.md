@@ -1,7 +1,8 @@
 # Stop Mirroring
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Stop mirroring the display to another device.
 
@@ -15,7 +16,7 @@ Stop mirroring the display to another device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -25,7 +26,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -65,9 +66,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object StopMirroringCommand](stopmirroringcommand.md)
+- [object StopMirroringCommand](./stopmirroringcommand.md)
   The command to stop mirroring the display to another device.
-- [object StopMirroringResponse](stopmirroringresponse.md)
+- [object StopMirroringResponse](./stopmirroringresponse.md)
   A response from the device after it processes the command to stop mirroring the display to another device.
 
 ## Endpoint
@@ -76,11 +77,19 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `StopMirroringCommand`
+
 The request object the server returns for the Stop Mirroring Command.
+
+## Responses
+
+- `200` OK (`StopMirroringResponse`, `application/xml`): The response object the system returns for the Stop Mirroring Command.
 
 ## See Also
 
-- [Request Mirroring](request-mirroring-command.md)
+### AirPlay mirroring
+- [Request Mirroring](./request-mirroring-command.md)
   Prompt the user to share their screen using AirPlay Mirroring.
 
 

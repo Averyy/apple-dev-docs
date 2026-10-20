@@ -1,7 +1,8 @@
 # relyingPartyIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies this identity’s relying party.
 
@@ -18,9 +19,13 @@ A string that identifies this identity’s relying party.
 var relyingPartyIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * relyingPartyIdentifier;
+```
+
 #### Discussion
 
-A passkey credential identity reports its `relyingPartyIdentifier` value as its [`serviceIdentifier`](ascredentialidentity/serviceidentifier.md).
+A passkey credential identity reports its `relyingPartyIdentifier` value as its [`serviceIdentifier`](../ascredentialidentity/serviceidentifier.md).
 
 
 ---

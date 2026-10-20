@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action’s title.
 
@@ -15,6 +16,10 @@ The action’s title.
 
 ```swift
 var title: String! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) NSString * title;
 ```
 
 

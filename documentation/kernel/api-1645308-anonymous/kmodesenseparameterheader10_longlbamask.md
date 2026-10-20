@@ -1,14 +1,15 @@
 # kModeSenseParameterHeader10_LongLBAMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kModeSenseParameterHeader10_LongLBAMask = (1 << kModeSenseParameterHeader10_LongLBABit)
 ```
 

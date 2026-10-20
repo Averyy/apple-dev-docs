@@ -1,7 +1,8 @@
 # init(displayID:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a capture screen input that provides media data from the specified display.
 
@@ -14,17 +15,24 @@ Initializes a capture screen input that provides media data from the specified d
 init?(displayID: CGDirectDisplayID)
 ```
 
+```objc
+- (instancetype) initWithDisplayID:(CGDirectDisplayID) displayID;
+```
+
 #### Return Value
 
 A capture screen input initialized to provide media data from a given display. If the display cannot be used (because it is not available on the system, for example), returns `nil`.
 
 ## Parameters
 
-- `displayID`: The ID of the display from which to capture video. `CGDirectDisplayID` is defined in `<CoreGraphics/CGDirectDisplay.h>`.
+- `displayID`: The ID of the display from which to capture video.
+
+  `CGDirectDisplayID` is defined in `<CoreGraphics/CGDirectDisplay.h>`.
 
 ## See Also
 
-- [init()](avcapturescreeninput/init.md)
+### Initializing a capture screen input
+- [init()](./init%28%29.md)
   Initializes a capture screen input that provides media data from the main screen.
 
 

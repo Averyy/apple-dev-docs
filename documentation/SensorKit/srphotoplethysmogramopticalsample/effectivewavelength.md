@@ -1,7 +1,8 @@
 # effectiveWavelength
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A temperature-compensated wavelength estimate in nanometers that the emitter produces.
 
@@ -16,29 +17,34 @@ A temperature-compensated wavelength estimate in nanometers that the emitter pro
 var effectiveWavelength: Measurement<UnitLength> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitLength *> * effectiveWavelength;
+```
+
 ## See Also
 
-- [var emitter: Int](srphotoplethysmogramopticalsample/emitter.md)
+### Accessing optical data
+- [var emitter: Int](./emitter.md)
   The index of the LED in use during the sample.
-- [var activePhotodiodeIndexes: IndexSet](srphotoplethysmogramopticalsample/activephotodiodeindexes.md)
+- [var activePhotodiodeIndexes: IndexSet](./activephotodiodeindexes.md)
   The set of photodiodes in use during the sample.
-- [var signalIdentifier: Int](srphotoplethysmogramopticalsample/signalidentifier.md)
+- [var signalIdentifier: Int](./signalidentifier.md)
   The identifier for a signal that photodiodes and emitters produce.
-- [var nominalWavelength: Measurement<UnitLength>](srphotoplethysmogramopticalsample/nominalwavelength.md)
+- [var nominalWavelength: Measurement<UnitLength>](./nominalwavelength.md)
   The wavelength in nanometers that the emitter produces while operating at a specific temperature.
-- [var samplingFrequency: Measurement<UnitFrequency>](srphotoplethysmogramopticalsample/samplingfrequency.md)
+- [var samplingFrequency: Measurement<UnitFrequency>](./samplingfrequency.md)
   The sampling frequency of the photoplethysmogram (PPG) data in hertz.
-- [var nanosecondsSinceStart: Int64](srphotoplethysmogramopticalsample/nanosecondssincestart.md)
+- [var nanosecondsSinceStart: Int64](./nanosecondssincestart.md)
   The time in nanoseconds since the system turns on the sensor.
-- [var conditions: [SRPhotoplethysmogramOpticalSample.Condition]](srphotoplethysmogramopticalsample/conditions.md)
+- [var conditions: [SRPhotoplethysmogramOpticalSample.Condition]](./conditions.md)
   The sensor context or conditions that may affect the sample.
-- [SRPhotoplethysmogramOpticalSample.Condition](srphotoplethysmogramopticalsample/condition.md)
+- [SRPhotoplethysmogramOpticalSample.Condition](./condition.md)
   The conditions that may occur when recording photoplethysmogram optical data.
-- [var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms?](srphotoplethysmogramopticalsample/noiseterms-swift.property.md)
+- [var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms?](./noiseterms-swift.property.md)
   The mathematical terms for computing the noise in this sample.
-- [SRPhotoplethysmogramOpticalSample.NoiseTerms](srphotoplethysmogramopticalsample/noiseterms-swift.struct.md)
+- [SRPhotoplethysmogramOpticalSample.NoiseTerms](./noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
-- [var normalizedReflectance: Double?](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md)
+- [var normalizedReflectance: Double?](./normalizedreflectance-15f2k.md)
 
 
 ---

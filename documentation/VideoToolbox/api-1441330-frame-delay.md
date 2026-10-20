@@ -1,13 +1,14 @@
 # Frame Delay
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: API Collection
 
 Indicates that no limit should be placed on the compression window.
 
 ## Topics
 
 ### Constants
-- [var kVTUnlimitedFrameDelayCount: Int](kvtunlimitedframedelaycount.md)
+- [var kVTUnlimitedFrameDelayCount: Int](./kvtunlimitedframedelaycount.md)
   Indicates that no limit should be set on the compression window.
 
 

@@ -1,7 +1,8 @@
 # withIntervalSignpost(_:id:around:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Measures the execution of the specified closure.
 
@@ -11,7 +12,7 @@ Measures the execution of the specified closure.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func withIntervalSignpost<T>(_ name: StaticString, id: OSSignpostID = .exclusive
 
 #### Discussion
 
-The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously. If only one interval with a specific configuration can execute at any particular time, pass [`exclusive`](ossignpostid/exclusive.md) as the `id` parameter. Otherwise, use the [`makeSignpostID()`](ossignposter/makesignpostid().md) and [`makeSignpostID(from:)`](ossignposter/makesignpostid(from:).md) methods to generate a signpost identifier, as the following example shows:
+The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously. If only one interval with a specific configuration can execute at any particular time, pass [`exclusive`](../ossignpostid/exclusive.md) as the `id` parameter. Otherwise, use the [`makeSignpostID()`](./makesignpostid%28%29.md) and [`makeSignpostID(from:)`](./makesignpostid%28from%29.md) methods to generate a signpost identifier, as the following example shows:
 
 ```swift
 // Create a signposter using the default subsystem.
@@ -41,12 +42,13 @@ signposter.withIntervalSignpost("Example Signpost", id: signpostID) {
 ## Parameters
 
 - `name`: The signpost’s name.
-- `id`: The signpost’s ID. The default value is [`exclusive`](ossignpostid/exclusive.md).
+- `id`: The signpost’s ID. The default value is [`exclusive`](../ossignpostid/exclusive.md).
 - `task`: The closure around which to create the signposted interval.
 
 ## See Also
 
-- [func withIntervalSignpost<T>(StaticString, id: OSSignpostID, SignpostMetadata, around: () throws -> T) rethrows -> T](ossignposter/withintervalsignpost(_:id:_:around:).md)
+### Measuring a Closure
+- [func withIntervalSignpost<T>(StaticString, id: OSSignpostID, SignpostMetadata, around: () throws -> T) rethrows -> T](./withintervalsignpost%28_,id,_,around%29.md)
   Measures the execution of a closure and attaches the specified message.
 
 

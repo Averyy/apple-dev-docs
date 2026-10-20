@@ -1,7 +1,8 @@
 # init(identifier:type:rect:faceYawAngle:)
 
 **Framework**: DockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new observation.
 

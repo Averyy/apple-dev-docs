@@ -1,7 +1,8 @@
 # size
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image.
 
@@ -22,9 +23,10 @@ var size: CGSize { get }
 
 ## See Also
 
-- [let baseline: CGFloat](graphicscontext/resolvedimage/baseline.md)
+### Getting the image properties
+- [let baseline: CGFloat](./baseline.md)
   The distance from the top of the image to its baseline.
-- [var shading: GraphicsContext.Shading?](graphicscontext/resolvedimage/shading.md)
+- [var shading: GraphicsContext.Shading?](./shading.md)
   An optional shading to fill the image with.
 
 

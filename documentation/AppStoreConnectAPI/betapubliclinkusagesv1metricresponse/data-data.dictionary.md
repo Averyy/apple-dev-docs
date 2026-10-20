@@ -1,7 +1,8 @@
 # BetaPublicLinkUsagesV1MetricResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a beta public link usages v1metric response.
 
@@ -10,14 +11,14 @@ The request body you use to update a beta public link usages v1metric response.
 
 ## Declaration
 
-```swift
+```
 object BetaPublicLinkUsagesV1MetricResponse.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints](betapubliclinkusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+- [object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints](./data-data.dictionary/datapoints-data.dictionary.md)
   The time-series data points for TestFlight public link usage metrics.
 
 ## Properties

@@ -1,7 +1,8 @@
 # annotation
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotation object associated with the view.
 
@@ -19,23 +20,28 @@ The annotation object associated with the view.
 var annotation: (any MKAnnotation)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<MKAnnotation> annotation;
+```
+
 #### Discussion
 
 Don’t change the value of this property directly. This property contains a non-`nil` value only while the annotation view is visible on the map. If the map view queues this annotation view and is waiting to reuse it, the value is `nil`.
 
 ## See Also
 
-- [var isEnabled: Bool](mkannotationview/isenabled.md)
+### Getting and setting attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the annotation is in an enabled state.
-- [var image: UIImage?](mkannotationview/image.md)
+- [var image: UIImage?](./image.md)
   The image the annotation view displays.
-- [var isHighlighted: Bool](mkannotationview/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the map view highlights the annotation view.
-- [var centerOffset: CGPoint](mkannotationview/centeroffset.md)
+- [var centerOffset: CGPoint](./centeroffset.md)
   The offset (in points) at which to display the view.
-- [var calloutOffset: CGPoint](mkannotationview/calloutoffset.md)
+- [var calloutOffset: CGPoint](./calloutoffset.md)
   The offset (in points) at which to place the callout.
-- [var reuseIdentifier: String?](mkannotationview/reuseidentifier.md)
+- [var reuseIdentifier: String?](./reuseidentifier.md)
   The string that identifies that the annotation view is reusable.
 
 

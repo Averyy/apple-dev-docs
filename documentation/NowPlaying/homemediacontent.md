@@ -1,7 +1,8 @@
 # HomeMediaContent
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content representing home media or ambient content.
 
@@ -22,7 +23,7 @@ struct HomeMediaContent
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -31,47 +32,48 @@ Use this type for home-related media such as security camera feeds, baby monitor
 ## Topics
 
 ### Initializers
-- [init(id: String, sourceName: String, contentDescription: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](homemediacontent/init(id:sourcename:contentdescription:type:duration:artwork:).md)
+- [init(id: String, sourceName: String, contentDescription: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](./homemediacontent/init%28id,sourcename,contentdescription,type,duration,artwork%29.md)
   Creates home media content.
-- [init(id: String, sourceName: String, contentDescription: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](homemediacontent/init(id:sourcename:contentdescription:type:duration:artwork:animatedartwork:).md)
+- [init(id: String, sourceName: String, contentDescription: String?, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](./homemediacontent/init%28id,sourcename,contentdescription,type,duration,artwork,animatedartwork%29.md)
   Creates home media content with static and animated artwork.
 ### Instance Properties
-- [let animatedArtwork: AnimatedArtwork?](homemediacontent/animatedartwork.md)
+- [let animatedArtwork: AnimatedArtwork?](./homemediacontent/animatedartwork.md)
   Animated artwork for this content.
-- [let artwork: Artwork?](homemediacontent/artwork.md)
+- [let artwork: Artwork?](./homemediacontent/artwork.md)
   Artwork for this content.
-- [let contentDescription: String?](homemediacontent/contentdescription.md)
+- [let contentDescription: String?](./homemediacontent/contentdescription.md)
   A description of the content, if available.
-- [let duration: MediaDuration?](homemediacontent/duration.md)
+- [let duration: MediaDuration?](./homemediacontent/duration.md)
   The duration of this content.
-- [let sourceName: String](homemediacontent/sourcename.md)
+- [let sourceName: String](./homemediacontent/sourcename.md)
   The name of the home media source or device.
-- [let type: MediaType](homemediacontent/type.md)
+- [let type: MediaType](./homemediacontent/type.md)
   The media type (audio or video).
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MediaContentRepresentable](mediacontentrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MediaContentRepresentable](./mediacontentrepresentable.md)
 
 ## See Also
 
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+### Presenting content
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct MusicContent](musiccontent.md)
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 
 

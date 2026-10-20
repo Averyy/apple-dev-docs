@@ -1,7 +1,8 @@
 # code
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code for this error.
 

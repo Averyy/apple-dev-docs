@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core WLAN  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cipher key flags structure with the specified raw value.
 

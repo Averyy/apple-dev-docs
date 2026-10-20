@@ -1,7 +1,8 @@
 # significandBitPattern
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw encoding of the value’s significand field.
 

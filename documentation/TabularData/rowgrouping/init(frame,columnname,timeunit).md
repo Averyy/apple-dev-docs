@@ -1,7 +1,8 @@
 # init(frame:columnName:timeUnit:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a row grouping from a column with date or time elements.
 
@@ -20,6 +21,8 @@ Creates a row grouping from a column with date or time elements.
 init<D>(frame: D, columnName: String, timeUnit: Calendar.Component) where GroupingKey == Int, D : DataFrameProtocol
 ```
 
+Available when `GroupingKey` conforms to `Hashable`.
+
 ## Parameters
 
 - `frame`: A data frame type.
@@ -28,7 +31,8 @@ init<D>(frame: D, columnName: String, timeUnit: Calendar.Component) where Groupi
 
 ## See Also
 
-- [init<D>(groups: [(GroupingKey?, D)], groupKeysColumnName: String)](rowgrouping/init(groups:groupkeyscolumnname:).md)
+### Creating a Row Grouping
+- [init<D>(groups: [(GroupingKey?, D)], groupKeysColumnName: String)](./init%28groups,groupkeyscolumnname%29.md)
   Creates a row grouping from a list of groups.
 
 

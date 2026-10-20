@@ -1,7 +1,8 @@
 # NSLocale.LanguageDirection.topToBottom
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The language direction is from top to bottom.
 
@@ -20,15 +21,20 @@ The language direction is from top to bottom.
 case topToBottom
 ```
 
+```c
+NSLocaleLanguageDirectionTopToBottom
+```
+
 ## See Also
 
-- [NSLocale.LanguageDirection.unknown](nslocale/languagedirection/unknown.md)
+### Constants
+- [NSLocale.LanguageDirection.unknown](./unknown.md)
   The direction of the language is unknown.
-- [NSLocale.LanguageDirection.leftToRight](nslocale/languagedirection/lefttoright.md)
+- [NSLocale.LanguageDirection.leftToRight](./lefttoright.md)
   The language direction is from left to right.
-- [NSLocale.LanguageDirection.rightToLeft](nslocale/languagedirection/righttoleft.md)
+- [NSLocale.LanguageDirection.rightToLeft](./righttoleft.md)
   The language direction is from right to left.
-- [NSLocale.LanguageDirection.bottomToTop](nslocale/languagedirection/bottomtotop.md)
+- [NSLocale.LanguageDirection.bottomToTop](./bottomtotop.md)
   The language direction is from bottom to top.
 
 

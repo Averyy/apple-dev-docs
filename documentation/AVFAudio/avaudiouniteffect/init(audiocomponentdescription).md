@@ -1,7 +1,8 @@
 # init(audioComponentDescription:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio unit effect object with the specified description.
 
@@ -19,13 +20,19 @@ Creates an audio unit effect object with the specified description.
 init(audioComponentDescription: AudioComponentDescription)
 ```
 
+```objc
+- (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) audioComponentDescription;
+```
+
 #### Return Value
 
 A new `AVAudioUnitEffect` instance.
 
 ## Parameters
 
-- `audioComponentDescription`: The description of the audio unit to create. The `audioComponentDescription` must be one of these types `kAudioUnitType_Effect`, `kAudioUnitType_MusicEffect`, `kAudioUnitType_Panner`, `kAudioUnitType_RemoteEffect`, or `kAudioUnitType_RemoteMusicEffect`.
+- `audioComponentDescription`: The description of the audio unit to create.
+
+  The `audioComponentDescription` must be one of these types `kAudioUnitType_Effect`, `kAudioUnitType_MusicEffect`, `kAudioUnitType_Panner`, `kAudioUnitType_RemoteEffect`, or `kAudioUnitType_RemoteMusicEffect`.
 
 
 ---

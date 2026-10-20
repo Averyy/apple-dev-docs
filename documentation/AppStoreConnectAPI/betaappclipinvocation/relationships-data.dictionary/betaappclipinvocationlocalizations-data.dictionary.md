@@ -1,7 +1,8 @@
 # BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data, links, and paging information that describe the relationship between the Beta App Clip Invocations and the Beta App Clip Invocation Localizations resources.
 
@@ -10,14 +11,14 @@ The data, links, and paging information that describe the relationship between t
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations.Data](betaappclipinvocation/relationships-data.dictionary/betaappclipinvocationlocalizations-data.dictionary/data-data.dictionary.md)
+- [object BetaAppClipInvocation.Relationships.BetaAppClipInvocationLocalizations.Data](./betaappclipinvocationlocalizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Beta App Clip Invocation Localizations resource.
 
 ## Properties

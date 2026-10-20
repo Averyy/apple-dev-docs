@@ -1,7 +1,8 @@
 # controlPointStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the stride, in bytes, between control points in the control point buffer.
 
@@ -17,6 +18,10 @@ Sets the stride, in bytes, between control points in the control point buffer.
 
 ```swift
 var controlPointStride: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger controlPointStride;
 ```
 
 #### Discussion

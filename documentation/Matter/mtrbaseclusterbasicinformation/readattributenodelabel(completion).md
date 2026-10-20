@@ -1,7 +1,8 @@
 # readAttributeNodeLabel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNodeLabel(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNodeLabel() async throws -> String
+```
+
+```objc
+- (void) readAttributeNodeLabelWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

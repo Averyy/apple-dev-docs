@@ -1,14 +1,15 @@
 # IssueUnmap
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IOReturn IssueUnmap(IOBlockStorageDeviceExtent *extentsList, UInt32 blockDescriptorCount);
 ```
 

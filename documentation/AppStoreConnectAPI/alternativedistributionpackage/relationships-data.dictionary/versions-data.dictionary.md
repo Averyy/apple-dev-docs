@@ -1,7 +1,8 @@
 # AlternativeDistributionPackage.Relationships.Versions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship container linking an alternative distribution package to its associated versions.
 
@@ -10,18 +11,18 @@ The relationship container linking an alternative distribution package to its as
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackage.Relationships.Versions
 ```
 
 #### Discussion
 
-For more information on the object that owns these versions, see [`AlternativeDistributionPackage.Relationships`](alternativedistributionpackage/relationships-data.dictionary.md).
+For more information on the object that owns these versions, see [`AlternativeDistributionPackage.Relationships`](../relationships-data.dictionary.md).
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionPackage.Relationships.Versions.Data](alternativedistributionpackage/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+- [object AlternativeDistributionPackage.Relationships.Versions.Data](./versions-data.dictionary/data-data.dictionary.md)
   The resource linkage identifying an alternative distribution package version associated with a package.
 
 ## Properties

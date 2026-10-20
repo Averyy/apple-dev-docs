@@ -1,12 +1,15 @@
 # Read subscription localization information (v1)
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the specific localized metadata for an auto-renewable subscription.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This endpoint is deprecated. Use [`Read subscription localization information`](./get-v2-subscriptionlocalizations-_id_.md) instead.
 
 ## Endpoint
 
@@ -14,20 +17,36 @@ Get the specific localized metadata for an auto-renewable subscription.
 
 ## Parameters
 
-- `fields[subscriptionLocalizations]` ([string])
-- `include` ([string])
-- `fields[subscriptions]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[subscriptionLocalizations]` ([string]): **Allowed Values**: `name`, `locale`, `description`, `state`, `subscription`
+- `include` ([string]): **Allowed Values**: `subscription`
+- `fields[subscriptions]` ([string]): **Allowed Values**: `name`, `productId`, `familySharable`, `state`, `subscriptionPeriod`, `reviewNote`, `groupLevel`, `multiSeatStatus`, `marketSettings`, `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `pricePoints`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`
+
+## Responses
+
+- `200` OK (`SubscriptionLocalizationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all localizations for an auto-renewable subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
+### Endpoints
+- [List all localizations for an auto-renewable subscription](./get-v1-subscriptions-_id_-subscriptionlocalizations.md)
   Get a list of the subscription localizations for a specific auto-renewable subscription.
-- [List localization IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
-- [Create a subscription localization (v1)](post-v1-subscriptionlocalizations.md)
+- [List localization IDs for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
+- [Create a subscription localization (v1)](./post-v1-subscriptionlocalizations.md)
   Create a localized display name and description for an auto-renewable subscription.
-- [Modify a subscription localization (v1)](patch-v1-subscriptionlocalizations-_id_.md)
+- [Modify a subscription localization (v1)](./patch-v1-subscriptionlocalizations-_id_.md)
   Update a specific localized subscription display name and description for an auto-renewable subscription.
-- [Delete a subscription localization (v1)](delete-v1-subscriptionlocalizations-_id_.md)
+- [Delete a subscription localization (v1)](./delete-v1-subscriptionlocalizations-_id_.md)
   Delete localized metadata that you configured for an auto-renewable subscription.
 
 

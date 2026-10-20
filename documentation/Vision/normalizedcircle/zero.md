@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A circle object centered at the origin, with a radius of zero.
 
@@ -22,7 +23,8 @@ static var zero: NormalizedCircle { get }
 
 ## See Also
 
-- [init(center: NormalizedPoint, radius: CGFloat)](normalizedcircle/init(center:radius:).md)
+### Creating a normalized circle
+- [init(center: NormalizedPoint, radius: CGFloat)](./init%28center,radius%29.md)
   Creates a circle with the specified center and radius.
 
 

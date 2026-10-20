@@ -1,7 +1,8 @@
 # serverURL
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a DNS-over-HTTPS server.
 
@@ -19,15 +20,20 @@ The URL of a DNS-over-HTTPS server.
 var serverURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * serverURL;
+```
+
 #### Discussion
 
-The URL should use the URI template format defined by [`RFC 8484`](https://developer.apple.comhttps://tools.ietf.org/html/rfc8484), for example `https://dnsserver.example.net/dns-query`.
+The URL should use the URI template format defined by [RFC 8484](https://tools.ietf.org/html/rfc8484), for example `https://dnsserver.example.net/dns-query`.
 
 ## See Also
 
-- [init(servers: [String])](nednssettings/init(servers:).md)
+### Configuring server properties
+- [init(servers: [String])](../nednssettings/init%28servers%29.md)
   Initialize the `NEDNSSetting` object.
-- [var matchDomains: [String]?](nednssettings/matchdomains.md)
+- [var matchDomains: [String]?](../nednssettings/matchdomains.md)
   A list of domain strings used to determine which DNS queries will use the DNS resolver settings contained in this object.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueBatteryStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for battery status.
 
@@ -19,25 +20,29 @@ Possible values for battery status.
 enum HMCharacteristicValueBatteryStatus
 ```
 
+```c
+enum HMCharacteristicValueBatteryStatus : NSInteger;
+```
+
 ## Topics
 
 ### Battery Status
-- [HMCharacteristicValueBatteryStatus.normal](hmcharacteristicvaluebatterystatus/normal.md)
+- [HMCharacteristicValueBatteryStatus.normal](./hmcharacteristicvaluebatterystatus/normal.md)
   The battery level is normal.
-- [HMCharacteristicValueBatteryStatus.low](hmcharacteristicvaluebatterystatus/low.md)
+- [HMCharacteristicValueBatteryStatus.low](./hmcharacteristicvaluebatterystatus/low.md)
   The battery level is low.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluebatterystatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluebatterystatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

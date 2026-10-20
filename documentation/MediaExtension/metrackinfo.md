@@ -1,7 +1,8 @@
 # METrackInfo
 
 **Framework**: MediaExtension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that includes track properties parsed from the media asset.
 
@@ -14,46 +15,51 @@ An object that includes track properties parsed from the media asset.
 class METrackInfo
 ```
 
+```objc
+@interface METrackInfo : NSObject
+```
+
 ## Topics
 
 ### Inspecting track information
-- [var mediaType: CMMediaType](metrackinfo/mediatype.md)
+- [var mediaType: CMMediaType](./metrackinfo/mediatype.md)
   The media type of the track.
-- [var trackID: CMPersistentTrackID](metrackinfo/trackid.md)
+- [var trackID: CMPersistentTrackID](./metrackinfo/trackid.md)
   An integer that identifies the track within the media asset.
-- [var isEnabled: Bool](metrackinfo/isenabled.md)
+- [var isEnabled: Bool](./metrackinfo/isenabled.md)
   A Boolean value that indicates whether the track is enabled by default.
-- [var naturalTimescale: CMTimeScale](metrackinfo/naturaltimescale.md)
+- [var naturalTimescale: CMTimeScale](./metrackinfo/naturaltimescale.md)
   The natural timescale of the track.
-- [var extendedLanguageTag: String?](metrackinfo/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./metrackinfo/extendedlanguagetag.md)
   A string that indicates the language tag associated with the track, as an IETF BCP 47 (RFC 4646) language identifier.
-- [var naturalSize: CGSize](metrackinfo/naturalsize.md)
+- [var naturalSize: CGSize](./metrackinfo/naturalsize.md)
   Indicates the natural dimensions of the media data referenced by the track.
-- [var preferredTransform: CGAffineTransform](metrackinfo/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./metrackinfo/preferredtransform.md)
   Indicates the preferred affine display transform of the track media for visual display.
-- [var nominalFrameRate: Float32](metrackinfo/nominalframerate.md)
+- [var nominalFrameRate: Float32](./metrackinfo/nominalframerate.md)
   The frame rate of the track in frames per second, as a 32-bit floating point number.
-- [var requiresFrameReordering: Bool](metrackinfo/requiresframereordering.md)
+- [var requiresFrameReordering: Bool](./metrackinfo/requiresframereordering.md)
   A Boolean value that indicates whether frame reordering occurs in the track.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol METrackReader](metrackreader.md)
+### Track readers
+- [protocol METrackReader](./metrackreader.md)
   A protocol that defines the information to provide about a track within a media asset.
 
 

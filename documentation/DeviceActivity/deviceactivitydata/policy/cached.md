@@ -1,7 +1,8 @@
 # DeviceActivityData.Policy.cached
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that fetches device activity data from the cache.
 
@@ -17,7 +18,8 @@ case cached
 
 ## See Also
 
-- [DeviceActivityData.Policy.live](deviceactivitydata/policy/live.md)
+### Fetching policies
+- [DeviceActivityData.Policy.live](./live.md)
   A policy that fetches live device activity data.
 
 

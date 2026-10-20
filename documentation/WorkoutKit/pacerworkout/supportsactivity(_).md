@@ -1,7 +1,8 @@
 # supportsActivity(_:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the system supports pacer workouts for the given workout activity type.
 
@@ -24,7 +25,8 @@ static func supportsActivity(_ activity: HKWorkoutActivityType) -> Bool
 
 ## See Also
 
-- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, distance: Measurement<UnitLength>, time: Measurement<UnitDuration>)](pacerworkout/init(activity:location:distance:time:).md)
+### Creating a new pacer workout
+- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, distance: Measurement<UnitLength>, time: Measurement<UnitDuration>)](./init%28activity,location,distance,time%29.md)
   Creates a new pacer workout for the specified distance and time.
 
 

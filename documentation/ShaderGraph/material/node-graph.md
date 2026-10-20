@@ -1,7 +1,8 @@
 # Node Graph
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A node that can contain shading nodes and other node graphs.
 
@@ -23,7 +24,13 @@ The graphs in each NodeGraph node function almost exactly the same as the node g
 
 Below is an example of a subgraph defined by a NodeGraph node and an example of using the NodeGraph node in a material. The subgraph takes inputs for horizontal and vertical speeds and outputs texture coordinates that cause an image to scroll either vertically, horizontally, or both. The subgraph is then used to make an arrow image scroll diagonally.
 
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/NodeGraphGraph1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/NodeGraphGraph2.png)
+
 Below the texture applies to a cube:
+
+[Video: NodeGraphMaterialVideo](https://developer.apple.com/tutorials/videos/ShaderGraph-Docs/NodeGraphMaterialVideo.mov)
 
 
 ---

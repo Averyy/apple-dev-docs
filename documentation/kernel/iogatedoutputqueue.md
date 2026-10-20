@@ -1,7 +1,8 @@
 # IOGatedOutputQueue
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An extension of an IOBasicOutputQueue.
 
@@ -10,7 +11,7 @@ An extension of an IOBasicOutputQueue.
 
 ## Declaration
 
-```swift
+```cpp
 class IOGatedOutputQueue : IOBasicOutputQueue
 ```
 
@@ -21,45 +22,46 @@ An IOCommandGate object is created by this queue and added to a work loop as an 
 ## Topics
 
 ### Miscellaneous
-- [free](iogatedoutputqueue/1812925-free.md)
+- [free](./iogatedoutputqueue/api-1812925-free.md)
   Frees the IOGatedOutputQueue object.
-- [init](iogatedoutputqueue/1812930-init.md)
+- [init](./iogatedoutputqueue/api-1812930-init.md)
   Initializes an IOGatedOutputQueue object.
-- [output(IOMbufQueue *, UInt32 *)](iogatedoutputqueue/1812936-output.md)
+- [output(IOMbufQueue *, UInt32 *)](./iogatedoutputqueue/api-1812936-output.md)
   Transfers all packets in the mbuf queue to the target.
-- [output(void *)](iogatedoutputqueue/1812941-output.md)
+- [output(void *)](./iogatedoutputqueue/api-1812941-output.md)
   Overrides the method inherited from IOOutputQueue.
-- [scheduleServiceThread](iogatedoutputqueue/1812945-scheduleservicethread.md)
+- [scheduleServiceThread](./iogatedoutputqueue/api-1812945-scheduleservicethread.md)
   Overrides the method inherited from IOOutputQueue.
-- [withTarget(IONetworkController *, IOWorkLoop *, UInt32)](iogatedoutputqueue/1812948-withtarget.md)
+- [withTarget(IONetworkController *, IOWorkLoop *, UInt32)](./iogatedoutputqueue/api-1812948-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(IONetworkController *, IOWorkLoop *, UInt32, UInt32)](iogatedoutputqueue/1812950-withtarget.md)
+- [withTarget(IONetworkController *, IOWorkLoop *, UInt32, UInt32)](./iogatedoutputqueue/api-1812950-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32)](iogatedoutputqueue/1812954-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32)](./iogatedoutputqueue/api-1812954-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32, UInt32)](iogatedoutputqueue/1812957-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32, UInt32)](./iogatedoutputqueue/api-1812957-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
 ### Instance Methods
-- [- free](iogatedoutputqueue/1485485-free.md)
-- [- getMetaClass](iogatedoutputqueue/1485479-getmetaclass.md)
-- [- output](iogatedoutputqueue/1485495-output.md)
-- [- scheduleServiceThread](iogatedoutputqueue/1485488-scheduleservicethread.md)
+- [- free](./iogatedoutputqueue/api-1485485-free.md)
+- [- getMetaClass](./iogatedoutputqueue/api-1485479-getmetaclass.md)
+- [- output](./iogatedoutputqueue/api-1485495-output.md)
+- [- scheduleServiceThread](./iogatedoutputqueue/api-1485488-scheduleservicethread.md)
 ### Type Methods
-- [+ gatedOutput](iogatedoutputqueue/1485502-gatedoutput.md)
-- [+ restartDeferredOutput](iogatedoutputqueue/1485498-restartdeferredoutput.md)
-- [+ withTarget](iogatedoutputqueue/1485491-withtarget.md)
-- [+ withTarget](iogatedoutputqueue/3516609-withtarget.md)
+- [+ gatedOutput](./iogatedoutputqueue/api-1485502-gatedoutput.md)
+- [+ restartDeferredOutput](./iogatedoutputqueue/api-1485498-restartdeferredoutput.md)
+- [+ withTarget](./iogatedoutputqueue/api-1485491-withtarget.md)
+- [+ withTarget](./iogatedoutputqueue/api-3516609-withtarget.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOBasicOutputQueue](iobasicoutputqueue.md)
+- [IOBasicOutputQueue](./iobasicoutputqueue.md)
 
 ## See Also
 
-- [IOBasicOutputQueue](iobasicoutputqueue.md)
+### Output Queues
+- [IOBasicOutputQueue](./iobasicoutputqueue.md)
   A concrete implementation of an IOOutputQueue.
-- [IOOutputQueue](iooutputqueue.md)
+- [IOOutputQueue](./iooutputqueue.md)
   A packet queue that supports multiple producers and a single consumer.
 
 

@@ -1,7 +1,8 @@
 # values
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metric values for this entry.
 

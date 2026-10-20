@@ -1,7 +1,8 @@
 # vDSP_biquadm_CreateSetup
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Builds a data structure that contains precalculated data for use by a single-precision, multichannel cascaded biquadratic filter function.
 
@@ -10,11 +11,11 @@ Builds a data structure that contains precalculated data for use by a single-pre
 
 ## Declaration
 
-```swift
+```c
 vDSP_biquadm_Setup vDSP_biquadm_CreateSetup(const double *__coeffs, vDSP_Length __M, vDSP_Length __N);
 ```
 
-#### Return_value
+#### Return Value
 
 A pointer to an allocated and initialized biquadratic filter object.
 
@@ -50,7 +51,7 @@ let setup = vDSP_biquadm_CreateSetup([
                                      channelCount)
 ```
 
-This function allocates memory for its own use. You must call the [`vDSP_biquadm_DestroySetup`](https://developer.apple.com/documentation/accelerate/vdsp_biquadm_destroysetup) function to free the allocated memory.
+This function allocates memory for its own use. You must call the [`vDSP_biquadm_DestroySetup`](../Accelerate/vdsp_biquadm_destroysetup.md) function to free the allocated memory.
 
 ## Parameters
 

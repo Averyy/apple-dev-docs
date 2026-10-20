@@ -1,7 +1,8 @@
 # batteryStates
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Battery states from the accessory that indicate changes in battery charge or readiness
 
@@ -23,7 +24,7 @@ Accessory events related to button presses and common camera controls.
 
 #### Discussion
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](../dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
 
 
 ---

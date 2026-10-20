@@ -1,7 +1,8 @@
 # signal
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A signal object allowing you to cancel the request.
 
@@ -10,7 +11,7 @@ A signal object allowing you to cancel the request.
 
 ## Declaration
 
-```swift
+```
 signal?: AbortSignal;
 ```
 
@@ -37,25 +38,26 @@ controller.abort();
 
 ## See Also
 
-- [addressFilter](searchoptions/addressfilter.md)
+### Search options
+- [addressFilter](./addressfilter.md)
   An address filter that lists which address components to include or exclude in search results.
-- [coordinate](searchoptions/coordinate.md)
+- [coordinate](./coordinate.md)
   A map coordinate that provides a hint for the geographic area to search.
-- [includeAddresses](searchoptions/includeaddresses.md)
+- [includeAddresses](./includeaddresses.md)
   A Boolean value that indicates whether the search results should include addresses.
-- [includePhysicalFeatures](searchoptions/includephysicalfeatures.md)
+- [includePhysicalFeatures](./includephysicalfeatures.md)
   A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
-- [includePointsOfInterest](searchoptions/includepointsofinterest.md)
+- [includePointsOfInterest](./includepointsofinterest.md)
   A Boolean value that indicates whether the search results should include points of interest.
-- [language](searchoptions/language.md)
+- [language](./language.md)
   A language ID that determines the language for the search result text.
-- [limitToCountries](searchoptions/limittocountries.md)
+- [limitToCountries](./limittocountries.md)
   A string that constrains search results to within the provided countries.
-- [pointOfInterestFilter](searchoptions/pointofinterestfilter.md)
+- [pointOfInterestFilter](./pointofinterestfilter.md)
   A filter for including or excluding point-of-interest categories in search results.
-- [region](searchoptions/region.md)
+- [region](./region.md)
   A map region that provides a hint for the geographic area to search.
-- [regionPriority](searchoptions/regionpriority.md)
+- [regionPriority](./regionpriority.md)
   A region priority value that controls whether results occur outside, or strictly within, the region.
 
 

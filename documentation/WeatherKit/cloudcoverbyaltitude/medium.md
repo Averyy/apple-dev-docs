@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the sky covered with mid-altitude clouds. Medium-level Cloud Cover (MCC) corresponds to levels between 1800m and 6300m above the model’s earth surface.
 

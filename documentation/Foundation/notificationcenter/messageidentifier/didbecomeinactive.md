@@ -1,7 +1,8 @@
 # didBecomeInactive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,8 @@
 ```swift
 static var didBecomeInactive: NotificationCenter.BaseMessageIdentifier<AVAudioSession.DidBecomeInactiveMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<AVAudioSession.DidBecomeInactiveMessage>`.
 
 
 ---

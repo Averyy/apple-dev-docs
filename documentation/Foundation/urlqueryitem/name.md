@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the query item.
 
@@ -22,7 +23,8 @@ var name: String
 
 ## See Also
 
-- [var value: String?](urlqueryitem/value.md)
+### Accessing the Item’s Components
+- [var value: String?](./value.md)
   The value for the query item.
 
 

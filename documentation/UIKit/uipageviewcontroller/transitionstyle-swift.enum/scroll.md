@@ -1,21 +1,26 @@
 # UIPageViewController.TransitionStyle.scroll
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scrolling transition style.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case scroll
+```
+
+```c
+UIPageViewControllerTransitionStyleScroll
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ When the page scrolling style is specified, the page view controller displays a 
 
 ## See Also
 
-- [UIPageViewController.TransitionStyle.pageCurl](uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md)
+### Constants
+- [UIPageViewController.TransitionStyle.pageCurl](./pagecurl.md)
   Page curl transition style.
 
 

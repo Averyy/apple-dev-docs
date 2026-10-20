@@ -1,7 +1,8 @@
 # fixParagraphStyleAttribute(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fixes the paragraph style attributes in the specified range and assigns a paragraph style to all characters in the paragraph.
 
@@ -14,6 +15,10 @@ Fixes the paragraph style attributes in the specified range and assigns a paragr
 func fixParagraphStyleAttribute(in range: NSRange)
 ```
 
+```objc
+- (void) fixParagraphStyleAttributeInRange:(NSRange) range;
+```
+
 #### Discussion
 
 This method assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph. This method extends the range as needed to cover the last paragraph partially contained. A paragraph is delimited by any of these characters, the longest possible sequence being preferred to any shorter:
@@ -22,7 +27,7 @@ This method assigns the first paragraph style attribute value in each paragraph 
 - U+000A (`\n` or LF)
 - U+2029 (Unicode paragraph separator)  `\r\n`, in that order (also known as CRLF)
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## See Also
 
-- [func fixAttributes(in: NSRange)](nsmutableattributedstring/fixattributes(in:).md)
+### Fixing Attributes After Changes
+- [func fixAttributes(in: NSRange)](./fixattributes%28in%29.md)
   Cleans up font, paragraph style, and attachment attributes within the given range.
-- [func fixAttachmentAttribute(in: NSRange)](nsmutableattributedstring/fixattachmentattribute(in:).md)
+- [func fixAttachmentAttribute(in: NSRange)](./fixattachmentattribute%28in%29.md)
   Cleans up attachment attributes in the specified range and removes all attachment attributes assigned to characters except the designated attachment character.
-- [func fixFontAttribute(in: NSRange)](nsmutableattributedstring/fixfontattribute(in:).md)
+- [func fixFontAttribute(in: NSRange)](./fixfontattribute%28in%29.md)
   Fixes the font attribute in the specified range and assigns default fonts where appropriate.
 
 

@@ -1,7 +1,8 @@
 # WINetworkSharingError.error
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a general error occurred.
 

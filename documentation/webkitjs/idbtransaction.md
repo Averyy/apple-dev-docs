@@ -1,7 +1,8 @@
 # IDBTransaction
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBTransaction
 ```
 
 ## Topics
 
 ### Instance Properties
-- [db](idbtransaction/1632077-db.md)
-- [error](idbtransaction/1632732-error.md)
-- [mode](idbtransaction/1631454-mode.md)
-- [objectStoreNames](idbtransaction/2871439-objectstorenames.md)
-- [onabort](idbtransaction/1632814-onabort.md)
-- [oncomplete](idbtransaction/1632084-oncomplete.md)
-- [onerror](idbtransaction/1629245-onerror.md)
+- [db](./idbtransaction/api-1632077-db.md)
+- [error](./idbtransaction/api-1632732-error.md)
+- [mode](./idbtransaction/api-1631454-mode.md)
+- [objectStoreNames](./idbtransaction/api-2871439-objectstorenames.md)
+- [onabort](./idbtransaction/api-1632814-onabort.md)
+- [oncomplete](./idbtransaction/api-1632084-oncomplete.md)
+- [onerror](./idbtransaction/api-1629245-onerror.md)
 ### Instance Methods
-- [abort](idbtransaction/1630629-abort.md)
-- [objectStore](idbtransaction/1629658-objectstore.md)
+- [abort](./idbtransaction/api-1630629-abort.md)
+- [objectStore](./idbtransaction/api-1629658-objectstore.md)
 
 ## Relationships
 

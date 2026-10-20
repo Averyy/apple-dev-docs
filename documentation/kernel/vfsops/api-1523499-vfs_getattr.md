@@ -1,14 +1,15 @@
 # vfs_getattr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int (*vfs_getattr)(struct mount *mp, struct vfs_attr *vfa, vfs_context_t context);
 ```
 

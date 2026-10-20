@@ -1,17 +1,18 @@
 # maximumChannelCount
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of channels supported for this bus.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The maximum number of channels supported for this bus.
 var maximumChannelCount: AUAudioChannelCount { get set }
 ```
 
+```objc
+@property (nonatomic) AUAudioChannelCount maximumChannelCount;
+```
+
 #### Discussion
 
-If the value of [`supportedChannelCounts`](auaudiounitbus/supportedchannelcounts.md) is set, then this value is derived from it. If setting a new value on this property makes the current bus format unsupported, then the value of [`format`](auaudiounitbus/format.md) is set to `nil`.
+If the value of [`supportedChannelCounts`](./supportedchannelcounts.md) is set, then this value is derived from it. If setting a new value on this property makes the current bus format unsupported, then the value of [`format`](./format.md) is set to `nil`.
 
 The default value is `UINT_MAX`.
 
 ## See Also
 
-- [init(format: AVAudioFormat) throws](auaudiounitbus/init(format:).md)
+### Audio Unit Implementations
+- [init(format: AVAudioFormat) throws](./init%28format%29.md)
   Initializes a bus object with a specific format.
-- [var supportedChannelCounts: [NSNumber]?](auaudiounitbus/supportedchannelcounts.md)
+- [var supportedChannelCounts: [NSNumber]?](./supportedchannelcounts.md)
   An array of numbers indicating the supported number of channels for this bus.
 
 

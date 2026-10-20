@@ -1,7 +1,8 @@
 # encode(to:feeds:targetOperations:resultsDictionary:executionDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the graph for the given feeds to returns the target tensor values in the results dictionary provided by the user.
 
@@ -17,6 +18,10 @@ Encodes the graph for the given feeds to returns the target tensor values in the
 
 ```swift
 func encode(to commandBuffer: MPSCommandBuffer, feeds: [MPSGraphTensor : MPSGraphTensorData], targetOperations: [MPSGraphOperation]?, resultsDictionary: [MPSGraphTensor : MPSGraphTensorData], executionDescriptor: MPSGraphExecutionDescriptor?)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(MPSCommandBuffer *) commandBuffer feeds:(MPSGraphTensorDataDictionary *) feeds targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations resultsDictionary:(MPSGraphTensorDataDictionary *) resultsDictionary executionDescriptor:(MPSGraphExecutionDescriptor *) executionDescriptor;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # ClearStall
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the halt condition of the pipe.
 
@@ -10,13 +11,13 @@ Clears the halt condition of the pipe.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t ClearStall(bool withRequest);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -26,11 +27,12 @@ If an intermediate hub is between the device and your driver, this method also s
 
 ## Parameters
 
-- `withRequest`: A Boolean indicating whether to send a `CLEAR_FEATURE` request to the device with the value `ENDPOINT_HALT`. To keep the device’s data toggle synchronized with the host’s data toggle, it’s recommended that you specify [`true`](https://developer.apple.com/documentation/swift/true), but you may safely specify [`false`](https://developer.apple.com/documentation/swift/false) for control endpoints. For information about this request, see section 9.4.1 of the USB 2.0 specification.
+- `withRequest`: A Boolean indicating whether to send a `CLEAR_FEATURE` request to the device with the value `ENDPOINT_HALT`. To keep the device’s data toggle synchronized with the host’s data toggle, it’s recommended that you specify [`true`](../../Swift/true.md), but you may safely specify [`false`](../../Swift/false.md) for control endpoints. For information about this request, see section 9.4.1 of the USB 2.0 specification.
 
 ## See Also
 
-- [AdjustPipe](iousbhostpipe/adjustpipe.md)
+### Adjusting the Pipe’s Status
+- [AdjustPipe](./adjustpipe.md)
   Adjusts the behavior of periodic endpoints to consume a different amount of bus bandwidth.
 
 

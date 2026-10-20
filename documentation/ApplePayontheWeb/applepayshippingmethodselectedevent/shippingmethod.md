@@ -1,7 +1,8 @@
 # shippingMethod
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shipping method selected by the user.
 
@@ -11,15 +12,15 @@ The shipping method selected by the user.
 
 ## Declaration
 
-```swift
+```
 readonly attribute ApplePayShippingMethod shippingMethod;
 ```
 
 #### Discussion
 
-See [`ApplePayShippingMethod`](applepayshippingmethod.md).
+See [`ApplePayShippingMethod`](../applepayshippingmethod.md).
 
-This attribute is contained by the [`onshippingmethodselected`](applepaysession/onshippingmethodselected.md) event. Access this attribute using the `event` parameter in the callback function; for example, `var myShippingMethod = event.shippingMethod;`.
+This attribute is contained by the [`onshippingmethodselected`](../applepaysession/onshippingmethodselected.md) event. Access this attribute using the `event` parameter in the callback function; for example, `var myShippingMethod = event.shippingMethod;`.
 
 
 ---

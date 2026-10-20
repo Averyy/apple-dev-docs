@@ -1,7 +1,8 @@
 # index(_:offsetBy:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index that is the specified distance from the given index.
 
@@ -35,9 +36,10 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 ## See Also
 
-- [func index(after: Int) -> Int](slidingwindows/index(after:).md)
+### Getting the index
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: Int) -> Int](slidingwindows/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the position immediately before the given index.
 
 

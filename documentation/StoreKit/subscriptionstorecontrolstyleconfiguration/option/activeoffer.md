@@ -1,7 +1,8 @@
 # activeOffer
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription offer the customer is eligible for, and that applies to the subscription option.
 
@@ -22,17 +23,18 @@ var activeOffer: Product.SubscriptionOffer? { get }
 
 #### Discussion
 
-Always display the terms of this subscription offer along with your control because it represents the offer that StoreKit automatically applies when you call the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method. If the [`activeOffer`](subscriptionstorecontrolstyleconfiguration/option/activeoffer.md) property is `nil`, there’s no subscription offer.
+Always display the terms of this subscription offer along with your control because it represents the offer that StoreKit automatically applies when you call the [`subscribe()`](./subscribe%28%29.md) method. If the [`activeOffer`](./activeoffer.md) property is `nil`, there’s no subscription offer.
 
-> ❗ **Important**:  Don’t display offers from properties of [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md), such as [`introductoryOffer`](product/subscriptioninfo/introductoryoffer.md).
+> ❗ **Important**:  Don’t display offers from properties of [`subscription`](./subscription.md), such as [`introductoryOffer`](../../product/subscriptioninfo/introductoryoffer.md).
 
-The [`preferredSubscriptionOffer(_:)`](https://developer.apple.com/documentation/swiftui/view/preferredsubscriptionoffer(_:)) and [`subscriptionPromotionalOffer(offer:signature:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:)) view modifiers influence the [`offer`](purchaseintent/offer.md) property.
+The [`preferredSubscriptionOffer(_:)`](../../../SwiftUI/view/preferredsubscriptionoffer%28_%29.md) and [`subscriptionPromotionalOffer(offer:signature:)`](../../../SwiftUI/view/subscriptionpromotionaloffer%28offer,signature%29.md) view modifiers influence the [`offer`](../../purchaseintent/offer.md) property.
 
 ## See Also
 
-- [var subscription: Product](subscriptionstorecontrolstyleconfiguration/option/subscription.md)
+### Getting the subscription product and offer
+- [var subscription: Product](./subscription.md)
   The auto-renewable subscription to merchandise.
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/option/id.md)
+- [var id: Product.ID](./id.md)
   The product ID of the auto-renewable subscription.
 
 

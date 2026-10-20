@@ -1,7 +1,8 @@
 # withUnsafeBufferPointer(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the buffer’s contiguous storage.
 
@@ -11,7 +12,7 @@ Calls the given closure with a pointer to the buffer’s contiguous storage.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,15 @@ Calls the given closure with a pointer to the buffer’s contiguous storage.
 func withUnsafeBufferPointer<R>(_ body: (UnsafeBufferPointer<Format.ComponentType>) throws -> R) rethrows -> R
 ```
 
+Available when `Format` conforms to `StaticPixelFormat`.
+
 #### Return Value
 
 The return value, if any, of the body closure parameter.
 
 #### Discussion
 
-You can use this function to simplify interoperation with other libraries and frameworks. For example, the following code uses Accelerate’s [`vForce`](vforce-library.md) library to raise each pixel value to the power of `1 / 2.2`:
+You can use this function to simplify interoperation with other libraries and frameworks. For example, the following code uses Accelerate’s [vForce](../../vforce-library.md) library to raise each pixel value to the power of `1 / 2.2`:
 
 ```swift
 let srcBuffer = vImage.PixelBuffer(pixelValues: [0.1, 0.2, 0.3, 0.4],
@@ -54,7 +57,7 @@ srcBuffer.withUnsafeBufferPointer { src in
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/swift/unsafebufferpointer) parameter that points to the contiguous storage for the pixel buffer.
+- `body`: A closure with an [`UnsafeBufferPointer`](../../../Swift/unsafebufferpointer.md) parameter that points to the contiguous storage for the pixel buffer.
 
 
 ---

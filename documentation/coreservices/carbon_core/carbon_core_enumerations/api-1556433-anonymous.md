@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kIconServicesCatalogInfoMask: Int](kiconservicescataloginfomask.md)
+- [var kIconServicesCatalogInfoMask: Int](../../kiconservicescataloginfomask.md)
 
 
 ---

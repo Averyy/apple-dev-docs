@@ -1,7 +1,8 @@
 # data
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A storage buffer for the sound asset.
 
@@ -19,13 +20,18 @@ A storage buffer for the sound asset.
 var data: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * data;
+```
+
 #### Discussion
 
-This property has a value when an app creates the asset with [`registerSoundAsset(data:identifier:format:normalizationMode:)`](phaseassetregistry/registersoundasset(data:identifier:format:normalizationmode:).md); otherwise the value is `nil`.
+This property has a value when an app creates the asset with [`registerSoundAsset(data:identifier:format:normalizationMode:)`](../phaseassetregistry/registersoundasset%28data,identifier,format,normalizationmode%29.md); otherwise the value is `nil`.
 
 ## See Also
 
-- [var url: URL?](phasesoundasset/url.md)
+### Accessing Sound Data
+- [var url: URL?](./url.md)
   The URL of the sound asset.
 
 

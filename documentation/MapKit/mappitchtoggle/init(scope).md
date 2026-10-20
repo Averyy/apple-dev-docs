@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map pitch toggle control with the provided scope.
 
@@ -11,7 +12,7 @@ Creates a new map pitch toggle control with the provided scope.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Creates a new map pitch toggle control with the provided scope.
 
 ## Parameters
 
-- `scope`: The namespace the framework passes to the associated [`Map`](map.md) and [`mapScope(_:)`](https://developer.apple.com/documentation/swiftui/view/mapscope(_:)).
+- `scope`: The namespace the framework passes to the associated [`Map`](../map.md) and [`mapScope(_:)`](../../SwiftUI/view/mapscope%28_%29.md).
 
 
 ---

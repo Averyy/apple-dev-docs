@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the fixed format conforming to Unicode Technical Standard #35.
 

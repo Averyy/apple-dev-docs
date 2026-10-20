@@ -1,7 +1,8 @@
 # maximumImageDimension
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum image dimension to use for contour detection.
 
@@ -19,21 +20,26 @@ The maximum image dimension to use for contour detection.
 var maximumImageDimension: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maximumImageDimension;
+```
+
 #### Discussion
 
 Contour detection is computationally intensive. To improve performance, Vision scales the input image down, while maintaining its aspect ratio, such that its maximum dimension is the value of this property. Vision never scales the image up, so specifying the maximum value ensures that the image processes in its original size and not as a downscaled version.
 
-This property supports values from 64 to [`NSUIntegerMax`](https://developer.apple.com/documentation/objectivec/nsuintegermax). The default value is 512.
+This property supports values from 64 to [`NSUIntegerMax`](../../ObjectiveC/nsuintegermax.md). The default value is 512.
 
 ## See Also
 
-- [var contrastAdjustment: Float](vndetectcontoursrequest/contrastadjustment.md)
+### Configuring the Request
+- [var contrastAdjustment: Float](./contrastadjustment.md)
   The amount by which to adjust the image contrast.
-- [var contrastPivot: NSNumber?](vndetectcontoursrequest/contrastpivot.md)
+- [var contrastPivot: NSNumber?](./contrastpivot.md)
   The pixel value to use as a pivot for the contrast.
-- [var detectsDarkOnLight: Bool](vndetectcontoursrequest/detectsdarkonlight.md)
+- [var detectsDarkOnLight: Bool](./detectsdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background to aid in detection.
-- [var detectDarkOnLight: Bool](vndetectcontoursrequest/detectdarkonlight.md)
+- [var detectDarkOnLight: Bool](./detectdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background.
 
 

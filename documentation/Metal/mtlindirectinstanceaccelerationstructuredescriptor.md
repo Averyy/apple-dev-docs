@@ -1,7 +1,8 @@
 # MTLIndirectInstanceAccelerationStructureDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of an acceleration structure that Metal derives from instances of primitive acceleration structures that the GPU can populate.
 
@@ -19,54 +20,59 @@ A description of an acceleration structure that Metal derives from instances of 
 class MTLIndirectInstanceAccelerationStructureDescriptor
 ```
 
+```objc
+@interface MTLIndirectInstanceAccelerationStructureDescriptor : MTLAccelerationStructureDescriptor
+```
+
 ## Topics
 
 ### Instance Properties
-- [var instanceCountBuffer: (any MTLBuffer)?](mtlindirectinstanceaccelerationstructuredescriptor/instancecountbuffer.md)
-- [var instanceCountBufferOffset: Int](mtlindirectinstanceaccelerationstructuredescriptor/instancecountbufferoffset.md)
-- [var instanceDescriptorBuffer: (any MTLBuffer)?](mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
-- [var instanceDescriptorBufferOffset: Int](mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptorbufferoffset.md)
-- [var instanceDescriptorStride: Int](mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptorstride.md)
-- [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptortype.md)
-- [var instanceTransformationMatrixLayout: MTLMatrixLayout](mtlindirectinstanceaccelerationstructuredescriptor/instancetransformationmatrixlayout.md)
-- [var maxInstanceCount: Int](mtlindirectinstanceaccelerationstructuredescriptor/maxinstancecount.md)
-- [var maxMotionTransformCount: Int](mtlindirectinstanceaccelerationstructuredescriptor/maxmotiontransformcount.md)
-- [var motionTransformBuffer: (any MTLBuffer)?](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformbuffer.md)
-- [var motionTransformBufferOffset: Int](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformbufferoffset.md)
+- [var instanceCountBuffer: (any MTLBuffer)?](./mtlindirectinstanceaccelerationstructuredescriptor/instancecountbuffer.md)
+- [var instanceCountBufferOffset: Int](./mtlindirectinstanceaccelerationstructuredescriptor/instancecountbufferoffset.md)
+- [var instanceDescriptorBuffer: (any MTLBuffer)?](./mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
+- [var instanceDescriptorBufferOffset: Int](./mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptorbufferoffset.md)
+- [var instanceDescriptorStride: Int](./mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptorstride.md)
+- [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](./mtlindirectinstanceaccelerationstructuredescriptor/instancedescriptortype.md)
+- [var instanceTransformationMatrixLayout: MTLMatrixLayout](./mtlindirectinstanceaccelerationstructuredescriptor/instancetransformationmatrixlayout.md)
+- [var maxInstanceCount: Int](./mtlindirectinstanceaccelerationstructuredescriptor/maxinstancecount.md)
+- [var maxMotionTransformCount: Int](./mtlindirectinstanceaccelerationstructuredescriptor/maxmotiontransformcount.md)
+- [var motionTransformBuffer: (any MTLBuffer)?](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformbuffer.md)
+- [var motionTransformBufferOffset: Int](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformbufferoffset.md)
   The offset, in bytes, to the descripton of the first motion transform.
-- [var motionTransformCountBuffer: (any MTLBuffer)?](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbuffer.md)
-- [var motionTransformCountBufferOffset: Int](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbufferoffset.md)
-- [var motionTransformStride: Int](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformstride.md)
-- [var motionTransformType: MTLTransformType](mtlindirectinstanceaccelerationstructuredescriptor/motiontransformtype.md)
+- [var motionTransformCountBuffer: (any MTLBuffer)?](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbuffer.md)
+- [var motionTransformCountBufferOffset: Int](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformcountbufferoffset.md)
+- [var motionTransformStride: Int](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformstride.md)
+- [var motionTransformType: MTLTransformType](./mtlindirectinstanceaccelerationstructuredescriptor/motiontransformtype.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
+- [MTLAccelerationStructureDescriptor](./mtlaccelerationstructuredescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct MTLAccelerationStructureInstanceDescriptor](mtlaccelerationstructureinstancedescriptor.md)
+### Instance descriptors
+- [struct MTLAccelerationStructureInstanceDescriptor](./mtlaccelerationstructureinstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure.
-- [struct MTLAccelerationStructureUserIDInstanceDescriptor](mtlaccelerationstructureuseridinstancedescriptor.md)
+- [struct MTLAccelerationStructureUserIDInstanceDescriptor](./mtlaccelerationstructureuseridinstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure, with the instance including a user identifier for the instance.
-- [struct MTLAccelerationStructureMotionInstanceDescriptor](mtlaccelerationstructuremotioninstancedescriptor.md)
+- [struct MTLAccelerationStructureMotionInstanceDescriptor](./mtlaccelerationstructuremotioninstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure, with the instance including a user identifier and motion data for the instance.
-- [struct MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions.md)
+- [struct MTLAccelerationStructureInstanceOptions](./mtlaccelerationstructureinstanceoptions.md)
   Options for adjusting the behavior of an instanced acceleration structure.
-- [class MTL4IndirectInstanceAccelerationStructureDescriptor](mtl4indirectinstanceaccelerationstructuredescriptor.md)
+- [class MTL4IndirectInstanceAccelerationStructureDescriptor](./mtl4indirectinstanceaccelerationstructuredescriptor.md)
   Descriptor for an “indirect” instance acceleration structure that allows providing the instance count and motion transform count indirectly, through buffer references.
-- [struct MTLIndirectAccelerationStructureInstanceDescriptor](mtlindirectaccelerationstructureinstancedescriptor.md)
+- [struct MTLIndirectAccelerationStructureInstanceDescriptor](./mtlindirectaccelerationstructureinstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure that the GPU can populate.
-- [struct MTLIndirectAccelerationStructureMotionInstanceDescriptor](mtlindirectaccelerationstructuremotioninstancedescriptor.md)
+- [struct MTLIndirectAccelerationStructureMotionInstanceDescriptor](./mtlindirectaccelerationstructuremotioninstancedescriptor.md)
   A description of an instance in an acceleration structure that the GPU can populate, with motion data for the instance.
 
 

@@ -1,7 +1,8 @@
 # Widget
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The configuration and content of a widget to display on the Home screen or in Notification Center.
 
@@ -30,9 +31,9 @@ There are three key components to a widget:
 - A timeline provider that drives the process of updating the widget’s view over time.
 - SwiftUI views used by WidgetKit to display the widget.
 
-For information about adding a widget extension to your app, and keeping your widget up to date, see [`Creating a widget extension`](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension) and [`Keeping a widget up to date`](https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date), respectively.
+For information about adding a widget extension to your app, and keeping your widget up to date, see [Creating a widget extension](../WidgetKit/creating-a-widget-extension.md) and [Keeping a widget up to date](../WidgetKit/keeping-a-widget-up-to-date.md), respectively.
 
-By adding custom app intent types that conform to [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/appintents/widgetconfigurationintent), you can let people customize their widgets to show the information that’s most relevant to them. If you’ve already added support for Siri or Shortcuts, you’re well on your way to supporting customizable widgets. For more information, see [`Making a configurable widget`](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget).
+By adding custom app intent types that conform to [`WidgetConfigurationIntent`](../AppIntents/widgetconfigurationintent.md), you can let people customize their widgets to show the information that’s most relevant to them. If you’ve already added support for Siri or Shortcuts, you’re well on your way to supporting customizable widgets. For more information, see [Making a configurable widget](../WidgetKit/making-a-configurable-widget.md).
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -53,33 +54,34 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Implementing a widget
-- [var body: Self.Body](widget/body-swift.property.md)
+- [var body: Self.Body](./widget/body-swift.property.md)
   The content and behavior of the widget.
-- [associatedtype Body : WidgetConfiguration](widget/body-swift.associatedtype.md)
+- [associatedtype Body : WidgetConfiguration](./widget/body-swift.associatedtype.md)
   The type of configuration representing the content of the widget.
 ### Running a widget
-- [init()](widget/init.md)
+- [init()](./widget/init%28%29.md)
   Creates a widget using `body` as its content.
-- [static func main()](widget/main.md)
+- [static func main()](./widget/main%28%29.md)
   Initializes and runs the widget.
 
 ## See Also
 
-- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building-widgets-using-widgetkit-and-swiftui.md)
+### Creating widgets
+- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
+- [Creating a widget extension](../WidgetKit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
+- [Keeping a widget up to date](../WidgetKit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Making a configurable widget](../widgetkit/making-a-configurable-widget.md)
+- [Making a configurable widget](../WidgetKit/making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
-- [protocol WidgetBundle](widgetbundle.md)
+- [protocol WidgetBundle](./widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
-- [struct LimitedAvailabilityConfiguration](limitedavailabilityconfiguration.md)
+- [struct LimitedAvailabilityConfiguration](./limitedavailabilityconfiguration.md)
   A type-erased widget configuration.
-- [protocol WidgetConfiguration](widgetconfiguration.md)
+- [protocol WidgetConfiguration](./widgetconfiguration.md)
   A type that describes a widget’s content.
-- [struct EmptyWidgetConfiguration](emptywidgetconfiguration.md)
+- [struct EmptyWidgetConfiguration](./emptywidgetconfiguration.md)
   An empty widget configuration.
 
 

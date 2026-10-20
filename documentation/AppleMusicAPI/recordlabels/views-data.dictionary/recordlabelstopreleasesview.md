@@ -1,7 +1,8 @@
 # RecordLabels.Views.RecordLabelsTopReleasesView
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship view from this record label to a selection of its top releases.
 
@@ -10,14 +11,14 @@ A relationship view from this record label to a selection of its top releases.
 
 ## Declaration
 
-```swift
+```
 object RecordLabels.Views.RecordLabelsTopReleasesView
 ```
 
 ## Topics
 
 ### Related Objects
-- [object RecordLabels.Views.RecordLabelsTopReleasesView.Attributes](recordlabels/views-data.dictionary/recordlabelstopreleasesview/attributes-data.dictionary.md)
+- [object RecordLabels.Views.RecordLabelsTopReleasesView.Attributes](./recordlabelstopreleasesview/attributes-data.dictionary.md)
   The attributes for the record label top releases view.
 
 ## Properties
@@ -29,7 +30,8 @@ object RecordLabels.Views.RecordLabelsTopReleasesView
 
 ## See Also
 
-- [object RecordLabels.Views.RecordLabelsLatestReleasesView](recordlabels/views-data.dictionary/recordlabelslatestreleasesview.md)
+### Related Objects
+- [object RecordLabels.Views.RecordLabelsLatestReleasesView](./recordlabelslatestreleasesview.md)
   A relationship view from this record label to a selection of its latest releases.
 
 

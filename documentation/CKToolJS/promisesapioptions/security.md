@@ -1,7 +1,8 @@
 # security
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of your authorization tokens.
 
@@ -10,7 +11,7 @@ A dictionary of your authorization tokens.
 
 ## Declaration
 
-```swift
+```
 attribute Security? security;
 ```
 

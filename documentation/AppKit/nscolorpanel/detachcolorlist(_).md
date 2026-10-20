@@ -1,17 +1,22 @@
 # detachColorList(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Removes the list of colors from all the color pickers in the receiver that display color lists by invoking [`detachColorList(_:)`](nscolorpanel/detachcolorlist(_:).md) on all color pickers in the application.
+Removes the list of colors from all the color pickers in the receiver that display color lists by invoking [`detachColorList(_:)`](./detachcolorlist%28_%29.md) on all color pickers in the application.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func detachColorList(_ colorList: NSColorList)
+```
+
+```objc
+- (void) detachColorList:(NSColorList *) colorList;
 ```
 
 #### Discussion
@@ -24,8 +29,9 @@ Your application should use this method to remove an `NSColorList` saved with a 
 
 ## See Also
 
-- [func attachColorList(NSColorList)](nscolorpanel/attachcolorlist(_:).md)
-  Adds the list of `NSColor` objects specified to all the color pickers in the receiver that display color lists by invoking [`attachColorList(_:)`](nscolorpanel/attachcolorlist(_:).md) on all color pickers in the application.
+### Managing color lists
+- [func attachColorList(NSColorList)](./attachcolorlist%28_%29.md)
+  Adds the list of `NSColor` objects specified to all the color pickers in the receiver that display color lists by invoking [`attachColorList(_:)`](./attachcolorlist%28_%29.md) on all color pickers in the application.
 
 
 ---

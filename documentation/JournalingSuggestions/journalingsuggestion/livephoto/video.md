@@ -1,7 +1,8 @@
 # video
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to a video on disk for the Live Photo..
 
@@ -16,9 +17,10 @@ var video: URL
 
 ## See Also
 
-- [var image: URL](journalingsuggestion/livephoto/image.md)
+### Accessing Live Photo data
+- [var image: URL](./image.md)
   The URL to a still image on disk for the Live Photo.
-- [var date: Date?](journalingsuggestion/livephoto/date.md)
+- [var date: Date?](./date.md)
   The Live Photo’s creation date.
 
 

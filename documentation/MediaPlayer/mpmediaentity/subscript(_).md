@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Media Player  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the object specified by the key.
 
@@ -18,13 +19,17 @@ Returns the object specified by the key.
 subscript(key: Any) -> Any? { get }
 ```
 
+```objc
+- (id) objectForKeyedSubscript:(id) key;
+```
+
 #### Return Value
 
 The object that is specified by the key.
 
 #### Discussion
 
-The method provides read-only support for Objective-C subscripting syntax with [`MPMediaEntity`](mpmediaentity.md) property constants.
+The method provides read-only support for Objective-C subscripting syntax with [`MPMediaEntity`](../mpmediaentity.md) property constants.
 
 ## Parameters
 
@@ -32,15 +37,16 @@ The method provides read-only support for Objective-C subscripting syntax with [
 
 ## See Also
 
-- [class func canFilter(byProperty: String) -> Bool](mpmediaentity/canfilter(byproperty:).md)
+### Working with media properties
+- [class func canFilter(byProperty: String) -> Bool](./canfilter%28byproperty%29.md)
   Indicates whether you can use the media property key that you specify to construct a media property predicate.
-- [func enumerateValues(forProperties: Set<String>, using: (String, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](mpmediaentity/enumeratevalues(forproperties:using:).md)
+- [func enumerateValues(forProperties: Set<String>, using: (String, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratevalues%28forproperties,using%29.md)
   Executes a provided block with the fetched values for the given item properties.
-- [var persistentID: MPMediaEntityPersistentID](mpmediaentity/persistentid.md)
+- [var persistentID: MPMediaEntityPersistentID](./persistentid.md)
   The persistent identifier for a media entity.
-- [func value(forProperty: String) -> Any?](mpmediaentity/value(forproperty:).md)
+- [func value(forProperty: String) -> Any?](./value%28forproperty%29.md)
   Retrieves the value for a specified media property key.
-- [typealias MPMediaEntityPersistentID](mpmediaentitypersistentid.md)
+- [typealias MPMediaEntityPersistentID](../mpmediaentitypersistentid.md)
   Defines the type for storing a persistent identifier to a particular entity.
 
 

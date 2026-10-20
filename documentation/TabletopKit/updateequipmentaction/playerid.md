@@ -1,7 +1,8 @@
 # playerID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player performing the action.
 
@@ -16,7 +17,8 @@ var playerID: Player.ID? { get }
 
 ## See Also
 
-- [var context: UInt64](updateequipmentaction/context.md)
+### Getting the context and player identifier
+- [var context: UInt64](./context.md)
   An integer value that your game uses.
 
 

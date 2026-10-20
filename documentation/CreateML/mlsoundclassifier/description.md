@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the sound classifier.
 
@@ -20,9 +21,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlsoundclassifier/debugdescription.md)
+### Describing a sound classifier
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the sound classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlsoundclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the sound classifier in a playground.
 
 

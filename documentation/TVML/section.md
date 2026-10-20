@@ -26,56 +26,57 @@ The `section` element groups elements together so they can be treated as a singl
 </shelf>
 ```
 
-##### Subelements of Section
+##### Subelements of section
 
-- [`header`](header.md)
-- [`listItemLockup`](listitemlockup.md)
-- [`lockup`](lockup.md)
-- [`menuItem`](menuitem.md)
+- [header](./header.md)
+- [listItemLockup](./listitemlockup.md)
+- [lockup](./lockup.md)
+- [menuItem](./menuitem.md)
 
-##### Elements That Use Section
+##### Elements that Use section
 
-- [`carousel`](carousel.md)
-- [`grid`](grid.md)
-- [`list`](list.md)
-- [`menuBar`](menubar.md)
-- [`oneupTemplate`](oneuptemplate.md)
-- [`shelf`](shelf.md)
+- [carousel](./carousel.md)
+- [grid](./grid.md)
+- [list](./list.md)
+- [menuBar](./menubar.md)
+- [oneupTemplate](./oneuptemplate.md)
+- [shelf](./shelf.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [indexTitles](indextitles.md)
+- [indexTitles](./indextitles.md)
   Specifies index bar titles for a section element.
-- [itemID](itemid.md)
+- [itemID](./itemid.md)
   Mark elements for reuse during DOM updates.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [carousel](carousel.md)
+### Container Elements
+- [carousel](./carousel.md)
   Arranges images in a row.
-- [grid](grid.md)
+- [grid](./grid.md)
   Arranges elements in a grid pattern.
-- [imgDeck](imgdeck.md)
+- [imgDeck](./imgdeck.md)
   Contains several images to be displayed at a later time.
-- [infoTable](infotable.md)
+- [infoTable](./infotable.md)
   Displays contained element information in a vertical format, with each successive element directly below the previous element.
-- [organizer](organizer.md)
+- [organizer](./organizer.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [row](row.md)
+- [row](./row.md)
   Displays elements horizontally.
-- [stack](stack.md)
+- [stack](./stack.md)
   Groups and lays out elements vertically.
-- [shelf](shelf.md)
+- [shelf](./shelf.md)
   Displays elements horizontally and adds the ability to scroll to offscreen elements.
 
 

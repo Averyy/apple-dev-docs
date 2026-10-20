@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 ```swift
 func asUnownedTaskExecutor() -> UnownedTaskExecutor
 ```
+
+## Default Implementations
+
+### TaskExecutor Implementations
+- [func asUnownedTaskExecutor() -> UnownedTaskExecutor](./asunownedtaskexecutor%28%29-20uut.md)
 
 
 ---

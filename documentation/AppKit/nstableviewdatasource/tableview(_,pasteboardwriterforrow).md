@@ -1,7 +1,8 @@
 # tableView(_:pasteboardWriterForRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to allow the table to support multiple item dragging.
 
@@ -15,15 +16,19 @@ Called to allow the table to support multiple item dragging.
 optional func tableView(_ tableView: NSTableView, pasteboardWriterForRow row: Int) -> (any NSPasteboardWriting)?
 ```
 
+```objc
+- (id<NSPasteboardWriting>) tableView:(NSTableView *) tableView pasteboardWriterForRow:(NSInteger) row;
+```
+
 #### Return Value
 
-Returns an instance of [`NSPasteboardItem`](nspasteboarditem.md) or a custom object that implements the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol. Returning `nil` excludes the row from being dragged.
+Returns an instance of [`NSPasteboardItem`](../nspasteboarditem.md) or a custom object that implements the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol. Returning `nil` excludes the row from being dragged.
 
 #### Discussion
 
 This method is required for multi-image dragging.
 
-If this method is implemented, then [`tableView(_:writeRowsWith:to:)`](nstableviewdatasource/tableview(_:writerowswith:to:).md) will not be called.
+If this method is implemented, then [`tableView(_:writeRowsWith:to:)`](./tableview%28_,writerowswith,to%29.md) will not be called.
 
 ## Parameters
 

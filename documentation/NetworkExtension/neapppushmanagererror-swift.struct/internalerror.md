@@ -1,7 +1,8 @@
 # internalError
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates an internal error in the local push connectivity framework.
 
@@ -19,11 +20,12 @@ static var internalError: NEAppPushManagerError.Code { get }
 
 ## See Also
 
-- [static var configurationInvalid: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/configurationinvalid.md)
+### Error constants
+- [static var configurationInvalid: NEAppPushManagerError.Code](./configurationinvalid.md)
   An error that indicates the app push configuration is invalid.
-- [static var configurationNotLoaded: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/configurationnotloaded.md)
+- [static var configurationNotLoaded: NEAppPushManagerError.Code](./configurationnotloaded.md)
   An error that indicates the manager hasn’t loaded the app push configuration.
-- [static var inactiveSession: NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/inactivesession.md)
+- [static var inactiveSession: NEAppPushManagerError.Code](./inactivesession.md)
   An error that indicates an invalid attempt to perform an operation on an inactive session.
 
 

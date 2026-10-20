@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty tab sidebar customization.
 
@@ -20,13 +21,13 @@ init()
 
 #### Discussion
 
-To set this customization on a tab view, use the [`tabViewCustomization(_:)`](view/tabviewcustomization(_:).md) modifier.
+To set this customization on a tab view, use the [`tabViewCustomization(_:)`](../view/tabviewcustomization%28_%29.md) modifier.
 
 With an empty customization, tabs will be visible according to the default builder visibilities, and sections will be ordered in the order declared in the tab view’s tab builder.
 
-You can specify a default visibility for the tab in the tab bar and sidebar by attaching [`defaultVisibility(_:for:)`](tabcontent/defaultvisibility(_:for:).md) to the tab.
+You can specify a default visibility for the tab in the tab bar and sidebar by attaching [`defaultVisibility(_:for:)`](../tabcontent/defaultvisibility%28_,for%29.md) to the tab.
 
-You can change the default section order by changing the order in the builder. If there’s an existing persisted customization, reset the order by calling [`resetTabOrder()`](tabviewcustomization/sectioncustomization/resettaborder().md) when you change the order.
+You can change the default section order by changing the order in the builder. If there’s an existing persisted customization, reset the order by calling [`resetTabOrder()`](./sectioncustomization/resettaborder%28%29.md) when you change the order.
 
 
 ---

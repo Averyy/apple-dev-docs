@@ -1,7 +1,8 @@
 # init(target:action:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gesture recognizer with a target and an action selector.
 
@@ -9,7 +10,7 @@ Creates a gesture recognizer with a target and an action selector.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Creates a gesture recognizer with a target and an action selector.
 init(target: Any?, action: Selector?)
 ```
 
+```objc
+- (instancetype) initWithTarget:(id) target action:(SEL) action;
+```
+
 #### Return Value
 
-An initialized instance of a concrete [`UIGestureRecognizer`](uigesturerecognizer.md) subclass.
+An initialized instance of a concrete [`UIGestureRecognizer`](../uigesturerecognizer.md) subclass.
 
 #### Discussion
 
-This method is the designated initializer. After creating the gesture recognizer, you may associate other target-action pairs with it by calling [`addTarget(_:action:)`](uigesturerecognizer/addtarget(_:action:).md).
+This method is the designated initializer. After creating the gesture recognizer, you may associate other target-action pairs with it by calling [`addTarget(_:action:)`](./addtarget%28_,action%29.md).
 
 ## Parameters
 
@@ -33,13 +38,15 @@ This method is the designated initializer. After creating the gesture recognizer
 
 ## See Also
 
-- [func removeTarget(Any?, action: Selector?)](uigesturerecognizer/removetarget(_:action:).md)
+### Related Documentation
+- [func removeTarget(Any?, action: Selector?)](./removetarget%28_,action%29.md)
   Removes a target and an action from a gesture-recognizer object.
-- [func addTarget(Any, action: Selector)](uigesturerecognizer/addtarget(_:action:).md)
+- [func addTarget(Any, action: Selector)](./addtarget%28_,action%29.md)
   Adds a target and an action to a gesture-recognizer object.
-- [convenience init?(coder: NSCoder)](uigesturerecognizer/init(coder:).md)
+### Initializing a gesture recognizer
+- [convenience init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a gesture recognizer from data in an unarchiver.
-- [convenience init()](uigesturerecognizer/init.md)
+- [convenience init()](./init%28%29.md)
   Creates a gesture recognizer.
 
 

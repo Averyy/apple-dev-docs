@@ -1,7 +1,8 @@
 # MTRTimeSynchronizationFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,27 +19,31 @@
 struct MTRTimeSynchronizationFeature
 ```
 
+```c
+enum MTRTimeSynchronizationFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrtimesynchronizationfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrtimesynchronizationfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var ntpClient: MTRTimeSynchronizationFeature](mtrtimesynchronizationfeature/ntpclient.md)
-- [static var ntpServer: MTRTimeSynchronizationFeature](mtrtimesynchronizationfeature/ntpserver.md)
-- [static var timeSyncClient: MTRTimeSynchronizationFeature](mtrtimesynchronizationfeature/timesyncclient.md)
-- [static var timeZone: MTRTimeSynchronizationFeature](mtrtimesynchronizationfeature/timezone.md)
+- [static var ntpClient: MTRTimeSynchronizationFeature](./mtrtimesynchronizationfeature/ntpclient.md)
+- [static var ntpServer: MTRTimeSynchronizationFeature](./mtrtimesynchronizationfeature/ntpserver.md)
+- [static var timeSyncClient: MTRTimeSynchronizationFeature](./mtrtimesynchronizationfeature/timesyncclient.md)
+- [static var timeZone: MTRTimeSynchronizationFeature](./mtrtimesynchronizationfeature/timezone.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

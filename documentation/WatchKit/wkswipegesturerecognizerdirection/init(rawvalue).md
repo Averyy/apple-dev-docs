@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new direction constant based on the provided raw value.
 

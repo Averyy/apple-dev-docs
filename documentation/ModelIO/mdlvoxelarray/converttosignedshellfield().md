@@ -1,7 +1,8 @@
 # convertToSignedShellField()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func convertToSignedShellField()
+```
+
+```objc
+- (void) convertToSignedShellField;
 ```
 
 

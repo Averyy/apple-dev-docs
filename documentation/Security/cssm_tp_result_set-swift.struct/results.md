@@ -1,7 +1,8 @@
 # Results
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var Results: UnsafeMutableRawPointer!
+```
+
+```c
+void * Results;
 ```
 
 

@@ -1,7 +1,8 @@
 # PKVoIPPushMetadata
 
 **Framework**: PushKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains metadata about a received PushKit VoIP notification.
 
@@ -19,29 +20,33 @@ An object that contains metadata about a received PushKit VoIP notification.
 class PKVoIPPushMetadata
 ```
 
+```objc
+@interface PKVoIPPushMetadata : NSObject
+```
+
 ##### Metadata
 
-- [`mustReport`](pkvoippushmetadata/mustreport.md)
+- [`mustReport`](./pkvoippushmetadata/mustreport.md)
 
 ## Topics
 
 ### Instance Properties
-- [var mustReport: Bool](pkvoippushmetadata/mustreport.md)
+- [var mustReport: Bool](./pkvoippushmetadata/mustreport.md)
   A boolean indicating whether a VoIP app must report a call or live conversation in response to receiving this VoIP notification.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

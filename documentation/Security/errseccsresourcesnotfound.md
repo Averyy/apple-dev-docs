@@ -1,7 +1,8 @@
 # errSecCSResourcesNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Cannot find sealed resources in code.
 
@@ -13,6 +14,10 @@ Cannot find sealed resources in code.
 
 ```swift
 var errSecCSResourcesNotFound: OSStatus { get }
+```
+
+```c
+errSecCSResourcesNotFound
 ```
 
 

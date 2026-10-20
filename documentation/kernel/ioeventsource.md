@@ -1,7 +1,8 @@
 # IOEventSource
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Abstract class for all work-loop event sources.
 
@@ -10,7 +11,7 @@ Abstract class for all work-loop event sources.
 
 ## Declaration
 
-```swift
+```cpp
 class IOEventSource : OSObject
 ```
 
@@ -33,85 +34,86 @@ Although the eventChainNext variable contains a reference to the next event sour
 ## Topics
 
 ### Miscellaneous
-- [checkForWork](ioeventsource/1810760-checkforwork.md)
+- [checkForWork](./ioeventsource/api-1810760-checkforwork.md)
   Virtual member function used by IOWorkLoop for work scheduling.
-- [disable](ioeventsource/1810784-disable.md)
+- [disable](./ioeventsource/api-1810784-disable.md)
   Disable event source.
-- [enable](ioeventsource/1810807-enable.md)
+- [enable](./ioeventsource/api-1810807-enable.md)
   Enable event source.
-- [getAction](ioeventsource/1810828-getaction.md)
+- [getAction](./ioeventsource/api-1810828-getaction.md)
   Get'ter for $link action variable.
-- [getNext](ioeventsource/1810847-getnext.md)
+- [getNext](./ioeventsource/api-1810847-getnext.md)
   Get'ter for $link eventChainNext variable.
-- [getWorkLoop](ioeventsource/1810872-getworkloop.md)
+- [getWorkLoop](./ioeventsource/api-1810872-getworkloop.md)
   Get'ter for $link workLoop variable.
-- [init](ioeventsource/1810895-init.md)
+- [init](./ioeventsource/api-1810895-init.md)
   Primary initialiser for the IOEventSource class.
-- [isEnabled](ioeventsource/1810913-isenabled.md)
+- [isEnabled](./ioeventsource/api-1810913-isenabled.md)
   Get'ter for $link enable variable.
-- [onThread](ioeventsource/1810935-onthread.md)
+- [onThread](./ioeventsource/api-1810935-onthread.md)
   Convenience function for workLoop->onThread.
-- [setAction](ioeventsource/1810952-setaction.md)
+- [setAction](./ioeventsource/api-1810952-setaction.md)
   Set'ter for $link action variable.
-- [setNext](ioeventsource/1810967-setnext.md)
+- [setNext](./ioeventsource/api-1810967-setnext.md)
   Set'ter for $link eventChainNext variable.
-- [setWorkLoop](ioeventsource/1810984-setworkloop.md)
+- [setWorkLoop](./ioeventsource/api-1810984-setworkloop.md)
   Set'ter for $link workLoop variable.
 ### Callbacks
-- [Action](ioworkloop/action.md)
+- [Action](./ioworkloop/action.md)
 ### Constants
-- [Miscellaneous Defines](ioeventsource/miscellaneous_defines.md)
+- [Miscellaneous Defines](./ioeventsource/miscellaneous_defines.md)
 ### DataTypes
-- [ExpansionData](ioservice/expansiondata.md)
+- [ExpansionData](./ioservice/expansiondata.md)
 ### Instance Variables
-- [workLoop](ioeventsource/workloop.md)
-- [reserved](ioeventsource/reserved.md)
-- [refcon](ioeventsource/refcon.md)
-- [owner](ioeventsource/owner.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [enabled](ioeventsource/enabled.md)
-- [action](ioeventsource/action-8l7.md)
+- [workLoop](./ioeventsource/workloop.md)
+- [reserved](./ioeventsource/reserved.md)
+- [refcon](./ioeventsource/refcon.md)
+- [owner](./ioeventsource/owner.md)
+- [eventChainNext](./ioeventsource/eventchainnext.md)
+- [enabled](./ioeventsource/enabled.md)
+- [action](./ioeventsource/action-8l7.md)
 ### Instance Methods
-- [- checkForWork](ioeventsource/1520975-checkforwork.md)
-- [- closeGate](ioeventsource/1520952-closegate.md)
-- [- disable](ioeventsource/1520972-disable.md)
-- [- enable](ioeventsource/1520958-enable.md)
-- [- free](ioeventsource/1520964-free.md)
-- [- getAction](ioeventsource/1520956-getaction.md)
-- [- getActionBlock](ioeventsource/2967267-getactionblock.md)
-- [- getMetaClass](ioeventsource/1520955-getmetaclass.md)
-- [- getNext](ioeventsource/1520966-getnext.md)
-- [- getRefcon](ioeventsource/2967268-getrefcon.md)
-- [- getWorkLoop](ioeventsource/1520961-getworkloop.md)
-- [- init](ioeventsource/1520960-init.md)
-- [- isEnabled](ioeventsource/1520957-isenabled.md)
-- [- onThread](ioeventsource/1520968-onthread.md)
-- [- openGate](ioeventsource/1520969-opengate.md)
-- [- setAction](ioeventsource/1520974-setaction.md)
-- [- setActionBlock](ioeventsource/2967269-setactionblock.md)
-- [- setNext](ioeventsource/1520962-setnext.md)
-- [- setRefcon](ioeventsource/2967270-setrefcon.md)
-- [- setWorkLoop](ioeventsource/1520953-setworkloop.md)
-- [- signalWorkAvailable](ioeventsource/1520948-signalworkavailable.md)
-- [- sleepGate](ioeventsource/1520954-sleepgate.md)
-- [- sleepGate](ioeventsource/3516453-sleepgate.md)
-- [- tryCloseGate](ioeventsource/1520976-tryclosegate.md)
-- [- wakeupGate](ioeventsource/1520950-wakeupgate.md)
+- [- checkForWork](./ioeventsource/api-1520975-checkforwork.md)
+- [- closeGate](./ioeventsource/api-1520952-closegate.md)
+- [- disable](./ioeventsource/api-1520972-disable.md)
+- [- enable](./ioeventsource/api-1520958-enable.md)
+- [- free](./ioeventsource/api-1520964-free.md)
+- [- getAction](./ioeventsource/api-1520956-getaction.md)
+- [- getActionBlock](./ioeventsource/api-2967267-getactionblock.md)
+- [- getMetaClass](./ioeventsource/api-1520955-getmetaclass.md)
+- [- getNext](./ioeventsource/api-1520966-getnext.md)
+- [- getRefcon](./ioeventsource/api-2967268-getrefcon.md)
+- [- getWorkLoop](./ioeventsource/api-1520961-getworkloop.md)
+- [- init](./ioeventsource/api-1520960-init.md)
+- [- isEnabled](./ioeventsource/api-1520957-isenabled.md)
+- [- onThread](./ioeventsource/api-1520968-onthread.md)
+- [- openGate](./ioeventsource/api-1520969-opengate.md)
+- [- setAction](./ioeventsource/api-1520974-setaction.md)
+- [- setActionBlock](./ioeventsource/api-2967269-setactionblock.md)
+- [- setNext](./ioeventsource/api-1520962-setnext.md)
+- [- setRefcon](./ioeventsource/api-2967270-setrefcon.md)
+- [- setWorkLoop](./ioeventsource/api-1520953-setworkloop.md)
+- [- signalWorkAvailable](./ioeventsource/api-1520948-signalworkavailable.md)
+- [- sleepGate](./ioeventsource/api-1520954-sleepgate.md)
+- [- sleepGate](./ioeventsource/api-3516453-sleepgate.md)
+- [- tryCloseGate](./ioeventsource/api-1520976-tryclosegate.md)
+- [- wakeupGate](./ioeventsource/api-1520950-wakeupgate.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOCommandPool](iocommandpool.md)
+### Base Types
+- [IOCommandPool](./iocommandpool.md)
   Manipulates a pool of commands which inherit from IOCommand.
-- [IOCommandGate](iocommandgate.md)
+- [IOCommandGate](./iocommandgate.md)
   Single-threaded work-loop client request mechanism.
-- [IOCommand](iocommand.md)
+- [IOCommand](./iocommand.md)
   This class is an abstract class which represents an I/O command.
-- [IODispatchSource](iodispatchsource.md)
+- [IODispatchSource](./iodispatchsource.md)
 
 
 ---

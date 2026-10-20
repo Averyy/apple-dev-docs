@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BlendMode.alpha
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The source and destination colors are blended by multiplying the source alpha value.
 

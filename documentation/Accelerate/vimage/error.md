@@ -1,7 +1,8 @@
 # vImage.Error
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs during a vImage operation.
 
@@ -11,7 +12,7 @@ An error that occurs during a vImage operation.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,83 +24,84 @@ enum Error
 ## Topics
 
 ### Enumeration Cases
-- [vImage.Error.bufferSizeMismatch](vimage/error/buffersizemismatch.md)
+- [vImage.Error.bufferSizeMismatch](./error/buffersizemismatch.md)
   An error indicating that the function requires the source and destination buffers to have the same size, but they don’t.
-- [vImage.Error.colorSyncIsAbsent](vimage/error/colorsyncisabsent.md)
+- [vImage.Error.colorSyncIsAbsent](./error/colorsyncisabsent.md)
   An error indicating that the ColorSync framework is missing.
-- [vImage.Error.coreVideoIsAbsent](vimage/error/corevideoisabsent.md)
+- [vImage.Error.coreVideoIsAbsent](./error/corevideoisabsent.md)
   An error indicating that the Core Video framework is missing.
-- [vImage.Error.internalError](vimage/error/internalerror.md)
+- [vImage.Error.internalError](./error/internalerror.md)
   A serious error occurred inside vImage, which prevented vImage from continuing.
-- [vImage.Error.invalidCVImageFormat](vimage/error/invalidcvimageformat.md)
+- [vImage.Error.invalidCVImageFormat](./error/invalidcvimageformat.md)
   An error indicating that a Core Video format is invalid.
-- [vImage.Error.invalidEdgeStyle](vimage/error/invalidedgestyle.md)
+- [vImage.Error.invalidEdgeStyle](./error/invalidedgestyle.md)
   An error indicating that the specified edge style is invalid.
-- [vImage.Error.invalidImageFormat](vimage/error/invalidimageformat.md)
+- [vImage.Error.invalidImageFormat](./error/invalidimageformat.md)
   An error indicating that a specified Core Graphics or Core Video format is invalid.
-- [vImage.Error.invalidImageObject](vimage/error/invalidimageobject.md)
+- [vImage.Error.invalidImageObject](./error/invalidimageobject.md)
   An error indicating that a specified Core Graphics image or Core Video pixel buffer is invalid.
-- [vImage.Error.invalidKernelSize](vimage/error/invalidkernelsize.md)
+- [vImage.Error.invalidKernelSize](./error/invalidkernelsize.md)
   An error indicating that either the kernel height, the kernel width, or both, are even.
-- [vImage.Error.invalidOffset_X](vimage/error/invalidoffset_x.md)
+- [vImage.Error.invalidOffset_X](./error/invalidoffset_x.md)
   An error indicating that the parameter that specifies the left edge of the region of interest is greater than the width of the source image.
-- [vImage.Error.invalidOffset_Y](vimage/error/invalidoffset_y.md)
+- [vImage.Error.invalidOffset_Y](./error/invalidoffset_y.md)
   An error indicating that the parameter that specifies the top edge of the region of interest is greater than the height of the source image.
-- [vImage.Error.invalidParameter](vimage/error/invalidparameter.md)
+- [vImage.Error.invalidParameter](./error/invalidparameter.md)
   An error indicating that a function parameter has an invalid value.
-- [vImage.Error.invalidRowBytes](vimage/error/invalidrowbytes.md)
+- [vImage.Error.invalidRowBytes](./error/invalidrowbytes.md)
   An error indicating that the buffer’s row bytes field is invalid.
-- [vImage.Error.memoryAllocationError](vimage/error/memoryallocationerror.md)
+- [vImage.Error.memoryAllocationError](./error/memoryallocationerror.md)
   An error indicating that an attempt to allocate memory failed.
-- [vImage.Error.noError](vimage/error/noerror.md)
+- [vImage.Error.noError](./error/noerror.md)
   The vImage function completed without error.
-- [vImage.Error.nullPointerArgument](vimage/error/nullpointerargument.md)
+- [vImage.Error.nullPointerArgument](./error/nullpointerargument.md)
   An error indicating that a pointer parameter is `NULL` and it must not be.
-- [vImage.Error.outOfPlaceOperationRequired](vimage/error/outofplaceoperationrequired.md)
+- [vImage.Error.outOfPlaceOperationRequired](./error/outofplaceoperationrequired.md)
   An error indicating that the source images and destination images alias the same image data, but must not.
-- [vImage.Error.roiLargerThanInputBuffer](vimage/error/roilargerthaninputbuffer.md)
+- [vImage.Error.roiLargerThanInputBuffer](./error/roilargerthaninputbuffer.md)
   An error indicating that the region of interest extends beyond the bottom edge or right edge of the source buffer.
-- [vImage.Error.unknownFlagsBit](vimage/error/unknownflagsbit.md)
+- [vImage.Error.unknownFlagsBit](./error/unknownflagsbit.md)
   An error indicating that a bit in the flags field isn’t supported.
-- [vImage.Error.unsupportedConversion](vimage/error/unsupportedconversion.md)
+- [vImage.Error.unsupportedConversion](./error/unsupportedconversion.md)
   An error indicating that the requested conversion isn’t supported.
 ### Initializers
-- [init(vImageError: vImage_Error)](vimage/error/init(vimageerror:).md)
+- [init(vImageError: vImage_Error)](./error/init%28vimageerror%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [vImage.BlendMode](vimage/blendmode.md)
+### Enumerations
+- [vImage.BlendMode](./blendmode.md)
   Constants that specify an alpha blending mode.
-- [vImage.BufferType](vimage/buffertype.md)
+- [vImage.BufferType](./buffertype.md)
   Codes that represent vImage buffer types.
-- [vImage.ChannelOrdering](vimage/channelordering.md)
+- [vImage.ChannelOrdering](./channelordering.md)
   Constants that specify the channel ordering of a pixel buffer.
-- [vImage.CompositeMode](vimage/compositemode.md)
+- [vImage.CompositeMode](./compositemode.md)
   Constants that specify whether the format of layers is premultiplied or nonpremultiplied.
-- [vImage.EdgeMode](vimage/edgemode.md)
+- [vImage.EdgeMode](./edgemode.md)
   Constants that specify edge modes for convolution operations.
-- [vImage.FloodFillConnectivity](vimage/floodfillconnectivity.md)
-- [vImage.Gamma](vimage/gamma.md)
+- [vImage.FloodFillConnectivity](./floodfillconnectivity.md)
+- [vImage.Gamma](./gamma.md)
   Describes either a used-defined or constant gamma.
-- [vImage.MorphologyOperation](vimage/morphologyoperation.md)
+- [vImage.MorphologyOperation](./morphologyoperation.md)
   Describes which morphology operation to perform.
-- [vImage.ReflectionAxis](vimage/reflectionaxis.md)
+- [vImage.ReflectionAxis](./reflectionaxis.md)
   The axis to reflect an image.
-- [vImage.Rotation](vimage/rotation.md)
+- [vImage.Rotation](./rotation.md)
   The angle to rotate an image.
-- [vImage.ShearDirection](vimage/sheardirection.md)
+- [vImage.ShearDirection](./sheardirection.md)
   The shear direction.
 
 

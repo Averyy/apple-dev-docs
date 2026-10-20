@@ -1,7 +1,8 @@
 # isDirectory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This property contains a boolean value indicating whether the file wrapper is a directory file wrapper.
 
@@ -20,17 +21,22 @@ This property contains a boolean value indicating whether the file wrapper is a 
 var isDirectory: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isDirectory) BOOL directory;
+```
+
 #### Discussion
 
 This property will contain YES when the file wrapper is a directory file wrapper, otherwise it contains NO.
 
-> **Note**:  Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value of this property, if the type of the file on disk has changed.
+> **Note**:  Invocations of [`read(from:options:)`](./read%28from,options%29.md) may change the value of this property, if the type of the file on disk has changed.
 
 ## See Also
 
-- [var isRegularFile: Bool](filewrapper/isregularfile.md)
+### Querying File Wrappers
+- [var isRegularFile: Bool](./isregularfile.md)
   This property contains a boolean value that indicates whether the file wrapper object is a regular-file.
-- [var isSymbolicLink: Bool](filewrapper/issymboliclink.md)
+- [var isSymbolicLink: Bool](./issymboliclink.md)
   A boolean that indicates whether the file wrapper object is a symbolic-link file wrapper.
 
 

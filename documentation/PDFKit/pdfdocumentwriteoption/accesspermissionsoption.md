@@ -1,7 +1,8 @@
 # accessPermissionsOption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,12 +18,17 @@
 static let accessPermissionsOption: PDFDocumentWriteOption
 ```
 
+```c
+extern PDFDocumentWriteOption const PDFDocumentAccessPermissionsOption;
+```
+
 ## See Also
 
-- [static let burnInAnnotationsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/burninannotationsoption.md)
-- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](pdfdocumentwriteoption/optimizeimagesforscreenoption.md)
-- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](pdfdocumentwriteoption/saveimagesasjpegoption.md)
-- [static let saveTextFromOCROption: PDFDocumentWriteOption](pdfdocumentwriteoption/savetextfromocroption.md)
+### Type Properties
+- [static let burnInAnnotationsOption: PDFDocumentWriteOption](./burninannotationsoption.md)
+- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](./optimizeimagesforscreenoption.md)
+- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](./saveimagesasjpegoption.md)
+- [static let saveTextFromOCROption: PDFDocumentWriteOption](./savetextfromocroption.md)
 
 
 ---

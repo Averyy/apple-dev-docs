@@ -1,7 +1,8 @@
 # decodeTimeStamp
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the sample will be decoded.
 
@@ -20,15 +21,20 @@ The time at which the sample will be decoded.
 var decodeTimeStamp: CMTime
 ```
 
+```c
+CMTime decodeTimeStamp;
+```
+
 #### Discussion
 
 If the samples are in presentation order, this must be set to `kCMTimeInvalid`.
 
 ## See Also
 
-- [var duration: CMTime](cmsampletiminginfo/duration.md)
+### Properties
+- [var duration: CMTime](./duration.md)
   The duration of the sample.
-- [var presentationTimeStamp: CMTime](cmsampletiminginfo/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The time at which the sample will be presented.
 
 

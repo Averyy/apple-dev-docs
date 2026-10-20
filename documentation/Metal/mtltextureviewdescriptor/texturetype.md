@@ -1,7 +1,8 @@
 # textureType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var textureType: MTLTextureType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLTextureType textureType;
 ```
 
 #### Discussion

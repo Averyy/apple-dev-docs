@@ -1,7 +1,8 @@
 # buildEither(second:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a builder with the second component.
 
@@ -22,17 +23,18 @@ static func buildEither(second component: some PromptRepresentable) -> Prompt
 
 ## See Also
 
-- [static func buildArray([some PromptRepresentable]) -> Prompt](promptbuilder/buildarray(_:).md)
+### Building a prompt
+- [static func buildArray([some PromptRepresentable]) -> Prompt](./buildarray%28_%29.md)
   Creates a builder with an array of prompts.
-- [static func buildBlock<each P>(repeat each P) -> Prompt](promptbuilder/buildblock(_:).md)
+- [static func buildBlock<each P>(repeat each P) -> Prompt](./buildblock%28_%29.md)
   Creates a builder with a block.
-- [static func buildEither(first: some PromptRepresentable) -> Prompt](promptbuilder/buildeither(first:).md)
+- [static func buildEither(first: some PromptRepresentable) -> Prompt](./buildeither%28first%29.md)
   Creates a builder with the first component.
-- [static buildExpression(_:)](promptbuilder/buildexpression(_:).md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Creates a builder with a prompt expression.
-- [static func buildLimitedAvailability(some PromptRepresentable) -> Prompt](promptbuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(some PromptRepresentable) -> Prompt](./buildlimitedavailability%28_%29.md)
   Creates a builder with a limited availability prompt.
-- [static func buildOptional(Prompt?) -> Prompt](promptbuilder/buildoptional(_:).md)
+- [static func buildOptional(Prompt?) -> Prompt](./buildoptional%28_%29.md)
   Creates a builder with an optional component.
 
 

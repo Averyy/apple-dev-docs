@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The parent focus environment for this environment.
@@ -19,13 +20,18 @@ The parent focus environment for this environment.
 weak var parentFocusEnvironment: (any UIFocusEnvironment)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIFocusEnvironment> parentFocusEnvironment;
+```
+
 #### Discussion
 
 The value of this property is `nil` when no parent container exists.
 
 ## See Also
 
-- [var focusItemContainer: (any UIFocusItemContainer)?](uifocusenvironment/focusitemcontainer.md)
+### Checking the ancestry of the environment
+- [var focusItemContainer: (any UIFocusItemContainer)?](./focusitemcontainer.md)
   The container for the child focus items in this focus environment.
 
 

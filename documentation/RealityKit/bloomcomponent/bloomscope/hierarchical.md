@@ -1,7 +1,8 @@
 # hierarchical
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bloom is restricted to the bounding box of the attached entity’s mesh hierarchy.
 
@@ -21,7 +22,8 @@ static let hierarchical: BloomComponent.BloomScope
 
 ## See Also
 
-- [static let unbounded: BloomComponent.BloomScope](bloomcomponent/bloomscope/unbounded.md)
+### Accessing bloom scopes
+- [static let unbounded: BloomComponent.BloomScope](./unbounded.md)
   Bloom is computed on the entire screen with no bounding box restriction.
 
 

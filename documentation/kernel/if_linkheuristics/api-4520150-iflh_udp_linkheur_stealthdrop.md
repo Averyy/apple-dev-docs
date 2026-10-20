@@ -1,14 +1,15 @@
 # iflh_udp_linkheur_stealthdrop
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t iflh_udp_linkheur_stealthdrop;
 ```
 

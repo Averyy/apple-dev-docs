@@ -1,7 +1,8 @@
 # init(_:for:backgroundStyle:_:onDocumentOpen:overlayAccessoryView:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and an overlay accessory view.
 
@@ -16,9 +17,26 @@ Creates a view to present when launching document-related user experiences using
 nonisolated init<B>(_ title: LocalizedStringResource, for contentTypes: [UTType], backgroundStyle: B, @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init<B>(_ title: LocalizedStringKey, for contentTypes: [UTType], backgroundStyle: B, @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+```
+
+```swift
+nonisolated
+init<B>(_ title: Text? = nil, for contentTypes: [UTType], backgroundStyle: B, @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+```
+
+```swift
+nonisolated
+init<B>(_ title: some StringProtocol, for contentTypes: [UTType], backgroundStyle: B, @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+```
+
 #### Discussion
 
-> **Note**:  An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
+> **Note**:  An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](../documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
 
 ## Parameters
 
@@ -31,11 +49,12 @@ nonisolated init<B>(_ title: LocalizedStringResource, for contentTypes: [UTType]
 
 ## See Also
 
-- [init(_:for:backgroundStyle:_:onDocumentOpen:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:).md)
+### Creating a launch view with a background style
+- [init(_:for:backgroundStyle:_:onDocumentOpen:)](./init%28_,for,backgroundstyle,_,ondocumentopen%29.md)
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, and a background style.
-- [init(_:for:backgroundStyle:_:onDocumentOpen:backgroundAccessoryView:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:backgroundaccessoryview:).md)
+- [init(_:for:backgroundStyle:_:onDocumentOpen:backgroundAccessoryView:)](./init%28_,for,backgroundstyle,_,ondocumentopen,backgroundaccessoryview%29.md)
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and a background accessory view.
-- [init(_:for:backgroundStyle:_:onDocumentOpen:backgroundAccessoryView:overlayAccessoryView:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:backgroundaccessoryview:overlayaccessoryview:).md)
+- [init(_:for:backgroundStyle:_:onDocumentOpen:backgroundAccessoryView:overlayAccessoryView:)](./init%28_,for,backgroundstyle,_,ondocumentopen,backgroundaccessoryview,overlayaccessoryview%29.md)
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and accessory views.
 
 

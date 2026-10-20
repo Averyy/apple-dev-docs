@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search bar’s delegate object.
 
@@ -9,7 +10,7 @@ The search bar’s delegate object.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The search bar’s delegate object.
 weak var delegate: (any UISearchBarDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UISearchBarDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate should conform to the [`UISearchBarDelegate`](uisearchbardelegate.md) protocol. Set this property to further modify the behavior. The default value is `nil`.
+The delegate should conform to the [`UISearchBarDelegate`](../uisearchbardelegate.md) protocol. Set this property to further modify the behavior. The default value is `nil`.
 
 ## See Also
 
-- [protocol UISearchBarDelegate](uisearchbardelegate.md)
+### Handling search bar interactions
+- [protocol UISearchBarDelegate](../uisearchbardelegate.md)
   A collection of optional methods that you implement to make a search bar control functional.
 
 

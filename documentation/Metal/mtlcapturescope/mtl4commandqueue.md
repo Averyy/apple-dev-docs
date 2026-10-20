@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 If set, this scope will only capture Metal commands from the associated Metal 4 command queue. Defaults to nil (all command queues from the associated device are captured).
@@ -18,6 +19,10 @@ If set, this scope will only capture Metal commands from the associated Metal 4 
 
 ```swift
 var mtl4CommandQueue: (any MTL4CommandQueue)? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) id<MTL4CommandQueue> mtl4CommandQueue;
 ```
 
 

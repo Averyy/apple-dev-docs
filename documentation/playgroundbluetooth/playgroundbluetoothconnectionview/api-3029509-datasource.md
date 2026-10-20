@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: Playground Bluetooth  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A data source that provides subviews for available peripherals.
 
@@ -17,9 +18,10 @@ weak var dataSource: PlaygroundBluetoothConnectionViewDataSource?
 
 ## See Also
 
-- [init(centralManager: PlaygroundBluetoothCentralManager, delegate: PlaygroundBluetoothConnectionViewDelegate?, dataSource: PlaygroundBluetoothConnectionViewDataSource?)](playgroundbluetoothconnectionview/3029511-init.md)
+### Creating Connection Views
+- [init(centralManager: PlaygroundBluetoothCentralManager, delegate: PlaygroundBluetoothConnectionViewDelegate?, dataSource: PlaygroundBluetoothConnectionViewDataSource?)](./api-3029511-init.md)
   Creates a new, empty view that can be populated with items when peripherals are connected to the central manager.
-- [init?(coder: NSCoder)](playgroundbluetoothconnectionview/3029512-init.md)
+- [init?(coder: NSCoder)](./api-3029512-init.md)
   Creates a connection view initialized from data you supply.
 
 

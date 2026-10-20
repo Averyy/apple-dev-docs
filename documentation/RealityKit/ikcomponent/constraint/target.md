@@ -1,7 +1,8 @@
 # target
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The packed targets for the positional and orientational demands in model space.
 

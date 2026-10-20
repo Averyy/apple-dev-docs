@@ -1,7 +1,8 @@
 # LAEnvironment.Observer
 
 **Framework**: Local Authentication  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -17,16 +18,20 @@
 protocol Observer : NSObjectProtocol
 ```
 
+```objc
+@protocol LAEnvironmentObserver <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func environment(LAEnvironment, stateDidChangeFromOldState: LAEnvironment.State)](laenvironment/observer/environment(_:statedidchangefromoldstate:).md)
+- [func environment(LAEnvironment, stateDidChangeFromOldState: LAEnvironment.State)](./observer/environment%28_,statedidchangefromoldstate%29.md)
   Called when there has been a change in the environment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

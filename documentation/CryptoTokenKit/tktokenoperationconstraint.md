@@ -1,7 +1,8 @@
 # TKTokenOperationConstraint
 
 **Framework**: CryptoTokenKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A token’s authentication constraint for a specific operation.
 
@@ -20,23 +21,28 @@ A token’s authentication constraint for a specific operation.
 typealias TKTokenOperationConstraint = AnyObject
 ```
 
+```c
+typedef id TKTokenOperationConstraint;
+```
+
 #### Discussion
 
 This object persistently identifies a constraint for performing specific operation on specific object.
 
-- [`true`](https://developer.apple.com/documentation/swift/true), indicating that the operation is always allowed, without any authentication necessary.
-- [`false`](https://developer.apple.com/documentation/swift/false), indicating that the operation is never allowed; this value isn’t typically used.
+- [`true`](../Swift/true.md), indicating that the operation is always allowed, without any authentication necessary.
+- [`false`](../Swift/false.md), indicating that the operation is never allowed; this value isn’t typically used.
 - Any other property list compatible value defined by the implementation of the token extension. Any such constraint is required to stay constant for the entire lifetime of the token. For example, a Smart Card token extension may decide to use the string constant `"PIN"` to indicate that the operation is authenticated with valid PIN entry to the card.
 
 ## See Also
 
-- [func tokenSession(TKTokenSession, beginAuthFor: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation](tktokensessiondelegate/tokensession(_:beginauthfor:constraint:).md)
+### Authenticating
+- [func tokenSession(TKTokenSession, beginAuthFor: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation](./tktokensessiondelegate/tokensession%28_,beginauthfor,constraint%29.md)
   Tells the delegate that authentication has begun for the specified operation and constraint.
-- [class TKTokenAuthOperation](tktokenauthoperation.md)
+- [class TKTokenAuthOperation](./tktokenauthoperation.md)
   An authentication operation for a cryptographic token.
-- [class TKTokenPasswordAuthOperation](tktokenpasswordauthoperation.md)
+- [class TKTokenPasswordAuthOperation](./tktokenpasswordauthoperation.md)
   A password-based authentication operation.
-- [class TKTokenSmartCardPINAuthOperation](tktokensmartcardpinauthoperation.md)
+- [class TKTokenSmartCardPINAuthOperation](./tktokensmartcardpinauthoperation.md)
   A Smart Card PIN authentication operation.
 
 

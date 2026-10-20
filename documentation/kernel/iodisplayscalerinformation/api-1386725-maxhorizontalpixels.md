@@ -1,7 +1,8 @@
 # maxHorizontalPixels
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Maximum number of horizontal source pixels (horizontalScaled).
 
@@ -10,7 +11,7 @@ Maximum number of horizontal source pixels (horizontalScaled).
 
 ## Declaration
 
-```swift
+```c
 UInt32 maxHorizontalPixels;
 ```
 

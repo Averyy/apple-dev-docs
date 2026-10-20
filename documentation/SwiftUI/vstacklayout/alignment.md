@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal alignment of subviews.
 
@@ -22,7 +23,8 @@ var alignment: HorizontalAlignment
 
 ## See Also
 
-- [var spacing: CGFloat?](vstacklayout/spacing.md)
+### Getting the stack’s properties
+- [var spacing: CGFloat?](./spacing.md)
   The distance between adjacent subviews.
 
 

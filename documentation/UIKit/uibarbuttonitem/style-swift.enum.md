@@ -1,16 +1,17 @@
 # UIBarButtonItem.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the style of an item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,43 +19,48 @@ Constants that specify the style of an item.
 enum Style
 ```
 
+```c
+enum UIBarButtonItemStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIBarButtonItem.Style.plain](uibarbuttonitem/style-swift.enum/plain.md)
+- [UIBarButtonItem.Style.plain](./style-swift.enum/plain.md)
   A button style with plain text styling.
-- [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
+- [UIBarButtonItem.Style.prominent](./style-swift.enum/prominent.md)
   A button item style for a prominent button.
-- [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
+- [UIBarButtonItem.Style.bordered](./style-swift.enum/bordered.md)
   A simple button style with a border.
-- [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
+- [static var done: UIBarButtonItem.Style](./style-swift.enum/done.md)
   A button style for a done button.
 ### Initializers
-- [init?(rawValue: Int)](uibarbuttonitem/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: UIBarButtonItem.Style](uibarbuttonitem/style-swift.property.md)
+### Customizing item appearance
+- [var style: UIBarButtonItem.Style](./style-swift.property.md)
   The style of the item.
-- [var tintColor: UIColor?](uibarbuttonitem/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the button item.
-- [var isHidden: Bool](uibarbuttonitem/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean that determines the visibility of the item.
-- [var isSelected: Bool](uibarbuttonitem/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the button is in a selected state.
-- [var width: CGFloat](uibarbuttonitem/width.md)
+- [var width: CGFloat](./width.md)
   The width of the item.
-- [var possibleTitles: Set<String>?](uibarbuttonitem/possibletitles.md)
+- [var possibleTitles: Set<String>?](./possibletitles.md)
   The set of possible titles to display on the bar button.
 
 

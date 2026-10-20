@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeTelevisionStreamingStick
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A television streaming stick accessory.
 
@@ -19,11 +20,16 @@ A television streaming stick accessory.
 let HMAccessoryCategoryTypeTelevisionStreamingStick: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeTelevisionStreamingStick;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeTelevision: String](hmaccessorycategorytypetelevision.md)
+### Television
+- [let HMAccessoryCategoryTypeTelevision: String](./hmaccessorycategorytypetelevision.md)
   A television accessory.
-- [let HMAccessoryCategoryTypeTelevisionSetTopBox: String](hmaccessorycategorytypetelevisionsettopbox.md)
+- [let HMAccessoryCategoryTypeTelevisionSetTopBox: String](./hmaccessorycategorytypetelevisionsettopbox.md)
   A television set-top box accessory.
 
 

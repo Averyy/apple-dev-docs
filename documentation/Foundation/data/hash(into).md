@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The hash value for the data.
 

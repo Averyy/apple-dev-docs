@@ -1,7 +1,8 @@
 # toolbarDefaultItemIdentifiers(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to provide the default items to display on the toolbar.
 
@@ -9,13 +10,17 @@ Asks the delegate to provide the default items to display on the toolbar.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier]
+```
+
+```objc
+- (NSArray<NSString *> *) toolbarDefaultItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
 #### Return Value
@@ -34,13 +39,14 @@ The toolbar calls this method when user settings don’t contain any custom conf
 
 ## See Also
 
-- [func toolbarAllowedItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstoolbardelegate/toolbaralloweditemidentifiers(_:).md)
+### Configuring the behavior of items
+- [func toolbarAllowedItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./toolbaralloweditemidentifiers%28_%29.md)
   Asks the delegate to provide the items allowed on the toolbar.
-- [func toolbarImmovableItemIdentifiers(NSToolbar) -> Set<NSToolbarItem.Identifier>](nstoolbardelegate/toolbarimmovableitemidentifiers(_:).md)
+- [func toolbarImmovableItemIdentifiers(NSToolbar) -> Set<NSToolbarItem.Identifier>](./toolbarimmovableitemidentifiers%28_%29.md)
   Asks the delegate to provide the items that people can’t remove from the toolbar or rearrange during the customization process.
-- [func toolbarSelectableItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstoolbardelegate/toolbarselectableitemidentifiers(_:).md)
+- [func toolbarSelectableItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./toolbarselectableitemidentifiers%28_%29.md)
   Asks the delegate to provide the set of selectable items in the toolbar.
-- [func toolbar(NSToolbar, itemIdentifier: NSToolbarItem.Identifier, canBeInsertedAt: Int) -> Bool](nstoolbardelegate/toolbar(_:itemidentifier:canbeinsertedat:).md)
+- [func toolbar(NSToolbar, itemIdentifier: NSToolbarItem.Identifier, canBeInsertedAt: Int) -> Bool](./toolbar%28_,itemidentifier,canbeinsertedat%29.md)
   Asks the delegate for a Boolean value that indicates whether the toolbar can place the item at the specified position.
 
 

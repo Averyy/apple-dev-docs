@@ -1,7 +1,8 @@
 # rasterizationRateMaps
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rasterization rate maps to use when rendering the frame.
 
@@ -21,7 +22,8 @@ Apply a rasterization rate map to your render descriptor when you set up your dr
 
 ## See Also
 
-- [var flippedRasterizationRateMaps: [any MTLRasterizationRateMap]](layerrenderer/drawable/flippedrasterizationratemaps.md)
+### Getting the rasterization rate map
+- [var flippedRasterizationRateMaps: [any MTLRasterizationRateMap]](./flippedrasterizationratemaps.md)
   The rasterization rate maps that are flipped around the y-axis.
 
 

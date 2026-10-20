@@ -1,14 +1,15 @@
 # kMaxL1BaseExitLatency
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kMaxL1BaseExitLatency
 ```
 

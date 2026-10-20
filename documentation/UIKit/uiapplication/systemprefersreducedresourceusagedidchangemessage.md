@@ -1,7 +1,8 @@
 # UIApplication.SystemPrefersReducedResourceUsageDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,13 +20,13 @@ struct SystemPrefersReducedResourceUsageDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](uiapplication/systemprefersreducedresourceusagedidchangemessage/init.md)
+- [init()](./systemprefersreducedresourceusagedidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

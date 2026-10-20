@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hand action model’s configuration parameters.
 
@@ -22,15 +23,16 @@ let modelParameters: MLHandActionClassifier.ModelParameters
 
 The property reflects the model parameters you provide to one of these methods that train a hand action classifier:
 
-#### Doccomapplecreatemldocumentationcreatemlmlhandactionclassifiertraintrainingdataparameterssessionparameters
+#### ``doc://com.apple.createml/documentation/CreateML/MLHandActionClassifier/train(trainingData:parameters:sessionParameters:)``
 
-[`makeTrainingSession(trainingData:parameters:sessionParameters:)`](mlhandactionclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+[`makeTrainingSession(trainingData:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
 
-- [`init(trainingData:parameters:)`](mlhandactionclassifier/init(trainingdata:parameters:).md)
+- [`init(trainingData:parameters:)`](./init%28trainingdata,parameters%29.md)
 
 ## See Also
 
-- [var model: MLModel](mlhandactionclassifier/model.md)
+### Inspecting a hand action classifier model
+- [var model: MLModel](./model.md)
   The underlying Core ML model of the hand action classifier stored in memory.
 
 

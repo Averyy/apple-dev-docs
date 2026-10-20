@@ -1,7 +1,8 @@
 # retryAfterSeconds
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds to wait before you retry the request.
 
@@ -11,7 +12,7 @@ The number of seconds to wait before you retry the request.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ var retryAfterSeconds: Double? { get }
 
 #### Discussion
 
-This property’s value is available only when the error’s `code` is [`serviceUnavailable`](ckerror/serviceunavailable.md) or [`requestRateLimited`](ckerror/requestratelimited.md).
+This property’s value is available only when the error’s `code` is [`serviceUnavailable`](./serviceunavailable.md) or [`requestRateLimited`](./requestratelimited.md).
 
-The error’s `userInfo` dictionary contains the same value as this property. You can access it using the [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key.
+The error’s `userInfo` dictionary contains the same value as this property. You can access it using the [`CKErrorRetryAfterKey`](../ckerrorretryafterkey.md) key.
 
 
 ---

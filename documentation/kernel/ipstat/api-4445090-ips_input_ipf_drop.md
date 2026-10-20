@@ -1,14 +1,15 @@
 # ips_input_ipf_drop
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t ips_input_ipf_drop;
 ```
 

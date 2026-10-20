@@ -1,7 +1,8 @@
 # convertElements(of:to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts single-precision values to double-precision values.
 
@@ -11,7 +12,7 @@ Converts single-precision values to double-precision values.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -27,11 +28,12 @@ static func convertElements<U, V>(of source: U, to destination: inout V) where U
 
 ## See Also
 
-- [static func doubleToFloat<U>(U) -> [Float]](vdsp/doubletofloat(_:).md)
+### Conversion between floating-point types
+- [static func doubleToFloat<U>(U) -> [Float]](./doubletofloat%28_%29.md)
   Returns single-precision values converted from a double-precision source.
-- [static func floatToDouble<U>(U) -> [Double]](vdsp/floattodouble(_:).md)
+- [static func floatToDouble<U>(U) -> [Double]](./floattodouble%28_%29.md)
   Returns double-precision values converted from a single-precision source.
-- [static func convertElements<U, V>(of: U, to: inout V)](vdsp/convertelements(of:to:)-698ye.md)
+- [static func convertElements<U, V>(of: U, to: inout V)](./convertelements%28of,to%29-698ye.md)
   Converts double-precision values to single-precision values.
 
 

@@ -1,7 +1,8 @@
 # init(texture:normalTexture:size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new tile definition with a single texture and separate normal texture for simulating 3D lighting.
 
@@ -18,6 +19,10 @@ Initializes a new tile definition with a single texture and separate normal text
 
 ```swift
 init(texture: SKTexture, normalTexture: SKTexture, size: CGSize)
+```
+
+```objc
+- (instancetype) initWithTexture:(SKTexture *) texture normalTexture:(SKTexture *) normalTexture size:(CGSize) size;
 ```
 
 #### Return Value

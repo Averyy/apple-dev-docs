@@ -1,7 +1,8 @@
 # providerIdentifier
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A purpose identifier for coordinated reads and writes.
 
@@ -17,6 +18,10 @@ A purpose identifier for coordinated reads and writes.
 var providerIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * providerIdentifier;
+```
+
 #### Discussion
 
 This property contains a unique string that can be used as a purpose identifier for file coordination. The File Provider extension should use this identifier when performing coordinated reads and writes, to help prevent deadlocks.
@@ -25,13 +30,14 @@ Pass this identifier to the file coordinator’s `setPurposeIdentifier:` method 
 
 This method returns the containing app’s bundle identifier.
 
-> **Note**:  While this property is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
+> **Note**:  While this property is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](../nsfileproviderreplicatedextension.md) protocol.
 
 ## See Also
 
-- [class var `default`: NSFileProviderManager](nsfileprovidermanager/default.md)
+### Accessing File Provider data
+- [class var `default`: NSFileProviderManager](./default.md)
   A property that returns the shared file provider manager object.
-- [var documentStorageURL: URL](nsfileprovidermanager/documentstorageurl.md)
+- [var documentStorageURL: URL](./documentstorageurl.md)
   The root URL for all shared documents.
 
 

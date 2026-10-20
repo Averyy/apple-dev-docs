@@ -1,23 +1,25 @@
 # kIOUserNetworkFeatureFlagSoftwareVlan
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkFeatureFlagSoftwareVlan
 ```
 
 ## See Also
 
-- [kIOUserNetworkFeatureFlagNicProxy](kiousernetworkfeatureflagnicproxy.md)
-- [kIOUserNetworkFeatureFlagWOMP](kiousernetworkfeatureflagwomp.md)
-- [kIOUserNetworkFeatureHWTimeStamp](kiousernetworkfeaturehwtimestamp.md)
-- [kIOUserNetworkFeatureSWTimeStamp](kiousernetworkfeatureswtimestamp.md)
+### Network features
+- [kIOUserNetworkFeatureFlagNicProxy](./kiousernetworkfeatureflagnicproxy.md)
+- [kIOUserNetworkFeatureFlagWOMP](./kiousernetworkfeatureflagwomp.md)
+- [kIOUserNetworkFeatureHWTimeStamp](./kiousernetworkfeaturehwtimestamp.md)
+- [kIOUserNetworkFeatureSWTimeStamp](./kiousernetworkfeatureswtimestamp.md)
 
 
 ---

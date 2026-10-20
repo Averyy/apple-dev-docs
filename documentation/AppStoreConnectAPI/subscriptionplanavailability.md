@@ -1,7 +1,8 @@
 # SubscriptionPlanAvailability
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A configuration object for a subscription’s plan availability, specifying the plan type, the territories in which it is available, and whether it’s automatically available in new territories.
 
@@ -10,16 +11,16 @@ A configuration object for a subscription’s plan availability, specifying the 
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPlanAvailability
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object SubscriptionPlanAvailability.Attributes](subscriptionplanavailability/attributes-data.dictionary.md)
+- [object SubscriptionPlanAvailability.Attributes](./subscriptionplanavailability/attributes-data.dictionary.md)
   Attributes that describe a subscription plan availability resource.
-- [object SubscriptionPlanAvailability.Relationships](subscriptionplanavailability/relationships-data.dictionary.md)
+- [object SubscriptionPlanAvailability.Relationships](./subscriptionplanavailability/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,25 +29,26 @@ object SubscriptionPlanAvailability
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (SubscriptionPlanAvailability.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionPlanAvailabilities`
 
 ## See Also
 
-- [object SubscriptionPlanAvailabilityCreateRequest](subscriptionplanavailabilitycreaterequest.md)
+### Objects and types
+- [object SubscriptionPlanAvailabilityCreateRequest](./subscriptionplanavailabilitycreaterequest.md)
   The request body you use to create a subscription plan availability.
-- [object SubscriptionPlanAvailabilityUpdateRequest](subscriptionplanavailabilityupdaterequest.md)
+- [object SubscriptionPlanAvailabilityUpdateRequest](./subscriptionplanavailabilityupdaterequest.md)
   The request body you use to modify a subscription plan availability.
-- [object SubscriptionPlanAvailabilityResponse](subscriptionplanavailabilityresponse.md)
+- [object SubscriptionPlanAvailabilityResponse](./subscriptionplanavailabilityresponse.md)
   The response body for endpoints that create or read a single subscription plan availability.
-- [object SubscriptionPlanAvailabilitiesResponse](subscriptionplanavailabilitiesresponse.md)
+- [object SubscriptionPlanAvailabilitiesResponse](./subscriptionplanavailabilitiesresponse.md)
   The response body for endpoints that list subscription plan availabilities.
-- [object SubscriptionPlanAvailabilitiesLinkagesResponse](subscriptionplanavailabilitieslinkagesresponse.md)
+- [object SubscriptionPlanAvailabilitiesLinkagesResponse](./subscriptionplanavailabilitieslinkagesresponse.md)
   A response containing the resource identifiers of subscription plan availabilities.
-- [object SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequest](subscriptionplanavailabilityavailableterritorieslinkagesrequest.md)
+- [object SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequest](./subscriptionplanavailabilityavailableterritorieslinkagesrequest.md)
   A request body you use to replace the available territories for a subscription plan availability.
-- [object SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesResponse](subscriptionplanavailabilityavailableterritorieslinkagesresponse.md)
+- [object SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesResponse](./subscriptionplanavailabilityavailableterritorieslinkagesresponse.md)
   A response containing the resource identifiers of available territories for a subscription plan availability.
-- [type SubscriptionPlanType](subscriptionplantype.md)
+- [type SubscriptionPlanType](./subscriptionplantype.md)
   A string that indicates the billing plan type for an auto-renewable subscription.
 
 

@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks that a composition contains.
 
@@ -20,17 +21,22 @@ The tracks that a composition contains.
 var tracks: [AVMutableCompositionTrack] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVMutableCompositionTrack *> * tracks;
+```
+
 #### Discussion
 
-In a mutable composition, the tracks are instances of [`AVMutableCompositionTrack`](avmutablecompositiontrack.md), whereas in [`AVComposition`](avcomposition.md) the tracks are instances of [`AVCompositionTrack`](avcompositiontrack.md).
+In a mutable composition, the tracks are instances of [`AVMutableCompositionTrack`](../avmutablecompositiontrack.md), whereas in [`AVComposition`](../avcomposition.md) the tracks are instances of [`AVCompositionTrack`](../avcompositiontrack.md).
 
 ## See Also
 
-- [func track(withTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](avmutablecomposition/track(withtrackid:).md)
+### Accessing tracks
+- [func track(withTrackID: CMPersistentTrackID) -> AVMutableCompositionTrack?](./track%28withtrackid%29.md)
   Returns a track that contains the specified identifier.
-- [func tracks(withMediaType: AVMediaType) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVMutableCompositionTrack]](./tracks%28withmediatype%29.md)
   Returns tracks that contain media of a specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](./tracks%28withmediacharacteristic%29.md)
   Returns tracks that contain media of a specified characteristic.
 
 

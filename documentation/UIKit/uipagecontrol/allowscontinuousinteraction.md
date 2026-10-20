@@ -1,7 +1,8 @@
 # allowsContinuousInteraction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the page control allows continuous interaction.
 
@@ -18,11 +19,16 @@ A Boolean value that determines whether the page control allows continuous inter
 var allowsContinuousInteraction: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsContinuousInteraction;
+```
+
 ## See Also
 
-- [var interactionState: UIPageControl.InteractionState](uipagecontrol/interactionstate-swift.property.md)
+### Customizing the interaction state
+- [var interactionState: UIPageControl.InteractionState](./interactionstate-swift.property.md)
   The interaction state when the current page changes.
-- [UIPageControl.InteractionState](uipagecontrol/interactionstate-swift.enum.md)
+- [UIPageControl.InteractionState](./interactionstate-swift.enum.md)
   Constants that define the interaction states of the page control.
 
 

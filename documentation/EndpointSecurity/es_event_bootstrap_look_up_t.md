@@ -1,11 +1,12 @@
 # es_event_bootstrap_look_up_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,11 +14,15 @@
 struct es_event_bootstrap_look_up_t
 ```
 
+```c
+typedef struct { ... } es_event_bootstrap_look_up_t;
+```
+
 #### Overview
 
 A process called `bootstrap_look_up()` to resolve a named service port registered with launchd. launchd returns a send right to that port; subsequent `mach_msg()` calls to it are delivered to the owner of the corresponding receive right.
 
-```None
+```
    Submitted by launchd on behalf of the instigator.
 
    Because launchd is the submitter, the enclosing message's
@@ -26,22 +31,22 @@ A process called `bootstrap_look_up()` to resolve a named service port registere
    `instigator` / `instigator_token` below.
 ```
 
-```None
+```
                     `bootstrap_look_up()`. Best-effort; may be null
                     if the instigator exited before the event was
                     constructed.
 ```
 
-```None
+```
                     launchd at RPC time. Always present.
 ```
 
-```None
+```
                     between a running owner (PROCESS) and a
                     lazy-launched owner (JOB).
 ```
 
-```None
+```
                     messages sent to the returned port if the
                     lookup is allowed.
 
@@ -66,14 +71,14 @@ A process called `bootstrap_look_up()` to resolve a named service port registere
 ## Topics
 
 ### Initializers
-- [init()](es_event_bootstrap_look_up_t/init.md)
-- [init(instigator: UnsafeMutablePointer<es_process_t>?, instigator_token: audit_token_t, service_name: es_string_token_t, target_type: es_bootstrap_target_type_t, target: es_event_bootstrap_look_up_t.__Unnamed_union_target)](es_event_bootstrap_look_up_t/init(instigator:instigator_token:service_name:target_type:target:).md)
+- [init()](./es_event_bootstrap_look_up_t/init%28%29.md)
+- [init(instigator: UnsafeMutablePointer<es_process_t>?, instigator_token: audit_token_t, service_name: es_string_token_t, target_type: es_bootstrap_target_type_t, target: es_event_bootstrap_look_up_t.__Unnamed_union_target)](./es_event_bootstrap_look_up_t/init%28instigator,instigator_token,service_name,target_type,target%29.md)
 ### Instance Properties
-- [var instigator: UnsafeMutablePointer<es_process_t>?](es_event_bootstrap_look_up_t/instigator.md)
-- [var instigator_token: audit_token_t](es_event_bootstrap_look_up_t/instigator_token.md)
-- [var service_name: es_string_token_t](es_event_bootstrap_look_up_t/service_name.md)
-- [var target: es_event_bootstrap_look_up_t.__Unnamed_union_target](es_event_bootstrap_look_up_t/target.md)
-- [var target_type: es_bootstrap_target_type_t](es_event_bootstrap_look_up_t/target_type.md)
+- [var instigator: UnsafeMutablePointer<es_process_t>?](./es_event_bootstrap_look_up_t/instigator.md)
+- [var instigator_token: audit_token_t](./es_event_bootstrap_look_up_t/instigator_token.md)
+- [var service_name: es_string_token_t](./es_event_bootstrap_look_up_t/service_name.md)
+- [var target: es_event_bootstrap_look_up_t.__Unnamed_union_target](./es_event_bootstrap_look_up_t/target.md)
+- [var target_type: es_bootstrap_target_type_t](./es_event_bootstrap_look_up_t/target_type.md)
 
 
 ---

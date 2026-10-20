@@ -1,16 +1,19 @@
 # MTRDoorLockDlDataOperationType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 16.4
+- iPadOS 16.1+ - Deprecated in 16.4
+- Mac Catalyst 16.1+ - Deprecated in 16.4
+- macOS 13.0+ - Deprecated in 13.3
+- tvOS 16.1+ - Deprecated in 16.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 9.4
+
+> **Deprecated**: Please use MTRDoorLockDataOperationType
 
 ## Declaration
 
@@ -18,24 +21,28 @@
 enum MTRDoorLockDlDataOperationType
 ```
 
+```c
+enum MTRDoorLockDlDataOperationType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDoorLockDlDataOperationType.add](mtrdoorlockdldataoperationtype/add.md)
-- [MTRDoorLockDlDataOperationType.clear](mtrdoorlockdldataoperationtype/clear.md)
-- [MTRDoorLockDlDataOperationType.modify](mtrdoorlockdldataoperationtype/modify.md)
+- [MTRDoorLockDlDataOperationType.add](./mtrdoorlockdldataoperationtype/add.md)
+- [MTRDoorLockDlDataOperationType.clear](./mtrdoorlockdldataoperationtype/clear.md)
+- [MTRDoorLockDlDataOperationType.modify](./mtrdoorlockdldataoperationtype/modify.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdoorlockdldataoperationtype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdoorlockdldataoperationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

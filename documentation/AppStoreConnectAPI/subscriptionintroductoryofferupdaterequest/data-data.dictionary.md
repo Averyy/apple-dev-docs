@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOfferUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription introductory offer update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a subscription introductory offer update requ
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOfferUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes](subscriptionintroductoryofferupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription introductory offer update request resource.
 
 ## Properties
 
 - `attributes` (SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionIntroductoryOffers`
 
 
 ---

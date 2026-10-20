@@ -1,7 +1,8 @@
 # mapView(_:regionDidChangeAnimated:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the region the map view is displaying changes.
 
@@ -19,6 +20,10 @@ Tells the delegate when the region the map view is displaying changes.
 optional func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool)
 ```
 
+```objc
+- (void) mapView:(MKMapView *) mapView regionDidChangeAnimated:(BOOL) animated;
+```
+
 #### Discussion
 
 The map view calls this method at the end of a change to the map’s visible region.
@@ -26,13 +31,14 @@ The map view calls this method at the end of a change to the map’s visible reg
 ## Parameters
 
 - `mapView`: The map view with the visible region that changes.
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the map view animates the change to the new region.
+- `animated`: If [`true`](../../Swift/true.md), the map view animates the change to the new region.
 
 ## See Also
 
-- [func mapView(MKMapView, regionWillChangeAnimated: Bool)](mkmapviewdelegate/mapview(_:regionwillchangeanimated:).md)
+### Responding to map position changes
+- [func mapView(MKMapView, regionWillChangeAnimated: Bool)](./mapview%28_,regionwillchangeanimated%29.md)
   Tells the delegate when the region the map view is displaying is about to change.
-- [func mapViewDidChangeVisibleRegion(MKMapView)](mkmapviewdelegate/mapviewdidchangevisibleregion(_:).md)
+- [func mapViewDidChangeVisibleRegion(MKMapView)](./mapviewdidchangevisibleregion%28_%29.md)
   Tells the delegate when the map view’s visible region changes.
 
 

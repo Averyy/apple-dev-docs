@@ -1,7 +1,8 @@
 # AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interruption due to system pressure, such as thermal duress.
 
@@ -18,18 +19,23 @@ An interruption due to system pressure, such as thermal duress.
 case videoDeviceNotAvailableDueToSystemPressure
 ```
 
+```c
+AVCaptureSessionInterruptionReasonVideoDeviceNotAvailableDueToSystemPressure
+```
+
 ## See Also
 
-- [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableInBackground](avcapturesession/interruptionreason/videodevicenotavailableinbackground.md)
+### Constants
+- [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableInBackground](./videodevicenotavailableinbackground.md)
   An interruption caused by the app being sent to the background while using a camera.
-- [AVCaptureSession.InterruptionReason.audioDeviceInUseByAnotherClient](avcapturesession/interruptionreason/audiodeviceinusebyanotherclient.md)
+- [AVCaptureSession.InterruptionReason.audioDeviceInUseByAnotherClient](./audiodeviceinusebyanotherclient.md)
   An interruption caused by the audio hardware temporarily being made unavailable (for example, for a phone call or alarm).
-- [AVCaptureSession.InterruptionReason.videoDeviceInUseByAnotherClient](avcapturesession/interruptionreason/videodeviceinusebyanotherclient.md)
+- [AVCaptureSession.InterruptionReason.videoDeviceInUseByAnotherClient](./videodeviceinusebyanotherclient.md)
   An interruption caused by the video device temporarily being made unavailable (for example, when used by another capture session).
-- [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableWithMultipleForegroundApps](avcapturesession/interruptionreason/videodevicenotavailablewithmultipleforegroundapps.md)
+- [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableWithMultipleForegroundApps](./videodevicenotavailablewithmultipleforegroundapps.md)
   An interruption caused when your app is running in Slide Over, Split View, or Picture in Picture mode on iPad.
-- [AVCaptureSession.InterruptionReason.sensitiveContentMitigationActivated](avcapturesession/interruptionreason/sensitivecontentmitigationactivated.md)
-  An interruption caused by a `SCVideoStreamAnalyzer` when it detects sensitive content on an associated [`AVCaptureDeviceInput`](avcapturedeviceinput.md).  To resume your capture session, call your analyzer’s `SCVideoStreamAnalyzer/continueStream` method.
+- [AVCaptureSession.InterruptionReason.sensitiveContentMitigationActivated](./sensitivecontentmitigationactivated.md)
+  An interruption caused by a `SCVideoStreamAnalyzer` when it detects sensitive content on an associated [`AVCaptureDeviceInput`](../../avcapturedeviceinput.md).  To resume your capture session, call your analyzer’s `SCVideoStreamAnalyzer/continueStream` method.
 
 
 ---

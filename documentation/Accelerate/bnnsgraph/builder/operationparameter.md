@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.OperationParameter
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that allows functions to accept either tensors or collections.
 
@@ -23,34 +24,34 @@ protocol OperationParameter<Element>
 ## Topics
 
 ### Operators
-- [static func * (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/*(_:_:)-386tk.md)
+- [static func * (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/star%28_,_%29-386tk.md)
   Adds an element-wise multiplication operation to the current graph.
-- [static func * (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/*(_:_:)-3h4np.md)
+- [static func * (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/star%28_,_%29-3h4np.md)
   Adds an element-wise multiplication operation to the current graph.
-- [static func + (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/+(_:_:)-2u9f3.md)
+- [static func + (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/plus%28_,_%29-2u9f3.md)
   Adds an element-wise addition operation to the current graph.
-- [static func + (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/+(_:_:)-8d4pt.md)
+- [static func + (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/plus%28_,_%29-8d4pt.md)
   Adds an element-wise addition operation to the current graph.
-- [static func - (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/-(_:_:)-8vtfy.md)
+- [static func - (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/minus%28_,_%29-8vtfy.md)
   Adds an element-wise subtraction operation to the current graph.
-- [static func - (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/-(_:_:)-9ywu4.md)
+- [static func - (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/minus%28_,_%29-9ywu4.md)
   Adds an element-wise subtraction operation to the current graph.
-- [static func / (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/_(_:_:)-1ojod.md)
+- [static func / (Self, BNNSGraph.Builder.Tensor<Self.Element>) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/op%28_,_%29-1ojod.md)
   Adds an element-wise division operation to the current graph.
-- [static func / (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/_(_:_:)-78g8y.md)
+- [static func / (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/op%28_,_%29-78g8y.md)
   Adds an element-wise division operation to the current graph.
-- [static func % (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/_(_:_:)-8fwxf.md)
+- [static func % (BNNSGraph.Builder.Tensor<Self.Element>, Self) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/op%28_,_%29-8fwxf.md)
   Adds an element-wise remainder of division operation to the current graph.
 ### Associated Types
-- [associatedtype Element : BNNSScalar](bnnsgraph/builder/operationparameter/element.md)
+- [associatedtype Element : BNNSScalar](./operationparameter/element.md)
 ### Instance Methods
-- [func graphBuilderTensor(BNNSGraph.Builder) -> BNNSGraph.Builder.Tensor<Self.Element>](bnnsgraph/builder/operationparameter/graphbuildertensor(_:).md)
+- [func graphBuilderTensor(BNNSGraph.Builder) -> BNNSGraph.Builder.Tensor<Self.Element>](./operationparameter/graphbuildertensor%28_%29.md)
   Returns a tensor for the specified BNNS Graph builder.
 
 ## Relationships
 
 ### Conforming Types
-- [BNNSGraph.Builder.Tensor](bnnsgraph/builder/tensor.md)
+- [BNNSGraph.Builder.Tensor](./tensor.md)
 
 
 ---

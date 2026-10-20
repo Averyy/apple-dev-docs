@@ -1,7 +1,8 @@
 # kMDItemRecordingDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The recording date of the song or composition.
 
@@ -14,9 +15,13 @@ The recording date of the song or composition.
 let kMDItemRecordingDate: CFString!
 ```
 
+```c
+const CFStringRef kMDItemRecordingDate;
+```
+
 #### Discussion
 
-This value contains the original recording date of the song or composition and is supplementary to [`kMDItemContentCreationDate`](kmditemcontentcreationdate.md), which indicates the date of an edited or optimized version.
+This value contains the original recording date of the song or composition and is supplementary to [`kMDItemContentCreationDate`](./kmditemcontentcreationdate.md), which indicates the date of an edited or optimized version.
 
 
 ---

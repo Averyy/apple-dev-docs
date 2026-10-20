@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new key using the specified string.
 
@@ -26,7 +27,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](progressuserinfokey/init(rawvalue:).md)
+### Creating Keys
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new key using the raw value of a string you specify.
 
 

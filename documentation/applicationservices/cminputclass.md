@@ -1,7 +1,8 @@
 # cmInputClass
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An input device profile defined for a scanner.
 

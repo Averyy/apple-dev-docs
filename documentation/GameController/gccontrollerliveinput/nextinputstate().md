@@ -1,7 +1,8 @@
 # nextInputState()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next device input state from the queue.
 
@@ -19,13 +20,18 @@ Returns the next device input state from the queue.
 func nextInputState() -> (any GCControllerInputState & GCDevicePhysicalInputStateDiff)?
 ```
 
+```objc
+- (GCControllerInputState<GCDevicePhysicalInputStateDiff> *) nextInputState;
+```
+
 #### Return Value
 
 The next input state in the queue or `nil` if the queue is empty.
 
 ## See Also
 
-- [func capture() -> GCControllerInputState](gccontrollerliveinput/capture.md)
+### Handling device input
+- [func capture() -> GCControllerInputState](./capture%28%29.md)
   Returns a snapshot of the physical device inputs.
 
 

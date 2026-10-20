@@ -1,7 +1,8 @@
 # Dictionary.Indices
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the indices that are valid for subscripting the collection, in ascending order.
 
@@ -20,15 +21,18 @@ A type that represents the indices that are valid for subscripting the collectio
 typealias Indices = DefaultIndices<Dictionary<Key, Value>>
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 ## See Also
 
-- [Dictionary.Keys](dictionary/keys-swift.struct.md)
+### Supporting Types
+- [Dictionary.Keys](./keys-swift.struct.md)
   A view of a dictionary’s keys.
-- [Dictionary.Values](dictionary/values-swift.struct.md)
+- [Dictionary.Values](./values-swift.struct.md)
   A view of a dictionary’s values.
-- [Dictionary.Index](dictionary/index.md)
+- [Dictionary.Index](./index.md)
   The position of a key-value pair in a dictionary.
-- [Dictionary.Iterator](dictionary/iterator.md)
+- [Dictionary.Iterator](./iterator.md)
   An iterator over the members of a `Dictionary<Key, Value>`.
 
 

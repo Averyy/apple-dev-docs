@@ -1,7 +1,8 @@
 # CGPDFStreamCopyData(_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the data associated with a PDF stream.
 
@@ -10,7 +11,7 @@ Returns the data associated with a PDF stream.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,6 +21,10 @@ Returns the data associated with a PDF stream.
 func CGPDFStreamCopyData(_ stream: CGPDFStreamRef, _ format: UnsafeMutablePointer<CGPDFDataFormat>) -> CFData?
 ```
 
+```c
+extern CFDataRefCGPDFStreamCopyData(CGPDFStreamRef stream, CGPDFDataFormat *format);
+```
+
 #### Return Value
 
 A CFData object that contains a copy of the stream data. You are responsible for releasing this object.
@@ -27,11 +32,12 @@ A CFData object that contains a copy of the stream data. You are responsible for
 ## Parameters
 
 - `stream`: A PDF stream.
-- `format`: On return, contains a constant that specifies the format of the data returned—[`CGPDFDataFormat.raw`](cgpdfdataformat/raw.md), [`CGPDFDataFormat.jpegEncoded`](cgpdfdataformat/jpegencoded.md), or [`CGPDFDataFormat.JPEG2000`](cgpdfdataformat/jpeg2000.md).
+- `format`: On return, contains a constant that specifies the format of the data returned—[`CGPDFDataFormat.raw`](./cgpdfdataformat/raw.md), [`CGPDFDataFormat.jpegEncoded`](./cgpdfdataformat/jpegencoded.md), or [`CGPDFDataFormat.JPEG2000`](./cgpdfdataformat/jpeg2000.md).
 
 ## See Also
 
-- [func CGPDFStreamGetDictionary(CGPDFStreamRef) -> CGPDFDictionaryRef?](cgpdfstreamgetdictionary(_:).md)
+### Getting Data from a PDF Stream
+- [func CGPDFStreamGetDictionary(CGPDFStreamRef) -> CGPDFDictionaryRef?](./cgpdfstreamgetdictionary%28_%29.md)
   Returns the dictionary associated with a PDF stream.
 
 

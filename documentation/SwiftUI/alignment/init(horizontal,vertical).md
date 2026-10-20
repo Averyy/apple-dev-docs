@@ -1,7 +1,8 @@
 # init(horizontal:vertical:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom alignment value with the specified horizontal and vertical alignment guides.
 
@@ -22,9 +23,9 @@ init(horizontal: HorizontalAlignment, vertical: VerticalAlignment)
 
 #### Discussion
 
-SwiftUI provides a variety of built-in alignments that combine built-in [`HorizontalAlignment`](horizontalalignment.md) and [`VerticalAlignment`](verticalalignment.md) guides. Use this initializer to create a custom alignment that makes use of a custom horizontal or vertical guide, or both.
+SwiftUI provides a variety of built-in alignments that combine built-in [`HorizontalAlignment`](../horizontalalignment.md) and [`VerticalAlignment`](../verticalalignment.md) guides. Use this initializer to create a custom alignment that makes use of a custom horizontal or vertical guide, or both.
 
-For example, you can combine a custom vertical guide called `firstThird` with the built-in [`center`](horizontalalignment/center.md) guide, and use it to configure a [`ZStack`](zstack.md):
+For example, you can combine a custom vertical guide called `firstThird` with the built-in [`center`](../horizontalalignment/center.md) guide, and use it to configure a [`ZStack`](../zstack.md):
 
 ```swift
 ZStack(alignment: Alignment(horizontal: .center, vertical: .firstThird)) {
@@ -32,7 +33,7 @@ ZStack(alignment: Alignment(horizontal: .center, vertical: .firstThird)) {
 }
 ```
 
-For more information about creating custom guides, including the code that creates the custom `firstThird` alignment in the example above, see [`AlignmentID`](alignmentid.md).
+For more information about creating custom guides, including the code that creates the custom `firstThird` alignment in the example above, see [`AlignmentID`](../alignmentid.md).
 
 ## Parameters
 
@@ -41,9 +42,10 @@ For more information about creating custom guides, including the code that creat
 
 ## See Also
 
-- [var horizontal: HorizontalAlignment](alignment/horizontal.md)
+### Creating a custom alignment
+- [var horizontal: HorizontalAlignment](./horizontal.md)
   The alignment on the horizontal axis.
-- [var vertical: VerticalAlignment](alignment/vertical.md)
+- [var vertical: VerticalAlignment](./vertical.md)
   The alignment on the vertical axis.
 
 

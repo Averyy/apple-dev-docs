@@ -1,14 +1,15 @@
 # u_quad_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef u_int64_t u_quad_t;
 ```
 

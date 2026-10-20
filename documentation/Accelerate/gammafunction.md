@@ -1,18 +1,19 @@
 # GammaFunction
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for a gamma function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,27 +21,32 @@ A type for a gamma function.
 typealias GammaFunction = UnsafeMutableRawPointer
 ```
 
+```c
+typedef void * GammaFunction;
+```
+
 #### Discussion
 
-You use this data type when you create a gamma function. See [`vImageCreateGammaFunction(_:_:_:)`](vimagecreategammafunction(_:_:_:).md).
+You use this data type when you create a gamma function. See [`vImageCreateGammaFunction(_:_:_:)`](./vimagecreategammafunction%28_,_,_%29.md).
 
 ## See Also
 
-- [struct vImage_Buffer](vimage_buffer.md)
+### Data Types
+- [struct vImage_Buffer](./vimage_buffer.md)
   An image buffer that stores an image’s pixel data, dimensions, and row stride.
-- [typealias vImagePixelCount](vimagepixelcount.md)
+- [typealias vImagePixelCount](./vimagepixelcount.md)
   A type for the number of pixels.
-- [struct vImage_AffineTransform](vimage_affinetransform.md)
+- [struct vImage_AffineTransform](./vimage_affinetransform.md)
   A structure for values that represent an affine transformation.
-- [struct vImage_AffineTransform_Double](vimage_affinetransform_double.md)
+- [struct vImage_AffineTransform_Double](./vimage_affinetransform_double.md)
   A structure for values that represent a double-precision affine transformation.
-- [typealias vImage_CGAffineTransform](vimage_cgaffinetransform.md)
+- [typealias vImage_CGAffineTransform](./vimage_cgaffinetransform.md)
   A structure for values that represent a Core Graphics–compatible affine transformation.
-- [typealias vImage_Error](vimage_error.md)
+- [typealias vImage_Error](./vimage_error.md)
   A type for image errors.
-- [typealias vImage_Flags](vimage_flags.md)
+- [typealias vImage_Flags](./vimage_flags.md)
   A type for processing options.
-- [typealias ResamplingFilter](resamplingfilter.md)
+- [typealias ResamplingFilter](./resamplingfilter.md)
   A pointer to a resampling filter callback function.
 
 

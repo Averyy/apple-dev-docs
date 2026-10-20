@@ -1,7 +1,8 @@
 # AppStoreReviewDetail.Relationships.AppStoreVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewDetail.Relationships.AppStoreVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreReviewDetail.Relationships.AppStoreVersion.Data](appstorereviewdetail/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
+- [object AppStoreReviewDetail.Relationships.AppStoreVersion.Data](./appstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppStoreReviewDetail.Relationships.AppStoreVersion
 
 ## See Also
 
-- [object AppStoreReviewDetail.Relationships.AppStoreReviewAttachments](appstorereviewdetail/relationships-data.dictionary/appstorereviewattachments-data.dictionary.md)
+### Objects
+- [object AppStoreReviewDetail.Relationships.AppStoreReviewAttachments](./appstorereviewattachments-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

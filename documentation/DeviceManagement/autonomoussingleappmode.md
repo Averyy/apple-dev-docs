@@ -1,7 +1,8 @@
 # AutonomousSingleAppMode
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Autonomous Single App mode.
 
@@ -10,7 +11,7 @@ The payload that configures Autonomous Single App mode.
 
 ## Declaration
 
-```swift
+```
 object AutonomousSingleAppMode
 ```
 
@@ -22,7 +23,7 @@ The system only allows installation of one profile of this type, and it requires
 
 > ❗ **Important**:  If two dictionaries contain the same `BundleIdentifier` value but a different `TeamIdentifier` value, an error occurs and the system doesn’t install the profile.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ The system only allows installation of one profile of this type, and it requires
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +81,7 @@ The system only allows installation of one profile of this type, and it requires
 ## Topics
 
 ### Objects
-- [object AutonomousSingleAppMode.AllowedApplicationsItem](autonomoussingleappmode/allowedapplicationsitem.md)
+- [object AutonomousSingleAppMode.AllowedApplicationsItem](./autonomoussingleappmode/allowedapplicationsitem.md)
   A dictionary that specifies an app that can be granted access to the Accessibilty APIs.
 
 ## Properties
@@ -89,11 +90,12 @@ The system only allows installation of one profile of this type, and it requires
 
 ## See Also
 
-- [object AppLock](applock.md)
+### App management
+- [object AppLock](./applock.md)
   The payload that configures a device to run a single app.
-- [object AssociatedDomains](associateddomains.md)
+- [object AssociatedDomains](./associateddomains.md)
   The payload that configures associated domains.
-- [object NSExtensionManagement](nsextensionmanagement.md)
+- [object NSExtensionManagement](./nsextensionmanagement.md)
   The payload that configures the extensions that the system allows or disallows to run on the device.
 
 

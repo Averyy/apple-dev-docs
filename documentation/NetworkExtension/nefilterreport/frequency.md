@@ -1,7 +1,8 @@
 # NEFilterReport.Frequency
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the frequency of filter report delivery.
 
@@ -14,33 +15,38 @@ An enumeration that represents the frequency of filter report delivery.
 enum Frequency
 ```
 
+```c
+enum NEFilterReportFrequency : NSInteger;
+```
+
 ## Topics
 
 ### Report frequencies
-- [NEFilterReport.Frequency.none](nefilterreport/frequency/none.md)
+- [NEFilterReport.Frequency.none](./frequency/none.md)
   A frequency value that indicates no report delivery.
-- [NEFilterReport.Frequency.low](nefilterreport/frequency/low.md)
+- [NEFilterReport.Frequency.low](./frequency/low.md)
   A low frequency of reports, about once every five seconds.
-- [NEFilterReport.Frequency.medium](nefilterreport/frequency/medium.md)
+- [NEFilterReport.Frequency.medium](./frequency/medium.md)
   A low frequency of reports, about once every second.
-- [NEFilterReport.Frequency.high](nefilterreport/frequency/high.md)
+- [NEFilterReport.Frequency.high](./frequency/high.md)
   A low frequency of reports, about once every half-second.
 ### Initializers
-- [init?(rawValue: Int)](nefilterreport/frequency/init(rawvalue:).md)
+- [init?(rawValue: Int)](./frequency/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var statisticsReportFrequency: NEFilterReport.Frequency](nefilternewflowverdict/statisticsreportfrequency.md)
+### Inspecting new flow verdict properties
+- [var statisticsReportFrequency: NEFilterReport.Frequency](../nefilternewflowverdict/statisticsreportfrequency.md)
   The frequency at which the data provider receives reports.
 
 

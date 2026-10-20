@@ -1,34 +1,35 @@
 # UserSetTargetProperties
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets properties on the target.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserSetTargetProperties(SCSIDeviceIdentifier targetID, OSDictionary *properties);
 ```
 
 #### Return Value
 
-A value that indicates the result of setting the target’s properties. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of setting the target’s properties. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
 Your driver extension calls this method to set the specified target’s properties. The `properties` directory can contain the following keys:
 
-- [`kIOPropertySASAddressKey`](https://developer.apple.com/documentation/kernel/kiopropertysasaddresskey)
-- [`kIOPropertyFibreChannelNodeWorldWideNameKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelnodeworldwidenamekey)
-- [`kIOPropertyFibreChannelPortWorldWideNameKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelportworldwidenamekey)
-- [`kIOPropertyFibreChannelAddressIdentifierKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechanneladdressidentifierkey)
-- [`kIOPropertyFibreChannelALPAKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelalpakey).
+- [`kIOPropertySASAddressKey`](../../kernel/kiopropertysasaddresskey.md)
+- [`kIOPropertyFibreChannelNodeWorldWideNameKey`](../../kernel/kiopropertyfibrechannelnodeworldwidenamekey.md)
+- [`kIOPropertyFibreChannelPortWorldWideNameKey`](../../kernel/kiopropertyfibrechannelportworldwidenamekey.md)
+- [`kIOPropertyFibreChannelAddressIdentifierKey`](../../kernel/kiopropertyfibrechanneladdressidentifierkey.md)
+- [`kIOPropertyFibreChannelALPAKey`](../../kernel/kiopropertyfibrechannelalpakey.md).
 
-The value of each property should be a pointer to a valid [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) object that represents the value for the property. The value must be of the proper type and size for the specified key.
+The value of each property should be a pointer to a valid [`OSString`](../../DriverKit/osstring.md) object that represents the value for the property. The value must be of the proper type and size for the specified key.
 
 ## Parameters
 
@@ -37,15 +38,16 @@ The value of each property should be a pointer to a valid [`OSString`](https://d
 
 ## See Also
 
-- [UserInitializeTargetForID](iouserscsiparallelinterfacecontroller/userinitializetargetforid.md)
+### Managing targets
+- [UserInitializeTargetForID](./userinitializetargetforid.md)
   Initializes a target device in response to a call from the framework.
-- [UserCreateTargetForID](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md)
+- [UserCreateTargetForID](./usercreatetargetforid.md)
   Creates the specified target.
-- [UserDestroyTargetForID](iouserscsiparallelinterfacecontroller/userdestroytargetforid.md)
+- [UserDestroyTargetForID](./userdestroytargetforid.md)
   Destroys the specified target.
-- [UserTargetPresentForID](iouserscsiparallelinterfacecontroller/usertargetpresentforid.md)
+- [UserTargetPresentForID](./usertargetpresentforid.md)
   Checks if a specific target is present.
-- [UserRemoveTargetProperties](iouserscsiparallelinterfacecontroller/userremovetargetproperties.md)
+- [UserRemoveTargetProperties](./userremovetargetproperties.md)
   Removes properties from a target.
 
 

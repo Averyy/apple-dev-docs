@@ -1,7 +1,8 @@
 # BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps.Links
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Navigation links for the app dimension in the beta tester usage metric response.
 
@@ -10,7 +11,7 @@ Navigation links for the app dimension in the beta tester usage metric response.
 
 ## Declaration
 
-```swift
+```
 object BetaTesterUsagesV1MetricResponse.Data.Dimensions.Apps.Links
 ```
 

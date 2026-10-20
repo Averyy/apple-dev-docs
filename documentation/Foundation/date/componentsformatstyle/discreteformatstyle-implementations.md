@@ -1,17 +1,18 @@
 # DiscreteFormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func discreteInput(after: Range<Date>) -> Range<Date>?](date/componentsformatstyle/discreteinput(after:).md)
+- [func discreteInput(after: Range<Date>) -> Range<Date>?](./discreteinput%28after%29.md)
   The next discretization boundary after the given input.
-- [func discreteInput(before: Range<Date>) -> Range<Date>?](date/componentsformatstyle/discreteinput(before:).md)
+- [func discreteInput(before: Range<Date>) -> Range<Date>?](./discreteinput%28before%29.md)
   The next discretization boundary before the given input.
-- [func input(after: Range<Date>) -> Range<Date>?](date/componentsformatstyle/input(after:).md)
+- [func input(after: Range<Date>) -> Range<Date>?](./input%28after%29.md)
   The next input value after the given input.
-- [func input(before: Range<Date>) -> Range<Date>?](date/componentsformatstyle/input(before:).md)
+- [func input(before: Range<Date>) -> Range<Date>?](./input%28before%29.md)
   The next input value before the given input.
 
 

@@ -1,7 +1,8 @@
 # HTMLOptGroupElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLOptGroupElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [disabled](htmloptgroupelement/1631437-disabled.md)
-- [label](htmloptgroupelement/1629242-label.md)
+- [disabled](./htmloptgroupelement/api-1631437-disabled.md)
+- [label](./htmloptgroupelement/api-1629242-label.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Pass.Coupon
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the groups of fields that display the information for a coupon.
 
@@ -12,13 +13,13 @@ An object that represents the groups of fields that display the information for 
 
 ## Declaration
 
-```swift
+```
 object Pass.Coupon
 ```
 
 ## Mentions
 
-- [Creating a coupon pass](creating-a-coupon-pass.md)
+- [Creating a coupon pass](../creating-a-coupon-pass.md)
 
 #### Discussion
 
@@ -27,11 +28,12 @@ Use the coupon pass type for coupons, discounts, and other special offers.
 ## Relationships
 
 ### Inherits From
-- [PassFields](passfields.md)
+- [PassFields](../passfields.md)
 
 ## See Also
 
-- [Creating a coupon pass](creating-a-coupon-pass.md)
+### Coupon passes
+- [Creating a coupon pass](../creating-a-coupon-pass.md)
   Construct a digital pass for discounts and special offers.
 
 

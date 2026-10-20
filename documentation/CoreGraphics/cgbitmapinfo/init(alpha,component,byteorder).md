@@ -1,7 +1,8 @@
 # init(alpha:component:byteOrder:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 7.0+

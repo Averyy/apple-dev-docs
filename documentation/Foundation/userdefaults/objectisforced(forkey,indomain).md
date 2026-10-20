@@ -1,7 +1,8 @@
 # objectIsForced(forKey:inDomain:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether an administrator provided the value for the key in the specified domain.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether an administrator provided the val
 func objectIsForced(forKey key: String, inDomain domain: String) -> Bool
 ```
 
+```objc
+- (BOOL) objectIsForcedForKey:(NSString *) key inDomain:(NSString *) domain;
+```
+
 #### Return Value
 
 `true` if an administrator provides a value for the key, otherwise `false`.
@@ -35,7 +40,8 @@ Apps can’t change the value of managed keys, so use this method to determine i
 
 ## See Also
 
-- [func objectIsForced(forKey: String) -> Bool](userdefaults/objectisforced(forkey:).md)
+### Checking for managed keys
+- [func objectIsForced(forKey: String) -> Bool](./objectisforced%28forkey%29.md)
   Returns a Boolean value that indicates whether an administrator provided the value for the specified key.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The color of the rendered mesh.
@@ -11,7 +12,7 @@ The color of the rendered mesh.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The color of the rendered mesh.
 var color: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color;
+```
+
 ## See Also
 
-- [var mesh: [Any]](cimeshgenerator/mesh.md)
+### Instance Properties
+- [var mesh: [Any]](./mesh.md)
   An array that describes the mesh to render.
-- [var width: Float](cimeshgenerator/width.md)
+- [var width: Float](./width.md)
   The width of the effect.
 
 

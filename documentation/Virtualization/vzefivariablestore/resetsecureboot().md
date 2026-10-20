@@ -1,7 +1,8 @@
 # resetSecureBoot()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears any previously applied Secure Boot configuration and disables Secure Boot.
 
@@ -12,6 +13,10 @@ Clears any previously applied Secure Boot configuration and disables Secure Boot
 
 ```swift
 func resetSecureBoot() throws
+```
+
+```objc
+- (BOOL) resetSecureBootWithError:(NSError **) error;
 ```
 
 #### Discussion

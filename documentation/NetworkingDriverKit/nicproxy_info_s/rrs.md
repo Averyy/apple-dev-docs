@@ -1,14 +1,15 @@
 # rrs
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 nicproxy_rr_info_t rrs;
 ```
 

@@ -1,16 +1,17 @@
 # MLCDeviceType.any
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A device type that represents either the CPU or GPU.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,13 +19,18 @@ A device type that represents either the CPU or GPU.
 case any
 ```
 
+```c
+MLCDeviceTypeAny
+```
+
 ## See Also
 
-- [MLCDeviceType.cpu](mlcdevicetype/cpu.md)
+### Device Types
+- [MLCDeviceType.cpu](./cpu.md)
   A device type that represents the CPU.
-- [MLCDeviceType.gpu](mlcdevicetype/gpu.md)
+- [MLCDeviceType.gpu](./gpu.md)
   A device type that represents the GPU.
-- [MLCDeviceType.ane](mlcdevicetype/ane.md)
+- [MLCDeviceType.ane](./ane.md)
   A device type that represents the Apple Neural Engine.
 
 

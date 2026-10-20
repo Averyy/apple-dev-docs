@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source’s bundle identifier.
 
@@ -19,13 +20,18 @@ The source’s bundle identifier.
 var bundleIdentifier: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * bundleIdentifier;
+```
+
 #### Discussion
 
 For apps, this property holds the app’s bundle identifier. For supported Bluetooth LE devices, this property holds a UUID for the device.
 
 ## See Also
 
-- [var name: String](hksource/name.md)
+### Getting Property Data
+- [var name: String](./name.md)
   The source’s name.
 
 

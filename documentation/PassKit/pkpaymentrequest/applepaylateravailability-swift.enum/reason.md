@@ -1,7 +1,8 @@
 # PKPaymentRequest.ApplePayLaterAvailability.Reason
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values you use to enable or disable Apple Pay Later for a specific transaction.
 
@@ -10,8 +11,8 @@ Values you use to enable or disable Apple Pay Later for a specific transaction.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
-- watchOS ?+
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,16 +23,16 @@ enum Reason
 ## Topics
 
 ### Reasons
-- [PKPaymentRequest.ApplePayLaterAvailability.Reason.itemIneligible](pkpaymentrequest/applepaylateravailability-swift.enum/reason/itemineligible.md)
+- [PKPaymentRequest.ApplePayLaterAvailability.Reason.itemIneligible](./reason/itemineligible.md)
   Apple Pay Later is unavailable because one or more ineligible or prohibited items are in the shopping cart, such as gift cards.
-- [PKPaymentRequest.ApplePayLaterAvailability.Reason.recurringTransaction](pkpaymentrequest/applepaylateravailability-swift.enum/reason/recurringtransaction.md)
+- [PKPaymentRequest.ApplePayLaterAvailability.Reason.recurringTransaction](./reason/recurringtransaction.md)
   Apple Pay Later is unavailable because there’s a recurring payment or subscription in the shopping cart.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

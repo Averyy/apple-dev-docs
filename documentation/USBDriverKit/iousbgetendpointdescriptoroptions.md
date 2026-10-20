@@ -1,7 +1,8 @@
 # IOUSBGetEndpointDescriptorOptions
 
 **Framework**: USBDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for fetching the endpoint descriptors of a pipe.
 
@@ -10,23 +11,24 @@ Options for fetching the endpoint descriptors of a pipe.
 
 ## Declaration
 
-```swift
+```c
 enum IOUSBGetEndpointDescriptorOptions : unsigned int;
 ```
 
 ## Topics
 
 ### Getting the Descriptor Options
-- [kIOUSBGetEndpointDescriptorOriginal](iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptororiginal.md)
+- [kIOUSBGetEndpointDescriptorOriginal](./iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptororiginal.md)
   The original descriptor used to create the pipe.
-- [kIOUSBGetEndpointDescriptorCurrentPolicy](iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptorcurrentpolicy.md)
+- [kIOUSBGetEndpointDescriptorCurrentPolicy](./iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptorcurrentpolicy.md)
   The descriptor controlling the current endpoint policy.
 
 ## See Also
 
-- [GetDescriptors](iousbhostpipe/getdescriptors.md)
+### Getting the Endpoint Descriptors
+- [GetDescriptors](./iousbhostpipe/getdescriptors.md)
   Retrieves the endpoint descriptors associated with this pipe.
-- [IOUSBStandardEndpointDescriptors](iousbstandardendpointdescriptors.md)
+- [IOUSBStandardEndpointDescriptors](./iousbstandardendpointdescriptors.md)
   Encapsulates the descriptors for a single endpoint.
 
 

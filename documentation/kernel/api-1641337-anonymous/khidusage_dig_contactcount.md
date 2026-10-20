@@ -1,14 +1,15 @@
 # kHIDUsage_Dig_ContactCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Dig_ContactCount = 0x54
 ```
 

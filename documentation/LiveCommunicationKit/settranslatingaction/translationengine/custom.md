@@ -1,7 +1,8 @@
 # SetTranslatingAction.TranslationEngine.custom
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The translation was provided by a custom translation engine.
 
@@ -17,7 +18,8 @@ case custom
 
 ## See Also
 
-- [SetTranslatingAction.TranslationEngine.default](settranslatingaction/translationengine/default.md)
+### Types
+- [SetTranslatingAction.TranslationEngine.default](./default.md)
   The translation was provided by the system’s default translation engine.
 
 

@@ -1,7 +1,8 @@
 # AMError.Code.workflowNoEnabledActionsError
 
 **Framework**: Automator  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates there are no enabled actions in the workflow.
 
@@ -15,17 +16,22 @@ An error that indicates there are no enabled actions in the workflow.
 case workflowNoEnabledActionsError
 ```
 
+```c
+AMWorkflowNoEnabledActionsError
+```
+
 ## See Also
 
-- [AMError.Code.workflowActionsNotLoadedError](amerror/code/workflowactionsnotloadederror.md)
+### Workflow Errors
+- [AMError.Code.workflowActionsNotLoadedError](./workflowactionsnotloadederror.md)
   An error that indicates one of the actions of the workflow couldn’t be loaded.
-- [AMError.Code.workflowNewerActionVersionError](amerror/code/workflowneweractionversionerror.md)
+- [AMError.Code.workflowNewerActionVersionError](./workflowneweractionversionerror.md)
   An error that indicates an action in a workflow is newer than the installed action.
-- [AMError.Code.workflowNewerVersionError](amerror/code/workflownewerversionerror.md)
+- [AMError.Code.workflowNewerVersionError](./workflownewerversionerror.md)
   An error that indicates an attempt to open a workflow document that was saved with a newer version of Automator.
-- [AMError.Code.workflowOlderActionVersionError](amerror/code/workflowolderactionversionerror.md)
+- [AMError.Code.workflowOlderActionVersionError](./workflowolderactionversionerror.md)
   An error that indicates an action in a workflow is older than the installed action.
-- [AMError.Code.workflowPropertyListInvalidError](amerror/code/workflowpropertylistinvaliderror.md)
+- [AMError.Code.workflowPropertyListInvalidError](./workflowpropertylistinvaliderror.md)
   An error that indicates an attempt to open a workflow document whose property list couldn’t be read.
 
 

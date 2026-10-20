@@ -1,7 +1,8 @@
 # children
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing receiver’s child nodes.
 
@@ -14,19 +15,24 @@ An array containing receiver’s child nodes.
 var children: [NSTreeNode]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSTreeNode *> * childNodes;
+```
+
 ## See Also
 
-- [var representedObject: Any?](nstreenode/representedobject.md)
+### Getting information about a node
+- [var representedObject: Any?](./representedobject.md)
   The object the tree node represents.
-- [var indexPath: IndexPath](nstreenode/indexpath.md)
+- [var indexPath: IndexPath](./indexpath.md)
   The position of the receiver relative to its root parent.
-- [var isLeaf: Bool](nstreenode/isleaf.md)
+- [var isLeaf: Bool](./isleaf.md)
   A Boolean that indicates whether the receiver is a leaf node.
-- [var mutableChildren: NSMutableArray](nstreenode/mutablechildren.md)
+- [var mutableChildren: NSMutableArray](./mutablechildren.md)
   A mutable array that provides read-write access to the receiver’s child nodes.
-- [func descendant(at: IndexPath) -> NSTreeNode?](nstreenode/descendant(at:).md)
+- [func descendant(at: IndexPath) -> NSTreeNode?](./descendant%28at%29.md)
   Returns the receiver’s descendant at the specified index path.
-- [var parent: NSTreeNode?](nstreenode/parent.md)
+- [var parent: NSTreeNode?](./parent.md)
   The receiver’s parent node.
 
 

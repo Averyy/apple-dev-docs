@@ -1,7 +1,8 @@
 # asinh(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the inverse hyperbolic sine operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the inverse hyperbolic sine operation to the input tensor elements.
 
 ```swift
 func asinh(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) asinhWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

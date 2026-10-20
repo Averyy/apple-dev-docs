@@ -1,7 +1,8 @@
 # AVCaptureDevice.CinematicVideoFocusMode.none
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that no focus mode is specified, in which case weak focus is used as default.
 
@@ -18,11 +19,16 @@ Indicates that no focus mode is specified, in which case weak focus is used as d
 case none
 ```
 
+```c
+AVCaptureCinematicVideoFocusModeNone
+```
+
 ## See Also
 
-- [AVCaptureDevice.CinematicVideoFocusMode.strong](avcapturedevice/cinematicvideofocusmode/strong.md)
+### Focus modes
+- [AVCaptureDevice.CinematicVideoFocusMode.strong](./strong.md)
   Indicates that the subject should remain in focus until it exits the scene.
-- [AVCaptureDevice.CinematicVideoFocusMode.weak](avcapturedevice/cinematicvideofocusmode/weak.md)
+- [AVCaptureDevice.CinematicVideoFocusMode.weak](./weak.md)
   Indicates that the Cinematic Video algorithm should automatically adjust focus according to the prominence of the subjects in the scene.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A sequence containing the same elements as this one, possibly with a simpler type.
@@ -26,6 +27,12 @@ var elements: Self.Elements { get }
 When implementing lazy operations, wrapping `elements` instead of `self` can prevent result types from growing an extra `LazySequence` layer.
 
 Note: this property need not be implemented by conforming types, it has a default implementation in a protocol extension that just returns `self`.
+
+## Default Implementations
+
+### LazySequenceProtocol Implementations
+- [var elements: Self](./elements-3xrx.md)
+  Identical to `self`.
 
 
 ---

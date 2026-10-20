@@ -1,7 +1,8 @@
 # InferenceFunction.AsyncMutableViews
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of mutable references to async states, used as the states argument to an inference function.
 
@@ -21,17 +22,18 @@ struct AsyncMutableViews
 ## Topics
 
 ### Creating a collection
-- [init()](inferencefunction/asyncmutableviews/init.md)
+- [init()](./asyncmutableviews/init%28%29.md)
   Initialize an empty `AsyncMutableViews`.
 ### Adding values
-- [func insert(inout InferenceFunction.AsyncMutableValue, for: String)](inferencefunction/asyncmutableviews/insert(_:for:).md)
+- [func insert(inout InferenceFunction.AsyncMutableValue, for: String)](./asyncmutableviews/insert%28_,for%29.md)
   Insert the view to be used as the async mutable value for `name`.
 
 ## See Also
 
-- [InferenceFunction.AsyncValue](inferencefunction/asyncvalue.md)
+### Asynchronous inference
+- [InferenceFunction.AsyncValue](./asyncvalue.md)
   A future which will provide an inference value once any pending write is complete.
-- [InferenceFunction.AsyncMutableValue](inferencefunction/asyncmutablevalue.md)
+- [InferenceFunction.AsyncMutableValue](./asyncmutablevalue.md)
   An async value which can be provided as a mutable argument to an inference function.
 
 

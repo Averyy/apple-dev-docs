@@ -1,22 +1,24 @@
 # bDescriptorType
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDescriptorType;
 ```
 
 ## See Also
 
-- [bLength](uaspipedescriptor/blength.md)
-- [bPipeID](uaspipedescriptor/bpipeid.md)
-- [bReserved](uaspipedescriptor/breserved.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bPipeID](./bpipeid.md)
+- [bReserved](./breserved.md)
 
 
 ---

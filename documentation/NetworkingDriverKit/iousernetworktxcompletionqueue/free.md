@@ -1,24 +1,26 @@
 # free
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [Create](iousernetworktxcompletionqueue/create.md)
+### Creating the Completion Queue
+- [Create](./create.md)
   Creates a queue that tells the system which packets you transmitted to your device.
-- [init](iousernetworktxcompletionqueue/init.md)
+- [init](./init.md)
   Initializes the packet submission queue.
 
 

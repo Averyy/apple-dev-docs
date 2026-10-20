@@ -1,7 +1,8 @@
 # errSecReadOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Read-only error.
 
@@ -18,6 +19,10 @@ Read-only error.
 
 ```swift
 var errSecReadOnly: OSStatus { get }
+```
+
+```c
+errSecReadOnly
 ```
 
 

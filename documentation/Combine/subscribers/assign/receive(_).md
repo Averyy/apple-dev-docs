@@ -1,7 +1,8 @@
 # receive(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the subscriber that the publisher has produced an element.
 
@@ -22,7 +23,7 @@ final func receive(_ value: Input) -> Subscribers.Demand
 
 #### Discussion
 
-A [`Subscribers.Demand`](subscribers/demand.md) instance indicating how many more elements the subscriber expects to receive.
+A [`Subscribers.Demand`](../demand.md) instance indicating how many more elements the subscriber expects to receive.
 
 
 ---

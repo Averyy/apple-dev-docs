@@ -1,7 +1,8 @@
 # getExcludingDesktopWindows(_:onScreenWindowsOnlyAbove:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves the displays, apps, and windows that are in front of the specified window.
 
@@ -12,12 +13,20 @@ Retrieves the displays, apps, and windows that are in front of the specified win
 ## Declaration
 
 ```swift
+class func getExcludingDesktopWindows(_ excludeDesktopWindows: Bool, onScreenWindowsOnlyAbove window: SCWindow, completionHandler: @escaping @Sendable (SCShareableContent?, (any Error)?) -> Void)
+```
+
+```swift
 class func excludingDesktopWindows(_ excludeDesktopWindows: Bool, onScreenWindowsOnlyAbove window: SCWindow) async throws -> SCShareableContent
+```
+
+```objc
++ (void) getShareableContentExcludingDesktopWindows:(BOOL) excludeDesktopWindows onScreenWindowsOnlyAboveWindow:(SCWindow *) window completionHandler:(void (^)(SCShareableContent *shareableContent, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Use this method to retrieve the onscreen content matching your filtering criteria. If the call is successful, the system passes an [`SCShareableContent`](scshareablecontent.md) instance to the completion handler; otherwise, it returns an error that describes the failure.
+Use this method to retrieve the onscreen content matching your filtering criteria. If the call is successful, the system passes an [`SCShareableContent`](../scshareablecontent.md) instance to the completion handler; otherwise, it returns an error that describes the failure.
 
 ## Parameters
 
@@ -27,13 +36,14 @@ Use this method to retrieve the onscreen content matching your filtering criteri
 
 ## See Also
 
-- [class func getWithCompletionHandler((SCShareableContent?, (any Error)?) -> Void)](scshareablecontent/getwithcompletionhandler(_:).md)
+### Retrieving shareable content
+- [class func getWithCompletionHandler((SCShareableContent?, (any Error)?) -> Void)](./getwithcompletionhandler%28_%29.md)
   Retrieves the displays, apps, and windows that your app can capture.
-- [class func getExcludingDesktopWindows(Bool, onScreenWindowsOnly: Bool, completionHandler: (SCShareableContent?, (any Error)?) -> Void)](scshareablecontent/getexcludingdesktopwindows(_:onscreenwindowsonly:completionhandler:).md)
+- [class func getExcludingDesktopWindows(Bool, onScreenWindowsOnly: Bool, completionHandler: (SCShareableContent?, (any Error)?) -> Void)](./getexcludingdesktopwindows%28_,onscreenwindowsonly,completionhandler%29.md)
   Retrieves the displays, apps, and windows that match your criteria.
-- [class func getExcludingDesktopWindows(Bool, onScreenWindowsOnlyBelow: SCWindow, completionHandler: (SCShareableContent?, (any Error)?) -> Void)](scshareablecontent/getexcludingdesktopwindows(_:onscreenwindowsonlybelow:completionhandler:).md)
+- [class func getExcludingDesktopWindows(Bool, onScreenWindowsOnlyBelow: SCWindow, completionHandler: (SCShareableContent?, (any Error)?) -> Void)](./getexcludingdesktopwindows%28_,onscreenwindowsonlybelow,completionhandler%29.md)
   Retrieves the displays, apps, and windows that are behind the specified window.
-- [class func info(for: SCContentFilter) -> SCShareableContentInfo](scshareablecontent/info(for:).md)
+- [class func info(for: SCContentFilter) -> SCShareableContentInfo](./info%28for%29.md)
   Retrieves any available sharable content information that matches the provided filter.
 
 

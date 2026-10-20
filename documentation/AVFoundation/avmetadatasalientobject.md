@@ -1,7 +1,8 @@
 # AVMetadataSalientObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a single salient area in a picture.
 
@@ -18,6 +19,10 @@ An object representing a single salient area in a picture.
 class AVMetadataSalientObject
 ```
 
+```objc
+@interface AVMetadataSalientObject : AVMetadataObject
+```
+
 #### Overview
 
 This object is an immutable type that describes the various features of the salient object in a picture.
@@ -25,21 +30,21 @@ This object is an immutable type that describes the various features of the sali
 ## Topics
 
 ### Inspecting metadata
-- [var objectID: Int](avmetadatasalientobject/objectid.md)
+- [var objectID: Int](./avmetadatasalientobject/objectid.md)
   An integer value that defines the unique identifier of an object in a picture.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataObject](avmetadataobject.md)
+- [AVMetadataObject](./avmetadataobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

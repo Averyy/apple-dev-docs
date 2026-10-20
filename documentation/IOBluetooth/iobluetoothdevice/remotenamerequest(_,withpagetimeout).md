@@ -1,17 +1,22 @@
 # remoteNameRequest(_:withPageTimeout:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Issues a remote name request to the target device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func remoteNameRequest(_ target: Any!, withPageTimeout pageTimeoutValue: BluetoothHCIPageTimeout) -> IOReturn
+```
+
+```objc
+- (IOReturn) remoteNameRequest:(id) target withPageTimeout:(BluetoothHCIPageTimeout) pageTimeoutValue;
 ```
 
 #### Return Value

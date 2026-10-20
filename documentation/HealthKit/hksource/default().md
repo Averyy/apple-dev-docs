@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a source object for the current app.
 
@@ -17,6 +18,10 @@ Returns a source object for the current app.
 
 ```swift
 class func `default`() -> HKSource
+```
+
+```objc
++ (HKSource *) defaultSource;
 ```
 
 #### Return Value

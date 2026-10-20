@@ -1,7 +1,8 @@
 # AESendPriority
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specifies the processing priority for a sent Apple event.
 
@@ -15,9 +16,13 @@ Specifies the processing priority for a sent Apple event.
 typealias AESendPriority = Int16
 ```
 
+```c
+typedef SInt16 AESendPriority;
+```
+
 #### Discussion
 
-When you call the `AESend(_:_:_:_:_:_:_:)` function, you pass a value of type `AESendPriority` for the `sendPriority` parameter. [`Priority Constants for the AESend Function (Deprecated in macOS)`](apple_events/1542840-priority_constants_for_the_aesen.md) lists the valid constant values for a variable or parameter of this type. 
+When you call the `AESend(_:_:_:_:_:_:_:)` function, you pass a value of type `AESendPriority` for the `sendPriority` parameter. [Priority Constants for the AESend Function (Deprecated in macOS)](./apple_events/api-1542840-priority_constants_for_the_aesen.md) lists the valid constant values for a variable or parameter of this type. 
 
 
 ---

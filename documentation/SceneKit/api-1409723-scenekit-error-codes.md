@@ -1,22 +1,24 @@
 # SceneKit Error Codes
 
-**Framework**: SceneKit
+**Framework**: SceneKit  
+**Role**: API Collection
 
 #### Discussion
 
-Constants for the [`code`](https://developer.apple.com/documentation/foundation/nserror/code) property of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects produced by the SceneKit framework.
+Constants for the [`code`](../Foundation/nserror/code.md) property of [`NSError`](../Foundation/nserror.md) objects produced by the SceneKit framework.
 
 ## Topics
 
 ### Constants
-- [var SCNProgramCompilationError: Int](scnprogramcompilationerror.md)
-  An error in compiling GLSL shader source code for use with the [`SCNProgram`](scnprogram.md) class.
+- [var SCNProgramCompilationError: Int](./scnprogramcompilationerror.md)
+  An error in compiling GLSL shader source code for use with the [`SCNProgram`](./scnprogram.md) class.
 
 ## See Also
 
-- [func program(SCNProgram, handleError: any Error)](scnprogramdelegate/program(_:handleerror:).md)
+### Handling Shader Compilation Errors
+- [func program(SCNProgram, handleError: any Error)](./scnprogramdelegate/program%28_,handleerror%29.md)
   Tells the delegate that an error occurred when compiling GLSL source code.
-- [let SCNErrorDomain: String](scnerrordomain.md)
+- [let SCNErrorDomain: String](./scnerrordomain.md)
   Identifies an error type defined by the SceneKit framework.
 
 

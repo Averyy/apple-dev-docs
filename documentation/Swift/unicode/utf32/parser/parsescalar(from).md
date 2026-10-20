@@ -1,7 +1,8 @@
 # parseScalar(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses a single Unicode scalar value from `input`.
 

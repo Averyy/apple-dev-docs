@@ -1,7 +1,8 @@
 # init(color:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color effect with the specified color.
 
@@ -16,6 +17,10 @@ Creates a color effect with the specified color.
 
 ```swift
 convenience init(color: UIColor?)
+```
+
+```objc
++ (instancetype) effectWithColor:(UIColor *) color;
 ```
 
 ## Parameters

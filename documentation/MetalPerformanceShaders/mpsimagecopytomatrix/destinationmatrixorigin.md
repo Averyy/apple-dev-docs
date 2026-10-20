@@ -1,7 +1,8 @@
 # destinationMatrixOrigin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var destinationMatrixOrigin: MTLOrigin { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLOrigin destinationMatrixOrigin;
+```
+
 ## See Also
 
-- [var dataLayout: MPSDataLayout](mpsimagecopytomatrix/datalayout.md)
-- [var destinationMatrixBatchIndex: Int](mpsimagecopytomatrix/destinationmatrixbatchindex.md)
+### Instance Properties
+- [var dataLayout: MPSDataLayout](./datalayout.md)
+- [var destinationMatrixBatchIndex: Int](./destinationmatrixbatchindex.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UIFocusSystem.MovementDidFailMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,16 +20,16 @@ struct MovementDidFailMessage
 ## Topics
 
 ### Initializers
-- [init(updateContext: UIFocusUpdateContext?, focusSystem: UIFocusSystem)](uifocussystem/movementdidfailmessage/init(updatecontext:focussystem:).md)
+- [init(updateContext: UIFocusUpdateContext?, focusSystem: UIFocusSystem)](./movementdidfailmessage/init%28updatecontext,focussystem%29.md)
 ### Instance Properties
-- [var focusSystem: UIFocusSystem](uifocussystem/movementdidfailmessage/focussystem.md)
-- [var updateContext: UIFocusUpdateContext?](uifocussystem/movementdidfailmessage/updatecontext.md)
+- [var focusSystem: UIFocusSystem](./movementdidfailmessage/focussystem.md)
+- [var updateContext: UIFocusUpdateContext?](./movementdidfailmessage/updatecontext.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

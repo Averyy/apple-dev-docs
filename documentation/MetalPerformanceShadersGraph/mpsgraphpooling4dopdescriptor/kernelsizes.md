@@ -1,7 +1,8 @@
 # kernelSizes
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the pooling window size.
 
@@ -17,6 +18,10 @@ Defines the pooling window size.
 
 ```swift
 var kernelSizes: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSNumber *> * kernelSizes;
 ```
 
 #### Discussion

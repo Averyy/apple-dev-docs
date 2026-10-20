@@ -1,7 +1,8 @@
 # displayPortCount
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var displayPortCount: UInt32 { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) uint32_t displayPortCount;
 ```
 
 

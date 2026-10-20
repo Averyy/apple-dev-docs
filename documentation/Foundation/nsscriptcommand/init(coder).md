@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 convenience init?(coder inCoder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) inCoder;
 ```
 
 

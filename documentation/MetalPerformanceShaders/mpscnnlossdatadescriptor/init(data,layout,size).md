@@ -1,7 +1,8 @@
 # init(data:layout:size:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init?(data: Data, layout: MPSDataLayout, size: MTLSize)
+```
+
+```objc
++ (MPSCNNLossDataDescriptor *) cnnLossDataDescriptorWithData:(NSData *) data layout:(MPSDataLayout) layout size:(MTLSize) size;
 ```
 
 

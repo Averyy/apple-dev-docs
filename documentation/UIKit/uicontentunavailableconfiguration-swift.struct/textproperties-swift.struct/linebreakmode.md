@@ -1,7 +1,8 @@
 # lineBreakMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The technique for wrapping and truncating the text.
 
@@ -10,7 +11,7 @@ The technique for wrapping and truncating the text.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

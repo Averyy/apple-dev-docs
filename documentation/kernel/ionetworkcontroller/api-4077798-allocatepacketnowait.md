@@ -1,14 +1,15 @@
 # allocatePacketNoWait
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual mbuf_t allocatePacketNoWait(UInt32 size);
 ```
 

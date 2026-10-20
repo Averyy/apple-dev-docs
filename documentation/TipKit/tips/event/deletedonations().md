@@ -1,7 +1,8 @@
 # deleteDonations()
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes an event’s existing donations.
 
@@ -19,6 +20,8 @@ Deletes an event’s existing donations.
 ```swift
 func deleteDonations() async throws
 ```
+
+Available when `DonationInfo` conforms to `Decodable`, `Encodable`, and `Sendable`.
 
 
 ---

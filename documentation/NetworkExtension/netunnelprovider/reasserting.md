@@ -1,7 +1,8 @@
 # reasserting
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicate to the system that the tunnel is being re-established.
 
@@ -19,9 +20,13 @@ Indicate to the system that the tunnel is being re-established.
 var reasserting: Bool { get set }
 ```
 
+```objc
+@property BOOL reasserting;
+```
+
 #### Discussion
 
-The Tunnel Provider should set this property to [`true`](https://developer.apple.com/documentation/swift/true) whenever it starts to reconnect to the tunnel server. Once the Tunnel Provider completes the process of reconnecting it should set this property to [`false`](https://developer.apple.com/documentation/swift/false).
+The Tunnel Provider should set this property to [`true`](../../Swift/true.md) whenever it starts to reconnect to the tunnel server. Once the Tunnel Provider completes the process of reconnecting it should set this property to [`false`](../../Swift/false.md).
 
 
 ---

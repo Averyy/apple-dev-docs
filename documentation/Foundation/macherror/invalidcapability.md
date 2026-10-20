@@ -1,7 +1,8 @@
 # invalidCapability
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The supplied (port) capability is improper.
 

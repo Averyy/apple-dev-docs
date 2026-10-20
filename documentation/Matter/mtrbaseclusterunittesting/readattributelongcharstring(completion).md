@@ -1,7 +1,8 @@
 # readAttributeLongCharString(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLongCharString(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLongCharString() async throws -> String
+```
+
+```objc
+- (void) readAttributeLongCharStringWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

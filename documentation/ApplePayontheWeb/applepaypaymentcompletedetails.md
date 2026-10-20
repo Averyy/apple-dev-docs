@@ -1,7 +1,8 @@
 # ApplePayPaymentCompleteDetails
 
 **Framework**: Apple Pay on the Web  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 dictionary ApplePayPaymentCompleteDetails {
 	ApplePayPaymentOrderDetails orderDetails;
 };
@@ -17,22 +18,23 @@ dictionary ApplePayPaymentCompleteDetails {
 
 ## Mentions
 
-- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
+- [Apple Pay on the Web Version 14 Release Notes](./apple-pay-on-the-web-version-14-release-notes.md)
 
 ## Topics
 
 ### Providing order details
-- [orderDetails](applepaypaymentcompletedetails/orderdetails.md)
+- [orderDetails](./applepaypaymentcompletedetails/orderdetails.md)
 
 ## See Also
 
-- [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
+### Payment request
+- [Setting up the payment request API to accept Apple Pay](./setting-up-the-payment-request-api-to-accept-apple-pay.md)
   Support payments using Apple Pay on your website.
-- [ApplePayRequestBase](applepayrequestbase.md)
+- [ApplePayRequestBase](./applepayrequestbase.md)
   A dictionary that defines basic payment and contact information that the Apple Pay payment request object uses for the W3C Payment Request API.
-- [ApplePayRequest](applepayrequest.md)
+- [ApplePayRequest](./applepayrequest.md)
   A dictionary that defines the Apple Pay payment request object to use for the W3C Payment Request API.
-- [ApplePayModifier](applepaymodifier.md)
+- [ApplePayModifier](./applepaymodifier.md)
   A dictionary that defines the Apple Pay modifiers for a payment type in the W3C Payment Request API.
 
 

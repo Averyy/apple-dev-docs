@@ -1,7 +1,8 @@
 # maximumTrackableInstances
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of object instances that you can track at the same time.
 
@@ -16,13 +17,14 @@ var maximumTrackableInstances: Int
 
 ## See Also
 
-- [var detectionRate: Float](objecttrackingprovider/trackingconfiguration-swift.struct/detectionrate.md)
+### Inspecting a tracking configuration
+- [var detectionRate: Float](./detectionrate.md)
   The frequency at which object detection runs, in Hz.
-- [var maximumInstancesPerReferenceObject: Int](objecttrackingprovider/trackingconfiguration-swift.struct/maximuminstancesperreferenceobject.md)
+- [var maximumInstancesPerReferenceObject: Int](./maximuminstancesperreferenceobject.md)
   The maximum number of instances of each reference object type to allow tracking at once.
-- [var movingObjectTrackingRate: Float](objecttrackingprovider/trackingconfiguration-swift.struct/movingobjecttrackingrate.md)
+- [var movingObjectTrackingRate: Float](./movingobjecttrackingrate.md)
   The frequency at which object tracking runs for moving objects, in Hz.
-- [var stationaryObjectTrackingRate: Float](objecttrackingprovider/trackingconfiguration-swift.struct/stationaryobjecttrackingrate.md)
+- [var stationaryObjectTrackingRate: Float](./stationaryobjecttrackingrate.md)
   The frequency at which object tracking runs for stationary objects, in Hz.
 
 

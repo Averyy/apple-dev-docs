@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spec that contains this property — typically a prim spec or variant spec.
 

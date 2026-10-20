@@ -1,6 +1,7 @@
 # Customizing the tvOS playback experience
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: Article
 
 Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
 
@@ -8,28 +9,28 @@ Adopt the latest features of the redesigned tvOS player user interface to provid
 
 tvOS 15 introduces an all-new playback experience that helps viewers stay in the moment by providing a more consistent, useful, and interactive user interface. The redesigned UI provides viewers with convenient access to relevant controls and information while always keeping the focus on the content.
 
-![An image that shows a conceptual overview tvOS player user interface. The user interface has a transport bar with a title view on its leading side and action controls on its trailing side, and content tabs below the transport bar. The image also shows a menu that pops up from an action control.](/images/com.apple.avkit/media-3842260@2x.png)
+![An image that shows a conceptual overview tvOS player user interface. The user interface has a transport bar with a title view on its leading side and action controls on its trailing side, and content tabs below the transport bar. The image also shows a menu that pops up from an action control.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3842260@2x.png)
 
-It’s simple to provide this playback experience in your app by using [`AVPlayerViewController`](avplayerviewcontroller.md). Using this class for your player UI provides your app the same features and familiar interactions found in the Apple TV app, including support for voice commands using the Siri Remote and presenting video in Picture in Picture. In tvOS 15, [`AVPlayerViewController`](avplayerviewcontroller.md) is more configurable and customizable than ever, giving you new ways to tailor your app’s video playback experience.
+It’s simple to provide this playback experience in your app by using [`AVPlayerViewController`](./avplayerviewcontroller.md). Using this class for your player UI provides your app the same features and familiar interactions found in the Apple TV app, including support for voice commands using the Siri Remote and presenting video in Picture in Picture. In tvOS 15, [`AVPlayerViewController`](./avplayerviewcontroller.md) is more configurable and customizable than ever, giving you new ways to tailor your app’s video playback experience.
 
-> **Note**:  Existing apps that use [`AVPlayerViewController`](avplayerviewcontroller.md) adopt the new styling and features of the redesigned player UI when they link against the tvOS 15 SDK.
+> **Note**:  Existing apps that use [`AVPlayerViewController`](./avplayerviewcontroller.md) adopt the new styling and features of the redesigned player UI when they link against the tvOS 15 SDK.
 
-#### Display Supporting Metadata
+#### Display supporting metadata
 
 The player user interface displays a title view above the transport bar when the current player item contains title and subtitle metadata. When playing live streaming content, the title view may also display a badge to indicate that content state to the viewer.
 
-![An image that shows a title view that presents a title, subtitle, and live badge.](/images/com.apple.avkit/media-3822567@2x.png)
+![An image that shows a title view that presents a title, subtitle, and live badge.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3822567@2x.png)
 
-The title view retrieves the values it displays from an asset’s [`commonIdentifierTitle`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/commonidentifiertitle) and [`iTunesMetadataTrackSubTitle`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/itunesmetadatatracksubtitle) metadata items, when available. If the media your app plays doesn’t contain embedded metadata, you can add custom metadata by creating instances of [`AVMetadataItem`](https://developer.apple.com/documentation/avfoundation/avmetadataitem). The table below lists the metadata values that the player user interface supports.
+The title view retrieves the values it displays from an asset’s [`commonIdentifierTitle`](../AVFoundation/avmetadataidentifier/commonidentifiertitle.md) and [`iTunesMetadataTrackSubTitle`](../AVFoundation/avmetadataidentifier/itunesmetadatatracksubtitle.md) metadata items, when available. If the media your app plays doesn’t contain embedded metadata, you can add custom metadata by creating instances of [`AVMetadataItem`](../AVFoundation/avmetadataitem.md). The table below lists the metadata values that the player user interface supports.
 
 | Metadata | Identifier | Type |
 | --- | --- | --- |
-| Title | [`commonIdentifierTitle`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/commonidentifiertitle) | [`Data`](https://developer.apple.com/documentation/foundation/data) |
-| Subtitle | [`iTunesMetadataTrackSubTitle`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/itunesmetadatatracksubtitle) | [`String`](https://developer.apple.com/documentation/swift/string) |
-| Artwork | [`commonIdentifierArtwork`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/commonidentifierartwork) | [`String`](https://developer.apple.com/documentation/swift/string) |
-| Description | [`commonIdentifierDescription`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/commonidentifierdescription) | [`String`](https://developer.apple.com/documentation/swift/string) |
-| Genre | [`quickTimeMetadataGenre`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/quicktimemetadatagenre) | [`String`](https://developer.apple.com/documentation/swift/string) |
-| Content rating | [`iTunesMetadataContentRating`](https://developer.apple.com/documentation/avfoundation/avmetadataidentifier/itunesmetadatacontentrating) | [`String`](https://developer.apple.com/documentation/swift/string) |
+| Title | [`commonIdentifierTitle`](../AVFoundation/avmetadataidentifier/commonidentifiertitle.md) | [`Data`](../Foundation/data.md) |
+| Subtitle | [`iTunesMetadataTrackSubTitle`](../AVFoundation/avmetadataidentifier/itunesmetadatatracksubtitle.md) | [`String`](../Swift/string.md) |
+| Artwork | [`commonIdentifierArtwork`](../AVFoundation/avmetadataidentifier/commonidentifierartwork.md) | [`String`](../Swift/string.md) |
+| Description | [`commonIdentifierDescription`](../AVFoundation/avmetadataidentifier/commonidentifierdescription.md) | [`String`](../Swift/string.md) |
+| Genre | [`quickTimeMetadataGenre`](../AVFoundation/avmetadataidentifier/quicktimemetadatagenre.md) | [`String`](../Swift/string.md) |
+| Content rating | [`iTunesMetadataContentRating`](../AVFoundation/avmetadataidentifier/itunesmetadatacontentrating.md) | [`String`](../Swift/string.md) |
 
 In an app that defines a structure that stores simple string-based metadata values, you could map its values to their appropriate metadata identifiers and build an array of metadata items as shown below.
 
@@ -57,7 +58,7 @@ private func createMetadataItem(for identifier: AVMetadataIdentifier,
 }
 ```
 
-To apply the metadata to the current player item, set the array of metadata items as the value of the player item’s [`externalMetadata`](https://developer.apple.com/documentation/avfoundation/avplayeritem/externalmetadata) property.
+To apply the metadata to the current player item, set the array of metadata items as the value of the player item’s [`externalMetadata`](../AVFoundation/avplayeritem/externalmetadata.md) property.
 
 ```swift
 let metadata: Metadata = // A structure that contains simple string values.
@@ -66,15 +67,15 @@ playerItem.externalMetadata = createMetadataItems(for: metadata)
 
 Only the title and subtitle values display in the title view. The player presents the other supported metadata values in its Info tab, which the Display Content Tabs section below describes.
 
-> **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](avplayerviewcontroller/transportbarincludestitleview.md) to `false`.
+> **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](./avplayerviewcontroller/transportbarincludestitleview.md) to `false`.
 
-#### Add Custom Transport Bar Items
+#### Add custom transport bar items
 
 The redesigned transport bar displays controls along its trailing side, which provides viewers quick access to common actions. The system automatically displays controls to configure common playback settings, like selecting subtitles and enabling Picture in Picture, but apps can also add custom controls to the transport bar.
 
-![An image that shows a horizontal row of icons that the tvOS player transport bar displays. The image shows system-provided and custom transport bar items.](/images/com.apple.avkit/media-3822650@2x.png)
+![An image that shows a horizontal row of icons that the tvOS player transport bar displays. The image shows system-provided and custom transport bar items.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3822650@2x.png)
 
-You define custom transport bar items by creating instances of [`UIAction`](https://developer.apple.com/documentation/uikit/uiaction) or [`UIMenu`](https://developer.apple.com/documentation/uikit/uimenu). For example, to create a simple control that toggles whether the current movie is a favorite, you could create an instance of [`UIAction`](https://developer.apple.com/documentation/uikit/uiaction) as shown below.
+You define custom transport bar items by creating instances of [`UIAction`](../UIKit/uiaction.md) or [`UIMenu`](../UIKit/uimenu.md). For example, to create a simple control that toggles whether the current movie is a favorite, you could create an instance of [`UIAction`](../UIKit/uiaction.md) as shown below.
 
 ```swift
 // Create ♡ and ♥ images.
@@ -123,7 +124,7 @@ let submenu = UIMenu(title: "Speed",
 let menu = UIMenu(title: "Preferences", image: gearImage, children: [loopAction, submenu])
 ```
 
-To have the player view controller present the custom items, set them as the player view controller’s [`transportBarCustomMenuItems`](avplayerviewcontroller/transportbarcustommenuitems.md) property value.
+To have the player view controller present the custom items, set them as the player view controller’s [`transportBarCustomMenuItems`](./avplayerviewcontroller/transportbarcustommenuitems.md) property value.
 
 ```swift
 // Set the custom transport bar items.
@@ -132,15 +133,15 @@ playerViewController.transportBarCustomMenuItems = [favoriteAction, menu]
 
 Setting the custom action and menu adds two new items to the transport bar.
 
-![An image that shows a custom action to add a movie to or remove it from a user’s favorites list. It also shows a custom preferences menu that displays an action to enable looping playback and a list of options to control playback speed.](/images/com.apple.avkit/media-3820865@2x.png)
+![An image that shows a custom action to add a movie to or remove it from a user’s favorites list. It also shows a custom preferences menu that displays an action to enable looping playback and a list of options to control playback speed.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3820865@2x.png)
 
-#### Display Content Tabs
+#### Display content tabs
 
 The tvOS player UI can display one or more content tabs below the transport bar to show supporting information or related content. By default, the player presents an Info tab when an asset contains embedded metadata or when you set external metadata on the player item, as the Display Supporting Metadata section above describes.
 
-![An image that shows the tvOS player user interface’s Info tab.](/images/com.apple.avkit/media-3821023@2x.png)
+![An image that shows the tvOS player user interface’s Info tab.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3821023@2x.png)
 
-Your app can also define custom tabs by creating subclasses of [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) to present your supporting content, and set them as the value of the player view controller’s [`customInfoViewControllers`](avplayerviewcontroller/custominfoviewcontrollers.md) property. The system uses the custom view controller’s [`title`](https://developer.apple.com/documentation/uikit/uiviewcontroller/title) property value as the tab title, so initialize it before setting it on the player view controller.
+Your app can also define custom tabs by creating subclasses of [`UIViewController`](../UIKit/uiviewcontroller.md) to present your supporting content, and set them as the value of the player view controller’s [`customInfoViewControllers`](./avplayerviewcontroller/custominfoviewcontrollers.md) property. The system uses the custom view controller’s [`title`](../UIKit/uiviewcontroller/title.md) property value as the tab title, so initialize it before setting it on the player view controller.
 
 ```swift
 // Set custom content tabs on the player UI.
@@ -150,17 +151,17 @@ playerViewController.customInfoViewControllers = [
 ]
 ```
 
-![An image that shows a Related content tab that presents a horizontal row of items.](/images/com.apple.avkit/media-3821592@2x.png)
+![An image that shows a Related content tab that presents a horizontal row of items.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3821592@2x.png)
 
-For the player view controller to size your content appropriately, specify a [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) or define appropriate auto layout constraints. The system sizes all view controllers to the height of the tallest content tab, so size your custom view controllers consistently or verify that they lay out as you expect at their runtime height.
+For the player view controller to size your content appropriately, specify a [`preferredContentSize`](../UIKit/uiviewcontroller/preferredcontentsize.md) or define appropriate auto layout constraints. The system sizes all view controllers to the height of the tallest content tab, so size your custom view controllers consistently or verify that they lay out as you expect at their runtime height.
 
-#### Present Actions in the Info Tab
+#### Present actions in the Info tab
 
-A player view controller presents an Info tab when playing an asset with embedded or external metadata. The tab’s view displays the metadata details, and it may show up to two [`UIAction`](https://developer.apple.com/documentation/uikit/uiaction) controls along its trailing edge, as shown below.
+A player view controller presents an Info tab when playing an asset with embedded or external metadata. The tab’s view displays the metadata details, and it may show up to two [`UIAction`](../UIKit/uiaction.md) controls along its trailing edge, as shown below.
 
-![An image of the Info tab of the player user interface. The Info tab presents two buttons laid out vertically along its trailing edge. Pressing the top button plays the current media from the beginning, and pressing the bottom button toggles whether the media exists in the user’s watch list.](/images/com.apple.avkit/media-3872936@2x.png)
+![An image of the Info tab of the player user interface. The Info tab presents two buttons laid out vertically along its trailing edge. Pressing the top button plays the current media from the beginning, and pressing the bottom button toggles whether the media exists in the user’s watch list.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3872936@2x.png)
 
-You customize the actions the view presents by setting a value for the player view controller’s [`infoViewActions`](avplayerviewcontroller/infoviewactions.md) property. When playing nonlive content, this property contains a single-element array that presents an action to play the content from the beginning. You may replace the default value (if present), add an additional action, or set this property value to an empty array to display no actions. The example below shows how to add a Watch Later action to the view.
+You customize the actions the view presents by setting a value for the player view controller’s [`infoViewActions`](./avplayerviewcontroller/infoviewactions.md) property. When playing nonlive content, this property contains a single-element array that presents an action to play the content from the beginning. You may replace the default value (if present), add an additional action, or set this property value to an empty array to display no actions. The example below shows how to add a Watch Later action to the view.
 
 ```swift
 let glasses = UIImage(systemName: "eyeglasses")
@@ -172,13 +173,13 @@ let watchLater = UIAction(title: "Watch Later", image: glasses) { action in
 playerViewController.infoViewActions.append(watchLater)
 ```
 
-#### Present Actions Contextually
+#### Present actions contextually
 
 You can use the tvOS player UI to present controls contextually, which you display for a specific range of time in the content and then dismiss. A common use for this type of control is a Skip button that displays during the title sequence of a movie or TV show. Clicking the button allows viewers to bypass the introduction and quickly skip to the main content.
 
-![An image of the player user interface with its standard controls hidden. The UI instead displays a contextual Skip button in the bottom-right corner.](/images/com.apple.avkit/media-3820222@2x.png)
+![An image of the player user interface with its standard controls hidden. The UI instead displays a contextual Skip button in the bottom-right corner.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3820222@2x.png)
 
-[`AVPlayerViewController`](avplayerviewcontroller.md) provides a [`contextualActions`](avplayerviewcontroller/contextualactions.md) property that you can use to specify one or more actions to present. The player displays them along the bottom-trailing side of the screen. The following code example shows a simple implementation of an action that seeks the player forward to the time of the main content.
+[`AVPlayerViewController`](./avplayerviewcontroller.md) provides a [`contextualActions`](./avplayerviewcontroller/contextualactions.md) property that you can use to specify one or more actions to present. The player displays them along the bottom-trailing side of the screen. The following code example shows a simple implementation of an action that seeks the player forward to the time of the main content.
 
 ```swift
 // Define an action to skip the introduction of a media asset.
@@ -188,7 +189,7 @@ private lazy var skipAction = UIAction(title: "Skip") { [weak self] _ in
 }
 ```
 
-When you set a value for the [`contextualActions`](avplayerviewcontroller/contextualactions.md) property, the player presents the controls immediately. To present them only during a relevant section of the content, observe the player timing by adding a periodic or boundary time observer. The following example defines a periodic time observer that fires every second during normal playback. In each invocation, it evaluates the new time to determine if it falls within the presentation range. If it does, the example sets the skip action as the contextual actions value; otherwise, it clears the value by setting it to an empty array.
+When you set a value for the [`contextualActions`](./avplayerviewcontroller/contextualactions.md) property, the player presents the controls immediately. To present them only during a relevant section of the content, observe the player timing by adding a periodic or boundary time observer. The following example defines a periodic time observer that fires every second during normal playback. In each invocation, it evaluates the new time to determine if it falls within the presentation range. If it does, the example sets the skip action as the contextual actions value; otherwise, it clears the value by setting it to an empty array.
 
 ```swift
 func addTimeObserver() {
@@ -206,19 +207,20 @@ func addTimeObserver() {
 
 ## See Also
 
-- [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
+### Standard player interfaces
+- [Playing video content in a standard user interface](./playing-video-content-in-a-standard-user-interface.md)
   Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
+- [Adopting the system player interface in visionOS](./adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
-- [class AVPlayerViewController](avplayerviewcontroller.md)
+- [class AVPlayerViewController](./avplayerviewcontroller.md)
   A view controller that displays content from a player and presents a native user interface to control playback.
-- [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
+- [protocol AVPlayerViewControllerDelegate](./avplayerviewcontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to player view controller events.
-- [class AVPlayerView](avplayerview.md)
+- [class AVPlayerView](./avplayerview.md)
   A view that displays content from a player and presents a native user interface to control playback.
-- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+- [protocol AVPlayerViewDelegate](./avplayerviewdelegate.md)
   A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
-- [struct VideoPlayer](videoplayer.md)
+- [struct VideoPlayer](./videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
 
 

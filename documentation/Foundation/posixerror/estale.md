@@ -1,7 +1,8 @@
 # ESTALE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Network File System. Stale NFS file handle.
 

@@ -1,7 +1,8 @@
 # stopAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stopAction(with params: MTRActionsClusterStopActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stopAction(with params: MTRActionsClusterStopActionParams) async throws
+```
+
+```objc
+- (void) stopActionWithParams:(MTRActionsClusterStopActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

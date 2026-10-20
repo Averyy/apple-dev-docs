@@ -1,7 +1,8 @@
 # urlBookmarkData
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a URL bookmark.
 
@@ -24,13 +25,14 @@ static var urlBookmarkData: UTType { get }
 
 The identifier for this type is `com.apple.bookmark`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and [`UTTypeResolvable`](uttyperesolvable.md).
+This type conforms to [`UTTypeData`](../uttypedata.md) and [`UTTypeResolvable`](../uttyperesolvable.md).
 
 ## See Also
 
-- [static var url: UTType](uttype-swift.struct/url.md)
+### URLs
+- [static var url: UTType](./url.md)
   A type that represents a URL.
-- [static var fileURL: UTType](uttype-swift.struct/fileurl.md)
+- [static var fileURL: UTType](./fileurl.md)
   A type that represents a URL to a file in the file system.
 
 

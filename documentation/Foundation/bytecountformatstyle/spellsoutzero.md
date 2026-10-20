@@ -1,7 +1,8 @@
 # spellsOutZero
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format style should spell out zero-byte values as text.
 
@@ -26,13 +27,14 @@ When this value is true, the format style produces output like `Zero kB`.
 
 ## See Also
 
-- [var allowedUnits: ByteCountFormatStyle.Units](bytecountformatstyle/allowedunits.md)
+### Accessing style properties
+- [var allowedUnits: ByteCountFormatStyle.Units](./allowedunits.md)
   The units the format style can use to express the byte count.
-- [ByteCountFormatStyle.Units](bytecountformatstyle/units.md)
+- [ByteCountFormatStyle.Units](./units.md)
   The units to use when formatting a byte count, such as kilobytes or gigabytes.
-- [var includesActualByteCount: Bool](bytecountformatstyle/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./includesactualbytecount.md)
   A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
-- [var locale: Locale](bytecountformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use to format the numeric part of the byte count.
 
 

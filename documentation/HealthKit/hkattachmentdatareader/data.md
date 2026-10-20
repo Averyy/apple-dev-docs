@@ -1,7 +1,8 @@
 # data
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The abstract’s data.
 
@@ -10,7 +11,7 @@ The abstract’s data.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -35,9 +36,10 @@ do {
 
 ## See Also
 
-- [var bytes: HKAttachment.AsyncBytes](hkattachmentdatareader/bytes.md)
+### Reading attachment data
+- [var bytes: HKAttachment.AsyncBytes](./bytes.md)
   An asynchronous sequence that provides the attachment’s data.
-- [var progress: Progress](hkattachmentdatareader/progress.md)
+- [var progress: Progress](./progress.md)
   An object you can use to track the progress while reading an attachment’s data.
 
 

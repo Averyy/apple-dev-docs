@@ -1,12 +1,13 @@
 # init(_:request:onPaymentAuthorizationChange:fallback:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -16,13 +17,16 @@ nonisolated
 init(_ label: PayWithApplePayButtonLabel = .plain, request: PKPaymentRequest, onPaymentAuthorizationChange: @escaping (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, @ViewBuilder fallback: () -> Fallback)
 ```
 
+Available when `Fallback` conforms to `View`.
+
 ## See Also
 
-- [init(PayWithApplePayButtonLabel, action: () -> Void)](paywithapplepaybutton/init(_:action:).md)
-- [init(PayWithApplePayButtonLabel, action: () -> Void, fallback: () -> Fallback)](paywithapplepaybutton/init(_:action:fallback:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:onmerchantsessionrequested:).md)
-- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate, fallback: () -> Fallback)](paywithapplepaybutton/init(_:request:onpaymentauthorizationchange:onmerchantsessionrequested:fallback:).md)
+### Creating the button
+- [init(PayWithApplePayButtonLabel, action: () -> Void)](./init%28_,action%29.md)
+- [init(PayWithApplePayButtonLabel, action: () -> Void, fallback: () -> Fallback)](./init%28_,action,fallback%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void)](./init%28_,request,onpaymentauthorizationchange%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate)](./init%28_,request,onpaymentauthorizationchange,onmerchantsessionrequested%29.md)
+- [init(PayWithApplePayButtonLabel, request: PKPaymentRequest, onPaymentAuthorizationChange: (PayWithApplePayButtonPaymentAuthorizationPhase) -> Void, onMerchantSessionRequested: () async -> PKPaymentRequestMerchantSessionUpdate, fallback: () -> Fallback)](./init%28_,request,onpaymentauthorizationchange,onmerchantsessionrequested,fallback%29.md)
 
 
 ---

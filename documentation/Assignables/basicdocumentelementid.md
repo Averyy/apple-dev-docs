@@ -1,7 +1,8 @@
 # BasicDocumentElementID
 
 **Framework**: Assignables  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A default implementation for a document element identifier.
 
@@ -9,7 +10,7 @@ A default implementation for a document element identifier.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,22 +21,23 @@ struct BasicDocumentElementID<Element> where Element : DocumentElement
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [DocumentElementID](documentelementid.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../Swift/decodable.md)
+- [DocumentElementID](./documentelementid.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol DocumentElement](documentelement.md)
+### Document elements
+- [protocol DocumentElement](./documentelement.md)
   Represents an element that is contained within a document. Such elements can have identifiers that uniquely identify them within a document.
-- [protocol DocumentElementID](documentelementid.md)
+- [protocol DocumentElementID](./documentelementid.md)
   An identifier for an element in a document.
-- [protocol AssignableDocumentElement](assignabledocumentelement.md)
-  An element of an [`AssignableDocument`](assignabledocument.md).
-- [protocol AssignedWorkDocumentElement](assignedworkdocumentelement.md)
-  An element of an [`AssignedWorkDocument`](assignedworkdocument.md).
+- [protocol AssignableDocumentElement](./assignabledocumentelement.md)
+  An element of an [`AssignableDocument`](./assignabledocument.md).
+- [protocol AssignedWorkDocumentElement](./assignedworkdocumentelement.md)
+  An element of an [`AssignedWorkDocument`](./assignedworkdocument.md).
 
 
 ---

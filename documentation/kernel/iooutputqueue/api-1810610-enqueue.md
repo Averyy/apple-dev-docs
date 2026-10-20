@@ -7,13 +7,13 @@ Adds a packet, or a chain of packets, to the queue.
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 enqueue(
  mbuf_tm,
  void *param) = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a return code.
 
@@ -28,35 +28,36 @@ This method is called by a client to add a packet, or a chain of packets, to the
 
 ## See Also
 
-- [cancelServiceThread](iooutputqueue/1810578-cancelservicethread.md)
+### Miscellaneous
+- [cancelServiceThread](./api-1810578-cancelservicethread.md)
   Cancels any pending service thread callout.
-- [flush](iooutputqueue/1810640-flush.md)
+- [flush](./api-1810640-flush.md)
   Drops and frees all packets currently held by the queue.
-- [free](iooutputqueue/1810666-free.md)
+- [free](./api-1810666-free.md)
   Frees the IOOutputQueue object.
-- [getCapacity](iooutputqueue/1810689-getcapacity.md)
+- [getCapacity](./api-1810689-getcapacity.md)
   Gets the number of packets that the queue can hold.
-- [getMbufPriority](iooutputqueue/1810719-getmbufpriority.md)
+- [getMbufPriority](./api-1810719-getmbufpriority.md)
   Determines an mbuf's traffic priority. The highest priority is 0.
-- [getOutputHandler](iooutputqueue/1810744-getoutputhandler.md)
+- [getOutputHandler](./api-1810744-getoutputhandler.md)
   Returns the address of a function that is designated to handle incoming packets sent to the queue object.
-- [getSize](iooutputqueue/1810788-getsize.md)
+- [getSize](./api-1810788-getsize.md)
   Gets the number of packets currently held in the queue.
-- [getStatisticsData](iooutputqueue/1810822-getstatisticsdata.md)
+- [getStatisticsData](./api-1810822-getstatisticsdata.md)
   Returns an IONetworkData object containing statistics counters updated by the queue.
-- [init](iooutputqueue/1810854-init.md)
+- [init](./api-1810854-init.md)
   Initializes an IOOutputQueue object.
-- [scheduleServiceThread](iooutputqueue/1810887-scheduleservicethread.md)
+- [scheduleServiceThread](./api-1810887-scheduleservicethread.md)
   Schedules a service thread callout.
-- [service](iooutputqueue/1810919-service.md)
+- [service](./api-1810919-service.md)
   Services the queue.
-- [serviceThread](iooutputqueue/1810947-servicethread.md)
+- [serviceThread](./api-1810947-servicethread.md)
   Method called by the scheduled service thread when it starts to run.
-- [setCapacity](iooutputqueue/1810969-setcapacity.md)
+- [setCapacity](./api-1810969-setcapacity.md)
   Changes the number of packets that the queue can hold before it begins to drop excess packets.
-- [start](iooutputqueue/1810993-start.md)
+- [start](./api-1810993-start.md)
   Starts up the queue.
-- [stop](iooutputqueue/1811022-stop.md)
+- [stop](./api-1811022-stop.md)
   Stops the queue.
 
 

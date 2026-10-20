@@ -1,7 +1,8 @@
 # pressAndHoldTouchBar
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bar that is displayed when a user press-and-holds on the popover item.
 
@@ -17,17 +18,22 @@ The bar that is displayed when a user press-and-holds on the popover item.
 var pressAndHoldTouchBar: NSTouchBar? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSTouchBar * pressAndHoldTouchBar;
+```
+
 #### Discussion
 
-This [`NSTouchBar`](nstouchbar.md) can be the same as the one used for the [`popoverTouchBar`](nspopovertouchbaritem/popovertouchbar.md) property, but does not have to be.
+This [`NSTouchBar`](../nstouchbar.md) can be the same as the one used for the [`popoverTouchBar`](./popovertouchbar.md) property, but does not have to be.
 
 When non-`nil` this touch bar is displayed while the user holds their finger down on the collapsed representation of the popover item. When the user raises their finger, this bar disappears.
 
 ## See Also
 
-- [var popoverTouchBar: NSTouchBar](nspopovertouchbaritem/popovertouchbar.md)
+### Configuring the expanded popover
+- [var popoverTouchBar: NSTouchBar](./popovertouchbar.md)
   The bar displayed when this item is “popped.”
-- [var showsCloseButton: Bool](nspopovertouchbaritem/showsclosebutton.md)
+- [var showsCloseButton: Bool](./showsclosebutton.md)
   A Boolean value that determines whether a close button should be shown on the popover bar.
 
 

@@ -1,10 +1,11 @@
 # DOMEvent
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -12,59 +13,64 @@
 class DOMEvent
 ```
 
+```objc
+@interface DOMEvent : DOMObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bubbles: Bool](domevent/bubbles.md)
-- [var cancelBubble: Bool](domevent/cancelbubble.md)
-- [var cancelable: Bool](domevent/cancelable.md)
-- [var currentTarget: (any DOMEventTarget)!](domevent/currenttarget.md)
-- [var eventPhase: UInt16](domevent/eventphase.md)
-- [var returnValue: Bool](domevent/returnvalue.md)
-- [var srcElement: (any DOMEventTarget)!](domevent/srcelement.md)
-- [var target: (any DOMEventTarget)!](domevent/target.md)
-- [var timeStamp: DOMTimeStamp](domevent/timestamp.md)
-- [var type: String!](domevent/type.md)
+- [var bubbles: Bool](./domevent/bubbles.md)
+- [var cancelBubble: Bool](./domevent/cancelbubble.md)
+- [var cancelable: Bool](./domevent/cancelable.md)
+- [var currentTarget: (any DOMEventTarget)!](./domevent/currenttarget.md)
+- [var eventPhase: UInt16](./domevent/eventphase.md)
+- [var returnValue: Bool](./domevent/returnvalue.md)
+- [var srcElement: (any DOMEventTarget)!](./domevent/srcelement.md)
+- [var target: (any DOMEventTarget)!](./domevent/target.md)
+- [var timeStamp: DOMTimeStamp](./domevent/timestamp.md)
+- [var type: String!](./domevent/type.md)
 ### Instance Methods
-- [func initEvent(String!, canBubbleArg: Bool, cancelableArg: Bool)](domevent/initevent(_:canbubblearg:cancelablearg:).md)
-- [func preventDefault()](domevent/preventdefault.md)
-- [func stopPropagation()](domevent/stoppropagation.md)
+- [func initEvent(String!, canBubbleArg: Bool, cancelableArg: Bool)](./domevent/initevent%28_,canbubblearg,cancelablearg%29.md)
+- [func preventDefault()](./domevent/preventdefault%28%29.md)
+- [func stopPropagation()](./domevent/stoppropagation%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [DOMObject](domobject.md)
+- [DOMObject](./domobject.md)
 ### Inherited By
-- [DOMMutationEvent](dommutationevent.md)
-- [DOMOverflowEvent](domoverflowevent.md)
-- [DOMProgressEvent](domprogressevent.md)
-- [DOMUIEvent](domuievent.md)
+- [DOMMutationEvent](./dommutationevent.md)
+- [DOMOverflowEvent](./domoverflowevent.md)
+- [DOMProgressEvent](./domprogressevent.md)
+- [DOMUIEvent](./domuievent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class DOMAbstractView](domabstractview.md)
-- [class DOMAttr](domattr.md)
-- [class DOMBlob](domblob.md)
-- [class DOMCDATASection](domcdatasection.md)
-- [class DOMCharacterData](domcharacterdata.md)
-- [class DOMComment](domcomment.md)
-- [class DOMCounter](domcounter.md)
-- [class DOMCSSCharsetRule](domcsscharsetrule.md)
-- [class DOMCSSFontFaceRule](domcssfontfacerule.md)
-- [class DOMCSSImportRule](domcssimportrule.md)
-- [class DOMCSSMediaRule](domcssmediarule.md)
-- [class DOMCSSPageRule](domcsspagerule.md)
-- [class DOMCSSPrimitiveValue](domcssprimitivevalue.md)
-- [class DOMCSSRule](domcssrule.md)
-- [class DOMCSSRuleList](domcssrulelist.md)
+### Document Object Model (DOM) APIs
+- [class DOMAbstractView](./domabstractview.md)
+- [class DOMAttr](./domattr.md)
+- [class DOMBlob](./domblob.md)
+- [class DOMCDATASection](./domcdatasection.md)
+- [class DOMCharacterData](./domcharacterdata.md)
+- [class DOMComment](./domcomment.md)
+- [class DOMCounter](./domcounter.md)
+- [class DOMCSSCharsetRule](./domcsscharsetrule.md)
+- [class DOMCSSFontFaceRule](./domcssfontfacerule.md)
+- [class DOMCSSImportRule](./domcssimportrule.md)
+- [class DOMCSSMediaRule](./domcssmediarule.md)
+- [class DOMCSSPageRule](./domcsspagerule.md)
+- [class DOMCSSPrimitiveValue](./domcssprimitivevalue.md)
+- [class DOMCSSRule](./domcssrule.md)
+- [class DOMCSSRuleList](./domcssrulelist.md)
 
 
 ---

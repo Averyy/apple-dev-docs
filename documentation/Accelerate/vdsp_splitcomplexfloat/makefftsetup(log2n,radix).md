@@ -1,7 +1,8 @@
 # makeFFTSetup(log2n:radix:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a setup structure to perform a fast Fourier transform.
 
@@ -11,7 +12,7 @@ Returns a setup structure to perform a fast Fourier transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIEndpointResetCommandData1ClearState](3612500-anonymous/iousbhostciendpointresetcommanddata1clearstate.md)
+- [IOUSBHostCIEndpointResetCommandData1ClearState](./api-3612500-anonymous/iousbhostciendpointresetcommanddata1clearstate.md)
 
 
 ---

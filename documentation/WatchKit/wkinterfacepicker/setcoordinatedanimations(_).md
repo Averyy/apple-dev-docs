@@ -1,7 +1,8 @@
 # setCoordinatedAnimations(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the interface objects that should coordinate their own animations with the picker.
 
@@ -14,6 +15,10 @@ Sets the interface objects that should coordinate their own animations with the 
 func setCoordinatedAnimations(_ coordinatedAnimations: [any WKInterfaceObject & WKImageAnimatable]?)
 ```
 
+```objc
+- (void) setCoordinatedAnimations:(NSArray<WKInterfaceObject<WKImageAnimatable> *> *) coordinatedAnimations;
+```
+
 #### Discussion
 
 Use this method to link other animatable images to the picker. When the user turns the crown, the picker updates the currently displayed image in each of the linked interface objects.
@@ -22,15 +27,16 @@ The animated images associated with the interface objects may have any number of
 
 ## Parameters
 
-- `coordinatedAnimations`: An array of objects that conform to the [`WKImageAnimatable`](wkimageanimatable.md) protocol. The objects in this array should be displaying an animated image. Specify `nil` to remove all coordinated objects from the picker.
+- `coordinatedAnimations`: An array of objects that conform to the [`WKImageAnimatable`](../wkimageanimatable.md) protocol. The objects in this array should be displaying an animated image. Specify `nil` to remove all coordinated objects from the picker.
 
 ## See Also
 
-- [func setItems([WKPickerItem]?)](wkinterfacepicker/setitems(_:).md)
+### Managing the Picker Contents
+- [func setItems([WKPickerItem]?)](./setitems%28_%29.md)
   Sets the list of items displayed by the picker.
-- [class WKPickerItem](wkpickeritem.md)
+- [class WKPickerItem](../wkpickeritem.md)
   A single item in a picker interface.
-- [func setSelectedItemIndex(Int)](wkinterfacepicker/setselecteditemindex(_:).md)
+- [func setSelectedItemIndex(Int)](./setselecteditemindex%28_%29.md)
   Selects the specified item in the list.
 
 

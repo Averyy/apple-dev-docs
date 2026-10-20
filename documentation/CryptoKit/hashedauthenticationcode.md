@@ -1,7 +1,8 @@
 # HashedAuthenticationCode
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A hash-based message authentication code.
 
@@ -23,29 +24,30 @@ struct HashedAuthenticationCode<H> where H : HashFunction
 ## Topics
 
 ### Retrieving the code length
-- [var byteCount: Int](hashedauthenticationcode/bytecount.md)
+- [var byteCount: Int](./hashedauthenticationcode/bytecount.md)
   The number of bytes in the message authentication code.
 ### Describing a code
-- [var description: String](hashedauthenticationcode/description.md)
+- [var description: String](./hashedauthenticationcode/description.md)
   A human-readable description of the code.
 
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MessageAuthenticationCode](messageauthenticationcode.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MessageAuthenticationCode](./messageauthenticationcode.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [typealias MAC](hmac/mac.md)
+### Working with codes
+- [typealias MAC](./hmac/mac.md)
   An alias for a hash-based message authentication code.
-- [protocol MessageAuthenticationCode](messageauthenticationcode.md)
+- [protocol MessageAuthenticationCode](./messageauthenticationcode.md)
   A type that represents a message authentication code.
 
 

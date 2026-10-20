@@ -1,7 +1,8 @@
 # appearsOn
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of playlists that include tracks from the album.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of playlist
 ```swift
 static let appearsOn: MusicRelationshipProperty<Album, Playlist>
 ```
+
+Available when `Root` is `Album`.
 
 
 ---

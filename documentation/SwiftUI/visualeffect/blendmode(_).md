@@ -1,7 +1,8 @@
 # blendMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the blend mode for compositing this view with overlapping views.
 
@@ -26,11 +27,11 @@ An effect that applies `blendMode` to this view.
 
 #### Discussion
 
-Use `blendMode(_:)` to combine overlapping views and use a different visual effect to produce the result. The [`BlendMode`](blendmode.md) enumeration defines many possible effects.
+Use `blendMode(_:)` to combine overlapping views and use a different visual effect to produce the result. The [`BlendMode`](../blendmode.md) enumeration defines many possible effects.
 
 ## Parameters
 
-- `blendMode`: The [`BlendMode`](blendmode.md) for compositing.
+- `blendMode`: The [`BlendMode`](../blendmode.md) for compositing.
 
 
 ---

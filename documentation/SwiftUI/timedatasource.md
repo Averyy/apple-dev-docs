@@ -1,7 +1,8 @@
 # TimeDataSource
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A source of time related data.
 
@@ -22,30 +23,31 @@ struct TimeDataSource<Value>
 
 #### Overview
 
-Instances of this type provide [`Text`](text.md) with live and automatically updating values in Widgets, Live Activities, watchOS Complications, and of course regular apps.
+Instances of this type provide [`Text`](./text.md) with live and automatically updating values in Widgets, Live Activities, watchOS Complications, and of course regular apps.
 
 ## Topics
 
 ### Type Properties
-- [static var currentDate: TimeDataSource<Date>](timedatasource/currentdate.md)
+- [static var currentDate: TimeDataSource<Date>](./timedatasource/currentdate.md)
   A time data source that produces `Date.now`.
 ### Type Methods
-- [static func dateRange(endingAt: Date) -> TimeDataSource<Range<Date>>](timedatasource/daterange(endingat:).md)
+- [static func dateRange(endingAt: Date) -> TimeDataSource<Range<Date>>](./timedatasource/daterange%28endingat%29.md)
   A time data source that produces `min(date, Date.now)..<date`.
-- [static func dateRange(startingAt: Date) -> TimeDataSource<Range<Date>>](timedatasource/daterange(startingat:).md)
+- [static func dateRange(startingAt: Date) -> TimeDataSource<Range<Date>>](./timedatasource/daterange%28startingat%29.md)
   A time data source that produces `date..<max(date, Date.now)`.
-- [static func durationOffset(to: Date) -> TimeDataSource<Duration>](timedatasource/durationoffset(to:).md)
+- [static func durationOffset(to: Date) -> TimeDataSource<Duration>](./timedatasource/durationoffset%28to%29.md)
   A time data source that produces the offset between `Date.now` and the given `date` as a `Duration`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SystemFormatStyle](systemformatstyle.md)
+### Formatting date and time
+- [enum SystemFormatStyle](./systemformatstyle.md)
   A collection of format styles for displaying live-updating time information in text views.
 
 

@@ -1,7 +1,8 @@
 # cmLinesPer
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Lines per unit; can have an associated value of `0` for lines per centimeter or `1` for lines per inch.
 

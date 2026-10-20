@@ -1,7 +1,8 @@
 # AppCustomProductPageLocalizationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app custom product page localization update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app custom product page localization update request 
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationUpdateRequest.Data.Attributes
 ```
 

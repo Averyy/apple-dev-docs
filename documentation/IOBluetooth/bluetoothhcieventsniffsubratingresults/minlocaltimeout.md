@@ -1,15 +1,20 @@
 # minLocalTimeout
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var minLocalTimeout: UInt16
+```
+
+```c
+uint16_t minLocalTimeout;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that signals a shared event to other parts of your app.
@@ -20,6 +21,10 @@ Encodes a command that signals a shared event to other parts of your app.
 func signalEvent(_ event: any MTLSharedEvent, value: UInt64)
 ```
 
+```objc
+- (void) signalEvent:(id<MTLSharedEvent>) event value:(uint64_t) value;
+```
+
 ## Parameters
 
 - `event`: A shared event instance the method waits for.
@@ -27,7 +32,8 @@ func signalEvent(_ event: any MTLSharedEvent, value: UInt64)
 
 ## See Also
 
-- [func waitForEvent(any MTLSharedEvent, value: UInt64)](mtliocommandbuffer/waitforevent(_:value:).md)
+### Synchronizing a command buffer
+- [func waitForEvent(any MTLSharedEvent, value: UInt64)](./waitforevent%28_,value%29.md)
   Encodes a command that pauses the command buffer’s execution until another part of your app signals a shared event.
 
 

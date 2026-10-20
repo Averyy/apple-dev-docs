@@ -1,7 +1,8 @@
 # replacingUnspecifiedDimensions(by:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new proposal that replaces unspecified dimensions in this proposal with the corresponding dimension of the specified size.
 

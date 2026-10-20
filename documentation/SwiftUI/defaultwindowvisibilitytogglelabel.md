@@ -1,7 +1,8 @@
 # DefaultWindowVisibilityToggleLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default label of a window visibility toggle.
 
@@ -22,7 +23,7 @@ This is created for you automatically when creating a `WindowVisibilityToggle`, 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

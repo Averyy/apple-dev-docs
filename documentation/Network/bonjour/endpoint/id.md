@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifer for the endpoint.
 

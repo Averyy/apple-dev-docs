@@ -1,6 +1,7 @@
 # Xcode 12.3 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,7 +17,9 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Known Issues
 
-- The first time you launch Xcode on a Mac with Apple silicon without Rosetta installed, Xcode prompts you to install Rosetta. The prompt prevents any interaction, and blocks Xcode from launching. (70853975) (FB8848625) **Workaround**: Launch an x86_64 process to trigger the system’s Rosetta prompt.
+- The first time you launch Xcode on a Mac with Apple silicon without Rosetta installed, Xcode prompts you to install Rosetta. The prompt prevents any interaction, and blocks Xcode from launching. (70853975) (FB8848625)
+
+  **Workaround**: Launch an x86_64 process to trigger the system’s Rosetta prompt.
 
 ##### Build System
 
@@ -43,15 +46,17 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Resolved Issues
 
-- Fixed iOS storyboard rendering issues when using [`UISplitViewController`](https://developer.apple.com/documentation/uikit/uisplitviewcontroller) simulated metric sizes with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller). (69054879) (FB8704013)
+- Fixed iOS storyboard rendering issues when using [`UISplitViewController`](../UIKit/uisplitviewcontroller.md) simulated metric sizes with [`UITabBarController`](../UIKit/uitabbarcontroller.md). (69054879) (FB8704013)
 - Fixed an issue that caused Xcode to warn about multiple deprecated system color references in saved documents. (69667149) (FB8749086)
-- Fixed an issue where the background color of a [`UITextField`](https://developer.apple.com/documentation/uikit/uitextfield) could appear transparent in your app instead of the default color. (70559650)
+- Fixed an issue where the background color of a [`UITextField`](../UIKit/uitextfield.md) could appear transparent in your app instead of the default color. (70559650)
 
-##### Scenekit
+##### SceneKit
 
 ###### Known Issues
 
-- On a Mac with Apple silicon, SceneKit editor may display pixelated graphics or an empty window. (71239899, 71395291, 72141599) **Workaround**: Click on the Display option icon at the bottom-right of the 3D viewport, then disable the Outline selection and Grid options.
+- On a Mac with Apple silicon, SceneKit editor may display pixelated graphics or an empty window. (71239899, 71395291, 72141599)
+
+  **Workaround**: Click on the Display option icon at the bottom-right of the 3D viewport, then disable the Outline selection and Grid options.
 
 ##### Simulator
 
@@ -74,23 +79,24 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Resolved Issues
 
-- Fixed a failure that could occur when compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/oslog) from Swift. (68597591)
+- Fixed a failure that could occur when compiling a project with Mac Catalyst that imports [OSLog](../OSLog/OSLog.md) from Swift. (68597591)
 
 ## See Also
 
-- [Xcode 12.5.1 Release Notes](xcode-12_5_1-release-notes.md)
+### Xcode 12
+- [Xcode 12.5.1 Release Notes](./xcode-12_5_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.5 Release Notes](xcode-12_5-release-notes.md)
+- [Xcode 12.5 Release Notes](./xcode-12_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.4 Release Notes](xcode-12_4-release-notes.md)
+- [Xcode 12.4 Release Notes](./xcode-12_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.2 Release Notes](xcode-12_2-release-notes.md)
+- [Xcode 12.2 Release Notes](./xcode-12_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.1 Release Notes](xcode-12_1-release-notes.md)
+- [Xcode 12.1 Release Notes](./xcode-12_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.0.1 Release Notes](xcode-12_0_1-release-notes.md)
+- [Xcode 12.0.1 Release Notes](./xcode-12_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12 Release Notes](xcode-12-release-notes.md)
+- [Xcode 12 Release Notes](./xcode-12-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

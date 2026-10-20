@@ -1,7 +1,8 @@
 # hpkeRepresentation(kem:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a serialized representation of the public key.
 
@@ -28,7 +29,7 @@ The serialized representation of the public key.
 
 - kem: The Key Encapsulation Mechanism to use with the public key.
 
-> **Note**: [`HPKE.Errors.inconsistentCiphersuiteAndKey`](hpke/errors/inconsistentciphersuiteandkey.md) if the key encapsulation mechanism requested is incompatible with this public key.
+> **Throws**: [`HPKE.Errors.inconsistentCiphersuiteAndKey`](../../hpke/errors/inconsistentciphersuiteandkey.md) if the key encapsulation mechanism requested is incompatible with this public key.
 
 
 ---

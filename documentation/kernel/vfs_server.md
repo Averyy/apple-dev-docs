@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct vfs_server {
     ...
 };
@@ -17,8 +17,8 @@ struct vfs_server {
 ## Topics
 
 ### Instance Properties
-- [vs_minutes](vfs_server/1523509-vs_minutes.md)
-- [vs_server_name](vfs_server/1523225-vs_server_name.md)
+- [vs_minutes](./vfs_server/api-1523509-vs_minutes.md)
+- [vs_server_name](./vfs_server/api-1523225-vs_server_name.md)
 
 
 ---

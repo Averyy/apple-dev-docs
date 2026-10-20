@@ -1,7 +1,8 @@
 # run(_:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the associated workflow, after first clearing any results stored by its actions during any previous run.
 
@@ -16,19 +17,24 @@ Runs the associated workflow, after first clearing any results stored by its act
 func run(_ sender: Any)
 ```
 
+```objc
+- (void) run:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: Object that initiated the run action.
 
 ## See Also
 
-- [func pause(Any)](amworkflowcontroller/pause(_:).md)
+### Controlling the Workflow
+- [func pause(Any)](./pause%28_%29.md)
   Pauses a workflow that’s running.
-- [func reset(Any)](amworkflowcontroller/reset(_:).md)
+- [func reset(Any)](./reset%28_%29.md)
   Stops a workflow, clears any action results, and resets the workflow back to an un-run state.
-- [func step(Any)](amworkflowcontroller/step(_:).md)
+- [func step(Any)](./step%28_%29.md)
   In a paused workflow, runs the next action in the workflow and then pauses again.
-- [func stop(Any)](amworkflowcontroller/stop(_:).md)
+- [func stop(Any)](./stop%28_%29.md)
   Stops the associated workflow.
 
 

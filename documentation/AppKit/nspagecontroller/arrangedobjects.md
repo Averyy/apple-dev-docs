@@ -1,7 +1,8 @@
 # arrangedObjects
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the objects displayed in the page controller’s view.
 
@@ -14,17 +15,22 @@ An array containing the objects displayed in the page controller’s view.
 var arrangedObjects: [Any] { get set }
 ```
 
+```objc
+@property (copy) NSArray * arrangedObjects;
+```
+
 #### Discussion
 
-The delegate will be asked for snapshots as they are needed. Alternatively, you may never directly set this array and use the -[`navigateForward(to:)`](nspagecontroller/navigateforward(to:).md) method to create a history as the user navigates.
+The delegate will be asked for snapshots as they are needed. Alternatively, you may never directly set this array and use the -[`navigateForward(to:)`](./navigateforward%28to%29.md) method to create a history as the user navigates.
 
 This property is key-value observing compliant.
 
 ## See Also
 
-- [func navigateForward(to: Any)](nspagecontroller/navigateforward(to:).md)
+### Page Controller Items
+- [func navigateForward(to: Any)](./navigateforward%28to%29.md)
   Navigates to the specific object.
-- [var selectedIndex: Int](nspagecontroller/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The currently selected object in the arranged objects array.
 
 

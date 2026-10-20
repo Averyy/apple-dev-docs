@@ -1,18 +1,19 @@
 # simdLocalTranslate(by:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the node’s position relative to its current position.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Changes the node’s position relative to its current position.
 func simdLocalTranslate(by translation: simd_float3)
 ```
 
+```objc
+- (void) simdLocalTranslateBy:(simd_float3) translation;
+```
+
 #### Discussion
 
-The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the move. (See [`Animating SceneKit Content`](animating-scenekit-content.md).)
+The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the move. (See [Animating SceneKit Content](../animating-scenekit-content.md).)
 
 ## Parameters
 
@@ -30,15 +35,17 @@ The effects of this method are animatable; that is, calling this method during a
 
 ## See Also
 
-- [func localTranslate(by: SCNVector3)](scnnode/localtranslate(by:).md)
+### Related Documentation
+- [func localTranslate(by: SCNVector3)](./localtranslate%28by%29.md)
   Changes the node’s position relative to its current position.
-- [func simdRotate(by: simd_quatf, aroundTarget: simd_float3)](scnnode/simdrotate(by:aroundtarget:).md)
+### Performing Node-Relative Operations
+- [func simdRotate(by: simd_quatf, aroundTarget: simd_float3)](./simdrotate%28by,aroundtarget%29.md)
   Changes the node’s position and orientation, relative to its current transform, through a rotation around the specified point in scene space.
-- [func simdLocalRotate(by: simd_quatf)](scnnode/simdlocalrotate(by:).md)
+- [func simdLocalRotate(by: simd_quatf)](./simdlocalrotate%28by%29.md)
   Changes the node’s orientation relative to its current orientation.
-- [func simdLook(at: simd_float3)](scnnode/simdlook(at:).md)
+- [func simdLook(at: simd_float3)](./simdlook%28at%29.md)
   Changes the node’s orientation so that its local forward vector points toward the specified location.
-- [func simdLook(at: simd_float3, up: simd_float3, localFront: simd_float3)](scnnode/simdlook(at:up:localfront:).md)
+- [func simdLook(at: simd_float3, up: simd_float3, localFront: simd_float3)](./simdlook%28at,up,localfront%29.md)
   Changes the node’s orientation so that the specified forward vector points toward the specified location.
 
 

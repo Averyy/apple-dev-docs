@@ -1,14 +1,15 @@
 # iis_genno_mask
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 natural_t iis_genno_mask;
 ```
 

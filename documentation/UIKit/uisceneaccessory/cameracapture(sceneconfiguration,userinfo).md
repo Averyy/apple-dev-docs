@@ -1,7 +1,8 @@
 # cameraCapture(sceneConfiguration:userInfo:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a scene accessory for presenting content during camera capture, passing additional context to the scene delegate.
 
@@ -14,6 +15,10 @@ Creates a scene accessory for presenting content during camera capture, passing 
 
 ```swift
 class func cameraCapture(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self
+```
+
+```objc
++ (instancetype) cameraCaptureSceneAccessoryWithConfiguration:(UISceneConfiguration *) sceneConfiguration userInfo:(id) userInfo;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ This variant accepts a `userInfo` object to pass additional context to the scene
 
 ## See Also
 
-- [class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self](uisceneaccessory/cameracapture(sceneconfiguration:).md)
+### Creating a camera capture accessory
+- [class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self](./cameracapture%28sceneconfiguration%29.md)
   Creates a scene accessory for presenting content during camera capture.
 
 

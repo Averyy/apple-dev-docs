@@ -1,7 +1,8 @@
 # NSExtensionMainStoryboard
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the app extension’s main storyboard file.
 
@@ -11,25 +12,27 @@ The name of the app extension’s main storyboard file.
 - macOS 10.10+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSExtensionMainStoryboard`
+- **Type**: string
 
 #### Discussion
 
-This key is mutually exclusive with [`NSExtensionPrincipalClass`](information-property-list/nsextension/nsextensionprincipalclass.md). Typically, Xcode sets the value of this key when creating an App Extension target in your project. If you change the name of your storyboard file, remember to update the value of this key.
+This key is mutually exclusive with [`NSExtensionPrincipalClass`](./nsextensionprincipalclass.md). Typically, Xcode sets the value of this key when creating an App Extension target in your project. If you change the name of your storyboard file, remember to update the value of this key.
 
 > ❗ **Important**:  If the app extension’s `Info.plist` file contains both keys, the system won’t load the extension.
 
 ## See Also
 
-- [NSExtensionActionWantsFullScreenPresentation](information-property-list/nsextension/nsextensionactionwantsfullscreenpresentation.md)
+### Appearance and Presentation
+- [NSExtensionActionWantsFullScreenPresentation](./nsextensionactionwantsfullscreenpresentation.md)
   A Boolean value indicating whether the Action extension is presented in full screen.
-- [NSExtensionOverridesHostUIAppearance](information-property-list/nsextension/nsextensionoverrideshostuiappearance.md)
+- [NSExtensionOverridesHostUIAppearance](./nsextensionoverrideshostuiappearance.md)
   A Boolean value indicating whether the app extension ignores appearance changes made by the host app.
-- [NSExtensionPointIdentifier](information-property-list/nsextension/nsextensionpointidentifier.md)
+- [NSExtensionPointIdentifier](./nsextensionpointidentifier.md)
   The extension point that supports an app extension.
-- [NSExtensionPrincipalClass](information-property-list/nsextension/nsextensionprincipalclass.md)
+- [NSExtensionPrincipalClass](./nsextensionprincipalclass.md)
   The custom class that implements an app extension’s primary view or functionality.
 
 

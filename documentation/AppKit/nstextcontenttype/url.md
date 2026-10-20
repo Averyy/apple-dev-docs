@@ -1,7 +1,8 @@
 # URL
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a URL.
 
@@ -12,6 +13,10 @@ A property that defines the content in a text input area as a URL.
 
 ```swift
 static let URL: NSTextContentType
+```
+
+```c
+extern NSTextContentType const NSTextContentTypeURL;
 ```
 
 

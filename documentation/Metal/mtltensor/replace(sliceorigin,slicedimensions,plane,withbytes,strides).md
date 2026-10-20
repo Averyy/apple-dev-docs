@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces a slice of a plane of this tensor with data from a pointer you provide.
@@ -20,11 +21,15 @@ Replaces a slice of a plane of this tensor with data from a pointer you provide.
 func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType, withBytes bytes: UnsafeRawPointer, strides: MTLTensorExtents)
 ```
 
+```objc
+- (void) replaceSliceOrigin:(MTLTensorExtents *) sliceOrigin sliceDimensions:(MTLTensorExtents *) sliceDimensions plane:(MTLTensorPlaneType) plane withBytes:(const void *) bytes strides:(MTLTensorExtents *) strides;
+```
+
 #### Discussion
 
 When writing to auxiliary planes, specify `sliceOrigin` and `sliceDimensions` in plane coordinates by applying the auxiliary plane’s block factors.
 
-Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
+Create the tensor with [`storageModeShared`](../mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
 
 Strides need to be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
 

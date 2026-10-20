@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor that increases or decreases the animation’s rate of playback.
 
@@ -11,7 +12,7 @@ A factor that increases or decreases the animation’s rate of playback.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,21 +24,22 @@ var speed: Float { get set }
 
 The default value is `1.0`, which doesn’t alter the animation’s rate of playback. A value of `2.0` plays the animation at twice the normal rate, and a speed of `0.5` makes the animation finish after twice the normal time. A negative value plays the animation in reverse.
 
-This property doesn’t affect the animation’s [`delay`](fromtobyanimation/delay.md).
+This property doesn’t affect the animation’s [`delay`](../fromtobyanimation/delay.md).
 
 ## See Also
 
-- [var delay: TimeInterval](blendtreeanimation/delay.md)
+### Timing the animation
+- [var delay: TimeInterval](./delay.md)
   An amount of time that lapses before the animation plays.
-- [var duration: TimeInterval](blendtreeanimation/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](blendtreeanimation/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animation begins within the duration.
-- [var trimDuration: TimeInterval?](blendtreeanimation/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the calculated duration.
-- [var trimStart: TimeInterval?](blendtreeanimation/trimstart.md)
+- [var trimStart: TimeInterval?](./trimstart.md)
   The optional time, in seconds, at which the source animation plays.
-- [var trimEnd: TimeInterval?](blendtreeanimation/trimend.md)
+- [var trimEnd: TimeInterval?](./trimend.md)
   The optional time, in seconds, at which the source animation stops.
 
 

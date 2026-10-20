@@ -1,7 +1,8 @@
 # VNTrackOpticalFlowRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that determines the direction change of vectors for each pixel from a previous to current image.
 
@@ -19,6 +20,10 @@ An object that determines the direction change of vectors for each pixel from a 
 class VNTrackOpticalFlowRequest
 ```
 
+```objc
+@interface VNTrackOpticalFlowRequest : VNStatefulRequest
+```
+
 #### Overview
 
 This request works at the pixel level, so both images must have the same dimensions to successfully perform the request.
@@ -30,39 +35,40 @@ Setting a region of interest isolates where to perform the change determination.
 ## Topics
 
 ### Creating an Optical Flow
-- [init()](vntrackopticalflowrequest/init.md)
+- [init()](./vntrackopticalflowrequest/init%28%29.md)
   Creates a new request that tracks the optical from one image to another.
-- [init(completionHandler: VNRequestCompletionHandler?)](vntrackopticalflowrequest/init(completionhandler:).md)
+- [init(completionHandler: VNRequestCompletionHandler?)](./vntrackopticalflowrequest/init%28completionhandler%29.md)
   Creates a new request that tracks the optical from one image to another, with a system callback on completion.
 ### Configuring the Request
-- [var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy](vntrackopticalflowrequest/computationaccuracy-swift.property.md)
+- [var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy](./vntrackopticalflowrequest/computationaccuracy-swift.property.md)
   The level of accuracy to compute the optical flow.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy](vntrackopticalflowrequest/computationaccuracy-swift.enum.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy](./vntrackopticalflowrequest/computationaccuracy-swift.enum.md)
   Computational accuracy options.
-- [var keepNetworkOutput: Bool](vntrackopticalflowrequest/keepnetworkoutput.md)
+- [var keepNetworkOutput: Bool](./vntrackopticalflowrequest/keepnetworkoutput.md)
   A Boolean value that indicates the raw pixel buffer continues to emit from the network.
-- [var outputPixelFormat: OSType](vntrackopticalflowrequest/outputpixelformat.md)
+- [var outputPixelFormat: OSType](./vntrackopticalflowrequest/outputpixelformat.md)
   The pixel format type of the output value.
 ### Accessing the Results
-- [var results: [VNPixelBufferObservation]?](vntrackopticalflowrequest/results.md)
+- [var results: [VNPixelBufferObservation]?](./vntrackopticalflowrequest/results.md)
   The optical flow results the request observes.
 
 ## Relationships
 
 ### Inherits From
-- [VNStatefulRequest](vnstatefulrequest.md)
+- [VNStatefulRequest](./vnstatefulrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VNGenerateOpticalFlowRequest](vngenerateopticalflowrequest.md)
+### Optical flow
+- [class VNGenerateOpticalFlowRequest](./vngenerateopticalflowrequest.md)
   An object that generates directional change vectors for each pixel in the targeted image.
 
 

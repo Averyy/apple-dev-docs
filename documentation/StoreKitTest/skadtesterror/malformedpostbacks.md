@@ -1,7 +1,8 @@
 # malformedPostbacks
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The postback in the testing environment is malformed.
 
@@ -22,25 +23,26 @@ Check that all parameters in the postback use the correct type.
 
 ## See Also
 
-- [static var excessivePostbacks: SKAdTestError.Code](skadtesterror/excessivepostbacks.md)
+### Getting Postback Errors
+- [static var excessivePostbacks: SKAdTestError.Code](./excessivepostbacks.md)
   Too many postbacks submitted to the test session.
-- [static var invalidConversionValue: SKAdTestError.Code](skadtesterror/invalidconversionvalue.md)
+- [static var invalidConversionValue: SKAdTestError.Code](./invalidconversionvalue.md)
   The conversion value isn’t valid, in the testing environment.
-- [static var invalidPostbackURL: SKAdTestError.Code](skadtesterror/invalidpostbackurl.md)
+- [static var invalidPostbackURL: SKAdTestError.Code](./invalidpostbackurl.md)
   The URL for the postback isn’t valid, in the testing environment.
-- [static var invalidRunnerUpPostback: SKAdTestError.Code](skadtesterror/invalidrunneruppostback.md)
+- [static var invalidRunnerUpPostback: SKAdTestError.Code](./invalidrunneruppostback.md)
   A non-winning postback is defined with a version prior to version 3, in the testing environment.
-- [static var invalidWinningPostbackCount: SKAdTestError.Code](skadtesterror/invalidwinningpostbackcount.md)
+- [static var invalidWinningPostbackCount: SKAdTestError.Code](./invalidwinningpostbackcount.md)
   The number of winning postbacks isn’t valid, in the testing environment.
-- [static var missingPostbacks: SKAdTestError.Code](skadtesterror/missingpostbacks.md)
+- [static var missingPostbacks: SKAdTestError.Code](./missingpostbacks.md)
   The testing environment doesn’t have any postbacks.
-- [static var misplacedWinnerPostback: SKAdTestError.Code](skadtesterror/misplacedwinnerpostback.md)
+- [static var misplacedWinnerPostback: SKAdTestError.Code](./misplacedwinnerpostback.md)
   A winning postback wasn’t found in the first position, in the testing environment.
-- [static var missingWinningPostback: SKAdTestError.Code](skadtesterror/missingwinningpostback.md)
+- [static var missingWinningPostback: SKAdTestError.Code](./missingwinningpostback.md)
   The testing environment is missing a winning postback.
-- [static var noPendingPostbacks: SKAdTestError.Code](skadtesterror/nopendingpostbacks.md)
+- [static var noPendingPostbacks: SKAdTestError.Code](./nopendingpostbacks.md)
   The test session doesn’t have any pending postbacks to send.
-- [static var unlinkedWinningPostbacks: SKAdTestError.Code](skadtesterror/unlinkedwinningpostbacks.md)
+- [static var unlinkedWinningPostbacks: SKAdTestError.Code](./unlinkedwinningpostbacks.md)
   The postbacks aren’t correctly related to one another.
 
 

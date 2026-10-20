@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kModePageControlChangeableValues](1638113-anonymous/kmodepagecontrolchangeablevalues.md)
-- [kModePageControlCurrentValues](1638113-anonymous/kmodepagecontrolcurrentvalues.md)
-- [kModePageControlDefaultValues](1638113-anonymous/kmodepagecontroldefaultvalues.md)
-- [kModePageControlSavedValues](1638113-anonymous/kmodepagecontrolsavedvalues.md)
+- [kModePageControlChangeableValues](./api-1638113-anonymous/kmodepagecontrolchangeablevalues.md)
+- [kModePageControlCurrentValues](./api-1638113-anonymous/kmodepagecontrolcurrentvalues.md)
+- [kModePageControlDefaultValues](./api-1638113-anonymous/kmodepagecontroldefaultvalues.md)
+- [kModePageControlSavedValues](./api-1638113-anonymous/kmodepagecontrolsavedvalues.md)
 
 
 ---

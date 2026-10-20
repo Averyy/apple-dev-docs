@@ -1,7 +1,8 @@
 # rangeOfComposedCharacterSequences(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range in the string of the composed character sequences for a given range.
 
@@ -20,6 +21,10 @@ Returns the range in the string of the composed character sequences for a given 
 func rangeOfComposedCharacterSequences(for range: NSRange) -> NSRange
 ```
 
+```objc
+- (NSRange) rangeOfComposedCharacterSequencesForRange:(NSRange) range;
+```
+
 #### Return Value
 
 The range in the receiver that includes the composed character sequences in `range`.
@@ -34,7 +39,8 @@ This method provides a convenient way to grow a range to include all composed ch
 
 ## See Also
 
-- [func rangeOfComposedCharacterSequence(at: Int) -> NSRange](nsstring/rangeofcomposedcharactersequence(at:).md)
+### Determining Composed Character Sequences
+- [func rangeOfComposedCharacterSequence(at: Int) -> NSRange](./rangeofcomposedcharactersequence%28at%29.md)
   Returns the range in the receiver of the composed character sequence located at a given index.
 
 

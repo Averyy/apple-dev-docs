@@ -1,7 +1,8 @@
 # SCNetworkInterfaceCopyMediaSubTypes(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a list of available media subtypes for the specified interface configuration options.
 
@@ -14,45 +15,50 @@ Returns a list of available media subtypes for the specified interface configura
 func SCNetworkInterfaceCopyMediaSubTypes(_ available: CFArray) -> CFArray?
 ```
 
+```c
+CFArrayRefSCNetworkInterfaceCopyMediaSubTypes(CFArrayRef available);
+```
+
 #### Return Value
 
 An array of available media subtypes (for example, 10BaseT/UTP, 100baseTX, etc), or `NULL` if no subtypes are available
 
 ## Parameters
 
-- `available`: The available options as returned by the [`SCNetworkInterfaceCopyMediaOptions(_:_:_:_:_:)`](scnetworkinterfacecopymediaoptions(_:_:_:_:_:).md) function.
+- `available`: The available options as returned by the [`SCNetworkInterfaceCopyMediaOptions(_:_:_:_:_:)`](./scnetworkinterfacecopymediaoptions%28_,_,_,_,_%29.md) function.
 
 ## See Also
 
-- [func SCNetworkInterfaceCopyAll() -> CFArray](scnetworkinterfacecopyall().md)
+### Configuring Network Interfaces
+- [func SCNetworkInterfaceCopyAll() -> CFArray](./scnetworkinterfacecopyall%28%29.md)
   Returns all network-capable interfaces on the system.
-- [func SCNetworkInterfaceCopyMTU(SCNetworkInterface, UnsafeMutablePointer<Int32>?, UnsafeMutablePointer<Int32>?, UnsafeMutablePointer<Int32>?) -> Bool](scnetworkinterfacecopymtu(_:_:_:_:).md)
+- [func SCNetworkInterfaceCopyMTU(SCNetworkInterface, UnsafeMutablePointer<Int32>?, UnsafeMutablePointer<Int32>?, UnsafeMutablePointer<Int32>?) -> Bool](./scnetworkinterfacecopymtu%28_,_,_,_%29.md)
   Returns the current MTU setting and the range of allowable values for the specified network interface.
-- [func SCNetworkInterfaceCopyMediaOptions(SCNetworkInterface, UnsafeMutablePointer<Unmanaged<CFDictionary>?>?, UnsafeMutablePointer<Unmanaged<CFDictionary>?>?, UnsafeMutablePointer<Unmanaged<CFArray>?>?, Bool) -> Bool](scnetworkinterfacecopymediaoptions(_:_:_:_:_:).md)
+- [func SCNetworkInterfaceCopyMediaOptions(SCNetworkInterface, UnsafeMutablePointer<Unmanaged<CFDictionary>?>?, UnsafeMutablePointer<Unmanaged<CFDictionary>?>?, UnsafeMutablePointer<Unmanaged<CFArray>?>?, Bool) -> Bool](./scnetworkinterfacecopymediaoptions%28_,_,_,_,_%29.md)
   Returns information media options for the specified network interface.
-- [func SCNetworkInterfaceCopyMediaSubTypeOptions(CFArray, CFString) -> CFArray?](scnetworkinterfacecopymediasubtypeoptions(_:_:).md)
+- [func SCNetworkInterfaceCopyMediaSubTypeOptions(CFArray, CFString) -> CFArray?](./scnetworkinterfacecopymediasubtypeoptions%28_,_%29.md)
   Returns a list of available media options for the specified interface configuration options and subtype.
-- [func SCNetworkInterfaceCreateWithInterface(SCNetworkInterface, CFString) -> SCNetworkInterface?](scnetworkinterfacecreatewithinterface(_:_:).md)
+- [func SCNetworkInterfaceCreateWithInterface(SCNetworkInterface, CFString) -> SCNetworkInterface?](./scnetworkinterfacecreatewithinterface%28_,_%29.md)
   Creates a new network interface layered on top of the specified interface.
-- [func SCNetworkInterfaceForceConfigurationRefresh(SCNetworkInterface) -> Bool](scnetworkinterfaceforceconfigurationrefresh(_:).md)
+- [func SCNetworkInterfaceForceConfigurationRefresh(SCNetworkInterface) -> Bool](./scnetworkinterfaceforceconfigurationrefresh%28_%29.md)
   Sends a notification to interested network configuration agents to immediately retry their configuration.
-- [func SCNetworkInterfaceGetBSDName(SCNetworkInterface) -> CFString?](scnetworkinterfacegetbsdname(_:).md)
+- [func SCNetworkInterfaceGetBSDName(SCNetworkInterface) -> CFString?](./scnetworkinterfacegetbsdname%28_%29.md)
   Returns the BSD interface or device name for the specified interface.
-- [func SCNetworkInterfaceGetConfiguration(SCNetworkInterface) -> CFDictionary?](scnetworkinterfacegetconfiguration(_:).md)
+- [func SCNetworkInterfaceGetConfiguration(SCNetworkInterface) -> CFDictionary?](./scnetworkinterfacegetconfiguration%28_%29.md)
   Returns the configuration settings associated with the specified interface.
-- [func SCNetworkInterfaceGetExtendedConfiguration(SCNetworkInterface, CFString) -> CFDictionary?](scnetworkinterfacegetextendedconfiguration(_:_:).md)
+- [func SCNetworkInterfaceGetExtendedConfiguration(SCNetworkInterface, CFString) -> CFDictionary?](./scnetworkinterfacegetextendedconfiguration%28_,_%29.md)
   Returns the extended configuration settings associated with the specified interface.
-- [func SCNetworkInterfaceGetHardwareAddressString(SCNetworkInterface) -> CFString?](scnetworkinterfacegethardwareaddressstring(_:).md)
+- [func SCNetworkInterfaceGetHardwareAddressString(SCNetworkInterface) -> CFString?](./scnetworkinterfacegethardwareaddressstring%28_%29.md)
   Returns a displayable link layer address for the specified interface.
-- [func SCNetworkInterfaceGetInterface(SCNetworkInterface) -> SCNetworkInterface?](scnetworkinterfacegetinterface(_:).md)
+- [func SCNetworkInterfaceGetInterface(SCNetworkInterface) -> SCNetworkInterface?](./scnetworkinterfacegetinterface%28_%29.md)
   Returns the underlying interface, for layered network interfaces.
-- [func SCNetworkInterfaceGetInterfaceType(SCNetworkInterface) -> CFString?](scnetworkinterfacegetinterfacetype(_:).md)
+- [func SCNetworkInterfaceGetInterfaceType(SCNetworkInterface) -> CFString?](./scnetworkinterfacegetinterfacetype%28_%29.md)
   Returns the network interface type of the specified interface.
-- [func SCNetworkInterfaceGetLocalizedDisplayName(SCNetworkInterface) -> CFString?](scnetworkinterfacegetlocalizeddisplayname(_:).md)
+- [func SCNetworkInterfaceGetLocalizedDisplayName(SCNetworkInterface) -> CFString?](./scnetworkinterfacegetlocalizeddisplayname%28_%29.md)
   Returns the localized display name, such as “Ethernet” or “FireWire”, for the specified interface.
-- [func SCNetworkInterfaceGetSupportedInterfaceTypes(SCNetworkInterface) -> CFArray?](scnetworkinterfacegetsupportedinterfacetypes(_:).md)
+- [func SCNetworkInterfaceGetSupportedInterfaceTypes(SCNetworkInterface) -> CFArray?](./scnetworkinterfacegetsupportedinterfacetypes%28_%29.md)
   Identifies all of the network interface types, such as PPP, that can be layered on top of the specified interface.
-- [func SCNetworkInterfaceGetSupportedProtocolTypes(SCNetworkInterface) -> CFArray?](scnetworkinterfacegetsupportedprotocoltypes(_:).md)
+- [func SCNetworkInterfaceGetSupportedProtocolTypes(SCNetworkInterface) -> CFArray?](./scnetworkinterfacegetsupportedprotocoltypes%28_%29.md)
   Identifies all of the network protocol types, such as IPv4 and IPv6, that can be layered on top of the specified interface.
 
 

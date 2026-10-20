@@ -1,7 +1,8 @@
 # QuestionTopic
 
 **Framework**: PermissionKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines a question topic that can be used to interpret what a person is asking for.
 
@@ -21,17 +22,17 @@ protocol QuestionTopic : Decodable, Encodable
 ## Topics
 
 ### Getting the topic identifier
-- [static var id: String](questiontopic/id.md)
+- [static var id: String](./questiontopic/id.md)
   The unique identifier for the topic.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
 ### Conforming Types
-- [CommunicationTopic](communicationtopic.md)
-- [SignificantAppUpdateTopic](significantappupdatetopic.md)
+- [CommunicationTopic](./communicationtopic.md)
+- [SignificantAppUpdateTopic](./significantappupdatetopic.md)
 
 
 ---

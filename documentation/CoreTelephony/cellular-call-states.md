@@ -1,19 +1,20 @@
 # Cellular Call States
 
-**Framework**: Core Telephony
+**Framework**: Core Telephony  
+**Role**: API Collection
 
 States of cellular calls; one of dialing, incoming, connected, or disconnected.
 
 ## Topics
 
 ### Constants
-- [let CTCallStateDialing: String](ctcallstatedialing.md)
+- [let CTCallStateDialing: String](./ctcallstatedialing.md)
   The call state, before establishing the connection, when the user initiates the call.
-- [let CTCallStateIncoming: String](ctcallstateincoming.md)
+- [let CTCallStateIncoming: String](./ctcallstateincoming.md)
   The call state, before establishing the connection, when a call is incoming but not yet answered by the user.
-- [let CTCallStateConnected: String](ctcallstateconnected.md)
+- [let CTCallStateConnected: String](./ctcallstateconnected.md)
   The call state when fully establishing the call for all parties involved.
-- [let CTCallStateDisconnected: String](ctcallstatedisconnected.md)
+- [let CTCallStateDisconnected: String](./ctcallstatedisconnected.md)
   The call state upon call termination.
 
 

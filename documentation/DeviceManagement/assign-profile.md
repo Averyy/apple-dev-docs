@@ -1,7 +1,8 @@
 # Assign a Profile
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Assign a profile to a list of devices.
 
@@ -10,7 +11,7 @@ Assign a profile to a list of devices.
 
 ## Mentions
 
-- [Migrating managed devices](migrating-managed-devices.md)
+- [Migrating managed devices](./migrating-managed-devices.md)
 
 #### Discussion
 
@@ -25,10 +26,10 @@ With X-Server-Protocol-Version 10 and later, the response also includes `retry_a
 ## Topics
 
 ### Request and Response
-- [object ProfileServiceRequest](profileservicerequest.md)
+- [object ProfileServiceRequest](./profileservicerequest.md)
   The request for assigning a profile to a set of devices.
-- [object AssignProfileResponse](assignprofileresponse.md)
-- [object AssignProfileResponse.Devices](assignprofileresponse/devices-data.dictionary.md)
+- [object AssignProfileResponse](./assignprofileresponse.md)
+- [object AssignProfileResponse.Devices](./assignprofileresponse/devices-data.dictionary.md)
 
 ## Endpoint
 
@@ -36,15 +37,30 @@ With X-Server-Protocol-Version 10 and later, the response also includes `retry_a
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ProfileServiceRequest`
+
 The request for assigning a profile to a set of devices.
+
+## Responses
+
+- `200` OK (`AssignProfileResponse`, `application/json`)
+- `400` Bad Request:
+
+  - `DEVICE_ID_REQUIRED`: The request did not contain any device IDs.
+  - `PROFILE_UUID_REQUIRED`: The request did not contain a profile ID.
+  - `USER_AGENT_INVALID:`  The `User-Agent` header is invalid.
+  - `USER_AGENT_MISSING:`  The `User-Agent` header is missing or has no assigned value.
+- `404` Not Found: The profile with the specified UUID could not be found.
 
 ## See Also
 
-- [Define a Profile](define-profile.md)
+### Profile management
+- [Define a Profile](./define-profile.md)
   Define a profile that can be distributed to the devices in your organization.
-- [Get a Profile](fetch-profile.md)
+- [Get a Profile](./fetch-profile.md)
   Get details about a profile.
-- [Remove a Profile](clear-device-profile.md)
+- [Remove a Profile](./clear-device-profile.md)
   Remove a profile from a list of devices.
 
 

@@ -1,7 +1,8 @@
 # isAnchored
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current anchoring state of the entity.
 
@@ -11,7 +12,7 @@ The current anchoring state of the entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let isAnchored: Bool
 
 ## See Also
 
-- [let anchor: any HasAnchoring](sceneevents/anchoredstatechanged/anchor.md)
+### Characterizing an update
+- [let anchor: any HasAnchoring](./anchor.md)
   The entity whose anchoring state changed.
 
 

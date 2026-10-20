@@ -1,7 +1,8 @@
 # variant
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,15 @@
 var variant: AVAssetVariant? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAssetVariant * variant;
+```
+
 ## See Also
 
-- [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemlikelytokeepupevent/loadedtimeranges-8yzws.md)
-- [var timeTaken: TimeInterval](avmetricplayeritemlikelytokeepupevent/timetaken.md)
+### Inspecting the event
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-8yzws.md)
+- [var timeTaken: TimeInterval](./timetaken.md)
 
 
 ---

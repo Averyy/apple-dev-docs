@@ -1,7 +1,8 @@
 # AEDataStorageType
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque data type used to store data in Apple event descriptors.
 
@@ -15,9 +16,13 @@ An opaque data type used to store data in Apple event descriptors.
 typealias AEDataStorageType = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueAEDataStorageType *AEDataStorageType;
+```
+
 #### Discussion
 
-See [`AEDesc`](aedesc.md) for related information.
+See [`AEDesc`](./aedesc.md) for related information.
 
 
 ---

@@ -1,11 +1,12 @@
 # MobileDocumentRequest Implementations
 
-**Framework**: ProximityReader
+**Framework**: ProximityReader  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MobileDriversLicenseRawDataRequest.Response](mobiledriverslicenserawdatarequest/response.md)
+- [MobileDriversLicenseRawDataRequest.Response](./response.md)
   A type that contains the response information from a successful mobile driver’s license raw data request.
 
 

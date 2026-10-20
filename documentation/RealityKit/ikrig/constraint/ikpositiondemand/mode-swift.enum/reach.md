@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKPositionDemand.Mode.reach
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode which uses the set position target.
 

@@ -1,7 +1,8 @@
 # textureSemantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The intended use of the object’s texture property.
 
@@ -11,7 +12,7 @@ The intended use of the object’s texture property.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ static let textureSemantic: TextureResource.Semantic
 
 ## See Also
 
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/ambientocclusion-swift.struct/texture.md)
+### Accessing ambient occlusion values
+- [var texture: PhysicallyBasedMaterial.Texture?](./texture.md)
   The amount of ambient occlusion specified using a UV-mapped image.
 
 

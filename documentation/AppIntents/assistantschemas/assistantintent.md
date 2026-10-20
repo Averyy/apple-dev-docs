@@ -1,7 +1,8 @@
 # AssistantSchemas.AssistantIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for types you use for assistant functionality.
 
@@ -19,14 +20,14 @@ protocol AssistantIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var activate: some AssistantSchemas.Intent](assistantschemas/assistantintent/activate.md)
+- [var activate: some AssistantSchemas.Intent](./assistantintent/activate.md)
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
 
 
 ---

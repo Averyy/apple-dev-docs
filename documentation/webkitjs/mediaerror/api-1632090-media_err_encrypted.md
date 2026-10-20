@@ -9,16 +9,17 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short MEDIA_ERR_ENCRYPTED;
 ```
 
 ## See Also
 
-- [MEDIA_ERR_ABORTED](mediaerror/1629517-media_err_aborted.md)
-- [MEDIA_ERR_DECODE](mediaerror/1633076-media_err_decode.md)
-- [MEDIA_ERR_NETWORK](mediaerror/1630423-media_err_network.md)
-- [MEDIA_ERR_SRC_NOT_SUPPORTED](mediaerror/1629246-media_err_src_not_supported.md)
+### Miscellaneous
+- [MEDIA_ERR_ABORTED](./api-1629517-media_err_aborted.md)
+- [MEDIA_ERR_DECODE](./api-1633076-media_err_decode.md)
+- [MEDIA_ERR_NETWORK](./api-1630423-media_err_network.md)
+- [MEDIA_ERR_SRC_NOT_SUPPORTED](./api-1629246-media_err_src_not_supported.md)
 
 
 ---

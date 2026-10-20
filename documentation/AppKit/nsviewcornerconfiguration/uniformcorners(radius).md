@@ -1,7 +1,8 @@
 # uniformCorners(radius:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that applies the given radius uniformly to all corners, using the largest of the resolved corner radii when they differ.
 
@@ -12,6 +13,10 @@ A configuration that applies the given radius uniformly to all corners, using th
 
 ```swift
 class func uniformCorners(radius: NSViewCornerRadius) -> NSViewCornerConfiguration
+```
+
+```objc
++ (NSViewCornerConfiguration *) configurationWithUniformRadius:(NSViewCornerRadius *) radius;
 ```
 
 

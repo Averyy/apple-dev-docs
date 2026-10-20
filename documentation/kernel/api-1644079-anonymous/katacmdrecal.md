@@ -1,14 +1,15 @@
 # kATAcmdRecal
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAcmdRecal = 0x0010
 ```
 

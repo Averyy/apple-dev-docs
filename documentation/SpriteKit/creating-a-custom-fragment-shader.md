@@ -1,6 +1,7 @@
 # Creating a Custom Fragment Shader
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Write a fragment shader using the set of SpriteKit-exposed symbols, and supply it with custom data.
 
@@ -8,7 +9,7 @@ Write a fragment shader using the set of SpriteKit-exposed symbols, and supply i
 
 Your fragment shader should be written in the OpenGL ES 2.0 shading language. SpriteKit automatically does the necessary work to make sure this shader compiles correctly in both iOS and macOS. The shader object compiles your shader by appending the source code you provide to a preamble created by SpriteKit. This preamble declares all of the standard SpriteKit variables and functions, including declarations for any uniforms you have associated with the shader object.
 
-##### Use Spritekit Provided Data in a Shader
+##### Use SpriteKit-Provided Data in a Shader
 
 The following table describes the SpriteKit symbols made available to your shader.
 
@@ -22,9 +23,9 @@ The following table describes the SpriteKit symbols made available to your shade
 | float v_path_distance; | Varying | Provided only when the shader is attached to an SKShapeNode [spritekit/skshapenode] object’s strokeShader [spritekit/skshapenode/1519784-strokeshader] property. This value represents the distance along the path in points. |
 | vec4 SKDefaultShading() | Function | A function that provides the default behavior used by SpriteKit. |
 
-##### Provide Custom Per Frame Data to a Shader
+##### Provide Custom Per-Frame Data to a Shader
 
-To make a global variable available to your shader, you create an [`SKUniform`](skuniform.md) and add it to the shader’s [`uniforms`](skshader/uniforms.md) array. Uniforms can be modified at any time on the CPU, but they’re constant on the GPU. Therefore, uniforms are the way to provide your shader with per-frame data.
+To make a global variable available to your shader, you create an [`SKUniform`](./skuniform.md) and add it to the shader’s [`uniforms`](./skshader/uniforms.md) array. Uniforms can be modified at any time on the CPU, but they’re constant on the GPU. Therefore, uniforms are the way to provide your shader with per-frame data.
 
 The following code shows how to pass a size value to a shader by using a uniform.
 
@@ -43,9 +44,9 @@ uniformBasedShader.uniforms = [
 
 Because uniforms are shared across executions in a given frame, every node that executes `uniformBasedShader` in the example above will read the same value for `u_sprite_size`.
 
-##### Provide Custom Per Primitive Data to a Shader
+##### Provide Custom Per-Primitive Data to a Shader
 
-To associate shader variables with specific nodes, you use [`SKAttribute`](skattribute.md). Using attributes rather than uniforms allows a single [`SKShader`](skshader.md) to be shared between nodes, each one defining their own value for a shader variable. The following code demonstrates attributes by passing the size of a sprite to a shader as an attribute.
+To associate shader variables with specific nodes, you use [`SKAttribute`](./skattribute.md). Using attributes rather than uniforms allows a single [`SKShader`](./skshader.md) to be shared between nodes, each one defining their own value for a shader variable. The following code demonstrates attributes by passing the size of a sprite to a shader as an attribute.
 
 ```swift
 let attributeBasedShader = SKShader(fileNamed: "UsingAttributes.fsh")
@@ -79,11 +80,12 @@ void main()
 
 ## See Also
 
-- [convenience init(fileNamed: String)](skshader/init(filenamed:).md)
+### Creating a Shader
+- [convenience init(fileNamed: String)](./skshader/init%28filenamed%29.md)
   Creates a new shader object by loading the source for a fragment shader from a file stored in the app’s bundle.
-- [init(source: String, uniforms: [SKUniform])](skshader/init(source:uniforms:).md)
+- [init(source: String, uniforms: [SKUniform])](./skshader/init%28source,uniforms%29.md)
   Initializes a new shader object using the specified source and uniform data.
-- [init(source: String)](skshader/init(source:).md)
+- [init(source: String)](./skshader/init%28source%29.md)
   Initializes a new shader object using the specified source code.
 
 

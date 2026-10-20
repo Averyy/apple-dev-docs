@@ -1,7 +1,8 @@
 # ManagedApplicationListResponse.ManagedApplicationList
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains status information about managed apps.
 
@@ -16,14 +17,14 @@ A dictionary that contains status information about managed apps.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationListResponse.ManagedApplicationList
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier](managedapplicationlistresponse/managedapplicationlist-data.dictionary/any-app-identifier-data.dictionary.md)
+- [object ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier](./managedapplicationlist-data.dictionary/any-app-identifier-data.dictionary.md)
   The bundle identifier of the managed app.
 
 ## Properties
@@ -32,7 +33,8 @@ object ManagedApplicationListResponse.ManagedApplicationList
 
 ## See Also
 
-- [object ManagedApplicationListResponse.ErrorChainItem](managedapplicationlistresponse/errorchainitem.md)
+### Objects
+- [object ManagedApplicationListResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

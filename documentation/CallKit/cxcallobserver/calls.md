@@ -1,7 +1,8 @@
 # calls
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the active calls of the telephony provider.
 
@@ -16,6 +17,10 @@ Returns the active calls of the telephony provider.
 
 ```swift
 var calls: [CXCall] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CXCall *> * calls;
 ```
 
 

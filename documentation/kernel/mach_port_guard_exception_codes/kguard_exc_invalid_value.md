@@ -1,14 +1,15 @@
 # kGUARD_EXC_INVALID_VALUE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_INVALID_VALUE = 1u << 10
 ```
 

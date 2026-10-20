@@ -1,7 +1,8 @@
 # init(region:elements:options:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new mobile national ID card display request.
 

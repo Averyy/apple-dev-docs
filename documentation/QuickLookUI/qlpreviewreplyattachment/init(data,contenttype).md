@@ -1,7 +1,8 @@
 # init(data:contentType:)
 
 **Framework**: Quick Look UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview reply attachment with the specified type.
 
@@ -12,6 +13,10 @@ Creates a preview reply attachment with the specified type.
 
 ```swift
 init(data: Data, contentType: UTType)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data contentType:(UTType *) contentType;
 ```
 
 ## Parameters

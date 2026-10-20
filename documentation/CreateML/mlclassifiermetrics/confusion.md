@@ -1,16 +1,17 @@
 # confusion
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A table comparing the actual and predicted labels for each classification category.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
-- tvOS 16.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 10.14+ - Deprecated in 14.0
+- tvOS 16.0+ - Deprecated in 17.0
 - visionOS 1.0+
 
 ## Declaration
@@ -21,13 +22,13 @@ var confusion: MLDataTable { get }
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
 #### Discussion
 
 The confusion data table describes how examples were mislabeled between categories. Each row contains the true label, the predicted label, and the count for each possible combination of categories. For example, the table below lists that “business” was labeled correctly with “business” 113 times, while “business” was confused with “entertainment” 2 times.
 
-![A table showing the format of the confusion table containing rows for the true label the label predicted by](/images/com.apple.createml/MLClassifierMetrics-confusion-1@2x.png)
+![A table showing the format of the confusion table containing rows for the true label the label predicted by](https://developer.apple.com/tutorials/images/com.apple.createml/MLClassifierMetrics-confusion-1@2x.png)
 
 To gain insight into the performance of your model, you can use this data table to determine what categories your model is most confused about (making the most mistakes on) for a given data set. For example, the code listing below shows how to find the mistake that happens most frequently.
 
@@ -43,7 +44,7 @@ print(mostCommonError ?? "The confusion table is empty.")
 // ["Predicted": "tech", "True Label": "business", "Count": 9]
 ```
 
-Another useful view into this data is to compare the actual and predicated labels using a matrix. Printing the [`MLClassifierMetrics`](mlclassifiermetrics.md) directly displays the matrix format.
+Another useful view into this data is to compare the actual and predicated labels using a matrix. Printing the [`MLClassifierMetrics`](../mlclassifiermetrics.md) directly displays the matrix format.
 
 ```swift
 print(model.validationMetrics)
@@ -63,13 +64,14 @@ In this example, the upper left hand count shows that 113 business examples were
 
 ## See Also
 
-- [var classificationError: Double](mlclassifiermetrics/classificationerror.md)
+### Understanding the model
+- [var classificationError: Double](./classificationerror.md)
   The fraction of incorrectly labeled examples.
-- [var precisionRecall: MLDataTable](mlclassifiermetrics/precisionrecall.md)
+- [var precisionRecall: MLDataTable](./precisionrecall.md)
   A data table listing the precision and recall percentages for each class.
-- [var confusionDataFrame: DataFrame](mlclassifiermetrics/confusiondataframe.md)
+- [var confusionDataFrame: DataFrame](./confusiondataframe.md)
   A data frame comparing the actual and predicted labels for each class.
-- [var precisionRecallDataFrame: DataFrame](mlclassifiermetrics/precisionrecalldataframe.md)
+- [var precisionRecallDataFrame: DataFrame](./precisionrecalldataframe.md)
   A data frame listing the precision and recall percentages for each class.
 
 

@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes from one buffer entry to the next.
 
@@ -19,17 +20,22 @@ The number of bytes from one buffer entry to the next.
 var stride: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger stride;
+```
+
 #### Discussion
 
-The default value is `1`. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+The default value is `1`. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
-- [var stepFunction: MTLStepFunction](mtlbufferlayoutdescriptor/stepfunction.md)
+### Describing fetch behavior
+- [var stepFunction: MTLStepFunction](./stepfunction.md)
   Determines how and when compute functions fetch data.
-- [var stepRate: Int](mtlbufferlayoutdescriptor/steprate.md)
+- [var stepRate: Int](./steprate.md)
   How frequently the step function should load data.
-- [enum MTLStepFunction](mtlstepfunction.md)
+- [enum MTLStepFunction](../mtlstepfunction.md)
   The frequency and locations at which a function fetches attribute data.
 
 

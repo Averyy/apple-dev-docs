@@ -1,7 +1,8 @@
 # modifier
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view modifier.
 
@@ -22,9 +23,10 @@ var modifier: Modifier
 
 ## See Also
 
-- [init(content: Content, modifier: Modifier)](modifiedcontent/init(content:modifier:).md)
+### Creating a modified content view
+- [init(content: Content, modifier: Modifier)](./init%28content,modifier%29.md)
   A structure that defines the content and modifier needed to produce a new view or view modifier.
-- [var content: Content](modifiedcontent/content.md)
+- [var content: Content](./content.md)
   The content that the modifier transforms into a new view or new view modifier.
 
 

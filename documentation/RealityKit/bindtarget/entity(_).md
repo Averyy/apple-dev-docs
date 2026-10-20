@@ -1,7 +1,8 @@
 # entity(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a complex bind path from a particular child entity of the current entity.
 
@@ -11,7 +12,7 @@ Generates a complex bind path from a particular child entity of the current enti
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ static func entity(_ name: String) -> BindTarget.EntityPath
 
 ## See Also
 
-- [static func scene(String) -> BindTarget.ScenePath](bindtarget/scene(_:).md)
+### Targeting entities and scenes
+- [static func scene(String) -> BindTarget.ScenePath](./scene%28_%29.md)
   Generates a bind path from a particular scene.
-- [BindTarget.ScenePath](bindtarget/scenepath.md)
+- [BindTarget.ScenePath](./scenepath.md)
   A bind path for a particular scene.
-- [static func anchorEntity(String) -> BindTarget.EntityPath](bindtarget/anchorentity(_:).md)
+- [static func anchorEntity(String) -> BindTarget.EntityPath](./anchorentity%28_%29.md)
   Generates a complex bind path from a particular anchor entity in the scene.
-- [BindTarget.EntityPath](bindtarget/entitypath.md)
+- [BindTarget.EntityPath](./entitypath.md)
   A bind path context for a particular entity.
 
 

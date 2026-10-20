@@ -1,17 +1,20 @@
 # sessionConflict
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The requested operation could not be completed because the session has been updated on the server, causing a conflict.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.12+ - Deprecated in 10.14
+- tvOS 10.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: GKGameSession is deprecated, use real-time and turn-based matchmaking APIs instead.
 
 ## Declaration
 
@@ -21,35 +24,36 @@ static var sessionConflict: GKGameSessionError.Code { get }
 
 ## See Also
 
-- [static var badContainer: GKGameSessionError.Code](gkgamesessionerror/badcontainer.md)
+### Error Codes
+- [static var badContainer: GKGameSessionError.Code](./badcontainer.md)
   The requested operation could not be completed because the iCloud container is invalid.
-- [static var cloudDriveDisabled: GKGameSessionError.Code](gkgamesessionerror/clouddrivedisabled.md)
+- [static var cloudDriveDisabled: GKGameSessionError.Code](./clouddrivedisabled.md)
   The requested operation could not be completed because iCloud Drive has been disabled for the application.
-- [static var cloudQuotaExceeded: GKGameSessionError.Code](gkgamesessionerror/cloudquotaexceeded.md)
+- [static var cloudQuotaExceeded: GKGameSessionError.Code](./cloudquotaexceeded.md)
   The requested operation could not be completed because the user’s iCloud quota would be exceeded.
-- [static var connectionCancelledByUser: GKGameSessionError.Code](gkgamesessionerror/connectioncancelledbyuser.md)
+- [static var connectionCancelledByUser: GKGameSessionError.Code](./connectioncancelledbyuser.md)
   The requested operation could not be completed because the connection to the session was cancelled.
-- [static var connectionFailed: GKGameSessionError.Code](gkgamesessionerror/connectionfailed.md)
+- [static var connectionFailed: GKGameSessionError.Code](./connectionfailed.md)
   The requested operation could not be completed because the session could not find other players to connect to.
-- [static var invalidSession: GKGameSessionError.Code](gkgamesessionerror/invalidsession.md)
+- [static var invalidSession: GKGameSessionError.Code](./invalidsession.md)
   The requested operation could not be completed because the Game Session does not exist or the player is not part of the game session.
-- [static var networkFailure: GKGameSessionError.Code](gkgamesessionerror/networkfailure.md)
+- [static var networkFailure: GKGameSessionError.Code](./networkfailure.md)
   The requested operation could not be completed due to an error communicating with the server.
-- [static var notAuthenticated: GKGameSessionError.Code](gkgamesessionerror/notauthenticated.md)
+- [static var notAuthenticated: GKGameSessionError.Code](./notauthenticated.md)
   The requested operation could not be completed because you are not signed in to iCloud.
-- [static var sendDataNoRecipients: GKGameSessionError.Code](gkgamesessionerror/senddatanorecipients.md)
+- [static var sendDataNoRecipients: GKGameSessionError.Code](./senddatanorecipients.md)
   The requested operation could not be completed because there are no recipients connected to session.
-- [static var sendDataNotConnected: GKGameSessionError.Code](gkgamesessionerror/senddatanotconnected.md)
+- [static var sendDataNotConnected: GKGameSessionError.Code](./senddatanotconnected.md)
   The requested operation could not be completed because you are not connected to the session.
-- [static var sendDataNotReachable: GKGameSessionError.Code](gkgamesessionerror/senddatanotreachable.md)
+- [static var sendDataNotReachable: GKGameSessionError.Code](./senddatanotreachable.md)
   The requested operation could not be completed because one or more players is not reachable.
-- [static var sendRateLimitReached: GKGameSessionError.Code](gkgamesessionerror/sendratelimitreached.md)
+- [static var sendRateLimitReached: GKGameSessionError.Code](./sendratelimitreached.md)
   The requested operation could not be completed because you have reached the limits for save data request.
-- [static var sessionHasMaxConnectedPlayers: GKGameSessionError.Code](gkgamesessionerror/sessionhasmaxconnectedplayers.md)
+- [static var sessionHasMaxConnectedPlayers: GKGameSessionError.Code](./sessionhasmaxconnectedplayers.md)
   The requested operation could not be completed because the session has reached the maximum number of connected players.
-- [static var sessionNotShared: GKGameSessionError.Code](gkgamesessionerror/sessionnotshared.md)
+- [static var sessionNotShared: GKGameSessionError.Code](./sessionnotshared.md)
   The requested operation could not be completed because this session has not been shared with other players.
-- [static var unknown: GKGameSessionError.Code](gkgamesessionerror/unknown.md)
+- [static var unknown: GKGameSessionError.Code](./unknown.md)
   The requested operation could not be completed due to an unknown error.
 
 

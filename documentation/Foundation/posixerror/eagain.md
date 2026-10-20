@@ -1,7 +1,8 @@
 # EAGAIN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 non-blocking and interrupt i/o. Resource temporarily unavailable.
 

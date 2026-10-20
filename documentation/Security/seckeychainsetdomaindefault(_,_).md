@@ -1,12 +1,15 @@
 # SecKeychainSetDomainDefault(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the default keychain for a specified preference domain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,17 +17,21 @@ Sets the default keychain for a specified preference domain.
 func SecKeychainSetDomainDefault(_ domain: SecPreferencesDomain, _ keychain: SecKeychain?) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainSetDomainDefault(SecPreferencesDomain domain, SecKeychainRef keychain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-A preference domain is a set of security-related preferences, such as the default keychain and the current keychain search list. Use this function if you want to set the default keychain for a specific preference domain. Use the [`SecKeychainSetDefault(_:)`](seckeychainsetdefault(_:).md) function if you want to set the default keychain for the current preference domain. See the [`SecKeychainSetPreferenceDomain(_:)`](seckeychainsetpreferencedomain(_:).md) function for a discussion of current and default preference domains.
+A preference domain is a set of security-related preferences, such as the default keychain and the current keychain search list. Use this function if you want to set the default keychain for a specific preference domain. Use the [`SecKeychainSetDefault(_:)`](./seckeychainsetdefault%28_%29.md) function if you want to set the default keychain for the current preference domain. See the [`SecKeychainSetPreferenceDomain(_:)`](./seckeychainsetpreferencedomain%28_%29.md) function for a discussion of current and default preference domains.
 
 ## Parameters
 
-- `domain`: The preference domain for which you wish to set the default keychain. See [`SecPreferencesDomain`](secpreferencesdomain.md) for possible domain values.
+- `domain`: The preference domain for which you wish to set the default keychain. See [`SecPreferencesDomain`](./secpreferencesdomain.md) for possible domain values.
 - `keychain`: A reference to the keychain you wish to set as default in the specified preference domain.
 
 

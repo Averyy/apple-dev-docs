@@ -1,7 +1,8 @@
 # safariViewController(_:didCompleteInitialLoad:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the initial URL load completed.
 
@@ -16,22 +17,27 @@ Tells the delegate that the initial URL load completed.
 optional func safariViewController(_ controller: SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Bool)
 ```
 
+```objc
+- (void) safariViewController:(SFSafariViewController *) controller didCompleteInitialLoad:(BOOL) didLoadSuccessfully;
+```
+
 #### Discussion
 
-This method is invoked when [`SFSafariViewController`](sfsafariviewcontroller.md) completes the loading of the URL that you pass to its initializer. The method is not invoked for any subsequent page loads in the same [`SFSafariViewController`](sfsafariviewcontroller.md) instance.
+This method is invoked when [`SFSafariViewController`](../sfsafariviewcontroller.md) completes the loading of the URL that you pass to its initializer. The method is not invoked for any subsequent page loads in the same [`SFSafariViewController`](../sfsafariviewcontroller.md) instance.
 
 ## Parameters
 
 - `controller`: The view controller.
-- `didLoadSuccessfully`: [`true`](https://developer.apple.com/documentation/swift/true) if loading completed successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `didLoadSuccessfully`: [`true`](../../Swift/true.md) if loading completed successfully; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func safariViewController(SFSafariViewController, activityItemsFor: URL, title: String?) -> [UIActivity]](sfsafariviewcontrollerdelegate/safariviewcontroller(_:activityitemsfor:title:).md)
+### Working with the View Controller
+- [func safariViewController(SFSafariViewController, activityItemsFor: URL, title: String?) -> [UIActivity]](./safariviewcontroller%28_,activityitemsfor,title%29.md)
   Tells the delegate that the user tapped an Action button.
-- [func safariViewControllerDidFinish(SFSafariViewController)](sfsafariviewcontrollerdelegate/safariviewcontrollerdidfinish(_:).md)
+- [func safariViewControllerDidFinish(SFSafariViewController)](./safariviewcontrollerdidfinish%28_%29.md)
   Tells the delegate that the user dismissed the view.
-- [func safariViewController(SFSafariViewController, excludedActivityTypesFor: URL, title: String?) -> [UIActivity.ActivityType]](sfsafariviewcontrollerdelegate/safariviewcontroller(_:excludedactivitytypesfor:title:).md)
+- [func safariViewController(SFSafariViewController, excludedActivityTypesFor: URL, title: String?) -> [UIActivity.ActivityType]](./safariviewcontroller%28_,excludedactivitytypesfor,title%29.md)
 
 
 ---

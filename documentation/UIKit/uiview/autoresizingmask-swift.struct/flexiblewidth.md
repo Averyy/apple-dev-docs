@@ -1,16 +1,17 @@
 # flexibleWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Resizing performed by expanding or shrinking a view’s width.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ Resizing performed by expanding or shrinking a view’s width.
 static var flexibleWidth: UIView.AutoresizingMask { get }
 ```
 
+```c
+UIViewAutoresizingFlexibleWidth
+```
+
 ## See Also
 
-- [static var flexibleLeftMargin: UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct/flexibleleftmargin.md)
+### Constants
+- [static var flexibleLeftMargin: UIView.AutoresizingMask](./flexibleleftmargin.md)
   Resizing performed by expanding or shrinking a view in the direction of the left margin.
-- [static var flexibleRightMargin: UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct/flexiblerightmargin.md)
+- [static var flexibleRightMargin: UIView.AutoresizingMask](./flexiblerightmargin.md)
   Resizing performed by expanding or shrinking a view in the direction of the right margin.
-- [static var flexibleTopMargin: UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct/flexibletopmargin.md)
+- [static var flexibleTopMargin: UIView.AutoresizingMask](./flexibletopmargin.md)
   Resizing performed by expanding or shrinking a view in the direction of the top margin.
-- [static var flexibleHeight: UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct/flexibleheight.md)
+- [static var flexibleHeight: UIView.AutoresizingMask](./flexibleheight.md)
   Resizing performed by expanding or shrinking a view’s height.
-- [static var flexibleBottomMargin: UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct/flexiblebottommargin.md)
+- [static var flexibleBottomMargin: UIView.AutoresizingMask](./flexiblebottommargin.md)
   Resizing performed by expanding or shrinking a view in the direction of the bottom margin.
 
 

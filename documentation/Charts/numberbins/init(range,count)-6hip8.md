@@ -1,7 +1,8 @@
 # init(range:count:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the given number of bins for the range. Expects that the range length is a multiple of `count` to allow uniform integer bins.
 

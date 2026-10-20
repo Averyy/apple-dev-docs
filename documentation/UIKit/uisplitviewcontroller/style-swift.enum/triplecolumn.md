@@ -1,7 +1,8 @@
 # UISplitViewController.Style.tripleColumn
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The split view interface displays three columns.
 
@@ -18,11 +19,16 @@ The split view interface displays three columns.
 case tripleColumn
 ```
 
+```c
+UISplitViewControllerStyleTripleColumn
+```
+
 ## See Also
 
-- [UISplitViewController.Style.unspecified](uisplitviewcontroller/style-swift.enum/unspecified.md)
+### Constants
+- [UISplitViewController.Style.unspecified](./unspecified.md)
   The split view interface uses the classic split view style.
-- [UISplitViewController.Style.doubleColumn](uisplitviewcontroller/style-swift.enum/doublecolumn.md)
+- [UISplitViewController.Style.doubleColumn](./doublecolumn.md)
   The split view interface displays two columns.
 
 

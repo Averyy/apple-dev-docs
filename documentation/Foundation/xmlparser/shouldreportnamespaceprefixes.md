@@ -1,7 +1,8 @@
 # shouldReportNamespacePrefixes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the parser reports the prefixes indicating the scope of namespace declarations.
 
@@ -20,17 +21,22 @@ A Boolean value that determines whether the parser reports the prefixes indicati
 var shouldReportNamespacePrefixes: Bool { get set }
 ```
 
+```objc
+@property BOOL shouldReportNamespacePrefixes;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parser reports the scope of namespace declarations, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the parser reports the scope of namespace declarations, [`false`](../../Swift/false.md) otherwise. The default value is [`false`](../../Swift/false.md).
 
-The parser reports prefixes with the delegate methods [`parser(_:didStartMappingPrefix:toURI:)`](xmlparserdelegate/parser(_:didstartmappingprefix:touri:).md) and [`parser(_:didEndMappingPrefix:)`](xmlparserdelegate/parser(_:didendmappingprefix:).md).
+The parser reports prefixes with the delegate methods [`parser(_:didStartMappingPrefix:toURI:)`](../xmlparserdelegate/parser%28_,didstartmappingprefix,touri%29.md) and [`parser(_:didEndMappingPrefix:)`](../xmlparserdelegate/parser%28_,didendmappingprefix%29.md).
 
 ## See Also
 
-- [var shouldProcessNamespaces: Bool](xmlparser/shouldprocessnamespaces.md)
+### Managing Parser Behavior
+- [var shouldProcessNamespaces: Bool](./shouldprocessnamespaces.md)
   A Boolean value that determines whether the parser reports the namespaces and qualified names of elements.
-- [var shouldResolveExternalEntities: Bool](xmlparser/shouldresolveexternalentities.md)
+- [var shouldResolveExternalEntities: Bool](./shouldresolveexternalentities.md)
   A Boolean value that determines whether the parser reports declarations of external entities.
 
 

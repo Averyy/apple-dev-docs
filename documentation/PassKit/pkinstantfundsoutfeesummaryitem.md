@@ -1,7 +1,8 @@
 # PKInstantFundsOutFeeSummaryItem
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A summary item that represents a fee for an instant funds out transfer.
 
@@ -18,25 +19,30 @@ A summary item that represents a fee for an instant funds out transfer.
 class PKInstantFundsOutFeeSummaryItem
 ```
 
+```objc
+@interface PKInstantFundsOutFeeSummaryItem : PKPaymentSummaryItem
+```
+
 ## Relationships
 
 ### Inherits From
-- [PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+- [PKPaymentSummaryItem](./pkpaymentsummaryitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var summaryItems: [PKPaymentSummaryItem]](pkdisbursementrequest/summaryitems.md)
+### Setting the summary items
+- [var summaryItems: [PKPaymentSummaryItem]](./pkdisbursementrequest/summaryitems.md)
   An array of payment summary item objects that the framework presents to people.
-- [class PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+- [class PKPaymentSummaryItem](./pkpaymentsummaryitem.md)
   An object that defines a summary item in a payment request, taxes, discounts, shipping, a grand total, and the like.
-- [class PKDisbursementSummaryItem](pkdisbursementsummaryitem.md)
+- [class PKDisbursementSummaryItem](./pkdisbursementsummaryitem.md)
   A summary item that represents a disbursement.
 
 

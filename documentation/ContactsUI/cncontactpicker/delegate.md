@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The picker delegate to be notified when the user chooses a contact.
 
@@ -14,9 +15,14 @@ The picker delegate to be notified when the user chooses a contact.
 weak var delegate: (any CNContactPickerDelegate)? { get set }
 ```
 
+```objc
+@property (weak) id<CNContactPickerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol CNContactPickerDelegate](cncontactpickerdelegate.md)
+### Responding to Picker Interactions
+- [protocol CNContactPickerDelegate](../cncontactpickerdelegate.md)
   The methods that you implement to respond to contact-picker user events.
 
 

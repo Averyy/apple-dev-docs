@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
@@ -26,15 +27,22 @@ The default implementation is `true`
 
 > **Note**: This should only be `false` if the model has been trained to have innate knowledge of this tool. For zero-shot prompting, it should always be `true`.
 
+## Default Implementations
+
+### Tool Implementations
+- [var includesSchemaInInstructions: Bool](./includesschemaininstructions-2yllg.md)
+  A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
+
 ## See Also
 
-- [var name: String](tool/name.md)
+### Inspecting a tool
+- [var name: String](./name.md)
   A unique name for the tool.
-- [var description: String](tool/description.md)
+- [var description: String](./description.md)
   A natural language description of when and how to use the tool.
-- [var parameters: GenerationSchema](tool/parameters.md)
+- [var parameters: GenerationSchema](./parameters.md)
   A schema for the parameters this tool accepts.
-- [typealias SessionProperty](tool/sessionproperty.md)
+- [typealias SessionProperty](./sessionproperty.md)
   A property wrapper that provides access to a session property from within a tool.
 
 

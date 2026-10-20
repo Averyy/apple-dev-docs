@@ -1,7 +1,8 @@
 # allowsFullScreen
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the scene can appear full screen.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the scene can appear full screen.
 var allowsFullScreen: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsFullScreen;
+```
+
 #### Discussion
 
 The system only checks the value of this property in Mac Catalyst apps.
 
 ## See Also
 
-- [var minimumSize: CGSize](uiscenesizerestrictions/minimumsize.md)
+### Setting the size restrictions
+- [var minimumSize: CGSize](./minimumsize.md)
   The minimum width and height supported by your app’s windows.
-- [var maximumSize: CGSize](uiscenesizerestrictions/maximumsize.md)
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum width and height supported by your app’s windows.
 
 

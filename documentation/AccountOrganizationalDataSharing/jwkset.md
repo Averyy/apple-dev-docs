@@ -1,7 +1,8 @@
 # JWKSet
 
 **Framework**: Account & Organizational Data Sharing  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 A set of JSON web keys.
 
@@ -10,14 +11,14 @@ A set of JSON web keys.
 
 ## Declaration
 
-```swift
+```
 object JWKSet
 ```
 
 ## Topics
 
 ### Getting the fields
-- [object JWKSet.Keys](jwkset/jwkset.keys.md)
+- [object JWKSet.Keys](./jwkset/jwkset.keys.md)
   An object that defines a single JSON Web Key.
 
 ## Properties
@@ -26,9 +27,10 @@ object JWKSet
 
 ## See Also
 
-- [object TokenResponse](tokenresponse.md)
+### Common objects
+- [object TokenResponse](./tokenresponse.md)
   The response token object returned on a successful request.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The error object returned after an unsuccessful request.
 
 

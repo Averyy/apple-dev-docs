@@ -1,7 +1,8 @@
 # JSONDecoder.DateDecodingStrategy.custom(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that formats custom dates by calling a user-defined function.
 
@@ -23,7 +24,8 @@ case custom(@Sendable (any Decoder) throws -> Date)
 
 ## See Also
 
-- [JSONDecoder.DateDecodingStrategy.formatted(_:)](jsondecoder/datedecodingstrategy-swift.enum/formatted(_:).md)
+### Custom Formats
+- [JSONDecoder.DateDecodingStrategy.formatted(_:)](./formatted%28_%29.md)
   The strategy that defers formatting settings to a supplied date formatter.
 
 

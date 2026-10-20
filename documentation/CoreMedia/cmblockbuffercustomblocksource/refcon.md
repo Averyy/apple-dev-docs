@@ -1,7 +1,8 @@
 # refCon
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contextual information passed to both the allocate and free function calls.
 
@@ -20,13 +21,18 @@ Contextual information passed to both the allocate and free function calls.
 var refCon: UnsafeMutableRawPointer?
 ```
 
+```c
+void * refCon;
+```
+
 ## See Also
 
-- [var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?](cmblockbuffercustomblocksource/allocateblock.md)
+### Properties
+- [var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?](./allocateblock.md)
   The function to allocate memory.
-- [var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?](cmblockbuffercustomblocksource/freeblock.md)
+- [var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?](./freeblock.md)
   A function to call once when the `CMBlockBuffer` is disposed.
-- [var version: UInt32](cmblockbuffercustomblocksource/version.md)
+- [var version: UInt32](./version.md)
 
 
 ---

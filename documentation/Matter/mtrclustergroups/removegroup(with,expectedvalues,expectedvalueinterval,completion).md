@@ -1,7 +1,8 @@
 # removeGroup(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func removeGroup(with params: MTRGroupsClusterRemoveGroupParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTRGroupsClusterRemoveGroupResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func removeGroup(with params: MTRGroupsClusterRemoveGroupParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTRGroupsClusterRemoveGroupResponseParams
+```
+
+```objc
+- (void) removeGroupWithParams:(MTRGroupsClusterRemoveGroupParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTRGroupsClusterRemoveGroupResponseParams *data, NSError *error)) completion;
 ```
 
 

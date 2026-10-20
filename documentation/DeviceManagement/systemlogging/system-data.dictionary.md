@@ -1,7 +1,8 @@
 # SystemLogging.System
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 This dictionary has one key, `Enable-Private-Data`. Setting that value to `true` enables private data logging for the entire system.
 
@@ -10,13 +11,14 @@ This dictionary has one key, `Enable-Private-Data`. Setting that value to `true`
 
 ## Declaration
 
-```swift
+```
 object SystemLogging.System
 ```
 
 ## See Also
 
-- [object SystemLogging.Subsystems](systemlogging/subsystems-data.dictionary.md)
+### Objects
+- [object SystemLogging.Subsystems](./subsystems-data.dictionary.md)
   A dictionary enabling the logging level for subsystems. See `Customizing Logging Behavior While Debugging` for more details about the format of the dictionary.
 
 

@@ -1,7 +1,8 @@
 # videoGravity
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates how the layer displays video content within its bounds.
 
@@ -18,15 +19,20 @@ A value that indicates how the layer displays video content within its bounds.
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 
+```objc
+@property (copy) AVLayerVideoGravity videoGravity;
+```
+
 #### Discussion
 
-Options are [`resizeAspect`](avlayervideogravity/resizeaspect.md), [`resizeAspectFill`](avlayervideogravity/resizeaspectfill.md), and [`resize`](avlayervideogravity/resize.md). The default is [`resizeAspect`](avlayervideogravity/resizeaspect.md).
+Options are [`resizeAspect`](../avlayervideogravity/resizeaspect.md), [`resizeAspectFill`](../avlayervideogravity/resizeaspectfill.md), and [`resize`](../avlayervideogravity/resize.md). The default is [`resizeAspect`](../avlayervideogravity/resizeaspect.md).
 
 This property is animatable.
 
 ## See Also
 
-- [var isPreviewing: Bool](avcapturevideopreviewlayer/ispreviewing.md)
+### Layer configuration
+- [var isPreviewing: Bool](./ispreviewing.md)
   A Boolean value that indicates whether the layer is rendering video frames from its source.
 
 

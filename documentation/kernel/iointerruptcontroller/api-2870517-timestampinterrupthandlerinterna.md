@@ -1,14 +1,15 @@
 # timeStampInterruptHandlerInternal
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 void timeStampInterruptHandlerInternal(bool isStart, IOInterruptVectorNumber vectorNumber, IOInterruptVector *vector);
 ```
 

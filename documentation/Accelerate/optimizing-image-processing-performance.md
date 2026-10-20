@@ -1,6 +1,7 @@
 # Optimizing image-processing performance
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Improve your app’s performance by converting image buffer formats from interleaved to planar.
 
@@ -12,15 +13,15 @@ The vImage library operates on image data with two memory layouts:
 
 **Planar** stores each color channel in separate buffers. For example, a 4-channel image would be stored as four individual buffers containing red, green, blue, and alpha data.
 
-![A diagram showing how the color information for each pixel in an image is stored in interleaved and planar buffers.](/images/com.apple.accelerate/media-3023512@2x.png)
+![A diagram showing how the color information for each pixel in an image is stored in interleaved and planar buffers.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3023512@2x.png)
 
 Because many vImage functions operate on a single color channel at a time — by converting an interleaved buffer to planar buffers — you can often improve your app’s performance by doing this conversion manually. However, most vImage functions are available in both the interleaved and planar variants, so before you do the conversion, try both to see which works better in your context.
 
 In some cases, you may not want to apply a vImage operation to all four channels of an image. For example, you may know beforehand that the alpha channel is irrelevant in the images that you’re dealing with, or perhaps all of your images are grayscale and you need to operate on only one channel. Using planar formats makes it possible to isolate and work with only the channels you need.
 
-##### Review Interleaved Performance
+##### Review interleaved performance
 
-Typically, your source imagery is in interleaved format, and your default option will be to use the interleaved variant of a vImage function. For example, the following code scales a Core Graphics image to one tenth of its original size. Note that the 4-channel, 8-bit-per-channel interleaved pixel buffer [`scale(destination:)`](vimage/pixelbuffer/scale(destination:)-5euvc.md) function calls [`vImageScale_ARGB8888(_:_:_:_:)`](vimagescale_argb8888(_:_:_:_:).md).
+Typically, your source imagery is in interleaved format, and your default option will be to use the interleaved variant of a vImage function. For example, the following code scales a Core Graphics image to one tenth of its original size. Note that the 4-channel, 8-bit-per-channel interleaved pixel buffer [`scale(destination:)`](./vimage/pixelbuffer/scale%28destination%29-5euvc.md) function calls [`vImageScale_ARGB8888(_:_:_:_:)`](./vimagescale_argb8888%28_,_,_,_%29.md).
 
 ```swift
 var cgImageFormat = vImage_CGImageFormat(
@@ -43,13 +44,13 @@ let time = ContinuousClock().measure {
 }
 ```
 
-You can use [`ContinuousClock`](https://developer.apple.com/documentation/swift/continuousclock) to measure the execution time.
+You can use [`ContinuousClock`](../Swift/continuousclock.md) to measure the execution time.
 
-##### Convert an Interleaved Source Buffer to Planar Buffers
+##### Convert an interleaved source buffer to planar buffers
 
-The pixel buffer [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer and the vImage buffer [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) function both populate a buffer based on the properties of a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure.
+The pixel buffer [`init(cgImage:cgImageFormat:pixelFormat:)`](./vimage/pixelbuffer/init%28cgimage,cgimageformat,pixelformat%29.md) initializer and the vImage buffer [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) function both populate a buffer based on the properties of a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure.
 
-For example, the following code creates an interleaved 3-channel, 8-bit-per-channel [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structure from the source Core Graphics image. The code calls [`deinterleave(destination:)`](vimage/pixelbuffer/deinterleave(destination:)-hrhz.md) to deinterleave the image data and populate the individual red, green, and blue planar pixel buffers.
+For example, the following code creates an interleaved 3-channel, 8-bit-per-channel [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure from the source Core Graphics image. The code calls [`deinterleave(destination:)`](./vimage/pixelbuffer/deinterleave%28destination%29-hrhz.md) to deinterleave the image data and populate the individual red, green, and blue planar pixel buffers.
 
 ```swift
 var cgImageFormat = vImage_CGImageFormat(
@@ -74,7 +75,7 @@ sourceBuffer.deinterleave(planarDestinationBuffers: [sourceRedBuffer,
                                                      sourceBlueBuffer])
 ```
 
-##### Initialize the Destination Buffers
+##### Initialize the destination buffers
 
 Create an interleaved 3-channel, 8-bit-per-channel destination buffer and three planar destination buffers:
 
@@ -91,11 +92,11 @@ let destinationBlueBuffer = vImage.PixelBuffer(size: destinationBuffer.size,
                                                pixelFormat: vImage.Planar8.self)
 ```
 
-##### Apply the Scale Operation to the Planar Buffers
+##### Apply the scale operation to the planar buffers
 
-Use the `withTaskGroup(of:returning:body:)` function to start a new scope that contains the three planar scale operations. Note that the 8-bit planar [`scale(destination:)`](vimage/pixelbuffer/scale(destination:)-5euvc.md) function calls [`vImageScale_Planar8(_:_:_:_:)`](vimagescale_planar8(_:_:_:_:).md).
+Use the `withTaskGroup(of:returning:body:)` function to start a new scope that contains the three planar scale operations. Note that the 8-bit planar [`scale(destination:)`](./vimage/pixelbuffer/scale%28destination%29-5euvc.md) function calls [`vImageScale_Planar8(_:_:_:_:)`](./vimagescale_planar8%28_,_,_,_%29.md).
 
-In the code below, the [`interleave(destination:)`](vimage/pixelbuffer/interleave(destination:)-46cgi.md) function interleaves the three planar buffers and populates the interleaved destination buffer with the scaled image:
+In the code below, the [`interleave(destination:)`](./vimage/pixelbuffer/interleave%28destination%29-46cgi.md) function interleaves the three planar buffers and populates the interleaved destination buffer with the scaled image:
 
 ```swift
 let time = await ContinuousClock().measure {
@@ -121,7 +122,7 @@ let time = await ContinuousClock().measure {
 }
 ```
 
-The following code calls [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) to create a Core Graphics image from the result of the scale operation:
+The following code calls [`makeCGImage(cgImageFormat:)`](./vimage/pixelbuffer/makecgimage%28cgimageformat%29.md) to create a Core Graphics image from the result of the scale operation:
 
 ```swift
 let scaledImage = destinationBuffer.makeCGImage(cgImageFormat: cgImageFormat)
@@ -129,23 +130,24 @@ let scaledImage = destinationBuffer.makeCGImage(cgImageFormat: cgImageFormat)
 
 ## See Also
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+### Image Processing Essentials
+- [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
   Pass image data between Core Graphics and vImage to create and manipulate images.
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md)
   Initialize vImage buffers from Core Graphics images.
-- [Creating a Core Graphics Image from a vImage Buffer](creating-a-core-graphics-image-from-a-vimage-buffer.md)
+- [Creating a Core Graphics Image from a vImage Buffer](./creating-a-core-graphics-image-from-a-vimage-buffer.md)
   Create displayable representations of vImage buffers.
-- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md)
   Resize an image with vImage.
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
   Combine two images by using blend modes to create a single output.
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md)
   Limit the effect of vImage operations to rectangular regions of interest.
-- [vImage](vimage-library.md)
+- [vImage](./vimage-library.md)
   Manipulate large images using the CPU’s vector processor.
 
 

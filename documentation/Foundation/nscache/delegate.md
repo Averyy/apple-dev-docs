@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cache’s delegate.
 
@@ -20,14 +21,19 @@ The cache’s delegate.
 unowned(unsafe) var delegate: (any NSCacheDelegate)? { get set }
 ```
 
+```objc
+@property (assign, nullable) id<NSCacheDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`NSCacheDelegate`](nscachedelegate.md) protocol.
+The delegate must adopt the [`NSCacheDelegate`](../nscachedelegate.md) protocol.
 
 ## See Also
 
-- [protocol NSCacheDelegate](nscachedelegate.md)
-  The delegate of an [`NSCache`](nscache.md) object implements this protocol to perform specialized actions when an object is about to be evicted or removed from the cache.
+### Managing the Delegate
+- [protocol NSCacheDelegate](../nscachedelegate.md)
+  The delegate of an [`NSCache`](../nscache.md) object implements this protocol to perform specialized actions when an object is about to be evicted or removed from the cache.
 
 
 ---

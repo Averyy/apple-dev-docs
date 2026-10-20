@@ -1,7 +1,8 @@
 # merchantCapabilities
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the payment capabilities the merchant supports, such as credit or debit.
 
@@ -11,7 +12,7 @@ An array of the payment capabilities the merchant supports, such as credit or de
 
 ## Declaration
 
-```swift
+```
 required sequence <ApplePayMerchantCapability> merchantCapabilities;
 ```
 
@@ -28,11 +29,12 @@ If both or neither `supportsCredit` and `supportsDebit` values are supplied, the
 
 ## See Also
 
-- [countryCode](applepayrequest/countrycode.md)
+### Transaction information
+- [countryCode](./countrycode.md)
   The merchant’s two-letter ISO 3166 country code.
-- [supportedNetworks](applepayrequest/supportednetworks.md)
+- [supportedNetworks](./supportednetworks.md)
   The payment networks the merchant supports.
-- [supportedCountries](applepayrequest/supportedcountries.md)
+- [supportedCountries](./supportedcountries.md)
   A list of two-letter country codes for limiting payment to cards from specific countries or regions.
 
 

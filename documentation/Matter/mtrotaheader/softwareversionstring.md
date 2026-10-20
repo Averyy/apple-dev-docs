@@ -1,7 +1,8 @@
 # softwareVersionString
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var softwareVersionString: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * softwareVersionString;
 ```
 
 

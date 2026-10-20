@@ -1,6 +1,7 @@
 # Converting a Safari app extension to a Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Unify your web extensions and simplify development by sharing code with a Safari web extension.
 
@@ -12,11 +13,11 @@ Safari 14 and later in macOS and Safari 15 and later in iOS include support for 
 
 To convert your Safari app extension to a Safari web extension:
 
-- Add new Safari web extension target(s) for macOS, iOS, or both to your project. Update the target(s) to include the icons, assets, and files you need from your Safari app extension. Link code and assets that you want to use from your extension for other browsers in your new Safari web extension target. See [`Updating a Safari web extension`](updating-a-safari-web-extension.md) for more information.
-- Update the JavaScript APIs from your Safari app extension that are specific to Safari to use the Safari web extensions JavaScript APIs. For more information, see [`Assessing your Safari web extension’s browser compatibility`](assessing-your-safari-web-extension-s-browser-compatibility.md).
+- Add new Safari web extension target(s) for macOS, iOS, or both to your project. Update the target(s) to include the icons, assets, and files you need from your Safari app extension. Link code and assets that you want to use from your extension for other browsers in your new Safari web extension target. See [Updating a Safari web extension](./updating-a-safari-web-extension.md) for more information.
+- Update the JavaScript APIs from your Safari app extension that are specific to Safari to use the Safari web extensions JavaScript APIs. For more information, see [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md).
 - Update your `Info.plist` file to migrate your users (see details below).
 
-##### Migrate Your Users to Your Safari Web Extension
+##### Migrate your users to your Safari web extension
 
 To replace your Safari app extension with a Safari web extension, you just need to update your `Info.plist` file to migrate your users from one to the other.
 
@@ -28,9 +29,10 @@ In Safari 26.2 and later, if the Safari web extension replaces a single Safari a
 
 ## See Also
 
-- [Packaging a web extension for Safari](packaging-a-web-extension-for-safari.md)
+### Extension conversions and packaging
+- [Packaging a web extension for Safari](./packaging-a-web-extension-for-safari.md)
   Package your existing extension as a Safari web extension using Xcode’s command-line tool.
-- [Packaging and distributing Safari Web Extensions with App Store Connect](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
+- [Packaging and distributing Safari Web Extensions with App Store Connect](./packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
   Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 
 

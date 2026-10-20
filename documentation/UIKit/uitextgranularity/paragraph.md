@@ -1,19 +1,24 @@
 # UITextGranularity.paragraph
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case paragraph
+```
+
+```c
+UITextGranularityParagraph
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ The unit of text is a paragraph.
 
 ## See Also
 
-- [UITextGranularity.character](uitextgranularity/character.md)
-- [UITextGranularity.word](uitextgranularity/word.md)
-- [UITextGranularity.sentence](uitextgranularity/sentence.md)
-- [UITextGranularity.line](uitextgranularity/line.md)
-- [UITextGranularity.document](uitextgranularity/document.md)
+### Constants
+- [UITextGranularity.character](./character.md)
+- [UITextGranularity.word](./word.md)
+- [UITextGranularity.sentence](./sentence.md)
+- [UITextGranularity.line](./line.md)
+- [UITextGranularity.document](./document.md)
 
 
 ---

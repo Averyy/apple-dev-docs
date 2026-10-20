@@ -1,7 +1,8 @@
 # byteOffsets(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the byte offsets within this span where the memory represented by other is located, or nil if other is not located within this span.
 

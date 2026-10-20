@@ -1,7 +1,8 @@
 # MapItemDetailSelectionAccessoryStyle.CalloutStyle
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The style to use for callout content.
 
@@ -20,25 +21,26 @@ struct CalloutStyle
 
 #### Overview
 
-Use the [`full`](mapitemdetailselectionaccessorystyle/calloutstyle/full.md) style works for map views on iPadOS and macOS. Use sheet presentation to display full detail place information on iOS.
+Use the [`full`](./calloutstyle/full.md) style works for map views on iPadOS and macOS. Use sheet presentation to display full detail place information on iOS.
 
 ## Topics
 
 ### Type Properties
-- [static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/automatic.md)
+- [static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./calloutstyle/automatic.md)
   A value that allows the framework to choose an appropriate callout style automatically.
-- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/compact.md)
+- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./calloutstyle/compact.md)
   A compact, space-saving callout style.
-- [static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/full.md)
+- [static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./calloutstyle/full.md)
   A rich, detailed callout style that is suitable for large map views.
 
 ## See Also
 
-- [static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/automatic.md)
+### Callout styles
+- [static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./calloutstyle/automatic.md)
   A value that allows the framework to choose an appropriate callout style automatically.
-- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/compact.md)
+- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./calloutstyle/compact.md)
   A compact, space-saving callout style.
-- [static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/full.md)
+- [static var full: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./calloutstyle/full.md)
   A rich, detailed callout style that is suitable for large map views.
 
 

@@ -1,7 +1,8 @@
 # init(allowedUnits:width:maximumUnitCount:zeroValueUnits:valueLengthLimits:fractionalPart:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a units format style using the given parameters.
 
@@ -22,7 +23,7 @@ init<ValueRange>(allowedUnits: Set<Duration.UnitsFormatStyle.Unit>, width: Durat
 
 #### Discussion
 
-Use this convenience function in situations that expect a [`Duration.UnitsFormatStyle`](duration/unitsformatstyle.md), such as [`formatted(_:)`](duration/formatted(_:).md), as an alternative to using the full initializer.
+Use this convenience function in situations that expect a [`Duration.UnitsFormatStyle`](../unitsformatstyle.md), such as [`formatted(_:)`](../formatted%28_%29.md), as an alternative to using the full initializer.
 
 ## Parameters
 
@@ -35,7 +36,8 @@ Use this convenience function in situations that expect a [`Duration.UnitsFormat
 
 ## See Also
 
-- [init(allowedUnits: Set<Duration.UnitsFormatStyle.Unit>, width: Duration.UnitsFormatStyle.UnitWidth, maximumUnitCount: Int?, zeroValueUnits: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy, valueLength: Int?, fractionalPart: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy)](duration/unitsformatstyle/init(allowedunits:width:maximumunitcount:zerovalueunits:valuelength:fractionalpart:).md)
+### Creating a units format style
+- [init(allowedUnits: Set<Duration.UnitsFormatStyle.Unit>, width: Duration.UnitsFormatStyle.UnitWidth, maximumUnitCount: Int?, zeroValueUnits: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy, valueLength: Int?, fractionalPart: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy)](./init%28allowedunits,width,maximumunitcount,zerovalueunits,valuelength,fractionalpart%29.md)
   Creates a units format style using the given parameters.
 
 

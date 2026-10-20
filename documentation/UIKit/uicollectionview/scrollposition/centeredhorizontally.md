@@ -1,16 +1,17 @@
 # centeredHorizontally
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Scroll so that the item is centered horizontally in the collection view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,21 +19,26 @@ Scroll so that the item is centered horizontally in the collection view.
 static var centeredHorizontally: UICollectionView.ScrollPosition { get }
 ```
 
+```c
+UICollectionViewScrollPositionCenteredHorizontally
+```
+
 #### Discussion
 
-This option is mutually exclusive with the [`left`](uicollectionview/scrollposition/left.md) and [`right`](uicollectionview/scrollposition/right.md) options.
+This option is mutually exclusive with the [`left`](./left.md) and [`right`](./right.md) options.
 
 ## See Also
 
-- [static var top: UICollectionView.ScrollPosition](uicollectionview/scrollposition/top.md)
+### Constants
+- [static var top: UICollectionView.ScrollPosition](./top.md)
   Scroll so that the item is positioned at the top of the collection view’s bounds.
-- [static var centeredVertically: UICollectionView.ScrollPosition](uicollectionview/scrollposition/centeredvertically.md)
+- [static var centeredVertically: UICollectionView.ScrollPosition](./centeredvertically.md)
   Scroll so that the item is centered vertically in the collection view.
-- [static var bottom: UICollectionView.ScrollPosition](uicollectionview/scrollposition/bottom.md)
+- [static var bottom: UICollectionView.ScrollPosition](./bottom.md)
   Scroll so that the item is positioned at the bottom of the collection view’s bounds.
-- [static var left: UICollectionView.ScrollPosition](uicollectionview/scrollposition/left.md)
+- [static var left: UICollectionView.ScrollPosition](./left.md)
   Scroll so that the item is positioned at the left edge of the collection view’s bounds.
-- [static var right: UICollectionView.ScrollPosition](uicollectionview/scrollposition/right.md)
+- [static var right: UICollectionView.ScrollPosition](./right.md)
   Scroll so that the item is positioned at the right edge of the collection view’s bounds.
 
 

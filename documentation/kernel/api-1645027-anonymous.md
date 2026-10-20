@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,21 +18,21 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMAllowSleep](1645027-anonymous/kiopmallowsleep.md)
-- [kIOPMClamshellClosed](1645027-anonymous/kiopmclamshellclosed.md)
-- [kIOPMClamshellOpened](1645027-anonymous/kiopmclamshellopened.md)
-- [kIOPMDWOverTemp](1645027-anonymous/kiopmdwovertemp.md)
-- [kIOPMDisableClamshell](1645027-anonymous/kiopmdisableclamshell.md)
-- [kIOPMEnableClamshell](1645027-anonymous/kiopmenableclamshell.md)
-- [kIOPMOverTemp](1645027-anonymous/kiopmovertemp.md)
-- [kIOPMPowerButton](1645027-anonymous/kiopmpowerbutton.md)
-- [kIOPMPowerEmergency](1645027-anonymous/kiopmpoweremergency.md)
-- [kIOPMPreventSleep](1645027-anonymous/kiopmpreventsleep.md)
-- [kIOPMProcessorSpeedChange](1645027-anonymous/kiopmprocessorspeedchange.md)
-- [kIOPMSleepNow](1645027-anonymous/kiopmsleepnow.md)
-- [kIOPMPowerButtonUp](1645027-anonymous/kiopmpowerbuttonup.md)
-- [kIOPMProModeDisengaged](1645027-anonymous/kiopmpromodedisengaged.md)
-- [kIOPMProModeEngaged](1645027-anonymous/kiopmpromodeengaged.md)
+- [kIOPMAllowSleep](./api-1645027-anonymous/kiopmallowsleep.md)
+- [kIOPMClamshellClosed](./api-1645027-anonymous/kiopmclamshellclosed.md)
+- [kIOPMClamshellOpened](./api-1645027-anonymous/kiopmclamshellopened.md)
+- [kIOPMDWOverTemp](./api-1645027-anonymous/kiopmdwovertemp.md)
+- [kIOPMDisableClamshell](./api-1645027-anonymous/kiopmdisableclamshell.md)
+- [kIOPMEnableClamshell](./api-1645027-anonymous/kiopmenableclamshell.md)
+- [kIOPMOverTemp](./api-1645027-anonymous/kiopmovertemp.md)
+- [kIOPMPowerButton](./api-1645027-anonymous/kiopmpowerbutton.md)
+- [kIOPMPowerEmergency](./api-1645027-anonymous/kiopmpoweremergency.md)
+- [kIOPMPreventSleep](./api-1645027-anonymous/kiopmpreventsleep.md)
+- [kIOPMProcessorSpeedChange](./api-1645027-anonymous/kiopmprocessorspeedchange.md)
+- [kIOPMSleepNow](./api-1645027-anonymous/kiopmsleepnow.md)
+- [kIOPMPowerButtonUp](./api-1645027-anonymous/kiopmpowerbuttonup.md)
+- [kIOPMProModeDisengaged](./api-1645027-anonymous/kiopmpromodedisengaged.md)
+- [kIOPMProModeEngaged](./api-1645027-anonymous/kiopmpromodeengaged.md)
 
 
 ---

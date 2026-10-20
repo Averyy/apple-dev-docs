@@ -1,7 +1,8 @@
 # SpatialEventCollection.Event.Phase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states that an event can have.
 
@@ -22,22 +23,23 @@ enum Phase
 ## Topics
 
 ### Getting the phase
-- [SpatialEventCollection.Event.Phase.active](spatialeventcollection/event/phase-swift.enum/active.md)
+- [SpatialEventCollection.Event.Phase.active](./phase-swift.enum/active.md)
   The phase is active and the state associated with it is guaranteed to produce at least one more update.
-- [SpatialEventCollection.Event.Phase.cancelled](spatialeventcollection/event/phase-swift.enum/cancelled.md)
+- [SpatialEventCollection.Event.Phase.cancelled](./phase-swift.enum/cancelled.md)
   The state associated with this phase was canceled and won’t produce any more updates.
-- [SpatialEventCollection.Event.Phase.ended](spatialeventcollection/event/phase-swift.enum/ended.md)
+- [SpatialEventCollection.Event.Phase.ended](./phase-swift.enum/ended.md)
   The state associated with this phase ended normally and won’t produce any more updates.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var phase: SpatialEventCollection.Event.Phase](spatialeventcollection/event/phase-swift.property.md)
+### Getting the event’s current phase
+- [var phase: SpatialEventCollection.Event.Phase](./phase-swift.property.md)
   The phase of the event.
 
 

@@ -1,7 +1,8 @@
 # initialTravelEstimates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that describes the distance and time remaining before the maneuver completes.
 
@@ -14,6 +15,10 @@ An object that describes the distance and time remaining before the maneuver com
 
 ```swift
 var initialTravelEstimates: CPTravelEstimates? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPTravelEstimates * initialTravelEstimates;
 ```
 
 

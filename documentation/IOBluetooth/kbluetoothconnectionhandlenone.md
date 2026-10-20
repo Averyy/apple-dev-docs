@@ -1,15 +1,20 @@
 # kBluetoothConnectionHandleNone
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kBluetoothConnectionHandleNone: Int { get }
+```
+
+```c
+kBluetoothConnectionHandleNone
 ```
 
 

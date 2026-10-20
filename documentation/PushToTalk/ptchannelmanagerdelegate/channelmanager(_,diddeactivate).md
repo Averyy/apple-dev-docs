@@ -2,6 +2,7 @@
 
 **Framework**: Push to Talk  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the observer the audio session deactivated.
@@ -17,9 +18,13 @@ Tells the observer the audio session deactivated.
 func channelManager(_ channelManager: PTChannelManager, didDeactivate audioSession: AVAudioSession)
 ```
 
+```objc
+- (void) channelManager:(PTChannelManager *) channelManager didDeactivateAudioSession:(AVAudioSession *) audioSession;
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 ## Parameters
 
@@ -28,7 +33,8 @@ func channelManager(_ channelManager: PTChannelManager, didDeactivate audioSessi
 
 ## See Also
 
-- [func channelManager(PTChannelManager, didActivate: AVAudioSession)](ptchannelmanagerdelegate/channelmanager(_:didactivate:).md)
+### Activating and deactivating the audio session
+- [func channelManager(PTChannelManager, didActivate: AVAudioSession)](./channelmanager%28_,didactivate%29.md)
   Tells the observer the audio session activated.
 
 

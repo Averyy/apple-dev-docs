@@ -1,14 +1,15 @@
 # diagnoseReport
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn diagnoseReport(void *param1, void *param2, void *param3, void *param4);
 ```
 

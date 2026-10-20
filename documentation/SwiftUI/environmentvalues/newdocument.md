@@ -1,7 +1,8 @@
 # newDocument
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action in the environment that presents a new document.
 
@@ -16,7 +17,7 @@ var newDocument: NewDocumentAction { get }
 
 #### Discussion
 
-Use the `newDocument` environment value to get the instance of the [`NewDocumentAction`](newdocumentaction.md) structure for a given [`Environment`](environment.md). Then call the instance to present a new document. You call the instance directly because it defines a [`callAsFunction(_:)`](newdocumentaction/callasfunction(_:).md) method that Swift calls when you call the instance.
+Use the `newDocument` environment value to get the instance of the [`NewDocumentAction`](../newdocumentaction.md) structure for a given [`Environment`](../environment.md). Then call the instance to present a new document. You call the instance directly because it defines a [`callAsFunction(_:)`](../newdocumentaction/callasfunction%28_%29.md) method that Swift calls when you call the instance.
 
 For example, you can define a button that creates a new document from the selected text:
 
@@ -34,15 +35,16 @@ struct NewDocumentFromSelection: View {
 }
 ```
 
-The above example assumes that you define a `TextDocument` that conforms to the [`FileDocument`](filedocument.md) or [`ReferenceFileDocument`](referencefiledocument.md) protocol, and a [`DocumentGroup`](documentgroup.md) that handles the associated file type.
+The above example assumes that you define a `TextDocument` that conforms to the [`FileDocument`](../filedocument.md) or [`ReferenceFileDocument`](../referencefiledocument.md) protocol, and a [`DocumentGroup`](../documentgroup.md) that handles the associated file type.
 
 ## See Also
 
-- [struct NewDocumentAction](newdocumentaction.md)
+### Opening a document programmatically
+- [struct NewDocumentAction](../newdocumentaction.md)
   An action that presents a new document.
-- [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
+- [var openDocument: OpenDocumentAction](./opendocument.md)
   An action in the environment that presents an existing document.
-- [struct OpenDocumentAction](opendocumentaction.md)
+- [struct OpenDocumentAction](../opendocumentaction.md)
   An action that presents an existing document.
 
 

@@ -1,7 +1,8 @@
 # advancement(forCGGlyph:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the nominal spacing for the given glyph—the distance the current point moves after showing the glyph—accounting for the receiver’s size.
 
@@ -12,6 +13,10 @@ Returns the nominal spacing for the given glyph—the distance the current point
 
 ```swift
 func advancement(forCGGlyph glyph: CGGlyph) -> NSSize
+```
+
+```objc
+- (NSSize) advancementForCGGlyph:(CGGlyph) glyph;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ The spacing is given according to the glyph’s movement direction, which is eit
 
 ## See Also
 
-- [var maximumAdvancement: NSSize](nsfont/maximumadvancement.md)
+### Getting Glyph Advancements
+- [var maximumAdvancement: NSSize](./maximumadvancement.md)
   The maximum advance of any of the font’s glyphs.
-- [func getAdvancements(NSSizeArray, forCGGlyphs: UnsafePointer<CGGlyph>, count: Int)](nsfont/getadvancements(_:forcgglyphs:count:).md)
+- [func getAdvancements(NSSizeArray, forCGGlyphs: UnsafePointer<CGGlyph>, count: Int)](./getadvancements%28_,forcgglyphs,count%29.md)
   Returns an array of the advancements for the specified glyphs rendered by the receiver.
 
 

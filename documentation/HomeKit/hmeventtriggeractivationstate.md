@@ -1,7 +1,8 @@
 # HMEventTriggerActivationState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The activation state of an event trigger.
 
@@ -19,35 +20,40 @@ The activation state of an event trigger.
 enum HMEventTriggerActivationState
 ```
 
+```c
+enum HMEventTriggerActivationState : NSUInteger;
+```
+
 ## Topics
 
 ### Inspecting activation state
-- [HMEventTriggerActivationState.disabled](hmeventtriggeractivationstate/disabled.md)
+- [HMEventTriggerActivationState.disabled](./hmeventtriggeractivationstate/disabled.md)
   Trigger is not activated.
-- [HMEventTriggerActivationState.disabledNoCompatibleHomeHub](hmeventtriggeractivationstate/disablednocompatiblehomehub.md)
+- [HMEventTriggerActivationState.disabledNoCompatibleHomeHub](./hmeventtriggeractivationstate/disablednocompatiblehomehub.md)
   Trigger is not active because there is no compatible home hub.
-- [HMEventTriggerActivationState.disabledNoHomeHub](hmeventtriggeractivationstate/disablednohomehub.md)
+- [HMEventTriggerActivationState.disabledNoHomeHub](./hmeventtriggeractivationstate/disablednohomehub.md)
   Trigger is not active because there is no home hub.
-- [HMEventTriggerActivationState.disabledNoLocationServicesAuthorization](hmeventtriggeractivationstate/disablednolocationservicesauthorization.md)
+- [HMEventTriggerActivationState.disabledNoLocationServicesAuthorization](./hmeventtriggeractivationstate/disablednolocationservicesauthorization.md)
   Trigger is not active because the user has not authorized use of location services.
-- [HMEventTriggerActivationState.enabled](hmeventtriggeractivationstate/enabled.md)
+- [HMEventTriggerActivationState.enabled](./hmeventtriggeractivationstate/enabled.md)
   The trigger is currently active.
 ### Initializers
-- [init?(rawValue: UInt)](hmeventtriggeractivationstate/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hmeventtriggeractivationstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var triggerActivationState: HMEventTriggerActivationState](hmeventtrigger/triggeractivationstate.md)
+### Querying trigger activation state
+- [var triggerActivationState: HMEventTriggerActivationState](./hmeventtrigger/triggeractivationstate.md)
   The current activation state of the trigger.
 
 

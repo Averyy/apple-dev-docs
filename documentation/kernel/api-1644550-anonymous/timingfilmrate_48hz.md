@@ -1,14 +1,15 @@
 # timingFilmRate_48hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 timingFilmRate_48hz = 410
 ```
 

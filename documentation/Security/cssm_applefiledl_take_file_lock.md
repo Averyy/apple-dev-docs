@@ -1,7 +1,8 @@
 # CSSM_APPLEFILEDL_TAKE_FILE_LOCK
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CSSM_APPLEFILEDL_TAKE_FILE_LOCK: Int { get }
+```
+
+```c
+CSSM_APPLEFILEDL_TAKE_FILE_LOCK
 ```
 
 

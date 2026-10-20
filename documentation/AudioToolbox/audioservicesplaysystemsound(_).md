@@ -1,7 +1,8 @@
 # AudioServicesPlaySystemSound(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Plays a system sound object.
 
@@ -19,11 +20,15 @@ Plays a system sound object.
 func AudioServicesPlaySystemSound(_ inSystemSoundID: SystemSoundID)
 ```
 
+```c
+extern void AudioServicesPlaySystemSound(SystemSoundID inSystemSoundID);
+```
+
 #### Discussion
 
-This function plays a short sound (30 seconds or less in duration). Because sound might play for several seconds, this function is executed asynchronously. To know when a sound has finished playing, call the [`AudioServicesAddSystemSoundCompletion(_:_:_:_:_:)`](audioservicesaddsystemsoundcompletion(_:_:_:_:_:).md) function to register a callback function.
+This function plays a short sound (30 seconds or less in duration). Because sound might play for several seconds, this function is executed asynchronously. To know when a sound has finished playing, call the [`AudioServicesAddSystemSoundCompletion(_:_:_:_:_:)`](./audioservicesaddsystemsoundcompletion%28_,_,_,_,_%29.md) function to register a callback function.
 
-On some iOS devices, you can pass the [`kSystemSoundID_Vibrate`](ksystemsoundid_vibrate.md) constant to invoke vibration. On other iOS devices, calling this function with that constant does nothing.
+On some iOS devices, you can pass the [`kSystemSoundID_Vibrate`](./ksystemsoundid_vibrate.md) constant to invoke vibration. On other iOS devices, calling this function with that constant does nothing.
 
 Sound files that you play using this function must be:
 
@@ -41,17 +46,19 @@ In addition, when you use the `AudioServicesPlaySystemSound` function:
 
 ## Parameters
 
-- `inSystemSoundID`: The system sound to play. Before using this function, call the [`AudioServicesCreateSystemSoundID(_:_:)`](audioservicescreatesystemsoundid(_:_:).md) function to obtain a system sound.
+- `inSystemSoundID`: The system sound to play. Before using this function, call the [`AudioServicesCreateSystemSoundID(_:_:)`](./audioservicescreatesystemsoundid%28_,_%29.md) function to obtain a system sound.
 
 ## See Also
 
-- [func AudioServicesAddSystemSoundCompletion(SystemSoundID, CFRunLoop?, CFString?, AudioServicesSystemSoundCompletionProc, UnsafeMutableRawPointer?) -> OSStatus](audioservicesaddsystemsoundcompletion(_:_:_:_:_:).md)
+### Related Documentation
+- [func AudioServicesAddSystemSoundCompletion(SystemSoundID, CFRunLoop?, CFString?, AudioServicesSystemSoundCompletionProc, UnsafeMutableRawPointer?) -> OSStatus](./audioservicesaddsystemsoundcompletion%28_,_,_,_,_%29.md)
   Registers a callback function that is invoked when a specified system sound finishes playing.
-- [func AudioServicesCreateSystemSoundID(CFURL, UnsafeMutablePointer<SystemSoundID>) -> OSStatus](audioservicescreatesystemsoundid(_:_:).md)
+- [func AudioServicesCreateSystemSoundID(CFURL, UnsafeMutablePointer<SystemSoundID>) -> OSStatus](./audioservicescreatesystemsoundid%28_,_%29.md)
   Creates a system sound object.
-- [func AudioServicesPlayAlertSoundWithCompletion(SystemSoundID, (() -> Void)?)](audioservicesplayalertsoundwithcompletion(_:_:).md)
-- [func AudioServicesPlaySystemSoundWithCompletion(SystemSoundID, (() -> Void)?)](audioservicesplaysystemsoundwithcompletion(_:_:).md)
-- [func AudioServicesPlayAlertSound(SystemSoundID)](audioservicesplayalertsound(_:).md)
+### Playing Sounds
+- [func AudioServicesPlayAlertSoundWithCompletion(SystemSoundID, (() -> Void)?)](./audioservicesplayalertsoundwithcompletion%28_,_%29.md)
+- [func AudioServicesPlaySystemSoundWithCompletion(SystemSoundID, (() -> Void)?)](./audioservicesplaysystemsoundwithcompletion%28_,_%29.md)
+- [func AudioServicesPlayAlertSound(SystemSoundID)](./audioservicesplayalertsound%28_%29.md)
   Plays a system sound as an alert.
 
 

@@ -1,7 +1,8 @@
 # UISceneDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The core methods you use to respond to life-cycle events occurring within a scene.
 
@@ -19,73 +20,78 @@ The core methods you use to respond to life-cycle events occurring within a scen
 protocol UISceneDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UISceneDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Overview
 
-Use your [`UISceneDelegate`](uiscenedelegate.md) object to manage life-cycle events in one instance of your app’s user interface. This interface defines methods for responding to state transitions that affect the scene, including when the scene enters the foreground and becomes active, and when it enters the background. Use your delegate to provide appropriate behavior when these transitions occur. For example, finish critical tasks and quiet your app when it enters the background.
+Use your [`UISceneDelegate`](./uiscenedelegate.md) object to manage life-cycle events in one instance of your app’s user interface. This interface defines methods for responding to state transitions that affect the scene, including when the scene enters the foreground and becomes active, and when it enters the background. Use your delegate to provide appropriate behavior when these transitions occur. For example, finish critical tasks and quiet your app when it enters the background.
 
-Don’t create [`UISceneDelegate`](uiscenedelegate.md) objects directly. Instead, specify the name of your custom delegate class as part of the configuration data for your scenes. You can specify this information in your app’s `Info.plist` file, or in the [`UISceneConfiguration`](uisceneconfiguration.md) object you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md) method. For more information about how to configure scenes, see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
+Don’t create [`UISceneDelegate`](./uiscenedelegate.md) objects directly. Instead, specify the name of your custom delegate class as part of the configuration data for your scenes. You can specify this information in your app’s `Info.plist` file, or in the [`UISceneConfiguration`](./uisceneconfiguration.md) object you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](./uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method. For more information about how to configure scenes, see [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md).
 
 ## Topics
 
 ### Working with window scenes
-- [Supporting multiple windows on iPad](supporting-multiple-windows-on-ipad.md)
+- [Supporting multiple windows on iPad](./supporting-multiple-windows-on-ipad.md)
   Support side-by-side instances of your app’s interface and create new windows.
 ### Connecting and disconnecting the scene
-- [func scene(UIScene, willConnectTo: UISceneSession, options: UIScene.ConnectionOptions)](uiscenedelegate/scene(_:willconnectto:options:).md)
+- [func scene(UIScene, willConnectTo: UISceneSession, options: UIScene.ConnectionOptions)](./uiscenedelegate/scene%28_,willconnectto,options%29.md)
   Tells the delegate about the addition of a scene to the app.
-- [func sceneDidDisconnect(UIScene)](uiscenedelegate/scenediddisconnect(_:).md)
+- [func sceneDidDisconnect(UIScene)](./uiscenedelegate/scenediddisconnect%28_%29.md)
   Tells the delegate that UIKit removed a scene from your app.
-- [UIScene.ConnectionOptions](uiscene/connectionoptions.md)
+- [UIScene.ConnectionOptions](./uiscene/connectionoptions.md)
   A data object containing information about the reasons why UIKit created the scene.
 ### Transitioning to the foreground
-- [func sceneWillEnterForeground(UIScene)](uiscenedelegate/scenewillenterforeground(_:).md)
+- [func sceneWillEnterForeground(UIScene)](./uiscenedelegate/scenewillenterforeground%28_%29.md)
   Tells the delegate that the scene is about to begin running in the foreground and become visible to the user.
-- [func sceneDidBecomeActive(UIScene)](uiscenedelegate/scenedidbecomeactive(_:).md)
+- [func sceneDidBecomeActive(UIScene)](./uiscenedelegate/scenedidbecomeactive%28_%29.md)
   Tells the delegate that the scene became active and is now responding to user events.
 ### Transitioning to the background
-- [func sceneWillResignActive(UIScene)](uiscenedelegate/scenewillresignactive(_:).md)
+- [func sceneWillResignActive(UIScene)](./uiscenedelegate/scenewillresignactive%28_%29.md)
   Tells the delegate that the scene is about to resign the active state and stop responding to user events.
-- [func sceneDidEnterBackground(UIScene)](uiscenedelegate/scenedidenterbackground(_:).md)
+- [func sceneDidEnterBackground(UIScene)](./uiscenedelegate/scenedidenterbackground%28_%29.md)
   Tells the delegate that the scene is running in the background and is no longer onscreen.
 ### Opening URLs
-- [func scene(UIScene, openURLContexts: Set<UIOpenURLContext>)](uiscenedelegate/scene(_:openurlcontexts:).md)
+- [func scene(UIScene, openURLContexts: Set<UIOpenURLContext>)](./uiscenedelegate/scene%28_,openurlcontexts%29.md)
   Asks the delegate to open one or more URLs.
 ### Continuing user activities
-- [func scene(UIScene, willContinueUserActivityWithType: String)](uiscenedelegate/scene(_:willcontinueuseractivitywithtype:).md)
+- [func scene(UIScene, willContinueUserActivityWithType: String)](./uiscenedelegate/scene%28_,willcontinueuseractivitywithtype%29.md)
   Tells the delegate that it’s about to receive Handoff-related data.
-- [func scene(UIScene, continue: NSUserActivity)](uiscenedelegate/scene(_:continue:).md)
+- [func scene(UIScene, continue: NSUserActivity)](./uiscenedelegate/scene%28_,continue%29.md)
   Tells the delegate to handle the specified Handoff-related activity.
-- [func scene(UIScene, didFailToContinueUserActivityWithType: String, error: any Error)](uiscenedelegate/scene(_:didfailtocontinueuseractivitywithtype:error:).md)
+- [func scene(UIScene, didFailToContinueUserActivityWithType: String, error: any Error)](./uiscenedelegate/scene%28_,didfailtocontinueuseractivitywithtype,error%29.md)
   Tells the delegate that the activity couldn’t be continued.
 ### Saving the state of the scene
-- [Restoring your app’s state](restoring-your-app-s-state.md)
+- [Restoring your app’s state](./restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [func stateRestorationActivity(for: UIScene) -> NSUserActivity?](uiscenedelegate/staterestorationactivity(for:).md)
+- [func stateRestorationActivity(for: UIScene) -> NSUserActivity?](./uiscenedelegate/staterestorationactivity%28for%29.md)
   Returns a user activity object encapsulating the current state of the specified scene.
-- [func scene(UIScene, restoreInteractionStateWith: NSUserActivity)](uiscenedelegate/scene(_:restoreinteractionstatewith:).md)
-- [func scene(UIScene, didUpdate: NSUserActivity)](uiscenedelegate/scene(_:didupdate:).md)
+- [func scene(UIScene, restoreInteractionStateWith: NSUserActivity)](./uiscenedelegate/scene%28_,restoreinteractionstatewith%29.md)
+- [func scene(UIScene, didUpdate: NSUserActivity)](./uiscenedelegate/scene%28_,didupdate%29.md)
   Tells the delegate that the specified activity object was updated.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [UIWindowSceneDelegate](uiwindowscenedelegate.md)
+- [UIWindowSceneDelegate](./uiwindowscenedelegate.md)
 
 ## See Also
 
-- [Supporting multiple windows on iPad](supporting-multiple-windows-on-ipad.md)
+### Window scenes
+- [Supporting multiple windows on iPad](./supporting-multiple-windows-on-ipad.md)
   Support side-by-side instances of your app’s interface and create new windows.
-- [protocol UIWindowSceneDelegate](uiwindowscenedelegate.md)
+- [protocol UIWindowSceneDelegate](./uiwindowscenedelegate.md)
   Additional methods that you use to manage app-specific tasks occurring in a scene.
-- [class UIWindowScene](uiwindowscene.md)
+- [class UIWindowScene](./uiwindowscene.md)
   A scene that manages one or more windows for your app.
-- [class UIScene](uiscene.md)
+- [class UIScene](./uiscene.md)
   An object that represents one instance of your app’s user interface.
 
 

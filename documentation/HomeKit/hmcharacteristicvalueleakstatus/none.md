@@ -1,7 +1,8 @@
 # HMCharacteristicValueLeakStatus.none
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No leak detected.
 
@@ -19,9 +20,14 @@ No leak detected.
 case none
 ```
 
+```c
+HMCharacteristicValueLeakStatusNone
+```
+
 ## See Also
 
-- [HMCharacteristicValueLeakStatus.detected](hmcharacteristicvalueleakstatus/detected.md)
+### Leak Status
+- [HMCharacteristicValueLeakStatus.detected](./detected.md)
   Leak detected.
 
 

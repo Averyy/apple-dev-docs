@@ -1,9 +1,10 @@
 # systemPrefersReducedResourceUsageDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A notification that posts when [`systemPrefersReducedResourceUsage`](uiapplication/systemprefersreducedresourceusage.md) changes.
+A notification that posts when [`systemPrefersReducedResourceUsage`](./systemprefersreducedresourceusage.md) changes.
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@ A notification that posts when [`systemPrefersReducedResourceUsage`](uiapplicati
 ```swift
 nonisolated
 class let systemPrefersReducedResourceUsageDidChangeNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const UIApplicationSystemPrefersReducedResourceUsageDidChangeNotification;
 ```
 
 #### Discussion

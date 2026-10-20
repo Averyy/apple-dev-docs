@@ -1,7 +1,8 @@
 # didChangeResolvedPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the layer’s resolved path changed.
 

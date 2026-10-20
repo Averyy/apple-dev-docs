@@ -1,12 +1,13 @@
 # applicationShouldOpenUntitledFile(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates if the app can open an untitled file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Returns a Boolean value that indicates if the app can open an untitled file.
 optional func applicationShouldOpenUntitledFile(_ sender: NSApplication) -> Bool
 ```
 
+```objc
+- (BOOL) applicationShouldOpenUntitledFile:(NSApplication *) sender;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application should open a new untitled file or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if the application should open a new untitled file or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 
-Use this method to decide whether the application should open a new, untitled file. Note that [`applicationOpenUntitledFile(_:)`](nsapplicationdelegate/applicationopenuntitledfile(_:).md) is invoked if this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+Use this method to decide whether the application should open a new, untitled file. Note that [`applicationOpenUntitledFile(_:)`](./applicationopenuntitledfile%28_%29.md) is invoked if this method returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -29,17 +34,18 @@ Use this method to decide whether the application should open a new, untitled fi
 
 ## See Also
 
-- [func application(NSApplication, open: [URL])](nsapplicationdelegate/application(_:open:).md)
+### Opening Files
+- [func application(NSApplication, open: [URL])](./application%28_,open%29.md)
   Tells the delegate to open the resource at the specified URL.
-- [func application(NSApplication, openFile: String) -> Bool](nsapplicationdelegate/application(_:openfile:).md)
+- [func application(NSApplication, openFile: String) -> Bool](./application%28_,openfile%29.md)
   Returns a Boolean value that indicates if the app opens the specified file.
-- [func application(Any, openFileWithoutUI: String) -> Bool](nsapplicationdelegate/application(_:openfilewithoutui:).md)
+- [func application(Any, openFileWithoutUI: String) -> Bool](./application%28_,openfilewithoutui%29.md)
   Returns a Boolean value that indicates if the app opens the specified file without showing its user interface.
-- [func application(NSApplication, openTempFile: String) -> Bool](nsapplicationdelegate/application(_:opentempfile:).md)
+- [func application(NSApplication, openTempFile: String) -> Bool](./application%28_,opentempfile%29.md)
   Returns a Boolean value that indicates if the app opens the specified temporary file.
-- [func application(NSApplication, openFiles: [String])](nsapplicationdelegate/application(_:openfiles:).md)
+- [func application(NSApplication, openFiles: [String])](./application%28_,openfiles%29.md)
   Tells the delegate to open the specified files.
-- [func applicationOpenUntitledFile(NSApplication) -> Bool](nsapplicationdelegate/applicationopenuntitledfile(_:).md)
+- [func applicationOpenUntitledFile(NSApplication) -> Bool](./applicationopenuntitledfile%28_%29.md)
   Returns a Boolean value that indicates if the app opens an untitled file.
 
 

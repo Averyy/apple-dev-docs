@@ -1,7 +1,8 @@
 # shadowColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color to apply to the bar’s custom or default shadow.
 
@@ -19,15 +20,20 @@ The color to apply to the bar’s custom or default shadow.
 var shadowColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * shadowColor;
+```
+
 #### Discussion
 
-UIKit uses this property and the [`shadowImage`](uibarappearance/shadowimage.md) property to determine the shadow’s appearance. When [`shadowImage`](uibarappearance/shadowimage.md) is `nil`, the bar displays a default shadow tinted according to the value of this property. If this property is `nil` or contains the [`clear`](uicolor/clear.md) color, the bar displays no shadow.
+UIKit uses this property and the [`shadowImage`](./shadowimage.md) property to determine the shadow’s appearance. When [`shadowImage`](./shadowimage.md) is `nil`, the bar displays a default shadow tinted according to the value of this property. If this property is `nil` or contains the [`clear`](../uicolor/clear.md) color, the bar displays no shadow.
 
-If [`shadowImage`](uibarappearance/shadowimage.md) contains a template image, the bar uses the image for the shadow and tints it using the value in this property. If this property is `nil` or contains the [`clear`](uicolor/clear.md) color, the bar displays no shadow. However, if [`shadowImage`](uibarappearance/shadowimage.md) doesn’t contain a template image, the bar displays the image without applying the color in this property.
+If [`shadowImage`](./shadowimage.md) contains a template image, the bar uses the image for the shadow and tints it using the value in this property. If this property is `nil` or contains the [`clear`](../uicolor/clear.md) color, the bar displays no shadow. However, if [`shadowImage`](./shadowimage.md) doesn’t contain a template image, the bar displays the image without applying the color in this property.
 
 ## See Also
 
-- [var shadowImage: UIImage?](uibarappearance/shadowimage.md)
+### Configuring the shadow appearance
+- [var shadowImage: UIImage?](./shadowimage.md)
   The image to use for the bar’s shadow.
 
 

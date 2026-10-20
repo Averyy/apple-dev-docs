@@ -1,7 +1,8 @@
 # init(elements:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Convert a typed span to a raw span.
 

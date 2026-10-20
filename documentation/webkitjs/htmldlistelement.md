@@ -1,7 +1,8 @@
 # HTMLDListElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLDListElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compact](htmldlistelement/1631562-compact.md)
+- [compact](./htmldlistelement/api-1631562-compact.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # WASharedSecret.ProtocolName
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that uniquely identifies a particular network protocol and the pairing hanshake it uses for authentication.
 
@@ -19,23 +20,23 @@ struct ProtocolName
 ## Topics
 
 ### Initializers
-- [init?(Data)](washaredsecret/protocolname/init(_:)-648hd.md)
+- [init?(Data)](./protocolname/init%28_%29-648hd.md)
   Creates a custom protocol with the provided unique string.
-- [init?(String)](washaredsecret/protocolname/init(_:)-7marr.md)
+- [init?(String)](./protocolname/init%28_%29-7marr.md)
   Creates a custom protocol name using the provided unique string.
 ### Type Properties
-- [static let ipsecPSK: WASharedSecret.ProtocolName](washaredsecret/protocolname/ipsecpsk.md)
+- [static let ipsecPSK: WASharedSecret.ProtocolName](./protocolname/ipsecpsk.md)
   Derive a shared secret to bootstrap IPSec, using the resulting shared secret as the IPSec Pre-Shared Key.
-- [static let tlsPSK: WASharedSecret.ProtocolName](washaredsecret/protocolname/tlspsk.md)
+- [static let tlsPSK: WASharedSecret.ProtocolName](./protocolname/tlspsk.md)
   Derive a shared secret to bootstrap TLS, using the resulting shared secret as a TLS Pre-Shared Key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

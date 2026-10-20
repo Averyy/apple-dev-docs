@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that validates the identity of a merchant for a payment request.
 
@@ -17,6 +18,10 @@ Creates an object that validates the identity of a merchant for a payment reques
 
 ```swift
 init(dictionary: [AnyHashable : Any])
+```
+
+```objc
+- (instancetype) initWithDictionary:(NSDictionary *) dictionary;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # searchTerritory
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A country code that the framework uses to filter the search results of apps that aren’t available in that country.
 
@@ -18,11 +19,12 @@ final var searchTerritory: String? { get async }
 
 #### Discussion
 
-This property is an optional two-letter country code in the ISO 3166-1 alpha-2 standard that the alternative marketplace sets. For more information, see [`setSearchTerritory(_:)`](applibrary/setsearchterritory(_:).md).
+This property is an optional two-letter country code in the ISO 3166-1 alpha-2 standard that the alternative marketplace sets. For more information, see [`setSearchTerritory(_:)`](./setsearchterritory%28_%29.md).
 
 ## See Also
 
-- [func setSearchTerritory(String?) async](applibrary/setsearchterritory(_:).md)
+### Filtering app searches
+- [func setSearchTerritory(String?) async](./setsearchterritory%28_%29.md)
   Defines a country code that the system uses to filter the search results of apps that aren’t available in that country.
 
 

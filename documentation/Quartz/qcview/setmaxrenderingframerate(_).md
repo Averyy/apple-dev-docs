@@ -1,17 +1,24 @@
 # setMaxRenderingFrameRate(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the maximum rendering frame rate.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func setMaxRenderingFrameRate(_ maxFPS: Float)
+```
+
+```objc
+- (void) setMaxRenderingFrameRate:(float) maxFPS;
 ```
 
 ## Parameters
@@ -20,7 +27,8 @@ func setMaxRenderingFrameRate(_ maxFPS: Float)
 
 ## See Also
 
-- [func maxRenderingFrameRate() -> Float](qcview/maxrenderingframerate.md)
+### Setting and Getting the Maximum Frame Rate
+- [func maxRenderingFrameRate() -> Float](./maxrenderingframerate%28%29.md)
   Returns the maximum frame rate for rendering.
 
 

@@ -1,7 +1,8 @@
 # imageUrl
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container’s image URL.
 
@@ -10,7 +11,7 @@ The container’s image URL.
 
 ## Declaration
 
-```swift
+```
 attribute string? imageUrl;
 ```
 

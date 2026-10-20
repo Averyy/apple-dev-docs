@@ -1,13 +1,14 @@
 # paths
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the muted paths.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ An array containing the muted paths.
 var paths: UnsafePointer<es_muted_path_t>!
 ```
 
+```c
+const es_muted_path_t * paths;
+```
+
 ## See Also
 
-- [struct es_muted_path_t](es_muted_path_t.md)
+### Accessing Muted Paths
+- [struct es_muted_path_t](../es_muted_path_t.md)
   A structure that describes a path’s muted events.
-- [var count: Int](es_muted_paths_t/count.md)
+- [var count: Int](./count.md)
   The number of elements in the paths array.
 
 

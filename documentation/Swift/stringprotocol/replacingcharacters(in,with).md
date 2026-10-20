@@ -1,7 +1,8 @@
 # replacingCharacters(in:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string in which the characters in a specified range of the `String` are replaced by a given string.
 

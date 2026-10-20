@@ -1,7 +1,8 @@
 # PMPaperIsCustom(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value indicating whether a specified paper is a custom paper.
 
@@ -14,13 +15,17 @@ Returns a Boolean value indicating whether a specified paper is a custom paper.
 func PMPaperIsCustom(_ paper: PMPaper) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean PMPaperIsCustom(PMPaper paper);
+```
+
+#### Return Value
 
 If `true`, the specified paper is a custom paper; otherwise, `false`.
 
 #### Discussion
 
-You can create a custom paper with the function [`PMPaperCreateCustom(_:_:_:_:_:_:_:)`](1459322-pmpapercreatecustom.md).
+You can create a custom paper with the function [`PMPaperCreateCustom(_:_:_:_:_:_:_:)`](./api-1459322-pmpapercreatecustom.md).
 
 ## Parameters
 
@@ -28,7 +33,8 @@ You can create a custom paper with the function [`PMPaperCreateCustom(_:_:_:_:_:
 
 ## See Also
 
-- [func PMPaperCreateCustom(PMPrinter?, CFString?, CFString?, Double, Double, UnsafePointer<PMPaperMargins>, UnsafeMutablePointer<PMPaper?>) -> OSStatus](1459322-pmpapercreatecustom.md)
+### Creating and Using Paper Objects
+- [func PMPaperCreateCustom(PMPrinter?, CFString?, CFString?, Double, Double, UnsafePointer<PMPaperMargins>, UnsafeMutablePointer<PMPaper?>) -> OSStatus](./api-1459322-pmpapercreatecustom.md)
   Creates a custom paper object.
 
 

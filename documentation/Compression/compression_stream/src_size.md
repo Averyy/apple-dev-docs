@@ -1,18 +1,19 @@
 # src_size
 
 **Framework**: Compression  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in bytes, of the source buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The size, in bytes, of the source buffer.
 var src_size: Int
 ```
 
+```c
+size_t src_size;
+```
+
 ## See Also
 
-- [var dst_ptr: UnsafeMutablePointer<UInt8>](compression_stream/dst_ptr.md)
+### Compression Stream Properties
+- [var dst_ptr: UnsafeMutablePointer<UInt8>](./dst_ptr.md)
   A pointer to the first byte of the destination buffer.
-- [var dst_size: Int](compression_stream/dst_size.md)
+- [var dst_size: Int](./dst_size.md)
   The size, in bytes, of the destination buffer.
-- [var src_ptr: UnsafePointer<UInt8>](compression_stream/src_ptr.md)
+- [var src_ptr: UnsafePointer<UInt8>](./src_ptr.md)
   A pointer to the first byte of the source buffer.
-- [var state: UnsafeMutableRawPointer?](compression_stream/state.md)
+- [var state: UnsafeMutableRawPointer?](./state.md)
   The stream state object of the compression stream.
 
 

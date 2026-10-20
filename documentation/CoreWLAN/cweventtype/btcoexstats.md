@@ -1,7 +1,8 @@
 # CWEventType.btCoexStats
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 case btCoexStats
+```
+
+```c
+CWEventTypeBtCoexStats
 ```
 
 

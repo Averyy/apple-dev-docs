@@ -1,7 +1,8 @@
 # restoreData(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func restoreData(_ data: Data, completionHandler: @escaping @MainActor @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func restoreData(_ data: Data) async throws
+```
+
+```objc
+- (void) restoreData:(NSData *) data completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 

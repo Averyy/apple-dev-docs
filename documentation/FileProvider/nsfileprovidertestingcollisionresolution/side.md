@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item’s location.
@@ -19,13 +20,18 @@ The item’s location.
 var side: NSFileProviderTestingOperationSide { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderTestingOperationSide side;
+```
+
 #### Discussion
 
 Most operations are symmetrical. They can affect either items stored locally, or items in the File Provider extension’s remote storage.
 
 ## See Also
 
-- [var renamedItem: NSFileProviderItem](nsfileprovidertestingcollisionresolution/renameditem.md)
+### Accessing the Operation’s Data
+- [var renamedItem: NSFileProviderItem](./renameditem.md)
   A description of the renamed item.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: EventKit UI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the user finishes editing an event.
@@ -18,6 +19,10 @@ Invoked when the user finishes editing an event.
 func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction)
 ```
 
+```objc
+- (void) eventEditViewController:(EKEventEditViewController *) controller didCompleteWithAction:(EKEventEditViewAction) action;
+```
+
 #### Discussion
 
 Implement this method to dismiss the modal event edit view controller.
@@ -29,7 +34,8 @@ Implement this method to dismiss the modal event edit view controller.
 
 ## See Also
 
-- [enum EKEventEditViewAction](ekeventeditviewaction.md)
+### Finishing an Edit
+- [enum EKEventEditViewAction](../ekeventeditviewaction.md)
   The action taken by the user after editing an event.
 
 

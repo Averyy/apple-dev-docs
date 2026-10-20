@@ -1,11 +1,12 @@
 # init(stage:)
 
 **Framework**: Spatial Preview  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

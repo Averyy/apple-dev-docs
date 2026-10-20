@@ -1,7 +1,8 @@
 # updateVisibleMenu(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the currently visible menu.
 
@@ -18,13 +19,18 @@ Updates the currently visible menu.
 func updateVisibleMenu(_ block: (UIMenu) -> UIMenu)
 ```
 
+```objc
+- (void) updateVisibleMenuWithBlock:(UIMenu * (^)(UIMenu *visibleMenu)) block;
+```
+
 ## Parameters
 
 - `block`: A mutable copy of the menu.
 
 ## See Also
 
-- [func dismissMenu()](uicontextmenuinteraction/dismissmenu.md)
+### Managing menu interactions
+- [func dismissMenu()](./dismissmenu%28%29.md)
   Dismisses the context menu.
 
 

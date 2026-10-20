@@ -1,7 +1,8 @@
 # withUnsafeMutablePointer(_:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls a closure with a mutable pointer to the backing `AudioChannelLayout`.
 
@@ -11,7 +12,7 @@ Calls a closure with a mutable pointer to the backing `AudioChannelLayout`.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

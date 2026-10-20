@@ -1,7 +1,8 @@
 # isFocused
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the access point is in focus on tvOS.
 
@@ -14,23 +15,28 @@ A Boolean value that indicates whether the access point is in focus on tvOS.
 var isFocused: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isFocused) BOOL focused;
+```
+
 #### Discussion
 
-To change the focus to the access point, set this property to [`true`](https://developer.apple.com/documentation/swift/true); otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+To change the focus to the access point, set this property to [`true`](../../Swift/true.md); otherwise, set it to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func trigger(handler: () -> Void)](gkaccesspoint/trigger(handler:).md)
+### Managing the access point
+- [func trigger(handler: () -> Void)](./trigger%28handler%29.md)
   Displays the Game Center dashboard as if the player taps or presses the access point.
-- [func trigger(state: GKGameCenterViewControllerState, handler: () -> Void)](gkaccesspoint/trigger(state:handler:).md)
+- [func trigger(state: GKGameCenterViewControllerState, handler: () -> Void)](./trigger%28state,handler%29.md)
   Displays the Game Center dashboard in the specified state as if the player taps or presses the access point.
-- [func trigger(player: GKPlayer, handler: (() -> Void)?)](gkaccesspoint/trigger(player:handler:).md)
+- [func trigger(player: GKPlayer, handler: (() -> Void)?)](./trigger%28player,handler%29.md)
   Displays the Game Center dashboard in a state that shows a player profile.
-- [func trigger(achievementID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(achievementid:handler:).md)
+- [func trigger(achievementID: String, handler: (() -> Void)?)](./trigger%28achievementid,handler%29.md)
   Displays the Game Center dashboard in a state that shows a specific achievement.
-- [func trigger(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope, handler: (() -> Void)?)](gkaccesspoint/trigger(leaderboardid:playerscope:timescope:handler:).md)
+- [func trigger(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope, handler: (() -> Void)?)](./trigger%28leaderboardid,playerscope,timescope,handler%29.md)
   Displays the Game Center dashboard in a state that shows a specific leaderboard.
-- [func trigger(leaderboardSetID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(leaderboardsetid:handler:).md)
+- [func trigger(leaderboardSetID: String, handler: (() -> Void)?)](./trigger%28leaderboardsetid,handler%29.md)
   Displays the Game Center dashboard in a state that shows a specific leaderboard set.
 
 

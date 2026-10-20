@@ -1,14 +1,15 @@
 # count
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 routine_arg_size count;
 ```
 

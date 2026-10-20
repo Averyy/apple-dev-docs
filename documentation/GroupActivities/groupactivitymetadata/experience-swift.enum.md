@@ -1,7 +1,8 @@
 # GroupActivityMetadata.Experience
 
 **Framework**: Group Activities  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -20,19 +21,19 @@ enum Experience
 ## Topics
 
 ### Enumeration Cases
-- [GroupActivityMetadata.Experience.listenTogether](groupactivitymetadata/experience-swift.enum/listentogether.md)
-- [GroupActivityMetadata.Experience.watchTogether](groupactivitymetadata/experience-swift.enum/watchtogether.md)
+- [GroupActivityMetadata.Experience.listenTogether](./experience-swift.enum/listentogether.md)
+- [GroupActivityMetadata.Experience.watchTogether](./experience-swift.enum/watchtogether.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # adjustmentType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of caption conversion adjustment.
 
@@ -17,11 +18,16 @@ The type of caption conversion adjustment.
 var adjustmentType: AVCaptionConversionAdjustment.AdjustmentType { get }
 ```
 
+```objc
+@property (readonly) AVCaptionConversionAdjustmentType adjustmentType;
+```
+
 ## See Also
 
-- [AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.struct.md)
+### Accessing the adjustment type
+- [AVCaptionConversionAdjustment.AdjustmentType](./adjustmenttype-swift.struct.md)
   Constants that indicate an adjustment type.
-- [class AVCaptionConversionTimeRangeAdjustment](avcaptionconversiontimerangeadjustment.md)
+- [class AVCaptionConversionTimeRangeAdjustment](../avcaptionconversiontimerangeadjustment.md)
   An object that describes an adjustment to the time range of one or more captions.
 
 

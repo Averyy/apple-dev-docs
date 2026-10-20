@@ -1,7 +1,8 @@
 # eulerAngles(order:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func eulerAngles(order: __SPEulerAngleOrder) -> EulerAnglesFloat
+```
+
+```c
+static SPEulerAnglesFloat SPRotation3DFloatGetEulerAngles(SPRotation3DFloat rotation, SPEulerAngleOrder order);
 ```
 
 #### Return Value

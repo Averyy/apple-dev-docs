@@ -1,7 +1,8 @@
 # init(rating:maximumRating:title:detail:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rating item with a current and a maximum rating.
 
@@ -16,12 +17,16 @@ Creates a rating item with a current and a maximum rating.
 init(rating: NSNumber?, maximumRating: NSNumber?, title: String?, detail: String?)
 ```
 
+```objc
+- (instancetype) initWithRating:(NSNumber *) rating maximumRating:(NSNumber *) maximumRating title:(NSString *) title detail:(NSString *) detail;
+```
+
 ## Parameters
 
 - `rating`: A number in the range of 0 to `maximumRating`. The number must be an increment of 0.5.
 - `maximumRating`: A whole number in the range of 1 to 5 that specifies the maximum rating that the item allows.
 - `title`: The text that the template displays as the item’s title.
-- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See [`CPInformationTemplateLayout`](cpinformationtemplatelayout.md) for more information.
+- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See [`CPInformationTemplateLayout`](../cpinformationtemplatelayout.md) for more information.
 
 
 ---

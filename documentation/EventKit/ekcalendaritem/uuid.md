@@ -1,12 +1,13 @@
 # uuid
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar item’s unique identifier.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The calendar item’s unique identifier.
 var uuid: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * UUID;
+```
+
 ## See Also
 
-- [class EKCalendarItem](ekcalendaritem.md)
+### Related Documentation
+- [class EKCalendarItem](../ekcalendaritem.md)
   An abstract superclass for calendar events and reminders.
-- [var calendarItemIdentifier: String](ekcalendaritem/calendaritemidentifier.md)
+### Accessing Calendar Items
+- [var calendarItemIdentifier: String](./calendaritemidentifier.md)
   The calendar item’s unique identifier.
-- [var calendarItemExternalIdentifier: String!](ekcalendaritem/calendaritemexternalidentifier.md)
+- [var calendarItemExternalIdentifier: String!](./calendaritemexternalidentifier.md)
   The calendar item’s external identifier as provided by the calendar server.
 
 

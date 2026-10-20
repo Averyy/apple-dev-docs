@@ -1,14 +1,15 @@
 # tcp_connection_client_ecn_not_available
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 tcp_connection_client_ecn_not_available = 4
 ```
 

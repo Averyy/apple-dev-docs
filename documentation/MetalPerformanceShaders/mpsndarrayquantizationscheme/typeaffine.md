@@ -1,7 +1,8 @@
 # typeAffine
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var typeAffine: MPSNDArrayQuantizationScheme { get }
+```
+
+```c
+MPSNDArrayQuantizationTypeAffine
 ```
 
 

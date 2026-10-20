@@ -1,7 +1,8 @@
 # vertexStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between vertices in each vertex buffer.
 
@@ -19,9 +20,14 @@ The stride, in bytes, between vertices in each vertex buffer.
 var vertexStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger vertexStride;
+```
+
 ## See Also
 
-- [var vertexBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotiontrianglegeometrydescriptor/vertexbuffers.md)
+### Specifying vertex data
+- [var vertexBuffers: [MTLMotionKeyframeData]](./vertexbuffers.md)
   An array of motion keyframes, each containing triangle data.
 
 

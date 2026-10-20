@@ -1,7 +1,8 @@
 # AVAudioSession.DeactivationSource
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The source of the audio session deactivation.
 
@@ -19,33 +20,38 @@ The source of the audio session deactivation.
 enum DeactivationSource
 ```
 
+```c
+enum AVAudioSessionDeactivationSource : NSInteger;
+```
+
 ## Topics
 
 ### Creating a deactivation source
-- [init?(rawValue: Int)](avaudiosession/deactivationsource/init(rawvalue:).md)
+- [init?(rawValue: Int)](./deactivationsource/init%28rawvalue%29.md)
 ### Getting the source
-- [AVAudioSession.DeactivationSource.app](avaudiosession/deactivationsource/app.md)
-- [AVAudioSession.DeactivationSource.system](avaudiosession/deactivationsource/system.md)
+- [AVAudioSession.DeactivationSource.app](./deactivationsource/app.md)
+- [AVAudioSession.DeactivationSource.system](./deactivationsource/system.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVAudioSession.DeactivationContext](avaudiosession/deactivationcontext.md)
+### Getting activation context details
+- [AVAudioSession.DeactivationContext](./deactivationcontext.md)
   An object that describes why and how the audio session deactivated.
-- [AVAudioSession.InterruptionContext](avaudiosession/interruptioncontext.md)
+- [AVAudioSession.InterruptionContext](./interruptioncontext.md)
   An object that provides context about an audio session interruption.
-- [AVAudioSession.ResumptionContext](avaudiosession/resumptioncontext.md)
+- [AVAudioSession.ResumptionContext](./resumptioncontext.md)
   An object that provides context when resumption becomes available.
-- [AVAudioSession.ResumptionRecommendation](avaudiosession/resumptionrecommendation.md)
+- [AVAudioSession.ResumptionRecommendation](./resumptionrecommendation.md)
   The system’s recommendation on whether to resume playback.
 
 

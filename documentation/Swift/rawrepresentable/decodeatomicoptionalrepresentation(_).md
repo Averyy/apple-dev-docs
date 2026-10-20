@@ -1,7 +1,8 @@
 # decodeAtomicOptionalRepresentation(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Recovers the logical atomic type `Self?` by destroying some `AtomicOptionalRepresentation` storage instance returned from an atomic operation on `Optional`.
 
@@ -19,6 +20,8 @@ Recovers the logical atomic type `Self?` by destroying some `AtomicOptionalRepre
 ```swift
 static func decodeAtomicOptionalRepresentation(_ representation: consuming Self.RawValue.AtomicOptionalRepresentation) -> Self?
 ```
+
+Available when `Self` conforms to `AtomicOptionalRepresentable` and `RawValue` conforms to `AtomicOptionalRepresentable`.
 
 #### Return Value
 

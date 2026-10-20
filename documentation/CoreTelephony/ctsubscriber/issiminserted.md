@@ -1,7 +1,8 @@
 # isSIMInserted
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether a SIM is present.
 
@@ -14,6 +15,10 @@ A Boolean property that indicates whether a SIM is present.
 
 ```swift
 var isSIMInserted: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSIMInserted) BOOL SIMInserted;
 ```
 
 #### Discussion

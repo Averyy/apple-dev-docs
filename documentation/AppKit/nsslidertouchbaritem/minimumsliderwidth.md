@@ -1,7 +1,8 @@
 # minimumSliderWidth
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum width of the slider’s track.
 
@@ -17,11 +18,16 @@ The minimum width of the slider’s track.
 var minimumSliderWidth: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat minimumSliderWidth;
+```
+
 ## See Also
 
-- [var maximumSliderWidth: CGFloat](nsslidertouchbaritem/maximumsliderwidth.md)
+### Managing the slider’s value
+- [var maximumSliderWidth: CGFloat](./maximumsliderwidth.md)
   The maximum width of the slider’s track.
-- [var doubleValue: Double](nsslidertouchbaritem/doublevalue.md)
+- [var doubleValue: Double](./doublevalue.md)
   The double value of the slider.
 
 

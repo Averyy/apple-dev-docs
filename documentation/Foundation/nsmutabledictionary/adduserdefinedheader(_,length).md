@@ -1,7 +1,8 @@
 # addUserDefinedHeader(_:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func addUserDefinedHeader(_ inHeaderData: UnsafeRawPointer!, length inHeaderDataLength: UInt32) -> OBEXError
+```
+
+```objc
+- (OBEXError) addUserDefinedHeader:(const void *) inHeaderData length:(uint32_t) inHeaderDataLength;
 ```
 
 

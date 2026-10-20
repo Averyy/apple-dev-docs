@@ -1,15 +1,20 @@
 # AVF_DEPLOYING_TO_2022_RELEASES_AND_LATER
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 var AVF_DEPLOYING_TO_2022_RELEASES_AND_LATER: Int32 { get }
+```
+
+```c
+#define AVF_DEPLOYING_TO_2022_RELEASES_AND_LATER
 ```
 
 

@@ -1,7 +1,8 @@
 # lookToScrollAxes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Setting lookToScrollAxes turns on Look to Scroll for the scroll view in directions of the defined axis
 
@@ -12,6 +13,10 @@ Setting lookToScrollAxes turns on Look to Scroll for the scroll view in directio
 
 ```swift
 var lookToScrollAxes: UIAxis { get set }
+```
+
+```objc
+@property (nonatomic) UIAxis lookToScrollAxes;
 ```
 
 #### Discussion

@@ -1,22 +1,27 @@
 # applying(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new texture by applying a Core Image filter to an existing texture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func applying(_ filter: CIFilter) -> Self
+```
+
+```objc
+- (instancetype) textureByApplyingCIFilter:(CIFilter *) filter;
 ```
 
 #### Return Value

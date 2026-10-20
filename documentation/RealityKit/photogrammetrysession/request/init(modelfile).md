@@ -1,7 +1,8 @@
 # init(modelFile:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance based on the contents of a USDZ file.
 

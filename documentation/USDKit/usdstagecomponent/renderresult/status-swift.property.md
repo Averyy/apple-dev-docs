@@ -1,7 +1,8 @@
 # status
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the render operation.
 

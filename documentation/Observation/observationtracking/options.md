@@ -1,7 +1,8 @@
 # ObservationTracking.Options
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,20 +22,20 @@ struct Options
 ## Topics
 
 ### Type Properties
-- [static var `deinit`: ObservationTracking.Options](observationtracking/options/deinit.md)
-- [static var didSet: ObservationTracking.Options](observationtracking/options/didset.md)
-- [static var willSet: ObservationTracking.Options](observationtracking/options/willset.md)
+- [static var `deinit`: ObservationTracking.Options](./options/deinit.md)
+- [static var didSet: ObservationTracking.Options](./options/didset.md)
+- [static var willSet: ObservationTracking.Options](./options/willset.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

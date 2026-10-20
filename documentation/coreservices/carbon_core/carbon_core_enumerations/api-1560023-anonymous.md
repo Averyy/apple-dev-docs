@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kUCTokenNotFound: Int](kuctokennotfound.md)
-- [var kUCTokenizerIterationFinished: Int](kuctokenizeriterationfinished.md)
-- [var kUCTokenizerUnknownLang: Int](kuctokenizerunknownlang.md)
+- [var kUCTokenNotFound: Int](../../kuctokennotfound.md)
+- [var kUCTokenizerIterationFinished: Int](../../kuctokenizeriterationfinished.md)
+- [var kUCTokenizerUnknownLang: Int](../../kuctokenizerunknownlang.md)
 
 
 ---

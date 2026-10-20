@@ -1,11 +1,12 @@
 # green
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var green: Float
 ```
 
+```c
+float green;
+```
+
 ## See Also
 
-- [var blue: Float](cgdevicecolor/blue.md)
-- [var red: Float](cgdevicecolor/red.md)
+### Instance Properties
+- [var blue: Float](./blue.md)
+- [var red: Float](./red.md)
 
 
 ---

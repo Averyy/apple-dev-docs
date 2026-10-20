@@ -1,7 +1,8 @@
 # NSSystemExtensionUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is trying to install a system extension bundle.
 
@@ -11,17 +12,19 @@ A message that tells people why the app is trying to install a system extension 
 - Mac Catalyst 18.4+
 - macOS 10.15+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSSystemExtensionUsageDescription` (Privacy - System Extension Usage Description)
+- **Type**: string
 
 #### Discussion
 
-This key is required for all system extensions except [`DriverKit`](https://developer.apple.com/documentation/driverkit) extensions. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescription`](information-property-list/osbundleusagedescription.md) instead.
+This key is required for all system extensions except [DriverKit](../../DriverKit/DriverKit.md) extensions. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescription`](./osbundleusagedescription.md) instead.
 
 ## See Also
 
-- [OSBundleUsageDescription](information-property-list/osbundleusagedescription.md)
+### System Extensions
+- [OSBundleUsageDescription](./osbundleusagedescription.md)
   A message that tells people why the app is trying to install a driver extension bundle.
 
 

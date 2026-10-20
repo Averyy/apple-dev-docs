@@ -1,7 +1,8 @@
 # handsFreeSupportedFeatures()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func handsFreeSupportedFeatures() -> UInt16
+```
+
+```objc
+- (uint16_t) handsFreeSupportedFeatures;
 ```
 
 

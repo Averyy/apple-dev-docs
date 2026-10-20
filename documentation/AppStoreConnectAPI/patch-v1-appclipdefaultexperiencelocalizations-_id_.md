@@ -1,7 +1,8 @@
 # Modify the localization for a default app clip experience
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update localized metadata for a specific default App Clip experience.
 
@@ -14,17 +15,34 @@ Update localized metadata for a specific default App Clip experience.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the default App Clip experience localization resource ID from the [`Read localization information for a default app clip experience`](get-v1-appclipdefaultexperiences-_id_-appclipdefaultexperiencelocalizations.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the default App Clip experience localization resource ID from the [`Read localization information for a default app clip experience`](./get-v1-appclipdefaultexperiences-_id_-appclipdefaultexperiencelocalizations.md) response.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `AppClipDefaultExperienceLocalizationUpdateRequest`
+
 The request body you use to update a default App Clip experience localization.
+
+## Responses
+
+- `200` OK (`AppClipDefaultExperienceLocalizationResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create the localized metadata for a default app clip experience](post-v1-appclipdefaultexperiencelocalizations.md)
+### Managing Your Default App Clip Experience’s Metadata
+- [Create the localized metadata for a default app clip experience](./post-v1-appclipdefaultexperiencelocalizations.md)
   Provide localized metadata that appears on the App Clip card of a default App Clip experience.
-- [Delete a default app clip experience localization](delete-v1-appclipdefaultexperiencelocalizations-_id_.md)
+- [Delete a default app clip experience localization](./delete-v1-appclipdefaultexperiencelocalizations-_id_.md)
   Delete localized metadata that appears on the App Clip card of a default App Clip experience.
 
 

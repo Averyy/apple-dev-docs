@@ -1,17 +1,18 @@
 # PHASESpatializationMode
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The manner in which PHASE outputs spatial audio.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,47 +20,52 @@ The manner in which PHASE outputs spatial audio.
 enum PHASESpatializationMode
 ```
 
+```c
+enum PHASESpatializationMode : NSInteger;
+```
+
 #### Overview
 
-When your app outputs audio through a spatial mixer, [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md), the PHASE engine requires your app to choose an option of this enumeration and assign it to the [`outputSpatializationMode`](phaseengine/outputspatializationmode.md) property.
+When your app outputs audio through a spatial mixer, [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md), the PHASE engine requires your app to choose an option of this enumeration and assign it to the [`outputSpatializationMode`](./phaseengine/outputspatializationmode.md) property.
 
 ## Topics
 
 ### Modes
-- [PHASESpatializationMode.automatic](phasespatializationmode/automatic.md)
+- [PHASESpatializationMode.automatic](./phasespatializationmode/automatic.md)
   A mode that indicates that the framework chooses the spatialization mode.
-- [PHASESpatializationMode.alwaysUseBinaural](phasespatializationmode/alwaysusebinaural.md)
+- [PHASESpatializationMode.alwaysUseBinaural](./phasespatializationmode/alwaysusebinaural.md)
   A mode that introduces special processing to replicate a realistic spatial listening experience.
-- [PHASESpatializationMode.alwaysUseChannelBased](phasespatializationmode/alwaysusechannelbased.md)
+- [PHASESpatializationMode.alwaysUseChannelBased](./phasespatializationmode/alwaysusechannelbased.md)
   A mode that adds a 3D position and orientation to sound by panning across the available output channels.
 ### Initializers
-- [init?(rawValue: Int)](phasespatializationmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./phasespatializationmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class PHASEEngine](phaseengine.md)
+### Setup
+- [class PHASEEngine](./phaseengine.md)
   An object that manages audio assets, controls playback, and configures environmental effects.
-- [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
+- [PHASEEngine.UpdateMode](./phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
-- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+- [PHASEEngine.RenderingMode](./phaseengine/renderingmode.md)
   Modes that determine whether the system renders audio in process or out of process.
-- [class PHASEAssetRegistry](phaseassetregistry.md)
+- [class PHASEAssetRegistry](./phaseassetregistry.md)
   A central repository of audio assets.
-- [enum PHASENormalizationMode](phasenormalizationmode.md)
+- [enum PHASENormalizationMode](./phasenormalizationmode.md)
   Options that determine whether the framework adjusts a sound asset’s loudness for the user’s output device.
-- [enum PHASEReverbPreset](phasereverbpreset.md)
+- [enum PHASEReverbPreset](./phasereverbpreset.md)
   The manner in which PHASE diffuses resonating sound.
-- [class PHASEMedium](phasemedium.md)
+- [class PHASEMedium](./phasemedium.md)
   A property or quality of the environment that affects how sound travels.
 
 

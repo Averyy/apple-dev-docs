@@ -1,7 +1,8 @@
 # PartRenderer.Action.skip
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Skip this part (only in response to beginPart)
 

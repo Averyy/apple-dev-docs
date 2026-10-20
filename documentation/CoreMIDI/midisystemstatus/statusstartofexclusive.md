@@ -1,16 +1,17 @@
 # MIDISystemStatus.statusStartOfExclusive
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@
 case statusStartOfExclusive
 ```
 
+```c
+kMIDIStatusStartOfExclusive
+```
+
 ## See Also
 
-- [MIDISystemStatus.statusActiveSending](midisystemstatus/statusactivesending.md)
-- [MIDISystemStatus.statusContinue](midisystemstatus/statuscontinue.md)
-- [MIDISystemStatus.statusEndOfExclusive](midisystemstatus/statusendofexclusive.md)
-- [MIDISystemStatus.statusMTC](midisystemstatus/statusmtc.md)
-- [MIDISystemStatus.statusSongPosPointer](midisystemstatus/statussongpospointer.md)
-- [MIDISystemStatus.statusSongSelect](midisystemstatus/statussongselect.md)
-- [MIDISystemStatus.statusStart](midisystemstatus/statusstart.md)
-- [MIDISystemStatus.statusStop](midisystemstatus/statusstop.md)
-- [MIDISystemStatus.statusSystemReset](midisystemstatus/statussystemreset.md)
-- [MIDISystemStatus.statusTimingClock](midisystemstatus/statustimingclock.md)
-- [MIDISystemStatus.statusTuneRequest](midisystemstatus/statustunerequest.md)
+### Status Types
+- [MIDISystemStatus.statusActiveSending](./statusactivesending.md)
+- [MIDISystemStatus.statusContinue](./statuscontinue.md)
+- [MIDISystemStatus.statusEndOfExclusive](./statusendofexclusive.md)
+- [MIDISystemStatus.statusMTC](./statusmtc.md)
+- [MIDISystemStatus.statusSongPosPointer](./statussongpospointer.md)
+- [MIDISystemStatus.statusSongSelect](./statussongselect.md)
+- [MIDISystemStatus.statusStart](./statusstart.md)
+- [MIDISystemStatus.statusStop](./statusstop.md)
+- [MIDISystemStatus.statusSystemReset](./statussystemreset.md)
+- [MIDISystemStatus.statusTimingClock](./statustimingclock.md)
+- [MIDISystemStatus.statusTuneRequest](./statustunerequest.md)
 
 
 ---

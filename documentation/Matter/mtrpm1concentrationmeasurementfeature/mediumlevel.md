@@ -1,7 +1,8 @@
 # mediumLevel
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 static var mediumLevel: MTRPM1ConcentrationMeasurementFeature { get }
+```
+
+```c
+MTRPM1ConcentrationMeasurementFeatureMediumLevel
 ```
 
 

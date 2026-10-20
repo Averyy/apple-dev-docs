@@ -1,18 +1,21 @@
 # init(keyPath:object:expectedValue:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expectation a KVO change fulfills when it causes the specified key path of the observed object to have an expected value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS - Deprecated in 17.0
+- iPadOS - Deprecated in 17.0
+- Mac Catalyst - Deprecated in 17.0
+- macOS - Deprecated in 27.0
+- tvOS - Deprecated in 17.0
+- visionOS - Deprecated in 1.0
+- watchOS - Deprecated in 26.0
+
+> **Deprecated**: Replaced by 'XCTKeyPathExpectation'
 
 ## Declaration
 
@@ -20,15 +23,19 @@ Creates an expectation a KVO change fulfills when it causes the specified key pa
 convenience init(keyPath: String, object: Any, expectedValue: Any?)
 ```
 
+```objc
+- (instancetype) initWithKeyPath:(NSString *) keyPath object:(id) object expectedValue:(id) expectedValue;
+```
+
 #### Discussion
 
-This initializer sets up KVO observation for `keyPath` with the following [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions):
+This initializer sets up KVO observation for `keyPath` with the following [`NSKeyValueObservingOptions`](../../Foundation/nskeyvalueobservingoptions.md):
 
-- [`initial`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/initial)
-- [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/new)
-- [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/old)
+- [`initial`](../../Foundation/nskeyvalueobservingoptions/initial.md)
+- [`new`](../../Foundation/nskeyvalueobservingoptions/new.md)
+- [`old`](../../Foundation/nskeyvalueobservingoptions/old.md)
 
-The inclusion of the [`initial`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/initial) option means that the system checks the observed key path immediately after initialization. The inclusion of the [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/new) and [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](https://developer.apple.com/documentation/foundation/nskeyvaluechangekey/newkey) and [`oldKey`](https://developer.apple.com/documentation/foundation/nskeyvaluechangekey/oldkey) keys.
+The inclusion of the [`initial`](../../Foundation/nskeyvalueobservingoptions/initial.md) option means that the system checks the observed key path immediately after initialization. The inclusion of the [`new`](../../Foundation/nskeyvalueobservingoptions/new.md) and [`old`](../../Foundation/nskeyvalueobservingoptions/old.md) options means that any custom KVO handler you provide in the expectation’s [`handler`](./handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](../../Foundation/nskeyvaluechangekey/newkey.md) and [`oldKey`](../../Foundation/nskeyvaluechangekey/oldkey.md) keys.
 
 ## Parameters
 
@@ -38,9 +45,10 @@ The inclusion of the [`initial`](https://developer.apple.com/documentation/found
 
 ## See Also
 
-- [convenience init(keyPath: String, object: Any)](xctkvoexpectation/init(keypath:object:).md)
+### Creating KVO expectations
+- [convenience init(keyPath: String, object: Any)](./init%28keypath,object%29.md)
   Creates an expectation that any KVO change to the specified key path of the observed object fulfills.
-- [init(keyPath: String, object: Any, expectedValue: Any?, options: NSKeyValueObservingOptions)](xctkvoexpectation/init(keypath:object:expectedvalue:options:).md)
+- [init(keyPath: String, object: Any, expectedValue: Any?, options: NSKeyValueObservingOptions)](./init%28keypath,object,expectedvalue,options%29.md)
   Creates an expectation with custom observation options that a KVO change fulfills when it causes the specified key path of the observed object to have an expected value.
 
 

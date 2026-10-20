@@ -1,7 +1,8 @@
 # PDFPageOverlayViewProvider
 
 **Framework**: PDFKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -17,17 +18,21 @@
 protocol PDFPageOverlayViewProvider : NSObjectProtocol
 ```
 
+```objc
+@protocol PDFPageOverlayViewProvider <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func pdfView(PDFView, overlayViewFor: PDFPage) -> UIView?](pdfpageoverlayviewprovider/pdfview(_:overlayviewfor:).md)
-- [func pdfView(PDFView, willDisplayOverlayView: UIView, for: PDFPage)](pdfpageoverlayviewprovider/pdfview(_:willdisplayoverlayview:for:).md)
-- [func pdfView(PDFView, willEndDisplayingOverlayView: UIView, for: PDFPage)](pdfpageoverlayviewprovider/pdfview(_:willenddisplayingoverlayview:for:).md)
+- [func pdfView(PDFView, overlayViewFor: PDFPage) -> UIView?](./pdfpageoverlayviewprovider/pdfview%28_,overlayviewfor%29.md)
+- [func pdfView(PDFView, willDisplayOverlayView: UIView, for: PDFPage)](./pdfpageoverlayviewprovider/pdfview%28_,willdisplayoverlayview,for%29.md)
+- [func pdfView(PDFView, willEndDisplayingOverlayView: UIView, for: PDFPage)](./pdfpageoverlayviewprovider/pdfview%28_,willenddisplayingoverlayview,for%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

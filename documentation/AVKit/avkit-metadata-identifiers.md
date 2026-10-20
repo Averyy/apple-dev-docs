@@ -1,28 +1,29 @@
 # AVKit metadata identifiers
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: API Collection
 
 Additional metadata that an asset contains.
 
 ## Topics
 
 ### Displayed metadata
-- [let AVKitMetadataIdentifierExactStartDate: String](avkitmetadataidentifierexactstartdate.md)
+- [let AVKitMetadataIdentifierExactStartDate: String](./avkitmetadataidentifierexactstartdate.md)
   The exact start date for a live event stream.
-- [let AVKitMetadataIdentifierExactEndDate: String](avkitmetadataidentifierexactenddate.md)
+- [let AVKitMetadataIdentifierExactEndDate: String](./avkitmetadataidentifierexactenddate.md)
   The exact end date for a live event stream.
-- [let AVKitMetadataIdentifierApproximateStartDate: String](avkitmetadataidentifierapproximatestartdate.md)
+- [let AVKitMetadataIdentifierApproximateStartDate: String](./avkitmetadataidentifierapproximatestartdate.md)
   The approximate start date for a live event stream.
-- [let AVKitMetadataIdentifierApproximateEndDate: String](avkitmetadataidentifierapproximateenddate.md)
+- [let AVKitMetadataIdentifierApproximateEndDate: String](./avkitmetadataidentifierapproximateenddate.md)
   The approximate end date for a live event stream.
 ### Nondisplayed metadata
-- [let AVKitMetadataIdentifierPlaybackProgress: String](avkitmetadataidentifierplaybackprogress.md)
+- [let AVKitMetadataIdentifierPlaybackProgress: String](./avkitmetadataidentifierplaybackprogress.md)
   The playback progress published through the Now Playing Info Center.
-- [let AVKitMetadataIdentifierExternalContentIdentifier: String](avkitmetadataidentifierexternalcontentidentifier.md)
+- [let AVKitMetadataIdentifierExternalContentIdentifier: String](./avkitmetadataidentifierexternalcontentidentifier.md)
   The identifier for external content published through the Now Playing Info Center.
-- [let AVKitMetadataIdentifierExternalUserProfileIdentifier: String](avkitmetadataidentifierexternaluserprofileidentifier.md)
+- [let AVKitMetadataIdentifierExternalUserProfileIdentifier: String](./avkitmetadataidentifierexternaluserprofileidentifier.md)
   The identifier for an external user profile published through the Now Playing Info Center.
-- [let AVKitMetadataIdentifierServiceIdentifier: String](avkitmetadataidentifierserviceidentifier.md)
+- [let AVKitMetadataIdentifierServiceIdentifier: String](./avkitmetadataidentifierserviceidentifier.md)
   The service identifier published through the Now Playing Info Center.
 
 

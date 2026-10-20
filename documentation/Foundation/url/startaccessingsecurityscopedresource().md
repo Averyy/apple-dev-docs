@@ -1,7 +1,8 @@
 # startAccessingSecurityScopedResource()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Given a url created by resolving a bookmark data created with security scope, make the resource referenced by the url accessible to the process.
 
@@ -22,7 +23,7 @@ func startAccessingSecurityScopedResource() -> Bool
 
 ## Mentions
 
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
 #### Return Value
 
@@ -30,17 +31,18 @@ func startAccessingSecurityScopedResource() -> Bool
 
 #### Discussion
 
-When you obtain a security-scoped URL, such as by resolving a security-scoped bookmark, you can’t immediately use the resource it points to. To make the resource available to your app, by way of adding its location to your app’s sandbox, call this method on the security-scoped URL. You can also use Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/corefoundation/cfurlstartaccessingsecurityscopedresource(_:)) function.
+When you obtain a security-scoped URL, such as by resolving a security-scoped bookmark, you can’t immediately use the resource it points to. To make the resource available to your app, by way of adding its location to your app’s sandbox, call this method on the security-scoped URL. You can also use Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](../../CoreFoundation/cfurlstartaccessingsecurityscopedresource%28_%29.md) function.
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), then you must relinquish access as soon as you finish using the resource. Call the [`stopAccessingSecurityScopedResource()`](url/stopaccessingsecurityscopedresource().md) method to relinquish access. You must balance each call to [`startAccessingSecurityScopedResource()`](url/startaccessingsecurityscopedresource().md) for a given security-scoped URL with a call to [`stopAccessingSecurityScopedResource()`](url/stopaccessingsecurityscopedresource().md). When you make the last balanced call to [`stopAccessingSecurityScopedResource()`](url/stopaccessingsecurityscopedresource().md), you immediately lose access to the resource in question.
+If this method returns [`true`](../../Swift/true.md), then you must relinquish access as soon as you finish using the resource. Call the [`stopAccessingSecurityScopedResource()`](./stopaccessingsecurityscopedresource%28%29.md) method to relinquish access. You must balance each call to [`startAccessingSecurityScopedResource()`](./startaccessingsecurityscopedresource%28%29.md) for a given security-scoped URL with a call to [`stopAccessingSecurityScopedResource()`](./stopaccessingsecurityscopedresource%28%29.md). When you make the last balanced call to [`stopAccessingSecurityScopedResource()`](./stopaccessingsecurityscopedresource%28%29.md), you immediately lose access to the resource in question.
 
 > ⚠️ **Warning**:  If you fail to relinquish your access to file-system resources when you no longer need them, your app leaks kernel resources. If sufficient kernel resources leak, your app loses its ability to add file-system locations to its sandbox, such as with Powerbox or security-scoped bookmarks, until relaunched.
 
-> **Note**:  Security-scoped bookmarks aren’t available in versions of macOS prior to OS X 10.7.3.
+> **Version note**:  Security-scoped bookmarks aren’t available in versions of macOS prior to OS X 10.7.3.
 
 ## See Also
 
-- [func stopAccessingSecurityScopedResource()](url/stopaccessingsecurityscopedresource.md)
+### Working with security scoped resources
+- [func stopAccessingSecurityScopedResource()](./stopaccessingsecurityscopedresource%28%29.md)
   Revokes the access granted to the url by a prior successful call to the complementary start function.
 
 

@@ -1,7 +1,8 @@
 # init(primary:secondary:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a capture event interaction with handlers that respond independently to presses of hardware buttons.
 
@@ -16,6 +17,10 @@ Creates a capture event interaction with handlers that respond independently to 
 init(primary primaryHandler: @escaping (AVCaptureEvent) -> Void, secondary secondaryHandler: @escaping (AVCaptureEvent) -> Void)
 ```
 
+```objc
+- (instancetype) initWithPrimaryEventHandler:(void (^)(AVCaptureEvent *event)) primaryHandler secondaryEventHandler:(void (^)(AVCaptureEvent *event)) secondaryHandler;
+```
+
 ## Parameters
 
 - `primaryHandler`: An event handler the system calls when a person performs a primary capture event.
@@ -23,7 +28,8 @@ init(primary primaryHandler: @escaping (AVCaptureEvent) -> Void, secondary secon
 
 ## See Also
 
-- [init(handler: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(handler:).md)
+### Creating an interaction
+- [init(handler: (AVCaptureEvent) -> Void)](./init%28handler%29.md)
   Creates a capture event interaction with a handler that responds to presses of hardware buttons.
 
 

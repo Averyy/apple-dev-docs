@@ -1,7 +1,8 @@
 # isVideo
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies if the conversation contains a video stream.
 
@@ -20,7 +21,8 @@ final let isVideo: Bool
 
 ## See Also
 
-- [let handles: [Handle]](startconversationaction/handles.md)
+### Accessing action attributes
+- [let handles: [Handle]](./handles.md)
   The handles of all remote members who receive an invite  to join the conversation.
 
 

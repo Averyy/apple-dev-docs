@@ -1,12 +1,13 @@
 # orderFrontStandardAboutPanel(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a standard About window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Displays a standard About window.
 func orderFrontStandardAboutPanel(_ sender: Any?)
 ```
 
+```objc
+- (void) orderFrontStandardAboutPanel:(id) sender;
+```
+
 #### Discussion
 
-This method calls [`orderFrontStandardAboutPanel(options:)`](nsapplication/orderfrontstandardaboutpanel(options:).md) with a `nil` argument. See [`orderFrontStandardAboutPanel(options:)`](nsapplication/orderfrontstandardaboutpanel(options:).md) for a description of what’s displayed.
+This method calls [`orderFrontStandardAboutPanel(options:)`](./orderfrontstandardaboutpanel%28options%29.md) with a `nil` argument. See [`orderFrontStandardAboutPanel(options:)`](./orderfrontstandardaboutpanel%28options%29.md) for a description of what’s displayed.
 
 ## Parameters
 
@@ -24,15 +29,16 @@ This method calls [`orderFrontStandardAboutPanel(options:)`](nsapplication/order
 
 ## See Also
 
-- [func orderFrontColorPanel(Any?)](nsapplication/orderfrontcolorpanel(_:).md)
+### Managing Panels
+- [func orderFrontColorPanel(Any?)](./orderfrontcolorpanel%28_%29.md)
   Brings up the color panel, an instance of `NSColorPanel`.
-- [func orderFrontStandardAboutPanel(options: [NSApplication.AboutPanelOptionKey : Any])](nsapplication/orderfrontstandardaboutpanel(options:).md)
+- [func orderFrontStandardAboutPanel(options: [NSApplication.AboutPanelOptionKey : Any])](./orderfrontstandardaboutpanel%28options%29.md)
   Displays a standard About window with information from a given options dictionary.
-- [func orderFrontCharacterPalette(Any?)](nsapplication/orderfrontcharacterpalette(_:).md)
+- [func orderFrontCharacterPalette(Any?)](./orderfrontcharacterpalette%28_%29.md)
   Opens the character palette.
-- [func runPageLayout(Any?)](nsapplication/runpagelayout(_:).md)
+- [func runPageLayout(Any?)](./runpagelayout%28_%29.md)
   Displays the receiver’s page layout panel, an instance of `NSPageLayout`.
-- [NSApplication.AboutPanelOptionKey](nsapplication/aboutpaneloptionkey.md)
+- [NSApplication.AboutPanelOptionKey](./aboutpaneloptionkey.md)
   Keys to include in the options dictionary when displaying an About panel.
 
 

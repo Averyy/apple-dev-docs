@@ -1,7 +1,8 @@
 # moveToHue(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func moveToHue(with params: MTRColorControlClusterMoveToHueParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func moveToHue(with params: MTRColorControlClusterMoveToHueParams) async throws
+```
+
+```objc
+- (void) moveToHueWithParams:(MTRColorControlClusterMoveToHueParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,12 +1,15 @@
 # SecKeychainLockAll()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Locks all keychains belonging to the current user.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Locks all keychains belonging to the current user.
 func SecKeychainLockAll() -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainLockAll();
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 

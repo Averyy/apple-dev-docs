@@ -1,7 +1,8 @@
 # AppSchema.SpreadsheetIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the spreadsheet domain.
 
@@ -21,71 +22,72 @@ protocol SpreadsheetIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var addAudioToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addaudiotosheet.md)
+- [var addAudioToSheet: some AppSchemaIntent](./spreadsheetintent/addaudiotosheet.md)
   An intent schema that adds an audio clip to a sheet.
-- [var addCommentToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addcommenttosheet.md)
+- [var addCommentToSheet: some AppSchemaIntent](./spreadsheetintent/addcommenttosheet.md)
   An intent schema that adds a comment to a sheet.
-- [var addImageToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addimagetosheet.md)
+- [var addImageToSheet: some AppSchemaIntent](./spreadsheetintent/addimagetosheet.md)
   An intent schema that adds an image to a sheet.
-- [var addTextBoxToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addtextboxtosheet.md)
+- [var addTextBoxToSheet: some AppSchemaIntent](./spreadsheetintent/addtextboxtosheet.md)
   An intent schema that adds text to a sheet.
-- [var addVideoToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addvideotosheet.md)
+- [var addVideoToSheet: some AppSchemaIntent](./spreadsheetintent/addvideotosheet.md)
   An intent schema that adds a video to a sheet.
-- [var addWebVideoToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addwebvideotosheet.md)
+- [var addWebVideoToSheet: some AppSchemaIntent](./spreadsheetintent/addwebvideotosheet.md)
   An intent schema that adds a web video to a sheet.
-- [var create: some AppSchemaIntent](appschema/spreadsheetintent/create.md)
+- [var create: some AppSchemaIntent](./spreadsheetintent/create.md)
   An intent schema that opens the app for composing a new spreadsheet.
-- [var createSheet: some AppSchemaIntent](appschema/spreadsheetintent/createsheet.md)
+- [var createSheet: some AppSchemaIntent](./spreadsheetintent/createsheet.md)
   An intent schema that creates a new sheet in a spreadsheet.
-- [var delete: some AppSchemaIntent](appschema/spreadsheetintent/delete.md)
+- [var delete: some AppSchemaIntent](./spreadsheetintent/delete.md)
   An intent schema that deletes existing spreadsheets.
-- [var deleteSheet: some AppSchemaIntent](appschema/spreadsheetintent/deletesheet.md)
+- [var deleteSheet: some AppSchemaIntent](./spreadsheetintent/deletesheet.md)
   An intent schema that deletes sheets in a spreadsheet.
-- [var open: some AppSchemaIntent](appschema/spreadsheetintent/open.md)
+- [var open: some AppSchemaIntent](./spreadsheetintent/open.md)
   An intent schema that opens the app into an existing spreadsheet.
-- [var openSheet: some AppSchemaIntent](appschema/spreadsheetintent/opensheet.md)
+- [var openSheet: some AppSchemaIntent](./spreadsheetintent/opensheet.md)
   An intent schema that opens a sheet.
-- [var update: some AppSchemaIntent](appschema/spreadsheetintent/update.md)
+- [var update: some AppSchemaIntent](./spreadsheetintent/update.md)
   An intent schema that renames an existing spreadsheet.
-- [var updateSheet: some AppSchemaIntent](appschema/spreadsheetintent/updatesheet.md)
+- [var updateSheet: some AppSchemaIntent](./spreadsheetintent/updatesheet.md)
   An intent schema that updates an existing sheet.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var addAudioToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addaudiotosheet.md)
+### Actions
+- [var addAudioToSheet: some AppSchemaIntent](./spreadsheetintent/addaudiotosheet.md)
   An intent schema that adds an audio clip to a sheet.
-- [var addCommentToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addcommenttosheet.md)
+- [var addCommentToSheet: some AppSchemaIntent](./spreadsheetintent/addcommenttosheet.md)
   An intent schema that adds a comment to a sheet.
-- [var addImageToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addimagetosheet.md)
+- [var addImageToSheet: some AppSchemaIntent](./spreadsheetintent/addimagetosheet.md)
   An intent schema that adds an image to a sheet.
-- [var addTextBoxToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addtextboxtosheet.md)
+- [var addTextBoxToSheet: some AppSchemaIntent](./spreadsheetintent/addtextboxtosheet.md)
   An intent schema that adds text to a sheet.
-- [var addVideoToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addvideotosheet.md)
+- [var addVideoToSheet: some AppSchemaIntent](./spreadsheetintent/addvideotosheet.md)
   An intent schema that adds a video to a sheet.
-- [var addWebVideoToSheet: some AppSchemaIntent](appschema/spreadsheetintent/addwebvideotosheet.md)
+- [var addWebVideoToSheet: some AppSchemaIntent](./spreadsheetintent/addwebvideotosheet.md)
   An intent schema that adds a web video to a sheet.
-- [var create: some AppSchemaIntent](appschema/spreadsheetintent/create.md)
+- [var create: some AppSchemaIntent](./spreadsheetintent/create.md)
   An intent schema that opens the app for composing a new spreadsheet.
-- [var createSheet: some AppSchemaIntent](appschema/spreadsheetintent/createsheet.md)
+- [var createSheet: some AppSchemaIntent](./spreadsheetintent/createsheet.md)
   An intent schema that creates a new sheet in a spreadsheet.
-- [var delete: some AppSchemaIntent](appschema/spreadsheetintent/delete.md)
+- [var delete: some AppSchemaIntent](./spreadsheetintent/delete.md)
   An intent schema that deletes existing spreadsheets.
-- [var deleteSheet: some AppSchemaIntent](appschema/spreadsheetintent/deletesheet.md)
+- [var deleteSheet: some AppSchemaIntent](./spreadsheetintent/deletesheet.md)
   An intent schema that deletes sheets in a spreadsheet.
-- [var open: some AppSchemaIntent](appschema/spreadsheetintent/open.md)
+- [var open: some AppSchemaIntent](./spreadsheetintent/open.md)
   An intent schema that opens the app into an existing spreadsheet.
-- [var openSheet: some AppSchemaIntent](appschema/spreadsheetintent/opensheet.md)
+- [var openSheet: some AppSchemaIntent](./spreadsheetintent/opensheet.md)
   An intent schema that opens a sheet.
-- [var update: some AppSchemaIntent](appschema/spreadsheetintent/update.md)
+- [var update: some AppSchemaIntent](./spreadsheetintent/update.md)
   An intent schema that renames an existing spreadsheet.
-- [var updateSheet: some AppSchemaIntent](appschema/spreadsheetintent/updatesheet.md)
+- [var updateSheet: some AppSchemaIntent](./spreadsheetintent/updatesheet.md)
   An intent schema that updates an existing sheet.
 
 

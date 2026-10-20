@@ -1,7 +1,8 @@
 # telephoneDetails
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Telephone details for business.
 
@@ -16,11 +17,12 @@ let telephoneDetails: RCSService.Business.TelephoneDetails
 
 ## See Also
 
-- [RCSService.Business.TelephoneDetails](rcsservice/business/telephonedetails.md)
+### Accessing communication details
+- [RCSService.Business.TelephoneDetails](../telephonedetails.md)
   Structure containing the telephone number details provided by a business.
-- [let uriEntries: [RCSService.Business.URIEntry]](rcsservice/business/communicationaddress-swift.struct/urientries.md)
+- [let uriEntries: [RCSService.Business.URIEntry]](./urientries.md)
   URI entries provided by business.
-- [RCSService.Business.URIEntry](rcsservice/business/urientry.md)
+- [RCSService.Business.URIEntry](../urientry.md)
   Structure containing details of a URI provided by a business.
 
 

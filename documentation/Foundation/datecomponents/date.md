@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date calculated from the current components using the stored calendar.
 
@@ -22,9 +23,10 @@ var date: Date? { get }
 
 ## See Also
 
-- [var isValidDate: Bool](datecomponents/isvaliddate.md)
+### Validating a Date
+- [var isValidDate: Bool](./isvaliddate.md)
   Indicates whether the current combination of properties represents a date which exists in the current calendar.
-- [func isValidDate(in: Calendar) -> Bool](datecomponents/isvaliddate(in:).md)
+- [func isValidDate(in: Calendar) -> Bool](./isvaliddate%28in%29.md)
   Indicates whether the current combination of properties represents a date which exists in the specified calendar.
 
 

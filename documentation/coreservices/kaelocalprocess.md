@@ -1,7 +1,8 @@
 # kAELocalProcess
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The source application is another process on the same computer as the target application.
 

@@ -1,7 +1,8 @@
 # NSPersonNameComponents
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the separate parts of a person’s name to allow locale-aware formatting.
 
@@ -20,15 +21,19 @@ An object that manages the separate parts of a person’s name to allow locale-a
 class NSPersonNameComponents
 ```
 
+```objc
+@interface NSPersonNameComponents : NSObject
+```
+
 #### Overview
 
 You can use this type in Swift when you need reference semantics or other Foundation-specific behavior.
 
 An `NSPersonNameComponents` object encapsulates the components of a person’s name in an extendable, object-oriented manner. It is used to specify a person’s name by providing the components comprising a full name: given name, middle name, family name, prefix, suffix, nickname, and phonetic representation.
 
-`NSPersonNameComponents` objects can be used by an instance of [`PersonNameComponentsFormatter`](personnamecomponentsformatter.md) to create string representations suitable for display in the current locale.
+`NSPersonNameComponents` objects can be used by an instance of [`PersonNameComponentsFormatter`](./personnamecomponentsformatter.md) to create string representations suitable for display in the current locale.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](./personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](./nspersonnamecomponents.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
 ##### Working with Names
 
@@ -36,19 +41,19 @@ It is important to understand that names are disjoint from a person’s identity
 
 Many locales and cultures have rules about what kinds of names are allowed and how they are structured. An `NSPersonNameComponents` object does not impose any restrictions about which combinations of properties may have values or what those values may be.
 
-> **Note**:  `NSPersonNameComponents` represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) or [`CNMutableContact`](https://developer.apple.com/documentation/contacts/cnmutablecontact) instead.
+> **Note**:  `NSPersonNameComponents` represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use [`CNContact`](../Contacts/cncontact.md) or [`CNMutableContact`](../Contacts/cnmutablecontact.md) instead.
 
 ##### Name Components
 
 An `NSPersonNameComponents` object encodes the following components of a personal name, which are described in detail below.
 
-- Given Name ([`givenName`](nspersonnamecomponents/givenname.md))
-- Middle Name ([`middleName`](nspersonnamecomponents/middlename.md))
-- Family Name ([`familyName`](nspersonnamecomponents/familyname.md))
-- Prefix ([`namePrefix`](nspersonnamecomponents/nameprefix.md))
-- Suffix ([`nameSuffix`](nspersonnamecomponents/namesuffix.md))
-- Nickname ([`nickname`](nspersonnamecomponents/nickname.md))
-- Phonetic Representation ([`phoneticRepresentation`](nspersonnamecomponents/phoneticrepresentation.md))
+- Given Name ([`givenName`](./nspersonnamecomponents/givenname.md))
+- Middle Name ([`middleName`](./nspersonnamecomponents/middlename.md))
+- Family Name ([`familyName`](./nspersonnamecomponents/familyname.md))
+- Prefix ([`namePrefix`](./nspersonnamecomponents/nameprefix.md))
+- Suffix ([`nameSuffix`](./nspersonnamecomponents/namesuffix.md))
+- Nickname ([`nickname`](./nspersonnamecomponents/nickname.md))
+- Phonetic Representation ([`phoneticRepresentation`](./nspersonnamecomponents/phoneticrepresentation.md))
 
 ###### Given Name
 
@@ -112,7 +117,7 @@ Users often prefer to be addressed informally when using an app, so the use of h
 
 ###### Phonetic Representation
 
-It is sometimes beneficial to provide phonetic representations to aid in the pronunciation of names that are foreign or unfamiliar. For example, the Malay name “يوسف بن اسحاق” in Jawi script may be transliterated into Latin script as “Yusof bin Ishak” for English-speaking locales, where Latin script is commonly used. Depending on the locale and on the way the name is to be displayed to the user, it may be appropriate to provide an appropriate transliteration. This may be provided by the user or computed using the [`CFStringTransform(_:_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfstringtransform(_:_:_:_:)) function, except for names in certain nonphonetic scripts.
+It is sometimes beneficial to provide phonetic representations to aid in the pronunciation of names that are foreign or unfamiliar. For example, the Malay name “يوسف بن اسحاق” in Jawi script may be transliterated into Latin script as “Yusof bin Ishak” for English-speaking locales, where Latin script is commonly used. Depending on the locale and on the way the name is to be displayed to the user, it may be appropriate to provide an appropriate transliteration. This may be provided by the user or computed using the [`CFStringTransform(_:_:_:_:)`](../CoreFoundation/cfstringtransform%28_,_,_,_%29.md) function, except for names in certain nonphonetic scripts.
 
 A phonetic representation may also be used to specify the pronunciation of a name in idiographic script with multiple pronunciations. For example, the character “藤” in the Japanese name “近藤 藤子 (Kondō Fujiko)” is pronounced “dō” in the family name and “fuji” in the given name, which can be clarified by providing the furigana “こんどう ふじこ” as a phonetic representation for a Japanese locale.
 
@@ -127,39 +132,39 @@ Because each alias represents a separate name, an individual with one or more al
 ## Topics
 
 ### Accessing Person Name Components
-- [var namePrefix: String?](nspersonnamecomponents/nameprefix.md)
+- [var namePrefix: String?](./nspersonnamecomponents/nameprefix.md)
   The portion of a name’s full form of address that precedes the name itself *(for example, “Dr.,” “Mr.,” “Ms.”)*.
-- [var givenName: String?](nspersonnamecomponents/givenname.md)
+- [var givenName: String?](./nspersonnamecomponents/givenname.md)
   Name bestowed upon an individual to differentiate them from other members of a group that share a family name *(for example, “Johnathan”)*.
-- [var middleName: String?](nspersonnamecomponents/middlename.md)
+- [var middleName: String?](./nspersonnamecomponents/middlename.md)
   Secondary name bestowed upon an individual to differentiate them from others that have the same given name *(for example, “Maple”)*.
-- [var familyName: String?](nspersonnamecomponents/familyname.md)
+- [var familyName: String?](./nspersonnamecomponents/familyname.md)
   Name bestowed upon an individual to denote membership in a group or family. *(for example, “Appleseed”)*.
-- [var nameSuffix: String?](nspersonnamecomponents/namesuffix.md)
+- [var nameSuffix: String?](./nspersonnamecomponents/namesuffix.md)
   The portion of a name’s full form of address that follows the name itself *(for example, “Esq.,” “Jr.,” “Ph.D.”)*.
-- [var nickname: String?](nspersonnamecomponents/nickname.md)
+- [var nickname: String?](./nspersonnamecomponents/nickname.md)
   Name substituted for the purposes of familiarity *(for example, “Johnny”)*.
-- [var phoneticRepresentation: PersonNameComponents?](nspersonnamecomponents/phoneticrepresentation.md)
+- [var phoneticRepresentation: PersonNameComponents?](./nspersonnamecomponents/phoneticrepresentation.md)
   The phonetic representation name components of the receiver.
 ### Initializers
-- [init?(coder: NSCoder)](nspersonnamecomponents/init(coder:).md)
+- [init?(coder: NSCoder)](./nspersonnamecomponents/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 
 ---

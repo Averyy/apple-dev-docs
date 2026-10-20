@@ -2,41 +2,55 @@
 
 **Framework**: SceneKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prepares the specified SceneKit objects for rendering, using a background thread.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
+func prepare(_ objects: [Any], completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func prepare(_ objects: [Any]) async -> Bool
+```
+
+```objc
+- (void) prepareObjects:(NSArray *) objects withCompletionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
 #### Discussion
 
 By default, SceneKit lazily loads resources onto the GPU for rendering. This approach uses memory and GPU bandwidth efficiently, but can lead to stutters in an otherwise smooth frame rate when you add large amounts of new content to an animated scene. To avoid such issues, use this method to prepare content for drawing before adding it to the scene. SceneKit uses a secondary thread to prepare content asynchronously.
 
-SceneKit prepares all content associated with the objects you provide. If you provide an [`SCNMaterial`](scnmaterial.md) object, SceneKit loads any texture images assigned to its material properties. If you provide an [`SCNGeometry`](scngeometry.md) object, SceneKit loads all materials attached to the geometry, as well as its vertex data. If you provide an [`SCNNode`](scnnode.md) or [`SCNScene`](scnscene.md) object, SceneKit loads all geometries and materials associated with the node and all its child nodes, or with the entire node hierarchy of the scene.
+SceneKit prepares all content associated with the objects you provide. If you provide an [`SCNMaterial`](../scnmaterial.md) object, SceneKit loads any texture images assigned to its material properties. If you provide an [`SCNGeometry`](../scngeometry.md) object, SceneKit loads all materials attached to the geometry, as well as its vertex data. If you provide an [`SCNNode`](../scnnode.md) or [`SCNScene`](../scnscene.md) object, SceneKit loads all geometries and materials associated with the node and all its child nodes, or with the entire node hierarchy of the scene.
 
-You can observe the progress of this operation with the [`Progress`](https://developer.apple.com/documentation/foundation/progress) class. For details, see [`Progress`](https://developer.apple.com/documentation/foundation/progress).
+You can observe the progress of this operation with the [`Progress`](../../Foundation/progress.md) class. For details, see [`Progress`](../../Foundation/progress.md).
 
 ## Parameters
 
-- `objects`: An array of containing one or more [`SCNScene`](scnscene.md), [`SCNNode`](scnnode.md), [`SCNGeometry`](scngeometry.md), or [`SCNMaterial`](scnmaterial.md) instances.
-- `completionHandler`: A block that SceneKit calls when object preparation fails or completes. The block takes the following parameter: - **success**: [`true`](https://developer.apple.com/documentation/swift/true) if all content was successfully prepared for rendering; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `objects`: An array of containing one or more [`SCNScene`](../scnscene.md), [`SCNNode`](../scnnode.md), [`SCNGeometry`](../scngeometry.md), or [`SCNMaterial`](../scnmaterial.md) instances.
+- `completionHandler`: A block that SceneKit calls when object preparation fails or completes.
+
+  The block takes the following parameter:
+
+  - **success**: [`true`](../../Swift/true.md) if all content was successfully prepared for rendering; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func prepare(Any, shouldAbortBlock: (() -> Bool)?) -> Bool](scnscenerenderer/prepare(_:shouldabortblock:).md)
+### Preloading Renderer Resources
+- [func prepare(Any, shouldAbortBlock: (() -> Bool)?) -> Bool](./prepare%28_,shouldabortblock%29.md)
   Prepares a SceneKit object for rendering.
 
 

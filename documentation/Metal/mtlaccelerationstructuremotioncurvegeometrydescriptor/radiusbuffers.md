@@ -1,7 +1,8 @@
 # radiusBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var radiusBuffers: [MTLMotionKeyframeData] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<MTLMotionKeyframeData *> * radiusBuffers;
 ```
 
 

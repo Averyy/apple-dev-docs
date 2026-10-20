@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIORegistryIterateParents](1639623-anonymous/kioregistryiterateparents.md)
-- [kIORegistryIterateRecursively](1639623-anonymous/kioregistryiteraterecursively.md)
+- [kIORegistryIterateParents](./api-1639623-anonymous/kioregistryiterateparents.md)
+- [kIORegistryIterateRecursively](./api-1639623-anonymous/kioregistryiteraterecursively.md)
 
 
 ---

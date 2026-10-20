@@ -1,7 +1,8 @@
 # WindowVisibilityToggle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A specialized button for toggling the visibility of a window.
 
@@ -63,32 +64,33 @@ The below example demonstrates how a main menu can be constructed with visibilit
 ## Topics
 
 ### Creating a window visibility toggle
-- [init(windowID: String)](windowvisibilitytoggle/init(windowid:).md)
+- [init(windowID: String)](./windowvisibilitytoggle/init%28windowid%29.md)
   Create a window visibility toggle to alter the visibility of a specific window.
 ### Supporting types
-- [struct DefaultWindowVisibilityToggleLabel](defaultwindowvisibilitytogglelabel.md)
+- [struct DefaultWindowVisibilityToggleLabel](./defaultwindowvisibilitytogglelabel.md)
   The default label of a window visibility toggle.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](scene/defaultlaunchbehavior(_:).md)
+### Configuring window visibility
+- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](./scene/defaultlaunchbehavior%28_%29.md)
   Sets the default launch behavior for this scene.
-- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](scene/restorationbehavior(_:).md)
+- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](./scene/restorationbehavior%28_%29.md)
   Sets the restoration behavior for this scene.
-- [struct SceneLaunchBehavior](scenelaunchbehavior.md)
+- [struct SceneLaunchBehavior](./scenelaunchbehavior.md)
   The launch behavior for a scene.
-- [struct SceneRestorationBehavior](scenerestorationbehavior.md)
+- [struct SceneRestorationBehavior](./scenerestorationbehavior.md)
   The restoration behavior for a scene.
-- [func persistentSystemOverlays(Visibility) -> some Scene](scene/persistentsystemoverlays(_:).md)
+- [func persistentSystemOverlays(Visibility) -> some Scene](./scene/persistentsystemoverlays%28_%29.md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
-- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](./view/windowtoolbarfullscreenvisibility%28_%29.md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
-- [struct WindowToolbarFullScreenVisibility](windowtoolbarfullscreenvisibility.md)
+- [struct WindowToolbarFullScreenVisibility](./windowtoolbarfullscreenvisibility.md)
   The visibility of the window toolbar with respect to full screen mode.
 
 

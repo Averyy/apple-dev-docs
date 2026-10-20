@@ -6,24 +6,7 @@ url: https://apple.github.io/coremltools/docs-guides/source/model-scripting.html
 
 # Model Scripting
 
-**
-
-- [.md](../_sources/source/model-scripting.md)
-- **
-
-.pdf
-
-**
-
-# Model Scripting
-
- Table of contents 
-
-## Contents
-
-# Model Scripting
-
-Model tracing is not appropriate in all cases. If your model includes a data-dependent control flow, such as a loop or conditional, you can experiment with PyTorch’s [JIT script](https://pytorch.org/docs/stable/generated/torch.jit.script.md) to *script* the model by analyzing the code to generate TorchScript.
+Model tracing is not appropriate in all cases. If your model includes a data-dependent control flow, such as a loop or conditional, you can experiment with PyTorch’s [JIT script](https://pytorch.org/docs/stable/generated/torch.jit.script.html) to *script* the model by analyzing the code to generate TorchScript.
 
 Warning
 
@@ -41,7 +24,7 @@ Thus, the same model can produce two different traces. This is probably not the 
 
 ## Use JIT Script
 
-Use PyTorch’s [JIT script](https://pytorch.org/docs/stable/generated/torch.jit.script.md) to script the model and convert it to TorchScript. To demonstrate, follow this code fragment:
+Use PyTorch’s [JIT script](https://pytorch.org/docs/stable/generated/torch.jit.script.html) to script the model and convert it to TorchScript. To demonstrate, follow this code fragment:
 
 - Define a single convolution plus activation block.
 - If the input tensor to the network has mean value less than zero, run the block twice.
@@ -139,6 +122,4 @@ mlmodel = coremltools.converters.convert(
 )
 ```
 
-For more examples of converting models to TorchScript, see the [Introduction to TorchScript](https://pytorch.org/tutorials/beginner/Intro_to_TorchScript_tutorial.md).
-
-** Contents
+For more examples of converting models to TorchScript, see the [Introduction to TorchScript](https://pytorch.org/tutorials/beginner/Intro_to_TorchScript_tutorial.html).

@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a fragmented movie to the array of movies being minded.
 
@@ -19,15 +20,20 @@ Adds a fragmented movie to the array of movies being minded.
 func add(_ movie: AVFragmentedMovie)
 ```
 
+```objc
+- (void) addFragmentedMovie:(AVFragmentedMovie *) movie;
+```
+
 ## Parameters
 
 - `movie`: The fragmented movie added to the minder.
 
 ## See Also
 
-- [var movies: [AVFragmentedMovie]](avfragmentedmovieminder/movies.md)
+### Adding and removing movies
+- [var movies: [AVFragmentedMovie]](./movies.md)
   An array containing the fragmented movie objects being minded.
-- [func remove(AVFragmentedMovie)](avfragmentedmovieminder/remove(_:).md)
+- [func remove(AVFragmentedMovie)](./remove%28_%29.md)
   Removes a fragmented movie from the array of movies being minded.
 
 

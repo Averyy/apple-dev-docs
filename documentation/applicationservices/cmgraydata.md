@@ -1,7 +1,8 @@
 # cmGrayData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The Gray data color space.
 

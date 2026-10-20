@@ -1,7 +1,8 @@
 # isTransparentFocusItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates if the focus item is transparent, which allows items behind it to become focused.
 
@@ -16,6 +17,10 @@ Indicates if the focus item is transparent, which allows items behind it to beco
 
 ```swift
 optional var isTransparentFocusItem: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isTransparentFocusItem;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # xAxis
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis descriptor for the chart’s x-axis.
 
@@ -22,11 +23,12 @@ var xAxis: any AXDataAxisDescriptor { get set }
 
 ## See Also
 
-- [var yAxis: AXNumericDataAxisDescriptor?](axchartdescriptor/yaxis.md)
+### Specifying the axes
+- [var yAxis: AXNumericDataAxisDescriptor?](./yaxis.md)
   The axis descriptor for the chart’s y-axis.
-- [var additionalAxes: [any AXDataAxisDescriptor]](axchartdescriptor/additionalaxes-2adwh.md)
+- [var additionalAxes: [any AXDataAxisDescriptor]](./additionalaxes-2adwh.md)
   The descriptors for additional categorical or numerical axes beyond the x-axis and y-axis.
-- [protocol AXDataAxisDescriptor](axdataaxisdescriptor.md)
+- [protocol AXDataAxisDescriptor](../axdataaxisdescriptor.md)
   The basic interface for a data axis in a chart.
 
 

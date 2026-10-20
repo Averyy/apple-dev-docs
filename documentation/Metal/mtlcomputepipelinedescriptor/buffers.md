@@ -1,7 +1,8 @@
 # buffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer mutability options to apply to the next kernel call.
 
@@ -19,9 +20,13 @@ The buffer mutability options to apply to the next kernel call.
 var buffers: MTLPipelineBufferDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLPipelineBufferDescriptorArray * buffers;
+```
+
 #### Discussion
 
-This property holds an array of [`MTLPipelineBufferDescriptor`](mtlpipelinebufferdescriptor.md) instances, where each index corresponds to the same entry in the buffer argument table.
+This property holds an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) instances, where each index corresponds to the same entry in the buffer argument table.
 
 Metal can perform additional optimizations if you guarantee that neither the CPU nor the GPU modify a buffer’s contents after set in a function’s argument table and before its command buffer completes. Use immutable buffers as much as possible, for either regular buffers or argument buffers.
 

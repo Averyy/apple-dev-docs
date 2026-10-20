@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying parameters used when training the model.
 
@@ -21,9 +22,10 @@ let modelParameters: MLBoostedTreeClassifier.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mlboostedtreeclassifier/model.md)
+### Inspecting a boosted tree classifier
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [MLBoostedTreeClassifier.ModelParameters](mlboostedtreeclassifier/modelparameters-swift.struct.md)
+- [MLBoostedTreeClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 
 

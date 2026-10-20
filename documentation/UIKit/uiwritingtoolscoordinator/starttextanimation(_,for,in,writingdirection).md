@@ -1,7 +1,8 @@
 # startTextAnimation(_:for:in:writingDirection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used to support the presentation of grammar issues in text. When an issue is first identified and indicated, call this to have it animated.
 
@@ -15,6 +16,10 @@ Used to support the presentation of grammar issues in text. When an issue is fir
 
 ```swift
 func startTextAnimation(_ textAnimation: UIWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: UIWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?
+```
+
+```objc
+- (NSUUID *) startTextAnimation:(UIWritingToolsCoordinatorTextAnimation) textAnimation forRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context writingDirection:(NSWritingDirection) writingDirection;
 ```
 
 #### Discussion

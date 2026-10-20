@@ -1,7 +1,8 @@
 # featureCurrentlyRestricted
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This feature is currently restricted due to Screen Time restrictions, MDM profiles, or similar.
 

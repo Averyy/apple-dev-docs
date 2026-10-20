@@ -1,17 +1,24 @@
 # setPathComponentCells(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the array of `NSPathComponentCell` objects currently being displayed.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Use the pathItems property instead
 
 ## Declaration
 
 ```swift
 func setPathComponentCells(_ cells: [NSPathComponentCell])
+```
+
+```objc
+- (void) setPathComponentCells:(NSArray<NSPathComponentCell *> *) cells;
 ```
 
 #### Discussion
@@ -24,9 +31,10 @@ Each item in the array must be an instance of `NSPathComponentCell` or a subclas
 
 ## See Also
 
-- [func clickedPathComponentCell() -> NSPathComponentCell?](nspathcontrol/clickedpathcomponentcell.md)
+### Deprecated
+- [func clickedPathComponentCell() -> NSPathComponentCell?](./clickedpathcomponentcell%28%29.md)
   Returns the clicked cell.
-- [func pathComponentCells() -> [NSPathComponentCell]](nspathcontrol/pathcomponentcells.md)
+- [func pathComponentCells() -> [NSPathComponentCell]](./pathcomponentcells%28%29.md)
   Returns an array of the `NSPathComponentCell` objects currently being displayed.
 
 

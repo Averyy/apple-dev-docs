@@ -1,7 +1,8 @@
 # errSecExtendedKeyUsageNotCritical
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The extended key usage extension was not marked critical.
 
@@ -18,6 +19,10 @@ The extended key usage extension was not marked critical.
 
 ```swift
 var errSecExtendedKeyUsageNotCritical: OSStatus { get }
+```
+
+```c
+errSecExtendedKeyUsageNotCritical
 ```
 
 

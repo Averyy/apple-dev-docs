@@ -1,7 +1,8 @@
 # AppStoreVersionLocalizationSearchKeywordsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a search keyword linked to an App Store version localization.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a search keyword linked to an App Store ve
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appKeywords`
 
 
 ---

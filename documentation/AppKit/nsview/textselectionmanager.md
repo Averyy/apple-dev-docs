@@ -1,7 +1,8 @@
 # textSelectionManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text selection manager for this view.
 
@@ -12,6 +13,10 @@ The text selection manager for this view.
 
 ```swift
 var textSelectionManager: NSTextSelectionManager? { get set }
+```
+
+```objc
+@property (strong, nullable) NSTextSelectionManager * textSelectionManager;
 ```
 
 #### Discussion

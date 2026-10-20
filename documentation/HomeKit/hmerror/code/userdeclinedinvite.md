@@ -1,7 +1,8 @@
 # HMError.Code.userDeclinedInvite
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the user declined the invitation.
 
@@ -19,15 +20,20 @@ An error indicating the user declined the invitation.
 case userDeclinedInvite
 ```
 
+```c
+HMErrorCodeUserDeclinedInvite
+```
+
 ## See Also
 
-- [HMError.Code.userDeclinedAddingUser](hmerror/code/userdeclinedaddinguser.md)
+### User errors
+- [HMError.Code.userDeclinedAddingUser](./userdeclinedaddinguser.md)
   An error indicating the user canceled the add user operation.
-- [HMError.Code.userDeclinedRemovingUser](hmerror/code/userdeclinedremovinguser.md)
+- [HMError.Code.userDeclinedRemovingUser](./userdeclinedremovinguser.md)
   An error indicating the user canceled the remove user operation.
-- [HMError.Code.userIDNotEmailAddress](hmerror/code/useridnotemailaddress.md)
+- [HMError.Code.userIDNotEmailAddress](./useridnotemailaddress.md)
   An error indicating the user’s ID is not a valid email address.
-- [HMError.Code.userManagementFailed](hmerror/code/usermanagementfailed.md)
+- [HMError.Code.userManagementFailed](./usermanagementfailed.md)
   A user management error not covered by the other errors.
 
 

@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The segment source. For files use the full path or URL of the file.
 
@@ -22,13 +23,14 @@ var source: String
 
 ## See Also
 
-- [var durationInSeconds: TimeInterval](temporalsegmentidentifier/durationinseconds.md)
+### Getting the properties
+- [var durationInSeconds: TimeInterval](./durationinseconds.md)
   The segment duration in seconds.
-- [var range: Range<Int>](temporalsegmentidentifier/range.md)
+- [var range: Range<Int>](./range.md)
   The segment’s timestamp range.
-- [var rangeInSeconds: Range<TimeInterval>](temporalsegmentidentifier/rangeinseconds.md)
+- [var rangeInSeconds: Range<TimeInterval>](./rangeinseconds.md)
   The time range in seconds.
-- [var timescale: Int](temporalsegmentidentifier/timescale.md)
+- [var timescale: Int](./timescale.md)
   The identifier’s timescale is the number of uniquely identifiable timestamps in a second.
 
 

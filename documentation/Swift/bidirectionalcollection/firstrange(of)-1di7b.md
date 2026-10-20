@@ -1,7 +1,8 @@
 # firstRange(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the range of the first occurrence of a given regex within the collection.
 
@@ -19,6 +20,8 @@ Finds and returns the range of the first occurrence of a given regex within the 
 ```swift
 func firstRange(of regex: some RegexComponent) -> Range<Self.Index>?
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

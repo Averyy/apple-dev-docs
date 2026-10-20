@@ -1,14 +1,15 @@
 # bus_to_cpu_rate_den
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long bus_to_cpu_rate_den;
 ```
 

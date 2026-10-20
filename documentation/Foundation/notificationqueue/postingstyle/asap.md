@@ -1,7 +1,8 @@
 # NotificationQueue.PostingStyle.asap
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The notification is posted at the end of the current notification callout or timer.
 
@@ -20,11 +21,16 @@ The notification is posted at the end of the current notification callout or tim
 case asap
 ```
 
+```c
+NSPostASAP
+```
+
 ## See Also
 
-- [NotificationQueue.PostingStyle.whenIdle](notificationqueue/postingstyle/whenidle.md)
+### Constants
+- [NotificationQueue.PostingStyle.whenIdle](./whenidle.md)
   The notification is posted when the run loop is idle.
-- [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
+- [NotificationQueue.PostingStyle.now](./now.md)
   The notification is posted immediately after coalescing.
 
 

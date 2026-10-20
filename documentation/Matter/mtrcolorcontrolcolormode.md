@@ -1,7 +1,8 @@
 # MTRColorControlColorMode
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,25 +19,29 @@
 enum MTRColorControlColorMode
 ```
 
+```c
+enum MTRColorControlColorMode : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [static var colorTemperature: MTRColorControlColorMode](mtrcolorcontrolcolormode/colortemperature.md)
-- [MTRColorControlColorMode.currentHueAndCurrentSaturation](mtrcolorcontrolcolormode/currenthueandcurrentsaturation.md)
-- [MTRColorControlColorMode.currentXAndCurrentY](mtrcolorcontrolcolormode/currentxandcurrenty.md)
-- [MTRColorControlColorMode.colorTemperatureMireds](mtrcolorcontrolcolormode/colortemperaturemireds.md)
+- [static var colorTemperature: MTRColorControlColorMode](./mtrcolorcontrolcolormode/colortemperature.md)
+- [MTRColorControlColorMode.currentHueAndCurrentSaturation](./mtrcolorcontrolcolormode/currenthueandcurrentsaturation.md)
+- [MTRColorControlColorMode.currentXAndCurrentY](./mtrcolorcontrolcolormode/currentxandcurrenty.md)
+- [MTRColorControlColorMode.colorTemperatureMireds](./mtrcolorcontrolcolormode/colortemperaturemireds.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcolorcontrolcolormode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcolorcontrolcolormode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

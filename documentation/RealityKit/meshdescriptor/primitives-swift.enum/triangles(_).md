@@ -1,7 +1,8 @@
 # MeshDescriptor.Primitives.triangles(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines one or more triangles with an integer array of indices.
 
@@ -11,7 +12,7 @@ Defines one or more triangles with an integer array of indices.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

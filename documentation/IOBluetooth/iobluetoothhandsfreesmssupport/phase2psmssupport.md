@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeSMSSupport.phase2pSMSSupport
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case phase2pSMSSupport
 ```
 
+```c
+IOBluetoothHandsFreePhase2pSMSSupport
+```
+
 ## See Also
 
-- [IOBluetoothHandsFreeSMSSupport.manufactureSpecificSMSSupport](iobluetoothhandsfreesmssupport/manufacturespecificsmssupport.md)
-- [IOBluetoothHandsFreeSMSSupport.phase2SMSSupport](iobluetoothhandsfreesmssupport/phase2smssupport.md)
+### Enumeration Cases
+- [IOBluetoothHandsFreeSMSSupport.manufactureSpecificSMSSupport](./manufacturespecificsmssupport.md)
+- [IOBluetoothHandsFreeSMSSupport.phase2SMSSupport](./phase2smssupport.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AsyncStream.Continuation.BufferingPolicy.bufferingOldest(_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 When the buffer is full, discard the newly received element.
 
@@ -28,9 +29,10 @@ This strategy enforces keeping at most the specified number of oldest values.
 
 ## See Also
 
-- [AsyncStream.Continuation.BufferingPolicy.unbounded](asyncstream/continuation/bufferingpolicy/unbounded.md)
+### Buffering Policies
+- [AsyncStream.Continuation.BufferingPolicy.unbounded](./unbounded.md)
   Continue to add to the buffer, without imposing a limit on the number of buffered elements.
-- [AsyncStream.Continuation.BufferingPolicy.bufferingNewest(_:)](asyncstream/continuation/bufferingpolicy/bufferingnewest(_:).md)
+- [AsyncStream.Continuation.BufferingPolicy.bufferingNewest(_:)](./bufferingnewest%28_%29.md)
   When the buffer is full, discard the oldest element in the buffer.
 
 

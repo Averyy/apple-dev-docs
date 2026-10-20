@@ -1,7 +1,8 @@
 # kAXRulerRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXRulerRole: String { get }
+```
+
+```c
+#define kAXRulerRole
 ```
 
 

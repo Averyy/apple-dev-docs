@@ -1,7 +1,8 @@
 # id
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identity of a tick, which is derived from its value.
 

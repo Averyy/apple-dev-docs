@@ -1,7 +1,8 @@
 # descriptorFor3DTexture2()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func descriptorFor3DTexture2() -> MTLTextureDescriptor?
+```
+
+```objc
+- (MTLTextureDescriptor *) descriptorFor3DTexture2;
 ```
 
 #### Discussion

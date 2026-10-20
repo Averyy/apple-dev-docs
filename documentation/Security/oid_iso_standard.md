@@ -1,7 +1,8 @@
 # OID_ISO_STANDARD
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var OID_ISO_STANDARD: Int32 { get }
+```
+
+```c
+#define OID_ISO_STANDARD
 ```
 
 

@@ -1,7 +1,8 @@
 # elementKind
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the type of decoration item.
 
@@ -16,6 +17,10 @@ A string that identifies the type of decoration item.
 
 ```swift
 var elementKind: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * elementKind;
 ```
 
 

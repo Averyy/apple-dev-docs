@@ -1,7 +1,8 @@
 # init(wrappedValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property wrapper that loads the view controller’s view before accessing the property.
 
@@ -10,7 +11,7 @@ Creates a property wrapper that loads the view controller’s view before access
 - iPadOS 16.4+
 - Mac Catalyst 16.4+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration
@@ -25,7 +26,8 @@ init(wrappedValue: Value)
 
 ## See Also
 
-- [init()](uiviewcontroller/viewloading/init.md)
+### Creating a ViewLoading property wrapper
+- [init()](./init%28%29.md)
   Creates an empty property wrapper that loads the view controller’s view before accessing the property.
 
 

@@ -1,7 +1,8 @@
 # showDictionary(forTextInContext:definingTextInRange:from:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a dictionary definition for the supplied text.
 
@@ -17,6 +18,10 @@ Presents a dictionary definition for the supplied text.
 func showDictionary(forTextInContext textWithContext: String, definingTextInRange range: NSRange, from presentationRect: CGRect)
 ```
 
+```objc
+- (void) showDictionaryForTextInContext:(NSString *) textWithContext definingTextInRange:(NSRange) range fromRect:(CGRect) presentationRect;
+```
+
 ## Parameters
 
 - `textWithContext`: The text to supply a definition for, embedded in the sentence in which it appears in the text view’s document.
@@ -25,7 +30,8 @@ func showDictionary(forTextInContext textWithContext: String, definingTextInRang
 
 ## See Also
 
-- [func share(text: String, from: CGRect)](betextinteraction/share(text:from:).md)
+### Sharing and defining text
+- [func share(text: String, from: CGRect)](./share%28text,from%29.md)
   Presents standard UI for someone to share text from a browser text view.
 
 

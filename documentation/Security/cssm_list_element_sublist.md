@@ -1,7 +1,8 @@
 # CSSM_LIST_ELEMENT_SUBLIST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_LIST_ELEMENT_SUBLIST: Int { get }
+```
+
+```c
+CSSM_LIST_ELEMENT_SUBLIST
 ```
 
 

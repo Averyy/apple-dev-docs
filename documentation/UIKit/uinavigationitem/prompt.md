@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A single line of text that displays at the top of the navigation bar.
 
@@ -17,13 +18,18 @@ A single line of text that displays at the top of the navigation bar.
 var prompt: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * prompt;
+```
+
 #### Discussion
 
 The default value is `nil`.
 
 ## See Also
 
-- [var leftItemsSupplementBackButton: Bool](uinavigationitem/leftitemssupplementbackbutton.md)
+### Getting and setting properties
+- [var leftItemsSupplementBackButton: Bool](./leftitemssupplementbackbutton.md)
   A Boolean value that indicates whether the left items display in addition to the Back button.
 
 

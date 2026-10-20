@@ -1,7 +1,8 @@
 # callAsFunction(_:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the transformation on a single input.
 

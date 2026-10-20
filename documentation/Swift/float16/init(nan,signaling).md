@@ -1,7 +1,8 @@
 # init(nan:signaling:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a NaN (“not a number”) value with the specified payload.
 

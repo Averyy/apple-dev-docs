@@ -1,7 +1,8 @@
 # transactionReason
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The cause of a purchase transaction, which indicates whether it’s a customer’s purchase or a renewal for an auto-renewable subscription that the system initiates.
 
@@ -10,13 +11,18 @@ The cause of a purchase transaction, which indicates whether it’s a customer�
 
 ## Declaration
 
-```swift
+```
 string transactionReason
 ```
 
+## Possible Values
+
+- `PURCHASE`: The customer initiated the purchase, which may be for any in-app purchase type: consumable, non-consumable, non-renewing subscription, or auto-renewable subscription.
+- `RENEWAL`: The App Store server initiated the purchase transaction to renew an auto-renewable subscription.
+
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 

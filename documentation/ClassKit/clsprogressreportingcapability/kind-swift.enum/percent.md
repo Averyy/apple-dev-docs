@@ -1,7 +1,8 @@
 # CLSProgressReportingCapability.Kind.percent
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The percentage of the total task that has been completed.
 
@@ -18,19 +19,24 @@ The percentage of the total task that has been completed.
 case percent
 ```
 
+```c
+CLSProgressReportingCapabilityKindPercent
+```
+
 #### Discussion
 
-Add this capability to indicate that a context reports a task’s percentage completion on a periodic basis by setting the associated activity’s [`progress`](clsactivity/progress.md) property, or by calling the activity’s [`addProgressRange(fromStart:toEnd:)`](clsactivity/addprogressrange(fromstart:toend:).md) method.
+Add this capability to indicate that a context reports a task’s percentage completion on a periodic basis by setting the associated activity’s [`progress`](../../clsactivity/progress.md) property, or by calling the activity’s [`addProgressRange(fromStart:toEnd:)`](../../clsactivity/addprogressrange%28fromstart,toend%29.md) method.
 
 ## See Also
 
-- [CLSProgressReportingCapability.Kind.duration](clsprogressreportingcapability/kind-swift.enum/duration.md)
+### Reporting capabilities
+- [CLSProgressReportingCapability.Kind.duration](./duration.md)
   Time spent performing the task.
-- [CLSProgressReportingCapability.Kind.binary](clsprogressreportingcapability/kind-swift.enum/binary.md)
+- [CLSProgressReportingCapability.Kind.binary](./binary.md)
   A binary outcome for the task, like true or false.
-- [CLSProgressReportingCapability.Kind.quantity](clsprogressreportingcapability/kind-swift.enum/quantity.md)
+- [CLSProgressReportingCapability.Kind.quantity](./quantity.md)
   A discrete value.
-- [CLSProgressReportingCapability.Kind.score](clsprogressreportingcapability/kind-swift.enum/score.md)
+- [CLSProgressReportingCapability.Kind.score](./score.md)
   A score.
 
 

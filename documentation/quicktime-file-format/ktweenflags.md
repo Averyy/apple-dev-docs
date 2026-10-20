@@ -1,9 +1,12 @@
 # kTweenFlags
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that contains flags that control the tween operation.
+
+> **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
 #### Overview
 
@@ -21,7 +24,8 @@ This atom is optional. If it is not included, no flags are set.
 
 ## See Also
 
-- [kInitialRotationAtom](kinitialrotationatom.md)
+### Path Tween Atoms
+- [kInitialRotationAtom](./kinitialrotationatom.md)
   An atom that specifies an initial angle of rotation for a path tween atom.
 
 

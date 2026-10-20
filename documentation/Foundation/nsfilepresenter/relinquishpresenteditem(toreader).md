@@ -1,7 +1,8 @@
 # relinquishPresentedItem(toReader:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your object that another object or process wants to read the presented file or directory.
 
@@ -18,6 +19,10 @@ Notifies your object that another object or process wants to read the presented 
 
 ```swift
 optional func relinquishPresentedItem(toReader reader: @escaping @Sendable ((@Sendable () -> Void)?) -> Void)
+```
+
+```objc
+- (void) relinquishPresentedItemToReader:(void (^)(void (^reacquirer)())) reader;
 ```
 
 #### Discussion
@@ -43,15 +48,16 @@ The following listing shows a simple implementation of this method that sets a B
 }
 ```
 
-Your implementation of this method is executed using the queue in the [`presentedItemOperationQueue`](nsfilepresenter/presenteditemoperationqueue.md) property. Your reacquirer block is executed on the queue associated with the reader.
+Your implementation of this method is executed using the queue in the [`presentedItemOperationQueue`](./presenteditemoperationqueue.md) property. Your reacquirer block is executed on the queue associated with the reader.
 
 ## Parameters
 
-- `reader`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) that takes another block as a parameter and returns no value. The `reacquirer` block is one you pass to the `reader` block so that your object can be notified when the `reader` is done. If your object does not need to be notified, it can pass `nil` for the `reacquirer` block.
+- `reader`: A [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) that takes another block as a parameter and returns no value. The `reacquirer` block is one you pass to the `reader` block so that your object can be notified when the `reader` is done. If your object does not need to be notified, it can pass `nil` for the `reacquirer` block.
 
 ## See Also
 
-- [func relinquishPresentedItem(toWriter: ((() -> Void)?) -> Void)](nsfilepresenter/relinquishpresenteditem(towriter:).md)
+### Relinquishing Managed Files
+- [func relinquishPresentedItem(toWriter: ((() -> Void)?) -> Void)](./relinquishpresenteditem%28towriter%29.md)
   Notifies your object that another object or process wants to write to the presented file or directory.
 
 

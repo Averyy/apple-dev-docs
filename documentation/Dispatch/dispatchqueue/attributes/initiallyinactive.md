@@ -1,7 +1,8 @@
 # initiallyInactive
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The newly created queue is inactive.
 
@@ -11,7 +12,7 @@ The newly created queue is inactive.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static let initiallyInactive: DispatchQueue.Attributes
 
 #### Discussion
 
-Normally, a newly created queue schedules submitted blocks for execution immediately. Use this attribute to prevent the queue from scheduling blocks until you call its [`activate()`](dispatchobject/activate().md) method.
+Normally, a newly created queue schedules submitted blocks for execution immediately. Use this attribute to prevent the queue from scheduling blocks until you call its [`activate()`](../../dispatchobject/activate%28%29.md) method.
 
 ## See Also
 
-- [static let concurrent: DispatchQueue.Attributes](dispatchqueue/attributes/concurrent.md)
+### Attributes
+- [static let concurrent: DispatchQueue.Attributes](./concurrent.md)
   The queue schedules tasks concurrently.
 
 

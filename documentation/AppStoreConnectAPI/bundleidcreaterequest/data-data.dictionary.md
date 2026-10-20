@@ -1,7 +1,8 @@
 # BundleIdCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,20 +11,20 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BundleIdCreateRequest.Data.Attributes](bundleidcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BundleIdCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 ## Properties
 
 - `attributes` (BundleIdCreateRequest.Data.Attributes) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `bundleIds`
 
 
 ---

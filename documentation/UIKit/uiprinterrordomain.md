@@ -1,7 +1,8 @@
 # UIPrintErrorDomain
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The string constant that defines the UIKit printing error domain.
 
@@ -17,11 +18,16 @@ The string constant that defines the UIKit printing error domain.
 let UIPrintErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const UIPrintErrorDomain;
+```
+
 ## See Also
 
-- [struct UIPrintError](uiprinterror.md)
+### Handling printing errors
+- [struct UIPrintError](./uiprinterror.md)
   A structure that contains information about a printing error.
-- [UIPrintError.Code](uiprinterror/code.md)
+- [UIPrintError.Code](./uiprinterror/code.md)
   Constants that specify the print error code.
 
 

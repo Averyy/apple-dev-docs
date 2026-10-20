@@ -1,22 +1,29 @@
 # isBlacklisted
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the transit pass issuer disabled the pass.
 
 **Availability**:
-- iOS 10.1+
-- iPadOS 10.1+
-- Mac Catalyst 13.1+
-- macOS ?+
-- visionOS 1.0+
-- watchOS 3.1+
+- iOS 10.1+ - Deprecated in 15.0
+- iPadOS 10.1+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.1+ - Deprecated in 8.0
+
+> **Deprecated**: Use `PKStoredValuePassProperties` property [`blocked`](../pkstoredvaluepassproperties/blocked.md) instead.
 
 ## Declaration
 
 ```swift
 var isBlacklisted: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isBlacklisted) BOOL blacklisted;
 ```
 
 #### Discussion
@@ -25,13 +32,14 @@ Transit pass issuers are responsible for blacklisting transit passes according t
 
 ## See Also
 
-- [var isBlocked: Bool](pksuicapassproperties/isblocked.md)
+### Getting pass status
+- [var isBlocked: Bool](./isblocked.md)
   A Boolean value that indicates whether the pass issuer disabled the pass.
-- [var isGreenCarTicketUsed: Bool](pksuicapassproperties/isgreencarticketused.md)
+- [var isGreenCarTicketUsed: Bool](./isgreencarticketused.md)
   A Boolean value that indicates whether the customer has redeemed the Green Car ticket.
-- [var isInShinkansenStation: Bool](pksuicapassproperties/isinshinkansenstation.md)
+- [var isInShinkansenStation: Bool](./isinshinkansenstation.md)
   A Boolean value that indicates whether the pass has tapped in at a Shinkansen Station and has not tapped out.
-- [var isInStation: Bool](pksuicapassproperties/isinstation.md)
+- [var isInStation: Bool](./isinstation.md)
   A Boolean value that indicates whether the transit pass has tapped in at a station and has not tapped out.
 
 

@@ -1,7 +1,8 @@
 # IntentPerson.Handle.Value
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the type of contact information in the handle, such as whether it is an email address, or a phone number.
 
@@ -11,7 +12,7 @@ A type that describes the type of contact information in the handle, such as whe
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,26 +24,27 @@ enum Value
 ## Topics
 
 ### Enumeration Cases
-- [IntentPerson.Handle.Value.applicationDefined(_:)](intentperson/handle-swift.struct/value-swift.enum/applicationdefined(_:).md)
+- [IntentPerson.Handle.Value.applicationDefined(_:)](./value-swift.enum/applicationdefined%28_%29.md)
   An application-defined point of contact, such as a username of an a social networking service
-- [IntentPerson.Handle.Value.emailAddress(_:)](intentperson/handle-swift.struct/value-swift.enum/emailaddress(_:).md)
-- [IntentPerson.Handle.Value.phoneNumber(_:)](intentperson/handle-swift.struct/value-swift.enum/phonenumber(_:).md)
+- [IntentPerson.Handle.Value.emailAddress(_:)](./value-swift.enum/emailaddress%28_%29.md)
+- [IntentPerson.Handle.Value.phoneNumber(_:)](./value-swift.enum/phonenumber%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var value: IntentPerson.Handle.Value](intentperson/handle-swift.struct/value-swift.property.md)
+### Getting the handle’s value
+- [var value: IntentPerson.Handle.Value](./value-swift.property.md)
   The string value for this `Handle`, such as the specific phone number or email address
 
 

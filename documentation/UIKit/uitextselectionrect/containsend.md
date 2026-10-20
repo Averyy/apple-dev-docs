@@ -1,7 +1,8 @@
 # containsEnd
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the rectangle contains the end of the selection.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the rectangle contains the end of the sel
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the rectangle contains the end of the sel
 var containsEnd: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL containsEnd;
+```
+
 #### Discussion
 
 The value of this property is used to determine the placement of the selection handles in bidirectional text. It provides a clue to the system about whether the end of the selection is in the specified rectangle.
 
 ## See Also
 
-- [var containsStart: Bool](uitextselectionrect/containsstart.md)
+### Determining the Selection Status
+- [var containsStart: Bool](./containsstart.md)
   A Boolean value that indicates whether the rectangle contains the start of the selection.
 
 

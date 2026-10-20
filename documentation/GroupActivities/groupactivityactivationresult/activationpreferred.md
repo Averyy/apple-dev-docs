@@ -1,7 +1,8 @@
 # GroupActivityActivationResult.activationPreferred
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates the user wants to share the activity with the group.
 
@@ -21,13 +22,14 @@ case activationPreferred
 
 #### Discussion
 
-When you receive this result in your completion handler, call the [`activate()`](groupactivity/activate().md) method of your [`GroupActivity`](groupactivity.md) type to advertise the activity to other participants in the group.
+When you receive this result in your completion handler, call the [`activate()`](../groupactivity/activate%28%29.md) method of your [`GroupActivity`](../groupactivity.md) type to advertise the activity to other participants in the group.
 
 ## See Also
 
-- [GroupActivityActivationResult.activationDisabled](groupactivityactivationresult/activationdisabled.md)
+### Getting the activation results
+- [GroupActivityActivationResult.activationDisabled](./activationdisabled.md)
   A result that indicates the user disabled the automatic sharing of activities, or prefers to perform the activity locally.
-- [GroupActivityActivationResult.cancelled](groupactivityactivationresult/cancelled.md)
+- [GroupActivityActivationResult.cancelled](./cancelled.md)
   A result that indicates the user canceled the activation request.
 
 

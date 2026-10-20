@@ -1,7 +1,8 @@
 # Adaptive
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant indicating a color scheme that follows the current system setting.
 
@@ -10,15 +11,16 @@ A constant indicating a color scheme that follows the current system setting.
 
 ## Declaration
 
-```swift
+```
 readonly Adaptive: "adaptive";
 ```
 
 ## See Also
 
-- [Light](colorscheme/light.md)
+### Color scheme values
+- [Light](./light.md)
   A constant indicating a light color scheme.
-- [Dark](colorscheme/dark.md)
+- [Dark](./dark.md)
   A constant indicating a dark color scheme.
 
 

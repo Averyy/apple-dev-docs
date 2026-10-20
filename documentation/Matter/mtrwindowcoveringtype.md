@@ -1,7 +1,8 @@
 # MTRWindowCoveringType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,32 +19,36 @@
 enum MTRWindowCoveringType
 ```
 
+```c
+enum MTRWindowCoveringType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRWindowCoveringType.awning](mtrwindowcoveringtype/awning.md)
-- [MTRWindowCoveringType.drapery](mtrwindowcoveringtype/drapery.md)
-- [MTRWindowCoveringType.projectorScreen](mtrwindowcoveringtype/projectorscreen.md)
-- [MTRWindowCoveringType.rollerShade](mtrwindowcoveringtype/rollershade.md)
-- [MTRWindowCoveringType.rollerShade2Motor](mtrwindowcoveringtype/rollershade2motor.md)
-- [MTRWindowCoveringType.rollerShadeExterior](mtrwindowcoveringtype/rollershadeexterior.md)
-- [MTRWindowCoveringType.rollerShadeExterior2Motor](mtrwindowcoveringtype/rollershadeexterior2motor.md)
-- [MTRWindowCoveringType.shutter](mtrwindowcoveringtype/shutter.md)
-- [MTRWindowCoveringType.tiltBlindLiftAndTilt](mtrwindowcoveringtype/tiltblindliftandtilt.md)
-- [MTRWindowCoveringType.tiltBlindTiltOnly](mtrwindowcoveringtype/tiltblindtiltonly.md)
-- [MTRWindowCoveringType.unknown](mtrwindowcoveringtype/unknown.md)
+- [MTRWindowCoveringType.awning](./mtrwindowcoveringtype/awning.md)
+- [MTRWindowCoveringType.drapery](./mtrwindowcoveringtype/drapery.md)
+- [MTRWindowCoveringType.projectorScreen](./mtrwindowcoveringtype/projectorscreen.md)
+- [MTRWindowCoveringType.rollerShade](./mtrwindowcoveringtype/rollershade.md)
+- [MTRWindowCoveringType.rollerShade2Motor](./mtrwindowcoveringtype/rollershade2motor.md)
+- [MTRWindowCoveringType.rollerShadeExterior](./mtrwindowcoveringtype/rollershadeexterior.md)
+- [MTRWindowCoveringType.rollerShadeExterior2Motor](./mtrwindowcoveringtype/rollershadeexterior2motor.md)
+- [MTRWindowCoveringType.shutter](./mtrwindowcoveringtype/shutter.md)
+- [MTRWindowCoveringType.tiltBlindLiftAndTilt](./mtrwindowcoveringtype/tiltblindliftandtilt.md)
+- [MTRWindowCoveringType.tiltBlindTiltOnly](./mtrwindowcoveringtype/tiltblindtiltonly.md)
+- [MTRWindowCoveringType.unknown](./mtrwindowcoveringtype/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrwindowcoveringtype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrwindowcoveringtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

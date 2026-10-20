@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the playlist entry.
 

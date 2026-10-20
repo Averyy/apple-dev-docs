@@ -1,7 +1,8 @@
 # perShareMetadataResultBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute as the operation fetches individual shares.
 
@@ -11,7 +12,7 @@ The closure to execute as the operation fetches individual shares.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -25,10 +26,12 @@ var perShareMetadataResultBlock: ((URL, Result<CKShare.Metadata, any Error>) -> 
 The closure returns no value and takes the following parameters:
 
 - The share’s URL.
-- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - The share metadata, or
-- An error that contains information about a problem encountered fetching the share metadata.
+- A [`Result`](../../Swift/result.md) that contains either:
 
-The operation executes this closure once for each URL in the [`shareURLs`](ckfetchsharemetadataoperation/shareurls.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
+  - The share metadata, or
+  - An error that contains information about a problem encountered fetching the share metadata.
+
+The operation executes this closure once for each URL in the [`shareURLs`](./shareurls.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
 
 If you intend to use this closure to process results, set it before you execute the operation or submit the operation to a queue.
 

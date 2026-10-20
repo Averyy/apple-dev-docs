@@ -1,7 +1,8 @@
 # secondaryLabelColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The secondary color to use for text labels.
 
@@ -14,17 +15,22 @@ The secondary color to use for text labels.
 class var secondaryLabelColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * secondaryLabelColor;
+```
+
 #### Discussion
 
 Use this color in text fields that contain less important text in your user interface. For example, you might use this in labels that display subheads or additional information. You can also use it for other types of secondary app content.
 
 ## See Also
 
-- [class var labelColor: NSColor](nscolor/labelcolor.md)
+### Label colors
+- [class var labelColor: NSColor](./labelcolor.md)
   The primary color to use for text labels.
-- [class var tertiaryLabelColor: NSColor](nscolor/tertiarylabelcolor.md)
+- [class var tertiaryLabelColor: NSColor](./tertiarylabelcolor.md)
   The tertiary color to use for text labels.
-- [class var quaternaryLabelColor: NSColor](nscolor/quaternarylabelcolor.md)
+- [class var quaternaryLabelColor: NSColor](./quaternarylabelcolor.md)
   The quaternary color to use for text labels and separators.
 
 

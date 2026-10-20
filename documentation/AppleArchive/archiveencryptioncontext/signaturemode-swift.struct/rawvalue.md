@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding value of the raw type.
 
@@ -11,7 +12,7 @@ The corresponding value of the raw type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

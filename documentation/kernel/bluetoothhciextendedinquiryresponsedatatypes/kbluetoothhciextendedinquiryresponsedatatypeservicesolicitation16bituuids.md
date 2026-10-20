@@ -1,14 +1,15 @@
 # kBluetoothHCIExtendedInquiryResponseDataTypeServiceSolicitation16BitUUIDs
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIExtendedInquiryResponseDataTypeServiceSolicitation16BitUUIDs = 0x14
 ```
 

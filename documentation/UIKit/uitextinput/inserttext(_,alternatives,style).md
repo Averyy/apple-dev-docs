@@ -1,14 +1,15 @@
 # insertText(_:alternatives:style:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -16,9 +17,14 @@
 optional func insertText(_ text: String, alternatives: [String], style: UITextAlternativeStyle)
 ```
 
+```objc
+- (void) insertText:(NSString *) text alternatives:(NSArray<NSString *> *) alternatives style:(UITextAlternativeStyle) style;
+```
+
 ## See Also
 
-- [enum UITextAlternativeStyle](uitextalternativestyle.md)
+### Supporting text-phrase alternatives
+- [enum UITextAlternativeStyle](../uitextalternativestyle.md)
   A constant that determines if the system highlights alternative phrases during text input.
 
 

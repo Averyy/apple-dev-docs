@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Configures the app intent with the provided URL.
 

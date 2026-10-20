@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event’s time and date.
 
@@ -12,6 +13,10 @@ The event’s time and date.
 
 ```swift
 var date: Date { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSDate * date;
 ```
 
 #### Discussion

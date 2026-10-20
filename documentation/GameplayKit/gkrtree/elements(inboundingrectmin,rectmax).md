@@ -1,7 +1,8 @@
 # elements(inBoundingRectMin:rectMax:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the tree and returns all elements found within the specified bounding region.
 
@@ -19,6 +20,10 @@ Searches the tree and returns all elements found within the specified bounding r
 func elements(inBoundingRectMin rectMin: vector_float2, rectMax: vector_float2) -> [ElementType]
 ```
 
+```objc
+- (NSArray<NSObject *> *) elementsInBoundingRectMin:(vector_float2) rectMin rectMax:(vector_float2) rectMax;
+```
+
 #### Return Value
 
 An array of objects stored in the tree whose bounding regions overlap the specified region. The array is empty if no such objects are found.
@@ -30,7 +35,8 @@ An array of objects stored in the tree whose bounding regions overlap the specif
 
 ## See Also
 
-- [var queryReserve: Int](gkrtree/queryreserve.md)
+### Searching for Elements
+- [var queryReserve: Int](./queryreserve.md)
   The number of elements to reserve space for when searching.
 
 

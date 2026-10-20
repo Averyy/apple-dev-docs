@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the softmax operation, suitable for debugging.
 
@@ -18,10 +19,15 @@ A textual description of the softmax operation, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCSoftmaxOperationDebugDescription(MLCSoftmaxOperation operation);
+```
+
 ## See Also
 
-- [MLCSoftmaxOperation.softmax](mlcsoftmaxoperation/softmax.md)
-- [MLCSoftmaxOperation.logSoftmax](mlcsoftmaxoperation/logsoftmax.md)
+### Enumeration Cases
+- [MLCSoftmaxOperation.softmax](./softmax.md)
+- [MLCSoftmaxOperation.logSoftmax](./logsoftmax.md)
 
 
 ---

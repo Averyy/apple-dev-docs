@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cellular service identifier associated with this instance.
 
@@ -16,9 +17,10 @@ let id: CellularServiceID
 
 ## See Also
 
-- [struct CellularServiceID](cellularserviceid.md)
+### Accessing state properties
+- [struct CellularServiceID](../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let label: String](cellularservicestate/label.md)
+- [let label: String](./label.md)
   The label for a service, as set by the person using the device.
 
 

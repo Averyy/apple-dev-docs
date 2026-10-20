@@ -1,7 +1,8 @@
 # errSecMissingAttributeAccessCredentials
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An access credentials attribute is missing.
 
@@ -18,6 +19,10 @@ An access credentials attribute is missing.
 
 ```swift
 var errSecMissingAttributeAccessCredentials: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeAccessCredentials
 ```
 
 

@@ -1,7 +1,8 @@
 # ExternalPurchase.NoticeResult.cancelled
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Describes when people chose to cancel and not view external purchases.
 
@@ -22,11 +23,12 @@ case cancelled
 
 #### Discussion
 
-If your app’s call to [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md) results in this value, you must not show external purchases.
+If your app’s call to [`presentNoticeSheet()`](../presentnoticesheet%28%29.md) results in this value, you must not show external purchases.
 
 ## See Also
 
-- [ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)](externalpurchase/noticeresult/continuedwithexternalpurchasetoken(token:).md)
+### Getting notice sheet results
+- [ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)](./continuedwithexternalpurchasetoken%28token%29.md)
   Describes when people chose to continue to view external purchases, and provides the external purchase token.
 
 

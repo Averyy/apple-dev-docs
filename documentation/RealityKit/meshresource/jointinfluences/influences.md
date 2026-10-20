@@ -1,7 +1,8 @@
 # influences
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Buffer of joint influences.
 

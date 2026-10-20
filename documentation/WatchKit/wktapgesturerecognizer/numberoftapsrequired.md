@@ -1,7 +1,8 @@
 # numberOfTapsRequired
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of taps necessary for gesture recognition.
 
@@ -12,6 +13,10 @@ The number of taps necessary for gesture recognition.
 
 ```swift
 var numberOfTapsRequired: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger numberOfTapsRequired;
 ```
 
 #### Discussion

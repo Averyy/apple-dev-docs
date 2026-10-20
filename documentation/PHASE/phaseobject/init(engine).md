@@ -1,7 +1,8 @@
 # init(engine:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object in the scene.
 
@@ -17,6 +18,10 @@ Creates an object in the scene.
 
 ```swift
 init(engine: PHASEEngine)
+```
+
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine;
 ```
 
 ## Parameters

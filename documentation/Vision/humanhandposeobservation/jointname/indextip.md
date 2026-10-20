@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointName.indexTip
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the tip of the index finger.
 
@@ -21,11 +22,12 @@ case indexTip
 
 ## See Also
 
-- [HumanHandPoseObservation.JointName.indexDIP](humanhandposeobservation/jointname/indexdip.md)
+### Getting the index finger joint name
+- [HumanHandPoseObservation.JointName.indexDIP](./indexdip.md)
   A joint name that represents the index finger’s distal interphalangeal joint.
-- [HumanHandPoseObservation.JointName.indexMCP](humanhandposeobservation/jointname/indexmcp.md)
+- [HumanHandPoseObservation.JointName.indexMCP](./indexmcp.md)
   A joint name that represents the index finger’s metacarpophalangeal joint.
-- [HumanHandPoseObservation.JointName.indexPIP](humanhandposeobservation/jointname/indexpip.md)
+- [HumanHandPoseObservation.JointName.indexPIP](./indexpip.md)
   A joint name that represents the index finger’s proximal interphalangeal joint.
 
 

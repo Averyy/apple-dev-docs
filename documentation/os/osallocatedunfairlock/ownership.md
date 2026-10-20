@@ -1,7 +1,8 @@
 # OSAllocatedUnfairLock.Ownership
 
 **Framework**: os  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the ownership status of an unfair lock.
 
@@ -11,7 +12,7 @@ An enumeration that represents the ownership status of an unfair lock.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,24 +25,25 @@ enum Ownership
 ## Topics
 
 ### Specifying ownership
-- [OSAllocatedUnfairLock.Ownership.owner](osallocatedunfairlock/ownership/owner.md)
+- [OSAllocatedUnfairLock.Ownership.owner](./ownership/owner.md)
   Describes code that owns the lock.
-- [OSAllocatedUnfairLock.Ownership.notOwner](osallocatedunfairlock/ownership/notowner.md)
+- [OSAllocatedUnfairLock.Ownership.notOwner](./ownership/notowner.md)
   Describes code that doesn’t own the lock.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func precondition(OSAllocatedUnfairLock<State>.Ownership)](osallocatedunfairlock/precondition(_:).md)
+### Determining lock ownership
+- [func precondition(OSAllocatedUnfairLock<State>.Ownership)](./precondition%28_%29.md)
   Asserts if the lock object fails to meet specified ownership requirements.
 
 

@@ -1,14 +1,15 @@
 # ClientCrashed_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t ClientCrashed_Impl(IOService *client, uint64_t options);
 ```
 

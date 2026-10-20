@@ -1,7 +1,8 @@
 # PeerConnectionRelease(_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases P2P connection resources associated with the service instance.
 
@@ -20,6 +21,10 @@ Releases P2P connection resources associated with the service instance.
 func PeerConnectionRelease(_ flags: DNSServiceFlags, _ name: UnsafePointer<CChar>!, _ regtype: UnsafePointer<CChar>!, _ domain: UnsafePointer<CChar>!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType PeerConnectionRelease(DNSServiceFlags flags, const char *name, const char *regtype, const char *domain);
+```
+
 #### Discussion
 
 When a service is resolved over a P2P interface, a connection is brought up to the peer advertising the service instance. This call will free the resources associated with that connection. Note that the reference to the service instance will only be maintained by the mDNSResponder daemon while the browse for the service type is still running. Thus the sequence of calls to discover, resolve, and then terminate the connection associated with a given P2P service instance would be:
@@ -34,21 +39,22 @@ DNSServiceRefDeallocate(BrowseRef) // stop the browse // Any further calls to Pe
 
 flags: Not currently used.
 
-name: The name of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
+name: The name of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](./dnsservicebrowsereply.md) callback.
 
-regtype: The type of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
+regtype: The type of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](./dnsservicebrowsereply.md) callback.
 
-domain: The domain of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
+domain: The domain of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](./dnsservicebrowsereply.md) callback.
 
-return value: Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success or the error that occurred.
+return value: Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success or the error that occurred.
 
 ## See Also
 
-- [func DNSServiceCreateConnection(UnsafeMutablePointer<DNSServiceRef?>!) -> DNSServiceErrorType](dnsservicecreateconnection(_:).md)
+### Special Purpose Calls
+- [func DNSServiceCreateConnection(UnsafeMutablePointer<DNSServiceRef?>!) -> DNSServiceErrorType](./dnsservicecreateconnection%28_%29.md)
   Creates a connection to the daemon, allowing efficient registration of multiple individual records.
-- [func DNSServiceReconfirmRecord(DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UInt16, UInt16, UInt16, UnsafeRawPointer!) -> DNSServiceErrorType](dnsservicereconfirmrecord(_:_:_:_:_:_:_:).md)
+- [func DNSServiceReconfirmRecord(DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UInt16, UInt16, UInt16, UnsafeRawPointer!) -> DNSServiceErrorType](./dnsservicereconfirmrecord%28_,_,_,_,_,_,_%29.md)
   Instructs the daemon to verify the validity of a resource record that appears to be out of date (for example, because TCP connection to a service’s target failed).
-- [func DNSServiceRegisterRecord(DNSServiceRef!, UnsafeMutablePointer<DNSRecordRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UInt16, UInt16, UInt16, UnsafeRawPointer!, UInt32, DNSServiceRegisterRecordReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](dnsserviceregisterrecord(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func DNSServiceRegisterRecord(DNSServiceRef!, UnsafeMutablePointer<DNSRecordRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UInt16, UInt16, UInt16, UnsafeRawPointer!, UInt32, DNSServiceRegisterRecordReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](./dnsserviceregisterrecord%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Registers an individual resource record on a connected DNSServiceRef.
 
 

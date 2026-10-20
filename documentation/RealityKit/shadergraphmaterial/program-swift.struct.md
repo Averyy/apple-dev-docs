@@ -1,7 +1,8 @@
 # ShaderGraphMaterial.Program
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,24 +21,25 @@ struct Program
 ## Topics
 
 ### Accessing the descriptor
-- [var descriptor: ShaderGraphMaterial.Program.Descriptor](shadergraphmaterial/program-swift.struct/descriptor-swift.property.md)
+- [var descriptor: ShaderGraphMaterial.Program.Descriptor](./program-swift.struct/descriptor-swift.property.md)
   The descriptor used to create this program.
-- [ShaderGraphMaterial.Program.Descriptor](shadergraphmaterial/program-swift.struct/descriptor-swift.struct.md)
+- [ShaderGraphMaterial.Program.Descriptor](./program-swift.struct/descriptor-swift.struct.md)
 ### Initializers
-- [init(descriptor: ShaderGraphMaterial.Program.Descriptor) async throws](shadergraphmaterial/program-swift.struct/init(descriptor:).md)
+- [init(descriptor: ShaderGraphMaterial.Program.Descriptor) async throws](./program-swift.struct/init%28descriptor%29.md)
   Creates a program by compiling the shader node graph in the given descriptor.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var program: ShaderGraphMaterial.Program](shadergraphmaterial/program-swift.property.md)
+### Accessing the program
+- [var program: ShaderGraphMaterial.Program](./program-swift.property.md)
 
 
 ---

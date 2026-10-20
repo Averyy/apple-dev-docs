@@ -1,7 +1,8 @@
 # LightmapResource.IndirectDiffuseIrradianceBakeDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters for the indirect diffuse irradiance bake type.
 
@@ -22,13 +23,13 @@ struct IndirectDiffuseIrradianceBakeDescriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(sourceAtlasReference: LightmapResource.AtlasReference)](lightmapresource/indirectdiffuseirradiancebakedescriptor/init(sourceatlasreference:).md)
+- [init(sourceAtlasReference: LightmapResource.AtlasReference)](./indirectdiffuseirradiancebakedescriptor/init%28sourceatlasreference%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

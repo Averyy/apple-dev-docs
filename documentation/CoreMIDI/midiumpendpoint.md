@@ -1,7 +1,8 @@
 # MIDIUMPEndpoint
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,35 +17,39 @@
 class MIDIUMPEndpoint
 ```
 
+```objc
+@interface MIDIUMPEndpoint : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var deviceInfo: MIDI2DeviceInfo](midiumpendpoint/deviceinfo.md)
-- [var endpointType: MIDIUMPCIObjectBackingType](midiumpendpoint/endpointtype.md)
-- [var functionBlocks: [MIDIUMPFunctionBlock]](midiumpendpoint/functionblocks.md)
-- [var hasJRTSReceiveCapability: Bool](midiumpendpoint/hasjrtsreceivecapability.md)
-- [var hasJRTSTransmitCapability: Bool](midiumpendpoint/hasjrtstransmitcapability.md)
-- [var hasStaticFunctionBlocks: Bool](midiumpendpoint/hasstaticfunctionblocks.md)
-- [var midiDestination: MIDIEndpointRef](midiumpendpoint/mididestination.md)
-- [var midiProtocol: MIDIProtocolID](midiumpendpoint/midiprotocol.md)
-- [var midiSource: MIDIEndpointRef](midiumpendpoint/midisource.md)
-- [var name: String](midiumpendpoint/name.md)
-- [var productInstanceID: String](midiumpendpoint/productinstanceid.md)
-- [var supportedMIDIProtocols: MIDIUMPProtocolOptions](midiumpendpoint/supportedmidiprotocols.md)
+- [var deviceInfo: MIDI2DeviceInfo](./midiumpendpoint/deviceinfo.md)
+- [var endpointType: MIDIUMPCIObjectBackingType](./midiumpendpoint/endpointtype.md)
+- [var functionBlocks: [MIDIUMPFunctionBlock]](./midiumpendpoint/functionblocks.md)
+- [var hasJRTSReceiveCapability: Bool](./midiumpendpoint/hasjrtsreceivecapability.md)
+- [var hasJRTSTransmitCapability: Bool](./midiumpendpoint/hasjrtstransmitcapability.md)
+- [var hasStaticFunctionBlocks: Bool](./midiumpendpoint/hasstaticfunctionblocks.md)
+- [var midiDestination: MIDIEndpointRef](./midiumpendpoint/mididestination.md)
+- [var midiProtocol: MIDIProtocolID](./midiumpendpoint/midiprotocol.md)
+- [var midiSource: MIDIEndpointRef](./midiumpendpoint/midisource.md)
+- [var name: String](./midiumpendpoint/name.md)
+- [var productInstanceID: String](./midiumpendpoint/productinstanceid.md)
+- [var supportedMIDIProtocols: MIDIUMPProtocolOptions](./midiumpendpoint/supportedmidiprotocols.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MIDIUMPMutableEndpoint](midiumpmutableendpoint.md)
+- [MIDIUMPMutableEndpoint](./midiumpmutableendpoint.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # sms_file_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_offset_t sms_file_offset;
 ```
 

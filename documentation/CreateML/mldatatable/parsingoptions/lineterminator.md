@@ -1,7 +1,8 @@
 # lineTerminator
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character that represents the end of a line in a CSV file.
 
@@ -21,9 +22,10 @@ var lineTerminator: String
 
 ## See Also
 
-- [var containsHeader: Bool](mldatatable/parsingoptions/containsheader.md)
+### Specifying the CSV file format
+- [var containsHeader: Bool](./containsheader.md)
   A Boolean value indicating whether an input CSV file contains a header.
-- [var delimiter: String](mldatatable/parsingoptions/delimiter.md)
+- [var delimiter: String](./delimiter.md)
   The character that separates the data fields in a CSV file.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets a range of entries in the intersection table to point to a system-defined opaque triangle intersection function.
@@ -20,6 +21,10 @@ Sets a range of entries in the intersection table to point to a system-defined o
 func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)
 ```
 
+```objc
+- (void) setOpaqueTriangleIntersectionFunctionWithSignature:(MTLIntersectionFunctionSignature) signature withRange:(NSRange) range;
+```
+
 ## Parameters
 
 - `signature`: The signature of the function.
@@ -27,7 +32,8 @@ func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSig
 
 ## See Also
 
-- [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](mtlintersectionfunctiontable/setopaquetriangleintersectionfunction(signature:index:).md)
+### Specifying opaque triangle intersection testing
+- [func setOpaqueTriangleIntersectionFunction(signature: MTLIntersectionFunctionSignature, index: Int)](./setopaquetriangleintersectionfunction%28signature,index%29.md)
   Sets an entry in the intersection table to point to a system-defined opaque triangle intersection function.
 
 

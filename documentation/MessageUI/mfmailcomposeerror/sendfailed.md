@@ -1,7 +1,8 @@
 # sendFailed
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error occurred while trying to queue or send the email message.
 
@@ -19,12 +20,13 @@ static var sendFailed: MFMailComposeError.Code { get }
 
 ## See Also
 
-- [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
+### Errors
+- [static var errorDomain: String](./errordomain.md)
   The domain for errors related to mail composition.
-- [static var saveFailed: MFMailComposeError.Code](mfmailcomposeerror/savefailed.md)
+- [static var saveFailed: MFMailComposeError.Code](./savefailed.md)
   An error occurred while trying to save the email message to the drafts folder.
-- [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
+- [MFMailComposeError.Code](./code.md)
+  Error codes for [`NSError`](../../Foundation/nserror.md) objects that are associated with the mail composition interface.
 
 
 ---

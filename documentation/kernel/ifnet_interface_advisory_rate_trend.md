@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum ifnet_interface_advisory_rate_trend : int32_t {
     ...
 };
@@ -17,9 +17,9 @@ enum ifnet_interface_advisory_rate_trend : int32_t {
 ## Topics
 
 ### Constants
-- [IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_DOWN](ifnet_interface_advisory_rate_trend/if_interface_advisory_rate_suggestion_ramp_down.md)
-- [IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_NEUTRAL](ifnet_interface_advisory_rate_trend/if_interface_advisory_rate_suggestion_ramp_neutral.md)
-- [IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_UP](ifnet_interface_advisory_rate_trend/if_interface_advisory_rate_suggestion_ramp_up.md)
+- [IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_DOWN](./ifnet_interface_advisory_rate_trend/if_interface_advisory_rate_suggestion_ramp_down.md)
+- [IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_NEUTRAL](./ifnet_interface_advisory_rate_trend/if_interface_advisory_rate_suggestion_ramp_neutral.md)
+- [IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_UP](./ifnet_interface_advisory_rate_trend/if_interface_advisory_rate_suggestion_ramp_up.md)
 
 
 ---

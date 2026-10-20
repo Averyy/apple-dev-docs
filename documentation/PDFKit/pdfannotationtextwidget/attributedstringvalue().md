@@ -1,10 +1,11 @@
 # attributedStringValue()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 func attributedStringValue() -> NSAttributedString!
 ```
 
+```objc
+- (NSAttributedString *) attributedStringValue;
+```
+
 ## See Also
 
-- [func isMultiline() -> Bool](pdfannotationtextwidget/ismultiline.md)
-- [func setAttributedStringValue(NSAttributedString!)](pdfannotationtextwidget/setattributedstringvalue(_:).md)
-- [func setIsMultiline(Bool)](pdfannotationtextwidget/setismultiline(_:).md)
+### Instance Methods
+- [func isMultiline() -> Bool](./ismultiline%28%29.md)
+- [func setAttributedStringValue(NSAttributedString!)](./setattributedstringvalue%28_%29.md)
+- [func setIsMultiline(Bool)](./setismultiline%28_%29.md)
 
 
 ---

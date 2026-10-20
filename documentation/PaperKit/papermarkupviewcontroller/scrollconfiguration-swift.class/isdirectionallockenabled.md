@@ -1,7 +1,8 @@
 # isDirectionalLockEnabled
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether scrolling is disabled in a particular direction.
 
@@ -24,9 +25,10 @@ When `true`, the scroll view tries to lock scrolling to the vertical or horizont
 
 ## See Also
 
-- [var isScrollEnabled: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/isscrollenabled.md)
+### Configuring scroll state
+- [var isScrollEnabled: Bool](./isscrollenabled.md)
   A Boolean value that determines whether scrolling is enabled.
-- [var scrollsToTop: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/scrollstotop.md)
+- [var scrollsToTop: Bool](./scrollstotop.md)
   A Boolean value that controls whether the scroll-to-top gesture is enabled.
 
 

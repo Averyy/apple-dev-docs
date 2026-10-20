@@ -1,7 +1,8 @@
 # MTKViewDelegate
 
 **Framework**: MetalKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for responding to a MetalKit view’s drawing and resizing events.
 
@@ -19,27 +20,32 @@ Methods for responding to a MetalKit view’s drawing and resizing events.
 protocol MTKViewDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MTKViewDelegate <NSObject>
+```
+
 #### Overview
 
-You can set an object that implements the [`MTKViewDelegate`](mtkviewdelegate.md) protocol as a [`MTKView`](mtkview.md) object’s delegate. Use a delegate to provide a drawing method to a [`MTKView`](mtkview.md) object and respond to rendering events without subclassing the [`MTKView`](mtkview.md) class.
+You can set an object that implements the [`MTKViewDelegate`](./mtkviewdelegate.md) protocol as a [`MTKView`](./mtkview.md) object’s delegate. Use a delegate to provide a drawing method to a [`MTKView`](./mtkview.md) object and respond to rendering events without subclassing the [`MTKView`](./mtkview.md) class.
 
 ## Topics
 
 ### Changing the View’s Layout
-- [func mtkView(MTKView, drawableSizeWillChange: CGSize)](mtkviewdelegate/mtkview(_:drawablesizewillchange:).md)
+- [func mtkView(MTKView, drawableSizeWillChange: CGSize)](./mtkviewdelegate/mtkview%28_,drawablesizewillchange%29.md)
   Updates the view’s contents upon receiving a change in layout, resolution, or size.
 ### Drawing the View’s Contents
-- [func draw(in: MTKView)](mtkviewdelegate/draw(in:).md)
+- [func draw(in: MTKView)](./mtkviewdelegate/draw%28in%29.md)
   Draws the view’s contents.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTKView](mtkview.md)
+### View Management
+- [class MTKView](./mtkview.md)
   A specialized view that creates, configures, and displays Metal objects.
 
 

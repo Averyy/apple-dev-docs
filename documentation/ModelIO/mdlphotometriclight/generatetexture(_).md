@@ -1,7 +1,8 @@
 # generateTexture(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func generateTexture(_ textureSize: Int) -> MDLTexture
+```
+
+```objc
+- (MDLTexture *) generateTexture:(NSUInteger) textureSize;
 ```
 
 

@@ -1,7 +1,8 @@
 # CGPDFDictionaryApplyFunction(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a function to each entry in a dictionary.
 
@@ -10,7 +11,7 @@ Applies a function to each entry in a dictionary.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Applies a function to each entry in a dictionary.
 func CGPDFDictionaryApplyFunction(_ dict: CGPDFDictionaryRef, _ function: CGPDFDictionaryApplierFunction, _ info: UnsafeMutableRawPointer?)
 ```
 
+```c
+extern void CGPDFDictionaryApplyFunction(CGPDFDictionaryRef dict, CGPDFDictionaryApplierFunction function, void *info);
+```
+
 #### Discussion
 
-This function enumerates all of the entries in the dictionary, calling the function once for each. The current key, its associated value, and the contextual information are passed to the function (see also [`CGPDFDictionaryApplierFunction`](cgpdfdictionaryapplierfunction.md)).
+This function enumerates all of the entries in the dictionary, calling the function once for each. The current key, its associated value, and the contextual information are passed to the function (see also [`CGPDFDictionaryApplierFunction`](./cgpdfdictionaryapplierfunction.md)).
 
 ## Parameters
 

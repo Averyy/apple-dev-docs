@@ -1,7 +1,8 @@
 # vImageAlphaBlend_NonpremultipliedToPremultiplied_Planar8(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Composites a nonpremultiplied 8-bit planar buffer over a premultiplied 8-bit planar buffer and generates a premultiplied result.
 
@@ -20,9 +21,13 @@ Composites a nonpremultiplied 8-bit planar buffer over a premultiplied 8-bit pla
 func vImageAlphaBlend_NonpremultipliedToPremultiplied_Planar8(_ srcTop: UnsafePointer<vImage_Buffer>, _ srcTopAlpha: UnsafePointer<vImage_Buffer>, _ srcBottom: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageAlphaBlend_NonpremultipliedToPremultiplied_Planar8(const vImage_Buffer *srcTop, const vImage_Buffer *srcTopAlpha, const vImage_Buffer *srcBottom, const vImage_Buffer *dest, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -37,18 +42,20 @@ result = (srcTop * srctopAlpha + (255 - srcTopAlpha) * bottomAlpha + 127 ) / 255
 - `srcTop`: The vImage buffer that provides the nonpremultiplied source top image.
 - `srcTopAlpha`: The vImage buffer that provides the source top alpha.
 - `srcBottom`: The vImage buffer that provides the premultiplied source bottom image.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [func vImageAlphaBlend_NonpremultipliedToPremultiplied_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagealphablend_nonpremultipliedtopremultiplied_planarf(_:_:_:_:_:).md)
+### Performing nonpremultiplied to premultiplied alpha compositing
+- [func vImageAlphaBlend_NonpremultipliedToPremultiplied_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagealphablend_nonpremultipliedtopremultiplied_planarf%28_,_,_,_,_%29.md)
   Composites a nonpremultiplied 32-bit planar buffer over a premultiplied 32-bit planar buffer and generates a premultiplied result.
-- [func vImageAlphaBlend_NonpremultipliedToPremultiplied_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagealphablend_nonpremultipliedtopremultiplied_argb8888(_:_:_:_:).md)
+- [func vImageAlphaBlend_NonpremultipliedToPremultiplied_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagealphablend_nonpremultipliedtopremultiplied_argb8888%28_,_,_,_%29.md)
   Composites a nonpremultiplied 8-bit-per-channel, ARGB buffer over a premultiplied ARGB buffer and generates a premultiplied result.
-- [func vImageAlphaBlend_NonpremultipliedToPremultiplied_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagealphablend_nonpremultipliedtopremultiplied_argbffff(_:_:_:_:).md)
+- [func vImageAlphaBlend_NonpremultipliedToPremultiplied_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagealphablend_nonpremultipliedtopremultiplied_argbffff%28_,_,_,_%29.md)
   Composites a nonpremultiplied 32-bit-per-channel, ARGB buffer over a premultiplied ARGB buffer and generates a premultiplied result.
 
 

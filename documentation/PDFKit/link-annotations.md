@@ -1,18 +1,20 @@
 # Link Annotations
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 Validate and handle links in a PDF view.
 
 ## Topics
 
 ### Linking in a View
-- [var enableDataDetectors: Bool](pdfview/enabledatadetectors.md)
+- [var enableDataDetectors: Bool](./pdfview/enabledatadetectors.md)
   A Boolean value indicating whether to turns on or off data detection, which adds annotations for detected URLs in a page.
 
 ## See Also
 
-- [func annotationsChanged(on: PDFPage)](pdfview/annotationschanged(on:).md)
+### Working with Annotation Actions
+- [func annotationsChanged(on: PDFPage)](./pdfview/annotationschanged%28on%29.md)
   Tells the PDF view that an annotation on the specified page has changed.
 
 

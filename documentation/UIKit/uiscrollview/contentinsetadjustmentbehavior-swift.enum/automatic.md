@@ -1,7 +1,8 @@
 # UIScrollView.ContentInsetAdjustmentBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically adjust the scroll view insets.
 
@@ -16,6 +17,10 @@ Automatically adjust the scroll view insets.
 
 ```swift
 case automatic
+```
+
+```c
+UIScrollViewContentInsetAdjustmentAutomatic
 ```
 
 #### Discussion

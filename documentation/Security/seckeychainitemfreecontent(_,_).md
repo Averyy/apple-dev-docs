@@ -1,12 +1,15 @@
 # SecKeychainItemFreeContent(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
-Releases the memory used by the keychain attribute list and the keychain data retrieved in a call to the [`SecKeychainItemCopyContent(_:_:_:_:_:)`](seckeychainitemcopycontent(_:_:_:_:_:).md) function.
+Releases the memory used by the keychain attribute list and the keychain data retrieved in a call to the [`SecKeychainItemCopyContent(_:_:_:_:_:)`](./seckeychainitemcopycontent%28_,_,_,_,_%29.md) function.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Releases the memory used by the keychain attribute list and the keychain data re
 func SecKeychainItemFreeContent(_ attrList: UnsafeMutablePointer<SecKeychainAttributeList>?, _ data: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainItemFreeContent(SecKeychainAttributeList *attrList, void *data);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-Because the [`SecKeychainFindInternetPassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](seckeychainfindinternetpassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) and [`SecKeychainFindGenericPassword(_:_:_:_:_:_:_:_:)`](seckeychainfindgenericpassword(_:_:_:_:_:_:_:_:).md) functions call the [`SecKeychainItemCopyContent(_:_:_:_:_:)`](seckeychainitemcopycontent(_:_:_:_:_:).md) function, you must call `SecKeychainItemFreeContent` to release the data buffers after calls to those functions as well.
+Because the [`SecKeychainFindInternetPassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./seckeychainfindinternetpassword%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) and [`SecKeychainFindGenericPassword(_:_:_:_:_:_:_:_:)`](./seckeychainfindgenericpassword%28_,_,_,_,_,_,_,_%29.md) functions call the [`SecKeychainItemCopyContent(_:_:_:_:_:)`](./seckeychainitemcopycontent%28_,_,_,_,_%29.md) function, you must call `SecKeychainItemFreeContent` to release the data buffers after calls to those functions as well.
 
 Because the `SecKeychainItemCopyContent` function does not allocate buffers until they are needed, you should not call the `SecKeychainItemFreeContent` function unless data is actually returned to you.
 

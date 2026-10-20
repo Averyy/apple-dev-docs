@@ -1,7 +1,8 @@
 # MKDirectionsApplicationSupportedModes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The modes of transportation for which the app is capable of giving directions.
 
@@ -10,9 +11,27 @@ The modes of transportation for which the app is capable of giving directions.
 - iPadOS 6.0+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `MKDirectionsApplicationSupportedModes` (Maps routing app supported modes)
+- **Type**: array of string 
+
+## Possible Values
+
+- `MKDirectionsModePlane`
+- `MKDirectionsModeBike`
+- `MKDirectionsModeBus`
+- `MKDirectionsModeCar`
+- `MKDirectionsModeFerry`
+- `MKDirectionsModePedestrian`
+- `MKDirectionsModeRideShare`
+- `MKDirectionsModeStreetCar`
+- `MKDirectionsModeSubway`
+- `MKDirectionsModeTaxi`
+- `MKDirectionsModeTrain`
+- `MKDirectionsModeOther`
 
 
-**Type**: string 
 
 **Default**: `MKDirectionsModePlane`
 

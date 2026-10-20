@@ -1,7 +1,8 @@
 # customDataByKey(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the custom data value at the given key path.
 

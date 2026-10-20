@@ -1,7 +1,8 @@
 # init(definition:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a set of protocol options with a custom framer definition.
 

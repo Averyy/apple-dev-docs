@@ -1,7 +1,8 @@
 # PasswordHash.SALTED-SHA512-PBKDF2
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains the elements to create the password hash.
 
@@ -10,7 +11,7 @@ A dictionary that contains the elements to create the password hash.
 
 ## Declaration
 
-```swift
+```
 object PasswordHash.SALTED-SHA512-PBKDF2
 ```
 

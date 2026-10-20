@@ -1,7 +1,8 @@
 # any
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The permission option the system uses to control whether a user can grant read-only or write access.
 
@@ -18,11 +19,16 @@ The permission option the system uses to control whether a user can grant read-o
 static var any: CKSharingParticipantPermissionOption { get }
 ```
 
+```c
+CKSharingParticipantPermissionOptionAny
+```
+
 ## See Also
 
-- [static var readOnly: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/readonly.md)
+### Configuring the options
+- [static var readOnly: CKSharingParticipantPermissionOption](./readonly.md)
   The permission option the system uses to control whether a user can grant read-only access.
-- [static var readWrite: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/readwrite.md)
+- [static var readWrite: CKSharingParticipantPermissionOption](./readwrite.md)
   The permission option the system uses to control whether a user can grant write access.
 
 

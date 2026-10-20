@@ -1,7 +1,8 @@
 # lineItemId
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A unique identifier for the line item, that you determine.
 
@@ -10,23 +11,23 @@ A unique identifier for the line item, that you determine.
 
 ## Declaration
 
-```swift
+```
 string lineItemId
 ```
 
 ## Mentions
 
-- [Reporting corrections](reportcorrections.md)
+- [Reporting corrections](./reportcorrections.md)
 
 #### Discussion
 
 Maximum length: 128
 
-The [`lineItemId`](lineitemid.md) string must be unique for each app. Using UUIDs is recommended. All line item objects have a [`lineItemId`](lineitemid.md), including:
+The [`lineItemId`](./lineitemid.md) string must be unique for each app. Using UUIDs is recommended. All line item objects have a [`lineItemId`](./lineitemid.md), including:
 
-- [`OneTimeBuyLineItem`](onetimebuylineitem.md)
-- [`RefundLineItem`](refundlineitem.md)
-- [`SubscriptionBuyLineItem`](subscriptionbuylineitem.md)
+- [`OneTimeBuyLineItem`](./onetimebuylineitem.md)
+- [`RefundLineItem`](./refundlineitem.md)
+- [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md)
 
 
 ---

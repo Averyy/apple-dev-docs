@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s centered vertically on the trailing edge of a view.
 
@@ -22,13 +23,14 @@ static let trailing: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`trailing`](alignment/trailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`trailing`](../alignment/trailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 
 ## See Also
 
-- [static let leading: UnitPoint](unitpoint/leading.md)
+### Getting middle points
+- [static let leading: UnitPoint](./leading.md)
   A point that’s centered vertically on the leading edge of a view.
-- [static let center: UnitPoint](unitpoint/center.md)
+- [static let center: UnitPoint](./center.md)
   A point that’s centered in a view.
 
 

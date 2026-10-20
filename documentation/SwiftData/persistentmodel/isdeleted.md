@@ -1,7 +1,8 @@
 # isDeleted
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,9 +22,10 @@ var isDeleted: Bool { get }
 
 ## See Also
 
-- [static var schemaMetadata: [Schema.PropertyMetadata]](persistentmodel/schemametadata.md)
-- [var persistentBackingData: any BackingData<Self>](persistentmodel/persistentbackingdata.md)
-- [var hasChanges: Bool](persistentmodel/haschanges.md)
+### Accessing supplementary information
+- [static var schemaMetadata: [Schema.PropertyMetadata]](./schemametadata.md)
+- [var persistentBackingData: any BackingData<Self>](./persistentbackingdata.md)
+- [var hasChanges: Bool](./haschanges.md)
 
 
 ---

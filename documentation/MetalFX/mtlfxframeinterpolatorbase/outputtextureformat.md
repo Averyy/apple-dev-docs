@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the output color texture for this frame interpolator.
@@ -17,6 +18,10 @@ The pixel format of the output color texture for this frame interpolator.
 
 ```swift
 var outputTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat outputTextureFormat;
 ```
 
 

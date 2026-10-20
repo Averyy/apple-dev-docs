@@ -1,7 +1,8 @@
 # BlendTreeInvalidNode
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A blend tree node that’s internal only or sources from an invalid definition.
 
@@ -11,7 +12,7 @@ A blend tree node that’s internal only or sources from an invalid definition.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct BlendTreeInvalidNode
 
 #### Overview
 
-This structure adopts [`BlendTreeNode`](blendtreenode.md) and adds the ability to detect a node that contains neither an animation nor any branches in the blend tree.
+This structure adopts [`BlendTreeNode`](./blendtreenode.md) and adds the ability to detect a node that contains neither an animation nor any branches in the blend tree.
 
 You don’t create instances of this structure. Instead, detect whether your blend-tree node matches the framework’s criteria for invalid nodes by checking the node type, as the following code demonstrates.
 
@@ -36,27 +37,28 @@ for node in blendNode.sources {
 ## Topics
 
 ### Configuring the blend tree invalid node
-- [var name: String](blendtreeinvalidnode/name.md)
+- [var name: String](./blendtreeinvalidnode/name.md)
   A textual name for the blend node.
-- [var weight: BlendWeight](blendtreeinvalidnode/weight.md)
+- [var weight: BlendWeight](./blendtreeinvalidnode/weight.md)
   The amount that an animation impacts the entity it applies to.
 
 ## Relationships
 
 ### Conforms To
-- [BlendTreeNode](blendtreenode.md)
+- [BlendTreeNode](./blendtreenode.md)
 
 ## See Also
 
-- [struct BlendTreeAnimation](blendtreeanimation.md)
+### Blend trees
+- [struct BlendTreeAnimation](./blendtreeanimation.md)
   A collection of animations on the same property that the framework blends to a single animation.
-- [protocol BlendTreeNode](blendtreenode.md)
+- [protocol BlendTreeNode](./blendtreenode.md)
   An interface for a node that’s a member of a blend tree.
-- [struct BlendTreeBlendNode](blendtreeblendnode.md)
+- [struct BlendTreeBlendNode](./blendtreeblendnode.md)
   A source node for an animation that mixes several animations to form a single animation.
-- [struct BlendTreeSourceNode](blendtreesourcenode.md)
+- [struct BlendTreeSourceNode](./blendtreesourcenode.md)
   A blend node that contains an animation.
-- [enum BlendWeight](blendweight.md)
+- [enum BlendWeight](./blendweight.md)
   A numerical representation of the impact an animation has on a scene or entity.
 
 

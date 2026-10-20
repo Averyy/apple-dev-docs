@@ -1,18 +1,19 @@
 # proto_media_ioctl
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*proto_media_ioctl)(ifnet_t ifp, protocol_family_t protocol, unsigned long command, void *argument);
 ```
 
-#### Return_value
+#### Return Value
 
 See the discussion.
 

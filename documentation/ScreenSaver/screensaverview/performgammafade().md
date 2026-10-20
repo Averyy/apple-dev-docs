@@ -1,7 +1,8 @@
 # performGammaFade()
 
 **Framework**: Screen Saver  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates whether to perform a gradual screen fade when the system starts and stops your screen saver’s animation.
 
@@ -14,13 +15,18 @@ Indicates whether to perform a gradual screen fade when the system starts and st
 class func performGammaFade() -> Bool
 ```
 
+```objc
++ (BOOL) performGammaFade;
+```
+
 #### Discussion
 
-This class method allows the screen saver view to select how the desktop visibly transitions to the screen saver view. When this method returns [`true`](https://developer.apple.com/documentation/swift/true), the screen gradually darkens before the animation begins. When it returns [`false`](https://developer.apple.com/documentation/swift/false), the screen transitions immediately to the screen saver. The latter behavior is more appropriate if the screen saver animates a screenshot of the desktop, as is the case for optical lens effects. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+This class method allows the screen saver view to select how the desktop visibly transitions to the screen saver view. When this method returns [`true`](../../Swift/true.md), the screen gradually darkens before the animation begins. When it returns [`false`](../../Swift/false.md), the screen transitions immediately to the screen saver. The latter behavior is more appropriate if the screen saver animates a screenshot of the desktop, as is the case for optical lens effects. The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [class func backingStoreType() -> NSWindow.BackingStoreType](screensaverview/backingstoretype.md)
+### Getting the preferred window behavior
+- [class func backingStoreType() -> NSWindow.BackingStoreType](./backingstoretype%28%29.md)
   Returns the type of backing store you want for your screen saver’s window.
 
 

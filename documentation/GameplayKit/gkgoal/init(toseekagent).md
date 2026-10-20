@@ -1,7 +1,8 @@
 # init(toSeekAgent:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a goal whose effect is to move an agent toward the current position of the specified other agent.
 
@@ -19,17 +20,21 @@ Creates a goal whose effect is to move an agent toward the current position of t
 convenience init(toSeekAgent agent: GKAgent)
 ```
 
+```objc
++ (instancetype) goalToSeekAgent:(GKAgent *) agent;
+```
+
 #### Return Value
 
 A new goal object.
 
 #### Discussion
 
-This goal is similar to one produced by the [`init(toInterceptAgent:maxPredictionTime:)`](gkgoal/init(tointerceptagent:maxpredictiontime:).md) method with a `maxPredictionTime` parameter of zero. Affected agents will attempt to move toward the target agent, but without taking the target’s movement into account.
+This goal is similar to one produced by the [`init(toInterceptAgent:maxPredictionTime:)`](./init%28tointerceptagent,maxpredictiontime%29.md) method with a `maxPredictionTime` parameter of zero. Affected agents will attempt to move toward the target agent, but without taking the target’s movement into account.
 
 You can also use this goal when you want an agent to move toward a target point, such as the current mouse or touch location. Create another agent that remains stationary at the target point (that is, has no velocity and no goals), and use that agent as the parameter when creating a goal with this method.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
@@ -37,11 +42,12 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## See Also
 
-- [convenience init(toFleeAgent: GKAgent)](gkgoal/init(tofleeagent:).md)
+### Creating Goals for General Movement Behavior
+- [convenience init(toFleeAgent: GKAgent)](./init%28tofleeagent%29.md)
   Creates a goal whose effect is to move an agent away from the current position of the specified other agent.
-- [convenience init(toReachTargetSpeed: Float)](gkgoal/init(toreachtargetspeed:).md)
+- [convenience init(toReachTargetSpeed: Float)](./init%28toreachtargetspeed%29.md)
   Creates a goal whose effect is to accelerate or decelerate an agent until it reaches the specified speed.
-- [convenience init(toWander: Float)](gkgoal/init(towander:).md)
+- [convenience init(toWander: Float)](./init%28towander%29.md)
   Creates a goal whose effect is to make an agent wander aimlessly, moving forward and turning at random.
 
 

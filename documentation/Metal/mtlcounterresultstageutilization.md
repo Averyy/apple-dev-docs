@@ -1,7 +1,8 @@
 # MTLCounterResultStageUtilization
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data structure for storing the data you resolve from a stage-utilization counter set.
 
@@ -19,50 +20,55 @@ The data structure for storing the data you resolve from a stage-utilization cou
 struct MTLCounterResultStageUtilization
 ```
 
+```c
+typedef struct { ... } MTLCounterResultStageUtilization;
+```
+
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Overview
 
-For steps that explain how to resolve data from a counter set, such as [`stageUtilization`](mtlcommoncounterset/stageutilization.md), see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For steps that explain how to resolve data from a counter set, such as [`stageUtilization`](./mtlcommoncounterset/stageutilization.md), see [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md).
 
 ## Topics
 
 ### Stage utilization values
-- [var totalCycles: UInt64](mtlcounterresultstageutilization/totalcycles.md)
+- [var totalCycles: UInt64](./mtlcounterresultstageutilization/totalcycles.md)
   The total number of cycles the GPU uses to run a pass.
-- [var vertexCycles: UInt64](mtlcounterresultstageutilization/vertexcycles.md)
+- [var vertexCycles: UInt64](./mtlcounterresultstageutilization/vertexcycles.md)
   The number of cycles the GPU uses to run vertex shaders during a pass.
-- [var tessellationCycles: UInt64](mtlcounterresultstageutilization/tessellationcycles.md)
+- [var tessellationCycles: UInt64](./mtlcounterresultstageutilization/tessellationcycles.md)
   The number of cycles the GPU uses to run the tessellation stage during a pass.
-- [var postTessellationVertexCycles: UInt64](mtlcounterresultstageutilization/posttessellationvertexcycles.md)
+- [var postTessellationVertexCycles: UInt64](./mtlcounterresultstageutilization/posttessellationvertexcycles.md)
   The number of cycles the GPU uses to run post-tessellation vertex shaders during a pass.
-- [var fragmentCycles: UInt64](mtlcounterresultstageutilization/fragmentcycles.md)
+- [var fragmentCycles: UInt64](./mtlcounterresultstageutilization/fragmentcycles.md)
   The number of cycles the GPU uses to run fragment shaders during a pass.
-- [var renderTargetCycles: UInt64](mtlcounterresultstageutilization/rendertargetcycles.md)
+- [var renderTargetCycles: UInt64](./mtlcounterresultstageutilization/rendertargetcycles.md)
   The number of cycles the GPU uses to write data to render targets during a render pass.
 ### Swift support
-- [init()](mtlcounterresultstageutilization/init.md)
+- [init()](./mtlcounterresultstageutilization/init%28%29.md)
   Creates a default stage-utilization result.
-- [init(totalCycles: UInt64, vertexCycles: UInt64, tessellationCycles: UInt64, postTessellationVertexCycles: UInt64, fragmentCycles: UInt64, renderTargetCycles: UInt64)](mtlcounterresultstageutilization/init(totalcycles:vertexcycles:tessellationcycles:posttessellationvertexcycles:fragmentcycles:rendertargetcycles:).md)
+- [init(totalCycles: UInt64, vertexCycles: UInt64, tessellationCycles: UInt64, postTessellationVertexCycles: UInt64, fragmentCycles: UInt64, renderTargetCycles: UInt64)](./mtlcounterresultstageutilization/init%28totalcycles,vertexcycles,tessellationcycles,posttessellationvertexcycles,fragmentcycles,rendertargetcycles%29.md)
   Creates a stage-utilization result from utilization values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+### Counter sample data output
+- [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md)
   Inspect and use the data within a GPU’s counter sample buffer by resolving it into a standard format.
-- [struct MTLCounterResultTimestamp](mtlcounterresulttimestamp.md)
+- [struct MTLCounterResultTimestamp](./mtlcounterresulttimestamp.md)
   The data structure for storing the data you resolve from a timestamp counter set.
-- [struct MTLCounterResultStatistic](mtlcounterresultstatistic.md)
+- [struct MTLCounterResultStatistic](./mtlcounterresultstatistic.md)
   The data structure for storing the data you resolve from a statistic counter set.
-- [var MTLCounterErrorValue: UInt64](mtlcountererrorvalue.md)
+- [var MTLCounterErrorValue: UInt64](./mtlcountererrorvalue.md)
   A sentinel value for an entry in a counter sample buffer that indicates the entry’s data is invalid.
 
 

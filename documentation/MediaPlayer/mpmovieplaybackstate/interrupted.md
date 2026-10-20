@@ -1,17 +1,24 @@
 # MPMoviePlaybackState.interrupted
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case interrupted
+```
+
+```c
+MPMoviePlaybackStateInterrupted
 ```
 
 #### Discussion
@@ -20,11 +27,12 @@ Playback is temporarily interrupted, perhaps because the buffer ran out of conte
 
 ## See Also
 
-- [MPMoviePlaybackState.stopped](mpmovieplaybackstate/stopped.md)
-- [MPMoviePlaybackState.playing](mpmovieplaybackstate/playing.md)
-- [MPMoviePlaybackState.paused](mpmovieplaybackstate/paused.md)
-- [MPMoviePlaybackState.seekingForward](mpmovieplaybackstate/seekingforward.md)
-- [MPMoviePlaybackState.seekingBackward](mpmovieplaybackstate/seekingbackward.md)
+### Constants
+- [MPMoviePlaybackState.stopped](./stopped.md)
+- [MPMoviePlaybackState.playing](./playing.md)
+- [MPMoviePlaybackState.paused](./paused.md)
+- [MPMoviePlaybackState.seekingForward](./seekingforward.md)
+- [MPMoviePlaybackState.seekingBackward](./seekingbackward.md)
 
 
 ---

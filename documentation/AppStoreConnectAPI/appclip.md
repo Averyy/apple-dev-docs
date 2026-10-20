@@ -1,7 +1,8 @@
 # AppClip
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A lightweight version of an app that users can launch instantly without installation, associated with a registered parent app.
 
@@ -10,16 +11,16 @@ A lightweight version of an app that users can launch instantly without installa
 
 ## Declaration
 
-```swift
+```
 object AppClip
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClip.Attributes](appclip/attributes-data.dictionary.md)
+- [object AppClip.Attributes](./appclip/attributes-data.dictionary.md)
   The attributes that describe an App Clips resource.
-- [object AppClip.Relationships](appclip/relationships-data.dictionary.md)
+- [object AppClip.Relationships](./appclip/relationships-data.dictionary.md)
   The relationships of the App Clips resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,16 +31,19 @@ object AppClip
 - `relationships` (AppClip.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `appClips`
+
 ## See Also
 
-- [object AppClipResponse](appclipresponse.md)
+### Objects
+- [object AppClipResponse](./appclipresponse.md)
   The response body for endpoints that read an App Clip associated with an app.
-- [object AppClipDefaultExperiencesResponse](appclipdefaultexperiencesresponse.md)
+- [object AppClipDefaultExperiencesResponse](./appclipdefaultexperiencesresponse.md)
   The response body for endpoints that list default App Clip experiences.
-- [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
+- [object AppClipAdvancedExperiencesResponse](./appclipadvancedexperiencesresponse.md)
   A response containing a list of configured App Clip advanced experiences.
-- [object AppClipAppClipAdvancedExperiencesLinkagesResponse](appclipappclipadvancedexperienceslinkagesresponse.md)
-- [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
+- [object AppClipAppClipAdvancedExperiencesLinkagesResponse](./appclipappclipadvancedexperienceslinkagesresponse.md)
+- [object AppClipAppClipDefaultExperiencesLinkagesResponse](./appclipappclipdefaultexperienceslinkagesresponse.md)
 
 
 ---

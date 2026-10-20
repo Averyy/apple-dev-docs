@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the environment object that creates bindings to its properties using dynamic member lookup.
 
@@ -27,9 +28,10 @@ Use the projected value to pass an environment object down a view hierarchy.
 
 ## See Also
 
-- [var wrappedValue: ObjectType](environmentobject/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: ObjectType](./wrappedvalue.md)
   The underlying value referenced by the environment object.
-- [EnvironmentObject.Wrapper](environmentobject/wrapper.md)
+- [EnvironmentObject.Wrapper](./wrapper.md)
   A wrapper of the underlying environment object that can create bindings to its properties using dynamic member lookup.
 
 

@@ -1,7 +1,8 @@
 # indexDisplayMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manner in which the index appears while the user is scrolling.
 
@@ -18,13 +19,18 @@ The manner in which the index appears while the user is scrolling.
 var indexDisplayMode: UIScrollView.IndexDisplayMode { get set }
 ```
 
+```objc
+@property (nonatomic) UIScrollViewIndexDisplayMode indexDisplayMode;
+```
+
 #### Discussion
 
-See [`UIScrollView.IndexDisplayMode`](uiscrollview/indexdisplaymode-swift.enum.md) for possible values.
+See [`UIScrollView.IndexDisplayMode`](./indexdisplaymode-swift.enum.md) for possible values.
 
 ## See Also
 
-- [UIScrollView.IndexDisplayMode](uiscrollview/indexdisplaymode-swift.enum.md)
+### Managing the index
+- [UIScrollView.IndexDisplayMode](./indexdisplaymode-swift.enum.md)
   Defines constants that represent how the index appears while the user is scrolling.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphDeploymentPlatform.visionOS
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deployment target for visionOS.
 
@@ -17,6 +18,10 @@ Deployment target for visionOS.
 
 ```swift
 case visionOS
+```
+
+```c
+MPSGraphDeploymentPlatformVisionOS
 ```
 
 

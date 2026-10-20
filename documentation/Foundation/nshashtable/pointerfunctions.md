@@ -1,7 +1,8 @@
 # pointerFunctions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pointer functions for the hash table.
 
@@ -21,9 +22,14 @@ The pointer functions for the hash table.
 var pointerFunctions: NSPointerFunctions { get }
 ```
 
+```objc
+@property (copy, readonly) NSPointerFunctions * pointerFunctions;
+```
+
 ## See Also
 
-- [class NSPointerFunctions](nspointerfunctions.md)
+### Accessing Pointer Functions
+- [class NSPointerFunctions](../nspointerfunctions.md)
   An instance of `NSPointerFunctions` defines callout functions appropriate for managing a pointer reference held somewhere else.
 
 

@@ -1,14 +1,15 @@
 # FFT_INVERSE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 FFT_INVERSE = kFFTDirection_Inverse
 ```
 

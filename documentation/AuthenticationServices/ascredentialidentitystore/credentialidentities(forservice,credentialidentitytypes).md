@@ -1,7 +1,8 @@
 # credentialIdentities(forService:credentialIdentityTypes:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves an array of all previously saved credential identities in the store for your extension.
 
@@ -24,14 +25,15 @@ An array of previously saved credential identities that match the identifier and
 
 ## Parameters
 
-- `serviceIdentifier`: An [`ASCredentialServiceIdentifier`](ascredentialserviceidentifier.md) that limits results to only that service. Pass `nil` to get credential identities for all services. Defaults to `nil`.
-- `credentialIdentityTypes`: An array of [`ASCredentialIdentityStore.IdentityTypes`](ascredentialidentitystore/identitytypes.md) that limits results to only those types. Pass `[]` to get credential identities for all types. Defaults to `[]`.
+- `serviceIdentifier`: An [`ASCredentialServiceIdentifier`](../ascredentialserviceidentifier.md) that limits results to only that service. Pass `nil` to get credential identities for all services. Defaults to `nil`.
+- `credentialIdentityTypes`: An array of [`ASCredentialIdentityStore.IdentityTypes`](./identitytypes.md) that limits results to only those types. Pass `[]` to get credential identities for all types. Defaults to `[]`.
 
 ## See Also
 
-- [class ASCredentialServiceIdentifier](ascredentialserviceidentifier.md)
+### Fetching saved credential identities
+- [class ASCredentialServiceIdentifier](../ascredentialserviceidentifier.md)
   An identifier representing a particular service for which the user needs a credential, like a web site.
-- [ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes.md)
+- [ASCredentialIdentityStore.IdentityTypes](./identitytypes.md)
   The defined identity types for use in retrieving credentials.
 
 

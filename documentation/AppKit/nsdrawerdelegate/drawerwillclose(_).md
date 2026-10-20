@@ -1,12 +1,15 @@
 # drawerWillClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate the drawer will close.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
@@ -14,21 +17,26 @@ Notifies the delegate the drawer will close.
 optional func drawerWillClose(_ notification: Notification)
 ```
 
+```objc
+- (void) drawerWillClose:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: An [`NSDrawerDelegate`](nsdrawerdelegate.md) notification sent by the default notification center immediately before the drawer is closed.
+- `notification`: An [`NSDrawerDelegate`](../nsdrawerdelegate.md) notification sent by the default notification center immediately before the drawer is closed.
 
 ## See Also
 
-- [func drawerShouldOpen(NSDrawer) -> Bool](nsdrawerdelegate/drawershouldopen(_:).md)
+### Opening and Closing Drawers
+- [func drawerShouldOpen(NSDrawer) -> Bool](./drawershouldopen%28_%29.md)
   Asks the delegate if the specified drawer should open.
-- [func drawerWillOpen(Notification)](nsdrawerdelegate/drawerwillopen(_:).md)
+- [func drawerWillOpen(Notification)](./drawerwillopen%28_%29.md)
   Notifies the delegate that the drawer will open.
-- [func drawerDidOpen(Notification)](nsdrawerdelegate/drawerdidopen(_:).md)
+- [func drawerDidOpen(Notification)](./drawerdidopen%28_%29.md)
   Notifies the delegate that the drawer has opened.
-- [func drawerShouldClose(NSDrawer) -> Bool](nsdrawerdelegate/drawershouldclose(_:).md)
+- [func drawerShouldClose(NSDrawer) -> Bool](./drawershouldclose%28_%29.md)
   Asks the delegate if the specified drawer should close.
-- [func drawerDidClose(Notification)](nsdrawerdelegate/drawerdidclose(_:).md)
+- [func drawerDidClose(Notification)](./drawerdidclose%28_%29.md)
   Notifies the delegate that the drawer has closed.
 
 

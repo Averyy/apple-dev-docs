@@ -1,7 +1,8 @@
 # init(points:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle that’s the bounding box of the specified points.
 
@@ -22,7 +23,7 @@ init(points: [Point3DFloat])
 
 #### Discussion
 
-> **Note**: The `points` array must contain at least one element.
+> **Precondition**: The `points` array must contain at least one element.
 
 ## Parameters
 

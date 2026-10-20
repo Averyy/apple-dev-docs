@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeRangeExtender
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A range extender accessory.
 
@@ -19,13 +20,18 @@ A range extender accessory.
 let HMAccessoryCategoryTypeRangeExtender: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeRangeExtender;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeBridge: String](hmaccessorycategorytypebridge.md)
+### Network
+- [let HMAccessoryCategoryTypeBridge: String](./hmaccessorycategorytypebridge.md)
   A bridge accessory.
-- [let HMAccessoryCategoryTypeAirPort: String](hmaccessorycategorytypeairport.md)
+- [let HMAccessoryCategoryTypeAirPort: String](./hmaccessorycategorytypeairport.md)
   An AirPort accessory.
-- [let HMAccessoryCategoryTypeWiFiRouter: String](hmaccessorycategorytypewifirouter.md)
+- [let HMAccessoryCategoryTypeWiFiRouter: String](./hmaccessorycategorytypewifirouter.md)
   A WiFi router accessory.
 
 

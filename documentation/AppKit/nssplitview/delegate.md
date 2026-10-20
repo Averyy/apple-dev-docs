@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The split view’s delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The split view’s delegate.
 weak var delegate: (any NSSplitViewDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSSplitViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSSplitViewDelegate](nssplitviewdelegate.md)
+### Customizing the Split View Behavior
+- [protocol NSSplitViewDelegate](../nssplitviewdelegate.md)
   A set of optional methods that a delegate of a split view implements.
 
 

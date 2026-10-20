@@ -1,7 +1,8 @@
 # distributionType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var distributionType: MPSMatrixRandomDistribution { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSMatrixRandomDistribution distributionType;
 ```
 
 

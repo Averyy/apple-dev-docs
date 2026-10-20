@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameter’s characteristic details.
 
@@ -19,21 +20,34 @@ The parameter’s characteristic details.
 var flags: AudioUnitParameterOptions { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) AudioUnitParameterOptions flags;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) AudioUnitParameterOptions flags;
+```
+
 ## See Also
 
-- [var minValue: AUValue](auparameter/minvalue.md)
+### Querying Parameter Properties
+- [var minValue: AUValue](./minvalue.md)
   The parameter’s minimum value.
-- [var maxValue: AUValue](auparameter/maxvalue.md)
+- [var maxValue: AUValue](./maxvalue.md)
   The parameter’s maximum value.
-- [var unit: AudioUnitParameterUnit](auparameter/unit.md)
+- [var unit: AudioUnitParameterUnit](./unit.md)
   The parameter’s unit of measurement.
-- [var unitName: String?](auparameter/unitname.md)
+- [var unitName: String?](./unitname.md)
   The parameter’s localized unit name.
-- [var address: AUParameterAddress](auparameter/address.md)
+- [var address: AUParameterAddress](./address.md)
   The parameter’s address.
-- [var valueStrings: [String]?](auparameter/valuestrings.md)
+- [var valueStrings: [String]?](./valuestrings.md)
   The parameter’s localized value strings.
-- [var dependentParameters: [NSNumber]?](auparameter/dependentparameters.md)
+- [var dependentParameters: [NSNumber]?](./dependentparameters.md)
   Any other parameter’s whose values may change as a side effect of this parameter’s value changing.
 
 

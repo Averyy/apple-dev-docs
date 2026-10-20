@@ -1,7 +1,8 @@
 # init(name:events:predicate:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new event trigger with the specified name, events, and predicate.
 
@@ -17,6 +18,10 @@ Creates a new event trigger with the specified name, events, and predicate.
 init(name: String, events: [HMEvent], predicate: NSPredicate?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name events:(NSArray<HMEvent *> *) events predicate:(NSPredicate *) predicate;
+```
+
 ## Parameters
 
 - `name`: The name of the event trigger.
@@ -25,7 +30,8 @@ init(name: String, events: [HMEvent], predicate: NSPredicate?)
 
 ## See Also
 
-- [init(name: String, events: [HMEvent], end: [HMEvent]?, recurrences: [DateComponents]?, predicate: NSPredicate?)](hmeventtrigger/init(name:events:end:recurrences:predicate:).md)
+### Creating an event trigger
+- [init(name: String, events: [HMEvent], end: [HMEvent]?, recurrences: [DateComponents]?, predicate: NSPredicate?)](./init%28name,events,end,recurrences,predicate%29.md)
   Creates a new event trigger with the specified name, events, end events, recurrences, and predicate.
 
 

@@ -1,7 +1,8 @@
 # init(isStoredInMemoryOnly:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a basic model configuration.
 
@@ -27,11 +28,12 @@ init(isStoredInMemoryOnly: Bool = false)
 
 ## See Also
 
-- [init(for: any PersistentModel.Type..., isStoredInMemoryOnly: Bool)](modelconfiguration/init(for:isstoredinmemoryonly:).md)
+### Creating a model configuration
+- [init(for: any PersistentModel.Type..., isStoredInMemoryOnly: Bool)](./init%28for,isstoredinmemoryonly%29.md)
   Creates a model configuration for the specified model types.
-- [init(String?, schema: Schema?, isStoredInMemoryOnly: Bool, allowsSave: Bool, groupContainer: ModelConfiguration.GroupContainer, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](modelconfiguration/init(_:schema:isstoredinmemoryonly:allowssave:groupcontainer:cloudkitdatabase:).md)
+- [init(String?, schema: Schema?, isStoredInMemoryOnly: Bool, allowsSave: Bool, groupContainer: ModelConfiguration.GroupContainer, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](./init%28_,schema,isstoredinmemoryonly,allowssave,groupcontainer,cloudkitdatabase%29.md)
   Creates a named model configuration for the specified schema.
-- [init(String?, schema: Schema?, url: URL, allowsSave: Bool, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](modelconfiguration/init(_:schema:url:allowssave:cloudkitdatabase:).md)
+- [init(String?, schema: Schema?, url: URL, allowsSave: Bool, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](./init%28_,schema,url,allowssave,cloudkitdatabase%29.md)
   Creates a named model configuration that specifies the on-disk location of the schema’s persistent storage.
 
 

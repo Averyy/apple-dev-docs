@@ -1,7 +1,8 @@
 # vDSP_distancesq
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the single-precision distance squared between two points in n-dimensional space.
 
@@ -10,13 +11,13 @@ Calculates the single-precision distance squared between two points in n-dimensi
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
 ## Declaration
 
-```swift
+```c
 extern void vDSP_distancesq(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Length __N);
 ```
 
@@ -87,11 +88,12 @@ printf("%g\n", c);
 
 ## See Also
 
-- [vDSP_vdist](vdsp_vdist.md)
+### Vector distance computation
+- [vDSP_vdist](./vdsp_vdist.md)
   Calculates the single-precision hypotenuses of right triangles with legs that are the lengths of corresponding elements of two pairs of vectors.
-- [vDSP_vdistD](vdsp_vdistd.md)
+- [vDSP_vdistD](./vdsp_vdistd.md)
   Calculates the double-precision hypotenuses of right triangles with legs that are the lengths of corresponding elements of two pairs of vectors.
-- [vDSP_distancesqD](vdsp_distancesqd.md)
+- [vDSP_distancesqD](./vdsp_distancesqd.md)
   Calculates the double-precision distance squared between two points in n-dimensional space.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the text in a browser’s text view in the given range.
@@ -18,9 +19,13 @@ Returns the text in a browser’s text view in the given range.
 func text(in range: UITextRange) -> String?
 ```
 
+```objc
+- (NSString *) textInRange:(UITextRange *) range;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 
 ---

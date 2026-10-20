@@ -1,7 +1,8 @@
 # ASAuthorization.Scope
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The kinds of contact information that can be requested from the user.
 
@@ -20,37 +21,42 @@ The kinds of contact information that can be requested from the user.
 struct Scope
 ```
 
+```c
+typedef NSString * ASAuthorizationScope;
+```
+
 #### Discussion
 
-Use one or more of these values in the [`requestedScopes`](asauthorizationopenidrequest/requestedscopes.md) array that you configure in an instance of either [`ASAuthorizationAppleIDRequest`](asauthorizationappleidrequest.md) or [`ASAuthorizationSingleSignOnRequest`](asauthorizationsinglesignonrequest.md) to request certain contact information from the user.
+Use one or more of these values in the [`requestedScopes`](../asauthorizationopenidrequest/requestedscopes.md) array that you configure in an instance of either [`ASAuthorizationAppleIDRequest`](../asauthorizationappleidrequest.md) or [`ASAuthorizationSingleSignOnRequest`](../asauthorizationsinglesignonrequest.md) to request certain contact information from the user.
 
-Inspect the [`authorizedScopes`](asauthorizationappleidcredential/authorizedscopes.md) array of an [`ASAuthorizationAppleIDCredential`](asauthorizationappleidcredential.md) instance, or the (similarly named) [`authorizedScopes`](asauthorizationsinglesignoncredential/authorizedscopes.md) array of an [`ASAuthorizationSingleSignOnCredential`](asauthorizationsinglesignoncredential.md) instance, to see what scopes the user actually authorized. This might differ from the scopes you requested.
+Inspect the [`authorizedScopes`](../asauthorizationappleidcredential/authorizedscopes.md) array of an [`ASAuthorizationAppleIDCredential`](../asauthorizationappleidcredential.md) instance, or the (similarly named) [`authorizedScopes`](../asauthorizationsinglesignoncredential/authorizedscopes.md) array of an [`ASAuthorizationSingleSignOnCredential`](../asauthorizationsinglesignoncredential.md) instance, to see what scopes the user actually authorized. This might differ from the scopes you requested.
 
 ## Topics
 
 ### Scopes
-- [static let email: ASAuthorization.Scope](asauthorization/scope/email.md)
+- [static let email: ASAuthorization.Scope](./scope/email.md)
   A scope that includes the user’s email address.
-- [static let fullName: ASAuthorization.Scope](asauthorization/scope/fullname.md)
+- [static let fullName: ASAuthorization.Scope](./scope/fullname.md)
   A scope that includes the user’s full name.
 ### Creating a Scope
-- [init(String)](asauthorization/scope/init(_:).md)
+- [init(String)](./scope/init%28_%29.md)
   Creates a scope from the given string.
-- [init(rawValue: String)](asauthorization/scope/init(rawvalue:).md)
+- [init(rawValue: String)](./scope/init%28rawvalue%29.md)
   Creates a scope from the given string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var requestedScopes: [ASAuthorization.Scope]?](asauthorizationopenidrequest/requestedscopes.md)
+### Setting the Scope
+- [var requestedScopes: [ASAuthorization.Scope]?](../asauthorizationopenidrequest/requestedscopes.md)
   The contact information to be requested from the user during authentication.
 
 

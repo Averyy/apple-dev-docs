@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.0+
@@ -18,7 +19,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let ASExtensionErrorDomain: String](asextensionerrordomain.md)
+### Identifying the error domain
+- [let ASExtensionErrorDomain: String](../asextensionerrordomain.md)
   The domain for a credential provider extension error.
 
 

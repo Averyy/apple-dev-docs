@@ -1,7 +1,8 @@
 # interactions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of interactions for the view.
 
@@ -18,18 +19,23 @@ The array of interactions for the view.
 var interactions: [any UIInteraction] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<id<UIInteraction>> * interactions;
+```
+
 ## Mentions
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
+- [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
 ## See Also
 
-- [func addInteraction(any UIInteraction)](uiview/addinteraction(_:).md)
+### Adding and removing interactions
+- [func addInteraction(any UIInteraction)](./addinteraction%28_%29.md)
   Adds an interaction to the view.
-- [func removeInteraction(any UIInteraction)](uiview/removeinteraction(_:).md)
+- [func removeInteraction(any UIInteraction)](./removeinteraction%28_%29.md)
   Removes an interaction from the view.
-- [protocol UIInteraction](uiinteraction.md)
+- [protocol UIInteraction](../uiinteraction.md)
   The protocol that an interaction implements to access the view that owns it.
 
 

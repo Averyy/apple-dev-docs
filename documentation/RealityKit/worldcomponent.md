@@ -1,7 +1,8 @@
 # WorldComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that defines a portal world.
 
@@ -23,31 +24,32 @@ struct WorldComponent
 
 This component separates an entity and its descendants from the default world, allowing it to only be visible through a portal.
 
-Use a [`PortalComponent`](portalcomponent.md) and point its [`targetEntity`](portalcomponent/targetentity.md) to this entity to render this world.
+Use a [`PortalComponent`](./portalcomponent.md) and point its [`targetEntity`](./portalcomponent/targetentity.md) to this entity to render this world.
 
-See [`PortalComponent`](portalcomponent.md) for information about example usage, clipping, crossing, and lighting.
+See [`PortalComponent`](./portalcomponent.md) for information about example usage, clipping, crossing, and lighting.
 
 ## Topics
 
 ### Initializers
-- [init()](worldcomponent/init.md)
+- [init()](./worldcomponent/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct PortalMaterial](portalmaterial.md)
+### Portals
+- [struct PortalMaterial](./portalmaterial.md)
   A material that makes the mesh part a portal to a different world.
-- [PortalMaterial.FaceCulling](portalmaterial/faceculling-swift.typealias.md)
+- [PortalMaterial.FaceCulling](./portalmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [PortalMaterial.TriangleFillMode](portalmaterial/trianglefillmode-swift.typealias.md)
+- [PortalMaterial.TriangleFillMode](./portalmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [struct PortalComponent](portalcomponent.md)
+- [struct PortalComponent](./portalcomponent.md)
   A component that turns mesh surfaces into portals to a different world.
-- [struct PortalCrossingComponent](portalcrossingcomponent.md)
+- [struct PortalCrossingComponent](./portalcrossingcomponent.md)
   A component that allows entities to cross portal boundaries.
 
 

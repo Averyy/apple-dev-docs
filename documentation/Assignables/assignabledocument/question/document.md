@@ -1,7 +1,8 @@
 # AssignableDocument.Question.Document
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The document type this element is for.
 
@@ -9,7 +10,7 @@ The document type this element is for.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,16 @@ typealias Document = AssignableDocument
 
 ## See Also
 
-- [var boxes: [AssignableDocument.QuestionBox]](assignabledocument/question/boxes.md)
+### Inspecting a question
+- [var boxes: [AssignableDocument.QuestionBox]](./boxes.md)
   The question boxes on pages that denote question regions. Treated as as set.
-- [AssignableDocument.Question.ID](assignabledocument/question/id-swift.typealias.md)
+- [AssignableDocument.Question.ID](./id-swift.typealias.md)
   A type representing the stable identity of this question.
-- [var id: AssignableDocument.Question.ID](assignabledocument/question/id-swift.property.md)
+- [var id: AssignableDocument.Question.ID](./id-swift.property.md)
   The stable identity of this question.
-- [var maxScore: Double?](assignabledocument/question/maxscore.md)
+- [var maxScore: Double?](./maxscore.md)
   An optional manual maximum point value for this question.
-- [AssignableDocument.Question.Thumbnail](assignabledocument/question/thumbnail.md)
+- [AssignableDocument.Question.Thumbnail](./thumbnail.md)
   The thumbnail type for this question.
 
 

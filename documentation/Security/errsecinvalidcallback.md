@@ -1,7 +1,8 @@
 # errSecInvalidCallback
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The callback is not valid.
 
@@ -18,6 +19,10 @@ The callback is not valid.
 
 ```swift
 var errSecInvalidCallback: OSStatus { get }
+```
+
+```c
+errSecInvalidCallback
 ```
 
 

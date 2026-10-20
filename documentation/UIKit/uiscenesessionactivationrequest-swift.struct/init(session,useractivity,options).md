@@ -1,7 +1,8 @@
 # init(session:userActivity:options:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene session activation request object with a scene session, a user activity, and options that you provide.
 
@@ -10,7 +11,7 @@ Creates a scene session activation request object with a scene session, a user a
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,7 +31,8 @@ Create an activation request with this method when you want the system to activa
 
 ## See Also
 
-- [init(role: UISceneSession.Role, userActivity: NSUserActivity?, options: UIScene.ActivationRequestOptions?)](uiscenesessionactivationrequest-swift.struct/init(role:useractivity:options:).md)
+### Creating a request
+- [init(role: UISceneSession.Role, userActivity: NSUserActivity?, options: UIScene.ActivationRequestOptions?)](./init%28role,useractivity,options%29.md)
   Creates a scene session activation request object with a role, a user activity, and options that you provide.
 
 

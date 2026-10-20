@@ -1,7 +1,8 @@
 # AXChartDescriptor.ContentDirection.leftToRight
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content direction with an x-axis that increases from left to right.
 
@@ -20,17 +21,22 @@ A content direction with an x-axis that increases from left to right.
 case leftToRight
 ```
 
+```c
+AXChartContentDirectionLeftToRight
+```
+
 ## See Also
 
-- [AXChartDescriptor.ContentDirection.rightToLeft](axchartdescriptor/contentdirection-swift.enum/righttoleft.md)
+### Content directions
+- [AXChartDescriptor.ContentDirection.rightToLeft](./righttoleft.md)
   A content direction with an x-axis that increases from right to left.
-- [AXChartDescriptor.ContentDirection.bottomToTop](axchartdescriptor/contentdirection-swift.enum/bottomtotop.md)
+- [AXChartDescriptor.ContentDirection.bottomToTop](./bottomtotop.md)
   A content direction with an x-axis that increases from bottom to top.
-- [AXChartDescriptor.ContentDirection.topToBottom](axchartdescriptor/contentdirection-swift.enum/toptobottom.md)
+- [AXChartDescriptor.ContentDirection.topToBottom](./toptobottom.md)
   A content direction with an x-axis that increases from top to bottom.
-- [AXChartDescriptor.ContentDirection.radialClockwise](axchartdescriptor/contentdirection-swift.enum/radialclockwise.md)
+- [AXChartDescriptor.ContentDirection.radialClockwise](./radialclockwise.md)
   A content direction with a radial x-axis that increases clockwise.
-- [AXChartDescriptor.ContentDirection.radialCounterClockwise](axchartdescriptor/contentdirection-swift.enum/radialcounterclockwise.md)
+- [AXChartDescriptor.ContentDirection.radialCounterClockwise](./radialcounterclockwise.md)
   A content direction with a radial x-axis that increases counterclockwise.
 
 

@@ -1,7 +1,8 @@
 # MTRPM10ConcentrationMeasurementLevelValue.low
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 case low
+```
+
+```c
+MTRPM10ConcentrationMeasurementLevelValueLow
 ```
 
 

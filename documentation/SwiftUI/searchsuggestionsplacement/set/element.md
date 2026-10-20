@@ -1,7 +1,8 @@
 # SearchSuggestionsPlacement.Set.Element
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for the elements of the set.
 

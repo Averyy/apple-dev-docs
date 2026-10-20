@@ -1,7 +1,8 @@
 # PLATFORM_SUPPORTS_AVKITCORE
 
 **Framework**: AVKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var PLATFORM_SUPPORTS_AVKITCORE: Bool { get }
+```
+
+```c
+#define PLATFORM_SUPPORTS_AVKITCORE
 ```
 
 

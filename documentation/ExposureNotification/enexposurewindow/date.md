@@ -1,19 +1,26 @@
 # date
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that the exposure occurred.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var date: Date { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDate * date;
 ```
 
 #### Discussion
@@ -24,17 +31,18 @@ The framework stores the date in Universal Coordinated Time (UTC) and rounds the
 
 ## See Also
 
-- [var calibrationConfidence: ENCalibrationConfidence](enexposurewindow/calibrationconfidence.md)
+### Getting Window Properties
+- [var calibrationConfidence: ENCalibrationConfidence](./calibrationconfidence.md)
   The transmitting device’s calibration confidence.
-- [var diagnosisReportType: ENDiagnosisReportType](enexposurewindow/diagnosisreporttype.md)
+- [var diagnosisReportType: ENDiagnosisReportType](./diagnosisreporttype.md)
   The report type of the observed diagnosis.
-- [var infectiousness: ENInfectiousness](enexposurewindow/infectiousness.md)
+- [var infectiousness: ENInfectiousness](./infectiousness.md)
   How infectious the user is, based on the number of days since the onset of symptoms.
-- [var scanInstances: [ENScanInstance]](enexposurewindow/scaninstances.md)
+- [var scanInstances: [ENScanInstance]](./scaninstances.md)
   An array of scans corresponding to a beacon associated with an exposure.
-- [var variantOfConcernType: ENVariantOfConcernType](enexposurewindow/variantofconcerntype.md)
+- [var variantOfConcernType: ENVariantOfConcernType](./variantofconcerntype.md)
   The variant of concern associated with this user.
-- [enum ENVariantOfConcernType](envariantofconcerntype.md)
+- [enum ENVariantOfConcernType](../envariantofconcerntype.md)
   A set of user-definable types that indicate variants of concern.
 
 

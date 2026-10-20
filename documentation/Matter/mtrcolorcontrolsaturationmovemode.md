@@ -1,16 +1,19 @@
 # MTRColorControlSaturationMoveMode
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 18.2
+- iPadOS 16.1+ - Deprecated in 18.2
+- Mac Catalyst 16.1+ - Deprecated in 18.2
+- macOS 13.0+ - Deprecated in 15.2
+- tvOS 16.1+ - Deprecated in 18.2
+- visionOS 1.0+ - Deprecated in 2.2
+- watchOS 9.1+ - Deprecated in 11.2
+
+> **Deprecated**: Please use MTRColorControlMoveMode
 
 ## Declaration
 
@@ -18,24 +21,28 @@
 enum MTRColorControlSaturationMoveMode
 ```
 
+```c
+enum MTRColorControlSaturationMoveMode : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRColorControlSaturationMoveMode.down](mtrcolorcontrolsaturationmovemode/down.md)
-- [MTRColorControlSaturationMoveMode.stop](mtrcolorcontrolsaturationmovemode/stop.md)
-- [MTRColorControlSaturationMoveMode.up](mtrcolorcontrolsaturationmovemode/up.md)
+- [MTRColorControlSaturationMoveMode.down](./mtrcolorcontrolsaturationmovemode/down.md)
+- [MTRColorControlSaturationMoveMode.stop](./mtrcolorcontrolsaturationmovemode/stop.md)
+- [MTRColorControlSaturationMoveMode.up](./mtrcolorcontrolsaturationmovemode/up.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcolorcontrolsaturationmovemode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcolorcontrolsaturationmovemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # keyDown
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask for key-down events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A mask for key-down events.
 static var keyDown: NSEvent.EventTypeMask { get }
 ```
 
+```c
+NSEventMaskKeyDown
+```
+
 ## See Also
 
-- [static var keyUp: NSEvent.EventTypeMask](nsevent/eventtypemask/keyup.md)
+### Getting Keyboard Events
+- [static var keyUp: NSEvent.EventTypeMask](./keyup.md)
   A mask for key-up events.
 
 

@@ -1,7 +1,8 @@
 # NEVPNStatus.invalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The associated VPN configuration doesn’t exist in the Network Extension preferences or isn’t enabled.
 
@@ -19,17 +20,22 @@ The associated VPN configuration doesn’t exist in the Network Extension prefer
 case invalid
 ```
 
+```c
+NEVPNStatusInvalid
+```
+
 ## See Also
 
-- [NEVPNStatus.disconnecting](nevpnstatus/disconnecting.md)
+### Statuses
+- [NEVPNStatus.disconnecting](./disconnecting.md)
   The VPN is in the process of disconnecting.
-- [NEVPNStatus.reasserting](nevpnstatus/reasserting.md)
+- [NEVPNStatus.reasserting](./reasserting.md)
   The VPN is in the process of reconnecting.
-- [NEVPNStatus.connected](nevpnstatus/connected.md)
+- [NEVPNStatus.connected](./connected.md)
   The VPN is connected.
-- [NEVPNStatus.connecting](nevpnstatus/connecting.md)
+- [NEVPNStatus.connecting](./connecting.md)
   The VPN is in the process of connecting.
-- [NEVPNStatus.disconnected](nevpnstatus/disconnected.md)
+- [NEVPNStatus.disconnected](./disconnected.md)
   The VPN is disconnected.
 
 

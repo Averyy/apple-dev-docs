@@ -1,7 +1,8 @@
 # WeatherChange.Direction.steady
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value will remain similar to before.
 

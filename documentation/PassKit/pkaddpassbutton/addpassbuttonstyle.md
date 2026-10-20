@@ -1,7 +1,8 @@
 # addPassButtonStyle
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant representing the button’s style.
 
@@ -17,9 +18,13 @@ A constant representing the button’s style.
 var addPassButtonStyle: PKAddPassButtonStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKAddPassButtonStyle addPassButtonStyle;
+```
+
 #### Discussion
 
-For a complete list of styles, see [`PKAddPassButtonStyle`](pkaddpassbuttonstyle.md).
+For a complete list of styles, see [`PKAddPassButtonStyle`](../pkaddpassbuttonstyle.md).
 
 
 ---

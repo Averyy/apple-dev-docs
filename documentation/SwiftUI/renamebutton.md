@@ -1,7 +1,8 @@
 # RenameButton
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button that triggers a standard rename action.
 
@@ -23,7 +24,7 @@ struct RenameButton<Label> where Label : View
 
 #### Overview
 
-A rename button receives its action from the environment. Use the [`renameAction(_:)`](view/renameaction(_:).md) modifier to set the action. The system disables the button if you don’t define an action.
+A rename button receives its action from the environment. Use the [`renameAction(_:)`](./view/renameaction%28_%29.md) modifier to set the action. The system disables the button if you don’t define an action.
 
 ```swift
 struct RowView: View {
@@ -60,19 +61,20 @@ ContentView()
 ## Topics
 
 ### Creating an rename button
-- [init()](renamebutton/init.md)
+- [init()](./renamebutton/init%28%29.md)
   Creates a rename button.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct EditButton](editbutton.md)
+### Creating special-purpose buttons
+- [struct EditButton](./editbutton.md)
   A button that toggles the edit mode environment value.
-- [struct PasteButton](pastebutton.md)
+- [struct PasteButton](./pastebutton.md)
   A system button that reads items from the pasteboard and delivers it to a closure.
 
 

@@ -1,7 +1,8 @@
 # AccessibilitySettings.Feature.captionStyles
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 
 ```swift
 case captionStyles
+```
+
+```c
+AXSettingsFeatureCaptionStyles
 ```
 
 

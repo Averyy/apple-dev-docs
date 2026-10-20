@@ -1,7 +1,8 @@
 # deleteRecord(withID:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a specific record.
 
@@ -11,7 +12,7 @@ Deletes a specific record.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -29,7 +30,7 @@ The identifier of the deleted record.
 
 Deleting a record may cause additional deletions if other records in the database reference the deleted record. CloudKit doesn’t provide the identifiers of any additional records it deletes. This method throws an error if the request fails, such as when the record doesn’t exist, the network is unavailable or the device doesn’t have an active iCloud account.
 
-For information on a more convenient way to delete records, see [`modifyRecords(saving:deleting:savePolicy:atomically:)`](ckdatabase/modifyrecords(saving:deleting:savepolicy:atomically:).md).
+For information on a more convenient way to delete records, see [`modifyRecords(saving:deleting:savePolicy:atomically:)`](./modifyrecords%28saving,deleting,savepolicy,atomically%29.md).
 
 ## Parameters
 

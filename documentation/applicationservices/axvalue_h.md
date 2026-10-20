@@ -1,6 +1,7 @@
 # AXValue.h
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 This header contains functions and data types for working with AXValueType wrappers.
 
@@ -8,9 +9,9 @@ This header contains functions and data types for working with AXValueType wrapp
 
 See the Overview section above for header-level documentation.
 
-##### 1678821
+##### Overview
 
-###### 1678832
+###### Included Headers
 
 - <AvailabilityMacros.h>
 - <CoreServices/CoreServices.h>
@@ -19,13 +20,13 @@ See the Overview section above for header-level documentation.
 ## Topics
 
 ### Miscellaneous
-- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](1459351-axvaluecreate.md)
-- [func AXValueGetType(AXValue) -> AXValueType](1460911-axvaluegettype.md)
-- [func AXValueGetTypeID() -> CFTypeID](1460780-axvaluegettypeid.md)
-- [func AXValueGetValue(AXValue, AXValueType, UnsafeMutableRawPointer) -> Bool](1462933-axvaluegetvalue.md)
+- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](./api-1459351-axvaluecreate.md)
+- [func AXValueGetType(AXValue) -> AXValueType](./api-1460911-axvaluegettype.md)
+- [func AXValueGetTypeID() -> CFTypeID](./api-1460780-axvaluegettypeid.md)
+- [func AXValueGetValue(AXValue, AXValueType, UnsafeMutableRawPointer) -> Bool](./api-1462933-axvaluegetvalue.md)
 ### Data Types
-- [class AXValue](axvalue.md)
-- [enum AXValueType](axvaluetype.md)
+- [class AXValue](./axvalue.md)
+- [enum AXValueType](./axvaluetype.md)
 
 
 ---

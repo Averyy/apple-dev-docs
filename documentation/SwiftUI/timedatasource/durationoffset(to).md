@@ -1,7 +1,8 @@
 # durationOffset(to:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A time data source that produces the offset between `Date.now` and the given `date` as a `Duration`.
 

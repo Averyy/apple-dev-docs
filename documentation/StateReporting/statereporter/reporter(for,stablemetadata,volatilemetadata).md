@@ -1,7 +1,8 @@
 # reporter(for:stableMetadata:volatileMetadata:)
 
 **Framework**: StateReporting  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the reporter instance unique to the given domain and metadata types.
 
@@ -22,7 +23,7 @@ static func reporter(for domain: String, stableMetadata stableMetadataType: Stab
 
 ## Mentions
 
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](../getting-started-with-statereporting.md)
 
 #### Return Value
 

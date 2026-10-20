@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context that belongs to the specified model container.
 
@@ -23,7 +24,7 @@ init(_ container: ModelContainer)
 
 #### Discussion
 
-Use the context’s [`container`](modelcontext/container.md) property to access the model container after initializtion.
+Use the context’s [`container`](./container.md) property to access the model container after initializtion.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ Use the context’s [`container`](modelcontext/container.md) property to access 
 
 ## See Also
 
-- [class ModelContainer](modelcontainer.md)
+### Creating a model context
+- [class ModelContainer](../modelcontainer.md)
   An object that manages an app’s schema and model storage configuration.
 
 

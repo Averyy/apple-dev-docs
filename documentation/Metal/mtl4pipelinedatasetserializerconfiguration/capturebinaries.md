@@ -1,7 +1,8 @@
 # captureBinaries
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enables serializing pipeline binary functions.
 
@@ -19,9 +20,13 @@ Enables serializing pipeline binary functions.
 static var captureBinaries: MTL4PipelineDataSetSerializerConfiguration { get }
 ```
 
+```c
+MTL4PipelineDataSetSerializerConfigurationCaptureBinaries
+```
+
 #### Discussion
 
-Set this mask to use [`serializeAsArchiveAndFlush(url:)`](mtl4pipelinedatasetserializer/serializeasarchiveandflush(url:).md).
+Set this mask to use [`serializeAsArchiveAndFlush(url:)`](../mtl4pipelinedatasetserializer/serializeasarchiveandflush%28url%29.md).
 
 
 ---

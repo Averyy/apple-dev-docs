@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Transforms this element with the specified transform.
@@ -23,13 +24,20 @@ mutating func applyTransform(_ transform: CGAffineTransform)
 
 - `transform`: The transform applied to the element. Skew is ignored.
 
+## Default Implementations
+
+### Markup Implementations
+- [func applyTransform(CGAffineTransform)](./applytransform%28_%29-9je6a.md)
+  Transforms this element with the specified transform.
+
 ## See Also
 
-- [var frame: CGRect](markup/frame.md)
+### Laying out
+- [var frame: CGRect](./frame.md)
   The element’s unrotated frame.
-- [var rotation: CGFloat](markup/rotation.md)
+- [var rotation: CGFloat](./rotation.md)
   The element’s rotation around the center of its frame.
-- [var renderFrame: CGRect](markup/renderframe.md)
+- [var renderFrame: CGRect](./renderframe.md)
   The unrotated frame that tightly fits the rendered contents of the element.
 
 

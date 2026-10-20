@@ -2,17 +2,24 @@
 
 **Framework**: Notification Center  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a user cleared the search field.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
 ```swift
 func widgetSearchTermCleared(_ controller: NCWidgetSearchViewController)
+```
+
+```objc
+- (void) widgetSearchTermCleared:(NCWidgetSearchViewController *) controller;
 ```
 
 #### Discussion
@@ -25,7 +32,8 @@ When the delegate receives this message, it should stop the current search.
 
 ## See Also
 
-- [func widgetSearch(NCWidgetSearchViewController, resultSelected: Any)](ncwidgetsearchviewdelegate/widgetsearch(_:resultselected:).md)
+### Responding to User Choices
+- [func widgetSearch(NCWidgetSearchViewController, resultSelected: Any)](./widgetsearch%28_,resultselected%29.md)
   Tells the delegate that a user chose the specified search result.
 
 

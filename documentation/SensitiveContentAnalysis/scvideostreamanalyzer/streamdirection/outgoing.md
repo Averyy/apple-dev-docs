@@ -1,7 +1,8 @@
 # SCVideoStreamAnalyzer.StreamDirection.outgoing
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that refers to a video stream sent to another device.
 
@@ -16,13 +17,18 @@ An option that refers to a video stream sent to another device.
 case outgoing
 ```
 
+```c
+SCVideoStreamAnalyzerStreamDirectionOutgoing
+```
+
 #### Discussion
 
 This option refers to the stream that originates from the device’s camera.
 
 ## See Also
 
-- [SCVideoStreamAnalyzer.StreamDirection.incoming](scvideostreamanalyzer/streamdirection/incoming.md)
+### Identifying a stream direction
+- [SCVideoStreamAnalyzer.StreamDirection.incoming](./incoming.md)
   An option that refers to a video stream from another device.
 
 

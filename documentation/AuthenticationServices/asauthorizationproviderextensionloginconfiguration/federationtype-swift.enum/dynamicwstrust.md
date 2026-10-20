@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicWSTrust
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 13.3+
@@ -12,16 +13,21 @@
 case dynamicWSTrust
 ```
 
+```c
+ASAuthorizationProviderExtensionFederationTypeDynamicWSTrust
+```
+
 ## Mentions
 
-- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
-- [Performing a preauthentication request](performing-a-preauthentication-request.md)
-- [Performing a WS-Trust metadata exchange data (MEX) request](performing-a-ws-trust-metadata-exchange-data-mex-request.md)
+- [Configuring authentication with the identity provider (IdP)](../../configuring-authentication-with-the-identity-provider-idp.md)
+- [Performing a preauthentication request](../../performing-a-preauthentication-request.md)
+- [Performing a WS-Trust metadata exchange data (MEX) request](../../performing-a-ws-trust-metadata-exchange-data-mex-request.md)
 
 ## See Also
 
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.none](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/none.md)
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/wstrust.md)
+### Enumeration Cases
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.none](./none.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust](./wstrust.md)
 
 
 ---

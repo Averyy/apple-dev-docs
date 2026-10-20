@@ -1,7 +1,8 @@
 # errSecInvalidIdentifier
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifier is not valid.
 
@@ -18,6 +19,10 @@ The identifier is not valid.
 
 ```swift
 var errSecInvalidIdentifier: OSStatus { get }
+```
+
+```c
+errSecInvalidIdentifier
 ```
 
 

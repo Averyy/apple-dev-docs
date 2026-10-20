@@ -1,7 +1,8 @@
 # update(_:with:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -20,9 +21,10 @@ func update<InputSequence>(_ transformer: inout Self.Transformer, with input: In
 
 ## See Also
 
-- [func makeTransformer() -> Self.Transformer](updatablesupervisedestimator/maketransformer.md)
+### Transforming
+- [func makeTransformer() -> Self.Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout Self.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](updatablesupervisedestimator/update(_:with:eventhandler:).md)
+- [func update<InputSequence>(inout Self.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
 
 

@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cursor’s image.
 
@@ -13,25 +14,47 @@ The cursor’s image.
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+var image: UIImage { get }
+```
+
+*macOS*
+
 ```swift
 var image: NSImage { get }
 ```
 
+*Mac Catalyst*
+
+```objc
+@property (strong, readonly) UIImage * image;
+```
+
+*macOS*
+
+```objc
+@property (strong, readonly) NSImage * image;
+```
+
 #### Discussion
 
-The cursor image or `nil` if none exists. Note that an `NSCursor` object is immutable: you cannot change its image after it’s created. Instead, use [`init(image:hotSpot:)`](nscursor/init(image:hotspot:).md) to create a new cursor with the new settings.
+The cursor image or `nil` if none exists. Note that an `NSCursor` object is immutable: you cannot change its image after it’s created. Instead, use [`init(image:hotSpot:)`](./init%28image,hotspot%29.md) to create a new cursor with the new settings.
 
 ## See Also
 
-- [init(image: UIImage, hotSpot: NSPoint)](nscursor/init(image:hotspot:).md)
+### Related Documentation
+- [init(image: UIImage, hotSpot: NSPoint)](./init%28image,hotspot%29.md)
   Initializes a cursor with the given image and hot spot.
-- [var hotSpot: NSPoint](nscursor/hotspot.md)
+### Setting cursor attributes
+- [var hotSpot: NSPoint](./hotspot.md)
   The position of the click location within the cursor.
-- [class func hide()](nscursor/hide.md)
+- [class func hide()](./hide%28%29.md)
   Makes the current cursor invisible.
-- [class func unhide()](nscursor/unhide.md)
-  Negates an earlier call to [`hide()`](nscursor/hide().md) by showing the current cursor.
-- [class func setHiddenUntilMouseMoves(Bool)](nscursor/sethiddenuntilmousemoves(_:).md)
+- [class func unhide()](./unhide%28%29.md)
+  Negates an earlier call to [`hide()`](./hide%28%29.md) by showing the current cursor.
+- [class func setHiddenUntilMouseMoves(Bool)](./sethiddenuntilmousemoves%28_%29.md)
   Sets whether the cursor is hidden until the mouse moves.
 
 

@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var kAFPServerIcon: Int](kafpservericon.md)
-- [var kAppleTalkIcon: Int](kappletalkicon.md)
-- [var kAppleTalkZoneIcon: Int](kappletalkzoneicon.md)
-- [var kFTPServerIcon: Int](kftpservericon.md)
-- [var kGenericNetworkIcon: Int](kgenericnetworkicon.md)
-- [var kHTTPServerIcon: Int](khttpservericon.md)
-- [var kIPFileServerIcon: Int](kipfileservericon.md)
+- [var kAFPServerIcon: Int](../../kafpservericon.md)
+- [var kAppleTalkIcon: Int](../../kappletalkicon.md)
+- [var kAppleTalkZoneIcon: Int](../../kappletalkzoneicon.md)
+- [var kFTPServerIcon: Int](../../kftpservericon.md)
+- [var kGenericNetworkIcon: Int](../../kgenericnetworkicon.md)
+- [var kHTTPServerIcon: Int](../../khttpservericon.md)
+- [var kIPFileServerIcon: Int](../../kipfileservericon.md)
 
 
 ---

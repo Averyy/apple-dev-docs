@@ -1,7 +1,8 @@
 # useLockInterval
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the keychain automatically locks after a certain period of time.
 
@@ -15,9 +16,13 @@ A Boolean value indicating whether the keychain automatically locks after a cert
 var useLockInterval: DarwinBoolean
 ```
 
+```c
+Boolean useLockInterval;
+```
+
 #### Discussion
 
-Use [`lockInterval`](seckeychainsettings/lockinterval.md) to indicate the time in seconds after which the keychain should automatically be locked.
+Use [`lockInterval`](./lockinterval.md) to indicate the time in seconds after which the keychain should automatically be locked.
 
 
 ---

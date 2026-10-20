@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Property_Resolution
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Property_Resolution = 0x0313
 ```
 

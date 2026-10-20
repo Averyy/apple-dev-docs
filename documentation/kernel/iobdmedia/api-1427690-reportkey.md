@@ -1,14 +1,15 @@
 # reportKey
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.12
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn reportKey(IOMemoryDescriptor *buffer, UInt8 keyClass, UInt32 address, UInt8 grantID, UInt8 format);
 ```
 

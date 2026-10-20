@@ -1,12 +1,13 @@
 # NSCustomImageRep
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that uses a delegate object to render an image from a custom format.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,47 @@ An object that uses a delegate object to render an image from a custom format.
 class NSCustomImageRep
 ```
 
+```objc
+@interface NSCustomImageRep : NSImageRep
+```
+
 #### Overview
 
-When called upon to produce an image, an [`NSCustomImageRep`](nscustomimagerep.md) sends a message to its delegate to do the actual drawing. You can use this class to support custom image formats without going to the trouble of subclassing [`NSImageRep`](nsimagerep.md) directly.
+When called upon to produce an image, an [`NSCustomImageRep`](./nscustomimagerep.md) sends a message to its delegate to do the actual drawing. You can use this class to support custom image formats without going to the trouble of subclassing [`NSImageRep`](./nsimagerep.md) directly.
 
 ## Topics
 
 ### Creating Representations of Images in Custom Formats
-- [init(draw: Selector, delegate: Any)](nscustomimagerep/init(draw:delegate:).md)
+- [init(draw: Selector, delegate: Any)](./nscustomimagerep/init%28draw,delegate%29.md)
   Returns a representation of an image initialized with the specified delegate information.
-- [init(size: NSSize, flipped: Bool, drawingHandler: (NSRect) -> Bool)](nscustomimagerep/init(size:flipped:drawinghandler:).md)
+- [init(size: NSSize, flipped: Bool, drawingHandler: (NSRect) -> Bool)](./nscustomimagerep/init%28size,flipped,drawinghandler%29.md)
   Initializes a representation of an image of the specified size and flipped status, using a block to draw its content.
 ### Getting Drawing Handlers
-- [var drawingHandler: ((NSRect) -> Bool)?](nscustomimagerep/drawinghandler.md)
+- [var drawingHandler: ((NSRect) -> Bool)?](./nscustomimagerep/drawinghandler.md)
   The destination rectangle of the drawing handler block.
 ### Getting Information About Images
-- [var delegate: AnyObject?](nscustomimagerep/delegate.md)
+- [var delegate: AnyObject?](./nscustomimagerep/delegate.md)
   The delegate object that renders the image for the image representation.
-- [var drawSelector: Selector?](nscustomimagerep/drawselector.md)
+- [var drawSelector: Selector?](./nscustomimagerep/drawselector.md)
   The selector for the delegate’s drawing method.
 ### Initializers
-- [init(drawSelector: Selector, delegate: Any)](nscustomimagerep/init(drawselector:delegate:).md)
+- [init(drawSelector: Selector, delegate: Any)](./nscustomimagerep/init%28drawselector,delegate%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSImageRep](nsimagerep.md)
+- [NSImageRep](./nsimagerep.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

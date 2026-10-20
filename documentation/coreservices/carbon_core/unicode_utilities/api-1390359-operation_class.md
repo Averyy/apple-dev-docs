@@ -11,7 +11,7 @@ The locales and collation variants available for collation operations can be det
 ## Topics
 
 ### Constants
-- [var kUnicodeCollationClass: Int](kunicodecollationclass.md)
+- [var kUnicodeCollationClass: Int](../../kunicodecollationclass.md)
   Identifies collation as a class of operations.
 
 

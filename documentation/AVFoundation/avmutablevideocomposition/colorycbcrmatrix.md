@@ -1,7 +1,8 @@
 # colorYCbCrMatrix
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The YCbCr matrix used for video composition.
 
@@ -19,19 +20,24 @@ The YCbCr matrix used for video composition.
 var colorYCbCrMatrix: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * colorYCbCrMatrix;
+```
+
 ## Mentions
 
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
 #### Discussion
 
-The default value is `nil`. When the value of this property is `nil`, the source’s matrix is propagated and used. Valid values are those suitable for [`AVVideoYCbCrMatrixKey`](avvideoycbcrmatrixkey.md).
+The default value is `nil`. When the value of this property is `nil`, the source’s matrix is propagated and used. Valid values are those suitable for [`AVVideoYCbCrMatrixKey`](../avvideoycbcrmatrixkey.md).
 
 ## See Also
 
-- [var colorPrimaries: String?](avmutablevideocomposition/colorprimaries.md)
+### Configuring color
+- [var colorPrimaries: String?](./colorprimaries.md)
   The color primaries used for video composition.
-- [var colorTransferFunction: String?](avmutablevideocomposition/colortransferfunction.md)
+- [var colorTransferFunction: String?](./colortransferfunction.md)
   The transfer function used for video composition.
 
 

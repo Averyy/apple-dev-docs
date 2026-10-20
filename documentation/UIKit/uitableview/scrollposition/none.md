@@ -1,16 +1,17 @@
 # UITableView.ScrollPosition.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The table view scrolls the row of interest to be fully visible with a minimum of movement.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ The table view scrolls the row of interest to be fully visible with a minimum of
 case none
 ```
 
+```c
+UITableViewScrollPositionNone
+```
+
 #### Discussion
 
-If the row is already fully visible, no scrolling occurs. For example, if the row is above the visible area, the behavior is identical to that specified by [`UITableView.ScrollPosition.top`](uitableview/scrollposition/top.md). This is the default.
+If the row is already fully visible, no scrolling occurs. For example, if the row is above the visible area, the behavior is identical to that specified by [`UITableView.ScrollPosition.top`](./top.md). This is the default.
 
 ## See Also
 
-- [UITableView.ScrollPosition.top](uitableview/scrollposition/top.md)
+### Constants
+- [UITableView.ScrollPosition.top](./top.md)
   The table view scrolls the row of interest to the top of the visible table view.
-- [UITableView.ScrollPosition.middle](uitableview/scrollposition/middle.md)
+- [UITableView.ScrollPosition.middle](./middle.md)
   The table view scrolls the row of interest to the middle of the visible table view.
-- [UITableView.ScrollPosition.bottom](uitableview/scrollposition/bottom.md)
+- [UITableView.ScrollPosition.bottom](./bottom.md)
   The table view scrolls the row of interest to the bottom of the visible table view.
 
 

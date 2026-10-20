@@ -1,21 +1,23 @@
 # Array Indices
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Index
-- [kOSArrayAppend](kosarrayappend.md)
+- [kOSArrayAppend](./kosarrayappend.md)
 
 ## See Also
 
-- [OSArrayGetValue](osarraygetvalue.md)
-- [OSArrayGetStringValue](osarraygetstringvalue.md)
-- [OSArrayGetUInt64Value](osarraygetuint64value.md)
-- [OSArraySetValue](osarraysetvalue.md)
-- [OSArraySetStringValue](osarraysetstringvalue.md)
-- [OSArraySetUInt64Value](osarraysetuint64value.md)
-- [OSArrayPtr](osarrayptr.md)
+### Getting and Setting Values
+- [OSArrayGetValue](./osarraygetvalue.md)
+- [OSArrayGetStringValue](./osarraygetstringvalue.md)
+- [OSArrayGetUInt64Value](./osarraygetuint64value.md)
+- [OSArraySetValue](./osarraysetvalue.md)
+- [OSArraySetStringValue](./osarraysetstringvalue.md)
+- [OSArraySetUInt64Value](./osarraysetuint64value.md)
+- [OSArrayPtr](./osarrayptr.md)
 
 
 ---

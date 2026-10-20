@@ -1,7 +1,8 @@
 # init(prompt:instructions:generationSchema:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model sample input with the given prompt, instructions, and schema.
 

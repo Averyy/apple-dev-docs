@@ -1,7 +1,8 @@
 # gpsDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of the GPS measurement associated with the location.
 
@@ -19,11 +20,16 @@ The time of the GPS measurement associated with the location.
 var gpsDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * gpsDate;
+```
+
 ## See Also
 
-- [var startDate: Date](cmodometerdata/startdate.md)
+### Getting date and times
+- [var startDate: Date](./startdate.md)
   The time that the device starts recording the odometer data.
-- [var endDate: Date](cmodometerdata/enddate.md)
+- [var endDate: Date](./enddate.md)
   The time that the device stops recording the odometer data.
 
 

@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.ModelAlgorithmType.transferLearning(featureExtractor:classifier:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm that leverages the knowledge of a general-purpose model built into the operating system.
 
@@ -32,9 +33,10 @@ You typically use this transfer-learning algorithm to train an object detector i
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.FeatureExtractorType](mlsoundclassifier/modelparameters-swift.struct/featureextractortype.md)
+### Designating an algorithm
+- [MLSoundClassifier.ModelParameters.FeatureExtractorType](../featureextractortype.md)
   The feature-extractor options for a sound-classifier training algorithm.
-- [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
+- [MLSoundClassifier.ModelParameters.ClassifierType](../classifiertype.md)
   The classifier options for a sound classifier training algorithm.
 
 

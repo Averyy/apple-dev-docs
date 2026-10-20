@@ -1,7 +1,8 @@
 # DefaultTabViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default tab view style.
 
@@ -23,31 +24,32 @@ struct DefaultTabViewStyle
 
 #### Overview
 
-Use [`automatic`](tabviewstyle/automatic.md) to construct this style.
+Use [`automatic`](./tabviewstyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the tab view style
-- [init()](defaulttabviewstyle/init.md)
+- [init()](./defaulttabviewstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [TabViewStyle](tabviewstyle.md)
+- [TabViewStyle](./tabviewstyle.md)
 
 ## See Also
 
-- [struct SidebarAdaptableTabViewStyle](sidebaradaptabletabviewstyle.md)
+### Supporting types
+- [struct SidebarAdaptableTabViewStyle](./sidebaradaptabletabviewstyle.md)
   A tab bar style that adapts to each platform.
-- [struct TabBarOnlyTabViewStyle](tabbaronlytabviewstyle.md)
+- [struct TabBarOnlyTabViewStyle](./tabbaronlytabviewstyle.md)
   A tab view style that displays a tab bar when possible.
-- [struct GroupedTabViewStyle](groupedtabviewstyle.md)
+- [struct GroupedTabViewStyle](./groupedtabviewstyle.md)
   A tab view style that displays a tab bar that groups its tabs together.
-- [struct PageTabViewStyle](pagetabviewstyle.md)
+- [struct PageTabViewStyle](./pagetabviewstyle.md)
   A `TabViewStyle` that displays a paged scrolling `TabView`.
-- [struct VerticalPageTabViewStyle](verticalpagetabviewstyle.md)
+- [struct VerticalPageTabViewStyle](./verticalpagetabviewstyle.md)
   A `TabViewStyle` that displays a vertical `TabView` interaction and appearance.
-- [struct CarouselTabViewStyle](carouseltabviewstyle.md)
+- [struct CarouselTabViewStyle](./carouseltabviewstyle.md)
   A style that implements the carousel interaction and appearance.
 
 

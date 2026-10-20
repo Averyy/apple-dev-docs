@@ -1,7 +1,8 @@
 # init(bundleIdentifier:onInterruption:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Launches a networking extension process asynchronously.
 
@@ -29,7 +30,8 @@ The system guarantees that the process launched when this initializer returns.
 
 ## See Also
 
-- [func invalidate()](networkingprocess/invalidate.md)
+### Creating and invalidating extension processes
+- [func invalidate()](./invalidate%28%29.md)
   Stops the networking process.
 
 

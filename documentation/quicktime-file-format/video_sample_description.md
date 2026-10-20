@@ -1,13 +1,14 @@
 # Video sample description ('stsd')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that contains information that defines how to interpret video media data.
 
 #### Overview
 
-The video sample description contains information that defines how to interpret video media data. A video sample description begins with the four fields described in the ‘General structure of a sample description’ section of [`Sample description atom`](sample_description_atom.md).
+The video sample description contains information that defines how to interpret video media data. A video sample description begins with the four fields described in the ‘General structure of a sample description’ section of [`Sample description atom`](./sample_description_atom.md).
 
 > **Note**: Some video sample descriptions contain an optional 4-byte terminator with all bytes set to `0`, following all other sample description and sample description extension data. If this optional terminator is present, the sample description size value will include it. It is important to check the sample description size when parsing: more than or fewer than these four optional bytes, if present in the size value, indicates a malformed sample description.
 
@@ -45,48 +46,49 @@ The data format field of a video sample description indicates the type of compre
 ## Topics
 
 ### Data fields
-- [Sample description size](video_sample_description/sample_description_size.md)
+- [Sample description size](./video_sample_description/sample_description_size.md)
   A 32-bit integer indicating the number of bytes in the sample description.
-- [Data format](video_sample_description/data_format.md)
+- [Data format](./video_sample_description/data_format.md)
   A 32-bit integer indicating the format of the stored data.
-- [Reserved](video_sample_description/reserved.md)
+- [Reserved](./video_sample_description/reserved.md)
   Six bytes.
-- [Data reference index](video_sample_description/data_reference_index.md)
+- [Data reference index](./video_sample_description/data_reference_index.md)
   A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description.
-- [Version](video_sample_description/version.md)
+- [Version](./video_sample_description/version.md)
   A 16-bit integer indicating the version number of the compressed data.
-- [Revision level](video_sample_description/revision_level.md)
+- [Revision level](./video_sample_description/revision_level.md)
   A 16-bit integer.
-- [Vendor](video_sample_description/vendor.md)
+- [Vendor](./video_sample_description/vendor.md)
   A 32-bit integer that specifies the developer of the compressor that generated the compressed data.
-- [Temporal quality](video_sample_description/temporal_quality.md)
+- [Temporal quality](./video_sample_description/temporal_quality.md)
   A 32-bit integer that indicates the degree of temporal compression.
-- [Spatial quality](video_sample_description/spatial_quality.md)
+- [Spatial quality](./video_sample_description/spatial_quality.md)
   A 32-bit integer that indicates the degree of spatial compression.
-- [Width](video_sample_description/width.md)
+- [Width](./video_sample_description/width.md)
   A 16-bit integer that specifies the width of the source image in pixels.
-- [Height](video_sample_description/height.md)
+- [Height](./video_sample_description/height.md)
   A 16-bit integer that specifies the height of the source image in pixels.
-- [Horizontal resolution](video_sample_description/horizontal_resolution.md)
+- [Horizontal resolution](./video_sample_description/horizontal_resolution.md)
   A 32-bit fixed-point number containing the horizontal resolution of the image in pixels per inch.
-- [Vertical resolution](video_sample_description/vertical_resolution.md)
+- [Vertical resolution](./video_sample_description/vertical_resolution.md)
   A 32-bit fixed-point number containing the vertical resolution of the image in pixels per inch.
-- [Data size](video_sample_description/data_size.md)
+- [Data size](./video_sample_description/data_size.md)
   A 32-bit integer.
-- [Frame count](video_sample_description/frame_count.md)
+- [Frame count](./video_sample_description/frame_count.md)
   A 16-bit integer that indicates how many frames of compressed data are stored in each sample.
-- [Compressor name](video_sample_description/compressor_name.md)
+- [Compressor name](./video_sample_description/compressor_name.md)
   A 32-byte Pascal string containing the name of the compressor that created the image, such as “jpeg”.
-- [Depth](video_sample_description/depth.md)
+- [Depth](./video_sample_description/depth.md)
   A 16-bit integer that indicates the pixel depth of the compressed image.
-- [Color table ID](video_sample_description/color_table_id.md)
+- [Color table ID](./video_sample_description/color_table_id.md)
   A 16-bit integer that identifies which color table to use.
 
 ## See Also
 
-- [Video sample description extensions](video_sample_description_extensions.md)
+### Storing video data
+- [Video sample description extensions](./video_sample_description_extensions.md)
   Extend video sample descriptions by appending other atoms.
-- [Video sample data](video_sample_data.md)
+- [Video sample data](./video_sample_data.md)
   Store video sample data in different formats, depending on the type of compression you use.
 
 

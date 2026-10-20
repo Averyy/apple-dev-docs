@@ -1,7 +1,8 @@
 # KeyPress.Phases
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for matching different phases of a key-press event.
 
@@ -22,30 +23,31 @@ struct Phases
 ## Topics
 
 ### Getting the phases
-- [static let down: KeyPress.Phases](keypress/phases/down.md)
+- [static let down: KeyPress.Phases](./phases/down.md)
   The user pressed down on a key.
-- [static let up: KeyPress.Phases](keypress/phases/up.md)
+- [static let up: KeyPress.Phases](./phases/up.md)
   The user released a key.
-- [static let `repeat`: KeyPress.Phases](keypress/phases/repeat.md)
+- [static let `repeat`: KeyPress.Phases](./phases/repeat.md)
   The user held a key down to issue a sequence of repeating events.
-- [static let all: KeyPress.Phases](keypress/phases/all.md)
+- [static let all: KeyPress.Phases](./phases/all.md)
   A value that matches all key press phases.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [let phase: KeyPress.Phases](keypress/phase.md)
+### Getting the phase of the keypress
+- [let phase: KeyPress.Phases](./phase.md)
   The phase of the key-press event (`.down`, `.repeat`, or `.up`).
 
 

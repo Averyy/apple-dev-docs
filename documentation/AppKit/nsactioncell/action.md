@@ -1,12 +1,13 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s action-message selector.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Returns the receiver’s action-message selector.
 var action: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL action;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nsactioncell/target.md)
+### Assigning the Target and Action
+- [var target: AnyObject?](./target.md)
   Returns the receiver’s target object.
 
 

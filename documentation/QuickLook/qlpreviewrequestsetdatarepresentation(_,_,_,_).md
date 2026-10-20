@@ -1,12 +1,15 @@
 # QLPreviewRequestSetDataRepresentation(_:_:_:_:)
 
 **Framework**: Quick Look  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the preview request to data saved within the document or to dynamically generated data.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 12.0
+
+> **Deprecated**: Use a QLPreviewingController in a Preview Extension to provide previews for your file types.
 
 ## Declaration
 
@@ -14,11 +17,15 @@ Sets the preview request to data saved within the document or to dynamically gen
 func QLPreviewRequestSetDataRepresentation(_ preview: QLPreviewRequest!, _ data: CFData!, _ contentTypeUTI: CFString!, _ properties: CFDictionary!)
 ```
 
+```c
+extern void QLPreviewRequestSetDataRepresentation(QLPreviewRequestRef preview, CFDataRef data, CFStringRef contentTypeUTI, CFDictionaryRef properties);
+```
+
 #### Discussion
 
 This function returns preview data to the client. The data is either extracted from a document where the document’s application has saved it, or it’s dynamically generated. How Quick Look handles the data depends upon the value of `contentTypeUTI`. The content data of the preview must be of a native Quick Look type. Currently supported UTIs for these types are: `kUTTypeImage`, `kUTTypePDF`, `kUTTypeHTML`, `kUTTypeXML`, `kUTTypePlainText`, `kUTTypeRTF`, `kUTTypeMovie`, and `kUTTypeAudio`.
 
-If the UTI type is `kUTTypeHTML`, you can have WebKit handle the layout and display of your preview. You must provide the HTML in `data` plus any attachments (for example, Address Book cards, Mail messages, or Omni Outliner documents) in the `properties` dictionary. This dictionary takes [`kQLPreviewPropertyAttachmentsKey`](kqlpreviewpropertyattachmentskey.md) as its key and consists of one ore more subdictionaries (one per attachment). Each subdictionary uses an arbitrary string identifier as a key; the attachment should be referenced within the HTML data using the kQLPreviewContentIDScheme URL scheme (“cid”) and the identifier as the URL resource specifier—for example, “cid:the_identifier”. The keys of the subdictionary properties are [`kQLPreviewPropertyMIMETypeKey`](kqlpreviewpropertymimetypekey.md), [`kQLPreviewPropertyTextEncodingNameKey`](kqlpreviewpropertytextencodingnamekey.md), and [`kQLPreviewPropertyAttachmentDataKey`](kqlpreviewpropertyattachmentdatakey.md).
+If the UTI type is `kUTTypeHTML`, you can have WebKit handle the layout and display of your preview. You must provide the HTML in `data` plus any attachments (for example, Address Book cards, Mail messages, or Omni Outliner documents) in the `properties` dictionary. This dictionary takes [`kQLPreviewPropertyAttachmentsKey`](./kqlpreviewpropertyattachmentskey.md) as its key and consists of one ore more subdictionaries (one per attachment). Each subdictionary uses an arbitrary string identifier as a key; the attachment should be referenced within the HTML data using the kQLPreviewContentIDScheme URL scheme (“cid”) and the identifier as the URL resource specifier—for example, “cid:the_identifier”. The keys of the subdictionary properties are [`kQLPreviewPropertyMIMETypeKey`](./kqlpreviewpropertymimetypekey.md), [`kQLPreviewPropertyTextEncodingNameKey`](./kqlpreviewpropertytextencodingnamekey.md), and [`kQLPreviewPropertyAttachmentDataKey`](./kqlpreviewpropertyattachmentdatakey.md).
 
 ##### Special Considerations
 
@@ -33,29 +40,30 @@ Thread-safety: This function should be called in the same thread as the preview 
 
 ## See Also
 
-- [func QLPreviewRequestCopyContentUTI(QLPreviewRequest!) -> Unmanaged<CFString>!](qlpreviewrequestcopycontentuti(_:).md)
+### Requesting previews
+- [func QLPreviewRequestCopyContentUTI(QLPreviewRequest!) -> Unmanaged<CFString>!](./qlpreviewrequestcopycontentuti%28_%29.md)
   Returns the UTI for the preview request.
-- [func QLPreviewRequestCopyOptions(QLPreviewRequest!) -> Unmanaged<CFDictionary>!](qlpreviewrequestcopyoptions(_:).md)
+- [func QLPreviewRequestCopyOptions(QLPreviewRequest!) -> Unmanaged<CFDictionary>!](./qlpreviewrequestcopyoptions%28_%29.md)
   Returns the options specified for the preview request.
-- [func QLPreviewRequestCopyURL(QLPreviewRequest!) -> Unmanaged<CFURL>!](qlpreviewrequestcopyurl(_:).md)
+- [func QLPreviewRequestCopyURL(QLPreviewRequest!) -> Unmanaged<CFURL>!](./qlpreviewrequestcopyurl%28_%29.md)
   Returns the URL of the document for which a preview is requested.
-- [func QLPreviewRequestCreateContext(QLPreviewRequest!, CGSize, Bool, CFDictionary!) -> Unmanaged<CGContext>!](qlpreviewrequestcreatecontext(_:_:_:_:).md)
+- [func QLPreviewRequestCreateContext(QLPreviewRequest!, CGSize, Bool, CFDictionary!) -> Unmanaged<CGContext>!](./qlpreviewrequestcreatecontext%28_,_,_,_%29.md)
   Creates a graphics context to draw the preview in.
-- [func QLPreviewRequestCreatePDFContext(QLPreviewRequest!, UnsafePointer<CGRect>!, CFDictionary!, CFDictionary!) -> Unmanaged<CGContext>!](qlpreviewrequestcreatepdfcontext(_:_:_:_:).md)
+- [func QLPreviewRequestCreatePDFContext(QLPreviewRequest!, UnsafePointer<CGRect>!, CFDictionary!, CFDictionary!) -> Unmanaged<CGContext>!](./qlpreviewrequestcreatepdfcontext%28_,_,_,_%29.md)
   Creates a PDF context suitable to draw a multi-page preview.
-- [func QLPreviewRequestFlushContext(QLPreviewRequest!, CGContext!)](qlpreviewrequestflushcontext(_:_:).md)
+- [func QLPreviewRequestFlushContext(QLPreviewRequest!, CGContext!)](./qlpreviewrequestflushcontext%28_,_%29.md)
   Flush the context and sets the preview response.
-- [func QLPreviewRequestGetDocumentObject(QLPreviewRequest!) -> UnsafeRawPointer!](qlpreviewrequestgetdocumentobject(_:).md)
+- [func QLPreviewRequestGetDocumentObject(QLPreviewRequest!) -> UnsafeRawPointer!](./qlpreviewrequestgetdocumentobject%28_%29.md)
   Returns the object that’s stored as part of a preview request.
-- [func QLPreviewRequestSetDocumentObject(QLPreviewRequest!, UnsafeRawPointer!, UnsafePointer<CFArrayCallBacks>!)](qlpreviewrequestsetdocumentobject(_:_:_:).md)
+- [func QLPreviewRequestSetDocumentObject(QLPreviewRequest!, UnsafeRawPointer!, UnsafePointer<CFArrayCallBacks>!)](./qlpreviewrequestsetdocumentobject%28_,_,_%29.md)
   Stores an object as part of a preview request.
-- [func QLPreviewRequestGetGeneratorBundle(QLPreviewRequest!) -> Unmanaged<CFBundle>!](qlpreviewrequestgetgeneratorbundle(_:).md)
+- [func QLPreviewRequestGetGeneratorBundle(QLPreviewRequest!) -> Unmanaged<CFBundle>!](./qlpreviewrequestgetgeneratorbundle%28_%29.md)
   Get the bundle of the generator receiving the preview request.
-- [func QLPreviewRequestGetTypeID() -> CFTypeID](qlpreviewrequestgettypeid().md)
+- [func QLPreviewRequestGetTypeID() -> CFTypeID](./qlpreviewrequestgettypeid%28%29.md)
   Gets the type identifier for the `QLPreviewReqest` opaque type.
-- [func QLPreviewRequestIsCancelled(QLPreviewRequest!) -> Bool](qlpreviewrequestiscancelled(_:).md)
+- [func QLPreviewRequestIsCancelled(QLPreviewRequest!) -> Bool](./qlpreviewrequestiscancelled%28_%29.md)
   Returns whether the preview request has been cancelled by the client.
-- [func QLPreviewRequestSetURLRepresentation(QLPreviewRequest!, CFURL!, CFString!, CFDictionary!)](qlpreviewrequestseturlrepresentation(_:_:_:_:).md)
+- [func QLPreviewRequestSetURLRepresentation(QLPreviewRequest!, CFURL!, CFString!, CFDictionary!)](./qlpreviewrequestseturlrepresentation%28_,_,_,_%29.md)
   Sets the contents of the file at the given URL as the response to the preview request.
 
 

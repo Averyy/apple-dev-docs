@@ -1,7 +1,8 @@
 # UIMessageConversationContext.MessageEntry.DataKind.other
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message contains other data, such as data that represents a sticker or a payment.
 
@@ -16,11 +17,16 @@ The message contains other data, such as data that represents a sticker or a pay
 case other
 ```
 
+```c
+UIMessageConversationEntryDataKindOther
+```
+
 ## See Also
 
-- [UIMessageConversationContext.MessageEntry.DataKind.attachment](uimessageconversationcontext/messageentry/datakind-swift.enum/attachment.md)
+### Kinds of data in a message
+- [UIMessageConversationContext.MessageEntry.DataKind.attachment](./attachment.md)
   The message contains an attachment, such as an image or file.
-- [UIMessageConversationContext.MessageEntry.DataKind.text](uimessageconversationcontext/messageentry/datakind-swift.enum/text.md)
+- [UIMessageConversationContext.MessageEntry.DataKind.text](./text.md)
   The message contains text.
 
 

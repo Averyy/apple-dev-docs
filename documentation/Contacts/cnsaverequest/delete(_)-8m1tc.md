@@ -1,7 +1,8 @@
 # delete(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a contact from the contact store.
 
@@ -18,15 +19,20 @@ Deletes a contact from the contact store.
 func delete(_ contact: CNMutableContact)
 ```
 
+```objc
+- (void) deleteContact:(CNMutableContact *) contact;
+```
+
 ## Parameters
 
 - `contact`: Contact to be delete.
 
 ## See Also
 
-- [func add(CNMutableContact, toContainerWithIdentifier: String?)](cnsaverequest/add(_:tocontainerwithidentifier:)-7eut4.md)
+### Saving contact changes
+- [func add(CNMutableContact, toContainerWithIdentifier: String?)](./add%28_,tocontainerwithidentifier%29-7eut4.md)
   Adds the specified contact to the contact store.
-- [func update(CNMutableContact)](cnsaverequest/update(_:)-3gaig.md)
+- [func update(CNMutableContact)](./update%28_%29-3gaig.md)
   Updates an existing contact in the contact store.
 
 

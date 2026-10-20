@@ -1,7 +1,8 @@
 # faces
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains a buffer of vertex indices of the geometry’s faces.
 
@@ -15,9 +16,13 @@ An object that contains a buffer of vertex indices of the geometry’s faces.
 var faces: ARGeometryElement { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ARGeometryElement * faces;
+```
+
 #### Discussion
 
-Each element of the buffer-based array is a three-index combination that forms a unique triangle, or *face*. The index refers to that vertex’s position in the [`vertices`](armeshgeometry/vertices.md) array. The [`count`](argeometryelement/count.md) of this property represents the number of faces.
+Each element of the buffer-based array is a three-index combination that forms a unique triangle, or *face*. The index refers to that vertex’s position in the [`vertices`](./vertices.md) array. The [`count`](../argeometryelement/count.md) of this property represents the number of faces.
 
 The following code demonstrates getting the vertices of a particular face:
 
@@ -38,13 +43,14 @@ extension ARMeshGeometry {
 
 ## See Also
 
-- [var classification: ARGeometrySource?](armeshgeometry/classification.md)
+### Getting Geometry Information
+- [var classification: ARGeometrySource?](./classification.md)
   Classification for each face in the mesh.
-- [enum ARMeshClassification](armeshclassification.md)
+- [enum ARMeshClassification](../armeshclassification.md)
   Enumeration of different classes of real-world objects that ARKit can identify.
-- [class ARGeometryElement](argeometryelement.md)
+- [class ARGeometryElement](../argeometryelement.md)
   A container for index data, such as vertex indices of a face.
-- [var normals: ARGeometrySource](armeshgeometry/normals.md)
+- [var normals: ARGeometrySource](./normals.md)
   Rays that define which direction is outside for each face.
 
 

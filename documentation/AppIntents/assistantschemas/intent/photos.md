@@ -1,7 +1,8 @@
 # photos
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer photo and video functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer photo and video function
 ```swift
 static var photos: some AssistantSchemas.PhotosIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

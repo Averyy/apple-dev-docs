@@ -1,7 +1,8 @@
 # defaultNumberOfPlayers
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default number of players for the match.
 
@@ -20,19 +21,24 @@ The default number of players for the match.
 var defaultNumberOfPlayers: Int { get set }
 ```
 
+```objc
+@property (assign) NSUInteger defaultNumberOfPlayers;
+```
+
 #### Discussion
 
-GameKit uses the default number of players to present the available slots in the matchmaking user interface. The player can choose to override this to add or remove slots. If you don’t set this property, GameKit uses the value of the [`maxPlayers`](gkmatchrequest/maxplayers.md) property as the default number of players.
+GameKit uses the default number of players to present the available slots in the matchmaking user interface. The player can choose to override this to add or remove slots. If you don’t set this property, GameKit uses the value of the [`maxPlayers`](./maxplayers.md) property as the default number of players.
 
 ## See Also
 
-- [class func maxPlayersAllowedForMatch(of: GKMatchType) -> Int](gkmatchrequest/maxplayersallowedformatch(of:).md)
+### Restricting the number of players
+- [class func maxPlayersAllowedForMatch(of: GKMatchType) -> Int](./maxplayersallowedformatch%28of%29.md)
   Returns the maximum number of players allowed in the match request for a given match type.
-- [enum GKMatchType](gkmatchtype.md)
+- [enum GKMatchType](../gkmatchtype.md)
   The kind of match managed by Game Center.
-- [var minPlayers: Int](gkmatchrequest/minplayers.md)
+- [var minPlayers: Int](./minplayers.md)
   The minimum number of players that can join the match.
-- [var maxPlayers: Int](gkmatchrequest/maxplayers.md)
+- [var maxPlayers: Int](./maxplayers.md)
   The maximum number of players that can join the match.
 
 

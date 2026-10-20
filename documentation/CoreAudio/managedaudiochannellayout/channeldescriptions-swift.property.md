@@ -1,7 +1,8 @@
 # channelDescriptions
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `AudioChannelDescription`s that describe the layout.
 
@@ -11,7 +12,7 @@ The `AudioChannelDescription`s that describe the layout.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

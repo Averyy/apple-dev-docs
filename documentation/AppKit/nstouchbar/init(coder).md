@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Touch Bar object from a coder object provided by a storyboard or NIB file.
 
@@ -17,13 +18,18 @@ Creates a Touch Bar object from a coder object provided by a storyboard or NIB f
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 #### Return Value
 
 A fully initialized Touch Bar object, or `nil` if the coder doesn’t define a Touch Bar object.
 
 ## See Also
 
-- [init()](nstouchbar/init.md)
+### Creating a bar
+- [init()](./init%28%29.md)
   Creates a Touch Bar object.
 
 

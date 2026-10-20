@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Model I/O  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 9.0+
@@ -17,11 +18,16 @@
 subscript(key: Protocol) -> (any MDLComponent)? { get set }
 ```
 
+```objc
+- (id<MDLComponent>) objectForKeyedSubscript:(Protocol *) key;
+```
+
 ## See Also
 
-- [func atPath(String) -> MDLObject](mdlobject/atpath(_:).md)
+### Object Instancing
+- [func atPath(String) -> MDLObject](./atpath%28_%29.md)
   Returns the child object at the specified path.
-- [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](mdlobject/enumeratechildobjects(of:root:using:stoppointer:).md)
+- [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](./enumeratechildobjects%28of,root,using,stoppointer%29.md)
   Executes the specified block using each object in this object’s child hierarchy.
 
 

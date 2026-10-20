@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingMode.realtime
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An engine that operates under real-time constraints and doesn’t make blocking calls while rendering.
 
@@ -20,13 +21,18 @@ An engine that operates under real-time constraints and doesn’t make blocking 
 case realtime
 ```
 
+```c
+AVAudioEngineManualRenderingModeRealtime
+```
+
 #### Discussion
 
-You can only use the block-based render mechanism in this mode. See [`manualRenderingBlock`](avaudioengine/manualrenderingblock.md).
+You can only use the block-based render mechanism in this mode. See [`manualRenderingBlock`](../avaudioengine/manualrenderingblock.md).
 
 ## See Also
 
-- [AVAudioEngineManualRenderingMode.offline](avaudioenginemanualrenderingmode/offline.md)
+### Choosing a rendering mode
+- [AVAudioEngineManualRenderingMode.offline](./offline.md)
   An engine that operates in an offline mode.
 
 

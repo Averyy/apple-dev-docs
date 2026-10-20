@@ -1,14 +1,15 @@
 # audit_token_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct audit_token_t {
     ...
 } audit_token_t;
@@ -17,7 +18,7 @@ typedef struct audit_token_t {
 ## Topics
 
 ### Instance Properties
-- [val](audit_token_t/1529161-val.md)
+- [val](./audit_token_t/api-1529161-val.md)
 
 
 ---

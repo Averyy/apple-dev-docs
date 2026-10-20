@@ -1,7 +1,8 @@
 # GLKMatrix3SetColumn(_:_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new `3x3` matrix with one column replaced by a new vector.
 
@@ -17,6 +18,10 @@ Returns a new `3x3` matrix with one column replaced by a new vector.
 func GLKMatrix3SetColumn(_ matrix: GLKMatrix3, _ column: Int32, _ vector: GLKVector3) -> GLKMatrix3
 ```
 
+```c
+static GLKMatrix3 GLKMatrix3SetColumn(GLKMatrix3 matrix, int column, GLKVector3 vector);
+```
+
 #### Return Value
 
 A new matrix.
@@ -29,13 +34,14 @@ A new matrix.
 
 ## See Also
 
-- [func GLKMatrix3GetMatrix2(GLKMatrix3) -> GLKMatrix2](glkmatrix3getmatrix2(_:).md)
+### Working With Parts of a Matrix
+- [func GLKMatrix3GetMatrix2(GLKMatrix3) -> GLKMatrix2](./glkmatrix3getmatrix2%28_%29.md)
   Returns the upper-left `2x2` section of a `3x3` matrix.
-- [func GLKMatrix3GetColumn(GLKMatrix3, Int32) -> GLKVector3](glkmatrix3getcolumn(_:_:).md)
+- [func GLKMatrix3GetColumn(GLKMatrix3, Int32) -> GLKVector3](./glkmatrix3getcolumn%28_,_%29.md)
   Retrieves a column from a `3x3` matrix.
-- [func GLKMatrix3GetRow(GLKMatrix3, Int32) -> GLKVector3](glkmatrix3getrow(_:_:).md)
+- [func GLKMatrix3GetRow(GLKMatrix3, Int32) -> GLKVector3](./glkmatrix3getrow%28_,_%29.md)
   Retrieves a row from a `3x3` matrix.
-- [func GLKMatrix3SetRow(GLKMatrix3, Int32, GLKVector3) -> GLKMatrix3](glkmatrix3setrow(_:_:_:).md)
+- [func GLKMatrix3SetRow(GLKMatrix3, Int32, GLKVector3) -> GLKMatrix3](./glkmatrix3setrow%28_,_,_%29.md)
   Returns a new `3x3` matrix with one row replaced by a new vector.
 
 

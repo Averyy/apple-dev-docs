@@ -1,7 +1,8 @@
 # keycount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The keyboard key count.
 
@@ -10,13 +11,14 @@ The keyboard key count.
 
 ## Declaration
 
-```swift
+```c
 UInt16 keycount;
 ```
 
 ## See Also
 
-- [usbkeycode](iousbkeyboarddata/1546173-usbkeycode.md)
+### Getting the Properties
+- [usbkeycode](./api-1546173-usbkeycode.md)
   The USB key code.
 
 

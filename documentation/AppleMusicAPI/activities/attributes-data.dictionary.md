@@ -1,7 +1,8 @@
 # Activities.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for an activities resource.
 
@@ -10,7 +11,7 @@ The attributes for an activities resource.
 
 ## Declaration
 
-```swift
+```
 object Activities.Attributes
 ```
 
@@ -23,7 +24,8 @@ object Activities.Attributes
 
 ## See Also
 
-- [object Activities.Relationships](activities/relationships-data.dictionary.md)
+### Related Objects
+- [object Activities.Relationships](./relationships-data.dictionary.md)
   The relationships for an activity resource.
 
 

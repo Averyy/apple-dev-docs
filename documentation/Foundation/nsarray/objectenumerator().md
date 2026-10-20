@@ -1,7 +1,8 @@
 # objectEnumerator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an enumerator object that lets you access each object in the array.
 
@@ -18,6 +19,10 @@ Returns an enumerator object that lets you access each object in the array.
 
 ```swift
 func objectEnumerator() -> NSEnumerator
+```
+
+```objc
+- (NSEnumerator<id> *) objectEnumerator;
 ```
 
 #### Return Value
@@ -41,27 +46,29 @@ while (anObject = [enumerator nextObject]) {
 
 When you use this method with mutable subclasses of `NSArray`, you must not modify the array during enumeration.
 
-It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](nsfastenumeration.md)). Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
+It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)). Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
 
 ## See Also
 
-- [func nextObject() -> Any?](nsenumerator/nextobject.md)
+### Related Documentation
+- [func nextObject() -> Any?](../nsenumerator/nextobject%28%29.md)
   Returns the next object from the collection being enumerated.
-- [func contains(Any) -> Bool](nsarray/contains(_:).md)
+### Querying an Array
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the array.
-- [var count: Int](nsarray/count.md)
+- [var count: Int](./count.md)
   The number of objects in the array.
-- [var firstObject: Any?](nsarray/firstobject.md)
+- [var firstObject: Any?](./firstobject.md)
   The first object in the array.
-- [var lastObject: Any?](nsarray/lastobject.md)
+- [var lastObject: Any?](./lastobject.md)
   The last object in the array.
-- [func object(at: Int) -> Any](nsarray/object(at:).md)
+- [func object(at: Int) -> Any](./object%28at%29.md)
   Returns the object located at the specified index.
-- [subscript(Int) -> Any](nsarray/subscript(_:).md)
+- [subscript(Int) -> Any](./subscript%28_%29.md)
   Returns the object at the specified index.
-- [func objects(at: IndexSet) -> [Any]](nsarray/objects(at:).md)
+- [func objects(at: IndexSet) -> [Any]](./objects%28at%29.md)
   Returns an array containing the objects in the array at the indexes specified by a given index set.
-- [func reverseObjectEnumerator() -> NSEnumerator](nsarray/reverseobjectenumerator.md)
+- [func reverseObjectEnumerator() -> NSEnumerator](./reverseobjectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array, in reverse order.
 
 

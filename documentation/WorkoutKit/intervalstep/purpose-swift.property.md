@@ -1,7 +1,8 @@
 # purpose
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The purpose of the interval step.
 
@@ -20,7 +21,8 @@ var purpose: IntervalStep.Purpose
 
 ## See Also
 
-- [var step: WorkoutStep](intervalstep/step.md)
+### Accessing step data
+- [var step: WorkoutStep](./step.md)
   The workout step to perform.
 
 

@@ -1,7 +1,8 @@
 # sharingServicePicker(_:sharingServicesForItems:proposedSharingServices:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to specify which services to make available from the sharing service picker.
 
@@ -14,13 +15,17 @@ Asks the delegate to specify which services to make available from the sharing s
 optional func sharingServicePicker(_ sharingServicePicker: NSSharingServicePicker, sharingServicesForItems items: [Any], proposedSharingServices proposedServices: [NSSharingService]) -> [NSSharingService]
 ```
 
+```objc
+- (NSArray<NSSharingService *> *) sharingServicePicker:(NSSharingServicePicker *) sharingServicePicker sharingServicesForItems:(NSArray *) items proposedSharingServices:(NSArray<NSSharingService *> *) proposedServices;
+```
+
 #### Return Value
 
 An array of services to include in the sharing service picker.
 
 #### Discussion
 
-Use this method to remove default services, add custom services, or reorder the existing services before the picker appears onscreen. Unless you don’t intend to change the proposed services, create a new mutable array and fill it with the services that are appropriate for the specified set of items. The following example appends a custom [`NSSharingService`](nssharingservice.md) object to the proposed list of services.
+Use this method to remove default services, add custom services, or reorder the existing services before the picker appears onscreen. Unless you don’t intend to change the proposed services, create a new mutable array and fill it with the services that are appropriate for the specified set of items. The following example appends a custom [`NSSharingService`](../nssharingservice.md) object to the proposed list of services.
 
 ```objc
         NSMutableArray *sharingServices = [proposedServices mutableCopy];

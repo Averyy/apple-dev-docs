@@ -1,7 +1,8 @@
 # init(value:total:label:currentValueLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view for showing determinate progress, with a custom label.
 
@@ -21,6 +22,8 @@ nonisolated
 init<V>(value: V?, total: V = 1.0, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> CurrentValueLabel) where V : BinaryFloatingPoint
 ```
 
+Available when `Label` conforms to `View` and `CurrentValueLabel` conforms to `View`.
+
 #### Discussion
 
 If the value is non-`nil`, but outside the range of `0.0` through `total`, the progress view pins the value to those limits, rounding to the nearest possible bound. A value of `nil` represents indeterminate progress, in which case the progress view ignores `total`.
@@ -34,13 +37,14 @@ If the value is non-`nil`, but outside the range of `0.0` through `total`, the p
 
 ## See Also
 
-- [init(Progress)](progressview/init(_:)-l5vj.md)
+### Creating a determinate progress view
+- [init(Progress)](./init%28_%29-l5vj.md)
   Creates a progress view for visualizing the given progress instance.
-- [init<V>(value: V?, total: V)](progressview/init(value:total:).md)
+- [init<V>(value: V?, total: V)](./init%28value,total%29.md)
   Creates a progress view for showing determinate progress.
-- [init(_:value:total:)](progressview/init(_:value:total:).md)
+- [init(_:value:total:)](./init%28_,value,total%29.md)
   Creates a progress view for showing determinate progress that generates its label from a localized string resource.
-- [init<V>(value: V?, total: V, label: () -> Label)](progressview/init(value:total:label:).md)
+- [init<V>(value: V?, total: V, label: () -> Label)](./init%28value,total,label%29.md)
   Creates a progress view for showing determinate progress, with a custom label.
 
 

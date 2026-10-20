@@ -1,7 +1,8 @@
 # normalizedPath
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detected contours as a path object in normalized coordinates.
 
@@ -22,9 +23,10 @@ var normalizedPath: CGPath { get }
 
 ## See Also
 
-- [var contourCount: Int](contoursobservation/contourcount.md)
+### Inspecting an observation
+- [var contourCount: Int](./contourcount.md)
   The total number of detected contours.
-- [var topLevelContours: [ContoursObservation.Contour]](contoursobservation/toplevelcontours.md)
+- [var topLevelContours: [ContoursObservation.Contour]](./toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
 
 

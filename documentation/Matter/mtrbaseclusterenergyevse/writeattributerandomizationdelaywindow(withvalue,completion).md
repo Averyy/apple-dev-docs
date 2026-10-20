@@ -1,7 +1,8 @@
 # writeAttributeRandomizationDelayWindow(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeRandomizationDelayWindow(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeRandomizationDelayWindow(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeRandomizationDelayWindowWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

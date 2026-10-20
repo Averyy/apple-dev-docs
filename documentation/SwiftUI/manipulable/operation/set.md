@@ -1,7 +1,8 @@
 # Manipulable.Operation.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of manipulable operations.
 
@@ -17,31 +18,31 @@ struct Set
 ## Topics
 
 ### Initializers
-- [init(Manipulable.Operation)](manipulable/operation/set/init(_:).md)
+- [init(Manipulable.Operation)](./set/init%28_%29.md)
   Creates a set of operations containing only the specified operation.
 ### Type Properties
-- [static let all: Manipulable.Operation.Set](manipulable/operation/set/all.md)
+- [static let all: Manipulable.Operation.Set](./set/all.md)
   A set of all available operations
-- [static let primaryRotation: Manipulable.Operation.Set](manipulable/operation/set/primaryrotation.md)
+- [static let primaryRotation: Manipulable.Operation.Set](./set/primaryrotation.md)
   A primary rotation operation.
-- [static let scale: Manipulable.Operation.Set](manipulable/operation/set/scale.md)
+- [static let scale: Manipulable.Operation.Set](./set/scale.md)
   A scale operation.
-- [static let secondaryRotation: Manipulable.Operation.Set](manipulable/operation/set/secondaryrotation.md)
+- [static let secondaryRotation: Manipulable.Operation.Set](./set/secondaryrotation.md)
   A secondary rotation operation.
-- [static let translate: Manipulable.Operation.Set](manipulable/operation/set/translate.md)
+- [static let translate: Manipulable.Operation.Set](./set/translate.md)
   A translation operation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../../Swift/hashable.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

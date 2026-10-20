@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateU0LTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The U0L timeout.
 
@@ -10,7 +11,7 @@ The U0L timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateU0LTimeout = 0
 ```
 

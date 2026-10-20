@@ -1,7 +1,8 @@
 # isPortraitEffectsMatteDeliverySupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the capture output currently supports delivery of a portrait effects matte.
 
@@ -17,11 +18,16 @@ A Boolean value indicating whether the capture output currently supports deliver
 var isPortraitEffectsMatteDeliverySupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPortraitEffectsMatteDeliverySupported) BOOL portraitEffectsMatteDeliverySupported;
+```
+
 ## See Also
 
-- [var isPortraitEffectsMatteDeliveryEnabled: Bool](avcapturephotooutput/isportraiteffectsmattedeliveryenabled.md)
+### Configuring Portrait Effects matte capture
+- [var isPortraitEffectsMatteDeliveryEnabled: Bool](./isportraiteffectsmattedeliveryenabled.md)
   A Boolean value indicating whether the capture output generates a portrait effects matte.
-- [var portraitEffectsMatte: AVPortraitEffectsMatte?](avcapturephoto/portraiteffectsmatte.md)
+- [var portraitEffectsMatte: AVPortraitEffectsMatte?](../avcapturephoto/portraiteffectsmatte.md)
   The portrait effects matte captured with the photo.
 
 

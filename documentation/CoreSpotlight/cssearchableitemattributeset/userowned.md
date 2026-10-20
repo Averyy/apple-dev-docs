@@ -1,7 +1,8 @@
 # userOwned
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the user purchased or owns the item.
 
@@ -18,15 +19,20 @@ A value that indicates the user purchased or owns the item.
 var userOwned: NSNumber? { get set }
 ```
 
+```objc
+@property (strong, getter=isUserOwned, nullable) NSNumber * userOwned;
+```
+
 #### Discussion
 
 Examples of items to set this property on include songs and movies the user purchases.
 
 ## See Also
 
-- [var userCreated: NSNumber?](cssearchableitemattributeset/usercreated.md)
+### Describing user involvement
+- [var userCreated: NSNumber?](./usercreated.md)
   A value that indicates the user created the item.
-- [var userCurated: NSNumber?](cssearchableitemattributeset/usercurated.md)
+- [var userCurated: NSNumber?](./usercurated.md)
   A value that indicates the user selected the item.
 
 

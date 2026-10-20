@@ -1,9 +1,10 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an instance of [`ProminentDetailNavigationSplitViewStyle`](prominentdetailnavigationsplitviewstyle.md).
+Creates an instance of [`ProminentDetailNavigationSplitViewStyle`](../prominentdetailnavigationsplitviewstyle.md).
 
 **Availability**:
 - iOS 16.0+
@@ -23,7 +24,7 @@ Creates an instance of [`ProminentDetailNavigationSplitViewStyle`](prominentdeta
 
 #### Discussion
 
-You can also use [`prominentDetail`](navigationsplitviewstyle/prominentdetail.md) to construct this style.
+You can also use [`prominentDetail`](../navigationsplitviewstyle/prominentdetail.md) to construct this style.
 
 
 ---

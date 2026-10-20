@@ -1,7 +1,8 @@
 # position
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var position: PHASEAutomaticHeadTrackingFlags { get }
+```
+
+```c
+PHASEAutomaticHeadTrackingFlagPosition
 ```
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Vision request with no completion handler.
 
@@ -19,9 +20,14 @@ Creates a new Vision request with no completion handler.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(completionHandler: VNRequestCompletionHandler?)](vnrequest/init(completionhandler:).md)
+### Initializing a Request
+- [init(completionHandler: VNRequestCompletionHandler?)](./init%28completionhandler%29.md)
   Creates a new Vision request with an optional completion handler.
 
 

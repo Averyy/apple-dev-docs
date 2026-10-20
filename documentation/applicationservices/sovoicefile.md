@@ -1,7 +1,8 @@
 # soVoiceFile
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get voice file reference information.
 

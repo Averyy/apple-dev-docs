@@ -1,17 +1,22 @@
 # draw(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the receiver’s image that appears in the supplied rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func draw(_ rect: NSRect)
+```
+
+```objc
+- (void) drawRect:(NSRect) rect;
 ```
 
 ## Parameters
@@ -20,11 +25,13 @@ func draw(_ rect: NSRect)
 
 ## See Also
 
-- [var imageRectInRuler: NSRect](nsrulermarker/imagerectinruler.md)
+### Related Documentation
+- [var imageRectInRuler: NSRect](./imagerectinruler.md)
   The rectangle occupied by the receiver’s image.
-- [var isDragging: Bool](nsrulermarker/isdragging.md)
+### Drawing and event handling
+- [var isDragging: Bool](./isdragging.md)
   A Boolean that indicates whether the receiver is being dragged.
-- [func trackMouse(with: NSEvent, adding: Bool) -> Bool](nsrulermarker/trackmouse(with:adding:).md)
+- [func trackMouse(with: NSEvent, adding: Bool) -> Bool](./trackmouse%28with,adding%29.md)
   Handles user manipulation of the receiver in its ruler view.
 
 

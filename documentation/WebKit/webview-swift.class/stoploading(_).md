@@ -1,18 +1,23 @@
 # stopLoading(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that stops the loading of any web frame content managed by the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @IBAction
 func stopLoading(_ sender: Any?)
+```
+
+```objc
+- (void) stopLoading:(id) sender;
 ```
 
 #### Discussion
@@ -25,13 +30,14 @@ Stops any content in the process of being loaded by the main frame or any of its
 
 ## See Also
 
-- [func takeStringURLFrom(Any?)](webview-swift.class/takestringurlfrom(_:).md)
+### Loading Content
+- [func takeStringURLFrom(Any?)](./takestringurlfrom%28_%29.md)
   Sets the receiver’s current location by obtaining a URL string from the sender.
-- [func reload(Any?)](webview-swift.class/reload(_:).md)
+- [func reload(Any?)](./reload%28_%29.md)
   An action method that reloads the current page.
-- [func reloadFromOrigin(Any?)](webview-swift.class/reloadfromorigin(_:).md)
+- [func reloadFromOrigin(Any?)](./reloadfromorigin%28_%29.md)
   Action method that performs an end-to-end revalidation using cache-validating conditionals if possible.
-- [var estimatedProgress: Double](webview-swift.class/estimatedprogress.md)
+- [var estimatedProgress: Double](./estimatedprogress.md)
   An estimate, as a percentage, of the amount of content that is currently loaded.
 
 

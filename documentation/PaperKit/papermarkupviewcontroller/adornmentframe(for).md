@@ -1,7 +1,8 @@
 # adornmentFrame(for:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current frame of the specified adornment.
 
@@ -33,7 +34,8 @@ This method calculates the visual frame of an adornment based on its anchor posi
 
 ## See Also
 
-- [var adornments: [MarkupAdornment]](papermarkupviewcontroller/adornments.md)
+### Managing adornments
+- [var adornments: [MarkupAdornment]](./adornments.md)
   An array of visual adornments that appear on the markup canvas.
 
 

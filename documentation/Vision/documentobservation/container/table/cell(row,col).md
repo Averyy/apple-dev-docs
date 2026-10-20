@@ -1,7 +1,8 @@
 # cell(row:col:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The cell at the specific row and column index, if it exists.
 

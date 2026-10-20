@@ -1,7 +1,8 @@
 # quotaUsage
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The usage quota for this model.
 
@@ -21,7 +22,8 @@ final var quotaUsage: PrivateCloudComputeLanguageModel.QuotaUsage { get }
 
 ## See Also
 
-- [PrivateCloudComputeLanguageModel.QuotaUsage](privatecloudcomputelanguagemodel/quotausage-swift.struct.md)
+### Getting the quota
+- [PrivateCloudComputeLanguageModel.QuotaUsage](./quotausage-swift.struct.md)
   The usage quota state for a Private Cloud Compute language model.
 
 

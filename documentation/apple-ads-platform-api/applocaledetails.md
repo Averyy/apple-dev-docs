@@ -1,7 +1,8 @@
 # AppLocaleDetails
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Localized content for an app’s Default Product Page.
 
@@ -10,7 +11,7 @@ Localized content for an app’s Default Product Page.
 
 ## Declaration
 
-```swift
+```
 object AppLocaleDetails
 ```
 
@@ -56,7 +57,7 @@ The `AppLocaleDetails` object represents the localized metadata and asset groupi
 ## Topics
 
 ### Dictionaries
-- [object AppLocaleDetails.AssetsByDevice](applocaledetails/assetsbydevice-data.dictionary.md)
+- [object AppLocaleDetails.AssetsByDevice](./applocaledetails/assetsbydevice-data.dictionary.md)
   Map of device type to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references.
 
 ## Properties
@@ -70,19 +71,21 @@ The `AppLocaleDetails` object represents the localized metadata and asset groupi
 - `promotionalText` (string): Promotional text for this locale (max 170 characters).
 - `shortDescription` (string): Short description for this locale (max 4000 characters).
 - `deviceClasses` ([string]): Device families with available assets for this locale.
+
+  **Allowed Values**: `IPHONE`, `IPAD`
 - `assetsByDevice` (AppLocaleDetails.AssetsByDevice): Map of device type (for example, `"iphone_6_5"`) to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references.
 
 ## See Also
 
-- [object AppInfo](appinfo.md)
+- [object AppInfo](./appinfo.md)
   A single app search result.
-- [object AppsSearchResponse](appssearchresponse.md)
+- [object AppsSearchResponse](./appssearchresponse.md)
   Apps search response envelope.
-- [object AppLocaleDetailsQueryResponse](applocaledetailsqueryresponse.md)
+- [object AppLocaleDetailsQueryResponse](./applocaledetailsqueryresponse.md)
   Paginated response object for app locale detail queries.
-- [object AppSupportedLanguages](appsupportedlanguages.md)
+- [object AppSupportedLanguages](./appsupportedlanguages.md)
   App supported and default languages for an App Store country or region.
-- [object AppSupportedLanguagesQueryResponse](appsupportedlanguagesqueryresponse.md)
+- [object AppSupportedLanguagesQueryResponse](./appsupportedlanguagesqueryresponse.md)
   Paginated response object for the supported app languages query.
 
 

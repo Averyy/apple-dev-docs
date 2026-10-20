@@ -1,18 +1,19 @@
 # mbuf_data_to_physical
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 addr64_t mbuf_data_to_physical(void *ptr);
 ```
 
-#### Return_value
+#### Return Value
 
 The 64 bit physical address of the mbuf data or NULL if ptr does not point to data stored in an mbuf.
 

@@ -1,7 +1,8 @@
 # regionOfInterest(for:in:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the region of interest for the filter chain that generates the image.
 
@@ -10,7 +11,7 @@ Returns the region of interest for the filter chain that generates the image.
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,17 @@ Returns the region of interest for the filter chain that generates the image.
 func regionOfInterest(for image: CIImage, in rect: CGRect) -> CGRect
 ```
 
+```objc
+- (CGRect) regionOfInterestForImage:(CIImage *) image inRect:(CGRect) rect;
+```
+
 #### Return Value
 
 A rectangle in the coordinate space of the input image (the `im` parameter).
 
 #### Discussion
 
-The region of interest is the rectangle containing pixel data in a source image (the `im` parameter) necessary to produce a corresponding rectangle in the output image. If the image is not the output of a filter (or of a chain or graph of several [`CIFilter`](cifilter-swift.class.md) objects), or the image in the `im` parameter is not an input to that filter, the rectangle returned is the same as that in the `r` parameter.
+The region of interest is the rectangle containing pixel data in a source image (the `im` parameter) necessary to produce a corresponding rectangle in the output image. If the image is not the output of a filter (or of a chain or graph of several [`CIFilter`](../cifilter-swift.class.md) objects), or the image in the `im` parameter is not an input to that filter, the rectangle returned is the same as that in the `r` parameter.
 
 For example,
 

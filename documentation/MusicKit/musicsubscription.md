@@ -1,7 +1,8 @@
 # MusicSubscription
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the current state of the user’s subscription to Apple Music.
 
@@ -23,36 +24,37 @@ struct MusicSubscription
 ## Topics
 
 ### Structures
-- [MusicSubscription.Updates](musicsubscription/updates.md)
+- [MusicSubscription.Updates](./musicsubscription/updates.md)
   An asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
 ### Instance Properties
-- [let canBecomeSubscriber: Bool](musicsubscription/canbecomesubscriber.md)
+- [let canBecomeSubscriber: Bool](./musicsubscription/canbecomesubscriber.md)
   A capability that allows your app to present subscription offers for Apple Music.
-- [let canPlayCatalogContent: Bool](musicsubscription/canplaycatalogcontent.md)
+- [let canPlayCatalogContent: Bool](./musicsubscription/canplaycatalogcontent.md)
   A capability that allows your app to play subscription content using a music player.
-- [let hasCloudLibraryEnabled: Bool](musicsubscription/hascloudlibraryenabled.md)
+- [let hasCloudLibraryEnabled: Bool](./musicsubscription/hascloudlibraryenabled.md)
   A capability that allows your app to perform modifications to the user’s iCloud Music Library.
 ### Type Properties
-- [static var current: MusicSubscription](musicsubscription/current.md)
+- [static var current: MusicSubscription](./musicsubscription/current.md)
   The current state of the user’s subscription to Apple Music.
-- [static var subscriptionUpdates: MusicSubscription.Updates](musicsubscription/subscriptionupdates.md)
+- [static var subscriptionUpdates: MusicSubscription.Updates](./musicsubscription/subscriptionupdates.md)
   An asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
 ### Enumerations
-- [MusicSubscription.Error](musicsubscription/error.md)
+- [MusicSubscription.Error](./musicsubscription/error.md)
   An error that MusicKit can throw upon requesting the current music subscription of the user.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MusicSubscriptionOffer](musicsubscriptionoffer.md)
+### Apple Music Subscription
+- [struct MusicSubscriptionOffer](./musicsubscriptionoffer.md)
   A type for grouping other types for showing subscription offers for Apple Music.
 
 

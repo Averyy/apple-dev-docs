@@ -1,7 +1,8 @@
 # convert(toUSDZ:writeTo:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func convert(toUSDZ inputURL: URL, writeTo outputURL: URL)
+```
+
+```objc
++ (void) convertToUSDZ:(NSURL *) inputURL writeToURL:(NSURL *) outputURL;
 ```
 
 

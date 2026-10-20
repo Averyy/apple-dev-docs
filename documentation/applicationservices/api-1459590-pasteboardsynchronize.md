@@ -1,7 +1,8 @@
 # PasteboardSynchronize(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardSynchronize(_ inPasteboard: Pasteboard) -> PasteboardSyncFlags
+```
+
+```c
+PasteboardSyncFlags PasteboardSynchronize(PasteboardRef inPasteboard);
 ```
 
 

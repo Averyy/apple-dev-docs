@@ -1,19 +1,21 @@
 # Edit list atom
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An atom that maps from a time in a movie to a time in a media, and ultimately to media data.
 
 #### Overview
 
-See [`Edit list atom`](edit_list_atom.md).
+See [`Edit list atom`](../edit_list_atom.md).
 
 ## See Also
 
-- [Size](edit_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this edit atom.
-- [Type](edit_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

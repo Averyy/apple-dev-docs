@@ -1,7 +1,8 @@
 # MTL4CompilerTaskStatus
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the status of a compiler task.
 
@@ -19,53 +20,58 @@ Represents the status of a compiler task.
 enum MTL4CompilerTaskStatus
 ```
 
+```c
+enum MTL4CompilerTaskStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTL4CompilerTaskStatus.compiling](mtl4compilertaskstatus/compiling.md)
+- [MTL4CompilerTaskStatus.compiling](./mtl4compilertaskstatus/compiling.md)
   The compiler task is currently compiling.
-- [MTL4CompilerTaskStatus.finished](mtl4compilertaskstatus/finished.md)
+- [MTL4CompilerTaskStatus.finished](./mtl4compilertaskstatus/finished.md)
   The compiler task is finished.
-- [MTL4CompilerTaskStatus.none](mtl4compilertaskstatus/none.md)
+- [MTL4CompilerTaskStatus.none](./mtl4compilertaskstatus/none.md)
   No status.
-- [MTL4CompilerTaskStatus.scheduled](mtl4compilertaskstatus/scheduled.md)
+- [MTL4CompilerTaskStatus.scheduled](./mtl4compilertaskstatus/scheduled.md)
   The compiler task is currently scheduled.
 ### Initializers
-- [init?(rawValue: Int)](mtl4compilertaskstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtl4compilertaskstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Metal libraries](metal-libraries.md)
+### Shader compilation
+- [Metal libraries](./metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal dynamic libraries](metal-dynamic-libraries.md)
+- [Metal dynamic libraries](./metal-dynamic-libraries.md)
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
-- [Metal binary archives](metal-binary-archives.md)
+- [Metal binary archives](./metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
-- [protocol MTL4Compiler](mtl4compiler.md)
+- [protocol MTL4Compiler](./mtl4compiler.md)
   A abstraction for a pipeline state and shader function compiler.
-- [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
+- [class MTL4CompilerDescriptor](./mtl4compilerdescriptor.md)
   Groups together properties for creating a compiler context.
-- [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+- [class MTL4CompilerTaskOptions](./mtl4compilertaskoptions.md)
   The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
-- [protocol MTL4Archive](mtl4archive.md)
+- [protocol MTL4Archive](./mtl4archive.md)
   A read-only container that stores pipeline states from a shader compiler.
-- [protocol MTL4BinaryFunction](mtl4binaryfunction.md)
+- [protocol MTL4BinaryFunction](./mtl4binaryfunction.md)
   Represents a binary function.
-- [class MTL4BinaryFunctionDescriptor](mtl4binaryfunctiondescriptor.md)
+- [class MTL4BinaryFunctionDescriptor](./mtl4binaryfunctiondescriptor.md)
   Base interface for other function-derived interfaces.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
+- [struct MTL4BinaryFunctionOptions](./mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
+- [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of this accessory.
 

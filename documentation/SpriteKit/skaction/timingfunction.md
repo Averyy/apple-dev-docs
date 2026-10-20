@@ -1,7 +1,8 @@
 # timingFunction
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block used to customize the timing function.
 
@@ -20,14 +21,18 @@ A block used to customize the timing function.
 var timingFunction: SKActionTimingFunction { get set }
 ```
 
+```objc
+@property (nonatomic) SKActionTimingFunction timingFunction;
+```
+
 ## Mentions
 
-- [Configuring Action Timing](configuring-action-timing.md)
-- [Getting Started with Actions](getting-started-with-actions.md)
+- [Configuring Action Timing](../configuring-action-timing.md)
+- [Getting Started with Actions](../getting-started-with-actions.md)
 
 #### Discussion
 
-If a timing function is provided, after the normal timing mode is applied, the result is sent to the timing function. The return [`SKActionTimingFunction`](skactiontimingfunction.md) value of the timing function determines the actual time used to perform the animation.
+If a timing function is provided, after the normal timing mode is applied, the result is sent to the timing function. The return [`SKActionTimingFunction`](../skactiontimingfunction.md) value of the timing function determines the actual time used to perform the animation.
 
 The following code shows how you can create a custom timing function using [`simd_smoothstep(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_smoothstep(_:_:_:)-5839l) interpolation:
 
@@ -42,21 +47,22 @@ horizontalAction.timingFunction = {
 
 If the above code is combined with a vertical linear move action, the path taken by a node running this action describes the curve illustrated below:
 
-![Smoothstep based motion path](/images/com.apple.spritekit/media-2759776@2x.png)
+![Smoothstep based motion path](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2759776@2x.png)
 
 ## See Also
 
-- [Configuring Action Timing](configuring-action-timing.md)
+### Controlling Action Timing
+- [Configuring Action Timing](../configuring-action-timing.md)
   Time an action in a scene, by adding or modifying timing properties, or cancel an action.
-- [var duration: TimeInterval](skaction/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration required to complete an action.
-- [var timingMode: SKActionTimingMode](skaction/timingmode.md)
+- [var timingMode: SKActionTimingMode](./timingmode.md)
   A setting that controls the speed curve of an animation.
-- [enum SKActionTimingMode](skactiontimingmode.md)
+- [enum SKActionTimingMode](../skactiontimingmode.md)
   The modes that an action can use to adjust the apparent timing of the action.
-- [typealias SKActionTimingFunction](skactiontimingfunction.md)
+- [typealias SKActionTimingFunction](../skactiontimingfunction.md)
   The signature for the custom timing block.
-- [var speed: CGFloat](skaction/speed.md)
+- [var speed: CGFloat](./speed.md)
   A speed factor that modifies how fast an action runs.
 
 

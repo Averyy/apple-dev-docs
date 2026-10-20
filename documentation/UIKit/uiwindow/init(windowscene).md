@@ -1,7 +1,8 @@
 # init(windowScene:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a window and associates it with the specified scene object.
 
@@ -18,13 +19,17 @@ Creates a window and associates it with the specified scene object.
 init(windowScene: UIWindowScene)
 ```
 
+```objc
+- (instancetype) initWithWindowScene:(UIWindowScene *) windowScene;
+```
+
 #### Return Value
 
 A new window object associated with the specified scene.
 
 #### Discussion
 
-This method creates the new window and automatically associates it with the specified scene. You can access this window later from the scene’s [`windows`](uiwindowscene/windows.md) property.
+This method creates the new window and automatically associates it with the specified scene. You can access this window later from the scene’s [`windows`](../uiwindowscene/windows.md) property.
 
 ## Parameters
 

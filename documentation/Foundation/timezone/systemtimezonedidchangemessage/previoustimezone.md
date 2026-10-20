@@ -1,7 +1,8 @@
 # previousTimeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The previous system time zone, prior to the change.
 

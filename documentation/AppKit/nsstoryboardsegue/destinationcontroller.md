@@ -1,7 +1,8 @@
 # destinationController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ending/contained view controller or window controller for the storyboard segue.
 
@@ -14,17 +15,22 @@ The ending/contained view controller or window controller for the storyboard seg
 var destinationController: Any { get }
 ```
 
+```objc
+@property (strong, readonly) id destinationController;
+```
+
 #### Discussion
 
-In your storyboard segue subclass, you can read this property to get the ending/contained view controller or window controller for the segue. This property is essential if you override the [`prepare(for:sender:)`](nssegueperforming/prepare(for:sender:).md) method of the [`NSSeguePerforming`](nssegueperforming.md) protocol, to let you pass configuration data to the ending/contained controller.
+In your storyboard segue subclass, you can read this property to get the ending/contained view controller or window controller for the segue. This property is essential if you override the [`prepare(for:sender:)`](../nssegueperforming/prepare%28for,sender%29.md) method of the [`NSSeguePerforming`](../nssegueperforming.md) protocol, to let you pass configuration data to the ending/contained controller.
 
 ## See Also
 
-- [var sourceController: Any](nsstoryboardsegue/sourcecontroller.md)
+### Inspecting a Storyboard Segue
+- [var sourceController: Any](./sourcecontroller.md)
   The starting/containing view controller or window controller for the storyboard segue.
-- [var identifier: NSStoryboardSegue.Identifier?](nsstoryboardsegue/identifier-swift.property.md)
+- [var identifier: NSStoryboardSegue.Identifier?](./identifier-swift.property.md)
   An optional, unique identifier for the storyboard segue that you can specify using the Identity inspector in Interface Builder.
-- [NSStoryboardSegue.Identifier](nsstoryboardsegue/identifier-swift.typealias.md)
+- [NSStoryboardSegue.Identifier](./identifier-swift.typealias.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # detachableWindow(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detaches the popover creating a window containing the content.
 
@@ -13,6 +14,10 @@ Detaches the popover creating a window containing the content.
 ```swift
 @MainActor
 optional func detachableWindow(for popover: NSPopover) -> NSWindow?
+```
+
+```objc
+- (NSWindow *) detachableWindowForPopover:(NSPopover *) popover;
 ```
 
 #### Return Value
@@ -27,7 +32,7 @@ The popover and the detachable window may be shown at the same time and therefor
 
 If the popover and the detachable window should have the same content, you should define the content in a separate nib file and use a view controller to instantiate separate copies of the content for the popover and the detachable window.
 
-The popover will animate to appear as though it morphs into the detachable window (unless the popover’s  [`animates`](nspopover/animates.md) property is set to [`false`](https://developer.apple.com/documentation/swift/false)). The exact animation used is not guaranteed.
+The popover will animate to appear as though it morphs into the detachable window (unless the popover’s  [`animates`](../nspopover/animates.md) property is set to [`false`](../../Swift/false.md)). The exact animation used is not guaranteed.
 
 If there is no delegate, the delegate does not implement this method, or the delegate returns nil, the popup will not be displayed detached.
 

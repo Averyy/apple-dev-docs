@@ -1,7 +1,8 @@
 # kMDItemAppleLoopsLoopMode
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies how a file should be played. A CFString.
 
@@ -12,6 +13,10 @@ Specifies how a file should be played. A CFString.
 
 ```swift
 let kMDItemAppleLoopsLoopMode: CFString!
+```
+
+```c
+const CFStringRef kMDItemAppleLoopsLoopMode;
 ```
 
 #### Discussion

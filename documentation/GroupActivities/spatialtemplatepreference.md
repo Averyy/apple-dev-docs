@@ -1,7 +1,8 @@
 # SpatialTemplatePreference
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 
@@ -21,43 +22,44 @@ Use the static members of this structure to specify your preferred arrangement o
 ## Topics
 
 ### Getting the spatial position preferences
-- [static let none: SpatialTemplatePreference](spatialtemplatepreference/none.md)
+- [static let none: SpatialTemplatePreference](./spatialtemplatepreference/none.md)
   An arrangement where the system places spatial Personas based on your app’s content.
-- [static let sideBySide: SpatialTemplatePreference](spatialtemplatepreference/sidebyside.md)
+- [static let sideBySide: SpatialTemplatePreference](./spatialtemplatepreference/sidebyside.md)
   An arrangement where the participants sit in a line with the content in front of them.
-- [static let conversational: SpatialTemplatePreference](spatialtemplatepreference/conversational.md)
+- [static let conversational: SpatialTemplatePreference](./spatialtemplatepreference/conversational.md)
   An arrangement where the participants can see one another and the app’s content.
-- [static func custom(any SpatialTemplate) -> SpatialTemplatePreference](spatialtemplatepreference/custom(_:).md)
+- [static func custom(any SpatialTemplate) -> SpatialTemplatePreference](./spatialtemplatepreference/custom%28_%29.md)
   Creates a template preference with the given custom spatial template.
 ### Specifying the distance between content and participants
-- [func contentExtent(CGFloat) -> SpatialTemplatePreference](spatialtemplatepreference/contentextent(_:).md)
+- [func contentExtent(CGFloat) -> SpatialTemplatePreference](./spatialtemplatepreference/contentextent%28_%29.md)
   Sets the distance between the app’s content and any participants.
 ### Type Properties
-- [static let surround: SpatialTemplatePreference](spatialtemplatepreference/surround.md)
+- [static let surround: SpatialTemplatePreference](./spatialtemplatepreference/surround.md)
   An arrangement where the participants sit around the content.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
+### Custom spatial templates
+- [Building a guessing game for visionOS](./building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
-- [protocol SpatialTemplate](spatialtemplate.md)
+- [protocol SpatialTemplate](./spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
-- [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
+- [struct SpatialTemplateSeatElement](./spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
-- [protocol SpatialTemplateElement](spatialtemplateelement.md)
+- [protocol SpatialTemplateElement](./spatialtemplateelement.md)
   An interface that defines an element in your spatial template.
-- [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)
+- [struct SpatialTemplateElementPosition](./spatialtemplateelementposition.md)
   A type that defines the position of an element in a spatial template.
-- [struct SpatialTemplateElementDirection](spatialtemplateelementdirection.md)
+- [struct SpatialTemplateElementDirection](./spatialtemplateelementdirection.md)
   The initial direction a participant faces when an activity starts.
-- [protocol SpatialTemplateRole](spatialtemplaterole.md)
+- [protocol SpatialTemplateRole](./spatialtemplaterole.md)
   An interface for defining roles that you assign to the participants of a group activity.
 
 

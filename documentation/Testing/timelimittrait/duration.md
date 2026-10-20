@@ -1,7 +1,8 @@
 # TimeLimitTrait.Duration
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing the duration of a time limit applied to a test.
 
@@ -11,7 +12,7 @@ A type representing the duration of a time limit applied to a test.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 - Swift 6.0+
 - Xcode 16.0+
@@ -24,19 +25,19 @@ struct Duration
 
 #### Overview
 
-Use this type to specify a test timeout with [`TimeLimitTrait`](timelimittrait.md). `TimeLimitTrait` uses this type instead of Swift’s built-in `Duration` type because the testing library doesn’t support high-precision, arbitrarily short durations for test timeouts. The smallest unit of time you can specify in a `Duration` is minutes.
+Use this type to specify a test timeout with [`TimeLimitTrait`](../timelimittrait.md). `TimeLimitTrait` uses this type instead of Swift’s built-in `Duration` type because the testing library doesn’t support high-precision, arbitrarily short durations for test timeouts. The smallest unit of time you can specify in a `Duration` is minutes.
 
 ## Topics
 
 ### Type Methods
-- [static func minutes(some BinaryInteger) -> TimeLimitTrait.Duration](timelimittrait/duration/minutes(_:).md)
+- [static func minutes(some BinaryInteger) -> TimeLimitTrait.Duration](./duration/minutes%28_%29.md)
   Construct a time limit duration given a number of minutes.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

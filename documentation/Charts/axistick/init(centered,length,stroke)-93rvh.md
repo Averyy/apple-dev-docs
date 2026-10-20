@@ -1,7 +1,8 @@
 # init(centered:length:stroke:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an axis tick with the given properties.
 

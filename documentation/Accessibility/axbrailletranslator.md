@@ -1,7 +1,8 @@
 # AXBrailleTranslator
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Translates print text to Braille and Braille to print text according to the given Braille table.
 
@@ -20,35 +21,40 @@ Translates print text to Braille and Braille to print text according to the give
 class AXBrailleTranslator
 ```
 
+```objc
+@interface AXBrailleTranslator : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(brailleTable: AXBrailleTable)](axbrailletranslator/init(brailletable:).md)
+- [init(brailleTable: AXBrailleTable)](./axbrailletranslator/init%28brailletable%29.md)
 ### Instance Methods
-- [func backTranslateBraille(String) -> AXBrailleTranslationResult](axbrailletranslator/backtranslatebraille(_:).md)
+- [func backTranslateBraille(String) -> AXBrailleTranslationResult](./axbrailletranslator/backtranslatebraille%28_%29.md)
   Input Braille should use the unicode Braille characters (0x2800-0x28FF).
-- [func translatePrintText(String) -> AXBrailleTranslationResult](axbrailletranslator/translateprinttext(_:).md)
+- [func translatePrintText(String) -> AXBrailleTranslationResult](./axbrailletranslator/translateprinttext%28_%29.md)
   Output Braille uses the unicode Braille characters (0x2800-0x28FF).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Braille displays](braille-displays.md)
+### Braille
+- [Braille displays](./braille-displays.md)
   Display a graphical representation of images, icons, data, and more on a two-dimensional braille display.
-- [class AXBrailleTable](axbrailletable.md)
+- [class AXBrailleTable](./axbrailletable.md)
   A rule for translating print text to Braille, and back-translating Braille to print text.
-- [class AXBrailleTranslationResult](axbrailletranslationresult.md)
+- [class AXBrailleTranslationResult](./axbrailletranslationresult.md)
   The result of translation or back-translation.
 
 

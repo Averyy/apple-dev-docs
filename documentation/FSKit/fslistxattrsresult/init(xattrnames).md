@@ -1,7 +1,8 @@
 # init(xattrNames:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result instance with all required properties populated.
 
@@ -14,17 +15,22 @@ Creates a result instance with all required properties populated.
 init?(xattrNames: [FSFileName])
 ```
 
+```objc
+- (instancetype) initWithXattrNames:(NSArray<FSFileName *> *) xattrNames;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
 
 ## Parameters
 
-- `xattrNames`: An array of [`FSFileName`](fsfilename.md) instances representing the names of all extended attributes currently set on the item.
+- `xattrNames`: An array of [`FSFileName`](../fsfilename.md) instances representing the names of all extended attributes currently set on the item.
 
 ## See Also
 
-- [class FSFileName](fsfilename.md)
+### Creating a list-extended-attributes result
+- [class FSFileName](../fsfilename.md)
   The name of a file, expressed as a data buffer.
 
 

@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the segment is empty.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the segment is empty.
 var isEmpty: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEmpty) BOOL empty;
+```
+
 ## See Also
 
-- [var timeMapping: CMTimeMapping](avassettracksegment/timemapping.md)
+### Retrieving segment information
+- [var timeMapping: CMTimeMapping](./timemapping.md)
   The time range of the track that this segment presents.
 
 

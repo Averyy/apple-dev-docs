@@ -1,7 +1,8 @@
 # cnnNeuronDescriptor(with:a:b:c:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 class func cnnNeuronDescriptor(with neuronType: MPSCNNNeuronType, a: Float, b: Float, c: Float) -> MPSNNNeuronDescriptor
+```
+
+```objc
++ (MPSNNNeuronDescriptor *) cnnNeuronDescriptorWithType:(MPSCNNNeuronType) neuronType a:(float) a b:(float) b c:(float) c;
 ```
 
 

@@ -1,7 +1,8 @@
 # cameraScaleReference
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera scale reference of this anchor.
 
@@ -22,9 +23,10 @@ In order to have a consistent brightness between texture updates, the cameraScal
 
 ## See Also
 
-- [var environmentTexture: (any MTLTexture)?](environmentprobeanchor/environmenttexture.md)
+### Getting anchor information
+- [var environmentTexture: (any MTLTexture)?](./environmenttexture.md)
   The environment texture of an anchor.
-- [var originFromAnchorTransform: simd_float4x4](environmentprobeanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The transform from the environment probe anchor to the origin coordinate system.
 
 

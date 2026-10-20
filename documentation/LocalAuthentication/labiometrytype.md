@@ -1,7 +1,8 @@
 # LABiometryType
 
 **Framework**: Local Authentication  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of available biometric authentication types.
 
@@ -19,40 +20,45 @@ The set of available biometric authentication types.
 enum LABiometryType
 ```
 
+```c
+enum LABiometryType : NSInteger;
+```
+
 ## Topics
 
 ### Types
-- [LABiometryType.none](labiometrytype/none.md)
+- [LABiometryType.none](./labiometrytype/none.md)
   No biometry type is supported.
-- [LABiometryType.faceID](labiometrytype/faceid.md)
+- [LABiometryType.faceID](./labiometrytype/faceid.md)
   The device supports Face ID.
-- [LABiometryType.touchID](labiometrytype/touchid.md)
+- [LABiometryType.touchID](./labiometrytype/touchid.md)
   The device supports Touch ID.
-- [LABiometryType.opticID](labiometrytype/opticid.md)
+- [LABiometryType.opticID](./labiometrytype/opticid.md)
   The device supports Optic ID.
 ### Legacy Types
-- [static var LABiometryNone: LABiometryType](labiometrytype/labiometrynone.md)
+- [static var LABiometryNone: LABiometryType](./labiometrytype/labiometrynone.md)
   No biometry type is supported.
 ### Initializers
-- [init?(rawValue: Int)](labiometrytype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./labiometrytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](lacontext/canevaluatepolicy(_:error:).md)
+### Checking availability
+- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](./lacontext/canevaluatepolicy%28_,error%29.md)
   Assesses whether authentication can proceed for a given policy.
-- [enum LAPolicy](lapolicy.md)
+- [enum LAPolicy](./lapolicy.md)
   The set of available local authentication policies.
-- [var biometryType: LABiometryType](lacontext/biometrytype.md)
+- [var biometryType: LABiometryType](./lacontext/biometrytype.md)
   The type of biometric authentication supported by the device.
 
 

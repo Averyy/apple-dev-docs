@@ -1,7 +1,8 @@
 # elementType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the array’s elements.
 
@@ -10,7 +11,7 @@ The data type of the array’s elements.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ The data type of the array’s elements.
 var elementType: MTLDataType { get }
 ```
 
+```objc
+@property (readonly) MTLDataType elementType;
+```
+
 #### Discussion
 
-For information on possible values, see [`MTLDataType`](mtldatatype.md).
+For information on possible values, see [`MTLDataType`](../mtldatatype.md).
 
 ## See Also
 
-- [var arrayLength: Int](mtlarraytype/arraylength.md)
+### Describing the array elements
+- [var arrayLength: Int](./arraylength.md)
   The number of elements in the array.
-- [var stride: Int](mtlarraytype/stride.md)
+- [var stride: Int](./stride.md)
   The stride between array elements, in bytes.
-- [var argumentIndexStride: Int](mtlarraytype/argumentindexstride.md)
+- [var argumentIndexStride: Int](./argumentindexstride.md)
   The stride, in bytes, between argument indices.
 
 

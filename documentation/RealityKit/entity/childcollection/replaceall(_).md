@@ -1,7 +1,8 @@
 # replaceAll(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all children from this entity and adds the specified list of entities as the new children.
 

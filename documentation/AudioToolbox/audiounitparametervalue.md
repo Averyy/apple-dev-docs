@@ -1,17 +1,18 @@
 # AudioUnitParameterValue
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The data type for an audio unit parameter value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,35 +20,40 @@ The data type for an audio unit parameter value.
 typealias AudioUnitParameterValue = Float32
 ```
 
+```c
+typedef Float32 AudioUnitParameterValue;
+```
+
 #### Discussion
 
 An audio unit parameter is an adjustable setting, such as gain. The parameters for Apple-supplied audio units are described in `Audio Unit Parameters`.
 
-You can change a parameter value directly by calling the [`AudioUnitSetParameter(_:_:_:_:_:_:)`](audiounitsetparameter(_:_:_:_:_:_:).md) function, or schedule a change by calling [`AudioUnitScheduleParameters(_:_:_:)`](audiounitscheduleparameters(_:_:_:).md). See also [`AudioUnitParameterID`](audiounitparameterid.md), [`AudioUnitParameter`](audiounitparameter.md).
+You can change a parameter value directly by calling the [`AudioUnitSetParameter(_:_:_:_:_:_:)`](./audiounitsetparameter%28_,_,_,_,_,_%29.md) function, or schedule a change by calling [`AudioUnitScheduleParameters(_:_:_:)`](./audiounitscheduleparameters%28_,_,_%29.md). See also [`AudioUnitParameterID`](./audiounitparameterid.md), [`AudioUnitParameter`](./audiounitparameter.md).
 
 ## See Also
 
-- [struct ScheduledAudioFileRegion](scheduledaudiofileregion.md)
-- [struct ScheduledAudioSlice](scheduledaudioslice.md)
-- [typealias ScheduledAudioFileRegionCompletionProc](scheduledaudiofileregioncompletionproc.md)
-- [typealias ScheduledAudioSliceCompletionProc](scheduledaudioslicecompletionproc.md)
-- [typealias MIDIChannelNumber](midichannelnumber.md)
+### Audio Unit Types
+- [struct ScheduledAudioFileRegion](./scheduledaudiofileregion.md)
+- [struct ScheduledAudioSlice](./scheduledaudioslice.md)
+- [typealias ScheduledAudioFileRegionCompletionProc](./scheduledaudiofileregioncompletionproc.md)
+- [typealias ScheduledAudioSliceCompletionProc](./scheduledaudioslicecompletionproc.md)
+- [typealias MIDIChannelNumber](./midichannelnumber.md)
   MIDI Channel, 0~15 (channels 1 through 16, respectively).
-- [typealias AUAudioObjectID](auaudioobjectid.md)
-- [typealias AUMIDICIProfileChangedBlock](aumidiciprofilechangedblock.md)
-- [typealias AUAudioChannelCount](auaudiochannelcount.md)
+- [typealias AUAudioObjectID](./auaudioobjectid.md)
+- [typealias AUMIDICIProfileChangedBlock](./aumidiciprofilechangedblock.md)
+- [typealias AUAudioChannelCount](./auaudiochannelcount.md)
   A number of audio channels.
-- [typealias AUAudioFrameCount](auaudioframecount.md)
+- [typealias AUAudioFrameCount](./auaudioframecount.md)
   A number of audio sample frames.
-- [typealias AUAudioUnitStatus](auaudiounitstatus.md)
+- [typealias AUAudioUnitStatus](./auaudiounitstatus.md)
   A result code returned from an audio unit’s render function.
-- [typealias AUEventListenerProc](aueventlistenerproc.md)
-- [typealias AUEventListenerRef](aueventlistenerref.md)
-- [typealias AUEventSampleTime](aueventsampletime.md)
+- [typealias AUEventListenerProc](./aueventlistenerproc.md)
+- [typealias AUEventListenerRef](./aueventlistenerref.md)
+- [typealias AUEventSampleTime](./aueventsampletime.md)
   Expresses time as a sample count.
-- [typealias AUImplementorValueObserver](auimplementorvalueobserver.md)
+- [typealias AUImplementorValueObserver](./auimplementorvalueobserver.md)
   A block called to notify the audio unit implementation of changes to a parameter value.
-- [typealias AUImplementorValueProvider](auimplementorvalueprovider.md)
+- [typealias AUImplementorValueProvider](./auimplementorvalueprovider.md)
   A block called to fetch a parameter’s current value from the audio unit implementation.
 
 

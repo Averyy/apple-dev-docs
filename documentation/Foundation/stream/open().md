@@ -1,7 +1,8 @@
 # open()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the receiving stream.
 
@@ -20,13 +21,18 @@ Opens the receiving stream.
 func open()
 ```
 
+```objc
+- (void) open;
+```
+
 #### Discussion
 
 A stream must be created before it can be opened. Once opened, a stream cannot be closed and reopened.
 
 ## See Also
 
-- [func close()](stream/close.md)
+### Using Streams
+- [func close()](./close%28%29.md)
   Closes the receiver.
 
 

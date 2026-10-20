@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an `UnsafeMutableBufferPointer<Element>` from an `AudioBuffer`.
 

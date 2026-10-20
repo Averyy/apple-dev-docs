@@ -1,7 +1,8 @@
 # AIModelCache.Policy
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A policy that controls when the system purges specialized assets from a cache.
 
@@ -20,40 +21,40 @@ struct Policy
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Overview
 
-Defines the conditions under which the system may purge specialized assets in an [`AIModelCache`](aimodelcache.md).
+Defines the conditions under which the system may purge specialized assets in an [`AIModelCache`](../aimodelcache.md).
 
 > **Note**: Regardless of policy, the system always purges assets when the OS updates, as specialized assets are OS-version specific.
 
 ## Topics
 
 ### Using preset policies
-- [static let `default`: AIModelCache.Policy](aimodelcache/policy/default.md)
+- [static let `default`: AIModelCache.Policy](./policy/default.md)
   A policy that marks specialized assets as purgeable.
-- [static let persistent: AIModelCache.Policy](aimodelcache/policy/persistent.md)
+- [static let persistent: AIModelCache.Policy](./policy/persistent.md)
   A policy that prevents automatic purging of specialized assets.
 ### Creating a custom policy
-- [init(purgeConditions: AIModelCache.Policy.PurgeConditions)](aimodelcache/policy/init(purgeconditions:).md)
+- [init(purgeConditions: AIModelCache.Policy.PurgeConditions)](./policy/init%28purgeconditions%29.md)
   Creates a policy with the specified purge conditions.
 ### Inspecting a policy
-- [var purgeConditions: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.property.md)
+- [var purgeConditions: AIModelCache.Policy.PurgeConditions](./policy/purgeconditions-swift.property.md)
   The conditions under which the system may purge specialized assets.
 ### Describing purge conditions
-- [AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct.md)
+- [AIModelCache.Policy.PurgeConditions](./policy/purgeconditions-swift.struct.md)
   A set of conditions that determine when the system purges specialized assets.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

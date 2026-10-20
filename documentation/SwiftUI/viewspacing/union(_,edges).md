@@ -1,7 +1,8 @@
 # union(_:edges:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a new value that merges the spacing preferences of another spacing instance with this instance for a specified set of edges.
 
@@ -26,7 +27,7 @@ A new view spacing preferences instance with the merged values.
 
 #### Discussion
 
-This method behaves like [`formUnion(_:edges:)`](viewspacing/formunion(_:edges:).md), except that it creates a copy of the original spacing preferences instance before merging, leaving the original instance unmodified.
+This method behaves like [`formUnion(_:edges:)`](./formunion%28_,edges%29.md), except that it creates a copy of the original spacing preferences instance before merging, leaving the original instance unmodified.
 
 ## Parameters
 
@@ -35,7 +36,8 @@ This method behaves like [`formUnion(_:edges:)`](viewspacing/formunion(_:edges:)
 
 ## See Also
 
-- [func formUnion(ViewSpacing, edges: Edge.Set)](viewspacing/formunion(_:edges:).md)
+### Merging spacing instances
+- [func formUnion(ViewSpacing, edges: Edge.Set)](./formunion%28_,edges%29.md)
   Merges the spacing preferences of another spacing instance with this instance for a specified set of edges.
 
 

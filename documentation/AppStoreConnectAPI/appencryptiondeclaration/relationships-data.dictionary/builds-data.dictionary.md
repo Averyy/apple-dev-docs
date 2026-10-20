@@ -1,21 +1,24 @@
 # AppEncryptionDeclaration.Relationships.Builds
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API 2.2+
+- App Store Connect API 2.2+ - Deprecated in 2.4
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclaration.Relationships.Builds
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEncryptionDeclaration.Relationships.Builds.Data](appencryptiondeclaration/relationships-data.dictionary/builds-data.dictionary/data-data.dictionary.md)
+- [object AppEncryptionDeclaration.Relationships.Builds.Data](./builds-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,9 +28,10 @@ object AppEncryptionDeclaration.Relationships.Builds
 
 ## See Also
 
-- [object AppEncryptionDeclaration.Relationships.App](appencryptiondeclaration/relationships-data.dictionary/app-data.dictionary.md)
+### Objects
+- [object AppEncryptionDeclaration.Relationships.App](./app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument](appencryptiondeclaration/relationships-data.dictionary/appencryptiondeclarationdocument-data.dictionary.md)
+- [object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument](./appencryptiondeclarationdocument-data.dictionary.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # wifiAwareModelName
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Device’s Wi-Fi Aware model name.
 
@@ -9,13 +10,17 @@ Device’s Wi-Fi Aware model name.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var wifiAwareModelName: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * wifiAwareModelName;
 ```
 
 

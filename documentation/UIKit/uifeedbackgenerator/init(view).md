@@ -1,7 +1,8 @@
 # init(view:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feedback generator and attaches it to the specified view.
 
@@ -16,9 +17,14 @@ Creates a feedback generator and attaches it to the specified view.
 convenience init(view: UIView)
 ```
 
+```objc
++ (instancetype) feedbackGeneratorForView:(UIView *) view;
+```
+
 ## See Also
 
-- [init()](uifeedbackgenerator/init.md)
+### Initializing a feedback generator
+- [init()](./init%28%29.md)
   Creates a feedback generator.
 
 

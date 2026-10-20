@@ -1,7 +1,8 @@
 # MTLFunctionStitchingAttributeAlwaysInline
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An attribute to specify that Metal needs to inline all of the function calls when generating the stitched function.
 
@@ -19,40 +20,46 @@ An attribute to specify that Metal needs to inline all of the function calls whe
 class MTLFunctionStitchingAttributeAlwaysInline
 ```
 
+```objc
+@interface MTLFunctionStitchingAttributeAlwaysInline : NSObject
+```
+
 #### Overview
 
-To inline functions in a call graph, instantiate an instance of this class and assign it as an attribute on the [`MTLFunctionStitchingGraph`](mtlfunctionstitchinggraph.md).
+To inline functions in a call graph, instantiate an instance of this class and assign it as an attribute on the [`MTLFunctionStitchingGraph`](./mtlfunctionstitchinggraph.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MTLFunctionStitchingAttribute](mtlfunctionstitchingattribute.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MTLFunctionStitchingAttribute](./mtlfunctionstitchingattribute.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var attributes: [any MTLFunctionStitchingAttribute]](mtlfunctionstitchinggraph/attributes.md)
+### Related Documentation
+- [var attributes: [any MTLFunctionStitchingAttribute]](./mtlfunctionstitchinggraph/attributes.md)
   A list of attributes to configure how the Metal device object generates the new stitched function.
-- [Customizing shaders using function pointers and stitching](customizing-shaders-using-function-pointers-and-stitching.md)
+### Stitched function libraries
+- [Customizing shaders using function pointers and stitching](./customizing-shaders-using-function-pointers-and-stitching.md)
   Define custom shader behavior at runtime by creating functions from existing ones and preferentially linking to others in a dynamic library.
-- [class MTLStitchedLibraryDescriptor](mtlstitchedlibrarydescriptor.md)
+- [class MTLStitchedLibraryDescriptor](./mtlstitchedlibrarydescriptor.md)
   A description of a new library of procedurally generated functions.
-- [class MTLFunctionStitchingGraph](mtlfunctionstitchinggraph.md)
+- [class MTLFunctionStitchingGraph](./mtlfunctionstitchinggraph.md)
   A description of a new stitched function.
-- [class MTLFunctionStitchingInputNode](mtlfunctionstitchinginputnode.md)
+- [class MTLFunctionStitchingInputNode](./mtlfunctionstitchinginputnode.md)
   A call graph node that describes an input to the call graph.
-- [class MTLFunctionStitchingFunctionNode](mtlfunctionstitchingfunctionnode.md)
+- [class MTLFunctionStitchingFunctionNode](./mtlfunctionstitchingfunctionnode.md)
   A call graph node that describes a function call and its inputs.
-- [protocol MTLFunctionStitchingNode](mtlfunctionstitchingnode.md)
+- [protocol MTLFunctionStitchingNode](./mtlfunctionstitchingnode.md)
   A protocol to identify call graph nodes.
-- [protocol MTLFunctionStitchingAttribute](mtlfunctionstitchingattribute.md)
+- [protocol MTLFunctionStitchingAttribute](./mtlfunctionstitchingattribute.md)
   A protocol to identify types that customize how the Metal compiler stitches a function together.
 
 

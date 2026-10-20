@@ -1,7 +1,8 @@
 # preferredScrollEdgeEffectStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The titlebar accessory’s preferred effect for content scrolling behind it.
 
@@ -14,17 +15,22 @@ The titlebar accessory’s preferred effect for content scrolling behind it.
 var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle { get set }
 ```
 
+```objc
+@property (strong) NSScrollEdgeEffectStyle * preferredScrollEdgeEffectStyle;
+```
+
 #### Discussion
 
 To allow for a soft edge on the bottom edge of a titlebar accessory:
 
-```None
+```
 titlebarAccessoryViewController.preferredScrollEdgeEffectStyle = NSScrollEdgeEffectStyle.softStyle;
 ```
 
 ## See Also
 
-- [class NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle.md)
+### Configuring the scroll edge effect
+- [class NSScrollEdgeEffectStyle](../nsscrolledgeeffectstyle.md)
   Styles for a scroll view’s edge effect.
 
 

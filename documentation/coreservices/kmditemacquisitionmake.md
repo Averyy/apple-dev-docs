@@ -1,7 +1,8 @@
 # kMDItemAcquisitionMake
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The manufacturer of the device used to aquire the document contents. A CFString.
 
@@ -12,6 +13,10 @@ The manufacturer of the device used to aquire the document contents. A CFString.
 
 ```swift
 let kMDItemAcquisitionMake: CFString!
+```
+
+```c
+const CFStringRef kMDItemAcquisitionMake;
 ```
 
 

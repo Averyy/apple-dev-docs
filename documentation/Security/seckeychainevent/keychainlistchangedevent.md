@@ -1,7 +1,8 @@
 # SecKeychainEvent.keychainListChangedEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the list of keychains has changed.
 
@@ -13,6 +14,10 @@ Indicates the list of keychains has changed.
 
 ```swift
 case keychainListChangedEvent
+```
+
+```c
+kSecKeychainListChangedEvent
 ```
 
 

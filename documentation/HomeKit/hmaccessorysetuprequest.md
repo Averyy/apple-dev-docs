@@ -1,7 +1,8 @@
 # HMAccessorySetupRequest
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes how to add and setup up new accessories.
 
@@ -16,6 +17,10 @@ An object that describes how to add and setup up new accessories.
 class HMAccessorySetupRequest
 ```
 
+```objc
+@interface HMAccessorySetupRequest : NSObject
+```
+
 #### Overview
 
 Use this class to provide steps for the user to add one or more accessories to a particular home, and follow up with additional setup.
@@ -23,49 +28,50 @@ Use this class to provide steps for the user to add one or more accessories to a
 ## Topics
 
 ### Setting up accessorices
-- [var homeUniqueIdentifier: UUID?](hmaccessorysetuprequest/homeuniqueidentifier.md)
+- [var homeUniqueIdentifier: UUID?](./hmaccessorysetuprequest/homeuniqueidentifier.md)
   The identifier corresponding to the home that the accessory should be added to when being set up.
-- [var payload: HMAccessorySetupPayload?](hmaccessorysetuprequest/payload.md)
+- [var payload: HMAccessorySetupPayload?](./hmaccessorysetuprequest/payload.md)
   The payload to use for accessory setup.
-- [var suggestedAccessoryName: String?](hmaccessorysetuprequest/suggestedaccessoryname.md)
+- [var suggestedAccessoryName: String?](./hmaccessorysetuprequest/suggestedaccessoryname.md)
   The name that the framework suggests when the user names the accessory being set up.
-- [var suggestedRoomUniqueIdentifier: UUID?](hmaccessorysetuprequest/suggestedroomuniqueidentifier.md)
+- [var suggestedRoomUniqueIdentifier: UUID?](./hmaccessorysetuprequest/suggestedroomuniqueidentifier.md)
   The identifier corresponding to the room that the framework suggests.
 ### Instance Properties
-- [var matterPayload: MTRSetupPayload?](hmaccessorysetuprequest/matterpayload.md)
+- [var matterPayload: MTRSetupPayload?](./hmaccessorysetuprequest/matterpayload.md)
 ### Initializers
-- [init()](hmaccessorysetuprequest/init.md)
+- [init()](./hmaccessorysetuprequest/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMAccessorySetupManager](hmaccessorysetupmanager.md)
+### Accessories
+- [class HMAccessorySetupManager](./hmaccessorysetupmanager.md)
   An object that setups up new accessories.
-- [class HMAccessorySetupResult](hmaccessorysetupresult.md)
+- [class HMAccessorySetupResult](./hmaccessorysetupresult.md)
   A result object describing information about a successful accessory setup request.
-- [Interacting with a home automation network](interacting-with-a-home-automation-network.md)
+- [Interacting with a home automation network](./interacting-with-a-home-automation-network.md)
   Find all the automation accessories in the primary home and control their state.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](./hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
-- [class HMService](hmservice.md)
+- [class HMService](./hmservice.md)
   A controllable feature of an accessory, like a light attached to a garage door opener.
-- [class HMCharacteristic](hmcharacteristic.md)
+- [class HMCharacteristic](./hmcharacteristic.md)
   A specific characteristic of a service, like the brightness of a dimmable light or its color temperature.
-- [class HMMediaSourceDisplayOrderProfile](hmmediasourcedisplayorderprofile.md)
+- [class HMMediaSourceDisplayOrderProfile](./hmmediasourcedisplayorderprofile.md)
   An interface from which to read and, if allowed by the accessory, update the ordering of input sources.
 
 

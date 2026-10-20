@@ -1,14 +1,15 @@
 # ElectricVehicleStatusEvent.Status.chargingActive(_:)
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates that the vehicle is actively charging.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,11 @@ case chargingActive(ElectricVehicleChargingReason.ActiveReason)
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../../providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 
-When your app provides status for a load event, communicate charging activity using this method. The [`ElectricVehicleChargingReason.ActiveReason`](electricvehiclechargingreason/activereason.md) arguments you provide explain why charging starts, such as when cleaner grid conditions or lower rates become available. For example:
+When your app provides status for a load event, communicate charging activity using this method. The [`ElectricVehicleChargingReason.ActiveReason`](../../electricvehiclechargingreason/activereason.md) arguments you provide explain why charging starts, such as when cleaner grid conditions or lower rates become available. For example:
 
 ```swift
 let activeEvent = ElectricVehicleStatusEvent(
@@ -38,11 +39,12 @@ let activeEvent = ElectricVehicleStatusEvent(
 )
 ```
 
-If your app adopts the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), include the load event’s session identifier to correlate the active status with energy consumption data for a specific charging session in the Home app.
+If your app adopts the [`EnergyKit LoadEvents Entitlement`](../../../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md), include the load event’s session identifier to correlate the active status with energy consumption data for a specific charging session in the Home app.
 
 ## See Also
 
-- [case chargingIdle(ElectricVehicleChargingReason.IdleReason)](electricvehiclestatusevent/status-swift.enum/chargingidle(_:).md)
+### Charging states
+- [case chargingIdle(ElectricVehicleChargingReason.IdleReason)](./chargingidle%28_%29.md)
   A status that indicates the charger is connected but the vehicle isn’t charging.
 
 

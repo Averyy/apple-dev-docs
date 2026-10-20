@@ -1,7 +1,8 @@
 # contains(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
 
@@ -53,7 +54,7 @@ let hasBigPurchase = expenses.contains { $0 > 100 }
 // 'hasBigPurchase' == true
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

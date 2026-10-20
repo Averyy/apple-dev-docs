@@ -1,7 +1,8 @@
 # CKSyncEnginePendingRecordZoneChangeType
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type of change in a record zone that needs to be sent to the server.
 
@@ -20,23 +21,27 @@ A type of change in a record zone that needs to be sent to the server.
 enum CKSyncEnginePendingRecordZoneChangeType
 ```
 
+```c
+enum CKSyncEnginePendingRecordZoneChangeType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CKSyncEnginePendingRecordZoneChangeType.deleteRecord](cksyncenginependingrecordzonechangetype/deleterecord.md)
-- [CKSyncEnginePendingRecordZoneChangeType.saveRecord](cksyncenginependingrecordzonechangetype/saverecord.md)
+- [CKSyncEnginePendingRecordZoneChangeType.deleteRecord](./cksyncenginependingrecordzonechangetype/deleterecord.md)
+- [CKSyncEnginePendingRecordZoneChangeType.saveRecord](./cksyncenginependingrecordzonechangetype/saverecord.md)
 ### Initializers
-- [init?(rawValue: Int)](cksyncenginependingrecordzonechangetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cksyncenginependingrecordzonechangetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

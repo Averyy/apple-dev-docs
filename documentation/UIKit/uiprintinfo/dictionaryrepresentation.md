@@ -1,7 +1,8 @@
 # dictionaryRepresentation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary representation of a print-information object.
 
@@ -17,17 +18,22 @@ A dictionary representation of a print-information object.
 var dictionaryRepresentation: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary * dictionaryRepresentation;
+```
+
 #### Return Value
 
 A dictionary representation of a `UIPrintInfo` object that can be archived and used to create a new `UIPrintInfo` object. Returns `nil` if no dictionary can be created.
 
 ## See Also
 
-- [class func printInfo() -> UIPrintInfo](uiprintinfo/printinfo.md)
+### Creating a print info object
+- [class func printInfo() -> UIPrintInfo](./printinfo%28%29.md)
   Returns a print-information object initialized with default values.
-- [init(dictionary: [AnyHashable : Any]?)](uiprintinfo/init(dictionary:).md)
+- [init(dictionary: [AnyHashable : Any]?)](./init%28dictionary%29.md)
   Returns a print-information object that is initialized with the data in the passed-in dictionary.
-- [init?(coder: NSCoder)](uiprintinfo/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a print info object from data in an unarchiver.
 
 

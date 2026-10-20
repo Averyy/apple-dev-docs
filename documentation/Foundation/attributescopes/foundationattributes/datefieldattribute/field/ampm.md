@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.amPM
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

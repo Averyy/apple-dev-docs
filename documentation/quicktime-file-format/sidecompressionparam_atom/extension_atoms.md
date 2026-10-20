@@ -1,7 +1,8 @@
 # Extension atoms
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 Atoms containing the necessary out-of-band decompression parameters for the sound decompressor.
 
@@ -11,9 +12,10 @@ For MPEG-4 audio (`'mp4a'`), this includes elementary stream descriptor (`'esds'
 
 ## See Also
 
-- [Size](sidecompressionparam_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the decompression parameters atom.
-- [Type](sidecompressionparam_atom/type.md)
+- [Type](./type.md)
   An unsigned 32-bit field.
 
 

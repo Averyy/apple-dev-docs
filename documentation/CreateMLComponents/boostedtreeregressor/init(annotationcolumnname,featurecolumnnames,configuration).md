@@ -1,7 +1,8 @@
 # init(annotationColumnName:featureColumnNames:configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a boosted tree regressor.
 
@@ -22,9 +23,11 @@ init(annotationColumnName: String, featureColumnNames: [String], configuration: 
 
 #### Discussion
 
-- Parameters - annotationColumnName: The name of the column containing the ground truth values.
-- featureColumnNames: The names of the feature columns.
-- configuration: The configuration.
+- Parameters
+
+  - annotationColumnName: The name of the column containing the ground truth values.
+  - featureColumnNames: The names of the feature columns.
+  - configuration: The configuration.
 
 
 ---

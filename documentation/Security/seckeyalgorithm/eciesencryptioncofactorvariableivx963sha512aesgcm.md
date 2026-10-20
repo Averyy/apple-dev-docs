@@ -1,7 +1,8 @@
 # eciesEncryptionCofactorVariableIVX963SHA512AESGCM
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let eciesEncryptionCofactorVariableIVX963SHA512AESGCM: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA512AESGCM;
 ```
 
 

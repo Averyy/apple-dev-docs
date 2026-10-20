@@ -1,14 +1,15 @@
 # kSSCPrinterCmd_RECEIVE_DIAGNOSTICS_RESULTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSSCPrinterCmd_RECEIVE_DIAGNOSTICS_RESULTS = 0x1C
 ```
 

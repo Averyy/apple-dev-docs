@@ -1,7 +1,8 @@
 # targetSize
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the bounding box of the items being annotated.
 

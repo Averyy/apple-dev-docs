@@ -1,7 +1,8 @@
 # MTRInteractionError.Code.unreportableAttribute
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case unreportableAttribute
+```
+
+```c
+MTRInteractionErrorCodeUnreportableAttribute
 ```
 
 

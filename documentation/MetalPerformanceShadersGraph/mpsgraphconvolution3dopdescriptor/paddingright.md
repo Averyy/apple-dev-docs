@@ -1,7 +1,8 @@
 # paddingRight
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of zeros added on the right side of the source tensor.
 
@@ -17,6 +18,10 @@ The number of zeros added on the right side of the source tensor.
 
 ```swift
 var paddingRight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingRight;
 ```
 
 

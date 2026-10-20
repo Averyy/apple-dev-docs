@@ -1,18 +1,25 @@
 # init(circularRegionWithCenter:radius:identifier:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a region object defining a circular area.
 
 **Availability**:
-- macOS 10.7+
-- watchOS 2.0+
+- macOS 10.7+ - Deprecated in 10.10
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`init(center:radius:identifier:)`](../clcircularregion/init%28center,radius,identifier%29.md) in [`CLCircularRegion`](../clcircularregion.md) instead.
 
 ## Declaration
 
 ```swift
 init(circularRegionWithCenter center: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String)
+```
+
+```objc
+- (instancetype) initCircularRegionWithCenter:(CLLocationCoordinate2D) center radius:(CLLocationDistance) radius identifier:(NSString *) identifier;
 ```
 
 #### Return Value
@@ -21,7 +28,7 @@ An initialized region object.
 
 #### Discussion
 
-In iOS, use a [`CLCircularRegion`](clcircularregion.md) object to manage geographic regions.
+In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 
 ## Parameters
 
@@ -31,11 +38,12 @@ In iOS, use a [`CLCircularRegion`](clcircularregion.md) object to manage geograp
 
 ## See Also
 
-- [func contains(CLLocationCoordinate2D) -> Bool](clregion/contains(_:).md)
+### Deprecated
+- [func contains(CLLocationCoordinate2D) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the region contains the specified coordinate.
-- [var center: CLLocationCoordinate2D](clregion/center.md)
+- [var center: CLLocationCoordinate2D](./center.md)
   The center point of the region.
-- [var radius: CLLocationDistance](clregion/radius.md)
+- [var radius: CLLocationDistance](./radius.md)
   The radius (measured in meters) that defines the region’s outer boundary.
 
 

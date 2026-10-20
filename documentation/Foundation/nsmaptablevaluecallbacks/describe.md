@@ -1,7 +1,8 @@
 # describe
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Points to the function that produces an autoreleased NSString * describing the given element. If `NULL`, then the map table produces a generic string description.
 
@@ -18,6 +19,10 @@ Points to the function that produces an autoreleased NSString * describing the g
 
 ```swift
 var describe: ((NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer) -> String?)?
+```
+
+```c
+NSString *(*)(NSMapTable *, const void *) describe;
 ```
 
 

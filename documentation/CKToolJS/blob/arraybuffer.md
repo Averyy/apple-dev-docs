@@ -1,14 +1,15 @@
 # arrayBuffer
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 Promise arrayBuffer();
 ```
 

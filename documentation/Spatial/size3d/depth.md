@@ -1,7 +1,8 @@
 # depth
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth value.
 
@@ -22,13 +23,14 @@ var depth: Double { get set }
 
 ## See Also
 
-- [var width: Double](size3d/width.md)
+### Inspecting a 3D size’s properties
+- [var width: Double](./width.md)
   The width value.
-- [var height: Double](size3d/height.md)
+- [var height: Double](./height.md)
   The height value.
-- [var size: Size3D](size3d/size.md)
+- [var size: Size3D](./size.md)
   The size value.
-- [var vector: simd_double3](size3d/vector.md)
+- [var vector: simd_double3](./vector.md)
 
 
 ---

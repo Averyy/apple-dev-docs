@@ -1,7 +1,8 @@
 # MusicLibraryRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch items from the user’s music library.
 
@@ -23,35 +24,35 @@ struct MusicLibraryRequest<MusicItemType> where MusicItemType : MusicLibraryRequ
 ## Topics
 
 ### Initializers
-- [init()](musiclibraryrequest/init.md)
+- [init()](./musiclibraryrequest/init%28%29.md)
   Creates a request to fetch items from the library.
 ### Instance Properties
-- [var includeOnlyDownloadedContent: Bool](musiclibraryrequest/includeonlydownloadedcontent.md)
+- [var includeOnlyDownloadedContent: Bool](./musiclibraryrequest/includeonlydownloadedcontent.md)
   A Boolean value that indicates whether the library response should only include items downloaded on the user’s device.
-- [var limit: Int](musiclibraryrequest/limit.md)
+- [var limit: Int](./musiclibraryrequest/limit.md)
   A limit for the number of items to return in the library response.
-- [var offset: Int](musiclibraryrequest/offset.md)
+- [var offset: Int](./musiclibraryrequest/offset.md)
   An offset for the request.
 ### Instance Methods
-- [func filter(matching: KeyPath<MusicItemType.LibraryFilter, String?>, contains: String)](musiclibraryrequest/filter(matching:contains:)-4q231.md)
+- [func filter(matching: KeyPath<MusicItemType.LibraryFilter, String?>, contains: String)](./musiclibraryrequest/filter%28matching,contains%29-4q231.md)
   Filters items by a given optional property that contains a specific string.
-- [func filter(matching: KeyPath<MusicItemType.LibraryFilter, String>, contains: String)](musiclibraryrequest/filter(matching:contains:)-8wwn3.md)
+- [func filter(matching: KeyPath<MusicItemType.LibraryFilter, String>, contains: String)](./musiclibraryrequest/filter%28matching,contains%29-8wwn3.md)
   Filters items by a given property that contains a specific string.
-- [func filter<RelatedMusicItemType>(matching: KeyPath<MusicItemType.LibraryFilter, MusicItemCollection<RelatedMusicItemType>?>, contains: RelatedMusicItemType)](musiclibraryrequest/filter(matching:contains:)-9756l.md)
+- [func filter<RelatedMusicItemType>(matching: KeyPath<MusicItemType.LibraryFilter, MusicItemCollection<RelatedMusicItemType>?>, contains: RelatedMusicItemType)](./musiclibraryrequest/filter%28matching,contains%29-9756l.md)
   Filters items by a given relationship that matches a specific value.
-- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, equalTo: Value)](musiclibraryrequest/filter(matching:equalto:)-5jgfj.md)
+- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, equalTo: Value)](./musiclibraryrequest/filter%28matching,equalto%29-5jgfj.md)
   Filters items by a given property that matches a specific value.
-- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, equalTo: Value?)](musiclibraryrequest/filter(matching:equalto:)-8efya.md)
+- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, equalTo: Value?)](./musiclibraryrequest/filter%28matching,equalto%29-8efya.md)
   Filters items by a given optional property that matches a specific value.
-- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, memberOf: [Value?])](musiclibraryrequest/filter(matching:memberof:)-2u2ia.md)
+- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, memberOf: [Value?])](./musiclibraryrequest/filter%28matching,memberof%29-2u2ia.md)
   Filters items by an optional property for an array of possible values.
-- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, memberOf: [Value])](musiclibraryrequest/filter(matching:memberof:)-3e2ab.md)
+- [func filter<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, memberOf: [Value])](./musiclibraryrequest/filter%28matching,memberof%29-3e2ab.md)
   Filters items by a property for an array of possible values.
-- [func filter(text: String)](musiclibraryrequest/filter(text:).md)
+- [func filter(text: String)](./musiclibraryrequest/filter%28text%29.md)
   Filters items by a specific string.
-- [func response() async throws -> MusicLibraryResponse<MusicItemType>](musiclibraryrequest/response.md)
+- [func response() async throws -> MusicLibraryResponse<MusicItemType>](./musiclibraryrequest/response%28%29.md)
   Fetches items from the user’s music library.
-- [func sort<Value>(by: KeyPath<MusicItemType.LibrarySortProperties, Value>, ascending: Bool)](musiclibraryrequest/sort(by:ascending:).md)
+- [func sort<Value>(by: KeyPath<MusicItemType.LibrarySortProperties, Value>, ascending: Bool)](./musiclibraryrequest/sort%28by,ascending%29.md)
   Sorts items by a specified property.
 
 

@@ -1,7 +1,8 @@
 # TCControlLabel.Role.button
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A label for a button input controller.
 
@@ -16,9 +17,14 @@ A label for a button input controller.
 case button
 ```
 
+```c
+TCControlLabelRoleButton
+```
+
 ## See Also
 
-- [TCControlLabel.Role.directionPad](tccontrollabel/role-swift.enum/directionpad.md)
+### Roles
+- [TCControlLabel.Role.directionPad](./directionpad.md)
   A label for a direction pad controller.
 
 

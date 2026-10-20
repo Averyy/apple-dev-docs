@@ -1,7 +1,8 @@
 # kCGImagePropertyCIFFFocusMode
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The focus mode.
 
@@ -20,13 +21,18 @@ The focus mode.
 let kCGImagePropertyCIFFFocusMode: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyCIFFFocusMode;
+```
+
 ## See Also
 
-- [let kCGImagePropertyCIFFLensMaxMM: CFString](kcgimagepropertycifflensmaxmm.md)
+### Lens and Focus
+- [let kCGImagePropertyCIFFLensMaxMM: CFString](./kcgimagepropertycifflensmaxmm.md)
   The maximum lens length in millimeters.
-- [let kCGImagePropertyCIFFLensMinMM: CFString](kcgimagepropertycifflensminmm.md)
+- [let kCGImagePropertyCIFFLensMinMM: CFString](./kcgimagepropertycifflensminmm.md)
   The minimum lens length in millimeters.
-- [let kCGImagePropertyCIFFLensModel: CFString](kcgimagepropertycifflensmodel.md)
+- [let kCGImagePropertyCIFFLensModel: CFString](./kcgimagepropertycifflensmodel.md)
   The lens model.
 
 

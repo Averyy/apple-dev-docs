@@ -1,7 +1,8 @@
 # tetrahedron(height:in:restitution:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a regular tetrahedron, a pyramid with four triangular faces, that the player tosses during gameplay.
 
@@ -28,17 +29,18 @@ Higher restitution values indicate materials that conserve kinetic energy during
 
 ## See Also
 
-- [static func cube(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/cube(height:in:restitution:).md)
+### Creating geometric shapes
+- [static func cube(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./cube%28height,in,restitution%29.md)
   Creates a cube that the player tosses during gameplay.
-- [static func decahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/decahedron(height:in:restitution:).md)
+- [static func decahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./decahedron%28height,in,restitution%29.md)
   Creates a decahedron, a symmetrical, ten-faced polyhedron with kite-shaped faces, that the player tosses during gameplay.
-- [static func dodecahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/dodecahedron(height:in:restitution:).md)
+- [static func dodecahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./dodecahedron%28height,in,restitution%29.md)
   Creates a regular dodecahedron, a shape with 12 pentagonal faces, that the player tosses during gameplay.
-- [static func icosahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/icosahedron(height:in:restitution:).md)
+- [static func icosahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./icosahedron%28height,in,restitution%29.md)
   Creates a regular icosahedron, a shape with 20 triangular faces, that the player tosses during gameplay.
-- [static func octahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/octahedron(height:in:restitution:).md)
+- [static func octahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./octahedron%28height,in,restitution%29.md)
   Creates a regular octahedron, a shape with 8 triangular faces, that the player tosses during gameplay.
-- [static func sphere(radius: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/sphere(radius:in:restitution:).md)
+- [static func sphere(radius: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./sphere%28radius,in,restitution%29.md)
   Creates a sphere with the specified radius that the player tosses during gameplay.
 
 

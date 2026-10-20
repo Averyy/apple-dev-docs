@@ -1,7 +1,8 @@
 # subjectType
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The static type of the subject being reflected.
 

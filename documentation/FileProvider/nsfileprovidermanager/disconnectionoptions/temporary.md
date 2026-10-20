@@ -1,7 +1,8 @@
 # temporary
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A temporary disconnection.
 
@@ -14,9 +15,13 @@ A temporary disconnection.
 static var temporary: NSFileProviderManager.DisconnectionOptions { get }
 ```
 
+```c
+NSFileProviderManagerDisconnectionOptionsTemporary
+```
+
 #### Discussion
 
-Include the [`temporary`](nsfileprovidermanager/disconnectionoptions/temporary.md) value when the disconnection is temporary, such as when updating the domain. Exclude this value when the disconnection isn’t temporary, like when the user logs out.
+Include the [`temporary`](./temporary.md) value when the disconnection is temporary, such as when updating the domain. Exclude this value when the disconnection isn’t temporary, like when the user logs out.
 
 
 ---

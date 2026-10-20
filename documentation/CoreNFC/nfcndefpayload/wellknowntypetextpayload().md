@@ -1,7 +1,8 @@
 # wellKnownTypeTextPayload()
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text and locale of a valid Well Known Type Text payload.
 

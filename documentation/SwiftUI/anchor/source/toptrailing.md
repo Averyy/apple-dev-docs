@@ -1,7 +1,8 @@
 # topTrailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -18,10 +19,13 @@
 static var topTrailing: Anchor<CGPoint>.Source { get }
 ```
 
+Available when `Value` is `CGPoint`.
+
 ## See Also
 
-- [static var topLeading: Anchor<CGPoint>.Source](anchor/source/topleading.md)
-- [static var top: Anchor<CGPoint>.Source](anchor/source/top.md)
+### Getting top anchor sources
+- [static var topLeading: Anchor<CGPoint>.Source](./topleading.md)
+- [static var top: Anchor<CGPoint>.Source](./top.md)
 
 
 ---

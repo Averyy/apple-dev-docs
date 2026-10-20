@@ -1,22 +1,27 @@
 # clumpID
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Only valid if `kAudioUnitParameterFlag_HasClump` is set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var clumpID: UInt32
+```
+
+```c
+UInt32 clumpID;
 ```
 
 

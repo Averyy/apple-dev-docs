@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.FooterMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the list’s footer mode.
 
@@ -10,7 +11,7 @@ Constants that describe the list’s footer mode.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,26 +22,27 @@ enum FooterMode
 ## Topics
 
 ### Footer modes
-- [UICollectionLayoutListConfiguration.FooterMode.none](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum/none.md)
+- [UICollectionLayoutListConfiguration.FooterMode.none](./footermode-swift.enum/none.md)
   No footers are shown.
-- [UICollectionLayoutListConfiguration.FooterMode.supplementary](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum/supplementary.md)
+- [UICollectionLayoutListConfiguration.FooterMode.supplementary](./footermode-swift.enum/supplementary.md)
   A footer mode that uses supplementary views to show footers.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var headerMode: UICollectionLayoutListConfiguration.HeaderMode](uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.property.md)
+### Configuring headers and footers
+- [var headerMode: UICollectionLayoutListConfiguration.HeaderMode](./headermode-swift.property.md)
   The type of header to use for the list.
-- [var footerMode: UICollectionLayoutListConfiguration.FooterMode](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.property.md)
+- [var footerMode: UICollectionLayoutListConfiguration.FooterMode](./footermode-swift.property.md)
   The type of footer to use for the list.
-- [UICollectionLayoutListConfiguration.HeaderMode](uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.enum.md)
+- [UICollectionLayoutListConfiguration.HeaderMode](./headermode-swift.enum.md)
   Constants that describe the list’s header mode.
-- [var headerTopPadding: CGFloat?](uicollectionlayoutlistconfiguration-swift.struct/headertoppadding.md)
+- [var headerTopPadding: CGFloat?](./headertoppadding.md)
   The amount of padding above each section header.
 
 

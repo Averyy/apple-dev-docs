@@ -1,7 +1,8 @@
 # setBuffers(_:offsets:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds multiple buffers to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
 
@@ -11,7 +12,7 @@ Binds multiple buffers to the buffer argument table at once, allowing compute ke
 - Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,27 +26,28 @@ func setBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>
 
 For buffers binding to an argument using the `device` address space, align the offset to the data type’s size. The maximum size for an offset is `16` bytes.
 
-For buffers in the `constant` address space, the minimum alignment depends on the hardware running your app. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on each Apple GPU family.
+For buffers in the `constant` address space, the minimum alignment depends on the hardware running your app. See the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on each Apple GPU family.
 
 Rebinding an already bound buffer causes a Metal error.
 
 ## Parameters
 
-- `buffers`: The [`MTLBuffer`](mtlbuffer.md) instances to bind to the buffer argument table.
+- `buffers`: The [`MTLBuffer`](../mtlbuffer.md) instances to bind to the buffer argument table.
 - `offsets`: An array of offsets, each of which specifies where the data begins, in bytes, from the start of its corresponding buffer.
 - `range`: The argument table indices to bind each of the `buffers` to, in the order they appear.
 
 ## See Also
 
-- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlcomputecommandencoder/setbuffer(_:offset:index:).md)
+### Binding buffers
+- [func setBuffer((any MTLBuffer)?, offset: Int, index: Int)](./setbuffer%28_,offset,index%29.md)
   Binds a buffer to the buffer argument table, allowing compute kernels to access its data on the GPU.
-- [func setBuffer(any MTLBuffer, offset: Int, attributeStride: Int, index: Int)](mtlcomputecommandencoder/setbuffer(_:offset:attributestride:index:).md)
+- [func setBuffer(any MTLBuffer, offset: Int, attributeStride: Int, index: Int)](./setbuffer%28_,offset,attributestride,index%29.md)
   Binds a buffer with a stride to the buffer argument table, allowing compute kernels to access its data on the GPU.
-- [func setBuffers([(any MTLBuffer)?], offsets: [Int], attributeStrides: [Int], range: Range<Int>)](mtlcomputecommandencoder/setbuffers(_:offsets:attributestrides:range:).md)
+- [func setBuffers([(any MTLBuffer)?], offsets: [Int], attributeStrides: [Int], range: Range<Int>)](./setbuffers%28_,offsets,attributestrides,range%29.md)
   Binds multiple buffers with data in stride to the buffer argument table at once, allowing compute kernels to access their data on the GPU.
-- [func setBufferOffset(Int, index: Int)](mtlcomputecommandencoder/setbufferoffset(_:index:).md)
+- [func setBufferOffset(Int, index: Int)](./setbufferoffset%28_,index%29.md)
   Changes where the data begins in a buffer already bound to the buffer argument table.
-- [func setBufferOffset(offset: Int, attributeStride: Int, index: Int)](mtlcomputecommandencoder/setbufferoffset(offset:attributestride:index:).md)
+- [func setBufferOffset(offset: Int, attributeStride: Int, index: Int)](./setbufferoffset%28offset,attributestride,index%29.md)
   Changes where the data begins and the distance between adjacent elements in a buffer already bound to the buffer argument table.
 
 

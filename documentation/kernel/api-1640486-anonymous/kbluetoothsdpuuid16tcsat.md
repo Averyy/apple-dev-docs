@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16TCSAT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16TCSAT = 0x0006
 ```
 

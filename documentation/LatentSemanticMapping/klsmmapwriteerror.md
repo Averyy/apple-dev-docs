@@ -1,13 +1,14 @@
 # kLSMMapWriteError
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error code that indicates a map writing error.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ An error code that indicates a map writing error.
 var kLSMMapWriteError: Int { get }
 ```
 
+```c
+kLSMMapWriteError
+```
+
 ## See Also
 
-- [var kLSMMapOutOfState: Int](klsmmapoutofstate.md)
+### Errors
+- [var kLSMMapOutOfState: Int](./klsmmapoutofstate.md)
   An error code that indicates you can’t issue the call in the current map state.
-- [var kLSMMapNoSuchCategory: Int](klsmmapnosuchcategory.md)
+- [var kLSMMapNoSuchCategory: Int](./klsmmapnosuchcategory.md)
   An error code that indicates an invalid category.
-- [var kLSMMapBadPath: Int](klsmmapbadpath.md)
+- [var kLSMMapBadPath: Int](./klsmmapbadpath.md)
   An error code that indicates the specified URL doesn’t exist.
-- [var kLSMMapBadCluster: Int](klsmmapbadcluster.md)
+- [var kLSMMapBadCluster: Int](./klsmmapbadcluster.md)
   An error code that indicates the specified clusters are invalid.
-- [var kLSMMapOverflow: Int](klsmmapoverflow.md)
+- [var kLSMMapOverflow: Int](./klsmmapoverflow.md)
   An error code that indicates you can’t add more data to the map.
 
 

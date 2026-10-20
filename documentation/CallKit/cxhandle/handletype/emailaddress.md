@@ -1,7 +1,8 @@
 # CXHandle.HandleType.emailAddress
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An email address.
 
@@ -18,11 +19,16 @@ An email address.
 case emailAddress
 ```
 
+```c
+CXHandleTypeEmailAddress
+```
+
 ## See Also
 
-- [CXHandle.HandleType.generic](cxhandle/handletype/generic.md)
+### Constants
+- [CXHandle.HandleType.generic](./generic.md)
   An unspecified type of handle.
-- [CXHandle.HandleType.phoneNumber](cxhandle/handletype/phonenumber.md)
+- [CXHandle.HandleType.phoneNumber](./phonenumber.md)
   A phone number.
 
 

@@ -1,7 +1,8 @@
 # Query Target CPA Recommendations
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve target cost-per-acquisition recommendations for campaigns using a Maximize Conversions bid strategy.
 
@@ -10,7 +11,7 @@ Retrieve target cost-per-acquisition recommendations for campaigns using a Maxim
 
 #### Discussion
 
-Each [`TargetCpaRecommendation`](targetcparecommendation.md) result includes:
+Each [`TargetCpaRecommendation`](./targetcparecommendation.md) result includes:
 
 - `recommendedTargetCPA`: the suggested new target CPA
 - `bidStrategy`: the campaign’s current bid strategy context
@@ -20,7 +21,7 @@ Only campaigns using a Maximize Conversions bid strategy will receive recommenda
 
 > **Note**: A target CPA is a goal the system optimizes toward, not a bid. The auto-bidder sets bids internally to try to meet the target.
 
-See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -31,7 +32,7 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 | `id` | string | `EQUALS`, `IN` | Optional. The recommendation’s unique identifier. |
 | `state` | string (enum) | `EQUALS`, `IN` | Optional. `AVAILABLE`, `APPLIED`, `DISMISSED`, or `DELETE`. |
 | `status` | string (enum) | `EQUALS`, `IN` | Optional. `ENABLED`, `DISABLED`, or `DELETED`. |
-| `recommendationType` | string (enum) | `EQUALS`, `IN` | Optional. The recommendation category, for example `TCPA` or `STCPA`. See [`RecommendationCategory`](recommendationcategory.md). |
+| `recommendationType` | string (enum) | `EQUALS`, `IN` | Optional. The recommendation category, for example `TCPA` or `STCPA`. See [`RecommendationCategory`](./recommendationcategory.md). |
 | `campaignId` | integer | `EQUALS`, `IN` | Optional. Filter by a specific campaign. |
 | `campaignName` | string | `EQUALS`, `CONTAINS_ANY`, `STARTS_WITH` | Optional. The campaign’s display name. |
 | `bidStrategy` | object | `EQUALS`, `IN` | Optional. The campaign’s current bid strategy. |
@@ -150,23 +151,38 @@ POST /v1/recommendations/target-cpas/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-See [`RecommendationQueryRequest`](recommendationqueryrequest.md).
+**Content-Type**: `application/json`  
+**Type**: `RecommendationQueryRequest`
+
+See [`RecommendationQueryRequest`](./recommendationqueryrequest.md).
+
+## Responses
+
+- `200` OK (`RecommendationQueryTargetCpaResponse`, `application/json`)
+- `400` Bad Request (`RecommendationResponseBody`, `application/json`)
+- `401` Unauthorized (`RecommendationResponseBody`, `application/json`)
+- `403` Forbidden (`RecommendationResponseBody`, `application/json`)
+- `404` Not Found (`RecommendationResponseBody`, `application/json`)
+- `429` Too Many Requests (`RecommendationResponseBody`, `application/json`)
+- `500` Internal Server Error (`RecommendationResponseBody`, `application/json`)
 
 ## See Also
 
-- [Apply Target CPA Recommendations](apply-target-cpa-recommendations.md)
+- [Apply Target CPA Recommendations](./apply-target-cpa-recommendations.md)
   Apply one or more target CPA recommendations.
-- [Dismiss Target CPA Recommendations](dismiss-target-cpa-recommendations.md)
+- [Dismiss Target CPA Recommendations](./dismiss-target-cpa-recommendations.md)
   Dismiss one or more target CPA recommendations without changing the campaign’s bid strategy.
-- [Query Daily Budget Recommendations](query-daily-budget-recommendations.md)
+- [Query Daily Budget Recommendations](./query-daily-budget-recommendations.md)
   Retrieve daily budget recommendations for campaigns that may have more opportunities.
-- [Apply Daily Budget Recommendations](apply-daily-budget-recommendations.md)
+- [Apply Daily Budget Recommendations](./apply-daily-budget-recommendations.md)
   Apply one or more daily budget recommendations, updating the campaign’s daily budget to the suggested amount.
-- [Dismiss Daily Budget Recommendations](dismiss-daily-budget-recommendations.md)
+- [Dismiss Daily Budget Recommendations](./dismiss-daily-budget-recommendations.md)
   Dismiss one or more daily budget recommendations without changing the campaign’s budget.
 
 

@@ -1,12 +1,13 @@
 # NSControlTint.defaultControlTint
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current default tint setting.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The current default tint setting.
 case defaultControlTint
 ```
 
+```c
+NSDefaultControlTint
+```
+
 ## See Also
 
-- [NSControlTint.blueControlTint](nscontroltint/bluecontroltint.md)
+### System Tints
+- [NSControlTint.blueControlTint](./bluecontroltint.md)
   Aqua control tint.
-- [NSControlTint.graphiteControlTint](nscontroltint/graphitecontroltint.md)
+- [NSControlTint.graphiteControlTint](./graphitecontroltint.md)
   Graphite control tint.
-- [NSControlTint.clearControlTint](nscontroltint/clearcontroltint.md)
+- [NSControlTint.clearControlTint](./clearcontroltint.md)
   Clear control tint.
 
 

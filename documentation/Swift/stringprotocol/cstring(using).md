@@ -1,7 +1,8 @@
 # cString(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the string as a C string using a given encoding.
 

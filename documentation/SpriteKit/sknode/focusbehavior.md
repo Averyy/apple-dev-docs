@@ -1,7 +1,8 @@
 # focusBehavior
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The focus behavior for a node.
 
@@ -19,11 +20,16 @@ The focus behavior for a node.
 var focusBehavior: SKNodeFocusBehavior { get set }
 ```
 
+```objc
+@property (nonatomic) SKNodeFocusBehavior focusBehavior;
+```
+
 ## See Also
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+### Handling User Input
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
   Enable your node to respond to user input, like touches or mouse clicks.
-- [var isUserInteractionEnabled: Bool](sknode/isuserinteractionenabled.md)
+- [var isUserInteractionEnabled: Bool](./isuserinteractionenabled.md)
   A Boolean value that indicates whether the node receives touch events.
 
 

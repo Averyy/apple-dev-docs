@@ -1,7 +1,8 @@
 # byteCount
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bytes in a SHA3-512 digest.
 

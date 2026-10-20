@@ -1,7 +1,8 @@
 # fileDataRepresentation()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates and returns a flat data representation of the photo and its attachments.
 
@@ -18,14 +19,18 @@ Generates and returns a flat data representation of the photo and its attachment
 func fileDataRepresentation() -> Data?
 ```
 
+```objc
+- (NSData *) fileDataRepresentation;
+```
+
 ## Mentions
 
-- [Saving captured photos](saving-captured-photos.md)
-- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
-- [Capturing photos with depth](capturing-photos-with-depth.md)
-- [Capturing thumbnail and preview images](capturing-thumbnail-and-preview-images.md)
-- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
-- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Saving captured photos](../saving-captured-photos.md)
+- [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos with depth](../capturing-photos-with-depth.md)
+- [Capturing thumbnail and preview images](../capturing-thumbnail-and-preview-images.md)
+- [Capturing uncompressed image data](../capturing-uncompressed-image-data.md)
+- [Configuring camera capture to collect a Portrait Effects matte](../configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
 #### Return Value
 
@@ -33,19 +38,20 @@ Data appropriate for writing to a file of the type specified when requesting pho
 
 #### Discussion
 
-When you request a photo capture with the [`AVCapturePhotoOutput`](avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method, the [`AVCapturePhotoSettings`](avcapturephotosettings.md) object you provide specifies image data formats (such as JPEG and HEVC) and container file formats (such as JFIF and HEIF) for the resulting image file. Calling this method formats and packages the image pixel buffer, along with metadata and other attachments created during capture (such as preview photos and depth maps), into data appropriate for writing to a file of that type.
+When you request a photo capture with the [`AVCapturePhotoOutput`](../avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method, the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) object you provide specifies image data formats (such as JPEG and HEVC) and container file formats (such as JFIF and HEIF) for the resulting image file. Calling this method formats and packages the image pixel buffer, along with metadata and other attachments created during capture (such as preview photos and depth maps), into data appropriate for writing to a file of that type.
 
 ## See Also
 
-- [func fileDataRepresentation(with: any AVCapturePhotoFileDataRepresentationCustomizer) -> Data?](avcapturephoto/filedatarepresentation(with:).md)
+### Packaging data for file output
+- [func fileDataRepresentation(with: any AVCapturePhotoFileDataRepresentationCustomizer) -> Data?](./filedatarepresentation%28with%29.md)
   Gets a customized representation of the photo data.
-- [protocol AVCapturePhotoFileDataRepresentationCustomizer](avcapturephotofiledatarepresentationcustomizer.md)
+- [protocol AVCapturePhotoFileDataRepresentationCustomizer](../avcapturephotofiledatarepresentationcustomizer.md)
   A protocol that defines the methods to implement to customize the packaging of photo data.
-- [func cgImageRepresentation() -> CGImage?](avcapturephoto/cgimagerepresentation.md)
+- [func cgImageRepresentation() -> CGImage?](./cgimagerepresentation%28%29.md)
   Extracts and returns the captured photo’s primary image as a Core Graphics image object.
-- [func previewCGImageRepresentation() -> CGImage?](avcapturephoto/previewcgimagerepresentation.md)
+- [func previewCGImageRepresentation() -> CGImage?](./previewcgimagerepresentation%28%29.md)
   Extracts and returns the captured photo’s preview image as a Core Graphics image object.
-- [func fileDataRepresentation(withReplacementMetadata: [String : Any]?, replacementEmbeddedThumbnailPhotoFormat: [String : Any]?, replacementEmbeddedThumbnailPixelBuffer: CVPixelBuffer?, replacementDepthData: AVDepthData?) -> Data?](avcapturephoto/filedatarepresentation(withreplacementmetadata:replacementembeddedthumbnailphotoformat:replacementembeddedthumbnailpixelbuffer:replacementdepthdata:).md)
+- [func fileDataRepresentation(withReplacementMetadata: [String : Any]?, replacementEmbeddedThumbnailPhotoFormat: [String : Any]?, replacementEmbeddedThumbnailPixelBuffer: CVPixelBuffer?, replacementDepthData: AVDepthData?) -> Data?](./filedatarepresentation%28withreplacementmetadata,replacementembeddedthumbnailphotoformat,replacementembeddedthumbnailpixelbuffer,replacementdepthdata%29.md)
   Generates and returns a flat data representation of the photo using the specified replacements for some or all of its attachments.
 
 

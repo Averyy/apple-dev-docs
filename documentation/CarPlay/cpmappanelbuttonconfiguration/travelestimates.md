@@ -1,7 +1,8 @@
 # travelEstimates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The travel estimates to display alongside the action buttons.
 
@@ -15,6 +16,10 @@ The travel estimates to display alongside the action buttons.
 ```swift
 @NSCopying
 var travelEstimates: CPTravelEstimates? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) CPTravelEstimates * travelEstimates;
 ```
 
 #### Discussion

@@ -1,17 +1,22 @@
 # removeItem(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a remote item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func removeItem(_ inItemName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) removeItem:(NSString *) inItemName;
 ```
 
 #### Return Value

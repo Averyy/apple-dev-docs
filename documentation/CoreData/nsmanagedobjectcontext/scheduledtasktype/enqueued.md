@@ -1,7 +1,8 @@
 # NSManagedObjectContext.ScheduledTaskType.enqueued
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The enqueued scheduled task type.
 
@@ -11,7 +12,7 @@ The enqueued scheduled task type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case enqueued
 
 #### Discussion
 
-Enqueued tasks execute asynchronously on the context’s queue. An enqueued task encapsulates an autorelease pool and a call to [`processPendingChanges()`](nsmanagedobjectcontext/processpendingchanges().md), and its behavior is analogous to [`perform(_:)`](nsmanagedobjectcontext/perform(_:).md). The context’s queue executes tasks in the order you add them.
+Enqueued tasks execute asynchronously on the context’s queue. An enqueued task encapsulates an autorelease pool and a call to [`processPendingChanges()`](../processpendingchanges%28%29.md), and its behavior is analogous to [`perform(_:)`](../perform%28_%29.md). The context’s queue executes tasks in the order you add them.
 
 ## See Also
 
-- [NSManagedObjectContext.ScheduledTaskType.immediate](nsmanagedobjectcontext/scheduledtasktype/immediate.md)
+### Scheduled Task Types
+- [NSManagedObjectContext.ScheduledTaskType.immediate](./immediate.md)
   The immediate scheduled task type.
 
 

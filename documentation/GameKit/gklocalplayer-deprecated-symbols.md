@@ -1,26 +1,27 @@
 # Deprecated symbols
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated properties
-- [var friends: [String]?](gklocalplayer/friends.md)
+- [var friends: [String]?](./gklocalplayer/friends.md)
   The player identifiers for the local player’s friends.
 ### Deprecated methods
-- [func authenticate(completionHandler: (((any Error)?) -> Void)?)](gklocalplayer/authenticate(completionhandler:).md)
+- [func authenticate(completionHandler: (((any Error)?) -> Void)?)](./gklocalplayer/authenticate%28completionhandler%29.md)
   Initializes the local player on the device.
-- [func generateIdentityVerificationSignature(completionHandler: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](gklocalplayer/generateidentityverificationsignature(completionhandler:).md)
+- [func generateIdentityVerificationSignature(completionHandler: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](./gklocalplayer/generateidentityverificationsignature%28completionhandler%29.md)
   Generates a signature so that a third-party server can authenticate the local player.
-- [func loadDefaultLeaderboardCategoryID(completionHandler: ((String?, (any Error)?) -> Void)?)](gklocalplayer/loaddefaultleaderboardcategoryid(completionhandler:).md)
+- [func loadDefaultLeaderboardCategoryID(completionHandler: ((String?, (any Error)?) -> Void)?)](./gklocalplayer/loaddefaultleaderboardcategoryid%28completionhandler%29.md)
   Loads the category identifier for the local player’s default leaderboard.
-- [func loadFriendPlayers(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadfriendplayers(completionhandler:).md)
+- [func loadFriendPlayers(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./gklocalplayer/loadfriendplayers%28completionhandler%29.md)
   Retrieves a list of player identifiers for the local player’s friends.
-- [func loadFriendsObsoleted(completionHandler: (([String]?, (any Error)?) -> Void)?)](gklocalplayer/loadfriendsobsoleted(completionhandler:).md)
+- [func loadFriendsObsoleted(completionHandler: (([String]?, (any Error)?) -> Void)?)](./gklocalplayer/loadfriendsobsoleted%28completionhandler%29.md)
   Retrieves a list of player identifiers for the local player’s friends.
-- [func setDefaultLeaderboardCategoryID(String?, completionHandler: (((any Error)?) -> Void)?)](gklocalplayer/setdefaultleaderboardcategoryid(_:completionhandler:).md)
+- [func setDefaultLeaderboardCategoryID(String?, completionHandler: (((any Error)?) -> Void)?)](./gklocalplayer/setdefaultleaderboardcategoryid%28_,completionhandler%29.md)
   Sets the category identifier for the local player’s default leaderboard.
 
 

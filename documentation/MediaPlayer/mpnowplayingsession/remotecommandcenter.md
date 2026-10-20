@@ -1,7 +1,8 @@
 # remoteCommandCenter
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote command center associated with the session.
 
@@ -16,6 +17,10 @@ The remote command center associated with the session.
 
 ```swift
 var remoteCommandCenter: MPRemoteCommandCenter { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) MPRemoteCommandCenter * remoteCommandCenter;
 ```
 
 

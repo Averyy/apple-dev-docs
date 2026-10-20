@@ -1,7 +1,8 @@
 # dayOfYear
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A day of the year. For example, in the Gregorian calendar, can go from 1 to 365 or 1 to 366 in leap years.
 

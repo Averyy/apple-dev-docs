@@ -1,7 +1,8 @@
 # init(assembly:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor configured for the given graph assembly.
 
@@ -12,7 +13,7 @@ Creates a descriptor configured for the given graph assembly.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init(assembly: ComputeNodeGraph.Assembly)
 
 #### Discussion
 
-`options` defaults to [`init()`](computenodegraph/pipelines/options-swift.struct/init().md) and `libraries` is empty. Add shader libraries with [`addLibrary(_:bundle:)`](computenodegraph/pipelinesdescriptor/addlibrary(_:bundle:).md) before compiling.
+`options` defaults to [`init()`](../pipelines/options-swift.struct/init%28%29.md) and `libraries` is empty. Add shader libraries with [`addLibrary(_:bundle:)`](./addlibrary%28_,bundle%29.md) before compiling.
 
 ## Parameters
 

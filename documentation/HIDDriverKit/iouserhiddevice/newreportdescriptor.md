@@ -1,27 +1,28 @@
 # newReportDescriptor
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data in the HID device’s report descriptor.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSData * newReportDescriptor();
 ```
 
 #### Return Value
 
-An [`OSData`](https://developer.apple.com/documentation/driverkit/osdata) object containing the report descriptor for the device.
+An [`OSData`](../../DriverKit/osdata.md) object containing the report descriptor for the device.
 
 #### Discussion
 
-Override this method and use it to fetch the report descriptor from the device. Return the raw bytes for that report in an [`OSData`](https://developer.apple.com/documentation/driverkit/osdata) object.
+Override this method and use it to fetch the report descriptor from the device. Return the raw bytes for that report in an [`OSData`](../../DriverKit/osdata.md) object.
 
 
 ---

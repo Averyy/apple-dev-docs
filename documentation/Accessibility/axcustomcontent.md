@@ -1,7 +1,8 @@
 # AXCustomContent
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Objects that define custom content and the timing of its output.
 
@@ -20,52 +21,57 @@ Objects that define custom content and the timing of its output.
 class AXCustomContent
 ```
 
+```objc
+@interface AXCustomContent : NSObject
+```
+
 #### Overview
 
-An `AXCustomContent` object contains the accessibility strings for the labels you apply to your accessibility content. Combine them with the [`AXCustomContentProvider`](axcustomcontentprovider.md) protocol to allow your users to experience the content in a more appropriate manner for each assistive technology.
+An `AXCustomContent` object contains the accessibility strings for the labels you apply to your accessibility content. Combine them with the [`AXCustomContentProvider`](./axcustomcontentprovider.md) protocol to allow your users to experience the content in a more appropriate manner for each assistive technology.
 
 ## Topics
 
 ### Creating custom content
-- [convenience init(attributedLabel: NSAttributedString, attributedValue: NSAttributedString)](axcustomcontent/init(attributedlabel:attributedvalue:).md)
+- [convenience init(attributedLabel: NSAttributedString, attributedValue: NSAttributedString)](./axcustomcontent/init%28attributedlabel,attributedvalue%29.md)
   Creates new custom content with an attributed string and attributed value.
-- [convenience init(label: String, value: String)](axcustomcontent/init(label:value:).md)
+- [convenience init(label: String, value: String)](./axcustomcontent/init%28label,value%29.md)
   Creates new custom content with a label and value.
-- [init?(coder: NSCoder)](axcustomcontent/init(coder:).md)
+- [init?(coder: NSCoder)](./axcustomcontent/init%28coder%29.md)
 ### Defining custom content
-- [var label: String](axcustomcontent/label.md)
+- [var label: String](./axcustomcontent/label.md)
   A localized string that identifies the label for this content.
-- [var attributedLabel: NSAttributedString](axcustomcontent/attributedlabel.md)
+- [var attributedLabel: NSAttributedString](./axcustomcontent/attributedlabel.md)
   A localized attributed string that identifies the label for this content.
-- [var value: String](axcustomcontent/value.md)
+- [var value: String](./axcustomcontent/value.md)
   A localized string that provides a value for the label.
-- [var attributedValue: NSAttributedString](axcustomcontent/attributedvalue.md)
+- [var attributedValue: NSAttributedString](./axcustomcontent/attributedvalue.md)
   A localized attributed string that provides a value for the label.
-- [var importance: AXCustomContent.Importance](axcustomcontent/importance-swift.property.md)
+- [var importance: AXCustomContent.Importance](./axcustomcontent/importance-swift.property.md)
   An object that determines when to output custom accessibility content.
-- [AXCustomContent.Importance](axcustomcontent/importance-swift.enum.md)
+- [AXCustomContent.Importance](./axcustomcontent/importance-swift.enum.md)
   Objects that control the timing of content output.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [protocol AXCustomContentProvider](axcustomcontentprovider.md)
+### Custom accessibility content
+- [protocol AXCustomContentProvider](./axcustomcontentprovider.md)
   The interface for customizing the accessibility content.
-- [typealias AXCustomContentReturnBlock](axcustomcontentreturnblock.md)
+- [typealias AXCustomContentReturnBlock](./axcustomcontentreturnblock.md)
 
 
 ---

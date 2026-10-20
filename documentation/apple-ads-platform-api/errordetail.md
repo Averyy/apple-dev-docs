@@ -1,7 +1,8 @@
 # ErrorDetail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Field-level or request-level detail for a specific part of a failed API request.
 
@@ -10,7 +11,7 @@ Field-level or request-level detail for a specific part of a failed API request.
 
 ## Declaration
 
-```swift
+```
 object ErrorDetail
 ```
 
@@ -34,15 +35,16 @@ The `ErrorDetail` provides field-level or request-level granularity for a specif
 
 - `code` (string) *(required)*: A machine-readable code identifying the specific violation, such as `FIELD_REQUIRED` for a missing required field or `INVALID_VALUE` for a field that failed validation.
 - `message` (string): A human-readable description of this specific violation, such as which field was missing or invalid and why.
-- `info` (Info): Additional context that supplements `message`, such as the field name, the invalid value, or acceptable alternatives. Content varies by endpoint and error type. See [`Info`](info.md).
+- `info` (Info): Additional context that supplements `message`, such as the field name, the invalid value, or acceptable alternatives. Content varies by endpoint and error type. See [`Info`](./info.md).
 
 ## See Also
 
-- [object Error](error.md)
+### Error Responses
+- [object Error](./error.md)
   The standard error envelope that the API returns when a request fails.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
-- [object Info](info.md)
+- [object Info](./info.md)
   Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 

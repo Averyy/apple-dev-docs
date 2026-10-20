@@ -2,6 +2,7 @@
 
 **Framework**: AudioAccessoryKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when a head-tracking session has been established with the host.

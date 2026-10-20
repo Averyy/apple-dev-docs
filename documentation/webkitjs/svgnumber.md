@@ -1,7 +1,8 @@
 # SVGNumber
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGNumber
 ```
 
 ## Topics
 
 ### Instance Properties
-- [value](svgnumber/1631197-value.md)
+- [value](./svgnumber/api-1631197-value.md)
 
 
 ---

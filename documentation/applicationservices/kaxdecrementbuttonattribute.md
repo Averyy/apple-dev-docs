@@ -1,7 +1,8 @@
 # kAXDecrementButtonAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The decrement element associated with the user interface object this accessibility object represents. This attribute can be used to provide convenient access to the decrement area of a custom user interface object.
 
@@ -12,6 +13,10 @@ The decrement element associated with the user interface object this accessibili
 
 ```swift
 var kAXDecrementButtonAttribute: String { get }
+```
+
+```c
+#define kAXDecrementButtonAttribute
 ```
 
 

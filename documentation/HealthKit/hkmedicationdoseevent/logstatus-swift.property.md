@@ -1,7 +1,8 @@
 # logStatus
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The log status the system assigns to this dose event.
 
@@ -17,6 +18,10 @@ The log status the system assigns to this dose event.
 
 ```swift
 var logStatus: HKMedicationDoseEvent.LogStatus { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) HKMedicationDoseEventLogStatus logStatus;
 ```
 
 

@@ -1,7 +1,8 @@
 # ManagedAppDistributionError.networkError
 
 **Framework**: ManagedAppDistribution  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a network issue.
 
@@ -20,11 +21,12 @@ case networkError
 
 ## See Also
 
-- [ManagedAppDistributionError.deviceNotManaged](managedappdistributionerror/devicenotmanaged.md)
+### Inspecting errors
+- [ManagedAppDistributionError.deviceNotManaged](./devicenotmanaged.md)
   An error that indicates this device isn’t managed.
-- [ManagedAppDistributionError.unrecoverableError](managedappdistributionerror/unrecoverableerror.md)
+- [ManagedAppDistributionError.unrecoverableError](./unrecoverableerror.md)
   An error that is unspecified and unrecoverable.
-- [ManagedAppDistributionError.unsupportedPlatform](managedappdistributionerror/unsupportedplatform.md)
+- [ManagedAppDistributionError.unsupportedPlatform](./unsupportedplatform.md)
   An error that indicates the platform is unsupported.
 
 

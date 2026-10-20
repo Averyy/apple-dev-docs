@@ -1,7 +1,8 @@
 # burnInAnnotationsOption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,12 +18,17 @@
 static let burnInAnnotationsOption: PDFDocumentWriteOption
 ```
 
+```c
+extern PDFDocumentWriteOption const PDFDocumentBurnInAnnotationsOption;
+```
+
 ## See Also
 
-- [static let accessPermissionsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/accesspermissionsoption.md)
-- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](pdfdocumentwriteoption/optimizeimagesforscreenoption.md)
-- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](pdfdocumentwriteoption/saveimagesasjpegoption.md)
-- [static let saveTextFromOCROption: PDFDocumentWriteOption](pdfdocumentwriteoption/savetextfromocroption.md)
+### Type Properties
+- [static let accessPermissionsOption: PDFDocumentWriteOption](./accesspermissionsoption.md)
+- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](./optimizeimagesforscreenoption.md)
+- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](./saveimagesasjpegoption.md)
+- [static let saveTextFromOCROption: PDFDocumentWriteOption](./savetextfromocroption.md)
 
 
 ---

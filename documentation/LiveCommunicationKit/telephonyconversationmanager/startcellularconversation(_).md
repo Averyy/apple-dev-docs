@@ -1,7 +1,8 @@
 # startCellularConversation(_:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a cellular conversation using the provided action.
 
@@ -18,7 +19,7 @@ final func startCellularConversation(_ action: StartCellularConversationAction) 
 
 ## Mentions
 
-- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+- [Preparing your app to be the default dialer app](../preparing-your-app-to-be-the-default-dialer-app.md)
 
 ## Parameters
 
@@ -26,7 +27,8 @@ final func startCellularConversation(_ action: StartCellularConversationAction) 
 
 ## See Also
 
-- [static let sharedInstance: TelephonyConversationManager](telephonyconversationmanager/sharedinstance.md)
+### Starting a conversation
+- [static let sharedInstance: TelephonyConversationManager](./sharedinstance.md)
   The shared object that manages cellular conversations.
 
 

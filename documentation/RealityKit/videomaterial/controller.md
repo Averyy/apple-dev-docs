@@ -1,7 +1,8 @@
 # controller
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that configures framework-specific video options.
 
@@ -11,7 +12,7 @@ An object that configures framework-specific video options.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ material.controller.audioInputMode = .spatial
 
 ## See Also
 
-- [var avPlayer: AVPlayer?](videomaterial/avplayer.md)
+### Controlling playback
+- [var avPlayer: AVPlayer?](./avplayer.md)
   The material’s video playback controller.
 
 

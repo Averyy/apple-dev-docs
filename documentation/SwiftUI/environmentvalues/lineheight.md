@@ -1,7 +1,8 @@
 # lineHeight
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default line height for text influenced by this environment.
 

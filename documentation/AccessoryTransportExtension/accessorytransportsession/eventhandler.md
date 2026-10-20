@@ -1,7 +1,8 @@
 # AccessoryTransportSession.EventHandler
 
 **Framework**: Accessory Transport Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods for handling transport session events.
 
@@ -21,20 +22,21 @@ Implement this protocol to respond to data events and session invalidation in yo
 ## Topics
 
 ### Handling data events
-- [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](accessorytransportsession/eventhandler/dataeventhandler(event:).md)
+- [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](./eventhandler/dataeventhandler%28event%29.md)
   Handles events that address incoming data destined for the accessory.
-- [func messageReceived(TransportMessage, completion: (AccessoryMessage.Result) -> Void)](accessorytransportsession/eventhandler/messagereceived(_:completion:).md)
+- [func messageReceived(TransportMessage, completion: (AccessoryMessage.Result) -> Void)](./eventhandler/messagereceived%28_,completion%29.md)
   Handles incoming messages for transmission to the accessory.
 ### Handling the session life cycle
-- [func invalidationHandler(error: AccessoryTransportSession.Error?)](accessorytransportsession/eventhandler/invalidationhandler(error:).md)
+- [func invalidationHandler(error: AccessoryTransportSession.Error?)](./eventhandler/invalidationhandler%28error%29.md)
   Handles session invalidation.
 ### Instance Methods
-- [func sessionInvalidated(error: AccessoryTransportSession.Error?)](accessorytransportsession/eventhandler/sessioninvalidated(error:).md)
+- [func sessionInvalidated(error: AccessoryTransportSession.Error?)](./eventhandler/sessioninvalidated%28error%29.md)
   Handles session invalidation.
 
 ## See Also
 
-- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
+### Handling session events
+- [AccessoryTransportSession.DataEvent](./dataevent.md)
   An enumeration of data events that the transport extension receives.
 
 

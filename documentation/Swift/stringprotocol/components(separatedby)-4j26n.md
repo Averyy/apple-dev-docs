@@ -1,7 +1,8 @@
 # components(separatedBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing substrings from the string that have been divided by characters in the given set.
 

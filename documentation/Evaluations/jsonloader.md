@@ -1,7 +1,8 @@
 # JSONLoader
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A loader backed by a JSON or JSONL file.
 
@@ -37,24 +38,25 @@ Malformed entries are logged using `OSLog` and skipped. A failure to open the fi
 ## Topics
 
 ### Initializers
-- [init(url: URL)](jsonloader/init(url:).md)
+- [init(url: URL)](./jsonloader/init%28url%29.md)
   Creates a loader backed by the JSON or JSONL file at the given URL.
 ### Instance Properties
-- [var stream: any AsyncSequence<Sample, any Error>](jsonloader/stream.md)
+- [var stream: any AsyncSequence<Sample, any Error>](./jsonloader/stream.md)
   The async sequence that reads and yields each sample from the JSON or JSONL file during an evaluation run.
 
 ## Relationships
 
 ### Conforms To
-- [Loader](loader.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Loader](./loader.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ArrayLoader](arrayloader.md)
+### Loaders
+- [struct ArrayLoader](./arrayloader.md)
   A loader backed by an in-memory array.
-- [struct StreamLoader](streamloader.md)
+- [struct StreamLoader](./streamloader.md)
   A loader backed by a custom async sequence.
 
 

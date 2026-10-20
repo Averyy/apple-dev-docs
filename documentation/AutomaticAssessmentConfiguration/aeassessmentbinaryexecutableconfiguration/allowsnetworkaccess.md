@@ -1,7 +1,8 @@
 # allowsNetworkAccess
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the executable may access the network during an assessment. Defaults to `YES`.
 
@@ -13,6 +14,10 @@ Whether the executable may access the network during an assessment. Defaults to 
 
 ```swift
 var allowsNetworkAccess: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsNetworkAccess;
 ```
 
 

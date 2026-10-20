@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_export_stat_rec {
     ...
 };
@@ -17,10 +17,10 @@ struct nfs_export_stat_rec {
 ## Topics
 
 ### Instance Properties
-- [bytes_read](nfs_export_stat_rec/3944819-bytes_read.md)
-- [bytes_written](nfs_export_stat_rec/3944820-bytes_written.md)
-- [ops](nfs_export_stat_rec/3944821-ops.md)
-- [path](nfs_export_stat_rec/3944822-path.md)
+- [bytes_read](./nfs_export_stat_rec/api-3944819-bytes_read.md)
+- [bytes_written](./nfs_export_stat_rec/api-3944820-bytes_written.md)
+- [ops](./nfs_export_stat_rec/api-3944821-ops.md)
+- [path](./nfs_export_stat_rec/api-3944822-path.md)
 
 
 ---

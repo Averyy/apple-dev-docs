@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOVideoControlBaseClassIDBoolean](1646205-anonymous/kiovideocontrolbaseclassidboolean.md)
-- [kIOVideoControlBaseClassIDFeature](1646205-anonymous/kiovideocontrolbaseclassidfeature.md)
-- [kIOVideoControlBaseClassIDSelector](1646205-anonymous/kiovideocontrolbaseclassidselector.md)
+- [kIOVideoControlBaseClassIDBoolean](./api-1646205-anonymous/kiovideocontrolbaseclassidboolean.md)
+- [kIOVideoControlBaseClassIDFeature](./api-1646205-anonymous/kiovideocontrolbaseclassidfeature.md)
+- [kIOVideoControlBaseClassIDSelector](./api-1646205-anonymous/kiovideocontrolbaseclassidselector.md)
 
 
 ---

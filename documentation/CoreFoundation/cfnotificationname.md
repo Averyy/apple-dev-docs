@@ -1,16 +1,17 @@
 # CFNotificationName
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,38 +19,43 @@
 struct CFNotificationName
 ```
 
+```c
+typedef CFStringRef CFNotificationName;
+```
+
 ## Topics
 
 ### Type Properties
-- [static let cfLocaleCurrentLocaleDidChange: CFNotificationName!](cfnotificationname/cflocalecurrentlocaledidchange.md)
+- [static let cfLocaleCurrentLocaleDidChange: CFNotificationName!](./cfnotificationname/cflocalecurrentlocaledidchange.md)
   Identifier for the notification sent if the current locale changes.
-- [static let cfTimeZoneSystemTimeZoneDidChange: CFNotificationName!](cfnotificationname/cftimezonesystemtimezonedidchange.md)
+- [static let cfTimeZoneSystemTimeZoneDidChange: CFNotificationName!](./cfnotificationname/cftimezonesystemtimezonedidchange.md)
   Name of the notification posted when the system time zone changes.
 ### Initializers
-- [init(CFString)](cfnotificationname/init(_:).md)
-- [init(rawValue: CFString)](cfnotificationname/init(rawvalue:).md)
+- [init(CFString)](./cfnotificationname/init%28_%29.md)
+- [init(rawValue: CFString)](./cfnotificationname/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CFAllocatorTypeID](cfallocatortypeid.md)
-- [struct CFCalendarIdentifier](cfcalendaridentifier.md)
-- [struct CFDateFormatterKey](cfdateformatterkey.md)
-- [typealias CFErrorDomain](cferrordomain.md)
-- [struct CFLocaleIdentifier](cflocaleidentifier.md)
-- [struct CFLocaleKey](cflocalekey.md)
-- [struct CFNumberFormatterKey](cfnumberformatterkey.md)
-- [struct CFRunLoopMode](cfrunloopmode.md)
-- [struct CFStreamPropertyKey](cfstreampropertykey.md)
-- [typealias CFTypeRef](cftyperef.md)
+### Data Types
+- [typealias CFAllocatorTypeID](./cfallocatortypeid.md)
+- [struct CFCalendarIdentifier](./cfcalendaridentifier.md)
+- [struct CFDateFormatterKey](./cfdateformatterkey.md)
+- [typealias CFErrorDomain](./cferrordomain.md)
+- [struct CFLocaleIdentifier](./cflocaleidentifier.md)
+- [struct CFLocaleKey](./cflocalekey.md)
+- [struct CFNumberFormatterKey](./cfnumberformatterkey.md)
+- [struct CFRunLoopMode](./cfrunloopmode.md)
+- [struct CFStreamPropertyKey](./cfstreampropertykey.md)
+- [typealias CFTypeRef](./cftyperef.md)
   An untyped “generic” reference to any Core Foundation object.
 
 

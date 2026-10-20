@@ -1,7 +1,8 @@
 # plotDimension
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scale range that fills the plot area.
 
@@ -19,6 +20,8 @@ A scale range that fills the plot area.
 ```swift
 static var plotDimension: PlotDimensionScaleRange { get }
 ```
+
+Available when `Self` is `PlotDimensionScaleRange`.
 
 
 ---

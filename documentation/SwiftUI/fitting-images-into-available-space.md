@@ -1,6 +1,7 @@
 # Fitting images into available space
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Adjust the size and shape of images in your app’s user interface by applying view modifiers.
 
@@ -8,13 +9,13 @@ Adjust the size and shape of images in your app’s user interface by applying v
 
 Image sizes vary widely, from single-pixel PNG files to digital photography images with millions of pixels. Because device sizes also vary, apps commonly need to make runtime adjustments to image sizes so they fit within the visible user interface. SwiftUI provides modifiers to scale, clip, and transform images to fit your interface perfectly.
 
-##### Scale a Large Image to Fit Its Container Using Resizing
+##### Scale a large image to fit its container using resizing
 
 Consider the image `Landscape_4.jpg`, a photograph with the dimensions 4032 x 3024, showing a water wheel, the surrounding building, and the sky above.
 
-![A photo looking up at a water wheel and its surrounding building, with the sky and clouds above.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-Landscape_4-original.jpg)
+![A photo looking up at a water wheel and its surrounding building, with the sky and clouds above.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-Landscape_4-original.jpg)
 
-The following example loads the image directly into an [`Image`](image.md) view, and then places it in a 300 x 400 point frame, with a blue border:
+The following example loads the image directly into an [`Image`](./image.md) view, and then places it in a 300 x 400 point frame, with a blue border:
 
 ```swift
     Image("Landscape_4")
@@ -24,24 +25,26 @@ The following example loads the image directly into an [`Image`](image.md) view,
 
 As seen in the following screenshot, the image data loads at full size into the view, so only the clouds from the upper left of the original image are visible. Because the image renders at full size, and the blue frame is smaller than the original image, the image extends beyond the frame’s boundaries.
 
-![An image that shows a frame with a blue border overlaid on an image of a water wheel. The image is so much larger than the available space that only a portion of the sky and clouds from the upper left of the original image is visible. The image goes beyond the borders of the outline.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-unscaled@2x.png)
+![An image that shows a frame with a blue border overlaid on an image of a water wheel. The image is so much larger than the available space that only a portion of the sky and clouds from the upper left of the original image is visible. The image goes beyond the borders of the outline.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-unscaled@2x.png)
 
 To fix this, you need to apply two modifiers to the `Image`:
 
-- [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) tells the image view to adjust the image representation to match the size of the view. By default, this modifier scales the image by reducing the size of larger images and enlarges images smaller than the view. By itself, this modifier scales each axis of the image independently.
-- [`aspectRatio(_:contentMode:)`](view/aspectratio(_:contentmode:).md) corrects the behavior where the image scaling is different for each axis. This preserves the image’s original aspect ratio, using one of two strategies defined by the [`ContentMode`](contentmode.md) enumeration. [`ContentMode.fit`](contentmode/fit.md) scales the image to fit the view size along one axis, possibly leaving empty space along the other axis. [`ContentMode.fill`](contentmode/fill.md) scales the image to fill the entire view. ```swift
-  Image("Landscape_4")
-      .resizable()
-      .aspectRatio(contentMode: .fit)
-      .frame(width: 300, height: 400, alignment: .topLeading)
-      .border(.blue)
-```
+- [`resizable(capInsets:resizingMode:)`](./image/resizable%28capinsets,resizingmode%29.md) tells the image view to adjust the image representation to match the size of the view. By default, this modifier scales the image by reducing the size of larger images and enlarges images smaller than the view. By itself, this modifier scales each axis of the image independently.
+- [`aspectRatio(_:contentMode:)`](./view/aspectratio%28_,contentmode%29.md) corrects the behavior where the image scaling is different for each axis. This preserves the image’s original aspect ratio, using one of two strategies defined by the [`ContentMode`](./contentmode.md) enumeration. [`ContentMode.fit`](./contentmode/fit.md) scales the image to fit the view size along one axis, possibly leaving empty space along the other axis. [`ContentMode.fill`](./contentmode/fill.md) scales the image to fill the entire view.
 
-![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image is scaled to fit the width of the containing rectangle. Empty space extends from the bottom of the image to the bottom of the rectangle.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFit@2x.png)
+  ```swift
+    Image("Landscape_4")
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 300, height: 400, alignment: .topLeading)
+        .border(.blue)
+  ```
 
-##### Keep Image Data Inside the Views Bounds Using Clipping
+![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image is scaled to fit the width of the containing rectangle. Empty space extends from the bottom of the image to the bottom of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFit@2x.png)
 
-If you use [`ContentMode.fill`](contentmode/fill.md) when scaling an image, a portion of an image may extend beyond the view’s bounds, unless the view matches the image’s aspect ratio exactly. The following example illustrates this problem:
+##### Keep image data inside the view’s bounds using clipping
+
+If you use [`ContentMode.fill`](./contentmode/fill.md) when scaling an image, a portion of an image may extend beyond the view’s bounds, unless the view matches the image’s aspect ratio exactly. The following example illustrates this problem:
 
 ```swift
     Image("Landscape_4")
@@ -51,9 +54,9 @@ If you use [`ContentMode.fill`](contentmode/fill.md) when scaling an image, a po
         .border(.blue)
 ```
 
-![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image fills its entire space vertically, and extends past the right edge of the frame horizontally.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFill-noClip@2x.png)
+![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image fills its entire space vertically, and extends past the right edge of the frame horizontally.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFill-noClip@2x.png)
 
-To prevent this problem, add the [`clipped(antialiased:)`](view/clipped(antialiased:).md) modifier. This modifier simply cuts off excess image rendering at the bounding frame of the view. Optionally, you can add an antialiasing behavior to apply smoothing to the edges of the clipping rectangle; this parameter defaults to `false`. The following example shows the effect of adding clipping to the previous fill-mode example:
+To prevent this problem, add the [`clipped(antialiased:)`](./view/clipped%28antialiased%29.md) modifier. This modifier simply cuts off excess image rendering at the bounding frame of the view. Optionally, you can add an antialiasing behavior to apply smoothing to the edges of the clipping rectangle; this parameter defaults to `false`. The following example shows the effect of adding clipping to the previous fill-mode example:
 
 ```swift
     Image("Landscape_4")
@@ -64,11 +67,11 @@ To prevent this problem, add the [`clipped(antialiased:)`](view/clipped(antialia
         .clipped()
 ```
 
-![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image fills the entire frame vertically and horizontally. The right side of the image is cut off at the right side of the rectangle.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFill-clipped@2x.png)
+![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image fills the entire frame vertically and horizontally. The right side of the image is cut off at the right side of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFill-clipped@2x.png)
 
-##### Use Interpolation Flags to Adjust Rendered Image Quality
+##### Use interpolation flags to adjust rendered image quality
 
-Rendering an image at anything other than its original size requires *interpolation*: using the existing image data to approximate a representation at a different size. Different approaches to performing interpolation have different trade-offs between computational complexity and visual quality of the rendered image. You can use the [`interpolation(_:)`](image/interpolation(_:).md) modifier to provide a hint for SwiftUI rendering behavior.
+Rendering an image at anything other than its original size requires *interpolation*: using the existing image data to approximate a representation at a different size. Different approaches to performing interpolation have different trade-offs between computational complexity and visual quality of the rendered image. You can use the [`interpolation(_:)`](./image/interpolation%28_%29.md) modifier to provide a hint for SwiftUI rendering behavior.
 
 It’s easier to see the effect of interpolation when scaling a smaller image into a larger space, because the rendered image requires more image data than is available. Consider the following example, which renders a 34 x 34 image named `dot_green` into the same 300 x 400 container frame as before:
 
@@ -81,19 +84,19 @@ It’s easier to see the effect of interpolation when scaling a smaller image in
         .border(.blue)
 ```
 
-Passing the [`Image.Interpolation.none`](image/interpolation/none.md) value to [`interpolation(_:)`](image/interpolation(_:).md) results in a highly pixelated rendered image.
+Passing the [`Image.Interpolation.none`](./image/interpolation/none.md) value to [`interpolation(_:)`](./image/interpolation%28_%29.md) results in a highly pixelated rendered image.
 
-![A green dot with a darker green border, scaled to many times its original size and highly pixelated.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-smallImage-interpolation-none@2x.png)
+![A green dot with a darker green border, scaled to many times its original size and highly pixelated.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-smallImage-interpolation-none@2x.png)
 
-If you change the interpolation value to [`Image.Interpolation.medium`](image/interpolation/medium.md), SwiftUI smoothes out the pixel data to produce an image that isn’t as pixelated:
+If you change the interpolation value to [`Image.Interpolation.medium`](./image/interpolation/medium.md), SwiftUI smoothes out the pixel data to produce an image that isn’t as pixelated:
 
-![A green dot with a darker green border, scaled to many times its original size, but with its edges smoothed.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-smallImage-interpolation-medium@2x.png)
+![A green dot with a darker green border, scaled to many times its original size, but with its edges smoothed.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-smallImage-interpolation-medium@2x.png)
 
 > 💡 **Tip**: You can also specify interpolation behavior when scaling images down, to ensure the highest quality image possible, fastest rendering time, or a behavior in between.
 
-##### Fill a Space with a Repeating Image Using Tiling
+##### Fill a space with a repeating image using tiling
 
-When you have an image that’s much smaller than the space you want to render it into, another option  to fill the space is *tiling*: repeating the same image over and over again. To tile an image, pass the [`Image.ResizingMode.tile`](image/resizingmode/tile.md) parameter to the [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) modifier:
+When you have an image that’s much smaller than the space you want to render it into, another option  to fill the space is *tiling*: repeating the same image over and over again. To tile an image, pass the [`Image.ResizingMode.tile`](./image/resizingmode/tile.md) parameter to the [`resizable(capInsets:resizingMode:)`](./image/resizable%28capinsets,resizingmode%29.md) modifier:
 
 ```swift
     Image("dot_green")
@@ -102,21 +105,22 @@ When you have an image that’s much smaller than the space you want to render i
         .border(.blue)
 ```
 
-![A rectangular blue outline, 300 by 400. The repeated green dot image fills its entire space horizontally and vertically.](/images/com.apple.SwiftUI/SwiftUI-FIIAS-smallImage-tile@2x.png)
+![A rectangular blue outline, 300 by 400. The repeated green dot image fills its entire space horizontally and vertically.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-smallImage-tile@2x.png)
 
 Tiling can be particuarly useful when using an image that, when placed end-to-end with copies of itself, creates a larger pattern with no visual discontinuities.
 
 ## See Also
 
-- [func imageScale(Image.Scale) -> some View](view/imagescale(_:).md)
+### Configuring an image
+- [func imageScale(Image.Scale) -> some View](./view/imagescale%28_%29.md)
   Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
-- [var imageScale: Image.Scale](environmentvalues/imagescale.md)
+- [var imageScale: Image.Scale](./environmentvalues/imagescale.md)
   The image scale for this environment.
-- [Image.Scale](image/scale.md)
+- [Image.Scale](./image/scale.md)
   A scale to apply to vector images relative to text.
-- [Image.Orientation](image/orientation.md)
+- [Image.Orientation](./image/orientation.md)
   The orientation of an image.
-- [Image.ResizingMode](image/resizingmode.md)
+- [Image.ResizingMode](./image/resizingmode.md)
   The modes that SwiftUI uses to resize an image to fit within its containing view.
 
 

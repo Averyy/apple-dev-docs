@@ -1,7 +1,8 @@
 # uniformHandle(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a handle for the named uniform.
 
@@ -20,7 +21,7 @@ func uniformHandle(named name: String) -> ComputeGraphComponent.UniformHandle?
 
 #### Return Value
 
-A [`ComputeGraphComponent.UniformHandle`](computegraphcomponent/uniformhandle.md), or `nil` if no match is found.
+A [`ComputeGraphComponent.UniformHandle`](./uniformhandle.md), or `nil` if no match is found.
 
 ## Parameters
 

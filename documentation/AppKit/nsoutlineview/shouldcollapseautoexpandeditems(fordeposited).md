@@ -1,12 +1,13 @@
 # shouldCollapseAutoExpandedItems(forDeposited:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether auto-expanded items should return to their original collapsed state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ Returns a Boolean value that indicates whether auto-expanded items should return
 func shouldCollapseAutoExpandedItems(forDeposited deposited: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) shouldCollapseAutoExpandedItemsForDeposited:(BOOL) deposited;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if auto-expanded items should return to their original collapsed state; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if auto-expanded items should return to their original collapsed state; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Override this method to provide custom behavior. If the target of a drop is not auto-expanded (by hovering long enough) the drop target still gets expanded after a successful drop unless this method returns [`true`](https://developer.apple.com/documentation/swift/true). The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false) after a successful drop.
+Override this method to provide custom behavior. If the target of a drop is not auto-expanded (by hovering long enough) the drop target still gets expanded after a successful drop unless this method returns [`true`](../../Swift/true.md). The default implementation returns [`false`](../../Swift/false.md) after a successful drop.
 
-This method is called in a variety of situations. For example, it is called shortly after the [`outlineView(_:acceptDrop:item:childIndex:)`](nsoutlineviewdatasource/outlineview(_:acceptdrop:item:childindex:).md) method is called and also if the drag exits the outline view (exiting the view is treated the same as a failed drop). The return value of the [`outlineView(_:acceptDrop:item:childIndex:)`](nsoutlineviewdatasource/outlineview(_:acceptdrop:item:childindex:).md) method determines the incoming value of the `deposited` parameter.
+This method is called in a variety of situations. For example, it is called shortly after the [`outlineView(_:acceptDrop:item:childIndex:)`](../nsoutlineviewdatasource/outlineview%28_,acceptdrop,item,childindex%29.md) method is called and also if the drag exits the outline view (exiting the view is treated the same as a failed drop). The return value of the [`outlineView(_:acceptDrop:item:childIndex:)`](../nsoutlineviewdatasource/outlineview%28_,acceptdrop,item,childindex%29.md) method determines the incoming value of the `deposited` parameter.
 
 ## Parameters
 
-- `deposited`: If [`true`](https://developer.apple.com/documentation/swift/true), the drop terminated successfully; if [`false`](https://developer.apple.com/documentation/swift/false) the drop failed.
+- `deposited`: If [`true`](../../Swift/true.md), the drop terminated successfully; if [`false`](../../Swift/false.md) the drop failed.
 
 ## See Also
 
-- [func setDropItem(Any?, dropChildIndex: Int)](nsoutlineview/setdropitem(_:dropchildindex:).md)
+### Supporting Drag and Drop
+- [func setDropItem(Any?, dropChildIndex: Int)](./setdropitem%28_,dropchildindex%29.md)
   Used to “retarget” a proposed drop.
 
 

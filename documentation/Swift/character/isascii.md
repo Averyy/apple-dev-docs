@@ -1,7 +1,8 @@
 # isASCII
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this is an ASCII character.
 
@@ -22,11 +23,12 @@ var isASCII: Bool { get }
 
 ## See Also
 
-- [init(Unicode.Scalar)](character/init(_:)-8hq6x.md)
+### Working with a Character’s Unicode Values
+- [init(Unicode.Scalar)](./init%28_%29-8hq6x.md)
   Creates a character containing the given Unicode scalar value.
-- [var unicodeScalars: Character.UnicodeScalarView](character/unicodescalars.md)
-- [Character.UnicodeScalarView](character/unicodescalarview.md)
-- [var asciiValue: UInt8?](character/asciivalue.md)
+- [var unicodeScalars: Character.UnicodeScalarView](./unicodescalars.md)
+- [Character.UnicodeScalarView](./unicodescalarview.md)
+- [var asciiValue: UInt8?](./asciivalue.md)
   The ASCII encoding value of this character, if it is an ASCII character.
 
 

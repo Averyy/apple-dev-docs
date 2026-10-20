@@ -1,7 +1,8 @@
 # sqlitePragmas
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SQLite pragmas set for the associated persistent store. (read-only)
 
@@ -20,13 +21,18 @@ The SQLite pragmas set for the associated persistent store. (read-only)
 var sqlitePragmas: [String : NSObject] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,NSObject *> * sqlitePragmas;
+```
+
 #### Discussion
 
-This property contains all of the pragmas set on the associated persistent store. This property is only relevant when the [`type`](nspersistentstoredescription/type.md) is set to [`NSSQLiteStoreType`](nssqlitestoretype.md).
+This property contains all of the pragmas set on the associated persistent store. This property is only relevant when the [`type`](./type.md) is set to [`NSSQLiteStoreType`](../nssqlitestoretype.md).
 
 ## See Also
 
-- [var options: [String : NSObject]](nspersistentstoredescription/options.md)
+### Accessing the Configuration Options
+- [var options: [String : NSObject]](./options.md)
   A dictionary representation of the options set on the associated persistent store.
 
 

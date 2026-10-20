@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -14,9 +15,10 @@ var elements: [VTRAWProcessingSession.Parameter.ListParameter.Element] { get }
 
 ## See Also
 
-- [var details: VTRAWProcessingSession.Parameter.Details](vtrawprocessingsession/parameter/listparameter/details.md)
-- [var key: String](vtrawprocessingsession/parameter/listparameter/key.md)
-- [var values: VTRAWProcessingSession.Parameter.Values<Int>](vtrawprocessingsession/parameter/listparameter/values.md)
+### Instance Properties
+- [var details: VTRAWProcessingSession.Parameter.Details](./details.md)
+- [var key: String](./key.md)
+- [var values: VTRAWProcessingSession.Parameter.Values<Int>](./values.md)
 
 
 ---

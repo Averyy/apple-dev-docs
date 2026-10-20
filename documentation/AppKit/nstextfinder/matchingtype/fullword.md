@@ -1,7 +1,8 @@
 # NSTextFinder.MatchingType.fullWord
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The match exactly matches the string.
 
@@ -14,13 +15,18 @@ The match exactly matches the string.
 case fullWord
 ```
 
+```c
+NSTextFinderMatchingTypeFullWord
+```
+
 ## See Also
 
-- [NSTextFinder.MatchingType.contains](nstextfinder/matchingtype/contains.md)
+### Constants
+- [NSTextFinder.MatchingType.contains](./contains.md)
   The match contains the string.
-- [NSTextFinder.MatchingType.startsWith](nstextfinder/matchingtype/startswith.md)
+- [NSTextFinder.MatchingType.startsWith](./startswith.md)
   The match begins with the string.
-- [NSTextFinder.MatchingType.endsWith](nstextfinder/matchingtype/endswith.md)
+- [NSTextFinder.MatchingType.endsWith](./endswith.md)
   The match ends with the string.
 
 

@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides debugging information about the element representing the root of the Siri UI.
 
@@ -15,6 +16,10 @@ Provides debugging information about the element representing the root of the Si
 
 ```swift
 var debugDescription: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * debugDescription;
 ```
 
 

@@ -1,7 +1,8 @@
 # fetchIssuerFromNet
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow network downloads of CA certificates.
 
@@ -12,6 +13,10 @@ Allow network downloads of CA certificates.
 
 ```swift
 static var fetchIssuerFromNet: SecTrustOptionFlags { get }
+```
+
+```c
+kSecTrustOptionFetchIssuerFromNet
 ```
 
 

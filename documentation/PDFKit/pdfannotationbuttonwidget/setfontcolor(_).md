@@ -1,17 +1,22 @@
 # setFontColor(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the font color used in the control’s label.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setFontColor(_ color: NSColor!)
+```
+
+```objc
+- (void) setFontColor:(NSColor *) color;
 ```
 
 ## Parameters
@@ -20,13 +25,15 @@ func setFontColor(_ color: NSColor!)
 
 ## See Also
 
-- [class PDFAnnotationButtonWidget](pdfannotationbuttonwidget.md)
+### Related Documentation
+- [class PDFAnnotationButtonWidget](../pdfannotationbuttonwidget.md)
   A `PDFAnnotationButtonWidget` object provides user interactivity on a page of a PDF document. There are three types of buttons available: push button, radio button, and checkbox.
-- [func font() -> NSFont!](pdfannotationbuttonwidget/font.md)
+### Getting and Setting the Control Label Font Attributes
+- [func font() -> NSFont!](./font%28%29.md)
   Returns the font used in the control’s label.
-- [func setFont(NSFont!)](pdfannotationbuttonwidget/setfont(_:).md)
+- [func setFont(NSFont!)](./setfont%28_%29.md)
   Sets the font of the control’s label.
-- [func fontColor() -> NSColor!](pdfannotationbuttonwidget/fontcolor.md)
+- [func fontColor() -> NSColor!](./fontcolor%28%29.md)
   Returns the font color used in the control’s label.
 
 

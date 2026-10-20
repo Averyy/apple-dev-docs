@@ -1,16 +1,17 @@
 # COMPLEX
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 typealias COMPLEX = DSPComplex
 ```
 
+```c
+typedef DSPComplex COMPLEX;
+```
+
 ## See Also
 
-- [typealias DOUBLE_COMPLEX](double_complex.md)
+### Data Types
+- [typealias DOUBLE_COMPLEX](./double_complex.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NFCFeliCaPollingResponse
 
 **Framework**: Core NFC  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
@@ -17,8 +18,8 @@ struct NFCFeliCaPollingResponse
 ## Topics
 
 ### Instance Properties
-- [var manufactureParameter: Data](nfcfelicapollingresponse/manufactureparameter.md)
-- [var requestData: Data?](nfcfelicapollingresponse/requestdata.md)
+- [var manufactureParameter: Data](./nfcfelicapollingresponse/manufactureparameter.md)
+- [var requestData: Data?](./nfcfelicapollingresponse/requestdata.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # permissionStatus(for:in:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks the specified permission against the currently denied, granted, and requested permissions.
 
@@ -18,6 +19,10 @@ Checks the specified permission against the currently denied, granted, and reque
 func permissionStatus(for permission: WKWebExtension.Permission, in tab: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus
 ```
 
+```objc
+- (WKWebExtensionContextPermissionStatus) permissionStatusForPermission:(WKWebExtensionPermission) permission inTab:(id<WKWebExtensionTab>) tab;
+```
+
 #### Discussion
 
 Permissions can be granted on a per-tab basis. When the tab is known, access checks should always specify the tab.
@@ -29,9 +34,10 @@ Permissions can be granted on a per-tab basis. When the tab is known, access che
 
 ## See Also
 
-- [func permissionStatus(for: WKWebExtension.Permission) -> WKWebExtensionContext.PermissionStatus](wkwebextensioncontext/permissionstatus(for:)-3qq2w.md)
+### Related Documentation
+- [func permissionStatus(for: WKWebExtension.Permission) -> WKWebExtensionContext.PermissionStatus](./permissionstatus%28for%29-3qq2w.md)
   Checks the specified permission against the currently denied, granted, and requested permissions.
-- [func hasPermission(WKWebExtension.Permission, in: (any WKWebExtensionTab)?) -> Bool](wkwebextensioncontext/haspermission(_:in:).md)
+- [func hasPermission(WKWebExtension.Permission, in: (any WKWebExtensionTab)?) -> Bool](./haspermission%28_,in%29.md)
   Checks the specified permission against the currently granted permissions in a specific tab.
 
 

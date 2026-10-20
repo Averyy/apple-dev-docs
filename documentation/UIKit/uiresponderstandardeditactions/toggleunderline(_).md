@@ -1,7 +1,8 @@
 # toggleUnderline(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Toggles the underline style information of the selected text.
 
@@ -9,13 +10,17 @@ Toggles the underline style information of the selected text.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func toggleUnderline(_ sender: Any?)
+```
+
+```objc
+- (void) toggleUnderline:(id) sender;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ Use this method to apply or remove style information to the currently selected c
 
 ## See Also
 
-- [func toggleBoldface(Any?)](uiresponderstandardeditactions/toggleboldface(_:).md)
+### Handling styled text editing
+- [func toggleBoldface(Any?)](./toggleboldface%28_%29.md)
   Toggles the bold style information of the selected text.
-- [func toggleItalics(Any?)](uiresponderstandardeditactions/toggleitalics(_:).md)
+- [func toggleItalics(Any?)](./toggleitalics%28_%29.md)
   Toggles the italic style information of the selected text.
 
 

@@ -1,7 +1,8 @@
 # biologicalSex
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The biological sex.
 
@@ -19,14 +20,18 @@ The biological sex.
 var biologicalSex: HKBiologicalSex { get }
 ```
 
+```objc
+@property (readonly) HKBiologicalSex biologicalSex;
+```
+
 #### Discussion
 
-For a list of possible biological sex values, see [`HKBiologicalSex`](hkbiologicalsex.md).
+For a list of possible biological sex values, see [`HKBiologicalSex`](../hkbiologicalsex.md).
 
 ## Topics
 
 ### Valid Biological Sex Values
-- [enum HKBiologicalSex](hkbiologicalsex.md)
+- [enum HKBiologicalSex](../hkbiologicalsex.md)
   Constants indicating the user’s sex.
 
 

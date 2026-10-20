@@ -1,7 +1,8 @@
 # allEvents
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All events, including system events.
 
@@ -14,9 +15,14 @@ All events, including system events.
 static var allEvents: NSControl.Events { get }
 ```
 
+```c
+NSControlEventAllEvents
+```
+
 ## See Also
 
-- [static var allTrackingEvents: NSControl.Events](nscontrol/events/alltrackingevents.md)
+### Aggregate events
+- [static var allTrackingEvents: NSControl.Events](./alltrackingevents.md)
   All tracking events.
 
 

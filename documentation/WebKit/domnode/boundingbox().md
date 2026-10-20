@@ -1,7 +1,8 @@
 # boundingBox()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rectangle that bounds the onscreen rendering of the node.
 
@@ -14,13 +15,18 @@ Returns a rectangle that bounds the onscreen rendering of the node.
 func boundingBox() -> NSRect
 ```
 
+```objc
+- (NSRect) boundingBox;
+```
+
 #### Return Value
 
 The rectangle that represents the bounding box of the onscreen rendering of the node.
 
 ## See Also
 
-- [func lineBoxRects() -> [Any]!](domnode/lineboxrects.md)
+### Obtaining layout rectangles
+- [func lineBoxRects() -> [Any]!](./lineboxrects%28%29.md)
   Returns the rectangles that bound each line of text in the node.
 
 

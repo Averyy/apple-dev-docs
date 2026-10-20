@@ -1,7 +1,8 @@
 # commissioning(_:succeededForNodeID:metrics:context:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification that commissioning has succeeded.
 
@@ -18,6 +19,10 @@ Notification that commissioning has succeeded.
 
 ```swift
 optional func commissioning(_ commissioning: MTRCommissioningOperation, succeededForNodeID nodeID: NSNumber, metrics: MTRMetrics, context: [String : Any])
+```
+
+```objc
+- (void) commissioning:(MTRCommissioningOperation *) commissioning succeededForNodeID:(NSNumber *) nodeID metrics:(MTRMetrics *) metrics context:(NSDictionary<NSString *,id> *) context;
 ```
 
 #### Discussion

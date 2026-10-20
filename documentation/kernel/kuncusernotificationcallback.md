@@ -1,14 +1,15 @@
 # KUNCUserNotificationCallBack
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*KUNCUserNotificationCallBack)(int contextKey, int responseFlags, const void *xmlData);
 ```
 

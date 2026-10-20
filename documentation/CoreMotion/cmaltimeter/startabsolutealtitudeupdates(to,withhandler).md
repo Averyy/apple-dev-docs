@@ -1,7 +1,8 @@
 # startAbsoluteAltitudeUpdates(to:withHandler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the delivery of absolute altitude data to the specified handler.
 
@@ -17,28 +18,33 @@ Starts the delivery of absolute altitude data to the specified handler.
 func startAbsoluteAltitudeUpdates(to queue: OperationQueue, withHandler handler: @escaping CMAbsoluteAltitudeHandler)
 ```
 
+```objc
+- (void) startAbsoluteAltitudeUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMAbsoluteAltitudeHandler) handler;
+```
+
 #### Discussion
 
-Call [`isAbsoluteAltitudeAvailable()`](cmaltimeter/isabsolutealtitudeavailable().md) to verify that the current device supports absolute altitude updates before calling the `startAbsoluteAltitudeUpdates(to:withHandler:)` method.
+Call [`isAbsoluteAltitudeAvailable()`](./isabsolutealtitudeavailable%28%29.md) to verify that the current device supports absolute altitude updates before calling the `startAbsoluteAltitudeUpdates(to:withHandler:)` method.
 
 > **Note**:  Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 
 ## Parameters
 
 - `queue`: The operation queue on which to execute your handler block. The altimeter object stores a strong reference to this object. This parameter must not be `nil`.
-- `handler`: The handler block to execute when new altitude data is available. This parameter must not be `nil`. For information about the format of this block, see [`CMAbsoluteAltitudeHandler`](cmabsolutealtitudehandler.md).
+- `handler`: The handler block to execute when new altitude data is available. This parameter must not be `nil`. For information about the format of this block, see [`CMAbsoluteAltitudeHandler`](../cmabsolutealtitudehandler.md).
 
 ## See Also
 
-- [func stopAbsoluteAltitudeUpdates()](cmaltimeter/stopabsolutealtitudeupdates.md)
+### Starting and Stopping Altitude Updates
+- [func stopAbsoluteAltitudeUpdates()](./stopabsolutealtitudeupdates%28%29.md)
   Stops the delivery of absolute altitude data for this altimeter object.
-- [typealias CMAbsoluteAltitudeHandler](cmabsolutealtitudehandler.md)
+- [typealias CMAbsoluteAltitudeHandler](../cmabsolutealtitudehandler.md)
   A block for receiving absolute altitude data.
-- [func startRelativeAltitudeUpdates(to: OperationQueue, withHandler: CMAltitudeHandler)](cmaltimeter/startrelativealtitudeupdates(to:withhandler:).md)
+- [func startRelativeAltitudeUpdates(to: OperationQueue, withHandler: CMAltitudeHandler)](./startrelativealtitudeupdates%28to,withhandler%29.md)
   Starts the delivery of relative altitude data to the specified handler.
-- [func stopRelativeAltitudeUpdates()](cmaltimeter/stoprelativealtitudeupdates.md)
+- [func stopRelativeAltitudeUpdates()](./stoprelativealtitudeupdates%28%29.md)
   Stops the delivery of relative altitude data for the altimeter object.
-- [typealias CMAltitudeHandler](cmaltitudehandler.md)
+- [typealias CMAltitudeHandler](../cmaltitudehandler.md)
   A block for receiving relative altitude data.
 
 

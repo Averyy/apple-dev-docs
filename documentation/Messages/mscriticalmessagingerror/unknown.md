@@ -1,7 +1,8 @@
 # MSCriticalMessagingError.unknown
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code the framework returns after an unknown error occurs.
 
@@ -21,13 +22,14 @@ The framework returned an unknown error.
 
 ## See Also
 
-- [MSCriticalMessagingError.invalidAuthenticationRequest](mscriticalmessagingerror/invalidauthenticationrequest.md)
+### Error codes
+- [MSCriticalMessagingError.invalidAuthenticationRequest](./invalidauthenticationrequest.md)
   The authentication request isn’t valid.
-- [MSCriticalMessagingError.notSupported](mscriticalmessagingerror/notsupported.md)
+- [MSCriticalMessagingError.notSupported](./notsupported.md)
   The framework doesn’t support the current device.
-- [MSCriticalMessagingError.notAuthorized](mscriticalmessagingerror/notauthorized.md)
+- [MSCriticalMessagingError.notAuthorized](./notauthorized.md)
   The operation isn’t authorized.
-- [MSCriticalMessagingError.sendFailed](mscriticalmessagingerror/sendfailed.md)
+- [MSCriticalMessagingError.sendFailed](./sendfailed.md)
   The message failed to send.
 
 

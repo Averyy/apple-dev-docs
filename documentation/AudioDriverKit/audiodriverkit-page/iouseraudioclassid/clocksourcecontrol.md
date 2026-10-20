@@ -1,7 +1,8 @@
 # ClockSourceControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio clock source control class.
 
@@ -10,25 +11,26 @@ The identifier for the audio clock source control class.
 
 ## Declaration
 
-```swift
+```c
 ClockSourceControl
 ```
 
 #### Discussion
 
-This class is a subclass of the [`IOUserAudioSelectorControl`](iouseraudioselectorcontrol.md) class that identifies where the object’s timing info comes from.
+This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that identifies where the object’s timing info comes from.
 
 ## See Also
 
-- [SelectorControl](audiodriverkit/iouseraudioclassid/selectorcontrol.md)
+### Selector Controls
+- [SelectorControl](./selectorcontrol.md)
   The identifier for the audio selector control class.
-- [DataDestinationControl](audiodriverkit/iouseraudioclassid/datadestinationcontrol.md)
+- [DataDestinationControl](./datadestinationcontrol.md)
   The identifier for the audio data destination control class.
-- [DataSourceControl](audiodriverkit/iouseraudioclassid/datasourcecontrol.md)
+- [DataSourceControl](./datasourcecontrol.md)
   The identifier for the audio data source control class.
-- [HighPassFilterControl](audiodriverkit/iouseraudioclassid/highpassfiltercontrol.md)
+- [HighPassFilterControl](./highpassfiltercontrol.md)
   The identifier for the audio high pass filter control class.
-- [LineLevelControl](audiodriverkit/iouseraudioclassid/linelevelcontrol.md)
+- [LineLevelControl](./linelevelcontrol.md)
   The identifier for the audio line level control class.
 
 

@@ -1,22 +1,37 @@
 # category
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The named leaderboard to retrieve information from.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 4.1+
-- macOS 10.8+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 4.1+ - Deprecated in 7.0
+- iPadOS 4.1+ - Deprecated in 7.0
+- Mac Catalyst 4.1+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`loadEntries(for:timeScope:range:completionHandler:)`](./loadentries%28for,timescope,range,completionhandler%29.md) method instead.
 
 ## Declaration
 
 ```swift
 var category: String? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSString * category;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSString * category;
 ```
 
 #### Discussion
@@ -25,21 +40,22 @@ If non-`nil`, Game Center only returns scores from the matching leaderboard. If 
 
 ## See Also
 
-- [var identifier: String?](gkleaderboard/identifier.md)
+### Deprecated properties
+- [var identifier: String?](./identifier.md)
   The named leaderboard to retrieve information from.
-- [var isLoading: Bool](gkleaderboard/isloading.md)
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the leaderboard object is retrieving scores.
-- [var localPlayerScore: GKScore?](gkleaderboard/localplayerscore.md)
+- [var localPlayerScore: GKScore?](./localplayerscore.md)
   The score that the local player earns.
-- [var maxRange: Int](gkleaderboard/maxrange.md)
+- [var maxRange: Int](./maxrange.md)
   The size of the leaderboard.
-- [var playerScope: GKLeaderboard.PlayerScope](gkleaderboard/playerscope-swift.property.md)
+- [var playerScope: GKLeaderboard.PlayerScope](./playerscope-swift.property.md)
   A filter that restricts the search to a subset of the players in Game Center.
-- [var range: NSRange](gkleaderboard/range.md)
+- [var range: NSRange](./range.md)
   The numerical score rankings to return from the search.
-- [var scores: [GKScore]?](gkleaderboard/scores.md)
+- [var scores: [GKScore]?](./scores.md)
   An array of scores that contains the scores that the search returns.
-- [var timeScope: GKLeaderboard.TimeScope](gkleaderboard/timescope-swift.property.md)
+- [var timeScope: GKLeaderboard.TimeScope](./timescope-swift.property.md)
   A filter that restricts the search to scores within a specific period of time.
 
 

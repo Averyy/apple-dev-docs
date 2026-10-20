@@ -1,7 +1,8 @@
 # UIButton.Role
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the role of the button.
 
@@ -18,33 +19,38 @@ Constants that describe the role of the button.
 enum Role
 ```
 
+```c
+enum UIButtonRole : NSInteger;
+```
+
 ## Topics
 
 ### Button Roles
-- [UIButton.Role.normal](uibutton/role-swift.enum/normal.md)
+- [UIButton.Role.normal](./role-swift.enum/normal.md)
   A button role for a default button style.
-- [UIButton.Role.primary](uibutton/role-swift.enum/primary.md)
+- [UIButton.Role.primary](./role-swift.enum/primary.md)
   A button role that responds to a primary key press.
-- [UIButton.Role.cancel](uibutton/role-swift.enum/cancel.md)
+- [UIButton.Role.cancel](./role-swift.enum/cancel.md)
   A button role that responds to a cancel action.
-- [UIButton.Role.destructive](uibutton/role-swift.enum/destructive.md)
+- [UIButton.Role.destructive](./role-swift.enum/destructive.md)
   A button role with a red background color.
 ### Initializers
-- [init?(rawValue: Int)](uibutton/role-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./role-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var role: UIButton.Role](uibutton/role-swift.property.md)
+### Specifying the role
+- [var role: UIButton.Role](./role-swift.property.md)
   The role of the button.
 
 

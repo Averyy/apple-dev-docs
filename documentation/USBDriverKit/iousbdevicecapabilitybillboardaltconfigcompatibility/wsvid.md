@@ -1,21 +1,23 @@
 # wSVID
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wSVID;
 ```
 
 ## See Also
 
-- [dwAlternateMode](iousbdevicecapabilitybillboardaltconfigcompatibility/dwalternatemode.md)
-- [iAlternateModeString](iousbdevicecapabilitybillboardaltconfigcompatibility/ialternatemodestring.md)
+### Accessing the Descriptor Properties
+- [dwAlternateMode](./dwalternatemode.md)
+- [iAlternateModeString](./ialternatemodestring.md)
 
 
 ---

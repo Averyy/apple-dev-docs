@@ -1,7 +1,8 @@
 # CGImageMetadata
 
 **Framework**: Image I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable object that contains the XMP metadata associated with an image.
 
@@ -20,57 +21,62 @@ An immutable object that contains the XMP metadata associated with an image.
 class CGImageMetadata
 ```
 
+```c
+typedef const struct CGImageMetadata * CGImageMetadataRef;
+```
+
 #### Overview
 
-A [`CGImageMetadata`](cgimagemetadata.md) object stores the metadata associated with an image. Create this object from your image’s associated XMP data, and use it to fetch individual metadata tags. You can search for specific tags, or enumerate all of the tags present for the image.
+A [`CGImageMetadata`](./cgimagemetadata.md) object stores the metadata associated with an image. Create this object from your image’s associated XMP data, and use it to fetch individual metadata tags. You can search for specific tags, or enumerate all of the tags present for the image.
 
 ## Topics
 
 ### Creating an Image Metadata Type
-- [func CGImageMetadataCreateFromXMPData(CFData) -> CGImageMetadata?](cgimagemetadatacreatefromxmpdata(_:).md)
+- [func CGImageMetadataCreateFromXMPData(CFData) -> CGImageMetadata?](./cgimagemetadatacreatefromxmpdata%28_%29.md)
   Creates a collection of metadata tags from the specified XMP data.
 ### Getting the Metadata Tags
-- [func CGImageMetadataCopyTagWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CGImageMetadataTag?](cgimagemetadatacopytagwithpath(_:_:_:).md)
+- [func CGImageMetadataCopyTagWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CGImageMetadataTag?](./cgimagemetadatacopytagwithpath%28_,_,_%29.md)
   Searches for a specific metadata tag within a metadata collection.
-- [func CGImageMetadataCopyTags(CGImageMetadata) -> CFArray?](cgimagemetadatacopytags(_:).md)
+- [func CGImageMetadataCopyTags(CGImageMetadata) -> CFArray?](./cgimagemetadatacopytags%28_%29.md)
   Returns an array of root-level metadata tags from the specified metadata object.
-- [func CGImageMetadataCopyTagMatchingImageProperty(CGImageMetadata, CFString, CFString) -> CGImageMetadataTag?](cgimagemetadatacopytagmatchingimageproperty(_:_:_:).md)
+- [func CGImageMetadataCopyTagMatchingImageProperty(CGImageMetadata, CFString, CFString) -> CGImageMetadataTag?](./cgimagemetadatacopytagmatchingimageproperty%28_,_,_%29.md)
   Searches for the specified image property and, if found, returns the corresponding tag object.
-- [func CGImageMetadataCopyStringValueWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CFString?](cgimagemetadatacopystringvaluewithpath(_:_:_:).md)
+- [func CGImageMetadataCopyStringValueWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CFString?](./cgimagemetadatacopystringvaluewithpath%28_,_,_%29.md)
   Searches the metadata for the specified tag, and returns its string value if it exists.
 ### Enumerating the Metadata Tags
-- [func CGImageMetadataEnumerateTagsUsingBlock(CGImageMetadata, CFString?, CFDictionary?, CGImageMetadataTagBlock)](cgimagemetadataenumeratetagsusingblock(_:_:_:_:).md)
+- [func CGImageMetadataEnumerateTagsUsingBlock(CGImageMetadata, CFString?, CFDictionary?, CGImageMetadataTagBlock)](./cgimagemetadataenumeratetagsusingblock%28_,_,_,_%29.md)
   Enumerates the tags of a metadata object and executes the specified block on each tag.
-- [typealias CGImageMetadataTagBlock](cgimagemetadatatagblock.md)
+- [typealias CGImageMetadataTagBlock](./cgimagemetadatatagblock.md)
   The block to execute when enumerating the tags of a metadata object.
-- [let kCGImageMetadataEnumerateRecursively: CFString](kcgimagemetadataenumeraterecursively.md)
+- [let kCGImageMetadataEnumerateRecursively: CFString](./kcgimagemetadataenumeraterecursively.md)
   An option to enumerate recursively through a set of metadata tags.
 ### Generating XMP Data
-- [func CGImageMetadataCreateXMPData(CGImageMetadata, CFDictionary?) -> CFData?](cgimagemetadatacreatexmpdata(_:_:).md)
+- [func CGImageMetadataCreateXMPData(CGImageMetadata, CFDictionary?) -> CFData?](./cgimagemetadatacreatexmpdata%28_,_%29.md)
   Returns a data object that contains the metadata object’s contents serialized into the XMP format.
 ### Getting the Core Foundation Type
-- [func CGImageMetadataGetTypeID() -> CFTypeID](cgimagemetadatagettypeid().md)
+- [func CGImageMetadataGetTypeID() -> CFTypeID](./cgimagemetadatagettypeid%28%29.md)
   Returns the type identifier for metadata objects.
 
 ## Relationships
 
 ### Inherited By
-- [CGMutableImageMetadata](cgmutableimagemetadata.md)
+- [CGMutableImageMetadata](./cgmutableimagemetadata.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class CGMutableImageMetadata](cgmutableimagemetadata.md)
+### XMP Metadata
+- [class CGMutableImageMetadata](./cgmutableimagemetadata.md)
   An opaque type for adding or modifying image metadata.
-- [class CGImageMetadataTag](cgimagemetadatatag.md)
+- [class CGImageMetadataTag](./cgimagemetadatatag.md)
   An immutable type that contains information about a single piece of image metadata.
-- [XMP Namespaces and Prefixes](xmp-namespaces-and-prefixes.md)
+- [XMP Namespaces and Prefixes](./xmp-namespaces-and-prefixes.md)
   Discover the public namespaces and prefixes that exist in XMP metadata tags.
-- [let kCFErrorDomainCGImageMetadata: CFString](kcferrordomaincgimagemetadata.md)
+- [let kCFErrorDomainCGImageMetadata: CFString](./kcferrordomaincgimagemetadata.md)
   The domain for metadata-related errors that originate in the Image I/O framework.
-- [enum CGImageMetadataErrors](cgimagemetadataerrors.md)
+- [enum CGImageMetadataErrors](./cgimagemetadataerrors.md)
   Constants for errors that occur when getting or setting metadata information.
 
 

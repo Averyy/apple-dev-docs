@@ -1,12 +1,13 @@
 # alwaysUsesMultipleValuesMarker
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver always returns the multiple values marker when multiple objects are selected
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the receiver always returns the multiple 
 var alwaysUsesMultipleValuesMarker: Bool { get set }
 ```
 
+```objc
+@property BOOL alwaysUsesMultipleValuesMarker;
+```
+
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false). Setting to [`true`](https://developer.apple.com/documentation/swift/true) can increase performance if your application doesn’t allow editing multiple values. This property is observable using key-value observing.
+The default is [`false`](../../Swift/false.md). Setting to [`true`](../../Swift/true.md) can increase performance if your application doesn’t allow editing multiple values. This property is observable using key-value observing.
 
 ## See Also
 
-- [var avoidsEmptySelection: Bool](nsarraycontroller/avoidsemptyselection.md)
+### Selection Attributes
+- [var avoidsEmptySelection: Bool](./avoidsemptyselection.md)
   A Boolean value that indicates whether the receiver requires that the content array attempt to maintain a selection
-- [var preservesSelection: Bool](nsarraycontroller/preservesselection.md)
+- [var preservesSelection: Bool](./preservesselection.md)
   A Boolean value that indicates whether the receiver will attempt to preserve the current selection when the content changes
 
 

@@ -1,7 +1,8 @@
 # errSecIncompatibleDatabaseBlob
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified database has an incompatible blob.
 
@@ -18,6 +19,10 @@ The specified database has an incompatible blob.
 
 ```swift
 var errSecIncompatibleDatabaseBlob: OSStatus { get }
+```
+
+```c
+errSecIncompatibleDatabaseBlob
 ```
 
 

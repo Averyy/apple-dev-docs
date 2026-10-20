@@ -1,7 +1,8 @@
 # typeInformation
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the MTRDeviceType corresponding to deviceTypeID, or nil if deviceTypeID does not represent a known device type.
 
@@ -19,6 +20,10 @@ Returns the MTRDeviceType corresponding to deviceTypeID, or nil if deviceTypeID 
 ```swift
 @NSCopying
 var typeInformation: MTRDeviceType? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) MTRDeviceType * typeInformation;
 ```
 
 

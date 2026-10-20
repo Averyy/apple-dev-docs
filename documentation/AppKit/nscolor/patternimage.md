@@ -1,18 +1,23 @@
 # patternImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pattern image used to paint the target area.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @NSCopying
 var patternImage: NSImage { get }
+```
+
+```objc
+@property (copy, readonly) NSImage * patternImage;
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ Do not access this property unless you created the color object using a pattern 
 
 ## See Also
 
-- [init(patternImage: NSImage)](nscolor/init(patternimage:).md)
+### Creating a pattern-based color
+- [init(patternImage: NSImage)](./init%28patternimage%29.md)
   Creates a color object that uses the specified image pattern to paint the target area.
 
 

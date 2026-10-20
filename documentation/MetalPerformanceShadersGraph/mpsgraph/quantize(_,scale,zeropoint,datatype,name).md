@@ -1,7 +1,8 @@
 # quantize(_:scale:zeroPoint:dataType:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Quantize operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Quantize operation and returns the result tensor.
 
 ```swift
 func quantize(_ tensor: MPSGraphTensor, scale: Double, zeroPoint: Double, dataType: MPSDataType, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) quantizeTensor:(MPSGraphTensor *) tensor scale:(double) scale zeroPoint:(double) zeroPoint dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
 #### Return Value

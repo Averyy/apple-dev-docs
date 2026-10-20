@@ -1,14 +1,17 @@
 # UITextInputTextFontKey
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The font of the text.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 8.0 (renamed: NSAttributedString.Key.font)
+- iPadOS 3.2+ - Deprecated in 8.0 (renamed: NSAttributedString.Key.font)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: NSAttributedString.Key.font)
+
+> **Deprecated**: In Swift, use [`font`](../Foundation/nsattributedstring/key/font.md) instead. In Objective-C, use [`NSFontAttributeName`](./nsfontattributename.md) instead.
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The font of the text.
 let UITextInputTextFontKey: String
 ```
 
+```c
+extern NSString * const UITextInputTextFontKey;
+```
+
 #### Discussion
 
-The value of this key is a [`UIFont`](uifont.md) object.
+The value of this key is a [`UIFont`](./uifont.md) object.
 
 ## See Also
 
-- [let UITextInputTextBackgroundColorKey: String](uitextinputtextbackgroundcolorkey.md)
+### Deprecated
+- [let UITextInputTextBackgroundColorKey: String](./uitextinputtextbackgroundcolorkey.md)
   The background color of the text.
-- [let UITextInputTextColorKey: String](uitextinputtextcolorkey.md)
+- [let UITextInputTextColorKey: String](./uitextinputtextcolorkey.md)
   The color of the text.
 
 

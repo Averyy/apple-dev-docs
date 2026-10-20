@@ -1,7 +1,8 @@
 # centerOffset
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset (in points) at which to display the view.
 
@@ -19,23 +20,28 @@ The offset (in points) at which to display the view.
 var centerOffset: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint centerOffset;
+```
+
 #### Discussion
 
 By default, the map view places the center point of an annotation view at the coordinate point of the associated annotation. You can use this property to reposition the annotation view as necessary. MapKit measures the x- and y-offset values in points. Positive offset values move the annotation view down and to the right, and negative values move it up and to the left.
 
 ## See Also
 
-- [var isEnabled: Bool](mkannotationview/isenabled.md)
+### Getting and setting attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the annotation is in an enabled state.
-- [var image: UIImage?](mkannotationview/image.md)
+- [var image: UIImage?](./image.md)
   The image the annotation view displays.
-- [var isHighlighted: Bool](mkannotationview/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the map view highlights the annotation view.
-- [var annotation: (any MKAnnotation)?](mkannotationview/annotation.md)
+- [var annotation: (any MKAnnotation)?](./annotation.md)
   The annotation object associated with the view.
-- [var calloutOffset: CGPoint](mkannotationview/calloutoffset.md)
+- [var calloutOffset: CGPoint](./calloutoffset.md)
   The offset (in points) at which to place the callout.
-- [var reuseIdentifier: String?](mkannotationview/reuseidentifier.md)
+- [var reuseIdentifier: String?](./reuseidentifier.md)
   The string that identifies that the annotation view is reusable.
 
 

@@ -6,40 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sy
 
 # mlx.core.synchronize
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.synchronize.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.synchronize
-
- Table of contents 
-
-## Contents
-
-# mlx.core.synchronize
-
 **synchronize(*stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [None](https://docs.python.org/3/builtins/constants.html#None)**
 : Synchronize with the given stream.
 
 Parameters:
-**stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream to synchronize. If device is
+**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream to synchronize. If device is
 provided the default stream for that device is used. If `None`
 then the default stream of the default device is used.
 Default: `None`.
-
-** Contents

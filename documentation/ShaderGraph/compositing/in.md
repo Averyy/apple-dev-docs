@@ -1,7 +1,8 @@
 # In
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Outputs areas of foreground that overlap with the alpha of background.
 
@@ -15,7 +16,17 @@ Outputs areas of foreground that overlap with the alpha of background.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+| Input | Type |
+| --- | --- |
+| `Foreground` | Color4 |
+| `Background` | Color4 |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+#### Parameter descriptions
 
 - **`Foreground`**: The `color4` foreground input. `F` represents the RGB component of this parameter. `f` represents the alpha component of this parameter.
 - **`Background`**: The `color4` background input. `B` represents the RGB component of this parameter. `b`represents the alpha component of this parameter.
@@ -25,43 +36,50 @@ Outputs areas of foreground that overlap with the alpha of background.
 
 The in node determines its output using the alpha channels of the foreground and background inputs. The RGB component of the output is `F*b` and the alpha component of the output is `f*b`. Visually this means that within the output, the foreground values that overlap with the background alpha are preserved. Below is a simple node graph that uses the In node to blend a tile and rock texture.
 
-![None](/images/ShaderGraph-Docs/InGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InGraph.png)
 
 Below are the two original images, the image representation of the alpha of the background, and the resulting blended texture applied to a cube.
 
-![None](/images/ShaderGraph-Docs/InMaterial.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/DisjointOverMaterial1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/DisjointOverMaterial2.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InMaterialAlpha.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InMaterial.png)
 
 ## See Also
 
-- [Premultiply](compositing/premultiply.md)
+### Nodes
+- [Premultiply](./premultiply.md)
   Multiplies the RGB channels of the input by the alpha channel.
-- [Unpremultiply](compositing/unpremultiply.md)
+- [Unpremultiply](./unpremultiply.md)
   Divides the RGB channels of the input by the alpha channel.
-- [Additive Mix](compositing/additive-mix.md)
+- [Additive Mix](./additive-mix.md)
   Adds foreground and background values.
-- [Subtractive Mix](compositing/subtractive-mix.md)
+- [Subtractive Mix](./subtractive-mix.md)
   Subtracts foreground from background values.
-- [Difference](compositing/difference.md)
+- [Difference](./difference.md)
   Outputs the distance between foreground and background values.
-- [Burn](compositing/burn.md)
+- [Burn](./burn.md)
   A blend operation that darkens the foreground layer using the background.
-- [Dodge](compositing/dodge.md)
+- [Dodge](./dodge.md)
   A blend operation that lightens the background layer depending on the foreground.
-- [Screen](compositing/screen.md)
+- [Screen](./screen.md)
   A blend operation that lightens areas that are darker than white.
-- [Overlay](compositing/overlay.md)
+- [Overlay](./overlay.md)
   A blend operation that multiplies dark areas and screens light areas.
-- [Disjoint Over](compositing/disjoint-over.md)
+- [Disjoint Over](./disjoint-over.md)
   A merge operation that layers foreground over background color, but assumes no overlap in partially transparent areas covered by both.
-- [Mask](compositing/mask.md)
+- [Mask](./mask.md)
   Outputs areas of background that overlap with the alpha of foreground.
-- [Matte](compositing/matte.md)
+- [Matte](./matte.md)
   A merge operation that layers premultiplied foreground over background.
-- [Out](compositing/out.md)
+- [Out](./out.md)
   Outputs areas of foreground that do not overlap with background.
-- [Over](compositing/over.md)
+- [Over](./over.md)
   A merge operation that layers foreground over background, using the alpha of the foreground.
-- [Inside](compositing/inside.md)
+- [Inside](./inside.md)
   Multiplies a mask to all channels of the input.
 
 

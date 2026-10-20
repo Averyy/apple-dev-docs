@@ -1,7 +1,8 @@
 # removePendingNotificationRequests(withIdentifiers:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes your app’s local notifications that are pending and match the specified identifiers.
 
@@ -20,6 +21,10 @@ Removes your app’s local notifications that are pending and match the specifie
 func removePendingNotificationRequests(withIdentifiers identifiers: [String])
 ```
 
+```objc
+- (void) removePendingNotificationRequestsWithIdentifiers:(NSArray<NSString *> *) identifiers;
+```
+
 #### Discussion
 
 This method executes asynchronously, removing the pending notification requests on a secondary thread.
@@ -31,15 +36,16 @@ center.removePendingNotificationRequests(withIdentifiers: ["com.example.mynotifi
 
 ## Parameters
 
-- `identifiers`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains the [`identifier`](unnotificationrequest/identifier.md) of an active [`UNNotificationRequest`](unnotificationrequest.md) object. If the identifier belongs to a non repeating request, and the trigger condition for that request has already been met, this method ignores the identifier.
+- `identifiers`: An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains the [`identifier`](../unnotificationrequest/identifier.md) of an active [`UNNotificationRequest`](../unnotificationrequest.md) object. If the identifier belongs to a non repeating request, and the trigger condition for that request has already been met, this method ignores the identifier.
 
 ## See Also
 
-- [func add(UNNotificationRequest, withCompletionHandler: (((any Error)?) -> Void)?)](unusernotificationcenter/add(_:withcompletionhandler:).md)
+### Scheduling notifications
+- [func add(UNNotificationRequest, withCompletionHandler: (((any Error)?) -> Void)?)](./add%28_,withcompletionhandler%29.md)
   Schedules the delivery of a local notification.
-- [func getPendingNotificationRequests(completionHandler: ([UNNotificationRequest]) -> Void)](unusernotificationcenter/getpendingnotificationrequests(completionhandler:).md)
+- [func getPendingNotificationRequests(completionHandler: ([UNNotificationRequest]) -> Void)](./getpendingnotificationrequests%28completionhandler%29.md)
   Fetches all of your app’s local notifications that are pending delivery.
-- [func removeAllPendingNotificationRequests()](unusernotificationcenter/removeallpendingnotificationrequests.md)
+- [func removeAllPendingNotificationRequests()](./removeallpendingnotificationrequests%28%29.md)
   Removes all of your app’s pending local notifications.
 
 

@@ -1,21 +1,22 @@
 # AppAssetLibraryRefDatum.Attributes.ImageSpecs
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryRefDatum.Attributes.ImageSpecs
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryRefDatum.Attributes.ImageSpecs.Dimensions](appassetlibraryrefdatum/attributes-data.dictionary/imagespecs-data.dictionary/dimensions-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.ImageSpecs.Dimensions](./imagespecs-data.dictionary/dimensions-data.dictionary.md)
 
 ## Properties
 
@@ -24,7 +25,7 @@ object AppAssetLibraryRefDatum.Attributes.ImageSpecs
 - `compatiblePlacementTypes` ([AppAssetLibraryPlacementType])
 - `dimensions` (AppAssetLibraryRefDatum.Attributes.ImageSpecs.Dimensions)
 - `fileExtensions` ([string])
-- `maxFileSize` (int64)
+- `maxFileSize` (int64): **Minimum**: `1`; **Maximum**: `9007199254740991`
 - `mimeTypes` ([string])
 - `shortName` (string)
 - `specId` (string)

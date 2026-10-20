@@ -1,7 +1,8 @@
 # QueryRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The standard request body used across all query endpoints, supporting filters, sorting, pagination, and field selection.
 
@@ -10,7 +11,7 @@ The standard request body used across all query endpoints, supporting filters, s
 
 ## Declaration
 
-```swift
+```
 object QueryRequest
 ```
 
@@ -48,21 +49,22 @@ To filter on fields marked **Filterable** in each entity’s dictionary keys, us
 
 ## Properties
 
-- `filters` ([QueryFilter]): Filter field conditions. If no filters are in the request, all non-deleted entities within the current ad account scope are returned. Deleted entities aren’t returned unless specified to be included. See [`QueryFilter`](queryfilter.md).
-- `sorting` ([QuerySort]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`QuerySort`](querysort.md).
-- `pagination` (QueryPagination): Controls pagination settings for results using offset and size. See [`QueryPagination`](querypagination.md).
+- `filters` ([QueryFilter]): Filter field conditions. If no filters are in the request, all non-deleted entities within the current ad account scope are returned. Deleted entities aren’t returned unless specified to be included. See [`QueryFilter`](./queryfilter.md).
+- `sorting` ([QuerySort]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`QuerySort`](./querysort.md).
+- `pagination` (QueryPagination): Controls pagination settings for results using offset and size. See [`QueryPagination`](./querypagination.md).
 
 ## See Also
 
-- [object QueryFilter](queryfilter.md)
+### Query Objects
+- [object QueryFilter](./queryfilter.md)
   A single filter condition in a query request, specifying a field, comparison operator, and one or more values to match against.
-- [object QuerySort](querysort.md)
+- [object QuerySort](./querysort.md)
   A sort directive in a query request, specifying a field and direction.
-- [object QueryPagination](querypagination.md)
+- [object QueryPagination](./querypagination.md)
   Controls the page size and starting offset for query results.
-- [object QueryResponse](queryresponse.md)
+- [object QueryResponse](./queryresponse.md)
   Response wrapper for paginated query results.
-- [object QueryPaginationResult](querypaginationresult.md)
+- [object QueryPaginationResult](./querypaginationresult.md)
   Pagination metadata returned in query responses, including page size, offset, and optional total count.
 
 

@@ -1,7 +1,8 @@
 # landmark(for:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of a joint with a given name.
 
@@ -22,7 +23,8 @@ Joint landmarks are normalized within the range [0..1] and are in the coordinate
 
 ## See Also
 
-- [var jointLandmarks: [simd_float2]](arskeleton2d/jointlandmarks-12vkw.md)
+### Getting Joint Landmarks
+- [var jointLandmarks: [simd_float2]](./jointlandmarks-12vkw.md)
   The joint landmarks in normalized coordinates.
 
 

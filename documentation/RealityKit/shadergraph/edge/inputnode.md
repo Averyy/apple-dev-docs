@@ -1,7 +1,8 @@
 # inputNode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the node receiving the input value.
 

@@ -1,7 +1,8 @@
 # popPanel(completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pops the top panel from the overlay’s panel stack.
 
@@ -13,7 +14,15 @@ Pops the top panel from the overlay’s panel stack.
 ## Declaration
 
 ```swift
+func popPanel(completion: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func popPanel() async throws -> Bool
+```
+
+```objc
+- (void) popPanelWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 ## Parameters

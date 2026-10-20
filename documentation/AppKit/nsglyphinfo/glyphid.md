@@ -1,7 +1,8 @@
 # glyphID
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The glyph identifier, specified as the index into the internal glyph table of the font.
 
@@ -14,9 +15,14 @@ The glyph identifier, specified as the index into the internal glyph table of th
 var glyphID: CGGlyph { get }
 ```
 
+```objc
+@property (readonly) CGGlyph glyphID;
+```
+
 ## See Also
 
-- [var baseString: String](nsglyphinfo/basestring.md)
+### Getting information about a glyph info object
+- [var baseString: String](./basestring.md)
   The string containing the character represented by the glyph.
 
 

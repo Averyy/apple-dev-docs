@@ -1,7 +1,8 @@
 # provideImage(to:commandBuffer:originx:originy:width:height:userInfo:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An optional method that an image provider object may implement.
 With this method, the provider object can use the Metal API to provide pixel
@@ -19,6 +20,10 @@ data into a MTLTexture when the image object is rendered.
 
 ```swift
 func provideImage(to texture: any MTLTexture, commandBuffer: any MTLCommandBuffer, originx: Int, originy: Int, width: Int, height: Int, userInfo info: Any?)
+```
+
+```objc
+- (void) provideImageToMTLTexture:(id<MTLTexture>) texture commandBuffer:(id<MTLCommandBuffer>) commandBuffer originx:(size_t) originx originy:(size_t) originy width:(size_t) width height:(size_t) height userInfo:(id) info;
 ```
 
 #### Discussion

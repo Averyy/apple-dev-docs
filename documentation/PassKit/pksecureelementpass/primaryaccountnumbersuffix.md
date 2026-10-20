@@ -1,7 +1,8 @@
 # primaryAccountNumberSuffix
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A display-ready version of the primary account number.
 
@@ -19,13 +20,18 @@ A display-ready version of the primary account number.
 var primaryAccountNumberSuffix: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * primaryAccountNumberSuffix;
+```
+
 #### Discussion
 
-This property’s value is generally the last four or five digits of the primary account number, but can vary by issuer. The value isn’t related to [`primaryAccountIdentifier`](pksecureelementpass/primaryaccountidentifier.md).
+This property’s value is generally the last four or five digits of the primary account number, but can vary by issuer. The value isn’t related to [`primaryAccountIdentifier`](./primaryaccountidentifier.md).
 
 ## See Also
 
-- [var primaryAccountIdentifier: String](pksecureelementpass/primaryaccountidentifier.md)
+### Getting the account attributes
+- [var primaryAccountIdentifier: String](./primaryaccountidentifier.md)
   An opaque value that identifies the primary account number that funds the pass’s transactions.
 
 

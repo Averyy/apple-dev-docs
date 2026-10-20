@@ -1,14 +1,15 @@
 # CSSLOT_LAUNCH_CONSTRAINT_PARENT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CSSLOT_LAUNCH_CONSTRAINT_PARENT = 9
 ```
 

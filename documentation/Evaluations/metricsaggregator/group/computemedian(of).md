@@ -1,7 +1,8 @@
 # computeMedian(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the median of a metric and adds it to the group.
 

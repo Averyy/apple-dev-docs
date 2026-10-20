@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Metal texture object that contains the drawable’s contents.
 
@@ -11,7 +12,7 @@ A Metal texture object that contains the drawable’s contents.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var texture: any MTLTexture { get }
 
 ## See Also
 
-- [var drawableQueue: TextureResource.DrawableQueue](textureresource/drawable/drawablequeue.md)
+### Working with a drawable
+- [var drawableQueue: TextureResource.DrawableQueue](./drawablequeue.md)
   The DrawableQueue that this Drawable is owned by
-- [func present()](textureresource/drawable/present.md)
+- [func present()](./present%28%29.md)
   Presents the updated texture to the renderer as soon as possible.
 
 

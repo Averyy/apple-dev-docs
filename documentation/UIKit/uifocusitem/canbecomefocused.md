@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the item can become focused.
@@ -19,15 +20,19 @@ A Boolean value that indicates whether the item can become focused.
 var canBecomeFocused: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canBecomeFocused;
+```
+
 ## Mentions
 
-- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
+- [About focus interactions for Apple TV](../about-focus-interactions-for-apple-tv.md)
 
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the item is not focusable, even if it is visible in the user interface. For example, a subclass of [`UIControl`](uicontrol.md) returns [`false`](https://developer.apple.com/documentation/swift/false) when it is not enabled.
+When the value of this property is [`false`](../../Swift/false.md), the item is not focusable, even if it is visible in the user interface. For example, a subclass of [`UIControl`](../uicontrol.md) returns [`false`](../../Swift/false.md) when it is not enabled.
 
-Returning [`true`](https://developer.apple.com/documentation/swift/true) in this property means that the item is capable of being focused; it does not guarantee that the item is always focusable. Focusability is ultimately determined by the system. For example, if an item is visually obscured or offscreen, it may not be focusable. In addition, objects that conform to this protocol may have their own unique limitations. For example, a [`UIView`](uiview.md) object is not focusable when user interaction is disabled, or when the view’s alpha value is equal to `0`.
+Returning [`true`](../../Swift/true.md) in this property means that the item is capable of being focused; it does not guarantee that the item is always focusable. Focusability is ultimately determined by the system. For example, if an item is visually obscured or offscreen, it may not be focusable. In addition, objects that conform to this protocol may have their own unique limitations. For example, a [`UIView`](../uiview.md) object is not focusable when user interaction is disabled, or when the view’s alpha value is equal to `0`.
 
 
 ---

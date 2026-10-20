@@ -1,7 +1,8 @@
 # info
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var info: UnsafeMutableRawPointer? { get }
+```
+
+```c
+extern void *CGDataProviderGetInfo(CGDataProviderRef provider);
 ```
 
 

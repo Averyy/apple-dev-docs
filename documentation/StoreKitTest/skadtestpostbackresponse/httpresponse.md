@@ -1,7 +1,8 @@
 # httpResponse
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP response from the server receiving the test postback.
 
@@ -16,15 +17,20 @@ The HTTP response from the server receiving the test postback.
 var httpResponse: HTTPURLResponse? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSHTTPURLResponse * httpResponse;
+```
+
 #### Discussion
 
 This property contains your server’s full HTTP response.
 
 ## See Also
 
-- [var didSucceed: Bool](skadtestpostbackresponse/didsucceed.md)
+### Getting Postback Responses
+- [var didSucceed: Bool](./didsucceed.md)
   A Boolean value that indicates whether the system successfully delivered the test postback.
-- [var error: (any Error)?](skadtestpostbackresponse/error.md)
+- [var error: (any Error)?](./error.md)
   An error the test session reports if sending a test postbacks fails.
 
 

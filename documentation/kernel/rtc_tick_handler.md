@@ -1,14 +1,15 @@
 # RTC_tick_handler
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*RTC_tick_handler)(IOService *);
 ```
 

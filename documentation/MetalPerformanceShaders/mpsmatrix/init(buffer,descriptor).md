@@ -1,7 +1,8 @@
 # init(buffer:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a matrix with a buffer.
 
@@ -19,13 +20,17 @@ Initializes a matrix with a buffer.
 init(buffer: any MTLBuffer, descriptor: MPSMatrixDescriptor)
 ```
 
+```objc
+- (instancetype) initWithBuffer:(id<MTLBuffer>) buffer descriptor:(MPSMatrixDescriptor *) descriptor;
+```
+
 #### Return Value
 
-A valid [`MPSMatrix`](mpsmatrix.md) object or `nil`, if failure.
+A valid [`MPSMatrix`](../mpsmatrix.md) object or `nil`, if failure.
 
 #### Discussion
 
-The dimensions and stride of the matrix are specified by the [`MPSMatrixDescriptor`](mpsmatrixdescriptor.md) object. The size of the provided [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object must be large enough to store the following amount of bytes:
+The dimensions and stride of the matrix are specified by the [`MPSMatrixDescriptor`](../mpsmatrixdescriptor.md) object. The size of the provided [`MTLBuffer`](../../Metal/mtlbuffer.md) object must be large enough to store the following amount of bytes:
 
 `(descriptor.rows-1) * descriptor.rowBytes + descriptor.columns * (element size)`
 

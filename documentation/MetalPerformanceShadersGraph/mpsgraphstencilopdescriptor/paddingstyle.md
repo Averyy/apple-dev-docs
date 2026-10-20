@@ -1,7 +1,8 @@
 # paddingStyle
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines what kind of padding to apply to the stencil operation.
 
@@ -17,6 +18,10 @@ The property that defines what kind of padding to apply to the stencil operation
 
 ```swift
 var paddingStyle: MPSGraphPaddingStyle { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphPaddingStyle paddingStyle;
 ```
 
 #### Discussion

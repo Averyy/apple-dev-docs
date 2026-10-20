@@ -1,7 +1,8 @@
 # object
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object the change inserts or removes.
 
@@ -20,14 +21,19 @@ An object the change inserts or removes.
 var object: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) ObjectType object;
+```
+
 ## See Also
 
-- [var changeType: NSCollectionChangeType](nsorderedcollectionchange/changetype.md)
+### Accessing the Change
+- [var changeType: NSCollectionChangeType](./changetype.md)
   The type of change.
-- [var index: Int](nsorderedcollectionchange/index.md)
+- [var index: Int](./index.md)
   The index location of the change.
-- [var associatedIndex: Int](nsorderedcollectionchange/associatedindex.md)
-  When this property is set to a value other than [`NSNotFound`](nsnotfound-9t5v2.md), the receiver is one half of a move, and this value is the index of the change’s counterpart of the opposite type in the diff.
+- [var associatedIndex: Int](./associatedindex.md)
+  When this property is set to a value other than [`NSNotFound`](../nsnotfound-9t5v2.md), the receiver is one half of a move, and this value is the index of the change’s counterpart of the opposite type in the diff.
 
 
 ---

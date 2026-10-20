@@ -1,7 +1,8 @@
 # vDSP_vdistD
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the double-precision hypotenuses of right triangles with legs that are the lengths of corresponding elements of two pairs of vectors.
 
@@ -10,19 +11,19 @@ Calculates the double-precision hypotenuses of right triangles with legs that ar
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
 ## Declaration
 
-```swift
+```c
 extern void vDSP_vdistD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
 #### Discussion
 
-The [`vDSP_vdist`](vdsp_vdist.md) and [`vDSP_vdistD`](vdsp_vdistd.md) functions calculate the square roots of the sum of the squares of corresponding elements of vectors `A` and `B`, using the following operation:
+The [`vDSP_vdist`](./vdsp_vdist.md) and [`vDSP_vdistD`](./vdsp_vdistd.md) functions calculate the square roots of the sum of the squares of corresponding elements of vectors `A` and `B`, using the following operation:
 
 ```objc
 for (n = 0; n < N; ++n)
@@ -89,11 +90,12 @@ printf("[%g, %g, %g]\n", c[0], c[1], c[2]);
 
 ## See Also
 
-- [vDSP_vdist](vdsp_vdist.md)
+### Vector distance computation
+- [vDSP_vdist](./vdsp_vdist.md)
   Calculates the single-precision hypotenuses of right triangles with legs that are the lengths of corresponding elements of two pairs of vectors.
-- [vDSP_distancesq](vdsp_distancesq.md)
+- [vDSP_distancesq](./vdsp_distancesq.md)
   Calculates the single-precision distance squared between two points in n-dimensional space.
-- [vDSP_distancesqD](vdsp_distancesqd.md)
+- [vDSP_distancesqD](./vdsp_distancesqd.md)
   Calculates the double-precision distance squared between two points in n-dimensional space.
 
 

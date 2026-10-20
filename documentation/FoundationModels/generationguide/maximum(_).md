@@ -1,7 +1,8 @@
 # maximum(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces a maximum value.
 
@@ -17,6 +18,22 @@ Enforces a maximum value.
 
 ```swift
 static func maximum(_ value: Decimal) -> GenerationGuide<Decimal>
+```
+
+Available when `Value` is `Decimal`.
+
+**Other overloads**:
+
+```swift
+static func maximum(_ value: Double) -> GenerationGuide<Double>
+```
+
+```swift
+static func maximum(_ value: Float) -> GenerationGuide<Float>
+```
+
+```swift
+static func maximum(_ value: Int) -> GenerationGuide<Int>
 ```
 
 #### Discussion
@@ -36,7 +53,8 @@ struct GameCharacter {
 
 ## See Also
 
-- [static func maximumCount<Element>(Int) -> GenerationGuide<[Element]>](generationguide/maximumcount(_:).md)
+### Getting the maximum value
+- [static func maximumCount<Element>(Int) -> GenerationGuide<[Element]>](./maximumcount%28_%29.md)
   Enforces a maximum number of elements in the array.
 
 

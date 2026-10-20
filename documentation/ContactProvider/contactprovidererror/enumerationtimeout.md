@@ -1,7 +1,8 @@
 # ContactProviderError.enumerationTimeout
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The extension enumeration timed out.
 
@@ -17,11 +18,12 @@ case enumerationTimeout
 
 #### Discussion
 
-This can occur if the [`ContactItemEnumerator`](contactitemenumerator.md) takes too long to enumerate a batch of content or changes.
+This can occur if the [`ContactItemEnumerator`](../contactitemenumerator.md) takes too long to enumerate a batch of content or changes.
 
 ## See Also
 
-- [ContactProviderError.cannotEnumerate](contactprovidererror/cannotenumerate.md)
+### Enumeration errors
+- [ContactProviderError.cannotEnumerate](./cannotenumerate.md)
   The extension is unable to enumerate.
 
 

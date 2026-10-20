@@ -1,7 +1,8 @@
 # confirmAuthorization
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to require the app to finish accessory authorization before showing the setup view.
 
@@ -15,15 +16,20 @@ An option to require the app to finish accessory authorization before showing th
 static var confirmAuthorization: ASPickerDisplayItem.SetupOptions { get }
 ```
 
+```c
+ASPickerDisplayItemSetupConfirmAuthorization
+```
+
 #### Discussion
 
-If the accessory supports [`bluetoothPairingLE`](asaccessory/supportoptions/bluetoothpairingle.md), then the app needs to start pairing by accessing a protected GATT characteristic.
+If the accessory supports [`bluetoothPairingLE`](../../asaccessory/supportoptions/bluetoothpairingle.md), then the app needs to start pairing by accessing a protected GATT characteristic.
 
 ## See Also
 
-- [static var rename: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/rename.md)
+### Options
+- [static var rename: ASPickerDisplayItem.SetupOptions](./rename.md)
   An option to ask the person using the app to rename the accessory.
-- [static var finishInApp: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/finishinapp.md)
+- [static var finishInApp: ASPickerDisplayItem.SetupOptions](./finishinapp.md)
   An option to ask the person setting up the accessory to finish additional setup in the app after the accessory is authorized.
 
 

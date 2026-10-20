@@ -1,7 +1,8 @@
 # sessionCompanionAppInstalledDidChange(_:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates a change to the companion app’s installed state.
 
@@ -14,6 +15,10 @@ Indicates a change to the companion app’s installed state.
 optional func sessionCompanionAppInstalledDidChange(_ session: WCSession)
 ```
 
+```objc
+- (void) sessionCompanionAppInstalledDidChange:(WCSession *) session;
+```
+
 #### Discussion
 
 The system calls this method on the watchOS app’s session delegate when the user installs or uninstalls the iOS companion app. This is only valid on independent watchOS apps.
@@ -24,9 +29,10 @@ The system calls this method on the watchOS app’s session delegate when the us
 
 ## See Also
 
-- [func sessionWatchStateDidChange(WCSession)](wcsessiondelegate/sessionwatchstatedidchange(_:).md)
+### Managing State Changes
+- [func sessionWatchStateDidChange(WCSession)](./sessionwatchstatedidchange%28_%29.md)
   Indicates a change to the counterpart’s information.
-- [func sessionReachabilityDidChange(WCSession)](wcsessiondelegate/sessionreachabilitydidchange(_:).md)
+- [func sessionReachabilityDidChange(WCSession)](./sessionreachabilitydidchange%28_%29.md)
   Indicates a change to the counterpart’s reachability status.
 
 

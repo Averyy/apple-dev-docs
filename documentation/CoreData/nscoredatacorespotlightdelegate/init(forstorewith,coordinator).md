@@ -1,7 +1,8 @@
 # init(forStoreWith:coordinator:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Spotlight delegate with the specified store description and coordinator.
 
@@ -18,11 +19,15 @@ Creates a Core Spotlight delegate with the specified store description and coord
 init(forStoreWith description: NSPersistentStoreDescription, coordinator psc: NSPersistentStoreCoordinator)
 ```
 
+```objc
+- (instancetype) initForStoreWithDescription:(NSPersistentStoreDescription *) description coordinator:(NSPersistentStoreCoordinator *) psc;
+```
+
 #### Discussion
 
-After you initialize a Core Spotlight delegate, call the [`startSpotlightIndexing()`](nscoredatacorespotlightdelegate/startspotlightindexing().md) to begin indexing your store’s contents.
+After you initialize a Core Spotlight delegate, call the [`startSpotlightIndexing()`](./startspotlightindexing%28%29.md) to begin indexing your store’s contents.
 
-> **Note**:  If you initialize your Core Spotlight delegate using this method, you don’t need to set the [`NSCoreDataCoreSpotlightExporter`](nscoredatacorespotlightexporter.md) option on the specified store description.
+> **Note**:  If you initialize your Core Spotlight delegate using this method, you don’t need to set the [`NSCoreDataCoreSpotlightExporter`](../nscoredatacorespotlightexporter.md) option on the specified store description.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ After you initialize a Core Spotlight delegate, call the [`startSpotlightIndexin
 
 ## See Also
 
-- [convenience init(forStoreWith: NSPersistentStoreDescription, model: NSManagedObjectModel)](nscoredatacorespotlightdelegate/init(forstorewith:model:).md)
+### Creating a Core Spotlight Delegate
+- [convenience init(forStoreWith: NSPersistentStoreDescription, model: NSManagedObjectModel)](./init%28forstorewith,model%29.md)
   Creates a Core Spotlight delegate with the specified store description and managed object model.
 
 

@@ -1,7 +1,8 @@
 # activatedDevice(_:session:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that a device has been successfully activated and is ready for use.
 
@@ -19,7 +20,7 @@ final func activatedDevice(_ device: MediaOutputDevice, session: MediaOutputSess
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 

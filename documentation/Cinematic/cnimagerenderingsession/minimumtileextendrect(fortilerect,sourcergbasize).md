@@ -1,7 +1,8 @@
 # minimumTileExtendRect(forTileRect:sourceRGBASize:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the minimum source rect that must be sampled to render tileRect without edge artifacts.
 
@@ -16,6 +17,10 @@ Returns the minimum source rect that must be sampled to render tileRect without 
 
 ```swift
 class func minimumTileExtendRect(forTileRect tileRect: CGRect, sourceRGBASize: CGSize) -> CGRect
+```
+
+```objc
++ (CGRect) minimumTileExtendRectForTileRect:(CGRect) tileRect sourceRGBASize:(CGSize) sourceRGBASize;
 ```
 
 #### Return Value

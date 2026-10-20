@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source for the provider.
 
@@ -15,9 +16,14 @@ The source for the provider.
 weak var source: (any CMIOExtensionProviderSource)? { get }
 ```
 
+```objc
+@property (atomic, weak, readonly) id<CMIOExtensionProviderSource> source;
+```
+
 ## See Also
 
-- [var clientQueue: dispatch_queue_t](cmioextensionprovider/clientqueue.md)
+### Inspecting a Provider
+- [var clientQueue: dispatch_queue_t](./clientqueue.md)
   The dispatch queue on which the system performs client operations.
 
 

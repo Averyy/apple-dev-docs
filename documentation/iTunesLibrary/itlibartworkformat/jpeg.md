@@ -1,7 +1,8 @@
 # ITLibArtworkFormat.JPEG
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image data corresponds to a JPEG image.
 
@@ -15,23 +16,28 @@ The image data corresponds to a JPEG image.
 case JPEG
 ```
 
+```c
+ITLibArtworkFormatJPEG
+```
+
 ## See Also
 
-- [ITLibArtworkFormat.none](itlibartworkformat/none.md)
+### Artwork Formats
+- [ITLibArtworkFormat.none](./none.md)
   The image data format is unknown.
-- [ITLibArtworkFormat.bitmap](itlibartworkformat/bitmap.md)
+- [ITLibArtworkFormat.bitmap](./bitmap.md)
   The image data corresponds to a bitmap image.
-- [ITLibArtworkFormat.JPEG2000](itlibartworkformat/jpeg2000.md)
+- [ITLibArtworkFormat.JPEG2000](./jpeg2000.md)
   The image data corresponds to a JPEG2000 image.
-- [ITLibArtworkFormat.GIF](itlibartworkformat/gif.md)
+- [ITLibArtworkFormat.GIF](./gif.md)
   The image data corresponds to a GIF image.
-- [ITLibArtworkFormat.PNG](itlibartworkformat/png.md)
+- [ITLibArtworkFormat.PNG](./png.md)
   The image data corresponds to a PNG image.
-- [ITLibArtworkFormat.BMP](itlibartworkformat/bmp.md)
+- [ITLibArtworkFormat.BMP](./bmp.md)
   The image data corresponds to a bitmap image.
-- [ITLibArtworkFormat.TIFF](itlibartworkformat/tiff.md)
+- [ITLibArtworkFormat.TIFF](./tiff.md)
   The image data corresponds to a TIFF image.
-- [ITLibArtworkFormat.PICT](itlibartworkformat/pict.md)
+- [ITLibArtworkFormat.PICT](./pict.md)
   The image data corresponds to a PICT image.
 
 

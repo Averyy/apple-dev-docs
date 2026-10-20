@@ -1,14 +1,15 @@
 # cache_image_info
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 struct dyld_kernel_image_info cache_image_info;
 ```
 

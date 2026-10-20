@@ -1,7 +1,8 @@
 # UICollectionViewDiffableDataSource.SupplementaryViewProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a collection view’s supplementary view, such as a header or footer, from a diffable data source.
 
@@ -10,7 +11,7 @@ A closure that configures and returns a collection view’s supplementary view, 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,7 +31,8 @@ A non-`nil` configured supplementary view object. The supplementary view provide
 
 ## See Also
 
-- [var supplementaryViewProvider: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.SupplementaryViewProvider?](uicollectionviewdiffabledatasource-9tqpa/supplementaryviewprovider-swift.property.md)
+### Creating supplementary views
+- [var supplementaryViewProvider: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.SupplementaryViewProvider?](./supplementaryviewprovider-swift.property.md)
   The closure that configures and returns the collection view’s supplementary views, such as headers and footers, from the diffable data source.
 
 

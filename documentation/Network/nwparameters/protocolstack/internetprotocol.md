@@ -1,7 +1,8 @@
 # internetProtocol
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Internet Protocol options used by connections and listeners.
 
@@ -22,7 +23,8 @@ var internetProtocol: NWProtocolOptions? { get set }
 
 ## See Also
 
-- [var transportProtocol: NWProtocolOptions?](nwparameters/protocolstack/transportprotocol.md)
+### Configuring Lower Protocols
+- [var transportProtocol: NWProtocolOptions?](./transportprotocol.md)
   The transport protocol options used by connections and listeners.
 
 

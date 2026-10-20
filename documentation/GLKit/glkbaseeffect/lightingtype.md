@@ -1,15 +1,18 @@
 # lightingType
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The strategy the effect uses to calculate light values at each fragment. See [`GLKLightingType`](glklightingtype.md).
+The strategy the effect uses to calculate light values at each fragment. See [`GLKLightingType`](../glklightingtype.md).
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,19 +20,24 @@ The strategy the effect uses to calculate light values at each fragment. See [`G
 var lightingType: GLKLightingType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GLKLightingType lightingType;
+```
+
 ## See Also
 
-- [var lightModelTwoSided: GLboolean](glkbaseeffect/lightmodeltwosided.md)
+### Configuring Lights
+- [var lightModelTwoSided: GLboolean](./lightmodeltwosided.md)
   A Boolean value that indicates whether lighting is calculated for both sides of a primitive.
-- [var material: GLKEffectPropertyMaterial](glkbaseeffect/material.md)
+- [var material: GLKEffectPropertyMaterial](./material.md)
   The material properties used when calculating the light values for a rendered primitive.
-- [var lightModelAmbientColor: GLKVector4](glkbaseeffect/lightmodelambientcolor.md)
+- [var lightModelAmbientColor: GLKVector4](./lightmodelambientcolor.md)
   The ambient color applied to all primitives rendered by the effect.
-- [var light0: GLKEffectPropertyLight](glkbaseeffect/light0.md)
+- [var light0: GLKEffectPropertyLight](./light0.md)
   The lighting properties for the first light in the scene.
-- [var light1: GLKEffectPropertyLight](glkbaseeffect/light1.md)
+- [var light1: GLKEffectPropertyLight](./light1.md)
   The lighting properties for the second light in the scene.
-- [var light2: GLKEffectPropertyLight](glkbaseeffect/light2.md)
+- [var light2: GLKEffectPropertyLight](./light2.md)
   The lighting properties for the third light in the scene.
 
 

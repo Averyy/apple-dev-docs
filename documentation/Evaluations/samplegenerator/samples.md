@@ -1,7 +1,8 @@
 # samples
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All initial and generated samples from the most recent run.
 
@@ -22,11 +23,12 @@ var samples: [SampleType] { get }
 
 #### Discussion
 
-Before you call [`run()`](samplegenerator/run().md), this equals the samples you passed to the initializer. After iteration completes, it contains the full resulting dataset.
+Before you call [`run()`](./run%28%29.md), this equals the samples you passed to the initializer. After iteration completes, it contains the full resulting dataset.
 
 ## See Also
 
-- [var invalidSamples: [SampleType]](samplegenerator/invalidsamples.md)
+### Accessing results
+- [var invalidSamples: [SampleType]](./invalidsamples.md)
   Samples that the validator rejected during the most recent run.
 
 

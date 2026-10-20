@@ -1,13 +1,14 @@
 # output::setUVTransform
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the UV0 coordinate transformation for the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setUVTransform(float2 uvOffset, float2 uvScale)
 
 This function customizes how texture coordinates are applied to the rendered output by specifying an offset and scale. The UV transform affects texture mapping without modifying the underlying particle data.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setUVTransform.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setUVTransform.svg)
 
 ## Parameters
 

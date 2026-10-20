@@ -1,6 +1,7 @@
 # IOBluetoothUtilities.h
 
-**Framework**: IOBluetooth
+**Framework**: IOBluetooth  
+**Role**: API Collection
 
 See the Overview section above for header-level documentation.
 
@@ -19,40 +20,41 @@ See the Overview section above for header-level documentation.
 ## Topics
 
 ### Miscellaneous
-- [func IOBluetoothFindNumberOfRegistryEntriesOfClassName(UnsafePointer<CChar>!) -> Int](iobluetoothfindnumberofregistryentriesofclassname(_:).md)
+- [func IOBluetoothFindNumberOfRegistryEntriesOfClassName(UnsafePointer<CChar>!) -> Int](./iobluetoothfindnumberofregistryentriesofclassname%28_%29.md)
   The number of registry entries with a device classname.
-- [func IOBluetoothGetUniqueFileNameAndPath(String!, String!) -> String!](iobluetoothgetuniquefilenameandpath(_:_:).md)
-- [func IOBluetoothIsFileAppleDesignatedPIMData(String!) -> Bool](iobluetoothisfileappledesignatedpimdata(_:).md)
+- [func IOBluetoothGetUniqueFileNameAndPath(String!, String!) -> String!](./iobluetoothgetuniquefilenameandpath%28_,_%29.md)
+- [func IOBluetoothIsFileAppleDesignatedPIMData(String!) -> Bool](./iobluetoothisfileappledesignatedpimdata%28_%29.md)
   Apple designated PIM data is classified as: .vcard, .vcal, .vcf, .vnote, .vmsg, .vcs
-- [func IOBluetoothNSStringFromDeviceAddress(UnsafePointer<BluetoothDeviceAddress>!) -> String!](iobluetoothnsstringfromdeviceaddress(_:).md)
+- [func IOBluetoothNSStringFromDeviceAddress(UnsafePointer<BluetoothDeviceAddress>!) -> String!](./iobluetoothnsstringfromdeviceaddress%28_%29.md)
   Convenience routine to take a device address structure and create an NSString.
-- [func IOBluetoothNSStringToDeviceAddress(String!, UnsafeMutablePointer<BluetoothDeviceAddress>!) -> IOReturn](iobluetoothnsstringtodeviceaddress(_:_:).md)
+- [func IOBluetoothNSStringToDeviceAddress(String!, UnsafeMutablePointer<BluetoothDeviceAddress>!) -> IOReturn](./iobluetoothnsstringtodeviceaddress%28_,_%29.md)
   Convenience routine to take an NSString and turn it into a BluetoothDeviceAddress structure.
-- [func IOBluetoothNumberOfAvailableHIDDevices() -> Int](iobluetoothnumberofavailablehiddevices().md)
+- [func IOBluetoothNumberOfAvailableHIDDevices() -> Int](./iobluetoothnumberofavailablehiddevices%28%29.md)
   Returns total number of HID devices on the system (Bluetooth + USB)
-- [func IOBluetoothNumberOfKeyboardHIDDevices() -> Int](iobluetoothnumberofkeyboardhiddevices().md)
+- [func IOBluetoothNumberOfKeyboardHIDDevices() -> Int](./iobluetoothnumberofkeyboardhiddevices%28%29.md)
   Returns number of keyboard HID devices on the system (Bluetooth + USB)
-- [func IOBluetoothNumberOfPointingHIDDevices() -> Int](iobluetoothnumberofpointinghiddevices().md)
+- [func IOBluetoothNumberOfPointingHIDDevices() -> Int](./iobluetoothnumberofpointinghiddevices%28%29.md)
   Returns number of “pointing” HID devices on the system (Bluetooth + USB)
-- [func IOBluetoothNumberOfTabletHIDDevices() -> Int](iobluetoothnumberoftablethiddevices().md)
+- [func IOBluetoothNumberOfTabletHIDDevices() -> Int](./iobluetoothnumberoftablethiddevices%28%29.md)
   Returns number of “Tablet” HID devices on the system (Bluetooth + USB)
 
 ## See Also
 
-- [Bluetooth.h User-Space](bluetooth-h-user-space.md)
+### Reference
+- [Bluetooth.h User-Space](./bluetooth-h-user-space.md)
   Bluetooth wireless technology
-- [IOBluetoothUserLib.h](iobluetoothuserlib-h.md)
+- [IOBluetoothUserLib.h](./iobluetoothuserlib-h.md)
   Public Interfaces for Apple’s implementation of Bluetooth technology.
-- [OBEX.h](obex-h.md)
+- [OBEX.h](./obex-h.md)
   Public OBEX technology interfaces.
-- [OBEXBluetooth.h](obexbluetooth-h.md)
+- [OBEXBluetooth.h](./obexbluetooth-h.md)
   Object Exchange over Bluetooth.
-- [OBEXFileTransferServices.h](obexfiletransferservices-h.md)
-- [IOBluetooth Structures](iobluetooth-structures.md)
-- [IOBluetooth Enumerations](iobluetooth-enumerations.md)
-- [IOBluetooth Constants](iobluetooth-constants.md)
-- [IOBluetooth Functions](iobluetooth-functions.md)
-- [IOBluetooth Data Types](iobluetooth-data-types.md)
+- [OBEXFileTransferServices.h](./obexfiletransferservices-h.md)
+- [IOBluetooth Structures](./iobluetooth-structures.md)
+- [IOBluetooth Enumerations](./iobluetooth-enumerations.md)
+- [IOBluetooth Constants](./iobluetooth-constants.md)
+- [IOBluetooth Functions](./iobluetooth-functions.md)
+- [IOBluetooth Data Types](./iobluetooth-data-types.md)
 
 
 ---

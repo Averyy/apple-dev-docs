@@ -1,7 +1,8 @@
 # extracting(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs a new span over the bytes within the supplied range of positions within this span.
 
@@ -28,7 +29,7 @@ A `RawSpan` over the bytes within `bounds`.
 
 The returned span’s first byte is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

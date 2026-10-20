@@ -1,7 +1,8 @@
 # ReadableStreamDefaultReader
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface ReadableStreamDefaultReader
 ```
 
 ## Topics
 
 ### Instance Properties
-- [closed](readablestreamdefaultreader/2871266-closed.md)
+- [closed](./readablestreamdefaultreader/api-2871266-closed.md)
 ### Instance Methods
-- [cancel](readablestreamdefaultreader/2871372-cancel.md)
-- [read](readablestreamdefaultreader/2871479-read.md)
-- [releaseLock](readablestreamdefaultreader/2871481-releaselock.md)
+- [cancel](./readablestreamdefaultreader/api-2871372-cancel.md)
+- [read](./readablestreamdefaultreader/api-2871479-read.md)
+- [releaseLock](./readablestreamdefaultreader/api-2871481-releaselock.md)
 
 
 ---

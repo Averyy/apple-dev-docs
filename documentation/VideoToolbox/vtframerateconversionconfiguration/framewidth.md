@@ -1,7 +1,8 @@
 # frameWidth
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of a source frame in pixels.
 
@@ -17,24 +18,29 @@ The width of a source frame in pixels.
 var frameWidth: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger frameWidth;
+```
+
 #### Discussion
 
 The maximum value is 8192 pixels for macOS, and 4096 pixels for iOS.
 
 ## See Also
 
-- [var frameHeight: Int](vtframerateconversionconfiguration/frameheight.md)
+### Inspecting the configuration
+- [var frameHeight: Int](./frameheight.md)
   The height of a source frame in pixels.
-- [var usePrecomputedFlow: Bool](vtframerateconversionconfiguration/useprecomputedflow.md)
+- [var usePrecomputedFlow: Bool](./useprecomputedflow.md)
   A Boolean value to indicates whether the optical flow will be provided by the user.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization](./qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
-- [VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
+- [VTFrameRateConversionConfiguration.QualityPrioritization](./qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 
 

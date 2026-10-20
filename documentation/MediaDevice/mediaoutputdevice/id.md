@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the device.
 
@@ -18,7 +19,7 @@ let id: UUID
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 
 ---

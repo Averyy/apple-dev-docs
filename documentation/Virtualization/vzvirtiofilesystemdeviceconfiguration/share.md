@@ -1,7 +1,8 @@
 # share
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that defines how the host exposes resources to the guest virtual machine.
 
@@ -14,11 +15,16 @@ A value that defines how the host exposes resources to the guest virtual machine
 var share: VZDirectoryShare? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZDirectoryShare * share;
+```
+
 ## See Also
 
-- [var tag: String](vzvirtiofilesystemdeviceconfiguration/tag.md)
+### Getting file system information
+- [var tag: String](./tag.md)
   A label that identifies this device in the guest VM.
-- [class var macOSGuestAutomountTag: String](vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md)
+- [class var macOSGuestAutomountTag: String](./macosguestautomounttag.md)
   A value that indicates that the guest needs to automount this file system device in the guest VM.
 
 

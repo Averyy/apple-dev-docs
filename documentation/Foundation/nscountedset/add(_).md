@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a given object to the set.
 
@@ -20,9 +21,13 @@ Adds a given object to the set.
 func add(_ object: Any)
 ```
 
+```objc
+- (void) addObject:(ObjectType) object;
+```
+
 #### Discussion
 
-If `object` is already a member, [`add(_:)`](nscountedset/add(_:).md) increments the count associated with the object. If `object` is not already a member, it is sent a [`retain`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain) message.
+If `object` is already a member, [`add(_:)`](./add%28_%29.md) increments the count associated with the object. If `object` is not already a member, it is sent a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ If `object` is already a member, [`add(_:)`](nscountedset/add(_:).md) increments
 
 ## See Also
 
-- [func remove(Any)](nscountedset/remove(_:).md)
+### Adding and Removing Entries
+- [func remove(Any)](./remove%28_%29.md)
   Removes a given object from the set.
 
 

@@ -1,7 +1,8 @@
 # TextEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface TextEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [data](textevent/1631731-data.md)
+- [data](./textevent/api-1631731-data.md)
 ### Instance Methods
-- [initTextEvent](textevent/1633502-inittextevent.md)
+- [initTextEvent](./textevent/api-1633502-inittextevent.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIEvent](uievent.md)
+- [UIEvent](./uievent.md)
 
 
 ---

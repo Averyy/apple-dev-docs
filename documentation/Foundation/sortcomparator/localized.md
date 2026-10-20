@@ -1,7 +1,8 @@
 # localized
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A comparator that compares a string using a localized comparison in the current locale.
 
@@ -20,11 +21,14 @@ A comparator that compares a string using a localized comparison in the current 
 static var localized: String.Comparator { get }
 ```
 
+Available when `Self` is `String.Comparator`.
+
 ## See Also
 
-- [var order: SortOrder](sortcomparator/order.md)
+### Inspecting a Comparator
+- [var order: SortOrder](./order.md)
   The sort order that the comparator uses to compare.
-- [static var localizedStandard: String.Comparator](sortcomparator/localizedstandard.md)
+- [static var localizedStandard: String.Comparator](./localizedstandard.md)
   A comparator that compares a string using a localized, numeric comparison in the current locale.
 
 

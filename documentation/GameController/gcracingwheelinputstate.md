@@ -1,7 +1,8 @@
 # GCRacingWheelInputState
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The input for the wheel of a racing wheel controller.
 
@@ -15,49 +16,54 @@ The input for the wheel of a racing wheel controller.
 class GCRacingWheelInputState
 ```
 
+```objc
+@interface GCRacingWheelInputState : NSObject
+```
+
 ## Topics
 
 ### Getting input elements
-- [var wheel: GCSteeringWheelElement](gcracingwheelinputstate/wheel.md)
+- [var wheel: GCSteeringWheelElement](./gcracingwheelinputstate/wheel.md)
   The controller’s wheel element.
-- [var acceleratorPedal: (any GCButtonElement)?](gcracingwheelinputstate/acceleratorpedal.md)
+- [var acceleratorPedal: (any GCButtonElement)?](./gcracingwheelinputstate/acceleratorpedal.md)
   The controller’s accelerator pedal element.
-- [var brakePedal: (any GCButtonElement)?](gcracingwheelinputstate/brakepedal.md)
+- [var brakePedal: (any GCButtonElement)?](./gcracingwheelinputstate/brakepedal.md)
   The controller’s brake pedal element.
-- [var clutchPedal: (any GCButtonElement)?](gcracingwheelinputstate/clutchpedal.md)
+- [var clutchPedal: (any GCButtonElement)?](./gcracingwheelinputstate/clutchpedal.md)
   The controller’s clutch element.
-- [var shifter: GCGearShifterElement?](gcracingwheelinputstate/shifter.md)
+- [var shifter: GCGearShifterElement?](./gcracingwheelinputstate/shifter.md)
   The controller’s gear shift element.
 ### Accessing elements by name
-- [var GCInputSteeringWheel: String](gcinputsteeringwheel-26283.md)
+- [var GCInputSteeringWheel: String](./gcinputsteeringwheel-26283.md)
   The name of the steering wheel element.
-- [var GCInputShifter: String](gcinputshifter-6miga.md)
+- [var GCInputShifter: String](./gcinputshifter-6miga.md)
   The name of the shifter element.
-- [var GCInputPedalClutch: String](gcinputpedalclutch-82gwe.md)
+- [var GCInputPedalClutch: String](./gcinputpedalclutch-82gwe.md)
   The name of the clutch element.
-- [var GCInputPedalAccelerator: String](gcinputpedalaccelerator-6kg6u.md)
+- [var GCInputPedalAccelerator: String](./gcinputpedalaccelerator-6kg6u.md)
   The name of the accelerator element.
-- [var GCInputPedalBrake: String](gcinputpedalbrake-6wpdc.md)
+- [var GCInputPedalBrake: String](./gcinputpedalbrake-6wpdc.md)
   The name of the brake element.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [GCRacingWheelInput](gcracingwheelinput.md)
+- [GCRacingWheelInput](./gcracingwheelinput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCDevicePhysicalInputState](gcdevicephysicalinputstate.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCDevicePhysicalInputState](./gcdevicephysicalinputstate.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCRacingWheelInput](gcracingwheelinput.md)
+### Racing wheel input
+- [class GCRacingWheelInput](./gcracingwheelinput.md)
   A controller profile that supports a racing wheel.
 
 

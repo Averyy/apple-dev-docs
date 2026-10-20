@@ -1,7 +1,8 @@
 # readAttributeRxDestAddrFilteredCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRxDestAddrFilteredCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRxDestAddrFilteredCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRxDestAddrFilteredCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

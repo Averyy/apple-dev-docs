@@ -1,7 +1,8 @@
 # buildBlock()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.4+
@@ -20,13 +21,14 @@ static func buildBlock() -> [AppShortcut]
 
 ## See Also
 
-- [static func buildBlock(AppShortcut...) -> [AppShortcut]](appshortcutsbuilder/buildblock(_:)-110ow.md)
-- [static func buildBlock([AppShortcut]...) -> [AppShortcut]](appshortcutsbuilder/buildblock(_:)-8xfbe.md)
-- [static func buildExpression(AppShortcut) -> AppShortcut](appshortcutsbuilder/buildexpression(_:)-31qci.md)
-- [static func buildExpression(AppShortcut) -> [AppShortcut]](appshortcutsbuilder/buildexpression(_:)-9u47j.md)
-- [static func buildLimitedAvailability([AppShortcut]) -> any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker](appshortcutsbuilder/buildlimitedavailability(_:).md)
-- [static func buildOptional((any _AppShortcutsContentEmitterMarker & _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](appshortcutsbuilder/buildoptional(_:)-3pbr9.md)
-- [static func buildOptional((any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](appshortcutsbuilder/buildoptional(_:)-4urzx.md)
+### Building App Shortcuts
+- [static func buildBlock(AppShortcut...) -> [AppShortcut]](./buildblock%28_%29-110ow.md)
+- [static func buildBlock([AppShortcut]...) -> [AppShortcut]](./buildblock%28_%29-8xfbe.md)
+- [static func buildExpression(AppShortcut) -> AppShortcut](./buildexpression%28_%29-31qci.md)
+- [static func buildExpression(AppShortcut) -> [AppShortcut]](./buildexpression%28_%29-9u47j.md)
+- [static func buildLimitedAvailability([AppShortcut]) -> any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker](./buildlimitedavailability%28_%29.md)
+- [static func buildOptional((any _AppShortcutsContentEmitterMarker & _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](./buildoptional%28_%29-3pbr9.md)
+- [static func buildOptional((any _AppShortcutsContentMarker & _LimitedAvailabilityAppShortcutsContentMarker)?) -> [AppShortcut]](./buildoptional%28_%29-4urzx.md)
 
 
 ---

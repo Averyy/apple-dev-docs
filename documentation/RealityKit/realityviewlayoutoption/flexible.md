@@ -1,7 +1,8 @@
 # flexible
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option that applies the default layout behavior of `RealityView`, where the content is not centered and the frame is flexible (takes up as much space as the SwiftUI layout provides).
 
@@ -21,7 +22,7 @@ static let flexible: RealityViewLayoutOption
 
 ## Mentions
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+- [Controlling the layout behavior of a reality view](../controlling-the-layout-behavior-of-a-realityview.md)
 
 
 ---

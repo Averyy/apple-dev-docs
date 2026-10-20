@@ -1,7 +1,8 @@
 # hvfLibraryVersion
 
 **Framework**: hvf  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Return the version of the HVF library
 

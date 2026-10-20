@@ -1,7 +1,8 @@
 # errSecEMMLoadFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The elective module manager load failed.
 
@@ -18,6 +19,10 @@ The elective module manager load failed.
 
 ```swift
 var errSecEMMLoadFailed: OSStatus { get }
+```
+
+```c
+errSecEMMLoadFailed
 ```
 
 

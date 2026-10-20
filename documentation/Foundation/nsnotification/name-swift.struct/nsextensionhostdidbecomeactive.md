@@ -1,7 +1,8 @@
 # NSExtensionHostDidBecomeActive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the extension’s host app moves from the inactive to the active state.
 
@@ -19,17 +20,22 @@ Posted when the extension’s host app moves from the inactive to the active sta
 static let NSExtensionHostDidBecomeActive: NSNotification.Name
 ```
 
+```c
+extern NSString * const NSExtensionHostDidBecomeActiveNotification;
+```
+
 #### Discussion
 
 Extensions can use this notification to adjust their activity when they become active. The `object` parameter contains the `NSExtensionContext` object. This notification does not contain a `userInfo` dictionary.
 
 ## See Also
 
-- [static let NSExtensionHostWillResignActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillresignactive.md)
+### Working with notifications
+- [static let NSExtensionHostWillResignActive: NSNotification.Name](./nsextensionhostwillresignactive.md)
   Posted when the extension’s host app moves from the active to the inactive state.
-- [static let NSExtensionHostDidEnterBackground: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostdidenterbackground.md)
+- [static let NSExtensionHostDidEnterBackground: NSNotification.Name](./nsextensionhostdidenterbackground.md)
   Posted when the extension’s host app begins running in the background.
-- [static let NSExtensionHostWillEnterForeground: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillenterforeground.md)
+- [static let NSExtensionHostWillEnterForeground: NSNotification.Name](./nsextensionhostwillenterforeground.md)
   Posted when the extension’s host app begins running in the foreground.
 
 

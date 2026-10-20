@@ -1,17 +1,18 @@
 # init(device:a:b:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a linear neuron filter.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
-- macOS 10.13+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 10.0+ - Deprecated in 12.0
+- macOS 10.13+ - Deprecated in 10.14
+- tvOS 10.0+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Initializes a linear neuron filter.
 init(device: any MTLDevice, a: Float, b: Float)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device a:(float) a b:(float) b;
+```
+
 #### Return Value
 
-A valid [`MPSCNNNeuronLinear`](mpscnnneuronlinear.md) object or `nil`, if failure.
+A valid [`MPSCNNNeuronLinear`](../mpscnnneuronlinear.md) object or `nil`, if failure.
 
 ## Parameters
 

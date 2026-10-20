@@ -24,13 +24,13 @@ Apps distributed for testing with TestFlight contain additional data that an App
 
 The following figure shows a common workflow for measuring your app’s size and performing optimizations.
 
-![Flow chart that provides an overview of the process of measuring an app’s size and when to perform optimizations.](/images/com.apple.Xcode/reducing-your-app-s-size-1@2x.png)
+![Flow chart that provides an overview of the process of measuring an app’s size and when to perform optimizations.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-size-1@2x.png)
 
-To learn more about viewing the file sizes of a build in App Store Connect, see [`View builds and metadata`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-builds/view-builds-and-metadata).
+To learn more about viewing the file sizes of a build in App Store Connect, see [View builds and metadata](https://developer.apple.com/help/app-store-connect/manage-builds/view-builds-and-metadata).
 
 The following two sections describe how you can generate a size report with Xcode, and how you can automate its creation.
 
-##### Create the App Size Report
+##### Create the app size report
 
 While App Store Connect provides the most accurate measurements of your app’s size, Xcode’s built-in reporting tools can create an app size report for you. It provides close estimates of your app’s download and installation sizes. To create an app size report:
 
@@ -58,9 +58,9 @@ On Demand Resources size: Zero KB compressed, Zero KB uncompressed
 // Other Variants of Your App.
 ```
 
-With the app size report you generate, you’re now ready to perform some basic optimizations, such as checking your binaries for unused assets, to reduce the size of your app. For more information, see [`Doing basic optimization to reduce your app’s size`](doing-basic-optimization-to-reduce-your-app-s-size.md).
+With the app size report you generate, you’re now ready to perform some basic optimizations, such as checking your binaries for unused assets, to reduce the size of your app. For more information, see [Doing basic optimization to reduce your app’s size](./doing-basic-optimization-to-reduce-your-app-s-size.md).
 
-##### Automate the Generation of the App Size Report
+##### Automate the generation of the app size report
 
 Instead of creating the app size report with Xcode, you may want to automate its generation in build scripts or continuous integration workflows. Run the following command to use `xcodebuild` to export your app for distribution and create an app thinning size report:
 
@@ -72,19 +72,20 @@ Replace all file names and paths as necessary. To create the app size report, pr
 
 > ❗ **Important**: Be sure to escape the angle brackets for the value in your export options property list.
 
-To learn more about using `xcodebuild`, see [`Building from the Command Line with Xcode FAQ`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588).
+To learn more about using `xcodebuild`, see [Building from the Command Line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588).
 
 ## Topics
 
 ### Size optimization
-- [Doing basic optimization to reduce your app’s size](doing-basic-optimization-to-reduce-your-app-s-size.md)
+- [Doing basic optimization to reduce your app’s size](./doing-basic-optimization-to-reduce-your-app-s-size.md)
   Adjust your project’s build settings, and use technologies like asset catalogs early in your app’s development life cycle.
-- [Doing advanced optimization to further reduce your app’s size](doing-advanced-optimization-to-further-reduce-your-app-s-size.md)
+- [Doing advanced optimization to further reduce your app’s size](./doing-advanced-optimization-to-further-reduce-your-app-s-size.md)
   Optimize your app’s asset files, adopt on-demand resources, and reduce the size of app updates.
 
 ## See Also
 
-- [Reducing your app’s memory use](reducing-your-app-s-memory-use.md)
+### Memory and size
+- [Reducing your app’s memory use](./reducing-your-app-s-memory-use.md)
   Improve your app’s performance by analyzing memory-use metrics and making changes to maximize memory efficiency.
 
 

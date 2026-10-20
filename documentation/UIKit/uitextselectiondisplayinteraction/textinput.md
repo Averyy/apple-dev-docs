@@ -1,7 +1,8 @@
 # textInput
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text input object that manages the selection.
 
@@ -18,13 +19,17 @@ The text input object that manages the selection.
 weak var textInput: (any UITextInput)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) id<UITextInput> textInput;
+```
+
 ## Mentions
 
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
 #### Discussion
 
-Use this property to refer to the text input view that manages the text selection. You specify this view when you create the [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object.
+Use this property to refer to the text input view that manages the text selection. You specify this view when you create the [`UITextSelectionDisplayInteraction`](../uitextselectiondisplayinteraction.md) object.
 
 
 ---

@@ -1,7 +1,8 @@
 # predictAnchor(for:at:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predict an accessory anchor to a target timestamp.
 

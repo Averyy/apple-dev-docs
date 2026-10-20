@@ -1,7 +1,8 @@
 # send(_:type:lastMessage:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send data on a connection.
 
@@ -19,6 +20,8 @@ Send data on a connection.
 ```swift
 func send<Content>(_ content: Content, type: Int, lastMessage: Bool = false, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws where Content : DataProtocol
 ```
+
+Available when `ApplicationProtocol` is `TLV`.
 
 #### Discussion
 

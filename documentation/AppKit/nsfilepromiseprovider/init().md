@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a file promise provider.
 
@@ -14,9 +15,14 @@ Initializes a file promise provider.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(fileType: String, delegate: any NSFilePromiseProviderDelegate)](nsfilepromiseprovider/init(filetype:delegate:).md)
+### Initializers
+- [convenience init(fileType: String, delegate: any NSFilePromiseProviderDelegate)](./init%28filetype,delegate%29.md)
   Initializes a file promise provider for a certain file type.
 
 

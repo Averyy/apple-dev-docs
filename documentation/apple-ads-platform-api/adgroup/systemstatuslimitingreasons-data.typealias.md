@@ -1,7 +1,8 @@
 # AdGroup.SystemStatusLimitingReasons
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Reasons that limit delivery for an ad group without fully stopping it.
 
@@ -10,9 +11,15 @@ Reasons that limit delivery for an ad group without fully stopping it.
 
 ## Declaration
 
-```swift
+```
 string AdGroup.SystemStatusLimitingReasons
 ```
+
+## Possible Values
+
+- `LOCATION_POLICY_ISSUES`: The ad group’s location targeting contains areas with policy restrictions.
+- `LOCATION_GROUP_ISSUES`: The ad group’s location group targeting has issues that limit delivery.
+- `ADS_LIMITED`: One or more ads in the ad group are limited, reducing overall delivery.
 
 #### Discussion
 
@@ -28,7 +35,7 @@ These reasons can stem from the ad group’s own location targeting or cascade u
 }
 ```
 
-See [`AdGroupSystemLimitedStatusReason`](adgroupsystemlimitedstatusreason.md) for the full field reference.
+See [`AdGroupSystemLimitedStatusReason`](../adgroupsystemlimitedstatusreason.md) for the full field reference.
 
 
 ---

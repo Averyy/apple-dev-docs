@@ -1,14 +1,15 @@
 # ipc_port_valid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 boolean_t ipc_port_valid(ipc_port_t port);
 ```
 

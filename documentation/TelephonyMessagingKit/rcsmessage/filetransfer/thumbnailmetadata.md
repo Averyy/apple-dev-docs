@@ -1,7 +1,8 @@
 # thumbnailMetadata
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata for the transferred thumbnail.
 
@@ -16,7 +17,8 @@ var thumbnailMetadata: RCSFileTransferMetadata?
 
 ## See Also
 
-- [var fileMetadata: RCSFileTransferMetadata](rcsmessage/filetransfer/filemetadata.md)
+### Accessing file transfer properties
+- [var fileMetadata: RCSFileTransferMetadata](./filemetadata.md)
   Metadata for the transferred file.
 
 

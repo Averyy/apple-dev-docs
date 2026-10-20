@@ -1,7 +1,8 @@
 # localObject
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom object associated with the drag item.
 
@@ -17,10 +18,14 @@ A custom object associated with the drag item.
 var localObject: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id localObject;
+```
+
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ The `localObject` property gives you the option to associate a custom object, su
 
 ## See Also
 
-- [var itemProvider: NSItemProvider](uidragitem/itemprovider.md)
+### Accessing the drag item’s data
+- [var itemProvider: NSItemProvider](./itemprovider.md)
   The item provider associated with the drag item.
 
 

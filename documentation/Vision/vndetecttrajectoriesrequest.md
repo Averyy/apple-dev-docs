@@ -1,7 +1,8 @@
 # VNDetectTrajectoriesRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that detects the trajectories of shapes moving along a parabolic path.
 
@@ -19,9 +20,13 @@ A request that detects the trajectories of shapes moving along a parabolic path.
 class VNDetectTrajectoriesRequest
 ```
 
+```objc
+@interface VNDetectTrajectoriesRequest : VNStatefulRequest
+```
+
 ## Mentions
 
-- [Identifying Trajectories in Video](identifying-trajectories-in-video.md)
+- [Identifying Trajectories in Video](./identifying-trajectories-in-video.md)
 
 #### Overview
 
@@ -30,48 +35,49 @@ After the request detects a trajectory, it produces an observation that contains
 ## Topics
 
 ### Creating a Request
-- [init(frameAnalysisSpacing: CMTime, trajectoryLength: Int, completionHandler: VNRequestCompletionHandler?)](vndetecttrajectoriesrequest/init(frameanalysisspacing:trajectorylength:completionhandler:).md)
+- [init(frameAnalysisSpacing: CMTime, trajectoryLength: Int, completionHandler: VNRequestCompletionHandler?)](./vndetecttrajectoriesrequest/init%28frameanalysisspacing,trajectorylength,completionhandler%29.md)
   Creates a new request to detect trajectories.
 ### Configuring the Request
-- [var targetFrameTime: CMTime](vndetecttrajectoriesrequest/targetframetime.md)
+- [var targetFrameTime: CMTime](./vndetecttrajectoriesrequest/targetframetime.md)
   The requested target frame time for processing trajectory detection.
-- [var trajectoryLength: Int](vndetecttrajectoriesrequest/trajectorylength.md)
+- [var trajectoryLength: Int](./vndetecttrajectoriesrequest/trajectorylength.md)
   The number of points to detect before calculating a trajectory.
-- [var objectMinimumNormalizedRadius: Float](vndetecttrajectoriesrequest/objectminimumnormalizedradius.md)
+- [var objectMinimumNormalizedRadius: Float](./vndetecttrajectoriesrequest/objectminimumnormalizedradius.md)
   The minimum radius of the bounding circle of the object to track.
-- [var objectMaximumNormalizedRadius: Float](vndetecttrajectoriesrequest/objectmaximumnormalizedradius.md)
+- [var objectMaximumNormalizedRadius: Float](./vndetecttrajectoriesrequest/objectmaximumnormalizedradius.md)
   The maximum radius of the bounding circle of the object to track.
-- [var minimumObjectSize: Float](vndetecttrajectoriesrequest/minimumobjectsize.md)
+- [var minimumObjectSize: Float](./vndetecttrajectoriesrequest/minimumobjectsize.md)
   The minimum radius of the tracked shape’s bounding circle.
-- [var maximumObjectSize: Float](vndetecttrajectoriesrequest/maximumobjectsize.md)
+- [var maximumObjectSize: Float](./vndetecttrajectoriesrequest/maximumobjectsize.md)
   The maximum radius of the tracked shape’s bounding circle.
 ### Inspecting the Results
-- [var results: [VNTrajectoryObservation]?](vndetecttrajectoriesrequest/results.md)
+- [var results: [VNTrajectoryObservation]?](./vndetecttrajectoriesrequest/results.md)
   The array of detected trajectory observations.
-- [class VNTrajectoryObservation](vntrajectoryobservation.md)
+- [class VNTrajectoryObservation](./vntrajectoryobservation.md)
   An observation that describes a detected trajectory.
 ### Identifying Request Revisions
-- [var VNDetectTrajectoriesRequestRevision1: Int](vndetecttrajectoriesrequestrevision1.md)
+- [var VNDetectTrajectoriesRequestRevision1: Int](./vndetecttrajectoriesrequestrevision1.md)
   A constant for specifying revision 1 of the trajectories detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNStatefulRequest](vnstatefulrequest.md)
+- [VNStatefulRequest](./vnstatefulrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Identifying Trajectories in Video](identifying-trajectories-in-video.md)
+### Trajectory detection
+- [Identifying Trajectories in Video](./identifying-trajectories-in-video.md)
   Gain new insights into your video data by using Vision to detect trajectories.
-- [Detecting moving objects in a video](detecting-moving-objects-in-a-video.md)
+- [Detecting moving objects in a video](./detecting-moving-objects-in-a-video.md)
   Identify the trajectory of a thrown object by using Vision.
 
 

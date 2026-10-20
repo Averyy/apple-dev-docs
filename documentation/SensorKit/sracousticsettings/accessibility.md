@@ -1,7 +1,8 @@
 # SRAcousticSettings.Accessibility
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -14,33 +15,37 @@
 class Accessibility
 ```
 
+```objc
+@interface SRAcousticSettingsAccessibility : NSObject
+```
+
 ## Topics
 
 ### Classes
-- [SRAcousticSettings.Accessibility.BackgroundSounds](sracousticsettings/accessibility/backgroundsounds-swift.class.md)
-- [SRAcousticSettings.Accessibility.HeadphoneAccommodations](sracousticsettings/accessibility/headphoneaccommodations-swift.class.md)
+- [SRAcousticSettings.Accessibility.BackgroundSounds](./accessibility/backgroundsounds-swift.class.md)
+- [SRAcousticSettings.Accessibility.HeadphoneAccommodations](./accessibility/headphoneaccommodations-swift.class.md)
 ### Instance Properties
-- [var backgroundSounds: SRAcousticSettings.Accessibility.BackgroundSounds](sracousticsettings/accessibility/backgroundsounds-swift.property.md)
-- [var headphoneAccommodations: SRAcousticSettings.Accessibility.HeadphoneAccommodations](sracousticsettings/accessibility/headphoneaccommodations-swift.property.md)
-- [var isMonoAudioEnabled: Bool](sracousticsettings/accessibility/ismonoaudioenabled.md)
-- [var leftRightBalance: Double](sracousticsettings/accessibility/leftrightbalance.md)
+- [var backgroundSounds: SRAcousticSettings.Accessibility.BackgroundSounds](./accessibility/backgroundsounds-swift.property.md)
+- [var headphoneAccommodations: SRAcousticSettings.Accessibility.HeadphoneAccommodations](./accessibility/headphoneaccommodations-swift.property.md)
+- [var isMonoAudioEnabled: Bool](./accessibility/ismonoaudioenabled.md)
+- [var leftRightBalance: Double](./accessibility/leftrightbalance.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

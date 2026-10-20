@@ -1,7 +1,8 @@
 # setEnabled(_:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func setEnabled(_ isEnabled: Bool) throws
+```
+
+```objc
+- (BOOL) setEnabled:(BOOL) isEnabled error:(NSError **) error;
 ```
 
 

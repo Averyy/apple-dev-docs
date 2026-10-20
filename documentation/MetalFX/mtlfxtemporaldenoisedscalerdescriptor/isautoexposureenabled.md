@@ -1,7 +1,8 @@
 # isAutoExposureEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether MetalFX calculates the exposure for each frame.
 
@@ -18,13 +19,17 @@ A Boolean value that indicates whether MetalFX calculates the exposure for each 
 var isAutoExposureEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isAutoExposureEnabled) BOOL autoExposureEnabled;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to create a scaler that automatically calculates the exposure level for each image it scales.
+Set this property to [`true`](../../Swift/true.md) to create a scaler that automatically calculates the exposure level for each image it scales.
 
-> **Note**: Denoiser scaler instances that use auto exposure ignore their [`exposureTexture`](mtlfxtemporalscalerbase/exposuretexture.md) property.
+> **Note**: Denoiser scaler instances that use auto exposure ignore their [`exposureTexture`](../mtlfxtemporalscalerbase/exposuretexture.md) property.
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property’s default value is [`false`](../../Swift/false.md).
 
 
 ---

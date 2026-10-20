@@ -1,7 +1,8 @@
 # add(_:identifier:assuming:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the monitoring condition with the identifier and initial state you specify.
 
@@ -25,11 +26,12 @@ func add(_ condition: any CLCondition, identifier: String, assuming state: CLMon
 
 ## See Also
 
-- [func add(any CLCondition, identifier: String)](clmonitor-2r51v/add(_:identifier:).md)
+### Adding and removing conditions
+- [func add(any CLCondition, identifier: String)](./add%28_,identifier%29.md)
   Adds the given condition for monitoring.
-- [func record(for: String) -> CLMonitor.Record?](clmonitor-2r51v/record(for:).md)
+- [func record(for: String) -> CLMonitor.Record?](./record%28for%29.md)
   A record that contains a condition and the most recent event your app receives.
-- [func remove(String)](clmonitor-2r51v/remove(_:).md)
+- [func remove(String)](./remove%28_%29.md)
   Removes the condition and its enclosed record associated with the identifier you provide.
 
 

@@ -1,7 +1,8 @@
 # DDErrorOutType
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for framework functions that return error references.
 
@@ -9,7 +10,7 @@ A type for framework functions that return error references.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ A type for framework functions that return error references.
 typealias DDErrorOutType = AutoreleasingUnsafeMutablePointer<NSError?>
 ```
 
+```c
+typedef NSError ** DDErrorOutType;
+```
+
 ## See Also
 
-- [struct DDError](dderror.md)
+### Errors
+- [struct DDError](./dderror.md)
   An error that the framework reports.
-- [DDError.Code](dderror/code.md)
+- [DDError.Code](./dderror/code.md)
   Codes that identify errors that can occur during the framework’s use.
-- [typealias DDErrorHandler](dderrorhandler.md)
+- [typealias DDErrorHandler](./dderrorhandler.md)
   A function that executes code you provide when an operation returns an error or completes successfully.
-- [let DDErrorDomain: String](dderrordomain.md)
+- [let DDErrorDomain: String](./dderrordomain.md)
   A unique error domain for the framework.
 
 

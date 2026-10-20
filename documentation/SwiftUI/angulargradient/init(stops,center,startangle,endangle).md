@@ -1,7 +1,8 @@
 # init(stops:center:startAngle:endAngle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an angular gradient from a collection of color stops.
 
@@ -23,9 +24,10 @@ nonisolated init(stops: [Gradient.Stop], center: UnitPoint, startAngle: Angle, e
 
 ## See Also
 
-- [init(gradient: Gradient, center: UnitPoint, startAngle: Angle, endAngle: Angle)](angulargradient/init(gradient:center:startangle:endangle:).md)
+### Creating a partial rotation angular gradient
+- [init(gradient: Gradient, center: UnitPoint, startAngle: Angle, endAngle: Angle)](./init%28gradient,center,startangle,endangle%29.md)
   Creates an angular gradient.
-- [init(colors: [Color], center: UnitPoint, startAngle: Angle, endAngle: Angle)](angulargradient/init(colors:center:startangle:endangle:).md)
+- [init(colors: [Color], center: UnitPoint, startAngle: Angle, endAngle: Angle)](./init%28colors,center,startangle,endangle%29.md)
   Creates an angular gradient from a collection of colors.
 
 

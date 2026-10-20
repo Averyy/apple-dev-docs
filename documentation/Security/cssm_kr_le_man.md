@@ -1,7 +1,8 @@
 # CSSM_KR_LE_MAN
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KR_LE_MAN: Int32 { get }
+```
+
+```c
+#define CSSM_KR_LE_MAN
 ```
 
 

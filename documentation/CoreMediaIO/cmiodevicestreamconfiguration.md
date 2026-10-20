@@ -1,7 +1,8 @@
 # CMIODeviceStreamConfiguration
 
 **Framework**: Core Media I/O  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,26 +14,31 @@
 struct CMIODeviceStreamConfiguration
 ```
 
+```c
+struct CMIODeviceStreamConfiguration;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cmiodevicestreamconfiguration/init.md)
+- [init()](./cmiodevicestreamconfiguration/init%28%29.md)
 ### Instance Properties
-- [var mNumberStreams: UInt32](cmiodevicestreamconfiguration/mnumberstreams.md)
+- [var mNumberStreams: UInt32](./cmiodevicestreamconfiguration/mnumberstreams.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct CMIODeviceAVCCommand](cmiodeviceavccommand.md)
-- [struct CMIODeviceRS422Command](cmiodevicers422command.md)
-- [struct CMIODeviceSMPTETimeCallback](cmiodevicesmptetimecallback.md)
-- [struct CMIOObjectPropertyAddress](cmioobjectpropertyaddress.md)
-- [struct CMIOStreamDeck](cmiostreamdeck.md)
-- [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](cmiostreamscheduledoutputnotificationprocandrefcon.md)
+### Structures
+- [struct CMIODeviceAVCCommand](./cmiodeviceavccommand.md)
+- [struct CMIODeviceRS422Command](./cmiodevicers422command.md)
+- [struct CMIODeviceSMPTETimeCallback](./cmiodevicesmptetimecallback.md)
+- [struct CMIOObjectPropertyAddress](./cmioobjectpropertyaddress.md)
+- [struct CMIOStreamDeck](./cmiostreamdeck.md)
+- [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](./cmiostreamscheduledoutputnotificationprocandrefcon.md)
 
 
 ---

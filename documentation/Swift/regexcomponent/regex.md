@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The regular expression represented by this component.
@@ -20,6 +21,12 @@ The regular expression represented by this component.
 ```swift
 var regex: Regex<Self.RegexOutput> { get }
 ```
+
+## Default Implementations
+
+### RegexComponent Implementations
+- [var regex: Regex<Self.RegexOutput>](./regex-39060.md)
+  The regular expression represented by this component.
 
 
 ---

@@ -1,7 +1,8 @@
 # CMTimeCopyAsDictionary(_:allocator:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a dictionary representation of the time.
 
@@ -20,6 +21,10 @@ Creates a dictionary representation of the time.
 func CMTimeCopyAsDictionary(_ time: CMTime, allocator: CFAllocator?) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCMTimeCopyAsDictionary(CMTime time, CFAllocatorRef allocator);
+```
+
 #### Return Value
 
 A dictionary representation of the time.
@@ -27,13 +32,14 @@ A dictionary representation of the time.
 ## Parameters
 
 - `time`: A time from which to create a dictionary.
-- `allocator`: An allocator with which to create the dictionary. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator.
+- `allocator`: An allocator with which to create the dictionary. Pass [`kCFAllocatorDefault`](../CoreFoundation/kcfallocatordefault.md) to use the default allocator.
 
 ## See Also
 
-- [func CMTimeShow(CMTime)](cmtimeshow(_:).md)
+### Representing Times
+- [func CMTimeShow(CMTime)](./cmtimeshow%28_%29.md)
   Prints a description of the time to the console.
-- [func CMTimeCopyDescription(allocator: CFAllocator?, time: CMTime) -> CFString?](cmtimecopydescription(allocator:time:).md)
+- [func CMTimeCopyDescription(allocator: CFAllocator?, time: CMTime) -> CFString?](./cmtimecopydescription%28allocator,time%29.md)
   Creates a string representation of the time.
 
 

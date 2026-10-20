@@ -1,7 +1,8 @@
 # CLSProgressReportingCapability.Kind.duration
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Time spent performing the task.
 
@@ -18,19 +19,24 @@ Time spent performing the task.
 case duration
 ```
 
+```c
+CLSProgressReportingCapabilityKindDuration
+```
+
 #### Discussion
 
-The framework automatically measures the time that a student spends working on a task, so all contexts have a [`CLSProgressReportingCapability.Kind.duration`](clsprogressreportingcapability/kind-swift.enum/duration.md) capability by default. You can replace the default one with a new one if you want to customize the [`details`](clsprogressreportingcapability/details.md) string.
+The framework automatically measures the time that a student spends working on a task, so all contexts have a [`CLSProgressReportingCapability.Kind.duration`](./duration.md) capability by default. You can replace the default one with a new one if you want to customize the [`details`](../details.md) string.
 
 ## See Also
 
-- [CLSProgressReportingCapability.Kind.percent](clsprogressreportingcapability/kind-swift.enum/percent.md)
+### Reporting capabilities
+- [CLSProgressReportingCapability.Kind.percent](./percent.md)
   The percentage of the total task that has been completed.
-- [CLSProgressReportingCapability.Kind.binary](clsprogressreportingcapability/kind-swift.enum/binary.md)
+- [CLSProgressReportingCapability.Kind.binary](./binary.md)
   A binary outcome for the task, like true or false.
-- [CLSProgressReportingCapability.Kind.quantity](clsprogressreportingcapability/kind-swift.enum/quantity.md)
+- [CLSProgressReportingCapability.Kind.quantity](./quantity.md)
   A discrete value.
-- [CLSProgressReportingCapability.Kind.score](clsprogressreportingcapability/kind-swift.enum/score.md)
+- [CLSProgressReportingCapability.Kind.score](./score.md)
   A score.
 
 

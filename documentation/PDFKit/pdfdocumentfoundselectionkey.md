@@ -1,7 +1,8 @@
 # PDFDocumentFoundSelectionKey
 
 **Framework**: PDFKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 15.0+
@@ -17,9 +18,14 @@
 let PDFDocumentFoundSelectionKey: String
 ```
 
+```c
+extern NSString * const PDFDocumentFoundSelectionKey;
+```
+
 ## See Also
 
-- [let PDFDocumentPageIndexKey: String](pdfdocumentpageindexkey.md)
+### Constants
+- [let PDFDocumentPageIndexKey: String](./pdfdocumentpageindexkey.md)
 
 
 ---

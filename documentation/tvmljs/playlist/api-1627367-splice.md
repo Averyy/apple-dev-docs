@@ -1,7 +1,8 @@
 # splice
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Deletes the indicated array elements and replaces them with the specified elements.
 
@@ -10,7 +11,7 @@ Deletes the indicated array elements and replaces them with the specified elemen
 
 ## Declaration
 
-```swift
+```
 Array splice(
     in int start, 
     in int deleteCount, 
@@ -18,7 +19,7 @@ Array splice(
 );
 ```
 
-#### Return_value
+#### Return Value
 
 An array of the deleted elements.
 
@@ -34,15 +35,16 @@ Use this method to modify the contents of the playlist.
 
 ## See Also
 
-- [item](playlist/1627377-item.md)
+### Modifying the Playlist
+- [item](./api-1627377-item.md)
   Returns the media item located in the indicated array index.
-- [length](playlist/1627327-length.md)
+- [length](./api-1627327-length.md)
   The number of items in the playlist.
-- [Playlist](playlist/1627336-playlist.md)
+- [Playlist](./api-1627336-playlist.md)
   Creates a new playlist object.
-- [pop](playlist/1627310-pop.md)
+- [pop](./api-1627310-pop.md)
   Removes a media item from the end of a playlist.
-- [push](playlist/1627433-push.md)
+- [push](./api-1627433-push.md)
   Adds a media item to the end of a playlist.
 
 

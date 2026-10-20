@@ -1,19 +1,26 @@
 # displayedPerson
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional. Specifies the person properties that the new-person view controller pre-fills in its views.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`contact`](../../ContactsUI/cncontactviewcontroller/contact.md) instead.
 
 ## Declaration
 
 ```swift
 var displayedPerson: ABRecord? { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, nullable) ABRecordRef displayedPerson;
 ```
 
 #### Discussion

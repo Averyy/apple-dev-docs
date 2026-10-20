@@ -1,7 +1,8 @@
 # UIBarButtonItem.Badge
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,25 +19,26 @@ struct Badge
 ## Topics
 
 ### Instance Properties
-- [var backgroundColor: UIColor?](uibarbuttonitem/badge-swift.struct/backgroundcolor.md)
-- [var font: UIFont?](uibarbuttonitem/badge-swift.struct/font.md)
-- [var foregroundColor: UIColor?](uibarbuttonitem/badge-swift.struct/foregroundcolor.md)
-- [var stringValue: String?](uibarbuttonitem/badge-swift.struct/stringvalue.md)
+- [var backgroundColor: UIColor?](./badge-swift.struct/backgroundcolor.md)
+- [var font: UIFont?](./badge-swift.struct/font.md)
+- [var foregroundColor: UIColor?](./badge-swift.struct/foregroundcolor.md)
+- [var stringValue: String?](./badge-swift.struct/stringvalue.md)
 ### Type Methods
-- [static func count(Int) -> UIBarButtonItem.Badge](uibarbuttonitem/badge-swift.struct/count(_:).md)
-- [static func indicator() -> UIBarButtonItem.Badge](uibarbuttonitem/badge-swift.struct/indicator.md)
-- [static func string(String) -> UIBarButtonItem.Badge](uibarbuttonitem/badge-swift.struct/string(_:).md)
+- [static func count(Int) -> UIBarButtonItem.Badge](./badge-swift.struct/count%28_%29.md)
+- [static func indicator() -> UIBarButtonItem.Badge](./badge-swift.struct/indicator%28%29.md)
+- [static func string(String) -> UIBarButtonItem.Badge](./badge-swift.struct/string%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var badge: UIBarButtonItem.Badge?](uibarbuttonitem/badge-4sz3f.md)
+### Adding a badge
+- [var badge: UIBarButtonItem.Badge?](./badge-4sz3f.md)
 
 
 ---

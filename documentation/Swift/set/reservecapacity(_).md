@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reserves enough space to store the specified number of elements.
 
@@ -20,6 +21,8 @@ Reserves enough space to store the specified number of elements.
 mutating func reserveCapacity(_ minimumCapacity: Int)
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 #### Discussion
 
 If you are adding a known number of elements to a set, use this method to avoid multiple reallocations. This method ensures that the set has unique, mutable, contiguous storage, with space allocated for at least the requested number of elements.
@@ -32,12 +35,13 @@ Calling the `reserveCapacity(_:)` method on a set with bridged storage triggers 
 
 ## See Also
 
-- [func insert(Element) -> (inserted: Bool, memberAfterInsert: Element)](set/insert(_:)-nads.md)
+### Adding Elements
+- [func insert(Element) -> (inserted: Bool, memberAfterInsert: Element)](./insert%28_%29-nads.md)
   Inserts the given element in the set if it is not already present.
-- [func insert<ConcreteElement>(ConcreteElement) -> (inserted: Bool, memberAfterInsert: ConcreteElement)](set/insert(_:)-yar4.md)
-- [func update(with: Element) -> Element?](set/update(with:)-2n6tk.md)
+- [func insert<ConcreteElement>(ConcreteElement) -> (inserted: Bool, memberAfterInsert: ConcreteElement)](./insert%28_%29-yar4.md)
+- [func update(with: Element) -> Element?](./update%28with%29-2n6tk.md)
   Inserts the given element into the set unconditionally.
-- [func update<ConcreteElement>(with: ConcreteElement) -> ConcreteElement?](set/update(with:)-7r2g.md)
+- [func update<ConcreteElement>(with: ConcreteElement) -> ConcreteElement?](./update%28with%29-7r2g.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: FinanceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new history token using data from the provided decoder.
 

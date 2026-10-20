@@ -1,18 +1,19 @@
 # setOptions
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual unsigned int setOptions(unsigned int options, unsigned int mask, void *context);
 ```
 
-#### Return_value
+#### Return Value
 
 The options bitfield as it was before the set operation.
 

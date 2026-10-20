@@ -1,7 +1,8 @@
 # handleTap(reengagementURL:)
 
 **Framework**: AdAttributionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes click-through interactions on your custom rendered ad content, and delivers a URL to the advertised app if it’s installed.
 
@@ -22,7 +23,7 @@ Use this method to provide a URL to deeply link someone into an advertised app i
 
 If the system can validate that a person tapped the custom rendered ad content, it attempts to either launch one of the installed marketplaces to show the product page to install the advertised app, or performs a reengagement if the advertised app is already installed, and opens the reengagement URL.
 
-AdAttributionKit requires the URL to be a universal link specifically for the advertised app that the framework uses at runtime to attempt to open the app. If the URL isn’t a universal link, or the universal link isn’t registered to the advertised app, the framework disregards the URL and launches the app as usual without passing the URL. For more information, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content) and [`Supporting universal links in your app`](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app).
+AdAttributionKit requires the URL to be a universal link specifically for the advertised app that the framework uses at runtime to attempt to open the app. If the URL isn’t a universal link, or the universal link isn’t registered to the advertised app, the framework disregards the URL and launches the app as usual without passing the URL. For more information, see [Allowing apps and websites to link to your content](../../Xcode/allowing-apps-and-websites-to-link-to-your-content.md) and [Supporting universal links in your app](../../Xcode/supporting-universal-links-in-your-app.md).
 
 ## Parameters
 
@@ -30,7 +31,8 @@ AdAttributionKit requires the URL to be a universal link specifically for the ad
 
 ## See Also
 
-- [func handleTap() async throws](appimpression/handletap.md)
+### Processing interactions with click-through ads
+- [func handleTap() async throws](./handletap%28%29.md)
   Processes click-through interactions on your custom rendered ad content.
 
 

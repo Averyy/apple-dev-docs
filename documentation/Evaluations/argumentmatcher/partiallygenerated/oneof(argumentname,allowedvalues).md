@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.oneOf(argumentName:allowedValues:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated one-of argument matcher.
 

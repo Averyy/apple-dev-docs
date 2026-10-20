@@ -1,7 +1,8 @@
 # transformationMatrixBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assings an optional reference to a buffer containing a `float4x3` transformation matrix.
 
@@ -17,6 +18,10 @@ Assings an optional reference to a buffer containing a `float4x3` transformation
 
 ```swift
 var transformationMatrixBuffer: MTL4BufferRange { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BufferRange transformationMatrixBuffer;
 ```
 
 #### Discussion

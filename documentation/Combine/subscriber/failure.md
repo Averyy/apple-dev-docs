@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The kind of errors this subscriber might receive.
@@ -27,7 +28,8 @@ Use `Never` if this `Subscriber` cannot receive errors.
 
 ## See Also
 
-- [associatedtype Input](subscriber/input.md)
+### Declaring supporting types
+- [associatedtype Input](./input.md)
   The kind of values this subscriber receives.
 
 

@@ -1,24 +1,26 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](osbundle/init.md)
-- [loadResource](osbundle/loadresource.md)
+### Instance Methods
+- [init](./init.md)
+- [loadResource](./loadresource.md)
 
 
 ---

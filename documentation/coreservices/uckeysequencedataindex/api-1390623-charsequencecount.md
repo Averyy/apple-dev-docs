@@ -1,7 +1,8 @@
 # charSequenceCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the number of Unicode character sequences that follow the end of the `UCKeySequenceDataIndex` structure.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the number of Unicode character sequences 
 
 ```swift
 var charSequenceCount: UInt16
+```
+
+```c
+UInt16 charSequenceCount;
 ```
 
 

@@ -1,7 +1,8 @@
 # UISceneCaptureState.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case unspecified
+```
+
+```c
+UISceneCaptureStateUnspecified
 ```
 
 

@@ -1,7 +1,8 @@
 # beep()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Plays the system beep.
 
@@ -21,15 +22,16 @@ Users can select a sound to be played as the system beep in the Sound pane of Sy
 
 ## See Also
 
-- [var isPlaying: Bool](nssound/isplaying.md)
+### Playing Sounds
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean that indicates whether the sound is playing its audio data.
-- [func pause() -> Bool](nssound/pause.md)
+- [func pause() -> Bool](./pause%28%29.md)
   Pauses audio playback.
-- [func play() -> Bool](nssound/play.md)
+- [func play() -> Bool](./play%28%29.md)
   Initiates audio playback.
-- [func resume() -> Bool](nssound/resume.md)
+- [func resume() -> Bool](./resume%28%29.md)
   Resumes audio playback.
-- [func stop() -> Bool](nssound/stop.md)
+- [func stop() -> Bool](./stop%28%29.md)
   Concludes audio playback.
 
 

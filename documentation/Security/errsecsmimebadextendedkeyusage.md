@@ -1,7 +1,8 @@
 # errSecSMIMEBadExtendedKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The appropriate extended key usage for SMIME is not found.
 
@@ -18,6 +19,10 @@ The appropriate extended key usage for SMIME is not found.
 
 ```swift
 var errSecSMIMEBadExtendedKeyUsage: OSStatus { get }
+```
+
+```c
+errSecSMIMEBadExtendedKeyUsage
 ```
 
 

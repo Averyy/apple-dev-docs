@@ -1,7 +1,8 @@
 # webExtensionController(_:sendMessage:toApplicationWithIdentifier:for:replyHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context wants to send a one-time message to an application.
 
@@ -15,7 +16,15 @@ Called when an extension context wants to send a one-time message to an applicat
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, sendMessage message: Any, toApplicationWithIdentifier applicationIdentifier: String?, for extensionContext: WKWebExtensionContext, replyHandler: @escaping (Any?, (any Error)?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, sendMessage message: Any, toApplicationWithIdentifier applicationIdentifier: String?, for extensionContext: WKWebExtensionContext) async throws -> Any?
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller sendMessage:(id) message toApplicationWithIdentifier:(NSString *) applicationIdentifier forExtensionContext:(WKWebExtensionContext *) extensionContext replyHandler:(void (^)(id replyMessage, NSError *error)) replyHandler;
 ```
 
 #### Discussion
@@ -24,7 +33,7 @@ This method should be implemented by the app to handle one-off messages to appli
 
 If not implemented, the default behavior is to pass the message to the app extension handler within the extension’s bundle, if the extension was loaded from an app extension bundle; otherwise, no action is performed if not implemented.
 
-> **Note**: The reply message must be JSON-serializable according to [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization).
+> **Note**: The reply message must be JSON-serializable according to [`JSONSerialization`](../../Foundation/jsonserialization.md).
 
 ## Parameters
 

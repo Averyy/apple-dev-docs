@@ -1,7 +1,8 @@
 # currentEventSkippableStateDidChangeEventKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The dictionary key for the AVPlayerInterstitial event that had its skippable event state changed in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
 
@@ -20,25 +21,30 @@ The dictionary key for the AVPlayerInterstitial event that had its skippable eve
 class let currentEventSkippableStateDidChangeEventKey: String
 ```
 
+```c
+extern NSString * const AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeEventKey;
+```
+
 #### Discussion
 
 The value corresponding to this key is of type AVPlayerInterstitialEvent.
 
 ## See Also
 
-- [class let currentEventSkippableStateDidChangeNotification: NSNotification.Name](avplayerinterstitialeventmonitor/currenteventskippablestatedidchangenotification.md)
+### Monitoring skipping
+- [class let currentEventSkippableStateDidChangeNotification: NSNotification.Name](./currenteventskippablestatedidchangenotification.md)
   A notification that’s posted whenever the currentEventSkippableState of an AVPlayerInterstitialEventMonitor changes.
-- [class let currentEventSkippableStateDidChangeStateKey: String](avplayerinterstitialeventmonitor/currenteventskippablestatedidchangestatekey.md)
+- [class let currentEventSkippableStateDidChangeStateKey: String](./currenteventskippablestatedidchangestatekey.md)
   The dictionary key for the skippable event state in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
-- [class let currentEventSkippableStateDidChangeSkipControlLabelKey: String](avplayerinterstitialeventmonitor/currenteventskippablestatedidchangeskipcontrollabelkey.md)
+- [class let currentEventSkippableStateDidChangeSkipControlLabelKey: String](./currenteventskippablestatedidchangeskipcontrollabelkey.md)
   The dictionary key for the skip label of the event in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
-- [class let currentEventSkippedNotification: NSNotification.Name](avplayerinterstitialeventmonitor/currenteventskippednotification.md)
+- [class let currentEventSkippedNotification: NSNotification.Name](./currenteventskippednotification.md)
   A notification that’s posted whenever an event was skipped via skip control.
-- [class let currentEventSkippedEventKey: String](avplayerinterstitialeventmonitor/currenteventskippedeventkey.md)
+- [class let currentEventSkippedEventKey: String](./currenteventskippedeventkey.md)
   The dictionary key for the AVPlayerInterstitialEvent that was skipped in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippedNotification.
-- [var currentEventSkipControlLabel: String?](avplayerinterstitialeventmonitor/currenteventskipcontrollabel.md)
+- [var currentEventSkipControlLabel: String?](./currenteventskipcontrollabel.md)
   The skip control label for the currentEvent.
-- [var currentEventSkippableState: AVPlayerInterstitialEvent.SkippableEventState](avplayerinterstitialeventmonitor/currenteventskippablestate.md)
+- [var currentEventSkippableState: AVPlayerInterstitialEvent.SkippableEventState](./currenteventskippablestate.md)
   The skippable event state for the currentEvent.
 
 

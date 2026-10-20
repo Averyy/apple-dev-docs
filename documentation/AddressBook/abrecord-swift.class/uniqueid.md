@@ -1,17 +1,22 @@
 # uniqueId
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the unique ID for a record.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var uniqueId: String! { get }
+```
+
+```objc
+@property (copy, readonly) NSString * uniqueId;
 ```
 
 #### Return Value
@@ -20,11 +25,12 @@ The unique ID.
 
 #### Discussion
 
-This method is equivalent to invoking [`value(forProperty:)`](abrecord-swift.class/value(forproperty:).md), passing `kABUIDProperty` as the argument.
+This method is equivalent to invoking [`value(forProperty:)`](./value%28forproperty%29.md), passing `kABUIDProperty` as the argument.
 
 ## See Also
 
-- [var displayName: String!](abrecord-swift.class/displayname.md)
+### Getting Identifying Information
+- [var displayName: String!](./displayname.md)
   A user-visible string representing the record.
 
 

@@ -1,7 +1,8 @@
 # shuffleType
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shuffle type used when fulfilling the event request.
 
@@ -20,9 +21,14 @@ The shuffle type used when fulfilling the event request.
 var shuffleType: MPShuffleType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPShuffleType shuffleType;
+```
+
 ## See Also
 
-- [var preservesShuffleMode: Bool](mpchangeshufflemodecommandevent/preservesshufflemode.md)
+### Changing the shuffle mode
+- [var preservesShuffleMode: Bool](./preservesshufflemode.md)
   A Boolean value that indicates whether the shuffle mode is preserved between playback sessions.
 
 

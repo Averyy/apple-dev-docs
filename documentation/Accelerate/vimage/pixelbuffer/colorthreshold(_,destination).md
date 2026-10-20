@@ -1,7 +1,8 @@
 # colorThreshold(_:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a binary image from a 32-bit pixel buffer.
 
@@ -11,7 +12,7 @@ Creates a binary image from a 32-bit pixel buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,11 @@ Creates a binary image from a 32-bit pixel buffer.
 func colorThreshold(_ threshold: Float, destination: vImage.PixelBuffer<Format>)
 ```
 
+Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` is `Float`.
+
 ## Mentions
 
-- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
+- [Applying flood fills to an image](../../applying-flood-fills-to-an-image.md)
 
 #### Discussion
 

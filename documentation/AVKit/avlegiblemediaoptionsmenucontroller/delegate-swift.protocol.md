@@ -1,7 +1,8 @@
 # AVLegibleMediaOptionsMenuController.Delegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 protocol Delegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVLegibleMediaOptionsMenuControllerDelegate <NSObject>
+```
+
 #### Overview
 
 Delegate protocol for AVLegibleMediaOptionsMenuController
@@ -25,18 +30,19 @@ Provides callbacks for caption preview display and enablement state changes.
 ## Topics
 
 ### Responding to menu changes
-- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didchange:).md)
-- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didrequestcaptionpreviewforprofileid:).md)
-- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview(_:).md)
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](./delegate-swift.protocol/legiblemenucontroller%28_,didchange%29.md)
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](./delegate-swift.protocol/legiblemenucontroller%28_,didrequestcaptionpreviewforprofileid%29.md)
+- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](./delegate-swift.protocol/legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](avlegiblemediaoptionsmenucontroller/delegate-swift.property.md)
+### Configuring a delegate
+- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](./delegate-swift.property.md)
 
 
 ---

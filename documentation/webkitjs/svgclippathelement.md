@@ -1,7 +1,8 @@
 # SVGClipPathElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGClipPathElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [clipPathUnits](svgclippathelement/1629442-clippathunits.md)
+- [clipPathUnits](./svgclippathelement/api-1629442-clippathunits.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

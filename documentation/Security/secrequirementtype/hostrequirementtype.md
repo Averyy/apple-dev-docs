@@ -1,7 +1,8 @@
 # SecRequirementType.hostRequirementType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 What hosts may run this code.
 
@@ -13,6 +14,10 @@ What hosts may run this code.
 
 ```swift
 case hostRequirementType
+```
+
+```c
+kSecHostRequirementType
 ```
 
 

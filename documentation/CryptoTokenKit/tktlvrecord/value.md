@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value field of the record.
 
@@ -18,6 +19,10 @@ The value field of the record.
 
 ```swift
 var value: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * value;
 ```
 
 

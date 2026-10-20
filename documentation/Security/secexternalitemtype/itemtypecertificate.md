@@ -1,7 +1,8 @@
 # SecExternalItemType.itemTypeCertificate
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a certificate.
 
@@ -12,6 +13,10 @@ Indicates a certificate.
 
 ```swift
 case itemTypeCertificate
+```
+
+```c
+kSecItemTypeCertificate
 ```
 
 

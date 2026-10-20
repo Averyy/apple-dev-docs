@@ -1,7 +1,8 @@
 # isSoundCheckEnabled
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var isSoundCheckEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isSoundCheckEnabled) BOOL soundCheckEnabled;
 ```
 
 #### Discussion

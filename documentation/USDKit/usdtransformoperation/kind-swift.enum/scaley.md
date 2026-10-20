@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.scaleY
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scale operation along the Y axis.
 

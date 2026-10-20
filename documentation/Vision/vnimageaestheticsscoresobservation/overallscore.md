@@ -1,7 +1,8 @@
 # overallScore
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A score which incorporates aesthetic score, failure score, and utility labels.
 
@@ -19,13 +20,18 @@ A score which incorporates aesthetic score, failure score, and utility labels.
 var overallScore: Float { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) float overallScore;
+```
+
 #### Discussion
 
 This returns a value within the range of `-1` and `1`, where `-1` is least desirable and `1` is most desirable.
 
 ## See Also
 
-- [var isUtility: Bool](vnimageaestheticsscoresobservation/isutility.md)
+### Parsing Observation Content
+- [var isUtility: Bool](./isutility.md)
   A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 

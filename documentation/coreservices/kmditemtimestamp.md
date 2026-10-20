@@ -1,7 +1,8 @@
 # kMDItemTimestamp
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The timestamp on the item.  This generally is used to indicate the time at which the event captured by the item took place. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemTimestamp: CFString!
+```
+
+```c
+const CFStringRef kMDItemTimestamp;
 ```
 
 

@@ -1,7 +1,8 @@
 # isValidName(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether `name` is a valid property name.
 

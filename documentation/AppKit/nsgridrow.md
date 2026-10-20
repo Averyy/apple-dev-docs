@@ -1,7 +1,8 @@
 # NSGridRow
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A row within a grid view.
 
@@ -15,44 +16,49 @@ A row within a grid view.
 class NSGridRow
 ```
 
+```objc
+@interface NSGridRow : NSObject
+```
+
 ## Topics
 
 ### Getting the Row Details
-- [var numberOfCells: Int](nsgridrow/numberofcells.md)
-- [var isHidden: Bool](nsgridrow/ishidden.md)
+- [var numberOfCells: Int](./nsgridrow/numberofcells.md)
+- [var isHidden: Bool](./nsgridrow/ishidden.md)
 ### Formatting the Row
-- [var topPadding: CGFloat](nsgridrow/toppadding.md)
-- [var bottomPadding: CGFloat](nsgridrow/bottompadding.md)
-- [var height: CGFloat](nsgridrow/height.md)
-- [var rowAlignment: NSGridRow.Alignment](nsgridrow/rowalignment.md)
-- [var yPlacement: NSGridCell.Placement](nsgridrow/yplacement.md)
-- [NSGridRow.Alignment](nsgridrow/alignment.md)
+- [var topPadding: CGFloat](./nsgridrow/toppadding.md)
+- [var bottomPadding: CGFloat](./nsgridrow/bottompadding.md)
+- [var height: CGFloat](./nsgridrow/height.md)
+- [var rowAlignment: NSGridRow.Alignment](./nsgridrow/rowalignment.md)
+- [var yPlacement: NSGridCell.Placement](./nsgridrow/yplacement.md)
+- [NSGridRow.Alignment](./nsgridrow/alignment.md)
 ### Getting the Grid View
-- [var gridView: NSGridView?](nsgridrow/gridview.md)
+- [var gridView: NSGridView?](./nsgridrow/gridview.md)
 ### Getting Cells
-- [func cell(at: Int) -> NSGridCell](nsgridrow/cell(at:).md)
+- [func cell(at: Int) -> NSGridCell](./nsgridrow/cell%28at%29.md)
 ### Merging Cells in the Row
-- [func mergeCells(in: NSRange)](nsgridrow/mergecells(in:).md)
+- [func mergeCells(in: NSRange)](./nsgridrow/mergecells%28in%29.md)
 ### Initializers
-- [init?(coder: NSCoder)](nsgridrow/init(coder:).md)
+- [init?(coder: NSCoder)](./nsgridrow/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSGridColumn](nsgridcolumn.md)
+### Rows and Columns
+- [class NSGridColumn](./nsgridcolumn.md)
   A column within a grid view.
 
 

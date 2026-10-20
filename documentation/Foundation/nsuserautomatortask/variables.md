@@ -1,7 +1,8 @@
 # variables
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variables required by the Automator workflow.
 
@@ -14,9 +15,14 @@ The variables required by the Automator workflow.
 var variables: [String : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary<NSString *,id> * variables;
+```
+
 ## See Also
 
-- [func execute(withInput: (any NSSecureCoding)?, completionHandler: NSUserAutomatorTask.CompletionHandler?)](nsuserautomatortask/execute(withinput:completionhandler:).md)
+### Executing Automator Tasks
+- [func execute(withInput: (any NSSecureCoding)?, completionHandler: NSUserAutomatorTask.CompletionHandler?)](./execute%28withinput,completionhandler%29.md)
   Execute the Automator workflow by providing it as securely coded input.
 
 

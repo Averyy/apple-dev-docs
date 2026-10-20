@@ -1,20 +1,34 @@
 # issue
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The issue that fulfills the expected failure.
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var issue: XCTIssue { get }
+```
+
+*macOS*
 
 ```swift
 @NSCopying
 var issue: XCTIssueReference { get }
 ```
 
+```objc
+@property (copy, readonly) XCTIssue * issue;
+```
+
 ## See Also
 
-- [var failureReason: String?](xctexpectedfailure/failurereason.md)
+### Detailing Expected Failure
+- [var failureReason: String?](./failurereason.md)
   An optional string that describes why the test expects a failure.
 
 

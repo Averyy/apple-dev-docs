@@ -1,7 +1,8 @@
 # isSpatialVideoCaptureEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a movie file output captures spatial videos.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether a movie file output captures spatial vide
 var isSpatialVideoCaptureEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isSpatialVideoCaptureEnabled) BOOL spatialVideoCaptureEnabled;
+```
+
 #### Discussion
 
-Spatial capture lets you record your favorite moments in 3D for playback on Apple Vision Pro. This feature isn’t supported on all devices, so you can only enable this property when [`isSpatialVideoCaptureSupported`](avcapturemoviefileoutput/isspatialvideocapturesupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+Spatial capture lets you record your favorite moments in 3D for playback on Apple Vision Pro. This feature isn’t supported on all devices, so you can only enable this property when [`isSpatialVideoCaptureSupported`](./isspatialvideocapturesupported.md) is [`true`](../../Swift/true.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isSpatialVideoCaptureSupported: Bool](avcapturemoviefileoutput/isspatialvideocapturesupported.md)
+### Enabling spatial capture
+- [var isSpatialVideoCaptureSupported: Bool](./isspatialvideocapturesupported.md)
   A Boolean value that indicates whether a movie file output supports capturing spatial videos.
 
 

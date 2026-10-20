@@ -1,18 +1,19 @@
 # kvImageConvert_OrderedUniformBlue
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates the conversion will distribute the noise uniformly.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,29 +21,34 @@ A constant that indicates the conversion will distribute the noise uniformly.
 var kvImageConvert_OrderedUniformBlue: UInt32 { get }
 ```
 
+```c
+kvImageConvert_OrderedUniformBlue
+```
+
 #### Discussion
 
-The following shows an 8-bit RGB image converted to a 1-bit planar image with [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](vimageconvert_planar8toplanar1(_:_:_:_:_:).md) using [`kvImageConvert_DitherOrderedReproducible`](kvimageconvert_ditherorderedreproducible.md). The image on the left uses [`kvImageConvert_OrderedGaussianBlue`](kvimageconvert_orderedgaussianblue.md), and the image on the right uses [`kvImageConvert_OrderedUniformBlue`](kvimageconvert_ordereduniformblue.md):
+The following shows an 8-bit RGB image converted to a 1-bit planar image with [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](./vimageconvert_planar8toplanar1%28_,_,_,_,_%29.md) using [`kvImageConvert_DitherOrderedReproducible`](./kvimageconvert_ditherorderedreproducible.md). The image on the left uses [`kvImageConvert_OrderedGaussianBlue`](./kvimageconvert_orderedgaussianblue.md), and the image on the right uses [`kvImageConvert_OrderedUniformBlue`](./kvimageconvert_ordereduniformblue.md):
 
-![Photos showing images with different noise distributions applied during dithering.](/images/com.apple.accelerate/media-3358023@2x.png)
+![Photos showing images with different noise distributions applied during dithering.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3358023@2x.png)
 
-To learn about converting an RGB image to grayscale, see [`Converting color images to grayscale`](converting-color-images-to-grayscale.md).
+To learn about converting an RGB image to grayscale, see [Converting color images to grayscale](./converting-color-images-to-grayscale.md).
 
 ## See Also
 
-- [var kvImageConvert_DitherNone: UInt32](kvimageconvert_dithernone.md)
+### Constants
+- [var kvImageConvert_DitherNone: UInt32](./kvimageconvert_dithernone.md)
   A constant that indicates the conversion will not apply dithering.
-- [var kvImageConvert_DitherOrdered: UInt32](kvimageconvert_ditherordered.md)
+- [var kvImageConvert_DitherOrdered: UInt32](./kvimageconvert_ditherordered.md)
   A constant that indicates the conversion will add randomized, pre-computed blue noise to the image.
-- [var kvImageConvert_DitherOrderedReproducible: UInt32](kvimageconvert_ditherorderedreproducible.md)
+- [var kvImageConvert_DitherOrderedReproducible: UInt32](./kvimageconvert_ditherorderedreproducible.md)
   A constant that indicates the conversion will add reproducible, pre-computed blue noise to the image.
-- [var kvImageConvert_DitherFloydSteinberg: UInt32](kvimageconvert_ditherfloydsteinberg.md)
+- [var kvImageConvert_DitherFloydSteinberg: UInt32](./kvimageconvert_ditherfloydsteinberg.md)
   A constant that indicates the conversion will add Floyd-Steinberg dithering to the image.
-- [var kvImageConvert_DitherAtkinson: UInt32](kvimageconvert_ditheratkinson.md)
+- [var kvImageConvert_DitherAtkinson: UInt32](./kvimageconvert_ditheratkinson.md)
   A constant that indicates the conversion will add Atkinson dithering to the image.
-- [var kvImageConvert_OrderedGaussianBlue: UInt32](kvimageconvert_orderedgaussianblue.md)
+- [var kvImageConvert_OrderedGaussianBlue: UInt32](./kvimageconvert_orderedgaussianblue.md)
   A constant that indicates the conversion will distribute the noise according to a Gaussian distribution.
-- [var kvImageConvert_OrderedNoiseShapeMask: UInt32](kvimageconvert_orderednoiseshapemask.md)
+- [var kvImageConvert_OrderedNoiseShapeMask: UInt32](./kvimageconvert_orderednoiseshapemask.md)
 
 
 ---

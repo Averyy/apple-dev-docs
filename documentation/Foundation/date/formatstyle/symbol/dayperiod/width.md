@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.DayPeriod.Width
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type representing the width of a day period in a format style.
 
@@ -27,23 +28,23 @@ The possible values of a width are `abbreviated`, `narrow`, and `wide`.
 ## Topics
 
 ### Modifying a Day Period Width
-- [Date.FormatStyle.Symbol.DayPeriod.Width.abbreviated](date/formatstyle/symbol/dayperiod/width/abbreviated.md)
+- [Date.FormatStyle.Symbol.DayPeriod.Width.abbreviated](./width/abbreviated.md)
   A shortened day period width representation.
-- [Date.FormatStyle.Symbol.DayPeriod.Width.narrow](date/formatstyle/symbol/dayperiod/width/narrow.md)
+- [Date.FormatStyle.Symbol.DayPeriod.Width.narrow](./width/narrow.md)
   The shortest day period width representation.
-- [Date.FormatStyle.Symbol.DayPeriod.Width.wide](date/formatstyle/symbol/dayperiod/width/wide.md)
+- [Date.FormatStyle.Symbol.DayPeriod.Width.wide](./width/wide.md)
   A full day period width representation.
 ### Comparing Day Period Widths
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

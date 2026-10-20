@@ -1,7 +1,8 @@
 # consumedAttributes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes successfully used by the file system.
 
@@ -14,15 +15,20 @@ The attributes successfully used by the file system.
 var consumedAttributes: FSItem.Attribute { get set }
 ```
 
+```objc
+@property (nonatomic) FSItemAttribute consumedAttributes;
+```
+
 #### Discussion
 
-This property is a bit field in Objective-C and an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) in Swift.
+This property is a bit field in Objective-C and an [`OptionSet`](../../../Swift/optionset.md) in Swift.
 
 ## See Also
 
-- [func wasAttributeConsumed(FSItem.Attribute) -> Bool](fsitem/setattributesrequest/wasattributeconsumed(_:).md)
+### Inspecting used attributes
+- [func wasAttributeConsumed(FSItem.Attribute) -> Bool](./wasattributeconsumed%28_%29.md)
   A method that indicates whether the file system used the given attribute.
-- [FSItem.Attribute](fsitem/attribute.md)
+- [FSItem.Attribute](../attribute.md)
   A value that indicates a set of item attributes to get or set.
 
 

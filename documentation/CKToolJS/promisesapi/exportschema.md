@@ -1,7 +1,8 @@
 # exportSchema
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Downloads the container’s schema.
 
@@ -10,7 +11,7 @@ Downloads the container’s schema.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise exportSchema(
 	ExportSchemaParams params
 );
@@ -92,15 +93,16 @@ try {
 
 ## See Also
 
-- [getContainers](promisesapi/getcontainers.md)
+### Database Management
+- [getContainers](./getcontainers.md)
   Fetches containers for a team.
-- [importSchema](promisesapi/importschema.md)
+- [importSchema](./importschema.md)
   Uploads a file that defines the new schema for the container.
-- [resetConfigToProduction](promisesapi/resetconfigtoproduction.md)
+- [resetConfigToProduction](./resetconfigtoproduction.md)
   Resets the container configuration to production.
-- [resetToProduction](promisesapi/resettoproduction.md)
+- [resetToProduction](./resettoproduction.md)
   Resets the schema of the environment to production.
-- [validateSchema](promisesapi/validateschema.md)
+- [validateSchema](./validateschema.md)
   Validates the uploaded schema file for the container.
 
 

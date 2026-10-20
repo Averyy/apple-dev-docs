@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef enum {
    mAddEvent,
    mRemoveEvent
@@ -19,12 +19,13 @@ Enumeration of commands that _maintCommand can deal with.
 ## Topics
 
 ### Constants
-- [mAddEvent](ioworkloop/maintcommandenum/maddevent.md)
-- [mRemoveEvent](ioworkloop/maintcommandenum/mremoveevent.md)
+- [mAddEvent](./maintcommandenum/maddevent.md)
+- [mRemoveEvent](./maintcommandenum/mremoveevent.md)
 
 ## See Also
 
-- [ExpansionData](ioservice/expansiondata.md)
+### DataTypes
+- [ExpansionData](../ioservice/expansiondata.md)
 
 
 ---

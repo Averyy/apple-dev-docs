@@ -1,7 +1,8 @@
 # errSecTimestampTimeNotAvailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The time source for the timestamp authority is not available.
 
@@ -18,6 +19,10 @@ The time source for the timestamp authority is not available.
 
 ```swift
 var errSecTimestampTimeNotAvailable: OSStatus { get }
+```
+
+```c
+errSecTimestampTimeNotAvailable
 ```
 
 

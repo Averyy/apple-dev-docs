@@ -1,13 +1,16 @@
 # colorspace
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer’s colorspace in Core Graphics.
 
 **Availability**:
-- Mac Catalyst 13.1+
-- macOS 10.5+
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL is deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,9 +18,14 @@ The layer’s colorspace in Core Graphics.
 var colorspace: CGColorSpace? { get set }
 ```
 
+```objc
+@property (nullable) CGColorSpaceRef colorspace;
+```
+
 ## See Also
 
-- [var wantsExtendedDynamicRangeContent: Bool](caopengllayer/wantsextendeddynamicrangecontent.md)
+### Determining Layer Properties
+- [var wantsExtendedDynamicRangeContent: Bool](./wantsextendeddynamicrangecontent.md)
   Tells whether or not the layer supports content with extended dynamic range.
 
 

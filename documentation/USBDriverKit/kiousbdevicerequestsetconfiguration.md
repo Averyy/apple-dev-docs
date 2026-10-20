@@ -1,32 +1,34 @@
 # kIOUSBDeviceRequestSetConfiguration
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestSetConfiguration
 ```
 
 ## See Also
 
-- [kIOUSBDeviceRequestGetStatus](kiousbdevicerequestgetstatus.md)
-- [kIOUSBDeviceRequestClearFeature](kiousbdevicerequestclearfeature.md)
-- [kIOUSBDeviceRequestGetState](kiousbdevicerequestgetstate.md)
-- [kIOUSBDeviceRequestSetFeature](kiousbdevicerequestsetfeature.md)
-- [kIOUSBDeviceRequestSetAddress](kiousbdevicerequestsetaddress.md)
-- [kIOUSBDeviceRequestGetDescriptor](kiousbdevicerequestgetdescriptor.md)
-- [kIOUSBDeviceRequestSetDescriptor](kiousbdevicerequestsetdescriptor.md)
-- [kIOUSBDeviceRequestGetConfiguration](kiousbdevicerequestgetconfiguration.md)
-- [kIOUSBDeviceRequestGetInterface](kiousbdevicerequestgetinterface.md)
-- [kIOUSBDeviceRequestSetInterface](kiousbdevicerequestsetinterface.md)
-- [kIOUSBDeviceRequestSynchFrame](kiousbdevicerequestsynchframe.md)
-- [kIOUSBDeviceRequestSetSel](kiousbdevicerequestsetsel.md)
-- [kIOUSBDeviceRequestSetIsochronousDelay](kiousbdevicerequestsetisochronousdelay.md)
+### Getting the Request Types
+- [kIOUSBDeviceRequestGetStatus](./kiousbdevicerequestgetstatus.md)
+- [kIOUSBDeviceRequestClearFeature](./kiousbdevicerequestclearfeature.md)
+- [kIOUSBDeviceRequestGetState](./kiousbdevicerequestgetstate.md)
+- [kIOUSBDeviceRequestSetFeature](./kiousbdevicerequestsetfeature.md)
+- [kIOUSBDeviceRequestSetAddress](./kiousbdevicerequestsetaddress.md)
+- [kIOUSBDeviceRequestGetDescriptor](./kiousbdevicerequestgetdescriptor.md)
+- [kIOUSBDeviceRequestSetDescriptor](./kiousbdevicerequestsetdescriptor.md)
+- [kIOUSBDeviceRequestGetConfiguration](./kiousbdevicerequestgetconfiguration.md)
+- [kIOUSBDeviceRequestGetInterface](./kiousbdevicerequestgetinterface.md)
+- [kIOUSBDeviceRequestSetInterface](./kiousbdevicerequestsetinterface.md)
+- [kIOUSBDeviceRequestSynchFrame](./kiousbdevicerequestsynchframe.md)
+- [kIOUSBDeviceRequestSetSel](./kiousbdevicerequestsetsel.md)
+- [kIOUSBDeviceRequestSetIsochronousDelay](./kiousbdevicerequestsetisochronousdelay.md)
 
 
 ---

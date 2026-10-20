@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate that filters samples matching this descriptor.
 
@@ -20,13 +21,18 @@ The predicate that filters samples matching this descriptor.
 var predicate: NSPredicate? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSPredicate * predicate;
+```
+
 #### Discussion
 
-If the predicate is `nil`, the descriptor matches all samples of the data type specified by the [`sampleType`](hkquerydescriptor/sampletype.md) property.
+If the predicate is `nil`, the descriptor matches all samples of the data type specified by the [`sampleType`](./sampletype.md) property.
 
 ## See Also
 
-- [var sampleType: HKSampleType](hkquerydescriptor/sampletype.md)
+### Accessing Descriptor Data
+- [var sampleType: HKSampleType](./sampletype.md)
   The data type of samples that match this descriptor.
 
 

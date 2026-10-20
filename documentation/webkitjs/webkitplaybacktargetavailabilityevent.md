@@ -1,7 +1,8 @@
 # WebKitPlaybackTargetAvailabilityEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitPlaybackTargetAvailabilityEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [availability](webkitplaybacktargetavailabilityevent/1629181-availability.md)
+- [availability](./webkitplaybacktargetavailabilityevent/api-1629181-availability.md)
 
 ## Relationships
 

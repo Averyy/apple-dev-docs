@@ -1,7 +1,8 @@
 # !(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Performs a logical NOT operation on a Boolean value.
 
@@ -40,11 +41,12 @@ if !printedMessage {
 
 ## See Also
 
-- [func toggle()](bool/toggle.md)
+### Transforming a Boolean
+- [func toggle()](./toggle%28%29.md)
   Toggles the Boolean variable’s value.
-- [static func || (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](bool/__(_:_:).md)
+- [static func || (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](./opop%28_,_%29.md)
   Performs a logical OR operation on two Boolean values.
-- [static func && (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](bool/&&(_:_:).md)
+- [static func && (Bool, @autoclosure () throws -> Bool) rethrows -> Bool](./ampamp%28_,_%29.md)
   Performs a logical AND operation on two Boolean values.
 
 

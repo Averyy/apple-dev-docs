@@ -1,7 +1,8 @@
 # subparts
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Collection of PartParameters applied to subparts of the part (if any)
 

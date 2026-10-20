@@ -1,7 +1,8 @@
 # MPSImageBilinearScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
 
@@ -19,36 +20,41 @@ A filter that resizes and changes the aspect ratio of an image using Bilinear re
 class MPSImageBilinearScale
 ```
 
+```objc
+@interface MPSImageBilinearScale : MPSImageScale
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagebilinearscale/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsimagebilinearscale/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagebilinearscale/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsimagebilinearscale/init%28device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSImageScale](mpsimagescale.md)
+- [MPSImageScale](./mpsimagescale.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageConversion](mpsimageconversion.md)
+### Image Manipulation Filters
+- [class MPSImageConversion](./mpsimageconversion.md)
   A filter that performs a conversion of color space, alpha, or pixel format.
-- [class MPSImageScale](mpsimagescale.md)
+- [class MPSImageScale](./mpsimagescale.md)
   A filter that resizes and changes the aspect ratio of an image.
-- [class MPSImageLanczosScale](mpsimagelanczosscale.md)
+- [class MPSImageLanczosScale](./mpsimagelanczosscale.md)
   A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
-- [class MPSImageTranspose](mpsimagetranspose.md)
+- [class MPSImageTranspose](./mpsimagetranspose.md)
   A filter that transposes an image.
 
 

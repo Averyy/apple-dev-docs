@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.TrackingArea
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -16,27 +17,27 @@ struct TrackingArea
 ## Topics
 
 ### Structures
-- [LayerRenderer.Drawable.TrackingArea.HoverEffect](layerrenderer/drawable/trackingarea/hovereffect.md)
+- [LayerRenderer.Drawable.TrackingArea.HoverEffect](./trackingarea/hovereffect.md)
   Hover effect that will be automatically rendered by CompositorServices, when the area is looked at.
-- [LayerRenderer.Drawable.TrackingArea.Identifier](layerrenderer/drawable/trackingarea/identifier-swift.struct.md)
+- [LayerRenderer.Drawable.TrackingArea.Identifier](./trackingarea/identifier-swift.struct.md)
   An identifier for the tracking area.
-- [LayerRenderer.Drawable.TrackingArea.RenderValue](layerrenderer/drawable/trackingarea/rendervalue-swift.struct.md)
+- [LayerRenderer.Drawable.TrackingArea.RenderValue](./trackingarea/rendervalue-swift.struct.md)
   A value used when rendering a tracking area.
 ### Initializers
-- [init()](layerrenderer/drawable/trackingarea/init.md)
+- [init()](./trackingarea/init%28%29.md)
 ### Instance Properties
-- [var identifier: LayerRenderer.Drawable.TrackingArea.Identifier](layerrenderer/drawable/trackingarea/identifier-swift.property.md)
+- [var identifier: LayerRenderer.Drawable.TrackingArea.Identifier](./trackingarea/identifier-swift.property.md)
   Returns the identifier for the tracking area.
-- [var renderValue: LayerRenderer.Drawable.TrackingArea.RenderValue](layerrenderer/drawable/trackingarea/rendervalue-swift.property.md)
+- [var renderValue: LayerRenderer.Drawable.TrackingArea.RenderValue](./trackingarea/rendervalue-swift.property.md)
   Returns the render value for the tracking area.
 ### Instance Methods
-- [func addHoverEffect(LayerRenderer.Drawable.TrackingArea.HoverEffect)](layerrenderer/drawable/trackingarea/addhovereffect(_:).md)
+- [func addHoverEffect(LayerRenderer.Drawable.TrackingArea.HoverEffect)](./trackingarea/addhovereffect%28_%29.md)
   Add an hover effect for this tracking area. No hover effect will be rendered if this isn’t called.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
 
 
 ---

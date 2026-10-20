@@ -1,7 +1,8 @@
 # init(_:in:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,14 @@
 init?<S>(_ range: NSRange, in string: S) where S : StringProtocol
 ```
 
+Available when `Bound` is `String.Index`.
+
 ## See Also
 
-- [func relative<C>(to: C) -> Range<Bound>](range/relative(to:).md)
+### Converting Ranges
+- [func relative<C>(to: C) -> Range<Bound>](./relative%28to%29.md)
   Returns the range of indices described by this range expression within the given collection.
-- [init?(NSRange, in: String)](range/init(_:in:)-5cclx.md)
+- [init?(NSRange, in: String)](./init%28_,in%29-5cclx.md)
 
 
 ---

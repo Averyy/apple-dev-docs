@@ -1,7 +1,8 @@
 # ImmersiveCameraMask
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A structure that holds the camera mask type information and its relevant mask name.
 
@@ -21,32 +22,33 @@ enum ImmersiveCameraMask
 ## Topics
 
 ### Enumeration Cases
-- [case dynamic(ImmersiveDynamicMask)](immersivecameramask/dynamic(_:).md)
+- [case dynamic(ImmersiveDynamicMask)](./immersivecameramask/dynamic%28_%29.md)
   A value that defines a control points based dynamically generated mask.
-- [case image(ImmersiveImageMask)](immersivecameramask/image(_:).md)
+- [case image(ImmersiveImageMask)](./immersivecameramask/image%28_%29.md)
   A value that defines an image based mask.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [actor VenueDescriptor](venuedescriptor.md)
+### Camera metadata
+- [actor VenueDescriptor](./venuedescriptor.md)
   The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
-- [struct ImmersiveCamera](immersivecamera.md)
+- [struct ImmersiveCamera](./immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
-- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+- [struct ImmersiveCameraLensDefinition](./immersivecameralensdefinition.md)
   This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
-- [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
+- [struct ImmersiveCameraCalibration](./immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
-- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+- [struct ImmersiveDynamicMask](./immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [class ImmersiveImageMask](immersiveimagemask.md)
+- [class ImmersiveImageMask](./immersiveimagemask.md)
   An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 

@@ -1,7 +1,8 @@
 # search(_:fullWordsOnly:caseMatchingOnly:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the drawing for strokes whose recognized text matches the query.
 
@@ -20,7 +21,7 @@ final func search(_ query: String, fullWordsOnly: Bool = false, caseMatchingOnly
 
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 #### Return Value
 
@@ -34,7 +35,8 @@ An array of all results found.
 
 ## See Also
 
-- [PKStrokeRecognizer.SearchResult](pkstrokerecognizer/searchresult.md)
+### Searching for text
+- [PKStrokeRecognizer.SearchResult](./searchresult.md)
   A value that describes a single result returned by a handwriting search.
 
 

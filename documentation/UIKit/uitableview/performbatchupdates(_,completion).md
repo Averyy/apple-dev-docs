@@ -1,7 +1,8 @@
 # performBatchUpdates(_:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Animates multiple insert, delete, reload, and move operations as a group.
 
@@ -18,6 +19,10 @@ Animates multiple insert, delete, reload, and move operations as a group.
 func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 ```
 
+```objc
+- (void) performBatchUpdates:(void (^)()) updates completion:(void (^)(BOOL finished)) completion;
+```
+
 #### Discussion
 
 Use this method in cases where you want to make multiple changes to the table view in one single animated operation, as opposed to several separate animations. Use the block passed in the `updates` parameter to specify all of the operations you want to perform.
@@ -27,13 +32,16 @@ Deletes are processed before inserts in batch operations. This means the indexes
 ## Parameters
 
 - `updates`: The block that performs the relevant insert, delete, reload, or move operations. In addition to modifying the table’s rows, update your table’s data source to reflect your changes. This block has no return value and takes no parameters.
-- `completion`: A completion handler block to execute when all of the operations are finished. This block has no return value and takes the following parameter: - **finished**: A Boolean value indicating whether the animations completed successfully. The value of this parameter is [`false`](https://developer.apple.com/documentation/swift/false) if the animations were interrupted for any reason.
+- `completion`: A completion handler block to execute when all of the operations are finished. This block has no return value and takes the following parameter:
+
+  - **finished**: A Boolean value indicating whether the animations completed successfully. The value of this parameter is [`false`](../../Swift/false.md) if the animations were interrupted for any reason.
 
 ## See Also
 
-- [func beginUpdates()](uitableview/beginupdates.md)
+### Performing batch updates to rows and sections
+- [func beginUpdates()](./beginupdates%28%29.md)
   Begins a series of method calls that insert, delete, or select rows and sections of the table view.
-- [func endUpdates()](uitableview/endupdates.md)
+- [func endUpdates()](./endupdates%28%29.md)
   Concludes a series of method calls that insert, delete, select, or reload rows and sections of the table view.
 
 

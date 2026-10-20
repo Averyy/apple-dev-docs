@@ -1,7 +1,8 @@
 # Locale.Region.Category
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Categories of a region. See https://www.unicode.org/reports/tr35/tr35-35/tr35-info.html#Territory_Data
 
@@ -23,27 +24,27 @@ struct Category
 ## Topics
 
 ### Type Properties
-- [static let continent: Locale.Region.Category](locale/region-swift.struct/category-swift.struct/continent.md)
+- [static let continent: Locale.Region.Category](./category-swift.struct/continent.md)
   Category representing a continent, regions contained directly by world.
-- [static let grouping: Locale.Region.Category](locale/region-swift.struct/category-swift.struct/grouping.md)
+- [static let grouping: Locale.Region.Category](./category-swift.struct/grouping.md)
   Category representing a grouping, regions that has a well defined membership.
-- [static let subcontinent: Locale.Region.Category](locale/region-swift.struct/category-swift.struct/subcontinent.md)
+- [static let subcontinent: Locale.Region.Category](./category-swift.struct/subcontinent.md)
   Category representing a sub-continent, regions contained directly by a continent.
-- [static let territory: Locale.Region.Category](locale/region-swift.struct/category-swift.struct/territory.md)
+- [static let territory: Locale.Region.Category](./category-swift.struct/territory.md)
   Category representing a territory.
-- [static let world: Locale.Region.Category](locale/region-swift.struct/category-swift.struct/world.md)
+- [static let world: Locale.Region.Category](./category-swift.struct/world.md)
   Category representing the whold world.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

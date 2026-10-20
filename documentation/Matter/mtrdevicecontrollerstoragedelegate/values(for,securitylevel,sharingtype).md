@@ -1,7 +1,8 @@
 # values(for:securityLevel:sharingType:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func values(for controller: MTRDeviceController, securityLevel: MTRStorageSecurityLevel, sharingType: MTRStorageSharingType) -> [String : any NSSecureCoding]?
+```
+
+```objc
+- (NSDictionary<NSString *,id<NSSecureCoding>> *) valuesForController:(MTRDeviceController *) controller securityLevel:(MTRStorageSecurityLevel) securityLevel sharingType:(MTRStorageSharingType) sharingType;
 ```
 
 

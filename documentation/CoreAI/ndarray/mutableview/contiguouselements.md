@@ -1,7 +1,8 @@
 # contiguousElements
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a `MutableSpan` over the backing memory of this view if the memory is in a contiguous layout, otherwise returns `nil`.
 
@@ -19,13 +20,16 @@ Returns a `MutableSpan` over the backing memory of this view if the memory is in
 var contiguousElements: MutableSpan<Element>? { get }
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Discussion
 
 > **Note**: `contiguous` here refers to elements in row-major order with zero padding.
 
 ## See Also
 
-- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](ndarray/mutableview/subscript(scalarat:).md)
+### Accessing elements
+- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](./subscript%28scalarat%29.md)
   Access the element at a multi-dimensional `index`.
 
 

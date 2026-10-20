@@ -1,7 +1,8 @@
 # init(thresholds:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates N-1 bins with the given N `thresholds`.
 

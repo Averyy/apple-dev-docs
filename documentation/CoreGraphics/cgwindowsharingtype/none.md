@@ -1,16 +1,21 @@
 # CGWindowSharingType.none
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case none
+```
+
+```c
+kCGWindowSharingNone
 ```
 
 #### Discussion
@@ -19,8 +24,9 @@ The window is not shared.
 
 ## See Also
 
-- [CGWindowSharingType.readOnly](cgwindowsharingtype/readonly.md)
-- [CGWindowSharingType.readWrite](cgwindowsharingtype/readwrite.md)
+### Constants
+- [CGWindowSharingType.readOnly](./readonly.md)
+- [CGWindowSharingType.readWrite](./readwrite.md)
 
 
 ---

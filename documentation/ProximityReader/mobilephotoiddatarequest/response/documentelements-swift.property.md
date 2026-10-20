@@ -1,7 +1,8 @@
 # documentElements
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document elements from a successful photo ID data request.
 

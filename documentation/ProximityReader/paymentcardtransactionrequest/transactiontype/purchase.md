@@ -1,7 +1,8 @@
 # PaymentCardTransactionRequest.TransactionType.purchase
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A purchase transaction.
 
@@ -22,7 +23,8 @@ Use this type to receive money from the person’s card.
 
 ## See Also
 
-- [PaymentCardTransactionRequest.TransactionType.refund](paymentcardtransactionrequest/transactiontype/refund.md)
+### Getting the transaction type
+- [PaymentCardTransactionRequest.TransactionType.refund](./refund.md)
   A refund transaction.
 
 

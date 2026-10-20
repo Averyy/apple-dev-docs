@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Destination phone number.
 
@@ -16,7 +17,8 @@ let phoneNumber: String
 
 ## See Also
 
-- [let text: String](rcsservice/business/composetextaction/text.md)
+### Accessing action properties
+- [let text: String](./text.md)
   Contents of text to send.
 
 

@@ -1,10 +1,13 @@
 # TVDocumentError
 
 **Framework**: TVMLKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- tvOS 13.0+
+- tvOS 13.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -15,27 +18,28 @@ struct TVDocumentError
 ## Topics
 
 ### Accessing Error Data
-- [static var errorDomain: String](tvdocumenterror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./tvdocumenterror-swift.struct/errordomain.md)
 ### Error Types
-- [static var cancelled: TVDocumentError.Code](tvdocumenterror-swift.struct/cancelled.md)
-- [static var failed: TVDocumentError.Code](tvdocumenterror-swift.struct/failed.md)
-- [TVDocumentError.Code](tvdocumenterror-swift.struct/code.md)
+- [static var cancelled: TVDocumentError.Code](./tvdocumenterror-swift.struct/cancelled.md)
+- [static var failed: TVDocumentError.Code](./tvdocumenterror-swift.struct/failed.md)
+- [TVDocumentError.Code](./tvdocumenterror-swift.struct/code.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let TVMLKitErrorDomain: String](tvmlkiterrordomain.md)
+### Errors
+- [let TVMLKitErrorDomain: String](./tvmlkiterrordomain.md)
   An error occurred in TVMLKit.
-- [enum TVMLKitError](tvmlkiterror.md)
+- [enum TVMLKitError](./tvmlkiterror.md)
   Error codes for the TVMLKit error domain.
 
 

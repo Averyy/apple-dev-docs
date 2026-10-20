@@ -1,7 +1,8 @@
 # MPSNNOptimizerRMSProp
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An optimization layer that performs a root mean square propagation update.
 
@@ -19,45 +20,50 @@ An optimization layer that performs a root mean square propagation update.
 class MPSNNOptimizerRMSProp
 ```
 
+```objc
+@interface MPSNNOptimizerRMSProp : MPSNNOptimizer
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, decay: Double, epsilon: Float, optimizerDescriptor: MPSNNOptimizerDescriptor)](mpsnnoptimizerrmsprop/init(device:decay:epsilon:optimizerdescriptor:).md)
-- [init(device: any MTLDevice, learningRate: Float)](mpsnnoptimizerrmsprop/init(device:learningrate:).md)
+- [init(device: any MTLDevice, decay: Double, epsilon: Float, optimizerDescriptor: MPSNNOptimizerDescriptor)](./mpsnnoptimizerrmsprop/init%28device,decay,epsilon,optimizerdescriptor%29.md)
+- [init(device: any MTLDevice, learningRate: Float)](./mpsnnoptimizerrmsprop/init%28device,learningrate%29.md)
 ### Instance Properties
-- [var decay: Double](mpsnnoptimizerrmsprop/decay.md)
-- [var epsilon: Float](mpsnnoptimizerrmsprop/epsilon.md)
+- [var decay: Double](./mpsnnoptimizerrmsprop/decay.md)
+- [var epsilon: Float](./mpsnnoptimizerrmsprop/epsilon.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationGradientState: MPSCNNBatchNormalizationState, batchNormalizationSourceState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerrmsprop/encode(commandbuffer:batchnormalizationgradientstate:batchnormalizationsourcestate:inputsumofsquaresvectors:resultstate:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](mpsnnoptimizerrmsprop/encode(commandbuffer:batchnormalizationstate:inputsumofsquaresvectors:resultstate:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, convolutionGradientState: MPSCNNConvolutionGradientState, convolutionSourceState: MPSCNNConvolutionWeightsAndBiasesState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNConvolutionWeightsAndBiasesState)](mpsnnoptimizerrmsprop/encode(commandbuffer:convolutiongradientstate:convolutionsourcestate:inputsumofsquaresvectors:resultstate:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientMatrix: MPSMatrix, inputValuesMatrix: MPSMatrix, inputSumOfSquaresMatrix: MPSMatrix, resultValuesMatrix: MPSMatrix)](mpsnnoptimizerrmsprop/encode(commandbuffer:inputgradientmatrix:inputvaluesmatrix:inputsumofsquaresmatrix:resultvaluesmatrix:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputSumOfSquaresVector: MPSVector, resultValuesVector: MPSVector)](mpsnnoptimizerrmsprop/encode(commandbuffer:inputgradientvector:inputvaluesvector:inputsumofsquaresvector:resultvaluesvector:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationGradientState: MPSCNNBatchNormalizationState, batchNormalizationSourceState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](./mpsnnoptimizerrmsprop/encode%28commandbuffer,batchnormalizationgradientstate,batchnormalizationsourcestate,inputsumofsquaresvectors,resultstate%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNNormalizationGammaAndBetaState)](./mpsnnoptimizerrmsprop/encode%28commandbuffer,batchnormalizationstate,inputsumofsquaresvectors,resultstate%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, convolutionGradientState: MPSCNNConvolutionGradientState, convolutionSourceState: MPSCNNConvolutionWeightsAndBiasesState, inputSumOfSquaresVectors: [MPSVector]?, resultState: MPSCNNConvolutionWeightsAndBiasesState)](./mpsnnoptimizerrmsprop/encode%28commandbuffer,convolutiongradientstate,convolutionsourcestate,inputsumofsquaresvectors,resultstate%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientMatrix: MPSMatrix, inputValuesMatrix: MPSMatrix, inputSumOfSquaresMatrix: MPSMatrix, resultValuesMatrix: MPSMatrix)](./mpsnnoptimizerrmsprop/encode%28commandbuffer,inputgradientmatrix,inputvaluesmatrix,inputsumofsquaresmatrix,resultvaluesmatrix%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputGradientVector: MPSVector, inputValuesVector: MPSVector, inputSumOfSquaresVector: MPSVector, resultValuesVector: MPSVector)](./mpsnnoptimizerrmsprop/encode%28commandbuffer,inputgradientvector,inputvaluesvector,inputsumofsquaresvector,resultvaluesvector%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNOptimizer](mpsnnoptimizer.md)
+- [MPSNNOptimizer](./mpsnnoptimizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSNNOptimizerAdam](mpsnnoptimizeradam.md)
+### Optimization Layers
+- [class MPSNNOptimizerAdam](./mpsnnoptimizeradam.md)
   An optimization layer that performs an Adam pdate.
-- [class MPSNNOptimizerStochasticGradientDescent](mpsnnoptimizerstochasticgradientdescent.md)
+- [class MPSNNOptimizerStochasticGradientDescent](./mpsnnoptimizerstochasticgradientdescent.md)
   An optimization layer that performs a gradient descent with an optional momentum update.
-- [class MPSNNOptimizer](mpsnnoptimizer.md)
+- [class MPSNNOptimizer](./mpsnnoptimizer.md)
   The base class for optimization layers.
-- [class MPSNNOptimizerDescriptor](mpsnnoptimizerdescriptor.md)
+- [class MPSNNOptimizerDescriptor](./mpsnnoptimizerdescriptor.md)
   An object that specifies properties used by an optimizer kernel.
 
 

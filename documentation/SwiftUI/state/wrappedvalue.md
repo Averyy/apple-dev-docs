@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the state variable.
 
@@ -40,7 +41,8 @@ struct PlayButton: View {
 
 ## See Also
 
-- [var projectedValue: Binding<Value>](state/projectedvalue.md)
+### Getting the value
+- [var projectedValue: Binding<Value>](./projectedvalue.md)
   A binding to the state value.
 
 

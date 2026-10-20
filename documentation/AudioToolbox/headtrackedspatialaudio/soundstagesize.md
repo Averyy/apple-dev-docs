@@ -1,7 +1,8 @@
 # soundStageSize
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The experience’s sound stage size.
 

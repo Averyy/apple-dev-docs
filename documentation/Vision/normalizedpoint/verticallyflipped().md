@@ -1,7 +1,8 @@
 # verticallyFlipped()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a normalized point with the origin flipped between the top and bottom of the image.
 

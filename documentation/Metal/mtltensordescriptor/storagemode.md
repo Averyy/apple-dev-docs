@@ -1,7 +1,8 @@
 # storageMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that configures the memory location and access permissions of tensors you create with this descriptor.
 
@@ -19,9 +20,13 @@ A value that configures the memory location and access permissions of tensors yo
 var storageMode: MTLStorageMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLStorageMode storageMode;
+```
+
 #### Discussion
 
-The default value of this property is [`MTLStorageMode.shared`](mtlstoragemode/shared.md).
+The default value of this property is [`MTLStorageMode.shared`](../mtlstoragemode/shared.md).
 
 
 ---

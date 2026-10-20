@@ -1,7 +1,8 @@
 # allowsCollapsing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the item can be collapsed.
 
@@ -14,15 +15,20 @@ A Boolean value that specifies whether the item can be collapsed.
 var allowsCollapsing: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsCollapsing;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the candidate list item can be collapsed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+When [`true`](../../Swift/true.md), the candidate list item can be collapsed, [`false`](../../Swift/false.md) otherwise.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isCollapsed: Bool](nscandidatelisttouchbaritem/iscollapsed.md)
+### Handling collapsible behavior
+- [var isCollapsed: Bool](./iscollapsed.md)
   A Boolean value that controls the visibility of the candidate list.
 
 

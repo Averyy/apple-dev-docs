@@ -1,17 +1,22 @@
 # size
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image representation, measured in points in the user coordinate space.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var size: NSSize { get set }
+```
+
+```objc
+@property NSSize size;
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ The size of an image representation combined with the physical dimensions of the
 
 ## See Also
 
-- [var pixelsHigh: Int](nsimagerep/pixelshigh.md)
+### Related Documentation
+- [var pixelsHigh: Int](./pixelshigh.md)
   The height of the image, measured in pixels.
-- [var pixelsWide: Int](nsimagerep/pixelswide.md)
+- [var pixelsWide: Int](./pixelswide.md)
   The width of the image, measured in pixels.
-- [func draw() -> Bool](nsimagerep/draw.md)
+- [func draw() -> Bool](./draw%28%29.md)
   Implemented by subclasses to draw the image in the current coordinate system.
 
 

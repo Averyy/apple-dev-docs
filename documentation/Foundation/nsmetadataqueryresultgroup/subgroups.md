@@ -1,7 +1,8 @@
 # subgroups
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the result group’s subgroups.
 
@@ -20,17 +21,22 @@ An array containing the result group’s subgroups.
 var subgroups: [NSMetadataQueryResultGroup]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSMetadataQueryResultGroup *> * subgroups;
+```
+
 ## See Also
 
-- [var attribute: String](nsmetadataqueryresultgroup/attribute.md)
+### Getting Query Results
+- [var attribute: String](./attribute.md)
   The result group’s attribute name.
-- [var value: Any](nsmetadataqueryresultgroup/value.md)
+- [var value: Any](./value.md)
   The result group’s value.
-- [var results: [Any]](nsmetadataqueryresultgroup/results.md)
+- [var results: [Any]](./results.md)
   An array containing the result group’s result objects.
-- [var resultCount: Int](nsmetadataqueryresultgroup/resultcount.md)
+- [var resultCount: Int](./resultcount.md)
   The number of results returned by the result group.
-- [func result(at: Int) -> Any](nsmetadataqueryresultgroup/result(at:).md)
+- [func result(at: Int) -> Any](./result%28at%29.md)
   Returns the query result at a specific index.
 
 

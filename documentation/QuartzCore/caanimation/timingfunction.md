@@ -1,7 +1,8 @@
 # timingFunction
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional timing function defining the pacing of the animation.
 
@@ -19,13 +20,18 @@ An optional timing function defining the pacing of the animation.
 var timingFunction: CAMediaTimingFunction? { get set }
 ```
 
+```objc
+@property (strong, nullable) CAMediaTimingFunction * timingFunction;
+```
+
 #### Discussion
 
 Defaults to `nil`, indicating linear pacing.
 
 ## See Also
 
-- [var isRemovedOnCompletion: Bool](caanimation/isremovedoncompletion.md)
+### Animation Attributes
+- [var isRemovedOnCompletion: Bool](./isremovedoncompletion.md)
   Determines if the animation is removed from the target layer’s animations upon completion.
 
 

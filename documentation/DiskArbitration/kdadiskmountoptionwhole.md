@@ -1,7 +1,8 @@
 # kDADiskMountOptionWhole
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Mount the volumes tied to the whole disk object.
 
@@ -13,6 +14,10 @@ Mount the volumes tied to the whole disk object.
 
 ```swift
 var kDADiskMountOptionWhole: Int { get }
+```
+
+```c
+kDADiskMountOptionWhole
 ```
 
 

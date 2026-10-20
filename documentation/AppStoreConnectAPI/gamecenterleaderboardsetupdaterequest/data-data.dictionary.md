@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a leaderboard.
 
@@ -10,21 +11,21 @@ The request body you use to update a leaderboard.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardSetUpdateRequest.Data.Attributes](gamecenterleaderboardsetupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardSetUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a leaderboard resource.
 
 ## Properties
 
 - `attributes` (GameCenterLeaderboardSetUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSets`
 
 
 ---

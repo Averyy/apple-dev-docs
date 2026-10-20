@@ -1,18 +1,19 @@
 # init(red_x:green_x:blue_x:white_x:red_y:green_y:blue_y:white_y:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that represents the specified chromaticity of primaries defining a color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -37,7 +38,8 @@ A new RGB primaries structure.
 
 ## See Also
 
-- [init()](vimagergbprimaries/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates an empty RGB primaries structure.
 
 

@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting time and date for this workout session.
 
@@ -9,7 +10,7 @@ The starting time and date for this workout session.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,19 +20,24 @@ The starting time and date for this workout session.
 var startDate: Date? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDate * startDate;
+```
+
 #### Discussion
 
-This property is set to `nil` when the workout session is initialized. The system assigns a start date when the session’s state changes to [`HKWorkoutSessionState.running`](hkworkoutsessionstate/running.md).
+This property is set to `nil` when the workout session is initialized. The system assigns a start date when the session’s state changes to [`HKWorkoutSessionState.running`](../hkworkoutsessionstate/running.md).
 
 ## See Also
 
-- [var endDate: Date?](hkworkoutsession/enddate.md)
+### Accessing session data
+- [var endDate: Date?](./enddate.md)
   The ending time and date for this workout session.
-- [var state: HKWorkoutSessionState](hkworkoutsession/state.md)
+- [var state: HKWorkoutSessionState](./state.md)
   The workout session’s current state.
-- [var type: HKWorkoutSessionType](hkworkoutsession/type.md)
+- [var type: HKWorkoutSessionType](./type.md)
   A value that indicates whether the session is a primary session or a mirrored session.
-- [var workoutConfiguration: HKWorkoutConfiguration](hkworkoutsession/workoutconfiguration.md)
+- [var workoutConfiguration: HKWorkoutConfiguration](./workoutconfiguration.md)
   The configuration object that describes this workout.
 
 

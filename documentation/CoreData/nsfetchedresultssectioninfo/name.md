@@ -2,18 +2,19 @@
 
 **Framework**: Core Data  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the section.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,9 +22,14 @@ The name of the section.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var indexTitle: String?](nsfetchedresultssectioninfo/indextitle.md)
+### Accessing the Name and Title
+- [var indexTitle: String?](./indextitle.md)
   The index title of the section.
 
 

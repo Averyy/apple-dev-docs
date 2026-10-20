@@ -1,7 +1,8 @@
 # feathered(padding:softEdgeRadius:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A feathered background effect with custom padding and soft edge radius.
 
@@ -13,6 +14,8 @@ A feathered background effect with custom padding and soft edge radius.
 ```swift
 static func feathered(padding length: CGFloat, softEdgeRadius: CGFloat? = nil) -> FeatheredGlassBackgroundEffect
 ```
+
+Available when `Self` is `FeatheredGlassBackgroundEffect`.
 
 #### Return Value
 

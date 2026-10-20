@@ -1,10 +1,11 @@
 # kAUNetSendParam_NumParameters
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAUNetSendParam_NumParameters: AudioUnitParameterID { get }
 ```
 
+```c
+kAUNetSendParam_NumParameters
+```
+
 ## See Also
 
-- [var kAUNetSendParam_Status: AudioUnitParameterID](kaunetsendparam_status.md)
+### Constants
+- [var kAUNetSendParam_Status: AudioUnitParameterID](./kaunetsendparam_status.md)
 
 
 ---

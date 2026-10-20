@@ -1,7 +1,8 @@
 # guidedGeneration
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The capability to ensure model output conforms to a given generation schema.
 
@@ -21,11 +22,12 @@ static var guidedGeneration: LanguageModelCapabilities.Capability { get }
 
 ## See Also
 
-- [static var reasoning: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/reasoning.md)
+### Accessing model capabilities
+- [static var reasoning: LanguageModelCapabilities.Capability](./reasoning.md)
   The capability to reason, structurally separately from producing a response.
-- [static var toolCalling: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/toolcalling.md)
+- [static var toolCalling: LanguageModelCapabilities.Capability](./toolcalling.md)
   The capability to call tools to gather information or trigger side effects.
-- [static var vision: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/vision.md)
+- [static var vision: LanguageModelCapabilities.Capability](./vision.md)
   The capability to accept image inputs in prompts.
 
 

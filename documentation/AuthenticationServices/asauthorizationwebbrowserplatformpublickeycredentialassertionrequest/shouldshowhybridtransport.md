@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
@@ -18,9 +19,14 @@ Whether a remote authenticator that communicates with the operating system using
 var shouldShowHybridTransport: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldShowHybridTransport;
+```
+
 ## See Also
 
-- [var clientData: ASPublicKeyCredentialClientData?](asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi.md)
+### Information about the assertion
+- [var clientData: ASPublicKeyCredentialClientData?](./clientdata-655pi.md)
   The client data to supply to the relying party.
 
 

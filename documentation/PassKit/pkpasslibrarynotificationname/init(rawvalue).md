@@ -1,17 +1,18 @@
 # init(rawValue:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pass library notification name according to the provided raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](pkpasslibrarynotificationname/init(_:).md)
+### Creating a pass library notification name
+- [init(String)](./init%28_%29.md)
   Creates a pass library notification name according to the provided string.
 
 

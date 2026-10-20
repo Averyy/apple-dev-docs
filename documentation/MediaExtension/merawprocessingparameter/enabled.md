@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the extension enables the parameter.
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the extension enables the parameter.
 var enabled: Bool { get set }
 ```
 
+```objc
+@property (readwrite) BOOL enabled;
+```
+
 #### Discussion
 
 This parameter can only be modified by the extension. From the application-facing interface, `VTRAWProcessingSession`, this is a read-only value which indicates whether the parameter should be grayed out and disabled in any UI being generated.
 
 ## See Also
 
-- [var key: String](merawprocessingparameter/key.md)
+### Inspecting a processing parameter
+- [var key: String](./key.md)
   A unique key string identifying the parameter.
-- [var longDescription: String](merawprocessingparameter/longdescription.md)
+- [var longDescription: String](./longdescription.md)
   A localized description of the parameter, suitable for displaying in a tool tip or similar explanatory UI.
-- [var name: String](merawprocessingparameter/name.md)
+- [var name: String](./name.md)
   A localized human-readable name for the parameter, suitable for displaying in application UI.
 
 

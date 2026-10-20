@@ -1,33 +1,34 @@
 # Apple Pay Merchant Token Usage Information API
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 Add details about your merchant token usage information package.
 
 ## Topics
 
 ### Essentials
-- [Adding merchant token usage information](../applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information.md)
+- [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
   Create directories and add files, images, and localization for your merchant token usage information package.
 ### Getting the currency amount
-- [object CurrencyAmount](currencyamount.md)
+- [object CurrencyAmount](./currencyamount.md)
   An amount of money.
 ### Getting payment details
-- [object AutomaticReloadPaymentDetails](automaticreloadpaymentdetails.md)
+- [object AutomaticReloadPaymentDetails](./automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object DeferredPaymentDetails](deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](./deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](pastpayment.md)
+- [object PastPayment](./pastpayment.md)
   A past payment.
-- [object PaymentIssueDetails](paymentissuedetails.md)
+- [object PaymentIssueDetails](./paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](./recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](upcomingpayment.md)
+- [object UpcomingPayment](./upcomingpayment.md)
   An upcoming payment.
 ### Getting usage information
-- [object UsageInformation](usageinformation.md)
+- [object UsageInformation](./usageinformation.md)
   Information about the usage of a merchant token, such as past and upcoming payments.
 
 

@@ -1,7 +1,8 @@
 # AVMediaDataStorage
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the media sample data storage file.
 
@@ -19,30 +20,34 @@ An object that represents the media sample data storage file.
 class AVMediaDataStorage
 ```
 
+```objc
+@interface AVMediaDataStorage : NSObject
+```
+
 ## Topics
 
 ### Creating media data storage
-- [init(url: URL, options: [String : Any]?)](avmediadatastorage/init(url:options:)-5cv8s.md)
+- [init(url: URL, options: [String : Any]?)](./avmediadatastorage/init%28url,options%29-5cv8s.md)
   Creates a media data storage object associated with a file URL.
 ### Accessing the URL
-- [func url() -> URL?](avmediadatastorage/url.md)
+- [func url() -> URL?](./avmediadatastorage/url%28%29.md)
   Returns the URL used to initialize the receiver.
 ### Initializers
-- [init(URL: URL, options: [String : Any]?)](avmediadatastorage/init(url:options:)-3xxug.md)
+- [init(URL: URL, options: [String : Any]?)](./avmediadatastorage/init%28url,options%29-3xxug.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

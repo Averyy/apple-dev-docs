@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of anchor updates that describe the anchors in a person’s surroundings.
 
@@ -16,9 +17,10 @@ final var anchorUpdates: AnchorUpdateSequence<BarcodeAnchor> { get }
 
 ## See Also
 
-- [var description: String](barcodedetectionprovider/description.md)
+### Inspecting a barcode detection provider
+- [var description: String](./description.md)
   A textual representation of this barcode detection provider.
-- [var state: DataProviderState](barcodedetectionprovider/state.md)
+- [var state: DataProviderState](./state.md)
   The state of a barcode detection provider.
 
 

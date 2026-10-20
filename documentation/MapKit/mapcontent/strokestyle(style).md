@@ -1,7 +1,8 @@
 # strokeStyle(style:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given stroke style to drawn map overlays.
 
@@ -11,7 +12,7 @@ Applies the given stroke style to drawn map overlays.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ Applies the given stroke style to drawn map overlays.
 
 #### Return Value
 
-Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`StrokeStyle`](https://developer.apple.com/documentation/swiftui/strokestyle) you specified.
+Returns [`MapContent`](../mapcontent.md) with overlays drawn with the [`StrokeStyle`](../../SwiftUI/strokestyle.md) you specified.
 
 ## Parameters
 
@@ -31,13 +32,14 @@ Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`StrokeStyle
 
 ## See Also
 
-- [func foregroundStyle(some ShapeStyle) -> some MapContent](mapcontent/foregroundstyle(_:).md)
+### Styling the circle
+- [func foregroundStyle(some ShapeStyle) -> some MapContent](./foregroundstyle%28_%29.md)
   Specifies the shape style used to fill content in drawing map overlays.
-- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
+- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](./stroke%28_,linewidth%29.md)
   Applies the given shape style to drawn map overlays using the line width you specify.
-- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](mapcontent/stroke(_:style:).md)
+- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](./stroke%28_,style%29.md)
   Applies the given shape style to drawn map overlays using the stroke style you specify.
-- [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)
+- [func stroke(lineWidth: CGFloat) -> some MapContent](./stroke%28linewidth%29.md)
   Applies the given stoke drawn map overlays using the line width you specify.
 
 

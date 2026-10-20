@@ -1,7 +1,8 @@
 # deadFrontBehavior
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.2+
@@ -16,6 +17,10 @@
 
 ```swift
 static var deadFrontBehavior: MTROnOffFeature { get }
+```
+
+```c
+MTROnOffFeatureDeadFrontBehavior
 ```
 
 

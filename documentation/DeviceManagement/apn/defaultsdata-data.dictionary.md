@@ -1,30 +1,33 @@
 # APN.DefaultsData
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 An array of access point name dictionaries.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 4.0+
+- iOS 4.0+ - Deprecated in 7.0
+- iPadOS 4.0+ - Deprecated in 7.0
+- Mac Catalyst 4.0+ - Deprecated in 7.0
 
 ## Declaration
 
-```swift
+```
 object APN.DefaultsData
 ```
 
 ## Topics
 
 ### Objects
-- [object APN.DefaultsData.ApnsItem](apn/defaultsdata-data.dictionary/apnsitem.md)
+- [object APN.DefaultsData.ApnsItem](./defaultsdata-data.dictionary/apnsitem.md)
   A dictionary that describes an APN configuration.
 
 ## Properties
 
-- `apns` ([APN.DefaultsData.ApnsItem]) *(required)*: An array of APN dictionaries. Deprecated: iOS 7+ | iPadOS 7+
+- `apns` ([APN.DefaultsData.ApnsItem]) *(required)* *(deprecated)*: An array of APN dictionaries.
+
+  Deprecated: iOS 7+ | iPadOS 7+
 
 
 ---

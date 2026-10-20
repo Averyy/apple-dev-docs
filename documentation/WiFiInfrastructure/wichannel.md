@@ -1,7 +1,8 @@
 # WIChannel
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A WiFi Channel.
 
@@ -19,32 +20,33 @@ struct WIChannel
 ## Topics
 
 ### Instance Properties
-- [let band: WIChannel.Band](wichannel/band-swift.property.md)
+- [let band: WIChannel.Band](./wichannel/band-swift.property.md)
   The Wi-Fi band of a given channel.
-- [var description: String](wichannel/description.md)
+- [var description: String](./wichannel/description.md)
   A string description of the channel, for debugging.
-- [let number: Int](wichannel/number.md)
+- [let number: Int](./wichannel/number.md)
   The channel number.
 ### Enumerations
-- [WIChannel.Band](wichannel/band-swift.enum.md)
+- [WIChannel.Band](./wichannel/band-swift.enum.md)
   The Wi-Fi band of a given channel.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WISSID](wissid.md)
+### Common data
+- [struct WISSID](./wissid.md)
   The Service Set Identifier (SSID) for a Wi-Fi network, from which applications derive the human-readable network name.
-- [struct WIMACAddress](wimacaddress.md)
+- [struct WIMACAddress](./wimacaddress.md)
   A Wi-Fi MAC Address.
 
 

@@ -1,7 +1,8 @@
 # fulfill()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the expectation as having been met.
 
@@ -9,6 +10,10 @@ Marks the expectation as having been met.
 
 ```swift
 func fulfill()
+```
+
+```objc
+- (void) fulfill;
 ```
 
 #### Discussion

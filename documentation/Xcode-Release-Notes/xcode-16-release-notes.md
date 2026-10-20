@@ -1,6 +1,7 @@
 # Xcode 16 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -21,9 +22,13 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Copy and paste from the build settings editor now uses xcconfig file syntax.  (14333348) (FB5925390)
 - The Project Navigator’s “Open As” context menu now supports choosing default editors per file type  (24666459)
 - Xcode 16 includes predictive code completion, powered by a machine learning model specifically trained for Swift and Apple SDKs. Predictive code completion requires a Mac with Apple silicon, running macOS 15.  (116310768)
-- xcodebuild supports importing and exporting a downloaded platform to on disk. The simulator disk image can be exported to disk, so that it can be applied to Xcode installations on other machines that require the simulator runtime, without needing to redownload. There is an optional `-exportPath` argument for `xcodebuild -downloadAllPlatforms [-exportPath <pathToSave/>]` and `xcodebuild -downloadPlatform <platformName> [-exportPath <pathToSave/>]`. Example: ```None
- xcodebuild -downloadPlatform iOS -exportPath ~/MySimulators/
-``` To import, run `xcodebuild -importPlatform <pathToSimulator.dmg>`, note that `xcrun simctl runtime add <pathToSimulator.dmg>` also works.  (129189162)
+- xcodebuild supports importing and exporting a downloaded platform to on disk. The simulator disk image can be exported to disk, so that it can be applied to Xcode installations on other machines that require the simulator runtime, without needing to redownload. There is an optional `-exportPath` argument for `xcodebuild -downloadAllPlatforms [-exportPath <pathToSave/>]` and `xcodebuild -downloadPlatform <platformName> [-exportPath <pathToSave/>]`. Example:
+
+  ```
+   xcodebuild -downloadPlatform iOS -exportPath ~/MySimulators/
+  ```
+
+  To import, run `xcodebuild -importPlatform <pathToSimulator.dmg>`, note that `xcrun simctl runtime add <pathToSimulator.dmg>` also works.  (129189162)
 
 ###### Resolved Issues
 
@@ -44,14 +49,22 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Xcode 16 beta 5 may crash when opening Source Editor if running macOS Sequoia, beta 4 or older.   (130609632) **Workaround:** Install macOS Sequoia beta 5.
-- Users that upgrade to Xcode 16 after having previously installed Xcode 16 Beta 6 or Xcode 16 RC may experience Developer Disk Image mounting errors when using iPhone 16 or Apple Watch Series 10 devices.  (136364979) (FB15189777) **Workaround:** Open Terminal.app and run ```None
- sudo installer -pkg /Applications/Xcode.app/Contents/Resources/Packages/XcodeSystemResources.pkg -target /
-``` (replacing the path to Xcode 16 if necessary.)
+- Xcode 16 beta 5 may crash when opening Source Editor if running macOS Sequoia, beta 4 or older.   (130609632)
+
+  **Workaround:** Install macOS Sequoia beta 5.
+- Users that upgrade to Xcode 16 after having previously installed Xcode 16 Beta 6 or Xcode 16 RC may experience Developer Disk Image mounting errors when using iPhone 16 or Apple Watch Series 10 devices.  (136364979) (FB15189777)
+
+  **Workaround:** Open Terminal.app and run
+
+  ```
+   sudo installer -pkg /Applications/Xcode.app/Contents/Resources/Packages/XcodeSystemResources.pkg -target /
+  ```
+
+  (replacing the path to Xcode 16 if necessary.)
 
 ###### Deprecations
 
-- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [`Installing and managing Simulator runtimes`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes).  (133776444)
+- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [Installing and managing Simulator runtimes](../Xcode/installing-additional-simulator-runtimes.md).  (133776444)
 
 ##### App Distribution
 
@@ -63,30 +76,44 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### New Features
 
-- For a re-exported module, Clang now looks for API Notes in the re-exporting module’s apinotes file. For example: ```None
- module ExportAsCore {
-   header "ExportAsCore.h"
-   export_as ExportAs
- }
- 
- module ExportAs {
-   header "ExportAs.h"
-   export *
- }
-``` Clang now allows declaring API Notes for symbols from ExportAsCore module in ExportAs.apinotes file.  (121680760)
-- The following C++26 features have been implemented: - Remove undefined behavior from lexing. ([`P2621R2 (DR)`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2621r2.pdf))
-- Making non-encodable string literals ill-formed ([`P1854R4 (DR)`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p1854r4.pdf)).
-- Add @, $, and ` to the basic character set ([`P2558R2`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2558r2.html)).
-- Unevaluated strings ([`P2361R6`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2361r6.pdf)) The following C++23 features have been implemented: - The Equality Operator You Are Looking For. ([`P2468R2`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2468r2.html))
-- Labels at the end of compound statements. ([`P2324R2`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2324r2.pdf))
-- static operator(). ([`P1169R4`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html))
-- char8_t Compatibility and Portability Fix. ([`P2513R3`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2513r3.html))
-- static operator[]. ([`P2589R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf))
-- Permitting static constexpr variables in constexpr functions. ([`P2647R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html))
-- consteval needs to propagate up. ([`P2564R3(DR)`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2564r3.html))
-- Referencing The Unicode Standard. ([`P2736R2`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2736r2.pdf)) The following C++20 features have been implemented: - typename optional in more contexts.([`P0634R3`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0634r3.html))
-- Structured binding extensions. ([`P1091R3`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html), [`P1381R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1381r1.html))
-- Parenthesized initialization of aggregates. ([`P0960R3`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0960r3.html), [`P1975R0`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1975r0.html))  (128912178)
+- For a re-exported module, Clang now looks for API Notes in the re-exporting module’s apinotes file. For example:
+
+  ```
+   module ExportAsCore {
+     header "ExportAsCore.h"
+     export_as ExportAs
+   }
+   
+   module ExportAs {
+     header "ExportAs.h"
+     export *
+   }
+  ```
+
+  Clang now allows declaring API Notes for symbols from ExportAsCore module in ExportAs.apinotes file.  (121680760)
+- The following C++26 features have been implemented:
+
+  - Remove undefined behavior from lexing. ([P2621R2 (DR)](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2621r2.pdf))
+  - Making non-encodable string literals ill-formed ([P1854R4 (DR)](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p1854r4.pdf)).
+  - Add @, $, and ` to the basic character set ([P2558R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2558r2.html)).
+  - Unevaluated strings ([P2361R6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2361r6.pdf))
+
+  The following C++23 features have been implemented:
+
+  - The Equality Operator You Are Looking For. ([P2468R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2468r2.html))
+  - Labels at the end of compound statements. ([P2324R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2324r2.pdf))
+  - static operator(). ([P1169R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html))
+  - char8_t Compatibility and Portability Fix. ([P2513R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2513r3.html))
+  - static operator[]. ([P2589R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf))
+  - Permitting static constexpr variables in constexpr functions. ([P2647R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html))
+  - consteval needs to propagate up. ([P2564R3(DR)](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2564r3.html))
+  - Referencing The Unicode Standard. ([P2736R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2736r2.pdf))
+
+  The following C++20 features have been implemented:
+
+  - typename optional in more contexts.([P0634R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0634r3.html))
+  - Structured binding extensions. ([P1091R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html), [P1381R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1381r1.html))
+  - Parenthesized initialization of aggregates. ([P0960R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0960r3.html), [P1975R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1975r0.html))  (128912178)
 
 ###### Resolved Issues
 
@@ -131,42 +158,50 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### New Features
 
-- You can now turn on C++ Standard Library hardening in the Build Settings. Turning on hardening enables checks for common cases of misuse of the standard library APIs; if a check fails, the program is reliably terminated, helping prevent security vulnerabilities and diagnose some cases of undefined behavior. The library provides several hardening modes, including low-overhead modes that can be used in production. For more details, please refer to the [`hardening documentation`](https://developer.apple.comhttps://developer.apple.com/xcode/cpp/#library-hardening). - Note that turning on hardening might expose latent bugs in your code and cause it to terminate at runtime. Please make sure to fix any issues exposed by hardening in your code in a development environment before turning it on in production. The following new features and enhancements have been implemented: - [`P0020R6`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html) — Floating Point Atomic
-- [`P2443R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2443r1.html) — `views::chunk_by`
-- [`P2821R5`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2821r5.html) — `span.at()`
-- [`P1659R3`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1659r3.html) — `starts_with` and `ends_with`
-- [`P2302R4`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2302r4.html) — `std::ranges::contains` (note: `std::ranges::contains_subrange` not implemented yet)
-- [`P0543R3`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p0543r3.html) — Saturation arithmetic
-- [`P2905R2`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2905r2.html) — Runtime format strings
-- [`P2918R2`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2918r2.html) — Runtime format strings II
-- [`P2447R6`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2447r6.html) — `std::span` over an initializer list
-- [`P1759R6`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p1759r6.html) — Native handles and file streams
-- [`P2467R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2467r1.html) — Support exclusive mode for fstreams
-- [`P2697R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2697r1.pdf) — Interfacing `bitset` with `string_view`
-- [`P2497R0`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2497r0.html) — Testing for success or failure of `<charconv>` functions
-- [`P2538R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2538r1.html) — ADL-proof `std::projected`
-- [`P2909R4`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2909r4.html) — Fix formatting of code units as integers (Dude, where’s my char?)
-- [`P2517R1`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2517r1.html) — Add a conditional noexcept specification to `std::apply`
-- [`P2539R4`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2539r4.html) — Should the output of `std::print` to a terminal be synchronized with the underlying stream?  (128950351)
+- You can now turn on C++ Standard Library hardening in the Build Settings. Turning on hardening enables checks for common cases of misuse of the standard library APIs; if a check fails, the program is reliably terminated, helping prevent security vulnerabilities and diagnose some cases of undefined behavior. The library provides several hardening modes, including low-overhead modes that can be used in production. For more details, please refer to the [hardening documentation](https://developer.apple.com/xcode/cpp/#library-hardening).
+
+  - Note that turning on hardening might expose latent bugs in your code and cause it to terminate at runtime. Please make sure to fix any issues exposed by hardening in your code in a development environment before turning it on in production.
+
+  The following new features and enhancements have been implemented:
+
+  - [P0020R6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html) — Floating Point Atomic
+  - [P2443R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2443r1.html) — `views::chunk_by`
+  - [P2821R5](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2821r5.html) — `span.at()`
+  - [P1659R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1659r3.html) — `starts_with` and `ends_with`
+  - [P2302R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2302r4.html) — `std::ranges::contains` (note: `std::ranges::contains_subrange` not implemented yet)
+  - [P0543R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p0543r3.html) — Saturation arithmetic
+  - [P2905R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2905r2.html) — Runtime format strings
+  - [P2918R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2918r2.html) — Runtime format strings II
+  - [P2447R6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2447r6.html) — `std::span` over an initializer list
+  - [P1759R6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p1759r6.html) — Native handles and file streams
+  - [P2467R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2467r1.html) — Support exclusive mode for fstreams
+  - [P2697R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2697r1.pdf) — Interfacing `bitset` with `string_view`
+  - [P2497R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2497r0.html) — Testing for success or failure of `<charconv>` functions
+  - [P2538R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2538r1.html) — ADL-proof `std::projected`
+  - [P2909R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2909r4.html) — Fix formatting of code units as integers (Dude, where’s my char?)
+  - [P2517R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2517r1.html) — Add a conditional noexcept specification to `std::apply`
+  - [P2539R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2539r4.html) — Should the output of `std::print` to a terminal be synchronized with the underlying stream?  (128950351)
 
 ###### Deprecations
 
-- The following items have been deprecated or removed: - Removed the type alias `allocator<T>::is_always_equal` in C++26 (P2868R3).
-- You can use the compatibility macro `_LIBCPP_ENABLE_CXX26_REMOVED_ALLOCATOR_MEMBERS` to make the alias available again.
-- Removed the `std::basic_string::reserve()` overload with no parameters in C++26. Use `shrink_to_fit` instead (P2870R3).
-- You can use the compatibility macro `_LIBCPP_ENABLE_CXX26_REMOVED_STRING_RESERVE` to make the header and its contents available again.
-- Removed header `<codecvt>` and all its contents in C++26 (P2871R3).
-- You can use the compatibility macro `_LIBCPP_ENABLE_CXX26_REMOVED_CODECVT` to make the header and its contents available again.
-- Removed `std::shared_ptr::unique`  in C++20 and later modes (P0619R4 section D.14).
-- You can use the compatibility macro `_LIBCPP_ENABLE_CXX20_REMOVED_SHARED_PTR_UNIQUE` to make the function available again.
-- Deprecated `std::numeric_limits::has_denorm` and `std::numeric_limits::has_denorm_loss` (P0619R4)
-- The non-standard constructor `std::future_error(std::error_code)` has been removed. Please use the `std::future_error(std::future_errc)` constructor provided in C++17 instead.
-- The headers `<experimental/deque>`, `<experimental/forward_list>`, `<experimental/list>`, `<experimental/map>`, `<experimental/memory_resource>`, `<experimental/regex>`, `<experimental/set>`, `<experimental/string>`, `<experimental/unordered_map>`, `<experimental/unordered_set>`, and `<experimental/vector>` have been removed as all their contents have been implemented in namespace `std` in previous releases.
-- Removed a code path from `std::variant` that led to narrowing conversions behaving in a non-standard way (now that [`P1957`](https://developer.apple.comhttps://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1957r2.html) has been implemented in the compiler). This can cause a visible behavior change in some code using `std::variant`’s constructor. As a temporary workaround, use the `_LIBCPP_ENABLE_NARROWING_CONVERSIONS_IN_VARIANT` macro that restores the previous behavior; this compatibility macro will be removed in a future release.
-- The macro `_LIBCPP_ENABLE_CXX20_REMOVED_ALLOCATOR_MEMBERS` has been deprecated and will be removed in a future release. This macro previously re-enabled redundant members of `std::allocator<T>` like `pointer`, `reference`, `rebind`, `address`, `max_size`, `construct`, `destroy`, and the two-argument overload of `allocate`. However, this led to the library being non-conforming due to incorrect constexpr-ness.
-- The macros `_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES` and `_LIBCPP_ENABLE_CXX20_REMOVED_FEATURES` have been deprecated and will be removed in a future release. These macros used to re-enable all features that were removed in the C++17 and C++20 standards. Instead of using these macros, please use the macros that re-enable individual features.  (128950615)
+- The following items have been deprecated or removed:
 
-##### Carplay Simulator
+  - Removed the type alias `allocator<T>::is_always_equal` in C++26 (P2868R3).
+  - You can use the compatibility macro `_LIBCPP_ENABLE_CXX26_REMOVED_ALLOCATOR_MEMBERS` to make the alias available again.
+  - Removed the `std::basic_string::reserve()` overload with no parameters in C++26. Use `shrink_to_fit` instead (P2870R3).
+  - You can use the compatibility macro `_LIBCPP_ENABLE_CXX26_REMOVED_STRING_RESERVE` to make the header and its contents available again.
+  - Removed header `<codecvt>` and all its contents in C++26 (P2871R3).
+  - You can use the compatibility macro `_LIBCPP_ENABLE_CXX26_REMOVED_CODECVT` to make the header and its contents available again.
+  - Removed `std::shared_ptr::unique`  in C++20 and later modes (P0619R4 section D.14).
+  - You can use the compatibility macro `_LIBCPP_ENABLE_CXX20_REMOVED_SHARED_PTR_UNIQUE` to make the function available again.
+  - Deprecated `std::numeric_limits::has_denorm` and `std::numeric_limits::has_denorm_loss` (P0619R4)
+  - The non-standard constructor `std::future_error(std::error_code)` has been removed. Please use the `std::future_error(std::future_errc)` constructor provided in C++17 instead.
+  - The headers `<experimental/deque>`, `<experimental/forward_list>`, `<experimental/list>`, `<experimental/map>`, `<experimental/memory_resource>`, `<experimental/regex>`, `<experimental/set>`, `<experimental/string>`, `<experimental/unordered_map>`, `<experimental/unordered_set>`, and `<experimental/vector>` have been removed as all their contents have been implemented in namespace `std` in previous releases.
+  - Removed a code path from `std::variant` that led to narrowing conversions behaving in a non-standard way (now that [P1957](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1957r2.html) has been implemented in the compiler). This can cause a visible behavior change in some code using `std::variant`’s constructor. As a temporary workaround, use the `_LIBCPP_ENABLE_NARROWING_CONVERSIONS_IN_VARIANT` macro that restores the previous behavior; this compatibility macro will be removed in a future release.
+  - The macro `_LIBCPP_ENABLE_CXX20_REMOVED_ALLOCATOR_MEMBERS` has been deprecated and will be removed in a future release. This macro previously re-enabled redundant members of `std::allocator<T>` like `pointer`, `reference`, `rebind`, `address`, `max_size`, `construct`, `destroy`, and the two-argument overload of `allocate`. However, this led to the library being non-conforming due to incorrect constexpr-ness.
+  - The macros `_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES` and `_LIBCPP_ENABLE_CXX20_REMOVED_FEATURES` have been deprecated and will be removed in a future release. These macros used to re-enable all features that were removed in the C++17 and C++20 standards. Instead of using these macros, please use the macros that re-enable individual features.  (128950615)
+
+##### CarPlay Simulator
 
 ###### New Features
 
@@ -178,7 +213,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Clang now supports generating code to call typed allocators. To enable this support for C allocation functions such as `malloc()` set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting to `YES`. For C++ allocations with `operator new`, set `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` to `YES`.  (132456928)
 
-##### Command Line Tools
+##### Command-line Tools
 
 ###### New Features
 
@@ -190,7 +225,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Fixed: An app might not be able to read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
 
-##### Create Ml
+##### Create ML
 
 ###### Resolved Issues
 
@@ -245,7 +280,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Xcode is sometimes unable to determine if developer mode is enabled when using a device over the network.  (131662031) (FB14298506) **Workaround:** Connect the device directly to the Mac using a USBC or Lightning cable, then place the device in airplane mode to force Xcode to use the deivce over the wired connection.  Once Xcode is successfully using the device over the wired connection, you can turn airplane mode back on, and Xcode will continue to use the wired connection.
+- Xcode is sometimes unable to determine if developer mode is enabled when using a device over the network.  (131662031) (FB14298506)
+
+  **Workaround:** Connect the device directly to the Mac using a USBC or Lightning cable, then place the device in airplane mode to force Xcode to use the deivce over the wired connection.  Once Xcode is successfully using the device over the wired connection, you can turn airplane mode back on, and Xcode will continue to use the wired connection.
 - If Xcode is unable to determine the state of developer mode on a device, it will report that developer mode is disabled, possibly leading to confusion if developer mode is actually enabled.  (133418906)
 
 ##### Documentation
@@ -267,8 +304,14 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Resolved Issues
 
-- Fixed: If meeting both of the following scenarios, your app may crash on launch on platforms earlier than the latest versions of the respective OS with errors indicating missing symbols in `NSDecimal`: - You use any of the following `NSDecimal` functions in Swift
-- You release an app compiled with Xcode 16, and the app runs on an OS version earlier than macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, or visionOS 2.0 Your app may also fail to compile if you use `NSDecimalString(_:_:)` in the app. **Note**: This does not affect apps calling these functions from Objective-C or apps running on the latest versions of the respective OS.  (133371820) (FB14696453)
+- Fixed: If meeting both of the following scenarios, your app may crash on launch on platforms earlier than the latest versions of the respective OS with errors indicating missing symbols in `NSDecimal`:
+
+  - You use any of the following `NSDecimal` functions in Swift
+  - You release an app compiled with Xcode 16, and the app runs on an OS version earlier than macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, or visionOS 2.0
+
+  Your app may also fail to compile if you use `NSDecimalString(_:_:)` in the app.
+
+  **Note**: This does not affect apps calling these functions from Objective-C or apps running on the latest versions of the respective OS.  (133371820) (FB14696453)
 
 ##### Instruments
 
@@ -278,8 +321,12 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Recording options for a document and Instruments are now available directly in the document window when starting from a template. Subsequent runs can be reconfigured using ‘Next Recording’ button available in the runs sidebar. (40923253)
 - ‘Data Mining’ popover in the new call tree has been redesigned, optimizing for adding more functions and displaying longer symbol names. (61782150)
 - Custom Instruments:  element can now be used to create aggregation of os-log and os-signpost backtraces. (66603961)
-- Instruments document window has a new sidebar that gives access and overview of all runs in the document. Runs in the sidebar can be renamed and removed using context menu actions. (103073589)
-- Runs in the trace document now store its zoom level and scroll position separately, making it easy to switch between them and preserve visualization context. (108528537)
+- Instruments document window has a new sidebar that gives access and overview of all runs in the document. Runs in the sidebar can be renamed and removed using context menu actions.
+
+  (103073589)
+- Runs in the trace document now store its zoom level and scroll position separately, making it easy to switch between them and preserve visualization context.
+
+  (108528537)
 - Improved the performance of `heap`, `leaks`, the Leaks instrument, and the Xcode memory graph debugger when analyzing processes which heavily use Swift.  (111248508)
 - ⌘. shortcut can now be used to stop a trace recording. (113574234)
 - The flame graph is a new alternate visualization mode in the new call tree. Zooming in shows lower-weighted functions, and hovering along the ruler at the top displays tooltips down the entire stack.  (115313793)
@@ -300,7 +347,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 ###### Known Issues
 
 - UI State of the new call tree is not being saved in trace documents. (113659508)
-- When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible. (116369374) **Workaround:** To apply functions again, remove all currently focused nodes using control in the “Jump Bar”.
+- When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible. (116369374)
+
+  **Workaround:** To apply functions again, remove all currently focused nodes using control in the “Jump Bar”.
 - “Top Functions” view is not available in the new call tree. (123702178)
 - Legacy call tree is still used in the following Instruments: Allocations, Leaks, CPU Counters when using arithmetic formulas, Sample Importer. (124118051)
 - Xcode Debugger fails to capture memory graph from processes running in watchOS Rosetta Simulator destinations.  (132023793)
@@ -389,7 +438,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Fixed: Lock Screen Quick Action buttons might disappear.  (128096099)
 
-##### Lockedcameracapture
+##### LockedCameraCapture
 
 ###### Resolved Issues
 
@@ -405,7 +454,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280) **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
+- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280)
+
+  **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
 - Apps launched via Lock Screen Quick Action buttons will not run the CameraCaptureIntent perform function.   (133404039)
 - Capture Extensions or apps launched via CameraCaptureIntent may erroneously crash with “AVCaptureEventInteraction not installed” reason  (133578610)
 
@@ -422,13 +473,13 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - The Metal Debugger now supports capturing a macOS app by pressing a keyboard shortcut.  (48403037)
 - The Xcode metal debugger adds support for metal-shaderconverter enabling source-level shader validation, debugging, and profiling for HLSL shaders  (116155434)
 
-##### Metal Offline Compiler
+##### Metal offline compiler
 
 ###### Resolved Issues
 
 - Fixed: Building GPU binaries using metal-tt with deployment targets prior to iOS 18 and macOS 15 has undefined behavior and can result in incorrect compilation or a crash  (129366607)
 
-##### Mps Graph Viewer
+##### MPS Graph Viewer
 
 ###### New Features
 
@@ -484,7 +535,11 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Xcode 16 introduces several new streamlined file creation workflows. Use “New Empty File” from the Project Navigator’s context menu to quickly create a new Swift file without any confirmation dialogs. Use Copy, Paste, and Duplicate from the Edit menu to create a new file from an existing file. Finally, you can cut text from the Source Editor, and then use the “New File from Clipboard” command while holding the option key in the Project Navigator’s context menu to quickly extract part of a source file into a new file.  (96547991)
 - The Xcode target editor now only shows major OS versions in the list of suggested deployment target versions.  (118566415)
 - You can now configure Supported Destinations, Bundle Identifier, Version and Build numbers, and several other attributes for all supported target types in the Xcode project editor, including frameworks, app extensions, watchOS apps, and more.  (122243197)
-- Minimize project file changes, and avoid version control conflicts with buildable folder references. Convert an existing group to a buildable folder with the “Convert to Folder” context menu item in the Project Navigator.  Buildable folders only record the folder path into the project file without enumerating the contained files. This minimizes diffs to the project when files are added and removed, and avoids source control conflicts with your team. To use a folder as an opaque copiable resource, the default behavior before Xcode 16, uncheck the “Build Folder Contents” option in the File Inspector.  (123729918)
+- Minimize project file changes, and avoid version control conflicts with buildable folder references.
+
+  Convert an existing group to a buildable folder with the “Convert to Folder” context menu item in the Project Navigator.  Buildable folders only record the folder path into the project file without enumerating the contained files. This minimizes diffs to the project when files are added and removed, and avoids source control conflicts with your team.
+
+  To use a folder as an opaque copiable resource, the default behavior before Xcode 16, uncheck the “Build Folder Contents” option in the File Inspector.  (123729918)
 - The Project Navigator now defaults to creating groups with associated folders when using the “New Group” and “New Group from Selection” commands. To create a group without a folder, hold option in the context menu to reveal the “New Group without Folder” variant of the command.  (127396845)
 
 ###### Resolved Issues
@@ -496,7 +551,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Resolved Issues
 
-- Fixed: The Swift Migrator (Edit > Convert > To Current Swift Syntax) has been removed. For more information, see [`Migrating to Swift 6`](https://developer.apple.comhttp://swift.org/migration).  (123486127)
+- Fixed: The Swift Migrator (Edit > Convert > To Current Swift Syntax) has been removed. For more information, see [Migrating to Swift 6](http://swift.org/migration).  (123486127)
 - Fixed: xcodebuild now validates the format version number of Xcode projects for compatibility when performing builds.  (125385745)
 
 ##### Quick Actions
@@ -526,7 +581,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Modifying animation action parameters may result in actions overlapping with other actions on the same animation track.  (124014280)
 - Fixed: Using the option *Convert Variants to Configurations* may results in a compilation failure of Reality Composer Pro projects.  (125624179)
 - Fixed: Dragging an animation clip from an Animation Library component to a Timeline will result in the Play Animation action having an incorrect duration of 1 second.  (127395965)
-- Fixed: A Notification Action will not cause a Notification Trigger to fire, even if they use the same String value. Update to use the new property name, `RealityKit.NotificationTrigger.Identifier`, to be able to observe a Notification posted by a NotificationAction in your Reality Composer Pro Timeline. The identifier you provide in your Reality Composer Pro Timeline NotificationAction will be delivered in the Notification’s userInfo under the key `NotificationAction.identifierKey`.  (127825336)
+- Fixed: A Notification Action will not cause a Notification Trigger to fire, even if they use the same String value.
+
+  Update to use the new property name, `RealityKit.NotificationTrigger.Identifier`, to be able to observe a Notification posted by a NotificationAction in your Reality Composer Pro Timeline. The identifier you provide in your Reality Composer Pro Timeline NotificationAction will be delivered in the Notification’s userInfo under the key `NotificationAction.identifierKey`.  (127825336)
 - Fixed: No warning is shown in cases where a Replace Behavior action is targeting an entity without a Behavior Component  (128011054)
 - Fixed: Using HDR format video for docking region preview video fails to play and provides no errors. (impacts preview only)  (128098120)
 - Fixed: Selecting an action with a target entity and then clearing the target automatically puts the user in target selection mode.  (128187376)
@@ -542,10 +599,14 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Authoring light spill is not supported on Intel Macs.  (124170457)
 - Grounding shadow may be visible on the ground plane even if the grid hidden.  (127603652)
-- A Behavior that has a Notification trigger may not work if the notification is posted immediately after calling Entity.load().  (128506951) **Workaround:** Post the notification after a short delay.
-- Disabling and re-enabling the Docking Region component in Reality Composer Pro can cause the component width to not be editable  (133285221) **Workaround:** Either close and re-open Reality Composer Pro, or switch to a different scene tab and back
+- A Behavior that has a Notification trigger may not work if the notification is posted immediately after calling Entity.load().  (128506951)
 
-##### Realitykit Inspector
+  **Workaround:** Post the notification after a short delay.
+- Disabling and re-enabling the Docking Region component in Reality Composer Pro can cause the component width to not be editable  (133285221)
+
+  **Workaround:** Either close and re-open Reality Composer Pro, or switch to a different scene tab and back
+
+##### RealityKit Inspector
 
 ###### Resolved Issues
 
@@ -557,11 +618,11 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Fixed: The safari-web-extension-converter may fail when creating a new project.  (130299863)
 
-##### Signing Distribution
+##### Signing & Distribution
 
 ###### Resolved Issues
 
-- Fixed: When building for macOS, Xcode 16 will now validate that any provisioning profiles used allow list all of the restricted entitlements you’ve specified in your entitlements files. This validation ensures that your app will successfully install, launch, and make use of system capabilities and services that require the entitlement. This may result in a build error if you are using a provisioning profile that doesn’t allow list the restricted entitlements you need. Automatic signing will generate a new provisioning profile for you, buit if you are using manual signing then you will need to visit your account at [`https://developer.apple.com/account`](https://developer.apple.comhttps://developer.apple.com/account) to create a new provisioning profile.  (48821779)
+- Fixed: When building for macOS, Xcode 16 will now validate that any provisioning profiles used allow list all of the restricted entitlements you’ve specified in your entitlements files. This validation ensures that your app will successfully install, launch, and make use of system capabilities and services that require the entitlement. This may result in a build error if you are using a provisioning profile that doesn’t allow list the restricted entitlements you need. Automatic signing will generate a new provisioning profile for you, buit if you are using manual signing then you will need to visit your account at [https://developer.apple.com/account](https://developer.apple.com/account) to create a new provisioning profile.  (48821779)
 - Fixed: Xcode 16 stores downloaded provisioning profiles in a new location on disk, at ~/Library/Developer/Xcode/UserData/Provisioning Profiles. Xcode will still load previously downloaded profiles from the previous location.  (54347894)
 - Fixed: Xcode signing better handles capabilities that are public for development and managed for distribution. This fixes an issue when distributing apps where the development capability would sometimes be used instead of the managed distribution capability.  (122413905)
 - Fixed: `xcodebuild` will crash when exporting an archive using manual signing if there is no provisioningProfiles key provided in the export options plist.  (128040128) (FB13797243)
@@ -571,7 +632,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### New Features
 
-- Xcode 16’s visionOS simulator now includes support for simulated FaceTime calls. You can use this feature to test your SharePlay experience with a simulated group session on the visionOS simulator. To start a simulated visionOS FaceTime call, select one of the participant configurations in the “FaceTime” submenu of the simulator’s “Features” menubar item. For example, select Features > FaceTime > User and 4 Spatial Participants to start a call with four simulated participants using their spatial Personas.  (112669619)
+- Xcode 16’s visionOS simulator now includes support for simulated FaceTime calls. You can use this feature to test your SharePlay experience with a simulated group session on the visionOS simulator.
+
+  To start a simulated visionOS FaceTime call, select one of the participant configurations in the “FaceTime” submenu of the simulator’s “Features” menubar item. For example, select Features > FaceTime > User and 4 Spatial Participants to start a call with four simulated participants using their spatial Personas.  (112669619)
 
 ###### Resolved Issues
 
@@ -580,7 +643,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- On systems that do not have Internet access, Xcode cannot reach the index for SDK to Simulator runtime mapping information. This will cause Xcode to list current simulators as ‘Other Installed Platforms’ and consider the current platform as missing.  (135367176) **Workaround:** To download a copy of the latest index run: `curl -O https://devimages-cdn.apple.com/downloads/xcode/simulators/index2.dvtdownloadableindex` Then copy the index to the offline system and run the following command to set the index: `defaults write com.apple.dt.Xcode DVTDownloadableIndex <path/to/the/copied/index2.dvtdownloadableindex>` Remember to repeat this workaround when upgrading to newer simulator runtimes, or newer Xcode, on systems without Internet access.
+- On systems that do not have Internet access, Xcode cannot reach the index for SDK to Simulator runtime mapping information. This will cause Xcode to list current simulators as ‘Other Installed Platforms’ and consider the current platform as missing.  (135367176)
+
+  **Workaround:** To download a copy of the latest index run: `curl -O https://devimages-cdn.apple.com/downloads/xcode/simulators/index2.dvtdownloadableindex` Then copy the index to the offline system and run the following command to set the index: `defaults write com.apple.dt.Xcode DVTDownloadableIndex <path/to/the/copied/index2.dvtdownloadableindex>` Remember to repeat this workaround when upgrading to newer simulator runtimes, or newer Xcode, on systems without Internet access.
 
 ##### Source Control
 
@@ -594,23 +659,27 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### New Features
 
-- Added support for EditorConfig. The editor now respects indentation settings given in `.editorconfig` files. Xcode supports the following settings: `indent_style`, `tab_width`, `indent_size`, `end_of_line`, `insert_final_newline`, `max_line_length`, and `trim_trailing_whitespace`. See [`https://editorconfig.org`](https://developer.apple.comhttps://editorconfig.org) for more information. Settings from `.editorconfig` files normally take precedence over settings given in the “Text Editing” section of View > Inspectors > File for a file or group. This can be disabled by unchecking the “Prefer Settings from EditorConfig” checkbox on the Indentation tab of Xcode > Settings > Text Editing.  (20796230)
+- Added support for EditorConfig. The editor now respects indentation settings given in `.editorconfig` files. Xcode supports the following settings: `indent_style`, `tab_width`, `indent_size`, `end_of_line`, `insert_final_newline`, `max_line_length`, and `trim_trailing_whitespace`. See [https://editorconfig.org](https://editorconfig.org) for more information. Settings from `.editorconfig` files normally take precedence over settings given in the “Text Editing” section of View > Inspectors > File for a file or group. This can be disabled by unchecking the “Prefer Settings from EditorConfig” checkbox on the Indentation tab of Xcode > Settings > Text Editing.  (20796230)
 - There is a new “Extract to File” refactor action. Users can now click on a top level declaration in Swift files (class, struct, enum, extension, function) and click on “Extract to File” in the “Refactor” section, which will extract the declaration to a new file, as well as the relevant comments and imports. Users can also select any code and click on “Extract Selection to File” in the “Refactor” section, which will extract that selection to a new file.  (39453975)
 - Added the “Reformat to Width” command to the Editor > Structure menu. This command splits long lines containing member access and function call expressions onto multiple lines. The target width is given with the “Reformat code at column” setting on the Editing tab of Xcode > Settings > Text Editing. Reformatting can happen automatically when using code completion by checking the “Automatically reformat when completion code” checkbox. The editor can visually show column by checking the “Show reformatting guide”, which was formerly called the “Page Guide”. The target width can also be set using the `max_line_length` EditorConfig setting.  (94577507) (FB10083417)
 - When editing an XML file, closing an opening XML tag will automatically insert a matching closing tag. (132524389)
-- Word movements are now more granular, and will not skip characters such as parenthesis. (133017821)
+- Word movements are now more granular, and will not skip characters such as parenthesis.
+
+  (133017821)
 
 ###### Known Issues
 
-- Changes to `.editorconfig` are not reflected immediately in open files.  (120389049) **Workaround:** Quit and restart Xcode.
+- Changes to `.editorconfig` are not reflected immediately in open files.  (120389049)
 
-##### Storekit
+  **Workaround:** Quit and restart Xcode.
+
+##### StoreKit
 
 ###### New Features
 
-- macOS now supports in-app [`Offer Code`](https://developer.apple.com﻿https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/) redemption. Use [`StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/) to ensure your app responds correctly when customers redeem a Mac App Store Offer Code.  (60096251)
-- You can now assign product and subscription images in the StoreKit configuration in Xcode. Use these images in-app when creating and testing [`ProductViews`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview) and [`StoreViews`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview). Subscription groups now support adding localized names and descriptions. And, you can configure a test license agreement and test privacy policies to display in your [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) when testing with Xcode.  (114228169)
-- New win-back offer APIs can be tested using [`StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/). Configure win-back offers for your auto-renewable subscriptions in the StoreKit configuration, and simulate different scenarios of a customer’s eligibility for each offer.  (118535734)
+- macOS now supports in-app [Offer Code](https://developer.apple.com﻿https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/) redemption. Use [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md) to ensure your app responds correctly when customers redeem a Mac App Store Offer Code.  (60096251)
+- You can now assign product and subscription images in the StoreKit configuration in Xcode. Use these images in-app when creating and testing [ProductViews](../StoreKit/productview.md) and [StoreViews](../StoreKit/storeview.md). Subscription groups now support adding localized names and descriptions. And, you can configure a test license agreement and test privacy policies to display in your [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) when testing with Xcode.  (114228169)
+- New win-back offer APIs can be tested using [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md). Configure win-back offers for your auto-renewable subscriptions in the StoreKit configuration, and simulate different scenarios of a customer’s eligibility for each offer.  (118535734)
 - New win-back offer APIs can be tested using StoreKit Testing in Xcode. Configure win-back offers for your auto-renewable subscriptions in the StoreKit configuration, and simulate different scenarios of a customer’s eligibility for each offer.  (118893438)
 
 ###### Resolved Issues
@@ -619,261 +688,419 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- The StoreKit Transaction Manager might be unresponsive when performing actions while an app is running in a debug session. The affected actions include: create a new purchase, send a purchase intent, and edit an active or expired subscription.  (126700294) **Workaround:** Close the transaction manager, detach the app from the current debug session by stopping the process in Xcode, then re-open the transaction manager. You can open and use the app as normal on your device or simulator and perform actions in the transaction manager as long as there is no active debug session.
+- The StoreKit Transaction Manager might be unresponsive when performing actions while an app is running in a debug session. The affected actions include: create a new purchase, send a purchase intent, and edit an active or expired subscription.  (126700294)
+
+  **Workaround:** Close the transaction manager, detach the app from the current debug session by stopping the process in Xcode, then re-open the transaction manager. You can open and use the app as normal on your device or simulator and perform actions in the transaction manager as long as there is no active debug session.
 
 ##### Swift
 
 ###### New Features
 
 - Swift now allows usage of non-copyable C++ types.  (83358475)
-- You can now suppress `Copyable` on protocols, generic parameters, and existentials: ```swift
- // Protocol does not require conformers to be Copyable.
- protocol Flower: ~Copyable {
-   func bloom()
- }
- 
- // Noncopyable type
- struct Marigold: Flower, ~Copyable {
-   func bloom() { print("Marigold blooming!") }
- }
- 
- // Copyable type
- struct Hibiscus: Flower {
-   func bloom() { print("Hibiscus blooming!") }
- }
- 
- func startSeason(_ flower: borrowing some Flower & ~Copyable) {
-   flower.bloom()
- }
- 
- startSeason(Marigold())
- startSeason(Hibiscus())
-``` By writing `~Copyable` on a generic type, you’re suppressing a default `Copyable` constraint that would otherwise appear on that type. This permits noncopyable types, which have no `Copyable` conformance, to conform to such protocols and be substituted for those generic types. Full functionality of this feature requires the newer Swift 6 runtime, so a minimum deployment target of iOS 18, macOS 15, etc, is recommended.  See Swift Evolution proposal SE-427 for more details.  (101653009)
+- You can now suppress `Copyable` on protocols, generic parameters, and existentials:
+
+  ```swift
+   // Protocol does not require conformers to be Copyable.
+   protocol Flower: ~Copyable {
+     func bloom()
+   }
+   
+   // Noncopyable type
+   struct Marigold: Flower, ~Copyable {
+     func bloom() { print("Marigold blooming!") }
+   }
+   
+   // Copyable type
+   struct Hibiscus: Flower {
+     func bloom() { print("Hibiscus blooming!") }
+   }
+   
+   func startSeason(_ flower: borrowing some Flower & ~Copyable) {
+     flower.bloom()
+   }
+   
+   startSeason(Marigold())
+   startSeason(Hibiscus())
+  ```
+
+  By writing `~Copyable` on a generic type, you’re suppressing a default `Copyable` constraint that would otherwise appear on that type. This permits noncopyable types, which have no `Copyable` conformance, to conform to such protocols and be substituted for those generic types. Full functionality of this feature requires the newer Swift 6 runtime, so a minimum deployment target of iOS 18, macOS 15, etc, is recommended.  See Swift Evolution proposal SE-427 for more details.  (101653009)
 - When calling a C++ function from Swift, you no longer have to pass the arguments that have default values.  (103975014)
 - The Wrapped type of an Optional now supports noncopyable types. See Swift Evolution proposal SE-0437 for details.  (117753275)
 - The Pointee type of an UnsafePointer/UnsafeMutablePointer now supports noncopyable types. See Swift Evolution proposal SE-0437 for details.  (117753867)
 - Swift overlay for the C++ standard library now supports visionOS.  (123516182)
 - You can now call virtual methods of a C++ type from Swift, if the C++ type is a reference type (i.e. is annotated as `SWIFT_IMMORTAL_REFERENCE` or `SWIFT_SHARED_REFERENCE`).  (123852577)
-- Swift 5.10 missed a semantic check from [`SE-0309`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0309-unlock-existential-types-for-all-protocols.md). In type context, a reference to a protocol `P` that has associated types or `Self` requirements should use the `any` keyword, but this was not enforced in nested generic argument positions. This is now an error as required by the proposal: ```swift
-   protocol P { associatedtype A }
-   struct Outer<T> { struct Inner<U> { } }
-   let x = Outer<P>.Inner<P>()  // error
-``` To correct the error, add `any` where appropriate, for example: `Outer<any P>.Inner<any P>`.  (125985138)
-- Swift 5.10 accepted certain invalid opaque return types from [`SE-0346`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0346-light-weight-same-type-syntax.md). If a generic argument of a constrained opaque return type didn’t satisfy the requirements on the primary associated type, the generic argument was silently ignored and type checking would proceed as if it weren’t stated. This now results in a diagnostic: ```swift
-   protocol P<A> { associatedtype A: Sequence }
-   struct G<A: Sequence>: P {}
- 
-   func f() -> some P<Int> { return G<Array<Int>>() }  // error
-``` The return type above should be written as `some P<Array<Int>>` to match the return statement. The old broken behavior in this situation can also be restored, by removing the erroneous constraint and using the more general upper bound `some P`.  (125985588)
-- A `for`-`in` loop statement can now accept a pack expansion expression, enabling iteration over the elements of its respective value pack. This form supports pattern matching, control transfer statements, and other features available to a `Sequence`-driven `for`-`in` loop, except for the `where` clause. Below is an example implementation of the equality operator for tuples of arbitrary length using pack iteration: ```swift
-   func == <each Element: Equatable>(lhs: (repeat each Element),
-                                     rhs: (repeat each Element)) -> Bool {
- 
-     for (left, right) in repeat (each lhs, each rhs) {
-       guard left == right else { return false }
-     }
-     return true
-   }
-``` The elements of the value pack corresponding to the pack expansion expression are evaluated on demand, meaning the ith element is evaluated on the ith iteration: ```swift
-   func doSomething(_: some Any) {}
- 
-   func evaluateFirst<each T>(_ t: repeat each T) {
-     for _ in repeat doSomething(each t) {
-       break
-     }
-   }
- 
-   evaluateFirst(1, 2, 3) 
-   // 'doSomething' will be called only on the first element of the pack.
-``` [`SE-0408`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0408-pack-iteration.md)  (125986029)
-- The Swift 6 language mode will open existential values with “self-conforming” types (such as `any Error` or `@objc` protocols) passed to generic functions. For example: ```swift
-   func takeError<E: Error>(_ error: E) { }
- 
-   func passError(error: any Error) {
-     takeError(error)  // Swift 5 does not open `any Error`, Swift 6 does
-   }
-``` This behavior can be enabled prior to the Swift 6 language mode using the upcoming language feature `ImplicitOpenExistentials`.
+- Swift 5.10 missed a semantic check from [SE-0309](https://github.com/apple/swift-evolution/blob/main/proposals/0309-unlock-existential-types-for-all-protocols.md). In type context, a reference to a protocol `P` that has associated types or `Self` requirements should use the `any` keyword, but this was not enforced in nested generic argument positions. This is now an error as required by the proposal:
 
-[`SE-0352`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0352-implicit-open-existentials.md)  (125991349)
+  ```swift
+     protocol P { associatedtype A }
+     struct Outer<T> { struct Inner<U> { } }
+     let x = Outer<P>.Inner<P>()  // error
+  ```
 
-- Non-built-in expression macros can now be used as default arguments that expand at each call site. For example, a custom `#CurrentFile` macro used as a default argument in ‘Library.swift’ won’t be expanded to `"Library.swift"`: ```swift
-   @freestanding(expression)
-   public macro CurrentFile() -> String = ...
- 
-   public func currentFile(name: String = #CurrentFile) { name }
-``` Instead, it will be expanded at where the function is called: ```swift
-   print(currentFile())
-   // Prints "main.swift"
-``` The expanded code can also use declarations from the caller side context: ```swift
-   var person = "client"
-   greetPerson(/* greeting: #informalGreeting */)
-   // Prints "Hi client" if macro expands to "Hi \(person)"
-``` [`SE-0422`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0422-caller-side-default-argument-macro-expression.md)  (125991596)
-- Tasks now gain the ability to respect Task Executor preference. This allows tasks executing default actors (which do not declare a custom executor), and nonisolated asynchronous functions to fall back to a preferred executor, rather than always executing on the default global pool. The executor preference may be stated using the `withTaskExecutorPreference` function: ```swift
-   nonisolated func doSomething() async { ... }
+  To correct the error, add `any` where appropriate, for example: `Outer<any P>.Inner<any P>`.  (125985138)
+- Swift 5.10 accepted certain invalid opaque return types from [SE-0346](https://github.com/apple/swift-evolution/blob/main/proposals/0346-light-weight-same-type-syntax.md). If a generic argument of a constrained opaque return type didn’t satisfy the requirements on the primary associated type, the generic argument was silently ignored and type checking would proceed as if it weren’t stated. This now results in a diagnostic:
+
+  ```swift
+     protocol P<A> { associatedtype A: Sequence }
+     struct G<A: Sequence>: P {}
    
-   await withTaskExecutorPreference(preferredExecutor) {
-     doSomething()
-``` Or when creating new unstructured or child-tasks (e.g. in a task group): ```swift
-   Task(executorPreference: preferredExecutor) {
-     // executes on 'preferredExecutor'
-     await doSomething() // doSomething body would execute on 'preferredExecutor'
-   }
-``` [`SE-0417`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0417-task-executor-preference.md)  (125991889)
-- Functions can now specify the type of error that they throw as part of the function signature. For example: ```swift
-   func parseRecord(from string: String) throws(ParseError) -> Record { ... }
-``` A call to `parseRecord(from:)` will either return a `Record` instance or throw an error of type `ParseError`. For example, a `do..catch` block will infer the `error` variable as being of type `ParseError`: ```swift
-   do {
-     let record = try parseRecord(from: myString)
-   } catch {
-     // error has type ParseError
-   }
-``` Typed throws generalizes over throwing and non-throwing functions. A function that is specified as `throws` (without an explicitly-specified error type) is equivalent to one that specifies `throws(any Error)`, whereas a non-throwing is equivalent to one that specifies `throws(Never)`. Calls to functions that are `throws(Never)` are non-throwing. Typed throws can also be used in generic functions to propagate error types from parameters, in a manner that is more precise than `rethrows`. For example, the `Sequence.map` operation can propagate the thrown error type from its closure parameter, indicating that it only throws errors of the same type as that closure does: ```swift
-   extension Sequence {
-     func map<T, E>(_ body: (Element) throws(E) -> T) throws(E) -> [T] { ... }
-   }
-``` When given a non-throwing closure as a parameter, `map` will not throw. [`SE-0413`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0413-typed-throws.md)  (125992062)
-- The Standard Library now provides APIs for performing collection operations over noncontiguous elements. For example: ```swift
-   var numbers = Array(1...15)
- 
-   // Find the indices of all the even numbers
-   let indicesOfEvens = numbers.indices(where: { $0.isMultiple(of: 2) })
- 
-   // Perform an operation with just the even numbers
-   let sumOfEvens = numbers[indicesOfEvens].reduce(0, +)
-   // sumOfEvens == 56
- 
-   // You can gather the even numbers at the beginning
-   let rangeOfEvens = numbers.moveSubranges(indicesOfEvens, to: numbers.startIndex)
-   // numbers == [2, 4, 6, 8, 10, 12, 14, 1, 3, 5, 7, 9, 11, 13, 15]
-   // numbers[rangeOfEvens] == [2, 4, 6, 8, 10, 12, 14]
-``` The standard library now provides a new `indices(where:)` function which creates a `RangeSet` - a new type representing a set of discontiguous indices. `RangeSet` is generic over its index type and can be used to execute operations over noncontiguous indices such as collecting, moving, or removing elements from a collection. Additionally, `RangeSet` is generic over any `Comparable` collection index and can be used to represent a selection of items in a list or a refinement of a filter or search result. [`SE-0270`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0270-rangeset-and-collection-operations.md)  (125993055)
-- Noncopyable enums can be pattern-matched with switches without consuming the value you switch over: ```swift
-   enum Lunch: ~Copyable {
-     case soup
-     case salad
-     case sandwich
-   }
+     func f() -> some P<Int> { return G<Array<Int>>() }  // error
+  ```
+
+  The return type above should be written as `some P<Array<Int>>` to match the return statement. The old broken behavior in this situation can also be restored, by removing the erroneous constraint and using the more general upper bound `some P`.  (125985588)
+- A `for`-`in` loop statement can now accept a pack expansion expression, enabling iteration over the elements of its respective value pack. This form supports pattern matching, control transfer statements, and other features available to a `Sequence`-driven `for`-`in` loop, except for the `where` clause. Below is an example implementation of the equality operator for tuples of arbitrary length using pack iteration:
+
+  ```swift
+     func == <each Element: Equatable>(lhs: (repeat each Element),
+                                       rhs: (repeat each Element)) -> Bool {
    
-   func isSoup(_ lunch: borrowing Lunch) -> Bool {
-     switch lunch {
-       case .soup: true
-       default: false
+       for (left, right) in repeat (each lhs, each rhs) {
+         guard left == right else { return false }
+       }
+       return true
      }
-   }
-``` See Swift Evolution proposal SE-432 for more details.  (126282962)
-- The noncopyable fields of certain types can now be consumed individually: ```swift
-   struct Token: ~Copyable {}
- 
-   struct Authentication: ~Copyable {
-     let id: Token
-     let name: String
- 
-     mutating func exchange(_ new: consuming Token) -> Token {
-       let old = self.id  // <- partial consumption of 'self'
-       self = .init(id: new, name: self.name)
-       return old
-     } 
-   }
-``` See Swift Evolution proposal SE-429 for more details.  (126715654)
-- Swift 6 comes with a new language mode that prevents the risk of data races at compile time. This guarantee is accomplished through *data isolation*; the compiler validates that data passed over a boundary between concurrently executing code is either safe to reference concurrently, or mutually exclusive access to the value is enforced.  The data-race safety checks were previously available in Swift 5.10 through the `-strict-concurrency=complete` compiler flag. Complete concurrency checking in Swift 5.10 was overly restrictive, and Swift 6 removes many false-positive data-race warnings through better `Sendable` inference, new analysis that proves mutually exclusive access when passing values with non-`Sendable` type over isolation boundaries, and more. You can enable the Swift 6 language mode using the `-swift-version 6` compiler flag.  (129020586)
-- Since its introduction in Swift 5.1 the `@TaskLocal` property wrapper was used to create and access task-local value bindings. Property wrappers introduce mutable storage, which was now properly flagged as potential source of concurrency unsafety. In order for Swift 6 language mode to not flag task-locals as potentially thread-unsafe, task locals are now implemented using a macro. The macro has the same general semantics and usage patterns, however there are two source-break situations which the Swift 6 task locals cannot handle: Using an implicit default `nil` value for task local initialization, when combined with a type alias: ```swift
-   // allowed in Swift 5.x, not allowed in Swift 6.x
+  ```
+
+  The elements of the value pack corresponding to the pack expansion expression are evaluated on demand, meaning the ith element is evaluated on the ith iteration:
+
+  ```swift
+     func doSomething(_: some Any) {}
    
-   typealias MyValue = Optional<Int> 
-   
-   @TaskLocal
-   static var number: MyValue // Swift 6: error, please specify default value explicitly
-   
-   // Solution 1: Specify the default value
-   @TaskLocal
-   static var number: MyValue = nil
-   
-   // Solution 2: Avoid the type-alias
-   @TaskLocal
-   static var number: Optional<Int>
-``` At the same time, task locals can now be declared as global properties, which wasn’t possible before.  (129181514)
-- The compiler is now capable of determining whether or not a value that doesn’t conform to the `Sendable` protocol can safely be sent over an isolation boundary. This is done by introducing the concept of *isolation regions - that allows the compiler to reason conservatively if two values can affect each other. Through the usage of isolation regions, the compiler can now prove that sending a value that doesn’t conform to the `Sendable` protocol over an isolation boundary cannot result in races because the value (and any other value that might reference it) isn’t used in the caller after the point of sending allowing code like the following to compile: ```swift
-   actor MyActor {
-       init(_ x: NonSendableType) { ... }
-   }
-   
-   func useValue() {
-     let x = NonSendableType()
-     let a = await MyActor(x) // Error without Region Based Isolation!
-   }
-``` (129182113)
-- Region Based Isolation is now extended to enable the application of an explicit `sending` annotation to function parameters and results. A function parameter or result that is annotated with `sending` is required to be disconnected at the function boundary and thus possesses the capability of being safely sent across an isolation domain or merged into an actor-isolated region in the function’s body or the function’s caller respectively. Example: ```swift
-   func parameterWithoutSending(_ x: NonSendableType) async {
-     // Error! Cannot send a task-isolated value to the main actor!
-     await transferToMainActor(x)
-   }
-   
-   func parameterWithSending(_ x: sending NonSendableType) async {
-     // Ok since `x` is `sending` and thus disconnected.
-     await transferToMainActor(x)
-   }
-``` [`SE-0430`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md)  (129182529)
-- The compiler would now automatically employ `Sendable` on functions and key path literal expressions that cannot capture non-Sendable values. This includes partially-applied and unapplied instance methods of `Sendable` types, as well as non-local functions. Additionally, it is now disallowed to utilize `@Sendable` on instance methods of non-Sendable types. Let’s use the following type to illustrate the new inference rules: ```swift
-   public struct User {
-     var name: String
- 
-     func getAge() -> Int { ... }
-   }
-``` Key path `\User.name` would be inferred as `WritableKeyPath<User, String> & Sendable` because it doesn’t capture any non-Sendable values. The same applies to keypath-as-function conversions: ```swift
-   let _: @Sendable (User) -> String = \User.name // Ok
-``` A function value produced by an un-applied reference to `getAge` would be marked as `@Sendable` because `User` is a `Sendable` struct: ```swift
-   let _ = User.getAge // Inferred as `@Sendable (User) -> @Sendable () -> Int`
- 
-   let user = User(...)
-   user.getAge // Inferred as `@Sendable () -> Int`
-``` [`SE-0418`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0418-inferring-sendable-for-methods.md)  (129182930)
-- `async` functions can now explicitly inherit the isolation of their caller by declaring an `isolated` parameter with the default value of `#isolation`: ```swift
- func poll(isolation: isolated (any Actor)? = #isolation) async -> [Item] {
-   // implementation
- }
-``` When the caller is actor-isolated, this allows it to pass isolated state to the function, which would otherwise have concurrency problems.  The function may also be able to eliminate unwanted scheduling changes, such as when it can quickly return in a fast path without needing to suspend. [`SE-0420`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0420-inheritance-of-actor-isolation.md)  (129183122)
-- You can now use `@preconcurrency` attribute to replace static actor isolation checking with dynamic checks for witnesses of synchronous nonisolated protocol requirements when the witness is isolated. This is common when Swift programs need to interoperate with frameworks written in C/C++/Objective-C whose implementations cannot participate in static data race safety. ```swift
-   public protocol ViewDelegateProtocol {
-     func respondToUIEvent()
-   }
-``` It’s now possible for a `@MainActor`-isolated type to conform to `ViewDelegateProtocol` by marking conformance declaration as `@preconcurrency`: ```swift
-   @MainActor
-   class MyViewController: ViewDelegateProtocol {
-     func respondToUIEvent() {
-       // implementation...
+     func evaluateFirst<each T>(_ t: repeat each T) {
+       for _ in repeat doSomething(each t) {
+         break
+       }
      }
-   }
-``` The compiler would emit dynamic checks into the `respondToUIEvent()` witness to make sure that it’s always executed in `@MainActor` isolated context. Additionally, the compiler would emit dynamic actor isolation checks for: - `@objc` thunks of synchronous actor-isolated members of classes.
-- Synchronous actor-isolated function values passed to APIs that erase actor isolation and haven’t yet adopted strict concurrency checking.
-- Call-sites of synchronous actor-isolated functions imported from Swift 6 libraries. The dynamic actor isolation checks can be disabled using the flag `-disable-dynamic-actor-isolation`. [`SE-0423`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0423-dynamic-actor-isolation.md)  (129183347)
-- You can now require a function value to carry its actor isolation dynamically in a way that can be directly read by clients: ```swift
-   func apply<R>(count: Int,
-                 operation: @isolated(any) async () -> R) async -> [R]
-       where R: Sendable {
+   
+     evaluateFirst(1, 2, 3) 
+     // 'doSomething' will be called only on the first element of the pack.
+  ```
+
+  [SE-0408](https://github.com/apple/swift-evolution/blob/main/proposals/0408-pack-iteration.md)  (125986029)
+- The Swift 6 language mode will open existential values with “self-conforming” types (such as `any Error` or `@objc` protocols) passed to generic functions. For example:
+
+  ```swift
+     func takeError<E: Error>(_ error: E) { }
+   
+     func passError(error: any Error) {
+       takeError(error)  // Swift 5 does not open `any Error`, Swift 6 does
+     }
+  ```
+
+  This behavior can be enabled prior to the Swift 6 language mode using the upcoming language feature `ImplicitOpenExistentials`.
+
+[SE-0352](https://github.com/apple/swift-evolution/blob/main/proposals/0352-implicit-open-existentials.md)  (125991349)
+
+- Non-built-in expression macros can now be used as default arguments that expand at each call site. For example, a custom `#CurrentFile` macro used as a default argument in ‘Library.swift’ won’t be expanded to `"Library.swift"`:
+
+  ```swift
+     @freestanding(expression)
+     public macro CurrentFile() -> String = ...
+   
+     public func currentFile(name: String = #CurrentFile) { name }
+  ```
+
+  Instead, it will be expanded at where the function is called:
+
+  ```swift
+     print(currentFile())
+     // Prints "main.swift"
+  ```
+
+  The expanded code can also use declarations from the caller side context:
+
+  ```swift
+     var person = "client"
+     greetPerson(/* greeting: #informalGreeting */)
+     // Prints "Hi client" if macro expands to "Hi \(person)"
+  ```
+
+  [SE-0422](https://github.com/apple/swift-evolution/blob/main/proposals/0422-caller-side-default-argument-macro-expression.md)  (125991596)
+- Tasks now gain the ability to respect Task Executor preference. This allows tasks executing default actors (which do not declare a custom executor), and nonisolated asynchronous functions to fall back to a preferred executor, rather than always executing on the default global pool.
+
+  The executor preference may be stated using the `withTaskExecutorPreference` function:
+
+  ```swift
+     nonisolated func doSomething() async { ... }
+     
+     await withTaskExecutorPreference(preferredExecutor) {
+       doSomething()
+  ```
+
+  Or when creating new unstructured or child-tasks (e.g. in a task group):
+
+  ```swift
+     Task(executorPreference: preferredExecutor) {
+       // executes on 'preferredExecutor'
+       await doSomething() // doSomething body would execute on 'preferredExecutor'
+     }
+  ```
+
+  [SE-0417](https://github.com/apple/swift-evolution/blob/main/proposals/0417-task-executor-preference.md)  (125991889)
+- Functions can now specify the type of error that they throw as part of the function signature. For example:
+
+  ```swift
+     func parseRecord(from string: String) throws(ParseError) -> Record { ... }
+  ```
+
+  A call to `parseRecord(from:)` will either return a `Record` instance or throw an error of type `ParseError`. For example, a `do..catch` block will infer the `error` variable as being of type `ParseError`:
+
+  ```swift
+     do {
+       let record = try parseRecord(from: myString)
+     } catch {
+       // error has type ParseError
+     }
+  ```
+
+  Typed throws generalizes over throwing and non-throwing functions. A function that is specified as `throws` (without an explicitly-specified error type) is equivalent to one that specifies `throws(any Error)`, whereas a non-throwing is equivalent to one that specifies `throws(Never)`. Calls to functions that are `throws(Never)` are non-throwing.
+
+  Typed throws can also be used in generic functions to propagate error types from parameters, in a manner that is more precise than `rethrows`. For example, the `Sequence.map` operation can propagate the thrown error type from its closure parameter, indicating that it only throws errors of the same type as that closure does:
+
+  ```swift
+     extension Sequence {
+       func map<T, E>(_ body: (Element) throws(E) -> T) throws(E) -> [T] { ... }
+     }
+  ```
+
+  When given a non-throwing closure as a parameter, `map` will not throw.
+
+  [SE-0413](https://github.com/apple/swift-evolution/blob/main/proposals/0413-typed-throws.md)  (125992062)
+- The Standard Library now provides APIs for performing collection operations over noncontiguous elements. For example:
+
+  ```swift
+     var numbers = Array(1...15)
+   
+     // Find the indices of all the even numbers
+     let indicesOfEvens = numbers.indices(where: { $0.isMultiple(of: 2) })
+   
+     // Perform an operation with just the even numbers
+     let sumOfEvens = numbers[indicesOfEvens].reduce(0, +)
+     // sumOfEvens == 56
+   
+     // You can gather the even numbers at the beginning
+     let rangeOfEvens = numbers.moveSubranges(indicesOfEvens, to: numbers.startIndex)
+     // numbers == [2, 4, 6, 8, 10, 12, 14, 1, 3, 5, 7, 9, 11, 13, 15]
+     // numbers[rangeOfEvens] == [2, 4, 6, 8, 10, 12, 14]
+  ```
+
+  The standard library now provides a new `indices(where:)` function which creates a `RangeSet` - a new type representing a set of discontiguous indices. `RangeSet` is generic over its index type and can be used to execute operations over noncontiguous indices such as collecting, moving, or removing elements from a collection. Additionally, `RangeSet` is generic over any `Comparable` collection index and can be used to represent a selection of items in a list or a refinement of a filter or search result.
+
+  [SE-0270](https://github.com/apple/swift-evolution/blob/main/proposals/0270-rangeset-and-collection-operations.md)  (125993055)
+- Noncopyable enums can be pattern-matched with switches without consuming the value you switch over:
+
+  ```swift
+     enum Lunch: ~Copyable {
+       case soup
+       case salad
+       case sandwich
+     }
+     
+     func isSoup(_ lunch: borrowing Lunch) -> Bool {
+       switch lunch {
+         case .soup: true
+         default: false
+       }
+     }
+  ```
+
+  See Swift Evolution proposal SE-432 for more details.  (126282962)
+- The noncopyable fields of certain types can now be consumed individually:
+
+  ```swift
+     struct Token: ~Copyable {}
+   
+     struct Authentication: ~Copyable {
+       let id: Token
+       let name: String
+   
+       mutating func exchange(_ new: consuming Token) -> Token {
+         let old = self.id  // <- partial consumption of 'self'
+         self = .init(id: new, name: self.name)
+         return old
+       } 
+     }
+  ```
+
+  See Swift Evolution proposal SE-429 for more details.  (126715654)
+- Swift 6 comes with a new language mode that prevents the risk of data races at compile time. This guarantee is accomplished through *data isolation*; the compiler validates that data passed over a boundary between concurrently executing code is either safe to reference concurrently, or mutually exclusive access to the value is enforced.  The data-race safety checks were previously available in Swift 5.10 through the `-strict-concurrency=complete` compiler flag. Complete concurrency checking in Swift 5.10 was overly restrictive, and Swift 6 removes many false-positive data-race warnings through better `Sendable` inference, new analysis that proves mutually exclusive access when passing values with non-`Sendable` type over isolation boundaries, and more.
+
+  You can enable the Swift 6 language mode using the `-swift-version 6` compiler flag.  (129020586)
+- Since its introduction in Swift 5.1 the `@TaskLocal` property wrapper was used to create and access task-local value bindings. Property wrappers introduce mutable storage, which was now properly flagged as potential source of concurrency unsafety.
+
+  In order for Swift 6 language mode to not flag task-locals as potentially thread-unsafe, task locals are now implemented using a macro. The macro has the same general semantics and usage patterns, however there are two source-break situations which the Swift 6 task locals cannot handle:
+
+  Using an implicit default `nil` value for task local initialization, when combined with a type alias:
+
+  ```swift
+     // allowed in Swift 5.x, not allowed in Swift 6.x
+     
+     typealias MyValue = Optional<Int> 
+     
+     @TaskLocal
+     static var number: MyValue // Swift 6: error, please specify default value explicitly
+     
+     // Solution 1: Specify the default value
+     @TaskLocal
+     static var number: MyValue = nil
+     
+     // Solution 2: Avoid the type-alias
+     @TaskLocal
+     static var number: Optional<Int>
+  ```
+
+  At the same time, task locals can now be declared as global properties, which wasn’t possible before.  (129181514)
+- The compiler is now capable of determining whether or not a value that doesn’t conform to the `Sendable` protocol can safely be sent over an isolation boundary. This is done by introducing the concept of *isolation regions
+
+  - that allows the compiler to reason conservatively if two values can affect each other. Through the usage of isolation regions, the compiler can now prove that sending a value that doesn’t conform to the `Sendable` protocol over an isolation boundary cannot result in races because the value (and any other value that might reference it) isn’t used in the caller after the point of sending allowing code like the following to compile:
+
+  ```swift
+     actor MyActor {
+         init(_ x: NonSendableType) { ... }
+     }
+     
+     func useValue() {
+       let x = NonSendableType()
+       let a = await MyActor(x) // Error without Region Based Isolation!
+     }
+  ```
+
+  (129182113)
+- Region Based Isolation is now extended to enable the application of an explicit `sending` annotation to function parameters and results. A function parameter or result that is annotated with `sending` is required to be disconnected at the function boundary and thus possesses the capability of being safely sent across an isolation domain or merged into an actor-isolated region in the function’s body or the function’s caller respectively. Example:
+
+  ```swift
+     func parameterWithoutSending(_ x: NonSendableType) async {
+       // Error! Cannot send a task-isolated value to the main actor!
+       await transferToMainActor(x)
+     }
+     
+     func parameterWithSending(_ x: sending NonSendableType) async {
+       // Ok since `x` is `sending` and thus disconnected.
+       await transferToMainActor(x)
+     }
+  ```
+
+  [SE-0430](https://github.com/apple/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md)  (129182529)
+- The compiler would now automatically employ `Sendable` on functions and key path literal expressions that cannot capture non-Sendable values.
+
+  This includes partially-applied and unapplied instance methods of `Sendable` types, as well as non-local functions. Additionally, it is now disallowed to utilize `@Sendable` on instance methods of non-Sendable types.
+
+  Let’s use the following type to illustrate the new inference rules:
+
+  ```swift
+     public struct User {
+       var name: String
+   
+       func getAge() -> Int { ... }
+     }
+  ```
+
+  Key path `\User.name` would be inferred as `WritableKeyPath<User, String> & Sendable` because it doesn’t capture any non-Sendable values.
+
+  The same applies to keypath-as-function conversions:
+
+  ```swift
+     let _: @Sendable (User) -> String = \User.name // Ok
+  ```
+
+  A function value produced by an un-applied reference to `getAge` would be marked as `@Sendable` because `User` is a `Sendable` struct:
+
+  ```swift
+     let _ = User.getAge // Inferred as `@Sendable (User) -> @Sendable () -> Int`
+   
+     let user = User(...)
+     user.getAge // Inferred as `@Sendable () -> Int`
+  ```
+
+  [SE-0418](https://github.com/apple/swift-evolution/blob/main/proposals/0418-inferring-sendable-for-methods.md)  (129182930)
+- `async` functions can now explicitly inherit the isolation of their caller by declaring an `isolated` parameter with the default value of `#isolation`:
+
+  ```swift
+   func poll(isolation: isolated (any Actor)? = #isolation) async -> [Item] {
      // implementation
    }
-``` The isolation can read with the `.isolation` property, which has type `(any Actor)?`: ```swift
-   let iso = operation.isolation
-``` This capability has been adopted by the task-creation APIs in the standard library.  As a result, creating a task with an actor-isolated function will now synchronously enqueue the task on the actor, which can be used for transitive event-ordering guarantees if the actor guarantees that jobs will be run in the order they are enqueued, as `@MainActor` does.  If the function is not explicitly isolated, Swift still retains the right to optimize enqueues for functions that actually start by doing work with different isolation from their formal isolation. [`SE-0431`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0431-isolated-any-functions.md)  (129183477)
-- Serial executor gains a new customization point `checkIsolation()`, which can be implemented by custom executor implementations in order to provide a last resort check before the isolation asserting APIs such as `Actor.assumeIsolated` or `assertIsolated` fail and crash. This specifically enables Dispatch to implement more sophisticated isolation checking, and now even an actor which is “on a queue which is targeting another specific queue” can be properly detected using these APIs. [`SE-0424`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0424-custom-isolation-checking-for-serialexecutor.md)  (129183881)
-- Closures can now appear in pack expansion expressions, which allows you to construct a parameter pack of closures where each closure captures the corresponding element of some other parameter pack. For example: ```swift
-   struct Manager<each T> {
-     let fn: (repeat () -> (each T))
- 
-     init(_ t: repeat each T) {
-       fn = (repeat { each t })
+  ```
+
+  When the caller is actor-isolated, this allows it to pass isolated state to the function, which would otherwise have concurrency problems.  The function may also be able to eliminate unwanted scheduling changes, such as when it can quickly return in a fast path without needing to suspend.
+
+  [SE-0420](https://github.com/apple/swift-evolution/blob/main/proposals/0420-inheritance-of-actor-isolation.md)  (129183122)
+- You can now use `@preconcurrency` attribute to replace static actor isolation checking with dynamic checks for witnesses of synchronous nonisolated protocol requirements when the witness is isolated. This is common when Swift programs need to interoperate with frameworks written in C/C++/Objective-C whose implementations cannot participate in static data race safety.
+
+  ```swift
+     public protocol ViewDelegateProtocol {
+       func respondToUIEvent()
      }
+  ```
+
+  It’s now possible for a `@MainActor`-isolated type to conform to `ViewDelegateProtocol` by marking conformance declaration as `@preconcurrency`:
+
+  ```swift
+     @MainActor
+     class MyViewController: ViewDelegateProtocol {
+       func respondToUIEvent() {
+         // implementation...
+       }
+     }
+  ```
+
+  The compiler would emit dynamic checks into the `respondToUIEvent()` witness to make sure that it’s always executed in `@MainActor` isolated context.
+
+  Additionally, the compiler would emit dynamic actor isolation checks for:
+
+  - `@objc` thunks of synchronous actor-isolated members of classes.
+- Synchronous actor-isolated function values passed to APIs that erase actor isolation and haven’t yet adopted strict concurrency checking.
+- Call-sites of synchronous actor-isolated functions imported from Swift 6 libraries.
+
+  The dynamic actor isolation checks can be disabled using the flag `-disable-dynamic-actor-isolation`. [SE-0423](https://github.com/apple/swift-evolution/blob/main/proposals/0423-dynamic-actor-isolation.md)  (129183347)
+- You can now require a function value to carry its actor isolation dynamically in a way that can be directly read by clients:
+
+  ```swift
+     func apply<R>(count: Int,
+                   operation: @isolated(any) async () -> R) async -> [R]
+         where R: Sendable {
+       // implementation
+     }
+  ```
+
+  The isolation can read with the `.isolation` property, which has type `(any Actor)?`:
+
+  ```swift
+     let iso = operation.isolation
+  ```
+
+  This capability has been adopted by the task-creation APIs in the standard library.  As a result, creating a task with an actor-isolated function will now synchronously enqueue the task on the actor, which can be used for transitive event-ordering guarantees if the actor guarantees that jobs will be run in the order they are enqueued, as `@MainActor` does.  If the function is not explicitly isolated, Swift still retains the right to optimize enqueues for functions that actually start by doing work with different isolation from their formal isolation. [SE-0431](https://github.com/apple/swift-evolution/blob/main/proposals/0431-isolated-any-functions.md)  (129183477)
+- Serial executor gains a new customization point `checkIsolation()`, which can be implemented by custom executor implementations in order to provide a last resort check before the isolation asserting APIs such as `Actor.assumeIsolated` or `assertIsolated` fail and crash.
+
+  This specifically enables Dispatch to implement more sophisticated isolation checking, and now even an actor which is “on a queue which is targeting another specific queue” can be properly detected using these APIs. [SE-0424](https://github.com/apple/swift-evolution/blob/main/proposals/0424-custom-isolation-checking-for-serialexecutor.md)  (129183881)
+- Closures can now appear in pack expansion expressions, which allows you to construct a parameter pack of closures where each closure captures the corresponding element of some other parameter pack. For example:
+
+  ```swift
+     struct Manager<each T> {
+       let fn: (repeat () -> (each T))
+   
+       init(_ t: repeat each T) {
+         fn = (repeat { each t })
+       }
+     }
+  ```
+
+  (129184039)
+- Distributed actors now have the ability to support complete split server / client systems, thanks to the new `@Resolvable` macro and runtime changes.
+
+  It is now possible to share an “API module” between a client and server application, declare a resolvable distributed actor protocol with the expected API contract and perform calls on it, without knowing the specific type the server is implementing those actors as.
+
+  Declaring such protocol looks like this:
+
+  ```swift
+   import Distributed 
+   
+   @Resolvable
+   protocol Greeter where ActorSystem: DistributedActorSystem<any Codable> {
+     distributed func greet(name: String) -> String
    }
-``` (129184039)
-- Distributed actors now have the ability to support complete split server / client systems, thanks to the new `@Resolvable` macro and runtime changes. It is now possible to share an “API module” between a client and server application, declare a resolvable distributed actor protocol with the expected API contract and perform calls on it, without knowing the specific type the server is implementing those actors as. Declaring such protocol looks like this: ```swift
- import Distributed 
- 
- @Resolvable
- protocol Greeter where ActorSystem: DistributedActorSystem<any Codable> {
-   distributed func greet(name: String) -> String
- }
-``` (See [`SE-0428`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0428-resolve-distributed-actor-protocols.md) for further examples)  (129184344)
+  ```
+
+  (See [SE-0428](https://github.com/apple/swift-evolution/blob/main/proposals/0428-resolve-distributed-actor-protocols.md) for further examples)  (129184344)
 
 ###### Resolved Issues
 
@@ -881,9 +1108,15 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: The static methods of C++ classes imported to Swift are no longer getting “Mutating” suffix when there is a non-static const member function with the same name.  (120858502)
 - Fixed: Ownership errors inside of a `switch` statement with a non-`Copyable` subject may lead to compiler crashes instead of diagnosing the error.  (123604613)
 - Fixed: Calling a borrowing method on a noncopyable existential (boxed protocol type) emits an error saying “usage of a noncopyable type that compiler can’t verify”  (125864434)
-- Fixed: With the implementation of [`SE-0110`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0110-distinguish-single-tuple-arg.md), a closure parameter syntax consisting of only a parameter type — and no parameter name — was accidentally made legal for certain unambiguous type syntaxes in Swift 4. For example: ```swift
-   let closure = { ([Int]) in }
-``` Having been [`gated`](https://developer.apple.comhttps://github.com/apple/swift/pull/28171) behind a compiler warning since at least Swift 5.2, this syntax is now rejected. [`#70065`](https://developer.apple.comhttps://github.com/apple/swift/pull/70065)  (125992431)
+- Fixed: With the implementation of [SE-0110](https://github.com/apple/swift-evolution/blob/main/proposals/0110-distinguish-single-tuple-arg.md), a closure parameter syntax consisting of only a parameter type — and no parameter name — was accidentally made legal for certain unambiguous type syntaxes in Swift 4. For example:
+
+  ```swift
+     let closure = { ([Int]) in }
+  ```
+
+  Having been [gated](https://github.com/apple/swift/pull/28171) behind a compiler warning since at least Swift 5.2, this syntax is now rejected.
+
+  [#70065](https://github.com/apple/swift/pull/70065)  (125992431)
 - Fixed: _SwiftConcurrencyShims used to declare the `exit` function, even though it might not be available. The declaration has been removed, and must be imported from the appropriate C library module (e.g. Darwin or SwiftGlibc).  (125992667)
 - Fixed: Writing a composition of a protocol and ~Copyable in the inheritance clause of a struct or enum results in incorrect generated swiftinterface, where ~Copyable is missing.  (126090425)
 - Fixed: Accessing a value in memory through an `UnsafeBufferPointer` of `~Copyable` type may raise a spurious “unexpected exclusivity violation” error.  (127335590)
@@ -897,17 +1130,25 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 ###### Known Issues
 
 - By default, async initializers on actors use flow-sensitive isolation: at first, the initializer is a non-isolated function, but it becomes isolated to the actor when the actor object is fully initialized.  There is a known issue in this logic when the actor is initialized by delegating to another initializer call, and it is possible to observe data races if the actor is shared with concurrent contexts, then accessed later during the initializer.  Developers should take care when writing such initializers to avoid these data races.  This does not apply to initializers for non-actor types, non-async initializers, initializers that do not delegate to other initializers, or initializers that are explicitly non-isolated or isolated to a global actor, such as `@MainActor`.  (87485045)
-- When a `let` binding inside of a function has a `~Copyable` type, and the initialization occurs after the declaration, then the compiler may either crash or raise a spurious “copy of noncopyable” error diagnostic: ```None
- let x: NonCopyableType
- x = NonCopyableType()
-``` (126774469) **Workaround:** Either refactor the code so that the `let` binding is immediately initialized in its declaration, or change the `let` into a `var` binding. ```None
- let x = NonCopyableType()
- 
- // or:
- 
- var x: NonCopyableType
- x = NonCopyableType()
-```
+- When a `let` binding inside of a function has a `~Copyable` type, and the initialization occurs after the declaration, then the compiler may either crash or raise a spurious “copy of noncopyable” error diagnostic:
+
+  ```
+   let x: NonCopyableType
+   x = NonCopyableType()
+  ```
+
+  (126774469)
+
+  **Workaround:** Either refactor the code so that the `let` binding is immediately initialized in its declaration, or change the `let` into a `var` binding.
+
+  ```
+   let x = NonCopyableType()
+   
+   // or:
+   
+   var x: NonCopyableType
+   x = NonCopyableType()
+  ```
 - Calling a consuming method on a noncopyable existential (boxed protocol type) emits an error saying “usage of a noncopyable type that compiler can’t verify”  (128696001)
 - In functions that are isolated to an optional actor reference, the Swift compiler does not currently understand that accesses to `actor!` and `actor?` are also isolated as described in SE-0420.  (133095873)
 - The closure passed to Task.init and Task.detached was changed from @Sendable to sending. As a result, the compiler no longer tells the programmer exactly which captured values create the potential for a data-race, making it difficult to determine how to fix this error. Instead the compiler prints out that the closure is a ‘task-isolated’ value without describing that the closure is ‘task-isolated’ since one of the variables that closure captures may still be used by code in the task where the closure is formed.  (133798044)
@@ -923,8 +1164,8 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - `swift test` now supports running tests written using Swift Testing. To enable these tests at the command line, pass `--enable-swift-testing`.  (114997435)
 - Swift Testing is enabled by default in `swift build` and `swift test`. It can be explicitly disabled with `--disable-swift-testing.`  (120864035)
 - `swiftLanguageVersion` can be specified at the target level, allowing for gradual per-target migration to the Swift 6 language mode.  (125732014)
-- [`SE-0301`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0301-package-editing-commands.md) has been implemented, allowing `Package.swift` to be edited through new package commands `add-dependency`, `add-product`, and `add-target`. See `swift package <command> -h` for more details.  (126377239)
-- `swiftLanguageVersions` and the new `swiftLanguageVersion` setting have been renamed to `swiftLanguageModes` and `swiftLanguageMode` respectively as per [`SE-0441`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/0441-formalize-language-mode-terminology.md).  (132484168)
+- [SE-0301](https://github.com/apple/swift-evolution/blob/main/proposals/0301-package-editing-commands.md) has been implemented, allowing `Package.swift` to be edited through new package commands `add-dependency`, `add-product`, and `add-target`. See `swift package <command> -h` for more details.  (126377239)
+- `swiftLanguageVersions` and the new `swiftLanguageVersion` setting have been renamed to `swiftLanguageModes` and `swiftLanguageMode` respectively as per [SE-0441](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0441-formalize-language-mode-terminology.md).  (132484168)
 
 ###### Resolved Issues
 
@@ -959,7 +1200,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Test Plans now support including or excluding Swift Testing tests and suites. Whenever at least one Swift Testing test or suite is referenced, all test identifiers in the JSON-based document are re-encoded using a new, hierarchical structure.  (71461811)
 - The Test Navigator now displays information about the arguments passed to each Swift Testing parameterized test. This information is shown shortly after a Test action is initiated. Selecting an individual set of arguments shows details about them and their sub-values in a source editor gap at the location of that test. Clicking the Run button for a set of arguments causes their associated test to re-run with the selected arguments. (Note: This is supported for arguments which conform to `Codable` or another protocol supported by Swift Testing — see its documentation for more details.)  (91899389)
-- Xcode 16 includes Swift Testing, an all-new testing framework built for Swift from the ground up. It includes expressive APIs that make it easy to write and organize tests. It provides detailed output when a test fails using macros like `#expect`. And it scales to large codebases with features like parameterization to easily repeat a test with different arguments. Swift Testing tests are discovered automatically in Xcode 16 and shown in the Test Navigator and source editor where they can be run selectively. Their results are shown in the Test Report and included in .xcresult bundles. Test bundle targets may contain a mixture of Swift Testing tests and XCTests.  (103401672)
+- Xcode 16 includes Swift Testing, an all-new testing framework built for Swift from the ground up. It includes expressive APIs that make it easy to write and organize tests. It provides detailed output when a test fails using macros like `#expect`. And it scales to large codebases with features like parameterization to easily repeat a test with different arguments.
+
+  Swift Testing tests are discovered automatically in Xcode 16 and shown in the Test Navigator and source editor where they can be run selectively. Their results are shown in the Test Report and included in .xcresult bundles. Test bundle targets may contain a mixture of Swift Testing tests and XCTests.  (103401672)
 - When an expectation such as `#expect` in a Swift Testing test fails, details about the expression and its sub-values are captured automatically. Expanding the failure message and clicking “Show” causes these details to be shown in a source editor gap on the line where the failure occurred.  (117535385)
 - The Test Plan editor now support including or excluding Swift Testing tests and suites by tag.  In the top of the Test Plan editor there is a filter field where tags can be added.  There is both an include and exclude field where there is an option to select between including/excluding all or any of the tags in the field for the Test Plan.  All is the default.  (118952285)
 - In the test navigator, there is now an ability to filter the outline view’s content for tests that have either been previously executed or never executed  (120959490)
@@ -980,9 +1223,11 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Using `await confirmation {}` or `await withKnownIssue {}` with an actor-isolated closure fails to compile.  (134375046) **Workaround:** Pass an explicitly `@Sendable` closure to these functions.
+- Using `await confirmation {}` or `await withKnownIssue {}` with an actor-isolated closure fails to compile.  (134375046)
 
-##### Textureconverter
+  **Workaround:** Pass an explicitly `@Sendable` closure to these functions.
+
+##### TextureConverter
 
 ###### New Features
 
@@ -1006,13 +1251,13 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Fixed: When running in a virtualized macOS environment, Apple ID sign-in is not supported in Xcode.  (127624414)
 
-##### Visionos Sdk
+##### visionOS SDK
 
 ###### Resolved Issues
 
 - Fixed: Warnings generated by realitytool print “unknown” instead of the deployment target  (131497951)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -1047,19 +1292,19 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Fixed: Playgrounds that use packages may not build.  (132428278)
 
-##### Xcodebuild
+##### xcodebuild
 
 ###### Resolved Issues
 
 - Fixed an issue where xcodebuild silently selects the first compatible run destination when it fails to match the destination specifier provided by the user.  (112043381)
 
-##### Xcresulttool
+##### xcresulttool
 
 ###### New Features
 
 - The xcresulttool CLI has introduced new interfaces to streamline the extraction of test and other results data from xcresult bundles.  (118990069)
 
-##### Xctest
+##### XCTest
 
 ###### New Features
 
@@ -1068,13 +1313,14 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ## See Also
 
-- [Xcode 16.4 Release Notes](xcode-16_4-release-notes.md)
+### Xcode 16
+- [Xcode 16.4 Release Notes](./xcode-16_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.3 Release Notes](xcode-16_3-release-notes.md)
+- [Xcode 16.3 Release Notes](./xcode-16_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.2 Release Notes](xcode-16_2-release-notes.md)
+- [Xcode 16.2 Release Notes](./xcode-16_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.1 Release Notes](xcode-16_1-release-notes.md)
+- [Xcode 16.1 Release Notes](./xcode-16_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

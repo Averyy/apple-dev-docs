@@ -1,7 +1,8 @@
 # UISpringTimingParameters
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The timing information for animations that mimics the behavior of a spring.
 
@@ -19,53 +20,58 @@ The timing information for animations that mimics the behavior of a spring.
 class UISpringTimingParameters
 ```
 
+```objc
+@interface UISpringTimingParameters : NSObject
+```
+
 #### Overview
 
-The timing provided by a [`UISpringTimingParameters`](uispringtimingparameters.md) object mimics the behavior of a spring acting on the value of the property being animated. This property’s value accelerates toward its final value according to the relative force of the spring, which you configure. It then oscillates around that final value until it comes to a rest. The speed at which a property animates to its new value is based on the initial velocity of the value and the damping ratio applied to the spring. You can specify those values directly or using analogous spring-related values.
+The timing provided by a [`UISpringTimingParameters`](./uispringtimingparameters.md) object mimics the behavior of a spring acting on the value of the property being animated. This property’s value accelerates toward its final value according to the relative force of the spring, which you configure. It then oscillates around that final value until it comes to a rest. The speed at which a property animates to its new value is based on the initial velocity of the value and the damping ratio applied to the spring. You can specify those values directly or using analogous spring-related values.
 
-Use instances of this class to specify custom timing curves when creating animations with objects that adopt the [`UIViewAnimating`](uiviewanimating.md) protocol, such as [`UIViewPropertyAnimator`](uiviewpropertyanimator.md). Spring animations are commonly used to modify a view’s position onscreen, but you can apply the timing to any of the view’s properties to get a similar type of animation timing.
+Use instances of this class to specify custom timing curves when creating animations with objects that adopt the [`UIViewAnimating`](./uiviewanimating.md) protocol, such as [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md). Spring animations are commonly used to modify a view’s position onscreen, but you can apply the timing to any of the view’s properties to get a similar type of animation timing.
 
 ## Topics
 
 ### Initializing a spring timing parameters object
-- [init()](uispringtimingparameters/init.md)
+- [init()](./uispringtimingparameters/init%28%29.md)
   Creates a default timing parameters object.
-- [convenience init(dampingRatio: CGFloat)](uispringtimingparameters/init(dampingratio:).md)
+- [convenience init(dampingRatio: CGFloat)](./uispringtimingparameters/init%28dampingratio%29.md)
   Creates a timing parameters object with the specified damping ratio.
-- [init(dampingRatio: CGFloat, initialVelocity: CGVector)](uispringtimingparameters/init(dampingratio:initialvelocity:).md)
+- [init(dampingRatio: CGFloat, initialVelocity: CGVector)](./uispringtimingparameters/init%28dampingratio,initialvelocity%29.md)
   Creates a timing parameters object with the specified damping ratio and initial velocity.
-- [init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity: CGVector)](uispringtimingparameters/init(mass:stiffness:damping:initialvelocity:).md)
+- [init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity: CGVector)](./uispringtimingparameters/init%28mass,stiffness,damping,initialvelocity%29.md)
   Creates a timing parameters object with the specified spring stiffness, mass, damping coefficient, and initial velocity.
-- [init?(coder: NSCoder)](uispringtimingparameters/init(coder:).md)
+- [init?(coder: NSCoder)](./uispringtimingparameters/init%28coder%29.md)
   Creates a timing parameters object from data in an unarchiver.
 ### Getting the initial velocity
-- [var initialVelocity: CGVector](uispringtimingparameters/initialvelocity.md)
+- [var initialVelocity: CGVector](./uispringtimingparameters/initialvelocity.md)
   The target property’s rate of change at the start of a spring animation, enabling a smooth transition into the animation.
 ### Initializers
-- [convenience init(duration: TimeInterval, bounce: CGFloat)](uispringtimingparameters/init(duration:bounce:).md)
-- [init(duration: TimeInterval, bounce: CGFloat, initialVelocity: CGVector)](uispringtimingparameters/init(duration:bounce:initialvelocity:).md)
+- [convenience init(duration: TimeInterval, bounce: CGFloat)](./uispringtimingparameters/init%28duration,bounce%29.md)
+- [init(duration: TimeInterval, bounce: CGFloat, initialVelocity: CGVector)](./uispringtimingparameters/init%28duration,bounce,initialvelocity%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UITimingCurveProvider](uitimingcurveprovider.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UITimingCurveProvider](./uitimingcurveprovider.md)
 
 ## See Also
 
-- [protocol UITimingCurveProvider](uitimingcurveprovider.md)
+### Timing curves
+- [protocol UITimingCurveProvider](./uitimingcurveprovider.md)
   An interface for providing the timing information needed to perform animations.
-- [class UICubicTimingParameters](uicubictimingparameters.md)
+- [class UICubicTimingParameters](./uicubictimingparameters.md)
   The timing information for animations in the form of a cubic Bézier curve.
 
 

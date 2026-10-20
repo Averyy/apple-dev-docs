@@ -1,10 +1,11 @@
 # kSearchOptionsNone
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kSearchOptionsNone: IOBluetoothDeviceSearchOptionsBits { get }
 ```
 
+```c
+kSearchOptionsNone
+```
+
 ## See Also
 
-- [var kSearchOptionsAlwaysStartInquiry: IOBluetoothDeviceSearchOptionsBits](ksearchoptionsalwaysstartinquiry.md)
-- [var kSearchOptionsDiscardCachedResults: IOBluetoothDeviceSearchOptionsBits](ksearchoptionsdiscardcachedresults.md)
+### Constants
+- [var kSearchOptionsAlwaysStartInquiry: IOBluetoothDeviceSearchOptionsBits](./ksearchoptionsalwaysstartinquiry.md)
+- [var kSearchOptionsDiscardCachedResults: IOBluetoothDeviceSearchOptionsBits](./ksearchoptionsdiscardcachedresults.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSKStartTermChars
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSKStartTermChars: CFString!
+```
+
+```c
+const CFStringRef kSKStartTermChars;
 ```
 
 #### Discussion

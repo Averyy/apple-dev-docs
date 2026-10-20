@@ -1,7 +1,8 @@
 # MPSGraphOptimizationProfile.powerEfficiency
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Graph optimized for power efficiency.
 
@@ -17,6 +18,10 @@ Graph optimized for power efficiency.
 
 ```swift
 case powerEfficiency
+```
+
+```c
+MPSGraphOptimizationProfilePowerEfficiency
 ```
 
 

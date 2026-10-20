@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.emissiveColor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The emissive color output channel for the shader result.
 
@@ -19,7 +20,8 @@ case emissiveColor
 
 ## See Also
 
-- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.baseColor](lowlevelmaterialresource/simplesurfacedescriptor/outputchannel-swift.enum/basecolor.md)
+### Specifying output channels
+- [LowLevelMaterialResource.SimpleSurfaceDescriptor.OutputChannel.baseColor](./basecolor.md)
   The base color output channel for the shader result.
 
 

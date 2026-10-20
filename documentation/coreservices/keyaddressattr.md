@@ -1,9 +1,10 @@
 # keyAddressAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Address of a target or client application. See also [`AEAddressDesc`](aeaddressdesc.md).
+Address of a target or client application. See also [`AEAddressDesc`](./aeaddressdesc.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

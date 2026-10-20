@@ -1,7 +1,8 @@
 # init(sensitivity:type:masked:side:clampingRange:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 init(sensitivity: HKQuantity, type: HKAudiogramConductionType, masked: Bool, side: HKAudiogramSensitivityTestSide, clampingRange: HKAudiogramSensitivityPointClampingRange?) throws
+```
+
+```objc
+- (instancetype) initWithSensitivity:(HKQuantity *) sensitivity type:(HKAudiogramConductionType) type masked:(BOOL) masked side:(HKAudiogramSensitivityTestSide) side clampingRange:(HKAudiogramSensitivityPointClampingRange *) clampingRange error:(NSError **) errorOut;
 ```
 
 

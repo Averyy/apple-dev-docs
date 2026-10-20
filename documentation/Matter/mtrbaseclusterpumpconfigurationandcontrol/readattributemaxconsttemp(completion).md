@@ -1,7 +1,8 @@
 # readAttributeMaxConstTemp(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxConstTemp(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxConstTemp() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxConstTempWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

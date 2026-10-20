@@ -1,7 +1,8 @@
 # MPSCNNNeuronGeLUNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,22 +18,26 @@
 class MPSCNNNeuronGeLUNode
 ```
 
+```objc
+@interface MPSCNNNeuronGeLUNode : MPSCNNNeuronNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnneurongelunode/init(source:).md)
+- [init(source: MPSNNImageNode)](./mpscnnneurongelunode/init%28source%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNNeuronNode](mpscnnneuronnode.md)
+- [MPSCNNNeuronNode](./mpscnnneuronnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

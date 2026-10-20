@@ -1,7 +1,8 @@
 # receive(_:)
 
 **Framework**: Playground Support  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Allows the proxy to receive a live view message from a remote object.
 
@@ -35,11 +36,12 @@ func receive(_ message: PlaygroundValue) {
 ## Relationships
 
 ### From Protocol
-- [PlaygroundLiveViewMessageHandler](playgroundliveviewmessagehandler.md)
+- [PlaygroundLiveViewMessageHandler](../playgroundliveviewmessagehandler.md)
 
 ## See Also
 
-- [var delegate: PlaygroundRemoteLiveViewProxyDelegate?](playgroundremoteliveviewproxy/3029565-delegate.md)
+### Receiving Messages
+- [var delegate: PlaygroundRemoteLiveViewProxyDelegate?](./api-3029565-delegate.md)
   A delegate you use to handle messages from the live view.
 
 

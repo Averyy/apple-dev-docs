@@ -1,7 +1,8 @@
 # CNAuthorizationStatus.restricted
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The application is not authorized to access contact data. The user cannot change this application’s status, possibly due to active restrictions such as parental controls being in place.
 
@@ -19,15 +20,20 @@ The application is not authorized to access contact data. The user cannot change
 case restricted
 ```
 
+```c
+CNAuthorizationStatusRestricted
+```
+
 ## See Also
 
-- [CNAuthorizationStatus.notDetermined](cnauthorizationstatus/notdetermined.md)
+### Authorization statuses
+- [CNAuthorizationStatus.notDetermined](./notdetermined.md)
   The user has not yet made a choice regarding whether the application may access contact data.
-- [CNAuthorizationStatus.denied](cnauthorizationstatus/denied.md)
+- [CNAuthorizationStatus.denied](./denied.md)
   The user explicitly denied access to contact data for the application.
-- [CNAuthorizationStatus.authorized](cnauthorizationstatus/authorized.md)
+- [CNAuthorizationStatus.authorized](./authorized.md)
   The application is authorized to access contact data.
-- [CNAuthorizationStatus.limited](cnauthorizationstatus/limited.md)
+- [CNAuthorizationStatus.limited](./limited.md)
   The app has access to a limited subset of contacts, chosen by the person using the app.
 
 

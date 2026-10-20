@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the connection group object and leaves the network group.
 
@@ -22,11 +23,12 @@ final func cancel()
 
 ## See Also
 
-- [var stateUpdateHandler: ((NWConnectionGroup.State) -> Void)?](nwconnectiongroup/stateupdatehandler.md)
+### Managing Groups
+- [var stateUpdateHandler: ((NWConnectionGroup.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives connection group state updates.
-- [NWConnectionGroup.State](nwconnectiongroup/state-swift.enum.md)
+- [NWConnectionGroup.State](./state-swift.enum.md)
   States that indicate whether you can use a connection group to send and receive messages.
-- [var state: NWConnectionGroup.State](nwconnectiongroup/state-swift.property.md)
+- [var state: NWConnectionGroup.State](./state-swift.property.md)
   The current state of the connection group.
 
 

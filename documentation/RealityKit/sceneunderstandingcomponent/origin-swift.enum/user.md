@@ -1,7 +1,8 @@
 # SceneUnderstandingComponent.Origin.user
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scene-understanding component that is owned and created by the developer. Component of this origin type will model an object in virtual environment.
 

@@ -1,7 +1,8 @@
 # com.apple.developer.storekit.external-purchase
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your app can offer external purchases.
 
@@ -14,17 +15,18 @@ A Boolean value that indicates whether your app can offer external purchases.
 - visionOS 1.1+
 - watchOS 10.4+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.storekit.external-purchase`
+- **Type**: boolean
 
 #### Discussion
 
 Qualifying apps may offer external purchases within the app. To offer external purchases in your app, complete a request for this entitlement. For more information about qualifying apps and to request this entitlement, see:
 
-- [`Using alternative payment options on the App Store in the European Union`](https://developer.apple.comhttps://developer.apple.com/go/?id=storekit-external-purchase-eu)
-- [`Distributing dating apps in the Netherlands`](https://developer.apple.comhttps://developer.apple.com/support/storekit-external-entitlement/)
-- [`Distributing apps using a third-party payment provider in South Korea`](https://developer.apple.comhttps://developer.apple.com/support/storekit-external-entitlement-kr/)
+- [Using alternative payment options on the App Store in the European Union](https://developer.apple.com/go/?id=storekit-external-purchase-eu)
+- [Distributing dating apps in the Netherlands](https://developer.apple.com/support/storekit-external-entitlement/)
+- [Distributing apps using a third-party payment provider in South Korea](https://developer.apple.com/support/storekit-external-entitlement-kr/)
 
 If your account receives this entitlement, which is also known as the StoreKit External Purchase entitlement, add it to your app by opening the project’s .`entitlements` file in Xcode. Then add the following key and set the corresponding value to `true`:
 
@@ -37,17 +39,18 @@ If your account receives this entitlement, which is also known as the StoreKit E
 </plist>
 ```
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
+For more information, see [External Purchase](../../StoreKit/external-purchase.md).
 
 ## See Also
 
-- [StoreKit external purchases or offers entitlement](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+### StoreKit
+- [StoreKit external purchases or offers entitlement](./com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
-- [com.apple.developer.storekit.external-link.account](entitlements/com.apple.developer.storekit.external-link.account.md)
+- [com.apple.developer.storekit.external-link.account](./com.apple.developer.storekit.external-link.account.md)
   A Boolean value that indicates whether your app can link to an external website for account creation or management.
-- [com.apple.developer.storekit.external-purchase-link](entitlements/com.apple.developer.storekit.external-purchase-link.md)
+- [com.apple.developer.storekit.external-purchase-link](./com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
-- [com.apple.developer.storekit.external-purchase-link-streaming](entitlements/com.apple.developer.storekit.external-purchase-link-streaming.md)
+- [com.apple.developer.storekit.external-purchase-link-streaming](./com.apple.developer.storekit.external-purchase-link-streaming.md)
   An entitlement that grants a qualifying music-streaming app the ability to communicate and promote offers.
 
 

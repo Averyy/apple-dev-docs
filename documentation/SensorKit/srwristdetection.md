@@ -1,7 +1,8 @@
 # SRWristDetection
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration of a watch on the wearer’s wrist.
 
@@ -16,57 +17,62 @@ The configuration of a watch on the wearer’s wrist.
 class SRWristDetection
 ```
 
+```objc
+@interface SRWristDetection : NSObject
+```
+
 #### Overview
 
-The [`onWristState`](srsensor/onwriststate.md) sensor provides this class as its [`sample`](srfetchresult/sample.md) type.
+The [`onWristState`](./srsensor/onwriststate.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Inspecting Watch Configuration
-- [var crownOrientation: SRWristDetection.CrownOrientation](srwristdetection/crownorientation-swift.property.md)
+- [var crownOrientation: SRWristDetection.CrownOrientation](./srwristdetection/crownorientation-swift.property.md)
   A value that indicates the direction the Digital Crown faces with respect to the user.
-- [SRWristDetection.CrownOrientation](srwristdetection/crownorientation-swift.enum.md)
+- [SRWristDetection.CrownOrientation](./srwristdetection/crownorientation-swift.enum.md)
   Directions the Digital Crown can face with respect to the wearer.
-- [var onWrist: Bool](srwristdetection/onwrist.md)
+- [var onWrist: Bool](./srwristdetection/onwrist.md)
   A value that indicates whether the watch is on the user’s wrist.
-- [var onWristDate: Date?](srwristdetection/onwristdate.md)
+- [var onWristDate: Date?](./srwristdetection/onwristdate.md)
   The date and time that the user puts their Apple Watch on their wrist.
-- [var offWristDate: Date?](srwristdetection/offwristdate.md)
+- [var offWristDate: Date?](./srwristdetection/offwristdate.md)
   The date and time that the user takes their Apple Watch off their wrist.
-- [var wristLocation: SRWristDetection.WristLocation](srwristdetection/wristlocation-swift.property.md)
+- [var wristLocation: SRWristDetection.WristLocation](./srwristdetection/wristlocation-swift.property.md)
   A value that indicates the wrist where the user wears the watch.
-- [SRWristDetection.WristLocation](srwristdetection/wristlocation-swift.enum.md)
+- [SRWristDetection.WristLocation](./srwristdetection/wristlocation-swift.enum.md)
   Preferences for where a user wears a watch.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SRAmbientLightSample](srambientlightsample.md)
+### Interpreting data
+- [class SRAmbientLightSample](./srambientlightsample.md)
   The amount of ambient light in the user’s environment.
-- [class SRDeviceUsageReport](srdeviceusagereport.md)
+- [class SRDeviceUsageReport](./srdeviceusagereport.md)
   The frequency and relative duration that the user uses their device, particular Apple apps, or websites.
-- [class SRKeyboardMetrics](srkeyboardmetrics.md)
+- [class SRKeyboardMetrics](./srkeyboardmetrics.md)
   The configuration of a device’s keyboard and its usage patterns.
-- [class SRMediaEvent](srmediaevent.md)
+- [class SRMediaEvent](./srmediaevent.md)
   A user interaction with a media object, such as an image or a video.
-- [class SRMessagesUsageReport](srmessagesusagereport.md)
+- [class SRMessagesUsageReport](./srmessagesusagereport.md)
   An object that describes the user’s Messages app activity over a period of time.
-- [class SRPhoneUsageReport](srphoneusagereport.md)
+- [class SRPhoneUsageReport](./srphoneusagereport.md)
   An object that describes the user’s phone activity over a period of time.
-- [class SRVisit](srvisit.md)
+- [class SRVisit](./srvisit.md)
   The user’s progress in their daily travel routine.
 
 

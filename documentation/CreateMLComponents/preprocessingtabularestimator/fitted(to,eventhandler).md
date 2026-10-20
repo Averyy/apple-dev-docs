@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a composed transformer to a data frame of examples.
 
@@ -31,17 +32,18 @@ The fitted transformer.
 
 ## See Also
 
-- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](preprocessingtabularestimator/preprocessed(from:eventhandler:).md)
+### Preprocesing and fitting
+- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./preprocessed%28from,eventhandler%29.md)
   Preprocesses a data frame of examples.
-- [func fitted(toPreprocessed: DataFrame, eventHandler: EventHandler?) async throws -> PreprocessingTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingtabularestimator/fitted(topreprocessed:eventhandler:).md)
+- [func fitted(toPreprocessed: DataFrame, eventHandler: EventHandler?) async throws -> PreprocessingTabularEstimator<Preprocessor, Estimator>.Transformer](./fitted%28topreprocessed,eventhandler%29.md)
   Fits a transformer to a data frame of preprocessed features.
-- [PreprocessingTabularEstimator.Input](preprocessingtabularestimator/input.md)
+- [PreprocessingTabularEstimator.Input](./input.md)
   The input type.
-- [PreprocessingTabularEstimator.Intermediate](preprocessingtabularestimator/intermediate.md)
+- [PreprocessingTabularEstimator.Intermediate](./intermediate.md)
   The intermediate type.
-- [PreprocessingTabularEstimator.Output](preprocessingtabularestimator/output.md)
+- [PreprocessingTabularEstimator.Output](./output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

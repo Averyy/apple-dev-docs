@@ -1,6 +1,7 @@
 # Adding previews to your interface files
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Write code to test your views on different devices and configurations without needing to run your app.
 
@@ -8,15 +9,15 @@ Write code to test your views on different devices and configurations without ne
 
 Show previews of your views in the canvas by adding preview macros to your SwiftUI, UIKit, and AppKit files. The Swift preview macro is a snippet of code that displays and configures your view.
 
-![A screenshot of Xcode with the Project navigator on the left with an interface file selected, the code editor in the middle with a preview macro highlighted, and the canvas on the right showing the view in landscape orientation and with the device settings popover.](/images/com.apple.Xcode/adding-previews@2x.png)
+![A screenshot of Xcode with the Project navigator on the left with an interface file selected, the code editor in the middle with a preview macro highlighted, and the canvas on the right showing the view in landscape orientation and with the device settings popover.](https://developer.apple.com/tutorials/images/com.apple.Xcode/adding-previews@2x.png)
 
 You can change environment and device settings in the code or using controls in the canvas. To show the canvas next to the source editor, click Show Canvas in the upper-right corner of the toolbar. You can also give previews sample data to display that’s separate from your app.
 
-For more information on using the canvas, see [`Interacting with previews in the canvas`](interacting-with-previews-in-the-canvas.md). To generate previews using coding intelligence instead, see [`Generate playgrounds and previews`](using-coding-intelligence-in-the-source-editor#Generate-playgrounds-and-previews.md).
+For more information on using the canvas, see [Interacting with previews in the canvas](./interacting-with-previews-in-the-canvas.md). To generate previews using coding intelligence instead, see [Generate playgrounds and previews](./using-coding-intelligence-in-the-source-editor.md#Generate-playgrounds-and-previews).
 
-#### Add a Preview Macro
+#### Add a preview macro
 
-Add one of the `#Preview` macros to an interface file — such as [`Preview(_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:body:)) — to tell Xcode what to display in the canvas. In the body of the macro trailing closure, add code that creates and returns an instance of the view configuration you want to display.
+Add one of the `#Preview` macros to an interface file — such as [`Preview(_:body:)`](../SwiftUI/preview%28_,body%29.md) — to tell Xcode what to display in the canvas. In the body of the macro trailing closure, add code that creates and returns an instance of the view configuration you want to display.
 
 For SwiftUI, you configure a view in a preview macro. For UIKit and AppKit, you can configure either a view or view controller in a preview macro.
 
@@ -89,7 +90,7 @@ class WeatherView: NSView {
 }
 ```
 
-#### Capture Specific Previews in Code
+#### Capture specific previews in code
 
 In addition to the preview options Xcode provides, you can also customize and configure previews you want to reuse programmatically.
 
@@ -102,7 +103,7 @@ For example, you can add a name to more easily track what each preview displays.
 }
 ```
 
-Display a variant of the view by passing one or more configuration traits as a variadic argument list into the preview macro. For example, to display your view in the landscape left orientation, pass the [`landscapeLeft`](https://developer.apple.com/documentation/developertoolssupport/previewtrait/landscapeleft) type property into the  [`init(_:traits:body:)`](https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-8pemr) preview initializer to tell Xcode which orientation to display.
+Display a variant of the view by passing one or more configuration traits as a variadic argument list into the preview macro. For example, to display your view in the landscape left orientation, pass the [`landscapeLeft`](../DeveloperToolsSupport/previewtrait/landscapeleft.md) type property into the  [`init(_:traits:body:)`](../DeveloperToolsSupport/preview/init%28_,traits,body%29-8pemr.md) preview initializer to tell Xcode which orientation to display.
 
 **SwiftUI**:
 
@@ -137,9 +138,9 @@ Display a variant of the view by passing one or more configuration traits as a v
 }
 ```
 
-#### Tag Dynamic Properties for Use in Previews
+#### Tag dynamic properties for use in previews
 
-When a view depends on a [`Binding`](https://developer.apple.com/documentation/swiftui/binding) property wrapper, you can create a functional binding for that property and pass it into your preview using the [`Previewable()`](https://developer.apple.com/documentation/swiftui/previewable()) macro. This macro works on any variable conforming to the [`DynamicProperty`](https://developer.apple.com/documentation/swiftui/dynamicproperty) protocol.
+When a view depends on a [`Binding`](../SwiftUI/binding.md) property wrapper, you can create a functional binding for that property and pass it into your preview using the [`Previewable()`](../SwiftUI/previewable%28%29.md) macro. This macro works on any variable conforming to the [`DynamicProperty`](../SwiftUI/dynamicproperty.md) protocol.
 
 ```swift
 struct PlayButton: View {
@@ -168,15 +169,15 @@ struct PlayButton: View {
 
 Tagging a dynamic property with the `Previewable` macro eliminates the need to create wrapper views in previews.
 
-> **Note**: [`Previewable()`](https://developer.apple.com/documentation/swiftui/previewable()) is a SwiftUI-only macro and doesn’t apply to UIKit or AppKit previews.
+> **Note**: [`Previewable()`](../SwiftUI/previewable%28%29.md) is a SwiftUI-only macro and doesn’t apply to UIKit or AppKit previews.
 
-#### Make Complex Objects Reusable with a Preview Modifier
+#### Make complex objects reusable with a preview modifier
 
-To avoid recreating expensive objects for every preview that needs them, in SwiftUI you can create these objects once with the [`PreviewModifier`](https://developer.apple.com/documentation/swiftui/previewmodifier) and then pass the preview modifier into your preview using the [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:_:body:)) macro.
+To avoid recreating expensive objects for every preview that needs them, in SwiftUI you can create these objects once with the [`PreviewModifier`](../SwiftUI/previewmodifier.md) and then pass the preview modifier into your preview using the [`Preview(_:traits:_:body:)`](../SwiftUI/preview%28_,traits,_,body%29.md) macro.
 
 Expensive objects — such as objects that make network calls, perform disk access, or just take considerable time and effort to set up — can make your previews take longer to load. By creating these expensive objects once, and sharing them across all your previews, you make your previews more efficient.
 
-For example, if you have an app with an expensive [`Observable()`](https://developer.apple.com/documentation/observation/observable()) object:
+For example, if you have an app with an expensive [`Observable()`](../Observation/observable%28%29.md) object:
 
 ```swift
 @Observable
@@ -220,12 +221,12 @@ For every view you want to preview, you recreate and pass in that expensive obje
 }
 ```
 
-Instead, define the expensive object once and share it across multiple previews using the [`PreviewModifier`](https://developer.apple.com/documentation/swiftui/previewmodifier) protocol.
+Instead, define the expensive object once and share it across multiple previews using the [`PreviewModifier`](../SwiftUI/previewmodifier.md) protocol.
 
 1. Define a structure conforming to the `PreviewModifier` protocol.
-2. Implement the static [`makeSharedContext()`](https://developer.apple.com/documentation/swiftui/previewmodifier/makesharedcontext()-4zi8r) function returning the object with the expensive state.
-3. Inject that shared context into the view you want to preview using the [`body(content:context:)`](https://developer.apple.com/documentation/swiftui/previewmodifier/body(content:context:)) function.
-4. Add the modifier to the preview using the [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:_:body:)) macro.
+2. Implement the static [`makeSharedContext()`](../SwiftUI/previewmodifier/makesharedcontext%28%29-4zi8r.md) function returning the object with the expensive state.
+3. Inject that shared context into the view you want to preview using the [`body(content:context:)`](../SwiftUI/previewmodifier/body%28content,context%29.md) function.
+4. Add the modifier to the preview using the [`Preview(_:traits:_:body:)`](../SwiftUI/preview%28_,traits,_,body%29.md) macro.
 
 ```swift
 // Create a struct conforming to the PreviewModifier protocol.
@@ -251,7 +252,7 @@ struct SampleData: PreviewModifier {
 }
 ```
 
-#### Pass Views Only the Data They Need
+#### Pass views only the data they need
 
 When creating views, pass in only the data the view needs to display. Avoid passing in objects that fetch data; objects make setting up a view’s preview more complicated and less performant.
 
@@ -378,7 +379,7 @@ class CollaboratorCell: NSView {
 }
 ```
 
-#### Reduce Your App Size with Development Assets
+#### Reduce your app size with development assets
 
 To access resources in your previews, without shipping them in the final version of your app, use development assets in your Xcode project. Development assets give you access to resources such as images, video, JSON data, and code files in your previews, without increasing the size of your app.
 
@@ -392,13 +393,14 @@ Add items to the Development Assets of a target in Xcode as follows:
 
 ## See Also
 
-- [Creating an Xcode project for an app](creating-an-xcode-project-for-an-app.md)
+### Essentials
+- [Creating an Xcode project for an app](./creating-an-xcode-project-for-an-app.md)
   Set up a new project to start developing your app.
-- [Interacting with previews in the canvas](interacting-with-previews-in-the-canvas.md)
+- [Interacting with previews in the canvas](./interacting-with-previews-in-the-canvas.md)
   Use the canvas controls to test your view’s appearance and behavior on different devices and configurations.
-- [Running your app on simulated or physical devices](running-your-app-on-simulated-or-physical-devices.md)
+- [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Xcode updates](../updates/xcode.md)
+- [Xcode updates](../Updates/xcode.md)
   Learn about important changes to Xcode.
 
 

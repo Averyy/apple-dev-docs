@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a key code with a string value.
 

@@ -1,7 +1,8 @@
 # predicateForGroupsInContainer(withIdentifier:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate to find groups in the specified container.
 
@@ -19,9 +20,13 @@ Returns a predicate to find groups in the specified container.
 class func predicateForGroupsInContainer(withIdentifier containerIdentifier: String) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForGroupsInContainerWithIdentifier:(NSString *) containerIdentifier;
+```
+
 #### Return Value
 
-A predicate that you can use to fetch groups from [`CNContactStore`](cncontactstore.md).
+A predicate that you can use to fetch groups from [`CNContactStore`](../cncontactstore.md).
 
 ## Parameters
 
@@ -29,9 +34,10 @@ A predicate that you can use to fetch groups from [`CNContactStore`](cncontactst
 
 ## See Also
 
-- [class func predicateForGroups(withIdentifiers: [String]) -> NSPredicate](cngroup/predicateforgroups(withidentifiers:).md)
+### Generating Search Predicates for Groups
+- [class func predicateForGroups(withIdentifiers: [String]) -> NSPredicate](./predicateforgroups%28withidentifiers%29.md)
   Returns a predicate to find groups with the specified identifiers.
-- [class func predicateForSubgroupsInGroup(withIdentifier: String) -> NSPredicate](cngroup/predicateforsubgroupsingroup(withidentifier:).md)
+- [class func predicateForSubgroupsInGroup(withIdentifier: String) -> NSPredicate](./predicateforsubgroupsingroup%28withidentifier%29.md)
   Returns a predicate to find subgroups in the specified parent group.
 
 

@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a transformer with a new sequence of examples.
 
@@ -19,6 +20,8 @@ Updates a transformer with a new sequence of examples.
 ```swift
 func update(_ transformer: inout TreeClassifierModel<Label>, with input: DataFrame, eventHandler: EventHandler?) async throws
 ```
+
+Available when `Label` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # HMError.Code.accessoryIsBlocked
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating a blocked accessory.
 
@@ -19,25 +20,30 @@ An error indicating a blocked accessory.
 case accessoryIsBlocked
 ```
 
+```c
+HMErrorCodeAccessoryIsBlocked
+```
+
 ## See Also
 
-- [HMError.Code.accessoryIsBusy](hmerror/code/accessoryisbusy.md)
+### Accessory errors
+- [HMError.Code.accessoryIsBusy](./accessoryisbusy.md)
   An error indicating the accessory is busy.
-- [HMError.Code.accessoryIsSuspended](hmerror/code/accessoryissuspended.md)
+- [HMError.Code.accessoryIsSuspended](./accessoryissuspended.md)
   The accessory is suspended.
-- [HMError.Code.accessoryNotReachable](hmerror/code/accessorynotreachable.md)
+- [HMError.Code.accessoryNotReachable](./accessorynotreachable.md)
   An error indicating the accessory is not reachable over the network.
-- [HMError.Code.accessoryOutOfCompliance](hmerror/code/accessoryoutofcompliance.md)
+- [HMError.Code.accessoryOutOfCompliance](./accessoryoutofcompliance.md)
   An error indicating the accessory is out of compliance.
-- [HMError.Code.accessoryOutOfResources](hmerror/code/accessoryoutofresources.md)
+- [HMError.Code.accessoryOutOfResources](./accessoryoutofresources.md)
   An error indicating the accessory is out of resources.
-- [HMError.Code.accessoryPoweredOff](hmerror/code/accessorypoweredoff.md)
+- [HMError.Code.accessoryPoweredOff](./accessorypoweredoff.md)
   An error indicating the accessory is off.
-- [HMError.Code.accessoryResponseError](hmerror/code/accessoryresponseerror.md)
+- [HMError.Code.accessoryResponseError](./accessoryresponseerror.md)
   An error with the accessory’s response.
-- [HMError.Code.addAccessoryFailed](hmerror/code/addaccessoryfailed.md)
+- [HMError.Code.addAccessoryFailed](./addaccessoryfailed.md)
   A failed attempt to add an accessory.
-- [HMError.Code.incompatibleAccessory](hmerror/code/incompatibleaccessory.md)
+- [HMError.Code.incompatibleAccessory](./incompatibleaccessory.md)
   The accessory is incompatible.
 
 

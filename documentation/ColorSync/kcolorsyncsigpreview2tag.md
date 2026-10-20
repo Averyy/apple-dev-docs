@@ -1,7 +1,8 @@
 # kColorSyncSigPreview2Tag
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature of the preview tag for the saturation rendering intent.
 
@@ -20,11 +21,16 @@ The signature of the preview tag for the saturation rendering intent.
 var kColorSyncSigPreview2Tag: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncSigPreview2Tag;
+```
+
 ## See Also
 
-- [var kColorSyncSigPreview0Tag: Unmanaged<CFString>!](kcolorsyncsigpreview0tag.md)
+### Identifying preview tags
+- [var kColorSyncSigPreview0Tag: Unmanaged<CFString>!](./kcolorsyncsigpreview0tag.md)
   The signature of the preview tag for the perceptual rendering intent.
-- [var kColorSyncSigPreview1Tag: Unmanaged<CFString>!](kcolorsyncsigpreview1tag.md)
+- [var kColorSyncSigPreview1Tag: Unmanaged<CFString>!](./kcolorsyncsigpreview1tag.md)
   The signature of the preview tag for the media-relative colorimetric rendering intent.
 
 

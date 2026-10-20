@@ -1,7 +1,8 @@
 # SearchResponse.Place
 
 **Framework**: Apple Maps Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A structure returned by a search that describes a place.
 
@@ -10,7 +11,7 @@ A structure returned by a search that describes a place.
 
 ## Declaration
 
-```swift
+```
 object SearchResponse.Place
 ```
 
@@ -21,11 +22,12 @@ object SearchResponse.Place
 ## Relationships
 
 ### Inherits From
-- [Place](place.md)
+- [Place](../place.md)
 
 ## See Also
 
-- [object SearchResponse.PaginationInfo](searchresponse/paginationinfo-data.dictionary.md)
+### Place information returned by a search
+- [object SearchResponse.PaginationInfo](./paginationinfo-data.dictionary.md)
   An object that returns a page of search responses.
 
 

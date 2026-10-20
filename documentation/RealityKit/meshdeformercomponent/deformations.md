@@ -1,7 +1,8 @@
 # deformations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the deformations applied the entity
 

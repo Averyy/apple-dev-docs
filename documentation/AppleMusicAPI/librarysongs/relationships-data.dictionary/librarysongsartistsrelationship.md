@@ -1,7 +1,8 @@
 # LibrarySongs.Relationships.LibrarySongsArtistsRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the library song to its artists.
 
@@ -10,7 +11,7 @@ A relationship from the library song to its artists.
 
 ## Declaration
 
-```swift
+```
 object LibrarySongs.Relationships.LibrarySongsArtistsRelationship
 ```
 
@@ -22,9 +23,10 @@ object LibrarySongs.Relationships.LibrarySongsArtistsRelationship
 
 ## See Also
 
-- [object LibrarySongs.Relationships.LibrarySongsAlbumsRelationship](librarysongs/relationships-data.dictionary/librarysongsalbumsrelationship.md)
+### Related Objects
+- [object LibrarySongs.Relationships.LibrarySongsAlbumsRelationship](./librarysongsalbumsrelationship.md)
   A relationship from the library song to its albums.
-- [object LibrarySongs.Relationships.LibrarySongsCatalogRelationship](librarysongs/relationships-data.dictionary/librarysongscatalogrelationship.md)
+- [object LibrarySongs.Relationships.LibrarySongsCatalogRelationship](./librarysongscatalogrelationship.md)
   A relationship from the library song to its associated catalog content.
 
 

@@ -1,7 +1,8 @@
 # init(item:snapTo:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a snap behavior with a dynamic item and a snap point.
 
@@ -9,7 +10,7 @@ Initializes a snap behavior with a dynamic item and a snap point.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,18 +19,22 @@ Initializes a snap behavior with a dynamic item and a snap point.
 init(item: any UIDynamicItem, snapTo point: CGPoint)
 ```
 
+```objc
+- (instancetype) initWithItem:(id<UIDynamicItem>) item snapToPoint:(CGPoint) point;
+```
+
 #### Return Value
 
 The initialized snap behavior, or `nil` if there was a problem initializing the object.
 
 #### Discussion
 
-At the conclusion of a snap, the rotation value (as indicated by the [`transform`](uidynamicitem/transform.md) property) for a dynamic item is `0`.
+At the conclusion of a snap, the rotation value (as indicated by the [`transform`](../uidynamicitem/transform.md) property) for a dynamic item is `0`.
 
 ## Parameters
 
 - `item`: The dynamic item that you want to apply a snap behavior to.
-- `point`: The point that you want the dynamic item to snap to. The coordinate system for the `point` parameter depends on how you initialize the dynamic animator you’re adding the snap behavior to, as described in the overview of [`UIDynamicAnimator`](uidynamicanimator.md).
+- `point`: The point that you want the dynamic item to snap to. The coordinate system for the `point` parameter depends on how you initialize the dynamic animator you’re adding the snap behavior to, as described in the overview of [`UIDynamicAnimator`](../uidynamicanimator.md).
 
 
 ---

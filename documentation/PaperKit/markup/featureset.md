@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The set of features used by this markup.
@@ -21,7 +22,8 @@ var featureSet: FeatureSet { get }
 
 ## See Also
 
-- [func removeContentUnsupported(by: FeatureSet) -> Bool](markup/removecontentunsupported(by:).md)
+### Managing feature compatibility
+- [func removeContentUnsupported(by: FeatureSet) -> Bool](./removecontentunsupported%28by%29.md)
   Removes all content not supported by the provided feature set.
 
 

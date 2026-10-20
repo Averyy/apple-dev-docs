@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotation’s coordinate.
 
@@ -10,13 +11,13 @@ The annotation’s coordinate.
 
 ## Declaration
 
-```swift
+```
 get coordinate(): Coordinate;
 ```
 
 #### Discussion
 
-You can’t change the coordinate of a [`PlaceAnnotation`](placeannotation.md).
+You can’t change the coordinate of a [`PlaceAnnotation`](../placeannotation.md).
 
 
 ---

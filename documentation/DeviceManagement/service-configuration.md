@@ -1,12 +1,15 @@
 # Service Configuration
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Provides the full list of web service URLs and a list of possible error numbers.
 
 **Availability**:
 - VPP License Management 1.0+
+
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
 #### Discussion
 
@@ -16,7 +19,7 @@ Clients should use this endpoint every 5 minutes to retrieve the list of service
 
 **Request**:
 
-```None
+```
 {}
 ```
 
@@ -219,19 +222,24 @@ Clients should use this endpoint every 5 minutes to retrieve the list of service
 ## Topics
 
 ### Response
-- [object VppServiceConfigResponse](vppserviceconfigresponse.md)
+- [object VppServiceConfigResponse](./vppserviceconfigresponse.md)
   The response with the service configuration.
 ### Product Metadata
-- [Getting app and book information (Legacy)](getting-app-and-book-information-legacy.md)
+- [Getting app and book information (Legacy)](./getting-app-and-book-information-legacy.md)
   Use a web service to find details about apps and books to show to your users.
 
 ## Endpoint
 
 `POST https://vpp.itunes.apple.com/mdm/VPPServiceConfigSrv`
 
+## Responses
+
+- `200` OK (`VppServiceConfigResponse`, `application/json`)
+
 ## See Also
 
-- [Client Configuration](client-configuration.md)
+### Configuration management
+- [Client Configuration](./client-configuration.md)
   Store client-specific information on the server.
 
 

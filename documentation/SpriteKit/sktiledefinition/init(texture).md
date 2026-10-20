@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new tile definition with a single texture.
 
@@ -18,6 +19,10 @@ Initializes a new tile definition with a single texture.
 
 ```swift
 init(texture: SKTexture)
+```
+
+```objc
+- (instancetype) initWithTexture:(SKTexture *) texture;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # CFBundlePreflightExecutable(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether a given bundle is loaded or appears to be loadable.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether a given bundle is loaded or appea
 func CFBundlePreflightExecutable(_ bundle: CFBundle!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
+```c
+extern Boolean CFBundlePreflightExecutable(CFBundleRef bundle, CFErrorRef*error);
+```
+
 #### Return Value
 
 `true` if `bundle` is loaded or upon inspection appears to be loadable, otherwise `false`.
@@ -31,17 +36,18 @@ If this function returns true, this does not mean that the bundle is definitivel
 ## Parameters
 
 - `bundle`: The bundle to examine.
-- `error`: Upon return, if an error occurs contains a CFError that describes the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `error`: Upon return, if an error occurs contains a CFError that describes the problem. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 
-- [func CFBundleIsExecutableLoaded(CFBundle!) -> Bool](cfbundleisexecutableloaded(_:).md)
+### Loading and Unloading a Bundle
+- [func CFBundleIsExecutableLoaded(CFBundle!) -> Bool](./cfbundleisexecutableloaded%28_%29.md)
   Obtains information about the load status for a bundle’s main executable.
-- [func CFBundleLoadExecutable(CFBundle!) -> Bool](cfbundleloadexecutable(_:).md)
+- [func CFBundleLoadExecutable(CFBundle!) -> Bool](./cfbundleloadexecutable%28_%29.md)
   Loads a bundle’s main executable code into memory and dynamically links it into the running application.
-- [func CFBundleLoadExecutableAndReturnError(CFBundle!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](cfbundleloadexecutableandreturnerror(_:_:).md)
+- [func CFBundleLoadExecutableAndReturnError(CFBundle!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./cfbundleloadexecutableandreturnerror%28_,_%29.md)
   Returns a Boolean value that indicates whether a given bundle is loaded, attempting to load it if necessary.
-- [func CFBundleUnloadExecutable(CFBundle!)](cfbundleunloadexecutable(_:).md)
+- [func CFBundleUnloadExecutable(CFBundle!)](./cfbundleunloadexecutable%28_%29.md)
   Unloads the main executable for the specified bundle.
 
 

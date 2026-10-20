@@ -1,12 +1,15 @@
 # CLKComplicationTemplateModularLargeTable
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying a header row and columns.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,64 +17,69 @@ A template for displaying a header row and columns.
 class CLKComplicationTemplateModularLargeTable
 ```
 
+```objc
+@interface CLKComplicationTemplateModularLargeTable : CLKComplicationTemplate
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.modularLarge`](clkcomplicationfamily/modularlarge.md) family.
+This template belongs to the [`CLKComplicationFamily.modularLarge`](./clkcomplicationfamily/modularlarge.md) family.
 
-![A diagram showing the layout of the modular large table complication. The diagram shows a table with a header row and two rows of text, each containing two collumns. The table can also have an optional header image.](/images/com.apple.clockkit/media-2933750@2x.png)
+![A diagram showing the layout of the modular large table complication. The diagram shows a table with a header row and two rows of text, each containing two collumns. The table can also have an optional header image.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2933750@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as `@2x` images for display on Apple Watch, so the point-based dimensions are half the listed size. The width of the image must be between the specified minimum and maximum (inclusive).
 
 | Apple Watch Size | Width | Height |
 | --- | --- | --- |
-| 38 mm | 22 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 64 pixels maximum | 22 pixels |
-| 40 mm | 24 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 74 pixels maximum | 24 pixels |
-| 41 mm | 25 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 78 pixels maximum | 25 pixels |
-| 42 mm | 24 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 74 pixels maximum | 24 pixels |
-| 44 mm | 28 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 84 pixels maximum | 28 pixels |
-| 45 mm | 29 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 88 pixels maximum | 29 pixels |
+| 38 mm | 22 pixels minimum ![](https://developer.apple.com/tutorials/images/com.apple.clockkit/spacer.png) 64 pixels maximum | 22 pixels |
+| 40 mm | 24 pixels minimum ![](https://developer.apple.com/tutorials/images/com.apple.clockkit/spacer.png) 74 pixels maximum | 24 pixels |
+| 41 mm | 25 pixels minimum ![](https://developer.apple.com/tutorials/images/com.apple.clockkit/spacer.png) 78 pixels maximum | 25 pixels |
+| 42 mm | 24 pixels minimum ![](https://developer.apple.com/tutorials/images/com.apple.clockkit/spacer.png) 74 pixels maximum | 24 pixels |
+| 44 mm | 28 pixels minimum ![](https://developer.apple.com/tutorials/images/com.apple.clockkit/spacer.png) 84 pixels maximum | 28 pixels |
+| 45 mm | 29 pixels minimum ![](https://developer.apple.com/tutorials/images/com.apple.clockkit/spacer.png) 88 pixels maximum | 29 pixels |
 
 Instead of providing multiple images with different resolutions, you can provide a single, scaleable PDF asset. For more information, see `Manage Assets`.
 
 ## Topics
 
 ### Creating the Template
-- [init(headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](clkcomplicationtemplatemodularlargetable/init(headertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:).md)
+- [init(headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](./clkcomplicationtemplatemodularlargetable/init%28headertextprovider,row1column1textprovider,row1column2textprovider,row2column1textprovider,row2column2textprovider%29.md)
   Creates a template that has a header and two columns of text.
-- [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](clkcomplicationtemplatemodularlargetable/init(headerimageprovider:headertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:).md)
+- [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](./clkcomplicationtemplatemodularlargetable/init%28headerimageprovider,headertextprovider,row1column1textprovider,row1column2textprovider,row2column1textprovider,row2column2textprovider%29.md)
   Creates a template that has a header row with an image and text, and two columns of text.
 ### Setting the Complication Data
-- [var headerImageProvider: CLKImageProvider?](clkcomplicationtemplatemodularlargetable/headerimageprovider.md)
+- [var headerImageProvider: CLKImageProvider?](./clkcomplicationtemplatemodularlargetable/headerimageprovider.md)
   An optional image to display in the header.
-- [var headerTextProvider: CLKTextProvider](clkcomplicationtemplatemodularlargetable/headertextprovider.md)
+- [var headerTextProvider: CLKTextProvider](./clkcomplicationtemplatemodularlargetable/headertextprovider.md)
   The text to display in the header line.
-- [var row1Column1TextProvider: CLKTextProvider](clkcomplicationtemplatemodularlargetable/row1column1textprovider.md)
+- [var row1Column1TextProvider: CLKTextProvider](./clkcomplicationtemplatemodularlargetable/row1column1textprovider.md)
   The text to display in the first column of the first row.
-- [var row1Column2TextProvider: CLKTextProvider](clkcomplicationtemplatemodularlargetable/row1column2textprovider.md)
+- [var row1Column2TextProvider: CLKTextProvider](./clkcomplicationtemplatemodularlargetable/row1column2textprovider.md)
   The text to display in the second column of the first row.
-- [var row2Column1TextProvider: CLKTextProvider](clkcomplicationtemplatemodularlargetable/row2column1textprovider.md)
+- [var row2Column1TextProvider: CLKTextProvider](./clkcomplicationtemplatemodularlargetable/row2column1textprovider.md)
   The text to display in the first column of the second row.
-- [var row2Column2TextProvider: CLKTextProvider](clkcomplicationtemplatemodularlargetable/row2column2textprovider.md)
+- [var row2Column2TextProvider: CLKTextProvider](./clkcomplicationtemplatemodularlargetable/row2column2textprovider.md)
   The text to display in the second column of the second row.
-- [var column2Alignment: CLKComplicationColumnAlignment](clkcomplicationtemplatemodularlargetable/column2alignment.md)
+- [var column2Alignment: CLKComplicationColumnAlignment](./clkcomplicationtemplatemodularlargetable/column2alignment.md)
   The alignment of the text in the second column.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [CLKComplicationTemplate](./clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateModularLargeColumns](clkcomplicationtemplatemodularlargecolumns.md)
+### Table templates
+- [class CLKComplicationTemplateModularLargeColumns](./clkcomplicationtemplatemodularlargecolumns.md)
   A template for displaying multiple columns of data.
 
 

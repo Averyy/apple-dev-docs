@@ -1,7 +1,8 @@
 # executeOnce
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that can execute the trigger many times.
 
@@ -19,17 +20,22 @@ A Boolean that can execute the trigger many times.
 var executeOnce: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL executeOnce;
+```
+
 #### Discussion
 
-Disables the trigger after its first execution if [`true`](https://developer.apple.com/documentation/swift/true).
+Disables the trigger after its first execution if [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var recurrences: [DateComponents]?](hmeventtrigger/recurrences.md)
+### Controlling recurrence
+- [var recurrences: [DateComponents]?](./recurrences.md)
   Specifies the days on which the trigger can execute.
-- [func updateRecurrences([DateComponents]?, completionHandler: ((any Error)?) -> Void)](hmeventtrigger/updaterecurrences(_:completionhandler:).md)
+- [func updateRecurrences([DateComponents]?, completionHandler: ((any Error)?) -> Void)](./updaterecurrences%28_,completionhandler%29.md)
   Updates the days of the week the trigger can repeat.
-- [func updateExecuteOnce(Bool, completionHandler: ((any Error)?) -> Void)](hmeventtrigger/updateexecuteonce(_:completionhandler:).md)
+- [func updateExecuteOnce(Bool, completionHandler: ((any Error)?) -> Void)](./updateexecuteonce%28_,completionhandler%29.md)
   Updates the repetition status of the event trigger.
 
 

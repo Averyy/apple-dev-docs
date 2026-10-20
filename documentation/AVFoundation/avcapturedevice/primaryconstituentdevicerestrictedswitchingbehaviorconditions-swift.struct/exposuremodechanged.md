@@ -1,7 +1,8 @@
 # exposureModeChanged
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Restrict switching to a fallback camera only when the device’s exposure mode changes.
 
@@ -18,11 +19,16 @@ Restrict switching to a fallback camera only when the device’s exposure mode c
 static var exposureModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions { get }
 ```
 
+```c
+AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionExposureModeChanged
+```
+
 ## See Also
 
-- [static var focusModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/focusmodechanged.md)
+### Switching behavior conditions
+- [static var focusModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./focusmodechanged.md)
   Restrict switching to a fallback camera only when the device’s focus mode changes.
-- [static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/videozoomchanged.md)
+- [static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./videozoomchanged.md)
   Restrict switching to a fallback camera only when the device’s video zoom changes.
 
 

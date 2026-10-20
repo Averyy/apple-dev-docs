@@ -1,7 +1,8 @@
 # kCGImageAuxiliaryDataTypeSemanticSegmentationSkinMatte
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type for skin matte informaton.
 
@@ -20,23 +21,28 @@ The type for skin matte informaton.
 let kCGImageAuxiliaryDataTypeSemanticSegmentationSkinMatte: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageAuxiliaryDataTypeSemanticSegmentationSkinMatte;
+```
+
 ## See Also
 
-- [let kCGImageAuxiliaryDataTypeDepth: CFString](kcgimageauxiliarydatatypedepth.md)
+### Auxiliary Data Types
+- [let kCGImageAuxiliaryDataTypeDepth: CFString](./kcgimageauxiliarydatatypedepth.md)
   The type for depth map information.
-- [let kCGImageAuxiliaryDataTypeDisparity: CFString](kcgimageauxiliarydatatypedisparity.md)
+- [let kCGImageAuxiliaryDataTypeDisparity: CFString](./kcgimageauxiliarydatatypedisparity.md)
   The type for image disparity information.
-- [let kCGImageAuxiliaryDataTypeHDRGainMap: CFString](kcgimageauxiliarydatatypehdrgainmap.md)
+- [let kCGImageAuxiliaryDataTypeHDRGainMap: CFString](./kcgimageauxiliarydatatypehdrgainmap.md)
   The type for High Dynamic Range (HDR) gain map information.
-- [let kCGImageAuxiliaryDataTypePortraitEffectsMatte: CFString](kcgimageauxiliarydatatypeportraiteffectsmatte.md)
+- [let kCGImageAuxiliaryDataTypePortraitEffectsMatte: CFString](./kcgimageauxiliarydatatypeportraiteffectsmatte.md)
   The type for portrait effects matte information.
-- [let kCGImageAuxiliaryDataTypeSemanticSegmentationGlassesMatte: CFString](kcgimageauxiliarydatatypesemanticsegmentationglassesmatte.md)
+- [let kCGImageAuxiliaryDataTypeSemanticSegmentationGlassesMatte: CFString](./kcgimageauxiliarydatatypesemanticsegmentationglassesmatte.md)
   The type for glasses matte informaton.
-- [let kCGImageAuxiliaryDataTypeSemanticSegmentationHairMatte: CFString](kcgimageauxiliarydatatypesemanticsegmentationhairmatte.md)
+- [let kCGImageAuxiliaryDataTypeSemanticSegmentationHairMatte: CFString](./kcgimageauxiliarydatatypesemanticsegmentationhairmatte.md)
   The type for hair matte information.
-- [let kCGImageAuxiliaryDataTypeSemanticSegmentationSkyMatte: CFString](kcgimageauxiliarydatatypesemanticsegmentationskymatte.md)
+- [let kCGImageAuxiliaryDataTypeSemanticSegmentationSkyMatte: CFString](./kcgimageauxiliarydatatypesemanticsegmentationskymatte.md)
   The type for sky matte information.
-- [let kCGImageAuxiliaryDataTypeSemanticSegmentationTeethMatte: CFString](kcgimageauxiliarydatatypesemanticsegmentationteethmatte.md)
+- [let kCGImageAuxiliaryDataTypeSemanticSegmentationTeethMatte: CFString](./kcgimageauxiliarydatatypesemanticsegmentationteethmatte.md)
   The type for teeth matte information.
 
 

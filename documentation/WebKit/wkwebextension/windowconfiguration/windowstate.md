@@ -1,7 +1,8 @@
 # windowState
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the window state for the window.
 
@@ -16,6 +17,10 @@ Indicates the window state for the window.
 
 ```swift
 var windowState: WKWebExtension.WindowState { get }
+```
+
+```objc
+@property (nonatomic, readonly) WKWebExtensionWindowState windowState;
 ```
 
 

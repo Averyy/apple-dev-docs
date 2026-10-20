@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeOther
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An uncategorized accessory.
 
@@ -17,6 +18,10 @@ An uncategorized accessory.
 
 ```swift
 let HMAccessoryCategoryTypeOther: String
+```
+
+```c
+extern NSString * const HMAccessoryCategoryTypeOther;
 ```
 
 

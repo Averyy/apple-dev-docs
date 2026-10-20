@@ -1,18 +1,19 @@
 # validateValue(_:forKeyPath:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the value specified by a given pointer is not valid for a given key path relative to the receiver.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ Indicates whether the value specified by a given pointer is not valid for a give
 func validateValue(_ ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, forKeyPath inKeyPath: String) throws
 ```
 
+```objc
+- (BOOL) validateValue:(id*) ioValue forKeyPath:(NSString *) inKeyPath error:(NSError **) outError;
+```
+
 #### Discussion
 
 In Swift, this method throws an error if the value isn’t valid.  In Objective-C, it returns a Boolean value.
 
-The default implementation of this method gets the destination object for each relationship using [`value(forKey:)`](nsobject-swift.class/value(forkey:).md) and returns the result of calling the [`validateValue(_:forKey:)`](nsobject-swift.class/validatevalue(_:forkey:).md) method for the property.
+The default implementation of this method gets the destination object for each relationship using [`value(forKey:)`](./value%28forkey%29.md) and returns the result of calling the [`validateValue(_:forKey:)`](./validatevalue%28_,forkey%29.md) method for the property.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ The default implementation of this method gets the destination object for each r
 
 ## See Also
 
-- [func validateValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: String) throws](nsobject-swift.class/validatevalue(_:forkey:).md)
+### Validation
+- [func validateValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: String) throws](./validatevalue%28_,forkey%29.md)
   Indicates whether the value specified by a given pointer is valid, or can be made valid, for the property identified by a given key.
 
 

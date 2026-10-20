@@ -1,7 +1,8 @@
 # isHosted
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you host the game on your own servers.
 
@@ -19,23 +20,36 @@ A Boolean value that indicates whether you host the game on your own servers.
 var isHosted: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, getter=isHosted) BOOL hosted;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, getter=isHosted) BOOL hosted;
+```
+
 ## Mentions
 
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you host the game on your own servers. If the value is [`false`](https://developer.apple.com/documentation/swift/false), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](../../Swift/true.md), you host the game on your own servers. If the value is [`false`](../../Swift/false.md), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var sender: GKPlayer](gkinvite/sender.md)
+### Getting Properties
+- [var sender: GKPlayer](./sender.md)
   The player who sends the invitation.
-- [var playerAttributes: UInt32](gkinvite/playerattributes.md)
+- [var playerAttributes: UInt32](./playerattributes.md)
   The player attributes for the match.
-- [var playerGroup: Int](gkinvite/playergroup.md)
+- [var playerGroup: Int](./playergroup.md)
   The player group for the match.
-- [var inviter: String](gkinvite/inviter.md)
+- [var inviter: String](./inviter.md)
   The identifier for the player who sends the invitation.
 
 

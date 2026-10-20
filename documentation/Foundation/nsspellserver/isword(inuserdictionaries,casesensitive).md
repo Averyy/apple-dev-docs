@@ -1,7 +1,8 @@
 # isWord(inUserDictionaries:caseSensitive:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether a given word is in the user’s list of learned words or the document’s list of words to ignore.
 
@@ -15,9 +16,13 @@ Indicates whether a given word is in the user’s list of learned words or the d
 func isWord(inUserDictionaries word: String, caseSensitive flag: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) isWordInUserDictionaries:(NSString *) word caseSensitive:(BOOL) flag;
+```
+
 #### Return Value
 
-A Boolean value indicating whether the word is in the user dictionaries. If [`true`](https://developer.apple.com/documentation/swift/true), the word is acceptable to the user.
+A Boolean value indicating whether the word is in the user dictionaries. If [`true`](../../Swift/true.md), the word is acceptable to the user.
 
 ## Parameters
 

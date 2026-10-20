@@ -1,7 +1,8 @@
 # QuickTimePluginReplacement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface QuickTimePluginReplacement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [accessLog](quicktimepluginreplacement/1629166-accesslog.md)
-- [errorLog](quicktimepluginreplacement/1630790-errorlog.md)
-- [movieSize](quicktimepluginreplacement/1633635-moviesize.md)
-- [timedMetaData](quicktimepluginreplacement/1629600-timedmetadata.md)
+- [accessLog](./quicktimepluginreplacement/api-1629166-accesslog.md)
+- [errorLog](./quicktimepluginreplacement/api-1630790-errorlog.md)
+- [movieSize](./quicktimepluginreplacement/api-1633635-moviesize.md)
+- [timedMetaData](./quicktimepluginreplacement/api-1629600-timedmetadata.md)
 ### Instance Methods
-- [postEvent](quicktimepluginreplacement/1629135-postevent.md)
+- [postEvent](./quicktimepluginreplacement/api-1629135-postevent.md)
 
 
 ---

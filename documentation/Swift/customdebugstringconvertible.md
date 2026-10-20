@@ -1,7 +1,8 @@
 # CustomDebugStringConvertible
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type with a customized textual representation suitable for debugging purposes.
 
@@ -28,7 +29,7 @@ Because the `String(reflecting:)` initializer works for instances of *any* type,
 
 > **Note**: Calling the `dump(_:_:_:_:)` function and printing in the debugger uses both `String(reflecting:)` and `Mirror(reflecting:)` to collect information about an instance. If you implement `CustomDebugStringConvertible` conformance for your custom type, you may want to consider providing a custom mirror by implementing `CustomReflectable` conformance, as well.
 
-### Conforming to the Customdebugstringconvertible Protocol
+### Conforming to the CustomDebugStringConvertible Protocol
 
 Add `CustomDebugStringConvertible` conformance to your custom types by defining a `debugDescription` property.
 
@@ -60,74 +61,75 @@ print(String(reflecting: p))
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](customdebugstringconvertible/debugdescription.md)
+- [var debugDescription: String](./customdebugstringconvertible/debugdescription.md)
   A textual representation of this instance, suitable for debugging.
 
 ## Relationships
 
 ### Inherited By
-- [CodingKey](codingkey.md)
+- [CodingKey](./codingkey.md)
 ### Conforming Types
-- [AnyHashable](anyhashable.md)
-- [AnyKeyPath](anykeypath.md)
-- [Array](array.md)
-- [ArraySlice](arrayslice.md)
-- [AutoreleasingUnsafeMutablePointer](autoreleasingunsafemutablepointer.md)
-- [CVaListPointer](cvalistpointer.md)
-- [Character](character.md)
-- [ClosedRange](closedrange.md)
-- [CollectionOfOne](collectionofone.md)
-- [ContiguousArray](contiguousarray.md)
-- [DecodingError](decodingerror.md)
-- [Dictionary](dictionary.md)
-- [Dictionary.Keys](dictionary/keys-swift.struct.md)
-- [Dictionary.Values](dictionary/values-swift.struct.md)
-- [Double](double.md)
-- [EncodingError](encodingerror.md)
-- [Float](float.md)
-- [Float16](float16.md)
-- [Float80](float80.md)
-- [KeyPath](keypath.md)
-- [KeyValuePairs](keyvaluepairs.md)
-- [ObjectIdentifier](objectidentifier.md)
-- [OpaquePointer](opaquepointer.md)
-- [Optional](optional.md)
-- [PartialKeyPath](partialkeypath.md)
-- [Range](range.md)
-- [ReferenceWritableKeyPath](referencewritablekeypath.md)
-- [SIMD16](simd16.md)
-- [SIMD2](simd2.md)
-- [SIMD3](simd3.md)
-- [SIMD32](simd32.md)
-- [SIMD4](simd4.md)
-- [SIMD64](simd64.md)
-- [SIMD8](simd8.md)
-- [Set](set.md)
-- [StaticBigInt](staticbigint.md)
-- [StaticString](staticstring.md)
-- [String](string.md)
-- [String.Index](string/index.md)
-- [String.UTF16View](string/utf16view.md)
-- [String.UTF8View](string/utf8view.md)
-- [String.UnicodeScalarView](string/unicodescalarview.md)
-- [Substring](substring.md)
-- [Unicode.Scalar](unicode/scalar.md)
-- [UnsafeBufferPointer](unsafebufferpointer.md)
-- [UnsafeMutableBufferPointer](unsafemutablebufferpointer.md)
-- [UnsafeMutablePointer](unsafemutablepointer.md)
-- [UnsafeMutableRawBufferPointer](unsafemutablerawbufferpointer.md)
-- [UnsafeMutableRawPointer](unsafemutablerawpointer.md)
-- [UnsafePointer](unsafepointer.md)
-- [UnsafeRawBufferPointer](unsaferawbufferpointer.md)
-- [UnsafeRawPointer](unsaferawpointer.md)
-- [WordPair](../synchronization/wordpair.md)
-- [WritableKeyPath](writablekeypath.md)
+- [AnyHashable](./anyhashable.md)
+- [AnyKeyPath](./anykeypath.md)
+- [Array](./array.md)
+- [ArraySlice](./arrayslice.md)
+- [AutoreleasingUnsafeMutablePointer](./autoreleasingunsafemutablepointer.md)
+- [CVaListPointer](./cvalistpointer.md)
+- [Character](./character.md)
+- [ClosedRange](./closedrange.md)
+- [CollectionOfOne](./collectionofone.md)
+- [ContiguousArray](./contiguousarray.md)
+- [DecodingError](./decodingerror.md)
+- [Dictionary](./dictionary.md)
+- [Dictionary.Keys](./dictionary/keys-swift.struct.md)
+- [Dictionary.Values](./dictionary/values-swift.struct.md)
+- [Double](./double.md)
+- [EncodingError](./encodingerror.md)
+- [Float](./float.md)
+- [Float16](./float16.md)
+- [Float80](./float80.md)
+- [KeyPath](./keypath.md)
+- [KeyValuePairs](./keyvaluepairs.md)
+- [ObjectIdentifier](./objectidentifier.md)
+- [OpaquePointer](./opaquepointer.md)
+- [Optional](./optional.md)
+- [PartialKeyPath](./partialkeypath.md)
+- [Range](./range.md)
+- [ReferenceWritableKeyPath](./referencewritablekeypath.md)
+- [SIMD16](./simd16.md)
+- [SIMD2](./simd2.md)
+- [SIMD3](./simd3.md)
+- [SIMD32](./simd32.md)
+- [SIMD4](./simd4.md)
+- [SIMD64](./simd64.md)
+- [SIMD8](./simd8.md)
+- [Set](./set.md)
+- [StaticBigInt](./staticbigint.md)
+- [StaticString](./staticstring.md)
+- [String](./string.md)
+- [String.Index](./string/index.md)
+- [String.UTF16View](./string/utf16view.md)
+- [String.UTF8View](./string/utf8view.md)
+- [String.UnicodeScalarView](./string/unicodescalarview.md)
+- [Substring](./substring.md)
+- [Unicode.Scalar](./unicode/scalar.md)
+- [UnsafeBufferPointer](./unsafebufferpointer.md)
+- [UnsafeMutableBufferPointer](./unsafemutablebufferpointer.md)
+- [UnsafeMutablePointer](./unsafemutablepointer.md)
+- [UnsafeMutableRawBufferPointer](./unsafemutablerawbufferpointer.md)
+- [UnsafeMutableRawPointer](./unsafemutablerawpointer.md)
+- [UnsafePointer](./unsafepointer.md)
+- [UnsafeRawBufferPointer](./unsaferawbufferpointer.md)
+- [UnsafeRawPointer](./unsaferawpointer.md)
+- [WordPair](../Synchronization/wordpair.md)
+- [WritableKeyPath](./writablekeypath.md)
 
 ## See Also
 
-- [protocol CustomStringConvertible](customstringconvertible.md)
+### String Representation
+- [protocol CustomStringConvertible](./customstringconvertible.md)
   A type with a customized textual representation.
-- [protocol LosslessStringConvertible](losslessstringconvertible.md)
+- [protocol LosslessStringConvertible](./losslessstringconvertible.md)
   A type that can be represented as a string in a lossless, unambiguous way.
 
 

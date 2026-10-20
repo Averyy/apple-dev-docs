@@ -1,7 +1,8 @@
 # ToolbarCustomizationBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The customization behavior of customizable toolbar content.
 
@@ -24,35 +25,36 @@ struct ToolbarCustomizationBehavior
 
 Customizable toolbar content support different types of customization behaviors. For example, some customizable content may not be removed by the user. Some content may be placed in a toolbar that supports customization overall, but not for that particular content.
 
-Use this type in conjunction with the [`customizationBehavior(_:)`](customizabletoolbarcontent/customizationbehavior(_:).md) modifier.
+Use this type in conjunction with the [`customizationBehavior(_:)`](./customizabletoolbarcontent/customizationbehavior%28_%29.md) modifier.
 
 ## Topics
 
 ### Getting customization behaviors
-- [static var `default`: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/default.md)
+- [static var `default`: ToolbarCustomizationBehavior](./toolbarcustomizationbehavior/default.md)
   The default customization behavior.
-- [static var disabled: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/disabled.md)
+- [static var disabled: ToolbarCustomizationBehavior](./toolbarcustomizationbehavior/disabled.md)
   The disabled customization behavior.
-- [static var reorderable: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/reorderable.md)
+- [static var reorderable: ToolbarCustomizationBehavior](./toolbarcustomizationbehavior/reorderable.md)
   The reorderable customization behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
+### Populating a customizable toolbar
+- [func toolbar<Content>(id: String, content: () -> Content) -> some View](./view/toolbar%28id,content%29.md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
-- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+- [func toolbarItemHidden(Bool) -> some View](./view/toolbaritemhidden%28_%29.md)
   Hides an individual view within a control group toolbar item.
-- [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
+- [protocol CustomizableToolbarContent](./customizabletoolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
-- [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
+- [struct ToolbarCustomizationOptions](./toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
-- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+- [struct SearchToolbarBehavior](./searchtoolbarbehavior.md)
   The behavior of a search field in a toolbar.
 
 

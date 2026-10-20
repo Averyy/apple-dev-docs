@@ -1,11 +1,12 @@
 # NSPasteboard Implementations
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(byFilteringTypesInPasteboard: NSPasteboard)](nspasteboard/init(byfilteringtypesinpasteboard:).md)
+- [init(byFilteringTypesInPasteboard: NSPasteboard)](./init%28byfilteringtypesinpasteboard%29.md)
   Creates a new pasteboard object that supplies the specified pasteboard data in as many types as possible based on the available filter services.
 
 

@@ -1,7 +1,8 @@
 # certificateValidator(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a block to provide custom verification of the peer’s credentials during the TLS handshake.
 

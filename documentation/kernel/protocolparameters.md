@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum ProtocolParameters : unsigned int {
     ...
 };
@@ -17,12 +17,12 @@ enum ProtocolParameters : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothSDPProtocolParameterBNEPSupportedNetworkPacketTypeList](protocolparameters/kbluetoothsdpprotocolparameterbnepsupportednetworkpackettypelist.md)
-- [kBluetoothSDPProtocolParameterBNEPVersion](protocolparameters/kbluetoothsdpprotocolparameterbnepversion.md)
-- [kBluetoothSDPProtocolParameterL2CAPPSM](protocolparameters/kbluetoothsdpprotocolparameterl2cappsm.md)
-- [kBluetoothSDPProtocolParameterRFCOMMChannel](protocolparameters/kbluetoothsdpprotocolparameterrfcommchannel.md)
-- [kBluetoothSDPProtocolParameterTCPPort](protocolparameters/kbluetoothsdpprotocolparametertcpport.md)
-- [kBluetoothSDPProtocolParameterUDPPort](protocolparameters/kbluetoothsdpprotocolparameterudpport.md)
+- [kBluetoothSDPProtocolParameterBNEPSupportedNetworkPacketTypeList](./protocolparameters/kbluetoothsdpprotocolparameterbnepsupportednetworkpackettypelist.md)
+- [kBluetoothSDPProtocolParameterBNEPVersion](./protocolparameters/kbluetoothsdpprotocolparameterbnepversion.md)
+- [kBluetoothSDPProtocolParameterL2CAPPSM](./protocolparameters/kbluetoothsdpprotocolparameterl2cappsm.md)
+- [kBluetoothSDPProtocolParameterRFCOMMChannel](./protocolparameters/kbluetoothsdpprotocolparameterrfcommchannel.md)
+- [kBluetoothSDPProtocolParameterTCPPort](./protocolparameters/kbluetoothsdpprotocolparametertcpport.md)
+- [kBluetoothSDPProtocolParameterUDPPort](./protocolparameters/kbluetoothsdpprotocolparameterudpport.md)
 
 
 ---

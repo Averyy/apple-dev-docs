@@ -1,7 +1,8 @@
 # VZUSBDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol for configuring USB devices.
 
@@ -14,6 +15,10 @@ The protocol for configuring USB devices.
 protocol VZUSBDeviceConfiguration : NSObjectProtocol
 ```
 
+```objc
+@protocol VZUSBDeviceConfiguration <NSObject>
+```
+
 #### Overview
 
 Classes that conform to this protocol represent hot-pluggable USB device configurations.
@@ -23,20 +28,21 @@ Classes that conform to this protocol represent hot-pluggable USB device configu
 ## Topics
 
 ### Properties
-- [var uuid: UUID](vzusbdeviceconfiguration/uuid.md)
+- [var uuid: UUID](./vzusbdeviceconfiguration/uuid.md)
   The device’s unique identifier.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [VZUSBMassStorageDeviceConfiguration](vzusbmassstoragedeviceconfiguration.md)
-- [VZUSBPassthroughDeviceConfiguration](vzusbpassthroughdeviceconfiguration.md)
+- [VZUSBMassStorageDeviceConfiguration](./vzusbmassstoragedeviceconfiguration.md)
+- [VZUSBPassthroughDeviceConfiguration](./vzusbpassthroughdeviceconfiguration.md)
 
 ## See Also
 
-- [protocol VZUSBDevice](vzusbdevice.md)
+### Protocols
+- [protocol VZUSBDevice](./vzusbdevice.md)
   A protocol that represents a USB device in a VM.
 
 

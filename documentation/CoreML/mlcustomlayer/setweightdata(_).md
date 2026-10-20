@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns the weights for the connections within the layer.
@@ -21,9 +22,13 @@ Assigns the weights for the connections within the layer.
 func setWeightData(_ weights: [Data]) throws
 ```
 
+```objc
+- (BOOL) setWeightData:(NSArray<NSData *> *) weights error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
+- [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
 #### Discussion
 
@@ -37,7 +42,8 @@ The data encoded in the `weights` field of the `.mlmodel` file is loaded and pas
 
 ## See Also
 
-- [func outputShapes(forInputShapes: [[NSNumber]]) throws -> [[NSNumber]]](mlcustomlayer/outputshapes(forinputshapes:).md)
+### Integrating a layer
+- [func outputShapes(forInputShapes: [[NSNumber]]) throws -> [[NSNumber]]](./outputshapes%28forinputshapes%29.md)
   Calculates the shapes of the output of this layer for the given input shapes.
 
 

@@ -1,7 +1,8 @@
 # isWritingToolsAvailable
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether Writing Tools features are available to enable.
 
@@ -15,6 +16,10 @@ A Boolean value that indicates whether Writing Tools features are available to e
 
 ```swift
 class var isWritingToolsAvailable: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, assign, readonly) BOOL isWritingToolsAvailable;
 ```
 
 #### Discussion

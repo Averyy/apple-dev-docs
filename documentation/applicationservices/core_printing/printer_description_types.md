@@ -1,13 +1,14 @@
 # Printer Description Types
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Constants that specify printer description types.
 
 ## Topics
 
 ### Constants
-- [var kPMPPDDescriptionType: String](kpmppddescriptiontype.md)
+- [var kPMPPDDescriptionType: String](../kpmppddescriptiontype.md)
 
 
 ---

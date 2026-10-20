@@ -1,7 +1,8 @@
 # myDebit
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let myDebit: PKPaymentNetwork
+```
+
+```c
+extern PKPaymentNetwork const PKPaymentNetworkMyDebit;
 ```
 
 

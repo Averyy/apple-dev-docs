@@ -1,7 +1,8 @@
 # requestMetadata()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests metadata for the item.
 
@@ -18,21 +19,26 @@ Requests metadata for the item.
 func requestMetadata()
 ```
 
+```objc
+- (void) requestMetadata;
+```
+
 #### Discussion
 
-If metadata for the item is not readily available, accessing this property requests metadata from the camera, then notifies the delegate by calling [`cameraDevice(_:didReceiveMetadata:for:error:)`](iccameradevicedelegate/cameradevice(_:didreceivemetadata:for:error:).md).
+If metadata for the item is not readily available, accessing this property requests metadata from the camera, then notifies the delegate by calling [`cameraDevice(_:didReceiveMetadata:for:error:)`](../iccameradevicedelegate/cameradevice%28_,didreceivemetadata,for,error%29.md).
 
 Execution of the delegate callback occurs on the main thread.
 
 ## See Also
 
-- [var metadata: [AnyHashable : Any]?](iccameraitem/metadata.md)
+### Requesting Metadata
+- [var metadata: [AnyHashable : Any]?](./metadata.md)
   The item’s metadata.
-- [var metadataIfAvailable: [String : Any]?](iccameraitem/metadataifavailable.md)
+- [var metadataIfAvailable: [String : Any]?](./metadataifavailable.md)
   The item’s metadata if it is readily available.
-- [func flushMetadataCache()](iccameraitem/flushmetadatacache.md)
+- [func flushMetadataCache()](./flushmetadatacache%28%29.md)
   Deletes the item’s cached metadata.
-- [struct ICCameraItemMetadataOption](iccameraitemmetadataoption.md)
+- [struct ICCameraItemMetadataOption](../iccameraitemmetadataoption.md)
   An option for the item’s metadata.
 
 

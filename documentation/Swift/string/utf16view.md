@@ -1,7 +1,8 @@
 # String.UTF16View
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view of a string’s contents as a collection of UTF-16 code units.
 
@@ -69,7 +70,7 @@ if let i = favemoji.utf16.firstIndex(where: { $0 >= 128 }) {
 // Prints "My favorite emoji is "
 ```
 
-### Utf16view Elements Match Nsstring Characters
+### UTF16View Elements Match NSString Characters
 
 The UTF-16 code units of a string’s `utf16` view match the elements accessed through indexed `NSString` APIs.
 
@@ -107,48 +108,49 @@ if let range = Range(nsrange, in: snowy) {
 ## Topics
 
 ### Instance Properties
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](string/utf16view/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./utf16view/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 ### Instance Methods
-- [func isTriviallyIdentical(to: String.UTF16View) -> Bool](string/utf16view/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: String.UTF16View) -> Bool](./utf16view/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this UTF16 view is trivially identical to `other`.
 ### Default Implementations
-- [BidirectionalCollection Implementations](string/utf16view/bidirectionalcollection-implementations.md)
-- [Collection Implementations](string/utf16view/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](string/utf16view/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](string/utf16view/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](string/utf16view/customstringconvertible-implementations.md)
-- [Sequence Implementations](string/utf16view/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./utf16view/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./utf16view/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./utf16view/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./utf16view/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./utf16view/customstringconvertible-implementations.md)
+- [Sequence Implementations](./utf16view/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [CustomDebugStringConvertible](../customdebugstringconvertible.md)
+- [CustomReflectable](../customreflectable.md)
+- [CustomStringConvertible](../customstringconvertible.md)
+- [Escapable](../escapable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 ## See Also
 
-- [struct Substring](substring.md)
+### Related String Types
+- [struct Substring](../substring.md)
   A slice of a string.
-- [protocol StringProtocol](stringprotocol.md)
+- [protocol StringProtocol](../stringprotocol.md)
   A type that can represent a string as a collection of characters.
-- [String.Index](string/index.md)
+- [String.Index](./index.md)
   A position of a character or code unit in a string.
-- [String.UnicodeScalarView](string/unicodescalarview.md)
+- [String.UnicodeScalarView](./unicodescalarview.md)
   A view of a string’s contents as a collection of Unicode scalar values.
-- [String.UTF8View](string/utf8view.md)
+- [String.UTF8View](./utf8view.md)
   A view of a string’s contents as a collection of UTF-8 code units.
-- [String.Iterator](string/iterator.md)
+- [String.Iterator](./iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [String.Encoding](string/encoding.md)
+- [String.Encoding](./encoding.md)
 
 
 ---

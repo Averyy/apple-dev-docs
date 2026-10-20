@@ -1,7 +1,8 @@
 # reverse()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reverses the elements of the collection in place.
 
@@ -20,6 +21,8 @@ Reverses the elements of the collection in place.
 mutating func reverse()
 ```
 
+Available when `Self` conforms to `BidirectionalCollection`.
+
 #### Discussion
 
 The following example reverses the elements of an array of characters:
@@ -31,7 +34,7 @@ print(characters)
 // Prints "["é", "f", "a", "C"]"
 ```
 
-> **Note**: O(*n*), where *n* is the number of elements in the collection.
+> **Complexity**: O(*n*), where *n* is the number of elements in the collection.
 
 
 ---

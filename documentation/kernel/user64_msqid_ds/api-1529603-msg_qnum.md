@@ -1,14 +1,15 @@
 # msg_qnum
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 user64_msgqnum_t msg_qnum;
 ```
 

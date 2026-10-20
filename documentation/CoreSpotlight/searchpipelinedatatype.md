@@ -1,7 +1,8 @@
 # SearchPipelineDataType
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Data types that a pipeline stage accepts or produces.
 
@@ -20,47 +21,48 @@ enum SearchPipelineDataType
 
 #### Overview
 
-Use this type to specify the input and output values your [`CustomStage`](customstage.md) supports. Foundation models use this information to validate that data can pass from one stage to the next.
+Use this type to specify the input and output values your [`CustomStage`](./customstage.md) supports. Foundation models use this information to validate that data can pass from one stage to the next.
 
 ## Topics
 
 ### Getting the pipeline data type
-- [SearchPipelineDataType.items](searchpipelinedatatype/items.md)
+- [SearchPipelineDataType.items](./searchpipelinedatatype/items.md)
   Searchable items from the app’s index.
-- [SearchPipelineDataType.scoredItems](searchpipelinedatatype/scoreditems.md)
+- [SearchPipelineDataType.scoredItems](./searchpipelinedatatype/scoreditems.md)
   Searchable items with an assigned score.
-- [SearchPipelineDataType.groupedItems](searchpipelinedatatype/groupeditems.md)
+- [SearchPipelineDataType.groupedItems](./searchpipelinedatatype/groupeditems.md)
   A dictionary that maps searchable items to the attributes they contain.
-- [SearchPipelineDataType.text](searchpipelinedatatype/text.md)
+- [SearchPipelineDataType.text](./searchpipelinedatatype/text.md)
   An LLM-generated text summary or analysis.
-- [SearchPipelineDataType.count](searchpipelinedatatype/count.md)
+- [SearchPipelineDataType.count](./searchpipelinedatatype/count.md)
   A scalar count of the number of items.
-- [SearchPipelineDataType.statistic](searchpipelinedatatype/statistic.md)
+- [SearchPipelineDataType.statistic](./searchpipelinedatatype/statistic.md)
   A scalar value that reflects a stastical calculation such as an average, minimum, or maximum.
-- [SearchPipelineDataType.table](searchpipelinedatatype/table.md)
+- [SearchPipelineDataType.table](./searchpipelinedatatype/table.md)
   Data suitable for a table or chart.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol CustomStage](customstage.md)
+### Tool customization
+- [protocol CustomStage](./customstage.md)
   A custom processing stage the Spotlight search tool uses to identify search results.
-- [struct SearchPipelineData](searchpipelinedata.md)
+- [struct SearchPipelineData](./searchpipelinedata.md)
   The type you use to store the output from a custom stage.
-- [struct ScoredSearchableItem](scoredsearchableitem.md)
+- [struct ScoredSearchableItem](./scoredsearchableitem.md)
   A searchable item paired with a caller-assigned relevance score.
 
 

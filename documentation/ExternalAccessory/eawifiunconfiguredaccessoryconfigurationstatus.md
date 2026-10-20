@@ -1,9 +1,10 @@
 # EAWiFiUnconfiguredAccessoryConfigurationStatus
 
 **Framework**: External Accessory  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Values that represent the state of the configuration process for an [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) object.
+Values that represent the state of the configuration process for an [`EAWiFiUnconfiguredAccessory`](./eawifiunconfiguredaccessory.md) object.
 
 **Availability**:
 - iOS 3.0+
@@ -19,31 +20,36 @@ Values that represent the state of the configuration process for an [`EAWiFiUnco
 enum EAWiFiUnconfiguredAccessoryConfigurationStatus
 ```
 
+```c
+enum EAWiFiUnconfiguredAccessoryConfigurationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status Values
-- [EAWiFiUnconfiguredAccessoryConfigurationStatus.success](eawifiunconfiguredaccessoryconfigurationstatus/success.md)
+- [EAWiFiUnconfiguredAccessoryConfigurationStatus.success](./eawifiunconfiguredaccessoryconfigurationstatus/success.md)
   The configuration of the accessory succeeded.
-- [EAWiFiUnconfiguredAccessoryConfigurationStatus.userCancelledConfiguration](eawifiunconfiguredaccessoryconfigurationstatus/usercancelledconfiguration.md)
+- [EAWiFiUnconfiguredAccessoryConfigurationStatus.userCancelledConfiguration](./eawifiunconfiguredaccessoryconfigurationstatus/usercancelledconfiguration.md)
   The user cancelled the configuration process.
-- [EAWiFiUnconfiguredAccessoryConfigurationStatus.failed](eawifiunconfiguredaccessoryconfigurationstatus/failed.md)
+- [EAWiFiUnconfiguredAccessoryConfigurationStatus.failed](./eawifiunconfiguredaccessoryconfigurationstatus/failed.md)
   The configuration failed.
 ### Initializers
-- [init?(rawValue: Int)](eawifiunconfiguredaccessoryconfigurationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./eawifiunconfiguredaccessoryconfigurationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessoryBrowser(EAWiFiUnconfiguredAccessoryBrowser, didFinishConfiguringAccessory: EAWiFiUnconfiguredAccessory, with: EAWiFiUnconfiguredAccessoryConfigurationStatus)](eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didfinishconfiguringaccessory:with:).md)
+### Getting Updates About the Configuration Process
+- [func accessoryBrowser(EAWiFiUnconfiguredAccessoryBrowser, didFinishConfiguringAccessory: EAWiFiUnconfiguredAccessory, with: EAWiFiUnconfiguredAccessoryConfigurationStatus)](./eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser%28_,didfinishconfiguringaccessory,with%29.md)
   Indicates that the browser has completed configuring the specified accessory.
 
 

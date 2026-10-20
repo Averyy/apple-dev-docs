@@ -1,7 +1,8 @@
 # kCATransactionAnimationDuration
 
 **Framework**: Core Animation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Duration, in seconds, for animations triggered within the transaction group.
 
@@ -19,16 +20,21 @@ Duration, in seconds, for animations triggered within the transaction group.
 let kCATransactionAnimationDuration: String
 ```
 
+```c
+extern NSString * const kCATransactionAnimationDuration;
+```
+
 #### Discussion
 
-The value for this key must be an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+The value for this key must be an instance of [`NSNumber`](../Foundation/nsnumber.md).
 
 ## See Also
 
-- [let kCATransactionDisableActions: String](kcatransactiondisableactions.md)
+### Constants
+- [let kCATransactionDisableActions: String](./kcatransactiondisableactions.md)
   A key whose value indicates whether implicit actions for property changes made within the transaction group are suppressed.
-- [let kCATransactionAnimationTimingFunction: String](kcatransactionanimationtimingfunction.md)
-- [let kCATransactionCompletionBlock: String](kcatransactioncompletionblock.md)
+- [let kCATransactionAnimationTimingFunction: String](./kcatransactionanimationtimingfunction.md)
+- [let kCATransactionCompletionBlock: String](./kcatransactioncompletionblock.md)
 
 
 ---

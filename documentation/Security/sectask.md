@@ -1,7 +1,8 @@
 # SecTask
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The Core Foundation type representing a task.
 
@@ -15,11 +16,15 @@ The Core Foundation type representing a task.
 class SecTask
 ```
 
+```c
+typedef struct __SecTask * SecTaskRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MetricResult.totalFileCount(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,13 +16,14 @@ case totalFileCount(TotalFileCountMetric)
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [case logicalDiskWrites(LogicalDiskWritesMetric)](metricresult/logicaldiskwrites(_:).md)
-- [case totalFileSize(TotalFileSizeMetric)](metricresult/totalfilesize(_:).md)
-- [case totalDiskSpaceCapacity(TotalDiskSpaceCapacityMetric)](metricresult/totaldiskspacecapacity(_:).md)
+### Storage
+- [case logicalDiskWrites(LogicalDiskWritesMetric)](./logicaldiskwrites%28_%29.md)
+- [case totalFileSize(TotalFileSizeMetric)](./totalfilesize%28_%29.md)
+- [case totalDiskSpaceCapacity(TotalDiskSpaceCapacityMetric)](./totaldiskspacecapacity%28_%29.md)
 
 
 ---

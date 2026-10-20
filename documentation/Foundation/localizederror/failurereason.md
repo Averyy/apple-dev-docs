@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A localized message describing the reason for the failure.
@@ -20,6 +21,12 @@ A localized message describing the reason for the failure.
 ```swift
 var failureReason: String? { get }
 ```
+
+## Default Implementations
+
+### LocalizedError Implementations
+- [var failureReason: String?](./failurereason-3iucu.md)
+  A localized message describing the reason for the failure.
 
 
 ---

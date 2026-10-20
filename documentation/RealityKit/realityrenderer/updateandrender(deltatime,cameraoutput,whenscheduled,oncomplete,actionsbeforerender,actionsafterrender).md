@@ -1,7 +1,8 @@
 # updateAndRender(deltaTime:cameraOutput:whenScheduled:onComplete:actionsBeforeRender:actionsAfterRender:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tick the simulation and render using activeCamera and the camera rendering output.
 
@@ -23,7 +24,7 @@ Tick the simulation and render using activeCamera and the camera rendering outpu
 ## Parameters
 
 - `deltaTime`: The delta time to advance the simulation
-- `cameraOutput`: Specifies output for rendering with [`activeCamera`](realityrenderer/activecamera.md)
+- `cameraOutput`: Specifies output for rendering with [`activeCamera`](./activecamera.md)
 - `whenScheduled`: A handler that is called when the corresponding MTLCommandBuffer is scheduled
 - `onComplete`: A handler that is called when the corresponding MTLCommandBuffer is complete
 - `actionsBeforeRender`: Array of events and values to wait before GPU rendering work

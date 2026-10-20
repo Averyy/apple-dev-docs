@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique identifier for the web extension context to which this data record belongs.
 
@@ -16,6 +17,10 @@ Unique identifier for the web extension context to which this data record belong
 
 ```swift
 var uniqueIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * uniqueIdentifier;
 ```
 
 

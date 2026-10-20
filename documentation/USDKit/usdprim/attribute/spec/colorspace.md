@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored color space, or `nil` if not authored. Assigning `nil` clears the color space.
 

@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a new variant set to the prim.
 
@@ -26,7 +27,7 @@ The newly added variant set.
 
 #### Discussion
 
-> **Note**: An error if the variant set cannot be added.
+> **Throws**: An error if the variant set cannot be added.
 
 ## Parameters
 

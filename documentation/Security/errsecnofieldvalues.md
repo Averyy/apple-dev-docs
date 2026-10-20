@@ -1,7 +1,8 @@
 # errSecNoFieldValues
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No field values were detected.
 
@@ -18,6 +19,10 @@ No field values were detected.
 
 ```swift
 var errSecNoFieldValues: OSStatus { get }
+```
+
+```c
+errSecNoFieldValues
 ```
 
 

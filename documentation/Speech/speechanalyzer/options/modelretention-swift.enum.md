@@ -1,7 +1,8 @@
 # SpeechAnalyzer.Options.ModelRetention
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A model caching strategy.
 
@@ -22,27 +23,28 @@ enum ModelRetention
 ## Topics
 
 ### Retention options
-- [SpeechAnalyzer.Options.ModelRetention.lingering](speechanalyzer/options/modelretention-swift.enum/lingering.md)
+- [SpeechAnalyzer.Options.ModelRetention.lingering](./modelretention-swift.enum/lingering.md)
   Keeps the models in memory for a time so that they can be reused by another compatible analyzer session.
-- [SpeechAnalyzer.Options.ModelRetention.processLifetime](speechanalyzer/options/modelretention-swift.enum/processlifetime.md)
+- [SpeechAnalyzer.Options.ModelRetention.processLifetime](./modelretention-swift.enum/processlifetime.md)
   Keeps the models in memory until this process exits.
-- [SpeechAnalyzer.Options.ModelRetention.whileInUse](speechanalyzer/options/modelretention-swift.enum/whileinuse.md)
+- [SpeechAnalyzer.Options.ModelRetention.whileInUse](./modelretention-swift.enum/whileinuse.md)
   Releases the models when the analyzer is deallocated.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../../Swift/caseiterable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention)](speechanalyzer/options/init(priority:modelretention:).md)
+### Creating an options object
+- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention)](./init%28priority,modelretention%29.md)
   Creates a structure containing analysis processing options.
-- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention, ignoresResourceLimits: Bool)](speechanalyzer/options/init(priority:modelretention:ignoresresourcelimits:).md)
+- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention, ignoresResourceLimits: Bool)](./init%28priority,modelretention,ignoresresourcelimits%29.md)
   Creates a structure containing analysis processing options.
 
 

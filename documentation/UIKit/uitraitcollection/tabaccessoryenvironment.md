@@ -1,7 +1,8 @@
 # tabAccessoryEnvironment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab accessory environment represents whether a given trait collection is from a view in a `UITabAccessory` content view.
 
@@ -16,17 +17,22 @@ The tab accessory environment represents whether a given trait collection is fro
 var tabAccessoryEnvironment: UITabAccessory.Environment { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITabAccessoryEnvironment tabAccessoryEnvironment;
+```
+
 ## See Also
 
-- [var listEnvironment: UIListEnvironment](uitraitcollection/listenvironment.md)
+### Retrieving layout environment traits
+- [var listEnvironment: UIListEnvironment](./listenvironment.md)
   The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
-- [enum UIListEnvironment](uilistenvironment.md)
+- [enum UIListEnvironment](../uilistenvironment.md)
   Constants that indicate the style of the containing list in a collection view or table view.
-- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uitraitcollection/splitviewcontrollerlayoutenvironment.md)
+- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](./splitviewcontrollerlayoutenvironment.md)
   The split view controller layout environment represents whether an ancestor split view controller is expanded or collapsed.
-- [UISplitViewController.LayoutEnvironment](uisplitviewcontroller/layoutenvironment.md)
+- [UISplitViewController.LayoutEnvironment](../uisplitviewcontroller/layoutenvironment.md)
   Constants that indicate the current layout of the containing split view controller.
-- [UITabAccessory.Environment](uitabaccessory/environment.md)
+- [UITabAccessory.Environment](../uitabaccessory/environment.md)
 
 
 ---

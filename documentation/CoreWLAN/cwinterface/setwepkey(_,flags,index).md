@@ -1,7 +1,8 @@
 # setWEPKey(_:flags:index:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the interface WEP key.
 
@@ -14,11 +15,17 @@ Sets the interface WEP key.
 func setWEPKey(_ key: Data?, flags: CWCipherKeyFlags, index: Int) throws
 ```
 
+```objc
+- (BOOL) setWEPKey:(NSData *) key flags:(CWCipherKeyFlags) flags index:(NSInteger) index error:(NSError **) error;
+```
+
 #### Discussion
 
 *key* must be 5 octets for WEP-40 or 13 octets for WEP-104. If *key* is *nil*, this method clears the WEP key for the interface. *index* must correspond to default key index 1-4.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -28,11 +35,12 @@ func setWEPKey(_ key: Data?, flags: CWCipherKeyFlags, index: Int) throws
 
 ## See Also
 
-- [func setPairwiseMasterKey(Data?) throws](cwinterface/setpairwisemasterkey(_:).md)
+### Setting interface parameters
+- [func setPairwiseMasterKey(Data?) throws](./setpairwisemasterkey%28_%29.md)
   Sets the interface pairwise primary key (PMK).
-- [func setPower(Bool) throws](cwinterface/setpower(_:).md)
+- [func setPower(Bool) throws](./setpower%28_%29.md)
   Sets the interface power state.
-- [func setWLANChannel(CWChannel) throws](cwinterface/setwlanchannel(_:).md)
+- [func setWLANChannel(CWChannel) throws](./setwlanchannel%28_%29.md)
   Sets the interface channel.
 
 

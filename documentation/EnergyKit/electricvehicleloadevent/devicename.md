@@ -1,14 +1,15 @@
 # deviceName
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable name for the device.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -26,11 +27,12 @@ Set a String value that meets these criteria:
 
 The framework alters the value to abide by these rules, if necessary.
 
-The Home app incorporates the device by this name when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience).
+The Home app incorporates the device by this name when you adopt the [`EnergyKit LoadEvents Entitlement`](../../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md).
 
 ## See Also
 
-- [let deviceID: String](electricvehicleloadevent/deviceid.md)
+### Getting device information
+- [let deviceID: String](./deviceid.md)
   The device’s unique stable identifier.
 
 

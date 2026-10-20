@@ -1,7 +1,8 @@
 # AVVideoCompositing
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods custom video compositors must implement.
 
@@ -19,11 +20,15 @@ A protocol that defines the methods custom video compositors must implement.
 protocol AVVideoCompositing : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol AVVideoCompositing <NSObject>
+```
+
 #### Overview
 
-For each AVFoundation object of class [`AVPlayerItem`](avplayeritem.md), [`AVAssetExportSession`](avassetexportsession.md), [`AVAssetImageGenerator`](avassetimagegenerator.md), or [`AVAssetReaderVideoCompositionOutput`](avassetreadervideocompositionoutput.md) that has a non-`nil` value for its `videoComposition` property, and the value of the [`customVideoCompositorClass`](avvideocomposition/customvideocompositorclass.md) property of the `AVVideoComposition` isn’t `nil`, AVFoundation creates and uses an instance of that custom video compositor class to process the instructions contained in the [`AVVideoComposition`](avvideocomposition.md).
+For each AVFoundation object of class [`AVPlayerItem`](./avplayeritem.md), [`AVAssetExportSession`](./avassetexportsession.md), [`AVAssetImageGenerator`](./avassetimagegenerator.md), or [`AVAssetReaderVideoCompositionOutput`](./avassetreadervideocompositionoutput.md) that has a non-`nil` value for its `videoComposition` property, and the value of the [`customVideoCompositorClass`](./avvideocomposition/customvideocompositorclass.md) property of the `AVVideoComposition` isn’t `nil`, AVFoundation creates and uses an instance of that custom video compositor class to process the instructions contained in the [`AVVideoComposition`](./avvideocomposition.md).
 
-The system creates a custom video compositor instance when you assign `videoComposition` an instance of [`AVVideoComposition`](avvideocomposition.md) that’s associated with a different custom video compositor class than the object was previously using.
+The system creates a custom video compositor instance when you assign `videoComposition` an instance of [`AVVideoComposition`](./avvideocomposition.md) that’s associated with a different custom video compositor class than the object was previously using.
 
 When creating instances of custom video compositors, AVFoundation initializes them by calling `init` and then makes them available as the value of the `customVideoCompositor` property of the object. You then can do any additional setup or configuration to the custom compositor.
 
@@ -32,47 +37,48 @@ The AVFoundation object retains the custom video compositor instances for as lon
 ## Topics
 
 ### Inspecting processing requirements
-- [var sourcePixelBufferAttributes: [String : any Sendable]?](avvideocompositing/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](./avvideocompositing/sourcepixelbufferattributes.md)
   The pixel buffer attributes that the compositor accepts for source frames.
-- [var requiredPixelBufferAttributesForRenderContext: [String : any Sendable]](avvideocompositing/requiredpixelbufferattributesforrendercontext.md)
+- [var requiredPixelBufferAttributesForRenderContext: [String : any Sendable]](./avvideocompositing/requiredpixelbufferattributesforrendercontext.md)
   The pixel buffer attributes that the compositor requires for pixel buffers that it creates.
-- [var supportsHDRSourceFrames: Bool](avvideocompositing/supportshdrsourceframes.md)
+- [var supportsHDRSourceFrames: Bool](./avvideocompositing/supportshdrsourceframes.md)
   A Boolean value that indicates whether the compositor handles source frames that contain high dynamic range (HDR) properties.
-- [var supportsWideColorSourceFrames: Bool](avvideocompositing/supportswidecolorsourceframes.md)
+- [var supportsWideColorSourceFrames: Bool](./avvideocompositing/supportswidecolorsourceframes.md)
   A Boolean value that indicates whether the compositor handles source frames that contains wide color properties.
-- [var canConformColorOfSourceFrames: Bool](avvideocompositing/canconformcolorofsourceframes.md)
+- [var canConformColorOfSourceFrames: Bool](./avvideocompositing/canconformcolorofsourceframes.md)
   A Boolean value that indicates whether the compositor conforms the color space of source frames to the composition color space.
-- [var supportsSourceTaggedBuffers: Bool](avvideocompositing/supportssourcetaggedbuffers.md)
+- [var supportsSourceTaggedBuffers: Bool](./avvideocompositing/supportssourcetaggedbuffers.md)
 ### Observing render context changes
-- [func renderContextChanged(AVVideoCompositionRenderContext)](avvideocompositing/rendercontextchanged(_:).md)
+- [func renderContextChanged(AVVideoCompositionRenderContext)](./avvideocompositing/rendercontextchanged%28_%29.md)
   Tells the compositor that the composition changed render contexts.
-- [class AVVideoCompositionRenderContext](avvideocompositionrendercontext.md)
+- [class AVVideoCompositionRenderContext](./avvideocompositionrendercontext.md)
   An object that defines the context in which custom compositors render pixel buffers.
 ### Preparing to render frames
-- [func anticipateRendering(using: AVVideoCompositionRenderHint)](avvideocompositing/anticipaterendering(using:).md)
+- [func anticipateRendering(using: AVVideoCompositionRenderHint)](./avvideocompositing/anticipaterendering%28using%29.md)
   Informs a custom video compositor about upcoming rendering requests.
-- [func prerollForRendering(using: AVVideoCompositionRenderHint)](avvideocompositing/prerollforrendering(using:).md)
+- [func prerollForRendering(using: AVVideoCompositionRenderHint)](./avvideocompositing/prerollforrendering%28using%29.md)
   Tells a custom video compositor to perform any work in the prerolling phase.
-- [class AVVideoCompositionRenderHint](avvideocompositionrenderhint.md)
+- [class AVVideoCompositionRenderHint](./avvideocompositionrenderhint.md)
   Information about upcoming composition requests, such as composition start time and end time.
 ### Rendering the composition
-- [func startRequest(AVAsynchronousVideoCompositionRequest)](avvideocompositing/startrequest(_:).md)
+- [func startRequest(AVAsynchronousVideoCompositionRequest)](./avvideocompositing/startrequest%28_%29.md)
   Directs a custom video compositor object to create a new pixel buffer composed asynchronously from a collection of sources.
-- [class AVAsynchronousVideoCompositionRequest](avasynchronousvideocompositionrequest.md)
+- [class AVAsynchronousVideoCompositionRequest](./avasynchronousvideocompositionrequest.md)
   An object that contains information a video compositor needs to render an output pixel buffer.
-- [func cancelAllPendingVideoCompositionRequests()](avvideocompositing/cancelallpendingvideocompositionrequests.md)
+- [func cancelAllPendingVideoCompositionRequests()](./avvideocompositing/cancelallpendingvideocompositionrequests%28%29.md)
   Directs a custom video compositor object to cancel or finish all pending video composition requests.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Processing spatial video with a custom video compositor](processing-spatial-video-with-a-custom-video-compositor.md)
+### Custom video compositing
+- [Processing spatial video with a custom video compositor](./processing-spatial-video-with-a-custom-video-compositor.md)
   Create a custom video compositor to edit spatial video for playback and export.
 
 

@@ -1,7 +1,8 @@
 # CSIdentitySetPassword(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentitySetPassword(_ user: CSIdentity!, _ password: CFString!)
+```
+
+```c
+void CSIdentitySetPassword(CSIdentityRef user, CFStringRef password);
 ```
 
 

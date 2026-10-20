@@ -1,7 +1,8 @@
 # presentationTimeStamp
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Numerically earliest sample presentation timestamp in the sample buffer.
 
@@ -26,7 +27,7 @@ For in-presentation-order samples, this is the presentation timestamp of the fir
 
 For out-of-presentation-order samples, this is the presentation timestamp of the sample that will be presented first, which is not necessarily the first sample in the buffer.
 
-Returns [`invalid`](cmtime/invalid.md) if `sampleTimings` is empty or contains invalid [`presentationTimeStamp`](cmsampletiminginfo/presentationtimestamp.md).
+Returns [`invalid`](../cmtime/invalid.md) if `sampleTimings` is empty or contains invalid [`presentationTimeStamp`](../cmsampletiminginfo/presentationtimestamp.md).
 
 
 ---

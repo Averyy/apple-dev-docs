@@ -1,7 +1,8 @@
 # DateFormatter.Behavior.default
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,14 +19,19 @@
 case `default`
 ```
 
+```c
+NSDateFormatterBehaviorDefault
+```
+
 #### Discussion
 
 Specifies default formatting behavior.
 
 ## See Also
 
-- [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
-- [DateFormatter.Behavior.behavior10_4](dateformatter/behavior/behavior10_4.md)
+### Constants
+- [DateFormatter.Behavior.behavior10_0](./behavior10_0.md)
+- [DateFormatter.Behavior.behavior10_4](./behavior10_4.md)
 
 
 ---

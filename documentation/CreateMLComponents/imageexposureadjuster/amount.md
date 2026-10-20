@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to adjust the exposure of the image. The larger the value, the brighter the exposure.
 

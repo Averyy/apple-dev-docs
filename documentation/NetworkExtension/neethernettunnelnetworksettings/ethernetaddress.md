@@ -1,7 +1,8 @@
 # ethernetAddress
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ethernet address of the tunnel interface, as a string.
 
@@ -12,6 +13,10 @@ The ethernet address of the tunnel interface, as a string.
 
 ```swift
 var ethernetAddress: String { get }
+```
+
+```objc
+@property (readonly) NSString * ethernetAddress;
 ```
 
 

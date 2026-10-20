@@ -1,14 +1,15 @@
 # ml_find_next_up_processor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int ml_find_next_up_processor(void);
 ```
 

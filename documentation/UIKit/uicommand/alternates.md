@@ -1,7 +1,8 @@
 # alternates
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of alternative actions to take for the command.
 
@@ -18,9 +19,14 @@ An array of alternative actions to take for the command.
 var alternates: [UICommandAlternate] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<UICommandAlternate *> * alternates;
+```
+
 ## See Also
 
-- [class UICommandAlternate](uicommandalternate.md)
+### Getting command alternatives
+- [class UICommandAlternate](../uicommandalternate.md)
   An object representing an alternative action for a command.
 
 

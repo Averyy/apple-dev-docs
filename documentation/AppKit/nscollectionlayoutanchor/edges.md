@@ -1,7 +1,8 @@
 # edges
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edges of the item an anchor is attached to.
 
@@ -12,6 +13,10 @@ The edges of the item an anchor is attached to.
 
 ```swift
 var edges: NSDirectionalRectEdge { get }
+```
+
+```objc
+@property (readonly) NSDirectionalRectEdge edges;
 ```
 
 

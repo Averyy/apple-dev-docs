@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWIsochChannelDefaultFlags](1645958-anonymous/kfwisochchanneldefaultflags.md)
-- [kFWIsochChannelDoNotResumeOnWake](1645958-anonymous/kfwisochchanneldonotresumeonwake.md)
+- [kFWIsochChannelDefaultFlags](./api-1645958-anonymous/kfwisochchanneldefaultflags.md)
+- [kFWIsochChannelDoNotResumeOnWake](./api-1645958-anonymous/kfwisochchanneldonotresumeonwake.md)
 
 
 ---

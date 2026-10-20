@@ -1,7 +1,8 @@
 # aggregationStyle
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aggregation style for the given quantity type.
 
@@ -19,15 +20,20 @@ The aggregation style for the given quantity type.
 var aggregationStyle: HKQuantityAggregationStyle { get }
 ```
 
+```objc
+@property (readonly) HKQuantityAggregationStyle aggregationStyle;
+```
+
 #### Discussion
 
-For more information on aggregation styles, see [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md).
+For more information on aggregation styles, see [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md).
 
 ## See Also
 
-- [enum HKQuantityAggregationStyle](hkquantityaggregationstyle.md)
+### Accessing Quantity Type Data
+- [enum HKQuantityAggregationStyle](../hkquantityaggregationstyle.md)
   Constant values that describe how quantities can be aggregated over time.
-- [func `is`(compatibleWith: HKUnit) -> Bool](hkquantitytype/is(compatiblewith:).md)
+- [func `is`(compatibleWith: HKUnit) -> Bool](./is%28compatiblewith%29.md)
   Returns a Boolean value that indicates whether the quantity type is compatible with the given unit.
 
 

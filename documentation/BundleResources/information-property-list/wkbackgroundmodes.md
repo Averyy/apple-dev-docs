@@ -1,16 +1,27 @@
 # WKBackgroundModes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The services a watchOS app provides that require it to continue running in the background.
 
 **Availability**:
 - watchOS 3.0+
 
+## Details
 
+- **Name**: `WKBackgroundModes` (Required background modes (Watch))
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `workout-processing`: Allows an active workout session to run in the background.
+- `self-care`: Enables extended runtime sessions for brief activities focusing on health or emotional well-being.
+- `mindfulness`: Enables extended runtime sessions for silent meditation.
+- `physical-therapy`: Enables extended runtime sessions for stretching, strengthening, or range-of-motion exercises.
+- `alarm`: Enables extended runtime sessions for smart alarms.
+- `underwater-depth`: Enables extended runtime sessions for underwater depth experiences.
 
 #### Discussion
 
@@ -20,15 +31,17 @@ To add this key to the Information Property List, enable your WatchKit extension
 
 ## See Also
 
-- [Using extended runtime sessions](../watchkit/using-extended-runtime-sessions.md)
+### Related Documentation
+- [Using extended runtime sessions](../../WatchKit/using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [Running workout sessions](../healthkit/running-workout-sessions.md)
+- [Running workout sessions](../../HealthKit/running-workout-sessions.md)
   Track a workout on Apple Watch.
-- [UIBackgroundModes](information-property-list/uibackgroundmodes.md)
+### Background execution
+- [UIBackgroundModes](./uibackgroundmodes.md)
   Services provided by an app that require it to run in the background.
-- [BGTaskSchedulerPermittedIdentifiers](information-property-list/bgtaskschedulerpermittedidentifiers.md)
+- [BGTaskSchedulerPermittedIdentifiers](./bgtaskschedulerpermittedidentifiers.md)
   An array of strings containing developer-specified task identifiers in reverse URL notation.
-- [LSBackgroundOnly](information-property-list/lsbackgroundonly.md)
+- [LSBackgroundOnly](./lsbackgroundonly.md)
   A Boolean value indicating whether the app runs only in the background.
 
 

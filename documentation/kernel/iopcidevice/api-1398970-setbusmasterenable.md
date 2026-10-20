@@ -1,14 +1,15 @@
 # setBusMasterEnable
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 12.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool setBusMasterEnable(bool enable);
 ```
 

@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerOOBDataReservedEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothLESecurityManagerOOBDataReservedEnd: BluetoothLESecurityManagerOOBData { get }
 ```
 
+```c
+kBluetoothLESecurityManagerOOBDataReservedEnd
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerOOBAuthenticationDataNotPresent: BluetoothLESecurityManagerOOBData](kbluetoothlesecuritymanageroobauthenticationdatanotpresent.md)
-- [var kBluetoothLESecurityManagerOOBAuthenticationDataPresent: BluetoothLESecurityManagerOOBData](kbluetoothlesecuritymanageroobauthenticationdatapresent.md)
-- [var kBluetoothLESecurityManagerOOBDataReservedStart: BluetoothLESecurityManagerOOBData](kbluetoothlesecuritymanageroobdatareservedstart.md)
+### Constants
+- [var kBluetoothLESecurityManagerOOBAuthenticationDataNotPresent: BluetoothLESecurityManagerOOBData](./kbluetoothlesecuritymanageroobauthenticationdatanotpresent.md)
+- [var kBluetoothLESecurityManagerOOBAuthenticationDataPresent: BluetoothLESecurityManagerOOBData](./kbluetoothlesecuritymanageroobauthenticationdatapresent.md)
+- [var kBluetoothLESecurityManagerOOBDataReservedStart: BluetoothLESecurityManagerOOBData](./kbluetoothlesecuritymanageroobdatareservedstart.md)
 
 
 ---

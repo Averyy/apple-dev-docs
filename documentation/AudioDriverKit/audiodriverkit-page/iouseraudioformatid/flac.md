@@ -1,7 +1,8 @@
 # FLAC
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Free Lossless Audio Codec format.
 
@@ -10,7 +11,7 @@ The Free Lossless Audio Codec format.
 
 ## Declaration
 
-```swift
+```c
 FLAC
 ```
 

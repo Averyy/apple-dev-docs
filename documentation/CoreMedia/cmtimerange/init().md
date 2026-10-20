@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty time range at zero.
 
@@ -22,9 +23,10 @@ init()
 
 ## See Also
 
-- [init(start: CMTime, duration: CMTime)](cmtimerange/init(start:duration:).md)
+### Creating Time Ranges
+- [init(start: CMTime, duration: CMTime)](./init%28start,duration%29.md)
   Creates a valid time range with a start time and duration.
-- [init(start: CMTime, end: CMTime)](cmtimerange/init(start:end:).md)
+- [init(start: CMTime, end: CMTime)](./init%28start,end%29.md)
   Creates a valid time range from a start and end time.
 
 

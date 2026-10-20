@@ -1,7 +1,8 @@
 # escapedTemplate(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a template string by adding backslash escapes as necessary to protect any characters that would match as pattern metacharacters
 
@@ -20,6 +21,10 @@ Returns a template string by adding backslash escapes as necessary to protect an
 class func escapedTemplate(for string: String) -> String
 ```
 
+```objc
++ (NSString *) escapedTemplateForString:(NSString *) string;
+```
+
 #### Return Value
 
 The escaped template string.
@@ -30,7 +35,7 @@ Returns a string by adding backslash escapes as necessary to the given string, t
 
 For example, the string `"(N/A)"` contains the pattern metacharacters `(`, `/`, and `)`. The result of adding backslash escapes to this string is `"\\(N\\/A\\)"`.
 
-See [`Flag Options`](nsregularexpression#Flag-Options.md) for the format of the resulting template string.
+See [Flag Options](../nsregularexpression.md#Flag-Options) for the format of the resulting template string.
 
 ## Parameters
 
@@ -38,7 +43,8 @@ See [`Flag Options`](nsregularexpression#Flag-Options.md) for the format of the 
 
 ## See Also
 
-- [class func escapedPattern(for: String) -> String](nsregularexpression/escapedpattern(for:).md)
+### Escaping Characters in a String
+- [class func escapedPattern(for: String) -> String](./escapedpattern%28for%29.md)
   Returns a string by adding backslash escapes as necessary to protect any characters that would match as pattern metacharacters.
 
 

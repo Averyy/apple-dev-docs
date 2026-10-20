@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A word boundary algorithm that implements the “default word boundary” Unicode recommendation.
 

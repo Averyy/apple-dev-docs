@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Calculates the division of each element of a point and a scalar value and stores the result in the left-hand-side variable.
 

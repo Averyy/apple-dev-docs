@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the output value with the specified name.
 
@@ -20,7 +21,7 @@ mutating func remove(_ outputName: String) -> InferenceValue?
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 #### Return Value
 
@@ -36,9 +37,10 @@ After you remove a value, subsequent calls with the same name return `nil`.
 
 ## See Also
 
-- [var count: Int](inferencefunction/outputs/count.md)
+### Accessing outputs
+- [var count: Int](./count.md)
   The number of outputs in this collection.
-- [var names: some Collection<String>](inferencefunction/outputs/names.md)
+- [var names: some Collection<String>](./names.md)
   The names of the outputs in this collection.
 
 

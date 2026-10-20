@@ -1,17 +1,24 @@
 # MPMovieTimeOption.nearestKeyFrame
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case nearestKeyFrame
+```
+
+```c
+MPMovieTimeOptionNearestKeyFrame
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ Generate a thumbnail image using the nearest key frame. This frame could be seve
 
 ## See Also
 
-- [MPMovieTimeOption.exact](mpmovietimeoption/exact.md)
+### Constants
+- [MPMovieTimeOption.exact](./exact.md)
 
 
 ---

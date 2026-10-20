@@ -1,7 +1,8 @@
 # LightmapResource.BakeType.ambientOcclusion
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,9 +20,10 @@ case ambientOcclusion
 
 ## See Also
 
-- [LightmapResource.BakeType.finalShadedColor](lightmapresource/baketype/finalshadedcolor.md)
+### Specifying the bake type
+- [LightmapResource.BakeType.finalShadedColor](./finalshadedcolor.md)
   Lightmaps with this type contain the final shaded color. No runtime shading calculations are performed for objects using this type of lightmap.
-- [LightmapResource.BakeType.indirectDiffuseIrradiance](lightmapresource/baketype/indirectdiffuseirradiance.md)
+- [LightmapResource.BakeType.indirectDiffuseIrradiance](./indirectdiffuseirradiance.md)
 
 
 ---

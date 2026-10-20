@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(timeValue: Int64, timeScale: Int32, flags: Int32)](cvtime/init(timevalue:timescale:flags:).md)
+### Initializers
+- [init(timeValue: Int64, timeScale: Int32, flags: Int32)](./init%28timevalue,timescale,flags%29.md)
 
 
 ---

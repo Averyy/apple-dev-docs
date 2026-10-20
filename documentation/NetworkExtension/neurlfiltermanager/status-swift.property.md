@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of the URL filter.
 
@@ -19,9 +20,10 @@ var status: NEURLFilterManager.Status { get async }
 
 ## See Also
 
-- [func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>](neurlfiltermanager/handlestatuschange.md)
+### Working with filter statuses
+- [func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>](./handlestatuschange%28%29.md)
   Sets up an observer for the status notification and models it as an asynchronous sequence.
-- [NEURLFilterManager.Status](neurlfiltermanager/status-swift.enum.md)
+- [NEURLFilterManager.Status](./status-swift.enum.md)
   An enumeration of URL filter status codes.
 
 

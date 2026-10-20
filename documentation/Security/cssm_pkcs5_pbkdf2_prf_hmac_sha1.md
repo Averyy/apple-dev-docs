@@ -1,7 +1,8 @@
 # CSSM_PKCS5_PBKDF2_PRF_HMAC_SHA1
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_PKCS5_PBKDF2_PRF_HMAC_SHA1: Int { get }
+```
+
+```c
+CSSM_PKCS5_PBKDF2_PRF_HMAC_SHA1
 ```
 
 

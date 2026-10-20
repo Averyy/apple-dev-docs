@@ -1,7 +1,8 @@
 # PKStrokePath.InterpolatedSlice.Stride
 
 **Framework**: PencilKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The stride between elements of this slice.
 
@@ -21,11 +22,11 @@ enum Stride
 ## Topics
 
 ### Stride types
-- [PKStrokePath.InterpolatedSlice.Stride.distance(_:)](pkstrokepath-swift.struct/interpolatedslice/stride/distance(_:).md)
+- [PKStrokePath.InterpolatedSlice.Stride.distance(_:)](./stride/distance%28_%29.md)
   A stride based on a distance between elements you provide.
-- [PKStrokePath.InterpolatedSlice.Stride.parametricStep(_:)](pkstrokepath-swift.struct/interpolatedslice/stride/parametricstep(_:).md)
+- [PKStrokePath.InterpolatedSlice.Stride.parametricStep(_:)](./stride/parametricstep%28_%29.md)
   A stride based on a parametric step value you provide.
-- [PKStrokePath.InterpolatedSlice.Stride.time(_:)](pkstrokepath-swift.struct/interpolatedslice/stride/time(_:).md)
+- [PKStrokePath.InterpolatedSlice.Stride.time(_:)](./stride/time%28_%29.md)
   A stride based on a time interval in seconds you provide.
 
 

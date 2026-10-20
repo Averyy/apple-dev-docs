@@ -1,9 +1,10 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns a Boolean value indicating whether two instances refer to the same memory region, and have the same flags (such as [`isKnownASCII`](utf8span/isknownascii.md)).
+Returns a Boolean value indicating whether two instances refer to the same memory region, and have the same flags (such as [`isKnownASCII`](./isknownascii.md)).
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +23,7 @@ func isTriviallyIdentical(to other: UTF8Span) -> Bool
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

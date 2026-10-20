@@ -1,7 +1,8 @@
 # AssignedWorkDocument.ScoreAnnotation.Kind.bonus
 
 **Framework**: Assignables  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A score mark indicating a bonus to an answer.
 
@@ -9,7 +10,7 @@ A score mark indicating a bonus to an answer.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ case bonus
 
 ## See Also
 
-- [AssignedWorkDocument.ScoreAnnotation.Kind.correct](assignedworkdocument/scoreannotation/kind-swift.enum/correct.md)
+### Score annotations
+- [AssignedWorkDocument.ScoreAnnotation.Kind.correct](./correct.md)
   A score mark indicating an correct answer.
-- [AssignedWorkDocument.ScoreAnnotation.Kind.incorrect](assignedworkdocument/scoreannotation/kind-swift.enum/incorrect.md)
+- [AssignedWorkDocument.ScoreAnnotation.Kind.incorrect](./incorrect.md)
   A score mark indicating an incorrect answer.
-- [AssignedWorkDocument.ScoreAnnotation.Kind.unknown](assignedworkdocument/scoreannotation/kind-swift.enum/unknown.md)
+- [AssignedWorkDocument.ScoreAnnotation.Kind.unknown](./unknown.md)
   An unknown kind. This value may occur if an older version of this framework is deserializing a newer document version.
 
 

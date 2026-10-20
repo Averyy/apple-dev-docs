@@ -1,7 +1,8 @@
 # fixed(soundStageSize:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a fixed spatial audio experience with a specific sound stage size.
 
@@ -13,6 +14,8 @@ Create a fixed spatial audio experience with a specific sound stage size.
 ```swift
 static func fixed(soundStageSize: SpatialAudioExperiences.SoundStageSize) -> Self
 ```
+
+Available when `Self` is `FixedSpatialAudio`.
 
 
 ---

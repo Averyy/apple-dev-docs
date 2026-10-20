@@ -1,7 +1,8 @@
 # intent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The option to use when incorporating dropped items into your content.
 
@@ -17,11 +18,16 @@ The option to use when incorporating dropped items into your content.
 var intent: UITableViewDropProposal.Intent { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITableViewDropIntent intent;
+```
+
 ## See Also
 
-- [UITableViewDropProposal.Intent](uitableviewdropproposal/intent-swift.enum.md)
+### Getting the proposed drop location
+- [UITableViewDropProposal.Intent](./intent-swift.enum.md)
   Constants indicating how you intend to handle a drop.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](../uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
 
 

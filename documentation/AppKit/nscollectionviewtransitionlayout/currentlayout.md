@@ -1,7 +1,8 @@
 # currentLayout
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection view’s current layout object.
 
@@ -14,13 +15,18 @@ The collection view’s current layout object.
 var currentLayout: NSCollectionViewLayout { get }
 ```
 
+```objc
+@property (readonly) NSCollectionViewLayout * currentLayout;
+```
+
 #### Discussion
 
 Use this object to retrieve the initial layout attributes for elements of the collection view. If the transition is ultimately cancelled, the collection view animates its items back to the attributes provided by this object.
 
 ## See Also
 
-- [var nextLayout: NSCollectionViewLayout](nscollectionviewtransitionlayout/nextlayout.md)
+### Accessing the Layout Objects
+- [var nextLayout: NSCollectionViewLayout](./nextlayout.md)
   The collection view’s new layout object.
 
 

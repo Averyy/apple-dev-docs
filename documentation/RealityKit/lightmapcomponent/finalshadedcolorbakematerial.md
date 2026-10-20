@@ -1,7 +1,8 @@
 # LightmapComponent.FinalShadedColorBakeMaterial
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Material that should be used on lightmapped entities using the “beauty” bake type. This material only reads the lightmap data and does not perform shading calculations at runtime.
 
@@ -22,12 +23,12 @@ struct FinalShadedColorBakeMaterial
 ## Topics
 
 ### Initializers
-- [init()](lightmapcomponent/finalshadedcolorbakematerial/init.md)
+- [init()](./finalshadedcolorbakematerial/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Material](material.md)
+- [Material](../material.md)
 
 
 ---

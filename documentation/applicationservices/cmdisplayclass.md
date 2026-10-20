@@ -1,7 +1,8 @@
 # cmDisplayClass
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A display device profile defined for a monitor. 
 

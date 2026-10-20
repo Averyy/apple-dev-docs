@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the state of the specified attribute.
 
@@ -17,6 +18,10 @@ Returns the state of the specified attribute.
 
 ```swift
 subscript(index: Int) -> MTLAttributeDescriptor! { get set }
+```
+
+```objc
+- (MTLAttributeDescriptor *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
 #### Return Value

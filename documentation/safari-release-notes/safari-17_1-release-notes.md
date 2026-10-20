@@ -1,6 +1,7 @@
 # Safari 17.1 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released October 25, 2023 — Version 17.1 (19616.2.9)
 
@@ -22,7 +23,7 @@ Safari 17.1 is available for iOS 17.1, iPadOS 17.1, macOS Sonoma, macOS Ventura,
 
 - Fixed a bug that could cause authentication through Extensible Enterprise Single Sign-On to hang if the authentication was canceled on the server side.  (105809792)
 
-##### Css
+##### CSS
 
 ###### Resolved Issues
 
@@ -31,7 +32,7 @@ Safari 17.1 is available for iOS 17.1, iPadOS 17.1, macOS Sonoma, macOS Ventura,
 - Fixed `auto none` support for `contain-intrinsic-size`.  (112479718)
 - Fixed fine-grained invalidation for `:host` pseudo-class in non-subject position.  (114560066)
 
-##### Javascript
+##### JavaScript
 
 ###### Resolved Issues
 
@@ -80,7 +81,7 @@ Safari 17.1 is available for iOS 17.1, iPadOS 17.1, macOS Sonoma, macOS Ventura,
 
 - Added support for `storage.session.setAccessLevel` and updated `storage.session` to be accessed only by `TRUSTED_CONTEXTS` by default.  (105952676)
 
-##### Web Api
+##### Web API
 
 ###### Resolved Issues
 
@@ -105,7 +106,7 @@ Safari 17.1 is available for iOS 17.1, iPadOS 17.1, macOS Sonoma, macOS Ventura,
 - Fixed objects logged to the console with multiple private fields that use the same name.  (109215331)
 - Fixed: Stopped using `Number.prototype.toLocaleString()` for numeric console format specifiers.  (112170843)
 
-##### Webgl
+##### WebGL
 
 ###### Resolved Issues
 
@@ -113,17 +114,18 @@ Safari 17.1 is available for iOS 17.1, iPadOS 17.1, macOS Sonoma, macOS Ventura,
 
 ## See Also
 
-- [Safari 17.6 Release Notes](safari-17_6-release-notes.md)
+### Version 17
+- [Safari 17.6 Release Notes](./safari-17_6-release-notes.md)
   Released July 29, 2024 — 17.6 (19618.3.11)
-- [Safari 17.5 Release Notes](safari-17_5-release-notes.md)
+- [Safari 17.5 Release Notes](./safari-17_5-release-notes.md)
   Released May 13, 2024 — 17.5 (19618.2.12)
-- [Safari 17.4 Release Notes](safari-17_4-release-notes.md)
+- [Safari 17.4 Release Notes](./safari-17_4-release-notes.md)
   Released March 5, 2024 — 17.4  (19618.1.15)
-- [Safari 17.3 Release Notes](safari-17_3-release-notes.md)
+- [Safari 17.3 Release Notes](./safari-17_3-release-notes.md)
   Released January 22, 2024 — Version 17.3 (19617.2.4)
-- [Safari 17.2 Release Notes](safari-17_2-release-notes.md)
+- [Safari 17.2 Release Notes](./safari-17_2-release-notes.md)
   Released December 11, 2023 — Version 17.2 (19617.1.17)
-- [Safari 17 Release Notes](safari-17-release-notes.md)
+- [Safari 17 Release Notes](./safari-17-release-notes.md)
   Released September 18, 2023 — Version 17 (19616.1.27)
 
 

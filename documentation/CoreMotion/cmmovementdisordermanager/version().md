@@ -1,7 +1,8 @@
 # version()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string that describes the movement disorder algorithm’s current version.
 
@@ -14,13 +15,17 @@ Returns a string that describes the movement disorder algorithm’s current vers
 class func version() -> String?
 ```
 
+```objc
++ (NSString *) version;
+```
+
 ## Mentions
 
-- [Movement disorder algorithm changelog](movement-disorder-algorithm-changelog.md)
+- [Movement disorder algorithm changelog](../movement-disorder-algorithm-changelog.md)
 
 #### Discussion
 
-Use this method to determine the algorithm used by the movement disorder manager. If the current device supports gathering movement disorder data, this method returns a string with the version number in `<major>.<minor>.<fix>` format. It returns `nil` anytime [`isAvailable()`](cmmovementdisordermanager/isavailable().md) returns [`false`](https://developer.apple.com/documentation/swift/false). For information about the current version, see [`Movement disorder algorithm changelog`](movement-disorder-algorithm-changelog.md).
+Use this method to determine the algorithm used by the movement disorder manager. If the current device supports gathering movement disorder data, this method returns a string with the version number in `<major>.<minor>.<fix>` format. It returns `nil` anytime [`isAvailable()`](./isavailable%28%29.md) returns [`false`](../../Swift/false.md). For information about the current version, see [Movement disorder algorithm changelog](../movement-disorder-algorithm-changelog.md).
 
 > ❗ **Important**:  Your app uses the version of the algorithm provided by the current operating system running on the device. This means the algorithm your app uses might change, without requiring you to rebuild and resubmit your app.
 
@@ -36,9 +41,10 @@ func testForVersionChange() throws {
 
 ## See Also
 
-- [class func isAvailable() -> Bool](cmmovementdisordermanager/isavailable.md)
+### Checking Availablility
+- [class func isAvailable() -> Bool](./isavailable%28%29.md)
   A Boolean value indicating whether the current device supports the movement disorder manager.
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmmovementdisordermanager/authorizationstatus.md)
+- [class func authorizationStatus() -> CMAuthorizationStatus](./authorizationstatus%28%29.md)
   A value indicating whether the user has authorized the app to monitor and query for movement disorder data.
 
 

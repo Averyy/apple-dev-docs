@@ -1,16 +1,19 @@
 # includesMultipleApplicationVersions
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating if the version of the app changed at least once during the reporting period.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`includesMultipleApplicationVersions`](../metricreport/environment-swift.struct/includesmultipleapplicationversions.md) instead.
 
 ## Declaration
 
@@ -18,15 +21,20 @@ A Boolean indicating if the version of the app changed at least once during the 
 var includesMultipleApplicationVersions: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL includesMultipleApplicationVersions;
+```
+
 ## See Also
 
-- [var timeStampBegin: Date](mxmetricpayload/timestampbegin.md)
+### Reading information about the payload
+- [var timeStampBegin: Date](./timestampbegin.md)
   The starting time of the reporting period.
-- [var timeStampEnd: Date](mxmetricpayload/timestampend.md)
+- [var timeStampEnd: Date](./timestampend.md)
   The ending time of the reporting period.
-- [var latestApplicationVersion: String](mxmetricpayload/latestapplicationversion.md)
+- [var latestApplicationVersion: String](./latestapplicationversion.md)
   The version of the app on the device at the end of the reporting period.
-- [var metaData: MXMetaData?](mxmetricpayload/metadata.md)
+- [var metaData: MXMetaData?](./metadata.md)
   A set of system-level information for the device.
 
 

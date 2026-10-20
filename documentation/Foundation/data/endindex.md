@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end index into the data.
 
@@ -26,13 +27,14 @@ This is the “one-past-the-end” position, and will always be equal to the `co
 
 ## See Also
 
-- [typealias Index](data/index.md)
+### Manipulating Indexes
+- [typealias Index](./index.md)
   A type used to indicate a position in a data’s buffer.
-- [var startIndex: Data.Index](data/startindex.md)
+- [var startIndex: Data.Index](./startindex.md)
   The beginning index into the data.
-- [func index(after: Data.Index) -> Data.Index](data/index(after:).md)
+- [func index(after: Data.Index) -> Data.Index](./index%28after%29.md)
   Returns the index that immediately follows the specified index.
-- [func index(before: Data.Index) -> Data.Index](data/index(before:).md)
+- [func index(before: Data.Index) -> Data.Index](./index%28before%29.md)
   Returns the index that immediately precedes the specified index.
 
 

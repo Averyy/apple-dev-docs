@@ -1,7 +1,8 @@
 # preferences
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Preferences menu.
 
@@ -18,15 +19,20 @@ The Preferences menu.
 static let preferences: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuPreferences;
+```
+
 ## See Also
 
-- [static let about: UIMenu.Identifier](uimenu/identifier-swift.struct/about.md)
+### App menu commands
+- [static let about: UIMenu.Identifier](./about.md)
   The About menu.
-- [static let services: UIMenu.Identifier](uimenu/identifier-swift.struct/services.md)
+- [static let services: UIMenu.Identifier](./services.md)
   The Services menu.
-- [static let hide: UIMenu.Identifier](uimenu/identifier-swift.struct/hide.md)
+- [static let hide: UIMenu.Identifier](./hide.md)
   The Hide menu.
-- [static let quit: UIMenu.Identifier](uimenu/identifier-swift.struct/quit.md)
+- [static let quit: UIMenu.Identifier](./quit.md)
   The Quit menu.
 
 

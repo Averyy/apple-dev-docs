@@ -1,7 +1,8 @@
 # controlPointBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, to the control point data in the buffer.
 
@@ -19,9 +20,13 @@ The offset, in bytes, to the control point data in the buffer.
 var controlPointBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger controlPointBufferOffset;
+```
+
 #### Discussion
 
-The offset needs to be a multiple of the format element size you configure with the [`controlPointFormat`](mtlaccelerationstructurecurvegeometrydescriptor/controlpointformat.md) property. You also need to align the offset to the platform’s buffer alignment requirement.
+The offset needs to be a multiple of the format element size you configure with the [`controlPointFormat`](./controlpointformat.md) property. You also need to align the offset to the platform’s buffer alignment requirement.
 
 
 ---

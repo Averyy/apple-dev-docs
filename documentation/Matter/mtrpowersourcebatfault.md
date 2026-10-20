@@ -1,7 +1,8 @@
 # MTRPowerSourceBatFault
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 enum MTRPowerSourceBatFault
 ```
 
+```c
+enum MTRPowerSourceBatFault : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPowerSourceBatFault.overTemp](mtrpowersourcebatfault/overtemp.md)
-- [MTRPowerSourceBatFault.underTemp](mtrpowersourcebatfault/undertemp.md)
-- [MTRPowerSourceBatFault.unspecified](mtrpowersourcebatfault/unspecified.md)
+- [MTRPowerSourceBatFault.overTemp](./mtrpowersourcebatfault/overtemp.md)
+- [MTRPowerSourceBatFault.underTemp](./mtrpowersourcebatfault/undertemp.md)
+- [MTRPowerSourceBatFault.unspecified](./mtrpowersourcebatfault/unspecified.md)
 ### Type Properties
-- [static var unspecfied: MTRPowerSourceBatFault](mtrpowersourcebatfault/unspecfied.md)
+- [static var unspecfied: MTRPowerSourceBatFault](./mtrpowersourcebatfault/unspecfied.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrpowersourcebatfault/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrpowersourcebatfault/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

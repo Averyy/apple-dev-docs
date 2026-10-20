@@ -15,42 +15,43 @@ Images on buttons are often used to indicate the function of the button. Use the
 </buttonLockup>
 ```
 
-##### Subelements of Buttonlockup
+##### Subelements of buttonLockup
 
-- [`badge`](badge.md)
-- [`title`](title.md)
+- [badge](./badge.md)
+- [title](./title.md)
 
-##### Elements That Use Buttonlockup
+##### Elements that Use buttonLockup
 
-- [`organizer`](organizer.md)
-- [`row`](row.md)
+- [organizer](./organizer.md)
+- [row](./row.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [button](button.md)
+### Lockup Elements
+- [button](./button.md)
   Displays a button icon the user can click to initiate an action.
-- [listItemLockup](listitemlockup.md)
+- [listItemLockup](./listitemlockup.md)
   Contains a new list item.
-- [lockup](lockup.md)
+- [lockup](./lockup.md)
   Contains several elements that are treated as a single element.
-- [monogramLockup](monogramlockup.md)
+- [monogramLockup](./monogramlockup.md)
   Creates a monogram using a person’s image or initials.
-- [overlay](overlay.md)
+- [overlay](./overlay.md)
   Displays elements on top of other elements.
 
 

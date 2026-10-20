@@ -1,7 +1,8 @@
 # compress(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compresses the data object’s bytes using an algorithm that you specify.
 
@@ -20,9 +21,13 @@ Compresses the data object’s bytes using an algorithm that you specify.
 func compress(using algorithm: NSData.CompressionAlgorithm) throws
 ```
 
+```objc
+- (BOOL) compressUsingAlgorithm:(NSDataCompressionAlgorithm) algorithm error:(NSError **) error;
+```
+
 #### Discussion
 
-Use this method to compress in-memory data when you want to reduce memory usage and can afford the time to compress and decompress the data. If your data object is already in a compressed format, such as media formats like JPEG images or AAC audio, [`compress(using:)`](nsmutabledata/compress(using:).md) may provide minimal or no benefit.
+Use this method to compress in-memory data when you want to reduce memory usage and can afford the time to compress and decompress the data. If your data object is already in a compressed format, such as media formats like JPEG images or AAC audio, [`compress(using:)`](./compress%28using%29.md) may provide minimal or no benefit.
 
 The following example shows how to compress data from a string and prints the sizes of the data instances to illustrate the amount of compression:
 
@@ -43,21 +48,22 @@ do {
 
 ## Parameters
 
-- `algorithm`: The algorithm to use to compress the data. For a list of available algorithms, see [`NSData.CompressionAlgorithm`](nsdata/compressionalgorithm.md).
+- `algorithm`: The algorithm to use to compress the data. For a list of available algorithms, see [`NSData.CompressionAlgorithm`](../nsdata/compressionalgorithm.md).
 
 ## See Also
 
-- [func decompress(using: NSData.CompressionAlgorithm) throws](nsmutabledata/decompress(using:).md)
+### Compressing and Decompressing Data
+- [func decompress(using: NSData.CompressionAlgorithm) throws](./decompress%28using%29.md)
   Decompresses the data object’s bytes.
-- [NSData.CompressionAlgorithm](nsdata/compressionalgorithm.md)
+- [NSData.CompressionAlgorithm](../nsdata/compressionalgorithm.md)
   An algorithm that indicates how to compress or decompress data.
-- [var NSCompressionErrorMaximum: Int](nscompressionerrormaximum-swift.var.md)
+- [var NSCompressionErrorMaximum: Int](../nscompressionerrormaximum-swift.var.md)
   The end of the range of error codes reserved for compression errors.
-- [var NSCompressionErrorMinimum: Int](nscompressionerrorminimum-swift.var.md)
+- [var NSCompressionErrorMinimum: Int](../nscompressionerrorminimum-swift.var.md)
   The start of the range of error codes reserved for compression errors.
-- [var NSCompressionFailedError: Int](nscompressionfailederror-swift.var.md)
+- [var NSCompressionFailedError: Int](../nscompressionfailederror-swift.var.md)
   An error code value that indicates a failure to compress data using the provided algorithm.
-- [var NSDecompressionFailedError: Int](nsdecompressionfailederror-swift.var.md)
+- [var NSDecompressionFailedError: Int](../nsdecompressionfailederror-swift.var.md)
   An error code value that indicates a failure to decompress data using the provided algorithm.
 
 

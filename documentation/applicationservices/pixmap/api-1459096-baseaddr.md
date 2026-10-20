@@ -1,7 +1,8 @@
 # baseAddr
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 For an onscreen pixel image, a pointer to the first byte of the image. For optimal performance, this should be a multiple of 4. The `baseAddr` field of the `PixMap` record for an offscreen graphics world contains a handle instead of a pointer. Your application should never directly access the `baseAddr` field of the `PixMap` record for an offscreen graphics world.
 
@@ -12,6 +13,10 @@ For an onscreen pixel image, a pointer to the first byte of the image. For optim
 
 ```swift
 var baseAddr: Ptr!
+```
+
+```c
+Ptr baseAddr;
 ```
 
 

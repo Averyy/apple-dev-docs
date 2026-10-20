@@ -1,14 +1,15 @@
 # IFNET_RSSI_UNKNOWN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_RSSI_UNKNOWN = ((-2147483647) - 1)
 ```
 

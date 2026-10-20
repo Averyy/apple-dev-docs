@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvents.Element
 
 **Framework**: DockKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A dock accessory event.
 

@@ -1,7 +1,8 @@
 # EDOM
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 math software. Numerical argument out of domain.
 

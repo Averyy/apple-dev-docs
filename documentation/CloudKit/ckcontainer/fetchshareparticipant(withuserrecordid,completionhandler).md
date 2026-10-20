@@ -1,7 +1,8 @@
 # fetchShareParticipant(withUserRecordID:completionHandler:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the share participant with the specified user record ID.
 
@@ -20,6 +21,10 @@ Fetches the share participant with the specified user record ID.
 func fetchShareParticipant(withUserRecordID userRecordID: CKRecord.ID, completionHandler: @escaping @Sendable (CKShare.Participant?, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) fetchShareParticipantWithUserRecordID:(CKRecordID *) userRecordID completionHandler:(void (^)(CKShareParticipant *shareParticipant, NSError *error)) completionHandler;
+```
+
 #### Discussion
 
 The closure doesn’t return a value and takes the following parameters:
@@ -27,7 +32,7 @@ The closure doesn’t return a value and takes the following parameters:
 - The share participant, or `nil` if CloudKit can’t find the participant.
 - An error if a problem occurs, or `nil` if CloudKit successfully retrieves the participant.
 
-This method searches for the share participant asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
+This method searches for the share participant asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
 
 ## Parameters
 
@@ -36,23 +41,24 @@ This method searches for the share participant asynchronously and with a low pri
 
 ## See Also
 
-- [func discoverAllIdentities(completionHandler: ([CKUserIdentity]?, (any Error)?) -> Void)](ckcontainer/discoverallidentities(completionhandler:).md)
+### Discovering User Records
+- [func discoverAllIdentities(completionHandler: ([CKUserIdentity]?, (any Error)?) -> Void)](./discoverallidentities%28completionhandler%29.md)
   Fetches all user identities that match entries in the user’s Contacts.
-- [func discoverUserIdentity(withEmailAddress: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withemailaddress:completionhandler:).md)
+- [func discoverUserIdentity(withEmailAddress: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./discoveruseridentity%28withemailaddress,completionhandler%29.md)
   Fetches the user identity for the specified email address.
-- [func discoverUserIdentity(withPhoneNumber: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withphonenumber:completionhandler:).md)
+- [func discoverUserIdentity(withPhoneNumber: String, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./discoveruseridentity%28withphonenumber,completionhandler%29.md)
   Fetches the user identity for the specified phone number.
-- [func discoverUserIdentity(withUserRecordID: CKRecord.ID, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](ckcontainer/discoveruseridentity(withuserrecordid:completionhandler:).md)
+- [func discoverUserIdentity(withUserRecordID: CKRecord.ID, completionHandler: (CKUserIdentity?, (any Error)?) -> Void)](./discoveruseridentity%28withuserrecordid,completionhandler%29.md)
   Fetches the user identity for the specified user record ID.
-- [func fetchShareParticipant(withEmailAddress: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withemailaddress:completionhandler:).md)
+- [func fetchShareParticipant(withEmailAddress: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./fetchshareparticipant%28withemailaddress,completionhandler%29.md)
   Fetches the share participant with the specified email address.
-- [func fetchShareParticipant(withPhoneNumber: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](ckcontainer/fetchshareparticipant(withphonenumber:completionhandler:).md)
+- [func fetchShareParticipant(withPhoneNumber: String, completionHandler: (CKShare.Participant?, (any Error)?) -> Void)](./fetchshareparticipant%28withphonenumber,completionhandler%29.md)
   Fetches the share participant with the specified phone number.
-- [func fetchUserRecordID(completionHandler: (CKRecord.ID?, (any Error)?) -> Void)](ckcontainer/fetchuserrecordid(completionhandler:).md)
+- [func fetchUserRecordID(completionHandler: (CKRecord.ID?, (any Error)?) -> Void)](./fetchuserrecordid%28completionhandler%29.md)
   Fetches the user record ID of the current user.
-- [let CKCurrentUserDefaultName: String](ckcurrentuserdefaultname.md)
+- [let CKCurrentUserDefaultName: String](../ckcurrentuserdefaultname.md)
   A constant that provides the current user’s default name.
-- [let CKOwnerDefaultName: String](ckownerdefaultname.md)
+- [let CKOwnerDefaultName: String](../ckownerdefaultname.md)
   A constant that provides the default owner’s name.
 
 

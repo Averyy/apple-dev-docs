@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The block that the profile calls when an element’s press state changes.
@@ -20,9 +21,13 @@ The block that the profile calls when an element’s press state changes.
 var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInput, Bool) -> Void)? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) void (^pressedDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCPressedStateInput>input, BOOL pressed);
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Discussion
 
@@ -33,11 +38,12 @@ The block’s parameters are:
 
 ## See Also
 
-- [var isPressed: Bool](gcpressedstateinput/ispressed.md)
+### Getting change information
+- [var isPressed: Bool](./ispressed.md)
   A Boolean value that indicates whether the user presses the button.
-- [var lastPressedStateTimestamp: TimeInterval](gcpressedstateinput/lastpressedstatetimestamp.md)
+- [var lastPressedStateTimestamp: TimeInterval](./lastpressedstatetimestamp.md)
   The time of the most recent press state change.
-- [var lastPressedStateLatency: TimeInterval](gcpressedstateinput/lastpressedstatelatency.md)
+- [var lastPressedStateLatency: TimeInterval](./lastpressedstatelatency.md)
   The time in seconds between the last press state change and the current time.
 
 

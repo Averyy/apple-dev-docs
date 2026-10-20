@@ -6,36 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.H
 
 # mlx.nn.Hardswish
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Hardswish.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Hardswish
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Hardswish
-
 **class Hardswish**
 : Applies the hardswish function, element-wise.
-See [hardswish()](../_autosummary_functions/mlx.nn.hardswish.html#mlx.nn.hardswish) for the functional equivalent.
+See [hardswish()](../_autosummary_functions/mlx.nn.hardswish.md#mlx.nn.hardswish) for the functional equivalent.
 Methods
-
-** Contents

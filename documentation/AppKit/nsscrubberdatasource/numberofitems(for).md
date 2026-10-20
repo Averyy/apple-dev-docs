@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source for the number of items in the scrubber.
@@ -14,6 +15,10 @@ Asks the data source for the number of items in the scrubber.
 ```swift
 @MainActor
 func numberOfItems(for scrubber: NSScrubber) -> Int
+```
+
+```objc
+- (NSInteger) numberOfItemsForScrubber:(NSScrubber *) scrubber;
 ```
 
 #### Return Value

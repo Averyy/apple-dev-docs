@@ -1,7 +1,8 @@
 # addOperation(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Wraps the specified block in an operation and adds it to the receiver.
 
@@ -20,6 +21,10 @@ Wraps the specified block in an operation and adds it to the receiver.
 func addOperation(_ block: @escaping @Sendable () -> Void)
 ```
 
+```objc
+- (void) addOperationWithBlock:(void (^)()) block;
+```
+
 #### Discussion
 
 This method adds a single block to the receiver by first wrapping it in an operation object. You should not attempt to get a reference to the newly created operation object or determine its type information.
@@ -30,23 +35,25 @@ This method adds a single block to the receiver by first wrapping it in an opera
 
 ## See Also
 
-- [func cancel()](operation/cancel.md)
+### Related Documentation
+- [func cancel()](../operation/cancel%28%29.md)
   Advises the operation object that it should stop executing its task.
-- [var isExecuting: Bool](operation/isexecuting.md)
+- [var isExecuting: Bool](../operation/isexecuting.md)
   A Boolean value indicating whether the operation is currently executing.
-- [func addOperation(Operation)](operationqueue/addoperation(_:)-64o8a.md)
+### Managing Operations in the Queue
+- [func addOperation(Operation)](./addoperation%28_%29-64o8a.md)
   Adds the specified operation to the receiver.
-- [func addOperations([Operation], waitUntilFinished: Bool)](operationqueue/addoperations(_:waituntilfinished:).md)
+- [func addOperations([Operation], waitUntilFinished: Bool)](./addoperations%28_,waituntilfinished%29.md)
   Adds the specified operations to the queue.
-- [func addBarrierBlock(() -> Void)](operationqueue/addbarrierblock(_:).md)
+- [func addBarrierBlock(() -> Void)](./addbarrierblock%28_%29.md)
   Invokes a block when the queue finishes all enqueued operations, and prevents subsequent operations from starting until the block has completed.
-- [func cancelAllOperations()](operationqueue/cancelalloperations.md)
+- [func cancelAllOperations()](./cancelalloperations%28%29.md)
   Cancels all queued and executing operations.
-- [func waitUntilAllOperationsAreFinished()](operationqueue/waituntilalloperationsarefinished.md)
+- [func waitUntilAllOperationsAreFinished()](./waituntilalloperationsarefinished%28%29.md)
   Blocks the current thread until all the receiver’s queued and executing operations finish executing.
-- [var operations: [Operation]](operationqueue/operations.md)
+- [var operations: [Operation]](./operations.md)
   The operations currently in the queue.
-- [var operationCount: Int](operationqueue/operationcount.md)
+- [var operationCount: Int](./operationcount.md)
   The number of operations currently in the queue.
 
 

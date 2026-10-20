@@ -1,7 +1,8 @@
 # UIAttachmentBehavior.AttachmentType.anchor
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Designates an attachment behavior that connects a dynamic item to an anchor point.
 
@@ -9,7 +10,7 @@ Designates an attachment behavior that connects a dynamic item to an anchor poin
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Designates an attachment behavior that connects a dynamic item to an anchor poin
 case anchor
 ```
 
+```c
+UIAttachmentBehaviorTypeAnchor
+```
+
 ## See Also
 
-- [UIAttachmentBehavior.AttachmentType.items](uiattachmentbehavior/attachmenttype/items.md)
+### Constants
+- [UIAttachmentBehavior.AttachmentType.items](./items.md)
   Designates an attachment behavior that connects a dynamic item to another dynamic item.
 
 

@@ -1,7 +1,8 @@
 # readAttributeExtendedPanId(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeExtendedPanId(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeExtendedPanId() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeExtendedPanIdWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

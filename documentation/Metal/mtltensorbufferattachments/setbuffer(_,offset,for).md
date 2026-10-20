@@ -1,7 +1,8 @@
 # setBuffer(_:offset:for:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the buffer and byte offset to use as backing storage for the given plane.
 
@@ -19,9 +20,13 @@ Sets the buffer and byte offset to use as backing storage for the given plane.
 func setBuffer(_ buffer: any MTLBuffer, offset: Int, for plane: MTLTensorPlaneType)
 ```
 
+```objc
+- (void) setBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset forPlane:(MTLTensorPlaneType) plane;
+```
+
 #### Discussion
 
-The offset needs to be aligned to 128 bytes if the plane uses [`MTLTensorDataType.int2`](mtltensordatatype/int2.md), [`MTLTensorDataType.uint2`](mtltensordatatype/uint2.md), [`MTLTensorDataType.int4`](mtltensordatatype/int4.md), [`MTLTensorDataType.uint4`](mtltensordatatype/uint4.md), [`MTLTensorDataType.metalFloat4e2m1`](mtltensordatatype/metalfloat4e2m1.md), [`MTLTensorDataType.metalFloat8e4m3`](mtltensordatatype/metalfloat8e4m3.md), [`MTLTensorDataType.metalFloat8e5m2`](mtltensordatatype/metalfloat8e5m2.md), or [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md), otherwise it needs to be aligned to the size of the plane’s data type in bytes.
+The offset needs to be aligned to 128 bytes if the plane uses [`MTLTensorDataType.int2`](../mtltensordatatype/int2.md), [`MTLTensorDataType.uint2`](../mtltensordatatype/uint2.md), [`MTLTensorDataType.int4`](../mtltensordatatype/int4.md), [`MTLTensorDataType.uint4`](../mtltensordatatype/uint4.md), [`MTLTensorDataType.metalFloat4e2m1`](../mtltensordatatype/metalfloat4e2m1.md), [`MTLTensorDataType.metalFloat8e4m3`](../mtltensordatatype/metalfloat8e4m3.md), [`MTLTensorDataType.metalFloat8e5m2`](../mtltensordatatype/metalfloat8e5m2.md), or [`MTLTensorDataType.metalFloat8ue8m0`](../mtltensordatatype/metalfloat8ue8m0.md), otherwise it needs to be aligned to the size of the plane’s data type in bytes.
 
 ## Parameters
 

@@ -1,13 +1,14 @@
 # PKShareSecureElementPassError.Code.unknownError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -15,6 +16,10 @@
 
 ```swift
 case unknownError
+```
+
+```c
+PKShareSecureElementPassUnknownError
 ```
 
 

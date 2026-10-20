@@ -1,7 +1,8 @@
 # kMDItemURL
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Url of the item. A CFString.
 
@@ -12,6 +13,10 @@ Url of the item. A CFString.
 
 ```swift
 let kMDItemURL: CFString!
+```
+
+```c
+const CFStringRef kMDItemURL;
 ```
 
 

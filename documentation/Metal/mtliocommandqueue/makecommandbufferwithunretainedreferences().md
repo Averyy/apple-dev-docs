@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an input/output command buffer for the command queue that doesn’t retain the instances you pass to its methods.
@@ -20,9 +21,14 @@ Creates an input/output command buffer for the command queue that doesn’t reta
 func makeCommandBufferWithUnretainedReferences() -> any MTLIOCommandBuffer
 ```
 
+```objc
+- (id<MTLIOCommandBuffer>) commandBufferWithUnretainedReferences;
+```
+
 ## See Also
 
-- [func makeCommandBuffer() -> any MTLIOCommandBuffer](mtliocommandqueue/makecommandbuffer.md)
+### Creating a input/output command buffer
+- [func makeCommandBuffer() -> any MTLIOCommandBuffer](./makecommandbuffer%28%29.md)
   Creates an input/output command buffer for the command queue.
 
 

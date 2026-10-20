@@ -1,7 +1,8 @@
 # sessionStorage
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 static var sessionStorage: WKWebViewDataType { get }
+```
+
+```c
+WKWebViewDataTypeSessionStorage
 ```
 
 

@@ -1,7 +1,8 @@
 # withDecodeStream(readingFrom:selectUsing:flags:threadCount:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the given closure with a decode input archive stream.
 
@@ -11,7 +12,7 @@ Calls the given closure with a decode input archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The result of the closure.
 
 #### Discussion
 
-This function opens a stream created by [`decodeStream(readingFrom:selectUsing:flags:threadCount:)`](archivestream/decodestream(readingfrom:selectusing:flags:threadcount:).md), calls the specified closure, and closes the stream.
+This function opens a stream created by [`decodeStream(readingFrom:selectUsing:flags:threadCount:)`](./decodestream%28readingfrom,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ This function opens a stream created by [`decodeStream(readingFrom:selectUsing:f
 
 ## See Also
 
-- [static func decodeStream(readingFrom: ArchiveByteStream, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](archivestream/decodestream(readingfrom:selectusing:flags:threadcount:).md)
+### Decoding Data
+- [static func decodeStream(readingFrom: ArchiveByteStream, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](./decodestream%28readingfrom,selectusing,flags,threadcount%29.md)
   Opens a decode input archive stream.
 
 

@@ -1,7 +1,8 @@
 # textViewDidBeginEditing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when editing of the specified text view begins.
 
@@ -9,13 +10,17 @@ Tells the delegate when editing of the specified text view begins.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func textViewDidBeginEditing(_ textView: UITextView)
+```
+
+```objc
+- (void) textViewDidBeginEditing:(UITextView *) textView;
 ```
 
 #### Discussion
@@ -28,11 +33,12 @@ Implementation of this method is optional. A text view sends this message to its
 
 ## See Also
 
-- [func textViewShouldBeginEditing(UITextView) -> Bool](uitextviewdelegate/textviewshouldbeginediting(_:).md)
+### Responding to editing notifications
+- [func textViewShouldBeginEditing(UITextView) -> Bool](./textviewshouldbeginediting%28_%29.md)
   Asks the delegate whether to begin editing in the specified text view.
-- [func textViewShouldEndEditing(UITextView) -> Bool](uitextviewdelegate/textviewshouldendediting(_:).md)
+- [func textViewShouldEndEditing(UITextView) -> Bool](./textviewshouldendediting%28_%29.md)
   Asks the delegate whether to stop editing in the specified text view.
-- [func textViewDidEndEditing(UITextView)](uitextviewdelegate/textviewdidendediting(_:).md)
+- [func textViewDidEndEditing(UITextView)](./textviewdidendediting%28_%29.md)
   Tells the delegate when editing of the specified text view ends.
 
 

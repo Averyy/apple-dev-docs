@@ -1,7 +1,8 @@
 # retryAfterSeconds
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The suggested time to wait in seconds before trying this operation again.
 
@@ -10,7 +11,7 @@ The suggested time to wait in seconds before trying this operation again.
 
 ## Declaration
 
-```swift
+```
 attribute Int32? retryAfterSeconds;
 ```
 

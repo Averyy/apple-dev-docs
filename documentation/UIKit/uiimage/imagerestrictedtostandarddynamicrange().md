@@ -1,7 +1,8 @@
 # imageRestrictedToStandardDynamicRange()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new image that will render within the standard range.
 
@@ -19,13 +20,18 @@ Returns a new image that will render within the standard range.
 func imageRestrictedToStandardDynamicRange() -> UIImage
 ```
 
+```objc
+- (UIImage *) imageRestrictedToStandardDynamicRange;
+```
+
 ## See Also
 
-- [var isHighDynamicRange: Bool](uiimage/ishighdynamicrange.md)
+### Specifying the dynamic range
+- [var isHighDynamicRange: Bool](./ishighdynamicrange.md)
   Indicates that this image is tagged for display of high dynamic range content.
-- [func heicData() -> Data?](uiimage/heicdata.md)
+- [func heicData() -> Data?](./heicdata%28%29.md)
   Returns HEIC data representing the image, or nil if such a representation could not be generated. HEIC is recommended for efficiently storing all kinds of images, including those with high dynamic range content.
-- [UIImage.DynamicRange](uiimage/dynamicrange.md)
+- [UIImage.DynamicRange](./dynamicrange.md)
 
 
 ---

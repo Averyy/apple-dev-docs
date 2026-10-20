@@ -1,7 +1,8 @@
 # init(systemName:tintColor:symbolConfiguration:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image object backed by the given SF Symbol name, with optional configuration options.
 

@@ -1,7 +1,8 @@
 # PMServer
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque type that identifies a local or remote print server.
 
@@ -12,6 +13,10 @@ An opaque type that identifies a local or remote print server.
 
 ```swift
 typealias PMServer = OpaquePointer
+```
+
+```c
+typedef struct OpaquePMServer *PMServer;
 ```
 
 

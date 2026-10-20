@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: WidgetInfo](widgetinfo/id.md)
+- [var id: WidgetInfo](./id.md)
   The stable identity of the widget.
 
 

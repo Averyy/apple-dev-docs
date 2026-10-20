@@ -1,7 +1,8 @@
 # init(front:back:extrusion:frontChamfer:backChamfer:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a material assignment structure with options for each side of an extruded shape.
 

@@ -1,7 +1,8 @@
 # oneTimeCodes(preferredDuration:anchor:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stream one-time codes received by the system.
 
@@ -18,7 +19,7 @@ func oneTimeCodes(preferredDuration: TimeInterval, anchor: ASPresentationAnchor)
 
 When requested, the user may decide whether your app may receive one-time codes. This stream will automatically disconnect after a period of time.
 
-> **Note**: `ASDeliveredVerificationCodesManager.VerificationError` if one-time codes can not be delivered.
+> **Throws**: `ASDeliveredVerificationCodesManager.VerificationError` if one-time codes can not be delivered.
 
 > **Note**: Only enabled credential providers may call this method.
 

@@ -1,7 +1,8 @@
 # FileManager.URLRelationship.other
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The directory does not contain the item and is not the same as the item.
 
@@ -20,12 +21,17 @@ The directory does not contain the item and is not the same as the item.
 case other
 ```
 
+```c
+NSURLRelationshipOther
+```
+
 ## See Also
 
-- [FileManager.URLRelationship.contains](filemanager/urlrelationship/contains.md)
+### URL Relationships
+- [FileManager.URLRelationship.contains](./contains.md)
   The directory contains the specified item.
-- [FileManager.URLRelationship.same](filemanager/urlrelationship/same.md)
-  The directory and the item are the same. This relationship occurs when the value of the [`fileResourceIdentifierKey`](urlresourcekey/fileresourceidentifierkey.md) is the same for the directory and item.
+- [FileManager.URLRelationship.same](./same.md)
+  The directory and the item are the same. This relationship occurs when the value of the [`fileResourceIdentifierKey`](../../urlresourcekey/fileresourceidentifierkey.md) is the same for the directory and item.
 
 
 ---

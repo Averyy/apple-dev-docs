@@ -1,17 +1,22 @@
 # completions(forPartialWordRange:indexOfSelectedItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of potential completions, in the order to be presented, representing possible word completions available from a partial word.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func completions(forPartialWordRange charRange: NSRange, indexOfSelectedItem index: UnsafeMutablePointer<Int>) -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) completionsForPartialWordRange:(NSRange) charRange indexOfSelectedItem:(NSInteger *) index;
 ```
 
 #### Return Value
@@ -22,7 +27,7 @@ An array of potential completions, in the order to be presented, representing po
 
 May be overridden by subclasses to modify or override the list of possible completions.
 
-This method should call the delegate method [`textView(_:completions:forPartialWordRange:indexOfSelectedItem:)`](nstextviewdelegate/textview(_:completions:forpartialwordrange:indexofselecteditem:).md) if the delegate implements such a method.
+This method should call the delegate method [`textView(_:completions:forPartialWordRange:indexOfSelectedItem:)`](../nstextviewdelegate/textview%28_,completions,forpartialwordrange,indexofselecteditem%29.md) if the delegate implements such a method.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ This method should call the delegate method [`textView(_:completions:forPartialW
 
 ## See Also
 
-- [func complete(Any?)](nstextview/complete(_:).md)
+### Performing text completion
+- [func complete(Any?)](./complete%28_%29.md)
   Invokes completion in a text view.
-- [func insertCompletion(String, forPartialWordRange: NSRange, movement: Int, isFinal: Bool)](nstextview/insertcompletion(_:forpartialwordrange:movement:isfinal:).md)
+- [func insertCompletion(String, forPartialWordRange: NSRange, movement: Int, isFinal: Bool)](./insertcompletion%28_,forpartialwordrange,movement,isfinal%29.md)
   Inserts the selected completion into the text at the appropriate location.
-- [var rangeForUserCompletion: NSRange](nstextview/rangeforusercompletion.md)
+- [var rangeForUserCompletion: NSRange](./rangeforusercompletion.md)
   The partial range from the most recent beginning of a word up to the insertion point.
 
 

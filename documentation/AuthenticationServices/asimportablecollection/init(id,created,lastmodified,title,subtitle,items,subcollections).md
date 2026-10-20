@@ -1,7 +1,8 @@
 # init(id:created:lastModified:title:subtitle:items:subcollections:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

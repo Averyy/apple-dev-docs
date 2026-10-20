@@ -1,17 +1,18 @@
 # CIConvolution
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a convolution filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,32 +20,37 @@ The properties you use to configure a convolution filter.
 protocol CIConvolution : CIFilterProtocol
 ```
 
+```objc
+@protocol CIConvolution <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bias: Float](ciconvolution/bias.md)
+- [var bias: Float](./ciconvolution/bias.md)
   A value that’s added to each output pixel.
-- [var inputImage: CIImage?](ciconvolution/inputimage.md)
+- [var inputImage: CIImage?](./ciconvolution/inputimage.md)
   The image to use as an input image.
-- [var weights: CIVector](ciconvolution/weights.md)
+- [var weights: CIVector](./ciconvolution/weights.md)
   The convolution kernel.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func convolution3X3() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution3x3.md)
+### Related Documentation
+- [class func convolution3X3() -> any CIFilter & CIConvolution](./cifilter-swift.class/convolution3x3%28%29.md)
   Applies a convolution 3 x 3 filter to the `RGBA` components of an image.
-- [class func convolution5X5() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution5x5.md)
+- [class func convolution5X5() -> any CIFilter & CIConvolution](./cifilter-swift.class/convolution5x5%28%29.md)
   Applies a convolution 5 x 5 filter to the `RGBA` components image.
-- [class func convolution7X7() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution7x7.md)
+- [class func convolution7X7() -> any CIFilter & CIConvolution](./cifilter-swift.class/convolution7x7%28%29.md)
   Applies a convolution 7 x 7 filter to the `RGBA` color components of an image.
-- [class func convolution9Horizontal() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution9horizontal.md)
+- [class func convolution9Horizontal() -> any CIFilter & CIConvolution](./cifilter-swift.class/convolution9horizontal%28%29.md)
   Applies a convolution-9 horizontal filter to the `RGBA` components of an image.
-- [class func convolution9Vertical() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution9vertical.md)
+- [class func convolution9Vertical() -> any CIFilter & CIConvolution](./cifilter-swift.class/convolution9vertical%28%29.md)
   Applies a convolution-9 vertical filter to the `RGBA` components of an image.
 
 

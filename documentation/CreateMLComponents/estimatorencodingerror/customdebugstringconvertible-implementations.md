@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](estimatorencodingerror/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the error.
 
 

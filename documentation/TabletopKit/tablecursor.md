@@ -1,7 +1,8 @@
 # TableCursor
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A cursor conveys information about one equipment that is currently being controlled by an interaction.
 
@@ -17,40 +18,41 @@ struct TableCursor
 ## Topics
 
 ### Getting the associated interaction
-- [var interactionID: TabletopInteraction.Identifier](tablecursor/interactionid.md)
+- [var interactionID: TabletopInteraction.Identifier](./tablecursor/interactionid.md)
   The identifier of the interaction manipulating the equipment corresponding to this cursor.
 ### Getting the player performing the interaction
-- [var playerID: PlayerIdentifier](tablecursor/playerid.md)
+- [var playerID: PlayerIdentifier](./tablecursor/playerid.md)
   The player that owns the interaction.
 ### Getting information about the equipment in the interaction
-- [let controlledEquipmentPose: EquipmentPose3D](tablecursor/controlledequipmentpose.md)
+- [let controlledEquipmentPose: EquipmentPose3D](./tablecursor/controlledequipmentpose.md)
   The identifier of the equipment and the pose of the equipment in table space. NOTE: the equipment pose returned here does not include the resting orientation, similarly to the `pose` and `initialPose`in `TabletopInteraction.Value`. This is unlike the `pose` returned in `TableVisualState`, which does include resting orientation.
-- [var hovering: TabletopInteraction.Destination?](tablecursor/hovering.md)
+- [var hovering: TabletopInteraction.Destination?](./tablecursor/hovering.md)
   The current destination for the equipment, if the interaction were to end now. `nil` if no destination is currently available.
 ### Getting the cursor identifier
-- [var id: TableCursor.ID](tablecursor/id.md)
+- [var id: TableCursor.ID](./tablecursor/id.md)
   The identifier of the cursor.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+### Interactions
+- [Simulating dice rolls as a component for your game](./simulating-dice-rolls-as-a-component-for-your-game.md)
   Create a physically realistic dice game by adding interactive rolling and scoring.
-- [class TabletopInteraction](tabletopinteraction.md)
+- [class TabletopInteraction](./tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
-- [struct TossableRepresentation](tossablerepresentation.md)
+- [struct TossableRepresentation](./tossablerepresentation.md)
   An object that represents geometric shapes that the player can throw during gameplay, such as dice.
-- [struct TableSnapshot](tablesnapshot.md)
+- [struct TableSnapshot](./tablesnapshot.md)
   A snapshot of the current state of the table.
-- [struct TableVisualState](tablevisualstate.md)
+- [struct TableVisualState](./tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
-- [struct TableCursorIdentifier](tablecursoridentifier.md)
+- [struct TableCursorIdentifier](./tablecursoridentifier.md)
   A unique identifier for cursors.
 
 

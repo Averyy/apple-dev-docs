@@ -1,18 +1,19 @@
 # ClearProfileResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ClearProfileResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ClearProfileResponse.Devices](clearprofileresponse/devices-data.dictionary.md)
+- [object ClearProfileResponse.Devices](./clearprofileresponse/devices-data.dictionary.md)
 
 ## Properties
 
@@ -20,9 +21,10 @@ object ClearProfileResponse
 
 ## See Also
 
-- [object ClearProfileRequest](clearprofilerequest.md)
+### Request and Response
+- [object ClearProfileRequest](./clearprofilerequest.md)
   The request used to remove a profile from devices.
-- [object ClearProfileResponse.Devices](clearprofileresponse/devices-data.dictionary.md)
+- [object ClearProfileResponse.Devices](./clearprofileresponse/devices-data.dictionary.md)
 
 
 ---

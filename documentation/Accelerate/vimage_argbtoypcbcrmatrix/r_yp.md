@@ -1,18 +1,19 @@
 # R_Yp
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The *R_Yp* value in the conversion matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ The *R_Yp* value in the conversion matrix.
 var R_Yp: Float
 ```
 
+```c
+float R_Yp;
+```
+
 ## See Also
 
-- [var G_Yp: Float](vimage_argbtoypcbcrmatrix/g_yp.md)
+### Conversion matrix elements
+- [var G_Yp: Float](./g_yp.md)
   The *G_Yp* value in the conversion matrix.
-- [var B_Yp: Float](vimage_argbtoypcbcrmatrix/b_yp.md)
+- [var B_Yp: Float](./b_yp.md)
   The *B_Yp* value in the conversion matrix.
-- [var R_Cb: Float](vimage_argbtoypcbcrmatrix/r_cb.md)
+- [var R_Cb: Float](./r_cb.md)
   The *R_Cb* value in the conversion matrix.
-- [var G_Cb: Float](vimage_argbtoypcbcrmatrix/g_cb.md)
+- [var G_Cb: Float](./g_cb.md)
   The *G_Cb* value in the conversion matrix.
-- [var B_Cb_R_Cr: Float](vimage_argbtoypcbcrmatrix/b_cb_r_cr.md)
+- [var B_Cb_R_Cr: Float](./b_cb_r_cr.md)
   The *B_Cb_R_Cr* value in the conversion matrix.
-- [var G_Cr: Float](vimage_argbtoypcbcrmatrix/g_cr.md)
+- [var G_Cr: Float](./g_cr.md)
   The *G_Cr* value in the conversion matrix.
-- [var B_Cr: Float](vimage_argbtoypcbcrmatrix/b_cr.md)
+- [var B_Cr: Float](./b_cr.md)
   The *B_Cr* value in the conversion matrix.
 
 

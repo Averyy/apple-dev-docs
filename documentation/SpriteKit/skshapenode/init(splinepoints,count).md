@@ -1,7 +1,8 @@
 # init(splinePoints:count:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape node from a series of spline points.
 
@@ -20,9 +21,13 @@ Creates a shape node from a series of spline points.
 convenience init(splinePoints points: UnsafeMutablePointer<CGPoint>, count numPoints: Int)
 ```
 
+```objc
++ (instancetype) shapeNodeWithSplinePoints:(CGPoint *) points count:(size_t) numPoints;
+```
+
 ## Mentions
 
-- [Creating a Shape Node from an Array of Points](creating-a-shape-node-from-an-array-of-points.md)
+- [Creating a Shape Node from an Array of Points](../creating-a-shape-node-from-an-array-of-points.md)
 
 #### Return Value
 
@@ -35,9 +40,10 @@ A new shape node is created. The node is created with a path that starts at the 
 
 ## See Also
 
-- [Creating a Shape Node from an Array of Points](creating-a-shape-node-from-an-array-of-points.md)
+### Creating a Shape from an Array of Points
+- [Creating a Shape Node from an Array of Points](../creating-a-shape-node-from-an-array-of-points.md)
   Create jagged or smooth shapes from the same array of points.
-- [convenience init(points: UnsafeMutablePointer<CGPoint>, count: Int)](skshapenode/init(points:count:).md)
+- [convenience init(points: UnsafeMutablePointer<CGPoint>, count: Int)](./init%28points,count%29.md)
   Creates a shape node from a series of points.
 
 

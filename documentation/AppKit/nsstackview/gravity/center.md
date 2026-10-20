@@ -1,7 +1,8 @@
 # NSStackView.Gravity.center
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The center gravity area, regardless of stack view layout direction or user interface language.
 
@@ -14,15 +15,20 @@ The center gravity area, regardless of stack view layout direction or user inter
 case center
 ```
 
+```c
+NSStackViewGravityCenter
+```
+
 ## See Also
 
-- [NSStackView.Gravity.top](nsstackview/gravity/top.md)
+### Constants
+- [NSStackView.Gravity.top](./top.md)
   The topmost gravity area in a vertically oriented stack view.
-- [static var leading: NSStackView.Gravity](nsstackview/gravity/leading.md)
+- [static var leading: NSStackView.Gravity](./leading.md)
   The leftmost or rightmost gravity area in a horizontally oriented stack view, based on the user interface language or the explicitly set user interface layout direction.
-- [NSStackView.Gravity.bottom](nsstackview/gravity/bottom.md)
+- [NSStackView.Gravity.bottom](./bottom.md)
   The bottommost gravity area in a vertically oriented stack view.
-- [static var trailing: NSStackView.Gravity](nsstackview/gravity/trailing.md)
+- [static var trailing: NSStackView.Gravity](./trailing.md)
   The leftmost or rightmost gravity area in a horizontally oriented stack view, based on the user interface language or the explicitly set user interface layout direction.
 
 

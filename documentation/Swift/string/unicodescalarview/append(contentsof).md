@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the Unicode scalar values in the given sequence to the view.
 
@@ -22,7 +23,7 @@ mutating func append<S>(contentsOf newElements: S) where S : Sequence, S.Element
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the length of the resulting view.
+> **Complexity**: O(*n*), where *n* is the length of the resulting view.
 
 ## Parameters
 

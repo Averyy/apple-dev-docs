@@ -1,17 +1,20 @@
 # status(ofAssetPackWithID:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks an asset pack’s status.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- tvOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.4
+- iPadOS 26.0+ - Deprecated in 26.4
+- Mac Catalyst 26.0+ - Deprecated in 26.4
+- macOS 26.0+ - Deprecated in 26.4
+- tvOS 26.0+ - Deprecated in 26.4
+- visionOS 26.0+ - Deprecated in 26.4
+
+> **Deprecated**: Use status(relativeTo:) instead.
 
 ## Declaration
 
@@ -27,7 +30,7 @@ The asset pack’s status.
 
 This method attempts to get the latest asset-pack information from the server. It doesn’t automatically trigger any downloads, updates, or removals.
 
-> **Note**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](managedbackgroundassetserror/assetpacknotfound(withid:).md) when no asset pack with the given ID is found.
+> **Throws**: [`ManagedBackgroundAssetsError.assetPackNotFound(withID:)`](../managedbackgroundassetserror/assetpacknotfound%28withid%29.md) when no asset pack with the given ID is found.
 
 ## Parameters
 
@@ -35,23 +38,24 @@ This method attempts to get the latest asset-pack information from the server. I
 
 ## See Also
 
-- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](assetpackmanager/checkforupdates.md)
+### Managing asset packs
+- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](./checkforupdates%28%29.md)
   Gets the latest asset-pack information from the server, updates outdated asset packs, and removes obsolete asset packs.
-- [func ensureLocalAvailability(of: AssetPack, requireLatestVersion: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversion:).md)
+- [func ensureLocalAvailability(of: AssetPack, requireLatestVersion: Bool) async throws](./ensurelocalavailability%28of,requirelatestversion%29.md)
   Ensures that an asset pack is available locally, performing a download if necessary.
-- [func ensureLocalAvailability(of: Set<AssetPack>, requireLatestVersions: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversions:).md)
+- [func ensureLocalAvailability(of: Set<AssetPack>, requireLatestVersions: Bool) async throws](./ensurelocalavailability%28of,requirelatestversions%29.md)
   Ensures the specified asset packs are available locally, performing a batch download if necessary.
-- [func assetPackIsAvailableLocally(withID: String) -> Bool](assetpackmanager/assetpackisavailablelocally(withid:).md)
+- [func assetPackIsAvailableLocally(withID: String) -> Bool](./assetpackisavailablelocally%28withid%29.md)
   Checks whether an asset pack is available locally.
-- [func status(relativeTo: AssetPack) async throws -> AssetPack.Status](assetpackmanager/status(relativeto:).md)
+- [func status(relativeTo: AssetPack) async throws -> AssetPack.Status](./status%28relativeto%29.md)
   Checks the current status relative to a particular asset pack.
-- [func localStatus(ofAssetPackWithID: String) async -> AssetPack.Status](assetpackmanager/localstatus(ofassetpackwithid:).md)
+- [func localStatus(ofAssetPackWithID: String) async -> AssetPack.Status](./localstatus%28ofassetpackwithid%29.md)
   Checks an asset pack’s local status.
-- [AssetPack.Status](assetpack/status.md)
+- [AssetPack.Status](../assetpack/status.md)
   The status of an asset pack.
-- [func remove(assetPackWithID: String) async throws](assetpackmanager/remove(assetpackwithid:).md)
+- [func remove(assetPackWithID: String) async throws](./remove%28assetpackwithid%29.md)
   Removes the specified asset pack from the device.
-- [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
+- [func ensureLocalAvailability(of: AssetPack) async throws](./ensurelocalavailability%28of%29.md)
   Ensures that the specified asset pack is available locally, performing a download if necessary.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,7 +18,7 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kIOConnectMethodVarOutputSize](1646289-anonymous/kioconnectmethodvaroutputsize.md)
+- [kIOConnectMethodVarOutputSize](./api-1646289-anonymous/kioconnectmethodvaroutputsize.md)
 
 
 ---

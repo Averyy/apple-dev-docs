@@ -1,7 +1,8 @@
 # BarcodeObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents barcode information that an image-analysis request detects.
 
@@ -23,53 +24,53 @@ struct BarcodeObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNBarcodeObservation)](barcodeobservation/init(_:).md)
+- [init(VNBarcodeObservation)](./barcodeobservation/init%28_%29.md)
   Creates a barcode observation.
 ### Getting the bounding region
-- [var boundingRegion: NormalizedRegion](barcodeobservation/boundingregion.md)
+- [var boundingRegion: NormalizedRegion](./barcodeobservation/boundingregion.md)
   The bounding region of the barcode.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let isColorInverted: Bool](barcodeobservation/iscolorinverted.md)
+- [let isColorInverted: Bool](./barcodeobservation/iscolorinverted.md)
   A Boolean value that indicates whether the barcode is color inverted.
-- [let isGS1DataCarrier: Bool](barcodeobservation/isgs1datacarrier.md)
+- [let isGS1DataCarrier: Bool](./barcodeobservation/isgs1datacarrier.md)
   A Boolean value that indicates whether the barcode carries any global standards data.
 ### Getting the payload
-- [let payloadData: Data?](barcodeobservation/payloaddata.md)
+- [let payloadData: Data?](./barcodeobservation/payloaddata.md)
   The raw data representation of the barcode’s payload.
-- [let payloadString: String?](barcodeobservation/payloadstring.md)
+- [let payloadString: String?](./barcodeobservation/payloadstring.md)
   A string value that represents the barcode payload.
-- [let supplementalPayloadData: Data?](barcodeobservation/supplementalpayloaddata.md)
+- [let supplementalPayloadData: Data?](./barcodeobservation/supplementalpayloaddata.md)
   The raw data representation of the barcode’s supplemental payload.
-- [let supplementalPayloadString: String?](barcodeobservation/supplementalpayloadstring.md)
+- [let supplementalPayloadString: String?](./barcodeobservation/supplementalpayloadstring.md)
   The supplemental code decoded as a string value.
 ### Getting the symbology
-- [let symbology: BarcodeSymbology](barcodeobservation/symbology.md)
+- [let symbology: BarcodeSymbology](./barcodeobservation/symbology.md)
   The symbology of the observed barcode.
-- [enum BarcodeSymbology](barcodesymbology.md)
+- [enum BarcodeSymbology](./barcodesymbology.md)
   The barcode symbologies that the framework detects.
 ### Getting the composite type
-- [let supplementalCompositeType: BarcodeObservation.CompositeType?](barcodeobservation/supplementalcompositetype.md)
+- [let supplementalCompositeType: BarcodeObservation.CompositeType?](./barcodeobservation/supplementalcompositetype.md)
   The supplemental composite type.
-- [BarcodeObservation.CompositeType](barcodeobservation/compositetype.md)
+- [BarcodeObservation.CompositeType](./barcodeobservation/compositetype.md)
   Composite types for barcode requests.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [QuadrilateralProviding](quadrilateralproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [QuadrilateralProviding](./quadrilateralproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

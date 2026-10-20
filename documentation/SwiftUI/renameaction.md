@@ -1,7 +1,8 @@
 # RenameAction
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that activates a standard rename interaction.
 
@@ -22,21 +23,22 @@ struct RenameAction
 
 #### Overview
 
-Use the [`renameAction(_:)`](view/renameaction(_:).md) modifier to configure the rename action in the environment.
+Use the [`renameAction(_:)`](./view/renameaction%28_%29.md) modifier to configure the rename action in the environment.
 
 ## Topics
 
 ### Calling the action
-- [func callAsFunction()](renameaction/callasfunction.md)
+- [func callAsFunction()](./renameaction/callasfunction%28%29.md)
   Triggers the standard rename action provided through the environment.
 
 ## See Also
 
-- [struct RenameButton](renamebutton.md)
+### Renaming a document
+- [struct RenameButton](./renamebutton.md)
   A button that triggers a standard rename action.
-- [func renameAction(_:)](view/renameaction(_:).md)
+- [func renameAction(_:)](./view/renameaction%28_%29.md)
   Sets a closure to run for the rename action.
-- [var rename: RenameAction?](environmentvalues/rename.md)
+- [var rename: RenameAction?](./environmentvalues/rename.md)
   An action that activates the standard rename interaction.
 
 

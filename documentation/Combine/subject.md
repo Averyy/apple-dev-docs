@@ -1,7 +1,8 @@
 # Subject
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A publisher that exposes a method for outside callers to publish elements.
 
@@ -22,38 +23,39 @@ protocol Subject<Output, Failure> : AnyObject, Publisher
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Overview
 
-A subject is a publisher that you can use to ”inject” values into a stream, by calling its [`send(_:)`](subject/send(_:).md) method. This can be useful for adapting existing imperative code to the Combine model.
+A subject is a publisher that you can use to ”inject” values into a stream, by calling its [`send(_:)`](./subject/send%28_%29.md) method. This can be useful for adapting existing imperative code to the Combine model.
 
 ## Topics
 
 ### Delivering elements to subscribers
-- [func send(Self.Output)](subject/send(_:).md)
+- [func send(Self.Output)](./subject/send%28_%29.md)
   Sends a value to the subscriber.
-- [func send()](subject/send.md)
+- [func send()](./subject/send%28%29.md)
   Sends a void value to the subscriber.
 ### Delivering life cycle events to subscribers
-- [func send(subscription: any Subscription)](subject/send(subscription:).md)
+- [func send(subscription: any Subscription)](./subject/send%28subscription%29.md)
   Sends a subscription to the subscriber.
-- [func send(completion: Subscribers.Completion<Self.Failure>)](subject/send(completion:).md)
+- [func send(completion: Subscribers.Completion<Self.Failure>)](./subject/send%28completion%29.md)
   Sends a completion signal to the subscriber.
 
 ## Relationships
 
 ### Inherits From
-- [Publisher](publisher.md)
+- [Publisher](./publisher.md)
 ### Conforming Types
-- [CurrentValueSubject](currentvaluesubject.md)
-- [PassthroughSubject](passthroughsubject.md)
+- [CurrentValueSubject](./currentvaluesubject.md)
+- [PassthroughSubject](./passthroughsubject.md)
 
 ## See Also
 
-- [class CurrentValueSubject](currentvaluesubject.md)
+### Subjects
+- [class CurrentValueSubject](./currentvaluesubject.md)
   A subject that wraps a single value and publishes a new element whenever the value changes.
-- [class PassthroughSubject](passthroughsubject.md)
+- [class PassthroughSubject](./passthroughsubject.md)
   A subject that broadcasts elements to downstream subscribers.
 
 

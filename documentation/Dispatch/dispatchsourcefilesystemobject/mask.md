@@ -1,18 +1,19 @@
 # mask
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file descriptor attributes being monitored by the dispatch source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ var mask: DispatchSource.FileSystemEvent { get }
 
 ## See Also
 
-- [var data: DispatchSource.FileSystemEvent](dispatchsourcefilesystemobject/data.md)
+### Getting the Event Data
+- [var data: DispatchSource.FileSystemEvent](./data.md)
   The type of the last file system event.
 
 

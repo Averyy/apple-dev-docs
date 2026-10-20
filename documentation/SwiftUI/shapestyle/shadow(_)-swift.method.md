@@ -1,7 +1,8 @@
 # shadow(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the specified shadow effect to the shape style.
 
@@ -26,7 +27,7 @@ A new shape style that uses the specified shadow style.
 
 #### Discussion
 
-For example, you can create a rectangle that adds a drop shadow to the [`red`](shapestyle/red.md) shape style.
+For example, you can create a rectangle that adds a drop shadow to the [`red`](./red.md) shape style.
 
 ```swift
 Rectangle().fill(.red.shadow(.drop(radius: 2, y: 3)))
@@ -38,9 +39,10 @@ Rectangle().fill(.red.shadow(.drop(radius: 2, y: 3)))
 
 ## See Also
 
-- [func blendMode(BlendMode) -> some ShapeStyle](shapestyle/blendmode(_:)-swift.method.md)
+### Modifying a shape style
+- [func blendMode(BlendMode) -> some ShapeStyle](./blendmode%28_%29-swift.method.md)
   Returns a new style based on `self` that applies the specified blend mode when drawing.
-- [func opacity(Double) -> some ShapeStyle](shapestyle/opacity(_:)-swift.method.md)
+- [func opacity(Double) -> some ShapeStyle](./opacity%28_%29-swift.method.md)
   Returns a new style based on `self` that multiplies by the specified opacity when drawing.
 
 

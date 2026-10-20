@@ -1,7 +1,8 @@
 # receive(completion:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a completion to the recording.
 

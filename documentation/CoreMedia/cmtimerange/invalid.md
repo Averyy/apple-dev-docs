@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant for generating an invalid time range.
 
@@ -20,9 +21,14 @@ A constant for generating an invalid time range.
 static let invalid: CMTimeRange
 ```
 
+```c
+extern const CMTimeRange kCMTimeRangeInvalid;
+```
+
 ## See Also
 
-- [static let zero: CMTimeRange](cmtimerange/zero.md)
+### Constants
+- [static let zero: CMTimeRange](./zero.md)
   A constant for generating an empty time range at zero.
 
 

@@ -1,7 +1,8 @@
 # prefersStatusBarHidden
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view controller prefers the status bar to be hidden or shown.
 
@@ -20,12 +21,13 @@ A Boolean value that indicates whether the view controller prefers the status ba
 
 ## See Also
 
-- [var preferredStatusBarStyle: UIStatusBarStyle](uihostingcontroller/preferredstatusbarstyle.md)
+### Configuring the status bar
+- [var preferredStatusBarStyle: UIStatusBarStyle](./preferredstatusbarstyle.md)
   The preferred status bar style for the view controller.
-- [var preferredStatusBarUpdateAnimation: UIStatusBarAnimation](uihostingcontroller/preferredstatusbarupdateanimation.md)
+- [var preferredStatusBarUpdateAnimation: UIStatusBarAnimation](./preferredstatusbarupdateanimation.md)
   The animation style to use when hiding or showing the status bar for this view controller.
-- [var childForStatusBarStyle: UIViewController?](uihostingcontroller/childforstatusbarstyle.md)
-- [var childForStatusBarHidden: UIViewController?](uihostingcontroller/childforstatusbarhidden.md)
+- [var childForStatusBarStyle: UIViewController?](./childforstatusbarstyle.md)
+- [var childForStatusBarHidden: UIViewController?](./childforstatusbarhidden.md)
 
 
 ---

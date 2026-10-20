@@ -1,7 +1,8 @@
 # minimumSequenceLength
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum number of samples required to produce a classification.
 
@@ -25,19 +26,20 @@ This configuration parameter controls the size of the model. Set it to the large
 
 ## See Also
 
-- [var batchSize: Int](timeseriesclassifierconfiguration/batchsize.md)
+### Inspecting a time series classifier configuration
+- [var batchSize: Int](./batchsize.md)
   The number of examples in each training batch.
-- [var earlyStoppingIterationCount: Int](timeseriesclassifierconfiguration/earlystoppingiterationcount.md)
+- [var earlyStoppingIterationCount: Int](./earlystoppingiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var earlyStoppingTolerance: Float](timeseriesclassifierconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Float](./earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var learningRate: Float](timeseriesclassifierconfiguration/learningrate.md)
+- [var learningRate: Float](./learningrate.md)
   The starting learning rate.
-- [var maximumIterationCount: Int](timeseriesclassifierconfiguration/maximumiterationcount.md)
+- [var maximumIterationCount: Int](./maximumiterationcount.md)
   The maximum number of allowed passes through the data.
-- [var maximumSequenceLength: Int](timeseriesclassifierconfiguration/maximumsequencelength.md)
+- [var maximumSequenceLength: Int](./maximumsequencelength.md)
   The maximum number of samples that can be classified.
-- [var randomSeed: Int?](timeseriesclassifierconfiguration/randomseed.md)
+- [var randomSeed: Int?](./randomseed.md)
   A seed to generate reproducible results from random operations.
 
 

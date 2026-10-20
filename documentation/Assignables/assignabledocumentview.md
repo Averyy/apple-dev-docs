@@ -1,7 +1,8 @@
 # AssignableDocumentView
 
 **Framework**: Assignables  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 SwiftUI View to display an `AssignableDocument`.
 
@@ -9,7 +10,7 @@ SwiftUI View to display an `AssignableDocument`.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,25 +22,26 @@ SwiftUI View to display an `AssignableDocument`.
 ## Topics
 
 ### Creating a document view
-- [init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID?, hiddenPartIDs: [MergeablePartsContainerPartID], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>?, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>?, showsPageThumbnails: Bool, isStructureEditingEnabled: Bool)](assignabledocumentview/init(document:activepartid:hiddenpartids:selectedpageid:selectedquestionid:showspagethumbnails:isstructureeditingenabled:).md)
+- [init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID?, hiddenPartIDs: [MergeablePartsContainerPartID], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>?, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>?, showsPageThumbnails: Bool, isStructureEditingEnabled: Bool)](./assignabledocumentview/init%28document,activepartid,hiddenpartids,selectedpageid,selectedquestionid,showspagethumbnails,isstructureeditingenabled%29.md)
   Displays an `AssignableDocument`.
 ### Customizing the view
-- [AssignableDocumentView.Document](assignabledocumentview/document.md)
+- [AssignableDocumentView.Document](./assignabledocumentview/document.md)
   The document type that this view presents.
 ### Initializers
-- [init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID?, hiddenPartIDs: [MergeablePartsContainerPartID], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>?, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>?, showsPageThumbnails: Bool, isStructureEditingEnabled: Bool, allowsPencilDrawing: Bool, onMarkupActivation: (Bool) -> Void)](assignabledocumentview/init(document:activepartid:hiddenpartids:selectedpageid:selectedquestionid:showspagethumbnails:isstructureeditingenabled:allowspencildrawing:onmarkupactivation:).md)
+- [init(document: Binding<AssignableDocumentView.Document>, activePartID: MergeablePartsContainerPartID?, hiddenPartIDs: [MergeablePartsContainerPartID], selectedPageID: Binding<AssignableDocumentView.Document.Page.ID?>?, selectedQuestionID: Binding<AssignableDocumentView.Document.Question.ID?>?, showsPageThumbnails: Bool, isStructureEditingEnabled: Bool, allowsPencilDrawing: Bool, onMarkupActivation: (Bool) -> Void)](./assignabledocumentview/init%28document,activepartid,hiddenpartids,selectedpageid,selectedquestionid,showspagethumbnails,isstructureeditingenabled,allowspencildrawing,onmarkupactivation%29.md)
   Displays an `AssignableDocument`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct AssignedWorkDocumentView](assignedworkdocumentview.md)
+### Presentation
+- [struct AssignedWorkDocumentView](./assignedworkdocumentview.md)
   SwiftUI View to display an `AssignedWorkDocument`
 
 

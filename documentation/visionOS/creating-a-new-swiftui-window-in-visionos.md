@@ -1,6 +1,8 @@
 # Creating SwiftUI windows in visionOS
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [CreatingANewSwiftUIWindowViewInVisionOS.zip](https://docs-assets.developer.apple.com/published/5375dccbb927/CreatingANewSwiftUIWindowViewInVisionOS.zip)
 
 Display and manage multiple SwiftUI windows in your visionOS app.
 
@@ -10,13 +12,13 @@ Display and manage multiple SwiftUI windows in your visionOS app.
 
 #### Overview
 
-This sample code project demonstrates how to open a new SwiftUI view and a separate window group to manage multiple windows, assigning a unique `id` to each newly created window. In the sample, the app displays a SwiftUI window with a [`Button`](https://developer.apple.com/documentation/swiftui/button) that a person can tap to open a new window view, as the following image illustrates:
+This sample code project demonstrates how to open a new SwiftUI view and a separate window group to manage multiple windows, assigning a unique `id` to each newly created window. In the sample, the app displays a SwiftUI window with a [`Button`](../SwiftUI/button.md) that a person can tap to open a new window view, as the following image illustrates:
 
-![](/images/com.apple.visionOS/sample-new-window-1-main-view.png)
+![](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-new-window-1-main-view.png)
 
-##### Create a Variable to Track Window Ids
+##### Create a variable to track window IDs
 
-To manage multiple windows for an app, the app uses the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol to establish an ID value for each new window view.
+To manage multiple windows for an app, the app uses the [`Identifiable`](../Swift/identifiable.md) protocol to establish an ID value for each new window view.
 
 ```swift
 import SwiftUI
@@ -28,7 +30,7 @@ struct NewWindowID: Identifiable {
 
 ```
 
-##### Add a Button for Creating Windows
+##### Add a button for creating windows
 
 The `OpenNewWindow` view creates and displays a SwiftUI button. When a person taps the button, a new SwiftUI window appears.
 
@@ -56,11 +58,11 @@ struct OpenWindowView: View {
 }
 ```
 
-The [`openWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow) instance property invokes a new window view in an app’s environment.
+The [`openWindow`](../SwiftUI/environmentvalues/openwindow.md) instance property invokes a new window view in an app’s environment.
 
-##### Create a View for the New Window
+##### Create a view for the new window
 
-The `NewWindow` view displays the window’s `id` value in a [`Text`](https://developer.apple.com/documentation/swiftui/text) instance.
+The `NewWindow` view displays the window’s `id` value in a [`Text`](../SwiftUI/text.md) instance.
 
 ```swift
 import SwiftUI
@@ -77,9 +79,9 @@ struct NewWindow: View {
 }
 ```
 
-##### Add New Windows to a Window Group
+##### Add new windows to a window group
 
-The `EntryPoint` provides a specific [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) to create a window view and add the new window to the app’s main view.
+The `EntryPoint` provides a specific [`WindowGroup`](../SwiftUI/windowgroup.md) to create a window view and add the new window to the app’s main view.
 
 ```swift
 import SwiftUI
@@ -99,7 +101,12 @@ struct EntryPoint: App {
 }
 ```
 
-###### Related Samples
+#### See Also
+
+###### Related samples
+
+- [Creating 3D models as movable windows](./creating-a-volumetric-window-in-visionos.md)
+  Display 3D content with a volumetric window that people can move.
 
 
 ---

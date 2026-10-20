@@ -1,7 +1,8 @@
 # traits
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of traits this package provides.
 
@@ -16,7 +17,8 @@ final var traits: Set<Trait>
 
 ## See Also
 
-- [struct Trait](trait.md)
+### Configuring Traits
+- [struct Trait](../trait.md)
   A package trait.
 
 

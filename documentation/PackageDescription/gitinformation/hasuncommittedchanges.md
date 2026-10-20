@@ -1,7 +1,8 @@
 # hasUncommittedChanges
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not there are uncommitted changes in the current repository.
 

@@ -1,14 +1,15 @@
 # user32_size_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef __uint32_t user32_size_t;
 ```
 

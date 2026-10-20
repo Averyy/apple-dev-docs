@@ -1,7 +1,8 @@
 # reloadItems(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads only the specified items.
 
@@ -14,6 +15,10 @@ Reloads only the specified items.
 func reloadItems(at indexPaths: Set<IndexPath>)
 ```
 
+```objc
+- (void) reloadItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
+```
+
 #### Discussion
 
 Call this method to update specific items in your collection view. You call this method when the underlying data for those items changes and you want to update the visual appearance of those items. When you call this method, the collection view discards the specified items and asks your data source to provide new ones. For efficiency, the collection view requests only the items that are visible.
@@ -24,9 +29,10 @@ Call this method to update specific items in your collection view. You call this
 
 ## See Also
 
-- [func reloadData()](nscollectionview/reloaddata.md)
+### Reloading Content
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads all of the data for the collection view.
-- [func reloadSections(IndexSet)](nscollectionview/reloadsections(_:).md)
+- [func reloadSections(IndexSet)](./reloadsections%28_%29.md)
   Reloads the data in the specified sections of the collection view.
 
 

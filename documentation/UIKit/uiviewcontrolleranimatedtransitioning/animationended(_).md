@@ -1,21 +1,26 @@
 # animationEnded(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your animator object that the transition animations have finished.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 optional func animationEnded(_ transitionCompleted: Bool)
+```
+
+```objc
+- (void) animationEnded:(BOOL) transitionCompleted;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ UIKit calls this method at the end of a transition to let you know the results. 
 
 ## Parameters
 
-- `transitionCompleted`: Contains the value [`true`](https://developer.apple.com/documentation/swift/true) if the transition completed successfully and the new view controller is now displayed or [`false`](https://developer.apple.com/documentation/swift/false) if the transition was canceled and the original view controller is still visible.
+- `transitionCompleted`: Contains the value [`true`](../../Swift/true.md) if the transition completed successfully and the new view controller is now displayed or [`false`](../../Swift/false.md) if the transition was canceled and the original view controller is still visible.
 
 ## See Also
 
-- [func animateTransition(using: any UIViewControllerContextTransitioning)](uiviewcontrolleranimatedtransitioning/animatetransition(using:).md)
+### Performing a transition
+- [func animateTransition(using: any UIViewControllerContextTransitioning)](./animatetransition%28using%29.md)
   Tells your animator object to perform the transition animations.
 
 

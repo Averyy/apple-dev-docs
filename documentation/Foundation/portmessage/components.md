@@ -1,7 +1,8 @@
 # components
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the data components of the receiver.
 
@@ -15,9 +16,13 @@ Returns the data components of the receiver.
 var components: [Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray * components;
+```
+
 #### Return Value
 
-The data components of the receiver. See [`PortMessage`](portmessage.md) for more information.
+The data components of the receiver. See [`PortMessage`](../portmessage.md) for more information.
 
 
 ---

@@ -1,7 +1,8 @@
 # matchesURL(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether a given URL matches the callback object.
 
@@ -18,6 +19,10 @@ Checks whether a given URL matches the callback object.
 
 ```swift
 func matchesURL(_ url: URL) -> Bool
+```
+
+```objc
+- (BOOL) matchesURL:(NSURL *) url;
 ```
 
 #### Discussion

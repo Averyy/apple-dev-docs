@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the session is enabled.
 
@@ -18,15 +19,20 @@ A Boolean value that determines whether the session is enabled.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Disabled sessions don’t appear on the network and can’t initiate or receive connections.
+The default value is [`false`](../../Swift/false.md). Disabled sessions don’t appear on the network and can’t initiate or receive connections.
 
 ## See Also
 
-- [class func `default`() -> MIDINetworkSession](midinetworksession/default.md)
+### Configuring a Session
+- [class func `default`() -> MIDINetworkSession](./default%28%29.md)
   Returns the default singleton session.
-- [var connectionPolicy: MIDINetworkConnectionPolicy](midinetworksession/connectionpolicy.md)
+- [var connectionPolicy: MIDINetworkConnectionPolicy](./connectionpolicy.md)
   The policy that determines who can connect to this session.
 
 

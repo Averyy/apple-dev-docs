@@ -1,7 +1,8 @@
 # EXTsRGB
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface EXTsRGB
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT](extsrgb/1633296-framebuffer_attachment_color_enc.md)
-- [SRGB8_ALPHA8_EXT](extsrgb/1632244-srgb8_alpha8_ext.md)
-- [SRGB_ALPHA_EXT](extsrgb/1631919-srgb_alpha_ext.md)
-- [SRGB_EXT](extsrgb/1630285-srgb_ext.md)
+- [FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT](./extsrgb/api-1633296-framebuffer_attachment_color_enc.md)
+- [SRGB8_ALPHA8_EXT](./extsrgb/api-1632244-srgb8_alpha8_ext.md)
+- [SRGB_ALPHA_EXT](./extsrgb/api-1631919-srgb_alpha_ext.md)
+- [SRGB_EXT](./extsrgb/api-1630285-srgb_ext.md)
 
 
 ---

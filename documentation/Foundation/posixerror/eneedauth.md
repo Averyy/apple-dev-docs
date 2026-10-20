@@ -1,7 +1,8 @@
 # ENEEDAUTH
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Need authenticator.
 

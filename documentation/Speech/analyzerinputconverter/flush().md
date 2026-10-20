@@ -1,7 +1,8 @@
 # flush()
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes pending audio conversions.
 
@@ -25,7 +26,8 @@ An array of `AnalyzerInput` objects containing completed pending audio conversio
 
 ## See Also
 
-- [func convert(AVAudioBuffer, at: AVAudioTime?) throws -> [AnalyzerInput]](analyzerinputconverter/convert(_:at:).md)
+### Converting a buffer
+- [func convert(AVAudioBuffer, at: AVAudioTime?) throws -> [AnalyzerInput]](./convert%28_,at%29.md)
   Converts an audio buffer.
 
 

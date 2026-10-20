@@ -1,7 +1,8 @@
 # discoverUserIdentities
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all users in the specified array.
 
@@ -10,7 +11,7 @@ Fetches all users in the specified array.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentities(
 	CloudKit.UserLookupInfo[] userLookupInfos
 );
@@ -18,7 +19,7 @@ Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentitie
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.UserIdentitiesResponse`](cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.UserIdentitiesResponse`](../cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
@@ -34,15 +35,16 @@ This method returns information about those users who meet the following criteri
 
 ## See Also
 
-- [fetchCurrentUserIdentity](cloudkit.container/fetchcurrentuseridentity.md)
+### Discovering Users
+- [fetchCurrentUserIdentity](./fetchcurrentuseridentity.md)
   Fetches information about the current user asynchronously.
-- [discoverAllUserIdentities](cloudkit.container/discoveralluseridentities.md)
+- [discoverAllUserIdentities](./discoveralluseridentities.md)
   Fetches all user identities in the current user’s address book.
-- [discoverUserIdentityWithEmailAddress](cloudkit.container/discoveruseridentitywithemailaddress.md)
+- [discoverUserIdentityWithEmailAddress](./discoveruseridentitywithemailaddress.md)
   Fetches information about a single user based on the user’s email address.
-- [discoverUserIdentityWithPhoneNumber](cloudkit.container/discoveruseridentitywithphonenumber.md)
+- [discoverUserIdentityWithPhoneNumber](./discoveruseridentitywithphonenumber.md)
   Fetches information about a single user based on the user’s phone number.
-- [discoverUserIdentityWithUserRecordName](cloudkit.container/discoveruseridentitywithuserrecordname.md)
+- [discoverUserIdentityWithUserRecordName](./discoveruseridentitywithuserrecordname.md)
   Fetches information about a single user using the record name.
 
 

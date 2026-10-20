@@ -1,12 +1,15 @@
 # NSUserNotification.ActivationType.contentsClicked
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user clicked on the contents of the notification alert.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The user clicked on the contents of the notification alert.
 case contentsClicked
 ```
 
+```c
+NSUserNotificationActivationTypeContentsClicked
+```
+
 ## See Also
 
-- [NSUserNotification.ActivationType.none](nsusernotification/activationtype-swift.enum/none.md)
+### Constants
+- [NSUserNotification.ActivationType.none](./none.md)
   The user did not interact with the notification alert.
-- [NSUserNotification.ActivationType.actionButtonClicked](nsusernotification/activationtype-swift.enum/actionbuttonclicked.md)
+- [NSUserNotification.ActivationType.actionButtonClicked](./actionbuttonclicked.md)
   The user clicked on the action button of the notification alert.
-- [NSUserNotification.ActivationType.replied](nsusernotification/activationtype-swift.enum/replied.md)
+- [NSUserNotification.ActivationType.replied](./replied.md)
   The user replied to the notification.
-- [NSUserNotification.ActivationType.additionalActionClicked](nsusernotification/activationtype-swift.enum/additionalactionclicked.md)
+- [NSUserNotification.ActivationType.additionalActionClicked](./additionalactionclicked.md)
   The user clicked on the additional action button of the notification alert.
 
 

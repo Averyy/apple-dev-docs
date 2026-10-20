@@ -1,7 +1,8 @@
 # MTRKeypadInputCECKeyCode.number11
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 case number11
+```
+
+```c
+MTRKeypadInputCECKeyCodeNumber11
 ```
 
 

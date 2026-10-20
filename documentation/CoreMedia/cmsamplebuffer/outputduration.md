@@ -1,7 +1,8 @@
 # outputDuration
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output duration of the sample buffer.
 
@@ -26,29 +27,30 @@ This value is the duration minus any trimmed duration divided by multiplier:
 
 `(Duration - TrimDurationAtStart - TrimDurationAtEnd) / SpeedMultiplier`
 
-This value is [`invalid`](cmtime/invalid.md) if there’s an error.
+This value is [`invalid`](../cmtime/invalid.md) if there’s an error.
 
 ``
 
 ## See Also
 
-- [var duration: CMTime](cmsamplebuffer/duration.md)
+### Inspecting Duration and Timing
+- [var duration: CMTime](./duration.md)
   The total duration of a sample buffer.
-- [var decodeTimeStamp: CMTime](cmsamplebuffer/decodetimestamp.md)
+- [var decodeTimeStamp: CMTime](./decodetimestamp.md)
   The decode timestamp of the first sample in the buffer.
-- [var presentationTimeStamp: CMTime](cmsamplebuffer/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The sample presentation timestamp that’s the earliest numerically in the sample buffer.
-- [var outputDecodeTimeStamp: CMTime](cmsamplebuffer/outputdecodetimestamp.md)
+- [var outputDecodeTimeStamp: CMTime](./outputdecodetimestamp.md)
   The output decode timestamp for a sample buffer.
-- [var outputPresentationTimeStamp: CMTime](cmsamplebuffer/outputpresentationtimestamp.md)
+- [var outputPresentationTimeStamp: CMTime](./outputpresentationtimestamp.md)
   The output presentation timestamp of a sample buffer.
-- [func setOutputPresentationTimeStamp(CMTime) throws](cmsamplebuffer/setoutputpresentationtimestamp(_:).md)
+- [func setOutputPresentationTimeStamp(CMTime) throws](./setoutputpresentationtimestamp%28_%29.md)
   Sets an output presentation timestamp to use in place of a calculated value.
-- [func sampleTimingInfos() throws -> [CMSampleTimingInfo]](cmsamplebuffer/sampletiminginfos.md)
+- [func sampleTimingInfos() throws -> [CMSampleTimingInfo]](./sampletiminginfos%28%29.md)
   Retrieves an array of sample timing information structures that represents each sample in a sample buffer.
-- [func sampleTimingInfo(at: CMItemIndex) throws -> CMSampleTimingInfo](cmsamplebuffer/sampletiminginfo(at:).md)
+- [func sampleTimingInfo(at: CMItemIndex) throws -> CMSampleTimingInfo](./sampletiminginfo%28at%29.md)
   Returns sample timing information for a sample at the specified index.
-- [func outputSampleTimingInfos() throws -> [CMSampleTimingInfo]](cmsamplebuffer/outputsampletiminginfos.md)
+- [func outputSampleTimingInfos() throws -> [CMSampleTimingInfo]](./outputsampletiminginfos%28%29.md)
   Retrieves an array of output sample timing information structures that represents each sample in a sample buffer.
 
 

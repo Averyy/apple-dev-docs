@@ -1,7 +1,8 @@
 # standardDeviation
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard deviation of the distribution of values used to calculate the average.
 
@@ -19,7 +20,7 @@ let standardDeviation: Double?
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -27,9 +28,10 @@ This value is `nil` when the standard deviation is not available.
 
 ## See Also
 
-- [let average: Measurement<DimensionType>](averagestatistics/average.md)
+### Statistics
+- [let average: Measurement<DimensionType>](./average.md)
   The average measurement value.
-- [let count: Int](averagestatistics/count.md)
+- [let count: Int](./count.md)
   The number of samples used to calculate the average.
 
 

@@ -1,7 +1,8 @@
 # familyActivityPicker(title:headerText:footerText:isPresented:selection:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Present an activity picker sheet for selecting apps and websites to manage.
 
@@ -54,11 +55,12 @@ struct ContentView: View {
 
 ## See Also
 
-- [struct FamilyActivityPicker](../familycontrols/familyactivitypicker.md)
+### Configuring Family Sharing
+- [struct FamilyActivityPicker](../../FamilyControls/familyactivitypicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
-- [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(ispresented:selection:).md)
+- [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](./familyactivitypicker%28ispresented,selection%29.md)
   Presents an activity picker view as a sheet.
-- [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(headertext:footertext:ispresented:selection:).md)
+- [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](./familyactivitypicker%28headertext,footertext,ispresented,selection%29.md)
   Presents an activity picker view as a sheet.
 
 

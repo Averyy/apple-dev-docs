@@ -1,7 +1,8 @@
 # EnvironmentVariables
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 6.0+
@@ -11,15 +12,17 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `EnvironmentVariables`
+- **Type**: dictionary
 
 ## See Also
 
-- [JoinExistingSession](information-property-list/xpcservice/joinexistingsession.md)
-- [RunLoopType](information-property-list/xpcservice/runlooptype.md)
-- [ServiceType](information-property-list/xpcservice/servicetype.md)
+### Property List Keys
+- [JoinExistingSession](./joinexistingsession.md)
+- [RunLoopType](./runlooptype.md)
+- [ServiceType](./servicetype.md)
 
 
 ---

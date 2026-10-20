@@ -1,7 +1,8 @@
 # FormStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The appearance and behavior of a form.
 
@@ -23,7 +24,7 @@ The appearance and behavior of a form.
 
 #### Overview
 
-To configure the style for a single [`Form`](form.md) or for all form instances in a view hierarchy, use the [`formStyle(_:)`](view/formstyle(_:).md) modifier.
+To configure the style for a single [`Form`](./form.md) or for all form instances in a view hierarchy, use the [`formStyle(_:)`](./view/formstyle%28_%29.md) modifier.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -44,61 +45,62 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in form styles
-- [static var automatic: AutomaticFormStyle](formstyle/automatic.md)
+- [static var automatic: AutomaticFormStyle](./formstyle/automatic.md)
   The default form style.
-- [static var columns: ColumnsFormStyle](formstyle/columns.md)
+- [static var columns: ColumnsFormStyle](./formstyle/columns.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
-- [static var grouped: GroupedFormStyle](formstyle/grouped.md)
+- [static var grouped: GroupedFormStyle](./formstyle/grouped.md)
   A form style with grouped rows.
 ### Creating custom form styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](formstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./formstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a form.
-- [FormStyle.Configuration](formstyle/configuration.md)
+- [FormStyle.Configuration](./formstyle/configuration.md)
   The properties of a form instance.
-- [associatedtype Body : View](formstyle/body.md)
+- [associatedtype Body : View](./formstyle/body.md)
   A view that represents the appearance and interaction of a form.
 ### Supporting types
-- [struct AutomaticFormStyle](automaticformstyle.md)
+- [struct AutomaticFormStyle](./automaticformstyle.md)
   The default form style.
-- [struct ColumnsFormStyle](columnsformstyle.md)
+- [struct ColumnsFormStyle](./columnsformstyle.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
-- [struct GroupedFormStyle](groupedformstyle.md)
+- [struct GroupedFormStyle](./groupedformstyle.md)
   A form style with grouped rows.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticFormStyle](automaticformstyle.md)
-- [ColumnsFormStyle](columnsformstyle.md)
-- [GroupedFormStyle](groupedformstyle.md)
+- [AutomaticFormStyle](./automaticformstyle.md)
+- [ColumnsFormStyle](./columnsformstyle.md)
+- [GroupedFormStyle](./groupedformstyle.md)
 
 ## See Also
 
-- [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
+### Styling groups
+- [func controlGroupStyle<S>(S) -> some View](./view/controlgroupstyle%28_%29.md)
   Sets the style for control groups within this view.
-- [protocol ControlGroupStyle](controlgroupstyle.md)
+- [protocol ControlGroupStyle](./controlgroupstyle.md)
   Defines the implementation of all control groups within a view hierarchy.
-- [struct ControlGroupStyleConfiguration](controlgroupstyleconfiguration.md)
+- [struct ControlGroupStyleConfiguration](./controlgroupstyleconfiguration.md)
   The properties of a control group.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [struct FormStyleConfiguration](formstyleconfiguration.md)
+- [struct FormStyleConfiguration](./formstyleconfiguration.md)
   The properties of a form instance.
-- [func groupBoxStyle<S>(S) -> some View](view/groupboxstyle(_:).md)
+- [func groupBoxStyle<S>(S) -> some View](./view/groupboxstyle%28_%29.md)
   Sets the style for group boxes within this view.
-- [protocol GroupBoxStyle](groupboxstyle.md)
+- [protocol GroupBoxStyle](./groupboxstyle.md)
   A type that specifies the appearance and interaction of all group boxes within a view hierarchy.
-- [struct GroupBoxStyleConfiguration](groupboxstyleconfiguration.md)
+- [struct GroupBoxStyleConfiguration](./groupboxstyleconfiguration.md)
   The properties of a group box instance.
-- [func indexViewStyle<S>(S) -> some View](view/indexviewstyle(_:).md)
+- [func indexViewStyle<S>(S) -> some View](./view/indexviewstyle%28_%29.md)
   Sets the style for the index view within the current environment.
-- [protocol IndexViewStyle](indexviewstyle.md)
+- [protocol IndexViewStyle](./indexviewstyle.md)
   Defines the implementation of all `IndexView` instances within a view hierarchy.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
-- [protocol LabeledContentStyle](labeledcontentstyle.md)
+- [protocol LabeledContentStyle](./labeledcontentstyle.md)
   The appearance and behavior of a labeled content instance..
-- [struct LabeledContentStyleConfiguration](labeledcontentstyleconfiguration.md)
+- [struct LabeledContentStyleConfiguration](./labeledcontentstyleconfiguration.md)
   The properties of a labeled content instance.
 
 

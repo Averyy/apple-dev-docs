@@ -1,7 +1,8 @@
 # ManagedContentOfferState
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The state for a managed content view offer.
 
@@ -20,32 +21,33 @@ struct ManagedContentOfferState
 ## Topics
 
 ### Creating states
-- [static func custom(title: String) -> ManagedContentOfferState](managedcontentofferstate/custom(title:).md)
+- [static func custom(title: String) -> ManagedContentOfferState](./managedcontentofferstate/custom%28title%29.md)
   A state with a custom title.
-- [static func installing(progress: Double?) -> ManagedContentOfferState](managedcontentofferstate/installing(progress:).md)
+- [static func installing(progress: Double?) -> ManagedContentOfferState](./managedcontentofferstate/installing%28progress%29.md)
   A state indicating install progress.
 ### Determining installation status
-- [static var installed: ManagedContentOfferState](managedcontentofferstate/installed.md)
+- [static var installed: ManagedContentOfferState](./managedcontentofferstate/installed.md)
   A state representing content that’s installed.
-- [static var notInstalled: ManagedContentOfferState](managedcontentofferstate/notinstalled.md)
+- [static var notInstalled: ManagedContentOfferState](./managedcontentofferstate/notinstalled.md)
   A state for representing content that isn’t currently installed.
-- [static var neverInstalled: ManagedContentOfferState](managedcontentofferstate/neverinstalled.md)
+- [static var neverInstalled: ManagedContentOfferState](./managedcontentofferstate/neverinstalled.md)
   A state representing content that has never been installed.
-- [static var noninteractive: ManagedContentOfferState](managedcontentofferstate/noninteractive.md)
+- [static var noninteractive: ManagedContentOfferState](./managedcontentofferstate/noninteractive.md)
   A state representing content that has no actionable button.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct ManagedAppView](managedappview.md)
+### View creation
+- [struct ManagedAppView](./managedappview.md)
   A view that displays a managed app.
-- [struct ManagedContentView](managedcontentview.md)
-- [struct ManagedContentStyle](managedcontentstyle.md)
+- [struct ManagedContentView](./managedcontentview.md)
+- [struct ManagedContentStyle](./managedcontentstyle.md)
   A type that applies a custom appearance to the managed content view.
 
 

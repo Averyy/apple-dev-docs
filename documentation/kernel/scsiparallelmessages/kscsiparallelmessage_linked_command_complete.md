@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_LINKED_COMMAND_COMPLETE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_LINKED_COMMAND_COMPLETE = 0x0A
 ```
 

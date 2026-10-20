@@ -1,15 +1,16 @@
 # kAudioComponentConfigurationInfo_ValidationResult
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kAudioComponentConfigurationInfo_ValidationResult: String { get }
 ```
 
+```c
+#define kAudioComponentConfigurationInfo_ValidationResult
+```
+
 ## See Also
 
-- [let kAudioComponentInstanceInvalidationNotification: CFString](kaudiocomponentinstanceinvalidationnotification.md)
-- [let kAudioComponentRegistrationsChangedNotification: CFString](kaudiocomponentregistrationschangednotification.md)
-- [var kAudioComponentValidationParameter_ForceValidation: String](kaudiocomponentvalidationparameter_forcevalidation.md)
-- [var kAudioComponentValidationParameter_TimeOut: String](kaudiocomponentvalidationparameter_timeout.md)
+### Constants
+- [let kAudioComponentInstanceInvalidationNotification: CFString](./kaudiocomponentinstanceinvalidationnotification.md)
+- [let kAudioComponentRegistrationsChangedNotification: CFString](./kaudiocomponentregistrationschangednotification.md)
+- [var kAudioComponentValidationParameter_ForceValidation: String](./kaudiocomponentvalidationparameter_forcevalidation.md)
+- [var kAudioComponentValidationParameter_TimeOut: String](./kaudiocomponentvalidationparameter_timeout.md)
 
 
 ---

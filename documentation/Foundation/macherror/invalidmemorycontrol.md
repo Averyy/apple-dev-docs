@@ -1,7 +1,8 @@
 # invalidMemoryControl
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The port was not a memory cache control port.
 

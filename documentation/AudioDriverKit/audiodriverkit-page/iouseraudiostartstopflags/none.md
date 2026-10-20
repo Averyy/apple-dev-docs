@@ -1,7 +1,8 @@
 # None
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag that indicates starting or stopping for normal I/O operation.
 
@@ -10,7 +11,7 @@ A flag that indicates starting or stopping for normal I/O operation.
 
 ## Declaration
 
-```swift
+```c
 None
 ```
 
@@ -20,7 +21,8 @@ This option results in enabling or disabling all necessary hardware.
 
 ## See Also
 
-- [Prewarm](audiodriverkit/iouseraudiostartstopflags/prewarm.md)
+### Start/Stop Behaviors
+- [Prewarm](./prewarm.md)
   A flag that indicates starting or stopping for prewarming.
 
 

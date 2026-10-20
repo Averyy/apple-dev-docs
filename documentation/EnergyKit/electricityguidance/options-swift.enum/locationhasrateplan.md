@@ -1,14 +1,15 @@
 # ElectricityGuidance.Options.locationHasRatePlan
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates whether the energy venue where the guidance was generated has rate plan information available.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case locationHasRatePlan
 
 ## See Also
 
-- [ElectricityGuidance.Options.guidanceIncorporatesRatePlan](electricityguidance/options-swift.enum/guidanceincorporatesrateplan.md)
+### Getting the options
+- [ElectricityGuidance.Options.guidanceIncorporatesRatePlan](./guidanceincorporatesrateplan.md)
   Indicates whether the electricity guidance incorporated rate plan information.
 
 

@@ -1,7 +1,8 @@
 # init(id:prefersPromotionalIcon:icon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to load an individual product from the App Store and merchandise it using a custom icon.
 
@@ -25,7 +26,7 @@ init(id productID: Product.ID, prefersPromotionalIcon: Bool = false, @ViewBuilde
 
 The product view displays a placeholder icon until the system finishes loading the product. After the product loads, the system uses the view you provide in the `icon` parameter, by default. If `prefersPromotionalIcon` is `true` and the product has a promotional image, the view displays the promotional image as its icon instead of the provided view.
 
-> 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(id:icon:placeholderIcon:)`](productview/init(id:icon:placeholdericon:).md) initializer. It receives a [`ProductIconPhase`](producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
+> 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(id:icon:placeholderIcon:)`](./init%28id,icon,placeholdericon%29.md) initializer. It receives a [`ProductIconPhase`](../producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
 
 ## Parameters
 
@@ -35,11 +36,12 @@ The product view displays a placeholder icon until the system finishes loading t
 
 ## See Also
 
-- [init(id: Product.ID, prefersPromotionalIcon: Bool)](productview/init(id:preferspromotionalicon:).md)
+### Creating product views that load products
+- [init(id: Product.ID, prefersPromotionalIcon: Bool)](./init%28id,preferspromotionalicon%29.md)
   Creates a view to load and merchandise an individual product from the App Store.
-- [init(id: Product.ID, prefersPromotionalIcon: Bool, icon: () -> Icon, placeholderIcon: () -> PlaceholderIcon)](productview/init(id:preferspromotionalicon:icon:placeholdericon:).md)
+- [init(id: Product.ID, prefersPromotionalIcon: Bool, icon: () -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28id,preferspromotionalicon,icon,placeholdericon%29.md)
   Creates a view to load an individual product from the App Store and merchandise it using an image and a custom placeholder icon.
-- [init(id: Product.ID, icon: (ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](productview/init(id:icon:placeholdericon:).md)
+- [init(id: Product.ID, icon: (ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28id,icon,placeholdericon%29.md)
   Creates a view to load an individual product from the App Store, and merchandise it using its promotional image and a custom placeholder icon.
 
 

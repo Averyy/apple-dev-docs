@@ -1,7 +1,8 @@
 # bAlternateSetting
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The alternative setting to find.
 
@@ -10,17 +11,18 @@ The alternative setting to find.
 
 ## Declaration
 
-```swift
+```c
 UInt16 bAlternateSetting;
 ```
 
 ## See Also
 
-- [bInterfaceClass](iousbfindinterfacerequest/1546291-binterfaceclass.md)
+### Getting the Properties
+- [bInterfaceClass](./api-1546291-binterfaceclass.md)
   The interface class to find.
-- [bInterfaceProtocol](iousbfindinterfacerequest/1546022-binterfaceprotocol.md)
+- [bInterfaceProtocol](./api-1546022-binterfaceprotocol.md)
   The interface protocol to find.
-- [bInterfaceSubClass](iousbfindinterfacerequest/1546058-binterfacesubclass.md)
+- [bInterfaceSubClass](./api-1546058-binterfacesubclass.md)
   The interface subclass to find.
 
 

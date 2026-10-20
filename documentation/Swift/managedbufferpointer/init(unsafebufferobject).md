@@ -1,7 +1,8 @@
 # init(unsafeBufferObject:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Manage the given `buffer`.
 
@@ -22,11 +23,12 @@ init(unsafeBufferObject buffer: AnyObject)
 
 #### Discussion
 
-> **Note**: `buffer` is an instance of a non-`@objc` class whose `deinit` destroys its stored `Header` and any constructed `Element`s.
+> **Precondition**: `buffer` is an instance of a non-`@objc` class whose `deinit` destroys its stored `Header` and any constructed `Element`s.
 
 ## See Also
 
-- [init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith: (AnyObject, (AnyObject) -> Int) throws -> Header) rethrows](managedbufferpointer/init(bufferclass:minimumcapacity:makingheaderwith:).md)
+### Creating a Buffer
+- [init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith: (AnyObject, (AnyObject) -> Int) throws -> Header) rethrows](./init%28bufferclass,minimumcapacity,makingheaderwith%29.md)
   Create with new storage containing an initial `Header` and space for at least `minimumCapacity` `element`s.
 
 

@@ -1,7 +1,8 @@
 # paging
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The scroll behavior that aligns scroll targets to container-based geometry.
 
@@ -21,6 +22,8 @@ The scroll behavior that aligns scroll targets to container-based geometry.
 static var paging: PagingScrollTargetBehavior { get }
 ```
 
+Available when `Self` is `PagingScrollTargetBehavior`.
+
 #### Discussion
 
 In the following example, every view in the lazy stack is flexible in both directions and the scroll view settles to container-aligned boundaries.
@@ -38,9 +41,10 @@ ScrollView {
 
 ## See Also
 
-- [static var viewAligned: ViewAlignedScrollTargetBehavior](scrolltargetbehavior/viewaligned.md)
+### Getting the scroll target behavior
+- [static var viewAligned: ViewAlignedScrollTargetBehavior](./viewaligned.md)
   The scroll behavior that aligns scroll targets to view-based geometry.
-- [static func viewAligned(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior) -> Self](scrolltargetbehavior/viewaligned(limitbehavior:).md)
+- [static func viewAligned(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior) -> Self](./viewaligned%28limitbehavior%29.md)
   The scroll behavior that aligns scroll targets to view-based geometry.
 
 

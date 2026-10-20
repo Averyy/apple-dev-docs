@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate for a drag interaction.
 
@@ -15,13 +16,18 @@ A delegate for a drag interaction.
 weak var delegate: (any BEDragInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<BEDragInteractionDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate conforms to [`BEDragInteractionDelegate`](bedraginteractiondelegate.md).
+The delegate conforms to [`BEDragInteractionDelegate`](../bedraginteractiondelegate.md).
 
 ## See Also
 
-- [protocol BEDragInteractionDelegate](bedraginteractiondelegate.md)
+### Handling drag gestures
+- [protocol BEDragInteractionDelegate](../bedraginteractiondelegate.md)
   A protocol for a drag interaction delegate.
 
 

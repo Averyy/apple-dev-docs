@@ -1,7 +1,8 @@
 # UIView.Invalidations.Layout
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A change that invalidates the layout of the containing view’s subviews.
 
@@ -10,7 +11,7 @@ A change that invalidates the layout of the containing view’s subviews.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration
@@ -21,30 +22,31 @@ struct Layout
 
 #### Overview
 
-Use [`layout`](uiviewinvalidating/layout.md) to create an instance of this type.
+Use [`layout`](../../uiviewinvalidating/layout.md) to create an instance of this type.
 
 ## Topics
 
 ### Creating the invalidation structure
-- [init()](uiview/invalidations/layout/init.md)
+- [init()](./layout/init%28%29.md)
   Creates a layout invalidation structure.
 
 ## Relationships
 
 ### Conforms To
-- [UIViewInvalidating](uiviewinvalidating.md)
+- [UIViewInvalidating](../../uiviewinvalidating.md)
 
 ## See Also
 
-- [UIView.Invalidations.Configuration](uiview/invalidations/configuration.md)
+### Invalidation types
+- [UIView.Invalidations.Configuration](./configuration.md)
   A change that invalidates a view’s configuration.
-- [UIView.Invalidations.Constraints](uiview/invalidations/constraints.md)
+- [UIView.Invalidations.Constraints](./constraints.md)
   A change that invalidates a view’s constraints.
-- [UIView.Invalidations.Display](uiview/invalidations/display.md)
+- [UIView.Invalidations.Display](./display.md)
   A change that requires the system to redraw a view’s content.
-- [UIView.Invalidations.IntrinsicContentSize](uiview/invalidations/intrinsiccontentsize.md)
+- [UIView.Invalidations.IntrinsicContentSize](./intrinsiccontentsize.md)
   A change that invalidates a view’s intrinsic size.
-- [UIView.Invalidations.Tuple](uiview/invalidations/tuple.md)
+- [UIView.Invalidations.Tuple](./tuple.md)
   A change that invalidates a combination of factors covered by the other invalidation types.
 
 

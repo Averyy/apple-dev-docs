@@ -1,7 +1,8 @@
 # scribbleInteractionWillBeginWriting(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the user begins writing in the view.
 
@@ -16,6 +17,10 @@ Informs the delegate when the user begins writing in the view.
 optional func scribbleInteractionWillBeginWriting(_ interaction: UIScribbleInteraction)
 ```
 
+```objc
+- (void) scribbleInteractionWillBeginWriting:(UIScribbleInteraction *) interaction;
+```
+
 #### Discussion
 
 Use this method to hide custom placeholders or other UI elements that can interfere with writing.
@@ -26,7 +31,8 @@ Use this method to hide custom placeholders or other UI elements that can interf
 
 ## See Also
 
-- [func scribbleInteractionDidFinishWriting(UIScribbleInteraction)](uiscribbleinteractiondelegate/scribbleinteractiondidfinishwriting(_:).md)
+### Tracking Scribble input
+- [func scribbleInteractionDidFinishWriting(UIScribbleInteraction)](./scribbleinteractiondidfinishwriting%28_%29.md)
   Informs the delegate that the user stops writing in the view, after Scribble transcribes and enters the last word.
 
 

@@ -1,7 +1,8 @@
 # attachedAboveRight
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Marks attached at the top right.
 

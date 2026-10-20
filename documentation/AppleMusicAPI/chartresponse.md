@@ -1,7 +1,8 @@
 # ChartResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request for a chart.
 
@@ -10,14 +11,14 @@ The response to a request for a chart.
 
 ## Declaration
 
-```swift
+```
 object ChartResponse
 ```
 
 ## Topics
 
 ### Related Objects
-- [object ChartResponse.Results](chartresponse/results-data.dictionary.md)
+- [object ChartResponse.Results](./chartresponse/results-data.dictionary.md)
   A mapping of a requested type to an array of charts.
 
 ## Properties

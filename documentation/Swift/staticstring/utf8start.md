@@ -1,7 +1,8 @@
 # utf8Start
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to a null-terminated sequence of UTF-8 code units.
 

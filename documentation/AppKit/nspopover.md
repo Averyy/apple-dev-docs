@@ -1,7 +1,8 @@
 # NSPopover
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A means to display additional content related to existing content on the screen.
 
@@ -12,6 +13,10 @@ A means to display additional content related to existing content on the screen.
 
 ```swift
 class NSPopover
+```
+
+```objc
+@interface NSPopover : NSResponder
 ```
 
 #### Overview
@@ -25,93 +30,94 @@ Popovers can be detached to become a separate window when they are dragged by im
 ## Topics
 
 ### Accessing a Popover’s Content View Controller
-- [var contentViewController: NSViewController?](nspopover/contentviewcontroller.md)
+- [var contentViewController: NSViewController?](./nspopover/contentviewcontroller.md)
   The view controller that manages the content of the popover.
 ### Managing a Popover’s Position and Size
-- [var behavior: NSPopover.Behavior](nspopover/behavior-swift.property.md)
+- [var behavior: NSPopover.Behavior](./nspopover/behavior-swift.property.md)
   Specifies the behavior of the popover.
-- [func show(relativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge)](nspopover/show(relativeto:of:preferrededge:).md)
+- [func show(relativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge)](./nspopover/show%28relativeto,of,preferrededge%29.md)
   Shows the popover anchored to the specified view.
-- [var positioningRect: NSRect](nspopover/positioningrect.md)
+- [var positioningRect: NSRect](./nspopover/positioningrect.md)
   The rectangle within the positioning view relative to which the popover should be positioned.
 ### Managing a Popover’s Appearance
-- [var appearance: NSAppearance?](nspopover/appearance-swift.property.md)
+- [var appearance: NSAppearance?](./nspopover/appearance-swift.property.md)
   The appearance of the popover.
-- [var effectiveAppearance: NSAppearance](nspopover/effectiveappearance.md)
+- [var effectiveAppearance: NSAppearance](./nspopover/effectiveappearance.md)
   The appearance that will be used when the popover is displayed onscreen.
-- [var animates: Bool](nspopover/animates.md)
+- [var animates: Bool](./nspopover/animates.md)
   Specifies if the popover is to be animated.
-- [var contentSize: NSSize](nspopover/contentsize.md)
+- [var contentSize: NSSize](./nspopover/contentsize.md)
   The content size of the popover.
-- [var isShown: Bool](nspopover/isshown.md)
+- [var isShown: Bool](./nspopover/isshown.md)
   The display state of the popover.
-- [var isDetached: Bool](nspopover/isdetached.md)
+- [var isDetached: Bool](./nspopover/isdetached.md)
   A Boolean value that indicates whether the window created by a popover’s detachment is automatically created.
 ### Closing a Popover
-- [func performClose(Any?)](nspopover/performclose(_:).md)
+- [func performClose(Any?)](./nspopover/performclose%28_%29.md)
   Attempts to close the popover.
-- [func close()](nspopover/close.md)
+- [func close()](./nspopover/close%28%29.md)
   Forces the popover to close without consulting its delegate.
 ### Getting and Setting the Delegate
-- [var delegate: (any NSPopoverDelegate)?](nspopover/delegate.md)
+- [var delegate: (any NSPopoverDelegate)?](./nspopover/delegate.md)
   The delegate of the popover.
 ### Constants
-- [NSPopover.Behavior](nspopover/behavior-swift.enum.md)
+- [NSPopover.Behavior](./nspopover/behavior-swift.enum.md)
   The appearance and disappearance behavior of a popover.
-- [class let closeReasonUserInfoKey: String](nspopover/closereasonuserinfokey.md)
-  The `userInfo` key containing the reason for the [`willCloseNotification`](nspopover/willclosenotification.md).
-- [NSPopover.CloseReason](nspopover/closereason.md)
-  Values that specify the reason for the [`willCloseNotification`](nspopover/willclosenotification.md) notification.
-- [NSPopover.Appearance](nspopover/appearance-swift.enum.md)
+- [class let closeReasonUserInfoKey: String](./nspopover/closereasonuserinfokey.md)
+  The `userInfo` key containing the reason for the [`willCloseNotification`](./nspopover/willclosenotification.md).
+- [NSPopover.CloseReason](./nspopover/closereason.md)
+  Values that specify the reason for the [`willCloseNotification`](./nspopover/willclosenotification.md) notification.
+- [NSPopover.Appearance](./nspopover/appearance-swift.enum.md)
   The set of predefined appearances for a popover.
 ### Notifications
-- [class let willShowNotification: NSNotification.Name](nspopover/willshownotification.md)
+- [class let willShowNotification: NSNotification.Name](./nspopover/willshownotification.md)
   Sent before the popover is shown.
-- [class let didShowNotification: NSNotification.Name](nspopover/didshownotification.md)
+- [class let didShowNotification: NSNotification.Name](./nspopover/didshownotification.md)
   Sent after the popover has finished animating onscreen.
-- [class let willCloseNotification: NSNotification.Name](nspopover/willclosenotification.md)
+- [class let willCloseNotification: NSNotification.Name](./nspopover/willclosenotification.md)
   Sent before the popover is closed.
-- [class let didCloseNotification: NSNotification.Name](nspopover/didclosenotification.md)
+- [class let didCloseNotification: NSNotification.Name](./nspopover/didclosenotification.md)
   Sent after the popover has finished animating offscreen.
 ### Initializers
-- [init()](nspopover/init.md)
-- [init?(coder: NSCoder)](nspopover/init(coder:).md)
+- [init()](./nspopover/init%28%29.md)
+- [init?(coder: NSCoder)](./nspopover/init%28coder%29.md)
 ### Instance Properties
-- [var hasFullSizeContent: Bool](nspopover/hasfullsizecontent.md)
+- [var hasFullSizeContent: Bool](./nspopover/hasfullsizecontent.md)
   A Boolean value that indicates whether the content view of the popover extends into the arrow region.
 ### Instance Methods
-- [func show(relativeTo: NSToolbarItem)](nspopover/show(relativeto:).md)
+- [func show(relativeTo: NSToolbarItem)](./nspopover/show%28relativeto%29.md)
   Shows the popover anchored to the specified toolbar item.
 ### Structures
-- [NSPopover.DidCloseMessage](nspopover/didclosemessage.md)
-- [NSPopover.DidShowMessage](nspopover/didshowmessage.md)
-- [NSPopover.WillCloseMessage](nspopover/willclosemessage.md)
-- [NSPopover.WillShowMessage](nspopover/willshowmessage.md)
+- [NSPopover.DidCloseMessage](./nspopover/didclosemessage.md)
+- [NSPopover.DidShowMessage](./nspopover/didshowmessage.md)
+- [NSPopover.WillCloseMessage](./nspopover/willclosemessage.md)
+- [NSPopover.WillShowMessage](./nspopover/willshowmessage.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSResponder](nsresponder.md)
+- [NSResponder](./nsresponder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NSPopoverDelegate](nspopoverdelegate.md)
+### Popovers
+- [protocol NSPopoverDelegate](./nspopoverdelegate.md)
   A set of optional methods that a popover delegate can implement to provide additional or custom functionality.
 
 

@@ -1,7 +1,8 @@
 # RegistrationError.Code.failed
 
 **Framework**: ServicesAccountLinking  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Registration failed.
 
@@ -14,6 +15,10 @@ Registration failed.
 
 ```swift
 case failed
+```
+
+```c
+SALRegistrationErrorFailed
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # initialMaxUnidirectionalStreams(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the initial_max_stream_data_uni transport parameter on a QUIC connection.
 

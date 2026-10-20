@@ -1,7 +1,8 @@
 # HKVisionPrescriptionType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of vision prescription, for example a prescription for glasses or for contacts.
 
@@ -19,33 +20,38 @@ The type of vision prescription, for example a prescription for glasses or for c
 enum HKVisionPrescriptionType
 ```
 
+```c
+enum HKVisionPrescriptionType : NSUInteger;
+```
+
 ## Topics
 
 ### Prescription types
-- [HKVisionPrescriptionType.glasses](hkvisionprescriptiontype/glasses.md)
+- [HKVisionPrescriptionType.glasses](./hkvisionprescriptiontype/glasses.md)
   A prescription for glasses.
-- [HKVisionPrescriptionType.contacts](hkvisionprescriptiontype/contacts.md)
+- [HKVisionPrescriptionType.contacts](./hkvisionprescriptiontype/contacts.md)
   A prescription for contacts.
 ### Initializers
-- [init?(rawValue: UInt)](hkvisionprescriptiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hkvisionprescriptiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var prescriptionType: HKVisionPrescriptionType](hkvisionprescription/prescriptiontype.md)
+### Accessing the prescription data
+- [var prescriptionType: HKVisionPrescriptionType](./hkvisionprescription/prescriptiontype.md)
   The type of vision prescription.
-- [var dateIssued: Date](hkvisionprescription/dateissued.md)
+- [var dateIssued: Date](./hkvisionprescription/dateissued.md)
   The date when the doctor issued the prescription.
-- [var expirationDate: Date?](hkvisionprescription/expirationdate.md)
+- [var expirationDate: Date?](./hkvisionprescription/expirationdate.md)
   The date when the prescription expires.
 
 

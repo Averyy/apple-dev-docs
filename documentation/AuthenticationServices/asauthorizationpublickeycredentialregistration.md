@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialRegistration
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that credential registration requests adhere to.
 
@@ -19,36 +20,41 @@ An interface that credential registration requests adhere to.
 protocol ASAuthorizationPublicKeyCredentialRegistration : ASPublicKeyCredential
 ```
 
+```objc
+@protocol ASAuthorizationPublicKeyCredentialRegistration <ASPublicKeyCredential>
+```
+
 ## Topics
 
 ### Getting attestation information
-- [var rawAttestationObject: Data?](asauthorizationpublickeycredentialregistration/rawattestationobject.md)
+- [var rawAttestationObject: Data?](./asauthorizationpublickeycredentialregistration/rawattestationobject.md)
   A data object that contains the returned attestation.
 
 ## Relationships
 
 ### Inherits From
-- [ASAuthorizationCredential](asauthorizationcredential.md)
-- [ASPublicKeyCredential](aspublickeycredential.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [ASAuthorizationCredential](./asauthorizationcredential.md)
+- [ASPublicKeyCredential](./aspublickeycredential.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 ### Conforming Types
-- [ASAuthorizationPlatformPublicKeyCredentialRegistration](asauthorizationplatformpublickeycredentialregistration.md)
-- [ASAuthorizationSecurityKeyPublicKeyCredentialRegistration](asauthorizationsecuritykeypublickeycredentialregistration.md)
+- [ASAuthorizationPlatformPublicKeyCredentialRegistration](./asauthorizationplatformpublickeycredentialregistration.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialRegistration](./asauthorizationsecuritykeypublickeycredentialregistration.md)
 
 ## See Also
 
-- [class ASAuthorizationPlatformPublicKeyCredentialRegistration](asauthorizationplatformpublickeycredentialregistration.md)
+### Account registration
+- [class ASAuthorizationPlatformPublicKeyCredentialRegistration](./asauthorizationplatformpublickeycredentialregistration.md)
   A newly created platform credential that results from a credential registration request.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialRegistration](asauthorizationsecuritykeypublickeycredentialregistration.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialRegistration](./asauthorizationsecuritykeypublickeycredentialregistration.md)
   A newly created security key credential that results from a credential registration request.
-- [protocol ASAuthorizationPublicKeyCredentialRegistrationRequest](asauthorizationpublickeycredentialregistrationrequest.md)
+- [protocol ASAuthorizationPublicKeyCredentialRegistrationRequest](./asauthorizationpublickeycredentialregistrationrequest.md)
   An interface that defines properties for a credential registration request.
-- [class ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationplatformpublickeycredentialregistrationrequest.md)
+- [class ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationplatformpublickeycredentialregistrationrequest.md)
   The object for registering a new platform public key credential.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationsecuritykeypublickeycredentialregistrationrequest.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](./asauthorizationsecuritykeypublickeycredentialregistrationrequest.md)
   The object for registering a new security key credential.
 
 

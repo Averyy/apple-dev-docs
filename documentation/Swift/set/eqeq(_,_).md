@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two sets have equal elements.
 
@@ -20,6 +21,8 @@ Returns a Boolean value indicating whether two sets have equal elements.
 static func == (lhs: Set<Element>, rhs: Set<Element>) -> Bool
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 #### Return Value
 
 `true` if the `lhs` and `rhs` have the same elements; otherwise, `false`.
@@ -31,27 +34,28 @@ static func == (lhs: Set<Element>, rhs: Set<Element>) -> Bool
 
 ## See Also
 
-- [static func != (borrowing Self, borrowing Self) -> Bool](set/!=(_:_:).md)
+### Comparing Sets
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func isSubset(of: Set<Element>) -> Bool](set/issubset(of:)-1d7pp.md)
+- [func isSubset(of: Set<Element>) -> Bool](./issubset%28of%29-1d7pp.md)
   Returns a Boolean value that indicates whether this set is a subset of the given set.
-- [func isSubset<S>(of: S) -> Bool](set/issubset(of:)-6qyo5.md)
+- [func isSubset<S>(of: S) -> Bool](./issubset%28of%29-6qyo5.md)
   Returns a Boolean value that indicates whether the set is a subset of the given sequence.
-- [func isStrictSubset(of: Set<Element>) -> Bool](set/isstrictsubset(of:)-96vc3.md)
+- [func isStrictSubset(of: Set<Element>) -> Bool](./isstrictsubset%28of%29-96vc3.md)
   Returns a Boolean value that indicates whether the set is a strict subset of the given sequence.
-- [func isStrictSubset<S>(of: S) -> Bool](set/isstrictsubset(of:)-787sx.md)
+- [func isStrictSubset<S>(of: S) -> Bool](./isstrictsubset%28of%29-787sx.md)
   Returns a Boolean value that indicates whether the set is a strict subset of the given sequence.
-- [func isSuperset(of: Set<Element>) -> Bool](set/issuperset(of:)-9iz62.md)
+- [func isSuperset(of: Set<Element>) -> Bool](./issuperset%28of%29-9iz62.md)
   Returns a Boolean value that indicates whether this set is a superset of the given set.
-- [func isSuperset<S>(of: S) -> Bool](set/issuperset(of:)-90hri.md)
+- [func isSuperset<S>(of: S) -> Bool](./issuperset%28of%29-90hri.md)
   Returns a Boolean value that indicates whether the set is a superset of the given sequence.
-- [func isStrictSuperset(of: Set<Element>) -> Bool](set/isstrictsuperset(of:)-4d27m.md)
+- [func isStrictSuperset(of: Set<Element>) -> Bool](./isstrictsuperset%28of%29-4d27m.md)
   Returns a Boolean value that indicates whether the set is a strict superset of the given sequence.
-- [func isStrictSuperset<S>(of: S) -> Bool](set/isstrictsuperset(of:)-58ejg.md)
+- [func isStrictSuperset<S>(of: S) -> Bool](./isstrictsuperset%28of%29-58ejg.md)
   Returns a Boolean value that indicates whether the set is a strict superset of the given sequence.
-- [func isDisjoint(with: Set<Element>) -> Bool](set/isdisjoint(with:)-8ngmk.md)
+- [func isDisjoint(with: Set<Element>) -> Bool](./isdisjoint%28with%29-8ngmk.md)
   Returns a Boolean value that indicates whether this set has no members in common with the given set.
-- [func isDisjoint<S>(with: S) -> Bool](set/isdisjoint(with:)-2onid.md)
+- [func isDisjoint<S>(with: S) -> Bool](./isdisjoint%28with%29-2onid.md)
   Returns a Boolean value that indicates whether the set has no members in common with the given sequence.
 
 

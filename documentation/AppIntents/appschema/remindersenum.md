@@ -1,7 +1,8 @@
 # AppSchema.RemindersEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the reminders domain.
 
@@ -21,23 +22,24 @@ protocol RemindersEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var listType: some AppSchemaEnum](appschema/remindersenum/listtype.md)
+- [var listType: some AppSchemaEnum](./remindersenum/listtype.md)
   An enum schema for a list type parameter.
-- [var locationTriggerEvent: some AppSchemaEnum](appschema/remindersenum/locationtriggerevent.md)
+- [var locationTriggerEvent: some AppSchemaEnum](./remindersenum/locationtriggerevent.md)
   An enum schema for a location trigger event parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var listType: some AppSchemaEnum](appschema/remindersenum/listtype.md)
+### Types for static parameters
+- [var listType: some AppSchemaEnum](./remindersenum/listtype.md)
   An enum schema for a list type parameter.
-- [var locationTriggerEvent: some AppSchemaEnum](appschema/remindersenum/locationtriggerevent.md)
+- [var locationTriggerEvent: some AppSchemaEnum](./remindersenum/locationtriggerevent.md)
   An enum schema for a location trigger event parameter.
 
 

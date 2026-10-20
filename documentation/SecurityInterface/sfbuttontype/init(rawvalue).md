@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Security Interface  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.3+
@@ -14,7 +15,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](sfbuttontype/init(_:).md)
+### Initializers
+- [init(UInt32)](./init%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isProVideoStorageSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this movie file output supports writing to Pro Video Storage in its current configuration.
 
@@ -16,6 +17,10 @@ Whether this movie file output supports writing to Pro Video Storage in its curr
 
 ```swift
 var isProVideoStorageSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isProVideoStorageSupported) BOOL proVideoStorageSupported;
 ```
 
 #### Discussion

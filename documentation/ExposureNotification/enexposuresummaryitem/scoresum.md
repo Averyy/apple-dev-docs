@@ -1,19 +1,26 @@
 # scoreSum
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sum of scores for all exposure for this item.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var scoreSum: Double { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) double scoreSum;
 ```
 
 #### Discussion
@@ -22,9 +29,10 @@ var scoreSum: Double { get }
 
 ## See Also
 
-- [var maximumScore: Double](enexposuresummaryitem/maximumscore.md)
+### Getting Summary Properties
+- [var maximumScore: Double](./maximumscore.md)
   The highest score of all exposures for this item.
-- [var weightedDurationSum: TimeInterval](enexposuresummaryitem/weighteddurationsum.md)
+- [var weightedDurationSum: TimeInterval](./weighteddurationsum.md)
   The sum of exposure durations weighted by their attenuation.
 
 

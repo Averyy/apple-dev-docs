@@ -1,7 +1,8 @@
 # NSTextStorageDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The optional methods that delegates of text storage objects implement to handle text-edit processing.
 
@@ -18,22 +19,27 @@ The optional methods that delegates of text storage objects implement to handle 
 protocol NSTextStorageDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSTextStorageDelegate <NSObject>
+```
+
 ## Topics
 
 ### Processing edit actions
-- [func textStorage(NSTextStorage, willProcessEditing: NSTextStorage.EditActions, range: NSRange, changeInLength: Int)](nstextstoragedelegate/textstorage(_:willprocessediting:range:changeinlength:).md)
+- [func textStorage(NSTextStorage, willProcessEditing: NSTextStorage.EditActions, range: NSRange, changeInLength: Int)](./nstextstoragedelegate/textstorage%28_,willprocessediting,range,changeinlength%29.md)
   The method the framework calls when a text storage object is about to process edits.
-- [func textStorage(NSTextStorage, didProcessEditing: NSTextStorage.EditActions, range: NSRange, changeInLength: Int)](nstextstoragedelegate/textstorage(_:didprocessediting:range:changeinlength:).md)
+- [func textStorage(NSTextStorage, didProcessEditing: NSTextStorage.EditActions, range: NSRange, changeInLength: Int)](./nstextstoragedelegate/textstorage%28_,didprocessediting,range,changeinlength%29.md)
   The method the framework calls when a text storage object has finished processing edits.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any NSTextStorageDelegate)?](nstextstorage/delegate.md)
+### Processing the editing actions
+- [var delegate: (any NSTextStorageDelegate)?](./nstextstorage/delegate.md)
   The delegate for the text storage object.
 
 

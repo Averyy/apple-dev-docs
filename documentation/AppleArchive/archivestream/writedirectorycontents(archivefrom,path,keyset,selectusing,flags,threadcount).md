@@ -1,7 +1,8 @@
 # writeDirectoryContents(archiveFrom:path:keySet:selectUsing:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes all entries from a directory to the archive stream.
 
@@ -11,7 +12,7 @@ Writes all entries from a directory to the archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

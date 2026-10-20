@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a locale initialized from data in the given unarchiver.
 
@@ -20,6 +21,10 @@ Returns a locale initialized from data in the given unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 #### Return Value
 
 The initialized locale.
@@ -30,8 +35,10 @@ The initialized locale.
 
 ## See Also
 
-- [Archives and Serializations Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
-- [init(localeIdentifier: String)](nslocale/init(localeidentifier:).md)
+### Related Documentation
+- [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
+### Initializing a Locale
+- [init(localeIdentifier: String)](./init%28localeidentifier%29.md)
   Initializes a locale using a given locale identifier.
 
 

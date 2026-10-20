@@ -1,7 +1,8 @@
 # constraint(lessThanOrEqualToSystemSpacingAfter:multiplier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a constraint that defines the maximum amount by which the current anchor trails the specified anchor.
 
@@ -14,9 +15,13 @@ Returns a constraint that defines the maximum amount by which the current anchor
 func constraint(lessThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint
 ```
 
+```objc
+- (NSLayoutConstraint *) constraintLessThanOrEqualToSystemSpacingAfterAnchor:(NSLayoutXAxisAnchor *) anchor multiplier:(CGFloat) multiplier;
+```
+
 #### Return Value
 
-An [`NSLayoutConstraint`](nslayoutconstraint.md) object that imposes a maximum distance between the current anchor and the object in the `anchor` parameter.
+An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that imposes a maximum distance between the current anchor and the object in the `anchor` parameter.
 
 #### Discussion
 
@@ -31,11 +36,12 @@ The maximum distance between the two anchors is determined by multiplying the sy
 
 ## See Also
 
-- [func constraint(equalToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(equaltosystemspacingafter:multiplier:).md)
+### Building system spacing constraints
+- [func constraint(equalToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28equaltosystemspacingafter,multiplier%29.md)
   Returns a constraint that defines by how much the current anchor trails the specified anchor.
-- [func constraint(greaterThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(greaterthanorequaltosystemspacingafter:multiplier:).md)
+- [func constraint(greaterThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequaltosystemspacingafter,multiplier%29.md)
   Returns a constraint that defines the minimum amount by which the current anchor trails the specified anchor.
-- [Creating self-sizing table view cells](../uikit/creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../../UIKit/creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 
 

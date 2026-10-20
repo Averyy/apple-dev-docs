@@ -1,7 +1,8 @@
 # Slice
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view into a subsequence of elements of another collection.
 
@@ -72,112 +73,112 @@ Use slices only for transient computation. A slice may hold a reference to the e
 ## Topics
 
 ### Initializers
-- [init(base: Base, bounds: Range<Base.Index>)](slice/init(base:bounds:).md)
+- [init(base: Base, bounds: Range<Base.Index>)](./slice/init%28base,bounds%29.md)
   Creates a view into the given collection that allows access to elements within the specified range.
 ### Instance Properties
-- [var base: Base](slice/base.md)
+- [var base: Base](./slice/base.md)
   The underlying collection of the slice.
 ### Instance Methods
-- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](slice/assumingmemorybound(to:)-5fkwu.md)
+- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](./slice/assumingmemorybound%28to%29-5fkwu.md)
   Returns a typed buffer to the memory referenced by this buffer slice, assuming that the memory is already bound to the specified type.
-- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](slice/assumingmemorybound(to:)-7a4sa.md)
+- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](./slice/assumingmemorybound%28to%29-7a4sa.md)
   Returns a typed buffer to the memory referenced by this buffer slice, assuming that the memory is already bound to the specified type.
-- [func bindMemory<T>(to: T.Type) -> UnsafeBufferPointer<T>](slice/bindmemory(to:)-4ombl.md)
+- [func bindMemory<T>(to: T.Type) -> UnsafeBufferPointer<T>](./slice/bindmemory%28to%29-4ombl.md)
   Binds this buffer slice’s memory to the specified type and returns a typed buffer of the bound memory.
-- [func bindMemory<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](slice/bindmemory(to:)-92fs7.md)
+- [func bindMemory<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](./slice/bindmemory%28to%29-92fs7.md)
   Binds this buffer slice’s memory to the specified type and returns a typed buffer of the bound memory.
-- [func copyBytes<C>(from: C)](slice/copybytes(from:).md)
+- [func copyBytes<C>(from: C)](./slice/copybytes%28from%29.md)
   Copies from a collection of `UInt8` into this buffer slice’s memory.
-- [func deinitialize<Element>() -> UnsafeMutableRawBufferPointer](slice/deinitialize.md)
+- [func deinitialize<Element>() -> UnsafeMutableRawBufferPointer](./slice/deinitialize%28%29.md)
   Deinitializes every instance in this buffer slice.
-- [func deinitializeElement<Element>(at: UnsafeMutableBufferPointer<Element>.Index)](slice/deinitializeelement(at:).md)
+- [func deinitializeElement<Element>(at: UnsafeMutableBufferPointer<Element>.Index)](./slice/deinitializeelement%28at%29.md)
   Deinitializes the memory underlying the element at `index`.
-- [func initialize<S>(from: S) -> (unwritten: S.Iterator, index: Slice<Base>.Index)](slice/initialize(from:).md)
+- [func initialize<S>(from: S) -> (unwritten: S.Iterator, index: Slice<Base>.Index)](./slice/initialize%28from%29.md)
   Initializes the buffer slice’s memory with the given elements.
-- [func initialize<Element>(fromContentsOf: some Collection) -> Slice<Base>.Index](slice/initialize(fromcontentsof:).md)
+- [func initialize<Element>(fromContentsOf: some Collection) -> Slice<Base>.Index](./slice/initialize%28fromcontentsof%29.md)
   Initializes the buffer slice’s memory with with every element of the source.
-- [func initialize<Element>(repeating: Element)](slice/initialize(repeating:).md)
+- [func initialize<Element>(repeating: Element)](./slice/initialize%28repeating%29.md)
   Initializes every element in this buffer slice’s memory to a copy of the given value.
-- [func initializeElement<Element>(at: Int, to: Element)](slice/initializeelement(at:to:).md)
+- [func initializeElement<Element>(at: Int, to: Element)](./slice/initializeelement%28at,to%29.md)
   Initializes the element at `index` to the given value.
-- [func initializeMemory<S>(as: S.Element.Type, from: S) -> (unwritten: S.Iterator, initialized: UnsafeMutableBufferPointer<S.Element>)](slice/initializememory(as:from:).md)
+- [func initializeMemory<S>(as: S.Element.Type, from: S) -> (unwritten: S.Iterator, initialized: UnsafeMutableBufferPointer<S.Element>)](./slice/initializememory%28as,from%29.md)
   Initializes the buffer’s memory with the given elements, binding the initialized memory to the elements’ type.
-- [func initializeMemory<C>(as: C.Element.Type, fromContentsOf: C) -> UnsafeMutableBufferPointer<C.Element>](slice/initializememory(as:fromcontentsof:).md)
+- [func initializeMemory<C>(as: C.Element.Type, fromContentsOf: C) -> UnsafeMutableBufferPointer<C.Element>](./slice/initializememory%28as,fromcontentsof%29.md)
   Initializes the buffer slice’s memory with every element of the source, binding the initialized memory to the elements’ type.
-- [func initializeMemory<T>(as: T.Type, repeating: T) -> UnsafeMutableBufferPointer<T>](slice/initializememory(as:repeating:).md)
+- [func initializeMemory<T>(as: T.Type, repeating: T) -> UnsafeMutableBufferPointer<T>](./slice/initializememory%28as,repeating%29.md)
   Initializes the memory referenced by this buffer slice with the given value, binds the memory to the value’s type, and returns a typed buffer of the initialized memory.
-- [func insert(Base.Element, at: Slice<Base>.Index)](slice/insert(_:at:)-4n5zz.md)
-- [func insert<S>(contentsOf: S, at: Slice<Base>.Index)](slice/insert(contentsof:at:)-3z6ts.md)
-- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](slice/load(frombyteoffset:as:)-3vjps.md)
+- [func insert(Base.Element, at: Slice<Base>.Index)](./slice/insert%28_,at%29-4n5zz.md)
+- [func insert<S>(contentsOf: S, at: Slice<Base>.Index)](./slice/insert%28contentsof,at%29-3z6ts.md)
+- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](./slice/load%28frombyteoffset,as%29-3vjps.md)
   Returns a new instance of the given type, read from the specified offset into the buffer pointer slice’s raw memory.
-- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](slice/load(frombyteoffset:as:)-45bko.md)
+- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](./slice/load%28frombyteoffset,as%29-45bko.md)
   Returns a new instance of the given type, read from the specified offset into the buffer pointer slice’s raw memory.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](slice/loadunaligned(frombyteoffset:as:)-6jvd4.md)
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](slice/loadunaligned(frombyteoffset:as:)-6u1jm.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./slice/loadunaligned%28frombyteoffset,as%29-6jvd4.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./slice/loadunaligned%28frombyteoffset,as%29-6u1jm.md)
   Returns a new instance of the given type, read from the specified offset into the buffer pointer slice’s raw memory.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](slice/loadunaligned(frombyteoffset:as:)-7jjnt.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./slice/loadunaligned%28frombyteoffset,as%29-7jjnt.md)
   Returns a new instance of the given type, read from the specified offset into the buffer pointer slice’s raw memory.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](slice/loadunaligned(frombyteoffset:as:)-9gtr0.md)
-- [func moveElement<Element>(from: Slice<Base>.Index) -> Element](slice/moveelement(from:).md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./slice/loadunaligned%28frombyteoffset,as%29-9gtr0.md)
+- [func moveElement<Element>(from: Slice<Base>.Index) -> Element](./slice/moveelement%28from%29.md)
   Retrieves and returns the element at `index`, leaving that element’s underlying memory uninitialized.
-- [func moveInitialize<Element>(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index](slice/moveinitialize(fromcontentsof:)-82ebd.md)
+- [func moveInitialize<Element>(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index](./slice/moveinitialize%28fromcontentsof%29-82ebd.md)
   Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this buffer slice’s memory initialized.
-- [func moveInitialize<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](slice/moveinitialize(fromcontentsof:)-iasq.md)
+- [func moveInitialize<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](./slice/moveinitialize%28fromcontentsof%29-iasq.md)
   Moves every element of an initialized source buffer slice into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this buffer slice’s memory initialized.
-- [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T>](slice/moveinitializememory(as:fromcontentsof:)-1jll.md)
+- [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T>](./slice/moveinitializememory%28as,fromcontentsof%29-1jll.md)
   Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
-- [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: Slice<UnsafeMutableBufferPointer<T>>) -> UnsafeMutableBufferPointer<T>](slice/moveinitializememory(as:fromcontentsof:)-1uz4a.md)
+- [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: Slice<UnsafeMutableBufferPointer<T>>) -> UnsafeMutableBufferPointer<T>](./slice/moveinitializememory%28as,fromcontentsof%29-1uz4a.md)
   Moves every element from an initialized source buffer slice into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
-- [func moveUpdate<Element>(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index](slice/moveupdate(fromcontentsof:)-5i98g.md)
+- [func moveUpdate<Element>(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index](./slice/moveupdate%28fromcontentsof%29-5i98g.md)
   Updates this buffer slice’s initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
-- [func moveUpdate<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](slice/moveupdate(fromcontentsof:)-ou4d.md)
+- [func moveUpdate<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](./slice/moveupdate%28fromcontentsof%29-ou4d.md)
   Updates this buffer slice’s initialized memory initialized memory by moving every element from the source buffer slice, leaving the source memory uninitialized.
-- [func remove(at: Slice<Base>.Index) -> Base.Element](slice/remove(at:)-pbti.md)
-- [func removeSubrange(Range<Slice<Base>.Index>)](slice/removesubrange(_:)-8hbh1.md)
-- [func replaceSubrange<C>(Range<Slice<Base>.Index>, with: C)](slice/replacesubrange(_:with:)-904p8.md)
-- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](slice/storebytes(of:tobyteoffset:as:).md)
+- [func remove(at: Slice<Base>.Index) -> Base.Element](./slice/remove%28at%29-pbti.md)
+- [func removeSubrange(Range<Slice<Base>.Index>)](./slice/removesubrange%28_%29-8hbh1.md)
+- [func replaceSubrange<C>(Range<Slice<Base>.Index>, with: C)](./slice/replacesubrange%28_,with%29-904p8.md)
+- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](./slice/storebytes%28of,tobyteoffset,as%29.md)
   Stores a value’s bytes into the buffer pointer slice’s raw memory at the specified byte offset.
-- [func update<S>(from: S) -> (unwritten: S.Iterator, index: Slice<Base>.Index)](slice/update(from:).md)
+- [func update<S>(from: S) -> (unwritten: S.Iterator, index: Slice<Base>.Index)](./slice/update%28from%29.md)
   Updates the buffer slice’s initialized memory with the given elements.
-- [func update<Element>(fromContentsOf: some Collection) -> Slice<Base>.Index](slice/update(fromcontentsof:).md)
+- [func update<Element>(fromContentsOf: some Collection) -> Slice<Base>.Index](./slice/update%28fromcontentsof%29.md)
   Updates the buffer slice’s initialized memory with every element of the source.
-- [func update<Element>(repeating: Element)](slice/update(repeating:).md)
+- [func update<Element>(repeating: Element)](./slice/update%28repeating%29.md)
   Updates every element of this buffer slice’s initialized memory.
-- [func withContiguousMutableStorageIfAvailable<R, Element>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](slice/withcontiguousmutablestorageifavailable(_:)-2ader.md)
-- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-1nqta.md)
+- [func withContiguousMutableStorageIfAvailable<R, Element>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](./slice/withcontiguousmutablestorageifavailable%28_%29-2ader.md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](./slice/withmemoryrebound%28to,_%29-1nqta.md)
   Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
-- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-3oirt.md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](./slice/withmemoryrebound%28to,_%29-3oirt.md)
   Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
-- [func withMemoryRebound<T, E, Result, Element>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-6kxii.md)
+- [func withMemoryRebound<T, E, Result, Element>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](./slice/withmemoryrebound%28to,_%29-6kxii.md)
   Executes the given closure while temporarily binding the memory referenced by this buffer slice to the given type.
-- [func withMemoryRebound<T, E, Result, Element>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-ibp7.md)
+- [func withMemoryRebound<T, E, Result, Element>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](./slice/withmemoryrebound%28to,_%29-ibp7.md)
   Executes the given closure while temporarily binding the memory referenced by this buffer slice to the given type.
 ### Default Implementations
-- [BidirectionalCollection Implementations](slice/bidirectionalcollection-implementations.md)
-- [Collection Implementations](slice/collection-implementations.md)
-- [LazySequenceProtocol Implementations](slice/lazysequenceprotocol-implementations.md)
-- [MutableCollection Implementations](slice/mutablecollection-implementations.md)
-- [RangeReplaceableCollection Implementations](slice/rangereplaceablecollection-implementations.md)
-- [Sequence Implementations](slice/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./slice/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./slice/collection-implementations.md)
+- [LazySequenceProtocol Implementations](./slice/lazysequenceprotocol-implementations.md)
+- [MutableCollection Implementations](./slice/mutablecollection-implementations.md)
+- [RangeReplaceableCollection Implementations](./slice/rangereplaceablecollection-implementations.md)
+- [Sequence Implementations](./slice/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
-- [AccelerateMutableBuffer](../accelerate/acceleratemutablebuffer.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Copyable](copyable.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [Escapable](escapable.md)
-- [LazySequenceProtocol](lazysequenceprotocol.md)
-- [MutableCollection](mutablecollection.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [AccelerateBuffer](../Accelerate/acceleratebuffer.md)
+- [AccelerateMutableBuffer](../Accelerate/acceleratemutablebuffer.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [Copyable](./copyable.md)
+- [DataProtocol](../Foundation/dataprotocol.md)
+- [Escapable](./escapable.md)
+- [LazySequenceProtocol](./lazysequenceprotocol.md)
+- [MutableCollection](./mutablecollection.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [RangeReplaceableCollection](./rangereplaceablecollection.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 
 ---

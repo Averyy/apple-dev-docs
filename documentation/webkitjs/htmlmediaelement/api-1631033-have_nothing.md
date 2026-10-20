@@ -11,7 +11,7 @@ No media data is available for playback at the current time.
 
 ## Declaration
 
-```swift
+```
 const unsigned short HAVE_NOTHING;
 ```
 

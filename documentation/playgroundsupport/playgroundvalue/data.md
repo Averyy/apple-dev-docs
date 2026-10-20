@@ -1,7 +1,8 @@
 # PlaygroundValue.data(_:)
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 A value that represents raw data.
 
@@ -17,15 +18,16 @@ case data(Data)
 
 ## See Also
 
-- [PlaygroundValue.boolean(_:)](playgroundvalue/boolean.md)
+### Representing Data
+- [PlaygroundValue.boolean(_:)](./boolean.md)
   A value that represents a Boolean.
-- [PlaygroundValue.date(_:)](playgroundvalue/date.md)
+- [PlaygroundValue.date(_:)](./date.md)
   A value that represents a date.
-- [PlaygroundValue.floatingPoint(_:)](playgroundvalue/floatingpoint.md)
+- [PlaygroundValue.floatingPoint(_:)](./floatingpoint.md)
   A value that represents a floating-point number.
-- [PlaygroundValue.integer(_:)](playgroundvalue/integer.md)
+- [PlaygroundValue.integer(_:)](./integer.md)
   A value that represents an integer.
-- [PlaygroundValue.string(_:)](playgroundvalue/string.md)
+- [PlaygroundValue.string(_:)](./string.md)
   A value that represents a string.
 
 

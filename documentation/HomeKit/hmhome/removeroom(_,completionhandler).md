@@ -1,7 +1,8 @@
 # removeRoom(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a room from the home.
 
@@ -14,27 +15,38 @@ Removes a room from the home.
 ## Declaration
 
 ```swift
+func removeRoom(_ room: HMRoom, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeRoom(_ room: HMRoom) async throws
+```
+
+```objc
+- (void) removeRoom:(HMRoom *) room completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
 
-If the room is in a zone, this method also removes it from the zone. Any accessories in the removed room automatically move to [`roomForEntireHome()`](hmhome/roomforentirehome().md).
+If the room is in a zone, this method also removes it from the zone. Any accessories in the removed room automatically move to [`roomForEntireHome()`](./roomforentirehome%28%29.md).
 
 ## Parameters
 
 - `room`: The room to remove.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var rooms: [HMRoom]](hmhome/rooms.md)
+### Dividing a house into rooms
+- [var rooms: [HMRoom]](./rooms.md)
   An array of the rooms created and managed by the user.
-- [func roomForEntireHome() -> HMRoom](hmhome/roomforentirehome.md)
+- [func roomForEntireHome() -> HMRoom](./roomforentirehome%28%29.md)
   A room that represents all parts of the home that don’t have a more specific room to represent them.
-- [func addRoom(withName: String, completionHandler: (HMRoom?, (any Error)?) -> Void)](hmhome/addroom(withname:completionhandler:).md)
+- [func addRoom(withName: String, completionHandler: (HMRoom?, (any Error)?) -> Void)](./addroom%28withname,completionhandler%29.md)
   Creates a new room with the specified name.
-- [class HMRoom](hmroom.md)
+- [class HMRoom](../hmroom.md)
   The smallest subdivision of a home’s space.
 
 

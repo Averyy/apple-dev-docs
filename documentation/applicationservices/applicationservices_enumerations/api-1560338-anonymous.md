@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var cmBlackPointCompensation: Int](cmblackpointcompensation.md)
+- [var cmBlackPointCompensation: Int](../cmblackpointcompensation.md)
 
 
 ---

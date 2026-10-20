@@ -1,7 +1,8 @@
 # kCGPDFContextAllowsPrinting
 
 **Framework**: Core Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Whether the document allows printing when unlocked with the user password.
 
@@ -10,7 +11,7 @@ Whether the document allows printing when unlocked with the user password.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,27 +21,32 @@ Whether the document allows printing when unlocked with the user password.
 let kCGPDFContextAllowsPrinting: CFString
 ```
 
+```c
+extern CFStringRef const kCGPDFContextAllowsPrinting;
+```
+
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value of this key is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value of this key is [`true`](../Swift/true.md).
 
 ## See Also
 
-- [let kCGPDFContextAuthor: CFString](kcgpdfcontextauthor.md)
+### Metadata Keys
+- [let kCGPDFContextAuthor: CFString](./kcgpdfcontextauthor.md)
   The corresponding value is a string that represents the name of the person who created the document. This key is optional.
-- [let kCGPDFContextCreator: CFString](kcgpdfcontextcreator.md)
+- [let kCGPDFContextCreator: CFString](./kcgpdfcontextcreator.md)
   The corresponding value is a string that represents the name of the application used to produce the document. This key is optional.
-- [let kCGPDFContextTitle: CFString](kcgpdfcontexttitle.md)
+- [let kCGPDFContextTitle: CFString](./kcgpdfcontexttitle.md)
   The corresponding value is a string that represents the title of the document. This key is optional.
-- [let kCGPDFContextOwnerPassword: CFString](kcgpdfcontextownerpassword.md)
-- [let kCGPDFContextUserPassword: CFString](kcgpdfcontextuserpassword.md)
-- [let kCGPDFContextAllowsCopying: CFString](kcgpdfcontextallowscopying.md)
+- [let kCGPDFContextOwnerPassword: CFString](./kcgpdfcontextownerpassword.md)
+- [let kCGPDFContextUserPassword: CFString](./kcgpdfcontextuserpassword.md)
+- [let kCGPDFContextAllowsCopying: CFString](./kcgpdfcontextallowscopying.md)
   Whether the document allows copying when unlocked with the user password.
-- [let kCGPDFContextOutputIntent: CFString](kcgpdfcontextoutputintent.md)
-- [let kCGPDFContextOutputIntents: CFString](kcgpdfcontextoutputintents.md)
-- [let kCGPDFContextSubject: CFString](kcgpdfcontextsubject.md)
-- [let kCGPDFContextKeywords: CFString](kcgpdfcontextkeywords.md)
-- [let kCGPDFContextEncryptionKeyLength: CFString](kcgpdfcontextencryptionkeylength.md)
+- [let kCGPDFContextOutputIntent: CFString](./kcgpdfcontextoutputintent.md)
+- [let kCGPDFContextOutputIntents: CFString](./kcgpdfcontextoutputintents.md)
+- [let kCGPDFContextSubject: CFString](./kcgpdfcontextsubject.md)
+- [let kCGPDFContextKeywords: CFString](./kcgpdfcontextkeywords.md)
+- [let kCGPDFContextEncryptionKeyLength: CFString](./kcgpdfcontextencryptionkeylength.md)
 
 
 ---

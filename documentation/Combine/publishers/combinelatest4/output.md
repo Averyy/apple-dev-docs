@@ -1,7 +1,8 @@
 # Publishers.CombineLatest4.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces four-element tuples of the upstream publishers’ output
 
 ## See Also
 
-- [Publishers.CombineLatest4.Failure](publishers/combinelatest4/failure.md)
+### Declaring supporting types
+- [Publishers.CombineLatest4.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

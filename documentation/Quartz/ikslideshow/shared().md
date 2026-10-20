@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shared instance of a slideshow.
 
@@ -12,6 +13,10 @@ Returns a shared instance of a slideshow.
 
 ```swift
 class func shared() -> IKSlideshow!
+```
+
+```objc
++ (IKSlideshow *) sharedSlideshow;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # Never.ID
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the stable identity of the entity associated with an instance.
 

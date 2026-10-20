@@ -1,7 +1,8 @@
 # init(objectPushWith:withFiles:delegate:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new IOBluetoothObjectPush object
 
@@ -12,6 +13,10 @@ Creates and returns a new IOBluetoothObjectPush object
 
 ```swift
 init!(objectPushWith inDevice: IOBluetoothDevice!, withFiles inFiles: [Any]!, delegate inDelegate: Any!)
+```
+
+```objc
+- (IOBluetoothObjectPushUIController *) initObjectPushWithBluetoothDevice:(IOBluetoothDevice *) inDevice withFiles:(NSArray *) inFiles delegate:(id) inDelegate;
 ```
 
 #### Discussion

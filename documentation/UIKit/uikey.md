@@ -1,7 +1,8 @@
 # UIKey
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information about the state of a keyboard key.
 
@@ -19,49 +20,54 @@ An object that provides information about the state of a keyboard key.
 class UIKey
 ```
 
+```objc
+@interface UIKey : NSObject
+```
+
 #### Overview
 
-[`UIKey`](uikey.md) provides relevant information about the current state of a key on a keyboard as a user presses and releases the key. To learn more, see [`Handling key presses made on a physical keyboard`](handling-key-presses-made-on-a-physical-keyboard.md).
+[`UIKey`](./uikey.md) provides relevant information about the current state of a key on a keyboard as a user presses and releases the key. To learn more, see [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md).
 
 ## Topics
 
 ### Determining key type
-- [var keyCode: UIKeyboardHIDUsage](uikey/keycode.md)
+- [var keyCode: UIKeyboardHIDUsage](./uikey/keycode.md)
   The HID usage code of the key.
-- [var modifierFlags: UIKeyModifierFlags](uikey/modifierflags.md)
+- [var modifierFlags: UIKeyModifierFlags](./uikey/modifierflags.md)
   The modifier keys pressed and held while the user presses the key.
 ### Getting key characters
-- [var characters: String](uikey/characters.md)
+- [var characters: String](./uikey/characters.md)
   A string that represents the text value of the key combined with any active modifier keys.
-- [var charactersIgnoringModifiers: String](uikey/charactersignoringmodifiers.md)
+- [var charactersIgnoringModifiers: String](./uikey/charactersignoringmodifiers.md)
   A string that represents the text value of the key without modifier keys.
 ### Initializers
-- [init?(coder: NSCoder)](uikey/init(coder:).md)
+- [init?(coder: NSCoder)](./uikey/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+### Physical keyboards
+- [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md)
   Detect when someone presses and releases keys on a physical keyboard.
-- [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)
+- [Navigating an app’s user interface using a keyboard](./navigating-an-app-s-user-interface-using-a-keyboard.md)
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
-- [Adding hardware keyboard support to your app](adding-hardware-keyboard-support-to-your-app.md)
+- [Adding hardware keyboard support to your app](./adding-hardware-keyboard-support-to-your-app.md)
   Enhance interactions with your app by handling raw keyboard events, writing custom keyboard shortcuts, and working with gesture recognizers.
-- [enum UIKeyboardHIDUsage](uikeyboardhidusage.md)
+- [enum UIKeyboardHIDUsage](./uikeyboardhidusage.md)
   A set of HID usage codes that identify the keys of a USB keyboard.
 
 

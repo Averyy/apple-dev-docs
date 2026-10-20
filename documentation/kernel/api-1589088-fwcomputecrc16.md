@@ -1,23 +1,25 @@
 # FWComputeCRC16
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 UInt16 FWComputeCRC16(const UInt32 *pQuads, UInt32 numQuads);
 ```
 
 ## See Also
 
-- [SubtractFWCycleTimeFromFWCycleTime](1589090-subtractfwcycletimefromfwcycleti.md)
-- [AddFWCycleTimeToFWCycleTime](1589089-addfwcycletimetofwcycletime.md)
-- [IOFWGetAbsoluteTime](1589086-iofwgetabsolutetime.md)
-- [FWUpdateCRC16](1589087-fwupdatecrc16.md)
+### Utilities
+- [SubtractFWCycleTimeFromFWCycleTime](./api-1589090-subtractfwcycletimefromfwcycleti.md)
+- [AddFWCycleTimeToFWCycleTime](./api-1589089-addfwcycletimetofwcycletime.md)
+- [IOFWGetAbsoluteTime](./api-1589086-iofwgetabsolutetime.md)
+- [FWUpdateCRC16](./api-1589087-fwupdatecrc16.md)
 
 
 ---

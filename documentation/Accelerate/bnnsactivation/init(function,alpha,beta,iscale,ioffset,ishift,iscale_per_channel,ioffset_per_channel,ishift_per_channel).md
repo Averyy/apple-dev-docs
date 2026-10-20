@@ -1,18 +1,19 @@
 # init(function:alpha:beta:iscale:ioffset:ishift:iscale_per_channel:ioffset_per_channel:ishift_per_channel:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new common activation function parameters structure that uses the specified function, alpha, beta, integer scale, offset, and shift.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -38,9 +39,10 @@ A new common activation function parameters structure.
 
 ## See Also
 
-- [init()](bnnsactivation/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new common activation function parameters structure.
-- [init(function: BNNSActivationFunction, alpha: Float, beta: Float)](bnnsactivation/init(function:alpha:beta:).md)
+- [init(function: BNNSActivationFunction, alpha: Float, beta: Float)](./init%28function,alpha,beta%29.md)
   Returns a new common activation function parameters structure that uses the specified function, alpha, and beta.
 
 

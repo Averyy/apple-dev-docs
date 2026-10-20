@@ -1,7 +1,8 @@
 # SubscriptionPriceChangeItem
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data your app provides to change a subscription price.
 
@@ -10,33 +11,34 @@ The data your app provides to change a subscription price.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceChangeItem
 ```
 
 ## Properties
 
-- `SKU` (SKU) *(required)*
+- `SKU` (SKU) *(required)*: **Maximum Length**: `128`
 - `dependentSKUs` ([dependentSKU])
 - `price` (price) *(required)*
 
 ## See Also
 
-- [object Descriptors](descriptors.md)
+### Objects
+- [object Descriptors](./descriptors.md)
   The display name and description of a subscription product.
-- [object Offer](offer.md)
+- [object Offer](./offer.md)
   A discount offer for an auto-renewable subscription.
-- [object RequestInfo](requestinfo.md)
+- [object RequestInfo](./requestinfo.md)
   The metadata to include in server requests.
-- [object SubscriptionModifyAddItem](subscriptionmodifyadditem.md)
+- [object SubscriptionModifyAddItem](./subscriptionmodifyadditem.md)
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
-- [object SubscriptionModifyChangeItem](subscriptionmodifychangeitem.md)
+- [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)
   The data your app provides to change an item of an auto-renewable subscription.
-- [object SubscriptionModifyDescriptors](subscriptionmodifydescriptors.md)
+- [object SubscriptionModifyDescriptors](./subscriptionmodifydescriptors.md)
   The data your app provides to change the description and display name of an auto-renewable subscription.
-- [object SubscriptionModifyPeriodChange](subscriptionmodifyperiodchange.md)
+- [object SubscriptionModifyPeriodChange](./subscriptionmodifyperiodchange.md)
   The data your app provides to change the period of an auto-renewable subscription.
-- [object SubscriptionModifyRemoveItem](subscriptionmodifyremoveitem.md)
+- [object SubscriptionModifyRemoveItem](./subscriptionmodifyremoveitem.md)
   The data your app provides to remove an item from an auto-renewable subscription.
 
 

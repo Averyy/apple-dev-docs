@@ -1,23 +1,28 @@
 # parseIntegersOnly
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that only integers should be parsed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static var parseIntegersOnly: CFNumberFormatterOptionFlags { get }
+```
+
+```c
+kCFNumberFormatterParseIntegersOnly
 ```
 
 

@@ -1,7 +1,8 @@
 # entity(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the entity with the given identifier.
 

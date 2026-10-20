@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats a URL, using this style.
 
@@ -48,7 +49,7 @@ let urls = [
 let formatted = urls.map { $0.formatted(style) } // ["example.com/path/one", "beta.example.com/path/two", "west.example.com/three", "query.example.com/four"]
 ```
 
-To format a single floating-point value, use the [`URL`](url.md) instance method [`formatted(_:)`](url/formatted(_:).md) method passing in an instance of [`URL.FormatStyle`](url/formatstyle.md), or [`formatted()`](url/formatted().md) to use a default style.
+To format a single floating-point value, use the [`URL`](../../url.md) instance method [`formatted(_:)`](../formatted%28_%29.md) method passing in an instance of [`URL.FormatStyle`](../formatstyle.md), or [`formatted()`](../formatted%28%29.md) to use a default style.
 
 ## Parameters
 

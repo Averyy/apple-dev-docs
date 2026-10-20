@@ -1,7 +1,8 @@
 # boundingCircle(forSIMDPoints:pointCount:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates a bounding circle for the specified points.
 
@@ -19,9 +20,13 @@ Calculates a bounding circle for the specified points.
 class func boundingCircle(forSIMDPoints points: UnsafePointer<simd_float2>, pointCount: Int) throws -> VNCircle
 ```
 
+```objc
++ (VNCircle *) boundingCircleForSIMDPoints:(const simd_float2 *) points pointCount:(NSInteger) pointCount error:(NSError **) error;
+```
+
 #### Return Value
 
-The bounding [`VNCircle`](vncircle.md) object.
+The bounding [`VNCircle`](../vncircle.md) object.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ The bounding [`VNCircle`](vncircle.md) object.
 
 ## See Also
 
-- [class func boundingCircle(for: VNContour) throws -> VNCircle](vngeometryutils/boundingcircle(for:)-423ll.md)
+### Calculating Bounding Circles
+- [class func boundingCircle(for: VNContour) throws -> VNCircle](./boundingcircle%28for%29-423ll.md)
   Calculates a bounding circle for the specified contour object.
-- [class func boundingCircle(for: [VNPoint]) throws -> VNCircle](vngeometryutils/boundingcircle(for:)-9dggv.md)
+- [class func boundingCircle(for: [VNPoint]) throws -> VNCircle](./boundingcircle%28for%29-9dggv.md)
   Calculates a bounding circle for the specified array of points.
 
 

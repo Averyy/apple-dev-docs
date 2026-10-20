@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An unknown error occurred.
 
@@ -22,17 +23,18 @@ static var unknown: MKError.Code { get }
 
 ## See Also
 
-- [static var decodingFailed: MKError.Code](mkerror/decodingfailed.md)
+### Error codes
+- [static var decodingFailed: MKError.Code](./decodingfailed.md)
   GeoJSON decoding failed.
-- [static var directionsNotFound: MKError.Code](mkerror/directionsnotfound.md)
+- [static var directionsNotFound: MKError.Code](./directionsnotfound.md)
   Directions to the specified location aren’t available.
-- [static var loadingThrottled: MKError.Code](mkerror/loadingthrottled.md)
+- [static var loadingThrottled: MKError.Code](./loadingthrottled.md)
   The data didn’t load because data throttling is in effect.
-- [static var placemarkNotFound: MKError.Code](mkerror/placemarknotfound.md)
+- [static var placemarkNotFound: MKError.Code](./placemarknotfound.md)
   The framework couldn’t find the specified placemark.
-- [static var serverFailure: MKError.Code](mkerror/serverfailure.md)
+- [static var serverFailure: MKError.Code](./serverfailure.md)
   The map server was unable to return the desired information.
-- [MKError.Code](mkerror/code.md)
+- [MKError.Code](./code.md)
   Error constants for the MapKit framework.
 
 

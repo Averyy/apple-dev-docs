@@ -1,7 +1,8 @@
 # splitSamples()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Split sample buffer into a smaller representation, ideally carrying a single sample per resulting sample buffer.
 
@@ -19,6 +20,8 @@ Split sample buffer into a smaller representation, ideally carrying a single sam
 ```swift
 func splitSamples() -> [CMReadySampleBuffer<Content>]
 ```
+
+Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # equipmentID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interaction’s destination equipment.
 

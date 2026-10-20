@@ -1,7 +1,8 @@
 # RecognizeAnimalsRequest.Animal.cat
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An animal identifier for cats.
 
@@ -22,7 +23,8 @@ case cat
 
 ## See Also
 
-- [RecognizeAnimalsRequest.Animal.dog](recognizeanimalsrequest/animal/dog.md)
+### Getting the animals
+- [RecognizeAnimalsRequest.Animal.dog](./dog.md)
   An animal identifier for dogs.
 
 

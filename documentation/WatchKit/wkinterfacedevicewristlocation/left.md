@@ -1,7 +1,8 @@
 # WKInterfaceDeviceWristLocation.left
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user’s left wrist.
 
@@ -14,9 +15,14 @@ The user’s left wrist.
 case left
 ```
 
+```c
+WKInterfaceDeviceWristLocationLeft
+```
+
 ## See Also
 
-- [WKInterfaceDeviceWristLocation.right](wkinterfacedevicewristlocation/right.md)
+### Constants
+- [WKInterfaceDeviceWristLocation.right](./right.md)
   The user’s right wrist.
 
 

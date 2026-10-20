@@ -1,7 +1,8 @@
 # didConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a mouse accessory connects to the device.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a mouse accessory connects to the
 ```swift
 static var didConnect: NotificationCenter.BaseMessageIdentifier<GCMouse.DidConnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCMouse.DidConnectMessage>`.
 
 
 ---

@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a transformer to a data frame
 
@@ -32,7 +33,8 @@ The fitted transformer.
 
 ## See Also
 
-- [AnnotatedFeatureProvider.Transformer](annotatedfeatureprovider/transformer.md)
+### Fitting
+- [AnnotatedFeatureProvider.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

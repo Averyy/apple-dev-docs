@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the amount of money in the specified currency.
 
@@ -22,7 +23,8 @@ let amount: Decimal
 
 ## See Also
 
-- [let currency: Locale.Currency](datadetector/match/semanticdetails/moneyamount/currency.md)
+### Properties that describe elements of the amount
+- [let currency: Locale.Currency](./currency.md)
   A value that represents the currency the data detectors were able to match, though it may be a best guess.
 
 

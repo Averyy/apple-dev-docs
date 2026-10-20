@@ -1,7 +1,8 @@
 # enabledSemanticSegmentationMatteTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of semantic segmentation matte types that the photo render pipeline can deliver.
 
@@ -17,15 +18,20 @@ An array of semantic segmentation matte types that the photo render pipeline can
 var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * enabledSemanticSegmentationMatteTypes;
+```
+
 #### Discussion
 
-You may set this property to the array of matte types you’d like delivered with [`AVCapturePhoto`](avcapturephoto.md). The array may only contain values present in [`availableSemanticSegmentationMatteTypes`](avcapturephotooutput/availablesemanticsegmentationmattetypes.md).
+You may set this property to the array of matte types you’d like delivered with [`AVCapturePhoto`](../avcapturephoto.md). The array may only contain values present in [`availableSemanticSegmentationMatteTypes`](../avcapturephotooutput/availablesemanticsegmentationmattetypes.md).
 
 The default value of this property is an empty array.
 
 ## See Also
 
-- [var embedsSemanticSegmentationMattesInPhoto: Bool](avcapturephotosettings/embedssemanticsegmentationmattesinphoto.md)
+### Capturing semantic segmentation mattes
+- [var embedsSemanticSegmentationMattesInPhoto: Bool](./embedssemanticsegmentationmattesinphoto.md)
   A Boolean value that specifies whether to write the enabled semantic segmentation matte types captured with this photo to the photo’s file structure.
 
 

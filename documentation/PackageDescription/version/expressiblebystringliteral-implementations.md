@@ -1,11 +1,12 @@
 # ExpressibleByStringLiteral Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(stringLiteral: String)](version/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Initializes a version struct with the provided string literal.
 
 

@@ -1,7 +1,8 @@
 # attributedText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The styled text that the label displays.
 
@@ -9,7 +10,7 @@ The styled text that the label displays.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,33 +20,38 @@ The styled text that the label displays.
 var attributedText: NSAttributedString? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * attributedText;
+```
+
 #### Discussion
 
 This property is `nil` by default.
 
-Assigning a new value to this property also replaces the value of the [`text`](uilabel/text.md) property with the same string data, although without any formatting information. In addition, assigning a new value updates the values in the [`font`](uilabel/font.md), [`textColor`](uilabel/textcolor.md), and other style-related properties so that they reflect the style information starting at location `0` in the attributed string.
+Assigning a new value to this property also replaces the value of the [`text`](./text.md) property with the same string data, although without any formatting information. In addition, assigning a new value updates the values in the [`font`](./font.md), [`textColor`](./textcolor.md), and other style-related properties so that they reflect the style information starting at location `0` in the attributed string.
 
-Turn autokerning on for the label by setting the [`NSKernAttributeName`](nskernattributename.md) of the string to [`null`](https://developer.apple.com/documentation/foundation/nsnull/null).
+Turn autokerning on for the label by setting the [`NSKernAttributeName`](../nskernattributename.md) of the string to [`null`](../../Foundation/nsnull/null.md).
 
 ## See Also
 
-- [var text: String?](uilabel/text.md)
+### Accessing the text attributes
+- [var text: String?](./text.md)
   The text that the label displays.
-- [var font: UIFont!](uilabel/font.md)
+- [var font: UIFont!](./font.md)
   The font of the text.
-- [var textColor: UIColor!](uilabel/textcolor.md)
+- [var textColor: UIColor!](./textcolor.md)
   The color of the text.
-- [var textAlignment: NSTextAlignment](uilabel/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The technique for aligning the text.
-- [var lineBreakMode: NSLineBreakMode](uilabel/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The technique for wrapping and truncating the label’s text.
-- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](uilabel/linebreakstrategy.md)
+- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](./linebreakstrategy.md)
   The strategy that the system uses to break lines when laying out multiple lines of text.
-- [var isEnabled: Bool](uilabel/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the label draws its text in an enabled state.
-- [var enablesMarqueeWhenAncestorFocused: Bool](uilabel/enablesmarqueewhenancestorfocused.md)
+- [var enablesMarqueeWhenAncestorFocused: Bool](./enablesmarqueewhenancestorfocused.md)
   A Boolean value that determines whether the label scrolls its text while one of its containing views has focus.
-- [var showsExpansionTextWhenTruncated: Bool](uilabel/showsexpansiontextwhentruncated.md)
+- [var showsExpansionTextWhenTruncated: Bool](./showsexpansiontextwhentruncated.md)
   A Boolean value that determines whether the full text of the label displays when the pointer hovers over the truncated text.
 
 

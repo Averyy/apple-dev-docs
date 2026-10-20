@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The text paste delegate that handles pasting and dropping of text, using item providers.
@@ -16,6 +17,10 @@ The text paste delegate that handles pasting and dropping of text, using item pr
 
 ```swift
 weak var pasteDelegate: (any UITextPasteDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<UITextPasteDelegate> pasteDelegate;
 ```
 
 

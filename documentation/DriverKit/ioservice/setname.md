@@ -1,25 +1,26 @@
 # SetName
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name of the service in the system’s registry.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetName(const IOServiceName name);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 ## Parameters
 
@@ -27,11 +28,12 @@ virtual kern_return_t SetName(const IOServiceName name);
 
 ## See Also
 
-- [RegisterService](ioservice/registerservice.md)
+### Registering the Service with IOKit
+- [RegisterService](./registerservice.md)
   Starts the registration process for the service and performs any additional matching.
-- [GetRegistryEntryID](ioservice/getregistryentryid.md)
+- [GetRegistryEntryID](./getregistryentryid.md)
   Returns the registry ID for the current service.
-- [IOServiceName](ioservicename.md)
+- [IOServiceName](../ioservicename.md)
   A string type for setting the name of the service in the system’s registry.
 
 

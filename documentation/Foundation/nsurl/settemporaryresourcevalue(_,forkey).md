@@ -1,7 +1,8 @@
 # setTemporaryResourceValue(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a temporary resource value on the URL object.
 
@@ -20,11 +21,15 @@ Sets a temporary resource value on the URL object.
 func setTemporaryResourceValue(_ value: (any Sendable)?, forKey key: URLResourceKey)
 ```
 
+```objc
+- (void) setTemporaryResourceValue:(id) value forKey:(NSURLResourceKey) key;
+```
+
 #### Discussion
 
-Your app can use a temporary resource value to temporarily store a value for an app-defined resource value key in memory without modifying the actual resource that the URL represents. Once set, you can copy the temporary resource value from the URL object just as you would copy system-defined keys—by calling [`getResourceValue(_:forKey:)`](nsurl/getresourcevalue(_:forkey:).md) or [`resourceValues(forKeys:)`](nsurl/resourcevalues(forkeys:).md).
+Your app can use a temporary resource value to temporarily store a value for an app-defined resource value key in memory without modifying the actual resource that the URL represents. Once set, you can copy the temporary resource value from the URL object just as you would copy system-defined keys—by calling [`getResourceValue(_:forKey:)`](./getresourcevalue%28_,forkey%29.md) or [`resourceValues(forKeys:)`](./resourcevalues%28forkeys%29.md).
 
-Your app can remove a temporary resource value from the URL object by calling [`removeCachedResourceValue(forKey:)`](nsurl/removecachedresourcevalue(forkey:).md) or [`removeAllCachedResourceValues()`](nsurl/removeallcachedresourcevalues().md) (to remove all temporary values).
+Your app can remove a temporary resource value from the URL object by calling [`removeCachedResourceValue(forKey:)`](./removecachedresourcevalue%28forkey%29.md) or [`removeAllCachedResourceValues()`](./removeallcachedresourcevalues%28%29.md) (to remove all temporary values).
 
 This method is applicable only to URLs for file system resources.
 
@@ -35,19 +40,20 @@ This method is applicable only to URLs for file system resources.
 
 ## See Also
 
-- [func resourceValues(forKeys: [URLResourceKey]) throws -> [URLResourceKey : Any]](nsurl/resourcevalues(forkeys:).md)
+### Accessing Resource Values
+- [func resourceValues(forKeys: [URLResourceKey]) throws -> [URLResourceKey : Any]](./resourcevalues%28forkeys%29.md)
   Returns the resource values for the properties identified by specified array of keys.
-- [func getResourceValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: URLResourceKey) throws](nsurl/getresourcevalue(_:forkey:).md)
+- [func getResourceValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: URLResourceKey) throws](./getresourcevalue%28_,forkey%29.md)
   Returns the value of the resource property for the specified key.
-- [func setResourceValue(Any?, forKey: URLResourceKey) throws](nsurl/setresourcevalue(_:forkey:).md)
+- [func setResourceValue(Any?, forKey: URLResourceKey) throws](./setresourcevalue%28_,forkey%29.md)
   Sets the URL’s resource property for a given key to a given value.
-- [func setResourceValues([URLResourceKey : Any]) throws](nsurl/setresourcevalues(_:).md)
+- [func setResourceValues([URLResourceKey : Any]) throws](./setresourcevalues%28_%29.md)
   Sets the URL’s resource properties for a given set of keys to a given set of values.
-- [func removeAllCachedResourceValues()](nsurl/removeallcachedresourcevalues.md)
+- [func removeAllCachedResourceValues()](./removeallcachedresourcevalues%28%29.md)
   Removes all cached resource values and temporary resource values from the URL object.
-- [func removeCachedResourceValue(forKey: URLResourceKey)](nsurl/removecachedresourcevalue(forkey:).md)
+- [func removeCachedResourceValue(forKey: URLResourceKey)](./removecachedresourcevalue%28forkey%29.md)
   Removes the cached resource value identified by a given key from the URL object.
-- [struct URLResourceKey](urlresourcekey.md)
+- [struct URLResourceKey](../urlresourcekey.md)
   Keys that apply to file system URLs.
 
 

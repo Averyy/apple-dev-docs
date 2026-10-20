@@ -1,14 +1,15 @@
 # makeDeviceRequestbmRequestType
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 uint8_t makeDeviceRequestbmRequestType(tDeviceRequestDirection direction, tDeviceRequestType type, tDeviceRequestRecipient recipient);
 ```
 

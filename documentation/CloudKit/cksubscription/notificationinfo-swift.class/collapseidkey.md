@@ -1,7 +1,8 @@
 # collapseIDKey
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that the system uses to coalesce unseen push notifications.
 
@@ -20,15 +21,20 @@ A value that the system uses to coalesce unseen push notifications.
 var collapseIDKey: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * collapseIDKey;
+```
+
 #### Discussion
 
 When CloudKit generates a push notification, it sets the notification’s `apns-collapse-id` header to this property’s value. The system uses this header to coalesce unseen notifications.
 
-See [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns) for more information about sending notifications using the Apple Push Notification service.
+See [Sending notification requests to APNs](../../../UserNotifications/sending-notification-requests-to-apns.md) for more information about sending notifications using the Apple Push Notification service.
 
 ## See Also
 
-- [var category: String?](cksubscription/notificationinfo-swift.class/category.md)
+### Grouping Notifications
+- [var category: String?](./category.md)
   The name of the action group that corresponds to this notification.
 
 

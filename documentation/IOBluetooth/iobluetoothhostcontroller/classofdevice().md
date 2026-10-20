@@ -1,17 +1,22 @@
 # classOfDevice()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current class of device value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func classOfDevice() -> BluetoothClassOfDevice
+```
+
+```objc
+- (BluetoothClassOfDevice) classOfDevice;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # handsFree(_:incomingSMS:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate there’s an incoming text message.
 
@@ -14,14 +15,19 @@ Tells the delegate there’s an incoming text message.
 optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, incomingSMS sms: [AnyHashable : Any]!)
 ```
 
+```objc
+- (void) handsFree:(IOBluetoothHandsFreeDevice *) device incomingSMS:(NSDictionary *) sms;
+```
+
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `sms`: A dictionary containing the incoming SMS message. For dictionary keys, see [`SMS Dictionary Key Constants`](sms-dictionary-key-constants.md).
+- `sms`: A dictionary containing the incoming SMS message. For dictionary keys, see [SMS Dictionary Key Constants](../sms-dictionary-key-constants.md).
 
 ## See Also
 
-- [SMS Dictionary Key Constants](sms-dictionary-key-constants.md)
+### Receiving SMS Information
+- [SMS Dictionary Key Constants](../sms-dictionary-key-constants.md)
   Read the parts of an SMS message.
 
 

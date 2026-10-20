@@ -1,7 +1,8 @@
 # colorAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Accesses the array of state information for render attachments that store color data.
 
@@ -17,6 +18,10 @@ Accesses the array of state information for render attachments that store color 
 
 ```swift
 var colorAttachments: MTLRenderPassColorAttachmentDescriptorArray { get }
+```
+
+```objc
+@property (readonly) MTLRenderPassColorAttachmentDescriptorArray * colorAttachments;
 ```
 
 

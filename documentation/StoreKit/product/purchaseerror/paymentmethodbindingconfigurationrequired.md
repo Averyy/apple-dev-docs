@@ -1,9 +1,10 @@
 # Product.PurchaseError.paymentMethodBindingConfigurationRequired
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The customer needs to add a payment method to their Apple Account before making a purchase; use [`PaymentMethodBinding`](paymentmethodbinding.md) to prompt the customer and bind the payment method.
+The customer needs to add a payment method to their Apple Account before making a purchase; use [`PaymentMethodBinding`](../../paymentmethodbinding.md) to prompt the customer and bind the payment method.
 
 **Availability**:
 - iOS 26.5+

@@ -1,7 +1,8 @@
 # CKShare.ParticipantRole.unknown
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant’s role is unknown.
 
@@ -20,13 +21,18 @@ The participant’s role is unknown.
 case unknown
 ```
 
+```c
+CKShareParticipantRoleUnknown
+```
+
 ## See Also
 
-- [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)
+### Roles
+- [CKShare.ParticipantRole.owner](./owner.md)
   The participant is the share’s owner.
-- [CKShare.ParticipantRole.privateUser](ckshare/participantrole/privateuser.md)
+- [CKShare.ParticipantRole.privateUser](./privateuser.md)
   The participant has the private role.
-- [CKShare.ParticipantRole.publicUser](ckshare/participantrole/publicuser.md)
+- [CKShare.ParticipantRole.publicUser](./publicuser.md)
   The participant has the public role.
 
 

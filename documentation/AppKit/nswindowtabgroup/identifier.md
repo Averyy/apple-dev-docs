@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a tabbed window group.
 
@@ -14,13 +15,18 @@ The unique identifier for a tabbed window group.
 var identifier: NSWindow.TabbingIdentifier { get }
 ```
 
+```objc
+@property (copy, readonly) NSWindowTabbingIdentifier identifier;
+```
+
 #### Discussion
 
 This identifier is shared by all windows that participate in this tab group.
 
 ## See Also
 
-- [var tabbingIdentifier: NSWindow.TabbingIdentifier](nswindow/tabbingidentifier-swift.property.md)
+### Related Documentation
+- [var tabbingIdentifier: NSWindow.TabbingIdentifier](../nswindow/tabbingidentifier-swift.property.md)
   A value that allows a group of related windows.
 
 

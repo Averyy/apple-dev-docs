@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the gesture in radians.
 
@@ -17,9 +18,13 @@ The rotation of the gesture in radians.
 var rotation: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat rotation;
+```
+
 ## Mentions
 
-- [Handling rotation gestures](handling-rotation-gestures.md)
+- [Handling rotation gestures](../handling-rotation-gestures.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ The rotation value is a single value that varies over time. It isn’t the delta
 
 ## See Also
 
-- [var velocity: CGFloat](uirotationgesturerecognizer/velocity.md)
+### Interpreting the gesture
+- [var velocity: CGFloat](./velocity.md)
   The velocity of the rotation gesture in radians per second.
 
 

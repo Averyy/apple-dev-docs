@@ -1,7 +1,8 @@
 # kanaVoicing
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Combining marks that are attached to hiragana and katakana to indicate voicing changes.
 

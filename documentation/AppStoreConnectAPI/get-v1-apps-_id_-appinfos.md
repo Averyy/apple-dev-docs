@@ -1,7 +1,8 @@
 # List all app infos for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about an app that is currently live on App Store, or that goes live with the next version.
 
@@ -16,7 +17,7 @@ Use this endpoint to retrieve the derived app-level information for an app. If t
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/1462965264/appInfos
 ```
 
@@ -107,31 +108,63 @@ https://api.appstoreconnect.apple.com/v1/apps/1462965264/appInfos
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `fields[appInfos]` ([string]): Additional fields to include for each app info resource returned by the response.
+
+  **Allowed Values**: `appStoreState`, `state`, `appStoreAgeRating`, `australiaAgeRating`, `brazilAgeRating`, `brazilAgeRatingV2`, `franceAgeRating`, `koreaAgeRating`, `app`, `ageRatingDeclaration`, `appInfoLocalizations`, `primaryCategory`, `primarySubcategoryOne`, `primarySubcategoryTwo`, `secondaryCategory`, `secondarySubcategoryOne`, `secondarySubcategoryTwo`, `territoryAgeRatings`
 - `limit` (integer): The maximum number of app info resources to return.
+
+  **Maximum**: `200`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `app`, `ageRatingDeclaration`, `appInfoLocalizations`, `primaryCategory`, `primarySubcategoryOne`, `primarySubcategoryTwo`, `secondaryCategory`, `secondarySubcategoryOne`, `secondarySubcategoryTwo`
 - `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+
+  **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
 - `fields[appInfoLocalizations]` ([string]): Additional fields to include for each app info localization resource returned by the response.
+
+  **Allowed Values**: `locale`, `name`, `subtitle`, `privacyPolicyUrl`, `privacyChoicesUrl`, `privacyPolicyText`, `appInfo`
 - `fields[appCategories]` ([string]): Additional fields to include for each app category resource returned by the response.
+
+  **Allowed Values**: `platforms`, `subcategories`, `parent`
 - `fields[ageRatingDeclarations]` ([string]): Additional fields to include for each age rating declaration resource returned by the response.
+
+  **Allowed Values**: `advertising`, `alcoholTobaccoOrDrugUseOrReferences`, `contests`, `gambling`, `gamblingSimulated`, `gunsOrOtherWeapons`, `healthOrWellnessTopics`, `kidsAgeBand`, `lootBox`, `medicalOrTreatmentInformation`, `messagingAndChat`, `parentalControls`, `profanityOrCrudeHumor`, `ageAssurance`, `sexualContentGraphicAndNudity`, `sexualContentOrNudity`, `socialMedia`, `socialMediaAgeRestricted`, `horrorOrFearThemes`, `matureOrSuggestiveThemes`, `unrestrictedWebAccess`, `userGeneratedContent`, `violenceCartoonOrFantasy`, `violenceRealisticProlongedGraphicOrSadistic`, `violenceRealistic`, `ageRatingOverride`, `ageRatingOverrideV2`, `koreaAgeRatingOverride`, `gracRatingClassificationNumber`, `developerAgeRatingInfoUrl`
 - `limit[appInfoLocalizations]` (integer): The maximum number of related app info localizations resources to return.
+
+  **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`AppInfosResponse`, `application/json`): Request succeeded.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List app info IDs for an app](get-v1-apps-_id_-relationships-appinfos.md)
-- [List all app store versions for an app](get-v1-apps-_id_-appstoreversions.md)
+### Getting App Store details for your app
+- [List app info IDs for an app](./get-v1-apps-_id_-relationships-appinfos.md)
+- [List all app store versions for an app](./get-v1-apps-_id_-appstoreversions.md)
   Get a list of all App Store versions of an app across all platforms.
-- [List App Store version IDs for an app](get-v1-apps-_id_-relationships-appstoreversions.md)
-- [Read the end user license agreement information of an app](get-v1-apps-_id_-enduserlicenseagreement.md)
+- [List App Store version IDs for an app](./get-v1-apps-_id_-relationships-appstoreversions.md)
+- [Read the end user license agreement information of an app](./get-v1-apps-_id_-enduserlicenseagreement.md)
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
-- [Get the end user license agreement ID for an app](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
-- [List All Custom Product Pages for an App](get-v1-apps-_id_-appcustomproductpages.md)
+- [Get the end user license agreement ID for an app](./get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
+- [List All Custom Product Pages for an App](./get-v1-apps-_id_-appcustomproductpages.md)
   Get a list of all custom product pages for a specific app.
-- [Get all custom product page resource ids for an app](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+- [Get all custom product page resource ids for an app](./get-v1-apps-_id_-relationships-appcustomproductpages.md)
   Get a list of custom product page resource IDs associated with an app.
-- [List all app store experiments for an app](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
+- [List all app store experiments for an app](./get-v1-apps-_id_-appstoreversionexperimentsv2.md)
   Get a list of all App Store version experiments for a specific app.
-- [List App Store version experiment IDs for an app](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List App Store version experiment IDs for an app](./get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
 
 
 ---

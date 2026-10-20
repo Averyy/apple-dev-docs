@@ -1,7 +1,8 @@
 # PKCanvasViewDrawingPolicy.pencilOnly
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pencil touches are the only input that draw on the canvas.
 
@@ -17,11 +18,16 @@ Pencil touches are the only input that draw on the canvas.
 case pencilOnly
 ```
 
+```c
+PKCanvasViewDrawingPolicyPencilOnly
+```
+
 ## See Also
 
-- [PKCanvasViewDrawingPolicy.default](pkcanvasviewdrawingpolicy/default.md)
+### Drawing policies
+- [PKCanvasViewDrawingPolicy.default](./default.md)
   The default input type to use for drawing on a canvas.
-- [PKCanvasViewDrawingPolicy.anyInput](pkcanvasviewdrawingpolicy/anyinput.md)
+- [PKCanvasViewDrawingPolicy.anyInput](./anyinput.md)
   Allows drawing on the canvas from any input source.
 
 

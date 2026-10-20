@@ -1,7 +1,8 @@
 # MLComputeDevice.cpu(_:)
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A device that represents a CPU compute device.
 
@@ -22,9 +23,10 @@ case cpu(MLCPUComputeDevice)
 
 ## See Also
 
-- [case gpu(MLGPUComputeDevice)](mlcomputedevice/gpu(_:).md)
+### Device types
+- [case gpu(MLGPUComputeDevice)](./gpu%28_%29.md)
   A device that represents a GPU compute device.
-- [case neuralEngine(MLNeuralEngineComputeDevice)](mlcomputedevice/neuralengine(_:).md)
+- [case neuralEngine(MLNeuralEngineComputeDevice)](./neuralengine%28_%29.md)
   A device that represents a Neural Engine compute device.
 
 

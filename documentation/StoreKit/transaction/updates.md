@@ -1,7 +1,8 @@
 # updates
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The asynchronous sequence that emits a transaction when the system creates or updates transactions that occur outside the app or on other devices.
 
@@ -22,24 +23,24 @@ static var updates: Transaction.Transactions { get }
 
 ## Mentions
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
-- [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
-- [Getting started with Apple In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
-- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
+- [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
+- [Testing win-back offers in the sandbox environment](../testing-win-back-offers-in-the-sandbox-environment.md)
+- [Testing purchases made outside your app](../testing-purchases-made-outside-your-app.md)
+- [Getting started with Apple In-App Purchase using StoreKit views](../getting-started-with-in-app-purchases-using-storekit-views.md)
+- [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 #### Discussion
 
-Use [`updates`](transaction/updates.md) to receive new transactions while the app is running. This sequence receives transactions that occur outside of the app, such as Ask to Buy transactions, offer code redemptions, and purchases that customers make in the App Store. It also emits transactions that customers complete in your app on another device.
+Use [`updates`](./updates.md) to receive new transactions while the app is running. This sequence receives transactions that occur outside of the app, such as Ask to Buy transactions, offer code redemptions, and purchases that customers make in the App Store. It also emits transactions that customers complete in your app on another device.
 
-Note that after a successful Apple In-App Purchase on the same device, StoreKit returns the transaction through [`Product.PurchaseResult.success(_:)`](product/purchaseresult/success(_:).md).
+Note that after a successful Apple In-App Purchase on the same device, StoreKit returns the transaction through [`Product.PurchaseResult.success(_:)`](../product/purchaseresult/success%28_%29.md).
 
-> ❗ **Important**:  Create a [`Task`](https://developer.apple.com/documentation/swift/task) to iterate through the transactions from the listener as soon as your app launches. If your app has unfinished transactions, the [`updates`](transaction/updates.md) listener receives them once, immediately after the app launches. Without the [`Task`](https://developer.apple.com/documentation/swift/task) to listen for these transactions, your app may miss them.
+> ❗ **Important**:  Create a [`Task`](../../Swift/task.md) to iterate through the transactions from the listener as soon as your app launches. If your app has unfinished transactions, the [`updates`](./updates.md) listener receives them once, immediately after the app launches. Without the [`Task`](../../Swift/task.md) to listen for these transactions, your app may miss them.
 
-The following example shows a class that creates a [`Task`](https://developer.apple.com/documentation/swift/task) when it initializes. The task retrieves and processes any unfinished transactions.
+The following example shows a class that creates a [`Task`](../../Swift/task.md) when it initializes. The task retrieves and processes any unfinished transactions.
 
 ```swift
 final class TransactionObserver {
@@ -92,17 +93,19 @@ final class TransactionObserver {
 }
 ```
 
-The [`updates`](transaction/updates.md) listener receives unfinished transactions just once at app launch, but you can use the [`unfinished`](transaction/unfinished.md) listener to get your app’s unfinished transactions at any time. For information on finishing transactions, see [`finish()`](transaction/finish().md).
+The [`updates`](./updates.md) listener receives unfinished transactions just once at app launch, but you can use the [`unfinished`](./unfinished.md) listener to get your app’s unfinished transactions at any time. For information on finishing transactions, see [`finish()`](./finish%28%29.md).
 
 ## See Also
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+### Related Documentation
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
   Enable customers to redeem offer codes through the App Store or within your app.
-- [struct Transaction](transaction.md)
+### Transaction history and entitlements
+- [struct Transaction](../transaction.md)
   Information that represents the customer’s purchase of a product in your app.
-- [static var all: Transaction.Transactions](transaction/all.md)
+- [static var all: Transaction.Transactions](./all.md)
   A sequence that emits all the customer’s transactions for your app.
-- [static var currentEntitlements: Transaction.Transactions](transaction/currententitlements.md)
+- [static var currentEntitlements: Transaction.Transactions](./currententitlements.md)
   A sequence of the latest transactions that entitle a customer to Apple In-App Purchases and subscriptions.
 
 

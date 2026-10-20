@@ -1,7 +1,8 @@
 # xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points.PercentageBreakdown
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A metric subtype and the percentage of the metric value it contributes.
 
@@ -10,7 +11,7 @@ A metric subtype and the percentage of the metric value it contributes.
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets.Points.PercentageBreakdown
 ```
 

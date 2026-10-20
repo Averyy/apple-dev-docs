@@ -1,18 +1,19 @@
 # AVSampleCursorStorageRange
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that indicates the offset and length of storage for a media sample or its chunk.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,36 +21,41 @@ A structure that indicates the offset and length of storage for a media sample o
 struct AVSampleCursorStorageRange
 ```
 
+```c
+typedef struct { ... } AVSampleCursorStorageRange;
+```
+
 ## Topics
 
 ### Storage range
-- [var offset: Int64](avsamplecursorstoragerange/offset.md)
+- [var offset: Int64](./avsamplecursorstoragerange/offset.md)
   The offset of the first byte of storage that a media sample or its chunk occupies.
-- [var length: Int64](avsamplecursorstoragerange/length.md)
+- [var length: Int64](./avsamplecursorstoragerange/length.md)
   The count of bytes of storage that a media sample or its chunk occupies.
 ### Initializers
-- [init()](avsamplecursorstoragerange/init.md)
+- [init()](./avsamplecursorstoragerange/init%28%29.md)
   Creates a storage range structure.
-- [init(offset: Int64, length: Int64)](avsamplecursorstoragerange/init(offset:length:).md)
+- [init(offset: Int64, length: Int64)](./avsamplecursorstoragerange/init%28offset,length%29.md)
   Creates a storage range structure with offset and length values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class AVSampleCursor](avsamplecursor.md)
+### Sample cursors
+- [class AVSampleCursor](./avsamplecursor.md)
   An object that provides information about the media sample at the cursor’s current position.
-- [struct AVSampleCursorSyncInfo](avsamplecursorsyncinfo.md)
+- [struct AVSampleCursorSyncInfo](./avsamplecursorsyncinfo.md)
   A structure that describes the attributes of media samples to consider when resynchronizing a decoder.
-- [struct AVSampleCursorDependencyInfo](avsamplecursordependencyinfo.md)
+- [struct AVSampleCursorDependencyInfo](./avsamplecursordependencyinfo.md)
   A value for describing dependencies between a media sample and other media samples in the same sample sequence.
-- [struct AVSampleCursorAudioDependencyInfo](avsamplecursoraudiodependencyinfo.md)
+- [struct AVSampleCursorAudioDependencyInfo](./avsamplecursoraudiodependencyinfo.md)
   A structure that describes the independent decodability of audio samples.
-- [struct AVSampleCursorChunkInfo](avsamplecursorchunkinfo.md)
+- [struct AVSampleCursorChunkInfo](./avsamplecursorchunkinfo.md)
   A value that provides information about a chunk of media samples.
 
 

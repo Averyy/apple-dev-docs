@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes a previously paused session.
 
@@ -17,9 +18,9 @@ final func resume() async throws
 
 #### Discussion
 
-> **Note**: A [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](https://developer.apple.com/documentation/swift/cancellationerror) if the task is cancelled.
+> **Throws**: A [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](../../Swift/cancellationerror.md) if the task is cancelled.
 
-When this function returns successfully without throwing an error the foveated streaming session’s [`status`](foveatedstreamingsession/status-swift.property.md) will equal [`FoveatedStreamingSession.Status.connected`](foveatedstreamingsession/status-swift.enum/connected.md).
+When this function returns successfully without throwing an error the foveated streaming session’s [`status`](./status-swift.property.md) will equal [`FoveatedStreamingSession.Status.connected`](./status-swift.enum/connected.md).
 
 
 ---

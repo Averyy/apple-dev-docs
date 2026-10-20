@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates a layer hierarchy.
 
@@ -15,17 +16,22 @@ Invalidates a layer hierarchy.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 ## Mentions
 
-- [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
+- [Hosting browser view layers in the rendering extension](../hosting-browser-view-layers-in-the-rendering-extension.md)
 
 #### Discussion
 
-When you call this method, the layer hierarchy is no longer of use. Communicate with your browser app process to remove the related hosting view ([`LayerHierarchyHostingView`](layerhierarchyhostingview.md)) from its superview.
+When you call this method, the layer hierarchy is no longer of use. Communicate with your browser app process to remove the related hosting view ([`LayerHierarchyHostingView`](../layerhierarchyhostingview.md)) from its superview.
 
 ## See Also
 
-- [init() throws](layerhierarchy/init.md)
+### Creating and invalidating a layer hierarchy
+- [init() throws](./init%28%29.md)
   Initializes a layer hierarchy.
 
 

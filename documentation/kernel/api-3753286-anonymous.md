@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIODispatchQueueMethodsNotSynchronized](3753286-anonymous/kiodispatchqueuemethodsnotsynchronized.md)
-- [kIODispatchQueueReentrant](3753286-anonymous/kiodispatchqueuereentrant.md)
+- [kIODispatchQueueMethodsNotSynchronized](./api-3753286-anonymous/kiodispatchqueuemethodsnotsynchronized.md)
+- [kIODispatchQueueReentrant](./api-3753286-anonymous/kiodispatchqueuereentrant.md)
 
 
 ---

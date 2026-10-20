@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous subrange of the collection’s elements.
 
@@ -19,6 +20,8 @@ Accesses a contiguous subrange of the collection’s elements.
 ```swift
 subscript(bounds: Range<DefaultIndices<Elements>.Index>) -> DefaultIndices<Elements> { get }
 ```
+
+Available when `Elements` conforms to `Collection`.
 
 #### Overview
 
@@ -51,7 +54,7 @@ print(streetsSlice[0])
 // error: Index out of bounds
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

@@ -1,14 +1,15 @@
 # kBluetoothHCICommandRemoteOOBDataRequestReply
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandRemoteOOBDataRequestReply = 0x0030
 ```
 

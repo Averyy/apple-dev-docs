@@ -1,7 +1,8 @@
 # MEFileInfo.FragmentsStatus
 
 **Framework**: MediaExtension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that describes if a media asset contains or supports fragments.
 
@@ -14,6 +15,10 @@ An enumeration that describes if a media asset contains or supports fragments.
 enum FragmentsStatus
 ```
 
+```c
+enum MEFileInfoFragmentsStatus : NSInteger;
+```
+
 #### Overview
 
 For QuickTime movie and ISO files, it indicates the presence of an `mvex` box, which is necessary to signal the possible presence of later `moof` boxes.
@@ -21,36 +26,37 @@ For QuickTime movie and ISO files, it indicates the presence of an `mvex` box, w
 ## Topics
 
 ### File fragment status values
-- [MEFileInfo.FragmentsStatus.couldNotContainFragments](mefileinfo/fragmentsstatus-swift.enum/couldnotcontainfragments.md)
+- [MEFileInfo.FragmentsStatus.couldNotContainFragments](./fragmentsstatus-swift.enum/couldnotcontainfragments.md)
   The file isn’t extendable by fragments.
-- [MEFileInfo.FragmentsStatus.containsFragments](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md)
+- [MEFileInfo.FragmentsStatus.containsFragments](./fragmentsstatus-swift.enum/containsfragments.md)
   The file is extendable by fragments and contains at least one fragment.
-- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](mefileinfo/fragmentsstatus-swift.enum/couldcontainbutdoesnotcontainfragments.md)
+- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](./fragmentsstatus-swift.enum/couldcontainbutdoesnotcontainfragments.md)
   The file is extendable by fragments, but doesn’t contain any fragments.
-- [MEFileInfo.FragmentsStatus.couldNotContainFragments](mefileinfo/fragmentsstatus-swift.enum/couldnotcontainfragments.md)
+- [MEFileInfo.FragmentsStatus.couldNotContainFragments](./fragmentsstatus-swift.enum/couldnotcontainfragments.md)
   The file isn’t extendable by fragments.
-- [MEFileInfo.FragmentsStatus.containsFragments](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md)
+- [MEFileInfo.FragmentsStatus.containsFragments](./fragmentsstatus-swift.enum/containsfragments.md)
   The file is extendable by fragments and contains at least one fragment.
-- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](mefileinfo/fragmentsstatus-swift.enum/couldcontainbutdoesnotcontainfragments.md)
+- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](./fragmentsstatus-swift.enum/couldcontainbutdoesnotcontainfragments.md)
   The file is extendable by fragments, but doesn’t contain any fragments.
 ### Initializers
-- [init?(rawValue: Int)](mefileinfo/fragmentsstatus-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./fragmentsstatus-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var duration: CMTime](mefileinfo/duration.md)
+### Inspecting file properties
+- [var duration: CMTime](./duration.md)
   The duration of the media asset, if available.
-- [var fragmentsStatus: MEFileInfo.FragmentsStatus](mefileinfo/fragmentsstatus-swift.property.md)
+- [var fragmentsStatus: MEFileInfo.FragmentsStatus](./fragmentsstatus-swift.property.md)
   Indicates if the media asset contains fragments or is extendable by fragments.
 
 

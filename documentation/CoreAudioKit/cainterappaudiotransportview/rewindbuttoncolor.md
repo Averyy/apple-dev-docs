@@ -1,13 +1,16 @@
 # rewindButtonColor
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 13.0
+- iPadOS 8.0+ - Deprecated in 13.0
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Inter-App Audio API is deprecated in favor of Audio Units
 
 ## Declaration
 
@@ -15,18 +18,23 @@
 var rewindButtonColor: UIColor { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIColor * rewindButtonColor;
+```
+
 ## See Also
 
-- [var isConnected: Bool](cainterappaudiotransportview/isconnected.md)
-- [var currentTimeLabelFont: UIFont](cainterappaudiotransportview/currenttimelabelfont.md)
-- [var isEnabled: Bool](cainterappaudiotransportview/isenabled.md)
-- [var labelColor: UIColor](cainterappaudiotransportview/labelcolor.md)
-- [var pauseButtonColor: UIColor](cainterappaudiotransportview/pausebuttoncolor.md)
-- [var playButtonColor: UIColor](cainterappaudiotransportview/playbuttoncolor.md)
-- [var isPlaying: Bool](cainterappaudiotransportview/isplaying.md)
-- [var recordButtonColor: UIColor](cainterappaudiotransportview/recordbuttoncolor.md)
-- [var isRecording: Bool](cainterappaudiotransportview/isrecording.md)
-- [func setOutputAudioUnit(AudioUnit)](cainterappaudiotransportview/setoutputaudiounit(_:).md)
+### Configuring the View
+- [var isConnected: Bool](./isconnected.md)
+- [var currentTimeLabelFont: UIFont](./currenttimelabelfont.md)
+- [var isEnabled: Bool](./isenabled.md)
+- [var labelColor: UIColor](./labelcolor.md)
+- [var pauseButtonColor: UIColor](./pausebuttoncolor.md)
+- [var playButtonColor: UIColor](./playbuttoncolor.md)
+- [var isPlaying: Bool](./isplaying.md)
+- [var recordButtonColor: UIColor](./recordbuttoncolor.md)
+- [var isRecording: Bool](./isrecording.md)
+- [func setOutputAudioUnit(AudioUnit)](./setoutputaudiounit%28_%29.md)
 
 
 ---

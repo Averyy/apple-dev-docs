@@ -1,7 +1,8 @@
 # VZMemoryBalloonDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The common configuration traits for memory balloon devices.
 
@@ -14,28 +15,33 @@ The common configuration traits for memory balloon devices.
 class VZMemoryBalloonDeviceConfiguration
 ```
 
+```objc
+@interface VZMemoryBalloonDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t instantiate this abstract class directly. Instead, instantiate one of its subclasses such as [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](vzvirtiotraditionalmemoryballoondeviceconfiguration.md).
+Don’t instantiate this abstract class directly. Instead, instantiate one of its subclasses such as [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](./vzvirtiotraditionalmemoryballoondeviceconfiguration.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioTraditionalMemoryBalloonDeviceConfiguration](vzvirtiotraditionalmemoryballoondeviceconfiguration.md)
+- [VZVirtioTraditionalMemoryBalloonDeviceConfiguration](./vzvirtiotraditionalmemoryballoondeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioTraditionalMemoryBalloonDeviceConfiguration](vzvirtiotraditionalmemoryballoondeviceconfiguration.md)
+### Configuration
+- [class VZVirtioTraditionalMemoryBalloonDeviceConfiguration](./vzvirtiotraditionalmemoryballoondeviceconfiguration.md)
   A configuration object that provides a way to reclaim memory from the guest system.
 
 

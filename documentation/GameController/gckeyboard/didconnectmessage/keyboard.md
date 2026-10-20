@@ -1,7 +1,8 @@
 # keyboard
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keyboard object that connected to the device.
 

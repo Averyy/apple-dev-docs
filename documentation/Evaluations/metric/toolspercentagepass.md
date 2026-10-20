@@ -1,9 +1,10 @@
 # toolsPercentagePass
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A convenience metric for the partial score result of a [`ToolCallEvaluator`](toolcallevaluator.md).
+A convenience metric for the partial score result of a [`ToolCallEvaluator`](../toolcallevaluator.md).
 
 **Availability**:
 - iOS 27.0+

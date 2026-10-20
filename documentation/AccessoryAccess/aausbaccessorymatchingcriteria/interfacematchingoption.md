@@ -1,7 +1,8 @@
 # AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption
 
 **Framework**: Accessory Access  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent options for performing interface matching using interface matching criteria.
 
@@ -14,24 +15,28 @@ Values that represent options for performing interface matching using interface 
 enum InterfaceMatchingOption
 ```
 
+```c
+enum AAUSBAccessoryMatchingCriteriaInterfaceMatchingOption : NSInteger;
+```
+
 ## Topics
 
-- [init?(rawValue: Int)](aausbaccessorymatchingcriteria/interfacematchingoption/init(rawvalue:).md)
+- [init?(rawValue: Int)](./interfacematchingoption/init%28rawvalue%29.md)
   Initializes a new interface matching option with the provided value.
-- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAll](aausbaccessorymatchingcriteria/interfacematchingoption/matchall.md)
+- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAll](./interfacematchingoption/matchall.md)
   A value that indicates the match needs to be all inclusive of the provided interface criteria.
-- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAny](aausbaccessorymatchingcriteria/interfacematchingoption/matchany.md)
+- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAny](./interfacematchingoption/matchany.md)
   A value that indicates that the match needs to cover at least one of the provided interface criteria.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

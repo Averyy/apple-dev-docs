@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of the appearance object.
 
@@ -16,6 +17,10 @@ Creates a copy of the appearance object.
 
 ```swift
 func copy() -> Self
+```
+
+```objc
+- (instancetype) copy;
 ```
 
 

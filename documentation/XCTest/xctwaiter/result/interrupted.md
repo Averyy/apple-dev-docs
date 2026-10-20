@@ -1,7 +1,8 @@
 # XCTWaiter.Result.interrupted
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The waiter was interrupted prior to its expectations being fulfilled or timing out.
 
@@ -11,19 +12,24 @@ The waiter was interrupted prior to its expectations being fulfilled or timing o
 case interrupted
 ```
 
+```c
+XCTWaiterResultInterrupted
+```
+
 #### Discussion
 
 This occurs when an “outer” waiter times out, resulting in any waiters nested inside it being interrupted to allow the call stack to quickly unwind.
 
 ## See Also
 
-- [XCTWaiter.Result.completed](xctwaiter/result/completed.md)
+### Result States
+- [XCTWaiter.Result.completed](./completed.md)
   All of the waiter’s expectations were fulfilled successfully.
-- [XCTWaiter.Result.timedOut](xctwaiter/result/timedout.md)
+- [XCTWaiter.Result.timedOut](./timedout.md)
   The waiter timed out before all of its expectations were fulfilled.
-- [XCTWaiter.Result.incorrectOrder](xctwaiter/result/incorrectorder.md)
+- [XCTWaiter.Result.incorrectOrder](./incorrectorder.md)
   The waiter’s expectations were not fulfilled in the required order.
-- [XCTWaiter.Result.invertedFulfillment](xctwaiter/result/invertedfulfillment.md)
+- [XCTWaiter.Result.invertedFulfillment](./invertedfulfillment.md)
   An inverted expectation was fulfilled.
 
 

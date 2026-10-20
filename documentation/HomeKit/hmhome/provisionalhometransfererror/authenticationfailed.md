@@ -1,7 +1,8 @@
 # HMHome.ProvisionalHomeTransferError.authenticationFailed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authentication with the home hub failed.
 
@@ -21,11 +22,12 @@ Typical causes for authentication failures with a home hub include an invalid or
 
 ## See Also
 
-- [HMHome.ProvisionalHomeTransferError.connectionFailed](hmhome/provisionalhometransfererror/connectionfailed.md)
+### Detecting transfer errors
+- [HMHome.ProvisionalHomeTransferError.connectionFailed](./connectionfailed.md)
   Establishing a network connection to the home hub failed.
-- [HMHome.ProvisionalHomeTransferError.serverError](hmhome/provisionalhometransfererror/servererror.md)
+- [HMHome.ProvisionalHomeTransferError.serverError](./servererror.md)
   An unexpected server-side error or internal error occurred.
-- [HMHome.ProvisionalHomeTransferError.targetHomeRejected](hmhome/provisionalhometransfererror/targethomerejected.md)
+- [HMHome.ProvisionalHomeTransferError.targetHomeRejected](./targethomerejected.md)
   The home hub rejected the target home identifier.
 
 

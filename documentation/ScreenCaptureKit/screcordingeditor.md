@@ -1,7 +1,8 @@
 # SCRecordingEditor
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@
 class SCRecordingEditor
 ```
 
+```objc
+@interface SCRecordingEditor : NSObject
+```
+
 #### Overview
 
 Presents a system-owned preview UI for a completed recording via SCStream.
@@ -26,28 +31,28 @@ SCRecordingEditor owns the full presentation lifecycle of the preview UI. Caller
 ## Topics
 
 ### Initializers
-- [init(URL: URL)](screcordingeditor/init(url:)-1k2cv.md)
-- [init(url: URL)](screcordingeditor/init(url:)-ead5.md)
+- [init(URL: URL)](./screcordingeditor/init%28url%29-1k2cv.md)
+- [init(url: URL)](./screcordingeditor/init%28url%29-ead5.md)
 ### Instance Properties
-- [var delegate: (any SCRecordingEditorDelegate)?](screcordingeditor/delegate.md)
+- [var delegate: (any SCRecordingEditorDelegate)?](./screcordingeditor/delegate.md)
 ### Instance Methods
-- [func present(from: NSWindow, completionHandler: ((any Error)?) -> Void)](screcordingeditor/present(from:completionhandler:)-1nvxe.md)
-- [func present(from: UIWindowScene, completionHandler: ((any Error)?) -> Void)](screcordingeditor/present(from:completionhandler:)-2atpt.md)
-- [func present(from: UIWindowScene, mode: SCRecordingEditor.Mode, completionHandler: ((any Error)?) -> Void)](screcordingeditor/present(from:mode:completionhandler:).md)
+- [func present(from: NSWindow, completionHandler: ((any Error)?) -> Void)](./screcordingeditor/present%28from,completionhandler%29-1nvxe.md)
+- [func present(from: UIWindowScene, completionHandler: ((any Error)?) -> Void)](./screcordingeditor/present%28from,completionhandler%29-2atpt.md)
+- [func present(from: UIWindowScene, mode: SCRecordingEditor.Mode, completionHandler: ((any Error)?) -> Void)](./screcordingeditor/present%28from,mode,completionhandler%29.md)
 ### Enumerations
-- [SCRecordingEditor.Mode](screcordingeditor/mode.md)
+- [SCRecordingEditor.Mode](./screcordingeditor/mode.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

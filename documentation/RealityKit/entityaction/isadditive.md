@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that determines whether this action additively blends with the prior stage.
@@ -27,6 +28,12 @@ When `true`, the action’s animation output is relative to an absolute base val
 Apply actions additively by configuring them to produce animation offsets, such as delta values.
 
 The default value is `false`.
+
+## Default Implementations
+
+### EntityAction Implementations
+- [var isAdditive: Bool](./isadditive-7cp6g.md)
+  A Boolean value that determines whether this action additively blends with the prior stage.
 
 
 ---

@@ -1,7 +1,8 @@
 # kSecPolicyKU_EncipherOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used *only* for encryption.
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used *only* for encry
 
 ```swift
 let kSecPolicyKU_EncipherOnly: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_EncipherOnly;
 ```
 
 

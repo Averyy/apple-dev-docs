@@ -1,11 +1,12 @@
 # AccelerateMutableMatrixBuffer Implementations
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func withUnsafeMutableBufferPointer<R>((inout UnsafeMutableBufferPointer<Format.ComponentType>) throws -> R) rethrows -> R](vimage/pixelbuffer/withunsafemutablebufferpointer(_:).md)
+- [func withUnsafeMutableBufferPointer<R>((inout UnsafeMutableBufferPointer<Format.ComponentType>) throws -> R) rethrows -> R](./withunsafemutablebufferpointer%28_%29.md)
   Calls the given closure with a pointer to the buffer’s mutable contiguous storage.
 
 

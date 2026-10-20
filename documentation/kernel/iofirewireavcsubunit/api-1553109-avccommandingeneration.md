@@ -1,14 +1,15 @@
 # AVCCommandInGeneration
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn AVCCommandInGeneration(UInt32 generation, const UInt8 *command, UInt32 cmdLen, UInt8 *response, UInt32 *responseLen);
 ```
 

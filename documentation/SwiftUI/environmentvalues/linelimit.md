@@ -1,7 +1,8 @@
 # lineLimit
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of lines that text can occupy in a view.
 
@@ -26,9 +27,10 @@ The maximum number of lines is `1` if the value is less than `1`. If the value i
 
 ## See Also
 
-- [func lineLimit(_:)](view/linelimit(_:).md)
+### Limiting line count for multiline text
+- [func lineLimit(_:)](../view/linelimit%28_%29.md)
   Sets to a closed range the number of lines that text can occupy in this view.
-- [func lineLimit(Int, reservesSpace: Bool) -> some View](view/linelimit(_:reservesspace:).md)
+- [func lineLimit(Int, reservesSpace: Bool) -> some View](../view/linelimit%28_,reservesspace%29.md)
   Sets a limit for the number of lines text can occupy in this view.
 
 

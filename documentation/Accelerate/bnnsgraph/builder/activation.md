@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Activation
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The activation function that a recurrent operation uses.
 
@@ -23,25 +24,25 @@ enum Activation
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.Activation.hardSigmoid](bnnsgraph/builder/activation/hardsigmoid.md)
+- [BNNSGraph.Builder.Activation.hardSigmoid](./activation/hardsigmoid.md)
   Hard sigmoid activation
-- [BNNSGraph.Builder.Activation.linear](bnnsgraph/builder/activation/linear.md)
+- [BNNSGraph.Builder.Activation.linear](./activation/linear.md)
   Linear activation.
-- [BNNSGraph.Builder.Activation.relu](bnnsgraph/builder/activation/relu.md)
+- [BNNSGraph.Builder.Activation.relu](./activation/relu.md)
   Clamped Rectified Linear Unit (ReLU) activation.
-- [BNNSGraph.Builder.Activation.scaledTanh](bnnsgraph/builder/activation/scaledtanh.md)
-- [BNNSGraph.Builder.Activation.sigmoid](bnnsgraph/builder/activation/sigmoid.md)
+- [BNNSGraph.Builder.Activation.scaledTanh](./activation/scaledtanh.md)
+- [BNNSGraph.Builder.Activation.sigmoid](./activation/sigmoid.md)
   Sigmoid acvtivation.
-- [BNNSGraph.Builder.Activation.tanh](bnnsgraph/builder/activation/tanh.md)
+- [BNNSGraph.Builder.Activation.tanh](./activation/tanh.md)
   Tanh acivation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

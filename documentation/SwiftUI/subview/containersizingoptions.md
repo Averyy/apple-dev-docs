@@ -1,7 +1,8 @@
 # Subview.ContainerSizingOptions
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options on how all subviews should be sized when in a container.
 
@@ -27,16 +28,16 @@ enum ContainerSizingOptions
 ## Topics
 
 ### Enumeration Cases
-- [Subview.ContainerSizingOptions.uniform(axis:)](subview/containersizingoptions/uniform(axis:).md)
+- [Subview.ContainerSizingOptions.uniform(axis:)](./containersizingoptions/uniform%28axis%29.md)
   Subviews will share the same size.
-- [Subview.ContainerSizingOptions.variable](subview/containersizingoptions/variable.md)
+- [Subview.ContainerSizingOptions.variable](./containersizingoptions/variable.md)
   Subviews will be sized individually.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

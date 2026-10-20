@@ -1,7 +1,8 @@
 # kAEOpenDocuments
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -17,7 +18,7 @@ var kAEOpenDocuments: AEEventID { get }
 
 Event that provides an application with a list of documents to open. Sent, for example, when a selects one or more documents for your application in the Finder and double-clicks them.
 
-See also the constant `keyAESearchText` in the enum [`keyAEPropData`](https://developer.apple.com/documentation/applicationservices/apple_event_manager/keyaepropdata).
+See also the constant `keyAESearchText` in the enum [keyAEPropData](../applicationservices/apple_event_manager/keyaepropdata.md).
 
 
 ---

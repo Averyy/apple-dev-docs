@@ -1,7 +1,8 @@
 # init(resetDate:debugDescription:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates information describing a rate-limiting event.
 

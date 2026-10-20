@@ -1,7 +1,8 @@
 # channelSounding
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 static var channelSounding: CBCentralManager.Feature { get }
+```
+
+```c
+CBCentralManagerFeatureChannelSounding
 ```
 
 

@@ -1,7 +1,8 @@
 # entersReaderIfAvailable
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies whether Safari should enter Reader mode, if it is available.
 
@@ -17,14 +18,19 @@ A value that specifies whether Safari should enter Reader mode, if it is availab
 var entersReaderIfAvailable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL entersReaderIfAvailable;
+```
+
 #### Discussion
 
-Set the value to [`true`](https://developer.apple.com/documentation/swift/true) if Reader mode should be entered automatically when it is available for the webpage; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set this configuration property instead of initializing a view controller with [`init(url:entersReaderIfAvailable:)`](sfsafariviewcontroller/init(url:entersreaderifavailable:)-3aatz.md).
+Set the value to [`true`](../../../Swift/true.md) if Reader mode should be entered automatically when it is available for the webpage; otherwise, [`false`](../../../Swift/false.md). The default value is [`false`](../../../Swift/false.md). Set this configuration property instead of initializing a view controller with [`init(url:entersReaderIfAvailable:)`](../init%28url,entersreaderifavailable%29-3aatz.md).
 
 ## See Also
 
-- [var barCollapsingEnabled: Bool](sfsafariviewcontroller/configuration-swift.class/barcollapsingenabled.md)
-- [var eventAttribution: UIEventAttribution?](sfsafariviewcontroller/configuration-swift.class/eventattribution.md)
+### Configuring a Safari View Controller
+- [var barCollapsingEnabled: Bool](./barcollapsingenabled.md)
+- [var eventAttribution: UIEventAttribution?](./eventattribution.md)
   An object you use to send tap event attribution data to the browser for Private Click Measurement.
 
 

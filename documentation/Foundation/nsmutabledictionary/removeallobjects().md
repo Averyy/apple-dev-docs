@@ -1,7 +1,8 @@
 # removeAllObjects()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Empties the dictionary of its entries.
 
@@ -20,15 +21,20 @@ Empties the dictionary of its entries.
 func removeAllObjects()
 ```
 
+```objc
+- (void) removeAllObjects;
+```
+
 #### Discussion
 
-Each key and corresponding value object is sent a [`release`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/release) message.
+Each key and corresponding value object is sent a [`release`](../../ObjectiveC/nsobject-c.protocol/release.md) message.
 
 ## See Also
 
-- [func removeObject(forKey: Any)](nsmutabledictionary/removeobject(forkey:).md)
+### Removing Entries From a Mutable Dictionary
+- [func removeObject(forKey: Any)](./removeobject%28forkey%29.md)
   Removes a given key and its associated value from the dictionary.
-- [func removeObjects(forKeys: [Any])](nsmutabledictionary/removeobjects(forkeys:).md)
+- [func removeObjects(forKeys: [Any])](./removeobjects%28forkeys%29.md)
   Removes from the dictionary entries specified by elements in a given array.
 
 

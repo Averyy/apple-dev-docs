@@ -1,7 +1,8 @@
 # Date.IntervalFormatStyle.DateStyle
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that defines date interval styles that vary in length or in their included components.
 
@@ -22,7 +23,7 @@ typealias DateStyle = Date.FormatStyle.DateStyle
 
 #### Discussion
 
-The exact format depends on the locale. Possible values of date interval style include: [`omitted`](date/formatstyle/datestyle/omitted.md), [`numeric`](date/formatstyle/datestyle/numeric.md), [`abbreviated`](date/formatstyle/datestyle/abbreviated.md), [`long`](date/formatstyle/datestyle/long.md), and [`complete`](date/formatstyle/datestyle/complete.md).
+The exact format depends on the locale. Possible values of date interval style include: [`omitted`](../formatstyle/datestyle/omitted.md), [`numeric`](../formatstyle/datestyle/numeric.md), [`abbreviated`](../formatstyle/datestyle/abbreviated.md), [`long`](../formatstyle/datestyle/long.md), and [`complete`](../formatstyle/datestyle/complete.md).
 
 The following code sample shows a variety of date interval style format results using the `en_US` locale.
 
@@ -59,9 +60,10 @@ The default date style is `numeric`.
 
 ## See Also
 
-- [Date.IntervalFormatStyle.Symbol](date/intervalformatstyle/symbol.md)
+### Supporting Types
+- [Date.IntervalFormatStyle.Symbol](./symbol.md)
   The type that supports customizing formatting templates using the date format style’s modifier functions, and constructing fixed-pattern date format strings.
-- [Date.IntervalFormatStyle.TimeStyle](date/intervalformatstyle/timestyle.md)
+- [Date.IntervalFormatStyle.TimeStyle](./timestyle.md)
   The type that defines time styles that vary in length or in their included components.
 
 

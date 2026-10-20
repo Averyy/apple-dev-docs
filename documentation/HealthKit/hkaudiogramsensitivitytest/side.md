@@ -1,7 +1,8 @@
 # side
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var side: HKAudiogramSensitivityTestSide { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) HKAudiogramSensitivityTestSide side;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # definition(stage:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a definition for the given stage.
 
@@ -12,7 +13,7 @@ Returns a definition for the given stage.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

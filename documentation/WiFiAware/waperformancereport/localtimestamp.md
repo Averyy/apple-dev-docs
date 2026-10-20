@@ -1,7 +1,8 @@
 # localTimestamp
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the report was generated, using a local monotonically increasing clock.
 
@@ -18,7 +19,8 @@ let localTimestamp: ContinuousClock.Instant
 
 ## See Also
 
-- [let timestamp: Date](waperformancereport/timestamp.md)
+### Reporting the data collection time
+- [let timestamp: Date](./timestamp.md)
   The time that the framework generates the report.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphScatterMode.sub
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sub
 
@@ -17,6 +18,10 @@ Sub
 
 ```swift
 case sub
+```
+
+```c
+MPSGraphScatterModeSub
 ```
 
 

@@ -1,7 +1,8 @@
 # hash()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 class func hash() -> Int
+```
+
+```objc
++ (NSUInteger) hash;
 ```
 
 

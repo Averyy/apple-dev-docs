@@ -1,7 +1,8 @@
 # validationMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the tagger’s performance on the validation data set.
 
@@ -16,17 +17,18 @@ let validationMetrics: MLWordTaggerMetrics
 
 ## Mentions
 
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
 ## See Also
 
-- [func evaluation(on:tokenColumn:labelColumn:)](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:).md)
+### Evaluating a word tagger
+- [func evaluation(on:tokenColumn:labelColumn:)](./evaluation%28on,tokencolumn,labelcolumn%29.md)
   Computes evaluation metrics.
-- [func evaluation(on: [(tokens: [MLWordTagger.Token], labels: [String])]) -> MLWordTaggerMetrics](mlwordtagger/evaluation(on:).md)
+- [func evaluation(on: [(tokens: [MLWordTagger.Token], labels: [String])]) -> MLWordTaggerMetrics](./evaluation%28on%29.md)
   Computes evaluation metrics.
-- [let trainingMetrics: MLWordTaggerMetrics](mlwordtagger/trainingmetrics.md)
+- [let trainingMetrics: MLWordTaggerMetrics](./trainingmetrics.md)
   Measurements of the tagger’s performance on the training data set.
-- [struct MLWordTaggerMetrics](mlwordtaggermetrics.md)
+- [struct MLWordTaggerMetrics](../mlwordtaggermetrics.md)
   Metrics you use to evaluate a word tagger’s performance.
 
 

@@ -1,7 +1,8 @@
 # tableView(_:titleForDeleteConfirmationButtonForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the default title of the delete-confirmation button.
 
@@ -15,6 +16,10 @@ Changes the default title of the delete-confirmation button.
 
 ```swift
 optional func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?
+```
+
+```objc
+- (NSString *) tableView:(UITableView *) tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -32,13 +37,14 @@ By default, the delete-confirmation button, which appears on the right side of t
 
 ## See Also
 
-- [func tableView(UITableView, willBeginEditingRowAt: IndexPath)](uitableviewdelegate/tableview(_:willbegineditingrowat:).md)
+### Editing table rows
+- [func tableView(UITableView, willBeginEditingRowAt: IndexPath)](./tableview%28_,willbegineditingrowat%29.md)
   Tells the delegate that the table view is about to go into editing mode.
-- [func tableView(UITableView, didEndEditingRowAt: IndexPath?)](uitableviewdelegate/tableview(_:didendeditingrowat:).md)
+- [func tableView(UITableView, didEndEditingRowAt: IndexPath?)](./tableview%28_,didendeditingrowat%29.md)
   Tells the delegate that the table view has left editing mode.
-- [func tableView(UITableView, editingStyleForRowAt: IndexPath) -> UITableViewCell.EditingStyle](uitableviewdelegate/tableview(_:editingstyleforrowat:).md)
+- [func tableView(UITableView, editingStyleForRowAt: IndexPath) -> UITableViewCell.EditingStyle](./tableview%28_,editingstyleforrowat%29.md)
   Asks the delegate for the editing style of a row at a particular location in a table view.
-- [func tableView(UITableView, shouldIndentWhileEditingRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldindentwhileeditingrowat:).md)
+- [func tableView(UITableView, shouldIndentWhileEditingRowAt: IndexPath) -> Bool](./tableview%28_,shouldindentwhileeditingrowat%29.md)
   Asks the delegate whether the background of the specified row should be indented while the table view is in editing mode.
 
 

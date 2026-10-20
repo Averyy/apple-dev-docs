@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calls the given closure with the contents of underlying storage.
@@ -24,6 +25,12 @@ func withBytes<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R where E : 
 #### Discussion
 
 > **Note**: Calling `withBytes` multiple times does not guarantee that the same span will be passed in every time.
+
+## Default Implementations
+
+### ContiguousBytes Implementations
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](./withbytes%28_%29-5qdgz.md)
+  Calls the given closure with the contents of underlying storage.
 
 
 ---

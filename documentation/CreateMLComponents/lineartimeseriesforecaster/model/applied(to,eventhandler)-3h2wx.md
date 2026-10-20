@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the transformation on an input sequence.
 
@@ -17,6 +18,18 @@ Performs the transformation on an input sequence.
 
 ```swift
 func applied(to input: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler? = nil) async throws -> AnyTemporalSequence<MLShapedArray<Scalar>>
+```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
+**Other overloads**:
+
+```swift
+func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> MLShapedArray<Scalar>
+```
+
+```swift
+func applied(to input: some Sequence<MLShapedArray<Scalar>>, eventHandler: EventHandler? = nil) async throws -> [MLShapedArray<Scalar>]
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the pitch bend event.
 
@@ -17,6 +18,10 @@ The value of the pitch bend event.
 
 ```swift
 var value: UInt32 { get set }
+```
+
+```objc
+@property (readwrite) UInt32 value;
 ```
 
 

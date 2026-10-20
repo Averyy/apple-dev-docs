@@ -1,7 +1,8 @@
 # init(orientedBounds:transform:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from an oriented bounding box and transform.
 

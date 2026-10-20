@@ -1,14 +1,15 @@
 # IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress = IOUSBBitRange64(0, 63)
 ```
 

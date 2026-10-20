@@ -1,7 +1,8 @@
 # entities
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The definitions for the target app’s app entities.
 
@@ -35,15 +36,16 @@ let coffeeEntity = definitions.entities[
 
 ## See Also
 
-- [struct AppEntityDefinition](appentitydefinition.md)
+### Accessing app entities and queries
+- [struct AppEntityDefinition](../appentitydefinition.md)
   A definition you use to dynamically create entity instances for testing.
-- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](intentdefinitions/valuequeries.md)
+- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](./valuequeries.md)
   The definitions for the app’s intent value queries.
-- [struct IntentValueQueryDefinition](intentvaluequerydefinition.md)
+- [struct IntentValueQueryDefinition](../intentvaluequerydefinition.md)
   A definition you use to create an intent value query for testing.
-- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](intentdefinitions/transiententities.md)
+- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](./transiententities.md)
   Retrieve a transient app entity definition using subscript syntax.
-- [struct TransientAppEntityDefinition](transientappentitydefinition.md)
+- [struct TransientAppEntityDefinition](../transientappentitydefinition.md)
   A definition you use to dynamically create transient app entities for testing.
 
 

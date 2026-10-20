@@ -1,17 +1,18 @@
 # CIHueSaturationValueGradient
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a hue-saturation-value gradient filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,36 +20,42 @@ The properties you use to configure a hue-saturation-value gradient filter.
 protocol CIHueSaturationValueGradient : CIFilterProtocol
 ```
 
+```objc
+@protocol CIHueSaturationValueGradient <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var colorSpace: CGColorSpace?](cihuesaturationvaluegradient/colorspace.md)
+- [var colorSpace: CGColorSpace?](./cihuesaturationvaluegradient/colorspace.md)
   The color space for the generated color wheel.
-- [var dither: Float](cihuesaturationvaluegradient/dither.md)
+- [var dither: Float](./cihuesaturationvaluegradient/dither.md)
   A Boolean value specifying whether the dither the generated output.
-- [var radius: Float](cihuesaturationvaluegradient/radius.md)
+- [var radius: Float](./cihuesaturationvaluegradient/radius.md)
   The distance from the center of the effect.
-- [var softness: Float](cihuesaturationvaluegradient/softness.md)
+- [var softness: Float](./cihuesaturationvaluegradient/softness.md)
   The softness of the generated color wheel.
-- [var value: Float](cihuesaturationvaluegradient/value.md)
+- [var value: Float](./cihuesaturationvaluegradient/value.md)
   The lightness of the hue-saturation gradient.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func hueSaturationValueGradient() -> any CIFilter & CIHueSaturationValueGradient](cifilter-swift.class/huesaturationvaluegradient.md)
+### Related Documentation
+- [class func hueSaturationValueGradient() -> any CIFilter & CIHueSaturationValueGradient](./cifilter-swift.class/huesaturationvaluegradient%28%29.md)
   Generates a gradient representing a specified color space.
-- [protocol CIGaussianGradient](cigaussiangradient.md)
+### Protocols
+- [protocol CIGaussianGradient](./cigaussiangradient.md)
   The properties you use to configure a Gaussian gradient filter.
-- [protocol CILinearGradient](cilineargradient.md)
+- [protocol CILinearGradient](./cilineargradient.md)
   The properties you use to configure a linear gradient filter.
-- [protocol CIRadialGradient](ciradialgradient.md)
+- [protocol CIRadialGradient](./ciradialgradient.md)
   The properties you use to configure a radial gradient filter.
-- [protocol CISmoothLinearGradient](cismoothlineargradient.md)
+- [protocol CISmoothLinearGradient](./cismoothlineargradient.md)
   The properties you use to configure a smooth linear gradient filter.
 
 

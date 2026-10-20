@@ -1,7 +1,8 @@
 # NSStatusItem.Behavior
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of optional status item behaviors.
 
@@ -14,35 +15,40 @@ A set of optional status item behaviors.
 struct Behavior
 ```
 
+```c
+enum NSStatusItemBehavior : NSUInteger;
+```
+
 ## Topics
 
 ### Behaviors
-- [static var removalAllowed: NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct/removalallowed.md)
+- [static var removalAllowed: NSStatusItem.Behavior](./behavior-swift.struct/removalallowed.md)
   A status item that allows interactive removal.
-- [static var terminationOnRemoval: NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct/terminationonremoval.md)
+- [static var terminationOnRemoval: NSStatusItem.Behavior](./behavior-swift.struct/terminationonremoval.md)
   A status item that quits the application upon removal.
 ### Initializers
-- [init(rawValue: UInt)](nsstatusitem/behavior-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./behavior-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var behavior: NSStatusItem.Behavior](nsstatusitem/behavior-swift.property.md)
+### Managing the status item’s behavior
+- [var behavior: NSStatusItem.Behavior](./behavior-swift.property.md)
   The set of allowed behaviors for the status item.
-- [var button: NSStatusBarButton?](nsstatusitem/button.md)
+- [var button: NSStatusBarButton?](./button.md)
   The button displayed in the status bar.
-- [var menu: NSMenu?](nsstatusitem/menu.md)
+- [var menu: NSMenu?](./menu.md)
   The pull-down menu displayed when the user clicks the status item.
 
 

@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Assembly.BufferBinding
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes how a Metal buffer is bound to a compute pipeline stage.
 
@@ -12,7 +13,7 @@ Describes how a Metal buffer is bound to a compute pipeline stage.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,24 +23,24 @@ struct BufferBinding
 
 #### Overview
 
-A buffer binding pairs an [`ComputeNodeGraph.Assembly.Attachment`](computenodegraph/assembly/attachment.md) (how the buffer is connected to the graph) with an optional [`ComputeNodeGraph.StateType`](computenodegraph/statetype.md) describing the element layout of the buffer’s contents.
+A buffer binding pairs an [`ComputeNodeGraph.Assembly.Attachment`](./attachment.md) (how the buffer is connected to the graph) with an optional [`ComputeNodeGraph.StateType`](../statetype.md) describing the element layout of the buffer’s contents.
 
 ## Topics
 
 ### Initializers
-- [init(attachment: ComputeNodeGraph.Assembly.Attachment, type: ComputeNodeGraph.StateType?)](computenodegraph/assembly/bufferbinding/init(attachment:type:).md)
+- [init(attachment: ComputeNodeGraph.Assembly.Attachment, type: ComputeNodeGraph.StateType?)](./bufferbinding/init%28attachment,type%29.md)
 ### Instance Properties
-- [var attachment: ComputeNodeGraph.Assembly.Attachment](computenodegraph/assembly/bufferbinding/attachment.md)
+- [var attachment: ComputeNodeGraph.Assembly.Attachment](./bufferbinding/attachment.md)
   The attachment point that provides this buffer.
-- [var type: ComputeNodeGraph.StateType?](computenodegraph/assembly/bufferbinding/type.md)
+- [var type: ComputeNodeGraph.StateType?](./bufferbinding/type.md)
   The element type stored in the buffer, or `nil` if untyped.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

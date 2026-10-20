@@ -1,7 +1,8 @@
 # isStrictSubset(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether this set is a strict subset of the given set.
 
@@ -45,7 +46,8 @@ print(attendees.isStrictSubset(of: attendees))
 
 ## See Also
 
-- [func isStrictSuperset(of: Self) -> Bool](setalgebra/isstrictsuperset(of:).md)
+### Comparing Sets
+- [func isStrictSuperset(of: Self) -> Bool](./isstrictsuperset%28of%29.md)
   Returns a Boolean value that indicates whether this set is a strict superset of the given set.
 
 

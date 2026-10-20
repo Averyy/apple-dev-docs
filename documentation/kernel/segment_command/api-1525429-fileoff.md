@@ -1,7 +1,8 @@
 # fileoff
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Indicates the offset in this file of the data to be mapped at `vmaddr`.
 
@@ -10,7 +11,7 @@ Indicates the offset in this file of the data to be mapped at `vmaddr`.
 
 ## Declaration
 
-```swift
+```c
 uint32_t fileoff;
 ```
 

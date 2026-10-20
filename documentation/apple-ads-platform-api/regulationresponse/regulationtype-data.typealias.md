@@ -1,7 +1,8 @@
 # RegulationResponse.RegulationType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The category of regulatory disclosure this response answers.
 
@@ -10,9 +11,15 @@ The category of regulatory disclosure this response answers.
 
 ## Declaration
 
-```swift
+```
 string RegulationResponse.RegulationType
 ```
+
+## Possible Values
+
+- `CAC`: Disclosure required under CAC regulation, at the campaign level.
+- `CAMPAIGN_SAPIN_LAW`: Disclosure required under Sapin Law regulation, at the campaign level.
+- `ORG_SAPIN_LAW`: Disclosure required under Sapin Law regulation, at the organization level.
 
 #### Discussion
 

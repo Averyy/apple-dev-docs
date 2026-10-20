@@ -1,7 +1,8 @@
 # main()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides the top-level entry point for the app.
 
@@ -9,8 +10,8 @@ Provides the top-level entry point for the app.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 2.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Provides the top-level entry point for the app.
 
 #### Discussion
 
-[`UIApplicationDelegate`](uiapplicationdelegate.md) provides an implementation of the [`main()`](uiapplicationdelegate/main().md) method so that it can serve as the main entry point for a UIKit app. The system calls the [`main()`](uiapplicationdelegate/main().md) method to launch your app; you never call it yourself. You can have exactly one entry point in your app, which you mark with the `@main` attribute.
+[`UIApplicationDelegate`](../uiapplicationdelegate.md) provides an implementation of the [`main()`](./main%28%29.md) method so that it can serve as the main entry point for a UIKit app. The system calls the [`main()`](./main%28%29.md) method to launch your app; you never call it yourself. You can have exactly one entry point in your app, which you mark with the `@main` attribute.
 
 
 ---

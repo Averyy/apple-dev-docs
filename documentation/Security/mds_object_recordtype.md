@@ -1,7 +1,8 @@
 # MDS_OBJECT_RECORDTYPE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var MDS_OBJECT_RECORDTYPE: Int32 { get }
+```
+
+```c
+#define MDS_OBJECT_RECORDTYPE
 ```
 
 

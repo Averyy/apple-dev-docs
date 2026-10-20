@@ -1,7 +1,8 @@
 # sheetPresentationControllerDidChangeSelectedDetentIdentifier(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to respond after the sheet presentation controller’s selected detent changes.
 
@@ -16,11 +17,15 @@ Provides an opportunity to respond after the sheet presentation controller’s s
 optional func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController)
 ```
 
+```objc
+- (void) sheetPresentationControllerDidChangeSelectedDetentIdentifier:(UISheetPresentationController *) sheetPresentationController;
+```
+
 #### Discussion
 
 Implement this method if you want to perform changes in response to the user resizing a sheet to a new detent.
 
-The system calls this method after a sheet’s [`selectedDetentIdentifier`](uisheetpresentationcontroller/selecteddetentidentifier.md) changes in response to user interaction. The system doesn’t call this after you change [`selectedDetentIdentifier`](uisheetpresentationcontroller/selecteddetentidentifier.md) programmatically.
+The system calls this method after a sheet’s [`selectedDetentIdentifier`](../uisheetpresentationcontroller/selecteddetentidentifier.md) changes in response to user interaction. The system doesn’t call this after you change [`selectedDetentIdentifier`](../uisheetpresentationcontroller/selecteddetentidentifier.md) programmatically.
 
 ## Parameters
 

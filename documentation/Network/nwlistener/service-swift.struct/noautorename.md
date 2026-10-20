@@ -1,7 +1,8 @@
 # noAutoRename
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the service prohibits automatic renaming in the event of a name conflict.
 
@@ -22,9 +23,10 @@ var noAutoRename: Bool { get set }
 
 ## See Also
 
-- [init(name: String?, type: String, domain: String?, txtRecord: Data?)](nwlistener/service-swift.struct/init(name:type:domain:txtrecord:)-1lb30.md)
+### Defining Services
+- [init(name: String?, type: String, domain: String?, txtRecord: Data?)](./init%28name,type,domain,txtrecord%29-1lb30.md)
   Initializes a Bonjour service to advertise.
-- [init(name: String?, type: String, domain: String?, txtRecord: NWTXTRecord)](nwlistener/service-swift.struct/init(name:type:domain:txtrecord:)-8qh5.md)
+- [init(name: String?, type: String, domain: String?, txtRecord: NWTXTRecord)](./init%28name,type,domain,txtrecord%29-8qh5.md)
   Initializes a Bonjour service to advertise with a TXT record.
 
 

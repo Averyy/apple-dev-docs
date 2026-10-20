@@ -1,7 +1,8 @@
 # isApplicationRunningInDock
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the app is running in the dock.
 
@@ -14,19 +15,24 @@ A Boolean value that indicates whether the app is running in the dock.
 var isApplicationRunningInDock: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isApplicationRunningInDock;
+```
+
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) if the app is running in the dock; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property contains [`true`](../../Swift/true.md) if the app is running in the dock; otherwise, [`false`](../../Swift/false.md).
 
-Check this property (for example, in your app delegate’s [`applicationWillEnterForeground()`](wkapplicationdelegate/applicationwillenterforeground().md) method) to determine whether your app is running in the dock. You can use this information to customize your user interface in the dock.
+Check this property (for example, in your app delegate’s [`applicationWillEnterForeground()`](../wkapplicationdelegate/applicationwillenterforeground%28%29.md) method) to determine whether your app is running in the dock. You can use this information to customize your user interface in the dock.
 
 ## See Also
 
-- [var applicationState: WKApplicationState](wkapplication/applicationstate.md)
+### Managing the app state
+- [var applicationState: WKApplicationState](./applicationstate.md)
   The runtime state of the watchOS app.
-- [enum WKApplicationState](wkapplicationstate.md)
+- [enum WKApplicationState](../wkapplicationstate.md)
   The running states of the Watch app.
-- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
+- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](./schedulebackgroundrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md)
   Schedules a background task to refresh the app’s data.
 
 

@@ -1,7 +1,8 @@
 # reset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The object animates back to its initial pose relative to its parent.
 

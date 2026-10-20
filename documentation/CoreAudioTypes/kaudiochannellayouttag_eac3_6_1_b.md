@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_EAC3_6_1_B
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
 
@@ -20,6 +21,10 @@ A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
 var kAudioChannelLayoutTag_EAC3_6_1_B: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_EAC3_6_1_B
+```
+
 #### Discussion
 
 Your channel layout must be in the following order:
@@ -34,29 +39,30 @@ Your channel layout must be in the following order:
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_EAC_6_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_eac_6_0_a.md)
+### EAC3 Defined Layouts
+- [var kAudioChannelLayoutTag_EAC_6_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_eac_6_0_a.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC_7_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_eac_7_0_a.md)
+- [var kAudioChannelLayoutTag_EAC_7_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_eac_7_0_a.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_6_1_A: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_6_1_a.md)
+- [var kAudioChannelLayoutTag_EAC3_6_1_A: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_6_1_a.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_6_1_C: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_6_1_c.md)
+- [var kAudioChannelLayoutTag_EAC3_6_1_C: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_6_1_c.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_A: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_a.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_A: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_a.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_B: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_b.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_B: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_b.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_C: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_c.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_C: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_c.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_D: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_d.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_D: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_d.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_E: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_e.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_E: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_e.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_F: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_f.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_F: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_f.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_G: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_g.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_G: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_g.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
-- [var kAudioChannelLayoutTag_EAC3_7_1_H: AudioChannelLayoutTag](kaudiochannellayouttag_eac3_7_1_h.md)
+- [var kAudioChannelLayoutTag_EAC3_7_1_H: AudioChannelLayoutTag](./kaudiochannellayouttag_eac3_7_1_h.md)
   A Blu-ray Disc audio layout for Enhanced AC-3, also known as Dolby Digital Plus.
 
 

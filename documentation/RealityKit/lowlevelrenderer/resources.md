@@ -1,7 +1,8 @@
 # LowLevelRenderer.Resources
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Prepared GPU resources for a renderer.
 
@@ -20,14 +21,15 @@ struct Resources
 ## Topics
 
 ### Creating resources
-- [init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws](lowlevelrenderer/resources/init(configuration:rendercontext:).md)
+- [init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws](./resources/init%28configuration,rendercontext%29.md)
   Asynchronously compiles all shader and pipeline resources for the given configuration and render context.
 
 ## See Also
 
-- [func render(using: any MTLCommandBuffer, (inout LowLevelRenderer.RenderState) -> ())](lowlevelrenderer/render(using:_:).md)
+### Rendering a frame
+- [func render(using: any MTLCommandBuffer, (inout LowLevelRenderer.RenderState) -> ())](./render%28using,_%29.md)
   Encodes draw calls for the frame into the given command buffer using a caller-controlled render callback.
-- [LowLevelRenderer.RenderState](lowlevelrenderer/renderstate.md)
+- [LowLevelRenderer.RenderState](./renderstate.md)
   The per-frame render state passed to the `render(using:_:)` callback.
 
 

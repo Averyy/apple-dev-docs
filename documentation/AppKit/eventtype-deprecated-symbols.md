@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,9 +12,9 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated symbols
-- [NSEvent.EventType.beginGesture](nsevent/eventtype/begingesture.md)
+- [NSEvent.EventType.beginGesture](./nsevent/eventtype/begingesture.md)
   An event marking the beginning of a gesture.
-- [NSEvent.EventType.endGesture](nsevent/eventtype/endgesture.md)
+- [NSEvent.EventType.endGesture](./nsevent/eventtype/endgesture.md)
   An event that marks the end of a gesture.
 
 

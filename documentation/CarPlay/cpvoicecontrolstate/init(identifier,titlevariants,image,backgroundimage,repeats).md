@@ -1,7 +1,8 @@
 # init(identifier:titleVariants:image:backgroundImage:repeats:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a voice control state with a title and image.
 
@@ -14,6 +15,10 @@ Initialize a voice control state with a title and image.
 
 ```swift
 init(identifier: String, titleVariants: [String]?, image: UIImage?, backgroundImage: UIImage?, repeats: Bool)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier titleVariants:(NSArray<NSString *> *) titleVariants image:(UIImage *) image backgroundImage:(UIImage *) backgroundImage repeats:(BOOL) repeats;
 ```
 
 #### Discussion

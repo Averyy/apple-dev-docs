@@ -1,7 +1,8 @@
 # MLImageSize
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The width and height of an image feature size.
 
@@ -20,33 +21,38 @@ The width and height of an image feature size.
 class MLImageSize
 ```
 
+```objc
+@interface MLImageSize : NSObject
+```
+
 ## Topics
 
 ### Accessing an image size
-- [var pixelsHigh: Int](mlimagesize/pixelshigh.md)
+- [var pixelsHigh: Int](./mlimagesize/pixelshigh.md)
   The height of an image feature in pixels.
-- [var pixelsWide: Int](mlimagesize/pixelswide.md)
+- [var pixelsWide: Int](./mlimagesize/pixelswide.md)
   The width of an image feature in pixels.
 ### Initializers
-- [init?(coder: NSCoder)](mlimagesize/init(coder:).md)
+- [init?(coder: NSCoder)](./mlimagesize/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var enumeratedImageSizes: [MLImageSize]](mlimagesizeconstraint/enumeratedimagesizes.md)
+### Accessing the enumerated image sizes
+- [var enumeratedImageSizes: [MLImageSize]](./mlimagesizeconstraint/enumeratedimagesizes.md)
   An array of image sizes a model’s image feature accepts as input or produces as output.
 
 

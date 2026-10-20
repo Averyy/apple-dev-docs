@@ -1,7 +1,8 @@
 # twoPoleTwoZeroFilter(_:coefficients:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs single-precision, two-pole, two-zero recursive filtering.
 
@@ -11,7 +12,7 @@ Performs single-precision, two-pole, two-zero recursive filtering.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static func twoPoleTwoZeroFilter<U, V>(_ source: U, coefficients: (Float, Float,
 
 ## See Also
 
-- [static func twoPoleTwoZeroFilter<U>(U, coefficients: (Double, Double, Double, Double, Double)) -> [Double]](vdsp/twopoletwozerofilter(_:coefficients:)-8oaux.md)
+### Vector-to-Vector Recursive Filtering on Real Vectors
+- [static func twoPoleTwoZeroFilter<U>(U, coefficients: (Double, Double, Double, Double, Double)) -> [Double]](./twopoletwozerofilter%28_,coefficients%29-8oaux.md)
   Returns the result of double-precision, two-pole, two-zero recursive filtering.
-- [static func twoPoleTwoZeroFilter<U>(U, coefficients: (Float, Float, Float, Float, Float)) -> [Float]](vdsp/twopoletwozerofilter(_:coefficients:)-3jbcg.md)
+- [static func twoPoleTwoZeroFilter<U>(U, coefficients: (Float, Float, Float, Float, Float)) -> [Float]](./twopoletwozerofilter%28_,coefficients%29-3jbcg.md)
   Returns the result of single-precision, two-pole, two-zero recursive filtering.
-- [static func twoPoleTwoZeroFilter<U, V>(U, coefficients: (Double, Double, Double, Double, Double), result: inout V)](vdsp/twopoletwozerofilter(_:coefficients:result:)-fe5l.md)
+- [static func twoPoleTwoZeroFilter<U, V>(U, coefficients: (Double, Double, Double, Double, Double), result: inout V)](./twopoletwozerofilter%28_,coefficients,result%29-fe5l.md)
   Performs double-precision, two-pole, two-zero recursive filtering.
 
 

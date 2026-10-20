@@ -1,7 +1,8 @@
 # RCSService.Business.URIEntry.Label.sms
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 SMS label.
 
@@ -16,7 +17,8 @@ case sms
 
 ## See Also
 
-- [RCSService.Business.URIEntry.Label.serviceID](rcsservice/business/urientry/label-swift.enum/serviceid.md)
+### Determining label type
+- [RCSService.Business.URIEntry.Label.serviceID](./serviceid.md)
   Service ID label.
 
 

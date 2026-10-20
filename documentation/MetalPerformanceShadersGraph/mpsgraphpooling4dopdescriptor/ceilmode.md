@@ -1,7 +1,8 @@
 # ceilMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Affects how MPSGraph computes the output size: if set to `YES` then output size is computed by rounding up instead of down when dividing input size by stride.
 
@@ -17,6 +18,10 @@ Affects how MPSGraph computes the output size: if set to `YES` then output size 
 
 ```swift
 var ceilMode: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL ceilMode;
 ```
 
 #### Discussion

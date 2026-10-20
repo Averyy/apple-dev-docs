@@ -1,7 +1,8 @@
 # RecognizeAnimalsRequest.Animal
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An identifier for a recognizable animal.
 
@@ -23,27 +24,28 @@ enum Animal
 ## Topics
 
 ### Getting the animals
-- [RecognizeAnimalsRequest.Animal.cat](recognizeanimalsrequest/animal/cat.md)
+- [RecognizeAnimalsRequest.Animal.cat](./animal/cat.md)
   An animal identifier for cats.
-- [RecognizeAnimalsRequest.Animal.dog](recognizeanimalsrequest/animal/dog.md)
+- [RecognizeAnimalsRequest.Animal.dog](./animal/dog.md)
   An animal identifier for dogs.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var supportedAnimals: [RecognizeAnimalsRequest.Animal]](recognizeanimalsrequest/supportedanimals.md)
+### Configuring a request
+- [var supportedAnimals: [RecognizeAnimalsRequest.Animal]](./supportedanimals.md)
   The collection of animals that the request can detect.
 
 

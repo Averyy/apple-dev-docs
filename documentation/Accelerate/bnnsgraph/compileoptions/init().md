@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an allocated compilation-options object with default values.
 
@@ -11,7 +12,7 @@ Creates an allocated compilation-options object with default values.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(useSingleThread: Bool, generateDebugInfo: Bool, optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference)](bnnsgraph/compileoptions/init(usesinglethread:generatedebuginfo:optimizationpreference:).md)
+### Creating a compilation options structure
+- [init(useSingleThread: Bool, generateDebugInfo: Bool, optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference)](./init%28usesinglethread,generatedebuginfo,optimizationpreference%29.md)
   Creates an allocated compilation-options object with the specified values.
 
 

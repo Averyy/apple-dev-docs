@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the port.
 
@@ -14,13 +15,18 @@ The name of the port.
 var name: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * name;
+```
+
 #### Discussion
 
 The default behavior is to not use a name unless set.
 
 ## See Also
 
-- [var isConsole: Bool](vzvirtioconsoleportconfiguration/isconsole.md)
+### Configuring the port
+- [var isConsole: Bool](./isconsole.md)
   A Boolean value that indicates whether this port is a console.
 
 

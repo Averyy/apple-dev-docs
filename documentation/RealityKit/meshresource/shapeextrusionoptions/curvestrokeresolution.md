@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.CurveStrokeResolution
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Designates the resolution at which a smooth curve is discretized.
 
@@ -22,24 +23,25 @@ enum CurveStrokeResolution
 ## Topics
 
 ### Enumeration Cases
-- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution.uniformSegmentsPerSpan(segmentCount:)](meshresource/shapeextrusionoptions/curvestrokeresolution/uniformsegmentsperspan(segmentcount:).md)
+- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution.uniformSegmentsPerSpan(segmentCount:)](./curvestrokeresolution/uniformsegmentsperspan%28segmentcount%29.md)
   For each span of the curve, generates a uniform number of segments.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MeshResource.ShapeExtrusionOptions](meshresource/shapeextrusionoptions.md)
+### 2D path extrusion for 3D mesh creation
+- [MeshResource.ShapeExtrusionOptions](../shapeextrusionoptions.md)
   A type that determines the extrusion, chamfering, and material assignment of an extruded shape.
-- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions/materialassignment-swift.struct.md)
+- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](./materialassignment-swift.struct.md)
   A type that determines the material assignments for each part of an extruded shape.
-- [MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ChamferMode](./chamfermode-swift.enum.md)
   Determines which part of the extrusion to chamfer.
-- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum.md)
+- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](./extrusionmethod-swift.enum.md)
   The options that determine the way in which to extrude a swept shape in 3D.
 
 

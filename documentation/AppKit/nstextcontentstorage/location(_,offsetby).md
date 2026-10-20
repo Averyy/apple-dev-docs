@@ -1,7 +1,8 @@
 # location(_:offsetBy:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new text location object based on an existing location and offset you provide.
 
@@ -14,13 +15,17 @@ Returns a new text location object based on an existing location and offset you 
 func location(_ location: any NSTextLocation, offsetBy offset: Int) -> (any NSTextLocation)?
 ```
 
+```objc
+- (id<NSTextLocation>) locationFromLocation:(id<NSTextLocation>) location withOffset:(NSInteger) offset;
+```
+
 #### Return Value
 
-An [`NSTextLocation`](nstextlocation.md) object that corresponds to the new location, or `nil` if the new location exceeds the bounds of the text.
+An [`NSTextLocation`](../nstextlocation.md) object that corresponds to the new location, or `nil` if the new location exceeds the bounds of the text.
 
 #### Discussion
 
-You can get [`NSTextLocation`](nstextlocation.md) objects for the start and end of the text storage from the [`documentRange`](nstextelementprovider/documentrange.md) property of the [`NSTextElementProvider`](nstextelementprovider.md) protocol, which [`NSTextContentStorage`](nstextcontentstorage.md) implements. If you provide an [`NSTextLocation`](nstextlocation.md) object doesn’t match the type of the ones in the [`documentRange`](nstextelementprovider/documentrange.md) property, this method throws an exception.
+You can get [`NSTextLocation`](../nstextlocation.md) objects for the start and end of the text storage from the [`documentRange`](../nstextelementprovider/documentrange.md) property of the [`NSTextElementProvider`](../nstextelementprovider.md) protocol, which [`NSTextContentStorage`](../nstextcontentstorage.md) implements. If you provide an [`NSTextLocation`](../nstextlocation.md) object doesn’t match the type of the ones in the [`documentRange`](../nstextelementprovider/documentrange.md) property, this method throws an exception.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ You can get [`NSTextLocation`](nstextlocation.md) objects for the start and end 
 
 ## See Also
 
-- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](nstextcontentstorage/offset(from:to:).md)
+### Finding ranges, locations, and offsets
+- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](./offset%28from,to%29.md)
   Returns the number of characters between the specified locations.
-- [func adjustedRange(from: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?](nstextcontentstorage/adjustedrange(from:foreditingtextselection:).md)
+- [func adjustedRange(from: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?](./adjustedrange%28from,foreditingtextselection%29.md)
   Returns the text range, if any, in the backing store that required manual adjustment after editing.
 
 

@@ -1,7 +1,8 @@
 # availableKinds
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The compute unit kinds available on the current device.
 
@@ -20,7 +21,7 @@ static var availableKinds: Set<ComputeUnitKind> { get }
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 
 ---

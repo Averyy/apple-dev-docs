@@ -1,7 +1,8 @@
 # textSelectionMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interaction mode for text selection.
 
@@ -14,15 +15,20 @@ The interaction mode for text selection.
 var textSelectionMode: NSTextSelectionManager.Mode { get set }
 ```
 
+```objc
+@property NSTextSelectionMode textSelectionMode;
+```
+
 #### Discussion
 
 Determines whether text is editable, selectable only, or non-interactive. The default value is `NSTextSelectionModeEditable`.
 
 ## See Also
 
-- [NSTextSelectionManager.Mode](nstextselectionmanager/mode.md)
+### Configuring text selection
+- [NSTextSelectionManager.Mode](./mode.md)
   Values for text selection interaction modes.
-- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](nstextselectionmanager/textselectiondatasource.md)
+- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](./textselectiondatasource.md)
   The data source that provides text layout information to the selection manager.
 
 

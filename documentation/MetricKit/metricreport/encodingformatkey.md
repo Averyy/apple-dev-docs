@@ -1,7 +1,8 @@
 # encodingFormatKey
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A `CodingUserInfoKey` for selecting the JSON encoding format of a metric report.
 
@@ -19,11 +20,11 @@ static let encodingFormatKey: CodingUserInfoKey
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Set this key in a `JSONEncoder`’s `userInfo` dictionary before encoding a [`MetricReport`](metricreport.md) to control the JSON output structure:
+Set this key in a `JSONEncoder`’s `userInfo` dictionary before encoding a [`MetricReport`](../metricreport.md) to control the JSON output structure:
 
 ```swift
 let encoder = JSONEncoder()
@@ -35,11 +36,12 @@ When omitted, the encoder uses the default format.
 
 ## See Also
 
-- [let intervalEntries: [MetricReport.IntervalEntry]](metricreport/intervalentries.md)
+### Metric data
+- [let intervalEntries: [MetricReport.IntervalEntry]](./intervalentries.md)
   The interval entries in this metric report, including the full-day aggregate.
-- [let stateEntries: [MetricReport.StateEntry]](metricreport/stateentries.md)
+- [let stateEntries: [MetricReport.StateEntry]](./stateentries.md)
   The state entries in this metric report, populated when state reporting is enabled.
-- [MetricReport.EncodingFormat](metricreport/encodingformat.md)
+- [MetricReport.EncodingFormat](./encodingformat.md)
   A value that controls the JSON structure used when encoding a metric report.
 
 

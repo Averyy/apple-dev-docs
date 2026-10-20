@@ -1,7 +1,8 @@
 # resetOrder()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the column order back to the default, preserving the customized visibility and size.
 
@@ -24,7 +25,8 @@ Tables that are bound to this state will order their columns as described by the
 
 ## See Also
 
-- [subscript(visibility _: String) -> Visibility](tablecolumncustomization/subscript(visibility:).md)
+### Managing the customization
+- [subscript(visibility _: String) -> Visibility](./subscript%28visibility%29.md)
   The visibility of the column identified by its identifier.
 
 

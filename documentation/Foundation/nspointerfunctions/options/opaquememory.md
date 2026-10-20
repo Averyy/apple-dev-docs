@@ -1,7 +1,8 @@
 # opaqueMemory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Take no action when pointers are deleted.
 
@@ -20,6 +21,10 @@ Take no action when pointers are deleted.
 static var opaqueMemory: NSPointerFunctions.Options { get }
 ```
 
+```c
+NSPointerFunctionsOpaqueMemory
+```
+
 #### Discussion
 
 This is usually the preferred memory option for holding arbitrary pointers.
@@ -28,18 +33,19 @@ This is essentially a no-op relinquish function; the acquire function is only us
 
 ## See Also
 
-- [static var machVirtualMemory: NSPointerFunctions.Options](nspointerfunctions/options/machvirtualmemory.md)
+### Memory Options
+- [static var machVirtualMemory: NSPointerFunctions.Options](./machvirtualmemory.md)
   Use Mach memory.
-- [static var mallocMemory: NSPointerFunctions.Options](nspointerfunctions/options/mallocmemory.md)
+- [static var mallocMemory: NSPointerFunctions.Options](./mallocmemory.md)
   Use `free()` on removal, `calloc()` on copy in.
-- [static var strongMemory: NSPointerFunctions.Options](nspointerfunctions/options/strongmemory.md)
+- [static var strongMemory: NSPointerFunctions.Options](./strongmemory.md)
   Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
-- [static var weakMemory: NSPointerFunctions.Options](nspointerfunctions/options/weakmemory.md)
+- [static var weakMemory: NSPointerFunctions.Options](./weakmemory.md)
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
-- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
-  Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [var NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
-  Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](../../nsmaptablestrongmemory.md)
+  Equivalent to [`strongMemory`](./strongmemory.md).
+- [var NSMapTableWeakMemory: NSPointerFunctions.Options](../../nsmaptableweakmemory.md)
+  Equivalent to [`weakMemory`](./weakmemory.md).
 
 
 ---

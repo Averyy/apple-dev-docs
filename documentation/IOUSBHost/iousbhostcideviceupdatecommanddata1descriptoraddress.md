@@ -1,7 +1,8 @@
 # IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress: UInt { get }
 ```
 
+```c
+IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress
+```
+
 ## See Also
 
-- [var IOUSBHostCIDeviceUpdateCommandData1DescriptorAddressPhase: UInt](iousbhostcideviceupdatecommanddata1descriptoraddressphase.md)
+### Constants
+- [var IOUSBHostCIDeviceUpdateCommandData1DescriptorAddressPhase: UInt](./iousbhostcideviceupdatecommanddata1descriptoraddressphase.md)
 
 
 ---

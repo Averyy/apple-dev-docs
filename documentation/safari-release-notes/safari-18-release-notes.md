@@ -1,6 +1,7 @@
 # Safari 18 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 16, 2024 — 18.0 (20619.1.26)
 
@@ -91,7 +92,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 
 - Fixed treating the lack of an explicit “SameSite” attribute as “SameSite=Lax”.  (96026173)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -184,7 +185,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 
 - Fixed the properties of `History` to throw a SecurityError when not in a fully active Document.  (118750576)
 
-##### Html
+##### HTML
 
 ###### Resolved Issues
 
@@ -197,7 +198,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 
 - Removed support for JPEG2000.  (35161822)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -216,9 +217,11 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed `eval()` function from another realm to not cause a direct `eval` call.  (121546048)
 - Fixed `eval()` call with `...spread` syntaxt to be a direct call.  (121547890)
 - Fixed try/catch to not intercept errors originated in `[[Construct]]` of derived class.  (121959506)
-- Fixed several issues: - direct `eval()` in a default value expression inside a rest parameter creates a variable in the environment of the function rather than the separate one of the parameters;
-- a ReferenceError is thrown when accessing a binding, which is defined inside rest parameter, in `eval()`, or a closure created in a default value expression of a preceding parameter, but only if there is a `var` binding by the same name;
-- a closure, created in the default value expression inside a rest parameter, is created in a different VariableEnvironment of the function than its counterparts in preceding parameters which causes the incorrect environment to be consulted when querying or modifying parameter names that are “shadowed” by `var` bindings.  (121961421)
+- Fixed several issues:
+
+  - direct `eval()` in a default value expression inside a rest parameter creates a variable in the environment of the function rather than the separate one of the parameters;
+  - a ReferenceError is thrown when accessing a binding, which is defined inside rest parameter, in `eval()`, or a closure created in a default value expression of a preceding parameter, but only if there is a `var` binding by the same name;
+  - a closure, created in the default value expression inside a rest parameter, is created in a different VariableEnvironment of the function than its counterparts in preceding parameters which causes the incorrect environment to be consulted when querying or modifying parameter names that are “shadowed” by `var` bindings.  (121961421)
 - Fixed TypedArray sorting methods to have a special-case for camparator returning `false`.  (122093956)
 - Fixed programming style for bitwise and in setExpectionPorts.  (122138733)
 - Fixed `emitReturn()` to load `this` value from arrow function lexical environment prior to the TDZ check.  (122430056)
@@ -285,7 +288,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed loading WebArchives with a non-persistent datastore.  (122290562)
 - Fixed `Timing-Allow-Origin` to not apply to an HTTP 302 response.  (126531139)
 
-##### Pdf
+##### PDF
 
 ###### Resolved Issues
 
@@ -350,7 +353,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 
 - Removed support for AppCache.  (113343269)
 
-##### Svg
+##### SVG
 
 ###### Resolved Issues
 
@@ -382,7 +385,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed updating an animation when changing the value of a `transform` property while that property is animated with an implicit keyframe.  (126126617)
 - Fixed `display` transition to `none`.  (130857338)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -489,24 +492,26 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed Gamepad API in WKWebView.  (123310472)
 - Fixed repainting HTML elements when their width or height change in legacy WebView.  (124564409)
 
-##### Webdriver
+##### WebDriver
 
 ###### Resolved Issues
 
 - Fixed retrieving titles containing multibyte characters.  (123987149)
 
-##### Webgl
+##### WebGL
 
 ###### New Features
 
-- Enabled support for the following approved extensions: - `EXT_texture_mirror_clamp_to_edge`
-- `WEBGL_render_shared_exponent`
-- `WEBGL_stencil_texturing`
-- `EXT_render_snorm`
-- `OES_sample_variables`
-- `OES_shader_multisample_interpolation` (121835897)  (126863775)
+- Enabled support for the following approved extensions:
 
-##### Webrtc
+  - `EXT_texture_mirror_clamp_to_edge`
+  - `WEBGL_render_shared_exponent`
+  - `WEBGL_stencil_texturing`
+  - `EXT_render_snorm`
+  - `OES_sample_variables`
+  - `OES_shader_multisample_interpolation` (121835897)  (126863775)
+
+##### WebRTC
 
 ###### New Features
 
@@ -521,17 +526,19 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed black stripes with screen sharing windows.  (123492622)
 - Fixed black stripes with getDisplayMedia captured windows when the window is resized.  (124131045)
 
-##### Webview
+##### WebView
 
 ###### Deprecations
 
-- Deprecated some legacy WebKit notification names including: - `WebViewDidBeginEditingNotification`
-- `WebViewDidChangeNotification`
-- `WebViewDidEndEditingNotification`
-- `WebViewDidChangeTypingStyleNotification`
-- `WebViewDidChangeSelectionNotification`  (130033164)
+- Deprecated some legacy WebKit notification names including:
 
-##### Webxr
+  - `WebViewDidBeginEditingNotification`
+  - `WebViewDidChangeNotification`
+  - `WebViewDidEndEditingNotification`
+  - `WebViewDidChangeTypingStyleNotification`
+  - `WebViewDidChangeSelectionNotification`  (130033164)
+
+##### WebXR
 
 ###### New Features
 
@@ -539,19 +546,20 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 
 ## See Also
 
-- [Safari 18.6 Release Notes](safari-18_6-release-notes.md)
+### Version 18
+- [Safari 18.6 Release Notes](./safari-18_6-release-notes.md)
   Released July 29, 2025 — 18.6 (20621.3.11)
-- [Safari 18.5 Release Notes](safari-18_5-release-notes.md)
+- [Safari 18.5 Release Notes](./safari-18_5-release-notes.md)
   Released May 12, 2025 — 18.5 (20621.2.5)
-- [Safari 18.4 Release Notes](safari-18_4-release-notes.md)
+- [Safari 18.4 Release Notes](./safari-18_4-release-notes.md)
   Released March 31, 2025 — 18.4 (20621.1.15)
-- [Safari 18.3 Release Notes](safari-18_3-release-notes.md)
+- [Safari 18.3 Release Notes](./safari-18_3-release-notes.md)
   Released January 27, 2025 — 18.3 (20620.2.4)
-- [Safari 18.2 Release Notes](safari-18_2-release-notes.md)
+- [Safari 18.2 Release Notes](./safari-18_2-release-notes.md)
   Released December 11, 2024 — 18.2 (20620.1.16)
-- [Safari 18.1 Release Notes](safari-18_1-release-notes.md)
+- [Safari 18.1 Release Notes](./safari-18_1-release-notes.md)
   Released October 28, 2024 — 18.1 (20619.2.8)
-- [Safari 18.0.1 Release Notes](safari-18_0_1-release-notes.md)
+- [Safari 18.0.1 Release Notes](./safari-18_0_1-release-notes.md)
   Released October 3, 2024 — 18.0.1 (20619.1.26.30)
 
 

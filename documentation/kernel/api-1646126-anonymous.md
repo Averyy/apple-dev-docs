@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSPlusAttrExtents](1646126-anonymous/khfsplusattrextents.md)
-- [kHFSPlusAttrForkData](1646126-anonymous/khfsplusattrforkdata.md)
-- [kHFSPlusAttrInlineData](1646126-anonymous/khfsplusattrinlinedata.md)
+- [kHFSPlusAttrExtents](./api-1646126-anonymous/khfsplusattrextents.md)
+- [kHFSPlusAttrForkData](./api-1646126-anonymous/khfsplusattrforkdata.md)
+- [kHFSPlusAttrInlineData](./api-1646126-anonymous/khfsplusattrinlinedata.md)
 
 
 ---

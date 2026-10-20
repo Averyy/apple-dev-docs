@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the receiver contains the specified date.
 
@@ -20,9 +21,13 @@ Indicates whether the receiver contains the specified date.
 func contains(_ date: Date) -> Bool
 ```
 
+```objc
+- (BOOL) containsDate:(NSDate *) date;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver contains `date`. Otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver contains `date`. Otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 

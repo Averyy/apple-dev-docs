@@ -1,7 +1,8 @@
 # canceled
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The deletion was canceled.
 
@@ -18,13 +19,18 @@ The deletion was canceled.
 static let canceled: ICDeleteError
 ```
 
+```c
+extern ICDeleteError const ICDeleteErrorCanceled;
+```
+
 ## See Also
 
-- [static let deviceMissing: ICDeleteError](icdeleteerror/devicemissing.md)
+### Reading a Deletion Error
+- [static let deviceMissing: ICDeleteError](./devicemissing.md)
   The deletion failed because the device could not be found.
-- [static let fileMissing: ICDeleteError](icdeleteerror/filemissing.md)
+- [static let fileMissing: ICDeleteError](./filemissing.md)
   The deletion failed because the file could not be found.
-- [static let readOnly: ICDeleteError](icdeleteerror/readonly.md)
+- [static let readOnly: ICDeleteError](./readonly.md)
   The deletion failed because the file had read-only permissions.
 
 

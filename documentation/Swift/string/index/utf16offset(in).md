@@ -1,7 +1,8 @@
 # utf16Offset(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The UTF-16 code unit offset corresponding to this index.
 

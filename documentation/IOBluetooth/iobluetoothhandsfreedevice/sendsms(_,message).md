@@ -1,7 +1,8 @@
 # sendSMS(_:message:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a text message to a phone number.
 
@@ -14,6 +15,10 @@ Sends a text message to a phone number.
 func sendSMS(_ aNumber: String!, message aMessage: String!)
 ```
 
+```objc
+- (void) sendSMS:(NSString *) aNumber message:(NSString *) aMessage;
+```
+
 ## Parameters
 
 - `aNumber`: The phone number to send the message to.
@@ -21,11 +26,12 @@ func sendSMS(_ aNumber: String!, message aMessage: String!)
 
 ## See Also
 
-- [func sendDTMF(String!)](iobluetoothhandsfreedevice/senddtmf(_:).md)
+### Sending Messages and Commands
+- [func sendDTMF(String!)](./senddtmf%28_%29.md)
   Sends the tone associated with a phone key to the hands-free Bluetooth device.
-- [func send(atCommand: String!)](iobluetoothhandsfreedevice/send(atcommand:).md)
+- [func send(atCommand: String!)](./send%28atcommand%29.md)
   Sends an AT command to the Bluetooth audio gateway.
-- [func send(atCommand: String!, timeout: Float, selector: Selector!, target: Any!)](iobluetoothhandsfreedevice/send(atcommand:timeout:selector:target:).md)
+- [func send(atCommand: String!, timeout: Float, selector: Selector!, target: Any!)](./send%28atcommand,timeout,selector,target%29.md)
   Send an AT command to the Bluetooth audio gateway and performs a selector on completion or timeout.
 
 

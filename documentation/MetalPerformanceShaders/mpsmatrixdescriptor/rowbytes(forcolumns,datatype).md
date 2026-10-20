@@ -1,7 +1,8 @@
 # rowBytes(forColumns:dataType:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 class func rowBytes(forColumns columns: Int, dataType: MPSDataType) -> Int
 ```
 
+```objc
++ (size_t) rowBytesForColumns:(NSUInteger) columns dataType:(MPSDataType) dataType;
+```
+
 ## See Also
 
-- [convenience init(dimensions: Int, columns: Int, rowBytes: Int, dataType: MPSDataType)](mpsmatrixdescriptor/init(dimensions:columns:rowbytes:datatype:).md)
+### Methods
+- [convenience init(dimensions: Int, columns: Int, rowBytes: Int, dataType: MPSDataType)](./init%28dimensions,columns,rowbytes,datatype%29.md)
   Creates a matrix descriptor with the specified dimensions and data type.
-- [class func rowBytes(fromColumns: Int, dataType: MPSDataType) -> Int](mpsmatrixdescriptor/rowbytes(fromcolumns:datatype:).md)
+- [class func rowBytes(fromColumns: Int, dataType: MPSDataType) -> Int](./rowbytes%28fromcolumns,datatype%29.md)
   Determines the recommended matrix row stride, in bytes, for a given number of columns.
 
 

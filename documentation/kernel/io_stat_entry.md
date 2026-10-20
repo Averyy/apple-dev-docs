@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct io_stat_entry {
     ...
 };
@@ -17,8 +17,8 @@ struct io_stat_entry {
 ## Topics
 
 ### Instance Properties
-- [count](io_stat_entry/1579055-count.md)
-- [size](io_stat_entry/1579077-size.md)
+- [count](./io_stat_entry/api-1579055-count.md)
+- [size](./io_stat_entry/api-1579077-size.md)
 
 
 ---

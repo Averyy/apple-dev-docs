@@ -1,7 +1,8 @@
 # Hybrid
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A satellite image of the area with road and road name layers on top.
 
@@ -10,17 +11,18 @@ A satellite image of the area with road and road name layers on top.
 
 ## Declaration
 
-```swift
+```
 readonly Hybrid: "hybrid";
 ```
 
 ## See Also
 
-- [MutedStandard](maptype/mutedstandard.md)
+### Map type values
+- [MutedStandard](./mutedstandard.md)
   A street map that emphasizes your data over the underlying map details.
-- [Satellite](maptype/satellite.md)
+- [Satellite](./satellite.md)
   A satellite image of the area.
-- [Standard](maptype/standard.md)
+- [Standard](./standard.md)
   A street map that shows the position of all roads and some road names.
 
 

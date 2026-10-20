@@ -1,7 +1,8 @@
 # getLineFragmentInsertionPoints(forCharacterAt:alternatePositions:inDisplayOrder:positions:characterIndexes:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns insertion points in bulk for a specified line fragment.
 
@@ -9,13 +10,17 @@ Returns insertion points in bulk for a specified line fragment.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func getLineFragmentInsertionPoints(forCharacterAt charIndex: Int, alternatePositions aFlag: Bool, inDisplayOrder dFlag: Bool, positions: UnsafeMutablePointer<CGFloat>?, characterIndexes charIndexes: UnsafeMutablePointer<Int>?) -> Int
+```
+
+```objc
+- (NSUInteger) getLineFragmentInsertionPointsForCharacterAtIndex:(NSUInteger) charIndex alternatePositions:(BOOL) aFlag inDisplayOrder:(BOOL) dFlag positions:(CGFloat *) positions characterIndexes:(NSUInteger *) charIndexes;
 ```
 
 #### Return Value
@@ -29,42 +34,44 @@ The method allows clients to obtain all insertion points for a line fragment in 
 ## Parameters
 
 - `charIndex`: The character index of one character within the line fragment.
-- `aFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), returns alternate, rather than primary, insertion points.
-- `dFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), returns insertion points in display, rather than logical, order.
+- `aFlag`: If [`true`](../../Swift/true.md), returns alternate, rather than primary, insertion points.
+- `dFlag`: If [`true`](../../Swift/true.md), returns insertion points in display, rather than logical, order.
 - `positions`: On output, the positions of the insertion points, in the order specified.
 - `charIndexes`: On output, the indexes of the characters corresponding to the returned insertion points.
 
 ## See Also
 
-- [func rectArray(forCharacterRange: NSRange, withinSelectedCharacterRange: NSRange, in: NSTextContainer, rectCount: UnsafeMutablePointer<Int>) -> NSRectArray?](../appkit/nslayoutmanager/rectarray(forcharacterrange:withinselectedcharacterrange:in:rectcount:).md)
+### Related Documentation
+- [func rectArray(forCharacterRange: NSRange, withinSelectedCharacterRange: NSRange, in: NSTextContainer, rectCount: UnsafeMutablePointer<Int>) -> NSRectArray?](../../AppKit/nslayoutmanager/rectarray%28forcharacterrange,withinselectedcharacterrange,in,rectcount%29.md)
   Returns an array of rectangles and, by reference, the number of such rectangles, that define the region in the given container enclosing the given character range.
-- [func rectArray(forGlyphRange: NSRange, withinSelectedGlyphRange: NSRange, in: NSTextContainer, rectCount: UnsafeMutablePointer<Int>) -> NSRectArray?](../appkit/nslayoutmanager/rectarray(forglyphrange:withinselectedglyphrange:in:rectcount:).md)
+- [func rectArray(forGlyphRange: NSRange, withinSelectedGlyphRange: NSRange, in: NSTextContainer, rectCount: UnsafeMutablePointer<Int>) -> NSRectArray?](../../AppKit/nslayoutmanager/rectarray%28forglyphrange,withinselectedglyphrange,in,rectcount%29.md)
   Returns an array of rectangles and, by reference, the number of such rectangles, that define the region in the given container enclosing the given glyph range.
-- [func boundingRect(forGlyphRange: NSRange, in: NSTextContainer) -> CGRect](nslayoutmanager/boundingrect(forglyphrange:in:).md)
+### Performing advanced layout queries
+- [func boundingRect(forGlyphRange: NSRange, in: NSTextContainer) -> CGRect](./boundingrect%28forglyphrange,in%29.md)
   Returns the bounding rectangle for the specified glyphs in a container.
-- [func characterIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceBetweenInsertionPoints: UnsafeMutablePointer<CGFloat>?) -> Int](nslayoutmanager/characterindex(for:in:fractionofdistancebetweeninsertionpoints:).md)
+- [func characterIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceBetweenInsertionPoints: UnsafeMutablePointer<CGFloat>?) -> Int](./characterindex%28for,in,fractionofdistancebetweeninsertionpoints%29.md)
   Returns the index of the character that lies beneath the specified point using the specified container’s coordinate system.
-- [func characterRange(forGlyphRange: NSRange, actualGlyphRange: NSRangePointer?) -> NSRange](nslayoutmanager/characterrange(forglyphrange:actualglyphrange:).md)
+- [func characterRange(forGlyphRange: NSRange, actualGlyphRange: NSRangePointer?) -> NSRange](./characterrange%28forglyphrange,actualglyphrange%29.md)
   Returns the range of characters that correspond to the glyphs in the specified glyph range.
-- [func enumerateEnclosingRects(forGlyphRange: NSRange, withinSelectedGlyphRange: NSRange, in: NSTextContainer, using: (CGRect, UnsafeMutablePointer<ObjCBool>) -> Void)](nslayoutmanager/enumerateenclosingrects(forglyphrange:withinselectedglyphrange:in:using:).md)
+- [func enumerateEnclosingRects(forGlyphRange: NSRange, withinSelectedGlyphRange: NSRange, in: NSTextContainer, using: (CGRect, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateenclosingrects%28forglyphrange,withinselectedglyphrange,in,using%29.md)
   Enumerates enclosing rectangles for the specified glyph range in a text container.
-- [func enumerateLineFragments(forGlyphRange: NSRange, using: (CGRect, CGRect, NSTextContainer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nslayoutmanager/enumeratelinefragments(forglyphrange:using:).md)
+- [func enumerateLineFragments(forGlyphRange: NSRange, using: (CGRect, CGRect, NSTextContainer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratelinefragments%28forglyphrange,using%29.md)
   Enumerates line fragments intersecting with the specified glyph range.
-- [func fractionOfDistanceThroughGlyph(for: CGPoint, in: NSTextContainer) -> CGFloat](nslayoutmanager/fractionofdistancethroughglyph(for:in:).md)
+- [func fractionOfDistanceThroughGlyph(for: CGPoint, in: NSTextContainer) -> CGFloat](./fractionofdistancethroughglyph%28for,in%29.md)
   Returns the fraction of the distance between the glyph at the specified point and the next glyph.
-- [func glyphIndex(for: CGPoint, in: NSTextContainer) -> Int](nslayoutmanager/glyphindex(for:in:).md)
+- [func glyphIndex(for: CGPoint, in: NSTextContainer) -> Int](./glyphindex%28for,in%29.md)
   Returns the index of the glyph at the specified location in a text container.
-- [func glyphIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceThroughGlyph: UnsafeMutablePointer<CGFloat>?) -> Int](nslayoutmanager/glyphindex(for:in:fractionofdistancethroughglyph:).md)
+- [func glyphIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceThroughGlyph: UnsafeMutablePointer<CGFloat>?) -> Int](./glyphindex%28for,in,fractionofdistancethroughglyph%29.md)
   Returns the index of the glyph at the specified point using the container’s coordinate system.
-- [func glyphRange(forBoundingRect: CGRect, in: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(forboundingrect:in:).md)
+- [func glyphRange(forBoundingRect: CGRect, in: NSTextContainer) -> NSRange](./glyphrange%28forboundingrect,in%29.md)
   Returns the smallest contiguous range for glyphs lying wholly or partially within the specified rectangle of the text container.
-- [func glyphRange(forBoundingRectWithoutAdditionalLayout: CGRect, in: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(forboundingrectwithoutadditionallayout:in:).md)
+- [func glyphRange(forBoundingRectWithoutAdditionalLayout: CGRect, in: NSTextContainer) -> NSRange](./glyphrange%28forboundingrectwithoutadditionallayout,in%29.md)
   Returns the smallest contiguous range for glyphs lying wholly or partially within the specified rectangle of the text container.
-- [func glyphRange(for: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(for:).md)
+- [func glyphRange(for: NSTextContainer) -> NSRange](./glyphrange%28for%29.md)
   Returns the range of glyphs lying within the specified text container.
-- [func glyphRange(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?) -> NSRange](nslayoutmanager/glyphrange(forcharacterrange:actualcharacterrange:).md)
+- [func glyphRange(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?) -> NSRange](./glyphrange%28forcharacterrange,actualcharacterrange%29.md)
   Returns the range of glyphs that the specified range of characters generates.
-- [func range(ofNominallySpacedGlyphsContaining: Int) -> NSRange](nslayoutmanager/range(ofnominallyspacedglyphscontaining:).md)
+- [func range(ofNominallySpacedGlyphsContaining: Int) -> NSRange](./range%28ofnominallyspacedglyphscontaining%29.md)
   Returns the range of displayable glyphs that surround the glyph at the specified index.
 
 

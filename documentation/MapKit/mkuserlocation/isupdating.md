@@ -1,7 +1,8 @@
 # isUpdating
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map view is updating the user’s location.
 
@@ -19,11 +20,16 @@ A Boolean value that indicates whether the map view is updating the user’s loc
 var isUpdating: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isUpdating) BOOL updating;
+```
+
 ## See Also
 
-- [var location: CLLocation?](mkuserlocation/location.md)
+### Determining the user’s location
+- [var location: CLLocation?](./location.md)
   The location of the device.
-- [var heading: CLHeading?](mkuserlocation/heading.md)
+- [var heading: CLHeading?](./heading.md)
   The heading of the user’s location.
 
 

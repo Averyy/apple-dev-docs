@@ -1,7 +1,8 @@
 # UIDesignRequiresCompatibility
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 
@@ -11,9 +12,10 @@ A Boolean value that indicates whether the system runs the app using a compatibi
 - macOS 26.0+
 - tvOS 26.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `UIDesignRequiresCompatibility`
+- **Type**: boolean
 
 #### Discussion
 
@@ -27,25 +29,26 @@ The system ignores this key when you build for iOS 27 or later, iPadOS 27 or lat
 
 ## See Also
 
-- [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
+### Styling
+- [UIUserInterfaceStyle](./uiuserinterfacestyle.md)
   The user interface style for the app.
-- [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)
+- [UIViewEdgeAntialiasing](./uiviewedgeantialiasing.md)
   A Boolean value that indicates whether Core Animation layers use antialiasing when drawing a layer that isn’t aligned to pixel boundaries.
-- [UIWhitePointAdaptivityStyle](information-property-list/uiwhitepointadaptivitystyle.md)
+- [UIWhitePointAdaptivityStyle](./uiwhitepointadaptivitystyle.md)
   The app’s white-point adaptivity style, enabled on devices with True Tone displays.
-- [UIViewGroupOpacity](information-property-list/uiviewgroupopacity.md)
+- [UIViewGroupOpacity](./uiviewgroupopacity.md)
   A Boolean value that indicates whether Core Animation sublayers inherit the opacity of their superlayer.
-- [UIRequiresFullScreenIgnoredStartingWithVersion](information-property-list/uirequiresfullscreenignoredstartingwithversion.md)
+- [UIRequiresFullScreenIgnoredStartingWithVersion](./uirequiresfullscreenignoredstartingwithversion.md)
   A string value that specifies a system version after which the system ignores the requires full screen key.
-- [UISupportsAssistiveAccess](information-property-list/uisupportsassistiveaccess.md)
+- [UISupportsAssistiveAccess](./uisupportsassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app supports Assistive Access.
-- [UISupportsFullScreenInAssistiveAccess](information-property-list/uisupportsfullscreeninassistiveaccess.md)
+- [UISupportsFullScreenInAssistiveAccess](./uisupportsfullscreeninassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.
-- [NSPrefersDisplaySafeAreaCompatibilityMode](information-property-list/nsprefersdisplaysafeareacompatibilitymode.md)
+- [NSPrefersDisplaySafeAreaCompatibilityMode](./nsprefersdisplaysafeareacompatibilitymode.md)
   A Boolean value that indicates whether the app prefers to run in compatibility mode when necessary.
-- [NSAccentColorName](information-property-list/nsaccentcolorname.md)
+- [NSAccentColorName](./nsaccentcolorname.md)
   The name of a color in an asset catalog to use for a target’s global accent color.
-- [NSWidgetBackgroundColorName](information-property-list/nswidgetbackgroundcolorname.md)
+- [NSWidgetBackgroundColorName](./nswidgetbackgroundcolorname.md)
   The name of a color in an asset catalog to use for a widget’s configuration interface.
 
 

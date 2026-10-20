@@ -1,14 +1,15 @@
 # EMBEDDED_PANIC_HEADER_FLAG_COMPRESS_FAILED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_PANIC_HEADER_FLAG_COMPRESS_FAILED
 ```
 

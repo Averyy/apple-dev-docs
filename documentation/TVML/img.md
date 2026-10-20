@@ -15,56 +15,57 @@ The `img` element contains a link to an image that is to be displayed. This elem
 </lockup>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`background`](background.md)
-- [`lockup`](lockup.md)
-- [`organizer`](organizer.md)
+- [background](./background.md)
+- [lockup](./lockup.md)
+- [organizer](./organizer.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [border-radius](border-radius.md)
+- [border-radius](./border-radius.md)
   Changes the shape of an element’s corner.
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [tv-placeholder](tv-placeholder.md)
+- [tv-placeholder](./tv-placeholder.md)
   Sets a default image for an `img` or `monogram` element.
-- [width](image-attributes-width.md)
+- [width](./image-attributes-width.md)
   Specifies the maximum width for an image element.
 ### Valid TVML Attributes
-- [accessibilityText](accessibilitytext.md)
+- [accessibilityText](./accessibilitytext.md)
   Adds hidden text to an element that is used when VoiceOver is enabled.
-- [aspectFill](aspectfill.md)
+- [aspectFill](./aspectfill.md)
   Stretches an image to fill the containing bounding box.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [contentsMode](contentsmode.md)
+- [contentsMode](./contentsmode.md)
   Specifies how an image is expanded to fill its containing element.
-- [height](image-attributes-height.md)
+- [height](./image-attributes-height.md)
   Specifies the maximum height for an image.
-- [opaque](opaque.md)
+- [opaque](./opaque.md)
   Indicates whether an image has a transparent background.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [src](src.md)
+- [src](./src.md)
   Specifies the URL for an image.
-- [srcset](srcset.md)
+- [srcset](./srcset.md)
   Specifies multiple URLs for an image.
-- [width](image-attributes-width.md)
+- [width](./image-attributes-width.md)
   Specifies the maximum width for an image element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [decorationImage](decorationimage.md)
+### Image Elements
+- [decorationImage](./decorationimage.md)
   Displays images inside of other elements.
-- [fullscreenImg](fullscreenimg.md)
+- [fullscreenImg](./fullscreenimg.md)
   Displays an image over an entire element.
-- [heroImg](heroimg.md)
+- [heroImg](./heroimg.md)
   Displays an image that is usually large and detailed.
 
 

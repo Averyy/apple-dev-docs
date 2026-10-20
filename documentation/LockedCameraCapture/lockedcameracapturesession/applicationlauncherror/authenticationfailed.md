@@ -1,7 +1,8 @@
 # LockedCameraCaptureSession.ApplicationLaunchError.authenticationFailed
 
 **Framework**: LockedCameraCapture  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that the launch failed because authentication failed and the device is locked.
 

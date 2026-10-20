@@ -1,7 +1,8 @@
 # partners
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The partners associated with this item.
 

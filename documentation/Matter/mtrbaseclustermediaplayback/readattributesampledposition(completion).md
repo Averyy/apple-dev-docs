@@ -1,7 +1,8 @@
 # readAttributeSampledPosition(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSampledPosition(completion: @escaping @Sendable (MTRMediaPlaybackClusterPlaybackPositionStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSampledPosition() async throws -> MTRMediaPlaybackClusterPlaybackPositionStruct
+```
+
+```objc
+- (void) readAttributeSampledPositionWithCompletion:(void (^)(MTRMediaPlaybackClusterPlaybackPositionStruct *value, NSError *error)) completion;
 ```
 
 

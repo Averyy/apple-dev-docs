@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Security Interface  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.3+
@@ -14,7 +15,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](sfauthorizationviewstate/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
 
 
 ---

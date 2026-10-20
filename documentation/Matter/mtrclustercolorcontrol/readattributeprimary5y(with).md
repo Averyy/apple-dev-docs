@@ -1,7 +1,8 @@
 # readAttributePrimary5Y(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributePrimary5Y(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributePrimary5YWithParams:(MTRReadParams *) params;
 ```
 
 

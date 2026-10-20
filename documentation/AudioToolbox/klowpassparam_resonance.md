@@ -1,15 +1,16 @@
 # kLowPassParam_Resonance
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kLowPassParam_Resonance: AudioUnitParameterID { get }
 ```
 
+```c
+kLowPassParam_Resonance
+```
+
 ## See Also
 
-- [var kLowPassParam_CutoffFrequency: AudioUnitParameterID](klowpassparam_cutofffrequency.md)
+### Constants
+- [var kLowPassParam_CutoffFrequency: AudioUnitParameterID](./klowpassparam_cutofffrequency.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # start(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func start(with params: MTROperationalStateClusterStartParams?, completion: @escaping @Sendable (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func start(with params: MTROperationalStateClusterStartParams?) async throws -> MTROperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) startWithParams:(MTROperationalStateClusterStartParams *) params completion:(void (^)(MTROperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 

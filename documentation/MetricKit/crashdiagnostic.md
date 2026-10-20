@@ -1,7 +1,8 @@
 # CrashDiagnostic
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A diagnostic report that describes a crash that occurred.
 
@@ -20,13 +21,13 @@ struct CrashDiagnostic
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-This carries a [`CallStackTree`](callstacktree.md) along with crash-specific metadata including the exception type, exception code, signal, and optional Objective-C exception reason.
+This carries a [`CallStackTree`](./callstacktree.md) along with crash-specific metadata including the exception type, exception code, signal, and optional Objective-C exception reason.
 
-Use [`terminationCategory`](crashdiagnostic/terminationcategory-swift.property.md) to correlate this crash with the aggregate termination counts in [`ForegroundTerminationMetric`](foregroundterminationmetric.md) and [`BackgroundTerminationMetric`](backgroundterminationmetric.md):
+Use [`terminationCategory`](./crashdiagnostic/terminationcategory-swift.property.md) to correlate this crash with the aggregate termination counts in [`ForegroundTerminationMetric`](./foregroundterminationmetric.md) and [`BackgroundTerminationMetric`](./backgroundterminationmetric.md):
 
 ```swift
 if let category = diagnostic.terminationCategory {
@@ -44,47 +45,48 @@ if let category = diagnostic.terminationCategory {
 ## Topics
 
 ### Call stack
-- [let callStackTree: CallStackTree](crashdiagnostic/callstacktree.md)
+- [let callStackTree: CallStackTree](./crashdiagnostic/callstacktree.md)
   The application call stack tree associated with this crash.
 ### Exception details
-- [let exceptionType: Int?](crashdiagnostic/exceptiontype.md)
+- [let exceptionType: Int?](./crashdiagnostic/exceptiontype.md)
   The name of the Mach exception that terminated the app.
-- [let exceptionCode: UInt64?](crashdiagnostic/exceptioncode.md)
+- [let exceptionCode: UInt64?](./crashdiagnostic/exceptioncode.md)
   Processor specific information about the exception.
-- [let signal: Int?](crashdiagnostic/signal.md)
+- [let signal: Int?](./crashdiagnostic/signal.md)
   The signal associated with this crash.
-- [let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?](crashdiagnostic/exceptionreason.md)
+- [let exceptionReason: CrashDiagnostic.ObjectiveCExceptionReason?](./crashdiagnostic/exceptionreason.md)
   The exception reason for an uncaught ObjC exception.
-- [let virtualMemoryRegionInfo: String?](crashdiagnostic/virtualmemoryregioninfo.md)
+- [let virtualMemoryRegionInfo: String?](./crashdiagnostic/virtualmemoryregioninfo.md)
   Details about memory that the app incorrectly accessed.
 ### Termination counts
-- [let terminationCategory: CrashDiagnostic.TerminationCategory?](crashdiagnostic/terminationcategory-swift.property.md)
+- [let terminationCategory: CrashDiagnostic.TerminationCategory?](./crashdiagnostic/terminationcategory-swift.property.md)
   The category of termination that caused this crash.
-- [let terminationReason: CrashDiagnostic.TerminationReason?](crashdiagnostic/terminationreason-swift.property.md)
+- [let terminationReason: CrashDiagnostic.TerminationReason?](./crashdiagnostic/terminationreason-swift.property.md)
   The reason the app was terminated as a human-readable string.
 ### Structures
-- [CrashDiagnostic.ObjectiveCExceptionReason](crashdiagnostic/objectivecexceptionreason.md)
+- [CrashDiagnostic.ObjectiveCExceptionReason](./crashdiagnostic/objectivecexceptionreason.md)
   Detailed information about an uncaught Objective-C exception that caused a crash.
-- [CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct.md)
+- [CrashDiagnostic.TerminationCategory](./crashdiagnostic/terminationcategory-swift.struct.md)
   A value that describes the category of termination that caused a crash.
-- [CrashDiagnostic.TerminationReason](crashdiagnostic/terminationreason-swift.struct.md)
+- [CrashDiagnostic.TerminationReason](./crashdiagnostic/terminationreason-swift.struct.md)
   A value that describes the reason the app terminated.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HangDiagnostic](hangdiagnostic.md)
+### Crash and hang diagnostics
+- [struct HangDiagnostic](./hangdiagnostic.md)
   A diagnostic for an app that was too busy to handle user input responsively.
-- [struct AppLaunchDiagnostic](applaunchdiagnostic.md)
+- [struct AppLaunchDiagnostic](./applaunchdiagnostic.md)
   A diagnostic report for an app launch.
 
 

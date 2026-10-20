@@ -1,7 +1,8 @@
 # init(compileFromPath:functionName:options:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Synchronously returns a new context that wraps a graph object which represents the compiled `.mlmodelc` file.
 
@@ -22,9 +23,9 @@ init(compileFromPath path: String, functionName: String? = nil, options: BNNSGra
 
 #### Discussion
 
-> **Note**: `BNNSGraphCompileFromFile`
+> **See Also**: `BNNSGraphCompileFromFile`
 
-> **Note**: `BNNSGraphContextMake`
+> **See Also**: `BNNSGraphContextMake`
 
 ## Parameters
 

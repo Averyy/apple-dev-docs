@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct InitElement {
    IOPhysicalAddress start;
    IOPhysicalLength length;
@@ -16,11 +16,11 @@ struct InitElement {
 ## Topics
 
 ### Fields
-- [start](iodevicememory/initelement/start.md)
+- [start](./initelement/start.md)
   First physical address in the range.
-- [length](iodevicememory/initelement/length.md)
+- [length](./initelement/length.md)
   Length of the range.
-- [tag](iodevicememory/initelement/tag.md)
+- [tag](./initelement/tag.md)
   32-bit value not interpreted by IODeviceMemory or IOMemoryDescriptor, for use by the bus family.
 
 

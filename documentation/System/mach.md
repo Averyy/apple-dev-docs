@@ -1,7 +1,8 @@
 # Mach
 
 **Framework**: System  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -22,24 +23,24 @@ enum Mach
 ## Topics
 
 ### Structures
-- [struct Port](mach/port.md)
-- [struct ReceiveRight](mach/receiveright.md)
+- [struct Port](./mach/port.md)
+- [struct ReceiveRight](./mach/receiveright.md)
   The MachPortRight type used to manage a receive right.
-- [struct SendOnceRight](mach/sendonceright.md)
+- [struct SendOnceRight](./mach/sendonceright.md)
   The MachPortRight type used to manage a send-once right.
-- [struct SendRight](mach/sendright.md)
+- [struct SendRight](./mach/sendright.md)
   The MachPortRight type used to manage a send right.
 ### Enumerations
-- [Mach.PortRightError](mach/portrighterror.md)
+- [Mach.PortRightError](./mach/portrighterror.md)
   Possible errors that can be thrown by Mach.Port operations.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

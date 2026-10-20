@@ -1,7 +1,8 @@
 # USDPrim.ListPosition.frontOfPrependList
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert at the front of the prepend list, making this the strongest arc.
 

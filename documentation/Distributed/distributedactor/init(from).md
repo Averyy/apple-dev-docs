@@ -1,9 +1,10 @@
 # init(from:)
 
 **Framework**: Distributed  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes an instance of this distributed actor by decoding its [`id`](distributedactor/id.md), and passing it to the `DistributedActorSystem` obtained from `decoder.userInfo[actorSystemKey]`.
+Initializes an instance of this distributed actor by decoding its [`id`](./id.md), and passing it to the `DistributedActorSystem` obtained from `decoder.userInfo[actorSystemKey]`.
 
 **Availability**:
 - iOS 16.0+
@@ -11,7 +12,7 @@ Initializes an instance of this distributed actor by decoding its [`id`](distrib
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,15 +22,17 @@ nonisolated
 init(from decoder: any Decoder) throws
 ```
 
-#### Requires the Decoder Must Have the Codinguserinfokeyactorsystemkey Set to
+Available when `ID` conforms to `Decodable`.
 
-the [`ActorSystem`](distributedactor/actorsystem-swift.associatedtype.md) that this actor expects, as it will be used to call [`resolve(id:using:)`](distributedactor/resolve(id:using:).md) on, in order to obtain the instance this initializer should return.
+#### Requires: The decoder must have the `CodingUserInfoKey.actorSystemKey` set to
 
-> **Note**: If the actor system value in `decoder.userInfo` is missing or mistyped; the `ID` fails to decode from the passed `decoder`;
+the [`ActorSystem`](./actorsystem-swift.associatedtype.md) that this actor expects, as it will be used to call [`resolve(id:using:)`](./resolve%28id,using%29.md) on, in order to obtain the instance this initializer should return.
+
+> **Throws**: If the actor system value in `decoder.userInfo` is missing or mistyped; the `ID` fails to decode from the passed `decoder`;
 
 ## Parameters
 
-- `decoder`: Used to decode the [`id`](distributedactor/id.md) of this distributed actor.
+- `decoder`: Used to decode the [`id`](./id.md) of this distributed actor.
 
 
 ---

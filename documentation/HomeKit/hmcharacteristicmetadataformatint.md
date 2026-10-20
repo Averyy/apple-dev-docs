@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataFormatInt
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the characteristic has `int` values.
 
@@ -19,9 +20,14 @@ Indicates that the characteristic has `int` values.
 let HMCharacteristicMetadataFormatInt: String
 ```
 
+```c
+extern NSString * const HMCharacteristicMetadataFormatInt;
+```
+
 ## See Also
 
-- [let HMCharacteristicMetadataFormatFloat: String](hmcharacteristicmetadataformatfloat.md)
+### Signed Values
+- [let HMCharacteristicMetadataFormatFloat: String](./hmcharacteristicmetadataformatfloat.md)
   Indicates that the characteristic has `float` values.
 
 

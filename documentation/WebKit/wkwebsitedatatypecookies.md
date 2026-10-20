@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeCookies
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Cookies.
 
@@ -16,6 +17,10 @@ Cookies.
 
 ```swift
 let WKWebsiteDataTypeCookies: String
+```
+
+```c
+extern NSString * const WKWebsiteDataTypeCookies;
 ```
 
 

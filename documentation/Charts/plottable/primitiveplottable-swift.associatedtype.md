@@ -2,6 +2,7 @@
 
 **Framework**: Swift Charts  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A primitive plottable type.
@@ -23,7 +24,7 @@ associatedtype PrimitivePlottable : PrimitivePlottableProtocol
 
 #### Discussion
 
-This type conforms to the [`Plottable`](plottable.md) protocol.
+This type conforms to the [`Plottable`](../plottable.md) protocol.
 
 
 ---

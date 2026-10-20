@@ -1,14 +1,17 @@
 # UIUserNotificationActivationMode.background
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Activate the app and put it in the background. If the app is already in the foreground, it remains in the foreground.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationAction`](../uiusernotificationaction.md).
 
 ## Declaration
 
@@ -16,9 +19,14 @@ Activate the app and put it in the background. If the app is already in the fore
 case background
 ```
 
+```c
+UIUserNotificationActivationModeBackground
+```
+
 ## See Also
 
-- [UIUserNotificationActivationMode.foreground](uiusernotificationactivationmode/foreground.md)
+### Constants
+- [UIUserNotificationActivationMode.foreground](./foreground.md)
   Activate the app and put it in the foreground.
 
 

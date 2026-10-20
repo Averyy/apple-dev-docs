@@ -1,7 +1,8 @@
 # importFilter(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func importFilter(_ filterProperties: [AnyHashable : Any]!) -> QuartzFilter!
+```
+
+```objc
+- (QuartzFilter *) importFilter:(NSDictionary *) filterProperties;
 ```
 
 

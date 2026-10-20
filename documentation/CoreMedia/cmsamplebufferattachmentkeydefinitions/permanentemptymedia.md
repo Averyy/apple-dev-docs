@@ -1,7 +1,8 @@
 # permanentEmptyMedia
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Marks the end of the sequence of samples.
 
@@ -22,7 +23,7 @@ static let permanentEmptyMedia: CVAttachmentKeyDefinitionWithDefault<CMSampleBuf
 
 #### Discussion
 
-Marker sample buffers with this attachment in addition to [`emptyMedia`](cmsamplebufferattachmentkeydefinitions/emptymedia.md) are used to indicate that no further samples are expected. The getter returns the default value of false if this attachment is not present.
+Marker sample buffers with this attachment in addition to [`emptyMedia`](./emptymedia.md) are used to indicate that no further samples are expected. The getter returns the default value of false if this attachment is not present.
 
 
 ---

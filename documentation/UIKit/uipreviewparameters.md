@@ -1,7 +1,8 @@
 # UIPreviewParameters
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Additional parameters to use when animating a preview interface.
 
@@ -19,48 +20,53 @@ Additional parameters to use when animating a preview interface.
 class UIPreviewParameters
 ```
 
+```objc
+@interface UIPreviewParameters : NSObject
+```
+
 ## Topics
 
 ### Creating preview parameters
-- [init()](uipreviewparameters/init.md)
+- [init()](./uipreviewparameters/init%28%29.md)
   Creates a default set of preview parameters.
-- [convenience init(textLineRects: [NSValue])](uipreviewparameters/init(textlinerects:).md)
+- [convenience init(textLineRects: [NSValue])](./uipreviewparameters/init%28textlinerects%29.md)
   Creates a preview parameters object with information about the text you want to preview.
 ### Configuring the preview attributes
-- [var backgroundColor: UIColor!](uipreviewparameters/backgroundcolor.md)
+- [var backgroundColor: UIColor!](./uipreviewparameters/backgroundcolor.md)
   The background color to display behind the preview.
-- [var visiblePath: UIBezierPath?](uipreviewparameters/visiblepath.md)
+- [var visiblePath: UIBezierPath?](./uipreviewparameters/visiblepath.md)
   The portion of the view to show in the preview.
-- [var shadowPath: UIBezierPath?](uipreviewparameters/shadowpath.md)
+- [var shadowPath: UIBezierPath?](./uipreviewparameters/shadowpath.md)
   The path to use for drawing the preview’s shadow.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIDragPreviewParameters](uidragpreviewparameters.md)
+- [UIDragPreviewParameters](./uidragpreviewparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIContextMenuSystem](uicontextmenusystem.md)
+### Contextual menus
+- [class UIContextMenuSystem](./uicontextmenusystem.md)
   The context menu system.
-- [class UIContextMenuInteraction](uicontextmenuinteraction.md)
+- [class UIContextMenuInteraction](./uicontextmenuinteraction.md)
   An interaction object that you use to display relevant actions for your content.
-- [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
+- [protocol UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
   The methods for providing the set of actions to perform on your content, and for customizing the preview of that content.
-- [class UITargetedPreview](uitargetedpreview.md)
+- [class UITargetedPreview](./uitargetedpreview.md)
   An object describing the view to use during preview-related animations.
-- [class UIPreviewTarget](uipreviewtarget.md)
+- [class UIPreviewTarget](./uipreviewtarget.md)
   An object that specifies the container view to use for animations.
 
 

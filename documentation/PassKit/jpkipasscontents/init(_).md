@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes with the digital identity state of the provided pass.
 

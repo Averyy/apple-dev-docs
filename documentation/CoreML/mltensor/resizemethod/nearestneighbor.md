@@ -1,7 +1,8 @@
 # MLTensor.ResizeMethod.nearestNeighbor
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The nearest interpolation mode where values are interpolated using the closest neighbor pixel.
 
@@ -22,7 +23,8 @@ case nearestNeighbor
 
 ## See Also
 
-- [MLTensor.ResizeMethod.bilinear(alignCorners:)](mltensor/resizemethod/bilinear(aligncorners:).md)
+### Resize methods
+- [MLTensor.ResizeMethod.bilinear(alignCorners:)](./bilinear%28aligncorners%29.md)
   The bilinear interpolation mode where values are computed using bilinear interpolation of 4 neighboring pixels.
 
 

@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the dictionary is empty.
 
@@ -20,6 +21,8 @@ A Boolean value that indicates whether the dictionary is empty.
 var isEmpty: Bool { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Discussion
 
 Dictionaries are empty when created with an initializer or an empty dictionary literal.
@@ -32,9 +35,10 @@ print(frequencies.isEmpty)
 
 ## See Also
 
-- [var count: Int](dictionary/count.md)
+### Inspecting a Dictionary
+- [var count: Int](./count.md)
   The number of key-value pairs in the dictionary.
-- [var capacity: Int](dictionary/capacity.md)
+- [var capacity: Int](./capacity.md)
   The total number of key-value pairs that the dictionary can contain without allocating new storage.
 
 

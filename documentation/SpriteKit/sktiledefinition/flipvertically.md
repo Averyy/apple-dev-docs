@@ -1,7 +1,8 @@
 # flipVertically
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that flips the definition’s image horizontally.
 
@@ -20,9 +21,14 @@ A Boolean that flips the definition’s image horizontally.
 var flipVertically: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL flipVertically;
+```
+
 ## See Also
 
-- [var flipHorizontally: Bool](sktiledefinition/fliphorizontally.md)
+### Flipping a Tile Vertically or Horizontally
+- [var flipHorizontally: Bool](./fliphorizontally.md)
   A Boolean that flips the definition’s image vertically.
 
 

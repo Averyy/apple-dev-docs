@@ -1,7 +1,8 @@
 # errSecVerifyActionFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A verify action failed.
 
@@ -18,6 +19,10 @@ A verify action failed.
 
 ```swift
 var errSecVerifyActionFailed: OSStatus { get }
+```
+
+```c
+errSecVerifyActionFailed
 ```
 
 

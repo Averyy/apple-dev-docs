@@ -1,7 +1,8 @@
 # caption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The text that the button widget annotation displays when the user isn’t interacting with it.
 
@@ -19,17 +20,22 @@ The text that the button widget annotation displays when the user isn’t intera
 static let caption: PDFAppearanceCharacteristicsKey
 ```
 
+```c
+extern PDFAppearanceCharacteristicsKey PDFAppearanceCharacteristicsKeyCaption;
+```
+
 ## See Also
 
-- [static let backgroundColor: PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey/backgroundcolor.md)
+### Modifying Widget Appearance
+- [static let backgroundColor: PDFAppearanceCharacteristicsKey](./backgroundcolor.md)
   The background color of the widget annotation.
-- [static let borderColor: PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey/bordercolor.md)
+- [static let borderColor: PDFAppearanceCharacteristicsKey](./bordercolor.md)
   The border color of the widget annotation.
-- [static let downCaption: PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey/downcaption.md)
+- [static let downCaption: PDFAppearanceCharacteristicsKey](./downcaption.md)
   The text that the button widget annotation displays when the user holds down on it.
-- [static let rolloverCaption: PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey/rollovercaption.md)
+- [static let rolloverCaption: PDFAppearanceCharacteristicsKey](./rollovercaption.md)
   The text that the button widget annotation displays when the user hovers the pointer over it.
-- [static let rotation: PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey/rotation.md)
+- [static let rotation: PDFAppearanceCharacteristicsKey](./rotation.md)
   The number of degrees, in multiples of 90, that the widget annotation rotates counterclockwise relative to the page.
 
 

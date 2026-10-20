@@ -1,7 +1,8 @@
 # EventReservation
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A reservation for a movie, sporting event, live show, or other scheduled event.
 
@@ -10,20 +11,20 @@ A reservation for a movie, sporting event, live show, or other scheduled event.
 
 ## Declaration
 
-```swift
+```
 object EventReservation
 ```
 
 ## Topics
 
 ### Defining an Event Reservation
-- [object Event](event.md)
+- [object Event](./event.md)
   A sporting event, live show, or other scheduled event.
 
 ## Properties
 
 - `@context` (@context) *(required)*
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `EventReservation`
 - `reservationFor` (Event) *(required)*: General information about the event.
 - `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
 - `reservationStatus` (reservationStatus) *(required)*: The reservation’s current status.
@@ -34,9 +35,10 @@ object EventReservation
 
 ## See Also
 
-- [object FoodEstablishmentReservation](foodestablishmentreservation.md)
+### Food, Lodging, and Events
+- [object FoodEstablishmentReservation](./foodestablishmentreservation.md)
   A restaurant reservation.
-- [object LodgingReservation](lodgingreservation.md)
+- [object LodgingReservation](./lodgingreservation.md)
   A hotel reservation or other booking for a place to stay.
 
 

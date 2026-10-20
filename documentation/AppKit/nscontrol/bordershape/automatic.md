@@ -1,7 +1,8 @@
 # NSControl.BorderShape.automatic
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The control will resolve this to an appropriate shape for the given control size and context
 
@@ -12,6 +13,10 @@ The control will resolve this to an appropriate shape for the given control size
 
 ```swift
 case automatic
+```
+
+```c
+NSControlBorderShapeAutomatic
 ```
 
 

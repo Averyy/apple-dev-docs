@@ -1,20 +1,22 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## See Also
 
-- [init](iouservideoobject/init-5dkv4.md)
+### Creating a video object
+- [init](./init-5dkv4.md)
   Initializes a video object.
 
 

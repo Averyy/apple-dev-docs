@@ -1,7 +1,8 @@
 # init(decoding:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string by interpreting the path component’s content as UTF-8 on Unix and UTF-16 on Windows.
 

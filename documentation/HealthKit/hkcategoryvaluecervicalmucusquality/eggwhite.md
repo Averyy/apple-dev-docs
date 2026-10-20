@@ -1,7 +1,8 @@
 # HKCategoryValueCervicalMucusQuality.eggWhite
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Mucus the color and consistency of egg whites.
 
@@ -19,15 +20,20 @@ Mucus the color and consistency of egg whites.
 case eggWhite
 ```
 
+```c
+HKCategoryValueCervicalMucusQualityEggWhite
+```
+
 ## See Also
 
-- [HKCategoryValueCervicalMucusQuality.dry](hkcategoryvaluecervicalmucusquality/dry.md)
+### Constants
+- [HKCategoryValueCervicalMucusQuality.dry](./dry.md)
   Little or no mucus.
-- [HKCategoryValueCervicalMucusQuality.sticky](hkcategoryvaluecervicalmucusquality/sticky.md)
+- [HKCategoryValueCervicalMucusQuality.sticky](./sticky.md)
   Sticky mucus.
-- [HKCategoryValueCervicalMucusQuality.creamy](hkcategoryvaluecervicalmucusquality/creamy.md)
+- [HKCategoryValueCervicalMucusQuality.creamy](./creamy.md)
   Creamy mucus.
-- [HKCategoryValueCervicalMucusQuality.watery](hkcategoryvaluecervicalmucusquality/watery.md)
+- [HKCategoryValueCervicalMucusQuality.watery](./watery.md)
   Watery mucus.
 
 

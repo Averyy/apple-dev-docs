@@ -1,7 +1,8 @@
 # daysOfTheYear
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which days of the year the event may occur.
 

@@ -1,7 +1,8 @@
 # textView(_:doCommandBy:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to allow the delegate to perform the command for the text view.
 
@@ -15,9 +16,13 @@ Sent to allow the delegate to perform the command for the text view.
 optional func textView(_ textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool
 ```
 
+```objc
+- (BOOL) textView:(NSTextView *) textView doCommandBySelector:(SEL) commandSelector;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) indicates that the delegate handled the command and the text view will not attempt to perform it; [`false`](https://developer.apple.com/documentation/swift/false) indicates that the delegate did not handle the command the text view will attempt to perform it.
+[`true`](../../Swift/true.md) indicates that the delegate handled the command and the text view will not attempt to perform it; [`false`](../../Swift/false.md) indicates that the delegate did not handle the command the text view will attempt to perform it.
 
 #### Discussion
 

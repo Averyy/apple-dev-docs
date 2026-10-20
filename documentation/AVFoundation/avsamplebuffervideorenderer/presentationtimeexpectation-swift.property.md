@@ -1,7 +1,8 @@
 # presentationTimeExpectation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -19,7 +20,8 @@ var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExp
 
 ## See Also
 
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
+### Setting presentation time expectations
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](./presentationtimeexpectation-swift.enum.md)
   Options that specify the expected presentation time stamps of enqueue samples.
 
 

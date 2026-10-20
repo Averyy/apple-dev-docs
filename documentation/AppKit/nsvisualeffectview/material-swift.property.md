@@ -1,7 +1,8 @@
 # material
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material shown by the visual effect view.
 
@@ -14,13 +15,18 @@ The material shown by the visual effect view.
 var material: NSVisualEffectView.Material { get set }
 ```
 
+```objc
+@property NSVisualEffectMaterial material;
+```
+
 #### Discussion
 
-The default value is [`NSVisualEffectView.Material.appearanceBased`](nsvisualeffectview/material-swift.enum/appearancebased.md); the material updates to the correct material based on the appearance set on this view.
+The default value is [`NSVisualEffectView.Material.appearanceBased`](./material-swift.enum/appearancebased.md); the material updates to the correct material based on the appearance set on this view.
 
 ## See Also
 
-- [NSVisualEffectView.Material](nsvisualeffectview/material-swift.enum.md)
+### Specifying the Background Material
+- [NSVisualEffectView.Material](./material-swift.enum.md)
   Constants to specify the material shown by the visual effect view.
 
 

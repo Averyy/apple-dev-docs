@@ -7,7 +7,7 @@ Add a buffer to an IOStream.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn addBuffer(
  IOStreamBuffer *buffer);
 ```
@@ -22,16 +22,17 @@ Adds an IOStreamBuffer to an IOStream. It will be added to the end of the buffer
 
 ## See Also
 
-- [addBuffers](iostream/1809814-addbuffers.md)
-- [getBufferCount](iostream/1809821-getbuffercount.md)
-- [getBuffers](iostream/1809828-getbuffers.md)
+### Managing buffers in an IOStream
+- [addBuffers](./api-1809814-addbuffers.md)
+- [getBufferCount](./api-1809821-getbuffercount.md)
+- [getBuffers](./api-1809828-getbuffers.md)
   Get an array containing all the buffers in the stream.
-- [getBufferWithID](iostream/1809834-getbufferwithid.md)
-- [removeAllBuffers()](iostream/1809839-removeallbuffers.md)
-- [removeAllBuffers()](iostream/1809846-removeallbuffers.md)
-- [removeBuffer(IOStreamBuffer *)](iostream/1809852-removebuffer.md)
+- [getBufferWithID](./api-1809834-getbufferwithid.md)
+- [removeAllBuffers()](./api-1809839-removeallbuffers.md)
+- [removeAllBuffers()](./api-1809846-removeallbuffers.md)
+- [removeBuffer(IOStreamBuffer *)](./api-1809852-removebuffer.md)
   Removes a buffer from the stream. Buffers cannot be removed while the stream is open, as this will change the buffer IDs of existing buffers.
-- [removeBuffer(IOStreamBufferID)](iostream/1809860-removebuffer.md)
+- [removeBuffer(IOStreamBufferID)](./api-1809860-removebuffer.md)
   Removes a buffer from the stream. Buffers cannot be removed while the stream is open, as this will change the buffer IDs of existing buffers.
 
 

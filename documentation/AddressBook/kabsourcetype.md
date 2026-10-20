@@ -1,14 +1,15 @@
 # kABSourceType
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Source record.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,11 +17,16 @@ Source record.
 var kABSourceType: Int { get }
 ```
 
+```c
+kABSourceType
+```
+
 ## See Also
 
-- [var kABPersonType: Int](kabpersontype.md)
+### Constants
+- [var kABPersonType: Int](./kabpersontype.md)
   Person record.
-- [var kABGroupType: Int](kabgrouptype.md)
+- [var kABGroupType: Int](./kabgrouptype.md)
   Group record.
 
 

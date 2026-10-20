@@ -1,7 +1,8 @@
 # targets
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of targets that are part of this package.
 
@@ -13,7 +14,8 @@ final var targets: [Target]
 
 ## See Also
 
-- [class Target](target.md)
+### Configuring Targets
+- [class Target](../target.md)
   The basic building block of a Swift package.
 
 

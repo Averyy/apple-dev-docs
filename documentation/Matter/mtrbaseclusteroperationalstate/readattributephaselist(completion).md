@@ -1,7 +1,8 @@
 # readAttributePhaseList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePhaseList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePhaseList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributePhaseListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

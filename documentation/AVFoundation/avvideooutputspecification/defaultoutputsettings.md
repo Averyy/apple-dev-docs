@@ -1,7 +1,8 @@
 # defaultOutputSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,12 +19,17 @@
 var defaultOutputSettings: [String : any Sendable]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSDictionary<NSString *,id> * defaultOutputSettings;
+```
+
 ## See Also
 
-- [func setOutputSettings([String : any Sendable]?, for: [CMTag])](avvideooutputspecification/setoutputsettings(_:for:).md)
-- [var defaultPixelBufferAttributes: [String : Any]?](avvideooutputspecification/defaultpixelbufferattributes.md)
-- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](avvideooutputspecification/setoutputpixelbufferattributes(_:for:).md)
-- [var preferredTagCollections: [[CMTag]]](avvideooutputspecification/preferredtagcollections-3gdo7.md)
+### Configuring the specification
+- [func setOutputSettings([String : any Sendable]?, for: [CMTag])](./setoutputsettings%28_,for%29.md)
+- [var defaultPixelBufferAttributes: [String : Any]?](./defaultpixelbufferattributes.md)
+- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](./setoutputpixelbufferattributes%28_,for%29.md)
+- [var preferredTagCollections: [[CMTag]]](./preferredtagcollections-3gdo7.md)
 
 
 ---

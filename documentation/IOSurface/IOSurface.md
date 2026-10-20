@@ -1,7 +1,8 @@
 # IOSurface
 
 **Framework**: IOSurface  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Share hardware-accelerated buffer data (framebuffers and textures) across multiple processes. Manage image memory more efficiently.
 
@@ -20,33 +21,33 @@ The IOSurface framework provides a framebuffer object suitable for sharing acros
 ## Topics
 
 ### Classes
-- [class IOSurface](iosurface.md)
+- [class IOSurface](./iosurface-page.md)
   Data type representing an IOSurface opaque object.
-- [class IOSurfaceRef](iosurfaceref.md)
+- [class IOSurfaceRef](./iosurfaceref.md)
   Data type representing an IOSurface opaque object.
 ### Structures
-- [struct IOSurfaceLockOptions](iosurfacelockoptions.md)
-- [struct IOSurfacePropertyKey](iosurfacepropertykey.md)
-- [struct IOSurfacePurgeabilityState](iosurfacepurgeabilitystate.md)
+- [struct IOSurfaceLockOptions](./iosurfacelockoptions.md)
+- [struct IOSurfacePropertyKey](./iosurfacepropertykey.md)
+- [struct IOSurfacePurgeabilityState](./iosurfacepurgeabilitystate.md)
 ### Reference
-- [IOSurface Structures](iosurface-structures.md)
-- [IOSurface Constants](iosurface-constants.md)
-- [IOSurface Functions](iosurface-functions.md)
+- [IOSurface Structures](./iosurface-structures.md)
+- [IOSurface Constants](./iosurface-constants.md)
+- [IOSurface Functions](./iosurface-functions.md)
 ### Variables
-- [let kIOSurfaceContentHeadroom: CFString](kiosurfacecontentheadroom.md)
-- [var kIOSurfaceCopybackCache: Int](kiosurfacecopybackcache.md)
-- [var kIOSurfaceCopybackInnerCache: Int](kiosurfacecopybackinnercache.md)
-- [var kIOSurfaceDefaultCache: Int](kiosurfacedefaultcache.md)
-- [var kIOSurfaceInhibitCache: Int](kiosurfaceinhibitcache.md)
-- [var kIOSurfaceMapCacheShift: Int](kiosurfacemapcacheshift.md)
-- [var kIOSurfaceMapCopybackCache: Int](kiosurfacemapcopybackcache.md)
-- [var kIOSurfaceMapCopybackInnerCache: Int](kiosurfacemapcopybackinnercache.md)
-- [var kIOSurfaceMapDefaultCache: Int](kiosurfacemapdefaultcache.md)
-- [var kIOSurfaceMapInhibitCache: Int](kiosurfacemapinhibitcache.md)
-- [var kIOSurfaceMapWriteCombineCache: Int](kiosurfacemapwritecombinecache.md)
-- [var kIOSurfaceMapWriteThruCache: Int](kiosurfacemapwritethrucache.md)
-- [var kIOSurfaceWriteCombineCache: Int](kiosurfacewritecombinecache.md)
-- [var kIOSurfaceWriteThruCache: Int](kiosurfacewritethrucache.md)
+- [let kIOSurfaceContentHeadroom: CFString](./kiosurfacecontentheadroom.md)
+- [var kIOSurfaceCopybackCache: Int](./kiosurfacecopybackcache.md)
+- [var kIOSurfaceCopybackInnerCache: Int](./kiosurfacecopybackinnercache.md)
+- [var kIOSurfaceDefaultCache: Int](./kiosurfacedefaultcache.md)
+- [var kIOSurfaceInhibitCache: Int](./kiosurfaceinhibitcache.md)
+- [var kIOSurfaceMapCacheShift: Int](./kiosurfacemapcacheshift.md)
+- [var kIOSurfaceMapCopybackCache: Int](./kiosurfacemapcopybackcache.md)
+- [var kIOSurfaceMapCopybackInnerCache: Int](./kiosurfacemapcopybackinnercache.md)
+- [var kIOSurfaceMapDefaultCache: Int](./kiosurfacemapdefaultcache.md)
+- [var kIOSurfaceMapInhibitCache: Int](./kiosurfacemapinhibitcache.md)
+- [var kIOSurfaceMapWriteCombineCache: Int](./kiosurfacemapwritecombinecache.md)
+- [var kIOSurfaceMapWriteThruCache: Int](./kiosurfacemapwritethrucache.md)
+- [var kIOSurfaceWriteCombineCache: Int](./kiosurfacewritecombinecache.md)
+- [var kIOSurfaceWriteThruCache: Int](./kiosurfacewritethrucache.md)
 
 
 ---

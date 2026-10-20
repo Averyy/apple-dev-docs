@@ -1,7 +1,8 @@
 # init(real:imaginary:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a quaternion from real and imaginary components.
 

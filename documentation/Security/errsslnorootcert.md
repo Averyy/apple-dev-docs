@@ -1,7 +1,8 @@
 # errSSLNoRootCert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No root certificate for the certificate chain.
 
@@ -18,6 +19,10 @@ No root certificate for the certificate chain.
 
 ```swift
 var errSSLNoRootCert: OSStatus { get }
+```
+
+```c
+errSSLNoRootCert
 ```
 
 

@@ -1,7 +1,8 @@
 # automaticallyHidesNavigationBar
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the template should automatically hide the navigation bar.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates whether the template should automatically hide th
 var automaticallyHidesNavigationBar: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL automaticallyHidesNavigationBar;
+```
+
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true).
+The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var hidesButtonsWithNavigationBar: Bool](cpmaptemplate/hidesbuttonswithnavigationbar.md)
+### Configuring Map Templates
+- [var hidesButtonsWithNavigationBar: Bool](./hidesbuttonswithnavigationbar.md)
   A Boolean value that tells the system to hide the map buttons when hiding the navigation bar.
-- [var guidanceBackgroundColor: UIColor](cpmaptemplate/guidancebackgroundcolor.md)
+- [var guidanceBackgroundColor: UIColor](./guidancebackgroundcolor.md)
   The background color the map template uses when displaying guidance.
 
 

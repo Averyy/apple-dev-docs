@@ -1,7 +1,8 @@
 # TabletopInteraction.NewInteractionIntent.acceptWithConfiguration(_:)
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 2.2+
@@ -14,7 +15,8 @@ case acceptWithConfiguration(TabletopInteraction.Configuration)
 
 ## See Also
 
-- [TabletopInteraction.NewInteractionIntent.reject](tabletopinteraction/newinteractionintent/reject.md)
+### Intents
+- [TabletopInteraction.NewInteractionIntent.reject](./reject.md)
 
 
 ---

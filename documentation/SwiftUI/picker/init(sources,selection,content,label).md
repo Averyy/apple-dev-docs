@@ -1,7 +1,8 @@
 # init(sources:selection:content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that displays a custom label.
 
@@ -20,6 +21,8 @@ Creates a picker that displays a custom label.
 nonisolated
 init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label) where C : RandomAccessCollection
 ```
+
+Available when `Label` conforms to `View`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
 
 #### Discussion
 
@@ -67,7 +70,8 @@ Picker(
 
 ## See Also
 
-- [init(_:sources:selection:content:)](picker/init(_:sources:selection:content:).md)
+### Creating a picker for a collection
+- [init(_:sources:selection:content:)](./init%28_,sources,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource.
 
 

@@ -1,12 +1,13 @@
 # CustomReflectable Implementations
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](cgfloat-swift.struct/custommirror.md)
-  A mirror that reflects the [`CGFloat`](cgfloat-swift.struct.md) instance.
+- [var customMirror: Mirror](./custommirror.md)
+  A mirror that reflects the [`CGFloat`](../cgfloat-swift.struct.md) instance.
 
 
 ---

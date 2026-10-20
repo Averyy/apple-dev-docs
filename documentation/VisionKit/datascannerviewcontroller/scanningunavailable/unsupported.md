@@ -1,7 +1,8 @@
 # DataScannerViewController.ScanningUnavailable.unsupported
 
 **Framework**: VisionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data scanner isn’t supported on this device.
 
@@ -22,7 +23,8 @@ The device must have the Neural Engine to perform data scanning.
 
 ## See Also
 
-- [DataScannerViewController.ScanningUnavailable.cameraRestricted](datascannerviewcontroller/scanningunavailable/camerarestricted.md)
+### Unavailable errors
+- [DataScannerViewController.ScanningUnavailable.cameraRestricted](./camerarestricted.md)
   The data scanner isn’t available due to user restrictions on the use of the camera.
 
 

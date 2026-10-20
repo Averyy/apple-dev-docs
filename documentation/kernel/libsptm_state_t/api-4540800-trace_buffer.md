@@ -1,14 +1,15 @@
 # trace_buffer
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 sptm_trace_buffer_t *trace_buffer;
 ```
 

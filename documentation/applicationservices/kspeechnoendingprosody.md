@@ -1,7 +1,8 @@
 # kSpeechNoEndingProsody
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Disable prosody at the end of sentences.
 
@@ -12,6 +13,10 @@ Disable prosody at the end of sentences.
 
 ```swift
 let kSpeechNoEndingProsody: CFString
+```
+
+```c
+const CFStringRef kSpeechNoEndingProsody;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # center3D
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - visionOS 1.0+
@@ -12,6 +13,8 @@
 @backDeployed(before: visionOS 26.0)
 static var center3D: Anchor<Point3D>.Source { get }
 ```
+
+Available when `Value` is `Point3D`.
 
 
 ---

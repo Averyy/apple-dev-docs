@@ -1,7 +1,8 @@
 # MPNowPlayingPlaybackState
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The playback state of the app.
 
@@ -20,35 +21,40 @@ The playback state of the app.
 enum MPNowPlayingPlaybackState
 ```
 
+```c
+enum MPNowPlayingPlaybackState : NSUInteger;
+```
+
 ## Topics
 
 ### Playback states
-- [MPNowPlayingPlaybackState.unknown](mpnowplayingplaybackstate/unknown.md)
+- [MPNowPlayingPlaybackState.unknown](./mpnowplayingplaybackstate/unknown.md)
   The current state of the app is unknown.
-- [MPNowPlayingPlaybackState.playing](mpnowplayingplaybackstate/playing.md)
+- [MPNowPlayingPlaybackState.playing](./mpnowplayingplaybackstate/playing.md)
   The app is currently playing a media item.
-- [MPNowPlayingPlaybackState.paused](mpnowplayingplaybackstate/paused.md)
+- [MPNowPlayingPlaybackState.paused](./mpnowplayingplaybackstate/paused.md)
   The app is currently paused.
-- [MPNowPlayingPlaybackState.stopped](mpnowplayingplaybackstate/stopped.md)
+- [MPNowPlayingPlaybackState.stopped](./mpnowplayingplaybackstate/stopped.md)
   The app has stopped playing.
-- [MPNowPlayingPlaybackState.interrupted](mpnowplayingplaybackstate/interrupted.md)
+- [MPNowPlayingPlaybackState.interrupted](./mpnowplayingplaybackstate/interrupted.md)
   The app has been interrupted during playback.
 ### Initializers
-- [init?(rawValue: UInt)](mpnowplayingplaybackstate/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpnowplayingplaybackstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var playbackState: MPNowPlayingPlaybackState](mpnowplayinginfocenter/playbackstate.md)
+### Setting the playback state in macOS
+- [var playbackState: MPNowPlayingPlaybackState](./mpnowplayinginfocenter/playbackstate.md)
   The current playback state of the app.
 
 

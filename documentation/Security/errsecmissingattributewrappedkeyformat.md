@@ -1,7 +1,8 @@
 # errSecMissingAttributeWrappedKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A wrapped key format attribute is missing.
 
@@ -18,6 +19,10 @@ A wrapped key format attribute is missing.
 
 ```swift
 var errSecMissingAttributeWrappedKeyFormat: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeWrappedKeyFormat
 ```
 
 

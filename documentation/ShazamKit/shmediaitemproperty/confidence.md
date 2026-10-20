@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value ranges from 0.0 to 1.0, where 1.0 indicates the highest level of confidence.
 
@@ -18,6 +19,10 @@ The value ranges from 0.0 to 1.0, where 1.0 indicates the highest level of confi
 
 ```swift
 static let confidence: SHMediaItemProperty
+```
+
+```c
+extern SHMediaItemProperty const SHMediaItemConfidence;
 ```
 
 

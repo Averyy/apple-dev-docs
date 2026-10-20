@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct experiment_spec {
     ...
 };
@@ -17,11 +17,11 @@ struct experiment_spec {
 ## Topics
 
 ### Instance Properties
-- [max_value](experiment_spec/3728044-max_value.md)
-- [min_value](experiment_spec/3728045-min_value.md)
-- [modified](experiment_spec/3728046-modified.md)
-- [original_value](experiment_spec/3728047-original_value.md)
-- [ptr](experiment_spec/3728048-ptr.md)
+- [max_value](./experiment_spec/api-3728044-max_value.md)
+- [min_value](./experiment_spec/api-3728045-min_value.md)
+- [modified](./experiment_spec/api-3728046-modified.md)
+- [original_value](./experiment_spec/api-3728047-original_value.md)
+- [ptr](./experiment_spec/api-3728048-ptr.md)
 
 
 ---

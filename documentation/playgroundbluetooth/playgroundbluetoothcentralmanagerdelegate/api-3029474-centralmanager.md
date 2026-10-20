@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the central manager established a connection with a peripheral.
@@ -21,11 +22,18 @@ func centralManager(_ centralManager: PlaygroundBluetoothCentralManager, didConn
 - `centralManager`: The central manager that made the new connection.
 - `peripheral`: The newly connected peripheral.
 
+## Default Implementations
+
+### PlaygroundBluetoothCentralManagerDelegate Implementations
+- [func centralManager(PlaygroundBluetoothCentralManager, didConnectTo: CBPeripheral)](./api-3029475-centralmanager.md)
+  Tells the delegate that the central manager established a connection with a peripheral.
+
 ## See Also
 
-- [func centralManager(PlaygroundBluetoothCentralManager, didDiscover: CBPeripheral, withAdvertisementData: [String : Any]?, rssi: Double)](playgroundbluetoothcentralmanagerdelegate/3029478-centralmanager.md)
+### Discovering Peripherals
+- [func centralManager(PlaygroundBluetoothCentralManager, didDiscover: CBPeripheral, withAdvertisementData: [String : Any]?, rssi: Double)](./api-3029478-centralmanager.md)
   Tells the delegate that a peripheral has been discovered during scanning.
-- [func centralManager(PlaygroundBluetoothCentralManager, willConnectTo: CBPeripheral)](playgroundbluetoothcentralmanagerdelegate/3029482-centralmanager.md)
+- [func centralManager(PlaygroundBluetoothCentralManager, willConnectTo: CBPeripheral)](./api-3029482-centralmanager.md)
   Tells the delegate that the central manager is about to attempt to establish a connection with a peripheral.
 
 

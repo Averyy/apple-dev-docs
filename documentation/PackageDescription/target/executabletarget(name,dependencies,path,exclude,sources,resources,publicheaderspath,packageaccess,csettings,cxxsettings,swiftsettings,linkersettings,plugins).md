@@ -1,7 +1,8 @@
 # executableTarget(name:dependencies:path:exclude:sources:resources:publicHeadersPath:packageAccess:cSettings:cxxSettings:swiftSettings:linkerSettings:plugins:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an executable target.
 
@@ -23,7 +24,7 @@ An executable target can contain either Swift or C-family source files, but not 
 - `name`: The name of the target.
 - `dependencies`: The dependencies of the target. A dependency can be another target in the package or a product from a package dependency.
 - `path`: The custom path for the target. By default, Swift Package Manager requires a target’s sources to reside at predefined search paths; for example, `[PackageRoot]/Sources/[TargetName]`. Don’t escape the package root; for example, values like `../Foo` or `/Foo` are invalid.
-- `exclude`: A list of paths to files or directories that Swift Package Manager shouldn’t consider to be source or resource files. A path is relative to the target’s directory. This parameter has precedence over the [`sources`](target/sources.md) parameter.
+- `exclude`: A list of paths to files or directories that Swift Package Manager shouldn’t consider to be source or resource files. A path is relative to the target’s directory. This parameter has precedence over the [`sources`](./sources.md) parameter.
 - `sources`: An explicit list of source files. If you provide a path to a directory, Swift Package Manager searches for valid source files recursively.
 - `resources`: An explicit list of resources files.
 - `publicHeadersPath`: The directory that contains public headers of a C-family library target.
@@ -36,9 +37,10 @@ An executable target can contain either Swift or C-family source files, but not 
 
 ## See Also
 
-- [static func executableTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, publicHeadersPath: String?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?, plugins: [Target.PluginUsage]?) -> Target](target/executabletarget(name:dependencies:path:exclude:sources:resources:publicheaderspath:csettings:cxxsettings:swiftsettings:linkersettings:plugins:).md)
+### Creating an Executable Target
+- [static func executableTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, publicHeadersPath: String?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?, plugins: [Target.PluginUsage]?) -> Target](./executabletarget%28name,dependencies,path,exclude,sources,resources,publicheaderspath,csettings,cxxsettings,swiftsettings,linkersettings,plugins%29.md)
   Creates an executable target.
-- [static func executableTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, publicHeadersPath: String?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?) -> Target](target/executabletarget(name:dependencies:path:exclude:sources:resources:publicheaderspath:csettings:cxxsettings:swiftsettings:linkersettings:).md)
+- [static func executableTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, publicHeadersPath: String?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?) -> Target](./executabletarget%28name,dependencies,path,exclude,sources,resources,publicheaderspath,csettings,cxxsettings,swiftsettings,linkersettings%29.md)
   Creates an executable target.
 
 

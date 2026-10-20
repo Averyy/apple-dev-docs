@@ -1,7 +1,8 @@
 # init(markerAt:duration:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a marker-only sample buffer with no payload and no format description.
 
@@ -20,6 +21,8 @@ Creates a marker-only sample buffer with no payload and no format description.
 init(markerAt markerTime: CMTime, duration: CMTime = .invalid)
 ```
 
+Available when `Content` is `Never`.
+
 #### Discussion
 
 Marker-only sample buffers are meant to carry attachments that communicate a state change between sample buffers. To set attachments on the sample buffer please to access the underlying sample buffer instance as follows:
@@ -32,7 +35,7 @@ markerOnlySampleBuffer.withUnsafeSampleBuffer { sbuf in
 
 ## Parameters
 
-- `markerTime`: Timestamp at which the marker sample buffer should be considered. Pass [`invalid`](cmtime/invalid.md) if the marker buffer does not carry timing information.
+- `markerTime`: Timestamp at which the marker sample buffer should be considered. Pass [`invalid`](../cmtime/invalid.md) if the marker buffer does not carry timing information.
 - `duration`: Duration of the marker sample buffer.
 
 

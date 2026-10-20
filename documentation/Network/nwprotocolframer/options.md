@@ -1,7 +1,8 @@
 # NWProtocolFramer.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container you use to add your custom protocol to a connection’s protocol stack.
 
@@ -23,24 +24,25 @@ class Options
 ## Topics
 
 ### Creating Framer Options
-- [init(definition: NWProtocolFramer.Definition)](nwprotocolframer/options/init(definition:).md)
+- [init(definition: NWProtocolFramer.Definition)](./options/init%28definition%29.md)
   Initializes a set of protocol options with a custom framer definition.
 ### Subscripts
-- [subscript(String) -> Any?](nwprotocolframer/options/subscript(_:).md)
+- [subscript(String) -> Any?](./options/subscript%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NWProtocolFramer.Definition](nwprotocolframer/definition.md)
+### Using Framers with Connections
+- [NWProtocolFramer.Definition](./definition.md)
   A custom protocol definition you use to associate messages with protocol options.
-- [NWProtocolFramer.Message](nwprotocolframer/message.md)
+- [NWProtocolFramer.Message](./message.md)
   A message for a custom protocol, in which you can store arbitrary key-value pairs.
 
 

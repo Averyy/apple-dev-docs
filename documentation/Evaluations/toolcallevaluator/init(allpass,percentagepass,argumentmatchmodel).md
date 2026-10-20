@@ -1,7 +1,8 @@
 # init(allPass:percentagePass:argumentMatchModel:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tool-call expectations evaluator with a custom language model for semantic matching of natural language argument matchers.
 

@@ -1,7 +1,8 @@
 # SKTestFailures.RefundRequest.generic(_:)
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -18,7 +19,8 @@ case generic(StoreKitError)
 
 ## See Also
 
-- [case refundRequest(Transaction.RefundRequestError)](sktestfailures/refundrequest/refundrequest(_:).md)
+### Enumeration Cases
+- [case refundRequest(Transaction.RefundRequestError)](./refundrequest%28_%29.md)
 
 
 ---

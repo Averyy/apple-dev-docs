@@ -1,7 +1,8 @@
 # maxCameraCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of simultaneous cameras supported.
 
@@ -23,13 +24,14 @@ Must be less than or equal to `CameraArray.maxCount`.
 
 ## See Also
 
-- [var rasterSampleCount: Int](lowlevelrenderer/configuration/rastersamplecount.md)
+### Tuning rendering options
+- [var rasterSampleCount: Int](./rastersamplecount.md)
   The number of samples per pixel for MSAA.
-- [var enableTonemap: Bool](lowlevelrenderer/configuration/enabletonemap.md)
+- [var enableTonemap: Bool](./enabletonemap.md)
   A Boolean value that indicates whether output values are tone-mapped to the target pixel format’s range before being written to the output texture.
-- [var enableColorMatch: Bool](lowlevelrenderer/configuration/enablecolormatch.md)
+- [var enableColorMatch: Bool](./enablecolormatch.md)
   A Boolean value that indicates whether the renderer applies a gamut conversion matrix during resolve, converting from the renderer’s working color space to the output display’s color space.
-- [var alphaPremultiply: Bool](lowlevelrenderer/configuration/alphapremultiply.md)
+- [var alphaPremultiply: Bool](./alphapremultiply.md)
   A Boolean value that indicates whether the renderer divides content by alpha before applying tonemap and color match, then multiplies by alpha before final texture output.
 
 

@@ -1,7 +1,8 @@
 # AppSchema.PhoneEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the phone domain.
 
@@ -21,19 +22,20 @@ protocol PhoneEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var phonePerson: some AppSchemaEntity](appschema/phoneentity/phoneperson.md)
+- [var phonePerson: some AppSchemaEntity](./phoneentity/phoneperson.md)
   An entity schema for a phone person.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var phonePerson: some AppSchemaEntity](appschema/phoneentity/phoneperson.md)
+### Content and parameter types
+- [var phonePerson: some AppSchemaEntity](./phoneentity/phoneperson.md)
   An entity schema for a phone person.
 
 

@@ -1,7 +1,8 @@
 # kAXUnderlineColorTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CGColorRef` value that describes the color of the underlining.
 
@@ -12,6 +13,10 @@ A `CGColorRef` value that describes the color of the underlining.
 
 ```swift
 var kAXUnderlineColorTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXUnderlineColorTextAttribute;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # messageCommunications
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The messages the user selected to report.
 
@@ -15,6 +16,10 @@ The messages the user selected to report.
 
 ```swift
 var messageCommunications: [ILMessageCommunication] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<ILMessageCommunication *> * messageCommunications;
 ```
 
 #### Discussion

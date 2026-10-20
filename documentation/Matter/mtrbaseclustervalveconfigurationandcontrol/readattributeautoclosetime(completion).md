@@ -1,7 +1,8 @@
 # readAttributeAutoCloseTime(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAutoCloseTime(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAutoCloseTime() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAutoCloseTimeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

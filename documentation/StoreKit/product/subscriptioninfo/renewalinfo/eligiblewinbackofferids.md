@@ -1,7 +1,8 @@
 # eligibleWinBackOfferIDs
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that represent identifiers of win-back offers that the customer is eligible to redeem, sorted with the best offers first.
 
@@ -22,7 +23,7 @@ let eligibleWinBackOfferIDs: [String]
 
 ## Mentions
 
-- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Merchandising win-back offers in your app](../../../merchandising-win-back-offers-in-your-app.md)
 
 #### Discussion
 
@@ -30,19 +31,20 @@ Use this list to select an eligible win-back offer for a customer. The array con
 
 The App Store sets the order of the eligible win-back offer IDs for each customer, with the best offer first. The order takes into account the available offers you configure in App Store Connect for the customer’s most recent subscription in the subscription group. Subscriptions in a Billing Grace Period or billing retry state aren’t eligible for win-back offers.
 
-Get the complete offer details by searching for the identifier in the [`winBackOffers`](product/subscriptioninfo/winbackoffers.md) property of the [`Product.SubscriptionInfo`](product/subscriptioninfo.md) instance. To add the offer to a purchase when a customer accepts the offer, use the [`winBackOffer(_:)`](product/purchaseoption/winbackoffer(_:).md) purchase option. For more information, see [`Supporting win-back offers in your app`](supporting-win-back-offers-in-your-app.md).
+Get the complete offer details by searching for the identifier in the [`winBackOffers`](../winbackoffers.md) property of the [`Product.SubscriptionInfo`](../../subscriptioninfo.md) instance. To add the offer to a purchase when a customer accepts the offer, use the [`winBackOffer(_:)`](../../purchaseoption/winbackoffer%28_%29.md) purchase option. For more information, see [Supporting win-back offers in your app](../../../supporting-win-back-offers-in-your-app.md).
 
-When you test win-back offers with StoreKit Testing in Xcode, the system lists the offers in no particular order. For more information, see [`Testing win-back offers in Xcode`](testing-win-back-offers-in-xcode.md).
+When you test win-back offers with StoreKit Testing in Xcode, the system lists the offers in no particular order. For more information, see [Testing win-back offers in Xcode](../../../testing-win-back-offers-in-xcode.md).
 
-You can also use the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) to get a list of eligible win-back offers, on your server. For more information, see [`Get All Subscription Statuses`](https://developer.apple.com/documentation/appstoreserverapi/get-all-subscription-statuses) and [`eligibleWinBackOfferIds`](https://developer.apple.com/documentation/appstoreserverapi/eligiblewinbackofferids).
+You can also use the [App Store Server API](../../../../AppStoreServerAPI/AppStoreServerAPI.md) to get a list of eligible win-back offers, on your server. For more information, see [`Get All Subscription Statuses`](../../../../AppStoreServerAPI/get-all-subscription-statuses.md) and [`eligibleWinBackOfferIds`](../../../../AppStoreServerAPI/eligiblewinbackofferids.md).
 
-For information about configuring win-back offers in App Store Connect, see [`Set up win-back offers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers).
+For information about configuring win-back offers in App Store Connect, see [Set up win-back offers](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers).
 
 ## See Also
 
-- [let offer: Transaction.Offer?](product/subscriptioninfo/renewalinfo/offer.md)
+### Getting offers
+- [let offer: Transaction.Offer?](./offer.md)
   A subscription offer that applies to the transaction at the next renewal period.
-- [Transaction.Offer](transaction/offer-swift.struct.md)
+- [Transaction.Offer](../../../transaction/offer-swift.struct.md)
   Discounts or promotions that apply to a transaction.
 
 

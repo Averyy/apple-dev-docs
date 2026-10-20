@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of strings identifying custom restrictions.
@@ -10,13 +11,17 @@ An array of strings identifying custom restrictions.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var guidedAccessRestrictionIdentifiers: [String]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSString *> * guidedAccessRestrictionIdentifiers;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ Your delegate must implement this method and return an array with an identifier 
 
 ## See Also
 
-- [func textForGuidedAccessRestriction(withIdentifier: String) -> String?](uiguidedaccessrestrictiondelegate/textforguidedaccessrestriction(withidentifier:).md)
+### Identifying custom Guided Access restrictions
+- [func textForGuidedAccessRestriction(withIdentifier: String) -> String?](./textforguidedaccessrestriction%28withidentifier%29.md)
   Provides a succinct description of the restriction for the specified identifier.
-- [func detailTextForGuidedAccessRestriction(withIdentifier: String) -> String?](uiguidedaccessrestrictiondelegate/detailtextforguidedaccessrestriction(withidentifier:).md)
+- [func detailTextForGuidedAccessRestriction(withIdentifier: String) -> String?](./detailtextforguidedaccessrestriction%28withidentifier%29.md)
   Provides more detailed information about the restriction for the specified identifier.
 
 

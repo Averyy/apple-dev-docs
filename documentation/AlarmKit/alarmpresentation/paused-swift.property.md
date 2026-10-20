@@ -1,7 +1,8 @@
 # paused
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content for the pause mode of the alarm.
 
@@ -22,11 +23,12 @@ This value can be `nil` if the alarm doesn’t support pause mode.
 
 ## See Also
 
-- [init(alert: AlarmPresentation.Alert, countdown: AlarmPresentation.Countdown?, paused: AlarmPresentation.Paused?)](alarmpresentation/init(alert:countdown:paused:).md)
+### Defining the alarm UI
+- [init(alert: AlarmPresentation.Alert, countdown: AlarmPresentation.Countdown?, paused: AlarmPresentation.Paused?)](./init%28alert,countdown,paused%29.md)
   Configures an alert with an optional countdown and paused state.
-- [var alert: AlarmPresentation.Alert](alarmpresentation/alert-swift.property.md)
+- [var alert: AlarmPresentation.Alert](./alert-swift.property.md)
   The content for the alert mode of the alarm.
-- [var countdown: AlarmPresentation.Countdown?](alarmpresentation/countdown-swift.property.md)
+- [var countdown: AlarmPresentation.Countdown?](./countdown-swift.property.md)
   The content for the snooze or countdown mode of the alarm.
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the command.
 
@@ -16,6 +17,10 @@ A unique identifier for the command.
 
 ```swift
 var id: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 

@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.invalidArchive
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the archive file is invalid or corrupt.
 
@@ -16,6 +17,10 @@ Indicates that the archive file is invalid or corrupt.
 
 ```swift
 case invalidArchive
+```
+
+```c
+WKWebExtensionErrorInvalidArchive
 ```
 
 

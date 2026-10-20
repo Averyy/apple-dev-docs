@@ -1,7 +1,8 @@
 # init(decoding:as:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string from the given Unicode code units in the specified encoding.
 

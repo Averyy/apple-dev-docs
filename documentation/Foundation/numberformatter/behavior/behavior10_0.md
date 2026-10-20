@@ -1,7 +1,8 @@
 # NumberFormatter.Behavior.behavior10_0
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The number-formatter behavior as it existed prior to macOS 10.4.
 
@@ -14,11 +15,16 @@ The number-formatter behavior as it existed prior to macOS 10.4.
 case behavior10_0
 ```
 
+```c
+NSNumberFormatterBehavior10_0
+```
+
 ## See Also
 
-- [NumberFormatter.Behavior.default](numberformatter/behavior/default.md)
-  The number-formatter behavior set as the default for new instances. You can set the default formatter behavior with the class method [`setDefaultFormatterBehavior(_:)`](numberformatter/setdefaultformatterbehavior(_:).md).
-- [NumberFormatter.Behavior.behavior10_4](numberformatter/behavior/behavior10_4.md)
+### Constants
+- [NumberFormatter.Behavior.default](./default.md)
+  The number-formatter behavior set as the default for new instances. You can set the default formatter behavior with the class method [`setDefaultFormatterBehavior(_:)`](../setdefaultformatterbehavior%28_%29.md).
+- [NumberFormatter.Behavior.behavior10_4](./behavior10_4.md)
   The number-formatter behavior since macOS 10.4.
 
 

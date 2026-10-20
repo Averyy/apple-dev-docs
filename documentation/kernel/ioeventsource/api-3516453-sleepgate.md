@@ -1,14 +1,15 @@
 # sleepGate
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 int sleepGate(void *event, AbsoluteTime deadline, UInt32 type);
 ```
 

@@ -1,7 +1,8 @@
 # minimumTimeOffsetFromLive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time value that indicates how closely playback follows the latest live stream content.
 
@@ -21,13 +22,14 @@ var minimumTimeOffsetFromLive: CMTime { get }
 
 #### Discussion
 
-This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
 ## See Also
 
-- [var duration: CMTime](avmutablemovie/duration.md)
+### Accessing duration and timing
+- [var duration: CMTime](./duration.md)
   A time value that indicates the asset’s duration.
-- [var providesPreciseDurationAndTiming: Bool](avmutablemovie/providesprecisedurationandtiming.md)
+- [var providesPreciseDurationAndTiming: Bool](./providesprecisedurationandtiming.md)
   A Boolean value that indicates whether the asset provides precise duration and timing.
 
 

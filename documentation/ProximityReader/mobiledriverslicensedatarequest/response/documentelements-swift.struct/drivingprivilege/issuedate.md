@@ -1,7 +1,8 @@
 # issueDate
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The issue date of the driving privilege.
 

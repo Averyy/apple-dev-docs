@@ -1,7 +1,8 @@
 # isBusinessHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether remote end is a business handle.
 
@@ -16,9 +17,10 @@ let isBusinessHandle: Bool
 
 ## See Also
 
-- [let alternativeHandles: [RCSHandle]](rcsservice/remotecapabilities/alternativehandles.md)
+### Accessing handle metadata
+- [let alternativeHandles: [RCSHandle]](./alternativehandles.md)
   Alternative handles for remote end.
-- [enum RCSHandle](rcshandle.md)
+- [enum RCSHandle](../../rcshandle.md)
   An enumeration that represents an RCS destination or sender.
 
 

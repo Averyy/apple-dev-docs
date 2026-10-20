@@ -1,7 +1,8 @@
 # updateAppContext(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Whenever the in-app context for this intent changes any process containing this intent can call this method to provide updated state to the system.
 

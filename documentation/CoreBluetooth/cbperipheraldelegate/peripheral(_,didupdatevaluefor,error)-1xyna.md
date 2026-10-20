@@ -1,7 +1,8 @@
 # peripheral(_:didUpdateValueFor:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that retrieving the specified characteristic’s value succeeded, or that the characteristic’s value changed.
 
@@ -20,9 +21,13 @@ Tells the delegate that retrieving the specified characteristic’s value succee
 optional func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didUpdateValueForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](cbperipheral/readvalue(for:)-6u2kr.md) method. A peripheral also invokes this method to notify your app of a change to the value of the characteristic for which the app previously enabled notifications by calling [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md). If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](../cbperipheral/readvalue%28for%29-6u2kr.md) method. A peripheral also invokes this method to notify your app of a change to the value of the characteristic for which the app previously enabled notifications by calling [`setNotifyValue(_:for:)`](../cbperipheral/setnotifyvalue%28_,for%29.md). If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](c
 
 ## See Also
 
-- [func peripheral(CBPeripheral, didUpdateValueFor: CBDescriptor, error: (any Error)?)](cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1t3wm.md)
+### Retrieving Characteristic and Descriptor Values
+- [func peripheral(CBPeripheral, didUpdateValueFor: CBDescriptor, error: (any Error)?)](./peripheral%28_,didupdatevaluefor,error%29-1t3wm.md)
   Tells the delegate that retrieving a specified characteristic descriptor’s value succeeded.
 
 

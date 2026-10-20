@@ -1,7 +1,8 @@
 # MIDIThruConnectionParamsInitialize(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Initializes a parameters object with its default values.
 
@@ -18,6 +19,10 @@ Initializes a parameters object with its default values.
 func MIDIThruConnectionParamsInitialize(_ inConnectionParams: UnsafeMutablePointer<MIDIThruConnectionParams>)
 ```
 
+```c
+extern void MIDIThruConnectionParamsInitialize(MIDIThruConnectionParams *inConnectionParams);
+```
+
 #### Discussion
 
 This is a convenience function that fills the connection structure with default values. Set the source and destination to create a simple, unmodified thru connection.
@@ -28,13 +33,14 @@ This is a convenience function that fills the connection structure with default 
 
 ## See Also
 
-- [struct MIDIThruConnectionParams](midithruconnectionparams.md)
+### Configuring Parameters
+- [struct MIDIThruConnectionParams](./midithruconnectionparams.md)
   A set of MIDI routings and transformations.
-- [func MIDIThruConnectionParamsSize(UnsafePointer<MIDIThruConnectionParams>) -> Int](midithruconnectionparamssize(_:).md)
+- [func MIDIThruConnectionParamsSize(UnsafePointer<MIDIThruConnectionParams>) -> Int](./midithruconnectionparamssize%28_%29.md)
   Returns the size of a MIDI thru connection parameters object.
-- [func MIDIThruConnectionGetParams(MIDIThruConnectionRef, UnsafeMutablePointer<Unmanaged<CFData>>) -> OSStatus](midithruconnectiongetparams(_:_:).md)
+- [func MIDIThruConnectionGetParams(MIDIThruConnectionRef, UnsafeMutablePointer<Unmanaged<CFData>>) -> OSStatus](./midithruconnectiongetparams%28_,_%29.md)
   Returns the thru connection’s parameters.
-- [func MIDIThruConnectionSetParams(MIDIThruConnectionRef, CFData) -> OSStatus](midithruconnectionsetparams(_:_:).md)
+- [func MIDIThruConnectionSetParams(MIDIThruConnectionRef, CFData) -> OSStatus](./midithruconnectionsetparams%28_,_%29.md)
   Updates a thru connection’s parameters.
 
 

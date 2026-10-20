@@ -1,7 +1,8 @@
 # init(fileHandle:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the attachment from a file handle that contains a connected datagram socket.
 
@@ -12,6 +13,10 @@ Creates the attachment from a file handle that contains a connected datagram soc
 
 ```swift
 init(fileHandle: FileHandle)
+```
+
+```objc
+- (instancetype) initWithFileHandle:(NSFileHandle *) fileHandle;
 ```
 
 #### Return Value

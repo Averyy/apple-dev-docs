@@ -1,7 +1,8 @@
 # NSScrollView.WillStartLiveScrollMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct WillStartLiveScrollMessage
 ## Topics
 
 ### Initializers
-- [init(scrollView: NSScrollView)](nsscrollview/willstartlivescrollmessage/init(scrollview:).md)
+- [init(scrollView: NSScrollView)](./willstartlivescrollmessage/init%28scrollview%29.md)
 ### Instance Properties
-- [var scrollView: NSScrollView](nsscrollview/willstartlivescrollmessage/scrollview.md)
+- [var scrollView: NSScrollView](./willstartlivescrollmessage/scrollview.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

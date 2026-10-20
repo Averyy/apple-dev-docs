@@ -1,7 +1,8 @@
 # widthTracksTextView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that controls whether the text container adjusts the width of its bounding rectangle when its text view resizes.
 
@@ -14,21 +15,26 @@ A Boolean that controls whether the text container adjusts the width of its boun
 var widthTracksTextView: Bool { get set }
 ```
 
+```objc
+@property BOOL widthTracksTextView;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the text container adjusts its width when the width of its text view changes. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the text container adjusts its width when the width of its text view changes. The default value of this property is [`false`](../../Swift/false.md).
 
-For more information, see [`NSTextContainer`](nstextcontainer.md).
+For more information, see [`NSTextContainer`](../nstextcontainer.md).
 
 ## See Also
 
-- [var size: CGSize](nstextcontainer/size.md)
+### Defining the container shape
+- [var size: CGSize](./size.md)
   The size of the text container’s bounding rectangle.
-- [var exclusionPaths: [NSBezierPath]](nstextcontainer/exclusionpaths.md)
+- [var exclusionPaths: [NSBezierPath]](./exclusionpaths.md)
   An array of path objects that represents the regions where text doesn’t display in the text container.
-- [var lineBreakMode: NSLineBreakMode](nstextcontainer/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The behavior of the last line inside the text container.
-- [var heightTracksTextView: Bool](nstextcontainer/heighttrackstextview.md)
+- [var heightTracksTextView: Bool](./heighttrackstextview.md)
   A Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.
 
 

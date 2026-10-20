@@ -1,7 +1,8 @@
 # isContentCaptureProtected
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether content capture is protected and it is safe to draw content that should be protected from capture.
 
@@ -12,6 +13,10 @@ Returns whether content capture is protected and it is safe to draw content that
 
 ```swift
 var isContentCaptureProtected: Bool { get }
+```
+
+```c
+bool cp_drawable_is_content_capture_protected(cp_drawable_t drawable);
 ```
 
 #### Discussion

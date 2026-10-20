@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor that produced this program.
 
@@ -25,8 +26,9 @@ Use this property to inspect the shader graph and the input or function-constant
 
 ## See Also
 
-- [PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.struct.md)
-  Configuration used to compile a [`PortalMaterial.Program`](portalmaterial/program-swift.struct.md).
+### Configuring the program
+- [PortalMaterial.Program.Descriptor](./descriptor-swift.struct.md)
+  Configuration used to compile a [`PortalMaterial.Program`](../program-swift.struct.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # blendsOutputs
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates which vertices of the tangent frame are blended in addition to positions. Currently supported: [normal|tangent]
 

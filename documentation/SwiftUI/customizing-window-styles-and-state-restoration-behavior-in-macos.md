@@ -1,6 +1,8 @@
 # Customizing window styles and state-restoration behavior in macOS
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [DestinationVideo.zip](https://docs-assets.developer.apple.com/published/08bd3c5ea0b3/DestinationVideo.zip)
 
 Configure how your app’s windows look and function in macOS to provide an engaging and more coherent experience.
 
@@ -9,15 +11,15 @@ Configure how your app’s windows look and function in macOS to provide an enga
 
 #### Overview
 
-The macOS target of [`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) demonstrates how you can leverage the window and scene customization APIs (available in macOS 15 and later) to tailor an app’s experience in macOS. This includes changing a toolbar’s appearance and visibility, extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior.
+The macOS target of [Destination Video](../visionOS/destination-video.md) demonstrates how you can leverage the window and scene customization APIs (available in macOS 15 and later) to tailor an app’s experience in macOS. This includes changing a toolbar’s appearance and visibility, extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior.
 
-![A screenshot that shows the video player window in front of Destination Video’s main window.](/images/com.apple.SwiftUI/WindowCustomizationDestinationVideo@2x.png)
+![A screenshot that shows the video player window in front of Destination Video’s main window.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/WindowCustomizationDestinationVideo@2x.png)
 
-#### Remove the Title and Background From the Windows Toolbar
+#### Remove the title and background from the window’s toolbar
 
 Destination Video uses a tab view as its main user interface component, and in macOS, this appears similar to a two-column navigation split view. In this configuration, each tab appears as an entry in the sidebar and participates in the app’s navigation. Because the sidebar provides a visual indication of where you are in that navigation hierarchy, and the app’s content doesn’t require any additional toolbar items, a toolbar isn’t necessary. Removing the toolbar can elevate the underlying content by letting it extend right up to the window’s edge.
 
-To remove the toolbar’s background, `ContentView` calls the [`toolbarBackgroundVisibility(_:for:)`](view/toolbarbackgroundvisibility(_:for:).md) view method:
+To remove the toolbar’s background, `ContentView` calls the [`toolbarBackgroundVisibility(_:for:)`](./view/toolbarbackgroundvisibility%28_,for%29.md) view method:
 
 ```swift
 .toolbarBackgroundVisibility(.hidden, for: .windowToolbar)
@@ -29,21 +31,21 @@ And then removes the toolbar’s title:
 .toolbar(removing: .title)
 ```
 
-In this instance, the app still requires the window control buttons to close or minimize the window or enter full-screen mode, so it uses individual view methods to remove only the title and bar background. To remove the toolbar entirely, use the [`toolbarVisibility(_:for:)`](view/toolbarvisibility(_:for:).md) view method instead.
+In this instance, the app still requires the window control buttons to close or minimize the window or enter full-screen mode, so it uses individual view methods to remove only the title and bar background. To remove the toolbar entirely, use the [`toolbarVisibility(_:for:)`](./view/toolbarvisibility%28_,for%29.md) view method instead.
 
 **Before**:
 
-![A window in Destination Video with a window toolbar background and title.](/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-before@2x.png)
+![A window in Destination Video with a window toolbar background and title.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-before@2x.png)
 
 **After**:
 
-![A window in Destination Video with a window toolbar background and title removed.](/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-after@2x.png)
+![A window in Destination Video with a window toolbar background and title removed.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-after@2x.png)
 
 It’s important to note that these are visual changes only. The system continues to provide the window’s title to accessibility tools such as screen readers, and the app’s Window menu continues to show the title while the window is open.
 
-#### Extend the Windows Drag Region
+#### Extend the window’s drag region
 
-To move a window in macOS, you typically drag that window’s toolbar. However, if you choose to remove the background from a toolbar, or hide the toolbar completely, use [`WindowDragGesture`](windowdraggesture.md) to extend that window’s drag region and make sure the window is still draggable.
+To move a window in macOS, you typically drag that window’s toolbar. However, if you choose to remove the background from a toolbar, or hide the toolbar completely, use [`WindowDragGesture`](./windowdraggesture.md) to extend that window’s drag region and make sure the window is still draggable.
 
 Destination Video’s `PlayerView` adds this gesture to a transparent overlay and inserts the overlay between the video content and the playback controls. This enables you to safely drag the window and not interfere with the system playback UI that AVKit provides.
 
@@ -51,19 +53,19 @@ Destination Video’s `PlayerView` adds this gesture to a transparent overlay an
 .gesture(WindowDragGesture())
 ```
 
-The player also uses the [`allowsWindowActivationEvents(_:)`](view/allowswindowactivationevents(_:).md) view method to enable the installed window drag gesture to receive events that activate the window — for example, if the window is in the background and you click it and immediately drag.
+The player also uses the [`allowsWindowActivationEvents(_:)`](./view/allowswindowactivationevents%28_%29.md) view method to enable the installed window drag gesture to receive events that activate the window — for example, if the window is in the background and you click it and immediately drag.
 
 ```swift
 .allowsWindowActivationEvents(true)
 ```
 
-#### Customize the Windows Zoom Behavior
+#### Customize the window’s zoom behavior
 
 By default, a window’s toolbar provides buttons that close the window, minimize the window, and enter full-screen mode. If you press and hold the Option key and click the green button, the window zooms instead of going full screen.
 
-![A screenshot showing a window's toolbar buttons. The green button has a popover pointing to it. The popover contains different options for arranging and sizing the window.](/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-zoom@2x.png)
+![A screenshot showing a window's toolbar buttons. The green button has a popover pointing to it. The popover contains different options for arranging and sizing the window.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-zoom@2x.png)
 
-Typically, a window zooms to either its defined maximum size, or as large as the display permits. However, you can use the [`windowIdealPlacement(_:)`](scene/windowidealplacement(_:).md) scene method to override this behavior and provide a size and position that’s more appropriate for the window’s contents. The app uses this method to provide a maximum size for the video player that maintains the video’s aspect ratio to prevent black bars appearing above and below it.
+Typically, a window zooms to either its defined maximum size, or as large as the display permits. However, you can use the [`windowIdealPlacement(_:)`](./scene/windowidealplacement%28_%29.md) scene method to override this behavior and provide a size and position that’s more appropriate for the window’s contents. The app uses this method to provide a maximum size for the video player that maintains the video’s aspect ratio to prevent black bars appearing above and below it.
 
 ```swift
 .windowIdealPlacement { proxy, context in
@@ -93,11 +95,11 @@ Typically, a window zooms to either its defined maximum size, or as large as the
 
 This implementation also ensures the zoomed window appears in the center of the display while zooming.
 
-#### Modify How the Window Participates in State Restoration
+#### Modify how the window participates in state restoration
 
 In macOS, state restoration is optional and a person enables (or disables) it systemwide in System Settings. By default, your SwiftUI app respects this setting, but you can choose to override it and specify the preferred restoration behavior for each of your app’s windows. For example, you may want to opt out of state restoration for a window that represents a transient activity, or where it’s difficult or expensive to restore the underlying state from a previous session.
 
-When running in macOS, Destination Video uses the [`SceneRestorationBehavior`](scenerestorationbehavior.md) view modifier to disable state restoration for the video player view.
+When running in macOS, Destination Video uses the [`SceneRestorationBehavior`](./scenerestorationbehavior.md) view modifier to disable state restoration for the video player view.
 
 ```swift
 .restorationBehavior(.disabled)
@@ -105,13 +107,22 @@ When running in macOS, Destination Video uses the [`SceneRestorationBehavior`](s
 
 As the app’s videos are brief, and a person’s interactions with them are short-lived, it doesn’t make sense to restore the video player on the next launch.
 
-###### Related Samples
+#### See Also
 
-###### Related Videos
+###### Related samples
+
+- [Destination Video](../visionOS/destination-video.md)
+  Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+
+###### Related videos
+
+- [Tailor macOS windows with SwiftUI](https://developer.apple.com/videos/play/wwdc2024/10148)
+  Make your windows feel tailor-made for macOS. Fine-tune your app’s windows for focused purposes, ease of use, and to express functionality. Use SwiftUI to style window toolbars and backgrounds. Arrange your windows with precision, and make smart decisions about restoration and minimization.
 
 ## See Also
 
-- [Bringing multiple windows to your SwiftUI app](bringing-multiple-windows-to-your-swiftui-app.md)
+### Essentials
+- [Bringing multiple windows to your SwiftUI app](./bringing-multiple-windows-to-your-swiftui-app.md)
   Compose rich views by reacting to state changes and customize your app’s scene presentation and behavior on iPadOS and macOS.
 
 

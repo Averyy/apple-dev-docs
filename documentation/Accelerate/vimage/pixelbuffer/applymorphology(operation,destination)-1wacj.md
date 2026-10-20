@@ -1,7 +1,8 @@
 # applyMorphology(operation:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a morphology operation to an 8-bit-per-channel, 4-channel interleaved pixel buffer.
 
@@ -11,7 +12,7 @@ Applies a morphology operation to an 8-bit-per-channel, 4-channel interleaved pi
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,6 +21,8 @@ Applies a morphology operation to an 8-bit-per-channel, 4-channel interleaved pi
 func applyMorphology(operation: vImage.MorphologyOperation<Pixel_8>, destination: vImage.PixelBuffer<Format>)
 ```
 
+Available when `Format` is `vImage.Interleaved8x4`.
+
 ## Parameters
 
 - `operation`: An enumeration that specifies the morphology operation.
@@ -27,17 +30,19 @@ func applyMorphology(operation: vImage.MorphologyOperation<Pixel_8>, destination
 
 ## See Also
 
-- [Adding a bokeh effect to images](adding-a-bokeh-effect-to-images.md)
+### Related Documentation
+- [Adding a bokeh effect to images](../../adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
-- [func applyMorphology(operation: vImage.MorphologyOperation<Pixel_8>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/applymorphology(operation:destination:)-2bbx4.md)
+### Morphology
+- [func applyMorphology(operation: vImage.MorphologyOperation<Pixel_8>, destination: vImage.PixelBuffer<Format>)](./applymorphology%28operation,destination%29-2bbx4.md)
   Applies a morphology operation to an 8-bit planar pixel buffer.
-- [func applyMorphology(operation: vImage.MorphologyOperation<Pixel_F>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/applymorphology(operation:destination:)-9f8lh.md)
+- [func applyMorphology(operation: vImage.MorphologyOperation<Pixel_F>, destination: vImage.PixelBuffer<Format>)](./applymorphology%28operation,destination%29-9f8lh.md)
   Applies a morphology operation to a 32-bit planar pixel buffer.
-- [func applyMorphology(operation: vImage.MorphologyOperation<Pixel_F>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/applymorphology(operation:destination:)-65xg3.md)
+- [func applyMorphology(operation: vImage.MorphologyOperation<Pixel_F>, destination: vImage.PixelBuffer<Format>)](./applymorphology%28operation,destination%29-65xg3.md)
   Applies a morphology operation to a 32-bit-per-channel, 4-channel interleaved pixel buffer.
-- [vImage.MorphologyOperation](vimage/morphologyoperation.md)
+- [vImage.MorphologyOperation](../morphologyoperation.md)
   Describes which morphology operation to perform.
-- [typealias StructuringElement](vimage/structuringelement.md)
+- [typealias StructuringElement](../structuringelement.md)
   A 2D matrix that represents a morphology kernel.
 
 

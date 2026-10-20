@@ -1,7 +1,8 @@
 # GameCenterGroupGameCenterAchievementsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data for updating the achievements associated with a Game Center group.
 
@@ -10,14 +11,14 @@ The resource linkage data for updating the achievements associated with a Game C
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroupGameCenterAchievementsLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievements`
 
 
 ---

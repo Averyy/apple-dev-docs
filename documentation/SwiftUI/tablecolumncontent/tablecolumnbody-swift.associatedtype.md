@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of content representing the body of this table column content.
@@ -21,7 +22,8 @@ associatedtype TableColumnBody : TableColumnContent
 
 ## See Also
 
-- [var tableColumnBody: Self.TableColumnBody](tablecolumncontent/tablecolumnbody-swift.property.md)
+### Getting the column body
+- [var tableColumnBody: Self.TableColumnBody](./tablecolumnbody-swift.property.md)
   The composition of content that comprise the table column content.
 
 

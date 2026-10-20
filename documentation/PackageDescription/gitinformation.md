@@ -1,7 +1,8 @@
 # GitInformation
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about the git status of a given package, if available.
 
@@ -17,18 +18,18 @@ struct GitInformation
 ## Topics
 
 ### Instance Properties
-- [let currentCommit: String](gitinformation/currentcommit.md)
+- [let currentCommit: String](./gitinformation/currentcommit.md)
   The commit currently checked out.
-- [let currentTag: String?](gitinformation/currenttag.md)
+- [let currentTag: String?](./gitinformation/currenttag.md)
   The version tag currently checked out, if available.
-- [let hasUncommittedChanges: Bool](gitinformation/hasuncommittedchanges.md)
+- [let hasUncommittedChanges: Bool](./gitinformation/hasuncommittedchanges.md)
   Whether or not there are uncommitted changes in the current repository.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,29 +1,31 @@
 # RunAction
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RunAction(IODispatchAction action);
 ```
 
 ## See Also
 
-- [DispatchConcurrent](iodispatchqueue/dispatchconcurrent.md)
-- [DispatchConcurrent_f](iodispatchqueue/dispatchconcurrent_f.md)
-- [Sleep](iodispatchqueue/sleep.md)
-- [SleepWithDeadline](iodispatchqueue/sleepwithdeadline.md)
-- [SleepWithTimeout](iodispatchqueue/sleepwithtimeout.md)
-- [Wakeup](iodispatchqueue/wakeup.md)
-- [WakeupWithOptions](iodispatchqueue/wakeupwithoptions.md)
+### Instance Methods
+- [DispatchConcurrent](./dispatchconcurrent.md)
+- [DispatchConcurrent_f](./dispatchconcurrent_f.md)
+- [Sleep](./sleep.md)
+- [SleepWithDeadline](./sleepwithdeadline.md)
+- [SleepWithTimeout](./sleepwithtimeout.md)
+- [Wakeup](./wakeup.md)
+- [WakeupWithOptions](./wakeupwithoptions.md)
 
 
 ---

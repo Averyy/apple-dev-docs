@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a group on the device.
 
@@ -19,13 +20,26 @@ The unique identifier for a group on the device.
 var identifier: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
 It is recommended that you use the identifier when re-fetching the group. The identifier can be persisted between app launches.
 
 ## See Also
 
-- [var name: String](cngroup/name.md)
+### Getting the Group Information
+- [var name: String](./name.md)
   The name of the group.
 
 

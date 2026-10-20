@@ -1,7 +1,8 @@
 # UITextSelectionRect
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of information about a selected range of text in a document.
 
@@ -9,7 +10,7 @@ An encapsulation of information about a selected range of text in a document.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ An encapsulation of information about a selected range of text in a document.
 ```swift
 @MainActor
 class UITextSelectionRect
+```
+
+```objc
+@interface UITextSelectionRect : NSObject
 ```
 
 #### Overview
@@ -30,40 +35,41 @@ If you are implementing a custom text input view, you can subclass and use your 
 ## Topics
 
 ### Accessing the Selection Rectangle
-- [var rect: CGRect](uitextselectionrect/rect.md)
+- [var rect: CGRect](./uitextselectionrect/rect.md)
   The rectangle that encloses the text selection rectangle’s text range.
 ### Accessing Text-Related Attributes
-- [var writingDirection: NSWritingDirection](uitextselectionrect/writingdirection.md)
+- [var writingDirection: NSWritingDirection](./uitextselectionrect/writingdirection.md)
   The writing direction of text in the text selection rectangle’s text range.
-- [var isVertical: Bool](uitextselectionrect/isvertical.md)
+- [var isVertical: Bool](./uitextselectionrect/isvertical.md)
   A Boolean value that indicates whether the text is vertical.
 ### Determining the Selection Status
-- [var containsStart: Bool](uitextselectionrect/containsstart.md)
+- [var containsStart: Bool](./uitextselectionrect/containsstart.md)
   A Boolean value that indicates whether the rectangle contains the start of the selection.
-- [var containsEnd: Bool](uitextselectionrect/containsend.md)
+- [var containsEnd: Bool](./uitextselectionrect/containsend.md)
   A Boolean value that indicates whether the rectangle contains the end of the selection.
 ### Instance Properties
-- [var transform: CGAffineTransform](uitextselectionrect/transform.md)
+- [var transform: CGAffineTransform](./uitextselectionrect/transform.md)
   Custom transform for highlight rects. This transform is assumed to be in the `textInputView` coordinate space. Default is CGAffineTransformIdentity (no transform applied).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UITextPosition](uitextposition.md)
+### Metrics
+- [class UITextPosition](./uitextposition.md)
   A position in a text container—that is, an index into the backing string in a text-display view.
-- [class UITextRange](uitextrange.md)
+- [class UITextRange](./uitextrange.md)
   A range of characters in a text container with a starting index and an ending index in string backing a text-entry object.
 
 

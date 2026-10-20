@@ -1,7 +1,8 @@
 # NERelayManagerClientError.certificateExpired
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case certificateExpired
+```
+
+```c
+NERelayManagerClientErrorCertificateExpired
 ```
 
 

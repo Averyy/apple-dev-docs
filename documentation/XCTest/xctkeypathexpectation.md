@@ -1,7 +1,8 @@
 # XCTKeyPathExpectation
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An expectation that a specific key-value observing (KVO) condition fulfills.
 
@@ -24,45 +25,47 @@ Use an instance of this class to asynchronously wait for changes to a property y
 ## Topics
 
 ### Creating key path expectations
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, expectedValue: V)](xctkeypathexpectation/init(keypath:observedobject:options:expectedvalue:).md)
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, expectedValue: V)](./xctkeypathexpectation/init%28keypath,observedobject,options,expectedvalue%29.md)
   Creates an expectation that the system fulfills when the value of the observed property changes to an expected value.
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, predicate: XCTKeyPathExpectation<T, V>.Predicate?)](xctkeypathexpectation/init(keypath:observedobject:options:predicate:).md)
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, predicate: XCTKeyPathExpectation<T, V>.Predicate?)](./xctkeypathexpectation/init%28keypath,observedobject,options,predicate%29.md)
   Creates an expectation that the system fulfills when the value of the observed property changes and satisfies the conditions of a predicate’s evaluation.
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, filter: XCTKeyPathExpectation<T, V>.SynchronousFilter?)](xctkeypathexpectation/init(keypath:observedobject:options:filter:)-plka.md)
-- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, filter: XCTKeyPathExpectation<T, V>.AsynchronousFilter?)](xctkeypathexpectation/init(keypath:observedobject:options:filter:)-8noag.md)
-- [XCTKeyPathExpectation.AsynchronousFilter](xctkeypathexpectation/asynchronousfilter.md)
-- [XCTKeyPathExpectation.SynchronousFilter](xctkeypathexpectation/synchronousfilter.md)
-- [XCTKeyPathExpectation.Predicate](xctkeypathexpectation/predicate.md)
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, filter: XCTKeyPathExpectation<T, V>.SynchronousFilter?)](./xctkeypathexpectation/init%28keypath,observedobject,options,filter%29-plka.md)
+- [convenience init(keyPath: KeyPath<T, V>, observedObject: T, options: NSKeyValueObservingOptions, filter: XCTKeyPathExpectation<T, V>.AsynchronousFilter?)](./xctkeypathexpectation/init%28keypath,observedobject,options,filter%29-8noag.md)
+- [XCTKeyPathExpectation.AsynchronousFilter](./xctkeypathexpectation/asynchronousfilter.md)
+- [XCTKeyPathExpectation.SynchronousFilter](./xctkeypathexpectation/synchronousfilter.md)
+- [XCTKeyPathExpectation.Predicate](./xctkeypathexpectation/predicate.md)
   A function the key path expectation uses to test the value of an observed property.
 ### Expectation properties
-- [let keyPath: KeyPath<T, V>](xctkeypathexpectation/keypath.md)
+- [let keyPath: KeyPath<T, V>](./xctkeypathexpectation/keypath.md)
   The key path for the observed property, relative to the observed object.
-- [let observedObject: T](xctkeypathexpectation/observedobject.md)
+- [let observedObject: T](./xctkeypathexpectation/observedobject.md)
   The object the system observes the key path on.
-- [let options: NSKeyValueObservingOptions](xctkeypathexpectation/options.md)
+- [let options: NSKeyValueObservingOptions](./xctkeypathexpectation/options.md)
   A combination of values that specify what to include in observation notifications.
-- [var expectedValue: V?](xctkeypathexpectation/expectedvalue.md)
+- [var expectedValue: V?](./xctkeypathexpectation/expectedvalue.md)
   A value that the key path’s specified property must equal to fulfill the expectation.
 
 ## Relationships
 
 ### Inherits From
-- [XCTestExpectation](xctestexpectation.md)
+- [XCTestExpectation](./xctestexpectation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using Key-Value Observing in Swift](../swift/using-key-value-observing-in-swift.md)
+### Related Documentation
+- [Using Key-Value Observing in Swift](../Swift/using-key-value-observing-in-swift.md)
   Notify objects about changes to the properties of other objects.
-- [class XCTKVOExpectation](xctkvoexpectation.md)
+### Key Value Observing Expectations
+- [class XCTKVOExpectation](./xctkvoexpectation.md)
   An expectation that a specific key-value observing (KVO) condition fulfills.
 
 

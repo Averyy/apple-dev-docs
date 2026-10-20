@@ -1,7 +1,8 @@
 # hasAmbiguousLayout
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the constraints impacting the layout guide specify its location ambiguously.
 
@@ -18,9 +19,14 @@ A Boolean value indicating whether the constraints impacting the layout guide sp
 var hasAmbiguousLayout: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAmbiguousLayout;
+```
+
 ## See Also
 
-- [func constraintsAffectingLayout(for: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]](uilayoutguide/constraintsaffectinglayout(for:).md)
+### Debugging the layout guide
+- [func constraintsAffectingLayout(for: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]](./constraintsaffectinglayout%28for%29.md)
   The constraints that impact the layout of the guide.
 
 

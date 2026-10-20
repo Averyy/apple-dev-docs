@@ -1,7 +1,8 @@
 # ResultsSection
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A section of fetched results grouped by a common section key path value.
 
@@ -24,7 +25,7 @@ struct ResultsSection<Element, SectionTitle> where Element : PersistentModel, Se
 
 Each section represents a group of elements that share the same value for the `sectionBy` key path used at creation.
 
-You access sections by iterating a [`SectionedResults`](sectionedresults.md) value returned by a sectioned `@Query`. Each section conforms to `RandomAccessCollection` — iterate it directly to access its elements, and use [`title`](resultssection/title.md) (or [`id`](resultssection/id.md)) to access the section grouping value.
+You access sections by iterating a [`SectionedResults`](./sectionedresults.md) value returned by a sectioned `@Query`. Each section conforms to `RandomAccessCollection` — iterate it directly to access its elements, and use [`title`](./resultssection/title.md) (or [`id`](./resultssection/id.md)) to access the section grouping value.
 
 ```swift
 @Query(sort: \.name, sectionBy: \.category)
@@ -40,23 +41,23 @@ ForEach(items) { section in
 ## Topics
 
 ### Accessing section properties
-- [var id: SectionTitle](resultssection/id.md)
-  The unique identifier for the section, which is its [`title`](resultssection/title.md).
+- [var id: SectionTitle](./resultssection/id.md)
+  The unique identifier for the section, which is its [`title`](./resultssection/title.md).
 ### Instance Properties
-- [let title: SectionTitle](resultssection/title.md)
+- [let title: SectionTitle](./resultssection/title.md)
   The identifier of the section.
 ### Default Implementations
-- [Equatable Implementations](resultssection/equatable-implementations.md)
+- [Equatable Implementations](./resultssection/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Equatable](../Swift/equatable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

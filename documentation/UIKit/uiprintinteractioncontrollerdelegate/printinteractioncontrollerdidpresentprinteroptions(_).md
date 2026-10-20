@@ -1,7 +1,8 @@
 # printInteractionControllerDidPresentPrinterOptions(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the device has presented the printing-options user interface.
 
@@ -17,17 +18,22 @@ Tells the delegate that the device has presented the printing-options user inter
 optional func printInteractionControllerDidPresentPrinterOptions(_ printInteractionController: UIPrintInteractionController)
 ```
 
+```objc
+- (void) printInteractionControllerDidPresentPrinterOptions:(UIPrintInteractionController *) printInteractionController;
+```
+
 ## Parameters
 
-- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) that is managing the print job.
 
 ## See Also
 
-- [func printInteractionControllerWillPresentPrinterOptions(UIPrintInteractionController)](uiprintinteractioncontrollerdelegate/printinteractioncontrollerwillpresentprinteroptions(_:).md)
+### Responding to the Presentation and Dismissal of the Printing Interface
+- [func printInteractionControllerWillPresentPrinterOptions(UIPrintInteractionController)](./printinteractioncontrollerwillpresentprinteroptions%28_%29.md)
   Tells the delegate that the device is about to display the printing-options user interface.
-- [func printInteractionControllerWillDismissPrinterOptions(UIPrintInteractionController)](uiprintinteractioncontrollerdelegate/printinteractioncontrollerwilldismissprinteroptions(_:).md)
+- [func printInteractionControllerWillDismissPrinterOptions(UIPrintInteractionController)](./printinteractioncontrollerwilldismissprinteroptions%28_%29.md)
   Tells the delegate that the device is about to dismiss the printing-options user interface.
-- [func printInteractionControllerDidDismissPrinterOptions(UIPrintInteractionController)](uiprintinteractioncontrollerdelegate/printinteractioncontrollerdiddismissprinteroptions(_:).md)
+- [func printInteractionControllerDidDismissPrinterOptions(UIPrintInteractionController)](./printinteractioncontrollerdiddismissprinteroptions%28_%29.md)
   Tells the delegate that the device is dismissing the printing-options user interface.
 
 

@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the readiness of a player object for playback.
 
@@ -21,19 +22,24 @@ nonisolated
 var status: AVPlayer.Status { get }
 ```
 
+```objc
+@property (readonly) AVPlayerStatus status;
+```
+
 #### Discussion
 
-If the value of this property is [`AVPlayer.Status.failed`](avplayer/status-swift.enum/failed.md), check the value of the player’s [`error`](avplayer/error.md) property to determine the nature of the failure. If a player reaches a failed state, you can’t use it for playback, and instead need to create a new instance.
+If the value of this property is [`AVPlayer.Status.failed`](./status-swift.enum/failed.md), check the value of the player’s [`error`](./error.md) property to determine the nature of the failure. If a player reaches a failed state, you can’t use it for playback, and instead need to create a new instance.
 
 This property is key-value observable.
 
-> **Note**:  The player’s [`status`](avplayer/status-swift.property.md) doesn’t indicate its readiness to play a specific player item. You should instead use the [`status`](avplayeritem/status-swift.property.md) property of [`AVPlayerItem`](avplayeritem.md) to make that determination.
+> **Note**:  The player’s [`status`](./status-swift.property.md) doesn’t indicate its readiness to play a specific player item. You should instead use the [`status`](../avplayeritem/status-swift.property.md) property of [`AVPlayerItem`](../avplayeritem.md) to make that determination.
 
 ## See Also
 
-- [AVPlayer.Status](avplayer/status-swift.enum.md)
+### Determining player readiness
+- [AVPlayer.Status](./status-swift.enum.md)
   Status values that indicate whether a player can successfully play media.
-- [var error: (any Error)?](avplayer/error.md)
+- [var error: (any Error)?](./error.md)
   An error that caused a failure.
 
 

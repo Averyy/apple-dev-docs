@@ -1,7 +1,8 @@
 # GCEventInteraction
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction that indicates the view’s intent to receive game controller events through the Game Controller framework.
 
@@ -17,9 +18,13 @@ An interaction that indicates the view’s intent to receive game controller eve
 class GCEventInteraction
 ```
 
+```objc
+@interface GCEventInteraction : NSObject
+```
+
 ## Mentions
 
-- [Discovering game controllers](discovering-game-controllers.md)
+- [Discovering game controllers](./discovering-game-controllers.md)
 
 #### Overview
 
@@ -32,36 +37,37 @@ If you use the Game Controller framework to handle game controller events for pa
 ## Topics
 
 ### Creating an interaction
-- [init()](gceventinteraction/init.md)
+- [init()](./gceventinteraction/init%28%29.md)
 ### Receiving view events
-- [var receivesEventsInView: Bool](gceventinteraction/receiveseventsinview.md)
+- [var receivesEventsInView: Bool](./gceventinteraction/receiveseventsinview.md)
   A Boolean value that determines whether events are delivered exclusively through the Game Controller framework.
-- [struct GameControllerEventHandlingOptions](gamecontrollereventhandlingoptions.md)
+- [struct GameControllerEventHandlingOptions](./gamecontrollereventhandlingoptions.md)
 ### Getting the event types
-- [var handledEventTypes: GCUIEventTypes](gceventinteraction/handledeventtypes.md)
+- [var handledEventTypes: GCUIEventTypes](./gceventinteraction/handledeventtypes.md)
   The types of game controller events that should be delivered through the Game Controller framework.
-- [struct GCUIEventTypes](gcuieventtypes.md)
+- [struct GCUIEventTypes](./gcuieventtypes.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIInteraction](../uikit/uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIInteraction](../UIKit/uiinteraction.md)
 
 ## See Also
 
-- [var controllerPausedHandler: ((GCController) -> Void)?](gccontroller/controllerpausedhandler.md)
+### Responding to a paused controller or controller event
+- [var controllerPausedHandler: ((GCController) -> Void)?](./gccontroller/controllerpausedhandler.md)
   The block that the framework calls when the user presses the pause button on the controller.
-- [protocol GCGameControllerSceneDelegate](gcgamecontrollerscenedelegate.md)
+- [protocol GCGameControllerSceneDelegate](./gcgamecontrollerscenedelegate.md)
 
 
 ---

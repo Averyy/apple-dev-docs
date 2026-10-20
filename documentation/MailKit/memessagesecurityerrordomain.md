@@ -1,7 +1,8 @@
 # MEMessageSecurityErrorDomain
 
 **Framework**: MailKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 let MEMessageSecurityErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const MEMessageSecurityErrorDomain;
+```
+
 ## See Also
 
-- [let MEComposeSessionErrorDomain: String](mecomposesessionerrordomain.md)
+### Constants
+- [let MEComposeSessionErrorDomain: String](./mecomposesessionerrordomain.md)
   A constant for the compose session error domain.
 
 

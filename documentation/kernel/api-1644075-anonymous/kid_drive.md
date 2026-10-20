@@ -1,14 +1,15 @@
 # kID_DRIVE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kID_DRIVE = 0x0A1
 ```
 

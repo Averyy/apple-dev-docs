@@ -1,7 +1,8 @@
 # renderTargetWidth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the width, in pixels, to which Metal constrains the render target.
 
@@ -17,6 +18,10 @@ Sets the width, in pixels, to which Metal constrains the render target.
 
 ```swift
 var renderTargetWidth: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger renderTargetWidth;
 ```
 
 #### Discussion

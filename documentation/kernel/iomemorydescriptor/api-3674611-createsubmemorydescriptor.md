@@ -1,7 +1,8 @@
 # CreateSubMemoryDescriptor
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CreateSubMemoryDescriptor(uint64_t memoryDescriptorCreateOptions, uint64_t offset, uint64_t length, IOMemoryDescriptor *ofDescriptor, IOMemoryDescriptor **memory);
 ```
 

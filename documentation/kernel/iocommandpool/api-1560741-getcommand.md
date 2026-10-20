@@ -1,7 +1,8 @@
 # getCommand
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual IOCommandPtr getCommand(bool blockForCommand);
+```
+
+*macOS*
+
+```cpp
 virtual OSPtr<IOCommand> getCommand(bool blockForCommand);
 ```
 

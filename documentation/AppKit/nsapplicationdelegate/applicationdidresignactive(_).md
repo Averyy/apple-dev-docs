@@ -1,7 +1,8 @@
 # applicationDidResignActive(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the app is no longer active and doesn’t have focus.
 
@@ -15,17 +16,22 @@ Tells the delegate that the app is no longer active and doesn’t have focus.
 optional func applicationDidResignActive(_ notification: Notification)
 ```
 
+```objc
+- (void) applicationDidResignActive:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: A notification named [`didResignActiveNotification`](nsapplication/didresignactivenotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`didResignActiveNotification`](../nsapplication/didresignactivenotification.md). Calling the [`object`](../../Foundation/nsnotification/object.md) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 
-- [func applicationWillBecomeActive(Notification)](nsapplicationdelegate/applicationwillbecomeactive(_:).md)
+### Managing Active Status
+- [func applicationWillBecomeActive(Notification)](./applicationwillbecomeactive%28_%29.md)
   Tells the delegate that the app is about to become active.
-- [func applicationDidBecomeActive(Notification)](nsapplicationdelegate/applicationdidbecomeactive(_:).md)
+- [func applicationDidBecomeActive(Notification)](./applicationdidbecomeactive%28_%29.md)
   Tells the delegate that the app is now active.
-- [func applicationWillResignActive(Notification)](nsapplicationdelegate/applicationwillresignactive(_:).md)
+- [func applicationWillResignActive(Notification)](./applicationwillresignactive%28_%29.md)
   Tells the delegate that the app is about to become inactive and will lose focus.
 
 

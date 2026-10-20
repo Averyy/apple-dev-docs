@@ -1,18 +1,19 @@
 # cancel()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously cancels the dispatch source, preventing any further invocation of its event handler block.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,11 +27,12 @@ Cancellation prevents any further invocation of the event handler block for the 
 
 ## See Also
 
-- [var isCancelled: Bool](dispatchsourceprotocol/iscancelled.md)
+### Canceling a Dispatch Source
+- [var isCancelled: Bool](./iscancelled.md)
   Returns a Boolean indicating whether the given dispatch source has been canceled.
-- [func setCancelHandler(handler: DispatchWorkItem)](dispatchsourceprotocol/setcancelhandler(handler:).md)
+- [func setCancelHandler(handler: DispatchWorkItem)](./setcancelhandler%28handler%29.md)
   Sets the cancellation handler block for the dispatch source.
-- [func setCancelHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](dispatchsourceprotocol/setcancelhandler(qos:flags:handler:).md)
+- [func setCancelHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](./setcancelhandler%28qos,flags,handler%29.md)
   Sets the cancellation handler block for the dispatch source with the specified quality-of-service class and work item options.
 
 

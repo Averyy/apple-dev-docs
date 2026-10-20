@@ -1,7 +1,8 @@
 # GestureComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component attaching a UI gesture to an entity.
 
@@ -22,23 +23,24 @@ struct GestureComponent
 ## Topics
 
 ### Initializers
-- [init(some Gesture)](gesturecomponent/init(_:).md)
+- [init(some Gesture)](./gesturecomponent/init%28_%29.md)
   Creates a gesture component with the provided UI gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+### Direct and indirect gestures
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [struct InputTargetComponent](inputtargetcomponent.md)
+- [struct InputTargetComponent](./inputtargetcomponent.md)
   A component that gives an entity the ability to receive system input.
-- [struct ManipulationComponent](manipulationcomponent.md)
+- [struct ManipulationComponent](./manipulationcomponent.md)
   A component that adds fluid and immersive interactive behaviors and effects.
-- [struct EntityTargetValue](entitytargetvalue.md)
+- [struct EntityTargetValue](./entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 
 

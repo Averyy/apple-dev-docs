@@ -1,7 +1,8 @@
 # webExtensionController(_:openNewWindowUsing:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests a new window to be opened.
 
@@ -15,7 +16,15 @@ Called when an extension context requests a new window to be opened.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, openNewWindowUsing configuration: WKWebExtension.WindowConfiguration, for extensionContext: WKWebExtensionContext, completionHandler: @escaping ((any WKWebExtensionWindow)?, (any Error)?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, openNewWindowUsing configuration: WKWebExtension.WindowConfiguration, for extensionContext: WKWebExtensionContext) async throws -> (any WKWebExtensionWindow)?
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller openNewWindowUsingConfiguration:(WKWebExtensionWindowConfiguration *) configuration forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(id<WKWebExtensionWindow>newWindow, NSError *error)) completionHandler;
 ```
 
 #### Discussion

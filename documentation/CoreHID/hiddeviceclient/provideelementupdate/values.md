@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The values used to update the elements.
 
@@ -16,7 +17,7 @@ var values: [HIDElement.Value]
 
 #### Discussion
 
-For more information, see [`HIDElement.Value`](hidelement/value.md).
+For more information, see [`HIDElement.Value`](../../hidelement/value.md).
 
 
 ---

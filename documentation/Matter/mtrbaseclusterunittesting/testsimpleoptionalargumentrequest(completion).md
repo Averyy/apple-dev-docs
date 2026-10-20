@@ -1,7 +1,8 @@
 # testSimpleOptionalArgumentRequest(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testSimpleOptionalArgumentRequest(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func testSimpleOptionalArgumentRequest() async throws
+```
+
+```objc
+- (void) testSimpleOptionalArgumentRequestWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

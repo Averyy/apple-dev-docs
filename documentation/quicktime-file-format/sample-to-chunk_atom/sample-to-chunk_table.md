@@ -1,7 +1,8 @@
 # Sample-to-chunk table
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A table that maps samples to chunks.
 
@@ -21,7 +22,7 @@ You define a sample-to-chunk table entry by specifying the following data elemen
 
 - **First chunk**: The first chunk number using this table entry.
 - **Samples per chunk**: The number of samples in each chunk.
-- **Sample description ID**: The identification number associated with the sample description for the sample. For details on sample description atoms, see [`Sample description atom`](sample_description_atom.md).
+- **Sample description ID**: The identification number associated with the sample description for the sample. For details on sample description atoms, see [`Sample description atom`](../sample_description_atom.md).
 
 An example of a sample-to-chunk table is as follows.
 
@@ -35,15 +36,16 @@ Each table entry corresponds to a set of consecutive chunks, each of which conta
 
 ## See Also
 
-- [Size](sample-to-chunk_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this sample-to-chunk atom.
-- [Type](sample-to-chunk_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](sample-to-chunk_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this sample-to-chunk atom.
-- [Flags](sample-to-chunk_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for sample-to-chunk flags.
-- [Number of entries](sample-to-chunk_atom/number_of_entries.md)
+- [Number of entries](./number_of_entries.md)
   A 32-bit integer containing the count of entries in the sample-to-chunk table.
 
 

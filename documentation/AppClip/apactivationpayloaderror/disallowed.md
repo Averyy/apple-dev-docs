@@ -1,7 +1,8 @@
 # disallowed
 
 **Framework**: App Clips  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user denied location access, or the source of the App Clip invocation wasn’t an NFC tag or visual code.
 
@@ -18,9 +19,10 @@ static var disallowed: APActivationPayloadError.Code { get }
 
 ## See Also
 
-- [static var doesNotMatch: APActivationPayloadError.Code](apactivationpayloaderror/doesnotmatch.md)
+### Interpreting errors
+- [static var doesNotMatch: APActivationPayloadError.Code](./doesnotmatch.md)
   The provided URL doesn’t match the invocation URL you registered for the App Clip.
-- [APActivationPayloadError.Code](apactivationpayloaderror/code.md)
+- [APActivationPayloadError.Code](./code.md)
   Error codes that an App Clip activation payload returns.
 
 

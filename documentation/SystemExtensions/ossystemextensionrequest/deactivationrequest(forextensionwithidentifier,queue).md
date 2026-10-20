@@ -1,7 +1,8 @@
 # deactivationRequest(forExtensionWithIdentifier:queue:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a request to deactivate a System Extension.
 
@@ -14,9 +15,13 @@ Creates a request to deactivate a System Extension.
 class func deactivationRequest(forExtensionWithIdentifier identifier: String, queue: dispatch_queue_t) -> Self
 ```
 
+```objc
++ (instancetype) deactivationRequestForExtension:(NSString *) identifier queue:(dispatch_queue_t) queue;
+```
+
 ## Mentions
 
-- [Installing System Extensions and Drivers](installing-system-extensions-and-drivers.md)
+- [Installing System Extensions and Drivers](../installing-system-extensions-and-drivers.md)
 
 #### Discussion
 
@@ -31,7 +36,8 @@ A deactivation request may require a restart before deactivating the extension. 
 
 ## See Also
 
-- [class func activationRequest(forExtensionWithIdentifier: String, queue: dispatch_queue_t) -> Self](ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:).md)
+### Creating Requests
+- [class func activationRequest(forExtensionWithIdentifier: String, queue: dispatch_queue_t) -> Self](./activationrequest%28forextensionwithidentifier,queue%29.md)
   Creates a request to activate a System Extension.
 
 

@@ -1,20 +1,25 @@
 # MPSDeviceSupportsNorm16BicubicFiltering
 
 **Framework**: Metal Performance Shaders  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var MPSDeviceSupportsNorm16BicubicFiltering: MPSDeviceCapsValues { get }
+```
+
+```c
+MPSDeviceSupportsNorm16BicubicFiltering
 ```
 
 

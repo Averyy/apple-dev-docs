@@ -1,7 +1,8 @@
 # pointOfInterest
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point of interest.
 
@@ -11,7 +12,7 @@ A point of interest.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ A point of interest, such as a museum, café, park, or school.
 
 ## See Also
 
-- [static var physicalFeature: MapFeature.FeatureKind](mapfeature/featurekind/physicalfeature.md)
+### Kinds of features
+- [static var physicalFeature: MapFeature.FeatureKind](./physicalfeature.md)
   A physical map feature.
-- [static var territory: MapFeature.FeatureKind](mapfeature/featurekind/territory.md)
+- [static var territory: MapFeature.FeatureKind](./territory.md)
   A territory or political boundary.
 
 

@@ -1,7 +1,8 @@
 # gammaLevel
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The gamma level for the image buffer.
 

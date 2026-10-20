@@ -1,7 +1,8 @@
 # WellKnown
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of available servers used for authentication.
 
@@ -12,14 +13,14 @@ A list of available servers used for authentication.
 
 ## Declaration
 
-```swift
+```
 object WellKnown
 ```
 
 ## Topics
 
 ### Supporting Objects
-- [object WellKnown.AvailableServer](wellknown/availableserver.md)
+- [object WellKnown.AvailableServer](./wellknown/availableserver.md)
   The configuration details for an authentication server.
 
 ## Properties

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object for the playback coordinator.
 
@@ -19,9 +20,14 @@ A delegate object for the playback coordinator.
 weak var delegate: (any AVPlayerPlaybackCoordinatorDelegate)? { get set }
 ```
 
+```objc
+@property (weak) id<AVPlayerPlaybackCoordinatorDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVPlayerPlaybackCoordinatorDelegate](avplayerplaybackcoordinatordelegate.md)
+### Configuring the delegate
+- [protocol AVPlayerPlaybackCoordinatorDelegate](../avplayerplaybackcoordinatordelegate.md)
   A protocol that defines the methods to implement to participate in playback coordination.
 
 

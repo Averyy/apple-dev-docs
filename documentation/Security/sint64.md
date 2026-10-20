@@ -1,7 +1,8 @@
 # sint64
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias sint64 = Int64
+```
+
+```c
+typedef int64_t sint64;
 ```
 
 

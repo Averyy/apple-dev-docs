@@ -1,20 +1,22 @@
 # InputMethodKit Constants
 
-**Framework**: InputMethodKit
+**Framework**: InputMethodKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](imkcandidatessendserverkeyeventfirst.md)
-- [let IMKControllerClass: String](imkcontrollerclass.md)
-- [let IMKDelegateClass: String](imkdelegateclass.md)
-- [let IMKModeDictionary: String](imkmodedictionary.md)
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+- [let IMKCandidatesSendServerKeyEventFirst: String](./imkcandidatessendserverkeyeventfirst.md)
+- [let IMKControllerClass: String](./imkcontrollerclass.md)
+- [let IMKDelegateClass: String](./imkdelegateclass.md)
+- [let IMKModeDictionary: String](./imkmodedictionary.md)
 
 ## See Also
 
-- [InputMethodKit Enumerations](inputmethodkit-enumerations.md)
-- [InputMethodKit Data Types](inputmethodkit-data_types.md)
+### Reference
+- [InputMethodKit Enumerations](./inputmethodkit-enumerations.md)
+- [InputMethodKit Data Types](./inputmethodkit-data_types.md)
 
 
 ---

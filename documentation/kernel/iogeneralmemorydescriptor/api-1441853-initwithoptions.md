@@ -1,14 +1,15 @@
 # initWithOptions
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithOptions(void *buffers, UInt32 count, UInt32 offset, task_t task, IOOptionBits options, IOMapper *mapper);
 ```
 

@@ -1,17 +1,22 @@
 # openTransportConnection(_:selectorTarget:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An OBEXSession override. When this is called by the session baseclass, we will attempt to open the transport connection. In our case, this would be an RFCOMM channel to another Bluetooth device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openTransportConnection(_ inSelector: Selector!, selectorTarget inTarget: Any!, refCon inUserRefCon: UnsafeMutableRawPointer!) -> OBEXError
+```
+
+```objc
+- (OBEXError) openTransportConnection:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
 #### Discussion

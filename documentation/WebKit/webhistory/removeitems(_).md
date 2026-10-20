@@ -1,12 +1,13 @@
 # removeItems(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified items from the web history.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Removes the specified items from the web history.
 func removeItems(_ items: [Any]!)
 ```
 
+```objc
+- (void) removeItems:(NSArray *) items;
+```
+
 #### Discussion
 
-When successful, this method posts a notification ([`WebHistoryItemsRemovedNotification`](webhistoryitemsremovednotification.md)).
+When successful, this method posts a notification ([`WebHistoryItemsRemovedNotification`](../webhistoryitemsremovednotification.md)).
 
 ## Parameters
 
@@ -24,9 +29,10 @@ When successful, this method posts a notification ([`WebHistoryItemsRemovedNotif
 
 ## See Also
 
-- [func addItems([Any]!)](webhistory/additems(_:).md)
+### Adding and Removing History Items
+- [func addItems([Any]!)](./additems%28_%29.md)
   Inserts or updates the specified items in the web history.
-- [func removeAllItems()](webhistory/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items from the web history.
 
 

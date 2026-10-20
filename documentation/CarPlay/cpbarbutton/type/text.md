@@ -1,7 +1,8 @@
 # CPBarButton.Type.text
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A text style bar button.
 
@@ -16,9 +17,14 @@ A text style bar button.
 case text
 ```
 
+```c
+CPBarButtonTypeText
+```
+
 ## See Also
 
-- [CPBarButton.Type.image](cpbarbutton/type/image.md)
+### Button Types
+- [CPBarButton.Type.image](./image.md)
   An image style bar button.
 
 

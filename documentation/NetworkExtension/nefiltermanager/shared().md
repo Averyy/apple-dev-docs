@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Access the single instance of `NEFilterManager`.
 
@@ -18,17 +19,22 @@ Access the single instance of `NEFilterManager`.
 class func shared() -> NEFilterManager
 ```
 
+```objc
++ (NEFilterManager *) sharedManager;
+```
+
 #### Return Value
 
 The `NEFilterManager` instance for the calling application.
 
 ## See Also
 
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nefiltermanager/loadfrompreferences(completionhandler:).md)
+### Managing the filter configuration
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Load the filter configuration from the Network Extension preferences.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](nefiltermanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./savetopreferences%28completionhandler%29.md)
   Save the filter configuration in the Network Extension preferences.
-- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](nefiltermanager/removefrompreferences(completionhandler:).md)
+- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](./removefrompreferences%28completionhandler%29.md)
   Remove the filter configuration from the Network Extension preferences.
 
 

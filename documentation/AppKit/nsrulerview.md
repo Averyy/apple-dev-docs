@@ -1,17 +1,22 @@
 # NSRulerView
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A ruler and the markers above or to the side of a scroll view’s document view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class NSRulerView
+```
+
+```objc
+@interface NSRulerView : NSView
 ```
 
 #### Overview
@@ -26,16 +31,16 @@ Views within the scroll view can become clients of the ruler view, having it dis
 
 ##### Creation
 
-- [`hasHorizontalRuler`](nsscrollview/hashorizontalruler.md) (`NSScrollView`)
-- [`hasVerticalRuler`](nsscrollview/hasverticalruler.md) (`NSScrollView`)
-- [`init(scrollView:orientation:)`](nsrulerview/init(scrollview:orientation:).md) Designated initializer.
+- [`hasHorizontalRuler`](./nsscrollview/hashorizontalruler.md) (`NSScrollView`)
+- [`hasVerticalRuler`](./nsscrollview/hasverticalruler.md) (`NSScrollView`)
+- [`init(scrollView:orientation:)`](./nsrulerview/init%28scrollview,orientation%29.md) Designated initializer.
 
 ##### Commonly Used Methods
 
-- **[`clientView`](nsrulerview/clientview.md)**: Changes the ruler’s client view.
-- **[`markers`](nsrulerview/markers.md)**: Sets the markers displayed by the ruler view.
-- **[`accessoryView`](nsrulerview/accessoryview.md)**: Sets the accessory view.
-- **[`trackMarker(_:withMouseEvent:)`](nsrulerview/trackmarker(_:withmouseevent:).md)**: Allows the user to add a new marker.
+- **[`clientView`](./nsrulerview/clientview.md)**: Changes the ruler’s client view.
+- **[`markers`](./nsrulerview/markers.md)**: Sets the markers displayed by the ruler view.
+- **[`accessoryView`](./nsrulerview/accessoryview.md)**: Sets the accessory view.
+- **[`trackMarker(_:withMouseEvent:)`](./nsrulerview/trackmarker%28_,withmouseevent%29.md)**: Allows the user to add a new marker.
 
 ##### Overview
 
@@ -44,90 +49,91 @@ See NSRulerMarkerClientViewDelegation for delegate methods that may be of intere
 ## Topics
 
 ### Creating a Ruler View
-- [init(scrollView: NSScrollView?, orientation: NSRulerView.Orientation)](nsrulerview/init(scrollview:orientation:).md)
+- [init(scrollView: NSScrollView?, orientation: NSRulerView.Orientation)](./nsrulerview/init%28scrollview,orientation%29.md)
   Initializes a newly allocated NSRulerView to have `orientation` (`NSHorizontalRuler` or `NSVerticalRuler`) within `aScrollView`.
-- [init(coder: NSCoder)](nsrulerview/init(coder:).md)
+- [init(coder: NSCoder)](./nsrulerview/init%28coder%29.md)
 ### Altering measurement units
-- [class func registerUnit(withName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])](nsrulerview/registerunit(withname:abbreviation:unittopointsconversionfactor:stepupcycle:stepdowncycle:).md)
+- [class func registerUnit(withName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])](./nsrulerview/registerunit%28withname,abbreviation,unittopointsconversionfactor,stepupcycle,stepdowncycle%29.md)
   Registers a new unit of measurement with the NSRulerView class, making it available to all instances of NSRulerView.
-- [var measurementUnits: NSRulerView.UnitName](nsrulerview/measurementunits.md)
+- [var measurementUnits: NSRulerView.UnitName](./nsrulerview/measurementunits.md)
   The measurement units used by the ruler to `unitName`.
-- [NSRulerView.UnitName](nsrulerview/unitname.md)
+- [NSRulerView.UnitName](./nsrulerview/unitname.md)
 ### Setting the client view
-- [var clientView: NSView?](nsrulerview/clientview.md)
+- [var clientView: NSView?](./nsrulerview/clientview.md)
   The receiver’s client view, if it has one.
 ### Setting an accessory view
-- [var accessoryView: NSView?](nsrulerview/accessoryview.md)
+- [var accessoryView: NSView?](./nsrulerview/accessoryview.md)
   The receiver’s accessory view to `aView`.
 ### Setting the zero mark position
-- [var originOffset: CGFloat](nsrulerview/originoffset.md)
+- [var originOffset: CGFloat](./nsrulerview/originoffset.md)
   The distance to the zero hash mark from the bounds origin of the NSScrollView’s document view (not of the receiver’s client view), in the document view’s coordinate system.
 ### Adding and removing markers
-- [var markers: [NSRulerMarker]?](nsrulerview/markers.md)
+- [var markers: [NSRulerMarker]?](./nsrulerview/markers.md)
   The receiver’s ruler markers to `markers`, removing any existing ruler markers and not consulting with the client view about the new markers.
-- [func addMarker(NSRulerMarker)](nsrulerview/addmarker(_:).md)
+- [func addMarker(NSRulerMarker)](./nsrulerview/addmarker%28_%29.md)
   Adds `aMarker` to the receiver, without consulting the client view for approval.
-- [func removeMarker(NSRulerMarker)](nsrulerview/removemarker(_:).md)
+- [func removeMarker(NSRulerMarker)](./nsrulerview/removemarker%28_%29.md)
   Removes `aMarker` from the receiver, without consulting the client view for approval.
-- [func trackMarker(NSRulerMarker, withMouseEvent: NSEvent) -> Bool](nsrulerview/trackmarker(_:withmouseevent:).md)
+- [func trackMarker(NSRulerMarker, withMouseEvent: NSEvent) -> Bool](./nsrulerview/trackmarker%28_,withmouseevent%29.md)
   Tracks the mouse to add `aMarker` based on the initial mouse-down or mouse-dragged event `theEvent`.
 ### Drawing temporary ruler lines
-- [func moveRulerline(fromLocation: CGFloat, toLocation: CGFloat)](nsrulerview/moverulerline(fromlocation:tolocation:).md)
+- [func moveRulerline(fromLocation: CGFloat, toLocation: CGFloat)](./nsrulerview/moverulerline%28fromlocation,tolocation%29.md)
   Draws temporary lines in the ruler area.
 ### Drawing
-- [func drawHashMarksAndLabels(in: NSRect)](nsrulerview/drawhashmarksandlabels(in:).md)
+- [func drawHashMarksAndLabels(in: NSRect)](./nsrulerview/drawhashmarksandlabels%28in%29.md)
   Draws the receiver’s hash marks and labels in `aRect`, which is expressed in the receiver’s coordinate system.
-- [func drawMarkers(in: NSRect)](nsrulerview/drawmarkers(in:).md)
+- [func drawMarkers(in: NSRect)](./nsrulerview/drawmarkers%28in%29.md)
   Draws the receiver’s markers in `aRect`, which is expressed in the receiver’s coordinate system.
-- [func invalidateHashMarks()](nsrulerview/invalidatehashmarks.md)
+- [func invalidateHashMarks()](./nsrulerview/invalidatehashmarks%28%29.md)
   Forces recalculation of the hash mark spacing for the next time the receiver is displayed.
 ### Ruler layout
-- [var scrollView: NSScrollView?](nsrulerview/scrollview.md)
+- [var scrollView: NSScrollView?](./nsrulerview/scrollview.md)
   The NSScrollView that owns the receiver to `scrollView`, without retaining it.
-- [var orientation: NSRulerView.Orientation](nsrulerview/orientation-swift.property.md)
+- [var orientation: NSRulerView.Orientation](./nsrulerview/orientation-swift.property.md)
   The orientation of the receiver to `orientation`.
-- [NSRulerView.Orientation](nsrulerview/orientation-swift.enum.md)
-  These constants are defined to specify a ruler’s orientation and are used by [`orientation`](nsrulerview/orientation-swift.property.md).
-- [var reservedThicknessForAccessoryView: CGFloat](nsrulerview/reservedthicknessforaccessoryview.md)
+- [NSRulerView.Orientation](./nsrulerview/orientation-swift.enum.md)
+  These constants are defined to specify a ruler’s orientation and are used by [`orientation`](./nsrulerview/orientation-swift.property.md).
+- [var reservedThicknessForAccessoryView: CGFloat](./nsrulerview/reservedthicknessforaccessoryview.md)
   The room available for the receiver’s accessory view to `thickness`.
-- [var reservedThicknessForMarkers: CGFloat](nsrulerview/reservedthicknessformarkers.md)
+- [var reservedThicknessForMarkers: CGFloat](./nsrulerview/reservedthicknessformarkers.md)
   The room available for ruler markers to `thickness`.
-- [var ruleThickness: CGFloat](nsrulerview/rulethickness.md)
+- [var ruleThickness: CGFloat](./nsrulerview/rulethickness.md)
   The thickness of the area where ruler hash marks and labels are drawn.
-- [var requiredThickness: CGFloat](nsrulerview/requiredthickness.md)
+- [var requiredThickness: CGFloat](./nsrulerview/requiredthickness.md)
   The thickness needed for proper tiling of the receiver within an NSScrollView.
-- [var baselineLocation: CGFloat](nsrulerview/baselinelocation.md)
+- [var baselineLocation: CGFloat](./nsrulerview/baselinelocation.md)
   The location of the receiver’s baseline, in its own coordinate system.
-- [var isFlipped: Bool](nsrulerview/isflipped.md)
+- [var isFlipped: Bool](./nsrulerview/isflipped.md)
   A Boolean that indicates if the ruler view’s coordinate system is flipped.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](nsview.md)
+- [NSView](./nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSRulerMarker](nsrulermarker.md)
+### Rulers
+- [class NSRulerMarker](./nsrulermarker.md)
   A symbol on a ruler view, indicating a location for the graphics element it represents in the client of the ruler view.
 
 

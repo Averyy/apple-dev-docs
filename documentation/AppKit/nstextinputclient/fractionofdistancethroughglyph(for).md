@@ -1,7 +1,8 @@
 # fractionOfDistanceThroughGlyph(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the fraction of the distance from the left side of the character to the right side that a given point lies.
 
@@ -12,6 +13,10 @@ Returns the fraction of the distance from the left side of the character to the 
 
 ```swift
 optional func fractionOfDistanceThroughGlyph(for point: NSPoint) -> CGFloat
+```
+
+```objc
+- (CGFloat) fractionOfDistanceThroughGlyphForPoint:(NSPoint) point;
 ```
 
 #### Return Value
@@ -32,13 +37,14 @@ For example, if the glyph stream contains the glyphs “A” and “b”, with t
 
 ## See Also
 
-- [func characterIndex(for: NSPoint) -> Int](nstextinputclient/characterindex(for:).md)
+### Getting character coordinates
+- [func characterIndex(for: NSPoint) -> Int](./characterindex%28for%29.md)
   Returns the index of the character whose bounding rectangle includes the given point.
-- [func firstRect(forCharacterRange: NSRange, actualRange: NSRangePointer?) -> NSRect](nstextinputclient/firstrect(forcharacterrange:actualrange:).md)
+- [func firstRect(forCharacterRange: NSRange, actualRange: NSRangePointer?) -> NSRect](./firstrect%28forcharacterrange,actualrange%29.md)
   Returns the first logical boundary rectangle for characters in the given range.
-- [func baselineDeltaForCharacter(at: Int) -> CGFloat](nstextinputclient/baselinedeltaforcharacter(at:).md)
-  Returns the baseline position of a given character relative to the origin of rectangle returned by [`firstRect(forCharacterRange:actualRange:)`](nstextinputclient/firstrect(forcharacterrange:actualrange:).md).
-- [func drawsVerticallyForCharacter(at: Int) -> Bool](nstextinputclient/drawsverticallyforcharacter(at:).md)
+- [func baselineDeltaForCharacter(at: Int) -> CGFloat](./baselinedeltaforcharacter%28at%29.md)
+  Returns the baseline position of a given character relative to the origin of rectangle returned by [`firstRect(forCharacterRange:actualRange:)`](./firstrect%28forcharacterrange,actualrange%29.md).
+- [func drawsVerticallyForCharacter(at: Int) -> Bool](./drawsverticallyforcharacter%28at%29.md)
   Informs the text input management system whether the protocol-conforming client renders the character at the given index vertically.
 
 

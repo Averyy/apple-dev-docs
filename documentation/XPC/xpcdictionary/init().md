@@ -1,0 +1,35 @@
+# init()
+
+**Framework**: XPC  
+**Kind**: init  
+**Role**: Initializer
+
+Creates an empty dictionary.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+init()
+```
+
+## See Also
+
+### Creating a dictionary
+- [init(xpc_object_t)](./init%28_%29.md)
+  Creates a dictionary using the keys and values in the specified object parameter.
+- [func copy(into: XPCDictionary)](./copy%28into%29.md)
+  Copies the keys and values of the dictionary to a different dictionary.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/xpc/xpcdictionary/init())*

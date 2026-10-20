@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The composition of content that comprise the table column content.
@@ -22,7 +23,8 @@ var tableColumnBody: Self.TableColumnBody { get }
 
 ## See Also
 
-- [associatedtype TableColumnBody : TableColumnContent](tablecolumncontent/tablecolumnbody-swift.associatedtype.md)
+### Getting the column body
+- [associatedtype TableColumnBody : TableColumnContent](./tablecolumnbody-swift.associatedtype.md)
   The type of content representing the body of this table column content.
 
 

@@ -1,7 +1,8 @@
 # skipToNextEntry()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts playback of the next entry in the playback queue.
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric value of this time code, or `nil` if it is the default time code.
 

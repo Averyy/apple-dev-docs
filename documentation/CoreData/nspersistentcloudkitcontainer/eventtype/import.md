@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainer.EventType.import
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event the persistent CloudKit container generates when importing records into a store.
 
@@ -20,11 +21,16 @@ An event the persistent CloudKit container generates when importing records into
 case `import`
 ```
 
+```c
+NSPersistentCloudKitContainerEventTypeImport
+```
+
 ## See Also
 
-- [NSPersistentCloudKitContainer.EventType.setup](nspersistentcloudkitcontainer/eventtype/setup.md)
+### Event Types
+- [NSPersistentCloudKitContainer.EventType.setup](./setup.md)
   An event the persistent CloudKit container generates when setting up a store.
-- [NSPersistentCloudKitContainer.EventType.export](nspersistentcloudkitcontainer/eventtype/export.md)
+- [NSPersistentCloudKitContainer.EventType.export](./export.md)
   An event the persistent CloudKit container generates when exporting managed objects from a store.
 
 

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the game activity.
 
@@ -19,9 +20,14 @@ The state of the game activity.
 var state: GKGameActivity.State { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) GKGameActivityState state;
+```
+
 ## See Also
 
-- [GKGameActivity.State](gkgameactivity/state-swift.enum.md)
+### Getting the activity state
+- [GKGameActivity.State](./state-swift.enum.md)
   The state of a game activity.
 
 

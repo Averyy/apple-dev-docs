@@ -1,7 +1,8 @@
 # mapTemplate(_:willShareDestinationFor:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a trip’s destination is about to be shared to the vehicle
 
@@ -14,6 +15,10 @@ Called when a trip’s destination is about to be shared to the vehicle
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, willShareDestinationFor trip: CPTrip)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate willShareDestinationForTrip:(CPTrip *) trip;
 ```
 
 

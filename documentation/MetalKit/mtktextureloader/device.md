@@ -1,7 +1,8 @@
 # device
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device object that the texture loader uses to create textures.
 
@@ -19,9 +20,14 @@ The device object that the texture loader uses to create textures.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice)](mtktextureloader/init(device:).md)
+### Creating a Texture Loader
+- [init(device: any MTLDevice)](./init%28device%29.md)
   Initializes a new texture loader object.
 
 

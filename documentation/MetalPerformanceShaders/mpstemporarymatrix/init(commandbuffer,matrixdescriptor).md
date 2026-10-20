@@ -1,7 +1,8 @@
 # init(commandBuffer:matrixDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(commandBuffer: any MTLCommandBuffer, matrixDescriptor: MPSMatrixDescriptor)
+```
+
+```objc
++ (instancetype) temporaryMatrixWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer matrixDescriptor:(MPSMatrixDescriptor *) matrixDescriptor;
 ```
 
 

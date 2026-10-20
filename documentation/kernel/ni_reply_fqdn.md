@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ni_reply_fqdn {
     ...
 };
@@ -17,9 +17,9 @@ struct ni_reply_fqdn {
 ## Topics
 
 ### Instance Properties
-- [ni_fqdn_name](ni_reply_fqdn/3754194-ni_fqdn_name.md)
-- [ni_fqdn_namelen](ni_reply_fqdn/3754195-ni_fqdn_namelen.md)
-- [ni_fqdn_ttl](ni_reply_fqdn/3754196-ni_fqdn_ttl.md)
+- [ni_fqdn_name](./ni_reply_fqdn/api-3754194-ni_fqdn_name.md)
+- [ni_fqdn_namelen](./ni_reply_fqdn/api-3754195-ni_fqdn_namelen.md)
+- [ni_fqdn_ttl](./ni_reply_fqdn/api-3754196-ni_fqdn_ttl.md)
 
 
 ---

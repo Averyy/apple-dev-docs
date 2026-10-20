@@ -1,7 +1,8 @@
 # MPMediaPlaylistPropertyDescriptionText
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Descriptive text for the playlist.
 
@@ -9,7 +10,7 @@ Descriptive text for the playlist.
 - iOS 9.3+
 - iPadOS 9.3+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - tvOS 9.2+
 - visionOS 1.0+
 - watchOS 2.2+
@@ -20,23 +21,28 @@ Descriptive text for the playlist.
 let MPMediaPlaylistPropertyDescriptionText: String
 ```
 
+```c
+extern NSString * const MPMediaPlaylistPropertyDescriptionText;
+```
+
 #### Discussion
 
-Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
+Value is an [`NSString`](../Foundation/nsstring.md) object.
 
 ## See Also
 
-- [let MPMediaPlaylistPropertyAuthorDisplayName: String](mpmediaplaylistpropertyauthordisplayname.md)
+### Property keys
+- [let MPMediaPlaylistPropertyAuthorDisplayName: String](./mpmediaplaylistpropertyauthordisplayname.md)
   App defined name for the playlist.
-- [let MPMediaPlaylistPropertyName: String](mpmediaplaylistpropertyname.md)
+- [let MPMediaPlaylistPropertyName: String](./mpmediaplaylistpropertyname.md)
   The name of the playlist.
-- [let MPMediaPlaylistPropertyPersistentID: String](mpmediaplaylistpropertypersistentid.md)
+- [let MPMediaPlaylistPropertyPersistentID: String](./mpmediaplaylistpropertypersistentid.md)
   The persistent identifier for the playlist.
-- [let MPMediaPlaylistPropertyPlaylistAttributes: String](mpmediaplaylistpropertyplaylistattributes.md)
+- [let MPMediaPlaylistPropertyPlaylistAttributes: String](./mpmediaplaylistpropertyplaylistattributes.md)
   The attributes associated with the playlist.
-- [let MPMediaPlaylistPropertyCloudGlobalID: String](mpmediaplaylistpropertycloudglobalid.md)
+- [let MPMediaPlaylistPropertyCloudGlobalID: String](./mpmediaplaylistpropertycloudglobalid.md)
   The cloud identifier for the playlist.
-- [let MPMediaPlaylistPropertySeedItems: String](mpmediaplaylistpropertyseeditems.md)
+- [let MPMediaPlaylistPropertySeedItems: String](./mpmediaplaylistpropertyseeditems.md)
   The items seeded to generate the playlist; applies only to Genius playlists.
 
 

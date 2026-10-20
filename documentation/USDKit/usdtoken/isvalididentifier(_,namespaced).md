@@ -1,7 +1,8 @@
 # isValidIdentifier(_:namespaced:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the given string is a valid USD identifier.
 

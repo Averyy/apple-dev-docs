@@ -1,7 +1,8 @@
 # HKMetadataKeyAudioExposureLevel
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The audio level associated with an audio event.
 
@@ -19,9 +20,13 @@ The audio level associated with an audio event.
 let HKMetadataKeyAudioExposureLevel: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAudioExposureLevel;
+```
+
 #### Discussion
 
-Use this key on audio exposure events. It takes an [`HKQuantity`](hkquantity.md) containing the audio level measured in [`decibelAWeightedSoundPressureLevel()`](hkunit/decibelaweightedsoundpressurelevel().md) units.
+Use this key on audio exposure events. It takes an [`HKQuantity`](./hkquantity.md) containing the audio level measured in [`decibelAWeightedSoundPressureLevel()`](./hkunit/decibelaweightedsoundpressurelevel%28%29.md) units.
 
 
 ---

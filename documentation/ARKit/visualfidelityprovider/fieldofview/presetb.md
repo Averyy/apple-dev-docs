@@ -1,7 +1,8 @@
 # presetB
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Preset field of view B.
 

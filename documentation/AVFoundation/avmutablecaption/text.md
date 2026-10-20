@@ -1,7 +1,8 @@
 # text
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The caption text.
 
@@ -17,9 +18,14 @@ The caption text.
 var text: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * text;
+```
+
 ## See Also
 
-- [var timeRange: CMTimeRange](avmutablecaption/timerange.md)
+### Configuring text and timing
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range over which the system presents the caption.
 
 

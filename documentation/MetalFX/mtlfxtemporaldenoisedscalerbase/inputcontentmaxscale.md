@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum input content scale this scaler supports.
@@ -17,6 +18,10 @@ The maximum input content scale this scaler supports.
 
 ```swift
 var inputContentMaxScale: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float inputContentMaxScale;
 ```
 
 

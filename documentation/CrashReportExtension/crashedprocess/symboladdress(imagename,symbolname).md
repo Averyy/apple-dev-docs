@@ -1,7 +1,8 @@
 # symbolAddress(imageName:symbolName:)
 
 **Framework**: CrashReportExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Looks up a symbol’s address by name.
 
@@ -9,9 +10,9 @@ Looks up a symbol’s address by name.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

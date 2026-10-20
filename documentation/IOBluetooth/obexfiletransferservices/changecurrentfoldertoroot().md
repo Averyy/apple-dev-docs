@@ -1,17 +1,22 @@
 # changeCurrentFolderToRoot()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously change to the remote root directory
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func changeCurrentFolderToRoot() -> OBEXError
+```
+
+```objc
+- (OBEXError) changeCurrentFolderToRoot;
 ```
 
 #### Discussion

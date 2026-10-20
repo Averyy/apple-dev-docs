@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidFailToAnchor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event that triggers on an entity when pending anchor encounters an error.
 
@@ -22,17 +23,17 @@ struct DidFailToAnchor
 ## Topics
 
 ### Instance Properties
-- [let entity: Entity](anchorstateevents/didfailtoanchor/entity.md)
-- [let reason: AnchorStateEvents.DidFailToAnchor.Reason](anchorstateevents/didfailtoanchor/reason-swift.property.md)
+- [let entity: Entity](./didfailtoanchor/entity.md)
+- [let reason: AnchorStateEvents.DidFailToAnchor.Reason](./didfailtoanchor/reason-swift.property.md)
 ### Enumerations
-- [AnchorStateEvents.DidFailToAnchor.Reason](anchorstateevents/didfailtoanchor/reason-swift.enum.md)
+- [AnchorStateEvents.DidFailToAnchor.Reason](./didfailtoanchor/reason-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

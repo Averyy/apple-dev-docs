@@ -1,7 +1,8 @@
 # init(texture:level:slice:depthPlane:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture reference with the given texture, mip level, slice, and depth plane.
 

@@ -1,18 +1,19 @@
 # COMPRESSION_STREAM_DECODE
 
 **Framework**: Compression  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant indicating a decompression operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A constant indicating a decompression operation.
 var COMPRESSION_STREAM_DECODE: compression_stream_operation { get }
 ```
 
+```c
+COMPRESSION_STREAM_DECODE
+```
+
 ## See Also
 
-- [var COMPRESSION_STREAM_ENCODE: compression_stream_operation](compression_stream_encode.md)
+### Operation Constants
+- [var COMPRESSION_STREAM_ENCODE: compression_stream_operation](./compression_stream_encode.md)
   A constant indicating a compression operation.
 
 

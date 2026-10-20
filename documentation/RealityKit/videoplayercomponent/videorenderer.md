@@ -1,7 +1,8 @@
 # videoRenderer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The componentâ€™s video renderer.
 
@@ -25,13 +26,14 @@ Pass this renderer to the component as a parameter in the initializer; you canâ€
 
 ## See Also
 
-- [var avPlayer: AVPlayer?](videoplayercomponent/avplayer.md)
+### Accessing video player properties
+- [var avPlayer: AVPlayer?](./avplayer.md)
   The AV player that the component plays.
-- [var playerScreenSize: SIMD2<Float>](videoplayercomponent/playerscreensize.md)
+- [var playerScreenSize: SIMD2<Float>](./playerscreensize.md)
   The screen entity size of the current video player in meters.
-- [var screenVideoDimension: SIMD2<Float>](videoplayercomponent/screenvideodimension.md)
+- [var screenVideoDimension: SIMD2<Float>](./screenvideodimension.md)
   The video resolution size.
-- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode.md)
+- [var viewingMode: VideoPlaybackController.ViewingMode?](./viewingmode.md)
   The current content-viewing mode for video playback.
 
 

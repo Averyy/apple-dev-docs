@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsAlignedHigh
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Synonym for `FormatFlagIsAlignedHigh`.
 
@@ -10,19 +11,20 @@ Synonym for `FormatFlagIsAlignedHigh`.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsAlignedHigh
 ```
 
 ## See Also
 
-- [FormatFlagIsAlignedHigh](videodriverkit/iouservideoformatflags/formatflagisalignedhigh.md)
+### Bitwise layout flags
+- [FormatFlagIsAlignedHigh](./formatflagisalignedhigh.md)
   Set if the sample bits are placed into the high bits of the channel, clear for low bit placement.
-- [FormatFlagIsPacked](videodriverkit/iouservideoformatflags/formatflagispacked.md)
+- [FormatFlagIsPacked](./formatflagispacked.md)
   Set if the sample bits occupy the entire available bits for the channel, clear if they are high or low aligned within the channel.
-- [LinearPCMFormatFlagIsPacked](videodriverkit/iouservideoformatflags/linearpcmformatflagispacked.md)
+- [LinearPCMFormatFlagIsPacked](./linearpcmformatflagispacked.md)
   Synonym for `FormatFlagIsPacked`.
-- [FormatFlagsNativeFloatPacked](videodriverkit/iouservideoformatflags/formatflagsnativefloatpacked.md)
+- [FormatFlagsNativeFloatPacked](./formatflagsnativefloatpacked.md)
 
 
 ---

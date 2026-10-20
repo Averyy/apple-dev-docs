@@ -1,7 +1,8 @@
 # writeMask
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bitmask that restricts which color channels are written into the texture.
 
@@ -10,7 +11,7 @@ A bitmask that restricts which color channels are written into the texture.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ A bitmask that restricts which color channels are written into the texture.
 var writeMask: MTLColorWriteMask { get set }
 ```
 
+```objc
+@property (nonatomic) MTLColorWriteMask writeMask;
+```
+
 #### Discussion
 
-The default value of `writeMask` is all ones, [`all`](mtlcolorwritemask/all.md), which allows all color channels to be blended. The `MTLColorWriteMask` values `MTLColorWriteMaskRed`, `MTLColorWriteMaskGreen`, `MTLColorWriteMaskBlue`, and `MTLColorWriteMaskAlpha` limit blending to one color channel, and these values can be bitwise combined. `MTLColorWriteMaskNone` does not allow any color channels to be blended.
+The default value of `writeMask` is all ones, [`all`](../mtlcolorwritemask/all.md), which allows all color channels to be blended. The `MTLColorWriteMask` values `MTLColorWriteMaskRed`, `MTLColorWriteMaskGreen`, `MTLColorWriteMaskBlue`, and `MTLColorWriteMaskAlpha` limit blending to one color channel, and these values can be bitwise combined. `MTLColorWriteMaskNone` does not allow any color channels to be blended.
 
 ## See Also
 
-- [var pixelFormat: MTLPixelFormat](mtlrenderpipelinecolorattachmentdescriptor/pixelformat.md)
+### Configuring render pipeline states
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The pixel format of the color attachment’s texture.
-- [struct MTLColorWriteMask](mtlcolorwritemask.md)
+- [struct MTLColorWriteMask](../mtlcolorwritemask.md)
   Values used to specify a mask to permit or restrict writing to color channels of a color value.
 
 

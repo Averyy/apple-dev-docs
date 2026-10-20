@@ -1,7 +1,8 @@
 # export(to:metadata:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this transformer as a CoreML model package with user-supplied metadata.
 
@@ -19,6 +20,8 @@ Exports this transformer as a CoreML model package with user-supplied metadata.
 func export(to url: URL, metadata: ModelMetadata) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 ## Parameters
 
 - `url`: The location to write the model into.
@@ -26,7 +29,8 @@ func export(to url: URL, metadata: ModelMetadata) throws
 
 ## See Also
 
-- [func export(to: URL) throws](lineartimeseriesforecaster/model/export(to:).md)
+### Exporting the model
+- [func export(to: URL) throws](./export%28to%29.md)
   Exports this transformer as a CoreML model package.
 
 

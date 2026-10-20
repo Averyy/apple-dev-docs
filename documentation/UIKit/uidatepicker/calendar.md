@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar to use for the date picker.
 
@@ -17,21 +18,26 @@ The calendar to use for the date picker.
 var calendar: Calendar! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSCalendar * calendar;
+```
+
 #### Discussion
 
-The default value of this property corresponds to the user’s current calendar as configured in Settings. This is equivalent to the value returned by calling the [`NSCalendar`](https://developer.apple.com/documentation/foundation/nscalendar) class method [`current`](https://developer.apple.com/documentation/foundation/nscalendar/current). Setting this property to `nil` is equivalent to setting it to its default value.
+The default value of this property corresponds to the user’s current calendar as configured in Settings. This is equivalent to the value returned by calling the [`NSCalendar`](../../Foundation/nscalendar.md) class method [`current`](../../Foundation/nscalendar/current.md). Setting this property to `nil` is equivalent to setting it to its default value.
 
 Calendars specify the details of cultural systems used for reckoning time; they identify the beginning, length, and divisions of a year.
 
 ## See Also
 
-- [var date: Date](uidatepicker/date.md)
+### Managing the date and calendar
+- [var date: Date](./date.md)
   The date displayed by the date picker.
-- [var locale: Locale?](uidatepicker/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale used by the date picker.
-- [func setDate(Date, animated: Bool)](uidatepicker/setdate(_:animated:).md)
+- [func setDate(Date, animated: Bool)](./setdate%28_,animated%29.md)
   Sets the date to display in the date picker, with an option to animate the setting.
-- [var timeZone: TimeZone?](uidatepicker/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone reflected in the date displayed by the date picker.
 
 

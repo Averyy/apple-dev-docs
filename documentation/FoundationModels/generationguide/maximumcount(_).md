@@ -1,7 +1,8 @@
 # maximumCount(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces a maximum number of elements in the array.
 
@@ -21,8 +22,8 @@ static func maximumCount<Element>(_ count: Int) -> GenerationGuide<[Element]> wh
 
 ## Mentions
 
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
-- [Managing the context window](managing-the-context-window.md)
+- [Categorizing and organizing data with content tags](../categorizing-and-organizing-data-with-content-tags.md)
+- [Managing the context window](../managing-the-context-window.md)
 
 #### Discussion
 
@@ -43,7 +44,8 @@ struct Shop {
 
 ## See Also
 
-- [static maximum(_:)](generationguide/maximum(_:).md)
+### Getting the maximum value
+- [static maximum(_:)](./maximum%28_%29.md)
   Enforces a maximum value.
 
 

@@ -1,7 +1,8 @@
 # IntegerFormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that converts between integer values and their textual representations.
 
@@ -22,15 +23,15 @@ struct IntegerFormatStyle<Value> where Value : BinaryInteger
 
 #### Overview
 
-Instances of [`IntegerFormatStyle`](integerformatstyle.md) create localized, human-readable text from [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) numbers and parse string representations of numbers into instances of [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) types. All of the Swift standard library’s integer types, such as [`Int`](https://developer.apple.com/documentation/swift/int) and [`UInt32`](https://developer.apple.com/documentation/swift/uint32), conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger), and therefore work with this format style.
+Instances of [`IntegerFormatStyle`](./integerformatstyle.md) create localized, human-readable text from [`BinaryInteger`](../Swift/binaryinteger.md) numbers and parse string representations of numbers into instances of [`BinaryInteger`](../Swift/binaryinteger.md) types. All of the Swift standard library’s integer types, such as [`Int`](../Swift/int.md) and [`UInt32`](../Swift/uint32.md), conform to [`BinaryInteger`](../Swift/binaryinteger.md), and therefore work with this format style.
 
-[`IntegerFormatStyle`](integerformatstyle.md) includes two nested types, [`IntegerFormatStyle.Percent`](integerformatstyle/percent.md) and [`IntegerFormatStyle.Currency`](integerformatstyle/currency.md), for working with percentages and currencies. Each format style includes a configuration that determines how it represents numeric values, for things like grouping, displaying signs, and variant presentations like scientific notation. [`IntegerFormatStyle`](integerformatstyle.md) and [`IntegerFormatStyle.Percent`](integerformatstyle/percent.md) include a [`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md), and [`IntegerFormatStyle.Currency`](integerformatstyle/currency.md) includes a [`CurrencyFormatStyleConfiguration`](currencyformatstyleconfiguration.md). You can customize numeric formatting for a style by adjusting its backing configuration. The system automatically caches unique configurations of a format style to enhance performance.
+[`IntegerFormatStyle`](./integerformatstyle.md) includes two nested types, [`IntegerFormatStyle.Percent`](./integerformatstyle/percent.md) and [`IntegerFormatStyle.Currency`](./integerformatstyle/currency.md), for working with percentages and currencies. Each format style includes a configuration that determines how it represents numeric values, for things like grouping, displaying signs, and variant presentations like scientific notation. [`IntegerFormatStyle`](./integerformatstyle.md) and [`IntegerFormatStyle.Percent`](./integerformatstyle/percent.md) include a [`NumberFormatStyleConfiguration`](./numberformatstyleconfiguration.md), and [`IntegerFormatStyle.Currency`](./integerformatstyle/currency.md) includes a [`CurrencyFormatStyleConfiguration`](./currencyformatstyleconfiguration.md). You can customize numeric formatting for a style by adjusting its backing configuration. The system automatically caches unique configurations of a format style to enhance performance.
 
-> **Note**:  Foundation provides another format style type, [`FloatingPointFormatStyle`](floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
+> **Note**:  Foundation provides another format style type, [`FloatingPointFormatStyle`](./floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](../Swift/binaryfloatingpoint.md). For Foundation’s [`Decimal`](./decimal.md) type, use [`Decimal.FormatStyle`](./decimal/formatstyle.md).
 
-##### Formatting Integers
+##### Formatting integers
 
-Use the [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) method to create a string representation of an integer using the default [`IntegerFormatStyle`](integerformatstyle.md) configuration.
+Use the [`formatted()`](../Swift/binaryinteger/formatted%28%29.md) method to create a string representation of an integer using the default [`IntegerFormatStyle`](./integerformatstyle.md) configuration.
 
 ```swift
 let formattedDefault = 123456.formatted()
@@ -38,7 +39,7 @@ let formattedDefault = 123456.formatted()
 // Other locales may use different separator and grouping behavior.
 ```
 
-You can specify a format style by providing an argument to the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-73k3e) method. The following example shows the number `12345` represented in each of the available styles, in the `en_US` locale:
+You can specify a format style by providing an argument to the [`formatted(_:)`](../Swift/binaryinteger/formatted%28_%29-73k3e.md) method. The following example shows the number `12345` represented in each of the available styles, in the `en_US` locale:
 
 ```swift
 let number = 123456
@@ -70,9 +71,9 @@ let customFormatting = exampleNumber.formatted(
 // customFormatting is "+123456"
 ```
 
-##### Creating an Integer Format Style Instance
+##### Creating an integer format style instance
 
-The previous examples use static factory methods like [`number`](formatstyle/number-7fxvo.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-73k3e) method. You can also create an [`IntegerFormatStyle`](integerformatstyle.md) instance and use it to repeatedly format different values with the [`format(_:)`](integerformatstyle/format(_:).md) method:
+The previous examples use static factory methods like [`number`](./formatstyle/number-7fxvo.md) to create format styles within the call to the [`formatted(_:)`](../Swift/binaryinteger/formatted%28_%29-73k3e.md) method. You can also create an [`IntegerFormatStyle`](./integerformatstyle.md) instance and use it to repeatedly format different values with the [`format(_:)`](./integerformatstyle/format%28_%29.md) method:
 
 ```swift
 let percentFormatStyle = IntegerFormatStyle<Int>.Percent()
@@ -82,9 +83,9 @@ percentFormatStyle.format(85) // "85%"
 percentFormatStyle.format(100) // "100%"
 ```
 
-##### Parsing Integers
+##### Parsing integers
 
-You can use [`IntegerFormatStyle`](integerformatstyle.md) to parse strings into integer values. You can define the format style within the type’s initializer or pass in a format style you create prior to calling the method, as shown here:
+You can use [`IntegerFormatStyle`](./integerformatstyle.md) to parse strings into integer values. You can define the format style within the type’s initializer or pass in a format style you create prior to calling the method, as shown here:
 
 ```swift
 let price = try? Int("$123,456",
@@ -95,7 +96,7 @@ let salePrice = try? Int("$120,000",
                           format: priceFormatStyle) // 120000
 ```
 
-##### Matching Regular Expressions
+##### Matching regular expressions
 
 Along with parsing numeric values in strings, you can use the Swift regular expression domain-specific language to match and capture numeric substrings. The following example defines a currency format style to match and capture a currency value using US dollars and `en_US` numeric conventions. The rest of the regular expression ignores any characters prior to a `": "` sequence that precedes the currency substring.
 
@@ -118,94 +119,95 @@ let localizedInteger = match?.1 // 123456
 ## Topics
 
 ### Creating an integer format style
-- [init(locale: Locale)](integerformatstyle/init(locale:).md)
+- [init(locale: Locale)](./integerformatstyle/init%28locale%29.md)
   Creates an integer format style that uses the given locale.
 ### Formatting integer values
-- [func format(Value) -> String](integerformatstyle/format(_:).md)
+- [func format(Value) -> String](./integerformatstyle/format%28_%29.md)
   Formats an integer, using this style.
 ### Customizing style behavior
-- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/decimalseparator(strategy:).md)
+- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](./integerformatstyle/decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](integerformatstyle/grouping(_:).md)
+- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](./integerformatstyle/grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](integerformatstyle/notation(_:).md)
+- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](./integerformatstyle/notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](integerformatstyle/precision(_:).md)
+- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](./integerformatstyle/precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: IntegerFormatStyle<Value>.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>](integerformatstyle/rounded(rule:increment:).md)
+- [func rounded(rule: IntegerFormatStyle<Value>.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>](./integerformatstyle/rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> IntegerFormatStyle<Value>](integerformatstyle/scale(_:).md)
+- [func scale(Double) -> IntegerFormatStyle<Value>](./integerformatstyle/scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/sign(strategy:).md)
+- [func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>](./integerformatstyle/sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
-- [IntegerFormatStyle.Configuration](integerformatstyle/configuration.md)
+- [IntegerFormatStyle.Configuration](./integerformatstyle/configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](./numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 ### Acessing style locale
-- [var locale: Locale](integerformatstyle/locale.md)
+- [var locale: Locale](./integerformatstyle/locale.md)
   The locale of the format style.
 ### Applying currency styles
-- [IntegerFormatStyle.Currency](integerformatstyle/currency.md)
+- [IntegerFormatStyle.Currency](./integerformatstyle/currency.md)
   A format style that converts between integer currency values and their textual representations.
 ### Applying measurement styles
-- [Measurement.FormatStyle](measurement/formatstyle.md)
+- [Measurement.FormatStyle](./measurement/formatstyle.md)
   A type that provides localized representations of measurements.
 ### Applying list styles
-- [struct ListFormatStyle](listformatstyle.md)
+- [struct ListFormatStyle](./listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 ### Creating attributed strings
-- [var attributed: IntegerFormatStyle<Value>.Attributed](integerformatstyle/attributed-swift.property.md)
+- [var attributed: IntegerFormatStyle<Value>.Attributed](./integerformatstyle/attributed-swift.property.md)
   An attributed format style based on the integer format style.
-- [IntegerFormatStyle.Attributed](integerformatstyle/attributed-swift.struct.md)
+- [IntegerFormatStyle.Attributed](./integerformatstyle/attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 ### Parsing integers
-- [struct IntegerParseStrategy](integerparsestrategy.md)
+- [struct IntegerParseStrategy](./integerparsestrategy.md)
   A parse strategy for creating integer values from formatted strings.
 ### Supporting types
-- [IntegerFormatStyle.Currency](integerformatstyle/currency.md)
+- [IntegerFormatStyle.Currency](./integerformatstyle/currency.md)
   A format style that converts between integer currency values and their textual representations.
-- [IntegerFormatStyle.Percent](integerformatstyle/percent.md)
+- [IntegerFormatStyle.Percent](./integerformatstyle/percent.md)
   A format style that converts between integer percentage values and their textual representations.
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](integerformatstyle/customconsumingregexcomponent-implementations.md)
-- [FormatStyle Implementations](integerformatstyle/formatstyle-implementations.md)
-- [ParseableFormatStyle Implementations](integerformatstyle/parseableformatstyle-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./integerformatstyle/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](./integerformatstyle/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](./integerformatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../Swift/customconsumingregexcomponent.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [FormatStyle](./formatstyle.md)
+- [Hashable](../Swift/hashable.md)
+- [ParseableFormatStyle](./parseableformatstyle.md)
+- [RegexComponent](../Swift/regexcomponent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Language Introspector](language-introspector.md)
+### Data formatting in Swift
+- [Language Introspector](./language-introspector.md)
   Converts data into human-readable text using formatters and locales.
-- [protocol FormatStyle](formatstyle.md)
+- [protocol FormatStyle](./formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
-- [struct FloatingPointFormatStyle](floatingpointformatstyle.md)
+- [struct FloatingPointFormatStyle](./floatingpointformatstyle.md)
   A structure that converts between floating-point values and their textual representations.
-- [Decimal.FormatStyle](decimal/formatstyle.md)
+- [Decimal.FormatStyle](./decimal/formatstyle.md)
   A structure that converts between decimal values and their textual representations.
-- [struct ListFormatStyle](listformatstyle.md)
+- [struct ListFormatStyle](./listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
-- [struct StringStyle](stringstyle.md)
-- [struct FormatStyle](url/formatstyle.md)
+- [struct StringStyle](./stringstyle.md)
+- [struct FormatStyle](./url/formatstyle.md)
   A structure that converts between URL instances and their textual representations.
-- [struct FormatStyleCapitalizationContext](formatstylecapitalizationcontext.md)
+- [struct FormatStyleCapitalizationContext](./formatstylecapitalizationcontext.md)
   The capitalization formatting context used when formatting dates and times.
-- [Format Style Configurations](format-style-configurations.md)
+- [Format Style Configurations](./format-style-configurations.md)
   Behaviors for traits like numeric precision, rounding, and scale, used for formatting and parsing numeric values.
 
 

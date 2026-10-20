@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the binding variable.
 
@@ -22,7 +23,7 @@ var wrappedValue: Value { get nonmutating set }
 
 #### Discussion
 
-This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`Binding`](binding.md) attribute. In the following code example, the binding variable `isPlaying` returns the value of `wrappedValue`:
+This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`Binding`](../binding.md) attribute. In the following code example, the binding variable `isPlaying` returns the value of `wrappedValue`:
 
 ```swift
 struct PlayButton: View {
@@ -40,9 +41,10 @@ When a mutable binding value changes, the new value is immediately available. Ho
 
 ## See Also
 
-- [var projectedValue: Binding<Value>](binding/projectedvalue.md)
+### Getting the value
+- [var projectedValue: Binding<Value>](./projectedvalue.md)
   A projection of the binding value that returns a binding.
-- [subscript<Subject>(dynamicMember _: WritableKeyPath<Value, Subject>) -> Binding<Subject>](binding/subscript(dynamicmember:).md)
+- [subscript<Subject>(dynamicMember _: WritableKeyPath<Value, Subject>) -> Binding<Subject>](./subscript%28dynamicmember%29.md)
   Returns a binding to the resulting value of a given key path.
 
 

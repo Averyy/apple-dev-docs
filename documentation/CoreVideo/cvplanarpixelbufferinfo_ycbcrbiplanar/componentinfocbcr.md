@@ -1,9 +1,10 @@
 # componentInfoCbCr
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure containing information on the Cb/Cr component of the buffer.
+A [`CVPlanarComponentInfo`](../cvplanarcomponentinfo.md) structure containing information on the Cb/Cr component of the buffer.
 
 **Availability**:
 - iOS 4.0+
@@ -20,10 +21,15 @@ A [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure containing infor
 var componentInfoCbCr: CVPlanarComponentInfo
 ```
 
+```c
+CVPlanarComponentInfo componentInfoCbCr;
+```
+
 ## See Also
 
-- [var componentInfoY: CVPlanarComponentInfo](cvplanarpixelbufferinfo_ycbcrbiplanar/componentinfoy.md)
-  A [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure containing information on the Y component of the buffer.
+### Properties
+- [var componentInfoY: CVPlanarComponentInfo](./componentinfoy.md)
+  A [`CVPlanarComponentInfo`](../cvplanarcomponentinfo.md) structure containing information on the Y component of the buffer.
 
 
 ---

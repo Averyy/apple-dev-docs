@@ -1,7 +1,8 @@
 # kVTViewPackingKind_OverUnder
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,9 +17,14 @@
 let kVTViewPackingKind_OverUnder: CFString
 ```
 
+```c
+extern CFStringRef const kVTViewPackingKind_OverUnder;
+```
+
 ## See Also
 
-- [let kVTViewPackingKind_SideBySide: CFString](kvtviewpackingkind_sidebyside.md)
+### View Packing Kinds
+- [let kVTViewPackingKind_SideBySide: CFString](./kvtviewpackingkind_sidebyside.md)
 
 
 ---

@@ -1,6 +1,8 @@
 # Linking Data Between Two Core Data Stores
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Sample Code  
+**Download**: [LinkingDataBetweenTwoCoreDataStores.zip](https://docs-assets.developer.apple.com/published/c9a68b653b7d/LinkingDataBetweenTwoCoreDataStores.zip)
 
 Organize data in two different stores and implement a link between them.
 
@@ -75,13 +77,14 @@ context.refresh(book, mergeChanges: true)
 
 ## See Also
 
-- [Creating a Core Data model](creating-a-core-data-model.md)
+### Essentials
+- [Creating a Core Data model](./creating-a-core-data-model.md)
   Define your app’s object structure with a data model file.
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
   Set up the classes that manage and persist your app’s objects.
-- [Core Data stack](core-data-stack.md)
+- [Core Data stack](./core-data-stack.md)
   Manage and persist your app’s model layer.
-- [Handling Different Data Types in Core Data](handling-different-data-types-in-core-data.md)
+- [Handling Different Data Types in Core Data](./handling-different-data-types-in-core-data.md)
   Create, store, and present records for a variety of data types.
 
 

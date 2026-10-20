@@ -1,7 +1,8 @@
 # mindingInterval
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time between checks for additional movie fragments.
 
@@ -17,6 +18,10 @@ The amount of time between checks for additional movie fragments.
 
 ```swift
 var mindingInterval: TimeInterval { get set }
+```
+
+```objc
+@property (nonatomic) NSTimeInterval mindingInterval;
 ```
 
 #### Discussion

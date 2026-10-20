@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that helps you identify the compute pipeline state during debugging.
@@ -20,15 +21,20 @@ A string that helps you identify the compute pipeline state during debugging.
 var label: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-Labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlcomputepipelinestate/device.md)
+### Identifying a pipeline state
+- [var device: any MTLDevice](./device.md)
   The device instance that created the pipeline state.
-- [var gpuResourceID: MTLResourceID](mtlcomputepipelinestate/gpuresourceid.md)
+- [var gpuResourceID: MTLResourceID](./gpuresourceid.md)
   An unique identifier that represents the pipeline state, which you can add to an argument buffer.
 
 

@@ -1,7 +1,8 @@
 # resizingRestrictions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current app specified resizingRestriction. Default value UIWindowSceneResizingRestrictionsUnspecified
 
@@ -12,6 +13,10 @@ The current app specified resizingRestriction. Default value UIWindowSceneResizi
 
 ```swift
 var resizingRestrictions: UIWindowSceneResizingRestrictions { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIWindowSceneResizingRestrictions resizingRestrictions;
 ```
 
 

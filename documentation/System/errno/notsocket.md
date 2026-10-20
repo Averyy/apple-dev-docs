@@ -1,7 +1,8 @@
 # notSocket
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A socket operation was performed on something that isn’t a socket.
 
@@ -22,7 +23,7 @@ static var notSocket: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -30,15 +31,16 @@ The corresponding C error is `ENOTSOCK`.
 
 ## See Also
 
-- [static var notSupportedOnSocket: Errno](errno/notsupportedonsocket.md)
+### Network Socket Errors
+- [static var notSupportedOnSocket: Errno](./notsupportedonsocket.md)
   Operation not supported on socket.
-- [static var socketIsConnected: Errno](errno/socketisconnected.md)
+- [static var socketIsConnected: Errno](./socketisconnected.md)
   Socket is already connected.
-- [static var socketNotConnected: Errno](errno/socketnotconnected.md)
+- [static var socketNotConnected: Errno](./socketnotconnected.md)
   Socket is not connected.
-- [static var socketShutdown: Errno](errno/socketshutdown.md)
+- [static var socketShutdown: Errno](./socketshutdown.md)
   Can’t send after socket shutdown.
-- [static var socketTypeNotSupported: Errno](errno/sockettypenotsupported.md)
+- [static var socketTypeNotSupported: Errno](./sockettypenotsupported.md)
   Socket type not supported.
 
 

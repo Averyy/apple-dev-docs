@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kevent {
     ...
 };
@@ -17,12 +17,12 @@ struct kevent {
 ## Topics
 
 ### Instance Properties
-- [data](kevent/1563555-data.md)
-- [fflags](kevent/1563523-fflags.md)
-- [filter](kevent/1563561-filter.md)
-- [flags](kevent/1563512-flags.md)
-- [ident](kevent/1563580-ident.md)
-- [udata](kevent/1563587-udata.md)
+- [data](./kevent/api-1563555-data.md)
+- [fflags](./kevent/api-1563523-fflags.md)
+- [filter](./kevent/api-1563561-filter.md)
+- [flags](./kevent/api-1563512-flags.md)
+- [ident](./kevent/api-1563580-ident.md)
+- [udata](./kevent/api-1563587-udata.md)
 
 
 ---

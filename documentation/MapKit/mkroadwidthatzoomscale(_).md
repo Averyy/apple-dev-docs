@@ -1,7 +1,8 @@
 # MKRoadWidthAtZoomScale(_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the width (in screen points) of roads on a map at the specified zoom level.
 
@@ -19,6 +20,10 @@ Returns the width (in screen points) of roads on a map at the specified zoom lev
 func MKRoadWidthAtZoomScale(_ zoomScale: MKZoomScale) -> CGFloat
 ```
 
+```c
+extern CGFloat MKRoadWidthAtZoomScale(MKZoomScale zoomScale);
+```
+
 #### Return Value
 
 The width of roads, measured in screen points. You can use the returned value to set the width of lines in drawing code that traces the path of a road.
@@ -29,7 +34,8 @@ The width of roads, measured in screen points. You can use the returned value to
 
 ## See Also
 
-- [typealias MKZoomScale](mkzoomscale.md)
+### Types
+- [typealias MKZoomScale](./mkzoomscale.md)
   A scale factor to use in conjunction with a map.
 
 

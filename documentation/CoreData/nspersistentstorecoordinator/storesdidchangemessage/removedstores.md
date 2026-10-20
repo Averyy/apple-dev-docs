@@ -1,7 +1,8 @@
 # removedStores
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stores that were removed during this change.
 

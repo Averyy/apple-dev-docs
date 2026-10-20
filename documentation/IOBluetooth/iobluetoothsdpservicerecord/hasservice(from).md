@@ -1,17 +1,22 @@
 # hasService(from:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns TRUE if any one of the UUIDs in the given array is found in the target service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func hasService(from array: [Any]!) -> Bool
+```
+
+```objc
+- (BOOL) hasServiceFromArray:(NSArray *) array;
 ```
 
 #### Return Value

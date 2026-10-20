@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale of the format style.
 
@@ -22,11 +23,12 @@ var locale: Locale
 
 #### Discussion
 
-Use the [`locale(_:)`](decimal/formatstyle/locale(_:).md) modifier to create a copy of this format style with a different locale.
+Use the [`locale(_:)`](../locale%28_%29.md) modifier to create a copy of this format style with a different locale.
 
 ## See Also
 
-- [var currencyCode: String](decimal/formatstyle/currency/currencycode.md)
+### Accessing style properties
+- [var currencyCode: String](./currencycode.md)
   The currency code this format style uses.
 
 

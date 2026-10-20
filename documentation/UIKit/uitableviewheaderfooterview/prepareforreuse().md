@@ -1,7 +1,8 @@
 # prepareForReuse()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares a reusable header or footer view for reuse by the table.
 
@@ -9,7 +10,7 @@ Prepares a reusable header or footer view for reuse by the table.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Prepares a reusable header or footer view for reuse by the table.
 func prepareForReuse()
 ```
 
+```objc
+- (void) prepareForReuse;
+```
+
 #### Discussion
 
-If your header or footer view is reusable — that is, it has a reuse identifier — the table view calls this method just before returning the view from its [`dequeueReusableHeaderFooterView(withIdentifier:)`](uitableview/dequeuereusableheaderfooterview(withidentifier:).md) method. Subclasses can override this method and use it to reset attributes of the view to their default values. For performance reasons, you should only reset attributes that aren’t related to content.
+If your header or footer view is reusable — that is, it has a reuse identifier — the table view calls this method just before returning the view from its [`dequeueReusableHeaderFooterView(withIdentifier:)`](../uitableview/dequeuereusableheaderfooterview%28withidentifier%29.md) method. Subclasses can override this method and use it to reset attributes of the view to their default values. For performance reasons, you should only reset attributes that aren’t related to content.
 
 If the view doesn’t have a reuse identifier, this method is never called.
 
 ## See Also
 
-- [var reuseIdentifier: String?](uitableviewheaderfooterview/reuseidentifier.md)
+### Managing view reuse
+- [var reuseIdentifier: String?](./reuseidentifier.md)
   A string used to identify a reusable header or footer.
 
 

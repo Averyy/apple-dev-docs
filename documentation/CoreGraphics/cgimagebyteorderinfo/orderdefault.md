@@ -1,14 +1,15 @@
 # CGImageByteOrderInfo.orderDefault
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,13 +19,18 @@
 case orderDefault
 ```
 
+```c
+kCGImageByteOrderDefault
+```
+
 ## See Also
 
-- [CGImageByteOrderInfo.order16Big](cgimagebyteorderinfo/order16big.md)
-- [CGImageByteOrderInfo.order16Little](cgimagebyteorderinfo/order16little.md)
-- [CGImageByteOrderInfo.order32Big](cgimagebyteorderinfo/order32big.md)
-- [CGImageByteOrderInfo.order32Little](cgimagebyteorderinfo/order32little.md)
-- [CGImageByteOrderInfo.orderMask](cgimagebyteorderinfo/ordermask.md)
+### Constants
+- [CGImageByteOrderInfo.order16Big](./order16big.md)
+- [CGImageByteOrderInfo.order16Little](./order16little.md)
+- [CGImageByteOrderInfo.order32Big](./order32big.md)
+- [CGImageByteOrderInfo.order32Little](./order32little.md)
+- [CGImageByteOrderInfo.orderMask](./ordermask.md)
 
 
 ---

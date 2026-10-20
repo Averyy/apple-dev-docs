@@ -1,7 +1,8 @@
 # scrollPosition(id:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a binding to be updated when a scroll view within this view scrolls.
 
@@ -23,9 +24,9 @@ func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint? = nil) -> 
 
 #### Discussion
 
-Use this modifier along with the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to know the identity of the view that is actively scrolled. As the scroll view scrolls, the binding will be updated with the identity of the leading-most / top-most view.
+Use this modifier along with the [`scrollTargetLayout(isEnabled:)`](./scrolltargetlayout%28isenabled%29.md) modifier to know the identity of the view that is actively scrolled. As the scroll view scrolls, the binding will be updated with the identity of the leading-most / top-most view.
 
-Use the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to configure which the layout that contains your scroll targets. In the following example, the top-most ItemView will update with the scrolledID binding as the scroll view scrolls.
+Use the [`scrollTargetLayout(isEnabled:)`](./scrolltargetlayout%28isenabled%29.md) modifier to configure which the layout that contains your scroll targets. In the following example, the top-most ItemView will update with the scrolledID binding as the scroll view scrolls.
 
 ```swift
 @Binding var items: [Item]
@@ -70,21 +71,22 @@ You can provide an anchor to this modifier to both:
 - Influence which view the system chooses as the view whose identity value will update the providing binding as the scroll view scrolls.
 - Control the alignment of the view when scrolling to a view when writing a new binding value.
 
-For example, providing a value of [`bottom`](unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
+For example, providing a value of [`bottom`](../unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
 
 If no anchor has been provided, SwiftUI will scroll the minimal amount when using the scroll position to programmatically scroll to a view.
 
 ## See Also
 
-- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](view/scrollposition(_:anchor:).md)
+### Managing scroll position
+- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](./scrollposition%28_,anchor%29.md)
   Associates a binding to a scroll position with a scroll view within this view.
-- [func defaultScrollAnchor(UnitPoint?) -> some View](view/defaultscrollanchor(_:).md)
+- [func defaultScrollAnchor(UnitPoint?) -> some View](./defaultscrollanchor%28_%29.md)
   Associates an anchor to control which part of the scroll view’s content should be rendered by default.
-- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](view/defaultscrollanchor(_:for:).md)
+- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](./defaultscrollanchor%28_,for%29.md)
   Associates an anchor to control the position of a scroll view in a particular circumstance.
-- [struct ScrollAnchorRole](scrollanchorrole.md)
+- [struct ScrollAnchorRole](../scrollanchorrole.md)
   A type defining the role of a scroll anchor.
-- [struct ScrollPosition](scrollposition.md)
+- [struct ScrollPosition](../scrollposition.md)
   A type that defines the semantic position of where a scroll view is scrolled within its content.
 
 

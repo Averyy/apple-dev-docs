@@ -1,7 +1,8 @@
 # boneAxis
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis around which the bone twists.
 

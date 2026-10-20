@@ -1,7 +1,8 @@
 # CVImageFieldDetail
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -21,38 +22,39 @@ enum CVImageFieldDetail
 ## Topics
 
 ### Enumeration Cases
-- [CVImageFieldDetail.spatialFirstLineEarly](cvimagefielddetail/spatialfirstlineearly.md)
+- [CVImageFieldDetail.spatialFirstLineEarly](./cvimagefielddetail/spatialfirstlineearly.md)
   The image buffer contains interleaved fields. The first line of image data corresponds to the first top, odd-numbered, field.
-- [CVImageFieldDetail.spatialFirstLineLate](cvimagefielddetail/spatialfirstlinelate.md)
+- [CVImageFieldDetail.spatialFirstLineLate](./cvimagefielddetail/spatialfirstlinelate.md)
   The image buffer contains interleaved fields. The first line of image data corresponds to the first bottom, even-numbered, field.
-- [CVImageFieldDetail.temporalBottomFirst](cvimagefielddetail/temporalbottomfirst.md)
+- [CVImageFieldDetail.temporalBottomFirst](./cvimagefielddetail/temporalbottomfirst.md)
   The image buffer contains complete fields in alternating order. The bottom, even-numbered, fields contain image data captured at an earlier time than top, odd-numbered, fields.
-- [CVImageFieldDetail.temporalTopFirst](cvimagefielddetail/temporaltopfirst.md)
+- [CVImageFieldDetail.temporalTopFirst](./cvimagefielddetail/temporaltopfirst.md)
   The image buffer contains complete fields in alternating order. The top, odd-numbered, fields contain image data captured at an earlier time than bottom, even-numbered, fields.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CVImageColorPrimaries](cvimagecolorprimaries.md)
+### Color and signal characteristics
+- [enum CVImageColorPrimaries](./cvimagecolorprimaries.md)
   Color primaries describe the gamut used for the rendering intent of an image.
-- [enum CVImageTransferFunction](cvimagetransferfunction.md)
-  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](cvimagetransferfunction/itu_r_709_2.md) transfer function.
-- [enum CVImageLogTransferFunction](cvimagelogtransferfunction.md)
+- [enum CVImageTransferFunction](./cvimagetransferfunction.md)
+  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](./cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](./cvimagetransferfunction/itu_r_709_2.md) transfer function.
+- [enum CVImageLogTransferFunction](./cvimagelogtransferfunction.md)
   Identifies the specific log curve transfer function or gamma of the content.
-- [enum CVImageYCbCrMatrix](cvimageycbcrmatrix.md)
+- [enum CVImageYCbCrMatrix](./cvimageycbcrmatrix.md)
   Indicates color matrix used for converting image buffer from YCbCr to RGB.
-- [enum CVImageAlphaChannelMode](cvimagealphachannelmode.md)
+- [enum CVImageAlphaChannelMode](./cvimagealphachannelmode.md)
 
 
 ---

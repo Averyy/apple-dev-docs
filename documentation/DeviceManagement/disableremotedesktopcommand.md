@@ -1,7 +1,8 @@
 # DisableRemoteDesktopCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to disable Remote Desktop on a device.
 
@@ -10,14 +11,14 @@ The command to disable Remote Desktop on a device.
 
 ## Declaration
 
-```swift
+```
 object DisableRemoteDesktopCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object DisableRemoteDesktopCommand.Command](disableremotedesktopcommand/command-data.dictionary.md)
+- [object DisableRemoteDesktopCommand.Command](./disableremotedesktopcommand/command-data.dictionary.md)
   The command to disable Remote Desktop on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object DisableRemoteDesktopCommand
 
 ## See Also
 
-- [object DisableRemoteDesktopResponse](disableremotedesktopresponse.md)
+### Commands and responses
+- [object DisableRemoteDesktopResponse](./disableremotedesktopresponse.md)
   A response from the device after it processes the command to disable Remote Desktop on a device.
 
 

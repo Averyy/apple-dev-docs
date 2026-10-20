@@ -1,7 +1,8 @@
 # sourceDevicePosition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the source device providing input through this port.
 
@@ -17,13 +18,17 @@ The position of the source device providing input through this port.
 var sourceDevicePosition: AVCaptureDevice.Position { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDevicePosition sourceDevicePosition;
+```
+
 #### Discussion
 
-All ports contained in an [`AVCaptureInput`](avcaptureinput.md) object’s [`ports`](avcaptureinput/ports.md) array have the same [`sourceDevicePosition`](avcaptureinput/port/sourcedeviceposition.md) value.
+All ports contained in an [`AVCaptureInput`](../../avcaptureinput.md) object’s [`ports`](../ports.md) array have the same [`sourceDevicePosition`](./sourcedeviceposition.md) value.
 
-When working with a microphone input in an [`AVCaptureMultiCamSession`](avcapturemulticamsession.md), it’s possible to record multiple microphone directions simultaneously. For example, you can record audio from the front microphone input to pair with video from the front camera, and record audio from the back microphone input to pair with video from the back camera.
+When working with a microphone input in an [`AVCaptureMultiCamSession`](../../avcapturemulticamsession.md), it’s possible to record multiple microphone directions simultaneously. For example, you can record audio from the front microphone input to pair with video from the front camera, and record audio from the back microphone input to pair with video from the back camera.
 
-By calling the input’s [`ports(for:sourceDeviceType:sourceDevicePosition:)`](avcapturedeviceinput/ports(for:sourcedevicetype:sourcedeviceposition:).md) method, you may discover additional hidden ports originating from the source audio device. These ports represent individual microphones positioned to pick up audio from one particular direction.
+By calling the input’s [`ports(for:sourceDeviceType:sourceDevicePosition:)`](../../avcapturedeviceinput/ports%28for,sourcedevicetype,sourcedeviceposition%29.md) method, you may discover additional hidden ports originating from the source audio device. These ports represent individual microphones positioned to pick up audio from one particular direction.
 
 ```swift
 // Find the audio port that captures omnidirectional audio.
@@ -44,15 +49,16 @@ let backAudioPort = audioDeviceInput.ports(for: .audio,
 
 ## See Also
 
-- [var isEnabled: Bool](avcaptureinput/port/isenabled.md)
+### Inspecting an input port
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the port is in an enabled state.
-- [var mediaType: AVMediaType](avcaptureinput/port/mediatype.md)
+- [var mediaType: AVMediaType](./mediatype.md)
   The media type of the port.
-- [var formatDescription: CMFormatDescription?](avcaptureinput/port/formatdescription.md)
+- [var formatDescription: CMFormatDescription?](./formatdescription.md)
   A description of the port format.
-- [var sourceDeviceType: AVCaptureDevice.DeviceType?](avcaptureinput/port/sourcedevicetype.md)
+- [var sourceDeviceType: AVCaptureDevice.DeviceType?](./sourcedevicetype.md)
   The device type of the source camera that provides data to the port.
-- [var clock: CMClock?](avcaptureinput/port/clock.md)
+- [var clock: CMClock?](./clock.md)
   An object that represents the capture device’s clock.
 
 

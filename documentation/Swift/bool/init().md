@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized to `false`.
 
@@ -26,7 +27,8 @@ Do not call this initializer directly. Instead, use the Boolean literal `false` 
 
 ## See Also
 
-- [init(booleanLiteral: Bool)](bool/init(booleanliteral:).md)
+### Infrequently Used Intializers
+- [init(booleanLiteral: Bool)](./init%28booleanliteral%29.md)
   Creates an instance initialized to the specified Boolean literal.
 
 

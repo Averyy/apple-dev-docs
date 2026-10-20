@@ -1,7 +1,8 @@
 # bias
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance by which the surface of the plane shape is displaced along the direction of its normal.
 

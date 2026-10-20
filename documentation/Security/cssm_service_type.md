@@ -1,7 +1,8 @@
 # CSSM_SERVICE_TYPE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_SERVICE_TYPE = CSSM_SERVICE_MASK
+```
+
+```c
+typedef CSSM_SERVICE_MASK CSSM_SERVICE_TYPE;
 ```
 
 

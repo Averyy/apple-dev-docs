@@ -1,7 +1,8 @@
 # current()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an indexed-collation instance for the current table view.
 
@@ -9,7 +10,7 @@ Returns an indexed-collation instance for the current table view.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns an indexed-collation instance for the current table view.
 class func current() -> Self
 ```
 
+```objc
++ (instancetype) currentCollation;
+```
+
 #### Return Value
 
-A [`UILocalizedIndexedCollation`](uilocalizedindexedcollation.md) object or `nil` if there was a problem creating the object.
+A [`UILocalizedIndexedCollation`](../uilocalizedindexedcollation.md) object or `nil` if there was a problem creating the object.
 
 
 ---

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Generates a data frame slice that includes the columns in a sequence of column names.
 
@@ -30,9 +31,10 @@ A new data frame slice.
 
 ## See Also
 
-- [func selecting<S>(columnNames: S) -> DataFrame.Slice](dataframe/slice/selecting(columnnames:)-9l8oe.md)
+### Creating a Slice by Selecting Multiple Columns
+- [func selecting<S>(columnNames: S) -> DataFrame.Slice](./selecting%28columnnames%29-9l8oe.md)
   Generates a data frame slice that includes the columns you select with a sequence of names.
-- [func selecting(columnNames: String...) -> DataFrame.Slice](dataframe/slice/selecting(columnnames:)-48kji.md)
+- [func selecting(columnNames: String...) -> DataFrame.Slice](./selecting%28columnnames%29-48kji.md)
   Generates a data frame slice that includes the columns you select with a list of names.
 
 

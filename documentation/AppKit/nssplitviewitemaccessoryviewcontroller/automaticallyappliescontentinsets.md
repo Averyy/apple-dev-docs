@@ -1,7 +1,8 @@
 # automaticallyAppliesContentInsets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not standard content insets should be applied to the view. Defaults to YES.
 
@@ -12,6 +13,10 @@ Whether or not standard content insets should be applied to the view. Defaults t
 
 ```swift
 var automaticallyAppliesContentInsets: Bool { get set }
+```
+
+```objc
+@property BOOL automaticallyAppliesContentInsets;
 ```
 
 

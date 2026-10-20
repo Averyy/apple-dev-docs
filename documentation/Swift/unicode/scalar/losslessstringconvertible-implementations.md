@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(String)](unicode/scalar/init(_:)-4p868.md)
+- [init?(String)](./init%28_%29-4p868.md)
   Instantiates an instance of the conforming type from a string representation.
 
 

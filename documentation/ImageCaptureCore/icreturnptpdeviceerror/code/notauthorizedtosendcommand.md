@@ -1,19 +1,24 @@
 # ICReturnPTPDeviceError.Code.notAuthorizedToSendCommand
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case notAuthorizedToSendCommand
+```
+
+```c
+ICReturnPTPNotAuthorizedToSendCommand
 ```
 
 

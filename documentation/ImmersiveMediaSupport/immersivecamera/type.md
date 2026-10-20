@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents the type of the camera.
 
@@ -20,13 +21,14 @@ var type: ImmersiveCamera.CameraType
 
 ## See Also
 
-- [var calibration: ImmersiveCameraCalibration](immersivecamera/calibration.md)
+### Instance Properties
+- [var calibration: ImmersiveCameraCalibration](./calibration.md)
   Calibration details for this camera.
-- [var id: String](immersivecamera/id.md)
+- [var id: String](./id.md)
   A unique and non empty identifier string for this immersive camera.
-- [var pose: Pose3DFloat](immersivecamera/pose.md)
+- [var pose: Pose3DFloat](./pose.md)
   The pose of this immersive camera.
-- [var presentationFrameRate: Int](immersivecamera/presentationframerate.md)
+- [var presentationFrameRate: Int](./presentationframerate.md)
   Presentation frame rate suited for this immersive camera.
 
 

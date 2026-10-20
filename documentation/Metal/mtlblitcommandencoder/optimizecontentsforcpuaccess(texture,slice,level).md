@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that improves the performance of CPU memory operations with a specific portion of a texture.
@@ -20,16 +21,20 @@ Encodes a command that improves the performance of CPU memory operations with a 
 func optimizeContentsForCPUAccess(texture: any MTLTexture, slice: Int, level: Int)
 ```
 
+```objc
+- (void) optimizeContentsForCPUAccess:(id<MTLTexture>) texture slice:(NSUInteger) slice level:(NSUInteger) level;
+```
+
 ## Mentions
 
-- [Optimizing texture data](optimizing-texture-data.md)
+- [Optimizing texture data](../optimizing-texture-data.md)
 
 #### Discussion
 
 This command can reduce the time it takes the CPU to access a texture. Apps typically run the command for:
 
 - Textures the CPU accesses for an extended period of time
-- Textures with a [`storageMode`](mtlresource/storagemode.md) property that’s [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md)
+- Textures with a [`storageMode`](../mtlresource/storagemode.md) property that’s [`MTLStorageMode.shared`](../mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](../mtlstoragemode/managed.md)
 
 When a blit pass runs this command, the GPU only applies lossless changes to the texture’s underlying data.
 
@@ -43,7 +48,8 @@ When a blit pass runs this command, the GPU only applies lossless changes to the
 
 ## See Also
 
-- [func optimizeContentsForCPUAccess(texture: any MTLTexture)](mtlblitcommandencoder/optimizecontentsforcpuaccess(texture:).md)
+### Optimizing textures for CPU access
+- [func optimizeContentsForCPUAccess(texture: any MTLTexture)](./optimizecontentsforcpuaccess%28texture%29.md)
   Encodes a command that improves the performance of CPU memory operations with a texture.
 
 

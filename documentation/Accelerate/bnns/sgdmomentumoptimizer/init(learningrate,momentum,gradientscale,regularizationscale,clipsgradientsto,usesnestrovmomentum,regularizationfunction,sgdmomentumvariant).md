@@ -1,18 +1,19 @@
 # init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNestrovMomentum:regularizationFunction:sgdMomentumVariant:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new stochastic gradient descent (SGD) with momentum optimizer object.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS ?+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 15.0 (renamed: init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNesterovMomentum:regularizationFunction:sgdMomentumVariant:))
+- iPadOS 14.0+ - Deprecated in 15.0 (renamed: init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNesterovMomentum:regularizationFunction:sgdMomentumVariant:))
+- Mac Catalyst 14.0+ - Deprecated in 15.0 (renamed: init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNesterovMomentum:regularizationFunction:sgdMomentumVariant:))
+- macOS 11.0+ - Deprecated in 12.0 (renamed: init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNesterovMomentum:regularizationFunction:sgdMomentumVariant:))
+- tvOS 14.0+ - Deprecated in 15.0 (renamed: init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNesterovMomentum:regularizationFunction:sgdMomentumVariant:))
+- visionOS
+- watchOS 7.0+ - Deprecated in 8.0 (renamed: init(learningRate:momentum:gradientScale:regularizationScale:clipsGradientsTo:usesNesterovMomentum:regularizationFunction:sgdMomentumVariant:))
 
 ## Declaration
 

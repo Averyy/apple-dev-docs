@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Topology.octagon
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each element emits eight vertices, rendered as an octagon.
 
@@ -12,7 +13,7 @@ Each element emits eight vertices, rendered as an octagon.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

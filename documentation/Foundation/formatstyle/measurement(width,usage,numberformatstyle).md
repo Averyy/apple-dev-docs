@@ -1,7 +1,8 @@
 # measurement(width:usage:numberFormatStyle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a format style to format measurement units.
 
@@ -26,9 +27,9 @@ A format style that formats measurements according to the given parameters.
 
 #### Discussion
 
-Use the dot-notation form of this type method when the call point allows the use of [`Measurement.FormatStyle`](measurement/formatstyle.md). You typically do this when calling the [`formatted(_:)`](measurement/formatted(_:).md) method of [`Measurement`](measurement.md).
+Use the dot-notation form of this type method when the call point allows the use of [`Measurement.FormatStyle`](../measurement/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../measurement/formatted%28_%29.md) method of [`Measurement`](../measurement.md).
 
-The following example creates an array of [`Measurement`](measurement.md) values that represent distances measured in kilometers. It then uses [`formatted(_:)`](measurement/formatted(_:).md) and the format style provided by this method to format the distances. The style specifies the [`asProvided`](measurementformatunitusage/asprovided.md) usage to keep the formatted measurements in kilometers. Without this, a non-Metric locale such as the US would convert the kilometers to a locale-appropriate unit, such as miles.
+The following example creates an array of [`Measurement`](../measurement.md) values that represent distances measured in kilometers. It then uses [`formatted(_:)`](../measurement/formatted%28_%29.md) and the format style provided by this method to format the distances. The style specifies the [`asProvided`](../measurementformatunitusage/asprovided.md) usage to keep the formatted measurements in kilometers. Without this, a non-Metric locale such as the US would convert the kilometers to a locale-appropriate unit, such as miles.
 
 ```swift
 let rawDistances: [Double] = [100, 1000, 10000, 100000, 1000000]
@@ -47,7 +48,8 @@ let formattedDistances = distances.map { $0.formatted(
 
 ## See Also
 
-- [static func measurement(width: Measurement<UnitTemperature>.FormatStyle.UnitWidth, usage: MeasurementFormatUnitUsage<UnitTemperature>, hidesScaleName: Bool, numberFormatStyle: FloatingPointFormatStyle<Double>?) -> Self](formatstyle/measurement(width:usage:hidesscalename:numberformatstyle:).md)
+### Applying measurement styles
+- [static func measurement(width: Measurement<UnitTemperature>.FormatStyle.UnitWidth, usage: MeasurementFormatUnitUsage<UnitTemperature>, hidesScaleName: Bool, numberFormatStyle: FloatingPointFormatStyle<Double>?) -> Self](./measurement%28width,usage,hidesscalename,numberformatstyle%29.md)
   Returns a format style to format temperature units.
 
 

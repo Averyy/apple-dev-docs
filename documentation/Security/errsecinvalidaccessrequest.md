@@ -1,7 +1,8 @@
 # errSecInvalidAccessRequest
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access request is invalid.
 
@@ -18,6 +19,10 @@ The access request is invalid.
 
 ```swift
 var errSecInvalidAccessRequest: OSStatus { get }
+```
+
+```c
+errSecInvalidAccessRequest
 ```
 
 

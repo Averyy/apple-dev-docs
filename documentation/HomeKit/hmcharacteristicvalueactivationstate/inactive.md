@@ -1,7 +1,8 @@
 # HMCharacteristicValueActivationState.inactive
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory is inactive.
 
@@ -19,9 +20,14 @@ The accessory is inactive.
 case inactive
 ```
 
+```c
+HMCharacteristicValueActivationStateInactive
+```
+
 ## See Also
 
-- [HMCharacteristicValueActivationState.active](hmcharacteristicvalueactivationstate/active.md)
+### Activation States
+- [HMCharacteristicValueActivationState.active](./active.md)
   The accessory is active.
 
 

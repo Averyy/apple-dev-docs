@@ -1,7 +1,8 @@
 # MTLFXTemporalDenoisedScaler
 
 **Framework**: MetalFX  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -16,18 +17,22 @@
 protocol MTLFXTemporalDenoisedScaler : MTLFXTemporalDenoisedScalerBase
 ```
 
+```objc
+@protocol MTLFXTemporalDenoisedScaler <MTLFXTemporalDenoisedScalerBase>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer)](mtlfxtemporaldenoisedscaler/encode(commandbuffer:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer)](./mtlfxtemporaldenoisedscaler/encode%28commandbuffer%29.md)
   Encode this scaler denoiser’s work into a command buffer.
 
 ## Relationships
 
 ### Inherits From
-- [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
-- [MTLFXTemporalDenoisedScalerBase](mtlfxtemporaldenoisedscalerbase.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTLFXFrameInterpolatableScaler](./mtlfxframeinterpolatablescaler.md)
+- [MTLFXTemporalDenoisedScalerBase](./mtlfxtemporaldenoisedscalerbase.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # EXCB_CLASS_ILLEGAL_INSTR_SET
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 EXCB_CLASS_ILLEGAL_INSTR_SET
 ```
 

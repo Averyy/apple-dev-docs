@@ -1,14 +1,15 @@
 # kernel_task
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 task_t kernel_task;
 ```
 

@@ -1,7 +1,8 @@
 # MLImageClassifier.FeatureExtractorType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The underlying base model that extracts image features for image classifier training session.
 
@@ -25,44 +26,45 @@ Create ML has one built-in feature extractor: `scenePrint`. Alternatively, you c
 ## Topics
 
 ### Selecting a feature extractor type
-- [MLImageClassifier.FeatureExtractorType.scenePrint(revision:)](mlimageclassifier/featureextractortype/sceneprint(revision:).md)
+- [MLImageClassifier.FeatureExtractorType.scenePrint(revision:)](./featureextractortype/sceneprint%28revision%29.md)
   A feature extractor trained on millions of images.
-- [case custom(MLImageClassifier.CustomFeatureExtractor)](mlimageclassifier/featureextractortype/custom(_:).md)
+- [case custom(MLImageClassifier.CustomFeatureExtractor)](./featureextractortype/custom%28_%29.md)
   A feature extractor that you provide as a Core ML model file or a layer within that file.
-- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+- [MLImageClassifier.CustomFeatureExtractor](./customfeatureextractor.md)
   A custom feature extractor a training session uses to train an image classifier.
 ### Describing a feature extractor type
-- [var description: String](mlimageclassifier/featureextractortype/description.md)
+- [var description: String](./featureextractortype/description.md)
   A text representation of the feature extractor.
-- [var debugDescription: String](mlimageclassifier/featureextractortype/debugdescription.md)
+- [var debugDescription: String](./featureextractortype/debugdescription.md)
   A text representation of the feature extractor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlimageclassifier/featureextractortype/playgrounddescription.md)
+- [var playgroundDescription: Any](./featureextractortype/playgrounddescription.md)
   A description of the feature extractor shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlimageclassifier/featureextractortype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlimageclassifier/featureextractortype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlimageclassifier/featureextractortype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./featureextractortype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./featureextractortype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./featureextractortype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLImageClassifier.DataSource](mlimageclassifier/datasource.md)
+### Supporting types
+- [MLImageClassifier.DataSource](./datasource.md)
   A data source for an image classifier.
-- [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
+- [MLImageClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training an image classifier model.
-- [MLImageClassifier.CustomFeatureExtractor](mlimageclassifier/customfeatureextractor.md)
+- [MLImageClassifier.CustomFeatureExtractor](./customfeatureextractor.md)
   A custom feature extractor a training session uses to train an image classifier.
-- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+- [MLImageClassifier.ImageAugmentationOptions](./imageaugmentationoptions.md)
   The variations that the training process can use to generate more training data from the training data you provide.
 
 

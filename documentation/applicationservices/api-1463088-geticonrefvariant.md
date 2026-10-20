@@ -1,7 +1,8 @@
 # GetIconRefVariant(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func GetIconRefVariant(_ inIconRef: IconRef!, _ inVariant: OSType, _ outTransform: UnsafeMutablePointer<IconTransformType>!) -> IconRef!
+```
+
+```c
+IconRef GetIconRefVariant(IconRef inIconRef, OSType inVariant, IconTransformType *outTransform);
 ```
 
 

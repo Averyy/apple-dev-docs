@@ -1,7 +1,8 @@
 # isPhonetic
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the receiver should use only the phonetic representations of name components.
 
@@ -20,13 +21,18 @@ A Boolean value that specifies whether the receiver should use only the phonetic
 var isPhonetic: Bool { get set }
 ```
 
+```objc
+@property (getter=isPhonetic) BOOL phonetic;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var style: PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.property.md)
+### Configuring Formatter Behavior
+- [var style: PersonNameComponentsFormatter.Style](./style-swift.property.md)
   The formatting style of the receiver.
 
 

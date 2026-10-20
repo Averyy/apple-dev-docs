@@ -1,7 +1,8 @@
 # Dictionary.Keys
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view of a dictionary’s keys.
 
@@ -21,68 +22,71 @@ A view of a dictionary’s keys.
 struct Keys
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 ## Topics
 
 ### Operators
-- [static func == (Dictionary<Key, Value>.Keys, Dictionary<Key, Value>.Keys) -> Bool](dictionary/keys-swift.struct/==(_:_:).md)
+- [static func == (Dictionary<Key, Value>.Keys, Dictionary<Key, Value>.Keys) -> Bool](./keys-swift.struct/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var count: Int](dictionary/keys-swift.struct/count.md)
+- [var count: Int](./keys-swift.struct/count.md)
   The number of keys in the dictionary.
-- [var endIndex: Dictionary<Key, Value>.Index](dictionary/keys-swift.struct/endindex.md)
+- [var endIndex: Dictionary<Key, Value>.Index](./keys-swift.struct/endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var isEmpty: Bool](dictionary/keys-swift.struct/isempty.md)
+- [var isEmpty: Bool](./keys-swift.struct/isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var startIndex: Dictionary<Key, Value>.Index](dictionary/keys-swift.struct/startindex.md)
+- [var startIndex: Dictionary<Key, Value>.Index](./keys-swift.struct/startindex.md)
   The position of the first element in a nonempty collection.
 ### Instance Methods
-- [func formIndex(after: inout Dictionary<Key, Value>.Index)](dictionary/keys-swift.struct/formindex(after:).md)
+- [func formIndex(after: inout Dictionary<Key, Value>.Index)](./keys-swift.struct/formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(after: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Index](dictionary/keys-swift.struct/index(after:).md)
+- [func index(after: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Index](./keys-swift.struct/index%28after%29.md)
   Returns the position immediately after the given index.
 ### Subscripts
-- [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Keys.Element](dictionary/keys-swift.struct/subscript(_:).md)
+- [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Keys.Element](./keys-swift.struct/subscript%28_%29.md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [Dictionary.Keys.Element](dictionary/keys-swift.struct/element.md)
+- [Dictionary.Keys.Element](./keys-swift.struct/element.md)
   A type representing the sequence’s elements.
-- [Dictionary.Keys.Index](dictionary/keys-swift.struct/index.md)
+- [Dictionary.Keys.Index](./keys-swift.struct/index.md)
   A type that represents a position in the collection.
-- [Dictionary.Keys.Indices](dictionary/keys-swift.struct/indices.md)
+- [Dictionary.Keys.Indices](./keys-swift.struct/indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Dictionary.Keys.SubSequence](dictionary/keys-swift.struct/subsequence.md)
+- [Dictionary.Keys.SubSequence](./keys-swift.struct/subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Default Implementations
-- [Collection Implementations](dictionary/keys-swift.struct/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](dictionary/keys-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](dictionary/keys-swift.struct/customstringconvertible-implementations.md)
-- [Equatable Implementations](dictionary/keys-swift.struct/equatable-implementations.md)
-- [Hashable Implementations](dictionary/keys-swift.struct/hashable-implementations.md)
-- [Sequence Implementations](dictionary/keys-swift.struct/sequence-implementations.md)
+- [Collection Implementations](./keys-swift.struct/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./keys-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./keys-swift.struct/customstringconvertible-implementations.md)
+- [Equatable Implementations](./keys-swift.struct/equatable-implementations.md)
+- [Hashable Implementations](./keys-swift.struct/hashable-implementations.md)
+- [Sequence Implementations](./keys-swift.struct/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [CustomDebugStringConvertible](../customdebugstringconvertible.md)
+- [CustomStringConvertible](../customstringconvertible.md)
+- [Equatable](../equatable.md)
+- [Escapable](../escapable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 ## See Also
 
-- [Dictionary.Values](dictionary/values-swift.struct.md)
+### Supporting Types
+- [Dictionary.Values](./values-swift.struct.md)
   A view of a dictionary’s values.
-- [Dictionary.Index](dictionary/index.md)
+- [Dictionary.Index](./index.md)
   The position of a key-value pair in a dictionary.
-- [Dictionary.Indices](dictionary/indices.md)
+- [Dictionary.Indices](./indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Dictionary.Iterator](dictionary/iterator.md)
+- [Dictionary.Iterator](./iterator.md)
   An iterator over the members of a `Dictionary<Key, Value>`.
 
 

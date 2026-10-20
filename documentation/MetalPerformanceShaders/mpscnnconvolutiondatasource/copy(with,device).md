@@ -1,7 +1,8 @@
 # copy(with:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -17,22 +18,27 @@
 optional func copy(with zone: NSZone? = nil, device: (any MTLDevice)?) -> Self
 ```
 
+```objc
+- (instancetype) copyWithZone:(NSZone *) zone device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [func biasTerms() -> UnsafeMutablePointer<Float>?](mpscnnconvolutiondatasource/biasterms.md)
-- [func dataType() -> MPSDataType](mpscnnconvolutiondatasource/datatype.md)
-- [func descriptor() -> MPSCNNConvolutionDescriptor](mpscnnconvolutiondatasource/descriptor.md)
-- [func label() -> String?](mpscnnconvolutiondatasource/label.md)
-- [func load() -> Bool](mpscnnconvolutiondatasource/load.md)
-- [func lookupTableForUInt8Kernel() -> UnsafeMutablePointer<Float>](mpscnnconvolutiondatasource/lookuptableforuint8kernel.md)
-- [func purge()](mpscnnconvolutiondatasource/purge.md)
-- [func rangesForUInt8Kernel() -> UnsafeMutablePointer<vector_float2>](mpscnnconvolutiondatasource/rangesforuint8kernel.md)
-- [func weights() -> UnsafeMutableRawPointer](mpscnnconvolutiondatasource/weights.md)
-- [func kernelWeightsDataType() -> MPSDataType](mpscnnconvolutiondatasource/kernelweightsdatatype.md)
-- [func update(with: any MTLCommandBuffer, gradientState: MPSCNNConvolutionGradientState, sourceState: MPSCNNConvolutionWeightsAndBiasesState) -> MPSCNNConvolutionWeightsAndBiasesState?](mpscnnconvolutiondatasource/update(with:gradientstate:sourcestate:).md)
-- [func update(with: MPSCNNConvolutionGradientState, sourceState: MPSCNNConvolutionWeightsAndBiasesState) -> Bool](mpscnnconvolutiondatasource/update(with:sourcestate:).md)
-- [func weightsLayout() -> MPSCNNConvolutionWeightsLayout](mpscnnconvolutiondatasource/weightslayout.md)
-- [func weightsQuantizationType() -> MPSCNNWeightsQuantizationType](mpscnnconvolutiondatasource/weightsquantizationtype.md)
+### Instance Methods
+- [func biasTerms() -> UnsafeMutablePointer<Float>?](./biasterms%28%29.md)
+- [func dataType() -> MPSDataType](./datatype%28%29.md)
+- [func descriptor() -> MPSCNNConvolutionDescriptor](./descriptor%28%29.md)
+- [func label() -> String?](./label%28%29.md)
+- [func load() -> Bool](./load%28%29.md)
+- [func lookupTableForUInt8Kernel() -> UnsafeMutablePointer<Float>](./lookuptableforuint8kernel%28%29.md)
+- [func purge()](./purge%28%29.md)
+- [func rangesForUInt8Kernel() -> UnsafeMutablePointer<vector_float2>](./rangesforuint8kernel%28%29.md)
+- [func weights() -> UnsafeMutableRawPointer](./weights%28%29.md)
+- [func kernelWeightsDataType() -> MPSDataType](./kernelweightsdatatype%28%29.md)
+- [func update(with: any MTLCommandBuffer, gradientState: MPSCNNConvolutionGradientState, sourceState: MPSCNNConvolutionWeightsAndBiasesState) -> MPSCNNConvolutionWeightsAndBiasesState?](./update%28with,gradientstate,sourcestate%29.md)
+- [func update(with: MPSCNNConvolutionGradientState, sourceState: MPSCNNConvolutionWeightsAndBiasesState) -> Bool](./update%28with,sourcestate%29.md)
+- [func weightsLayout() -> MPSCNNConvolutionWeightsLayout](./weightslayout%28%29.md)
+- [func weightsQuantizationType() -> MPSCNNWeightsQuantizationType](./weightsquantizationtype%28%29.md)
 
 
 ---

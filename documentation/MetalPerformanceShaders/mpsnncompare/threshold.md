@@ -1,7 +1,8 @@
 # threshold
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var threshold: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float threshold;
 ```
 
 

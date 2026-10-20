@@ -1,14 +1,15 @@
 # kBluetoothCompanyIdentiferFree2Move
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothCompanyIdentiferFree2Move = 83
 ```
 

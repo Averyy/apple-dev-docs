@@ -1,7 +1,8 @@
 # UNError.Code
 
 **Framework**: User Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify notification errors.
 
@@ -20,49 +21,54 @@ Constants that identify notification errors.
 enum Code
 ```
 
+```c
+enum UNErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UNError.Code.notificationsNotAllowed](unerror/code/notificationsnotallowed.md)
+- [UNError.Code.notificationsNotAllowed](./code/notificationsnotallowed.md)
   Notifications aren’t allowed.
-- [UNError.Code.attachmentInvalidURL](unerror/code/attachmentinvalidurl.md)
+- [UNError.Code.attachmentInvalidURL](./code/attachmentinvalidurl.md)
   The URL for an attachment was invalid.
-- [UNError.Code.attachmentUnrecognizedType](unerror/code/attachmentunrecognizedtype.md)
+- [UNError.Code.attachmentUnrecognizedType](./code/attachmentunrecognizedtype.md)
   The file type of an attachment isn’t supported.
-- [UNError.Code.attachmentInvalidFileSize](unerror/code/attachmentinvalidfilesize.md)
+- [UNError.Code.attachmentInvalidFileSize](./code/attachmentinvalidfilesize.md)
   An attachment is too large.
-- [UNError.Code.attachmentNotInDataStore](unerror/code/attachmentnotindatastore.md)
+- [UNError.Code.attachmentNotInDataStore](./code/attachmentnotindatastore.md)
   The specified attachment isn’t in the system data store.
-- [UNError.Code.attachmentMoveIntoDataStoreFailed](unerror/code/attachmentmoveintodatastorefailed.md)
+- [UNError.Code.attachmentMoveIntoDataStoreFailed](./code/attachmentmoveintodatastorefailed.md)
   An error occurred when trying to move an attachment to the system data store.
-- [UNError.Code.attachmentCorrupt](unerror/code/attachmentcorrupt.md)
+- [UNError.Code.attachmentCorrupt](./code/attachmentcorrupt.md)
   The file for an attachment is corrupt.
-- [UNError.Code.notificationInvalidNoDate](unerror/code/notificationinvalidnodate.md)
+- [UNError.Code.notificationInvalidNoDate](./code/notificationinvalidnodate.md)
   The notification doesn’t have an associated date, but should.
-- [UNError.Code.notificationInvalidNoContent](unerror/code/notificationinvalidnocontent.md)
+- [UNError.Code.notificationInvalidNoContent](./code/notificationinvalidnocontent.md)
   The notification has no user-facing content, but should.
-- [UNError.Code.contentProvidingInvalid](unerror/code/contentprovidinginvalid.md)
-- [UNError.Code.contentProvidingObjectNotAllowed](unerror/code/contentprovidingobjectnotallowed.md)
+- [UNError.Code.contentProvidingInvalid](./code/contentprovidinginvalid.md)
+- [UNError.Code.contentProvidingObjectNotAllowed](./code/contentprovidingobjectnotallowed.md)
 ### Enumeration Cases
-- [UNError.Code.badgeInputInvalid](unerror/code/badgeinputinvalid.md)
+- [UNError.Code.badgeInputInvalid](./code/badgeinputinvalid.md)
 ### Initializers
-- [init?(rawValue: Int)](unerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UNError](unerror.md)
+### Handling errors
+- [struct UNError](../unerror.md)
   An object that represents a notification error.
-- [let UNErrorDomain: String](unerrordomain.md)
+- [let UNErrorDomain: String](../unerrordomain.md)
   The error domain for notifications.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ALDigitalWallet
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ALDigitalWallet = 0x1BA
 ```
 

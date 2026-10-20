@@ -1,7 +1,8 @@
 # isStrictSubset(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether this range set is a strict subset of the given set.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether this range set is a strict subset
 ```swift
 func isStrictSubset(of other: RangeSet<Bound>) -> Bool
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

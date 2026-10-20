@@ -1,7 +1,8 @@
 # AccessoryTransport
 
 **Framework**: Accessory Transport Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Transport methods for communicating with an accessory.
 
@@ -21,32 +22,33 @@ The system selects the best available transport for each message by following th
 ## Topics
 
 ### Identifying transport types
-- [AccessoryTransport.bluetooth](accessorytransport/bluetooth.md)
+- [AccessoryTransport.bluetooth](./accessorytransport/bluetooth.md)
   A transport method that uses Bluetooth for data delivery.
-- [AccessoryTransport.internet](accessorytransport/internet.md)
+- [AccessoryTransport.internet](./accessorytransport/internet.md)
   A transport method that uses the internet for data delivery.
-- [AccessoryTransport.localNetwork](accessorytransport/localnetwork.md)
+- [AccessoryTransport.localNetwork](./accessorytransport/localnetwork.md)
   A transport method that uses the local network for data delivery.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AccessoryFeature](accessoryfeature.md)
+### Data and sessions
+- [protocol AccessoryFeature](./accessoryfeature.md)
   A protocol that defines a capability for an accessory data provider extension.
-- [struct AccessoryMessage](accessorymessage.md)
+- [struct AccessoryMessage](./accessorymessage.md)
   A structure that represents a message to send to an accessory.
-- [class AccessorySecuritySession](accessorysecuritysession.md)
+- [class AccessorySecuritySession](./accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
-- [struct TransportMessage](transportmessage.md)
+- [struct TransportMessage](./transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
-- [struct SecurityMessage](securitymessage.md)
+- [struct SecurityMessage](./securitymessage.md)
   A structure that carries key material for a secure channel between the system and an accessory.
 
 

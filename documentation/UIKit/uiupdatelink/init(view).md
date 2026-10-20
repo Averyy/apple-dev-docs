@@ -1,7 +1,8 @@
 # init(view:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a UI update link for the specified view.
 
@@ -18,17 +19,22 @@ Creates a UI update link for the specified view.
 init(view: UIView)
 ```
 
+```objc
++ (UIUpdateLink *) updateLinkForView:(UIView *) view;
+```
+
 ## See Also
 
-- [init(view: UIView, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/init(view:actionhandler:).md)
+### Creating a UI update link
+- [init(view: UIView, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](./init%28view,actionhandler%29.md)
   Creates a UI update link for the specified view using the specified action handler.
-- [init(view: UIView, actionTarget: Any, selector: Selector)](uiupdatelink/init(view:actiontarget:selector:).md)
+- [init(view: UIView, actionTarget: Any, selector: Selector)](./init%28view,actiontarget,selector%29.md)
   Creates a UI update link for the specified view using the specified target and action.
-- [init(windowScene: UIWindowScene)](uiupdatelink/init(windowscene:).md)
+- [init(windowScene: UIWindowScene)](./init%28windowscene%29.md)
   Creates a UI update link for the specified window.
-- [init(windowScene: UIWindowScene, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/init(windowscene:actionhandler:).md)
+- [init(windowScene: UIWindowScene, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](./init%28windowscene,actionhandler%29.md)
   Creates a UI update link for the specified window using the specified action handler.
-- [init(windowScene: UIWindowScene, actionTarget: Any, selector: Selector)](uiupdatelink/init(windowscene:actiontarget:selector:).md)
+- [init(windowScene: UIWindowScene, actionTarget: Any, selector: Selector)](./init%28windowscene,actiontarget,selector%29.md)
   Creates a UI update link for the specified window using the specified target and action.
 
 

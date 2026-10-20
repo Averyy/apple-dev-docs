@@ -1,7 +1,8 @@
 # page
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A `TabViewStyle` that displays a paged scrolling `TabView`.
 
@@ -20,27 +21,30 @@ A `TabViewStyle` that displays a paged scrolling `TabView`.
 @export(implementation) @preconcurrency static var page: PageTabViewStyle { get }
 ```
 
+Available when `Self` is `PageTabViewStyle`.
+
 #### Discussion
 
-To apply this style to a tab view, or to a view that contains tab views, use the [`tabViewStyle(_:)`](view/tabviewstyle(_:).md) modifier.
+To apply this style to a tab view, or to a view that contains tab views, use the [`tabViewStyle(_:)`](../view/tabviewstyle%28_%29.md) modifier.
 
 ## See Also
 
-- [static var automatic: DefaultTabViewStyle](tabviewstyle/automatic.md)
+### Getting built-in tab view styles
+- [static var automatic: DefaultTabViewStyle](./automatic.md)
   The default tab view style.
-- [static var sidebarAdaptable: SidebarAdaptableTabViewStyle](tabviewstyle/sidebaradaptable.md)
+- [static var sidebarAdaptable: SidebarAdaptableTabViewStyle](./sidebaradaptable.md)
   A tab bar style that adapts to each platform.
-- [static var tabBarOnly: TabBarOnlyTabViewStyle](tabviewstyle/tabbaronly.md)
+- [static var tabBarOnly: TabBarOnlyTabViewStyle](./tabbaronly.md)
   A tab view style that displays a tab bar when possible.
-- [static var grouped: GroupedTabViewStyle](tabviewstyle/grouped.md)
+- [static var grouped: GroupedTabViewStyle](./grouped.md)
   A tab view style that displays a tab bar that groups its tabs together.
-- [static func page(indexDisplayMode: PageTabViewStyle.IndexDisplayMode) -> PageTabViewStyle](tabviewstyle/page(indexdisplaymode:).md)
+- [static func page(indexDisplayMode: PageTabViewStyle.IndexDisplayMode) -> PageTabViewStyle](./page%28indexdisplaymode%29.md)
   A `TabViewStyle` that implements a paged scrolling `TabView` with an index display mode.
-- [static var verticalPage: VerticalPageTabViewStyle](tabviewstyle/verticalpage.md)
+- [static var verticalPage: VerticalPageTabViewStyle](./verticalpage.md)
   A `TabViewStyle` that displays a vertical page `TabView` interaction and appearance.
-- [static func verticalPage(transitionStyle: VerticalPageTabViewStyle.TransitionStyle) -> VerticalPageTabViewStyle](tabviewstyle/verticalpage(transitionstyle:).md)
+- [static func verticalPage(transitionStyle: VerticalPageTabViewStyle.TransitionStyle) -> VerticalPageTabViewStyle](./verticalpage%28transitionstyle%29.md)
   A `TabViewStyle` that implements the vertical page `TabView` interaction and appearance, and performs the specified transition.
-- [static var carousel: CarouselTabViewStyle](tabviewstyle/carousel.md)
+- [static var carousel: CarouselTabViewStyle](./carousel.md)
   A style that implements the carousel interaction and appearance.
 
 

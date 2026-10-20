@@ -1,7 +1,8 @@
 # UILegibilityWeight.regular
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A regular font weight.
 
@@ -18,11 +19,16 @@ A regular font weight.
 case regular
 ```
 
+```c
+UILegibilityWeightRegular
+```
+
 ## See Also
 
-- [UILegibilityWeight.unspecified](uilegibilityweight/unspecified.md)
+### Weights
+- [UILegibilityWeight.unspecified](./unspecified.md)
   An unspecified text weight.
-- [UILegibilityWeight.bold](uilegibilityweight/bold.md)
+- [UILegibilityWeight.bold](./bold.md)
   A bold font weight.
 
 

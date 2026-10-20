@@ -1,7 +1,8 @@
 # continuityDevicePickerDidCancel(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when a person declines to select a continuity device by dismissing an app’s continuity device picker.
 
@@ -14,17 +15,22 @@ Informs the delegate when a person declines to select a continuity device by dis
 optional func continuityDevicePickerDidCancel(_ pickerViewController: AVContinuityDevicePickerViewController)
 ```
 
+```objc
+- (void) continuityDevicePickerDidCancel:(AVContinuityDevicePickerViewController *) pickerViewController;
+```
+
 ## Parameters
 
 - `pickerViewController`: The continuity device picker that’s informing the delegate.
 
 ## See Also
 
-- [func continuityDevicePickerWillBeginPresenting(AVContinuityDevicePickerViewController)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerwillbeginpresenting(_:).md)
+### Responding to continuity device events
+- [func continuityDevicePickerWillBeginPresenting(AVContinuityDevicePickerViewController)](./continuitydevicepickerwillbeginpresenting%28_%29.md)
   Informs the delegate that a continuity device picker is about to present its UI so that a person can select and connect a continuity device.
-- [func continuityDevicePicker(AVContinuityDevicePickerViewController, didConnect: AVContinuityDevice)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepicker(_:didconnect:).md)
+- [func continuityDevicePicker(AVContinuityDevicePickerViewController, didConnect: AVContinuityDevice)](./continuitydevicepicker%28_,didconnect%29.md)
   Informs the delegate when a person selects and connects a continuity device to the system with a continuity device picker.
-- [func continuityDevicePickerDidEndPresenting(AVContinuityDevicePickerViewController)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerdidendpresenting(_:).md)
+- [func continuityDevicePickerDidEndPresenting(AVContinuityDevicePickerViewController)](./continuitydevicepickerdidendpresenting%28_%29.md)
   Informs the delegate that a continuity device picker is no longer presenting its UI to a person.
 
 

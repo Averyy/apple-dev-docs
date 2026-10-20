@@ -1,7 +1,8 @@
 # TVBrowserTransitionAnimator
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides animations to and from the full screen browser.
 
@@ -15,19 +16,23 @@ An object that provides animations to and from the full screen browser.
 class TVBrowserTransitionAnimator
 ```
 
+```objc
+@interface TVBrowserTransitionAnimator : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIViewControllerAnimatedTransitioning](../uikit/uiviewcontrolleranimatedtransitioning.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIViewControllerAnimatedTransitioning](../UIKit/uiviewcontrolleranimatedtransitioning.md)
 
 
 ---

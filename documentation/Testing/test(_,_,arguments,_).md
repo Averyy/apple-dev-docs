@@ -1,18 +1,19 @@
 # Test(_:_:arguments:_:)
 
 **Framework**: Swift Testing  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Declare a test parameterized over two collections of values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -36,18 +37,20 @@ You can prefix the expressions you pass to `collection1` or `collection2` with `
 
 ## See Also
 
-- [Defining test functions](definingtests.md)
+### Related Documentation
+- [Defining test functions](./definingtests.md)
   Define a test function to validate that code is working correctly.
-- [Implementing parameterized tests](parameterizedtesting.md)
+### Test parameterization
+- [Implementing parameterized tests](./parameterizedtesting.md)
   Specify different input parameters to generate multiple test cases from a test function.
-- [macro Test<C>(String?, any TestTrait..., arguments: C)](test(_:_:arguments:)-8kn7a.md)
+- [macro Test<C>(String?, any TestTrait..., arguments: C)](./test%28_,_,arguments%29-8kn7a.md)
   Declare a test parameterized over a collection of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](test(_:_:arguments:)-3rzok.md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](./test%28_,_,arguments%29-3rzok.md)
   Declare a test parameterized over two zipped collections of values.
-- [protocol CustomTestArgumentEncodable](customtestargumentencodable.md)
+- [protocol CustomTestArgumentEncodable](./customtestargumentencodable.md)
   A protocol for customizing how arguments passed to parameterized tests are encoded, which is used to match against when running specific arguments.
-- [struct Case](test/case.md)
-  A single test case from a parameterized [`Test`](test.md).
+- [struct Case](./test/case.md)
+  A single test case from a parameterized [`Test`](./test.md).
 
 
 ---

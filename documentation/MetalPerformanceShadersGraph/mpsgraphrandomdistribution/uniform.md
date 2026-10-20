@@ -1,7 +1,8 @@
 # MPSGraphRandomDistribution.uniform
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The uniform distribution, with samples drawn uniformly from [min, max) for float types, and [min, max] for integer types.
 
@@ -17,6 +18,10 @@ The uniform distribution, with samples drawn uniformly from [min, max) for float
 
 ```swift
 case uniform
+```
+
+```c
+MPSGraphRandomDistributionUniform
 ```
 
 

@@ -1,7 +1,8 @@
 # MTLIOStatus
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the state of an input/output command buffer.
 
@@ -19,41 +20,46 @@ Represents the state of an input/output command buffer.
 enum MTLIOStatus
 ```
 
+```c
+enum MTLIOStatus : NSInteger;
+```
+
 ## Topics
 
 ### I/O command queue states
-- [MTLIOStatus.pending](mtliostatus/pending.md)
+- [MTLIOStatus.pending](./mtliostatus/pending.md)
   Indicates the GPU hasn’t finished executing the input/output command buffer.
-- [MTLIOStatus.complete](mtliostatus/complete.md)
+- [MTLIOStatus.complete](./mtliostatus/complete.md)
   Indicates the GPU has successfully finished executing the input/output command buffer.
-- [MTLIOStatus.cancelled](mtliostatus/cancelled.md)
+- [MTLIOStatus.cancelled](./mtliostatus/cancelled.md)
   Indicates the GPU has successfully abandoned the input/output command buffer.
-- [MTLIOStatus.error](mtliostatus/error.md)
+- [MTLIOStatus.error](./mtliostatus/error.md)
   Indicates the GPU experienced a problem with the input/output command buffer.
 ### Initializers
-- [init?(rawValue: Int)](mtliostatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtliostatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLIOCommandBuffer](mtliocommandbuffer.md)
+### I/O command buffers
+- [protocol MTLIOCommandBuffer](./mtliocommandbuffer.md)
   A command buffer that contains input/output commands that work with files in the file systems and Metal resources.
-- [protocol MTLIOFileHandle](mtliofilehandle.md)
+- [protocol MTLIOFileHandle](./mtliofilehandle.md)
   Represents a raw or compressed file, such as a resource asset file in your app’s bundle.
-- [typealias MTLIOCommandBufferHandler](mtliocommandbufferhandler.md)
+- [typealias MTLIOCommandBufferHandler](./mtliocommandbufferhandler.md)
   A convenience type that defines the signature of an input/output command buffer’s completion handler.
-- [MTLIOError.Code](mtlioerror-swift.struct/code.md)
+- [MTLIOError.Code](./mtlioerror-swift.struct/code.md)
   The error codes for creating an input/output file handle.
-- [let MTLIOErrorDomain: String](mtlioerrordomain.md)
+- [let MTLIOErrorDomain: String](./mtlioerrordomain.md)
   The domain for input/output command queue errors.
 
 

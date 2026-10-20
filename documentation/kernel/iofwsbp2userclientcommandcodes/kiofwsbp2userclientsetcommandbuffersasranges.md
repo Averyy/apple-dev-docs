@@ -1,14 +1,15 @@
 # kIOFWSBP2UserClientSetCommandBuffersAsRanges
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kIOFWSBP2UserClientSetCommandBuffersAsRanges
 ```
 

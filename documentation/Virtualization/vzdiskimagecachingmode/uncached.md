@@ -1,7 +1,8 @@
 # VZDiskImageCachingMode.uncached
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disables data caching.
 
@@ -14,11 +15,16 @@ Disables data caching.
 case uncached
 ```
 
+```c
+VZDiskImageCachingModeUncached
+```
+
 ## See Also
 
-- [VZDiskImageCachingMode.automatic](vzdiskimagecachingmode/automatic.md)
+### Disk image caching modes
+- [VZDiskImageCachingMode.automatic](./automatic.md)
   Allows the virtualization framework to automatically determine whether to enable data caching.
-- [VZDiskImageCachingMode.cached](vzdiskimagecachingmode/cached.md)
+- [VZDiskImageCachingMode.cached](./cached.md)
   Enables data caching.
 
 

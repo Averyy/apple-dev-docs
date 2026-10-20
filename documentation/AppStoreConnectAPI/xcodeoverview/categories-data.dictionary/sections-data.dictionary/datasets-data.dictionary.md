@@ -1,23 +1,24 @@
 # xcodeOverview.Categories.Sections.Datasets
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object xcodeOverview.Categories.Sections.Datasets
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object xcodeOverview.Categories.Sections.Datasets.FilterCriteria](xcodeoverview/categories-data.dictionary/sections-data.dictionary/datasets-data.dictionary/filtercriteria-data.dictionary.md)
-- [object xcodeOverview.Categories.Sections.Datasets.Points](xcodeoverview/categories-data.dictionary/sections-data.dictionary/datasets-data.dictionary/points-data.dictionary.md)
-- [object xcodeOverview.Categories.Sections.Datasets.RecommendedMetricGoal](xcodeoverview/categories-data.dictionary/sections-data.dictionary/datasets-data.dictionary/recommendedmetricgoal-data.dictionary.md)
+- [object xcodeOverview.Categories.Sections.Datasets.FilterCriteria](./datasets-data.dictionary/filtercriteria-data.dictionary.md)
+- [object xcodeOverview.Categories.Sections.Datasets.Points](./datasets-data.dictionary/points-data.dictionary.md)
+- [object xcodeOverview.Categories.Sections.Datasets.RecommendedMetricGoal](./datasets-data.dictionary/recommendedmetricgoal-data.dictionary.md)
 
 ## Properties
 

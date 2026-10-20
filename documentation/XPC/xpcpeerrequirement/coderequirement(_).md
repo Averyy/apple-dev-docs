@@ -1,7 +1,8 @@
 # codeRequirement(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create an XPCPeerRequirement from a ProcessCodeRequirement
 

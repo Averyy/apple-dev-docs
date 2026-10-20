@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new time-based cadence with a time interval.
 
@@ -19,13 +20,18 @@ Creates a new time-based cadence with a time interval.
 init(_ timeInterval: CFTimeInterval)
 ```
 
+```objc
+- (instancetype) initWithTimeInterval:(CFTimeInterval) timeInterval;
+```
+
 ## Parameters
 
 - `timeInterval`: The time interval at which to process video.
 
 ## See Also
 
-- [init(timeInterval: CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(timeinterval:).md)
+### Creating a Cadence
+- [init(timeInterval: CFTimeInterval)](./init%28timeinterval%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # reserved2
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved; set to 0.
 
@@ -12,6 +13,10 @@ Reserved; set to 0.
 
 ```swift
 var reserved2: Int32
+```
+
+```c
+SInt32 reserved2;
 ```
 
 

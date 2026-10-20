@@ -1,12 +1,13 @@
 # on
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant value that indicates a control is on or selected.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ A constant value that indicates a control is on or selected.
 static var on: NSControl.StateValue { get }
 ```
 
+```c
+static const NSControlStateValue NSControlStateValueOn;
+```
+
 ## See Also
 
-- [static var off: NSControl.StateValue](nscontrol/statevalue/off.md)
+### Setting a Control’s State
+- [static var off: NSControl.StateValue](./off.md)
   A constant value that indicates a control is off or unselected.
-- [static var mixed: NSControl.StateValue](nscontrol/statevalue/mixed.md)
+- [static var mixed: NSControl.StateValue](./mixed.md)
   A constant value that indicates a control is in a mixed state, neither on nor off.
 
 

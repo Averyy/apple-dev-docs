@@ -1,7 +1,8 @@
 # CSIdentityGetPosixID(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetPosixID(_ identity: CSIdentity!) -> id_t
+```
+
+```c
+id_t CSIdentityGetPosixID(CSIdentityRef identity);
 ```
 
 

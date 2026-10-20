@@ -1,7 +1,8 @@
 # init(subBlockCapacity:blockSource:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a block buffer with at least `subBlockCapacity` number of sub blocks.
 

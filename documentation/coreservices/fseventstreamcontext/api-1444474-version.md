@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Currently the only valid value is zero.
 
@@ -13,6 +14,10 @@ Currently the only valid value is zero.
 
 ```swift
 var version: CFIndex
+```
+
+```c
+CFIndex version;
 ```
 
 

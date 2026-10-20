@@ -1,15 +1,18 @@
 # AttributeScopes.UIKitAttributes.ObliquenessAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
+- iOS 15.0+ - Deprecated in 27.2
+- iPadOS 15.0+ - Deprecated in 27.2
+- Mac Catalyst 15.0+ - Deprecated in 27.2
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
+
+> **Deprecated**: This attribute is not supported with TextKit 2
 
 ## Declaration
 
@@ -21,12 +24,12 @@ enum ObliquenessAttribute
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

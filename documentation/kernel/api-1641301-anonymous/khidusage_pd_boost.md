@@ -1,14 +1,15 @@
 # kHIDUsage_PD_Boost
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PD_Boost = 0x6E
 ```
 

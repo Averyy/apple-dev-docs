@@ -1,7 +1,8 @@
 # NSPersistentHistoryChangeType.update
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An update to a managed object’s properties in the persistent store.
 
@@ -20,11 +21,16 @@ An update to a managed object’s properties in the persistent store.
 case update
 ```
 
+```c
+NSPersistentHistoryChangeTypeUpdate
+```
+
 ## See Also
 
-- [NSPersistentHistoryChangeType.delete](nspersistenthistorychangetype/delete.md)
+### Change Types
+- [NSPersistentHistoryChangeType.delete](./delete.md)
   The deletion of a managed object from the persistent store.
-- [NSPersistentHistoryChangeType.insert](nspersistenthistorychangetype/insert.md)
+- [NSPersistentHistoryChangeType.insert](./insert.md)
   The insertion of a managed object into the persistent store.
 
 

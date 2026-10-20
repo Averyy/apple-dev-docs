@@ -1,7 +1,8 @@
 # LowLevelDeformation.VertexAttribute
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes the format and stride of a single vertex attribute.
 
@@ -20,35 +21,36 @@ struct VertexAttribute
 ## Topics
 
 ### Creating a vertex attribute
-- [init(semantic: LowLevelDeformation.VertexSemantic, format: MTLVertexFormat, stride: Int)](lowleveldeformation/vertexattribute/init(semantic:format:stride:).md)
+- [init(semantic: LowLevelDeformation.VertexSemantic, format: MTLVertexFormat, stride: Int)](./vertexattribute/init%28semantic,format,stride%29.md)
   Creates a vertex attribute.
 ### Accessing layout information
-- [var stride: Int](lowleveldeformation/vertexattribute/stride.md)
+- [var stride: Int](./vertexattribute/stride.md)
   The distance, in bytes, between consecutive vertices for this attribute.
 ### Instance Properties
-- [var format: MTLVertexFormat](lowleveldeformation/vertexattribute/format.md)
+- [var format: MTLVertexFormat](./vertexattribute/format.md)
   The format of the vertex attribute.
-- [var semantic: LowLevelDeformation.VertexSemantic](lowleveldeformation/vertexattribute/semantic.md)
+- [var semantic: LowLevelDeformation.VertexSemantic](./vertexattribute/semantic.md)
   The semantic of the vertex attribute.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var input: LowLevelDeformation.Mesh](lowleveldeformation/input.md)
+### Accessing mesh data
+- [var input: LowLevelDeformation.Mesh](./input.md)
   The input vertex data for this deformation.
-- [var output: LowLevelDeformation.Mesh](lowleveldeformation/output.md)
+- [var output: LowLevelDeformation.Mesh](./output.md)
   The output vertex data for this deformation.
-- [LowLevelDeformation.Mesh](lowleveldeformation/mesh.md)
-  A handle to the input or output vertex data of a [`LowLevelDeformation`](lowleveldeformation.md).
-- [var vertexCount: Int](lowleveldeformation/vertexcount.md)
+- [LowLevelDeformation.Mesh](./mesh.md)
+  A handle to the input or output vertex data of a [`LowLevelDeformation`](../lowleveldeformation.md).
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the mesh.
-- [LowLevelDeformation.VertexSemantic](lowleveldeformation/vertexsemantic.md)
+- [LowLevelDeformation.VertexSemantic](./vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
 
 

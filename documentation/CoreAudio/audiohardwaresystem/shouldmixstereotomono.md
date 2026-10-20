@@ -1,12 +1,13 @@
 # shouldMixStereoToMono
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bool where a value of true indicates that devices should mix stereo signals down to mono.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

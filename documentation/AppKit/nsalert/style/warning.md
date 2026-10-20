@@ -1,12 +1,13 @@
 # NSAlert.Style.warning
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alert style to warn someone about a current or impending event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ An alert style to warn someone about a current or impending event.
 case warning
 ```
 
+```c
+NSAlertStyleWarning
+```
+
 #### Discussion
 
-Use this style of alert when the alert’s content is more severe than [`NSAlert.Style.informational`](nsalert/style/informational.md) but less severe than [`NSAlert.Style.critical`](nsalert/style/critical.md). This is the default alert style.
+Use this style of alert when the alert’s content is more severe than [`NSAlert.Style.informational`](./informational.md) but less severe than [`NSAlert.Style.critical`](./critical.md). This is the default alert style.
 
 ## See Also
 
-- [NSAlert.Style.critical](nsalert/style/critical.md)
+### Enumeration Cases
+- [NSAlert.Style.critical](./critical.md)
   An alert style to inform someone about a critical event.
-- [NSAlert.Style.informational](nsalert/style/informational.md)
+- [NSAlert.Style.informational](./informational.md)
   An alert style to inform someone about a current or impending event.
 
 

@@ -1,7 +1,8 @@
 # BoostedTreeConfiguration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A boosted tree configuration.
 
@@ -23,66 +24,67 @@ struct BoostedTreeConfiguration
 ## Topics
 
 ### Creating a configuration
-- [init()](boostedtreeconfiguration/init.md)
+- [init()](./boostedtreeconfiguration/init%28%29.md)
   Creates a default boosted tree configuration.
 ### Inspecting the configuration
-- [var columnSubsample: Double](boostedtreeconfiguration/columnsubsample.md)
+- [var columnSubsample: Double](./boostedtreeconfiguration/columnsubsample.md)
   Subsample ratio of the columns in each iteration of tree construction.
-- [var earlyStoppingIterationCount: Int?](boostedtreeconfiguration/earlystoppingiterationcount.md)
+- [var earlyStoppingIterationCount: Int?](./boostedtreeconfiguration/earlystoppingiterationcount.md)
   Stops training after this number of iterations where the validation metric does not improve.
-- [var learningRate: Double](boostedtreeconfiguration/learningrate.md)
+- [var learningRate: Double](./boostedtreeconfiguration/learningrate.md)
   The learning rate.
-- [var maximumDepth: Int](boostedtreeconfiguration/maximumdepth.md)
+- [var maximumDepth: Int](./boostedtreeconfiguration/maximumdepth.md)
   Maximum tree depth.
-- [var maximumIterations: Int](boostedtreeconfiguration/maximumiterations.md)
+- [var maximumIterations: Int](./boostedtreeconfiguration/maximumiterations.md)
   Maximum number of iterations.
-- [var minimumChildWeight: Double](boostedtreeconfiguration/minimumchildweight.md)
+- [var minimumChildWeight: Double](./boostedtreeconfiguration/minimumchildweight.md)
   The minimum weight of each leaf node.
-- [var minimumLossReduction: Double](boostedtreeconfiguration/minimumlossreduction.md)
+- [var minimumLossReduction: Double](./boostedtreeconfiguration/minimumlossreduction.md)
   Minimum loss reduction required to further split a node during the tree learning phase.
-- [var parallelTreeCount: Int](boostedtreeconfiguration/paralleltreecount.md)
+- [var parallelTreeCount: Int](./boostedtreeconfiguration/paralleltreecount.md)
   The number of parallel trees constructed during each iteration.
-- [var randomSeed: Int](boostedtreeconfiguration/randomseed.md)
+- [var randomSeed: Int](./boostedtreeconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations such as column and row subsampling.
-- [var rowSubsample: Double](boostedtreeconfiguration/rowsubsample.md)
+- [var rowSubsample: Double](./boostedtreeconfiguration/rowsubsample.md)
   Subsample ratio of the training set in each iteration of tree construction.
-- [var stepSize: Double](boostedtreeconfiguration/stepsize.md)
+- [var stepSize: Double](./boostedtreeconfiguration/stepsize.md)
   The step size shrinking.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

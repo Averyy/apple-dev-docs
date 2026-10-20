@@ -1,7 +1,8 @@
 # BetaAppClipInvocationLocalizationInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Beta App Clip Invocation Localization Inline Creates resource.
 
@@ -10,18 +11,19 @@ The attributes that describe a Beta App Clip Invocation Localization Inline Crea
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationLocalizationInlineCreate.Attributes
 ```
 
 ## Properties
 
-- `locale` (string) *(required)*: The specified locale. Refer to [`BetaAppLocalizationCreateRequest.Data.Attributes`](betaapplocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md) for possible values.
+- `locale` (string) *(required)*: The specified locale. Refer to [`BetaAppLocalizationCreateRequest.Data.Attributes`](../betaapplocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md) for possible values.
 - `title` (string) *(required)*: The title that appears on the App Clip card for an App Clip experience you configure for testers who launch the App Clip using the TestFlight app.
 
 ## See Also
 
-- [object BetaAppClipInvocationLocalizationInlineCreate.Relationships](betaappclipinvocationlocalizationinlinecreate/relationships-data.dictionary.md)
+### Objects
+- [object BetaAppClipInvocationLocalizationInlineCreate.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set when you create a new Beta App Clip Invocation Localization Inline Creates resource.
 
 

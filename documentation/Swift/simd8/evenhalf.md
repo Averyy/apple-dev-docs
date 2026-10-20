@@ -1,7 +1,8 @@
 # evenHalf
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A half-length vector made up of the even elements of the vector.
 

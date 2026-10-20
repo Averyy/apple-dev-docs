@@ -1,7 +1,8 @@
 # Calendar.MatchingPolicy.strict
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 If specified, the algorithm travels as far forward or backward as necessary looking for a match.
 
@@ -28,11 +29,12 @@ For example, if searching for Feb 29 in the Gregorian calendar, the algorithm ma
 
 ## See Also
 
-- [Calendar.MatchingPolicy.nextTime](calendar/matchingpolicy/nexttime.md)
+### Enumeration Cases
+- [Calendar.MatchingPolicy.nextTime](./nexttime.md)
   If there is no matching time before the end of the next instance of the next higher component to the highest specified component in the `DateComponents` argument, the algorithm will return the next existing time which exists.
-- [Calendar.MatchingPolicy.nextTimePreservingSmallerComponents](calendar/matchingpolicy/nexttimepreservingsmallercomponents.md)
+- [Calendar.MatchingPolicy.nextTimePreservingSmallerComponents](./nexttimepreservingsmallercomponents.md)
   If specified, and there is no matching time before the end of the next instance of the next higher component to the highest specified component in the `DateComponents` argument, the method returns the next existing value of the missing component and preserves the lower components’ values (for example, no 2:37am results in 3:37am, if that exists).
-- [Calendar.MatchingPolicy.previousTimePreservingSmallerComponents](calendar/matchingpolicy/previoustimepreservingsmallercomponents.md)
+- [Calendar.MatchingPolicy.previousTimePreservingSmallerComponents](./previoustimepreservingsmallercomponents.md)
   If there is no matching time before the end of the next instance of the next higher component to the highest specified component in the `DateComponents` argument, the algorithm will return the previous existing value of the missing component and preserves the lower components’ values.
 
 

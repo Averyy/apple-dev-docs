@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a MD5 hash function.
 
@@ -22,15 +23,16 @@ init()
 
 #### Discussion
 
-Initialize a new hash function by calling this method if you want to hash the data iteratively, such as when you don’t have a buffer large enough to hold all the data at once. Provide data blocks to the hash function using the `update(data:)` or [`update(bufferPointer:)`](insecure/md5/update(bufferpointer:).md) method. After providing all the data, call [`finalize()`](insecure/md5/finalize().md) to get the digest.
+Initialize a new hash function by calling this method if you want to hash the data iteratively, such as when you don’t have a buffer large enough to hold all the data at once. Provide data blocks to the hash function using the `update(data:)` or [`update(bufferPointer:)`](./update%28bufferpointer%29.md) method. After providing all the data, call [`finalize()`](./finalize%28%29.md) to get the digest.
 
 If your data fits into a single buffer, you can use the `hash(data:)` method instead, to compute the digest in a single call.
 
 ## See Also
 
-- [func update(bufferPointer: UnsafeRawBufferPointer)](insecure/md5/update(bufferpointer:).md)
+### Computing a hash iteratively
+- [func update(bufferPointer: UnsafeRawBufferPointer)](./update%28bufferpointer%29.md)
   Incrementally updates the hash function with the contents of the buffer.
-- [func finalize() -> Insecure.MD5.Digest](insecure/md5/finalize.md)
+- [func finalize() -> Insecure.MD5.Digest](./finalize%28%29.md)
   Finalizes the hash function and returns the computed digest.
 
 

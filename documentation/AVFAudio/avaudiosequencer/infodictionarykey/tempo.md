@@ -1,7 +1,8 @@
 # tempo
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the tempo.
 
@@ -19,11 +20,16 @@ A key that represents the tempo.
 static let tempo: AVAudioSequencer.InfoDictionaryKey
 ```
 
+```c
+extern AVAudioSequencerInfoDictionaryKey AVAudioSequencerInfoDictionaryKeyTempo;
+```
+
 ## See Also
 
-- [static let approximateDurationInSeconds: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/approximatedurationinseconds.md)
+### Getting the duration and time
+- [static let approximateDurationInSeconds: AVAudioSequencer.InfoDictionaryKey](./approximatedurationinseconds.md)
   A key that represents the approximate duration.
-- [static let timeSignature: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/timesignature.md)
+- [static let timeSignature: AVAudioSequencer.InfoDictionaryKey](./timesignature.md)
   A key that represents the time signature.
 
 

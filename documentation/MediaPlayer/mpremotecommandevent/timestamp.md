@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the event occurred.
 
@@ -20,9 +21,14 @@ The time the event occurred.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 ## See Also
 
-- [var command: MPRemoteCommand](mpremotecommandevent/command.md)
+### Retrieving command information
+- [var command: MPRemoteCommand](./command.md)
   The command that sent the event.
 
 

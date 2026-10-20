@@ -1,7 +1,8 @@
 # agentWillUpdate(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an agent is about to perform its next simulation step.
 
@@ -19,11 +20,15 @@ Tells the delegate that an agent is about to perform its next simulation step.
 optional func agentWillUpdate(_ agent: GKAgent)
 ```
 
+```objc
+- (void) agentWillUpdate:(GKAgent *) agent;
+```
+
 #### Discussion
 
-Implement this method when you want to update the agent simulation with data from an external source, such as node position and orientation information updated by the SceneKit or SpriteKit physics engine. Set the [`position`](gkagent2d/position.md) and [`rotation`](gkagent2d/rotation.md) properties of the agent (as a [`GKAgent2D`](gkagent2d.md) or [`GKAgent3D`](gkagent3d.md) object) so that the next simulation step will take your changes to those properties into account.
+Implement this method when you want to update the agent simulation with data from an external source, such as node position and orientation information updated by the SceneKit or SpriteKit physics engine. Set the [`position`](../gkagent2d/position.md) and [`rotation`](../gkagent2d/rotation.md) properties of the agent (as a [`GKAgent2D`](../gkagent2d.md) or [`GKAgent3D`](../gkagent3d.md) object) so that the next simulation step will take your changes to those properties into account.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## See Also
 
-- [func agentDidUpdate(GKAgent)](gkagentdelegate/agentdidupdate(_:).md)
+### Synchronizing with Agents
+- [func agentDidUpdate(GKAgent)](./agentdidupdate%28_%29.md)
   Tells the delegate that an agent has just performed a simulation step.
 
 

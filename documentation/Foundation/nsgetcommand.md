@@ -1,7 +1,8 @@
 # NSGetCommand
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A command that retrieves a value or object from a scriptable object.
 
@@ -15,6 +16,10 @@ A command that retrieves a value or object from a scriptable object.
 class NSGetCommand
 ```
 
+```objc
+@interface NSGetCommand : NSScriptCommand
+```
+
 #### Overview
 
 An instance of `NSGetCommand` gets the specified value or object from the specified scriptable object: for example, the words from a paragraph or the name of a document.
@@ -23,45 +28,47 @@ When an instance of `NSGetCommand` is executed, it evaluates the specified recei
 
 `NSGetCommand` is part of Cocoa’s built-in scripting support. It works automatically to support the `get` command through key-value coding. Most applications don’t need to subclass `NSGetCommand` or call its methods.
 
-For information on working with `get` commands, see [`Getting and Setting Properties and Elements`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_get_set/SAppsGetSet.html#//apple_ref/doc/uid/TP40002164-CH18) in [`Cocoa Scripting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
+For information on working with `get` commands, see [Getting and Setting Properties and Elements](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_get_set/SAppsGetSet.html#//apple_ref/doc/uid/TP40002164-CH18) in [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
 
 ## Relationships
 
 ### Inherits From
-- [NSScriptCommand](nsscriptcommand.md)
+- [NSScriptCommand](./nsscriptcommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [class NSScriptCommand](nsscriptcommand.md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Script Commands
+- [class NSScriptCommand](./nsscriptcommand.md)
   A self-contained scripting statement.
-- [class NSQuitCommand](nsquitcommand.md)
+- [class NSQuitCommand](./nsquitcommand.md)
   A command that quits the specified app.
-- [class NSSetCommand](nssetcommand.md)
+- [class NSSetCommand](./nssetcommand.md)
   A command that sets one or more attributes or relationships to one or more values.
-- [class NSMoveCommand](nsmovecommand.md)
+- [class NSMoveCommand](./nsmovecommand.md)
   A command that moves one or more scriptable objects.
-- [class NSCreateCommand](nscreatecommand.md)
+- [class NSCreateCommand](./nscreatecommand.md)
   A command that creates a scriptable object.
-- [class NSDeleteCommand](nsdeletecommand.md)
+- [class NSDeleteCommand](./nsdeletecommand.md)
   A command that deletes a scriptable object.
-- [class NSExistsCommand](nsexistscommand.md)
+- [class NSExistsCommand](./nsexistscommand.md)
   A command that determines whether a scriptable object exists.
-- [class NSCloneCommand](nsclonecommand.md)
+- [class NSCloneCommand](./nsclonecommand.md)
   A command that clones one or more scriptable objects.
-- [class NSCountCommand](nscountcommand.md)
+- [class NSCountCommand](./nscountcommand.md)
   A command that counts the number of objects of a specified class in the specified object container.
-- [class NSCloseCommand](nsclosecommand.md)
+- [class NSCloseCommand](./nsclosecommand.md)
   A command that closes one or more scriptable objects.
 
 

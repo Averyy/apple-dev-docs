@@ -1,7 +1,8 @@
 # MLObjectDetector.ModelParameters.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object-detector training algorithm.
 
@@ -17,28 +18,29 @@ enum ModelAlgorithmType
 ## Topics
 
 ### Designating an algorithm
-- [MLObjectDetector.ModelParameters.ModelAlgorithmType.darknetYolo](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/darknetyolo.md)
+- [MLObjectDetector.ModelParameters.ModelAlgorithmType.darknetYolo](./modelalgorithmtype/darknetyolo.md)
   An algorithm that trains a full neural network with your training data.
-- [case transferLearning(MLObjectDetector.ModelParameters.FeatureExtractorType)](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/transferlearning(_:).md)
+- [case transferLearning(MLObjectDetector.ModelParameters.FeatureExtractorType)](./modelalgorithmtype/transferlearning%28_%29.md)
   An algorithm that leverages the knowledge of a general purpose model built into the operating system.
-- [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
+- [MLObjectDetector.ModelParameters.FeatureExtractorType](./featureextractortype.md)
   The underlying base model that extracts image features for an object-detector training session.
 ### Comparing algorithms
-- [static func == (MLObjectDetector.ModelParameters.ModelAlgorithmType, MLObjectDetector.ModelParameters.ModelAlgorithmType) -> Bool](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype/==(_:_:).md)
+- [static func == (MLObjectDetector.ModelParameters.ModelAlgorithmType, MLObjectDetector.ModelParameters.ModelAlgorithmType) -> Bool](./modelalgorithmtype/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two algorithm are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLObjectDetector.ModelParameters.ValidationData](mlobjectdetector/modelparameters-swift.struct/validationdata.md)
+### Supporting types
+- [MLObjectDetector.ModelParameters.ValidationData](./validationdata.md)
   A validation dataset for an object detector.
-- [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
+- [MLObjectDetector.ModelParameters.FeatureExtractorType](./featureextractortype.md)
   The underlying base model that extracts image features for an object-detector training session.
 
 

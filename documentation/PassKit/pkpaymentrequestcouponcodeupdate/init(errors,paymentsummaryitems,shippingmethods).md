@@ -1,7 +1,8 @@
 # init(errors:paymentSummaryItems:shippingMethods:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a payment coupon update with your specified payment summary items, errors, and shipping methods.
 
@@ -16,6 +17,10 @@ Creates a payment coupon update with your specified payment summary items, error
 
 ```swift
 init(errors: [any Error]?, paymentSummaryItems: [PKPaymentSummaryItem], shippingMethods: [PKShippingMethod])
+```
+
+```objc
+- (instancetype) initWithErrors:(NSArray<NSError *> *) errors paymentSummaryItems:(NSArray<PKPaymentSummaryItem *> *) paymentSummaryItems shippingMethods:(NSArray<PKShippingMethod *> *) shippingMethods;
 ```
 
 ## Parameters

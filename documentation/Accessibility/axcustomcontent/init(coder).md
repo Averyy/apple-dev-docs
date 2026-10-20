@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -20,9 +21,10 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [convenience init(attributedLabel: NSAttributedString, attributedValue: NSAttributedString)](axcustomcontent/init(attributedlabel:attributedvalue:).md)
+### Creating custom content
+- [convenience init(attributedLabel: NSAttributedString, attributedValue: NSAttributedString)](./init%28attributedlabel,attributedvalue%29.md)
   Creates new custom content with an attributed string and attributed value.
-- [convenience init(label: String, value: String)](axcustomcontent/init(label:value:).md)
+- [convenience init(label: String, value: String)](./init%28label,value%29.md)
   Creates new custom content with a label and value.
 
 

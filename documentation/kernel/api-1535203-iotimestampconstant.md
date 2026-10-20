@@ -1,25 +1,27 @@
 # IOTimeStampConstant
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void IOTimeStampConstant(uintptr_t csc, uintptr_t a, uintptr_t b, uintptr_t c, uintptr_t d);
 ```
 
 ## See Also
 
-- [IOTimerEventSource](iotimereventsource.md)
+### Timers
+- [IOTimerEventSource](./iotimereventsource.md)
   Time based event source mechanism.
-- [IOWatchDogTimer](iowatchdogtimer.md)
-- [IOGetTime](1575332-iogettime.md)
-- [IOTimeStampEndConstant](1535232-iotimestampendconstant.md)
-- [IOTimeStampStartConstant](1535234-iotimestampstartconstant.md)
+- [IOWatchDogTimer](./iowatchdogtimer.md)
+- [IOGetTime](./api-1575332-iogettime.md)
+- [IOTimeStampEndConstant](./api-1535232-iotimestampendconstant.md)
+- [IOTimeStampStartConstant](./api-1535234-iotimestampstartconstant.md)
 
 
 ---

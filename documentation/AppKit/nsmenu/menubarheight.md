@@ -1,17 +1,22 @@
 # menuBarHeight
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu bar height for the main menu in pixels.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var menuBarHeight: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat menuBarHeight;
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ This property supersedes the `menuBarHeight` class method of the `NSMenuView` cl
 
 ## See Also
 
-- [class func menuBarVisible() -> Bool](nsmenu/menubarvisible.md)
+### Managing the Menu Bar
+- [class func menuBarVisible() -> Bool](./menubarvisible%28%29.md)
   Returns a Boolean value that indicates whether the menu bar is visible.
-- [class func setMenuBarVisible(Bool)](nsmenu/setmenubarvisible(_:).md)
+- [class func setMenuBarVisible(Bool)](./setmenubarvisible%28_%29.md)
   Sets whether the menu bar is visible and selectable by the user.
 
 

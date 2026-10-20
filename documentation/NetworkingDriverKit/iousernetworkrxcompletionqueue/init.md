@@ -1,16 +1,17 @@
 # init
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the packet submission queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -20,13 +21,14 @@ virtual bool init();
 
 #### Discussion
 
-Don’t call this method directly. Instead, use the [`Create`](iousernetworkrxcompletionqueue/create.md) method to create a new [`IOUserNetworkRxCompletionQueue`](iousernetworkrxcompletionqueue.md) object.
+Don’t call this method directly. Instead, use the [`Create`](./create.md) method to create a new [`IOUserNetworkRxCompletionQueue`](../iousernetworkrxcompletionqueue.md) object.
 
 ## See Also
 
-- [Create](iousernetworkrxcompletionqueue/create.md)
+### Creating the Completion Queue
+- [Create](./create.md)
   Creates a queue that you use to deliver packets received from your hardware device.
-- [free](iousernetworkrxcompletionqueue/free.md)
+- [free](./free.md)
   Performs any final cleanup for the queue.
 
 

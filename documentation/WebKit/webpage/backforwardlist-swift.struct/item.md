@@ -1,7 +1,8 @@
 # WebPage.BackForwardList.Item
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of a resource that a webpage previously visited.
 
@@ -25,33 +26,34 @@ Two items with equal titles, urls, and initial urls may not necessarily be equal
 ## Topics
 
 ### Structures
-- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+- [WebPage.BackForwardList.Item.ID](./item/id-swift.struct.md)
   An opaque type representing the identifier for an item.
 ### Instance Properties
-- [let id: WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.property.md)
+- [let id: WebPage.BackForwardList.Item.ID](./item/id-swift.property.md)
   The unique identifier for the item.
-- [let initialURL: URL](webpage/backforwardlist-swift.struct/item/initialurl.md)
+- [let initialURL: URL](./item/initialurl.md)
   The source URL that originally asked to load the resource.
-- [let title: String?](webpage/backforwardlist-swift.struct/item/title.md)
+- [let title: String?](./item/title.md)
   The title of the page this item represents.
-- [let url: URL](webpage/backforwardlist-swift.struct/item/url.md)
+- [let url: URL](./item/url.md)
   The url of the page this item represents, after having resolved all redirects.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Identifiable](../../../Swift/identifiable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
+### Observing navigation between webpages
+- [WebPage.BackForwardList](../backforwardlist-swift.struct.md)
   An observable representation of a webpage’s previously loaded resources.
-- [WebPage.NavigationEvent](webpage/navigationevent.md)
+- [WebPage.NavigationEvent](../navigationevent.md)
   A particular state that occurs during the progression of a navigation.
-- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+- [WebPage.BackForwardList.Item.ID](./item/id-swift.struct.md)
   An opaque type representing the identifier for an item.
 
 

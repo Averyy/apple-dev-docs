@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var state: ICScannerFunctionalUnitState { get }
+```
+
+```objc
+@property (readonly) ICScannerFunctionalUnitState state;
 ```
 
 

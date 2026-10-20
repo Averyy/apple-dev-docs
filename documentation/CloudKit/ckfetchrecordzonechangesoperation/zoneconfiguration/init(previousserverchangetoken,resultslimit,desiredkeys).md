@@ -1,7 +1,8 @@
 # init(previousServerChangeToken:resultsLimit:desiredKeys:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a zone configuration with the desired keys and a result limit for updates.
 
@@ -11,7 +12,7 @@ Creates a zone configuration with the desired keys and a result limit for update
 - Mac Catalyst 13.1+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 - Swift 4.2+
 

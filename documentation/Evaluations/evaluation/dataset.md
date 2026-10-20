@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The evaluation dataset.
@@ -23,9 +24,10 @@ var dataset: Self.SampleLoader { get }
 
 ## See Also
 
-- [associatedtype Sample](evaluation/sample.md)
+### Providing data
+- [associatedtype Sample](./sample.md)
   The type of input samples in the evaluation dataset.
-- [associatedtype SampleLoader : Loader](evaluation/sampleloader.md)
+- [associatedtype SampleLoader : Loader](./sampleloader.md)
   The type of the sample loader used to provide the evaluation dataset.
 
 

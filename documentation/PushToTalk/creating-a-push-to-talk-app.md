@@ -1,6 +1,7 @@
 # Creating a Push to Talk app
 
-**Framework**: Push to Talk
+**Framework**: Push to Talk  
+**Role**: Article
 
 Build a walkie-talkie style app with system user interface controls.
 
@@ -10,7 +11,7 @@ The Push to Talk (PTT) framework makes it easy to communicate with a group of in
 
 PTT provides the interface, and you provide the back-end communication service. Its flexibility makes it compatible with your existing end-to-end communication solutions and backend infrastructure. Use PTT to integrate with Bluetooth accessories that trigger audio recording and transmission.
 
-##### Configure Your Xcode Project
+##### Configure your Xcode project
 
 To begin using the PTT framework, configure Xcode with the following steps:
 
@@ -19,11 +20,11 @@ To begin using the PTT framework, configure Xcode with the following steps:
 3. Choose Editor > Add Capability, select Background Modes, and select Push to Talk from the list of modes.
 4. Choose Editor > Add Capability and select Push to Talk.
 5. Choose Editor > Add Capability and select Push Notifications.
-6. Click Info, expand the Custom iOS Target Properties section, hover your pointer over a row and click the Add button (+). Enter the key name [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) and a string value that explains why the app is requesting access to the device’s microphone.
+6. Click Info, expand the Custom iOS Target Properties section, hover your pointer over a row and click the Add button (+). Enter the key name [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) and a string value that explains why the app is requesting access to the device’s microphone.
 
-##### Join a Channel
+##### Join a channel
 
-A channel represents and describes the PTT session to the system. Apps interact with channels through a [`PTChannelManager`](ptchannelmanager.md), which is the primary interface for joining channels and performing actions like transmitting and receiving audio. Multiple calls to [`channelManager(delegate:restorationDelegate:completionHandler:)`](ptchannelmanager/channelmanager(delegate:restorationdelegate:completionhandler:).md) result in the system returning the same shared instance, so store the channel manager in an instance variable.
+A channel represents and describes the PTT session to the system. Apps interact with channels through a [`PTChannelManager`](./ptchannelmanager.md), which is the primary interface for joining channels and performing actions like transmitting and receiving audio. Multiple calls to [`channelManager(delegate:restorationDelegate:completionHandler:)`](./ptchannelmanager/channelmanager%28delegate,restorationdelegate,completionhandler%29.md) result in the system returning the same shared instance, so store the channel manager in an instance variable.
 
 ```swift
 // Create a channel manager instance.    
@@ -33,7 +34,7 @@ channelManager = try await PTChannelManager.channelManager(delegate: self,
 
 Initialize the channel manager as soon as possible during startup to ensure the framework can restore existing channels and deliver push notifications to the app.
 
-A [`PTChannelDescriptor`](ptchanneldescriptor.md) describes the channel to the system so it can present details — like channel name and image — in the system UI.
+A [`PTChannelDescriptor`](./ptchanneldescriptor.md) describes the channel to the system so it can present details — like channel name and image — in the system UI.
 
 ```swift
 // Create a descriptor an app uses to join a channel.    
@@ -42,7 +43,7 @@ channelDescriptor = PTChannelDescriptor(name: “The channel name”,
                                         image: channelImage)
 ```
 
-The framework uses shared system resources, so only one PTT channel can be active on the system at a time. To join a channel, call [`requestJoinChannel(channelUUID:descriptor:)`](ptchannelmanager/requestjoinchannel(channeluuid:descriptor:).md). The system uses the same unique identifier when interacting with the manager throughout the life of the channel, so when joining a channel, store the descriptor and UUID for later use.
+The framework uses shared system resources, so only one PTT channel can be active on the system at a time. To join a channel, call [`requestJoinChannel(channelUUID:descriptor:)`](./ptchannelmanager/requestjoinchannel%28channeluuid,descriptor%29.md). The system uses the same unique identifier when interacting with the manager throughout the life of the channel, so when joining a channel, store the descriptor and UUID for later use.
 
 ```swift
 // Join a channel with a unique identifier and descriptor.
@@ -52,13 +53,13 @@ channelManager.requestJoinChannel(channelUUID: channelUUID,
 
 > ❗ **Important**:  A person can only join a channel when a PTT app is running in the foreground — with explicit user interaction — so apps need to provide buttons to allow a person to join and leave a channel.
 
-After initializing the channel manager, the framework provides an ephemeral APNs device token in [`channelManager(_:receivedEphemeralPushToken:)`](ptchannelmanagerdelegate/channelmanager(_:receivedephemeralpushtoken:).md). Get the variable-length push token and send it to the app’s server. The token isn’t active until a person joins the channel. If they leave the channel, wait until they rejoin to resume notifications.
+After initializing the channel manager, the framework provides an ephemeral APNs device token in [`channelManager(_:receivedEphemeralPushToken:)`](./ptchannelmanagerdelegate/channelmanager%28_,receivedephemeralpushtoken%29.md). Get the variable-length push token and send it to the app’s server. The token isn’t active until a person joins the channel. If they leave the channel, wait until they rejoin to resume notifications.
 
-Joining a channel can fail when another channel is already active. On failure, the framework calls the delegate method [`channelManager(_:failedToJoinChannel:error:)`](ptchannelmanagerdelegate/channelmanager(_:failedtojoinchannel:error:).md) and contains a [`PTChannelError.Code`](ptchannelerror-swift.struct/code.md).
+Joining a channel can fail when another channel is already active. On failure, the framework calls the delegate method [`channelManager(_:failedToJoinChannel:error:)`](./ptchannelmanagerdelegate/channelmanager%28_,failedtojoinchannel,error%29.md) and contains a [`PTChannelError.Code`](./ptchannelerror-swift.struct/code.md).
 
-##### Restore an Active Channel
+##### Restore an active channel
 
-When the system terminates an app or a person reboots the device, the app needs to restore active channels. Provide a channel descriptor to update the system in the [`PTChannelRestorationDelegate`](ptchannelrestorationdelegate.md). The system only calls the restoration delegate method when it’s unable to use data it caches to restore a channel.
+When the system terminates an app or a person reboots the device, the app needs to restore active channels. Provide a channel descriptor to update the system in the [`PTChannelRestorationDelegate`](./ptchannelrestorationdelegate.md). The system only calls the restoration delegate method when it’s unable to use data it caches to restore a channel.
 
 ```swift
 // Restore an active channel after relaunch.    
@@ -68,46 +69,46 @@ func channelDescriptor(restoredChannelUUID channelUUID: UUID) -> PTChannelDescri
 }
 ```
 
-To keep the system responsive, return from [`channelDescriptor(restoredChannelUUID:)`](ptchannelrestorationdelegate/channeldescriptor(restoredchanneluuid:).md) as soon as possible. Don’t perform long-running or blocking tasks — like network requests — to retrieve a descriptor.
+To keep the system responsive, return from [`channelDescriptor(restoredChannelUUID:)`](./ptchannelrestorationdelegate/channeldescriptor%28restoredchanneluuid%29.md) as soon as possible. Don’t perform long-running or blocking tasks — like network requests — to retrieve a descriptor.
 
-##### Set the Channel Transmission Mode
+##### Set the channel transmission mode
 
-After joining a channel, set the channel’s transmission mode to indicate when the user can transmit audio. The default transmission mode is [`PTTransmissionMode.halfDuplex`](pttransmissionmode/halfduplex.md), indicating that only one participant can send or receive audio at a time. The system prevents a person from transmitting audio while they’re receiving audio from a remote participant.
+After joining a channel, set the channel’s transmission mode to indicate when the user can transmit audio. The default transmission mode is [`PTTransmissionMode.halfDuplex`](./pttransmissionmode/halfduplex.md), indicating that only one participant can send or receive audio at a time. The system prevents a person from transmitting audio while they’re receiving audio from a remote participant.
 
-Use [`PTTransmissionMode.fullDuplex`](pttransmissionmode/fullduplex.md) to allow a person to transmit and receive audio simultaneously. In full-duplex mode, the system allows a person to begin transmitting even if they’re receiving audio.
+Use [`PTTransmissionMode.fullDuplex`](./pttransmissionmode/fullduplex.md) to allow a person to transmit and receive audio simultaneously. In full-duplex mode, the system allows a person to begin transmitting even if they’re receiving audio.
 
 ```swift
 try await channelManager.setTransmissionMode(.fullDuplex, 
                                              channelUUID: channelUUID)
 ```
 
-Set the transmission mode to [`PTTransmissionMode.listenOnly`](pttransmissionmode/listenonly.md) to prevent a participant from transmitting any audio.
+Set the transmission mode to [`PTTransmissionMode.listenOnly`](./pttransmissionmode/listenonly.md) to prevent a participant from transmitting any audio.
 
-##### Report Service Status
+##### Report service status
 
-If there are any platform service disruptions, report the service status through the channel manager. For example, if there’s a network outage, report that the connection is [`PTServiceStatus.connecting`](ptservicestatus/connecting.md).
+If there are any platform service disruptions, report the service status through the channel manager. For example, if there’s a network outage, report that the connection is [`PTServiceStatus.connecting`](./ptservicestatus/connecting.md).
 
 ```swift
 await channelManager.setServiceStatus(.connecting, 
                                       channelUUID: channelUUID)
 ```
 
-When the network is in a restored state, set the service status to [`PTServiceStatus.ready`](ptservicestatus/ready.md).
+When the network is in a restored state, set the service status to [`PTServiceStatus.ready`](./ptservicestatus/ready.md).
 
-##### Transmit Audio
+##### Transmit audio
 
-The framework provides flexibility in how apps handle audio transmission, and enables compatibility with other platforms. Apps implement their own audio encoding and streaming process to transmit audio between users. Start PTT transmissions from the system UI or by calling [`requestBeginTransmitting(channelUUID:)`](ptchannelmanager/requestbegintransmitting(channeluuid:).md). Begin transmission when the app is running in the foreground or following a characteristic change from a [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) device.
+The framework provides flexibility in how apps handle audio transmission, and enables compatibility with other platforms. Apps implement their own audio encoding and streaming process to transmit audio between users. Start PTT transmissions from the system UI or by calling [`requestBeginTransmitting(channelUUID:)`](./ptchannelmanager/requestbegintransmitting%28channeluuid%29.md). Begin transmission when the app is running in the foreground or following a characteristic change from a [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md) device.
 
 The system automatically interprets play or pause toggle events from wired headsets and CarPlay devices when the system has an active PTT channel. Events result in begin- or end-transmission events in the PTT framework.
 
-To begin a transmission, call [`requestBeginTransmitting(channelUUID:)`](ptchannelmanager/requestbegintransmitting(channeluuid:).md) with a unique channel identifier.
+To begin a transmission, call [`requestBeginTransmitting(channelUUID:)`](./ptchannelmanager/requestbegintransmitting%28channeluuid%29.md) with a unique channel identifier.
 
 ```swift
 // Begin transmitting to a channel.    
 channelManager.requestBeginTransmitting(channelUUID: channelUUID)
 ```
 
-When the request to begin transmitting succeeds, the framework calls [`channelManager(_:channelUUID:didBeginTransmittingFrom:)`](ptchannelmanagerdelegate/channelmanager(_:channeluuid:didbegintransmittingfrom:).md). The framework also calls this method if transmission begins from the system UI.
+When the request to begin transmitting succeeds, the framework calls [`channelManager(_:channelUUID:didBeginTransmittingFrom:)`](./ptchannelmanagerdelegate/channelmanager%28_,channeluuid,didbegintransmittingfrom%29.md). The framework also calls this method if transmission begins from the system UI.
 
 ```swift
 // The transmission begins from the request source.    
@@ -119,7 +120,7 @@ func channelManager(_ channelManager: PTChannelManager,
 }
 ```
 
-Before recording and transmitting audio, wait for the framework to call [`channelManager(_:didActivate:)`](ptchannelmanagerdelegate/channelmanager(_:didactivate:).md). The framework calls the method when the audio session is active. This allows for recording audio even if the app is in the background. The framework doesn’t call the method if the channel transmission mode is [`PTTransmissionMode.fullDuplex`](pttransmissionmode/fullduplex.md) and already has an active audio session, because the app is receiving audio from a remote participant when a transmission begins.
+Before recording and transmitting audio, wait for the framework to call [`channelManager(_:didActivate:)`](./ptchannelmanagerdelegate/channelmanager%28_,didactivate%29.md). The framework calls the method when the audio session is active. This allows for recording audio even if the app is in the background. The framework doesn’t call the method if the channel transmission mode is [`PTTransmissionMode.fullDuplex`](./pttransmissionmode/fullduplex.md) and already has an active audio session, because the app is receiving audio from a remote participant when a transmission begins.
 
 ```swift
 // The audio session is in an active state and ready to use.    
@@ -133,11 +134,11 @@ func channelManager(_ channelManager: PTChannelManager,
 
 The system provides built-in sound effects to indicate that the microphone is in an activated or deactivated state. Don’t provide sound effects for these events. The framework doesn’t support custom sound effects.
 
-If the system can’t begin transmission — for example, if a person has an active cellular call — the framework calls [`channelManager(_:failedToBeginTransmittingInChannel:error:)`](ptchannelmanagerdelegate/channelmanager(_:failedtobegintransmittinginchannel:error:).md).
+If the system can’t begin transmission — for example, if a person has an active cellular call — the framework calls [`channelManager(_:failedToBeginTransmittingInChannel:error:)`](./ptchannelmanagerdelegate/channelmanager%28_,failedtobegintransmittinginchannel,error%29.md).
 
-When transmission ends, the framework calls [`channelManager(_:channelUUID:didEndTransmittingFrom:)`](ptchannelmanagerdelegate/channelmanager(_:channeluuid:didendtransmittingfrom:).md) and [`channelManager(_:didDeactivate:)`](ptchannelmanagerdelegate/channelmanager(_:diddeactivate:).md). The system then returns the app to a suspended state if it’s running in the background. Use [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/beginbackgroundtask(expirationhandler:)) to request additional runtime to update the app’s server.
+When transmission ends, the framework calls [`channelManager(_:channelUUID:didEndTransmittingFrom:)`](./ptchannelmanagerdelegate/channelmanager%28_,channeluuid,didendtransmittingfrom%29.md) and [`channelManager(_:didDeactivate:)`](./ptchannelmanagerdelegate/channelmanager%28_,diddeactivate%29.md). The system then returns the app to a suspended state if it’s running in the background. Use [`beginBackgroundTask(expirationHandler:)`](../UIKit/uiapplication/beginbackgroundtask%28expirationhandler%29.md) to request additional runtime to update the app’s server.
 
-##### Receive Audio
+##### Receive audio
 
 The framework introduces a new APNs type for PTT apps. When an app’s server has new audio for a person to receive, it sends a PTT notification using the device push token that an app receives when joining a channel. A token is only active for the life of a channel, so an app receives a new token each time it joins a new channel.
 
@@ -155,7 +156,7 @@ curl -v \
     https://api.sandbox.push.apple.com/3/device/<token>
 ```
 
-When the app’s server sends a PTT notification, the system starts the app in the background and calls [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](ptchannelmanagerdelegate/incomingpushresult(channelmanager:channeluuid:pushpayload:).md). When an app receives a push payload, it constructs a push result type to indicate what action to perform.
+When the app’s server sends a PTT notification, the system starts the app in the background and calls [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](./ptchannelmanagerdelegate/incomingpushresult%28channelmanager,channeluuid,pushpayload%29.md). When an app receives a push payload, it constructs a push result type to indicate what action to perform.
 
 ```swift
 func incomingPushResult(channelManager: PTChannelManager,
@@ -174,35 +175,35 @@ func incomingPushResult(channelManager: PTChannelManager,
 }
 ```
 
-Return a [`PTPushResult`](ptpushresult.md) as soon as possible and don’t block the thread. Perform network tasks — like downloading a speaker’s image or setting up a streaming network connection to a server — on a separate thread.
+Return a [`PTPushResult`](./ptpushresult.md) as soon as possible and don’t block the thread. Perform network tasks — like downloading a speaker’s image or setting up a streaming network connection to a server — on a separate thread.
 
-After setting [`activeRemoteParticipant(_:)`](ptpushresult/activeremoteparticipant(_:).md), the system activates the app’s audio session and calls the [`channelManager(_:didActivate:)`](ptchannelmanagerdelegate/channelmanager(_:didactivate:).md) method. When the app’s audio session is in an active state, begin playing back the audio it receives from the app’s server.
+After setting [`activeRemoteParticipant(_:)`](./ptpushresult/activeremoteparticipant%28_%29.md), the system activates the app’s audio session and calls the [`channelManager(_:didActivate:)`](./ptchannelmanagerdelegate/channelmanager%28_,didactivate%29.md) method. When the app’s audio session is in an active state, begin playing back the audio it receives from the app’s server.
 
-If the PTT channel transmission mode is [`PTTransmissionMode.halfDuplex`](pttransmissionmode/halfduplex.md), and the local participant is transmitting when the app receives a PTT notification, returning an active participant results in an error. End the local participant’s transmission by calling [`stopTransmitting(channelUUID:)`](ptchannelmanager/stoptransmitting(channeluuid:).md) before returning an active remote participant. The system batches these operations together — without deactivating the audio session — so an app can immediately begin playing audio it receives from a remote participant.
+If the PTT channel transmission mode is [`PTTransmissionMode.halfDuplex`](./pttransmissionmode/halfduplex.md), and the local participant is transmitting when the app receives a PTT notification, returning an active participant results in an error. End the local participant’s transmission by calling [`stopTransmitting(channelUUID:)`](./ptchannelmanager/stoptransmitting%28channeluuid%29.md) before returning an active remote participant. The system batches these operations together — without deactivating the audio session — so an app can immediately begin playing audio it receives from a remote participant.
 
 When an app is in the foreground, it can receive and queue messages for playback while playing messages it previously received.
 
-When a remote participant finishes speaking, set [`setActiveRemoteParticipant(_:channelUUID:completionHandler:)`](ptchannelmanager/setactiveremoteparticipant(_:channeluuid:completionhandler:).md) to `nil` to indicate that the app is no longer receiving audio on the channel and the system can deactivate the audio session. This action updates the system UI and allows the user to transmit again.
+When a remote participant finishes speaking, set [`setActiveRemoteParticipant(_:channelUUID:completionHandler:)`](./ptchannelmanager/setactiveremoteparticipant%28_,channeluuid,completionhandler%29.md) to `nil` to indicate that the app is no longer receiving audio on the channel and the system can deactivate the audio session. This action updates the system UI and allows the user to transmit again.
 
-##### Receive Audio on a Restricted Network
+##### Receive audio on a restricted network
 
-Some environments — such as enterprise campuses or secure facilities — use restricted networks that don’t have access to the internet or Apple Push Notification service (APNs). In these scenarios, use the [`Local push connectivity`](https://developer.apple.com/documentation/networkextension/local-push-connectivity) API from the Network Extension framework to receive incoming PTT messages without relying on APNs.
+Some environments — such as enterprise campuses or secure facilities — use restricted networks that don’t have access to the internet or Apple Push Notification service (APNs). In these scenarios, use the [Local push connectivity](../NetworkExtension/local-push-connectivity.md) API from the Network Extension framework to receive incoming PTT messages without relying on APNs.
 
 Local Push Connectivity allows your app to maintain a persistent network connection to your server through an App Push Provider extension. The extension acts as a local replacement for APNs and delivers incoming PTT messages directly over the local network.
 
-To get started, create an [`NEAppPushManager`](https://developer.apple.com/documentation/networkextension/neapppushmanager) instance and configure it with the restricted network information that your app connects to. When the device joins the matching network, the system starts your App Push Provider extension in the background.
+To get started, create an [`NEAppPushManager`](../NetworkExtension/neapppushmanager.md) instance and configure it with the restricted network information that your app connects to. When the device joins the matching network, the system starts your App Push Provider extension in the background.
 
-When your extension receives an incoming PTT message from your server, report it by calling [`reportPushToTalkMessage(userInfo:)`](https://developer.apple.com/documentation/networkextension/neapppushprovider/reportpushtotalkmessage(userinfo:)). The system delivers the message to your app the same way it delivers an APNs notification — by calling [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](ptchannelmanagerdelegate/incomingpushresult(channelmanager:channeluuid:pushpayload:).md) on your channel manager delegate.
+When your extension receives an incoming PTT message from your server, report it by calling [`reportPushToTalkMessage(userInfo:)`](../NetworkExtension/neapppushprovider/reportpushtotalkmessage%28userinfo%29.md). The system delivers the message to your app the same way it delivers an APNs notification — by calling [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](./ptchannelmanagerdelegate/incomingpushresult%28channelmanager,channeluuid,pushpayload%29.md) on your channel manager delegate.
 
-> ❗ **Important**: The push payload your extension reports through [`reportPushToTalkMessage(userInfo:)`](https://developer.apple.com/documentation/networkextension/neapppushprovider/reportpushtotalkmessage(userinfo:)) must only use data types that [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization) supports. Return a [`PTPushResult`](ptpushresult.md) from [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](ptchannelmanagerdelegate/incomingpushresult(channelmanager:channeluuid:pushpayload:).md) as soon as possible so you don’t block the thread.
+> ❗ **Important**: The push payload your extension reports through [`reportPushToTalkMessage(userInfo:)`](../NetworkExtension/neapppushprovider/reportpushtotalkmessage%28userinfo%29.md) must only use data types that [`PropertyListSerialization`](../Foundation/propertylistserialization.md) supports. Return a [`PTPushResult`](./ptpushresult.md) from [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](./ptchannelmanagerdelegate/incomingpushresult%28channelmanager,channeluuid,pushpayload%29.md) as soon as possible so you don’t block the thread.
 
-For detailed information about setting up the App Push Provider extension, see [`Local push connectivity`](https://developer.apple.com/documentation/networkextension/local-push-connectivity).
+For detailed information about setting up the App Push Provider extension, see [Local push connectivity](../NetworkExtension/local-push-connectivity.md).
 
-##### Receive Audio Using a Mission Critical Service
+##### Receive audio using a Mission Critical service
 
 Push to Talk apps used by first responders and emergency services may need to meet 3GPP Mission Critical Services (MCX) performance standards. Mission Critical 5G network slices provide prioritized network traffic that helps your app meet these requirements.
 
-To take advantage of MCX network prioritization, use the [`Local push connectivity`](https://developer.apple.com/documentation/networkextension/local-push-connectivity) API to maintain a direct connection to your server over the MCX 5G network slice. Configure your [`NEAppPushManager`](https://developer.apple.com/documentation/networkextension/neapppushmanager) instance and set [`matchMissionCriticalService`](https://developer.apple.com/documentation/networkextension/neapppushmanager/matchmissioncriticalservice) to `true` to tell the system to start your App Push Provider extension when a Mission Critical Service slice is available.
+To take advantage of MCX network prioritization, use the [Local push connectivity](../NetworkExtension/local-push-connectivity.md) API to maintain a direct connection to your server over the MCX 5G network slice. Configure your [`NEAppPushManager`](../NetworkExtension/neapppushmanager.md) instance and set [`matchMissionCriticalService`](../NetworkExtension/neapppushmanager/matchmissioncriticalservice.md) to `true` to tell the system to start your App Push Provider extension when a Mission Critical Service slice is available.
 
 ```swift
 let pushManager = NEAppPushManager()
@@ -219,30 +220,31 @@ The system starts the App Push Provider extension when both of the following con
 - The containing app has both the Local Push Connectivity entitlement and Mission Critical Service application category entitlement for 5G Network Slicing.
 - The device has a cellular plan that supports Mission Critical Services.
 
-Once your extension is running, it establishes a network connection to your server using the MCX network slice. When your extension receives an incoming PTT message, report it by calling [`reportPushToTalkMessage(userInfo:)`](https://developer.apple.com/documentation/networkextension/neapppushprovider/reportpushtotalkmessage(userinfo:)). The system delivers the message to your channel manager delegate’s [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](ptchannelmanagerdelegate/incomingpushresult(channelmanager:channeluuid:pushpayload:).md) method, just as it does for APNs notifications.
+Once your extension is running, it establishes a network connection to your server using the MCX network slice. When your extension receives an incoming PTT message, report it by calling [`reportPushToTalkMessage(userInfo:)`](../NetworkExtension/neapppushprovider/reportpushtotalkmessage%28userinfo%29.md). The system delivers the message to your channel manager delegate’s [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](./ptchannelmanagerdelegate/incomingpushresult%28channelmanager,channeluuid,pushpayload%29.md) method, just as it does for APNs notifications.
 
 There are several APIs that can provide additional useful information relating to supporting mission critical services:
 
-- The [`matchMissionCriticalService`](https://developer.apple.com/documentation/networkextension/neapppushmanager/matchmissioncriticalservice) property is available in iOS 27 and later.
-- For detailed information about configuring the App Push Provider extension, see [`Local push connectivity`](https://developer.apple.com/documentation/networkextension/local-push-connectivity).
-- To obtain the list of available network slices for the device to use, see the [`CTSlicingManager`](https://developer.apple.com/documentation/coretelephony/ctslicingmanager) API.
-- For additional information entitlements relating to specific traffic categories, see [`5G Network Slicing Traffic Category`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.slicing.trafficcategory).
+- The [`matchMissionCriticalService`](../NetworkExtension/neapppushmanager/matchmissioncriticalservice.md) property is available in iOS 27 and later.
+- For detailed information about configuring the App Push Provider extension, see [Local push connectivity](../NetworkExtension/local-push-connectivity.md).
+- To obtain the list of available network slices for the device to use, see the [`CTSlicingManager`](../CoreTelephony/ctslicingmanager.md) API.
+- For additional information entitlements relating to specific traffic categories, see [`5G Network Slicing Traffic Category`](../BundleResources/entitlements/com.apple.developer.networking.slicing.trafficcategory.md).
 
-##### Reduce Network Latency and Handle Audio Interruptions
+##### Reduce network latency and handle audio interruptions
 
-To reduce the steps necessary to establish a secure TLS connection, and improve the initial connection speed, use the [`Network`](https://developer.apple.com/documentation/network) framework and implement `QUIC`. For more information about `QUIC`, see [`QUIC Options`](https://developer.apple.com/documentation/network/quic-options).
+To reduce the steps necessary to establish a secure TLS connection, and improve the initial connection speed, use the [Network](../Network/Network.md) framework and implement `QUIC`. For more information about `QUIC`, see [QUIC Options](../Network/quic-options.md).
 
-The system prioritizes communications from cellular, FaceTime, and VoIP calls, so PTT apps need to respond accordingly and handle failures gracefully. Monitor and respond to [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) notifications, such as session interruptions, route changes, and failures. For more information about handling interruptions, see [`Handling audio interruptions`](https://developer.apple.com/documentation/avfaudio/handling-audio-interruptions).
+The system prioritizes communications from cellular, FaceTime, and VoIP calls, so PTT apps need to respond accordingly and handle failures gracefully. Monitor and respond to [`AVAudioSession`](../AVFAudio/avaudiosession.md) notifications, such as session interruptions, route changes, and failures. For more information about handling interruptions, see [Handling audio interruptions](../AVFAudio/handling-audio-interruptions.md).
 
-##### Handle Multiple Push to Talk Conversations
+##### Handle multiple Push to Talk conversations
 
-To support simultaneous conversations, join a single channel and update the channel descriptor to reflect the active conversation. Call [`setChannelDescriptor(_:channelUUID:completionHandler:)`](ptchannelmanager/setchanneldescriptor(_:channeluuid:completionhandler:).md) to update the system UI when the active conversation changes.
+To support simultaneous conversations, join a single channel and update the channel descriptor to reflect the active conversation. Call [`setChannelDescriptor(_:channelUUID:completionHandler:)`](./ptchannelmanager/setchanneldescriptor%28_,channeluuid,completionhandler%29.md) to update the system UI when the active conversation changes.
 
-When an app is in the process of receiving audio, use [`setActiveRemoteParticipant(_:channelUUID:completionHandler:)`](ptchannelmanager/setactiveremoteparticipant(_:channeluuid:completionhandler:).md) to update the system UI with new participant details when the conversation’s speaker changes. This eliminates having to send a new APNs notification.
+When an app is in the process of receiving audio, use [`setActiveRemoteParticipant(_:channelUUID:completionHandler:)`](./ptchannelmanager/setactiveremoteparticipant%28_,channeluuid,completionhandler%29.md) to update the system UI with new participant details when the conversation’s speaker changes. This eliminates having to send a new APNs notification.
 
 ## See Also
 
-- [class PTChannelManager](ptchannelmanager.md)
+### Essentials
+- [class PTChannelManager](./ptchannelmanager.md)
   An object that represents a push-to-talk channel manager.
 
 

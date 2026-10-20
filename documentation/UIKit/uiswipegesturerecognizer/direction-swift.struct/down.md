@@ -1,16 +1,17 @@
 # down
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The touch or touches swipe downward.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The touch or touches swipe downward.
 static var down: UISwipeGestureRecognizer.Direction { get }
 ```
 
+```c
+UISwipeGestureRecognizerDirectionDown
+```
+
 ## See Also
 
-- [static var right: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct/right.md)
+### Constants
+- [static var right: UISwipeGestureRecognizer.Direction](./right.md)
   The touch or touches swipe to the right.
-- [static var left: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct/left.md)
+- [static var left: UISwipeGestureRecognizer.Direction](./left.md)
   The touch or touches swipe to the left.
-- [static var up: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct/up.md)
+- [static var up: UISwipeGestureRecognizer.Direction](./up.md)
   The touch or touches swipe upward.
 
 

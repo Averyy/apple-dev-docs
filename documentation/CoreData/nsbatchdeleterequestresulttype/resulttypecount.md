@@ -1,7 +1,8 @@
 # NSBatchDeleteRequestResultType.resultTypeCount
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns the number of managed objects the request deletes.
 
@@ -20,11 +21,16 @@ Returns the number of managed objects the request deletes.
 case resultTypeCount
 ```
 
+```c
+NSBatchDeleteResultTypeCount
+```
+
 ## See Also
 
-- [NSBatchDeleteRequestResultType.resultTypeObjectIDs](nsbatchdeleterequestresulttype/resulttypeobjectids.md)
+### Result Types
+- [NSBatchDeleteRequestResultType.resultTypeObjectIDs](./resulttypeobjectids.md)
   Returns an array of the deleted managed objects’ identifiers.
-- [NSBatchDeleteRequestResultType.resultTypeStatusOnly](nsbatchdeleterequestresulttype/resulttypestatusonly.md)
+- [NSBatchDeleteRequestResultType.resultTypeStatusOnly](./resulttypestatusonly.md)
   Returns a Boolean value that indicates if the request succeeds.
 
 

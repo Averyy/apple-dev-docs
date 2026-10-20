@@ -1,7 +1,8 @@
 # scaleFactorX
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var scaleFactorX: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double scaleFactorX;
+```
+
 ## See Also
 
-- [var scaleFactorY: Double](mpscnnupsamplingnearestnode/scalefactory.md)
+### Instance Properties
+- [var scaleFactorY: Double](./scalefactory.md)
 
 
 ---

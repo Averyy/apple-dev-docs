@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Data_Electrical_ElectricalPower
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Data_Electrical_ElectricalPower = 0x0503
 ```
 

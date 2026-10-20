@@ -1,7 +1,8 @@
 # EMLINK
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Too many links.
 

@@ -1,14 +1,15 @@
 # kIOTimingIDSony_1920x1200_76hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOTimingIDSony_1920x1200_76hz = 540
 ```
 

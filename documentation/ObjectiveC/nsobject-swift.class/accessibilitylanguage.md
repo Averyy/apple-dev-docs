@@ -1,20 +1,25 @@
 # accessibilityLanguage
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 var accessibilityLanguage: String? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSString * accessibilityLanguage;
 ```
 
 

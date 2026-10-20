@@ -1,7 +1,8 @@
 # NSUbiquitousFileErrorMaximum
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum error code value that represents an iCloud error.
 
@@ -22,13 +23,14 @@ var NSUbiquitousFileErrorMaximum: Int { get }
 
 ## See Also
 
-- [var NSUbiquitousFileErrorMinimum: Int](nsubiquitousfileerrorminimum-swift.var.md)
+### General iCloud File Errors
+- [var NSUbiquitousFileErrorMinimum: Int](./nsubiquitousfileerrorminimum-swift.var.md)
   The minimum error code value that represents an iCloud error.
-- [var NSUbiquitousFileUnavailableError: Int](nsubiquitousfileunavailableerror-swift.var.md)
+- [var NSUbiquitousFileUnavailableError: Int](./nsubiquitousfileunavailableerror-swift.var.md)
   The item has not been uploaded to iCloud by another device yet.
-- [var NSUbiquitousFileNotUploadedDueToQuotaError: Int](nsubiquitousfilenotuploadedduetoquotaerror-swift.var.md)
+- [var NSUbiquitousFileNotUploadedDueToQuotaError: Int](./nsubiquitousfilenotuploadedduetoquotaerror-swift.var.md)
   The item could not be uploaded to iCloud because it would make the account go over its quota.
-- [var NSUbiquitousFileUbiquityServerNotAvailable: Int](nsubiquitousfileubiquityservernotavailable-swift.var.md)
+- [var NSUbiquitousFileUbiquityServerNotAvailable: Int](./nsubiquitousfileubiquityservernotavailable-swift.var.md)
   A failure to connect to the iCloud servers.
 
 

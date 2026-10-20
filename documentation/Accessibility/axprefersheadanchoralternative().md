@@ -1,12 +1,15 @@
 # AXPrefersHeadAnchorAlternative()
 
 **Framework**: Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates the person’s preference for content that follows their head position.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: AccessibilitySettings.prefersHeadAnchorAlternative)
+
+> **Deprecated**: Use [`prefersHeadAnchorAlternative`](./accessibilitysettings/prefersheadanchoralternative.md) instead.
 
 ## Declaration
 
@@ -27,9 +30,10 @@ If your app contains head-anchored content, call this function before you displa
 
 ## See Also
 
-- [func AXAnimatedImagesEnabled() -> Bool](axanimatedimagesenabled().md)
+### Deprecated
+- [func AXAnimatedImagesEnabled() -> Bool](./axanimatedimagesenabled%28%29.md)
   Returns a Boolean value that indicates whether the system setting for Animated Images is on.
-- [func AXPrefersHorizontalTextLayout() -> Bool](axprefershorizontaltextlayout().md)
+- [func AXPrefersHorizontalTextLayout() -> Bool](./axprefershorizontaltextlayout%28%29.md)
   Returns a Boolean value that indicates whether the system setting for Prefer Horizontal Text is on.
 
 

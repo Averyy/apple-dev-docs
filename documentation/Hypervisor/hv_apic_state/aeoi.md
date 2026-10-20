@@ -1,15 +1,20 @@
 # aeoi
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var aeoi: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t aeoi[8];
 ```
 
 

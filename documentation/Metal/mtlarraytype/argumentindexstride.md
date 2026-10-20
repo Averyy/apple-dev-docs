@@ -1,7 +1,8 @@
 # argumentIndexStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between argument indices.
 
@@ -19,13 +20,18 @@ The stride, in bytes, between argument indices.
 var argumentIndexStride: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger argumentIndexStride;
+```
+
 ## See Also
 
-- [var arrayLength: Int](mtlarraytype/arraylength.md)
+### Describing the array elements
+- [var arrayLength: Int](./arraylength.md)
   The number of elements in the array.
-- [var elementType: MTLDataType](mtlarraytype/elementtype.md)
+- [var elementType: MTLDataType](./elementtype.md)
   The data type of the array’s elements.
-- [var stride: Int](mtlarraytype/stride.md)
+- [var stride: Int](./stride.md)
   The stride between array elements, in bytes.
 
 

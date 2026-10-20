@@ -1,20 +1,22 @@
 # max-height
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the maximum height for an element.
 
 ## See Also
 
-- [height](element-shaping-height.md)
+### Element Sizing
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [max-width](element-shaping-max-width.md)
+- [max-width](./element-shaping-max-width.md)
   Specifies the maximum width for an element.
-- [min-height](element-shaping-min-height.md)
+- [min-height](./element-shaping-min-height.md)
   Specifies the minimum height for an element.
-- [min-width](element-shaping-min-width.md)
+- [min-width](./element-shaping-min-width.md)
   Specifies the minimum width for an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 
 

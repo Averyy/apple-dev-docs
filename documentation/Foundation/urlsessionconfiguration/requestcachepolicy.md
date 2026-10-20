@@ -1,7 +1,8 @@
 # requestCachePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predefined constant that determines when to return a response from the cache.
 
@@ -20,21 +21,26 @@ A predefined constant that determines when to return a response from the cache.
 var requestCachePolicy: NSURLRequest.CachePolicy { get set }
 ```
 
+```objc
+@property NSURLRequestCachePolicy requestCachePolicy;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
 This property determines the request caching policy used by tasks within sessions based on this configuration.
 
-Set this property to one of the constants defined in [`NSURLRequest.CachePolicy`](nsurlrequest/cachepolicy-swift.enum.md) to specify whether the cache policy should depend on expiration dates and age, whether the cache should be disabled entirely, and whether the server should be contacted to determine if the content has changed since it was last requested.
+Set this property to one of the constants defined in [`NSURLRequest.CachePolicy`](../nsurlrequest/cachepolicy-swift.enum.md) to specify whether the cache policy should depend on expiration dates and age, whether the cache should be disabled entirely, and whether the server should be contacted to determine if the content has changed since it was last requested.
 
-The default value is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](nsurlrequest/cachepolicy-swift.enum/useprotocolcachepolicy.md).
+The default value is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](../nsurlrequest/cachepolicy-swift.enum/useprotocolcachepolicy.md).
 
 ## See Also
 
-- [var urlCache: URLCache?](urlsessionconfiguration/urlcache.md)
+### Setting caching policies
+- [var urlCache: URLCache?](./urlcache.md)
   The URL cache for providing cached responses to requests within the session.
 
 

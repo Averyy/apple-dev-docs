@@ -1,7 +1,8 @@
 # GetIdlePolicy
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current idle suspend timeout for the interface.
 
@@ -10,13 +11,13 @@ Gets the current idle suspend timeout for the interface.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetIdlePolicy(uint32_t *deviceIdleTimeout);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
@@ -24,15 +25,16 @@ virtual kern_return_t GetIdlePolicy(uint32_t *deviceIdleTimeout);
 
 ## See Also
 
-- [GetFrameNumber](iousbhostinterface/getframenumber.md)
+### Configuring the Interface
+- [GetFrameNumber](./getframenumber.md)
   Gets the current frame number of the USB controller.
-- [GetPortStatus](iousbhostinterface/getportstatus.md)
+- [GetPortStatus](./getportstatus.md)
   Gets the current port status.
-- [SelectAlternateSetting](iousbhostinterface/selectalternatesetting.md)
+- [SelectAlternateSetting](./selectalternatesetting.md)
   Selects an alternative setting for this interface.
-- [SetIdlePolicy](iousbhostinterface/setidlepolicy.md)
+- [SetIdlePolicy](./setidlepolicy.md)
   Sets the desired idle suspend timeout for the interface.
-- [tIOUSBHostPortStatus](tiousbhostportstatus.md)
+- [tIOUSBHostPortStatus](../tiousbhostportstatus.md)
   Constants indicating the state of a port.
 
 

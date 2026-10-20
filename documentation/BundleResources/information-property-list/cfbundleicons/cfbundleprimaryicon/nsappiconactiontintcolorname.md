@@ -1,7 +1,8 @@
 # NSAppIconActionTintColorName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The tint color to apply to text and symbols in the App Shortcuts platter.
 
@@ -10,9 +11,10 @@ The tint color to apply to text and symbols in the App Shortcuts platter.
 - iPadOS 17.0+
 - watchOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSAppIconActionTintColorName`
+- **Type**: string
 
 #### Discussion
 
@@ -50,7 +52,8 @@ If your app provides multiple app icons, you can specify a different tint color 
 
 ## See Also
 
-- [NSAppIconComplementingColorNames](information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
+### Customizing the App Shortcuts platter
+- [NSAppIconComplementingColorNames](./nsappiconcomplementingcolornames.md)
   The names of the colors to use for the background of the App Shortcuts platter.
 
 

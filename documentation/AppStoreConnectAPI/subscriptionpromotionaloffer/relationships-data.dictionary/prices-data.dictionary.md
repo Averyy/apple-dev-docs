@@ -1,21 +1,22 @@
 # SubscriptionPromotionalOffer.Relationships.Prices
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPromotionalOffer.Relationships.Prices
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPromotionalOffer.Relationships.Prices.Data](subscriptionpromotionaloffer/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionPromotionalOffer.Relationships.Prices.Data](./prices-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription promotional offer.
 
 ## Properties
@@ -26,7 +27,8 @@ object SubscriptionPromotionalOffer.Relationships.Prices
 
 ## See Also
 
-- [object SubscriptionPromotionalOffer.Relationships.Subscription](subscriptionpromotionaloffer/relationships-data.dictionary/subscription-data.dictionary.md)
+### Objects
+- [object SubscriptionPromotionalOffer.Relationships.Subscription](./subscription-data.dictionary.md)
 
 
 ---

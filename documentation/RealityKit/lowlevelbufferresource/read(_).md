@@ -1,7 +1,8 @@
 # read(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the current contents of the buffer resource synchronously on the CPU.
 
@@ -21,7 +22,7 @@ final func read<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R where E :
 
 You pass a closure that receives a read-only span representing the contents of the buffer resource. This span is valid only for the duration of the closure.
 
-> **Note**: Any error thrown by `body`.
+> **Throws**: Any error thrown by `body`.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ You pass a closure that receives a read-only span representing the contents of t
 
 ## See Also
 
-- [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelbufferresource/read(commandbuffer:).md)
+### Reading buffer contents
+- [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./read%28commandbuffer%29.md)
   Returns a Metal buffer containing the current contents of the buffer resource for GPU read operations.
 
 

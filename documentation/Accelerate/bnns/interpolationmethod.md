@@ -1,7 +1,8 @@
 # BNNS.InterpolationMethod
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify interpolation methods for resize operations.
 
@@ -11,8 +12,10 @@ Constants that specify interpolation methods for resize operations.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,16 +26,16 @@ enum InterpolationMethod
 ## Topics
 
 ### Interpolation Methods
-- [BNNS.InterpolationMethod.linear](bnns/interpolationmethod/linear.md)
+- [BNNS.InterpolationMethod.linear](./interpolationmethod/linear.md)
   Interpolation that is linear or bilinear depending on the number of resized dimensions.
-- [BNNS.InterpolationMethod.nearestNeighbor](bnns/interpolationmethod/nearestneighbor.md)
+- [BNNS.InterpolationMethod.nearestNeighbor](./interpolationmethod/nearestneighbor.md)
   Nearest-neighbor interpolation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

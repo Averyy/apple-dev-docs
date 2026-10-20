@@ -1,7 +1,8 @@
 # session
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific scene session to activate.
 
@@ -10,7 +11,7 @@ The specific scene session to activate.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var session: UISceneSession? { get }
 
 ## See Also
 
-- [var options: UIScene.ActivationRequestOptions?](uiscenesessionactivationrequest-swift.struct/options.md)
+### Managing request details
+- [var options: UIScene.ActivationRequestOptions?](./options.md)
   Activation request options to further customize the request.
-- [var role: UISceneSession.Role](uiscenesessionactivationrequest-swift.struct/role.md)
+- [var role: UISceneSession.Role](./role.md)
   The role to request.
-- [var userActivity: NSUserActivity?](uiscenesessionactivationrequest-swift.struct/useractivity.md)
+- [var userActivity: NSUserActivity?](./useractivity.md)
   A user activity to send to the newly activated scene.
 
 

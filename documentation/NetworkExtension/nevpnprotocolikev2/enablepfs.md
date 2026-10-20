@@ -1,7 +1,8 @@
 # enablePFS
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether or not Perfect Forward Secrecy is enabled.
 
@@ -19,27 +20,32 @@ A Boolean indicating whether or not Perfect Forward Secrecy is enabled.
 var enablePFS: Bool { get set }
 ```
 
+```objc
+@property BOOL enablePFS;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate](nevpnprotocolikev2/deadpeerdetectionrate.md)
+### Accessing other IKEv2 properties
+- [var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate](./deadpeerdetectionrate.md)
   The frequency at which the IKEv2 client will run the dead peer detection algorithm.
-- [enum NEVPNIKEv2DeadPeerDetectionRate](nevpnikev2deadpeerdetectionrate.md)
+- [enum NEVPNIKEv2DeadPeerDetectionRate](../nevpnikev2deadpeerdetectionrate.md)
   An enumeration of values for the frequency at which the IKEv2 client runs the dead peer detection algorithm.
-- [var useConfigurationAttributeInternalIPSubnet: Bool](nevpnprotocolikev2/useconfigurationattributeinternalipsubnet.md)
+- [var useConfigurationAttributeInternalIPSubnet: Bool](./useconfigurationattributeinternalipsubnet.md)
   A Boolean indicating whether or not the IKEv2 client should use the INTERNAL_IP4_SUBNET and/or INTERNAL_IP6_SUBNET attributes sent by the IKEv2 server.
-- [var disableMOBIKE: Bool](nevpnprotocolikev2/disablemobike.md)
+- [var disableMOBIKE: Bool](./disablemobike.md)
   A Boolean indicating whether or not MOBIKE should be disabled for the IKEv2 sessions.
-- [var disableRedirect: Bool](nevpnprotocolikev2/disableredirect.md)
+- [var disableRedirect: Bool](./disableredirect.md)
   A Boolean indicating whether or not IKEv2 server redirects are disabled.
-- [var enableRevocationCheck: Bool](nevpnprotocolikev2/enablerevocationcheck.md)
+- [var enableRevocationCheck: Bool](./enablerevocationcheck.md)
   Enable revocation checking of the IKEv2 server certificate.
-- [var strictRevocationCheck: Bool](nevpnprotocolikev2/strictrevocationcheck.md)
+- [var strictRevocationCheck: Bool](./strictrevocationcheck.md)
   Require a “not revoked” result when checking if the certificate identifying the server is revoked.
-- [var mtu: Int](nevpnprotocolikev2/mtu.md)
+- [var mtu: Int](./mtu.md)
   The Maximum Transmission Unit (MTU) size in bytes to assign to the tunnel interface.
 
 

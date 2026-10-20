@@ -1,7 +1,8 @@
 # NFCNDEFReaderSession
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reader session for detecting NFC Data Exchange Format (NDEF) tags.
 
@@ -16,50 +17,55 @@ A reader session for detecting NFC Data Exchange Format (NDEF) tags.
 class NFCNDEFReaderSession
 ```
 
+```objc
+@interface NFCNDEFReaderSession : NFCReaderSession
+```
+
 #### Overview
 
-As with the [`NFCReaderSession`](nfcreadersession-swift.class.md) base class, only one NFC NDEF reader session can be active in the system at a time. If you create an additional session, the system puts it in a queue and processes it in first-in, first-out (FIFO) order.
+As with the [`NFCReaderSession`](./nfcreadersession-swift.class.md) base class, only one NFC NDEF reader session can be active in the system at a time. If you create an additional session, the system puts it in a queue and processes it in first-in, first-out (FIFO) order.
 
 ## Topics
 
 ### Creating a Session
-- [init(delegate: any NFCNDEFReaderSessionDelegate, queue: dispatch_queue_t?, invalidateAfterFirstRead: Bool)](nfcndefreadersession/init(delegate:queue:invalidateafterfirstread:).md)
+- [init(delegate: any NFCNDEFReaderSessionDelegate, queue: dispatch_queue_t?, invalidateAfterFirstRead: Bool)](./nfcndefreadersession/init%28delegate,queue,invalidateafterfirstread%29.md)
   Creates and initializes a new NFC NDEF reader session.
-- [protocol NFCNDEFReaderSessionDelegate](nfcndefreadersessiondelegate.md)
+- [protocol NFCNDEFReaderSessionDelegate](./nfcndefreadersessiondelegate.md)
   A protocol that an object implements to serve as an NDEF reader session delegate.
 ### Connecting to a Tag
-- [func connect(to: any NFCNDEFTag, completionHandler: ((any Error)?) -> Void)](nfcndefreadersession/connect(to:completionhandler:).md)
+- [func connect(to: any NFCNDEFTag, completionHandler: ((any Error)?) -> Void)](./nfcndefreadersession/connect%28to,completionhandler%29.md)
   Connects the reader session to a tag and activates that tag.
 ### Restarting the Polling Sequence
-- [func restartPolling()](nfcndefreadersession/restartpolling.md)
+- [func restartPolling()](./nfcndefreadersession/restartpolling%28%29.md)
   Restarts the polling sequence so the reader session can discover new tags.
 
 ## Relationships
 
 ### Inherits From
-- [NFCReaderSession](nfcreadersession-swift.class.md)
+- [NFCReaderSession](./nfcreadersession-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NFCReaderSessionProtocol](./nfcreadersessionprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NFCTagReaderSession](nfctagreadersession.md)
+### Reader sessions
+- [class NFCTagReaderSession](./nfctagreadersession.md)
   A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags.
-- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
+- [class NFCPaymentTagReaderSession](./nfcpaymenttagreadersession.md)
   A reader session that supports the use of payment tags.
-- [class NFCVASReaderSession](nfcvasreadersession.md)
+- [class NFCVASReaderSession](./nfcvasreadersession.md)
   A reader session for processing Value Added Service (VAS) tags.
-- [class NFCReaderSession](nfcreadersession-swift.class.md)
+- [class NFCReaderSession](./nfcreadersession-swift.class.md)
   The abstract base class that represents a reader session for detecting NFC tags.
-- [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
+- [protocol NFCReaderSessionProtocol](./nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 
 

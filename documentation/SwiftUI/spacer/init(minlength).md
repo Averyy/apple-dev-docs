@@ -1,7 +1,8 @@
 # init(minLength:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ init(minLength: CGFloat? = nil)
 
 ## See Also
 
-- [var minLength: CGFloat?](spacer/minlength.md)
+### Creating a spacer
+- [var minLength: CGFloat?](./minlength.md)
   The minimum length this spacer can be shrunk to, along the axis or axes of expansion.
 
 

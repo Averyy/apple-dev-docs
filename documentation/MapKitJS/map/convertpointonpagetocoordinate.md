@@ -1,7 +1,8 @@
 # convertPointOnPageToCoordinate(point)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point in page coordinates to the corresponding map coordinate.
 
@@ -10,13 +11,13 @@ Converts a point in page coordinates to the corresponding map coordinate.
 
 ## Declaration
 
-```swift
+```
 convertPointOnPageToCoordinate(point: DOMPoint): Coordinate;
 ```
 
 #### Return Value
 
-A [`Coordinate`](coordinate.md) in the map at the provided `DOMPoint` of the page.
+A [`Coordinate`](../coordinate.md) in the map at the provided `DOMPoint` of the page.
 
 ## Parameters
 
@@ -24,7 +25,8 @@ A [`Coordinate`](coordinate.md) in the map at the provided `DOMPoint` of the pag
 
 ## See Also
 
-- [convertCoordinateToPointOnPage(coordinate)](map/convertcoordinatetopointonpage.md)
+### Converting map coordinates
+- [convertCoordinateToPointOnPage(coordinate)](./convertcoordinatetopointonpage.md)
   Converts a coordinate on the map to a point in the page’s coordinate system.
 
 

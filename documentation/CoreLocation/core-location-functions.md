@@ -1,18 +1,20 @@
 # Core Location Functions
 
-**Framework**: Core Location
+**Framework**: Core Location  
+**Role**: API Collection
 
 The Core Location framework provides functions to help you work with coordinate values.
 
 ## Topics
 
 ### Functions
-- [func CLLocationCoordinate2DMake(CLLocationDegrees, CLLocationDegrees) -> CLLocationCoordinate2D](cllocationcoordinate2dmake(_:_:).md)
+- [func CLLocationCoordinate2DMake(CLLocationDegrees, CLLocationDegrees) -> CLLocationCoordinate2D](./cllocationcoordinate2dmake%28_,_%29.md)
   Formats a latitude and longitude value into a coordinate data structure format.
 
 ## See Also
 
-- [Core Location Constants](core-location-constants.md)
+### Reference
+- [Core Location Constants](./core-location-constants.md)
   This document describes the constants found in the Core Location framework.
 
 

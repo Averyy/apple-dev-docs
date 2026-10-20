@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func addLibrary(descriptor: MTLStitchedLibraryDescriptor) throws
+```
+
+```objc
+- (BOOL) addLibraryWithDescriptor:(MTLStitchedLibraryDescriptor *) descriptor error:(NSError **) error;
 ```
 
 

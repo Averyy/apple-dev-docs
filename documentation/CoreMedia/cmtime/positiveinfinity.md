@@ -1,7 +1,8 @@
 # positiveInfinity
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents positive infinity.
 
@@ -20,19 +21,24 @@ A value that represents positive infinity.
 static let positiveInfinity: CMTime
 ```
 
+```c
+extern const CMTime kCMTimePositiveInfinity;
+```
+
 #### Discussion
 
-Don’t test a time against this constant using (time == [`positiveInfinity`](cmtime/positiveinfinity.md)) because there are many times that are also positive infinity. Use [`CMTIME_IS_POSITIVEINFINITY(_:)`](cmtime_is_positiveinfinity(_:).md) instead.
+Don’t test a time against this constant using (time == [`positiveInfinity`](./positiveinfinity.md)) because there are many times that are also positive infinity. Use [`CMTIME_IS_POSITIVEINFINITY(_:)`](../cmtime_is_positiveinfinity%28_%29.md) instead.
 
 ## See Also
 
-- [static let zero: CMTime](cmtime/zero.md)
+### Constants
+- [static let zero: CMTime](./zero.md)
   A value that represents time zero.
-- [static let invalid: CMTime](cmtime/invalid.md)
+- [static let invalid: CMTime](./invalid.md)
   A value that represents an invalid time.
-- [static let indefinite: CMTime](cmtime/indefinite.md)
+- [static let indefinite: CMTime](./indefinite.md)
   A value that represents an indefinite time.
-- [static let negativeInfinity: CMTime](cmtime/negativeinfinity.md)
+- [static let negativeInfinity: CMTime](./negativeinfinity.md)
   A value that represents negative infinity.
 
 

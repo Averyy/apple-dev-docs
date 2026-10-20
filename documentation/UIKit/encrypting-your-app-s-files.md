@@ -1,6 +1,7 @@
 # Encrypting Your App’s Files
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Protect the user’s data in iOS by encrypting it on disk.
 
@@ -15,7 +16,7 @@ You specify the level of data protection that you want to apply to each of your 
 - **Complete unless open.** You can open existing files only when the device is unlocked. If you have a file already open, you may continue to access that file even after the user locks the device. You can also create new files and access them while the device is locked or unlocked.
 - **Complete.** The file is accessible only when the device is unlocked.
 
-To create and encrypt a new file in one step, construct a data object with the file’s contents and call the [`write(to:options:)`](https://developer.apple.com/documentation/foundation/data/write(to:options:)) method. When calling the method, specify the data protection option that you want applied to the file. The following code shows an example of how to write out the contents of a [`Data`](https://developer.apple.com/documentation/foundation/data) instance to a file and encrypt it using the complete protection level.
+To create and encrypt a new file in one step, construct a data object with the file’s contents and call the [`write(to:options:)`](../Foundation/data/write%28to,options%29.md) method. When calling the method, specify the data protection option that you want applied to the file. The following code shows an example of how to write out the contents of a [`Data`](../Foundation/data.md) instance to a file and encrypt it using the complete protection level.
 
 ```swift
 do {
@@ -26,7 +27,7 @@ catch {
 }
 ```
 
-To change the data protection level of an existing file, use the [`setResourceValue(_:forKey:)`](https://developer.apple.com/documentation/foundation/nsurl/setresourcevalue(_:forkey:)) method of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl). When calling this method, assign the new data protection option to the [`fileProtectionKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/fileprotectionkey) resource key. The following code shows an example that adds this key to an existing file.
+To change the data protection level of an existing file, use the [`setResourceValue(_:forKey:)`](../Foundation/nsurl/setresourcevalue%28_,forkey%29.md) method of [`NSURL`](../Foundation/nsurl.md). When calling this method, assign the new data protection option to the [`fileProtectionKey`](../Foundation/urlresourcekey/fileprotectionkey.md) resource key. The following code shows an example that adds this key to an existing file.
 
 ```swift
 do {
@@ -44,7 +45,7 @@ catch {
 Depending on a file’s protection level, attempts to read or write its contents could fail when the user subsequently locks the device. To ensure that your app is able to access files, do the following:
 
 - Choose the right data protection level for your needs.
-- Use the app delegate’s [`applicationProtectedDataWillBecomeUnavailable(_:)`](uiapplicationdelegate/applicationprotecteddatawillbecomeunavailable(_:).md) and [`applicationProtectedDataDidBecomeAvailable(_:)`](uiapplicationdelegate/applicationprotecteddatadidbecomeavailable(_:).md) methods to close and reopen files with the [`completeFileProtection`](https://developer.apple.com/documentation/foundation/nsdata/writingoptions/completefileprotection) level.
+- Use the app delegate’s [`applicationProtectedDataWillBecomeUnavailable(_:)`](./uiapplicationdelegate/applicationprotecteddatawillbecomeunavailable%28_%29.md) and [`applicationProtectedDataDidBecomeAvailable(_:)`](./uiapplicationdelegate/applicationprotecteddatadidbecomeavailable%28_%29.md) methods to close and reopen files with the [`completeFileProtection`](../Foundation/nsdata/writingoptions/completefileprotection.md) level.
 
 Assign the complete protection level to files that your app accesses only when it is in the foreground. If your app supports background capabilities, such as handling location updates, assign a different protection level for files that you might access while in the background. For example, a fitness app might use the complete unless open protection level on a file that it uses to log location events in the background.
 
@@ -52,7 +53,8 @@ Files containing personal information about the user, or files created directly 
 
 ## See Also
 
-- [Requesting access to protected resources](requesting-access-to-protected-resources.md)
+### Supporting Privacy
+- [Requesting access to protected resources](./requesting-access-to-protected-resources.md)
   Provide a purpose string that explains to a person why you need access to protected resources on their device.
 
 

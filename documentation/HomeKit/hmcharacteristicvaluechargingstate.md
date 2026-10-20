@@ -1,7 +1,8 @@
 # HMCharacteristicValueChargingState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the charging state of a battery.
 
@@ -19,27 +20,31 @@ Possible values for the charging state of a battery.
 enum HMCharacteristicValueChargingState
 ```
 
+```c
+enum HMCharacteristicValueChargingState : NSInteger;
+```
+
 ## Topics
 
 ### Charging States
-- [HMCharacteristicValueChargingState.none](hmcharacteristicvaluechargingstate/none.md)
+- [HMCharacteristicValueChargingState.none](./hmcharacteristicvaluechargingstate/none.md)
   The battery isn’t charging.
-- [HMCharacteristicValueChargingState.inProgress](hmcharacteristicvaluechargingstate/inprogress.md)
+- [HMCharacteristicValueChargingState.inProgress](./hmcharacteristicvaluechargingstate/inprogress.md)
   The battery is charging.
-- [HMCharacteristicValueChargingState.notChargeable](hmcharacteristicvaluechargingstate/notchargeable.md)
+- [HMCharacteristicValueChargingState.notChargeable](./hmcharacteristicvaluechargingstate/notchargeable.md)
   The battery can’t be charged.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluechargingstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluechargingstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

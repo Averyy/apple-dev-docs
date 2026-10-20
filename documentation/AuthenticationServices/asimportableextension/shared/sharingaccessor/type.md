@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of accessor.
 

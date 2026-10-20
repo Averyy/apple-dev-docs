@@ -1,7 +1,8 @@
 # first
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first element of the collection.
 

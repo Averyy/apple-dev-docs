@@ -1,7 +1,8 @@
 # Audio.GeneratorRenderHandler
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A handler that generates real-time audio.
 

@@ -1,7 +1,8 @@
 # ManagementProperties
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure the properties on the device.
 
@@ -16,7 +17,7 @@ The declaration to configure the properties on the device.
 
 ## Declaration
 
-```swift
+```
 object ManagementProperties
 ```
 
@@ -24,7 +25,7 @@ object ManagementProperties
 
 Specify `com.apple.management.properties` as the declaration type.
 
-##### Management Declaration Example
+##### Management declaration example
 
 ```json
 {
@@ -45,9 +46,10 @@ Specify `com.apple.management.properties` as the declaration type.
 
 ## See Also
 
-- [object ManagementOrganizationInformation](managementorganizationinformation.md)
+### Management
+- [object ManagementOrganizationInformation](./managementorganizationinformation.md)
   The declaration to configure the managing organization’s contact information.
-- [object ManagementServerCapabilities](managementservercapabilities.md)
+- [object ManagementServerCapabilities](./managementservercapabilities.md)
   The declaration to configure the server’s feature set.
 
 

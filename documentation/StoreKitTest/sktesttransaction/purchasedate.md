@@ -1,7 +1,8 @@
 # purchaseDate
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of purchase for the transaction.
 
@@ -20,15 +21,20 @@ The date of purchase for the transaction.
 var purchaseDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * purchaseDate;
+```
+
 #### Discussion
 
 The purchase date applies to any type of Apple In-App Purchase.
 
 ## See Also
 
-- [var cancelDate: Date?](sktesttransaction/canceldate.md)
+### Getting Dates
+- [var cancelDate: Date?](./canceldate.md)
   The date when the system refunded the transaction.
-- [var expirationDate: Date?](sktesttransaction/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date a subscription expires.
 
 

@@ -1,7 +1,8 @@
 # sessionTransportType
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var sessionTransportType: MTRTransportType { get }
+```
+
+```objc
+@property (readonly) MTRTransportType sessionTransportType;
 ```
 
 

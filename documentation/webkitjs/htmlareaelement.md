@@ -1,7 +1,8 @@
 # HTMLAreaElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,27 +10,27 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLAreaElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [alt](htmlareaelement/1631920-alt.md)
-- [coords](htmlareaelement/1632519-coords.md)
-- [download](htmlareaelement/2871181-download.md)
-- [noHref](htmlareaelement/1633307-nohref.md)
-- [ping](htmlareaelement/1630481-ping.md)
-- [rel](htmlareaelement/1634323-rel.md)
-- [relList](htmlareaelement/1632205-rellist.md)
-- [shape](htmlareaelement/1633950-shape.md)
-- [target](htmlareaelement/1631741-target.md)
+- [alt](./htmlareaelement/api-1631920-alt.md)
+- [coords](./htmlareaelement/api-1632519-coords.md)
+- [download](./htmlareaelement/api-2871181-download.md)
+- [noHref](./htmlareaelement/api-1633307-nohref.md)
+- [ping](./htmlareaelement/api-1630481-ping.md)
+- [rel](./htmlareaelement/api-1634323-rel.md)
+- [relList](./htmlareaelement/api-1632205-rellist.md)
+- [shape](./htmlareaelement/api-1633950-shape.md)
+- [target](./htmlareaelement/api-1631741-target.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

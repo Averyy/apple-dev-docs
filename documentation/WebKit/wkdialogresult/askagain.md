@@ -1,7 +1,8 @@
 # WKDialogResult.askAgain
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates the delegate didn’t display a message, so other web views should check again.
 
@@ -9,7 +10,7 @@ A result that indicates the delegate didn’t display a message, so other web vi
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A result that indicates the delegate didn’t display a message, so other web vi
 case askAgain
 ```
 
+```c
+WKDialogResultAskAgain
+```
+
 ## See Also
 
-- [WKDialogResult.handled](wkdialogresult/handled.md)
+### First use dialog results
+- [WKDialogResult.handled](./handled.md)
   A result that indicates the delegate displayed the first use message.
-- [WKDialogResult.showDefault](wkdialogresult/showdefault.md)
+- [WKDialogResult.showDefault](./showdefault.md)
   A result that indicates the delegate didn’t display a message, so the web view should show the default Lockdown Mode message.
 
 

@@ -1,7 +1,8 @@
 # isSoloed
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the app silences all groups other than this group.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the app silences all groups other than th
 var isSoloed: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSoloed) BOOL soloed;
+```
+
 ## See Also
 
-- [func mute()](phasegroup/mute.md)
+### Silencing Sounds
+- [func mute()](./mute%28%29.md)
   Silences the group.
-- [func unmute()](phasegroup/unmute.md)
+- [func unmute()](./unmute%28%29.md)
   Restores the group’s volume.
-- [var isMuted: Bool](phasegroup/ismuted.md)
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether the app silences the group.
-- [func solo()](phasegroup/solo.md)
+- [func solo()](./solo%28%29.md)
   Silences all other groups.
-- [func unsolo()](phasegroup/unsolo.md)
+- [func unsolo()](./unsolo%28%29.md)
   Restores the other groups’ volume.
 
 

@@ -1,7 +1,8 @@
 # textureInfo(at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func textureInfo(at index: Int) -> MPSStateTextureInfo
+```
+
+```objc
+- (MPSStateTextureInfo) textureInfoAtIndex:(NSUInteger) index;
 ```
 
 

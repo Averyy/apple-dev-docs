@@ -1,7 +1,8 @@
 # perform(handGesture:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - watchOS 10.0+
@@ -13,9 +14,14 @@
 func perform(handGesture gesture: XCUIDeviceHandGesture)
 ```
 
+```objc
+- (void) performHandGesture:(XCUIDeviceHandGesture) gesture;
+```
+
 ## See Also
 
-- [enum XCUIDeviceHandGesture](xcuidevicehandgesture.md)
+### Performing gestures
+- [enum XCUIDeviceHandGesture](../xcuidevicehandgesture.md)
   A hand gesture on a watchOS device.
 
 

@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.instanceDoesNotExist
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The instance doesn’t exist in the target credential.
 
@@ -17,9 +18,10 @@ case instanceDoesNotExist
 
 ## See Also
 
-- [CredentialSession.ErrorCode.invalidCredentialState](credentialsession/errorcode/invalidcredentialstate.md)
+### Credential error codes
+- [CredentialSession.ErrorCode.invalidCredentialState](./invalidcredentialstate.md)
   A credential is in a state that doesn’t permit that function.
-- [CredentialSession.ErrorCode.credentialDoesNotExist](credentialsession/errorcode/credentialdoesnotexist.md)
+- [CredentialSession.ErrorCode.credentialDoesNotExist](./credentialdoesnotexist.md)
   The credential doesn’t exist, or you don’t have access to it.
 
 

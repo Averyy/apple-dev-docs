@@ -1,18 +1,19 @@
 # XCUIElement.ElementType.browser
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents an element type for a browser.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,37 +22,42 @@ A constant that represents an element type for a browser.
 case browser
 ```
 
+```c
+XCUIElementTypeBrowser
+```
+
 ## See Also
 
-- [XCUIElement.ElementType.activityIndicator](xcuielement/elementtype/activityindicator.md)
+### Enumeration cases
+- [XCUIElement.ElementType.activityIndicator](./activityindicator.md)
   A constant that represents an element type for activity indicator views.
-- [XCUIElement.ElementType.alert](xcuielement/elementtype/alert.md)
+- [XCUIElement.ElementType.alert](./alert.md)
   A constant that represents an element type for alert views.
-- [XCUIElement.ElementType.any](xcuielement/elementtype/any.md)
+- [XCUIElement.ElementType.any](./any.md)
   A constant that represents an element type for any view or control.
-- [XCUIElement.ElementType.application](xcuielement/elementtype/application.md)
+- [XCUIElement.ElementType.application](./application.md)
   A constant that represents an element type for an application.
-- [XCUIElement.ElementType.button](xcuielement/elementtype/button.md)
+- [XCUIElement.ElementType.button](./button.md)
   A constant that represents an element type for button controls.
-- [XCUIElement.ElementType.cell](xcuielement/elementtype/cell.md)
+- [XCUIElement.ElementType.cell](./cell.md)
   A constant that represents an element type for cells.
-- [XCUIElement.ElementType.checkBox](xcuielement/elementtype/checkbox.md)
+- [XCUIElement.ElementType.checkBox](./checkbox.md)
   A constant that represents an element type for checkbox controls.
-- [XCUIElement.ElementType.collectionView](xcuielement/elementtype/collectionview.md)
+- [XCUIElement.ElementType.collectionView](./collectionview.md)
   A constant that represents an element type for collection views.
-- [XCUIElement.ElementType.colorWell](xcuielement/elementtype/colorwell.md)
+- [XCUIElement.ElementType.colorWell](./colorwell.md)
   A constant that represents an element type for color-well controls.
-- [XCUIElement.ElementType.comboBox](xcuielement/elementtype/combobox.md)
+- [XCUIElement.ElementType.comboBox](./combobox.md)
   A constant that represents an element type for combo-box controls.
-- [XCUIElement.ElementType.datePicker](xcuielement/elementtype/datepicker.md)
+- [XCUIElement.ElementType.datePicker](./datepicker.md)
   A constant that represents an element type for date-picker controls.
-- [XCUIElement.ElementType.decrementArrow](xcuielement/elementtype/decrementarrow.md)
+- [XCUIElement.ElementType.decrementArrow](./decrementarrow.md)
   A constant that represents an element type for decrement arrow controls.
-- [XCUIElement.ElementType.dialog](xcuielement/elementtype/dialog.md)
+- [XCUIElement.ElementType.dialog](./dialog.md)
   A constant that represents an element type for dialog views.
-- [XCUIElement.ElementType.disclosureTriangle](xcuielement/elementtype/disclosuretriangle.md)
+- [XCUIElement.ElementType.disclosureTriangle](./disclosuretriangle.md)
   A constant that represents an element type for disclosure-triangle controls.
-- [XCUIElement.ElementType.dockItem](xcuielement/elementtype/dockitem.md)
+- [XCUIElement.ElementType.dockItem](./dockitem.md)
   A constant that represents an element type for dock item controls.
 
 

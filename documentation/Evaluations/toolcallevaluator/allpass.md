@@ -1,7 +1,8 @@
 # allPass
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metric for the strict pass or fail result.
 

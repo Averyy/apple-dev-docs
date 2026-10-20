@@ -1,7 +1,8 @@
 # init(address:method:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `Hash` from the given MAC Address, using a randomly-generated salt.
 

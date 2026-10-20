@@ -1,7 +1,8 @@
 # selectedDrawingToolItem
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected drawing tool.
 
@@ -17,7 +18,8 @@ The currently selected drawing tool.
 
 ## See Also
 
-- [var selectedDrawingTool: any PKTool](markuptoolbarviewcontroller/selecteddrawingtool.md)
+### Managing drawing tools
+- [var selectedDrawingTool: any PKTool](./selecteddrawingtool.md)
   The currently selected drawing tool.
 
 

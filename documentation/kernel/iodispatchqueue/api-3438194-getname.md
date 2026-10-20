@@ -1,7 +1,8 @@
 # GetName
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the name of the queue as a C string.
 
@@ -11,11 +12,11 @@ Returns the name of the queue as a C string.
 
 ## Declaration
 
-```swift
+```c
 const char * GetName(void);
 ```
 
-#### Return_value
+#### Return Value
 
 A C-string pointer to the queue's internal storage.
 
@@ -25,9 +26,10 @@ Returns a pointer to the queue's name. This string is valid only while the queue
 
 ## See Also
 
-- [- OnQueue](iodispatchqueue/3438196-onqueue.md)
+### Getting Queue Information
+- [- OnQueue](./api-3438196-onqueue.md)
   Returns a Boolean value that indicates whether the current thread matches the dispatch queue's thread. 
-- [IODispatchQueueName](../driverkit/iodispatchqueuename.md)
+- [IODispatchQueueName](../../DriverKit/iodispatchqueuename.md)
   A buffer for specifying the name of a dispatch queue.
 
 

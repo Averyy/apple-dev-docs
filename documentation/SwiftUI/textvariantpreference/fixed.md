@@ -1,7 +1,8 @@
 # fixed
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default text variant preference. It always chooses the largest available variant.
 
@@ -19,6 +20,8 @@ The default text variant preference. It always chooses the largest available var
 ```swift
 static var fixed: FixedTextVariant { get }
 ```
+
+Available when `Self` is `FixedTextVariant`.
 
 
 ---

@@ -1,7 +1,8 @@
 # removeWindow(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a window from the tab group.
 
@@ -14,23 +15,30 @@ Removes a window from the tab group.
 func removeWindow(_ window: NSWindow)
 ```
 
+```objc
+- (void) removeWindow:(NSWindow *) window;
+```
+
 #### Discussion
 
-You can use [`removeWindow(_:)`](nswindowtabgroup/removewindow(_:).md) to explicitly remove a window from the tab group. Windows are implicity removed from their associated tab groups when they order out.
+You can use [`removeWindow(_:)`](./removewindow%28_%29.md) to explicitly remove a window from the tab group. Windows are implicity removed from their associated tab groups when they order out.
 
 ## Parameters
 
-- `window`: The window to remove from the tab group. This window must already be a member of the tab group. Raises an `NSInternalInconsistencyException` if the window is not a member of the tab group.
+- `window`: The window to remove from the tab group. This window must already be a member of the tab group.
+
+  Raises an `NSInternalInconsistencyException` if the window is not a member of the tab group.
 
 ## See Also
 
-- [var windows: [NSWindow]](nswindowtabgroup/windows.md)
+### Managing Tabbed Windows
+- [var windows: [NSWindow]](./windows.md)
   A collection of the windows that are currently grouped together by this window tab group.
-- [var selectedWindow: NSWindow?](nswindowtabgroup/selectedwindow.md)
+- [var selectedWindow: NSWindow?](./selectedwindow.md)
   The selected, or frontmost, window in the tab group.
-- [func addWindow(NSWindow)](nswindowtabgroup/addwindow(_:).md)
+- [func addWindow(NSWindow)](./addwindow%28_%29.md)
   Adds a window to the tab group.
-- [func insertWindow(NSWindow, at: Int)](nswindowtabgroup/insertwindow(_:at:).md)
+- [func insertWindow(NSWindow, at: Int)](./insertwindow%28_,at%29.md)
   Inserts a window at a specific location within the tab group.
 
 

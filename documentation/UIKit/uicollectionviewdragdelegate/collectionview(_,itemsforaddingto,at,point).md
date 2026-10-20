@@ -1,7 +1,8 @@
 # collectionView(_:itemsForAddingTo:at:point:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified items to an existing drag session.
 
@@ -17,15 +18,19 @@ Adds the specified items to an existing drag session.
 optional func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: any UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem]
 ```
 
+```objc
+- (NSArray<UIDragItem *> *) collectionView:(UICollectionView *) collectionView itemsForAddingToDragSession:(id<UIDragSession>) session atIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
+```
+
 #### Return Value
 
-An array of [`UIDragItem`](uidragitem.md) objects containing the items to add to the current drag session. Return an empty array to prevent the items from being added to the drag session.
+An array of [`UIDragItem`](../uidragitem.md) objects containing the items to add to the current drag session. Return an empty array to prevent the items from being added to the drag session.
 
 #### Discussion
 
 Implement this method when you want to allow the user to add items to an active drag session. If you don’t implement this method, taps in the collection view trigger the selection of items or other behaviors. However, when a drag session is active and a tap occurs, the collection view calls this method to give you an opportunity to add the underlying item to the drag session.
 
-In your implementation, create one or more [`UIDragItem`](uidragitem.md) objects for the item at the specified `indexPath`. Normally, you return only one drag item, but if the specified item has children or can’t be dragged without one or more associated items, include those items as well.
+In your implementation, create one or more [`UIDragItem`](../uidragitem.md) objects for the item at the specified `indexPath`. Normally, you return only one drag item, but if the specified item has children or can’t be dragged without one or more associated items, include those items as well.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ In your implementation, create one or more [`UIDragItem`](uidragitem.md) objects
 
 ## See Also
 
-- [func collectionView(UICollectionView, itemsForBeginning: any UIDragSession, at: IndexPath) -> [UIDragItem]](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md)
+### Providing the items to drag
+- [func collectionView(UICollectionView, itemsForBeginning: any UIDragSession, at: IndexPath) -> [UIDragItem]](./collectionview%28_,itemsforbeginning,at%29.md)
   Provides the initial set of items (if any) to drag.
 
 

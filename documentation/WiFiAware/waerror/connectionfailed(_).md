@@ -1,7 +1,8 @@
 # WAError.connectionFailed(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if the service is unable to connect.
 
@@ -18,7 +19,8 @@ case connectionFailed(WAError.ConnectionFailedDetails)
 
 ## See Also
 
-- [WAError.ConnectionFailedDetails](waerror/connectionfaileddetails.md)
+### Checking for connection
+- [WAError.ConnectionFailedDetails](./connectionfaileddetails.md)
   The optional details describing the failed connection.
 
 

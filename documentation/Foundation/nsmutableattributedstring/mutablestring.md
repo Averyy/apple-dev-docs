@@ -1,7 +1,8 @@
 # mutableString
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character contents of the receiver as a mutable string object.
 
@@ -20,6 +21,10 @@ The character contents of the receiver as a mutable string object.
 var mutableString: NSMutableString { get }
 ```
 
+```objc
+@property (retain, readonly) NSMutableString * mutableString;
+```
+
 #### Return Value
 
 The mutable string object.
@@ -30,7 +35,8 @@ The receiver tracks changes to this string and keeps its attribute mappings up t
 
 ## See Also
 
-- [Attributed String Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i)
+### Related Documentation
+- [Attributed String Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i)
 
 
 ---

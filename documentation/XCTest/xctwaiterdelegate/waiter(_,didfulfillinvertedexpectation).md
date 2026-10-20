@@ -1,7 +1,8 @@
 # waiter(_:didFulfillInvertedExpectation:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when an expectation whose `isInverted` property is set to `true` is fulfilled.
 
@@ -11,9 +12,13 @@ Invoked when an expectation whose `isInverted` property is set to `true` is fulf
 optional func waiter(_ waiter: XCTWaiter, didFulfillInvertedExpectation expectation: XCTestExpectation)
 ```
 
+```objc
+- (void) waiter:(XCTWaiter *) waiter didFulfillInvertedExpectation:(XCTestExpectation *) expectation;
+```
+
 #### Discussion
 
-If the delegate is an [`XCTestCase`](xctestcase.md) instance, this will be reported as a test failure.
+If the delegate is an [`XCTestCase`](../xctestcase.md) instance, this will be reported as a test failure.
 
 
 ---

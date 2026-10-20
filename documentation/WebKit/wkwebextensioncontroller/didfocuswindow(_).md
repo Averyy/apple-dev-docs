@@ -1,7 +1,8 @@
 # didFocusWindow(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a window gains focus to fire appropriate events with all loaded web extensions.
 
@@ -16,6 +17,10 @@ Should be called by the app when a window gains focus to fire appropriate events
 
 ```swift
 func didFocusWindow(_ focusedWindow: (any WKWebExtensionWindow)?)
+```
+
+```objc
+- (void) didFocusWindow:(id<WKWebExtensionWindow>) focusedWindow;
 ```
 
 #### Discussion

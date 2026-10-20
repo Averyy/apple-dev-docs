@@ -1,23 +1,28 @@
 # MIDINotifyBlock
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback block for notifying clients of state changes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias MIDINotifyBlock = (UnsafePointer<MIDINotification>) -> Void
+```
+
+```c
+typedef void (^)(const struct MIDINotification *) MIDINotifyBlock;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ The system calls this block when some aspect of the current MIDI setup changes. 
 
 ## See Also
 
-- [struct MIDINotification](midinotification.md)
+### Callbacks
+- [struct MIDINotification](./midinotification.md)
   A message that describes a system state change.
 
 

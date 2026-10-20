@@ -1,7 +1,8 @@
 # ProjectionTransform
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 3x3 matrix that transforms points in a plane.
 
@@ -25,7 +26,7 @@ struct ProjectionTransform
 
 A projection transform covers everything `CGAffineTransform` does - translation, rotation, scale, and skew - and adds perspective, which an affine transform cannot express. SwiftUI uses it to describe the geometry a view effect applies.
 
-Return a value of this type from [`effectValue(size:)`](geometryeffect/effectvalue(size:).md) to write a custom effect. The following effect leans a view to one side by shearing it, and animates as `amount` changes:
+Return a value of this type from [`effectValue(size:)`](./geometryeffect/effectvalue%28size%29.md) to write a custom effect. The following effect leans a view to one side by shearing it, and animates as `amount` changes:
 
 ```swift
 struct ShearEffect: GeometryEffect {
@@ -44,71 +45,72 @@ struct ShearEffect: GeometryEffect {
 }
 ```
 
-Create a transform from a `CGAffineTransform` or a `CATransform3D` when you already have one, or set the nine elements directly. The elements are named for their row and column, so [`m11`](projectiontransform/m11.md) is the first row and first column.
+Create a transform from a `CGAffineTransform` or a `CATransform3D` when you already have one, or set the nine elements directly. The elements are named for their row and column, so [`m11`](./projectiontransform/m11.md) is the first row and first column.
 
 ## Topics
 
 ### Creating a transform
-- [init()](projectiontransform/init.md)
-- [init(_:)](projectiontransform/init(_:).md)
+- [init()](./projectiontransform/init%28%29.md)
+- [init(_:)](./projectiontransform/init%28_%29.md)
 ### Getting transform characteristics
-- [var isAffine: Bool](projectiontransform/isaffine.md)
-- [var isIdentity: Bool](projectiontransform/isidentity.md)
+- [var isAffine: Bool](./projectiontransform/isaffine.md)
+- [var isIdentity: Bool](./projectiontransform/isidentity.md)
 ### Manipulating transforms
-- [func invert() -> Bool](projectiontransform/invert.md)
-- [func inverted() -> ProjectionTransform](projectiontransform/inverted.md)
-- [func concatenating(ProjectionTransform) -> ProjectionTransform](projectiontransform/concatenating(_:).md)
+- [func invert() -> Bool](./projectiontransform/invert%28%29.md)
+- [func inverted() -> ProjectionTransform](./projectiontransform/inverted%28%29.md)
+- [func concatenating(ProjectionTransform) -> ProjectionTransform](./projectiontransform/concatenating%28_%29.md)
 ### Accessing the transform’s coefficients
-- [var m11: CGFloat](projectiontransform/m11.md)
-- [var m12: CGFloat](projectiontransform/m12.md)
-- [var m13: CGFloat](projectiontransform/m13.md)
-- [var m21: CGFloat](projectiontransform/m21.md)
-- [var m22: CGFloat](projectiontransform/m22.md)
-- [var m23: CGFloat](projectiontransform/m23.md)
-- [var m31: CGFloat](projectiontransform/m31.md)
-- [var m32: CGFloat](projectiontransform/m32.md)
-- [var m33: CGFloat](projectiontransform/m33.md)
+- [var m11: CGFloat](./projectiontransform/m11.md)
+- [var m12: CGFloat](./projectiontransform/m12.md)
+- [var m13: CGFloat](./projectiontransform/m13.md)
+- [var m21: CGFloat](./projectiontransform/m21.md)
+- [var m22: CGFloat](./projectiontransform/m22.md)
+- [var m23: CGFloat](./projectiontransform/m23.md)
+- [var m31: CGFloat](./projectiontransform/m31.md)
+- [var m32: CGFloat](./projectiontransform/m32.md)
+- [var m33: CGFloat](./projectiontransform/m33.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scaledToFill() -> some View](view/scaledtofill.md)
+### Scaling, rotating, or transforming a view
+- [func scaledToFill() -> some View](./view/scaledtofill%28%29.md)
   Scales this view to fill its parent.
-- [func scaledToFit() -> some View](view/scaledtofit.md)
+- [func scaledToFit() -> some View](./view/scaledtofit%28%29.md)
   Scales this view to fit its parent.
-- [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
+- [func scaleEffect(_:anchor:)](./view/scaleeffect%28_,anchor%29.md)
   Scales this view uniformly by the specified factor, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](./view/scaleeffect%28x,y,anchor%29.md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](./view/scaleeffect%28x,y,z,anchor%29.md)
   Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
-- [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
+- [func aspectRatio(_:contentMode:)](./view/aspectratio%28_,contentmode%29.md)
   Constrains this view’s dimensions to the specified aspect ratio.
-- [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
+- [func rotationEffect(Angle, anchor: UnitPoint) -> some View](./view/rotationeffect%28_,anchor%29.md)
   Rotates a view’s rendered output in two dimensions around the specified point.
-- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](view/rotation3deffect(_:axis:anchor:anchorz:perspective:).md)
+- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](./view/rotation3deffect%28_,axis,anchor,anchorz,perspective%29.md)
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
-- [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](view/perspectiverotationeffect(_:axis:anchor:anchorz:perspective:).md)
+- [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](./view/perspectiverotationeffect%28_,axis,anchor,anchorz,perspective%29.md)
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
-- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some View](view/rotation3deffect(_:anchor:).md)
+- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some View](./view/rotation3deffect%28_,anchor%29.md)
   Rotates the view’s content by the specified 3D rotation value.
-- [func rotation3DEffect(_:axis:anchor:)](view/rotation3deffect(_:axis:anchor:).md)
+- [func rotation3DEffect(_:axis:anchor:)](./view/rotation3deffect%28_,axis,anchor%29.md)
   Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.
-- [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
+- [func transformEffect(CGAffineTransform) -> some View](./view/transformeffect%28_%29.md)
   Applies an affine transformation to this view’s rendered output.
-- [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
+- [func transform3DEffect(AffineTransform3D) -> some View](./view/transform3deffect%28_%29.md)
   Applies a 3D transformation to this view’s rendered output.
-- [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
+- [func projectionEffect(ProjectionTransform) -> some View](./view/projectioneffect%28_%29.md)
   Applies a projection transformation to this view’s rendered output.
-- [enum ContentMode](contentmode.md)
+- [enum ContentMode](./contentmode.md)
   Constants that define how a view’s content fills the available space.
 
 

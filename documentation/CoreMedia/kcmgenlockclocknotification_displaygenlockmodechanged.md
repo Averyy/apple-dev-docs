@@ -1,7 +1,8 @@
 # kCMGenlockClockNotification_DisplayGenlockModeChanged
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Posted when the display mode changes from genlock to non-genlock or vice versa.
 
@@ -13,6 +14,10 @@ Posted when the display mode changes from genlock to non-genlock or vice versa.
 
 ```swift
 let kCMGenlockClockNotification_DisplayGenlockModeChanged: CFString
+```
+
+```c
+extern CFStringRef const kCMGenlockClockNotification_DisplayGenlockModeChanged;
 ```
 
 #### Discussion

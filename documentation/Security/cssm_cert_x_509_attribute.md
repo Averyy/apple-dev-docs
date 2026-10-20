@@ -1,7 +1,8 @@
 # CSSM_CERT_X_509_ATTRIBUTE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CERT_X_509_ATTRIBUTE: Int { get }
+```
+
+```c
+CSSM_CERT_X_509_ATTRIBUTE
 ```
 
 

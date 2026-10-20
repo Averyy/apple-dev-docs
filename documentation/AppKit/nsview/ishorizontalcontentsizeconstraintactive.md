@@ -1,7 +1,8 @@
 # isHorizontalContentSizeConstraintActive
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view’s horizontal size constraints are active.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the view’s horizontal size constraints 
 var isHorizontalContentSizeConstraintActive: Bool { get set }
 ```
 
+```objc
+@property (getter=isHorizontalContentSizeConstraintActive) BOOL horizontalContentSizeConstraintActive;
+```
+
 #### Discussion
 
-Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) lets Auto Layout optimize layout operations by ignoring the view’s intrinsic content size. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the system to take the view’s content size into account.
+Setting this property to [`false`](../../Swift/false.md) lets Auto Layout optimize layout operations by ignoring the view’s intrinsic content size. The default value of this property is [`true`](../../Swift/true.md), which causes the system to take the view’s content size into account.
 
 ## See Also
 
-- [var isVerticalContentSizeConstraintActive: Bool](nsview/isverticalcontentsizeconstraintactive.md)
+### Enabling and Disabling Constraints
+- [var isVerticalContentSizeConstraintActive: Bool](./isverticalcontentsizeconstraintactive.md)
   A Boolean value that indicates whether the view’s vertical size constraints are active.
 
 

@@ -1,6 +1,8 @@
 # Classifying images for categorization and search
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [ClassifyingImagesForCategorizationAndSearch.zip](https://docs-assets.developer.apple.com/published/9ae69e242f73/ClassifyingImagesForCategorizationAndSearch.zip)
 
 Analyze and label images using a Vision classification request.
 
@@ -10,17 +12,17 @@ Analyze and label images using a Vision classification request.
 
 #### Overview
 
-With the help of machine learning to perform image analysis, the Vision framework can identify, recognize, and label objects in an image you provide. The [`ClassifyImageRequest`](classifyimagerequest.md) structure generates the image analysis results in the form of [`ClassificationObservation`](classificationobservation.md) objects. Each object contains a classification label (such as *bicycle*), and an associated confidence value to indicate the level of certainty in the observation.
+With the help of machine learning to perform image analysis, the Vision framework can identify, recognize, and label objects in an image you provide. The [`ClassifyImageRequest`](./classifyimagerequest.md) structure generates the image analysis results in the form of [`ClassificationObservation`](./classificationobservation.md) objects. Each object contains a classification label (such as *bicycle*), and an associated confidence value to indicate the level of certainty in the observation.
 
 This sample app demonstrates how to set up and perform the classification request on a single image or on a collection of images. For a collection of images, the sample shows you how to process the images concurrently using Swift concurrency. Finally, the sample shows how you access and display the results from the request.
 
-##### Perform the Request
+##### Perform the request
 
 First, the app creates the `ClassifyImageRequest` and performs it on an image. The request returns the entire taxonomy as `ClassificationObservation` objects, and stores the objects in an array. For each observation, the request assigns a label in the form of an identifier, along with a floating-point confidence value in the range of `0.0` to `1.0`. A value of `0.0` indicates that the observation is not likely in the image, while a value of `1.0` indicates that the observation is certain to be in the image.
 
-When the request returns the results, the app performs a high-recall [`filter(_:)`](https://developer.apple.com/documentation/swift/string/filter(_:)-66nw7), and only retains the observations that meet a confidence threshold. This threshold is set by the app with the [`hasMinimumPrecision(_:forRecall:)`](classificationobservation/hasminimumprecision(_:forrecall:).md) method from `Vision`. A high-recall filter provides a much broader range of observations, but can result in more false positive results. For example, with this filter, an ambiguous image of a bear may result in an observation with the label *dog*.
+When the request returns the results, the app performs a high-recall [`filter(_:)`](../Swift/string/filter%28_%29-66nw7.md), and only retains the observations that meet a confidence threshold. This threshold is set by the app with the [`hasMinimumPrecision(_:forRecall:)`](./classificationobservation/hasminimumprecision%28_,forrecall%29.md) method from `Vision`. A high-recall filter provides a much broader range of observations, but can result in more false positive results. For example, with this filter, an ambiguous image of a bear may result in an observation with the label *dog*.
 
-If an app can’t tolerate false positive results, the [`hasMinimumRecall(_:forPrecision:)`](classificationobservation/hasminimumrecall(_:forprecision:).md) method allows for a high-precision filter. A high-precision filter retains a smaller number of observations, but less chance to contain false positives. Increasing precision decreases recall, and increasing recall decreases precision. Testing can help determine the balance point that returns the best results for a specific use case.
+If an app can’t tolerate false positive results, the [`hasMinimumRecall(_:forPrecision:)`](./classificationobservation/hasminimumrecall%28_,forprecision%29.md) method allows for a high-precision filter. A high-precision filter retains a smaller number of observations, but less chance to contain false positives. Increasing precision decreases recall, and increasing recall decreases precision. Testing can help determine the balance point that returns the best results for a specific use case.
 
 The app stores the final results in the `observations` dictionary. The dictionary’s key is the identifier (the label of the observation), and its value is the confidence level.
 
@@ -48,7 +50,7 @@ func classifyImage(url: URL) async throws -> ImageFile {
 }
 ```
 
-Processing a large collection of images can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](https://developer.apple.com/documentation/swift/taskgroup), the app processes the images in parallel instead of sequentially in a loop. When the request returns results, the app adds each image’s observations to an array. For more information on using Swift concurrency, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/).
+Processing a large collection of images can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](../Swift/taskgroup.md), the app processes the images in parallel instead of sequentially in a loop. When the request returns results, the app adds each image’s observations to an array. For more information on using Swift concurrency, see [Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/).
 
 ```swift
 func classifyAllImages(urls: [URL]) async throws -> [ImageFile] {
@@ -70,7 +72,7 @@ func classifyAllImages(urls: [URL]) async throws -> [ImageFile] {
 }
 ```
 
-##### Retrieve and Search the Results
+##### Retrieve and search the results
 
 The sample provides the ability to search for images by their classification labels. If the search bar is empty, the app presents all the images. If the search bar is not empty, the app only presents images with classification labels equal to the search term.
 
@@ -86,7 +88,7 @@ var searchResults: [ImageFile] {
 }
 ```
 
-Clicking an image navigates to the results view and displays the results of the image analysis. Using a `ForEach` loop, the app iterates through the observations. The [`sorted(by:)`](https://developer.apple.com/documentation/swift/array/sorted(by:)) method sorts the observations in descending order of their confidence levels. The `ForEach` loop accesses the values of the observation with the dictionary’s key and value keywords. Note that any confidence values of `0.0` are greater than zero due to rounding.
+Clicking an image navigates to the results view and displays the results of the image analysis. Using a `ForEach` loop, the app iterates through the observations. The [`sorted(by:)`](../Swift/array/sorted%28by%29.md) method sorts the observations in descending order of their confidence levels. The `ForEach` loop accesses the values of the observation with the dictionary’s key and value keywords. Note that any confidence values of `0.0` are greater than zero due to rounding.
 
 ```swift
 List {
@@ -106,11 +108,12 @@ List {
 
 ## See Also
 
-- [struct ClassifyImageRequest](classifyimagerequest.md)
+### Image classification and recognition
+- [struct ClassifyImageRequest](./classifyimagerequest.md)
   A request to classify an image.
-- [struct DetectHumanRectanglesRequest](detecthumanrectanglesrequest.md)
+- [struct DetectHumanRectanglesRequest](./detecthumanrectanglesrequest.md)
   A request that finds rectangular regions that contain people in an image.
-- [struct RecognizeAnimalsRequest](recognizeanimalsrequest.md)
+- [struct RecognizeAnimalsRequest](./recognizeanimalsrequest.md)
   A request that recognizes animals in an image.
 
 

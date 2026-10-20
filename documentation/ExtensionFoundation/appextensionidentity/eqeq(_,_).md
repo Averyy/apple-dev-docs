@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two identities are equal.
 
@@ -31,7 +32,8 @@ static func == (lhs: AppExtensionIdentity, rhs: AppExtensionIdentity) -> Bool
 
 ## See Also
 
-- [func hash(into: inout Hasher)](appextensionidentity/hash(into:).md)
+### Comparing app extensions
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of the extension by feeding them into the given hash function.
 
 

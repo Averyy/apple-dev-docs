@@ -1,7 +1,8 @@
 # WKWebExtension.MatchPattern.Error.Code.invalidHost
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the host component was invalid.
 
@@ -16,6 +17,10 @@ Indicates that the host component was invalid.
 
 ```swift
 case invalidHost
+```
+
+```c
+WKWebExtensionMatchPatternErrorInvalidHost
 ```
 
 

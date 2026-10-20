@@ -1,7 +1,8 @@
 # symbology
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbology of the observed barcode.
 
@@ -22,7 +23,8 @@ let symbology: BarcodeSymbology
 
 ## See Also
 
-- [enum BarcodeSymbology](barcodesymbology.md)
+### Getting the symbology
+- [enum BarcodeSymbology](../barcodesymbology.md)
   The barcode symbologies that the framework detects.
 
 

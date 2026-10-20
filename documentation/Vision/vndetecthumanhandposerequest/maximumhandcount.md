@@ -1,7 +1,8 @@
 # maximumHandCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of hands to detect in an image.
 
@@ -17,6 +18,10 @@ The maximum number of hands to detect in an image.
 
 ```swift
 var maximumHandCount: Int { get set }
+```
+
+```objc
+@property (assign, readwrite) NSUInteger maximumHandCount;
 ```
 
 #### Discussion

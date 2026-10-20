@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a graph with the specified list of nodes.
 
@@ -19,19 +20,23 @@ Initializes a graph with the specified list of nodes.
 init(_ nodes: [GKGraphNode])
 ```
 
+```objc
+- (instancetype) initWithNodes:(NSArray<GKGraphNode *> *) nodes;
+```
+
 #### Return Value
 
 A new graph object.
 
 #### Discussion
 
-The nodes in the array need not already be connected—you can connect nodes after adding them to the graph using the [`connectToLowestCostNode(node:bidirectional:)`](gkgraph/connecttolowestcostnode(node:bidirectional:).md) method on the graph itself or the addConnection:bidirectional: method on individual nodes. Using the [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method requires connections between nodes.
+The nodes in the array need not already be connected—you can connect nodes after adding them to the graph using the [`connectToLowestCostNode(node:bidirectional:)`](./connecttolowestcostnode%28node,bidirectional%29.md) method on the graph itself or the addConnection:bidirectional: method on individual nodes. Using the [`findPath(from:to:)`](./findpath%28from,to%29.md) method requires connections between nodes.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
-- `nodes`: An array of graph node objects—instances of [`GKGraphNode`](gkgraphnode.md) or of one of its subclasses containing geometry information.
+- `nodes`: An array of graph node objects—instances of [`GKGraphNode`](../gkgraphnode.md) or of one of its subclasses containing geometry information.
 
 
 ---

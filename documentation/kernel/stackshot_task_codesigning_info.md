@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_task_codesigning_info {
     ...
 };
@@ -17,8 +17,8 @@ struct stackshot_task_codesigning_info {
 ## Topics
 
 ### Instance Properties
-- [cs_trust_level](stackshot_task_codesigning_info/4133118-cs_trust_level.md)
-- [csflags](stackshot_task_codesigning_info/4133119-csflags.md)
+- [cs_trust_level](./stackshot_task_codesigning_info/api-4133118-cs_trust_level.md)
+- [csflags](./stackshot_task_codesigning_info/api-4133119-csflags.md)
 
 
 ---

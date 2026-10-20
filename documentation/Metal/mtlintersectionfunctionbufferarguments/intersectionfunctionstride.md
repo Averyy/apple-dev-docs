@@ -1,20 +1,25 @@
 # intersectionFunctionStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var intersectionFunctionStride: UInt64
+```
+
+```c
+uint64_t intersectionFunctionStride;
 ```
 
 #### Discussion

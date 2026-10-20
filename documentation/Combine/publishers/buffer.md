@@ -1,7 +1,8 @@
 # Publishers.Buffer
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that buffers elements from an upstream publisher.
 
@@ -23,33 +24,34 @@ struct Buffer<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a buffer publisher
-- [init(upstream: Upstream, size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>)](publishers/buffer/init(upstream:size:prefetch:whenfull:).md)
+- [init(upstream: Upstream, size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>)](./buffer/init%28upstream,size,prefetch,whenfull%29.md)
   Creates a publisher that buffers elements received from an upstream publisher.
 ### Declaring supporting types
-- [Publishers.Buffer.Output](publishers/buffer/output.md)
+- [Publishers.Buffer.Output](./buffer/output.md)
   The kind of values published by this publisher.
-- [Publishers.Buffer.Failure](publishers/buffer/failure.md)
+- [Publishers.Buffer.Failure](./buffer/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/buffer/upstream.md)
+- [let upstream: Upstream](./buffer/upstream.md)
   The publisher from which this publisher receives elements.
-- [let size: Int](publishers/buffer/size.md)
+- [let size: Int](./buffer/size.md)
   The maximum number of elements to store.
-- [let prefetch: Publishers.PrefetchStrategy](publishers/buffer/prefetch.md)
+- [let prefetch: Publishers.PrefetchStrategy](./buffer/prefetch.md)
   The strategy for initially populating the buffer.
-- [let whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>](publishers/buffer/whenfull.md)
+- [let whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>](./buffer/whenfull.md)
   The action to take when the buffer becomes full.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.BufferingStrategy](publishers/bufferingstrategy.md)
+### Buffering elements
+- [Publishers.BufferingStrategy](./bufferingstrategy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
-- [Publishers.PrefetchStrategy](publishers/prefetchstrategy.md)
+- [Publishers.PrefetchStrategy](./prefetchstrategy.md)
   A strategy for filling a buffer.
 
 

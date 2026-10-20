@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the decision tree regressor.
 
@@ -21,9 +22,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mldecisiontreeregressor/debugdescription.md)
+### Describing a decision tree regressor
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the decision tree regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mldecisiontreeregressor/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the decision tree regressor shown in a playground.
 
 

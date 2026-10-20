@@ -1,7 +1,8 @@
 # kCTFontSymbolicTrait
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The symbolic traits value from the font traits dictionary.
 
@@ -20,19 +21,25 @@ The symbolic traits value from the font traits dictionary.
 let kCTFontSymbolicTrait: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontSymbolicTrait;
+```
+
 #### Discussion
 
-The value is returned as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
+The value is returned as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 
 ## See Also
 
-- [struct CTFontSymbolicTraits](ctfontsymbolictraits.md)
+### Related Documentation
+- [struct CTFontSymbolicTraits](./ctfontsymbolictraits.md)
   The symbolic representation of stylistic font attributes.
-- [let kCTFontWeightTrait: CFString](kctfontweighttrait.md)
+### Font Trait Keys
+- [let kCTFontWeightTrait: CFString](./kctfontweighttrait.md)
   The normalized weight trait from the font traits dictionary.
-- [let kCTFontWidthTrait: CFString](kctfontwidthtrait.md)
+- [let kCTFontWidthTrait: CFString](./kctfontwidthtrait.md)
   The normalized proportion (width condense or expand) trait from the font traits dictionary.
-- [let kCTFontSlantTrait: CFString](kctfontslanttrait.md)
+- [let kCTFontSlantTrait: CFString](./kctfontslanttrait.md)
   The normalized slant angle from the font traits dictionary.
 
 

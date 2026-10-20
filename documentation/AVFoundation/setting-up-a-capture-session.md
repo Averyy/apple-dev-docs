@@ -1,20 +1,21 @@
 # Setting up a capture session
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Configure input devices, output media, preview views, and basic settings before capturing photos or video.
 
 #### Overview
 
-An [`AVCaptureSession`](avcapturesession.md) is the basis for all media capture in iOS and macOS. It manages your app’s exclusive access to the OS capture infrastructure and capture devices, as well as the flow of data from input devices to media outputs. How you configure connections between inputs and outputs defines the capabilities of your capture session. For example, the diagram below shows a capture session that can capture both photos and movies and provides a camera preview, using the iPhone back camera and microphone.
+An [`AVCaptureSession`](./avcapturesession.md) is the basis for all media capture in iOS and macOS. It manages your app’s exclusive access to the OS capture infrastructure and capture devices, as well as the flow of data from input devices to media outputs. How you configure connections between inputs and outputs defines the capabilities of your capture session. For example, the diagram below shows a capture session that can capture both photos and movies and provides a camera preview, using the iPhone back camera and microphone.
 
-![Block diagram of detailed capture session architecture example: separate AVCaptureDeviceInput objects for camera and microphone connect, through AVCaptureConnection objects managed by AVCaptureSession, to AVCapturePhotoOutput, AVCaptureMovieFileOutput, and AVCaptureVideoPreviewLayer.](/images/com.apple.avfoundation/media-2970419@2x.png)
+![Block diagram of detailed capture session architecture example: separate AVCaptureDeviceInput objects for camera and microphone connect, through AVCaptureConnection objects managed by AVCaptureSession, to AVCapturePhotoOutput, AVCaptureMovieFileOutput, and AVCaptureVideoPreviewLayer.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-2970419@2x.png)
 
-##### Connect Inputs and Outputs to the Session
+##### Connect inputs and outputs to the session
 
-All capture sessions need at least one capture input and capture output. Capture inputs ([`AVCaptureInput`](avcaptureinput.md) subclasses) are media sources—typically recording devices like the cameras and microphone built into an iOS device or Mac. Capture outputs ([`AVCaptureOutput`](avcaptureoutput.md) subclasses) use data provided by capture inputs to produce media, like image and movie files.
+All capture sessions need at least one capture input and capture output. Capture inputs ([`AVCaptureInput`](./avcaptureinput.md) subclasses) are media sources—typically recording devices like the cameras and microphone built into an iOS device or Mac. Capture outputs ([`AVCaptureOutput`](./avcaptureoutput.md) subclasses) use data provided by capture inputs to produce media, like image and movie files.
 
-To use a camera for video input (to capture photos or movies), select an appropriate [`AVCaptureDevice`](avcapturedevice.md), create a corresponding [`AVCaptureDeviceInput`](avcapturedeviceinput.md), and add it to the session:
+To use a camera for video input (to capture photos or movies), select an appropriate [`AVCaptureDevice`](./avcapturedevice.md), create a corresponding [`AVCaptureDeviceInput`](./avcapturedeviceinput.md), and add it to the session:
 
 ```swift
 captureSession.beginConfiguration()
@@ -27,9 +28,9 @@ guard
 captureSession.addInput(videoDeviceInput)
 ```
 
-> **Note**:  iOS offers several other ways to select a camera device. For more information, see [`Choosing a capture device`](choosing-a-capture-device.md).
+> **Note**:  iOS offers several other ways to select a camera device. For more information, see [Choosing a capture device](./choosing-a-capture-device.md).
 
-Next, add outputs for the kinds of media you plan to capture from the camera you’ve selected. For example, to enable capturing photos, add an [`AVCapturePhotoOutput`](avcapturephotooutput.md) to the session:
+Next, add outputs for the kinds of media you plan to capture from the camera you’ve selected. For example, to enable capturing photos, add an [`AVCapturePhotoOutput`](./avcapturephotooutput.md) to the session:
 
 ```swift
 let photoOutput = AVCapturePhotoOutput()
@@ -42,15 +43,15 @@ captureSession.commitConfiguration()
 A session can have multiple inputs and outputs. For example:
 
 - To record both video and audio in a movie, add inputs for both camera and microphone devices.
-- To capture both photos and movies from the same camera, add both [`AVCapturePhotoOutput`](avcapturephotooutput.md) and [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) to your session.
+- To capture both photos and movies from the same camera, add both [`AVCapturePhotoOutput`](./avcapturephotooutput.md) and [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md) to your session.
 
-> ❗ **Important**:  Call [`beginConfiguration()`](avcapturesession/beginconfiguration().md) before changing a session’s inputs or outputs, and call [`commitConfiguration()`](avcapturesession/commitconfiguration().md) after making changes.
+> ❗ **Important**:  Call [`beginConfiguration()`](./avcapturesession/beginconfiguration%28%29.md) before changing a session’s inputs or outputs, and call [`commitConfiguration()`](./avcapturesession/commitconfiguration%28%29.md) after making changes.
 
-##### Display a Camera Preview
+##### Display a camera preview
 
-It’s important to let the user see input from the camera before choosing to snap a photo or start video recording, as in the viewfinder of a traditional camera. You can provide such a preview by connecting an [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) to your capture session, which displays a live video feed from the camera whenever the session is running.
+It’s important to let the user see input from the camera before choosing to snap a photo or start video recording, as in the viewfinder of a traditional camera. You can provide such a preview by connecting an [`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md) to your capture session, which displays a live video feed from the camera whenever the session is running.
 
-[`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) is a Core Animation layer, so you can display and style it in your interface as you would any other [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) subclass. The simplest way to add a preview layer to a UIKit app is to define a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) subclass whose [`layerClass`](https://developer.apple.com/documentation/uikit/uiview/layerclass) is [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md), as shown below.
+[`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md) is a Core Animation layer, so you can display and style it in your interface as you would any other [`CALayer`](../QuartzCore/calayer.md) subclass. The simplest way to add a preview layer to a UIKit app is to define a [`UIView`](../UIKit/uiview.md) subclass whose [`layerClass`](../UIKit/uiview/layerclass.md) is [`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md), as shown below.
 
 ```swift
 class PreviewView: UIView {
@@ -65,49 +66,50 @@ class PreviewView: UIView {
 }
 ```
 
-Then, to use the preview layer with a capture session, set the layer’s [`session`](avcapturevideopreviewlayer/session.md) property:
+Then, to use the preview layer with a capture session, set the layer’s [`session`](./avcapturevideopreviewlayer/session.md) property:
 
 ```swift
 self.previewView.videoPreviewLayer.session = self.captureSession
 ```
 
-> **Note**:  If your app supports multiple interface orientations, use the preview layer’s [`connection`](avcapturevideopreviewlayer/connection.md) to the capture session to set a [`videoOrientation`](avcaptureconnection/videoorientation.md) matching that of your UI.
+> **Note**:  If your app supports multiple interface orientations, use the preview layer’s [`connection`](./avcapturevideopreviewlayer/connection.md) to the capture session to set a [`videoOrientation`](./avcaptureconnection/videoorientation.md) matching that of your UI.
 
-##### Run the Capture Session
+##### Run the capture session
 
-After you’ve configured inputs, outputs, and previews, call [`startRunning()`](avcapturesession/startrunning().md) to let data flow from inputs to outputs.
+After you’ve configured inputs, outputs, and previews, call [`startRunning()`](./avcapturesession/startrunning%28%29.md) to let data flow from inputs to outputs.
 
-With some capture outputs, running the session is all you need to begin media capture. For example, if your session contains an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md), you start receiving delivering video frames as soon as the session is running.
+With some capture outputs, running the session is all you need to begin media capture. For example, if your session contains an [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md), you start receiving delivering video frames as soon as the session is running.
 
-With other capture outputs, you first start the session running, then use the capture output class itself to initiate capture. In a photography app, for example, running the session enables a viewfinder-style preview, but you use the [`AVCapturePhotoOutput`](avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method to snap a picture.
+With other capture outputs, you first start the session running, then use the capture output class itself to initiate capture. In a photography app, for example, running the session enables a viewfinder-style preview, but you use the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method to snap a picture.
 
 ## See Also
 
-- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
+### Capture sessions
+- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
-- [AVCam: Building a camera app](avcam-building-a-camera-app.md)
+- [AVCam: Building a camera app](./avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [Building a responsive camera app that launches quickly](building-a-responsive-camera-app-that-launches-quickly.md)
+- [Building a responsive camera app that launches quickly](./building-a-responsive-camera-app-that-launches-quickly.md)
   Show a camera preview sooner by deferring capture output setup and postponing noncritical interface elements.
-- [Capturing Cinematic video](capturing-cinematic-video.md)
+- [Capturing Cinematic video](./capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
-- [Supporting Center Stage front camera in your iOS app](supporting-center-stage-front-camera-in-your-ios-app.md)
+- [Supporting Center Stage front camera in your iOS app](./supporting-center-stage-front-camera-in-your-ios-app.md)
   Enable Center Stage for photos and videos on the iPhone front camera.
-- [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
+- [AVMultiCamPiP: Capturing from Multiple Cameras](./avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](./avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
-- [Registering a camera capture accessory on iPhone Duo](registering-a-camera-capture-accessory-on-iphone-duo.md)
+- [Registering a camera capture accessory on iPhone Duo](./registering-a-camera-capture-accessory-on-iphone-duo.md)
   Provide content to the person in front of the camera by pairing it with your capture interface.
-- [class AVCaptureSession](avcapturesession.md)
+- [class AVCaptureSession](./avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
-- [class AVCaptureMultiCamSession](avcapturemulticamsession.md)
+- [class AVCaptureMultiCamSession](./avcapturemulticamsession.md)
   A capture session that supports simultaneous capture from multiple inputs of the same media type.
-- [class AVCaptureInput](avcaptureinput.md)
+- [class AVCaptureInput](./avcaptureinput.md)
   An abstract superclass for objects that provide input data to a capture session.
-- [class AVCaptureOutput](avcaptureoutput.md)
+- [class AVCaptureOutput](./avcaptureoutput.md)
   An abstract superclass for objects that provide media output destinations for a capture session.
-- [class AVCaptureConnection](avcaptureconnection.md)
+- [class AVCaptureConnection](./avcaptureconnection.md)
   An object that represents a connection from a capture input to a capture output.
 
 

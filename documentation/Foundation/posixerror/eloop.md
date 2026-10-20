@@ -1,7 +1,8 @@
 # ELOOP
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Too many levels of symbolic links.
 

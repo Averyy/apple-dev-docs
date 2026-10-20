@@ -1,18 +1,19 @@
 # DSPDoubleComplex
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a double-precision complex value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ A structure that represents a double-precision complex value.
 struct DSPDoubleComplex
 ```
 
+```c
+typedef struct DSPDoubleComplex { ... } DSPDoubleComplex;
+```
+
 ## Mentions
 
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
+- [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
 
 #### Overview
 
@@ -31,40 +36,41 @@ Double complex data are stored as ordered pairs of double-precision floating-poi
 ## Topics
 
 ### Initializers
-- [init()](dspdoublecomplex/init.md)
-- [init(real: Double, imag: Double)](dspdoublecomplex/init(real:imag:).md)
+- [init()](./dspdoublecomplex/init%28%29.md)
+- [init(real: Double, imag: Double)](./dspdoublecomplex/init%28real,imag%29.md)
 ### Instance Properties
-- [var imag: Double](dspdoublecomplex/imag.md)
+- [var imag: Double](./dspdoublecomplex/imag.md)
   The imaginary part of the value.
-- [var real: Double](dspdoublecomplex/real.md)
+- [var real: Double](./dspdoublecomplex/real.md)
   The real part of the value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [vDSP_DiscreteFourierTransformable](vdsp_discretefouriertransformable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [vDSP_DiscreteFourierTransformable](./vdsp_discretefouriertransformable.md)
 
 ## See Also
 
-- [typealias vDSP_Length](vdsp_length.md)
+### Data types
+- [typealias vDSP_Length](./vdsp_length.md)
   An unsigned-integer value that represents the size of vectors and the indices of elements in vectors.
-- [typealias vDSP_Stride](vdsp_stride.md)
+- [typealias vDSP_Stride](./vdsp_stride.md)
   An integer value that represents the differences between indices of elements, including the lengths of strides.
-- [struct DSPComplex](dspcomplex.md)
+- [struct DSPComplex](./dspcomplex.md)
   A structure that represents a single-precision complex value.
-- [typealias COMPLEX_SPLIT](complex_split.md)
-- [typealias DOUBLE_COMPLEX_SPLIT](double_complex_split.md)
-- [struct DSPSplitComplex](dspsplitcomplex.md)
+- [typealias COMPLEX_SPLIT](./complex_split.md)
+- [typealias DOUBLE_COMPLEX_SPLIT](./double_complex_split.md)
+- [struct DSPSplitComplex](./dspsplitcomplex.md)
   A structure that represents a single-precision complex vector with the real and imaginary parts stored in separate arrays.
-- [struct DSPDoubleSplitComplex](dspdoublesplitcomplex.md)
+- [struct DSPDoubleSplitComplex](./dspdoublesplitcomplex.md)
   A structure that represents a double-precision complex vector with the real and imaginary parts stored in separate arrays.
-- [struct VectorizableDouble](vdsp/vectorizabledouble.md)
+- [struct VectorizableDouble](./vdsp/vectorizabledouble.md)
   A structure that represents a double-precision real value for biquadratic filtering and discrete Fourier transforms.
-- [struct VectorizableFloat](vdsp/vectorizablefloat.md)
+- [struct VectorizableFloat](./vdsp/vectorizablefloat.md)
   A structure that represents a single-precision real value for biquadratic filtering and discrete Fourier transforms.
 
 

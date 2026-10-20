@@ -1,7 +1,8 @@
 # insert(_:after:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a modified queue after the designated media item.
 
@@ -18,6 +19,10 @@ Inserts a modified queue after the designated media item.
 func insert(_ queueDescriptor: MPMusicPlayerQueueDescriptor, after afterItem: MPMediaItem?)
 ```
 
+```objc
+- (void) insertQueueDescriptor:(MPMusicPlayerQueueDescriptor *) queueDescriptor afterItem:(MPMediaItem *) afterItem;
+```
+
 ## Parameters
 
 - `queueDescriptor`: A queue descriptor the system uses to insert media items in the playback queue.
@@ -25,7 +30,8 @@ func insert(_ queueDescriptor: MPMusicPlayerQueueDescriptor, after afterItem: MP
 
 ## See Also
 
-- [func remove(MPMediaItem)](mpmusicplayercontrollermutablequeue/remove(_:).md)
+### Adding and removing items
+- [func remove(MPMediaItem)](./remove%28_%29.md)
   Removes a media item from the music player’s queue.
 
 

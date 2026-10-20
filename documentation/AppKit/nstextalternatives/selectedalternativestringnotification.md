@@ -1,7 +1,8 @@
 # selectedAlternativeStringNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the user selects an alternate string.
 
@@ -14,6 +15,10 @@ Posted when the user selects an alternate string.
 class let selectedAlternativeStringNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSTextAlternativesSelectedAlternativeStringNotification;
+```
+
 #### Discussion
 
 Arbitrary objects can listen for for this notification to get user selections of alternative strings. The `userInfo` dictionary contains the following information:
@@ -22,7 +27,7 @@ Arbitrary objects can listen for for this notification to get user selections of
 | --- | --- |
 | `@"NSAlternativeString"` | The selected alternative string. |
 
-To observe this notification using Swift concurrency, use [`NSTextAlternatives.SelectedAlternativeStringMessage`](nstextalternatives/selectedalternativestringmessage.md).
+To observe this notification using Swift concurrency, use [`NSTextAlternatives.SelectedAlternativeStringMessage`](./selectedalternativestringmessage.md).
 
 
 ---

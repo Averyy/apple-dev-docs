@@ -1,7 +1,8 @@
 # readAttributeBorderRouterName(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeBorderRouterName(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeBorderRouterNameWithParams:(MTRReadParams *) params;
 ```
 
 

@@ -1,7 +1,8 @@
 # cancelTextAnimations(identifiers:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
 
@@ -17,9 +18,13 @@ Used to support the presentation of grammar issues in text. If it is necessary t
 func cancelTextAnimations(identifiers: [UUID])
 ```
 
+```objc
+- (void) cancelTextAnimationsWithIdentifiers:(NSArray<NSUUID *> *) identifiers;
+```
+
 #### Discussion
 
-The UUIDs passed in should be those returned when starting the animations. To cancel all ahimations, use [`stopWritingTools()`](uiwritingtoolscoordinator/stopwritingtools().md) instead.
+The UUIDs passed in should be those returned when starting the animations. To cancel all ahimations, use [`stopWritingTools()`](./stopwritingtools%28%29.md) instead.
 
 
 ---

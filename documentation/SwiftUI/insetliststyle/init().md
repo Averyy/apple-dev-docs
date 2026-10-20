@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an inset list style.
 
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(alternatesRowBackgrounds: Bool)](insetliststyle/init(alternatesrowbackgrounds:).md)
+### Creating the list style
+- [init(alternatesRowBackgrounds: Bool)](./init%28alternatesrowbackgrounds%29.md)
   Creates an inset list style with optional alternating row backgrounds.
 
 

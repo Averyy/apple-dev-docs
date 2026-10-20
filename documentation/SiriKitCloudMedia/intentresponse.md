@@ -1,7 +1,8 @@
 # IntentResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to an intent.
 
@@ -10,7 +11,7 @@ Your service’s response to an intent.
 
 ## Declaration
 
-```swift
+```
 object IntentResponse
 ```
 
@@ -22,19 +23,20 @@ object IntentResponse
 ## Relationships
 
 ### Inherited By
-- [AddMediaIntentResponse](addmediaintentresponse.md)
-- [PlayMediaIntentResponse](playmediaintentresponse.md)
-- [UpdateMediaAffinityIntentResponse](updatemediaaffinityintentresponse.md)
+- [AddMediaIntentResponse](./addmediaintentresponse.md)
+- [PlayMediaIntentResponse](./playmediaintentresponse.md)
+- [UpdateMediaAffinityIntentResponse](./updatemediaaffinityintentresponse.md)
 
 ## See Also
 
-- [object Intent](intent.md)
+### Intents
+- [object Intent](./intent.md)
   A user request for your service to fulfill.
-- [object UserActivity](useractivity.md)
+- [object UserActivity](./useractivity.md)
   The context for playing a media queue.
-- [object IntentResolutionResult](intentresolutionresult.md)
+- [object IntentResolutionResult](./intentresolutionresult.md)
   An object that matches a parameter of an intent, or information about why your service can’t determine a value for the parameter.
-- [object BooleanResolutionResult](booleanresolutionresult.md)
+- [object BooleanResolutionResult](./booleanresolutionresult.md)
   A Boolean value that matches an intent parameter, or information about why your service can’t determine the value.
 
 

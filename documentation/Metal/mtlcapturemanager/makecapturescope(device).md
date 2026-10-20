@@ -1,7 +1,8 @@
 # makeCaptureScope(device:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a capture scope for commands submitted to a specific device object.
 
@@ -19,6 +20,10 @@ Creates a capture scope for commands submitted to a specific device object.
 func makeCaptureScope(device: any MTLDevice) -> any MTLCaptureScope
 ```
 
+```objc
+- (id<MTLCaptureScope>) newCaptureScopeWithDevice:(id<MTLDevice>) device;
+```
+
 #### Discussion
 
 The capture scope captures commands in command buffers created on any command queues created by the device object.
@@ -29,9 +34,10 @@ The capture scope captures commands in command buffers created on any command qu
 
 ## See Also
 
-- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md)
+### Creating a capture scope
+- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](./makecapturescope%28commandqueue%29-1rozd.md)
   Creates a capture scope for commands submitted to a specific command queue.
-- [var defaultCaptureScope: (any MTLCaptureScope)?](mtlcapturemanager/defaultcapturescope.md)
+- [var defaultCaptureScope: (any MTLCaptureScope)?](./defaultcapturescope.md)
   The capture scope to use when a capture is initiated in Xcode.
 
 

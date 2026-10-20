@@ -1,7 +1,8 @@
 # errSecCodeSigningBadCertChainLength
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing encountered an incorrect certificate chain length.
 
@@ -18,6 +19,10 @@ Code signing encountered an incorrect certificate chain length.
 
 ```swift
 var errSecCodeSigningBadCertChainLength: OSStatus { get }
+```
+
+```c
+errSecCodeSigningBadCertChainLength
 ```
 
 

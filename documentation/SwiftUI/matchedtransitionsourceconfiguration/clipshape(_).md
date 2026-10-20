@@ -1,7 +1,8 @@
 # clipShape(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the specified shape as to the matched transition source, clipping its content.
 

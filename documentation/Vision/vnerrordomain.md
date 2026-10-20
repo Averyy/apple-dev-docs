@@ -1,7 +1,8 @@
 # VNErrorDomain
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain of errors that the framework generates.
 
@@ -19,9 +20,14 @@ The domain of errors that the framework generates.
 let VNErrorDomain: String
 ```
 
+```c
+extern NSString * const VNErrorDomain;
+```
+
 ## See Also
 
-- [enum VNErrorCode](vnerrorcode.md)
+### Errors
+- [enum VNErrorCode](./vnerrorcode.md)
   Constants that identify errors from the framework.
 
 

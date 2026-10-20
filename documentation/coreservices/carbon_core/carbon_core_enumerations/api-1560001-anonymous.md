@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var printerStatusOpCodeNotSupportedErr: Int](printerstatusopcodenotsupportederr.md)
+- [var printerStatusOpCodeNotSupportedErr: Int](../../printerstatusopcodenotsupportederr.md)
 
 
 ---

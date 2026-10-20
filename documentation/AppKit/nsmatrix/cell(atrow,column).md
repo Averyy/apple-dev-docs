@@ -1,12 +1,13 @@
 # cell(atRow:column:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cell at the specified row and column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns the cell at the specified row and column.
 func cell(atRow row: Int, column col: Int) -> NSCell?
 ```
 
+```objc
+- (NSCell *) cellAtRow:(NSInteger) row column:(NSInteger) col;
+```
+
 #### Return Value
 
-The [`NSCell`](nscell.md) object at the specified row and column location specified, or `nil` if either `row` or `column` is outside the bounds of the receiver.
+The [`NSCell`](../nscell.md) object at the specified row and column location specified, or `nil` if either `row` or `column` is outside the bounds of the receiver.
 
 ## Parameters
 
@@ -25,17 +30,19 @@ The [`NSCell`](nscell.md) object at the specified row and column location specif
 
 ## See Also
 
-- [func getRow(UnsafeMutablePointer<Int>, column: UnsafeMutablePointer<Int>, of: NSCell) -> Bool](nsmatrix/getrow(_:column:of:).md)
+### Related Documentation
+- [func getRow(UnsafeMutablePointer<Int>, column: UnsafeMutablePointer<Int>, of: NSCell) -> Bool](./getrow%28_,column,of%29.md)
   Searches the receiver for the specified cell and returns the row and column of the cell
-- [var selectedCells: [NSCell]](nsmatrix/selectedcells.md)
+### Finding Cells
+- [var selectedCells: [NSCell]](./selectedcells.md)
   An array containing all of the matrix’s highlighted cells plus its selected cell.
-- [var selectedColumn: Int](nsmatrix/selectedcolumn.md)
+- [var selectedColumn: Int](./selectedcolumn.md)
   The column number of the selected cell.
-- [var selectedRow: Int](nsmatrix/selectedrow.md)
+- [var selectedRow: Int](./selectedrow.md)
   The row number of the selected cell.
-- [func cell(withTag: Int) -> NSCell?](nsmatrix/cell(withtag:).md)
+- [func cell(withTag: Int) -> NSCell?](./cell%28withtag%29.md)
   Searches the receiver and returns the last cell matching the specified tag.
-- [var cells: [NSCell]](nsmatrix/cells.md)
+- [var cells: [NSCell]](./cells.md)
   An array containing the cells of the matrix.
 
 

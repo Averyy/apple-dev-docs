@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logistic regression classifier configuration.
 
@@ -22,7 +23,8 @@ var configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration { g
 
 ## See Also
 
-- [var labels: Set<Label>](logisticregressionclassifier/labels.md)
+### Getting the properties
+- [var labels: Set<Label>](./labels.md)
   The set of possible labels.
 
 

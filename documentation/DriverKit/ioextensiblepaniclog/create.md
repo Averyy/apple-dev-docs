@@ -1,17 +1,18 @@
 # Create
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(OSData *uuid, OSString *data_id, uint32_t max_len, uint32_t options, IOExtensiblePaniclog **out);
 ```
 

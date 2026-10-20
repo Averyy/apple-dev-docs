@@ -1,7 +1,8 @@
 # mainWindowFrame
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame for Desk View after it launches.
 
@@ -15,13 +16,18 @@ The frame for Desk View after it launches.
 var mainWindowFrame: CGRect { get set }
 ```
 
+```objc
+@property CGRect mainWindowFrame;
+```
+
 #### Discussion
 
-The default value is [`zero`](https://developer.apple.com/documentation/corefoundation/cgrect/zero), which tells the system to use the previously set frame. The system uses global screen coordinates to display the frame. When Desk View launches from a native macOS app, the window origin is bottom-left. When it launches from a [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac-catalyst) app, the window origin is top-left.
+The default value is [`zero`](../../../CoreFoundation/cgrect/zero.md), which tells the system to use the previously set frame. The system uses global screen coordinates to display the frame. When Desk View launches from a native macOS app, the window origin is bottom-left. When it launches from a [Mac Catalyst](../../../UIKit/mac-catalyst.md) app, the window origin is top-left.
 
 ## See Also
 
-- [var requiresSetUpModeCompletion: Bool](avcapturedeskviewapplication/launchconfiguration/requiressetupmodecompletion.md)
+### Customizing the presentation
+- [var requiresSetUpModeCompletion: Bool](./requiressetupmodecompletion.md)
   A Boolean value that specifies whether the system requires the user to complete setup mode before it executes the completion handler.
 
 

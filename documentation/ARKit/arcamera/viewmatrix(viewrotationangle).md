@@ -1,7 +1,8 @@
 # viewMatrix(viewRotationAngle:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view matrix for the camera with a given view angle.
 
@@ -13,6 +14,10 @@ Returns the view matrix for the camera with a given view angle.
 
 ```swift
 func viewMatrix(viewRotationAngle: CGFloat) -> simd_float4x4
+```
+
+```objc
+- (simd_float4x4) viewMatrixForViewRotationAngle:(CGFloat) viewRotationAngle;
 ```
 
 #### Return Value

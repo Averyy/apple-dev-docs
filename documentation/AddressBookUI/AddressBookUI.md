@@ -1,7 +1,8 @@
 # Address Book UI
 
 **Framework**: Address Book UI  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Access users’ contacts and display them in a graphical interface.
 
@@ -14,21 +15,21 @@ Access users’ contacts and display them in a graphical interface.
 
 The AddressBookUI framework provides controllers that facilitate displaying, editing, selecting, and creating records in the Address Book database.
 
-> ❗ **Important**:  Do not use the AddressBookUI framework in iOS 9 and later. Use the APIs defined in the [`Contacts UI`](https://developer.apple.com/documentation/contactsui) framework instead.
+> ❗ **Important**:  Do not use the AddressBookUI framework in iOS 9 and later. Use the APIs defined in the [Contacts UI](../ContactsUI/ContactsUI.md) framework instead.
 
 ## Topics
 
 ### People Picker
-- [class ABPeoplePickerNavigationController](abpeoplepickernavigationcontroller.md)
+- [class ABPeoplePickerNavigationController](./abpeoplepickernavigationcontroller.md)
   The `ABPeoplePickerNavigationController` class (whose instances are known as **people-picker navigation controllers**) implements a view controller that manages a set of views that allow the user to select a contact or one of its contact-information items from an address book.
 ### Detail Display
-- [class ABNewPersonViewController](abnewpersonviewcontroller.md)
+- [class ABNewPersonViewController](./abnewpersonviewcontroller.md)
   A view controller presenting an interface to create a contact.
-- [class ABPersonViewController](abpersonviewcontroller.md)
+- [class ABPersonViewController](./abpersonviewcontroller.md)
   The `ABPersonViewController` class (whose instances are known as **person view controllers**) implements the view used to display a person record (`ABPersonRef`).
-- [class ABUnknownPersonViewController](abunknownpersonviewcontroller.md)
+- [class ABUnknownPersonViewController](./abunknownpersonviewcontroller.md)
   The `ABUnknownPersonViewController` class (whose instances are known as **unknown-person view controllers**) implements a view controller used to create a person record from a set of person properties.
-- [func ABCreateStringWithAddressDictionary([AnyHashable : Any], Bool) -> String](abcreatestringwithaddressdictionary(_:_:).md)
+- [func ABCreateStringWithAddressDictionary([AnyHashable : Any], Bool) -> String](./abcreatestringwithaddressdictionary%28_,_%29.md)
   Returns a formatted address from an address property.
 
 

@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique ID for the device.
 
@@ -16,7 +17,7 @@ let uniqueID: String?
 
 #### Discussion
 
-Use `uniqueID` to facilitate driver matching, or client matching using [`HIDDeviceManager`](hiddevicemanager.md).
+Use `uniqueID` to facilitate driver matching, or client matching using [`HIDDeviceManager`](../../hiddevicemanager.md).
 
 
 ---

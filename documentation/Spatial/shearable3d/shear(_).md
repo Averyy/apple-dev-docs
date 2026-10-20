@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Shears the entity by the specified axis and shear factors.
@@ -12,7 +13,7 @@ Shears the entity by the specified axis and shear factors.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -25,9 +26,16 @@ mutating func shear(_ shear: AxisWithFactors)
 
 - `shear`: The shear axis and factors.
 
+## Default Implementations
+
+### Shearable3D Implementations
+- [func shear(AxisWithFactors)](./shear%28_%29-8gu4j.md)
+  Shears the entity by the specified axis and shear factors.
+
 ## See Also
 
-- [func sheared(AxisWithFactors) -> Self](shearable3d/sheared(_:).md)
+### Instance methods
+- [func sheared(AxisWithFactors) -> Self](./sheared%28_%29.md)
   Returns the entity that results from shearing with the specified axis and shear factors.
 
 

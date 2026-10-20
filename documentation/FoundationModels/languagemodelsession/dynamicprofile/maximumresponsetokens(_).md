@@ -1,7 +1,8 @@
 # maximumResponseTokens(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the maximum response tokens.
 
@@ -21,15 +22,16 @@ func maximumResponseTokens(_ maximumResponseTokens: Int?) -> some LanguageModelS
 
 ## See Also
 
-- [func model(_:)](languagemodelsession/dynamicprofile/model(_:).md)
+### Configuring the model
+- [func model(_:)](./model%28_%29.md)
   Sets the model.
-- [func temperature(Double?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/temperature(_:).md)
+- [func temperature(Double?) -> some LanguageModelSession.DynamicProfile](./temperature%28_%29.md)
   Sets the model temperature.
-- [func samplingMode(GenerationOptions.SamplingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/samplingmode(_:).md)
+- [func samplingMode(GenerationOptions.SamplingMode?) -> some LanguageModelSession.DynamicProfile](./samplingmode%28_%29.md)
   Sets the samping mode.
-- [func reasoningLevel(ContextOptions.ReasoningLevel?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/reasoninglevel(_:).md)
+- [func reasoningLevel(ContextOptions.ReasoningLevel?) -> some LanguageModelSession.DynamicProfile](./reasoninglevel%28_%29.md)
   Sets the reasoning level.
-- [func modifier<Modifier>(Modifier) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/modifier(_:).md)
+- [func modifier<Modifier>(Modifier) -> some LanguageModelSession.DynamicProfile](./modifier%28_%29.md)
   Applies a modifier to the dynamic profile.
 
 

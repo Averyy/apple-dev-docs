@@ -1,7 +1,8 @@
 # PluginNetworkPermissionScope.none
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not allow network access.
 

@@ -1,7 +1,8 @@
 # init(fromSplitComplex:scale:count:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new array of single-precision values from a `DSPDoubleSplitComplex` structure.
 
@@ -19,6 +20,8 @@ Creates a new array of single-precision values from a `DSPDoubleSplitComplex` st
 ```swift
 init(fromSplitComplex splitComplex: DSPDoubleSplitComplex, scale: Double, count: Int)
 ```
+
+Available when `Element` is `Double`.
 
 ## Parameters
 

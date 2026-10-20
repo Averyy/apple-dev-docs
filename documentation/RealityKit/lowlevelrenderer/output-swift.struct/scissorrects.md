@@ -1,7 +1,8 @@
 # scissorRects
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Per-camera scissor rectangles within the render target.
 
@@ -23,9 +24,10 @@ Corresponds to `MTLRenderCommandEncoder.setScissorRects(_:)`.
 
 ## See Also
 
-- [var viewports: [MTLViewport]?](lowlevelrenderer/output-swift.struct/viewports.md)
+### Setting the viewport
+- [var viewports: [MTLViewport]?](./viewports.md)
   Per-camera viewport rectangles within the render target.
-- [var rasterizationRateMap: (any MTLRasterizationRateMap)?](lowlevelrenderer/output-swift.struct/rasterizationratemap.md)
+- [var rasterizationRateMap: (any MTLRasterizationRateMap)?](./rasterizationratemap.md)
   The rasterization rate map to use when rendering.
 
 

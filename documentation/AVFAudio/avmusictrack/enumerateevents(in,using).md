@@ -1,7 +1,8 @@
 # enumerateEvents(in:using:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Iterates through the music events within the track.
 
@@ -19,13 +20,17 @@ Iterates through the music events within the track.
 func enumerateEvents(in range: AVBeatRange, using block: (AVMusicEvent, UnsafeMutablePointer<AVMusicTimeStamp>, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateEventsInRange:(AVBeatRange) range usingBlock:(AVMusicEventEnumerationBlock) block;
+```
+
 #### Discussion
 
-Examine each event the block returns by using [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) to determine the subclass, and then cast and access it accordingly.
+Examine each event the block returns by using [`isKind(of:)`](../../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) to determine the subclass, and then cast and access it accordingly.
 
 The iteration may continue after removing an event.
 
-The event object returned through the block won’t be the same instances you add to the [`AVMusicTrack`](avmusictrack.md), though the content is identical.
+The event object returned through the block won’t be the same instances you add to the [`AVMusicTrack`](../avmusictrack.md), though the content is identical.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ The event object returned through the block won’t be the same instances you ad
 
 ## See Also
 
-- [typealias AVMusicEventEnumerationBlock](avmusiceventenumerationblock.md)
+### Iterating over events
+- [typealias AVMusicEventEnumerationBlock](../avmusiceventenumerationblock.md)
   A type you use to enumerate and remove music events, if necessary.
 
 

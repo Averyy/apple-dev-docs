@@ -1,7 +1,8 @@
 # setStateFrom(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the input values from a specified micro gamepad to a snapshot of a micro gamepad.
 
@@ -19,13 +20,18 @@ Copies the input values from a specified micro gamepad to a snapshot of a micro 
 func setStateFrom(_ microGamepad: GCMicroGamepad)
 ```
 
+```objc
+- (void) setStateFromMicroGamepad:(GCMicroGamepad *) microGamepad;
+```
+
 ## Parameters
 
 - `microGamepad`: The micro gamepad to copy the input values from.
 
 ## See Also
 
-- [func saveSnapshot() -> GCMicroGamepadSnapshot](gcmicrogamepad/savesnapshot.md)
+### Setting snapshot avlues
+- [func saveSnapshot() -> GCMicroGamepadSnapshot](./savesnapshot%28%29.md)
   Saves a snapshot of all of the profile’s elements.
 
 

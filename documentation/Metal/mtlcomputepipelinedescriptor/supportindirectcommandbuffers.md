@@ -1,7 +1,8 @@
 # supportIndirectCommandBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can encode commands that reference the pipeline state object into an indirect command buffer.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether you can encode commands that reference th
 
 ```swift
 var supportIndirectCommandBuffers: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL supportIndirectCommandBuffers;
 ```
 
 

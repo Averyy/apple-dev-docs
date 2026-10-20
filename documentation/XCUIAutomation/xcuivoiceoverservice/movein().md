@@ -1,7 +1,8 @@
 # moveIn()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Move VoiceOver into the current container and return its speech.
 
@@ -16,6 +17,10 @@ Move VoiceOver into the current container and return its speech.
 
 ```swift
 func moveIn() throws -> XCUIVoiceOverService.Output
+```
+
+```objc
+- (XCUIVoiceOverOutput *) moveInAndReturnError:(NSError **) error;
 ```
 
 

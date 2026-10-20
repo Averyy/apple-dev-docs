@@ -1,7 +1,8 @@
 # Coordinates
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface Coordinates
 ```
 
 ## Topics
 
 ### Instance Properties
-- [accuracy](coordinates/1633180-accuracy.md)
-- [altitude](coordinates/1631861-altitude.md)
-- [altitudeAccuracy](coordinates/1634159-altitudeaccuracy.md)
-- [heading](coordinates/1632639-heading.md)
-- [latitude](coordinates/1629254-latitude.md)
-- [longitude](coordinates/1633808-longitude.md)
-- [speed](coordinates/1629476-speed.md)
+- [accuracy](./coordinates/api-1633180-accuracy.md)
+- [altitude](./coordinates/api-1631861-altitude.md)
+- [altitudeAccuracy](./coordinates/api-1634159-altitudeaccuracy.md)
+- [heading](./coordinates/api-1632639-heading.md)
+- [latitude](./coordinates/api-1629254-latitude.md)
+- [longitude](./coordinates/api-1633808-longitude.md)
+- [speed](./coordinates/api-1629476-speed.md)
 
 
 ---

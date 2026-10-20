@@ -1,22 +1,25 @@
 # Selector
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The selector objects available to filter returned data.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object Selector
 ```
 
 #### Discussion
 
-[`Selector`](selector.md) objects define what data the API returns when fetching resources. You use [`Selector`](selector.md) objects with find calls and reporting endpoints.
+[`Selector`](./selector.md) objects define what data the API returns when fetching resources. You use [`Selector`](./selector.md) objects with find calls and reporting endpoints.
 
 | **Functionality** | **Description** |
 | --- | --- |
@@ -61,7 +64,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/find
 
 ```
 
-You can also use [`Selector`](selector.md) objects to find archived or soft-deleted campaigns. By default, API fetch calls don’t return deleted resources, with the exception of GET by `a` resource `Id`. To retrieve deleted resources, you must explicitly request the call using the selector [`Condition`](condition.md).
+You can also use [`Selector`](./selector.md) objects to find archived or soft-deleted campaigns. By default, API fetch calls don’t return deleted resources, with the exception of GET by `a` resource `Id`. To retrieve deleted resources, you must explicitly request the call using the selector [`Condition`](./condition.md).
 
 The following example returns both deleted and undeleted resources:
 
@@ -101,13 +104,14 @@ The following example returns both deleted and undeleted resources:
 
 ## See Also
 
-- [object Condition](condition.md)
+### API Usability
+- [object Condition](./condition.md)
   The list of condition objects that allow users to filter a list of records.
-- [object PageDetail](pagedetail.md)
+- [object PageDetail](./pagedetail.md)
   The number of items that return in the page.
-- [object Pagination](pagination.md)
+- [object Pagination](./pagination.md)
   The procedure to refine returned results using limit and offset parameters.
-- [object Sorting](sorting.md)
+- [object Sorting](./sorting.md)
   The order of grouped results.
 
 

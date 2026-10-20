@@ -1,7 +1,8 @@
 # flashTransition()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a flash of light to transition between two images.
 
@@ -19,6 +20,10 @@ Creates a flash of light to transition between two images.
 class func flashTransition() -> any CIFilter & CIFlashTransition
 ```
 
+```objc
++ (CIFilter<CIFlashTransition> *) flashTransitionFilter;
+```
+
 #### Return Value
 
 The transition image.
@@ -29,16 +34,16 @@ This method applies the flash transition filter to an image. The effect transiti
 
 The flash transition filter uses the following properties:
 
-- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
-- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the size of the rounded rectangle.
-- **`color`**: A [`CIColor`](cicolor.md) representing the color of the flash effect.
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`maxStiriationRadius`**: A `float` representing the radius of the light rays emanating from the flash as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`striationStrength`**: A `float` representing the strength of the light rays emanating from the flash as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`striationContrast`**: A `float` representing the contrast that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`fadeThreshold`**: A `float` representing the amount of fade between the flash and the target image as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: The starting image with the type [`CIImage`](../ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](../ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](../../CoreFoundation/cgpoint.md).
+- **`extent`**: A [`CGRect`](../../CoreFoundation/cgrect.md) representing the size of the rounded rectangle.
+- **`color`**: A [`CIColor`](../cicolor.md) representing the color of the flash effect.
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`maxStiriationRadius`**: A `float` representing the radius of the light rays emanating from the flash as a [`NSNumber`](../../Foundation/nsnumber.md).
+- **`striationStrength`**: A `float` representing the strength of the light rays emanating from the flash as a [`NSNumber`](../../Foundation/nsnumber.md).
+- **`striationContrast`**: A `float` representing the contrast that’s added to each output pixel as a [`NSNumber`](../../Foundation/nsnumber.md).
+- **`fadeThreshold`**: A `float` representing the amount of fade between the flash and the target image as a [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that transitions from the input image with a large flash of light and fades to the target image.
 
@@ -59,29 +64,30 @@ func flash (inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a flash transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right while transitioning by creating a flash of light and slowly fading to the city image.](/images/com.apple.coreimage/media-3616427@2x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a flash transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right while transitioning by creating a flash of light and slowly fading to the city image.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3616427@2x.png)
 
 ## See Also
 
-- [class func accordionFoldTransition() -> any CIFilter & CIAccordionFoldTransition](cifilter-swift.class/accordionfoldtransition.md)
+### Filters
+- [class func accordionFoldTransition() -> any CIFilter & CIAccordionFoldTransition](./accordionfoldtransition%28%29.md)
   Transitions by folding and crossfading an image to reveal the target image.
-- [class func barsSwipeTransition() -> any CIFilter & CIBarsSwipeTransition](cifilter-swift.class/barsswipetransition.md)
+- [class func barsSwipeTransition() -> any CIFilter & CIBarsSwipeTransition](./barsswipetransition%28%29.md)
   Transitions between two images by removing rectangular portions of an image.
-- [class func copyMachineTransition() -> any CIFilter & CICopyMachineTransition](cifilter-swift.class/copymachinetransition.md)
+- [class func copyMachineTransition() -> any CIFilter & CICopyMachineTransition](./copymachinetransition%28%29.md)
   Simulates the effect of a copy machine scanner light to transiton between two images.
-- [class func disintegrateWithMaskTransition() -> any CIFilter & CIDisintegrateWithMaskTransition](cifilter-swift.class/disintegratewithmasktransition.md)
+- [class func disintegrateWithMaskTransition() -> any CIFilter & CIDisintegrateWithMaskTransition](./disintegratewithmasktransition%28%29.md)
   Transitions between two images using a mask image.
-- [class func dissolveTransition() -> any CIFilter & CIDissolveTransition](cifilter-swift.class/dissolvetransition.md)
+- [class func dissolveTransition() -> any CIFilter & CIDissolveTransition](./dissolvetransition%28%29.md)
   Transitions between two images with a fade effect.
-- [class func modTransition() -> any CIFilter & CIModTransition](cifilter-swift.class/modtransition.md)
+- [class func modTransition() -> any CIFilter & CIModTransition](./modtransition%28%29.md)
   Transitions between two images by applying irregularly shaped holes.
-- [class func pageCurlTransition() -> any CIFilter & CIPageCurlTransition](cifilter-swift.class/pagecurltransition.md)
+- [class func pageCurlTransition() -> any CIFilter & CIPageCurlTransition](./pagecurltransition%28%29.md)
   Simulates the curl of a page, revealing the target image.
-- [class func pageCurlWithShadowTransition() -> any CIFilter & CIPageCurlWithShadowTransition](cifilter-swift.class/pagecurlwithshadowtransition.md)
+- [class func pageCurlWithShadowTransition() -> any CIFilter & CIPageCurlWithShadowTransition](./pagecurlwithshadowtransition%28%29.md)
   Simulates the curl of a page, revealing the target image with added shadow.
-- [class func rippleTransition() -> any CIFilter & CIRippleTransition](cifilter-swift.class/rippletransition.md)
+- [class func rippleTransition() -> any CIFilter & CIRippleTransition](./rippletransition%28%29.md)
   Simulates a ripple in a pond to transiton from one image to another.
-- [class func swipeTransition() -> any CIFilter & CISwipeTransition](cifilter-swift.class/swipetransition.md)
+- [class func swipeTransition() -> any CIFilter & CISwipeTransition](./swipetransition%28%29.md)
   Gradually transitions from one image to another with a swiping motion.
 
 

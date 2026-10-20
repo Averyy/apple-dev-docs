@@ -1,7 +1,8 @@
 # ASImportableFIDO2LargeBlob
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of FIDO2 LargeBlob extensions as defined in CXF.
 
@@ -21,22 +22,22 @@ struct ASImportableFIDO2LargeBlob
 ## Topics
 
 ### Initializers
-- [init(uncompressedSize: Int, data: Data)](asimportablefido2largeblob/init(uncompressedsize:data:).md)
+- [init(uncompressedSize: Int, data: Data)](./asimportablefido2largeblob/init%28uncompressedsize,data%29.md)
 ### Instance Properties
-- [var data: Data](asimportablefido2largeblob/data.md)
+- [var data: Data](./asimportablefido2largeblob/data.md)
   The contents of the large blob value which has been DEFLATE compressed.
-- [var uncompressedSize: Int](asimportablefido2largeblob/uncompressedsize.md)
+- [var uncompressedSize: Int](./asimportablefido2largeblob/uncompressedsize.md)
   The claimed uncompressed size of stored data.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

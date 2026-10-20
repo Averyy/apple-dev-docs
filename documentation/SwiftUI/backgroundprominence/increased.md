@@ -1,7 +1,8 @@
 # increased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A more prominent background that likely requires some changes to the views above it.
 
@@ -26,7 +27,8 @@ This is the level of prominence for more highly saturated and full color backgro
 
 ## See Also
 
-- [static let standard: BackgroundProminence](backgroundprominence/standard.md)
+### Getting background prominence
+- [static let standard: BackgroundProminence](./standard.md)
   The standard prominence of a background
 
 

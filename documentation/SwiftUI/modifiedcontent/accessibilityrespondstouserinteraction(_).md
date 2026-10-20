@@ -1,7 +1,8 @@
 # accessibilityRespondsToUserInteraction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
 
@@ -20,6 +21,8 @@ Explicitly set whether this Accessibility element responds to user interaction a
 nonisolated
 func accessibilityRespondsToUserInteraction(_ respondsToUserInteraction: Bool = true) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 #### Discussion
 

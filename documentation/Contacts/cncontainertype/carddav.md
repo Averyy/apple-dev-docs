@@ -1,7 +1,8 @@
 # CNContainerType.cardDAV
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A container for contacts stored in an CardDAV server, such as iCloud.
 
@@ -19,13 +20,18 @@ A container for contacts stored in an CardDAV server, such as iCloud.
 case cardDAV
 ```
 
+```c
+CNContainerTypeCardDAV
+```
+
 ## See Also
 
-- [CNContainerType.local](cncontainertype/local.md)
+### Constants
+- [CNContainerType.local](./local.md)
   A container for contacts only stored locally on the device.
-- [CNContainerType.exchange](cncontainertype/exchange.md)
+- [CNContainerType.exchange](./exchange.md)
   A container for contacts stored in an Exchange folder from an Exchange server.
-- [CNContainerType.unassigned](cncontainertype/unassigned.md)
+- [CNContainerType.unassigned](./unassigned.md)
   A container where the system hasn’t assigned the container type.
 
 

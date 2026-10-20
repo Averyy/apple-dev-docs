@@ -1,17 +1,18 @@
 # init(remoteClientId:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a layer with a remote client ID.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Initializes a layer with a remote client ID.
 init(remoteClientId client_id: UInt32)
 ```
 
+```objc
++ (CALayer *) layerWithRemoteClientId:(uint32_t) client_id;
+```
+
 ## See Also
 
-- [init()](calayer/init.md)
+### Creating a layer
+- [init()](./init%28%29.md)
   Returns an initialized `CALayer` object.
-- [init(layer: Any)](calayer/init(layer:).md)
+- [init(layer: Any)](./init%28layer%29.md)
   Override to copy or initialize custom fields of the specified layer.
 
 

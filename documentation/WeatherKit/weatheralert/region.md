@@ -1,7 +1,8 @@
 # region
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the affected area.
 
@@ -22,11 +23,12 @@ var region: String?
 
 ## See Also
 
-- [var metadata: WeatherMetadata](weatheralert/metadata.md)
+### Getting the properties
+- [var metadata: WeatherMetadata](./metadata.md)
   Descriptive information about the weather alert data.
-- [var severity: WeatherSeverity](weatheralert/severity.md)
+- [var severity: WeatherSeverity](./severity.md)
   The severity of the weather alert.
-- [var summary: String](weatheralert/summary.md)
+- [var summary: String](./summary.md)
   The summary of the event type.
 
 

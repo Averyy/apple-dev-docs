@@ -1,7 +1,8 @@
 # ShapeRole
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Ways of styling a shape.
 
@@ -23,38 +24,39 @@ enum ShapeRole
 ## Topics
 
 ### Getting shape roles
-- [ShapeRole.fill](shaperole/fill.md)
+- [ShapeRole.fill](./shaperole/fill.md)
   Indicates to the shape’s style that SwiftUI fills the shape.
-- [ShapeRole.stroke](shaperole/stroke.md)
+- [ShapeRole.stroke](./shaperole/stroke.md)
   Indicates to the shape’s style that SwiftUI applies a stroke to the shape’s path.
-- [ShapeRole.separator](shaperole/separator.md)
+- [ShapeRole.separator](./shaperole/separator.md)
   Indicates to the shape’s style that SwiftUI uses the shape as a separator.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ShapeView](shapeview.md)
+### Defining shape behavior
+- [protocol ShapeView](./shapeview.md)
   A view that provides a shape that you can use for drawing operations.
-- [protocol Shape](shape.md)
+- [protocol Shape](./shape.md)
   A 2D shape that you can use when drawing a view.
-- [struct AnyShape](anyshape.md)
+- [struct AnyShape](./anyshape.md)
   A type-erased shape value.
-- [struct StrokeStyle](strokestyle.md)
+- [struct StrokeStyle](./strokestyle.md)
   The characteristics of a stroke that traces a path.
-- [struct StrokeShapeView](strokeshapeview.md)
+- [struct StrokeShapeView](./strokeshapeview.md)
   A shape provider that strokes its shape.
-- [struct StrokeBorderShapeView](strokebordershapeview.md)
+- [struct StrokeBorderShapeView](./strokebordershapeview.md)
   A shape provider that strokes the border of its shape.
-- [struct FillStyle](fillstyle.md)
+- [struct FillStyle](./fillstyle.md)
   A style for rasterizing vector shapes.
-- [struct FillShapeView](fillshapeview.md)
+- [struct FillShapeView](./fillshapeview.md)
   A shape provider that fills its shape.
 
 

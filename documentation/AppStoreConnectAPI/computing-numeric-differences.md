@@ -1,6 +1,7 @@
 # Computing numeric differences
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Return the absolute difference between the maximum and minimum numerical values in an array.
 
@@ -18,15 +19,16 @@ number diff(array[number] $values)
 
 -`values`: An array that contains the numeric values to compare.
 
-##### Return Value
+##### Return value
 
 The absolute difference between the maximum and minimum items in the `values` array.
 
 ## See Also
 
-- [Converting arrays to sets](converting-arrays-to-sets.md)
+### Array functions
+- [Converting arrays to sets](./converting-arrays-to-sets.md)
   Return the content of a list, with duplicates removed and sorted, so that you can compare it to another set.
-- [Intersecting sets](intersecting-sets.md)
+- [Intersecting sets](./intersecting-sets.md)
   Return the intersection of two or more arrays treated as sets.
 
 

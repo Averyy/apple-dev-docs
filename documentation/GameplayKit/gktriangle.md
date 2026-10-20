@@ -1,9 +1,10 @@
 # GKTriangle
 
 **Framework**: GameplayKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The definition of a triangle in the mesh, available with the [`triangle(at:)`](gkmeshgraph/triangle(at:).md) method.
+The definition of a triangle in the mesh, available with the [`triangle(at:)`](./gkmeshgraph/triangle%28at%29.md) method.
 
 **Availability**:
 - iOS 9.0+
@@ -19,25 +20,30 @@ The definition of a triangle in the mesh, available with the [`triangle(at:)`](g
 struct GKTriangle
 ```
 
+```c
+struct GKTriangle;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](gktriangle/init.md)
-- [init(points: (vector_float3, vector_float3, vector_float3))](gktriangle/init(points:).md)
+- [init()](./gktriangle/init%28%29.md)
+- [init(points: (vector_float3, vector_float3, vector_float3))](./gktriangle/init%28points%29.md)
 ### Instance Properties
-- [var points: (vector_float3, vector_float3, vector_float3)](gktriangle/points.md)
+- [var points: (vector_float3, vector_float3, vector_float3)](./gktriangle/points.md)
   A set of three points describing the triangle.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode.md)
-  Options for how to place graph nodes when generating the graph, used by the [`triangulationMode`](gkmeshgraph/triangulationmode.md) property.
+### Constants
+- [struct GKMeshGraphTriangulationMode](./gkmeshgraphtriangulationmode.md)
+  Options for how to place graph nodes when generating the graph, used by the [`triangulationMode`](./gkmeshgraph/triangulationmode.md) property.
 
 
 ---

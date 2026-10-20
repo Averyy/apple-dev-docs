@@ -1,37 +1,39 @@
 # methodOptionsSize
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t methodOptionsSize;
 ```
 
 ## See Also
 
-- [descriptionSize](osclassdescription/descriptionsize.md)
-- [dispatchNames](osclassdescription/dispatchnames.md)
-- [flags](osclassdescription/flags.md)
-- [metaMethodNames](osclassdescription/metamethodnames.md)
-- [metaMethodNamesOffset](osclassdescription/metamethodnamesoffset.md)
-- [metaMethodNamesSize](osclassdescription/metamethodnamessize.md)
-- [metaMethodOptions](osclassdescription/metamethodoptions.md)
-- [metaMethodOptionsOffset](osclassdescription/metamethodoptionsoffset.md)
-- [metaMethodOptionsSize](osclassdescription/metamethodoptionssize.md)
-- [methodNames](osclassdescription/methodnames.md)
-- [methodNamesOffset](osclassdescription/methodnamesoffset.md)
-- [methodNamesSize](osclassdescription/methodnamessize.md)
-- [methodOptions](osclassdescription/methodoptions.md)
-- [methodOptionsOffset](osclassdescription/methodoptionsoffset.md)
-- [name](osclassdescription/name.md)
+### Getting the Properties
+- [descriptionSize](./descriptionsize.md)
+- [dispatchNames](./dispatchnames.md)
+- [flags](./flags.md)
+- [metaMethodNames](./metamethodnames.md)
+- [metaMethodNamesOffset](./metamethodnamesoffset.md)
+- [metaMethodNamesSize](./metamethodnamessize.md)
+- [metaMethodOptions](./metamethodoptions.md)
+- [metaMethodOptionsOffset](./metamethodoptionsoffset.md)
+- [metaMethodOptionsSize](./metamethodoptionssize.md)
+- [methodNames](./methodnames.md)
+- [methodNamesOffset](./methodnamesoffset.md)
+- [methodNamesSize](./methodnamessize.md)
+- [methodOptions](./methodoptions.md)
+- [methodOptionsOffset](./methodoptionsoffset.md)
+- [name](./name.md)
 
 
 ---

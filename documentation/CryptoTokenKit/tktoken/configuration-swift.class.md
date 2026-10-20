@@ -1,7 +1,8 @@
 # TKToken.Configuration
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A token’s configuration.
 
@@ -20,42 +21,47 @@ A token’s configuration.
 class Configuration
 ```
 
+```objc
+@interface TKTokenConfiguration : NSObject
+```
+
 #### Overview
 
-When you introduce a new [`TKToken.Configuration`](tktoken/configuration-swift.class.md) into the system, it can inform the system about its identities, consisting of both private keys and certificates, which the [`keychainItems`](tktoken/configuration-swift.class/keychainitems.md) property provides. Use the [`configurationData`](tktoken/configuration-swift.class/configurationdata.md) property to set additional configuration data.
+When you introduce a new [`TKToken.Configuration`](./configuration-swift.class.md) into the system, it can inform the system about its identities, consisting of both private keys and certificates, which the [`keychainItems`](./configuration-swift.class/keychainitems.md) property provides. Use the [`configurationData`](./configuration-swift.class/configurationdata.md) property to set additional configuration data.
 
 You configure always-available tokens on a per-user basis. Although the token driver and the app hosting the token extension are shared across the system, the configuration for a token is stored individually for each user.
 
 ## Topics
 
 ### Reporting Configuration Information
-- [var instanceID: TKToken.InstanceID](tktoken/configuration-swift.class/instanceid.md)
+- [var instanceID: TKToken.InstanceID](./configuration-swift.class/instanceid.md)
   The unique, persistent identifier of this token that the token implementation creates.
-- [var configurationData: Data?](tktoken/configuration-swift.class/configurationdata.md)
+- [var configurationData: Data?](./configuration-swift.class/configurationdata.md)
   Additional configuration information for the token instance.
 ### Retrieving Keys and Certificates
-- [var keychainItems: [TKTokenKeychainItem]](tktoken/configuration-swift.class/keychainitems.md)
+- [var keychainItems: [TKTokenKeychainItem]](./configuration-swift.class/keychainitems.md)
   The keychain items associated with this token.
-- [func certificate(for: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](tktoken/configuration-swift.class/certificate(for:).md)
+- [func certificate(for: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](./configuration-swift.class/certificate%28for%29.md)
   Returns a certificate from the keychain with the object identifier you specify.
-- [func key(for: TKToken.ObjectID) throws -> TKTokenKeychainKey](tktoken/configuration-swift.class/key(for:).md)
+- [func key(for: TKToken.ObjectID) throws -> TKTokenKeychainKey](./configuration-swift.class/key%28for%29.md)
   Returns a key from the keychain with the object identifier you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var configuration: TKToken.Configuration](tktoken/configuration-swift.property.md)
+### Configuring the Token
+- [var configuration: TKToken.Configuration](./configuration-swift.property.md)
   The current configuration for a token.
 
 

@@ -1,7 +1,8 @@
 # CustomerReviewResponseV1.Relationships.Review.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a resource that you’re relating with the resource you’re updating.
 
@@ -10,7 +11,7 @@ The type and ID of a resource that you’re relating with the resource you’re 
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewResponseV1.Relationships.Review.Data
 ```
 
@@ -18,6 +19,8 @@ object CustomerReviewResponseV1.Relationships.Review.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the `customerReviews` resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `customerReviews`
 
 
 ---

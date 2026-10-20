@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct smrq_slink {
     ...
 };
@@ -17,7 +17,7 @@ struct smrq_slink {
 ## Topics
 
 ### Instance Properties
-- [next](smrq_slink/4133141-next.md)
+- [next](./smrq_slink/api-4133141-next.md)
 
 
 ---

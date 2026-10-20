@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotorItemSearchDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate for a custom rotor that finds the next item result after performing a search with the specified search parameters.
 
@@ -14,22 +15,27 @@ A delegate for a custom rotor that finds the next item result after performing a
 protocol NSAccessibilityCustomRotorItemSearchDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSAccessibilityCustomRotorItemSearchDelegate <NSObject>
+```
+
 ## Topics
 
 ### Finding the Next Item
-- [func rotor(NSAccessibilityCustomRotor, resultFor: NSAccessibilityCustomRotor.SearchParameters) -> NSAccessibilityCustomRotor.ItemResult?](nsaccessibilitycustomrotoritemsearchdelegate/rotor(_:resultfor:).md)
+- [func rotor(NSAccessibilityCustomRotor, resultFor: NSAccessibilityCustomRotor.SearchParameters) -> NSAccessibilityCustomRotor.ItemResult?](./nsaccessibilitycustomrotoritemsearchdelegate/rotor%28_,resultfor%29.md)
   Performs a search with the specified search parameters and returns the item result.
-- [NSAccessibilityCustomRotor.SearchParameters](nsaccessibilitycustomrotor/searchparameters.md)
+- [NSAccessibilityCustomRotor.SearchParameters](./nsaccessibilitycustomrotor/searchparameters.md)
   Search parameters for a custom rotor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var itemSearchDelegate: (any NSAccessibilityCustomRotorItemSearchDelegate)?](nsaccessibilitycustomrotor/itemsearchdelegate.md)
+### Navigating to the Next Item
+- [var itemSearchDelegate: (any NSAccessibilityCustomRotorItemSearchDelegate)?](./nsaccessibilitycustomrotor/itemsearchdelegate.md)
   The delegate for finding the next item result.
 
 

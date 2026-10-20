@@ -1,7 +1,8 @@
 # didChangeNotification
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the current process changes the value of a setting.
 
@@ -20,23 +21,28 @@ Posted when the current process changes the value of a setting.
 class let didChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSUserDefaultsDidChangeNotification;
+```
+
 ## Mentions
 
-- [Accessing settings from your code](accessing-settings-from-your-code.md)
+- [Accessing settings from your code](../accessing-settings-from-your-code.md)
 
 #### Discussion
 
 When you write a new value to a setting, or remove an existing value, the system generates this notification to alert you that your app’s settings changed. Use this notification in other parts of your app to incorporate updated settings. The system posts this notification on the same thread you used to make the change.
 
-If a different process changes your app’s settings, the system doesn’t generate this notification. To detect changes made by another process, register a key-value observer on the [`UserDefaults`](userdefaults.md) object. Key-value observing reports all updates to setting values, regardless of which process made the change.
+If a different process changes your app’s settings, the system doesn’t generate this notification. To detect changes made by another process, register a key-value observer on the [`UserDefaults`](../userdefaults.md) object. Key-value observing reports all updates to setting values, regardless of which process made the change.
 
 ## See Also
 
-- [UserDefaults.DidChangeMessage](userdefaults/didchangemessage.md)
+### Monitoring settings changes and issues
+- [UserDefaults.DidChangeMessage](./didchangemessage.md)
   A message the system sends when a user-defaults setting changes.
-- [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
+- [UserDefaults.SizeLimitExceededMessage](./sizelimitexceededmessage.md)
   A message the system sends when the size of the data in the defaults database exceeds the maximum.
-- [class let sizeLimitExceededNotification: NSNotification.Name](userdefaults/sizelimitexceedednotification.md)
+- [class let sizeLimitExceededNotification: NSNotification.Name](./sizelimitexceedednotification.md)
   Posted when the amount of data in the defaults database exceeds the allowed maximum.
 
 

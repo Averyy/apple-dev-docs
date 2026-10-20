@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.PoolingFunction.l2Norm
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function for pooling that computes the square root of the sum of squares of each element in the pooling kernel.
 

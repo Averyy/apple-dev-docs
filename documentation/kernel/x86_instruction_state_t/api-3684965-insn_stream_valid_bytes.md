@@ -1,14 +1,15 @@
 # insn_stream_valid_bytes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int insn_stream_valid_bytes;
 ```
 

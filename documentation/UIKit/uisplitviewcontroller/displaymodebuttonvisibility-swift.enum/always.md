@@ -1,7 +1,8 @@
 # UISplitViewController.DisplayModeButtonVisibility.always
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that allows the display mode button to always appear.
 
@@ -18,15 +19,20 @@ A constant that allows the display mode button to always appear.
 case always
 ```
 
+```c
+UISplitViewControllerDisplayModeButtonVisibilityAlways
+```
+
 #### Discussion
 
-With this behavior, the display mode button can appear even if [`presentsWithGesture`](uisplitviewcontroller/presentswithgesture.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+With this behavior, the display mode button can appear even if [`presentsWithGesture`](../presentswithgesture.md) is [`false`](../../../Swift/false.md).
 
 ## See Also
 
-- [UISplitViewController.DisplayModeButtonVisibility.automatic](uisplitviewcontroller/displaymodebuttonvisibility-swift.enum/automatic.md)
+### Constants
+- [UISplitViewController.DisplayModeButtonVisibility.automatic](./automatic.md)
   A constant that automatically determines the visibility of the display mode button.
-- [UISplitViewController.DisplayModeButtonVisibility.never](uisplitviewcontroller/displaymodebuttonvisibility-swift.enum/never.md)
+- [UISplitViewController.DisplayModeButtonVisibility.never](./never.md)
   A constant that prevents the display mode button from appearing.
 
 

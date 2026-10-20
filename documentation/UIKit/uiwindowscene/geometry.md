@@ -1,7 +1,8 @@
 # UIWindowScene.Geometry
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides geometry information about the window scene.
 
@@ -18,54 +19,59 @@ An object that provides geometry information about the window scene.
 class Geometry
 ```
 
+```objc
+@interface UIWindowSceneGeometry : NSObject
+```
+
 ## Topics
 
 ### Accessing scene geometry
-- [var systemFrame: CGRect](uiwindowscene/geometry/systemframe.md)
+- [var systemFrame: CGRect](./geometry/systemframe.md)
   The current frame of the scene, in system coordinates.
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/geometry/coordinatespace.md)
+- [var coordinateSpace: any UICoordinateSpace](./geometry/coordinatespace.md)
   The coordinate space of the scene
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/geometry/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./geometry/interfaceorientation.md)
   The current interface orientation for the scene.
-- [var isInterfaceOrientationLocked: Bool](uiwindowscene/geometry/isinterfaceorientationlocked.md)
+- [var isInterfaceOrientationLocked: Bool](./geometry/isinterfaceorientationlocked.md)
   If the scene’s interface orientation is locked and preventing changes. To express a preference for this value, override  `UIViewController`’s `prefersInterfaceOrientationLocked`.
 ### Instance Properties
-- [var isInteractivelyResizing: Bool](uiwindowscene/geometry/isinteractivelyresizing.md)
+- [var isInteractivelyResizing: Bool](./geometry/isinteractivelyresizing.md)
   Returns true when the scene is being resized interactively, otherwise false.
-- [var maximumSize: CGSize](uiwindowscene/geometry/maximumsize.md)
+- [var maximumSize: CGSize](./geometry/maximumsize.md)
   The current app specified maximumSize. A value of CGFLOAT_MAX,CGFLOAT_MAX is returned if a maximum is not set by the application
-- [var minimumSize: CGSize](uiwindowscene/geometry/minimumsize.md)
+- [var minimumSize: CGSize](./geometry/minimumsize.md)
   The current app specified minimumSize. A value of 0,0 is returned if a minimum is not set by the application
-- [var resizingRestrictions: UIWindowSceneResizingRestrictions](uiwindowscene/geometry/resizingrestrictions.md)
+- [var resizingRestrictions: UIWindowSceneResizingRestrictions](./geometry/resizingrestrictions.md)
   The current app specified resizingRestriction. Default value UIWindowSceneResizingRestrictionsUnspecified
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var effectiveGeometry: UIWindowScene.Geometry](uiwindowscene/effectivegeometry.md)
+### Working with window geometry
+- [var effectiveGeometry: UIWindowScene.Geometry](./effectivegeometry.md)
   The current values for the window scene’s geometry in system space.
-- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](uiwindowscene/requestgeometryupdate(_:errorhandler:).md)
+- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](./requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
-- [UIWindowScene.GeometryPreferences](uiwindowscene/geometrypreferences.md)
+- [UIWindowScene.GeometryPreferences](./geometrypreferences.md)
   An abstract superclass for representing window scene geometry preferences.
-- [UIWindowScene.GeometryPreferences.iOS](uiwindowscene/geometrypreferences/ios.md)
+- [UIWindowScene.GeometryPreferences.iOS](./geometrypreferences/ios.md)
   An object that represents the geometry preferences for a window scene in an iOS app.
-- [UIWindowScene.GeometryPreferences.Mac](uiwindowscene/geometrypreferences/mac.md)
+- [UIWindowScene.GeometryPreferences.Mac](./geometrypreferences/mac.md)
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
-- [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
-- [let UIProposedSceneSizeNoPreference: CGFloat](uiproposedscenesizenopreference.md)
+- [UIWindowScene.GeometryPreferences.Vision](./geometrypreferences/vision.md)
+- [let UIProposedSceneSizeNoPreference: CGFloat](../uiproposedscenesizenopreference.md)
   Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
 

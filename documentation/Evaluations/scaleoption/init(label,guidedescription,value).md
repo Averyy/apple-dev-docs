@@ -1,7 +1,8 @@
 # init(label:guideDescription:value:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scale option.
 

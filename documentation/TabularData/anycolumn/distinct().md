@@ -1,7 +1,8 @@
 # distinct()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a column slice that contains unique elements.
 

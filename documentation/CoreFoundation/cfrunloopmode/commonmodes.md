@@ -1,23 +1,28 @@
 # commonModes
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Objects added to a run loop using this value as the mode are monitored by all run loop modes that have been declared as a member of the set of “common” modes with [`CFRunLoopAddCommonMode(_:_:)`](cfrunloopaddcommonmode(_:_:).md).
+Objects added to a run loop using this value as the mode are monitored by all run loop modes that have been declared as a member of the set of “common” modes with [`CFRunLoopAddCommonMode(_:_:)`](../cfrunloopaddcommonmode%28_,_%29.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let commonModes: CFRunLoopMode!
+```
+
+```c
+extern CFRunLoopMode const kCFRunLoopCommonModes;
 ```
 
 

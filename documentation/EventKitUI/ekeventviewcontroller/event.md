@@ -1,7 +1,8 @@
 # event
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event this view controller displays to the user.
 
@@ -15,6 +16,10 @@ The event this view controller displays to the user.
 
 ```swift
 var event: EKEvent! { get set }
+```
+
+```objc
+@property (nonatomic, retain, null_unspecified) EKEvent * event;
 ```
 
 #### Discussion

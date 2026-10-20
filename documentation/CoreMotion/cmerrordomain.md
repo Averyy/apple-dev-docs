@@ -1,7 +1,8 @@
 # CMErrorDomain
 
 **Framework**: Core Motion  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for Core Motion.
 
@@ -19,9 +20,14 @@ The error domain for Core Motion.
 let CMErrorDomain: String
 ```
 
+```c
+extern NSString * const CMErrorDomain;
+```
+
 ## See Also
 
-- [struct CMError](cmerror.md)
+### Understanding Errors
+- [struct CMError](./cmerror.md)
   Defines motion errors.
 
 

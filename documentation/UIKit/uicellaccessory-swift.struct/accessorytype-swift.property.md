@@ -1,7 +1,8 @@
 # accessoryType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the cell accessory.
 
@@ -10,7 +11,7 @@ The type of the cell accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ let accessoryType: UICellAccessory.AccessoryType
 
 ## See Also
 
-- [UICellAccessory.AccessoryType](uicellaccessory-swift.struct/accessorytype-swift.enum.md)
+### Checking the accessory’s type
+- [UICellAccessory.AccessoryType](./accessorytype-swift.enum.md)
   Constants that describe the type of the cell accessory.
 
 

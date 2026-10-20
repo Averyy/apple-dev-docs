@@ -1,7 +1,8 @@
 # depthDataType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the depth data map.
 
@@ -19,9 +20,14 @@ The pixel format of the depth data map.
 var depthDataType: OSType { get }
 ```
 
+```objc
+@property (readonly) OSType depthDataType;
+```
+
 ## See Also
 
-- [var depthDataMap: CVPixelBuffer](avdepthdata/depthdatamap.md)
+### Reading pixel depth information
+- [var depthDataMap: CVPixelBuffer](./depthdatamap.md)
   A pixel buffer containing the depth data’s per-pixel depth or disparity data map.
 
 

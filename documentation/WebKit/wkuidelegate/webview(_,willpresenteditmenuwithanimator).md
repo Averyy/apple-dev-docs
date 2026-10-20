@@ -1,7 +1,8 @@
 # webView(_:willPresentEditMenuWithAnimator:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the web view is about to present an edit menu.
 
@@ -17,9 +18,14 @@ Tells the delegate that the web view is about to present an edit menu.
 optional func webView(_ webView: WKWebView, willPresentEditMenuWithAnimator animator: any UIEditMenuInteractionAnimating)
 ```
 
+```objc
+- (void) webView:(WKWebView *) webView willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>) animator;
+```
+
 ## See Also
 
-- [func webView(WKWebView, willDismissEditMenuWithAnimator: any UIEditMenuInteractionAnimating)](wkuidelegate/webview(_:willdismisseditmenuwithanimator:).md)
+### Displaying an edit menu
+- [func webView(WKWebView, willDismissEditMenuWithAnimator: any UIEditMenuInteractionAnimating)](./webview%28_,willdismisseditmenuwithanimator%29.md)
   Tells the delegate that the web view is about to dismiss an edit menu.
 
 

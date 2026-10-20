@@ -1,7 +1,8 @@
 # PipelineDataError
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors related to pipeline data affinity problems.
 
@@ -23,63 +24,64 @@ enum PipelineDataError
 ## Topics
 
 ### Analyzing the error
-- [PipelineDataError.emptyInput(operation:)](pipelinedataerror/emptyinput(operation:).md)
+- [PipelineDataError.emptyInput(operation:)](./pipelinedataerror/emptyinput%28operation%29.md)
   An error that indicates that the input to fit is empty.
-- [case incompatibleConfiguration(operation: String, debugDescription: String)](pipelinedataerror/incompatibleconfiguration(operation:debugdescription:).md)
+- [case incompatibleConfiguration(operation: String, debugDescription: String)](./pipelinedataerror/incompatibleconfiguration%28operation,debugdescription%29.md)
   An error that indicates that an input is not compatible with an operation’s configuration.
-- [case incompatibleDataFormat(operation: String, debugDescription: String)](pipelinedataerror/incompatibledataformat(operation:debugdescription:).md)
+- [case incompatibleDataFormat(operation: String, debugDescription: String)](./pipelinedataerror/incompatibledataformat%28operation,debugdescription%29.md)
   An error that indicates that an input doesn’t have the expected data format.
-- [PipelineDataError.incompatibleShape(_:debugDescription:)](pipelinedataerror/incompatibleshape(_:debugdescription:).md)
+- [PipelineDataError.incompatibleShape(_:debugDescription:)](./pipelinedataerror/incompatibleshape%28_,debugdescription%29.md)
   An error that indicates that an input’s doesn’t have the expected shape for the operation.
-- [PipelineDataError.missingAnnotation(operation:)](pipelinedataerror/missingannotation(operation:).md)
+- [PipelineDataError.missingAnnotation(operation:)](./pipelinedataerror/missingannotation%28operation%29.md)
   An error that indicates that an expected annotation is missing.
-- [PipelineDataError.missingValue(operation:)](pipelinedataerror/missingvalue(operation:).md)
+- [PipelineDataError.missingValue(operation:)](./pipelinedataerror/missingvalue%28operation%29.md)
   An error that indicates that an expected value is missing.
-- [case unrecognizedCategory(operation: String, category: String)](pipelinedataerror/unrecognizedcategory(operation:category:).md)
+- [case unrecognizedCategory(operation: String, category: String)](./pipelinedataerror/unrecognizedcategory%28operation,category%29.md)
   An error that indicates that a new category was encountered after fitting.
 ### Getting the debug description
-- [var debugDescription: String](pipelinedataerror/debugdescription.md)
+- [var debugDescription: String](./pipelinedataerror/debugdescription.md)
   A text representation of the error.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](pipelinedataerror/customdebugstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./pipelinedataerror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum AudioPreprocessingError](audiopreprocessingerror.md)
+### Errors
+- [enum AudioPreprocessingError](./audiopreprocessingerror.md)
   Audio preprocessing errors.
-- [enum AudioReaderError](audioreadererror.md)
+- [enum AudioReaderError](./audioreadererror.md)
   Audio reader errors.
-- [enum CompatibilityError](compatibilityerror.md)
+- [enum CompatibilityError](./compatibilityerror.md)
   A compatibility error.
-- [enum ConcatenationError](concatenationerror.md)
+- [enum ConcatenationError](./concatenationerror.md)
   Errors thrown when concatenating numeric values.
-- [enum DatasetError](dataseterror.md)
+- [enum DatasetError](./dataseterror.md)
   Dataset processing errors.
-- [enum EstimatorEncodingError](estimatorencodingerror.md)
+- [enum EstimatorEncodingError](./estimatorencodingerror.md)
   An estimator encoding error.
-- [enum ModelCompatibilityError](modelcompatibilityerror.md)
+- [enum ModelCompatibilityError](./modelcompatibilityerror.md)
   Errors related to CoreML model compatibility.
-- [enum ModelUpdateError](modelupdateerror.md)
+- [enum ModelUpdateError](./modelupdateerror.md)
   An updatable model error.
-- [enum OptimizationError](optimizationerror.md)
+- [enum OptimizationError](./optimizationerror.md)
   An optimization error.
-- [enum SerializationError](serializationerror.md)
+- [enum SerializationError](./serializationerror.md)
   A serialization error.
-- [enum TabularPipelineDataError](tabularpipelinedataerror.md)
+- [enum TabularPipelineDataError](./tabularpipelinedataerror.md)
   Errors related to tabular pipeline data affinity problems.
-- [enum VideoReaderError](videoreadererror.md)
+- [enum VideoReaderError](./videoreadererror.md)
   Video loader errors.
 
 

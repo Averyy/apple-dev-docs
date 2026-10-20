@@ -1,10 +1,11 @@
 # kBluetoothACLLogicalChannelLMP
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothACLLogicalChannelLMP: Int { get }
 ```
 
+```c
+kBluetoothACLLogicalChannelLMP
+```
+
 ## See Also
 
-- [var kBluetoothACLLogicalChannelL2CAPContinue: Int](kbluetoothacllogicalchannell2capcontinue.md)
-- [var kBluetoothACLLogicalChannelL2CAPStart: Int](kbluetoothacllogicalchannell2capstart.md)
-- [var kBluetoothACLLogicalChannelReserved: Int](kbluetoothacllogicalchannelreserved.md)
-- [var kBluetoothL2CAPMaxPacketSize: Int](kbluetoothl2capmaxpacketsize.md)
+### Constants
+- [var kBluetoothACLLogicalChannelL2CAPContinue: Int](./kbluetoothacllogicalchannell2capcontinue.md)
+- [var kBluetoothACLLogicalChannelL2CAPStart: Int](./kbluetoothacllogicalchannell2capstart.md)
+- [var kBluetoothACLLogicalChannelReserved: Int](./kbluetoothacllogicalchannelreserved.md)
+- [var kBluetoothL2CAPMaxPacketSize: Int](./kbluetoothl2capmaxpacketsize.md)
 
 
 ---

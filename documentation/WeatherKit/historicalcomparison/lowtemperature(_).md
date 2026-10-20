@@ -1,7 +1,8 @@
 # HistoricalComparison.lowTemperature(_:)
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The comparison relates to the location’s minimum temperature averaged since ~1970.
 

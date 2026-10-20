@@ -1,7 +1,8 @@
 # LangageTagResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a language tag request.
 
@@ -10,14 +11,14 @@ The response to a language tag request.
 
 ## Declaration
 
-```swift
+```
 object LangageTagResponse
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LangageTagResponse.Results](langagetagresponse/results-data.dictionary.md)
+- [object LangageTagResponse.Results](./langagetagresponse/results-data.dictionary.md)
   Results included in the response for a storefront resource request.
 
 ## Properties

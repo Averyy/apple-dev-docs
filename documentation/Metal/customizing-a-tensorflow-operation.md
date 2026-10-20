@@ -1,16 +1,18 @@
 # Customizing a TensorFlow operation
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [CustomizingATensorFlowOperation.zip](https://docs-assets.developer.apple.com/published/da6dd297d52f/CustomizingATensorFlowOperation.zip)
 
 Implement a custom operation that uses Metal kernels to accelerate neural-network training performance.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10063: Accelerate machine learning with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10063/).
+> **Note**: This sample code project is associated with WWDC22 session [10063: Accelerate machine learning with Metal](https://developer.apple.com/wwdc22/10063/).
 
-##### Configure the Sample Code
+##### Configure the sample code
 
-1. Follow the instructions in [`Getting started with tensorflow-metal`](https://developer.apple.comhttps://developer.apple.com/metal/tensorflow-plugin/).
+1. Follow the instructions in [Getting started with tensorflow-metal](https://developer.apple.com/metal/tensorflow-plugin/).
 2. Install ffmpeg using `brew`.
 
 ```shell
@@ -49,11 +51,12 @@ python tiny_nerf_mlp.py
 
 ## See Also
 
-- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
+### Compute workflows
+- [Performing calculations on a GPU](./performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Selecting device objects for compute processing](selecting-device-objects-for-compute-processing.md)
+- [Selecting device objects for compute processing](./selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
-- [Customizing a PyTorch operation](customizing-a-pytorch-operation.md)
+- [Customizing a PyTorch operation](./customizing-a-pytorch-operation.md)
   Implement a custom operation in PyTorch that uses Metal kernels to improve performance.
 
 

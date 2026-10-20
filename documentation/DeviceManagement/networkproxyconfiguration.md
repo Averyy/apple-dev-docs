@@ -1,7 +1,8 @@
 # NetworkProxyConfiguration
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures network proxies for a device.
 
@@ -10,7 +11,7 @@ The payload that configures network proxies for a device.
 
 ## Declaration
 
-```swift
+```
 object NetworkProxyConfiguration
 ```
 
@@ -18,7 +19,7 @@ object NetworkProxyConfiguration
 
 Specify `com.apple.SystemConfiguration` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.SystemConfiguration` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,7 +83,7 @@ Specify `com.apple.SystemConfiguration` as the payload type.
 ## Topics
 
 ### Objects
-- [object NetworkProxyConfiguration.Proxies](networkproxyconfiguration/proxies-data.dictionary.md)
+- [object NetworkProxyConfiguration.Proxies](./networkproxyconfiguration/proxies-data.dictionary.md)
   The payload for configuring network proxies.
 
 ## Properties
@@ -91,9 +92,10 @@ Specify `com.apple.SystemConfiguration` as the payload type.
 
 ## See Also
 
-- [object DNSProxy](dnsproxy.md)
+### Proxies
+- [object DNSProxy](./dnsproxy.md)
   The payload that configures DNS proxies.
-- [object GlobalHTTPProxy](globalhttpproxy.md)
+- [object GlobalHTTPProxy](./globalhttpproxy.md)
   The payload that configures a global HTTP proxy.
 
 

@@ -1,7 +1,8 @@
 # ASError.Code.connectionFailed
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session was unable to establish a connection.
 
@@ -13,6 +14,10 @@ The session was unable to establish a connection.
 
 ```swift
 case connectionFailed
+```
+
+```c
+ASErrorCodeConnectionFailed
 ```
 
 

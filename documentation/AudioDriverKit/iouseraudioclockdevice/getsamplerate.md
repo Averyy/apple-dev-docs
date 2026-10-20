@@ -1,7 +1,8 @@
 # GetSampleRate
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the sample rate of the clock device.
 
@@ -10,7 +11,7 @@ Gets the sample rate of the clock device.
 
 ## Declaration
 
-```swift
+```c
 double GetSampleRate();
 ```
 
@@ -24,13 +25,14 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetSampleRate](iouseraudioclockdevice/setsamplerate.md)
+### Working with Sample Rates
+- [SetSampleRate](./setsamplerate.md)
   Sets the sample rate for the clock device.
-- [SetAvailableSampleRates](iouseraudioclockdevice/setavailablesamplerates.md)
+- [SetAvailableSampleRates](./setavailablesamplerates.md)
   Sets the available sample rates for the clock device.
-- [GetAvailableSampleRates](iouseraudioclockdevice/getavailablesamplerates.md)
+- [GetAvailableSampleRates](./getavailablesamplerates.md)
   Gets the available sample rates of the clock device.
-- [GetNumberAvailableSampleRates](iouseraudioclockdevice/getnumberavailablesamplerates.md)
+- [GetNumberAvailableSampleRates](./getnumberavailablesamplerates.md)
   Gets the number of available sample rates of the clock device.
 
 

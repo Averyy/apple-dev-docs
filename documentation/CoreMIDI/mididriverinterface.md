@@ -1,18 +1,19 @@
 # MIDIDriverInterface
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The interface to a MIDI driver.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,49 +21,54 @@ The interface to a MIDI driver.
 struct MIDIDriverInterface
 ```
 
+```c
+struct MIDIDriverInterface;
+```
+
 ## Topics
 
 ### Properties
-- [var FindDevices: (MIDIDriverRef, MIDIDeviceListRef) -> OSStatus](mididriverinterface/finddevices.md)
+- [var FindDevices: (MIDIDriverRef, MIDIDeviceListRef) -> OSStatus](./mididriverinterface/finddevices.md)
   Finds the available devices.
-- [var Start: (MIDIDriverRef, MIDIDeviceListRef) -> OSStatus](mididriverinterface/start.md)
+- [var Start: (MIDIDriverRef, MIDIDeviceListRef) -> OSStatus](./mididriverinterface/start.md)
   Starts MIDI I/O.
-- [var Stop: (MIDIDriverRef) -> OSStatus](mididriverinterface/stop.md)
+- [var Stop: (MIDIDriverRef) -> OSStatus](./mididriverinterface/stop.md)
   Stops MIDI I/O.
-- [var Configure: (MIDIDriverRef, MIDIDeviceRef) -> OSStatus](mididriverinterface/configure.md)
+- [var Configure: (MIDIDriverRef, MIDIDeviceRef) -> OSStatus](./mididriverinterface/configure.md)
   The system doesn’t currently use this method.
-- [var Send: (MIDIDriverRef, UnsafePointer<MIDIPacketList>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> OSStatus](mididriverinterface/send.md)
+- [var Send: (MIDIDriverRef, UnsafePointer<MIDIPacketList>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> OSStatus](./mididriverinterface/send.md)
   Sends a MIDI packet list to the specified destination endpoints.
-- [var EnableSource: (MIDIDriverRef, MIDIEndpointRef, DarwinBoolean) -> OSStatus](mididriverinterface/enablesource.md)
+- [var EnableSource: (MIDIDriverRef, MIDIEndpointRef, DarwinBoolean) -> OSStatus](./mididriverinterface/enablesource.md)
   Tells the driver whether input from a particular source has listeners.
-- [var Flush: (MIDIDriverRef, MIDIEndpointRef, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> OSStatus](mididriverinterface/flush.md)
+- [var Flush: (MIDIDriverRef, MIDIEndpointRef, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> OSStatus](./mididriverinterface/flush.md)
   Unschedules all pending output to the specified destination.
-- [var Monitor: (MIDIDriverRef, MIDIEndpointRef, UnsafePointer<MIDIPacketList>) -> OSStatus](mididriverinterface/monitor.md)
+- [var Monitor: (MIDIDriverRef, MIDIEndpointRef, UnsafePointer<MIDIPacketList>) -> OSStatus](./mididriverinterface/monitor.md)
   Enables monitoring of MIDI packet lists by the specified driver.
-- [var MonitorEvents: (MIDIDriverRef, MIDIEndpointRef, UnsafePointer<MIDIEventList>) -> OSStatus](mididriverinterface/monitorevents.md)
+- [var MonitorEvents: (MIDIDriverRef, MIDIEndpointRef, UnsafePointer<MIDIEventList>) -> OSStatus](./mididriverinterface/monitorevents.md)
   Enables monitoring of MIDI event lists by the specified driver.
-- [var SendPackets: (MIDIDriverRef, UnsafePointer<MIDIEventList>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> OSStatus](mididriverinterface/sendpackets.md)
+- [var SendPackets: (MIDIDriverRef, UnsafePointer<MIDIEventList>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> OSStatus](./mididriverinterface/sendpackets.md)
   Sends a MIDI event list to the specified destination endpoints.
-- [var AddRef: (UnsafeMutableRawPointer) -> ULONG](mididriverinterface/addref.md)
-- [var QueryInterface: (UnsafeMutableRawPointer, REFIID, UnsafeMutablePointer<LPVOID?>?) -> HRESULT](mididriverinterface/queryinterface.md)
-- [var Release: (UnsafeMutableRawPointer) -> ULONG](mididriverinterface/release.md)
+- [var AddRef: (UnsafeMutableRawPointer) -> ULONG](./mididriverinterface/addref.md)
+- [var QueryInterface: (UnsafeMutableRawPointer, REFIID, UnsafeMutablePointer<LPVOID?>?) -> HRESULT](./mididriverinterface/queryinterface.md)
+- [var Release: (UnsafeMutableRawPointer) -> ULONG](./mididriverinterface/release.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func MIDIGetDriverDeviceList(MIDIDriverRef) -> MIDIDeviceListRef](midigetdriverdevicelist(_:).md)
+### Inspecting a Driver
+- [func MIDIGetDriverDeviceList(MIDIDriverRef) -> MIDIDeviceListRef](./midigetdriverdevicelist%28_%29.md)
   Returns the list of driver-created devices in the current MIDI setup.
-- [func MIDIDriverEnableMonitoring(MIDIDriverRef, Bool) -> OSStatus](mididriverenablemonitoring(_:_:).md)
+- [func MIDIDriverEnableMonitoring(MIDIDriverRef, Bool) -> OSStatus](./mididriverenablemonitoring%28_,_%29.md)
   Enables monitoring of all outgoing MIDI packets.
-- [func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>](midigetdriveriorunloop().md)
+- [func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>](./midigetdriveriorunloop%28%29.md)
   Returns the server’s driver I/O thread.
-- [let kMIDIDriverPropertyUsesSerial: CFString](kmididriverpropertyusesserial.md)
+- [let kMIDIDriverPropertyUsesSerial: CFString](./kmididriverpropertyusesserial.md)
   A value that indicates whether the driver uses serial ports and is eligible to have serial ports assigned to it.
-- [typealias MIDIDriverRef](mididriverref.md)
+- [typealias MIDIDriverRef](./mididriverref.md)
   A MIDI driver object.
 
 

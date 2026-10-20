@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the device the pipeline state belongs to.
@@ -18,6 +19,10 @@ Returns the device the pipeline state belongs to.
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```objc
+@property (readonly) id<MTLDevice> device;
 ```
 
 

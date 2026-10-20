@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionAuthenticationMethod.smartCard
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case smartCard
+```
+
+```c
+ASAuthorizationProviderExtensionAuthenticationMethodSmartCard
 ```
 
 

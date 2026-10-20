@@ -1,7 +1,8 @@
 # errSecInvalidPolicyIdentifiers
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The policy identifiers are not valid.
 
@@ -18,6 +19,10 @@ The policy identifiers are not valid.
 
 ```swift
 var errSecInvalidPolicyIdentifiers: OSStatus { get }
+```
+
+```c
+errSecInvalidPolicyIdentifiers
 ```
 
 

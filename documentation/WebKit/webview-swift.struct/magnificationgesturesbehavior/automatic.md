@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic behavior.
 
@@ -20,7 +21,7 @@ static let automatic: WebView.MagnificationGesturesBehavior
 
 #### Discussion
 
-The web view automatically chooses whether magnify gestures change the web view’s magnification. By default, web views use the [`enabled`](webview-swift.struct/magnificationgesturesbehavior/enabled.md) behavior.
+The web view automatically chooses whether magnify gestures change the web view’s magnification. By default, web views use the [`enabled`](./enabled.md) behavior.
 
 
 ---

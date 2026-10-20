@@ -1,7 +1,8 @@
 # ServicePredictionError.unsupportedDevice
 
 **Framework**: WirelessInsights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t currently support service predictions.
 

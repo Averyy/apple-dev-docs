@@ -1,7 +1,8 @@
 # subscriptionStoreControlBackground(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -18,9 +19,10 @@ func subscriptionStoreControlBackground(_ backgroundStyle: some ShapeStyle) -> s
 
 ## See Also
 
-- [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some StoreContent](storecontent/subscriptionstorecontrolbackground(_:)-10hv8.md)
-- [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some StoreContent](storecontent/subscriptionstorepickeritembackground(_:).md)
-- [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some StoreContent](storecontent/subscriptionstorepickeritembackground(_:in:).md)
+### Configuring backgrounds
+- [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some StoreContent](./subscriptionstorecontrolbackground%28_%29-10hv8.md)
+- [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some StoreContent](./subscriptionstorepickeritembackground%28_%29.md)
+- [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some StoreContent](./subscriptionstorepickeritembackground%28_,in%29.md)
 
 
 ---

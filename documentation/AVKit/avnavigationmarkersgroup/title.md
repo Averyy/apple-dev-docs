@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the marker group.
 
@@ -14,15 +15,20 @@ The title of the marker group.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * title;
+```
+
 #### Discussion
 
-You set a marker group’s title with the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) initializer. Each marker group in the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) array of an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object must have a unique title. To use the marker group as a chapter list, set its title to `nil`.
+You set a marker group’s title with the [`AVNavigationMarkersGroup`](../avnavigationmarkersgroup.md) initializer. Each marker group in the [`navigationMarkerGroups`](../../AVFoundation/avplayeritem/navigationmarkergroups.md) array of an [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object must have a unique title. To use the marker group as a chapter list, set its title to `nil`.
 
 ## See Also
 
-- [var timedNavigationMarkers: [AVTimedMetadataGroup]?](avnavigationmarkersgroup/timednavigationmarkers.md)
+### Inspecting navigation metadata
+- [var timedNavigationMarkers: [AVTimedMetadataGroup]?](./timednavigationmarkers.md)
   The array of timed navigation markers for which the group provides navigation.
-- [var dateRangeNavigationMarkers: [AVDateRangeMetadataGroup]?](avnavigationmarkersgroup/daterangenavigationmarkers.md)
+- [var dateRangeNavigationMarkers: [AVDateRangeMetadataGroup]?](./daterangenavigationmarkers.md)
   The array of date range navigation markers for which the group provides navigation.
 
 

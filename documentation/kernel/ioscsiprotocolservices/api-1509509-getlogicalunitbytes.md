@@ -1,14 +1,15 @@
 # GetLogicalUnitBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 void GetLogicalUnitBytes(SCSITaskIdentifier request, SCSILogicalUnitBytes *lunBytes);
 ```
 

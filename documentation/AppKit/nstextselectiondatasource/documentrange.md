@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the starting and ending locations for the document.
@@ -13,6 +14,10 @@ Returns the starting and ending locations for the document.
 
 ```swift
 var documentRange: NSTextRange { get }
+```
+
+```objc
+@property (strong, readonly) NSTextRange * documentRange;
 ```
 
 

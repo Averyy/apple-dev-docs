@@ -1,7 +1,8 @@
 # errSSLATSMinimumVersionViolation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The minimum protocol version isn’t App Transport Security compliant.
 
@@ -20,9 +21,13 @@ The minimum protocol version isn’t App Transport Security compliant.
 var errSSLATSMinimumVersionViolation: OSStatus { get }
 ```
 
+```c
+errSSLATSMinimumVersionViolation
+```
+
 #### Overview
 
-For more information about App Transport Security (ATS) compliance, see [`Preventing Insecure Network Connections`](preventing-insecure-network-connections.md).
+For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 
 
 ---

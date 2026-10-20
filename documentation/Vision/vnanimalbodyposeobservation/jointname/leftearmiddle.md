@@ -1,7 +1,8 @@
 # leftEarMiddle
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the middle of the left ear.
 
@@ -19,25 +20,30 @@ A joint name that represents the middle of the left ear.
 static let leftEarMiddle: VNAnimalBodyPoseObservation.JointName
 ```
 
+```c
+extern VNAnimalBodyPoseObservationJointName const VNAnimalBodyPoseObservationJointNameLeftEarMiddle;
+```
+
 ## See Also
 
-- [static let leftEarTop: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/lefteartop.md)
+### Getting the Head Joint Names
+- [static let leftEarTop: VNAnimalBodyPoseObservation.JointName](./lefteartop.md)
   A joint name that represents the top of the left ear.
-- [static let leftEarBottom: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/leftearbottom.md)
+- [static let leftEarBottom: VNAnimalBodyPoseObservation.JointName](./leftearbottom.md)
   A joint name that represents the bottom of the left ear.
-- [static let leftEye: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/lefteye.md)
+- [static let leftEye: VNAnimalBodyPoseObservation.JointName](./lefteye.md)
   A joint name that represents the left eye.
-- [static let neck: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/neck.md)
+- [static let neck: VNAnimalBodyPoseObservation.JointName](./neck.md)
   A joint name that represents the neck.
-- [static let nose: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/nose.md)
+- [static let nose: VNAnimalBodyPoseObservation.JointName](./nose.md)
   A joint name that represents the nose.
-- [static let rightEye: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/righteye.md)
+- [static let rightEye: VNAnimalBodyPoseObservation.JointName](./righteye.md)
   A joint name that represents the right eye.
-- [static let rightEarTop: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/righteartop.md)
+- [static let rightEarTop: VNAnimalBodyPoseObservation.JointName](./righteartop.md)
   A joint name that represents the top of the right ear.
-- [static let rightEarMiddle: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightearmiddle.md)
+- [static let rightEarMiddle: VNAnimalBodyPoseObservation.JointName](./rightearmiddle.md)
   A joint name that represents the middle of the right ear.
-- [static let rightEarBottom: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightearbottom.md)
+- [static let rightEarBottom: VNAnimalBodyPoseObservation.JointName](./rightearbottom.md)
   A joint name that represents the bottom of the right ear.
 
 

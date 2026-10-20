@@ -1,7 +1,8 @@
 # conversationUUIDToMergeWith
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the second conversation that will merge with the first conversation.
 

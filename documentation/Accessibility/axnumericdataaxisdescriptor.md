@@ -1,7 +1,8 @@
 # AXNumericDataAxisDescriptor
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an axis of numerical data.
 
@@ -20,47 +21,52 @@ An object that represents an axis of numerical data.
 class AXNumericDataAxisDescriptor
 ```
 
+```objc
+@interface AXNumericDataAxisDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating a numeric data axis
-- [convenience init(title: String, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](axnumericdataaxisdescriptor/init(title:range:gridlinepositions:valuedescriptionprovider:).md)
+- [convenience init(title: String, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](./axnumericdataaxisdescriptor/init%28title,range,gridlinepositions,valuedescriptionprovider%29.md)
   Creates a numeric data axis with the specified title, range, gridline positions, and value description provider closure.
-- [convenience init(attributedTitle: NSAttributedString, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](axnumericdataaxisdescriptor/init(attributedtitle:range:gridlinepositions:valuedescriptionprovider:).md)
+- [convenience init(attributedTitle: NSAttributedString, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](./axnumericdataaxisdescriptor/init%28attributedtitle,range,gridlinepositions,valuedescriptionprovider%29.md)
   Creates a numeric data axis with the specified attributed title, range, gridline positions, and value description provider closure.
 ### Specifying the value description
-- [var valueDescriptionProvider: (Double) -> String](axnumericdataaxisdescriptor/valuedescriptionprovider.md)
+- [var valueDescriptionProvider: (Double) -> String](./axnumericdataaxisdescriptor/valuedescriptionprovider.md)
   A description to speak for a particular data value on the axis.
 ### Configuring the axis scale
-- [var scaleType: AXNumericDataAxisDescriptor.ScaleType](axnumericdataaxisdescriptor/scaletype-swift.property.md)
+- [var scaleType: AXNumericDataAxisDescriptor.ScaleType](./axnumericdataaxisdescriptor/scaletype-swift.property.md)
   The scale for the axis.
-- [AXNumericDataAxisDescriptor.ScaleType](axnumericdataaxisdescriptor/scaletype-swift.enum.md)
+- [AXNumericDataAxisDescriptor.ScaleType](./axnumericdataaxisdescriptor/scaletype-swift.enum.md)
   Constants that describe the scale of a numeric axis.
 ### Configuring the axis range
-- [var range: ClosedRange<Double>](axnumericdataaxisdescriptor/range.md)
+- [var range: ClosedRange<Double>](./axnumericdataaxisdescriptor/range.md)
   A range that defines the minimum and maximum displayable values for the axis.
 ### Configuring the gridlines
-- [var gridlinePositions: [Double]](axnumericdataaxisdescriptor/gridlinepositions-5cfmw.md)
+- [var gridlinePositions: [Double]](./axnumericdataaxisdescriptor/gridlinepositions-5cfmw.md)
   The positions of the gridlines along the axis.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [AXDataAxisDescriptor](axdataaxisdescriptor.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AXDataAxisDescriptor](./axdataaxisdescriptor.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol AXDataAxisDescriptor](axdataaxisdescriptor.md)
+### Axis representation
+- [protocol AXDataAxisDescriptor](./axdataaxisdescriptor.md)
   The basic interface for a data axis in a chart.
-- [class AXCategoricalDataAxisDescriptor](axcategoricaldataaxisdescriptor.md)
+- [class AXCategoricalDataAxisDescriptor](./axcategoricaldataaxisdescriptor.md)
   An object that represents an axis of categorical data.
 
 

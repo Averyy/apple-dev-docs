@@ -1,7 +1,8 @@
 # kAXGrowAreaRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A grow control.
 
@@ -12,6 +13,10 @@ A grow control.
 
 ```swift
 var kAXGrowAreaRole: String { get }
+```
+
+```c
+#define kAXGrowAreaRole
 ```
 
 

@@ -1,7 +1,8 @@
 # empty()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an empty tile that erases the existing tile at that location on a tile map.
 
@@ -18,6 +19,10 @@ Creates an empty tile that erases the existing tile at that location on a tile m
 
 ```swift
 class func empty() -> Self
+```
+
+```objc
++ (instancetype) emptyTileGroup;
 ```
 
 

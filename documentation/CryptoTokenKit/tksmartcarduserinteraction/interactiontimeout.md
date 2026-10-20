@@ -1,7 +1,8 @@
 # interactionTimeout
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timeout, in seconds, after the first key stroke. If set to `0`, the reader-defined default timeout is used. `0` by default.
 
@@ -20,9 +21,14 @@ The timeout, in seconds, after the first key stroke. If set to `0`, the reader-d
 var interactionTimeout: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval interactionTimeout;
+```
+
 ## See Also
 
-- [var initialTimeout: TimeInterval](tksmartcarduserinteraction/initialtimeout.md)
+### Configuring Timeout
+- [var initialTimeout: TimeInterval](./initialtimeout.md)
   The timeout, in seconds, for initial interaction. If set to `0`, the reader-defined default timeout is used. `0` by default.
 
 

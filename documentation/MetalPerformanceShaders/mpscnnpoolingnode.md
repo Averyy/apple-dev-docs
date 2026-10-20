@@ -1,7 +1,8 @@
 # MPSCNNPoolingNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a MPS CNN pooling kernel.
 
@@ -19,53 +20,58 @@ A representation of a MPS CNN pooling kernel.
 class MPSCNNPoolingNode
 ```
 
+```objc
+@interface MPSCNNPoolingNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, filterSize: Int)](mpscnnpoolingnode/init(source:filtersize:).md)
-- [init(source: MPSNNImageNode, filterSize: Int, stride: Int)](mpscnnpoolingnode/init(source:filtersize:stride:).md)
-- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingnode/init(source:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
+- [init(source: MPSNNImageNode, filterSize: Int)](./mpscnnpoolingnode/init%28source,filtersize%29.md)
+- [init(source: MPSNNImageNode, filterSize: Int, stride: Int)](./mpscnnpoolingnode/init%28source,filtersize,stride%29.md)
+- [init(source: MPSNNImageNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](./mpscnnpoolingnode/init%28source,kernelwidth,kernelheight,strideinpixelsx,strideinpixelsy%29.md)
 ### Instance Properties
-- [var kernelHeight: Int](mpscnnpoolingnode/kernelheight.md)
-- [var kernelWidth: Int](mpscnnpoolingnode/kernelwidth.md)
-- [var strideInPixelsX: Int](mpscnnpoolingnode/strideinpixelsx.md)
-- [var strideInPixelsY: Int](mpscnnpoolingnode/strideinpixelsy.md)
+- [var kernelHeight: Int](./mpscnnpoolingnode/kernelheight.md)
+- [var kernelWidth: Int](./mpscnnpoolingnode/kernelwidth.md)
+- [var strideInPixelsX: Int](./mpscnnpoolingnode/strideinpixelsx.md)
+- [var strideInPixelsY: Int](./mpscnnpoolingnode/strideinpixelsy.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Inherited By
-- [MPSCNNPoolingAverageNode](mpscnnpoolingaveragenode.md)
-- [MPSCNNPoolingL2NormNode](mpscnnpoolingl2normnode.md)
-- [MPSCNNPoolingMaxNode](mpscnnpoolingmaxnode.md)
+- [MPSCNNPoolingAverageNode](./mpscnnpoolingaveragenode.md)
+- [MPSCNNPoolingL2NormNode](./mpscnnpoolingl2normnode.md)
+- [MPSCNNPoolingMaxNode](./mpscnnpoolingmaxnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNPoolingAverageNode](mpscnnpoolingaveragenode.md)
+### Pooling Layer Nodes
+- [class MPSCNNPoolingAverageNode](./mpscnnpoolingaveragenode.md)
   A representation of an average pooling filter.
-- [class MPSCNNDilatedPoolingMaxNode](mpscnndilatedpoolingmaxnode.md)
+- [class MPSCNNDilatedPoolingMaxNode](./mpscnndilatedpoolingmaxnode.md)
   A representation of a dilated max pooling filter.
-- [class MPSCNNPoolingL2NormNode](mpscnnpoolingl2normnode.md)
+- [class MPSCNNPoolingL2NormNode](./mpscnnpoolingl2normnode.md)
   A representation of a L2-norm pooling filter.
-- [class MPSCNNPoolingMaxNode](mpscnnpoolingmaxnode.md)
+- [class MPSCNNPoolingMaxNode](./mpscnnpoolingmaxnode.md)
   A representation of a max pooling filter.
-- [class MPSCNNDilatedPoolingMaxGradientNode](mpscnndilatedpoolingmaxgradientnode.md)
+- [class MPSCNNDilatedPoolingMaxGradientNode](./mpscnndilatedpoolingmaxgradientnode.md)
   A representation of a gradient dilated max pooling filter.
-- [class MPSCNNPoolingAverageGradientNode](mpscnnpoolingaveragegradientnode.md)
+- [class MPSCNNPoolingAverageGradientNode](./mpscnnpoolingaveragegradientnode.md)
   A representation of a gradient average pooling filter.
-- [class MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+- [class MPSCNNPoolingGradientNode](./mpscnnpoolinggradientnode.md)
   A representation of a gradient pooling kernel.
-- [class MPSCNNPoolingL2NormGradientNode](mpscnnpoolingl2normgradientnode.md)
+- [class MPSCNNPoolingL2NormGradientNode](./mpscnnpoolingl2normgradientnode.md)
   A representation of a gradient L2-norm pooling filter.
-- [class MPSCNNPoolingMaxGradientNode](mpscnnpoolingmaxgradientnode.md)
+- [class MPSCNNPoolingMaxGradientNode](./mpscnnpoolingmaxgradientnode.md)
   A representation of a gradient max pooling filter.
 
 

@@ -1,7 +1,8 @@
 # token
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque representation of a specific web domain.
 
@@ -22,7 +23,8 @@ Use a token to share information about a web domain with other devices in the sa
 
 ## See Also
 
-- [let domain: String?](webdomain/domain.md)
+### Identifying a web domain
+- [let domain: String?](./domain.md)
   A string that identifies a specific web domain.
 
 

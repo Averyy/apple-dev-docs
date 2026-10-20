@@ -1,7 +1,8 @@
 # kSpeechDictionaryPronunciations
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The set of custom pronunciations.
 
@@ -12,6 +13,10 @@ The set of custom pronunciations.
 
 ```swift
 let kSpeechDictionaryPronunciations: CFString
+```
+
+```c
+const CFStringRef kSpeechDictionaryPronunciations;
 ```
 
 

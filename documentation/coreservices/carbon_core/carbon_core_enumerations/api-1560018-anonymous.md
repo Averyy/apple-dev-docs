@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kLocalesBufferTooSmallErr: Int](klocalesbuffertoosmallerr.md)
-- [var kLocalesDefaultDisplayStatus: Int](klocalesdefaultdisplaystatus.md)
-- [var kLocalesTableFormatErr: Int](klocalestableformaterr.md)
+- [var kLocalesBufferTooSmallErr: Int](../../klocalesbuffertoosmallerr.md)
+- [var kLocalesDefaultDisplayStatus: Int](../../klocalesdefaultdisplaystatus.md)
+- [var kLocalesTableFormatErr: Int](../../klocalestableformaterr.md)
 
 
 ---

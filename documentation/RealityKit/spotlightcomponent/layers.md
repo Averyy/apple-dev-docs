@@ -1,7 +1,8 @@
 # layers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layers this light illuminates.
 
@@ -21,9 +22,9 @@ var layers: RenderLayer.Set { get set }
 
 #### Discussion
 
-A spotlight illuminates an entity when the layers of the entity’s [`RenderLayerComponent`](renderlayercomponent.md) intersect with this set. Entities without a [`RenderLayerComponent`](renderlayercomponent.md) belong to [`defaultLayer`](renderlayer/defaultlayer.md), which is the only member of `layers` by default.
+A spotlight illuminates an entity when the layers of the entity’s [`RenderLayerComponent`](../renderlayercomponent.md) intersect with this set. Entities without a [`RenderLayerComponent`](../renderlayercomponent.md) belong to [`defaultLayer`](../renderlayer/defaultlayer.md), which is the only member of `layers` by default.
 
-For an example of layer-based light linking, see [`layers`](directionallightcomponent/layers.md).
+For an example of layer-based light linking, see [`layers`](../directionallightcomponent/layers.md).
 
 Lights can be restricted by layer on devices with Apple6 GPU family feature support.
 

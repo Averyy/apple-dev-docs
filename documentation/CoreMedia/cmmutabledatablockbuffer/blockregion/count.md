@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of bytes in the block region
 

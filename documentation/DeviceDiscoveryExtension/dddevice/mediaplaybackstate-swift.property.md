@@ -1,21 +1,28 @@
 # mediaPlaybackState
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A playback status for the device’s current media.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS ?+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.0
+- iPadOS 16.0+ - Deprecated in 27.0
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- macOS
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Please use MediaDeviceExtension
 
 ## Declaration
 
 ```swift
 var mediaPlaybackState: DDDevice.MediaPlaybackState { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) DDDeviceMediaPlaybackState mediaPlaybackState;
 ```
 
 #### Discussion
@@ -24,11 +31,12 @@ Your app’s extension sets a value for this property to communicate to the syst
 
 ## See Also
 
-- [var mediaContentTitle: String?](dddevice/mediacontenttitle.md)
+### Communicating device content and playback status
+- [var mediaContentTitle: String?](./mediacontenttitle.md)
   A title for the current media that the device plays.
-- [var mediaContentSubtitle: String?](dddevice/mediacontentsubtitle.md)
+- [var mediaContentSubtitle: String?](./mediacontentsubtitle.md)
   A subtitle for the current media that the device plays.
-- [DDDevice.MediaPlaybackState](dddevice/mediaplaybackstate-swift.enum.md)
+- [DDDevice.MediaPlaybackState](./mediaplaybackstate-swift.enum.md)
   States that indicate the status of a device’s media playback.
 
 

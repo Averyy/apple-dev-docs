@@ -1,7 +1,8 @@
 # vImageBuffer_InitWithCGImage(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Initializes a vImage buffer with the contents of a Core Graphics image.
 
@@ -20,20 +21,24 @@ Initializes a vImage buffer with the contents of a Core Graphics image.
 func vImageBuffer_InitWithCGImage(_ buf: UnsafeMutablePointer<vImage_Buffer>, _ format: UnsafeMutablePointer<vImage_CGImageFormat>, _ backgroundColor: UnsafePointer<CGFloat>!, _ image: CGImage, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageBuffer_InitWithCGImage(vImage_Buffer *buf, vImage_CGImageFormat *format, const CGFloat *backgroundColor, CGImageRef image, vImage_Flags flags);
+```
+
 ## Mentions
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+- [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-The following code shows a passthrough function that accepts a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image, populates a vImage buffer from the image, and generates a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image from the buffer.
+The following code shows a passthrough function that accepts a [`CGImage`](../CoreGraphics/cgimage.md) image, populates a vImage buffer from the image, and generates a [`CGImage`](../CoreGraphics/cgimage.md) image from the buffer.
 
-In this example, the call to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) and the [`vImage_Buffer`](vimage_buffer.md) variables with the properties of the source image:
+In this example, the call to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) populates the [`vImage_CGImageFormat`](./vimage_cgimageformat.md) and the [`vImage_Buffer`](./vimage_buffer.md) variables with the properties of the source image:
 
 **Swift**:
 
@@ -98,7 +103,7 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 }
 ```
 
-Pass a fully initialized [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) converts the source [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
+Pass a fully initialized [`vImage_CGImageFormat`](./vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) converts the source [`CGImage`](../CoreGraphics/cgimage.md) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
 
 **Swift**:
 
@@ -178,15 +183,15 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 }
 ```
 
-> ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [`any-to-any conversion`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/functions-that-perform-any-to-any-conversion/) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
+> ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [any-to-any conversion](./functions-that-perform-any-to-any-conversion.md) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
 
 ## Parameters
 
 - `buf`: The destination vImage buffer. On output, an initialized buffer with all fields populated.
-- `format`: A [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure. Pass an empty structure to specify that the function populates the format with the properties of the Core Graphics image. Pass a populated structure to specify that the function converts the Core Graphics image to the format.
+- `format`: A [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure. Pass an empty structure to specify that the function populates the format with the properties of the Core Graphics image. Pass a populated structure to specify that the function converts the Core Graphics image to the format.
 - `backgroundColor`: If the source image contains alpha information and the format doesn’t contain alpha information, this function flattens the source image against this parameter.
 - `image`: The source Core Graphics image.
-- `flags`: The options to use when performing the operation. Pass [`kvImageNoAllocate`](kvimagenoallocate.md) if the destination buffer references existing data; otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. Pass [`kvImageNoAllocate`](./kvimagenoallocate.md) if the destination buffer references existing data; otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 
 ---

@@ -1,17 +1,20 @@
 # actionSheet(item:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents an action sheet using the given item as a data source for the sheet’s content.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)`](./confirmationdialog%28_,ispresented,titlevisibility,presenting,actions,message%29-8y541.md) instead.
 
 ## Declaration
 
@@ -58,20 +61,21 @@ struct ConfirmFileImport: View {
 }
 ```
 
-![A screenshot showing an action sheet populated using a custom data source that describes a file and file format.](/images/com.apple.SwiftUI/SwiftUI-View-ActionSheetItemContent@2x.png)
+![A screenshot showing an action sheet populated using a custom data source that describes a file and file format.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-ActionSheetItemContent@2x.png)
 
 ## Parameters
 
 - `item`: A binding to an optional source of truth for the action sheet. When `item` is non-`nil`, the system passes the contents to the modifier’s closure. You use this content to populate the fields of an action sheet that you create that the system displays to the user. If `item` changes, the system dismisses the currently displayed action sheet and replaces it with a new one using the same process.
-- `content`: A closure returning the [`ActionSheet`](actionsheet.md) you create.
+- `content`: A closure returning the [`ActionSheet`](../actionsheet.md) you create.
 
 ## See Also
 
-- [func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View](view/actionsheet(ispresented:content:).md)
+### View presentation modifiers
+- [func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View](./actionsheet%28ispresented,content%29.md)
   Presents an action sheet when a given condition is true.
-- [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](view/alert(ispresented:content:).md)
+- [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](./alert%28ispresented,content%29.md)
   Presents an alert to the user.
-- [func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View](view/alert(item:content:).md)
+- [func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View](./alert%28item,content%29.md)
   Presents an alert to the user.
 
 

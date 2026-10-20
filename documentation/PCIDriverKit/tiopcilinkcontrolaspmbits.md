@@ -1,32 +1,34 @@
 # tIOPCILinkControlASPMBits
 
 **Framework**: PCIDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 enum tIOPCILinkControlASPMBits : unsigned int;
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [kIOPCILinkControlASPMBitsDisabled](tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsdisabled.md)
-- [kIOPCILinkControlASPMBitsL0s](tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0s.md)
-- [kIOPCILinkControlASPMBitsL0sL1](tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0sl1.md)
-- [kIOPCILinkControlASPMBitsL1](tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl1.md)
+- [kIOPCILinkControlASPMBitsDisabled](./tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsdisabled.md)
+- [kIOPCILinkControlASPMBitsL0s](./tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0s.md)
+- [kIOPCILinkControlASPMBitsL0sL1](./tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0sl1.md)
+- [kIOPCILinkControlASPMBitsL1](./tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl1.md)
 
 ## See Also
 
-- [IOPCIBARType](iopcibartype.md)
-- [IOPCILinkSpeed](iopcilinkspeed.md)
-- [IOPCIMemoryRange](iopcimemoryrange.md)
-- [IOPCISaveDeviceStateOptions](iopcisavedevicestateoptions.md)
+### Data Types
+- [IOPCIBARType](./iopcibartype.md)
+- [IOPCILinkSpeed](./iopcilinkspeed.md)
+- [IOPCIMemoryRange](./iopcimemoryrange.md)
+- [IOPCISaveDeviceStateOptions](./iopcisavedevicestateoptions.md)
 
 
 ---

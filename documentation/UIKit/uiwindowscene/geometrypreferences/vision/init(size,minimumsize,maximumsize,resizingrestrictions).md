@@ -1,7 +1,8 @@
 # init(size:minimumSize:maximumSize:resizingRestrictions:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 1.0+

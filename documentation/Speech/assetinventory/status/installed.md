@@ -1,7 +1,8 @@
 # AssetInventory.Status.installed
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The necessary assets have been downloaded and installed on the device, and the module is ready for use.
 
@@ -21,11 +22,12 @@ case installed
 
 ## See Also
 
-- [AssetInventory.Status.downloading](assetinventory/status/downloading.md)
+### Asset status
+- [AssetInventory.Status.downloading](./downloading.md)
   The system is currently downloading the assets, or waiting for conditions to improve and continue downloading later.
-- [AssetInventory.Status.supported](assetinventory/status/supported.md)
+- [AssetInventory.Status.supported](./supported.md)
   The module can work with its configuration, but the assets will need to be downloaded.
-- [AssetInventory.Status.unsupported](assetinventory/status/unsupported.md)
+- [AssetInventory.Status.unsupported](./unsupported.md)
   The module will not work with its configuration.
 
 

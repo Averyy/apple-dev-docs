@@ -1,7 +1,8 @@
 # columnName
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the column with the error.
 
@@ -22,11 +23,12 @@ var columnName: String
 
 ## See Also
 
-- [var debugDescription: String](columnencodingerror/debugdescription.md)
+### Getting Error Information
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the column encoding error suitable for debugging.
-- [var encodingError: EncodingError](columnencodingerror/encodingerror.md)
+- [var encodingError: EncodingError](./encodingerror.md)
   The underlying encoding error.
-- [var rowIndex: Int](columnencodingerror/rowindex.md)
+- [var rowIndex: Int](./rowindex.md)
   The index of the column’s element with the error.
 
 

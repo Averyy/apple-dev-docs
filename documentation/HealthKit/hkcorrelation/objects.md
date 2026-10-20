@@ -1,7 +1,8 @@
 # objects
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of sample objects that make up the correlation.
 
@@ -19,15 +20,20 @@ The set of sample objects that make up the correlation.
 var objects: Set<HKSample> { get }
 ```
 
+```objc
+@property (copy, readonly) NSSet<__kindof HKSample *> * objects;
+```
+
 #### Discussion
 
 This property contains the quantity and category samples that are grouped into this correlation. Blood pressure correlations always include two quantity samples that represent the systolic and diastolic values. In contrast, food correlations can contain a wide range of dietary information about the food, including information about the fat, protein, carbohydrates, energy, and vitamins consumed.
 
 ## See Also
 
-- [var correlationType: HKCorrelationType](hkcorrelation/correlationtype.md)
+### Getting Correlation Data
+- [var correlationType: HKCorrelationType](./correlationtype.md)
   The type for this correlation.
-- [func objects(for: HKObjectType) -> Set<HKSample>](hkcorrelation/objects(for:).md)
+- [func objects(for: HKObjectType) -> Set<HKSample>](./objects%28for%29.md)
   Returns a set containing all the objects of the specified type in the correlation.
 
 

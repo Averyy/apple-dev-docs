@@ -1,7 +1,8 @@
 # ASUserDetectionStatus
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the real user indicator.
 
@@ -20,31 +21,36 @@ Possible values for the real user indicator.
 enum ASUserDetectionStatus
 ```
 
+```c
+enum ASUserDetectionStatus : NSInteger;
+```
+
 ## Topics
 
 ### User Status
-- [ASUserDetectionStatus.likelyReal](asuserdetectionstatus/likelyreal.md)
+- [ASUserDetectionStatus.likelyReal](./asuserdetectionstatus/likelyreal.md)
   The user appears to be a real person.
-- [ASUserDetectionStatus.unknown](asuserdetectionstatus/unknown.md)
+- [ASUserDetectionStatus.unknown](./asuserdetectionstatus/unknown.md)
   The system hasn’t determined whether the user might be a real person.
-- [ASUserDetectionStatus.unsupported](asuserdetectionstatus/unsupported.md)
+- [ASUserDetectionStatus.unsupported](./asuserdetectionstatus/unsupported.md)
   The system can’t determine this user’s status as a real person.
 ### Initializers
-- [init?(rawValue: Int)](asuserdetectionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./asuserdetectionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var realUserStatus: ASUserDetectionStatus](asauthorizationappleidcredential/realuserstatus.md)
+### Detecting User Characteristics
+- [var realUserStatus: ASUserDetectionStatus](./asauthorizationappleidcredential/realuserstatus.md)
   A value that indicates whether the user appears to be a real person.
 
 

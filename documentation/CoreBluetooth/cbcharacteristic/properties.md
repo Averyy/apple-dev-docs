@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties of the characteristic.
 
@@ -20,21 +21,26 @@ The properties of the characteristic.
 var properties: CBCharacteristicProperties { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CBCharacteristicProperties properties;
+```
+
 #### Discussion
 
-The properties of a characteristic determine the access to and use of the characteristic’s value and descriptors. For a list of the possible values representing the properties of a characteristic, see [`CBCharacteristicProperties`](cbcharacteristicproperties.md).
+The properties of a characteristic determine the access to and use of the characteristic’s value and descriptors. For a list of the possible values representing the properties of a characteristic, see [`CBCharacteristicProperties`](../cbcharacteristicproperties.md).
 
 ## See Also
 
-- [var value: Data?](cbcharacteristic/value.md)
+### Accessing Characteristic Data
+- [var value: Data?](./value.md)
   The value of the characteristic.
-- [var descriptors: [CBDescriptor]?](cbcharacteristic/descriptors.md)
+- [var descriptors: [CBDescriptor]?](./descriptors.md)
   A list of the descriptors discovered in this characteristic.
-- [struct CBCharacteristicProperties](cbcharacteristicproperties.md)
+- [struct CBCharacteristicProperties](../cbcharacteristicproperties.md)
   Values that represent the possible properties of a characteristic.
-- [var isNotifying: Bool](cbcharacteristic/isnotifying.md)
+- [var isNotifying: Bool](./isnotifying.md)
   A Boolean value that indicates whether the characteristic is currently notifying a subscribed central of its value.
-- [var isBroadcasted: Bool](cbcharacteristic/isbroadcasted.md)
+- [var isBroadcasted: Bool](./isbroadcasted.md)
   A Boolean value that indicates whether the characteristic the service broadcasts this characteristic.
 
 

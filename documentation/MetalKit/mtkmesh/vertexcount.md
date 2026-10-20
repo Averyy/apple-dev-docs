@@ -1,7 +1,8 @@
 # vertexCount
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of vertices in the vertex buffers.
 
@@ -19,11 +20,16 @@ The number of vertices in the vertex buffers.
 var vertexCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger vertexCount;
+```
+
 ## See Also
 
-- [var vertexBuffers: [MTKMeshBuffer]](mtkmesh/vertexbuffers.md)
+### Vertex Properties
+- [var vertexBuffers: [MTKMeshBuffer]](./vertexbuffers.md)
   An array of buffers in which mesh vertex data resides.
-- [var vertexDescriptor: MDLVertexDescriptor](mtkmesh/vertexdescriptor.md)
+- [var vertexDescriptor: MDLVertexDescriptor](./vertexdescriptor.md)
   A Model I/O vertex descriptor specifying the data layout in the vertex buffers.
 
 

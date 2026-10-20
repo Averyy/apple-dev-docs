@@ -1,7 +1,8 @@
 # startWirelessControllerDiscovery(completionHandler:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Starts searching for nearby wireless controllers.
 
@@ -16,14 +17,22 @@ Starts searching for nearby wireless controllers.
 ## Declaration
 
 ```swift
+class func startWirelessControllerDiscovery(completionHandler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 class func startWirelessControllerDiscovery() async
+```
+
+```objc
++ (void) startWirelessControllerDiscoveryWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
 
-Call this method when the user chooses to discover wireless controllers from your interface. The framework searches asynchronously for discoverable wireless controllers. The framework posts the [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidconnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) notification when it discovers new controllers. Implement the completion handler you pass to this method to handle when the framework finishes discovering controllers or when it times out.
+Call this method when the user chooses to discover wireless controllers from your interface. The framework searches asynchronously for discoverable wireless controllers. The framework posts the [`GCControllerDidConnect`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) (Swift) or [`GCControllerDidConnectNotification`](../gccontrollerdidconnectnotification.md) (Objective-C) notification when it discovers new controllers. Implement the completion handler you pass to this method to handle when the framework finishes discovering controllers or when it times out.
 
-If you call the [`startWirelessControllerDiscovery(completionHandler:)`](gccontroller/startwirelesscontrollerdiscovery(completionhandler:).md) method multiple times during discovery, the framework only calls the last completion handler you pass to this method.
+If you call the [`startWirelessControllerDiscovery(completionHandler:)`](./startwirelesscontrollerdiscovery%28completionhandler%29.md) method multiple times during discovery, the framework only calls the last completion handler you pass to this method.
 
 ## Parameters
 
@@ -31,13 +40,14 @@ If you call the [`startWirelessControllerDiscovery(completionHandler:)`](gccontr
 
 ## See Also
 
-- [class func controllers() -> [GCController]](gccontroller/controllers.md)
+### Discovering controllers
+- [class func controllers() -> [GCController]](./controllers%28%29.md)
   Returns the connected controllers for the device.
-- [class func stopWirelessControllerDiscovery()](gccontroller/stopwirelesscontrollerdiscovery.md)
+- [class func stopWirelessControllerDiscovery()](./stopwirelesscontrollerdiscovery%28%29.md)
   Stops searching for nearby wireless controllers.
-- [static let GCControllerDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md)
+- [static let GCControllerDidConnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md)
   A notification that posts after a controller connects to the device.
-- [static let GCControllerDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
+- [static let GCControllerDidDisconnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
   A notification that posts after a controller disconnects from the device.
 
 

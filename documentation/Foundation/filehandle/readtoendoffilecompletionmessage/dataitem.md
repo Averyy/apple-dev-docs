@@ -1,7 +1,8 @@
 # dataItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A result that contains either the data read or an error.
 

@@ -1,7 +1,8 @@
 # ctl_unit
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The kernel control unit.
 
@@ -10,13 +11,14 @@ The kernel control unit.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t ctl_unit;
 ```
 
 ## See Also
 
-- [ctl_id](ctl_event_data/1809197-ctl_id.md)
+### Fields
+- [ctl_id](./api-1809197-ctl_id.md)
   The kernel control id.
 
 

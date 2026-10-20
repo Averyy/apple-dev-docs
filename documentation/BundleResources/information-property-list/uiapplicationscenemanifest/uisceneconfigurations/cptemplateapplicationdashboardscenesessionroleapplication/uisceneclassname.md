@@ -1,7 +1,8 @@
 # UISceneClassName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the scene class you want UIKit to instantiate.
 
@@ -9,17 +10,23 @@ The name of the scene class you want UIKit to instantiate.
 - iOS 13.4+
 - iPadOS 13.4+
 
+## Details
 
+- **Name**: `UISceneClassName` (Class Name)
+- **Type**: string
 
-**Type**: string
+## Possible Values
+
+- `CPTemplateApplicationScene`
 
 #### Discussion
 
-CarPlay doesn’t support custom classes. Omit this key or specify [`CPTemplateApplicationDashboardScene`](https://developer.apple.com/documentation/carplay/cptemplateapplicationdashboardscene) for scenes meant for a CarPlay Dashboard.
+CarPlay doesn’t support custom classes. Omit this key or specify [`CPTemplateApplicationDashboardScene`](../../../../../CarPlay/cptemplateapplicationdashboardscene.md) for scenes meant for a CarPlay Dashboard.
 
 ## See Also
 
-- [UISceneDelegateClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication/uiscenedelegateclassname.md)
+### Scene objects
+- [UISceneDelegateClassName](./uiscenedelegateclassname.md)
   The name of the app-specific class you want UIKit to instantiate and use as the delegate for your app’s dashboard scene.
 
 

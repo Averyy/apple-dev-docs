@@ -2,22 +2,27 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The parametric time of the transition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var time: Float { get set }
+```
+
+```objc
+@property (nonatomic) float time;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ This value drives the transition from start, at time 0, to end, at time 1.
 
 ## See Also
 
-- [var inputImage: CIImage?](citransitionfilter/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var targetImage: CIImage?](citransitionfilter/targetimage.md)
+- [var targetImage: CIImage?](./targetimage.md)
   The target image for a transition.
 
 

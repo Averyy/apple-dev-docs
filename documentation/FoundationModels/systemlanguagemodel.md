@@ -1,7 +1,8 @@
 # SystemLanguageModel
 
 **Framework**: Foundation Models  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An on-device Apple Foundation Model capable of text generation tasks.
 
@@ -20,23 +21,23 @@ final class SystemLanguageModel
 
 ## Mentions
 
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
+- [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md)
+- [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
 
 #### Overview
 
-The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md). Apple periodically updates `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently, there are 3 model versions that align with:
+The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](./systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](./systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](./systemlanguagemodel/usecase/contenttagging.md). Apple periodically updates `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently, there are 3 model versions that align with:
 
 - iOS, iPadOS, macOS, and visionOS **26.0 - 26.3**
 - iOS, iPadOS, macOS, visionOS **26.4**
 - iOS, iPadOS, macOS, and visionOS **27.0**
 
-For more information about how model versions affect your app, see [`Updating prompts for new model versions`](updating-prompts-for-new-model-versions.md).
+For more information about how model versions affect your app, see [Updating prompts for new model versions](./updating-prompts-for-new-model-versions.md).
 
-Before you use the model, you need to verify its availability. Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
+Before you use the model, you need to verify its availability. Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [Apple Intelligence](https://www.apple.com/apple-intelligence/).
 
-Use [`SystemLanguageModel.Availability`](systemlanguagemodel/availability-swift.enum.md) to change what your app shows to people based on the availability condition:
+Use [`SystemLanguageModel.Availability`](./systemlanguagemodel/availability-swift.enum.md) to change what your app shows to people based on the availability condition:
 
 ```swift
 struct GenerativeView: View {
@@ -62,60 +63,61 @@ struct GenerativeView: View {
 ## Topics
 
 ### Getting the default model
-- [static var `default`: SystemLanguageModel](systemlanguagemodel/default.md)
+- [static var `default`: SystemLanguageModel](./systemlanguagemodel/default.md)
   The base version of the model.
 ### Creating a model for a use case
-- [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](systemlanguagemodel/init(usecase:guardrails:).md)
+- [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](./systemlanguagemodel/init%28usecase,guardrails%29.md)
   Creates a system language model instance for a specific use case.
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
+- [SystemLanguageModel.UseCase](./systemlanguagemodel/usecase.md)
   A type that represents the use case for prompting.
-- [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
+- [SystemLanguageModel.Guardrails](./systemlanguagemodel/guardrails.md)
   A set of controls that flag sensitive content from model input and output.
 ### Accessing the model variant
-- [var variant: SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.property.md)
+- [var variant: SystemLanguageModel.Variant](./systemlanguagemodel/variant-swift.property.md)
   The variant of the on-device model backing this instance.
-- [SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.struct.md)
+- [SystemLanguageModel.Variant](./systemlanguagemodel/variant-swift.struct.md)
   The variant of an on-device model.
 ### Checking model availability
-- [var isAvailable: Bool](systemlanguagemodel/isavailable.md)
+- [var isAvailable: Bool](./systemlanguagemodel/isavailable.md)
   A Boolean value that indicates whether the system is entirely ready.
-- [var availability: SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.property.md)
+- [var availability: SystemLanguageModel.Availability](./systemlanguagemodel/availability-swift.property.md)
   The availability of the language model.
-- [SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.enum.md)
+- [SystemLanguageModel.Availability](./systemlanguagemodel/availability-swift.enum.md)
   The availability status for a specific system language model.
 ### Inspecting model capabilities
-- [var contextSize: Int](systemlanguagemodel/contextsize.md)
+- [var contextSize: Int](./systemlanguagemodel/contextsize.md)
   The maximum context size in tokens that the model supports.
-- [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
+- [var supportedLanguages: Set<Locale.Language>](./systemlanguagemodel/supportedlanguages.md)
   Languages that the model supports.
-- [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
+- [func supportsLocale(Locale) -> Bool](./systemlanguagemodel/supportslocale%28_%29.md)
   Returns a Boolean value that indicates whether the given locale is supported by the model.
 ### Counting tokens
-- [func tokenCount(for:)](systemlanguagemodel/tokencount(for:).md)
+- [func tokenCount(for:)](./systemlanguagemodel/tokencount%28for%29.md)
   Returns the token count for the specified instructions.
 ### Handling a language model error
-- [SystemLanguageModel.Error](systemlanguagemodel/error.md)
+- [SystemLanguageModel.Error](./systemlanguagemodel/error.md)
   An error specific to the on-device system language model.
 ### Default Implementations
-- [LanguageModel Implementations](systemlanguagemodel/languagemodel-implementations.md)
+- [LanguageModel Implementations](./systemlanguagemodel/languagemodel-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [LanguageModel](languagemodel.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [LanguageModel](./languagemodel.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
+### System language model
+- [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md)
   Generate content in the language people prefer when they interact with your app.
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+- [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md)
   Identify topics, actions, objects, and emotions in input text with a content tagging model.
-- [enum LanguageModelError](languagemodelerror.md)
+- [enum LanguageModelError](./languagemodelerror.md)
   A failure that may occur while generating a response when using any language model.
 
 

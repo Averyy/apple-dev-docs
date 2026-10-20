@@ -1,7 +1,8 @@
 # LengthFormatter.Unit.millimeter
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The millimeter unit.
 
@@ -20,21 +21,26 @@ The millimeter unit.
 case millimeter
 ```
 
+```c
+NSLengthFormatterUnitMillimeter
+```
+
 ## See Also
 
-- [LengthFormatter.Unit.centimeter](lengthformatter/unit/centimeter.md)
+### Constants
+- [LengthFormatter.Unit.centimeter](./centimeter.md)
   The centimeter unit.
-- [LengthFormatter.Unit.meter](lengthformatter/unit/meter.md)
+- [LengthFormatter.Unit.meter](./meter.md)
   The meter unit.
-- [LengthFormatter.Unit.kilometer](lengthformatter/unit/kilometer.md)
+- [LengthFormatter.Unit.kilometer](./kilometer.md)
   The kilometer unit.
-- [LengthFormatter.Unit.inch](lengthformatter/unit/inch.md)
+- [LengthFormatter.Unit.inch](./inch.md)
   The inch unit.
-- [LengthFormatter.Unit.foot](lengthformatter/unit/foot.md)
+- [LengthFormatter.Unit.foot](./foot.md)
   The foot unit.
-- [LengthFormatter.Unit.yard](lengthformatter/unit/yard.md)
+- [LengthFormatter.Unit.yard](./yard.md)
   The yard unit.
-- [LengthFormatter.Unit.mile](lengthformatter/unit/mile.md)
+- [LengthFormatter.Unit.mile](./mile.md)
   The mile unit.
 
 

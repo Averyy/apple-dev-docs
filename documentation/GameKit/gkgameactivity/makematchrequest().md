@@ -1,7 +1,8 @@
 # makeMatchRequest()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes a match request object with information from the activity, which you can use to find matches for the local player.
 
@@ -17,6 +18,10 @@ Makes a match request object with information from the activity, which you can u
 
 ```swift
 func makeMatchRequest() -> GKMatchRequest?
+```
+
+```objc
+- (GKMatchRequest *) makeMatchRequest;
 ```
 
 

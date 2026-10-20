@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func setDepthBias(_ depthBias: Float, slopeScale: Float, clamp: Float)
+```
+
+```objc
+- (void) setDepthBias:(float) depthBias slopeScale:(float) slopeScale clamp:(float) clamp;
 ```
 
 

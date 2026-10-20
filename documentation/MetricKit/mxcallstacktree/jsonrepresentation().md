@@ -1,21 +1,28 @@
 # jsonRepresentation()
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the contents of the stack tree in JSON format.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`CallStackTree`](../callstacktree.md) instead.
 
 ## Declaration
 
 ```swift
 func jsonRepresentation() -> Data
+```
+
+```objc
+- (NSData *) JSONRepresentation;
 ```
 
 #### Return Value
@@ -41,7 +48,7 @@ A call stack is a dictionary containing at most two keys:
 A stack frame is a dictionary containing up to six keys:
 
 - **`binaryName`**: The name of the binary associated with the stack frame.
-- **`binaryUUID`**: A unique ID a developer uses to symbolicate a stack frame. For more information, see [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report).
+- **`binaryUUID`**: A unique ID a developer uses to symbolicate a stack frame. For more information, see [Adding identifiable symbol names to a crash report](../../Xcode/adding-identifiable-symbol-names-to-a-crash-report.md).
 - **`address`**: The memory address of the stack frame.
 - **`offsetIntoBinaryTextSegment`**: The offset of the stack frame into the text segment of the binary.
 - **`sampleCount`**: For a CPU exception, the amount of time spent sampling the stack frame.

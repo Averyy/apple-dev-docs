@@ -1,7 +1,8 @@
 # AVDisplayManagerModeSwitchEnd
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the display manager posts when a display ends a mode switch.
 
@@ -16,9 +17,10 @@ static let AVDisplayManagerModeSwitchEnd: NSNotification.Name
 
 ## See Also
 
-- [static let AVDisplayManagerModeSwitchSettingsChanged: NSNotification.Name](nsnotification/name-swift.struct/avdisplaymanagermodeswitchsettingschanged.md)
+### AVKit
+- [static let AVDisplayManagerModeSwitchSettingsChanged: NSNotification.Name](./avdisplaymanagermodeswitchsettingschanged.md)
   A notification the display manager posts when a user changes their Match Content settings in the tvOS Settings app.
-- [static let AVDisplayManagerModeSwitchStart: NSNotification.Name](nsnotification/name-swift.struct/avdisplaymanagermodeswitchstart.md)
+- [static let AVDisplayManagerModeSwitchStart: NSNotification.Name](./avdisplaymanagermodeswitchstart.md)
   A notification the display manager posts when a display begins a mode switch.
 
 

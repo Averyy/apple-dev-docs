@@ -1,7 +1,8 @@
 # init(value:in:label:currentValueLabel:minimumValueLabel:maximumValueLabel:markedValueLabels:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gauge representing a value within a range.
 
@@ -32,13 +33,14 @@ init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ContentBuilder label: () -
 
 ## See Also
 
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label)](gauge/init(value:in:label:).md)
+### Creating a gauge
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label)](./init%28value,in,label%29.md)
   Creates a gauge showing a value within a range and describes the gauge’s purpose and current value.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](gauge/init(value:in:label:currentvaluelabel:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](./init%28value,in,label,currentvaluelabel%29.md)
   Creates a gauge showing a value within a range and that describes the gauge’s purpose and current value.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, markedValueLabels: () -> MarkedValueLabels)](gauge/init(value:in:label:currentvaluelabel:markedvaluelabels:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, markedValueLabels: () -> MarkedValueLabels)](./init%28value,in,label,currentvaluelabel,markedvaluelabels%29.md)
   Creates a gauge representing a value within a range.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel)](gauge/init(value:in:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel)](./init%28value,in,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel%29.md)
   Creates a gauge showing a value within a range and describes the gauge’s current, minimum, and maximum values.
 
 

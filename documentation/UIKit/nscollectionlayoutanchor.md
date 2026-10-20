@@ -1,7 +1,8 @@
 # NSCollectionLayoutAnchor
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines how to attach a supplementary item to an item in a collection view.
 
@@ -19,6 +20,10 @@ An object that defines how to attach a supplementary item to an item in a collec
 class NSCollectionLayoutAnchor
 ```
 
+```objc
+@interface NSCollectionLayoutAnchor : NSObject
+```
+
 #### Overview
 
 You use an anchor to attach a supplementary item to a specific item. An anchor contains information about where on the item your supplementary item is attached, including:
@@ -32,7 +37,7 @@ The leading and trailing edges for anchors differ in left-to-right versus right-
 
 The following diagram shows anchor placement for the specified edges in a left-to-right environment.
 
-![Diagram showing anchor positions. Top, bottom, leading, and trailing anchors are on the halfway point on their respective edges. The anchors defined by the edge combinations top and leading, top and trailing, bottom and leading, and bottom and trailing are in the corners between each of those sets of edges.](/images/com.apple.uikit/media-3570665@2x.png)
+![Diagram showing anchor positions. Top, bottom, leading, and trailing anchors are on the halfway point on their respective edges. The anchors defined by the edge combinations top and leading, top and trailing, bottom and leading, and bottom and trailing are in the corners between each of those sets of edges.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3570665@2x.png)
 
 ##### Offset
 
@@ -81,44 +86,45 @@ NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSi
 ## Topics
 
 ### Creating an anchor
-- [convenience init(edges: NSDirectionalRectEdge)](nscollectionlayoutanchor/init(edges:).md)
+- [convenience init(edges: NSDirectionalRectEdge)](./nscollectionlayoutanchor/init%28edges%29.md)
   Creates an anchor with the specified edges to attach to.
-- [convenience init(edges: NSDirectionalRectEdge, absoluteOffset: CGPoint)](nscollectionlayoutanchor/init(edges:absoluteoffset:).md)
+- [convenience init(edges: NSDirectionalRectEdge, absoluteOffset: CGPoint)](./nscollectionlayoutanchor/init%28edges,absoluteoffset%29.md)
   Creates an anchor with the specified edges to attach to, offset by the provided absolute value.
-- [convenience init(edges: NSDirectionalRectEdge, fractionalOffset: CGPoint)](nscollectionlayoutanchor/init(edges:fractionaloffset:).md)
+- [convenience init(edges: NSDirectionalRectEdge, fractionalOffset: CGPoint)](./nscollectionlayoutanchor/init%28edges,fractionaloffset%29.md)
   Creates an anchor with the specified edges to attach to, offset by the provided fractional value.
 ### Getting the edges
-- [var edges: NSDirectionalRectEdge](nscollectionlayoutanchor/edges.md)
+- [var edges: NSDirectionalRectEdge](./nscollectionlayoutanchor/edges.md)
   The edges of the item an anchor is attached to.
 ### Getting the offset
-- [var offset: CGPoint](nscollectionlayoutanchor/offset.md)
+- [var offset: CGPoint](./nscollectionlayoutanchor/offset.md)
   The floating-point value of the anchor’s offset from the item it’s attached to.
-- [var isAbsoluteOffset: Bool](nscollectionlayoutanchor/isabsoluteoffset.md)
+- [var isAbsoluteOffset: Bool](./nscollectionlayoutanchor/isabsoluteoffset.md)
   A Boolean value that indicates whether the anchor’s offset is expressed as an absolute value.
-- [var isFractionalOffset: Bool](nscollectionlayoutanchor/isfractionaloffset.md)
+- [var isFractionalOffset: Bool](./nscollectionlayoutanchor/isfractionaloffset.md)
   A Boolean value that indicates whether the anchor’s offset is expressed as a fraction of its supplementary item’s dimension.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSCollectionLayoutSupplementaryItem](nscollectionlayoutsupplementaryitem.md)
+### Appearance
+- [class NSCollectionLayoutSupplementaryItem](./nscollectionlayoutsupplementaryitem.md)
   An object used to add an extra visual decoration to an item in a collection view.
-- [class NSCollectionLayoutBoundarySupplementaryItem](nscollectionlayoutboundarysupplementaryitem.md)
+- [class NSCollectionLayoutBoundarySupplementaryItem](./nscollectionlayoutboundarysupplementaryitem.md)
   An object used to add headers or footers to a collection view.
-- [class NSCollectionLayoutDecorationItem](nscollectionlayoutdecorationitem.md)
+- [class NSCollectionLayoutDecorationItem](./nscollectionlayoutdecorationitem.md)
   An object used to add a background to a section of a collection view.
 
 

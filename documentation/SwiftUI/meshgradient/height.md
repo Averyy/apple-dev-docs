@@ -1,7 +1,8 @@
 # height
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the mesh, i.e. the number of vertices per column.
 

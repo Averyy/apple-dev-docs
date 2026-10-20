@@ -1,7 +1,8 @@
 # appRef
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A pointer to a file-system reference designatingthe application to launch; see the *File Manager Reference* inthe Carbon File Management Documentation for a description of the `FSRef` datatype. Set this field to `NULL` torequest that each item in the `itemRefs` arraybe opened in its own preferred application.
 
@@ -12,6 +13,10 @@ A pointer to a file-system reference designatingthe application to launch; see t
 
 ```swift
 var appRef: UnsafePointer<FSRef>!
+```
+
+```c
+const FSRef *appRef;
 ```
 
 

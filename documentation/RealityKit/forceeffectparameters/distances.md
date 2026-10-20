@@ -1,7 +1,8 @@
 # distances
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the effect to each rigid body’s center of mass, or nil if distance information was not requested.
 

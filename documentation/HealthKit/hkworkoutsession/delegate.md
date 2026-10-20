@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout session’s delegate.
 
@@ -9,7 +10,7 @@ The workout session’s delegate.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,13 +20,18 @@ The workout session’s delegate.
 weak var delegate: (any HKWorkoutSessionDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<HKWorkoutSessionDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate receives notifications when a workout session’s state changes or when a workout session fails.
 
 ## See Also
 
-- [protocol HKWorkoutSessionDelegate](hkworkoutsessiondelegate.md)
+### Monitoring the session
+- [protocol HKWorkoutSessionDelegate](../hkworkoutsessiondelegate.md)
   The session delegate protocol that defines an interface for receiving notifications about errors and changes in the workout session’s state.
 
 

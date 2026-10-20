@@ -1,12 +1,13 @@
 # show()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a visualization for the data in the column.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 15.0
 
 ## Declaration
 

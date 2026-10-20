@@ -1,7 +1,8 @@
 # msgh_body
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var msgh_body: mach_msg_body_t
+```
+
+```c
+mach_msg_body_t msgh_body;
 ```
 
 

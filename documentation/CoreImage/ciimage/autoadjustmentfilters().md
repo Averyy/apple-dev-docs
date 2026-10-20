@@ -1,7 +1,8 @@
 # autoAdjustmentFilters()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all possible automatically selected and configured filters for adjusting the image.
 
@@ -10,7 +11,7 @@ Returns all possible automatically selected and configured filters for adjusting
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,16 +20,21 @@ Returns all possible automatically selected and configured filters for adjusting
 func autoAdjustmentFilters() -> [CIFilter]
 ```
 
+```objc
+- (NSArray<CIFilter *> *) autoAdjustmentFilters;
+```
+
 #### Return Value
 
-An array of [`CIFilter`](cifilter-swift.class.md) instances preconfigured for correcting deficiencies in the supplied image.
+An array of [`CIFilter`](../cifilter-swift.class.md) instances preconfigured for correcting deficiencies in the supplied image.
 
 ## See Also
 
-- [func autoAdjustmentFilters(options: [CIImageAutoAdjustmentOption : Any]?) -> [CIFilter]](ciimage/autoadjustmentfilters(options:).md)
+### Getting Autoadjustment Filters
+- [func autoAdjustmentFilters(options: [CIImageAutoAdjustmentOption : Any]?) -> [CIFilter]](./autoadjustmentfilters%28options%29.md)
   Returns a subset of automatically selected and configured filters for adjusting the image.
-- [Autoadjustment Keys](autoadjustment-keys.md)
-  Constants used as keys in the options dictionary for the [`autoAdjustmentFilters(options:)`](ciimage/autoadjustmentfilters(options:).md) method.
+- [Autoadjustment Keys](../autoadjustment-keys.md)
+  Constants used as keys in the options dictionary for the [`autoAdjustmentFilters(options:)`](./autoadjustmentfilters%28options%29.md) method.
 
 
 ---

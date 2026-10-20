@@ -1,7 +1,8 @@
 # Credential
 
 **Framework**: SecureElementCredential  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.1+
@@ -15,7 +16,8 @@ typealias Credential = CredentialSession.Credential
 
 ## See Also
 
-- [typealias CardEmulationOptions](cardemulationoptions.md)
+### Supporting types
+- [typealias CardEmulationOptions](./cardemulationoptions.md)
 
 
 ---

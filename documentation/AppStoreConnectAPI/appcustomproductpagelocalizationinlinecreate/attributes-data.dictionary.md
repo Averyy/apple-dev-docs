@@ -1,7 +1,8 @@
 # AppCustomProductPageLocalizationInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app custom product page localization inline create resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app custom product page localization inline create r
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationInlineCreate.Attributes
 ```
 
@@ -21,7 +22,8 @@ object AppCustomProductPageLocalizationInlineCreate.Attributes
 
 ## See Also
 
-- [object AppCustomProductPageLocalizationInlineCreate.Relationships](appcustomproductpagelocalizationinlinecreate/relationships-data.dictionary.md)
+### Objects
+- [object AppCustomProductPageLocalizationInlineCreate.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

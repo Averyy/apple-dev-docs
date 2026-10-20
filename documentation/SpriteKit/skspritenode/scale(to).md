@@ -1,7 +1,8 @@
 # scale(to:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales the sprite node to a specified size.
 
@@ -20,17 +21,22 @@ Scales the sprite node to a specified size.
 func scale(to size: CGSize)
 ```
 
+```objc
+- (void) scaleToSize:(CGSize) size;
+```
+
 #### Discussion
 
-This method works by setting the sprite node’s [`xScale`](sknode/xscale.md) and [`yScale`](sknode/yscale.md) to achieve the specified size in its parent’s coordinate space.
+This method works by setting the sprite node’s [`xScale`](../sknode/xscale.md) and [`yScale`](../sknode/yscale.md) to achieve the specified size in its parent’s coordinate space.
 
 ## See Also
 
-- [Using the Anchor Point to Move a Sprite](using-the-anchor-point-to-move-a-sprite.md)
+### Setting a Sprite’s Size and Position
+- [Using the Anchor Point to Move a Sprite](../using-the-anchor-point-to-move-a-sprite.md)
   Learn how the anchor point affects a sprite’s position.
-- [var size: CGSize](skspritenode/size.md)
+- [var size: CGSize](./size.md)
   The dimensions of the sprite, in points.
-- [var anchorPoint: CGPoint](skspritenode/anchorpoint.md)
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   Defines the point in the sprite that corresponds to the node’s position.
 
 

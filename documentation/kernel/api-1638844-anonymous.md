@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kModifier_DidKeyUp](1638844-anonymous/kmodifier_didkeyup.md)
-- [kModifier_DidPerformModifiy](1638844-anonymous/kmodifier_didperformmodifiy.md)
-- [kModifier_Locked](1638844-anonymous/kmodifier_locked.md)
+- [kModifier_DidKeyUp](./api-1638844-anonymous/kmodifier_didkeyup.md)
+- [kModifier_DidPerformModifiy](./api-1638844-anonymous/kmodifier_didperformmodifiy.md)
+- [kModifier_Locked](./api-1638844-anonymous/kmodifier_locked.md)
 
 
 ---

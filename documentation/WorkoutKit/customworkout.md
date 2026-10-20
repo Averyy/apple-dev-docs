@@ -1,7 +1,8 @@
 # CustomWorkout
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A workout that includes a repeating series of work and recovery steps.
 
@@ -21,47 +22,48 @@ struct CustomWorkout
 ## Topics
 
 ### Creating custom workouts
-- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, displayName: String?, warmup: WorkoutStep?, blocks: [IntervalBlock], cooldown: WorkoutStep?)](customworkout/init(activity:location:displayname:warmup:blocks:cooldown:).md)
+- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, displayName: String?, warmup: WorkoutStep?, blocks: [IntervalBlock], cooldown: WorkoutStep?)](./customworkout/init%28activity,location,displayname,warmup,blocks,cooldown%29.md)
   Create a new custom workout.
-- [static func supportsActivity(HKWorkoutActivityType) -> Bool](customworkout/supportsactivity(_:).md)
+- [static func supportsActivity(HKWorkoutActivityType) -> Bool](./customworkout/supportsactivity%28_%29.md)
   Returns a Boolean value that indicates whether the system supports the specified workout activity .
-- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
+- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./customworkout/supportsalert%28_,activity,location%29.md)
   Returns a Boolean value that indicates whether the system supports the specified alert for the given activity type and location.
-- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsgoal(_:activity:location:).md)
+- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./customworkout/supportsgoal%28_,activity,location%29.md)
   Returns a Boolean value that indicates whether the system supports the specified goal for the given activity type and location.
 ### Accessing workout data
-- [var displayName: String?](customworkout/displayname.md)
+- [var displayName: String?](./customworkout/displayname.md)
   The name that the system uses when displaying the workout.
-- [var activity: HKWorkoutActivityType](customworkout/activity.md)
+- [var activity: HKWorkoutActivityType](./customworkout/activity.md)
   The type of activity performed during the workout.
-- [var location: HKWorkoutSessionLocationType](customworkout/location.md)
+- [var location: HKWorkoutSessionLocationType](./customworkout/location.md)
   The workout session location for the workout.
-- [var warmup: WorkoutStep?](customworkout/warmup.md)
+- [var warmup: WorkoutStep?](./customworkout/warmup.md)
   The warmup step (if any).
-- [var blocks: [IntervalBlock]](customworkout/blocks.md)
+- [var blocks: [IntervalBlock]](./customworkout/blocks.md)
   A block of repeating work and recovery steps.
-- [var cooldown: WorkoutStep?](customworkout/cooldown.md)
+- [var cooldown: WorkoutStep?](./customworkout/cooldown.md)
   The cooldown step (if any).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WorkoutStep](workoutstep.md)
+### Custom interval workouts
+- [struct WorkoutStep](./workoutstep.md)
   A step in a workout.
-- [struct IntervalBlock](intervalblock.md)
+- [struct IntervalBlock](./intervalblock.md)
   Blocks of work and recovery steps that repeat in a custom workout.
-- [struct IntervalStep](intervalstep.md)
+- [struct IntervalStep](./intervalstep.md)
   An interval that represents a work or recovery step in a workout.
-- [enum WorkoutGoal](workoutgoal.md)
+- [enum WorkoutGoal](./workoutgoal.md)
   A value that specifies the goal for a workout.
-- [protocol WorkoutAlert](workoutalert.md)
+- [protocol WorkoutAlert](./workoutalert.md)
   An alert that notifies the user of significant events during a workout.
 
 

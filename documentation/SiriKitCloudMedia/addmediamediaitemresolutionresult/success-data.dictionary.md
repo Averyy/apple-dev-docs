@@ -1,7 +1,8 @@
 # AddMediaMediaItemResolutionResult.Success
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media item that successfully matches the intent.
 
@@ -10,7 +11,7 @@ A media item that successfully matches the intent.
 
 ## Declaration
 
-```swift
+```
 object AddMediaMediaItemResolutionResult.Success
 ```
 

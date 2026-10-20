@@ -1,7 +1,8 @@
 # GCMicroGamepad
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that supports the Siri Remote.
 
@@ -19,6 +20,10 @@ A controller profile that supports the Siri Remote.
 class GCMicroGamepad
 ```
 
+```objc
+@interface GCMicroGamepad : GCPhysicalInputProfile
+```
+
 #### Overview
 
 The micro gamepad controller profile supports the following input elements:
@@ -26,85 +31,86 @@ The micro gamepad controller profile supports the following input elements:
 - Two digital face buttons (A and X).
 - One analog directional pad (D-pad) that functions as a touchpad.
 
-Users can rotate game controllers that support the micro gamepad profile, switching them between landscape and portrait orientation. If you want to get directional values according to the orientation, set the [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+Users can rotate game controllers that support the micro gamepad profile, switching them between landscape and portrait orientation. If you want to get directional values according to the orientation, set the [`allowsRotation`](./gcmicrogamepad/allowsrotation.md) property to [`true`](../Swift/true.md).
 
-![An illustration of a Siri Remote with callouts for the digital face buttons, the Button menu, and the analog directional pad.](/images/com.apple.gamecontroller/media-3830807@2x.png)
+![An illustration of a Siri Remote with callouts for the digital face buttons, the Button menu, and the analog directional pad.](https://developer.apple.com/tutorials/images/com.apple.gamecontroller/media-3830807@2x.png)
 
 ## Topics
 
 ### Getting the controller
-- [var controller: GCController?](gcmicrogamepad/controller.md)
+- [var controller: GCController?](./gcmicrogamepad/controller.md)
   The controller associated with this profile.
 ### Receiving a callback when input values change
-- [var valueChangedHandler: GCMicroGamepadValueChangedHandler?](gcmicrogamepad/valuechangedhandler.md)
+- [var valueChangedHandler: GCMicroGamepadValueChangedHandler?](./gcmicrogamepad/valuechangedhandler.md)
   The block that this profile calls when an element’s value changes.
-- [typealias GCMicroGamepadValueChangedHandler](gcmicrogamepadvaluechangedhandler.md)
+- [typealias GCMicroGamepadValueChangedHandler](./gcmicrogamepadvaluechangedhandler.md)
   Signature for the block that this profile calls when an element’s value changes.
 ### Getting face button inputs
-- [var buttonMenu: GCControllerButtonInput](gcmicrogamepad/buttonmenu.md)
+- [var buttonMenu: GCControllerButtonInput](./gcmicrogamepad/buttonmenu.md)
   The menu face button that players use to enter the main menu and pause the game.
-- [var buttonA: GCControllerButtonInput](gcmicrogamepad/buttona.md)
+- [var buttonA: GCControllerButtonInput](./gcmicrogamepad/buttona.md)
   The button that the user activates by pressing harder on the touchpad.
-- [var buttonX: GCControllerButtonInput](gcmicrogamepad/buttonx.md)
+- [var buttonX: GCControllerButtonInput](./gcmicrogamepad/buttonx.md)
   The second face button element.
 ### Getting directional pad inputs
-- [var dpad: GCControllerDirectionPad](gcmicrogamepad/dpad.md)
+- [var dpad: GCControllerDirectionPad](./gcmicrogamepad/dpad.md)
   The controller’s directional pad element.
-- [var reportsAbsoluteDpadValues: Bool](gcmicrogamepad/reportsabsolutedpadvalues.md)
+- [var reportsAbsoluteDpadValues: Bool](./gcmicrogamepad/reportsabsolutedpadvalues.md)
   A Boolean value that indicates whether the directional pad reports absolute or relative values.
-- [var allowsRotation: Bool](gcmicrogamepad/allowsrotation.md)
+- [var allowsRotation: Bool](./gcmicrogamepad/allowsrotation.md)
   A Boolean value that indicates whether the profile reports the directional pad values relative to its current orientation.
 ### Accessing elements by name
-- [Micro gamepad input names](micro-gamepad-input-names.md)
+- [Micro gamepad input names](./micro-gamepad-input-names.md)
   Constants for names of micro gamepad elements.
 ### Setting snapshot avlues
-- [func setStateFrom(GCMicroGamepad)](gcmicrogamepad/setstatefrom(_:).md)
+- [func setStateFrom(GCMicroGamepad)](./gcmicrogamepad/setstatefrom%28_%29.md)
   Copies the input values from a specified micro gamepad to a snapshot of a micro gamepad.
-- [func saveSnapshot() -> GCMicroGamepadSnapshot](gcmicrogamepad/savesnapshot.md)
+- [func saveSnapshot() -> GCMicroGamepadSnapshot](./gcmicrogamepad/savesnapshot%28%29.md)
   Saves a snapshot of all of the profile’s elements.
 
 ## Relationships
 
 ### Inherits From
-- [GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [GCPhysicalInputProfile](./gcphysicalinputprofile.md)
 ### Inherited By
-- [GCDirectionalGamepad](gcdirectionalgamepad.md)
-- [GCMicroGamepadSnapshot](gcmicrogamepadsnapshot.md)
+- [GCDirectionalGamepad](./gcdirectionalgamepad.md)
+- [GCMicroGamepadSnapshot](./gcmicrogamepadsnapshot.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var extendedGamepad: GCExtendedGamepad?](gccontroller/extendedgamepad.md)
+### Accessing controller profiles
+- [var extendedGamepad: GCExtendedGamepad?](./gccontroller/extendedgamepad.md)
   The extended gamepad profile.
-- [class GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [class GCPhysicalInputProfile](./gcphysicalinputprofile.md)
   The base class for controller profiles that support physical buttons, thumbsticks, and directional pads.
-- [class GCKeyboardInput](gckeyboardinput.md)
+- [class GCKeyboardInput](./gckeyboardinput.md)
   A controller profile that uses the keyboard as the input device.
-- [class GCMouseInput](gcmouseinput.md)
+- [class GCMouseInput](./gcmouseinput.md)
   A controller profile that tracks input from a mouse.
-- [class GCExtendedGamepad](gcextendedgamepad.md)
+- [class GCExtendedGamepad](./gcextendedgamepad.md)
   A controller profile that supports the extended set of gamepad controls.
-- [class GCDualShockGamepad](gcdualshockgamepad.md)
+- [class GCDualShockGamepad](./gcdualshockgamepad.md)
   A controller profile that supports the DualShock 4 controller.
-- [class GCXboxGamepad](gcxboxgamepad.md)
+- [class GCXboxGamepad](./gcxboxgamepad.md)
   A controller profile that supports the Xbox controller.
-- [class GCDualSenseGamepad](gcdualsensegamepad.md)
+- [class GCDualSenseGamepad](./gcdualsensegamepad.md)
   A controller profile that supported the DualSense controller.
-- [var microGamepad: GCMicroGamepad?](gccontroller/microgamepad.md)
+- [var microGamepad: GCMicroGamepad?](./gccontroller/microgamepad.md)
   The micro gamepad profile.
-- [class GCDirectionalGamepad](gcdirectionalgamepad.md)
+- [class GCDirectionalGamepad](./gcdirectionalgamepad.md)
   A profile that supports only the directional pad, without motion or rotation.
-- [var motion: GCMotion?](gccontroller/motion.md)
+- [var motion: GCMotion?](./gccontroller/motion.md)
   The motion input profile.
-- [var physicalInputProfile: GCPhysicalInputProfile](gccontroller/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gccontroller/physicalinputprofile.md)
   The physical input profile for the controller.
-- [var gamepad: GCGamepad?](gccontroller/gamepad.md)
+- [var gamepad: GCGamepad?](./gccontroller/gamepad.md)
   The gamepad profile.
 
 

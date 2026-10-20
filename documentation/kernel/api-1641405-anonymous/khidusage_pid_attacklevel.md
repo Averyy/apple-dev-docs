@@ -1,14 +1,15 @@
 # kHIDUsage_PID_AttackLevel
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PID_AttackLevel = 0x5B
 ```
 

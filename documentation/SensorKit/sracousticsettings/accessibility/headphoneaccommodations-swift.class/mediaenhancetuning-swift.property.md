@@ -1,7 +1,8 @@
 # mediaEnhanceTuning
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var mediaEnhanceTuning: SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceTuning { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceTuning mediaEnhanceTuning;
 ```
 
 #### Discussion

@@ -1,17 +1,18 @@
 # AudioConverterPropertyID
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An audio converter property identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ An audio converter property identifier.
 typealias AudioConverterPropertyID = UInt32
 ```
 
+```c
+typedef UInt32 AudioConverterPropertyID;
+```
+
 ## See Also
 
-- [struct AudioConverterPrimeInfo](audioconverterprimeinfo.md)
+### Data Types
+- [struct AudioConverterPrimeInfo](./audioconverterprimeinfo.md)
   Specifies priming information for an audio converter.
-- [typealias AudioConverterRef](audioconverterref.md)
+- [typealias AudioConverterRef](./audioconverterref.md)
   A reference to an audio converter object.
 
 

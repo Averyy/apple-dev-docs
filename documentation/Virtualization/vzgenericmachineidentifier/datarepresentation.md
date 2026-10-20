@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque data representation of the VM’s identifier.
 
@@ -12,6 +13,10 @@ An opaque data representation of the VM’s identifier.
 
 ```swift
 var dataRepresentation: Data { get }
+```
+
+```objc
+@property (copy, readonly) NSData * dataRepresentation;
 ```
 
 

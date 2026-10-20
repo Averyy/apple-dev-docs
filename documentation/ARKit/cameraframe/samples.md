@@ -1,7 +1,8 @@
 # samples
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All the camera frame samples on this frame.
 

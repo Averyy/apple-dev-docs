@@ -1,7 +1,8 @@
 # flagOptions
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `CVTimeStampFlags` representation of `CVTimeStamp.flags`
 

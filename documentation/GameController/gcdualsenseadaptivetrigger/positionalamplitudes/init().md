@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty positional amplitudes structure.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float))](gcdualsenseadaptivetrigger/positionalamplitudes/init(values:).md)
+### Creating multiple amplitudes
+- [init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float))](./init%28values%29.md)
   Creates a positional amplitudes structure with the specified amplitude values.
 
 

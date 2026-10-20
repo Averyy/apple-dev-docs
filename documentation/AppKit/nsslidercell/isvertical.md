@@ -1,7 +1,8 @@
 # isVertical
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer indicating the orientation (vertical or horizontal) of the slider.
 
@@ -11,7 +12,15 @@ An integer indicating the orientation (vertical or horizontal) of the slider.
 ## Declaration
 
 ```swift
+var isVertical: Bool { get set }
+```
+
+```swift
 var vertical: Bool { get set }
+```
+
+```objc
+@property (readwrite, getter=isVertical) BOOL vertical;
 ```
 
 #### Discussion
@@ -20,7 +29,8 @@ The value of this property is 1 if the slider is vertical, 0 if it’s horizonta
 
 ## See Also
 
-- [var knobThickness: CGFloat](nsslidercell/knobthickness.md)
+### Managing Cell Appearance
+- [var knobThickness: CGFloat](./knobthickness.md)
   The thickness of the slider knob, in pixels.
 
 

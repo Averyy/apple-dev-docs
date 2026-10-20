@@ -1,7 +1,8 @@
 # init(_:trackingMode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -19,9 +20,10 @@ init(_ target: AnchoringComponent.Target, trackingMode: AnchoringComponent.Track
 
 ## See Also
 
-- [init(_:)](anchoringcomponent/init(_:).md)
+### Creating an anchoring component
+- [init(_:)](./init%28_%29.md)
   Creates an anchoring component with the given AR anchor.
-- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchoringcomponent/init(_:trackingmode:physicssimulation:).md)
+- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](./init%28_,trackingmode,physicssimulation%29.md)
   Creates an anchoring component for a given target, tracking mode and physics simulation.
 
 

@@ -1,29 +1,30 @@
 # UserExportDCLTransferBuffer
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef struct UserExportDCLTransferBufferStruct UserExportDCLTransferBuffer;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [buffer](userexportdcltransferbuffer/1561058-buffer.md)
-- [bufferOffset](userexportdcltransferbuffer/1561266-bufferoffset.md)
-- [compilerData](userexportdcltransferbuffer/1561011-compilerdata.md)
-- [opcode](userexportdcltransferbuffer/1561196-opcode.md)
-- [pClientDCLStruct](userexportdcltransferbuffer/1561334-pclientdclstruct.md)
-- [pNextDCLCommand](userexportdcltransferbuffer/1561451-pnextdclcommand.md)
-- [packetSize](userexportdcltransferbuffer/1561445-packetsize.md)
-- [reserved](userexportdcltransferbuffer/1561460-reserved.md)
-- [size](userexportdcltransferbuffer/1561001-size.md)
+- [buffer](./userexportdcltransferbuffer/api-1561058-buffer.md)
+- [bufferOffset](./userexportdcltransferbuffer/api-1561266-bufferoffset.md)
+- [compilerData](./userexportdcltransferbuffer/api-1561011-compilerdata.md)
+- [opcode](./userexportdcltransferbuffer/api-1561196-opcode.md)
+- [pClientDCLStruct](./userexportdcltransferbuffer/api-1561334-pclientdclstruct.md)
+- [pNextDCLCommand](./userexportdcltransferbuffer/api-1561451-pnextdclcommand.md)
+- [packetSize](./userexportdcltransferbuffer/api-1561445-packetsize.md)
+- [reserved](./userexportdcltransferbuffer/api-1561460-reserved.md)
+- [size](./userexportdcltransferbuffer/api-1561001-size.md)
 
 
 ---

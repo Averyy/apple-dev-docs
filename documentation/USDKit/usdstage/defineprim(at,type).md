@@ -1,7 +1,8 @@
 # definePrim(at:type:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a prim at a given path, if none already exists.
 
@@ -22,7 +23,7 @@ func definePrim(at path: USDLayer.Path, type: USDToken) -> USDPrim
 
 #### Discussion
 
-If a prim already exists at the given path, and that prim’s type is empty or equal to `type`, this function returns that prim. Otherwise, the prim authored by this function will be an [`USDPrim.Specifier.def`](usdprim/specifier-swift.enum/def.md) prim with the given type.
+If a prim already exists at the given path, and that prim’s type is empty or equal to `type`, this function returns that prim. Otherwise, the prim authored by this function will be an [`USDPrim.Specifier.def`](../usdprim/specifier-swift.enum/def.md) prim with the given type.
 
 > **Note**: This function will also author any missing parent prims along the given `path`. Prims authored this way will have an empty type.
 
@@ -33,9 +34,10 @@ If a prim already exists at the given path, and that prim’s type is empty or e
 
 ## See Also
 
-- [func overridePrim(at: USDLayer.Path) -> USDPrim](usdstage/overrideprim(at:).md)
+### Authoring prims
+- [func overridePrim(at: USDLayer.Path) -> USDPrim](./overrideprim%28at%29.md)
   Authors an override prim at a given path, if no prim exists at that path.
-- [func removePrim(at: USDLayer.Path) -> Bool](usdstage/removeprim(at:).md)
+- [func removePrim(at: USDLayer.Path) -> Bool](./removeprim%28at%29.md)
   Removes all authored data at the given path in the current edit target.
 
 

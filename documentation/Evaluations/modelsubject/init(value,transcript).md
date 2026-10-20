@@ -1,7 +1,8 @@
 # init(value:transcript:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model subject with a value and optional transcript.
 

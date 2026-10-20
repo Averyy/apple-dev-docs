@@ -1,23 +1,28 @@
 # countryCode
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the locale country code.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let countryCode: CFLocaleKey!
+```
+
+```c
+extern CFLocaleKey const kCFLocaleCountryCode;
 ```
 
 #### Discussion
@@ -26,35 +31,36 @@ The corresponding value is a CFString containing an ISO county code, such as “
 
 ## See Also
 
-- [static let identifier: CFLocaleKey!](cflocalekey/identifier.md)
+### Constants
+- [static let identifier: CFLocaleKey!](./identifier.md)
   Specifies locale identifier.
-- [static let languageCode: CFLocaleKey!](cflocalekey/languagecode.md)
+- [static let languageCode: CFLocaleKey!](./languagecode.md)
   Specifies the locale language code.
-- [static let scriptCode: CFLocaleKey!](cflocalekey/scriptcode.md)
+- [static let scriptCode: CFLocaleKey!](./scriptcode.md)
   Specifies the locale script code.
-- [static let variantCode: CFLocaleKey!](cflocalekey/variantcode.md)
+- [static let variantCode: CFLocaleKey!](./variantcode.md)
   Specifies the locale variant code.
-- [static let exemplarCharacterSet: CFLocaleKey!](cflocalekey/exemplarcharacterset.md)
+- [static let exemplarCharacterSet: CFLocaleKey!](./exemplarcharacterset.md)
   Specifies the locale character set.
-- [static let calendarIdentifier: CFLocaleKey!](cflocalekey/calendaridentifier.md)
+- [static let calendarIdentifier: CFLocaleKey!](./calendaridentifier.md)
   Specifies the locale calendar identifier.
-- [static let calendar: CFLocaleKey!](cflocalekey/calendar.md)
+- [static let calendar: CFLocaleKey!](./calendar.md)
   Specifies the locale calendar.
-- [static let collationIdentifier: CFLocaleKey!](cflocalekey/collationidentifier.md)
+- [static let collationIdentifier: CFLocaleKey!](./collationidentifier.md)
   Specifies the locale collation identifier.
-- [static let usesMetricSystem: CFLocaleKey!](cflocalekey/usesmetricsystem.md)
+- [static let usesMetricSystem: CFLocaleKey!](./usesmetricsystem.md)
   Specifies the whether the locale uses the metric system.
-- [static let measurementSystem: CFLocaleKey!](cflocalekey/measurementsystem.md)
+- [static let measurementSystem: CFLocaleKey!](./measurementsystem.md)
   Specifies the measurement system used.
-- [static let decimalSeparator: CFLocaleKey!](cflocalekey/decimalseparator.md)
+- [static let decimalSeparator: CFLocaleKey!](./decimalseparator.md)
   Specifies the decimal point string.
-- [static let groupingSeparator: CFLocaleKey!](cflocalekey/groupingseparator.md)
+- [static let groupingSeparator: CFLocaleKey!](./groupingseparator.md)
   Specifies the separator string between groups of digits.
-- [static let currencySymbol: CFLocaleKey!](cflocalekey/currencysymbol.md)
+- [static let currencySymbol: CFLocaleKey!](./currencysymbol.md)
   Specifies the currency symbol.
-- [static let currencyCode: CFLocaleKey!](cflocalekey/currencycode.md)
+- [static let currencyCode: CFLocaleKey!](./currencycode.md)
   Specifies the locale currency code.
-- [static let collatorIdentifier: CFLocaleKey!](cflocalekey/collatoridentifier.md)
+- [static let collatorIdentifier: CFLocaleKey!](./collatoridentifier.md)
   Specifies the collation identifier for the locale.
 
 

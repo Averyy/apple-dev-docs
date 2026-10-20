@@ -1,7 +1,8 @@
 # originalURL
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original URL of the metadata request.
 
@@ -20,9 +21,14 @@ The original URL of the metadata request.
 var originalURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSURL * originalURL;
+```
+
 ## See Also
 
-- [var url: URL?](lplinkmetadata/url.md)
+### Identifying the link
+- [var url: URL?](./url.md)
   The URL that returned the metadata, taking server-side redirects into account.
 
 

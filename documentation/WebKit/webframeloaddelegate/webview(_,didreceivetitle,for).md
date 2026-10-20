@@ -1,17 +1,22 @@
 # webView(_:didReceiveTitle:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the page title of a frame loads or changes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didReceiveTitle title: String!, for frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didReceiveTitle:(NSString *) title forFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

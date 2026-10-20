@@ -1,7 +1,8 @@
 # EnterpriseLicenseDetails.EnterpriseEntitlement.visualFidelity
 
 **Framework**: VisionEntitlementServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 27.0+

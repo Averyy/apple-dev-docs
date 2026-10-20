@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -26,7 +27,8 @@ An instance of the `AsyncIterator` type used to produce elements of the asynchro
 
 ## See Also
 
-- [AsyncThrowingPublisher.Iterator](asyncthrowingpublisher/iterator.md)
+### Creating an iterator
+- [AsyncThrowingPublisher.Iterator](./iterator.md)
   The iterator that produces elements of the asynchronous publisher sequence.
 
 

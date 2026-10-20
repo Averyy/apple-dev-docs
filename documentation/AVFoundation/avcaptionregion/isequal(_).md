@@ -1,7 +1,8 @@
 # isEqual(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether an object equals another.
 
@@ -17,15 +18,20 @@ Returns a Boolean value that indicates whether an object equals another.
 func isEqual(_ object: Any) -> Bool
 ```
 
+```objc
+- (BOOL) isEqual:(id) object;
+```
+
 ## Parameters
 
 - `object`: An object to compare.
 
 ## See Also
 
-- [func mutableCopy(with: NSZone?) -> Any](avcaptionregion/mutablecopy(with:).md)
+### Processing regions
+- [func mutableCopy(with: NSZone?) -> Any](./mutablecopy%28with%29.md)
   Creates a mutable copy of a caption region.
-- [func encode(with: NSCoder)](avcaptionregion/encode(with:).md)
+- [func encode(with: NSCoder)](./encode%28with%29.md)
   Encodes the region using the specified encoder.
 
 

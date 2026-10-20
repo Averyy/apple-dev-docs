@@ -1,17 +1,22 @@
 # view
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view object that generates the actual data for the print operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var view: NSView? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSView * view;
 ```
 
 #### Return Value

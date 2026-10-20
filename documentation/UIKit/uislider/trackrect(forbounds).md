@@ -1,7 +1,8 @@
 # trackRect(forBounds:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the drawing rectangle for the slider’s track.
 
@@ -15,6 +16,10 @@ Returns the drawing rectangle for the slider’s track.
 
 ```swift
 func trackRect(forBounds bounds: CGRect) -> CGRect
+```
+
+```objc
+- (CGRect) trackRectForBounds:(CGRect) bounds;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ You do not call this method directly. Instead, you override it when you want to 
 
 ## See Also
 
-- [func maximumValueImageRect(forBounds: CGRect) -> CGRect](uislider/maximumvalueimagerect(forbounds:).md)
+### Overrides for subclasses
+- [func maximumValueImageRect(forBounds: CGRect) -> CGRect](./maximumvalueimagerect%28forbounds%29.md)
   Returns the drawing rectangle for the maximum value image.
-- [func minimumValueImageRect(forBounds: CGRect) -> CGRect](uislider/minimumvalueimagerect(forbounds:).md)
+- [func minimumValueImageRect(forBounds: CGRect) -> CGRect](./minimumvalueimagerect%28forbounds%29.md)
   Returns the drawing rectangle for the minimum value image.
-- [func thumbRect(forBounds: CGRect, trackRect: CGRect, value: Float) -> CGRect](uislider/thumbrect(forbounds:trackrect:value:).md)
+- [func thumbRect(forBounds: CGRect, trackRect: CGRect, value: Float) -> CGRect](./thumbrect%28forbounds,trackrect,value%29.md)
   Returns the drawing rectangle for the slider’s thumb image.
 
 

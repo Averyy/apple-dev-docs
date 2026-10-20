@@ -1,7 +1,8 @@
 # bookmarkTime
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of the user’s most recent interaction with the bookmark in the media item.
 
@@ -18,37 +19,42 @@ The time of the user’s most recent interaction with the bookmark in the media 
 var bookmarkTime: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval bookmarkTime;
+```
+
 ## See Also
 
-- [var albumArtist: String?](mpmediaitem/albumartist.md)
+### Media item properties
+- [var albumArtist: String?](./albumartist.md)
   The primary performing artist for an album.
-- [var albumArtistPersistentID: MPMediaEntityPersistentID](mpmediaitem/albumartistpersistentid.md)
+- [var albumArtistPersistentID: MPMediaEntityPersistentID](./albumartistpersistentid.md)
   The persistent identifier for the primary performing artist for an album.
-- [var albumPersistentID: MPMediaEntityPersistentID](mpmediaitem/albumpersistentid.md)
+- [var albumPersistentID: MPMediaEntityPersistentID](./albumpersistentid.md)
   The persistent identifier for an album.
-- [var albumTitle: String?](mpmediaitem/albumtitle.md)
+- [var albumTitle: String?](./albumtitle.md)
   The title of an album, such as *Live on Mars*, rather than the title of an individual song on the album, such as “Crater Dance.”
-- [var albumTrackCount: Int](mpmediaitem/albumtrackcount.md)
+- [var albumTrackCount: Int](./albumtrackcount.md)
   The number of tracks for the album that contains the media item.
-- [var albumTrackNumber: Int](mpmediaitem/albumtracknumber.md)
+- [var albumTrackNumber: Int](./albumtracknumber.md)
   The track number of the media item, for a media item that’s part of an album.
-- [var artist: String?](mpmediaitem/artist.md)
+- [var artist: String?](./artist.md)
   The performing artists for a media item, which may vary from the primary artist for the album that a media item belongs to.
-- [var artistPersistentID: MPMediaEntityPersistentID](mpmediaitem/artistpersistentid.md)
+- [var artistPersistentID: MPMediaEntityPersistentID](./artistpersistentid.md)
   The persistent identifier for an artist.
-- [var artwork: MPMediaItemArtwork?](mpmediaitem/artwork.md)
+- [var artwork: MPMediaItemArtwork?](./artwork.md)
   The artwork image for the media item.
-- [var assetURL: URL?](mpmediaitem/asseturl.md)
+- [var assetURL: URL?](./asseturl.md)
   The URL that points to the media item.
-- [var beatsPerMinute: Int](mpmediaitem/beatsperminute.md)
+- [var beatsPerMinute: Int](./beatsperminute.md)
   The number of musical beats per minute for the media item.
-- [var isCloudItem: Bool](mpmediaitem/isclouditem.md)
+- [var isCloudItem: Bool](./isclouditem.md)
   A Boolean value that indicates whether the media item is an iCloud Music Library item.
-- [var comments: String?](mpmediaitem/comments.md)
+- [var comments: String?](./comments.md)
   Textual information about the media item.
-- [var isCompilation: Bool](mpmediaitem/iscompilation.md)
+- [var isCompilation: Bool](./iscompilation.md)
   A Boolean value that indicates whether the media item is part of a compilation.
-- [var isPreorder: Bool](mpmediaitem/ispreorder.md)
+- [var isPreorder: Bool](./ispreorder.md)
   A Boolean value that indicates whether the media item is a preorder.
 
 

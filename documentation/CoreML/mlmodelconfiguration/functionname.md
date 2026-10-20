@@ -1,7 +1,8 @@
 # functionName
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Function name that `MLModel` will use.
 
@@ -20,6 +21,10 @@ Function name that `MLModel` will use.
 var functionName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * functionName;
+```
+
 #### Discussion
 
 Some model types (e.g. ML Program) supports multiple functions in a model asset, where each `MLModel` instance is associated with a particular function.
@@ -33,11 +38,12 @@ configuration.functionName = "my_function"
 
 ## See Also
 
-- [var modelDisplayName: String?](mlmodelconfiguration/modeldisplayname.md)
+### Configuring model parameters
+- [var modelDisplayName: String?](./modeldisplayname.md)
   A human readable name of a model for display purposes.
-- [var parameters: [MLParameterKey : Any]?](mlmodelconfiguration/parameters.md)
+- [var parameters: [MLParameterKey : Any]?](./parameters.md)
   A dictionary of configuration settings your app can override when loading a model.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

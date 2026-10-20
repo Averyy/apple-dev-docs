@@ -1,7 +1,8 @@
 # sectionIndexTitle(forSectionName:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the corresponding section index entry for a given section name.
 
@@ -10,7 +11,7 @@ Returns the corresponding section index entry for a given section name.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the corresponding section index entry for a given section name.
 
 ```swift
 func sectionIndexTitle(forSectionName sectionName: String) -> String?
+```
+
+```objc
+- (NSString *) sectionIndexTitleForSectionName:(NSString *) sectionName;
 ```
 
 #### Return Value
@@ -40,7 +45,8 @@ You only need this method if you use a section index.
 
 ## See Also
 
-- [var sectionIndexTitles: [String]](nsfetchedresultscontroller/sectionindextitles.md)
+### Configuring Section Information
+- [var sectionIndexTitles: [String]](./sectionindextitles.md)
   The array of section index titles.
 
 

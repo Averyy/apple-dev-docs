@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGAsShotNeutral
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The selected white balance at the time of capture, encoded as the coordinates of a neutral color in linear reference space values.
 
@@ -20,19 +21,24 @@ The selected white balance at the time of capture, encoded as the coordinates of
 let kCGImagePropertyDNGAsShotNeutral: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGAsShotNeutral;
+```
+
 ## See Also
 
-- [let kCGImagePropertyDNGAnalogBalance: CFString](kcgimagepropertydnganalogbalance.md)
+### Color Balance
+- [let kCGImagePropertyDNGAnalogBalance: CFString](./kcgimagepropertydnganalogbalance.md)
   The analog or digital gain that applies to the stored raw values.
-- [let kCGImagePropertyDNGAsShotWhiteXY: CFString](kcgimagepropertydngasshotwhitexy.md)
+- [let kCGImagePropertyDNGAsShotWhiteXY: CFString](./kcgimagepropertydngasshotwhitexy.md)
   The selected white balance at the time of capture, encoded as x-y chromaticity coordinates.
-- [let kCGImagePropertyDNGBayerGreenSplit: CFString](kcgimagepropertydngbayergreensplit.md)
+- [let kCGImagePropertyDNGBayerGreenSplit: CFString](./kcgimagepropertydngbayergreensplit.md)
   A value that specifies how closely green pixels in the blue/green rows track the green pixels in red/green rows.
-- [let kCGImagePropertyDNGForwardMatrix1: CFString](kcgimagepropertydngforwardmatrix1.md)
+- [let kCGImagePropertyDNGForwardMatrix1: CFString](./kcgimagepropertydngforwardmatrix1.md)
   A matrix that maps white balanced camera colors to XYZ D50 colors.
-- [let kCGImagePropertyDNGForwardMatrix2: CFString](kcgimagepropertydngforwardmatrix2.md)
+- [let kCGImagePropertyDNGForwardMatrix2: CFString](./kcgimagepropertydngforwardmatrix2.md)
   A matrix that maps white balanced camera colors to XYZ D50 colors.
-- [let kCGImagePropertyDNGDefaultBlackRender: CFString](kcgimagepropertydngdefaultblackrender.md)
+- [let kCGImagePropertyDNGDefaultBlackRender: CFString](./kcgimagepropertydngdefaultblackrender.md)
   A hint to the raw converter about how to handle the black point during rendering.
 
 

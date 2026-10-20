@@ -1,7 +1,8 @@
 # localName
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this session’s entity.
 
@@ -18,19 +19,24 @@ The name of this session’s entity.
 var localName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localName;
+```
+
 #### Discussion
 
 The session’s endpoints inherit this value.
 
 ## See Also
 
-- [var networkName: String](midinetworksession/networkname.md)
+### Inspecting a Sessions
+- [var networkName: String](./networkname.md)
   The name with which this session advertises itself over Bonjour.
-- [var networkPort: Int](midinetworksession/networkport.md)
+- [var networkPort: Int](./networkport.md)
   The session’s UDP port.
-- [func sourceEndpoint() -> MIDIEndpointRef](midinetworksession/sourceendpoint.md)
+- [func sourceEndpoint() -> MIDIEndpointRef](./sourceendpoint%28%29.md)
   Returns the session’s source endpoint.
-- [func destinationEndpoint() -> MIDIEndpointRef](midinetworksession/destinationendpoint.md)
+- [func destinationEndpoint() -> MIDIEndpointRef](./destinationendpoint%28%29.md)
   Returns the session’s destination endpoint.
 
 

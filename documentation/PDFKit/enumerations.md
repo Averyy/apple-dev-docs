@@ -1,18 +1,20 @@
 # PDFKit Enumerations
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum PDFAccessPermissions](pdfaccesspermissions.md)
-- [enum PDFSelectionGranularity](pdfselectiongranularity.md)
-- [enum PDFThumbnailLayoutMode](pdfthumbnaillayoutmode.md)
+- [enum PDFAccessPermissions](./pdfaccesspermissions.md)
+- [enum PDFSelectionGranularity](./pdfselectiongranularity.md)
+- [enum PDFThumbnailLayoutMode](./pdfthumbnaillayoutmode.md)
 
 ## See Also
 
-- [PDFKit Constants](constants.md)
-- [PDFKit Data Types](data-types.md)
+### Reference
+- [PDFKit Constants](./constants.md)
+- [PDFKit Data Types](./data-types.md)
 
 
 ---

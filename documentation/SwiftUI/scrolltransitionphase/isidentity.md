@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -20,7 +21,8 @@ var isIdentity: Bool { get }
 
 ## See Also
 
-- [var value: Double](scrolltransitionphase/value.md)
+### Accessing the phase state
+- [var value: Double](./value.md)
   A phase-derived value that can be used to scale or otherwise modify effects.
 
 

@@ -1,7 +1,8 @@
 # journal
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the journal domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the journal domain.
 ```swift
 static var journal: some AppSchema.JournalIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

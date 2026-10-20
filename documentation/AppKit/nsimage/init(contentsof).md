@@ -1,17 +1,22 @@
 # init(contentsOf:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object with the contents of the specified URL.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init?(contentsOf url: URL)
+```
+
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
 #### Return Value
@@ -24,11 +29,12 @@ An initialized `NSImage` object or `nil` if the method cannot create an image re
 
 ## See Also
 
-- [convenience init?(byReferencingFile: String)](nsimage/init(byreferencingfile:).md)
+### Creating Images from Resource Files
+- [convenience init?(byReferencingFile: String)](./init%28byreferencingfile%29.md)
   Initializes and returns an image object using the specified file.
-- [convenience init(byReferencing: URL)](nsimage/init(byreferencing:).md)
+- [convenience init(byReferencing: URL)](./init%28byreferencing%29.md)
   Initializes and returns an image object using the specified URL.
-- [convenience init?(contentsOfFile: String)](nsimage/init(contentsoffile:).md)
+- [convenience init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes and returns an image object with the contents of the specified file.
 
 

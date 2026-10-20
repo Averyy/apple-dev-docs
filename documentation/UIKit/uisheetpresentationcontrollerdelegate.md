@@ -1,7 +1,8 @@
 # UISheetPresentationControllerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that an object implements to respond to size changes in a sheet presentation controller.
 
@@ -18,21 +19,26 @@ The interface that an object implements to respond to size changes in a sheet pr
 protocol UISheetPresentationControllerDelegate : UIAdaptivePresentationControllerDelegate
 ```
 
+```objc
+@protocol UISheetPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
+```
+
 ## Topics
 
 ### Resizing the Sheet Presentation Controller
-- [func sheetPresentationControllerDidChangeSelectedDetentIdentifier(UISheetPresentationController)](uisheetpresentationcontrollerdelegate/sheetpresentationcontrollerdidchangeselecteddetentidentifier(_:).md)
+- [func sheetPresentationControllerDidChangeSelectedDetentIdentifier(UISheetPresentationController)](./uisheetpresentationcontrollerdelegate/sheetpresentationcontrollerdidchangeselecteddetentidentifier%28_%29.md)
   Provides an opportunity to respond after the sheet presentation controller’s selected detent changes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIAdaptivePresentationControllerDelegate](./uiadaptivepresentationcontrollerdelegate.md)
 
 ## See Also
 
-- [var delegate: (any UISheetPresentationControllerDelegate)?](uisheetpresentationcontroller/delegate.md)
+### Managing the delegate
+- [var delegate: (any UISheetPresentationControllerDelegate)?](./uisheetpresentationcontroller/delegate.md)
   The delegate of the sheet presentation controller.
 
 

@@ -1,7 +1,8 @@
 # ContentIdentifier
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An identifier for a song, podcast, ad, or other media content. The identifier must be stable and unique within a queue.
 
@@ -10,15 +11,22 @@ An identifier for a song, podcast, ad, or other media content. The identifier mu
 
 ## Declaration
 
-```swift
+```
 string ContentIdentifier
 ```
 
+
+
+**Maximum Length**: `1000`
+
+**Minimum Length**: `1`
+
 ## See Also
 
-- [object Content](content.md)
+### Providing Queue Items
+- [object Content](./content.md)
   A description of a piece of playback content, such as a song, podcast, or advertisement.
-- [object ContentAttributes](contentattributes.md)
+- [object ContentAttributes](./contentattributes.md)
   Metadata for some media content.
 
 

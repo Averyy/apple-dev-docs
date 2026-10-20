@@ -1,7 +1,8 @@
 # AVDelegatingPlaybackCoordinatorPlaybackControlCommand
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for playback commands.
 
@@ -19,6 +20,10 @@ An abstract superclass for playback commands.
 class AVDelegatingPlaybackCoordinatorPlaybackControlCommand
 ```
 
+```objc
+@interface AVDelegatingPlaybackCoordinatorPlaybackControlCommand : NSObject
+```
+
 #### Overview
 
 Playback commands inherit state that identifies their originator and applicable item.
@@ -26,39 +31,40 @@ Playback commands inherit state that identifies their originator and applicable 
 ## Topics
 
 ### Accessing command details
-- [var expectedCurrentItemIdentifier: String](avdelegatingplaybackcoordinatorplaybackcontrolcommand/expectedcurrentitemidentifier.md)
+- [var expectedCurrentItemIdentifier: String](./avdelegatingplaybackcoordinatorplaybackcontrolcommand/expectedcurrentitemidentifier.md)
   An item identifier the coordinator issues the command for.
-- [var originator: AVCoordinatedPlaybackParticipant?](avdelegatingplaybackcoordinatorplaybackcontrolcommand/originator.md)
+- [var originator: AVCoordinatedPlaybackParticipant?](./avdelegatingplaybackcoordinatorplaybackcontrolcommand/originator.md)
   The participant that causes the coordinator to issue the command.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVDelegatingPlaybackCoordinatorBufferingCommand](avdelegatingplaybackcoordinatorbufferingcommand.md)
-- [AVDelegatingPlaybackCoordinatorPauseCommand](avdelegatingplaybackcoordinatorpausecommand.md)
-- [AVDelegatingPlaybackCoordinatorPlayCommand](avdelegatingplaybackcoordinatorplaycommand.md)
-- [AVDelegatingPlaybackCoordinatorSeekCommand](avdelegatingplaybackcoordinatorseekcommand.md)
+- [AVDelegatingPlaybackCoordinatorBufferingCommand](./avdelegatingplaybackcoordinatorbufferingcommand.md)
+- [AVDelegatingPlaybackCoordinatorPauseCommand](./avdelegatingplaybackcoordinatorpausecommand.md)
+- [AVDelegatingPlaybackCoordinatorPlayCommand](./avdelegatingplaybackcoordinatorplaycommand.md)
+- [AVDelegatingPlaybackCoordinatorSeekCommand](./avdelegatingplaybackcoordinatorseekcommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVDelegatingPlaybackCoordinatorPlayCommand](avdelegatingplaybackcoordinatorplaycommand.md)
+### Playback commands
+- [class AVDelegatingPlaybackCoordinatorPlayCommand](./avdelegatingplaybackcoordinatorplaycommand.md)
   A command that indicates to play at a specific rate and time.
-- [class AVDelegatingPlaybackCoordinatorPauseCommand](avdelegatingplaybackcoordinatorpausecommand.md)
+- [class AVDelegatingPlaybackCoordinatorPauseCommand](./avdelegatingplaybackcoordinatorpausecommand.md)
   A command that indicates to pause playback.
-- [class AVDelegatingPlaybackCoordinatorSeekCommand](avdelegatingplaybackcoordinatorseekcommand.md)
+- [class AVDelegatingPlaybackCoordinatorSeekCommand](./avdelegatingplaybackcoordinatorseekcommand.md)
   A command that indicates to seek to a new time in the item timeline.
-- [class AVDelegatingPlaybackCoordinatorBufferingCommand](avdelegatingplaybackcoordinatorbufferingcommand.md)
+- [class AVDelegatingPlaybackCoordinatorBufferingCommand](./avdelegatingplaybackcoordinatorbufferingcommand.md)
   A command that indicates to start buffering data in preparation for playback.
 
 

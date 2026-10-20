@@ -1,7 +1,8 @@
 # lineBoxRects()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangles that bound each line of text in the node.
 
@@ -14,13 +15,18 @@ Returns the rectangles that bound each line of text in the node.
 func lineBoxRects() -> [Any]!
 ```
 
+```objc
+- (NSArray *) lineBoxRects;
+```
+
 #### Return Value
 
 An array of rectangles, in which each rectangle represents the bounding box of a line of text in the node.
 
 ## See Also
 
-- [func boundingBox() -> NSRect](domnode/boundingbox.md)
+### Obtaining layout rectangles
+- [func boundingBox() -> NSRect](./boundingbox%28%29.md)
   Returns a rectangle that bounds the onscreen rendering of the node.
 
 

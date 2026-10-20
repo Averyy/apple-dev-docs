@@ -1,7 +1,8 @@
 # FeatureSet.Feature.stickers
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Supports inserting stickers.
 
@@ -24,11 +25,12 @@ Once inserted stickers are images, a data model can’t contain stickers. If you
 
 ## See Also
 
-- [FeatureSet.Feature.images](featureset/feature/images.md)
+### Describing element features
+- [FeatureSet.Feature.images](./images.md)
   Supports image elements.
-- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
+- [FeatureSet.Feature.loupes](./loupes.md)
   Supports loupe elements.
-- [FeatureSet.Feature.links](featureset/feature/links.md)
+- [FeatureSet.Feature.links](./links.md)
   Supports link elements.
 
 

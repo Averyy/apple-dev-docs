@@ -1,7 +1,8 @@
 # mapViewDidFailLoadingMap(_:withError:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the specified view is unable to load the map data.
 
@@ -19,6 +20,10 @@ Tells the delegate that the specified view is unable to load the map data.
 optional func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: any Error)
 ```
 
+```objc
+- (void) mapViewDidFailLoadingMap:(MKMapView *) mapView withError:(NSError *) error;
+```
+
 #### Discussion
 
 The map view might call this method in situations where the device doesn’t have access to the network or is unable to load the map data for some reason. The map view may also call this method if a request for additional map tiles comes in while a previous request for tiles is pending. You can use this message to notify the user that the map data is unavailable.
@@ -30,13 +35,14 @@ The map view might call this method in situations where the device doesn’t hav
 
 ## See Also
 
-- [func mapViewWillStartLoadingMap(MKMapView)](mkmapviewdelegate/mapviewwillstartloadingmap(_:).md)
+### Loading the map data
+- [func mapViewWillStartLoadingMap(MKMapView)](./mapviewwillstartloadingmap%28_%29.md)
   Tells the delegate that the specified map view is about to retrieve some map data.
-- [func mapViewDidFinishLoadingMap(MKMapView)](mkmapviewdelegate/mapviewdidfinishloadingmap(_:).md)
+- [func mapViewDidFinishLoadingMap(MKMapView)](./mapviewdidfinishloadingmap%28_%29.md)
   Tells the delegate when the specified map view successfully loads the needed map data.
-- [func mapViewWillStartRenderingMap(MKMapView)](mkmapviewdelegate/mapviewwillstartrenderingmap(_:).md)
+- [func mapViewWillStartRenderingMap(MKMapView)](./mapviewwillstartrenderingmap%28_%29.md)
   Tells the delegate that the map view is about to start rendering some of its tiles.
-- [func mapViewDidFinishRenderingMap(MKMapView, fullyRendered: Bool)](mkmapviewdelegate/mapviewdidfinishrenderingmap(_:fullyrendered:).md)
+- [func mapViewDidFinishRenderingMap(MKMapView, fullyRendered: Bool)](./mapviewdidfinishrenderingmap%28_,fullyrendered%29.md)
   Tells the delegate when the map view finishes rendering all visible tiles.
 
 

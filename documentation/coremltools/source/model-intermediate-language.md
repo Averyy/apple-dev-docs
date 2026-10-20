@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/model-intermediate-l
 
 # Model Intermediate Language
 
-**
-
-- [.md](../_sources/source/model-intermediate-language.md)
-- **
-
-.pdf
-
-**
-
-# Model Intermediate Language
-
- Table of contents 
-
-## Contents
-
-# Model Intermediate Language
-
 When converting a model to [Core ML](https://developer.apple.com/documentation/coreml), Core ML Tools first creates an [intermediate representation](https://en.wikipedia.org/wiki/Intermediate_representation) of the model in the Model Intermediate Language (MIL), and then translates the MIL representation to the Core ML protobuf representation.
 
 What can you do with MIL, and why would you need to use it? In most cases you define your networks in TensorFlow or PyTorch, and convert to Core ML using the [Unified Conversion API](unified-conversion-api.md). You don’t need to know MIL except in the following use cases:
@@ -34,7 +17,7 @@ What can you do with MIL, and why would you need to use it? In most cases you de
 
 Behind the scenes, the converter takes a computation graph from a source framework such as [TensorFlow](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/), and builds the MIL program. The converter performs a series of optimizations with the MIL program and uses it to generate the [MLModel](mlmodel.md).
 
-![Building the MIL program](../_images/mil.png)
+![Building the MIL program](https://apple.github.io/coremltools/docs-guides/_images/mil.png)
 
 Converting a third-party model to an MIL program, and then to a neural network or ML program.
 
@@ -109,5 +92,3 @@ prediction = model.predict({
 Learn More about MIL
 
 The example in this topic uses MIL operations such as `mb.relu` and `mb.transpose`. To learn which operations MIL supports and their parameters, see the API Reference for [converters.mil.ops](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html#mil-ops). You can find the details for each operation in the [source code for MIL ops](https://github.com/apple/coremltools/tree/5c6bec6f20368d474dbcd29b3836acc2c62c933c/coremltools/converters/mil/mil/ops/defs).
-
-** Contents

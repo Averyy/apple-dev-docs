@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The key properties of the data in the response.
 
@@ -10,14 +11,14 @@ The key properties of the data in the response.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints.Values](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
+- [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints.Values](./datapoints-data.dictionary/values-data.dictionary.md)
   The values of the data points.
 
 ## Properties
@@ -28,7 +29,8 @@ object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.DataPoints
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/dimensions-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions](./dimensions-data.dictionary.md)
   The details of the data in the response.
 
 

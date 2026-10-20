@@ -1,7 +1,8 @@
 # dequeue()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dequeues an element from the queue.
 
@@ -26,9 +27,10 @@ A pointer to a dequeued element.
 
 ## See Also
 
-- [func enqueue(UnsafeRawPointer) throws](cmsimplequeue/enqueue(_:).md)
+### Managing Queues
+- [func enqueue(UnsafeRawPointer) throws](./enqueue%28_%29.md)
   Enqueues an element in the queue.
-- [func reset() throws](cmsimplequeue/reset.md)
+- [func reset() throws](./reset%28%29.md)
   Resets the queue.
 
 

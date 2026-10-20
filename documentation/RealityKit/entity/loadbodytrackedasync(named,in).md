@@ -1,14 +1,15 @@
 # loadBodyTrackedAsync(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously loads a body-tracked entity from a bundle.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
+- iOS 13.0+ - Deprecated in 18.0 (renamed: BodyTrackedEntity.init(named:in:))
+- iPadOS 13.0+ - Deprecated in 18.0 (renamed: BodyTrackedEntity.init(named:in:))
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: BodyTrackedEntity.init(named:in:))
 
 ## Declaration
 
@@ -19,7 +20,7 @@ Asynchronously loads a body-tracked entity from a bundle.
 
 #### Return Value
 
-A resource loader that publishes the root entity in the loaded file as a [`BodyTrackedEntity`](bodytrackedentity.md).
+A resource loader that publishes the root entity in the loaded file as a [`BodyTrackedEntity`](../bodytrackedentity.md).
 
 ## Parameters
 
@@ -28,11 +29,12 @@ A resource loader that publishes the root entity in the loaded file as a [`BodyT
 
 ## See Also
 
-- [static func loadBodyTracked(named: String, in: Bundle?) throws -> BodyTrackedEntity](entity/loadbodytracked(named:in:).md)
+### Loading a flattened body-tracked entity
+- [static func loadBodyTracked(named: String, in: Bundle?) throws -> BodyTrackedEntity](./loadbodytracked%28named,in%29.md)
   Synchronously loads a body-tracked entity from a bundle.
-- [static func loadBodyTracked(contentsOf: URL, withName: String?) throws -> BodyTrackedEntity](entity/loadbodytracked(contentsof:withname:).md)
+- [static func loadBodyTracked(contentsOf: URL, withName: String?) throws -> BodyTrackedEntity](./loadbodytracked%28contentsof,withname%29.md)
   Synchronously loads a body-tracked entity from a file URL.
-- [static func loadBodyTrackedAsync(contentsOf: URL, withName: String?) -> LoadRequest<BodyTrackedEntity>](entity/loadbodytrackedasync(contentsof:withname:).md)
+- [static func loadBodyTrackedAsync(contentsOf: URL, withName: String?) -> LoadRequest<BodyTrackedEntity>](./loadbodytrackedasync%28contentsof,withname%29.md)
   Asynchronously loads a body-tracked entity from a file URL.
 
 

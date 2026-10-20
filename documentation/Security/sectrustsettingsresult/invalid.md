@@ -1,7 +1,8 @@
 # SecTrustSettingsResult.invalid
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Never valid in a trust settings array or in an API call.
 
@@ -13,6 +14,10 @@ Never valid in a trust settings array or in an API call.
 
 ```swift
 case invalid
+```
+
+```c
+kSecTrustSettingsResultInvalid
 ```
 
 

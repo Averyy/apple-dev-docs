@@ -1,7 +1,8 @@
 # showsBookmarkButton
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the bookmark button is displayed.
 
@@ -17,19 +18,24 @@ A Boolean value indicating whether the bookmark button is displayed.
 var showsBookmarkButton: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsBookmarkButton;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var showsCancelButton: Bool](uisearchbar/showscancelbutton.md)
+### Configuring the search interface
+- [var showsCancelButton: Bool](./showscancelbutton.md)
   A Boolean value indicating whether the cancel button is displayed.
-- [func setShowsCancelButton(Bool, animated: Bool)](uisearchbar/setshowscancelbutton(_:animated:).md)
+- [func setShowsCancelButton(Bool, animated: Bool)](./setshowscancelbutton%28_,animated%29.md)
   Sets the display state of the cancel button optionally with animation.
-- [var showsSearchResultsButton: Bool](uisearchbar/showssearchresultsbutton.md)
+- [var showsSearchResultsButton: Bool](./showssearchresultsbutton.md)
   A Boolean value indicating whether the search results button is displayed.
-- [var isSearchResultsButtonSelected: Bool](uisearchbar/issearchresultsbuttonselected.md)
+- [var isSearchResultsButtonSelected: Bool](./issearchresultsbuttonselected.md)
   A Boolean value indicating whether the search results button is selected.
 
 

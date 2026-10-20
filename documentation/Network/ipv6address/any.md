@@ -1,7 +1,8 @@
 # any
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The unspecified address (::).
 
@@ -22,15 +23,16 @@ static let any: IPv6Address
 
 ## See Also
 
-- [static let broadcast: IPv6Address](ipv6address/broadcast.md)
+### Setting Well-Known Addresses
+- [static let broadcast: IPv6Address](./broadcast.md)
   The unspecified broadcast address (::).
-- [static let loopback: IPv6Address](ipv6address/loopback.md)
+- [static let loopback: IPv6Address](./loopback.md)
   The device’s loopback address (::1).
-- [static let nodeLocalNodes: IPv6Address](ipv6address/nodelocalnodes.md)
+- [static let nodeLocalNodes: IPv6Address](./nodelocalnodes.md)
   The multicast address for all local nodes (ff01::1).
-- [static let linkLocalNodes: IPv6Address](ipv6address/linklocalnodes.md)
+- [static let linkLocalNodes: IPv6Address](./linklocalnodes.md)
   The multicast address for all link-local nodes (ff02::1).
-- [static let linkLocalRouters: IPv6Address](ipv6address/linklocalrouters.md)
+- [static let linkLocalRouters: IPv6Address](./linklocalrouters.md)
   The multicast address for all link-local routers (ff02::2).
 
 

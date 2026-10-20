@@ -1,13 +1,16 @@
 # estimatedHorizontalPlane
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point on a real-world planar surface detected during the search, whose orientation is perpendicular to gravity.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 11.0+ - Deprecated in 14.0
+- iPadOS 11.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use raycasting
 
 ## Declaration
 
@@ -15,26 +18,31 @@ A point on a real-world planar surface detected during the search, whose orienta
 static var estimatedHorizontalPlane: ARHitTestResult.ResultType { get }
 ```
 
+```c
+ARHitTestResultTypeEstimatedHorizontalPlane
+```
+
 #### Discussion
 
-ARKit provides two ways to locate real-world flat surfaces in a scene. *Plane detection* (enabled with [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) on your session configuration) is an ongoing process, continuously analyzing the scene to accurately map the position and extent of any planes in view. Because plane detection takes time, you can fall back to *plane estimation* to get an instant, but less accurate, indication of whether a 2D point in the camera image corresponds to a real-world flat surface.
+ARKit provides two ways to locate real-world flat surfaces in a scene. *Plane detection* (enabled with [`planeDetection`](../../arworldtrackingconfiguration/planedetection-swift.property.md) on your session configuration) is an ongoing process, continuously analyzing the scene to accurately map the position and extent of any planes in view. Because plane detection takes time, you can fall back to *plane estimation* to get an instant, but less accurate, indication of whether a 2D point in the camera image corresponds to a real-world flat surface.
 
-Because plane detection results are more accurate than plane estimation results, ARKit prefers the former when searching for both. If your hit-test search includes both [`estimatedHorizontalPlane`](arhittestresult/resulttype/estimatedhorizontalplane.md) and one or more [`existingPlane`](arhittestresult/resulttype/existingplane.md) types, and the search finds any already detected plane anchors, the search returns only the existing plane(s) and no estimated plane.
+Because plane detection results are more accurate than plane estimation results, ARKit prefers the former when searching for both. If your hit-test search includes both [`estimatedHorizontalPlane`](./estimatedhorizontalplane.md) and one or more [`existingPlane`](./existingplane.md) types, and the search finds any already detected plane anchors, the search returns only the existing plane(s) and no estimated plane.
 
 An estimated plane search returns at most one result—the best estimate for a horizontal plane intersecting the hit-test ray.
 
 ## See Also
 
-- [static var featurePoint: ARHitTestResult.ResultType](arhittestresult/resulttype/featurepoint.md)
+### Result Types
+- [static var featurePoint: ARHitTestResult.ResultType](./featurepoint.md)
   A point on a surface detected by ARKit, but not part of any detected planes.
-- [static var estimatedVerticalPlane: ARHitTestResult.ResultType](arhittestresult/resulttype/estimatedverticalplane.md)
+- [static var estimatedVerticalPlane: ARHitTestResult.ResultType](./estimatedverticalplane.md)
   A point on a real-world planar surface detected during the search, whose orientation is parallel to gravity.
-- [static var existingPlane: ARHitTestResult.ResultType](arhittestresult/resulttype/existingplane.md)
-  A point on a real-world plane (already detected with the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) option), without considering the plane’s size.
-- [static var existingPlaneUsingExtent: ARHitTestResult.ResultType](arhittestresult/resulttype/existingplaneusingextent.md)
-  A point on a real-world plane (already detected with the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size.
-- [static var existingPlaneUsingGeometry: ARHitTestResult.ResultType](arhittestresult/resulttype/existingplaneusinggeometry.md)
-  A point on a real-world plane (already detected with the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size and shape.
+- [static var existingPlane: ARHitTestResult.ResultType](./existingplane.md)
+  A point on a real-world plane (already detected with the [`planeDetection`](../../arworldtrackingconfiguration/planedetection-swift.property.md) option), without considering the plane’s size.
+- [static var existingPlaneUsingExtent: ARHitTestResult.ResultType](./existingplaneusingextent.md)
+  A point on a real-world plane (already detected with the [`planeDetection`](../../arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size.
+- [static var existingPlaneUsingGeometry: ARHitTestResult.ResultType](./existingplaneusinggeometry.md)
+  A point on a real-world plane (already detected with the [`planeDetection`](../../arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size and shape.
 
 
 ---

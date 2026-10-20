@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default reverb preset.
 
@@ -20,7 +21,8 @@ static var automatic: ARView.Environment.Reverb { get }
 
 ## See Also
 
-- [ARView.Environment.Reverb.Preset](arview/environment-swift.struct/reverb-swift.enum/preset.md)
+### Reverb presets
+- [ARView.Environment.Reverb.Preset](./preset.md)
   Available reverb preset values.
 
 

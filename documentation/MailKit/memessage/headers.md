@@ -1,7 +1,8 @@
 # headers
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains the message’s header values.
 
@@ -14,13 +15,18 @@ A dictionary that contains the message’s header values.
 var headers: [String : [String]]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *,NSArray<NSString *> *> * headers;
+```
+
 #### Discussion
 
 If MailKit hasn’t downloaded the full message, this dictionary may only contain a subset of the message’s headers.
 
 ## See Also
 
-- [var rawData: Data?](memessage/rawdata.md)
+### Accessing Message Content
+- [var rawData: Data?](./rawdata.md)
   The raw RFC 2822 header and body content of the message.
 
 

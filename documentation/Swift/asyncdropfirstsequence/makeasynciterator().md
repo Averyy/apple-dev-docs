@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -19,6 +20,8 @@ Creates the asynchronous iterator that produces elements of this asynchronous se
 ```swift
 func makeAsyncIterator() -> AsyncDropFirstSequence<Base>.Iterator
 ```
+
+Available when `Base` conforms to `AsyncSequence`.
 
 #### Return Value
 

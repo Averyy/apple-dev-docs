@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Availability.UnavailableReason
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason the model is unavailable.
 
@@ -22,24 +23,25 @@ enum UnavailableReason
 ## Topics
 
 ### Getting the unavailable reasons
-- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason.deviceNotEligible](privatecloudcomputelanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md)
+- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason.deviceNotEligible](./unavailablereason/devicenoteligible.md)
   The device does not support Apple Intelligence.
-- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason.systemNotReady](privatecloudcomputelanguagemodel/availability-swift.enum/unavailablereason/systemnotready.md)
+- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason.systemNotReady](./unavailablereason/systemnotready.md)
   The system is not yet ready to serve PCC requests.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PrivateCloudComputeLanguageModel.Availability.available](privatecloudcomputelanguagemodel/availability-swift.enum/available.md)
+### Checking for availability
+- [PrivateCloudComputeLanguageModel.Availability.available](./available.md)
   The system is ready to make requests.
-- [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](privatecloudcomputelanguagemodel/availability-swift.enum/unavailable(_:).md)
+- [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](./unavailable%28_%29.md)
   The system isn’t ready for requests.
 
 

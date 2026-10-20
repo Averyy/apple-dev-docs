@@ -1,7 +1,8 @@
 # time
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time this command starts during playback.
 

@@ -1,7 +1,8 @@
 # MutableSpan
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 
@@ -24,94 +25,95 @@ struct MutableSpan<Element> where Element : ~Copyable
 ## Topics
 
 ### Initializers
-- [init()](mutablespan/init.md)
+- [init()](./mutablespan/init%28%29.md)
   Create an empty span.
-- [init(mutableBytes: consuming MutableRawSpan)](mutablespan/init(mutablebytes:).md)
+- [init(mutableBytes: consuming MutableRawSpan)](./mutablespan/init%28mutablebytes%29.md)
   Convert a raw span to a typed span.
-- [init(mutating: inout MutableRawSpan)](mutablespan/init(mutating:).md)
+- [init(mutating: inout MutableRawSpan)](./mutablespan/init%28mutating%29.md)
   Mutate untyped memory as a typed span.
 ### Instance Properties
-- [var bytes: RawSpan](mutablespan/bytes-478ye.md)
+- [var bytes: RawSpan](./mutablespan/bytes-478ye.md)
   A raw span over the memory represented by this span.
-- [var bytes: RawSpan](mutablespan/bytes-61tq.md)
+- [var bytes: RawSpan](./mutablespan/bytes-61tq.md)
   Construct a raw span over the memory represented by this span.
-- [var count: Int](mutablespan/count.md)
+- [var count: Int](./mutablespan/count.md)
   The number of elements in the span.
-- [var indices: Range<MutableSpan<Element>.Index>](mutablespan/indices.md)
+- [var indices: Range<MutableSpan<Element>.Index>](./mutablespan/indices.md)
   The range of valid indices for subscripting the span.
-- [var isEmpty: Bool](mutablespan/isempty.md)
+- [var isEmpty: Bool](./mutablespan/isempty.md)
   A Boolean value indicating whether the span is empty.
-- [var mutableBytes: MutableRawSpan](mutablespan/mutablebytes-7cwoq.md)
+- [var mutableBytes: MutableRawSpan](./mutablespan/mutablebytes-7cwoq.md)
   Construct a mutable raw span over the memory represented by this span.
-- [var mutableBytes: MutableRawSpan](mutablespan/mutablebytes-9ha97.md)
+- [var mutableBytes: MutableRawSpan](./mutablespan/mutablebytes-9ha97.md)
   A mutable raw span over the memory represented by this span.
-- [var span: Span<Element>](mutablespan/span.md)
+- [var span: Span<Element>](./mutablespan/span.md)
   Borrow the underlying initialized memory for read-only access.
 ### Instance Methods
-- [func extracting(some RangeExpression<Int>) -> MutableSpan<Element>](mutablespan/extracting(_:)-2g8w3.md)
+- [func extracting(some RangeExpression<Int>) -> MutableSpan<Element>](./mutablespan/extracting%28_%29-2g8w3.md)
   Constructs a new span over the items within the supplied range of indices within this span.
-- [func extracting(UnboundedRange) -> MutableSpan<Element>](mutablespan/extracting(_:)-80srp.md)
+- [func extracting(UnboundedRange) -> MutableSpan<Element>](./mutablespan/extracting%28_%29-80srp.md)
   Constructs a new span over all the items of this span.
-- [func extracting(Range<MutableSpan<Element>.Index>) -> MutableSpan<Element>](mutablespan/extracting(_:)-bphj.md)
+- [func extracting(Range<MutableSpan<Element>.Index>) -> MutableSpan<Element>](./mutablespan/extracting%28_%29-bphj.md)
   Constructs a new span over the items within the supplied range of indices within this span.
-- [func extracting(droppingFirst: Int) -> MutableSpan<Element>](mutablespan/extracting(droppingfirst:).md)
+- [func extracting(droppingFirst: Int) -> MutableSpan<Element>](./mutablespan/extracting%28droppingfirst%29.md)
   Returns a span over all but the given number of initial elements.
-- [func extracting(droppingLast: Int) -> MutableSpan<Element>](mutablespan/extracting(droppinglast:).md)
+- [func extracting(droppingLast: Int) -> MutableSpan<Element>](./mutablespan/extracting%28droppinglast%29.md)
   Returns a span over all but the given number of trailing elements.
-- [func extracting(first: Int) -> MutableSpan<Element>](mutablespan/extracting(first:).md)
+- [func extracting(first: Int) -> MutableSpan<Element>](./mutablespan/extracting%28first%29.md)
   Returns a span containing the initial elements of this span, up to the specified maximum length.
-- [func extracting(last: Int) -> MutableSpan<Element>](mutablespan/extracting(last:).md)
+- [func extracting(last: Int) -> MutableSpan<Element>](./mutablespan/extracting%28last%29.md)
   Returns a span containing the trailing elements of the span, up to the given maximum length.
-- [func extracting(unchecked: Range<MutableSpan<Element>.Index>) -> MutableSpan<Element>](mutablespan/extracting(unchecked:)-23qq.md)
+- [func extracting(unchecked: Range<MutableSpan<Element>.Index>) -> MutableSpan<Element>](./mutablespan/extracting%28unchecked%29-23qq.md)
   Constructs a new span over the items within the supplied range of indices within this span.
-- [func extracting(unchecked: ClosedRange<MutableSpan<Element>.Index>) -> MutableSpan<Element>](mutablespan/extracting(unchecked:)-4y8oj.md)
+- [func extracting(unchecked: ClosedRange<MutableSpan<Element>.Index>) -> MutableSpan<Element>](./mutablespan/extracting%28unchecked%29-4y8oj.md)
   Constructs a new span over the items within the supplied range of indices within this span.
-- [func swapAt(MutableSpan<Element>.Index, MutableSpan<Element>.Index)](mutablespan/swapat(_:_:).md)
+- [func swapAt(MutableSpan<Element>.Index, MutableSpan<Element>.Index)](./mutablespan/swapat%28_,_%29.md)
   Exchange the elements at the two given indices.
-- [func swapAt(unchecked: MutableSpan<Element>.Index, unchecked: MutableSpan<Element>.Index)](mutablespan/swapat(unchecked:unchecked:).md)
+- [func swapAt(unchecked: MutableSpan<Element>.Index, unchecked: MutableSpan<Element>.Index)](./mutablespan/swapat%28unchecked,unchecked%29.md)
   Exchange the elements at the two given indices.
-- [func update(repeating: consuming Element)](mutablespan/update(repeating:).md)
+- [func update(repeating: consuming Element)](./mutablespan/update%28repeating%29.md)
   Update every element of this span to the given value.
-- [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafebufferpointer(_:).md)
+- [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](./mutablespan/withunsafebufferpointer%28_%29.md)
   Call a closure with a pointer to the viewed contiguous storage.
-- [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafebytes(_:).md)
+- [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./mutablespan/withunsafebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
-- [func withUnsafeMutableBufferPointer<E, Result>((UnsafeMutableBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafemutablebufferpointer(_:).md)
+- [func withUnsafeMutableBufferPointer<E, Result>((UnsafeMutableBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](./mutablespan/withunsafemutablebufferpointer%28_%29.md)
   Call a closure with a pointer to the viewed mutable contiguous storage.
-- [func withUnsafeMutableBytes<E, Result>((UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<E, Result>((UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./mutablespan/withunsafemutablebytes%28_%29.md)
   Calls the given closure with a mutable pointer to the underlying bytes of the viewed contiguous storage.
 ### Subscripts
-- [subscript(MutableSpan<Element>.Index) -> Element](mutablespan/subscript(_:).md)
+- [subscript(MutableSpan<Element>.Index) -> Element](./mutablespan/subscript%28_%29.md)
   Accesses the element at the specified index in the `MutableSpan`.
-- [subscript(unchecked _: MutableSpan<Element>.Index) -> Element](mutablespan/subscript(unchecked:).md)
+- [subscript(unchecked _: MutableSpan<Element>.Index) -> Element](./mutablespan/subscript%28unchecked%29.md)
   Accesses the element at the specified index in the `MutableSpan`.
 ### Type Aliases
-- [MutableSpan.Index](mutablespan/index.md)
+- [MutableSpan.Index](./mutablespan/index.md)
   The type that represents an index in a `MutableSpan`.
 ### Default Implementations
-- [Iterable Implementations](mutablespan/iterable-implementations.md)
+- [Iterable Implementations](./mutablespan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Iterable](iterable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [Iterable](./iterable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Span](span.md)
+### Safe Memory Access
+- [struct Span](./span.md)
   `Span<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
-- [struct RawSpan](rawspan.md)
+- [struct RawSpan](./rawspan.md)
   `RawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct OutputSpan](outputspan.md)
+- [struct OutputSpan](./outputspan.md)
   `OutputSpan` is a reference to a contiguous region of memory that starts with some number of initialized `Element` instances followed by uninitialized memory. It provides operations to access the items it stores, as well as to add new elements and to remove existing ones.
-- [struct OutputRawSpan](outputrawspan.md)
+- [struct OutputRawSpan](./outputrawspan.md)
   `OutputRawSpan` is a reference to a contiguous region of memory which starts with some number of initialized bytes, followed by uninitialized memory. It provides operations to access the bytes it stores, as well as to append and to remove bytes.
-- [struct UTF8Span](utf8span.md)
+- [struct UTF8Span](./utf8span.md)
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
-- [struct MutableRawSpan](mutablerawspan.md)
+- [struct MutableRawSpan](./mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
 
 

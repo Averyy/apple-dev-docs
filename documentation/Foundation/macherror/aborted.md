@@ -1,7 +1,8 @@
 # aborted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The operation was aborted.  Ipc code will catch this and reflect it as a message error.
 

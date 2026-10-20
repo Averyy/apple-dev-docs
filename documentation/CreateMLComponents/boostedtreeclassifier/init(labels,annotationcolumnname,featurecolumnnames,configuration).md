@@ -1,7 +1,8 @@
 # init(labels:annotationColumnName:featureColumnNames:configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a boosted tree classifier.
 
@@ -22,10 +23,12 @@ init(labels: Set<Label?>, annotationColumnName: String, featureColumnNames: [Str
 
 #### Discussion
 
-- Parameters - labels: The set of possible labels.
-- annotationColumnName: The name of the column containing the ground truth labels.
-- featureColumnNames: The names of the feature columns.
-- configuration: The configuration.
+- Parameters
+
+  - labels: The set of possible labels.
+  - annotationColumnName: The name of the column containing the ground truth labels.
+  - featureColumnNames: The names of the feature columns.
+  - configuration: The configuration.
 
 
 ---

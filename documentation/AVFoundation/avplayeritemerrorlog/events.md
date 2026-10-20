@@ -1,7 +1,8 @@
 # events
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A chronologically ordered array of player item error log event objects.
 
@@ -20,17 +21,22 @@ A chronologically ordered array of player item error log event objects.
 var events: [AVPlayerItemErrorLogEvent] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVPlayerItemErrorLogEvent *> * events;
+```
+
 #### Discussion
 
-The array contains [`AVPlayerItemErrorLogEvent`](avplayeritemerrorlogevent.md) objects that represent the chronological sequence of events contained in the error log.
+The array contains [`AVPlayerItemErrorLogEvent`](../avplayeritemerrorlogevent.md) objects that represent the chronological sequence of events contained in the error log.
 
-This property isn’t observable. For more information about key-value observing, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
+This property isn’t observable. For more information about key-value observing, see [Using Key-Value Observing in Swift](../../Swift/using-key-value-observing-in-swift.md).
 
 ## See Also
 
-- [func extendedLogData() -> Data?](avplayeritemerrorlog/extendedlogdata.md)
+### Accessing error data
+- [func extendedLogData() -> Data?](./extendedlogdata%28%29.md)
   Returns a serialized representation of the error log in the Extended Log File Format.
-- [var extendedLogDataStringEncoding: UInt](avplayeritemerrorlog/extendedlogdatastringencoding.md)
+- [var extendedLogDataStringEncoding: UInt](./extendedlogdatastringencoding.md)
   The string encoding of the extended log data.
 
 

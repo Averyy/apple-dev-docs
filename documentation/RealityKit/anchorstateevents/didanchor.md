@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidAnchor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event that triggers on an entity after the entity is anchored with certain reasons.
 
@@ -22,17 +23,17 @@ struct DidAnchor
 ## Topics
 
 ### Instance Properties
-- [let entity: Entity](anchorstateevents/didanchor/entity.md)
-- [let reason: AnchorStateEvents.DidAnchor.Reason](anchorstateevents/didanchor/reason-swift.property.md)
+- [let entity: Entity](./didanchor/entity.md)
+- [let reason: AnchorStateEvents.DidAnchor.Reason](./didanchor/reason-swift.property.md)
 ### Enumerations
-- [AnchorStateEvents.DidAnchor.Reason](anchorstateevents/didanchor/reason-swift.enum.md)
+- [AnchorStateEvents.DidAnchor.Reason](./didanchor/reason-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

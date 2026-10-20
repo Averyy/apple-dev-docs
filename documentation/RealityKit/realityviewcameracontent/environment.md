@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s background and default lighting properties.
 

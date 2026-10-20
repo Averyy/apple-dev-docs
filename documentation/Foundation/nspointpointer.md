@@ -1,7 +1,8 @@
 # NSPointPointer
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type indicating a parameter is a pointer to an `NSPoint` structure.
 
@@ -15,9 +16,14 @@ Type indicating a parameter is a pointer to an `NSPoint` structure.
 typealias NSPointPointer = UnsafeMutablePointer<NSPoint>
 ```
 
+```c
+typedef NSPoint * NSPointPointer;
+```
+
 ## See Also
 
-- [typealias NSPointArray](nspointarray.md)
+### Related Types
+- [typealias NSPointArray](./nspointarray.md)
   Type indicating a parameter is array of `NSPoint` structures.
 
 

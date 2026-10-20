@@ -1,7 +1,8 @@
 # outputVideoEffectDidStart(for:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that Presenter Overlay started.
 
@@ -19,13 +20,18 @@ Tells the delegate that Presenter Overlay started.
 optional func outputVideoEffectDidStart(for stream: SCStream)
 ```
 
+```objc
+- (void) outputVideoEffectDidStartForStream:(SCStream *) stream;
+```
+
 ## Parameters
 
 - `stream`: The stream using Presenter Overlay.
 
 ## See Also
 
-- [func outputVideoEffectDidStop(for: SCStream)](scstreamdelegate/outputvideoeffectdidstop(for:).md)
+### Responding to Presenter Overlay
+- [func outputVideoEffectDidStop(for: SCStream)](./outputvideoeffectdidstop%28for%29.md)
   Tells the delegate that Presenter Overlay stopped.
 
 

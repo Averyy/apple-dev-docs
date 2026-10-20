@@ -1,7 +1,8 @@
 # kAEAny
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a single element chosen at random from the container.
 

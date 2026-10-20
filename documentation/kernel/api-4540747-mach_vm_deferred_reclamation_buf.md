@@ -1,14 +1,15 @@
 # mach_vm_deferred_reclamation_buffer_flush
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_vm_deferred_reclamation_buffer_flush(task_t target_task, uint32_t num_entries_to_reclaim);
 ```
 

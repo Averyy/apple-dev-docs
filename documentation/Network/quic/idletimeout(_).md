@@ -1,7 +1,8 @@
 # idleTimeout(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the idle timeout for the QUIC connection, in milliseconds.
 

@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The character range.
 
@@ -22,11 +23,12 @@ static let range: NSAttributedString.TextLayoutSectionKey
 
 #### Discussion
 
-An [`NSValue`](nsvalue.md) object containing an `NSRange` representing a character range. The default value is a range covering the entire string.
+An [`NSValue`](../../nsvalue.md) object containing an `NSRange` representing a character range. The default value is a range covering the entire string.
 
 ## See Also
 
-- [static let orientation: NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey/orientation.md)
+### Getting keys for text layouts
+- [static let orientation: NSAttributedString.TextLayoutSectionKey](./orientation.md)
   The orientation of the text.
 
 

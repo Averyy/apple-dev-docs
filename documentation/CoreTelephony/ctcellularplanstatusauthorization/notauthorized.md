@@ -1,7 +1,8 @@
 # CTCellularPlanStatusAuthorization.notAuthorized
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the person didn’t grant authorization, or explicitly denied it.
 
@@ -16,13 +17,18 @@ A status that indicates the person didn’t grant authorization, or explicitly d
 case notAuthorized
 ```
 
+```c
+CTCellularPlanStatusAuthorizationNotAuthorized
+```
+
 ## See Also
 
-- [CTCellularPlanStatusAuthorization.authorized](ctcellularplanstatusauthorization/authorized.md)
+### Determining an authorization state
+- [CTCellularPlanStatusAuthorization.authorized](./authorized.md)
   A status that indicates the person granted authorization to access cellular plan status information for the phone number.
-- [CTCellularPlanStatusAuthorization.restricted](ctcellularplanstatusauthorization/restricted.md)
+- [CTCellularPlanStatusAuthorization.restricted](./restricted.md)
   A status that indicates a feature is unavailable for the given phone number.
-- [CTCellularPlanStatusAuthorization.notSupported](ctcellularplanstatusauthorization/notsupported.md)
+- [CTCellularPlanStatusAuthorization.notSupported](./notsupported.md)
   A status that indicates the system can’t determine authorization.
 
 

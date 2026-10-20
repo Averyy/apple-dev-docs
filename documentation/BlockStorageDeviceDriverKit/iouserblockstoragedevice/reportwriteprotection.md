@@ -1,7 +1,8 @@
 # ReportWriteProtection
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the media is write protected, in response to a call from the framework.
 
@@ -10,13 +11,13 @@ Returns a Boolean value that indicates whether the media is write protected, in 
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t ReportWriteProtection(bool *isWriteProtected);
 ```
 
 #### Return Value
 
-A value that indicates the report-write-protection result. Return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) to inidicate success. To indicate a failure, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants) for error definitions.
+A value that indicates the report-write-protection result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 
 ## Parameters
 
@@ -24,9 +25,10 @@ A value that indicates the report-write-protection result. Return [`kIOReturnSuc
 
 ## See Also
 
-- [ReportEjectability](iouserblockstoragedevice/reportejectability.md)
+### Reporting Device Capabilities
+- [ReportEjectability](./reportejectability.md)
   Returns a Boolean value that indicates whether the media is ejectable, in response to a call from the framework.
-- [ReportRemovability](iouserblockstoragedevice/reportremovability.md)
+- [ReportRemovability](./reportremovability.md)
   Returns a Boolean value that indicates whether the media is removable, in response to a call from the framework.
 
 

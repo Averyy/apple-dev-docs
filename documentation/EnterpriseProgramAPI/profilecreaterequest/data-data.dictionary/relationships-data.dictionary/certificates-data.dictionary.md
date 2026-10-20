@@ -1,20 +1,21 @@
 # ProfileCreateRequest.Data.Relationships.Certificates
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object ProfileCreateRequest.Data.Relationships.Certificates
 ```
 
 ## Topics
 
 ### Objects
-- [object ProfileCreateRequest.Data.Relationships.Certificates.Data](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Relationships.Certificates.Data](./certificates-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties
@@ -23,9 +24,10 @@ object ProfileCreateRequest.Data.Relationships.Certificates
 
 ## See Also
 
-- [object ProfileCreateRequest.Data.Relationships.BundleId](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)
+### Objects
+- [object ProfileCreateRequest.Data.Relationships.BundleId](./bundleid-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object ProfileCreateRequest.Data.Relationships.Devices](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Relationships.Devices](./devices-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

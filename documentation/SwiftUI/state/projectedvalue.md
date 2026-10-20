@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A binding to the state value.
 
@@ -22,7 +23,7 @@ var projectedValue: Binding<Value> { get }
 
 #### Discussion
 
-Use the projected value to get a [`Binding`](binding.md) to the stored value. The binding provides a two-way connection to the stored value. To access the `projectedValue`, prefix the property variable with a dollar sign (`$`).
+Use the projected value to get a [`Binding`](../binding.md) to the stored value. The binding provides a two-way connection to the stored value. To access the `projectedValue`, prefix the property variable with a dollar sign (`$`).
 
 In the following example, `PlayerView` projects a binding of the state property `isPlaying` to the `PlayButton` view using `$isPlaying`. That enables the play button to both read and write the value:
 
@@ -43,7 +44,8 @@ struct PlayerView: View {
 
 ## See Also
 
-- [var wrappedValue: Value](state/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value](./wrappedvalue.md)
   The underlying value referenced by the state variable.
 
 

@@ -1,7 +1,8 @@
 # ioSurfaceCoreAnimation
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The CVPixelBuffer’s IOSurface is compatible with CoreAnimation CALayer.
 

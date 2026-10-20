@@ -1,13 +1,14 @@
 # BundleId.Attributes
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Bundle IDs resource.
 
 ## Declaration
 
-```swift
+```
 object BundleId.Attributes
 ```
 

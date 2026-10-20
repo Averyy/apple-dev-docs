@@ -1,7 +1,8 @@
 # AssignedWorkDocumentConfiguration
 
 **Framework**: Assignables  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that specifies the score of a document.
 
@@ -9,7 +10,7 @@ A type that specifies the score of a document.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,18 +21,19 @@ protocol AssignedWorkDocumentConfiguration : Hashable
 ## Topics
 
 ### Configuring the score
-- [var manualScore: Double?](assignedworkdocumentconfiguration/manualscore.md)
+- [var manualScore: Double?](./assignedworkdocumentconfiguration/manualscore.md)
   An optional manual score for this work. If `nil`, the work score can be synthesized from the question data and associated annotations.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol AssignableDocumentConfiguration](assignabledocumentconfiguration.md)
+### Configuration
+- [protocol AssignableDocumentConfiguration](./assignabledocumentconfiguration.md)
   A type that specifies the options for an assignable document.
 
 

@@ -1,17 +1,18 @@
 # bodyLandmarkKeyRightShoulder
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right shoulder.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightShoulder)
+- iPadOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightShoulder)
+- Mac Catalyst 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightShoulder)
+- macOS 11.0+ - Deprecated in 11.0 (renamed: VNHumanBodyPoseObservation.JointName.rightShoulder)
+- tvOS 14.0+ - Deprecated in 14.0 (renamed: VNHumanBodyPoseObservation.JointName.rightShoulder)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: VNHumanBodyPoseObservation.JointName.rightShoulder)
 
 ## Declaration
 
@@ -19,19 +20,24 @@ The right shoulder.
 static let bodyLandmarkKeyRightShoulder: VNRecognizedPointKey
 ```
 
+```c
+extern VNRecognizedPointKey const VNBodyLandmarkKeyRightShoulder;
+```
+
 ## See Also
 
-- [static let bodyLandmarkKeyNeck: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyneck.md)
+### Torso
+- [static let bodyLandmarkKeyNeck: VNRecognizedPointKey](./bodylandmarkkeyneck.md)
   The center point of the neck.
-- [static let bodyLandmarkKeyLeftShoulder: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyleftshoulder.md)
+- [static let bodyLandmarkKeyLeftShoulder: VNRecognizedPointKey](./bodylandmarkkeyleftshoulder.md)
   The left shoulder.
-- [static let bodyLandmarkKeyLeftHip: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeylefthip.md)
+- [static let bodyLandmarkKeyLeftHip: VNRecognizedPointKey](./bodylandmarkkeylefthip.md)
   The left hip.
-- [static let bodyLandmarkKeyRightHip: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyrighthip.md)
+- [static let bodyLandmarkKeyRightHip: VNRecognizedPointKey](./bodylandmarkkeyrighthip.md)
   The right hip.
-- [static let bodyLandmarkKeyRoot: VNRecognizedPointKey](vnrecognizedpointkey/bodylandmarkkeyroot.md)
+- [static let bodyLandmarkKeyRoot: VNRecognizedPointKey](./bodylandmarkkeyroot.md)
   The center point of the waist.
-- [static let bodyLandmarkRegionKeyTorso: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeytorso.md)
+- [static let bodyLandmarkRegionKeyTorso: VNRecognizedPointGroupKey](../vnrecognizedpointgroupkey/bodylandmarkregionkeytorso.md)
   A group key identifying the torso, which includes the neck, shoulders, hips, and root.
 
 

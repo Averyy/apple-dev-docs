@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:itemsForBeginning:tab:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a new drag session has begun in the sidebar from the specified `tab`. Return drag items if the specified tab can be dragged, or an empty array if no drags should begin. Note that if drag items are returned on tabs in groups that allow reordering, then tab reordering is disabled when the sidebar is not in editing.
 
@@ -15,6 +16,10 @@ Called when a new drag session has begun in the sidebar from the specified `tab`
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, itemsForBeginning dragSession: any UIDragSession, tab: UITab) -> [UIDragItem]
+```
+
+```objc
+- (NSArray<UIDragItem *> *) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar itemsForBeginningDragSession:(id<UIDragSession>) dragSession tab:(UITab *) tab;
 ```
 
 

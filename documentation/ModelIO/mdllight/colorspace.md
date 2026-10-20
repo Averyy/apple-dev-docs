@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the Core Graphics color space to be used for interpreting the lightâ€™s color information.
 
@@ -19,13 +20,18 @@ The name of the Core Graphics color space to be used for interpreting the lightâ
 var colorSpace: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSString * colorSpace;
+```
+
 ## See Also
 
-- [func irradiance(atPoint: vector_float3) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:).md)
+### Working with Lights
+- [func irradiance(atPoint: vector_float3) -> Unmanaged<CGColor>](./irradiance%28atpoint%29.md)
   Returns the radiance of the light as received at a specific point in the same scene.
-- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:colorspace:).md)
+- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](./irradiance%28atpoint,colorspace%29.md)
   Returns the radiance of the light as received at a specific point in the same scene, expressed using the specified color space.
-- [var lightType: MDLLightType](mdllight/lighttype.md)
+- [var lightType: MDLLightType](./lighttype.md)
   The type of the light.
 
 

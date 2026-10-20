@@ -1,9 +1,10 @@
 # pop()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Sends a [`pop()`](nscursor/pop()-swift.type.method.md) message to the receiver’s class.
+Sends a [`pop()`](./pop%28%29-swift.type.method.md) message to the receiver’s class.
 
 **Availability**:
 - iOS 13.0+
@@ -17,13 +18,18 @@ Sends a [`pop()`](nscursor/pop()-swift.type.method.md) message to the receiver�
 func pop()
 ```
 
+```objc
+- (void) pop;
+```
+
 ## See Also
 
-- [class func pop()](nscursor/pop-swift.type.method.md)
+### Controlling which cursor is current
+- [class func pop()](./pop%28%29-swift.type.method.md)
   Pops the current cursor off the top of the stack.
-- [func push()](nscursor/push.md)
+- [func push()](./push%28%29.md)
   Puts the receiver on top of the cursor stack and makes it the current cursor.
-- [func set()](nscursor/set.md)
+- [func set()](./set%28%29.md)
   Makes the receiver the current cursor.
 
 

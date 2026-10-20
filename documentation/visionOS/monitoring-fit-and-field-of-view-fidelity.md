@@ -1,6 +1,8 @@
 # Monitoring fit and field of view fidelity
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [MonitoringVisualFidelityInRealTime.zip](https://docs-assets.developer.apple.com/published/21c29e2078dc/MonitoringVisualFidelityInRealTime.zip)
 
 Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
 
@@ -19,23 +21,23 @@ The sample shows how to monitor visual fidelity and visualize the required field
 
 > **Note**: This sample requires an Apple Vision Pro. The Visual Fidelity API isn’t supported in the visionOS simulator.
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 Replace `Enterprise.license` with your license file. The sample app requires a valid license file to monitor visual fidelity.
 
-#### Request the Entitlement
+#### Request the entitlement
 
-Visual fidelity monitoring is part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use the Visual Fidelity API, you need to apply for the [`Visual Fidelity monitoring`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.visual-fidelity.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
+Visual fidelity monitoring is part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use the Visual Fidelity API, you need to apply for the [`Visual Fidelity monitoring`](../BundleResources/entitlements/com.apple.developer.arkit.visual-fidelity.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
-#### Start Monitoring Visual Fidelity
+#### Start monitoring visual fidelity
 
 When you launch the sample, `ContentView` displays a Start Monitoring button, a Show Visualization button, and three controls bound to properties on `AppModel`:
 
-- **Field of View**: A picker for `FieldOfViewSelection` with six options. The four [`VisualFidelityProvider.FieldOfView`](https://developer.apple.com/documentation/arkit/visualfidelityprovider/fieldofview) presets (A, B, C, and D) cover standard regions. A custom polygon defined by 2D points in tangent-angle coordinates gives precise geometric control. Device Fit Only skips field of view monitoring when the app doesn’t need to specify a required field of view.
-- **Device Fit Updates**: A toggle for `requestDeviceFitUpdates`. Turn it on when the app needs to react to fit status, usually to coach the wearer to adjust the fit of their Vision Pro or to turn off features that depend on a valid fit. Each [`VisualFidelityData`](https://developer.apple.com/documentation/arkit/visualfidelitydata) includes the wearer’s current [`deviceFitStatus`](https://developer.apple.com/documentation/arkit/visualfidelitydata/devicefitstatus). Turn it off when the app doesn’t need fit information. Then [`deviceFitStatus`](https://developer.apple.com/documentation/arkit/visualfidelitydata/devicefitstatus) always reports `.valid`.
+- **Field of View**: A picker for `FieldOfViewSelection` with six options. The four [`VisualFidelityProvider.FieldOfView`](../ARKit/visualfidelityprovider/fieldofview.md) presets (A, B, C, and D) cover standard regions. A custom polygon defined by 2D points in tangent-angle coordinates gives precise geometric control. Device Fit Only skips field of view monitoring when the app doesn’t need to specify a required field of view.
+- **Device Fit Updates**: A toggle for `requestDeviceFitUpdates`. Turn it on when the app needs to react to fit status, usually to coach the wearer to adjust the fit of their Vision Pro or to turn off features that depend on a valid fit. Each [`VisualFidelityData`](../ARKit/visualfidelitydata.md) includes the wearer’s current [`deviceFitStatus`](../ARKit/visualfidelitydata/devicefitstatus.md). Turn it off when the app doesn’t need fit information. Then [`deviceFitStatus`](../ARKit/visualfidelitydata/devicefitstatus.md) always reports `.valid`.
 - **Coaching Alerts**: A toggle for `presentCoachingAlerts`. Turn it on to let the system handle coaching. The system shows its own notices when fit or coverage drifts out of range. For example, a notice titled “Adjust Fit” with guidance like, “Move Vision Pro slightly up”. The system dismisses the notice automatically when the condition resolves. Turn it off when the app presents its own coaching UI.
 
-When the wearer taps Start Monitoring, `ToggleMonitoringButton` calls `AppModel.startMonitoring()`. The `AppModel` captures the current selections, creates a [`VisualFidelityProvider`](https://developer.apple.com/documentation/arkit/visualfidelityprovider) with them, and runs it on an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession):
+When the wearer taps Start Monitoring, `ToggleMonitoringButton` calls `AppModel.startMonitoring()`. The `AppModel` captures the current selections, creates a [`VisualFidelityProvider`](../ARKit/visualfidelityprovider.md) with them, and runs it on an [`ARKitSession`](../ARKit/arkitsession.md):
 
 ```swift
 // AppModel.swift
@@ -52,7 +54,7 @@ try await session.run([provider])
 
 With the session running, ARKit delivers a stream of fidelity data to `AppModel`.
 
-#### Respond to Fidelity Updates
+#### Respond to fidelity updates
 
 When `AppModel` runs `monitor()`, it watches fidelity updates and stores the count, fit status, and field of view status that `StatusView` displays:
 
@@ -73,9 +75,9 @@ private func apply(_ data: VisualFidelityData) {
 }
 ```
 
-#### Visualize the Field of View
+#### Visualize the field of view
 
-When the wearer taps the Show Visualization button, the app opens an immersive space where `ImmersiveView` outlines each eye’s field of view using a series of spheres, blue for the left eye, red for the right. The button isn’t available when the wearer selects a custom polygon or device fit only, since ARKit only delivers [`FieldOfViewAnchor`](https://developer.apple.com/documentation/arkit/fieldofviewanchor) updates for presets.
+When the wearer taps the Show Visualization button, the app opens an immersive space where `ImmersiveView` outlines each eye’s field of view using a series of spheres, blue for the left eye, red for the right. The button isn’t available when the wearer selects a custom polygon or device fit only, since ARKit only delivers [`FieldOfViewAnchor`](../ARKit/fieldofviewanchor.md) updates for presets.
 
 When `AppModel` runs `monitor()`, it watches anchor updates and stores each one in `currentFieldOfViewAnchor`:
 
@@ -118,11 +120,12 @@ Use the visualization to compare presets and confirm which one covers the region
 
 ## See Also
 
-- [Accessing the main camera](accessing-the-main-camera.md)
+### Enterprise APIs for visionOS
+- [Accessing the main camera](./accessing-the-main-camera.md)
   Add camera-based features to enterprise apps.
-- [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
+- [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
-- [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
+- [Locating and decoding barcodes in 3D space](./locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 
 

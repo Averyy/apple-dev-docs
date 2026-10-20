@@ -1,7 +1,8 @@
 # canInit(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines whether the protocol subclass can handle the specified task.
 
@@ -20,6 +21,10 @@ Determines whether the protocol subclass can handle the specified task.
 class func canInit(with task: URLSessionTask) -> Bool
 ```
 
+```objc
++ (BOOL) canInitWithTask:(NSURLSessionTask *) task;
+```
+
 #### Discussion
 
 A subclass should inspect the task’s request and determine whether or not the implementation can perform a load with that task.
@@ -32,7 +37,8 @@ This is an abstract method and subclasses must provide an implementation.
 
 ## See Also
 
-- [class func canInit(with: URLRequest) -> Bool](urlprotocol/caninit(with:)-76brg.md)
+### Determining If a subclass can handle a request
+- [class func canInit(with: URLRequest) -> Bool](./caninit%28with%29-76brg.md)
   Determines whether the protocol subclass can handle the specified request.
 
 

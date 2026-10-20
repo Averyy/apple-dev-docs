@@ -1,18 +1,19 @@
 # CGLineJoin.bevel
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A join with a squared-off end. Core Graphics draws the line to extend beyond the endpoint of the path, for a distance of 1/2 the line’s width.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,15 @@ A join with a squared-off end. Core Graphics draws the line to extend beyond the
 case bevel
 ```
 
+```c
+kCGLineJoinBevel
+```
+
 ## See Also
 
-- [CGLineJoin.miter](cglinejoin/miter.md)
-- [CGLineJoin.round](cglinejoin/round.md)
+### Constants
+- [CGLineJoin.miter](./miter.md)
+- [CGLineJoin.round](./round.md)
   A join with a rounded end. Core Graphics draws the line to extend beyond the endpoint of the path. The line ends with a semicircular arc with a radius of 1/2 the line’s width, centered on the endpoint.
 
 

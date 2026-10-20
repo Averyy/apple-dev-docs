@@ -1,7 +1,8 @@
 # JSBigIntCreateWithDouble(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSBigIntCreateWithDouble(_ ctx: JSContextRef, _ value: Double, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef
+```
+
+```c
+JSValueRefJSBigIntCreateWithDouble(JSContextRef ctx, double value, JSValueRef*exception);
 ```
 
 #### Return Value

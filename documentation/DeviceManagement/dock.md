@@ -1,7 +1,8 @@
 # Dock
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the Dock.
 
@@ -10,7 +11,7 @@ The payload that configures the Dock.
 
 ## Declaration
 
-```swift
+```
 object Dock
 ```
 
@@ -18,7 +19,7 @@ object Dock
 
 Specify `com.apple.dock` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.dock` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -115,63 +116,138 @@ Specify `com.apple.dock` as the payload type.
 ## Topics
 
 ### Objects
-- [object Dock.StaticItem](dock/staticitem.md)
+- [object Dock.StaticItem](./dock/staticitem.md)
   Items that are located on the Documents side of the Dock and cannot be removed from that location.
 
 ## Properties
 
-- `AllowDockFixupOverride` (boolean): If `true`, use the file in `/Library/Preferences/com.apple.dockfixup.plist` when a new user or migrated user logs in. This option has no effect for existing users. Only available on the device channel. Available: macOS 10.12+
+- `AllowDockFixupOverride` (boolean): If `true`, use the file in `/Library/Preferences/com.apple.dockfixup.plist` when a new user or migrated user logs in. This option has no effect for existing users. Only available on the device channel.
+
+  Available: macOS 10.12+
+
+  **Default**: `false`
 - `autohide` (boolean): If `true`, enables “Automatically hide and show the Dock.”
+
+  **Default**: `false`
 - `autohide-immutable` (boolean): If `true`, locks “Automatically hide.”
+
+  **Default**: `false`
 - `contents-immutable` (boolean): If `true`, disables changes to the Dock.
-- `dblclickbehavior` (string): The behavior when the window’s title bar is double-clicked. Available: macOS 10.15+
-- `dblclickbehavior-immutable` (boolean): If `true`, locks “Double-click a window’s title bar.” Available: macOS 10.14+
+
+  **Default**: `false`
+- `dblclickbehavior` (string): The behavior when the window’s title bar is double-clicked.
+
+  Available: macOS 10.15+
+
+  **Allowed Values**: `minimize`, `maximize`, `none`
+- `dblclickbehavior-immutable` (boolean): If `true`, locks “Double-click a window’s title bar.”
+
+  Available: macOS 10.14+
+
+  **Default**: `false`
 - `largesize` (integer): The size of the largest magnification.
+
+  **Minimum**: `16`; **Maximum**: `128`
 - `launchanim` (boolean): If `true`, enables “Animate opening applications.”
+
+  **Default**: `false`
 - `launchanim-immutable` (boolean): If `true`, locks “Animate opening applications.”
+
+  **Default**: `false`
 - `magnification` (boolean): If `true`, enables magnification.
+
+  **Default**: `false`
 - `magnify-immutable` (boolean): If `true`, locks magnification.
+
+  **Default**: `false`
 - `magsize-immutable` (boolean): If `true`, locks the magnification slider.
-- `MCXDockSpecialFolders` ([string]): One or more special folders that the device may create at user login time and place in the Dock. The “My Applications” item is only used for Simple Finder environments. The “Original Network Home” item is only used for mobile account users.
+
+  **Default**: `false`
+- `MCXDockSpecialFolders` ([string]): One or more special folders that the device may create at user login time and place in the Dock.
+
+  The “My Applications” item is only used for Simple Finder environments. The “Original Network Home” item is only used for mobile account users.
+
+  **Allowed Values**: `AddDockMCXMyApplicationsFolder`, `AddDockMCXDocumentsFolder`, `AddDockMCXSharedFolder`, `AddDockMCXOriginalNetworkHomeFolder`
 - `mineffect` (string): The minimize effect.
+
+  **Allowed Values**: `genie`, `scale`
 - `mineffect-immutable` (boolean): If `true`, locks “Minimize windows using.”
+
+  **Default**: `false`
 - `minimize-to-application` (boolean): If `true`, enables “Minimize windows into application icon.”
-- `minintoapp-immutable` (boolean): If `true`, disables the “Minimize windows into application icon” checkbox. Available: macOS 10.14+
+
+  **Default**: `false`
+- `minintoapp-immutable` (boolean): If `true`, disables the “Minimize windows into application icon” checkbox.
+
+  Available: macOS 10.14+
+
+  **Default**: `false`
 - `orientation` (string): The orientation of the Dock.
+
+  **Allowed Values**: `bottom`, `left`, `right`
 - `persistent-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock that users can remove from the Dock.
 - `persistent-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock that users can remove from the Dock.
 - `position-immutable` (boolean): If `true`, locks the position.
+
+  **Default**: `false`
 - `show-process-indicators` (boolean): If true, shows the process indicator.
-- `show-recents` (boolean): If `true`, enables “Show recent items.” Available: macOS 10.14+
+
+  **Default**: `false`
+- `show-recents` (boolean): If `true`, enables “Show recent items.”
+
+  Available: macOS 10.14+
+
+  **Default**: `false`
 - `showindicators-immutable` (boolean): If `true`, locks “Show indicators.”
-- `showrecents-immutable` (boolean): If `true`, disables “Show recent applications” checkbox. Available: macOS 10.15+
+
+  **Default**: `false`
+- `showrecents-immutable` (boolean): If `true`, disables “Show recent applications” checkbox.
+
+  Available: macOS 10.15+
+
+  **Default**: `false`
 - `size-immutable` (boolean): If `true`, locks the size slider.
+
+  **Default**: `false`
 - `static-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock that users can’t remove from that location.
 - `static-only` (boolean): If `true`, uses the `static-apps` and `static-others` dictionaries for the Dock and ignores any items in the `persistent-apps` and `persistent-others` dictionaries. If `false`, the contents are merged with the static items listed first.
+
+  **Default**: `false`
 - `static-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock that users can’t remove from that location.
 - `tilesize` (integer): The tile size. Values must be in the range from 16 to 128.
-- `windowtabbing` (string): Set the “Prefer tabs when opening documents” to the provided value. Available: macOS 10.15+
-- `windowtabbing-immutable` (boolean): If `true`, disables “Prefer tabs when opening documents” checkbox. Available: macOS 10.12+
+
+  **Minimum**: `16`; **Maximum**: `128`
+- `windowtabbing` (string): Set the “Prefer tabs when opening documents” to the provided value.
+
+  Available: macOS 10.15+
+
+  **Allowed Values**: `manual`, `always`, `fullscreen`
+- `windowtabbing-immutable` (boolean): If `true`, disables “Prefer tabs when opening documents” checkbox.
+
+  Available: macOS 10.12+
+
+  **Default**: `false`
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Desktop](desktop.md)
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

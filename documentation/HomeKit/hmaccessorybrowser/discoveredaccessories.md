@@ -1,7 +1,8 @@
 # discoveredAccessories
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of accessories discovered during a search.
 
@@ -17,15 +18,20 @@ An array of accessories discovered during a search.
 var discoveredAccessories: [HMAccessory] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMAccessory *> * discoveredAccessories;
+```
+
 #### Discussion
 
-When you start a new search by calling the [`startSearchingForNewAccessories()`](hmaccessorybrowser/startsearchingfornewaccessories().md) method, HomeKit clears the [`discoveredAccessories`](hmaccessorybrowser/discoveredaccessories.md) array. It then modifies the array as it discovers new accessories until you end the search by calling the [`stopSearchingForNewAccessories()`](hmaccessorybrowser/stopsearchingfornewaccessories().md) method.
+When you start a new search by calling the [`startSearchingForNewAccessories()`](./startsearchingfornewaccessories%28%29.md) method, HomeKit clears the [`discoveredAccessories`](./discoveredaccessories.md) array. It then modifies the array as it discovers new accessories until you end the search by calling the [`stopSearchingForNewAccessories()`](./stopsearchingfornewaccessories%28%29.md) method.
 
 ## See Also
 
-- [func startSearchingForNewAccessories()](hmaccessorybrowser/startsearchingfornewaccessories.md)
+### Discovering accessories
+- [func startSearchingForNewAccessories()](./startsearchingfornewaccessories%28%29.md)
   Starts searching for accessories not yet associated with a home.
-- [func stopSearchingForNewAccessories()](hmaccessorybrowser/stopsearchingfornewaccessories.md)
+- [func stopSearchingForNewAccessories()](./stopsearchingfornewaccessories%28%29.md)
   Stops searching for new accessories.
 
 

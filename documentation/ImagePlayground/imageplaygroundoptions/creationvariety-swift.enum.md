@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.CreationVariety
 
 **Framework**: Image Playground  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that specify how much variety to use when creating multiple images from the same concepts.
 
@@ -25,23 +26,23 @@ When you generate multiple images, use this type to specify how much to adjust t
 ## Topics
 
 ### Enumeration Cases
-- [ImagePlaygroundOptions.CreationVariety.automatic](imageplaygroundoptions/creationvariety-swift.enum/automatic.md)
+- [ImagePlaygroundOptions.CreationVariety.automatic](./creationvariety-swift.enum/automatic.md)
   An option to programmatically determine how much variety to use when creating images.
-- [ImagePlaygroundOptions.CreationVariety.high](imageplaygroundoptions/creationvariety-swift.enum/high.md)
+- [ImagePlaygroundOptions.CreationVariety.high](./creationvariety-swift.enum/high.md)
   An option to use a lot of variety when creating images.
-- [ImagePlaygroundOptions.CreationVariety.low](imageplaygroundoptions/creationvariety-swift.enum/low.md)
+- [ImagePlaygroundOptions.CreationVariety.low](./creationvariety-swift.enum/low.md)
   An option to use a low amount of variety when creating images.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

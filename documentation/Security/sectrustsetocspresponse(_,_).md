@@ -1,7 +1,8 @@
 # SecTrustSetOCSPResponse(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Attaches Online Certificate Status Protocol (OSCP) response data to a trust object.
 
@@ -20,18 +21,22 @@ Attaches Online Certificate Status Protocol (OSCP) response data to a trust obje
 func SecTrustSetOCSPResponse(_ trust: SecTrust, _ responseData: CFTypeRef?) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSetOCSPResponse(SecTrustRef trust, CFTypeRef responseData);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-This function allows the caller to provide OCSPResponse data (which may be obtained during a TLS/SSL handshake, per [`RFC3546`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3546)) as input to a trust evaluation. If this data is available, it can obviate the need to contact an OCSP server for current revocation information.
+This function allows the caller to provide OCSPResponse data (which may be obtained during a TLS/SSL handshake, per [RFC3546](https://tools.ietf.org/html/rfc3546)) as input to a trust evaluation. If this data is available, it can obviate the need to contact an OCSP server for current revocation information.
 
 ## Parameters
 
 - `trust`: The trust evaluation object to modify.
-- `responseData`: Either a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object containing a single DER-encoded OCSPResponse (per [`RFC2560`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2560)), or a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) of these.
+- `responseData`: Either a [`CFData`](../CoreFoundation/cfdata.md) object containing a single DER-encoded OCSPResponse (per [RFC2560](https://tools.ietf.org/html/rfc2560)), or a [`CFArray`](../CoreFoundation/cfarray.md) of these.
 
 
 ---

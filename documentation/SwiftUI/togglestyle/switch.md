@@ -1,7 +1,8 @@
 # switch
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A toggle style that displays a leading label and a trailing switch.
 
@@ -21,44 +22,47 @@ A toggle style that displays a leading label and a trailing switch.
 nonisolated static var `switch`: SwitchToggleStyle { get }
 ```
 
+Available when `Self` is `SwitchToggleStyle`.
+
 #### Discussion
 
-Apply this style to a [`Toggle`](toggle.md) or to a view hierarchy that contains toggles using the [`toggleStyle(_:)`](view/togglestyle(_:).md) modifier:
+Apply this style to a [`Toggle`](../toggle.md) or to a view hierarchy that contains toggles using the [`toggleStyle(_:)`](../view/togglestyle%28_%29.md) modifier:
 
 ```swift
 Toggle("Enhance Sound", isOn: $isEnhanced)
     .toggleStyle(.switch)
 ```
 
-The style produces a label that describes the purpose of the toggle and a switch that shows the toggle’s state. The user taps or clicks the switch to change the toggle’s state. The default appearance is similar across platforms, although the way you use switches in your user interface varies a little, as described in [`Toggles`](https://developer.apple.com/design/human-interface-guidelines/toggles) in the Human Interface Guidelines.
+The style produces a label that describes the purpose of the toggle and a switch that shows the toggle’s state. The user taps or clicks the switch to change the toggle’s state. The default appearance is similar across platforms, although the way you use switches in your user interface varies a little, as described in [Toggles](https://developer.apple.com/design/human-interface-guidelines/toggles) in the Human Interface Guidelines.
 
 **iOS**:
 
-![A screenshot of the text On appearing to the left of a toggle switch that's on. The toggle's tint color is green. The toggle and its text appear in a rounded rectangle, and are aligned with opposite edges of the rectangle.](/images/com.apple.SwiftUI/ToggleStyle-switch-1-iOS@2x.png)
+![A screenshot of the text On appearing to the left of a toggle switch that's on. The toggle's tint color is green. The toggle and its text appear in a rounded rectangle, and are aligned with opposite edges of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-switch-1-iOS@2x.png)
 
 **macOS**:
 
-![A screenshot of the text On appearing to the left of a toggle switch that's on. The toggle's tint color is blue. The toggle and its text are adjacent to each other.](/images/com.apple.SwiftUI/ToggleStyle-switch-1-macOS@2x.png)
+![A screenshot of the text On appearing to the left of a toggle switch that's on. The toggle's tint color is blue. The toggle and its text are adjacent to each other.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-switch-1-macOS@2x.png)
 
 **watchOS**:
 
-![A screenshot of the text On appearing to the left of a toggle switch that's on. The toggle's tint color is green. The toggle and its text appear in a rounded rectangle, and are aligned with opposite edges of the rectangle.](/images/com.apple.SwiftUI/ToggleStyle-switch-1-watchOS@2x.png)
+![A screenshot of the text On appearing to the left of a toggle switch that's on. The toggle's tint color is green. The toggle and its text appear in a rounded rectangle, and are aligned with opposite edges of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-switch-1-watchOS@2x.png)
 
 **tvOS**:
 
-![A screenshot of three buttons labeled Show Lyrics, Shuffle, and Repeat, stacked vertically. The first is highlighted. The second is on, while the others are off.](/images/com.apple.SwiftUI/ToggleStyle-automatic-2-tvOS@2x.png)
+![A screenshot of three buttons labeled Show Lyrics, Shuffle, and Repeat, stacked vertically. The first is highlighted. The second is on, while the others are off.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-automatic-2-tvOS@2x.png)
 
-In iOS, iPadOS, watchOS, and tvOS, the label and switch fill as much horizontal space as the toggle’s parent offers by aligning the label’s leading edge and the switch’s trailing edge with the containing view’s respective leading and trailing edges. In macOS, the style uses a minimum of horizontal space by aligning the trailing edge of the label with the leading edge of the switch. SwiftUI helps you to manage the spacing and alignment when this style appears in a [`Form`](form.md).
+In iOS, iPadOS, watchOS, and tvOS, the label and switch fill as much horizontal space as the toggle’s parent offers by aligning the label’s leading edge and the switch’s trailing edge with the containing view’s respective leading and trailing edges. In macOS, the style uses a minimum of horizontal space by aligning the trailing edge of the label with the leading edge of the switch. SwiftUI helps you to manage the spacing and alignment when this style appears in a [`Form`](../form.md).
 
-SwiftUI uses this style as the default for iOS, iPadOS, watchOS, and tvOS in most contexts when you don’t set a style, or when you apply the [`automatic`](togglestyle/automatic.md) style.
+SwiftUI uses this style as the default for iOS, iPadOS, watchOS, and tvOS in most contexts when you don’t set a style, or when you apply the [`automatic`](./automatic.md) style.
 
 ## See Also
 
-- [static var automatic: DefaultToggleStyle](togglestyle/automatic.md)
+### Getting built-in toggle styles
+- [static var automatic: DefaultToggleStyle](./automatic.md)
   The default toggle style.
-- [static var button: ButtonToggleStyle](togglestyle/button.md)
+- [static var button: ButtonToggleStyle](./button.md)
   A toggle style that displays as a button with its label as the title.
-- [static var checkbox: CheckboxToggleStyle](togglestyle/checkbox.md)
+- [static var checkbox: CheckboxToggleStyle](./checkbox.md)
   A toggle style that displays a checkbox followed by its label.
 
 

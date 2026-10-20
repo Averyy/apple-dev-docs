@@ -1,7 +1,8 @@
 # loadPreviewView()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a view that displays a preview of the attachments in the extension context.
 
@@ -14,6 +15,10 @@ Loads a view that displays a preview of the attachments in the extension context
 
 ```swift
 func loadPreviewView() -> UIView!
+```
+
+```objc
+- (UIView *) loadPreviewView;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(handler:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that opens a URL.
 
@@ -23,7 +24,7 @@ Creates an action that opens a URL.
 
 #### Discussion
 
-Use this initializer to create a custom action for opening URLs. Provide a handler that takes a URL and returns an [`OpenURLAction.Result`](openurlaction/result.md). Place your handler in the environment using the [`environment(_:_:)`](view/environment(_:_:).md) view modifier:
+Use this initializer to create a custom action for opening URLs. Provide a handler that takes a URL and returns an [`OpenURLAction.Result`](./result.md). Place your handler in the environment using the [`environment(_:_:)`](../view/environment%28_,_%29.md) view modifier:
 
 ```swift
 Text("Visit [Example Company](https://www.example.com) for details.")
@@ -33,17 +34,18 @@ Text("Visit [Example Company](https://www.example.com) for details.")
     })
 ```
 
-Any views that read the action from the environment, including the built-in [`Link`](link.md) view and [`Text`](text.md) views with markdown links, or links in attributed strings, use your action.
+Any views that read the action from the environment, including the built-in [`Link`](../link.md) view and [`Text`](../text.md) views with markdown links, or links in attributed strings, use your action.
 
-SwiftUI translates the value that your custom action’s handler returns into an appropriate Boolean result for the action call. For example, a view that uses the action declared above receives `true` when calling the action, because the handler always returns [`handled`](openurlaction/result/handled.md).
+SwiftUI translates the value that your custom action’s handler returns into an appropriate Boolean result for the action call. For example, a view that uses the action declared above receives `true` when calling the action, because the handler always returns [`handled`](./result/handled.md).
 
 ## Parameters
 
-- `handler`: The closure to run for the given URL. The closure takes a URL as input, and returns a [`OpenURLAction.Result`](openurlaction/result.md) that indicates the outcome of the action.
+- `handler`: The closure to run for the given URL. The closure takes a URL as input, and returns a [`OpenURLAction.Result`](./result.md) that indicates the outcome of the action.
 
 ## See Also
 
-- [OpenURLAction.Result](openurlaction/result.md)
+### Creating the action
+- [OpenURLAction.Result](./result.md)
   The result of a custom open URL action.
 
 

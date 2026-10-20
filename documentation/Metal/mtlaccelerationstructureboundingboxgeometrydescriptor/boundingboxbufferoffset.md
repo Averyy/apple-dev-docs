@@ -1,7 +1,8 @@
 # boundingBoxBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, to the first bounding box in the buffer.
 
@@ -19,15 +20,20 @@ The offset, in bytes, to the first bounding box in the buffer.
 var boundingBoxBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger boundingBoxBufferOffset;
+```
+
 #### Discussion
 
-The offset needs to be a multiple of [`boundingBoxStride`](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md). Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+The offset needs to be a multiple of [`boundingBoxStride`](./boundingboxstride.md). Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
-- [var boundingBoxBuffer: (any MTLBuffer)?](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbuffer.md)
+### Specifying bounding boxes data
+- [var boundingBoxBuffer: (any MTLBuffer)?](./boundingboxbuffer.md)
   A buffer that contains an array of bounding box structures.
-- [var boundingBoxStride: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
+- [var boundingBoxStride: Int](./boundingboxstride.md)
   The stride, in bytes, between bounding boxes in the buffer.
 
 

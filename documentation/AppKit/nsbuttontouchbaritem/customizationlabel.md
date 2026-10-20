@@ -1,7 +1,8 @@
 # customizationLabel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized string labeling this item during user customization. The default value is empty string.
 
@@ -15,6 +16,10 @@ The localized string labeling this item during user customization. The default v
 
 ```swift
 var customizationLabel: String! { get set }
+```
+
+```objc
+@property (copy, readwrite, null_resettable) NSString * customizationLabel;
 ```
 
 

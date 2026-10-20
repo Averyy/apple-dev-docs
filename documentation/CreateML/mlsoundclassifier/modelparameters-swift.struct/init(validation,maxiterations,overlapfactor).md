@@ -1,7 +1,8 @@
 # init(validation:maxIterations:overlapFactor:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of training parameters for a sound classifier with a validation dataset.
 
@@ -20,15 +21,18 @@ init(validation: MLSoundClassifier.ModelParameters.ValidationData = .split(strat
 
 ## Parameters
 
-- `validation`: A validation dataset represented by an [`MLSoundClassifier.ModelParameters.ValidationData`](mlsoundclassifier/modelparameters-swift.struct/validationdata.md) instance.
+- `validation`: A validation dataset represented by an [`MLSoundClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - `maxIterations`: The largest number of iterations the training session can use to train the sound classifier.
-- `overlapFactor`: A proportion of overlap the training session uses to analyze two consecutive windows in the audio data. The proportion must be in the range `[0.0, 1.0)`. Higher proportions generate more training data, but also increases the training time. The default value is `0.5`, which represents a 50% overlap.
+- `overlapFactor`: A proportion of overlap the training session uses to analyze two consecutive windows in the audio data. The proportion must be in the range `[0.0, 1.0)`. Higher proportions generate more training data, but also increases the training time.
+
+  The default value is `0.5`, which represents a 50% overlap.
 
 ## See Also
 
-- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType)](mlsoundclassifier/modelparameters-swift.struct/init(validation:maxiterations:overlapfactor:algorithm:).md)
+### Creating parameters
+- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType)](./init%28validation,maxiterations,overlapfactor,algorithm%29.md)
   Creates a new set of training parameters for a sound classifier with a validation dataset and a training algorithm.
-- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType, featureExtractionTimeWindowSize: TimeInterval)](mlsoundclassifier/modelparameters-swift.struct/init(validation:maxiterations:overlapfactor:algorithm:featureextractiontimewindowsize:).md)
+- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType, featureExtractionTimeWindowSize: TimeInterval)](./init%28validation,maxiterations,overlapfactor,algorithm,featureextractiontimewindowsize%29.md)
   Creates a new set of training parameters for a sound classifier with a validation dataset, a training algorithm, and a time-window size.
 
 

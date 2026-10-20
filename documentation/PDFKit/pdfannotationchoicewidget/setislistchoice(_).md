@@ -1,17 +1,22 @@
 # setIsListChoice(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the widget annotation is a list.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setIsListChoice(_ isList: Bool)
+```
+
+```objc
+- (void) setIsListChoice:(BOOL) isList;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ A choice widget annotation can be either a list or a pop-up menu.
 
 ## Parameters
 
-- `isList`: Send [`true`](https://developer.apple.com/documentation/swift/true) to set the choice widget annotation is a list, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+- `isList`: Send [`true`](../../Swift/true.md) to set the choice widget annotation is a list, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func isListChoice() -> Bool](pdfannotationchoicewidget/islistchoice.md)
+### Determining the Type of Choice Widget Annotation
+- [func isListChoice() -> Bool](./islistchoice%28%29.md)
   Returns a Boolean value indicating whether the widget annotation is a list.
 
 

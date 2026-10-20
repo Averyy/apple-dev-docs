@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate.
 
@@ -44,9 +45,10 @@ for await number in stream {
 
 ## See Also
 
-- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](asyncstream/dropfirst(_:).md)
+### Excluding Elements
+- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](./dropfirst%28_%29.md)
   Omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
-- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](asyncstream/drop(while:).md)
+- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](./drop%28while%29.md)
   Omits elements from the base asynchronous sequence until a given closure returns false, after which it passes through all remaining elements.
 
 

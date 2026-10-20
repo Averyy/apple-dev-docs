@@ -1,7 +1,8 @@
 # isUnread
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var isUnread: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isUnread) BOOL unread;
 ```
 
 

@@ -1,7 +1,8 @@
 # isCollapsed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls the visibility of the candidate list.
 
@@ -14,15 +15,20 @@ A Boolean value that controls the visibility of the candidate list.
 var isCollapsed: Bool { get set }
 ```
 
+```objc
+@property (getter=isCollapsed) BOOL collapsed;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the candidate list is collapsed and not visible to the user.
+When [`true`](../../Swift/true.md), the candidate list is collapsed and not visible to the user.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsCollapsing: Bool](nscandidatelisttouchbaritem/allowscollapsing.md)
+### Handling collapsible behavior
+- [var allowsCollapsing: Bool](./allowscollapsing.md)
   A Boolean value that specifies whether the item can be collapsed.
 
 

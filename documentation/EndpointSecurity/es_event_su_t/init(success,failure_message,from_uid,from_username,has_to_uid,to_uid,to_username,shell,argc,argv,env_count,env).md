@@ -1,11 +1,12 @@
 # init(success:failure_message:from_uid:from_username:has_to_uid:to_uid:to_username:shell:argc:argv:env_count:env:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

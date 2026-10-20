@@ -1,7 +1,8 @@
 # interactionDidFinish(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the behavior object when the spring-loading interaction is finished, either because it was canceled or because spring loading was activated.
 
@@ -15,6 +16,10 @@ Tells the behavior object when the spring-loading interaction is finished, eithe
 
 ```swift
 optional func interactionDidFinish(_ interaction: UISpringLoadedInteraction)
+```
+
+```objc
+- (void) interactionDidFinish:(UISpringLoadedInteraction *) interaction;
 ```
 
 ## Parameters

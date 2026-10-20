@@ -1,7 +1,8 @@
 # maximumNumberOfTouchesForScrolling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of touches needed for scrolling
 
@@ -12,6 +13,10 @@ The maximum number of touches needed for scrolling
 
 ```swift
 var maximumNumberOfTouchesForScrolling: Int { get set }
+```
+
+```objc
+@property NSInteger maximumNumberOfTouchesForScrolling;
 ```
 
 #### Discussion

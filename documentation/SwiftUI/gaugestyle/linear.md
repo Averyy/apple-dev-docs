@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A gauge style that displays a bar with a marker that appears at a point along the bar to indicate the gauge’s current value.
 
@@ -15,9 +16,11 @@ A gauge style that displays a bar with a marker that appears at a point along th
 @export(implementation) @preconcurrency static var linear: LinearGaugeStyle { get }
 ```
 
+Available when `Self` is `LinearGaugeStyle`.
+
 #### Discussion
 
-Apply this style to a [`Gauge`](gauge.md) or to a view hierarchy that contains gauges using the [`gaugeStyle(_:)`](view/gaugestyle(_:).md) modifier:
+Apply this style to a [`Gauge`](../gauge.md) or to a view hierarchy that contains gauges using the [`gaugeStyle(_:)`](../view/gaugestyle%28_%29.md) modifier:
 
 ```swift
 Gauge(value: batteryLevel, in: 0...100) {
@@ -30,11 +33,12 @@ If you provide `minimumValueLabel` and `maximumValueLabel` parameters when you c
 
 ## See Also
 
-- [static var linearCapacity: LinearCapacityGaugeStyle](gaugestyle/linearcapacity.md)
+### Getting linear gauge styles
+- [static var linearCapacity: LinearCapacityGaugeStyle](./linearcapacity.md)
   A gauge style that displays a bar that fills from leading to trailing edges as the gauge’s current value increases.
-- [static var accessoryLinear: AccessoryLinearGaugeStyle](gaugestyle/accessorylinear.md)
+- [static var accessoryLinear: AccessoryLinearGaugeStyle](./accessorylinear.md)
   A gauge style that displays bar with a marker that appears at a point along the bar to indicate the gauge’s current value.
-- [static var accessoryLinearCapacity: AccessoryLinearCapacityGaugeStyle](gaugestyle/accessorylinearcapacity.md)
+- [static var accessoryLinearCapacity: AccessoryLinearCapacityGaugeStyle](./accessorylinearcapacity.md)
   A gauge style that displays bar that fills from leading to trailing edges as the gauge’s current value increases.
 
 

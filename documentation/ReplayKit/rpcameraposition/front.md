@@ -1,16 +1,19 @@
 # RPCameraPosition.front
 
 **Framework**: ReplayKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The front camera is used.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use SCVideoEffectOutput cameraDevice instead
 
 ## Declaration
 
@@ -18,9 +21,14 @@ The front camera is used.
 case front
 ```
 
+```c
+RPCameraPositionFront
+```
+
 ## See Also
 
-- [RPCameraPosition.back](rpcameraposition/back.md)
+### Enumeration Cases
+- [RPCameraPosition.back](./back.md)
   The back camera is used.
 
 

@@ -1,7 +1,8 @@
 # hasExceededStateLimit
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating if the number of emitted states exceeded the aggregation limit.
 
@@ -19,8 +20,8 @@ let hasExceededStateLimit: Bool
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -28,7 +29,8 @@ When `true`, some states may have been omitted from the report. Metrics associat
 
 ## See Also
 
-- [let lowPowerModeEnabled: Bool](metricreport/environment-swift.struct/lowpowermodeenabled.md)
+### System state
+- [let lowPowerModeEnabled: Bool](./lowpowermodeenabled.md)
   Indicates whether low power mode is enabled on the device.
 
 

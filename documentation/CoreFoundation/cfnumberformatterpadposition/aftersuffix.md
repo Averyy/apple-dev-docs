@@ -1,18 +1,19 @@
 # CFNumberFormatterPadPosition.afterSuffix
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the number of padding characters after the suffix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Specifies the number of padding characters after the suffix.
 case afterSuffix
 ```
 
+```c
+kCFNumberFormatterPadAfterSuffix
+```
+
 ## See Also
 
-- [CFNumberFormatterPadPosition.afterPrefix](cfnumberformatterpadposition/afterprefix.md)
+### Enumeration Cases
+- [CFNumberFormatterPadPosition.afterPrefix](./afterprefix.md)
   Specifies the number of padding characters after the prefix.
-- [CFNumberFormatterPadPosition.beforePrefix](cfnumberformatterpadposition/beforeprefix.md)
+- [CFNumberFormatterPadPosition.beforePrefix](./beforeprefix.md)
   Specifies the number of padding characters before the prefix.
-- [CFNumberFormatterPadPosition.beforeSuffix](cfnumberformatterpadposition/beforesuffix.md)
+- [CFNumberFormatterPadPosition.beforeSuffix](./beforesuffix.md)
   Specifies the number of padding characters before the suffix.
 
 

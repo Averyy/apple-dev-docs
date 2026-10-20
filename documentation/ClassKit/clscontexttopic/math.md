@@ -1,7 +1,8 @@
 # math
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Mathematics.
 
@@ -18,25 +19,30 @@ Mathematics.
 static let math: CLSContextTopic
 ```
 
+```c
+extern CLSContextTopic const CLSContextTopicMath;
+```
+
 ## Mentions
 
-- [Building missing contexts](building-missing-contexts.md)
+- [Building missing contexts](../building-missing-contexts.md)
 
 ## See Also
 
-- [static let artsAndMusic: CLSContextTopic](clscontexttopic/artsandmusic.md)
+### Context Topics
+- [static let artsAndMusic: CLSContextTopic](./artsandmusic.md)
   Arts and music.
-- [static let computerScienceAndEngineering: CLSContextTopic](clscontexttopic/computerscienceandengineering.md)
+- [static let computerScienceAndEngineering: CLSContextTopic](./computerscienceandengineering.md)
   Computer science and engineering.
-- [static let healthAndFitness: CLSContextTopic](clscontexttopic/healthandfitness.md)
+- [static let healthAndFitness: CLSContextTopic](./healthandfitness.md)
   Health and fitness.
-- [static let literacyAndWriting: CLSContextTopic](clscontexttopic/literacyandwriting.md)
+- [static let literacyAndWriting: CLSContextTopic](./literacyandwriting.md)
   Literacy and writing.
-- [static let science: CLSContextTopic](clscontexttopic/science.md)
+- [static let science: CLSContextTopic](./science.md)
   Science.
-- [static let socialScience: CLSContextTopic](clscontexttopic/socialscience.md)
+- [static let socialScience: CLSContextTopic](./socialscience.md)
   Social science.
-- [static let worldLanguage: CLSContextTopic](clscontexttopic/worldlanguage.md)
+- [static let worldLanguage: CLSContextTopic](./worldlanguage.md)
   Language acquisition.
 
 

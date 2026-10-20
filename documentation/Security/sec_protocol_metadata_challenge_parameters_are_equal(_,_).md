@@ -1,7 +1,8 @@
 # sec_protocol_metadata_challenge_parameters_are_equal(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -18,6 +19,10 @@
 func sec_protocol_metadata_challenge_parameters_are_equal(_ metadataA: sec_protocol_metadata_t, _ metadataB: sec_protocol_metadata_t) -> Bool
 ```
 
+```c
+bool sec_protocol_metadata_challenge_parameters_are_equal(sec_protocol_metadata_t metadataA, sec_protocol_metadata_t metadataB);
+```
+
 #### Return Value
 
 Returns true if both metadata values have the same challenge parameters.
@@ -26,7 +31,7 @@ Returns true if both metadata values have the same challenge parameters.
 
 Compare challenge-relevant information for two `sec_protocol_metadata` instances.
 
-```None
+```
  This comparison includes all information relevant to a challenge request, including:
  distinguished names, signature algorithms, and supported certificate types.
  See Section 7.4.4 of RFC5246 for more details.

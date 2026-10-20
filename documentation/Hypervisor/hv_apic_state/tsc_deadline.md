@@ -1,15 +1,20 @@
 # tsc_deadline
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tsc_deadline: UInt64
+```
+
+```c
+uint64_t tsc_deadline;
 ```
 
 

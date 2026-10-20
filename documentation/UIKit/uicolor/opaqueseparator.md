@@ -1,7 +1,8 @@
 # opaqueSeparator
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color for borders or divider lines that hides any underlying content.
 
@@ -18,13 +19,18 @@ The color for borders or divider lines that hides any underlying content.
 class var opaqueSeparator: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * opaqueSeparatorColor;
+```
+
 #### Discussion
 
 This color is always opaque. It adapts to the underlying trait environment.
 
 ## See Also
 
-- [class var separator: UIColor](uicolor/separator.md)
+### Separator colors
+- [class var separator: UIColor](./separator.md)
   The color for thin borders or divider lines that allows some underlying content to be visible.
 
 

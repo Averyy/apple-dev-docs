@@ -1,7 +1,8 @@
 # kSecOIDMS_NTPrincipalName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDMS_NTPrincipalName: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDMS_NTPrincipalName;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(type:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a response format with type you specify.
 
@@ -21,11 +22,12 @@ init<Content>(type: Content.Type) where Content : Generable
 
 ## Parameters
 
-- `type`: A [`Generable`](generable.md) type to use as the response format.
+- `type`: A [`Generable`](../../generable.md) type to use as the response format.
 
 ## See Also
 
-- [init(schema: GenerationSchema)](transcript/responseformat/init(schema:).md)
+### Creating a response format
+- [init(schema: GenerationSchema)](./init%28schema%29.md)
   Creates a response format with a schema.
 
 

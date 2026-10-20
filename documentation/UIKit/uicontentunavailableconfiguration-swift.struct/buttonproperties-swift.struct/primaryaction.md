@@ -1,7 +1,8 @@
 # primaryAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to perform for the primary action control event.
 
@@ -10,7 +11,7 @@ The action to perform for the primary action control event.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

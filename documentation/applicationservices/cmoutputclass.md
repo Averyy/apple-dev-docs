@@ -1,7 +1,8 @@
 # cmOutputClass
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An output device profile defined for a printer. 
 

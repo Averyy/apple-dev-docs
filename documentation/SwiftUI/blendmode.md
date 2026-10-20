@@ -1,7 +1,8 @@
 # BlendMode
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Modes for compositing a view with overlapping content.
 
@@ -23,57 +24,58 @@ enum BlendMode
 ## Topics
 
 ### Getting the default
-- [BlendMode.normal](blendmode/normal.md)
+- [BlendMode.normal](./blendmode/normal.md)
 ### Darkening
-- [BlendMode.darken](blendmode/darken.md)
-- [BlendMode.multiply](blendmode/multiply.md)
-- [BlendMode.colorBurn](blendmode/colorburn.md)
-- [BlendMode.plusDarker](blendmode/plusdarker.md)
+- [BlendMode.darken](./blendmode/darken.md)
+- [BlendMode.multiply](./blendmode/multiply.md)
+- [BlendMode.colorBurn](./blendmode/colorburn.md)
+- [BlendMode.plusDarker](./blendmode/plusdarker.md)
 ### Lightening
-- [BlendMode.lighten](blendmode/lighten.md)
-- [BlendMode.screen](blendmode/screen.md)
-- [BlendMode.colorDodge](blendmode/colordodge.md)
-- [BlendMode.plusLighter](blendmode/pluslighter.md)
+- [BlendMode.lighten](./blendmode/lighten.md)
+- [BlendMode.screen](./blendmode/screen.md)
+- [BlendMode.colorDodge](./blendmode/colordodge.md)
+- [BlendMode.plusLighter](./blendmode/pluslighter.md)
 ### Adding contrast
-- [BlendMode.overlay](blendmode/overlay.md)
-- [BlendMode.softLight](blendmode/softlight.md)
-- [BlendMode.hardLight](blendmode/hardlight.md)
+- [BlendMode.overlay](./blendmode/overlay.md)
+- [BlendMode.softLight](./blendmode/softlight.md)
+- [BlendMode.hardLight](./blendmode/hardlight.md)
 ### Inverting
-- [BlendMode.difference](blendmode/difference.md)
-- [BlendMode.exclusion](blendmode/exclusion.md)
+- [BlendMode.difference](./blendmode/difference.md)
+- [BlendMode.exclusion](./blendmode/exclusion.md)
 ### Mixing color components
-- [BlendMode.hue](blendmode/hue.md)
-- [BlendMode.saturation](blendmode/saturation.md)
-- [BlendMode.color](blendmode/color.md)
-- [BlendMode.luminosity](blendmode/luminosity.md)
+- [BlendMode.hue](./blendmode/hue.md)
+- [BlendMode.saturation](./blendmode/saturation.md)
+- [BlendMode.color](./blendmode/color.md)
+- [BlendMode.luminosity](./blendmode/luminosity.md)
 ### Accessing Porter-Duff modes
-- [BlendMode.sourceAtop](blendmode/sourceatop.md)
-- [BlendMode.destinationOver](blendmode/destinationover.md)
-- [BlendMode.destinationOut](blendmode/destinationout.md)
+- [BlendMode.sourceAtop](./blendmode/sourceatop.md)
+- [BlendMode.destinationOver](./blendmode/destinationover.md)
+- [BlendMode.destinationOut](./blendmode/destinationout.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func blendMode(BlendMode) -> some View](view/blendmode(_:).md)
+### Compositing views
+- [func blendMode(BlendMode) -> some View](./view/blendmode%28_%29.md)
   Sets the blend mode for compositing this view with overlapping views.
-- [func compositingGroup() -> some View](view/compositinggroup.md)
+- [func compositingGroup() -> some View](./view/compositinggroup%28%29.md)
   Wraps this view in a compositing group.
-- [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](view/drawinggroup(opaque:colormode:).md)
+- [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](./view/drawinggroup%28opaque,colormode%29.md)
   Composites this view’s contents into an offscreen image before final display.
-- [enum ColorRenderingMode](colorrenderingmode.md)
+- [enum ColorRenderingMode](./colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
-- [protocol CompositorContent](compositorcontent.md)
+- [protocol CompositorContent](./compositorcontent.md)
   A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
-- [struct CompositorContentBuilder](compositorcontentbuilder.md)
-  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
-- [struct AnyCompositorContent](anycompositorcontent.md)
+- [struct CompositorContentBuilder](./compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](./compositorcontent.md) elements.
+- [struct AnyCompositorContent](./anycompositorcontent.md)
   Type erased compositor content.
 
 

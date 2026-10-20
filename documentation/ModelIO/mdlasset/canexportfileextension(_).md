@@ -1,9 +1,10 @@
 # canExportFileExtension(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Returns a Boolean value that indicates whether the [`MDLAsset`](mdlasset.md) class can write asset data as a file with the specified format extension.
+Returns a Boolean value that indicates whether the [`MDLAsset`](../mdlasset.md) class can write asset data as a file with the specified format extension.
 
 **Availability**:
 - iOS 9.0+
@@ -19,13 +20,17 @@ Returns a Boolean value that indicates whether the [`MDLAsset`](mdlasset.md) cla
 class func canExportFileExtension(_ extension: String) -> Bool
 ```
 
+```objc
++ (BOOL) canExportFileExtension:(NSString *) extension;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the [`MDLAsset`](mdlasset.md) class can export asset data in the format with the specified extension; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the [`MDLAsset`](../mdlasset.md) class can export asset data in the format with the specified extension; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/swift/true), you can use the [`export(to:)`](mdlasset/export(to:).md) method to write an asset to a file using the format identified by the specified extension.
+If this method returns [`true`](../../Swift/true.md), you can use the [`export(to:)`](./export%28to%29.md) method to write an asset to a file using the format identified by the specified extension.
 
 The set of supported formats includes Wavefront Object (`.obj`) and Standard Tessellation Language (`.stl`). Additional formats may be supported as well.
 
@@ -35,7 +40,8 @@ The set of supported formats includes Wavefront Object (`.obj`) and Standard Tes
 
 ## See Also
 
-- [func export(to: URL) throws](mdlasset/export(to:).md)
+### Exporting an Asset
+- [func export(to: URL) throws](./export%28to%29.md)
   Writes asset data to a file at the specified URL and reports errors that occur during export.
 
 

@@ -1,7 +1,8 @@
 # asString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to read data from the pasteboard and convert it to a string object.
 
@@ -14,17 +15,22 @@ An option to read data from the pasteboard and convert it to a string object.
 static var asString: NSPasteboard.ReadingOptions { get }
 ```
 
+```c
+NSPasteboardReadingAsString
+```
+
 #### Discussion
 
-AppKit puts the data in an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
+AppKit puts the data in an [`NSString`](../../../Foundation/nsstring.md) object.
 
 ## See Also
 
-- [static var asData: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/asdata.md)
+### Options
+- [static var asData: NSPasteboard.ReadingOptions](./asdata.md)
   An option to read data from the pasteboard as-is and return it as a data object.
-- [static var asPropertyList: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/aspropertylist.md)
+- [static var asPropertyList: NSPasteboard.ReadingOptions](./aspropertylist.md)
   An option to read data from the pasteboard and unserialize it as a property list.
-- [static var asKeyedArchive: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/askeyedarchive.md)
+- [static var asKeyedArchive: NSPasteboard.ReadingOptions](./askeyedarchive.md)
   An option to read data from the pasteboard and use it to initialize the object.
 
 

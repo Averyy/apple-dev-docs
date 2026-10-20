@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.unsupported
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Not Supported in the HID specification.
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default set of UDP connection options.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [var preferNoChecksum: Bool](nwprotocoludp/options/prefernochecksum.md)
+### Customizing UDP Connections
+- [var preferNoChecksum: Bool](./prefernochecksum.md)
   A Boolean that configures the connection to not send UDP checksums.
 
 

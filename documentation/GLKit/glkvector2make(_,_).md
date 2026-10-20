@@ -1,7 +1,8 @@
 # GLKVector2Make(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new two-component vector created from individual component values.
 
@@ -17,6 +18,10 @@ Returns a new two-component vector created from individual component values.
 func GLKVector2Make(_ x: Float, _ y: Float) -> GLKVector2
 ```
 
+```c
+static GLKVector2 GLKVector2Make(float x, float y);
+```
+
 #### Return Value
 
 An initialized vector.
@@ -28,7 +33,8 @@ An initialized vector.
 
 ## See Also
 
-- [func GLKVector2MakeWithArray(UnsafeMutablePointer<Float>!) -> GLKVector2](glkvector2makewitharray(_:).md)
+### Creating Vectors
+- [func GLKVector2MakeWithArray(UnsafeMutablePointer<Float>!) -> GLKVector2](./glkvector2makewitharray%28_%29.md)
   Returns a new two-component vector created from an array of components.
 
 

@@ -1,7 +1,8 @@
 # NSDecimalNumberHandler
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that adopts the decimal number behaviors protocol.
 
@@ -20,48 +21,53 @@ A class that adopts the decimal number behaviors protocol.
 class NSDecimalNumberHandler
 ```
 
+```objc
+@interface NSDecimalNumberHandler : NSObject
+```
+
 #### Overview
 
-This class allows you to set the way an [`NSDecimalNumber`](nsdecimalnumber.md) object rounds off and handles errors, without having to create a custom class.
+This class allows you to set the way an [`NSDecimalNumber`](./nsdecimalnumber.md) object rounds off and handles errors, without having to create a custom class.
 
-You can use an instance of this class as an argument to any of the [`NSDecimalNumber`](nsdecimalnumber.md) methods that end with `...Behavior:`. If you don’t think you need special behavior, you probably don’t need this class—it is likely that [`NSDecimalNumber`](nsdecimalnumber.md)’s default behavior will suit your needs.
+You can use an instance of this class as an argument to any of the [`NSDecimalNumber`](./nsdecimalnumber.md) methods that end with `...Behavior:`. If you don’t think you need special behavior, you probably don’t need this class—it is likely that [`NSDecimalNumber`](./nsdecimalnumber.md)’s default behavior will suit your needs.
 
-For more information, see the [`NSDecimalNumberBehaviors`](nsdecimalnumberbehaviors.md) protocol specification.
+For more information, see the [`NSDecimalNumberBehaviors`](./nsdecimalnumberbehaviors.md) protocol specification.
 
 ## Topics
 
 ### Creating a Decimal Number Handler
-- [class var `default`: NSDecimalNumberHandler](nsdecimalnumberhandler/default.md)
+- [class var `default`: NSDecimalNumberHandler](./nsdecimalnumberhandler/default.md)
   Returns the default instance of `NSDecimalNumberHandler`.
 ### Initializing a decimal number handler
-- [init(roundingMode: NSDecimalNumber.RoundingMode, scale: Int16, raiseOnExactness: Bool, raiseOnOverflow: Bool, raiseOnUnderflow: Bool, raiseOnDivideByZero: Bool)](nsdecimalnumberhandler/init(roundingmode:scale:raiseonexactness:raiseonoverflow:raiseonunderflow:raiseondividebyzero:).md)
+- [init(roundingMode: NSDecimalNumber.RoundingMode, scale: Int16, raiseOnExactness: Bool, raiseOnOverflow: Bool, raiseOnUnderflow: Bool, raiseOnDivideByZero: Bool)](./nsdecimalnumberhandler/init%28roundingmode,scale,raiseonexactness,raiseonoverflow,raiseonunderflow,raiseondividebyzero%29.md)
   Returns an `NSDecimalNumberHandler` object initialized so it behaves as specified by the method’s arguments.
 ### Initializers
-- [init?(coder: NSCoder)](nsdecimalnumberhandler/init(coder:).md)
+- [init?(coder: NSCoder)](./nsdecimalnumberhandler/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSDecimalNumberBehaviors](nsdecimalnumberbehaviors.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSDecimalNumberBehaviors](./nsdecimalnumberbehaviors.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var roundingBehavior: NSDecimalNumberHandler](numberformatter/roundingbehavior.md)
+### Configuring Rounding Behavior
+- [var roundingBehavior: NSDecimalNumberHandler](./numberformatter/roundingbehavior.md)
   The rounding behavior used by the receiver.
-- [var roundingIncrement: NSNumber!](numberformatter/roundingincrement.md)
+- [var roundingIncrement: NSNumber!](./numberformatter/roundingincrement.md)
   The rounding increment used by the receiver.
-- [var roundingMode: NumberFormatter.RoundingMode](numberformatter/roundingmode-swift.property.md)
+- [var roundingMode: NumberFormatter.RoundingMode](./numberformatter/roundingmode-swift.property.md)
   The rounding mode used by the receiver.
 
 

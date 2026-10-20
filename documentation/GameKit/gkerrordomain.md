@@ -1,7 +1,8 @@
 # GKErrorDomain
 
 **Framework**: GameKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for general game errors.
 
@@ -20,11 +21,16 @@ The error domain for general game errors.
 let GKErrorDomain: String
 ```
 
+```c
+extern NSString * GKErrorDomain;
+```
+
 ## See Also
 
-- [struct GKError](gkerror.md)
+### Errors
+- [struct GKError](./gkerror.md)
   The error structure used by this framework.
-- [GKError.Code](gkerror/code.md)
+- [GKError.Code](./gkerror/code.md)
   Error codes for the GameKit error domain.
 
 

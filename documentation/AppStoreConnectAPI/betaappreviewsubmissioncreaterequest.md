@@ -1,7 +1,8 @@
 # BetaAppReviewSubmissionCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Beta App Review Submission.
 
@@ -10,14 +11,14 @@ The request body you use to create a Beta App Review Submission.
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewSubmissionCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppReviewSubmissionCreateRequest.Data](betaappreviewsubmissioncreaterequest/data-data.dictionary.md)
+- [object BetaAppReviewSubmissionCreateRequest.Data](./betaappreviewsubmissioncreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,17 +27,18 @@ object BetaAppReviewSubmissionCreateRequest
 
 ## See Also
 
-- [object BetaAppReviewSubmission](betaappreviewsubmission.md)
+### Objects and Data Types
+- [object BetaAppReviewSubmission](./betaappreviewsubmission.md)
   A submission of a build to Apple’s beta app review process, required before external testing.
-- [object BetaAppReviewSubmissionResponse](betaappreviewsubmissionresponse.md)
+- [object BetaAppReviewSubmissionResponse](./betaappreviewsubmissionresponse.md)
   The response body for endpoints that submit a build for beta app review.
-- [object BetaAppReviewSubmissionWithoutIncludesResponse](betaappreviewsubmissionwithoutincludesresponse.md)
+- [object BetaAppReviewSubmissionWithoutIncludesResponse](./betaappreviewsubmissionwithoutincludesresponse.md)
   A response containing a single beta app review submission, without related resources.
-- [object BetaAppReviewSubmissionsResponse](betaappreviewsubmissionsresponse.md)
+- [object BetaAppReviewSubmissionsResponse](./betaappreviewsubmissionsresponse.md)
   The response body for endpoints that list beta app review submissions.
-- [type BetaReviewState](betareviewstate.md)
+- [type BetaReviewState](./betareviewstate.md)
   String that indicates the review state of a beta app.
-- [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)
+- [object BetaAppReviewSubmissionBuildLinkageResponse](./betaappreviewsubmissionbuildlinkageresponse.md)
 
 
 ---

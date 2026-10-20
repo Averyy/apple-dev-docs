@@ -1,7 +1,8 @@
 # VTPixelRotationSession
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a pixel rotation session.
 
@@ -19,11 +20,15 @@ A reference to a pixel rotation session.
 class VTPixelRotationSession
 ```
 
+```c
+typedef struct OpaqueVTPixelRotationSession * VTPixelRotationSessionRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isTouched
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user is touching the button.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the user is touching the button.
 var isTouched: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTouched) BOOL touched;
+```
+
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the user is touching the button; otherwise, the user isn’t. For controllers that support capacitive touch, the user can start touching the button without pressure when the value property is `0`. For controllers that don’t support capacitive touch, the user starts touching the button when the value property is greater than `0`.
+If this property is [`true`](../../Swift/true.md), the user is touching the button; otherwise, the user isn’t. For controllers that support capacitive touch, the user can start touching the button without pressure when the value property is `0`. For controllers that don’t support capacitive touch, the user starts touching the button when the value property is greater than `0`.
 
 ## See Also
 
-- [var isPressed: Bool](gccontrollerbuttoninput/ispressed.md)
+### Accessing input values
+- [var isPressed: Bool](./ispressed.md)
   A Boolean value that indicates whether the user is pressing the button.
-- [var value: Float](gccontrollerbuttoninput/value.md)
+- [var value: Float](./value.md)
   The level of pressure the user is applying to the button.
 
 

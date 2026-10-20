@@ -1,7 +1,8 @@
 # init(identifier:title:subtitle:)
 
 **Framework**: Background Tasks  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance on behalf of the currently foregrounded app.
 
@@ -16,9 +17,13 @@ Creates an instance on behalf of the currently foregrounded app.
 init(identifier: String, title: String, subtitle: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title subtitle:(NSString *) subtitle;
+```
+
 #### Discussion
 
-Apps and their extensions need to use this method to initialize any tasks due to the underlying association to the currently foregrounded app. Note that [`earliestBeginDate`](bgtaskrequest/earliestbegindate.md) is ignored by the scheduler in favor of `NSDate.now`.
+Apps and their extensions need to use this method to initialize any tasks due to the underlying association to the currently foregrounded app. Note that [`earliestBeginDate`](../bgtaskrequest/earliestbegindate.md) is ignored by the scheduler in favor of `NSDate.now`.
 
 The identifier must leverage a base wildcard notation, where the prefix of the identifier must at least contain the bundle ID of the submitting application, followed by optional semantic context, and finally ending with `.*`. An example: `<MainBundle>.<SemanticContext>.*` transforms to `com.foo.MyApplication.continuedProcessingTask.*`. Thus, a submitted identifier is of the form `com.foo.MyApplication.continuedProcessingTask.HD830D`.
 

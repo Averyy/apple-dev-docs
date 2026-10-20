@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMajorMiscellaneous
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMajorMiscellaneous = 0x00
 ```
 

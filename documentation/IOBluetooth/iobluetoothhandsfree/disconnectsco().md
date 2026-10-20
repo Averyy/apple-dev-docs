@@ -1,7 +1,8 @@
 # disconnectSCO()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnect the SCO connection with the device
 
@@ -12,6 +13,10 @@ Disconnect the SCO connection with the device
 
 ```swift
 func disconnectSCO()
+```
+
+```objc
+- (void) disconnectSCO;
 ```
 
 #### Discussion

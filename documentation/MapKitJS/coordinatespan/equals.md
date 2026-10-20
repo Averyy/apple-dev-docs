@@ -1,7 +1,8 @@
 # equals(anotherSpan)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether two spans are equal.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates whether two spans are equal.
 
 ## Declaration
 
-```swift
+```
 equals(anotherSpan: CoordinateSpan): boolean;
 ```
 
@@ -24,7 +25,8 @@ equals(anotherSpan: CoordinateSpan): boolean;
 
 ## See Also
 
-- [copy()](coordinatespan/copy.md)
+### Copying and comparing spans
+- [copy()](./copy.md)
   Returns a copy of the coordinate span.
 
 

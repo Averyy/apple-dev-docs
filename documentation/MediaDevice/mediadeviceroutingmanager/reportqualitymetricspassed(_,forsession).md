@@ -1,7 +1,8 @@
 # reportQualityMetricsPassed(_:forSession:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports whether the realtime sample delivery session has met its quality KPIs.
 
@@ -19,7 +20,7 @@ final func reportQualityMetricsPassed(_ thresholdsMet: Bool, forSession session:
 
 #### Discussion
 
-Call this function after [`stopRealtimeSampleDelivery(session:)`](realtimesamplehandling/stoprealtimesampledelivery(session:).md) to indicate whether the realtime streaming session has met the expected quality thresholds for the duration of the session (e.g., latency, frame rate, audio quality).
+Call this function after [`stopRealtimeSampleDelivery(session:)`](../realtimesamplehandling/stoprealtimesampledelivery%28session%29.md) to indicate whether the realtime streaming session has met the expected quality thresholds for the duration of the session (e.g., latency, frame rate, audio quality).
 
 ## Parameters
 

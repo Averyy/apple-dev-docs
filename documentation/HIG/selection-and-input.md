@@ -19,7 +19,6 @@ framework: HIG
 - [Toggles](/design/human-interface-guidelines/toggles) - A toggle lets people choose between a pair of opposing states, like on and off, using a different appearance to indicate each state.
 - [Virtual keyboards](/design/human-interface-guidelines/virtual-keyboards) - On devices without physical keyboards, the system offers various types of virtual keyboards people can use to enter data.
 
-
 ## Topics
 
 - [Color wells](color-wells.md) - A color well lets people adjust the color of text, shapes, guides, and other onscreen elements.
@@ -33,8 +32,6 @@ framework: HIG
 - [Text fields](text-fields.md) - A text field is a rectangular area in which people enter or edit small, specific pieces of text.
 - [Toggles](toggles.md) - A toggle lets people choose between a pair of opposing states, like on and off, using a different appearance to indicate each state.
 - [Virtual keyboards](virtual-keyboards.md) - On devices without physical keyboards, the system offers various types of virtual keyboards people can use to enter data.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/selection-and-input](https://developer.apple.com/design/human-interface-guidelines/selection-and-input)*

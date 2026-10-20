@@ -1,7 +1,8 @@
 # dataCorruptedError(forKey:in:debugDescription:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new `.dataCorrupted` error using a constructed coding path and the given debug description.
 

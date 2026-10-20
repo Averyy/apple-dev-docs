@@ -1,7 +1,8 @@
 # init(processIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an application address descriptor using the specified process identifier.
 
@@ -12,6 +13,10 @@ Creates and returns an application address descriptor using the specified proces
 
 ```swift
 init(processIdentifier: pid_t)
+```
+
+```objc
++ (NSAppleEventDescriptor *) descriptorWithProcessIdentifier:(pid_t) processIdentifier;
 ```
 
 #### Discussion

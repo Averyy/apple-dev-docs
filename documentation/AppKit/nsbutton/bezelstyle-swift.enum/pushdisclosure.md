@@ -1,17 +1,22 @@
 # NSButton.BezelStyle.pushDisclosure
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bezel style push button with a disclosure triangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case pushDisclosure
+```
+
+```c
+NSBezelStylePushDisclosure
 ```
 
 #### Discussion
@@ -34,11 +39,12 @@ button.title = @"";
 button.bezelStyle = NSBezelStylePushDisclosure;
 ```
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also
 
-- [NSButton.BezelStyle.disclosure](nsbutton/bezelstyle-swift.enum/disclosure.md)
+### Disclosure
+- [NSButton.BezelStyle.disclosure](./disclosure.md)
   A bezel style button for use with a disclosure triangle.
 
 

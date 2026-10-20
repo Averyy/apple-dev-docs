@@ -1,7 +1,8 @@
 # highlight(_:groupID:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a highlight hover effect that is assigned to the group.
 

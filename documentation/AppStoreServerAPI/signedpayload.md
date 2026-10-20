@@ -1,7 +1,8 @@
 # signedPayload
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A cryptographically signed payload, in JSON Web Signature (JWS) format, containing the response body for a version 2 notification.
 
@@ -10,7 +11,7 @@ A cryptographically signed payload, in JSON Web Signature (JWS) format, containi
 
 ## Declaration
 
-```swift
+```
 string signedPayload
 ```
 
@@ -18,11 +19,12 @@ string signedPayload
 
 The `signedpayload` is a string of three Base64 URL-encoded components, separated by a period.
 
-For more information, see [`signedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/signedpayload) in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
+For more information, see [`signedPayload`](../AppStoreServerNotifications/signedpayload.md) in [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md).
 
 ## See Also
 
-- [object sendAttemptItem](sendattemptitem.md)
+### Data types
+- [object sendAttemptItem](./sendattemptitem.md)
   The success or error information and the date the App Store server records when it attempts to send a server notification to your server.
 
 

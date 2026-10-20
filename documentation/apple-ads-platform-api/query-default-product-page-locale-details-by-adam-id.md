@@ -1,7 +1,8 @@
 # Query App Locale Details
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Return the default product page locale details for an app identified by its adamId.
 
@@ -24,7 +25,7 @@ Keep the following constraints in mind when querying default locale details:
 | All locales returned | This endpoint returns all locales configured for the default product page. Filter by `languageCode` in the request body `filters` array if you need a specific locale. |
 | assetsByDevice structure | The `assetsByDevice` field maps each specific device type (for example, `iphone_6_5`, `iphone_6_7`) to a `DeviceAssetGroup` containing an `assets` array of asset references and an `appPreviewDeviceFallBackDevices` array. |
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -32,7 +33,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | --- | --- | --- | --- | --- |
 | `languageCode` | string |  |  | Filter to a specific locale, such as `en-US` or `fr-FR`. |
 
-The `adamId` field identifies the app via the URL path (`/v1/apps/{adamId}/locale-details/query`), not a request body filter. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The `adamId` field identifies the app via the URL path (`/v1/apps/{adamId}/locale-details/query`), not a request body filter. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -40,7 +41,7 @@ The `adamId` field identifies the app via the URL path (`/v1/apps/{adamId}/local
 
 Returns the default product page locale details for an app identified by its `adamId`. The default product page represents the app’s main App Store listing: the page that all users see unless directed to a custom product page.
 
-```None
+```
 POST https://api.ads.apple.com/v1/apps/123456789/locale-details/query
 ```
 
@@ -124,15 +125,36 @@ POST https://api.ads.apple.com/v1/apps/123456789/locale-details/query
 
 ## Parameters
 
+### Path Parameters
+
+- `adamId` (int64) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`AppLocaleDetailsQueryResponse`, `application/json`)
+- `400` Bad Request (`AppLocaleDetailsQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Product Pages](query-product-pages.md)
+- [Query Product Pages](./query-product-pages.md)
   Queries App Store product pages available to your account.
-- [Get Product Page by ID](get-product-page-by-id.md)
+- [Get Product Page by ID](./get-product-page-by-id.md)
   Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
-- [Query Product Page Locale Details](query-product-page-locale-details.md)
+- [Query Product Page Locale Details](./query-product-page-locale-details.md)
   Queries the localized content associated with a custom product page.
 
 

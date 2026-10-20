@@ -1,7 +1,8 @@
 # ClothBodyComponent.ExternalForce
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An external force applied to a single particle, in Newtons.
 
@@ -19,29 +20,30 @@ struct ExternalForce
 ## Topics
 
 ### Accessing the force vector
-- [var vector: SIMD3<Float>](clothbodycomponent/externalforce/vector.md)
+- [var vector: SIMD3<Float>](./externalforce/vector.md)
   The force vector applied to the particle, in Newtons.
 ### Initializers
-- [init()](clothbodycomponent/externalforce/init.md)
+- [init()](./externalforce/init%28%29.md)
   Creates an external force with zero magnitude.
-- [init(SIMD3<Float>)](clothbodycomponent/externalforce/init(_:).md)
+- [init(SIMD3<Float>)](./externalforce/init%28_%29.md)
   Creates an external force with the given force vector.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var externalForces: PerClothVertexData<ClothBodyComponent.ExternalForce>](clothbodycomponent/externalforces.md)
+### Applying external forces
+- [var externalForces: PerClothVertexData<ClothBodyComponent.ExternalForce>](./externalforces.md)
   The external forces applied to the particles in the body (in Newtons).
-- [var inflationConstraint: ClothBodyComponent.InflationConstraint?](clothbodycomponent/inflationconstraint-swift.property.md)
+- [var inflationConstraint: ClothBodyComponent.InflationConstraint?](./inflationconstraint-swift.property.md)
   An optional inflation constraint for representing inflatable bodies (must be watertight).
-- [ClothBodyComponent.InflationConstraint](clothbodycomponent/inflationconstraint-swift.struct.md)
+- [ClothBodyComponent.InflationConstraint](./inflationconstraint-swift.struct.md)
   Configuration for an inflatable cloth body.
 
 

@@ -1,7 +1,8 @@
 # CVAttachmentModePreference
 
 **Framework**: Core Video  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Defines preferred mode for an attachment key.
 
@@ -22,29 +23,30 @@ protocol CVAttachmentModePreference : Sendable
 
 #### Overview
 
-This protocol is used to identify the mode preferences in generic context. You should use one of the [`CVAttachmentModePreferenceShouldPropagate`](cvattachmentmodepreferenceshouldpropagate.md) or [`CVAttachmentModePreferenceShouldNotPropagate`](cvattachmentmodepreferenceshouldnotpropagate.md) instead of defining a custom conformance to this protocol.
+This protocol is used to identify the mode preferences in generic context. You should use one of the [`CVAttachmentModePreferenceShouldPropagate`](./cvattachmentmodepreferenceshouldpropagate.md) or [`CVAttachmentModePreferenceShouldNotPropagate`](./cvattachmentmodepreferenceshouldnotpropagate.md) instead of defining a custom conformance to this protocol.
 
 ## Topics
 
 ### Type Properties
-- [static var preferredMode: CVAttachmentMode](cvattachmentmodepreference/preferredmode.md)
+- [static var preferredMode: CVAttachmentMode](./cvattachmentmodepreference/preferredmode.md)
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CVAttachmentModePreferenceShouldNotPropagate](cvattachmentmodepreferenceshouldnotpropagate.md)
-- [CVAttachmentModePreferenceShouldPropagate](cvattachmentmodepreferenceshouldpropagate.md)
+- [CVAttachmentModePreferenceShouldNotPropagate](./cvattachmentmodepreferenceshouldnotpropagate.md)
+- [CVAttachmentModePreferenceShouldPropagate](./cvattachmentmodepreferenceshouldpropagate.md)
 
 ## See Also
 
-- [protocol CVBufferRepresentable](cvbufferrepresentable.md)
+### Protocols
+- [protocol CVBufferRepresentable](./cvbufferrepresentable.md)
   CVBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVBuffer type.
-- [protocol CVAttachmentKeyDefinitions](cvattachmentkeydefinitions.md)
+- [protocol CVAttachmentKeyDefinitions](./cvattachmentkeydefinitions.md)
   Marks a type as a collection of attachment keys for an attachment bearer.
-- [protocol CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
+- [protocol CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
   Allows Swift types to be used as buffer attachment value.
 
 

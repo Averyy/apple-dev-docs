@@ -1,7 +1,8 @@
 # showsCloseButton
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the panel displays a close button.
 
@@ -14,6 +15,10 @@ A Boolean value that indicates whether the panel displays a close button.
 
 ```swift
 var showsCloseButton: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL showsCloseButton;
 ```
 
 #### Discussion

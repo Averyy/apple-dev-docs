@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit unsigned integer value.
 
@@ -11,9 +12,10 @@ Set to `'loca’`.
 
 ## See Also
 
-- [Size](metadata_locale_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Locale string](metadata_locale_atom/locale_string.md)
+- [Locale string](./locale_string.md)
   A string holding a language tag.
 
 

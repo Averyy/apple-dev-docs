@@ -1,7 +1,8 @@
 # init(path:centered:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape node from a Core Graphics path, centered around its position.
 
@@ -20,6 +21,10 @@ Creates a shape node from a Core Graphics path, centered around its position.
 convenience init(path: CGPath, centered: Bool)
 ```
 
+```objc
++ (instancetype) shapeNodeWithPath:(CGPathRef) path centered:(BOOL) centered;
+```
+
 #### Return Value
 
 A new shape node.
@@ -27,13 +32,14 @@ A new shape node.
 ## Parameters
 
 - `path`: The Core Graphics path to use.
-- `centered`: If [`true`](https://developer.apple.com/documentation/swift/true), the path is translated so that the center of the path’s bounding box is at the node’s origin; otherwise the path is relative to the node’s origin.
+- `centered`: If [`true`](../../Swift/true.md), the path is translated so that the center of the path’s bounding box is at the node’s origin; otherwise the path is relative to the node’s origin.
 
 ## See Also
 
-- [convenience init(path: CGPath)](skshapenode/init(path:).md)
+### Creating a Shape from a Path
+- [convenience init(path: CGPath)](./init%28path%29.md)
   Creates a shape node from a Core Graphics path.
-- [var path: CGPath?](skshapenode/path.md)
+- [var path: CGPath?](./path.md)
   The path that defines the shape.
 
 

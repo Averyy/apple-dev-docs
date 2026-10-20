@@ -1,7 +1,8 @@
 # CSSM_NET_PROTO_LDAP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_NET_PROTO_LDAP: Int { get }
+```
+
+```c
+CSSM_NET_PROTO_LDAP
 ```
 
 

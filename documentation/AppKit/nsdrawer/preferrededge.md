@@ -1,12 +1,15 @@
 # preferredEdge
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s preferred, or default, edge.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The receiver’s preferred, or default, edge.
 var preferredEdge: NSRectEdge { get set }
 ```
 
+```objc
+@property NSRectEdge preferredEdge;
+```
+
 ## See Also
 
-- [var edge: NSRectEdge](nsdrawer/edge.md)
+### Managing Drawer Edges
+- [var edge: NSRectEdge](./edge.md)
   The edge of the window that the receiver is connected to.
 
 

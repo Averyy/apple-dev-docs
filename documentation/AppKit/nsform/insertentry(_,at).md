@@ -1,17 +1,24 @@
 # insertEntry(_:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts an entry with the specified title into the receiver.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSTextField directly instead, and consider NSStackView for layout assistance
 
 ## Declaration
 
 ```swift
 func insertEntry(_ title: String, at index: Int) -> NSFormCell!
+```
+
+```objc
+- (NSFormCell *) insertEntry:(NSString *) title atIndex:(NSInteger) index;
 ```
 
 #### Return Value
@@ -29,9 +36,10 @@ The new entry has no tag, target, or action, but is enabled and editable.
 
 ## See Also
 
-- [func addEntry(String) -> NSFormCell](nsform/addentry(_:).md)
+### Adding and Removing Entries
+- [func addEntry(String) -> NSFormCell](./addentry%28_%29.md)
   Adds a new entry to the end of the receiver and gives it the specified title.
-- [func removeEntry(at: Int)](nsform/removeentry(at:).md)
+- [func removeEntry(at: Int)](./removeentry%28at%29.md)
   Removes and releases the entry at the specified index.
 
 

@@ -1,7 +1,8 @@
 # substroke(with:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the stroke containing the control points in the specified range.
 
@@ -16,6 +17,10 @@ Returns a copy of the stroke containing the control points in the specified rang
 
 ```swift
 func substroke(with range: __PKFloatRange) -> PKStroke
+```
+
+```objc
+- (PKStroke *) substrokeWithRange:(PKFloatRange *) range;
 ```
 
 #### Return Value

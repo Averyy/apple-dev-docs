@@ -1,7 +1,8 @@
 # readAttributeActiveEndpoints(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveEndpoints(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveEndpoints() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeActiveEndpointsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

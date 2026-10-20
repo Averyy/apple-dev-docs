@@ -1,7 +1,8 @@
 # RetrieveMerchantTokenPublicKeyRequest
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Get the merchant token public key request.
 
@@ -10,13 +11,15 @@ Get the merchant token public key request.
 
 ## Declaration
 
-```swift
+```
 object RetrieveMerchantTokenPublicKeyRequest
 ```
 
 ## Properties
 
 - `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+
+  **Maximum Length**: `64`
 
 
 ---

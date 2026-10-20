@@ -1,7 +1,8 @@
 # margins
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extra space around the reserved area that keeps interactive content clear of it.
 
@@ -20,17 +21,18 @@ let margins: UIEdgeInsets
 
 #### Discussion
 
-The region’s [`frame`](uiview/reservedregion/frame.md) already includes these margins.
+The region’s [`frame`](./frame.md) already includes these margins.
 
 ## See Also
 
-- [let frame: CGRect](uiview/reservedregion/frame.md)
+### Getting region details
+- [let frame: CGRect](./frame.md)
   The rectangle that describes the region within your view.
-- [let isActive: Bool](uiview/reservedregion/isactive.md)
+- [let isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the region is active.
-- [let kind: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.property.md)
+- [let kind: UIView.ReservedRegion.Kind](./kind-swift.property.md)
   The kind of the region.
-- [UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct.md)
+- [UIView.ReservedRegion.Kind](./kind-swift.struct.md)
   A kind of reserved region.
 
 

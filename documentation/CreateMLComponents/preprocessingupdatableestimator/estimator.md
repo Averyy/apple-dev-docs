@@ -1,7 +1,8 @@
 # estimator
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimator.
 
@@ -22,7 +23,8 @@ var estimator: Estimator
 
 ## See Also
 
-- [var preprocessor: Preprocessor](preprocessingupdatableestimator/preprocessor.md)
+### Getting the properties
+- [var preprocessor: Preprocessor](./preprocessor.md)
   The preprocessing transformer.
 
 

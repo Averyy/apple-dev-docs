@@ -1,13 +1,14 @@
 # LSMResultGetCount(_:)
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of results.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Returns the number of results.
 func LSMResultGetCount(_ result: LSMResult) -> CFIndex
 ```
 
+```c
+CFIndex LSMResultGetCount(LSMResultRef result);
+```
+
 ## See Also
 
-- [func LSMResultGetCategory(LSMResult, CFIndex) -> LSMCategory](lsmresultgetcategory(_:_:).md)
+### Querying Result Information
+- [func LSMResultGetCategory(LSMResult, CFIndex) -> LSMCategory](./lsmresultgetcategory%28_,_%29.md)
   Returns the category of the specified result.
-- [func LSMResultGetScore(LSMResult, CFIndex) -> Float](lsmresultgetscore(_:_:).md)
+- [func LSMResultGetScore(LSMResult, CFIndex) -> Float](./lsmresultgetscore%28_,_%29.md)
   Returns the likelihood of the specified result.
 
 

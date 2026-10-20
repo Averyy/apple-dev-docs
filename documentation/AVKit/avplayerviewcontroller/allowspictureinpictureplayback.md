@@ -1,7 +1,8 @@
 # allowsPictureInPicturePlayback
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player allows Picture in Picture playback.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the player allows Picture in Picture play
 var allowsPictureInPicturePlayback: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsPictureInPicturePlayback;
+```
+
 #### Discussion
 
 Set this value to `false` to disable Picture in Picture playback. The default value is `true`.
 
 ## See Also
 
-- [var canStartPictureInPictureAutomaticallyFromInline: Bool](avplayerviewcontroller/canstartpictureinpictureautomaticallyfrominline.md)
+### Configuring Picture in Picture
+- [var canStartPictureInPictureAutomaticallyFromInline: Bool](./canstartpictureinpictureautomaticallyfrominline.md)
   A Boolean value that indicates whether Picture in Picture starts automatically when transitioning to the background when the view controller presents its content inline.
 
 

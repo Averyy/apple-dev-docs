@@ -1,18 +1,19 @@
 # CFSocketGetSocketFlags(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns flags that control certain behaviors of a CFSocket object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,17 @@ Returns flags that control certain behaviors of a CFSocket object.
 func CFSocketGetSocketFlags(_ s: CFSocket!) -> CFOptionFlags
 ```
 
+```c
+extern CFOptionFlags CFSocketGetSocketFlags(CFSocketRef s);
+```
+
 #### Return Value
 
-A bitwise-OR combination of flags controlling the behavior of `s`. See [`CFSocket Flags`](1560944-cfsocket-flags.md) for the list of available flags.
+A bitwise-OR combination of flags controlling the behavior of `s`. See [CFSocket Flags](./api-1560944-cfsocket-flags.md) for the list of available flags.
 
 #### Discussion
 
-See [`CFSocketSetSocketFlags(_:_:)`](cfsocketsetsocketflags(_:_:).md) for details on what the flags of a CFSocket mean.
+See [`CFSocketSetSocketFlags(_:_:)`](./cfsocketsetsocketflags%28_,_%29.md) for details on what the flags of a CFSocket mean.
 
 ## Parameters
 
@@ -34,21 +39,22 @@ See [`CFSocketSetSocketFlags(_:_:)`](cfsocketsetsocketflags(_:_:).md) for detail
 
 ## See Also
 
-- [func CFSocketCopyAddress(CFSocket!) -> CFData!](cfsocketcopyaddress(_:).md)
+### Configuring Sockets
+- [func CFSocketCopyAddress(CFSocket!) -> CFData!](./cfsocketcopyaddress%28_%29.md)
   Returns the local address of a CFSocket object.
-- [func CFSocketCopyPeerAddress(CFSocket!) -> CFData!](cfsocketcopypeeraddress(_:).md)
+- [func CFSocketCopyPeerAddress(CFSocket!) -> CFData!](./cfsocketcopypeeraddress%28_%29.md)
   Returns the remote address to which a CFSocket object is connected.
-- [func CFSocketDisableCallBacks(CFSocket!, CFOptionFlags)](cfsocketdisablecallbacks(_:_:).md)
+- [func CFSocketDisableCallBacks(CFSocket!, CFOptionFlags)](./cfsocketdisablecallbacks%28_,_%29.md)
   Disables the callback function of a CFSocket object for certain types of socket activity.
-- [func CFSocketEnableCallBacks(CFSocket!, CFOptionFlags)](cfsocketenablecallbacks(_:_:).md)
+- [func CFSocketEnableCallBacks(CFSocket!, CFOptionFlags)](./cfsocketenablecallbacks%28_,_%29.md)
   Enables the callback function of a CFSocket object for certain types of socket activity.
-- [func CFSocketGetContext(CFSocket!, UnsafeMutablePointer<CFSocketContext>!)](cfsocketgetcontext(_:_:).md)
+- [func CFSocketGetContext(CFSocket!, UnsafeMutablePointer<CFSocketContext>!)](./cfsocketgetcontext%28_,_%29.md)
   Returns the context information for a CFSocket object.
-- [func CFSocketGetNative(CFSocket!) -> CFSocketNativeHandle](cfsocketgetnative(_:).md)
+- [func CFSocketGetNative(CFSocket!) -> CFSocketNativeHandle](./cfsocketgetnative%28_%29.md)
   Returns the native socket associated with a CFSocket object.
-- [func CFSocketSetAddress(CFSocket!, CFData!) -> CFSocketError](cfsocketsetaddress(_:_:).md)
+- [func CFSocketSetAddress(CFSocket!, CFData!) -> CFSocketError](./cfsocketsetaddress%28_,_%29.md)
   Binds a local address to a CFSocket object and configures it for listening.
-- [func CFSocketSetSocketFlags(CFSocket!, CFOptionFlags)](cfsocketsetsocketflags(_:_:).md)
+- [func CFSocketSetSocketFlags(CFSocket!, CFOptionFlags)](./cfsocketsetsocketflags%28_,_%29.md)
   Sets flags that control certain behaviors of a CFSocket object.
 
 

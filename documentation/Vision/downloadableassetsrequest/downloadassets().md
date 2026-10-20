@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Downloads the assets required to perform the request.
@@ -22,15 +23,22 @@ func downloadAssets() async throws
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 #### Discussion
 
-> **Note**: An error if the download fails.
+> **Throws**: An error if the download fails.
+
+## Default Implementations
+
+### DownloadableAssetsRequest Implementations
+- [func downloadAssets() async throws](./downloadassets%28%29-8lzdp.md)
+  Downloads the assets required to perform the request.
 
 ## See Also
 
-- [func downloadAssets(progress: consuming Subprogress) async throws](downloadableassetsrequest/downloadassets(progress:).md)
+### Downloading assets
+- [func downloadAssets(progress: consuming Subprogress) async throws](./downloadassets%28progress%29.md)
   Downloads the assets required to perform the request, reporting progress through the provided subprogress.
 
 

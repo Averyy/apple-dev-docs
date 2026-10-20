@@ -1,18 +1,19 @@
 # CGPDFDictionaryRef
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that encapsulates a PDF dictionary.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,25 @@ A type that encapsulates a PDF dictionary.
 struct CGPDFDictionaryRef
 ```
 
+```c
+typedef struct CGPDFDictionary * CGPDFDictionaryRef;
+```
+
 ## Topics
 
 ### Initializers
-- [init(OpaquePointer)](cgpdfdictionaryref/init(_:).md)
-- [init(rawValue: OpaquePointer)](cgpdfdictionaryref/init(rawvalue:).md)
+- [init(OpaquePointer)](./cgpdfdictionaryref/init%28_%29.md)
+- [init(rawValue: OpaquePointer)](./cgpdfdictionaryref/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

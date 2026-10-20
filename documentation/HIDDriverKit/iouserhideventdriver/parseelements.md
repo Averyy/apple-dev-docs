@@ -1,17 +1,18 @@
 # parseElements
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses the specified array of elements.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool parseElements(OSArray *elements);
 ```
 
@@ -21,25 +22,26 @@ virtual bool parseElements(OSArray *elements);
 
 #### Discussion
 
-This method searches the elements array for [`IOHIDElement`](iohidelement.md) objects relevant to keyboard, digitizer, pointer, scrolling, and LED events. It stores a reference to each relevant element it finds, and uses those objects later to obtain relevant information for events.
+This method searches the elements array for [`IOHIDElement`](../iohidelement.md) objects relevant to keyboard, digitizer, pointer, scrolling, and LED events. It stores a reference to each relevant element it finds, and uses those objects later to obtain relevant information for events.
 
-The driver’s [`Start`](iouserhideventdriver/start.md) method calls this method, so you don’t need to call it directly.
+The driver’s [`Start`](./start.md) method calls this method, so you don’t need to call it directly.
 
 ## Parameters
 
-- `elements`: An array of [`IOHIDElement`](iohidelement.md) objects to parse.
+- `elements`: An array of [`IOHIDElement`](../iohidelement.md) objects to parse.
 
 ## See Also
 
-- [parsePointerElement](iouserhideventdriver/parsepointerelement.md)
+### Parsing the Element Hierarchy
+- [parsePointerElement](./parsepointerelement.md)
   Parses an element to see if it supports pointer usages.
-- [parseDigitizerElement](iouserhideventdriver/parsedigitizerelement.md)
+- [parseDigitizerElement](./parsedigitizerelement.md)
   Parses an element to see if it supports digitizer usages.
-- [parseKeyboardElement](iouserhideventdriver/parsekeyboardelement.md)
+- [parseKeyboardElement](./parsekeyboardelement.md)
   Parses an element to see if it contains keyboard-related information.
-- [parseScrollElement](iouserhideventdriver/parsescrollelement.md)
+- [parseScrollElement](./parsescrollelement.md)
   Parses an element to see if it supports scroll usages.
-- [parseLEDElement](iouserhideventdriver/parseledelement.md)
+- [parseLEDElement](./parseledelement.md)
   Parses an element to see if it supports LED usages.
 
 

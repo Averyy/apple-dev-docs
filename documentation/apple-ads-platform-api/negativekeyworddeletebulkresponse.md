@@ -1,7 +1,8 @@
 # NegativeKeywordDeleteBulkResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response from a bulk negative keyword deletion request.
 
@@ -11,7 +12,7 @@ The response from a bulk negative keyword deletion request.
 
 ## Declaration
 
-```swift
+```
 object NegativeKeywordDeleteBulkResponse
 ```
 
@@ -37,40 +38,40 @@ To confirm that all targeted negative keywords were removed, use this response b
 
 ## Properties
 
-- `result` ([BulkItemResult]): Per-item deletion results, one entry per request item. See [`BulkItemResult`](bulkitemresult.md). Read-only.
-- `error` (Error): Structured error details if the overall request was rejected before any items were processed, not for per-item failures. See [`Error`](error.md). Read-only.
+- `result` ([BulkItemResult]): Per-item deletion results, one entry per request item. See [`BulkItemResult`](./bulkitemresult.md). Read-only.
+- `error` (Error): Structured error details if the overall request was rejected before any items were processed, not for per-item failures. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object BaseBulkRequest](basebulkrequest.md)
+- [object BaseBulkRequest](./basebulkrequest.md)
   Base type for all bulk operation requests.
-- [object BulkOperationRequest](bulkoperationrequest.md)
+- [object BulkOperationRequest](./bulkoperationrequest.md)
   Container for a bulk operation request.
-- [object BulkItemResult](bulkitemresult.md)
+- [object BulkItemResult](./bulkitemresult.md)
   The base result envelope for a single item in a bulk operation response.
-- [object BulkItemResultKeyword](bulkitemresultkeyword.md)
+- [object BulkItemResultKeyword](./bulkitemresultkeyword.md)
   A bulk operation result item that includes the affected Keyword entity.
-- [object BulkItemResultNegativeKeyword](bulkitemresultnegativekeyword.md)
+- [object BulkItemResultNegativeKeyword](./bulkitemresultnegativekeyword.md)
   A bulk operation result item that includes the affected NegativeKeyword entity.
-- [object BulkResponse](bulkresponse.md)
+- [object BulkResponse](./bulkresponse.md)
   The generic response envelope returned by all bulk operations.
-- [object KeywordCreateBulkRequest](keywordcreatebulkrequest.md)
+- [object KeywordCreateBulkRequest](./keywordcreatebulkrequest.md)
   A bulk request to create multiple Keyword objects.
-- [object KeywordCreateBulkResponse](keywordcreatebulkresponse.md)
+- [object KeywordCreateBulkResponse](./keywordcreatebulkresponse.md)
   The response from a bulk Keyword creation request, containing results for each item.
-- [object KeywordDeleteBulkRequest](keyworddeletebulkrequest.md)
+- [object KeywordDeleteBulkRequest](./keyworddeletebulkrequest.md)
   A bulk request to delete multiple Keyword objects by their identifiers.
-- [object KeywordDeleteBulkResponse](keyworddeletebulkresponse.md)
+- [object KeywordDeleteBulkResponse](./keyworddeletebulkresponse.md)
   The response from a bulk Keyword deletion request.
-- [object KeywordUpdateBulkRequest](keywordupdatebulkrequest.md)
+- [object KeywordUpdateBulkRequest](./keywordupdatebulkrequest.md)
   A bulk request to update multiple Keyword objects.
-- [object KeywordUpdateBulkResponse](keywordupdatebulkresponse.md)
+- [object KeywordUpdateBulkResponse](./keywordupdatebulkresponse.md)
   The response from a bulk Keyword update request, containing results for each item.
-- [object NegativeKeywordCreateBulkRequest](negativekeywordcreatebulkrequest.md)
+- [object NegativeKeywordCreateBulkRequest](./negativekeywordcreatebulkrequest.md)
   A bulk request to create multiple negative keywords.
-- [object NegativeKeywordCreateBulkResponse](negativekeywordcreatebulkresponse.md)
+- [object NegativeKeywordCreateBulkResponse](./negativekeywordcreatebulkresponse.md)
   The response from a bulk negative keyword creation request, containing results for each item.
-- [object NegativeKeywordDeleteBulkRequest](negativekeyworddeletebulkrequest.md)
+- [object NegativeKeywordDeleteBulkRequest](./negativekeyworddeletebulkrequest.md)
   A bulk request to delete multiple negative keywords by their identifiers.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies your protocol that new inbound data is available to parse.
@@ -23,7 +24,8 @@ func handleInput(framer: NWProtocolFramer.Instance) -> Int
 
 ## See Also
 
-- [func handleOutput(framer: NWProtocolFramer.Instance, message: NWProtocolFramer.Message, messageLength: Int, isComplete: Bool)](nwprotocolframerimplementation/handleoutput(framer:message:messagelength:iscomplete:).md)
+### Handling Data
+- [func handleOutput(framer: NWProtocolFramer.Instance, message: NWProtocolFramer.Message, messageLength: Int, isComplete: Bool)](./handleoutput%28framer,message,messagelength,iscomplete%29.md)
   Notifies your protocol about a new outbound message.
 
 

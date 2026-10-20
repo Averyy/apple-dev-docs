@@ -2,17 +2,22 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the listener to download the resource instead of displaying it.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func download()
+```
+
+```objc
+- (void) download;
 ```
 
 #### Discussion
@@ -21,9 +26,10 @@ This method converts a location change that may be in progress to a download ope
 
 ## See Also
 
-- [func ignore()](webpolicydecisionlistener/ignore.md)
+### Making Resource-Usage Decisions
+- [func ignore()](./ignore%28%29.md)
   Tells the listener to ignore the resource.
-- [func use()](webpolicydecisionlistener/use.md)
+- [func use()](./use%28%29.md)
   Tells the listener to use the resource.
 
 

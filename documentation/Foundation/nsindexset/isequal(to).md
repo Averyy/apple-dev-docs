@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the indexes in the receiving index set are the same indexes contained in another index set.
 
@@ -20,9 +21,13 @@ Indicates whether the indexes in the receiving index set are the same indexes co
 func isEqual(to indexSet: IndexSet) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToIndexSet:(NSIndexSet *) indexSet;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the indexes in the receiving index set are the same indexes `indexSet` contains, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) when the indexes in the receiving index set are the same indexes `indexSet` contains, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 

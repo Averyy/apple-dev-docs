@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kPrdRootHubApple](1643686-anonymous/kprdroothubapple.md)
-- [kPrdRootHubAppleE](1643686-anonymous/kprdroothubapplee.md)
-- [kPrdRootHubAppleSS](1643686-anonymous/kprdroothubappless.md)
-- [kUSBRootHubPollingRate](1643686-anonymous/kusbroothubpollingrate.md)
+- [kPrdRootHubApple](./api-1643686-anonymous/kprdroothubapple.md)
+- [kPrdRootHubAppleE](./api-1643686-anonymous/kprdroothubapplee.md)
+- [kPrdRootHubAppleSS](./api-1643686-anonymous/kprdroothubappless.md)
+- [kUSBRootHubPollingRate](./api-1643686-anonymous/kusbroothubpollingrate.md)
 
 
 ---

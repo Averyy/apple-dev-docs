@@ -1,7 +1,8 @@
 # getCString(_:maxLength:encoding:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the `String`’s content to a given encoding and stores them in a buffer.
 

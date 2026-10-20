@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the name encapsulated with the receiver for the specified object in the container.
 
@@ -13,6 +14,10 @@ Sets the name encapsulated with the receiver for the specified object in the con
 
 ```swift
 var name: String { get set }
+```
+
+```objc
+@property (copy) NSString * name;
 ```
 
 

@@ -1,7 +1,8 @@
 # jsonParse
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A function that a response parser uses to interpret JSON from the API server.
 
@@ -10,7 +11,7 @@ A function that a response parser uses to interpret JSON from the API server.
 
 ## Declaration
 
-```swift
+```
 attribute Function jsonParse;
 ```
 

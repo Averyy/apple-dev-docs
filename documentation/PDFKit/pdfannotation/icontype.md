@@ -1,7 +1,8 @@
 # iconType
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of icon to display for a pop-up text annotation.
 
@@ -10,7 +11,7 @@ The type of icon to display for a pop-up text annotation.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ The type of icon to display for a pop-up text annotation.
 var iconType: PDFTextAnnotationIconType { get set }
 ```
 
+```objc
+@property (nonatomic) PDFTextAnnotationIconType iconType;
+```
+
 ## See Also
 
-- [enum PDFTextAnnotationIconType](pdftextannotationicontype.md)
+### Configuring Text Annotations
+- [enum PDFTextAnnotationIconType](../pdftextannotationicontype.md)
   The types of icons that a text annotation can use.
-- [struct PDFAnnotationTextIconType](pdfannotationtexticontype.md)
+- [struct PDFAnnotationTextIconType](../pdfannotationtexticontype.md)
   Constants for icon type values in text annotation property dictionaries.
 
 

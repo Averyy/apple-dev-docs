@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a motion effect from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a motion effect from data in an unarchiver.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Creates a motion effect from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](uimotioneffect/init.md)
+### Initializing a motion effect
+- [init()](./init%28%29.md)
   Initializes the motion effect to its default state.
 
 

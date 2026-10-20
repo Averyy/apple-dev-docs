@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_PixelBufferPool
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A pixel buffer pool for pixel buffers being output by the decompression session.
 
@@ -19,15 +20,20 @@ A pixel buffer pool for pixel buffers being output by the decompression session.
 let kVTDecompressionPropertyKey_PixelBufferPool: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_PixelBufferPool;
+```
+
 #### Discussion
 
-This pixel buffer pool is always compatible with the client’s pixel buffer attributes as specified when calling [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](vtdecompressionsessioncreate(allocator:formatdescription:decoderspecification:imagebufferattributes:outputcallback:decompressionsessionout:).md).
+This pixel buffer pool is always compatible with the client’s pixel buffer attributes as specified when calling [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md).
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString](kvtdecompressionpropertykey_outputpoolrequestedminimumbuffercount.md)
+### Pixel Buffer Pools
+- [let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString](./kvtdecompressionpropertykey_outputpoolrequestedminimumbuffercount.md)
   The requested minimum buffer count that a decompression session should use for its output pixel buffer pool, without releasing buffers while the number in use is below this level.
-- [let kVTDecompressionPropertyKey_PixelBufferPoolIsShared: CFString](kvtdecompressionpropertykey_pixelbufferpoolisshared.md)
+- [let kVTDecompressionPropertyKey_PixelBufferPoolIsShared: CFString](./kvtdecompressionpropertykey_pixelbufferpoolisshared.md)
   A Boolean value indicating whether a common pixel buffer pool is shared between the video decoder and the session client.
 
 

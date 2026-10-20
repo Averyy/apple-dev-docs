@@ -1,7 +1,8 @@
 # NSVerticalDirection.up
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The upwards direction.
 

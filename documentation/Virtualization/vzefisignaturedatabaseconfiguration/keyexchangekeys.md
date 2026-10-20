@@ -1,7 +1,8 @@
 # keyExchangeKeys
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Key Exchange Key (KEK) database entries.
 
@@ -12,6 +13,10 @@ Key Exchange Key (KEK) database entries.
 
 ```swift
 var keyExchangeKeys: [VZEFISignatureList] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<VZEFISignatureList *> * keyExchangeKeys;
 ```
 
 

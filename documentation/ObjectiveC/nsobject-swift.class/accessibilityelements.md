@@ -1,7 +1,8 @@
 # accessibilityElements
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of features of an object that assistive technologies can access.
 
@@ -9,7 +10,7 @@ An array of features of an object that assistive technologies can access.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ An array of features of an object that assistive technologies can access.
 var accessibilityElements: [Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSArray * accessibilityElements;
+```
+
 #### Discussion
 
-Set this property on an [`NSObject`](nsobject-swift.class.md) subclass to supplement the default accessibility element hierarchy with elements that you want assistive technologies — such as VoiceOver, Switch Control, and Voice Control — to interact with. In the array your implementation returns, you can include elements such as user interface controls, text, images, or custom accessibility elements that you want to make accessible.
+Set this property on an [`NSObject`](../nsobject-swift.class.md) subclass to supplement the default accessibility element hierarchy with elements that you want assistive technologies — such as VoiceOver, Switch Control, and Voice Control — to interact with. In the array your implementation returns, you can include elements such as user interface controls, text, images, or custom accessibility elements that you want to make accessible.
 
 The system adds default accessibility elements to view hierarchies that you build using system-provided UI. However, use this property when you need to make a custom view accessible in ways the system can’t automatically provide. For example, a pie chart that renders using Core Graphics can expose each slice of its chart as a separate accessibility element:
 

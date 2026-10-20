@@ -1,18 +1,19 @@
 # MediaLocaleDetail.AppPreviewDeviceWithAssets
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object MediaLocaleDetail.AppPreviewDeviceWithAssets
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object MediaLocaleDetail.AppPreviewDeviceWithAssets.MediaAppPreviewOrScreenshotsDetail](medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.md)
+- [object MediaLocaleDetail.AppPreviewDeviceWithAssets.MediaAppPreviewOrScreenshotsDetail](./apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.md)
 
 ## Properties
 

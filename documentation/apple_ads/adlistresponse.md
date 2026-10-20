@@ -1,16 +1,19 @@
 # AdListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request that returns a list of ads.
 
 **Availability**:
-- Search Ads 4.0+
+- Search Ads 4.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object AdListResponse
 ```
 
@@ -21,13 +24,14 @@ object AdListResponse
 
 ## See Also
 
-- [object Ad](ad.md)
+### Ad Request and Response Objects
+- [object Ad](./ad.md)
   The assignment of a creative to an ad group.
-- [object AdCreate](adcreate.md)
+- [object AdCreate](./adcreate.md)
   The request to create an ad, and assign a creative to an ad group.
-- [object AdUpdate](adupdate.md)
+- [object AdUpdate](./adupdate.md)
   The request to update an ad.
-- [object AdResponse](adresponse.md)
+- [object AdResponse](./adresponse.md)
   The response to an ad request.
 
 

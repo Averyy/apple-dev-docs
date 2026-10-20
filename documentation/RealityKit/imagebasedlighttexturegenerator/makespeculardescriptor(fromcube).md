@@ -1,9 +1,10 @@
 # makeSpecularDescriptor(fromCube:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns a recommended image based light specular cube texture descriptor (for [`generateSpecular(using:fromSkyboxCube:quality:into:)`](imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:).md)).
+Returns a recommended image based light specular cube texture descriptor (for [`generateSpecular(using:fromSkyboxCube:quality:into:)`](./generatespecular%28using,fromskyboxcube,quality,into%29.md)).
 
 **Availability**:
 - iOS 27.0+
@@ -19,12 +20,13 @@ func makeSpecularDescriptor(fromCube texture: any MTLTexture) throws -> MTLTextu
 
 #### Discussion
 
-> **Note**: If `texture` is not a cube texture.
+> **Throws**: If `texture` is not a cube texture.
 
 ## See Also
 
-- [func makeDiffuseDescriptor(fromCube: any MTLTexture) throws -> MTLTextureDescriptor](imagebasedlighttexturegenerator/makediffusedescriptor(fromcube:).md)
-  Returns a recommended image based light diffuse cube texture descriptor (for [`generateDiffuse(using:fromSkyboxCube:quality:into:)`](imagebasedlighttexturegenerator/generatediffuse(using:fromskyboxcube:quality:into:).md)).
+### Describing output textures
+- [func makeDiffuseDescriptor(fromCube: any MTLTexture) throws -> MTLTextureDescriptor](./makediffusedescriptor%28fromcube%29.md)
+  Returns a recommended image based light diffuse cube texture descriptor (for [`generateDiffuse(using:fromSkyboxCube:quality:into:)`](./generatediffuse%28using,fromskyboxcube,quality,into%29.md)).
 
 
 ---

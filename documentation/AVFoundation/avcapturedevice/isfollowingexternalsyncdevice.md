@@ -1,7 +1,8 @@
 # isFollowingExternalSyncDevice
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the device is following an external sync device.
 
@@ -18,17 +19,22 @@ Whether the device is following an external sync device.
 var isFollowingExternalSyncDevice: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isFollowingExternalSyncDevice) BOOL followingExternalSyncDevice;
+```
+
 #### Discussion
 
-See [`follow(_:videoFrameDuration:delegate:)`](avcapturedeviceinput/follow(_:videoframeduration:delegate:).md) for more information on external sync.
+See [`follow(_:videoFrameDuration:delegate:)`](../avcapturedeviceinput/follow%28_,videoframeduration,delegate%29.md) for more information on external sync.
 
 ## See Also
 
-- [var minSupportedExternalSyncFrameDuration: CMTime](avcapturedevice/minsupportedexternalsyncframeduration.md)
+### Synchronizing with external devices
+- [var minSupportedExternalSyncFrameDuration: CMTime](./minsupportedexternalsyncframeduration.md)
   The minimum frame duration that can be passed as the `videoFrameDuration` when directing your device input to follow an external sync device.
-- [var isVideoFrameDurationLocked: Bool](avcapturedevice/isvideoframedurationlocked.md)
+- [var isVideoFrameDurationLocked: Bool](./isvideoframedurationlocked.md)
   Whether the device’s video frame rate (expressed as a duration) is currently locked.
-- [var minSupportedLockedVideoFrameDuration: CMTime](avcapturedevice/minsupportedlockedvideoframeduration.md)
+- [var minSupportedLockedVideoFrameDuration: CMTime](./minsupportedlockedvideoframeduration.md)
   The maximum frame rate (expressed as a minimum duration) that can be set on an input associated with this device.
 
 

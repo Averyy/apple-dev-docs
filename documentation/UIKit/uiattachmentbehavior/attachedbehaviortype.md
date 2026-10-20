@@ -1,7 +1,8 @@
 # attachedBehaviorType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the attachment behavior.
 
@@ -9,7 +10,7 @@ The type of the attachment behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The type of the attachment behavior.
 var attachedBehaviorType: UIAttachmentBehavior.AttachmentType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIAttachmentBehaviorType attachedBehaviorType;
+```
+
 #### Discussion
 
-The available types for attachment behaviors are described in the [`UIAttachmentBehavior.AttachmentType`](uiattachmentbehavior/attachmenttype.md) enum.
+The available types for attachment behaviors are described in the [`UIAttachmentBehavior.AttachmentType`](./attachmenttype.md) enum.
 
 ## See Also
 
-- [var anchorPoint: CGPoint](uiattachmentbehavior/anchorpoint.md)
+### Configuring an attachment behavior
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   The anchor point for the attachment behavior, if any.
-- [var damping: CGFloat](uiattachmentbehavior/damping.md)
+- [var damping: CGFloat](./damping.md)
   The amount of damping to apply to the attachment behavior.
-- [var frequency: CGFloat](uiattachmentbehavior/frequency.md)
+- [var frequency: CGFloat](./frequency.md)
   The frequency of oscillation for the attachment behavior.
-- [var length: CGFloat](uiattachmentbehavior/length.md)
+- [var length: CGFloat](./length.md)
   The distance, in points, between the two attachment points of the attachment behavior.
-- [var frictionTorque: CGFloat](uiattachmentbehavior/frictiontorque.md)
+- [var frictionTorque: CGFloat](./frictiontorque.md)
   The amount of force needed to overcome rotational forces around an anchor point.
-- [var attachmentRange: UIFloatRange](uiattachmentbehavior/attachmentrange.md)
+- [var attachmentRange: UIFloatRange](./attachmentrange.md)
   The range of motion for the attachment behavior.
 
 

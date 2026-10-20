@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an array of selection rectangles corresponding to the given text range.
@@ -18,9 +19,13 @@ Returns an array of selection rectangles corresponding to the given text range.
 func selectionRects(for range: UITextRange) -> [UITextSelectionRect]
 ```
 
+```objc
+- (NSArray<UITextSelectionRect *> *) selectionRectsForRange:(UITextRange *) range;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 ## Parameters
 

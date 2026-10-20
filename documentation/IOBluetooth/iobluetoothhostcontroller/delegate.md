@@ -1,15 +1,20 @@
 # delegate
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var delegate: AnyObject! { get set }
+```
+
+```objc
+@property (weak) id delegate;
 ```
 
 

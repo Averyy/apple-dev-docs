@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,12 +21,17 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var breakpoint0: CGPoint](cinineparttiled/breakpoint0.md)
-- [var breakpoint1: CGPoint](cinineparttiled/breakpoint1.md)
-- [var flipYTiles: Bool](cinineparttiled/flipytiles.md)
-- [var growAmount: CGPoint](cinineparttiled/growamount.md)
+### Instance Properties
+- [var breakpoint0: CGPoint](./breakpoint0.md)
+- [var breakpoint1: CGPoint](./breakpoint1.md)
+- [var flipYTiles: Bool](./flipytiles.md)
+- [var growAmount: CGPoint](./growamount.md)
 
 
 ---

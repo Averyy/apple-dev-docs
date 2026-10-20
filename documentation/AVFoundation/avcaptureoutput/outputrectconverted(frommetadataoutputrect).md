@@ -1,7 +1,8 @@
 # outputRectConverted(fromMetadataOutputRect:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a rectangle in the coordinate system used for metadata outputs to one in the capture output object’s coordinate system.
 
@@ -18,23 +19,28 @@ Converts a rectangle in the coordinate system used for metadata outputs to one i
 func outputRectConverted(fromMetadataOutputRect rectInMetadataOutputCoordinates: CGRect) -> CGRect
 ```
 
+```objc
+- (CGRect) rectForMetadataOutputRectOfInterest:(CGRect) rectInMetadataOutputCoordinates;
+```
+
 #### Return Value
 
-A rectangle in the [`AVCaptureOutput`](avcaptureoutput.md) object’s coordinate system.
+A rectangle in the [`AVCaptureOutput`](../avcaptureoutput.md) object’s coordinate system.
 
 #### Discussion
 
-The rectangle of interest for an [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) object is in a coordinate system extending from `{0,0}` in the top-left to `{1,1}` in the bottom-right, relative to the device’s natural orientation. A capture output object uses a pixel coordinate space which you may zoom, rotate, or mirror.
+The rectangle of interest for an [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md) object is in a coordinate system extending from `{0,0}` in the top-left to `{1,1}` in the bottom-right, relative to the device’s natural orientation. A capture output object uses a pixel coordinate space which you may zoom, rotate, or mirror.
 
 ## Parameters
 
-- `rectInMetadataOutputCoordinates`: A rectangle in the [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) coordinate system.
+- `rectInMetadataOutputCoordinates`: A rectangle in the [`AVCaptureMetadataOutput`](../avcapturemetadataoutput.md) coordinate system.
 
 ## See Also
 
-- [func transformedMetadataObject(for: AVMetadataObject, connection: AVCaptureConnection) -> AVMetadataObject?](avcaptureoutput/transformedmetadataobject(for:connection:).md)
+### Converting between coordinate systems
+- [func transformedMetadataObject(for: AVMetadataObject, connection: AVCaptureConnection) -> AVMetadataObject?](./transformedmetadataobject%28for,connection%29.md)
   Converts a metadata object’s visual properties to layer coordinates.
-- [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](avcaptureoutput/metadataoutputrectconverted(fromoutputrect:).md)
+- [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](./metadataoutputrectconverted%28fromoutputrect%29.md)
   Converts a rectangle in the capture output object’s coordinate system to one in the coordinate system used for metadata outputs.
 
 

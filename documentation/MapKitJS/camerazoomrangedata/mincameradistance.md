@@ -1,7 +1,8 @@
 # minCameraDistance
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The minimum allowed distance of the camera from the center of the map in meters.
 
@@ -10,13 +11,14 @@ The minimum allowed distance of the camera from the center of the map in meters.
 
 ## Declaration
 
-```swift
+```
 minCameraDistance: number;
 ```
 
 ## See Also
 
-- [maxCameraDistance](camerazoomrangedata/maxcameradistance.md)
+### Setting distance constraints
+- [maxCameraDistance](./maxcameradistance.md)
   The maximum allowed distance of the camera from the center of the map in meters.
 
 

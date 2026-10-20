@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSB3HubDescriptorType](1643682-anonymous/kusb3hubdescriptortype.md)
-- [kUSBHubDescriptorType](1643682-anonymous/kusbhubdescriptortype.md)
+- [kUSB3HubDescriptorType](./api-1643682-anonymous/kusb3hubdescriptortype.md)
+- [kUSBHubDescriptorType](./api-1643682-anonymous/kusbhubdescriptortype.md)
 
 
 ---

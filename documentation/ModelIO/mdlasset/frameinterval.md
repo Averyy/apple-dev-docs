@@ -1,7 +1,8 @@
 # frameInterval
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval between data samples in the asset.
 
@@ -19,15 +20,20 @@ The time interval between data samples in the asset.
 var frameInterval: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSTimeInterval frameInterval;
+```
+
 #### Discussion
 
 If the asset does not contain timed information, this property’s value is zero. Otherwise, this property represents frame timing: For example, if an asset contains animation data to be presented at 24 frames per second, this property’s value is `0.04167` (1/24 second).
 
 ## See Also
 
-- [var startTime: TimeInterval](mdlasset/starttime.md)
+### Working with Timed Information
+- [var startTime: TimeInterval](./starttime.md)
   The timestamp for the first timed data sample in the asset.
-- [var endTime: TimeInterval](mdlasset/endtime.md)
+- [var endTime: TimeInterval](./endtime.md)
   The timestamp for the last timed data sample in the asset.
 
 

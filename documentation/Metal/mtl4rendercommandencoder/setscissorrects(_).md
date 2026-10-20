@@ -1,7 +1,8 @@
 # setScissorRects(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an array of scissor rectangles for a fragment scissor test.
 
@@ -25,15 +26,16 @@ Metal uses the specific scissor rectangle corresponding to the index you specify
 
 ## Parameters
 
-- `scissorRects`: A Swift array of [`MTLScissorRect`](mtlscissorrect.md) elements.
+- `scissorRects`: A Swift array of [`MTLScissorRect`](../mtlscissorrect.md) elements.
 
 ## See Also
 
-- [func setViewport(MTLViewport)](mtl4rendercommandencoder/setviewport(_:).md)
+### Configuring viewport and scissor behavior
+- [func setViewport(MTLViewport)](./setviewport%28_%29.md)
   Sets the viewport which that transforms vertices from normalized device coordinates to window coordinates.
-- [func setViewports([MTLViewport])](mtl4rendercommandencoder/setviewports(_:).md)
+- [func setViewports([MTLViewport])](./setviewports%28_%29.md)
   Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
-- [func setScissorRect(MTLScissorRect)](mtl4rendercommandencoder/setscissorrect(_:).md)
+- [func setScissorRect(MTLScissorRect)](./setscissorrect%28_%29.md)
   Sets a scissor rectangle to discard fragments outside a specific area.
 
 

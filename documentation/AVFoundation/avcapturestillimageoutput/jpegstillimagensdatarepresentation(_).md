@@ -1,20 +1,27 @@
 # jpegStillImageNSDataRepresentation(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an `NSData` representation of a still image data and metadata attachments in a JPEG sample buffer.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
+- iOS 4.0+ - Deprecated in 10.0
+- iPadOS 4.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.7+ - Deprecated in 10.15
+
+> **Deprecated**: Use AVCapturePhotoOutput instead.
 
 ## Declaration
 
 ```swift
 class func jpegStillImageNSDataRepresentation(_ jpegSampleBuffer: CMSampleBuffer) -> Data?
+```
+
+```objc
++ (NSData *) jpegStillImageNSDataRepresentation:(CMSampleBufferRef) jpegSampleBuffer;
 ```
 
 #### Return Value
@@ -29,7 +36,9 @@ The returned `NSData` object is suitable for writing to disk.
 
 ## Parameters
 
-- `jpegSampleBuffer`: The sample buffer carrying JPEG image data, optionally with `Exif` metadata sample buffer attachments. This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `jpegSampleBuffer` is `NULL` or not in the JPEG format.
+- `jpegSampleBuffer`: The sample buffer carrying JPEG image data, optionally with `Exif` metadata sample buffer attachments.
+
+  This method throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if `jpegSampleBuffer` is `NULL` or not in the JPEG format.
 
 
 ---

@@ -1,7 +1,8 @@
 # repeat(_:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the preferred repeat behavior.
 

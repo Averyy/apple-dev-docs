@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.mean
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.mean.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.mean
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.mean
-
-**array.mean(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: See [mean()](mlx.core.mean.html#mlx.core.mean).
-
-** Contents
+**array.mean(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: See [mean()](mlx.core.mean.md#mlx.core.mean).

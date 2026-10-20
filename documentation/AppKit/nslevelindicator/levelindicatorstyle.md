@@ -1,7 +1,8 @@
 # levelIndicatorStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of the indicator.
 
@@ -14,23 +15,28 @@ The appearance of the indicator.
 var levelIndicatorStyle: NSLevelIndicator.Style { get set }
 ```
 
+```objc
+@property NSLevelIndicatorStyle levelIndicatorStyle;
+```
+
 #### Discussion
 
-See [`NSLevelIndicator.Style`](nslevelindicator/style.md) for possible styles.
+See [`NSLevelIndicator.Style`](./style.md) for possible styles.
 
 ## See Also
 
-- [var tickMarkPosition: NSSlider.TickMarkPosition](nslevelindicator/tickmarkposition.md)
+### Managing Tick Marks and Style
+- [var tickMarkPosition: NSSlider.TickMarkPosition](./tickmarkposition.md)
   Determines how the receiver’s tick marks are aligned with it.
-- [var numberOfTickMarks: Int](nslevelindicator/numberoftickmarks.md)
+- [var numberOfTickMarks: Int](./numberoftickmarks.md)
   The number of tick marks associated with the receiver.
-- [var numberOfMajorTickMarks: Int](nslevelindicator/numberofmajortickmarks.md)
+- [var numberOfMajorTickMarks: Int](./numberofmajortickmarks.md)
   The number of major tick marks associated with the receiver.
-- [func tickMarkValue(at: Int) -> Double](nslevelindicator/tickmarkvalue(at:).md)
+- [func tickMarkValue(at: Int) -> Double](./tickmarkvalue%28at%29.md)
   Returns the receiver’s value represented by the tick mark at the specified index (the minimum-value tick mark has an index of 0).
-- [func rectOfTickMark(at: Int) -> NSRect](nslevelindicator/rectoftickmark(at:).md)
+- [func rectOfTickMark(at: Int) -> NSRect](./rectoftickmark%28at%29.md)
   Returns the bounding rectangle of the tick mark identified by the specified index (the minimum-value tick mark is at index 0).
-- [NSLevelIndicator.Style](nslevelindicator/style.md)
+- [NSLevelIndicator.Style](./style.md)
   Constants that specify a level indicator’s appearance.
 
 

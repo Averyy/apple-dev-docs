@@ -1,7 +1,8 @@
 # xpc_data_create(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an XPC object that represents a buffer of bytes.
 
@@ -10,7 +11,7 @@ Creates an XPC object that represents a buffer of bytes.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates an XPC object that represents a buffer of bytes.
 
 ```swift
 func xpc_data_create(_ bytes: UnsafeRawPointer?, _ length: Int) -> xpc_object_t
+```
+
+```c
+extern xpc_object_txpc_data_create(const void *bytes, size_t length);
 ```
 
 #### Return Value
@@ -35,13 +40,14 @@ This method will copy the buffer given into internal storage. After calling this
 
 ## See Also
 
-- [func xpc_data_create_with_dispatch_data(dispatch_data_t) -> xpc_object_t](xpc_data_create_with_dispatch_data(_:).md)
+### Data objects
+- [func xpc_data_create_with_dispatch_data(dispatch_data_t) -> xpc_object_t](./xpc_data_create_with_dispatch_data%28_%29.md)
   Creates an XPC object that represents a buffer of bytes that the specified GCD data object describes.
-- [func xpc_data_get_bytes(xpc_object_t, UnsafeMutableRawPointer, Int, Int) -> Int](xpc_data_get_bytes(_:_:_:_:).md)
+- [func xpc_data_get_bytes(xpc_object_t, UnsafeMutableRawPointer, Int, Int) -> Int](./xpc_data_get_bytes%28_,_,_,_%29.md)
   Copies the bytes in a data object into the specified buffer.
-- [func xpc_data_get_bytes_ptr(xpc_object_t) -> UnsafeRawPointer?](xpc_data_get_bytes_ptr(_:).md)
+- [func xpc_data_get_bytes_ptr(xpc_object_t) -> UnsafeRawPointer?](./xpc_data_get_bytes_ptr%28_%29.md)
   Returns a pointer to the internal storage of a data object.
-- [func xpc_data_get_length(xpc_object_t) -> Int](xpc_data_get_length(_:).md)
+- [func xpc_data_get_length(xpc_object_t) -> Int](./xpc_data_get_length%28_%29.md)
   Returns the length of the data that an XPC data object encapsulates.
 
 

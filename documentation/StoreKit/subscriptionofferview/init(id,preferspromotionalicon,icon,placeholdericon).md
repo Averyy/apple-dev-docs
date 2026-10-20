@@ -1,7 +1,8 @@
 # init(id:prefersPromotionalIcon:icon:placeholderIcon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -17,14 +18,15 @@ init(id subscriptionID: Product.ID, prefersPromotionalIcon: Bool = false, @ViewB
 
 ## See Also
 
-- [init(SubscriptionOfferViewStyleConfiguration)](subscriptionofferview/init(_:).md)
-- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship)](subscriptionofferview/init(groupid:visiblerelationship:).md)
-- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship, icon: () -> Icon)](subscriptionofferview/init(groupid:visiblerelationship:icon:).md)
-- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship, icon: () -> Icon, placeholderIcon: () -> PlaceholderIcon)](subscriptionofferview/init(groupid:visiblerelationship:icon:placeholdericon:).md)
-- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship, useAppIcon: Bool)](subscriptionofferview/init(groupid:visiblerelationship:useappicon:).md)
-- [init(id: Product.ID, icon: (ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](subscriptionofferview/init(id:icon:placeholdericon:).md)
-- [init(id: Product.ID, prefersPromotionalIcon: Bool)](subscriptionofferview/init(id:preferspromotionalicon:).md)
-- [init(id: Product.ID, prefersPromotionalIcon: Bool, icon: () -> Icon)](subscriptionofferview/init(id:preferspromotionalicon:icon:).md)
+### Initializers
+- [init(SubscriptionOfferViewStyleConfiguration)](./init%28_%29.md)
+- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship)](./init%28groupid,visiblerelationship%29.md)
+- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship, icon: () -> Icon)](./init%28groupid,visiblerelationship,icon%29.md)
+- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship, icon: () -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28groupid,visiblerelationship,icon,placeholdericon%29.md)
+- [init(groupID: String, visibleRelationship: Product.SubscriptionRelationship, useAppIcon: Bool)](./init%28groupid,visiblerelationship,useappicon%29.md)
+- [init(id: Product.ID, icon: (ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28id,icon,placeholdericon%29.md)
+- [init(id: Product.ID, prefersPromotionalIcon: Bool)](./init%28id,preferspromotionalicon%29.md)
+- [init(id: Product.ID, prefersPromotionalIcon: Bool, icon: () -> Icon)](./init%28id,preferspromotionalicon,icon%29.md)
 
 
 ---

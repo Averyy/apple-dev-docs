@@ -1,7 +1,8 @@
 # kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data in the keychain item cannot be accessed after a restart until the device has been unlocked once by the user.
 
@@ -18,6 +19,10 @@ The data in the keychain item cannot be accessed after a restart until the devic
 
 ```swift
 let kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly;
 ```
 
 #### Discussion

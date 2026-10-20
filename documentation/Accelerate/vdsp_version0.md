@@ -1,18 +1,19 @@
 # vDSP_Version0
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The vDSP major version.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The vDSP major version.
 var vDSP_Version0: Int32 { get }
 ```
 
+```c
+#define vDSP_Version0
+```
+
 ## See Also
 
-- [var vDSP_Version1: Int32](vdsp_version1.md)
+### Constants
+- [var vDSP_Version1: Int32](./vdsp_version1.md)
   The vDSP minor version.
 
 

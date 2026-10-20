@@ -1,7 +1,8 @@
 # NEOnDemandRuleInterfaceType.wiFi
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Match Wi-Fi interfaces
 
@@ -19,13 +20,18 @@ Match Wi-Fi interfaces
 case wiFi
 ```
 
+```c
+NEOnDemandRuleInterfaceTypeWiFi
+```
+
 ## See Also
 
-- [NEOnDemandRuleInterfaceType.any](neondemandruleinterfacetype/any.md)
+### Interface Types
+- [NEOnDemandRuleInterfaceType.any](./any.md)
   Match any interface type
-- [NEOnDemandRuleInterfaceType.ethernet](neondemandruleinterfacetype/ethernet.md)
+- [NEOnDemandRuleInterfaceType.ethernet](./ethernet.md)
   Match wired ethernet interfaces
-- [NEOnDemandRuleInterfaceType.cellular](neondemandruleinterfacetype/cellular.md)
+- [NEOnDemandRuleInterfaceType.cellular](./cellular.md)
   Match cellular data interfaces
 
 

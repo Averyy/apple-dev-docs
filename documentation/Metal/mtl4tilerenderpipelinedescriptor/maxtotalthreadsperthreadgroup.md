@@ -1,7 +1,8 @@
 # maxTotalThreadsPerThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the maximum number of threads that the GPU can execute simultaneously within a single threadgroup in the tile render pipeline.
 
@@ -17,6 +18,10 @@ Sets the maximum number of threads that the GPU can execute simultaneously withi
 
 ```swift
 var maxTotalThreadsPerThreadgroup: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerThreadgroup;
 ```
 
 

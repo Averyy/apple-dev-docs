@@ -1,9 +1,10 @@
 # FileManager.VolumeEnumerationOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Options for enumerating mounted volumes with the [`mountedVolumeURLs(includingResourceValuesForKeys:options:)`](filemanager/mountedvolumeurls(includingresourcevaluesforkeys:options:).md) method.
+Options for enumerating mounted volumes with the [`mountedVolumeURLs(includingResourceValuesForKeys:options:)`](./mountedvolumeurls%28includingresourcevaluesforkeys,options%29.md) method.
 
 **Availability**:
 - iOS 4.0+
@@ -20,46 +21,51 @@ Options for enumerating mounted volumes with the [`mountedVolumeURLs(includingRe
 struct VolumeEnumerationOptions
 ```
 
+```c
+enum NSVolumeEnumerationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a Volume Enumeration Options Value
-- [init(rawValue: UInt)](filemanager/volumeenumerationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./volumeenumerationoptions/init%28rawvalue%29.md)
   Create a volume enumeration options value.
 ### Volume Enumeration Options
-- [static var skipHiddenVolumes: FileManager.VolumeEnumerationOptions](filemanager/volumeenumerationoptions/skiphiddenvolumes.md)
+- [static var skipHiddenVolumes: FileManager.VolumeEnumerationOptions](./volumeenumerationoptions/skiphiddenvolumes.md)
   The enumeration skips hidden volumes.
-- [static var produceFileReferenceURLs: FileManager.VolumeEnumerationOptions](filemanager/volumeenumerationoptions/producefilereferenceurls.md)
+- [static var produceFileReferenceURLs: FileManager.VolumeEnumerationOptions](./volumeenumerationoptions/producefilereferenceurls.md)
   The enumeration produces file reference URLs rather than path-based URLs.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](filemanager/contentsofdirectory(at:includingpropertiesforkeys:options:).md)
+### Discovering directory contents
+- [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](./contentsofdirectory%28at,includingpropertiesforkeys,options%29.md)
   Performs a shallow search of the specified directory and returns URLs for the contained items.
-- [func contentsOfDirectory(atPath: String) throws -> [String]](filemanager/contentsofdirectory(atpath:).md)
+- [func contentsOfDirectory(atPath: String) throws -> [String]](./contentsofdirectory%28atpath%29.md)
   Performs a shallow search of the specified directory and returns the paths of any contained items.
-- [func enumerator(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions, errorHandler: ((URL, any Error) -> Bool)?) -> FileManager.DirectoryEnumerator?](filemanager/enumerator(at:includingpropertiesforkeys:options:errorhandler:).md)
+- [func enumerator(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions, errorHandler: ((URL, any Error) -> Bool)?) -> FileManager.DirectoryEnumerator?](./enumerator%28at,includingpropertiesforkeys,options,errorhandler%29.md)
   Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL.
-- [func enumerator(atPath: String) -> FileManager.DirectoryEnumerator?](filemanager/enumerator(atpath:).md)
+- [func enumerator(atPath: String) -> FileManager.DirectoryEnumerator?](./enumerator%28atpath%29.md)
   Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified path.
-- [FileManager.DirectoryEnumerator](filemanager/directoryenumerator.md)
+- [FileManager.DirectoryEnumerator](./directoryenumerator.md)
   An object that enumerates the contents of a directory.
-- [func mountedVolumeURLs(includingResourceValuesForKeys: [URLResourceKey]?, options: FileManager.VolumeEnumerationOptions) -> [URL]?](filemanager/mountedvolumeurls(includingresourcevaluesforkeys:options:).md)
+- [func mountedVolumeURLs(includingResourceValuesForKeys: [URLResourceKey]?, options: FileManager.VolumeEnumerationOptions) -> [URL]?](./mountedvolumeurls%28includingresourcevaluesforkeys,options%29.md)
   Returns an array of URLs that identify the mounted volumes available on the device.
-- [func subpathsOfDirectory(atPath: String) throws -> [String]](filemanager/subpathsofdirectory(atpath:).md)
+- [func subpathsOfDirectory(atPath: String) throws -> [String]](./subpathsofdirectory%28atpath%29.md)
   Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
-- [func subpaths(atPath: String) -> [String]?](filemanager/subpaths(atpath:).md)
+- [func subpaths(atPath: String) -> [String]?](./subpaths%28atpath%29.md)
   Returns an array of strings identifying the paths for all items in the specified directory.
 
 

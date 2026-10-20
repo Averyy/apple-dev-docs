@@ -1,7 +1,8 @@
 # supportAddingVertexBinaryFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the vertex shader’s callable functions list.
 
@@ -19,11 +20,16 @@ A Boolean value that indicates whether you can use the pipeline to create new pi
 var supportAddingVertexBinaryFunctions: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL supportAddingVertexBinaryFunctions;
+```
+
 ## See Also
 
-- [var supportAddingFragmentBinaryFunctions: Bool](mtlrenderpipelinedescriptor/supportaddingfragmentbinaryfunctions.md)
+### Specifying precompiled shader binaries
+- [var supportAddingFragmentBinaryFunctions: Bool](./supportaddingfragmentbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to the fragment shader’s callable functions list.
-- [var binaryArchives: [any MTLBinaryArchive]?](mtlrenderpipelinedescriptor/binaryarchives.md)
+- [var binaryArchives: [any MTLBinaryArchive]?](./binaryarchives.md)
   An array of binary archives to search for precompiled versions of the shader.
 
 

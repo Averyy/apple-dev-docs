@@ -1,7 +1,8 @@
 # PKPassLibrary.Capability
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Features for which your app can request authorization from a person.
 
@@ -19,35 +20,40 @@ Features for which your app can request authorization from a person.
 enum Capability
 ```
 
+```c
+enum PKPassLibraryCapability : NSInteger;
+```
+
 #### Discussion
 
-Pass a capability to [`authorizationStatus(for:)`](pkpasslibrary/authorizationstatus(for:).md) or [`requestAuthorization(for:completion:)`](pkpasslibrary/requestauthorization(for:completion:).md) to check or request someone’s permission to use that feature. Currently, [`PKPassLibrary.Capability.backgroundAddPasses`](pkpasslibrary/capability/backgroundaddpasses.md) is the only capability PassKit defines; it controls whether your app can add passes to Wallet automatically, without prompting the person to review or confirm each pass.
+Pass a capability to [`authorizationStatus(for:)`](./authorizationstatus%28for%29.md) or [`requestAuthorization(for:completion:)`](./requestauthorization%28for,completion%29.md) to check or request someone’s permission to use that feature. Currently, [`PKPassLibrary.Capability.backgroundAddPasses`](./capability/backgroundaddpasses.md) is the only capability PassKit defines; it controls whether your app can add passes to Wallet automatically, without prompting the person to review or confirm each pass.
 
 ## Topics
 
 ### Capabilities
-- [PKPassLibrary.Capability.backgroundAddPasses](pkpasslibrary/capability/backgroundaddpasses.md)
+- [PKPassLibrary.Capability.backgroundAddPasses](./capability/backgroundaddpasses.md)
   A capability that lets your app add passes to Wallet automatically, without prompting the person to review or confirm each pass.
 ### Initializers
-- [init?(rawValue: Int)](pkpasslibrary/capability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./capability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](pkpasslibrary/requestauthorization(for:completion:).md)
+### Automatically adding passes
+- [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](./requestauthorization%28for,completion%29.md)
   Requests a person’s authorization to use a pass library capability.
-- [PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus.md)
+- [PKPassLibrary.AuthorizationStatus](./authorizationstatus.md)
   Statuses that indicate whether a person authorized your app to add a pass to their Wallet.
-- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](pkpasslibrary/addpasses(_:withcompletionhandler:).md)
+- [func addPasses([PKPass], withCompletionHandler: ((PKPassLibraryAddPassesStatus) -> Void)?)](./addpasses%28_,withcompletionhandler%29.md)
   Presents a user interface for adding multiple passes at once.
 
 

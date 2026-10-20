@@ -1,7 +1,8 @@
 # SystemFormatStyle.DateOffset
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that displays the time offset between a comparison date and an anchor date that you provide.
 
@@ -24,7 +25,7 @@ struct DateOffset
 
 `DateOffset` formats the difference between the input date and the specified anchor into a human-readable string. It automatically chooses between a compact time representation (like `5:32`) and a units representation (like `2 days, 3 hours`) based on what values you set in `allowedFields`.
 
-When you use this with [`Text`](text.md), the value the style displays updates automatically as time progresses:
+When you use this with [`Text`](../text.md), the value the style displays updates automatically as time progresses:
 
 ```swift
 let startDate = Date.now
@@ -34,7 +35,7 @@ Text(.currentDate, format: .offset(to: startDate))
 // Output: "3 minutes, 42 seconds"
 ```
 
-##### Controlling Which Units Appear
+##### Controlling which units appear
 
 By default, the style may show year, month, day, hour, minute, and second fields. You can restrict this with `allowedFields`:
 
@@ -56,7 +57,7 @@ When you limit the allowed fields to `[.minute, .second]` (with `maxFieldCount: 
 | `[.hour, .minute]` | 2 | `1 hour, 5 minutes` |
 | `[.year, .month, .day, ...]` | 2 | `2 days, 3 hours` |
 
-##### Controlling the Sign
+##### Controlling the sign
 
 The `sign` parameter determines how the style indicates whether the offset is in the past or future:
 
@@ -78,7 +79,7 @@ Text(.currentDate, format:
 // 0 seconds from anchor: "0 seconds"
 ```
 
-##### Limiting the Number of Fields
+##### Limiting the number of fields
 
 The `maxFieldCount` parameter controls how many units appear in the output. For an offset of 1 hour, 34 minutes, and 23 seconds from the anchor:
 
@@ -91,24 +92,24 @@ The `maxFieldCount` parameter controls how many units appear in the output. For 
 ## Topics
 
 ### Initializers
-- [init(to: Date, allowedFields: Set<Date.ComponentsFormatStyle.Field>, maxFieldCount: Int, sign: NumberFormatStyleConfiguration.SignDisplayStrategy)](systemformatstyle/dateoffset/init(to:allowedfields:maxfieldcount:sign:).md)
+- [init(to: Date, allowedFields: Set<Date.ComponentsFormatStyle.Field>, maxFieldCount: Int, sign: NumberFormatStyleConfiguration.SignDisplayStrategy)](./dateoffset/init%28to,allowedfields,maxfieldcount,sign%29.md)
   Creates a format style that displays the offset between a comparison date and an anchor date that you provide.
 ### Instance Methods
-- [func calendar(Calendar) -> SystemFormatStyle.DateOffset](systemformatstyle/dateoffset/calendar(_:).md)
+- [func calendar(Calendar) -> SystemFormatStyle.DateOffset](./dateoffset/calendar%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](../foundation/formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../../Foundation/discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../../Foundation/formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

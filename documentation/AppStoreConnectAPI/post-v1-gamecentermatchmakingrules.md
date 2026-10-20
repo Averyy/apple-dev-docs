@@ -1,7 +1,8 @@
 # Create a Rule
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a matchmaking rule to a rule set.
 
@@ -14,7 +15,7 @@ Add a matchmaking rule to a rule set.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRules
 {
     “data”: {
@@ -65,11 +66,27 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRules
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRules`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterMatchmakingRuleCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterMatchmakingRuleResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Modify a Rule](patch-v1-gamecentermatchmakingrules-_id_.md)
+### Creating, modifying, and deleting rules
+- [Modify a Rule](./patch-v1-gamecentermatchmakingrules-_id_.md)
   Update a specific matchmaking rule in a rule set.
-- [Delete a Rule](delete-v1-gamecentermatchmakingrules-_id_.md)
+- [Delete a Rule](./delete-v1-gamecentermatchmakingrules-_id_.md)
   Delete a matchmaking rule in a rule set.
 
 

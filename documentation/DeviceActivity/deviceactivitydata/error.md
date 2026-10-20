@@ -1,7 +1,8 @@
 # DeviceActivityData.Error
 
 **Framework**: Device Activity  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that may occur when attempting to fetch activity data.
 
@@ -18,29 +19,30 @@ enum Error
 ## Topics
 
 ### Representing errors
-- [DeviceActivityData.Error.unavailable](deviceactivitydata/error/unavailable.md)
+- [DeviceActivityData.Error.unavailable](./error/unavailable.md)
   An error indicating data access is unavailable.
-- [DeviceActivityData.Error.unauthorized](deviceactivitydata/error/unauthorized.md)
+- [DeviceActivityData.Error.unauthorized](./error/unauthorized.md)
   An error indicating the app isn’t authorized to provide parental controls and access data.
-- [DeviceActivityData.Error.missingData](deviceactivitydata/error/missingdata.md)
+- [DeviceActivityData.Error.missingData](./error/missingdata.md)
   An error indicating the requested data does not exist.
 ### Describing errors
-- [var errorDescription: String?](deviceactivitydata/error/errordescription.md)
+- [var errorDescription: String?](./error/errordescription.md)
   A localized message that describes what error occurred.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DeviceActivityData.Policy](deviceactivitydata/policy.md)
+### Managing data access
+- [DeviceActivityData.Policy](./policy.md)
   The policy for fetching activity data.
 
 

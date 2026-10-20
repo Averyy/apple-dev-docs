@@ -1,7 +1,8 @@
 # formValues
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of the form values that will be submitted during the navigation.
 

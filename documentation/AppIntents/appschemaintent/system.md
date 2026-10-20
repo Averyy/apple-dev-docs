@@ -1,7 +1,8 @@
 # system
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the system domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the system domain.
 ```swift
 static var system: some AppSchema.SystemIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

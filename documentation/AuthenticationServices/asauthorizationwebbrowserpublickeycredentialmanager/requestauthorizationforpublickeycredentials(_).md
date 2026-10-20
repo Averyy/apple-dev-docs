@@ -1,7 +1,8 @@
 # requestAuthorizationForPublicKeyCredentials(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a person’s permission to use their passkeys.
 
@@ -14,12 +15,20 @@ Requests a person’s permission to use their passkeys.
 ## Declaration
 
 ```swift
+func requestAuthorizationForPublicKeyCredentials(_ completionHandler: @escaping @Sendable (ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)
+```
+
+```swift
 func requestAuthorizationForPublicKeyCredentials() async -> ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState
+```
+
+```objc
+- (void) requestAuthorizationForPublicKeyCredentials:(void (^)(ASAuthorizationWebBrowserPublicKeyCredentialManagerAuthorizationState authorizationState)) completionHandler;
 ```
 
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## Parameters
 
@@ -27,9 +36,10 @@ func requestAuthorizationForPublicKeyCredentials() async -> ASAuthorizationWebBr
 
 ## See Also
 
-- [var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstateforplatformcredentials.md)
+### Requesting access to passkeys
+- [var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](./authorizationstateforplatformcredentials.md)
   Returns a value that indicates whether the browser app has access to a person’s passkeys.
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](./authorizationstate.md)
   An enumeration of values that indicate whether the browser app has access to a person’s passkeys.
 
 

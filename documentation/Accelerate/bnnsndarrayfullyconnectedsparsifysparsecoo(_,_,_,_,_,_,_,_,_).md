@@ -1,23 +1,30 @@
 # BNNSNDArrayFullyConnectedSparsifySparseCOO(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts a sparse tensor from the standardized coordinate list (COO) layout to a device-specific sparse layout that BNNS fully connected layers use.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSNDArrayFullyConnectedSparsifySparseCOO(_ in_dense_shape: UnsafePointer<BNNSNDArrayDescriptor>, _ in_indices: UnsafePointer<BNNSNDArrayDescriptor>, _ in_values: UnsafePointer<BNNSNDArrayDescriptor>, _ out: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ sparse_params: UnsafePointer<BNNSSparsityParameters>?, _ batch_size: Int, _ workspace: UnsafeMutableRawPointer?, _ workspace_size: Int, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
+```
+
+```c
+int BNNSNDArrayFullyConnectedSparsifySparseCOO(const BNNSNDArrayDescriptor *in_dense_shape, const BNNSNDArrayDescriptor *in_indices, const BNNSNDArrayDescriptor *in_values, BNNSNDArrayDescriptor *out, const BNNSSparsityParameters *sparse_params, const size_t batch_size, void *workspace, const size_t workspace_size, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -66,7 +73,7 @@ var inputWeights = BNNSNDArrayDescriptor.allocate(initializingFrom: weightsData,
                                                   shape: .vector(nnz))
 ```
 
-To convert the COO weights to the BNNS opaque format for fully connected, create array descriptors for the input weights shape and indices, and call [`BNNSNDArrayFullyConnectedSparsifySparseCOO(_:_:_:_:_:_:_:_:_:)`](bnnsndarrayfullyconnectedsparsifysparsecoo(_:_:_:_:_:_:_:_:_:).md).
+To convert the COO weights to the BNNS opaque format for fully connected, create array descriptors for the input weights shape and indices, and call [`BNNSNDArrayFullyConnectedSparsifySparseCOO(_:_:_:_:_:_:_:_:_:)`](./bnnsndarrayfullyconnectedsparsifysparsecoo%28_,_,_,_,_,_,_,_,_%29.md).
 
 ```swift
 var inputDenseShape = BNNSNDArrayDescriptor(dataType: BNNSDataType.float,
@@ -86,7 +93,7 @@ BNNSNDArrayFullyConnectedSparsifySparseCOO(&inputDenseShape,
                                            nil, nil)
 ```
 
-On return, `sparsifiedWeights` contains the weights that you pass to [`BNNSLayerParametersFullyConnected`](bnnslayerparametersfullyconnected.md). In this example, the data size of `sparsifiedWeights` is 144 bytes.
+On return, `sparsifiedWeights` contains the weights that you pass to [`BNNSLayerParametersFullyConnected`](./bnnslayerparametersfullyconnected.md). In this example, the data size of `sparsifiedWeights` is 144 bytes.
 
 ## Parameters
 
@@ -102,19 +109,20 @@ On return, `sparsifiedWeights` contains the weights that you pass to [`BNNSLayer
 
 ## See Also
 
-- [func BNNSNDArrayGetDataSize(UnsafePointer<BNNSNDArrayDescriptor>) -> Int](bnnsndarraygetdatasize(_:).md)
+### Sparse layers
+- [func BNNSNDArrayGetDataSize(UnsafePointer<BNNSNDArrayDescriptor>) -> Int](./bnnsndarraygetdatasize%28_%29.md)
   Returns the size, in bytes, that an array descriptor requires.
-- [func BNNSNDArrayFullyConnectedSparsifySparseCSR(UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSSparsityParameters>?, Int, UnsafeMutableRawPointer?, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsndarrayfullyconnectedsparsifysparsecsr(_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSNDArrayFullyConnectedSparsifySparseCSR(UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSSparsityParameters>?, Int, UnsafeMutableRawPointer?, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsndarrayfullyconnectedsparsifysparsecsr%28_,_,_,_,_,_,_,_,_,_%29.md)
   Converts a sparse tensor from the standardized compressed sparse row (CSR) layout to a device-specific sparse layout that BNNS fully connected layers use.
-- [static func sparsify(batchSize: Int, inputLayout: BNNS.SparseLayout, inputDenseShape: BNNSNDArrayDescriptor, inputValues: BNNSNDArrayDescriptor, output: inout BNNSNDArrayDescriptor, sparseParameters: BNNS.SparseParameters?, workspace: UnsafeMutableRawBufferPointer?, filterParameters: BNNSFilterParameters?) throws](bnns/fullyconnectedlayer/sparsify(batchsize:inputlayout:inputdenseshape:inputvalues:output:sparseparameters:workspace:filterparameters:).md)
+- [static func sparsify(batchSize: Int, inputLayout: BNNS.SparseLayout, inputDenseShape: BNNSNDArrayDescriptor, inputValues: BNNSNDArrayDescriptor, output: inout BNNSNDArrayDescriptor, sparseParameters: BNNS.SparseParameters?, workspace: UnsafeMutableRawBufferPointer?, filterParameters: BNNSFilterParameters?) throws](./bnns/fullyconnectedlayer/sparsify%28batchsize,inputlayout,inputdenseshape,inputvalues,output,sparseparameters,workspace,filterparameters%29.md)
   Converts a sparse tensor from a standardized sparse layout to a device-specific sparse layout that Fully Connected uses.
-- [struct SparseParameters](bnns/sparseparameters.md)
+- [struct SparseParameters](./bnns/sparseparameters.md)
   A data structure that provides a hint to the sparsity function.
-- [BNNS.SparseLayout](bnns/sparselayout.md)
+- [BNNS.SparseLayout](./bnns/sparselayout.md)
   Constants that specify standardized sparse layouts that BNNS can convert to opaque.
-- [BNNS.SparsityType](bnns/sparsitytype.md)
+- [BNNS.SparsityType](./bnns/sparsitytype.md)
   Constants that specify patterns in the sparsity.
-- [var BNNSSparsityTypeUnstructured: BNNSSparsityType](bnnssparsitytypeunstructured.md)
+- [var BNNSSparsityTypeUnstructured: BNNSSparsityType](./bnnssparsitytypeunstructured.md)
 
 
 ---

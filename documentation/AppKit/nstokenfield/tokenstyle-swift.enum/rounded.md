@@ -1,10 +1,11 @@
 # NSTokenField.TokenStyle.rounded
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 case rounded
 ```
 
+```c
+NSTokenStyleRounded
+```
+
 ## See Also
 
-- [NSTokenField.TokenStyle.default](nstokenfield/tokenstyle-swift.enum/default.md)
-- [NSTokenField.TokenStyle.none](nstokenfield/tokenstyle-swift.enum/none.md)
-- [NSTokenField.TokenStyle.plainSquared](nstokenfield/tokenstyle-swift.enum/plainsquared.md)
-- [NSTokenField.TokenStyle.squared](nstokenfield/tokenstyle-swift.enum/squared.md)
+### Enumeration Cases
+- [NSTokenField.TokenStyle.default](./default.md)
+- [NSTokenField.TokenStyle.none](./none.md)
+- [NSTokenField.TokenStyle.plainSquared](./plainsquared.md)
+- [NSTokenField.TokenStyle.squared](./squared.md)
 
 
 ---

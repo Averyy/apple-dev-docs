@@ -1,7 +1,8 @@
 # HMCharacteristicValueSmokeDetectionStatus.none
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No smoke detected.
 
@@ -19,9 +20,14 @@ No smoke detected.
 case none
 ```
 
+```c
+HMCharacteristicValueSmokeDetectionStatusNone
+```
+
 ## See Also
 
-- [HMCharacteristicValueSmokeDetectionStatus.detected](hmcharacteristicvaluesmokedetectionstatus/detected.md)
+### Smoke Detection Status
+- [HMCharacteristicValueSmokeDetectionStatus.detected](./detected.md)
   Smoke detected.
 
 

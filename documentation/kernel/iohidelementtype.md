@@ -1,7 +1,8 @@
 # IOHIDElementType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Describes different types of HID elements.
 
@@ -10,7 +11,7 @@ Describes different types of HID elements.
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOHIDElementType IOHIDElementType;
 ```
 
@@ -21,25 +22,27 @@ Used by the IOHIDFamily to identify the type of element processed. Represented b
 ## Topics
 
 ### Constants
-- [kIOHIDElementTypeInput_Misc](iohidelementtype/kiohidelementtypeinput_misc.md)
-- [kIOHIDElementTypeInput_Button](iohidelementtype/kiohidelementtypeinput_button.md)
-- [kIOHIDElementTypeInput_Axis](iohidelementtype/kiohidelementtypeinput_axis.md)
-- [kIOHIDElementTypeInput_ScanCodes](iohidelementtype/kiohidelementtypeinput_scancodes.md)
-- [kIOHIDElementTypeOutput](iohidelementtype/kiohidelementtypeoutput.md)
-- [kIOHIDElementTypeFeature](iohidelementtype/kiohidelementtypefeature.md)
-- [kIOHIDElementTypeCollection](iohidelementtype/kiohidelementtypecollection.md)
-- [kIOHIDElementTypeInput_NULL](iohidelementtype/kiohidelementtypeinput_null.md)
+- [kIOHIDElementTypeInput_Misc](./iohidelementtype/kiohidelementtypeinput_misc.md)
+- [kIOHIDElementTypeInput_Button](./iohidelementtype/kiohidelementtypeinput_button.md)
+- [kIOHIDElementTypeInput_Axis](./iohidelementtype/kiohidelementtypeinput_axis.md)
+- [kIOHIDElementTypeInput_ScanCodes](./iohidelementtype/kiohidelementtypeinput_scancodes.md)
+- [kIOHIDElementTypeOutput](./iohidelementtype/kiohidelementtypeoutput.md)
+- [kIOHIDElementTypeFeature](./iohidelementtype/kiohidelementtypefeature.md)
+- [kIOHIDElementTypeCollection](./iohidelementtype/kiohidelementtypecollection.md)
+- [kIOHIDElementTypeInput_NULL](./iohidelementtype/kiohidelementtypeinput_null.md)
 
 ## See Also
 
-- [IOHIDElementCollectionType](iohidelementcollectiontype.md)
+### HID Elements
+- [IOHIDElementCollectionType](./iohidelementcollectiontype.md)
   Describes different types of HID collections.
-- [IOHIDElementCommitDirection](iohidelementcommitdirection.md)
-- [IOHIDElementCookie](iohidelementcookie.md)
+- [IOHIDElementCommitDirection](./iohidelementcommitdirection.md)
+- [IOHIDElementCookie](./iohidelementcookie.md)
   Abstract data type used as a unique identifier for an element.
-- [IOHIDElementFlags](iohidelementflags.md)
-- [IOHIDValueOptions](iohidvalueoptions.md)
+- [IOHIDElementFlags](./iohidelementflags.md)
+- [IOHIDValueOptions](./iohidvalueoptions.md)
   Describes options for gathering element values.
+### Related Documentation
 - [IOHIDElementType](../iokit/iohidelementtype.md)
   Describes different types of HID elements.
 

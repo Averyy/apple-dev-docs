@@ -1,7 +1,8 @@
 # optimizeImagesForScreenOption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,12 +18,17 @@
 static let optimizeImagesForScreenOption: PDFDocumentWriteOption
 ```
 
+```c
+extern PDFDocumentWriteOption const PDFDocumentOptimizeImagesForScreenOption;
+```
+
 ## See Also
 
-- [static let accessPermissionsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/accesspermissionsoption.md)
-- [static let burnInAnnotationsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/burninannotationsoption.md)
-- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](pdfdocumentwriteoption/saveimagesasjpegoption.md)
-- [static let saveTextFromOCROption: PDFDocumentWriteOption](pdfdocumentwriteoption/savetextfromocroption.md)
+### Type Properties
+- [static let accessPermissionsOption: PDFDocumentWriteOption](./accesspermissionsoption.md)
+- [static let burnInAnnotationsOption: PDFDocumentWriteOption](./burninannotationsoption.md)
+- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](./saveimagesasjpegoption.md)
+- [static let saveTextFromOCROption: PDFDocumentWriteOption](./savetextfromocroption.md)
 
 
 ---

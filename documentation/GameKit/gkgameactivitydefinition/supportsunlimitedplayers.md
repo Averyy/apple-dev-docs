@@ -1,7 +1,8 @@
 # supportsUnlimitedPlayers
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if the activity supports an unlimited number of players. False if maxPlayers is set to a defined limit or if no player range is provided.
 
@@ -19,15 +20,20 @@ True if the activity supports an unlimited number of players. False if maxPlayer
 var supportsUnlimitedPlayers: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL supportsUnlimitedPlayers;
+```
+
 ## See Also
 
-- [var supportsPartyCode: Bool](gkgameactivitydefinition/supportspartycode.md)
+### Getting the activity capabilities
+- [var supportsPartyCode: Bool](./supportspartycode.md)
   Whether the activity can be joined by others via a party code.
-- [var playerRange: (any RangeExpression)?](gkgameactivitydefinition/playerrange.md)
+- [var playerRange: (any RangeExpression)?](./playerrange.md)
   The range of players supported by this type of game activity.
-- [var playStyle: GKGameActivityPlayStyle](gkgameactivitydefinition/playstyle.md)
+- [var playStyle: GKGameActivityPlayStyle](./playstyle.md)
   The play style of the game activity.
-- [enum GKGameActivityPlayStyle](gkgameactivityplaystyle.md)
+- [enum GKGameActivityPlayStyle](../gkgameactivityplaystyle.md)
   Play Style of the game activity. It can be either Asynchronous or Synchronous.
 
 

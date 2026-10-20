@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a schedule composed of an explicit sequence of dates.
 
@@ -22,7 +23,7 @@ init(_ dates: Entries)
 
 #### Discussion
 
-Use the [`entries(from:mode:)`](explicittimelineschedule/entries(from:mode:).md) method to get the sequence of dates.
+Use the [`entries(from:mode:)`](./entries%28from,mode%29.md) method to get the sequence of dates.
 
 ## Parameters
 

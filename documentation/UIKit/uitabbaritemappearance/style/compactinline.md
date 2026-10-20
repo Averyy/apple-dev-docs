@@ -1,16 +1,17 @@
 # UITabBarItemAppearance.Style.compactInline
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A side-by-side layout of the icon and title, suitable for use in compact-width environments.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ A side-by-side layout of the icon and title, suitable for use in compact-width e
 case compactInline
 ```
 
+```c
+UITabBarItemAppearanceStyleCompactInline
+```
+
 ## See Also
 
-- [UITabBarItemAppearance.Style.stacked](uitabbaritemappearance/style/stacked.md)
+### Item layout
+- [UITabBarItemAppearance.Style.stacked](./stacked.md)
   A vertically stacked icon and title.
-- [UITabBarItemAppearance.Style.inline](uitabbaritemappearance/style/inline.md)
+- [UITabBarItemAppearance.Style.inline](./inline.md)
   A side-by-side layout of the icon and title, suitable for use in regular-width environments.
 
 

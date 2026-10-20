@@ -1,7 +1,8 @@
 # ASExtensionError.Code.matchedExcludedCredential
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error should only be used for a passkey registration request, if the @c excludedCredentials property matches a known passkey.
 
@@ -16,6 +17,10 @@ This error should only be used for a passkey registration request, if the @c exc
 
 ```swift
 case matchedExcludedCredential
+```
+
+```c
+ASExtensionErrorCodeMatchedExcludedCredential
 ```
 
 

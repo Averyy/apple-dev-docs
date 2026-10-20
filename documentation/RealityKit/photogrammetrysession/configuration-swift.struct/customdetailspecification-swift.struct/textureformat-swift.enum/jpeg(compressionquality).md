@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureFormat.jpeg(compressionQuality:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Textures will be output in JPG format with the given `compressionQuality` in the range of [0, 1], where 1.0 is highest quality (least compression, larger size) and 0.0 is the lowest quality (most compression, smallest size).
 

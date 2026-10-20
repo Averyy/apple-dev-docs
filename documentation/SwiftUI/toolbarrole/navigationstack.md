@@ -1,7 +1,8 @@
 # navigationStack
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The navigationStack role.
 
@@ -25,9 +26,10 @@ Use this role for content that can be pushed and popped.
 
 ## See Also
 
-- [static var browser: ToolbarRole](toolbarrole/browser.md)
+### Behavior-specific roles
+- [static var browser: ToolbarRole](./browser.md)
   The browser role.
-- [static var editor: ToolbarRole](toolbarrole/editor.md)
+- [static var editor: ToolbarRole](./editor.md)
   The editor role.
 
 

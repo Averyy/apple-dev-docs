@@ -1,7 +1,8 @@
 # numericType
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric type of the scalar.
 
@@ -35,7 +36,7 @@ for scalar in scalars {
 // X --> nil
 ```
 
-This property corresponds to the “Numeric_Type” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Numeric_Type” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

@@ -1,7 +1,8 @@
 # deepBreathing
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A deep breathing sensor reading that a person takes while using an app.
 
@@ -16,17 +17,22 @@ A deep breathing sensor reading that a person takes while using an app.
 static let deepBreathing: SRPhotoplethysmogramSample.Usage
 ```
 
+```c
+extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageDeepBreathing;
+```
+
 #### Discussion
 
 An example is a sample of a reading from a person performing a reflect or breathe session in the Mindfulness app.
 
 ## See Also
 
-- [static let foregroundHeartRate: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/foregroundheartrate.md)
+### Getting the reading method
+- [static let foregroundHeartRate: SRPhotoplethysmogramSample.Usage](./foregroundheartrate.md)
   A heart rate reading that a person takes while using an app.
-- [static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/foregroundbloodoxygen.md)
+- [static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage](./foregroundbloodoxygen.md)
   A blood oxygen reading that a person takes while using an app.
-- [static let backgroundSystem: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/backgroundsystem.md)
+- [static let backgroundSystem: SRPhotoplethysmogramSample.Usage](./backgroundsystem.md)
   A reading taken by the system in the background.
 
 

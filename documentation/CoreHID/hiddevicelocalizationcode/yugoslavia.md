@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.yugoslavia
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Yugoslavia in the HID specification.
 

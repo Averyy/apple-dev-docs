@@ -1,7 +1,8 @@
 # init(factor:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a down sample temporal transformer.
 
@@ -22,7 +23,7 @@ init(factor: Int)
 
 #### Discussion
 
-> **Note**: `factor` must be greater than 0.
+> **Precondition**: `factor` must be greater than 0.
 
 ## Parameters
 

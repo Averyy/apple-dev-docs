@@ -1,7 +1,8 @@
 # ARBodyAnchor
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An anchor that tracks the position and movement of a human body in the rear-facing camera.
 
@@ -15,17 +16,21 @@ An anchor that tracks the position and movement of a human body in the rear-faci
 class ARBodyAnchor
 ```
 
+```objc
+@interface ARBodyAnchor : ARAnchor
+```
+
 #### Overview
 
-This [`ARAnchor`](aranchor.md) subclass tracks the movement of a single person. You enable body tracking by running your session using [`ARBodyTrackingConfiguration`](arbodytrackingconfiguration.md).
+This [`ARAnchor`](./aranchor.md) subclass tracks the movement of a single person. You enable body tracking by running your session using [`ARBodyTrackingConfiguration`](./arbodytrackingconfiguration.md).
 
-When ARKit recognizes a person in the back camera feed, it calls your delegate’s [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md) function with [`ARBodyAnchor`](arbodyanchor.md). A body anchor’s [`transform`](aranchor/transform.md) position defines the world position of the body’s hip joint.
+When ARKit recognizes a person in the back camera feed, it calls your delegate’s [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md) function with [`ARBodyAnchor`](./arbodyanchor.md). A body anchor’s [`transform`](./aranchor/transform.md) position defines the world position of the body’s hip joint.
 
-You can also check within the frame’s [`anchors`](arframe/anchors.md) for a body that ARKit is tracking.
+You can also check within the frame’s [`anchors`](./arframe/anchors.md) for a body that ARKit is tracking.
 
 ##### Place a Skeleton on a Surface
 
-Because a body anchor’s origin maps to the hip joint, you calculate the current offset of the feet to the hip to place the body’s skeleton on a surface. By passing the foot joint index to [`jointModelTransforms`](arskeleton3d/jointmodeltransforms-dno4.md), you get the foot’s offset from skeleton’s origin.
+Because a body anchor’s origin maps to the hip joint, you calculate the current offset of the feet to the hip to place the body’s skeleton on a surface. By passing the foot joint index to [`jointModelTransforms`](./arskeleton3d/jointmodeltransforms-dno4.md), you get the foot’s offset from skeleton’s origin.
 
 ```swift
 static var hipToFootOffset: Float {
@@ -42,38 +47,39 @@ static var hipToFootOffset: Float {
 ## Topics
 
 ### Interpreting 3D Motion
-- [var skeleton: ARSkeleton3D](arbodyanchor/skeleton.md)
+- [var skeleton: ARSkeleton3D](./arbodyanchor/skeleton.md)
   The tracked body in 3D.
 ### Getting Scale Information
-- [var estimatedScaleFactor: CGFloat](arbodyanchor/estimatedscalefactor.md)
+- [var estimatedScaleFactor: CGFloat](./arbodyanchor/estimatedscalefactor.md)
   A factor that relates the body’s default height with the height ARKit estimates at runtime.
 
 ## Relationships
 
 ### Inherits From
-- [ARAnchor](aranchor.md)
+- [ARAnchor](./aranchor.md)
 ### Conforms To
-- [ARAnchorCopying](aranchorcopying.md)
-- [ARTrackable](artrackable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ARAnchorCopying](./aranchorcopying.md)
+- [ARTrackable](./artrackable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Capturing Body Motion in 3D](capturing-body-motion-in-3d.md)
+### Body Position Tracking
+- [Capturing Body Motion in 3D](./capturing-body-motion-in-3d.md)
   Track a person in the physical environment and visualize their motion by applying the same body movements to a virtual character.
-- [Rigging a Model for Motion Capture](rigging-a-model-for-motion-capture.md)
+- [Rigging a Model for Motion Capture](./rigging-a-model-for-motion-capture.md)
   Configure custom 3D models so ARKit’s human body-tracking feature can control them.
-- [Validating a Model for Motion Capture](validating-a-model-for-motion-capture.md)
+- [Validating a Model for Motion Capture](./validating-a-model-for-motion-capture.md)
   Verify that your character model matches ARKit’s Motion Capture requirements.
 
 

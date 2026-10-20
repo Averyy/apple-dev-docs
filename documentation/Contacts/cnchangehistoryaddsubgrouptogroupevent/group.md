@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group where the user added a subgroup.
 
@@ -19,9 +20,14 @@ The group where the user added a subgroup.
 var group: CNGroup { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CNGroup * group;
+```
+
 ## See Also
 
-- [var subgroup: CNGroup](cnchangehistoryaddsubgrouptogroupevent/subgroup.md)
+### Getting event details
+- [var subgroup: CNGroup](./subgroup.md)
   The subgroup that the user added to the group.
 
 

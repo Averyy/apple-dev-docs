@@ -1,7 +1,8 @@
 # ForceEffectComponent.SimulationState
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The simulation runtime states.
 
@@ -22,18 +23,18 @@ enum SimulationState
 ## Topics
 
 ### Enumeration Cases
-- [ForceEffectComponent.SimulationState.pause](forceeffectcomponent/simulationstate-swift.enum/pause.md)
+- [ForceEffectComponent.SimulationState.pause](./simulationstate-swift.enum/pause.md)
   The simulation will pause.
-- [ForceEffectComponent.SimulationState.resume](forceeffectcomponent/simulationstate-swift.enum/resume.md)
+- [ForceEffectComponent.SimulationState.resume](./simulationstate-swift.enum/resume.md)
   The simulation will resume, if paused.
-- [ForceEffectComponent.SimulationState.start](forceeffectcomponent/simulationstate-swift.enum/start.md)
+- [ForceEffectComponent.SimulationState.start](./simulationstate-swift.enum/start.md)
   The simulation will start, and its time set to zero. The simulation will restart if already started.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

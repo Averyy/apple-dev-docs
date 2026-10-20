@@ -1,7 +1,8 @@
 # removeToken(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a particular search token from the search text field.
 
@@ -17,15 +18,20 @@ Removes a particular search token from the search text field.
 func removeToken(at tokenIndex: Int)
 ```
 
+```objc
+- (void) removeTokenAtIndex:(NSInteger) tokenIndex;
+```
+
 ## Parameters
 
-- `tokenIndex`: Within the [`tokens`](uisearchtextfield/tokens.md) array, the index of the token you want to remove.
+- `tokenIndex`: Within the [`tokens`](./tokens.md) array, the index of the token you want to remove.
 
 ## See Also
 
-- [var tokens: [UISearchToken]](uisearchtextfield/tokens.md)
+### Adding and removing tokens
+- [var tokens: [UISearchToken]](./tokens.md)
   The collection of tokens in the search text field.
-- [func insertToken(UISearchToken, at: Int)](uisearchtextfield/inserttoken(_:at:).md)
+- [func insertToken(UISearchToken, at: Int)](./inserttoken%28_,at%29.md)
   Adds a search token at a specific index.
 
 

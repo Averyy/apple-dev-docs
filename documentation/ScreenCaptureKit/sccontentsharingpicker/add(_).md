@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an observer instance to notify of changes in the content-sharing picker.
 
@@ -19,13 +20,18 @@ Adds an observer instance to notify of changes in the content-sharing picker.
 func add(_ observer: any SCContentSharingPickerObserver)
 ```
 
+```objc
+- (void) addObserver:(id<SCContentSharingPickerObserver>) observer;
+```
+
 ## Parameters
 
 - `observer`: The observer instance to send notifications to.
 
 ## See Also
 
-- [func remove(any SCContentSharingPickerObserver)](sccontentsharingpicker/remove(_:).md)
+### Manage observers
+- [func remove(any SCContentSharingPickerObserver)](./remove%28_%29.md)
   Removes an observer instance from the content-sharing picker.
 
 

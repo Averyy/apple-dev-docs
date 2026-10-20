@@ -1,7 +1,8 @@
 # home(_:didUnblockAccessory:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an accessory has been unblocked.
 
@@ -19,6 +20,10 @@ Tells the delegate that an accessory has been unblocked.
 optional func home(_ home: HMHome, didUnblockAccessory accessory: HMAccessory)
 ```
 
+```objc
+- (void) home:(HMHome *) home didUnblockAccessory:(HMAccessory *) accessory;
+```
+
 ## Parameters
 
 - `home`: The home.
@@ -26,7 +31,8 @@ optional func home(_ home: HMHome, didUnblockAccessory accessory: HMAccessory)
 
 ## See Also
 
-- [func home(HMHome, didEncounterError: any Error, for: HMAccessory)](hmhomedelegate/home(_:didencountererror:for:).md)
+### Observing Accessories
+- [func home(HMHome, didEncounterError: any Error, for: HMAccessory)](./home%28_,didencountererror,for%29.md)
   Tells the delegate that a configured accessory encountered an error.
 
 

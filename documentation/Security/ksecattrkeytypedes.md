@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeDES
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 DES algorithm.
 
@@ -12,6 +13,10 @@ DES algorithm.
 
 ```swift
 let kSecAttrKeyTypeDES: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeDES;
 ```
 
 

@@ -1,7 +1,8 @@
 # localizedStandardCompare(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the string and the given string as sorted by the Finder.
 

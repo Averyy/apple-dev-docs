@@ -1,7 +1,8 @@
 # xmlPropertyList
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an XML property list.
 
@@ -24,13 +25,14 @@ static var xmlPropertyList: UTType { get }
 
 The identifier for this type is `com.apple.xml-property-list`.
 
-This type conforms to [`UTTypeXML`](uttypexml.md) and [`UTTypePropertyList`](uttypepropertylist.md).
+This type conforms to [`UTTypeXML`](../uttypexml.md) and [`UTTypePropertyList`](../uttypepropertylist.md).
 
 ## See Also
 
-- [static var propertyList: UTType](uttype-swift.struct/propertylist.md)
+### Property lists
+- [static var propertyList: UTType](./propertylist.md)
   A base type that represents a property list.
-- [static var binaryPropertyList: UTType](uttype-swift.struct/binarypropertylist.md)
+- [static var binaryPropertyList: UTType](./binarypropertylist.md)
   A type that represents a binary property list.
 
 

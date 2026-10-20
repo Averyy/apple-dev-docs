@@ -1,7 +1,8 @@
 # readAttributeLastNetworkingStatus(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLastNetworkingStatus(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLastNetworkingStatus() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeLastNetworkingStatusWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

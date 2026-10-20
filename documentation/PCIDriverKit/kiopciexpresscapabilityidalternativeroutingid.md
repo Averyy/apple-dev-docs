@@ -1,21 +1,23 @@
 # kIOPCIExpressCapabilityIDAlternativeRoutingID
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOPCIExpressCapabilityIDAlternativeRoutingID
 ```
 
 ## See Also
 
-- [kIOPCIExpressCapabilityIDPrecisionTimeManagement](kiopciexpresscapabilityidprecisiontimemanagement.md)
+### Constants
+- [kIOPCIExpressCapabilityIDPrecisionTimeManagement](./kiopciexpresscapabilityidprecisiontimemanagement.md)
 
 
 ---

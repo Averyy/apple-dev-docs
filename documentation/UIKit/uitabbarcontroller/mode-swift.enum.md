@@ -1,7 +1,8 @@
 # UITabBarController.Mode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A tab bar’s display mode.
 
@@ -18,39 +19,44 @@ A tab bar’s display mode.
 enum Mode
 ```
 
+```c
+enum UITabBarControllerMode : NSInteger;
+```
+
 ## Topics
 
 ### Setting modes
-- [UITabBarController.Mode.automatic](uitabbarcontroller/mode-swift.enum/automatic.md)
+- [UITabBarController.Mode.automatic](./mode-swift.enum/automatic.md)
   The system sets the display mode based on the tab’s content.
-- [UITabBarController.Mode.tabBar](uitabbarcontroller/mode-swift.enum/tabbar.md)
+- [UITabBarController.Mode.tabBar](./mode-swift.enum/tabbar.md)
   The system displays the content only as a tab bar.
-- [UITabBarController.Mode.tabSidebar](uitabbarcontroller/mode-swift.enum/tabsidebar.md)
+- [UITabBarController.Mode.tabSidebar](./mode-swift.enum/tabsidebar.md)
   The system displays the content as either a tab bar or a sidebar, depending on the context.
 ### Initializers
-- [init?(rawValue: Int)](uitabbarcontroller/mode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mode: UITabBarController.Mode](uitabbarcontroller/mode-swift.property.md)
+### Supporting the sidebar
+- [var mode: UITabBarController.Mode](./mode-swift.property.md)
   The display mode for a tab bar.
-- [var sidebar: UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.property.md)
+- [var sidebar: UITabBarController.Sidebar](./sidebar-swift.property.md)
   A tab bar’s corresponding sidebar.
-- [UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.class.md)
+- [UITabBarController.Sidebar](./sidebar-swift.class.md)
   An object for managing and configuring the sidebar.
-- [class UITabSidebarItem](uitabsidebaritem.md)
-- [UITabSidebarItem.Request](uitabsidebaritem/request.md)
-- [UITabBarController.Sidebar.Animating](uitabbarcontroller/sidebar-swift.class/animating.md)
+- [class UITabSidebarItem](../uitabsidebaritem.md)
+- [UITabSidebarItem.Request](../uitabsidebaritem/request.md)
+- [UITabBarController.Sidebar.Animating](./sidebar-swift.class/animating.md)
 
 
 ---

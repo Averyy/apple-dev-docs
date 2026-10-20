@@ -1,7 +1,8 @@
 # addressInUse
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Address already in use.
 
@@ -22,7 +23,7 @@ static var addressInUse: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,11 +33,12 @@ The corresponding C error is `EADDRINUSE`.
 
 ## See Also
 
-- [static var addressFamilyNotSupported: Errno](errno/addressfamilynotsupported.md)
+### Network Address Errors
+- [static var addressFamilyNotSupported: Errno](./addressfamilynotsupported.md)
   The address family isn’t supported by the protocol family.
-- [static var addressNotAvailable: Errno](errno/addressnotavailable.md)
+- [static var addressNotAvailable: Errno](./addressnotavailable.md)
   Can’t assign the requested address.
-- [static var addressRequired: Errno](errno/addressrequired.md)
+- [static var addressRequired: Errno](./addressrequired.md)
   Destination address required.
 
 

@@ -1,7 +1,8 @@
 # Webhook.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object Webhook.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Webhook.Relationships.App](webhook/relationships-data.dictionary/app-data.dictionary.md)
-- [object Webhook.Relationships.Deliveries](webhook/relationships-data.dictionary/deliveries-data.dictionary.md)
+- [object Webhook.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
+- [object Webhook.Relationships.Deliveries](./relationships-data.dictionary/deliveries-data.dictionary.md)
 
 ## Properties
 

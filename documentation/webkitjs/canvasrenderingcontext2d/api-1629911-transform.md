@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Transforms the current transformation matrix using another matrix.
 
@@ -11,7 +12,7 @@ Transforms the current transformation matrix using another matrix.
 
 ## Declaration
 
-```swift
+```
 void transform(
     unrestricted float m11, 
     unrestricted float m12, 
@@ -24,7 +25,7 @@ void transform(
 
 #### Discussion
 
-This method replaces the current transformation matrix with the result of a matrix multiplication between the current transformation matrix and the specified transformation matrix shown in [`Figure 1`](canvasrenderingcontext2d/1629911-transform#1965803.md).
+This method replaces the current transformation matrix with the result of a matrix multiplication between the current transformation matrix and the specified transformation matrix shown in [Figure 1](./api-1629911-transform.md#1965803).
 
 ![](https://docs-assets.developer.apple.com/published/cf294fc724/matrix_2x_ba813c25-875c-47a3-b3b3-992285a1f6fd.png)
 
@@ -39,13 +40,14 @@ This method replaces the current transformation matrix with the result of a matr
 
 ## See Also
 
-- [rotate](canvasrenderingcontext2d/1630553-rotate.md)
+### Changing the Coordinate System
+- [rotate](./api-1630553-rotate.md)
   Rotates the canvas coordinate system.
-- [scale](canvasrenderingcontext2d/1631799-scale.md)
+- [scale](./api-1631799-scale.md)
   Scales the canvas coordinate system horizontally and vertically.
-- [setTransform](canvasrenderingcontext2d/1630015-settransform.md)
+- [setTransform](./api-1630015-settransform.md)
   Sets the transformation matrix.
-- [translate](canvasrenderingcontext2d/1629441-translate.md)
+- [translate](./api-1629441-translate.md)
   Moves the origin of the canvas coordinate system.
 
 

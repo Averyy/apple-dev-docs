@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the input provides analog values.
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the input provides analog values.
 var isAnalog: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isAnalog) BOOL analog;
+```
+
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) for most axis inputs.
+This property is [`true`](../../Swift/true.md) for most axis inputs.
 
 ## See Also
 
-- [var canWrap: Bool](gcaxis2dinput/canwrap.md)
+### Getting the characteristics
+- [var canWrap: Bool](./canwrap.md)
   A Boolean value that indicates whether the value wraps when it reaches the range’s minimum or maximum value.
 
 

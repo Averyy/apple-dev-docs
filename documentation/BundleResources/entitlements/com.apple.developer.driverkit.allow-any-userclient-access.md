@@ -1,28 +1,31 @@
 # com.apple.developer.driverkit.allow-any-userclient-access
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that determines whether a macOS driver accepts user client connections from any application.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.driverkit.allow-any-userclient-access`
+- **Type**: boolean
 
 #### Discussion
 
-Add this entitlement to your dext that contains an [`IOUserClient`](https://developer.apple.com/documentation/driverkit/iouserclient) implementation. This entitlement allows any application to connect to the dext without having to specify bundle IDs, as [`com.apple.developer.driverkit.userclient-access`](entitlements/com.apple.developer.driverkit.userclient-access.md) requires.
+Add this entitlement to your dext that contains an [`IOUserClient`](../../DriverKit/iouserclient.md) implementation. This entitlement allows any application to connect to the dext without having to specify bundle IDs, as [`com.apple.developer.driverkit.userclient-access`](./com.apple.developer.driverkit.userclient-access.md) requires.
 
 ## See Also
 
-- [com.apple.developer.driverkit.userclient-access](entitlements/com.apple.developer.driverkit.userclient-access.md)
+### User client entitlements
+- [com.apple.developer.driverkit.userclient-access](./com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
-- [Communicates with Drivers](entitlements/com.apple.developer.driverkit.communicates-with-drivers.md)
+- [Communicates with Drivers](./com.apple.developer.driverkit.communicates-with-drivers.md)
   A Boolean value that indicates whether an iPadOS app can communicate with drivers.
-- [DriverKit Allow Third Party User Clients](entitlements/com.apple.developer.driverkit.allow-third-party-userclients.md)
+- [DriverKit Allow Third Party User Clients](./com.apple.developer.driverkit.allow-third-party-userclients.md)
   A Boolean value that indicates whether an iPadOS driver accepts calls from third-party user clients.
 
 

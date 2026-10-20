@@ -1,7 +1,8 @@
 # getLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns length of data present.
 
@@ -11,17 +12,26 @@ Returns length of data present.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+size_t getLength(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int getLength(void);
 ```
 
-#### Return_value
+#### Return Value
 
 length of data present.
 
 ## See Also
 
-- [- getCapacity](osdata/3180880-getcapacity.md)
+### Inspecting a Data Object
+- [- getCapacity](./api-3180880-getcapacity.md)
   Returns length of preallocated capacity.
 
 

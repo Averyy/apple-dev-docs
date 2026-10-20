@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span over the UTF-8 code units that make up this substring.
 
@@ -26,7 +27,9 @@ A `Span` over the UTF-8 code units of this `Substring`.
 
 #### Discussion
 
-> **Note**: On Apple platforms, this property must transcode the code units of bridged UTF-16 `String` instances on every access. For example, if `string` has the bridged UTF-16 representation,
+> **Note**: On Apple platforms, this property must transcode the code units of bridged UTF-16 `String` instances on every access.
+>
+> For example, if `string` has the bridged UTF-16 representation,
 
 ```swift
   for word in string.split(separator: " ") {
@@ -46,7 +49,7 @@ is accidentally quadratic because of this issue. A workaround is to explicitly c
 
 This second option has linear time complexity, as expected.
 
-> **Note**: O(1) for native UTF-8 strings, O(*n*) for bridged UTF-16 strings.
+> **Complexity**: O(1) for native UTF-8 strings, O(*n*) for bridged UTF-16 strings.
 
 
 ---

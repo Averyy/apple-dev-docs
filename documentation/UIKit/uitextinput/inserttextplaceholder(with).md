@@ -1,7 +1,8 @@
 # insertTextPlaceholder(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a placeholder object to reserve visual space during text input.
 
@@ -16,6 +17,10 @@ Inserts a placeholder object to reserve visual space during text input.
 
 ```swift
 optional func insertTextPlaceholder(with size: CGSize) -> UITextPlaceholder
+```
+
+```objc
+- (UITextPlaceholder *) insertTextPlaceholderWithSize:(CGSize) size;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ If the `size.height` is greater than zero, then the text input treats the placeh
 
 ## See Also
 
-- [func remove(UITextPlaceholder)](uitextinput/remove(_:).md)
+### Managing placeholders
+- [func remove(UITextPlaceholder)](./remove%28_%29.md)
   Removes a placeholder object from the text input view.
-- [class UITextPlaceholder](uitextplaceholder.md)
+- [class UITextPlaceholder](../uitextplaceholder.md)
   A placeholder object that reserves visual space in a text input view.
 
 

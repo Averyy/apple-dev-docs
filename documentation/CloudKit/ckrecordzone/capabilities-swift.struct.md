@@ -1,7 +1,8 @@
 # CKRecordZone.Capabilities
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The capabilities that a record zone supports.
 
@@ -10,7 +11,7 @@ The capabilities that a record zone supports.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,38 +21,43 @@ The capabilities that a record zone supports.
 struct Capabilities
 ```
 
+```c
+enum CKRecordZoneCapabilities : NSUInteger;
+```
+
 ## Topics
 
 ### Creating Zone Capabilities
-- [init(rawValue: UInt)](ckrecordzone/capabilities-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./capabilities-swift.struct/init%28rawvalue%29.md)
   Creates a set of capabilities for a record zone.
 ### Zone Capabilities
-- [static var atomic: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/atomic.md)
+- [static var atomic: CKRecordZone.Capabilities](./capabilities-swift.struct/atomic.md)
   A capability that allows atomic changes of multiple records.
-- [static var fetchChanges: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/fetchchanges.md)
+- [static var fetchChanges: CKRecordZone.Capabilities](./capabilities-swift.struct/fetchchanges.md)
   A capability for fetching only the changed records from a zone.
-- [static var sharing: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/sharing.md)
+- [static var sharing: CKRecordZone.Capabilities](./capabilities-swift.struct/sharing.md)
   A capability for sharing a specific hierarchy of records.
-- [static var zoneWideSharing: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct/zonewidesharing.md)
+- [static var zoneWideSharing: CKRecordZone.Capabilities](./capabilities-swift.struct/zonewidesharing.md)
   A capability for sharing the entire contents of a record zone.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var zoneID: CKRecordZone.ID](ckrecordzone/zoneid.md)
+### Getting the Zone Attributes
+- [var zoneID: CKRecordZone.ID](./zoneid.md)
   The unique ID of the zone.
-- [var capabilities: CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.property.md)
+- [var capabilities: CKRecordZone.Capabilities](./capabilities-swift.property.md)
   The capabilities that the zone supports.
 
 

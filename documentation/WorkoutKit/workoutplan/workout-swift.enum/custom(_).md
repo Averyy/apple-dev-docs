@@ -1,7 +1,8 @@
 # WorkoutPlan.Workout.custom(_:)
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A custom workout.
 
@@ -20,11 +21,12 @@ case custom(CustomWorkout)
 
 ## See Also
 
-- [WorkoutPlan.Workout.goal(_:)](workoutplan/workout-swift.enum/goal(_:).md)
+### Setting the workout
+- [WorkoutPlan.Workout.goal(_:)](./goal%28_%29.md)
   A single goal workout
-- [WorkoutPlan.Workout.pacer(_:)](workoutplan/workout-swift.enum/pacer(_:).md)
+- [WorkoutPlan.Workout.pacer(_:)](./pacer%28_%29.md)
   A pacer workout.
-- [case swimBikeRun(SwimBikeRunWorkout)](workoutplan/workout-swift.enum/swimbikerun(_:).md)
+- [case swimBikeRun(SwimBikeRunWorkout)](./swimbikerun%28_%29.md)
   A multisport workout.
 
 

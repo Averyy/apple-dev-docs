@@ -1,7 +1,8 @@
 # init(imagePoint:in:normalizedTo:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point normalized to a region of interest within an image.
 
@@ -28,13 +29,14 @@ init(imagePoint: CGPoint, in imageSize: CGSize, normalizedTo regionOfInterest: N
 
 ## See Also
 
-- [init(x: CGFloat, y: CGFloat)](normalizedpoint/init(x:y:).md)
+### Creating a normalized point
+- [init(x: CGFloat, y: CGFloat)](./init%28x,y%29.md)
   Creates a point object with the specified coordinates.
-- [init(normalizedPoint: CGPoint)](normalizedpoint/init(normalizedpoint:).md)
+- [init(normalizedPoint: CGPoint)](./init%28normalizedpoint%29.md)
   Creates a point object from the specified Core Graphics point.
-- [init(imagePoint: CGPoint, in: CGSize)](normalizedpoint/init(imagepoint:in:).md)
+- [init(imagePoint: CGPoint, in: CGSize)](./init%28imagepoint,in%29.md)
   Creates a normalized point from a point in an image coordinate space.
-- [static var zero: NormalizedPoint](normalizedpoint/zero.md)
+- [static var zero: NormalizedPoint](./zero.md)
   A point object that represents the origin.
 
 

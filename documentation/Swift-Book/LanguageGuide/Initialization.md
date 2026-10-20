@@ -946,7 +946,7 @@ A simple way to remember this is:
 
 These rules are illustrated in the figure below:
 
-![](initializerDelegation01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/initializerDelegation01@2x.png)
 
 Here, the superclass has a single designated initializer and two convenience initializers.
 One convenience initializer calls another convenience initializer,
@@ -971,7 +971,7 @@ It illustrates how the designated initializers in this hierarchy
 act as “funnel” points for class initialization,
 simplifying the interrelationships among classes in the chain:
 
-![](initializerDelegation02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/initializerDelegation02@2x.png)
 
 ### Two-Phase Initialization
 
@@ -1061,7 +1061,7 @@ Here's how two-phase initialization plays out, based on the four safety checks a
 
 Here's how phase 1 looks for an initialization call for a hypothetical subclass and superclass:
 
-![](twoPhaseInitialization01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/twoPhaseInitialization01@2x.png)
 
 In this example, initialization begins with a call to
 a convenience initializer on the subclass.
@@ -1082,7 +1082,7 @@ its memory is considered fully initialized, and phase 1 is complete.
 
 Here's how phase 2 looks for the same initialization call:
 
-![](twoPhaseInitialization02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/twoPhaseInitialization02@2x.png)
 
 The superclass's designated initializer now has an opportunity
 to customize the instance further
@@ -1517,7 +1517,7 @@ class Food {
 
 The figure below shows the initializer chain for the `Food` class:
 
-![](initializersExample01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/initializersExample01@2x.png)
 
 Classes don't have a default memberwise initializer,
 and so the `Food` class provides a designated initializer
@@ -1605,7 +1605,7 @@ class RecipeIngredient: Food {
 
 The figure below shows the initializer chain for the `RecipeIngredient` class:
 
-![](initializersExample02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/initializersExample02@2x.png)
 
 The `RecipeIngredient` class has a single designated initializer,
 `init(name: String, quantity: Int)`,
@@ -1616,7 +1616,7 @@ which is the only new property introduced by `RecipeIngredient`.
 After doing so, the initializer delegates up to
 the `init(name: String)` initializer of the `Food` class.
 This process satisfies safety check 1
-from [Two Phase Initialization](Initialization.md#Two-Phase-Initialization) above.
+from [Two-Phase Initialization](Initialization.md#Two-Phase-Initialization) above.
 
 `RecipeIngredient` also defines a convenience initializer, `init(name: String)`,
 which is used to create a `RecipeIngredient` instance by name alone.
@@ -1715,7 +1715,7 @@ and doesn't define any initializers itself,
 
 The figure below shows the overall initializer chain for all three classes:
 
-![](initializersExample03)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/initializersExample03@2x.png)
 
 You can use all three of the inherited initializers
 to create a new `ShoppingListItem` instance:
@@ -2872,7 +2872,7 @@ which models a board for the game of chess.
 Chess is played on an 8 x 8 board,
 with alternating black and white squares.
 
-![](chessBoard)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/chessBoard@2x.png)
 
 To represent this game board,
 the `Chessboard` structure has a single property called `boardColors`,

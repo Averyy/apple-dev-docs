@@ -1,7 +1,8 @@
 # clearMetadata(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the authored metadata value for the given key.
 

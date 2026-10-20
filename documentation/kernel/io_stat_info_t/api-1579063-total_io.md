@@ -1,14 +1,15 @@
 # total_io
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 struct io_stat_entry total_io;
 ```
 

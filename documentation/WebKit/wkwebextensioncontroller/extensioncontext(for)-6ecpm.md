@@ -1,7 +1,8 @@
 # extensionContext(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a loaded extension context for the specified extension.
 
@@ -18,6 +19,10 @@ Returns a loaded extension context for the specified extension.
 func extensionContext(for extension: WKWebExtension) -> WKWebExtensionContext?
 ```
 
+```objc
+- (WKWebExtensionContext *) extensionContextForExtension:(WKWebExtension *) extension;
+```
+
 #### Return Value
 
 An extension context or `nil` if no match was found.
@@ -28,7 +33,8 @@ An extension context or `nil` if no match was found.
 
 ## See Also
 
-- [var extensions: Set<WKWebExtension>](wkwebextensioncontroller/extensions.md)
+### Related Documentation
+- [var extensions: Set<WKWebExtension>](./extensions.md)
   A set of all the currently loaded extensions.
 
 

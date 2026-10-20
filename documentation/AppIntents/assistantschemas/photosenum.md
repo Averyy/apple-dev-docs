@@ -1,7 +1,8 @@
 # AssistantSchemas.PhotosEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for types you use to describe photos and videos.
 
@@ -23,22 +24,22 @@ protocol PhotosEnum : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var albumType: some AssistantSchemas.Enum](assistantschemas/photosenum/albumtype.md)
+- [var albumType: some AssistantSchemas.Enum](./photosenum/albumtype.md)
   The type of photo album.
-- [var assetType: some AssistantSchemas.Enum](assistantschemas/photosenum/assettype.md)
+- [var assetType: some AssistantSchemas.Enum](./photosenum/assettype.md)
   The type of asset.
-- [var filterType: some AssistantSchemas.Enum](assistantschemas/photosenum/filtertype.md)
+- [var filterType: some AssistantSchemas.Enum](./photosenum/filtertype.md)
   The filter effect for a photo or video.
-- [var rotationDirection: some AssistantSchemas.Enum](assistantschemas/photosenum/rotationdirection.md)
+- [var rotationDirection: some AssistantSchemas.Enum](./photosenum/rotationdirection.md)
   The direction for rotating a photo or video.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
+- [AssistantSchema.EnumSchema](../assistantschema/enumschema.md)
+- [AssistantSchemas.EnumSchema](./enumschema.md)
 
 
 ---

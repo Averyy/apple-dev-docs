@@ -1,16 +1,17 @@
 # weightsParameter
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weights tensor parameter you use for optimizer updates.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,15 +19,20 @@ The weights tensor parameter you use for optimizer updates.
 var weightsParameter: MLCTensorParameter { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) MLCTensorParameter * weightsParameter;
+```
+
 ## See Also
 
-- [var descriptor: MLCConvolutionDescriptor](mlcfullyconnectedlayer/descriptor.md)
+### Inspecting Fully Connected Layers
+- [var descriptor: MLCConvolutionDescriptor](./descriptor.md)
   The configuration object you use to create the fully connected layer.
-- [var weights: MLCTensor](mlcfullyconnectedlayer/weights.md)
+- [var weights: MLCTensor](./weights.md)
   The weights tensor you use for the fully connected layer.
-- [var biases: MLCTensor?](mlcfullyconnectedlayer/biases.md)
+- [var biases: MLCTensor?](./biases.md)
   The biases tensor you use for the fully connected layer.
-- [var biasesParameter: MLCTensorParameter?](mlcfullyconnectedlayer/biasesparameter.md)
+- [var biasesParameter: MLCTensorParameter?](./biasesparameter.md)
   The biases tensor parameter you use for optimizer updates.
 
 

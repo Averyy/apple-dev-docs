@@ -1,14 +1,15 @@
 # traitOverrides
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@
 
 ## See Also
 
-- [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+### Overriding trait values
+- [struct UITraitOverrides](../uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
-- [var overrideTraitCollection: UITraitCollection?](uipresentationcontroller/overridetraitcollection.md)
+- [var overrideTraitCollection: UITraitCollection?](./overridetraitcollection.md)
   Interface traits for the presented view controller, to use in place of traits from the iOS environment.
 
 

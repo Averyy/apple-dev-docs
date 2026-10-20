@@ -1,7 +1,8 @@
 # kAuthorizationComment
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates comments for a rule.
 
@@ -13,6 +14,10 @@ Indicates comments for a rule.
 
 ```swift
 var kAuthorizationComment: String { get }
+```
+
+```c
+#define kAuthorizationComment
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # UNNotificationDismissActionIdentifier
 
 **Framework**: User Notifications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The action that indicates the user explicitly dismissed the notification interface.
 
@@ -19,21 +20,26 @@ The action that indicates the user explicitly dismissed the notification interfa
 let UNNotificationDismissActionIdentifier: String
 ```
 
+```c
+extern NSString * const UNNotificationDismissActionIdentifier;
+```
+
 #### Discussion
 
-The system delivers this action only if your app configured the notification’s category object with the [`customDismissAction`](unnotificationcategoryoptions/customdismissaction.md) option. To trigger this action, the user must explicitly dismiss the notification interface. For example, the user must tap the Dismiss button or swipe down on the notification interface in watchOS to trigger this action.
+The system delivers this action only if your app configured the notification’s category object with the [`customDismissAction`](./unnotificationcategoryoptions/customdismissaction.md) option. To trigger this action, the user must explicitly dismiss the notification interface. For example, the user must tap the Dismiss button or swipe down on the notification interface in watchOS to trigger this action.
 
 Ignoring a notification or flicking away a notification banner doesn’t trigger this action.
 
 ## See Also
 
-- [var actionIdentifier: String](unnotificationresponse/actionidentifier.md)
+### Getting the Response Information
+- [var actionIdentifier: String](./unnotificationresponse/actionidentifier.md)
   The identifier string of the action that the user selected.
-- [var notification: UNNotification](unnotificationresponse/notification.md)
+- [var notification: UNNotification](./unnotificationresponse/notification.md)
   The notification to which the user responded.
-- [var targetScene: UIScene?](unnotificationresponse/targetscene.md)
+- [var targetScene: UIScene?](./unnotificationresponse/targetscene.md)
   The scene where the system reflects the user’s response to a notification.
-- [let UNNotificationDefaultActionIdentifier: String](unnotificationdefaultactionidentifier.md)
+- [let UNNotificationDefaultActionIdentifier: String](./unnotificationdefaultactionidentifier.md)
   An action that indicates the user opened the app from the notification interface.
 
 

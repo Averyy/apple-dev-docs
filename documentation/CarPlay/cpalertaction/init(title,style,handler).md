@@ -1,7 +1,8 @@
 # init(title:style:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alert action with a title, style, and action handler.
 
@@ -14,6 +15,10 @@ Creates an alert action with a title, style, and action handler.
 
 ```swift
 init(title: String, style: CPAlertAction.Style, handler: @escaping CPAlertActionHandler)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title style:(CPAlertActionStyle) style handler:(CPAlertActionHandler) handler;
 ```
 
 #### Return Value

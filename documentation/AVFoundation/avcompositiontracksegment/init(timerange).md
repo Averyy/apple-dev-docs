@@ -1,7 +1,8 @@
 # init(timeRange:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that presents an empty composition track segment.
 
@@ -20,13 +21,18 @@ Creates an object that presents an empty composition track segment.
 init(timeRange: CMTimeRange)
 ```
 
+```objc
+- (instancetype) initWithTimeRange:(CMTimeRange) timeRange;
+```
+
 ## Parameters
 
 - `timeRange`: The time range of the empty track segment.
 
 ## See Also
 
-- [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:)-4rc2g.md)
+### Creating a segment
+- [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](./init%28url,trackid,sourcetimerange,targettimerange%29-4rc2g.md)
   Creates an object that presents a segment of a media file that the specified URL references.
 
 

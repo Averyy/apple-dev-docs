@@ -1,7 +1,8 @@
 # angularSpeed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial spin rate, in radians per second, of newly spawned particles. Defaults to 0.
 

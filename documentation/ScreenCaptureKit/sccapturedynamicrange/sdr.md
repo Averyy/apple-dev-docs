@@ -1,7 +1,8 @@
 # SCCaptureDynamicRange.SDR
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the system captures the screen in standard dynamic range.
 
@@ -15,6 +16,10 @@ Specifies that the system captures the screen in standard dynamic range.
 
 ```swift
 case SDR
+```
+
+```c
+SCCaptureDynamicRangeSDR
 ```
 
 

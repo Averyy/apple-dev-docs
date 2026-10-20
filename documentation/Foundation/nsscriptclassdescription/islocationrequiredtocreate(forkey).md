@@ -1,7 +1,8 @@
 # isLocationRequiredToCreate(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether an insertion location must be specified when creating a new object in the specified to-many relationship of the receiver.
 
@@ -15,9 +16,13 @@ Returns a Boolean value indicating whether an insertion location must be specifi
 func isLocationRequiredToCreate(forKey toManyRelationshipKey: String) -> Bool
 ```
 
+```objc
+- (BOOL) isLocationRequiredToCreateForKey:(NSString *) toManyRelationshipKey;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an insertion location must be specified; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if an insertion location must be specified; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,13 +34,14 @@ A script command object that creates a new object in a to-many relationship need
 
 ## See Also
 
-- [var className: String?](nsscriptclassdescription/classname.md)
+### Getting basic information about the script class
+- [var className: String?](./classname.md)
   Returns the name of the class the receiver describes, as provided at initialization time.
-- [var defaultSubcontainerAttributeKey: String?](nsscriptclassdescription/defaultsubcontainerattributekey.md)
+- [var defaultSubcontainerAttributeKey: String?](./defaultsubcontainerattributekey.md)
   Returns the value of the `DefaultSubcontainerAttribute` entry of the class dictionary from which the receiver was instantiated.
-- [var implementationClassName: String?](nsscriptclassdescription/implementationclassname.md)
+- [var implementationClassName: String?](./implementationclassname.md)
   Returns the name of the Objective-C class instantiated to implement the scripting class.
-- [var suiteName: String?](nsscriptclassdescription/suitename.md)
+- [var suiteName: String?](./suitename.md)
   Returns the name of the receiver’s suite.
 
 

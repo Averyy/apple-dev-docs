@@ -1,7 +1,8 @@
 # StatusSoftwareUpdateInstallReasonDictionaryObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Details about the reason for a pending software update.
 
@@ -15,7 +16,7 @@ Details about the reason for a pending software update.
 
 ## Declaration
 
-```swift
+```
 object StatusSoftwareUpdateInstallReasonDictionaryObject
 ```
 
@@ -23,6 +24,8 @@ object StatusSoftwareUpdateInstallReasonDictionaryObject
 
 - `declaration-id` (string): The identifier of the declaration that caused the software update to occur. This key is present only if the `reason` array contains the `declaration` value.
 - `reason` ([string]) *(required)*: A list of reasons for the pending software update. An empty list indicates that no software update is pending.
+
+  **Allowed Values**: `system-settings`, `install-tonight`, `auto-update`, `notification`, `setup-assistant`, `command-line`, `mdm`, `declaration`
 
 
 ---

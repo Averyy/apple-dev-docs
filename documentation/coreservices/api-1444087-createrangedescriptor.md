@@ -1,7 +1,8 @@
 # CreateRangeDescriptor(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a range descriptor that specifies a series of consecutive elements in the same container. 
 
@@ -15,9 +16,13 @@ Creates a range descriptor that specifies a series of consecutive elements in th
 func CreateRangeDescriptor(_ rangeStart: UnsafeMutablePointer<AEDesc>!, _ rangeStop: UnsafeMutablePointer<AEDesc>!, _ disposeInputs: Bool, _ theDescriptor: UnsafeMutablePointer<AEDesc>!) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr CreateRangeDescriptor(AEDesc *rangeStart, AEDesc *rangeStop, Boolean disposeInputs, AEDesc *theDescriptor);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
@@ -25,20 +30,21 @@ Although the `rangeStart` and `rangeStop` parameters can be any object specifier
 
 ## Parameters
 
-- `rangeStart`: A pointer to an object specifier that identifies the first Apple event object in the range. See [`AEDesc`](aedesc.md).
-- `rangeStop`: A pointer to an object specifier that identifies the last Apple event object in the range. See [`AEDesc`](aedesc.md).
+- `rangeStart`: A pointer to an object specifier that identifies the first Apple event object in the range. See [`AEDesc`](./aedesc.md).
+- `rangeStop`: A pointer to an object specifier that identifies the last Apple event object in the range. See [`AEDesc`](./aedesc.md).
 - `disposeInputs`: A Boolean value. Pass (`TRUE`) if the function should dispose of the descriptors for the `rangeStart` and `rangeStop` parameters and set them to the null descriptor or (`FALSE`) if your application will. A value of `FALSE` may be more efficient for some applications because it allows them to reuse descriptors. 
-- `theDescriptor`: A pointer to a descriptor. On successful return, the range descriptor created by `CreateRangeDescriptor`. Your application must dispose of this descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
+- `theDescriptor`: A pointer to a descriptor. On successful return, the range descriptor created by `CreateRangeDescriptor`. Your application must dispose of this descriptor after it has finished using it. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func CreateCompDescriptor(DescType, UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](1449155-createcompdescriptor.md)
+### Creating Object Specifiers
+- [func CreateCompDescriptor(DescType, UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1449155-createcompdescriptor.md)
   Creates a comparison descriptor that specifies how to compare one or more Apple event objects with either another Apple event object or a descriptor.
-- [func CreateLogicalDescriptor(UnsafeMutablePointer<AEDescList>!, DescType, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](1445212-createlogicaldescriptor.md)
+- [func CreateLogicalDescriptor(UnsafeMutablePointer<AEDescList>!, DescType, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1445212-createlogicaldescriptor.md)
   Creates a logical descriptor that specifies a logical operator and one or more logical terms for the Apple Event Manager to evaluate. 
-- [func CreateObjSpecifier(DescType, UnsafeMutablePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](1450244-createobjspecifier.md)
+- [func CreateObjSpecifier(DescType, UnsafeMutablePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1450244-createobjspecifier.md)
   Assembles an object specifier that identifies one or more Apple event objects, from other descriptors.
-- [func CreateOffsetDescriptor(Int, UnsafeMutablePointer<AEDesc>!) -> OSErr](1444957-createoffsetdescriptor.md)
+- [func CreateOffsetDescriptor(Int, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1444957-createoffsetdescriptor.md)
   Creates an offset descriptor that specifies the position of an element in relation to the beginning or end of its container. 
 
 

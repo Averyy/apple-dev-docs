@@ -1,12 +1,13 @@
 # setCredentialsWithRecordType(_:authenticationType:authenticationItems:continueItems:context:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the credentials for interaction with the node using other types of authentication available to Open Directory.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,11 +16,17 @@ Sets the credentials for interaction with the node using other types of authenti
 func setCredentialsWithRecordType(_ inRecordType: String!, authenticationType inType: String!, authenticationItems inItems: [Any]!, continueItems outItems: AutoreleasingUnsafeMutablePointer<NSArray?>!, context outContext: AutoreleasingUnsafeMutablePointer<AnyObject?>!) throws
 ```
 
+```objc
+- (BOOL) setCredentialsWithRecordType:(ODRecordType) inRecordType authenticationType:(ODAuthenticationType) inType authenticationItems:(NSArray *) inItems continueItems:(NSArray **) outItems context:(id*) outContext error:(NSError **) outError;
+```
+
 #### Discussion
 
 If this function fails, the previous credentials for the node are used.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -31,7 +38,8 @@ If this function fails, the previous credentials for the node are used.
 
 ## See Also
 
-- [func setCredentialsWithRecordType(String!, recordName: String!, password: String!) throws](odnode/setcredentialswithrecordtype(_:recordname:password:).md)
+### Setting Node Credentials
+- [func setCredentialsWithRecordType(String!, recordName: String!, password: String!) throws](./setcredentialswithrecordtype%28_,recordname,password%29.md)
   Sets credentials for interacting with the node.
 
 

@@ -1,17 +1,18 @@
 # destroy
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, enable_if_t<is_trivially_destructible_v<T>> * = nullptr> void destroy(T * *, T * *);
 ```
 

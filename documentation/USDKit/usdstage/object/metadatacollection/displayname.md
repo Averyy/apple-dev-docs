@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A non-unique display name authored on this object.
 

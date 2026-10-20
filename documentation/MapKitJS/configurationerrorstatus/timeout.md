@@ -1,7 +1,8 @@
 # Timeout
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status that indicates the service timed out when initializing.
 
@@ -10,7 +11,7 @@ An error status that indicates the service timed out when initializing.
 
 ## Declaration
 
-```swift
+```
 readonly Timeout: "Timeout";
 ```
 

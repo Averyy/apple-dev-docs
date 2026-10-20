@@ -1,7 +1,8 @@
 # transitionDuration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration in seconds over which the animation fades in or cross-fades.
 

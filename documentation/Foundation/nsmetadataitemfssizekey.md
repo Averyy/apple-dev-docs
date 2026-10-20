@@ -1,7 +1,8 @@
 # NSMetadataItemFSSizeKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 5.0+
@@ -18,27 +19,32 @@
 let NSMetadataItemFSSizeKey: String
 ```
 
+```c
+extern NSString * const NSMetadataItemFSSizeKey;
+```
+
 #### Discussion
 
-The value is an [`NSNumber`](nsnumber.md) object that indicates the size (in bytes) of the file on disk.
+The value is an [`NSNumber`](./nsnumber.md) object that indicates the size (in bytes) of the file on disk.
 
 ## See Also
 
-- [let NSMetadataItemAudiencesKey: String](nsmetadataitemaudienceskey.md)
-- [let NSMetadataItemAudioBitRateKey: String](nsmetadataitemaudiobitratekey.md)
-- [let NSMetadataItemAudioChannelCountKey: String](nsmetadataitemaudiochannelcountkey.md)
-- [let NSMetadataItemAudioEncodingApplicationKey: String](nsmetadataitemaudioencodingapplicationkey.md)
-- [let NSMetadataItemAudioSampleRateKey: String](nsmetadataitemaudiosampleratekey.md)
-- [let NSMetadataItemAudioTrackNumberKey: String](nsmetadataitemaudiotracknumberkey.md)
-- [let NSMetadataItemAuthorAddressesKey: String](nsmetadataitemauthoraddresseskey.md)
-- [let NSMetadataItemAuthorEmailAddressesKey: String](nsmetadataitemauthoremailaddresseskey.md)
-- [let NSMetadataItemAuthorsKey: String](nsmetadataitemauthorskey.md)
-- [let NSMetadataItemAcquisitionMakeKey: String](nsmetadataitemacquisitionmakekey.md)
-- [let NSMetadataItemAcquisitionModelKey: String](nsmetadataitemacquisitionmodelkey.md)
-- [let NSMetadataItemAlbumKey: String](nsmetadataitemalbumkey.md)
-- [let NSMetadataItemAltitudeKey: String](nsmetadataitemaltitudekey.md)
-- [let NSMetadataItemApertureKey: String](nsmetadataitemaperturekey.md)
-- [let NSMetadataItemAppleLoopDescriptorsKey: String](nsmetadataitemappleloopdescriptorskey.md)
+### Item Attribute Keys
+- [let NSMetadataItemAudiencesKey: String](./nsmetadataitemaudienceskey.md)
+- [let NSMetadataItemAudioBitRateKey: String](./nsmetadataitemaudiobitratekey.md)
+- [let NSMetadataItemAudioChannelCountKey: String](./nsmetadataitemaudiochannelcountkey.md)
+- [let NSMetadataItemAudioEncodingApplicationKey: String](./nsmetadataitemaudioencodingapplicationkey.md)
+- [let NSMetadataItemAudioSampleRateKey: String](./nsmetadataitemaudiosampleratekey.md)
+- [let NSMetadataItemAudioTrackNumberKey: String](./nsmetadataitemaudiotracknumberkey.md)
+- [let NSMetadataItemAuthorAddressesKey: String](./nsmetadataitemauthoraddresseskey.md)
+- [let NSMetadataItemAuthorEmailAddressesKey: String](./nsmetadataitemauthoremailaddresseskey.md)
+- [let NSMetadataItemAuthorsKey: String](./nsmetadataitemauthorskey.md)
+- [let NSMetadataItemAcquisitionMakeKey: String](./nsmetadataitemacquisitionmakekey.md)
+- [let NSMetadataItemAcquisitionModelKey: String](./nsmetadataitemacquisitionmodelkey.md)
+- [let NSMetadataItemAlbumKey: String](./nsmetadataitemalbumkey.md)
+- [let NSMetadataItemAltitudeKey: String](./nsmetadataitemaltitudekey.md)
+- [let NSMetadataItemApertureKey: String](./nsmetadataitemaperturekey.md)
+- [let NSMetadataItemAppleLoopDescriptorsKey: String](./nsmetadataitemappleloopdescriptorskey.md)
 
 
 ---

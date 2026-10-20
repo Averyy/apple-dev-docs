@@ -1,7 +1,8 @@
 # AudioAccessorySettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure audio accessory settings.
 
@@ -12,7 +13,7 @@ The declaration to configure audio accessory settings.
 
 ## Declaration
 
-```swift
+```
 object AudioAccessorySettings
 ```
 
@@ -25,7 +26,7 @@ Setting `TemporaryPairing` to `false` disables only the temporary pairing featur
 - Pair and use audio accessories - the device records the pairing and synchronizes it to their iCloud account.
 - Use the audio accessory AirPods Sharing feature.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ Setting `TemporaryPairing` to `false` disables only the temporary pairing featur
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration enables temporary pairing and sets an unpairing time of 6 pm.
 
@@ -62,7 +63,7 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
 ## Topics
 
 ### Objects
-- [object AudioAccessorySettingsTemporaryPairingObject](audioaccessorysettingstemporarypairingobject.md)
+- [object AudioAccessorySettingsTemporaryPairingObject](./audioaccessorysettingstemporarypairingobject.md)
   A dictionary that describes audio accessory temporary pairing behavior. The device enables temporary pairing when this key is present and the `Disabled` key isn’t `false`. The device doesn’t synchronize pairing information with iCloud when temporary pairing is active.
 
 ## Properties
@@ -71,35 +72,36 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
-- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+- [object ExternalIntelligenceSettings](./externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 
 

@@ -1,7 +1,8 @@
 # CapturedRoom.Section.Label
 
 **Framework**: RoomPlan  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Textual names for one part of a larger structure.
 
@@ -18,40 +19,41 @@ enum Label
 
 #### Overview
 
-The [`CapturedRoom.Section`](capturedroom/section.md) structure [`label`](capturedroom/section/label-swift.property.md) property is of this type.
+The [`CapturedRoom.Section`](../section.md) structure [`label`](./label-swift.property.md) property is of this type.
 
 ## Topics
 
 ### Assigning a section a label
-- [CapturedRoom.Section.Label.livingRoom](capturedroom/section/label-swift.enum/livingroom.md)
+- [CapturedRoom.Section.Label.livingRoom](./label-swift.enum/livingroom.md)
   A distinct area that resembles a living room within a larger structure.
-- [CapturedRoom.Section.Label.kitchen](capturedroom/section/label-swift.enum/kitchen.md)
+- [CapturedRoom.Section.Label.kitchen](./label-swift.enum/kitchen.md)
   A distinct area that resembles a kitchen within a larger structure.
-- [CapturedRoom.Section.Label.diningRoom](capturedroom/section/label-swift.enum/diningroom.md)
+- [CapturedRoom.Section.Label.diningRoom](./label-swift.enum/diningroom.md)
   A distinct area that resembles a dining room within a larger structure.
-- [CapturedRoom.Section.Label.bedroom](capturedroom/section/label-swift.enum/bedroom.md)
+- [CapturedRoom.Section.Label.bedroom](./label-swift.enum/bedroom.md)
   A distinct area that resembles a bedroom within a larger structure.
-- [CapturedRoom.Section.Label.bathroom](capturedroom/section/label-swift.enum/bathroom.md)
+- [CapturedRoom.Section.Label.bathroom](./label-swift.enum/bathroom.md)
   A distinct area that resembles a bathroom within a larger structure.
-- [CapturedRoom.Section.Label.unidentified](capturedroom/section/label-swift.enum/unidentified.md)
+- [CapturedRoom.Section.Label.unidentified](./label-swift.enum/unidentified.md)
   An uncategorized area within a larger structure.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var label: CapturedRoom.Section.Label](capturedroom/section/label-swift.property.md)
+### Describing a section
+- [var label: CapturedRoom.Section.Label](./label-swift.property.md)
   A textual name for the section.
 
 

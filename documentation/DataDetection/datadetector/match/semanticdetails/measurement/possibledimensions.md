@@ -1,7 +1,8 @@
 # possibleDimensions
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of dimensions someone can consider for use in a measurement.
 
@@ -26,9 +27,10 @@ There’s typically only one measurement, unless the original string is ambiguou
 
 ## See Also
 
-- [func measurement<D>(in: D) -> Measurement<D>](datadetector/match/semanticdetails/measurement/measurement(in:).md)
+### Values that describe the characteristics of the measurement
+- [func measurement<D>(in: D) -> Measurement<D>](./measurement%28in%29.md)
   A function that returns a measurement object initialized with the specified dimensions.
-- [let value: Double](datadetector/match/semanticdetails/measurement/value.md)
+- [let value: Double](./value.md)
   The value the framework returns for a measurement.
 
 

@@ -7,14 +7,14 @@ Add a portion of an IOMemoryDescriptor to the IOInterleavedMemoryDescriptor.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool setMemoryDescriptor(
  IOMemoryDescriptor *descriptor, 
  IOByteCountoffset, 
  IOByteCountlength );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true the portion was successfully added.
 
@@ -30,17 +30,18 @@ This method adds the portion of an IOMemoryDescriptor described by the offset an
 
 ## See Also
 
-- [clearMemoryDescriptors](iointerleavedmemorydescriptor/1812566-clearmemorydescriptors.md)
+### Miscellaneous
+- [clearMemoryDescriptors](./api-1812566-clearmemorydescriptors.md)
   Clear all of the IOMemoryDescriptors currently contained in and reset the IOInterleavedMemoryDescriptor.
-- [complete](iointerleavedmemorydescriptor/1812579-complete.md)
+- [complete](./api-1812579-complete.md)
   Complete processing of the memory after an I/O transfer finishes.
-- [getPhysicalSegment](iointerleavedmemorydescriptor/1812587-getphysicalsegment.md)
+- [getPhysicalSegment](./api-1812587-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
-- [initWithCapacity](iointerleavedmemorydescriptor/1812598-initwithcapacity.md)
+- [initWithCapacity](./api-1812598-initwithcapacity.md)
   Initialize an IOInterleavedMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
-- [prepare](iointerleavedmemorydescriptor/1812608-prepare.md)
+- [prepare](./api-1812608-prepare.md)
   Prepare the memory for an I/O transfer.
-- [withCapacity](iointerleavedmemorydescriptor/1812626-withcapacity.md)
+- [withCapacity](./api-1812626-withcapacity.md)
   Create an IOInterleavedMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
 
 

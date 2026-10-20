@@ -1,7 +1,8 @@
 # OcclusionCullingComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that controls whether the system performs occlusion culling on the owning Entity and its descendants.
 
@@ -34,23 +35,24 @@ The enablement setting on this component will be applied recursively to descenda
 ## Topics
 
 ### Creating a component
-- [init(isEnabled: Bool)](occlusioncullingcomponent/init(isenabled:).md)
+- [init(isEnabled: Bool)](./occlusioncullingcomponent/init%28isenabled%29.md)
 ### Enabling occlusion culling
-- [var isEnabled: Bool](occlusioncullingcomponent/isenabled.md)
+- [var isEnabled: Bool](./occlusioncullingcomponent/isenabled.md)
   Whether occlusion culling should be performed on this Entity and its children.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct RenderLayerComponent](renderlayercomponent.md)
+### Portals, clipping, and occlusion
+- [struct RenderLayerComponent](./renderlayercomponent.md)
   A component that defines which layers an entity participates in.
-- [struct RenderLayer](renderlayer.md)
+- [struct RenderLayer](./renderlayer.md)
   A named identifier for a group of meshes and lights.
-- [struct ClippingComponent](clippingcomponent.md)
+- [struct ClippingComponent](./clippingcomponent.md)
   A component that clips entities and their children to a customizable bounding box volume with feathered edges.
 
 

@@ -1,7 +1,8 @@
 # AnimationTimelineSchedule
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
 
@@ -22,31 +23,32 @@ struct AnimationTimelineSchedule
 
 #### Overview
 
-You can also use [`animation(minimumInterval:paused:)`](timelineschedule/animation(minimuminterval:paused:).md) to construct this schedule.
+You can also use [`animation(minimumInterval:paused:)`](./timelineschedule/animation%28minimuminterval,paused%29.md) to construct this schedule.
 
 ## Topics
 
 ### Creating a schedule
-- [init(minimumInterval: Double?, paused: Bool)](animationtimelineschedule/init(minimuminterval:paused:).md)
+- [init(minimumInterval: Double?, paused: Bool)](./animationtimelineschedule/init%28minimuminterval,paused%29.md)
   Create a pausable schedule of dates updating at a frequency no more quickly than the provided interval.
 ### Getting the sequence of dates
-- [func entries(from: Date, mode: TimelineScheduleMode) -> AnimationTimelineSchedule.Entries](animationtimelineschedule/entries(from:mode:).md)
+- [func entries(from: Date, mode: TimelineScheduleMode) -> AnimationTimelineSchedule.Entries](./animationtimelineschedule/entries%28from,mode%29.md)
   Returns entries at the frequency of the animation schedule.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TimelineSchedule](timelineschedule.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TimelineSchedule](./timelineschedule.md)
 
 ## See Also
 
-- [struct EveryMinuteTimelineSchedule](everyminutetimelineschedule.md)
+### Supporting types
+- [struct EveryMinuteTimelineSchedule](./everyminutetimelineschedule.md)
   A schedule for updating a timeline view at the start of every minute.
-- [struct ExplicitTimelineSchedule](explicittimelineschedule.md)
+- [struct ExplicitTimelineSchedule](./explicittimelineschedule.md)
   A schedule for updating a timeline view at explicit points in time.
-- [struct PeriodicTimelineSchedule](periodictimelineschedule.md)
+- [struct PeriodicTimelineSchedule](./periodictimelineschedule.md)
   A schedule for updating a timeline view at regular intervals.
 
 

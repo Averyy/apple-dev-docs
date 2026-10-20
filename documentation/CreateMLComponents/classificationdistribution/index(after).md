@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index immediately after an element index.
 
@@ -26,7 +27,8 @@ func index(after i: Int) -> Int
 
 ## See Also
 
-- [func index(before: Int) -> Int](classificationdistribution/index(before:).md)
+### Getting the index
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the index immediately before an element index.
 
 

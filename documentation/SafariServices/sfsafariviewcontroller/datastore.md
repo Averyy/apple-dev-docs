@@ -1,7 +1,8 @@
 # SFSafariViewController.DataStore
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.0+
@@ -14,29 +15,34 @@
 class DataStore
 ```
 
+```objc
+@interface SFSafariViewControllerDataStore : NSObject
+```
+
 ## Topics
 
 ### Type Properties
-- [class var `default`: SFSafariViewController.DataStore](sfsafariviewcontroller/datastore/default.md)
+- [class var `default`: SFSafariViewController.DataStore](./datastore/default.md)
 ### Instance Methods
-- [func clearWebsiteData(completionHandler: (() -> Void)?)](sfsafariviewcontroller/datastore/clearwebsitedata(completionhandler:).md)
+- [func clearWebsiteData(completionHandler: (() -> Void)?)](./datastore/clearwebsitedata%28completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [SFSafariViewController.ActivityButton](sfsafariviewcontroller/activitybutton.md)
-- [SFSafariViewController.PrewarmingToken](sfsafariviewcontroller/prewarmingtoken.md)
+### Classes
+- [SFSafariViewController.ActivityButton](./activitybutton.md)
+- [SFSafariViewController.PrewarmingToken](./prewarmingtoken.md)
 
 
 ---

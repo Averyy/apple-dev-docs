@@ -1,14 +1,15 @@
 # SetHardwareAssists
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetHardwareAssists(uint32_t hardwareAssists);
 ```
 

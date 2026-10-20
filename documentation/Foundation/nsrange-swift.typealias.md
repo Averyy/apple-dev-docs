@@ -1,7 +1,8 @@
 # NSRange
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 
@@ -24,63 +25,63 @@ typealias NSRange = _NSRange
 
 Foundation functions that operate on ranges include the following:
 
-- [`NSEqualRanges(_:_:)`](nsequalranges(_:_:).md)
-- [`NSIntersectionRange(_:_:)`](nsintersectionrange(_:_:).md)
-- [`NSLocationInRange(_:_:)`](nslocationinrange(_:_:).md)
-- [`NSMakeRange(_:_:)`](nsmakerange(_:_:).md)
-- [`NSMaxRange(_:)`](nsmaxrange(_:).md)
-- [`NSRangeFromString(_:)`](nsrangefromstring(_:).md)
-- [`NSStringFromRange(_:)`](nsstringfromrange(_:).md)
-- [`NSUnionRange(_:_:)`](nsunionrange(_:_:).md)
+- [`NSEqualRanges(_:_:)`](./nsequalranges%28_,_%29.md)
+- [`NSIntersectionRange(_:_:)`](./nsintersectionrange%28_,_%29.md)
+- [`NSLocationInRange(_:_:)`](./nslocationinrange%28_,_%29.md)
+- [`NSMakeRange(_:_:)`](./nsmakerange%28_,_%29.md)
+- [`NSMaxRange(_:)`](./nsmaxrange%28_%29.md)
+- [`NSRangeFromString(_:)`](./nsrangefromstring%28_%29.md)
+- [`NSStringFromRange(_:)`](./nsstringfromrange%28_%29.md)
+- [`NSUnionRange(_:_:)`](./nsunionrange%28_,_%29.md)
 
 ## Topics
 
 ### Creating a range
-- [init()](nsrange-swift.typealias/init.md)
+- [init()](./nsrange-swift.typealias/init%28%29.md)
   Creates an empty range.
-- [init(location: Int, length: Int)](nsrange-swift.typealias/init(location:length:).md)
+- [init(location: Int, length: Int)](./nsrange-swift.typealias/init%28location,length%29.md)
   Creates a range with the given location and length.
 ### Accessing range properties
-- [var location: Int](nsrange-swift.typealias/location.md)
+- [var location: Int](./nsrange-swift.typealias/location.md)
   The index of the first member of the range.
-- [var length: Int](nsrange-swift.typealias/length.md)
+- [var length: Int](./nsrange-swift.typealias/length.md)
   The number of items in the range.
 ### Managing ranges
-- [func NSEqualRanges(NSRange, NSRange) -> Bool](nsequalranges(_:_:).md)
+- [func NSEqualRanges(NSRange, NSRange) -> Bool](./nsequalranges%28_,_%29.md)
   Returns a Boolean value that indicates whether two given ranges are equal.
-- [func NSIntersectionRange(NSRange, NSRange) -> NSRange](nsintersectionrange(_:_:).md)
+- [func NSIntersectionRange(NSRange, NSRange) -> NSRange](./nsintersectionrange%28_,_%29.md)
   Returns the intersection of the specified ranges.
-- [func NSLocationInRange(Int, NSRange) -> Bool](nslocationinrange(_:_:).md)
+- [func NSLocationInRange(Int, NSRange) -> Bool](./nslocationinrange%28_,_%29.md)
   Returns a Boolean value that indicates whether a specified position is in a given range.
-- [func NSMakeRange(Int, Int) -> NSRange](nsmakerange(_:_:).md)
+- [func NSMakeRange(Int, Int) -> NSRange](./nsmakerange%28_,_%29.md)
   Creates a new NSRange from the specified values.
-- [func NSMaxRange(NSRange) -> Int](nsmaxrange(_:).md)
+- [func NSMaxRange(NSRange) -> Int](./nsmaxrange%28_%29.md)
   Returns the sum of the location and length of the range.
-- [func NSRangeFromString(String) -> NSRange](nsrangefromstring(_:).md)
+- [func NSRangeFromString(String) -> NSRange](./nsrangefromstring%28_%29.md)
   Returns a range from a textual representation.
-- [func NSStringFromRange(NSRange) -> String](nsstringfromrange(_:).md)
+- [func NSStringFromRange(NSRange) -> String](./nsstringfromrange%28_%29.md)
   Returns a string representation of a range.
-- [func NSUnionRange(NSRange, NSRange) -> NSRange](nsunionrange(_:_:).md)
+- [func NSUnionRange(NSRange, NSRange) -> NSRange](./nsunionrange%28_,_%29.md)
   Returns the union of the specified ranges.
 ### Related types
-- [typealias NSRangePointer](nsrangepointer.md)
+- [typealias NSRangePointer](./nsrangepointer.md)
   Type indicating a parameter is a pointer to an `NSRange` structure.
-- [var NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](./nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

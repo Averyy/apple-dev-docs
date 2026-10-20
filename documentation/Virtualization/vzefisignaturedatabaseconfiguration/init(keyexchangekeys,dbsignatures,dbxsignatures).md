@@ -1,7 +1,8 @@
 # init(keyExchangeKeys:dbSignatures:dbxSignatures:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signature lists container from signature list objects.
 
@@ -12,6 +13,10 @@ Creates a signature lists container from signature list objects.
 
 ```swift
 init(keyExchangeKeys: [VZEFISignatureList], dbSignatures: [VZEFISignatureList], dbxSignatures: [VZEFISignatureList])
+```
+
+```objc
+- (instancetype) initWithKeyExchangeKeys:(NSArray<VZEFISignatureList *> *) keyExchangeKeys dbSignatures:(NSArray<VZEFISignatureList *> *) dbSignatures dbxSignatures:(NSArray<VZEFISignatureList *> *) dbxSignatures;
 ```
 
 #### Discussion
@@ -89,9 +94,9 @@ The following example demonstrates the creation of a `VZEFISignatureDatabaseConf
 
 ## Parameters
 
-- `keyExchangeKeys`: An array of [`VZEFISignatureList`](vzefisignaturelist.md) objects for the Key Exchange Key (KEK) database. Must contain only X.509 certificates. If any signature list contains SHA-256 hashes, the framework raises an exception. This parameter can be empty if you don’t need to add KEK signatures.
-- `dbSignatures`: An array of [`VZEFISignatureList`](vzefisignaturelist.md) objects for the allowed signature database (db). This parameter can be empty if you don’t need to add allowed signatures.
-- `dbxSignatures`: An array of [`VZEFISignatureList`](vzefisignaturelist.md) objects for the forbidden signature database (dbx). This parameter can be empty if you don’t need to add forbidden signatures.
+- `keyExchangeKeys`: An array of [`VZEFISignatureList`](../vzefisignaturelist.md) objects for the Key Exchange Key (KEK) database. Must contain only X.509 certificates. If any signature list contains SHA-256 hashes, the framework raises an exception. This parameter can be empty if you don’t need to add KEK signatures.
+- `dbSignatures`: An array of [`VZEFISignatureList`](../vzefisignaturelist.md) objects for the allowed signature database (db). This parameter can be empty if you don’t need to add allowed signatures.
+- `dbxSignatures`: An array of [`VZEFISignatureList`](../vzefisignaturelist.md) objects for the forbidden signature database (dbx). This parameter can be empty if you don’t need to add forbidden signatures.
 
 
 ---

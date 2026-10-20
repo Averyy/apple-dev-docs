@@ -1,7 +1,8 @@
 # modifyRecordZones(saving:deleting:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the specified record zones and returns the results to an awaiting caller.
 
@@ -11,7 +12,7 @@ Modifies the specified record zones and returns the results to an awaiting calle
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -24,8 +25,8 @@ func modifyRecordZones(saving recordZonesToSave: [CKRecordZone], deleting record
 
 A tuple with the following named elements:
 
-- **`saveResults`**: A dictionary of saved record zones. The dictionary uses the identifiers of the record zones you specify in `recordZonesToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding modified record zone (as it appears on the server), or an error that describes why CloudKit can’t modify that record zone.
-- **`deleteResults`**: A dictionary of deleted record zones. The dictionary uses the identifiers you specify in `recordZoneIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either [`Void`](https://developer.apple.com/documentation/swift/void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record zone.
+- **`saveResults`**: A dictionary of saved record zones. The dictionary uses the identifiers of the record zones you specify in `recordZonesToSave` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding modified record zone (as it appears on the server), or an error that describes why CloudKit can’t modify that record zone.
+- **`deleteResults`**: A dictionary of deleted record zones. The dictionary uses the identifiers you specify in `recordZoneIDsToDelete` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either [`Void`](../../Swift/void.md) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record zone.
 
 #### Discussion
 
@@ -33,7 +34,7 @@ A tuple with the following named elements:
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned tuple includes any individual record zone errors.
 
-For information on a more configurable way to modify record zones, see [`CKModifyRecordZonesOperation`](ckmodifyrecordzonesoperation.md).
+For information on a more configurable way to modify record zones, see [`CKModifyRecordZonesOperation`](../ckmodifyrecordzonesoperation.md).
 
 ## Parameters
 
@@ -42,11 +43,12 @@ For information on a more configurable way to modify record zones, see [`CKModif
 
 ## See Also
 
-- [func modifyRecordZones(saving: [CKRecordZone], deleting: [CKRecordZone.ID], completionHandler: (Result<(saveResults: [CKRecordZone.ID : Result<CKRecordZone, any Error>], deleteResults: [CKRecordZone.ID : Result<Void, any Error>]), any Error>) -> Void)](ckdatabase/modifyrecordzones(saving:deleting:completionhandler:).md)
+### Modifying Record Zones
+- [func modifyRecordZones(saving: [CKRecordZone], deleting: [CKRecordZone.ID], completionHandler: (Result<(saveResults: [CKRecordZone.ID : Result<CKRecordZone, any Error>], deleteResults: [CKRecordZone.ID : Result<Void, any Error>]), any Error>) -> Void)](./modifyrecordzones%28saving,deleting,completionhandler%29.md)
   Modifies the specified record zones and delivers the results to a completion handler.
-- [func save(CKRecordZone, completionHandler: (CKRecordZone?, (any Error)?) -> Void)](ckdatabase/save(_:completionhandler:)-32ffr.md)
+- [func save(CKRecordZone, completionHandler: (CKRecordZone?, (any Error)?) -> Void)](./save%28_,completionhandler%29-32ffr.md)
   Saves a specific record zone.
-- [func delete(withRecordZoneID: CKRecordZone.ID, completionHandler: (CKRecordZone.ID?, (any Error)?) -> Void)](ckdatabase/delete(withrecordzoneid:completionhandler:).md)
+- [func delete(withRecordZoneID: CKRecordZone.ID, completionHandler: (CKRecordZone.ID?, (any Error)?) -> Void)](./delete%28withrecordzoneid,completionhandler%29.md)
   Deletes a specific record zone.
 
 

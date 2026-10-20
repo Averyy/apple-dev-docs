@@ -1,7 +1,8 @@
 # body
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body of the view.
 
@@ -21,7 +22,8 @@ The body of the view.
 
 ## See Also
 
-- [let question: PermissionQuestion<Topic>](permissionbutton/question.md)
+### Accessing properties
+- [let question: PermissionQuestion<Topic>](./question.md)
   The question to ask a parent or guardian about making an exception to their child’s communication limits.
 
 

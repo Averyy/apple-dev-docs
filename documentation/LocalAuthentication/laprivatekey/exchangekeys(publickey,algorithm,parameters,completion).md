@@ -1,7 +1,8 @@
 # exchangeKeys(publicKey:algorithm:parameters:completion:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a Diffie-Hellman style key exchange operation.
 
@@ -15,30 +16,45 @@ Performs a Diffie-Hellman style key exchange operation.
 ## Declaration
 
 ```swift
+func exchangeKeys(publicKey: Data, algorithm: SecKeyAlgorithm, parameters: [AnyHashable : Any], completion handler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func exchangeKeys(publicKey: Data, algorithm: SecKeyAlgorithm, parameters: [AnyHashable : Any]) async throws -> Data
+```
+
+```objc
+- (void) exchangeKeysWithPublicKey:(NSData *) publicKey secKeyAlgorithm:(SecKeyAlgorithm) algorithm secKeyParameters:(NSDictionary *) parameters completion:(void (^)(NSData *, NSError *)) handler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func exchangeKeys(publicKey: Data, algorithm: SecKeyAlgorithm, parameters: [AnyHashable : Any]) async throws -> Data
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func exchangeKeys(publicKey: Data, algorithm: SecKeyAlgorithm, parameters: [AnyHashable : Any]) async throws -> Data
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-The algorithm you use determines the parameters in the dictionary that are required or optional. For more information, see [`SecKeyKeyExchangeParameter`](https://developer.apple.com/documentation/security/seckeykeyexchangeparameter).
+The algorithm you use determines the parameters in the dictionary that are required or optional. For more information, see [`SecKeyKeyExchangeParameter`](../../Security/seckeykeyexchangeparameter.md).
 
 ## Parameters
 
 - `publicKey`: The remote party’s public key.
 - `algorithm`: An algorithm suitable for performing this key exchange. For example, `ecdhKeyExchangeCofactorX963SHA256`.
 - `parameters`: A dictionary with parameters for this key exchange.
-- `handler`: A completion handler to call when the key exchange operation completes. - **data**: The result of the key exchange operation.
-- **error**: An error object that indicates why the key exchange failed, or `nil` if the exchange succeeded.
+- `handler`: A completion handler to call when the key exchange operation completes.
+
+  - **data**: The result of the key exchange operation.
+  - **error**: An error object that indicates why the key exchange failed, or `nil` if the exchange succeeded.
 
 ## See Also
 
-- [func decrypt(Data, algorithm: SecKeyAlgorithm, completion: (Data?, (any Error)?) -> Void)](laprivatekey/decrypt(_:algorithm:completion:).md)
+### Performing cryptographic operations
+- [func decrypt(Data, algorithm: SecKeyAlgorithm, completion: (Data?, (any Error)?) -> Void)](./decrypt%28_,algorithm,completion%29.md)
   Decrypts the data you supply with a given algorithm.
-- [func sign(Data, algorithm: SecKeyAlgorithm, completion: (Data?, (any Error)?) -> Void)](laprivatekey/sign(_:algorithm:completion:).md)
+- [func sign(Data, algorithm: SecKeyAlgorithm, completion: (Data?, (any Error)?) -> Void)](./sign%28_,algorithm,completion%29.md)
   Generates a digital signature for the data you supply.
 
 

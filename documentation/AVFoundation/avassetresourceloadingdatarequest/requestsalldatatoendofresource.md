@@ -1,7 +1,8 @@
 # requestsAllDataToEndOfResource
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the entire remaining length of the resource from the offest to the end of the resource is being requested.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates the entire remaining length of the resource from 
 var requestsAllDataToEndOfResource: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL requestsAllDataToEndOfResource;
+```
+
 #### Discussion
 
 When this property is true, you should disregard the value of requestedLength and incrementally provide as much data, starting from the requested offset, as the resource contains. Continue until all available data was successfully loaded, the request was cancelled, or an error occurs.
 
 ## See Also
 
-- [func respond(with: Data)](avassetresourceloadingdatarequest/respond(with:).md)
+### Providing data to a request
+- [func respond(with: Data)](./respond%28with%29.md)
   Provides data to the loading request.
-- [var requestedLength: Int](avassetresourceloadingdatarequest/requestedlength.md)
+- [var requestedLength: Int](./requestedlength.md)
   The length, in bytes, of the data requested.
-- [var requestedOffset: Int64](avassetresourceloadingdatarequest/requestedoffset.md)
+- [var requestedOffset: Int64](./requestedoffset.md)
   The position within the resource of the first byte requested.
-- [var currentOffset: Int64](avassetresourceloadingdatarequest/currentoffset.md)
+- [var currentOffset: Int64](./currentoffset.md)
   The position within the resource of the next byte.
 
 

@@ -1,7 +1,8 @@
 # usesProVideoStorage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this movie file output is configured to write to Pro Video Storage.
 
@@ -16,6 +17,10 @@ Whether this movie file output is configured to write to Pro Video Storage.
 
 ```swift
 var usesProVideoStorage: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL usesProVideoStorage;
 ```
 
 #### Discussion

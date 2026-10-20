@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends a completion signal to the subscriber.
@@ -23,7 +24,7 @@ func send(completion: Subscribers.Completion<Self.Failure>)
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](../using-combine-for-your-app-s-asynchronous-code.md)
 
 ## Parameters
 
@@ -31,7 +32,8 @@ func send(completion: Subscribers.Completion<Self.Failure>)
 
 ## See Also
 
-- [func send(subscription: any Subscription)](subject/send(subscription:).md)
+### Delivering life cycle events to subscribers
+- [func send(subscription: any Subscription)](./send%28subscription%29.md)
   Sends a subscription to the subscriber.
 
 

@@ -1,7 +1,8 @@
 # AUMessageChannel
 
 **Framework**: Audio Toolbox  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A specification for a bidirectional communication message channel.
 
@@ -18,24 +19,29 @@ A specification for a bidirectional communication message channel.
 protocol AUMessageChannel
 ```
 
+```objc
+@protocol AUMessageChannel
+```
+
 #### Overview
 
-Audio units and their hosts have unique communication needs. For example, for better audio processing they can exchange musical context. An audio unit implements a class that conforms to [`AUMessageChannel`](aumessagechannel.md) and returns an instance from [`messageChannel(for:)`](auaudiounit/messagechannel(for:).md). A host queries the instance through the channel name.
+Audio units and their hosts have unique communication needs. For example, for better audio processing they can exchange musical context. An audio unit implements a class that conforms to [`AUMessageChannel`](./aumessagechannel.md) and returns an instance from [`messageChannel(for:)`](./auaudiounit/messagechannel%28for%29.md). A host queries the instance through the channel name.
 
 This protocol offers a method to send messages to an audio unit and a block to send messages to the host.
 
 ## Topics
 
 ### Sending a Message to an Audio Unit
-- [func callAudioUnit([AnyHashable : Any]) -> [AnyHashable : Any]](aumessagechannel/callaudiounit(_:).md)
+- [func callAudioUnit([AnyHashable : Any]) -> [AnyHashable : Any]](./aumessagechannel/callaudiounit%28_%29.md)
   Sends an audio unit a custom data message.
 ### Sending a Message to a Host
-- [var callHostBlock: CallHostBlock?](aumessagechannel/callhostblock.md)
+- [var callHostBlock: CallHostBlock?](./aumessagechannel/callhostblock.md)
   A callback for the audio unit to send a message to the host.
 
 ## See Also
 
-- [func messageChannel(for: String) -> any AUMessageChannel](auaudiounit/messagechannel(for:).md)
+### Messaging Channels
+- [func messageChannel(for: String) -> any AUMessageChannel](./auaudiounit/messagechannel%28for%29.md)
   Returns an object for bidirectional communication between an audio unit and its host.
 
 

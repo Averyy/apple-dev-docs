@@ -1,7 +1,8 @@
 # connections()
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the session’s set of MIDI network connections.
 
@@ -18,15 +19,20 @@ Returns the session’s set of MIDI network connections.
 func connections() -> Set<MIDINetworkConnection>
 ```
 
+```objc
+- (NSSet<MIDINetworkConnection *> *) connections;
+```
+
 #### Return Value
 
 The set of connections.
 
 ## See Also
 
-- [func addConnection(MIDINetworkConnection) -> Bool](midinetworksession/addconnection(_:).md)
+### Managing Connections
+- [func addConnection(MIDINetworkConnection) -> Bool](./addconnection%28_%29.md)
   Adds a new connection to this session.
-- [func removeConnection(MIDINetworkConnection) -> Bool](midinetworksession/removeconnection(_:).md)
+- [func removeConnection(MIDINetworkConnection) -> Bool](./removeconnection%28_%29.md)
   Removes a connection from this session.
 
 

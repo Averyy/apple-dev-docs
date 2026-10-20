@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that specifies whether to apply Softmax normalization to the output of the model.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A Boolean value that specifies whether to apply Softmax normalization to the out
 var softmaxNormalization: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) bool softmaxNormalization;
+```
+
 ## See Also
 
-- [var headIndex: Float](cicoremlmodel/headindex.md)
+### Instance Properties
+- [var headIndex: Float](./headindex.md)
   A number that specifies which output of a multihead Core ML model applies the effect on the image.
-- [var inputImage: CIImage?](cicoremlmodel/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var model: MLModel](cicoremlmodel/model.md)
+- [var model: MLModel](./model.md)
   The Core ML model used to apply the effect on the image.
 
 

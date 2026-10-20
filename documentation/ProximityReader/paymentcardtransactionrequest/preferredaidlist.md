@@ -1,7 +1,8 @@
 # preferredAIDList
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred Application Identifier (AID) or Registered Application Provider Identifier (RID).
 

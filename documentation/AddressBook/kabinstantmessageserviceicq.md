@@ -1,7 +1,8 @@
 # kABInstantMessageServiceICQ
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 ICQ instant message service.
 
@@ -14,25 +15,30 @@ ICQ instant message service.
 let kABInstantMessageServiceICQ: String
 ```
 
+```c
+extern NSString * const kABInstantMessageServiceICQ;
+```
+
 ## See Also
 
-- [let kABInstantMessageServiceAIM: String](kabinstantmessageserviceaim.md)
+### Constants
+- [let kABInstantMessageServiceAIM: String](./kabinstantmessageserviceaim.md)
   AOL Instant Messenger instant message service.
-- [let kABInstantMessageServiceFacebook: String](kabinstantmessageservicefacebook.md)
+- [let kABInstantMessageServiceFacebook: String](./kabinstantmessageservicefacebook.md)
   Facebook instant message service.
-- [let kABInstantMessageServiceGaduGadu: String](kabinstantmessageservicegadugadu.md)
+- [let kABInstantMessageServiceGaduGadu: String](./kabinstantmessageservicegadugadu.md)
   Gadu-Gadu instant message service.
-- [let kABInstantMessageServiceGoogleTalk: String](kabinstantmessageservicegoogletalk.md)
+- [let kABInstantMessageServiceGoogleTalk: String](./kabinstantmessageservicegoogletalk.md)
   Google Talk instant message service.
-- [let kABInstantMessageServiceJabber: String](kabinstantmessageservicejabber.md)
+- [let kABInstantMessageServiceJabber: String](./kabinstantmessageservicejabber.md)
   Jabber instant message service.
-- [let kABInstantMessageServiceMSN: String](kabinstantmessageservicemsn.md)
+- [let kABInstantMessageServiceMSN: String](./kabinstantmessageservicemsn.md)
   MSN instant message service.
-- [let kABInstantMessageServiceQQ: String](kabinstantmessageserviceqq.md)
+- [let kABInstantMessageServiceQQ: String](./kabinstantmessageserviceqq.md)
   QQ instant message service.
-- [let kABInstantMessageServiceSkype: String](kabinstantmessageserviceskype.md)
+- [let kABInstantMessageServiceSkype: String](./kabinstantmessageserviceskype.md)
   Skype instant message service.
-- [let kABInstantMessageServiceYahoo: String](kabinstantmessageserviceyahoo.md)
+- [let kABInstantMessageServiceYahoo: String](./kabinstantmessageserviceyahoo.md)
   Yahoo! instant message service.
 
 

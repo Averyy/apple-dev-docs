@@ -1,7 +1,8 @@
 # GeneratePersonSegmentationRequest.QualityLevel.balanced
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quality option that prefers processing that balances image quality and performance.
 
@@ -22,9 +23,10 @@ case balanced
 
 ## See Also
 
-- [GeneratePersonSegmentationRequest.QualityLevel.accurate](generatepersonsegmentationrequest/qualitylevel-swift.enum/accurate.md)
+### Getting the quality levels
+- [GeneratePersonSegmentationRequest.QualityLevel.accurate](./accurate.md)
   A quality option that prefers image quality over performance.
-- [GeneratePersonSegmentationRequest.QualityLevel.fast](generatepersonsegmentationrequest/qualitylevel-swift.enum/fast.md)
+- [GeneratePersonSegmentationRequest.QualityLevel.fast](./fast.md)
   A quality option that prefers performance over image quality.
 
 

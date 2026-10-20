@@ -1,14 +1,15 @@
 # vlr_tag
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 u_short vlr_tag;
 ```
 

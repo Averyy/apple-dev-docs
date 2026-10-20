@@ -1,7 +1,8 @@
 # handleInputModeList(from:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Supports interaction with the list of user-enabled keyboards.
 
@@ -18,15 +19,20 @@ Supports interaction with the list of user-enabled keyboards.
 func handleInputModeList(from view: UIView, with event: UIEvent)
 ```
 
+```objc
+- (void) handleInputModeListFromView:(UIView *) view withEvent:(UIEvent *) event;
+```
+
 #### Discussion
 
 Use this method to launch the input mode list from your input view when the user long-presses or swipes up from the view; advance to the next input mode in the list when the user taps the view.
 
 ## See Also
 
-- [func advanceToNextInputMode()](uiinputviewcontroller/advancetonextinputmode.md)
+### Controlling a custom keyboard
+- [func advanceToNextInputMode()](./advancetonextinputmode%28%29.md)
   Switches to the next keyboard in the list of user-enabled keyboards.
-- [func dismissKeyboard()](uiinputviewcontroller/dismisskeyboard.md)
+- [func dismissKeyboard()](./dismisskeyboard%28%29.md)
   Dismisses the custom keyboard from the screen.
 
 

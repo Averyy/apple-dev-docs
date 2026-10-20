@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The RCS handle, typically a phone number.
 
@@ -16,11 +17,12 @@ var handle: RCSHandle
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/remotecapabilitiesrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var cachePolicy: RCSService.RemoteCapabilitiesRequest.CachePolicy](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.property.md)
+- [var cachePolicy: RCSService.RemoteCapabilitiesRequest.CachePolicy](./cachepolicy-swift.property.md)
   Cache policy to use for request.
-- [RCSService.RemoteCapabilitiesRequest.CachePolicy](rcsservice/remotecapabilitiesrequest/cachepolicy-swift.enum.md)
+- [RCSService.RemoteCapabilitiesRequest.CachePolicy](./cachepolicy-swift.enum.md)
   Enumeration representing the cache policy to use in requests.
 
 

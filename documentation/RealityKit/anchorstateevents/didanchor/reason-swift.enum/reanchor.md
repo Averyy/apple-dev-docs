@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidAnchor.Reason.reanchor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Entity is re-anchored to its previously selected anchor that was temporarily disqualified
 

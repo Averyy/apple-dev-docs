@@ -1,7 +1,8 @@
 # getMapItem(completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a map item and calls the provided completion handler.
 
@@ -17,7 +18,15 @@ Requests a map item and calls the provided completion handler.
 ## Declaration
 
 ```swift
+func getMapItem(completionHandler: @escaping @MainActor @Sendable (MKMapItem?, (any Error)?) -> Void)
+```
+
+```swift
 var mapItem: MKMapItem { get async throws }
+```
+
+```objc
+- (void) getMapItemWithCompletionHandler:(void (^)(MKMapItem *, NSError *)) completionHandler;
 ```
 
 ## Parameters
@@ -26,7 +35,8 @@ var mapItem: MKMapItem { get async throws }
 
 ## See Also
 
-- [func cancel()](mkmapitemrequest/cancel.md)
+### Starting and stopping requests
+- [func cancel()](./cancel%28%29.md)
   Cancels an in-progress map item request.
 
 

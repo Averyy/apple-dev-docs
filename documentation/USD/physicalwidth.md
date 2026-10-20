@@ -1,6 +1,7 @@
 # physicalWidth
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An image’s width in centimeters.
 
@@ -16,7 +17,7 @@ Because this property describes a real-world width, the prim’s transform hiera
 uniform double physicalWidth
 ```
 
-##### Define a Reference Images Width
+##### Define a reference image’s width
 
 To recognize an image in the real world, the runtime requires a prim to specify how wide the image is in the physical environment.
 
@@ -30,7 +31,8 @@ def Preliminary_ReferenceImage "ImageReference"
 
 ## See Also
 
-- [image](image.md)
+### Properties
+- [image](./image.md)
   An image file for which the runtime should search.
 
 

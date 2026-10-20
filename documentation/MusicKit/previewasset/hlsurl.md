@@ -1,7 +1,8 @@
 # hlsURL
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HLS preview URL for the content.
 

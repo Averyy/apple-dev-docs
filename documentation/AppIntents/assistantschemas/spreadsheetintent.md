@@ -1,7 +1,8 @@
 # AssistantSchemas.SpreadsheetIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer spreadsheet functionality.
 
@@ -23,42 +24,42 @@ protocol SpreadsheetIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var addAudioToSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/addaudiotosheet.md)
+- [var addAudioToSheet: some AssistantSchemas.Intent](./spreadsheetintent/addaudiotosheet.md)
   The app intent conforms to the schema for adding audio to a slide.
-- [var addCommentToSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/addcommenttosheet.md)
+- [var addCommentToSheet: some AssistantSchemas.Intent](./spreadsheetintent/addcommenttosheet.md)
   The app intent conforms to the schema for adding a comment to a sheet in a spreadsheet.
-- [var addImageToSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/addimagetosheet.md)
+- [var addImageToSheet: some AssistantSchemas.Intent](./spreadsheetintent/addimagetosheet.md)
   The app intent conforms to the schema for adding an image to a sheet in a spreadsheet.
-- [var addTextBoxToSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/addtextboxtosheet.md)
+- [var addTextBoxToSheet: some AssistantSchemas.Intent](./spreadsheetintent/addtextboxtosheet.md)
   The app intent conforms to the schema for adding a textbox to a sheet in a spreadsheet.
-- [var addVideoToSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/addvideotosheet.md)
+- [var addVideoToSheet: some AssistantSchemas.Intent](./spreadsheetintent/addvideotosheet.md)
   The app intent conforms to the schema for adding a video to a sheet in a spreadsheet.
-- [var addWebVideoToSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/addwebvideotosheet.md)
+- [var addWebVideoToSheet: some AssistantSchemas.Intent](./spreadsheetintent/addwebvideotosheet.md)
   The app intent conforms to the schema for adding a web video to a sheet in a spreadsheet.
-- [var create: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/create.md)
+- [var create: some AssistantSchemas.Intent](./spreadsheetintent/create.md)
   The app intent conforms to the schema for creating a spreadsheet.
-- [var createSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/createsheet.md)
+- [var createSheet: some AssistantSchemas.Intent](./spreadsheetintent/createsheet.md)
   The app intent conforms to the schema for creating a sheet in a spreadsheet.
-- [var delete: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/delete.md)
+- [var delete: some AssistantSchemas.Intent](./spreadsheetintent/delete.md)
   The app intent conforms to the schema for deleting a spreadsheet.
-- [var deleteSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/deletesheet.md)
+- [var deleteSheet: some AssistantSchemas.Intent](./spreadsheetintent/deletesheet.md)
   The app intent conforms to the schema for deleting a sheet in a spreadsheet.
-- [var open: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/open.md)
+- [var open: some AssistantSchemas.Intent](./spreadsheetintent/open.md)
   The app intent conforms to the schema for opening a spreadsheet.
-- [var openSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/opensheet.md)
+- [var openSheet: some AssistantSchemas.Intent](./spreadsheetintent/opensheet.md)
   The app intent conforms to the schema for opening a sheet in a spreadsheet.
-- [var update: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/update.md)
+- [var update: some AssistantSchemas.Intent](./spreadsheetintent/update.md)
   The app intent conforms to the schema for updating a spreadsheet.
-- [var updateSheet: some AssistantSchemas.Intent](assistantschemas/spreadsheetintent/updatesheet.md)
+- [var updateSheet: some AssistantSchemas.Intent](./spreadsheetintent/updatesheet.md)
   The app intent conforms to the schema for updating a sheet in a spreadsheet.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

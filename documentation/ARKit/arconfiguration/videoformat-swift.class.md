@@ -1,7 +1,8 @@
 # ARConfiguration.VideoFormat
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A video size and frame rate specification for use with an AR session.
 
@@ -15,60 +16,65 @@ A video size and frame rate specification for use with an AR session.
 class VideoFormat
 ```
 
+```objc
+@interface ARVideoFormat : NSObject
+```
+
 #### Overview
 
-This class is immutable; to set the frame rate and video resolution for an AR session, set your configuration’s [`videoFormat`](arconfiguration/videoformat-swift.property.md) property to one of the formats in the [`supportedVideoFormats`](arconfiguration/supportedvideoformats.md) array.
+This class is immutable; to set the frame rate and video resolution for an AR session, set your configuration’s [`videoFormat`](./videoformat-swift.property.md) property to one of the formats in the [`supportedVideoFormats`](./supportedvideoformats.md) array.
 
 ## Topics
 
 ### Accessing format information
-- [var framesPerSecond: Int](arconfiguration/videoformat-swift.class/framespersecond.md)
+- [var framesPerSecond: Int](./videoformat-swift.class/framespersecond.md)
   The rate at which the session captures video and provides AR frame information.
-- [var imageResolution: CGSize](arconfiguration/videoformat-swift.class/imageresolution.md)
+- [var imageResolution: CGSize](./videoformat-swift.class/imageresolution.md)
   The size, in pixels, of video images captured in the session.
-- [var isRecommendedForHighResolutionFrameCapturing: Bool](arconfiguration/videoformat-swift.class/isrecommendedforhighresolutionframecapturing.md)
+- [var isRecommendedForHighResolutionFrameCapturing: Bool](./videoformat-swift.class/isrecommendedforhighresolutionframecapturing.md)
   Determines whether the framework considers a format suitable for high-resolution frame capture.
-- [var isVideoHDRSupported: Bool](arconfiguration/videoformat-swift.class/isvideohdrsupported.md)
+- [var isVideoHDRSupported: Bool](./videoformat-swift.class/isvideohdrsupported.md)
   Determines whether the format supports high dynamic range (HDR).
 ### Inspecting the video source
-- [var captureDevicePosition: AVCaptureDevice.Position](arconfiguration/videoformat-swift.class/capturedeviceposition.md)
+- [var captureDevicePosition: AVCaptureDevice.Position](./videoformat-swift.class/capturedeviceposition.md)
   The position of the capture device.
-- [AVCaptureDevice.Position](../avfoundation/avcapturedevice/position-swift.enum.md)
+- [AVCaptureDevice.Position](../../AVFoundation/avcapturedevice/position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
-- [var captureDeviceType: AVCaptureDevice.DeviceType](arconfiguration/videoformat-swift.class/capturedevicetype.md)
+- [var captureDeviceType: AVCaptureDevice.DeviceType](./videoformat-swift.class/capturedevicetype.md)
   The camera that supplies the video format.
 ### Instance Properties
-- [var defaultColorSpace: AVCaptureColorSpace](arconfiguration/videoformat-swift.class/defaultcolorspace.md)
+- [var defaultColorSpace: AVCaptureColorSpace](./videoformat-swift.class/defaultcolorspace.md)
   The color space ARKit uses to configure the capture session when this video format is selected.
-- [var defaultPhotoSettings: AVCapturePhotoSettings](arconfiguration/videoformat-swift.class/defaultphotosettings.md)
+- [var defaultPhotoSettings: AVCapturePhotoSettings](./videoformat-swift.class/defaultphotosettings.md)
   The default AVCapturePhotoSettings object that ARKit uses when capturing a high resolution frame using this video format.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var videoFormat: ARConfiguration.VideoFormat](arconfiguration/videoformat-swift.property.md)
+### Managing video capture options
+- [var videoFormat: ARConfiguration.VideoFormat](./videoformat-swift.property.md)
   Video format of the session output.
-- [class var supportedVideoFormats: [ARConfiguration.VideoFormat]](arconfiguration/supportedvideoformats.md)
+- [class var supportedVideoFormats: [ARConfiguration.VideoFormat]](./supportedvideoformats.md)
   The set of video capture formats available on the current device.
-- [var videoHDRAllowed: Bool](arconfiguration/videohdrallowed.md)
+- [var videoHDRAllowed: Bool](./videohdrallowed.md)
   Enables high dynamic range (HDR) for the session’s camera feed.
-- [class var configurableCaptureDeviceForPrimaryCamera: AVCaptureDevice?](arconfiguration/configurablecapturedeviceforprimarycamera.md)
+- [class var configurableCaptureDeviceForPrimaryCamera: AVCaptureDevice?](./configurablecapturedeviceforprimarycamera.md)
   An object that enables you to alter the appearance of a frame’s captured image.
-- [class var recommendedVideoFormatFor4KResolution: ARConfiguration.VideoFormat?](arconfiguration/recommendedvideoformatfor4kresolution.md)
+- [class var recommendedVideoFormatFor4KResolution: ARConfiguration.VideoFormat?](./recommendedvideoformatfor4kresolution.md)
   Provides a 4K video format if the device and configuration support it.
-- [class var recommendedVideoFormatForHighResolutionFrameCapturing: ARConfiguration.VideoFormat?](arconfiguration/recommendedvideoformatforhighresolutionframecapturing.md)
+- [class var recommendedVideoFormatForHighResolutionFrameCapturing: ARConfiguration.VideoFormat?](./recommendedvideoformatforhighresolutionframecapturing.md)
   Returns a video format that the framework recommends for high-resolution-still-image capture.
 
 

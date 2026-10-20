@@ -1,7 +1,8 @@
 # weakObjects()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new pointer array that maintains weak references to its elements.
 
@@ -20,17 +21,22 @@ Returns a new pointer array that maintains weak references to its elements.
 class func weakObjects() -> NSPointerArray
 ```
 
+```objc
++ (NSPointerArray *) weakObjectsPointerArray;
+```
+
 #### Return Value
 
 A new pointer array that maintains weak references to its elements.
 
 ## See Also
 
-- [init(options: NSPointerFunctions.Options)](nspointerarray/init(options:).md)
+### Creating and Initializing a New Pointer Array
+- [init(options: NSPointerFunctions.Options)](./init%28options%29.md)
   Initializes the receiver to use the given options.
-- [init(pointerFunctions: NSPointerFunctions)](nspointerarray/init(pointerfunctions:).md)
+- [init(pointerFunctions: NSPointerFunctions)](./init%28pointerfunctions%29.md)
   Initializes the receiver to use the given functions.
-- [class func strongObjects() -> NSPointerArray](nspointerarray/strongobjects.md)
+- [class func strongObjects() -> NSPointerArray](./strongobjects%28%29.md)
   Returns a new pointer array that maintains strong references to its elements.
 
 

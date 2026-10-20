@@ -1,7 +1,8 @@
 # position(date:)
 
 **Framework**: OSLog  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a position representing the time specified.
 
@@ -20,15 +21,20 @@ Returns a position representing the time specified.
 func position(date: Date) -> OSLogPosition
 ```
 
+```objc
+- (OSLogPosition *) positionWithDate:(NSDate *) date;
+```
+
 #### Discussion
 
 If there are multiple occurrences of the same time, the method returns the earliest occurrence.
 
 ## See Also
 
-- [func position(timeIntervalSinceEnd: TimeInterval) -> OSLogPosition](oslogstore/position(timeintervalsinceend:).md)
+### Accessing Position
+- [func position(timeIntervalSinceEnd: TimeInterval) -> OSLogPosition](./position%28timeintervalsinceend%29.md)
   Returns a position representing time since the end of the time range that the entries span.
-- [func position(timeIntervalSinceLatestBoot: TimeInterval) -> OSLogPosition](oslogstore/position(timeintervalsincelatestboot:).md)
+- [func position(timeIntervalSinceLatestBoot: TimeInterval) -> OSLogPosition](./position%28timeintervalsincelatestboot%29.md)
   Returns a position representing time since the last boot in the series of entries.
 
 

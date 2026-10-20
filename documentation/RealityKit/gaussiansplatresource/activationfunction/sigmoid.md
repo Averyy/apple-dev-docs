@@ -1,7 +1,8 @@
 # GaussianSplatResource.ActivationFunction.sigmoid
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies a sigmoid function to each value.
 

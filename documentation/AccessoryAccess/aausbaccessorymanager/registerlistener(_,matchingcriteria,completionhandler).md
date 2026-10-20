@@ -1,7 +1,8 @@
 # registerListener(_:matchingCriteria:completionHandler:)
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a USB accessory listener.
 
@@ -11,7 +12,15 @@ Registers a USB accessory listener.
 ## Declaration
 
 ```swift
+func registerListener(_ listener: any AAUSBAccessoryListener, matchingCriteria: [AAUSBAccessoryMatchingCriteria], completionHandler: @escaping @Sendable ([AAUSBAccessory], (any Error)?) -> Void)
+```
+
+```swift
 func registerListener(_ listener: any AAUSBAccessoryListener, matchingCriteria: [AAUSBAccessoryMatchingCriteria]) async throws -> [AAUSBAccessory]
+```
+
+```objc
+- (void) registerListener:(id<AAUSBAccessoryListener>) listener withMatchingCriteria:(NSArray<AAUSBAccessoryMatchingCriteria *> *) matchingCriteria completionHandler:(void (^)(NSArray<AAUSBAccessory *> *, NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -25,12 +34,13 @@ If any accessories matching the criteria are already connected, they are passed 
 ## Parameters
 
 - `listener`: The USB accessory listener.
-- `matchingCriteria`: Matching criteria for filtering USB accessories. [`AAUSBAccessoryManager`](aausbaccessorymanager.md) notifies the listener of USB accessory events if the accessory satisfies any of the [`AAUSBAccessoryMatchingCriteria`](aausbaccessorymatchingcriteria.md)  objects. Passing an empty array matches any USB accessory.
+- `matchingCriteria`: Matching criteria for filtering USB accessories. [`AAUSBAccessoryManager`](../aausbaccessorymanager.md) notifies the listener of USB accessory events if the accessory satisfies any of the [`AAUSBAccessoryMatchingCriteria`](../aausbaccessorymatchingcriteria.md)  objects. Passing an empty array matches any USB accessory.
 - `completionHandler`: The block the framework calls after it successfully registers the listener. The first parameter passed to the block is an array containing accessories that are already connected and match the provided criteria. The array is empty if there are none. The second parameter passed to the block is `nil` if the framework successfully registered the listener. The block the framework invokes is on an arbitrary thread.
 
 ## See Also
 
-- [func unregisterListener(any AAUSBAccessoryListener, completionHandler: () -> Void)](aausbaccessorymanager/unregisterlistener(_:completionhandler:).md)
+### Registering and unregistering listeners
+- [func unregisterListener(any AAUSBAccessoryListener, completionHandler: () -> Void)](./unregisterlistener%28_,completionhandler%29.md)
   Unregister a previously registered listener.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: FinanceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new merchant category code with the provided string value.
 

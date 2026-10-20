@@ -1,7 +1,8 @@
 # has(item:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether `item` appears in any slot of this operation.
 

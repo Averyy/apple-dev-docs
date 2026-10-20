@@ -1,7 +1,8 @@
 # NSAttributedString.TextHighlightStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the type of highlight to apply to text.
 
@@ -22,39 +23,40 @@ struct TextHighlightStyle
 
 #### Overview
 
-Use an [`NSAttributedString.TextHighlightStyle`](nsattributedstring/texthighlightstyle.md) structure as the value of the [`textHighlightStyle`](nsattributedstring/key/texthighlightstyle.md) attribute. That attribute applies a highlight to the text to emphasize it. The highlight contributes a background color and a contrasting foreground color to the text.
+Use an [`NSAttributedString.TextHighlightStyle`](./texthighlightstyle.md) structure as the value of the [`textHighlightStyle`](./key/texthighlightstyle.md) attribute. That attribute applies a highlight to the text to emphasize it. The highlight contributes a background color and a contrasting foreground color to the text.
 
 ## Topics
 
 ### Getting the highlight styles
-- [static let `default`: NSAttributedString.TextHighlightStyle](nsattributedstring/texthighlightstyle/default.md)
+- [static let `default`: NSAttributedString.TextHighlightStyle](./texthighlightstyle/default.md)
   The default highlight style to apply to text.
 ### Creating a highlight style
-- [init(String)](nsattributedstring/texthighlightstyle/init(_:).md)
-- [init(rawValue: String)](nsattributedstring/texthighlightstyle/init(rawvalue:).md)
+- [init(String)](./texthighlightstyle/init%28_%29.md)
+- [init(rawValue: String)](./texthighlightstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAttributedString.Key](nsattributedstring/key.md)
+### Getting text content attributes
+- [NSAttributedString.Key](./key.md)
   The attributes you apply to ranges of characters in an attributed string.
-- [NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme.md)
+- [NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme.md)
   Constants that specify the highlight color to use with the text.
-- [NSAttributedString.TextEffectStyle](nsattributedstring/texteffectstyle.md)
+- [NSAttributedString.TextEffectStyle](./texteffectstyle.md)
   Constants for the type of effect to apply to the text.
-- [NSAttributedString.SpellingState](nsattributedstring/spellingstate.md)
+- [NSAttributedString.SpellingState](./spellingstate.md)
   Constants for the spelling state attribute key.
-- [struct NSUnderlineStyle](../uikit/nsunderlinestyle.md)
+- [struct NSUnderlineStyle](../../UIKit/nsunderlinestyle.md)
   Constants for the underline style and strikethrough style attribute keys.
-- [enum NSWritingDirectionFormatType](../uikit/nswritingdirectionformattype.md)
+- [enum NSWritingDirectionFormatType](../../UIKit/nswritingdirectionformattype.md)
   Constants for the writing direction attribute key.
 
 

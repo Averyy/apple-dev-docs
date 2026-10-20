@@ -1,7 +1,8 @@
 # init(_:withObjCType:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value object containing the specified value, interpreted with the specified Objective-C type.
 
@@ -20,13 +21,17 @@ Creates a value object containing the specified value, interpreted with the spec
 init(_ value: UnsafeRawPointer, withObjCType type: UnsafePointer<CChar>)
 ```
 
+```objc
++ (NSValue *) value:(const void *) value withObjCType:(const char *) type;
+```
+
 #### Return Value
 
 A new value object that contains `value`, which is interpreted as being of the Objective-C type `type`.
 
 #### Discussion
 
-This method has the same effect as [`valueWithBytes:objCType:`](nsvalue/valuewithbytes:objctype:.md) and may be deprecated in a future release. You should use [`valueWithBytes:objCType:`](nsvalue/valuewithbytes:objctype:.md) instead.
+This method has the same effect as [`valueWithBytes:objCType:`](./valuewithbytes_objctype_.md) and may be deprecated in a future release. You should use [`valueWithBytes:objCType:`](./valuewithbytes_objctype_.md) instead.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ This method has the same effect as [`valueWithBytes:objCType:`](nsvalue/valuewit
 
 ## See Also
 
-- [init(bytes: UnsafeRawPointer, objCType: UnsafePointer<CChar>)](nsvalue/init(bytes:objctype:).md)
+### Working with Raw Values
+- [init(bytes: UnsafeRawPointer, objCType: UnsafePointer<CChar>)](./init%28bytes,objctype%29.md)
   Initializes a value object to contain the specified value, interpreted with the specified Objective-C type.
-- [func getValue(UnsafeMutableRawPointer)](nsvalue/getvalue(_:).md)
+- [func getValue(UnsafeMutableRawPointer)](./getvalue%28_%29.md)
   Copies the value into the specified buffer.
-- [var objCType: UnsafePointer<CChar>](nsvalue/objctype.md)
+- [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type of the data contained in the value object.
 
 

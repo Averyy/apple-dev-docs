@@ -1,7 +1,8 @@
 # tableColumnHeaders(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the visibility of a `Table`’s column header views.
 
@@ -39,9 +40,10 @@ Table(article.authors) {
 
 ## See Also
 
-- [struct TableColumnCustomization](tablecolumncustomization.md)
+### Customizing columns
+- [struct TableColumnCustomization](../tablecolumncustomization.md)
   A representation of the state of the columns in a table.
-- [struct TableColumnCustomizationBehavior](tablecolumncustomizationbehavior.md)
+- [struct TableColumnCustomizationBehavior](../tablecolumncustomizationbehavior.md)
   A set of customization behaviors of a column that a table can offer to a user.
 
 

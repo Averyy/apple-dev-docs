@@ -1,7 +1,8 @@
 # vImageCreateCGImageFromBuffer(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a Core Graphics image from a vImage buffer.
 
@@ -20,9 +21,13 @@ Creates a Core Graphics image from a vImage buffer.
 func vImageCreateCGImageFromBuffer(_ buf: UnsafePointer<vImage_Buffer>, _ format: UnsafePointer<vImage_CGImageFormat>, _ callback: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> Void)!, _ userData: UnsafeMutableRawPointer!, _ flags: vImage_Flags, _ error: UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<CGImage>!
 ```
 
+```c
+CGImageRefvImageCreateCGImageFromBuffer(const vImage_Buffer *buf, const vImage_CGImageFormat *format, void (*)(void *, void *)callback, void *userData, vImage_Flags flags, vImage_Error *error);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -113,9 +118,13 @@ CGImageRef destinationCGImage = vImageCreateCGImageFromBuffer(
 
 - `buf`: The source vImage buffer.
 - `format`: The image format of the source vImage buffer. If the format’s color space is `nil`, the function uses sRGB. The new Core Graphics image retains the color space.
-- `callback`: A callback function that deallocates the source buffer’s data when the returned image no longer needs it. Pass this callback when you call this function in no-copy mode; that is, when you pass [`kvImageNoAllocate`](kvimagenoallocate.md) to `flags`. The system may call this function at any time — including before [`vImageCreateCGImageFromBuffer(_:_:_:_:_:_:)`](vimagecreatecgimagefrombuffer(_:_:_:_:_:_:).md) returns — and from any thread.
+- `callback`: A callback function that deallocates the source buffer’s data when the returned image no longer needs it. Pass this callback when you call this function in no-copy mode; that is, when you pass [`kvImageNoAllocate`](./kvimagenoallocate.md) to `flags`. The system may call this function at any time — including before [`vImageCreateCGImageFromBuffer(_:_:_:_:_:_:)`](./vimagecreatecgimagefrombuffer%28_,_,_,_,_,_%29.md) returns — and from any thread.
 - `userData`: The value that passes to the `callback` function’s `userData` parameter.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). Pass [`kvImageNoAllocate`](kvimagenoallocate.md) to specify that the function runs in no-copy mode. In this case, the function passes the ownership of the source vImage buffer’s memory to the returned [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. When you pass this flag, specify the callback function to manage the deallocation of the memory. Pass [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) to specify high-quality resampling if the function resamples the output image to a smaller size.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  Pass [`kvImageNoAllocate`](./kvimagenoallocate.md) to specify that the function runs in no-copy mode. In this case, the function passes the ownership of the source vImage buffer’s memory to the returned [`CGImage`](../CoreGraphics/cgimage.md) instance. When you pass this flag, specify the callback function to manage the deallocation of the memory.
+
+  Pass [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) to specify high-quality resampling if the function resamples the output image to a smaller size.
 
 
 ---

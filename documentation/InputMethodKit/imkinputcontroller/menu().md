@@ -1,7 +1,8 @@
 # menu()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a menu of commands that are specific to an input method.
 
@@ -14,6 +15,10 @@ Returns a menu of commands that are specific to an input method.
 func menu() -> NSMenu!
 ```
 
+```objc
+- (NSMenu *) menu;
+```
+
 #### Return Value
 
 The menu object.
@@ -24,7 +29,8 @@ This method is called whenever the menu needs to be drawn so that an input metho
 
 ## See Also
 
-- [func doCommand(by: Selector!, command: [AnyHashable : Any]!)](imkinputcontroller/docommand(by:command:).md)
+### Working with Custom Commands
+- [func doCommand(by: Selector!, command: [AnyHashable : Any]!)](./docommand%28by,command%29.md)
   Passes commands that are not generated as part of the text input process.
 
 

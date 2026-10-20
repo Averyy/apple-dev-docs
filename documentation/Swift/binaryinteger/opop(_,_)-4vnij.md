@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the result of shifting a value’s binary representation the specified number of digits to the right.
@@ -68,6 +69,14 @@ let s = q >> 11
 
 - `lhs`: The value to shift.
 - `rhs`: The number of bits to shift `lhs` to the right.
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [static func >> <Other>(Self, Other) -> Self](./opop%28_,_%29-6ne6o.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right.
+- [static func >> <RHS>(Self, RHS) -> Self](./opop%28_,_%29-7llmt.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right.
 
 
 ---

@@ -1,7 +1,8 @@
 # CMBufferCallbacks
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that stores the callbacks that perform buffer operations.
 
@@ -20,6 +21,10 @@ A structure that stores the callbacks that perform buffer operations.
 struct CMBufferCallbacks
 ```
 
+```c
+typedef struct { ... } CMBufferCallbacks;
+```
+
 #### Overview
 
 With the exception of `isDataReady`, all these callbacks must always return the same result for the same arguments.
@@ -31,42 +36,43 @@ Durations must always be positive.
 ## Topics
 
 ### Properties
-- [var compare: CMBufferCompareCallback?](cmbuffercallbacks/compare.md)
-  This callback is called multiple times from [`CMBufferQueueEnqueue(_:buffer:)`](cmbufferqueueenqueue(_:buffer:).md), to perform an insertion sort.
-- [typealias CMBufferCompareCallback](cmbuffercomparecallback.md)
+- [var compare: CMBufferCompareCallback?](./cmbuffercallbacks/compare.md)
+  This callback is called multiple times from [`CMBufferQueueEnqueue(_:buffer:)`](./cmbufferqueueenqueue%28_,buffer%29.md), to perform an insertion sort.
+- [typealias CMBufferCompareCallback](./cmbuffercomparecallback.md)
   Callback that compares one `CMBuffer` with another.
-- [typealias CMBufferGetBooleanCallback](cmbuffergetbooleancallback.md)
+- [typealias CMBufferGetBooleanCallback](./cmbuffergetbooleancallback.md)
   Callback that returns a Boolean value from a `CMBuffer`.
-- [typealias CMBufferGetTimeCallback](cmbuffergettimecallback.md)
+- [typealias CMBufferGetTimeCallback](./cmbuffergettimecallback.md)
   Callback that returns a `CMTime` from a `CMBuffer`.
-- [var dataBecameReadyNotification: Unmanaged<CFString>?](cmbuffercallbacks/databecamereadynotification.md)
+- [var dataBecameReadyNotification: Unmanaged<CFString>?](./cmbuffercallbacks/databecamereadynotification.md)
   If triggers of type `kCMBufferQueueTrigger_WhenDataBecomesReady` are installed, the queue will listen for this notification on the head buffer.
-- [var getDecodeTimeStamp: CMBufferGetTimeCallback?](cmbuffercallbacks/getdecodetimestamp.md)
+- [var getDecodeTimeStamp: CMBufferGetTimeCallback?](./cmbuffercallbacks/getdecodetimestamp.md)
   Client callback that returns a `CMTime` from a `CMBuffer`.
-- [var getDuration: CMBufferGetTimeCallback](cmbuffercallbacks/getduration.md)
+- [var getDuration: CMBufferGetTimeCallback](./cmbuffercallbacks/getduration.md)
   This callback is called (once) during enqueue and dequeue operations to update the total duration of the queue.
-- [var getPresentationTimeStamp: CMBufferGetTimeCallback?](cmbuffercallbacks/getpresentationtimestamp.md)
+- [var getPresentationTimeStamp: CMBufferGetTimeCallback?](./cmbuffercallbacks/getpresentationtimestamp.md)
   Client callback that returns a `CMTime` from a `CMBuffer`.
-- [var getSize: CMBufferGetSizeCallback?](cmbuffercallbacks/getsize.md)
-- [var isDataReady: CMBufferGetBooleanCallback?](cmbuffercallbacks/isdataready.md)
-  This callback is called from [`CMBufferQueueDequeueIfDataReady(_:)`](cmbufferqueuedequeueifdataready(_:).md), to ask if the buffer that is about to be dequeued is ready.
-- [var refcon: UnsafeMutableRawPointer?](cmbuffercallbacks/refcon.md)
+- [var getSize: CMBufferGetSizeCallback?](./cmbuffercallbacks/getsize.md)
+- [var isDataReady: CMBufferGetBooleanCallback?](./cmbuffercallbacks/isdataready.md)
+  This callback is called from [`CMBufferQueueDequeueIfDataReady(_:)`](./cmbufferqueuedequeueifdataready%28_%29.md), to ask if the buffer that is about to be dequeued is ready.
+- [var refcon: UnsafeMutableRawPointer?](./cmbuffercallbacks/refcon.md)
   Contextual data to be passed to all callbacks.
-- [var version: UInt32](cmbuffercallbacks/version.md)
+- [var version: UInt32](./cmbuffercallbacks/version.md)
   The callback version.
 ### Initializers
-- [init(version: UInt32, refcon: UnsafeMutableRawPointer?, getDecodeTimeStamp: CMBufferGetTimeCallback?, getPresentationTimeStamp: CMBufferGetTimeCallback?, getDuration: CMBufferGetTimeCallback, isDataReady: CMBufferGetBooleanCallback?, compare: CMBufferCompareCallback?, dataBecameReadyNotification: Unmanaged<CFString>?, getSize: CMBufferGetSizeCallback?)](cmbuffercallbacks/init(version:refcon:getdecodetimestamp:getpresentationtimestamp:getduration:isdataready:compare:databecamereadynotification:getsize:).md)
+- [init(version: UInt32, refcon: UnsafeMutableRawPointer?, getDecodeTimeStamp: CMBufferGetTimeCallback?, getPresentationTimeStamp: CMBufferGetTimeCallback?, getDuration: CMBufferGetTimeCallback, isDataReady: CMBufferGetBooleanCallback?, compare: CMBufferCompareCallback?, dataBecameReadyNotification: Unmanaged<CFString>?, getSize: CMBufferGetSizeCallback?)](./cmbuffercallbacks/init%28version,refcon,getdecodetimestamp,getpresentationtimestamp,getduration,isdataready,compare,databecamereadynotification,getsize%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func CMBufferQueueCreateWithHandlers(CFAllocator?, CMItemCount, OpaquePointer, UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](cmbufferqueuecreatewithhandlers(_:_:_:_:).md)
+### Creating a Queue
+- [func CMBufferQueueCreateWithHandlers(CFAllocator?, CMItemCount, OpaquePointer, UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](./cmbufferqueuecreatewithhandlers%28_,_,_,_%29.md)
   Creates a buffer queue with handlers to inspect buffers.
-- [func CMBufferQueueCreate(allocator: CFAllocator?, capacity: CMItemCount, callbacks: UnsafePointer<CMBufferCallbacks>, queueOut: UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](cmbufferqueuecreate(allocator:capacity:callbacks:queueout:).md)
+- [func CMBufferQueueCreate(allocator: CFAllocator?, capacity: CMItemCount, callbacks: UnsafePointer<CMBufferCallbacks>, queueOut: UnsafeMutablePointer<CMBufferQueue?>) -> OSStatus](./cmbufferqueuecreate%28allocator,capacity,callbacks,queueout%29.md)
   Creates a buffer queue with callbacks to inspect buffers.
 
 

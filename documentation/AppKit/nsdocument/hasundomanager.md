@@ -1,12 +1,13 @@
 # hasUndoManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the document owns an undo manager object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the document owns an undo manager object.
 var hasUndoManager: Bool { get set }
 ```
 
+```objc
+@property BOOL hasUndoManager;
+```
+
 #### Discussion
 
-If you change the value of this property to NO and the document already owns an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object, the document removes the undo manager as an observer of undo-related notifications and then removes its reference to the object.
+If you change the value of this property to NO and the document already owns an [`UndoManager`](../../Foundation/undomanager.md) object, the document removes the undo manager as an observer of undo-related notifications and then removes its reference to the object.
 
 ## See Also
 
-- [var undoManager: UndoManager?](nsdocument/undomanager.md)
+### Managing Undo and Redo Actions
+- [var undoManager: UndoManager?](./undomanager.md)
   The object that the document uses to support undo/redo operations.
 
 

@@ -1,7 +1,8 @@
 # protocolNotAvailable
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Protocol not available.
 
@@ -22,7 +23,7 @@ static var protocolNotAvailable: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,13 +33,14 @@ The corresponding C error is `ENOPROTOOPT`.
 
 ## See Also
 
-- [static var protocolError: Errno](errno/protocolerror.md)
+### Network Protocol Errors
+- [static var protocolError: Errno](./protocolerror.md)
   Protocol error.
-- [static var protocolFamilyNotSupported: Errno](errno/protocolfamilynotsupported.md)
+- [static var protocolFamilyNotSupported: Errno](./protocolfamilynotsupported.md)
   Protocol family not supported.
-- [static var protocolNotSupported: Errno](errno/protocolnotsupported.md)
+- [static var protocolNotSupported: Errno](./protocolnotsupported.md)
   Protocol not supported.
-- [static var protocolWrongTypeForSocket: Errno](errno/protocolwrongtypeforsocket.md)
+- [static var protocolWrongTypeForSocket: Errno](./protocolwrongtypeforsocket.md)
   Protocol wrong for socket type.
 
 

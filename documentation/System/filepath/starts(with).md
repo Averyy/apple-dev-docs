@@ -1,7 +1,8 @@
 # starts(with:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether `other` is a prefix of `self`, only considering whole path components.
 

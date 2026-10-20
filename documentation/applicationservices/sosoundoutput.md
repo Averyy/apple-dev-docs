@@ -1,12 +1,15 @@
 # soSoundOutput
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get or set the speech channel’s current outputchannel.
 
 **Availability**:
 - macOS 10.0+
+
+> **Deprecated**: Use [`soOutputToFileWithCFURL`](./sooutputtofilewithcfurl.md) instead.
 
 ## Declaration
 

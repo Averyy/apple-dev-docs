@@ -1,7 +1,8 @@
 # someCount
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of non-missing elements in the column.
 
@@ -22,15 +23,16 @@ var someCount: Int
 
 ## See Also
 
-- [var debugDescription: String](categoricalsummary/debugdescription.md)
+### Inspecting a Summary
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
-- [var mode: [Element]](categoricalsummary/mode.md)
+- [var mode: [Element]](./mode.md)
   The most common values in a column, ignoring missing elements.
-- [var uniqueCount: Int](categoricalsummary/uniquecount.md)
+- [var uniqueCount: Int](./uniquecount.md)
   The number of elements with distinct values in a column that excludes missing elements.
-- [var noneCount: Int](categoricalsummary/nonecount.md)
+- [var noneCount: Int](./nonecount.md)
   The number of missing elements in the column.
-- [var totalCount: Int](categoricalsummary/totalcount.md)
+- [var totalCount: Int](./totalcount.md)
   The total number of elements in the column.
 
 

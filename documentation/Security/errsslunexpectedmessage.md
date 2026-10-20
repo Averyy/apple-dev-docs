@@ -1,7 +1,8 @@
 # errSSLUnexpectedMessage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Peer rejected unexpected message.
 
@@ -18,6 +19,10 @@ Peer rejected unexpected message.
 
 ```swift
 var errSSLUnexpectedMessage: OSStatus { get }
+```
+
+```c
+errSSLUnexpectedMessage
 ```
 
 

@@ -1,7 +1,8 @@
 # rssi
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The received signal strength of the beacon, measured in decibels.
 
@@ -17,6 +18,10 @@ The received signal strength of the beacon, measured in decibels.
 var rssi: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger rssi;
+```
+
 #### Discussion
 
 This value is the average signal strength of the samples received since Core Location last reported the range of the beacon to your app.
@@ -25,11 +30,12 @@ Use this value for calibrating beacon transmission power.
 
 ## See Also
 
-- [var proximity: CLProximity](clbeacon/proximity.md)
+### Determining the distance to the beacon
+- [var proximity: CLProximity](./proximity.md)
   The relative distance to the beacon.
-- [enum CLProximity](clproximity.md)
+- [enum CLProximity](../clproximity.md)
   Constants that reflect the relative distance to a beacon.
-- [var accuracy: CLLocationAccuracy](clbeacon/accuracy.md)
+- [var accuracy: CLLocationAccuracy](./accuracy.md)
   The accuracy of the proximity value, measured in meters from the beacon.
 
 

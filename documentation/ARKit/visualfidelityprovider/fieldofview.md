@@ -1,7 +1,8 @@
 # VisualFidelityProvider.FieldOfView
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A field of view (FoV) specification.
 
@@ -21,31 +22,31 @@ The preset FoVs are the recommended specification method for most applications. 
 ## Topics
 
 ### Instance Properties
-- [var description: String](visualfidelityprovider/fieldofview/description.md)
+- [var description: String](./fieldofview/description.md)
   A textual representation of the field of view.
-- [var isValid: Bool](visualfidelityprovider/fieldofview/isvalid.md)
+- [var isValid: Bool](./fieldofview/isvalid.md)
   Validates whether this field of view specification is valid.
 ### Type Properties
-- [static let presetA: VisualFidelityProvider.FieldOfView](visualfidelityprovider/fieldofview/preseta.md)
+- [static let presetA: VisualFidelityProvider.FieldOfView](./fieldofview/preseta.md)
   Preset field of view A.
-- [static let presetB: VisualFidelityProvider.FieldOfView](visualfidelityprovider/fieldofview/presetb.md)
+- [static let presetB: VisualFidelityProvider.FieldOfView](./fieldofview/presetb.md)
   Preset field of view B.
-- [static let presetC: VisualFidelityProvider.FieldOfView](visualfidelityprovider/fieldofview/presetc.md)
+- [static let presetC: VisualFidelityProvider.FieldOfView](./fieldofview/presetc.md)
   Preset field of view C.
-- [static let presetD: VisualFidelityProvider.FieldOfView](visualfidelityprovider/fieldofview/presetd.md)
+- [static let presetD: VisualFidelityProvider.FieldOfView](./fieldofview/presetd.md)
   Preset field of view D.
 ### Type Methods
-- [static func polygon(points: [simd_float2]) -> VisualFidelityProvider.FieldOfView](visualfidelityprovider/fieldofview/polygon(points:).md)
+- [static func polygon(points: [simd_float2]) -> VisualFidelityProvider.FieldOfView](./fieldofview/polygon%28points%29.md)
   Creates a polygon-based field of view.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

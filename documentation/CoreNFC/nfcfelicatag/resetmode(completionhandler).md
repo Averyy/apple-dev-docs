@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the Reset Mode command, as defined by the FeliCa card specification, to the tag.
@@ -14,7 +15,15 @@ Sends the Reset Mode command, as defined by the FeliCa card specification, to th
 ## Declaration
 
 ```swift
+func resetMode(completionHandler: @escaping @Sendable (Int, Int, (any Error)?) -> Void)
+```
+
+```swift
 func resetMode() async throws -> (Int, Int)
+```
+
+```objc
+- (void) resetModeWithCompletionHandler:(void (^)(NSInteger statusFlag1, NSInteger statusFlag2, NSError *error)) completionHandler;
 ```
 
 

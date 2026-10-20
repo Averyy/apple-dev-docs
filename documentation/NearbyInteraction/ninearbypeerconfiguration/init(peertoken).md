@@ -1,7 +1,8 @@
 # init(peerToken:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for interaction between devices, including iPhone and Apple Watch.
 
@@ -17,13 +18,17 @@ Creates a configuration for interaction between devices, including iPhone and Ap
 init(peerToken: NIDiscoveryToken)
 ```
 
+```objc
+- (instancetype) initWithPeerToken:(NIDiscoveryToken *) peerToken;
+```
+
 ## Mentions
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 #### Discussion
 
-To acquire a peer’s discovery token, two instantiations of the app exchange their respective [`discoveryToken`](nisession/discoverytoken.md) over the network using a method you choose. For a discussion that covers sharing discovery tokens using [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity), see [`Discovering peers with Multipeer Connectivity`](discovering-peers-with-multipeer-connectivity.md).
+To acquire a peer’s discovery token, two instantiations of the app exchange their respective [`discoveryToken`](../nisession/discoverytoken.md) over the network using a method you choose. For a discussion that covers sharing discovery tokens using [Multipeer Connectivity](../../MultipeerConnectivity/MultipeerConnectivity.md), see [Discovering peers with Multipeer Connectivity](../discovering-peers-with-multipeer-connectivity.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
@@ -15,7 +16,8 @@
 
 ## See Also
 
-- [var rootView: Content](nshostingcontroller/rootview.md)
+### Getting the root view
+- [var rootView: Content](./rootview.md)
   The root view of the SwiftUI view hierarchy managed by this view controller.
 
 

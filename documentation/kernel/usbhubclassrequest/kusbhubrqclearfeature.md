@@ -1,7 +1,8 @@
 # kUSBHubRqClearFeature
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A request to clear a feature.
 
@@ -10,7 +11,7 @@ A request to clear a feature.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqClearFeature = 1
 ```
 

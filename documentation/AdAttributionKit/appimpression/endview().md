@@ -1,7 +1,8 @@
 # endView()
 
 **Framework**: AdAttributionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the view-through impression when the ad content corresponding to the impression disappears.
 
@@ -33,9 +34,10 @@ End the view-through impression, as the following example shows:
 
 ## See Also
 
-- [func beginView() async throws](appimpression/beginview.md)
+### Displaying view-through ads
+- [func beginView() async throws](./beginview%28%29.md)
   Begins recording a view-through impression when ad content corresponding to the impression becomes visible.
-- [func handleView() async throws](appimpression/handleview.md)
+- [func handleView() async throws](./handleview%28%29.md)
   Handles a view through ad impression.
 
 

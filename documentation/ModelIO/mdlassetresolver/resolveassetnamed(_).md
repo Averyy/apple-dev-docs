@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func resolveAssetNamed(_ name: String) -> URL
+```
+
+```objc
+- (NSURL *) resolveAssetNamed:(NSString *) name;
 ```
 
 

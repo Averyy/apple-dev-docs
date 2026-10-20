@@ -1,7 +1,8 @@
 # errSecCSReqUnsupported
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unsupported type or version of code requirements.
 
@@ -13,6 +14,10 @@ Unsupported type or version of code requirements.
 
 ```swift
 var errSecCSReqUnsupported: OSStatus { get }
+```
+
+```c
+errSecCSReqUnsupported
 ```
 
 

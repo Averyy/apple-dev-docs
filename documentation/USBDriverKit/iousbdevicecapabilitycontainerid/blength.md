@@ -1,23 +1,25 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdevicecapabilitycontainerid/bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilitycontainerid/bdevcapabilitytype.md)
-- [bReservedID](iousbdevicecapabilitycontainerid/breservedid.md)
-- [containerID](iousbdevicecapabilitycontainerid/containerid.md)
+### Accessing the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [bReservedID](./breservedid.md)
+- [containerID](./containerid.md)
 
 
 ---

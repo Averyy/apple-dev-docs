@@ -1,7 +1,8 @@
 # DockAccessory.TrackedSubjectType
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The subjects that the dock can track.
 
@@ -20,17 +21,17 @@ enum TrackedSubjectType
 ## Topics
 
 ### Enumeration Cases
-- [DockAccessory.TrackedSubjectType.object(_:)](dockaccessory/trackedsubjecttype/object(_:).md)
+- [DockAccessory.TrackedSubjectType.object(_:)](./trackedsubjecttype/object%28_%29.md)
   Tracked subject contains an object.
-- [DockAccessory.TrackedSubjectType.person(_:)](dockaccessory/trackedsubjecttype/person(_:).md)
+- [DockAccessory.TrackedSubjectType.person(_:)](./trackedsubjecttype/person%28_%29.md)
   Tracked subject contains a person.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

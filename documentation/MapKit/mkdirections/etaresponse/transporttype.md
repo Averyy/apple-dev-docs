@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of conveyance to use for determining the travel time.
 
@@ -20,19 +21,24 @@ The type of conveyance to use for determining the travel time.
 var transportType: MKDirectionsTransportType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKDirectionsTransportType transportType;
+```
+
 #### Discussion
 
-You specify the desired transportation type in your [`MKDirections.Request`](mkdirections/request.md) object. If you specified [`any`](mkdirectionstransporttype/any.md), this property contains the transportation type used to generate the estimated information.
+You specify the desired transportation type in your [`MKDirections.Request`](../request.md) object. If you specified [`any`](../../mkdirectionstransporttype/any.md), this property contains the transportation type used to generate the estimated information.
 
 ## See Also
 
-- [var expectedTravelTime: TimeInterval](mkdirections/etaresponse/expectedtraveltime.md)
+### Getting the travel information
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var expectedDepartureDate: Date](mkdirections/etaresponse/expecteddeparturedate.md)
+- [var expectedDepartureDate: Date](./expecteddeparturedate.md)
   The expected departure time.
-- [var expectedArrivalDate: Date](mkdirections/etaresponse/expectedarrivaldate.md)
+- [var expectedArrivalDate: Date](./expectedarrivaldate.md)
   The expected arrival time.
-- [var distance: CLLocationDistance](mkdirections/etaresponse/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The expected travel distance, in meters.
 
 

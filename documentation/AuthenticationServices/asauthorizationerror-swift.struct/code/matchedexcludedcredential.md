@@ -1,7 +1,8 @@
 # ASAuthorizationError.Code.matchedExcludedCredential
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error should only be returned when specifying @c excludedCredentials on a public key credential registration request.
 
@@ -18,6 +19,10 @@ This error should only be returned when specifying @c excludedCredentials on a p
 
 ```swift
 case matchedExcludedCredential
+```
+
+```c
+ASAuthorizationErrorMatchedExcludedCredential
 ```
 
 

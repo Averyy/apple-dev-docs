@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.MessageChannel.ChannelStatus.closed
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message channel is closed and can no longer send or receive messages.
 

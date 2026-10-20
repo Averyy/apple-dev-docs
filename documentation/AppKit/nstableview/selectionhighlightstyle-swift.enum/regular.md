@@ -1,10 +1,11 @@
 # NSTableView.SelectionHighlightStyle.regular
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 case regular
 ```
 
+```c
+NSTableViewSelectionHighlightStyleRegular
+```
+
 #### Discussion
 
-The regular highlight style of NSTableView. In OS X v10.7 a light blue (returned by sending `NSColor` a [`alternateSelectedControlColor`](nscolor/alternateselectedcontrolcolor.md) message) or light gray color (returned by sending NSColor a [`secondarySelectedControlColor`](nscolor/secondaryselectedcontrolcolor.md) message).
+The regular highlight style of NSTableView. In OS X v10.7 a light blue (returned by sending `NSColor` a [`alternateSelectedControlColor`](../../nscolor/alternateselectedcontrolcolor.md) message) or light gray color (returned by sending NSColor a [`secondarySelectedControlColor`](../../nscolor/secondaryselectedcontrolcolor.md) message).
 
 ## See Also
 
-- [NSTableView.SelectionHighlightStyle.none](nstableview/selectionhighlightstyle-swift.enum/none.md)
-- [NSTableView.SelectionHighlightStyle.sourceList](nstableview/selectionhighlightstyle-swift.enum/sourcelist.md)
+### Constants
+- [NSTableView.SelectionHighlightStyle.none](./none.md)
+- [NSTableView.SelectionHighlightStyle.sourceList](./sourcelist.md)
 
 
 ---

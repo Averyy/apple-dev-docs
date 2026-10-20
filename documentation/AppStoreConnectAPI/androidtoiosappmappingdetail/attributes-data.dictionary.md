@@ -1,7 +1,8 @@
 # AndroidToIosAppMappingDetail.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an Android to iOS app mapping detail resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an Android to iOS app mapping detail resource.
 
 ## Declaration
 
-```swift
+```
 object AndroidToIosAppMappingDetail.Attributes
 ```
 

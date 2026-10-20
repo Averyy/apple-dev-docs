@@ -1,12 +1,15 @@
 # shouldCloseWithWindow
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the web view should close when its window or host window closes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A Boolean that indicates whether the web view should close when its window or ho
 var shouldCloseWithWindow: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldCloseWithWindow;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the web view should close; otherwise, it should not.
+If [`true`](../../Swift/true.md), the web view should close; otherwise, it should not.
 
 ## See Also
 
-- [func close()](webview-swift.class/close.md)
+### Closing the View
+- [func close()](./close%28%29.md)
   Closes the web view when it’s no longer needed.
 
 

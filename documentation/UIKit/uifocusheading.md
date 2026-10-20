@@ -1,7 +1,8 @@
 # UIFocusHeading
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The general type of an event.
 
@@ -18,52 +19,57 @@ The general type of an event.
 struct UIFocusHeading
 ```
 
+```c
+enum UIFocusHeading : NSUInteger;
+```
+
 #### Overview
 
-You obtain the direction of the focus from the [`focusHeading`](uifocusupdatecontext/focusheading.md) property.
+You obtain the direction of the focus from the [`focusHeading`](./uifocusupdatecontext/focusheading.md) property.
 
 ## Topics
 
 ### Constants
-- [static var up: UIFocusHeading](uifocusheading/up.md)
+- [static var up: UIFocusHeading](./uifocusheading/up.md)
   The focus update is heading in the up direction.
-- [static var down: UIFocusHeading](uifocusheading/down.md)
+- [static var down: UIFocusHeading](./uifocusheading/down.md)
   The focus update is heading in the down direction.
-- [static var left: UIFocusHeading](uifocusheading/left.md)
+- [static var left: UIFocusHeading](./uifocusheading/left.md)
   The focus update is heading in the left direction.
-- [static var right: UIFocusHeading](uifocusheading/right.md)
+- [static var right: UIFocusHeading](./uifocusheading/right.md)
   The focus update is heading in the right direction.
-- [static var next: UIFocusHeading](uifocusheading/next.md)
+- [static var next: UIFocusHeading](./uifocusheading/next.md)
   The focus update is heading to the next item.
-- [static var previous: UIFocusHeading](uifocusheading/previous.md)
+- [static var previous: UIFocusHeading](./uifocusheading/previous.md)
   The focus update is heading to the previous item.
-- [static var first: UIFocusHeading](uifocusheading/first.md)
+- [static var first: UIFocusHeading](./uifocusheading/first.md)
   The focus update is heading to the first item.
-- [static var last: UIFocusHeading](uifocusheading/last.md)
+- [static var last: UIFocusHeading](./uifocusheading/last.md)
   The focus update is heading to the last item.
 ### Initializers
-- [init(rawValue: UInt)](uifocusheading/init(rawvalue:).md)
+- [init(rawValue: UInt)](./uifocusheading/init%28rawvalue%29.md)
   Creates a focus heading structure with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var previouslyFocusedView: UIView?](uifocusupdatecontext/previouslyfocusedview.md)
+### Locating focus direction
+- [var previouslyFocusedView: UIView?](./uifocusupdatecontext/previouslyfocusedview.md)
   The view that was focused before the focus update.
-- [var nextFocusedView: UIView?](uifocusupdatecontext/nextfocusedview.md)
+- [var nextFocusedView: UIView?](./uifocusupdatecontext/nextfocusedview.md)
   The view that takes the focus after the focus update.
-- [var focusHeading: UIFocusHeading](uifocusupdatecontext/focusheading.md)
+- [var focusHeading: UIFocusHeading](./uifocusupdatecontext/focusheading.md)
   The heading in which the focus update is occurring.
 
 

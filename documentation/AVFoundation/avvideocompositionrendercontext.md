@@ -1,7 +1,8 @@
 # AVVideoCompositionRenderContext
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the context in which custom compositors render pixel buffers.
 
@@ -19,6 +20,10 @@ An object that defines the context in which custom compositors render pixel buff
 class AVVideoCompositionRenderContext
 ```
 
+```objc
+@interface AVVideoCompositionRenderContext : NSObject
+```
+
 #### Overview
 
 A render context provides size and scaling information and offers a service for efficiently providing pixel buffers from a managed pool of buffers.
@@ -26,48 +31,49 @@ A render context provides size and scaling information and offers a service for 
 ## Topics
 
 ### Creating the pixel buffer
-- [func newPixelBuffer() -> CVPixelBuffer?](avvideocompositionrendercontext/newpixelbuffer.md)
+- [func newPixelBuffer() -> CVPixelBuffer?](./avvideocompositionrendercontext/newpixelbuffer%28%29.md)
   Returns a pixel buffer to use for rendering.
-- [func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer](avvideocompositionrendercontext/makemutablepixelbuffer.md)
+- [func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer](./avvideocompositionrendercontext/makemutablepixelbuffer%28%29.md)
   Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVImageBufferCleanApertureKey and kCVImageBufferPixelAspectRatioKey attachments set to match the current composition processor properties.
 ### Getting the render settings
-- [var videoComposition: AVVideoComposition](avvideocompositionrendercontext/videocomposition.md)
+- [var videoComposition: AVVideoComposition](./avvideocompositionrendercontext/videocomposition.md)
   The video composition being rendered.
-- [var highQualityRendering: Bool](avvideocompositionrendercontext/highqualityrendering.md)
+- [var highQualityRendering: Bool](./avvideocompositionrendercontext/highqualityrendering.md)
   The rendering quality to use.
-- [var renderScale: Float](avvideocompositionrendercontext/renderscale.md)
+- [var renderScale: Float](./avvideocompositionrendercontext/renderscale.md)
   A scaling ratio that is applied when rendering frames.
-- [var renderTransform: CGAffineTransform](avvideocompositionrendercontext/rendertransform.md)
+- [var renderTransform: CGAffineTransform](./avvideocompositionrendercontext/rendertransform.md)
   A transform to apply to the source image.
-- [var size: CGSize](avvideocompositionrendercontext/size.md)
+- [var size: CGSize](./avvideocompositionrendercontext/size.md)
   The width and height for the rendering frames.
 ### Getting pixel and edge width information
-- [var edgeWidths: AVEdgeWidths](avvideocompositionrendercontext/edgewidths.md)
+- [var edgeWidths: AVEdgeWidths](./avvideocompositionrendercontext/edgewidths.md)
   The width of the edge processing region on the left, top, right, and bottom edges, in pixels.
-- [struct AVEdgeWidths](avedgewidths.md)
+- [struct AVEdgeWidths](./avedgewidths.md)
   A structure that defines edge processing region widths.
-- [var pixelAspectRatio: AVPixelAspectRatio](avvideocompositionrendercontext/pixelaspectratio.md)
+- [var pixelAspectRatio: AVPixelAspectRatio](./avvideocompositionrendercontext/pixelaspectratio.md)
   The pixel aspect ratio for rendered frames.
-- [struct AVPixelAspectRatio](avpixelaspectratio.md)
+- [struct AVPixelAspectRatio](./avpixelaspectratio.md)
   A structure that defines a pixel aspect ratio for a rendering context.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func renderContextChanged(AVVideoCompositionRenderContext)](avvideocompositing/rendercontextchanged(_:).md)
+### Observing render context changes
+- [func renderContextChanged(AVVideoCompositionRenderContext)](./avvideocompositing/rendercontextchanged%28_%29.md)
   Tells the compositor that the composition changed render contexts.
 
 

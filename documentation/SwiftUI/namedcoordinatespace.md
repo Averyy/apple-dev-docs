@@ -1,7 +1,8 @@
 # NamedCoordinateSpace
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A named coordinate space.
 
@@ -27,14 +28,15 @@ Use the `coordinateSpace(_:)` modifier to assign a name to the local coordinate 
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpaceProtocol](coordinatespaceprotocol.md)
-- [Equatable](../swift/equatable.md)
+- [CoordinateSpaceProtocol](./coordinatespaceprotocol.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct GlobalCoordinateSpace](globalcoordinatespace.md)
+### Supporting types
+- [struct GlobalCoordinateSpace](./globalcoordinatespace.md)
   The global coordinate space at the root of the view hierarchy.
-- [struct LocalCoordinateSpace](localcoordinatespace.md)
+- [struct LocalCoordinateSpace](./localcoordinatespace.md)
   The local coordinate space of the current view.
 
 

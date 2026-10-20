@@ -1,7 +1,8 @@
 # maxIterations
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,21 +20,22 @@ var maxIterations: Int
 
 ## See Also
 
-- [var validationData: MLDataTable?](mlboostedtreeclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var maxDepth: Int](mlboostedtreeclassifier/modelparameters-swift.struct/maxdepth.md)
-- [var minLossReduction: Double](mlboostedtreeclassifier/modelparameters-swift.struct/minlossreduction.md)
-- [var minChildWeight: Double](mlboostedtreeclassifier/modelparameters-swift.struct/minchildweight.md)
-- [var randomSeed: Int](mlboostedtreeclassifier/modelparameters-swift.struct/randomseed.md)
-- [var stepSize: Double](mlboostedtreeclassifier/modelparameters-swift.struct/stepsize.md)
+- [var maxDepth: Int](./maxdepth.md)
+- [var minLossReduction: Double](./minlossreduction.md)
+- [var minChildWeight: Double](./minchildweight.md)
+- [var randomSeed: Int](./randomseed.md)
+- [var stepSize: Double](./stepsize.md)
   Must be in the range (0, 1).
-- [var earlyStoppingRounds: Int?](mlboostedtreeclassifier/modelparameters-swift.struct/earlystoppingrounds.md)
+- [var earlyStoppingRounds: Int?](./earlystoppingrounds.md)
   Validation data must be specified for an early stop.
-- [var rowSubsample: Double](mlboostedtreeclassifier/modelparameters-swift.struct/rowsubsample.md)
+- [var rowSubsample: Double](./rowsubsample.md)
   Must be in the range (0, 1).
-- [var columnSubsample: Double](mlboostedtreeclassifier/modelparameters-swift.struct/columnsubsample.md)
+- [var columnSubsample: Double](./columnsubsample.md)
   Must be in the range (0, 1).
-- [var validation: MLBoostedTreeClassifier.ModelParameters.ValidationData](mlboostedtreeclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLBoostedTreeClassifier.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

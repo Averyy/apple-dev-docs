@@ -1,7 +1,8 @@
 # kSecAttrAccessGroupToken
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access group containing items provided by external tokens.
 
@@ -20,9 +21,13 @@ The access group containing items provided by external tokens.
 let kSecAttrAccessGroupToken: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrAccessGroupToken;
+```
+
 #### Discussion
 
-Use this access group identifier as the value for the [`kSecAttrAccessGroup`](ksecattraccessgroup.md) attribute in a keychain query to access external tokens such as smart cards. Access to this group is granted by default and does not require an explicit entry in your app’s [`Keychain Access Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/keychain-access-groups).
+Use this access group identifier as the value for the [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) attribute in a keychain query to access external tokens such as smart cards. Access to this group is granted by default and does not require an explicit entry in your app’s [`Keychain Access Groups Entitlement`](../BundleResources/entitlements/keychain-access-groups.md).
 
 
 ---

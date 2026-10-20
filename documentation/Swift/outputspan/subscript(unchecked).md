@@ -1,7 +1,8 @@
 # subscript(unchecked:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified index.
 
@@ -24,7 +25,7 @@ subscript(unchecked index: OutputSpan<Element>.Index) -> Element { borrow mutate
 
 This subscript does not validate `index`; this is an unsafe operation.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

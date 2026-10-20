@@ -1,14 +1,15 @@
 # setBufferConstraints
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn setBufferConstraints(UInt64 maxSegmentSize, UInt32 alignment, UInt32 options);
 ```
 

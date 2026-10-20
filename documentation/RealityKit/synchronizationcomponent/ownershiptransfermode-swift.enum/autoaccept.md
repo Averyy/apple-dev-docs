@@ -1,7 +1,8 @@
 # SynchronizationComponent.OwnershipTransferMode.autoAccept
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Grant ownership requests automatically.
 
@@ -11,7 +12,7 @@ Grant ownership requests automatically.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ case autoAccept
 
 ## See Also
 
-- [SynchronizationComponent.OwnershipTransferMode.manual](synchronizationcomponent/ownershiptransfermode-swift.enum/manual.md)
+### Ownership transfer modes
+- [SynchronizationComponent.OwnershipTransferMode.manual](./manual.md)
   Require explicit ownership request confirmation.
 
 

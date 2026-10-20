@@ -1,7 +1,8 @@
 # slices(from:duration:stride:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence of signatures of the specified duration from a starting value, stepping by the stride.
 
@@ -26,7 +27,7 @@ A sequence from `start` of `duration` length. Each value in the sequence is sepa
 
 #### Discussion
 
-When you recognize audio with [`match(_:)`](shsession/match(_:).md),  signature duration should be between [`minimumQuerySignatureDuration`](shcatalog/minimumquerysignatureduration.md) and [`maximumQuerySignatureDuration`](shcatalog/maximumquerysignatureduration.md).  Use this method to slice signatures longer than the maximum duration.
+When you recognize audio with [`match(_:)`](../shsession/match%28_%29.md),  signature duration should be between [`minimumQuerySignatureDuration`](../shcatalog/minimumquerysignatureduration.md) and [`maximumQuerySignatureDuration`](../shcatalog/maximumquerysignatureduration.md).  Use this method to slice signatures longer than the maximum duration.
 
 Slicing allows you to test specific parts of the audio. If you know certain parts of an audio are clearer or more likely to have recognizable content, prioritize matching those slices.
 
@@ -42,11 +43,11 @@ for try await slice in slices.prefix(3) {
 }
 ```
 
-You can use AsyncSequence operators like [`prefix(_:)`](https://developer.apple.com/documentation/swift/asyncsequence/prefix(_:)) or [`first(where:)`](https://developer.apple.com/documentation/swift/asyncsequence/first(where:)) to choose which slices are processed.
+You can use AsyncSequence operators like [`prefix(_:)`](../../Swift/asyncsequence/prefix%28_%29.md) or [`first(where:)`](../../Swift/asyncsequence/first%28where%29.md) to choose which slices are processed.
 
 The `stride` parameter controls overlap between slices. A smaller stride creates more slices with greater overlap, which increases the number of matching requests. Larger strides create fewer slices, however there are fewer matching requests.
 
-For continuous matching as audio becomes available, use [`matchStreamingBuffer(_:at:)`](shsession/matchstreamingbuffer(_:at:).md), which automatically generates and matches signatures from audio buffers.
+For continuous matching as audio becomes available, use [`matchStreamingBuffer(_:at:)`](../shsession/matchstreamingbuffer%28_,at%29.md), which automatically generates and matches signatures from audio buffers.
 
 ## Parameters
 
@@ -56,7 +57,8 @@ For continuous matching as audio becomes available, use [`matchStreamingBuffer(_
 
 ## See Also
 
-- [SHSignature.Slices](shsignature/slices.md)
+### Slicing signature segments
+- [SHSignature.Slices](./slices.md)
   A sequence of signature segments.
 
 

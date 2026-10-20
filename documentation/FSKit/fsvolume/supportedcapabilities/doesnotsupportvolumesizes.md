@@ -1,7 +1,8 @@
 # doesNotSupportVolumeSizes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates the volume doesn’t support certain volume size reports.
 
@@ -14,15 +15,20 @@ A Boolean property that indicates the volume doesn’t support certain volume si
 var doesNotSupportVolumeSizes: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL doesNotSupportVolumeSizes;
+```
+
 #### Discussion
 
 A true value means the volume doesn’t support determining values for total data blocks, available blocks, or free blocks, as in `f_blocks`, `f_bavail`, and `f_bfree` in the struct `statFS` returned by `statfs(2)`.
 
 ## See Also
 
-- [var supportsSharedSpace: Bool](fsvolume/supportedcapabilities/supportssharedspace.md)
+### Declaring volume capabilities
+- [var supportsSharedSpace: Bool](./supportssharedspace.md)
   A Boolean property that indicates whether the volume supports multiple logical file systems that share space in a single “partition.”
-- [var supportsVolumeGroups: Bool](fsvolume/supportedcapabilities/supportsvolumegroups.md)
+- [var supportsVolumeGroups: Bool](./supportsvolumegroups.md)
   A Boolean property that indicates whether the volume supports volume groups.
 
 

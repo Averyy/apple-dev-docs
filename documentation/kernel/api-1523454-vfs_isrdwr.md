@@ -1,7 +1,8 @@
 # vfs_isrdwr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a filesystem is mounted with writes enabled.
 
@@ -10,11 +11,11 @@ Determine if a filesystem is mounted with writes enabled.
 
 ## Declaration
 
-```swift
+```c
 int vfs_isrdwr(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if filesystem is mounted read-write, else 0.
 

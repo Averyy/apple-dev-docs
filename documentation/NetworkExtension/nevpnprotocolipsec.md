@@ -1,7 +1,8 @@
 # NEVPNProtocolIPSec
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Settings for an IPsec VPN configuration.
 
@@ -19,52 +20,57 @@ Settings for an IPsec VPN configuration.
 class NEVPNProtocolIPSec
 ```
 
+```objc
+@interface NEVPNProtocolIPSec : NEVPNProtocol
+```
+
 #### Overview
 
-To configure IKE version 2 (IKEv2), use the [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) subclass. Instantiating [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) directly implies IKE version 1.
+To configure IKE version 2 (IKEv2), use the [`NEVPNProtocolIKEv2`](./nevpnprotocolikev2.md) subclass. Instantiating [`NEVPNProtocolIPSec`](./nevpnprotocolipsec.md) directly implies IKE version 1.
 
 ## Topics
 
 ### Accessing IPSec properties
-- [var authenticationMethod: NEVPNIKEAuthenticationMethod](nevpnprotocolipsec/authenticationmethod.md)
+- [var authenticationMethod: NEVPNIKEAuthenticationMethod](./nevpnprotocolipsec/authenticationmethod.md)
   The method used to authenticate the device with the IPSec server. For IKE version 2, when using extended authentication, this authentication method only affects how the client validates the authentication payload presented by the server.
-- [enum NEVPNIKEAuthenticationMethod](nevpnikeauthenticationmethod.md)
+- [enum NEVPNIKEAuthenticationMethod](./nevpnikeauthenticationmethod.md)
   Internet Key Exchange (IKE) authentication methods used to authenticate with the IPSec server.
-- [var useExtendedAuthentication: Bool](nevpnprotocolipsec/useextendedauthentication.md)
+- [var useExtendedAuthentication: Bool](./nevpnprotocolipsec/useextendedauthentication.md)
   A flag indicating if extended authentication will be negotiated.
-- [var sharedSecretReference: Data?](nevpnprotocolipsec/sharedsecretreference.md)
+- [var sharedSecretReference: Data?](./nevpnprotocolipsec/sharedsecretreference.md)
   A persistent keychain reference to a keychain item containing the IKE shared secret.
-- [var localIdentifier: String?](nevpnprotocolipsec/localidentifier.md)
+- [var localIdentifier: String?](./nevpnprotocolipsec/localidentifier.md)
   A string identifying the iOS or macOS device for authentication purposes
-- [var remoteIdentifier: String?](nevpnprotocolipsec/remoteidentifier.md)
+- [var remoteIdentifier: String?](./nevpnprotocolipsec/remoteidentifier.md)
   A string identifying the IPSec server for authentication purposes
 
 ## Relationships
 
 ### Inherits From
-- [NEVPNProtocol](nevpnprotocol.md)
+- [NEVPNProtocol](./nevpnprotocol.md)
 ### Inherited By
-- [NEVPNProtocolIKEv2](nevpnprotocolikev2.md)
+- [NEVPNProtocolIKEv2](./nevpnprotocolikev2.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEVPNManager](nevpnmanager.md)
+### VPN configuration
+- [class NEVPNManager](./nevpnmanager.md)
   An object to create and manage a Personal VPN configuration.
-- [class NEVPNProtocolIKEv2](nevpnprotocolikev2.md)
+- [class NEVPNProtocolIKEv2](./nevpnprotocolikev2.md)
   Settings for an IKEv2 VPN configuration.
-- [class NEVPNProtocol](nevpnprotocol.md)
+- [class NEVPNProtocol](./nevpnprotocol.md)
   Settings common to both IKEv2 and IPsec VPN configurations.
-- [VPN On Demand Rules](vpn-on-demand-rules.md)
+- [VPN On Demand Rules](./vpn-on-demand-rules.md)
   Set up VPN On Demand.
 
 

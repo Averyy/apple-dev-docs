@@ -1,7 +1,8 @@
 # cameraCapture(sceneConfiguration:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a scene accessory for presenting content during camera capture.
 
@@ -16,6 +17,10 @@ Creates a scene accessory for presenting content during camera capture.
 class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self
 ```
 
+```objc
++ (instancetype) cameraCaptureSceneAccessoryWithConfiguration:(UISceneConfiguration *) sceneConfiguration;
+```
+
 #### Discussion
 
 The content may be presented while the app is in the foreground and has an active camera capture session. The system determines whether and where to present it. The content can be interactive.
@@ -26,7 +31,8 @@ The content may be presented while the app is in the foreground and has an activ
 
 ## See Also
 
-- [class func cameraCapture(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](uisceneaccessory/cameracapture(sceneconfiguration:userinfo:).md)
+### Creating a camera capture accessory
+- [class func cameraCapture(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self](./cameracapture%28sceneconfiguration,userinfo%29.md)
   Creates a scene accessory for presenting content during camera capture, passing additional context to the scene delegate.
 
 

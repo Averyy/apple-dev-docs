@@ -1,7 +1,8 @@
 # errAuthorizationInternal
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unrecognized internal error occurred.
 
@@ -13,6 +14,10 @@ An unrecognized internal error occurred.
 
 ```swift
 var errAuthorizationInternal: OSStatus { get }
+```
+
+```c
+errAuthorizationInternal
 ```
 
 

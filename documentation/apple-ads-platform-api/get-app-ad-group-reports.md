@@ -1,7 +1,8 @@
 # Ad Groups Report
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve performance metrics for ad groups.
 
@@ -14,13 +15,13 @@ Ad group reports return one row per ad group. Each row contains a `metadata` obj
 
 Filter by the required `campaignId` in the `filters` array, optionally narrowed further by `adGroupId`. Use `groupBy` to split metrics along a dimension: each dimension value produces its own row within the ad group’s result.
 
-See [`Filter`](filter.md) for the full set of supported comparison operators.
+See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
-See [`AppsReportingRequest`](appsreportingrequest.md).
+See [`AppsReportingRequest`](./appsreportingrequest.md).
 
-##### Groupby Dimensions
+##### groupBy Dimensions
 
 `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion`
 
@@ -150,17 +151,34 @@ POST /v1/reports/apps/adgroups/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppsReportingRequest`
+
+## Responses
+
+- `200` OK (`AppsAdGroupReportResponse`, `application/json`): Successful response. Returns [`AppsAdGroupReportResponse`](./appsadgroupreportresponse.md) (`result`: [`AppsAdGroupResultContainer`](./appsadgroupresultcontainer.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`ErrorResponse`](./errorresponse.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Campaigns Report](get-app-campaign-reports.md)
+- [Campaigns Report](./get-app-campaign-reports.md)
   Retrieve performance metrics for campaigns.
-- [Ads Report](get-app-ad-reports.md)
+- [Ads Report](./get-app-ad-reports.md)
   Retrieve performance metrics for ads.
-- [Keywords Report](get-app-keyword-reports.md)
+- [Keywords Report](./get-app-keyword-reports.md)
   Retrieve performance metrics for keywords.
-- [Search Terms Report](get-app-search-term-reports.md)
+- [Search Terms Report](./get-app-search-term-reports.md)
   Retrieve performance metrics for the actual search terms that triggered keyword matches.
 
 

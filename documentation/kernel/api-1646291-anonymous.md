@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,29 +18,29 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMapAnywhere](1646291-anonymous/kiomapanywhere.md)
-- [kIOMapCacheMask](1646291-anonymous/kiomapcachemask.md)
-- [kIOMapCacheShift](1646291-anonymous/kiomapcacheshift.md)
-- [kIOMapCopybackCache](1646291-anonymous/kiomapcopybackcache.md)
-- [kIOMapCopybackInnerCache](1646291-anonymous/kiomapcopybackinnercache.md)
-- [kIOMapDefaultCache](1646291-anonymous/kiomapdefaultcache.md)
-- [kIOMapInhibitCache](1646291-anonymous/kiomapinhibitcache.md)
-- [kIOMapOverwrite](1646291-anonymous/kiomapoverwrite.md)
-- [kIOMapPrefault](1646291-anonymous/kiomapprefault.md)
-- [kIOMapReadOnly](1646291-anonymous/kiomapreadonly.md)
-- [kIOMapReference](1646291-anonymous/kiomapreference.md)
-- [kIOMapStatic](1646291-anonymous/kiomapstatic.md)
-- [kIOMapUnique](1646291-anonymous/kiomapunique.md)
-- [kIOMapUserOptionsMask](1646291-anonymous/kiomapuseroptionsmask.md)
-- [kIOMapWriteCombineCache](1646291-anonymous/kiomapwritecombinecache.md)
-- [kIOMapWriteThruCache](1646291-anonymous/kiomapwritethrucache.md)
-- [kIOMapGuardedLarge](1646291-anonymous/kiomapguardedlarge.md)
-- [kIOMapGuardedMask](1646291-anonymous/kiomapguardedmask.md)
-- [kIOMapGuardedSmall](1646291-anonymous/kiomapguardedsmall.md)
-- [kIOMapPostedCombinedReordered](1646291-anonymous/kiomappostedcombinedreordered.md)
-- [kIOMapPostedReordered](1646291-anonymous/kiomappostedreordered.md)
-- [kIOMapPostedWrite](1646291-anonymous/kiomappostedwrite.md)
-- [kIOMapRealTimeCache](1646291-anonymous/kiomaprealtimecache.md)
+- [kIOMapAnywhere](./api-1646291-anonymous/kiomapanywhere.md)
+- [kIOMapCacheMask](./api-1646291-anonymous/kiomapcachemask.md)
+- [kIOMapCacheShift](./api-1646291-anonymous/kiomapcacheshift.md)
+- [kIOMapCopybackCache](./api-1646291-anonymous/kiomapcopybackcache.md)
+- [kIOMapCopybackInnerCache](./api-1646291-anonymous/kiomapcopybackinnercache.md)
+- [kIOMapDefaultCache](./api-1646291-anonymous/kiomapdefaultcache.md)
+- [kIOMapInhibitCache](./api-1646291-anonymous/kiomapinhibitcache.md)
+- [kIOMapOverwrite](./api-1646291-anonymous/kiomapoverwrite.md)
+- [kIOMapPrefault](./api-1646291-anonymous/kiomapprefault.md)
+- [kIOMapReadOnly](./api-1646291-anonymous/kiomapreadonly.md)
+- [kIOMapReference](./api-1646291-anonymous/kiomapreference.md)
+- [kIOMapStatic](./api-1646291-anonymous/kiomapstatic.md)
+- [kIOMapUnique](./api-1646291-anonymous/kiomapunique.md)
+- [kIOMapUserOptionsMask](./api-1646291-anonymous/kiomapuseroptionsmask.md)
+- [kIOMapWriteCombineCache](./api-1646291-anonymous/kiomapwritecombinecache.md)
+- [kIOMapWriteThruCache](./api-1646291-anonymous/kiomapwritethrucache.md)
+- [kIOMapGuardedLarge](./api-1646291-anonymous/kiomapguardedlarge.md)
+- [kIOMapGuardedMask](./api-1646291-anonymous/kiomapguardedmask.md)
+- [kIOMapGuardedSmall](./api-1646291-anonymous/kiomapguardedsmall.md)
+- [kIOMapPostedCombinedReordered](./api-1646291-anonymous/kiomappostedcombinedreordered.md)
+- [kIOMapPostedReordered](./api-1646291-anonymous/kiomappostedreordered.md)
+- [kIOMapPostedWrite](./api-1646291-anonymous/kiomappostedwrite.md)
+- [kIOMapRealTimeCache](./api-1646291-anonymous/kiomaprealtimecache.md)
 
 
 ---

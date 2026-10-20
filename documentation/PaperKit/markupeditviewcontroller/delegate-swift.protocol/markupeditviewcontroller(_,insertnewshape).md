@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Add a new shape on top of the paper.
@@ -25,11 +26,12 @@ func markupEditViewController(_ markupEditViewController: MarkupEditViewControll
 
 ## See Also
 
-- [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox(_:).md)
+### Inserting content
+- [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](./markupeditviewcontrollerinsertnewtextbox%28_%29.md)
   Add a new textbox on top of the paper.
-- [func markupEditViewController(MarkupEditViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+- [func markupEditViewController(MarkupEditViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](./markupeditviewcontroller%28_,insertnewlinewithstartmarker,endmarker%29.md)
   Add a new line on top of the paper.
-- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewcontents:).md)
+- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](./markupeditviewcontroller%28_,insertnewcontents%29.md)
   Add new content on top of the paper.
 
 

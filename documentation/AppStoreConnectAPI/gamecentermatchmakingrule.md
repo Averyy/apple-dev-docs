@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRule
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A JavaScript expression evaluated during Game Center matchmaking to determine player compatibility.
 
@@ -10,14 +11,14 @@ A JavaScript expression evaluated during Game Center matchmaking to determine pl
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRule
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRule.Attributes](gamecentermatchmakingrule/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingRule.Attributes](./gamecentermatchmakingrule/attributes-data.dictionary.md)
   The attributes of a matchmaking rule.
 
 ## Properties
@@ -25,15 +26,16 @@ object GameCenterMatchmakingRule
 - `attributes` (GameCenterMatchmakingRule.Attributes): The attributes of the rule.
 - `id` (string) *(required)*: The unique identifier for the rule.
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterMatchmakingRules`
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleCreateRequest](gamecentermatchmakingrulecreaterequest.md)
+### Objects
+- [object GameCenterMatchmakingRuleCreateRequest](./gamecentermatchmakingrulecreaterequest.md)
   The request body you use to create a rule.
-- [object GameCenterMatchmakingRuleUpdateRequest](gamecentermatchmakingruleupdaterequest.md)
+- [object GameCenterMatchmakingRuleUpdateRequest](./gamecentermatchmakingruleupdaterequest.md)
   The request body you use to modify a rule.
-- [object GameCenterMatchmakingRuleResponse](gamecentermatchmakingruleresponse.md)
+- [object GameCenterMatchmakingRuleResponse](./gamecentermatchmakingruleresponse.md)
   The response body for endpoints that create or modify a rule.
 
 

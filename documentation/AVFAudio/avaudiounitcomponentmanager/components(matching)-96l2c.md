@@ -1,7 +1,8 @@
 # components(matching:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets an array of audio component objects that match the search predicate.
 
@@ -19,6 +20,10 @@ Gets an array of audio component objects that match the search predicate.
 func components(matching predicate: NSPredicate) -> [AVAudioUnitComponent]
 ```
 
+```objc
+- (NSArray<AVAudioUnitComponent *> *) componentsMatchingPredicate:(NSPredicate *) predicate;
+```
+
 #### Return Value
 
 An array of `AVAudioComponent` objects that match the predicate.
@@ -33,9 +38,10 @@ You use the audio component’s information or tags to build search criteria, su
 
 ## See Also
 
-- [func components(matching: AudioComponentDescription) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(matching:)-9qt94.md)
+### Getting matching audio components
+- [func components(matching: AudioComponentDescription) -> [AVAudioUnitComponent]](./components%28matching%29-9qt94.md)
   Gets an array of audio component objects that match the description.
-- [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(passingtest:).md)
+- [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](./components%28passingtest%29.md)
   Gets an array of audio components that pass the block method.
 
 

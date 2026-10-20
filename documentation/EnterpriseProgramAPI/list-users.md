@@ -1,7 +1,8 @@
 # List Users
 
 **Framework**: Enterprise Program API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of the users on your team.
 
@@ -9,7 +10,7 @@ Get a list of the users on your team.
 
 **Request**:
 
-```None
+```
 https://qa.api.adep.ase.apple.com/v1/users?limit=2
 ```
 
@@ -68,15 +69,33 @@ https://qa.api.adep.ase.apple.com/v1/users?limit=2
 
 ## Parameters
 
+### Query Parameters
+
 - `fields[users]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `firstName`, `lastName`, `roles`, `username`
 - `limit` (integer): Number of resources to return.
+
+  **Maximum**: `200`
 - `sort` ([string]): Attributes by which to sort.
+
+  **Allowed Values**: `lastName`, `-lastName`, `username`, `-username`
 - `filter[roles]` ([string]): Attributes, relationships, and IDs by which to filter.
+
+  **Allowed Values**: `ADMIN`, `ACCOUNT_HOLDER`, `DEVELOPER`
 - `filter[username]` ([string]): Attributes, relationships, and IDs by which to filter.
+
+## Responses
+
+- `200` OK (`UsersResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
 
 ## See Also
 
-- [Read User Information](read-user-information.md)
+### Getting User Information
+- [Read User Information](./read-user-information.md)
   Get information about a user on your team, such as name, roles, and app visibility.
 
 

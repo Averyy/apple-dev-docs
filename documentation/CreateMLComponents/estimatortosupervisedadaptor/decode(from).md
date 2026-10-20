@@ -1,7 +1,8 @@
 # decode(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pre-defined transformer.
 
@@ -22,7 +23,8 @@ func decode(from decoder: inout any EstimatorDecoder) throws -> EstimatorToSuper
 
 ## See Also
 
-- [func encode(EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](estimatortosupervisedadaptor/encode(_:to:).md)
+### Encoding and decoding
+- [func encode(EstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](./encode%28_,to%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
 
 

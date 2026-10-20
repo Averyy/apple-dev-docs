@@ -1,23 +1,28 @@
 # hash
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hash calculation callback for your program-defined `info` pointer. Can be `NULL`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var hash: ((UnsafeRawPointer?) -> CFHashCode)!
+```
+
+```c
+unsigned long (*)(const void *) hash;
 ```
 
 #### Return Value
@@ -30,7 +35,7 @@ If a hash callback is not provided for a source, the `info` pointer is used.
 
 ## Parameters
 
-- `info`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) or [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext`](../cfrunloopsourcecontext.md) or [`CFRunLoopSourceContext1`](../cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
 
 
 ---

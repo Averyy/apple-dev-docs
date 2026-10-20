@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the time-limited cellular plan expires, specified with day-level granularity.
 
@@ -14,6 +15,10 @@ The date when the time-limited cellular plan expires, specified with day-level g
 
 ```swift
 var expirationDate: DateComponents { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, nonnull) NSDateComponents * expirationDate;
 ```
 
 #### Overview

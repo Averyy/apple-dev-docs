@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a decimal with the provided floating point value.
 
@@ -22,7 +23,8 @@ init(_ value: Double)
 
 ## See Also
 
-- [init(floatLiteral: Double)](decimal/init(floatliteral:).md)
+### Creating a decimal from a floating point number
+- [init(floatLiteral: Double)](./init%28floatliteral%29.md)
   Creates and initializes a decimal with the provided floating point value.
 
 

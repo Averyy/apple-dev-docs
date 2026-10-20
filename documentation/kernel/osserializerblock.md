@@ -1,26 +1,28 @@
 # OSSerializerBlock
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 typedef bool (^OSSerializerBlock)(OSSerialize *serializer);
 ```
 
 ## See Also
 
-- [OSActionAbortedHandler](osactionabortedhandler.md)
-- [OSActionCancelHandler](osactioncancelhandler.md)
-- [OSDispatchMethod](osdispatchmethod.md)
-- [OSKextRequestResourceCallback](oskextrequestresourcecallback.md)
+### Callback Methods
+- [OSActionAbortedHandler](./osactionabortedhandler.md)
+- [OSActionCancelHandler](./osactioncancelhandler.md)
+- [OSDispatchMethod](./osdispatchmethod.md)
+- [OSKextRequestResourceCallback](./oskextrequestresourcecallback.md)
   Invoked to provide results for a kext resource request.
-- [OSObjectApplierFunction](osobjectapplierfunction.md)
-- [OSSerializerCallback](osserializercallback.md)
+- [OSObjectApplierFunction](./osobjectapplierfunction.md)
+- [OSSerializerCallback](./osserializercallback.md)
 
 
 ---

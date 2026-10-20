@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified position.
 
@@ -20,6 +21,8 @@ Accesses the element at the specified position.
 subscript(position: LazyDropWhileSequence<Base>.Index) -> LazyDropWhileSequence<Base>.Element { get }
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Overview
 
 The following example accesses an element of an array through its subscript to print its value:
@@ -32,7 +35,7 @@ print(streets[1])
 
 You can subscript a collection with any valid index other than the collection’s end index. The end index refers to the position one past the last element of a collection, so it doesn’t correspond with an element.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

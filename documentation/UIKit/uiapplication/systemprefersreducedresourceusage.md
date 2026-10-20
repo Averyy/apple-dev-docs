@@ -1,7 +1,8 @@
 # systemPrefersReducedResourceUsage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system prefers that the app reduce its resource usage.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the system prefers that the app reduce it
 var systemPrefersReducedResourceUsage: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL systemPrefersReducedResourceUsage;
+```
+
 #### Discussion
 
 When this value is `YES`, the system has entered a state where it would prefer apps to scale back resource-intensive work.
@@ -32,7 +37,7 @@ Avoid performing or scheduling expensive work in response to changes in this pro
 
 > 💡 **Tip**: For in-memory caching, consider using `NSCache` with `NSPurgeableData`, which automatically evicts entries under system memory pressure. Use `systemPrefersReducedResourceUsage` for higher-level decisions that `NSCache` cannot make on its own.
 
-To respond to changes in views, read the `UITraitCollection/systemPrefersReducedResourceUsage` trait. From other contexts, observe [`systemPrefersReducedResourceUsageDidChangeNotification`](uiapplication/systemprefersreducedresourceusagedidchangenotification.md) and re-read this property.
+To respond to changes in views, read the `UITraitCollection/systemPrefersReducedResourceUsage` trait. From other contexts, observe [`systemPrefersReducedResourceUsageDidChangeNotification`](./systemprefersreducedresourceusagedidchangenotification.md) and re-read this property.
 
 
 ---

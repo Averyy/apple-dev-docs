@@ -1,7 +1,8 @@
 # IOUserVideoSliderRange
 
 **Framework**: VideoDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The minimum and maximum range for the slider value.
 
@@ -10,25 +11,26 @@ The minimum and maximum range for the slider value.
 
 ## Declaration
 
-```swift
+```c
 struct IOUserVideoSliderRange;
 ```
 
 ## Topics
 
 ### Accessing range limits
-- [m_min](iouservideosliderrange/m_min.md)
-- [m_max](iouservideosliderrange/m_max.md)
+- [m_min](./iouservideosliderrange/m_min.md)
+- [m_max](./iouservideosliderrange/m_max.md)
 
 ## See Also
 
-- [SetControlValue](iouservideoslidercontrol/setcontrolvalue.md)
+### Accessing the value
+- [SetControlValue](./iouservideoslidercontrol/setcontrolvalue.md)
   Sets the current control value.
-- [GetControlValue](iouservideoslidercontrol/getcontrolvalue.md)
+- [GetControlValue](./iouservideoslidercontrol/getcontrolvalue.md)
   Gets the current value of the control.
-- [SetRange](iouservideoslidercontrol/setrange.md)
+- [SetRange](./iouservideoslidercontrol/setrange.md)
   Sets the current range of the slider control.
-- [GetRange](iouservideoslidercontrol/getrange.md)
+- [GetRange](./iouservideoslidercontrol/getrange.md)
   Gets the current range of the slider control.
 
 

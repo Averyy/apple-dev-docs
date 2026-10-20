@@ -1,7 +1,8 @@
 # SecProtocolType.SVN
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates Subversion.
 
@@ -13,6 +14,10 @@ Indicates Subversion.
 
 ```swift
 case SVN
+```
+
+```c
+kSecProtocolTypeSVN
 ```
 
 

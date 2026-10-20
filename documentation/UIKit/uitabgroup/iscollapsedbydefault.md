@@ -1,7 +1,8 @@
 # isCollapsedByDefault
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the group is initially displayed in a collapsed state in the sidebar.
 
@@ -15,6 +16,10 @@ Whether the group is initially displayed in a collapsed state in the sidebar.
 
 ```swift
 var isCollapsedByDefault: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isCollapsedByDefault) BOOL collapsedByDefault;
 ```
 
 #### Discussion

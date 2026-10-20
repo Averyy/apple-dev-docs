@@ -1,7 +1,8 @@
 # DeviceFitStatus.eyesRight
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User’s eyes are positioned to the right of the optimal device fit range.
 

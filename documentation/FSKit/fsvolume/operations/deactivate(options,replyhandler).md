@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tears down a previously initialized volume instance.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func deactivate(options: FSDeactivateOptions = [], replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func deactivate(options: FSDeactivateOptions = []) async throws
+```
+
+```objc
+- (void) deactivateWithOptions:(FSDeactivateOptions) options replyHandler:(void (^)(NSError *err)) reply;
 ```
 
 #### Discussion
@@ -30,11 +39,12 @@ FSKit unmounts any mounted volume with a call to `unmount()` prior to the deacti
 
 ## See Also
 
-- [func activate(options: FSTaskOptions, replyHandler: (FSItem?, (any Error)?) -> Void)](fsvolume/operations/activate(options:replyhandler:).md)
+### Handling activation and deactivation
+- [func activate(options: FSTaskOptions, replyHandler: (FSItem?, (any Error)?) -> Void)](./activate%28options,replyhandler%29.md)
   Activates the volume using the specified options.
-- [class FSItem](fsitem.md)
+- [class FSItem](../../fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [struct FSDeactivateOptions](fsdeactivateoptions.md)
+- [struct FSDeactivateOptions](../../fsdeactivateoptions.md)
   Options that affect the behavior of deactivate methods.
 
 

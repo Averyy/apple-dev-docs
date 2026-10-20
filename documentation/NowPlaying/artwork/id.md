@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this artwork, which the system uses to cache artwork across fetches.
 

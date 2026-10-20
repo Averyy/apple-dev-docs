@@ -1,7 +1,8 @@
 # custom(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom spacing value.
 
@@ -24,9 +25,10 @@ static func custom(_ spacing: CGFloat) -> ListSectionSpacing
 
 ## See Also
 
-- [static let `default`: ListSectionSpacing](listsectionspacing/default.md)
+### Getting section spacing
+- [static let `default`: ListSectionSpacing](./default.md)
   The default spacing between sections
-- [static let compact: ListSectionSpacing](listsectionspacing/compact.md)
+- [static let compact: ListSectionSpacing](./compact.md)
   Compact spacing between sections
 
 

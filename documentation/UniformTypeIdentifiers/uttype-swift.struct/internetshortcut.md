@@ -1,7 +1,8 @@
 # internetShortcut
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a Microsoft internet shortcut file.
 
@@ -24,15 +25,16 @@ static var internetShortcut: UTType { get }
 
 The identifier for this type is `com.microsoft.internet-shortcut`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and a base type identified by `public.stored-url`.
+This type conforms to [`UTTypeData`](../uttypedata.md) and a base type identified by `public.stored-url`.
 
 ## See Also
 
-- [static var html: UTType](uttype-swift.struct/html.md)
+### Internet-specific
+- [static var html: UTType](./html.md)
   A type that represents any version of HTML.
-- [static var webArchive: UTType](uttype-swift.struct/webarchive.md)
+- [static var webArchive: UTType](./webarchive.md)
   A type that represents WebKit web archive data.
-- [static var internetLocation: UTType](uttype-swift.struct/internetlocation.md)
+- [static var internetLocation: UTType](./internetlocation.md)
   A base type that represents an Apple internet location file.
 
 

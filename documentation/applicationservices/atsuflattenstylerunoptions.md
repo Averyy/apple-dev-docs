@@ -1,7 +1,8 @@
 # ATSUFlattenStyleRunOptions
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSUFlattenStyleRunOptions = UInt32
+```
+
+```c
+typedef UInt32 ATSUFlattenStyleRunOptions;
 ```
 
 

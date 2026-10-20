@@ -1,7 +1,8 @@
 # kSecMatchHostOrSubdomainOfHost
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kSecMatchHostOrSubdomainOfHost: CFString
+```
+
+```c
+extern CFStringRef const kSecMatchHostOrSubdomainOfHost;
 ```
 
 

@@ -1,7 +1,8 @@
 # MusicSubscription.Updates
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
 
@@ -23,16 +24,16 @@ struct Updates
 ## Topics
 
 ### Structures
-- [MusicSubscription.Updates.Iterator](musicsubscription/updates/iterator.md)
+- [MusicSubscription.Updates.Iterator](./updates/iterator.md)
   An iterator for the asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
 ### Type Aliases
-- [MusicSubscription.Updates.Element](musicsubscription/updates/element.md)
+- [MusicSubscription.Updates.Element](./updates/element.md)
   The type of element the asynchronous sequence produces.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

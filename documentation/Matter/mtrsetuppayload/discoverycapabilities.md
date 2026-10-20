@@ -1,7 +1,8 @@
 # discoveryCapabilities
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var discoveryCapabilities: MTRDiscoveryCapabilities { get set }
+```
+
+```objc
+@property (nonatomic, assign) MTRDiscoveryCapabilities discoveryCapabilities;
 ```
 
 

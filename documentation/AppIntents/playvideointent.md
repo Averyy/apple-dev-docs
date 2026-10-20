@@ -1,7 +1,8 @@
 # PlayVideoIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An intent that looks for videos based on a search term, then plays the content.
 
@@ -11,7 +12,7 @@ An intent that looks for videos based on a search term, then plays the content.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,35 +22,36 @@ protocol PlayVideoIntent : SystemIntent
 
 ## Mentions
 
-- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+- [Configuring the runtime behavior of your app intents](./configuring-the-runtime-behavior-of-your-app-intents.md)
 
 ## Topics
 
 ### Instance Properties
-- [var term: String](playvideointent/term.md)
+- [var term: String](./playvideointent/term.md)
   The search term requested by the user.
 ### Type Properties
-- [static var supportedCategories: [VideoCategory]](playvideointent/supportedcategories.md)
+- [static var supportedCategories: [VideoCategory]](./playvideointent/supportedcategories.md)
   The list of video categories that the app supports through this intent.
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SystemIntent](systemintent.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SystemIntent](./systemintent.md)
 
 ## See Also
 
-- [protocol AudioPlaybackIntent](audioplaybackintent.md)
+### Media actions
+- [protocol AudioPlaybackIntent](./audioplaybackintent.md)
   An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol AudioRecordingIntent](audiorecordingintent.md)
+- [protocol AudioRecordingIntent](./audiorecordingintent.md)
   An app intent that starts, stops or otherwise modifies audio recording state.
-- [protocol CameraCaptureIntent](cameracaptureintent.md)
+- [protocol CameraCaptureIntent](./cameracaptureintent.md)
   Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
-- [enum VideoCategory](videocategory.md)
+- [enum VideoCategory](./videocategory.md)
 
 
 ---

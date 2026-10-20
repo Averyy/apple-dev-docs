@@ -1,7 +1,8 @@
 # mask(alignment:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Masks this view using the alpha channel of the given view.
 
@@ -36,7 +37,7 @@ Image(systemName: "envelope.badge.fill")
     }
 ```
 
-![A screenshot of a view masked by a rectangle with 10%](/images/com.apple.SwiftUI/SwiftUI-View-mask@2x.png)
+![A screenshot of a view masked by a rectangle with 10%](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-mask@2x.png)
 
 ## Parameters
 
@@ -45,9 +46,10 @@ Image(systemName: "envelope.badge.fill")
 
 ## See Also
 
-- [func clipped(antialiased: Bool) -> some View](view/clipped(antialiased:).md)
+### Masking and clipping
+- [func clipped(antialiased: Bool) -> some View](./clipped%28antialiased%29.md)
   Clips this view to its bounding rectangular frame.
-- [func clipShape<S>(S, style: FillStyle) -> some View](view/clipshape(_:style:).md)
+- [func clipShape<S>(S, style: FillStyle) -> some View](./clipshape%28_,style%29.md)
   Sets a clipping shape for this view.
 
 

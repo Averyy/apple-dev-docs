@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A token that indicates an invalid task request.
 
@@ -9,13 +10,17 @@ A token that indicates an invalid task request.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 static let invalid: UIBackgroundTaskIdentifier
+```
+
+```c
+extern const UIBackgroundTaskIdentifier UIBackgroundTaskInvalid;
 ```
 
 #### Discussion

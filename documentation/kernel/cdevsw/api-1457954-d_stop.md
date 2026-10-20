@@ -1,14 +1,15 @@
 # d_stop
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 stop_fcn_t *d_stop;
 ```
 

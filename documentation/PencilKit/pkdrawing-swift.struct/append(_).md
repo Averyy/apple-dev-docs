@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the contents of the specified drawing object to an existing drawing object that you provide.
 
@@ -24,11 +25,12 @@ mutating func append(_ toAppend: PKDrawing)
 
 ## See Also
 
-- [func transform(using: CGAffineTransform)](pkdrawing-swift.struct/transform(using:).md)
+### Modifying the drawing
+- [func transform(using: CGAffineTransform)](./transform%28using%29.md)
   Applies the specified transform to the contents of this drawing.
-- [func transformed(using: CGAffineTransform) -> PKDrawing](pkdrawing-swift.struct/transformed(using:).md)
+- [func transformed(using: CGAffineTransform) -> PKDrawing](./transformed%28using%29.md)
   Applies the specified transform and returns a new drawing.
-- [func appending(PKDrawing) -> PKDrawing](pkdrawing-swift.struct/appending(_:).md)
+- [func appending(PKDrawing) -> PKDrawing](./appending%28_%29.md)
   Returns a new drawing created by appending the current drawing with another drawing you provide.
 
 

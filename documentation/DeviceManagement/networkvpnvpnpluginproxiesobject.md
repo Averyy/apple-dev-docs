@@ -1,7 +1,8 @@
 # NetworkVPNVPNPluginProxiesObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to use to configure `Proxies` for use with `VPN`.
 
@@ -15,39 +16,44 @@ The dictionary to use to configure `Proxies` for use with `VPN`.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNVPNPluginProxiesObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNVPNPluginProxies_ProtocolObject](networkvpnvpnpluginproxies_protocolobject.md)
+- [object NetworkVPNVPNPluginProxies_ProtocolObject](./networkvpnvpnpluginproxies_protocolobject.md)
   The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 
 ## Properties
 
 - `AutoConfigEnable` (boolean): If `true`, enables automatic proxy configuration.
+
+  **Default**: `false`
 - `AutoConfigURLString` (string): The URL to the location of the proxy auto-configuration file. Used only when `ProxyAutoConfigEnable` is `true`.
 - `AutoDiscoveryEnable` (boolean): If `true`, enables proxy auto discovery.
+
+  **Default**: `true`
 - `Protocol` (NetworkVPNVPNPluginProxies_ProtocolObject): The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 - `SupplementalMatchDomains` ([string]): An array of domains that defines which hosts use proxy settings for hosts.
 
 ## See Also
 
-- [object NetworkVPNVPNPluginAuthenticationObject](networkvpnvpnpluginauthenticationobject.md)
+### Objects
+- [object NetworkVPNVPNPluginAuthenticationObject](./networkvpnvpnpluginauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNVPNPluginDNSObject](networkvpnvpnplugindnsobject.md)
+- [object NetworkVPNVPNPluginDNSObject](./networkvpnvpnplugindnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNVPNPluginIdleObject](networkvpnvpnpluginidleobject.md)
+- [object NetworkVPNVPNPluginIdleObject](./networkvpnvpnpluginidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNVPNPluginNetworkRoutingObject](networkvpnvpnpluginnetworkroutingobject.md)
+- [object NetworkVPNVPNPluginNetworkRoutingObject](./networkvpnvpnpluginnetworkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNVPNPluginOnDemandObject](networkvpnvpnpluginondemandobject.md)
+- [object NetworkVPNVPNPluginOnDemandObject](./networkvpnvpnpluginondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNVPNPluginProviderObject](networkvpnvpnpluginproviderobject.md)
+- [object NetworkVPNVPNPluginProviderObject](./networkvpnvpnpluginproviderobject.md)
   Specifies details about the provider.
-- [object NetworkVPNVPNPluginVendorConfigObject](networkvpnvpnpluginvendorconfigobject.md)
+- [object NetworkVPNVPNPluginVendorConfigObject](./networkvpnvpnpluginvendorconfigobject.md)
   The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 
 

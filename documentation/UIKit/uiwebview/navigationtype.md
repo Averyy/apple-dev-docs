@@ -1,13 +1,14 @@
 # UIWebView.NavigationType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constant indicating the user’s action.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -15,41 +16,46 @@ Constant indicating the user’s action.
 enum NavigationType
 ```
 
+```c
+enum UIWebViewNavigationType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIWebView.NavigationType.linkClicked](uiwebview/navigationtype/linkclicked.md)
+- [UIWebView.NavigationType.linkClicked](./navigationtype/linkclicked.md)
   User tapped a link.
-- [UIWebView.NavigationType.formSubmitted](uiwebview/navigationtype/formsubmitted.md)
+- [UIWebView.NavigationType.formSubmitted](./navigationtype/formsubmitted.md)
   User submitted a form.
-- [UIWebView.NavigationType.backForward](uiwebview/navigationtype/backforward.md)
+- [UIWebView.NavigationType.backForward](./navigationtype/backforward.md)
   User tapped the back or forward button.
-- [UIWebView.NavigationType.reload](uiwebview/navigationtype/reload.md)
+- [UIWebView.NavigationType.reload](./navigationtype/reload.md)
   User tapped the reload button.
-- [UIWebView.NavigationType.formResubmitted](uiwebview/navigationtype/formresubmitted.md)
+- [UIWebView.NavigationType.formResubmitted](./navigationtype/formresubmitted.md)
   User resubmitted a form.
-- [UIWebView.NavigationType.other](uiwebview/navigationtype/other.md)
+- [UIWebView.NavigationType.other](./navigationtype/other.md)
   Some other action occurred.
 ### Initializers
-- [init?(rawValue: Int)](uiwebview/navigationtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./navigationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIWebView.PaginationBreakingMode](uiwebview/paginationbreakingmode-swift.enum.md)
+### Constants
+- [UIWebView.PaginationBreakingMode](./paginationbreakingmode-swift.enum.md)
   The manner in which column- or page-breaking occurs.
-- [UIWebView.PaginationMode](uiwebview/paginationmode-swift.enum.md)
+- [UIWebView.PaginationMode](./paginationmode-swift.enum.md)
   The layout of content in the web view, which determines the direction that the pages flow.
-- [struct UIDataDetectorTypes](uidatadetectortypes.md)
+- [struct UIDataDetectorTypes](../uidatadetectortypes.md)
   Constants that define the types of information to detect in text-based content.
 
 

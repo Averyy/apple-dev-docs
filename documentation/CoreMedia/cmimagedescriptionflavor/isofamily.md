@@ -1,7 +1,8 @@
 # isoFamily
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+
@@ -18,11 +19,16 @@
 static let isoFamily: CMImageDescriptionFlavor
 ```
 
+```c
+extern CMImageDescriptionFlavor const kCMImageDescriptionFlavor_ISOFamily;
+```
+
 ## See Also
 
-- [static let mobile3GPFamily: CMImageDescriptionFlavor](cmimagedescriptionflavor/mobile3gpfamily.md)
+### Image Description Flavors
+- [static let mobile3GPFamily: CMImageDescriptionFlavor](./mobile3gpfamily.md)
   An image description that selects the 3GP family sample format.
-- [static let quickTimeMovie: CMImageDescriptionFlavor](cmimagedescriptionflavor/quicktimemovie.md)
+- [static let quickTimeMovie: CMImageDescriptionFlavor](./quicktimemovie.md)
   An image description that selects the QuickTime format.
 
 

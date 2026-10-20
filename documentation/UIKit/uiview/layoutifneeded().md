@@ -1,21 +1,26 @@
 # layoutIfNeeded()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Lays out the subviews immediately, if layout updates are pending.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func layoutIfNeeded()
+```
+
+```objc
+- (void) layoutIfNeeded;
 ```
 
 #### Discussion
@@ -24,13 +29,14 @@ Use this method to force the view to update its layout immediately. When using A
 
 ## See Also
 
-- [func layoutSubviews()](uiview/layoutsubviews.md)
+### Laying out subviews
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Lays out subviews.
-- [func setNeedsLayout()](uiview/setneedslayout.md)
+- [func setNeedsLayout()](./setneedslayout%28%29.md)
   Invalidates the current layout of the receiver and triggers a layout update during the next update cycle.
-- [class var requiresConstraintBasedLayout: Bool](uiview/requiresconstraintbasedlayout.md)
+- [class var requiresConstraintBasedLayout: Bool](./requiresconstraintbasedlayout.md)
   A Boolean value that indicates whether the receiver depends on the constraint-based layout system.
-- [var translatesAutoresizingMaskIntoConstraints: Bool](uiview/translatesautoresizingmaskintoconstraints.md)
+- [var translatesAutoresizingMaskIntoConstraints: Bool](./translatesautoresizingmaskintoconstraints.md)
   A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 
 

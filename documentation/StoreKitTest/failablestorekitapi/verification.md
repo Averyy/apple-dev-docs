@@ -1,7 +1,8 @@
 # verification
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -18,16 +19,19 @@
 static var verification: StoreKitVerificationAPI { get }
 ```
 
+Available when `Self` is `StoreKitVerificationAPI`.
+
 ## See Also
 
-- [static var appStoreSync: StoreKitAppStoreSyncAPI](failablestorekitapi/appstoresync.md)
-- [static var appTransaction: StoreKitAppTransactionAPI](failablestorekitapi/apptransaction.md)
-- [static var loadProducts: StoreKitLoadProductsAPI](failablestorekitapi/loadproducts.md)
-- [static var manageSubscriptions: StoreKitManageSubscriptionsAPI](failablestorekitapi/managesubscriptions.md)
-- [static var offerCodeRedeem: StoreKitOfferCodeRedeemAPI](failablestorekitapi/offercoderedeem.md)
-- [static var purchase: StoreKitPurchaseAPI](failablestorekitapi/purchase.md)
-- [static var refundRequest: StoreKitRefundRequestAPI](failablestorekitapi/refundrequest.md)
-- [static var subscriptionStatus: StoreKitSubscriptionStatusAPI](failablestorekitapi/subscriptionstatus.md)
+### Type Properties
+- [static var appStoreSync: StoreKitAppStoreSyncAPI](./appstoresync.md)
+- [static var appTransaction: StoreKitAppTransactionAPI](./apptransaction.md)
+- [static var loadProducts: StoreKitLoadProductsAPI](./loadproducts.md)
+- [static var manageSubscriptions: StoreKitManageSubscriptionsAPI](./managesubscriptions.md)
+- [static var offerCodeRedeem: StoreKitOfferCodeRedeemAPI](./offercoderedeem.md)
+- [static var purchase: StoreKitPurchaseAPI](./purchase.md)
+- [static var refundRequest: StoreKitRefundRequestAPI](./refundrequest.md)
+- [static var subscriptionStatus: StoreKitSubscriptionStatusAPI](./subscriptionstatus.md)
 
 
 ---

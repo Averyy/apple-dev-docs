@@ -1,7 +1,8 @@
 # movementCount
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For classical music only, the movement count of this song.
 

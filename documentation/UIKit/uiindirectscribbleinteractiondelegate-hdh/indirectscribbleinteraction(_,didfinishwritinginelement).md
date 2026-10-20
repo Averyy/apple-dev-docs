@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the delegate when the user finishes writing.
@@ -10,7 +11,7 @@ Informs the delegate when the user finishes writing.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,15 @@ Use this to reset placeholders or other UI elements, if appropriate, to their st
 - `interaction`: The interaction where the user finished writing.
 - `elementIdentifier`: The identifier of the element that should receive focus.
 
+## Default Implementations
+
+### UIIndirectScribbleInteractionDelegate Implementations
+- [func indirectScribbleInteraction(any UIInteraction, didFinishWritingInElement: Self.ElementIdentifier)](./indirectscribbleinteraction%28_,didfinishwritinginelement%29-9q7os.md)
+
 ## See Also
 
-- [func indirectScribbleInteraction(any UIInteraction, willBeginWritingInElement: Self.ElementIdentifier)](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:willbeginwritinginelement:).md)
+### Tracking Scribble Input
+- [func indirectScribbleInteraction(any UIInteraction, willBeginWritingInElement: Self.ElementIdentifier)](./indirectscribbleinteraction%28_,willbeginwritinginelement%29.md)
   Informs the delegate when the user begins writing.
 
 

@@ -1,7 +1,8 @@
 # WeatherAvailability.AvailabilityKind.temporarilyUnavailable
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data is supported for the location but is temporarily unavailable.
 

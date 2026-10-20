@@ -1,12 +1,13 @@
 # allowsMultipleSelection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether multiple items can be selected.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Returns whether multiple items can be selected.
 optional var allowsMultipleSelection: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL allowsMultipleSelection;
+```
+
 #### Discussion
 
-If this properties is not implemented, the text finder will act as if they returned [`true`](https://developer.apple.com/documentation/swift/true).
+If this properties is not implemented, the text finder will act as if they returned [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isSelectable: Bool](nstextfinderclient/isselectable.md)
+### Selection Information
+- [var isSelectable: Bool](./isselectable.md)
   Returns whether the text is selectable.
-- [var firstSelectedRange: NSRange](nstextfinderclient/firstselectedrange.md)
+- [var firstSelectedRange: NSRange](./firstselectedrange.md)
   Returns the currently selected range.
-- [var selectedRanges: [NSValue]](nstextfinderclient/selectedranges.md)
+- [var selectedRanges: [NSValue]](./selectedranges.md)
   Returns an array of selected ranges.
 
 

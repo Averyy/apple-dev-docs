@@ -1,15 +1,16 @@
 # isCapturingStillImage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether a still image is being captured.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 14.0+
-- macOS 10.8+
+- iOS 5.0+ - Deprecated in 10.0
+- iPadOS 5.0+ - Deprecated in 10.0
+- Mac Catalyst 14.0+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.15
 
 ## Declaration
 
@@ -17,15 +18,20 @@ Indicates whether a still image is being captured.
 var isCapturingStillImage: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isCapturingStillImage) BOOL capturingStillImage;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when a still image is being captured, and [`false`](https://developer.apple.com/documentation/swift/false) when no still image capture is underway.
+The value of this property is [`true`](../../Swift/true.md) when a still image is being captured, and [`false`](../../Swift/false.md) when no still image capture is underway.
 
 This property supports key-value observing.
 
 ## See Also
 
-- [func captureStillImageAsynchronously(from: AVCaptureConnection, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](avcapturestillimageoutput/capturestillimageasynchronously(from:completionhandler:).md)
+### Capturing an image
+- [func captureStillImageAsynchronously(from: AVCaptureConnection, completionHandler: (CMSampleBuffer?, (any Error)?) -> Void)](./capturestillimageasynchronously%28from,completionhandler%29.md)
   Initiates a still image capture and returns immediately.
 
 

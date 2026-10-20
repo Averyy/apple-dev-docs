@@ -1,7 +1,8 @@
 # sec_protocol_options_set_tls_false_start_enabled(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_set_tls_false_start_enabled(_ options: sec_protocol_options_t, _ false_start_enabled: Bool)
+```
+
+```c
+void sec_protocol_options_set_tls_false_start_enabled(sec_protocol_options_t options, bool false_start_enabled);
 ```
 
 #### Discussion

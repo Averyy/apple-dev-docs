@@ -1,7 +1,8 @@
 # init(effect:shape:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hover style with the provided effect and shape.
 
@@ -20,7 +21,8 @@ Creates a hover style with the provided effect and shape.
 
 ## See Also
 
-- [convenience init(shape: UIShape?)](uihoverstyle/init(shape:).md)
+### Creating a hover style
+- [convenience init(shape: UIShape?)](./init%28shape%29.md)
   Creates a hover style with the provided shape and an automatic hover effect.
 
 

@@ -1,7 +1,8 @@
 # CKAccountStatus.noAccount
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t have an iCloud account.
 
@@ -10,7 +11,7 @@ The device doesn’t have an iCloud account.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,15 +21,20 @@ The device doesn’t have an iCloud account.
 case noAccount
 ```
 
+```c
+CKAccountStatusNoAccount
+```
+
 ## See Also
 
-- [CKAccountStatus.available](ckaccountstatus/available.md)
+### Account Statuses
+- [CKAccountStatus.available](./available.md)
   The user’s iCloud account is available.
-- [CKAccountStatus.couldNotDetermine](ckaccountstatus/couldnotdetermine.md)
+- [CKAccountStatus.couldNotDetermine](./couldnotdetermine.md)
   CloudKit can’t determine the status of the user’s iCloud account.
-- [CKAccountStatus.restricted](ckaccountstatus/restricted.md)
+- [CKAccountStatus.restricted](./restricted.md)
   The system denies access to the user’s iCloud account.
-- [CKAccountStatus.temporarilyUnavailable](ckaccountstatus/temporarilyunavailable.md)
+- [CKAccountStatus.temporarilyUnavailable](./temporarilyunavailable.md)
   The user’s iCloud account is temporarily unavailable.
 
 

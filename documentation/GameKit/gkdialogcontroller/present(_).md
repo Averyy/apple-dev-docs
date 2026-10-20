@@ -1,7 +1,8 @@
 # present(_:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the dashboard in the window.
 
@@ -14,9 +15,13 @@ Presents the dashboard in the window.
 func present(_ viewController: any NSViewController & GKViewController) -> Bool
 ```
 
+```objc
+- (BOOL) presentViewController:(NSViewController<GKViewController> *) viewController;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the dashboard is presented. [`false`](https://developer.apple.com/documentation/swift/false) if an error occurs.
+[`true`](../../Swift/true.md) if the dashboard is presented. [`false`](../../Swift/false.md) if an error occurs.
 
 #### Discussion
 
@@ -28,7 +33,8 @@ The dashboard covers the window until the player dismisses it.
 
 ## See Also
 
-- [func dismiss(Any)](gkdialogcontroller/dismiss(_:).md)
+### Presenting and Dismissing the Dialog
+- [func dismiss(Any)](./dismiss%28_%29.md)
   Dismisses the dashboard.
 
 

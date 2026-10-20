@@ -1,7 +1,8 @@
 # init(stride:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(stride: Int)
+```
+
+```objc
+- (instancetype) initWithStride:(NSUInteger) stride;
 ```
 
 

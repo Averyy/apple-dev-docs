@@ -1,7 +1,8 @@
 # ARPlaneExtent
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The size and y-axis rotation of a detected plane.
 
@@ -15,19 +16,23 @@ The size and y-axis rotation of a detected plane.
 class ARPlaneExtent
 ```
 
+```objc
+@interface ARPlaneExtent : NSObject
+```
+
 #### Overview
 
-A plane anchor ([`ARPlaneAnchor`](arplaneanchor.md)) describes its size and orientation on the y-axis using the [`planeExtent`](arplaneanchor/planeextent.md) property of this type.
+A plane anchor ([`ARPlaneAnchor`](./arplaneanchor.md)) describes its size and orientation on the y-axis using the [`planeExtent`](./arplaneanchor/planeextent.md) property of this type.
 
 At runtime, ARKit continually updates the anchor’s width and height as the framework refines its knowledge of the plane’s shape in the environment.
 
-Similarly, as the session runs, the framework may update the plane’s y-rotation to better fit its rectangular area in the environment. In iOS 15 and earlier, the framework rotates the plane anchor according to that angle. In iOS 16, the framework doesn’t rotate the anchor automatically and its transform matrix remains unchanged. Instead, the framework exposes the angle [`rotationOnYAxis`](arplaneextent/rotationonyaxis.md) that you apply to any plane extent geometry in your app.
+Similarly, as the session runs, the framework may update the plane’s y-rotation to better fit its rectangular area in the environment. In iOS 15 and earlier, the framework rotates the plane anchor according to that angle. In iOS 16, the framework doesn’t rotate the anchor automatically and its transform matrix remains unchanged. Instead, the framework exposes the angle [`rotationOnYAxis`](./arplaneextent/rotationonyaxis.md) that you apply to any plane extent geometry in your app.
 
 > ❗ **Important**:  Apps that run on iOS 16 with a deployment target less than iOS 16 preserve the prior y-axis rotation behavior.
 
-##### Size and Rotate an Entity to a Planes Extent
+##### Size and Rotate an Entity to a Plane’s Extent
 
-The following code defines a RealityKit entity sized to the plane extent’s width and height. The helper function also applies the extent’s suggested y-axis rotation by setting its transform `yaw` value to [`rotationOnYAxis`](arplaneextent/rotationonyaxis.md).
+The following code defines a RealityKit entity sized to the plane extent’s width and height. The helper function also applies the extent’s suggested y-axis rotation by setting its transform `yaw` value to [`rotationOnYAxis`](./arplaneextent/rotationonyaxis.md).
 
 ```swift
 func createPlane(for planeAnchor: ARPlaneAnchor, material: Material) -> ModelEntity {
@@ -52,39 +57,40 @@ func createPlane(for planeAnchor: ARPlaneAnchor, material: Material) -> ModelEnt
 ## Topics
 
 ### Inspecting Plane Size
-- [var width: Float](arplaneextent/width.md)
+- [var width: Float](./arplaneextent/width.md)
   The estimated width of the plane.
-- [var height: Float](arplaneextent/height.md)
+- [var height: Float](./arplaneextent/height.md)
   The estimated height of the plane.
 ### Inspecting Plane Y-Rotation
-- [var rotationOnYAxis: Float](arplaneextent/rotationonyaxis.md)
+- [var rotationOnYAxis: Float](./arplaneextent/rotationonyaxis.md)
   A radian value that indicates a plane’s y-axis orientation.
 ### Initializers
-- [init?(coder: NSCoder)](arplaneextent/init(coder:).md)
+- [init?(coder: NSCoder)](./arplaneextent/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var center: simd_float3](arplaneanchor/center.md)
+### Dimensions
+- [var center: simd_float3](./arplaneanchor/center.md)
   The center point of the plane relative to its anchor position.
-- [var planeExtent: ARPlaneExtent](arplaneanchor/planeextent.md)
+- [var planeExtent: ARPlaneExtent](./arplaneanchor/planeextent.md)
   The estimated width, length, and y-axis rotation of the detected plane.
-- [var extent: simd_float3](arplaneanchor/extent.md)
+- [var extent: simd_float3](./arplaneanchor/extent.md)
   The estimated width and length of the detected plane.
 
 

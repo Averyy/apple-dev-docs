@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The leading position in the Dynamic Island for views of an expanded Live Activity.
 
@@ -17,11 +18,12 @@ static let leading: DynamicIslandExpandedRegionPosition
 
 ## See Also
 
-- [static let bottom: DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition/bottom.md)
+### View positions
+- [static let bottom: DynamicIslandExpandedRegionPosition](./bottom.md)
   The bottom position in the Dynamic Island for views of an expanded Live Activity.
-- [static let center: DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition/center.md)
+- [static let center: DynamicIslandExpandedRegionPosition](./center.md)
   The center position in the Dynamic Island for views of an expanded Live Activity.
-- [static let trailing: DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition/trailing.md)
+- [static let trailing: DynamicIslandExpandedRegionPosition](./trailing.md)
   The trailing position in the Dynamic Island for views of an expanded Live Activity.
 
 

@@ -1,7 +1,8 @@
 # labelsSortedByProbability
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The labels sorted  by decreasing probability.
 
@@ -22,11 +23,12 @@ var labelsSortedByProbability: [Label] { get }
 
 ## See Also
 
-- [var endIndex: Int](classificationdistribution/endindex.md)
+### Getting the properties
+- [var endIndex: Int](./endindex.md)
   The index of the final element in the classification distribution.
-- [var mostLikelyLabel: Label?](classificationdistribution/mostlikelylabel.md)
+- [var mostLikelyLabel: Label?](./mostlikelylabel.md)
   The label with the highest probability.
-- [var startIndex: Int](classificationdistribution/startindex.md)
+- [var startIndex: Int](./startindex.md)
   The index of the initial element in the classification distribution.
 
 

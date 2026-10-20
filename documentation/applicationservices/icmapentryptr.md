@@ -1,7 +1,8 @@
 # ICMapEntryPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICMapEntryPtr = UnsafeMutablePointer<ICMapEntry>
+```
+
+```c
+typedef ICMapEntry *ICMapEntryPtr;
 ```
 
 

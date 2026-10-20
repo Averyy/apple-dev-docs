@@ -1,7 +1,8 @@
 # init(mode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cloth grab component with the given grab mode.
 
@@ -22,7 +23,8 @@ init(mode: ClothGrabComponent.GrabMode)
 
 ## See Also
 
-- [ClothGrabComponent.GrabMode](clothgrabcomponent/grabmode.md)
+### Creating a grab component
+- [ClothGrabComponent.GrabMode](./grabmode.md)
   Defines whether a grab component will select particles using a ray or a volume.
 
 

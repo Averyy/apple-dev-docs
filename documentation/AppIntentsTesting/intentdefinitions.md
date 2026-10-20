@@ -1,7 +1,8 @@
 # IntentDefinitions
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of definitions that catalog your app’s intents, enums, entities, and queries.
 
@@ -22,7 +23,7 @@ struct IntentDefinitions
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](./testing-your-app-intents-code.md)
 
 #### Overview
 
@@ -44,42 +45,42 @@ let enumCase = definitions.enums["CoffeeSizeEnum"]
 ## Topics
 
 ### Creating an intent definition
-- [init(bundleIdentifier: String)](intentdefinitions/init(bundleidentifier:).md)
+- [init(bundleIdentifier: String)](./intentdefinitions/init%28bundleidentifier%29.md)
   Creates a new collection of definitions for intents that the specified app bundle contains.
-- [let bundleIdentifier: String](intentdefinitions/bundleidentifier.md)
+- [let bundleIdentifier: String](./intentdefinitions/bundleidentifier.md)
   The bundle identifier of the app target under test.
 ### Accessing app intents
-- [var intents: IntentDefinitions.DefinitionCollection<AppIntentDefinition>](intentdefinitions/intents.md)
+- [var intents: IntentDefinitions.DefinitionCollection<AppIntentDefinition>](./intentdefinitions/intents.md)
   The definitions for the target app’s app intents.
-- [struct AppIntentDefinition](appintentdefinition.md)
+- [struct AppIntentDefinition](./appintentdefinition.md)
   A definition you use to dynamically create intent instances for testing.
 ### Accessing app entities and queries
-- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](intentdefinitions/entities.md)
+- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](./intentdefinitions/entities.md)
   The definitions for the target app’s app entities.
-- [struct AppEntityDefinition](appentitydefinition.md)
+- [struct AppEntityDefinition](./appentitydefinition.md)
   A definition you use to dynamically create entity instances for testing.
-- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](intentdefinitions/valuequeries.md)
+- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](./intentdefinitions/valuequeries.md)
   The definitions for the app’s intent value queries.
-- [struct IntentValueQueryDefinition](intentvaluequerydefinition.md)
+- [struct IntentValueQueryDefinition](./intentvaluequerydefinition.md)
   A definition you use to create an intent value query for testing.
-- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](intentdefinitions/transiententities.md)
+- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](./intentdefinitions/transiententities.md)
   Retrieve a transient app entity definition using subscript syntax.
-- [struct TransientAppEntityDefinition](transientappentitydefinition.md)
+- [struct TransientAppEntityDefinition](./transientappentitydefinition.md)
   A definition you use to dynamically create transient app entities for testing.
 ### Accessing app enums
-- [var enums: IntentDefinitions.DefinitionCollection<AppEnumDefinition>](intentdefinitions/enums.md)
+- [var enums: IntentDefinitions.DefinitionCollection<AppEnumDefinition>](./intentdefinitions/enums.md)
   The definitions for the target app’s app enums.
-- [struct AppEnumDefinition](appenumdefinition.md)
+- [struct AppEnumDefinition](./appenumdefinition.md)
   An app enumeration definition for testing and dynamic enumeration creation.
 ### Supporting types
-- [IntentDefinitions.DefinitionCollection](intentdefinitions/definitioncollection.md)
+- [IntentDefinitions.DefinitionCollection](./intentdefinitions/definitioncollection.md)
   A collection of a specific type of definition.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

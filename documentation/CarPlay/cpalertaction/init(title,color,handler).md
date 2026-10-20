@@ -1,7 +1,8 @@
 # init(title:color:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(title: String, color: UIColor, handler: @escaping CPAlertActionHandler)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title color:(UIColor *) color handler:(CPAlertActionHandler) handler;
 ```
 
 

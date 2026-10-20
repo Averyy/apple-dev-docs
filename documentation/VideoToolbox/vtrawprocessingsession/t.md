@@ -1,7 +1,8 @@
 # VTRAWProcessingSession.T
 
 **Framework**: Video Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+

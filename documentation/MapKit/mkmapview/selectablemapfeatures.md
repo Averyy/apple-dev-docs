@@ -1,7 +1,8 @@
 # selectableMapFeatures
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that describes which selectable features the map responds to.
 
@@ -17,15 +18,20 @@ The property that describes which selectable features the map responds to.
 var selectableMapFeatures: MKMapFeatureOptions { get set }
 ```
 
+```objc
+@property (nonatomic) MKMapFeatureOptions selectableMapFeatures;
+```
+
 ## See Also
 
-- [func mapView(MKMapView, didSelect: MKAnnotationView)](mkmapviewdelegate/mapview(_:didselect:)-41by3.md)
+### Selecting annotations and annotations views
+- [func mapView(MKMapView, didSelect: MKAnnotationView)](../mkmapviewdelegate/mapview%28_,didselect%29-41by3.md)
   Tells the delegate when the user selects one or more of its annotation views.
-- [func mapView(MKMapView, didDeselect: MKAnnotationView)](mkmapviewdelegate/mapview(_:diddeselect:)-yo7q.md)
+- [func mapView(MKMapView, didDeselect: MKAnnotationView)](../mkmapviewdelegate/mapview%28_,diddeselect%29-yo7q.md)
   Tells the delegate when the user deselects one or more of its annotation views.
-- [func mapView(MKMapView, didDeselect: any MKAnnotation)](mkmapviewdelegate/mapview(_:diddeselect:)-4ldss.md)
+- [func mapView(MKMapView, didDeselect: any MKAnnotation)](../mkmapviewdelegate/mapview%28_,diddeselect%29-4ldss.md)
   Tells the delegate when the user deselects one or more annotations.
-- [func mapView(MKMapView, didSelect: any MKAnnotation)](mkmapviewdelegate/mapview(_:didselect:)-9km43.md)
+- [func mapView(MKMapView, didSelect: any MKAnnotation)](../mkmapviewdelegate/mapview%28_,didselect%29-9km43.md)
   Tells the delegate when the user selects one or more annotations.
 
 

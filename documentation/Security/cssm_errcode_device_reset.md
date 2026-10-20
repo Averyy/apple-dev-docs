@@ -1,7 +1,8 @@
 # CSSM_ERRCODE_DEVICE_RESET
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ERRCODE_DEVICE_RESET: Int { get }
+```
+
+```c
+CSSM_ERRCODE_DEVICE_RESET
 ```
 
 

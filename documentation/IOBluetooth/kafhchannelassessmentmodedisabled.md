@@ -1,10 +1,11 @@
 # kAFHChannelAssessmentModeDisabled
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAFHChannelAssessmentModeDisabled: BluetoothHCIAFHChannelAssessmentModes { get }
 ```
 
+```c
+kAFHChannelAssessmentModeDisabled
+```
+
 ## See Also
 
-- [var kAFHChannelAssessmentModeEnabled: BluetoothHCIAFHChannelAssessmentModes](kafhchannelassessmentmodeenabled.md)
+### Constants
+- [var kAFHChannelAssessmentModeEnabled: BluetoothHCIAFHChannelAssessmentModes](./kafhchannelassessmentmodeenabled.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOSurfaceComponentType.float
 
 **Framework**: IOSurface  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 case float
 ```
 
+```c
+kIOSurfaceComponentTypeFloat
+```
+
 ## See Also
 
-- [IOSurfaceComponentType.signedInteger](iosurfacecomponenttype/signedinteger.md)
-- [IOSurfaceComponentType.signedNormalized](iosurfacecomponenttype/signednormalized.md)
-- [IOSurfaceComponentType.unknown](iosurfacecomponenttype/unknown.md)
-- [IOSurfaceComponentType.unsignedInteger](iosurfacecomponenttype/unsignedinteger.md)
+### Enumeration Cases
+- [IOSurfaceComponentType.signedInteger](./signedinteger.md)
+- [IOSurfaceComponentType.signedNormalized](./signednormalized.md)
+- [IOSurfaceComponentType.unknown](./unknown.md)
+- [IOSurfaceComponentType.unsignedInteger](./unsignedinteger.md)
 
 
 ---

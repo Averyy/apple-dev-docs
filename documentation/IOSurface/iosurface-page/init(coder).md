@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: IOSurface  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

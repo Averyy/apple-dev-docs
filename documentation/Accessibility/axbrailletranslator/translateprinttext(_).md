@@ -1,7 +1,8 @@
 # translatePrintText(_:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Output Braille uses the unicode Braille characters (0x2800-0x28FF).
 
@@ -18,6 +19,10 @@ Output Braille uses the unicode Braille characters (0x2800-0x28FF).
 
 ```swift
 func translatePrintText(_ printText: String) -> AXBrailleTranslationResult
+```
+
+```objc
+- (AXBrailleTranslationResult *) translatePrintText:(NSString *) printText;
 ```
 
 

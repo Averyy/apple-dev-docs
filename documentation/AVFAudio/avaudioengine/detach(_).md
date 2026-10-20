@@ -1,7 +1,8 @@
 # detach(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detaches an audio node from the audio engine.
 
@@ -20,6 +21,10 @@ Detaches an audio node from the audio engine.
 func detach(_ node: AVAudioNode)
 ```
 
+```objc
+- (void) detachNode:(AVAudioNode *) node;
+```
+
 #### Discussion
 
 If necessary, the audio engine safely disconnects the audio node before detaching it.
@@ -30,9 +35,10 @@ If necessary, the audio engine safely disconnects the audio node before detachin
 
 ## See Also
 
-- [func attach(AVAudioNode)](avaudioengine/attach(_:).md)
+### Attaching and detaching audio nodes
+- [func attach(AVAudioNode)](./attach%28_%29.md)
   Attaches an audio node to the audio engine.
-- [var attachedNodes: Set<AVAudioNode>](avaudioengine/attachednodes.md)
+- [var attachedNodes: Set<AVAudioNode>](./attachednodes.md)
   A read-only set that contains the nodes you attach to the audio engine.
 
 

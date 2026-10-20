@@ -1,15 +1,20 @@
 # deviceSimplePairingComplete(_:status:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func deviceSimplePairingComplete(_ sender: Any!, status: BluetoothHCIEventStatus)
+```
+
+```objc
+- (void) deviceSimplePairingComplete:(id) sender status:(BluetoothHCIEventStatus) status;
 ```
 
 

@@ -1,7 +1,8 @@
 # fillMissing(with:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a modified copy of the column such that every missing element is replaced with the given value.
 

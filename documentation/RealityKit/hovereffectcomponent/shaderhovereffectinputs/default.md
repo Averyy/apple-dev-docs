@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default style initializes the fade-in and fade-out durations to match the durations of the default spotlight.
 

@@ -1,7 +1,8 @@
 # rgbBlendOperation
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the RGB blend operation.
 
@@ -19,9 +20,13 @@ Configures the RGB blend operation.
 var rgbBlendOperation: MTLBlendOperation { get set }
 ```
 
+```objc
+@property (nonatomic) MTLBlendOperation rgbBlendOperation;
+```
+
 #### Discussion
 
-This property defaults to [`MTLBlendOperation.add`](mtlblendoperation/add.md).
+This property defaults to [`MTLBlendOperation.add`](../mtlblendoperation/add.md).
 
 
 ---

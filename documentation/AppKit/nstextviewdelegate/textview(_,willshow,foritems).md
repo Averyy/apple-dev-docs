@@ -1,7 +1,8 @@
 # textView(_:willShow:forItems:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sharing service picker for the current selection.
 
@@ -15,9 +16,13 @@ Returns a sharing service picker for the current selection.
 optional func textView(_ textView: NSTextView, willShow servicePicker: NSSharingServicePicker, forItems items: [Any]) -> NSSharingServicePicker?
 ```
 
+```objc
+- (NSSharingServicePicker *) textView:(NSTextView *) textView willShowSharingServicePicker:(NSSharingServicePicker *) servicePicker forItems:(NSArray *) items;
+```
+
 #### Return Value
 
-An [`NSSharingServicePicker`](nssharingservicepicker.md) instance. The original sharing picker or a new sharing picker instance can be returned.
+An [`NSSharingServicePicker`](../nssharingservicepicker.md) instance. The original sharing picker or a new sharing picker instance can be returned.
 
 #### Discussion
 

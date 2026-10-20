@@ -1,7 +1,8 @@
 # NSWindow.UserTabbingPreference.inFullScreen
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a window should only display as tabs when in full-screen mode.
 
@@ -14,11 +15,16 @@ A value that indicates a window should only display as tabs when in full-screen 
 case inFullScreen
 ```
 
+```c
+NSWindowUserTabbingPreferenceInFullScreen
+```
+
 ## See Also
 
-- [NSWindow.UserTabbingPreference.always](nswindow/usertabbingpreference-swift.enum/always.md)
+### Constants
+- [NSWindow.UserTabbingPreference.always](./always.md)
   A value that indicates a window should always display as tabs.
-- [NSWindow.UserTabbingPreference.manual](nswindow/usertabbingpreference-swift.enum/manual.md)
+- [NSWindow.UserTabbingPreference.manual](./manual.md)
   A value that indicates a window should display as tabs according to the window’s tabbing mode.
 
 

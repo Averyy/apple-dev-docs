@@ -1,7 +1,8 @@
 # GLKMathRadiansToDegrees(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an angle measured in radians to degrees.
 
@@ -17,6 +18,10 @@ Converts an angle measured in radians to degrees.
 func GLKMathRadiansToDegrees(_ radians: Float) -> Float
 ```
 
+```c
+static float GLKMathRadiansToDegrees(float radians);
+```
+
 #### Return Value
 
 The converted angle in degrees.
@@ -27,7 +32,8 @@ The converted angle in degrees.
 
 ## See Also
 
-- [func GLKMathDegreesToRadians(Float) -> Float](glkmathdegreestoradians(_:).md)
+### Converting Angles
+- [func GLKMathDegreesToRadians(Float) -> Float](./glkmathdegreestoradians%28_%29.md)
   Converts an angle measured in degrees to radians.
 
 

@@ -1,7 +1,8 @@
 # GraphicsContext.GradientOptions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect the rendering of color gradients.
 
@@ -23,40 +24,41 @@ struct GradientOptions
 
 #### Overview
 
-Use these options to affect how SwiftUI manages a gradient that you create for a [`GraphicsContext.Shading`](graphicscontext/shading.md) instance for use in a [`GraphicsContext`](graphicscontext.md).
+Use these options to affect how SwiftUI manages a gradient that you create for a [`GraphicsContext.Shading`](./shading.md) instance for use in a [`GraphicsContext`](../graphicscontext.md).
 
 ## Topics
 
 ### Getting gradient options
-- [static var linearColor: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/linearcolor.md)
+- [static var linearColor: GraphicsContext.GradientOptions](./gradientoptions/linearcolor.md)
   An option that interpolates between colors in a linear color space.
-- [static var mirror: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/mirror.md)
+- [static var mirror: GraphicsContext.GradientOptions](./gradientoptions/mirror.md)
   An option that repeats the gradient outside its nominal range, reflecting every other instance.
-- [static var `repeat`: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/repeat.md)
+- [static var `repeat`: GraphicsContext.GradientOptions](./gradientoptions/repeat.md)
   An option that repeats the gradient outside its nominal range.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func stroke(Path, with: GraphicsContext.Shading, lineWidth: CGFloat)](graphicscontext/stroke(_:with:linewidth:).md)
+### Drawing a path
+- [func stroke(Path, with: GraphicsContext.Shading, lineWidth: CGFloat)](./stroke%28_,with,linewidth%29.md)
   Draws a path into the context with a specified line width.
-- [func stroke(Path, with: GraphicsContext.Shading, style: StrokeStyle)](graphicscontext/stroke(_:with:style:).md)
+- [func stroke(Path, with: GraphicsContext.Shading, style: StrokeStyle)](./stroke%28_,with,style%29.md)
   Draws a path into the context with a specified stroke style.
-- [func fill(Path, with: GraphicsContext.Shading, style: FillStyle)](graphicscontext/fill(_:with:style:).md)
+- [func fill(Path, with: GraphicsContext.Shading, style: FillStyle)](./fill%28_,with,style%29.md)
   Draws a path into the context and fills the outlined region.
-- [GraphicsContext.Shading](graphicscontext/shading.md)
+- [GraphicsContext.Shading](./shading.md)
   A color or pattern that you can use to outline or fill a path.
 
 

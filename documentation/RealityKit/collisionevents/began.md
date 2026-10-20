@@ -1,7 +1,8 @@
 # CollisionEvents.Began
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event raised when two objects collide.
 
@@ -11,7 +12,7 @@ An event raised when two objects collide.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,35 +23,36 @@ struct Began
 ## Topics
 
 ### Getting the involved entities
-- [let entityA: Entity](collisionevents/began/entitya.md)
+- [let entityA: Entity](./began/entitya.md)
   The first entity involved in the collision.
-- [let entityB: Entity](collisionevents/began/entityb.md)
+- [let entityB: Entity](./began/entityb.md)
   The second entity involved in the collision.
 ### Characterizing the collision
-- [let impulse: Float](collisionevents/began/impulse.md)
+- [let impulse: Float](./began/impulse.md)
   The total impulse in this collision pair obtained by adding up all the individual impulses applied at each contact point.
-- [let position: SIMD3<Float>](collisionevents/began/position.md)
+- [let position: SIMD3<Float>](./began/position.md)
   A position representing the estimated point of contact.
 ### Instance Properties
-- [var contacts: [Contact]](collisionevents/began/contacts.md)
+- [var contacts: [Contact]](./began/contacts.md)
   All contacts between the collision pair. Empty if all contact information is not requested.
-- [var impulseDirection: SIMD3<Float>](collisionevents/began/impulsedirection.md)
+- [var impulseDirection: SIMD3<Float>](./began/impulsedirection.md)
   The direction of the total impulse in scene coordinate space.
-- [var penetrationDistance: Float](collisionevents/began/penetrationdistance.md)
+- [var penetrationDistance: Float](./began/penetrationdistance.md)
   The estimated distance of overlap between the two colliding entities in scene coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CollisionEvents.Updated](collisionevents/updated.md)
+### Detecting collisions
+- [CollisionEvents.Updated](./updated.md)
   An event raised on every frame when two objects are in contact.
-- [CollisionEvents.Ended](collisionevents/ended.md)
+- [CollisionEvents.Ended](./ended.md)
   An event raised when two objects, previously in contact, separate.
 
 

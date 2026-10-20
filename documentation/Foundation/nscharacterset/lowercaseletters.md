@@ -1,7 +1,8 @@
 # lowercaseLetters
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A character set containing the characters in Unicode General Category Ll.
 
@@ -20,6 +21,10 @@ A character set containing the characters in Unicode General Category Ll.
 class var lowercaseLetters: CharacterSet { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSCharacterSet * lowercaseLetterCharacterSet;
+```
+
 #### Return Value
 
 A character set containing all the lowercase letter characters.
@@ -30,33 +35,34 @@ Informally, this set is the set of all characters used as lowercase letters in a
 
 ## See Also
 
-- [class var alphanumerics: CharacterSet](nscharacterset/alphanumerics.md)
+### Getting Standard Character Sets
+- [class var alphanumerics: CharacterSet](./alphanumerics.md)
   A character set containing the characters in Unicode General Categories L*, M*, and N*.
-- [class var capitalizedLetters: CharacterSet](nscharacterset/capitalizedletters.md)
+- [class var capitalizedLetters: CharacterSet](./capitalizedletters.md)
   A character set containing the characters in Unicode General Category Lt.
-- [class var controlCharacters: CharacterSet](nscharacterset/controlcharacters.md)
+- [class var controlCharacters: CharacterSet](./controlcharacters.md)
   A character set containing the characters in Unicode General Category Cc and Cf.
-- [class var decimalDigits: CharacterSet](nscharacterset/decimaldigits.md)
+- [class var decimalDigits: CharacterSet](./decimaldigits.md)
   A character set containing the characters in the category of Decimal Numbers.
-- [class var decomposables: CharacterSet](nscharacterset/decomposables.md)
+- [class var decomposables: CharacterSet](./decomposables.md)
   A character set containing individual Unicode characters that can also be represented as composed character sequences (such as for letters with accents), by the definition of “standard decomposition” in version 3.2 of the Unicode character encoding standard.
-- [class var illegalCharacters: CharacterSet](nscharacterset/illegalcharacters.md)
+- [class var illegalCharacters: CharacterSet](./illegalcharacters.md)
   A character set containing values in the category of Non-Characters or that have not yet been defined in version 3.2 of the Unicode standard.
-- [class var letters: CharacterSet](nscharacterset/letters.md)
+- [class var letters: CharacterSet](./letters.md)
   A character set containing the characters in Unicode General Category L* & M*.
-- [class var newlines: CharacterSet](nscharacterset/newlines.md)
+- [class var newlines: CharacterSet](./newlines.md)
   A character set containing the newline characters (`U+000A` ~ `U+000D`, `U+0085`, `U+2028`, and `U+2029`).
-- [class var nonBaseCharacters: CharacterSet](nscharacterset/nonbasecharacters.md)
+- [class var nonBaseCharacters: CharacterSet](./nonbasecharacters.md)
   A character set containing the characters in Unicode General Category M*.
-- [class var punctuationCharacters: CharacterSet](nscharacterset/punctuationcharacters.md)
+- [class var punctuationCharacters: CharacterSet](./punctuationcharacters.md)
   A character set containing the characters in Unicode General Category P*.
-- [class var symbols: CharacterSet](nscharacterset/symbols.md)
+- [class var symbols: CharacterSet](./symbols.md)
   A character set containing the characters in Unicode General Category S*.
-- [class var uppercaseLetters: CharacterSet](nscharacterset/uppercaseletters.md)
+- [class var uppercaseLetters: CharacterSet](./uppercaseletters.md)
   A character set containing the characters in Unicode General Category Lu and Lt.
-- [class var whitespacesAndNewlines: CharacterSet](nscharacterset/whitespacesandnewlines.md)
+- [class var whitespacesAndNewlines: CharacterSet](./whitespacesandnewlines.md)
   A character set containing characters in Unicode General Category Z*, `U+000A` ~ `U+000D`, and `U+0085`.
-- [class var whitespaces: CharacterSet](nscharacterset/whitespaces.md)
+- [class var whitespaces: CharacterSet](./whitespaces.md)
   A character set containing the characters in Unicode General Category Zs and `CHARACTER TABULATION` (`U+0009`).
 
 

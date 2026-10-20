@@ -1,7 +1,8 @@
 # body
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body text of the alert.
 
@@ -17,7 +18,8 @@ let body: String
 
 ## See Also
 
-- [let title: String](accessoryliveactivity/content-swift.struct/alertmessage/title.md)
+### Accessing alert text
+- [let title: String](./title.md)
   The title of the alert.
 
 

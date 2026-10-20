@@ -1,7 +1,8 @@
 # current()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared text-input context object.
 
@@ -16,6 +17,10 @@ Returns the shared text-input context object.
 
 ```swift
 class func current() -> UITextInputContext!
+```
+
+```objc
++ (UITextInputContext *) current;
 ```
 
 #### Return Value

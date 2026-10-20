@@ -1,7 +1,8 @@
 # isScrolling
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the scroll view is actively scrolling.
 

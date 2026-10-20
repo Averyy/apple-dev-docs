@@ -1,7 +1,8 @@
 # checkResourceIsReachableAndReturnError(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the resource pointed to by a file URL can be reached.
 
@@ -20,9 +21,13 @@ Returns whether the resource pointed to by a file URL can be reached.
 func checkResourceIsReachableAndReturnError(_ error: NSErrorPointer) -> Bool
 ```
 
+```objc
+- (BOOL) checkResourceIsReachableAndReturnError:(NSError **) error;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the resource is reachable; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the resource is reachable; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -30,7 +35,7 @@ This method synchronously checks if the file at the provided URL is reachable. C
 
 If your app must perform operations on the file, such as opening it or copying resource properties, it is more efficient to attempt the operation and handle any failure that may occur.
 
-If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the object pointer referenced by `error` is populated with additional information.
+If this method returns [`false`](../../Swift/false.md), the object pointer referenced by `error` is populated with additional information.
 
 ## Parameters
 
@@ -38,9 +43,10 @@ If this method returns [`false`](https://developer.apple.com/documentation/swift
 
 ## See Also
 
-- [func isFileReferenceURL() -> Bool](nsurl/isfilereferenceurl.md)
+### Querying an NSURL
+- [func isFileReferenceURL() -> Bool](./isfilereferenceurl%28%29.md)
   Returns whether the URL is a file reference URL.
-- [var isFileURL: Bool](nsurl/isfileurl.md)
+- [var isFileURL: Bool](./isfileurl.md)
   A boolean value that determines whether the receiver is a file URL.
 
 

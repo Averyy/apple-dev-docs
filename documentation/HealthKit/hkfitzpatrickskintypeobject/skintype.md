@@ -1,7 +1,8 @@
 # skinType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s skin type.
 
@@ -19,14 +20,18 @@ The user’s skin type.
 var skinType: HKFitzpatrickSkinType { get }
 ```
 
+```objc
+@property (readonly) HKFitzpatrickSkinType skinType;
+```
+
 #### Discussion
 
-For a list of possible skin types, see [`HKFitzpatrickSkinType`](hkfitzpatrickskintype.md).
+For a list of possible skin types, see [`HKFitzpatrickSkinType`](../hkfitzpatrickskintype.md).
 
 ## Topics
 
 ### Valid Skin Types
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
+- [enum HKFitzpatrickSkinType](../hkfitzpatrickskintype.md)
   Categories representing the user’s skin type based on the Fitzpatrick scale.
 
 

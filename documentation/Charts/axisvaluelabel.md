@@ -1,7 +1,8 @@
 # AxisValueLabel
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A label that describes the value for an axis mark.
 
@@ -22,46 +23,47 @@ struct AxisValueLabel<Content> where Content : View
 
 ## Mentions
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+- [Customizing axes in Swift Charts](./customizing-axes-in-swift-charts.md)
 
 ## Topics
 
 ### Supporting types
-- [struct AxisValueLabelOrientation](axisvaluelabelorientation.md)
+- [struct AxisValueLabelOrientation](./axisvaluelabelorientation.md)
   Describes the orientation of a label.
-- [struct AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution.md)
+- [struct AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution.md)
 ### Initializers
-- [init(LocalizedStringResource, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](axisvaluelabel/init(_:centered:anchor:multilabelalignment:collisionresolution:offsetsmarks:orientation:horizontalspacing:verticalspacing:)-4xde3.md)
+- [init(LocalizedStringResource, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](./axisvaluelabel/init%28_,centered,anchor,multilabelalignment,collisionresolution,offsetsmarks,orientation,horizontalspacing,verticalspacing%29-4xde3.md)
   Constructs an axis value label with the given properties to display the given string.
-- [init(LocalizedStringKey, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](axisvaluelabel/init(_:centered:anchor:multilabelalignment:collisionresolution:offsetsmarks:orientation:horizontalspacing:verticalspacing:)-9202h.md)
+- [init(LocalizedStringKey, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](./axisvaluelabel/init%28_,centered,anchor,multilabelalignment,collisionresolution,offsetsmarks,orientation,horizontalspacing,verticalspacing%29-9202h.md)
   Constructs an axis value label with the given properties to display the given string.
-- [init<S>(S, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](axisvaluelabel/init(_:centered:anchor:multilabelalignment:collisionresolution:offsetsmarks:orientation:horizontalspacing:verticalspacing:)-9rytf.md)
+- [init<S>(S, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](./axisvaluelabel/init%28_,centered,anchor,multilabelalignment,collisionresolution,offsetsmarks,orientation,horizontalspacing,verticalspacing%29-9rytf.md)
   Constructs an axis value label with the given properties to display the given string.
-- [init(centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](axisvaluelabel/init(centered:anchor:multilabelalignment:collisionresolution:offsetsmarks:orientation:horizontalspacing:verticalspacing:).md)
+- [init(centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](./axisvaluelabel/init%28centered,anchor,multilabelalignment,collisionresolution,offsetsmarks,orientation,horizontalspacing,verticalspacing%29.md)
   Constructs axis value labels with the given properties and default text.
-- [init(centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?, content: () -> Content)](axisvaluelabel/init(centered:anchor:multilabelalignment:collisionresolution:offsetsmarks:orientation:horizontalspacing:verticalspacing:content:).md)
+- [init(centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?, content: () -> Content)](./axisvaluelabel/init%28centered,anchor,multilabelalignment,collisionresolution,offsetsmarks,orientation,horizontalspacing,verticalspacing,content%29.md)
   Constructs an axis value label with the given properties to display the given content.
-- [init<Format>(format: Format, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](axisvaluelabel/init(format:centered:anchor:multilabelalignment:collisionresolution:offsetsmarks:orientation:horizontalspacing:verticalspacing:).md)
+- [init<Format>(format: Format, centered: Bool?, anchor: UnitPoint?, multiLabelAlignment: Alignment?, collisionResolution: AxisValueLabelCollisionResolution, offsetsMarks: Bool?, orientation: AxisValueLabelOrientation, horizontalSpacing: CGFloat?, verticalSpacing: CGFloat?)](./axisvaluelabel/init%28format,centered,anchor,multilabelalignment,collisionresolution,offsetsmarks,orientation,horizontalspacing,verticalspacing%29.md)
   Constructs an axis value label with the given properties to display the given content.
 
 ## Relationships
 
 ### Conforms To
-- [AxisMark](axismark.md)
+- [AxisMark](./axismark.md)
 
 ## See Also
 
-- [protocol AxisMark](axismark.md)
+### Axis marks
+- [protocol AxisMark](./axismark.md)
   A type that serves as the basic building block for the elements of an axis.
-- [struct AxisTick](axistick.md)
+- [struct AxisTick](./axistick.md)
   A mark that a chart draws on an axis to indicate a reference point along that axis.
-- [struct AxisGridLine](axisgridline.md)
+- [struct AxisGridLine](./axisgridline.md)
   A line that a chart draws across its plot area to indicate a reference point along a particular axis.
-- [struct AxisValue](axisvalue.md)
+- [struct AxisValue](./axisvalue.md)
   A value for an axis mark.
-- [struct AnyAxisMark](anyaxismark.md)
+- [struct AnyAxisMark](./anyaxismark.md)
   A type-erased axis mark.
-- [struct AxisMarkBuilder](axismarkbuilder.md)
+- [struct AxisMarkBuilder](./axismarkbuilder.md)
   A result builder that constructs axis marks and overrides default marks.
 
 

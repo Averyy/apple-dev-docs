@@ -1,7 +1,8 @@
 # defaultVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the default visibility of a table column.
 
@@ -29,14 +30,15 @@ A `hidden` column will not be visible, unless the `Table` is also bound to `Tabl
 
 ## See Also
 
+### Configuring the content
 - [func alignment(TableColumnAlignment) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/alignment(_:).md)
+](./alignment%28_%29.md)
   Sets the alignment of the column, applying to both its column header label and the row view content for that column.
 - [func customizationID(String) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/customizationid(_:).md)
+](./customizationid%28_%29.md)
   Sets the identifier to be associated with a column when persisting its state with `TableColumnCustomization`.
 - [func disabledCustomizationBehavior(TableColumnCustomizationBehavior) -> some TableColumnContent<Self.TableRowValue, Self.TableColumnSortComparator>
-](tablecolumncontent/disabledcustomizationbehavior(_:).md)
+](./disabledcustomizationbehavior%28_%29.md)
   Sets the disabled customization behavior for a table column.
 
 

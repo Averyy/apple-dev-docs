@@ -1,14 +1,15 @@
 # KDTEST_SETUP_COPROCESSOR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KDTEST_SETUP_COPROCESSOR
 ```
 

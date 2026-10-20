@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from single value.
 
@@ -11,7 +12,7 @@ Creates an object from single value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,13 @@ init(floatLiteral value: Float)
 
 #### Discussion
 
-RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](../roughness-swift.property.md) and [`metallic`](../metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners.](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Specular-swift-struct-init(floatLiteral:)-1@2x.png)
+![An illustration showing a sphere and a cube with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicallyBasedMaterial-Specular-swift-struct-init(floatLiteral:)-1@2x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core PBR properties, you can create additional realistic effects by augmenting the specular highlights.
 
-This initializer creates a [`PhysicallyBasedMaterial.Specular`](physicallybasedmaterial/specular-swift.struct.md) object from a single value that applies to the entire material.
+This initializer creates a [`PhysicallyBasedMaterial.Specular`](../specular-swift.struct.md) object from a single value that applies to the entire material.
 
 ## Parameters
 
@@ -35,9 +36,10 @@ This initializer creates a [`PhysicallyBasedMaterial.Specular`](physicallybasedm
 
 ## See Also
 
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/specular-swift.struct/init(scale:texture:).md)
+### Creating a specular object
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object from a single value or a texture.
-- [init(CustomMaterial.Specular)](physicallybasedmaterial/specular-swift.struct/init(_:).md)
+- [init(CustomMaterial.Specular)](./init%28_%29.md)
   Creates an object from a custom material’s specular property.
 
 

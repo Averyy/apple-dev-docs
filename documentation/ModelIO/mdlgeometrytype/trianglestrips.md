@@ -1,7 +1,8 @@
 # MDLGeometryType.triangleStrips
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The first three consecutive indices in the submesh refer to three vertices to be rendered as a triangle. Each subsequent index refers to another vertex that completes a triangle formed by connecting it to the previous two vertices.
 
@@ -19,17 +20,22 @@ The first three consecutive indices in the submesh refer to three vertices to be
 case triangleStrips
 ```
 
+```c
+MDLGeometryTypeTriangleStrips
+```
+
 ## See Also
 
-- [MDLGeometryType.points](mdlgeometrytype/points.md)
+### Constants
+- [MDLGeometryType.points](./points.md)
   Each index in the submesh refers to a vertex to be rendered as a single point.
-- [MDLGeometryType.lines](mdlgeometrytype/lines.md)
+- [MDLGeometryType.lines](./lines.md)
   Each pair of consecutive indices in the submesh refers to two vertices to be rendered as a line segment.
-- [MDLGeometryType.triangles](mdlgeometrytype/triangles.md)
+- [MDLGeometryType.triangles](./triangles.md)
   Each set of three consecutive indices in the submesh refers to three vertices to be rendered as a triangle.
-- [MDLGeometryType.quads](mdlgeometrytype/quads.md)
+- [MDLGeometryType.quads](./quads.md)
   Each set of four consecutive indices in the submesh refers to four vertices to be rendered as a quadrilateral.
-- [MDLGeometryType.variableTopology](mdlgeometrytype/variabletopology.md)
+- [MDLGeometryType.variableTopology](./variabletopology.md)
   The submesh’s index buffer does not contain a uniform set of primitives.
 
 

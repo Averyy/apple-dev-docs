@@ -1,7 +1,8 @@
 # USDPlayer.MeshData.MeshType.deformable(_:)
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mesh driven by the given deformation resource.
 

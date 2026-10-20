@@ -1,12 +1,13 @@
 # Pinpointing the Location of Errors
 
-**Framework**: Enterprise Program API
+**Framework**: Enterprise Program API  
+**Role**: Article
 
 Locate the specific source of the error.
 
 #### Overview
 
-Some errors are produced by a specific element of the request. In that case, the [`ErrorResponse`](errorresponse.md) includes `source.parameter` or `source.pointer` values to indicate the exact location of the error. When the location of the error cannot be determined, the error response does not include those parameters. In some cases, the JSON pointer may indicate an element that isn’t in the request entity, but should be.
+Some errors are produced by a specific element of the request. In that case, the [`ErrorResponse`](./errorresponse.md) includes `source.parameter` or `source.pointer` values to indicate the exact location of the error. When the location of the error cannot be determined, the error response does not include those parameters. In some cases, the JSON pointer may indicate an element that isn’t in the request entity, but should be.
 
 ##### Use the Error Response to Pinpoint Parameter Errors
 
@@ -45,13 +46,14 @@ The `source.parameter` value indicates that the error is located in the `filter[
 
 When an error occurs due to a problem with an entity, the `source` property contains a JSON pointer that describes the place in the request entity where the error originates. In some cases, this pointer may indicate an element that is not in the request entity but should be.
 
-For more information about JSON pointers, see the [`RFC 6901`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6901) proposed standards document.
+For more information about JSON pointers, see the [RFC 6901](https://tools.ietf.org/html/rfc6901) proposed standards document.
 
 ## See Also
 
-- [About the HTTP Status Code](about-the-http-status-code.md)
+### Handling Errors
+- [About the HTTP Status Code](./about-the-http-status-code.md)
   Learn how the status code helps you determine if an Enterprise Program  API request succeeded or why it failed.
-- [Parsing the Error Response Code](parsing-the-error-response-code.md)
+- [Parsing the Error Response Code](./parsing-the-error-response-code.md)
   Interpret the error details to troubleshoot API requests and perform programmatic error handling.
 
 

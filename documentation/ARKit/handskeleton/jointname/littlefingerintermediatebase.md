@@ -1,7 +1,8 @@
 # HandSkeleton.JointName.littleFingerIntermediateBase
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,10 +15,11 @@ case littleFingerIntermediateBase
 
 ## See Also
 
-- [HandSkeleton.JointName.littleFingerIntermediateTip](handskeleton/jointname/littlefingerintermediatetip.md)
-- [HandSkeleton.JointName.littleFingerKnuckle](handskeleton/jointname/littlefingerknuckle.md)
-- [HandSkeleton.JointName.littleFingerMetacarpal](handskeleton/jointname/littlefingermetacarpal.md)
-- [HandSkeleton.JointName.littleFingerTip](handskeleton/jointname/littlefingertip.md)
+### Little finger joints
+- [HandSkeleton.JointName.littleFingerIntermediateTip](./littlefingerintermediatetip.md)
+- [HandSkeleton.JointName.littleFingerKnuckle](./littlefingerknuckle.md)
+- [HandSkeleton.JointName.littleFingerMetacarpal](./littlefingermetacarpal.md)
+- [HandSkeleton.JointName.littleFingerTip](./littlefingertip.md)
 
 
 ---

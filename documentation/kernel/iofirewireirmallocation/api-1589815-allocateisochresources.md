@@ -1,14 +1,15 @@
 # allocateIsochResources
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn allocateIsochResources(UInt8 isochChannel, UInt32 bandwidthUnits);
 ```
 

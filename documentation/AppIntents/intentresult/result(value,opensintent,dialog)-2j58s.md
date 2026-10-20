@@ -1,7 +1,8 @@
 # result(value:opensIntent:dialog:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates the `AppIntent` finished performing
 
@@ -11,7 +12,7 @@ Indicates the `AppIntent` finished performing
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

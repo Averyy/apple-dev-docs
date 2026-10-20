@@ -1,7 +1,8 @@
 # Audio.Directivity.beam(focus:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A parametric frequency-dependent radiation pattern, where the `focus` determines the width of a beam.
 

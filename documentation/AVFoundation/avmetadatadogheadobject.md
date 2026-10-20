@@ -1,7 +1,8 @@
 # AVMetadataDogHeadObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete metadata object subclass representing a dog head.
 
@@ -18,26 +19,31 @@ A concrete metadata object subclass representing a dog head.
 class AVMetadataDogHeadObject
 ```
 
+```objc
+@interface AVMetadataDogHeadObject : AVMetadataObject
+```
+
 #### Overview
 
-[`AVMetadataDogHeadObject`](avmetadatadogheadobject.md) is a concrete subclass of [`AVMetadataObject`](avmetadataobject.md) representing a dog head.
+[`AVMetadataDogHeadObject`](./avmetadatadogheadobject.md) is a concrete subclass of [`AVMetadataObject`](./avmetadataobject.md) representing a dog head.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataObject](avmetadataobject.md)
+- [AVMetadataObject](./avmetadataobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMetadataCatHeadObject](avmetadatacatheadobject.md)
+### Heads
+- [class AVMetadataCatHeadObject](./avmetadatacatheadobject.md)
   A concrete metadata object subclass representing a cat head.
 
 

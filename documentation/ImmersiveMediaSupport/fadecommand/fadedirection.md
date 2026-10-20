@@ -1,7 +1,8 @@
 # FadeCommand.FadeDirection
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the direction of the fade command.
 
@@ -21,23 +22,23 @@ enum FadeDirection
 ## Topics
 
 ### Enumeration Cases
-- [FadeCommand.FadeDirection.in](fadecommand/fadedirection/in.md)
+- [FadeCommand.FadeDirection.in](./fadedirection/in.md)
   A value that represents fading in of the video frames from a requested color.
-- [FadeCommand.FadeDirection.out](fadecommand/fadedirection/out.md)
+- [FadeCommand.FadeDirection.out](./fadedirection/out.md)
   A value that represents fading out of the video frames to a requested color.
 
 ## Relationships
 
 ### Conforms To
-- [CodingKey](../swift/codingkey.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CodingKey](../../Swift/codingkey.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

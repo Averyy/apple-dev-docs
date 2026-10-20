@@ -1,7 +1,8 @@
 # addCoordinatedAnimations(_:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the animations to coordinate with the active focus animation.
 
@@ -18,6 +19,10 @@ Specifies the animations to coordinate with the active focus animation.
 func addCoordinatedAnimations(_ animations: (() -> Void)?, completion: (() -> Void)? = nil)
 ```
 
+```objc
+- (void) addCoordinatedAnimations:(void (^)()) animations completion:(void (^)()) completion;
+```
+
 #### Discussion
 
 Use this method to coordinate your custom animations with the system animations for adding or removing focus.
@@ -31,11 +36,12 @@ Unless the duration time is inherited, the specified animations may not run in t
 
 ## See Also
 
-- [func addCoordinatedFocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](uifocusanimationcoordinator/addcoordinatedfocusinganimations(_:completion:).md)
+### Adding animations to focus updates
+- [func addCoordinatedFocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](./addcoordinatedfocusinganimations%28_,completion%29.md)
   Runs the specified set of animations together with the system animations for adding focus to an item.
-- [func addCoordinatedUnfocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](uifocusanimationcoordinator/addcoordinatedunfocusinganimations(_:completion:).md)
+- [func addCoordinatedUnfocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](./addcoordinatedunfocusinganimations%28_,completion%29.md)
   Runs the specified set of animations together with the system animations for removing focus from an item.
-- [protocol UIFocusAnimationContext](uifocusanimationcontext.md)
+- [protocol UIFocusAnimationContext](../uifocusanimationcontext.md)
   Information about focusing animations being performed by the system.
 
 

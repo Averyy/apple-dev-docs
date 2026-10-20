@@ -1,7 +1,8 @@
 # HumanHandPoseObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that provides the hand points the analysis recognizes.
 
@@ -22,37 +23,37 @@ struct HumanHandPoseObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNHumanHandPoseObservation)](humanhandposeobservation/init(_:).md)
+- [init(VNHumanHandPoseObservation)](./humanhandposeobservation/init%28_%29.md)
   Creates a human hand pose observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let chirality: HumanHandPoseObservation.Chirality?](humanhandposeobservation/chirality-swift.property.md)
+- [let chirality: HumanHandPoseObservation.Chirality?](./humanhandposeobservation/chirality-swift.property.md)
   The chirality, or handedness, of a pose.
-- [HumanHandPoseObservation.Chirality](humanhandposeobservation/chirality-swift.enum.md)
+- [HumanHandPoseObservation.Chirality](./humanhandposeobservation/chirality-swift.enum.md)
   The hand sidedness of a pose.
-- [var keypoints: MLMultiArray](humanhandposeobservation/keypoints.md)
+- [var keypoints: MLMultiArray](./humanhandposeobservation/keypoints.md)
   The keypoints for the observation.
 ### Getting the joints
-- [HumanHandPoseObservation.JointsGroupName](humanhandposeobservation/jointsgroupname.md)
+- [HumanHandPoseObservation.JointsGroupName](./humanhandposeobservation/jointsgroupname.md)
   The joint group names available in the observation.
-- [HumanHandPoseObservation.JointName](humanhandposeobservation/jointname.md)
+- [HumanHandPoseObservation.JointName](./humanhandposeobservation/jointname.md)
   The supported joint names for the hand pose.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [PoseProviding](poseproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [PoseProviding](./poseproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the device uses additional CPU threads for compilation tasks.
@@ -15,13 +16,17 @@ A Boolean value that indicates whether the device uses additional CPU threads fo
 var shouldMaximizeConcurrentCompilation: Bool { get set }
 ```
 
+```objc
+@property (atomic) BOOL shouldMaximizeConcurrentCompilation;
+```
+
 ## Mentions
 
-- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+- [Using the Metal 4 compilation API](../using-the-metal-4-compilation-api.md)
 
 #### Discussion
 
-The property’s default value is [`false`](https://developer.apple.com/documentation/swift/false). You can retrieve the number of concurrent CPU threads the device is currently using by checking the [`maximumConcurrentCompilationTaskCount`](mtldevice/maximumconcurrentcompilationtaskcount.md) property.
+The property’s default value is [`false`](../../Swift/false.md). You can retrieve the number of concurrent CPU threads the device is currently using by checking the [`maximumConcurrentCompilationTaskCount`](./maximumconcurrentcompilationtaskcount.md) property.
 
 > **Note**: The number of additional CPU threads automatically scales with the system’s hardware capabilities.
 

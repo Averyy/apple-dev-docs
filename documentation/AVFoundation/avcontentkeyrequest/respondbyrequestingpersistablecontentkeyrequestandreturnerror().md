@@ -1,7 +1,8 @@
 # respondByRequestingPersistableContentKeyRequestAndReturnError()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the receiver that the app requires a persistable content key request object for processing.
 
@@ -16,13 +17,25 @@ Tells the receiver that the app requires a persistable content key request objec
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst*
+
+```swift
+func respondByRequestingPersistableContentKeyRequestAndReturnError() throws
+```
+
+*macOS, tvOS, visionOS, watchOS*
+
 ```swift
 func respondByRequestingPersistableContentKeyRequest() throws
 ```
 
+```objc
+- (BOOL) respondByRequestingPersistableContentKeyRequestAndReturnError:(NSError **) outError;
+```
+
 #### Discussion
 
-To create a key that persists across multiple playback sessions, use this method to request an [`AVPersistableContentKeyRequest`](avpersistablecontentkeyrequest.md) object. If the underlying protocol supports persistable content keys, the delegate receives a persistable content key request via the [`contentKeySession(_:didProvide:)`](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-2wdgz.md) method. An [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/internalinconsistencyexception) is returned if your delegate does not respond to [`contentKeySession(_:didProvide:)`](avcontentkeysessiondelegate/contentkeysession(_:didprovide:)-2wdgz.md).
+To create a key that persists across multiple playback sessions, use this method to request an [`AVPersistableContentKeyRequest`](../avpersistablecontentkeyrequest.md) object. If the underlying protocol supports persistable content keys, the delegate receives a persistable content key request via the [`contentKeySession(_:didProvide:)`](../avcontentkeysessiondelegate/contentkeysession%28_,didprovide%29-2wdgz.md) method. An [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md) is returned if your delegate does not respond to [`contentKeySession(_:didProvide:)`](../avcontentkeysessiondelegate/contentkeysession%28_,didprovide%29-2wdgz.md).
 
 
 ---

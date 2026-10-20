@@ -1,7 +1,8 @@
 # segmentBoundaryRecommendations(forVideoTrack:minimumSegmentDuration:minimumSegmentFrameCount:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns segment boundary recommendations for a given source video asset track.
 
@@ -17,6 +18,10 @@ Returns segment boundary recommendations for a given source video asset track.
 
 ```swift
 class func segmentBoundaryRecommendations(forVideoTrack videoAssetTrack: AVAssetTrack, minimumSegmentDuration: CMTime, minimumSegmentFrameCount: Int) -> [AVPlannedVideoSegmentConfiguration]
+```
+
+```objc
++ (NSArray<AVPlannedVideoSegmentConfiguration *> *) segmentBoundaryRecommendationsForVideoAVAssetTrack:(AVAssetTrack *) videoAssetTrack minimumSegmentDuration:(CMTime) minimumSegmentDuration minimumSegmentFrameCount:(NSInteger) minimumSegmentFrameCount;
 ```
 
 #### Return Value
@@ -45,7 +50,8 @@ This method throws NSInvalidArgumentException if minimumSegmentDuration is not n
 
 ## See Also
 
-- [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](avassetwritingplanner/segmentboundaryguidelinesforvideo(codectype:encoderspecification:).md)
+### Getting segment boundary guidance
+- [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](./segmentboundaryguidelinesforvideo%28codectype,encoderspecification%29.md)
   Returns segment boundary guidelines that help clients determine how to segment compression video tracks with best results.
 
 

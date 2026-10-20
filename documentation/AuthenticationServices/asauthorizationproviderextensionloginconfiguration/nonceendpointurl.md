@@ -1,7 +1,8 @@
 # nonceEndpointURL
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to retrieve a one-time use value from the server.
 
@@ -14,21 +15,26 @@ The URL to retrieve a one-time use value from the server.
 var nonceEndpointURL: URL { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSURL * nonceEndpointURL;
+```
+
 ## Mentions
 
-- [Obtaining a server nonce](obtaining-a-server-nonce.md)
+- [Obtaining a server nonce](../obtaining-a-server-nonce.md)
 
 #### Discussion
 
-The value of this property defaults to [`tokenEndpointURL`](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md).
+The value of this property defaults to [`tokenEndpointURL`](./tokenendpointurl.md).
 
 ## See Also
 
-- [var customNonceRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customnoncerequestvalues.md)
+### Configuring the server nonce
+- [var customNonceRequestValues: [URLQueryItem]](./customnoncerequestvalues.md)
   Custom values to add to the server nonce POST request body.
-- [var nonceResponseKeypath: String](asauthorizationproviderextensionloginconfiguration/nonceresponsekeypath.md)
+- [var nonceResponseKeypath: String](./nonceresponsekeypath.md)
   The keypath in the response that contains the one-time use value.
-- [var serverNonceClaimName: String](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md)
+- [var serverNonceClaimName: String](./servernonceclaimname.md)
   The name of the claim to include in authentication requests.
 
 

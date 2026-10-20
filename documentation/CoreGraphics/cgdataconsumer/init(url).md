@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data consumer that writes data to a location specified by a URL.
 
@@ -10,7 +11,7 @@ Creates a data consumer that writes data to a location specified by a URL.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a data consumer that writes data to a location specified by a URL.
 init?(url: CFURL)
 ```
 
+```c
+extern CGDataConsumerRefCGDataConsumerCreateWithURL(CFURLRef url);
+```
+
 #### Return Value
 
-A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](cgdataconsumerrelease.md).
+A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](../cgdataconsumerrelease.md).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ A new data consumer object. In Objective-C, you’re responsible for releasing t
 
 ## See Also
 
-- [init?(info: UnsafeMutableRawPointer?, cbks: UnsafePointer<CGDataConsumerCallbacks>)](cgdataconsumer/init(info:cbks:).md)
+### Creating Data Consumers
+- [init?(info: UnsafeMutableRawPointer?, cbks: UnsafePointer<CGDataConsumerCallbacks>)](./init%28info,cbks%29.md)
   Creates a data consumer that uses callback functions to write data.
-- [init?(data: CFMutableData)](cgdataconsumer/init(data:).md)
+- [init?(data: CFMutableData)](./init%28data%29.md)
   Creates a data consumer that writes to a CFData object.
-- [struct CGDataConsumerCallbacks](cgdataconsumercallbacks.md)
+- [struct CGDataConsumerCallbacks](../cgdataconsumercallbacks.md)
   A structure that contains pointers to callback functions that manage the copying of data for a data consumer.
-- [typealias CGDataConsumerPutBytesCallback](cgdataconsumerputbytescallback.md)
+- [typealias CGDataConsumerPutBytesCallback](../cgdataconsumerputbytescallback.md)
   Copies data from a Core Graphics-supplied buffer into a data consumer.
-- [typealias CGDataConsumerReleaseInfoCallback](cgdataconsumerreleaseinfocallback.md)
+- [typealias CGDataConsumerReleaseInfoCallback](../cgdataconsumerreleaseinfocallback.md)
   Releases any private data or resources associated with the data consumer.
 
 

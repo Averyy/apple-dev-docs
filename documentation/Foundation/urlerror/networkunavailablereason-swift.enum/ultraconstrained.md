@@ -1,7 +1,8 @@
 # URLError.NetworkUnavailableReason.ultraConstrained
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.1+

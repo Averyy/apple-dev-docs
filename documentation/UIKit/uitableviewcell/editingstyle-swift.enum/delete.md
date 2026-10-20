@@ -1,16 +1,17 @@
 # UITableViewCell.EditingStyle.delete
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cell has the delete editing control; this control is a red circle enclosing a minus sign.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The cell has the delete editing control; this control is a red circle enclosing 
 case delete
 ```
 
+```c
+UITableViewCellEditingStyleDelete
+```
+
 ## See Also
 
-- [UITableViewCell.EditingStyle.none](uitableviewcell/editingstyle-swift.enum/none.md)
+### Constants
+- [UITableViewCell.EditingStyle.none](./none.md)
   The cell has no editing control.
-- [UITableViewCell.EditingStyle.insert](uitableviewcell/editingstyle-swift.enum/insert.md)
+- [UITableViewCell.EditingStyle.insert](./insert.md)
   The cell has the insert editing control; this control is a green circle enclosing a plus sign.
 
 

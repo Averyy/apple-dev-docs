@@ -1,7 +1,8 @@
 # lerp(from:to:t:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Spatial vector that represents the linear interpolation at `t` between two vectors.
 

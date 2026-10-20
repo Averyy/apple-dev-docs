@@ -1,7 +1,8 @@
 # Product.SubscriptionRelationship
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,21 +22,21 @@ struct SubscriptionRelationship
 ## Topics
 
 ### Getting subscription relationships
-- [static let all: Product.SubscriptionRelationship](product/subscriptionrelationship/all.md)
-- [static let crossgrade: Product.SubscriptionRelationship](product/subscriptionrelationship/crossgrade.md)
-- [static let current: Product.SubscriptionRelationship](product/subscriptionrelationship/current.md)
-- [static let downgrade: Product.SubscriptionRelationship](product/subscriptionrelationship/downgrade.md)
-- [static let upgrade: Product.SubscriptionRelationship](product/subscriptionrelationship/upgrade.md)
+- [static let all: Product.SubscriptionRelationship](./subscriptionrelationship/all.md)
+- [static let crossgrade: Product.SubscriptionRelationship](./subscriptionrelationship/crossgrade.md)
+- [static let current: Product.SubscriptionRelationship](./subscriptionrelationship/current.md)
+- [static let downgrade: Product.SubscriptionRelationship](./subscriptionrelationship/downgrade.md)
+- [static let upgrade: Product.SubscriptionRelationship](./subscriptionrelationship/upgrade.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

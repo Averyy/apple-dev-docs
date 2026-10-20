@@ -2,6 +2,7 @@
 
 **Framework**: MailKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The rules, as JSON data, that the system applies when it displays a message.
@@ -15,13 +16,17 @@ The rules, as JSON data, that the system applies when it displays a message.
 func contentRulesJSON() -> Data
 ```
 
+```objc
+- (NSData *) contentRulesJSON;
+```
+
 #### Return Value
 
 A data object that contains valid JSON content.
 
 #### Discussion
 
-MailKit relies on WebKit to block content. Therefore, the JSON structure is the same that a content blocker extension for Safari uses. For details about the structure of the JSON to specify the content-blocking rules, see [`Introduction to WebKit Content Blockers`](https://developer.apple.comhttps://webkit.org/blog/3476/content-blockers-first-look/).
+MailKit relies on WebKit to block content. Therefore, the JSON structure is the same that a content blocker extension for Safari uses. For details about the structure of the JSON to specify the content-blocking rules, see [Introduction to WebKit Content Blockers](https://webkit.org/blog/3476/content-blockers-first-look/).
 
 The following code shows an example of a content blocker that uses a rule to hide all links from a specific domain:
 

@@ -1,14 +1,15 @@
 # kHIDUsage_CC_Shutter
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_CC_Shutter = 0x21
 ```
 

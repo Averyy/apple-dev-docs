@@ -1,7 +1,8 @@
 # CMIOExtensionDeviceSource
 
 **Framework**: Core Media I/O  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for objects that act as device sources.
 
@@ -15,6 +16,10 @@ A protocol for objects that act as device sources.
 protocol CMIOExtensionDeviceSource : NSObjectProtocol
 ```
 
+```objc
+@protocol CMIOExtensionDeviceSource <NSObject>
+```
+
 #### Overview
 
 Create a class that adopts this protocol to configure device properties.
@@ -22,23 +27,24 @@ Create a class that adopts this protocol to configure device properties.
 ## Topics
 
 ### Managing Properties
-- [var availableProperties: Set<CMIOExtensionProperty>](cmioextensiondevicesource/availableproperties.md)
+- [var availableProperties: Set<CMIOExtensionProperty>](./cmioextensiondevicesource/availableproperties.md)
   A set of available properties that a device provides.
-- [func deviceProperties(forProperties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionDeviceProperties](cmioextensiondevicesource/deviceproperties(forproperties:).md)
+- [func deviceProperties(forProperties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionDeviceProperties](./cmioextensiondevicesource/deviceproperties%28forproperties%29.md)
   Retrieves the state of device properties.
-- [func setDeviceProperties(CMIOExtensionDeviceProperties) throws](cmioextensiondevicesource/setdeviceproperties(_:).md)
+- [func setDeviceProperties(CMIOExtensionDeviceProperties) throws](./cmioextensiondevicesource/setdeviceproperties%28_%29.md)
   Sets the state of device properties.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CMIOExtensionDevice](cmioextensiondevice.md)
+### Devices
+- [class CMIOExtensionDevice](./cmioextensiondevice.md)
   An object that represents a physical or virtual device.
-- [class CMIOExtensionDeviceProperties](cmioextensiondeviceproperties.md)
+- [class CMIOExtensionDeviceProperties](./cmioextensiondeviceproperties.md)
   An object that defines the properties of a device.
 
 

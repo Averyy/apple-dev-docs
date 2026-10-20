@@ -1,7 +1,8 @@
 # allParameterValues
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Special read-only property for KVO.
 
@@ -19,17 +20,31 @@ Special read-only property for KVO.
 var allParameterValues: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL allParameterValues;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL allParameterValues;
+```
+
 #### Discussion
 
 KVO notifications are issued on this property in response to certain events where potentially all parameter values are invalidated—for example, the selection of a preset.
 
 ## See Also
 
-- [var fullState: [String : Any]?](auaudiounit/fullstate.md)
+### Related Documentation
+- [var fullState: [String : Any]?](./fullstate.md)
   A persistable snapshot of the audio unit’s properties and parameters, suitable for saving as a user preset.
-- [var parameterTree: AUParameterTree?](auaudiounit/parametertree.md)
+### Querying Parameters
+- [var parameterTree: AUParameterTree?](./parametertree.md)
   An audio unit’s parameters, organized in a tree hierarchy.
-- [func parametersForOverview(withCount: Int) -> [NSNumber]](auaudiounit/parametersforoverview(withcount:).md)
+- [func parametersForOverview(withCount: Int) -> [NSNumber]](./parametersforoverview%28withcount%29.md)
   Returns the audio unit’s most important parameters.
 
 

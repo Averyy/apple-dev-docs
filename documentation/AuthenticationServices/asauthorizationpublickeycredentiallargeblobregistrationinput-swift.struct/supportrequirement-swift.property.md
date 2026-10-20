@@ -1,7 +1,8 @@
 # supportRequirement
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type that represents the level of support required for the large binary object passkey extension.
 
@@ -20,7 +21,8 @@ var supportRequirement: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationI
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.enum.md)
+### Determining binary large object support
+- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement](./supportrequirement-swift.enum.md)
   Values that express the level of support required for the binary large object passkey extension.
 
 

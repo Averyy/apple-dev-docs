@@ -1,7 +1,8 @@
 # extracting(droppingLast:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a span over all but the given number of trailing elements.
 
@@ -32,7 +33,7 @@ The returned span represents a mutation of this span.
 
 The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

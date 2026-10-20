@@ -1,7 +1,8 @@
 # EISCONN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Socket is already connected.
 

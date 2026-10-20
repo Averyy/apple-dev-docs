@@ -1,7 +1,8 @@
 # collections
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of media item collections whose contained items match the query’s media property predicate.
 
@@ -15,6 +16,10 @@ An array of media item collections whose contained items match the query’s med
 
 ```swift
 var collections: [MPMediaItemCollection]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<MPMediaItemCollection *> * collections;
 ```
 
 #### Discussion
@@ -51,11 +56,12 @@ NSArray *collections = [everything collections];
 
 Each element of the `collections` array now contains a media item collection. Each collection contains the media items from the library by a particular artist. The system sorts elements of the array by the artist name.
 
-For the available grouping types, see [`MPMediaGrouping`](mpmediagrouping.md).
+For the available grouping types, see [`MPMediaGrouping`](../mpmediagrouping.md).
 
 ## See Also
 
-- [var items: [MPMediaItem]?](mpmediaquery/items.md)
+### Performing media queries
+- [var items: [MPMediaItem]?](./items.md)
   An array of media items that match the media query’s predicate.
 
 

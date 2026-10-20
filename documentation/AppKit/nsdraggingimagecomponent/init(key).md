@@ -1,7 +1,8 @@
 # init(key:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a dragging image component with the specified key.
 
@@ -12,6 +13,10 @@ Initializes and returns a dragging image component with the specified key.
 
 ```swift
 init(key: NSDraggingItem.ImageComponentKey)
+```
+
+```objc
+- (instancetype) initWithKey:(NSDraggingImageComponentKey) key;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ This method is the designated initializer.
 
 ## See Also
 
-- [Drag and Drop](drag-and-drop.md)
+### Related Documentation
+- [Drag and Drop](../drag-and-drop.md)
   Support the direct manipulation of your app’s content using drag and drop.
 
 

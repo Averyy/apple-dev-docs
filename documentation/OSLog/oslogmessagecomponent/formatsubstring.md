@@ -1,7 +1,8 @@
 # formatSubstring
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text immediately preceding a placeholder.
 
@@ -20,13 +21,18 @@ The text immediately preceding a placeholder.
 var formatSubstring: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * formatSubstring;
+```
+
 #### Discussion
 
 The `formatSubstring` property can be an empty string if there is nothing between two placeholders, or if it is between the placeholder and the bounds of the string.
 
 ## See Also
 
-- [var placeholder: String](oslogmessagecomponent/placeholder.md)
+### Reading the Message Component
+- [var placeholder: String](./placeholder.md)
   The placeholder text for the message component.
 
 

@@ -1,18 +1,19 @@
 # location
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the object that contains the latitude, longitude, and course information this proxy simulates for the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,13 +23,18 @@ Returns the object that contains the latitude, longitude, and course information
 var location: CLLocation { get }
 ```
 
+```objc
+@property (copy, readonly) CLLocation * location;
+```
+
 #### Discussion
 
-Use this property to access the underlying [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) this object wraps.
+Use this property to access the underlying [`CLLocation`](../../CoreLocation/cllocation.md) this object wraps.
 
 ## See Also
 
-- [var debugDescription: String](xcuilocation/debugdescription.md)
+### Determining the location
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the location suitable for debugging.
 
 

@@ -1,7 +1,8 @@
 # makeBufferResource(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a GPU-managed buffer resource from the given descriptor.
 
@@ -19,11 +20,11 @@ final func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) thr
 
 #### Return Value
 
-A newly created [`LowLevelBufferResource`](lowlevelbufferresource.md).
+A newly created [`LowLevelBufferResource`](../lowlevelbufferresource.md).
 
 #### Discussion
 
-> **Note**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
+> **Throws**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
 
 ## Parameters
 

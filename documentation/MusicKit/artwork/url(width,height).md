@@ -1,7 +1,8 @@
 # url(width:height:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL to request the image asset for a specified width and height.
 

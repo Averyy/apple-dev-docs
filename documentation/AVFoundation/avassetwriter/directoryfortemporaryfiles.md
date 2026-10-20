@@ -1,7 +1,8 @@
 # directoryForTemporaryFiles
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A directory to contain temporary files that the export process generates.
 
@@ -19,6 +20,10 @@ A directory to contain temporary files that the export process generates.
 var directoryForTemporaryFiles: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * directoryForTemporaryFiles;
+```
+
 #### Discussion
 
 In some configurations, such as performing multipass encoding, an asset writer may need to write temporary files. Use this property value to set the file-system location where it writes temporary files. The system deletes all temporary files after it finishes writing successfully, fails, or you cancel the writing session.
@@ -27,9 +32,10 @@ You can set this value after writing starts.
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avassetwriter/metadata.md)
+### Configuring output
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata items to write to the output file.
-- [var shouldOptimizeForNetworkUse: Bool](avassetwriter/shouldoptimizefornetworkuse.md)
+- [var shouldOptimizeForNetworkUse: Bool](./shouldoptimizefornetworkuse.md)
   A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network.
 
 

@@ -1,7 +1,8 @@
 # requiredBillingContactFields
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields of billing information the user must provide to process the transaction.
 
@@ -11,13 +12,13 @@ The fields of billing information the user must provide to process the transacti
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayContactField> requiredBillingContactFields;
 ```
 
 #### Discussion
 
-Use [`requiredBillingContactFields`](applepayrequest/requiredbillingcontactfields.md) to request the user’s billing address that’s associated with their payment method, as shown in the following listing.
+Use [`requiredBillingContactFields`](./requiredbillingcontactfields.md) to request the user’s billing address that’s associated with their payment method, as shown in the following listing.
 
 ```javascript
 "requiredBillingContactFields": [
@@ -31,7 +32,8 @@ The source of the information may be the user’s “My card” in Contacts, Wal
 
 ## See Also
 
-- [requiredShippingContactFields](applepayrequest/requiredshippingcontactfields.md)
+### Requesting billing and shipping contact information
+- [requiredShippingContactFields](./requiredshippingcontactfields.md)
   The fields of shipping information the user must provide to fulfill the order.
 
 

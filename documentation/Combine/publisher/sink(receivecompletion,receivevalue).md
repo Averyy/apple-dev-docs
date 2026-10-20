@@ -1,7 +1,8 @@
 # sink(receiveCompletion:receiveValue:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches a subscriber with closure-based behavior.
 
@@ -22,7 +23,7 @@ func sink(receiveCompletion: @escaping (Subscribers.Completion<Self.Failure>) ->
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
 #### Return Value
 
@@ -30,9 +31,9 @@ A cancellable instance, which you use when you end assignment of the received va
 
 #### Discussion
 
-Use [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) to observe values received by the publisher and process them using a closure you specify.
+Use [`sink(receiveCompletion:receiveValue:)`](./sink%28receivecompletion,receivevalue%29.md) to observe values received by the publisher and process them using a closure you specify.
 
-In this example, a [`Range`](https://developer.apple.com/documentation/swift/range) publisher publishes integers to a [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) operator’s `receiveValue` closure that prints them to the console. Upon completion the [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) operator’s `receiveCompletion` closure indicates the successful termination of the stream.
+In this example, a [`Range`](../../Swift/range.md) publisher publishes integers to a [`sink(receiveCompletion:receiveValue:)`](./sink%28receivecompletion,receivevalue%29.md) operator’s `receiveValue` closure that prints them to the console. Upon completion the [`sink(receiveCompletion:receiveValue:)`](./sink%28receivecompletion,receivevalue%29.md) operator’s `receiveCompletion` closure indicates the successful termination of the stream.
 
 ```swift
 let myRange = (0...3)
@@ -56,11 +57,12 @@ This method creates the subscriber and immediately requests an unlimited number 
 
 ## See Also
 
-- [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](publisher/assign(to:on:).md)
+### Connecting simple subscribers
+- [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](./assign%28to,on%29.md)
   Assigns each element from a publisher to a property on an object.
-- [func assign(to: inout Published<Self.Output>.Publisher)](publisher/assign(to:).md)
+- [func assign(to: inout Published<Self.Output>.Publisher)](./assign%28to%29.md)
   Republishes elements received from a publisher, by assigning them to a property marked as a publisher.
-- [func sink(receiveValue: (Self.Output) -> Void) -> AnyCancellable](publisher/sink(receivevalue:).md)
+- [func sink(receiveValue: (Self.Output) -> Void) -> AnyCancellable](./sink%28receivevalue%29.md)
   Attaches a subscriber with closure-based behavior to a publisher that never fails.
 
 

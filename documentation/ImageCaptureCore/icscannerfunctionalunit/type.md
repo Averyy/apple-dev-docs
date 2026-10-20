@@ -1,7 +1,8 @@
 # type
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var type: ICScannerFunctionalUnitType { get }
+```
+
+```objc
+@property (readonly) ICScannerFunctionalUnitType type;
 ```
 
 

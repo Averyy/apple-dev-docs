@@ -1,14 +1,15 @@
 # ml_arm_sleep
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_arm_sleep(void);
 ```
 

@@ -1,7 +1,8 @@
 # getCount
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,14 +10,23 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual uint32_t getCount(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int getCount(void);
 ```
 
 ## See Also
 
-- [- getCapacity](oscollection/3438147-getcapacity.md)
-- [- ensureCapacity](oscollection/3438145-ensurecapacity.md)
+### Inspecting a Collection
+- [- getCapacity](./api-3438147-getcapacity.md)
+- [- ensureCapacity](./api-3438145-ensurecapacity.md)
 
 
 ---

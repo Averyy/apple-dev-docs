@@ -1,7 +1,8 @@
 # style
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display style of the sharable content.
 
@@ -19,15 +20,20 @@ The display style of the sharable content.
 var style: SCShareableContentStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCShareableContentStyle style;
+```
+
 ## See Also
 
-- [var contentRect: CGRect](sccontentfilter/contentrect.md)
+### Filter properties
+- [var contentRect: CGRect](./contentrect.md)
   The size and location of the content to filter, in screen points.
-- [var pointPixelScale: Float](sccontentfilter/pointpixelscale.md)
+- [var pointPixelScale: Float](./pointpixelscale.md)
   The scaling factor used to translate screen points into pixels.
-- [var streamType: SCStreamType](sccontentfilter/streamtype.md)
+- [var streamType: SCStreamType](./streamtype.md)
   The type of the streaming content.
-- [enum SCStreamType](scstreamtype.md)
+- [enum SCStreamType](../scstreamtype.md)
   The display type of the presented stream.
 
 

@@ -1,7 +1,8 @@
 # TextureTopology
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies the organization of one of the drawable’s textures.
 
@@ -22,23 +23,24 @@ Metal supports multiple organizations for the textures you use for drawing. Use 
 ## Topics
 
 ### Getting the topology type
-- [var textureType: MTLTextureType](texturetopology/texturetype.md)
+- [var textureType: MTLTextureType](./texturetopology/texturetype.md)
   The texture type value that specifies how the underlying texture organizes its views.
 ### Getting the array length
-- [var arrayLength: UInt64](texturetopology/arraylength.md)
+- [var arrayLength: UInt64](./texturetopology/arraylength.md)
   The number of items in the texture array.
 ### Creating a topology
-- [init()](texturetopology/init.md)
+- [init()](./texturetopology/init%28%29.md)
   Creates a texture topology.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [var textureTopologies: [TextureTopology]](layerrenderer/properties-swift.struct/texturetopologies.md)
+### Getting the layer’s texture topology
+- [var textureTopologies: [TextureTopology]](./layerrenderer/properties-swift.struct/texturetopologies.md)
   The texture topologies available for the layer.
 
 

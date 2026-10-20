@@ -1,7 +1,8 @@
 # endOfEncoderSampleIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index within a counter sample buffer that tells the GPU where to store counter data from the end of a blit pass.
 
@@ -19,23 +20,28 @@ An index within a counter sample buffer that tells the GPU where to store counte
 var endOfEncoderSampleIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger endOfEncoderSampleIndex;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-This property indicates where the GPU stores the counter data within an [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance that it samples at the end of a blit pass.
+This property indicates where the GPU stores the counter data within an [`MTLCounterSampleBuffer`](../mtlcountersamplebuffer.md) instance that it samples at the end of a blit pass.
 
-You can tell the GPU to skip sampling at the end of the blit pass by assigning [`MTLCounterDontSample`](mtlcounterdontsample.md) to this property.
+You can tell the GPU to skip sampling at the end of the blit pass by assigning [`MTLCounterDontSample`](../mtlcounterdontsample.md) to this property.
 
-> ❗ **Important**:  For [`MTLDevice`](mtldevice.md) instances that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](mtlcountersamplingpoint/atstageboundary.md) (see [`supportsCounterSampling(_:)`](mtldevice/supportscountersampling(_:).md)), set this property to [`MTLCounterDontSample`](mtlcounterdontsample.md).
+> ❗ **Important**:  For [`MTLDevice`](../mtldevice.md) instances that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](../mtlcountersamplingpoint/atstageboundary.md) (see [`supportsCounterSampling(_:)`](../mtldevice/supportscountersampling%28_%29.md)), set this property to [`MTLCounterDontSample`](../mtlcounterdontsample.md).
 
 ## See Also
 
-- [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlblitpasssamplebufferattachmentdescriptor/samplebuffer.md)
+### Configuring the sample buffer attachment
+- [var sampleBuffer: (any MTLCounterSampleBuffer)?](./samplebuffer.md)
   A specialized memory buffer that the GPU uses to store its counter data during the blit pass.
-- [var startOfEncoderSampleIndex: Int](mtlblitpasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
+- [var startOfEncoderSampleIndex: Int](./startofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the start of a blit pass.
 
 

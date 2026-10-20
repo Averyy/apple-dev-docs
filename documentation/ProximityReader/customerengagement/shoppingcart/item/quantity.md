@@ -1,7 +1,8 @@
 # quantity
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of units that make up the line item.
 

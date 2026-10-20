@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map compass with the scope you specify.
 
@@ -11,7 +12,7 @@ Creates a new map compass with the scope you specify.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ Creates a new map compass with the scope you specify.
 
 ## Parameters
 
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies a namespace and that you use to associate this control with a map instance.
+- `scope`: A [`Namespace.ID`](../../SwiftUI/namespace/id.md) value that identifies a namespace and that you use to associate this control with a map instance.
 
 
 ---

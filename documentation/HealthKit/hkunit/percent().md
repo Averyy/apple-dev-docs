@@ -1,22 +1,27 @@
 # percent()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring percentages.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func percent() -> Self
+```
+
+```objc
++ (instancetype) percentUnit;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ Percent measures a value between 0.0 and 1.0. HealthKit uses percent units when 
 
 ## See Also
 
-- [class func count() -> Self](hkunit/count.md)
+### Constructing scalar units
+- [class func count() -> Self](./count%28%29.md)
   Returns a HealthKit unit for measuring counts.
 
 

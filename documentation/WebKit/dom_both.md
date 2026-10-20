@@ -1,10 +1,11 @@
 # DOM_BOTH
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var DOM_BOTH: Int { get }
 ```
 
+```c
+DOM_BOTH
+```
+
 ## See Also
 
-- [var DOM_HORIZONTAL: Int](dom_horizontal.md)
-- [var DOM_VERTICAL: Int](dom_vertical.md)
+### Constants
+- [var DOM_HORIZONTAL: Int](./dom_horizontal.md)
+- [var DOM_VERTICAL: Int](./dom_vertical.md)
 
 
 ---

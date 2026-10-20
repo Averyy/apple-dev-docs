@@ -1,7 +1,8 @@
 # customVirtioDeviceShouldRestore(_:saveState:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when a device restores its state.
 
@@ -14,6 +15,10 @@ The method the framework calls when a device restores its state.
 optional func customVirtioDeviceShouldRestore(_ device: VZCustomVirtioDevice, saveState: Data) -> Bool
 ```
 
+```objc
+- (BOOL) customVirtioDeviceShouldRestore:(VZCustomVirtioDevice *) device saveState:(NSData *) saveState;
+```
+
 #### Discussion
 
 This method should return `NO` if restore operation failed.
@@ -21,7 +26,7 @@ This method should return `NO` if restore operation failed.
 ## Parameters
 
 - `device`: The device invoking the delegate method.
-- `saveState`: The data that the delegate returned from [`customVirtioDeviceSaveState(forRestore:)`](vzcustomvirtiodevicedelegate/customvirtiodevicesavestate(forrestore:).md).
+- `saveState`: The data that the delegate returned from [`customVirtioDeviceSaveState(forRestore:)`](./customvirtiodevicesavestate%28forrestore%29.md).
 
 
 ---

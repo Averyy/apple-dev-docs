@@ -1,7 +1,8 @@
 # stageInputDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The organization of input and output data for the next kernel call.
 
@@ -20,15 +21,20 @@ The organization of input and output data for the next kernel call.
 var stageInputDescriptor: MTLStageInputOutputDescriptor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MTLStageInputOutputDescriptor * stageInputDescriptor;
+```
+
 ## See Also
 
-- [class MTLAttributeDescriptor](mtlattributedescriptor.md)
+### Configuring compute pass inputs
+- [class MTLAttributeDescriptor](../mtlattributedescriptor.md)
   A descriptor of an argument’s format and where its data is in memory.
-- [class MTLAttributeDescriptorArray](mtlattributedescriptorarray.md)
+- [class MTLAttributeDescriptorArray](../mtlattributedescriptorarray.md)
   An array of attribute descriptor objects.
-- [class MTLBufferLayoutDescriptor](mtlbufferlayoutdescriptor.md)
+- [class MTLBufferLayoutDescriptor](../mtlbufferlayoutdescriptor.md)
   A description of how a compute function fetches input data for an attribute.
-- [class MTLBufferLayoutDescriptorArray](mtlbufferlayoutdescriptorarray.md)
+- [class MTLBufferLayoutDescriptorArray](../mtlbufferlayoutdescriptorarray.md)
   An array of buffer layout descriptor objects.
 
 

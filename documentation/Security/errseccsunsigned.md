@@ -1,7 +1,8 @@
 # errSecCSUnsigned
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code object is not signed.
 
@@ -13,6 +14,10 @@ Code object is not signed.
 
 ```swift
 var errSecCSUnsigned: OSStatus { get }
+```
+
+```c
+errSecCSUnsigned
 ```
 
 

@@ -1,7 +1,8 @@
 # isOpen
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pop-up annotation is in an opened state, displaying its text content, or in a closed state, displaying an icon.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the pop-up annotation is in an opened sta
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ A Boolean value that indicates whether the pop-up annotation is in an opened sta
 var isOpen: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isOpen) BOOL open;
+```
+
 ## See Also
 
-- [var popup: PDFAnnotation?](pdfannotation/popup.md)
+### Configuring Pop-Up Annotations
+- [var popup: PDFAnnotation?](./popup.md)
   Returns the pop-up annotation associated with an annotation.
 
 

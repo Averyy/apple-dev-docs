@@ -1,7 +1,8 @@
 # leadingZeroBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 var leadingZeroBitCount: Self { get }
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger`.
 
 
 ---

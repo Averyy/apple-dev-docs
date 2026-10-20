@@ -1,7 +1,8 @@
 # handled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The handler opened the URL.
 
@@ -26,11 +27,12 @@ The action invokes its completion handler with `true` when your handler returns 
 
 ## See Also
 
-- [static let discarded: OpenURLAction.Result](openurlaction/result/discarded.md)
+### Getting the results
+- [static let discarded: OpenURLAction.Result](./discarded.md)
   The handler discarded the URL.
-- [static let systemAction: OpenURLAction.Result](openurlaction/result/systemaction.md)
+- [static let systemAction: OpenURLAction.Result](./systemaction.md)
   The handler asks the system to open the original URL.
-- [static func systemAction(URL) -> OpenURLAction.Result](openurlaction/result/systemaction(_:).md)
+- [static func systemAction(URL) -> OpenURLAction.Result](./systemaction%28_%29.md)
   The handler asks the system to open the modified URL.
 
 

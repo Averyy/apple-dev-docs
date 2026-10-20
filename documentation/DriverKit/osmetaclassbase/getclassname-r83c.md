@@ -1,23 +1,25 @@
 # GetClassName
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const char * GetClassName() const;
 ```
 
 ## See Also
 
-- [getRetainCount](osmetaclassbase/getretaincount.md)
+### Instance Methods
+- [getRetainCount](./getretaincount.md)
 
 
 ---

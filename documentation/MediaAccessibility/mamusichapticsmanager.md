@@ -1,7 +1,8 @@
 # MAMusicHapticsManager
 
 **Framework**: Media Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that reports information about the Music Haptics feature.
 
@@ -19,43 +20,47 @@ A class that reports information about the Music Haptics feature.
 class MAMusicHapticsManager
 ```
 
+```objc
+@interface MAMusicHapticsManager : NSObject
+```
+
 #### Overview
 
-Use the [`shared`](mamusichapticsmanager/shared.md) instance of `MAMusicHapticsManager` to check information about the Music Haptics feature so you can respond accordingly in your app. For example, you can check whether Music Haptics is on, get a notification when it turns on or off, or check whether a haptic track is currently playing along with the Now Playing item.
+Use the [`shared`](./mamusichapticsmanager/shared.md) instance of `MAMusicHapticsManager` to check information about the Music Haptics feature so you can respond accordingly in your app. For example, you can check whether Music Haptics is on, get a notification when it turns on or off, or check whether a haptic track is currently playing along with the Now Playing item.
 
 ## Topics
 
 ### Getting the shared haptics manager
-- [class var shared: MAMusicHapticsManager](mamusichapticsmanager/shared.md)
+- [class var shared: MAMusicHapticsManager](./mamusichapticsmanager/shared.md)
   The shared Music Haptics manager object.
 ### Checking if Music Haptics is on
-- [var isActive: Bool](mamusichapticsmanager/isactive.md)
+- [var isActive: Bool](./mamusichapticsmanager/isactive.md)
   A Boolean value that indicates whether the system setting for Music Haptics is on.
-- [class let activeStatusDidChangeNotification: NSNotification.Name](mamusichapticsmanager/activestatusdidchangenotification.md)
+- [class let activeStatusDidChangeNotification: NSNotification.Name](./mamusichapticsmanager/activestatusdidchangenotification.md)
   A notification that posts when the value of the Music Haptics system setting changes.
 ### Checking haptic track availability
-- [func checkHapticTrackAvailabilityForMedia(matchingCode: String, completionHandler: ((Bool) -> Void)?)](mamusichapticsmanager/checkhaptictrackavailabilityformedia(matchingcode:completionhandler:).md)
+- [func checkHapticTrackAvailabilityForMedia(matchingCode: String, completionHandler: ((Bool) -> Void)?)](./mamusichapticsmanager/checkhaptictrackavailabilityformedia%28matchingcode,completionhandler%29.md)
   Checks whether a haptic track is available for the song with the specified International Standard Recording Code (ISRC).
 ### Observing haptic playback
-- [func addStatusObserver((String, Bool) -> Void) -> (any NSCopying)?](mamusichapticsmanager/addstatusobserver(_:).md)
+- [func addStatusObserver((String, Bool) -> Void) -> (any NSCopying)?](./mamusichapticsmanager/addstatusobserver%28_%29.md)
   Adds an observer to monitor the status of haptic playback for the Now Playing song.
-- [func removeStatusObserver(any NSCopying)](mamusichapticsmanager/removestatusobserver(_:).md)
+- [func removeStatusObserver(any NSCopying)](./mamusichapticsmanager/removestatusobserver%28_%29.md)
   Removes the observer monitoring the status of haptic playback for the Now Playing song.
 ### Supporting types
-- [struct MAMusicHaptics](mamusichaptics.md)
+- [struct MAMusicHaptics](./mamusichaptics.md)
   A namespace for Music Haptics symbols.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # updateRelevantIntents(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the relevant app intents for the system to suggest.
 
@@ -11,7 +12,7 @@ Sets the relevant app intents for the system to suggest.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,11 @@ final func updateRelevantIntents(_ relevantIntents: [RelevantIntent]) async thro
 
 #### Discussion
 
-- Parameter - relevantIntents: The array of relevant intents that currently apply to your app. Specify an empty array if your app doesn’t have any intents to suggest.
+- Parameter
 
-Use this method to specify the complete set of relevant app intents for the system to consider. The system uses the relevance information in the [`RelevantIntent`](relevantintent.md) structure to determine when to suggest the action. This method runs asynchronously and throws an error if it’s unable to update the current set of intents.
+  - relevantIntents: The array of relevant intents that currently apply to your app. Specify an empty array if your app doesn’t have any intents to suggest.
+
+Use this method to specify the complete set of relevant app intents for the system to consider. The system uses the relevance information in the [`RelevantIntent`](../relevantintent.md) structure to determine when to suggest the action. This method runs asynchronously and throws an error if it’s unable to update the current set of intents.
 
 
 ---

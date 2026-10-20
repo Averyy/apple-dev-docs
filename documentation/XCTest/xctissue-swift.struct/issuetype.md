@@ -1,7 +1,8 @@
 # XCTIssue.IssueType
 
 **Framework**: XCTest  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Constants that indicate types of test failures, such as assertion failures, performance regressions, or thrown errors.
 

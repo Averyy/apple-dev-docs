@@ -1,7 +1,8 @@
 # lockAppCellularData
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from changing cellular data settings.
 
@@ -22,7 +23,8 @@ Use this setting to prevent the user from changing which apps on their device ca
 
 ## See Also
 
-- [static let lockAppCellularData: SettingMetadata<Bool>](cellularsettings/lockappcellulardata-swift.type.property.md)
+### Locking app access to cell data
+- [static let lockAppCellularData: SettingMetadata<Bool>](./lockappcellulardata-swift.type.property.md)
   The metadata associated with the constraint that locks the cellular data setting.
 
 

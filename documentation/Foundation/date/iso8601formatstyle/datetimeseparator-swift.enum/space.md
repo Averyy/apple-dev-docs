@@ -1,7 +1,8 @@
 # Date.ISO8601FormatStyle.DateTimeSeparator.space
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a space character separating date and time components in an ISO 8601 date format style.
 
@@ -22,7 +23,8 @@ case space
 
 ## See Also
 
-- [Date.ISO8601FormatStyle.DateTimeSeparator.standard](date/iso8601formatstyle/datetimeseparator-swift.enum/standard.md)
+### Specifying ISO 8601 Format Style Date Time Separators
+- [Date.ISO8601FormatStyle.DateTimeSeparator.standard](./standard.md)
   Specifies no separator between the date and time components in an ISO 8601 date format style.
 
 

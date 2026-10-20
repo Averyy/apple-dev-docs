@@ -1,7 +1,8 @@
 # transactionMetrics
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metrics for each individual request-response transaction made during the execution of the task.
 
@@ -20,13 +21,18 @@ An array of metrics for each individual request-response transaction made during
 var transactionMetrics: [URLSessionTaskTransactionMetrics] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSURLSessionTaskTransactionMetrics *> * transactionMetrics;
+```
+
 ## See Also
 
-- [class URLSessionTaskTransactionMetrics](urlsessiontasktransactionmetrics.md)
+### Accessing task metrics
+- [class URLSessionTaskTransactionMetrics](../urlsessiontasktransactionmetrics.md)
   An object that encapsualtes the performance metrics collected by the URL Loading System during the execution of a session task.
-- [var taskInterval: DateInterval](urlsessiontaskmetrics/taskinterval.md)
+- [var taskInterval: DateInterval](./taskinterval.md)
   The time interval between when a task is instantiated and when the task is completed.
-- [var redirectCount: Int](urlsessiontaskmetrics/redirectcount.md)
+- [var redirectCount: Int](./redirectcount.md)
   The number of redirects that occurred during the execution of the task.
 
 

@@ -1,6 +1,8 @@
 # Supporting Drag and Drop Through File Promises
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [SupportingDragAndDropThroughFilePromises.zip](https://docs-assets.developer.apple.com/published/d25f50af13b3/SupportingDragAndDropThroughFilePromises.zip)
 
 Receive and provide file promises to support dragged app files and pasteboard operations.
 
@@ -37,9 +39,9 @@ In addition, a drag and drop involves just the image file’s URL, without a fil
 - Drag an image from Finder.
 - Drag an image from a Mail attachment.
 
-##### Support Image Import By Accepting File Promises
+##### Support Image Import by Accepting File Promises
 
-When setting up the view that supports drag and drop, register drag types provided by [`NSFilePromiseReceiver`](nsfilepromisereceiver.md). This registration allows the view to accept file promises that handle dragged images from Safari or Mail. The sample does this in the first view controller’s `viewDidLoad`.
+When setting up the view that supports drag and drop, register drag types provided by [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md). This registration allows the view to accept file promises that handle dragged images from Safari or Mail. The sample does this in the first view controller’s `viewDidLoad`.
 
 ```swift
 view.registerForDraggedTypes(NSFilePromiseReceiver.readableDraggedTypes.map { NSPasteboard.PasteboardType($0) })
@@ -67,9 +69,9 @@ case let fileURL as URL:
     self.handleFile(at: fileURL)
 ```
 
-##### Support Image Export By Providing File Promises
+##### Support Image Export by Providing File Promises
 
-This sample creates and writes images into formats that other apps like Safari, Mail, and Finder can consume. It does this by providing an [`NSFilePromiseProvider`](nsfilepromiseprovider.md) instance to the dragging pasteboard and conforming to [`NSFilePromiseProviderDelegate`](nsfilepromiseproviderdelegate.md) by implementing three delegate methods.
+This sample creates and writes images into formats that other apps like Safari, Mail, and Finder can consume. It does this by providing an [`NSFilePromiseProvider`](./nsfilepromiseprovider.md) instance to the dragging pasteboard and conforming to [`NSFilePromiseProviderDelegate`](./nsfilepromiseproviderdelegate.md) by implementing three delegate methods.
 
 This sample uses the first method to provide the title of the file. It uses a hard-coded string for simplicity, but depending on use case, take the `fileType` parameter into account.
 
@@ -80,7 +82,7 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, fileNameF
 }
 ```
 
-This sample provides a background operation queue in [`operationQueue(for:)`](nsfilepromiseproviderdelegate/operationqueue(for:).md) so the file reading and writing happen without blocking the app’s UI. This method is optional, but defaulting to the main queue can block an app’s UI for writing large files to disk. When possible, provide a background queue.
+This sample provides a background operation queue in [`operationQueue(for:)`](./nsfilepromiseproviderdelegate/operationqueue%28for%29.md) so the file reading and writing happen without blocking the app’s UI. This method is optional, but defaulting to the main queue can block an app’s UI for writing large files to disk. When possible, provide a background queue.
 
 ```swift
 func operationQueue(for filePromiseProvider: NSFilePromiseProvider) -> OperationQueue {
@@ -107,15 +109,16 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, writeProm
 
 ## See Also
 
-- [Supporting Table View Drag and Drop Through File Promises](supporting-table-view-drag-and-drop-through-file-promises.md)
+### File Promises
+- [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [Supporting Collection View Drag and Drop Through File Promises](supporting-collection-view-drag-and-drop-through-file-promises.md)
+- [Supporting Collection View Drag and Drop Through File Promises](./supporting-collection-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [class NSFilePromiseProvider](nsfilepromiseprovider.md)
+- [class NSFilePromiseProvider](./nsfilepromiseprovider.md)
   An object that provides a promise for the pasteboard.
-- [protocol NSFilePromiseProviderDelegate](nsfilepromiseproviderdelegate.md)
+- [protocol NSFilePromiseProviderDelegate](./nsfilepromiseproviderdelegate.md)
   A set of methods that provides the name of the promised file and writes the file to the destination directory when the file promise is fulfilled.
-- [class NSFilePromiseReceiver](nsfilepromisereceiver.md)
+- [class NSFilePromiseReceiver](./nsfilepromisereceiver.md)
   An object that receives a file promise from the pasteboard.
 
 

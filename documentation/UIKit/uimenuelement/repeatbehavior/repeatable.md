@@ -1,7 +1,8 @@
 # UIMenuElement.RepeatBehavior.repeatable
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element should be allowed to repeat.
 
@@ -16,6 +17,10 @@ The element should be allowed to repeat.
 
 ```swift
 case repeatable
+```
+
+```c
+UIMenuElementRepeatBehaviorRepeatable
 ```
 
 

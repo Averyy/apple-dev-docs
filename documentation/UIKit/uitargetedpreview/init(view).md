@@ -1,7 +1,8 @@
 # init(view:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a targeted preview for a view in the current window.
 
@@ -18,6 +19,10 @@ Creates a targeted preview for a view in the current window.
 convenience init(view: UIView)
 ```
 
+```objc
+- (instancetype) initWithView:(UIView *) view;
+```
+
 #### Return Value
 
 A new targeted preview object.
@@ -28,11 +33,12 @@ A new targeted preview object.
 
 ## See Also
 
-- [Adding context menus in your app](adding-context-menus-in-your-app.md)
+### Creating a targeted preview object
+- [Adding context menus in your app](../adding-context-menus-in-your-app.md)
   Provide quick access to useful actions by adding context menus to your iOS app.
-- [init(view: UIView, parameters: UIPreviewParameters, target: UIPreviewTarget)](uitargetedpreview/init(view:parameters:target:).md)
+- [init(view: UIView, parameters: UIPreviewParameters, target: UIPreviewTarget)](./init%28view,parameters,target%29.md)
   Creates a targeted preview with the specified view, parameters, and target container.
-- [convenience init(view: UIView, parameters: UIPreviewParameters)](uitargetedpreview/init(view:parameters:).md)
+- [convenience init(view: UIView, parameters: UIPreviewParameters)](./init%28view,parameters%29.md)
   Creates a targeted preview for a view in the current window and including the specified parameters.
 
 

@@ -1,7 +1,8 @@
 # errSecCSInvalidSymlink
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid destination for symbolic link in bundle.
 
@@ -13,6 +14,10 @@ Invalid destination for symbolic link in bundle.
 
 ```swift
 var errSecCSInvalidSymlink: OSStatus { get }
+```
+
+```c
+errSecCSInvalidSymlink
 ```
 
 

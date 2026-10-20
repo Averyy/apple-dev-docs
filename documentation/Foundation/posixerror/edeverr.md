@@ -1,7 +1,8 @@
 # EDEVERR
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device error, for example paper out.
 

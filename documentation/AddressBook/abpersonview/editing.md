@@ -1,7 +1,8 @@
 # editing
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the person view is in editing mode.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the person view is in editing mode.
 var editing: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL editing;
+```
+
 #### Discussion
 
 In editing mode, the person view displays additional controls to let the user change the contact’s information.
 
 ## See Also
 
-- [var person: ABPerson!](abpersonview/person.md)
+### Working with Person Views
+- [var person: ABPerson!](./person.md)
   The contact record being displayed.
-- [var shouldShowLinkedPeople: Bool](abpersonview/shouldshowlinkedpeople.md)
+- [var shouldShowLinkedPeople: Bool](./shouldshowlinkedpeople.md)
   Indicates whether the person view should display data from person records that are linked with the person record being displayed.
 
 

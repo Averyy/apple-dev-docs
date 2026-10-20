@@ -1,7 +1,8 @@
 # copyBytes(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies from a collection of `UInt8` into this buffer’s memory.
 

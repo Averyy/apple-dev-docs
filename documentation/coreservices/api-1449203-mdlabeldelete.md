@@ -1,7 +1,8 @@
 # MDLabelDelete(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDLabelDelete(_ label: MDLabel!) -> Bool
+```
+
+```c
+Boolean MDLabelDelete(MDLabelRef label);
 ```
 
 

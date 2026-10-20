@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum number of concurrent compilation tasks the device is running.
@@ -20,9 +21,13 @@ The maximum number of concurrent compilation tasks the device is running.
 var maximumConcurrentCompilationTaskCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger maximumConcurrentCompilationTaskCount;
+```
+
 #### Discussion
 
-The property’s value can change when you set the [`shouldMaximizeConcurrentCompilation`](mtldevice/shouldmaximizeconcurrentcompilation.md) property to a new value.
+The property’s value can change when you set the [`shouldMaximizeConcurrentCompilation`](./shouldmaximizeconcurrentcompilation.md) property to a new value.
 
 
 ---

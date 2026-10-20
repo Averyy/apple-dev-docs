@@ -1,7 +1,8 @@
 # init(style:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button with the specified style.
 
@@ -9,7 +10,7 @@ Creates a button with the specified style.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ Creates a button with the specified style.
 
 ## Parameters
 
-- `style`: The style to use, defaults to [`automatic`](shortcutslinkstyle/automatic.md).
+- `style`: The style to use, defaults to [`automatic`](../shortcutslinkstyle/automatic.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string with the specified text and no attribute information.
 
@@ -20,9 +21,13 @@ Creates an attributed string with the specified text and no attribute informatio
 init(string str: String)
 ```
 
+```objc
+- (instancetype) initWithString:(NSString *) str;
+```
+
 #### Return Value
 
-An [`NSAttributedString`](nsattributedstring.md) object initialized with the characters of `str` and no attribute information.
+An [`NSAttributedString`](../nsattributedstring.md) object initialized with the characters of `str` and no attribute information.
 
 ## Parameters
 
@@ -30,12 +35,14 @@ An [`NSAttributedString`](nsattributedstring.md) object initialized with the cha
 
 ## See Also
 
-- [init?(RTF: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(rtf:documentattributes:).md)
+### Related Documentation
+- [init?(RTF: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](./init%28rtf,documentattributes%29.md)
   Creates an attributed string by decoding the stream of RTF commands and data in the specified data object.
-- [Attributed String Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i)
-- [init(string: String, attributes: [NSAttributedString.Key : Any]?)](nsattributedstring/init(string:attributes:).md)
+- [Attributed String Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i)
+### Creating from another string
+- [init(string: String, attributes: [NSAttributedString.Key : Any]?)](./init%28string,attributes%29.md)
   Creates an attributed string with the specified text and attributes.
-- [init(attributedString: NSAttributedString)](nsattributedstring/init(attributedstring:).md)
+- [init(attributedString: NSAttributedString)](./init%28attributedstring%29.md)
   Creates a new attributed string from the contents of another attributed string.
 
 

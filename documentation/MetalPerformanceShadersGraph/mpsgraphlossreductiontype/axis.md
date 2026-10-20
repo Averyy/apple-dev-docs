@@ -1,7 +1,8 @@
 # axis
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Computes the loss without reduction.
 
@@ -17,6 +18,10 @@ Computes the loss without reduction.
 
 ```swift
 static var axis: MPSGraphLossReductionType { get }
+```
+
+```c
+MPSGraphLossReductionTypeAxis
 ```
 
 

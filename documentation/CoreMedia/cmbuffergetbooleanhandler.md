@@ -1,7 +1,8 @@
 # CMBufferGetBooleanHandler
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 12.2+
@@ -18,14 +19,19 @@
 typealias CMBufferGetBooleanHandler = (CMBuffer) -> Bool
 ```
 
+```c
+typedef unsigned char (^)(const void *) CMBufferGetBooleanHandler;
+```
+
 ## See Also
 
-- [typealias CMBufferCompareHandler](cmbuffercomparehandler.md)
-- [typealias CMBufferGetSizeHandler](cmbuffergetsizehandler.md)
-- [typealias CMBufferGetTimeHandler](cmbuffergettimehandler.md)
-- [typealias CMTaggedBufferGroupFormatDescription](cmtaggedbuffergroupformatdescription.md)
+### Type Aliases
+- [typealias CMBufferCompareHandler](./cmbuffercomparehandler.md)
+- [typealias CMBufferGetSizeHandler](./cmbuffergetsizehandler.md)
+- [typealias CMBufferGetTimeHandler](./cmbuffergettimehandler.md)
+- [typealias CMTaggedBufferGroupFormatDescription](./cmtaggedbuffergroupformatdescription.md)
   A type for tagged buffer format descriptions.
-- [typealias CMTaggedBufferGroupFormatType](cmtaggedbuffergroupformattype.md)
+- [typealias CMTaggedBufferGroupFormatType](./cmtaggedbuffergroupformattype.md)
   A type for tagged buffer format information.
 
 

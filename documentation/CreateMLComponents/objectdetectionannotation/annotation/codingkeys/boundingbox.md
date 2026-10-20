@@ -1,7 +1,8 @@
 # ObjectDetectionAnnotation.Annotation.CodingKeys.boundingBox
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -19,7 +20,8 @@ case boundingBox
 
 ## See Also
 
-- [ObjectDetectionAnnotation.Annotation.CodingKeys.label](objectdetectionannotation/annotation/codingkeys/label.md)
+### Coding keys
+- [ObjectDetectionAnnotation.Annotation.CodingKeys.label](./label.md)
 
 
 ---

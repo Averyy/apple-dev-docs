@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The top candidate for recognized text.
 
@@ -19,9 +20,14 @@ The top candidate for recognized text.
 var string: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * string;
+```
+
 ## See Also
 
-- [var confidence: VNConfidence](vnrecognizedtext/confidence.md)
+### Determining Recognized Text
+- [var confidence: VNConfidence](./confidence.md)
   A normalized confidence score for the text recognition result.
 
 

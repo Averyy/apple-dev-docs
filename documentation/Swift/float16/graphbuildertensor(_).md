@@ -1,7 +1,8 @@
 # graphBuilderTensor(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tensor for the specified BNNS Graph builder.
 

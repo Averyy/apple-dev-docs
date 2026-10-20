@@ -1,15 +1,20 @@
 # dataLength
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var dataLength: Int
+```
+
+```c
+size_t dataLength;
 ```
 
 

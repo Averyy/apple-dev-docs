@@ -1,7 +1,8 @@
 # grainOffset
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pre-transform position of the grain texture for strokes with a backing grain texture such as crayon.
 
@@ -20,7 +21,7 @@ var grainOffset: CGPoint?
 
 ## Mentions
 
-- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+- [Controlling stroke rendering for animation and editing](../../controlling-stroke-rendering-for-animation-and-editing.md)
 
 
 ---

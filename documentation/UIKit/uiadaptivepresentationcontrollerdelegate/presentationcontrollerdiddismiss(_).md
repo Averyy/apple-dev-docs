@@ -1,7 +1,8 @@
 # presentationControllerDidDismiss(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate after a presentation is dismissed.
 
@@ -18,6 +19,10 @@ Notifies the delegate after a presentation is dismissed.
 optional func presentationControllerDidDismiss(_ presentationController: UIPresentationController)
 ```
 
+```objc
+- (void) presentationControllerDidDismiss:(UIPresentationController *) presentationController;
+```
+
 #### Discussion
 
 This method is not called if the presentation is dismissed programmatically.
@@ -28,13 +33,14 @@ This method is not called if the presentation is dismissed programmatically.
 
 ## See Also
 
-- [func presentationController(UIPresentationController, willPresentWithAdaptiveStyle: UIModalPresentationStyle, transitionCoordinator: (any UIViewControllerTransitionCoordinator)?)](uiadaptivepresentationcontrollerdelegate/presentationcontroller(_:willpresentwithadaptivestyle:transitioncoordinator:).md)
+### Responding to adaptive transitions
+- [func presentationController(UIPresentationController, willPresentWithAdaptiveStyle: UIModalPresentationStyle, transitionCoordinator: (any UIViewControllerTransitionCoordinator)?)](./presentationcontroller%28_,willpresentwithadaptivestyle,transitioncoordinator%29.md)
   Notifies the delegate that an adaptivity-related transition is about to occur.
-- [func presentationControllerDidAttemptToDismiss(UIPresentationController)](uiadaptivepresentationcontrollerdelegate/presentationcontrollerdidattempttodismiss(_:).md)
+- [func presentationControllerDidAttemptToDismiss(UIPresentationController)](./presentationcontrollerdidattempttodismiss%28_%29.md)
   Notifies the delegate that a user-initiated attempt to dismiss a view was prevented.
-- [func presentationControllerShouldDismiss(UIPresentationController) -> Bool](uiadaptivepresentationcontrollerdelegate/presentationcontrollershoulddismiss(_:).md)
+- [func presentationControllerShouldDismiss(UIPresentationController) -> Bool](./presentationcontrollershoulddismiss%28_%29.md)
   Asks the delegate for permission to dismiss the presentation.
-- [func presentationControllerWillDismiss(UIPresentationController)](uiadaptivepresentationcontrollerdelegate/presentationcontrollerwilldismiss(_:).md)
+- [func presentationControllerWillDismiss(UIPresentationController)](./presentationcontrollerwilldismiss%28_%29.md)
   Notifies the delegate before a presentation is dismissed.
 
 

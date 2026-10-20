@@ -1,7 +1,8 @@
 # URL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the URL changed.
 
@@ -16,6 +17,10 @@ Indicates the URL changed.
 
 ```swift
 static var URL: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesURL
 ```
 
 

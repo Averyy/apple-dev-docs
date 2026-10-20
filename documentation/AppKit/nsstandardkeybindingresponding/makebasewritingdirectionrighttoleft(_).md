@@ -1,7 +1,8 @@
 # makeBaseWritingDirectionRightToLeft(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
@@ -12,13 +13,18 @@
 optional func makeBaseWritingDirectionRightToLeft(_ sender: Any?)
 ```
 
+```objc
+- (void) makeBaseWritingDirectionRightToLeft:(id) sender;
+```
+
 ## See Also
 
-- [func makeBaseWritingDirectionLeftToRight(Any?)](nsstandardkeybindingresponding/makebasewritingdirectionlefttoright(_:).md)
-- [func makeBaseWritingDirectionNatural(Any?)](nsstandardkeybindingresponding/makebasewritingdirectionnatural(_:).md)
-- [func makeTextWritingDirectionLeftToRight(Any?)](nsstandardkeybindingresponding/maketextwritingdirectionlefttoright(_:).md)
-- [func makeTextWritingDirectionNatural(Any?)](nsstandardkeybindingresponding/maketextwritingdirectionnatural(_:).md)
-- [func makeTextWritingDirectionRightToLeft(Any?)](nsstandardkeybindingresponding/maketextwritingdirectionrighttoleft(_:).md)
+### Supporting Writing Directions
+- [func makeBaseWritingDirectionLeftToRight(Any?)](./makebasewritingdirectionlefttoright%28_%29.md)
+- [func makeBaseWritingDirectionNatural(Any?)](./makebasewritingdirectionnatural%28_%29.md)
+- [func makeTextWritingDirectionLeftToRight(Any?)](./maketextwritingdirectionlefttoright%28_%29.md)
+- [func makeTextWritingDirectionNatural(Any?)](./maketextwritingdirectionnatural%28_%29.md)
+- [func makeTextWritingDirectionRightToLeft(Any?)](./maketextwritingdirectionrighttoleft%28_%29.md)
 
 
 ---

@@ -1,21 +1,22 @@
 # GameCenterAchievement.Relationships.Activity
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API - Deprecated
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievement.Relationships.Activity
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievement.Relationships.Activity.Data](gamecenterachievement/relationships-data.dictionary/activity-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievement.Relationships.Activity.Data](./activity-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

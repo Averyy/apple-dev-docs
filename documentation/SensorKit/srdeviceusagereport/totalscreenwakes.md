@@ -1,7 +1,8 @@
 # totalScreenWakes
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of screen wakes for the device.
 
@@ -16,13 +17,18 @@ The total number of screen wakes for the device.
 var totalScreenWakes: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger totalScreenWakes;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srdeviceusagereport/duration.md)
+### Summarizing Device Use
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var totalUnlocks: Int](srdeviceusagereport/totalunlocks.md)
+- [var totalUnlocks: Int](./totalunlocks.md)
   The total number of unlocks for the device.
-- [var totalUnlockDuration: TimeInterval](srdeviceusagereport/totalunlockduration.md)
+- [var totalUnlockDuration: TimeInterval](./totalunlockduration.md)
   The duration of time the device is in an unlocked state.
 
 

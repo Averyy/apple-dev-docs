@@ -1,7 +1,8 @@
 # vImage.ReflectionAxis.vertical
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reflect the image vertically across the center horizontal line.
 
@@ -11,7 +12,7 @@ Reflect the image vertically across the center horizontal line.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case vertical
 
 ## See Also
 
-- [vImage.ReflectionAxis.horizontal](vimage/reflectionaxis/horizontal.md)
+### Enumeration Cases
+- [vImage.ReflectionAxis.horizontal](./horizontal.md)
   Reflect the image horizontally across the center vertical line.
 
 

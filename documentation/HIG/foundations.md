@@ -28,7 +28,6 @@ Understand how fundamental design elements help you create rich experiences.
 - [Typography](/design/human-interface-guidelines/typography) - Your typographic choices can help you display legible text, convey an information hierarchy, communicate important content, and express your brand or style.
 - [Writing](/design/human-interface-guidelines/writing) - The words you choose within your app are an essential part of its user experience.
 
-
 ## Topics
 
 - [Accessibility](accessibility.md) - Accessible user interfaces empower everyone to have a great experience with your app or game.
@@ -49,8 +48,6 @@ Understand how fundamental design elements help you create rich experiences.
 - [Spatial layout](spatial-layout.md) - Spatial layout techniques help you take advantage of the infinite canvas of Apple Vision Pro and present your content in engaging, comfortable ways.
 - [Typography](typography.md) - Your typographic choices can help you display legible text, convey an information hierarchy, communicate important content, and express your brand or style.
 - [Writing](writing.md) - The words you choose within your app are an essential part of its user experience.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/foundations](https://developer.apple.com/design/human-interface-guidelines/foundations)*

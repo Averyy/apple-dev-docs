@@ -1,7 +1,8 @@
 # weekdayOrdinal
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ordinal number of weekdays.
 
@@ -20,25 +21,30 @@ The ordinal number of weekdays.
 var weekdayOrdinal: Int { get set }
 ```
 
+```objc
+@property NSInteger weekdayOrdinal;
+```
+
 #### Discussion
 
 Weekday ordinal units represent the position of the weekday within the next larger calendar unit, such as the month. For example, *2* is the weekday ordinal unit for the *second* Friday of the month.
 
-This value is interpreted in the context of the calendar with which it is used—see [`Calendars, Date Components, and Calendar Units`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [`Date and Time Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
+This value is interpreted in the context of the calendar with which it is used—see [Calendars, Date Components, and Calendar Units](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 
 ## See Also
 
-- [var weekday: Int](nsdatecomponents/weekday.md)
+### Accessing Weeks and Days
+- [var weekday: Int](./weekday.md)
   The number of the weekdays.
-- [var weekOfMonth: Int](nsdatecomponents/weekofmonth.md)
+- [var weekOfMonth: Int](./weekofmonth.md)
   The week number of the months.
-- [var weekOfYear: Int](nsdatecomponents/weekofyear.md)
+- [var weekOfYear: Int](./weekofyear.md)
   The ISO 8601 week date of the year.
-- [var day: Int](nsdatecomponents/day.md)
+- [var day: Int](./day.md)
   The number of days.
-- [func week() -> Int](nsdatecomponents/week.md)
+- [func week() -> Int](./week%28%29.md)
   Returns the number of weeks.
-- [func setWeek(Int)](nsdatecomponents/setweek(_:).md)
+- [func setWeek(Int)](./setweek%28_%29.md)
   Sets the number of weeks.
 
 

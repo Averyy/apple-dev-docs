@@ -1,7 +1,8 @@
 # init(transferredAccessories:failedAccessories:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that describes the outcome of a provisional home transfer.
 

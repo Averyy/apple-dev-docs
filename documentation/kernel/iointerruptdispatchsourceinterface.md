@@ -1,28 +1,30 @@
 # IOInterruptDispatchSourceInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```cpp
 class IOInterruptDispatchSourceInterface : OSInterface
 ```
 
 ## See Also
 
-- [IOInterruptDispatchSource](iointerruptdispatchsource.md)
-- [IOFilterInterruptEventSource](iofilterinterrupteventsource.md)
+### Interrupts
+- [IOInterruptDispatchSource](./iointerruptdispatchsource.md)
+- [IOFilterInterruptEventSource](./iofilterinterrupteventsource.md)
   Filtering varient of the $link IOInterruptEventSource.
-- [IOInterruptEventSource](iointerrupteventsource.md)
+- [IOInterruptEventSource](./iointerrupteventsource.md)
   Event source for interrupt delivery to work-loop based drivers.
-- [IOInterruptController](iointerruptcontroller.md)
-- [PassthruInterruptController](passthruinterruptcontroller.md)
-- [IOInterruptSource](iointerruptsource.md)
-- [IOInterruptVector](iointerruptvector.md)
+- [IOInterruptController](./iointerruptcontroller.md)
+- [PassthruInterruptController](./passthruinterruptcontroller.md)
+- [IOInterruptSource](./iointerruptsource.md)
+- [IOInterruptVector](./iointerruptvector.md)
 
 
 ---

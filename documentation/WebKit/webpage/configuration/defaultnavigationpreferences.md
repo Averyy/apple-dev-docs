@@ -1,7 +1,8 @@
 # defaultNavigationPreferences
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default preferences to use when loading and rendering content.
 

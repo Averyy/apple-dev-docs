@@ -1,7 +1,8 @@
 # CMBuffer
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a buffer object.
 
@@ -20,27 +21,32 @@ A reference to a buffer object.
 typealias CMBuffer = CFTypeRef
 ```
 
+```c
+typedef CFTypeRef CMBufferRef;
+```
+
 #### Discussion
 
 A `CMBuffer` can be an instance of any Core Foundation type, as long as a `getDuration` callback can be provided. Commonly used types are `CMSampleBuffer` and `CVPixelBuffer`.
 
 ## See Also
 
-- [class CMSampleBuffer](cmsamplebuffer.md)
+### Data Types
+- [class CMSampleBuffer](./cmsamplebuffer.md)
   A reference to a buffer of media data.
-- [Sample Buffer Flags](sample-buffer-flags.md)
+- [Sample Buffer Flags](./sample-buffer-flags.md)
   Flags that customize the behavior of framework operations.
-- [struct CMSampleTimingInfo](cmsampletiminginfo.md)
+- [struct CMSampleTimingInfo](./cmsampletiminginfo.md)
   A collection of timing information for a sample in a sample buffer.
-- [typealias CMBufferGetSizeCallback](cmbuffergetsizecallback.md)
+- [typealias CMBufferGetSizeCallback](./cmbuffergetsizecallback.md)
   A client callback that returns a size.
-- [typealias CMItemIndex](cmitemindex.md)
+- [typealias CMItemIndex](./cmitemindex.md)
   A datatype that represents an item index.
-- [typealias CMItemCount](cmitemcount.md)
+- [typealias CMItemCount](./cmitemcount.md)
   A datatype that represents an item count.
-- [typealias CMPersistentTrackID](cmpersistenttrackid.md)
+- [typealias CMPersistentTrackID](./cmpersistenttrackid.md)
   A datatype that represents a persistent track identifier.
-- [typealias CMMuxedStreamType](cmmuxedstreamtype.md)
+- [typealias CMMuxedStreamType](./cmmuxedstreamtype.md)
   A datatype that represents a muxed stream of data.
 
 

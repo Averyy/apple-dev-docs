@@ -1,7 +1,8 @@
 # doubleQuote
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether two consecutive quotes (`""`) represent a single quote (`"`) in a CSV file.
 
@@ -21,9 +22,10 @@ var doubleQuote: Bool
 
 ## See Also
 
-- [var escape: String](mldatatable/parsingoptions/escape.md)
+### Handling special characters
+- [var escape: String](./escape.md)
   The character that marks a C escape sequence in a CSV file.
-- [var quote: String](mldatatable/parsingoptions/quote.md)
+- [var quote: String](./quote.md)
   The character that represents a quote (`"`) in a CSV file.
 
 

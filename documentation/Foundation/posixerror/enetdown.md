@@ -1,7 +1,8 @@
 # ENETDOWN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 ipc/network software – operational errors Network is down.
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWSBP2NormalCommandReset](1646517-anonymous/kfwsbp2normalcommandreset.md)
-- [kFWSBP2NormalCommandStatus](1646517-anonymous/kfwsbp2normalcommandstatus.md)
-- [kFWSBP2NormalCommandTimeout](1646517-anonymous/kfwsbp2normalcommandtimeout.md)
-- [kFWSBP2UnsolicitedStatus](1646517-anonymous/kfwsbp2unsolicitedstatus.md)
+- [kFWSBP2NormalCommandReset](./api-1646517-anonymous/kfwsbp2normalcommandreset.md)
+- [kFWSBP2NormalCommandStatus](./api-1646517-anonymous/kfwsbp2normalcommandstatus.md)
+- [kFWSBP2NormalCommandTimeout](./api-1646517-anonymous/kfwsbp2normalcommandtimeout.md)
+- [kFWSBP2UnsolicitedStatus](./api-1646517-anonymous/kfwsbp2unsolicitedstatus.md)
 
 
 ---

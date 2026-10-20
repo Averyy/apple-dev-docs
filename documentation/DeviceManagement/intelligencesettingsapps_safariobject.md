@@ -1,7 +1,8 @@
 # IntelligenceSettingsApps_SafariObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 If present, configures Safari intelligence features.
 
@@ -14,7 +15,7 @@ If present, configures Safari intelligence features.
 
 ## Declaration
 
-```swift
+```
 object IntelligenceSettingsApps_SafariObject
 ```
 
@@ -22,13 +23,16 @@ object IntelligenceSettingsApps_SafariObject
 
 - `AllowSummary` (boolean): If `false`, disables Safari Summary.
 
+  **Default**: `true`
+
 ## See Also
 
-- [object IntelligenceSettingsApps_CalendarObject](intelligencesettingsapps_calendarobject.md)
+### Objects
+- [object IntelligenceSettingsApps_CalendarObject](./intelligencesettingsapps_calendarobject.md)
   If present, configures Calendar and Reminders Intelligence features.
-- [object IntelligenceSettingsApps_MailObject](intelligencesettingsapps_mailobject.md)
+- [object IntelligenceSettingsApps_MailObject](./intelligencesettingsapps_mailobject.md)
   If present, configures Mail Intelligence features.
-- [object IntelligenceSettingsApps_NotesObject](intelligencesettingsapps_notesobject.md)
+- [object IntelligenceSettingsApps_NotesObject](./intelligencesettingsapps_notesobject.md)
   If present, configures Notes Intelligence features.
 
 

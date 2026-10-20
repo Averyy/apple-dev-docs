@@ -1,11 +1,12 @@
 # NSInputStream Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init?(URL: URL)](inputstream/init(url:)-54ufn.md)
+- [convenience init?(URL: URL)](./init%28url%29-54ufn.md)
 
 
 ---

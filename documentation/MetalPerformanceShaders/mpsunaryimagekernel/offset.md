@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the destination clip rectangle origin relative to the source buffer.
 
@@ -19,23 +20,28 @@ The position of the destination clip rectangle origin relative to the source buf
 var offset: MPSOffset { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSOffset offset;
+```
+
 #### Discussion
 
-The offset is defined to be the position of the `origin` value of [`clipRect`](mpsunaryimagekernel/cliprect.md), in source coordinates.
+The offset is defined to be the position of the `origin` value of [`clipRect`](./cliprect.md), in source coordinates.
 
 The default value is `{0, 0, 0}`, indicating that the top left corners of the clip rectangle and the source image align.
 
 ## See Also
 
-- [struct MPSOffset](mpsoffset.md)
+### Properties
+- [struct MPSOffset](../mpsoffset.md)
   A signed coordinate with x, y, and z components.
-- [var clipRect: MTLRegion](mpsunaryimagekernel/cliprect.md)
+- [var clipRect: MTLRegion](./cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the rectangle will be overwritten.
-- [struct MPSRegion](mpsregion.md)
+- [struct MPSRegion](../mpsregion.md)
   A region of an image.
-- [var edgeMode: MPSImageEdgeMode](mpsunaryimagekernel/edgemode.md)
+- [var edgeMode: MPSImageEdgeMode](./edgemode.md)
   The edge mode to use when texture reads stray off the edge of an image.
-- [enum MPSImageEdgeMode](mpsimageedgemode.md)
+- [enum MPSImageEdgeMode](../mpsimageedgemode.md)
   The options used to control the edge behavior of an image filter when it reads outside the bounds of a source texture.
 
 

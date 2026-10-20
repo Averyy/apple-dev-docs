@@ -1,17 +1,22 @@
 # getMaxPacketLength()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets current max packet length.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getMaxPacketLength() -> OBEXMaxPacketLength
+```
+
+```objc
+- (OBEXMaxPacketLength) getMaxPacketLength;
 ```
 
 #### Return Value

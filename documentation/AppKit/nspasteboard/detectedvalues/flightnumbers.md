@@ -1,7 +1,8 @@
 # flightNumbers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of flight numbers that the data detection system identifies.
 
@@ -16,7 +17,8 @@ var flightNumbers: [DDMatchFlightNumber] { get }
 
 ## See Also
 
-- [var shipmentTrackingNumbers: [DDMatchShipmentTrackingNumber]](nspasteboard/detectedvalues/shipmenttrackingnumbers.md)
+### Transportation-related values
+- [var shipmentTrackingNumbers: [DDMatchShipmentTrackingNumber]](./shipmenttrackingnumbers.md)
   An array of parcel tracking numbers and carriers that the data detection system identifies.
 
 

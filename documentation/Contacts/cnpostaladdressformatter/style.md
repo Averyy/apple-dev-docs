@@ -1,7 +1,8 @@
 # style
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to apply when formatting strings.
 
@@ -19,9 +20,22 @@ The style to apply when formatting strings.
 var style: CNPostalAddressFormatterStyle { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic) CNPostalAddressFormatterStyle style;
+```
+
+*macOS*
+
+```objc
+@property (atomic) CNPostalAddressFormatterStyle style;
+```
+
 ## See Also
 
-- [enum CNPostalAddressFormatterStyle](cnpostaladdressformatterstyle.md)
+### Specifying the formatting style
+- [enum CNPostalAddressFormatterStyle](../cnpostaladdressformatterstyle.md)
   Constants for postal formatting styles.
 
 

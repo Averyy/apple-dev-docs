@@ -1,7 +1,8 @@
 # decodeRestorableState(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes and restores state-related information for the view.
 
@@ -9,7 +10,7 @@ Decodes and restores state-related information for the view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Decodes and restores state-related information for the view.
 func decodeRestorableState(with coder: NSCoder)
 ```
 
+```objc
+- (void) decodeRestorableStateWithCoder:(NSCoder *) coder;
+```
+
 #### Discussion
 
-If your app supports state restoration, you should override this method for any views for which you also overrode the [`encodeRestorableState(with:)`](uiview/encoderestorablestate(with:).md) method. Your implementation of this method should use any saved state information to restore the view to its previous configuration. If your [`encodeRestorableState(with:)`](uiview/encoderestorablestate(with:).md) method called `super`, this method should similarly call `super` at some point in its implementation.
+If your app supports state restoration, you should override this method for any views for which you also overrode the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method. Your implementation of this method should use any saved state information to restore the view to its previous configuration. If your [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method called `super`, this method should similarly call `super` at some point in its implementation.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ If your app supports state restoration, you should override this method for any 
 
 ## See Also
 
-- [var restorationIdentifier: String?](uiview/restorationidentifier.md)
+### Preserving and restoring state
+- [var restorationIdentifier: String?](./restorationidentifier.md)
   The identifier that determines whether the view supports state restoration.
-- [func encodeRestorableState(with: NSCoder)](uiview/encoderestorablestate(with:).md)
+- [func encodeRestorableState(with: NSCoder)](./encoderestorablestate%28with%29.md)
   Encodes state-related information for the view.
 
 

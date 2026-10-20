@@ -1,22 +1,27 @@
 # filterNames(inCategory:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of all published filter names in the specified category.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 class func filterNames(inCategory category: String?) -> [String]
+```
+
+```objc
++ (NSArray<NSString *> *) filterNamesInCategory:(NSString *) category;
 ```
 
 #### Return Value
@@ -25,11 +30,12 @@ An array that contains all published names of the filter in a category.
 
 ## Parameters
 
-- `category`: A string object that specifies one of the filter categories defined in [`Filter Category Keys`](filter-category-keys.md).
+- `category`: A string object that specifies one of the filter categories defined in [Filter Category Keys](../filter-category-keys.md).
 
 ## See Also
 
-- [class func filterNames(inCategories: [String]?) -> [String]](cifilter-swift.class/filternames(incategories:).md)
+### Accessing registered filters
+- [class func filterNames(inCategories: [String]?) -> [String]](./filternames%28incategories%29.md)
   Returns an array of all published filter names that match all the specified categories.
 
 

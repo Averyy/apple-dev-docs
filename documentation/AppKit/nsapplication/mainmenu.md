@@ -1,17 +1,22 @@
 # mainMenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s main menu bar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var mainMenu: NSMenu? { get set }
+```
+
+```objc
+@property (strong, nullable) NSMenu * mainMenu;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Use this property to assign a new menu bar for your app or to access the current
 
 ## See Also
 
-- [var isAutomaticCustomizeTouchBarMenuItemEnabled: Bool](nsapplication/isautomaticcustomizetouchbarmenuitemenabled.md)
+### Accessing the Main Menu
+- [var isAutomaticCustomizeTouchBarMenuItemEnabled: Bool](./isautomaticcustomizetouchbarmenuitemenabled.md)
   A Boolean value indicating whether the main menu contains an item for customizing the contents of the Touch Bar.
 
 

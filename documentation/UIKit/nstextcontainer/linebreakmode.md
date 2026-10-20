@@ -1,7 +1,8 @@
 # lineBreakMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior of the last line inside the text container.
 
@@ -18,19 +19,24 @@ The behavior of the last line inside the text container.
 var lineBreakMode: NSLineBreakMode { get set }
 ```
 
+```objc
+@property (nonatomic) NSLineBreakMode lineBreakMode;
+```
+
 #### Discussion
 
-The [`NSLineBreakMode`](nslinebreakmode.md) constants specify what happens when a line is too long for its container. For example, wrapping can occur on word boundaries (the default) or character boundaries, or the line can be clipped or truncated. The default value of this property is [`NSLineBreakMode.byWordWrapping`](nslinebreakmode/bywordwrapping.md).
+The [`NSLineBreakMode`](../nslinebreakmode.md) constants specify what happens when a line is too long for its container. For example, wrapping can occur on word boundaries (the default) or character boundaries, or the line can be clipped or truncated. The default value of this property is [`NSLineBreakMode.byWordWrapping`](../nslinebreakmode/bywordwrapping.md).
 
 ## See Also
 
-- [var size: CGSize](nstextcontainer/size.md)
+### Defining the container shape
+- [var size: CGSize](./size.md)
   The size of the text container’s bounding rectangle.
-- [var exclusionPaths: [UIBezierPath]](nstextcontainer/exclusionpaths.md)
+- [var exclusionPaths: [UIBezierPath]](./exclusionpaths.md)
   An array of path objects that represents the regions where text doesn’t display in the text container.
-- [var widthTracksTextView: Bool](nstextcontainer/widthtrackstextview.md)
+- [var widthTracksTextView: Bool](./widthtrackstextview.md)
   A Boolean that controls whether the text container adjusts the width of its bounding rectangle when its text view resizes.
-- [var heightTracksTextView: Bool](nstextcontainer/heighttrackstextview.md)
+- [var heightTracksTextView: Bool](./heighttrackstextview.md)
   A Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.
 
 

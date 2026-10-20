@@ -1,7 +1,8 @@
 # elevated
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Mounting style surrounding the widget with a composite material
 

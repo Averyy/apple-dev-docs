@@ -1,45 +1,47 @@
 # Game Center leaderboard releases
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Read, create, and delete Game Center leaderboards releases.
 
 ## Topics
 
 ### Managing leaderboard releases
-- [List Releases for a Leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
+- [List Releases for a Leaderboard](./get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
-- [List release IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
-- [Read Leaderboard Release Information](get-v1-gamecenterleaderboardreleases-_id_.md)
+- [List release IDs for a Game Center leaderboard](./get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
+- [Read Leaderboard Release Information](./get-v1-gamecenterleaderboardreleases-_id_.md)
   Read the state of a specific leaderboard release.
-- [Create a Leaderboard Release](post-v1-gamecenterleaderboardreleases.md)
+- [Create a Leaderboard Release](./post-v1-gamecenterleaderboardreleases.md)
   Add a new leaderboard release.
-- [Delete a Leaderboard Release](delete-v1-gamecenterleaderboardreleases-_id_.md)
+- [Delete a Leaderboard Release](./delete-v1-gamecenterleaderboardreleases-_id_.md)
   Delete a new leaderboard release.
 ### Objects
-- [object GameCenterLeaderboardRelease](gamecenterleaderboardrelease.md)
+- [object GameCenterLeaderboardRelease](./gamecenterleaderboardrelease.md)
   A record indicating that a Game Center leaderboard has been released to players, making it visible in the game.
-- [object GameCenterLeaderboardReleaseCreateRequest](gamecenterleaderboardreleasecreaterequest.md)
+- [object GameCenterLeaderboardReleaseCreateRequest](./gamecenterleaderboardreleasecreaterequest.md)
   The request body you use to create a leaderboard release.
-- [object GameCenterLeaderboardReleaseResponse](gamecenterleaderboardreleaseresponse.md)
+- [object GameCenterLeaderboardReleaseResponse](./gamecenterleaderboardreleaseresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard release.
-- [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
+- [object GameCenterLeaderboardReleasesResponse](./gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
-- [object GameCenterLeaderboardReleasesLinkagesResponse](gamecenterleaderboardreleaseslinkagesresponse.md)
+- [object GameCenterLeaderboardReleasesLinkagesResponse](./gamecenterleaderboardreleaseslinkagesresponse.md)
 
 ## See Also
 
-- [Game Center leaderboards](game-center-leaderboards.md)
+### Leaderboards
+- [Game Center leaderboards](./game-center-leaderboards.md)
   Create and manage leaderboards for your apps.
-- [Game Center leaderboard images](game-center-leaderboard-images.md)
+- [Game Center leaderboard images](./game-center-leaderboard-images.md)
   Read and manage image assets for Game Center leaderboards.
-- [Game Center leaderboard localizations](game-center-leaderboard-localizations.md)
+- [Game Center leaderboard localizations](./game-center-leaderboard-localizations.md)
   Manage localizations for Game Center leaderboards.
-- [Game Center leaderboard versions](game-center-leaderboard-versions.md)
+- [Game Center leaderboard versions](./game-center-leaderboard-versions.md)
   Manage versions for your Game Center leaderboards.
-- [Game Center leaderboards scores](game-center-leaderboards-scores.md)
+- [Game Center leaderboards scores](./game-center-leaderboards-scores.md)
   Create and modify Game Center leaderboards scores.
-- [Game Center score moderations](game-center-score-moderations.md)
+- [Game Center score moderations](./game-center-score-moderations.md)
   Review and moderate scores players submit to your app’s leaderboards.
 
 

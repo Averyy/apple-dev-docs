@@ -1,7 +1,8 @@
 # init(title:style:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new option for a person to choose to continue an app intent.
 
@@ -23,7 +24,7 @@ init(title: LocalizedStringResource, style: IntentChoiceOption.Style = .default)
 ## Parameters
 
 - `title`: The localized text to display for this option.
-- `style`: The visual style to apply; for example,  [`destructive`](intentchoiceoption/style-swift.struct/destructive.md) or [`cancel`](intentchoiceoption/style-swift.struct/cancel.md). By default, the `style` for an intent choice option is [`default`](intentchoiceoption/style-swift.struct/default.md).
+- `style`: The visual style to apply; for example,  [`destructive`](./style-swift.struct/destructive.md) or [`cancel`](./style-swift.struct/cancel.md). By default, the `style` for an intent choice option is [`default`](./style-swift.struct/default.md).
 
 
 ---

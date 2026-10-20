@@ -1,7 +1,8 @@
 # kCGImagePropertyPNGDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that uses Portable Network Graphics (PNG) format.
 
@@ -20,9 +21,13 @@ A dictionary of key-value pairs for an image that uses Portable Network Graphics
 let kCGImagePropertyPNGDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyPNGDictionary;
+```
+
 #### Discussion
 
-For more information about the available metadata keys, see [`PNG Image Properties`](png-image-properties.md).
+For more information about the available metadata keys, see [PNG Image Properties](./png-image-properties.md).
 
 
 ---

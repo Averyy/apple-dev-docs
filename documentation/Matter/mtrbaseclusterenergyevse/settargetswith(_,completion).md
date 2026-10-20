@@ -1,7 +1,8 @@
 # setTargetsWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetTargets
 
@@ -17,7 +18,15 @@ Command SetTargets
 ## Declaration
 
 ```swift
+func setTargetsWith(_ params: MTREnergyEVSEClusterSetTargetsParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setTargetsWith(_ params: MTREnergyEVSEClusterSetTargetsParams) async throws
+```
+
+```objc
+- (void) setTargetsWithParams:(MTREnergyEVSEClusterSetTargetsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

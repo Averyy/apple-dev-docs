@@ -1,7 +1,8 @@
 # supportedInputContentMaxScale(device:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the largest temporal scaling factor the device supports as a floating-point value.
 
@@ -18,15 +19,20 @@ Returns the largest temporal scaling factor the device supports as a floating-po
 class func supportedInputContentMaxScale(device: any MTLDevice) -> Float
 ```
 
+```objc
++ (float) supportedInputContentMaxScaleForDevice:(id<MTLDevice>) device;
+```
+
 ## Parameters
 
-- `device`: The [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents a GPU.
+- `device`: The [`MTLDevice`](../../Metal/mtldevice.md) instance that represents a GPU.
 
 ## See Also
 
-- [class func supportsDevice(any MTLDevice) -> Bool](mtlfxtemporalscalerdescriptor/supportsdevice(_:).md)
+### Checking a GPU device’s scaling support
+- [class func supportsDevice(any MTLDevice) -> Bool](./supportsdevice%28_%29.md)
   Returns a Boolean value that indicates whether the temporal scaler works with a GPU.
-- [class func supportedInputContentMinScale(device: any MTLDevice) -> Float](mtlfxtemporalscalerdescriptor/supportedinputcontentminscale(device:).md)
+- [class func supportedInputContentMinScale(device: any MTLDevice) -> Float](./supportedinputcontentminscale%28device%29.md)
   Returns the smallest temporal scaling factor the device supports as a floating-point value.
 
 

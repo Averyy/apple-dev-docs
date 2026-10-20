@@ -1,13 +1,14 @@
 # WebKit JS Functions
 
-**Framework**: WebKit JS
+**Framework**: WebKit JS  
+**Role**: API Collection
 
 ## Topics
 
 ### Functions
-- [createTouch](1777836-createtouch.md)
-- [createTouchList](1777876-createtouchlist.md)
-- [typedef](2871141-typedef.md)
+- [createTouch](./api-1777836-createtouch.md)
+- [createTouchList](./api-1777876-createtouchlist.md)
+- [typedef](./api-2871141-typedef.md)
 
 
 ---

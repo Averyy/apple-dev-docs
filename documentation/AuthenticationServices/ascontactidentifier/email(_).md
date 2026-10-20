@@ -1,7 +1,8 @@
 # ASContactIdentifier.email(_:)
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An email address identifier.
 

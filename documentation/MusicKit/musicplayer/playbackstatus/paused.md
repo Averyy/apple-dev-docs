@@ -1,7 +1,8 @@
 # MusicPlayer.PlaybackStatus.paused
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is in a paused state.
 

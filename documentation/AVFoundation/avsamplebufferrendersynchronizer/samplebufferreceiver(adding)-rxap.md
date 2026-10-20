@@ -1,7 +1,8 @@
 # sampleBufferReceiver(adding:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a renderer to the list of renderers under the synchronizer’s control and returns a sample buffer receiver to enqueue samples.
 

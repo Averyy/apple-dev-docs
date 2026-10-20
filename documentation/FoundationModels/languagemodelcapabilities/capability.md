@@ -1,7 +1,8 @@
 # LanguageModelCapabilities.Capability
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A capability that a given language model may or may not have.
 
@@ -22,26 +23,27 @@ struct Capability
 ## Topics
 
 ### Accessing model capabilities
-- [static var guidedGeneration: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/guidedgeneration.md)
+- [static var guidedGeneration: LanguageModelCapabilities.Capability](./capability/guidedgeneration.md)
   The capability to ensure model output conforms to a given generation schema.
-- [static var reasoning: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/reasoning.md)
+- [static var reasoning: LanguageModelCapabilities.Capability](./capability/reasoning.md)
   The capability to reason, structurally separately from producing a response.
-- [static var toolCalling: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/toolcalling.md)
+- [static var toolCalling: LanguageModelCapabilities.Capability](./capability/toolcalling.md)
   The capability to call tools to gather information or trigger side effects.
-- [static var vision: LanguageModelCapabilities.Capability](languagemodelcapabilities/capability/vision.md)
+- [static var vision: LanguageModelCapabilities.Capability](./capability/vision.md)
   The capability to accept image inputs in prompts.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init([LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(_:).md)
+### Creating an instance
+- [init([LanguageModelCapabilities.Capability])](./init%28_%29.md)
   Creates a capabilities instance from a list of supported capabilities.
 
 

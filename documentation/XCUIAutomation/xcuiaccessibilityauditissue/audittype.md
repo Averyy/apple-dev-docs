@@ -1,7 +1,8 @@
 # auditType
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -19,10 +20,15 @@
 var auditType: XCUIAccessibilityAuditType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) XCUIAccessibilityAuditType auditType;
+```
+
 ## See Also
 
-- [var compactDescription: String](xcuiaccessibilityauditissue/compactdescription.md)
-- [var detailedDescription: String](xcuiaccessibilityauditissue/detaileddescription.md)
+### Type and description
+- [var compactDescription: String](./compactdescription.md)
+- [var detailedDescription: String](./detaileddescription.md)
 
 
 ---

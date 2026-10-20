@@ -1,7 +1,8 @@
 # init(clientID:issuer:tokenEndpointURL:jwksEndpointURL:audience:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration with the required values.
 
@@ -14,6 +15,10 @@ Creates a configuration with the required values.
 init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: URL, audience: String?)
 ```
 
+```objc
+- (instancetype) initWithClientID:(NSString *) clientID issuer:(NSString *) issuer tokenEndpointURL:(NSURL *) tokenEndpointURL jwksEndpointURL:(NSURL *) jwksEndpointURL audience:(NSString *) audience;
+```
+
 ## Parameters
 
 - `clientID`: The OAuth `client_id` for the login.
@@ -24,7 +29,8 @@ init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: U
 
 ## See Also
 
-- [class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: String?, completion: (ASAuthorizationProviderExtensionLoginConfiguration?, (any Error)?) -> Void)](asauthorizationproviderextensionloginconfiguration/configuration(openidconfigurationurl:clientid:issuer:completion:).md)
+### Creating the configuration
+- [class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: String?, completion: (ASAuthorizationProviderExtensionLoginConfiguration?, (any Error)?) -> Void)](./configuration%28openidconfigurationurl,clientid,issuer,completion%29.md)
   Creates a login configuration using the OpenID configuration.
 
 

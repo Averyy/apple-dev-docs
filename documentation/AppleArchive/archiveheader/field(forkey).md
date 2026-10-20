@@ -1,7 +1,8 @@
 # field(forKey:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the field for a specified key.
 
@@ -11,7 +12,7 @@ Returns the field for a specified key.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -30,17 +31,18 @@ The field that matches the specified key, or `nil` if the key was not found.
 
 ## See Also
 
-- [ArchiveHeader.FieldKey](archiveheader/fieldkey-swift.struct.md)
+### Manipulating Fields
+- [ArchiveHeader.FieldKey](./fieldkey-swift.struct.md)
   A type that’s an alias for the field key structure.
-- [ArchiveHeader.Field](archiveheader/field.md)
+- [ArchiveHeader.Field](./field.md)
   An enumeration that describes the type, key, and value of a header field.
-- [var fieldType: ArchiveHeader._FieldTypes](archiveheader/fieldtype-swift.property.md)
+- [var fieldType: ArchiveHeader._FieldTypes](./fieldtype-swift.property.md)
   The field types of the archive header.
-- [ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct.md)
+- [ArchiveHeader.FieldType](./fieldtype-swift.struct.md)
   Constants that specify the field type of an archive header.
-- [var fieldKey: ArchiveHeader._FieldKeys](archiveheader/fieldkey-swift.property.md)
+- [var fieldKey: ArchiveHeader._FieldKeys](./fieldkey-swift.property.md)
   The field keys of the archive header.
-- [ArchiveHeader.FieldKeySet](archiveheader/fieldkeyset.md)
+- [ArchiveHeader.FieldKeySet](./fieldkeyset.md)
   An object that represents a field key set.
 
 

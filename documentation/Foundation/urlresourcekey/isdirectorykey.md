@@ -1,7 +1,8 @@
 # isDirectoryKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for determining whether the resource is a directory.
 
@@ -20,15 +21,20 @@ A key for determining whether the resource is a directory.
 static let isDirectoryKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLIsDirectoryKey;
+```
+
 #### Discussion
 
 The corresponding value is a read-only Boolean `NSNumber` object.
 
 ## See Also
 
-- [static let parentDirectoryURLKey: URLResourceKey](urlresourcekey/parentdirectoryurlkey.md)
+### Directory keys
+- [static let parentDirectoryURLKey: URLResourceKey](./parentdirectoryurlkey.md)
   The container directory of the resource.
-- [static let directoryEntryCountKey: URLResourceKey](urlresourcekey/directoryentrycountkey.md)
+- [static let directoryEntryCountKey: URLResourceKey](./directoryentrycountkey.md)
   The key for a count of items in the directory.
 
 

@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a property by name without casting.
 

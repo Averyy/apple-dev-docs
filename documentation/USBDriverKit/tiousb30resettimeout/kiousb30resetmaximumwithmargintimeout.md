@@ -1,22 +1,24 @@
 # kIOUSB30ResetMaximumWithMarginTimeout
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30ResetMaximumWithMarginTimeout
 ```
 
 ## See Also
 
-- [kIOUSB30ResetMinimumTimeout](tiousb30resettimeout/kiousb30resetminimumtimeout.md)
-- [kIOUSB30ResetTypicalTimeout](tiousb30resettimeout/kiousb30resettypicaltimeout.md)
-- [kIOUSB30ResetMaximumTimeout](tiousb30resettimeout/kiousb30resetmaximumtimeout.md)
+### Getting the Timeout Values
+- [kIOUSB30ResetMinimumTimeout](./kiousb30resetminimumtimeout.md)
+- [kIOUSB30ResetTypicalTimeout](./kiousb30resettypicaltimeout.md)
+- [kIOUSB30ResetMaximumTimeout](./kiousb30resetmaximumtimeout.md)
 
 
 ---

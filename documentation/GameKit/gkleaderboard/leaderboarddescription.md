@@ -1,7 +1,8 @@
 # leaderboardDescription
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of this Leaderboard as configured by the developer in App Store Connect.
 
@@ -18,6 +19,10 @@ The description of this Leaderboard as configured by the developer in App Store 
 
 ```swift
 var leaderboardDescription: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * leaderboardDescription;
 ```
 
 

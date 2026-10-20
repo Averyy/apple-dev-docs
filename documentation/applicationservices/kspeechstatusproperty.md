@@ -1,7 +1,8 @@
 # kSpeechStatusProperty
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get speech-status information for the speech channel.
 
@@ -14,11 +15,15 @@ Get speech-status information for the speech channel.
 let kSpeechStatusProperty: CFString
 ```
 
+```c
+const CFStringRef kSpeechStatusProperty;
+```
+
 #### Discussion
 
-The value associated with this property is a `CFDictionary` object that contains speech-status information for the speech channel. See [`Speech Status Keys`](speech_synthesis_manager/speech_status_keys.md) for a description of the keys present in the dictionary.
+The value associated with this property is a `CFDictionary` object that contains speech-status information for the speech channel. See [Speech Status Keys](./speech_synthesis_manager/speech_status_keys.md) for a description of the keys present in the dictionary.
 
-This property works with the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) function.
+This property works with the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) function.
 
 
 ---

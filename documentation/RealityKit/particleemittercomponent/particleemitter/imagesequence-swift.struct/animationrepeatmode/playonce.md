@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.playOnce
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image sequence plays once and then stops.
 

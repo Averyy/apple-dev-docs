@@ -1,13 +1,14 @@
 # responsible_audit_token
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audit token of the process responsible for this process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The audit token of the process responsible for this process.
 var responsible_audit_token: audit_token_t
 ```
 
+```c
+audit_token_t responsible_audit_token;
+```
+
 #### Discussion
 
 The responsible process may be this process itself, if there’s no responsible process or the responsible process already exited.
 
-This field is only available if the message [`version`](es_message_t/version.md) is `4` or greater.
+This field is only available if the message [`version`](../es_message_t/version.md) is `4` or greater.
 
 ## See Also
 
-- [var parent_audit_token: audit_token_t](es_process_t/parent_audit_token.md)
+### Inspecting Audit Tokens
+- [var parent_audit_token: audit_token_t](./parent_audit_token.md)
   The audit token of the parent process.
 
 

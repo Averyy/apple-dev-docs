@@ -1,7 +1,8 @@
 # appendInterpolation(_:style:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a formatted date to a string interpolation.
 
@@ -31,17 +32,18 @@ Don’t call this method directly; it’s used by the compiler when interpreting
 
 ## See Also
 
-- [func appendInterpolation(_:)](localizedstringkey/stringinterpolation/appendinterpolation(_:).md)
+### Appending to an interpolation
+- [func appendInterpolation(_:)](./appendinterpolation%28_%29.md)
   Appends an attributed substring to a string interpolation.
-- [func appendInterpolation<T>(T, specifier: String)](localizedstringkey/stringinterpolation/appendinterpolation(_:specifier:).md)
+- [func appendInterpolation<T>(T, specifier: String)](./appendinterpolation%28_,specifier%29.md)
   Appends a type, convertible to a string with a format specifier, to a string interpolation.
-- [func appendInterpolation(_:format:)](localizedstringkey/stringinterpolation/appendinterpolation(_:format:).md)
+- [func appendInterpolation(_:format:)](./appendinterpolation%28_,format%29.md)
   Appends the formatted representation  of a nonstring type supported by a corresponding format style.
-- [func appendInterpolation(_:formatter:)](localizedstringkey/stringinterpolation/appendinterpolation(_:formatter:).md)
+- [func appendInterpolation(_:formatter:)](./appendinterpolation%28_,formatter%29.md)
   Appends an optionally-formatted instance of an Objective-C subclass to a string interpolation.
-- [func appendInterpolation(timerInterval: ClosedRange<Date>, pauseTime: Date?, countsDown: Bool, showsHours: Bool)](localizedstringkey/stringinterpolation/appendinterpolation(timerinterval:pausetime:countsdown:showshours:).md)
+- [func appendInterpolation(timerInterval: ClosedRange<Date>, pauseTime: Date?, countsDown: Bool, showsHours: Bool)](./appendinterpolation%28timerinterval,pausetime,countsdown,showshours%29.md)
   Appends a timer interval to a string interpolation.
-- [func appendLiteral(String)](localizedstringkey/stringinterpolation/appendliteral(_:).md)
+- [func appendLiteral(String)](./appendliteral%28_%29.md)
   Appends a literal string.
 
 

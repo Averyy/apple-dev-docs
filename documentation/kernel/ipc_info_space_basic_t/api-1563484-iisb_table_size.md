@@ -1,14 +1,15 @@
 # iisb_table_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 natural_t iisb_table_size;
 ```
 

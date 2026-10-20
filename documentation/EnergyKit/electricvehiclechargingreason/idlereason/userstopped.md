@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.IdleReason.userStopped
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates a person manually stops charging.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case userStopped
 
 ## See Also
 
-- [ElectricVehicleChargingReason.IdleReason.userPaused](electricvehiclechargingreason/idlereason/userpaused.md)
+### User actions
+- [ElectricVehicleChargingReason.IdleReason.userPaused](./userpaused.md)
   A reason that indicates a person manually pauses charging.
 
 

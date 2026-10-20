@@ -1,16 +1,17 @@
 # groupCount
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of groups into which you separate the channels.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,19 +19,24 @@ The number of groups into which you separate the channels.
 var groupCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger groupCount;
+```
+
 ## See Also
 
-- [var featureChannelCount: Int](mlcgroupnormalizationlayer/featurechannelcount.md)
+### Inspecting Group Normalization Layers
+- [var featureChannelCount: Int](./featurechannelcount.md)
   The number of feature channels.
-- [var beta: MLCTensor?](mlcgroupnormalizationlayer/beta.md)
+- [var beta: MLCTensor?](./beta.md)
   The beta tensor.
-- [var gamma: MLCTensor?](mlcgroupnormalizationlayer/gamma.md)
+- [var gamma: MLCTensor?](./gamma.md)
   The gamma tensor.
-- [var varianceEpsilon: Float](mlcgroupnormalizationlayer/varianceepsilon.md)
+- [var varianceEpsilon: Float](./varianceepsilon.md)
   The variance epsilon you use for numerical stability.
-- [var betaParameter: MLCTensorParameter?](mlcgroupnormalizationlayer/betaparameter.md)
+- [var betaParameter: MLCTensorParameter?](./betaparameter.md)
   The beta tensor parameter you use for optimizer updates.
-- [var gammaParameter: MLCTensorParameter?](mlcgroupnormalizationlayer/gammaparameter.md)
+- [var gammaParameter: MLCTensorParameter?](./gammaparameter.md)
   The gamma tensor parameter you use for optimizer updates.
 
 

@@ -1,7 +1,8 @@
 # detectedValues(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether this pasteboard item matches the specified patterns, reading the contents if it finds a match.
 
@@ -16,11 +17,11 @@ func detectedValues(for keyPaths: Set<PartialKeyPath<NSPasteboardItem.DetectedVa
 
 #### Return Value
 
-An [`NSPasteboard.DetectedValues`](nspasteboard/detectedvalues.md) instance containing the values for the patterns detected on the pasteboard item.
+An [`NSPasteboard.DetectedValues`](../nspasteboard/detectedvalues.md) instance containing the values for the patterns detected on the pasteboard item.
 
 #### Discussion
 
-For details about the types returned for each pattern, see [`NSPasteboard.DetectedValues`](nspasteboard/detectedvalues.md).
+For details about the types returned for each pattern, see [`NSPasteboard.DetectedValues`](../nspasteboard/detectedvalues.md).
 
 The following example shows how to use this method to find links in each item on the pasteboard:
 
@@ -51,12 +52,13 @@ for (index, item) in pasteboardItems.enumerated() {
 
 ## See Also
 
-- [func detectedPatterns(for: Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>](nspasteboarditem/detectedpatterns(for:).md)
+### Detecting patterns and metadata in pasteboard items
+- [func detectedPatterns(for: Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>](./detectedpatterns%28for%29.md)
   Determines whether the pasteboard item matches the specified patterns, without notifying the person using the app.
-- [NSPasteboardItem.DetectedValues](nspasteboarditem/detectedvalues.md)
-- [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboardItem.DetectedMetadata>>) async throws -> NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata(for:).md)
+- [NSPasteboardItem.DetectedValues](./detectedvalues.md)
+- [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboardItem.DetectedMetadata>>) async throws -> NSPasteboardItem.DetectedMetadata](./detectedmetadata%28for%29.md)
   Determines available metadata from the specified metadata types for this pasteboard item, without notifying the person using the app.
-- [NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata.md)
+- [NSPasteboardItem.DetectedMetadata](./detectedmetadata.md)
 
 
 ---

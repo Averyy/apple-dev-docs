@@ -1,7 +1,8 @@
 # migrationPlan
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The plan that describes the evolution of your app’s schema and how to migrate between specific versions.
 
@@ -27,9 +28,10 @@ This property provides a reference to the migration plan you specified when call
 
 ## See Also
 
-- [let schema: Schema](modelcontainer/schema.md)
+### Managing schema and configuration details
+- [let schema: Schema](./schema.md)
   The schema that maps your app’s model classes to the associated data in the app’s persistent storage.
-- [var configurations: Set<ModelConfiguration>](modelcontainer/configurations.md)
+- [var configurations: Set<ModelConfiguration>](./configurations.md)
   The configurations that describe how to manage the persisted data for specific groups of models.
 
 

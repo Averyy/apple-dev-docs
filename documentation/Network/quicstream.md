@@ -1,7 +1,8 @@
 # QUICStream
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A QUIC stream that runs over a QUIC connection.
 
@@ -29,15 +30,15 @@ Connections using QUICStream have a similar stream interface to TLS and TCP.
 ## Topics
 
 ### Enumerations
-- [QUICStream.Directionality](quicstream/directionality.md)
-- [QUICStream.Initiator](quicstream/initiator.md)
+- [QUICStream.Directionality](./quicstream/directionality.md)
+- [QUICStream.Initiator](./quicstream/initiator.md)
 
 ## Relationships
 
 ### Conforms To
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
-- [StreamProtocol](streamprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
+- [StreamProtocol](./streamprotocol.md)
 
 
 ---

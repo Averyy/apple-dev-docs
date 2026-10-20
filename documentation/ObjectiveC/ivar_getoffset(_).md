@@ -1,7 +1,8 @@
 # ivar_getOffset(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the offset of an instance variable.
 
@@ -20,15 +21,20 @@ Returns the offset of an instance variable.
 func ivar_getOffset(_ v: Ivar) -> Int
 ```
 
+```c
+extern ptrdiff_t ivar_getOffset(Ivar v);
+```
+
 #### Discussion
 
-For instance variables of type `id` or other object types, call [`object_getIvar(_:_:)`](object_getivar(_:_:).md) and [`object_setIvar(_:_:_:)`](object_setivar(_:_:_:).md) instead of using this offset to access the instance variable data directly.
+For instance variables of type `id` or other object types, call [`object_getIvar(_:_:)`](./object_getivar%28_,_%29.md) and [`object_setIvar(_:_:_:)`](./object_setivar%28_,_,_%29.md) instead of using this offset to access the instance variable data directly.
 
 ## See Also
 
-- [func ivar_getName(Ivar) -> UnsafePointer<CChar>?](ivar_getname(_:).md)
+### Working with Instance Variables
+- [func ivar_getName(Ivar) -> UnsafePointer<CChar>?](./ivar_getname%28_%29.md)
   Returns the name of an instance variable.
-- [func ivar_getTypeEncoding(Ivar) -> UnsafePointer<CChar>?](ivar_gettypeencoding(_:).md)
+- [func ivar_getTypeEncoding(Ivar) -> UnsafePointer<CChar>?](./ivar_gettypeencoding%28_%29.md)
   Returns the type string of an instance variable.
 
 

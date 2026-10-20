@@ -1,14 +1,15 @@
 # kHIDUsage_LED_PaperJam
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_LED_PaperJam = 0x2F
 ```
 

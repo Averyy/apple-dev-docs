@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller’s delegate.
 
@@ -18,13 +19,18 @@ The view controller’s delegate.
 weak var delegate: (any PKPaymentAuthorizationViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PKPaymentAuthorizationViewControllerDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate is called at various points in the interaction, such as when the user selects shipping or billing information and when the user authorizes the payment request.
 
 ## See Also
 
-- [protocol PKPaymentAuthorizationViewControllerDelegate](pkpaymentauthorizationviewcontrollerdelegate.md)
+### Handling user interactions
+- [protocol PKPaymentAuthorizationViewControllerDelegate](../pkpaymentauthorizationviewcontrollerdelegate.md)
   Methods that let you respond to user interactions with your payment authorization view controller.
 
 

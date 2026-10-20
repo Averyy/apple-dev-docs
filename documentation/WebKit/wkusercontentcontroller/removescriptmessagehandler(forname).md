@@ -1,7 +1,8 @@
 # removeScriptMessageHandler(forName:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uninstalls the custom message handler with the specified name from your JavaScript code.
 
@@ -18,9 +19,13 @@ Uninstalls the custom message handler with the specified name from your JavaScri
 func removeScriptMessageHandler(forName name: String)
 ```
 
+```objc
+- (void) removeScriptMessageHandlerForName:(NSString *) name;
+```
+
 #### Discussion
 
-Use this method to remove a message handler that you previously installed using the [`add(_:name:)`](wkusercontentcontroller/add(_:name:).md) method. This method removes the message handler from the page content world — that is, the content world available from the [`page`](wkcontentworld/page.md) property of [`WKContentWorld`](wkcontentworld.md). If you installed the message handler in a different content world, this method doesn’t remove it.
+Use this method to remove a message handler that you previously installed using the [`add(_:name:)`](./add%28_,name%29.md) method. This method removes the message handler from the page content world — that is, the content world available from the [`page`](../wkcontentworld/page.md) property of [`WKContentWorld`](../wkcontentworld.md). If you installed the message handler in a different content world, this method doesn’t remove it.
 
 ## Parameters
 
@@ -28,21 +33,22 @@ Use this method to remove a message handler that you previously installed using 
 
 ## See Also
 
-- [func add(any WKScriptMessageHandler, name: String)](wkusercontentcontroller/add(_:name:).md)
+### Adding and Removing Message Handlers
+- [func add(any WKScriptMessageHandler, name: String)](./add%28_,name%29.md)
   Installs a message handler that you can call from your JavaScript code.
-- [func add(any WKScriptMessageHandler, contentWorld: WKContentWorld, name: String)](wkusercontentcontroller/add(_:contentworld:name:).md)
+- [func add(any WKScriptMessageHandler, contentWorld: WKContentWorld, name: String)](./add%28_,contentworld,name%29.md)
   Installs a message handler that you can call from the specified content world in your JavaScript code.
-- [func addScriptMessageHandler(any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)](wkusercontentcontroller/addscriptmessagehandler(_:contentworld:name:).md)
+- [func addScriptMessageHandler(any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)](./addscriptmessagehandler%28_,contentworld,name%29.md)
   Installs a message handler that returns a reply to your JavaScript code.
-- [func removeScriptMessageHandler(forName: String, contentWorld: WKContentWorld)](wkusercontentcontroller/removescriptmessagehandler(forname:contentworld:).md)
+- [func removeScriptMessageHandler(forName: String, contentWorld: WKContentWorld)](./removescriptmessagehandler%28forname,contentworld%29.md)
   Uninstalls a custom message handler from the specified content world in your JavaScript code.
-- [func removeAllScriptMessageHandlers(from: WKContentWorld)](wkusercontentcontroller/removeallscriptmessagehandlers(from:).md)
+- [func removeAllScriptMessageHandlers(from: WKContentWorld)](./removeallscriptmessagehandlers%28from%29.md)
   Uninstalls all custom message handlers from the specified content world in your JavaScript code.
-- [func removeAllScriptMessageHandlers()](wkusercontentcontroller/removeallscriptmessagehandlers.md)
+- [func removeAllScriptMessageHandlers()](./removeallscriptmessagehandlers%28%29.md)
   Uninstalls all custom message handlers associated with the user content controller.
-- [protocol WKScriptMessageHandler](wkscriptmessagehandler.md)
+- [protocol WKScriptMessageHandler](../wkscriptmessagehandler.md)
   An interface for receiving messages from JavaScript code running in a webpage.
-- [protocol WKScriptMessageHandlerWithReply](wkscriptmessagehandlerwithreply.md)
+- [protocol WKScriptMessageHandlerWithReply](../wkscriptmessagehandlerwithreply.md)
   An interface for responding to messages from JavaScript code running in a webpage.
 
 

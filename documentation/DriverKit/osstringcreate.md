@@ -1,31 +1,33 @@
 # OSStringCreate
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSStringPtrOSStringCreate(const char *cstring, size_t length);
 ```
 
 ## See Also
 
-- [withString](osstring/withstring.md)
+### Creating a String
+- [withString](./osstring/withstring.md)
   Allocates an OSString object with a copy of an OString object.
-- [withCString](osstring/withcstring-4wsql.md)
+- [withCString](./osstring/withcstring-4wsql.md)
   Allocates an OSString object with a copy of a c-string.
-- [withCString](osstring/withcstring-721oh.md)
+- [withCString](./osstring/withcstring-721oh.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [withCStringNoCopy](osstring/withcstringnocopy.md)
+- [withCStringNoCopy](./osstring/withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [free](osstring/free.md)
+- [free](./osstring/free.md)
 
 
 ---

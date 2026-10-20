@@ -1,7 +1,8 @@
 # isTransferring
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the data is still being transferred.
 
@@ -18,13 +19,18 @@ A Boolean value indicating whether the data is still being transferred.
 var isTransferring: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTransferring) BOOL transferring;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the data has not yet been transferred or [`false`](https://developer.apple.com/documentation/swift/false) if the transfer is complete.
+The value of this property is [`true`](../../Swift/true.md) if the data has not yet been transferred or [`false`](../../Swift/false.md) if the transfer is complete.
 
 ## See Also
 
-- [func cancel()](wcsessionuserinfotransfer/cancel.md)
+### Managing the Transfer Operation
+- [func cancel()](./cancel%28%29.md)
   Cancels the data transfer.
 
 

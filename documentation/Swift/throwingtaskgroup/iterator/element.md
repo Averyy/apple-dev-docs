@@ -1,7 +1,8 @@
 # ThrowingTaskGroup.Iterator.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 13.0+

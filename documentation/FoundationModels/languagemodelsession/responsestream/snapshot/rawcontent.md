@@ -1,7 +1,8 @@
 # rawContent
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw content of the response.
 
@@ -25,9 +26,10 @@ When `Content` is `GeneratedContent`, this is the same as `content`.
 
 ## See Also
 
-- [var content: Content.PartiallyGenerated](languagemodelsession/responsestream/snapshot/content.md)
+### Inspecting a snapshot
+- [var content: Content.PartiallyGenerated](./content.md)
   The content of the response.
-- [var transcriptEntries: ArraySlice<Transcript.Entry>](languagemodelsession/responsestream/snapshot/transcriptentries.md)
+- [var transcriptEntries: ArraySlice<Transcript.Entry>](./transcriptentries.md)
   The list of transcript entries.
 
 

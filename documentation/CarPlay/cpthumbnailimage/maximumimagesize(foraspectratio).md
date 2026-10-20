@@ -1,7 +1,8 @@
 # maximumImageSize(forAspectRatio:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the recommended maximum image size for a @c CPThumbnailImage with the given aspect ratio.
 
@@ -14,6 +15,10 @@ Returns the recommended maximum image size for a @c CPThumbnailImage with the gi
 
 ```swift
 class func maximumImageSize(forAspectRatio aspectRatio: CGFloat) -> CGSize
+```
+
+```objc
++ (CGSize) maximumImageSizeForAspectRatio:(CGFloat) aspectRatio;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # position(by:axis:span:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -21,13 +22,14 @@ func position(by value: PlottableProjection<Self.DataElement, some Plottable>, a
 
 ## See Also
 
+### Styling marks
 - [func foregroundStyle(KeyPath<Self.DataElement, some ShapeStyle>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/foregroundstyle(_:).md)
+](./foregroundstyle%28_%29.md)
   Represents data using a foreground style.
 - [func opacity(KeyPath<Self.DataElement, CGFloat>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/opacity(_:).md)
+](./opacity%28_%29.md)
 - [func lineStyle(KeyPath<Self.DataElement, StrokeStyle>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/linestyle(_:).md)
+](./linestyle%28_%29.md)
   Represents data using line styles.
 
 

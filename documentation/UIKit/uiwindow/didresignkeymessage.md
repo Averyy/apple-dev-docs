@@ -1,7 +1,8 @@
 # UIWindow.DidResignKeyMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct DidResignKeyMessage
 ## Topics
 
 ### Initializers
-- [init(window: UIWindow)](uiwindow/didresignkeymessage/init(window:).md)
+- [init(window: UIWindow)](./didresignkeymessage/init%28window%29.md)
 ### Instance Properties
-- [var window: UIWindow](uiwindow/didresignkeymessage/window.md)
+- [var window: UIWindow](./didresignkeymessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

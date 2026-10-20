@@ -1,7 +1,8 @@
 # topology
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A configuration object representing the topology of the initiating ecosystem.
 
@@ -10,7 +11,7 @@ A configuration object representing the topology of the initiating ecosystem.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var topology: MatterAddDeviceRequest.Topology
 
 ## See Also
 
-- [MatterAddDeviceRequest.Home](matteradddevicerequest/home.md)
+### Setting up the request
+- [MatterAddDeviceRequest.Home](./home.md)
   The representation of a home that appears in the picker during device setup.
-- [MatterAddDeviceRequest.Room](matteradddevicerequest/room.md)
+- [MatterAddDeviceRequest.Room](./room.md)
   The representation of a room that appears in the picker during device setup.
-- [MatterAddDeviceRequest.Topology](matteradddevicerequest/topology-swift.struct.md)
+- [MatterAddDeviceRequest.Topology](./topology-swift.struct.md)
   Information describing the properties of the ecosystem.
-- [var setupPayload: MTRSetupPayload?](matteradddevicerequest/setuppayload.md)
+- [var setupPayload: MTRSetupPayload?](./setuppayload.md)
   The payload to use for Matter device setup.
 
 

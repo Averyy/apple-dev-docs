@@ -1,7 +1,8 @@
 # formIntersection(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the contents of this range set that aren’t also in the given range set.
 
@@ -19,6 +20,8 @@ Removes the contents of this range set that aren’t also in the given range set
 ```swift
 mutating func formIntersection(_ other: RangeSet<Bound>)
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 ## Parameters
 

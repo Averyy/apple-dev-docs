@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Animates the item to the specified index path in the table view.
@@ -18,9 +19,13 @@ Animates the item to the specified index path in the table view.
 func drop(_ dragItem: UIDragItem, toRowAt indexPath: IndexPath) -> any UIDragAnimating
 ```
 
+```objc
+- (id<UIDragAnimating>) dropItem:(UIDragItem *) dragItem toRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Mentions
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 #### Discussion
 
@@ -33,10 +38,11 @@ Use this method to animate the dragged item to the specific location in the tabl
 
 ## See Also
 
-- [func drop(UIDragItem, intoRowAt: IndexPath, rect: CGRect) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:intorowat:rect:).md)
-- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:to:)-57wx.md)
+### Animating rows to their destination
+- [func drop(UIDragItem, intoRowAt: IndexPath, rect: CGRect) -> any UIDragAnimating](./drop%28_,intorowat,rect%29.md)
+- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](./drop%28_,to%29-57wx.md)
   Animates the item to an arbitrary location in your view hierarchy.
-- [func drop(UIDragItem, to: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext](uitableviewdropcoordinator/drop(_:to:)-3znax.md)
+- [func drop(UIDragItem, to: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext](./drop%28_,to%29-3znax.md)
   Animates the item to the specified location and inserts a placeholder cell at that location.
 
 

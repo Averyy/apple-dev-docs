@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom mirror for `MLComputePolicy`.
 

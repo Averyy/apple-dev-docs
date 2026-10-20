@@ -7,7 +7,7 @@ The accuracy of the compass data in degrees.
 
 ## Declaration
 
-```swift
+```
 readonly attribute double webkitCompassAccuracy
 ```
 
@@ -17,7 +17,8 @@ For example, if this property value is `10`, the heading is off by plus or minus
 
 ## See Also
 
-- [webkitCompassHeading](deviceorientationevent/1804777-webkitcompassheading.md)
+### Getting Compass Properties
+- [webkitCompassHeading](./api-1804777-webkitcompassheading.md)
   A direction that is measured in degrees relative to magnetic north.
 
 

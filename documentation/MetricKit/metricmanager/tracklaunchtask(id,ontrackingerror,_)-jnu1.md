@@ -1,7 +1,8 @@
 # trackLaunchTask(id:onTrackingError:_:)
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Measures the duration of a synchronous extended launch task.
 
@@ -20,7 +21,7 @@ final func trackLaunchTask<Result, Failure>(id: LaunchTaskID, onTrackingError: (
 
 #### Discussion
 
-Use this method to wrap synchronous work that extends your app’s perceived launch time. Pass a [`LaunchTaskID`](launchtaskid.md) and a synchronous closure wrapping the work to measure. Measurement begins when the closure starts and ends it when the closure returns, regardless of whether the closure throws.
+Use this method to wrap synchronous work that extends your app’s perceived launch time. Pass a [`LaunchTaskID`](../launchtaskid.md) and a synchronous closure wrapping the work to measure. Measurement begins when the closure starts and ends it when the closure returns, regardless of whether the closure throws.
 
 ```swift
 manager.trackLaunchTask(id: "register-services") {
@@ -28,7 +29,7 @@ manager.trackLaunchTask(id: "register-services") {
 }
 ```
 
-Pass an `onTrackingError` closure to observe [`MetricManager.LaunchTaskError`](metricmanager/launchtaskerror.md) values without interrupting the tracked work:
+Pass an `onTrackingError` closure to observe [`MetricManager.LaunchTaskError`](./launchtaskerror.md) values without interrupting the tracked work:
 
 ```swift
 manager.trackLaunchTask(id: "register-services", onTrackingError: { error in
@@ -38,15 +39,16 @@ manager.trackLaunchTask(id: "register-services", onTrackingError: { error in
 }
 ```
 
-To track asynchronous launch work instead, use [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-48k2s.md).
+To track asynchronous launch work instead, use [`trackLaunchTask(id:onTrackingError:_:)`](./tracklaunchtask%28id,ontrackingerror,_%29-48k2s.md).
 
 ## See Also
 
-- [func trackLaunchTask<Result, Failure>(id: LaunchTaskID, onTrackingError: ((MetricManager.LaunchTaskError) -> Void)?, () async throws(Failure) -> Result) async throws(Failure) -> Result](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-48k2s.md)
+### Extended launch
+- [func trackLaunchTask<Result, Failure>(id: LaunchTaskID, onTrackingError: ((MetricManager.LaunchTaskError) -> Void)?, () async throws(Failure) -> Result) async throws(Failure) -> Result](./tracklaunchtask%28id,ontrackingerror,_%29-48k2s.md)
   Measures the duration of an asynchronous extended launch task.
-- [MetricManager.LaunchTaskError](metricmanager/launchtaskerror.md)
+- [MetricManager.LaunchTaskError](./launchtaskerror.md)
   An error that describes a problem that occurred while tracking an extended launch task.
-- [struct LaunchTaskID](launchtaskid.md)
+- [struct LaunchTaskID](../launchtaskid.md)
   An identifier for a task measured as part of an extended app launch.
 
 

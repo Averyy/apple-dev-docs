@@ -1,7 +1,8 @@
 # CWKeychainCopyEAPIdentityList(_:)
 
 **Framework**: Core WLAN  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds and returns the available identities stored in the keychain.
 
@@ -14,6 +15,10 @@ Finds and returns the available identities stored in the keychain.
 func CWKeychainCopyEAPIdentityList(_ list: UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> OSStatus
 ```
 
+```c
+OSStatus CWKeychainCopyEAPIdentityList(CFArrayRef*list);
+```
+
 #### Return Value
 
 An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
@@ -24,7 +29,8 @@ If there are no available identities, this method will return *nil*.
 
 ## See Also
 
-- [func CWMergeNetworks(Set<CWNetwork>) -> Set<CWNetwork>](cwmergenetworks(_:).md)
+### Utility Methods
+- [func CWMergeNetworks(Set<CWNetwork>) -> Set<CWNetwork>](./cwmergenetworks%28_%29.md)
   Merges the specified set of CWNetwork objects.
 
 

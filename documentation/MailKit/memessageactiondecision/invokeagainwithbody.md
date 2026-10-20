@@ -1,7 +1,8 @@
 # invokeAgainWithBody
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object that indicates the handler needs the message content before it can decide what action to take on a message.
 
@@ -12,6 +13,10 @@ An object that indicates the handler needs the message content before it can dec
 
 ```swift
 class var invokeAgainWithBody: MEMessageActionDecision { get }
+```
+
+```objc
+@property (class, readonly) MEMessageActionDecision * invokeAgainWithBody;
 ```
 
 

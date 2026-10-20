@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionMediaPlayPauseButtonType
 
 **Framework**: User Notifications UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of media button to display.
 
@@ -18,39 +19,44 @@ Constants indicating the type of media button to display.
 enum UNNotificationContentExtensionMediaPlayPauseButtonType
 ```
 
+```c
+enum UNNotificationContentExtensionMediaPlayPauseButtonType : NSUInteger;
+```
+
 ## Topics
 
 ### Button Types
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.none](unnotificationcontentextensionmediaplaypausebuttontype/none.md)
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.none](./unnotificationcontentextensionmediaplaypausebuttontype/none.md)
   No media button.
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.default](unnotificationcontentextensionmediaplaypausebuttontype/default.md)
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.default](./unnotificationcontentextensionmediaplaypausebuttontype/default.md)
   A standard play/pause button.
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.overlay](unnotificationcontentextensionmediaplaypausebuttontype/overlay.md)
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.overlay](./unnotificationcontentextensionmediaplaypausebuttontype/overlay.md)
   A partially transparent play/pause button that is layered on top of your media content.
 ### Initializers
-- [init?(rawValue: UInt)](unnotificationcontentextensionmediaplaypausebuttontype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./unnotificationcontentextensionmediaplaypausebuttontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mediaPlayPauseButtonType: UNNotificationContentExtensionMediaPlayPauseButtonType](unnotificationcontentextension/mediaplaypausebuttontype.md)
+### Supporting Media Playback
+- [var mediaPlayPauseButtonType: UNNotificationContentExtensionMediaPlayPauseButtonType](./unnotificationcontentextension/mediaplaypausebuttontype.md)
   The type of media button type to display.
-- [var mediaPlayPauseButtonFrame: CGRect](unnotificationcontentextension/mediaplaypausebuttonframe.md)
+- [var mediaPlayPauseButtonFrame: CGRect](./unnotificationcontentextension/mediaplaypausebuttonframe.md)
   The frame rectangle to use for displaying a media playback button.
-- [var mediaPlayPauseButtonTintColor: UIColor](unnotificationcontentextension/mediaplaypausebuttontintcolor.md)
+- [var mediaPlayPauseButtonTintColor: UIColor](./unnotificationcontentextension/mediaplaypausebuttontintcolor.md)
   The tint color for the media playback button.
-- [func mediaPlay()](unnotificationcontentextension/mediaplay.md)
+- [func mediaPlay()](./unnotificationcontentextension/mediaplay%28%29.md)
   Tells you to begin playback of your media content.
-- [func mediaPause()](unnotificationcontentextension/mediapause.md)
+- [func mediaPause()](./unnotificationcontentextension/mediapause%28%29.md)
   Tells you to pause playback of your media content.
 
 

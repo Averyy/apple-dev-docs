@@ -1,17 +1,19 @@
 # SceneKit Enumerations
 
-**Framework**: SceneKit
+**Framework**: SceneKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum SCNLightAreaType](scnlightareatype.md)
-- [enum SCNLightProbeType](scnlightprobetype.md)
-- [enum SCNLightProbeUpdateType](scnlightprobeupdatetype.md)
+- [enum SCNLightAreaType](./scnlightareatype.md)
+- [enum SCNLightProbeType](./scnlightprobetype.md)
+- [enum SCNLightProbeUpdateType](./scnlightprobeupdatetype.md)
 
 ## See Also
 
-- [SceneKit Constants](scenekit-constants.md)
+### Reference
+- [SceneKit Constants](./scenekit-constants.md)
   Constants used throughout the SceneKit framework.
 
 

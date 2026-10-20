@@ -1,7 +1,8 @@
 # getHomeScreenWebAppInfo(completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides information about a web app to the system.
 
@@ -14,14 +15,22 @@ Provides information about a web app to the system.
 ## Declaration
 
 ```swift
+optional func getHomeScreenWebAppInfo(completionHandler: @escaping @Sendable (SFAddToHomeScreenInfo?) -> Void)
+```
+
+```swift
 optional func homeScreenWebAppInfo() async -> SFAddToHomeScreenInfo?
+```
+
+```objc
+- (void) getHomeScreenWebAppInfoWithCompletionHandler:(void (^)(SFAddToHomeScreenInfo *)) completionHandler;
 ```
 
 #### Overview
 
-Add information about the web app to a [`SFAddToHomeScreenInfo`](sfaddtohomescreeninfo.md) object that you create, and pass it to the completion handler.
+Add information about the web app to a [`SFAddToHomeScreenInfo`](../sfaddtohomescreeninfo.md) object that you create, and pass it to the completion handler.
 
-The system only calls this method in browser apps that include an alternative browser engine. If you implement this method, then the system doesn’t call your implementation of [`getWebAppManifest(completionHandler:)`](sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler:).md).
+The system only calls this method in browser apps that include an alternative browser engine. If you implement this method, then the system doesn’t call your implementation of [`getWebAppManifest(completionHandler:)`](./getwebappmanifest%28completionhandler%29.md).
 
 ## Parameters
 
@@ -29,9 +38,10 @@ The system only calls this method in browser apps that include an alternative br
 
 ## See Also
 
-- [class SFAddToHomeScreenInfo](sfaddtohomescreeninfo.md)
+### Providing information about a web app to the system
+- [class SFAddToHomeScreenInfo](../sfaddtohomescreeninfo.md)
   A class that provides information about a web app that someone adds to their Home Screen.
-- [func getWebAppManifest(completionHandler: (BEWebAppManifest?) -> Void)](sfaddtohomescreenactivityitem/getwebappmanifest(completionhandler:).md)
+- [func getWebAppManifest(completionHandler: (BEWebAppManifest?) -> Void)](./getwebappmanifest%28completionhandler%29.md)
   Provides the web app’s manifest to the system, if the bookmark represents a web app.
 
 

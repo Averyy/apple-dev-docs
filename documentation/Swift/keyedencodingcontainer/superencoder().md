@@ -1,7 +1,8 @@
 # superEncoder()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores a new nested container for the default `super` key and returns a new encoder instance for encoding `super` into that container.
 

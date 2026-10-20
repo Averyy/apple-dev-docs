@@ -1,6 +1,8 @@
 # Highlighting app features with TipKit
 
-**Framework**: TipKit
+**Framework**: TipKit  
+**Role**: Sample Code  
+**Download**: [HighlightingAppFeaturesWithTipKit.zip](https://docs-assets.developer.apple.com/published/a9419c502848/HighlightingAppFeaturesWithTipKit.zip)
 
 Bring attention to new features in your app by using tips.
 
@@ -16,11 +18,11 @@ With TipKit, you can teach people about a new feature in your app, or show them 
 
 Each example highlights a different feature of the TipKit framework. The TipView and PopoverView examples show you how to add two different styles of tips to your app. Action buttons demonstrate how to direct people to information or options. The Parameters, Events, and Options examples show you various ways to control when your tips appear. And the Combining rules example shows you how to combine several conditions for when your tips display.
 
-> **Note**: Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
+> **Related session from WWDC23**: Session 10229: [Make features discoverable with TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/)
 
-##### Define Tip Content
+##### Define tip content
 
-The [`Tip`](tip.md) protocol defines the text and imagery that tips use to describe what the features does, as well as the rules for when the tip appears. Each example defines a structure that conforms to the `Tip` protocol, and sets the properties that define the tip content.
+The [`Tip`](./tip.md) protocol defines the text and imagery that tips use to describe what the features does, as well as the rules for when the tip appears. Each example defines a structure that conforms to the `Tip` protocol, and sets the properties that define the tip content.
 
 ```swift
 struct InlineTip: Tip {
@@ -38,9 +40,9 @@ struct InlineTip: Tip {
 }
 ```
 
-##### Load Tips When the App Starts
+##### Load tips when the app starts
 
-Before tips display, they must load into the app. The sample initializes and loads all tips the app uses by calling [`configure(_:)`](tips/configure(_:).md). The best practice is to call this once per app session, for example, in the [`init()`](https://developer.apple.com/documentation/swiftui/app/init()) method of your app.
+Before tips display, they must load into the app. The sample initializes and loads all tips the app uses by calling [`configure(_:)`](./tips/configure%28_%29.md). The best practice is to call this once per app session, for example, in the [`init()`](../SwiftUI/app/init%28%29.md) method of your app.
 
 ```swift
 @main
@@ -65,15 +67,15 @@ struct TipKitExamples: App {
 
 > **Note**: The sample project is currently configured to reset tip state each time the sample runs. To turn this off, and see how tips behave in production, comment out `try Tips.resetDatastore()` in the `setupTipsForTesting` method of `TipKitExamplesApp`.
 
-##### Embed a Tip Directly in the View Using Inline Tips
+##### Embed a tip directly in the view using inline tips
 
 Use this style of tip whenever possible to avoid covering UI elements that people may want to interact with. Inline tips embed themselves directly into the view containing the feature they highlight. This style of tip causes the underlying view to alter its layout to accommodate the tip’s appearance and dismissal.
 
-To add an inline [`TipView`](tipview.md) to a view:
+To add an inline [`TipView`](./tipview.md) to a view:
 
 1. Create an instance of the tip content in the view containing the feature.
 2. Place an instance of a `TipView` next to the feature to highlight, passing in the tip content, as well as an optional arrow pointing toward the feature.
-3. Invalidate the tip after a person uses the feature. This is done programmatically by calling [`invalidate(reason:)`](tip/invalidate(reason:).md) on the tip content instance along with the reason you invalidated the tip. People can also click the close button in the upper right-hand corner of the tip view to dismiss the tip.
+3. Invalidate the tip after a person uses the feature. This is done programmatically by calling [`invalidate(reason:)`](./tip/invalidate%28reason%29.md) on the tip content instance along with the reason you invalidated the tip. People can also click the close button in the upper right-hand corner of the tip view to dismiss the tip.
 
 ```swift
 struct InlineView: View {
@@ -102,15 +104,15 @@ struct InlineView: View {
 }
 ```
 
-##### Display a Tip on Top of the Underlying View Using Popover Tips
+##### Display a tip on top of the underlying view using popover tips
 
 Use this style of tip view if adjusting the underlying layout is undesirable or people don’t need to interact with any controls the tip obscures. Popover view modifiers display the tip view on top of the current screen layout while obscuring UI elements underneath. If you use a popover, consider excluding imagery because the tip already points to the feature being highlighted.
 
 To display a popover tip:
 
 1. Define an instance of your tip content.
-2. Place the tip on the feature to highlight using the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:)) view modifier, passing in the tip content.
-3. Invalidate the tip after someone uses the feature, passing in an instance of [`InvalidationReason`](tips/invalidationreason.md).
+2. Place the tip on the feature to highlight using the [`popoverTip(_:arrowEdge:action:)`](../SwiftUI/view/popovertip%28_,arrowedge,action%29.md) view modifier, passing in the tip content.
+3. Invalidate the tip after someone uses the feature, passing in an instance of [`InvalidationReason`](./tips/invalidationreason.md).
 
 ```swift
 struct PopoverView: View {
@@ -133,11 +135,11 @@ struct PopoverView: View {
 }
 ```
 
-##### Direct People to Information or Options with Buttons
+##### Direct people to information or options with buttons
 
 Buttons present people with additional information and options before they decide whether to use a new feature. For example, consider using buttons to redirect people to an area where they can learn more about what the given feature does. Or consider sending people to a settings screen if adjustments are necessary before a new feature can be used.
 
-To add a button to a tip, the sample code defines actions using the [`Action`](tip/action.md) type in the [`actions`](tip/actions.md) property of the tip content.
+To add a button to a tip, the sample code defines actions using the [`Action`](./tip/action.md) type in the [`actions`](./tip/actions.md) property of the tip content.
 
 ```swift
 struct PasswordResetTip: Tip {
@@ -202,9 +204,9 @@ struct PasswordResetView: View {
 }
 ```
 
-##### Display Tips Based on App State Using Parameters
+##### Display tips based on app state using parameters
 
-This sample demonstrates how to use app state to display a tip. Define a variable in your tip structure to represent the app state to track. Wrap it in a [`Parameter`](tips/parameter.md) property wrapper, and then define a [`Rule`](tips/rule.md) for when it displays using the `#Rule` macro in the [`rules`](tip/rules.md) property of the structure defining the tip. This sample only displays the tip when someone taps the button and logs in.
+This sample demonstrates how to use app state to display a tip. Define a variable in your tip structure to represent the app state to track. Wrap it in a [`Parameter`](./tips/parameter.md) property wrapper, and then define a [`Rule`](./tips/rule.md) for when it displays using the `#Rule` macro in the [`rules`](./tip/rules.md) property of the structure defining the tip. This sample only displays the tip when someone taps the button and logs in.
 
 ```swift
 struct ParameterRuleTip: Tip {
@@ -261,7 +263,7 @@ struct ParameterView: View {
 
 > **Note**: A tip dismissed by the user won’t appear again until its datastore is reset. See the section on overriding tip eligibility rules for instructions on how to reset a tip’s state.
 
-The [`Parameter`](tips/parameter.md) property wrapper also support types that conforms to the `Codable` and `Sendable` protocol. In this example, the tip displays if the plants tip has more than two favorites, and one of the favorites is a string with the value “Rose”.
+The [`Parameter`](./tips/parameter.md) property wrapper also support types that conforms to the `Codable` and `Sendable` protocol. In this example, the tip displays if the plants tip has more than two favorites, and one of the favorites is a string with the value “Rose”.
 
 ```swift
 struct FavoritePlantTip: Tip {
@@ -309,9 +311,9 @@ struct FavoritePlantTip: Tip {
 }
 ```
 
-##### Display Tips Based on User Actions with Events
+##### Display tips based on user actions with events
 
-To track and display tips based on user actions, define a [`Event`](tip/event.md) constant with an `id` in your tip structure representing the user interaction you want to track. Then define a [`Rule`](tips/rule.md) for when the tip displays using a `#Rule` macro referencing the event to track. Set the conditions for when the tip displays within the `#Rule` macro closure. In this sample, the tip displays when the event occurs three or more times.
+To track and display tips based on user actions, define a [`Event`](./tip/event.md) constant with an `id` in your tip structure representing the user interaction you want to track. Then define a [`Rule`](./tips/rule.md) for when the tip displays using a `#Rule` macro referencing the event to track. Set the conditions for when the tip displays within the `#Rule` macro closure. In this sample, the tip displays when the event occurs three or more times.
 
 ```swift
 struct EventRuleTip: Tip {
@@ -348,9 +350,9 @@ struct EventView: View {
 }
 ```
 
-##### Creating an Event with an Associated Donation Value
+##### Creating an event with an associated donation value
 
-You can also create a [`Event`](tips/event.md) property wrapper with associated donated values. These values hold additional information relevant to the tip itself.
+You can also create a [`Event`](./tips/event.md) property wrapper with associated donated values. These values hold additional information relevant to the tip itself.
 
 The example below donates the `viewedSpecificFood` event with an associated donation value when the user action occurs. In this sample, the tip displays if the following rules are satisfied:
 
@@ -431,9 +433,9 @@ struct FoodEventTip: Tip {
 }
 ```
 
-##### Control Display Frequency Using Options
+##### Control display frequency using options
 
-Options control the frequency with which tips display. Define a [`Option`](tip/option.md) in the [`options`](tip/options.md) property of your tip structure and set the frequency for the tip display there.
+Options control the frequency with which tips display. Define a [`Option`](./tip/option.md) in the [`options`](./tip/options.md) property of your tip structure and set the frequency for the tip display there.
 
 ```swift
 struct OptionTip: Tip {
@@ -447,7 +449,7 @@ struct OptionTip: Tip {
 
 Then present the tip in a view. The first time the view appears, the tip displays once. Afterward, the tip no longer appears until reset or the app reinstalls on the device. See the section on overriding tip eligibility rules for instructions on how to reset a tip’s state.
 
-##### Combine Parameters Events and Options for More Complex Interactions
+##### Combine parameters, events, and options for more complex interactions
 
 To create more complex rules, combine parameters, events, and options to make tips appear. This sample defines one parameter-based rule to only show a tip when someone logs in, and another event-based rule that only displays a tip when someone enters the view three times. These rules logically AND together in the rules property of the tip structure.
 
@@ -481,7 +483,7 @@ The tip displays when the following two rules are met:
 1. The user is logged in (triggered by tapping the Login button).
 2. The user enters the view three times (triggered by navigating in and out of the view).
 
-The sample tracks the number of times the page appears by donating to the event-based rule in the [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) view modifier.
+The sample tracks the number of times the page appears by donating to the event-based rule in the [`onAppear(perform:)`](../SwiftUI/view/onappear%28perform%29.md) view modifier.
 
 ```swift
 .onAppear {
@@ -523,7 +525,7 @@ struct ComboView: View {
 }
 ```
 
-##### Override Eligibility Rules to Test Tip Appearance and Display
+##### Override eligibility rules to test tip appearance and display
 
 When a tip is no longer eligible for display, it stops appearing in the app. While this might make sense in production, it can make testing tip appearance and placement challenging during development.
 

@@ -1,7 +1,8 @@
 # HMPresenceEventUserType
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The group of users that triggers a presence event.
 
@@ -19,35 +20,40 @@ The group of users that triggers a presence event.
 enum HMPresenceEventUserType
 ```
 
+```c
+enum HMPresenceEventUserType : NSUInteger;
+```
+
 ## Topics
 
 ### Selecting users
-- [HMPresenceEventUserType.currentUser](hmpresenceeventusertype/currentuser.md)
+- [HMPresenceEventUserType.currentUser](./hmpresenceeventusertype/currentuser.md)
   The current user triggers the presence event.
-- [HMPresenceEventUserType.homeUsers](hmpresenceeventusertype/homeusers.md)
+- [HMPresenceEventUserType.homeUsers](./hmpresenceeventusertype/homeusers.md)
   All users associated with a home trigger a presence event.
-- [HMPresenceEventUserType.customUsers](hmpresenceeventusertype/customusers.md)
+- [HMPresenceEventUserType.customUsers](./hmpresenceeventusertype/customusers.md)
   A custom set of users is used to trigger a presence event.
 ### Initializers
-- [init?(rawValue: UInt)](hmpresenceeventusertype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hmpresenceeventusertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMPresenceEvent](hmpresenceevent.md)
+### User presence
+- [class HMPresenceEvent](./hmpresenceevent.md)
   An event that triggers based on the presence of users in the home.
-- [class HMMutablePresenceEvent](hmmutablepresenceevent.md)
+- [class HMMutablePresenceEvent](./hmmutablepresenceevent.md)
   A mutable event that triggers based on the presence of users in the home.
-- [enum HMPresenceEventType](hmpresenceeventtype.md)
+- [enum HMPresenceEventType](./hmpresenceeventtype.md)
   The user presence type that triggers a presence event.
 
 

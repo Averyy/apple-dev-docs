@@ -1,7 +1,8 @@
 # Language tag string
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A string containing a language tag.
 
@@ -11,13 +12,14 @@ A NULL-terminated C string containing an RFC 4646 (BCP 47) compliant language ta
 
 ## See Also
 
-- [Size](extended_language_tag_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this media header atom.
-- [Type](extended_language_tag_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](extended_language_tag_atom/version.md)
+- [Version](./version.md)
   One byte that specifies the version of this header atom.
-- [Flags](extended_language_tag_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for media header flags.
 
 

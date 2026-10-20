@@ -1,7 +1,8 @@
 # QualityOfService.background
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -18,16 +19,21 @@
 case background
 ```
 
+```c
+NSQualityOfServiceBackground
+```
+
 #### Discussion
 
 Used for work that is not user initiated or visible. In general, a user is unaware that this work is even happening. For example, pre-fetching content, search indexing, backups, or syncing of data with external systems.
 
 ## See Also
 
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.default](qualityofservice/default.md)
+### Constants
+- [QualityOfService.userInteractive](./userinteractive.md)
+- [QualityOfService.userInitiated](./userinitiated.md)
+- [QualityOfService.utility](./utility.md)
+- [QualityOfService.default](./default.md)
 
 
 ---

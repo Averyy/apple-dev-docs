@@ -1,7 +1,8 @@
 # ProtocolMetadataBuilder
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A resultBuilder for configuring metadata in send methods in a declarative way.
 
@@ -24,7 +25,7 @@ struct ProtocolMetadataBuilder
 ## Topics
 
 ### Type Methods
-- [static func buildBlock(NWProtocolMetadata...) -> [NWProtocolMetadata]](protocolmetadatabuilder/buildblock(_:).md)
+- [static func buildBlock(NWProtocolMetadata...) -> [NWProtocolMetadata]](./protocolmetadatabuilder/buildblock%28_%29.md)
 
 
 ---

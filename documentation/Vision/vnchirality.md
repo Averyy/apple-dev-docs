@@ -1,7 +1,8 @@
 # VNChirality
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that the define the chirality, or handedness, of a pose.
 
@@ -20,31 +21,36 @@ Constants that the define the chirality, or handedness, of a pose.
 enum VNChirality
 ```
 
+```c
+enum VNChirality : NSInteger;
+```
+
 ## Topics
 
 ### Chirality Values
-- [VNChirality.left](vnchirality/left.md)
+- [VNChirality.left](./vnchirality/left.md)
   Indicates a left-handed pose.
-- [VNChirality.right](vnchirality/right.md)
+- [VNChirality.right](./vnchirality/right.md)
   Indicates a right-handed pose.
-- [VNChirality.unknown](vnchirality/unknown.md)
+- [VNChirality.unknown](./vnchirality/unknown.md)
   Indicates that the pose chirality is unknown.
 ### Creating a Chirality
-- [init?(rawValue: Int)](vnchirality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./vnchirality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var chirality: VNChirality](vnhumanhandposeobservation/chirality.md)
+### Determining the Chirality
+- [var chirality: VNChirality](./vnhumanhandposeobservation/chirality.md)
   The chirality, or handedness, of a pose.
 
 

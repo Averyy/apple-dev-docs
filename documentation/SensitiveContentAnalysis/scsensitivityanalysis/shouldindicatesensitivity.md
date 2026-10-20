@@ -1,7 +1,8 @@
 # shouldIndicateSensitivity
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Intervention guidance that suggests the app indicate the presence of sensitive content.
 
@@ -16,11 +17,16 @@ Intervention guidance that suggests the app indicate the presence of sensitive c
 var shouldIndicateSensitivity: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL shouldIndicateSensitivity;
+```
+
 ## See Also
 
-- [var shouldInterruptVideo: Bool](scsensitivityanalysis/shouldinterruptvideo.md)
+### Receiving intervention guidance
+- [var shouldInterruptVideo: Bool](./shouldinterruptvideo.md)
   Intervention guidance that suggests the app interrupt the video stream.
-- [var shouldMuteAudio: Bool](scsensitivityanalysis/shouldmuteaudio.md)
+- [var shouldMuteAudio: Bool](./shouldmuteaudio.md)
   Intervention guidance that suggests the app mute the audio of the current video stream.
 
 

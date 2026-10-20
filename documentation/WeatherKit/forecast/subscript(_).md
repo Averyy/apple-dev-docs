@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: WeatherKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The forecast element at the provided index.
 
@@ -22,7 +23,8 @@ subscript(position: Forecast<Element>.Index) -> Element { get }
 
 ## See Also
 
-- [typealias Index](forecast/index.md)
+### Accessing elements
+- [typealias Index](./index.md)
   The forecast index.
 
 

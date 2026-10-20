@@ -1,7 +1,8 @@
 # destinationAlpha
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Premultiplication description for the destination texture.
 
@@ -19,13 +20,18 @@ Premultiplication description for the destination texture.
 var destinationAlpha: MPSAlphaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPSAlphaType destinationAlpha;
+```
+
 #### Discussion
 
-Color space conversion operations produce non-premultiplied data. Use this property to tag cases where premultiplied results are required. If the [`MPSAlphaType.alphaIsOne`](mpsalphatype/alphaisone.md) value is used, the alpha channel will be set to 1. The default value is [`MPSAlphaType.alphaIsOne`](mpsalphatype/alphaisone.md).
+Color space conversion operations produce non-premultiplied data. Use this property to tag cases where premultiplied results are required. If the [`MPSAlphaType.alphaIsOne`](../mpsalphatype/alphaisone.md) value is used, the alpha channel will be set to 1. The default value is [`MPSAlphaType.alphaIsOne`](../mpsalphatype/alphaisone.md).
 
 ## See Also
 
-- [var sourceAlpha: MPSAlphaType](mpsimageconversion/sourcealpha.md)
+### Properties
+- [var sourceAlpha: MPSAlphaType](./sourcealpha.md)
   Premultiplication description for the source texture.
 
 

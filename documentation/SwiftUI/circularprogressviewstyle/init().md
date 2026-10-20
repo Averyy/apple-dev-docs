@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circular progress view style.
 
@@ -23,7 +24,8 @@ init()
 
 ## See Also
 
-- [init(tint: Color)](circularprogressviewstyle/init(tint:).md)
+### Creating the progress view style
+- [init(tint: Color)](./init%28tint%29.md)
   Creates a circular progress view style with a tint color.
 
 

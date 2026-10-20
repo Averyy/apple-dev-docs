@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeMediaKeys
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -16,15 +17,20 @@
 let WKWebsiteDataTypeMediaKeys: String
 ```
 
+```c
+extern NSString * const WKWebsiteDataTypeMediaKeys;
+```
+
 ## See Also
 
-- [let WKErrorDomain: String](wkerrordomain.md)
+### Constants
+- [let WKErrorDomain: String](./wkerrordomain.md)
   String that identifies the WebKit error domain.
-- [let WKWebsiteDataTypeFetchCache: String](wkwebsitedatatypefetchcache.md)
-- [let WKWebsiteDataTypeFileSystem: String](wkwebsitedatatypefilesystem.md)
-- [let WKWebsiteDataTypeHashSalt: String](wkwebsitedatatypehashsalt.md)
-- [let WKWebsiteDataTypeSearchFieldRecentSearches: String](wkwebsitedatatypesearchfieldrecentsearches.md)
-- [let WKWebsiteDataTypeServiceWorkerRegistrations: String](wkwebsitedatatypeserviceworkerregistrations.md)
+- [let WKWebsiteDataTypeFetchCache: String](./wkwebsitedatatypefetchcache.md)
+- [let WKWebsiteDataTypeFileSystem: String](./wkwebsitedatatypefilesystem.md)
+- [let WKWebsiteDataTypeHashSalt: String](./wkwebsitedatatypehashsalt.md)
+- [let WKWebsiteDataTypeSearchFieldRecentSearches: String](./wkwebsitedatatypesearchfieldrecentsearches.md)
+- [let WKWebsiteDataTypeServiceWorkerRegistrations: String](./wkwebsitedatatypeserviceworkerregistrations.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ApplePaySession
 
 **Framework**: Apple Pay on the Web  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The entry point for Apple Pay on the web.
 
@@ -11,14 +12,14 @@ The entry point for Apple Pay on the web.
 
 ## Declaration
 
-```swift
+```
 new ApplePaySession();
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
-- [Creating an Apple Pay Session](creating-an-apple-pay-session.md)
+- [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
+- [Creating an Apple Pay Session](../creating-an-apple-pay-session.md)
 
 #### Discussion
 
@@ -26,20 +27,21 @@ Creating an `ApplePaySession` object throws a JavaScript exception if any of the
 
 - Any Apple Pay JS API is called from an insecure page.
 - You pass an invalid payment request. Payment requests are invalid if they contain missing, unknown, or invalid properties, or if the total is zero or less.
-- You attempt to create [`ApplePaySession`](applepaysession.md) outside of a gesture handler.
+- You attempt to create [`ApplePaySession`](../applepaysession.md) outside of a gesture handler.
 
-Check [`supportsVersion`](applepaysession/supportsversion.md) before using any Apple Pay JS API that depends on Safari to support a particular version number.
+Check [`supportsVersion`](./supportsversion.md) before using any Apple Pay JS API that depends on Safari to support a particular version number.
 
 ## Parameters
 
-- `version`: The Apple Pay version number your website supports. See [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md) for version information.
-- `paymentRequest`: An [`ApplePayPaymentRequest`](applepaypaymentrequest.md) object that contains the information to be displayed on the Apple Pay payment sheet.
+- `version`: The Apple Pay version number your website supports. See [Apple Pay on the Web version history](../apple-pay-on-the-web-version-history.md) for version information.
+- `paymentRequest`: An [`ApplePayPaymentRequest`](../applepaypaymentrequest.md) object that contains the information to be displayed on the Apple Pay payment sheet.
 
 ## See Also
 
-- [begin](applepaysession/begin.md)
+### Related Documentation
+- [begin](./begin.md)
   Begins the merchant validation process.
-- [supportsVersion](applepaysession/supportsversion.md)
+- [supportsVersion](./supportsversion.md)
   Detects whether a web browser supports a particular Apple Pay version.
 
 

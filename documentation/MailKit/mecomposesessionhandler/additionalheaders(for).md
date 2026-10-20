@@ -1,7 +1,8 @@
 # additionalHeaders(for:)
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides custom headers to include in the outgoing message.
 
@@ -12,6 +13,10 @@ Provides custom headers to include in the outgoing message.
 
 ```swift
 optional func additionalHeaders(for session: MEComposeSession) -> [String : [String]]
+```
+
+```objc
+- (NSDictionary<NSString *,NSArray<NSString *> *> *) additionalHeadersForSession:(MEComposeSession *) session;
 ```
 
 #### Return Value

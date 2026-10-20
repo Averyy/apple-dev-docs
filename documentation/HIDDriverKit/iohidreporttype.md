@@ -1,33 +1,35 @@
 # IOHIDReportType
 
 **Framework**: HIDDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the different types of HID reports.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 enum IOHIDReportType : unsigned int;
 ```
 
 ## Topics
 
 ### Getting the Report Types
-- [kIOHIDReportTypeCount](iohidreporttype/kiohidreporttypecount.md)
-- [kIOHIDReportTypeFeature](iohidreporttype/kiohidreporttypefeature.md)
-- [kIOHIDReportTypeInput](iohidreporttype/kiohidreporttypeinput.md)
-- [kIOHIDReportTypeOutput](iohidreporttype/kiohidreporttypeoutput.md)
+- [kIOHIDReportTypeCount](./iohidreporttype/kiohidreporttypecount.md)
+- [kIOHIDReportTypeFeature](./iohidreporttype/kiohidreporttypefeature.md)
+- [kIOHIDReportTypeInput](./iohidreporttype/kiohidreporttypeinput.md)
+- [kIOHIDReportTypeOutput](./iohidreporttype/kiohidreporttypeoutput.md)
 
 ## See Also
 
-- [getReportID](iohidelement/getreportid.md)
-- [getReportCount](iohidelement/getreportcount.md)
-- [getReportSize](iohidelement/getreportsize.md)
+### Getting Report Information
+- [getReportID](./iohidelement/getreportid.md)
+- [getReportCount](./iohidelement/getreportcount.md)
+- [getReportSize](./iohidelement/getreportsize.md)
 
 
 ---

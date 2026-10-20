@@ -1,7 +1,8 @@
 # HandSkeleton.JointName.ringFingerMetacarpal
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,10 +15,11 @@ case ringFingerMetacarpal
 
 ## See Also
 
-- [HandSkeleton.JointName.ringFingerIntermediateBase](handskeleton/jointname/ringfingerintermediatebase.md)
-- [HandSkeleton.JointName.ringFingerIntermediateTip](handskeleton/jointname/ringfingerintermediatetip.md)
-- [HandSkeleton.JointName.ringFingerKnuckle](handskeleton/jointname/ringfingerknuckle.md)
-- [HandSkeleton.JointName.ringFingerTip](handskeleton/jointname/ringfingertip.md)
+### Ring finger joints
+- [HandSkeleton.JointName.ringFingerIntermediateBase](./ringfingerintermediatebase.md)
+- [HandSkeleton.JointName.ringFingerIntermediateTip](./ringfingerintermediatetip.md)
+- [HandSkeleton.JointName.ringFingerKnuckle](./ringfingerknuckle.md)
+- [HandSkeleton.JointName.ringFingerTip](./ringfingertip.md)
 
 
 ---

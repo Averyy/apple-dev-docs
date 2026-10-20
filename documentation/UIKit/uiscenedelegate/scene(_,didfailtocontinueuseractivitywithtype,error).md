@@ -1,7 +1,8 @@
 # scene(_:didFailToContinueUserActivityWithType:error:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the activity couldn’t be continued.
 
@@ -18,6 +19,10 @@ Tells the delegate that the activity couldn’t be continued.
 optional func scene(_ scene: UIScene, didFailToContinueUserActivityWithType userActivityType: String, error: any Error)
 ```
 
+```objc
+- (void) scene:(UIScene *) scene didFailToContinueUserActivityWithType:(NSString *) userActivityType error:(NSError *) error;
+```
+
 #### Discussion
 
 Use this method to let the user know that the specified activity couldn’t be completed. If you don’t implement this method, UIKit displays an error to the user with an appropriate message about the reason for the failure.
@@ -30,9 +35,10 @@ Use this method to let the user know that the specified activity couldn’t be c
 
 ## See Also
 
-- [func scene(UIScene, willContinueUserActivityWithType: String)](uiscenedelegate/scene(_:willcontinueuseractivitywithtype:).md)
+### Continuing user activities
+- [func scene(UIScene, willContinueUserActivityWithType: String)](./scene%28_,willcontinueuseractivitywithtype%29.md)
   Tells the delegate that it’s about to receive Handoff-related data.
-- [func scene(UIScene, continue: NSUserActivity)](uiscenedelegate/scene(_:continue:).md)
+- [func scene(UIScene, continue: NSUserActivity)](./scene%28_,continue%29.md)
   Tells the delegate to handle the specified Handoff-related activity.
 
 

@@ -1,18 +1,19 @@
 # AdditiveArithmetic Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func + (Self) -> Self](int64/+(_:).md)
+- [static func + (Self) -> Self](./plus%28_%29.md)
   Returns the given number unchanged.
-- [static func += (inout Self, Self)](int64/+=(_:_:)-6n9bz.md)
+- [static func += (inout Self, Self)](./pluseq%28_,_%29-6n9bz.md)
   Adds two values and stores the result in the left-hand-side variable.
-- [static func -= (inout Self, Self)](int64/-=(_:_:)-88vzw.md)
+- [static func -= (inout Self, Self)](./minuseq%28_,_%29-88vzw.md)
   Subtracts the second value from the first and stores the difference in the left-hand-side variable.
 ### Type Properties
-- [static var zero: Self](int64/zero.md)
+- [static var zero: Self](./zero.md)
   The zero value.
 
 

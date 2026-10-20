@@ -1,7 +1,8 @@
 # preferredInteractionTypes
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of interactions that people can perform with the image.
 
@@ -20,27 +21,28 @@ final var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes {
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
 #### Discussion
 
-You need to set this property to enable interactions with the image. If this property contains [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md), the interaction ignores the other types in the set. The default value for this property is an empty array that disables any interactions.
+You need to set this property to enable interactions with the image. If this property contains [`automatic`](./interactiontypes/automatic.md), the interaction ignores the other types in the set. The default value for this property is an empty array that disables any interactions.
 
-If you set this property to one or more types, the interaction sets the view’s [`isUserInteractionEnabled`](https://developer.apple.com/documentation/uikit/uiview/isuserinteractionenabled) property to `true` so that the interaction begins. For example, when you’re ready to start the Live Text interface, set this property to [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md).
+If you set this property to one or more types, the interaction sets the view’s [`isUserInteractionEnabled`](../../UIKit/uiview/isuserinteractionenabled.md) property to `true` so that the interaction begins. For example, when you’re ready to start the Live Text interface, set this property to [`automatic`](./interactiontypes/automatic.md).
 
 If you set this property to an empty array, the image analysis interaction doesn’t reset the view’s `isUserInteractionEnabled` property to `false`.
 
 ## See Also
 
-- [var delegate: (any ImageAnalysisInteractionDelegate)?](imageanalysisinteraction/delegate.md)
+### Configuring an image interaction
+- [var delegate: (any ImageAnalysisInteractionDelegate)?](./delegate.md)
   The delegate that handles the interaction callbacks.
-- [var analysis: ImageAnalysis?](imageanalysisinteraction/analysis.md)
+- [var analysis: ImageAnalysis?](./analysis.md)
   The results of analyzing an image for items that people can interact with.
-- [var view: UIView?](imageanalysisinteraction/view.md)
+- [var view: UIView?](./view.md)
   The view that uses this interaction.
-- [ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes.md)
+- [ImageAnalysisInteraction.InteractionTypes](./interactiontypes.md)
   The types of interactions that people can perform with an image.
-- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/activeinteractiontypes.md)
+- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./activeinteractiontypes.md)
   The types of interactions that a person actively performs.
 
 

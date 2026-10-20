@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation collection from a dictionary literal.
 

@@ -1,7 +1,8 @@
 # isLoading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the request is loading.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates if the request is loading.
 var isLoading: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLoading) BOOL loading;
+```
+
 ## See Also
 
-- [var isCancelled: Bool](mkmapitemrequest/iscancelled.md)
+### Checking the status of a request
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates if the cancellation of the request was successful.
 
 

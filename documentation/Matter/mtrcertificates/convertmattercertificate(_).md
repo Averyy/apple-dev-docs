@@ -1,7 +1,8 @@
 # convertMatterCertificate(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 class func convertMatterCertificate(_ matterCertificate: Data) -> Data?
+```
+
+```objc
++ (MTRCertificateDERBytes) convertMatterCertificate:(MTRCertificateTLVBytes) matterCertificate;
 ```
 
 

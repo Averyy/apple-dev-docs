@@ -1,7 +1,8 @@
 # cropAndScale
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option you use to crop and scale an image when creating an image feature value.
 
@@ -20,13 +21,18 @@ The option you use to crop and scale an image when creating an image feature val
 static let cropAndScale: MLFeatureValue.ImageOption
 ```
 
+```c
+extern MLFeatureValueImageOption const MLFeatureValueImageOptionCropAndScale;
+```
+
 #### Discussion
 
-Use this value as a dictionary key for the `options` argument of an image-based `MLFeatureValue` initializer. Pair this key with a [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption) value in the initializer’s `options` dictionary. For example, see [`init(cgImage:pixelsWide:pixelsHigh:pixelFormatType:options:)`](mlfeaturevalue/init(cgimage:pixelswide:pixelshigh:pixelformattype:options:)-1pdp4.md).
+Use this value as a dictionary key for the `options` argument of an image-based `MLFeatureValue` initializer. Pair this key with a [`VNImageCropAndScaleOption`](../../../Vision/vnimagecropandscaleoption.md) value in the initializer’s `options` dictionary. For example, see [`init(cgImage:pixelsWide:pixelsHigh:pixelFormatType:options:)`](../init%28cgimage,pixelswide,pixelshigh,pixelformattype,options%29-1pdp4.md).
 
 ## See Also
 
-- [static let cropRect: MLFeatureValue.ImageOption](mlfeaturevalue/imageoption/croprect.md)
+### Image options keys
+- [static let cropRect: MLFeatureValue.ImageOption](./croprect.md)
   The option you use to crop an image when creating an image feature value.
 
 

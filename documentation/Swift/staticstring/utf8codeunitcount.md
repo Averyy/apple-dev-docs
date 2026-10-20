@@ -1,7 +1,8 @@
 # utf8CodeUnitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of UTF-8 code units (excluding the null terminator).
 

@@ -1,7 +1,8 @@
 # supportedJointsGroupNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joint group names the request supports.
 
@@ -21,9 +22,10 @@ var supportedJointsGroupNames: [HumanHandPoseObservation.JointsGroupName] { get 
 
 ## See Also
 
-- [var maximumHandCount: Int](detecthumanhandposerequest/maximumhandcount.md)
+### Configuring a request
+- [var maximumHandCount: Int](./maximumhandcount.md)
   The maximum number of hands to detect in an image.
-- [var supportedJointNames: [HumanHandPoseObservation.JointName]](detecthumanhandposerequest/supportedjointnames.md)
+- [var supportedJointNames: [HumanHandPoseObservation.JointName]](./supportedjointnames.md)
   The joint names the request supports.
 
 

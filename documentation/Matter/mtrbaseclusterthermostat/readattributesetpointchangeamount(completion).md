@@ -1,7 +1,8 @@
 # readAttributeSetpointChangeAmount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSetpointChangeAmount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSetpointChangeAmount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSetpointChangeAmountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

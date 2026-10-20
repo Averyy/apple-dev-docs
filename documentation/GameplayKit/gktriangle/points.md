@@ -1,7 +1,8 @@
 # points
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of three points describing the triangle.
 
@@ -17,6 +18,10 @@ A set of three points describing the triangle.
 
 ```swift
 var points: (vector_float3, vector_float3, vector_float3)
+```
+
+```c
+vector_float3 points[3];
 ```
 
 

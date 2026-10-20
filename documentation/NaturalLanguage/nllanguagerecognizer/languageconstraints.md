@@ -1,7 +1,8 @@
 # languageConstraints
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Limits the set of possible languages that the recognizer will return.
 
@@ -20,9 +21,14 @@ Limits the set of possible languages that the recognizer will return.
 var languageConstraints: [NLLanguage] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * languageConstraints;
+```
+
 ## See Also
 
-- [var languageHints: [NLLanguage : Double]](nllanguagerecognizer/languagehints-7dwgv.md)
+### Guiding the recognizer
+- [var languageHints: [NLLanguage : Double]](./languagehints-7dwgv.md)
   A dictionary that maps languages to their probabilities in the language identification process.
 
 

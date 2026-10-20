@@ -1,7 +1,8 @@
 # cancelAllTaskRequests()
 
 **Framework**: Background Tasks  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel all scheduled task requests.
 
@@ -18,9 +19,14 @@ Cancel all scheduled task requests.
 func cancelAllTaskRequests()
 ```
 
+```objc
+- (void) cancelAllTaskRequests;
+```
+
 ## See Also
 
-- [func cancel(taskRequestWithIdentifier: String)](bgtaskscheduler/cancel(taskrequestwithidentifier:).md)
+### Canceling a task
+- [func cancel(taskRequestWithIdentifier: String)](./cancel%28taskrequestwithidentifier%29.md)
   Cancel a previously scheduled task request.
 
 

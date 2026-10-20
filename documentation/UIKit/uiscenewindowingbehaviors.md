@@ -1,7 +1,8 @@
 # UISceneWindowingBehaviors
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object with properties that determine the behavior of a window.
 
@@ -19,32 +20,37 @@ An object with properties that determine the behavior of a window.
 class UISceneWindowingBehaviors
 ```
 
+```objc
+@interface UISceneWindowingBehaviors : NSObject
+```
+
 ## Topics
 
 ### Specifying window behaviors
-- [var isClosable: Bool](uiscenewindowingbehaviors/isclosable.md)
+- [var isClosable: Bool](./uiscenewindowingbehaviors/isclosable.md)
   A Boolean value that determines whether the window displays a close button.
-- [var isMiniaturizable: Bool](uiscenewindowingbehaviors/isminiaturizable.md)
+- [var isMiniaturizable: Bool](./uiscenewindowingbehaviors/isminiaturizable.md)
   A Boolean value that determines whether the window displays a minimize button.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var isFullScreen: Bool](uiwindowscene/isfullscreen.md)
+### Determining window behaviors
+- [var isFullScreen: Bool](./uiwindowscene/isfullscreen.md)
   A Boolean value that indicates whether the window scene is full screen or windowed.
-- [var windowingBehaviors: UISceneWindowingBehaviors?](uiwindowscene/windowingbehaviors.md)
+- [var windowingBehaviors: UISceneWindowingBehaviors?](./uiwindowscene/windowingbehaviors.md)
   An object that specifies the behaviors of the window.
 
 

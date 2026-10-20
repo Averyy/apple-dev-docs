@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
-- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment](./relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](./relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app store version experiment treatment create request resource.
 
 

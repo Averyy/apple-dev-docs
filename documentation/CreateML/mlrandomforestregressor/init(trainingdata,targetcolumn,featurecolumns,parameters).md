@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random tree regressor.
 
@@ -19,6 +20,12 @@ Creates a random tree regressor.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLRandomForestRegressor.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLRandomForestRegressor.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
@@ -28,9 +35,10 @@ init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = 
 
 ## See Also
 
-- [var targetColumn: String](mlrandomforestregressor/targetcolumn.md)
+### Training a random forest regressor synchronously
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
-- [var featureColumns: [String]](mlrandomforestregressor/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
 
 

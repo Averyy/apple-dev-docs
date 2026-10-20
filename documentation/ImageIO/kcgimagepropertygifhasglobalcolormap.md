@@ -1,7 +1,8 @@
 # kCGImagePropertyGIFHasGlobalColorMap
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the GIF has a global color map.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the GIF has a global color map.
 let kCGImagePropertyGIFHasGlobalColorMap: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGIFHasGlobalColorMap;
+```
+
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean).
+The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md).
 
 ## See Also
 
-- [let kCGImagePropertyGIFCanvasPixelHeight: CFString](kcgimagepropertygifcanvaspixelheight.md)
+### Image Properties
+- [let kCGImagePropertyGIFCanvasPixelHeight: CFString](./kcgimagepropertygifcanvaspixelheight.md)
   The height of the main image, in pixels.
-- [let kCGImagePropertyGIFCanvasPixelWidth: CFString](kcgimagepropertygifcanvaspixelwidth.md)
+- [let kCGImagePropertyGIFCanvasPixelWidth: CFString](./kcgimagepropertygifcanvaspixelwidth.md)
   The width of the main image, in pixels.
-- [let kCGImagePropertyGIFImageColorMap: CFString](kcgimagepropertygifimagecolormap.md)
+- [let kCGImagePropertyGIFImageColorMap: CFString](./kcgimagepropertygifimagecolormap.md)
   The image color map.
 
 

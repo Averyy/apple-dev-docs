@@ -1,7 +1,8 @@
 # prerollForRendering(using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells a custom video compositor to perform any work in the prerolling phase.
 
@@ -19,13 +20,17 @@ Tells a custom video compositor to perform any work in the prerolling phase.
 optional func prerollForRendering(using renderHint: AVVideoCompositionRenderHint)
 ```
 
+```objc
+- (void) prerollForRenderingUsingHint:(AVVideoCompositionRenderHint *) renderHint;
+```
+
 #### Discussion
 
 The AVFoundation framework may perform prerolling to load media data to prime the render pipelines for smoother playback. This method is called in the prerolling phase so that the compositor can load composition resources, such as overlay images, that will be needed as soon as the playback starts.
 
 Not all rendering scenarios use prerolling. For example, this method won’t be called during seeking.
 
-If this method is called, it is guaranteed to be invoked before the first [`startRequest(_:)`](avvideocompositing/startrequest(_:).md) call.
+If this method is called, it is guaranteed to be invoked before the first [`startRequest(_:)`](./startrequest%28_%29.md) call.
 
 This method is synchronous. The prerolling won’t finish until the method returns.
 
@@ -35,9 +40,10 @@ This method is synchronous. The prerolling won’t finish until the method retur
 
 ## See Also
 
-- [func anticipateRendering(using: AVVideoCompositionRenderHint)](avvideocompositing/anticipaterendering(using:).md)
+### Preparing to render frames
+- [func anticipateRendering(using: AVVideoCompositionRenderHint)](./anticipaterendering%28using%29.md)
   Informs a custom video compositor about upcoming rendering requests.
-- [class AVVideoCompositionRenderHint](avvideocompositionrenderhint.md)
+- [class AVVideoCompositionRenderHint](../avvideocompositionrenderhint.md)
   Information about upcoming composition requests, such as composition start time and end time.
 
 

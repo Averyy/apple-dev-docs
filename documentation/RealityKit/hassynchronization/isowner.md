@@ -1,7 +1,8 @@
 # isOwner
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the calling process owns the entity.
 
@@ -11,7 +12,7 @@ A Boolean that indicates whether the calling process owns the entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ The calling process owns the entity if the value is `true`.
 
 ## See Also
 
-- [func requestOwnership(timeout: TimeInterval, (SynchronizationComponent.OwnershipTransferCompletionResult) -> Void)](hassynchronization/requestownership(timeout:_:).md)
+### Managing ownership
+- [func requestOwnership(timeout: TimeInterval, (SynchronizationComponent.OwnershipTransferCompletionResult) -> Void)](./requestownership%28timeout,_%29.md)
   Requests ownership of the entity.
 
 

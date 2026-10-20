@@ -1,7 +1,8 @@
 # type
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The case name component of this union value parameter.
 
@@ -19,6 +20,8 @@ The case name component of this union value parameter.
 ```swift
 final var type: IntentParameter<Value>.AppUnionValueComponent { get }
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` conforms to `AppUnionValue`.
 
 
 ---

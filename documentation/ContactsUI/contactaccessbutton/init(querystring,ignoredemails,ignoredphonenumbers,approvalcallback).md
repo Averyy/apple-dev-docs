@@ -1,7 +1,8 @@
 # init(queryString:ignoredEmails:ignoredPhoneNumbers:approvalCallback:)
 
 **Framework**: Contacts UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contact access button to quickly add contacts under limited-access authorization.
 

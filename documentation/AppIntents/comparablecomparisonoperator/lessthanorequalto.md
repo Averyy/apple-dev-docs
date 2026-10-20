@@ -1,7 +1,8 @@
 # ComparableComparisonOperator.lessThanOrEqualTo
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operator that determines if the parameter is less than or equal to the value.
 
@@ -11,7 +12,7 @@ An operator that determines if the parameter is less than or equal to the value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case lessThanOrEqualTo
 
 ## See Also
 
-- [ComparableComparisonOperator.greaterThan](comparablecomparisonoperator/greaterthan.md)
+### Comparable operators
+- [ComparableComparisonOperator.greaterThan](./greaterthan.md)
   An operator that determines if the parameter is greater than the value.
-- [ComparableComparisonOperator.greaterThanOrEqualTo](comparablecomparisonoperator/greaterthanorequalto.md)
+- [ComparableComparisonOperator.greaterThanOrEqualTo](./greaterthanorequalto.md)
   An operator that determines if the parameter is greater than or equal to the value.
-- [ComparableComparisonOperator.lessThan](comparablecomparisonoperator/lessthan.md)
+- [ComparableComparisonOperator.lessThan](./lessthan.md)
   An operator that determines if the parameter is less than the value.
 
 

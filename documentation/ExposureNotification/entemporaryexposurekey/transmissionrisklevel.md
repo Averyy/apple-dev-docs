@@ -1,19 +1,26 @@
 # transmissionRiskLevel
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The risk of transmission associated with the person a key came from.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var transmissionRiskLevel: ENRiskLevel { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) ENRiskLevel transmissionRiskLevel;
 ```
 
 #### Discussion
@@ -37,13 +44,14 @@ Recommended report types for the different risk levels are:
 
 ## See Also
 
-- [var rollingPeriod: ENIntervalNumber](entemporaryexposurekey/rollingperiod.md)
+### Exposure Criteria
+- [var rollingPeriod: ENIntervalNumber](./rollingperiod.md)
   The length of time that this key is valid.
-- [var keyData: Data](entemporaryexposurekey/keydata.md)
+- [var keyData: Data](./keydata.md)
   The temporary exposure key information.
-- [var rollingStartNumber: ENIntervalNumber](entemporaryexposurekey/rollingstartnumber.md)
+- [var rollingStartNumber: ENIntervalNumber](./rollingstartnumber.md)
   A number that indicates when a key’s rolling period started.
-- [typealias ENIntervalNumber](enintervalnumber.md)
+- [typealias ENIntervalNumber](../enintervalnumber.md)
   A number assigned to each 10-minute window shared between all devices participating in the protocol.
 
 

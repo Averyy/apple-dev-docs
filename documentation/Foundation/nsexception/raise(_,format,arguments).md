@@ -1,7 +1,8 @@
 # raise(_:format:arguments:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and raises an exception with the specified name, reason, and arguments.
 
@@ -20,6 +21,10 @@ Creates and raises an exception with the specified name, reason, and arguments.
 class func raise(_ name: NSExceptionName, format: String, arguments argList: CVaListPointer)
 ```
 
+```objc
++ (void) raise:(NSExceptionName) name format:(NSString *) format arguments:(va_list) argList;
+```
+
 #### Discussion
 
 The user-defined dictionary of the generated object is `nil`.
@@ -32,9 +37,10 @@ The user-defined dictionary of the generated object is `nil`.
 
 ## See Also
 
-- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](nsexception/init(name:reason:userinfo:).md)
+### Creating and Raising an NSException Object
+- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](./init%28name,reason,userinfo%29.md)
   Initializes and returns a newly allocated exception object.
-- [func raise()](nsexception/raise.md)
+- [func raise()](./raise%28%29.md)
   Raises the receiver, causing program flow to jump to the local exception handler.
 
 

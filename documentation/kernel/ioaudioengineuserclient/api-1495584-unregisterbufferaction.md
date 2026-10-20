@@ -1,14 +1,15 @@
 # unregisterBufferAction
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```c
 static IOReturn unregisterBufferAction(OSObject *owner, void *arg1, void *arg2, void *arg3, void *arg4);
 ```
 

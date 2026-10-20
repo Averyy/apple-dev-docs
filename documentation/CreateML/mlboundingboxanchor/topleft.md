@@ -1,7 +1,8 @@
 # MLBoundingBoxAnchor.topLeft
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An anchor at the bounding box’s top-left corner.
 
@@ -16,9 +17,10 @@ case topLeft
 
 ## See Also
 
-- [MLBoundingBoxAnchor.center](mlboundingboxanchor/center.md)
+### Designating anchors
+- [MLBoundingBoxAnchor.center](./center.md)
   An anchor at the bounding box’s center point.
-- [MLBoundingBoxAnchor.bottomLeft](mlboundingboxanchor/bottomleft.md)
+- [MLBoundingBoxAnchor.bottomLeft](./bottomleft.md)
   An anchor at the bounding box’s bottom-left corner.
 
 

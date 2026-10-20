@@ -1,7 +1,8 @@
 # addressFilter
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An address filter that lists which address components to include or exclude in search results.
 
@@ -10,13 +11,14 @@ An address filter that lists which address components to include or exclude in s
 
 ## Declaration
 
-```swift
+```
 addressFilter?: AddressFilter;
 ```
 
 ## See Also
 
-- [includeAddresses](searchoptions/includeaddresses.md)
+### Address filtering
+- [includeAddresses](./includeaddresses.md)
   A Boolean value that indicates whether the search results should include addresses.
 
 

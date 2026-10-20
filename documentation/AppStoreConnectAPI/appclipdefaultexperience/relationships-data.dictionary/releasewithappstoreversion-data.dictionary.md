@@ -1,7 +1,8 @@
 # AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Default App Clip Experiences and the App Store Versions resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Default App Clip E
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data](appclipdefaultexperience/relationships-data.dictionary/releasewithappstoreversion-data.dictionary/data-data.dictionary.md)
+- [object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data](./releasewithappstoreversion-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Store Versions resource.
 
 ## Properties
@@ -27,11 +28,12 @@ object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion
 
 ## See Also
 
-- [object AppClipDefaultExperience.Relationships.AppClip](appclipdefaultexperience/relationships-data.dictionary/appclip-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperience.Relationships.AppClip](./appclip-data.dictionary.md)
   The data and links that describe the relationship between the Default App Clip Experiences and the App Clips resources.
-- [object AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail](appclipdefaultexperience/relationships-data.dictionary/appclipappstorereviewdetail-data.dictionary.md)
+- [object AppClipDefaultExperience.Relationships.AppClipAppStoreReviewDetail](./appclipappstorereviewdetail-data.dictionary.md)
   The data and links that describe the relationship between the Default App Clip Experiences and the App Clip App Store Review Details resources.
-- [object AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations](appclipdefaultexperience/relationships-data.dictionary/appclipdefaultexperiencelocalizations-data.dictionary.md)
+- [object AppClipDefaultExperience.Relationships.AppClipDefaultExperienceLocalizations](./appclipdefaultexperiencelocalizations-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Default App Clip Experiences and the Default App Clip Experience Localizations resources.
 
 

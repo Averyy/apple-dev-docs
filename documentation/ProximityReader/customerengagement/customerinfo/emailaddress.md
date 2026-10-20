@@ -1,7 +1,8 @@
 # emailAddress
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The customer’s email address or Hide My Email address if supported.
 
@@ -18,11 +19,12 @@ let emailAddress: String?
 
 ## See Also
 
-- [let barcodeMessage: String?](customerengagement/customerinfo/barcodemessage.md)
+### Getting customer information details
+- [let barcodeMessage: String?](./barcodemessage.md)
   A message for the barcode.
-- [let customerVASData: Data?](customerengagement/customerinfo/customervasdata.md)
+- [let customerVASData: Data?](./customervasdata.md)
   The encrypted VAS content of a selected Wallet pass.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/customerinfo/phonenumber.md)
+- [let phoneNumber: CNPhoneNumber?](./phonenumber.md)
   The customer’s phone number, if provided.
 
 

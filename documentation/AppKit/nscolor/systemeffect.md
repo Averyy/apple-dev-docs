@@ -1,7 +1,8 @@
 # NSColor.SystemEffect
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for user interactions that change the appearance of a view or control.
 
@@ -14,35 +15,40 @@ Constants for user interactions that change the appearance of a view or control.
 enum SystemEffect
 ```
 
+```c
+enum NSColorSystemEffect : NSInteger;
+```
+
 ## Topics
 
 ### Appearances
-- [NSColor.SystemEffect.none](nscolor/systemeffect/none.md)
+- [NSColor.SystemEffect.none](./systemeffect/none.md)
   No additional effects.
-- [NSColor.SystemEffect.pressed](nscolor/systemeffect/pressed.md)
+- [NSColor.SystemEffect.pressed](./systemeffect/pressed.md)
   The color that indicates the item was pressed.
-- [NSColor.SystemEffect.deepPressed](nscolor/systemeffect/deeppressed.md)
+- [NSColor.SystemEffect.deepPressed](./systemeffect/deeppressed.md)
   The color that indicates the item received a deep press.
-- [NSColor.SystemEffect.disabled](nscolor/systemeffect/disabled.md)
+- [NSColor.SystemEffect.disabled](./systemeffect/disabled.md)
   The color that indicates the item is disabled.
-- [NSColor.SystemEffect.rollover](nscolor/systemeffect/rollover.md)
+- [NSColor.SystemEffect.rollover](./systemeffect/rollover.md)
   The color that indicates the mouse rolled over the item.
 ### Initializers
-- [init?(rawValue: Int)](nscolor/systemeffect/init(rawvalue:).md)
+- [init?(rawValue: Int)](./systemeffect/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func withSystemEffect(NSColor.SystemEffect) -> NSColor](nscolor/withsystemeffect(_:).md)
+### Applying specific appearances to colors
+- [func withSystemEffect(NSColor.SystemEffect) -> NSColor](./withsystemeffect%28_%29.md)
   Returns a new color object that represents the current color modified to include the specified visual effect.
 
 

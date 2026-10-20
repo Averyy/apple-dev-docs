@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges.ANY index
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes the alerts for the peer filter ranges. The key name is the index into the `PeerFilterRanges` array in the installed `com.apple.AssetCache.managed` payload.
 
@@ -10,7 +11,7 @@ A dictionary that describes the alerts for the peer filter ranges. The key name 
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges.ANY index
 ```
 
@@ -18,6 +19,8 @@ object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRange
 
 - `addresses` ([string]) *(required)*: An array of local IP addresses of peer content caches that rejected requests from the content cache.
 - `className` (string) *(required)*: The type of the alert.
+
+  **Allowed Values**: `AssetCacheUnfriendlyPeersInFilterRangeAlert`
 - `peerFilterRangeIndex` (integer) *(required)*: The index into the `PeerFilterRanges` in the installed ContentCaching payload.
 - `postDate` (date) *(required)*: The date of the alert.
 

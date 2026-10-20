@@ -1,7 +1,8 @@
 # kSystemKeychainName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kSystemKeychainName: String { get }
+```
+
+```c
+#define kSystemKeychainName
 ```
 
 

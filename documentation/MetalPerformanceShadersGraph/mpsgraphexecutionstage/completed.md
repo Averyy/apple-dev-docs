@@ -1,7 +1,8 @@
 # MPSGraphExecutionStage.completed
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 stage when execution of the graph completes.
 
@@ -17,6 +18,10 @@ stage when execution of the graph completes.
 
 ```swift
 case completed
+```
+
+```c
+MPSGraphExecutionStageCompleted
 ```
 
 

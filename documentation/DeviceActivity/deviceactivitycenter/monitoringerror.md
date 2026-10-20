@@ -1,7 +1,8 @@
 # DeviceActivityCenter.MonitoringError
 
 **Framework**: Device Activity  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that may occur when starting to monitor an activity.
 
@@ -19,31 +20,31 @@ enum MonitoringError
 ## Topics
 
 ### Checking for Errors
-- [DeviceActivityCenter.MonitoringError.excessiveActivities](deviceactivitycenter/monitoringerror/excessiveactivities.md)
+- [DeviceActivityCenter.MonitoringError.excessiveActivities](./monitoringerror/excessiveactivities.md)
   The calling process is monitoring too many activities.
-- [DeviceActivityCenter.MonitoringError.intervalTooLong](deviceactivitycenter/monitoringerror/intervaltoolong.md)
+- [DeviceActivityCenter.MonitoringError.intervalTooLong](./monitoringerror/intervaltoolong.md)
   The activity’s schedule has an interval that is too long.
-- [DeviceActivityCenter.MonitoringError.intervalTooShort](deviceactivitycenter/monitoringerror/intervaltooshort.md)
+- [DeviceActivityCenter.MonitoringError.intervalTooShort](./monitoringerror/intervaltooshort.md)
   The activity’s schedule has an interval that is too short.
-- [DeviceActivityCenter.MonitoringError.invalidDateComponents](deviceactivitycenter/monitoringerror/invaliddatecomponents.md)
+- [DeviceActivityCenter.MonitoringError.invalidDateComponents](./monitoringerror/invaliddatecomponents.md)
   The schedule’s date range is invalid.
-- [DeviceActivityCenter.MonitoringError.unauthorized](deviceactivitycenter/monitoringerror/unauthorized.md)
+- [DeviceActivityCenter.MonitoringError.unauthorized](./monitoringerror/unauthorized.md)
   The calling process isn’t authorized to monitor device activity.
 ### Getting the Localized Message
-- [var errorDescription: String?](deviceactivitycenter/monitoringerror/errordescription.md)
+- [var errorDescription: String?](./monitoringerror/errordescription.md)
   A localized message that describes what error occurred.
-- [var recoverySuggestion: String?](deviceactivitycenter/monitoringerror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./monitoringerror/recoverysuggestion.md)
   A localized message that describes how to recover from the failure.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

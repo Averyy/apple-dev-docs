@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SecureElementCredential  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a card emulation options instance.
 

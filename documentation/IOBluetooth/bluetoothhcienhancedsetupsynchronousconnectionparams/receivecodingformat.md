@@ -1,15 +1,20 @@
 # receiveCodingFormat
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var receiveCodingFormat: UInt64
+```
+
+```c
+uint64_t receiveCodingFormat;
 ```
 
 

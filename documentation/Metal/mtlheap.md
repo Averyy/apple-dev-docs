@@ -1,7 +1,8 @@
 # MTLHeap
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A memory pool from which you can suballocate resources.
 
@@ -19,16 +20,20 @@ A memory pool from which you can suballocate resources.
 protocol MTLHeap : MTLAllocation
 ```
 
+```objc
+@protocol MTLHeap <MTLAllocation>
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
-- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
+- [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
+- [Reducing the memory footprint of Metal apps](./reducing-the-memory-footprint-of-metal-apps.md)
 
 #### Overview
 
-Don’t implement this protocol yourself; instead, to create a heap, configure an [`MTLHeapDescriptor`](mtlheapdescriptor.md) instance and call the [`makeHeap(descriptor:)`](mtldevice/makeheap(descriptor:).md) method of an [`MTLDevice`](mtldevice.md) instance.
+Don’t implement this protocol yourself; instead, to create a heap, configure an [`MTLHeapDescriptor`](./mtlheapdescriptor.md) instance and call the [`makeHeap(descriptor:)`](./mtldevice/makeheap%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md) instance.
 
 You suballocate resources from a heap and make them *aliasable* or *non-aliasable*. A sub-allocated resource is non-aliased by default, preventing future resources allocated from the heap from using its memory. Resources are *aliased* when they share the same memory allocation on a heap.
 
@@ -37,68 +42,69 @@ All resources sub-allocated from the same heap share the same storage mode and C
 ## Topics
 
 ### Naming and identifying a heap
-- [var label: String?](mtlheap/label.md)
+- [var label: String?](./mtlheap/label.md)
   A string that identifies the heap.
 ### Creating buffers from a heap
-- [func makeBuffer(length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:).md)
+- [func makeBuffer(length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](./mtlheap/makebuffer%28length,options%29.md)
   Creates a buffer on the heap.
-- [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](mtlheap/makebuffer(length:options:offset:).md)
+- [func makeBuffer(length: Int, options: MTLResourceOptions, offset: Int) -> (any MTLBuffer)?](./mtlheap/makebuffer%28length,options,offset%29.md)
   Creates a buffer at a specified offset on the heap.
 ### Creating textures from a heap
-- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:).md)
+- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./mtlheap/maketexture%28descriptor%29.md)
   Creates a texture on the heap.
-- [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:offset:).md)
+- [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int) -> (any MTLTexture)?](./mtlheap/maketexture%28descriptor,offset%29.md)
   Creates a texture at a specified offset on the heap.
 ### Creating acceleration structure from a heap
-- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(size:).md)
-- [func makeAccelerationStructure(size: Int, offset: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(size:offset:).md)
-- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(descriptor:).md)
-- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor, offset: Int) -> (any MTLAccelerationStructure)?](mtlheap/makeaccelerationstructure(descriptor:offset:).md)
+- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](./mtlheap/makeaccelerationstructure%28size%29.md)
+- [func makeAccelerationStructure(size: Int, offset: Int) -> (any MTLAccelerationStructure)?](./mtlheap/makeaccelerationstructure%28size,offset%29.md)
+- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](./mtlheap/makeaccelerationstructure%28descriptor%29.md)
+- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor, offset: Int) -> (any MTLAccelerationStructure)?](./mtlheap/makeaccelerationstructure%28descriptor,offset%29.md)
 ### Configuring a heap’s purgeable state
-- [func setPurgeableState(MTLPurgeableState) -> MTLPurgeableState](mtlheap/setpurgeablestate(_:).md)
+- [func setPurgeableState(MTLPurgeableState) -> MTLPurgeableState](./mtlheap/setpurgeablestate%28_%29.md)
   Sets the purgeable state of the heap.
 ### Checking a heap’s size information
-- [func maxAvailableSize(alignment: Int) -> Int](mtlheap/maxavailablesize(alignment:).md)
+- [func maxAvailableSize(alignment: Int) -> Int](./mtlheap/maxavailablesize%28alignment%29.md)
   The maximum size of a resource, in bytes, that can be currently allocated from the heap.
-- [var size: Int](mtlheap/size.md)
+- [var size: Int](./mtlheap/size.md)
   The total size of the heap, in bytes.
-- [var usedSize: Int](mtlheap/usedsize.md)
+- [var usedSize: Int](./mtlheap/usedsize.md)
   The size of all resources currently in the heap, in bytes.
-- [var currentAllocatedSize: Int](mtlheap/currentallocatedsize.md)
+- [var currentAllocatedSize: Int](./mtlheap/currentallocatedsize.md)
   The size, in bytes, of the current heap allocation.
 ### Checking a heap’s permanent configuration
-- [var device: any MTLDevice](mtlheap/device.md)
+- [var device: any MTLDevice](./mtlheap/device.md)
   The device object that created the heap.
-- [var type: MTLHeapType](mtlheap/type.md)
+- [var type: MTLHeapType](./mtlheap/type.md)
   The heap’s type.
-- [var storageMode: MTLStorageMode](mtlheap/storagemode.md)
+- [var storageMode: MTLStorageMode](./mtlheap/storagemode.md)
   The heap’s storage mode.
-- [var cpuCacheMode: MTLCPUCacheMode](mtlheap/cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](./mtlheap/cpucachemode.md)
   The heap’s CPU cache mode.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheap/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./mtlheap/hazardtrackingmode.md)
   The heap’s hazard tracking mode.
-- [var resourceOptions: MTLResourceOptions](mtlheap/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./mtlheap/resourceoptions.md)
   The options for resources created by the heap.
 
 ## Relationships
 
 ### Inherits From
-- [MTLAllocation](mtlallocation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTLAllocation](./mtlallocation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+### Resource memory allocation and management
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
-- [class MTLHeapDescriptor](mtlheapdescriptor.md)
+- [class MTLHeapDescriptor](./mtlheapdescriptor.md)
   A configuration that customizes the behavior for a Metal memory heap.
-- [enum MTLHeapType](mtlheaptype.md)
+- [enum MTLHeapType](./mtlheaptype.md)
   The options you use to choose the heap type.
-- [struct MTLSizeAndAlign](mtlsizeandalign.md)
+- [struct MTLSizeAndAlign](./mtlsizeandalign.md)
   The size and alignment of a resource, in bytes.
 
 

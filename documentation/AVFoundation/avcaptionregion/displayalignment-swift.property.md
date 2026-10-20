@@ -1,7 +1,8 @@
 # displayAlignment
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of lines for the region.
 
@@ -17,9 +18,14 @@ The alignment of lines for the region.
 var displayAlignment: AVCaptionRegion.DisplayAlignment { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptionRegionDisplayAlignment displayAlignment;
+```
+
 ## See Also
 
-- [AVCaptionRegion.DisplayAlignment](avcaptionregion/displayalignment-swift.enum.md)
+### Accessing the display alignment
+- [AVCaptionRegion.DisplayAlignment](./displayalignment-swift.enum.md)
   Constants that indicate the alignment of lines in a region.
 
 

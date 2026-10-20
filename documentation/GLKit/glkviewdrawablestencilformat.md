@@ -1,7 +1,8 @@
 # GLKViewDrawableStencilFormat
 
 **Framework**: GLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The format of the stencil renderbuffer.
 
@@ -16,33 +17,38 @@ The format of the stencil renderbuffer.
 enum GLKViewDrawableStencilFormat
 ```
 
+```c
+enum GLKViewDrawableStencilFormat : GLint;
+```
+
 ## Topics
 
 ### Constants
-- [GLKViewDrawableStencilFormat.formatNone](glkviewdrawablestencilformat/formatnone.md)
+- [GLKViewDrawableStencilFormat.formatNone](./glkviewdrawablestencilformat/formatnone.md)
   The underlying framebuffer object has no stencil buffer.
-- [GLKViewDrawableStencilFormat.format8](glkviewdrawablestencilformat/format8.md)
+- [GLKViewDrawableStencilFormat.format8](./glkviewdrawablestencilformat/format8.md)
   An 8-bit stencil entry for each pixel.
 ### Initializers
-- [init?(rawValue: GLint)](glkviewdrawablestencilformat/init(rawvalue:).md)
+- [init?(rawValue: GLint)](./glkviewdrawablestencilformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum GLKViewDrawableColorFormat](glkviewdrawablecolorformat.md)
+### Constants
+- [enum GLKViewDrawableColorFormat](./glkviewdrawablecolorformat.md)
   The format of the color renderbuffer.
-- [enum GLKViewDrawableDepthFormat](glkviewdrawabledepthformat.md)
+- [enum GLKViewDrawableDepthFormat](./glkviewdrawabledepthformat.md)
   The format of the depth renderbuffer.
-- [enum GLKViewDrawableMultisample](glkviewdrawablemultisample.md)
+- [enum GLKViewDrawableMultisample](./glkviewdrawablemultisample.md)
   The format of the multisampling buffer.
 
 

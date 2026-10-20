@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the block buffer is empty.
 

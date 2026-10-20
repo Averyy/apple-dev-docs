@@ -1,9 +1,10 @@
 # isMixed
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Whether the [`Toggle`](toggle.md) is currently in a mixed state.
+Whether the [`Toggle`](../toggle.md) is currently in a mixed state.
 
 **Availability**:
 - iOS 16.0+
@@ -22,7 +23,7 @@ var isMixed: Bool
 
 #### Discussion
 
-Use this property to determine whether the toggle style should render a mixed state presentation. A mixed state corresponds to an underlying collection with a mix of true and false Bindings. To toggle the state, use the `Bool.toggle()` method on the [`isOn`](togglestyleconfiguration/ison.md) binding.
+Use this property to determine whether the toggle style should render a mixed state presentation. A mixed state corresponds to an underlying collection with a mix of true and false Bindings. To toggle the state, use the `Bool.toggle()` method on the [`isOn`](./ison.md) binding.
 
 In the following example, a custom style uses the `isMixed` property to render the correct toggle state using symbols:
 
@@ -44,9 +45,10 @@ struct SymbolToggleStyle: ToggleStyle {
 
 ## See Also
 
-- [var isOn: Bool](togglestyleconfiguration/ison.md)
+### Managing the toggle state
+- [var isOn: Bool](./ison.md)
   A binding to a state property that indicates whether the toggle is on.
-- [var $isOn: Binding<Bool>](togglestyleconfiguration/$ison.md)
+- [var $isOn: Binding<Bool>](./dollarison.md)
 
 
 ---

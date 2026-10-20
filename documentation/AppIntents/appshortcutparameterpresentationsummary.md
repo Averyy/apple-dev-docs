@@ -1,7 +1,8 @@
 # AppShortcutParameterPresentationSummary
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The summary of the presentation of an App Shortcut parameter.
 
@@ -11,7 +12,7 @@ The summary of the presentation of an App Shortcut parameter.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,17 +28,18 @@ Make sure to provide a summary string that includes the parameter in the interpo
 ## Topics
 
 ### Initializers
-- [init(AppShortcutParameterPresentationSummaryString<Intent, Value, Parameter, ParameterKeyPath>, table: StaticString?)](appshortcutparameterpresentationsummary/init(_:table:).md)
+- [init(AppShortcutParameterPresentationSummaryString<Intent, Value, Parameter, ParameterKeyPath>, table: StaticString?)](./appshortcutparameterpresentationsummary/init%28_,table%29.md)
   Initializes a presentation summary with the specified parameters.
 
 ## See Also
 
-- [struct AppShortcutParameterPresentation](appshortcutparameterpresentation.md)
+### App Shortcut parameter presentation
+- [struct AppShortcutParameterPresentation](./appshortcutparameterpresentation.md)
   Describes the presentation of an App Shortcut  for the provided parameter.
-- [struct AppShortcutParameterPresentationSummaryString](appshortcutparameterpresentationsummarystring.md)
-- [struct AppShortcutParameterPresentationTitle](appshortcutparameterpresentationtitle.md)
+- [struct AppShortcutParameterPresentationSummaryString](./appshortcutparameterpresentationsummarystring.md)
+- [struct AppShortcutParameterPresentationTitle](./appshortcutparameterpresentationtitle.md)
   A struct that represents the title of the presentation of an App Shortcut.
-- [struct AppShortcutParameterPresentationTitleString](appshortcutparameterpresentationtitlestring.md)
+- [struct AppShortcutParameterPresentationTitleString](./appshortcutparameterpresentationtitlestring.md)
 
 
 ---

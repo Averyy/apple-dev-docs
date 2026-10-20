@@ -1,7 +1,8 @@
 # init(subject:body:from:to:cc:)
 
 **Framework**: Message UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 3.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init(subject: String, body: NSAttributedString, from: String, to: [String], cc: [String])
+```
+
+```objc
+- (instancetype) initWithSubject:(NSString *) subject body:(NSAttributedString *) body from:(NSString *) from to:(NSArray<NSString *> *) to cc:(NSArray<NSString *> *) cc;
 ```
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a focus state that binds to a Boolean.
 
@@ -18,6 +19,12 @@ Creates a focus state that binds to a Boolean.
 
 ```swift
 init() where Value == Bool
+```
+
+**Other overloads**:
+
+```swift
+init<T>() where Value == T?, T : Hashable
 ```
 
 

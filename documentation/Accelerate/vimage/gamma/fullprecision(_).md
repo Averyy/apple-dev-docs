@@ -1,7 +1,8 @@
 # vImage.Gamma.fullPrecision(_:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A user-defined gamma value with full-precision calculation.
 
@@ -11,7 +12,7 @@ A user-defined gamma value with full-precision calculation.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case fullPrecision(Float)
 
 ## See Also
 
-- [vImage.Gamma.halfPrecision(_:)](vimage/gamma/halfprecision(_:).md)
+### User Defined Gamma
+- [vImage.Gamma.halfPrecision(_:)](./halfprecision%28_%29.md)
   A user-defined gamma value with half-precision calculation.
 
 

@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.flip
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Raises up and rotates around a central axis before returning to its original position.
 

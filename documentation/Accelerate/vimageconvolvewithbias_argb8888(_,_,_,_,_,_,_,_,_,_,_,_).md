@@ -1,7 +1,8 @@
 # vImageConvolveWithBias_ARGB8888(_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Convolves an 8-bit-per-channel, 4-channel interleaved image by a 2D kernel and adds a bias.
 
@@ -20,13 +21,17 @@ Convolves an 8-bit-per-channel, 4-channel interleaved image by a 2D kernel and a
 func vImageConvolveWithBias_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ kernel: UnsafePointer<Int16>!, _ kernel_height: UInt32, _ kernel_width: UInt32, _ divisor: Int32, _ bias: Int32, _ backgroundColor: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvolveWithBias_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const int16_t *kernel, uint32_t kernel_height, uint32_t kernel_width, int32_t divisor, int32_t bias, const Pixel_8888 backgroundColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -53,21 +58,27 @@ You can use the same workspace memory for a group of images that are different s
 - `divisor`: The value, for normalization purposes, to divide into the convolution results.
 - `bias`: The value to add  to each element in the convolution result, before applying the divisor or performing any clipping.
 - `backgroundColor`: A background color. If you supply a color, you need to also set the `kvImageBackgroundColorFill` flag; otherwise, the function ignores the color.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](kvimagecopyinplace.md), [`kvImageTruncateKernel`](kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](kvimageedgeextend.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](./kvimagecopyinplace.md), [`kvImageTruncateKernel`](./kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
 
 ## See Also
 
-- [func vImageConvolve_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Int16>!, UInt32, UInt32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvolve_argb8888(_:_:_:_:_:_:_:_:_:_:_:).md)
+### Related Documentation
+- [func vImageConvolve_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Int16>!, UInt32, UInt32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvolve_argb8888%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves an 8-bit-per-channel, 4-channel interleaved image by a 2D kernel and divides the pixel values by a divisor.
-- [func vImageConvolveWithBias_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Int16>!, UInt32, UInt32, Int32, Int32, Pixel_8, vImage_Flags) -> vImage_Error](vimageconvolvewithbias_planar8(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+### Convolving with bias
+- [func vImageConvolveWithBias_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Int16>!, UInt32, UInt32, Int32, Int32, Pixel_8, vImage_Flags) -> vImage_Error](./vimageconvolvewithbias_planar8%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves an 8-bit planar image by a 2D kernel and adds a bias.
-- [func vImageConvolveWithBias_Planar16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, Pixel_16F, vImage_Flags) -> vImage_Error](vimageconvolvewithbias_planar16f(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageConvolveWithBias_Planar16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, Pixel_16F, vImage_Flags) -> vImage_Error](./vimageconvolvewithbias_planar16f%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves a floating-point 16-bit planar image by a 2D kernel and adds a bias.
-- [func vImageConvolveWithBias_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, Pixel_F, vImage_Flags) -> vImage_Error](vimageconvolvewithbias_planarf(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageConvolveWithBias_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, Pixel_F, vImage_Flags) -> vImage_Error](./vimageconvolvewithbias_planarf%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves a floating-point 32-bit planar image by a 2D kernel and adds a bias.
-- [func vImageConvolveWithBias_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](vimageconvolvewithbias_argb16f(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageConvolveWithBias_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, UnsafePointer<UInt16>!, vImage_Flags) -> vImage_Error](./vimageconvolvewithbias_argb16f%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves a floating-point 16-bit-per-channel, 4-channel interleaved image by a 2D kernel and adds a bias.
-- [func vImageConvolveWithBias_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, UnsafePointer<Float>!, vImage_Flags) -> vImage_Error](vimageconvolvewithbias_argbffff(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vImageConvolveWithBias_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Float>!, UInt32, UInt32, Float, UnsafePointer<Float>!, vImage_Flags) -> vImage_Error](./vimageconvolvewithbias_argbffff%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves a floating-point 32-bit-per-channel, 4-channel interleaved image by a 2D kernel and adds a bias.
 
 

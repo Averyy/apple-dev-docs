@@ -1,7 +1,8 @@
 # init(transformComponent:resetsTransform:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -17,15 +18,20 @@
 convenience init(transformComponent component: any MDLTransformComponent, resetsTransform: Bool)
 ```
 
+```objc
+- (instancetype) initWithTransformComponent:(id<MDLTransformComponent>) component resetsTransform:(BOOL) resetsTransform;
+```
+
 ## See Also
 
-- [convenience init(identity: ())](mdltransform/init(identity:).md)
+### Creating a Transform Object
+- [convenience init(identity: ())](./init%28identity%29.md)
   Initializes a transform object to the identity transformation.
-- [convenience init(matrix: matrix_float4x4)](mdltransform/init(matrix:).md)
+- [convenience init(matrix: matrix_float4x4)](./init%28matrix%29.md)
   Initializes a transform object with the specified transform matrix.
-- [convenience init(transformComponent: any MDLTransformComponent)](mdltransform/init(transformcomponent:).md)
+- [convenience init(transformComponent: any MDLTransformComponent)](./init%28transformcomponent%29.md)
   Initializes a transform object to match the specified transform component.
-- [convenience init(matrix: matrix_float4x4, resetsTransform: Bool)](mdltransform/init(matrix:resetstransform:).md)
+- [convenience init(matrix: matrix_float4x4, resetsTransform: Bool)](./init%28matrix,resetstransform%29.md)
 
 
 ---

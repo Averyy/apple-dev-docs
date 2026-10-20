@@ -1,17 +1,22 @@
 # type(ofProperty:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the type for a given property.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func type(ofProperty property: String!) -> ABPropertyType
+```
+
+```objc
++ (ABPropertyType) typeOfProperty:(NSString *) property;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ If the property does not exist, this method returns `kABErrorInProperty`.
 
 ## See Also
 
-- [class func addPropertiesAndTypes([AnyHashable : Any]!) -> Int](abgroup/addpropertiesandtypes(_:).md)
+### Managing properties
+- [class func addPropertiesAndTypes([AnyHashable : Any]!) -> Int](./addpropertiesandtypes%28_%29.md)
   Adds the given properties to all records of this type in the Address Book database.
-- [class func removeProperties([Any]!) -> Int](abgroup/removeproperties(_:).md)
+- [class func removeProperties([Any]!) -> Int](./removeproperties%28_%29.md)
   Removes the given properties from all the records of this type in the Address Book database.
-- [class func properties() -> [Any]!](abgroup/properties.md)
+- [class func properties() -> [Any]!](./properties%28%29.md)
   Returns an array of the names of all the properties for this record type in the Address Book database.
 
 

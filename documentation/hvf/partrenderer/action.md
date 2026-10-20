@@ -1,7 +1,8 @@
 # PartRenderer.Action
 
 **Framework**: hvf  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Action requested by the render context after processing an instruction
 
@@ -23,18 +24,18 @@ enum Action
 ## Topics
 
 ### Enumeration Cases
-- [PartRenderer.Action.continue](partrenderer/action/continue.md)
+- [PartRenderer.Action.continue](./action/continue.md)
   Continue rendering
-- [PartRenderer.Action.skip](partrenderer/action/skip.md)
+- [PartRenderer.Action.skip](./action/skip.md)
   Skip this part (only in response to beginPart)
-- [PartRenderer.Action.stop](partrenderer/action/stop.md)
+- [PartRenderer.Action.stop](./action/stop.md)
   Stop rendering
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

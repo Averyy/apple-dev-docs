@@ -1,22 +1,24 @@
 # init
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserMIDIDriver *driver, OSString *name, IOUserMIDIProtocolID protocol);
 ```
 
 ## See Also
 
-- [GetBaseClassID](iousermidiendpoint/getbaseclassid.md)
-- [GetClassID](iousermidiendpoint/getclassid.md)
-- [free](iousermidiendpoint/free.md)
+### Instance Methods
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [free](./free.md)
 
 
 ---

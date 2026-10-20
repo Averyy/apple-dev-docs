@@ -1,7 +1,8 @@
 # decodeWithOptimizer(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the encoded transformer with a decoder.
 
@@ -19,6 +20,8 @@ Reads the encoded transformer with a decoder.
 ```swift
 func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> OrdinalEncoder<Category>.Transformer
 ```
+
+Available when `Category` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
 #### Return Value
 

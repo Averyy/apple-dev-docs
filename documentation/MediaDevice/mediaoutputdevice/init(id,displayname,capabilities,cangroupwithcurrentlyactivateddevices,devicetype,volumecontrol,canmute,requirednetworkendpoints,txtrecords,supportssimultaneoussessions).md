@@ -1,7 +1,8 @@
 # init(id:displayName:capabilities:canGroupWithCurrentlyActivatedDevices:deviceType:volumeControl:canMute:requiredNetworkEndpoints:txtRecords:supportsSimultaneousSessions:)
 
 **Framework**: Media Device  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new media output device with the specified properties, requiring at least one network endpoint.
 
@@ -22,7 +23,7 @@ A configured `MediaOutputDevice`, or `nil` if `networkEndpoints` is empty or `ca
 
 #### Discussion
 
-This is the preferred initializer for [`MediaOutputDevice`](mediaoutputdevice.md). It enforces that the device has at least one valid network endpoint, returning `nil` if the `networkEndpoints` array is empty. Devices discovered via network browsing (e.g., Bonjour/mDNS) should always have associated endpoints, and this initializer ensures that invariant at construction time.
+This is the preferred initializer for [`MediaOutputDevice`](../mediaoutputdevice.md). It enforces that the device has at least one valid network endpoint, returning `nil` if the `networkEndpoints` array is empty. Devices discovered via network browsing (e.g., Bonjour/mDNS) should always have associated endpoints, and this initializer ensures that invariant at construction time.
 
 ## Parameters
 
@@ -35,7 +36,7 @@ This is the preferred initializer for [`MediaOutputDevice`](mediaoutputdevice.md
 - `canMute`: Whether the device supports muting audio output. Defaults to `true`.
 - `networkEndpoints`: The network endpoints used to communicate with this device. Must contain at least one endpoint or the initializer returns `nil`.
 - `txtRecords`: TXT records containing device metadata discovered via network protocols. Defaults to an empty array.
-- `supportsSimultaneousSessions`: Whether the device supports receiving multiple concurrent media sessions via [`MediaOutputSession`](mediaoutputsession.md). Defaults to `false`.
+- `supportsSimultaneousSessions`: Whether the device supports receiving multiple concurrent media sessions via [`MediaOutputSession`](../mediaoutputsession.md). Defaults to `false`.
 
 
 ---

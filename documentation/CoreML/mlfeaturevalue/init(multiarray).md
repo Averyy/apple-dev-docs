@@ -1,7 +1,8 @@
 # init(multiArray:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value that contains a multidimensional array.
 
@@ -20,13 +21,18 @@ Creates a feature value that contains a multidimensional array.
 convenience init(multiArray value: MLMultiArray)
 ```
 
+```objc
++ (instancetype) featureValueWithMultiArray:(MLMultiArray *) value;
+```
+
 ## Parameters
 
-- `value`: An [`MLMultiArray`](mlmultiarray.md) instance.
+- `value`: An [`MLMultiArray`](../mlmultiarray.md) instance.
 
 ## See Also
 
-- [convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>)](mlfeaturevalue/init(shapedarray:).md)
+### Creating multidimensional feature values
+- [convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>)](./init%28shapedarray%29.md)
   Creates a feature value that contains a shaped array.
 
 

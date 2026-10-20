@@ -1,14 +1,17 @@
 # $document
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
 - visionOS 1.0+
+
+> **Deprecated**: Use Document protocol and URLDocumentConfiguration instead.
 
 ## Declaration
 
@@ -19,7 +22,8 @@
 
 ## See Also
 
-- [var document: Document](referencefiledocumentconfiguration/document.md)
+### Getting and setting the document
+- [var document: Document](./document.md)
   The current document model.
 
 

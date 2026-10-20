@@ -1,7 +1,8 @@
 # isPreparedToPlay
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a music player is ready to play.
 

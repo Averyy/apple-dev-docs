@@ -1,7 +1,8 @@
 # didRemoveItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -12,6 +13,8 @@
 ```swift
 static var didRemoveItem: NotificationCenter.BaseMessageIdentifier<NSToolbar.DidRemoveItemMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSToolbar.DidRemoveItemMessage>`.
 
 
 ---

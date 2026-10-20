@@ -1,7 +1,8 @@
 # storageModeShared
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The CPU and GPU share access to the resource, allocated in system memory.
 
@@ -19,21 +20,26 @@ The CPU and GPU share access to the resource, allocated in system memory.
 static var storageModeShared: MTLResourceOptions { get }
 ```
 
+```c
+MTLResourceStorageModeShared
+```
+
 #### Discussion
 
-This is the default storage mode for [`MTLBuffer`](mtlbuffer.md) instances on integrated GPUs and both [`MTLBuffer`](mtlbuffer.md) and [`MTLTexture`](mtltexture.md) instances on Apple silicon GPUs. On non-Apple family GPUs, the shared storage mode isn’t available for [`MTLTexture`](mtltexture.md) instances.
+This is the default storage mode for [`MTLBuffer`](../mtlbuffer.md) instances on integrated GPUs and both [`MTLBuffer`](../mtlbuffer.md) and [`MTLTexture`](../mtltexture.md) instances on Apple silicon GPUs. On non-Apple family GPUs, the shared storage mode isn’t available for [`MTLTexture`](../mtltexture.md) instances.
 
 When either the CPU or GPU changes the contents of the resource, you’re responsible for synchronizing access to the texture from the other participant. Ensure that all changes you schedule on either the CPU or GPU for a resource that uses shared memory complete before accessing that resource on the other processor.
 
-For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [Setting resource storage modes](../setting-resource-storage-modes.md).
 
 ## See Also
 
-- [static var storageModeManaged: MTLResourceOptions](mtlresourceoptions/storagemodemanaged.md)
+### Specifying storage modes
+- [static var storageModeManaged: MTLResourceOptions](./storagemodemanaged.md)
   The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
-- [static var storageModePrivate: MTLResourceOptions](mtlresourceoptions/storagemodeprivate.md)
+- [static var storageModePrivate: MTLResourceOptions](./storagemodeprivate.md)
   The resource is only available to the GPU.
-- [static var storageModeMemoryless: MTLResourceOptions](mtlresourceoptions/storagemodememoryless.md)
+- [static var storageModeMemoryless: MTLResourceOptions](./storagemodememoryless.md)
   The resource’s contents are only available to the GPU, and only exist temporarily during a render pass.
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name of this member in the containing structure
 
@@ -12,7 +13,7 @@ Name of this member in the containing structure
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

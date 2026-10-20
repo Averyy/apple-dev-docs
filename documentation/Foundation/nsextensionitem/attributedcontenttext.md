@@ -1,7 +1,8 @@
 # attributedContentText
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional string describing the extension item content.
 
@@ -21,13 +22,26 @@ An optional string describing the extension item content.
 var attributedContentText: NSAttributedString? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * attributedContentText;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSAttributedString * attributedContentText;
+```
+
 #### Discussion
 
-> ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttributedContentTextKey`](nsextensionitemattributedcontenttextkey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attributedContentText`](nsextensionitem/attributedcontenttext.md) overrides this property.
+> ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](./userinfo.md) dictionary using the [`NSExtensionItemAttributedContentTextKey`](../nsextensionitemattributedcontenttextkey.md) key. However, setting the [`userInfo`](./userinfo.md) dictionary after setting [`attributedContentText`](./attributedcontenttext.md) overrides this property.
 
 ## See Also
 
-- [var attachments: [NSItemProvider]?](nsextensionitem/attachments.md)
+### Item Contents
+- [var attachments: [NSItemProvider]?](./attachments.md)
   An optional array of media data associated with the extension item.
 
 

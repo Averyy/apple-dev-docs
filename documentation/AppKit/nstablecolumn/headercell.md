@@ -1,12 +1,13 @@
 # headerCell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell used to draw the table column’s header.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The cell used to draw the table column’s header.
 var headerCell: NSTableHeaderCell { get set }
 ```
 
+```objc
+@property (strong) NSTableHeaderCell * headerCell;
+```
+
 #### Discussion
 
-The value of this property must not be `nil`. It’s recommended that the value of this property be an instance or subclass of [`NSTableHeaderCell`](nstableheadercell.md).
+The value of this property must not be `nil`. It’s recommended that the value of this property be an instance or subclass of [`NSTableHeaderCell`](../nstableheadercell.md).
 
-You can set the table column title using the [`title`](nstablecolumn/title.md) property.
+You can set the table column title using the [`title`](./title.md) property.
 
 ## See Also
 
-- [var title: String](nstablecolumn/title.md)
+### Setting the Header
+- [var title: String](./title.md)
   The title of the table column’s header.
 
 

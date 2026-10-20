@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Playground Bluetooth  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A delegate you supply to make decisions about which peripherals are displayed in the view.
 
@@ -17,7 +18,8 @@ weak var delegate: PlaygroundBluetoothConnectionViewDelegate? { get set }
 
 ## See Also
 
-- [enum PlaygroundBluetoothConnectionView.State](playgroundbluetoothconnectionview/state.md)
+### Handling State Changes
+- [enum PlaygroundBluetoothConnectionView.State](./state.md)
   The states that tell users how to proceed when connecting to and switching between peripherals in a playground page.
 
 

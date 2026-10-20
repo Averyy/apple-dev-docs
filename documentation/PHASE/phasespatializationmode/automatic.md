@@ -1,22 +1,27 @@
 # PHASESpatializationMode.automatic
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that indicates that the framework chooses the spatialization mode.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case automatic
+```
+
+```c
+PHASESpatializationModeAutomatic
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ This setting instructs the framework to automatically set a mode that determines
 
 ## See Also
 
-- [PHASESpatializationMode.alwaysUseBinaural](phasespatializationmode/alwaysusebinaural.md)
+### Modes
+- [PHASESpatializationMode.alwaysUseBinaural](./alwaysusebinaural.md)
   A mode that introduces special processing to replicate a realistic spatial listening experience.
-- [PHASESpatializationMode.alwaysUseChannelBased](phasespatializationmode/alwaysusechannelbased.md)
+- [PHASESpatializationMode.alwaysUseChannelBased](./alwaysusechannelbased.md)
   A mode that adds a 3D position and orientation to sound by panning across the available output channels.
 
 

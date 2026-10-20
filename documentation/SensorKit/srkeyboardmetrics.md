@@ -1,7 +1,8 @@
 # SRKeyboardMetrics
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration of a device’s keyboard and its usage patterns.
 
@@ -16,211 +17,216 @@ The configuration of a device’s keyboard and its usage patterns.
 class SRKeyboardMetrics
 ```
 
+```objc
+@interface SRKeyboardMetrics : NSObject
+```
+
 #### Overview
 
-The [`keyboardMetrics`](srsensor/keyboardmetrics.md) sensor provides this class as its [`sample`](srfetchresult/sample.md) type.
+The [`keyboardMetrics`](./srsensor/keyboardmetrics.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Inspecting Keyboard Configuration and Sessions
-- [var duration: TimeInterval](srkeyboardmetrics/duration.md)
+- [var duration: TimeInterval](./srkeyboardmetrics/duration.md)
   The duration that the report spans.
-- [var keyboardIdentifier: String](srkeyboardmetrics/keyboardidentifier.md)
+- [var keyboardIdentifier: String](./srkeyboardmetrics/keyboardidentifier.md)
   The identifier of the keyboard in the keyboard list.
-- [var version: String](srkeyboardmetrics/version.md)
+- [var version: String](./srkeyboardmetrics/version.md)
   The version of keyboard metrics.
-- [var width: Measurement<UnitLength>](srkeyboardmetrics/width.md)
+- [var width: Measurement<UnitLength>](./srkeyboardmetrics/width.md)
   The width, in millimeters, of the keyboard in the report.
-- [var height: Measurement<UnitLength>](srkeyboardmetrics/height.md)
+- [var height: Measurement<UnitLength>](./srkeyboardmetrics/height.md)
   The height, in millimeters, of the keyboard in the report.
-- [var inputModes: [String]](srkeyboardmetrics/inputmodes.md)
+- [var inputModes: [String]](./srkeyboardmetrics/inputmodes.md)
   The active keyboard languages in the session.
-- [var sessionIdentifiers: [String]](srkeyboardmetrics/sessionidentifiers.md)
+- [var sessionIdentifiers: [String]](./srkeyboardmetrics/sessionidentifiers.md)
   The identifiers for the keyboard sessions that report metrics to the sample.
 ### Quantifying Key Use
-- [var totalWords: Int](srkeyboardmetrics/totalwords.md)
+- [var totalWords: Int](./srkeyboardmetrics/totalwords.md)
   The total number of typed words for the keyboard.
-- [var totalAlteredWords: Int](srkeyboardmetrics/totalalteredwords.md)
+- [var totalAlteredWords: Int](./srkeyboardmetrics/totalalteredwords.md)
   The total number of altered words for the keyboard.
-- [var totalTaps: Int](srkeyboardmetrics/totaltaps.md)
+- [var totalTaps: Int](./srkeyboardmetrics/totaltaps.md)
   The total number of taps for the keyboard.
-- [var totalDrags: Int](srkeyboardmetrics/totaldrags.md)
+- [var totalDrags: Int](./srkeyboardmetrics/totaldrags.md)
   The total number of drags for the keyboard.
-- [var totalDeletes: Int](srkeyboardmetrics/totaldeletes.md)
+- [var totalDeletes: Int](./srkeyboardmetrics/totaldeletes.md)
   The total number of deletions for the keyboard.
-- [var totalEmojis: Int](srkeyboardmetrics/totalemojis.md)
+- [var totalEmojis: Int](./srkeyboardmetrics/totalemojis.md)
   The total number of emojis for the keyboard.
-- [var totalPaths: Int](srkeyboardmetrics/totalpaths.md)
+- [var totalPaths: Int](./srkeyboardmetrics/totalpaths.md)
   The total number of completed paths for the keyboard.
-- [var totalPathTime: TimeInterval](srkeyboardmetrics/totalpathtime.md)
+- [var totalPathTime: TimeInterval](./srkeyboardmetrics/totalpathtime.md)
   The total time to complete paths for the keyboard.
-- [var totalPathLength: Measurement<UnitLength>](srkeyboardmetrics/totalpathlength.md)
+- [var totalPathLength: Measurement<UnitLength>](./srkeyboardmetrics/totalpathlength.md)
   The total length of completed paths for the keyboard.
-- [var totalAutoCorrections: Int](srkeyboardmetrics/totalautocorrections.md)
+- [var totalAutoCorrections: Int](./srkeyboardmetrics/totalautocorrections.md)
   The total number of autocorrections for the keyboard.
-- [var totalSpaceCorrections: Int](srkeyboardmetrics/totalspacecorrections.md)
+- [var totalSpaceCorrections: Int](./srkeyboardmetrics/totalspacecorrections.md)
   The total number of space corrections for the keyboard.
-- [var totalRetroCorrections: Int](srkeyboardmetrics/totalretrocorrections.md)
+- [var totalRetroCorrections: Int](./srkeyboardmetrics/totalretrocorrections.md)
   The total number of retro corrections for the keyboard.
-- [var totalTranspositionCorrections: Int](srkeyboardmetrics/totaltranspositioncorrections.md)
+- [var totalTranspositionCorrections: Int](./srkeyboardmetrics/totaltranspositioncorrections.md)
   The total number of transposition corrections for the keyboard.
-- [var totalInsertKeyCorrections: Int](srkeyboardmetrics/totalinsertkeycorrections.md)
+- [var totalInsertKeyCorrections: Int](./srkeyboardmetrics/totalinsertkeycorrections.md)
   The total number of Insert key corrections for the keyboard.
-- [var totalSkipTouchCorrections: Int](srkeyboardmetrics/totalskiptouchcorrections.md)
+- [var totalSkipTouchCorrections: Int](./srkeyboardmetrics/totalskiptouchcorrections.md)
   The total number of skip touch corrections for the keyboard.
-- [var totalNearKeyCorrections: Int](srkeyboardmetrics/totalnearkeycorrections.md)
+- [var totalNearKeyCorrections: Int](./srkeyboardmetrics/totalnearkeycorrections.md)
   The total number of near key corrections for the keyboard.
-- [var totalSubstitutionCorrections: Int](srkeyboardmetrics/totalsubstitutioncorrections.md)
+- [var totalSubstitutionCorrections: Int](./srkeyboardmetrics/totalsubstitutioncorrections.md)
   The total number of substitution corrections for the keyboard.
-- [var totalHitTestCorrections: Int](srkeyboardmetrics/totalhittestcorrections.md)
+- [var totalHitTestCorrections: Int](./srkeyboardmetrics/totalhittestcorrections.md)
   The total number of hit test corrections for the keyboard.
-- [var totalTypingDuration: TimeInterval](srkeyboardmetrics/totaltypingduration.md)
+- [var totalTypingDuration: TimeInterval](./srkeyboardmetrics/totaltypingduration.md)
   The total amount of typing time for the keyboard.
-- [var totalPathPauses: Int](srkeyboardmetrics/totalpathpauses.md)
+- [var totalPathPauses: Int](./srkeyboardmetrics/totalpathpauses.md)
   The total number of pauses while drawing a path for a word.
-- [var totalPauses: Int](srkeyboardmetrics/totalpauses.md)
+- [var totalPauses: Int](./srkeyboardmetrics/totalpauses.md)
   The total number of pauses during the session.
-- [var totalTypingEpisodes: Int](srkeyboardmetrics/totaltypingepisodes.md)
+- [var totalTypingEpisodes: Int](./srkeyboardmetrics/totaltypingepisodes.md)
   The total number of continuous typing episodes during the session.
 ### Timing Key Use
-- [SRKeyboardMetrics.ProbabilityMetric](srkeyboardmetrics/probabilitymetric.md)
+- [SRKeyboardMetrics.ProbabilityMetric](./srkeyboardmetrics/probabilitymetric.md)
   A likelihood of occurrence.
-- [var touchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/touchdownup.md)
+- [var touchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/touchdownup.md)
   The duration between touch down to touch up for any key.
-- [var touchUpDown: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/touchupdown.md)
+- [var touchUpDown: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/touchupdown.md)
   The duration between touch up and touch down for any key.
-- [var spaceTouchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetouchdownup.md)
+- [var spaceTouchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetouchdownup.md)
   The duration between touch down and touch up of all Space bar events for the keyboard.
-- [var deleteTouchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetouchdownup.md)
+- [var deleteTouchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetouchdownup.md)
   The duration between touch down and touch up of all Delete key events for the keyboard.
-- [var shortWordCharKeyTouchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/shortwordcharkeytouchdownup.md)
+- [var shortWordCharKeyTouchDownUp: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/shortwordcharkeytouchdownup.md)
   The duration between touch down and touch up of all character keys in short words for the keyboard.
-- [var touchDownDown: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/touchdowndown.md)
+- [var touchDownDown: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/touchdowndown.md)
   The duration between touch down and touch down for any key.
-- [var charKeyToPrediction: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/charkeytoprediction.md)
+- [var charKeyToPrediction: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/charkeytoprediction.md)
   The duration between touch up on a character key and touch down on a word in the prediction bar.
-- [var shortWordCharKeyToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/shortwordcharkeytocharkey.md)
+- [var shortWordCharKeyToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/shortwordcharkeytocharkey.md)
   The duration between touch up on a character key and touch down on any sequential character key in a short word.
-- [var charKeyToAnyTapKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/charkeytoanytapkey.md)
+- [var charKeyToAnyTapKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/charkeytoanytapkey.md)
   The duration between touch up on a character key and touch down on the next sequential key.
-- [var anyTapToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/anytaptocharkey.md)
+- [var anyTapToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/anytaptocharkey.md)
   The duration between touch up of any key and touch down on a sequential character key.
-- [var spaceToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetocharkey.md)
+- [var spaceToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetocharkey.md)
   The duration between touch up of the Space bar and touch down of a sequential character key.
-- [var charKeyToSpaceKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/charkeytospacekey.md)
+- [var charKeyToSpaceKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/charkeytospacekey.md)
   The duration between touch up of a character key and touch down of a sequential Space bar.
-- [var spaceToDeleteKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetodeletekey.md)
+- [var spaceToDeleteKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetodeletekey.md)
   The duration between touch up of the Space bar and touch down of a sequential Delete key.
-- [var deleteToSpaceKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetospacekey.md)
+- [var deleteToSpaceKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetospacekey.md)
   The duration between touch up of the Delete key and touch down of a sequential Space bar.
-- [var spaceToSpaceKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetospacekey.md)
+- [var spaceToSpaceKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetospacekey.md)
   The duration between touch up of the Space bar and touch down of a sequential Space bar.
-- [var spaceToShiftKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetoshiftkey.md)
+- [var spaceToShiftKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetoshiftkey.md)
   The duration between touch up of the Space bar and touch down of a sequential Shift key.
-- [var spaceToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetoplanechangekey.md)
+- [var spaceToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetoplanechangekey.md)
   The duration between touch up of the Space bar and touch down of a sequential plane change key.
-- [var spaceToPredictionKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetopredictionkey.md)
+- [var spaceToPredictionKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetopredictionkey.md)
   The duration between touch up of the Space bar and touch down of a sequential selection from the prediction bar.
-- [var deleteToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetocharkey.md)
+- [var deleteToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetocharkey.md)
   The duration between touch up of the Delete key and touch down of a sequential character key.
-- [var charKeyToDelete: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/charkeytodelete.md)
+- [var charKeyToDelete: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/charkeytodelete.md)
   The duration between touch up of a character key and touch down of a sequential Delete key.
-- [var deleteToDelete: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetodelete.md)
+- [var deleteToDelete: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetodelete.md)
   The duration between touch up of the Delete key and touch down of a sequential Delete key.
-- [var deleteToDeletes: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](srkeyboardmetrics/deletetodeletes.md)
+- [var deleteToDeletes: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](./srkeyboardmetrics/deletetodeletes.md)
   The duration between touch up of the Delete key and touch down of a sequential Delete key for an entire word.
-- [var deleteToShiftKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetoshiftkey.md)
+- [var deleteToShiftKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetoshiftkey.md)
   The duration between touch up of the Delete key and touch down of a sequential Shift key.
-- [var deleteToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetoplanechangekey.md)
+- [var deleteToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetoplanechangekey.md)
   The duration between touch up of the Delete key and touch down of a sequential plane change key.
-- [var anyTapToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/anytaptoplanechangekey.md)
+- [var anyTapToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/anytaptoplanechangekey.md)
   The duration between touch up of any key and touch down on a plane change key.
-- [var planeChangeToAnyTap: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/planechangetoanytap.md)
+- [var planeChangeToAnyTap: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/planechangetoanytap.md)
   The duration between touch up on a plane change key and touch down on the next sequential key.
-- [var charKeyToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/charkeytoplanechangekey.md)
+- [var charKeyToPlaneChangeKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/charkeytoplanechangekey.md)
   The duration between touch up of a character key and touch down of a sequential plane change key.
-- [var planeChangeKeyToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/planechangekeytocharkey.md)
+- [var planeChangeKeyToCharKey: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/planechangekeytocharkey.md)
   The duration between touch up of a plane change key and touch down of any key.
-- [var deleteToPath: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/deletetopath.md)
+- [var deleteToPath: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/deletetopath.md)
   The duration between touch up of the Delete key and touch down of a sequential path.
-- [var pathToDelete: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/pathtodelete.md)
+- [var pathToDelete: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/pathtodelete.md)
   The duration between touch up of the Delete key and touch down of a continuous path.
-- [var spaceToPath: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/spacetopath.md)
+- [var spaceToPath: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/spacetopath.md)
   The duration between touch up of the Space bar and touch down to begin a sequential path.
-- [var pathToSpace: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/pathtospace.md)
+- [var pathToSpace: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/pathtospace.md)
   The duration between touch up of a path and touch down of a sequential Space bar.
-- [var pathToPath: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](srkeyboardmetrics/pathtopath.md)
+- [var pathToPath: SRKeyboardMetrics.ProbabilityMetric<UnitDuration>](./srkeyboardmetrics/pathtopath.md)
   The duration between touch up of a path and touch down of a sequential path.
-- [var longWordTouchDownUp: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](srkeyboardmetrics/longwordtouchdownup.md)
+- [var longWordTouchDownUp: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](./srkeyboardmetrics/longwordtouchdownup.md)
   The duration between touch down and touch up of the character keys of all the long words in the session.
-- [var longWordTouchDownDown: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](srkeyboardmetrics/longwordtouchdowndown.md)
+- [var longWordTouchDownDown: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](./srkeyboardmetrics/longwordtouchdowndown.md)
   The duration between touch down and touch down of the character keys of all the long words in the session.
-- [var longWordTouchUpDown: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](srkeyboardmetrics/longwordtouchupdown.md)
+- [var longWordTouchUpDown: [SRKeyboardMetrics.ProbabilityMetric<UnitDuration>]](./srkeyboardmetrics/longwordtouchupdown.md)
   The duration between touch up and touch down of the character keys of all the long words in the session.
-- [var pathTypingSpeed: Double](srkeyboardmetrics/pathtypingspeed.md)
+- [var pathTypingSpeed: Double](./srkeyboardmetrics/pathtypingspeed.md)
   The QuickType words per minute in the session.
-- [var typingSpeed: Double](srkeyboardmetrics/typingspeed.md)
+- [var typingSpeed: Double](./srkeyboardmetrics/typingspeed.md)
   The user’s typing rate in characters per second.
 ### Measuring Key Use
-- [var longWordUpErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](srkeyboardmetrics/longworduperrordistance.md)
+- [var longWordUpErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](./srkeyboardmetrics/longworduperrordistance.md)
   The distance from the touch up to the center of the intended key of the characters of a long word.
-- [var longWordDownErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](srkeyboardmetrics/longworddownerrordistance.md)
+- [var longWordDownErrorDistance: [SRKeyboardMetrics.ProbabilityMetric<UnitLength>]](./srkeyboardmetrics/longworddownerrordistance.md)
   The distance from the touch down to the center of the intended key of the characters of a long word.
-- [var upErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/uperrordistance.md)
+- [var upErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/uperrordistance.md)
   The distance from the touch up to the center of any key.
-- [var downErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/downerrordistance.md)
+- [var downErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/downerrordistance.md)
   The distance from the touch down to the center of any key.
-- [var spaceUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/spaceuperrordistance.md)
+- [var spaceUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/spaceuperrordistance.md)
   The distance from the touch up to the right centroid of the Space bar.
-- [var spaceDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/spacedownerrordistance.md)
+- [var spaceDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/spacedownerrordistance.md)
   The distance from the touch down to the right centroid of the Space bar.
-- [var deleteUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/deleteuperrordistance.md)
+- [var deleteUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/deleteuperrordistance.md)
   The distance from the touch up to the center of the Delete key.
-- [var deleteDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/deletedownerrordistance.md)
+- [var deleteDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/deletedownerrordistance.md)
   The distance from the touch down to the center of the Delete key.
-- [var shortWordCharKeyUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/shortwordcharkeyuperrordistance.md)
+- [var shortWordCharKeyUpErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/shortwordcharkeyuperrordistance.md)
   The distance from the touch up to the center of the intended key of a character in a short word.
-- [var shortWordCharKeyDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](srkeyboardmetrics/shortwordcharkeydownerrordistance.md)
+- [var shortWordCharKeyDownErrorDistance: SRKeyboardMetrics.ProbabilityMetric<UnitLength>](./srkeyboardmetrics/shortwordcharkeydownerrordistance.md)
   The distance from the touch down to the center of the intended key of a character in a short word.
-- [var pathErrorDistanceRatio: [NSNumber]](srkeyboardmetrics/patherrordistanceratio.md)
+- [var pathErrorDistanceRatio: [NSNumber]](./srkeyboardmetrics/patherrordistanceratio.md)
   Sample values of the ratio of error distance between the intended and actual path.
 ### Inferring Sentiment
-- [func wordCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](srkeyboardmetrics/wordcount(for:).md)
+- [func wordCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](./srkeyboardmetrics/wordcount%28for%29.md)
   Provides the number of typed words for the specified sentiment in the report.
-- [func emojiCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](srkeyboardmetrics/emojicount(for:).md)
+- [func emojiCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](./srkeyboardmetrics/emojicount%28for%29.md)
   Provides the number of typed emojis for the specified sentiment in the report.
-- [SRKeyboardMetrics.SentimentCategory](srkeyboardmetrics/sentimentcategory.md)
+- [SRKeyboardMetrics.SentimentCategory](./srkeyboardmetrics/sentimentcategory.md)
   Moods that the framework determines by analyzing the user’s input.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SRAmbientLightSample](srambientlightsample.md)
+### Interpreting data
+- [class SRAmbientLightSample](./srambientlightsample.md)
   The amount of ambient light in the user’s environment.
-- [class SRDeviceUsageReport](srdeviceusagereport.md)
+- [class SRDeviceUsageReport](./srdeviceusagereport.md)
   The frequency and relative duration that the user uses their device, particular Apple apps, or websites.
-- [class SRMediaEvent](srmediaevent.md)
+- [class SRMediaEvent](./srmediaevent.md)
   A user interaction with a media object, such as an image or a video.
-- [class SRMessagesUsageReport](srmessagesusagereport.md)
+- [class SRMessagesUsageReport](./srmessagesusagereport.md)
   An object that describes the user’s Messages app activity over a period of time.
-- [class SRPhoneUsageReport](srphoneusagereport.md)
+- [class SRPhoneUsageReport](./srphoneusagereport.md)
   An object that describes the user’s phone activity over a period of time.
-- [class SRVisit](srvisit.md)
+- [class SRVisit](./srvisit.md)
   The user’s progress in their daily travel routine.
-- [class SRWristDetection](srwristdetection.md)
+- [class SRWristDetection](./srwristdetection.md)
   The configuration of a watch on the wearer’s wrist.
 
 

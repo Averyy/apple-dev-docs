@@ -1,7 +1,8 @@
 # Publishers.IgnoreOutput.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher never produces elements.
 
 ## See Also
 
-- [Publishers.IgnoreOutput.Failure](publishers/ignoreoutput/failure.md)
+### Declaring supporting types
+- [Publishers.IgnoreOutput.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

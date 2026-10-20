@@ -1,7 +1,8 @@
 # indexBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional index buffer containing references to control points in the control point buffer.
 
@@ -17,6 +18,10 @@ Assigns an optional index buffer containing references to control points in the 
 
 ```swift
 var indexBuffer: MTL4BufferRange { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BufferRange indexBuffer;
 ```
 
 #### Discussion

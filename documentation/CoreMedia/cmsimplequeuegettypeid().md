@@ -1,7 +1,8 @@
 # CMSimpleQueueGetTypeID()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier of sample buffer objects.
 
@@ -18,6 +19,10 @@ Returns the type identifier of sample buffer objects.
 
 ```swift
 func CMSimpleQueueGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CMSimpleQueueGetTypeID();
 ```
 
 #### Return Value

@@ -1,14 +1,15 @@
 # GetLastInterrupt_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetLastInterrupt_Impl(uint64_t *count, uint64_t *time);
 ```
 

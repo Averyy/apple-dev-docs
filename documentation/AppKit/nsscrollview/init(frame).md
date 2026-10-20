@@ -1,10 +1,11 @@
 # init(frame:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init(frame frameRect: NSRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(NSRect) frameRect;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](nsscrollview/init(coder:).md)
+### Initializers
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

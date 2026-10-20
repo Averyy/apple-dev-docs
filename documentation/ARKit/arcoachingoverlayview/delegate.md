@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object you supply that implements coaching event callbacks.
 
@@ -16,13 +17,18 @@ An object you supply that implements coaching event callbacks.
 weak var delegate: (any ARCoachingOverlayViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ARCoachingOverlayViewDelegate> delegate;
+```
+
 #### Discussion
 
 Normally, you set the value of this property to your app’s view controller.
 
 ## See Also
 
-- [protocol ARCoachingOverlayViewDelegate](arcoachingoverlayviewdelegate.md)
+### Delegating Events
+- [protocol ARCoachingOverlayViewDelegate](../arcoachingoverlayviewdelegate.md)
   A set of callbacks you implement to be notified of coaching events.
 
 

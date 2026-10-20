@@ -1,7 +1,8 @@
 # supportedComputeStageDevices
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of compute devices per stage that a request supports.
 
@@ -25,9 +26,10 @@ A dictionary of per-stage compute devices; otherwise, `nil` if an error occurs.
 
 ## See Also
 
-- [func setComputeDevice(MLComputeDevice?, for: VNComputeStage)](vnrequest/setcomputedevice(_:for:).md)
+### Configuring the Compute Device
+- [func setComputeDevice(MLComputeDevice?, for: VNComputeStage)](./setcomputedevice%28_,for%29.md)
   Assigns a compute device for a compute stage.
-- [func computeDevice(for: VNComputeStage) -> MLComputeDevice?](vnrequest/computedevice(for:).md)
+- [func computeDevice(for: VNComputeStage) -> MLComputeDevice?](./computedevice%28for%29.md)
   Returns the compute device for a compute stage.
 
 

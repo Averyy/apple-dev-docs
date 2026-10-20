@@ -1,7 +1,8 @@
 # errSecItemNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The item cannot be found.
 
@@ -20,10 +21,14 @@ The item cannot be found.
 var errSecItemNotFound: OSStatus { get }
 ```
 
+```c
+errSecItemNotFound
+```
+
 ## Mentions
 
-- [Searching for keychain items](searching-for-keychain-items.md)
-- [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)
+- [Searching for keychain items](./searching-for-keychain-items.md)
+- [Sharing access to keychain items among a collection of apps](./sharing-access-to-keychain-items-among-a-collection-of-apps.md)
 
 
 ---

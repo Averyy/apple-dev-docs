@@ -1,7 +1,8 @@
 # influenceJointIndices
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Joint indices for each vertex-influence slot, with `influencePerVertexCount` consecutive entries per vertex.
 

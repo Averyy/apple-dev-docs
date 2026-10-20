@@ -1,7 +1,8 @@
 # fileLength
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the byte source file.
 
@@ -14,13 +15,18 @@ The length of the byte source file.
 var fileLength: Int64 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) int64_t fileLength;
+```
+
 ## See Also
 
-- [var fileName: String](mebytesource/filename.md)
+### Inspecting a byte source
+- [var fileName: String](./filename.md)
   The name of the file for the byte source.
-- [var contentType: UTType?](mebytesource/contenttype.md)
+- [var contentType: UTType?](./contenttype.md)
   The format of the byte source file.
-- [var relatedFileNamesInSameDirectory: [String]](mebytesource/relatedfilenamesinsamedirectory.md)
+- [var relatedFileNamesInSameDirectory: [String]](./relatedfilenamesinsamedirectory.md)
   An array of related file names in the parent directory of the byte source file.
 
 

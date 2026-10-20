@@ -1,7 +1,8 @@
 # remove(_:using:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified object from the tree, using a reference to its containing node.
 
@@ -19,13 +20,17 @@ Removes the specified object from the tree, using a reference to its containing 
 func remove(_ element: ElementType, using node: GKOctreeNode) -> Bool
 ```
 
+```objc
+- (BOOL) removeElement:(ElementType) element withNode:(GKOctreeNode *) node;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the object was removed from the tree. [`false`](https://developer.apple.com/documentation/swift/false) if the specified object or node is not in the tree.
+[`true`](../../Swift/true.md) if the object was removed from the tree. [`false`](../../Swift/false.md) if the specified object or node is not in the tree.
 
 #### Discussion
 
-By referencing the node that contains the object to remove, this method can quickly remove an object from the tree without needing to perform an exhaustive search. To make use of this performance optimization, keep a reference to the node returned when you add elements with the [`add(_:at:)`](gkoctree/add(_:at:).md) or [`add(_:in:)`](gkoctree/add(_:in:).md) methods.
+By referencing the node that contains the object to remove, this method can quickly remove an object from the tree without needing to perform an exhaustive search. To make use of this performance optimization, keep a reference to the node returned when you add elements with the [`add(_:at:)`](./add%28_,at%29.md) or [`add(_:in:)`](./add%28_,in%29.md) methods.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ By referencing the node that contains the object to remove, this method can quic
 
 ## See Also
 
-- [func add(ElementType, at: vector_float3) -> GKOctreeNode](gkoctree/add(_:at:).md)
+### Adding and Removing Elements
+- [func add(ElementType, at: vector_float3) -> GKOctreeNode](./add%28_,at%29.md)
   Adds an object to the tree corresponding to the specified point in 3D space.
-- [func add(ElementType, in: GKBox) -> GKOctreeNode](gkoctree/add(_:in:).md)
+- [func add(ElementType, in: GKBox) -> GKOctreeNode](./add%28_,in%29.md)
   Adds an object to the tree corresponding to the specified volume of 3D space.
-- [func remove(ElementType) -> Bool](gkoctree/remove(_:).md)
+- [func remove(ElementType) -> Bool](./remove%28_%29.md)
   Searches for the specified object and removes it from the tree.
 
 

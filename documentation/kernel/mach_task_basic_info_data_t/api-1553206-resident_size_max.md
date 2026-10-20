@@ -1,14 +1,15 @@
 # resident_size_max
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_size_t resident_size_max;
 ```
 

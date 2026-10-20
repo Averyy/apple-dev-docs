@@ -1,7 +1,8 @@
 # init(red:green:blue:alpha:colorSpace:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 
@@ -18,9 +19,13 @@ Initialize a Core Image color object with the specified red, green, and blue com
 convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)
 ```
 
+```objc
+- (instancetype) initWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha colorSpace:(CGColorSpaceRef) colorSpace;
+```
+
 #### Return Value
 
- An initialized [`CIColor`](cicolor.md) instance.
+ An initialized [`CIColor`](../cicolor.md) instance.
 
 #### Discussion
 

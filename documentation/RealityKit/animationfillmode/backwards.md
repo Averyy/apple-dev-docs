@@ -1,7 +1,8 @@
 # backwards
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that shows the first animation frame while playback progresses to the beginning position.
 
@@ -11,7 +12,7 @@ An option that shows the first animation frame while playback progresses to the 
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ static let backwards: AnimationFillMode
 
 #### Discussion
 
-For example, if you wind a hand-waving animation’s duration back one second by setting [`trimStart`](sampledanimation/trimstart.md) to `-1.0`, a [`fillMode`](sampledanimation/fillmode.md) of `backwards` determines that the hand holds its initial appearance for one second before waving.
+For example, if you wind a hand-waving animation’s duration back one second by setting [`trimStart`](../sampledanimation/trimstart.md) to `-1.0`, a [`fillMode`](../sampledanimation/fillmode.md) of `backwards` determines that the hand holds its initial appearance for one second before waving.
 
 ## See Also
 
-- [static let none: AnimationFillMode](animationfillmode/none.md)
+### Choosing a fill mode
+- [static let none: AnimationFillMode](./none.md)
   An option that indicates an animation doesn’t display frame data outside of its normal duration.
-- [static let forwards: AnimationFillMode](animationfillmode/forwards.md)
+- [static let forwards: AnimationFillMode](./forwards.md)
   An option that freezes the last frame of the animation until it stops.
-- [static let both: AnimationFillMode](animationfillmode/both.md)
+- [static let both: AnimationFillMode](./both.md)
   An option that displays the animation’s initial frame or final frame when playback occurs outside of the normal duration.
-- [init(rawValue: Int8)](animationfillmode/init(rawvalue:).md)
+- [init(rawValue: Int8)](./init%28rawvalue%29.md)
   Creates a fill mode from its backing data type.
 
 

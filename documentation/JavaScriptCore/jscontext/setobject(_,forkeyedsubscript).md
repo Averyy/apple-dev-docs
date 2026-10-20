@@ -1,7 +1,8 @@
 # setObject(_:forKeyedSubscript:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the specified JavaScript property of the context’s global object, allowing subscript setter syntax.
 
@@ -19,9 +20,13 @@ Sets the specified JavaScript property of the context’s global object, allowin
 func setObject(_ object: Any!, forKeyedSubscript key: (any NSCopying & NSObjectProtocol)!)
 ```
 
+```objc
+- (void) setObject:(id) object forKeyedSubscript:(NSObject<NSCopying> *) key;
+```
+
 #### Discussion
 
-This method first constructs a [`JSValue`](jsvalue.md) object from the `key` parameter, then uses that value in JavaScript to set the property in the context’s global object.
+This method first constructs a [`JSValue`](../jsvalue.md) object from the `key` parameter, then uses that value in JavaScript to set the property in the context’s global object.
 
 Use this method (or Objective-C subscript syntax) to bridge native objects or functions for use in JavaScript. For example, the following code creates a JavaScript function whose implementation is an Objective-C block:
 
@@ -42,7 +47,8 @@ context[@"makeNSColor"] = ^(NSDictionary *rgb){
 
 ## See Also
 
-- [func objectForKeyedSubscript(Any!) -> JSValue!](jscontext/objectforkeyedsubscript(_:).md)
+### Accessing JavaScript global state with subscripts
+- [func objectForKeyedSubscript(Any!) -> JSValue!](./objectforkeyedsubscript%28_%29.md)
   Returns the value of the specified JavaScript property in the context’s global object, allowing subscript getter syntax.
 
 

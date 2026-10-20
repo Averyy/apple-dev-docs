@@ -1,7 +1,8 @@
 # ImageCropAndScaleAction.scaleToFill
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action that scales the image to fill the input dimensions and resizing it, if necessary.
 
@@ -22,13 +23,14 @@ case scaleToFill
 
 ## See Also
 
-- [ImageCropAndScaleAction.centerCrop](imagecropandscaleaction/centercrop.md)
+### Getting the actions
+- [ImageCropAndScaleAction.centerCrop](./centercrop.md)
   An action that scales the image and maintains the aspect ratio to fit on the short side and crop centered on the long side.
-- [ImageCropAndScaleAction.scaleToFit](imagecropandscaleaction/scaletofit.md)
+- [ImageCropAndScaleAction.scaleToFit](./scaletofit.md)
   An action that scales to the size the algorithm requires while maintaining the original aspect ratio.
-- [ImageCropAndScaleAction.scaleToFitPlus90CCWRotation](imagecropandscaleaction/scaletofitplus90ccwrotation.md)
+- [ImageCropAndScaleAction.scaleToFitPlus90CCWRotation](./scaletofitplus90ccwrotation.md)
   An action that scales the image and maintains the aspect ratio to fit on the long side, and rotates the image by 90 degrees counter clockwise.
-- [ImageCropAndScaleAction.scaleToFillPlus90CCWRotation](imagecropandscaleaction/scaletofillplus90ccwrotation.md)
+- [ImageCropAndScaleAction.scaleToFillPlus90CCWRotation](./scaletofillplus90ccwrotation.md)
   An action that scales the image and rotates it by 90 degrees counter clockwise.
 
 

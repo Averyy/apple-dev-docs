@@ -1,7 +1,8 @@
 # arrangesAllSubviews
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the split view arranges all of its subviews as split panes.
 
@@ -14,23 +15,28 @@ A Boolean value that determines whether the split view arranges all of its subvi
 var arrangesAllSubviews: Bool { get set }
 ```
 
+```objc
+@property BOOL arrangesAllSubviews;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the split view arranges all of its subviews automatically. The [`arrangedSubviews`](nssplitview/arrangedsubviews.md) array is identical to the split view’s [`subviews`](nsview/subviews.md) array, so any change to [`subviews`](nsview/subviews.md) reflects in the [`arrangedSubviews`](nssplitview/arrangedsubviews.md) array. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](../../Swift/true.md), the split view arranges all of its subviews automatically. The [`arrangedSubviews`](./arrangedsubviews.md) array is identical to the split view’s [`subviews`](../nsview/subviews.md) array, so any change to [`subviews`](../nsview/subviews.md) reflects in the [`arrangedSubviews`](./arrangedsubviews.md) array. The default value of this property is [`true`](../../Swift/true.md).
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), you must explicitly add a view as an arranged subview to arrange it as a split pane. You add an arranged subview using [`addArrangedSubview(_:)`](nssplitview/addarrangedsubview(_:).md).
+If the value of this property is [`false`](../../Swift/false.md), you must explicitly add a view as an arranged subview to arrange it as a split pane. You add an arranged subview using [`addArrangedSubview(_:)`](./addarrangedsubview%28_%29.md).
 
-When you change the value of this property from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), all existing subviews stay as arranged subviews in [`arrangedSubviews`](nssplitview/arrangedsubviews.md). When you change the value of this property from [`false`](https://developer.apple.com/documentation/swift/false) to [`true`](https://developer.apple.com/documentation/swift/true), all existing subviews become arranged subviews, and the value of the [`subviews`](nsview/subviews.md) array becomes the [`arrangedSubviews`](nssplitview/arrangedsubviews.md) array.
+When you change the value of this property from [`true`](../../Swift/true.md) to [`false`](../../Swift/false.md), all existing subviews stay as arranged subviews in [`arrangedSubviews`](./arrangedsubviews.md). When you change the value of this property from [`false`](../../Swift/false.md) to [`true`](../../Swift/true.md), all existing subviews become arranged subviews, and the value of the [`subviews`](../nsview/subviews.md) array becomes the [`arrangedSubviews`](./arrangedsubviews.md) array.
 
 ## See Also
 
-- [var arrangedSubviews: [NSView]](nssplitview/arrangedsubviews.md)
+### Arranging Subviews
+- [var arrangedSubviews: [NSView]](./arrangedsubviews.md)
   The array of views that the split view arranges as its split panes.
-- [func addArrangedSubview(NSView)](nssplitview/addarrangedsubview(_:).md)
+- [func addArrangedSubview(NSView)](./addarrangedsubview%28_%29.md)
   Adds a view as an arranged split pane.
-- [func insertArrangedSubview(NSView, at: Int)](nssplitview/insertarrangedsubview(_:at:).md)
+- [func insertArrangedSubview(NSView, at: Int)](./insertarrangedsubview%28_,at%29.md)
   Adds a view as an arranged split pane at the specified index.
-- [func removeArrangedSubview(NSView)](nssplitview/removearrangedsubview(_:).md)
+- [func removeArrangedSubview(NSView)](./removearrangedsubview%28_%29.md)
   Removes a view as an arranged split pane.
 
 

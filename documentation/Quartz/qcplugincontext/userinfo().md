@@ -2,17 +2,24 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a mutable dictionary that contains information that can be shared between all instances of the `QCPlugIn` subclass, running in the same Quartz Composer context.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func userInfo() -> NSMutableDictionary!
+```
+
+```objc
+- (NSMutableDictionary *) userInfo;
 ```
 
 #### Return Value
@@ -25,9 +32,10 @@ When you add information to the dictionary, make sure that you use unique keys, 
 
 ## See Also
 
-- [func bounds() -> NSRect](qcplugincontext/bounds.md)
+### Getting Execution Context Information
+- [func bounds() -> NSRect](./bounds%28%29.md)
   Returns the bounds of the rendering context.
-- [func colorSpace() -> Unmanaged<CGColorSpace>!](qcplugincontext/colorspace.md)
+- [func colorSpace() -> Unmanaged<CGColorSpace>!](./colorspace%28%29.md)
   Returns the color space used by the rendering context.
 
 

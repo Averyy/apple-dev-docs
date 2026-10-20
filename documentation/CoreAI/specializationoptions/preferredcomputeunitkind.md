@@ -1,7 +1,8 @@
 # preferredComputeUnitKind
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred compute unit kind, if one was specified.
 
@@ -20,11 +21,12 @@ var preferredComputeUnitKind: ComputeUnitKind? { get }
 
 #### Discussion
 
-When set, the specialization process maximizes use of this compute unit kind. Fallback to other kinds in [`allowedComputeUnitKinds`](specializationoptions/allowedcomputeunitkinds.md) may still occur for operations or operation patterns that are incompatible with the preferred kind. Operation patterns refer to groups of operations that are fused or transformed together during specialization; an operation that is individually compatible with the preferred unit kind may be part of a fused pattern that is not.
+When set, the specialization process maximizes use of this compute unit kind. Fallback to other kinds in [`allowedComputeUnitKinds`](./allowedcomputeunitkinds.md) may still occur for operations or operation patterns that are incompatible with the preferred kind. Operation patterns refer to groups of operations that are fused or transformed together during specialization; an operation that is individually compatible with the preferred unit kind may be part of a fused pattern that is not.
 
 ## See Also
 
-- [var allowedComputeUnitKinds: Set<ComputeUnitKind>](specializationoptions/allowedcomputeunitkinds.md)
+### Configuring compute units
+- [var allowedComputeUnitKinds: Set<ComputeUnitKind>](./allowedcomputeunitkinds.md)
   The set of compute units the specialized model can use.
 
 

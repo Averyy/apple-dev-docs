@@ -1,7 +1,8 @@
 # earliest
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sentinel time code that resolves to the earliest authored sample of a value.
 

@@ -1,6 +1,7 @@
 # Constants for specifying an interface index
 
-**Framework**: dnssd
+**Framework**: dnssd  
+**Role**: API Collection
 
 #### Overview
 
@@ -18,7 +19,7 @@ Notes on DNS Name Escaping
 
 – or –
 
-“Why is [`kDNSServiceMaxDomainName`](kdnsservicemaxdomainname.md) 1009, when the maximum legal domain name is 256 bytes?”
+“Why is [`kDNSServiceMaxDomainName`](./kdnsservicemaxdomainname.md) 1009, when the maximum legal domain name is 256 bytes?”
 
 All strings used in the DNS-SD APIs are UTF-8 strings. Apart from the exceptions noted below, the APIs expect the strings to be properly escaped, using the conventional DNS escaping rules:
 
@@ -31,21 +32,22 @@ The exceptions, that do not use escaping, are the routines where the full DNS na
 
 The servicename may be up to 63 bytes of UTF-8 text (not counting the C-String terminating NULL at the end). The regtype is of the form _service._tcp or _service._udp, where the “service” part is 1-15 characters, which may be letters, digits, or hyphens. The domain part of the three-part name may be any legal domain, providing that the resulting servicename+regtype+domain name does not exceed 256 bytes.
 
-For most software, these issues are transparent. When browsing, the discovered servicenames should simply be displayed as-is. When resolving, the discovered servicename/regtype/domain are simply passed unchanged to [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](dnsserviceresolve(_:_:_:_:_:_:_:_:).md). When a [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](dnsserviceresolve(_:_:_:_:_:_:_:_:).md) succeeds, the returned fullname is already in the correct format to pass to standard system DNS APIs such as res_query(). For converting from servicename/regtype/domain to a single properly-escaped full DNS name, the helper function [`DNSServiceConstructFullName(_:_:_:_:)`](dnsserviceconstructfullname(_:_:_:_:).md) is provided.
+For most software, these issues are transparent. When browsing, the discovered servicenames should simply be displayed as-is. When resolving, the discovered servicename/regtype/domain are simply passed unchanged to [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](./dnsserviceresolve%28_,_,_,_,_,_,_,_%29.md). When a [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](./dnsserviceresolve%28_,_,_,_,_,_,_,_%29.md) succeeds, the returned fullname is already in the correct format to pass to standard system DNS APIs such as res_query(). For converting from servicename/regtype/domain to a single properly-escaped full DNS name, the helper function [`DNSServiceConstructFullName(_:_:_:_:)`](./dnsserviceconstructfullname%28_,_,_,_%29.md) is provided.
 
 The following (highly contrived) example illustrates the escaping process. Suppose you have an service called “Dr. Smith\Dr. Johnson”, of type “_ftp._tcp” in subdomain “4th. Floor” of subdomain “Building 2” of domain “apple.com.” The full (escaped) DNS name of this service’s SRV record would be: Dr\.\032Smith\\Dr\.\032Johnson._ftp._tcp.4th\.\032Floor.Building\0322.apple.com.
 
 ## Topics
 
 ### Constants
-- [var kDNSServiceInterfaceIndexAny: Int32](kdnsserviceinterfaceindexany.md)
-- [var kDNSServiceInterfaceIndexLocalOnly: UInt32](kdnsserviceinterfaceindexlocalonly.md)
-- [var kDNSServiceInterfaceIndexP2P: UInt32](kdnsserviceinterfaceindexp2p.md)
-- [var kDNSServiceInterfaceIndexUnicast: UInt32](kdnsserviceinterfaceindexunicast.md)
+- [var kDNSServiceInterfaceIndexAny: Int32](./kdnsserviceinterfaceindexany.md)
+- [var kDNSServiceInterfaceIndexLocalOnly: UInt32](./kdnsserviceinterfaceindexlocalonly.md)
+- [var kDNSServiceInterfaceIndexP2P: UInt32](./kdnsserviceinterfaceindexp2p.md)
+- [var kDNSServiceInterfaceIndexUnicast: UInt32](./kdnsserviceinterfaceindexunicast.md)
 
 ## See Also
 
-- [Miscellaneous Defines](miscellaneous-defines.md)
+### Constants
+- [Miscellaneous Defines](./miscellaneous-defines.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kFWSelfID0L
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWSelfID0L = FW_BIT(9)
 ```
 

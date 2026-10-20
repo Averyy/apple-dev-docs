@@ -1,7 +1,8 @@
 # reshapeFrequency
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anticipated reshape frequency
 
@@ -28,7 +29,8 @@ The default value is frequent, which means CoreML tries to switch to new shapes 
 
 ## See Also
 
-- [MLOptimizationHints.ReshapeFrequency](mloptimizationhints-swift.struct/reshapefrequency-swift.enum.md)
+### Getting the reshape frequency
+- [MLOptimizationHints.ReshapeFrequency](./reshapefrequency-swift.enum.md)
   The anticipated frequency of changing input shapes.
 
 

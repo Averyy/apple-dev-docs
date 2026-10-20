@@ -1,7 +1,8 @@
 # init(grantedCoherency:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an open-item result.
 
@@ -14,17 +15,22 @@ Creates an open-item result.
 init(grantedCoherency: FSVolume.KernelCacheCoherencyType)
 ```
 
+```objc
+- (instancetype) initWithGrantedCoherency:(FSKernelCacheCoherencyType) grantedCoherency;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
 
 ## Parameters
 
-- `grantedCoherency`: The [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md) granted by the module for this item.
+- `grantedCoherency`: The [`FSVolume.KernelCacheCoherencyType`](../fsvolume/kernelcachecoherencytype.md) granted by the module for this item.
 
 ## See Also
 
-- [FSVolume.KernelCacheCoherencyType](fsvolume/kernelcachecoherencytype.md)
+### Creating an open-item result
+- [FSVolume.KernelCacheCoherencyType](../fsvolume/kernelcachecoherencytype.md)
   A type that defines how the kernel caches data.
 
 

@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phase of the key-press event (`.down`, `.repeat`, or `.up`).
 
@@ -21,7 +22,8 @@ let phase: KeyPress.Phases
 
 ## See Also
 
-- [KeyPress.Phases](keypress/phases.md)
+### Getting the phase of the keypress
+- [KeyPress.Phases](./phases.md)
   Options for matching different phases of a key-press event.
 
 

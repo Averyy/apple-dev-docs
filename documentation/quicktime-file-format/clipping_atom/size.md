@@ -1,15 +1,17 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that specifies the number of bytes in this clipping atom.
 
 ## See Also
 
-- [Type](clipping_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Clipping region atom](clipping_atom/clipping_region_atom.md)
+- [Clipping region atom](./clipping_region_atom.md)
   An atom that specifies the clipping region.
 
 

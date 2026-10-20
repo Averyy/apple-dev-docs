@@ -1,18 +1,23 @@
 # LSMTextAddWord(_:_:)
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a word to the text.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 func LSMTextAddWord(_ textref: LSMText, _ word: CFString) -> OSStatus
+```
+
+```c
+OSStatus LSMTextAddWord(LSMTextRef textref, CFStringRef word);
 ```
 
 #### Discussion
@@ -21,11 +26,12 @@ The order of words is significant if the map uses pairs or triplets, and the cou
 
 ## See Also
 
-- [func LSMTextAddToken(LSMText, CFData) -> OSStatus](lsmtextaddtoken(_:_:).md)
+### Adding to the Text
+- [func LSMTextAddToken(LSMText, CFData) -> OSStatus](./lsmtextaddtoken%28_,_%29.md)
   Adds an arbitrary binary token to the text.
-- [func LSMTextAddWords(LSMText, CFString, CFLocale?, CFOptionFlags) -> OSStatus](lsmtextaddwords(_:_:_:_:).md)
+- [func LSMTextAddWords(LSMText, CFString, CFLocale?, CFOptionFlags) -> OSStatus](./lsmtextaddwords%28_,_,_,_%29.md)
   Breaks a string into words using the specified locale, and adds the words to the text.
-- [Parsing Flags](parsing-flags.md)
+- [Parsing Flags](./parsing-flags.md)
   Options for parsing words to add to the text.
 
 

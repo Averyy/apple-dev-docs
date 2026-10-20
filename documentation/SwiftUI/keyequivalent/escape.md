@@ -1,7 +1,8 @@
 # escape
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Escape (U+001B)
 
@@ -21,25 +22,26 @@ static let escape: KeyEquivalent
 
 ## See Also
 
-- [static let clear: KeyEquivalent](keyequivalent/clear.md)
+### Getting other special keys
+- [static let clear: KeyEquivalent](./clear.md)
   Clear (U+F739)
-- [static let delete: KeyEquivalent](keyequivalent/delete.md)
+- [static let delete: KeyEquivalent](./delete.md)
   Delete (U+0008)
-- [static let deleteForward: KeyEquivalent](keyequivalent/deleteforward.md)
+- [static let deleteForward: KeyEquivalent](./deleteforward.md)
   Delete Forward (U+F728)
-- [static let end: KeyEquivalent](keyequivalent/end.md)
+- [static let end: KeyEquivalent](./end.md)
   End (U+F72B)
-- [static let home: KeyEquivalent](keyequivalent/home.md)
+- [static let home: KeyEquivalent](./home.md)
   Home (U+F729)
-- [static let pageDown: KeyEquivalent](keyequivalent/pagedown.md)
+- [static let pageDown: KeyEquivalent](./pagedown.md)
   Page Down (U+F72D)
-- [static let pageUp: KeyEquivalent](keyequivalent/pageup.md)
+- [static let pageUp: KeyEquivalent](./pageup.md)
   Page Up (U+F72C)
-- [static let `return`: KeyEquivalent](keyequivalent/return.md)
+- [static let `return`: KeyEquivalent](./return.md)
   Return (U+000D)
-- [static let space: KeyEquivalent](keyequivalent/space.md)
+- [static let space: KeyEquivalent](./space.md)
   Space (U+0020)
-- [static let tab: KeyEquivalent](keyequivalent/tab.md)
+- [static let tab: KeyEquivalent](./tab.md)
   Tab (U+0009)
 
 

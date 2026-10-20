@@ -1,7 +1,8 @@
 # Evaluation.Evaluators
 
 **Framework**: Evaluations  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The evaluator array type for this conformance.
 
@@ -22,13 +23,14 @@ typealias Evaluators = [any EvaluatorProtocol<Self.Sample, Self.Subject>]
 
 ## See Also
 
-- [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
+### Scoring results
+- [var evaluators: Self.Evaluators](./evaluators-swift.property.md)
   The evaluators to apply to each sample and its corresponding subject.
-- [protocol EvaluatorProtocol](evaluatorprotocol.md)
+- [protocol EvaluatorProtocol](../evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
-- [struct EvaluatorsBuilder](evaluatorsbuilder.md)
+- [struct EvaluatorsBuilder](../evaluatorsbuilder.md)
   A result builder that enables declarative evaluator lists.
-- [func aggregateMetrics(using: inout MetricsAggregator)](evaluation/aggregatemetrics(using:).md)
+- [func aggregateMetrics(using: inout MetricsAggregator)](./aggregatemetrics%28using%29.md)
   Aggregates the collected metric results.
 
 

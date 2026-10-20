@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,7 +11,7 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationV2CreateRequest.Data
 ```
 
@@ -23,16 +24,16 @@ object GameCenterAchievementLocalizationV2CreateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementLocalizationV2CreateRequest.Data.Attributes](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterAchievementLocalizationV2CreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to create a Game Center achievement localization create request.
-- [object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships](gamecenterachievementlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
 
 - `attributes` (GameCenterAchievementLocalizationV2CreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterAchievementLocalizationV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievementLocalizations`
 
 
 ---

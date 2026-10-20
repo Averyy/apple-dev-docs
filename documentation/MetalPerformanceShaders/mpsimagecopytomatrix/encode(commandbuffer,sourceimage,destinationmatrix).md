@@ -1,7 +1,8 @@
 # encode(commandBuffer:sourceImage:destinationMatrix:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationMatrix: MPSMatrix)
 ```
 
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceImage:(MPSImage *) sourceImage destinationMatrix:(MPSMatrix *) destinationMatrix;
+```
+
 ## See Also
 
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationMatrix: MPSMatrix)](mpsimagecopytomatrix/encodebatch(commandbuffer:sourceimages:destinationmatrix:).md)
+### Instance Methods
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationMatrix: MPSMatrix)](./encodebatch%28commandbuffer,sourceimages,destinationmatrix%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # USDStage.Object
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,62 +21,63 @@ struct Object
 ## Topics
 
 ### Protocols
-- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
+- [USDStage.Object.MetadataCollection](./object/metadatacollection.md)
   A scene graph object that possesses metadata.
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
+- [USDStage.Object.MetadataValue](./object/metadatavalue.md)
   A value that can be stored as metadata in a Universal Scene Description file.
 ### Initializers
-- [init()](usdstage/object/init.md)
+- [init()](./object/init%28%29.md)
   An invalid object handle.
-- [init(USDPrim)](usdstage/object/init(_:)-421oz.md)
-- [init(USDPrim.Attribute)](usdstage/object/init(_:)-44tvz.md)
+- [init(USDPrim)](./object/init%28_%29-421oz.md)
+- [init(USDPrim.Attribute)](./object/init%28_%29-44tvz.md)
   Casts an attribute handle to an object handle.
-- [init(USDPrim.Relationship)](usdstage/object/init(_:)-64kbz.md)
-- [init(USDPrim.Property)](usdstage/object/init(_:)-9xizj.md)
+- [init(USDPrim.Relationship)](./object/init%28_%29-64kbz.md)
+- [init(USDPrim.Property)](./object/init%28_%29-9xizj.md)
   Casts a property handle to an object handle.
 ### Instance Properties
-- [var isValid: Bool](usdstage/object/isvalid.md)
+- [var isValid: Bool](./object/isvalid.md)
   A Boolean value indicating whether this object is valid.
-- [var name: USDToken](usdstage/object/name.md)
+- [var name: USDToken](./object/name.md)
   The name of this scene graph object.
-- [var path: USDLayer.Path](usdstage/object/path.md)
+- [var path: USDLayer.Path](./object/path.md)
   The complete scene path to this object, relative to its stage.
-- [var prim: USDPrim](usdstage/object/prim.md)
+- [var prim: USDPrim](./object/prim.md)
   The nearest prim that contains this object.
-- [var primPath: USDLayer.Path](usdstage/object/primpath.md)
+- [var primPath: USDLayer.Path](./object/primpath.md)
   The complete path to this prim, or to the nearest prim that contains this object.
-- [var stage: USDStage](usdstage/object/stage.md)
+- [var stage: USDStage](./object/stage.md)
   The stage that owns this object.
 ### Default Implementations
-- [CustomStringConvertible Implementations](usdstage/object/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./object/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [USDStage.Object.MetadataCollection](./object/metadatacollection.md)
 
 ## See Also
 
-- [func prim(at: USDLayer.Path) -> USDPrim](usdstage/prim(at:).md)
+### Accessing prims and properties
+- [func prim(at: USDLayer.Path) -> USDPrim](./prim%28at%29.md)
   Returns the prim at a given path, if it exists.
-- [func object(at: USDLayer.Path) -> USDStage.Object](usdstage/object(at:).md)
+- [func object(at: USDLayer.Path) -> USDStage.Object](./object%28at%29.md)
   Returns the object at a given path, if it exists.
-- [func property(at: USDLayer.Path) -> USDPrim.Property](usdstage/property(at:).md)
+- [func property(at: USDLayer.Path) -> USDPrim.Property](./property%28at%29.md)
   Returns the property at a given path, if it exists.
-- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdstage/attribute(at:).md)
+- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](./attribute%28at%29.md)
   Returns the attribute at a given path, if it exists.
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdstage/relationship(at:).md)
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](./relationship%28at%29.md)
   Returns the relationship at a given path, if it exists.
-- [var pseudoRoot: USDPrim](usdstage/pseudoroot.md)
+- [var pseudoRoot: USDPrim](./pseudoroot.md)
   The prim at the top of the stage’s namespace, whose path is `/`.
-- [var defaultPrim: USDPrim?](usdstage/defaultprim.md)
+- [var defaultPrim: USDPrim?](./defaultprim.md)
   The prim designated as this stage’s default entry point when the stage is referenced.
-- [var hasDefaultPrim: Bool](usdstage/hasdefaultprim.md)
+- [var hasDefaultPrim: Bool](./hasdefaultprim.md)
   Return true if this stage’s root layer has an authored opinion for the default prim layer metadata.
 
 

@@ -1,11 +1,12 @@
 # ExpressibleByExtendedGraphemeClusterLiteral Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(extendedGraphemeClusterLiteral: String)](languagetag/init(extendedgraphemeclusterliteral:).md)
+- [init(extendedGraphemeClusterLiteral: String)](./init%28extendedgraphemeclusterliteral%29.md)
   Creates an instance initialized to the given value.
 
 

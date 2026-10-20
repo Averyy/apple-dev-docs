@@ -1,7 +1,8 @@
 # NWProtocolQUIC.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container of options that configure the use of QUIC on a connection.
 
@@ -23,51 +24,52 @@ class Options
 ## Topics
 
 ### Customizing Connection Options
-- [convenience init(alpn: [String])](nwprotocolquic/options/init(alpn:).md)
+- [convenience init(alpn: [String])](./options/init%28alpn%29.md)
   Initializes a default set of QUIC options along with a set of supported Application-Layer Protocol Negotiation values.
-- [init()](nwprotocolquic/options/init.md)
+- [init()](./options/init%28%29.md)
   Initializes a default set of QUIC options, without specifying a set of supported Application-Layer Protocol Negotiation values.
-- [var alpn: [String]](nwprotocolquic/options/alpn.md)
+- [var alpn: [String]](./options/alpn.md)
   A set of supported Application-Layer Protocol Negotiation values.
-- [var idleTimeout: Int](nwprotocolquic/options/idletimeout.md)
+- [var idleTimeout: Int](./options/idletimeout.md)
   The idle timeout for the QUIC connection, in milliseconds.
-- [var initialMaxData: Int](nwprotocolquic/options/initialmaxdata.md)
+- [var initialMaxData: Int](./options/initialmaxdata.md)
   A QUIC connection’s initial maximum data transport parameter.
-- [var initialMaxStreamDataBidirectionalLocal: Int](nwprotocolquic/options/initialmaxstreamdatabidirectionallocal.md)
+- [var initialMaxStreamDataBidirectionalLocal: Int](./options/initialmaxstreamdatabidirectionallocal.md)
   A QUIC connection’s initial maximum stream data limit for locally-initiated bidirectional streams.
-- [var initialMaxStreamDataBidirectionalRemote: Int](nwprotocolquic/options/initialmaxstreamdatabidirectionalremote.md)
+- [var initialMaxStreamDataBidirectionalRemote: Int](./options/initialmaxstreamdatabidirectionalremote.md)
   A QUIC connection’s initial maximum stream data limit for remote-initiated bidirectional streams.
-- [var initialMaxStreamDataUnidirectional: Int](nwprotocolquic/options/initialmaxstreamdataunidirectional.md)
+- [var initialMaxStreamDataUnidirectional: Int](./options/initialmaxstreamdataunidirectional.md)
   A QUIC connection’s initial maximum stream data limit for unidirectional streams.
-- [var initialMaxStreamsBidirectional: Int](nwprotocolquic/options/initialmaxstreamsbidirectional.md)
+- [var initialMaxStreamsBidirectional: Int](./options/initialmaxstreamsbidirectional.md)
   A QUIC connection’s initial maximum number of bidirectional streams.
-- [var initialMaxStreamsUnidirectional: Int](nwprotocolquic/options/initialmaxstreamsunidirectional.md)
+- [var initialMaxStreamsUnidirectional: Int](./options/initialmaxstreamsunidirectional.md)
   A QUIC connection’s initial maximum number of unidirectional streams.
-- [var maxDatagramFrameSize: Int](nwprotocolquic/options/maxdatagramframesize.md)
+- [var maxDatagramFrameSize: Int](./options/maxdatagramframesize.md)
   A QUIC connection’s maximum DATAGRAM frame size.
-- [var maxUDPPayloadSize: Int](nwprotocolquic/options/maxudppayloadsize.md)
+- [var maxUDPPayloadSize: Int](./options/maxudppayloadsize.md)
   The maximum length of a QUIC packet that can be received on a connection, in bytes.
-- [var securityProtocolOptions: sec_protocol_options_t](nwprotocolquic/options/securityprotocoloptions.md)
+- [var securityProtocolOptions: sec_protocol_options_t](./options/securityprotocoloptions.md)
   The handshake security options QUIC uses.
 ### Customizing Stream Options
-- [var direction: NWProtocolQUIC.Options.Direction](nwprotocolquic/options/direction-swift.property.md)
+- [var direction: NWProtocolQUIC.Options.Direction](./options/direction-swift.property.md)
   The direction of the QUIC stream.
-- [NWProtocolQUIC.Options.Direction](nwprotocolquic/options/direction-swift.enum.md)
+- [NWProtocolQUIC.Options.Direction](./options/direction-swift.enum.md)
   A directionality of a QUIC stream.
-- [var isDatagram: Bool](nwprotocolquic/options/isdatagram.md)
+- [var isDatagram: Bool](./options/isdatagram.md)
   A Boolean that indicates that this is a QUIC datagram flow, not a stream of bytes.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let definition: NWProtocolDefinition](nwprotocolquic/definition.md)
+### Creating QUIC Connections
+- [static let definition: NWProtocolDefinition](./definition.md)
   The system definition of the QUIC transport protocol.
 
 

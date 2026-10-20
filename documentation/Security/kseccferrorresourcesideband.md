@@ -1,7 +1,8 @@
 # kSecCFErrorResourceSideband
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a URL representing a sealed resource with invalid sideband data (resource fork, etc.).
 
@@ -13,6 +14,10 @@ A key whose value is a URL representing a sealed resource with invalid sideband 
 
 ```swift
 let kSecCFErrorResourceSideband: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorResourceSideband;
 ```
 
 

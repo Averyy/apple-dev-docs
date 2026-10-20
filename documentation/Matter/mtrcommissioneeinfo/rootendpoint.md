@@ -1,7 +1,8 @@
 # rootEndpoint
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Endpoint information for the root endpoint of the commissionee. Will be present only if readEndpointInformation is set to YES on MTRCommissioningParameters.
 
@@ -19,6 +20,10 @@ Endpoint information for the root endpoint of the commissionee. Will be present 
 ```swift
 @NSCopying
 var rootEndpoint: MTREndpointInfo? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) MTREndpointInfo * rootEndpoint;
 ```
 
 

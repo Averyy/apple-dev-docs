@@ -1,7 +1,8 @@
 # MTL4TimestampGranularity.precise
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A timestamp as precise as possible.
 
@@ -17,6 +18,10 @@ A timestamp as precise as possible.
 
 ```swift
 case precise
+```
+
+```c
+MTL4TimestampGranularityPrecise
 ```
 
 #### Discussion

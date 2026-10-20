@@ -1,7 +1,8 @@
 # AssistantIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An app intent that Siri performs to fulfill a person’s request.
 
@@ -22,29 +23,30 @@ protocol AssistantIntent : AppIntent
 
 #### Overview
 
-Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro to meet requirements for making your [`AppIntent`](appintent.md) discoverable by Apple Intelligence and Siri.
+Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)`](./assistantintent%28schema%29.md) macro to meet requirements for making your [`AppIntent`](./appintent.md) discoverable by Apple Intelligence and Siri.
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [AssistantSchemaIntent](assistantschemaintent.md)
+- [AssistantSchemaIntent](./assistantschemaintent.md)
 
 ## See Also
 
-- [protocol AssistantEnum](assistantenum.md)
+### Previous schema types
+- [protocol AssistantEnum](./assistantenum.md)
   A value that Apple Intelligence and Siri use to fulfill a person’s request.
-- [protocol AssistantEntity](assistantentity.md)
+- [protocol AssistantEntity](./assistantentity.md)
   An app entity that Apple Intelligence can discover to fulfill a person’s request.
-- [protocol AssistantSchemaEnum](assistantschemaenum.md)
-- [protocol AssistantSchemaEntity](assistantschemaentity.md)
-- [protocol AssistantSchemaIntent](assistantschemaintent.md)
-- [struct AssistantSchema](assistantschema.md)
-- [enum AssistantSchemas](assistantschemas.md)
+- [protocol AssistantSchemaEnum](./assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](./assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](./assistantschemaintent.md)
+- [struct AssistantSchema](./assistantschema.md)
+- [enum AssistantSchemas](./assistantschemas.md)
 
 
 ---

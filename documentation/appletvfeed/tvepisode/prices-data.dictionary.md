@@ -1,7 +1,8 @@
 # TvEpisode.Prices
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of storefront to pricing information and availability.
 
@@ -10,14 +11,14 @@ A mapping of storefront to pricing information and availability.
 
 ## Declaration
 
-```swift
+```
 object TvEpisode.Prices
 ```
 
 ## Topics
 
 ### Related objects
-- [object TvEpisode.Prices.Price](tvepisode/prices-data.dictionary/price.md)
+- [object TvEpisode.Prices.Price](./prices-data.dictionary/price.md)
   Information about a pricing offer.
 
 ## Properties
@@ -27,21 +28,22 @@ object TvEpisode.Prices
 
 ## See Also
 
-- [object TvEpisode.Artworks](tvepisode/artworks-data.dictionary.md)
+### Related objects
+- [object TvEpisode.Artworks](./artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object TvEpisode.CastAndCrew](tvepisode/castandcrew-data.dictionary.md)
+- [object TvEpisode.CastAndCrew](./castandcrew-data.dictionary.md)
   Information about a cast or crew member, including translations of their name.
-- [object TvEpisode.Description](tvepisode/description-data.dictionary.md)
+- [object TvEpisode.Description](./description-data.dictionary.md)
   A mapping of locale to localized descriptions of the TV episode.
-- [object TvEpisode.ExternalContentId](tvepisode/externalcontentid.md)
+- [object TvEpisode.ExternalContentId](./externalcontentid.md)
   Information about an external content ID.
-- [object TvEpisode.Genre](tvepisode/genre.md)
+- [object TvEpisode.Genre](./genre.md)
   A genre name and its structure.
-- [object TvEpisode.Name](tvepisode/name-data.dictionary.md)
+- [object TvEpisode.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the TV episode.
-- [object TvEpisode.Rating](tvepisode/rating-data.dictionary.md)
+- [object TvEpisode.Rating](./rating-data.dictionary.md)
   Information about a content rating.
-- [object TvEpisode.Url](tvepisode/url-data.dictionary.md)
+- [object TvEpisode.Url](./url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
 
 

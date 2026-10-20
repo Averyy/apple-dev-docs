@@ -1,14 +1,15 @@
 # kTaskIsTimerThrottled
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 kTaskIsTimerThrottled = 0x2000
 ```
 

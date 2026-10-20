@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of members in the set.
 
@@ -18,6 +19,10 @@ The number of members in the set.
 
 ```swift
 var count: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger count;
 ```
 
 

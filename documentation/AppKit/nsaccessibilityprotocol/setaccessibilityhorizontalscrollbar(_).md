@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the horizontal scroll bar for the scroll view.
@@ -17,11 +18,12 @@ func setAccessibilityHorizontalScrollBar(_ accessibilityHorizontalScrollBar: Any
 
 ## See Also
 
-- [func accessibilityHorizontalScrollBar() -> Any?](nsaccessibilityprotocol/accessibilityhorizontalscrollbar.md)
+### Configuring scroll views
+- [func accessibilityHorizontalScrollBar() -> Any?](./accessibilityhorizontalscrollbar%28%29.md)
   Returns the horizontal scroll bar for the scroll view.
-- [func accessibilityVerticalScrollBar() -> Any?](nsaccessibilityprotocol/accessibilityverticalscrollbar.md)
+- [func accessibilityVerticalScrollBar() -> Any?](./accessibilityverticalscrollbar%28%29.md)
   Returns the vertical scroll bar for the scroll view.
-- [func setAccessibilityVerticalScrollBar(Any?)](nsaccessibilityprotocol/setaccessibilityverticalscrollbar(_:).md)
+- [func setAccessibilityVerticalScrollBar(Any?)](./setaccessibilityverticalscrollbar%28_%29.md)
   Sets the vertical scroll bar for the scroll view.
 
 

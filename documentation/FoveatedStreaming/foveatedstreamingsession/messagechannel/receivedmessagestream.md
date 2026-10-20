@@ -1,7 +1,8 @@
 # receivedMessageStream
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An async stream that yields data objects each time the channel receives a message.
 

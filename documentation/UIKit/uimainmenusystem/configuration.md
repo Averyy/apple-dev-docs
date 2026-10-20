@@ -1,7 +1,8 @@
 # UIMainMenuSystem.Configuration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for the main menu system. You can specify whether or not certain elements are present in the initial main menu, as well as a block to build the menu using a UIMenuBuilder.
 
@@ -19,45 +20,50 @@ A configuration for the main menu system. You can specify whether or not certain
 class Configuration
 ```
 
+```objc
+@interface UIMainMenuSystemConfiguration : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var documentPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/documentpreference.md)
+- [var documentPreference: UIMenuSystem.ElementGroupPreference](./configuration/documentpreference.md)
   Specifies a preference for document elements in the main menu.
-- [var findingConfiguration: UIMenuSystem.FindElementGroupConfiguration](uimainmenusystem/configuration/findingconfiguration.md)
+- [var findingConfiguration: UIMenuSystem.FindElementGroupConfiguration](./configuration/findingconfiguration.md)
   Configuration for the find elements should they be present in the main menu.
-- [var findingPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/findingpreference.md)
+- [var findingPreference: UIMenuSystem.ElementGroupPreference](./configuration/findingpreference.md)
   Specifies a preference for finding elements in the main menu.
-- [var inspectorPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/inspectorpreference.md)
+- [var inspectorPreference: UIMenuSystem.ElementGroupPreference](./configuration/inspectorpreference.md)
   Specifies a preference for inspector elements in the main menu.
-- [var newScenePreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/newscenepreference.md)
+- [var newScenePreference: UIMenuSystem.ElementGroupPreference](./configuration/newscenepreference.md)
   Specifies a preference for new scene elements in the main menu.
-- [var printingPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/printingpreference.md)
+- [var printingPreference: UIMenuSystem.ElementGroupPreference](./configuration/printingpreference.md)
   Specifies a preference for printing elements in the main menu.
-- [var sidebarPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/sidebarpreference.md)
+- [var sidebarPreference: UIMenuSystem.ElementGroupPreference](./configuration/sidebarpreference.md)
   Specifies a preference for sidebar elements in the main menu.
-- [var textFormattingPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/textformattingpreference.md)
+- [var textFormattingPreference: UIMenuSystem.ElementGroupPreference](./configuration/textformattingpreference.md)
   Specifies a preference for text formatting elements in the main menu.
-- [var toolbarPreference: UIMenuSystem.ElementGroupPreference](uimainmenusystem/configuration/toolbarpreference.md)
+- [var toolbarPreference: UIMenuSystem.ElementGroupPreference](./configuration/toolbarpreference.md)
   Specifies a preference for toolbar elements in the main menu.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [func setBuildConfiguration(UIMainMenuSystem.Configuration, buildHandler: ((any UIMenuBuilder) -> Void)?)](uimainmenusystem/setbuildconfiguration(_:buildhandler:).md)
+### Configuring a main menu system
+- [func setBuildConfiguration(UIMainMenuSystem.Configuration, buildHandler: ((any UIMenuBuilder) -> Void)?)](./setbuildconfiguration%28_,buildhandler%29.md)
 
 
 ---

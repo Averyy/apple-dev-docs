@@ -1,7 +1,8 @@
 # NSMutableString
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A dynamic plain-text Unicode string object.
 
@@ -20,64 +21,68 @@ A dynamic plain-text Unicode string object.
 class NSMutableString
 ```
 
+```objc
+@interface NSMutableString : NSString
+```
+
 #### Overview
 
-In Swift, you can use this type instead of a [`String`](https://developer.apple.com/documentation/swift/string) in cases that require reference semantics.
+In Swift, you can use this type instead of a [`String`](../Swift/string.md) in cases that require reference semantics.
 
-The `NSMutableString` class declares the programmatic interface to an object that manages a mutable string—that is, a string whose contents can be edited—that conceptually represents an array of Unicode characters. To construct and manage an immutable string—or a string that cannot be changed after it has been created—use an object of the [`NSString`](nsstring.md) class.
+The `NSMutableString` class declares the programmatic interface to an object that manages a mutable string—that is, a string whose contents can be edited—that conceptually represents an array of Unicode characters. To construct and manage an immutable string—or a string that cannot be changed after it has been created—use an object of the [`NSString`](./nsstring.md) class.
 
-The `NSMutableString` class adds one primitive method—[`replaceCharacters(in:with:)`](nsmutablestring/replacecharacters(in:with:).md)—to the basic string-handling behavior inherited from `NSString`. All other methods that modify a string work through this method. For example, [`insert(_:at:)`](nsmutablestring/insert(_:at:).md) simply replaces the characters in a range of `0` length, while [`deleteCharacters(in:)`](nsmutablestring/deletecharacters(in:).md) replaces the characters in a given range with no characters.
+The `NSMutableString` class adds one primitive method—[`replaceCharacters(in:with:)`](./nsmutablestring/replacecharacters%28in,with%29.md)—to the basic string-handling behavior inherited from `NSString`. All other methods that modify a string work through this method. For example, [`insert(_:at:)`](./nsmutablestring/insert%28_,at%29.md) simply replaces the characters in a range of `0` length, while [`deleteCharacters(in:)`](./nsmutablestring/deletecharacters%28in%29.md) replaces the characters in a given range with no characters.
 
-NSMutableString is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableString`](https://developer.apple.com/documentation/corefoundation/cfmutablestring). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+NSMutableString is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableString`](../CoreFoundation/cfmutablestring.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ## Topics
 
 ### Creating and Initializing a Mutable String
-- [init(capacity: Int)](nsmutablestring/init(capacity:).md)
+- [init(capacity: Int)](./nsmutablestring/init%28capacity%29.md)
   Returns an `NSMutableString` object initialized with initial storage for a given number of characters,
 ### Modifying a String
-- [func append(String)](nsmutablestring/append(_:).md)
+- [func append(String)](./nsmutablestring/append%28_%29.md)
   Adds to the end of the receiver the characters of a given string.
-- [func applyTransform(StringTransform, reverse: Bool, range: NSRange, updatedRange: NSRangePointer?) -> Bool](nsmutablestring/applytransform(_:reverse:range:updatedrange:).md)
+- [func applyTransform(StringTransform, reverse: Bool, range: NSRange, updatedRange: NSRangePointer?) -> Bool](./nsmutablestring/applytransform%28_,reverse,range,updatedrange%29.md)
   Transliterates the receiver by applying a specified ICU string transform.
-- [func deleteCharacters(in: NSRange)](nsmutablestring/deletecharacters(in:).md)
+- [func deleteCharacters(in: NSRange)](./nsmutablestring/deletecharacters%28in%29.md)
   Removes from the receiver the characters in a given range.
-- [func insert(String, at: Int)](nsmutablestring/insert(_:at:).md)
+- [func insert(String, at: Int)](./nsmutablestring/insert%28_,at%29.md)
   Inserts into the receiver the characters of a given string at a given location.
-- [func replaceCharacters(in: NSRange, with: String)](nsmutablestring/replacecharacters(in:with:).md)
+- [func replaceCharacters(in: NSRange, with: String)](./nsmutablestring/replacecharacters%28in,with%29.md)
   Replaces the characters from `range` with those in `aString`.
-- [func replaceOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> Int](nsmutablestring/replaceoccurrences(of:with:options:range:).md)
+- [func replaceOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> Int](./nsmutablestring/replaceoccurrences%28of,with,options,range%29.md)
   Replaces all occurrences of a given string in a given range with another given string, returning the number of replacements.
-- [func setString(String)](nsmutablestring/setstring(_:).md)
+- [func setString(String)](./nsmutablestring/setstring%28_%29.md)
   Replaces the characters of the receiver with those in a given string.
 ### Constants
-- [String Transformations](string-transformations.md)
-  These constants specify transforms used by the [`applyTransform(_:reverse:range:updatedRange:)`](nsmutablestring/applytransform(_:reverse:range:updatedrange:).md) method.
+- [String Transformations](./string-transformations.md)
+  These constants specify transforms used by the [`applyTransform(_:reverse:range:updatedRange:)`](./nsmutablestring/applytransform%28_,reverse,range,updatedrange%29.md) method.
 ### Instance Methods
-- [func appendFormat(NSString, any CVarArg...)](nsmutablestring/appendformat(_:_:).md)
+- [func appendFormat(NSString, any CVarArg...)](./nsmutablestring/appendformat%28_,_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSString](nsstring.md)
+- [NSString](./nsstring.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSItemProviderReading](nsitemproviderreading.md)
-- [NSItemProviderWriting](nsitemproviderwriting.md)
-- [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSItemProviderReading](./nsitemproviderreading.md)
+- [NSItemProviderWriting](./nsitemproviderwriting.md)
+- [NSMutableCopying](./nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

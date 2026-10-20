@@ -1,7 +1,8 @@
 # IOSimpleLockUnlockEnableInterrupt
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unlock a spin lock, and restore interrupt state.
 
@@ -10,7 +11,7 @@ Unlock a spin lock, and restore interrupt state.
 
 ## Declaration
 
-```swift
+```c
 void IOSimpleLockUnlockEnableInterrupt(IOSimpleLock *lock, IOInterruptState state);
 ```
 
@@ -25,22 +26,23 @@ Unlock the lock, and restore preemption and interrupts to the state as they were
 
 ## See Also
 
-- [IOSimpleLockAlloc](1553017-iosimplelockalloc.md)
+### Simple Locks
+- [IOSimpleLockAlloc](./api-1553017-iosimplelockalloc.md)
   Allocates and initializes a spin lock.
-- [IOSimpleLockInit](1552990-iosimplelockinit.md)
+- [IOSimpleLockInit](./api-1552990-iosimplelockinit.md)
   Initialize a spin lock.
-- [IOSimpleLockDestroy](3380136-iosimplelockdestroy.md)
-- [IOSimpleLockFree](1553035-iosimplelockfree.md)
+- [IOSimpleLockDestroy](./api-3380136-iosimplelockdestroy.md)
+- [IOSimpleLockFree](./api-1553035-iosimplelockfree.md)
   Frees a spin lock.
-- [IOSimpleLockGetMachLock](1553019-iosimplelockgetmachlock.md)
+- [IOSimpleLockGetMachLock](./api-1553019-iosimplelockgetmachlock.md)
   Accessor to a Mach spin lock.
-- [IOSimpleLockLock](1552997-iosimplelocklock.md)
+- [IOSimpleLockLock](./api-1552997-iosimplelocklock.md)
   Lock a spin lock.
-- [IOSimpleLockLockDisableInterrupt](1553005-iosimplelocklockdisableinterrupt.md)
+- [IOSimpleLockLockDisableInterrupt](./api-1553005-iosimplelocklockdisableinterrupt.md)
   Lock a spin lock.
-- [IOSimpleLockTryLock](1553029-iosimplelocktrylock.md)
+- [IOSimpleLockTryLock](./api-1553029-iosimplelocktrylock.md)
   Attempt to lock a spin lock.
-- [IOSimpleLockUnlock](1553015-iosimplelockunlock.md)
+- [IOSimpleLockUnlock](./api-1553015-iosimplelockunlock.md)
   Unlock a spin lock.
 
 

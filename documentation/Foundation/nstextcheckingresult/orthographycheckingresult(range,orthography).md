@@ -1,7 +1,8 @@
 # orthographyCheckingResult(range:orthography:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified orthography.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified orthography.
 class func orthographyCheckingResult(range: NSRange, orthography: NSOrthography) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) orthographyCheckingResultWithRange:(NSRange) range orthography:(NSOrthography *) orthography;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`orthography`](nstextcheckingresult/checkingtype/orthography.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`orthography`](./checkingtype/orthography.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [var orthography: NSOrthography?](nstextcheckingresult/orthography.md)
+### Text Checking Results for Orthography
+- [var orthography: NSOrthography?](./orthography.md)
   The detected orthography of a type checking result.
 
 

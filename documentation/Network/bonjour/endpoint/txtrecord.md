@@ -1,7 +1,8 @@
 # txtRecord
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 TXT records provide additional information about an endpoint during advertisement or discovery.
 

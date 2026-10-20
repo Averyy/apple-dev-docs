@@ -1,7 +1,8 @@
 # sourceSkeleton
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The skeleton the source animation targets.
 
@@ -21,7 +22,8 @@ var sourceSkeleton: SkeletonResource { get }
 
 ## See Also
 
-- [var targetSkeleton: SkeletonResource](retargetingconfiguration/targetskeleton.md)
+### Accessing the skeletons
+- [var targetSkeleton: SkeletonResource](./targetskeleton.md)
   The skeleton the retargeting animates.
 
 

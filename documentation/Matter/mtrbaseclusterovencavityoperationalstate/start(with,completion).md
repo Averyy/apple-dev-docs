@@ -1,7 +1,8 @@
 # start(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command Start
 
@@ -17,7 +18,15 @@ Command Start
 ## Declaration
 
 ```swift
+func start(with params: MTROvenCavityOperationalStateClusterStartParams?, completion: @escaping @Sendable (MTROvenCavityOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func start(with params: MTROvenCavityOperationalStateClusterStartParams?) async throws -> MTROvenCavityOperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) startWithParams:(MTROvenCavityOperationalStateClusterStartParams *) params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

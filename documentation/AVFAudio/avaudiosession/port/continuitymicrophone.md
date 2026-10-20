@@ -1,7 +1,8 @@
 # continuityMicrophone
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An input from a Continuity Microphone on Apple TV.
 
@@ -19,17 +20,22 @@ An input from a Continuity Microphone on Apple TV.
 static let continuityMicrophone: AVAudioSession.Port
 ```
 
+```c
+extern AVAudioSessionPort const AVAudioSessionPortContinuityMicrophone;
+```
+
 #### Discussion
 
 A Continuity Microphone is an iOS device that a user trusts to use for audio input on Apple TV.
 
 ## See Also
 
-- [static let builtInMic: AVAudioSession.Port](avaudiosession/port/builtinmic.md)
+### Getting input ports
+- [static let builtInMic: AVAudioSession.Port](./builtinmic.md)
   An input from a device’s built-in microphone.
-- [static let headsetMic: AVAudioSession.Port](avaudiosession/port/headsetmic.md)
+- [static let headsetMic: AVAudioSession.Port](./headsetmic.md)
   An input from a wired headset’s built-in microphone.
-- [static let lineIn: AVAudioSession.Port](avaudiosession/port/linein.md)
+- [static let lineIn: AVAudioSession.Port](./linein.md)
   A line-level input from the dock connector.
 
 

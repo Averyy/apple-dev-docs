@@ -1,12 +1,15 @@
 # window
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the window supplied when the app controller was initialized.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ A reference to the window supplied when the app controller was initialized.
 var window: UIWindow? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIWindow * window;
+```
+
 ## See Also
 
-- [var context: TVApplicationControllerContext](tvapplicationcontroller/context.md)
+### Examining App Controller Properties
+- [var context: TVApplicationControllerContext](./context.md)
   The launch information for the application controller.
-- [var navigationController: UINavigationController](tvapplicationcontroller/navigationcontroller.md)
+- [var navigationController: UINavigationController](./navigationcontroller.md)
   The navigation controller that is bridged from JavaScript to tvOS.
 
 

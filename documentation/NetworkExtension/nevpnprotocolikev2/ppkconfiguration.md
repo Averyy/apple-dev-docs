@@ -1,7 +1,8 @@
 # ppkConfiguration
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration for a post-quantum pre-shared key (PPK).
 
@@ -20,11 +21,16 @@ The configuration for a post-quantum pre-shared key (PPK).
 var ppkConfiguration: NEVPNIKEv2PPKConfiguration? { get set }
 ```
 
+```objc
+@property (copy, nullable) NEVPNIKEv2PPKConfiguration * ppkConfiguration;
+```
+
 ## See Also
 
-- [var allowPostQuantumKeyExchangeFallback: Bool](nevpnprotocolikev2/allowpostquantumkeyexchangefallback.md)
+### Supporting quantum-secure cryptography
+- [var allowPostQuantumKeyExchangeFallback: Bool](./allowpostquantumkeyexchangefallback.md)
   A Boolean value that indicates whether servers that don’t support post-quantum key exchanges can skip them.
-- [class NEVPNIKEv2PPKConfiguration](nevpnikev2ppkconfiguration.md)
+- [class NEVPNIKEv2PPKConfiguration](../nevpnikev2ppkconfiguration.md)
   A class that manages parameters of a post-quantum pre-shared key (PPK).
 
 

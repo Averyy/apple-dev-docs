@@ -1,7 +1,8 @@
 # parameterID
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The haptic parameter ID indicating what type of parameter the current event represents.
 
@@ -19,9 +20,14 @@ The haptic parameter ID indicating what type of parameter the current event repr
 var parameterID: CHHapticEvent.ParameterID { get }
 ```
 
+```objc
+@property (readonly) CHHapticEventParameterID parameterID;
+```
+
 ## See Also
 
-- [var value: Float](chhapticeventparameter/value.md)
+### Specifying an Event Parameter’s Value
+- [var value: Float](./value.md)
   The value of the parameter.
 
 

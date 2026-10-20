@@ -1,6 +1,7 @@
 # Safari 15.4 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 14, 2022 — Version 15.4 (17613.1.17)
 
@@ -14,7 +15,7 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 
 - Safari 15.4 in macOS Catalina running on an iMac (Late 2012 or 2013) with a NVIDIA GPU may experience multiple sites that fail to load or continuously refresh after loading. (88177392)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -47,7 +48,7 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 
 - Removed non-standard CSS properties `-webkit-border-fit`, `-webkit-margin-collapse`, `-webkit-margin-top-collapse`, `-webkit-margin-bottom-collapse`, `-webkit-margin-before-collapse`, `-webkit-margin-after-collapse`, and `-webkit-background-composite`.
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -55,7 +56,7 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 - Added lazy-loading support for images with the `loading` attribute on the `<img>` element.
 - Added support for the `autofocus` attribute.
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -78,7 +79,7 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 
 - Removed the XSS Auditor.
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -130,11 +131,13 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 
 ###### New Features
 
-- Improved support for Content Security Policy 3: - Added correct blocked resource violation reporting for inline script, inline style, and eval execution.
-- Added support for the `'strict-dynamic'` source expression.
-- Added support for the `'unsafe-hashes'` source expression.
-- Added support to allow external JavaScript matching hash source expressions.
-- Added support for the `'report-sample'` expression.
+- Improved support for Content Security Policy 3:
+
+  - Added correct blocked resource violation reporting for inline script, inline style, and eval execution.
+  - Added support for the `'strict-dynamic'` source expression.
+  - Added support for the `'unsafe-hashes'` source expression.
+  - Added support to allow external JavaScript matching hash source expressions.
+  - Added support for the `'report-sample'` expression.
 
 ##### Web Inspector
 
@@ -147,13 +150,14 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 
 ## See Also
 
-- [Safari 15.6 Release Notes](safari-15_6-release-notes.md)
+### Version 15
+- [Safari 15.6 Release Notes](./safari-15_6-release-notes.md)
   Released July 20, 2022 — Version 15.6 (17613.3.9)
-- [Safari 15.5 Release Notes](safari-15_5-release-notes.md)
+- [Safari 15.5 Release Notes](./safari-15_5-release-notes.md)
   Released May 16, 2022 — Version 15.5 (17613.2.7)
-- [Safari 15.2 Release Notes](safari-15_2-release-notes.md)
+- [Safari 15.2 Release Notes](./safari-15_2-release-notes.md)
   Released December 13, 2021 — Version 15.2 (17612.3.6)
-- [Safari 15 Release Notes](safari-15-release-notes.md)
+- [Safari 15 Release Notes](./safari-15-release-notes.md)
   Released September 20, 2021 — Version 15 (17612.1.27)
 
 

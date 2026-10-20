@@ -1,7 +1,8 @@
 # AssetCredentialACME
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A reference to an ACME identity.
 
@@ -16,19 +17,19 @@ A reference to an ACME identity.
 
 ## Declaration
 
-```swift
+```
 object AssetCredentialACME
 ```
 
 ## Mentions
 
-- [Validating a Managed Device Attestation](validating-a-managed-device-attestation-attestation.md)
+- [Validating a Managed Device Attestation](./validating-a-managed-device-attestation-attestation.md)
 
 #### Discussion
 
 Specify `com.apple.asset.credential.acme` as the declaration type.
 
-##### Asset Example
+##### Asset example
 
 ```json
 {
@@ -47,32 +48,39 @@ Specify `com.apple.asset.credential.acme` as the declaration type.
 ## Topics
 
 ### Objects
-- [object AssetCredentialACMEAuthenticationObject](assetcredentialacmeauthenticationobject.md)
+- [object AssetCredentialACMEAuthenticationObject](./assetcredentialacmeauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
-- [object AssetCredentialACMEReferenceObject](assetcredentialacmereferenceobject.md)
+- [object AssetCredentialACMEReferenceObject](./assetcredentialacmereferenceobject.md)
   The external reference. Ensure that the asset data:
 
 ## Properties
 
-- `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values: - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
-- `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
+- `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values:
+
+  - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
+  - `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
+
+  **Default**: `Default`; **Allowed Values**: `Default`, `AfterFirstUnlock`
 - `Authentication` (AssetCredentialACMEAuthenticationObject): The server authentication details. If this key is absent, the default authentication type is MDM.
-- `Reference` (AssetCredentialACMEReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.acme` credential type
-- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
+- `Reference` (AssetCredentialACMEReferenceObject) *(required)*: The external reference. Ensure that the asset data:
+
+  - Is a JSON document that represents the `com.apple.credential.acme` credential type
+  - Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 
 ## See Also
 
-- [object AssetCredentialCertificate](assetcredentialcertificate.md)
+### Assets
+- [object AssetCredentialCertificate](./assetcredentialcertificate.md)
   A reference to one PKCS #1 or PEM encoded certificate.
-- [object AssetCredentialIdentity](assetcredentialidentity.md)
+- [object AssetCredentialIdentity](./assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
-- [object AssetCredentialSCEP](assetcredentialscep.md)
+- [object AssetCredentialSCEP](./assetcredentialscep.md)
   A reference to a SCEP identity.
-- [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
+- [object AssetCredentialUserNameAndPassword](./assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
-- [object AssetData](assetdata.md)
+- [object AssetData](./assetdata.md)
   A reference to arbitrary data with a specific media type.
-- [object AssetUserIdentity](assetuseridentity.md)
+- [object AssetUserIdentity](./assetuseridentity.md)
   The user-identity data.
 
 

@@ -1,7 +1,8 @@
 # uploadTask(withStreamedRequest:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a task that performs an HTTP request for uploading data based on the specified URL request.
 
@@ -20,9 +21,13 @@ Creates a task that performs an HTTP request for uploading data based on the spe
 func uploadTask(withStreamedRequest request: URLRequest) -> URLSessionUploadTask
 ```
 
+```objc
+- (NSURLSessionUploadTask *) uploadTaskWithStreamedRequest:(NSURLRequest *) request;
+```
+
 ## Mentions
 
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading streams of data](../uploading-streams-of-data.md)
 
 #### Return Value
 
@@ -32,31 +37,32 @@ The new session upload task.
 
 An HTTP upload request is any request that contains a request body, such as a `POST` or `PUT` request. Upload tasks require you to provide a request object so that you can provide metadata for the upload, such as HTTP request headers.
 
-After you create the task, you must start it by calling its [`resume()`](urlsessiontask/resume().md) method. The task calls methods on the session’s delegate to provide you with the upload’s progress, response metadata, response data, and so on. The session’s delegate must have a [`urlSession(_:task:needNewBodyStream:)`](urlsessiontaskdelegate/urlsession(_:task:neednewbodystream:).md) method that provides the body data to upload.
+After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method. The task calls methods on the session’s delegate to provide you with the upload’s progress, response metadata, response data, and so on. The session’s delegate must have a [`urlSession(_:task:needNewBodyStream:)`](../urlsessiontaskdelegate/urlsession%28_,task,neednewbodystream%29.md) method that provides the body data to upload.
 
 ## Parameters
 
-- `request`: A URL request object that provides the URL, cache policy, request type, and so on. The body stream and body data in this request object are ignored, and the session calls its delegate’s [`urlSession(_:task:needNewBodyStream:)`](urlsessiontaskdelegate/urlsession(_:task:neednewbodystream:).md) method to provide the body data.
+- `request`: A URL request object that provides the URL, cache policy, request type, and so on. The body stream and body data in this request object are ignored, and the session calls its delegate’s [`urlSession(_:task:needNewBodyStream:)`](../urlsessiontaskdelegate/urlsession%28_,task,neednewbodystream%29.md) method to provide the body data.
 
 ## See Also
 
-- [Building a resumable upload server with SwiftNIO](building-a-resumable-upload-server-with-swiftnio.md)
+### Adding upload tasks to a session
+- [Building a resumable upload server with SwiftNIO](../building-a-resumable-upload-server-with-swiftnio.md)
   Support HTTP resumable upload protocol in SwiftNIO by translating resumable uploads to regular uploads.
-- [func uploadTask(with: URLRequest, from: Data) -> URLSessionUploadTask](urlsession/uploadtask(with:from:).md)
+- [func uploadTask(with: URLRequest, from: Data) -> URLSessionUploadTask](./uploadtask%28with,from%29.md)
   Creates a task that performs an HTTP request for the specified URL request object and uploads the provided data.
-- [func uploadTask(with: URLRequest, from: Data?, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(with:from:completionhandler:).md)
+- [func uploadTask(with: URLRequest, from: Data?, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](./uploadtask%28with,from,completionhandler%29.md)
   Creates a task that performs an HTTP request for the specified URL request object, uploads the provided data, and calls a handler upon completion.
-- [func uploadTask(with: URLRequest, fromFile: URL) -> URLSessionUploadTask](urlsession/uploadtask(with:fromfile:).md)
+- [func uploadTask(with: URLRequest, fromFile: URL) -> URLSessionUploadTask](./uploadtask%28with,fromfile%29.md)
   Creates a task that performs an HTTP request for uploading the specified file.
-- [func uploadTask(with: URLRequest, fromFile: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(with:fromfile:completionhandler:).md)
+- [func uploadTask(with: URLRequest, fromFile: URL, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](./uploadtask%28with,fromfile,completionhandler%29.md)
   Creates a task that performs an HTTP request for uploading the specified file, then calls a handler upon completion.
-- [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:).md)
+- [func uploadTask(withResumeData: Data) -> URLSessionUploadTask](./uploadtask%28withresumedata%29.md)
   Creates an upload task from a resume data blob. Requires the server to support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/ If resuming from an upload file, the file must still exist and be unmodified. If the upload cannot be successfully resumed, URLSession:task:didCompleteWithError: will be called.
-- [func uploadTask(withResumeData: Data, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](urlsession/uploadtask(withresumedata:completionhandler:).md)
+- [func uploadTask(withResumeData: Data, completionHandler: (Data?, URLResponse?, (any Error)?) -> Void) -> URLSessionUploadTask](./uploadtask%28withresumedata,completionhandler%29.md)
   Creates a URLSessionUploadTask from a resume data blob. If resuming from an upload file, the file must still exist and be unmodified.
-- [class URLSessionUploadTask](urlsessionuploadtask.md)
+- [class URLSessionUploadTask](../urlsessionuploadtask.md)
   A URL session task that uploads data to the network in a request body.
-- [protocol URLSessionDataDelegate](urlsessiondatadelegate.md)
+- [protocol URLSessionDataDelegate](../urlsessiondatadelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to data and upload tasks.
 
 

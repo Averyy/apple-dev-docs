@@ -2,6 +2,7 @@
 
 **Framework**: Message UI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 
 ```swift
 func composeAssistantViewController(_ controller: MFComposeAssistantViewController, didComposeDraft draft: MFMailDraft)
+```
+
+```objc
+- (void) composeAssistantViewController:(MFComposeAssistantViewController *) controller didComposeDraft:(MFMailDraft *) draft;
 ```
 
 

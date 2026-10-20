@@ -1,18 +1,21 @@
 # PreviewPlatform.watchOS
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies watchOS as the preview platform.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.0+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- tvOS 13.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 6.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use #Preview instead.
 
 ## Declaration
 
@@ -22,11 +25,12 @@ case watchOS
 
 ## See Also
 
-- [PreviewPlatform.iOS](previewplatform/ios.md)
+### Getting an operating system
+- [PreviewPlatform.iOS](./ios.md)
   Specifies iOS as the preview platform.
-- [PreviewPlatform.macOS](previewplatform/macos.md)
+- [PreviewPlatform.macOS](./macos.md)
   Specifies macOS as the preview platform.
-- [PreviewPlatform.tvOS](previewplatform/tvos.md)
+- [PreviewPlatform.tvOS](./tvos.md)
   Specifies tvOS as the preview platform.
 
 

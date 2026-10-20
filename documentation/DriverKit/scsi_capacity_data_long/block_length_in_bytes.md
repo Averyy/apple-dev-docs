@@ -1,17 +1,18 @@
 # BLOCK_LENGTH_IN_BYTES
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 UInt32 BLOCK_LENGTH_IN_BYTES;
 ```
 

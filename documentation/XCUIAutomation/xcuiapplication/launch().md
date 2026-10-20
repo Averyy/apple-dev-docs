@@ -1,24 +1,29 @@
 # launch()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches the application.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func launch()
+```
+
+```objc
+- (void) launch;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ If the application is already running, this call terminates the existing instanc
 
 ## See Also
 
-- [var launchArguments: [String]](xcuiapplication/launcharguments.md)
+### Launching the application
+- [var launchArguments: [String]](./launcharguments.md)
   The arguments that pass to the application on launch.
-- [var launchEnvironment: [String : String]](xcuiapplication/launchenvironment.md)
+- [var launchEnvironment: [String : String]](./launchenvironment.md)
   The environment variables that pass to the application on launch.
-- [func open(URL)](xcuiapplication/open(_:).md)
+- [func open(URL)](./open%28_%29.md)
   Launches the application by URL.
 
 

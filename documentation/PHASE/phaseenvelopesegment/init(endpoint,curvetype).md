@@ -1,7 +1,8 @@
 # init(endPoint:curveType:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a curved portion of an envelope.
 
@@ -17,6 +18,10 @@ Creates a curved portion of an envelope.
 
 ```swift
 init(endPoint: simd_double2, curveType: PHASECurveType)
+```
+
+```objc
+- (instancetype) initWithEndPoint:(simd_double2) endPoint curveType:(PHASECurveType) curveType;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animated pair with the provided values.
 

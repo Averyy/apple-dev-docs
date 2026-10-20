@@ -1,18 +1,21 @@
 # i_desc
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the input.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.0
+- iPadOS 15.0+ - Deprecated in 18.0
+- Mac Catalyst 15.0+ - Deprecated in 18.0
+- macOS 12.0+ - Deprecated in 15.0
+- tvOS 15.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 8.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,17 +23,22 @@ The descriptor of the input.
 var i_desc: BNNSNDArrayDescriptor
 ```
 
+```c
+BNNSNDArrayDescriptor i_desc;
+```
+
 ## See Also
 
-- [var axis_mask: Int](bnnslayerparametersquantization/axis_mask.md)
+### Instance Properties
+- [var axis_mask: Int](./axis_mask.md)
   A bitmask that defines the axis  to which the function applies scale and bias.
-- [var function: BNNSQuantizerFunction](bnnslayerparametersquantization/function.md)
+- [var function: BNNSQuantizerFunction](./function.md)
   The quantize function.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersquantization/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./o_desc.md)
   The descriptor of the output.
-- [var scale: BNNSNDArrayDescriptor](bnnslayerparametersquantization/scale.md)
+- [var scale: BNNSNDArrayDescriptor](./scale.md)
   The descriptor of the scale.
-- [var bias: BNNSNDArrayDescriptor](bnnslayerparametersquantization/bias.md)
+- [var bias: BNNSNDArrayDescriptor](./bias.md)
   The descriptor of the bias.
 
 

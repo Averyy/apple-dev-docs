@@ -1,7 +1,8 @@
 # AVSpeechSynthesisVoiceGender.unspecified
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The nonspecific gender option.
 
@@ -20,11 +21,16 @@ The nonspecific gender option.
 case unspecified
 ```
 
+```c
+AVSpeechSynthesisVoiceGenderUnspecified
+```
+
 ## See Also
 
-- [AVSpeechSynthesisVoiceGender.male](avspeechsynthesisvoicegender/male.md)
+### Identifying voice genders
+- [AVSpeechSynthesisVoiceGender.male](./male.md)
   The male voice option.
-- [AVSpeechSynthesisVoiceGender.female](avspeechsynthesisvoicegender/female.md)
+- [AVSpeechSynthesisVoiceGender.female](./female.md)
   The female voice option.
 
 

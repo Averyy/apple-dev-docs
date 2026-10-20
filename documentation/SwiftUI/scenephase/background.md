@@ -1,7 +1,8 @@
 # ScenePhase.background
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scene isn’t currently visible in the UI.
 
@@ -22,15 +23,16 @@ case background
 
 #### Discussion
 
-Do as little as possible in a scene that’s in the `background` phase. The `background` phase can precede termination, so do any cleanup work immediately upon entering this state. For example, close any open files and network connections. However, a scene can also return to the [`ScenePhase.active`](scenephase/active.md) phase from the background.
+Do as little as possible in a scene that’s in the `background` phase. The `background` phase can precede termination, so do any cleanup work immediately upon entering this state. For example, close any open files and network connections. However, a scene can also return to the [`ScenePhase.active`](./active.md) phase from the background.
 
 Expect an app that enters the `background` phase to terminate.
 
 ## See Also
 
-- [ScenePhase.active](scenephase/active.md)
+### Getting scene phases
+- [ScenePhase.active](./active.md)
   The scene is in the foreground and interactive.
-- [ScenePhase.inactive](scenephase/inactive.md)
+- [ScenePhase.inactive](./inactive.md)
   The scene is in the foreground but should pause its work.
 
 

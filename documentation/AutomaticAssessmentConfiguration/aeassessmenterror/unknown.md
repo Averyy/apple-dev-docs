@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The session encountered an unknown error.
 
@@ -19,9 +20,10 @@ static var unknown: AEAssessmentError.Code { get }
 
 ## See Also
 
-- [static var unsupportedPlatform: AEAssessmentError.Code](aeassessmenterror/unsupportedplatform.md)
+### Error codes
+- [static var unsupportedPlatform: AEAssessmentError.Code](./unsupportedplatform.md)
   The feature isn’t supported on this platform.
-- [AEAssessmentError.Code](aeassessmenterror/code.md)
+- [AEAssessmentError.Code](./code.md)
   Error codes that the framework returns if a session fails.
 
 

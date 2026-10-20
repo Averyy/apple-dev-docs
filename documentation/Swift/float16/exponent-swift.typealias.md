@@ -1,7 +1,8 @@
 # Float16.Exponent
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that can represent any written exponent.
 

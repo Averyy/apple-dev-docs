@@ -1,17 +1,22 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a view using from data in the specified coder object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(coder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
 #### Return Value
@@ -24,9 +29,10 @@ An initialized view or `nil` if AppKit couldn’t create the object.
 
 ## See Also
 
-- [init(frame: NSRect)](nsview/init(frame:).md)
+### Creating a view object
+- [init(frame: NSRect)](./init%28frame%29.md)
   Initializes and returns a newly allocated `NSView` object with a specified frame rectangle.
-- [func prepareForReuse()](nsview/prepareforreuse.md)
+- [func prepareForReuse()](./prepareforreuse%28%29.md)
   Restores the view to an initial state so that it can be reused.
 
 

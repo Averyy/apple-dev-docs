@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The coordinates that represent the starting point for estimated arrival time requests.
 
@@ -10,13 +11,14 @@ The coordinates that represent the starting point for estimated arrival time req
 
 ## Declaration
 
-```swift
+```
 origin: Coordinate;
 ```
 
 ## See Also
 
-- [etas](etaresponse/etas.md)
+### Estimated Arrival Time Responses
+- [etas](./etas.md)
   An array of estimated arrival times.
 
 

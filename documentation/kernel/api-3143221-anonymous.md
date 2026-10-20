@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBDeviceCapabilityDescriptorLengthMin](3143221-anonymous/kiousbdevicecapabilitydescriptorlengthmin.md)
-- [kIOUSBDeviceCapabilityDescriptorType](3143221-anonymous/kiousbdevicecapabilitydescriptortype.md)
+- [kIOUSBDeviceCapabilityDescriptorLengthMin](./api-3143221-anonymous/kiousbdevicecapabilitydescriptorlengthmin.md)
+- [kIOUSBDeviceCapabilityDescriptorType](./api-3143221-anonymous/kiousbdevicecapabilitydescriptortype.md)
 
 
 ---

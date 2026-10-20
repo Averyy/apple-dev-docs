@@ -1,7 +1,8 @@
 # BAErrorCode
 
 **Framework**: Background Assets  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -17,46 +18,51 @@
 enum BAErrorCode
 ```
 
+```c
+enum BAErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [BAErrorCode.callFromExtensionNotAllowed](baerrorcode/callfromextensionnotallowed.md)
-- [BAErrorCode.callFromInactiveProcessNotAllowed](baerrorcode/callfrominactiveprocessnotallowed.md)
-- [BAErrorCode.callerConnectionInvalid](baerrorcode/callerconnectioninvalid.md)
-- [BAErrorCode.callerConnectionNotAccepted](baerrorcode/callerconnectionnotaccepted.md)
-- [BAErrorCode.downloadAlreadyFailed](baerrorcode/downloadalreadyfailed.md)
-- [BAErrorCode.downloadAlreadyScheduled](baerrorcode/downloadalreadyscheduled.md)
-- [BAErrorCode.downloadBackgroundActivityProhibited](baerrorcode/downloadbackgroundactivityprohibited.md)
-- [BAErrorCode.downloadEssentialDownloadNotPermitted](baerrorcode/downloadessentialdownloadnotpermitted.md)
-- [BAErrorCode.downloadFailedToStart](baerrorcode/downloadfailedtostart.md)
-- [BAErrorCode.downloadInvalid](baerrorcode/downloadinvalid.md)
-- [BAErrorCode.downloadNotScheduled](baerrorcode/downloadnotscheduled.md)
-- [BAErrorCode.downloadWouldExceedAllowance](baerrorcode/downloadwouldexceedallowance.md)
-- [BAErrorCode.sessionDownloadAllowanceExceeded](baerrorcode/sessiondownloadallowanceexceeded.md)
-- [BAErrorCode.sessionDownloadDisallowedByAllowance](baerrorcode/sessiondownloaddisallowedbyallowance.md)
-- [BAErrorCode.sessionDownloadDisallowedByDomain](baerrorcode/sessiondownloaddisallowedbydomain.md)
-- [BAErrorCode.sessionDownloadNotPermittedBeforeAppLaunch](baerrorcode/sessiondownloadnotpermittedbeforeapplaunch.md)
+- [BAErrorCode.callFromExtensionNotAllowed](./baerrorcode/callfromextensionnotallowed.md)
+- [BAErrorCode.callFromInactiveProcessNotAllowed](./baerrorcode/callfrominactiveprocessnotallowed.md)
+- [BAErrorCode.callerConnectionInvalid](./baerrorcode/callerconnectioninvalid.md)
+- [BAErrorCode.callerConnectionNotAccepted](./baerrorcode/callerconnectionnotaccepted.md)
+- [BAErrorCode.downloadAlreadyFailed](./baerrorcode/downloadalreadyfailed.md)
+- [BAErrorCode.downloadAlreadyScheduled](./baerrorcode/downloadalreadyscheduled.md)
+- [BAErrorCode.downloadBackgroundActivityProhibited](./baerrorcode/downloadbackgroundactivityprohibited.md)
+- [BAErrorCode.downloadEssentialDownloadNotPermitted](./baerrorcode/downloadessentialdownloadnotpermitted.md)
+- [BAErrorCode.downloadFailedToStart](./baerrorcode/downloadfailedtostart.md)
+- [BAErrorCode.downloadInvalid](./baerrorcode/downloadinvalid.md)
+- [BAErrorCode.downloadNotScheduled](./baerrorcode/downloadnotscheduled.md)
+- [BAErrorCode.downloadWouldExceedAllowance](./baerrorcode/downloadwouldexceedallowance.md)
+- [BAErrorCode.sessionDownloadAllowanceExceeded](./baerrorcode/sessiondownloadallowanceexceeded.md)
+- [BAErrorCode.sessionDownloadDisallowedByAllowance](./baerrorcode/sessiondownloaddisallowedbyallowance.md)
+- [BAErrorCode.sessionDownloadDisallowedByDomain](./baerrorcode/sessiondownloaddisallowedbydomain.md)
+- [BAErrorCode.sessionDownloadNotPermittedBeforeAppLaunch](./baerrorcode/sessiondownloadnotpermittedbeforeapplaunch.md)
 ### Initializers
-- [init?(rawValue: Int)](baerrorcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./baerrorcode/init%28rawvalue%29.md)
 ### Enumeration Cases
-- [BAErrorCode.downloadDoesNotExist](baerrorcode/downloaddoesnotexist.md)
+- [BAErrorCode.downloadDoesNotExist](./baerrorcode/downloaddoesnotexist.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
+### Errors
+- [enum ManagedBackgroundAssetsError](./managedbackgroundassetserror.md)
   An error for a managed asset pack.
-- [let BAErrorDomain: String](baerrordomain.md)
-- [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
+- [let BAErrorDomain: String](./baerrordomain.md)
+- [AssetPackManager.LocalAvailabilityError](./assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
 
 

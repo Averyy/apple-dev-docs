@@ -1,7 +1,8 @@
 # deviceType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of device, such as a built-in microphone or wide-angle camera.
 
@@ -18,25 +19,30 @@ The type of device, such as a built-in microphone or wide-angle camera.
 var deviceType: AVCaptureDevice.DeviceType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDeviceType deviceType;
+```
+
 #### Discussion
 
-Use the [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) method or the [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) class to find capture devices by device type.
+Use the [`default(_:for:position:)`](./default%28_,for,position%29.md) method or the [`AVCaptureDevice.DiscoverySession`](./discoverysession.md) class to find capture devices by device type.
 
 ## See Also
 
-- [var uniqueID: String](avcapturedevice/uniqueid.md)
+### Identifying a device
+- [var uniqueID: String](./uniqueid.md)
   An identifier that uniquely identifies the device.
-- [var modelID: String](avcapturedevice/modelid.md)
+- [var modelID: String](./modelid.md)
   A model identifier for the device.
-- [var localizedName: String](avcapturedevice/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   A localized device name for display in the user interface.
-- [var manufacturer: String](avcapturedevice/manufacturer.md)
+- [var manufacturer: String](./manufacturer.md)
   A human-readable string for the manufacturer of the device.
-- [AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct.md)
+- [AVCaptureDevice.DeviceType](./devicetype-swift.struct.md)
   A structure that defines the device types the framework supports.
-- [var position: AVCaptureDevice.Position](avcapturedevice/position-swift.property.md)
+- [var position: AVCaptureDevice.Position](./position-swift.property.md)
   The physical position of the capture device hardware.
-- [AVCaptureDevice.Position](avcapturedevice/position-swift.enum.md)
+- [AVCaptureDevice.Position](./position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 
 

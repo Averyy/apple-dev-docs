@@ -1,7 +1,8 @@
 # signalConfig
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 kIOAnalogSetupExpected set if display expects a blank-to-black setup or pedestal. See VESA signal standards.
 
@@ -10,7 +11,7 @@ kIOAnalogSetupExpected set if display expects a blank-to-black setup or pedestal
 
 ## Declaration
 
-```swift
+```c
 UInt32 signalConfig;
 ```
 

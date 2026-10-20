@@ -1,23 +1,24 @@
 # FindPCICapability
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Search the configuration space for a PCI capability register.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t FindPCICapability(uint32_t capabilityID, uint64_t searchOffset, uint64_t *foundCapabilityOffset);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
@@ -27,11 +28,12 @@ virtual kern_return_t FindPCICapability(uint32_t capabilityID, uint64_t searchOf
 
 ## See Also
 
-- [GetBusDeviceFunction](iopcidevice/getbusdevicefunction.md)
+### Getting Device Information
+- [GetBusDeviceFunction](./getbusdevicefunction.md)
   Returns the device’s bus, device, and function numbers.
-- [PCI Capabilities](pci-capabilities-enum.md)
+- [PCI Capabilities](../pci-capabilities-enum.md)
   Constants that you use to get the capabilities of the PCI device.
-- [Slot Capabilities](slot-capabilities-enum.md)
+- [Slot Capabilities](../slot-capabilities-enum.md)
   Constants that you use to get the slot-related capabilities of the PCI device.
 
 

@@ -1,7 +1,8 @@
 # content
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type and related value of the text item.
 
@@ -9,7 +10,7 @@ The content type and related value of the text item.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ The content type and related value of the text item.
 
 ## See Also
 
-- [UITextItem.Content](uitextitem/content-swift.enum.md)
+### Specifying the content type
+- [UITextItem.Content](./content-swift.enum.md)
   Constants that describe and capture the type of content a text item represents along with a specific related value.
 
 

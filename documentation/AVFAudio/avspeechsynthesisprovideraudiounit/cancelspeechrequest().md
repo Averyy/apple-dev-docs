@@ -1,7 +1,8 @@
 # cancelSpeechRequest()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the audio unit to discard the speech request.
 
@@ -17,6 +18,10 @@ Informs the audio unit to discard the speech request.
 
 ```swift
 func cancelSpeechRequest()
+```
+
+```objc
+- (void) cancelSpeechRequest;
 ```
 
 

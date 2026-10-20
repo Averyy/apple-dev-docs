@@ -1,6 +1,8 @@
 # Rendering reflections with fewer render passes
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [RenderingReflectionsWithFewerRenderPasses.zip](https://docs-assets.developer.apple.com/published/251f6b50b864/RenderingReflectionsWithFewerRenderPasses.zip)
 
 Use layer selection to reduce the number of render passes needed to generate an environment map.
 
@@ -15,19 +17,19 @@ Use layer selection to reduce the number of render passes needed to generate an 
 
 This sample demonstrates dynamic reflections on a chrome sphere, using layer selection to render the frame in two passes. The first pass renders the environment onto the cube map. The second pass renders the environment reflections onto the sphere; it renders additional actors in the scene; and it renders the environment itself.
 
-![Reflections with Layer Selection](/images/com.apple.metal/reflections-with-layer-selection-1-ReflectionsWithLayerSelections.png)
+![Reflections with Layer Selection](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-1-ReflectionsWithLayerSelections.png)
 
 You can implement an object that reflects its environment by sampling its reflections from a cube map of the environment. A cube map is a single texture composed of six 2D texture layers arranged in the shape of a cube. The reflections vary based on the positions of other objects in the environment, so each of the cube map’s six faces needs to be rendered dynamically in every frame. This would normally require six separate render passes, one for each face, but Metal allows you to render an entire cube map in a single pass.
 
-![Render Passes](/images/com.apple.metal/reflections-with-layer-selection-2-RenderPasses.png)
+![Render Passes](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-2-RenderPasses.png)
 
-##### Getting Started
+##### Getting started
 
 This sample contains macOS and iOS targets. Run the iOS scheme on a physical device because Metal isn’t supported in the simulator.
 
-Layer Selection is supported on all macOS GPUs but only iOS GPUs which support the [`MTLFeatureSet.iOS_GPUFamily5_v1`](mtlfeatureset/ios_gpufamily5_v1.md) feature set.
+Layer Selection is supported on all macOS GPUs but only iOS GPUs which support the [`MTLFeatureSet.iOS_GPUFamily5_v1`](./mtlfeatureset/ios_gpufamily5_v1.md) feature set.
 
-You check the GPU that you choose at runtime supports indirect command buffers (ICBs) by calling an [`MTLDevice`](mtldevice.md) instance’s [`supportsFeatureSet(_:)`](mtldevice/supportsfeatureset(_:).md) method.
+You check the GPU that you choose at runtime supports indirect command buffers (ICBs) by calling an [`MTLDevice`](./mtldevice.md) instance’s [`supportsFeatureSet(_:)`](./mtldevice/supportsfeatureset%28_%29.md) method.
 
 ```objective-c
 supportsLayerSelection = [_view.device supportsFeatureSet:MTLFeatureSet_iOS_GPUFamily5_v1];
@@ -35,13 +37,13 @@ supportsLayerSelection = [_view.device supportsFeatureSet:MTLFeatureSet_iOS_GPUF
 
 This sample calls ‘supportsFeatureSet:’ for this purpose within its view controller’s `viewDidLoad:` callback.
 
-##### Separate the Scene
+##### Separate the scene
 
 A cube map is represented as a render target array with six layers, one for each of its faces. The `[[render_target_array_index]]` attribute qualifier, specified for a structure member of a vertex function return value, identifies each array layer separately. This layer selection feature allows the sample to decide which part of the environment gets rendered to which cube map face.
 
 An `AAPLActorData` object represents an actor in the scene. In this sample, each actor is a temple model with the same mesh data but a different diffuse color. These actors sit on the XZ-plane; they’re always reflected in the X or Z direction relative to the sphere and could be rendered to any of the +X, -X, +Z, or -Z faces of the cube map.
 
-##### Perform Culling Tests for the Reflection Pass
+##### Perform culling tests for the reflection pass
 
 Before rendering to the cube map, it’s useful to know which faces each actor should be rendered to. Determining this information involves a procedure known as a *culling test*, and it’s performed on each actor for each cube map face.
 
@@ -80,9 +82,9 @@ if (_actorData[actorIdx].passFlags & EPassFlags::Reflection)
 
 The following diagram shows the results of the culling tests performed on the temple actors, based on their positions relative to the reflective sphere. Because `_actorData[0]` and `actorData[1]` bisect two viewing frustums, their `instanceCount` property is set to 2, and there are two elements in their `instanceParams` array. (This array contains the cube map face indices of the viewing frustums that the actors intersect.)
 
-![Face Culling and Face Index Assignment](/images/com.apple.metal/reflections-with-layer-selection-3-CullingAndFaceIdxSelection.png)
+![Face Culling and Face Index Assignment](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-3-CullingAndFaceIdxSelection.png)
 
-##### Configure Render Targets for the Reflection Pass
+##### Configure render targets for the reflection pass
 
 The render target for the reflection pass is a cube map. The sample configures the render target by using a `MTLRenderPassDescriptor` object with a color render target, a depth render target, and six layers. The `renderTargetArrayLength` property sets the number of cube map faces and allows the render pipeline to render into any or all of them.
 
@@ -92,7 +94,7 @@ reflectionPassDesc.depthAttachment.texture        = _reflectionCubeMapDepth;
 reflectionPassDesc.renderTargetArrayLength        = 6;
 ```
 
-##### Issue Draw Calls for the Reflection Pass
+##### Issue draw calls for the reflection pass
 
 The `drawActors:pass:` method sets up the graphics rendering state for each actor. Actors are only drawn if they are visible in any of the six cube map faces, determined by the `visibleVpCount` value (accessed through the `instanceCountInReflection` property). The value of `visibleVpCount` determines the number of instances for the instanced draw call.
 
@@ -109,7 +111,7 @@ The `drawActors:pass:` method sets up the graphics rendering state for each acto
 
 In this draw call, the sample sets the `baseInstance` parameter to the value of `actorIdx * 5`. This setting is important because it tells the vertex function how to select the appropriate render target layer for each instance.
 
-##### Render the Reflection Pass
+##### Render the reflection pass
 
 In the `vertexTransform` vertex function, the `instanceParams` argument points to the buffer that contains the cube map faces that each actor should be rendered to. The `instanceId` value indexes into the `instanceParams` array.
 
@@ -145,9 +147,9 @@ out.face = instanceParams[instanceId].viewportIndex;
 
 In summary, to render each actor to the reflective cube map, the sample issues an instanced draw call for the actor. The vertex function uses the built-in `instanceId` variable to index into the `instanceParams` array that contains the index of the cube map face that the instance should be rendered to. Therefore, the vertex function sets this face index in the `face` return value member, which uses the `[[render_target_array_index]]` attribute qualifier. This ensures that each actor is rendered to each cube map face it should appear in.
 
-![Instanced Draw with render_target_array_index](/images/com.apple.metal/reflections-with-layer-selection-4-InstancedRenderingWithTargetIndex.png)
+![Instanced Draw with render_target_array_index](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-4-InstancedRenderingWithTargetIndex.png)
 
-##### Perform Culling Tests for the Final Pass
+##### Perform culling tests for the final pass
 
 The sample performs similar view updates for the main camera in the final pass. At the start of every frame, a view matrix is calculated and the view’s frustum is stored in the `culler_final` variable.
 
@@ -183,7 +185,7 @@ else
 }
 ```
 
-##### Configure Render Targets for the Final Pass
+##### Configure render targets for the final pass
 
 The render target for the final pass is the view’s *drawable*, a displayable resource obtained by accessing the view’s `currentRenderPassDescriptor` property. However, don’t access this property prematurely because it implicitly retrieves a drawable. Drawables are expensive system resources created and maintained by the Core Animation framework. Hold a drawable as briefly as possible to avoid resource stalls. In this sample, a drawable is acquired just before the final render pass is encoded.
 
@@ -203,13 +205,13 @@ if(finalPassDescriptor != nil)
 }
 ```
 
-##### Issue Draw Calls for the Final Pass
+##### Issue draw calls for the final pass
 
 The `drawActors:pass`: method sets up the graphics rendering state for each actor. Actors are only drawn if they are visible to the main camera, as determined by the `visibleVpCount` value (accessed through the `visibleInFinal` property).
 
 Because each actor is drawn only once in the final pass, the `instanceCount` parameter is always set to 1 and the `baseInstance` parameter is always set to 0.
 
-##### Render the Final Pass
+##### Render the final pass
 
 The final pass renders the final frame directly to the view’s drawable, which is then presented onscreen.
 
@@ -219,13 +221,14 @@ The final pass renders the final frame directly to the view’s drawable, which 
 
 ## See Also
 
-- [Rendering a scene with forward plus lighting using tile shaders](rendering-a-scene-with-forward-plus-lighting-using-tile-shaders.md)
+### Lighting techniques
+- [Rendering a scene with forward plus lighting using tile shaders](./rendering-a-scene-with-forward-plus-lighting-using-tile-shaders.md)
   Implement a forward plus renderer using the latest features on Apple GPUs.
-- [Rendering a scene with deferred lighting in Objective-C](rendering-a-scene-with-deferred-lighting-in-objective-c.md)
+- [Rendering a scene with deferred lighting in Objective-C](./rendering-a-scene-with-deferred-lighting-in-objective-c.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a scene with deferred lighting in Swift](rendering-a-scene-with-deferred-lighting-in-swift.md)
+- [Rendering a scene with deferred lighting in Swift](./rendering-a-scene-with-deferred-lighting-in-swift.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a scene with deferred lighting in C++](rendering-a-scene-with-deferred-lighting-in-c++.md)
+- [Rendering a scene with deferred lighting in C++](./rendering-a-scene-with-deferred-lighting-in-cplusplus.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
 
 

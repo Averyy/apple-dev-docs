@@ -1,7 +1,8 @@
 # MusicVideos.Views.MusicVideosMoreByArtistView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 More content of some other type by the artist.
 
@@ -10,7 +11,7 @@ More content of some other type by the artist.
 
 ## Declaration
 
-```swift
+```
 object MusicVideos.Views.MusicVideosMoreByArtistView.Attributes
 ```
 

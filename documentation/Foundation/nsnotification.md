@@ -1,7 +1,8 @@
 # NSNotification
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for information broadcast through a notification center to all registered observers.
 
@@ -20,64 +21,69 @@ A container for information broadcast through a notification center to all regis
 class NSNotification
 ```
 
+```objc
+@interface NSNotification : NSObject
+```
+
 #### Overview
 
-In Swift, this object bridges to [`Notification`](notification.md); use [`NSNotification`](nsnotification.md) when you need reference semantics or other Foundation-specific behavior.
+In Swift, this object bridges to [`Notification`](./notification.md); use [`NSNotification`](./nsnotification.md) when you need reference semantics or other Foundation-specific behavior.
 
-A notification contains a name, an object, and an optional dictionary, and is broadcast to by instances of  [`NotificationCenter`](notificationcenter.md) or [`DistributedNotificationCenter`](distributednotificationcenter.md). The name is a tag identifying the notification. The object is any object that the poster of the notification wants to send to observers of that notification (typically, the object posting the notification). The dictionary stores other related objects, if any. [`NSNotification`](nsnotification.md) objects are immutable.
+A notification contains a name, an object, and an optional dictionary, and is broadcast to by instances of  [`NotificationCenter`](./notificationcenter.md) or [`DistributedNotificationCenter`](./distributednotificationcenter.md). The name is a tag identifying the notification. The object is any object that the poster of the notification wants to send to observers of that notification (typically, the object posting the notification). The dictionary stores other related objects, if any. [`NSNotification`](./nsnotification.md) objects are immutable.
 
-You don’t usually create your own notifications directly, but instead call the [`NotificationCenter`](notificationcenter.md) methods [`post(name:object:)`](notificationcenter/post(name:object:).md) and [`post(name:object:userInfo:)`](notificationcenter/post(name:object:userinfo:).md).
+You don’t usually create your own notifications directly, but instead call the [`NotificationCenter`](./notificationcenter.md) methods [`post(name:object:)`](./notificationcenter/post%28name,object%29.md) and [`post(name:object:userInfo:)`](./notificationcenter/post%28name,object,userinfo%29.md).
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Notification`](notification.md) structure, which bridges to the [`NSNotification`](nsnotification.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Notification`](./notification.md) structure, which bridges to the [`NSNotification`](./nsnotification.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
 ##### Object Comparison
 
-The objects of a notification are compared using pointer equality for local notifications. Distributed notifications use strings as their objects, and those strings are compared using [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)), because pointer equality doesn’t make sense across process boundaries.
+The objects of a notification are compared using pointer equality for local notifications. Distributed notifications use strings as their objects, and those strings are compared using [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md), because pointer equality doesn’t make sense across process boundaries.
 
 ##### Creating Subclasses
 
-You can subclass [`NSNotification`](nsnotification.md) to contain information in addition to the notification name, object, and dictionary. This extra data must be agreed upon between notifiers and observers.
+You can subclass [`NSNotification`](./nsnotification.md) to contain information in addition to the notification name, object, and dictionary. This extra data must be agreed upon between notifiers and observers.
 
-[`NotificationCenter`](notificationcenter.md) is a class cluster with no instance variables. As such, you must subclass [`NSNotification`](nsnotification.md) and override the primitive methods [`name`](nsnotification/name-swift.property.md), [`object`](nsnotification/object.md), and [`userInfo`](nsnotification/userinfo.md). You can choose any designated initializer you like, but be sure that your initializer does not call [`init`](nsnotification/init.md) on `super` ([`NSNotification`](nsnotification.md) is not meant to be instantiated directly, and its `init` method raises an exception).
+[`NotificationCenter`](./notificationcenter.md) is a class cluster with no instance variables. As such, you must subclass [`NSNotification`](./nsnotification.md) and override the primitive methods [`name`](./nsnotification/name-swift.property.md), [`object`](./nsnotification/object.md), and [`userInfo`](./nsnotification/userinfo.md). You can choose any designated initializer you like, but be sure that your initializer does not call [`init`](./nsnotification/init.md) on `super` ([`NSNotification`](./nsnotification.md) is not meant to be instantiated directly, and its `init` method raises an exception).
 
 ## Topics
 
 ### Creating Notifications
-- [init?(coder: NSCoder)](nsnotification/init(coder:).md)
+- [init?(coder: NSCoder)](./nsnotification/init%28coder%29.md)
   Initializes a notification with the data from an unarchiver.
-- [convenience init(name: NSNotification.Name, object: Any?)](nsnotification/init(name:object:).md)
+- [convenience init(name: NSNotification.Name, object: Any?)](./nsnotification/init%28name,object%29.md)
   Returns a new notification object with a specified name and object.
-- [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](nsnotification/init(name:object:userinfo:).md)
+- [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./nsnotification/init%28name,object,userinfo%29.md)
   Initializes a notification with a specified name, object, and user information.
-- [NSNotification.Name](nsnotification/name-swift.struct.md)
+- [NSNotification.Name](./nsnotification/name-swift.struct.md)
   A structure that defines the name of a notification.
 ### Getting Notification Information
-- [var name: NSNotification.Name](nsnotification/name-swift.property.md)
+- [var name: NSNotification.Name](./nsnotification/name-swift.property.md)
   The name of the notification.
-- [var object: Any?](nsnotification/object.md)
+- [var object: Any?](./nsnotification/object.md)
   The object associated with the notification.
-- [var userInfo: [AnyHashable : Any]?](nsnotification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./nsnotification/userinfo.md)
   The user information dictionary associated with the notification.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Notification Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
+### Related Documentation
+- [Notification Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
 
 
 ---

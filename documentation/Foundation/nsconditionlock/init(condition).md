@@ -1,7 +1,8 @@
 # init(condition:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated `NSConditionLock` object and sets its condition.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated `NSConditionLock` object and sets its condition.
 init(condition: Int)
 ```
 
+```objc
+- (instancetype) initWithCondition:(NSInteger) condition;
+```
+
 #### Return Value
 
 An initialized condition lock object; may be different than the original receiver.
@@ -30,7 +35,8 @@ An initialized condition lock object; may be different than the original receive
 
 ## See Also
 
-- [Threading Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
+### Related Documentation
+- [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
 
 
 ---

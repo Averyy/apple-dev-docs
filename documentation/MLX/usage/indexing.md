@@ -6,38 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/usage/indexing.html
 
 # Indexing Arrays
 
-**
-
-- [.rst](../_sources/usage/indexing.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Indexing Arrays
-
- Table of contents 
-
-## Contents
-
-# Indexing Arrays
-
-For the most part, indexing an MLX [array](../python/_autosummary/mlx.core.array.html#mlx.core.array) works the same as indexing a
-NumPy [numpy.ndarray](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray). See the [NumPy documentation](https://numpy.org/doc/stable/user/basics.indexing.md) for more details on
+For the most part, indexing an MLX [array](../python/_autosummary/mlx.core.array.md#mlx.core.array) works the same as indexing a
+NumPy [numpy.ndarray](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray). See the [NumPy documentation](https://numpy.org/doc/stable/user/basics.indexing.html) for more details on
 how that works.
 
-For example, you can use regular integers and slices ([slice](../python/_autosummary/mlx.core.slice.html#mlx.core.slice)) to index arrays:
+For example, you can use regular integers and slices ([slice](../python/_autosummary/mlx.core.slice.md#mlx.core.slice)) to index arrays:
 
 ```
 >>> arr = mx.arange(10)
@@ -71,7 +44,7 @@ You can index with `None` to create a new axis:
 (1, 8)
 ```
 
-You can also use an [array](../python/_autosummary/mlx.core.array.html#mlx.core.array) to index another [array](../python/_autosummary/mlx.core.array.html#mlx.core.array):
+You can also use an [array](../python/_autosummary/mlx.core.array.md#mlx.core.array) to index another [array](../python/_autosummary/mlx.core.array.md#mlx.core.array):
 
 ```
 >>> arr = mx.arange(10)
@@ -80,11 +53,11 @@ You can also use an [array](../python/_autosummary/mlx.core.array.html#mlx.core.
 array([5, 7], dtype=int32)
 ```
 
-Mixing and matching integers, [slice](../python/_autosummary/mlx.core.slice.html#mlx.core.slice), `...`, and [array](../python/_autosummary/mlx.core.array.html#mlx.core.array) indices
+Mixing and matching integers, [slice](../python/_autosummary/mlx.core.slice.md#mlx.core.slice), `...`, and [array](../python/_autosummary/mlx.core.array.md#mlx.core.array) indices
 works just as in NumPy.
 
-Other functions which may be useful for indexing arrays are [take()](../python/_autosummary/mlx.core.take.html#mlx.core.take) and
-[take_along_axis()](../python/_autosummary/mlx.core.take_along_axis.html#mlx.core.take_along_axis).
+Other functions which may be useful for indexing arrays are [take()](../python/_autosummary/mlx.core.take.md#mlx.core.take) and
+[take_along_axis()](../python/_autosummary/mlx.core.take_along_axis.md#mlx.core.take_along_axis).
 
 ## Differences from NumPy
 
@@ -171,7 +144,7 @@ and ones elsewhere.
 ## Boolean Mask Assignment
 
 MLX supports boolean indices using NumPy syntax. A mask must already be
-a `bool_` MLX [array](../python/_autosummary/mlx.core.array.html#mlx.core.array) or a NumPy `ndarray` with `dtype=bool`.
+a `bool_` MLX [array](../python/_autosummary/mlx.core.array.md#mlx.core.array) or a NumPy `ndarray` with `dtype=bool`.
 Other index types are routed through the standard scatter code.
 
 ```
@@ -212,5 +185,3 @@ The mask of shape `(10, 10)` applies to the first two axes, so `a[mask]`
 selects the 1-D slices `a[i, j, :]` where `mask[i, j]` is `True`.
 Shapes such as `(1, 10, 10)` or `(10, 10, 1)` do not match the indexed
 axes and therefore raise errors.
-
-** Contents

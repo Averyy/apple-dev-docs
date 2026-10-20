@@ -1,23 +1,28 @@
 # NSPersistentStoreAsynchronousFetchResultCompletionBlock
 
 **Framework**: Core Data  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A completion block that an asynchronous fetch request calls with a result.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias NSPersistentStoreAsynchronousFetchResultCompletionBlock = (NSAsynchronousFetchResult<any NSFetchRequestResult>) -> Void
+```
+
+```c
+typedef void (^)(NSAsynchronousFetchResult *) NSPersistentStoreAsynchronousFetchResultCompletionBlock;
 ```
 
 ## Parameters

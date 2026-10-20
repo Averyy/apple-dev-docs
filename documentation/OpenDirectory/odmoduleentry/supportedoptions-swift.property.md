@@ -1,16 +1,21 @@
 # supportedOptions
 
 **Framework**: Open Directory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
 
 ```swift
 var supportedOptions: [Any]! { get }
+```
+
+```objc
+@property (copy, readonly) NSArray * supportedOptions;
 ```
 
 

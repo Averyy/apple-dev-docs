@@ -1,7 +1,8 @@
 # CPMessageGridItemConfiguration
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -14,26 +15,30 @@
 class CPMessageGridItemConfiguration
 ```
 
+```objc
+@interface CPMessageGridItemConfiguration : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(conversationIdentifier: String, unread: Bool)](cpmessagegriditemconfiguration/init(conversationidentifier:unread:).md)
+- [init(conversationIdentifier: String, unread: Bool)](./cpmessagegriditemconfiguration/init%28conversationidentifier,unread%29.md)
   Initialize a @c CPMessageGridItemConfiguration for use in a @c CPListTemplate.
 ### Instance Properties
-- [var conversationIdentifier: String](cpmessagegriditemconfiguration/conversationidentifier.md)
-- [var isUnread: Bool](cpmessagegriditemconfiguration/isunread.md)
+- [var conversationIdentifier: String](./cpmessagegriditemconfiguration/conversationidentifier.md)
+- [var isUnread: Bool](./cpmessagegriditemconfiguration/isunread.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

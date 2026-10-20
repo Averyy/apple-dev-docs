@@ -1,7 +1,8 @@
 # init(sourceFrame:previousFrame:previousOutputFrame:opticalFlow:submissionMode:destinationFrame:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new super-resolution scaler parameters instance.
 
@@ -17,6 +18,10 @@ Creates a new super-resolution scaler parameters instance.
 init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame?, previousOutputFrame: VTFrameProcessorFrame?, opticalFlow: VTFrameProcessorOpticalFlow?, submissionMode: VTSuperResolutionScalerParameters.SubmissionMode, destinationFrame: VTFrameProcessorFrame)
 ```
 
+```objc
+- (instancetype) initWithSourceFrame:(VTFrameProcessorFrame *) sourceFrame previousFrame:(VTFrameProcessorFrame *) previousFrame previousOutputFrame:(VTFrameProcessorFrame *) previousOutputFrame opticalFlow:(VTFrameProcessorOpticalFlow *) opticalFlow submissionMode:(VTSuperResolutionScalerParametersSubmissionMode) submissionMode destinationFrame:(VTFrameProcessorFrame *) destinationFrame;
+```
+
 #### Discussion
 
 Returns `nil` if `sourceFrame` or `destinationFrame` is `nil`, or if `sourceFrame` and reference frames have different pixel formats.
@@ -27,7 +32,7 @@ Returns `nil` if `sourceFrame` or `destinationFrame` is `nil`, or if `sourceFram
 - `previousFrame`: The previous source frame in presentation time order. For the first frame you can set this to `nil`.
 - `previousOutputFrame`: The previous output frame in presentation time order. For the first frame you can set this to `nil`.
 - `opticalFlow`: Optional `VTFrameProcessorOpticalFlow` object that contains forward and backward optical flow between the `sourceFrame` and `previousFrame`. You only need this if optical flow is pre-computed.
-- `submissionMode`: Provides a hint to let the processor know whether you are submitting frames in presentation sequence. For more information about supported modes see [`VTSuperResolutionScalerParameters.SubmissionMode`](vtsuperresolutionscalerparameters/submissionmode-swift.enum.md).
+- `submissionMode`: Provides a hint to let the processor know whether you are submitting frames in presentation sequence. For more information about supported modes see [`VTSuperResolutionScalerParameters.SubmissionMode`](./submissionmode-swift.enum.md).
 - `destinationFrame`: User-allocated pixel buffer that receives the results.
 
 

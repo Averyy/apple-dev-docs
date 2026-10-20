@@ -1,12 +1,13 @@
 # NSMatrixDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The `NSMatrixDelegate` protocol defines the optional methods implemented by delegates of `NSMatrix` objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,27 @@ The `NSMatrixDelegate` protocol defines the optional methods implemented by dele
 protocol NSMatrixDelegate : NSControlTextEditingDelegate
 ```
 
+```objc
+@protocol NSMatrixDelegate <NSControlTextEditingDelegate>
+```
+
 #### Overview
 
-This protocol simply adopts the `NSControlTextEditingDelegate` protocol, adding no additional methods. See [`NSControlTextEditingDelegate`](nscontroltexteditingdelegate.md) for more information.
+This protocol simply adopts the `NSControlTextEditingDelegate` protocol, adding no additional methods. See [`NSControlTextEditingDelegate`](./nscontroltexteditingdelegate.md) for more information.
 
 ## Relationships
 
 ### Inherits From
-- [NSControlTextEditingDelegate](nscontroltexteditingdelegate.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSControlTextEditingDelegate](./nscontroltexteditingdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSMatrix](nsmatrix.md)
+### Related Documentation
+- [class NSMatrix](./nsmatrix.md)
   A legacy interface for grouping radio buttons or other types of cells together.
-- [var delegate: (any NSMatrixDelegate)?](nsmatrix/delegate.md)
+### Managing the Delegate
+- [var delegate: (any NSMatrixDelegate)?](./nsmatrix/delegate.md)
   The delegate for messages from the field editor.
 
 

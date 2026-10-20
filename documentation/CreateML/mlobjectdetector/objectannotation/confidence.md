@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object detector’s confidence score for its prediction’s accuracy.
 
@@ -20,9 +21,10 @@ The confidence range is `[0.0, 1.0]`, where `1.0` is the highest possible confid
 
 ## See Also
 
-- [var label: String](mlobjectdetector/objectannotation/label.md)
+### Inspecting an annotation
+- [var label: String](./label.md)
   The name of the item the object detector found in an image.
-- [var boundingBox: CGRect](mlobjectdetector/objectannotation/boundingbox.md)
+- [var boundingBox: CGRect](./boundingbox.md)
   A rectangular region that encloses an item the object detector found in the image.
 
 

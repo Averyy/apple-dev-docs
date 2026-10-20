@@ -1,7 +1,8 @@
 # teamId
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique identifier of the developer team.
 
@@ -10,7 +11,7 @@ Unique identifier of the developer team.
 
 ## Declaration
 
-```swift
+```
 attribute string teamId;
 ```
 

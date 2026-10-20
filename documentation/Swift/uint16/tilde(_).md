@@ -1,7 +1,8 @@
 # ~(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the inverse of the bits set in the argument.
 
@@ -35,7 +36,7 @@ Performing a bitwise NOT operation on 0 returns a value with every bit set to `1
 let allOnes = ~UInt8.min   // 0b11111111
 ```
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 
 ---

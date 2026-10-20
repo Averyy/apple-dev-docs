@@ -11,97 +11,209 @@ framework: HIG
 
 Support right-to-left languages like Arabic and Hebrew by reversing your interface as needed to match the reading direction of the related scripts.
 
-![A sketch of a right-aligned bulleted list within a window, suggesting an interface displayed in a right-to-left language. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](/images/com.apple.HIG/foundations-rtl-intro~dark@2x.png)
+![A sketch of a right-aligned bulleted list within a window, suggesting an interface displayed in a right-to-left language. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://developer.apple.com/tutorials/images/com.apple.HIG/foundations-rtl-intro@2x.png)
+
 When people choose a language for their device — or just your app or game — they expect the interface to adapt in various ways (to learn more, see [Localization](https://developer.apple.com/localization/)).
+
 System-provided UI frameworks support right-to-left (RTL) by default, allowing system-provided UI components to flip automatically in the RTL context. If you use system-provided elements and standard layouts, you might not need to make any changes to your app’s automatically reversed interface.
+
 If you want to fine-tune your layout or enhance specific localizations to adapt to different currencies, numerals, or mathematical symbols that can occur in various locales in countries that use RTL languages, follow these guidelines.
 
 ## Text alignment
 **Adjust text alignment to match the interface direction, if the system doesn’t do so automatically.** For example, if you left-align text with content in the left-to-right (LTR) context, right-align the text to match the content’s mirrored position in the RTL context.
-![An illustration showing a layout of text and images in an interface. Three bars that represent text are left-aligned above a rounded rectangle area. A placeholder image is centered in the area, above another bar at the bottom edge. The bar inside the area is left-aligned.](/images/com.apple.HIG/text-alignment-ltr-screen~dark@2x.png)
-![An illustration showing a layout of text and images in an interface. Three bars that represent text are right-aligned above a rounded rectangle area. A placeholder image is centered in the area, above another bar at the bottom edge. The bar inside the area is right-aligned. The placeholder image isn't flipped.](/images/com.apple.HIG/text-alignment-rtl-screen~dark@2x.png)
+
+![An illustration showing a layout of text and images in an interface. Three bars that represent text are left-aligned above a rounded rectangle area. A placeholder image is centered in the area, above another bar at the bottom edge. The bar inside the area is left-aligned.](https://developer.apple.com/tutorials/images/com.apple.HIG/text-alignment-ltr-screen@2x.png)
+Left-aligned text in the LTR context
+
+![An illustration showing a layout of text and images in an interface. Three bars that represent text are right-aligned above a rounded rectangle area. A placeholder image is centered in the area, above another bar at the bottom edge. The bar inside the area is right-aligned. The placeholder image isn't flipped.](https://developer.apple.com/tutorials/images/com.apple.HIG/text-alignment-rtl-screen@2x.png)
+Right-aligned content in the RTL context
+
 **Align a paragraph based on its language, not on the current context.** When the alignment of a paragraph — defined as three or more lines of text — doesn’t match its language, it can be difficult to read. For example, right-aligning a paragraph that consists of LTR text can make the beginning of each line difficult to see. To improve readability, continue aligning one- and two-line text blocks to match the reading direction of the current context, but align a paragraph to match its language.
-![An image showing two paragraphs of placeholder copy. The first paragraph is in Arabic and is right-aligned. The second paragraph is in English and is left-aligned.](/images/com.apple.HIG/paragraph-alignment-correct~dark@2x.png)
-![A checkmark in a circle to indicate a correct example.](/images/com.apple.HIG/checkmark@2x.png)
-![An image showing two paragraphs of placeholder copy. The first paragraph is in Arabic and the second paragraph is in English. Both paragraphs are right-aligned.](/images/com.apple.HIG/paragraph-alignment-wrong~dark@2x.png)
-![An X in a circle to indicate an incorrect example.](/images/com.apple.HIG/crossout@2x.png)
+
+![An image showing two paragraphs of placeholder copy. The first paragraph is in Arabic and is right-aligned. The second paragraph is in English and is left-aligned.](https://developer.apple.com/tutorials/images/com.apple.HIG/paragraph-alignment-correct@2x.png)
+A left-aligned paragraph in the RTL context
+
+![A checkmark in a circle to indicate a correct example.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark@2x.png)
+
+![An image showing two paragraphs of placeholder copy. The first paragraph is in Arabic and the second paragraph is in English. Both paragraphs are right-aligned.](https://developer.apple.com/tutorials/images/com.apple.HIG/paragraph-alignment-wrong@2x.png)
+A right-aligned paragraph in the RTL context
+
+![An X in a circle to indicate an incorrect example.](https://developer.apple.com/tutorials/images/com.apple.HIG/crossout@2x.png)
+
 **Use a consistent alignment for all text items in a list.** To ensure a comfortable reading and scanning experience, reverse the alignment of all items in a list, including items that are displayed in a different script.
-![An illustration of a right-aligned list of gray bars that represent right-to-left text.](/images/com.apple.HIG/mixed-script-list-alignment-correct~dark@2x.png)
-![A checkmark in a circle to indicate a correct example.](/images/com.apple.HIG/checkmark@2x.png)
-![An illustration of a list of gray bars. The first, third, fourth, and fifth bars represent right-to-left text. The second bar is incorrectly left-aligned.](/images/com.apple.HIG/mixed-script-list-alignment-wrong~dark@2x.png)
-![An X in a circle to indicate an incorrect example.](/images/com.apple.HIG/crossout@2x.png)
+
+![An illustration of a right-aligned list of gray bars that represent right-to-left text.](https://developer.apple.com/tutorials/images/com.apple.HIG/mixed-script-list-alignment-correct@2x.png)
+Right-aligned content in the RTL context
+
+![A checkmark in a circle to indicate a correct example.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark@2x.png)
+
+![An illustration of a list of gray bars. The first, third, fourth, and fifth bars represent right-to-left text. The second bar is incorrectly left-aligned.](https://developer.apple.com/tutorials/images/com.apple.HIG/mixed-script-list-alignment-wrong@2x.png)
+Mixed alignment in the RTL content
+
+![An X in a circle to indicate an incorrect example.](https://developer.apple.com/tutorials/images/com.apple.HIG/crossout@2x.png)
 
 ## Numbers and characters
 Different RTL languages can use different number systems. For example, Hebrew text uses Western Arabic numerals, whereas Arabic text might use either Western or Eastern Arabic numerals. The use of Western and Eastern Arabic numerals varies among countries and regions and even among areas within the same country or region.
+
 If your app covers mathematical concepts or other number-centric topics, it’s a good idea to identify the appropriate way to display such information in each locale you support. In contrast, apps that don’t address number-related topics can generally rely on system-provided number representations.
-![From the left, the numerals one, two, and three in Western Arabic numerals.](/images/com.apple.HIG/textformat-123-ltr~dark@2x.png)
-![From the right, the numerals one, two, and three in Eastern Arabic numerals.](/images/com.apple.HIG/textformat-123-ar~dark@2x.png)
+
+![From the left, the numerals one, two, and three in Western Arabic numerals.](https://developer.apple.com/tutorials/images/com.apple.HIG/textformat-123-ltr@2x.png)
+Western Arabic numerals
+
+![From the right, the numerals one, two, and three in Eastern Arabic numerals.](https://developer.apple.com/tutorials/images/com.apple.HIG/textformat-123-ar@2x.png)
+Eastern Arabic numerals
+
 **Don’t reverse the order of numerals in a specific number.** Regardless of the current language or the surrounding content, the digits in a specific number — such as “541,” a phone number, or a credit card number — always appear in the same order.
-![From the left, the two words order and number followed by the number 123456 in Latin script.](/images/com.apple.HIG/latin-numerals~dark@2x.png)
-![From the right, the two words order and number followed by the number 12345 in Hebrew script.](/images/com.apple.HIG/hebrew-numerals~dark@2x.png)
-![From the right, the two words order and number in Arabic script, followed by the number 12345 in Western Arabic numerals.](/images/com.apple.HIG/western-arabic-numerals~dark@2x.png)
-![From the right, the two words order and number in Arabic script, followed by the number 12345 in Eastern Arabic numerals.](/images/com.apple.HIG/eastern-arabic-numerals~dark@2x.png)
+
+![From the left, the two words order and number followed by the number 123456 in Latin script.](https://developer.apple.com/tutorials/images/com.apple.HIG/latin-numerals@2x.png)
+Latin
+
+![From the right, the two words order and number followed by the number 12345 in Hebrew script.](https://developer.apple.com/tutorials/images/com.apple.HIG/hebrew-numerals@2x.png)
+Hebrew
+
+![From the right, the two words order and number in Arabic script, followed by the number 12345 in Western Arabic numerals.](https://developer.apple.com/tutorials/images/com.apple.HIG/western-arabic-numerals@2x.png)
+Arabic (Western Arabic numerals)
+
+![From the right, the two words order and number in Arabic script, followed by the number 12345 in Eastern Arabic numerals.](https://developer.apple.com/tutorials/images/com.apple.HIG/eastern-arabic-numerals@2x.png)
+Arabic (Eastern Arabic numerals)
+
 **Reverse the order of numerals that show progress or a counting direction; never flip the numerals themselves.** Controls like progress bars, sliders, and rating controls often include numerals to clarify their meaning. If you use numerals in this way, be sure to reverse the order of the numerals to match the direction of the flipped control. Also reverse a sequence of numerals if you use the sequence to communicate a specific order.
-![A horizontal row of five stars. From the left, the first three and a half stars are filled. Below the stars is a row of Latin numerals, each numeral vertically aligned with a star above. From the left, the numerals are one, two, three, four, and five.](/images/com.apple.HIG/match-numeral-order-to-directional-controls-latin~dark@2x.png)
-![A horizontal row of five stars. From the right, the first three and a half stars are filled. Below the stars is a row of Eastern Arabic numerals, each numeral vertically aligned with a star above. From the right, the numerals are one, two, three, four, and five.](/images/com.apple.HIG/match-numeral-order-to-directional-controls-eastern-arabic~dark@2x.png)
-![A horizontal row of five stars. From the right, the first three and a half stars are filled. Below the stars is a row of Western Arabic numerals, each numeral vertically aligned with a star above. From the right, the numerals are one, two, three, four, and five.](/images/com.apple.HIG/match-numeral-order-to-directional-controls-western-arabic-hebrew~dark@2x.png)
-![A horizontal row of five stars. From the right, the first three and a half stars are filled. Below the stars is a row of Western Arabic numerals, each numeral vertically aligned with a star above. From the right, the numerals are one, two, three, four, and five.](/images/com.apple.HIG/match-numeral-order-to-directional-controls-western-arabic-hebrew~dark@2x.png)
+
+![A horizontal row of five stars. From the left, the first three and a half stars are filled. Below the stars is a row of Latin numerals, each numeral vertically aligned with a star above. From the left, the numerals are one, two, three, four, and five.](https://developer.apple.com/tutorials/images/com.apple.HIG/match-numeral-order-to-directional-controls-latin@2x.png)
+Latin
+
+![A horizontal row of five stars. From the right, the first three and a half stars are filled. Below the stars is a row of Eastern Arabic numerals, each numeral vertically aligned with a star above. From the right, the numerals are one, two, three, four, and five.](https://developer.apple.com/tutorials/images/com.apple.HIG/match-numeral-order-to-directional-controls-eastern-arabic@2x.png)
+Arabic (Eastern Arabic numerals)
+
+![A horizontal row of five stars. From the right, the first three and a half stars are filled. Below the stars is a row of Western Arabic numerals, each numeral vertically aligned with a star above. From the right, the numerals are one, two, three, four, and five.](https://developer.apple.com/tutorials/images/com.apple.HIG/match-numeral-order-to-directional-controls-western-arabic-hebrew@2x.png)
+Hebrew
+
+![A horizontal row of five stars. From the right, the first three and a half stars are filled. Below the stars is a row of Western Arabic numerals, each numeral vertically aligned with a star above. From the right, the numerals are one, two, three, four, and five.](https://developer.apple.com/tutorials/images/com.apple.HIG/match-numeral-order-to-directional-controls-western-arabic-hebrew@2x.png)
+Arabic (Western Arabic numerals)
 
 ## Controls
 **Flip controls that show progress from one value to another.** Because people tend to view forward progress as moving in the same direction as the language they read, it makes sense to flip controls like sliders and progress indicators in the RTL context. When you do this, also be sure to reverse the positions of the accompanying glyphs or images that depict the beginning and ending values of the control.
-![An illustration of a volume control slider. The left side has a right-facing speaker glyph with no sound emerging, and the right side has a right-facing speaker glyph with sound waves projecting from it, showing that moving the thumb from left to right makes the volume louder.](/images/com.apple.HIG/flipped-directional-control-ltr~dark@2x.png)
-![An illustration of a volume control slider. The right side has a left-facing speaker glyph with no sound emerging, and the left side has a left-facing speaker glyph with sound waves projecting from it, showing that moving the thumb from right to left makes the volume louder.](/images/com.apple.HIG/flipped-directional-control-rtl~dark@2x.png)
+
+![An illustration of a volume control slider. The left side has a right-facing speaker glyph with no sound emerging, and the right side has a right-facing speaker glyph with sound waves projecting from it, showing that moving the thumb from left to right makes the volume louder.](https://developer.apple.com/tutorials/images/com.apple.HIG/flipped-directional-control-ltr@2x.png)
+A directional control in the LTR context
+
+![An illustration of a volume control slider. The right side has a left-facing speaker glyph with no sound emerging, and the left side has a left-facing speaker glyph with sound waves projecting from it, showing that moving the thumb from right to left makes the volume louder.](https://developer.apple.com/tutorials/images/com.apple.HIG/flipped-directional-control-rtl@2x.png)
+A directional control in the RTL context
+
 **Flip controls that help people navigate or access items in a fixed order.** For example, in the RTL context, a back button must point to the right so the flow of screens matches the reading order of the RTL language. Similarly, next or previous buttons that let people access items in an ordered list need to flip in the RTL context to match the reading order.
+
 **Preserve the direction of a control that refers to an actual direction or points to an onscreen area.** For example, if you provide a control that means “to the right,” it must always point right, regardless of the current context.
+
 **Visually balance adjacent Latin and RTL scripts when necessary.** In buttons, labels, and titles, Arabic or Hebrew text can appear too small when next to uppercased Latin text, because Arabic and Hebrew don’t include uppercase letters. To visually balance Arabic or Hebrew text with Latin text that uses all capitals, it often works well to increase the RTL font size by about 2 points.
-![A horizontal row of three blue oval buttons. Each button is labeled with the word download. From the left, the labels are in Latin, Arabic, and Hebrew scripts, with the English label using all capital letters. Two horizontal red lines run across all three buttons, the top line is the ascender line and the bottom line is the baseline. Every letter in the English label touches both lines. Only the last two letters in the Arabic label touch or extend below the baseline; only the last letter touches the ascender line. No letters in the Hebrew label touch either line. In comparison with the Latin label, both the Arabic and Hebrew labels look small.](/images/com.apple.HIG/download-uneven-vertical-height~dark@2x.png)
-![A horizontal row of three blue oval buttons. Each button is labeled with the word download. From the left, the labels are in Latin, Arabic, and Hebrew scripts, with the English label using all capital letters. Two horizontal red lines run across all three buttons, the top line is the ascender line and the bottom line is the baseline. Every letter in the English label touches both lines. The last two letters in the Arabic label touch or extend below the baseline, and the first and last letters extend above the ascender line. All letters in the Hebrew label touch the base line and the ascender line. The increased size of the Arabic and Hebrew labels make them look similar in size to the Latin label.](/images/com.apple.HIG/download-even-vertical-height~dark@2x.png)
+
+![A horizontal row of three blue oval buttons. Each button is labeled with the word download. From the left, the labels are in Latin, Arabic, and Hebrew scripts, with the English label using all capital letters. Two horizontal red lines run across all three buttons, the top line is the ascender line and the bottom line is the baseline. Every letter in the English label touches both lines. Only the last two letters in the Arabic label touch or extend below the baseline; only the last letter touches the ascender line. No letters in the Hebrew label touch either line. In comparison with the Latin label, both the Arabic and Hebrew labels look small.](https://developer.apple.com/tutorials/images/com.apple.HIG/download-uneven-vertical-height@2x.png)
+Arabic and Hebrew text can look too small next to uppercased Latin text of the same font size.
+
+![A horizontal row of three blue oval buttons. Each button is labeled with the word download. From the left, the labels are in Latin, Arabic, and Hebrew scripts, with the English label using all capital letters. Two horizontal red lines run across all three buttons, the top line is the ascender line and the bottom line is the baseline. Every letter in the English label touches both lines. The last two letters in the Arabic label touch or extend below the baseline, and the first and last letters extend above the ascender line. All letters in the Hebrew label touch the base line and the ascender line. The increased size of the Arabic and Hebrew labels make them look similar in size to the Latin label.](https://developer.apple.com/tutorials/images/com.apple.HIG/download-even-vertical-height@2x.png)
+You can slightly increase the font size of Arabic and Hebrew text to visually balance uppercased Latin text.
 
 ## Images
 **Avoid flipping images like photographs, illustrations, and general artwork.** Flipping an image often changes the image’s meaning; flipping a copyrighted image could be a violation. If an image’s content is strongly connected to reading direction, consider creating a new version of the image instead of flipping the original.
-![A simplified illustration of a globe that uses solid black shapes to show most of Africa, Europe, Asia, Australia, and Antarctica.](/images/com.apple.HIG/image-displayed-right~dark@2x.png)
-![A checkmark in a circle to indicate a correct example.](/images/com.apple.HIG/checkmark@2x.png)
-![A simplified illustration of a globe that shows a horizontally flipped Eastern hemisphere with Africa on the far right and Australia on the far left.](/images/com.apple.HIG/image-displayed-wrong~dark@2x.png)
-![An X in a circle to indicate an incorrect example.](/images/com.apple.HIG/crossout@2x.png)
+
+![A simplified illustration of a globe that uses solid black shapes to show most of Africa, Europe, Asia, Australia, and Antarctica.](https://developer.apple.com/tutorials/images/com.apple.HIG/image-displayed-right@2x.png)
+
+![A checkmark in a circle to indicate a correct example.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark@2x.png)
+
+![A simplified illustration of a globe that shows a horizontally flipped Eastern hemisphere with Africa on the far right and Australia on the far left.](https://developer.apple.com/tutorials/images/com.apple.HIG/image-displayed-wrong@2x.png)
+
+![An X in a circle to indicate an incorrect example.](https://developer.apple.com/tutorials/images/com.apple.HIG/crossout@2x.png)
+
 **Reverse the positions of images when their order is meaningful.** For example, if you display multiple images in a specific order like chronological, alphabetical, or favorite, reverse their positions to preserve the order’s meaning in the RTL context.
-![An illustration showing a layout of text and images within a rounded rectangle. A short bar representing text is left-aligned in the upper-left corner. Below the bar is an area that contains four squares, including a blue square with a placeholder image on the left side. From the left, a row of five square areas at the bottom of the rectangle contain the following shapes: heart, circle, star, square, and triangle.](/images/com.apple.HIG/image-positions-ltr~dark@2x.png)
-![An illustration showing a layout of text and images within a rounded rectangle. A short bar representing text is right-aligned in the upper-right corner. Below the bar is an area that contains four squares, including a blue square with a placeholder image on the right side. From the right, a row of five square areas at the bottom of the rectangle contain the following shapes: heart, circle, star, square, and triangle.](/images/com.apple.HIG/image-positions-rtl~dark@2x.png)
+
+![An illustration showing a layout of text and images within a rounded rectangle. A short bar representing text is left-aligned in the upper-left corner. Below the bar is an area that contains four squares, including a blue square with a placeholder image on the left side. From the left, a row of five square areas at the bottom of the rectangle contain the following shapes: heart, circle, star, square, and triangle.](https://developer.apple.com/tutorials/images/com.apple.HIG/image-positions-ltr@2x.png)
+Items with meaningful positions in the LTR context
+
+![An illustration showing a layout of text and images within a rounded rectangle. A short bar representing text is right-aligned in the upper-right corner. Below the bar is an area that contains four squares, including a blue square with a placeholder image on the right side. From the right, a row of five square areas at the bottom of the rectangle contain the following shapes: heart, circle, star, square, and triangle.](https://developer.apple.com/tutorials/images/com.apple.HIG/image-positions-rtl@2x.png)
+Items with meaningful positions in the RTL context
 
 ## Interface icons
-When you use [SF Symbols](sf-symbols.md) to supply interface icons for your app, you get variants for the RTL context and localized symbols for Arabic and Hebrew, among other languages. If you create custom symbols, you can specify their directionality. For developer guidance, see [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md).
-![Three horizontal lines, stacked evenly on top of each other. Each line is preceded by a bullet on left. The shape of a closed book with its spine on the left. A rounded rectangle containing a left-aligned row of three dots. A pencil is slanted at about forty-five degrees, with its point right of the rightmost dot and its eraser extending out of the top-right corner of the rectangle. A rounded rectangle with a black bar across the top that occupies about a quarter of the rectangle's height. A left-aligned row of white dots is in the left side of the bar. A rounded rectangle that contains a smaller, solid-black rounded rectangle near the left side. Outside the rectangle and to the right is a solid-black semicircle with a vertical straight edge that's close to the vertical right side of the rectangle.](/images/com.apple.HIG/directional-symbols-ltr~dark@2x.png)
-![Three horizontal lines, stacked evenly on top of each other. Each line is preceded by a bullet on right. The shape of a closed book with its spine on the right. A rounded rectangle containing a right-aligned row of three dots. A pencil is slanted at about forty-five degrees, with its point left of the leftmost dot and its eraser extending out of the middle of the rectangle's top. A rounded rectangle with a black bar across the top that occupies about a quarter of the rectangle's height. A right-aligned row of white dots is in the right side of the bar. A rounded rectangle that contains a smaller, solid-black rounded rectangle near the right side. Outside the rectangle and to the left is a solid-black semicircle with a vertical straight edge that's close to the vertical left side of the rectangle.](/images/com.apple.HIG/directional-symbols-rtl~dark@2x.png)
+When you use [SF Symbols](sf-symbols.md) to supply interface icons for your app, you get variants for the RTL context and localized symbols for Arabic and Hebrew, among other languages. If you create custom symbols, you can specify their directionality. For developer guidance, see [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md).
+
+![Three horizontal lines, stacked evenly on top of each other. Each line is preceded by a bullet on left. The shape of a closed book with its spine on the left. A rounded rectangle containing a left-aligned row of three dots. A pencil is slanted at about forty-five degrees, with its point right of the rightmost dot and its eraser extending out of the top-right corner of the rectangle. A rounded rectangle with a black bar across the top that occupies about a quarter of the rectangle's height. A left-aligned row of white dots is in the left side of the bar. A rounded rectangle that contains a smaller, solid-black rounded rectangle near the left side. Outside the rectangle and to the right is a solid-black semicircle with a vertical straight edge that's close to the vertical right side of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.HIG/directional-symbols-ltr@2x.png)
+LTR variants of directional symbols
+
+![Three horizontal lines, stacked evenly on top of each other. Each line is preceded by a bullet on right. The shape of a closed book with its spine on the right. A rounded rectangle containing a right-aligned row of three dots. A pencil is slanted at about forty-five degrees, with its point left of the leftmost dot and its eraser extending out of the middle of the rectangle's top. A rounded rectangle with a black bar across the top that occupies about a quarter of the rectangle's height. A right-aligned row of white dots is in the right side of the bar. A rounded rectangle that contains a smaller, solid-black rounded rectangle near the right side. Outside the rectangle and to the left is a solid-black semicircle with a vertical straight edge that's close to the vertical left side of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.HIG/directional-symbols-rtl@2x.png)
+RTL variants of directional symbols
+
 **Flip interface icons that represent text or reading direction.** For example, if an interface icon uses left-aligned bars to represent text in the LTR context, right-align the bars in the RTL context.
-![A rounded rectangle that contains three horizontal left-aligned lines.](/images/com.apple.HIG/doc-plaintext-ltr~dark@2x.png)
-![A rounded rectangle that contains three horizontal right-aligned lines.](/images/com.apple.HIG/doc-plaintext-rtl~dark@2x.png)
+
+![A rounded rectangle that contains three horizontal left-aligned lines.](https://developer.apple.com/tutorials/images/com.apple.HIG/doc-plaintext-ltr@2x.png)
+LTR variant of a symbol that represents text
+
+![A rounded rectangle that contains three horizontal right-aligned lines.](https://developer.apple.com/tutorials/images/com.apple.HIG/doc-plaintext-rtl@2x.png)
+RTL variant of a symbol that represents text
+
 **Consider creating a localized version of an interface icon that displays text.** Some interface icons include letters or words to help communicate a script-related concept, like font-size choice or a signature. If you have a custom interface icon that needs to display actual text, consider creating a localized version. For example, SF Symbols offers different versions of the signature, rich-text, and I-beam pointer symbols for use with Latin, Hebrew, and Arabic text, among others.
-![A small X left-aligned above a horizontal line. A stylized signature begins at the X and finishes at the right end of the line. A rounded rectangle containing a capital letter A in the top-left corner and a stack of two horizontal lines in the top-right corner. A placeholder image appears in the bottom half of the rectangle. A large capital letter A to the left of a tall I-beam cursor.](/images/com.apple.HIG/text-icon-localized-latin~dark@2x.png)
-![A small X right-aligned above a horizontal line. A stylized signature begins at the X and finishes at the left end of the line. A rounded rectangle containing the letter Alef in the top-right corner and a stack of two horizontal lines in the top-left corner. A placeholder image appears in the bottom half of the rectangle. A large letter Alef to the right of a tall I-beam cursor.](/images/com.apple.HIG/text-icon-localized-hebrew~dark@2x.png)
-![A small X right-aligned above a horizontal line. A stylized signature begins at the X and finishes at the left end of the line. A rounded rectangle containing the letter Ain in the top-right corner and a stack of two horizontal lines in the top-left corner. A placeholder image appears in the bottom half of the rectangle. A large letter Dad to the right of a tall I-beam cursor.](/images/com.apple.HIG/text-icon-localized-arabic~dark@2x.png)
+
+![A small X left-aligned above a horizontal line. A stylized signature begins at the X and finishes at the right end of the line. A rounded rectangle containing a capital letter A in the top-left corner and a stack of two horizontal lines in the top-right corner. A placeholder image appears in the bottom half of the rectangle. A large capital letter A to the left of a tall I-beam cursor.](https://developer.apple.com/tutorials/images/com.apple.HIG/text-icon-localized-latin@2x.png)
+Latin
+
+![A small X right-aligned above a horizontal line. A stylized signature begins at the X and finishes at the left end of the line. A rounded rectangle containing the letter Alef in the top-right corner and a stack of two horizontal lines in the top-left corner. A placeholder image appears in the bottom half of the rectangle. A large letter Alef to the right of a tall I-beam cursor.](https://developer.apple.com/tutorials/images/com.apple.HIG/text-icon-localized-hebrew@2x.png)
+Hebrew
+
+![A small X right-aligned above a horizontal line. A stylized signature begins at the X and finishes at the left end of the line. A rounded rectangle containing the letter Ain in the top-right corner and a stack of two horizontal lines in the top-left corner. A placeholder image appears in the bottom half of the rectangle. A large letter Dad to the right of a tall I-beam cursor.](https://developer.apple.com/tutorials/images/com.apple.HIG/text-icon-localized-arabic@2x.png)
+Arabic
+
 If you have a custom interface icon that uses letters or words to communicate a concept unrelated to reading or writing, consider designing an alternative image that doesn’t use text.
+
 **Flip an interface icon that shows forward or backward motion.** When something moves in the same direction that people read, they typically interpret that direction as forward; when something moves in the opposite direction, people tend to interpret the direction as backward. An interface icon that depicts an object moving forward or backward needs to flip in the RTL context to preserve the meaning of the motion. For example, an icon that represents a speaker typically shows sound waves emanating forward from the speaker. In the LTR context, the sound waves come from the left, so in the RTL context, the icon needs to flip to show the waves coming from the right.
-![The outline of a speaker with three concentric curved lines emanating to the right.](/images/com.apple.HIG/speaker-wave-3-ltr~dark@2x.png)
-![The outline of a speaker with three concentric curved lines emanating to the left.](/images/com.apple.HIG/speaker-wave-3-rtl~dark@2x.png)
+
+![The outline of a speaker with three concentric curved lines emanating to the right.](https://developer.apple.com/tutorials/images/com.apple.HIG/speaker-wave-3-ltr@2x.png)
+LTR variant of a symbol that depicts forward motion
+
+![The outline of a speaker with three concentric curved lines emanating to the left.](https://developer.apple.com/tutorials/images/com.apple.HIG/speaker-wave-3-rtl@2x.png)
+RTL variant of a symbol that depicts forward motion
+
 **Don’t flip logos or universal signs and marks.** Displaying a flipped logo confuses people and can have legal repercussions. Always display a logo in its original form, even if it includes text. People expect universal symbols and marks like the checkmark to have a consistent appearance, so avoid flipping them.
-![A rounded square that contains the black Apple TV logo, which consists of a solid black apple to the left of the lowercase letters T and V.](/images/com.apple.HIG/appletv-ltr~dark@2x.png)
-![A checkmark.](/images/com.apple.HIG/checkmark-ltr~dark@2x.png)
+
+![A rounded square that contains the black Apple TV logo, which consists of a solid black apple to the left of the lowercase letters T and V.](https://developer.apple.com/tutorials/images/com.apple.HIG/appletv-ltr@2x.png)
+A logo
+
+![A checkmark.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark-ltr@2x.png)
+A universal symbol or mark
+
 **In general, avoid flipping interface icons that depict real-world objects.** Unless you use the object to indicate directionality, it’s best to avoid flipping an icon that represents a familiar item. For example, clocks work the same everywhere, so a traditional clock interface icon needs to look the same regardless of language direction. Some interface icons might seem to reference language or reading direction because they represent items that are slanted for right-handed use. However, most people are right-handed, so flipping an icon that shows a right-handed tool isn’t necessary and might be confusing.
-![A black disk with two white lines in the nine o'clock position.](/images/com.apple.HIG/clock-fill-ltr~dark@2x.png)
-![A pencil with an eraser, slanted at about forty-five degrees with the point in the bottom-left.](/images/com.apple.HIG/pencil-ltr~dark@2x.png)
-![The silhouette of a game controller with a white plus sign on the left and two white buttons on the right.](/images/com.apple.HIG/gamecontroller-fill-ltr~dark@2x.png)
+
+![A black disk with two white lines in the nine o'clock position.](https://developer.apple.com/tutorials/images/com.apple.HIG/clock-fill-ltr@2x.png)
+
+![A pencil with an eraser, slanted at about forty-five degrees with the point in the bottom-left.](https://developer.apple.com/tutorials/images/com.apple.HIG/pencil-ltr@2x.png)
+
+![The silhouette of a game controller with a white plus sign on the left and two white buttons on the right.](https://developer.apple.com/tutorials/images/com.apple.HIG/gamecontroller-fill-ltr@2x.png)
+
 **Before merely flipping a complex custom interface icon, consider its individual components and the overall visual balance.** In some cases, a component — like a badge, slash, or magnifying glass — needs to adhere to a visual design language regardless of localization. For example, SF Symbols maintains visual consistency by using the same backslash to represent the prohibition or negation of a symbol’s meaning in both LTR and RTL versions.
-![A silhouette of a speaker pointing right with a backslash on top of it.](/images/com.apple.HIG/speaker-slash-fill-ltr~dark@2x.png)
-![A silhouette of a speaker pointing left with a backslash on top of it.](/images/com.apple.HIG/speaker-slash-fill-rtl~dark@2x.png)
+
+![A silhouette of a speaker pointing right with a backslash on top of it.](https://developer.apple.com/tutorials/images/com.apple.HIG/speaker-slash-fill-ltr@2x.png)
+LTR variant of a symbol that includes a backslash
+
+![A silhouette of a speaker pointing left with a backslash on top of it.](https://developer.apple.com/tutorials/images/com.apple.HIG/speaker-slash-fill-rtl@2x.png)
+RTL variant of a symbol that includes a backslash
+
 In other cases, you might need to flip a component (or its position) to ensure the localized version of the icon still makes sense. For example, if a badge represents the actual UI that people see in your app, it needs to flip if your UI flips. Alternatively, if a badge modifies the meaning of an interface icon, consider whether flipping the badge preserves both the modified meaning and the overall visual balance of the icon. In the images shown below, the badge doesn’t depict an object in the UI, but keeping it in the top-right corner visually unbalances the cart.
-![A silhouette of a wheeled shopping cart that faces right. A white plus sign inside a black disk is in the top-right corner.](/images/com.apple.HIG/cart-fill-badge-plus-ltr~dark@2x.png)
-![A checkmark in a circle to indicate a correct example.](/images/com.apple.HIG/checkmark@2x.png)
-![A silhouette of a wheeled shopping cart that faces left. A white plus sign inside a black disk is in the top-right corner.](/images/com.apple.HIG/cart-fill-badge-rtl-unbalanced~dark@2x.png)
-![An X in a circle to indicate an incorrect example.](/images/com.apple.HIG/crossout@2x.png)
-![A silhouette of a wheeled shopping cart that faces left. A white plus sign inside a black disk is in the top-left corner.](/images/com.apple.HIG/cart-fill-badge-plus-rtl~dark@2x.png)
-![A checkmark in a circle to indicate a correct example.](/images/com.apple.HIG/checkmark@2x.png)
+
+![A silhouette of a wheeled shopping cart that faces right. A white plus sign inside a black disk is in the top-right corner.](https://developer.apple.com/tutorials/images/com.apple.HIG/cart-fill-badge-plus-ltr@2x.png)
+
+![A checkmark in a circle to indicate a correct example.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark@2x.png)
+
+![A silhouette of a wheeled shopping cart that faces left. A white plus sign inside a black disk is in the top-right corner.](https://developer.apple.com/tutorials/images/com.apple.HIG/cart-fill-badge-rtl-unbalanced@2x.png)
+
+![An X in a circle to indicate an incorrect example.](https://developer.apple.com/tutorials/images/com.apple.HIG/crossout@2x.png)
+
+![A silhouette of a wheeled shopping cart that faces left. A white plus sign inside a black disk is in the top-left corner.](https://developer.apple.com/tutorials/images/com.apple.HIG/cart-fill-badge-plus-rtl@2x.png)
+
+![A checkmark in a circle to indicate a correct example.](https://developer.apple.com/tutorials/images/com.apple.HIG/checkmark@2x.png)
+
 If your custom interface icon includes a component that can imply handedness, like a tool, consider preserving the orientation of the tool while flipping the base image if necessary.
-![A rounded rectangle that contains a black dot in the top-right corner. The outline of a magnifying glass that contains a stack of two left-aligned lines is on top of the rectangle and to the left of the dot, slanted at about 135 degrees.](/images/com.apple.HIG/mail-and-text-magnifyingglass-ltr~dark@2x.png)
-![A rounded rectangle that contains a black dot in the top-left corner. The outline of a magnifying glass that contains a stack of two rightt-aligned lines is on top of the rectangle and to the right of the dot, slanted at about 135 degrees.](/images/com.apple.HIG/mail-and-text-magnifyingglass-rtl~dark@2x.png)
+
+![A rounded rectangle that contains a black dot in the top-right corner. The outline of a magnifying glass that contains a stack of two left-aligned lines is on top of the rectangle and to the left of the dot, slanted at about 135 degrees.](https://developer.apple.com/tutorials/images/com.apple.HIG/mail-and-text-magnifyingglass-ltr@2x.png)
+LTR variant of a symbol that depicts a tool
+
+![A rounded rectangle that contains a black dot in the top-left corner. The outline of a magnifying glass that contains a stack of two rightt-aligned lines is on top of the rectangle and to the right of the dot, slanted at about 135 degrees.](https://developer.apple.com/tutorials/images/com.apple.HIG/mail-and-text-magnifyingglass-rtl@2x.png)
+RTL variant of a symbol that depicts a tool
 
 ## Platform considerations
 *No additional considerations for iOS, iPadOS, macOS, tvOS, visionOS, or watchOS.*
@@ -110,18 +222,19 @@ If your custom interface icon includes a component that can imply handedness, li
 
 #### Related
 [Layout](layout.md)
+
 [Inclusion](inclusion.md)
+
 [SF Symbols](sf-symbols.md)
 
 #### Developer documentation
 [Localization](https://developer.apple.com/localization/)
-[Preparing views for localization](../swiftui/preparing-views-for-localization.md) — SwiftUI
+
+[Preparing views for localization](../SwiftUI/preparing-views-for-localization.md) — SwiftUI
 
 #### Videos
 - [Enhance your app’s multilingual experience](https://developer.apple.com/videos/play/wwdc2025/222) - Create a seamless experience for anyone who uses multiple languages. Learn how Language Discovery allows you to optimize your app using a person’s preferred languages. Explore advances in support for right-to-left languages, including Natural Selection for selecting multiple ranges in bidirectional text. We’ll also cover best practices for supporting multilingual scenarios in your app.
 - [Design for Arabic](https://developer.apple.com/videos/play/wwdc2022/10034) - Find out how to design or optimize your app or game for Arabic. Whether you’re planning a first release or improving an existing app or game, we’ll help you learn best practices and tips for UI design for Arabic speakers. Learn how to create beautiful Right to Left layouts with UI components and iconography, discover the nuances of Arabic script and typography in product design, and explore Arabic numerals.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/right-to-left](https://developer.apple.com/design/human-interface-guidelines/right-to-left)*

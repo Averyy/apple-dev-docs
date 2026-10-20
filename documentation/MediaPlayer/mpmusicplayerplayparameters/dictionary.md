@@ -1,7 +1,8 @@
 # dictionary
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The information returned from a MusicKit query and stored in a play parameters object.
 
@@ -16,6 +17,10 @@ The information returned from a MusicKit query and stored in a play parameters o
 
 ```swift
 var dictionary: [String : Any] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * dictionary;
 ```
 
 

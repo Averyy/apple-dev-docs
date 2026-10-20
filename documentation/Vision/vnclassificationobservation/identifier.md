@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Classification label identifying the type of observation.
 
@@ -17,6 +18,10 @@ Classification label identifying the type of observation.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 #### Discussion

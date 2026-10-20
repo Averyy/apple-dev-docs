@@ -1,7 +1,8 @@
 # MTRChannelClusterLineupInfoStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTRChannelClusterLineupInfoStruct
 ```
 
+```objc
+@interface MTRChannelClusterLineupInfoStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var lineupInfoType: NSNumber](mtrchannelclusterlineupinfostruct/lineupinfotype.md)
-- [var lineupName: String?](mtrchannelclusterlineupinfostruct/lineupname.md)
-- [var operatorName: String](mtrchannelclusterlineupinfostruct/operatorname.md)
-- [var postalCode: String?](mtrchannelclusterlineupinfostruct/postalcode.md)
+- [var lineupInfoType: NSNumber](./mtrchannelclusterlineupinfostruct/lineupinfotype.md)
+- [var lineupName: String?](./mtrchannelclusterlineupinfostruct/lineupname.md)
+- [var operatorName: String](./mtrchannelclusterlineupinfostruct/operatorname.md)
+- [var postalCode: String?](./mtrchannelclusterlineupinfostruct/postalcode.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRChannelClusterLineupInfo](mtrchannelclusterlineupinfo.md)
+- [MTRChannelClusterLineupInfo](./mtrchannelclusterlineupinfo.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # BNNS.ConvolutionPadding.asymmetric(left:right:up:down:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A padding mode that supports individual padding values for each side.
 
@@ -11,8 +12,10 @@ A padding mode that supports individual padding values for each side.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ case asymmetric(left: Int, right: Int, up: Int, down: Int)
 
 ## See Also
 
-- [BNNS.ConvolutionPadding.symmetric(x:y:)](bnns/convolutionpadding/symmetric(x:y:).md)
+### Convolution Padding Modes
+- [BNNS.ConvolutionPadding.symmetric(x:y:)](./symmetric%28x,y%29.md)
   A padding mode that provides symmetric padding.
 
 

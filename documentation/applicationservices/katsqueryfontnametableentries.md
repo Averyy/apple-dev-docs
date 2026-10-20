@@ -1,7 +1,8 @@
 # kATSQueryFontNameTableEntries
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kATSQueryFontNameTableEntries: String { get }
+```
+
+```c
+#define kATSQueryFontNameTableEntries
 ```
 
 

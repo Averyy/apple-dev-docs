@@ -1,14 +1,15 @@
 # SO_TRACKER_ATTRIBUTE_MEMORY_USED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 SO_TRACKER_ATTRIBUTE_MEMORY_USED = 8
 ```
 

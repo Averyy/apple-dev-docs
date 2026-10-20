@@ -1,7 +1,8 @@
 # init(csrResponseParams:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(csrResponseParams responseParams: MTROperationalCredentialsClusterCSRResponseParams)
+```
+
+```objc
+- (instancetype) initWithCSRResponseParams:(MTROperationalCredentialsClusterCSRResponseParams *) responseParams;
 ```
 
 

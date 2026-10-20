@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nd_neighbor_solicit {
     ...
 };
@@ -17,8 +17,8 @@ struct nd_neighbor_solicit {
 ## Topics
 
 ### Instance Properties
-- [nd_ns_hdr](nd_neighbor_solicit/3754110-nd_ns_hdr.md)
-- [nd_ns_target](nd_neighbor_solicit/3754111-nd_ns_target.md)
+- [nd_ns_hdr](./nd_neighbor_solicit/api-3754110-nd_ns_hdr.md)
+- [nd_ns_target](./nd_neighbor_solicit/api-3754111-nd_ns_target.md)
 
 
 ---

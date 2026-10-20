@@ -1,7 +1,8 @@
 # passwordKind
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For passwordFilled events, this is the kind of password that was created.
 
@@ -15,6 +16,10 @@ For passwordFilled events, this is the kind of password that was created.
 
 ```swift
 var passwordKind: ASGeneratedPassword.Kind? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) ASGeneratedPasswordKind passwordKind;
 ```
 
 

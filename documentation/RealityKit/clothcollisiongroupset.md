@@ -1,7 +1,8 @@
 # ClothCollisionGroupSet
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 `ClothCollisionGroupSet` is the basis for the `ClothCollisionFilter` and should not be used separately.
 
@@ -19,43 +20,44 @@ struct ClothCollisionGroupSet
 ## Topics
 
 ### Creating a group set
-- [init(groups: [Int])](clothcollisiongroupset/init(groups:).md)
+- [init(groups: [Int])](./clothcollisiongroupset/init%28groups%29.md)
   Creates a collision group set from an array of numbered groups.
 ### Accessing default groups
-- [static let defaultBodies: ClothCollisionGroupSet](clothcollisiongroupset/defaultbodies.md)
+- [static let defaultBodies: ClothCollisionGroupSet](./clothcollisiongroupset/defaultbodies.md)
   Default option reserved for cloth bodies.
-- [static let defaultColliders: ClothCollisionGroupSet](clothcollisiongroupset/defaultcolliders.md)
+- [static let defaultColliders: ClothCollisionGroupSet](./clothcollisiongroupset/defaultcolliders.md)
   Default option reserved for colliders.
 ### Initializers
-- [init(rawValue: UInt32)](clothcollisiongroupset/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./clothcollisiongroupset/init%28rawvalue%29.md)
   Creates a collision group set from a raw bitmask value.
 ### Instance Properties
-- [var rawValue: UInt32](clothcollisiongroupset/rawvalue.md)
+- [var rawValue: UInt32](./clothcollisiongroupset/rawvalue.md)
   The raw bitmask value of the set, where each set bit represents a group between 1 and 32.
 ### Type Properties
-- [static let all: ClothCollisionGroupSet](clothcollisiongroupset/all.md)
+- [static let all: ClothCollisionGroupSet](./clothcollisiongroupset/all.md)
   Option that includes all groups.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct ClothColliderComponent](clothcollidercomponent.md)
+### Collision
+- [struct ClothColliderComponent](./clothcollidercomponent.md)
   A component that adds a cloth-compatible collider to an entity.
-- [enum ClothColliderShape](clothcollidershape.md)
+- [enum ClothColliderShape](./clothcollidershape.md)
   Shape suitable for use as a collider.
-- [struct ClothColliderMaterial](clothcollidermaterial.md)
+- [struct ClothColliderMaterial](./clothcollidermaterial.md)
   A struct that represents a collider’s material.
-- [struct ClothCollisionFilter](clothcollisionfilter.md)
+- [struct ClothCollisionFilter](./clothcollisionfilter.md)
   Defines the collision groups for a body or collider and the mask for one-way collisions.
 
 

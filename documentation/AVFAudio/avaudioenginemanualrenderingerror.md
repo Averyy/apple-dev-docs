@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingError
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe error codes that the framework returns from manual rendering mode methods.
 
@@ -20,39 +21,44 @@ Constants that describe error codes that the framework returns from manual rende
 enum AVAudioEngineManualRenderingError
 ```
 
+```c
+enum AVAudioEngineManualRenderingError : OSStatus;
+```
+
 ## Topics
 
 ### Creating a rendering error
-- [init?(rawValue: OSStatus)](avaudioenginemanualrenderingerror/init(rawvalue:).md)
+- [init?(rawValue: OSStatus)](./avaudioenginemanualrenderingerror/init%28rawvalue%29.md)
 ### Identifying rendering errors
-- [AVAudioEngineManualRenderingError.initialized](avaudioenginemanualrenderingerror/initialized.md)
+- [AVAudioEngineManualRenderingError.initialized](./avaudioenginemanualrenderingerror/initialized.md)
   An operation that the system can’t perform because the engine is still running.
-- [AVAudioEngineManualRenderingError.invalidMode](avaudioenginemanualrenderingerror/invalidmode.md)
+- [AVAudioEngineManualRenderingError.invalidMode](./avaudioenginemanualrenderingerror/invalidmode.md)
   An operation the system can’t perform because the engine isn’t in manual rendering mode or the right variant of it.
-- [AVAudioEngineManualRenderingError.notRunning](avaudioenginemanualrenderingerror/notrunning.md)
+- [AVAudioEngineManualRenderingError.notRunning](./avaudioenginemanualrenderingerror/notrunning.md)
   An operation the system can’t perform because the engine isn’t running.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
+### Rendering audio manually
+- [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](./avaudioengine/enablemanualrenderingmode%28_,format,maximumframecount%29.md)
   Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
-- [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
+- [enum AVAudioEngineManualRenderingMode](./avaudioenginemanualrenderingmode.md)
   The two modes for manual rendering.
-- [func disableManualRenderingMode()](avaudioengine/disablemanualrenderingmode.md)
+- [func disableManualRenderingMode()](./avaudioengine/disablemanualrenderingmode%28%29.md)
   Sets the engine to render to or from an audio device.
-- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](avaudioengine/renderoffline(_:to:).md)
+- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](./avaudioengine/renderoffline%28_,to%29.md)
   Makes a render call to the engine operating in the offline manual rendering mode.
-- [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
+- [enum AVAudioEngineManualRenderingStatus](./avaudioenginemanualrenderingstatus.md)
   Status codes that return from the render call to the engine operating in manual rendering mode.
 
 

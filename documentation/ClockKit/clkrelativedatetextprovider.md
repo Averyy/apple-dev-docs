@@ -1,12 +1,15 @@
 # CLKRelativeDateTextProvider
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatted string that conveys the difference in time between the current date and a date that you specify.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A formatted string that conveys the difference in time between the current date 
 class CLKRelativeDateTextProvider
 ```
 
+```objc
+@interface CLKRelativeDateTextProvider : CLKTextProvider
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
@@ -28,66 +35,67 @@ When creating the formatted string, the relative date text provider creates the 
 
 When creating a `CLKRelativeDateTextProvider` object, you must specify which calendar units you want included in the resulting date. Only the following calendar units are supported:
 
-- [`NSYearCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsyearcalendarunit)
-- [`NSMonthCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsmonthcalendarunit)
-- [`NSWeekOfMonthCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsweekofmonthcalendarunit)
-- [`NSDayCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsdaycalendarunit)
-- [`NSHourCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nshourcalendarunit)
-- [`NSMinuteCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsminutecalendarunit)
-- [`NSSecondCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nssecondcalendarunit)
+- [`NSYearCalendarUnit`](../Foundation/nscalendar/unit/nsyearcalendarunit.md)
+- [`NSMonthCalendarUnit`](../Foundation/nscalendar/unit/nsmonthcalendarunit.md)
+- [`NSWeekOfMonthCalendarUnit`](../Foundation/nscalendar/unit/nsweekofmonthcalendarunit.md)
+- [`NSDayCalendarUnit`](../Foundation/nscalendar/unit/nsdaycalendarunit.md)
+- [`NSHourCalendarUnit`](../Foundation/nscalendar/unit/nshourcalendarunit.md)
+- [`NSMinuteCalendarUnit`](../Foundation/nscalendar/unit/nsminutecalendarunit.md)
+- [`NSSecondCalendarUnit`](../Foundation/nscalendar/unit/nssecondcalendarunit.md)
 
-> **Note**:  When creating a relative date provider using the [`CLKRelativeDateStyle.timer`](clkrelativedatestyle/timer.md) style, only the [`NSHourCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nshourcalendarunit), [`NSMinuteCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsminutecalendarunit), and [`NSSecondCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nssecondcalendarunit) units are supported.
+> **Note**:  When creating a relative date provider using the [`CLKRelativeDateStyle.timer`](./clkrelativedatestyle/timer.md) style, only the [`NSHourCalendarUnit`](../Foundation/nscalendar/unit/nshourcalendarunit.md), [`NSMinuteCalendarUnit`](../Foundation/nscalendar/unit/nsminutecalendarunit.md), and [`NSSecondCalendarUnit`](../Foundation/nscalendar/unit/nssecondcalendarunit.md) units are supported.
 
 All other calendar units are ignored.
 
-The format of the relative time value is dependent on the date style you choose when creating the text provider. For a list of possible styles and examples of each, see [`CLKRelativeDateStyle`](clkrelativedatestyle.md).
+The format of the relative time value is dependent on the date style you choose when creating the text provider. For a list of possible styles and examples of each, see [`CLKRelativeDateStyle`](./clkrelativedatestyle.md).
 
 ## Topics
 
 ### Creating a Text Provider
-- [convenience init(date: Date, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](clkrelativedatetextprovider/init(date:style:units:).md)
+- [convenience init(date: Date, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./clkrelativedatetextprovider/init%28date,style,units%29.md)
   Creates a text provider that shows the difference between the current time and the specified date.
-- [convenience init(date: Date, relativeTo: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](clkrelativedatetextprovider/init(date:relativeto:style:units:).md)
+- [convenience init(date: Date, relativeTo: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./clkrelativedatetextprovider/init%28date,relativeto,style,units%29.md)
   Creates a text provider that shows the difference in time between the provided dates.
 ### Getting the Date Information
-- [var date: Date](clkrelativedatetextprovider/date.md)
+- [var date: Date](./clkrelativedatetextprovider/date.md)
   The target date to use for calculations.
-- [var relativeToDate: Date?](clkrelativedatetextprovider/relativetodate.md)
+- [var relativeToDate: Date?](./clkrelativedatetextprovider/relativetodate.md)
   The end date that the text provider uses when calculating a fixed, relative date.
-- [var relativeDateStyle: CLKRelativeDateStyle](clkrelativedatetextprovider/relativedatestyle.md)
+- [var relativeDateStyle: CLKRelativeDateStyle](./clkrelativedatetextprovider/relativedatestyle.md)
   The formatting style to use for the relative time value.
-- [var calendarUnits: NSCalendar.Unit](clkrelativedatetextprovider/calendarunits.md)
+- [var calendarUnits: NSCalendar.Unit](./clkrelativedatetextprovider/calendarunits.md)
   The calendar units to include in the formatted string.
 ### Constants
-- [enum CLKRelativeDateStyle](clkrelativedatestyle.md)
+- [enum CLKRelativeDateStyle](./clkrelativedatestyle.md)
   Constants indicating the formatting style for the relative date values.
 ### Initializers
-- [convenience init(date: Date, relativeToDate: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](clkrelativedatetextprovider/init(date:relativetodate:style:units:).md)
+- [convenience init(date: Date, relativeToDate: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](./clkrelativedatetextprovider/init%28date,relativetodate,style,units%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CLKTextProvider](clktextprovider.md)
+- [CLKTextProvider](./clktextprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKSimpleTextProvider](clksimpletextprovider.md)
+### Text providers
+- [class CLKSimpleTextProvider](./clksimpletextprovider.md)
   A single line of text to display in your complication interface.
-- [class CLKDateTextProvider](clkdatetextprovider.md)
+- [class CLKDateTextProvider](./clkdatetextprovider.md)
   A formatted string that conveys a date without any time information.
-- [class CLKTimeIntervalTextProvider](clktimeintervaltextprovider.md)
+- [class CLKTimeIntervalTextProvider](./clktimeintervaltextprovider.md)
   A formatted time range.
-- [class CLKTimeTextProvider](clktimetextprovider.md)
+- [class CLKTimeTextProvider](./clktimetextprovider.md)
   A formatted time value.
-- [class CLKTextProvider](clktextprovider.md)
+- [class CLKTextProvider](./clktextprovider.md)
   The common behavior for displaying text-based data in a complication.
 
 

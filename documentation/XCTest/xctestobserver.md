@@ -1,9 +1,12 @@
 # XCTestObserver
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that observes test activity and events.
+
+> **Deprecated**: Use [`XCTestObservationCenter`](./xctestobservationcenter.md) instead.
 
 ## Declaration
 
@@ -11,44 +14,49 @@ An object that observes test activity and events.
 class XCTestObserver
 ```
 
+```objc
+@interface XCTestObserver : NSObject
+```
+
 ## Topics
 
 ### Starting and Stopping Test Observation
-- [func startObserving()](xctestobserver/startobserving.md)
+- [func startObserving()](./xctestobserver/startobserving%28%29.md)
   Starts observing a test.
-- [func stopObserving()](xctestobserver/stopobserving.md)
+- [func stopObserving()](./xctestobserver/stopobserving%28%29.md)
   Stops observing a test.
 ### Monitoring Test Activity
-- [func testCaseDidFail(XCTestRun!, withDescription: String!, inFile: String!, atLine: Int)](xctestobserver/testcasedidfail(_:withdescription:infile:atline:).md)
+- [func testCaseDidFail(XCTestRun!, withDescription: String!, inFile: String!, atLine: Int)](./xctestobserver/testcasedidfail%28_,withdescription,infile,atline%29.md)
   Notifies the observer when a test case fails.
-- [func testCaseDidStart(XCTestRun!)](xctestobserver/testcasedidstart(_:).md)
+- [func testCaseDidStart(XCTestRun!)](./xctestobserver/testcasedidstart%28_%29.md)
   Notifies the observer when a test case starts.
-- [func testCaseDidStop(XCTestRun!)](xctestobserver/testcasedidstop(_:).md)
+- [func testCaseDidStop(XCTestRun!)](./xctestobserver/testcasedidstop%28_%29.md)
   Notifies the observer when a test case stops.
-- [func testSuiteDidStart(XCTestRun!)](xctestobserver/testsuitedidstart(_:).md)
+- [func testSuiteDidStart(XCTestRun!)](./xctestobserver/testsuitedidstart%28_%29.md)
   Notifies the observer when a test suite starts.
-- [func testSuiteDidStop(XCTestRun!)](xctestobserver/testsuitedidstop(_:).md)
+- [func testSuiteDidStop(XCTestRun!)](./xctestobserver/testsuitedidstop%28_%29.md)
   Notifies the observer when a test suite stops.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [XCTestLog](xctestlog.md)
+- [XCTestLog](./xctestlog.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCTestLog](xctestlog.md)
+### Deprecated Classes
+- [class XCTestLog](./xctestlog.md)
   An object that logs test failures and errors.
-- [class XCTestProbe](xctestprobe.md)
+- [class XCTestProbe](./xctestprobe.md)
   An object that observes test activity status.
 
 

@@ -1,7 +1,8 @@
 # OSAllocatedUnfairLockFlags
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,20 +22,21 @@ struct OSAllocatedUnfairLockFlags
 ## Topics
 
 ### Type Properties
-- [static let adaptiveSpin: OSAllocatedUnfairLockFlags](osallocatedunfairlockflags/adaptivespin.md)
+- [static let adaptiveSpin: OSAllocatedUnfairLockFlags](./osallocatedunfairlockflags/adaptivespin.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct OSAllocatedUnfairLock](osallocatedunfairlock.md)
+### Swift Wrappers
+- [struct OSAllocatedUnfairLock](./osallocatedunfairlock.md)
   A structure that creates an unfair lock.
 
 

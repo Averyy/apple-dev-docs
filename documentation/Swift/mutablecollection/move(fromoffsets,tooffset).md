@@ -1,7 +1,8 @@
 # move(fromOffsets:toOffset:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves all the elements at the specified offsets to the specified destination offset, preserving ordering.
 
@@ -46,7 +47,7 @@ letters.move(fromOffsets: IndexSet(integer: 2), toOffset: 2)
 // String(letters) == "ABcDefgHIJKlmNO"
 ```
 
-> **Note**: O(*n* log *n*), where *n* is the length of the collection.
+> **Complexity**: O(*n* log *n*), where *n* is the length of the collection.
 
 ## Parameters
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The input color palette, obtained by using a k-means clustering filter.
@@ -11,7 +12,7 @@ The input color palette, obtained by using a k-means clustering filter.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The input color palette, obtained by using a k-means clustering filter.
 var paletteImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * paletteImage;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cipalettize/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var perceptual: Bool](cipalettize/perceptual.md)
+- [var perceptual: Bool](./perceptual.md)
   A Boolean value that specifies whether the filter applies the color palette in a perceptual color space.
 
 

@@ -1,7 +1,8 @@
 # isExclusive
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isExclusive: Bool { get set }
+```
+
+```objc
+@property (atomic, readwrite, getter=isExclusive) BOOL exclusive;
 ```
 
 #### Discussion

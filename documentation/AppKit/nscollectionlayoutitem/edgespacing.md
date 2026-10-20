@@ -1,7 +1,8 @@
 # edgeSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space added around the boundaries of the item between other items and this item’s container.
 
@@ -15,17 +16,22 @@ The amount of space added around the boundaries of the item between other items 
 var edgeSpacing: NSCollectionLayoutEdgeSpacing? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSCollectionLayoutEdgeSpacing * edgeSpacing;
+```
+
 #### Discussion
 
-Use this property to adjust the position of the item in relation to its container and other items. For example, you can use this property to apply extra space to the trailing edge of each item. Edge spacing is applied before applying [`contentInsets`](nscollectionlayoutitem/contentinsets.md).
+Use this property to adjust the position of the item in relation to its container and other items. For example, you can use this property to apply extra space to the trailing edge of each item. Edge spacing is applied before applying [`contentInsets`](./contentinsets.md).
 
 The following diagram shows the result of applying 2 points of trailing edge spacing to the items in a group:
 
-![Two diagrams that show the result of edge spacing applied to a group of items. The first diagram shows a group of three square items in a row, each item measuring 20 by 20 points. The second diagram shows a trailing edge spacing of 2 points applied to each item. Each item remains the same size, but moves 2 points if it’s on the trailing edge of the previous item in the group.](/images/com.apple.appkit/media-3572326@2x.png)
+![Two diagrams that show the result of edge spacing applied to a group of items. The first diagram shows a group of three square items in a row, each item measuring 20 by 20 points. The second diagram shows a trailing edge spacing of 2 points applied to each item. Each item remains the same size, but moves 2 points if it’s on the trailing edge of the previous item in the group.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3572326@2x.png)
 
 ## See Also
 
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutitem/contentinsets.md)
+### Configuring spacing and insets
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The amount of space added around the content of the item to adjust its final size after its position is computed.
 
 

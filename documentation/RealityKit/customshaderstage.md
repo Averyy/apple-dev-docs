@@ -1,7 +1,8 @@
 # CustomShaderStage
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -19,42 +20,43 @@ enum CustomShaderStage
 ## Topics
 
 ### Enumeration Cases
-- [CustomShaderStage.geometryModifier](customshaderstage/geometrymodifier.md)
-- [CustomShaderStage.surfaceShader](customshaderstage/surfaceshader.md)
+- [CustomShaderStage.geometryModifier](./customshaderstage/geometrymodifier.md)
+- [CustomShaderStage.surfaceShader](./customshaderstage/surfaceshader.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
+### Shaders
+- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [struct ShaderGraphMaterial](shadergraphmaterial.md)
+- [struct ShaderGraphMaterial](./shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
-- [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
+- [ShaderGraphMaterial.FaceCulling](./shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
+- [ShaderGraphMaterial.TriangleFillMode](./shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [Modifying RealityKit rendering using custom materials](modifying-realitykit-rendering-using-custom-materials.md)
+- [Modifying RealityKit rendering using custom materials](./modifying-realitykit-rendering-using-custom-materials.md)
   Write Metal shader functions to implement custom rendering effects.
-- [struct CustomMaterial](custommaterial.md)
+- [struct CustomMaterial](./custommaterial.md)
   A material that works with custom Metal shader functions.
-- [CustomMaterial.SurfaceShader](custommaterial/surfaceshader.md)
+- [CustomMaterial.SurfaceShader](./custommaterial/surfaceshader.md)
   The custom material’s surface shader function.
-- [CustomMaterial.GeometryModifier](custommaterial/geometrymodifier.md)
+- [CustomMaterial.GeometryModifier](./custommaterial/geometrymodifier.md)
   The custom material’s optional shader function that can manipulate an entity’s vertex data.
-- [protocol MaterialFunction](materialfunction.md)
+- [protocol MaterialFunction](./materialfunction.md)
   The abstract superclass for objects representing compute functions for RealityKit custom materials .
-- [CustomMaterial.Program](custommaterial/program-swift.class.md)
+- [CustomMaterial.Program](./custommaterial/program-swift.class.md)
   An object that represents the backing shader compilation required for custom materials.
-- [CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.struct.md)
+- [CustomMaterial.Program.Descriptor](./custommaterial/program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
 
 

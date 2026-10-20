@@ -1,7 +1,8 @@
 # TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA: SSLCipherSuite { get }
+```
+
+```c
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
 ```
 
 

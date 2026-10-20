@@ -1,14 +1,15 @@
 # terminated_task_queue_building_latency_mt
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t terminated_task_queue_building_latency_mt;
 ```
 

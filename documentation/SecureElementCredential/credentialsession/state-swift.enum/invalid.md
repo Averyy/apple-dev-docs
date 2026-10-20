@@ -1,7 +1,8 @@
 # CredentialSession.State.invalid
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state of an invalid credential session.
 
@@ -17,17 +18,18 @@ case invalid
 
 #### Discussion
 
-An invalid session is no longer available for use. To resume Secure Element credential functionality, call [`startSession()`](credentialsession/startsession().md) to create a new session.
+An invalid session is no longer available for use. To resume Secure Element credential functionality, call [`startSession()`](../startsession%28%29.md) to create a new session.
 
 ## See Also
 
-- [CredentialSession.State.management](credentialsession/state-swift.enum/management.md)
+### Credential session states
+- [CredentialSession.State.management](./management.md)
   The state for managing the credential session.
-- [case wired(credential: CredentialSession.Credential)](credentialsession/state-swift.enum/wired(credential:).md)
+- [case wired(credential: CredentialSession.Credential)](./wired%28credential%29.md)
   The state for performing wired operations with a given credential.
-- [case cardEmulation(credential: CredentialSession.Credential)](credentialsession/state-swift.enum/cardemulation(credential:).md)
+- [case cardEmulation(credential: CredentialSession.Credential)](./cardemulation%28credential%29.md)
   The state for performing card emulation with a given credential.
-- [CredentialSession.Credential](credentialsession/credential.md)
+- [CredentialSession.Credential](../credential.md)
   Information about a credential that a credential session retrieves from the Secure Element.
 
 

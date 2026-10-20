@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration option with the specified raw value.
 
@@ -21,7 +22,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [let rawValue: Int](roombuilder/configurationoptions/rawvalue.md)
+### Creating a configuration option
+- [let rawValue: Int](./rawvalue.md)
   A raw value for a configuration option.
 
 

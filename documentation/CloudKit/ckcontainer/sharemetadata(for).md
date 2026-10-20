@@ -1,7 +1,8 @@
 # shareMetadata(for:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the share metadata for the specified share URL.
 
@@ -11,7 +12,7 @@ Fetches the share metadata for the specified share URL.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

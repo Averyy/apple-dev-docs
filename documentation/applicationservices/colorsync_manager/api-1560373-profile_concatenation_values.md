@@ -7,21 +7,21 @@ Specify values to use when concatenating profiles.
 ## Topics
 
 ### Constants
-- [var kNoTransform: Int](knotransform.md)
+- [var kNoTransform: Int](../knotransform.md)
   Not used.
-- [var kUseAtoB: Int](kuseatob.md)
+- [var kUseAtoB: Int](../kuseatob.md)
   Use 'A2B*' tag from this profile or equivalent
-- [var kUseBtoA: Int](kusebtoa.md)
+- [var kUseBtoA: Int](../kusebtoa.md)
   Use 'B2A*' tag from this profile or equivalent
-- [var kUseBtoB: Int](kusebtob.md)
+- [var kUseBtoB: Int](../kusebtob.md)
   Use 'pre*' tag from this profile or equivalent
-- [var kDeviceToPCS: Int](kdevicetopcs.md)
+- [var kDeviceToPCS: Int](../kdevicetopcs.md)
   Device Dependent to Device Independent
-- [var kPCSToDevice: Int](kpcstodevice.md)
+- [var kPCSToDevice: Int](../kpcstodevice.md)
   Device Independent to Device Dependent 
-- [var kPCSToPCS: Int](kpcstopcs.md)
+- [var kPCSToPCS: Int](../kpcstopcs.md)
   Independent, through device's gamut
-- [var kUseProfileIntent: Int](kuseprofileintent.md)
+- [var kUseProfileIntent: Int](../kuseprofileintent.md)
   For renderingIntent in NCMConcatProfileSpec
 
 

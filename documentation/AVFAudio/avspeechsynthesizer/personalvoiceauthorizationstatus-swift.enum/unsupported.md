@@ -1,7 +1,8 @@
 # AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.unsupported
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t support personal voices.
 
@@ -20,13 +21,18 @@ The device doesn’t support personal voices.
 case unsupported
 ```
 
+```c
+AVSpeechSynthesisPersonalVoiceAuthorizationStatusUnsupported
+```
+
 ## See Also
 
-- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/authorized.md)
+### Checking authorization status
+- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized](./authorized.md)
   The user granted your app’s request to use personal voices.
-- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.denied](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/denied.md)
+- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.denied](./denied.md)
   The user denied your app’s request to use personal voices.
-- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.notDetermined](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/notdetermined.md)
+- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.notDetermined](./notdetermined.md)
   The app hasn’t requested authorization to use personal voices.
 
 

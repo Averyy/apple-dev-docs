@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text list element that refers to the enclosing text list element.
 
@@ -18,11 +19,16 @@ A text list element that refers to the enclosing text list element.
 weak var parent: NSTextListElement? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) NSTextListElement * parentElement;
+```
+
 ## See Also
 
-- [var textList: NSTextList](nstextlistelement/textlist.md)
+### Accessing the text elements
+- [var textList: NSTextList](./textlist.md)
   The value that represents the text list.
-- [var childElements: [NSTextListElement]](nstextlistelement/childelements.md)
+- [var childElements: [NSTextListElement]](./childelements.md)
   An array that contains child text elements.
 
 

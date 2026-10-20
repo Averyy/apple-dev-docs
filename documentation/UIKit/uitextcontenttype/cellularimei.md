@@ -1,7 +1,8 @@
 # cellularIMEI
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area to contain the deviceâ€™s primary International Mobile Equipment Identity (IMEI) number for an eSIM.
 
@@ -18,19 +19,24 @@ A property that defines the content in a text input area to contain the deviceâ€
 static let cellularIMEI: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeCellularIMEI;
+```
+
 ## See Also
 
-- [static let emailAddress: UITextContentType](uitextcontenttype/emailaddress.md)
+### Setting communication details
+- [static let emailAddress: UITextContentType](./emailaddress.md)
   A property that defines the content in a text input area as an email address.
-- [static let telephoneNumber: UITextContentType](uitextcontenttype/telephonenumber.md)
+- [static let telephoneNumber: UITextContentType](./telephonenumber.md)
   A property that defines the content in a text input area as a telephone number.
-- [static let cellularEID: UITextContentType](uitextcontenttype/cellulareid.md)
+- [static let cellularEID: UITextContentType](./cellulareid.md)
   A property that defines the content in a text input area to contain an embedded identity document number for an eSIM.
-- [static let cellularIMEI1: UITextContentType](uitextcontenttype/cellularimei1.md)
+- [static let cellularIMEI1: UITextContentType](./cellularimei1.md)
   A property that defines the content in a text input area to contain the International Mobile Equipment Identity (IMEI) for an eSIM.
-- [static let cellularIMEI2: UITextContentType](uitextcontenttype/cellularimei2.md)
+- [static let cellularIMEI2: UITextContentType](./cellularimei2.md)
   A property that defines the content in a text input area to contain the second International Mobile Equipment Identity (IMEI) for an eSIM.
-- [static let cellularNAL: UITextContentType](uitextcontenttype/cellularnal.md)
+- [static let cellularNAL: UITextContentType](./cellularnal.md)
   A property that defines the content in a text input area for use when activating a SIM, and applies only to China.
 
 

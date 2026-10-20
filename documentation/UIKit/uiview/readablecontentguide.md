@@ -1,7 +1,8 @@
 # readableContentGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A layout guide representing an area with a readable width within the view.
 
@@ -18,6 +19,10 @@ A layout guide representing an area with a readable width within the view.
 var readableContentGuide: UILayoutGuide { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UILayoutGuide * readableContentGuide;
+```
+
 #### Discussion
 
 This layout guide defines an area that can easily be read without forcing users to move their head to track the lines. The readable content area follows the following rules:
@@ -30,13 +35,14 @@ Use the readable content guide to lay out a single column of text. If you are la
 
 ## See Also
 
-- [func addLayoutGuide(UILayoutGuide)](uiview/addlayoutguide(_:).md)
+### Working with layout guides
+- [func addLayoutGuide(UILayoutGuide)](./addlayoutguide%28_%29.md)
   Adds the specified layout guide to the view.
-- [var layoutGuides: [UILayoutGuide]](uiview/layoutguides.md)
+- [var layoutGuides: [UILayoutGuide]](./layoutguides.md)
   The array of layout guide objects owned by this view.
-- [var layoutMarginsGuide: UILayoutGuide](uiview/layoutmarginsguide.md)
+- [var layoutMarginsGuide: UILayoutGuide](./layoutmarginsguide.md)
   A layout guide representing the view’s margins.
-- [func removeLayoutGuide(UILayoutGuide)](uiview/removelayoutguide(_:).md)
+- [func removeLayoutGuide(UILayoutGuide)](./removelayoutguide%28_%29.md)
   Removes the specified layout guide from the view.
 
 

@@ -1,7 +1,8 @@
 # AppSchema.CalendarEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the calendar domain.
 
@@ -21,31 +22,32 @@ protocol CalendarEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var attendeeStatus: some AppSchemaEnum](appschema/calendarenum/attendeestatus.md)
+- [var attendeeStatus: some AppSchemaEnum](./calendarenum/attendeestatus.md)
   An enum schema for an attendee status parameter.
-- [var attendeeType: some AppSchemaEnum](appschema/calendarenum/attendeetype.md)
+- [var attendeeType: some AppSchemaEnum](./calendarenum/attendeetype.md)
   An enum schema for an attendee type parameter.
-- [var eventSpan: some AppSchemaEnum](appschema/calendarenum/eventspan.md)
+- [var eventSpan: some AppSchemaEnum](./calendarenum/eventspan.md)
   An enum schema for an event span parameter.
-- [var eventStatus: some AppSchemaEnum](appschema/calendarenum/eventstatus.md)
+- [var eventStatus: some AppSchemaEnum](./calendarenum/eventstatus.md)
   An enum schema for an event status parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var attendeeStatus: some AppSchemaEnum](appschema/calendarenum/attendeestatus.md)
+### Types for static parameters
+- [var attendeeStatus: some AppSchemaEnum](./calendarenum/attendeestatus.md)
   An enum schema for an attendee status parameter.
-- [var attendeeType: some AppSchemaEnum](appschema/calendarenum/attendeetype.md)
+- [var attendeeType: some AppSchemaEnum](./calendarenum/attendeetype.md)
   An enum schema for an attendee type parameter.
-- [var eventSpan: some AppSchemaEnum](appschema/calendarenum/eventspan.md)
+- [var eventSpan: some AppSchemaEnum](./calendarenum/eventspan.md)
   An enum schema for an event span parameter.
-- [var eventStatus: some AppSchemaEnum](appschema/calendarenum/eventstatus.md)
+- [var eventStatus: some AppSchemaEnum](./calendarenum/eventstatus.md)
   An enum schema for an event status parameter.
 
 

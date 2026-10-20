@@ -1,7 +1,8 @@
 # rawView
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a raw view over the same backing data
 
@@ -18,6 +19,8 @@ Returns a raw view over the same backing data
 @export(implementation)
 var rawView: NDArray.RawView { get }
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 
 ---

@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback rate to use when you select this speed.
 
@@ -19,11 +20,16 @@ The playback rate to use when you select this speed.
 var rate: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float rate;
+```
+
 ## See Also
 
-- [var localizedName: String](avplaybackspeed/localizedname.md)
+### Inspecting speed details
+- [var localizedName: String](./localizedname.md)
   A localized name for a speed that’s suitable for display in a user interface.
-- [var localizedNumericName: String](avplaybackspeed/localizednumericname.md)
+- [var localizedNumericName: String](./localizednumericname.md)
   A localized numeric name for a speed that’s suitable for display in a user interface.
 
 

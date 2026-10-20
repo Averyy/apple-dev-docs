@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index immediately after an element index.
 
@@ -26,11 +27,12 @@ func index(after i: Int) -> Int
 
 ## See Also
 
-- [var startIndex: Int](anycolumn/startindex.md)
+### Retrieving an Index
+- [var startIndex: Int](./startindex.md)
   The index of the initial element in the column.
-- [var endIndex: Int](anycolumn/endindex.md)
+- [var endIndex: Int](./endindex.md)
   The index of the final element in the column.
-- [func index(before: Int) -> Int](anycolumn/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the index immediately before an element index.
 
 

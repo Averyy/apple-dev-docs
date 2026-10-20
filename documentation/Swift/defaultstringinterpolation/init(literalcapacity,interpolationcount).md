@@ -1,7 +1,8 @@
 # init(literalCapacity:interpolationCount:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string interpolation with storage pre-sized for a literal with the indicated attributes.
 

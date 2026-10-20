@@ -1,7 +1,8 @@
 # tab
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `UITab` instance that was used to create the receiver, and represents the view controller. Default is nil.
 
@@ -18,11 +19,16 @@ The `UITab` instance that was used to create the receiver, and represents the vi
 weak var tab: UITab? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) UITab * tab;
+```
+
 ## See Also
 
-- [var tabBarItem: UITabBarItem!](uiviewcontroller/tabbaritem.md)
+### Configuring tab bar content
+- [var tabBarItem: UITabBarItem!](./tabbaritem.md)
   The tab bar item that represents the view controller when added to a tab bar controller.
-- [var tabBarObservedScrollView: UIScrollView?](uiviewcontroller/tabbarobservedscrollview.md)
+- [var tabBarObservedScrollView: UIScrollView?](./tabbarobservedscrollview.md)
   The full-screen scroll view to synchronize with a scrolling tab bar.
 
 

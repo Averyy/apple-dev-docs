@@ -1,7 +1,8 @@
 # UIImpactFeedbackGenerator.FeedbackStyle.medium
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A collision between moderately sized user interface elements.
 
@@ -16,15 +17,20 @@ A collision between moderately sized user interface elements.
 case medium
 ```
 
+```c
+UIImpactFeedbackStyleMedium
+```
+
 ## See Also
 
-- [UIImpactFeedbackGenerator.FeedbackStyle.heavy](uiimpactfeedbackgenerator/feedbackstyle/heavy.md)
+### Constants
+- [UIImpactFeedbackGenerator.FeedbackStyle.heavy](./heavy.md)
   A collision between large, heavy user interface elements.
-- [UIImpactFeedbackGenerator.FeedbackStyle.light](uiimpactfeedbackgenerator/feedbackstyle/light.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.light](./light.md)
   A collision between small, light user interface elements.
-- [UIImpactFeedbackGenerator.FeedbackStyle.rigid](uiimpactfeedbackgenerator/feedbackstyle/rigid.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.rigid](./rigid.md)
   A collision between user interface elements that are rigid, exhibiting a small amount of compression or elasticity.
-- [UIImpactFeedbackGenerator.FeedbackStyle.soft](uiimpactfeedbackgenerator/feedbackstyle/soft.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle.soft](./soft.md)
   A collision between user interface elements that are soft, exhibiting a large amount of compression or elasticity.
 
 

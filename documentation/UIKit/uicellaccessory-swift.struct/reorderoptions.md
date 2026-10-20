@@ -1,7 +1,8 @@
 # UICellAccessory.ReorderOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a reorder accessory.
 
@@ -10,7 +11,7 @@ Configuration options for a reorder accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,21 +22,22 @@ struct ReorderOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, showsVerticalSeparator: Bool?)](uicellaccessory-swift.struct/reorderoptions/init(ishidden:reservedlayoutwidth:tintcolor:showsverticalseparator:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, showsVerticalSeparator: Bool?)](./reorderoptions/init%28ishidden,reservedlayoutwidth,tintcolor,showsverticalseparator%29.md)
   Creates a reorder accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/reorderoptions/ishidden.md)
+- [var isHidden: Bool](./reorderoptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/reorderoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./reorderoptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/reorderoptions/tintcolor.md)
+- [var tintColor: UIColor?](./reorderoptions/tintcolor.md)
   The tint color to apply to the accessory.
-- [var showsVerticalSeparator: Bool](uicellaccessory-swift.struct/reorderoptions/showsverticalseparator.md)
+- [var showsVerticalSeparator: Bool](./reorderoptions/showsverticalseparator.md)
   A Boolean value that determines whether a vertical separator displays before the accessory when it appears after another accessory.
 
 ## See Also
 
-- [static func reorder(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.ReorderOptions) -> UICellAccessory](uicellaccessory-swift.struct/reorder(displayed:options:).md)
+### Creating a reorder accessory
+- [static func reorder(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.ReorderOptions) -> UICellAccessory](./reorder%28displayed,options%29.md)
   Creates a reorder system accessory with the specified display state and configuration options.
 
 

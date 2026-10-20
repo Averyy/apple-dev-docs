@@ -1,7 +1,8 @@
 # init(date:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor that stores the specified date value.
 
@@ -12,6 +13,10 @@ Creates a descriptor that stores the specified date value.
 
 ```swift
 init(date: Date)
+```
+
+```objc
++ (NSAppleEventDescriptor *) descriptorWithDate:(NSDate *) date;
 ```
 
 

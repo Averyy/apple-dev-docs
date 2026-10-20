@@ -1,14 +1,15 @@
 # EMBEDDED_PANIC_HEADER_FLAG_INTEGRATED_COPROC_INITIATED_PANIC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_PANIC_HEADER_FLAG_INTEGRATED_COPROC_INITIATED_PANIC
 ```
 

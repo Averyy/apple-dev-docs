@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of `AnonymousUserIdentity`.
 
@@ -9,7 +10,7 @@ Initializes an instance of `AnonymousUserIdentity`.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

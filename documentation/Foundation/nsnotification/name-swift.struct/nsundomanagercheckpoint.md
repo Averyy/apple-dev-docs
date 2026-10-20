@@ -1,7 +1,8 @@
 # NSUndoManagerCheckpoint
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted whenever an undo manager opens or closes an undo group (except when it opens a top-level group) and when checking the redo stack.
 
@@ -20,29 +21,34 @@ Posted whenever an undo manager opens or closes an undo group (except when it op
 static let NSUndoManagerCheckpoint: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSUndoManagerCheckpointNotification;
+```
+
 #### Discussion
 
 The notification object is the `NSUndoManager` object. This notification doesn’t contain a `userInfo` dictionary.
 
-The system posts this notification on the actor, thread, or dispatch queue that calls [`beginUndoGrouping()`](undomanager/beginundogrouping().md), [`endUndoGrouping()`](undomanager/endundogrouping().md), or [`canRedo`](undomanager/canredo.md).
+The system posts this notification on the actor, thread, or dispatch queue that calls [`beginUndoGrouping()`](../../undomanager/beginundogrouping%28%29.md), [`endUndoGrouping()`](../../undomanager/endundogrouping%28%29.md), or [`canRedo`](../../undomanager/canredo.md).
 
 ## See Also
 
-- [static let NSUndoManagerWillUndoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillundochange.md)
+### Working with notifications
+- [static let NSUndoManagerWillUndoChange: NSNotification.Name](./nsundomanagerwillundochange.md)
   Posted just before an undo manager performs an undo operation.
-- [static let NSUndoManagerDidUndoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidundochange.md)
+- [static let NSUndoManagerDidUndoChange: NSNotification.Name](./nsundomanagerdidundochange.md)
   Posted just after an undo manager performs an undo operation.
-- [static let NSUndoManagerWillRedoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillredochange.md)
+- [static let NSUndoManagerWillRedoChange: NSNotification.Name](./nsundomanagerwillredochange.md)
   Posted just before an undo manager performs a redo operation.
-- [static let NSUndoManagerDidRedoChange: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidredochange.md)
+- [static let NSUndoManagerDidRedoChange: NSNotification.Name](./nsundomanagerdidredochange.md)
   Posted just after an undo manager performs a redo operation.
-- [static let NSUndoManagerDidOpenUndoGroup: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidopenundogroup.md)
+- [static let NSUndoManagerDidOpenUndoGroup: NSNotification.Name](./nsundomanagerdidopenundogroup.md)
   Posted whenever an undo manager opens an undo group.
-- [static let NSUndoManagerWillCloseUndoGroup: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerwillcloseundogroup.md)
+- [static let NSUndoManagerWillCloseUndoGroup: NSNotification.Name](./nsundomanagerwillcloseundogroup.md)
   Posted before an undo manager closes an undo group.
-- [static let NSUndoManagerDidCloseUndoGroup: NSNotification.Name](nsnotification/name-swift.struct/nsundomanagerdidcloseundogroup.md)
+- [static let NSUndoManagerDidCloseUndoGroup: NSNotification.Name](./nsundomanagerdidcloseundogroup.md)
   Posted after an undo manager closes an undo group.
-- [let NSUndoManagerGroupIsDiscardableKey: String](nsundomanagergroupisdiscardablekey.md)
+- [let NSUndoManagerGroupIsDiscardableKey: String](../../nsundomanagergroupisdiscardablekey.md)
   A key, used in a notification’s user info, that indicates the undo group contains only discardable actions.
 
 

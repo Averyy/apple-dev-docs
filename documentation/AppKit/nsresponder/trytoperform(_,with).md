@@ -1,12 +1,13 @@
 # tryToPerform(_:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to perform the method indicated by an action with a specified argument.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Attempts to perform the method indicated by an action with a specified argument.
 func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 ```
 
+```objc
+- (BOOL) tryToPerform:(SEL) action with:(id) object;
+```
+
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if no responder is found that responds to `action;` otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+Returns [`false`](../../Swift/false.md) if no responder is found that responds to `action;` otherwise, [`true`](../../Swift/true.md).
 
 #### Discussion
 
-If the receiver responds to `action`, it invokes the method with `object` as the argument and returns [`true`](https://developer.apple.com/documentation/swift/true). If the receiver doesn’t respond, it sends this message to its next responder with the same selector and object.
+If the receiver responds to `action`, it invokes the method with `object` as the argument and returns [`true`](../../Swift/true.md). If the receiver doesn’t respond, it sends this message to its next responder with the same selector and object.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ If the receiver responds to `action`, it invokes the method with `object` as the
 
 ## See Also
 
-- [func sendAction(Selector, to: Any?, from: Any?) -> Bool](nsapplication/sendaction(_:to:from:).md)
+### Related Documentation
+- [func sendAction(Selector, to: Any?, from: Any?) -> Bool](../nsapplication/sendaction%28_,to,from%29.md)
   Sends the given action message to the given target.
 
 

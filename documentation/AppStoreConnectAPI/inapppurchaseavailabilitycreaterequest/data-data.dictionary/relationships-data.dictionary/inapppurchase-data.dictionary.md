@@ -1,21 +1,22 @@
 # InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.3+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase.Data](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase.Data](./inapppurchase-data.dictionary/data-data.dictionary.md)
   The request body you use to create an In-App Purchase availability.
 
 ## Properties
@@ -24,7 +25,8 @@ object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase
 
 ## See Also
 
-- [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerritories](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary.md)
+### Objects
+- [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerritories](./availableterritories-data.dictionary.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NWBrowser.Descriptor.applicationService(name:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns a browser descriptor for application services.
 

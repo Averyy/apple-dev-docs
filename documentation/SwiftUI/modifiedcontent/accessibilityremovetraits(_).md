@@ -1,7 +1,8 @@
 # accessibilityRemoveTraits(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the given traits from this view.
 
@@ -20,6 +21,8 @@ Removes the given traits from this view.
 nonisolated
 func accessibilityRemoveTraits(_ traits: AccessibilityTraits) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 
 ---

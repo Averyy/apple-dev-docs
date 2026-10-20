@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides an array of timeline entries for the current time and, optionally, any future times to update a widget.
@@ -23,8 +24,8 @@ func getTimeline(in context: Self.Context, completion: @escaping @Sendable (Time
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Making network requests in a widget extension](making-network-requests-in-a-widget-extension.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
+- [Making network requests in a widget extension](../making-network-requests-in-a-widget-extension.md)
 
 ## Parameters
 
@@ -33,13 +34,14 @@ func getTimeline(in context: Self.Context, completion: @escaping @Sendable (Time
 
 ## See Also
 
-- [func getSnapshot(in: Self.Context, completion: (Self.Entry) -> Void)](timelineprovider/getsnapshot(in:completion:).md)
+### Generating Timelines
+- [func getSnapshot(in: Self.Context, completion: (Self.Entry) -> Void)](./getsnapshot%28in,completion%29.md)
   Provides a timeline entry that represents the current time and state of a widget.
-- [func placeholder(in: Self.Context) -> Self.Entry](timelineprovider/placeholder(in:).md)
+- [func placeholder(in: Self.Context) -> Self.Entry](./placeholder%28in%29.md)
   Provides a timeline entry representing a placeholder version of the widget.
-- [associatedtype Entry : TimelineEntry](timelineprovider/entry.md)
+- [associatedtype Entry : TimelineEntry](./entry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [TimelineProvider.Context](timelineprovider/context.md)
+- [TimelineProvider.Context](./context.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
 
 

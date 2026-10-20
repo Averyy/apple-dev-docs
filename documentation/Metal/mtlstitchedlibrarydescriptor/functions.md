@@ -1,7 +1,8 @@
 # functions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of functions for creating the stitched library.
 
@@ -19,6 +20,10 @@ The list of functions for creating the stitched library.
 var functions: [any MTLFunction] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLFunction>> * functions;
+```
+
 #### Discussion
 
 The function objects need to all be created by the same Metal device object that you’ll use to create the library. The MSL functions referenced by these function objects need to be declared with the `stitchable` attribute, as in the example below:
@@ -33,7 +38,8 @@ The function objects need to all be created by the same Metal device object that
 
 ## See Also
 
-- [var functionGraphs: [MTLFunctionStitchingGraph]](mtlstitchedlibrarydescriptor/functiongraphs.md)
+### Configuring a stitched library
+- [var functionGraphs: [MTLFunctionStitchingGraph]](./functiongraphs.md)
   The function graphs that define the new stitched library’s functions.
 
 

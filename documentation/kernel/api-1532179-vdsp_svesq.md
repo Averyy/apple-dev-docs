@@ -1,7 +1,8 @@
 # vDSP_svesq
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the sum of values and the sum of squares in a single-precision vector.
 
@@ -10,7 +11,7 @@ Calculates the sum of values and the sum of squares in a single-precision vector
 
 ## Declaration
 
-```swift
+```c
 void vDSP_svesq(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
@@ -27,7 +28,7 @@ Sum          = sum(A[n],      0 <= n < N);
 SumOfSquares = sum(A[n] ** 2, 0 <= n < N);
 ```
 
-The following code shows an example of using [`vDSP_sve_svesq`](https://developer.apple.com/documentation/accelerate/vdsp_sve_svesq):
+The following code shows an example of using [`vDSP_sve_svesq`](../Accelerate/vdsp_sve_svesq.md):
 
 ```swift
 let stride = vDSP_Stride(1)
@@ -60,9 +61,10 @@ print(String(format: "sum %.4f", sum),
 
 ## See Also
 
-- [vDSP_rmsqv](1532207-vdsp_rmsqv.md)
+### Vector Reduction Functions
+- [vDSP_rmsqv](./api-1532207-vdsp_rmsqv.md)
   Calculates the root mean square of a single-precision vector.
-- [vDSP_svs](1532174-vdsp_svs.md)
+- [vDSP_svs](./api-1532174-vdsp_svs.md)
   Calculates the sum of signed squares in a single-precision vector.
 
 

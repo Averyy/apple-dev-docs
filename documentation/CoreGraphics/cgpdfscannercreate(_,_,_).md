@@ -1,7 +1,8 @@
 # CGPDFScannerCreate(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a PDF scanner.
 
@@ -10,7 +11,7 @@ Creates a PDF scanner.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,23 @@ Creates a PDF scanner.
 func CGPDFScannerCreate(_ cs: CGPDFContentStreamRef, _ table: CGPDFOperatorTableRef?, _ info: UnsafeMutableRawPointer?) -> CGPDFScannerRef
 ```
 
+```c
+extern CGPDFScannerRefCGPDFScannerCreate(CGPDFContentStreamRef cs, CGPDFOperatorTableRef table, void *info);
+```
+
 #### Return Value
 
-A PDF scanner object. In Objective-C, you’re responsible for releasing this object by calling the function [`CGPDFScannerRelease(_:)`](cgpdfscannerrelease(_:).md).
+A PDF scanner object. In Objective-C, you’re responsible for releasing this object by calling the function [`CGPDFScannerRelease(_:)`](./cgpdfscannerrelease%28_%29.md).
 
 #### Discussion
 
-When you want to parse the contents of the PDF stream, call the function [`CGPDFScannerScan(_:)`](cgpdfscannerscan(_:).md).
+When you want to parse the contents of the PDF stream, call the function [`CGPDFScannerScan(_:)`](./cgpdfscannerscan%28_%29.md).
 
 ## Parameters
 
-- `cs`: A PDF content stream object. (See [`CGPDFContentStream`](cgpdfcontentstream.md).)
+- `cs`: A PDF content stream object. (See [CGPDFContentStream](./cgpdfcontentstream.md).)
 - `table`: A table of callbacks for the PDF operators you want to handle.
-- `info`: A pointer to data you want passed to your callback function. (See [`CGPDFOperatorTable`](cgpdfoperatortable.md).)
+- `info`: A pointer to data you want passed to your callback function. (See [CGPDFOperatorTable](./cgpdfoperatortable.md).)
 
 
 ---

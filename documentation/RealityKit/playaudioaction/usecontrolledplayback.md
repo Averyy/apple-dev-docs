@@ -1,7 +1,8 @@
 # useControlledPlayback
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether this action has control over the playback of the audio.
 

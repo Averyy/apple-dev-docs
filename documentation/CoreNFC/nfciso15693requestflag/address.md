@@ -1,7 +1,8 @@
 # address
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -12,6 +13,10 @@
 
 ```swift
 static var address: NFCISO15693RequestFlag { get }
+```
+
+```c
+NFCISO15693RequestFlagAddress
 ```
 
 

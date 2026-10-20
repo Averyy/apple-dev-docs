@@ -2,24 +2,29 @@
 
 **Framework**: XCUIAutomation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Takes a screenshot of a screen or UI element’s current visual state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func screenshot() -> XCUIScreenshot
+```
+
+```objc
+- (XCUIScreenshot *) screenshot;
 ```
 
 #### Discussion

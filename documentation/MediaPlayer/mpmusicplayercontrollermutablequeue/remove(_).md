@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a media item from the music player’s queue.
 
@@ -18,13 +19,18 @@ Removes a media item from the music player’s queue.
 func remove(_ item: MPMediaItem)
 ```
 
+```objc
+- (void) removeItem:(MPMediaItem *) item;
+```
+
 ## Parameters
 
 - `item`: The media item to remove from the queue.
 
 ## See Also
 
-- [func insert(MPMusicPlayerQueueDescriptor, after: MPMediaItem?)](mpmusicplayercontrollermutablequeue/insert(_:after:).md)
+### Adding and removing items
+- [func insert(MPMusicPlayerQueueDescriptor, after: MPMediaItem?)](./insert%28_,after%29.md)
   Inserts a modified queue after the designated media item.
 
 

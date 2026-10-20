@@ -1,18 +1,21 @@
 # navigationViewStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for navigation views within this view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Replace a styled [`NavigationView`](../navigationview.md) with a [`NavigationStack`](../navigationstack.md) or [`NavigationSplitView`](../navigationsplitview.md). For more information, see [Migrating to new navigation types](../migrating-to-new-navigation-types.md).
 
 ## Declaration
 
@@ -25,9 +28,9 @@ func navigationViewStyle<S>(_ style: S) -> some View where S : NavigationViewSty
 
 Use this modifier to change the appearance and behavior of navigation views. For example, by default, navigation views appear with multiple columns in wider environments, like iPad in landscape orientation:
 
-![A screenshot of an iPad in landscape orientation mode showing a](/images/com.apple.SwiftUI/View-navigationViewStyle-1@2x.png)
+![A screenshot of an iPad in landscape orientation mode showing a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-navigationViewStyle-1@2x.png)
 
-You can apply the [`stack`](navigationviewstyle/stack.md) style to force single-column stack navigation in these environments:
+You can apply the [`stack`](../navigationviewstyle/stack.md) style to force single-column stack navigation in these environments:
 
 ```swift
 NavigationView {
@@ -43,11 +46,12 @@ NavigationView {
 .navigationViewStyle(.stack)
 ```
 
-![A screenshot of an iPad in landscape orientation mode showing a single column containing the list Purple, Pink, and Orange.](/images/com.apple.SwiftUI/View-navigationViewStyle-2@2x.png)
+![A screenshot of an iPad in landscape orientation mode showing a single column containing the list Purple, Pink, and Orange.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-navigationViewStyle-2@2x.png)
 
 ## See Also
 
-- [protocol NavigationViewStyle](navigationviewstyle.md)
+### Styling navigation views
+- [protocol NavigationViewStyle](../navigationviewstyle.md)
   A specification for the appearance and interaction of a navigation view.
 
 

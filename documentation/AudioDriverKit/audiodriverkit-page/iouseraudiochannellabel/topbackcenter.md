@@ -1,7 +1,8 @@
 # TopBackCenter
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The top-rear–center channel.
 
@@ -10,17 +11,18 @@ The top-rear–center channel.
 
 ## Declaration
 
-```swift
+```c
 TopBackCenter
 ```
 
 ## See Also
 
-- [TopCenterSurround](audiodriverkit/iouseraudiochannellabel/topcentersurround.md)
+### Back Channels
+- [TopCenterSurround](./topcentersurround.md)
   A synonym for the top-rear–center channel.
-- [TopBackLeft](audiodriverkit/iouseraudiochannellabel/topbackleft.md)
+- [TopBackLeft](./topbackleft.md)
   The top-rear–left channel.
-- [TopBackRight](audiodriverkit/iouseraudiochannellabel/topbackright.md)
+- [TopBackRight](./topbackright.md)
   The top-rear–right channel.
 
 

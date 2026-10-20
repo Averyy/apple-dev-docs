@@ -1,7 +1,8 @@
 # destructive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The destructive dismiss behavior.
 
@@ -28,7 +29,8 @@ On iOS, this behavior behaves the same as `interactive`.
 
 ## See Also
 
-- [static let interactive: DismissBehavior](dismissbehavior/interactive.md)
+### Getting behaviors
+- [static let interactive: DismissBehavior](./interactive.md)
   The interactive dismiss behavior.
 
 

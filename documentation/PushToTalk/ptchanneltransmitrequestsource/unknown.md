@@ -1,7 +1,8 @@
 # PTChannelTransmitRequestSource.unknown
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transmission request that indicates an unknown reason.
 
@@ -16,13 +17,18 @@ A transmission request that indicates an unknown reason.
 case unknown
 ```
 
+```c
+PTChannelTransmitRequestSourceUnknown
+```
+
 ## See Also
 
-- [PTChannelTransmitRequestSource.userRequest](ptchanneltransmitrequestsource/userrequest.md)
+### Transmission sources
+- [PTChannelTransmitRequestSource.userRequest](./userrequest.md)
   A transmission request that indicates the user pressed the transmit button in the system user interface.
-- [PTChannelTransmitRequestSource.developerRequest](ptchanneltransmitrequestsource/developerrequest.md)
+- [PTChannelTransmitRequestSource.developerRequest](./developerrequest.md)
   A transmission request that indicates the app calls the begin transmission method.
-- [PTChannelTransmitRequestSource.handsfreeButton](ptchanneltransmitrequestsource/handsfreebutton.md)
+- [PTChannelTransmitRequestSource.handsfreeButton](./handsfreebutton.md)
   A transmission request that indicates a user pressed a button on a hands-free device.
 
 

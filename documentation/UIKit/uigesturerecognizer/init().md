@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gesture recognizer.
 
@@ -9,7 +10,7 @@ Creates a gesture recognizer.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a gesture recognizer.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(target: Any?, action: Selector?)](uigesturerecognizer/init(target:action:).md)
+### Initializing a gesture recognizer
+- [init(target: Any?, action: Selector?)](./init%28target,action%29.md)
   Creates a gesture recognizer with a target and an action selector.
-- [convenience init?(coder: NSCoder)](uigesturerecognizer/init(coder:).md)
+- [convenience init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a gesture recognizer from data in an unarchiver.
 
 

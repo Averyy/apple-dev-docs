@@ -1,9 +1,10 @@
 # connection
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An [`NEVPNConnection`](nevpnconnection.md) object that is used to control the VPN tunnel specified by the VPN configuration.
+An [`NEVPNConnection`](../nevpnconnection.md) object that is used to control the VPN tunnel specified by the VPN configuration.
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,10 @@ An [`NEVPNConnection`](nevpnconnection.md) object that is used to control the VP
 
 ```swift
 var connection: NEVPNConnection { get }
+```
+
+```objc
+@property (readonly) NEVPNConnection * connection;
 ```
 
 #### Discussion

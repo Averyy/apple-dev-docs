@@ -1,7 +1,8 @@
 # DecodingConfigurationProviding
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol whose conformers provide a configuration instance to help decode types that don’t support encoding by themselves.
 
@@ -23,36 +24,37 @@ protocol DecodingConfigurationProviding
 ## Topics
 
 ### Accessing the Configuration
-- [static var decodingConfiguration: Self.DecodingConfiguration](decodingconfigurationproviding/decodingconfiguration-swift.type.property.md)
+- [static var decodingConfiguration: Self.DecodingConfiguration](./decodingconfigurationproviding/decodingconfiguration-swift.type.property.md)
   The configuration instance that assists in decoding another type.
 ### Supporting Types
-- [associatedtype DecodingConfiguration](decodingconfigurationproviding/decodingconfiguration-swift.associatedtype.md)
+- [associatedtype DecodingConfiguration](./decodingconfigurationproviding/decodingconfiguration-swift.associatedtype.md)
 
 ## Relationships
 
 ### Inherited By
-- [AttributeScope](attributescope.md)
+- [AttributeScope](./attributescope.md)
 ### Conforming Types
-- [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
-- [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
-- [AttributeScopes.FoundationAttributes](attributescopes/foundationattributes.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
-- [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
-- [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
-- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
-- [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
+- [AttributeScopes.AccessibilityAttributes](./attributescopes/accessibilityattributes.md)
+- [AttributeScopes.AppKitAttributes](./attributescopes/appkitattributes.md)
+- [AttributeScopes.FoundationAttributes](./attributescopes/foundationattributes.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes](./attributescopes/foundationattributes/numberformatattributes.md)
+- [AttributeScopes.SpeechAttributes](./attributescopes/speechattributes.md)
+- [AttributeScopes.SwiftUIAttributes](./attributescopes/swiftuiattributes.md)
+- [AttributeScopes.TranslationAttributes](./attributescopes/translationattributes.md)
+- [AttributeScopes.UIKitAttributes](./attributescopes/uikitattributes.md)
 
 ## See Also
 
-- [typealias CodableWithConfiguration](codablewithconfiguration.md)
+### Serializing Arbitrary Payloads
+- [typealias CodableWithConfiguration](./codablewithconfiguration.md)
   A type that can convert itself into and out of an external representation with the help of a configuration that handles encoding contained types.
-- [struct CodableConfiguration](codableconfiguration.md)
+- [struct CodableConfiguration](./codableconfiguration.md)
   A property wrapper that makes a type codable, by supplying a configuration that provides additional information for serialization.
-- [protocol DecodableWithConfiguration](decodablewithconfiguration.md)
+- [protocol DecodableWithConfiguration](./decodablewithconfiguration.md)
   A protocol for types that support decoding when supplied with an additional configuration type.
-- [protocol EncodableWithConfiguration](encodablewithconfiguration.md)
+- [protocol EncodableWithConfiguration](./encodablewithconfiguration.md)
   A protocol for types that support encoding when supplied with an additional configuration type.
-- [protocol EncodingConfigurationProviding](encodingconfigurationproviding.md)
+- [protocol EncodingConfigurationProviding](./encodingconfigurationproviding.md)
   A protocol whose conformers provide a configuration instance to help encode types that don’t support encoding by themselves.
 
 

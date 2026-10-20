@@ -1,7 +1,8 @@
 # withSession(_:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously begins a session, executes the given closure, and ends the session.
 
@@ -26,7 +27,8 @@ func withSession<T>(_ body: @escaping () throws -> T) throws -> T
 
 ## See Also
 
-- [func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data?, le: Int?, reply: (Data?, UInt16, (any Error)?) -> Void)](tksmartcard/send(ins:p1:p2:data:le:reply:).md)
+### Transmitting Data
+- [func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data?, le: Int?, reply: (Data?, UInt16, (any Error)?) -> Void)](./send%28ins,p1,p2,data,le,reply%29.md)
   Asynchronously transmits an APDU command to the card, returning the response in a completion handler.
 
 

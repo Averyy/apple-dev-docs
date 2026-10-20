@@ -1,7 +1,8 @@
 # unspecified
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Doesn’t specify placement.
 
@@ -16,7 +17,8 @@ static var unspecified: AVExperienceController.ExpandedConfiguration.Placement {
 
 ## See Also
 
-- [static func over(scene: UIScene) -> AVExperienceController.ExpandedConfiguration.Placement](avexperiencecontroller/expandedconfiguration/placement/over(scene:).md)
+### Placements
+- [static func over(scene: UIScene) -> AVExperienceController.ExpandedConfiguration.Placement](./over%28scene%29.md)
   Places the video over the provided scene.
 
 

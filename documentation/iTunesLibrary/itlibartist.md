@@ -1,7 +1,8 @@
 # ITLibArtist
 
 **Framework**: iTunes Library  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This class represents an artist, such as the performer of a song.
 
@@ -15,37 +16,42 @@ This class represents an artist, such as the performer of a song.
 class ITLibArtist
 ```
 
+```objc
+@interface ITLibArtist : NSObject
+```
+
 ## Topics
 
 ### Getting Artist Info
-- [var name: String?](itlibartist/name.md)
+- [var name: String?](./itlibartist/name.md)
   The name of the artist.
-- [var persistentID: NSNumber](itlibartist/persistentid.md)
+- [var persistentID: NSNumber](./itlibartist/persistentid.md)
   The unique identifier of the artist.
-- [var sortName: String?](itlibartist/sortname.md)
+- [var sortName: String?](./itlibartist/sortname.md)
   The name of the artist to use when sorting.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ITLibMediaItem](itlibmediaitem.md)
+### Media Items
+- [class ITLibMediaItem](./itlibmediaitem.md)
   This class describes a media item (a track) in the iTunes library, such as a song, a video, or a podcast.
-- [class ITLibMediaEntity](itlibmediaentity.md)
+- [class ITLibMediaEntity](./itlibmediaentity.md)
   This class describes a media entity, which can be a media item, such as an audio track.
-- [class ITLibArtwork](itlibartwork.md)
+- [class ITLibArtwork](./itlibartwork.md)
   This class represents the artwork for a media item.
-- [class ITLibMediaItemVideoInfo](itlibmediaitemvideoinfo.md)
+- [class ITLibMediaItemVideoInfo](./itlibmediaitemvideoinfo.md)
   This class encapsulates the video information of a video media item.
 
 

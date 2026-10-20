@@ -1,13 +1,14 @@
 # ConnectedSpatialEndpointObserver.UnavailableError
 
 **Framework**: Spatial Preview  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-An error thrown when accessing the [`endpoint`](connectedspatialendpointobserver/endpoint.md) property while no Mac Virtual Display device is available.
+An error thrown when accessing the [`endpoint`](./endpoint.md) property while no Mac Virtual Display device is available.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,18 +19,19 @@ struct UnavailableError
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SpatialPreviewSessionState](spatialpreviewsessionstate.md)
+### Session state and errors
+- [enum SpatialPreviewSessionState](../spatialpreviewsessionstate.md)
   Indicates the state of the session and the health of the underlying connection.
-- [enum SpatialPreviewSessionError](spatialpreviewsessionerror.md)
-- [USDPreviewSession.Error](usdpreviewsession/error.md)
+- [enum SpatialPreviewSessionError](../spatialpreviewsessionerror.md)
+- [USDPreviewSession.Error](../usdpreviewsession/error.md)
   Errors that can occur during a USD preview session
-- [USDPreviewSession.Event](usdpreviewsession/event.md)
+- [USDPreviewSession.Event](../usdpreviewsession/event.md)
   Events emitted during a USD preview session
 
 

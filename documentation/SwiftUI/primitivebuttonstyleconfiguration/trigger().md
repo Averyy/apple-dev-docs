@@ -1,7 +1,8 @@
 # trigger()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the button’s action.
 

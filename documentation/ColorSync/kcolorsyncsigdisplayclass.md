@@ -1,7 +1,8 @@
 # kColorSyncSigDisplayClass
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature identifying a display device profile class.
 
@@ -20,19 +21,24 @@ The signature identifying a display device profile class.
 var kColorSyncSigDisplayClass: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncSigDisplayClass;
+```
+
 ## See Also
 
-- [var kColorSyncSigAbstractClass: Unmanaged<CFString>!](kcolorsyncsigabstractclass.md)
+### Identifying profile classes
+- [var kColorSyncSigAbstractClass: Unmanaged<CFString>!](./kcolorsyncsigabstractclass.md)
   The signature identifying an abstract profile class.
-- [var kColorSyncSigColorSpaceClass: Unmanaged<CFString>!](kcolorsyncsigcolorspaceclass.md)
+- [var kColorSyncSigColorSpaceClass: Unmanaged<CFString>!](./kcolorsyncsigcolorspaceclass.md)
   The signature identifying a color-space conversion profile class.
-- [var kColorSyncSigInputClass: Unmanaged<CFString>!](kcolorsyncsiginputclass.md)
+- [var kColorSyncSigInputClass: Unmanaged<CFString>!](./kcolorsyncsiginputclass.md)
   The signature identifying an input (scanner or camera) device profile class.
-- [var kColorSyncSigLinkClass: Unmanaged<CFString>!](kcolorsyncsiglinkclass.md)
+- [var kColorSyncSigLinkClass: Unmanaged<CFString>!](./kcolorsyncsiglinkclass.md)
   The signature identifying a device-link profile class.
-- [var kColorSyncSigNamedColorClass: Unmanaged<CFString>!](kcolorsyncsignamedcolorclass.md)
+- [var kColorSyncSigNamedColorClass: Unmanaged<CFString>!](./kcolorsyncsignamedcolorclass.md)
   The signature identifying a named color profile class.
-- [var kColorSyncSigOutputClass: Unmanaged<CFString>!](kcolorsyncsigoutputclass.md)
+- [var kColorSyncSigOutputClass: Unmanaged<CFString>!](./kcolorsyncsigoutputclass.md)
   The signature identifying an output (printer) device profile class.
 
 

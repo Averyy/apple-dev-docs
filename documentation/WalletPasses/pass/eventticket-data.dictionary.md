@@ -1,7 +1,8 @@
 # Pass.EventTicket
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the groups of fields that display the information for an event ticket.
 
@@ -12,7 +13,7 @@ An object that represents the groups of fields that display the information for 
 
 ## Declaration
 
-```swift
+```
 object Pass.EventTicket
 ```
 
@@ -23,19 +24,20 @@ Use the event ticket pass type to give people entry to events like concerts, spo
 ## Relationships
 
 ### Inherits From
-- [PassFields](passfields.md)
+- [PassFields](../passfields.md)
 
 ## See Also
 
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+### Event passes
+- [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
   Use semantic tags to provide up-to-date information for event passes.
-- [object SemanticTags](semantictags.md)
+- [object SemanticTags](../semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](../semantictagtype.md)
   A compilation of data object types for semantic tags.
-- [object UpcomingPassInformationEntry](upcomingpassinformationentry.md)
+- [object UpcomingPassInformationEntry](../upcomingpassinformationentry.md)
   An object that represents the ordered list of all upcoming pass information entries.
-- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+- [object UpcomingPassInformationEntryType](../upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
 
 

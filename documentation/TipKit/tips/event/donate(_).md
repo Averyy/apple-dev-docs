@@ -1,7 +1,8 @@
 # donate(_:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Donates an event along with its associated `Donation` value.
 
@@ -20,17 +21,20 @@ Donates an event along with its associated `Donation` value.
 func donate(_ donation: DonationInfo) async
 ```
 
+Available when `DonationInfo` conforms to `Decodable`, `Encodable`, and `Sendable`.
+
 ## Parameters
 
 - `donation`: Associated donation value.
 
 ## See Also
 
-- [func donate() async](tips/event/donate.md)
+### Add Donations
+- [func donate() async](./donate%28%29.md)
   Donates an event with no associated `Donation` value.
-- [func sendDonation((() -> Void)?)](tips/event/senddonation(_:).md)
+- [func sendDonation((() -> Void)?)](./senddonation%28_%29.md)
   Asynchronously donates an event with no associated `Donation` value.
-- [func sendDonation(DonationInfo, (() -> Void)?)](tips/event/senddonation(_:_:).md)
+- [func sendDonation(DonationInfo, (() -> Void)?)](./senddonation%28_,_%29.md)
   Asynchronously donates an event along with its associated `Donation` value.
 
 

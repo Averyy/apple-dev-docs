@@ -1,7 +1,8 @@
 # init(fetchRequest:completionBlock:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new asynchronous fetch request configured with the provided fetch request and completion block.
 
@@ -10,7 +11,7 @@ Initializes a new asynchronous fetch request configured with the provided fetch 
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Initializes a new asynchronous fetch request configured with the provided fetch 
 
 ```swift
 init(fetchRequest request: NSFetchRequest<ResultType>, completionBlock blk: ((NSAsynchronousFetchResult<ResultType>) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithFetchRequest:(NSFetchRequest<id<NSFetchRequestResult>> *) request completionBlock:(void (^)(NSAsynchronousFetchResult<id<NSFetchRequestResult>> *)) blk;
 ```
 
 

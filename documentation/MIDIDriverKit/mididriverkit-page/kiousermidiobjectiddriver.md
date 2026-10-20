@@ -1,14 +1,15 @@
 # kIOUserMIDIObjectIDDriver
 
 **Framework**: MIDIDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const IOUserMIDIObjectID kIOUserMIDIObjectIDDriver;
 ```
 

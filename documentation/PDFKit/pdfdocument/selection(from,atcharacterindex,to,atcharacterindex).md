@@ -1,7 +1,8 @@
 # selection(from:atCharacterIndex:to:atCharacterIndex:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the specified selection based on starting and ending character indexes.
 
@@ -19,17 +20,22 @@ Returns the specified selection based on starting and ending character indexes.
 func selection(from startPage: PDFPage, atCharacterIndex startCharacter: Int, to endPage: PDFPage, atCharacterIndex endCharacter: Int) -> PDFSelection?
 ```
 
+```objc
+- (PDFSelection *) selectionFromPage:(PDFPage *) startPage atCharacterIndex:(NSUInteger) startCharacter toPage:(PDFPage *) endPage atCharacterIndex:(NSUInteger) endCharacter;
+```
+
 #### Discussion
 
-The selection begins at `startChar` on `startPage` and ends at `endChar` on `endPage`. The starting and ending index values must be in the range of the number of characters (as returned by [`numberOfCharacters`](pdfpage/numberofcharacters.md)) within the respective `PDFPage` objects.
+The selection begins at `startChar` on `startPage` and ends at `endChar` on `endPage`. The starting and ending index values must be in the range of the number of characters (as returned by [`numberOfCharacters`](../pdfpage/numberofcharacters.md)) within the respective `PDFPage` objects.
 
 ## See Also
 
-- [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint) -> PDFSelection?](pdfdocument/selection(from:at:to:at:).md)
+### Working with Selections and Searches
+- [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint) -> PDFSelection?](./selection%28from,at,to,at%29.md)
   Returns the specified selection based on starting and ending points.
-- [var selectionForEntireDocument: PDFSelection?](pdfdocument/selectionforentiredocument.md)
+- [var selectionForEntireDocument: PDFSelection?](./selectionforentiredocument.md)
   Returns a selection representing the textual content of the entire document.
-- [Search Operations](search-operations.md)
+- [Search Operations](../search-operations.md)
   Find and search in PDFs.
 
 

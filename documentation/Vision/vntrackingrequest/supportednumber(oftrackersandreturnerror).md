@@ -1,7 +1,8 @@
 # supportedNumber(ofTrackersAndReturnError:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the maximum number of simultaneous trackers for the request.
 
@@ -17,6 +18,10 @@ Returns the maximum number of simultaneous trackers for the request.
 
 ```swift
 func supportedNumber(ofTrackersAndReturnError error: NSErrorPointer) -> Int
+```
+
+```objc
+- (NSUInteger) supportedNumberOfTrackersAndReturnError:(NSError **) error;
 ```
 
 #### Return Value

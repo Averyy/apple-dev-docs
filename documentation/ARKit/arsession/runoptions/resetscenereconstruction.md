@@ -1,7 +1,8 @@
 # resetSceneReconstruction
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to reset the scene mesh.
 
@@ -15,17 +16,22 @@ An option to reset the scene mesh.
 static var resetSceneReconstruction: ARSession.RunOptions { get }
 ```
 
+```c
+ARSessionRunOptionResetSceneReconstruction
+```
+
 #### Discussion
 
-When you reset scene reconstruction, ARKit removes any existing mesh anchors ([`ARMeshAnchor`](armeshanchor.md)) from the session.
+When you reset scene reconstruction, ARKit removes any existing mesh anchors ([`ARMeshAnchor`](../../armeshanchor.md)) from the session.
 
 ## See Also
 
-- [static var resetTracking: ARSession.RunOptions](arsession/runoptions/resettracking.md)
+### Run Options
+- [static var resetTracking: ARSession.RunOptions](./resettracking.md)
   An option to reset the device’s position from the session’s previous run.
-- [static var removeExistingAnchors: ARSession.RunOptions](arsession/runoptions/removeexistinganchors.md)
+- [static var removeExistingAnchors: ARSession.RunOptions](./removeexistinganchors.md)
   An option to remove any anchor objects associated with the session’s previous run.
-- [static var stopTrackedRaycasts: ARSession.RunOptions](arsession/runoptions/stoptrackedraycasts.md)
+- [static var stopTrackedRaycasts: ARSession.RunOptions](./stoptrackedraycasts.md)
   An option to stop all active tracked raycasts.
 
 

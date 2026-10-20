@@ -1,7 +1,8 @@
 # NSHomeDirectoryForUser(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the path to a given user’s home directory.
 
@@ -20,6 +21,10 @@ Returns the path to a given user’s home directory.
 func NSHomeDirectoryForUser(_ userName: String?) -> String?
 ```
 
+```c
+extern NSString *NSHomeDirectoryForUser(NSString *userName);
+```
+
 #### Return Value
 
 The path to the home directory for the user specified by `userName`.
@@ -34,19 +39,20 @@ For more information on file system utilities, see Low-Level File Management Pro
 
 ## See Also
 
-- [var homeDirectoryForCurrentUser: URL](filemanager/homedirectoryforcurrentuser.md)
+### Accessing user directories
+- [var homeDirectoryForCurrentUser: URL](./filemanager/homedirectoryforcurrentuser.md)
   The home directory for the current user.
-- [func NSHomeDirectory() -> String](nshomedirectory().md)
+- [func NSHomeDirectory() -> String](./nshomedirectory%28%29.md)
   Returns the path to either the user’s or application’s home directory, depending on the platform.
-- [func NSUserName() -> String](nsusername().md)
+- [func NSUserName() -> String](./nsusername%28%29.md)
   Returns the logon name of the current user.
-- [func NSFullUserName() -> String](nsfullusername().md)
+- [func NSFullUserName() -> String](./nsfullusername%28%29.md)
   Returns a string containing the full name of the current user.
-- [func homeDirectory(forUser: String) -> URL?](filemanager/homedirectory(foruser:).md)
+- [func homeDirectory(forUser: String) -> URL?](./filemanager/homedirectory%28foruser%29.md)
   Returns the home directory for the specified user.
-- [var temporaryDirectory: URL](filemanager/temporarydirectory.md)
+- [var temporaryDirectory: URL](./filemanager/temporarydirectory.md)
   The temporary directory for the current user.
-- [func NSTemporaryDirectory() -> String](nstemporarydirectory().md)
+- [func NSTemporaryDirectory() -> String](./nstemporarydirectory%28%29.md)
   Returns the path of the temporary directory for the current user.
 
 

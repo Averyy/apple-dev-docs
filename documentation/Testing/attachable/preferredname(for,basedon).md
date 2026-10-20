@@ -2,6 +2,7 @@
 
 **Framework**: Swift Testing  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generate a preferred name for the given attachment.
@@ -28,6 +29,12 @@ The testing library uses this function to determine the best name to use when sa
 
 - `attachment`: The attachment that needs to be named.
 - `suggestedName`: A suggested name to use as the basis of the preferred name. This string was provided by the developer when they initialized `attachment`.
+
+## Default Implementations
+
+### Attachable Implementations
+- [func preferredName(for: borrowing Attachment<Self>, basedOn: String) -> String](./preferredname%28for,basedon%29-9bptj.md)
+- [func preferredName(for: borrowing Attachment<Self>, basedOn: String) -> String](./preferredname%28for,basedon%29-aal5.md)
 
 
 ---

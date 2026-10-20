@@ -1,7 +1,8 @@
 # AVContentAuthorizationStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value representing the status of a content authorization request.
 
@@ -14,6 +15,10 @@ A value representing the status of a content authorization request.
 enum AVContentAuthorizationStatus
 ```
 
+```c
+enum AVContentAuthorizationStatus : NSInteger;
+```
+
 #### Overview
 
 Even if authorization is completed by the user, there is no guarantee that the content will then be authorized. You should re-check whether the content is authorized before proceeding.
@@ -21,46 +26,47 @@ Even if authorization is completed by the user, there is no guarantee that the c
 ## Topics
 
 ### Content authorization statuses
-- [AVContentAuthorizationStatus.unknown](avcontentauthorizationstatus/unknown.md)
+- [AVContentAuthorizationStatus.unknown](./avcontentauthorizationstatus/unknown.md)
   The content authorization content request hasn’t completed.
-- [AVContentAuthorizationStatus.completed](avcontentauthorizationstatus/completed.md)
+- [AVContentAuthorizationStatus.completed](./avcontentauthorizationstatus/completed.md)
   The last completed call to request content authorization completed.
-- [AVContentAuthorizationStatus.cancelled](avcontentauthorizationstatus/cancelled.md)
+- [AVContentAuthorizationStatus.cancelled](./avcontentauthorizationstatus/cancelled.md)
   The last call to request content authorization was cancelled by the user.
-- [AVContentAuthorizationStatus.timedOut](avcontentauthorizationstatus/timedout.md)
+- [AVContentAuthorizationStatus.timedOut](./avcontentauthorizationstatus/timedout.md)
   The last call to request content authorization was cancelled because the timeout interval was reached.
-- [AVContentAuthorizationStatus.busy](avcontentauthorizationstatus/busy.md)
+- [AVContentAuthorizationStatus.busy](./avcontentauthorizationstatus/busy.md)
   The last call to request content authorization couldn’t be completed because another asset is currently attempting authorization.
-- [AVContentAuthorizationStatus.notAvailable](avcontentauthorizationstatus/notavailable.md)
+- [AVContentAuthorizationStatus.notAvailable](./avcontentauthorizationstatus/notavailable.md)
   The last call to request content authorization couldn’t be completed because there was no known mechanism by which to attempt authorization.
-- [AVContentAuthorizationStatus.notPossible](avcontentauthorizationstatus/notpossible.md)
+- [AVContentAuthorizationStatus.notPossible](./avcontentauthorizationstatus/notpossible.md)
   The last call to request content authorization couldn’t be completed in a non-recoverable way.
 ### Initializers
-- [init?(rawValue: Int)](avcontentauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcontentauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isContentAuthorizedForPlayback: Bool](avplayeritem/iscontentauthorizedforplayback.md)
+### Managing playback authorization in macOS
+- [var isContentAuthorizedForPlayback: Bool](./avplayeritem/iscontentauthorizedforplayback.md)
   A Boolean value that indicates whether the content has been authorized by the user.
-- [var isAuthorizationRequiredForPlayback: Bool](avplayeritem/isauthorizationrequiredforplayback.md)
+- [var isAuthorizationRequiredForPlayback: Bool](./avplayeritem/isauthorizationrequiredforplayback.md)
   A Boolean value that indicates whether authorization is required to play the content.
-- [var isApplicationAuthorizedForPlayback: Bool](avplayeritem/isapplicationauthorizedforplayback.md)
+- [var isApplicationAuthorizedForPlayback: Bool](./avplayeritem/isapplicationauthorizedforplayback.md)
   A Boolean value that indicates whether the application can be used to play the content.
-- [func requestContentAuthorizationAsynchronously(withTimeoutInterval: TimeInterval, completionHandler: () -> Void)](avplayeritem/requestcontentauthorizationasynchronously(withtimeoutinterval:completionhandler:).md)
+- [func requestContentAuthorizationAsynchronously(withTimeoutInterval: TimeInterval, completionHandler: () -> Void)](./avplayeritem/requestcontentauthorizationasynchronously%28withtimeoutinterval,completionhandler%29.md)
   Presents the user the opportunity to authorize the content for playback.
-- [var contentAuthorizationRequestStatus: AVContentAuthorizationStatus](avplayeritem/contentauthorizationrequeststatus.md)
+- [var contentAuthorizationRequestStatus: AVContentAuthorizationStatus](./avplayeritem/contentauthorizationrequeststatus.md)
   The status of the most recent content authorization request.
-- [func cancelContentAuthorizationRequest()](avplayeritem/cancelcontentauthorizationrequest.md)
+- [func cancelContentAuthorizationRequest()](./avplayeritem/cancelcontentauthorizationrequest%28%29.md)
   Cancels the currently outstanding content authorization request.
 
 

@@ -1,7 +1,8 @@
 # kMIDIPropertyProtocolID
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The native protocol in which the endpoint communicates.
 
@@ -16,6 +17,10 @@ The native protocol in which the endpoint communicates.
 
 ```swift
 let kMIDIPropertyProtocolID: CFString
+```
+
+```c
+extern CFStringRef const kMIDIPropertyProtocolID;
 ```
 
 #### Discussion

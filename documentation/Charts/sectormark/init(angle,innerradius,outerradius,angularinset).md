@@ -1,7 +1,8 @@
 # init(angle:innerRadius:outerRadius:angularInset:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sector mark, which uses the angular size to represent the proportion of the value to the sum of all values.
 

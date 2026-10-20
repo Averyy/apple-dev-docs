@@ -1,12 +1,13 @@
 # NSPasteboard.PasteboardType
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported pasteboard types.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,87 +15,92 @@ The supported pasteboard types.
 struct PasteboardType
 ```
 
+```c
+typedef NSString * NSPasteboardType;
+```
+
 ## Topics
 
 ### Pasteboard Types
-- [static let URL: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/url.md)
+- [static let URL: NSPasteboard.PasteboardType](./pasteboardtype/url.md)
   URL data for one file or resource.
-- [static let collaborationMetadata: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/collaborationmetadata.md)
+- [static let collaborationMetadata: NSPasteboard.PasteboardType](./pasteboardtype/collaborationmetadata.md)
   An object you use for conveying data during a collaboration.
-- [static let color: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/color.md)
+- [static let color: NSPasteboard.PasteboardType](./pasteboardtype/color.md)
   Color data.
-- [static let fileContents: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/filecontents.md)
+- [static let fileContents: NSPasteboard.PasteboardType](./pasteboardtype/filecontents.md)
   A representation of a file’s contents.
-- [static let fileURL: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/fileurl.md)
+- [static let fileURL: NSPasteboard.PasteboardType](./pasteboardtype/fileurl.md)
   A file URL.
-- [static let findPanelSearchOptions: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/findpanelsearchoptions.md)
+- [static let findPanelSearchOptions: NSPasteboard.PasteboardType](./pasteboardtype/findpanelsearchoptions.md)
   Type for the find panel metadata property list.
-- [static let font: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/font.md)
+- [static let font: NSPasteboard.PasteboardType](./pasteboardtype/font.md)
   Font and character information.
-- [static let html: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/html.md)
+- [static let html: NSPasteboard.PasteboardType](./pasteboardtype/html.md)
   Type for HTML content.
-- [static let multipleTextSelection: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/multipletextselection.md)
+- [static let multipleTextSelection: NSPasteboard.PasteboardType](./pasteboardtype/multipletextselection.md)
   Multiple text selection.
-- [static let pdf: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/pdf.md)
+- [static let pdf: NSPasteboard.PasteboardType](./pasteboardtype/pdf.md)
   PDF data.
-- [static let png: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/png.md)
+- [static let png: NSPasteboard.PasteboardType](./pasteboardtype/png.md)
   PNG image data.
-- [static let rtf: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/rtf.md)
+- [static let rtf: NSPasteboard.PasteboardType](./pasteboardtype/rtf.md)
   Rich Text Format (RTF) data.
-- [static let rtfd: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/rtfd.md)
+- [static let rtfd: NSPasteboard.PasteboardType](./pasteboardtype/rtfd.md)
   RTFD formatted file contents.
-- [static let ruler: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/ruler.md)
+- [static let ruler: NSPasteboard.PasteboardType](./pasteboardtype/ruler.md)
   Paragraph formatting information.
-- [static let sound: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/sound.md)
+- [static let sound: NSPasteboard.PasteboardType](./pasteboardtype/sound.md)
   Sound data.
-- [static let string: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/string.md)
+- [static let string: NSPasteboard.PasteboardType](./pasteboardtype/string.md)
   String data.
-- [static let tabularText: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/tabulartext.md)
+- [static let tabularText: NSPasteboard.PasteboardType](./pasteboardtype/tabulartext.md)
   Tab-separated fields of text.
-- [static let textFinderOptions: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/textfinderoptions.md)
+- [static let textFinderOptions: NSPasteboard.PasteboardType](./pasteboardtype/textfinderoptions.md)
   Type for the Find panel metadata property list.
-- [static let tiff: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/tiff.md)
+- [static let tiff: NSPasteboard.PasteboardType](./pasteboardtype/tiff.md)
   Tag Image File Format (TIFF) data.
 ### Option Keys
-- [NSPasteboard.PasteboardType.FindPanelSearchOptionKey](nspasteboard/pasteboardtype/findpanelsearchoptionkey.md)
+- [NSPasteboard.PasteboardType.FindPanelSearchOptionKey](./pasteboardtype/findpanelsearchoptionkey.md)
   Search options for the find panel.
-- [NSPasteboard.PasteboardType.TextFinderOptionKey](nspasteboard/pasteboardtype/textfinderoptionkey.md)
+- [NSPasteboard.PasteboardType.TextFinderOptionKey](./pasteboardtype/textfinderoptionkey.md)
   Search options for text in Finder.
 ### Initializers
-- [init(String)](nspasteboard/pasteboardtype/init(_:).md)
-- [init(rawValue: String)](nspasteboard/pasteboardtype/init(rawvalue:).md)
+- [init(String)](./pasteboardtype/init%28_%29.md)
+- [init(rawValue: String)](./pasteboardtype/init%28rawvalue%29.md)
 ### Deprecated
-- [var representedPathExtension: String?](nspasteboard/pasteboardtype/representedpathextension.md)
+- [var representedPathExtension: String?](./pasteboardtype/representedpathextension.md)
   A file type based on the passed pasteboard type.
-- [static func fileContentsType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filecontentstype(forpathextension:).md)
+- [static func fileContentsType(forPathExtension: String) -> NSPasteboard.PasteboardType!](./pasteboardtype/filecontentstype%28forpathextension%29.md)
   Returns a pasteboard type based on the passed file type.
-- [static func fileNameType(forPathExtension: String) -> NSPasteboard.PasteboardType!](nspasteboard/pasteboardtype/filenametype(forpathextension:).md)
+- [static func fileNameType(forPathExtension: String) -> NSPasteboard.PasteboardType!](./pasteboardtype/filenametype%28forpathextension%29.md)
   Returns a pasteboard type based on the passed file type.
-- [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](nspasteboard/pasteboardtype/representedpathextensions(from:).md)
+- [static func representedPathExtensions(from: [NSPasteboard.PasteboardType]) -> [String]?](./pasteboardtype/representedpathextensions%28from%29.md)
   Returns an array of file types based on the passed pasteboard types.
-- [Deprecated symbols](pasteboardtype-deprecated-symbols.md)
+- [Deprecated symbols](../pasteboardtype-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func clearContents() -> Int](nspasteboard/clearcontents.md)
+### Writing data
+- [func clearContents() -> Int](./clearcontents%28%29.md)
   Clears the existing contents of the pasteboard.
-- [func writeObjects([any NSPasteboardWriting]) -> Bool](nspasteboard/writeobjects(_:).md)
+- [func writeObjects([any NSPasteboardWriting]) -> Bool](./writeobjects%28_%29.md)
   Writes an array of objects to the receiver.
-- [func setData(Data?, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboard/setdata(_:fortype:).md)
+- [func setData(Data?, forType: NSPasteboard.PasteboardType) -> Bool](./setdata%28_,fortype%29.md)
   Sets the data as the representation for the specified type for the first item on the receiver.
-- [func setPropertyList(Any, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboard/setpropertylist(_:fortype:).md)
+- [func setPropertyList(Any, forType: NSPasteboard.PasteboardType) -> Bool](./setpropertylist%28_,fortype%29.md)
   Sets the given property list as the representation for the specified type for the first item on the receiver.
-- [func setString(String, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboard/setstring(_:fortype:).md)
+- [func setString(String, forType: NSPasteboard.PasteboardType) -> Bool](./setstring%28_,fortype%29.md)
   Sets the given string as the representation for the specified type for the first item on the receiver.
 
 

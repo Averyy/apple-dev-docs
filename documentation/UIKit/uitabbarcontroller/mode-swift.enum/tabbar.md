@@ -1,7 +1,8 @@
 # UITabBarController.Mode.tabBar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system displays the content only as a tab bar.
 
@@ -18,19 +19,24 @@ The system displays the content only as a tab bar.
 case tabBar
 ```
 
+```c
+UITabBarControllerModeTabBar
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 #### Discussion
 
-For more information, see [`Elevating your iPad app with a tab bar and sidebar`](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
+For more information, see [Elevating your iPad app with a tab bar and sidebar](../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 
 ## See Also
 
-- [UITabBarController.Mode.automatic](uitabbarcontroller/mode-swift.enum/automatic.md)
+### Setting modes
+- [UITabBarController.Mode.automatic](./automatic.md)
   The system sets the display mode based on the tab’s content.
-- [UITabBarController.Mode.tabSidebar](uitabbarcontroller/mode-swift.enum/tabsidebar.md)
+- [UITabBarController.Mode.tabSidebar](./tabsidebar.md)
   The system displays the content as either a tab bar or a sidebar, depending on the context.
 
 

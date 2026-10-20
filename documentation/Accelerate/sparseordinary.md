@@ -1,7 +1,8 @@
 # SparseOrdinary
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unsymmetric sparse matrix without special structure.
 
@@ -20,15 +21,20 @@ An unsymmetric sparse matrix without special structure.
 var SparseOrdinary: SparseKind_t { get }
 ```
 
+```c
+SparseOrdinary
+```
+
 ## See Also
 
-- [var SparseSymmetric: SparseKind_t](sparsesymmetric.md)
+### Constants
+- [var SparseSymmetric: SparseKind_t](./sparsesymmetric.md)
   A symmetric sparse matrix.
-- [var SparseTriangular: SparseKind_t](sparsetriangular.md)
+- [var SparseTriangular: SparseKind_t](./sparsetriangular.md)
   A triangular sparse matrix with a nonunit diagonal.
-- [var SparseUnitTriangular: SparseKind_t](sparseunittriangular.md)
+- [var SparseUnitTriangular: SparseKind_t](./sparseunittriangular.md)
   A triangular sparse matrix with a unit diagonal.
-- [var SparseHermitian: SparseKind_t](sparsehermitian.md)
+- [var SparseHermitian: SparseKind_t](./sparsehermitian.md)
   A flag to describe the type of matrix represented.
 
 

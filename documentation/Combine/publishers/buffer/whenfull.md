@@ -1,7 +1,8 @@
 # whenFull
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to take when the buffer becomes full.
 
@@ -22,11 +23,12 @@ let whenFull: Publishers.BufferingStrategy<Publishers.Buffer<Upstream>.Failure>
 
 ## See Also
 
-- [let upstream: Upstream](publishers/buffer/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let size: Int](publishers/buffer/size.md)
+- [let size: Int](./size.md)
   The maximum number of elements to store.
-- [let prefetch: Publishers.PrefetchStrategy](publishers/buffer/prefetch.md)
+- [let prefetch: Publishers.PrefetchStrategy](./prefetch.md)
   The strategy for initially populating the buffer.
 
 

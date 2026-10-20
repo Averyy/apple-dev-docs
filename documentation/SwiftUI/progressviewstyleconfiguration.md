@@ -1,7 +1,8 @@
 # ProgressViewStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a progress view instance.
 
@@ -23,30 +24,31 @@ struct ProgressViewStyleConfiguration
 ## Topics
 
 ### Configuring the label
-- [var label: ProgressViewStyleConfiguration.Label?](progressviewstyleconfiguration/label-swift.property.md)
+- [var label: ProgressViewStyleConfiguration.Label?](./progressviewstyleconfiguration/label-swift.property.md)
   A view that describes the task represented by the progress view.
-- [ProgressViewStyleConfiguration.Label](progressviewstyleconfiguration/label-swift.struct.md)
+- [ProgressViewStyleConfiguration.Label](./progressviewstyleconfiguration/label-swift.struct.md)
   A type-erased label describing the task represented by the progress view.
 ### Configuring the current value label
-- [var currentValueLabel: ProgressViewStyleConfiguration.CurrentValueLabel?](progressviewstyleconfiguration/currentvaluelabel-swift.property.md)
+- [var currentValueLabel: ProgressViewStyleConfiguration.CurrentValueLabel?](./progressviewstyleconfiguration/currentvaluelabel-swift.property.md)
   A view that describes the current value of a progress view.
-- [ProgressViewStyleConfiguration.CurrentValueLabel](progressviewstyleconfiguration/currentvaluelabel-swift.struct.md)
+- [ProgressViewStyleConfiguration.CurrentValueLabel](./progressviewstyleconfiguration/currentvaluelabel-swift.struct.md)
   A type-erased label that describes the current value of a progress view.
 ### Configuring progress completion
-- [let fractionCompleted: Double?](progressviewstyleconfiguration/fractioncompleted.md)
+- [let fractionCompleted: Double?](./progressviewstyleconfiguration/fractioncompleted.md)
   The completed fraction of the task represented by the progress view, from `0.0` (not yet started) to `1.0` (fully complete), or `nil` if the progress is indeterminate or relative to a date interval.
 
 ## See Also
 
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+### Styling indicators
+- [func gaugeStyle<S>(S) -> some View](./view/gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [protocol GaugeStyle](gaugestyle.md)
+- [protocol GaugeStyle](./gaugestyle.md)
   Defines the implementation of all gauge instances within a view hierarchy.
-- [struct GaugeStyleConfiguration](gaugestyleconfiguration.md)
+- [struct GaugeStyleConfiguration](./gaugestyleconfiguration.md)
   The properties of a gauge instance.
-- [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
+- [func progressViewStyle<S>(S) -> some View](./view/progressviewstyle%28_%29.md)
   Sets the style for progress views in this view.
-- [protocol ProgressViewStyle](progressviewstyle.md)
+- [protocol ProgressViewStyle](./progressviewstyle.md)
   A type that applies standard interaction behavior to all progress views within a view hierarchy.
 
 

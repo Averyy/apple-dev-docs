@@ -1,7 +1,8 @@
 # HKAttachment
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A file that is attached to a sample in the HealthKit store.
 
@@ -17,6 +18,10 @@ A file that is attached to a sample in the HealthKit store.
 
 ```swift
 class HKAttachment
+```
+
+```objc
+@interface HKAttachment : NSObject
 ```
 
 #### Overview
@@ -74,56 +79,58 @@ do {
 }
 ```
 
-> **Note**:  You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md), [`HKGlassesPrescription`](hkglassesprescription.md), and [`HKContactsPrescription`](hkcontactsprescription.md) samples. You can also read attachments from [`clinicalNoteRecord`](hkclinicaltypeidentifier/clinicalnoterecord.md) samples.
+> **Note**:  You can only add attachments to [`HKVisionPrescription`](./hkvisionprescription.md), [`HKGlassesPrescription`](./hkglassesprescription.md), and [`HKContactsPrescription`](./hkcontactsprescription.md) samples. You can also read attachments from [`clinicalNoteRecord`](./hkclinicaltypeidentifier/clinicalnoterecord.md) samples.
 
 ## Topics
 
 ### Accessing attachment data
-- [var name: String](hkattachment/name.md)
+- [var name: String](./hkattachment/name.md)
   The name of the attached file.
-- [var identifier: UUID](hkattachment/identifier.md)
+- [var identifier: UUID](./hkattachment/identifier.md)
   The universally unique identifier for the attached file.
-- [var contentType: UTType](hkattachment/contenttype.md)
+- [var contentType: UTType](./hkattachment/contenttype.md)
   The type of data stored in the attached file.
-- [var size: Int](hkattachment/size.md)
+- [var size: Int](./hkattachment/size.md)
   The attachment’s size (in bytes).
-- [var creationDate: Date](hkattachment/creationdate.md)
+- [var creationDate: Date](./hkattachment/creationdate.md)
   The attachment’s creation date.
-- [var metadata: [String : Any]?](hkattachment/metadata.md)
+- [var metadata: [String : Any]?](./hkattachment/metadata.md)
   Additional data associated with the attachment in the HealthKit store.
-- [HKAttachment.AsyncBytes](hkattachment/asyncbytes.md)
+- [HKAttachment.AsyncBytes](./hkattachment/asyncbytes.md)
   An asynchronous sequence that returns the attached file as a series of bytes.
 ### Initializers
-- [init?(coder: NSCoder)](hkattachment/init(coder:).md)
+- [init?(coder: NSCoder)](./hkattachment/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKVisionPrescription](hkvisionprescription.md)
+### Related Documentation
+- [class HKVisionPrescription](./hkvisionprescription.md)
   A sample that stores a vision prescription.
-- [class HKGlassesPrescription](hkglassesprescription.md)
+- [class HKGlassesPrescription](./hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](./hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [class HKAttachmentStore](hkattachmentstore.md)
+### Attachments
+- [class HKAttachmentStore](./hkattachmentstore.md)
   The access point for attachments associated with samples in the HealthKit store.
-- [class HKAttachmentDataReader](hkattachmentdatareader.md)
+- [class HKAttachmentDataReader](./hkattachmentdatareader.md)
   A reader that provides access to an attachment’s data.
 
 

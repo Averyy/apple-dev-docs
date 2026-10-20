@@ -1,12 +1,15 @@
 # complicationRenderingMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complication rendering mode for the current environment.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -16,17 +19,18 @@ var complicationRenderingMode: ComplicationRenderingMode { get }
 
 ## See Also
 
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+### Deprecated properties
+- [var accessibilityShowButtonShapes: Bool](./accessibilityshowbuttonshapes.md)
   Whether the system preference for Show Button Shapes is enabled.
-- [var controlActiveState: ControlActiveState](environmentvalues/controlactivestate.md)
+- [var controlActiveState: ControlActiveState](./controlactivestate.md)
   The active appearance expected of controls in a window.
-- [var disableAutocorrection: Bool?](environmentvalues/disableautocorrection.md)
+- [var disableAutocorrection: Bool?](./disableautocorrection.md)
   A Boolean value that determines whether the view hierarchy has auto-correction enabled.
-- [var presentationMode: Binding<PresentationMode>](environmentvalues/presentationmode.md)
+- [var presentationMode: Binding<PresentationMode>](./presentationmode.md)
   A binding to the current presentation mode of the view associated with this environment.
-- [var sizeCategory: ContentSizeCategory](environmentvalues/sizecategory.md)
+- [var sizeCategory: ContentSizeCategory](./sizecategory.md)
   The size of content.
-- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
+- [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](./imageplaygroundpersonalizationpolicy.md)
 
 
 ---

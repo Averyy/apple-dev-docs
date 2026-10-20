@@ -1,7 +1,8 @@
 # includeZeroPadToAverage
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a mode for average pooling, where samples outside the input tensor count as zeroes in the average computation.
 
@@ -17,6 +18,10 @@ Defines a mode for average pooling, where samples outside the input tensor count
 
 ```swift
 var includeZeroPadToAverage: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL includeZeroPadToAverage;
 ```
 
 #### Discussion

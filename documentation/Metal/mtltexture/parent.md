@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The parent texture used to create this texture, if any.
@@ -20,23 +21,28 @@ The parent texture used to create this texture, if any.
 var parent: (any MTLTexture)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<MTLTexture> parentTexture;
+```
+
 #### Discussion
 
-When this value is `nil`, an [`MTLBuffer`](mtlbuffer.md) instance provides texture data.
+When this value is `nil`, an [`MTLBuffer`](../mtlbuffer.md) instance provides texture data.
 
 ## See Also
 
-- [var parentRelativeLevel: Int](mtltexture/parentrelativelevel.md)
+### Getting information about ancestor resources
+- [var parentRelativeLevel: Int](./parentrelativelevel.md)
   The base level of the parent texture used to create this texture.
-- [var parentRelativeSlice: Int](mtltexture/parentrelativeslice.md)
+- [var parentRelativeSlice: Int](./parentrelativeslice.md)
   The base slice of the parent texture used to create this texture.
-- [var buffer: (any MTLBuffer)?](mtltexture/buffer.md)
+- [var buffer: (any MTLBuffer)?](./buffer.md)
   The source buffer used to create this texture, if any.
-- [var bufferOffset: Int](mtltexture/bufferoffset.md)
+- [var bufferOffset: Int](./bufferoffset.md)
   The offset in the source buffer where the texture’s data comes from.
-- [var bufferBytesPerRow: Int](mtltexture/bufferbytesperrow.md)
+- [var bufferBytesPerRow: Int](./bufferbytesperrow.md)
   The number of bytes in each row of the texture’s source buffer.
-- [var rootResource: (any MTLResource)?](mtltexture/rootresource.md)
+- [var rootResource: (any MTLResource)?](./rootresource.md)
   The resource that owns the storage for this texture.
 
 

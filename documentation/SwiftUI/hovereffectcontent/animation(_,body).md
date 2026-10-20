@@ -1,9 +1,10 @@
 # animation(_:body:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Applies the given [`Animation`](animation.md) to all effects within the `body` closure.
+Applies the given [`Animation`](../animation.md) to all effects within the `body` closure.
 
 **Availability**:
 - visionOS 2.0+

@@ -1,18 +1,19 @@
 # AVAudioPlayerNodeCompletionCallbackType
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify when the framework must invoke the completion handler.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,41 +21,46 @@ Constants that specify when the framework must invoke the completion handler.
 enum AVAudioPlayerNodeCompletionCallbackType
 ```
 
+```c
+enum AVAudioPlayerNodeCompletionCallbackType : NSInteger;
+```
+
 ## Topics
 
 ### Creating a callback type
-- [init?(rawValue: Int)](avaudioplayernodecompletioncallbacktype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudioplayernodecompletioncallbacktype/init%28rawvalue%29.md)
 ### Choosing a callback type
-- [AVAudioPlayerNodeCompletionCallbackType.dataConsumed](avaudioplayernodecompletioncallbacktype/dataconsumed.md)
+- [AVAudioPlayerNodeCompletionCallbackType.dataConsumed](./avaudioplayernodecompletioncallbacktype/dataconsumed.md)
   A completion handler that indicates the player consumes the buffer or file data.
-- [AVAudioPlayerNodeCompletionCallbackType.dataRendered](avaudioplayernodecompletioncallbacktype/datarendered.md)
+- [AVAudioPlayerNodeCompletionCallbackType.dataRendered](./avaudioplayernodecompletioncallbacktype/datarendered.md)
   A completion handler that indicates the player renders the buffer or file data.
-- [AVAudioPlayerNodeCompletionCallbackType.dataPlayedBack](avaudioplayernodecompletioncallbacktype/dataplayedback.md)
+- [AVAudioPlayerNodeCompletionCallbackType.dataPlayedBack](./avaudioplayernodecompletioncallbacktype/dataplayedback.md)
   A completion handler that indicates the player finishes the buffer or file data.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](avaudioplayernode/schedulefile(_:at:completionhandler:).md)
+### Scheduling files and segments
+- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](./avaudioplayernode/schedulefile%28_,at,completionhandler%29.md)
   Schedules the playing of an entire audio file.
-- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulefile(_:at:completioncallbacktype:completionhandler:).md)
+- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](./avaudioplayernode/schedulefile%28_,at,completioncallbacktype,completionhandler%29.md)
   Schedules the playing of an entire audio file with a callback option you specify.
-- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionHandler: (() -> Void)?)](avaudioplayernode/schedulesegment(_:startingframe:framecount:at:completionhandler:).md)
+- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionHandler: (() -> Void)?)](./avaudioplayernode/schedulesegment%28_,startingframe,framecount,at,completionhandler%29.md)
   Schedules the playing of an audio file segment.
-- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulesegment(_:startingframe:framecount:at:completioncallbacktype:completionhandler:).md)
+- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](./avaudioplayernode/schedulesegment%28_,startingframe,framecount,at,completioncallbacktype,completionhandler%29.md)
   Schedules the playing of an audio file segment with a callback option you specify.
-- [typealias AVAudioPlayerNodeCompletionHandler](avaudioplayernodecompletionhandler.md)
+- [typealias AVAudioPlayerNodeCompletionHandler](./avaudioplayernodecompletionhandler.md)
   The callback handler for buffer or file completion.
-- [typealias AVAudioNodeCompletionHandler](avaudionodecompletionhandler.md)
+- [typealias AVAudioNodeCompletionHandler](./avaudionodecompletionhandler.md)
   A general callback handler for an audio node.
 
 

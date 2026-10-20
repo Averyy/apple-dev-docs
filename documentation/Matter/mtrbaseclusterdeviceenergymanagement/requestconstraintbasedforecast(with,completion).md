@@ -1,7 +1,8 @@
 # requestConstraintBasedForecast(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command RequestConstraintBasedForecast
 
@@ -17,7 +18,15 @@ Command RequestConstraintBasedForecast
 ## Declaration
 
 ```swift
+func requestConstraintBasedForecast(with params: MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func requestConstraintBasedForecast(with params: MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams) async throws
+```
+
+```objc
+- (void) requestConstraintBasedForecastWithParams:(MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

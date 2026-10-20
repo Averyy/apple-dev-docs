@@ -1,7 +1,8 @@
 # scnVector3Value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The three-element Scene Kit vector representation of the value.
 
@@ -20,19 +21,25 @@ The three-element Scene Kit vector representation of the value.
 var scnVector3Value: SCNVector3 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCNVector3 SCNVector3Value;
+```
+
 ## See Also
 
-- [struct SCNVector3](../scenekit/scnvector3.md)
+### Related Documentation
+- [struct SCNVector3](../../SceneKit/scnvector3.md)
   A representation of a three-component vector.
-- [init(SCNVector3: SCNVector3)](nsvalue/init(scnvector3:).md)
+### Working with SceneKit Vector and Matrix Values
+- [init(SCNVector3: SCNVector3)](./init%28scnvector3%29.md)
   Creates a value object that contains the specified three-element SceneKit vector.
-- [init(SCNVector4: SCNVector4)](nsvalue/init(scnvector4:).md)
+- [init(SCNVector4: SCNVector4)](./init%28scnvector4%29.md)
   Creates a value object that contains the specified four-element SceneKit vector.
-- [init(SCNMatrix4: SCNMatrix4)](nsvalue/init(scnmatrix4:).md)
+- [init(SCNMatrix4: SCNMatrix4)](./init%28scnmatrix4%29.md)
   Creates a value object that contains the specified SceneKit 4 x 4 matrix.
-- [var scnVector4Value: SCNVector4](nsvalue/scnvector4value.md)
+- [var scnVector4Value: SCNVector4](./scnvector4value.md)
   The four-element Scene Kit vector representation of the value.
-- [var scnMatrix4Value: SCNMatrix4](nsvalue/scnmatrix4value.md)
+- [var scnMatrix4Value: SCNMatrix4](./scnmatrix4value.md)
   The Scene Kit 4 x 4 matrix representation of the value.
 
 

@@ -1,7 +1,8 @@
 # EntitlementsQuery
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A constraint that tests values in the entitlements dictionary associated with a process or code file.
 
@@ -82,72 +83,73 @@ This constraint will cause a matching failure if the process or file being match
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](entitlementsquery/init(from:).md)
+- [init(from: any Decoder) throws](./entitlementsquery/init%28from%29.md)
   Create a new instance by decoding from the given decoder
 ### Instance Methods
-- [func elementAtIndex(Int64) -> EntitlementsQuery](entitlementsquery/elementatindex(_:).md)
+- [func elementAtIndex(Int64) -> EntitlementsQuery](./entitlementsquery/elementatindex%28_%29.md)
   Match against the specified index (0 based) in an array. Chain additional qualifiers to constrain the value of element.
-- [func encode(to: any Encoder) throws](entitlementsquery/encode(to:).md)
+- [func encode(to: any Encoder) throws](./entitlementsquery/encode%28to%29.md)
   Encodes this value into the given encoder
-- [func key(String) -> EntitlementsQuery](entitlementsquery/key(_:)-swift.method.md)
+- [func key(String) -> EntitlementsQuery](./entitlementsquery/key%28_%29-swift.method.md)
   Match the specified key in a nested dictionary
-- [func keyPrefix(String) -> EntitlementsQuery](entitlementsquery/keyprefix(_:)-swift.method.md)
+- [func keyPrefix(String) -> EntitlementsQuery](./entitlementsquery/keyprefix%28_%29-swift.method.md)
   Match the specified key prefix in a nested dictionary.
-- [func match(String) -> EntitlementsQuery](entitlementsquery/match(_:)-5cqvy.md)
+- [func match(String) -> EntitlementsQuery](./entitlementsquery/match%28_%29-5cqvy.md)
   Match the specified string value against a string or an array of strings.
-- [func match(Bool) -> EntitlementsQuery](entitlementsquery/match(_:)-5cw98.md)
+- [func match(Bool) -> EntitlementsQuery](./entitlementsquery/match%28_%29-5cw98.md)
   Match the specified bool value against a bool value.
-- [func match(Int64) -> EntitlementsQuery](entitlementsquery/match(_:)-6msza.md)
+- [func match(Int64) -> EntitlementsQuery](./entitlementsquery/match%28_%29-6msza.md)
   Match the specified Int64 against an integer or array of integers.
-- [func matchPrefix(String) -> EntitlementsQuery](entitlementsquery/matchprefix(_:).md)
+- [func matchPrefix(String) -> EntitlementsQuery](./entitlementsquery/matchprefix%28_%29.md)
   Match the specified string prefix against a string value or array.
-- [func matchPrefixSingle(String) -> EntitlementsQuery](entitlementsquery/matchprefixsingle(_:).md)
+- [func matchPrefixSingle(String) -> EntitlementsQuery](./entitlementsquery/matchprefixsingle%28_%29.md)
   Match the specified string prefix value against a string value (not an array).
-- [func matchSingle(Int64) -> EntitlementsQuery](entitlementsquery/matchsingle(_:)-49kv7.md)
+- [func matchSingle(Int64) -> EntitlementsQuery](./entitlementsquery/matchsingle%28_%29-49kv7.md)
   Match the specified Int64 value against an integer value (not an array).
-- [func matchSingle(String) -> EntitlementsQuery](entitlementsquery/matchsingle(_:)-8ggh1.md)
+- [func matchSingle(String) -> EntitlementsQuery](./entitlementsquery/matchsingle%28_%29-8ggh1.md)
   Match the specified string against a string value (not an array).
-- [func matchType(EntitlementsQuery.DataType) -> EntitlementsQuery](entitlementsquery/matchtype(_:).md)
+- [func matchType(EntitlementsQuery.DataType) -> EntitlementsQuery](./entitlementsquery/matchtype%28_%29.md)
   Matches the specified type against the current element.
 ### Type Methods
-- [static func key(String) -> EntitlementsQuery](entitlementsquery/key(_:)-swift.type.method.md)
+- [static func key(String) -> EntitlementsQuery](./entitlementsquery/key%28_%29-swift.type.method.md)
   Match against the specified key name at the root of the entitlements dictionary.
-- [static func keyPrefix(String) -> EntitlementsQuery](entitlementsquery/keyprefix(_:)-swift.type.method.md)
+- [static func keyPrefix(String) -> EntitlementsQuery](./entitlementsquery/keyprefix%28_%29-swift.type.method.md)
   Match the specified key prefix at the root of the entitlements dicitonary. Chain additional qualifiers to constrain the value of the key.
 ### Enumerations
-- [EntitlementsQuery.DataType](entitlementsquery/datatype.md)
+- [EntitlementsQuery.DataType](./entitlementsquery/datatype.md)
   The types of elements allowed in entitlements dictionaries.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [LaunchConstraint](launchconstraint.md)
-- [OnDiskConstraint](ondiskconstraint.md)
-- [ProcessConstraint](processconstraint.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [LaunchConstraint](./launchconstraint.md)
+- [OnDiskConstraint](./ondiskconstraint.md)
+- [ProcessConstraint](./processconstraint.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CodeDirectoryHash](codedirectoryhash.md)
+### Testing properties of executable code
+- [struct CodeDirectoryHash](./codedirectoryhash.md)
   A constraint that matches the hash of a code directory of a code file or of a running or launching process.
-- [struct InfoPlistHash](infoplisthash.md)
+- [struct InfoPlistHash](./infoplisthash.md)
   A constraint that tests the specified hash against the Information property list hash stored in the code signature of the process or code file.
-- [struct IsInitProcess](isinitprocess.md)
+- [struct IsInitProcess](./isinitprocess.md)
   A constraint that tests whether a process is the operating system’s initial process.
-- [struct IsMainBinary](ismainbinary.md)
+- [struct IsMainBinary](./ismainbinary.md)
   A constraint that tests whether a code file is a main binary.
-- [struct IsSIPProtected](issipprotected.md)
+- [struct IsSIPProtected](./issipprotected.md)
   A constraint that tests whether a code file or process is on a volume protected by System Integrity Protection (SIP).
-- [struct PlatformType](platformtype.md)
+- [struct PlatformType](./platformtype.md)
   A constraint that tests whether a code file or running process targets a given platform.
-- [struct SigningIdentifier](signingidentifier.md)
+- [struct SigningIdentifier](./signingidentifier.md)
   A constraint that tests whether the provided signing identifier matches the signature attached to the code.
-- [struct TeamIdentifier](teamidentifier.md)
+- [struct TeamIdentifier](./teamidentifier.md)
   A constraint that tests whether the provided team identifier matches the team identified in the code signature.
-- [struct ValidationCategory](validationcategory.md)
+- [struct ValidationCategory](./validationcategory.md)
   A constraint that tests whether a code file or running process is signed in a way that conforms to the specified validation category.
 
 

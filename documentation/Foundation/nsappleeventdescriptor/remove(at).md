@@ -1,7 +1,8 @@
 # remove(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the descriptor at the specified (one-based) position in the receiving descriptor list.
 
@@ -15,6 +16,10 @@ Removes the descriptor at the specified (one-based) position in the receiving de
 func remove(at index: Int)
 ```
 
+```objc
+- (void) removeDescriptorAtIndex:(NSInteger) index;
+```
+
 #### Discussion
 
 The receiver must be a list descriptor. The  indices are one-based. Currently provides no indication if an error occurs.
@@ -25,9 +30,10 @@ The receiver must be a list descriptor. The  indices are one-based. Currently pr
 
 ## See Also
 
-- [func atIndex(Int) -> NSAppleEventDescriptor?](nsappleeventdescriptor/atindex(_:).md)
+### Working With List Descriptors
+- [func atIndex(Int) -> NSAppleEventDescriptor?](./atindex%28_%29.md)
   Returns the descriptor at the specified (one-based) position in the receiving descriptor list.
-- [func insert(NSAppleEventDescriptor, at: Int)](nsappleeventdescriptor/insert(_:at:).md)
+- [func insert(NSAppleEventDescriptor, at: Int)](./insert%28_,at%29.md)
   Inserts a descriptor at the specified (one-based) position in the receiving descriptor list, replacing the existing descriptor, if any, at that position.
 
 

@@ -1,7 +1,8 @@
 # DispatchPredicate
 
 **Framework**: Dispatch  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Logical conditions to evaluate within a given execution context.
 
@@ -11,7 +12,7 @@ Logical conditions to evaluate within a given execution context.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,31 +23,32 @@ enum DispatchPredicate
 
 #### Overview
 
-You use dispatch predicates with the [`dispatchPrecondition(condition:)`](dispatchprecondition(condition:).md) method.
+You use dispatch predicates with the [`dispatchPrecondition(condition:)`](./dispatchprecondition%28condition%29.md) method.
 
 ## Topics
 
 ### Predicates
-- [DispatchPredicate.onQueue(_:)](dispatchpredicate/onqueue(_:).md)
+- [DispatchPredicate.onQueue(_:)](./dispatchpredicate/onqueue%28_%29.md)
   A predicate that indicates the evaluated context is the associated dispatch queue.
-- [DispatchPredicate.onQueueAsBarrier(_:)](dispatchpredicate/onqueueasbarrier(_:).md)
+- [DispatchPredicate.onQueueAsBarrier(_:)](./dispatchpredicate/onqueueasbarrier%28_%29.md)
   A predicate that indicates the evaluated context is the associated dispatch queue as part of a barrier operation.
-- [DispatchPredicate.notOnQueue(_:)](dispatchpredicate/notonqueue(_:).md)
+- [DispatchPredicate.notOnQueue(_:)](./dispatchpredicate/notonqueue%28_%29.md)
   A predicate that indicates the evaluated context is not the associated dispatch queue.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class DispatchObject](dispatchobject.md)
+### Dispatch Objects
+- [class DispatchObject](./dispatchobject.md)
   The base class for most dispatch types.
-- [func dispatchPrecondition(condition: @autoclosure () -> DispatchPredicate)](dispatchprecondition(condition:).md)
+- [func dispatchPrecondition(condition: @autoclosure () -> DispatchPredicate)](./dispatchprecondition%28condition%29.md)
   Checks a dispatch condition necessary for further execution.
-- [Dispatch Objects](dispatch-objects.md)
+- [Dispatch Objects](./dispatch-objects.md)
   The basic behaviors supported by all dispatch types.
 
 

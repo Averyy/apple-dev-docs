@@ -1,7 +1,8 @@
 # Schema.Index.CodingKeys
 
 **Framework**: SwiftData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -22,18 +23,18 @@ enum CodingKeys
 ## Topics
 
 ### Enumeration Cases
-- [Schema.Index.CodingKeys.indices](schema/index/codingkeys/indices.md)
+- [Schema.Index.CodingKeys.indices](./codingkeys/indices.md)
 
 ## Relationships
 
 ### Conforms To
-- [CodingKey](../swift/codingkey.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CodingKey](../../../Swift/codingkey.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

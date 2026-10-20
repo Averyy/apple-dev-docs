@@ -1,7 +1,8 @@
 # browseResultsChangedHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that delivers updates about discovered services.
 
@@ -23,15 +24,16 @@ final var browseResultsChangedHandler: (@Sendable (Set<NWBrowser.Result>, Set<NW
 
 ## See Also
 
-- [init(for: NWBrowser.Descriptor, using: NWParameters)](nwbrowser/init(for:using:).md)
+### Browsing for Services
+- [init(for: NWBrowser.Descriptor, using: NWParameters)](./init%28for,using%29.md)
   Initializes a browser with a type of service to discover.
-- [NWBrowser.Descriptor](nwbrowser/descriptor-swift.enum.md)
+- [NWBrowser.Descriptor](./descriptor-swift.enum.md)
   A service description used to discover Bonjour services.
-- [func start(queue: DispatchQueue)](nwbrowser/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Starts browsing for services, and sets the queue on which all browser events will be delivered.
-- [NWBrowser.Result](nwbrowser/result.md)
+- [NWBrowser.Result](./result.md)
   A set of discovered services and changes from the last result.
-- [var browseResults: Set<NWBrowser.Result>](nwbrowser/browseresults.md)
+- [var browseResults: Set<NWBrowser.Result>](./browseresults.md)
   The list of discovered services.
 
 

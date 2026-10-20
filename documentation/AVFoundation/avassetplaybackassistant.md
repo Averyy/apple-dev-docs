@@ -1,7 +1,8 @@
 # AVAssetPlaybackAssistant
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides playback information for an asset.
 
@@ -20,32 +21,37 @@ An object that provides playback information for an asset.
 class AVAssetPlaybackAssistant
 ```
 
+```objc
+@interface AVAssetPlaybackAssistant : NSObject
+```
+
 ## Topics
 
 ### Creating a playback assistant
-- [convenience init(asset: AVAsset)](avassetplaybackassistant/init(asset:).md)
+- [convenience init(asset: AVAsset)](./avassetplaybackassistant/init%28asset%29.md)
   Creates a playback assistant to inspect the specified asset.
 ### Loading playback configuration options
-- [func loadPlaybackConfigurationOptions(completionHandler: ([AVAssetPlaybackConfigurationOption]) -> Void)](avassetplaybackassistant/loadplaybackconfigurationoptions(completionhandler:).md)
+- [func loadPlaybackConfigurationOptions(completionHandler: ([AVAssetPlaybackConfigurationOption]) -> Void)](./avassetplaybackassistant/loadplaybackconfigurationoptions%28completionhandler%29.md)
   Loads playback configuration options for an asset.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption.md)
+### Utilities
+- [struct AVAssetPlaybackConfigurationOption](./avassetplaybackconfigurationoption.md)
   A structure that defines playback configuration options for an asset.
 
 

@@ -1,7 +1,8 @@
 # pixelFormat_16LE565
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,21 +21,22 @@ static let pixelFormat_16LE565: CMFormatDescription.MediaSubType
 
 ## See Also
 
-- [static let aLaw: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/alaw.md)
-- [static let aacAudibleProtected: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/aacaudibleprotected.md)
-- [static let aacLCProtected: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/aaclcprotected.md)
-- [static let ac3: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/ac3.md)
-- [static let aes3: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/aes3.md)
-- [static let amr: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/amr.md)
-- [static let amr_WB: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/amr_wb.md)
-- [static let animation: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/animation.md)
-- [static let appleIMA4: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/appleima4.md)
-- [static let appleLossless: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/applelossless.md)
-- [static let atsc: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/atsc.md)
-- [static let audible: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/audible.md)
-- [static let boxed: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/boxed.md)
-- [static let cea608: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/cea608.md)
-- [static let cea708: CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct/cea708.md)
+### Media Subtypes
+- [static let aLaw: CMFormatDescription.MediaSubType](./alaw.md)
+- [static let aacAudibleProtected: CMFormatDescription.MediaSubType](./aacaudibleprotected.md)
+- [static let aacLCProtected: CMFormatDescription.MediaSubType](./aaclcprotected.md)
+- [static let ac3: CMFormatDescription.MediaSubType](./ac3.md)
+- [static let aes3: CMFormatDescription.MediaSubType](./aes3.md)
+- [static let amr: CMFormatDescription.MediaSubType](./amr.md)
+- [static let amr_WB: CMFormatDescription.MediaSubType](./amr_wb.md)
+- [static let animation: CMFormatDescription.MediaSubType](./animation.md)
+- [static let appleIMA4: CMFormatDescription.MediaSubType](./appleima4.md)
+- [static let appleLossless: CMFormatDescription.MediaSubType](./applelossless.md)
+- [static let atsc: CMFormatDescription.MediaSubType](./atsc.md)
+- [static let audible: CMFormatDescription.MediaSubType](./audible.md)
+- [static let boxed: CMFormatDescription.MediaSubType](./boxed.md)
+- [static let cea608: CMFormatDescription.MediaSubType](./cea608.md)
+- [static let cea708: CMFormatDescription.MediaSubType](./cea708.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(columnSelection:concatenatedColumnName:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a concatenator that concatenates numeric columns into a new column of ML shaped array.
 

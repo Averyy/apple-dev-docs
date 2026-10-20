@@ -1,7 +1,8 @@
 # LanguageModelSession.ResponseStream.Element
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of snapshot the stream produces.
 
@@ -18,6 +19,8 @@ The type of snapshot the stream produces.
 ```swift
 typealias Element = LanguageModelSession.ResponseStream<Content>.Snapshot
 ```
+
+Available when `Content` conforms to `Generable`.
 
 
 ---

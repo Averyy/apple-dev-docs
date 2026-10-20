@@ -1,7 +1,8 @@
 # low
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A priority that moves the item to the overflow menu before items with the default or high priority.
 
@@ -23,9 +24,10 @@ Use for secondary actions, such as archive or delete, that don’t need persiste
 
 ## See Also
 
-- [static let automatic: ToolbarItemVisibilityPriority](toolbaritemvisibilitypriority/automatic.md)
+### Getting system priorities
+- [static let automatic: ToolbarItemVisibilityPriority](./automatic.md)
   The default priority that lets the system determine the item’s visibility in the toolbar.
-- [static let high: ToolbarItemVisibilityPriority](toolbaritemvisibilitypriority/high.md)
+- [static let high: ToolbarItemVisibilityPriority](./high.md)
   A priority that keeps the item in the toolbar longer than items with the default or low priority.
 
 

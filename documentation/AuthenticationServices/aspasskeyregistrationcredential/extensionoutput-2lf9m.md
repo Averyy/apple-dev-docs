@@ -1,7 +1,8 @@
 # extensionOutput
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An output from WebAuthn extensions.
 
@@ -20,7 +21,8 @@ var extensionOutput: ASPasskeyRegistrationCredentialExtensionOutput? { get set }
 
 ## See Also
 
-- [struct ASPasskeyRegistrationCredentialExtensionOutput](aspasskeyregistrationcredentialextensionoutput-swift.struct.md)
+### Accessing extension output
+- [struct ASPasskeyRegistrationCredentialExtensionOutput](../aspasskeyregistrationcredentialextensionoutput-swift.struct.md)
   A type that encapsulates output for various WebAuthn extensions during passkey assertion.
 
 

@@ -1,7 +1,8 @@
 # quinaryLabelColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 11.0+
@@ -10,6 +11,10 @@
 
 ```swift
 class var quinaryLabelColor: NSColor { get }
+```
+
+```objc
+@property (class, strong, readonly) NSColor * quinaryLabelColor;
 ```
 
 

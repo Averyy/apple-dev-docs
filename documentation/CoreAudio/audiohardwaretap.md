@@ -1,7 +1,8 @@
 # AudioHardwareTap
 
 **Framework**: Core Audio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Instances of the AudioHardwareTap class encapsulate a single audio tap, which can capture outgoing audio from a process or group of processes, and be used as an input stream source in an aggregate device.
 
@@ -17,25 +18,25 @@ class AudioHardwareTap
 ## Topics
 
 ### Initializers
-- [init(id: AudioObjectID)](audiohardwaretap/init(id:).md)
+- [init(id: AudioObjectID)](./audiohardwaretap/init%28id%29.md)
 ### Instance Properties
-- [var description: CATapDescription](audiohardwaretap/description.md)
+- [var description: CATapDescription](./audiohardwaretap/description.md)
   The CATapDescription that describes the configuration of this tap.
-- [var format: AudioStreamBasicDescription](audiohardwaretap/format.md)
+- [var format: AudioStreamBasicDescription](./audiohardwaretap/format.md)
   An AudioStreamBasicDescription that describes the current data format for the tap. This is the format of the data that will be accessible in any aggregate device that contains the tap.
-- [var uid: String](audiohardwaretap/uid.md)
+- [var uid: String](./audiohardwaretap/uid.md)
   A String that contains a persistent identifier for the tap. A tap’s UID persists until the tap is destroyed.
 ### Instance Methods
-- [func setDescription(CATapDescription) throws](audiohardwaretap/setdescription(_:).md)
+- [func setDescription(CATapDescription) throws](./audiohardwaretap/setdescription%28_%29.md)
   Set the description property.
 
 ## Relationships
 
 ### Inherits From
-- [AudioHardwareObject](audiohardwareobject.md)
+- [AudioHardwareObject](./audiohardwareobject.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

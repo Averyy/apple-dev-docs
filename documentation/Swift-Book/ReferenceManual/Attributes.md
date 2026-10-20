@@ -31,7 +31,7 @@ and their format is defined by the attribute they belong to.
 
 Attached macros and property wrappers also use attribute syntax.
 For information about how macros expand,
-see [Macro Expansion Expression](Expressions.md#Macro-Expansion-Expression).
+see [Macro-Expansion Expression](Expressions.md#Macro-Expansion-Expression).
 For information about property wrappers,
 see [propertyWrapper](Attributes.md#propertyWrapper).
 
@@ -1052,7 +1052,7 @@ like code that all needs to execute on the same thread.
 
 Global actors implicitly conform to the [`GlobalActor`][] protocol.
 The main actor is a global actor provided by the standard library,
-as discussed in [The Main Actor](Concurrency.md#The-Main-Actor).
+as discussed in [The Main Actor](../LanguageGuide/Concurrency.md#The-Main-Actor).
 Most code can use the main actor instead of defining a new global actor.
 
 [`GlobalActor`]: https://developer.apple.com/documentation/swift/globalactor
@@ -1181,7 +1181,7 @@ protocol ProvidesMain {
 
 The Swift code you compile to make an executable
 can contain at most one top-level entry point,
-as discussed in [Top Level Code](Declarations.md#Top-Level-Code).
+as discussed in [Top-Level Code](Declarations.md#Top-Level-Code).
 
 <!--
   - test: `no-at-main-in-top-level-code`
@@ -1279,7 +1279,7 @@ NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
 
 The Swift code you compile to make an executable
 can contain at most one top-level entry point,
-as discussed in [Top Level Code](Declarations.md#Top-Level-Code).
+as discussed in [Top-Level Code](Declarations.md#Top-Level-Code).
 
 ### NSCopying
 
@@ -1740,7 +1740,7 @@ that builds a nested data structure step by step.
 You use result builders to implement a domain-specific language (DSL)
 for creating nested data structures in a natural, declarative way.
 For an example of how to use the `resultBuilder` attribute,
-see [Result Builders](AdvancedOperators.md#Result-Builders).
+see [Result Builders](../LanguageGuide/AdvancedOperators.md#Result-Builders).
 
 #### Result-Building Methods
 
@@ -2564,7 +2564,7 @@ instead of using this attribute.
 
 The Swift code you compile to make an executable
 can contain at most one top-level entry point,
-as discussed in [Top Level Code](Declarations.md#Top-Level-Code).
+as discussed in [Top-Level Code](Declarations.md#Top-Level-Code).
 
 ### unchecked
 
@@ -2671,7 +2671,7 @@ You apply it to a parameter's type in a function or method declaration,
 for a parameter whose type is a function type that takes no arguments
 and that returns a value of the type of the expression.
 For an example of how to use the `autoclosure` attribute,
-see [Autoclosures](Closures.md#Autoclosures) and [Function Type](Types.md#Function-Type).
+see [Autoclosures](../LanguageGuide/Closures.md#Autoclosures) and [Function Type](Types.md#Function-Type).
 
 ### convention
 
@@ -2715,7 +2715,7 @@ This means that the value is allowed to outlive the lifetime of the call.
 Function type parameters with the `escaping` type attribute
 require explicit use of `self.` for properties or methods.
 For an example of how to use the `escaping` attribute,
-see [Escaping Closures](Closures.md#Escaping-Closures).
+see [Escaping Closures](../LanguageGuide/Closures.md#Escaping-Closures).
 
 ### Sendable
 

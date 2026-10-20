@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a strongly-typed options value from raw C options.
 
@@ -22,7 +23,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [var rawValue: CInt](filedescriptor/openoptions/rawvalue.md)
+### Interacting with C APIs
+- [var rawValue: CInt](./rawvalue.md)
   The raw C options.
 
 

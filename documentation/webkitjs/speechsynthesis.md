@@ -1,7 +1,8 @@
 # SpeechSynthesis
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SpeechSynthesis
 ```
 
 ## Topics
 
 ### Instance Properties
-- [paused](speechsynthesis/1628964-paused.md)
-- [pending](speechsynthesis/1632665-pending.md)
-- [speaking](speechsynthesis/1632848-speaking.md)
+- [paused](./speechsynthesis/api-1628964-paused.md)
+- [pending](./speechsynthesis/api-1632665-pending.md)
+- [speaking](./speechsynthesis/api-1632848-speaking.md)
 ### Instance Methods
-- [cancel](speechsynthesis/1630672-cancel.md)
-- [getVoices](speechsynthesis/1634378-getvoices.md)
-- [pause](speechsynthesis/1630381-pause.md)
-- [resume](speechsynthesis/1629944-resume.md)
-- [speak](speechsynthesis/1633990-speak.md)
+- [cancel](./speechsynthesis/api-1630672-cancel.md)
+- [getVoices](./speechsynthesis/api-1634378-getvoices.md)
+- [pause](./speechsynthesis/api-1630381-pause.md)
+- [resume](./speechsynthesis/api-1629944-resume.md)
+- [speak](./speechsynthesis/api-1633990-speak.md)
 
 
 ---

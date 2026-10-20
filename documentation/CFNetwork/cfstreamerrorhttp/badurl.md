@@ -1,7 +1,8 @@
 # CFStreamErrorHTTP.badURL
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The URL is not properly formatted.
 
@@ -19,11 +20,16 @@ The URL is not properly formatted.
 case badURL
 ```
 
+```c
+kCFStreamErrorHTTPBadURL
+```
+
 ## See Also
 
-- [CFStreamErrorHTTP.parseFailure](cfstreamerrorhttp/parsefailure.md)
+### Constants
+- [CFStreamErrorHTTP.parseFailure](./parsefailure.md)
   A parsing error occurred while an incoming message was being deserialized and appended to a message object. The headers of the incoming message may be formatted improperly.
-- [CFStreamErrorHTTP.redirectionLoop](cfstreamerrorhttp/redirectionloop.md)
+- [CFStreamErrorHTTP.redirectionLoop](./redirectionloop.md)
   A redirection loop has been detected.
 
 

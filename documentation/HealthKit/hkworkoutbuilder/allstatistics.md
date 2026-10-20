@@ -1,7 +1,8 @@
 # allStatistics
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains all the statistics for the workout builder.
 
@@ -19,9 +20,13 @@ A dictionary that contains all the statistics for the workout builder.
 var allStatistics: [HKQuantityType : HKStatistics] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<HKQuantityType *,HKStatistics *> * allStatistics;
+```
+
 #### Discussion
 
-HealthKit calculates an [`HKStatistics`](hkstatistics.md) object for each [`HKQuantityType`](hkquantitytype.md), based on the [`HKQuantitySample`](hkquantitysample.md) objects collected by the workout builder.
+HealthKit calculates an [`HKStatistics`](../hkstatistics.md) object for each [`HKQuantityType`](../hkquantitytype.md), based on the [`HKQuantitySample`](../hkquantitysample.md) objects collected by the workout builder.
 
 
 ---

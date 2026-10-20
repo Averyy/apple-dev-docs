@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The entity the receiver is associated with
@@ -19,7 +20,8 @@ var entity: (any HasCollision)? { get set }
 
 ## See Also
 
-- [func location(in: Entity?) -> SIMD3<Float>?](entitygesturerecognizer/location(in:).md)
+### Using the gesture recognizer
+- [func location(in: Entity?) -> SIMD3<Float>?](./location%28in%29.md)
   Returns the unprojected location of the gesture represented by the receiver in the space of the given entity.
 
 

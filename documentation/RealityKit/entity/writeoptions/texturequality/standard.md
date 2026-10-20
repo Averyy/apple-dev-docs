@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reduces the texture file size while preserving most details.
 

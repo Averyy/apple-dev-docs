@@ -1,7 +1,8 @@
 # HKContactsLensSpecification
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the contacts prescription data for one eye.
 
@@ -19,16 +20,20 @@ An object that contains the contacts prescription data for one eye.
 class HKContactsLensSpecification
 ```
 
+```objc
+@interface HKContactsLensSpecification : HKLensSpecification
+```
+
 #### Overview
 
-To create a sample that stores a contacts prescription, start by defining a specification for each eye. Each lens specification object requires a `sphere` parameter. This measures the lens’s strength for correcting either nearsightedness or farsightedness (measured in [`diopter()`](hkunit/diopter().md) units).
+To create a sample that stores a contacts prescription, start by defining a specification for each eye. Each lens specification object requires a `sphere` parameter. This measures the lens’s strength for correcting either nearsightedness or farsightedness (measured in [`diopter()`](./hkunit/diopter%28%29.md) units).
 
 ```swift
 // The correction for farsightedness.
 let sphere = HKQuantity(unit: .diopter(), doubleValue: -0.75)
 ```
 
-Next, create values for any of the prescription’s optional parameters. For example, if the prescription corrects for astigmatism, create the `cylinder` and `axis` values. The `cylinder` value uses [`diopter()`](hkunit/diopter().md) units, while the `axis` uses [`degreeAngle()`](hkunit/degreeangle().md).
+Next, create values for any of the prescription’s optional parameters. For example, if the prescription corrects for astigmatism, create the `cylinder` and `axis` values. The `cylinder` value uses [`diopter()`](./hkunit/diopter%28%29.md) units, while the `axis` uses [`degreeAngle()`](./hkunit/degreeangle%28%29.md).
 
 ```swift
 // The corrections for astigmatism.
@@ -36,7 +41,7 @@ let cylinder = HKQuantity(unit: .diopter(), doubleValue: -0.5)
 let axis = HKQuantity(unit: .degreeAngle(), doubleValue: 155.0)
 ```
 
-To add a multifocal correction for reading, create an `addPower` value using [`diopter()`](hkunit/diopter().md) units.
+To add a multifocal correction for reading, create an `addPower` value using [`diopter()`](./hkunit/diopter%28%29.md) units.
 
 ```swift
 // Multifocal correction for reading.
@@ -54,7 +59,7 @@ let diameter = HKQuantity(unit: HKUnit.meterUnit(with: .milli),
                           doubleValue: 12.0)
 ```
 
-Then you can create the [`HKContactsLensSpecification`](hkcontactslensspecification.md) lens specification.
+Then you can create the [`HKContactsLensSpecification`](./hkcontactslensspecification.md) lens specification.
 
 ```swift
 // The prescription for the right eye.
@@ -66,7 +71,7 @@ let contactsRightEye = HKContactsLensSpecification(sphere: sphere,
                                                    diameter: diameter)
 ```
 
-After you create your lens specifications, you can create an [`HKContactsPrescription`](hkcontactsprescription.md) sample.
+After you create your lens specifications, you can create an [`HKContactsPrescription`](./hkcontactsprescription.md) sample.
 
 ```swift
 // The date the doctor issued the prescription.
@@ -115,53 +120,54 @@ do {
 }
 ```
 
-> ❗ **Important**:  Many regions require an image of the prescription to manufacture glasses or contacts. Add an image or pdf of the prescription as an attachment. For more information, see [`HKAttachmentStore`](hkattachmentstore.md).
+> ❗ **Important**:  Many regions require an image of the prescription to manufacture glasses or contacts. Add an image or pdf of the prescription as an attachment. For more information, see [`HKAttachmentStore`](./hkattachmentstore.md).
 
 ## Topics
 
 ### Creating contacts lens specifications
-- [init(sphere: HKQuantity, cylinder: HKQuantity?, axis: HKQuantity?, addPower: HKQuantity?, baseCurve: HKQuantity?, diameter: HKQuantity?)](hkcontactslensspecification/init(sphere:cylinder:axis:addpower:basecurve:diameter:).md)
+- [init(sphere: HKQuantity, cylinder: HKQuantity?, axis: HKQuantity?, addPower: HKQuantity?, baseCurve: HKQuantity?, diameter: HKQuantity?)](./hkcontactslensspecification/init%28sphere,cylinder,axis,addpower,basecurve,diameter%29.md)
   Creates a new contact lens specification, containing the prescription data for one eye.
 ### Accessing the specification’s data
-- [var baseCurve: HKQuantity?](hkcontactslensspecification/basecurve.md)
+- [var baseCurve: HKQuantity?](./hkcontactslensspecification/basecurve.md)
   Part of the contact’s fit, it measures the curve of the back side of the contact, measured in mm.
-- [var diameter: HKQuantity?](hkcontactslensspecification/diameter.md)
+- [var diameter: HKQuantity?](./hkcontactslensspecification/diameter.md)
   Part of the contact’s fit, it measures the diameter of the lens, measured in mm.
 ### Initializers
-- [init?(coder: NSCoder)](hkcontactslensspecification/init(coder:).md)
+- [init?(coder: NSCoder)](./hkcontactslensspecification/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKLensSpecification](hklensspecification.md)
+- [HKLensSpecification](./hklensspecification.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKVisionPrescription](hkvisionprescription.md)
+### Vision prescriptions
+- [class HKVisionPrescription](./hkvisionprescription.md)
   A sample that stores a vision prescription.
-- [class HKGlassesPrescription](hkglassesprescription.md)
+- [class HKGlassesPrescription](./hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](./hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [class HKGlassesLensSpecification](hkglasseslensspecification.md)
+- [class HKGlassesLensSpecification](./hkglasseslensspecification.md)
   An object that contains the glasses prescription data for one eye.
-- [class HKLensSpecification](hklensspecification.md)
+- [class HKLensSpecification](./hklensspecification.md)
   An abstract superclass for lens specifications.
-- [class HKVisionPrism](hkvisionprism.md)
+- [class HKVisionPrism](./hkvisionprism.md)
   Prescription data for eye alignment.
-- [class HKPrescriptionType](hkprescriptiontype.md)
+- [class HKPrescriptionType](./hkprescriptiontype.md)
   A type that identifies samples that store a prescription.
 
 

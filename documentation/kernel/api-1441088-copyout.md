@@ -1,23 +1,25 @@
 # copyout
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int copyout(const void *kaddr, user_addr_t udaddr, size_t len);
 ```
 
 ## See Also
 
-- [copyin](1441036-copyin.md)
-- [copyinstr](1441071-copyinstr.md)
-- [copyoutstr](1441047-copyoutstr.md)
-- [copystr](1441079-copystr.md)
+### copyio
+- [copyin](./api-1441036-copyin.md)
+- [copyinstr](./api-1441071-copyinstr.md)
+- [copyoutstr](./api-1441047-copyoutstr.md)
+- [copystr](./api-1441079-copystr.md)
 
 
 ---

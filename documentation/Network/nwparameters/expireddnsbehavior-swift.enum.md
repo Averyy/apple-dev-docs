@@ -1,7 +1,8 @@
 # NWParameters.ExpiredDNSBehavior
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for configuring how expired DNS answers should be used.
 
@@ -23,46 +24,47 @@ enum ExpiredDNSBehavior
 ## Topics
 
 ### Behaviors
-- [NWParameters.ExpiredDNSBehavior.systemDefault](nwparameters/expireddnsbehavior-swift.enum/systemdefault.md)
+- [NWParameters.ExpiredDNSBehavior.systemDefault](./expireddnsbehavior-swift.enum/systemdefault.md)
   Let the system determine whether or not to allow expired DNS answers.
-- [NWParameters.ExpiredDNSBehavior.allow](nwparameters/expireddnsbehavior-swift.enum/allow.md)
+- [NWParameters.ExpiredDNSBehavior.allow](./expireddnsbehavior-swift.enum/allow.md)
   Explicitly allow the use of expired DNS answers.
-- [NWParameters.ExpiredDNSBehavior.prohibit](nwparameters/expireddnsbehavior-swift.enum/prohibit.md)
+- [NWParameters.ExpiredDNSBehavior.prohibit](./expireddnsbehavior-swift.enum/prohibit.md)
   Explicitly prohibit the use of expired DNS answers.
 ### Enumeration Cases
-- [NWParameters.ExpiredDNSBehavior.persistent](nwparameters/expireddnsbehavior-swift.enum/persistent.md)
+- [NWParameters.ExpiredDNSBehavior.persistent](./expireddnsbehavior-swift.enum/persistent.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var multipathServiceType: NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.property.md)
+### Customizing Connection Options
+- [var multipathServiceType: NWParameters.MultipathServiceType](./multipathservicetype-swift.property.md)
   An option to allow connections to use multipath protocols.
-- [NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.enum.md)
+- [NWParameters.MultipathServiceType](./multipathservicetype-swift.enum.md)
   Modes in which a connection can support multipath protocols.
-- [var serviceClass: NWParameters.ServiceClass](nwparameters/serviceclass-swift.property.md)
+- [var serviceClass: NWParameters.ServiceClass](./serviceclass-swift.property.md)
   The traffic characteristics network connections send and receive.
-- [NWParameters.ServiceClass](nwparameters/serviceclass-swift.enum.md)
+- [NWParameters.ServiceClass](./serviceclass-swift.enum.md)
   Indicates how the system prioritizes transmitted traffic by your latency and throughput needs.
-- [var allowFastOpen: Bool](nwparameters/allowfastopen.md)
+- [var allowFastOpen: Bool](./allowfastopen.md)
   A Boolean that enables sending application data with protocol handshakes.
-- [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](nwparameters/expireddnsbehavior-swift.property.md)
+- [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](./expireddnsbehavior-swift.property.md)
   A behavior that defines how expired DNS answers will be used.
-- [var requiresDNSSECValidation: Bool](nwparameters/requiresdnssecvalidation.md)
+- [var requiresDNSSECValidation: Bool](./requiresdnssecvalidation.md)
   A Boolean value that determines whether a connection requires DNSSEC validation when resolving endpoints.
-- [var preferNoProxies: Bool](nwparameters/prefernoproxies.md)
+- [var preferNoProxies: Bool](./prefernoproxies.md)
   A Boolean that indicates that connections should ignore proxies when they are enabled on the system.
-- [var includePeerToPeer: Bool](nwparameters/includepeertopeer.md)
+- [var includePeerToPeer: Bool](./includepeertopeer.md)
   A Boolean that enables peer-to-peer link technologies for connections and listeners.
-- [var allowLocalEndpointReuse: Bool](nwparameters/allowlocalendpointreuse.md)
+- [var allowLocalEndpointReuse: Bool](./allowlocalendpointreuse.md)
   A Boolean that allows reusing local addresses and ports across connections.
-- [var acceptLocalOnly: Bool](nwparameters/acceptlocalonly.md)
+- [var acceptLocalOnly: Bool](./acceptlocalonly.md)
   A Boolean that restricts listeners to only accepting connections from the local link.
 
 

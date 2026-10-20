@@ -1,13 +1,14 @@
 # isLessThanOrEqual(to:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the receiver is less than or equal to another given object.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Returns a Boolean value that indicates whether the receiver is less than or equa
 func isLessThanOrEqual(to object: Any?) -> Bool
 ```
 
+```objc
+- (BOOL) isLessThanOrEqualTo:(id) object;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the receiver is less than or equal to `object`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the receiver is less than or equal to `object`, otherwise [`NO`](../no.md).
 
 #### Discussion
 
-During the evaluation of an `NSWhoseSpecifier` object that contains a test whose operator is `NSLessThanOrEqualToComparison`, an [`isLessThanOrEqual(to:)`](nsobject-swift.class/islessthanorequal(to:).md) message may be sent to each potentially specified object, if the potentially specified object does not implement a [`scriptingIsLessThanOrEqual(to:)`](nsobject-swift.class/scriptingislessthanorequal(to:).md) method and the object being tested against does not implement a [`scriptingIsGreaterThan(_:)`](nsobject-swift.class/scriptingisgreaterthan(_:).md) method.
+During the evaluation of an `NSWhoseSpecifier` object that contains a test whose operator is `NSLessThanOrEqualToComparison`, an [`isLessThanOrEqual(to:)`](./islessthanorequal%28to%29.md) message may be sent to each potentially specified object, if the potentially specified object does not implement a [`scriptingIsLessThanOrEqual(to:)`](./scriptingislessthanorequal%28to%29.md) method and the object being tested against does not implement a [`scriptingIsGreaterThan(_:)`](./scriptingisgreaterthan%28_%29.md) method.
 
-The default implementation for this method provided by `NSObject` method returns [`YES`](yes.md) if a `compare:` message sent to the same object would return `NSOrderedAscending` or `NSOrderedSame`.
+The default implementation for this method provided by `NSObject` method returns [`YES`](../yes.md) if a `compare:` message sent to the same object would return `NSOrderedAscending` or `NSOrderedSame`.
 
 ## Parameters
 

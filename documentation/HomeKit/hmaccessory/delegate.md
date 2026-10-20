@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that receives updates on the state of the accessory.
 
@@ -19,9 +20,14 @@ A delegate that receives updates on the state of the accessory.
 weak var delegate: (any HMAccessoryDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<HMAccessoryDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol HMAccessoryDelegate](hmaccessorydelegate.md)
+### Tracking changes to an accessory
+- [protocol HMAccessoryDelegate](../hmaccessorydelegate.md)
   A set of methods that defines the communication method for state updates from accessories to their delegates.
 
 

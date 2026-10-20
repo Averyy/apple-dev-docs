@@ -1,7 +1,8 @@
 # isCoachingEnabled
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that indicates that the session periodically provides user instructions.
 
@@ -18,7 +19,7 @@ var isCoachingEnabled: Bool
 
 #### Discussion
 
-When you enable this option and the framework determines the device needs a particular movement or perspective, it calls your delegate’s [`captureSession(_:didProvide:)`](roomcapturesessiondelegate/capturesession(_:didprovide:).md) and provides a particular [`RoomCaptureSession.Instruction`](roomcapturesession/instruction.md) that you can display to the user.
+When you enable this option and the framework determines the device needs a particular movement or perspective, it calls your delegate’s [`captureSession(_:didProvide:)`](../../roomcapturesessiondelegate/capturesession%28_,didprovide%29.md) and provides a particular [`RoomCaptureSession.Instruction`](../instruction.md) that you can display to the user.
 
 The default value is `true`.
 

@@ -1,17 +1,22 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed by the image view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var image: NSImage? { get set }
+```
+
+```objc
+@property (strong, nullable) NSImage * image;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Use this property to change the image being displayed.
 
 ## See Also
 
-- [var symbolConfiguration: NSImage.SymbolConfiguration?](nsimageview/symbolconfiguration.md)
+### Specifying the image
+- [var symbolConfiguration: NSImage.SymbolConfiguration?](./symbolconfiguration.md)
   Specifies a combination of point size, weight, and scale to use when sizing and displaying symbol images.
 
 

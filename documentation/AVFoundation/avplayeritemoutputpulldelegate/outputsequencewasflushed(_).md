@@ -1,7 +1,8 @@
 # outputSequenceWasFlushed(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new sample sequence is commencing.
 
@@ -20,6 +21,10 @@ Tells the delegate that a new sample sequence is commencing.
 optional func outputSequenceWasFlushed(_ output: AVPlayerItemOutput)
 ```
 
+```objc
+- (void) outputSequenceWasFlushed:(AVPlayerItemOutput *) output;
+```
+
 #### Discussion
 
 This method is called after any attempt to seek or change the playback direction of the item’s content. If you are maintaining any queued future samples, you can use your implementation of this method to discard those samples.
@@ -30,7 +35,8 @@ This method is called after any attempt to seek or change the playback direction
 
 ## See Also
 
-- [func outputMediaDataWillChange(AVPlayerItemOutput)](avplayeritemoutputpulldelegate/outputmediadatawillchange(_:).md)
+### Responding to pixel buffer changes
+- [func outputMediaDataWillChange(AVPlayerItemOutput)](./outputmediadatawillchange%28_%29.md)
   Tells the delegate that new samples are about to arrive.
 
 

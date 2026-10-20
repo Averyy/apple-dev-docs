@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOVideoDevicePortTypeInput](1646129-anonymous/kiovideodeviceporttypeinput.md)
-- [kIOVideoDevicePortTypeNotification](1646129-anonymous/kiovideodeviceporttypenotification.md)
-- [kIOVideoDevicePortTypeOutput](1646129-anonymous/kiovideodeviceporttypeoutput.md)
+- [kIOVideoDevicePortTypeInput](./api-1646129-anonymous/kiovideodeviceporttypeinput.md)
+- [kIOVideoDevicePortTypeNotification](./api-1646129-anonymous/kiovideodeviceporttypenotification.md)
+- [kIOVideoDevicePortTypeOutput](./api-1646129-anonymous/kiovideodeviceporttypeoutput.md)
 
 
 ---

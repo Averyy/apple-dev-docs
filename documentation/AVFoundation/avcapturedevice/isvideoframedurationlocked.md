@@ -1,7 +1,8 @@
 # isVideoFrameDurationLocked
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the device’s video frame rate (expressed as a duration) is currently locked.
 
@@ -18,17 +19,22 @@ Whether the device’s video frame rate (expressed as a duration) is currently l
 var isVideoFrameDurationLocked: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVideoFrameDurationLocked) BOOL videoFrameDurationLocked;
+```
+
 #### Discussion
 
-Returns `true` when an [`AVCaptureDeviceInput`](avcapturedeviceinput.md) associated with the device has its [`activeLockedVideoFrameDuration`](avcapturedeviceinput/activelockedvideoframeduration.md) property set to something other than `kCMTimeInvalid`. See [`activeLockedVideoFrameDuration`](avcapturedeviceinput/activelockedvideoframeduration.md) for more information on video frame duration locking.
+Returns `true` when an [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) associated with the device has its [`activeLockedVideoFrameDuration`](../avcapturedeviceinput/activelockedvideoframeduration.md) property set to something other than `kCMTimeInvalid`. See [`activeLockedVideoFrameDuration`](../avcapturedeviceinput/activelockedvideoframeduration.md) for more information on video frame duration locking.
 
 ## See Also
 
-- [var isFollowingExternalSyncDevice: Bool](avcapturedevice/isfollowingexternalsyncdevice.md)
+### Synchronizing with external devices
+- [var isFollowingExternalSyncDevice: Bool](./isfollowingexternalsyncdevice.md)
   Whether the device is following an external sync device.
-- [var minSupportedExternalSyncFrameDuration: CMTime](avcapturedevice/minsupportedexternalsyncframeduration.md)
+- [var minSupportedExternalSyncFrameDuration: CMTime](./minsupportedexternalsyncframeduration.md)
   The minimum frame duration that can be passed as the `videoFrameDuration` when directing your device input to follow an external sync device.
-- [var minSupportedLockedVideoFrameDuration: CMTime](avcapturedevice/minsupportedlockedvideoframeduration.md)
+- [var minSupportedLockedVideoFrameDuration: CMTime](./minsupportedlockedvideoframeduration.md)
   The maximum frame rate (expressed as a minimum duration) that can be set on an input associated with this device.
 
 

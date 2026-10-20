@@ -1,7 +1,8 @@
 # customDismissAction
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Send dismiss actions to the `UNUserNotificationCenter` object’s delegate for handling.
 
@@ -17,6 +18,10 @@ Send dismiss actions to the `UNUserNotificationCenter` object’s delegate for h
 
 ```swift
 static var customDismissAction: UNNotificationCategoryOptions { get }
+```
+
+```c
+UNNotificationCategoryOptionCustomDismissAction
 ```
 
 

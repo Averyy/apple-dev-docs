@@ -1,7 +1,8 @@
 # MIDINetworkBonjourServiceType
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Bonjour service type.
 
@@ -18,13 +19,18 @@ The Bonjour service type.
 let MIDINetworkBonjourServiceType: String
 ```
 
+```c
+extern NSString * const MIDINetworkBonjourServiceType;
+```
+
 ## See Also
 
-- [convenience init(name: String, address: String, port: Int)](midinetworkhost/init(name:address:port:).md)
+### Creating Network Hosts
+- [convenience init(name: String, address: String, port: Int)](./midinetworkhost/init%28name,address,port%29.md)
   Creates a host with the specified name, adress, and port.
-- [convenience init(name: String, netService: NetService)](midinetworkhost/init(name:netservice:).md)
+- [convenience init(name: String, netService: NetService)](./midinetworkhost/init%28name,netservice%29.md)
   Creates a host with the specified name and net service.
-- [convenience init(name: String, netServiceName: String, netServiceDomain: String)](midinetworkhost/init(name:netservicename:netservicedomain:).md)
+- [convenience init(name: String, netServiceName: String, netServiceDomain: String)](./midinetworkhost/init%28name,netservicename,netservicedomain%29.md)
   Creates a host with the specified name, net service name, and domain.
 
 

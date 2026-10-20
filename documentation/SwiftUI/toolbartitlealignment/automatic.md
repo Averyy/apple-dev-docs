@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system determines the alignment.
 
@@ -24,7 +25,7 @@ static let automatic: ToolbarTitleAlignment
 
 The system chooses an alignment based on the context the title is rendered in.
 
-When read from [`toolbarTitleAlignment`](environmentvalues/toolbartitlealignment.md), this means the system has not resolved an alignment for the title.
+When read from [`toolbarTitleAlignment`](../environmentvalues/toolbartitlealignment.md), this means the system has not resolved an alignment for the title.
 
 
 ---

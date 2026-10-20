@@ -1,7 +1,8 @@
 # Get Catalog Charts
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch one or more charts from the Apple Music Catalog.
 
@@ -12,13 +13,13 @@ Fetch one or more charts from the Apple Music Catalog.
 
 If successful, the HTTP status code is 200 (OK) and the response contains an object where `results` contains chart collections. The members for the collections are the chart types in the request and the values are `Chart` objects. The `data` member of each `Chart` object contains an array of the corresponding resource ordered by popularity. For example, if the request contains the `songs` chart type, the object contains a `songs` member with a value that is a `Chart` object containing `Song` objects. This may be a paginated response. For more information, see `Fetch Resources by Page`.
 
-If unsuccessful, the HTTP status code indicates the error and the details are in the errors array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If unsuccessful, the HTTP status code indicates the error and the details are in the errors array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/charts?types=songs,albums,playlists&genre=20&limit=1
 ```
 
@@ -161,17 +162,38 @@ https://api.music.apple.com/v1/catalog/us/charts?types=songs,albums,playlists&ge
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `types` ([string]) *(required)*: A list of the types of charts to include in the results. The possible values are `albums`, `songs`, and `music-videos`.
+
+  **Allowed Values**: `albums`, `music-videos`, `playlists`, `songs`
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `chart` (string): The chart to fetch for the specified types. For possible values, get all the charts by sending this endpoint without the chart parameter. The possible values for this parameter are the `chart` attributes of the `Chart` objects in the response.
+
+  **Allowed Values**: `most-played`
 - `genre` (string): The identifier for the genre to use in the chart results.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+
+  **Default**: `20`; **Maximum**: `200`
 - `offset` (string): The next page or group of objects to fetch.
 - `with` ([string]): The request modifiers for fetching non-standard charts collections. The value `cityCharts` fetches per-city charts. The value `globalTopCharts` allows the global charts to be fetched.
 
+  **Allowed Values**: `cityCharts`, `dailyGlobalTopCharts`
+
+## Responses
+
+- `200` OK (`ChartResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object ChartResponse](chartresponse.md)
+### Related Documentation
+- [object ChartResponse](./chartresponse.md)
   The response to a request for a chart.
 
 

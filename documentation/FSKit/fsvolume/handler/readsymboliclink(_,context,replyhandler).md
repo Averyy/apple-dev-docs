@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads a symbolic link.
@@ -12,26 +13,35 @@ Reads a symbolic link.
 ## Declaration
 
 ```swift
+func readSymbolicLink(_ item: FSItem, context: FSContext, replyHandler reply: @escaping @Sendable (FSReadSymlinkResult?, (any Error)?) -> Void)
+```
+
+```swift
 func readSymbolicLink(_ item: FSItem, context: FSContext) async throws -> FSReadSymlinkResult
+```
+
+```objc
+- (void) readSymbolicLink:(FSItem *) item context:(FSContext *) context replyHandler:(void (^)(FSReadSymlinkResult *result, NSError *error)) reply;
 ```
 
 ## Parameters
 
-- `item`: The symbolic link to read from. FSKit guarantees this item is of type [`FSItem.ItemType.symlink`](fsitem/itemtype/symlink.md).
+- `item`: The symbolic link to read from. FSKit guarantees this item is of type [`FSItem.ItemType.symlink`](../../fsitem/itemtype/symlink.md).
 - `context`: An object that enables context-aware file system decisions throughout the operation.
-- `reply`: A block or closure to indicate success or failure. If reading succeeds, pass an instance of [`FSReadSymlinkResult`](fsreadsymlinkresult.md) containing the link’s contents and attributes, along with a `nil` error. If reading fails, pass the relevant error as the second parameter; FSKit ignores the [`FSReadSymlinkResult`](fsreadsymlinkresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `reply`: A block or closure to indicate success or failure. If reading succeeds, pass an instance of [`FSReadSymlinkResult`](../../fsreadsymlinkresult.md) containing the link’s contents and attributes, along with a `nil` error. If reading fails, pass the relevant error as the second parameter; FSKit ignores the [`FSReadSymlinkResult`](../../fsreadsymlinkresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [func createLink(to: FSItem, named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSCreateLinkResult?, (any Error)?) -> Void)](fsvolume/handler/createlink(to:named:in:context:replyhandler:).md)
+### Working with links
+- [func createLink(to: FSItem, named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSCreateLinkResult?, (any Error)?) -> Void)](./createlink%28to,named,in,context,replyhandler%29.md)
   Creates a new hard link.
-- [class FSCreateLinkResult](fscreatelinkresult.md)
+- [class FSCreateLinkResult](../../fscreatelinkresult.md)
   The result of a create-link call.
-- [func createSymbolicLink(named: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, linkContents: FSFileName, context: FSContext, replyHandler: (FSCreateSymlinkResult?, (any Error)?) -> Void)](fsvolume/handler/createsymboliclink(named:in:attributes:linkcontents:context:replyhandler:).md)
+- [func createSymbolicLink(named: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, linkContents: FSFileName, context: FSContext, replyHandler: (FSCreateSymlinkResult?, (any Error)?) -> Void)](./createsymboliclink%28named,in,attributes,linkcontents,context,replyhandler%29.md)
   Creates a new symbolic link.
-- [class FSCreateSymlinkResult](fscreatesymlinkresult.md)
+- [class FSCreateSymlinkResult](../../fscreatesymlinkresult.md)
   The result of a create-symlink call.
-- [class FSReadSymlinkResult](fsreadsymlinkresult.md)
+- [class FSReadSymlinkResult](../../fsreadsymlinkresult.md)
   The result of a read-symlink call.
 
 

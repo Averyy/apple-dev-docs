@@ -1,7 +1,8 @@
 # init(frame:actions:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a segmented control with the given frame and adds segments for the actions you specify.
 
@@ -18,22 +19,27 @@ Creates a segmented control with the given frame and adds segments for the actio
 convenience init(frame: CGRect, actions: [UIAction])
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame actions:(NSArray<UIAction *> *) actions;
+```
+
 #### Discussion
 
-Segments prefer images over titles when the action contains both. Selecting a segment invokes the action’s [`UIActionHandler`](uiactionhandler.md), as well as handlers for the [`valueChanged`](uicontrol/event/valuechanged.md) and [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control events.
+Segments prefer images over titles when the action contains both. Selecting a segment invokes the action’s [`UIActionHandler`](../uiactionhandler.md), as well as handlers for the [`valueChanged`](../uicontrol/event/valuechanged.md) and [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control events.
 
 ## Parameters
 
 - `frame`: A rectangle that specifies the segmented control’s frame in a superview’s coordinate system.
-- `actions`: An array of [`UIAction`](uiaction.md) objects.
+- `actions`: An array of [`UIAction`](../uiaction.md) objects.
 
 ## See Also
 
-- [init(items: [Any]?)](uisegmentedcontrol/init(items:).md)
+### Creating a segmented control
+- [init(items: [Any]?)](./init%28items%29.md)
   Creates a segmented control with segments having the given titles or images.
-- [init(frame: CGRect)](uisegmentedcontrol/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an empty segmented control with the frame you specify.
-- [init?(coder: NSCoder)](uisegmentedcontrol/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a segmented control with data from an unarchiver.
 
 

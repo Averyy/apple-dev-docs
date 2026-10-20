@@ -1,7 +1,8 @@
 # urlReadingFileURLsOnly
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Option for reading URLs to restrict the results to file URLs only.
 
@@ -14,13 +15,18 @@ Option for reading URLs to restrict the results to file URLs only.
 static let urlReadingFileURLsOnly: NSPasteboard.ReadingOptionKey
 ```
 
+```c
+extern NSPasteboardReadingOptionKey const NSPasteboardURLReadingFileURLsOnlyKey;
+```
+
 #### Discussion
 
 The value for this key is an `NSNumber` object with a boolean value.
 
 ## See Also
 
-- [static let urlReadingContentsConformToTypes: NSPasteboard.ReadingOptionKey](nspasteboard/readingoptionkey/urlreadingcontentsconformtotypes.md)
+### Type Properties
+- [static let urlReadingContentsConformToTypes: NSPasteboard.ReadingOptionKey](./urlreadingcontentsconformtotypes.md)
   Option for reading URLs to restrict the results to URLs with contents that conform to any of the provided UTI types.
 
 

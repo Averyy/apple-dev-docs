@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Feedback.outOfFieldOfView
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bounding box of the object is not in the field of view of the camera so auto-capture will not operate.
 

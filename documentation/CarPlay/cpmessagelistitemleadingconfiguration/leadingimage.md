@@ -1,7 +1,8 @@
 # leadingImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration’s image.
 
@@ -16,15 +17,20 @@ The configuration’s image.
 var leadingImage: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIImage * leadingImage;
+```
+
 #### Discussion
 
-Configurations are immutable. To change or remove the image that the message list item’s leading region shows, create a new configuration and update the list item’s [`leadingConfiguration`](cpmessagelistitem/leadingconfiguration.md) property.
+Configurations are immutable. To change or remove the image that the message list item’s leading region shows, create a new configuration and update the list item’s [`leadingConfiguration`](../cpmessagelistitem/leadingconfiguration.md) property.
 
-A configuration’s image can’t be larger than [`CPMaximumMessageItemImageSize`](cpmaximummessageitemimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
+A configuration’s image can’t be larger than [`CPMaximumMessageItemImageSize`](../cpmaximummessageitemimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
 
 ## See Also
 
-- [var isUnread: Bool](cpmessagelistitemleadingconfiguration/isunread.md)
+### Getting the Configuration’s State
+- [var isUnread: Bool](./isunread.md)
   A Boolean value that determines whether the message list item displays an unread indicator.
 
 

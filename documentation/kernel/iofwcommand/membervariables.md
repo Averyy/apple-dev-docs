@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct MemberVariables {
    void *fFWIMRefCon;
    IOReturn fCompletionStatus;

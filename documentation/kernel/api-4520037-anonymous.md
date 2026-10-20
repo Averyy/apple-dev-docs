@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIDeviceCreateCommandData1DeviceAddress](4520037-anonymous/iousbhostcidevicecreatecommanddata1deviceaddress.md)
-- [IOUSBHostCIDeviceCreateCommandData1DeviceAddressPhase](4520037-anonymous/iousbhostcidevicecreatecommanddata1deviceaddressphase.md)
+- [IOUSBHostCIDeviceCreateCommandData1DeviceAddress](./api-4520037-anonymous/iousbhostcidevicecreatecommanddata1deviceaddress.md)
+- [IOUSBHostCIDeviceCreateCommandData1DeviceAddressPhase](./api-4520037-anonymous/iousbhostcidevicecreatecommanddata1deviceaddressphase.md)
 
 
 ---

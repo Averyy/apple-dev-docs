@@ -1,7 +1,8 @@
 # interface
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network interface assigned to this attachment.
 
@@ -12,6 +13,10 @@ The network interface assigned to this attachment.
 
 ```swift
 var interface: VZBridgedNetworkInterface { get }
+```
+
+```objc
+@property (strong, readonly) VZBridgedNetworkInterface * interface;
 ```
 
 

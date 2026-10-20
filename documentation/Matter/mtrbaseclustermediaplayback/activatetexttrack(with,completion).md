@@ -1,7 +1,8 @@
 # activateTextTrack(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ActivateTextTrack
 
@@ -17,7 +18,15 @@ Command ActivateTextTrack
 ## Declaration
 
 ```swift
+func activateTextTrack(with params: MTRMediaPlaybackClusterActivateTextTrackParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func activateTextTrack(with params: MTRMediaPlaybackClusterActivateTextTrackParams) async throws
+```
+
+```objc
+- (void) activateTextTrackWithParams:(MTRMediaPlaybackClusterActivateTextTrackParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

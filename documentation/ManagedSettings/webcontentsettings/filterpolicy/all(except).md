@@ -1,7 +1,8 @@
 # WebContentSettings.FilterPolicy.all(except:)
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system blocks all websites except the ones you specify.
 
@@ -22,11 +23,12 @@ Your app can specify up to 50 web domains exceptions.
 
 ## See Also
 
-- [case auto(Set<WebDomain>, except: Set<WebDomain>)](webcontentsettings/filterpolicy/auto(_:except:).md)
+### Providing filters and exceptions
+- [case auto(Set<WebDomain>, except: Set<WebDomain>)](./auto%28_,except%29.md)
   The system blocks adult content.
-- [WebContentSettings.FilterPolicy.none](webcontentsettings/filterpolicy/none.md)
+- [WebContentSettings.FilterPolicy.none](./none.md)
   The policy doesn’t affect any domains.
-- [WebContentSettings.FilterPolicy.specific(_:)](webcontentsettings/filterpolicy/specific(_:).md)
+- [WebContentSettings.FilterPolicy.specific(_:)](./specific%28_%29.md)
   The policy blocks the specified domains.
 
 

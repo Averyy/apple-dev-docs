@@ -1,7 +1,8 @@
 # supplementalCompositeType
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supplemental composite type.
 
@@ -28,7 +29,8 @@ This attribute only exists when the primary descriptor is the 1D symbology of a 
 
 ## See Also
 
-- [BarcodeObservation.CompositeType](barcodeobservation/compositetype.md)
+### Getting the composite type
+- [BarcodeObservation.CompositeType](./compositetype.md)
   Composite types for barcode requests.
 
 

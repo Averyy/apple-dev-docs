@@ -1,7 +1,8 @@
 # objectID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that defines the unique identifier of an object in a picture.
 
@@ -16,6 +17,10 @@ An integer value that defines the unique identifier of an object in a picture.
 
 ```swift
 var objectID: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger objectID;
 ```
 
 #### Discussion

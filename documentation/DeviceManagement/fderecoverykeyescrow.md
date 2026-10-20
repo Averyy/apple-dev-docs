@@ -1,7 +1,8 @@
 # FDERecoveryKeyEscrow
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures FileVault recovery key escrow.
 
@@ -10,7 +11,7 @@ The payload that configures FileVault recovery key escrow.
 
 ## Declaration
 
-```swift
+```
 object FDERecoveryKeyEscrow
 ```
 
@@ -34,7 +35,7 @@ Note these cautions:
 
 Although the system no longer supports the previous FDE Recovery payload in macOS 10.13 and later, it’s still supported in macOS 10.9 through 10.12. Designate that payload by specifying `com.apple.security.FDERecoveryRedirect` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -46,7 +47,7 @@ Although the system no longer supports the previous FDE Recovery payload in macO
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -150,15 +151,18 @@ Although the system no longer supports the previous FDE Recovery payload in macO
 
 ## Properties
 
-- `DeviceKey` (string): The string that’s included in help text if the user appears to have forgotten the password. Site admins can use this key to look up the escrowed key for the particular computer. This key replaces the `RecordNumber` key used in the previous escrow mechanism. If the key is missing, the system uses the device serial number instead.
+- `DeviceKey` (string): The string that’s included in help text if the user appears to have forgotten the password. Site admins can use this key to look up the escrowed key for the particular computer.
+
+  This key replaces the `RecordNumber` key used in the previous escrow mechanism. If the key is missing, the system uses the device serial number instead.
 - `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains the certificate that the system uses to encrypt the recovery key. The referenced payload must be of type `com.apple.security.pkcs1`.
 - `Location` (string) *(required)*: The description of the location where the system escrows the recovery key. The system inserts this text into the message the user sees when it enables FileVault.
 
 ## See Also
 
-- [object FDEFileVault](fdefilevault.md)
+### FileVault
+- [object FDEFileVault](./fdefilevault.md)
   The payload that configures FileVault.
-- [object FDEFileVaultOptions](fdefilevaultoptions.md)
+- [object FDEFileVaultOptions](./fdefilevaultoptions.md)
   The payload that configures FileVault options.
 
 

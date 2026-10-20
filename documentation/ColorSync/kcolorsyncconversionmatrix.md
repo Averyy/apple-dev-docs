@@ -1,7 +1,8 @@
 # kColorSyncConversionMatrix
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for a conversion matrix component, represented as a `CFArray` of three `CFArray`s of four `Float32` `CFNumber`s.
 
@@ -20,17 +21,22 @@ A key for a conversion matrix component, represented as a `CFArray` of three `CF
 var kColorSyncConversionMatrix: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncConversionMatrix;
+```
+
 ## See Also
 
-- [var kColorSyncConversionParamCurve0: Unmanaged<CFString>!](kcolorsyncconversionparamcurve0.md)
+### Reading curves and matrices
+- [var kColorSyncConversionParamCurve0: Unmanaged<CFString>!](./kcolorsyncconversionparamcurve0.md)
   A key for a parametric tone rendering curve of type 0, represented as a `CFArray` of seven `Float32` `CFNumber`s.
-- [var kColorSyncConversionParamCurve1: Unmanaged<CFString>!](kcolorsyncconversionparamcurve1.md)
+- [var kColorSyncConversionParamCurve1: Unmanaged<CFString>!](./kcolorsyncconversionparamcurve1.md)
   A key for a parametric tone rendering curve of type 1, represented as a `CFArray` of seven `Float32` `CFNumber`s.
-- [var kColorSyncConversionParamCurve2: Unmanaged<CFString>!](kcolorsyncconversionparamcurve2.md)
+- [var kColorSyncConversionParamCurve2: Unmanaged<CFString>!](./kcolorsyncconversionparamcurve2.md)
   A key for a parametric tone rendering curve of type 2, represented as a `CFArray` of seven `Float32` `CFNumber`s.
-- [var kColorSyncConversionParamCurve3: Unmanaged<CFString>!](kcolorsyncconversionparamcurve3.md)
+- [var kColorSyncConversionParamCurve3: Unmanaged<CFString>!](./kcolorsyncconversionparamcurve3.md)
   A key for a parametric tone rendering curve of type 3, represented as a `CFArray` of seven `Float32` `CFNumber`s.
-- [var kColorSyncConversionParamCurve4: Unmanaged<CFString>!](kcolorsyncconversionparamcurve4.md)
+- [var kColorSyncConversionParamCurve4: Unmanaged<CFString>!](./kcolorsyncconversionparamcurve4.md)
   A key for a parametric tone rendering curve of type 4, represented as a `CFArray` of seven `Float32` `CFNumber`s.
 
 

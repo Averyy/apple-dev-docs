@@ -16,37 +16,38 @@ The `monogramLockup` element creates a white circle that contains the image or i
 </monogramLockup>
 ```
 
-##### Subelements of Monogramlockup
+##### Subelements of monogramLockup
 
-- [`monogram`](monogram.md)
-- [`subtitle`](subtitle.md)
-- [`title`](title.md)
+- [monogram](./monogram.md)
+- [subtitle](./subtitle.md)
+- [title](./title.md)
 
-##### Elements That Use Monogramlockup
+##### Elements that Use monogramLockup
 
-- [`section`](section.md)
+- [section](./section.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [button](button.md)
+### Lockup Elements
+- [button](./button.md)
   Displays a button icon the user can click to initiate an action.
-- [buttonLockup](buttonlockup.md)
+- [buttonLockup](./buttonlockup.md)
   Creates a button that can also have a badge associated with it.
-- [listItemLockup](listitemlockup.md)
+- [listItemLockup](./listitemlockup.md)
   Contains a new list item.
-- [lockup](lockup.md)
+- [lockup](./lockup.md)
   Contains several elements that are treated as a single element.
-- [overlay](overlay.md)
+- [overlay](./overlay.md)
   Displays elements on top of other elements.
 
 

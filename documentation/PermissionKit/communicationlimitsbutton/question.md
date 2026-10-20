@@ -1,7 +1,8 @@
 # question
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The question to ask a parent or guardian about making an exception to their child’s communication limits.
 
@@ -21,9 +22,10 @@ The question to ask a parent or guardian about making an exception to their chil
 
 ## See Also
 
-- [init(question: PermissionQuestion<CommunicationTopic>, label: () -> Label)](communicationlimitsbutton/init(question:label:).md)
+### Creating a view
+- [init(question: PermissionQuestion<CommunicationTopic>, label: () -> Label)](./init%28question,label%29.md)
   Creates a new instance.
-- [var body: some View](communicationlimitsbutton/body.md)
+- [var body: some View](./body.md)
   The body of the view.
 
 

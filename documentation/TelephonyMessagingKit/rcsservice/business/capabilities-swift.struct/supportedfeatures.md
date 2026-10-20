@@ -1,7 +1,8 @@
 # supportedFeatures
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The features supported by the business.
 

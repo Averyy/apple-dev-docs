@@ -1,7 +1,8 @@
 # kAXColumnRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A column.
 
@@ -12,6 +13,10 @@ A column.
 
 ```swift
 var kAXColumnRole: String { get }
+```
+
+```c
+#define kAXColumnRole
 ```
 
 

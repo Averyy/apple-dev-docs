@@ -1,7 +1,8 @@
 # batchRepresentation(withSubRange:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func batchRepresentation(withSubRange subRange: NSRange) -> [MPSImage]
+```
+
+```objc
+- (MPSImageBatch *) batchRepresentationWithSubRange:(NSRange) subRange;
 ```
 
 

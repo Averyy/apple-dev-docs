@@ -1,7 +1,8 @@
 # errorStatusCode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique error code identifier.
 
@@ -20,25 +21,30 @@ A unique error code identifier.
 var errorStatusCode: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger errorStatusCode;
+```
+
 #### Discussion
 
 The property corresponds to “status”.
 
 ## See Also
 
-- [var date: Date?](avplayeritemerrorlogevent/date.md)
+### Getting information about the event
+- [var date: Date?](./date.md)
   The date and time when the error occurred.
-- [var uri: String?](avplayeritemerrorlogevent/uri.md)
+- [var uri: String?](./uri.md)
   The URI of the playback item that had an error.
-- [var serverAddress: String?](avplayeritemerrorlogevent/serveraddress.md)
+- [var serverAddress: String?](./serveraddress.md)
   The IP address of the server that was the source of the error.
-- [var playbackSessionID: String?](avplayeritemerrorlogevent/playbacksessionid.md)
+- [var playbackSessionID: String?](./playbacksessionid.md)
   A GUID that identifies the playback session that had an error.
-- [var errorDomain: String](avplayeritemerrorlogevent/errordomain.md)
+- [var errorDomain: String](./errordomain.md)
   The domain of the error.
-- [var errorComment: String?](avplayeritemerrorlogevent/errorcomment.md)
+- [var errorComment: String?](./errorcomment.md)
   A description of the error encountered.
-- [var allHTTPResponseHeaderFields: [String : String]?](avplayeritemerrorlogevent/allhttpresponseheaderfields.md)
+- [var allHTTPResponseHeaderFields: [String : String]?](./allhttpresponseheaderfields.md)
   The HTTP header fields the server returns.
 
 

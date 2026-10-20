@@ -1,7 +1,8 @@
 # PermissionChoice
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A class that uniquely identifies a specific, statically defined permission choice.
 
@@ -20,11 +21,11 @@ struct PermissionChoice
 
 ## Mentions
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+- [Creating a communication experience](./creating-a-communication-experience.md)
 
 #### Overview
 
-Each [`PermissionQuestion`](permissionquestion.md) contains a set of possible answer choices, each corresponding to a globally unique identifier that you can interpret.
+Each [`PermissionQuestion`](./permissionquestion.md) contains a set of possible answer choices, each corresponding to a globally unique identifier that you can interpret.
 
 The code below is an example of how to use `PermissionChoice` to set permission choices for a person using your app.
 
@@ -39,49 +40,50 @@ The code below is an example of how to use `PermissionChoice` to set permission 
                           title: "Decline", answer: .denial)
 ```
 
-If your application only requires a yes or no response, you can use the two predefined `PermissionChoice` options: [`approve`](permissionchoice/approve.md) and [`decline`](permissionchoice/decline.md).
+If your application only requires a yes or no response, you can use the two predefined `PermissionChoice` options: [`approve`](./permissionchoice/approve.md) and [`decline`](./permissionchoice/decline.md).
 
 ## Topics
 
 ### Accessing answers
-- [var answer: PermissionChoice.Answer](permissionchoice/answer-swift.property.md)
+- [var answer: PermissionChoice.Answer](./permissionchoice/answer-swift.property.md)
   The type of answer this choice represents.
-- [PermissionChoice.Answer](permissionchoice/answer-swift.enum.md)
+- [PermissionChoice.Answer](./permissionchoice/answer-swift.enum.md)
   An answer to the permission request.
-- [static let approve: PermissionChoice](permissionchoice/approve.md)
+- [static let approve: PermissionChoice](./permissionchoice/approve.md)
   The system-preferred choice to approve a permission request.
-- [static let decline: PermissionChoice](permissionchoice/decline.md)
+- [static let decline: PermissionChoice](./permissionchoice/decline.md)
   The system-preferred choice to decline a permission request.
 ### Identifying permissions
-- [var id: String](permissionchoice/id.md)
+- [var id: String](./permissionchoice/id.md)
   A unique identifier for this choice.
-- [var title: String](permissionchoice/title.md)
+- [var title: String](./permissionchoice/title.md)
   The title of the choice that’s displayed to the person by the system.
 ### Computing hashes
-- [func hash(into: inout Hasher)](permissionchoice/hash(into:).md)
+- [func hash(into: inout Hasher)](./permissionchoice/hash%28into%29.md)
   Performs a hash operation on the value by feeding its hash values into the given hasher.
-- [static func == (PermissionChoice, PermissionChoice) -> Bool](permissionchoice/==(_:_:).md)
+- [static func == (PermissionChoice, PermissionChoice) -> Bool](./permissionchoice/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
+### Response management
 - [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
-](askcenter/responses(for:).md)
+](./askcenter/responses%28for%29.md)
   Registers the topic type with the system and returns an asynchronous sequence of responses.
-- [struct PermissionResponse](permissionresponse.md)
+- [struct PermissionResponse](./permissionresponse.md)
   A full permission response that includes the original question and chosen answer.
-- [struct CommunicationHandle](communicationhandle.md)
+- [struct CommunicationHandle](./communicationhandle.md)
   Contact information for identifying and communicating with a person.
-- [class CommunicationLimits](communicationlimits.md)
+- [class CommunicationLimits](./communicationlimits.md)
   A type that encapsulates the communication limits for your app.
 
 

@@ -1,7 +1,8 @@
 # CGImageSourceCreateWithDataProvider(_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an image source that reads data from the specified data provider.
 
@@ -20,22 +21,27 @@ Creates an image source that reads data from the specified data provider.
 func CGImageSourceCreateWithDataProvider(_ provider: CGDataProvider, _ options: CFDictionary?) -> CGImageSource?
 ```
 
+```c
+extern CGImageSourceRefCGImageSourceCreateWithDataProvider(CGDataProviderRef provider, CFDictionaryRef options);
+```
+
 #### Return Value
 
-An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
+An image source. You’re responsible for releasing this type using [`CFRelease`](../CoreFoundation/cfrelease.md).
 
 ## Parameters
 
-- `provider`: The data provider to read from. For more information on data providers, see [`CGDataProvider`](https://developer.apple.com/documentation/coregraphics/cgdataprovider) and [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
+- `provider`: The data provider to read from. For more information on data providers, see [`CGDataProvider`](../CoreGraphics/cgdataprovider.md) and [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [Specifying the Read Options](./cgimagesource.md#Specifying-the-Read-Options).
 
 ## See Also
 
-- [func CGImageSourceCreateWithURL(CFURL, CFDictionary?) -> CGImageSource?](cgimagesourcecreatewithurl(_:_:).md)
+### Creating an Image Source
+- [func CGImageSourceCreateWithURL(CFURL, CFDictionary?) -> CGImageSource?](./cgimagesourcecreatewithurl%28_,_%29.md)
   Creates an image source that reads from a location specified by a URL.
-- [func CGImageSourceCreateWithData(CFData, CFDictionary?) -> CGImageSource?](cgimagesourcecreatewithdata(_:_:).md)
+- [func CGImageSourceCreateWithData(CFData, CFDictionary?) -> CGImageSource?](./cgimagesourcecreatewithdata%28_,_%29.md)
   Creates an image source that reads from a Core Foundation data object.
-- [func CGImageSourceCreateIncremental(CFDictionary?) -> CGImageSource](cgimagesourcecreateincremental(_:).md)
+- [func CGImageSourceCreateIncremental(CFDictionary?) -> CGImageSource](./cgimagesourcecreateincremental%28_%29.md)
   Creates an empty image source that you can use to accumulate incremental image data.
 
 

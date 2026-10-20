@@ -1,7 +1,8 @@
 # MKIconStyle
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class you use to customize the annotation view icon of a point of interest (POI) on the map.
 
@@ -17,39 +18,44 @@ A class you use to customize the annotation view icon of a point of interest (PO
 class MKIconStyle
 ```
 
+```objc
+@interface MKIconStyle : NSObject
+```
+
 ## Topics
 
 ### Customizing the icon view
-- [var backgroundColor: UIColor](mkiconstyle/backgroundcolor.md)
+- [var backgroundColor: UIColor](./mkiconstyle/backgroundcolor.md)
   The background color of the icon.
-- [var image: UIImage](mkiconstyle/image.md)
+- [var image: UIImage](./mkiconstyle/image.md)
   The icon image.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+### Points of interest
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
   Obtain information about a point of interest that persists over its lifetime.
-- [class MKMapFeatureAnnotation](mkmapfeatureannotation.md)
+- [class MKMapFeatureAnnotation](./mkmapfeatureannotation.md)
   A class that describes an annotation element on the map’s display such as a point of interest, territorial boundary, or physical feature.
-- [struct MKMapFeatureOptions](mkmapfeatureoptions.md)
+- [struct MKMapFeatureOptions](./mkmapfeatureoptions.md)
   A structure you use to tell the map which kinds of features users can interact with.
-- [class MKMapItemRequest](mkmapitemrequest.md)
+- [class MKMapItemRequest](./mkmapitemrequest.md)
   A utility class you use to request additional information about a map feature.
-- [class MKPointOfInterestFilter](mkpointofinterestfilter.md)
+- [class MKPointOfInterestFilter](./mkpointofinterestfilter.md)
   A filter that includes or excludes point of interest categories from a map view, local search, or local search completer.
-- [struct MKPointOfInterestCategory](mkpointofinterestcategory.md)
+- [struct MKPointOfInterestCategory](./mkpointofinterestcategory.md)
   A point of interest category.
 
 

@@ -1,14 +1,17 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that appears in the receiver’s title bar.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 8.3
+- iPadOS 2.0+ - Deprecated in 8.3
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIActionSheet`](../uiactionsheet.md).
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The string that appears in the receiver’s title bar.
 var title: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * title;
+```
+
 ## See Also
 
-- [var delegate: (any UIActionSheetDelegate)?](uiactionsheet/delegate.md)
+### Setting properties
+- [var delegate: (any UIActionSheetDelegate)?](./delegate.md)
   The receiver’s delegate or `nil` if it doesn’t have a delegate.
-- [var isVisible: Bool](uiactionsheet/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the receiver is displayed.
-- [var actionSheetStyle: UIActionSheetStyle](uiactionsheet/actionsheetstyle.md)
+- [var actionSheetStyle: UIActionSheetStyle](./actionsheetstyle.md)
   The receiver’s presentation style.
 
 

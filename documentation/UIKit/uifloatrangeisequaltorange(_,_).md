@@ -1,17 +1,20 @@
 # UIFloatRangeIsEqualToRange(_:_:)
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean indicating whether two float ranges are equivalent.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 7.0+
-- tvOS ?+
-- visionOS ?+
-- Swift 1.0+
+- iOS 7.0+ - Deprecated in 12.0
+- iPadOS 7.0+ - Deprecated in 12.0
+- Mac Catalyst 7.0+ - Deprecated in 12.0
+- tvOS
+- visionOS
+- Swift 1.0+ - Deprecated in 4.2
+
+> **Deprecated**: Use `==` instead.
 
 ## Declaration
 
@@ -30,7 +33,8 @@ Two ranges are considered equal when their minimum values are the same and their
 
 ## See Also
 
-- [var isInfinite: Bool](uifloatrange/isinfinite.md)
+### Testing the range values
+- [var isInfinite: Bool](./uifloatrange/isinfinite.md)
   Returns a Boolean indicating whether the specified float range is infinitely large.
 
 

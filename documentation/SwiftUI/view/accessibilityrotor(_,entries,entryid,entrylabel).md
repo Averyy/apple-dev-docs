@@ -1,7 +1,8 @@
 # accessibilityRotor(_:entries:entryID:entryLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an Accessibility Rotor with the specified user-visible label and entries.
 
@@ -19,6 +20,28 @@ Create an Accessibility Rotor with the specified user-visible label and entries.
 ```swift
 @export(implementation)
 nonisolated func accessibilityRotor<EntryModel, ID>(_ rotorLabelResource: LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where ID : Hashable
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityRotor<EntryModel, ID>(_ rotorLabel: Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where ID : Hashable
+```
+
+```swift
+nonisolated
+func accessibilityRotor<EntryModel, ID>(_ rotorLabelKey: LocalizedStringKey, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where ID : Hashable
+```
+
+```swift
+nonisolated
+func accessibilityRotor<EntryModel, ID>(_ systemRotor: AccessibilitySystemRotor, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where ID : Hashable
+```
+
+```swift
+nonisolated
+func accessibilityRotor<L, EntryModel, ID>(_ rotorLabel: L, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where L : StringProtocol, ID : Hashable
 ```
 
 #### Discussion
@@ -54,11 +77,12 @@ ScrollView {
 
 ## See Also
 
-- [func accessibilityRotor(_:entries:)](view/accessibilityrotor(_:entries:).md)
+### Working with rotors
+- [func accessibilityRotor(_:entries:)](./accessibilityrotor%28_,entries%29.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
-- [func accessibilityRotor(_:entries:entryLabel:)](view/accessibilityrotor(_:entries:entrylabel:).md)
+- [func accessibilityRotor(_:entries:entryLabel:)](./accessibilityrotor%28_,entries,entrylabel%29.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
-- [func accessibilityRotor(_:textRanges:)](view/accessibilityrotor(_:textranges:).md)
+- [func accessibilityRotor(_:textRanges:)](./accessibilityrotor%28_,textranges%29.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 
 

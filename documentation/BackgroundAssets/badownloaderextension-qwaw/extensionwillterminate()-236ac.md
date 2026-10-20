@@ -1,7 +1,8 @@
 # extensionWillTerminate()
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -18,7 +19,8 @@ func extensionWillTerminate()
 
 ## See Also
 
-- [func extensionWillTerminate()](badownloaderextension-qwaw/extensionwillterminate.md)
+### Reacting to extension events
+- [func extensionWillTerminate()](./extensionwillterminate%28%29.md)
   This method may be called shortly before the extension is terminated.
 
 

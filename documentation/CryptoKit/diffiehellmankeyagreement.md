@@ -1,7 +1,8 @@
 # DiffieHellmanKeyAgreement
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A Diffie-Hellman Key Agreement Key
 
@@ -24,28 +25,28 @@ protocol DiffieHellmanKeyAgreement : Sendable
 ## Topics
 
 ### Associated Types
-- [associatedtype PublicKey : Sendable](diffiehellmankeyagreement/publickey-swift.associatedtype.md)
+- [associatedtype PublicKey : Sendable](./diffiehellmankeyagreement/publickey-swift.associatedtype.md)
   The public key share type to perform the DH Key Agreement
 ### Instance Properties
-- [var publicKey: Self.PublicKey](diffiehellmankeyagreement/publickey-swift.property.md)
+- [var publicKey: Self.PublicKey](./diffiehellmankeyagreement/publickey-swift.property.md)
 ### Instance Methods
-- [func sharedSecretFromKeyAgreement(with: Self.PublicKey) throws -> SharedSecret](diffiehellmankeyagreement/sharedsecretfromkeyagreement(with:).md)
+- [func sharedSecretFromKeyAgreement(with: Self.PublicKey) throws -> SharedSecret](./diffiehellmankeyagreement/sharedsecretfromkeyagreement%28with%29.md)
   Performs a Diffie-Hellman Key Agreement.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
-- [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)
+- [HPKEDiffieHellmanPrivateKey](./hpkediffiehellmanprivatekey.md)
+- [HPKEDiffieHellmanPrivateKeyGeneration](./hpkediffiehellmanprivatekeygeneration.md)
 ### Conforming Types
-- [Curve25519.KeyAgreement.PrivateKey](curve25519/keyagreement/privatekey.md)
-- [P256.KeyAgreement.PrivateKey](p256/keyagreement/privatekey.md)
-- [P384.KeyAgreement.PrivateKey](p384/keyagreement/privatekey.md)
-- [P521.KeyAgreement.PrivateKey](p521/keyagreement/privatekey.md)
-- [SecureEnclave.P256.KeyAgreement.PrivateKey](secureenclave/p256/keyagreement/privatekey.md)
+- [Curve25519.KeyAgreement.PrivateKey](./curve25519/keyagreement/privatekey.md)
+- [P256.KeyAgreement.PrivateKey](./p256/keyagreement/privatekey.md)
+- [P384.KeyAgreement.PrivateKey](./p384/keyagreement/privatekey.md)
+- [P521.KeyAgreement.PrivateKey](./p521/keyagreement/privatekey.md)
+- [SecureEnclave.P256.KeyAgreement.PrivateKey](./secureenclave/p256/keyagreement/privatekey.md)
 
 
 ---

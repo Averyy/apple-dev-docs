@@ -1,7 +1,8 @@
 # MKAnnotationView.CollisionMode.rectangle
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates that the annotation view uses the full collision frame rectangle for detecting collisions.
 
@@ -19,15 +20,20 @@ A constant that indicates that the annotation view uses the full collision frame
 case rectangle
 ```
 
+```c
+MKAnnotationViewCollisionModeRectangle
+```
+
 ## See Also
 
-- [MKAnnotationView.CollisionMode.circle](mkannotationview/collisionmode-swift.enum/circle.md)
+### Enumeration Cases
+- [MKAnnotationView.CollisionMode.circle](./circle.md)
   A constant that indicates that the annotation view uses an inscribed circle in the collision frame rectangle to determine collisions.
-- [MKAnnotationView.CollisionMode.none](mkannotationview/collisionmode-swift.enum/none.md)
+- [MKAnnotationView.CollisionMode.none](./none.md)
   A constant indicating that collisions can’t occur.
-- [MKAnnotationView.CollisionMode.circle](mkannotationview/collisionmode-swift.enum/circle.md)
+- [MKAnnotationView.CollisionMode.circle](./circle.md)
   A constant that indicates that the annotation view uses an inscribed circle in the collision frame rectangle to determine collisions.
-- [MKAnnotationView.CollisionMode.none](mkannotationview/collisionmode-swift.enum/none.md)
+- [MKAnnotationView.CollisionMode.none](./none.md)
   A constant indicating that collisions can’t occur.
 
 

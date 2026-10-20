@@ -1,7 +1,8 @@
 # supportsContentExtensions
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports notification content extensions.
 
@@ -20,15 +21,28 @@ A Boolean value that indicates whether the device supports notification content 
 var supportsContentExtensions: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) BOOL supportsContentExtensions;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL supportsContentExtensions;
+```
+
 #### Discussion
 
-Notification content extensions let you customize the appearance of the alerts displayed for your app’s notifications. The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) for devices that support notification content extensions and [`false`](https://developer.apple.com/documentation/swift/false) for devices that do not support them. For information about how to implement a notification content extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/usernotificationsui/customizing-the-appearance-of-notifications).
+Notification content extensions let you customize the appearance of the alerts displayed for your app’s notifications. The value of this property is [`true`](../../Swift/true.md) for devices that support notification content extensions and [`false`](../../Swift/false.md) for devices that do not support them. For information about how to implement a notification content extension, see [Customizing the Appearance of Notifications](../../UserNotificationsUI/customizing-the-appearance-of-notifications.md).
 
 ## See Also
 
-- [var delegate: (any UNUserNotificationCenterDelegate)?](unusernotificationcenter/delegate.md)
+### Processing received notifications
+- [var delegate: (any UNUserNotificationCenterDelegate)?](./delegate.md)
   The notification center’s delegate.
-- [protocol UNUserNotificationCenterDelegate](unusernotificationcenterdelegate.md)
+- [protocol UNUserNotificationCenterDelegate](../unusernotificationcenterdelegate.md)
   An interface for processing incoming notifications and responding to notification actions.
 
 

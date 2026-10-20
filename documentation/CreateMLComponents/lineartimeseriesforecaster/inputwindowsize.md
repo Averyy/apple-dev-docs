@@ -1,7 +1,8 @@
 # inputWindowSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of input samples.
 
@@ -22,9 +23,10 @@ var inputWindowSize: Int { get }
 
 ## See Also
 
-- [let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration](lineartimeseriesforecaster/configuration-swift.property.md)
+### Inspecting a linear time series forecaster
+- [let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration](./configuration-swift.property.md)
   The configuration.
-- [var forecastWindowSize: Int](lineartimeseriesforecaster/forecastwindowsize.md)
+- [var forecastWindowSize: Int](./forecastwindowsize.md)
   The number of predicted samples.
 
 

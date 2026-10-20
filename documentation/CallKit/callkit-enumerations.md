@@ -1,16 +1,18 @@
 # CallKit Enumerations
 
-**Framework**: CallKit
+**Framework**: CallKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/code.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code](./cxerrorcodenotificationserviceextensionerror-swift.struct/code.md)
   Constants for errors returned when reporting new, incoming VoIP calls.
 
 ## See Also
 
-- [CallKit Constants](callkit-constants.md)
+### Reference
+- [CallKit Constants](./callkit-constants.md)
 
 
 ---

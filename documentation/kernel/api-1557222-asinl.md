@@ -1,24 +1,26 @@
 # asinl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double asinl(long double);
 ```
 
 ## See Also
 
-- [asin](1557225-asin.md)
-- [asinf](1557356-asinf.md)
-- [asinh](1557211-asinh.md)
-- [asinhf](1557278-asinhf.md)
-- [asinhl](1557157-asinhl.md)
+### Arcsine
+- [asin](./api-1557225-asin.md)
+- [asinf](./api-1557356-asinf.md)
+- [asinh](./api-1557211-asinh.md)
+- [asinhf](./api-1557278-asinhf.md)
+- [asinhl](./api-1557157-asinhl.md)
 
 
 ---

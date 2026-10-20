@@ -1,7 +1,8 @@
 # distribution
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of distribution to draw samples from. See MPSGraphRandomDistribution.
 
@@ -17,6 +18,10 @@ The type of distribution to draw samples from. See MPSGraphRandomDistribution.
 
 ```swift
 var distribution: MPSGraphRandomDistribution { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphRandomDistribution distribution;
 ```
 
 

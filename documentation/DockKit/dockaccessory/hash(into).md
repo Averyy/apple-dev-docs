@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a unique identifier representing the object.
 
@@ -19,7 +20,8 @@ final func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [var debugDescription: String](dockaccessory/debugdescription.md)
+### Inspecting the object
+- [var debugDescription: String](./debugdescription.md)
   The text description of the dock accessory state.
 
 

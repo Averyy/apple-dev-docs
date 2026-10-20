@@ -1,7 +1,8 @@
 # UIPasteControl.Configuration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that determines a paste button’s color, corner style, icon, and text.
 
@@ -18,58 +19,63 @@ An object that determines a paste button’s color, corner style, icon, and text
 class Configuration
 ```
 
+```objc
+@interface UIPasteControlConfiguration : NSObject
+```
+
 #### Overview
 
-The paste button ([`UIPasteControl`](uipastecontrol.md)) property [`configuration`](uipastecontrol/configuration-swift.property.md) is of this type.
+The paste button ([`UIPasteControl`](../uipastecontrol.md)) property [`configuration`](./configuration-swift.property.md) is of this type.
 
 ## Topics
 
 ### Coloring the button
-- [var baseBackgroundColor: UIColor?](uipastecontrol/configuration-swift.class/basebackgroundcolor.md)
+- [var baseBackgroundColor: UIColor?](./configuration-swift.class/basebackgroundcolor.md)
   A color for the paste button’s background.
-- [var baseForegroundColor: UIColor?](uipastecontrol/configuration-swift.class/baseforegroundcolor.md)
+- [var baseForegroundColor: UIColor?](./configuration-swift.class/baseforegroundcolor.md)
   A color for the paste button’s icon and text.
 ### Shaping button corners
-- [var cornerRadius: CGFloat](uipastecontrol/configuration-swift.class/cornerradius.md)
+- [var cornerRadius: CGFloat](./configuration-swift.class/cornerradius.md)
   A value that rounds the edges of a paste button.
-- [var cornerStyle: UIButton.Configuration.CornerStyle](uipastecontrol/configuration-swift.class/cornerstyle.md)
+- [var cornerStyle: UIButton.Configuration.CornerStyle](./configuration-swift.class/cornerstyle.md)
   A shape for the button among a predetermined set of templates.
 ### Choosing control icon and text
-- [var displayMode: UIPasteControl.DisplayMode](uipastecontrol/configuration-swift.class/displaymode.md)
+- [var displayMode: UIPasteControl.DisplayMode](./configuration-swift.class/displaymode.md)
   An option that determines whether the paste button composes an icon, textual label, or both.
-- [UIPasteControl.DisplayMode](uipastecontrol/displaymode.md)
+- [UIPasteControl.DisplayMode](./displaymode.md)
   Options that determine whether a paste button composes an icon, textual label, or both.
 ### Initializers
-- [init?(coder: NSCoder)](uipastecontrol/configuration-swift.class/init(coder:).md)
+- [init?(coder: NSCoder)](./configuration-swift.class/init%28coder%29.md)
 ### Instance Properties
-- [var imagePlacement: NSDirectionalRectEdge](uipastecontrol/configuration-swift.class/imageplacement.md)
+- [var imagePlacement: NSDirectionalRectEdge](./configuration-swift.class/imageplacement.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPasteControl](uipastecontrol.md)
+### Pasteboard
+- [class UIPasteControl](../uipastecontrol.md)
   A button that a person taps to place pasteboard contents in your app.
-- [UIPasteControl.DisplayMode](uipastecontrol/displaymode.md)
+- [UIPasteControl.DisplayMode](./displaymode.md)
   Options that determine whether a paste button composes an icon, textual label, or both.
-- [class UIPasteboard](uipasteboard.md)
+- [class UIPasteboard](../uipasteboard.md)
   An object that helps a user share data from one place to another within your app, and from your app to other apps.
-- [class UIPasteConfiguration](uipasteconfiguration.md)
+- [class UIPasteConfiguration](../uipasteconfiguration.md)
   The interface that an object implements to declare its ability to accept specific data types for pasting and for drag-and-drop activities.
-- [protocol UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
+- [protocol UIPasteConfigurationSupporting](../uipasteconfigurationsupporting.md)
   The interface that determines whether a responder object supports paste configuration.
 
 

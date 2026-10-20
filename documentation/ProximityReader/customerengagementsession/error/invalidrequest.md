@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.invalidRequest
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the request validation failed.
 

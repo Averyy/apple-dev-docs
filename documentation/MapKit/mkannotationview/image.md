@@ -1,7 +1,8 @@
 # image
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image the annotation view displays.
 
@@ -15,8 +16,28 @@ The image the annotation view displays.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var image: UIImage? { get set }
+```
+
+*macOS*
+
 ```swift
 var image: NSImage? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, nullable) UIImage * image;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, strong, nullable) NSImage * image;
 ```
 
 #### Discussion
@@ -25,17 +46,18 @@ Assigning a new image to this property also changes the size of the view’s fra
 
 ## See Also
 
-- [var isEnabled: Bool](mkannotationview/isenabled.md)
+### Getting and setting attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the annotation is in an enabled state.
-- [var isHighlighted: Bool](mkannotationview/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the map view highlights the annotation view.
-- [var annotation: (any MKAnnotation)?](mkannotationview/annotation.md)
+- [var annotation: (any MKAnnotation)?](./annotation.md)
   The annotation object associated with the view.
-- [var centerOffset: CGPoint](mkannotationview/centeroffset.md)
+- [var centerOffset: CGPoint](./centeroffset.md)
   The offset (in points) at which to display the view.
-- [var calloutOffset: CGPoint](mkannotationview/calloutoffset.md)
+- [var calloutOffset: CGPoint](./calloutoffset.md)
   The offset (in points) at which to place the callout.
-- [var reuseIdentifier: String?](mkannotationview/reuseidentifier.md)
+- [var reuseIdentifier: String?](./reuseidentifier.md)
   The string that identifies that the annotation view is reusable.
 
 

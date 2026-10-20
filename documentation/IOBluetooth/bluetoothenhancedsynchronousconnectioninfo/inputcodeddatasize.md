@@ -1,15 +1,20 @@
 # inputCodedDataSize
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var inputCodedDataSize: BluetoothHCIInputCodedDataSize
+```
+
+```c
+BluetoothHCIInputCodedDataSize inputCodedDataSize;
 ```
 
 

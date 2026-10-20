@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter that determines the points of interest that display on the map.
 
@@ -10,7 +11,7 @@ The filter that determines the points of interest that display on the map.
 
 ## Declaration
 
-```swift
+```
 get pointOfInterestFilter(): PointOfInterestFilter | null;
 set pointOfInterestFilter(filter: PointOfInterestFilter | null);
 ```
@@ -21,21 +22,22 @@ The filter specifies point-of-interest categories to include or exclude in a map
 
 ## See Also
 
-- [colorScheme](map/colorscheme.md)
+### Configuring the map’s appearance
+- [colorScheme](./colorscheme.md)
   The map’s color scheme when displaying standard or muted standard map types.
-- [distances](map/distances-data.property.md)
+- [distances](./distances-data.property.md)
   The system of measurement that displays on the map.
-- [mapType](map/maptype.md)
+- [mapType](./maptype.md)
   The type of data that the map displays.
-- [padding](map/padding.md)
+- [padding](./padding.md)
   The map’s inset margins.
-- [showsPointsOfInterest](map/showspointsofinterest.md)
+- [showsPointsOfInterest](./showspointsofinterest.md)
   A Boolean value that determines whether the map displays points of interest.
-- [showItems(items, options)](map/showitems.md)
+- [showItems(items, options)](./showitems.md)
   Adjusts the map’s visible region to bring the specified overlays and annotations into view.
-- [interface MapShowItemsOptions](mapshowitemsoptions.md)
+- [interface MapShowItemsOptions](../mapshowitemsoptions.md)
   Options that determine the map parameters to use when showing items.
-- [tintColor](map/tintcolor.md)
+- [tintColor](./tintcolor.md)
   The CSS color that MapKit JS uses for user interface controls on the map.
 
 

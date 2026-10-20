@@ -1,7 +1,8 @@
 # MPSGraphFFTScalingMode.none
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Computes the FFT result with no scaling.
 
@@ -17,6 +18,10 @@ Computes the FFT result with no scaling.
 
 ```swift
 case none
+```
+
+```c
+MPSGraphFFTScalingModeNone
 ```
 
 

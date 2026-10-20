@@ -1,18 +1,19 @@
 # AVSampleCursorChunkInfo
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that provides information about a chunk of media samples.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,40 +21,45 @@ A value that provides information about a chunk of media samples.
 struct AVSampleCursorChunkInfo
 ```
 
+```c
+typedef struct { ... } AVSampleCursorChunkInfo;
+```
+
 ## Topics
 
 ### Chunk information
-- [var chunkSampleCount: Int64](avsamplecursorchunkinfo/chunksamplecount.md)
+- [var chunkSampleCount: Int64](./avsamplecursorchunkinfo/chunksamplecount.md)
   The count of media samples in the chunk.
-- [var chunkHasUniformSampleSizes: ObjCBool](avsamplecursorchunkinfo/chunkhasuniformsamplesizes.md)
+- [var chunkHasUniformSampleSizes: ObjCBool](./avsamplecursorchunkinfo/chunkhasuniformsamplesizes.md)
   The samples in the chunk occupy the same number of bytes in storage.
-- [var chunkHasUniformSampleDurations: ObjCBool](avsamplecursorchunkinfo/chunkhasuniformsampledurations.md)
+- [var chunkHasUniformSampleDurations: ObjCBool](./avsamplecursorchunkinfo/chunkhasuniformsampledurations.md)
   The samples in the chunk have the same duration.
-- [var chunkHasUniformFormatDescriptions: ObjCBool](avsamplecursorchunkinfo/chunkhasuniformformatdescriptions.md)
+- [var chunkHasUniformFormatDescriptions: ObjCBool](./avsamplecursorchunkinfo/chunkhasuniformformatdescriptions.md)
   The samples in the chunk have the same format description.
 ### Initializers
-- [init()](avsamplecursorchunkinfo/init.md)
+- [init()](./avsamplecursorchunkinfo/init%28%29.md)
   Creates a chunk information structure.
-- [init(chunkSampleCount: Int64, chunkHasUniformSampleSizes: ObjCBool, chunkHasUniformSampleDurations: ObjCBool, chunkHasUniformFormatDescriptions: ObjCBool)](avsamplecursorchunkinfo/init(chunksamplecount:chunkhasuniformsamplesizes:chunkhasuniformsampledurations:chunkhasuniformformatdescriptions:).md)
+- [init(chunkSampleCount: Int64, chunkHasUniformSampleSizes: ObjCBool, chunkHasUniformSampleDurations: ObjCBool, chunkHasUniformFormatDescriptions: ObjCBool)](./avsamplecursorchunkinfo/init%28chunksamplecount,chunkhasuniformsamplesizes,chunkhasuniformsampledurations,chunkhasuniformformatdescriptions%29.md)
   Creates a chunk information structure with the specified values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class AVSampleCursor](avsamplecursor.md)
+### Sample cursors
+- [class AVSampleCursor](./avsamplecursor.md)
   An object that provides information about the media sample at the cursor’s current position.
-- [struct AVSampleCursorSyncInfo](avsamplecursorsyncinfo.md)
+- [struct AVSampleCursorSyncInfo](./avsamplecursorsyncinfo.md)
   A structure that describes the attributes of media samples to consider when resynchronizing a decoder.
-- [struct AVSampleCursorDependencyInfo](avsamplecursordependencyinfo.md)
+- [struct AVSampleCursorDependencyInfo](./avsamplecursordependencyinfo.md)
   A value for describing dependencies between a media sample and other media samples in the same sample sequence.
-- [struct AVSampleCursorAudioDependencyInfo](avsamplecursoraudiodependencyinfo.md)
+- [struct AVSampleCursorAudioDependencyInfo](./avsamplecursoraudiodependencyinfo.md)
   A structure that describes the independent decodability of audio samples.
-- [struct AVSampleCursorStorageRange](avsamplecursorstoragerange.md)
+- [struct AVSampleCursorStorageRange](./avsamplecursorstoragerange.md)
   A structure that indicates the offset and length of storage for a media sample or its chunk.
 
 

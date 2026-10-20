@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system determines whether the vertical bar is rendered.
 
@@ -22,7 +23,8 @@ static let automatic: ToolbarVerticalBehavior
 
 ## See Also
 
-- [static let disabled: ToolbarVerticalBehavior](toolbarverticalbehavior/disabled.md)
+### Getting behavior options
+- [static let disabled: ToolbarVerticalBehavior](./disabled.md)
   The vertical bar is disabled.
 
 

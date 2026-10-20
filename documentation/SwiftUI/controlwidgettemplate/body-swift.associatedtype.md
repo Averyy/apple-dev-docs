@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of control widget template representing the body of this template.
@@ -21,7 +22,7 @@ associatedtype Body : ControlWidgetTemplate
 
 #### Discussion
 
-When you create a custom control widget, Swift infers this type from your implementation of the required [`body`](controlwidgettemplate/body-swift.property.md) property.
+When you create a custom control widget, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 
 
 ---

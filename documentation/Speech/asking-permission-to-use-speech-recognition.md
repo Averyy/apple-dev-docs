@@ -1,6 +1,7 @@
 # Asking Permission to Use Speech Recognition
 
-**Framework**: Speech
+**Framework**: Speech  
+**Role**: Article
 
 Ask the user’s permission to perform speech recognition using Apple’s servers.
 
@@ -8,13 +9,13 @@ Ask the user’s permission to perform speech recognition using Apple’s server
 
 The speech recognition process involves capturing audio of the user’s voice and sending that data to Apple’s servers for processing. The audio you capture constitutes sensitive user data, and you must make every effort to protect it. You must also obtain the user’s permission before sending that data across the network to Apple’s servers. You request authorization using the APIs of the Speech framework.
 
-> **Note**: This process only applies to speech recognition using [`SFSpeechRecognizer`](sfspeechrecognizer.md). [`SpeechAnalyzer`](speechanalyzer.md) transcriber modules don’t send audio data of the user’s voice to Apple’s servers.
+> **Note**: This process only applies to speech recognition using [`SFSpeechRecognizer`](./sfspeechrecognizer.md). [`SpeechAnalyzer`](./speechanalyzer.md) transcriber modules don’t send audio data of the user’s voice to Apple’s servers.
 
-![When an app requests authorization to use speech recognition, the system prompts the user to grant or deny access to the feature.](/images/com.apple.speech/media-3038127@2x.png)
+![When an app requests authorization to use speech recognition, the system prompts the user to grant or deny access to the feature.](https://developer.apple.com/tutorials/images/com.apple.speech/media-3038127@2x.png)
 
-##### Add the Privacy Key to Your Infoplist File
+##### Add the Privacy Key to Your Info.plist File
 
-In Xcode, add the `“Privacy - Speech Recognition Usage Description”` key to your app’s `Info.plist` file. The raw name of this key is [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription). Set the value of this key to a string that explains how you plan to use any recognized speech. When your app request authorization later, the system displays the value of this key to the user as part of the system prompt.
+In Xcode, add the `“Privacy - Speech Recognition Usage Description”` key to your app’s `Info.plist` file. The raw name of this key is [`NSSpeechRecognitionUsageDescription`](../BundleResources/information-property-list/nsspeechrecognitionusagedescription.md). Set the value of this key to a string that explains how you plan to use any recognized speech. When your app request authorization later, the system displays the value of this key to the user as part of the system prompt.
 
 Take the opportunity to build trust with the user through your usage description. The quality of your usage description can significantly impact the user’s decision. For example, users are more likely to deny authorization if the usage description is unclear or misleading. Good descriptions explain precisely how you intend to use speech recognition, and may also include a link to your app’s privacy policy. For example:
 
@@ -22,11 +23,11 @@ Take the opportunity to build trust with the user through your usage description
 - “Lets you mark an item as finished by saying Done.”
 - “The app listens for specific verbal commands, such as “Start”, “Stop”, and “Pause”. For a complete list of commands, see http://myapp.example.com”.
 
-> ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription) key in your app’s `Info.plist` file. This applies regardless of whether you set [`requiresOnDeviceRecognition`](sfspeechrecognitionrequest/requiresondevicerecognition.md) to `true` or `false`. If this key is not present, your app will crash when it calls [`requestAuthorization(_:)`](sfspeechrecognizer/requestauthorization(_:).md).
+> ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](../BundleResources/information-property-list/nsspeechrecognitionusagedescription.md) key in your app’s `Info.plist` file. This applies regardless of whether you set [`requiresOnDeviceRecognition`](./sfspeechrecognitionrequest/requiresondevicerecognition.md) to `true` or `false`. If this key is not present, your app will crash when it calls [`requestAuthorization(_:)`](./sfspeechrecognizer/requestauthorization%28_%29.md).
 
 ##### Request Authorization at First Use
 
-Before using the APIs of the Speech framework, you must call [`requestAuthorization(_:)`](sfspeechrecognizer/requestauthorization(_:).md) on the [`SFSpeechRecognizer`](sfspeechrecognizer.md) object. The method executes asynchronously and delivers the results to a block you provide. Use that block to determine whether the user granted or rejected your request.
+Before using the APIs of the Speech framework, you must call [`requestAuthorization(_:)`](./sfspeechrecognizer/requestauthorization%28_%29.md) on the [`SFSpeechRecognizer`](./sfspeechrecognizer.md) object. The method executes asynchronously and delivers the results to a block you provide. Use that block to determine whether the user granted or rejected your request.
 
 > **Note**:  Do not request access to speech recognition if you do not intend to use the feature right away. Instead, delay requests until the user interacts with the portion of your app that uses such features.
 
@@ -73,13 +74,14 @@ override public func viewDidAppear(_ animated: Bool) {
 
 ## See Also
 
-- [class SFSpeechRecognizer](sfspeechrecognizer.md)
+### Essentials
+- [class SFSpeechRecognizer](./sfspeechrecognizer.md)
   An object you use to check for the availability of the speech recognition service, and to initiate the speech recognition process.
-- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+- [protocol SFSpeechRecognizerDelegate](./sfspeechrecognizerdelegate.md)
   A protocol that you adopt in your objects to track the availability of a speech recognizer.
-- [enum SFSpeechRecognitionTaskHint](sfspeechrecognitiontaskhint.md)
+- [enum SFSpeechRecognitionTaskHint](./sfspeechrecognitiontaskhint.md)
   The type of task for which you are using speech recognition.
-- [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
+- [enum SFSpeechRecognizerAuthorizationStatus](./sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
 
 

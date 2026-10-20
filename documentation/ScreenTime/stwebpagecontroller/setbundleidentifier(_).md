@@ -1,7 +1,8 @@
 # setBundleIdentifier(_:)
 
 **Framework**: Screen Time  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the bundle identifier used to report web usage.
 
@@ -15,6 +16,10 @@ Changes the bundle identifier used to report web usage.
 
 ```swift
 func setBundleIdentifier(_ bundleIdentifier: String) throws
+```
+
+```objc
+- (BOOL) setBundleIdentifier:(NSString *) bundleIdentifier error:(NSError **) error;
 ```
 
 #### Discussion

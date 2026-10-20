@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.target
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path is a relationship target.
 

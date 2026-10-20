@@ -1,7 +1,8 @@
 # authorizationController(_:didCompleteWithCustomMethod:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when authorization completes, and specifies the custom method the user selected.
 
@@ -14,16 +15,21 @@ Informs the delegate when authorization completes, and specifies the custom meth
 optional func authorizationController(_ controller: ASAuthorizationController, didCompleteWithCustomMethod method: ASAuthorizationCustomMethod)
 ```
 
+```objc
+- (void) authorizationController:(ASAuthorizationController *) controller didCompleteWithCustomMethod:(ASAuthorizationCustomMethod) method;
+```
+
 ## Parameters
 
 - `controller`: The controller performing the authorization attempt.
-- `method`: The custom method the user selected. For a list of custom methods, see  [`ASAuthorizationCustomMethod`](asauthorizationcustommethod.md).
+- `method`: The custom method the user selected. For a list of custom methods, see  [`ASAuthorizationCustomMethod`](../asauthorizationcustommethod.md).
 
 ## See Also
 
-- [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](asauthorizationcontroller/customauthorizationmethods.md)
+### Apple TV authentication
+- [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](../asauthorizationcontroller/customauthorizationmethods.md)
   An array of custom authorization methods for the user to choose.
-- [struct ASAuthorizationCustomMethod](asauthorizationcustommethod.md)
+- [struct ASAuthorizationCustomMethod](../asauthorizationcustommethod.md)
   The custom authorization method.
 
 

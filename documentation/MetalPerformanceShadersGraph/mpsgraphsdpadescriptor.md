@@ -1,7 +1,8 @@
 # MPSGraphSDPADescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor that configures a scaled dot product attention (SDPA) operation.
 
@@ -19,36 +20,40 @@ A descriptor that configures a scaled dot product attention (SDPA) operation.
 class MPSGraphSDPADescriptor
 ```
 
+```objc
+@interface MPSGraphSDPADescriptor : MPSGraphObject
+```
+
 #### Overview
 
-Use this descriptor with [`scaledDotProductAttention(query:key:value:descriptor:name:)`](mpsgraph/scaleddotproductattention(query:key:value:descriptor:name:).md) to specify optional features such as an attention mask, causal masking, and attention sinks.
+Use this descriptor with [`scaledDotProductAttention(query:key:value:descriptor:name:)`](./mpsgraph/scaleddotproductattention%28query,key,value,descriptor,name%29.md) to specify optional features such as an attention mask, causal masking, and attention sinks.
 
 ## Topics
 
 ### Initializers
-- [convenience init(scale: Float)](mpsgraphsdpadescriptor/init(scale:).md)
+- [convenience init(scale: Float)](./mpsgraphsdpadescriptor/init%28scale%29.md)
   Creates a descriptor with the given scale and all other properties set to their defaults (no mask, isCausal = NO, no sinks).
 ### Instance Properties
-- [var isCausal: Bool](mpsgraphsdpadescriptor/iscausal.md)
-  When YES, a causal (lower-triangular) mask is applied so that each query position attends only to key positions at or before it. Mutually exclusive with [`maskTensor`](mpsgraphsdpadescriptor/masktensor.md).
-- [var maskTensor: MPSGraphTensor?](mpsgraphsdpadescriptor/masktensor.md)
-  An optional additive mask tensor applied to the scaled QK^T scores before softmax. Must be broadcast-compatible with shape `[batch, heads, T_q, T_kv]`. Mutually exclusive with [`isCausal`](mpsgraphsdpadescriptor/iscausal.md).
-- [var scale: Float](mpsgraphsdpadescriptor/scale.md)
+- [var isCausal: Bool](./mpsgraphsdpadescriptor/iscausal.md)
+  When YES, a causal (lower-triangular) mask is applied so that each query position attends only to key positions at or before it. Mutually exclusive with [`maskTensor`](./mpsgraphsdpadescriptor/masktensor.md).
+- [var maskTensor: MPSGraphTensor?](./mpsgraphsdpadescriptor/masktensor.md)
+  An optional additive mask tensor applied to the scaled QK^T scores before softmax. Must be broadcast-compatible with shape `[batch, heads, T_q, T_kv]`. Mutually exclusive with [`isCausal`](./mpsgraphsdpadescriptor/iscausal.md).
+- [var scale: Float](./mpsgraphsdpadescriptor/scale.md)
   The scale applied to the result of the query–key matrix multiply before softmax. Typically set to `1/sqrt(headDimension)`.
-- [var sinksTensor: MPSGraphTensor?](mpsgraphsdpadescriptor/sinkstensor.md)
+- [var sinksTensor: MPSGraphTensor?](./mpsgraphsdpadescriptor/sinkstensor.md)
   An optional attention-sinks tensor of shape `[nHeads]`. Each element seeds the online-softmax accumulator for the corresponding query head with a virtual token logit, causing real-token attention weights to sum to less than one.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

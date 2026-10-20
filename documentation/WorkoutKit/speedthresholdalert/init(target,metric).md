@@ -1,7 +1,8 @@
 # init(target:metric:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new speed threshold alert.
 

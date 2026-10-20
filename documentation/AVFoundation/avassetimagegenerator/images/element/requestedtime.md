@@ -1,7 +1,8 @@
 # requestedTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time in the video timeline at which you request an image.
 
@@ -21,9 +22,10 @@ var requestedTime: CMTime { get }
 
 ## See Also
 
-- [var image: CGImage](avassetimagegenerator/images/element/image.md)
+### Accessing image data
+- [var image: CGImage](./image.md)
   An image for a requested time.
-- [var actualTime: CMTime](avassetimagegenerator/images/element/actualtime.md)
+- [var actualTime: CMTime](./actualtime.md)
   The actual time in the video timeline at which the image generator creates the image.
 
 

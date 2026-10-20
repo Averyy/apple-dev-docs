@@ -1,7 +1,8 @@
 # PHASEAutomaticHeadTrackingFlags
 
 **Framework**: PHASE  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -17,37 +18,41 @@
 struct PHASEAutomaticHeadTrackingFlags
 ```
 
+```c
+enum PHASEAutomaticHeadTrackingFlags : NSUInteger;
+```
+
 #### Overview
 
 Automatic Head-Tracking flags.
 
-```None
+```
 On capable devices, listener orientation will be automatically rotated based on user's head-orientation.
 ```
 
-```None
+```
 On capable devices, listener position will be automatically set based on user's position.
 ```
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](phaseautomaticheadtrackingflags/init(rawvalue:).md)
+- [init(rawValue: UInt)](./phaseautomaticheadtrackingflags/init%28rawvalue%29.md)
 ### Type Properties
-- [static var orientation: PHASEAutomaticHeadTrackingFlags](phaseautomaticheadtrackingflags/orientation.md)
-- [static var position: PHASEAutomaticHeadTrackingFlags](phaseautomaticheadtrackingflags/position.md)
+- [static var orientation: PHASEAutomaticHeadTrackingFlags](./phaseautomaticheadtrackingflags/orientation.md)
+- [static var position: PHASEAutomaticHeadTrackingFlags](./phaseautomaticheadtrackingflags/position.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

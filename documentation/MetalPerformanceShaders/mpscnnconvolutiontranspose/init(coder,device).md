@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a transposed convolution kernel.
 
@@ -19,11 +20,16 @@ Initializes a transposed convolution kernel.
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnconvolutiontranspose/init(device:weights:).md)
+### Initializers
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](./init%28device,weights%29.md)
   Initializes a transposed convolution kernel.
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+- [protocol MPSCNNConvolutionDataSource](../mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 
 

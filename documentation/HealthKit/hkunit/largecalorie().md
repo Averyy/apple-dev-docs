@@ -1,7 +1,8 @@
 # largeCalorie()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring energy in large calories (Cal).
 
@@ -19,21 +20,26 @@ Returns a HealthKit unit for measuring energy in large calories (Cal).
 class func largeCalorie() -> Self
 ```
 
+```objc
++ (instancetype) largeCalorieUnit;
+```
+
 #### Discussion
 
 The large calorie is the same as a kilocalorie (1 Cal = 4184.0 J).
 
 ## See Also
 
-- [class func joule() -> Self](hkunit/joule.md)
+### Constructing energy units
+- [class func joule() -> Self](./joule%28%29.md)
   Returns a HealthKit unit for measuring energy in joules.
-- [class func jouleUnit(with: HKMetricPrefix) -> Self](hkunit/jouleunit(with:).md)
+- [class func jouleUnit(with: HKMetricPrefix) -> Self](./jouleunit%28with%29.md)
   Returns a HealthKit unit for measuring energy, using joule units with the provided prefix.
-- [class func kilocalorie() -> Self](hkunit/kilocalorie.md)
+- [class func kilocalorie() -> Self](./kilocalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in kilocalories.
-- [class func smallCalorie() -> Self](hkunit/smallcalorie.md)
+- [class func smallCalorie() -> Self](./smallcalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in small calories (cal).
-- [class func calorie() -> Self](hkunit/calorie.md)
+- [class func calorie() -> Self](./calorie%28%29.md)
   Returns a HealthKit unit for measuring energy in calories.
 
 

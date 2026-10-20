@@ -1,7 +1,8 @@
 # PDFThumbnailLayoutMode
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 11.0+
@@ -16,28 +17,33 @@
 enum PDFThumbnailLayoutMode
 ```
 
+```c
+enum PDFThumbnailLayoutMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [PDFThumbnailLayoutMode.horizontal](pdfthumbnaillayoutmode/horizontal.md)
-- [PDFThumbnailLayoutMode.vertical](pdfthumbnaillayoutmode/vertical.md)
+- [PDFThumbnailLayoutMode.horizontal](./pdfthumbnaillayoutmode/horizontal.md)
+- [PDFThumbnailLayoutMode.vertical](./pdfthumbnaillayoutmode/vertical.md)
 ### Initializers
-- [init?(rawValue: Int)](pdfthumbnaillayoutmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfthumbnaillayoutmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PDFAccessPermissions](pdfaccesspermissions.md)
-- [enum PDFSelectionGranularity](pdfselectiongranularity.md)
+### Enumerations
+- [enum PDFAccessPermissions](./pdfaccesspermissions.md)
+- [enum PDFSelectionGranularity](./pdfselectiongranularity.md)
 
 
 ---

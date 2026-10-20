@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the result of handling a JavaScript request to open files.
@@ -28,6 +29,12 @@ The result of handling the invocation; if the result is affirmative, the respons
 
 - `parameters`: The options to use for the file dialog.
 - `frame`: Information about the frame whose JavaScript process initiated this call.
+
+## Default Implementations
+
+### WebPage.DialogPresenting Implementations
+- [func handleFileInputPrompt(parameters: WKOpenPanelParameters, initiatedBy: WebPage.FrameInfo) async -> WebPage.FileInputPromptResult](./handlefileinputprompt%28parameters,initiatedby%29-1t7xa.md)
+  By default, this method immediately returns with a result of `.cancel`.
 
 
 ---

@@ -1,7 +1,8 @@
 # UIPhotoSearchSuggestion
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An input suggestion that carries photo search metadata for people, subjects, locations, and time periods.
 
@@ -16,15 +17,19 @@ An input suggestion that carries photo search metadata for people, subjects, loc
 class UIPhotoSearchSuggestion
 ```
 
+```objc
+@interface UIPhotoSearchSuggestion : UIInputSuggestion
+```
+
 #### Discussion
 
-When someone types text that could match a photo library search, such as “photos from Paris last summer,” the system recognizes the input as a photo library search and delivers a `UIPhotoSearchSuggestion` through the [`textField(_:insertInputSuggestion:)`](uitextfielddelegate/textfield(_:insertinputsuggestion:).md) or [`textView(_:insertInputSuggestion:)`](uitextviewdelegate/textview(_:insertinputsuggestion:).md) delegate method. Use `as? UIPhotoSearchSuggestion` to check whether the incoming [`UIInputSuggestion`](uiinputsuggestion.md) is a photo search suggestion and access its metadata.
+When someone types text that could match a photo library search, such as “photos from Paris last summer,” the system recognizes the input as a photo library search and delivers a `UIPhotoSearchSuggestion` through the [`textField(_:insertInputSuggestion:)`](./uitextfielddelegate/textfield%28_,insertinputsuggestion%29.md) or [`textView(_:insertInputSuggestion:)`](./uitextviewdelegate/textview%28_,insertinputsuggestion%29.md) delegate method. Use `as? UIPhotoSearchSuggestion` to check whether the incoming [`UIInputSuggestion`](./uiinputsuggestion.md) is a photo search suggestion and access its metadata.
 
-After receiving a suggestion, you have two options: Pass the object directly to the [`Photos`](https://developer.apple.com/documentation/photos) framework to present a pre-populated photo picker, or read the `whoValues`, `whatValues`, `whereValues`, and `whenValues` arrays to build a custom search experience.
+After receiving a suggestion, you have two options: Pass the object directly to the [Photos](https://developer.apple.com/documentation/photos) framework to present a pre-populated photo picker, or read the `whoValues`, `whatValues`, `whereValues`, and `whenValues` arrays to build a custom search experience.
 
 You can’t create a `UIPhotoSearchSuggestion` directly. The system creates and delivers instances through the input suggestion system.
 
-##### Presenting a Photo Picker
+##### Presenting a photo picker
 
 Pass the suggestion to `PHPickerSearchText(photoSearchSuggestion:)` to pre-populate a `PHPickerViewController` with photos matching the person’s search.
 
@@ -55,7 +60,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PHPickerViewC
 }
 ```
 
-##### Building a Custom Search
+##### Building a custom search
 
 If your app has its own photo search UI, read the filter arrays and construct your own query.
 
@@ -77,48 +82,49 @@ func textField(_ textField: UITextField,
 ## Topics
 
 ### Instance Properties
-- [var whatValues: [String]](uiphotosearchsuggestion/whatvalues.md)
+- [var whatValues: [String]](./uiphotosearchsuggestion/whatvalues.md)
   Subjects or topics mentioned in the text that can be used to filter photos.
-- [var whenValues: [String]](uiphotosearchsuggestion/whenvalues.md)
+- [var whenValues: [String]](./uiphotosearchsuggestion/whenvalues.md)
   Time periods mentioned in the text that can be used to filter photos.
-- [var whereValues: [String]](uiphotosearchsuggestion/wherevalues.md)
+- [var whereValues: [String]](./uiphotosearchsuggestion/wherevalues.md)
   Locations mentioned in the text that can be used to filter photos.
-- [var whoValues: [String]](uiphotosearchsuggestion/whovalues.md)
+- [var whoValues: [String]](./uiphotosearchsuggestion/whovalues.md)
   People mentioned in the text that can be used to filter photos.
 
 ## Relationships
 
 ### Inherits From
-- [UIInputSuggestion](uiinputsuggestion.md)
+- [UIInputSuggestion](./uiinputsuggestion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+### Smart Reply for messaging
+- [Adopting Smart Reply in your messaging or email app](./adopting-smart-reply-in-your-messaging-or-email-app.md)
   Generate reply suggestions by using Apple Intelligence and put selected text into your text UI.
-- [class UIConversationContext](uiconversationcontext.md)
+- [class UIConversationContext](./uiconversationcontext.md)
   A base class that represents a conversation between participants, such as in an email or messaging app.
-- [UIConversationContext.Entry](uiconversationcontext/entry.md)
+- [UIConversationContext.Entry](./uiconversationcontext/entry.md)
   A base class that represents a message in a conversation.
-- [class UIMailConversationContext](uimailconversationcontext.md)
+- [class UIMailConversationContext](./uimailconversationcontext.md)
   A class that represents an email conversation.
-- [UIMailConversationContext.MailEntry](uimailconversationcontext/mailentry.md)
+- [UIMailConversationContext.MailEntry](./uimailconversationcontext/mailentry.md)
   A class that represents a specific email in an email thread.
-- [class UIMessageConversationContext](uimessageconversationcontext.md)
+- [class UIMessageConversationContext](./uimessageconversationcontext.md)
   A class that represents a message conversation.
-- [UIMessageConversationContext.MessageEntry](uimessageconversationcontext/messageentry.md)
+- [UIMessageConversationContext.MessageEntry](./uimessageconversationcontext/messageentry.md)
   A class that represents a message in a message conversation.
-- [class UIInputSuggestion](uiinputsuggestion.md)
+- [class UIInputSuggestion](./uiinputsuggestion.md)
   A base class you use to handle suggestions from the keyboard or system.
-- [class UISmartReplySuggestion](uismartreplysuggestion.md)
+- [class UISmartReplySuggestion](./uismartreplysuggestion.md)
   A class you use to handle a Smart Reply suggestion.
 
 

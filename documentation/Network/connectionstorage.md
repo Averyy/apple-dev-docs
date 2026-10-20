@@ -1,7 +1,8 @@
 # ConnectionStorage
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that conform to ConnectionStorage can be used as additional storage within a connection.
 
@@ -23,12 +24,12 @@ protocol ConnectionStorage
 ## Topics
 
 ### Initializers
-- [init()](connectionstorage/init.md)
+- [init()](./connectionstorage/init%28%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [DefaultProtocolStorage](defaultprotocolstorage.md)
+- [DefaultProtocolStorage](./defaultprotocolstorage.md)
 
 
 ---

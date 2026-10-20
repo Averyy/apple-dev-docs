@@ -1,7 +1,8 @@
 # MTLBinaryArchiveError
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that occurred when creating a binary shader archive.
 
@@ -22,50 +23,51 @@ struct MTLBinaryArchiveError
 ## Topics
 
 ### Error codes
-- [static var none: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/none.md)
+- [static var none: MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/none.md)
   An error code that represents the absence of any problems.
-- [static var invalidFile: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/invalidfile.md)
+- [static var invalidFile: MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/invalidfile.md)
   An error code that indicates an app is using an invalid reference to an archive file, typically related to a URL.
-- [static var compilationFailure: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/compilationfailure.md)
+- [static var compilationFailure: MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/compilationfailure.md)
   An error code that indicates the archive’s inability to compile its contents, typically when serializing it to a URL.
-- [static var unexpectedElement: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/unexpectedelement.md)
+- [static var unexpectedElement: MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/unexpectedelement.md)
   An error code that indicates a problem with a configuration, typically in a descriptor or an archive’s inability to add linked functions.
-- [static var internalError: MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/internalerror.md)
+- [static var internalError: MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/internalerror.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/code.md)
+- [MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/code.md)
   Error codes when creating binary archives of compiled shader code.
 ### Error domain
-- [static var errorDomain: String](mtlbinaryarchiveerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./mtlbinaryarchiveerror-swift.struct/errordomain.md)
   The current binary archive error domain.
-- [let MTLBinaryArchiveDomain: String](mtlbinaryarchivedomain.md)
+- [let MTLBinaryArchiveDomain: String](./mtlbinaryarchivedomain.md)
   The domain for Metal binary archive errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
+### Structures
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [struct MTLCommandBufferError](./mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
-- [struct MTLComponentTransform](mtlcomponenttransform.md)
-- [struct MTLCounterSampleBufferError](mtlcountersamplebuffererror-swift.struct.md)
+- [struct MTLComponentTransform](./mtlcomponenttransform.md)
+- [struct MTLCounterSampleBufferError](./mtlcountersamplebuffererror-swift.struct.md)
   The error codes that indicate why a GPU driver can’t create a counter sample buffer.
-- [struct MTLDynamicLibraryError](mtldynamiclibraryerror-swift.struct.md)
+- [struct MTLDynamicLibraryError](./mtldynamiclibraryerror-swift.struct.md)
   Errors when compiling dynamic libraries.
-- [struct MTLIOError](mtlioerror-swift.struct.md)
+- [struct MTLIOError](./mtlioerror-swift.struct.md)
   The categories of errors for creating an input/output file handle.
-- [struct MTLPackedFloatQuaternion](mtlpackedfloatquaternion.md)
-- [struct MTLStitchedLibraryOptions](mtlstitchedlibraryoptions.md)
-- [struct NSDeviceCertification](nsdevicecertification.md)
-- [struct NSProcessPerformanceProfile](nsprocessperformanceprofile.md)
+- [struct MTLPackedFloatQuaternion](./mtlpackedfloatquaternion.md)
+- [struct MTLStitchedLibraryOptions](./mtlstitchedlibraryoptions.md)
+- [struct NSDeviceCertification](./nsdevicecertification.md)
+- [struct NSProcessPerformanceProfile](./nsprocessperformanceprofile.md)
   A value describing the device’s performance profile.
 
 

@@ -1,7 +1,8 @@
 # windowDismissalAnimation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animations to use when dismissing the scene’s windows.
 
@@ -18,9 +19,14 @@ The animations to use when dismissing the scene’s windows.
 var windowDismissalAnimation: UIWindowScene.DismissalAnimation { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) UIWindowSceneDismissalAnimation windowDismissalAnimation;
+```
+
 ## See Also
 
-- [UIWindowScene.DismissalAnimation](uiwindowscene/dismissalanimation.md)
+### Configuring the dismissal animation
+- [UIWindowScene.DismissalAnimation](../uiwindowscene/dismissalanimation.md)
   Constants that indicate the types of animations available for dismissing a scene’s windows.
 
 

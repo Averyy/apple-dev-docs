@@ -1,7 +1,8 @@
 # Open
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a session to a host device.
 
@@ -10,17 +11,17 @@ Opens a session to a host device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Open(IOService *forClient, IOOptionBits options, uintptr_t arg);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-This method opens a session to the [`IOUSBHostDevice`](iousbhostdevice.md), and acquires the service’s workloop lock. Child [`IOUSBHostInterface`](iousbhostinterface.md) objects may open simultaneous sessions, but only one [`IOUSBHostDevice`](iousbhostdevice.md) object at a time may open a session to the device.
+This method opens a session to the [`IOUSBHostDevice`](../iousbhostdevice.md), and acquires the service’s workloop lock. Child [`IOUSBHostInterface`](../iousbhostinterface.md) objects may open simultaneous sessions, but only one [`IOUSBHostDevice`](../iousbhostdevice.md) object at a time may open a session to the device.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ This method opens a session to the [`IOUSBHostDevice`](iousbhostdevice.md), and 
 
 ## See Also
 
-- [Close](iousbhostdevice/close.md)
+### Managing the Device Session
+- [Close](./close.md)
   Closes the session to the host device.
-- [Reset](iousbhostdevice/reset.md)
+- [Reset](./reset.md)
   Terminates the device and attempts to reenumerate it.
 
 

@@ -1,7 +1,8 @@
 # ignoresViewportScaleLimits
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether a webpage allows scaling of the webpage.
 

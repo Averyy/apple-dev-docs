@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An attribute for the level of this heading.
 
@@ -23,28 +24,28 @@ enum HeadingLevelAttribute
 
 #### Overview
 
-Assistive technologies can use this property to improve navigation and describe the level number of levels [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h1.md) through [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h6`](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h6.md) alongside the text.
+Assistive technologies can use this property to improve navigation and describe the level number of levels [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](./headinglevelattribute/headinglevel/h1.md) through [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h6`](./headinglevelattribute/headinglevel/h6.md) alongside the text.
 
-For example, you can rank sections within UI using a heading level. The most important section is marked with[`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h1.md). Nested sections can use subsequent heading levels. For unranked headings, use [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.unspecified`](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/unspecified.md).
+For example, you can rank sections within UI using a heading level. The most important section is marked with[`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1`](./headinglevelattribute/headinglevel/h1.md). Nested sections can use subsequent heading levels. For unranked headings, use [`AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.unspecified`](./headinglevelattribute/headinglevel/unspecified.md).
 
 ## Topics
 
 ### Enumerations
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel](./headinglevelattribute/headinglevel.md)
   The hierarchy of a heading in relation other headings.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
-- [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [MarkdownDecodableAttributedStringKey](../../markdowndecodableattributedstringkey.md)
+- [ObjectiveCConvertibleAttributedStringKey](../../objectivecconvertibleattributedstringkey.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

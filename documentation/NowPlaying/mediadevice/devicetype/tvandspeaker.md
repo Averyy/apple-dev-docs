@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.tvAndSpeaker
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A television paired with a speaker.
 

@@ -1,9 +1,10 @@
 # minLensAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The minimum supported value for the [`lensAperture`](avcapturedevice/lensaperture.md) property.
+The minimum supported value for the [`lensAperture`](../lensaperture.md) property.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@ The minimum supported value for the [`lensAperture`](avcapturedevice/lensapertur
 
 ```swift
 var minLensAperture: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float minLensAperture;
 ```
 
 

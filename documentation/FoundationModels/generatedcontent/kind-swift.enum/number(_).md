@@ -1,7 +1,8 @@
 # GeneratedContent.Kind.number(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A numeric value.
 
@@ -25,15 +26,16 @@ case number(Double)
 
 ## See Also
 
-- [GeneratedContent.Kind.array(_:)](generatedcontent/kind-swift.enum/array(_:).md)
+### Getting the kind of content
+- [GeneratedContent.Kind.array(_:)](./array%28_%29.md)
   An array of generated content elements.
-- [GeneratedContent.Kind.bool(_:)](generatedcontent/kind-swift.enum/bool(_:).md)
+- [GeneratedContent.Kind.bool(_:)](./bool%28_%29.md)
   A boolean value.
-- [GeneratedContent.Kind.null](generatedcontent/kind-swift.enum/null.md)
+- [GeneratedContent.Kind.null](./null.md)
   A null value.
-- [GeneratedContent.Kind.string(_:)](generatedcontent/kind-swift.enum/string(_:).md)
+- [GeneratedContent.Kind.string(_:)](./string%28_%29.md)
   A string value.
-- [case structure(properties: [String : GeneratedContent], orderedKeys: [String])](generatedcontent/kind-swift.enum/structure(properties:orderedkeys:).md)
+- [case structure(properties: [String : GeneratedContent], orderedKeys: [String])](./structure%28properties,orderedkeys%29.md)
   A structured object with key-value pairs.
 
 

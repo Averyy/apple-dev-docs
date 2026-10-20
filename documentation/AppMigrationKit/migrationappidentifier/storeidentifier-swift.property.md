@@ -1,7 +1,8 @@
 # storeIdentifier
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that indicates the store in which the app resides.
 
@@ -17,13 +18,14 @@ let storeIdentifier: MigrationAppIdentifier.StoreIdentifier
 
 ## See Also
 
-- [MigrationAppIdentifier.StoreIdentifier](migrationappidentifier/storeidentifier-swift.struct.md)
+### Working with identifier properties
+- [MigrationAppIdentifier.StoreIdentifier](./storeidentifier-swift.struct.md)
   A type that indicates an app store in which an app resides.
-- [let bundleIdentifier: String](migrationappidentifier/bundleidentifier.md)
+- [let bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app within the store.
-- [let platform: MigrationPlatform](migrationappidentifier/platform.md)
+- [let platform: MigrationPlatform](./platform.md)
   The platform in which the app resides.
-- [struct MigrationPlatform](migrationplatform.md)
+- [struct MigrationPlatform](../migrationplatform.md)
   A type that identifies the platform used by the other device in a migration.
 
 

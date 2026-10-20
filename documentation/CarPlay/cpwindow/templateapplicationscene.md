@@ -1,7 +1,8 @@
 # templateApplicationScene
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The application scene that contains the window.
 
@@ -14,6 +15,10 @@ The application scene that contains the window.
 
 ```swift
 weak var templateApplicationScene: CPTemplateApplicationScene? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) CPTemplateApplicationScene * templateApplicationScene;
 ```
 
 

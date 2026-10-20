@@ -1,7 +1,8 @@
 # click(forDuration:thenDragTo:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clicks and holds an element for a duration you specify, and then drags it to another element.
 
@@ -9,13 +10,17 @@ Clicks and holds an element for a duration you specify, and then drags it to ano
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func click(forDuration duration: TimeInterval, thenDragTo otherElement: XCUIElement)
+```
+
+```objc
+- (void) clickForDuration:(NSTimeInterval) duration thenDragToElement:(XCUIElement *) otherElement;
 ```
 
 #### Discussion
@@ -29,13 +34,14 @@ Specify a duration long enough to initiate a drag operation. If the element exis
 
 ## See Also
 
-- [func click()](xcuielement/click.md)
+### Clicking
+- [func click()](./click%28%29.md)
   Sends a click event to a hittable point computed for the element.
-- [func click(forDuration: TimeInterval, thenDragTo: XCUIElement, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](xcuielement/click(forduration:thendragto:withvelocity:thenholdforduration:).md)
+- [func click(forDuration: TimeInterval, thenDragTo: XCUIElement, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](./click%28forduration,thendragto,withvelocity,thenholdforduration%29.md)
   Clicks and holds an element for a duration, drags it at a velocity, and holds it over another element for a duration, all of which you specify.
-- [func doubleClick()](xcuielement/doubleclick.md)
+- [func doubleClick()](./doubleclick%28%29.md)
   Sends a double-click event to a hittable point the system computes for the element.
-- [func rightClick()](xcuielement/rightclick.md)
+- [func rightClick()](./rightclick%28%29.md)
   Sends a Control-click event to a hittable point the system computes for the element.
 
 

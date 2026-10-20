@@ -1,7 +1,8 @@
 # NSWindowsCP1251StringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Microsoft Windows codepage 1251, encoding Cyrillic characters; equivalent to AdobeStandardCyrillic font encoding.
 
@@ -20,15 +21,20 @@ Microsoft Windows codepage 1251, encoding Cyrillic characters; equivalent to Ado
 var NSWindowsCP1251StringEncoding: UInt { get }
 ```
 
+```c
+NSWindowsCP1251StringEncoding
+```
+
 ## See Also
 
-- [var NSWindowsCP1250StringEncoding: UInt](nswindowscp1250stringencoding.md)
+### Windows Code Page Encodings
+- [var NSWindowsCP1250StringEncoding: UInt](./nswindowscp1250stringencoding.md)
   Microsoft Windows codepage 1250; equivalent to WinLatin2.
-- [var NSWindowsCP1252StringEncoding: UInt](nswindowscp1252stringencoding.md)
+- [var NSWindowsCP1252StringEncoding: UInt](./nswindowscp1252stringencoding.md)
   Microsoft Windows codepage 1252; equivalent to WinLatin1.
-- [var NSWindowsCP1253StringEncoding: UInt](nswindowscp1253stringencoding.md)
+- [var NSWindowsCP1253StringEncoding: UInt](./nswindowscp1253stringencoding.md)
   Microsoft Windows codepage 1253, encoding Greek characters.
-- [var NSWindowsCP1254StringEncoding: UInt](nswindowscp1254stringencoding.md)
+- [var NSWindowsCP1254StringEncoding: UInt](./nswindowscp1254stringencoding.md)
   Microsoft Windows codepage 1254, encoding Turkish characters.
 
 

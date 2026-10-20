@@ -1,7 +1,8 @@
 # provider
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The provider that created the request that resulted in the successful authorization.
 
@@ -18,6 +19,10 @@ The provider that created the request that resulted in the successful authorizat
 
 ```swift
 var provider: any ASAuthorizationProvider { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) id<ASAuthorizationProvider> provider;
 ```
 
 

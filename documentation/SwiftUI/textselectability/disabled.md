@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A selectability value that disables text selection by the person using your app.
 
@@ -19,6 +20,8 @@ A selectability value that disables text selection by the person using your app.
 static var disabled: DisabledTextSelectability { get }
 ```
 
+Available when `Self` is `DisabledTextSelectability`.
+
 #### Discussion
 
 Use this property to disable text selection of views that you don’t want people to select and copy, even if contained within an overall context that allows text selection.
@@ -33,7 +36,8 @@ content // Content that might contain Text views.
 
 ## See Also
 
-- [static var enabled: EnabledTextSelectability](textselectability/enabled.md)
+### Getting selectability options
+- [static var enabled: EnabledTextSelectability](./enabled.md)
   A selectability value that enables text selection by a person using your app.
 
 

@@ -1,16 +1,17 @@
 # UIBarButtonItem.SystemItem
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define system-supplied images for bar button items.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,78 +19,83 @@ Constants that define system-supplied images for bar button items.
 enum SystemItem
 ```
 
+```c
+enum UIBarButtonSystemItem : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIBarButtonItem.SystemItem.done](uibarbuttonitem/systemitem/done.md)
+- [UIBarButtonItem.SystemItem.done](./systemitem/done.md)
   The system Done button, localized.
-- [UIBarButtonItem.SystemItem.cancel](uibarbuttonitem/systemitem/cancel.md)
+- [UIBarButtonItem.SystemItem.cancel](./systemitem/cancel.md)
   The system Cancel button, localized.
-- [UIBarButtonItem.SystemItem.edit](uibarbuttonitem/systemitem/edit.md)
+- [UIBarButtonItem.SystemItem.edit](./systemitem/edit.md)
   The system Edit button, localized.
-- [UIBarButtonItem.SystemItem.save](uibarbuttonitem/systemitem/save.md)
+- [UIBarButtonItem.SystemItem.save](./systemitem/save.md)
   The system Save button, localized.
-- [UIBarButtonItem.SystemItem.add](uibarbuttonitem/systemitem/add.md)
+- [UIBarButtonItem.SystemItem.add](./systemitem/add.md)
   The system plus button containing an icon of a plus sign.
-- [UIBarButtonItem.SystemItem.flexibleSpace](uibarbuttonitem/systemitem/flexiblespace.md)
+- [UIBarButtonItem.SystemItem.flexibleSpace](./systemitem/flexiblespace.md)
   Blank space to add between other items.
-- [UIBarButtonItem.SystemItem.fixedSpace](uibarbuttonitem/systemitem/fixedspace.md)
+- [UIBarButtonItem.SystemItem.fixedSpace](./systemitem/fixedspace.md)
   Blank space to add between other items.
-- [UIBarButtonItem.SystemItem.compose](uibarbuttonitem/systemitem/compose.md)
+- [UIBarButtonItem.SystemItem.compose](./systemitem/compose.md)
   The system compose button.
-- [UIBarButtonItem.SystemItem.reply](uibarbuttonitem/systemitem/reply.md)
+- [UIBarButtonItem.SystemItem.reply](./systemitem/reply.md)
   The system reply button.
-- [UIBarButtonItem.SystemItem.action](uibarbuttonitem/systemitem/action.md)
+- [UIBarButtonItem.SystemItem.action](./systemitem/action.md)
   The system action button.
-- [UIBarButtonItem.SystemItem.organize](uibarbuttonitem/systemitem/organize.md)
+- [UIBarButtonItem.SystemItem.organize](./systemitem/organize.md)
   The system organize button.
-- [UIBarButtonItem.SystemItem.bookmarks](uibarbuttonitem/systemitem/bookmarks.md)
+- [UIBarButtonItem.SystemItem.bookmarks](./systemitem/bookmarks.md)
   The system bookmarks button.
-- [UIBarButtonItem.SystemItem.search](uibarbuttonitem/systemitem/search.md)
+- [UIBarButtonItem.SystemItem.search](./systemitem/search.md)
   The system search button.
-- [UIBarButtonItem.SystemItem.refresh](uibarbuttonitem/systemitem/refresh.md)
+- [UIBarButtonItem.SystemItem.refresh](./systemitem/refresh.md)
   The system refresh button.
-- [UIBarButtonItem.SystemItem.stop](uibarbuttonitem/systemitem/stop.md)
+- [UIBarButtonItem.SystemItem.stop](./systemitem/stop.md)
   The system stop button.
-- [UIBarButtonItem.SystemItem.camera](uibarbuttonitem/systemitem/camera.md)
+- [UIBarButtonItem.SystemItem.camera](./systemitem/camera.md)
   The system camera button.
-- [UIBarButtonItem.SystemItem.trash](uibarbuttonitem/systemitem/trash.md)
+- [UIBarButtonItem.SystemItem.trash](./systemitem/trash.md)
   The system trash button.
-- [UIBarButtonItem.SystemItem.play](uibarbuttonitem/systemitem/play.md)
+- [UIBarButtonItem.SystemItem.play](./systemitem/play.md)
   The system play button.
-- [UIBarButtonItem.SystemItem.pause](uibarbuttonitem/systemitem/pause.md)
+- [UIBarButtonItem.SystemItem.pause](./systemitem/pause.md)
   The system pause button.
-- [UIBarButtonItem.SystemItem.rewind](uibarbuttonitem/systemitem/rewind.md)
+- [UIBarButtonItem.SystemItem.rewind](./systemitem/rewind.md)
   The system rewind button.
-- [UIBarButtonItem.SystemItem.fastForward](uibarbuttonitem/systemitem/fastforward.md)
+- [UIBarButtonItem.SystemItem.fastForward](./systemitem/fastforward.md)
   The system fast forward button.
-- [UIBarButtonItem.SystemItem.undo](uibarbuttonitem/systemitem/undo.md)
+- [UIBarButtonItem.SystemItem.undo](./systemitem/undo.md)
   The system undo button.
-- [UIBarButtonItem.SystemItem.redo](uibarbuttonitem/systemitem/redo.md)
+- [UIBarButtonItem.SystemItem.redo](./systemitem/redo.md)
   The system redo button.
-- [UIBarButtonItem.SystemItem.close](uibarbuttonitem/systemitem/close.md)
+- [UIBarButtonItem.SystemItem.close](./systemitem/close.md)
   The system close button.
-- [UIBarButtonItem.SystemItem.writingTools](uibarbuttonitem/systemitem/writingtools.md)
-- [UIBarButtonItem.SystemItem.pageCurl](uibarbuttonitem/systemitem/pagecurl.md)
+- [UIBarButtonItem.SystemItem.writingTools](./systemitem/writingtools.md)
+- [UIBarButtonItem.SystemItem.pageCurl](./systemitem/pagecurl.md)
   The system page curl button.
 ### Initializers
-- [init?(rawValue: Int)](uibarbuttonitem/systemitem/init(rawvalue:).md)
+- [init?(rawValue: Int)](./systemitem/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(systemItem: UIBarButtonItem.SystemItem, primaryAction: UIAction?, menu: UIMenu?)](uibarbuttonitem/init(systemitem:primaryaction:menu:).md)
+### Creating system items
+- [convenience init(systemItem: UIBarButtonItem.SystemItem, primaryAction: UIAction?, menu: UIMenu?)](./init%28systemitem,primaryaction,menu%29.md)
   Creates an item using the specified system item, primary action, and context menu.
-- [convenience init(barButtonSystemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?)](uibarbuttonitem/init(barbuttonsystemitem:target:action:).md)
+- [convenience init(barButtonSystemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?)](./init%28barbuttonsystemitem,target,action%29.md)
   Creates an item using the specified system item, target, and action.
 
 

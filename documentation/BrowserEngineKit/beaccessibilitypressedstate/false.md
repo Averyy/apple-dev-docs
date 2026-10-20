@@ -1,14 +1,15 @@
 # BEAccessibilityPressedState.false
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the element isn’t pressed.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS ?+
+- macOS
 - tvOS 18.0+
 - visionOS 2.0+
 
@@ -18,13 +19,18 @@ A state that indicates the element isn’t pressed.
 case `false`
 ```
 
+```c
+BEAccessibilityPressedStateFalse
+```
+
 ## See Also
 
-- [BEAccessibilityPressedState.true](beaccessibilitypressedstate/true.md)
+### Element states
+- [BEAccessibilityPressedState.true](./true.md)
   A state that indicates the element is pressed.
-- [BEAccessibilityPressedState.mixed](beaccessibilitypressedstate/mixed.md)
+- [BEAccessibilityPressedState.mixed](./mixed.md)
   A state that indicates the element is in a mixed state.
-- [BEAccessibilityPressedState.undefined](beaccessibilitypressedstate/undefined.md)
+- [BEAccessibilityPressedState.undefined](./undefined.md)
   An option that indicates an undefined pressed state.
 
 

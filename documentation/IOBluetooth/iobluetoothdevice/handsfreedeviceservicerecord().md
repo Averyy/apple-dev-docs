@@ -1,7 +1,8 @@
 # handsFreeDeviceServiceRecord()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func handsFreeDeviceServiceRecord() -> IOBluetoothSDPServiceRecord!
+```
+
+```objc
+- (IOBluetoothSDPServiceRecord *) handsFreeDeviceServiceRecord;
 ```
 
 

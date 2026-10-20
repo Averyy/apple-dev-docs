@@ -1,7 +1,8 @@
 # PKPassKitError.Code.invalidSignature
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Invalid pass signature.
 
@@ -19,19 +20,24 @@ Invalid pass signature.
 case invalidSignature
 ```
 
+```c
+PKInvalidSignature
+```
+
 #### Discussion
 
 For example, the pass type identifier in the certificate and the pass do not match, or the certificate has expired or was revoked.
 
 ## See Also
 
-- [PKPassKitError.Code.unknownError](pkpasskiterror/code/unknownerror.md)
+### Error codes
+- [PKPassKitError.Code.unknownError](./unknownerror.md)
   Unknown error.
-- [PKPassKitError.Code.invalidDataError](pkpasskiterror/code/invaliddataerror.md)
+- [PKPassKitError.Code.invalidDataError](./invaliddataerror.md)
   Invalid pass data.
-- [PKPassKitError.Code.unsupportedVersionError](pkpasskiterror/code/unsupportedversionerror.md)
+- [PKPassKitError.Code.unsupportedVersionError](./unsupportedversionerror.md)
   Unsupported pass version.
-- [PKPassKitError.Code.notEntitledError](pkpasskiterror/code/notentitlederror.md)
+- [PKPassKitError.Code.notEntitledError](./notentitlederror.md)
   Error caused by absence of the required entitlements for the given operation.
 
 

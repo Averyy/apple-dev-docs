@@ -1,7 +1,8 @@
 # init(excludeScheme:domain:path:query:excludeFragment:excludeIntermediates:caseSensitive:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new parsing configuration with the default values.
 

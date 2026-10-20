@@ -1,10 +1,11 @@
 # deleteToMark(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 optional func deleteToMark(_ sender: Any?)
 ```
 
+```objc
+- (void) deleteToMark:(id) sender;
+```
+
 ## See Also
 
-- [func setMark(Any?)](nsstandardkeybindingresponding/setmark(_:).md)
-- [func selectToMark(Any?)](nsstandardkeybindingresponding/selecttomark(_:).md)
-- [func swapWithMark(Any?)](nsstandardkeybindingresponding/swapwithmark(_:).md)
+### Supporting Marked Selections
+- [func setMark(Any?)](./setmark%28_%29.md)
+- [func selectToMark(Any?)](./selecttomark%28_%29.md)
+- [func swapWithMark(Any?)](./swapwithmark%28_%29.md)
 
 
 ---

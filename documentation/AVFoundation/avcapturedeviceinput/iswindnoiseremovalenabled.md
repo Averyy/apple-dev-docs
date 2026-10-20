@@ -1,7 +1,8 @@
 # isWindNoiseRemovalEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,15 +17,20 @@
 var isWindNoiseRemovalEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isWindNoiseRemovalEnabled) BOOL windNoiseRemovalEnabled;
+```
+
 ## See Also
 
-- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](avcapturedeviceinput/ismultichannelaudiomodesupported(_:).md)
+### Configuring audio properties
+- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](./ismultichannelaudiomodesupported%28_%29.md)
   A Boolean value that indicates whether the input supports the specified multichannel audio mode.
-- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](avcapturedeviceinput/multichannelaudiomode.md)
+- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](./multichannelaudiomode.md)
   The multichannel audio mode to apply when recording audio.
-- [enum AVCaptureMultichannelAudioMode](avcapturemultichannelaudiomode.md)
+- [enum AVCaptureMultichannelAudioMode](../avcapturemultichannelaudiomode.md)
   Constants that indicate the modes of multichannel audio.
-- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalSupported: Bool](./iswindnoiseremovalsupported.md)
 
 
 ---

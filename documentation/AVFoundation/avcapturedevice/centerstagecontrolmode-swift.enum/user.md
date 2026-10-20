@@ -1,7 +1,8 @@
 # AVCaptureDevice.CenterStageControlMode.user
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user controls Center Stage.
 
@@ -18,15 +19,20 @@ The user controls Center Stage.
 case user
 ```
 
+```c
+AVCaptureCenterStageControlModeUser
+```
+
 #### Discussion
 
 In this mode, the user has exclusive control of Center Stage through Control Center. The system throws an exception in this mode if an app attempts to programmatically change the enabled state of Center Stage.
 
 ## See Also
 
-- [AVCaptureDevice.CenterStageControlMode.app](avcapturedevice/centerstagecontrolmode-swift.enum/app.md)
+### Control modes
+- [AVCaptureDevice.CenterStageControlMode.app](./app.md)
   The app controls Center Stage.
-- [AVCaptureDevice.CenterStageControlMode.cooperative](avcapturedevice/centerstagecontrolmode-swift.enum/cooperative.md)
+- [AVCaptureDevice.CenterStageControlMode.cooperative](./cooperative.md)
   A user and app cooperatively share control of Center Stage.
 
 

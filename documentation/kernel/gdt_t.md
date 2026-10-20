@@ -1,14 +1,15 @@
 # gdt_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef gdt_entry_t gdt_t;
 ```
 

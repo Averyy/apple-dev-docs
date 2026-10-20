@@ -1,17 +1,24 @@
 # SecTransformMetaAttributeType.name
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The name of the attribute.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 case name
+```
+
+```c
+kSecTransformMetaAttributeName
 ```
 
 #### Discussion

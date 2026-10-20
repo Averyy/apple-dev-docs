@@ -1,7 +1,8 @@
 # variantSelection(for:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the authored variant selection for the given variant set.
 

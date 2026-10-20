@@ -1,7 +1,8 @@
 # BlendShapeWeightsData
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that encapsulates the blend shape name, blend shape weights and the names of those weights to be stored by the blend shape weights set.
 
@@ -22,30 +23,31 @@ struct BlendShapeWeightsData
 ## Topics
 
 ### Initializers
-- [init(id: BlendShapeWeightsData.ID, weights: [(String, BlendShapeWeights.Element)])](blendshapeweightsdata/init(id:weights:).md)
+- [init(id: BlendShapeWeightsData.ID, weights: [(String, BlendShapeWeights.Element)])](./blendshapeweightsdata/init%28id,weights%29.md)
   Creates an instance of the named weights for a single blend shape.
 ### Instance Properties
-- [var id: BlendShapeWeightsData.ID](blendshapeweightsdata/id.md)
+- [var id: BlendShapeWeightsData.ID](./blendshapeweightsdata/id.md)
   The unique id of the blend shape. This value is used when binding to the structure using an animation bind target.
-- [var weightNames: [String]](blendshapeweightsdata/weightnames.md)
-  The name of each weight value defined in the [`weights`](blendshapeweightsdata/weights.md) variable.
-- [var weights: BlendShapeWeights](blendshapeweightsdata/weights.md)
+- [var weightNames: [String]](./blendshapeweightsdata/weightnames.md)
+  The name of each weight value defined in the [`weights`](./blendshapeweightsdata/weights.md) variable.
+- [var weights: BlendShapeWeights](./blendshapeweightsdata/weights.md)
   The blend shape’s weight values.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [struct BlendShapeWeightsComponent](blendshapeweightscomponent.md)
+### Blend shape management
+- [struct BlendShapeWeightsComponent](./blendshapeweightscomponent.md)
   A component that provides access to the current weights associated with all blend shape meshes on an entity.
-- [class BlendShapeWeightsMapping](blendshapeweightsmapping.md)
+- [class BlendShapeWeightsMapping](./blendshapeweightsmapping.md)
   A mapping of blend weights to the target meshes that those weights affect.
-- [struct BlendShapeWeights](blendshapeweights.md)
+- [struct BlendShapeWeights](./blendshapeweights.md)
   A set of animatable weight values that collectively represent the blending amounts for all the blend shapes’ blend targets.
-- [struct BlendShapeWeightsSet](blendshapeweightsset.md)
+- [struct BlendShapeWeightsSet](./blendshapeweightsset.md)
   A custom collection of named blend shape weights.
 
 

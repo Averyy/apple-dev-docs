@@ -1,7 +1,8 @@
 # errSSLUnexpectedRecord
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 6.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var errSSLUnexpectedRecord: OSStatus { get }
+```
+
+```c
+errSSLUnexpectedRecord
 ```
 
 

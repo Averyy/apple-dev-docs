@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/model-input-and-outp
 
 # Model Input and Output Types
 
-**
-
-- [.md](../_sources/source/model-input-and-output-types.md)
-- **
-
-.pdf
-
-**
-
-# Model Input and Output Types
-
- Table of contents 
-
-## Contents
-
-# Model Input and Output Types
-
 When using the Core ML Tools [Unified Conversion API](unified-conversion-api.md), you can specify various properties for the model inputs and outputs using the `inputs` and `outputs` parameters for [convert()](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry). The following summarizes the key options.
 
 ## Use the Default Behavior
@@ -72,6 +55,4 @@ mlmodel = ct.convert(
 )
 ```
 
-For TensorFlow conversions, the names are picked up automatically from the TF graph. Unlike PyTorch models in which the inputs and outputs are ordered, with TensorFlow models you can’t provide your own names, because in the TF graph the input and output tensors are referred to by the names. After converting the model, you can change the names of the inputs and outputs using the [rename_feature()](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.utils.rename_feature) method. For an example, see [Rename a Feature](mlmodel-utilities.html#rename-a-feature).
-
-** Contents
+For TensorFlow conversions, the names are picked up automatically from the TF graph. Unlike PyTorch models in which the inputs and outputs are ordered, with TensorFlow models you can’t provide your own names, because in the TF graph the input and output tensors are referred to by the names. After converting the model, you can change the names of the inputs and outputs using the [rename_feature()](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.utils.rename_feature) method. For an example, see [Rename a Feature](mlmodel-utilities.md#rename-a-feature).

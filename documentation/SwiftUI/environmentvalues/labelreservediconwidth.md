@@ -1,7 +1,8 @@
 # labelReservedIconWidth
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width reserved for icons in labels.
 

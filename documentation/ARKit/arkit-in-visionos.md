@@ -1,6 +1,7 @@
 # ARKit in visionOS
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 Create immersive augmented reality experiences.
 
@@ -20,169 +21,170 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - **Camera frames.** Access camera frames from a device in several formats.
 - **Accessory tracking.** Work with the real-time position and orientation of accessories that a person is using.
 
-![An illustration showing a split view of someone using Apple Vision Pro; the left side shows a person’s perspective of the room and the right side depicts ARKit’s perspective of the room. The right side illustrates ARKit’s sensing capabilities, including the detected shape of the room and the individual joints of a person’s hand.](/images/com.apple.arkit/media-4330791@2x.png)
+![An illustration showing a split view of someone using Apple Vision Pro; the left side shows a person’s perspective of the room and the right side depicts ARKit’s perspective of the room. The right side illustrates ARKit’s sensing capabilities, including the detected shape of the room and the individual joints of a person’s hand.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-4330791@2x.png)
 
 ## Topics
 
 ### Setup
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol DataProvider](dataprovider.md)
+- [protocol DataProvider](./dataprovider.md)
   A source of live data from ARKit.
-- [enum DataProviderState](dataproviderstate.md)
+- [enum DataProviderState](./dataproviderstate.md)
   The possible states of a data provider.
-- [protocol Anchor](anchor.md)
+- [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
-- [protocol TrackableAnchor](trackableanchor.md)
+- [protocol TrackableAnchor](./trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
-- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+- [protocol ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
   A type that provides an ARKit coordinate space with an optional correction applied.
-- [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
+- [struct ARKitCoordinateSpace](./arkitcoordinatespace.md)
   An object which represents an ARKit coordinate space.
 ### Barcode detection
-- [class BarcodeDetectionProvider](barcodedetectionprovider.md)
+- [class BarcodeDetectionProvider](./barcodedetectionprovider.md)
   An object that provides the real-time position of barcodes the framework detects in a person’s environment.
-- [struct BarcodeAnchor](barcodeanchor.md)
+- [struct BarcodeAnchor](./barcodeanchor.md)
   A barcode’s position in a person’s surroundings.
 ### Camera sampling
-- [class CameraFrameProvider](cameraframeprovider.md)
+- [class CameraFrameProvider](./cameraframeprovider.md)
   An object that provides camera streams.
-- [struct CameraFrame](cameraframe.md)
+- [struct CameraFrame](./cameraframe.md)
   The representation of a camera frame.
-- [struct CameraVideoFormat](cameravideoformat.md)
+- [struct CameraVideoFormat](./cameravideoformat.md)
   A structure that represents a camera video format.
 ### Rendering
-- [class StereoPropertiesProvider](stereopropertiesprovider.md)
+- [class StereoPropertiesProvider](./stereopropertiesprovider.md)
   The StereoPropertiesProvider serves the latest viewpoint properties on the device.
-- [struct ViewpointProperties](viewpointproperties.md)
+- [struct ViewpointProperties](./viewpointproperties.md)
   The ViewpointProperties is a record of render camera transforms at some particular time.
 ### Camera region
-- [class CameraRegionProvider](cameraregionprovider.md)
+- [class CameraRegionProvider](./cameraregionprovider.md)
   A camera region provider.
-- [struct CameraRegionAnchor](cameraregionanchor.md)
+- [struct CameraRegionAnchor](./cameraregionanchor.md)
   Represents a region in space for capturing a camera stream.
 ### Plane detection
-- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
+- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [class PlaneDetectionProvider](planedetectionprovider.md)
+- [class PlaneDetectionProvider](./planedetectionprovider.md)
   A source of live data about planes in a person’s surroundings.
-- [struct PlaneAnchor](planeanchor.md)
+- [struct PlaneAnchor](./planeanchor.md)
   An anchor that represents horizontal and vertical planes.
 ### World tracking
-- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
+- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [class WorldTrackingProvider](worldtrackingprovider.md)
+- [class WorldTrackingProvider](./worldtrackingprovider.md)
   A source of live data about the device pose and anchors in a person’s surroundings.
-- [struct WorldAnchor](worldanchor.md)
+- [struct WorldAnchor](./worldanchor.md)
   A fixed location in a person’s surroundings.
-- [struct DeviceAnchor](deviceanchor.md)
+- [struct DeviceAnchor](./deviceanchor.md)
   The position and orientation of Apple Vision Pro.
 ### Hand tracking
-- [Happy Beam](../visionos/happybeam.md)
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [class HandTrackingProvider](handtrackingprovider.md)
+- [class HandTrackingProvider](./handtrackingprovider.md)
   A source of live data about the position of a person’s hands and hand joints.
-- [struct HandAnchor](handanchor.md)
+- [struct HandAnchor](./handanchor.md)
   A hand’s position in a person’s surroundings.
-- [struct HandSkeleton](handskeleton.md)
+- [struct HandSkeleton](./handskeleton.md)
   A collection of joints in a hand.
 ### Scene reconstruction
-- [Incorporating real-world surroundings in an immersive experience](../visionos/incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
-- [Applying mesh to real-world surroundings](../visionos/applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
-- [class SceneReconstructionProvider](scenereconstructionprovider.md)
+- [class SceneReconstructionProvider](./scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
-- [struct MeshAnchor](meshanchor.md)
+- [struct MeshAnchor](./meshanchor.md)
   A volume of space that contains a mesh of a person’s surroundings.
 ### Image tracking
-- [Tracking and altering images](tracking-and-altering-images.md)
+- [Tracking and altering images](./tracking-and-altering-images.md)
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
-- [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
+- [Detecting Images in an AR Experience](./detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Tracking preregistered images in 3D space](../visionos/tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](../visionOS/tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
-- [class ImageTrackingProvider](imagetrackingprovider.md)
+- [class ImageTrackingProvider](./imagetrackingprovider.md)
   A source of live data about a 2D image’s position in a person’s surroundings.
-- [struct ImageAnchor](imageanchor.md)
+- [struct ImageAnchor](./imageanchor.md)
   A 2D image’s position in a person’s surroundings.
-- [struct ReferenceImage](referenceimage.md)
+- [struct ReferenceImage](./referenceimage.md)
   A 2D image the system uses as a reference to find the same image in a person’s surroundings.
 ### Geometry
-- [struct GeometryElement](geometryelement.md)
+- [struct GeometryElement](./geometryelement.md)
   A container for vertex indices of lines or triangles.
-- [struct GeometrySource](geometrysource.md)
+- [struct GeometrySource](./geometrysource.md)
   A container for geometrical vector data.
 ### Lighting estimation
-- [class EnvironmentLightEstimationProvider](environmentlightestimationprovider.md)
+- [class EnvironmentLightEstimationProvider](./environmentlightestimationprovider.md)
   A source of live data about lighting information in the environment.
-- [struct EnvironmentProbeAnchor](environmentprobeanchor.md)
+- [struct EnvironmentProbeAnchor](./environmentprobeanchor.md)
   An environment probe in the world.
 ### Object tracking
-- [class ObjectTrackingProvider](objecttrackingprovider.md)
+- [class ObjectTrackingProvider](./objecttrackingprovider.md)
   A source of real-time position of reference objects in a person’s environment.
-- [struct ObjectAnchor](objectanchor.md)
+- [struct ObjectAnchor](./objectanchor.md)
   A reference object ARKit is tracking.
-- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Implementing object tracking in your app](../visionos/implementing-object-tracking-in-your-app.md)
+- [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 ### Accessory tracking
-- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](./preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
-- [Working with generic spatial accessories](../visionos/working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
-- [class AccessoryTrackingProvider](accessorytrackingprovider.md)
+- [class AccessoryTrackingProvider](./accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.
-- [struct Accessory](accessory.md)
+- [struct Accessory](./accessory.md)
   Represents an accessory to be tracked.
-- [struct AccessoryAnchor](accessoryanchor.md)
+- [struct AccessoryAnchor](./accessoryanchor.md)
   Represents a tracked accessory.
-- [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
+- [Tracking accessories in volumetric windows](./tracking-accessories-in-volumetric-windows.md)
   Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
-- [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+- [Tracking a handheld accessory as a virtual sculpting tool](./tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
   Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 ### Room tracking
-- [class RoomTrackingProvider](roomtrackingprovider.md)
+- [class RoomTrackingProvider](./roomtrackingprovider.md)
   A source of real-time information about the room that a person is currently in.
-- [struct RoomAnchor](roomanchor.md)
+- [struct RoomAnchor](./roomanchor.md)
   The representation of a room ARKit is currently tracking.
-- [enum SurfaceClassification](surfaceclassification.md)
+- [enum SurfaceClassification](./surfaceclassification.md)
   A value describing the classification of a surface.
-- [Building local experiences with room tracking](../visionos/building-local-experiences-with-room-tracking.md)
+- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 ### Shared coordinate spaces
-- [class SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
+- [class SharedCoordinateSpaceProvider](./sharedcoordinatespaceprovider.md)
   Provides ability to establish a shared coordinate space among multiple participants.
 ### Visual Fidelity
-- [class VisualFidelityProvider](visualfidelityprovider.md)
+- [class VisualFidelityProvider](./visualfidelityprovider.md)
   A data provider that delivers visual fidelity monitoring data.
-- [struct VisualFidelityData](visualfidelitydata.md)
+- [struct VisualFidelityData](./visualfidelitydata.md)
   Visual fidelity data containing device fit and field of view verification.
-- [struct FieldOfViewAnchor](fieldofviewanchor.md)
+- [struct FieldOfViewAnchor](./fieldofviewanchor.md)
   An anchor representing a set of field of view (FoV) boundary polygon points in immersive space.
-- [enum DeviceFitStatus](devicefitstatus.md)
+- [enum DeviceFitStatus](./devicefitstatus.md)
   Device fit validation status indicating the user’s eye position relative to the optimal device fit range.
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+### visionOS
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol DataProvider](dataprovider.md)
+- [protocol DataProvider](./dataprovider.md)
   A source of live data from ARKit.
-- [protocol Anchor](anchor.md)
+- [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Enumerates items changed since the last sync.
@@ -18,7 +19,7 @@ func enumerateChanges(startingAt syncAnchor: ContactItemSyncAnchor, for observer
 
 #### Discussion
 
-The system calls `enumerateChanges(startingAt:for:)` for each batch of changed items to enumerate. After enumerating each batch of changed items, your implementation calls [`didFinishEnumeratingChanges(upTo:moreComing:)`](contactitemchangeobserver/didfinishenumeratingchanges(upto:morecoming:).md) .
+The system calls `enumerateChanges(startingAt:for:)` for each batch of changed items to enumerate. After enumerating each batch of changed items, your implementation calls [`didFinishEnumeratingChanges(upTo:moreComing:)`](../contactitemchangeobserver/didfinishenumeratingchanges%28upto,morecoming%29.md) .
 
 Your implementation can enumerate items in any order, but that order must be deterministic and resumable.
 
@@ -29,9 +30,10 @@ Your implementation can enumerate items in any order, but that order must be det
 
 ## See Also
 
-- [struct ContactItemSyncAnchor](contactitemsyncanchor.md)
+### Enumerating item changes
+- [struct ContactItemSyncAnchor](../contactitemsyncanchor.md)
   A snapshot point into enumerating changed contact items.
-- [protocol ContactItemChangeObserver](contactitemchangeobserver.md)
+- [protocol ContactItemChangeObserver](../contactitemchangeobserver.md)
   A protocol that defines a system observer that receives a resumable enumeration of changed contact items.
 
 

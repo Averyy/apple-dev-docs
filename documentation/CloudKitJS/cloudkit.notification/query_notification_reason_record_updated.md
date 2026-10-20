@@ -10,15 +10,16 @@ A record matching the subscription’s predicate was updated.
 
 ## Declaration
 
-```swift
+```
 const String QUERY_NOTIFICATION_REASON_RECORD_UPDATED;
 ```
 
 ## See Also
 
-- [QUERY_NOTIFICATION_REASON_RECORD_CREATED](cloudkit.notification/query_notification_reason_record_created.md)
+### Constants
+- [QUERY_NOTIFICATION_REASON_RECORD_CREATED](./query_notification_reason_record_created.md)
   A record matching the subscription’s predicate was created.
-- [QUERY_NOTIFICATION_REASON_RECORD_DELETED](cloudkit.notification/query_notification_reason_record_deleted.md)
+- [QUERY_NOTIFICATION_REASON_RECORD_DELETED](./query_notification_reason_record_deleted.md)
   A record matching the subscription’s predicate was deleted.
 
 

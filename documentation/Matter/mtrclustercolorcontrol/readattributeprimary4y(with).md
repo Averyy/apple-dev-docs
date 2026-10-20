@@ -1,7 +1,8 @@
 # readAttributePrimary4Y(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributePrimary4Y(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributePrimary4YWithParams:(MTRReadParams *) params;
 ```
 
 

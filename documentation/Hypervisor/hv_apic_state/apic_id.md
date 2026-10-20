@@ -1,15 +1,20 @@
 # apic_id
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var apic_id: UInt32
+```
+
+```c
+uint32_t apic_id;
 ```
 
 

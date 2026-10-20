@@ -1,12 +1,13 @@
 # cell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s cell object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The receiver’s cell object.
 var cell: NSCell? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSCell * cell;
+```
+
 #### Discussion
 
-For controls with multiple cells (such as `NSMatrix` or `NSForm`), use the [`selectedCell()`](nscontrol/selectedcell().md) property to retrieve a specific cell.
+For controls with multiple cells (such as `NSMatrix` or `NSForm`), use the [`selectedCell()`](./selectedcell%28%29.md) property to retrieve a specific cell.
 
 ## See Also
 
-- [class var cellClass: AnyClass?](nscontrol/cellclass.md)
+### Deprecated properties
+- [class var cellClass: AnyClass?](./cellclass.md)
   Returns the type of cell used by the receiver.
 
 

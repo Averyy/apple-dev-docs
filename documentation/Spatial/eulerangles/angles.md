@@ -1,7 +1,8 @@
 # angles
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A three-element vector that specifies the Euler angles.
 
@@ -20,11 +21,16 @@ A three-element vector that specifies the Euler angles.
 var angles: simd_double3
 ```
 
+```c
+simd_double3 angles;
+```
+
 ## See Also
 
-- [var order: __SPEulerAngleOrder](eulerangles/order-swift.property.md)
+### Instance properties
+- [var order: __SPEulerAngleOrder](./order-swift.property.md)
   The Euler angle order.
-- [var order: __SPEulerAngleOrder](eulerangles/order-swift.property.md)
+- [var order: __SPEulerAngleOrder](./order-swift.property.md)
   The Euler angle order.
 
 

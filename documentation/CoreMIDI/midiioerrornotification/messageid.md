@@ -1,18 +1,19 @@
 # messageID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of message.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The type of message.
 var messageID: MIDINotificationMessageID
 ```
 
+```c
+MIDINotificationMessageID messageID;
+```
+
 ## See Also
 
-- [var messageSize: UInt32](midiioerrornotification/messagesize.md)
+### Inspecting an error notification
+- [var messageSize: UInt32](./messagesize.md)
   The size of the message.
-- [var driverDevice: MIDIDeviceRef](midiioerrornotification/driverdevice.md)
+- [var driverDevice: MIDIDeviceRef](./driverdevice.md)
   The device with an I/O error.
-- [var errorCode: OSStatus](midiioerrornotification/errorcode.md)
+- [var errorCode: OSStatus](./errorcode.md)
   The error code of the generated error.
 
 

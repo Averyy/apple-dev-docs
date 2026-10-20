@@ -1,18 +1,19 @@
 # distantFuture
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A time in the distant future.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ You can pass this value to methods that schedule work to have the system wait in
 
 ## See Also
 
-- [static func now() -> DispatchWallTime](dispatchwalltime/now.md)
+### Getting Well-Known Times
+- [static func now() -> DispatchWallTime](./now%28%29.md)
   Returns the current time.
 
 

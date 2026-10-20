@@ -1,7 +1,8 @@
 # isSecureBootEnabled
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Secure Boot is in an enabled state in the variable store.
 

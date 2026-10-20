@@ -1,17 +1,18 @@
 # AUAudioUnitBusType.input
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An input bus.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ An input bus.
 case input
 ```
 
+```c
+AUAudioUnitBusTypeInput
+```
+
 ## See Also
 
-- [AUAudioUnitBusType.output](auaudiounitbustype/output.md)
+### Constants
+- [AUAudioUnitBusType.output](./output.md)
   An output bus.
 
 

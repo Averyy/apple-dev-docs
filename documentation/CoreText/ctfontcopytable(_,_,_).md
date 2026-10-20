@@ -1,7 +1,8 @@
 # CTFontCopyTable(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a reference to the font table data.
 
@@ -20,19 +21,24 @@ Returns a reference to the font table data.
 func CTFontCopyTable(_ font: CTFont, _ table: CTFontTableTag, _ options: CTFontTableOptions) -> CFData?
 ```
 
+```c
+extern CFDataRefCTFontCopyTable(CTFontRef font, CTFontTableTag table, CTFontTableOptions options);
+```
+
 #### Return Value
 
-A retained reference to the font table data as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. The table data is not actually copied; however, the data reference must be released.
+A retained reference to the font table data as a [`CFData`](../CoreFoundation/cfdata.md) object. The table data is not actually copied; however, the data reference must be released.
 
 ## Parameters
 
 - `font`: The font reference.
-- `table`: The font table identifier as a [`CTFontTableTag`](ctfonttabletag.md) constant. See [`CTFontTableTag`](ctfonttabletag.md) for possible values.
+- `table`: The font table identifier as a [`CTFontTableTag`](./ctfonttabletag.md) constant. See [`CTFontTableTag`](./ctfonttabletag.md) for possible values.
 - `options`: The font table options.
 
 ## See Also
 
-- [func CTFontCopyAvailableTables(CTFont, CTFontTableOptions) -> CFArray?](ctfontcopyavailabletables(_:_:).md)
+### Getting Font Table Data
+- [func CTFontCopyAvailableTables(CTFont, CTFontTableOptions) -> CFArray?](./ctfontcopyavailabletables%28_,_%29.md)
   Returns an array of font table tags.
 
 

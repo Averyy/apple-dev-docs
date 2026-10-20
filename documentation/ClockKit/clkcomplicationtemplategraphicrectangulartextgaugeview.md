@@ -1,12 +1,15 @@
 # CLKComplicationTemplateGraphicRectangularTextGaugeView
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying a header row with a SwiftUI view and text, a second row of text, and a gauge.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -16,9 +19,9 @@ final class CLKComplicationTemplateGraphicRectangularTextGaugeView<Label> where 
 
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family. [`Figure 1`](clkcomplicationtemplategraphicrectangulartextgaugeview#3667408.md) shows the layout of the complication and where it appears on the clock face.
+This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family. [Figure 1](./clkcomplicationtemplategraphicrectangulartextgaugeview.md#3667408) shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the header label, text providers, and gauge provider.](/images/com.apple.clockkit/media-3667408@2x.png)
+![A diagram showing the layout of the complication that calls out the header label, text providers, and gauge provider.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3667408@2x.png)
 
 The following table lists the dimensions of the SwiftUI view displayed by this template.
 
@@ -32,38 +35,39 @@ The following table lists the dimensions of the SwiftUI view displayed by this t
 ## Topics
 
 ### Creating the Template
-- [init(headerLabel: Label, headerTextProvider: CLKTextProvider, bodyTextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)](clkcomplicationtemplategraphicrectangulartextgaugeview/init(headerlabel:headertextprovider:bodytextprovider:gaugeprovider:).md)
+- [init(headerLabel: Label, headerTextProvider: CLKTextProvider, bodyTextProvider: CLKTextProvider, gaugeProvider: CLKGaugeProvider)](./clkcomplicationtemplategraphicrectangulartextgaugeview/init%28headerlabel,headertextprovider,bodytextprovider,gaugeprovider%29.md)
   Creates a new template that has a header row with a SwiftUI view and text, body text, and a gauge.
 ### Accessing the Content
-- [var headerLabel: Label](clkcomplicationtemplategraphicrectangulartextgaugeview/headerlabel.md)
+- [var headerLabel: Label](./clkcomplicationtemplategraphicrectangulartextgaugeview/headerlabel.md)
   The SwiftUI view displayed by the template.
-- [var headerTextProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangulartextgaugeview/headertextprovider.md)
+- [var headerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicrectangulartextgaugeview/headertextprovider.md)
   The header text to display in the complication.
-- [var bodyTextProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangulartextgaugeview/bodytextprovider.md)
+- [var bodyTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicrectangulartextgaugeview/bodytextprovider.md)
   The main body text to display in the complication.
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicrectangulartextgaugeview/gaugeprovider.md)
+- [var gaugeProvider: CLKGaugeProvider](./clkcomplicationtemplategraphicrectangulartextgaugeview/gaugeprovider.md)
   The gauge to display in the complication.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [CLKComplicationTemplate](./clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateGraphicRectangularStandardBodyView](clkcomplicationtemplategraphicrectangularstandardbodyview.md)
+### Rectangular templates
+- [class CLKComplicationTemplateGraphicRectangularStandardBodyView](./clkcomplicationtemplategraphicrectangularstandardbodyview.md)
   A template for displaying a SwiftUI label and up to three rows of text.
-- [class CLKComplicationTemplateGraphicRectangularLargeView](clkcomplicationtemplategraphicrectangularlargeview.md)
+- [class CLKComplicationTemplateGraphicRectangularLargeView](./clkcomplicationtemplategraphicrectangularlargeview.md)
   A template for displaying a large rectangle containing header text and a SwiftUI view.
-- [class CLKComplicationTemplateGraphicRectangularFullView](clkcomplicationtemplategraphicrectangularfullview.md)
+- [class CLKComplicationTemplateGraphicRectangularFullView](./clkcomplicationtemplategraphicrectangularfullview.md)
   A template for displaying a SwiftUI view that fills the entire template.
 
 

@@ -1,7 +1,8 @@
 # content(for:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the content for the specified topic.
 
@@ -22,7 +23,7 @@ The requested content, when successful.
 
 #### Discussion
 
-> **Note**: The method throws a [`ProximityReaderDiscovery.ContentError`](proximityreaderdiscovery/contenterror.md) if it fails to get the content.
+> **Throws**: The method throws a [`ProximityReaderDiscovery.ContentError`](./contenterror.md) if it fails to get the content.
 
 Call this method to get the content definition for the specified topic. The discovery interface uses the specified identifier to determine what to display.
 
@@ -32,11 +33,12 @@ Call this method to get the content definition for the specified topic. The disc
 
 ## See Also
 
-- [ProximityReaderDiscovery.Topic](proximityreaderdiscovery/topic.md)
+### Fetching the content to display
+- [ProximityReaderDiscovery.Topic](./topic.md)
   The topics you can present to someone.
-- [ProximityReaderDiscovery.Content](proximityreaderdiscovery/content.md)
+- [ProximityReaderDiscovery.Content](./content.md)
   A type that represents content you can display on the current device.
-- [var contentList: [ProximityReaderDiscovery.Content]](proximityreaderdiscovery/contentlist.md)
+- [var contentList: [ProximityReaderDiscovery.Content]](./contentlist.md)
   The content you can present for the current device.
 
 

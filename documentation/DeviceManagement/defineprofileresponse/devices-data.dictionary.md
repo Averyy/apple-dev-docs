@@ -1,11 +1,12 @@
 # DefineProfileResponse.Devices
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DefineProfileResponse.Devices
 ```
 
@@ -15,7 +16,8 @@ object DefineProfileResponse.Devices
 
 ## See Also
 
-- [object DefineProfileResponse](defineprofileresponse.md)
+### Request and Response
+- [object DefineProfileResponse](../defineprofileresponse.md)
 
 
 ---

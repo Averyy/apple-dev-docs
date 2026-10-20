@@ -1,7 +1,8 @@
 # validationOutcome
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that indicates how the user validated the mobile document response.
 

@@ -1,7 +1,8 @@
 # GCProductCategoryXboxOne
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Xbox product category.
 
@@ -19,17 +20,22 @@ The Xbox product category.
 let GCProductCategoryXboxOne: String
 ```
 
+```c
+extern NSString * const GCProductCategoryXboxOne;
+```
+
 ## See Also
 
-- [let GCProductCategoryDualSense: String](gcproductcategorydualsense.md)
+### Game controller categories
+- [let GCProductCategoryDualSense: String](./gcproductcategorydualsense.md)
   The DualSense product category.
-- [let GCProductCategoryDualShock4: String](gcproductcategorydualshock4.md)
+- [let GCProductCategoryDualShock4: String](./gcproductcategorydualshock4.md)
   The DualShock 4 product category.
-- [let GCProductCategoryMFi: String](gcproductcategorymfi.md)
+- [let GCProductCategoryMFi: String](./gcproductcategorymfi.md)
   The MFi product category.
-- [let GCProductCategoryArcadeStick: String](gcproductcategoryarcadestick.md)
+- [let GCProductCategoryArcadeStick: String](./gcproductcategoryarcadestick.md)
   The arcade stick product category.
-- [let GCProductCategoryHID: String](gcproductcategoryhid.md)
+- [let GCProductCategoryHID: String](./gcproductcategoryhid.md)
   The category for products that support the human interface device (HID) protocol.
 
 

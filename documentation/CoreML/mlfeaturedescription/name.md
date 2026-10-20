@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this feature.
 
@@ -20,13 +21,18 @@ The name of this feature.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var type: MLFeatureType](mlfeaturedescription/type.md)
+### Inspecting a feature
+- [var type: MLFeatureType](./type.md)
   The type of this feature.
-- [enum MLFeatureType](mlfeaturetype.md)
+- [enum MLFeatureType](../mlfeaturetype.md)
   The possible types for feature values, input features, and output features.
-- [var isOptional: Bool](mlfeaturedescription/isoptional.md)
+- [var isOptional: Bool](./isoptional.md)
   A Boolean value that indicates whether this feature is optional.
 
 

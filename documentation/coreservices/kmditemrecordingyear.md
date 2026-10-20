@@ -1,7 +1,8 @@
 # kMDItemRecordingYear
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates the year the item was recorded. For example, 1964, 2003, etc. A CFNumber.
 
@@ -12,6 +13,10 @@ Indicates the year the item was recorded. For example, 1964, 2003, etc. A CFNumb
 
 ```swift
 let kMDItemRecordingYear: CFString!
+```
+
+```c
+const CFStringRef kMDItemRecordingYear;
 ```
 
 

@@ -1,7 +1,8 @@
 # hostTime(forSeconds:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts seconds to host time.
 
@@ -20,6 +21,10 @@ Converts seconds to host time.
 class func hostTime(forSeconds seconds: TimeInterval) -> UInt64
 ```
 
+```objc
++ (uint64_t) hostTimeForSeconds:(NSTimeInterval) seconds;
+```
+
 #### Return Value
 
 The host time that represents the seconds you specify.
@@ -30,11 +35,12 @@ The host time that represents the seconds you specify.
 
 ## See Also
 
-- [var hostTime: UInt64](avaudiotime/hosttime.md)
+### Manipulating host time
+- [var hostTime: UInt64](./hosttime.md)
   The host time.
-- [var isHostTimeValid: Bool](avaudiotime/ishosttimevalid.md)
+- [var isHostTimeValid: Bool](./ishosttimevalid.md)
   A Boolean value that indicates whether the host time value is valid.
-- [class func seconds(forHostTime: UInt64) -> TimeInterval](avaudiotime/seconds(forhosttime:).md)
+- [class func seconds(forHostTime: UInt64) -> TimeInterval](./seconds%28forhosttime%29.md)
   Converts host time to seconds.
 
 

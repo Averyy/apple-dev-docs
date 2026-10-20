@@ -1,7 +1,8 @@
 # polygonTriangleIndices
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The groups of triangles that make up a polygon in the detailed height data mesh, used to get the corresponding triangles for a given polygon in the generated Navigation Mesh.
 
@@ -21,9 +22,10 @@ var polygonTriangleIndices: [Int]
 
 ## See Also
 
-- [var vertices: [SIMD3<Float>]](navigationmeshresource/heightdata-swift.struct/vertices.md)
+### Accessing mesh geometry
+- [var vertices: [SIMD3<Float>]](./vertices.md)
   The vertices of the detailed height data mesh.
-- [var triangleIndices: [[Int]]](navigationmeshresource/heightdata-swift.struct/triangleindices.md)
+- [var triangleIndices: [[Int]]](./triangleindices.md)
   The triangle indices of the detailed height data mesh.
 
 

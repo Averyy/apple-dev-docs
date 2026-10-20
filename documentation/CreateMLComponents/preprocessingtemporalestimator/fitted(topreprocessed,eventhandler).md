@@ -1,17 +1,18 @@
 # fitted(toPreprocessed:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a transformer to a sequence of preprocessed features.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -30,17 +31,18 @@ The fitted transformer.
 
 ## See Also
 
-- [func preprocessed<InputSequence>(from: InputSequence, eventHandler: EventHandler?) async throws -> [PreprocessedFeatureSequence<Preprocessor.Output>]](preprocessingtemporalestimator/preprocessed(from:eventhandler:).md)
+### Preprocesing and fitting
+- [func preprocessed<InputSequence>(from: InputSequence, eventHandler: EventHandler?) async throws -> [PreprocessedFeatureSequence<Preprocessor.Output>]](./preprocessed%28from,eventhandler%29.md)
   Preprocesses a sequence of examples.
-- [func fitted<InputSequence>(to: InputSequence, eventHandler: EventHandler?) async throws -> PreprocessingTemporalEstimator<Preprocessor, Estimator>.Transformer](preprocessingtemporalestimator/fitted(to:eventhandler:).md)
+- [func fitted<InputSequence>(to: InputSequence, eventHandler: EventHandler?) async throws -> PreprocessingTemporalEstimator<Preprocessor, Estimator>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [PreprocessingTemporalEstimator.Input](preprocessingtemporalestimator/input.md)
+- [PreprocessingTemporalEstimator.Input](./input.md)
   The input type.
-- [PreprocessingTemporalEstimator.Intermediate](preprocessingtemporalestimator/intermediate.md)
+- [PreprocessingTemporalEstimator.Intermediate](./intermediate.md)
   The intermediate type.
-- [PreprocessingTemporalEstimator.Output](preprocessingtemporalestimator/output.md)
+- [PreprocessingTemporalEstimator.Output](./output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

@@ -1,7 +1,8 @@
 # Curators.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a curator resource.
 
@@ -10,7 +11,7 @@ The attributes for a curator resource.
 
 ## Declaration
 
-```swift
+```
 object Curators.Attributes
 ```
 
@@ -23,7 +24,8 @@ object Curators.Attributes
 
 ## See Also
 
-- [object Curators.Relationships](curators/relationships-data.dictionary.md)
+### Related Objects
+- [object Curators.Relationships](./relationships-data.dictionary.md)
   The relationships for a curator resource.
 
 

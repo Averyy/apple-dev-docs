@@ -1,7 +1,8 @@
 # init(length:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a mutable data object containing a given number of zeroed bytes.
 
@@ -20,6 +21,10 @@ Initializes and returns a mutable data object containing a given number of zeroe
 init?(length: Int)
 ```
 
+```objc
+- (instancetype) initWithLength:(NSUInteger) length;
+```
+
 #### Return Value
 
 An initialized `NSMutableData` object containing `length` zeroed bytes. The returned object has the same memory alignment guarantees as `malloc(_:)`.
@@ -30,7 +35,8 @@ An initialized `NSMutableData` object containing `length` zeroed bytes. The retu
 
 ## See Also
 
-- [init?(capacity: Int)](nsmutabledata/init(capacity:).md)
+### Creating Mutable Data
+- [init?(capacity: Int)](./init%28capacity%29.md)
   Returns an initialized mutable data object capable of holding the specified number of bytes.
 
 

@@ -1,7 +1,8 @@
 # MLTextClassifier.FeatureExtractorType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The text feature extractor type.
 
@@ -20,47 +21,48 @@ enum FeatureExtractorType
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../creating-a-text-classifier-model.md)
 
 ## Topics
 
 ### Selecting a feature extractor type
-- [MLTextClassifier.FeatureExtractorType.customEmbedding(_:)](mltextclassifier/featureextractortype/customembedding(_:).md)
+- [MLTextClassifier.FeatureExtractorType.customEmbedding(_:)](./featureextractortype/customembedding%28_%29.md)
   A feature extractor that uses a custom embedding contained in a CoreML model file.
-- [MLTextClassifier.FeatureExtractorType.staticEmbedding](mltextclassifier/featureextractortype/staticembedding.md)
+- [MLTextClassifier.FeatureExtractorType.staticEmbedding](./featureextractortype/staticembedding.md)
   A feature extractor that uses the standard, built-in word embeddings.
-- [MLTextClassifier.FeatureExtractorType.bertEmbedding](mltextclassifier/featureextractortype/bertembedding.md)
+- [MLTextClassifier.FeatureExtractorType.bertEmbedding](./featureextractortype/bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLTextClassifier.FeatureExtractorType.elmoEmbedding](mltextclassifier/featureextractortype/elmoembedding.md)
+- [MLTextClassifier.FeatureExtractorType.elmoEmbedding](./featureextractortype/elmoembedding.md)
   A feature extractor that provides ELMo contextual word embeddings.
-- [MLTextClassifier.FeatureExtractorType.dynamicEmbedding](mltextclassifier/featureextractortype/dynamicembedding.md)
+- [MLTextClassifier.FeatureExtractorType.dynamicEmbedding](./featureextractortype/dynamicembedding.md)
   A feature extractor that provides embeddings for words, based on their in-context use.
 ### Describing a feature extractor type
-- [var description: String](mltextclassifier/featureextractortype/description.md)
+- [var description: String](./featureextractortype/description.md)
   A text representation of a feature extractor type.
-- [var debugDescription: String](mltextclassifier/featureextractortype/debugdescription.md)
+- [var debugDescription: String](./featureextractortype/debugdescription.md)
   A text representation of the feature extractor type that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mltextclassifier/featureextractortype/playgrounddescription.md)
+- [var playgroundDescription: Any](./featureextractortype/playgrounddescription.md)
   A description of the feature extractor type shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mltextclassifier/featureextractortype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mltextclassifier/featureextractortype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mltextclassifier/featureextractortype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./featureextractortype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./featureextractortype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./featureextractortype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelalgorithmtype.md)
+### Supporting types
+- [MLTextClassifier.ModelAlgorithmType](./modelalgorithmtype.md)
   The type of algorithm that a text classifier uses.
 
 

@@ -1,7 +1,8 @@
 # init(forBlurEffect:style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vibrancy effect with the specified blur and style values.
 
@@ -23,18 +24,19 @@ The vibrancy effect object to use in your visual effect view.
 
 #### Discussion
 
-When you create a new vibrancy effect, use the same [`UIBlurEffect`](uiblureffect.md) that you used to create the blur view. Using a different [`UIBlurEffect`](uiblureffect.md) can cause unwanted visual effect combinations.
+When you create a new vibrancy effect, use the same [`UIBlurEffect`](../uiblureffect.md) that you used to create the blur view. Using a different [`UIBlurEffect`](../uiblureffect.md) can cause unwanted visual effect combinations.
 
 ## Parameters
 
-- `blurEffect`: The [`UIBlurEffect`](uiblureffect.md) used by the blurred view the vibrancy effect is attached to.
-- `style`: The style that defines what level of vibrancy to apply to the content. For a list of possible values, see [`UIVibrancyEffectStyle`](uivibrancyeffectstyle.md).
+- `blurEffect`: The [`UIBlurEffect`](../uiblureffect.md) used by the blurred view the vibrancy effect is attached to.
+- `style`: The style that defines what level of vibrancy to apply to the content. For a list of possible values, see [`UIVibrancyEffectStyle`](../uivibrancyeffectstyle.md).
 
 ## See Also
 
-- [init(blurEffect: UIBlurEffect)](uivibrancyeffect/init(blureffect:).md)
+### Creating a vibrancy effect
+- [init(blurEffect: UIBlurEffect)](./init%28blureffect%29.md)
   Creates a vibrancy effect for a specific blur effect.
-- [enum UIVibrancyEffectStyle](uivibrancyeffectstyle.md)
+- [enum UIVibrancyEffectStyle](../uivibrancyeffectstyle.md)
   Constants for the vibrancy styles.
 
 

@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the `Rotatable3DFloat` entity rotated by the specified rotation.
 
@@ -19,6 +20,8 @@ Returns the `Rotatable3DFloat` entity rotated by the specified rotation.
 ```swift
 static func * (lhs: Self.Rotation, rhs: Self) -> Self
 ```
+
+Available when `Scalar` is `Float`.
 
 ## Parameters
 

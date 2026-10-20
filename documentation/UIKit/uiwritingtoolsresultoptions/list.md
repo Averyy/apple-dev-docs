@@ -1,7 +1,8 @@
 # list
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to allow list-style formatting in the returned text.
 
@@ -17,13 +18,18 @@ An option to allow list-style formatting in the returned text.
 static var list: UIWritingToolsResultOptions { get }
 ```
 
+```c
+UIWritingToolsResultList
+```
+
 ## See Also
 
-- [static var plainText: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/plaintext.md)
+### Getting the output options
+- [static var plainText: UIWritingToolsResultOptions](./plaintext.md)
   An option to allow only plain text without any attributes in the returned text.
-- [static var richText: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/richtext.md)
+- [static var richText: UIWritingToolsResultOptions](./richtext.md)
   An option to include style attributes consistent with the RTF format in the returned text.
-- [static var table: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/table.md)
+- [static var table: UIWritingToolsResultOptions](./table.md)
   An option to allow tabular layout attributes in the returned text.
 
 

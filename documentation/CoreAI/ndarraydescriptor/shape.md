@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of each dimension of the array.
 
@@ -20,17 +21,18 @@ var shape: [Int] { get }
 
 #### Discussion
 
-The shape contains [`rank`](ndarraydescriptor/rank.md) elements. A value of `-1` in any dimension indicates a dynamic size.
+The shape contains [`rank`](./rank.md) elements. A value of `-1` in any dimension indicates a dynamic size.
 
 ## See Also
 
-- [var scalarType: NDArray.ScalarType](ndarraydescriptor/scalartype.md)
+### Inspecting descriptor properties
+- [var scalarType: NDArray.ScalarType](./scalartype.md)
   The scalar type of the array.
-- [var rank: Int](ndarraydescriptor/rank.md)
+- [var rank: Int](./rank.md)
   The number of dimensions in the array.
-- [var hasDynamicShape: Bool](ndarraydescriptor/hasdynamicshape.md)
+- [var hasDynamicShape: Bool](./hasdynamicshape.md)
   A Boolean value that indicates whether the shape has any dynamic dimensions.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarraydescriptor/interleavelayout.md)
+- [var interleaveLayout: NDArray.InterleaveLayout?](./interleavelayout.md)
   Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 
 

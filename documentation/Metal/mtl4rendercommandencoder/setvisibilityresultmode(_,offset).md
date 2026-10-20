@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures a visibility test for Metal to run, and the destination for any results it generates.
@@ -20,14 +21,18 @@ Configures a visibility test for Metal to run, and the destination for any resul
 func setVisibilityResultMode(_ mode: MTLVisibilityResultMode, offset: Int)
 ```
 
+```objc
+- (void) setVisibilityResultMode:(MTLVisibilityResultMode) mode offset:(NSUInteger) offset;
+```
+
 #### Discussion
 
 You use the `mode` parameter to enable or disable the visibility test, and determine if it produces a boolean response for passing fragments, or if it counts the number of fragments.
 
 ## Parameters
 
-- `mode`: A [`MTLVisibilityResultMode`](mtlvisibilityresultmode.md) that configures which visibility test results the render pass saves to a buffer, or disables visibility testing.
-- `offset`: A location, in bytes, relative to the start of [`visibilityResultBuffer`](mtl4renderpassdescriptor/visibilityresultbuffer.md) The GPU stores the result of a visibility test at `offset`, which needs to be a multiple of `8`.
+- `mode`: A [`MTLVisibilityResultMode`](../mtlvisibilityresultmode.md) that configures which visibility test results the render pass saves to a buffer, or disables visibility testing.
+- `offset`: A location, in bytes, relative to the start of [`visibilityResultBuffer`](../mtl4renderpassdescriptor/visibilityresultbuffer.md) The GPU stores the result of a visibility test at `offset`, which needs to be a multiple of `8`.
 
 
 ---

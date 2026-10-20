@@ -1,7 +1,8 @@
 # NLDistanceType.cosine
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A method of calculating distance by using cosine similarity.
 
@@ -18,6 +19,10 @@ A method of calculating distance by using cosine similarity.
 
 ```swift
 case cosine
+```
+
+```c
+NLDistanceTypeCosine
 ```
 
 #### Discussion

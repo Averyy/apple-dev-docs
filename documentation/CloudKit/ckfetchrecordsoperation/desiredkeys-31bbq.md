@@ -1,7 +1,8 @@
 # desiredKeys
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields of the records to fetch.
 
@@ -11,7 +12,7 @@ The fields of the records to fetch.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -31,7 +32,8 @@ If you intend to specify a value other than `nil`, do so before you execute the 
 
 ## See Also
 
-- [var recordIDs: [CKRecord.ID]?](ckfetchrecordsoperation/recordids.md)
+### Configuring a Record Fetch Operation
+- [var recordIDs: [CKRecord.ID]?](./recordids.md)
   The record IDs of the records to fetch.
 
 

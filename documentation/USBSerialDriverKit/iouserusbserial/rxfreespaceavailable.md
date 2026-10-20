@@ -1,7 +1,8 @@
 # RxFreeSpaceAvailable
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your driver that buffer space is available for your device’s data.
 
@@ -10,7 +11,7 @@ Notifies your driver that buffer space is available for your device’s data.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void RxFreeSpaceAvailable();
 ```
 
@@ -20,11 +21,12 @@ The default implementation of this method initiates an asynchronous operation to
 
 ## See Also
 
-- [handleRxPacket](iouserusbserial/handlerxpacket.md)
+### Transmitting and Receiving Data
+- [handleRxPacket](./handlerxpacket.md)
   Processes the data received from the USB device.
-- [TxDataAvailable](iouserusbserial/txdataavailable.md)
+- [TxDataAvailable](./txdataavailable.md)
   Notifies your driver that the system has data for you to transmit to the device.
-- [handleInterruptPacket](iouserusbserial/handleinterruptpacket.md)
+- [handleInterruptPacket](./handleinterruptpacket.md)
   Processes an interrupt packet that originated from the device.
 
 

@@ -1,7 +1,8 @@
 # ValidationCategory.Value
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Supported Validation categories for signatures
 
@@ -23,39 +24,39 @@ struct Value
 ## Topics
 
 ### Initializers
-- [init?(rawValue: Int64)](validationcategory/value/init(rawvalue:).md)
+- [init?(rawValue: Int64)](./value/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [let rawValue: Int64](validationcategory/value/rawvalue.md)
+- [let rawValue: Int64](./value/rawvalue.md)
   The corresponding value of the raw type.
 ### Type Properties
-- [static let appStore: ValidationCategory.Value](validationcategory/value/appstore.md)
+- [static let appStore: ValidationCategory.Value](./value/appstore.md)
   Indicates that the code is signed by Apple’s App Store
-- [static let developerID: ValidationCategory.Value](validationcategory/value/developerid.md)
+- [static let developerID: ValidationCategory.Value](./value/developerid.md)
   Indicates that the code is signed by an Apple issued Developer ID certificate.
-- [static let development: ValidationCategory.Value](validationcategory/value/development.md)
+- [static let development: ValidationCategory.Value](./value/development.md)
   Indicates that the code is signed by an Apple issued development certificate.
-- [static let enterprise: ValidationCategory.Value](validationcategory/value/enterprise.md)
+- [static let enterprise: ValidationCategory.Value](./value/enterprise.md)
   Indicates that the code is signed by an Apple issued distribution certificate and allowed to run via Provisioning profile.
-- [static let none: ValidationCategory.Value](validationcategory/value/none.md)
+- [static let none: ValidationCategory.Value](./value/none.md)
   Indicates that the code is either adhoc signed or signed by an un-recognized certificate chain.
-- [static let platform: ValidationCategory.Value](validationcategory/value/platform.md)
+- [static let platform: ValidationCategory.Value](./value/platform.md)
   Indicates that the code is signed by Apple or allowed by a loaded trustcache.
-- [static let testflight: ValidationCategory.Value](validationcategory/value/testflight.md)
+- [static let testflight: ValidationCategory.Value](./value/testflight.md)
   Indicates that the code is signed by Apple’s TestFlight certificate
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

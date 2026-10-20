@@ -1,14 +1,15 @@
 # kIOHIDQueueOptionsTypeNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOHIDQueueOptionsTypeNone = 0x00
 ```
 

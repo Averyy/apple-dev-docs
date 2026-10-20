@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity for which ownership is changed.
 
@@ -11,7 +12,7 @@ The entity for which ownership is changed.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let entity: Entity
 
 ## See Also
 
-- [let newOwner: (any SynchronizationPeerID)?](synchronizationevents/ownershipchanged/newowner.md)
+### Getting the involved parties
+- [let newOwner: (any SynchronizationPeerID)?](./newowner.md)
   The new owner of the entity.
 
 

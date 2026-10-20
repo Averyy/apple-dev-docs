@@ -1,7 +1,8 @@
 # readAttributeOnOff(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOnOff(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOnOff() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeOnOffWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

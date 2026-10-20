@@ -1,15 +1,16 @@
 # kAudioCodecOutputPrecedenceBitRate
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioCodecOutputPrecedenceBitRate: UInt32 { get }
 ```
 
+```c
+kAudioCodecOutputPrecedenceBitRate
+```
+
 ## See Also
 
-- [var kAudioCodecOutputPrecedenceNone: UInt32](kaudiocodecoutputprecedencenone.md)
-- [var kAudioCodecOutputPrecedenceSampleRate: UInt32](kaudiocodecoutputprecedencesamplerate.md)
+### Constants
+- [var kAudioCodecOutputPrecedenceNone: UInt32](./kaudiocodecoutputprecedencenone.md)
+- [var kAudioCodecOutputPrecedenceSampleRate: UInt32](./kaudiocodecoutputprecedencesamplerate.md)
 
 
 ---

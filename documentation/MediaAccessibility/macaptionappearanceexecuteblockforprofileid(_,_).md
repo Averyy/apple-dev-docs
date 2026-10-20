@@ -1,7 +1,8 @@
 # MACaptionAppearanceExecuteBlockForProfileID(_:_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 func MACaptionAppearanceExecuteBlockForProfileID(_ profileID: CFString, _ aBlock: @escaping () -> Void)
 ```
 
+```c
+extern void MACaptionAppearanceExecuteBlockForProfileID(CFStringRef profileID, void (^aBlock)());
+```
+
 #### Discussion
 
 Executes a block of code as if the provided profileID was active. This is used in cases such as a need to get the fonts and colors of a profileID without changing the currently selected profileID.
@@ -28,10 +33,11 @@ Executes a block of code as if the provided profileID was active. This is used i
 
 ## See Also
 
-- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](macaptionappearancecopyprofileids().md)
-- [func MACaptionAppearanceSetActiveProfileID(CFString)](macaptionappearancesetactiveprofileid(_:).md)
-- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](macaptionappearancecopyactiveprofileid().md)
-- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](macaptionappearancecopyprofilename(_:).md)
+### Profile settings
+- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](./macaptionappearancecopyprofileids%28%29.md)
+- [func MACaptionAppearanceSetActiveProfileID(CFString)](./macaptionappearancesetactiveprofileid%28_%29.md)
+- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](./macaptionappearancecopyactiveprofileid%28%29.md)
+- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](./macaptionappearancecopyprofilename%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:priority:content:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object that defines and positions the content of an expanded Live Activity in the Dynamic Island.
 
@@ -23,16 +24,17 @@ init(_ position: DynamicIslandExpandedRegionPosition, priority: Double = 0, @Vie
 
 ## See Also
 
-- [struct DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition.md)
+### Creating the expanded presentation
+- [struct DynamicIslandExpandedRegionPosition](../dynamicislandexpandedregionposition.md)
   View positions of an expanded Live Activity that appears in the Dynamic Island.
 - [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
-](../swiftui/view/dynamicisland(verticalplacement:).md)
+](../../SwiftUI/view/dynamicisland%28verticalplacement%29.md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedRegionVerticalPlacement](dynamicislandexpandedregionverticalplacement.md)
+- [struct DynamicIslandExpandedRegionVerticalPlacement](../dynamicislandexpandedregionverticalplacement.md)
   Vertical view positions of an expanded Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedContent](dynamicislandexpandedcontent.md)
+- [struct DynamicIslandExpandedContent](../dynamicislandexpandedcontent.md)
   A view that describes the expanded presentation of a Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedContentBuilder](dynamicislandexpandedcontentbuilder.md)
+- [struct DynamicIslandExpandedContentBuilder](../dynamicislandexpandedcontentbuilder.md)
   A result builder that constructs the content of an expanded Live Activity in the Dynamic Island.
 
 

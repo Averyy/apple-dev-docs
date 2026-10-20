@@ -1,7 +1,8 @@
 # iso8601Components
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a regex component to match an ISO 8601 date and time, such as “2015-11-14’T’15:05:03’Z’”, and capture the string as a `DateComponents` using the time zone as specified in the string.
 
@@ -19,6 +20,8 @@ Creates a regex component to match an ISO 8601 date and time, such as “2015-11
 ```swift
 static var iso8601Components: DateComponents.ISO8601FormatStyle { get }
 ```
+
+Available when `Self` is `DateComponents.ISO8601FormatStyle`.
 
 
 ---

@@ -1,7 +1,8 @@
 # textureMap
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture map for a view.
 
@@ -15,13 +16,18 @@ The texture map for a view.
 var textureMap: LayerRenderer.Drawable.View.TextureMap { get }
 ```
 
+```c
+cp_view_texture_map_tcp_view_get_view_texture_map(cp_view_t view);
+```
+
 #### Discussion
 
 Use the texture map to fetch additional information you need to draw your content. For example, use it to fetch the rectangle that defines the view’s content area.
 
 ## See Also
 
-- [LayerRenderer.Drawable.View.TextureMap](layerrenderer/drawable/view/texturemap-swift.struct.md)
+### Getting the view’s texture map
+- [LayerRenderer.Drawable.View.TextureMap](./texturemap-swift.struct.md)
   A type that provides details about the textures associated with a view.
 
 

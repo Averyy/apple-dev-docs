@@ -1,7 +1,8 @@
 # allocSize
 
 **Framework**: IOSurface  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.0+
@@ -17,23 +18,28 @@
 static let allocSize: IOSurfacePropertyKey
 ```
 
+```c
+extern IOSurfacePropertyKey IOSurfacePropertyKeyAllocSize;
+```
+
 ## See Also
 
-- [static let allocSizeKey: IOSurfacePropertyKey](iosurfacepropertykey/allocsizekey.md)
-- [static let bytesPerElement: IOSurfacePropertyKey](iosurfacepropertykey/bytesperelement.md)
-- [static let bytesPerRow: IOSurfacePropertyKey](iosurfacepropertykey/bytesperrow.md)
-- [static let cacheMode: IOSurfacePropertyKey](iosurfacepropertykey/cachemode.md)
-- [static let elementHeight: IOSurfacePropertyKey](iosurfacepropertykey/elementheight.md)
-- [static let elementWidth: IOSurfacePropertyKey](iosurfacepropertykey/elementwidth.md)
-- [static let height: IOSurfacePropertyKey](iosurfacepropertykey/height.md)
-- [static let offset: IOSurfacePropertyKey](iosurfacepropertykey/offset.md)
-- [static let pixelFormat: IOSurfacePropertyKey](iosurfacepropertykey/pixelformat.md)
-- [static let pixelSizeCastingAllowed: IOSurfacePropertyKey](iosurfacepropertykey/pixelsizecastingallowed.md)
-- [static let planeBase: IOSurfacePropertyKey](iosurfacepropertykey/planebase.md)
-- [static let planeBytesPerElement: IOSurfacePropertyKey](iosurfacepropertykey/planebytesperelement.md)
-- [static let planeBytesPerRow: IOSurfacePropertyKey](iosurfacepropertykey/planebytesperrow.md)
-- [static let planeElementHeight: IOSurfacePropertyKey](iosurfacepropertykey/planeelementheight.md)
-- [static let planeElementWidth: IOSurfacePropertyKey](iosurfacepropertykey/planeelementwidth.md)
+### Type Properties
+- [static let allocSizeKey: IOSurfacePropertyKey](./allocsizekey.md)
+- [static let bytesPerElement: IOSurfacePropertyKey](./bytesperelement.md)
+- [static let bytesPerRow: IOSurfacePropertyKey](./bytesperrow.md)
+- [static let cacheMode: IOSurfacePropertyKey](./cachemode.md)
+- [static let elementHeight: IOSurfacePropertyKey](./elementheight.md)
+- [static let elementWidth: IOSurfacePropertyKey](./elementwidth.md)
+- [static let height: IOSurfacePropertyKey](./height.md)
+- [static let offset: IOSurfacePropertyKey](./offset.md)
+- [static let pixelFormat: IOSurfacePropertyKey](./pixelformat.md)
+- [static let pixelSizeCastingAllowed: IOSurfacePropertyKey](./pixelsizecastingallowed.md)
+- [static let planeBase: IOSurfacePropertyKey](./planebase.md)
+- [static let planeBytesPerElement: IOSurfacePropertyKey](./planebytesperelement.md)
+- [static let planeBytesPerRow: IOSurfacePropertyKey](./planebytesperrow.md)
+- [static let planeElementHeight: IOSurfacePropertyKey](./planeelementheight.md)
+- [static let planeElementWidth: IOSurfacePropertyKey](./planeelementwidth.md)
 
 
 ---

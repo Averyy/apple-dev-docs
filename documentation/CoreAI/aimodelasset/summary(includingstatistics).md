@@ -1,7 +1,8 @@
 # summary(includingStatistics:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the model summary.
 
@@ -28,9 +29,10 @@ The model summary, or `nil` if no program bytecode exists.
 
 ## See Also
 
-- [var metadata: AIModelAsset.Metadata](aimodelasset/metadata-swift.property.md)
+### Inspecting an asset
+- [var metadata: AIModelAsset.Metadata](./metadata-swift.property.md)
   The author-provided metadata for the model asset.
-- [let url: URL](aimodelasset/url.md)
+- [let url: URL](./url.md)
   The file URL of the model asset bundle on disk.
 
 

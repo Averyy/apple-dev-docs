@@ -1,7 +1,8 @@
 # kAXDrawerCreatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A drawer was created (that is, a drawer now extends from this window).
 
@@ -12,6 +13,10 @@ A drawer was created (that is, a drawer now extends from this window).
 
 ```swift
 var kAXDrawerCreatedNotification: String { get }
+```
+
+```c
+#define kAXDrawerCreatedNotification
 ```
 
 

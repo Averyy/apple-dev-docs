@@ -1,7 +1,8 @@
 # tempo
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tempo in beats per minute as a positive value.
 
@@ -17,6 +18,10 @@ The tempo in beats per minute as a positive value.
 
 ```swift
 var tempo: Double { get set }
+```
+
+```objc
+@property (readwrite) double tempo;
 ```
 
 

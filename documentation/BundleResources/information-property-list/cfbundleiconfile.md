@@ -1,7 +1,8 @@
 # CFBundleIconFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The file containing the bundle’s icon.
 
@@ -13,19 +14,21 @@ The file containing the bundle’s icon.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleIconFile` (Icon file)
+- **Type**: string
 
 ## See Also
 
-- [CFBundleIcons](information-property-list/cfbundleicons.md)
+### Icons
+- [CFBundleIcons](./cfbundleicons.md)
   Information about all of the icons used by the app.
-- [CFBundleIconFiles](information-property-list/cfbundleiconfiles.md)
+- [CFBundleIconFiles](./cfbundleiconfiles.md)
   The names of the bundle’s icon image files.
-- [CFBundleIconName](information-property-list/cfbundleiconname.md)
+- [CFBundleIconName](./cfbundleiconname.md)
   The name of the asset that represents the app icon.
-- [UIPrerenderedIcon](information-property-list/uiprerenderedicon.md)
+- [UIPrerenderedIcon](./uiprerenderedicon.md)
   A Boolean value that indicates whether the app’s icon contains a shine effect.
 
 

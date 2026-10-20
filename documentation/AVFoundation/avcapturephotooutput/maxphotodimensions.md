@@ -1,7 +1,8 @@
 # maxPhotoDimensions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum resolution of the requested photo.
 
@@ -18,13 +19,17 @@ The maximum resolution of the requested photo.
 var maxPhotoDimensions: CMVideoDimensions { get set }
 ```
 
+```objc
+@property (nonatomic) CMVideoDimensions maxPhotoDimensions;
+```
+
 #### Discussion
 
-Set a value for this property to request images up to the specified dimensions. Images that a photo output returns may be smaller than the dimensions, but are never be larger. Once set, you can request images with any valid maximum photo dimensions by setting [`maxPhotoDimensions`](avcapturephotosettings/maxphotodimensions.md) on [`AVCapturePhotoSettings`](avcapturephotosettings.md) on a per photo basis.
+Set a value for this property to request images up to the specified dimensions. Images that a photo output returns may be smaller than the dimensions, but are never be larger. Once set, you can request images with any valid maximum photo dimensions by setting [`maxPhotoDimensions`](../avcapturephotosettings/maxphotodimensions.md) on [`AVCapturePhotoSettings`](../avcapturephotosettings.md) on a per photo basis.
 
-The dimensions you set must match one returned by [`supportedMaxPhotoDimensions`](avcapturedevice/format/supportedmaxphotodimensions.md) for the current active format.
+The dimensions you set must match one returned by [`supportedMaxPhotoDimensions`](../avcapturedevice/format/supportedmaxphotodimensions.md) for the current active format.
 
-> 💡 **Tip**:  Changing this property may trigger a lengthy reconfiguration of the capture pipeline, so set this value before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session.
+> 💡 **Tip**:  Changing this property may trigger a lengthy reconfiguration of the capture pipeline, so set this value before calling [`startRunning()`](../avcapturesession/startrunning%28%29.md) on the capture session.
 
 
 ---

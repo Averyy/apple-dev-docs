@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Destination phone number.
 
@@ -16,9 +17,10 @@ let phoneNumber: String
 
 ## See Also
 
-- [let mediaType: RCSService.Business.ComposeRecordingAction.MediaType](rcsservice/business/composerecordingaction/mediatype-swift.property.md)
+### Accessing action properties
+- [let mediaType: RCSService.Business.ComposeRecordingAction.MediaType](./mediatype-swift.property.md)
   Type of media to record.
-- [RCSService.Business.ComposeRecordingAction.MediaType](rcsservice/business/composerecordingaction/mediatype-swift.enum.md)
+- [RCSService.Business.ComposeRecordingAction.MediaType](./mediatype-swift.enum.md)
 
 
 ---

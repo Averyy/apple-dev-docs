@@ -1,7 +1,8 @@
 # AppEventScreenshot.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app event screenshot resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app event screenshot resource.
 
 ## Declaration
 
-```swift
+```
 object AppEventScreenshot.Attributes
 ```
 
@@ -26,7 +27,8 @@ object AppEventScreenshot.Attributes
 
 ## See Also
 
-- [object AppEventScreenshot.Relationships](appeventscreenshot/relationships-data.dictionary.md)
+### Objects
+- [object AppEventScreenshot.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

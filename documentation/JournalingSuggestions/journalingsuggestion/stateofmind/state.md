@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of mind reflection as logged in the Health app.
 
@@ -20,11 +21,12 @@ This includes mood or emotion information, and its valence value shows the posit
 
 ## See Also
 
-- [var darkBackground: Gradient?](journalingsuggestion/stateofmind/darkbackground.md)
+### Getting the state of mind data
+- [var darkBackground: Gradient?](./darkbackground.md)
   The icon dark background color gradients.
-- [var lightBackground: Gradient?](journalingsuggestion/stateofmind/lightbackground.md)
+- [var lightBackground: Gradient?](./lightbackground.md)
   The icon light background color gradients.
-- [var icon: URL?](journalingsuggestion/stateofmind/icon.md)
+- [var icon: URL?](./icon.md)
   The URL to an image on disk that depicts the state of mind reflection valence image.
 
 

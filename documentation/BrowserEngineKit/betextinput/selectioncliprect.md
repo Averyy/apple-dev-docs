@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A rectangle that represents the bounds of editable elements.
@@ -18,17 +19,22 @@ A rectangle that represents the bounds of editable elements.
 var selectionClipRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect selectionClipRect;
+```
+
 #### Discussion
 
 This property ensures that the user interface doesn’t breach the specified area.
 
 ## See Also
 
-- [var textInputView: UIView](betextinput/textinputview.md)
+### Managing the text input view
+- [var textInputView: UIView](./textinputview.md)
   An affiliated view that provides a coordinate system for all geometric values in this protocol.
-- [var unscaledView: UIView](betextinput/unscaledview.md)
+- [var unscaledView: UIView](./unscaledview.md)
   A view that represents the web content that’s agnostic of zoom state.
-- [var unobscuredContentRect: CGRect](betextinput/unobscuredcontentrect.md)
+- [var unobscuredContentRect: CGRect](./unobscuredcontentrect.md)
   A rectangle that frames a user interface, such as text-selection handles, in an unobscured location.
 
 

@@ -1,7 +1,8 @@
 # ATSFontFilter
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,15 +14,21 @@
 struct ATSFontFilter
 ```
 
+```c
+typedef struct ATSFontFilter {
+    ...
+} ATSFontFilter;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsfontfilter/1464606-init.md)
-- [init(version: UInt32, filterSelector: ATSFontFilterSelector, filter: ATSFontFilter.__Unnamed_union_filter)](atsfontfilter/1463749-init.md)
+- [init()](./atsfontfilter/api-1464606-init.md)
+- [init(version: UInt32, filterSelector: ATSFontFilterSelector, filter: ATSFontFilter.__Unnamed_union_filter)](./atsfontfilter/api-1463749-init.md)
 ### Instance Properties
-- [var filter: ATSFontFilter.__Unnamed_union_filter](atsfontfilter/1459868-filter.md)
-- [var filterSelector: ATSFontFilterSelector](atsfontfilter/1462340-filterselector.md)
-- [var version: UInt32](atsfontfilter/1459521-version.md)
+- [var filter: ATSFontFilter.__Unnamed_union_filter](./atsfontfilter/api-1459868-filter.md)
+- [var filterSelector: ATSFontFilterSelector](./atsfontfilter/api-1462340-filterselector.md)
+- [var version: UInt32](./atsfontfilter/api-1459521-version.md)
 
 
 ---

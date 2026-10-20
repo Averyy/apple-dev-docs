@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Background Tasks  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a submission strategy.
 

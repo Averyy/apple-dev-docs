@@ -1,7 +1,8 @@
 # BarcodeSymbology.aztec
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -20,21 +21,22 @@ case aztec
 
 ## See Also
 
-- [BarcodeSymbology.codabar](barcodesymbology/codabar.md)
-- [BarcodeSymbology.code128](barcodesymbology/code128.md)
-- [BarcodeSymbology.code39](barcodesymbology/code39.md)
-- [BarcodeSymbology.code39Checksum](barcodesymbology/code39checksum.md)
-- [BarcodeSymbology.code39FullASCII](barcodesymbology/code39fullascii.md)
-- [BarcodeSymbology.code39FullASCIIChecksum](barcodesymbology/code39fullasciichecksum.md)
-- [BarcodeSymbology.code93](barcodesymbology/code93.md)
-- [BarcodeSymbology.code93i](barcodesymbology/code93i.md)
-- [BarcodeSymbology.dataMatrix](barcodesymbology/datamatrix.md)
-- [BarcodeSymbology.ean13](barcodesymbology/ean13.md)
-- [BarcodeSymbology.ean8](barcodesymbology/ean8.md)
-- [BarcodeSymbology.gs1DataBar](barcodesymbology/gs1databar.md)
-- [BarcodeSymbology.gs1DataBarExpanded](barcodesymbology/gs1databarexpanded.md)
-- [BarcodeSymbology.gs1DataBarLimited](barcodesymbology/gs1databarlimited.md)
-- [BarcodeSymbology.i2of5](barcodesymbology/i2of5.md)
+### Getting the symbologies
+- [BarcodeSymbology.codabar](./codabar.md)
+- [BarcodeSymbology.code128](./code128.md)
+- [BarcodeSymbology.code39](./code39.md)
+- [BarcodeSymbology.code39Checksum](./code39checksum.md)
+- [BarcodeSymbology.code39FullASCII](./code39fullascii.md)
+- [BarcodeSymbology.code39FullASCIIChecksum](./code39fullasciichecksum.md)
+- [BarcodeSymbology.code93](./code93.md)
+- [BarcodeSymbology.code93i](./code93i.md)
+- [BarcodeSymbology.dataMatrix](./datamatrix.md)
+- [BarcodeSymbology.ean13](./ean13.md)
+- [BarcodeSymbology.ean8](./ean8.md)
+- [BarcodeSymbology.gs1DataBar](./gs1databar.md)
+- [BarcodeSymbology.gs1DataBarExpanded](./gs1databarexpanded.md)
+- [BarcodeSymbology.gs1DataBarLimited](./gs1databarlimited.md)
+- [BarcodeSymbology.i2of5](./i2of5.md)
 
 
 ---

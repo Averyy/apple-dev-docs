@@ -1,7 +1,8 @@
 # CLSActivity
 
 **Framework**: ClassKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of user interaction with a context.
 
@@ -18,69 +19,74 @@ A representation of user interaction with a context.
 class CLSActivity
 ```
 
+```objc
+@interface CLSActivity : CLSObject
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](./recording-student-progress.md)
 
 #### Overview
 
-An activity represents a student’s attempt to complete the task corresponding to a [`CLSContext`](clscontext.md) instance. For example, if a context represents a quiz, the associated activity represents the student’s attempt to take the quiz. As such, an activity is always associated with a context. You never initialize an activity in isolation or store a reference to it. Rather, you ask a context to create the activity and retrieve it from the context.
+An activity represents a student’s attempt to complete the task corresponding to a [`CLSContext`](./clscontext.md) instance. For example, if a context represents a quiz, the associated activity represents the student’s attempt to take the quiz. As such, an activity is always associated with a context. You never initialize an activity in isolation or store a reference to it. Rather, you ask a context to create the activity and retrieve it from the context.
 
 ##### Starting and Stopping Activities
 
-You start the activity with a call to the [`start()`](clsactivity/start().md) method when the user begins the task, and stop it with a call to the [`stop()`](clsactivity/stop().md) method when the user finishes. You can also use the [`stop()`](clsactivity/stop().md) method to stop it temporarily if the user pauses the task, in which case you can start it again later with another call to [`start()`](clsactivity/start().md) when the user resumes. The activity keeps track of the total time spent in the running state, which you can read via the [`duration`](clsactivity/duration.md) property.
+You start the activity with a call to the [`start()`](./clsactivity/start%28%29.md) method when the user begins the task, and stop it with a call to the [`stop()`](./clsactivity/stop%28%29.md) method when the user finishes. You can also use the [`stop()`](./clsactivity/stop%28%29.md) method to stop it temporarily if the user pauses the task, in which case you can start it again later with another call to [`start()`](./clsactivity/start%28%29.md) when the user resumes. The activity keeps track of the total time spent in the running state, which you can read via the [`duration`](./clsactivity/duration.md) property.
 
 Whether you implement activity pausing depends on how the parts of your app work. For example, you might pause a game activity when the user presses the pause button to reflect that the user has stepped away from the activity, but is likely to return soon to complete the task. On the other hand, you might not provide a way to pause a quiz activity because you require that it be completed without interruption, once started. If you do pause, you can start and stop an activity as many times as you want, but when you create a new activity (representing a new attempt at a task), you can no longer access the older activity from your app.
 
 ##### Recording Progress
 
-You can also assign [`progress`](clsactivity/progress.md) to an activity. How you define progress depends on the task. For example, you can record progress through a quiz as a fraction of questions answered, or progress through a game level as a fraction of obstacles overcome.
+You can also assign [`progress`](./clsactivity/progress.md) to an activity. How you define progress depends on the task. For example, you can record progress through a quiz as a fraction of questions answered, or progress through a game level as a fraction of obstacles overcome.
 
-To record additional metrics, you attach [`CLSActivityItem`](clsactivityitem.md) instances to an activity. For example, you can add both a score and a count of hints used to a quiz activity. To feature one of these items prominently, make it the [`primaryActivityItem`](clsactivity/primaryactivityitem.md).
+To record additional metrics, you attach [`CLSActivityItem`](./clsactivityitem.md) instances to an activity. For example, you can add both a score and a count of hints used to a quiz activity. To feature one of these items prominently, make it the [`primaryActivityItem`](./clsactivity/primaryactivityitem.md).
 
 ## Topics
 
 ### Starting and stopping an activity
-- [func start()](clsactivity/start.md)
+- [func start()](./clsactivity/start%28%29.md)
   Tells an activity to start recording duration and progress for a task.
-- [func stop()](clsactivity/stop.md)
+- [func stop()](./clsactivity/stop%28%29.md)
   Tells an activity to stop or pause recording duration and progress for a task.
-- [var isStarted: Bool](clsactivity/isstarted.md)
+- [var isStarted: Bool](./clsactivity/isstarted.md)
   A Boolean that indicates whether an activity is running.
-- [var duration: TimeInterval](clsactivity/duration.md)
+- [var duration: TimeInterval](./clsactivity/duration.md)
   The cumulative time in seconds that an activity has been active.
 ### Measuring progress
-- [var progress: Double](clsactivity/progress.md)
+- [var progress: Double](./clsactivity/progress.md)
   A measure of progress through the task, given as a fraction in the range [0, 1].
-- [func addProgressRange(fromStart: Double, toEnd: Double)](clsactivity/addprogressrange(fromstart:toend:).md)
+- [func addProgressRange(fromStart: Double, toEnd: Double)](./clsactivity/addprogressrange%28fromstart,toend%29.md)
   Adds a progress range to a given activity.
 ### Managing activity items
-- [func addAdditionalActivityItem(CLSActivityItem)](clsactivity/addadditionalactivityitem(_:).md)
+- [func addAdditionalActivityItem(CLSActivityItem)](./clsactivity/addadditionalactivityitem%28_%29.md)
   Adds an activity item to an activity.
-- [var primaryActivityItem: CLSActivityItem?](clsactivity/primaryactivityitem.md)
+- [var primaryActivityItem: CLSActivityItem?](./clsactivity/primaryactivityitem.md)
   Adds an activity item to an activity and sets it as the primary activity item.
-- [var additionalActivityItems: [CLSActivityItem]](clsactivity/additionalactivityitems.md)
+- [var additionalActivityItems: [CLSActivityItem]](./clsactivity/additionalactivityitems.md)
   The list of activity items associated with an activity.
-- [func removeAllActivityItems()](clsactivity/removeallactivityitems.md)
+- [func removeAllActivityItems()](./clsactivity/removeallactivityitems%28%29.md)
   Deletes all activity items associated with the current activity.
 
 ## Relationships
 
 ### Inherits From
-- [CLSObject](clsobject.md)
+- [CLSObject](./clsobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Recording student progress](recording-student-progress.md)
+### Activities
+- [Recording student progress](./recording-student-progress.md)
   Create an activity to record student progress through an assignment.
 
 

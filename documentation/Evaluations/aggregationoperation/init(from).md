@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Decodes an operation from a keyed container, reconstructing the metric from its name.
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Synchronization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a value of this mutex with the given initial state.
 

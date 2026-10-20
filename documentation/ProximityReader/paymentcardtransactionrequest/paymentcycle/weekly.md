@@ -1,7 +1,8 @@
 # PaymentCardTransactionRequest.PaymentCycle.weekly
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Payment is weekly.
 

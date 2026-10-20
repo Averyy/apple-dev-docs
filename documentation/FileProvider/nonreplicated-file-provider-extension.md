@@ -1,6 +1,7 @@
 # Nonreplicated File Provider extension
 
-**Framework**: File Provider
+**Framework**: File Provider  
+**Role**: API Collection
 
 Build a File Provider extension that hosts and manages the user’s local files.
 
@@ -14,25 +15,26 @@ A nonreplicated File Provider extension must perform all of the following tasks:
 - Enumerate the stored documents and folders.
 - Execute actions—such as importing, moving, renaming, or deleting items—on the stored documents and folders.
 
-Your File Provider extension can add custom actions to the file browser’s context menu using the [`File Provider UI`](https://developer.apple.com/documentation/fileproviderui) framework. You can also define custom services to communicate with the host app using [`NSFileProviderService`](https://developer.apple.com/documentation/foundation/nsfileproviderservice). Use these interfaces to add features that aren’t provided by the base API.
+Your File Provider extension can add custom actions to the file browser’s context menu using the [File Provider UI](../FileProviderUI/FileProviderUI.md) framework. You can also define custom services to communicate with the host app using [`NSFileProviderService`](../Foundation/nsfileproviderservice.md). Use these interfaces to add features that aren’t provided by the base API.
 
-##### Support Drag and Drop
+##### Support drag and drop
 
-If your application acts as a drag source for remote documents, override your [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) subclass’s [`registerFileRepresentation(forTypeIdentifier:fileOptions:visibility:loadHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/registerfilerepresentation(fortypeidentifier:fileoptions:visibility:loadhandler:)) method, and return the URL for the dragged item. This URL is the value returned by your extension’s [`urlForItem(withPersistentIdentifier:)`](nsfileproviderextension/urlforitem(withpersistentidentifier:).md) method. The URL may refer to a local file or, if you don’t have a local copy, to the file’s placeholder.
+If your application acts as a drag source for remote documents, override your [`NSItemProvider`](../Foundation/nsitemprovider.md) subclass’s [`registerFileRepresentation(forTypeIdentifier:fileOptions:visibility:loadHandler:)`](../Foundation/nsitemprovider/registerfilerepresentation%28fortypeidentifier,fileoptions,visibility,loadhandler%29.md) method, and return the URL for the dragged item. This URL is the value returned by your extension’s [`urlForItem(withPersistentIdentifier:)`](./nsfileproviderextension/urlforitem%28withpersistentidentifier%29.md) method. The URL may refer to a local file or, if you don’t have a local copy, to the file’s placeholder.
 
-If the URL points to a placeholder, the system calls your File Provider extension’s [`startProvidingItem(at:completionHandler:)`](nsfileproviderextension/startprovidingitem(at:completionhandler:).md) method, giving you the opportunity to download the file.
+If the URL points to a placeholder, the system calls your File Provider extension’s [`startProvidingItem(at:completionHandler:)`](./nsfileproviderextension/startprovidingitem%28at,completionhandler%29.md) method, giving you the opportunity to download the file.
 
 ## Topics
 
 ### Nonreplicated extension
-- [class NSFileProviderExtension](nsfileproviderextension.md)
+- [class NSFileProviderExtension](./nsfileproviderextension.md)
   The principal class for the nonreplicated File Provider extension.
-- [Content and Change Tracking](content-and-change-tracking.md)
+- [Content and Change Tracking](./content-and-change-tracking.md)
   Create enumerators to specify your file provider’s content, and track changes to that content.
 
 ## See Also
 
-- [Replicated File Provider extension](replicated-file-provider-extension.md)
+### Extension types
+- [Replicated File Provider extension](./replicated-file-provider-extension.md)
   Build a File Provider extension that syncs the local copies of your files with your remote storage.
 
 

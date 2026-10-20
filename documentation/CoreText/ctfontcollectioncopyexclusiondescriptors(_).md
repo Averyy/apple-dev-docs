@@ -1,7 +1,8 @@
 # CTFontCollectionCopyExclusionDescriptors(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the array of descriptors to exclude from the match.
 
@@ -14,6 +15,10 @@ Retrieves the array of descriptors to exclude from the match.
 func CTFontCollectionCopyExclusionDescriptors(_ collection: CTFontCollection) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCollectionCopyExclusionDescriptors(CTFontCollectionRef collection);
+```
+
 #### Return Value
 
 A retained reference to the array of descriptors for querying (matching) the system font database.
@@ -24,11 +29,12 @@ A retained reference to the array of descriptors for querying (matching) the sys
 
 ## See Also
 
-- [func CTFontCollectionCopyQueryDescriptors(CTFontCollection) -> CFArray?](ctfontcollectioncopyquerydescriptors(_:).md)
+### Excluding and Including Font Descriptors
+- [func CTFontCollectionCopyQueryDescriptors(CTFontCollection) -> CFArray?](./ctfontcollectioncopyquerydescriptors%28_%29.md)
   Retrieves the array of descriptors for font matching.
-- [func CTFontCollectionSetExclusionDescriptors(CTMutableFontCollection, CFArray?)](ctfontcollectionsetexclusiondescriptors(_:_:).md)
+- [func CTFontCollectionSetExclusionDescriptors(CTMutableFontCollection, CFArray?)](./ctfontcollectionsetexclusiondescriptors%28_,_%29.md)
   Replaces the array of descriptors to exclude from the match.
-- [func CTFontCollectionSetQueryDescriptors(CTMutableFontCollection, CFArray?)](ctfontcollectionsetquerydescriptors(_:_:).md)
+- [func CTFontCollectionSetQueryDescriptors(CTMutableFontCollection, CFArray?)](./ctfontcollectionsetquerydescriptors%28_,_%29.md)
   Replaces the array of descriptors for font matching.
 
 

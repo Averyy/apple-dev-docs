@@ -1,14 +1,15 @@
 # cacheDescriptorGated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn cacheDescriptorGated(const StandardUSB::Descriptor *descriptor, uint16_t length, uint8_t index, uint16_t languageID);
 ```
 

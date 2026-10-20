@@ -1,7 +1,8 @@
 # inputModes
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active keyboard languages in the session.
 
@@ -16,23 +17,28 @@ The active keyboard languages in the session.
 var inputModes: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * inputModes;
+```
+
 #### Discussion
 
 An example array entry is `en_US`. A user may switch between multiple languages in the same session.
 
 ## See Also
 
-- [var duration: TimeInterval](srkeyboardmetrics/duration.md)
+### Inspecting Keyboard Configuration and Sessions
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var keyboardIdentifier: String](srkeyboardmetrics/keyboardidentifier.md)
+- [var keyboardIdentifier: String](./keyboardidentifier.md)
   The identifier of the keyboard in the keyboard list.
-- [var version: String](srkeyboardmetrics/version.md)
+- [var version: String](./version.md)
   The version of keyboard metrics.
-- [var width: Measurement<UnitLength>](srkeyboardmetrics/width.md)
+- [var width: Measurement<UnitLength>](./width.md)
   The width, in millimeters, of the keyboard in the report.
-- [var height: Measurement<UnitLength>](srkeyboardmetrics/height.md)
+- [var height: Measurement<UnitLength>](./height.md)
   The height, in millimeters, of the keyboard in the report.
-- [var sessionIdentifiers: [String]](srkeyboardmetrics/sessionidentifiers.md)
+- [var sessionIdentifiers: [String]](./sessionidentifiers.md)
   The identifiers for the keyboard sessions that report metrics to the sample.
 
 

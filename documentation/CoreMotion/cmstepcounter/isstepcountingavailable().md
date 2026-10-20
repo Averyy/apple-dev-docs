@@ -1,15 +1,18 @@
 # isStepCountingAvailable()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean indicating whether step-counting support is available on the current device.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use CMPedometer instead
 
 ## Declaration
 
@@ -17,9 +20,13 @@ Returns a Boolean indicating whether step-counting support is available on the c
 class func isStepCountingAvailable() -> Bool
 ```
 
+```objc
++ (BOOL) isStepCountingAvailable;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if step-counting support is available or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if step-counting support is available or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 

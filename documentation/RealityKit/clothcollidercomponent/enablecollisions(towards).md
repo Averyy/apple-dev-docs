@@ -1,7 +1,8 @@
 # enableCollisions(towards:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables one-way collisions towards the selected groups.
 
@@ -26,9 +27,10 @@ This adds the selected groups to the collider’s mask, causing body particles i
 
 ## See Also
 
-- [var isCollisionResponseEnabled: Bool](clothcollidercomponent/iscollisionresponseenabled.md)
+### Managing collision response
+- [var isCollisionResponseEnabled: Bool](./iscollisionresponseenabled.md)
   Indicates whether this collider pushes away intersecting cloth body particles.
-- [func disableCollisions(towards: ClothCollisionGroupSet)](clothcollidercomponent/disablecollisions(towards:).md)
+- [func disableCollisions(towards: ClothCollisionGroupSet)](./disablecollisions%28towards%29.md)
   Disables one-way collisions towards the selected groups.
 
 

@@ -1,7 +1,8 @@
 # SecPreferencesDomain.common
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the preferences are common to everyone.
 
@@ -13,6 +14,10 @@ Indicates the preferences are common to everyone.
 
 ```swift
 case common
+```
+
+```c
+kSecPreferencesDomainCommon
 ```
 
 

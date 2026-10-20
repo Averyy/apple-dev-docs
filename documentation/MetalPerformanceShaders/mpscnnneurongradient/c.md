@@ -1,7 +1,8 @@
 # c
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var c: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float c;
 ```
 
 

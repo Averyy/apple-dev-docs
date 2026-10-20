@@ -1,7 +1,8 @@
 # AppSchema.MailEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the mail domain.
 
@@ -21,35 +22,36 @@ protocol MailEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var account: some AppSchemaEntity](appschema/mailentity/account.md)
+- [var account: some AppSchemaEntity](./mailentity/account.md)
   An entity schema for an account.
-- [var draft: some AppSchemaEntity](appschema/mailentity/draft.md)
+- [var draft: some AppSchemaEntity](./mailentity/draft.md)
   An entity schema for a draft.
-- [var mailbox: some AppSchemaEntity](appschema/mailentity/mailbox.md)
+- [var mailbox: some AppSchemaEntity](./mailentity/mailbox.md)
   An entity schema for a mailbox.
-- [var message: some AppSchemaEntity](appschema/mailentity/message.md)
+- [var message: some AppSchemaEntity](./mailentity/message.md)
   An entity schema for a message.
-- [var thread: some AppSchemaEntity](appschema/mailentity/thread.md)
+- [var thread: some AppSchemaEntity](./mailentity/thread.md)
   An entity schema for a thread.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var account: some AppSchemaEntity](appschema/mailentity/account.md)
+### Content and parameter types
+- [var account: some AppSchemaEntity](./mailentity/account.md)
   An entity schema for an account.
-- [var draft: some AppSchemaEntity](appschema/mailentity/draft.md)
+- [var draft: some AppSchemaEntity](./mailentity/draft.md)
   An entity schema for a draft.
-- [var mailbox: some AppSchemaEntity](appschema/mailentity/mailbox.md)
+- [var mailbox: some AppSchemaEntity](./mailentity/mailbox.md)
   An entity schema for a mailbox.
-- [var message: some AppSchemaEntity](appschema/mailentity/message.md)
+- [var message: some AppSchemaEntity](./mailentity/message.md)
   An entity schema for a message.
-- [var thread: some AppSchemaEntity](appschema/mailentity/thread.md)
+- [var thread: some AppSchemaEntity](./mailentity/thread.md)
   An entity schema for a thread.
 
 

@@ -1,7 +1,8 @@
 # CMSyncMightDrift(_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether it’s possible for one timebase or clock to drift relative to the other.
 
@@ -20,13 +21,18 @@ Returns a Boolean value that indicates whether it’s possible for one timebase 
 func CMSyncMightDrift(_ clockOrTimebase1: CMClockOrTimebase, _ clockOrTimebase2: CMClockOrTimebase) -> Bool
 ```
 
+```c
+extern Boolean CMSyncMightDrift(CMClockOrTimebaseRef clockOrTimebase1, CMClockOrTimebaseRef clockOrTimebase2);
+```
+
 #### Discussion
 
 A timebase can drift relative to another if they are ultimately mastered by clocks that can drift relative to each other.
 
 ## See Also
 
-- [func CMClockMightDrift(CMClock, otherClock: CMClock) -> Bool](cmclockmightdrift(_:otherclock:).md)
+### Determining Clock Drift
+- [func CMClockMightDrift(CMClock, otherClock: CMClock) -> Bool](./cmclockmightdrift%28_,otherclock%29.md)
   Returns a Boolean value that indicates whether it’s possible for two clocks to drift relative to each other.
 
 

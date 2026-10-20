@@ -1,6 +1,8 @@
 # Building an Audio Server Plug-in and Driver Extension
 
-**Framework**: Core Audio
+**Framework**: Core Audio  
+**Role**: Sample Code  
+**Download**: [BuildingAnAudioServerPlugInAndDriverExtension.zip](https://docs-assets.developer.apple.com/published/9b27b11a4824/BuildingAnAudioServerPlugInAndDriverExtension.zip)
 
 Create a plug-in and driver extension to support an audio device in macOS.
 
@@ -26,11 +28,11 @@ To deploy the sample driver, you need to create an explicit App ID and provision
 - com.apple.developer.driverkit
 - com.apple.developer.driverkit.transport.usb
 
-To learn how to perform this configuration, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development).
+To learn how to perform this configuration, see [Requesting Entitlements for DriverKit Development](../DriverKit/requesting-entitlements-for-driverkit-development.md).
 
 To bypass this configuration and use ad hoc signing to test the driver in your local development environment, perform the following steps:
 
-1. Disable System Integrity Protection (SIP) on your system so it recognizes ad hoc-signed DriverKit extensions. For more information, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
+1. Disable System Integrity Protection (SIP) on your system so it recognizes ad hoc-signed DriverKit extensions. For more information, see [Disabling and Enabling System Integrity Protection](../Security/disabling-and-enabling-system-integrity-protection.md).
 2. Configure the `SimpleAudioDriver`  target to use local signing. Select the target, and then select its Build Settings tab. Find the Code Signing Identity build setting and select Sign to Run Locally.
 
 Use the included installer script to install the driver on your system. Navigate to the root of the sample project and run the following command:
@@ -43,9 +45,10 @@ To uninstall the driver, run the `uninstall.sh` script and reboot your computer.
 
 ## See Also
 
-- [Creating an Audio Server Driver Plug-in](creating-an-audio-server-driver-plug-in.md)
+### Drivers
+- [Creating an Audio Server Driver Plug-in](./creating-an-audio-server-driver-plug-in.md)
   Build a virtual audio device by creating a custom driver plug-in.
-- [Capturing system audio with Core Audio taps](capturing-system-audio-with-core-audio-taps.md)
+- [Capturing system audio with Core Audio taps](./capturing-system-audio-with-core-audio-taps.md)
   Use a Core Audio tap to capture outgoing audio from a process or group of processes.
 
 

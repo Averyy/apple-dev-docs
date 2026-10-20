@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kICAttrLockedBit: Int](kicattrlockedbit.md)
-- [var kICAttrVolatileBit: Int](kicattrvolatilebit.md)
+- [var kICAttrLockedBit: Int](../kicattrlockedbit.md)
+- [var kICAttrVolatileBit: Int](../kicattrvolatilebit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # shader(_:bounds:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shading instance that fills with the results of querying a shader for each pixel.
 

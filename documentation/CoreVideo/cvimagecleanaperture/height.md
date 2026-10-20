@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Height of the clean aperture.
 

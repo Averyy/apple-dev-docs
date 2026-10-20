@@ -1,7 +1,8 @@
 # ConversationAction.State.running
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The action is currently processing.
 
@@ -20,11 +21,12 @@ case running
 
 ## See Also
 
-- [ConversationAction.State.complete](conversationaction/state-swift.enum/complete.md)
+### Constants
+- [ConversationAction.State.complete](./complete.md)
   The action finished successfully.
-- [ConversationAction.State.failed(reason:)](conversationaction/state-swift.enum/failed(reason:).md)
+- [ConversationAction.State.failed(reason:)](./failed%28reason%29.md)
   Indicates that the action failed.
-- [ConversationAction.State.idle](conversationaction/state-swift.enum/idle.md)
+- [ConversationAction.State.idle](./idle.md)
   The action has been created but hasn’t started.
 
 

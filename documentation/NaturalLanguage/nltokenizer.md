@@ -1,7 +1,8 @@
 # NLTokenizer
 
 **Framework**: Natural Language  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A tokenizer that segments natural language text into semantic units.
 
@@ -20,57 +21,62 @@ A tokenizer that segments natural language text into semantic units.
 class NLTokenizer
 ```
 
+```objc
+@interface NLTokenizer : NSObject
+```
+
 ## Mentions
 
-- [Tokenizing natural language text](tokenizing-natural-language-text.md)
+- [Tokenizing natural language text](./tokenizing-natural-language-text.md)
 
 #### Overview
 
-[`NLTokenizer`](nltokenizer.md) creates individual units from natural language text. Define the desired unit (word, sentence, paragraph, or document as declared in the [`NLTokenUnit`](nltokenunit.md)) for tokenization, and then assign a string to tokenize. The [`enumerateTokensInRange:usingBlock:`](nltokenizer/enumeratetokensinrange:usingblock:.md) method provides the ranges of the tokens in the string based on the tokenization unit.
+[`NLTokenizer`](./nltokenizer.md) creates individual units from natural language text. Define the desired unit (word, sentence, paragraph, or document as declared in the [`NLTokenUnit`](./nltokenunit.md)) for tokenization, and then assign a string to tokenize. The [`enumerateTokensInRange:usingBlock:`](./nltokenizer/enumeratetokensinrange_usingblock_.md) method provides the ranges of the tokens in the string based on the tokenization unit.
 
-For more information, see [`Tokenizing natural language text`](tokenizing-natural-language-text.md).
+For more information, see [Tokenizing natural language text](./tokenizing-natural-language-text.md).
 
-> ❗ **Important**:  Use an [`NLTokenizer`](nltokenizer.md) instance on one thread or one dispatch queue at a time. You do this by either serializing method calls to the tokenizer, or by creating a separate tokenizer instance for each thread and dispatch queue.
+> ❗ **Important**:  Use an [`NLTokenizer`](./nltokenizer.md) instance on one thread or one dispatch queue at a time. You do this by either serializing method calls to the tokenizer, or by creating a separate tokenizer instance for each thread and dispatch queue.
 
 ## Topics
 
 ### Creating a tokenizer
-- [init(unit: NLTokenUnit)](nltokenizer/init(unit:).md)
+- [init(unit: NLTokenUnit)](./nltokenizer/init%28unit%29.md)
   Creates a tokenizer with the specified unit.
 ### Configuring a tokenizer
-- [var string: String?](nltokenizer/string.md)
+- [var string: String?](./nltokenizer/string.md)
   The text to be tokenized.
-- [func setLanguage(NLLanguage)](nltokenizer/setlanguage(_:).md)
+- [func setLanguage(NLLanguage)](./nltokenizer/setlanguage%28_%29.md)
   Sets the language of the text to be tokenized.
-- [var unit: NLTokenUnit](nltokenizer/unit.md)
+- [var unit: NLTokenUnit](./nltokenizer/unit.md)
   The linguistic unit that this tokenizer uses.
-- [NLTokenizer.Attributes](nltokenizer/attributes.md)
+- [NLTokenizer.Attributes](./nltokenizer/attributes.md)
   Hints about the contents of the string for the tokenizer.
 ### Enumerating the tokens
-- [func enumerateTokens(in: Range<String.Index>, using: (Range<String.Index>, NLTokenizer.Attributes) -> Bool)](nltokenizer/enumeratetokens(in:using:).md)
+- [func enumerateTokens(in: Range<String.Index>, using: (Range<String.Index>, NLTokenizer.Attributes) -> Bool)](./nltokenizer/enumeratetokens%28in,using%29.md)
   Enumerates over a given range of the string and calls the specified block for each token.
-- [func tokens(for: Range<String.Index>) -> [Range<String.Index>]](nltokenizer/tokens(for:).md)
+- [func tokens(for: Range<String.Index>) -> [Range<String.Index>]](./nltokenizer/tokens%28for%29.md)
   Tokenizes the string within the provided range.
-- [func tokenRange(at: String.Index) -> Range<String.Index>](nltokenizer/tokenrange(at:).md)
+- [func tokenRange(at: String.Index) -> Range<String.Index>](./nltokenizer/tokenrange%28at%29.md)
   Finds the range of the token at the given index.
-- [func tokenRange(for: Range<String.Index>) -> Range<String.Index>](nltokenizer/tokenrange(for:).md)
+- [func tokenRange(for: Range<String.Index>) -> Range<String.Index>](./nltokenizer/tokenrange%28for%29.md)
   Finds the entire range of all tokens contained completely or partially within the specified range.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Tokenizing natural language text](tokenizing-natural-language-text.md)
+### Tokenization
+- [Tokenizing natural language text](./tokenizing-natural-language-text.md)
   Enumerate the words in a string.
 
 

@@ -1,7 +1,8 @@
 # descendant(matchingIdentifierPath:completion:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds the context with the given identifier path relative to this context.
 
@@ -15,20 +16,32 @@ Finds the context with the given identifier path relative to this context.
 ## Declaration
 
 ```swift
+func descendant(matchingIdentifierPath identifierPath: [String], completion: @escaping @Sendable (CLSContext?, (any Error)?) -> Void)
+```
+
+```swift
 func descendant(matchingIdentifierPath identifierPath: [String]) async throws -> CLSContext
+```
+
+```objc
+- (void) descendantMatchingIdentifierPath:(NSArray<NSString *> *) identifierPath completion:(void (^)(CLSContext *context, NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
-- [Building missing contexts](building-missing-contexts.md)
-- [Declaring your app’s context hierarchy](declaring-your-app-s-context-hierarchy.md)
+- [Recording student progress](../recording-student-progress.md)
+- [Building missing contexts](../building-missing-contexts.md)
+- [Declaring your app’s context hierarchy](../declaring-your-app-s-context-hierarchy.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func descendant(matchingIdentifierPath identifierPath: [String]) async throws -> CLSContext
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func descendant(matchingIdentifierPath identifierPath: [String]) async throws -> CLSContext
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 > ❗ **Important**:  ClassKit calls your completion handler on an arbitrary thread. If you need to do work on a particular thread from inside the handler, dispatch that work to the appropriate queue.
 
@@ -39,13 +52,14 @@ func descendant(matchingIdentifierPath identifierPath: [String]) async throws ->
 
 ## See Also
 
-- [var identifierPath: [String]](clscontext/identifierpath.md)
+### Managing context hierarchy
+- [var identifierPath: [String]](./identifierpath.md)
   The identifier path that locates the context within the data store’s context hierarchy.
-- [var parent: CLSContext?](clscontext/parent.md)
+- [var parent: CLSContext?](./parent.md)
   The direct ancestor of this context.
-- [func removeFromParent()](clscontext/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the context from its parent.
-- [func addChildContext(CLSContext)](clscontext/addchildcontext(_:).md)
+- [func addChildContext(CLSContext)](./addchildcontext%28_%29.md)
   Adds the specifed context as a child of the context receiving the method call.
 
 

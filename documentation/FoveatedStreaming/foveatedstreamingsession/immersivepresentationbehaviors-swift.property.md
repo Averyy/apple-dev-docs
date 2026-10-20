@@ -1,7 +1,8 @@
 # immersivePresentationBehaviors
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional set of behaviors which assist in automatically presenting the session’s immersive space.
 

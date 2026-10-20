@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningClusterReorderNetworkParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 class MTRNetworkCommissioningClusterReorderNetworkParams
 ```
 
+```objc
+@interface MTRNetworkCommissioningClusterReorderNetworkParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var breadcrumb: NSNumber?](mtrnetworkcommissioningclusterreordernetworkparams/breadcrumb.md)
-- [var networkID: Data](mtrnetworkcommissioningclusterreordernetworkparams/networkid.md)
-- [var networkIndex: NSNumber](mtrnetworkcommissioningclusterreordernetworkparams/networkindex.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrnetworkcommissioningclusterreordernetworkparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrnetworkcommissioningclusterreordernetworkparams/timedinvoketimeoutms.md)
+- [var breadcrumb: NSNumber?](./mtrnetworkcommissioningclusterreordernetworkparams/breadcrumb.md)
+- [var networkID: Data](./mtrnetworkcommissioningclusterreordernetworkparams/networkid.md)
+- [var networkIndex: NSNumber](./mtrnetworkcommissioningclusterreordernetworkparams/networkindex.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrnetworkcommissioningclusterreordernetworkparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrnetworkcommissioningclusterreordernetworkparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

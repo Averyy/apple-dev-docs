@@ -1,7 +1,8 @@
 # init(withAAEncodedData:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new archive header from encoded data.
 
@@ -11,7 +12,7 @@ Creates a new archive header from encoded data.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ required init?(withAAEncodedData data: UnsafeBufferPointer<UInt8>)
 
 ## See Also
 
-- [init()](archiveheader/entryxatblob/init.md)
+### Creating an Extended Attributes Blob
+- [init()](./init%28%29.md)
   Creates a new empty extended attribute blob.
-- [init?(directory: FilePath, path: FilePath, flags: ArchiveFlags)](archiveheader/entryxatblob/init(directory:path:flags:).md)
+- [init?(directory: FilePath, path: FilePath, flags: ArchiveFlags)](./init%28directory,path,flags%29.md)
   Creates a new extended attribute blob from the specified directory and path.
 
 

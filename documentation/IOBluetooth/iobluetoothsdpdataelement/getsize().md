@@ -1,17 +1,22 @@
 # getSize()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the size in bytes of the target data element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getSize() -> UInt32
+```
+
+```objc
+- (uint32_t) getSize;
 ```
 
 #### Return Value

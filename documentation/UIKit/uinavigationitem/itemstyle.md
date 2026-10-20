@@ -1,7 +1,8 @@
 # UINavigationItem.ItemStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that determine how the content of the navigation item lays out in the navigation bar.
 
@@ -17,6 +18,10 @@ Constants that determine how the content of the navigation item lays out in the 
 enum ItemStyle
 ```
 
+```c
+enum UINavigationItemStyle : NSInteger;
+```
+
 #### Overview
 
 Navigation styles allow you to customize the behavior and content density of your navigation bar according to your app type.
@@ -25,33 +30,36 @@ Navigation styles allow you to customize the behavior and content density of you
 - Browser apps like Safari or Files support browsing through and navigating back and forth between multiple documents or folder structures.
 - Editor apps support focused viewing or editing of individual documents.
 
-> **Note**:  Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069) Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
+> **Related Sessions from WWDC22**:  Session 10069: [Meet desktop-class iPad](https://developer.apple.com/wwdc22/10069)
+>
+> Session 10070: [Build a desktop-class iPad app](https://developer.apple.com/wwdc22/10070)
 
 ## Topics
 
 ### Constants
-- [UINavigationItem.ItemStyle.navigator](uinavigationitem/itemstyle/navigator.md)
+- [UINavigationItem.ItemStyle.navigator](./itemstyle/navigator.md)
   A style for a traditional navigation-based interface.
-- [UINavigationItem.ItemStyle.browser](uinavigationitem/itemstyle/browser.md)
+- [UINavigationItem.ItemStyle.browser](./itemstyle/browser.md)
   A style for a browser app interface.
-- [UINavigationItem.ItemStyle.editor](uinavigationitem/itemstyle/editor.md)
+- [UINavigationItem.ItemStyle.editor](./itemstyle/editor.md)
   A style for an editor app interface.
 ### Initializers
-- [init?(rawValue: Int)](uinavigationitem/itemstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./itemstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: UINavigationItem.ItemStyle](uinavigationitem/style.md)
+### Specifying the navigation style
+- [var style: UINavigationItem.ItemStyle](./style.md)
   A style that determines how the content of the navigation item lays out in the navigation bar.
 
 

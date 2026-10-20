@@ -1,7 +1,8 @@
 # UIPencilPreferredAction.ignore
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action that does nothing.
 
@@ -17,6 +18,10 @@ An action that does nothing.
 case ignore
 ```
 
+```c
+UIPencilPreferredActionIgnore
+```
+
 #### Discussion
 
 The system returns this action if any of the following conditions are true:
@@ -26,17 +31,18 @@ The system returns this action if any of the following conditions are true:
 
 ## See Also
 
-- [UIPencilPreferredAction.switchEraser](uipencilpreferredaction/switcheraser.md)
+### Preferred actions
+- [UIPencilPreferredAction.switchEraser](./switcheraser.md)
   An action that switches between the current tool and the eraser.
-- [UIPencilPreferredAction.switchPrevious](uipencilpreferredaction/switchprevious.md)
+- [UIPencilPreferredAction.switchPrevious](./switchprevious.md)
   An action that switches between the current tool and the last used tool.
-- [UIPencilPreferredAction.showColorPalette](uipencilpreferredaction/showcolorpalette.md)
+- [UIPencilPreferredAction.showColorPalette](./showcolorpalette.md)
   An action that toggles the display of the color palette.
-- [UIPencilPreferredAction.showInkAttributes](uipencilpreferredaction/showinkattributes.md)
+- [UIPencilPreferredAction.showInkAttributes](./showinkattributes.md)
   An action that toggles the display of the selected tool’s ink attributes.
-- [UIPencilPreferredAction.showContextualPalette](uipencilpreferredaction/showcontextualpalette.md)
+- [UIPencilPreferredAction.showContextualPalette](./showcontextualpalette.md)
   An action that toggles shows a contextual palette of markup tools, or undo and redo options if tools aren’t available.
-- [UIPencilPreferredAction.runSystemShortcut](uipencilpreferredaction/runsystemshortcut.md)
+- [UIPencilPreferredAction.runSystemShortcut](./runsystemshortcut.md)
   An action that runs a system shortcut.
 
 

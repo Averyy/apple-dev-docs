@@ -1,7 +1,8 @@
 # CKRecord.SystemType
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for record types of system records.
 
@@ -11,7 +12,7 @@ Possible values for record types of system records.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -24,28 +25,29 @@ enum SystemType
 ## Topics
 
 ### Types of System Records
-- [static let share: CKRecord.RecordType](ckrecord/systemtype/share.md)
+- [static let share: CKRecord.RecordType](./systemtype/share.md)
   A string that represents the record type for CloudKit share records.
-- [static let userRecord: CKRecord.RecordType](ckrecord/systemtype/userrecord.md)
+- [static let userRecord: CKRecord.RecordType](./systemtype/userrecord.md)
   A string that represents the record type for CloudKit user records.
 
 ## See Also
 
-- [var recordID: CKRecord.ID](ckrecord/recordid.md)
+### Accessing the Record’s Metadata
+- [var recordID: CKRecord.ID](./recordid.md)
   The unique ID of the record.
-- [var recordType: CKRecord.RecordType](ckrecord/recordtype-6v7au.md)
+- [var recordType: CKRecord.RecordType](./recordtype-6v7au.md)
   The value that your app defines to identify the type of record.
-- [var creationDate: Date?](ckrecord/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The time when CloudKit first saves the record to the server.
-- [var creatorUserRecordID: CKRecord.ID?](ckrecord/creatoruserrecordid.md)
+- [var creatorUserRecordID: CKRecord.ID?](./creatoruserrecordid.md)
   The ID of the user who creates the record.
-- [var modificationDate: Date?](ckrecord/modificationdate.md)
+- [var modificationDate: Date?](./modificationdate.md)
   The most recent time that CloudKit saved the record to the server.
-- [var lastModifiedUserRecordID: CKRecord.ID?](ckrecord/lastmodifieduserrecordid.md)
+- [var lastModifiedUserRecordID: CKRecord.ID?](./lastmodifieduserrecordid.md)
   The ID of the user who most recently modified the record.
-- [var recordChangeTag: String?](ckrecord/recordchangetag.md)
+- [var recordChangeTag: String?](./recordchangetag.md)
   The server change token for the record.
-- [CKRecord.ID](ckrecord/id.md)
+- [CKRecord.ID](./id.md)
   An object that uniquely identifies a record in a database.
 
 

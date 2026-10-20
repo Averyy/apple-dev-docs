@@ -1,7 +1,8 @@
 # vDSP_Length
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Used for numbers of elements in arrays and indices of elements in arrays. It is also used for the base-two logarithm of numbers of elements.
 
@@ -10,7 +11,7 @@ Used for numbers of elements in arrays and indices of elements in arrays. It is 
 
 ## Declaration
 
-```swift
+```c
 typedef unsigned long vDSP_Length;
 ```
 

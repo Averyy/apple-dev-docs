@@ -1,7 +1,8 @@
 # SetTurnAction
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that sets the current seats participating in the current turn.
 
@@ -16,40 +17,41 @@ struct SetTurnAction
 
 #### Overview
 
-To create a set turn action, use the [`setTurn(forSeat:context:)`](tabletopaction/setturn(forseat:context:).md) or a similar static method.
+To create a set turn action, use the [`setTurn(forSeat:context:)`](./tabletopaction/setturn%28forseat,context%29.md) or a similar static method.
 
 ## Topics
 
 ### Getting the seats involved in a turn
-- [var seatIDsInTurn: [TableSeatIdentifier]](setturnaction/seatidsinturn.md)
+- [var seatIDsInTurn: [TableSeatIdentifier]](./setturnaction/seatidsinturn.md)
   The IDs of the seats that are part of the current turn.
 ### Getting the action properties
-- [var context: UInt64](setturnaction/context.md)
+- [var context: UInt64](./setturnaction/context.md)
   An integer value that your game uses.
-- [var playerID: Player.ID?](setturnaction/playerid.md)
+- [var playerID: Player.ID?](./setturnaction/playerid.md)
   The ID of the player who is setting the turn.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TabletopAction](tabletopaction.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TabletopAction](./tabletopaction.md)
 
 ## See Also
 
-- [protocol TabletopAction](tabletopaction.md)
+### Actions
+- [protocol TabletopAction](./tabletopaction.md)
   A protocol for objects that describe an action in a tabletop game.
-- [struct MoveEquipmentAction](moveequipmentaction.md)
+- [struct MoveEquipmentAction](./moveequipmentaction.md)
   An action that moves a piece of equipment on the table or changes the grouping.
-- [struct UpdateEquipmentAction](updateequipmentaction.md)
+- [struct UpdateEquipmentAction](./updateequipmentaction.md)
   An action that updates properties of equipment on the table.
-- [struct UpdateCounterAction](updatecounteraction.md)
+- [struct UpdateCounterAction](./updatecounteraction.md)
   An action that updates the game counter.
-- [struct CreateBookmarkAction](createbookmarkaction.md)
+- [struct CreateBookmarkAction](./createbookmarkaction.md)
   An action that takes a snapshot of the game.
-- [protocol CustomAction](customaction.md)
+- [protocol CustomAction](./customaction.md)
   A protocol that represents an action whose behavior is implemented outside of TabletopKit. A custom action that can be applied to a `TableState`.
 
 

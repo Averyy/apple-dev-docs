@@ -1,7 +1,8 @@
 # invalidMessageSize
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating an invalid message size.
 
@@ -21,19 +22,20 @@ static var invalidMessageSize: HMError.Code { get }
 
 ## See Also
 
-- [static var cannotActivateTriggerTooFarInFuture: HMError.Code](hmerror/cannotactivatetriggertoofarinfuture.md)
+### Detecting limit errors
+- [static var cannotActivateTriggerTooFarInFuture: HMError.Code](./cannotactivatetriggertoofarinfuture.md)
   An error indicating the trigger cannot be activated because it is set too far in the future.
-- [static var dateMustBeOnSpecifiedBoundaries: HMError.Code](hmerror/datemustbeonspecifiedboundaries.md)
+- [static var dateMustBeOnSpecifiedBoundaries: HMError.Code](./datemustbeonspecifiedboundaries.md)
   An error indicating the date is not on the specified boundaries.
-- [static var fireDateInPast: HMError.Code](hmerror/firedateinpast.md)
+- [static var fireDateInPast: HMError.Code](./firedateinpast.md)
   An attempt to activate a timer trigger with a date in the past.
-- [static var maximumObjectLimitReached: HMError.Code](hmerror/maximumobjectlimitreached.md)
+- [static var maximumObjectLimitReached: HMError.Code](./maximumobjectlimitreached.md)
   An error indicating the maximum object count has been reached.
-- [static var recurrenceTooLarge: HMError.Code](hmerror/recurrencetoolarge.md)
+- [static var recurrenceTooLarge: HMError.Code](./recurrencetoolarge.md)
   An attempt to use a recurrence period that is too large.
-- [static var recurrenceTooSmall: HMError.Code](hmerror/recurrencetoosmall.md)
+- [static var recurrenceTooSmall: HMError.Code](./recurrencetoosmall.md)
   An error indicating the recurrence interval is too short.
-- [static var recurrenceMustBeOnSpecifiedBoundaries: HMError.Code](hmerror/recurrencemustbeonspecifiedboundaries.md)
+- [static var recurrenceMustBeOnSpecifiedBoundaries: HMError.Code](./recurrencemustbeonspecifiedboundaries.md)
   An error indicating the recurrence rule is not on the specified boundaries.
 
 

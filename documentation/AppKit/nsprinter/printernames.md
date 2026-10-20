@@ -1,17 +1,22 @@
 # printerNames
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the names of all available printers.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var printerNames: [String] { get }
+```
+
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * printerNames;
 ```
 
 #### Return Value
@@ -24,11 +29,13 @@ The user constructs the list of available printers when adding a printer in the 
 
 ## See Also
 
-- [var name: String](nsprinter/name.md)
+### Related Documentation
+- [var name: String](./name.md)
   The printer’s name.
-- [class var printerTypes: [NSPrinter.TypeName]](nsprinter/printertypes.md)
+### Getting General Printer Information
+- [class var printerTypes: [NSPrinter.TypeName]](./printertypes.md)
   Returns descriptions of the makes and models of all available printers.
-- [NSPrinter.TypeName](nsprinter/typename.md)
+- [NSPrinter.TypeName](./typename.md)
   The type you use to describe a printer’s make and model.
 
 

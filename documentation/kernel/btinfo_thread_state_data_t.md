@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct btinfo_thread_state_data_t {
     ...
 };
@@ -17,9 +17,9 @@ struct btinfo_thread_state_data_t {
 ## Topics
 
 ### Instance Properties
-- [count](btinfo_thread_state_data_t/3943563-count.md)
-- [flavor](btinfo_thread_state_data_t/3943564-flavor.md)
-- [tstate](btinfo_thread_state_data_t/3943565-tstate.md)
+- [count](./btinfo_thread_state_data_t/api-3943563-count.md)
+- [flavor](./btinfo_thread_state_data_t/api-3943564-flavor.md)
+- [tstate](./btinfo_thread_state_data_t/api-3943565-tstate.md)
 
 
 ---

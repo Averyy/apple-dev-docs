@@ -1,7 +1,8 @@
 # MEMessageAction.MessageColor.green
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets the color of the message to green.
 
@@ -14,21 +15,26 @@ Sets the color of the message to green.
 case green
 ```
 
+```c
+MEMessageActionMessageColorGreen
+```
+
 ## See Also
 
-- [MEMessageAction.MessageColor.yellow](memessageaction/messagecolor/yellow.md)
+### Specifying a Message Color
+- [MEMessageAction.MessageColor.yellow](./yellow.md)
   Sets the color of the message to yellow.
-- [MEMessageAction.MessageColor.orange](memessageaction/messagecolor/orange.md)
+- [MEMessageAction.MessageColor.orange](./orange.md)
   Sets the color of the message to orange.
-- [MEMessageAction.MessageColor.red](memessageaction/messagecolor/red.md)
+- [MEMessageAction.MessageColor.red](./red.md)
   Sets the color of the message to red.
-- [MEMessageAction.MessageColor.purple](memessageaction/messagecolor/purple.md)
+- [MEMessageAction.MessageColor.purple](./purple.md)
   Sets the color of the message to purple.
-- [MEMessageAction.MessageColor.blue](memessageaction/messagecolor/blue.md)
+- [MEMessageAction.MessageColor.blue](./blue.md)
   Sets the color of the message to blue.
-- [MEMessageAction.MessageColor.gray](memessageaction/messagecolor/gray.md)
+- [MEMessageAction.MessageColor.gray](./gray.md)
   Sets the color of the message to gray.
-- [MEMessageAction.MessageColor.none](memessageaction/messagecolor/none.md)
+- [MEMessageAction.MessageColor.none](./none.md)
   Clears the color of the message.
 
 

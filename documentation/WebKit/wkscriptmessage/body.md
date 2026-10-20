@@ -1,7 +1,8 @@
 # body
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body of the message.
 
@@ -18,9 +19,13 @@ The body of the message.
 var body: Any { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) id body;
+```
+
 #### Discussion
 
-Allowed types are [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), and [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
+Allowed types are [`NSNumber`](../../Foundation/nsnumber.md), [`NSString`](../../Foundation/nsstring.md), [`NSDate`](../../Foundation/nsdate.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), and [`NSNull`](../../Foundation/nsnull.md).
 
 
 ---

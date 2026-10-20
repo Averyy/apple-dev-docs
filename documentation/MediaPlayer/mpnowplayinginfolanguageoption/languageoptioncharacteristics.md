@@ -1,7 +1,8 @@
 # languageOptionCharacteristics
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characteristics that describe the content of the language option.
 
@@ -20,21 +21,26 @@ The characteristics that describe the content of the language option.
 var languageOptionCharacteristics: [String]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSString *> * languageOptionCharacteristics;
+```
+
 #### Discussion
 
-This property contains an array of characteristics that describes the language option. See [`Language option characteristic constants`](language-option-characteristic-constants.md) for the most commonly used characteristics.
+This property contains an array of characteristics that describes the language option. See [Language option characteristic constants](../language-option-characteristic-constants.md) for the most commonly used characteristics.
 
 ## See Also
 
-- [var displayName: String?](mpnowplayinginfolanguageoption/displayname.md)
+### Retrieving language option properties
+- [var displayName: String?](./displayname.md)
   The display name for a language option.
-- [var identifier: String?](mpnowplayinginfolanguageoption/identifier.md)
+- [var identifier: String?](./identifier.md)
   The unique identifier for the language option.
-- [var languageTag: String?](mpnowplayinginfolanguageoption/languagetag.md)
+- [var languageTag: String?](./languagetag.md)
   The abbreviated language code for the language option.
-- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoption/languageoptiontype.md)
+- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](./languageoptiontype.md)
   The type of language option.
-- [enum MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoptiontype.md)
+- [enum MPNowPlayingInfoLanguageOptionType](../mpnowplayinginfolanguageoptiontype.md)
   The language option type to use for the Now Playing item.
 
 

@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup](betarecruitmentcriterioncreaterequest/data-data.dictionary/relationships-data.dictionary/betagroup-data.dictionary.md)
+- [object BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup](./relationships-data.dictionary/betagroup-data.dictionary.md)
 
 ## Properties
 

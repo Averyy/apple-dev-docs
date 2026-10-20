@@ -1,17 +1,22 @@
 # baselineOffset(in:glyphIndex:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance from the bottom of the line fragment rectangle in which the glyph resides to the glyph baseline.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func baselineOffset(in layoutMgr: NSLayoutManager, glyphIndex: Int) -> CGFloat
+```
+
+```objc
+- (CGFloat) baselineOffsetInLayoutManager:(NSLayoutManager *) layoutMgr glyphIndex:(NSUInteger) glyphIndex;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ The text system uses this value to calculate the vertical position of underlines
 
 ## See Also
 
-- [class func printingAdjustment(in: NSLayoutManager, forNominallySpacedGlyphRange: NSRange, packedGlyphs: UnsafePointer<UInt8>, count: Int) -> NSSize](nstypesetter/printingadjustment(in:fornominallyspacedglyphrange:packedglyphs:count:).md)
+### Getting information about glyphs
+- [class func printingAdjustment(in: NSLayoutManager, forNominallySpacedGlyphRange: NSRange, packedGlyphs: UnsafePointer<UInt8>, count: Int) -> NSSize](./printingadjustment%28in,fornominallyspacedglyphrange,packedglyphs,count%29.md)
   Returns the interglyph spacing in the specified range when sent to a printer.
 
 

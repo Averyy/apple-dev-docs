@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item providers for the configuration.
@@ -18,15 +19,20 @@ The item providers for the configuration.
 var itemProvidersForActivityItemsConfiguration: [NSItemProvider] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSItemProvider *> * itemProvidersForActivityItemsConfiguration;
+```
+
 ## See Also
 
-- [var applicationActivitiesForActivityItemsConfiguration: [UIActivity]?](uiactivityitemsconfigurationreading/applicationactivitiesforactivityitemsconfiguration.md)
+### Managing the Configuration
+- [var applicationActivitiesForActivityItemsConfiguration: [UIActivity]?](./applicationactivitiesforactivityitemsconfiguration.md)
   The application activities, if any, for the configuration.
-- [func activityItemsConfigurationMetadata(key: UIActivityItemsConfigurationMetadataKey) -> Any?](uiactivityitemsconfigurationreading/activityitemsconfigurationmetadata(key:).md)
+- [func activityItemsConfigurationMetadata(key: UIActivityItemsConfigurationMetadataKey) -> Any?](./activityitemsconfigurationmetadata%28key%29.md)
   Returns the configuration for the specified metadata key.
-- [func activityItemsConfigurationMetadataForItem(at: Int, key: UIActivityItemsConfigurationMetadataKey) -> Any?](uiactivityitemsconfigurationreading/activityitemsconfigurationmetadataforitem(at:key:).md)
+- [func activityItemsConfigurationMetadataForItem(at: Int, key: UIActivityItemsConfigurationMetadataKey) -> Any?](./activityitemsconfigurationmetadataforitem%28at,key%29.md)
   Returns the configuration for a particular item for the specified metadata key.
-- [struct UIActivityItemsConfigurationMetadataKey](uiactivityitemsconfigurationmetadatakey.md)
+- [struct UIActivityItemsConfigurationMetadataKey](../uiactivityitemsconfigurationmetadatakey.md)
   A structure that defines keys for the metadata associated with an activity items configuration.
 
 

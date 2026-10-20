@@ -1,7 +1,8 @@
 # detachesHiddenViews
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the stack view removes hidden views from its view hierarchy.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the stack view removes hidden views from 
 var detachesHiddenViews: Bool { get set }
 ```
 
+```objc
+@property BOOL detachesHiddenViews;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), setting the [`isHidden`](nsview/ishidden.md) property of a view to [`true`](https://developer.apple.com/documentation/swift/true) causes the stack view to remove hidden views from its view hierarchy and put them in the [`detachedViews`](nsstackview/detachedviews.md) property. Changing the view’s [`isHidden`](nsview/ishidden.md) property to [`false`](https://developer.apple.com/documentation/swift/false) causes the stack view to add the view back to the view hierarchy. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), views remain in the view hierarchy, even when they are hidden. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](../../Swift/true.md), setting the [`isHidden`](../nsview/ishidden.md) property of a view to [`true`](../../Swift/true.md) causes the stack view to remove hidden views from its view hierarchy and put them in the [`detachedViews`](./detachedviews.md) property. Changing the view’s [`isHidden`](../nsview/ishidden.md) property to [`false`](../../Swift/false.md) causes the stack view to add the view back to the view hierarchy. When the value of this property is [`false`](../../Swift/false.md), views remain in the view hierarchy, even when they are hidden. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func setClippingResistancePriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](nsstackview/setclippingresistancepriority(_:for:).md)
+### Configuring Dynamic Behavior for a Stack View
+- [func setClippingResistancePriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](./setclippingresistancepriority%28_,for%29.md)
   Sets the Auto Layout priority for resisting clipping of views in the stack view when Auto Layout attempts to reduce the stack view’s size.
-- [func setHuggingPriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](nsstackview/sethuggingpriority(_:for:).md)
+- [func setHuggingPriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](./sethuggingpriority%28_,for%29.md)
   Sets the Auto Layout priority for the stack view to minimize its size, for a specified user interface axis.
 
 

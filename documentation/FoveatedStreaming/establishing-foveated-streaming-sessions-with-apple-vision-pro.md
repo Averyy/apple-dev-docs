@@ -1,6 +1,7 @@
 # Establishing foveated streaming sessions with Apple Vision Pro
 
-**Framework**: Foveated Streaming
+**Framework**: Foveated Streaming  
+**Role**: Article
 
 Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
 
@@ -17,9 +18,9 @@ Implement this TCP-based protocol in your streaming application by doing the fol
 - Continuously observe the state of the streaming session.
 - Send Apple Vision Pro disconnection requests.
 
-> **Note**: Implementing the session management connection protocol is one of several steps involved in streaming your desktop application to Apple Vision Pro. For more information on the other steps, see [`Streaming a CloudXR application to Apple Vision Pro with foveation`](streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md).
+> **Note**: Implementing the session management connection protocol is one of several steps involved in streaming your desktop application to Apple Vision Pro. For more information on the other steps, see [Streaming a CloudXR application to Apple Vision Pro with foveation](./streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md).
 
-#### Make Your Streaming Endpoint Discoverable
+#### Make your streaming endpoint discoverable
 
 Set the mDNS service name to `_apple-foveated-streaming._tcp`. This tells Apple Vision Pro that it can connect to your streaming endpoint by broadcasting an mDNS service from your desktop .
 
@@ -31,9 +32,9 @@ Add an entry to the mDNS service’s TXT record that specifies the bundle ID of 
 
 If you don’t specify the bundle ID of your visionOS app it won’t be able to connect to the streaming endpoint.
 
-For more information on building a visionOS app to display your streamed content, see [`Creating a foveated streaming client on visionOS`](creating-a-foveated-streaming-client-on-visionos.md).
+For more information on building a visionOS app to display your streamed content, see [Creating a foveated streaming client on visionOS](./creating-a-foveated-streaming-client-on-visionos.md).
 
-#### Interpret the Messaging Format
+#### Interpret the messaging format
 
 Apple Vision Pro uses a TCP connection with the IP address and port number the mDNS service advertises to send and receive messages.
 
@@ -49,7 +50,7 @@ Each message between the Apple Vision Pro and the streaming application begins w
 
 Because TCP doesn’t provide a mechanism to define the size of an atomic “packet”, it’s necessary to prefix each message between the Apple Vision Pro and the streaming application with the message length.
 
-#### Acknowledge a Connection Request
+#### Acknowledge a connection request
 
 Apple Vision Pro sends a connection request to your streaming endpoint when it initiates the connection. The connection request defines the streaming parameters and provides the necessary information for establishing and managing the foveated streaming session.
 
@@ -75,7 +76,7 @@ The following table describes each parameter in the `RequestConnection` message:
 | `ProtocolVersion` | `String` | The protocol version to use. This is always set to `1`. |
 | `StreamingProvider` | `String` | The specific streaming provider the Apple Vision Pro is requesting. By convention, this is a reverse DNS style string, like `com.example.technology`. |
 | `StreamingProviderVersion` | `String` | The version information for the streaming provider. |
-| `UserInterfaceIdiom` | `String` | The [`UIUserInterfaceIdiom`](https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom) of the source device. Always set to `Vision` when streaming to Apple Vision Pro. |
+| `UserInterfaceIdiom` | `String` | The [`UIUserInterfaceIdiom`](../UIKit/uiuserinterfaceidiom.md) of the source device. Always set to `Vision` when streaming to Apple Vision Pro. |
 | `SessionID` | `String` | A UUID which uniquely identifies this specific foveated streaming session. |
 | `ClientID` | `String` | A UUID which uniquely identifies the Apple Vision Pro device. Persists between sessions; used for pairing. |
 
@@ -101,9 +102,9 @@ The following table describes each parameter in the `AcknowledgeConnection` mess
 
 The Apple Vision Pro expects this response from the streaming endpoint after sending its initial connection request message.
 
-The streaming endpoint can deny the connection by sending a `RequestSessionDisconnect` message. For more information, see [`Request a session disconnect`](establishing-foveated-streaming-sessions-with-apple-vision-pro#Request-a-session-disconnect.md).
+The streaming endpoint can deny the connection by sending a `RequestSessionDisconnect` message. For more information, see [Request a session disconnect](./establishing-foveated-streaming-sessions-with-apple-vision-pro.md#Request-a-session-disconnect).
 
-#### Acknowledge a Barcode Presentation Request
+#### Acknowledge a barcode presentation request
 
 After the streaming application acknowledges the connection request, Apple Vision Pro may request that you present a QR code to authenticate the connection.
 
@@ -123,7 +124,7 @@ The following table describes each parameter in the `RequestBarcodePresentation`
 | `Event` | `String` | Always set to `RequestBarcodePresentation`. |
 | `SessionID` | `String` | The UUID which uniquely identifies this specific foveated streaming session. Matches the session ID sent in `RequestConnection`. |
 
-Apple Vision Pro expects the streaming application to present a QR code after receiving this message. For an example that demonstrates how to present a QR code with the necessary authentication information, see the [`StreamingSession-WindowsApp`](https://developer.apple.comhttps://github.com/apple/StreamingSession/tree/main/StreamingSession-WindowsApp/).
+Apple Vision Pro expects the streaming application to present a QR code after receiving this message. For an example that demonstrates how to present a QR code with the necessary authentication information, see the [StreamingSession-WindowsApp](https://github.com/apple/StreamingSession/tree/main/StreamingSession-WindowsApp/).
 
 After the streaming application presents the QR code, send Apple Vision Pro an `AcknowledgeBarcodePresentation` message:
 
@@ -143,7 +144,7 @@ The following table describes each parameter in the `AcknowledgeBarcodePresentat
 
 After receiving this message, Apple Vision Pro presents the barcode scanning UI.
 
-#### Notify Apple Vision Pro That Youre Ready to Stream
+#### Notify Apple Vision Pro that you’re ready to stream
 
 Send a message to Apple Vision Pro when your streaming endpoint is ready to receive CloudXR™ connections and stream content.
 
@@ -165,7 +166,7 @@ The following table describes each parameter in the `MediaStreamIsReady` message
 
 Apple Vision Pro doesn’t attempt to connect to your streaming application’s CloudXR port until it receives this message, giving your application time to launch the CloudXR server.
 
-#### Track the Streaming Session Status
+#### Track the streaming session status
 
 Apple Vision Pro sends messages when the foveated streaming session status changes.
 
@@ -197,7 +198,7 @@ Status values for the `SessionStatusDidChange` message include:
 
 > **Note**: Dismiss the QR code as soon as you receive the `SessionStatusDidChange` message. If pairing failed, the state will be `DISCONNECTED`.
 
-#### Request a Session Disconnect
+#### Request a session disconnect
 
 Sometimes your streaming application may need to request that the session disconnects, such as when the person quits the streaming application on the computer while the streaming session is still running.
 
@@ -219,7 +220,7 @@ The following table describes each parameter in the `RequestSessionDisconnect` m
 
 This message may also be sent during pairing, which cancels the pairing process on Apple Vision Pro.
 
-#### Understand Reconnection Behavior
+#### Understand reconnection behavior
 
 When a person takes off their Apple Vision Pro, Apple Vision Pro sends a `SessionStatusDidChange` message with the `PAUSED` status. After sending the `PAUSED` status, Apple Vision Pro cancels the streaming connection and gracefully disconnects the TCP connection. When the person puts their Apple Vision Pro back on, Apple Vision Pro attempts to reconnect to the streaming endpoint, sending a `SessionStatusDidChange` message with the current state to alert the endpoint that the session is still active.
 
@@ -227,15 +228,16 @@ Keep your streaming application running after it receives a `SessionStatusDidCha
 
 ## See Also
 
-- [Streaming a CloudXR application to Apple Vision Pro with foveation](streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
+### Essentials
+- [Streaming a CloudXR application to Apple Vision Pro with foveation](./streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
   Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
-- [Creating a foveated streaming client on visionOS](creating-a-foveated-streaming-client-on-visionos.md)
+- [Creating a foveated streaming client on visionOS](./creating-a-foveated-streaming-client-on-visionos.md)
   Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
-- [Analyzing the performance of a foveated streaming session](analyzing-the-performance-of-a-foveated-streaming-session.md)
+- [Analyzing the performance of a foveated streaming session](./analyzing-the-performance-of-a-foveated-streaming-session.md)
   Use the Foveated Streaming Statistics instrument to evaluate the performance of your visionOS streaming client app.
-- [class FoveatedStreamingSession](foveatedstreamingsession.md)
+- [class FoveatedStreamingSession](./foveatedstreamingsession.md)
   A session that manages a foveated streaming connection to a local or remote streaming endpoint.
-- [struct FoveatedStreamingSpaceContent](foveatedstreamingspacecontent.md)
+- [struct FoveatedStreamingSpaceContent](./foveatedstreamingspacecontent.md)
   A type that defines the content of an immersive space displaying a foveated stream.
 
 

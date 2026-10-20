@@ -1,7 +1,8 @@
 # kCMIOFeatureControlPropertyAbsoluteNative
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,25 @@
 var kCMIOFeatureControlPropertyAbsoluteNative: Int { get }
 ```
 
+```c
+kCMIOFeatureControlPropertyAbsoluteNative
+```
+
 ## See Also
 
-- [var kCMIOFeatureControlPropertyAbsoluteRange: Int](kcmiofeaturecontrolpropertyabsoluterange.md)
-- [var kCMIOFeatureControlPropertyAbsoluteUnitName: Int](kcmiofeaturecontrolpropertyabsoluteunitname.md)
-- [var kCMIOFeatureControlPropertyAbsoluteValue: Int](kcmiofeaturecontrolpropertyabsolutevalue.md)
-- [var kCMIOFeatureControlPropertyAutomaticManual: Int](kcmiofeaturecontrolpropertyautomaticmanual.md)
-- [var kCMIOFeatureControlPropertyConvertAbsoluteToNative: Int](kcmiofeaturecontrolpropertyconvertabsolutetonative.md)
-- [var kCMIOFeatureControlPropertyConvertNativeToAbsolute: Int](kcmiofeaturecontrolpropertyconvertnativetoabsolute.md)
-- [var kCMIOFeatureControlPropertyNativeRange: Int](kcmiofeaturecontrolpropertynativerange.md)
-- [var kCMIOFeatureControlPropertyNativeValue: Int](kcmiofeaturecontrolpropertynativevalue.md)
-- [var kCMIOFeatureControlPropertyOnOff: Int](kcmiofeaturecontrolpropertyonoff.md)
-- [var kCMIOFeatureControlPropertyTune: Int](kcmiofeaturecontrolpropertytune.md)
-- [var kCMIOFeatureControlPropertyNativeData: Int](kcmiofeaturecontrolpropertynativedata.md)
-- [var kCMIOFeatureControlPropertyNativeDataRange: Int](kcmiofeaturecontrolpropertynativedatarange.md)
+### Constants
+- [var kCMIOFeatureControlPropertyAbsoluteRange: Int](./kcmiofeaturecontrolpropertyabsoluterange.md)
+- [var kCMIOFeatureControlPropertyAbsoluteUnitName: Int](./kcmiofeaturecontrolpropertyabsoluteunitname.md)
+- [var kCMIOFeatureControlPropertyAbsoluteValue: Int](./kcmiofeaturecontrolpropertyabsolutevalue.md)
+- [var kCMIOFeatureControlPropertyAutomaticManual: Int](./kcmiofeaturecontrolpropertyautomaticmanual.md)
+- [var kCMIOFeatureControlPropertyConvertAbsoluteToNative: Int](./kcmiofeaturecontrolpropertyconvertabsolutetonative.md)
+- [var kCMIOFeatureControlPropertyConvertNativeToAbsolute: Int](./kcmiofeaturecontrolpropertyconvertnativetoabsolute.md)
+- [var kCMIOFeatureControlPropertyNativeRange: Int](./kcmiofeaturecontrolpropertynativerange.md)
+- [var kCMIOFeatureControlPropertyNativeValue: Int](./kcmiofeaturecontrolpropertynativevalue.md)
+- [var kCMIOFeatureControlPropertyOnOff: Int](./kcmiofeaturecontrolpropertyonoff.md)
+- [var kCMIOFeatureControlPropertyTune: Int](./kcmiofeaturecontrolpropertytune.md)
+- [var kCMIOFeatureControlPropertyNativeData: Int](./kcmiofeaturecontrolpropertynativedata.md)
+- [var kCMIOFeatureControlPropertyNativeDataRange: Int](./kcmiofeaturecontrolpropertynativedatarange.md)
 
 
 ---

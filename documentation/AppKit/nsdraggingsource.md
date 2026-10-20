@@ -1,17 +1,22 @@
 # NSDraggingSource
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that are implemented by the source object in a dragging session.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 protocol NSDraggingSource : NSObjectProtocol
+```
+
+```objc
+@protocol NSDraggingSource <NSObject>
 ```
 
 #### Overview
@@ -21,41 +26,43 @@ In macOS 10.7 and later `NSDraggingSource` is now a formal protocol and has an u
 ## Topics
 
 ### Dragging Session Operation
-- [func draggingSession(NSDraggingSession, sourceOperationMaskFor: NSDraggingContext) -> NSDragOperation](nsdraggingsource/draggingsession(_:sourceoperationmaskfor:).md)
+- [func draggingSession(NSDraggingSession, sourceOperationMaskFor: NSDraggingContext) -> NSDragOperation](./nsdraggingsource/draggingsession%28_,sourceoperationmaskfor%29.md)
   Declares the types of operations the source allows to be performed.
 ### Dragging Session Locations
-- [func draggingSession(NSDraggingSession, willBeginAt: NSPoint)](nsdraggingsource/draggingsession(_:willbeginat:).md)
+- [func draggingSession(NSDraggingSession, willBeginAt: NSPoint)](./nsdraggingsource/draggingsession%28_,willbeginat%29.md)
   Invoked when the drag will begin.
-- [func draggingSession(NSDraggingSession, movedTo: NSPoint)](nsdraggingsource/draggingsession(_:movedto:).md)
+- [func draggingSession(NSDraggingSession, movedTo: NSPoint)](./nsdraggingsource/draggingsession%28_,movedto%29.md)
   Invoked when the drag moves on the screen.
-- [func draggingSession(NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](nsdraggingsource/draggingsession(_:endedat:operation:).md)
+- [func draggingSession(NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](./nsdraggingsource/draggingsession%28_,endedat,operation%29.md)
   Invoked when the dragging session has completed.
 ### Dragging Session Modifier Keys
-- [func ignoreModifierKeys(for: NSDraggingSession) -> Bool](nsdraggingsource/ignoremodifierkeys(for:).md)
+- [func ignoreModifierKeys(for: NSDraggingSession) -> Bool](./nsdraggingsource/ignoremodifierkeys%28for%29.md)
   Returns whether the modifier keys will be ignored for this dragging session.
 ### Dragging Options
-- [func namesOfPromisedFilesDropped(atDestination: URL) -> [String]?](../objectivec/nsobject-swift.class/namesofpromisedfilesdropped(atdestination:).md)
+- [func namesOfPromisedFilesDropped(atDestination: URL) -> [String]?](../ObjectiveC/nsobject-swift.class/namesofpromisedfilesdropped%28atdestination%29.md)
   Returns the names of the files that the receiver promises to create at a specified location.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSCollectionView](nscollectionview.md)
-- [NSOutlineView](nsoutlineview.md)
-- [NSTableView](nstableview.md)
-- [NSTextView](nstextview.md)
+- [NSCollectionView](./nscollectionview.md)
+- [NSOutlineView](./nsoutlineview.md)
+- [NSTableView](./nstableview.md)
+- [NSTextView](./nstextview.md)
 
 ## See Also
 
-- [Drag and Drop](drag-and-drop.md)
+### Related Documentation
+- [Drag and Drop](./drag-and-drop.md)
   Support the direct manipulation of your app’s content using drag and drop.
-- [class NSDraggingItem](nsdraggingitem.md)
+### Drag Sources
+- [class NSDraggingItem](./nsdraggingitem.md)
   A single dragged item within a dragging session.
-- [class NSDraggingSession](nsdraggingsession.md)
+- [class NSDraggingSession](./nsdraggingsession.md)
   An object that encapsulates a drag-and-drop action.
-- [class NSDraggingImageComponent](nsdraggingimagecomponent.md)
+- [class NSDraggingImageComponent](./nsdraggingimagecomponent.md)
   A single object in a dragging item.
 
 

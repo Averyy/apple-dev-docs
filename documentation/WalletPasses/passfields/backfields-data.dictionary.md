@@ -1,7 +1,8 @@
 # PassFields.BackFields
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the fields that display information on the back of a pass.
 
@@ -12,13 +13,13 @@ An object that represents the fields that display information on the back of a p
 
 ## Declaration
 
-```swift
+```
 object PassFields.BackFields
 ```
 
 ## Mentions
 
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+- [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
 #### Discussion
 
@@ -27,7 +28,7 @@ Use this field to provide additional, noncritical information. This field displa
 ## Relationships
 
 ### Inherits From
-- [PassFieldContent](passfieldcontent.md)
+- [PassFieldContent](../passfieldcontent.md)
 
 
 ---

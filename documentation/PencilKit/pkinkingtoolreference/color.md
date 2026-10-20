@@ -1,7 +1,8 @@
 # color
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the ink.
 
@@ -14,8 +15,28 @@ The color of the ink.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var color: UIColor { get }
+```
+
+*macOS*
+
 ```swift
 var color: NSColor { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) UIColor * color;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSColor * color;
 ```
 
 #### Discussion
@@ -24,9 +45,10 @@ The alpha of the final color may vary due to input from Apple Pencil. For exampl
 
 ## See Also
 
-- [var width: CGFloat](pkinkingtoolreference/width.md)
+### Getting the inking tool attributes
+- [var width: CGFloat](./width.md)
   The base line width for new content.
-- [var ink: PKInk](pkinkingtoolreference/ink.md)
+- [var ink: PKInk](./ink.md)
   The ink that this tool creates strokes with.
 
 

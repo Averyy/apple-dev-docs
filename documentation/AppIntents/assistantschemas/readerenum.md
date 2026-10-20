@@ -1,7 +1,8 @@
 # AssistantSchemas.ReaderEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for types you use to describe documents.
 
@@ -23,16 +24,16 @@ protocol ReaderEnum : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var documentKind: some AssistantSchemas.Enum](assistantschemas/readerenum/documentkind.md)
+- [var documentKind: some AssistantSchemas.Enum](./readerenum/documentkind.md)
   The file type for a document.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
+- [AssistantSchema.EnumSchema](../assistantschema/enumschema.md)
+- [AssistantSchemas.EnumSchema](./enumschema.md)
 
 
 ---

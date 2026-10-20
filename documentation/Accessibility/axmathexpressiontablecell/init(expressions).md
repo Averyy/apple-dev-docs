@@ -1,7 +1,8 @@
 # init(expressions:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 init(expressions: [AXMathExpression])
+```
+
+```objc
+- (instancetype) initWithExpressions:(NSArray<AXMathExpression *> *) expressions;
 ```
 
 

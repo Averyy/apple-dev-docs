@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses the simulation, freezing it at its current state.
 

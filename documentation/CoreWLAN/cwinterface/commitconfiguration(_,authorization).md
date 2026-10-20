@@ -1,7 +1,8 @@
 # commitConfiguration(_:authorization:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Commit a configuration for the given WLAN interface.
 
@@ -14,11 +15,17 @@ Commit a configuration for the given WLAN interface.
 func commitConfiguration(_ configuration: CWConfiguration, authorization: SFAuthorization?) throws
 ```
 
+```objc
+- (BOOL) commitConfiguration:(CWConfiguration *) configuration authorization:(SFAuthorization *) authorization error:(NSError **) error;
+```
+
 #### Discussion
 
 This method requires the caller have root privileges or obtain administrator privileges with the *authorization* parameter.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

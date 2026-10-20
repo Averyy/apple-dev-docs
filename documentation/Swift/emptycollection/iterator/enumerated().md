@@ -1,7 +1,8 @@
 # enumerated()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 
@@ -63,7 +64,7 @@ for i in shorterIndices {
 // Prints "Mateo"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

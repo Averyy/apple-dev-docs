@@ -1,7 +1,8 @@
 # frequency
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How often the event repeats
 

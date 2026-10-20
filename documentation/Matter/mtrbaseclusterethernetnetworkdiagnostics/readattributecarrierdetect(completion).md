@@ -1,7 +1,8 @@
 # readAttributeCarrierDetect(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCarrierDetect(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCarrierDetect() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCarrierDetectWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

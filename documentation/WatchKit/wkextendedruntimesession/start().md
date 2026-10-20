@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts running the session.
 
@@ -14,30 +15,35 @@ Starts running the session.
 func start()
 ```
 
+```objc
+- (void) start;
+```
+
 ## Mentions
 
-- [Using extended runtime sessions](using-extended-runtime-sessions.md)
+- [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
 #### Discussion
 
-Use [`start()`](wkextendedruntimesession/start().md) to begin a session. You must call this method while your app is running in the foreground.
+Use [`start()`](./start%28%29.md) to begin a session. You must call this method while your app is running in the foreground.
 
-You can’t use the [`start()`](wkextendedruntimesession/start().md) method to set up a schedulable session (such as a smart alarm session). Call the [`start(at:)`](wkextendedruntimesession/start(at:).md) method instead.
+You can’t use the [`start()`](./start%28%29.md) method to set up a schedulable session (such as a smart alarm session). Call the [`start(at:)`](./start%28at%29.md) method instead.
 
 ## See Also
 
-- [func start(at: Date)](wkextendedruntimesession/start(at:).md)
+### Managing the Session State
+- [func start(at: Date)](./start%28at%29.md)
   Schedules a session to start running at a future date.
-- [func invalidate()](wkextendedruntimesession/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Stops the session.
-- [var state: WKExtendedRuntimeSessionState](wkextendedruntimesession/state.md)
+- [var state: WKExtendedRuntimeSessionState](./state.md)
   The session’s current state.
-- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md)
+- [enum WKExtendedRuntimeSessionState](../wkextendedruntimesessionstate.md)
   The activation states for an extended runtime session.
-- [var expirationDate: Date?](wkextendedruntimesession/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The time and date when the session expires.
-- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:).md)
-- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md)
+- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](./requestautolaunchauthorizationstatus%28completion%29.md)
+- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](../wkextendedruntimesessionautolaunchauthorizationstatus.md)
 
 
 ---

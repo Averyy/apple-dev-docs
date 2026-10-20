@@ -1,7 +1,8 @@
 # color
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base color for this ink.
 
@@ -14,14 +15,35 @@ The base color for this ink.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var color: UIColor { get }
+```
+
+*macOS*
+
 ```swift
 var color: NSColor { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) UIColor * color;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSColor * color;
+```
+
 ## See Also
 
-- [var inkType: __PKInkType](pkinkreference/inktype.md)
-  The type of ink, such as pen or pencil, as defined in the [`PKInkType`](pkinktype.md) enumeration.
+### Getting the ink attributes
+- [var inkType: __PKInkType](./inktype.md)
+  The type of ink, such as pen or pencil, as defined in the [`PKInkType`](../pkinktype.md) enumeration.
 
 
 ---

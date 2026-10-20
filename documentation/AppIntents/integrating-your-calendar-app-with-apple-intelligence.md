@@ -1,6 +1,8 @@
 # Integrating your calendar app with Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: Sample Code  
+**Download**: [IntegratingYourCalendarAppWithAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/fa871d993337/IntegratingYourCalendarAppWithAppleIntelligence.zip)
 
 Adopt calendar schemas so people can create, find, and manage events with Siri.
 
@@ -12,15 +14,16 @@ Adopt calendar schemas so people can create, find, and manage events with Siri.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session [`344: Code-along: Make your app available to Siri`](https://developer.apple.comhttps://developer.apple.com/wwdc26/344/).
+> **Note**: This sample code project is associated with WWDC26 session [344: Code-along: Make your app available to Siri](https://developer.apple.com/wwdc26/344/).
 
 ## See Also
 
-- [Integrating your messaging app with Apple Intelligence](integrating-your-messaging-app-with-apple-intelligence.md)
+### Sample code
+- [Integrating your messaging app with Apple Intelligence](./integrating-your-messaging-app-with-apple-intelligence.md)
   Adopt message schemas so people can send messages and manage conversations with Siri.
-- [Integrating your music app with Apple Intelligence](integrating-your-music-app-with-apple-intelligence.md)
+- [Integrating your music app with Apple Intelligence](./integrating-your-music-app-with-apple-intelligence.md)
   Adopt the audio and clock schemas so people can play music and set alarms with Siri.
-- [Integrating your photo app with Apple Intelligence](integrating-your-photo-app-with-apple-intelligence.md)
+- [Integrating your photo app with Apple Intelligence](./integrating-your-photo-app-with-apple-intelligence.md)
   Adopt photo schemas so people can edit and manage photos with Siri.
 
 

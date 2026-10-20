@@ -1,7 +1,8 @@
 # init(preTime:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The instant directly before the given time value.
 

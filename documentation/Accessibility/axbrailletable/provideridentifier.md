@@ -1,7 +1,8 @@
 # providerIdentifier
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the provider of this table.
 
@@ -18,6 +19,10 @@ The identifier of the provider of this table.
 
 ```swift
 var providerIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * providerIdentifier;
 ```
 
 

@@ -1,7 +1,8 @@
 # enablesRemoteLogin
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to enable Remote Login (using SSH) for the macOS virtual machine.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether to enable Remote Login (using SSH) for th
 
 ```swift
 var enablesRemoteLogin: Bool { get set }
+```
+
+```objc
+@property (readwrite) BOOL enablesRemoteLogin;
 ```
 
 #### Discussion

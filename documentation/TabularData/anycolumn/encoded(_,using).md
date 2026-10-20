@@ -1,7 +1,8 @@
 # encoded(_:using:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a column by encoding each element’s value.
 
@@ -26,7 +27,7 @@ A new column of encoded values.
 
 #### Discussion
 
-> **Note**: `ColumnEncodingError` when the encoder fails to encode an element.
+> **Throws**: `ColumnEncodingError` when the encoder fails to encode an element.
 
 ## Parameters
 
@@ -35,7 +36,8 @@ A new column of encoded values.
 
 ## See Also
 
-- [func encode<T, Encoder>(T.Type, using: Encoder) throws](anycolumn/encode(_:using:).md)
+### Encoding a Column
+- [func encode<T, Encoder>(T.Type, using: Encoder) throws](./encode%28_,using%29.md)
   Encodes each element of the column.
 
 

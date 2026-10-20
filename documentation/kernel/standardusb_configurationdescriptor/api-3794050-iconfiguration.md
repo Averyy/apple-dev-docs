@@ -1,14 +1,15 @@
 # iConfiguration
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t iConfiguration;
 ```
 

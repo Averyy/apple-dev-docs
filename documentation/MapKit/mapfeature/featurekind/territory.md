@@ -1,7 +1,8 @@
 # territory
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A territory or political boundary.
 
@@ -11,7 +12,7 @@ A territory or political boundary.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ A territorial or regional boundary, such as a national border, a state boundary,
 
 ## See Also
 
-- [static var physicalFeature: MapFeature.FeatureKind](mapfeature/featurekind/physicalfeature.md)
+### Kinds of features
+- [static var physicalFeature: MapFeature.FeatureKind](./physicalfeature.md)
   A physical map feature.
-- [static var pointOfInterest: MapFeature.FeatureKind](mapfeature/featurekind/pointofinterest.md)
+- [static var pointOfInterest: MapFeature.FeatureKind](./pointofinterest.md)
   A point of interest.
 
 

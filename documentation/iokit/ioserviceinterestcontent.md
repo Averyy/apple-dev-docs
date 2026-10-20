@@ -1,7 +1,8 @@
 # IOServiceInterestContent
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,14 +14,20 @@
 struct IOServiceInterestContent
 ```
 
+```c
+typedef struct IOServiceInterestContent {
+    ...
+} IOServiceInterestContent;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](ioserviceinterestcontent/1514548-init.md)
-- [init(messageType: natural_t, messageArgument: UnsafeMutableRawPointer?)](ioserviceinterestcontent/1514388-init.md)
+- [init()](./ioserviceinterestcontent/api-1514548-init.md)
+- [init(messageType: natural_t, messageArgument: UnsafeMutableRawPointer?)](./ioserviceinterestcontent/api-1514388-init.md)
 ### Instance Properties
-- [var messageArgument: UnsafeMutableRawPointer?](ioserviceinterestcontent/1455538-messageargument.md)
-- [var messageType: natural_t](ioserviceinterestcontent/1455584-messagetype.md)
+- [var messageArgument: UnsafeMutableRawPointer?](./ioserviceinterestcontent/api-1455538-messageargument.md)
+- [var messageType: natural_t](./ioserviceinterestcontent/api-1455584-messagetype.md)
 
 
 ---

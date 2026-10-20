@@ -1,7 +1,8 @@
 # cancelled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system canceled the event phase.
 
@@ -14,17 +15,22 @@ The system canceled the event phase.
 static var cancelled: NSEvent.Phase { get }
 ```
 
+```c
+NSEventPhaseCancelled
+```
+
 ## See Also
 
-- [static var began: NSEvent.Phase](nsevent/phase-swift.struct/began.md)
+### Constants
+- [static var began: NSEvent.Phase](./began.md)
   An event phase has begun.
-- [static var stationary: NSEvent.Phase](nsevent/phase-swift.struct/stationary.md)
+- [static var stationary: NSEvent.Phase](./stationary.md)
   An event phase is in progress but hasn’t moved since the previous event.
-- [static var changed: NSEvent.Phase](nsevent/phase-swift.struct/changed.md)
+- [static var changed: NSEvent.Phase](./changed.md)
   An event phase has changed.
-- [static var ended: NSEvent.Phase](nsevent/phase-swift.struct/ended.md)
+- [static var ended: NSEvent.Phase](./ended.md)
   The event phase ended.
-- [static var mayBegin: NSEvent.Phase](nsevent/phase-swift.struct/maybegin.md)
+- [static var mayBegin: NSEvent.Phase](./maybegin.md)
   The system event phase may begin.
 
 

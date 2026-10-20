@@ -1,7 +1,8 @@
 # availableVideoCodecTypes
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var availableVideoCodecTypes: [AVVideoCodecType] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableVideoCodecTypes;
 ```
 
 

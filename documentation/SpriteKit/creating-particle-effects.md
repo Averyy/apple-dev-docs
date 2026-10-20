@@ -1,6 +1,7 @@
 # Creating Particle Effects
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Add particle effects to your app by creating repeatable particles in Xcode’s editor, or in code.
 
@@ -18,7 +19,7 @@ Using Xcode to create emitter nodes has a few important advantages:
 - You can quickly experiment with new particle effects and see the results immediately.
 - You separate the task of designing a particle effect from the programming task of using it. Your artists can work on new particle effects independent of your game code.
 
-For more information on using Xcode to create particle effects, see [`Add a particle emitter to your project`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev9eed16018).
+For more information on using Xcode to create particle effects, see [Add a particle emitter to your project](http://help.apple.com/xcode/mac/current/#/dev9eed16018).
 
 The following code shows how to load a particle effect that was created by Xcode. All particle effects are saved using Cocoa’s standard archiving mechanisms, so the code first creates a path to the smoke effect, and then loads the archive.
 
@@ -43,12 +44,12 @@ func newSmokeEmitter() -> SKEmitterNode? {
 
 ##### Configure Particles in Code
 
-The [`SKEmitterNode`](skemitternode.md) class provides many properties for configuring an emitter node’s behavior. The Xcode emitter editor sets the same property values. You can also create and configure your own emitter, or you can take an emitter node created in the Particle Emitter Editor, load it, and change its property values.
+The [`SKEmitterNode`](./skemitternode.md) class provides many properties for configuring an emitter node’s behavior. The Xcode emitter editor sets the same property values. You can also create and configure your own emitter, or you can take an emitter node created in the Particle Emitter Editor, load it, and change its property values.
 
 When the emitter node is in a scene, it emits new particles. You use the following properties to define how many particles it creates:
 
-- The [`particleBirthRate`](skemitternode/particlebirthrate.md) property specifies the number of particles that the emitter creates every second. For example, consider using the smoke effect in the previous code to show damage to a rocket ship. As the ship takes more damage, you can increase the birth rate of the emitter to add more smoke.
-- The [`numParticlesToEmit`](skemitternode/numparticlestoemit.md) property specifies how many particles are created before the emitter turns itself off. You can also configure the node to emit an unlimited number of particles.
+- The [`particleBirthRate`](./skemitternode/particlebirthrate.md) property specifies the number of particles that the emitter creates every second. For example, consider using the smoke effect in the previous code to show damage to a rocket ship. As the ship takes more damage, you can increase the birth rate of the emitter to add more smoke.
+- The [`numParticlesToEmit`](./skemitternode/numparticlestoemit.md) property specifies how many particles are created before the emitter turns itself off. You can also configure the node to emit an unlimited number of particles.
 
 When a particle is created, its initial property values are determined by the properties of the emitter. For each of the particle’s properties, the emitter class declares up to four properties:
 
@@ -57,7 +58,7 @@ When a particle is created, its initial property values are determined by the pr
 - The rate at which the value changes over time, also known as the property’s *speed*. Not all properties have a speed property.
 - An optional keyframe sequence.
 
-The complete list of properties used to configure an emitter node is given in [`SKEmitterNode`](skemitternode.md).
+The complete list of properties used to configure an emitter node is given in [`SKEmitterNode`](./skemitternode.md).
 
 The following code shows how you might configure an emitter’s `scale` property. This is a simplified version of a node’s `xScale` and `yScale` properties, and determines how large the particle is.
 

@@ -1,9 +1,10 @@
 # prependApplicationProtocol(options:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Dynamically adds another protocol that will run above your protocol after your protocol calls [`markReady()`](nwprotocolframer/instance/markready().md).
+Dynamically adds another protocol that will run above your protocol after your protocol calls [`markReady()`](./markready%28%29.md).
 
 **Availability**:
 - iOS 13.0+
@@ -22,9 +23,10 @@ final func prependApplicationProtocol(options: NWProtocolOptions) throws
 
 ## See Also
 
-- [func markReady()](nwprotocolframer/instance/markready.md)
+### Managing Instance Lifetime
+- [func markReady()](./markready%28%29.md)
   Indicates to a connection that your protocol’s handshake is complete.
-- [func markFailed(error: NWError?)](nwprotocolframer/instance/markfailed(error:).md)
+- [func markFailed(error: NWError?)](./markfailed%28error%29.md)
   Indicates to a connection that your protocol has encountered an error, or has gracefully closed.
 
 

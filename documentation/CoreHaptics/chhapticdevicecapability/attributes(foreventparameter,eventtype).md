@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the haptic device’s attributes for an event parameter.
@@ -20,6 +21,10 @@ Returns the haptic device’s attributes for an event parameter.
 func attributes(forEventParameter inParameter: CHHapticEvent.ParameterID, eventType type: CHHapticEvent.EventType) throws -> any CHHapticParameterAttributes
 ```
 
+```objc
+- (id<CHHapticParameterAttributes>) attributesForEventParameter:(CHHapticEventParameterID) inParameter eventType:(CHHapticEventType) type error:(NSError **) outError;
+```
+
 #### Return Value
 
 The haptic device’s attributes for the given event parameter ID.
@@ -31,7 +36,8 @@ The haptic device’s attributes for the given event parameter ID.
 
 ## See Also
 
-- [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](chhapticdevicecapability/attributes(fordynamicparameter:).md)
+### Determining Supported Parameters
+- [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](./attributes%28fordynamicparameter%29.md)
   Requests the haptic device’s attributes for a dynamic parameter.
 
 

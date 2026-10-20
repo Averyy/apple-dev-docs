@@ -1,7 +1,8 @@
 # MTRAttributeReport
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,28 +19,32 @@
 class MTRAttributeReport
 ```
 
+```objc
+@interface MTRAttributeReport : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrattributereport/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrattributereport/init%28responsevalue%29.md)
 ### Instance Properties
-- [var error: (any Error)?](mtrattributereport/error.md)
-- [var path: MTRAttributePath](mtrattributereport/path.md)
-- [var value: Any?](mtrattributereport/value.md)
+- [var error: (any Error)?](./mtrattributereport/error.md)
+- [var path: MTRAttributePath](./mtrattributereport/path.md)
+- [var value: Any?](./mtrattributereport/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

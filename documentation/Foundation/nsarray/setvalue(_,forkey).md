@@ -1,9 +1,10 @@
 # setValue(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Invokes [`setValue(_:forKey:)`](nsarray/setvalue(_:forkey:).md) on each of the array’s items using the specified `value` and `key`.
+Invokes [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) on each of the array’s items using the specified `value` and `key`.
 
 **Availability**:
 - iOS 2.0+
@@ -20,6 +21,10 @@ Invokes [`setValue(_:forKey:)`](nsarray/setvalue(_:forkey:).md) on each of the a
 func setValue(_ value: Any?, forKey key: String)
 ```
 
+```objc
+- (void) setValue:(id) value forKey:(NSString *) key;
+```
+
 ## Parameters
 
 - `value`: The object value.
@@ -27,8 +32,9 @@ func setValue(_ value: Any?, forKey key: String)
 
 ## See Also
 
-- [func value(forKey: String) -> Any](nsarray/value(forkey:).md)
-  Returns an array containing the results of invoking [`value(forKey:)`](nsarray/value(forkey:).md) using `key` on each of the array’s objects.
+### Key-Value Coding
+- [func value(forKey: String) -> Any](./value%28forkey%29.md)
+  Returns an array containing the results of invoking [`value(forKey:)`](./value%28forkey%29.md) using `key` on each of the array’s objects.
 
 
 ---

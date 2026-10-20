@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of bytes required to store the encoded resources of an argument buffer.
@@ -20,9 +21,13 @@ The number of bytes required to store the encoded resources of an argument buffe
 var encodedLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger encodedLength;
+```
+
 #### Discussion
 
-After creating an [`MTLArgumentEncoder`](mtlargumentencoder.md) instance, use this value to create the [`MTLBuffer`](mtlbuffer.md) instance that represents an argument buffer.
+After creating an [`MTLArgumentEncoder`](../mtlargumentencoder.md) instance, use this value to create the [`MTLBuffer`](../mtlbuffer.md) instance that represents an argument buffer.
 
 ```swift
 id <MTLArgumentEncoder> encoder = [_function newArgumentEncoderWithBufferIndex:0];
@@ -32,9 +37,10 @@ id <MTLBuffer> buffer = [_device newBufferWithLength:encoder.encodedLength optio
 
 ## See Also
 
-- [func setArgumentBuffer((any MTLBuffer)?, offset: Int)](mtlargumentencoder/setargumentbuffer(_:offset:).md)
+### Creating an argument buffer
+- [func setArgumentBuffer((any MTLBuffer)?, offset: Int)](./setargumentbuffer%28_,offset%29.md)
   Specifies the position in a buffer where the encoder writes argument data.
-- [func setArgumentBuffer((any MTLBuffer)?, startOffset: Int, arrayElement: Int)](mtlargumentencoder/setargumentbuffer(_:startoffset:arrayelement:).md)
+- [func setArgumentBuffer((any MTLBuffer)?, startOffset: Int, arrayElement: Int)](./setargumentbuffer%28_,startoffset,arrayelement%29.md)
   Specifies an array element within a buffer where the encoder writes argument data.
 
 

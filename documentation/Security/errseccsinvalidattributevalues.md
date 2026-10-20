@@ -1,7 +1,8 @@
 # errSecCSInvalidAttributeValues
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute value associated with a key is out of range or is the wrong type.
 
@@ -13,6 +14,10 @@ An attribute value associated with a key is out of range or is the wrong type.
 
 ```swift
 var errSecCSInvalidAttributeValues: OSStatus { get }
+```
+
+```c
+errSecCSInvalidAttributeValues
 ```
 
 

@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll view’s content.
 
@@ -22,9 +23,10 @@ var content: Content
 
 ## See Also
 
-- [var axes: Axis.Set](scrollview/axes.md)
+### Configuring a scroll view
+- [var axes: Axis.Set](./axes.md)
   The scrollable axes of the scroll view.
-- [var showsIndicators: Bool](scrollview/showsindicators.md)
+- [var showsIndicators: Bool](./showsindicators.md)
   A value that indicates whether the scroll view displays the scrollable component of the content offset, in a way that’s suitable for the platform.
 
 

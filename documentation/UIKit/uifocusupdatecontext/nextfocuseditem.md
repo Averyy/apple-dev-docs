@@ -1,7 +1,8 @@
 # nextFocusedItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item to be focused after the update.
 
@@ -18,13 +19,18 @@ The item to be focused after the update.
 weak var nextFocusedItem: (any UIFocusItem)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIFocusItem> nextFocusedItem;
+```
+
 #### Discussion
 
 This property is set to `nil` if no item is receiving the focus.
 
 ## See Also
 
-- [var previouslyFocusedItem: (any UIFocusItem)?](uifocusupdatecontext/previouslyfocuseditem.md)
+### Getting related focus items
+- [var previouslyFocusedItem: (any UIFocusItem)?](./previouslyfocuseditem.md)
   The item that was focused before the update.
 
 

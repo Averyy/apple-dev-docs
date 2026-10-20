@@ -1,7 +1,8 @@
 # hide()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that hides a node.
 
@@ -20,19 +21,24 @@ Creates an action that hides a node.
 class func hide() -> SKAction
 ```
 
+```objc
++ (SKAction *) hide;
+```
+
 #### Return Value
 
 A new action object.
 
 #### Discussion
 
-This action has an instantaneous duration. When the action executes, the node’s [`isHidden`](sknode/ishidden.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+This action has an instantaneous duration. When the action executes, the node’s [`isHidden`](../sknode/ishidden.md) property is set to [`true`](../../Swift/true.md).
 
 This action is reversible; the reversed action shows the node.
 
 ## See Also
 
-- [class func unhide() -> SKAction](skaction/unhide.md)
+### Controlling Node Visibility
+- [class func unhide() -> SKAction](./unhide%28%29.md)
   Creates an action that makes a node visible.
 
 

@@ -1,7 +1,8 @@
 # MPSNNScaleNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Abstract node representing an image resampling filter.
 
@@ -19,34 +20,39 @@ Abstract node representing an image resampling filter.
 class MPSNNScaleNode
 ```
 
+```objc
+@interface MPSNNScaleNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, outputSize: MTLSize)](mpsnnscalenode/init(source:outputsize:).md)
-- [init(source: MPSNNImageNode, transformProvider: (any MPSImageTransformProvider)?, outputSize: MTLSize)](mpsnnscalenode/init(source:transformprovider:outputsize:).md)
+- [init(source: MPSNNImageNode, outputSize: MTLSize)](./mpsnnscalenode/init%28source,outputsize%29.md)
+- [init(source: MPSNNImageNode, transformProvider: (any MPSImageTransformProvider)?, outputSize: MTLSize)](./mpsnnscalenode/init%28source,transformprovider,outputsize%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Inherited By
-- [MPSNNBilinearScaleNode](mpsnnbilinearscalenode.md)
-- [MPSNNLanczosScaleNode](mpsnnlanczosscalenode.md)
+- [MPSNNBilinearScaleNode](./mpsnnbilinearscalenode.md)
+- [MPSNNLanczosScaleNode](./mpsnnlanczosscalenode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSNNBilinearScaleNode](mpsnnbilinearscalenode.md)
+### Resampling Nodes
+- [class MPSNNBilinearScaleNode](./mpsnnbilinearscalenode.md)
   A representation of a bilinear resampling filter.
-- [class MPSNNLanczosScaleNode](mpsnnlanczosscalenode.md)
+- [class MPSNNLanczosScaleNode](./mpsnnlanczosscalenode.md)
   A representation of a Lanczos resampling filter.
-- [protocol MPSImageTransformProvider](mpsimagetransformprovider.md)
+- [protocol MPSImageTransformProvider](./mpsimagetransformprovider.md)
   A general interface for objects that provide image resampling.
 
 

@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for accessing the asset.
 
@@ -10,7 +11,7 @@ The URL for accessing the asset.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,11 +21,15 @@ The URL for accessing the asset.
 var fileURL: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * fileURL;
+```
+
 #### Discussion
 
 After you create an asset, use the URL in this property to access the asset’s contents. The URL in this property is different from the one you specify when creating the asset.
 
-> **Note**: If a modify operation fails with a [`serverRecordChanged`](ckerror/serverrecordchanged.md) error, CloudKit doesn’t download assets for the copy of the server’s record that’s accessible using the error’s [`serverRecord`](ckerror/serverrecord.md) property. In this scenario, [`fileURL`](ckasset/fileurl.md) is `nil` for all of that record’s asset fields.
+> **Note**: If a modify operation fails with a [`serverRecordChanged`](../ckerror/serverrecordchanged.md) error, CloudKit doesn’t download assets for the copy of the server’s record that’s accessible using the error’s [`serverRecord`](../ckerror/serverrecord.md) property. In this scenario, [`fileURL`](./fileurl.md) is `nil` for all of that record’s asset fields.
 
 
 ---

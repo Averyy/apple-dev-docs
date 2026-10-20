@@ -1,15 +1,20 @@
 # cancelBubble
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var cancelBubble: Bool { get set }
+```
+
+```objc
+@property BOOL cancelBubble;
 ```
 
 

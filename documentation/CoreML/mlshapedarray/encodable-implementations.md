@@ -1,11 +1,12 @@
 # Encodable Implementations
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any Encoder) throws](mlshapedarray/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encode a shaped array.
 
 

@@ -1,7 +1,8 @@
 # rescore
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to rescore confidence according to prediction verus ground truth Intersection Over Union (IOU).
 
@@ -11,8 +12,10 @@ A Boolean value that determines whether to rescore confidence according to predi
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,31 +25,32 @@ let rescore: Bool
 
 ## See Also
 
-- [let anchorBoxCount: Int](bnns/lossfunction/yoloparameters/anchorboxcount.md)
+### Instance Properties
+- [let anchorBoxCount: Int](./anchorboxcount.md)
   The number of anchor boxes in each cell.
-- [let anchorBoxSize: Int](bnns/lossfunction/yoloparameters/anchorboxsize.md)
+- [let anchorBoxSize: Int](./anchorboxsize.md)
   The size of the anchor box.
-- [let anchorsData: UnsafeMutablePointer<Float>](bnns/lossfunction/yoloparameters/anchorsdata.md)
+- [let anchorsData: UnsafeMutablePointer<Float>](./anchorsdata.md)
   Maximum IOU for treating as no object.
-- [let classificationScale: Float](bnns/lossfunction/yoloparameters/classificationscale.md)
+- [let classificationScale: Float](./classificationscale.md)
   The value that specifies the classification scaling factor.
-- [let gridColumnCount: Int](bnns/lossfunction/yoloparameters/gridcolumncount.md)
+- [let gridColumnCount: Int](./gridcolumncount.md)
   The number of columns in the grid.
-- [let gridRowsCount: Int](bnns/lossfunction/yoloparameters/gridrowscount.md)
+- [let gridRowsCount: Int](./gridrowscount.md)
   The number of rows in the grid.
-- [let huberDelta: Float](bnns/lossfunction/yoloparameters/huberdelta.md)
+- [let huberDelta: Float](./huberdelta.md)
   A value that’s interpreted as width-height loss.
-- [let noObjectMaximumIoU: Float](bnns/lossfunction/yoloparameters/noobjectmaximumiou.md)
+- [let noObjectMaximumIoU: Float](./noobjectmaximumiou.md)
   The value that specifies intersection over union (IOU) that’s the maximum the function treats as not an object.
-- [let noObjectScale: Float](bnns/lossfunction/yoloparameters/noobjectscale.md)
+- [let noObjectScale: Float](./noobjectscale.md)
   The value that specifies the no-object confidence scaling factor.
-- [let objectMinimumIoU: Float](bnns/lossfunction/yoloparameters/objectminimumiou.md)
+- [let objectMinimumIoU: Float](./objectminimumiou.md)
   The value that specifies intersection over union (IOU) that’s the minimum the function treats as an object.
-- [let objectScale: Float](bnns/lossfunction/yoloparameters/objectscale.md)
+- [let objectScale: Float](./objectscale.md)
   The value that specifies the object confidence loss-scaling factor.
-- [let whScale: Float](bnns/lossfunction/yoloparameters/whscale.md)
+- [let whScale: Float](./whscale.md)
   A Boolean value that determines whether to rescore confidence according to prediction verus ground truth Intersection Over Union (IOU).
-- [let xyScale: Float](bnns/lossfunction/yoloparameters/xyscale.md)
+- [let xyScale: Float](./xyscale.md)
   The value that specifies the x, y loss-scaling factor.
 
 

@@ -1,7 +1,8 @@
 # CFUserNotificationPopUpSelection(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a flag used to set the selected element of a pop-up menu.
 
@@ -14,39 +15,44 @@ Returns a flag used to set the selected element of a pop-up menu.
 func CFUserNotificationPopUpSelection(_ n: CFIndex) -> CFOptionFlags
 ```
 
+```c
+static CFOptionFlags CFUserNotificationPopUpSelection(CFIndex n);
+```
+
 #### Return Value
 
-A flag that can be used to set the selected element of a pop-up menu when creating a user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](cfusernotificationcreate(_:_:_:_:_:).md).
+A flag that can be used to set the selected element of a pop-up menu when creating a user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](./cfusernotificationcreate%28_,_,_,_,_%29.md).
 
 ## Parameters
 
-- `n`: The index of the pop-up menu element to select. The index corresponds to the order in which the pop-up menu elements are listed in the [`kCFUserNotificationPopUpTitlesKey`](kcfusernotificationpopuptitleskey.md) array of the user notification’s description dictionary. `idx` must be in the range `0` to `255`.
+- `n`: The index of the pop-up menu element to select. The index corresponds to the order in which the pop-up menu elements are listed in the [`kCFUserNotificationPopUpTitlesKey`](./kcfusernotificationpopuptitleskey.md) array of the user notification’s description dictionary. `idx` must be in the range `0` to `255`.
 
 ## See Also
 
-- [func CFUserNotificationCancel(CFUserNotification!) -> Int32](cfusernotificationcancel(_:).md)
+### CFUserNotification Miscellaneous Functions
+- [func CFUserNotificationCancel(CFUserNotification!) -> Int32](./cfusernotificationcancel%28_%29.md)
   Cancels a user notification dialog.
-- [func CFUserNotificationCheckBoxChecked(CFIndex) -> CFOptionFlags](cfusernotificationcheckboxchecked(_:).md)
+- [func CFUserNotificationCheckBoxChecked(CFIndex) -> CFOptionFlags](./cfusernotificationcheckboxchecked%28_%29.md)
   Returns a flag used to set or test a checkbox’s state.
-- [func CFUserNotificationCreate(CFAllocator!, CFTimeInterval, CFOptionFlags, UnsafeMutablePointer<Int32>!, CFDictionary!) -> CFUserNotification!](cfusernotificationcreate(_:_:_:_:_:).md)
+- [func CFUserNotificationCreate(CFAllocator!, CFTimeInterval, CFOptionFlags, UnsafeMutablePointer<Int32>!, CFDictionary!) -> CFUserNotification!](./cfusernotificationcreate%28_,_,_,_,_%29.md)
   Creates a CFUserNotification object and displays its notification dialog on screen.
-- [func CFUserNotificationCreateRunLoopSource(CFAllocator!, CFUserNotification!, CFUserNotificationCallBack!, CFIndex) -> CFRunLoopSource!](cfusernotificationcreaterunloopsource(_:_:_:_:).md)
+- [func CFUserNotificationCreateRunLoopSource(CFAllocator!, CFUserNotification!, CFUserNotificationCallBack!, CFIndex) -> CFRunLoopSource!](./cfusernotificationcreaterunloopsource%28_,_,_,_%29.md)
   Creates a run loop source for a user notification.
-- [func CFUserNotificationDisplayAlert(CFTimeInterval, CFOptionFlags, CFURL!, CFURL!, CFURL!, CFString!, CFString!, CFString!, CFString!, CFString!, UnsafeMutablePointer<CFOptionFlags>!) -> Int32](cfusernotificationdisplayalert(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func CFUserNotificationDisplayAlert(CFTimeInterval, CFOptionFlags, CFURL!, CFURL!, CFURL!, CFString!, CFString!, CFString!, CFString!, CFString!, UnsafeMutablePointer<CFOptionFlags>!) -> Int32](./cfusernotificationdisplayalert%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Displays a user notification dialog and waits for a user response.
-- [func CFUserNotificationDisplayNotice(CFTimeInterval, CFOptionFlags, CFURL!, CFURL!, CFURL!, CFString!, CFString!, CFString!) -> Int32](cfusernotificationdisplaynotice(_:_:_:_:_:_:_:_:).md)
+- [func CFUserNotificationDisplayNotice(CFTimeInterval, CFOptionFlags, CFURL!, CFURL!, CFURL!, CFString!, CFString!, CFString!) -> Int32](./cfusernotificationdisplaynotice%28_,_,_,_,_,_,_,_%29.md)
   Displays a user notification dialog that does not need a user response.
-- [func CFUserNotificationGetResponseDictionary(CFUserNotification!) -> CFDictionary!](cfusernotificationgetresponsedictionary(_:).md)
+- [func CFUserNotificationGetResponseDictionary(CFUserNotification!) -> CFDictionary!](./cfusernotificationgetresponsedictionary%28_%29.md)
   Returns the dictionary containing all the text field values from a dismissed notification dialog.
-- [func CFUserNotificationGetResponseValue(CFUserNotification!, CFString!, CFIndex) -> CFString!](cfusernotificationgetresponsevalue(_:_:_:).md)
+- [func CFUserNotificationGetResponseValue(CFUserNotification!, CFString!, CFIndex) -> CFString!](./cfusernotificationgetresponsevalue%28_,_,_%29.md)
   Extracts the values of the text fields from a dismissed notification dialog.
-- [func CFUserNotificationGetTypeID() -> CFTypeID](cfusernotificationgettypeid().md)
+- [func CFUserNotificationGetTypeID() -> CFTypeID](./cfusernotificationgettypeid%28%29.md)
   Returns the type identifier for the `CFUserNotification` opaque type.
-- [func CFUserNotificationReceiveResponse(CFUserNotification!, CFTimeInterval, UnsafeMutablePointer<CFOptionFlags>!) -> Int32](cfusernotificationreceiveresponse(_:_:_:).md)
+- [func CFUserNotificationReceiveResponse(CFUserNotification!, CFTimeInterval, UnsafeMutablePointer<CFOptionFlags>!) -> Int32](./cfusernotificationreceiveresponse%28_,_,_%29.md)
   Waits for the user to respond to a notification or for the notification to time out.
-- [func CFUserNotificationSecureTextField(CFIndex) -> CFOptionFlags](cfusernotificationsecuretextfield(_:).md)
+- [func CFUserNotificationSecureTextField(CFIndex) -> CFOptionFlags](./cfusernotificationsecuretextfield%28_%29.md)
   Returns a flag used to set the secure state of a text field.
-- [func CFUserNotificationUpdate(CFUserNotification!, CFTimeInterval, CFOptionFlags, CFDictionary!) -> Int32](cfusernotificationupdate(_:_:_:_:).md)
+- [func CFUserNotificationUpdate(CFUserNotification!, CFTimeInterval, CFOptionFlags, CFDictionary!) -> Int32](./cfusernotificationupdate%28_,_,_,_%29.md)
   Updates a displayed user notification dialog with new user interface information.
 
 

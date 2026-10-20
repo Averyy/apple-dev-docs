@@ -1,7 +1,8 @@
 # kMIDIPropertyMaxSysExSpeed
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum rate, in bytes per second, at which the system may reliably send System Exclusive (SysEx) messages to this object.
 
@@ -18,17 +19,22 @@ The maximum rate, in bytes per second, at which the system may reliably send Sys
 let kMIDIPropertyMaxSysExSpeed: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyMaxSysExSpeed;
+```
+
 #### Discussion
 
 The owning driver may set an integer value for this property.
 
 ## See Also
 
-- [let kMIDIPropertyNameConfigurationDictionary: CFString](kmidipropertynameconfigurationdictionary.md)
+### Configuration
+- [let kMIDIPropertyNameConfigurationDictionary: CFString](./kmidipropertynameconfigurationdictionary.md)
   The device’s current patch, note, and control name values in MIDINameDocument XML format.
-- [let kMIDIPropertyDriverDeviceEditorApp: CFString](kmidipropertydriverdeviceeditorapp.md)
+- [let kMIDIPropertyDriverDeviceEditorApp: CFString](./kmidipropertydriverdeviceeditorapp.md)
   The full path to an app on the system that configures driver-owned devices.
-- [let kMIDIPropertyNameConfiguration: CFString](kmidipropertynameconfiguration.md)
+- [let kMIDIPropertyNameConfiguration: CFString](./kmidipropertynameconfiguration.md)
   An XML representation of the device’s current patch, note, and control name values.
 
 

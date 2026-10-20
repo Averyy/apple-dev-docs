@@ -1,7 +1,8 @@
 # backgroundEffect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.1+
@@ -12,6 +13,10 @@
 
 ```swift
 var backgroundEffect: UIVisualEffect? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIVisualEffect * backgroundEffect;
 ```
 
 

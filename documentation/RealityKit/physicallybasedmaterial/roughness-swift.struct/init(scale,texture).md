@@ -1,7 +1,8 @@
 # init(scale:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a roughness object from a color or texture.
 
@@ -11,7 +12,7 @@ Creates a roughness object from a color or texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,7 @@ init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 
 The `roughness` property represents how much the surface of the entity scatters light it reflects. A material with a high roughness has a matte appearance, while one with a low roughness has a shiny appearance.
 
-![An illustration showing three spheres with different amounts of](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Roughness-swift-struct-init(scale:texture:)-1@2x.png)
+![An illustration showing three spheres with different amounts of](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicallyBasedMaterial-Roughness-swift-struct-init(scale:texture:)-1@2x.png)
 
 Use this initializer to create a new object from a single roughness value, from an image texture, or from both.
 
@@ -36,9 +37,10 @@ If you specify `texture`, RealityKit calculates the `roughness` for the entity b
 
 ## See Also
 
-- [init(floatLiteral: Float)](physicallybasedmaterial/roughness-swift.struct/init(floatliteral:).md)
+### Creating a roughness object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an object from a single value.
-- [init(CustomMaterial.Roughness)](physicallybasedmaterial/roughness-swift.struct/init(_:).md)
+- [init(CustomMaterial.Roughness)](./init%28_%29.md)
   Creates a roughness object from a custom material’s roughness property.
 
 

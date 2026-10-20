@@ -1,7 +1,8 @@
 # callAsFunction()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a refresh action.
 
@@ -22,7 +23,7 @@ func callAsFunction() async
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`RefreshAction`](refreshaction.md) structure that you get from the [`Environment`](environment.md):
+Don’t call this method directly. SwiftUI calls it when you call the [`RefreshAction`](../refreshaction.md) structure that you get from the [`Environment`](../environment.md):
 
 ```swift
 struct RefreshableView: View {
@@ -39,7 +40,7 @@ struct RefreshableView: View {
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*. For information about asynchronous operations in Swift, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*. For information about asynchronous operations in Swift, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
 
 ---

@@ -1,7 +1,8 @@
 # averageHeartRate
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average heart rate that the person experiences during the workouts.
 
@@ -16,11 +17,12 @@ var averageHeartRate: HKQuantity?
 
 ## See Also
 
-- [var icon: URL?](journalingsuggestion/workoutgroup/icon.md)
+### Accessing workout summary information
+- [var icon: URL?](./icon.md)
   The URL to an image on disc that represents the types of completed workout.
-- [var duration: TimeInterval?](journalingsuggestion/workoutgroup/duration.md)
+- [var duration: TimeInterval?](./duration.md)
   The amount of time the workouts span.
-- [var activeEnergyBurned: HKQuantity?](journalingsuggestion/workoutgroup/activeenergyburned.md)
+- [var activeEnergyBurned: HKQuantity?](./activeenergyburned.md)
   The total energy that the person burns over the workouts.
 
 

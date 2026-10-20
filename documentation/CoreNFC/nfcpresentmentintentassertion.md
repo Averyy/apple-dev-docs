@@ -1,7 +1,8 @@
 # NFCPresentmentIntentAssertion
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that signals your app’s intention to make exclusive use of the device’s contactless features.
 
@@ -18,7 +19,7 @@ final class NFCPresentmentIntentAssertion
 
 #### Overview
 
-Acquire an instance of this class to prevent the system default contactless app from launching in response to a user gesture or NFC reader RF field. You do this when the person using your app expresses an active intent to perform an NFC transaction, like choosing a credential such as a payment card or transit pass. You can only acquire a [`NFCPresentmentIntentAssertion`](nfcpresentmentintentassertion.md) when your app is in the foreground state.
+Acquire an instance of this class to prevent the system default contactless app from launching in response to a user gesture or NFC reader RF field. You do this when the person using your app expresses an active intent to perform an NFC transaction, like choosing a credential such as a payment card or transit pass. You can only acquire a [`NFCPresentmentIntentAssertion`](./nfcpresentmentintentassertion.md) when your app is in the foreground state.
 
 > **Note**: A presentment intent assertion isn’t required before launching the presentment sheet.
 
@@ -33,23 +34,24 @@ After the presentment intent assertion expires, you must wait through a 15-secon
 ## Topics
 
 ### Acquiring a presentment intention instance
-- [static func acquire() async throws -> NFCPresentmentIntentAssertion](nfcpresentmentintentassertion/acquire.md)
+- [static func acquire() async throws -> NFCPresentmentIntentAssertion](./nfcpresentmentintentassertion/acquire%28%29.md)
   Acquire a presentment intent assertion instance from the system.
 ### Testing presentment intention validity
-- [var isValid: Bool](nfcpresentmentintentassertion/isvalid.md)
+- [var isValid: Bool](./nfcpresentmentintentassertion/isvalid.md)
   A Boolean property that indicates whether the presentment intent assertion instance is still valid.
-- [NFCPresentmentIntentAssertion.Error](nfcpresentmentintentassertion/error.md)
+- [NFCPresentmentIntentAssertion.Error](./nfcpresentmentintentassertion/error.md)
   An error type that indicates problems with the presentment intent assertion.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CardSession](cardsession.md)
+### Card sessions
+- [class CardSession](./cardsession.md)
   An ISO 7816 card emulation session.
 
 

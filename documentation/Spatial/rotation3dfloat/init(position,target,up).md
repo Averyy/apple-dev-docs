@@ -1,7 +1,8 @@
 # init(position:target:up:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a rotation that’s the look at direction from the eye position to the target.
 

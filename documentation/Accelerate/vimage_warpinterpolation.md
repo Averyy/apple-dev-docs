@@ -1,18 +1,19 @@
 # vImage_WarpInterpolation
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Constants for selecting the interpolation mode
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,30 +21,35 @@ Constants for selecting the interpolation mode
 typealias vImage_WarpInterpolation = Int32
 ```
 
+```c
+typedef int32_t vImage_WarpInterpolation;
+```
+
 ## Topics
 
 ### Constants
-- [var kvImageInterpolationLinear: Int](kvimageinterpolationlinear.md)
+- [var kvImageInterpolationLinear: Int](./kvimageinterpolationlinear.md)
   Linear interpoation
-- [var kvImageInterpolationNearest: Int](kvimageinterpolationnearest.md)
+- [var kvImageInterpolationNearest: Int](./kvimageinterpolationnearest.md)
   Nearest neigborhood
 
 ## See Also
 
-- [Error codes](1578972-error-codes.md)
+### Constants
+- [Error codes](./api-1578972-error-codes.md)
   Error codes that vImage functions return when an operation fails.
-- [Core Video Image Format Errors](1498271-core-video-image-format-errors.md)
-- [Processing Flags](1578976-processing-flags.md)
+- [Core Video Image Format Errors](./api-1498271-core-video-image-format-errors.md)
+- [Processing Flags](./api-1578976-processing-flags.md)
   Set flags on vImage operations to specify processing options.
-- [Dithering Methods](1533233-dithering-methods.md)
+- [Dithering Methods](./api-1533233-dithering-methods.md)
   Specify the dithering method some vImage conversion functions use.
-- [Availability Flags](availability-flags.md)
+- [Availability Flags](./availability-flags.md)
   Obtain the availability of particular vImage features.
-- [Decode Arrays](decode-arrays.md)
+- [Decode Arrays](./decode-arrays.md)
   Specify the decode array constant to use with 16Q12-formatted data.
-- [Buffer Types](buffer-types.md)
+- [Buffer Types](./buffer-types.md)
   Look up buffer type codes vImage conversions provide.
-- [typealias vImageMatrixType](vimagematrixtype.md)
+- [typealias vImageMatrixType](./vimagematrixtype.md)
   An enumeration of RGB -> Y’CbCr conversion matrix types.
 
 

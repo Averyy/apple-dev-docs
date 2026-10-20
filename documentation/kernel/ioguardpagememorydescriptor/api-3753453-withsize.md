@@ -1,14 +1,15 @@
 # withSize
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOGuardPageMemoryDescriptor> withSize(vm_size_t size);
 ```
 

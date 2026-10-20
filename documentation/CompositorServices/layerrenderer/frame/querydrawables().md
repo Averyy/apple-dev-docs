@@ -1,7 +1,8 @@
 # queryDrawables()
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the array of drawables expected to be used for the given frame. These drawables each have textures, transforms and timing information for drawing the frame.
 
@@ -17,7 +18,7 @@ func queryDrawables() -> [LayerRenderer.Drawable]
 
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Return Value
 
@@ -29,7 +30,8 @@ Call this function when you’re ready to encode the drawing commands for the fr
 
 ## See Also
 
-- [func queryDrawable() -> LayerRenderer.Drawable?](layerrenderer/frame/querydrawable.md)
+### Getting the drawable environment
+- [func queryDrawable() -> LayerRenderer.Drawable?](./querydrawable%28%29.md)
   Retrieves the frame’s drawable, which contains the textures and drawing environment for the frame.
 
 

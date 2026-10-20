@@ -1,7 +1,8 @@
 # CommunicationTopic.Action
 
 **Framework**: PermissionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A communication action you can request permission for.
 
@@ -21,38 +22,39 @@ enum Action
 ## Topics
 
 ### Specifying communication actions
-- [CommunicationTopic.Action.audioCall](communicationtopic/action/audiocall.md)
+- [CommunicationTopic.Action.audioCall](./action/audiocall.md)
   A request to audio call with someone.
-- [CommunicationTopic.Action.call](communicationtopic/action/call.md)
+- [CommunicationTopic.Action.call](./action/call.md)
   A request to call someone.
-- [CommunicationTopic.Action.follow](communicationtopic/action/follow.md)
+- [CommunicationTopic.Action.follow](./action/follow.md)
   A request to follow someone.
-- [CommunicationTopic.Action.friend](communicationtopic/action/friend.md)
+- [CommunicationTopic.Action.friend](./action/friend.md)
   A request to friend someone.
-- [CommunicationTopic.Action.message](communicationtopic/action/message.md)
+- [CommunicationTopic.Action.message](./action/message.md)
   A request to message someone.
-- [CommunicationTopic.Action.beFollowed](communicationtopic/action/befollowed.md)
+- [CommunicationTopic.Action.beFollowed](./action/befollowed.md)
   A request to be followed by someone.
-- [CommunicationTopic.Action.chat](communicationtopic/action/chat.md)
+- [CommunicationTopic.Action.chat](./action/chat.md)
   A request to chat with someone.
-- [CommunicationTopic.Action.communicate](communicationtopic/action/communicate.md)
+- [CommunicationTopic.Action.communicate](./action/communicate.md)
   A request to communicate with someone.
-- [CommunicationTopic.Action.connect](communicationtopic/action/connect.md)
+- [CommunicationTopic.Action.connect](./action/connect.md)
   A request to connect with someone.
-- [CommunicationTopic.Action.videoCall](communicationtopic/action/videocall.md)
+- [CommunicationTopic.Action.videoCall](./action/videocall.md)
   A request to video call with someone.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [CommunicationTopic.PersonInformation](communicationtopic/personinformation-swift.struct.md)
+### Working with supporting types
+- [CommunicationTopic.PersonInformation](./personinformation-swift.struct.md)
   Information about a person the child wants to communicate with.
 
 

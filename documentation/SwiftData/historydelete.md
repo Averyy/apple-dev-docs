@@ -1,7 +1,8 @@
 # HistoryDelete
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that enables a custom data store to delete items from the history of changes to its persisted models.
 
@@ -24,44 +25,45 @@ protocol HistoryDelete<Model> : Sendable
 ## Topics
 
 ### History deletion properites
-- [var changeIdentifier: Self.ChangeIdentifier](historydelete/changeidentifier-swift.property.md)
+- [var changeIdentifier: Self.ChangeIdentifier](./historydelete/changeidentifier-swift.property.md)
   The change identifier of the delete operation.
-- [var changedPersistentIdentifier: PersistentIdentifier](historydelete/changedpersistentidentifier.md)
+- [var changedPersistentIdentifier: PersistentIdentifier](./historydelete/changedpersistentidentifier.md)
   The changed persistent identifier of the delete operation.
-- [var tombstone: HistoryTombstone<Self.Model>](historydelete/tombstone.md)
+- [var tombstone: HistoryTombstone<Self.Model>](./historydelete/tombstone.md)
   The value the framework uses to represent information about data the Swift Data previously deleted from a model.
-- [var transactionIdentifier: Self.TransactionIdentifier](historydelete/transactionidentifier-swift.property.md)
+- [var transactionIdentifier: Self.TransactionIdentifier](./historydelete/transactionidentifier-swift.property.md)
   The delete operation’s transaction identifier.
 ### Associated types
-- [associatedtype ChangeIdentifier : Comparable, Hashable, Sendable](historydelete/changeidentifier-swift.associatedtype.md)
+- [associatedtype ChangeIdentifier : Comparable, Hashable, Sendable](./historydelete/changeidentifier-swift.associatedtype.md)
   The type associated with the change identifier.
-- [associatedtype Model : PersistentModel](historydelete/model.md)
+- [associatedtype Model : PersistentModel](./historydelete/model.md)
   The type associated with the persistent model.
-- [associatedtype TransactionIdentifier : Comparable, Hashable, Sendable](historydelete/transactionidentifier-swift.associatedtype.md)
+- [associatedtype TransactionIdentifier : Comparable, Hashable, Sendable](./historydelete/transactionidentifier-swift.associatedtype.md)
   The type associated with the transaction identifier.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DefaultHistoryDelete](defaulthistorydelete.md)
+- [DefaultHistoryDelete](./defaulthistorydelete.md)
 
 ## See Also
 
-- [enum HistoryChange](historychange.md)
+### History life cycle
+- [enum HistoryChange](./historychange.md)
   Values that describe data history transactions.
-- [protocol HistoryInsert](historyinsert.md)
-- [protocol HistoryToken](historytoken.md)
-- [protocol HistoryTransaction](historytransaction.md)
-- [protocol HistoryUpdate](historyupdate.md)
-- [struct HistoryTombstone](historytombstone.md)
-- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
-- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
-- [struct DefaultHistoryDelete](defaulthistorydelete.md)
-- [struct DefaultHistoryToken](defaulthistorytoken.md)
-- [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+- [protocol HistoryInsert](./historyinsert.md)
+- [protocol HistoryToken](./historytoken.md)
+- [protocol HistoryTransaction](./historytransaction.md)
+- [protocol HistoryUpdate](./historyupdate.md)
+- [struct HistoryTombstone](./historytombstone.md)
+- [struct DefaultHistoryInsert](./defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](./defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](./defaulthistorydelete.md)
+- [struct DefaultHistoryToken](./defaulthistorytoken.md)
+- [struct DefaultHistoryTransaction](./defaulthistorytransaction.md)
 
 
 ---

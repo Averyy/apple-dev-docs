@@ -1,7 +1,8 @@
 # CGAffineTransformMakeRotation(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an affine transformation matrix constructed from a rotation value you provide.
 
@@ -10,7 +11,7 @@ Returns an affine transformation matrix constructed from a rotation value you pr
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns an affine transformation matrix constructed from a rotation value you pr
 
 ```swift
 func CGAffineTransformMakeRotation(_ angle: CGFloat) -> CGAffineTransform
+```
+
+```c
+extern CGAffineTransform CGAffineTransformMakeRotation(CGFloat angle);
 ```
 
 #### Return Value
@@ -28,15 +33,15 @@ A new affine transformation matrix.
 
 This function creates a `CGAffineTransform` structure, which you can use (and reuse, if you want) to rotate a coordinate system. The matrix takes the following form:
 
-![A 3 by 3 matrix.](/images/com.apple.coregraphics/media-1966725@2x.png)
+![A 3 by 3 matrix.](https://developer.apple.com/tutorials/images/com.apple.coregraphics/media-1966725@2x.png)
 
 The actual direction of rotation is dependent on the coordinate system orientation of the target platform, which is different in iOS and macOS. Because the third column is always `(0,0,1)`, the `CGAffineTransform` data structure returned by this function contains values for only the first two columns.
 
 These are the resulting equations used to apply the rotation to a point (x, y):
 
-![Rotation equations.](/images/com.apple.coregraphics/media-1966730@2x.png)
+![Rotation equations.](https://developer.apple.com/tutorials/images/com.apple.coregraphics/media-1966730@2x.png)
 
-If you want only to rotate an object to be drawn, it is not necessary to construct an affine transform to do so. The most direct way to rotate your drawing is by calling the function [`rotate(by:)`](cgcontext/rotate(by:).md).
+If you want only to rotate an object to be drawn, it is not necessary to construct an affine transform to do so. The most direct way to rotate your drawing is by calling the function [`rotate(by:)`](./cgcontext/rotate%28by%29.md).
 
 ## Parameters
 
@@ -44,11 +49,12 @@ If you want only to rotate an object to be drawn, it is not necessary to constru
 
 ## See Also
 
-- [func CGAffineTransformMake(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat, CGFloat) -> CGAffineTransform](cgaffinetransformmake(_:_:_:_:_:_:).md)
+### Creating an Affine Transformation Matrix
+- [func CGAffineTransformMake(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat, CGFloat) -> CGAffineTransform](./cgaffinetransformmake%28_,_,_,_,_,_%29.md)
   Returns an affine transformation matrix constructed from values you provide.
-- [func CGAffineTransformMakeScale(CGFloat, CGFloat) -> CGAffineTransform](cgaffinetransformmakescale(_:_:).md)
+- [func CGAffineTransformMakeScale(CGFloat, CGFloat) -> CGAffineTransform](./cgaffinetransformmakescale%28_,_%29.md)
   Returns an affine transformation matrix constructed from scaling values you provide.
-- [func CGAffineTransformMakeTranslation(CGFloat, CGFloat) -> CGAffineTransform](cgaffinetransformmaketranslation(_:_:).md)
+- [func CGAffineTransformMakeTranslation(CGFloat, CGFloat) -> CGAffineTransform](./cgaffinetransformmaketranslation%28_,_%29.md)
   Returns an affine transformation matrix constructed from translation values you provide.
 
 

@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: UUID](shmediaitem/id.md)
+- [var id: UUID](./id.md)
   A unique identifier for this media item.
 
 

@@ -1,7 +1,8 @@
 # errSecTimestampRevocationWarning
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A timestamp authority revocation warning is issued.
 
@@ -18,6 +19,10 @@ A timestamp authority revocation warning is issued.
 
 ```swift
 var errSecTimestampRevocationWarning: OSStatus { get }
+```
+
+```c
+errSecTimestampRevocationWarning
 ```
 
 

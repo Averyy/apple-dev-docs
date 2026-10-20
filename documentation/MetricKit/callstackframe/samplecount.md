@@ -1,7 +1,8 @@
 # sampleCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sample count (for sampled stack traces)
 
@@ -20,11 +21,12 @@ let sampleCount: Int?
 
 ## See Also
 
-- [let binaryUUID: UUID?](callstackframe/binaryuuid.md)
+### Frame details
+- [let binaryUUID: UUID?](./binaryuuid.md)
   Binary UUID (references CallStackTree.binaryInfo)
-- [let address: UInt64?](callstackframe/address.md)
+- [let address: UInt64?](./address.md)
   Absolute address
-- [let offsetIntoBinaryTextSegment: UInt64?](callstackframe/offsetintobinarytextsegment.md)
+- [let offsetIntoBinaryTextSegment: UInt64?](./offsetintobinarytextsegment.md)
   Offset into binary text segment
 
 

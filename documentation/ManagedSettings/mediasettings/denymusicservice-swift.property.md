@@ -1,7 +1,8 @@
 # denyMusicService
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from accessing Apple Music’s streaming content.
 
@@ -22,7 +23,8 @@ If you set this value to `true`, the Music app reverts to classic mode. If your 
 
 ## See Also
 
-- [static let denyMusicService: SettingMetadata<Bool>](mediasettings/denymusicservice-swift.type.property.md)
+### Denying the Apple Music Service
+- [static let denyMusicService: SettingMetadata<Bool>](./denymusicservice-swift.type.property.md)
   The metadata associated with denying access to Apple Music.
 
 

@@ -17,16 +17,16 @@ The Swift API closely follows the
 NumPy with a few exceptions. Here are some useful pages showing how MLX Swift works and is different
 from python:
 
-- <doc:converting-python> -- information about converting Python code and differences between Python and Swift
-- <doc:indexing> -- information about array indexing
-- <doc:arithmetic> -- information about array arithmetic
+- [Converting From Python](Articles/converting-python.md) -- information about converting Python code and differences between Python and Swift
+- [Indexing](Organization/indexing.md) -- information about array indexing
+- [Arithmetic](Organization/arithmetic.md) -- information about array arithmetic
 
 The main differences between MLX and NumPy are:
 
  - **Composable function transformations**: MLX has composable function
    transformations for automatic differentiation, automatic vectorization,
    and computation graph optimization.
- - **<doc:lazy-evaluation>**: Computations in MLX are lazy. Arrays are only
+ - **[Lazy Evaluation](Articles/lazy-evaluation.md)**: Computations in MLX are lazy. Arrays are only
    materialized when needed.
  - **Multi-device**: Operations can run on any of the supported devices (CPU,
    GPU, ...)
@@ -34,7 +34,7 @@ The main differences between MLX and NumPy are:
 The design of MLX is inspired by frameworks like 
 [PyTorch](https://pytorch.org/), [Jax](https://github.com/google/jax), and
 [ArrayFire](https://arrayfire.org/). A notable difference from these
-frameworks and MLX is the <doc:unified-memory>. Arrays in MLX live in shared
+frameworks and MLX is the [Unified Memory](Articles/unified-memory.md). Arrays in MLX live in shared
 memory. Operations on MLX arrays can be performed on any of the supported
 device types without performing data copies. Currently supported device types
 are the CPU and GPU.
@@ -68,7 +68,7 @@ try await ticket.withWiredLimit {
 }
 ```
 
-See <doc:wired-memory> for configuration, best practices, and policy guidance.
+See [Wired Memory Management](Articles/wired-memory.md) for configuration, best practices, and policy guidance.
 
 ## Other MLX Packages
 
@@ -81,18 +81,18 @@ See <doc:wired-memory> for configuration, best practices, and policy guidance.
 
 ### MLX
 
-- <doc:install>
-- <doc:troubleshooting>
-- <doc:examples>
-- <doc:converting-python>
-- <doc:broadcasting>
-- <doc:lazy-evaluation>
-- <doc:unified-memory>
-- <doc:vmap>
-- <doc:compilation>
-- <doc:using-streams>
-- <doc:running-on-ios>
-- <doc:wired-memory>
+- [Installation](install.md)
+- [Troubleshooting](troubleshooting.md)
+- [MLX Swift Examples](examples.md)
+- [Converting From Python](Articles/converting-python.md)
+- [Numpy Style Broadcasting](Articles/broadcasting.md)
+- [Lazy Evaluation](Articles/lazy-evaluation.md)
+- [Unified Memory](Articles/unified-memory.md)
+- [Vectorization](Articles/vmap.md)
+- [Compilation](Articles/compilation.md)
+- [Using Streams](Articles/using-streams.md)
+- [Running on iOS](Articles/running-on-ios.md)
+- [Wired Memory Management](Articles/wired-memory.md)
 
 ### MLXArray
 
@@ -100,7 +100,7 @@ See <doc:wired-memory> for configuration, best practices, and policy guidance.
 
 ### Free Functions
 
-- <doc:free-functions>
+- [Free Functions](free-functions.md)
 
 ### Memory
 

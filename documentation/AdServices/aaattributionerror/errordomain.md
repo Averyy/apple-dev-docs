@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: AdServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain the framework uses when returning errors.
 

@@ -1,7 +1,8 @@
 # refreshRate
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode’s refresh rate.
 
@@ -15,13 +16,18 @@ The mode’s refresh rate.
 var refreshRate: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double refreshRate;
+```
+
 #### Discussion
 
 Consider supplying only modes that have a refresh rate equal to that of the host environment’s physical display.
 
 ## See Also
 
-- [var sizeInPixels: PGDisplayCoord_t](pgdisplaymode/sizeinpixels.md)
+### Inspecting Mode Properties
+- [var sizeInPixels: PGDisplayCoord_t](./sizeinpixels.md)
   The display mode’s dimensions in pixels.
 
 

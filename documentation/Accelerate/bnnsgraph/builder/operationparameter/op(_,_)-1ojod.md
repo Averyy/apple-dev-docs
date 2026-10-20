@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds an element-wise division operation to the current graph.
 

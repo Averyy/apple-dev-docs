@@ -1,7 +1,8 @@
 # percentComplete
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A percentage value that states how far the player has progressed on the achievement.
 
@@ -20,9 +21,21 @@ A percentage value that states how far the player has progressed on the achievem
 var percentComplete: Double { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign) double percentComplete;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign) double percentComplete;
+```
+
 ## Mentions
 
-- [Rewarding players with achievements](rewarding-players-with-achievements.md)
+- [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
 #### Discussion
 
@@ -32,13 +45,14 @@ For example, if the player earns an achievement for discovering a location in yo
 
 ## See Also
 
-- [var identifier: String](gkachievement/identifier.md)
+### Accessing Achievement Properties
+- [var identifier: String](./identifier.md)
   The identifier for the achievement that you enter in App Store Connect.
-- [var player: GKPlayer](gkachievement/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earned the achievement.
-- [var isCompleted: Bool](gkachievement/iscompleted.md)
+- [var isCompleted: Bool](./iscompleted.md)
   A Boolean value that states whether the player has completed the achievement.
-- [var lastReportedDate: Date](gkachievement/lastreporteddate.md)
+- [var lastReportedDate: Date](./lastreporteddate.md)
   The last time your game reported progress on the achievement for the player.
 
 

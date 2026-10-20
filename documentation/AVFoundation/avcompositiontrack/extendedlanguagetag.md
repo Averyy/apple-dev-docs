@@ -1,18 +1,19 @@
 # extendedLanguageTag
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language tag of the track.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ var extendedLanguageTag: String? { get }
 
 #### Discussion
 
-The value is a [`BCP-47`](https://developer.apple.comhttps://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
+The value is a [BCP-47](https://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
 
 ## See Also
 
-- [var languageCode: String?](avcompositiontrack/languagecode.md)
+### Accessing language support
+- [var languageCode: String?](./languagecode.md)
   The language code of the track.
 
 

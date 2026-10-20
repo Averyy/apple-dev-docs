@@ -1,9 +1,10 @@
 # RealityViewCameraContent.Body
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The default view contents of a [`RealityView`](realityview.md) using [`RealityViewCameraContent`](realityviewcameracontent.md).
+The default view contents of a [`RealityView`](../realityview.md) using [`RealityViewCameraContent`](../realityviewcameracontent.md).
 
 **Availability**:
 - iOS 18.0+
@@ -21,14 +22,14 @@ The default view contents of a [`RealityView`](realityview.md) using [`RealityVi
 
 #### Overview
 
-You don’t directly create instances of this type because [`RealityView`](realityview.md) creates them for you.
+You don’t directly create instances of this type because [`RealityView`](../realityview.md) creates them for you.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [View](../../SwiftUI/view.md)
 
 
 ---

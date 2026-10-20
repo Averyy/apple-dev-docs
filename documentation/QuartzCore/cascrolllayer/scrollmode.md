@@ -1,7 +1,8 @@
 # scrollMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the axes in which the layer may be scrolled.
 
@@ -19,13 +20,18 @@ Defines the axes in which the layer may be scrolled.
 var scrollMode: CAScrollLayerScrollMode { get set }
 ```
 
+```objc
+@property (copy) CAScrollLayerScrollMode scrollMode;
+```
+
 #### Discussion
 
-The possible values are described in [`Scroll Modes`](scroll-modes.md). The default is [`both`](cascrolllayerscrollmode/both.md).
+The possible values are described in [Scroll Modes](../scroll-modes.md). The default is [`both`](../cascrolllayerscrollmode/both.md).
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

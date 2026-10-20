@@ -1,7 +1,8 @@
 # CredentialSessionWindowSceneEvent.presentation
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User has perform gesture on device to request for app presentation
 
@@ -17,7 +18,8 @@ case presentation
 
 ## See Also
 
-- [CredentialSessionWindowSceneEvent.readerDetected](credentialsessionwindowsceneevent/readerdetected.md)
+### Events
+- [CredentialSessionWindowSceneEvent.readerDetected](./readerdetected.md)
   External NFC reader is detected, i.e. presence of a NFC field
 
 

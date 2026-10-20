@@ -1,7 +1,8 @@
 # init(configuration:delegate:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -17,10 +18,15 @@
 init(configuration recordingOutputConfiguration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(SCRecordingOutputConfiguration *) recordingOutputConfiguration delegate:(id<SCRecordingOutputDelegate>) delegate;
+```
+
 ## See Also
 
-- [class SCRecordingOutputConfiguration](screcordingoutputconfiguration.md)
-- [protocol SCRecordingOutputDelegate](screcordingoutputdelegate.md)
+### Creating a recording output
+- [class SCRecordingOutputConfiguration](../screcordingoutputconfiguration.md)
+- [protocol SCRecordingOutputDelegate](../screcordingoutputdelegate.md)
 
 
 ---

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.A
 
 # mlx.nn.ALiBi
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.ALiBi.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.ALiBi
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.ALiBi
-
 **class ALiBi**
 : Implements Attention with Linear Biases (ALiBi).
 ALiBi adds a static, non-learnable bias matrix to attention scores proportional
@@ -46,5 +19,3 @@ Create the ALiBi bias matrix.
 
 `create_alibi_slope`(num_heads[, dtype])
 Create the geometric slopes for ALiBi across attention heads.
-
-** Contents

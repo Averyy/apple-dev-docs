@@ -1,7 +1,8 @@
 # currentPageIndicatorTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the current page indicator.
 
@@ -9,7 +10,7 @@ The tint color to apply to the current page indicator.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The tint color to apply to the current page indicator.
 var currentPageIndicatorTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * currentPageIndicatorTintColor;
+```
+
 #### Discussion
 
-The default color is an opaque white for the current page indicator dot. The current page indicator dot is used to indicate the currently visible page. Assigning a new value to this property does not automatically change the color in the [`pageIndicatorTintColor`](uipagecontrol/pageindicatortintcolor.md) property because the value for these two properties is not automatically derived from the other. Both properties must be specified independently.
+The default color is an opaque white for the current page indicator dot. The current page indicator dot is used to indicate the currently visible page. Assigning a new value to this property does not automatically change the color in the [`pageIndicatorTintColor`](./pageindicatortintcolor.md) property because the value for these two properties is not automatically derived from the other. Both properties must be specified independently.
 
 ## See Also
 
-- [var pageIndicatorTintColor: UIColor?](uipagecontrol/pageindicatortintcolor.md)
+### Coloring the page indicator
+- [var pageIndicatorTintColor: UIColor?](./pageindicatortintcolor.md)
   The tint color to apply to the page indicator.
 
 

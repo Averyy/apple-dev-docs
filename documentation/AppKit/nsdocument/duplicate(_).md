@@ -1,7 +1,8 @@
 # duplicate(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of the receiving document in response to the user choosing Duplicate from the File menu.
 
@@ -15,6 +16,10 @@ Creates a copy of the receiving document in response to the user choosing Duplic
 func duplicate(_ sender: Any?)
 ```
 
+```objc
+- (void) duplicateDocument:(id) sender;
+```
+
 #### Discussion
 
 The default implementation of this method merely invokes `[self duplicateDocumentWithDelegate:nil didDuplicateSelector:NULL contextInfo:NULL]`.
@@ -25,9 +30,10 @@ The default implementation of this method merely invokes `[self duplicateDocumen
 
 ## See Also
 
-- [func duplicate() throws -> NSDocument](nsdocument/duplicate.md)
+### Duplicating the Document
+- [func duplicate() throws -> NSDocument](./duplicate%28%29.md)
   Creates a new document whose contents are the same as the receiver and returns an error object if unsuccessful.
-- [func duplicate(withDelegate: Any?, didDuplicate: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/duplicate(withdelegate:didduplicate:contextinfo:).md)
+- [func duplicate(withDelegate: Any?, didDuplicate: Selector?, contextInfo: UnsafeMutableRawPointer?)](./duplicate%28withdelegate,didduplicate,contextinfo%29.md)
   Creates a new document whose contents are the same as the current document.
 
 

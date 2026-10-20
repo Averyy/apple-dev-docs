@@ -1,7 +1,8 @@
 # UnsafeRawBufferPointer
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A  nonowning collection interface to the bytes in a region of memory.
 
@@ -33,7 +34,7 @@ To access the underlying memory through typed operations, the memory must be bou
 
 > **Note**: A *trivial type* can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums. Copying memory that contains values of nontrivial types can only be done safely with a typed pointer. Copying bytes directly from nontrivial, in-memory values does not produce valid copies and can only be done by calling a C API, such as `memmove()`.
 
-### Unsaferawbufferpointer Semantics
+### UnsafeRawBufferPointer Semantics
 
 An `UnsafeRawBufferPointer` instance is a view into memory and does not own the memory that it references. Copying a variable or constant of type `UnsafeRawBufferPointer` does not copy the underlying memory. However, initializing another collection with an `UnsafeRawBufferPointer` instance copies bytes out of the referenced memory and into the new collection.
 
@@ -53,72 +54,73 @@ byteArray += someBytes[n..<someBytes.count]
 ## Topics
 
 ### Initializers
-- [init(UnsafeRawBufferPointer)](unsaferawbufferpointer/init(_:)-24m35.md)
+- [init(UnsafeRawBufferPointer)](./unsaferawbufferpointer/init%28_%29-24m35.md)
   Creates a new buffer over the same memory as the given buffer.
-- [init(UnsafeMutableRawBufferPointer)](unsaferawbufferpointer/init(_:)-5ko6n.md)
+- [init(UnsafeMutableRawBufferPointer)](./unsaferawbufferpointer/init%28_%29-5ko6n.md)
   Creates a new buffer over the same memory as the given buffer.
-- [init<T>(UnsafeBufferPointer<T>)](unsaferawbufferpointer/init(_:)-9uv4.md)
+- [init<T>(UnsafeBufferPointer<T>)](./unsaferawbufferpointer/init%28_%29-9uv4.md)
   Creates a raw buffer over the contiguous bytes in the given typed buffer.
-- [init<T>(UnsafeMutableBufferPointer<T>)](unsaferawbufferpointer/init(_:)-rrzw.md)
+- [init<T>(UnsafeMutableBufferPointer<T>)](./unsaferawbufferpointer/init%28_%29-rrzw.md)
   Creates a raw buffer over the contiguous bytes in the given typed buffer.
-- [init(rebasing: Slice<UnsafeRawBufferPointer>)](unsaferawbufferpointer/init(rebasing:)-9mh4j.md)
+- [init(rebasing: Slice<UnsafeRawBufferPointer>)](./unsaferawbufferpointer/init%28rebasing%29-9mh4j.md)
   Creates a raw buffer over the same memory as the given raw buffer slice, with the indices rebased to zero.
-- [init(rebasing: Slice<UnsafeMutableRawBufferPointer>)](unsaferawbufferpointer/init(rebasing:)-9sxid.md)
+- [init(rebasing: Slice<UnsafeMutableRawBufferPointer>)](./unsaferawbufferpointer/init%28rebasing%29-9sxid.md)
   Creates a raw buffer over the same memory as the given raw buffer slice, with the indices rebased to zero.
-- [init(start: UnsafeRawPointer?, count: Int)](unsaferawbufferpointer/init(start:count:).md)
+- [init(start: UnsafeRawPointer?, count: Int)](./unsaferawbufferpointer/init%28start,count%29.md)
   Creates a buffer over the specified number of contiguous bytes starting at the given pointer.
 ### Instance Properties
-- [var baseAddress: UnsafeRawPointer?](unsaferawbufferpointer/baseaddress.md)
+- [var baseAddress: UnsafeRawPointer?](./unsaferawbufferpointer/baseaddress.md)
   A pointer to the first byte of the buffer.
-- [var bytes: RawSpan](unsaferawbufferpointer/bytes.md)
+- [var bytes: RawSpan](./unsaferawbufferpointer/bytes.md)
   A span over the bytes of this buffer.
 ### Instance Methods
-- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](unsaferawbufferpointer/assumingmemorybound(to:).md)
+- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](./unsaferawbufferpointer/assumingmemorybound%28to%29.md)
   Returns a typed buffer to the memory referenced by this buffer, assuming that the memory is already bound to the specified type.
-- [func bindMemory<T>(to: T.Type) -> UnsafeBufferPointer<T>](unsaferawbufferpointer/bindmemory(to:).md)
+- [func bindMemory<T>(to: T.Type) -> UnsafeBufferPointer<T>](./unsaferawbufferpointer/bindmemory%28to%29.md)
   Binds this buffer’s memory to the specified type and returns a typed buffer of the bound memory.
-- [func deallocate()](unsaferawbufferpointer/deallocate.md)
+- [func deallocate()](./unsaferawbufferpointer/deallocate%28%29.md)
   Deallocates the memory block previously allocated at this buffer pointer’s base address.
-- [func isTriviallyIdentical(to: UnsafeRawBufferPointer) -> Bool](unsaferawbufferpointer/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: UnsafeRawBufferPointer) -> Bool](./unsaferawbufferpointer/istriviallyidentical%28to%29.md)
   Returns a Boolean value indicating whether two instances refer to the same memory region.
-- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/load(frombyteoffset:as:).md)
+- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](./unsaferawbufferpointer/load%28frombyteoffset,as%29.md)
   Returns a new instance of the given type, read from the buffer pointer’s raw memory at the specified byte offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-4ll4e.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./unsaferawbufferpointer/loadunaligned%28frombyteoffset,as%29-4ll4e.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-95fln.md)
-- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsaferawbufferpointer/withmemoryrebound(to:_:).md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./unsaferawbufferpointer/loadunaligned%28frombyteoffset,as%29-95fln.md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](./unsaferawbufferpointer/withmemoryrebound%28to,_%29.md)
   Executes the given closure while temporarily binding the buffer to instances of type `T`.
 ### Default Implementations
-- [AtomicRepresentable Implementations](unsaferawbufferpointer/atomicrepresentable-implementations.md)
-- [BidirectionalCollection Implementations](unsaferawbufferpointer/bidirectionalcollection-implementations.md)
-- [Collection Implementations](unsaferawbufferpointer/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](unsaferawbufferpointer/customdebugstringconvertible-implementations.md)
-- [RandomAccessCollection Implementations](unsaferawbufferpointer/randomaccesscollection-implementations.md)
-- [Sequence Implementations](unsaferawbufferpointer/sequence-implementations.md)
+- [AtomicRepresentable Implementations](./unsaferawbufferpointer/atomicrepresentable-implementations.md)
+- [BidirectionalCollection Implementations](./unsaferawbufferpointer/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./unsaferawbufferpointer/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./unsaferawbufferpointer/customdebugstringconvertible-implementations.md)
+- [RandomAccessCollection Implementations](./unsaferawbufferpointer/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./unsaferawbufferpointer/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [Escapable](escapable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sequence](sequence.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [DataProtocol](../Foundation/dataprotocol.md)
+- [Escapable](./escapable.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct UnsafeRawPointer](unsaferawpointer.md)
+### Raw Pointers
+- [struct UnsafeRawPointer](./unsaferawpointer.md)
   A raw pointer for accessing untyped data.
-- [struct UnsafeMutableRawPointer](unsafemutablerawpointer.md)
+- [struct UnsafeMutableRawPointer](./unsafemutablerawpointer.md)
   A raw pointer for accessing and manipulating untyped data.
-- [struct UnsafeMutableRawBufferPointer](unsafemutablerawbufferpointer.md)
+- [struct UnsafeMutableRawBufferPointer](./unsafemutablerawbufferpointer.md)
   A mutable nonowning collection interface to the bytes in a region of memory.
 
 

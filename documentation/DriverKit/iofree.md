@@ -1,38 +1,40 @@
 # IOFree
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Frees a memory block that contains general-purpose memory.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void IOFree(void *address, size_t length);
 ```
 
 #### Discussion
 
-Use this macro to free memory that you allocated with [`IOMalloc`](iomalloc.md) or [`IOMallocZero`](iomalloczero.md).
+Use this macro to free memory that you allocated with [`IOMalloc`](./iomalloc.md) or [`IOMallocZero`](./iomalloczero.md).
 
 ## Parameters
 
-- `address`: The pointer to the memory block to free. The memory block must be one that you previously allocated with [`IOMalloc`](iomalloc.md) or [`IOMallocZero`](iomalloczero.md).
+- `address`: The pointer to the memory block to free. The memory block must be one that you previously allocated with [`IOMalloc`](./iomalloc.md) or [`IOMallocZero`](./iomalloczero.md).
 - `length`: The size of the memory block, which must match the block’s original allocation size.
 
 ## See Also
 
-- [IODelete](iodelete.md)
+### Deallocation
+- [IODelete](./iodelete.md)
   Frees the memory associated with a valid, typed array.
-- [IOSafeDeleteNULL](iosafedeletenull.md)
+- [IOSafeDeleteNULL](./iosafedeletenull.md)
   Frees the memory associated with a typed array.
-- [OSSafeReleaseNULL](ossafereleasenull.md)
+- [OSSafeReleaseNULL](./ossafereleasenull.md)
   Frees memory that you allocated for a named class.
 
 

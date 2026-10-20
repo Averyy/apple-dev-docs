@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the File Provider extension to perform a custom action.
@@ -19,19 +20,25 @@ Tells the File Provider extension to perform a custom action.
 func performAction(identifier actionIdentifier: NSFileProviderExtensionActionIdentifier, onItemsWithIdentifiers itemIdentifiers: [NSFileProviderItemIdentifier], completionHandler: @escaping ((any Error)?) -> Void) -> Progress
 ```
 
+```objc
+- (NSProgress *) performActionWithIdentifier:(NSFileProviderExtensionActionIdentifier) actionIdentifier onItemsWithIdentifiers:(NSArray<NSString *> *) itemIdentifiers completionHandler:(void (^)(NSError *error)) completionHandler;
+```
+
 #### Return Value
 
 An item that tracks your extension’s progress.
 
 #### Discussion
 
-Define the custom actions in the File Provider Extension’s `Info.plist` file, under the `NSExtensionFileProviderActions` key. The format of this key is identical to actions defined for a [`File Provider UI`](https://developer.apple.com/documentation/fileproviderui) extension. For more information, see `Adding Actions to the Context Menu`.
+Define the custom actions in the File Provider Extension’s `Info.plist` file, under the `NSExtensionFileProviderActions` key. The format of this key is identical to actions defined for a [File Provider UI](../../FileProviderUI/FileProviderUI.md) extension. For more information, see `Adding Actions to the Context Menu`.
 
 ## Parameters
 
 - `actionIdentifier`: The identifier for the requested custom action from the extension’s `Info.plist` file.
 - `itemIdentifiers`: A list of item identifiers affected by the action.
-- `completionHandler`: A block that you call after completing the specified action. You pass the following parameters: - **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
+- `completionHandler`: A block that you call after completing the specified action. You pass the following parameters:
+
+  - **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

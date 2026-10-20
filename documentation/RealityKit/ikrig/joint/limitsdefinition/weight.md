@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weight of the joint rotation limit demand.
 

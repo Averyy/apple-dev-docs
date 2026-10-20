@@ -1,7 +1,8 @@
 # selectedOutputType
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of output, in UTI format, of the output to be produced by the action.
 
@@ -15,6 +16,10 @@ The type of output, in UTI format, of the output to be produced by the action.
 var selectedOutputType: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * selectedOutputType;
+```
+
 #### Discussion
 
 Getting this value provides the type of output the action is configured to produce. For example, your action may have the ability to output files and folders, or documents, depending on how it’s configured or what it encounters while processing.
@@ -25,17 +30,18 @@ Set this value to explicitly specify the output type the action produces. Settin
 
 ## See Also
 
-- [var name: String](amaction/name.md)
+### Getting Action Information
+- [var name: String](./name.md)
   The name of the action.
-- [var progressValue: CGFloat](amaction/progressvalue.md)
+- [var progressValue: CGFloat](./progressvalue.md)
   A float value between 0 and 1, which indicates how far along the action is while processing.
-- [var ignoresInput: Bool](amaction/ignoresinput.md)
+- [var ignoresInput: Bool](./ignoresinput.md)
   A Boolean value that indicates whether the action acts upon its input or the input is ignored.
-- [var output: Any?](amaction/output.md)
+- [var output: Any?](./output.md)
   The action’s output.
-- [var selectedInputType: String?](amaction/selectedinputtype.md)
+- [var selectedInputType: String?](./selectedinputtype.md)
   The type of input, in UTI format, of the input received by the action.
-- [var isStopped: Bool](amaction/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the user clicked the stop button on the parent workflow.
 
 

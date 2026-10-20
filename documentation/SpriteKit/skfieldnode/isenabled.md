@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the field is active.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the field is active.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 ## Mentions
 
-- [Adding Physics Fields to a Scene](adding-physics-fields-to-a-scene.md)
+- [Adding Physics Fields to a Scene](../adding-physics-fields-to-a-scene.md)
 
 ## See Also
 
-- [var isExclusive: Bool](skfieldnode/isexclusive.md)
+### Determining Which Physics Bodies Are Affected by the Field
+- [var isExclusive: Bool](./isexclusive.md)
   A Boolean value that indicates whether the field node should override all other field nodes that might otherwise affect physics bodies.
-- [var region: SKRegion?](skfieldnode/region.md)
+- [var region: SKRegion?](./region.md)
   The area (relative to the node’s origin) that the field affects.
-- [var minimumRadius: Float](skfieldnode/minimumradius.md)
+- [var minimumRadius: Float](./minimumradius.md)
   The minimum value for distance-based effects.
-- [var categoryBitMask: UInt32](skfieldnode/categorybitmask.md)
+- [var categoryBitMask: UInt32](./categorybitmask.md)
   A mask that defines which categories this field belongs to.
 
 

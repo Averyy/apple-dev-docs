@@ -1,17 +1,22 @@
 # parentRow(forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the parent of a given row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func parentRow(forRow rowIndex: Int) -> Int
+```
+
+```objc
+- (NSInteger) parentRowForRow:(NSInteger) rowIndex;
 ```
 
 #### Return Value
@@ -20,19 +25,22 @@ The index of the parent of the row at `rowIndex`. If the row at `rowIndex` is a 
 
 ## Parameters
 
-- `rowIndex`: The index of a row in the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is less than `0` or greater than or equal to the number of rows.
+- `rowIndex`: The index of a row in the receiver.
+
+  > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is less than `0` or greater than or equal to the number of rows.
 
 ## See Also
 
-- [var numberOfRows: Int](nsruleeditor/numberofrows.md)
+### Obtaining Row Information
+- [var numberOfRows: Int](./numberofrows.md)
   The number of rows in the rule editor.
-- [func row(forDisplayValue: Any) -> Int](nsruleeditor/row(fordisplayvalue:).md)
+- [func row(forDisplayValue: Any) -> Int](./row%28fordisplayvalue%29.md)
   Returns the index of the row containing a given value.
-- [func rowType(forRow: Int) -> NSRuleEditor.RowType](nsruleeditor/rowtype(forrow:).md)
+- [func rowType(forRow: Int) -> NSRuleEditor.RowType](./rowtype%28forrow%29.md)
   Returns the type of a given row.
-- [NSRuleEditor.RowType](nsruleeditor/rowtype.md)
+- [NSRuleEditor.RowType](./rowtype.md)
   Specifies a type for row types.
-- [func subrowIndexes(forRow: Int) -> IndexSet](nsruleeditor/subrowindexes(forrow:).md)
+- [func subrowIndexes(forRow: Int) -> IndexSet](./subrowindexes%28forrow%29.md)
   Returns the immediate subrows of a given row.
 
 

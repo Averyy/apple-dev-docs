@@ -1,7 +1,8 @@
 # deviceSupportedFeatures
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the device’s supported features.
 
@@ -12,6 +13,10 @@ Return the device’s supported features.
 
 ```swift
 var deviceSupportedFeatures: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t deviceSupportedFeatures;
 ```
 
 #### Return Value

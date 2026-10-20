@@ -1,7 +1,8 @@
 # player(_:wantsToPlay:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a player intends to play for a specific game activity. A completion handler block is provided to indicate whether the activity was successfully handled.
 
@@ -16,7 +17,15 @@ Called when a player intends to play for a specific game activity. A completion 
 ## Declaration
 
 ```swift
+optional func player(_ player: GKPlayer, wantsToPlay activity: GKGameActivity, completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func player(_ player: GKPlayer, wantsToPlay activity: GKGameActivity) async -> Bool
+```
+
+```objc
+- (void) player:(GKPlayer *) player wantsToPlayGameActivity:(GKGameActivity *) activity completionHandler:(void (^)(BOOL handled)) completionHandler;
 ```
 
 

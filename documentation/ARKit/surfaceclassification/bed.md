@@ -1,7 +1,8 @@
 # SurfaceClassification.bed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+

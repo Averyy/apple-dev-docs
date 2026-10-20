@@ -1,6 +1,8 @@
 # Delivering an exceptional accessibility experience
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: Sample Code  
+**Download**: [DeliveringAnExceptionalAccessibilityExperience.zip](https://docs-assets.developer.apple.com/published/410d99e88578/DeliveringAnExceptionalAccessibilityExperience.zip)
 
 Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 
@@ -21,15 +23,15 @@ To provide an exceptional accessibility experience, you need to think about how 
 
 This sample code project shows how to provide an exceptional accessibility experience for VoiceOver. The sample app contains a gallery of dogs available for adoption. With VoiceOver enabled, the system reads aloud information about each dog as you swipe through the list. You’ll also hear details about the dog—such as the age, gender, and attitude—mark the dog as a favorite, and view a gallery with more photos of the lovable canine.
 
-##### Get Started
+##### Get started
 
 To see the sample app in action, use Xcode to build and run the app on your iOS device. Be sure to turn on VoiceOver, which you can do from Settings under *General > Accessibility > VoiceOver*.
 
-##### Improve Carousel Navigation
+##### Improve carousel navigation
 
 To preview each pup available for adoption, the user swipes left and right across the collection view at the top of the screen. There is, however, a problem with this interaction when VoiceOver is on, the assistive technology doesn’t recognize visible elements, such as the favorite and gallery buttons, and it doesn’t know the details of the dog until the user reaches the end of the list. This behavior is far from being an exceptional accessibility experience.
 
-Navigating through the collection of dogs is central to the app. It’s the primary feature that users use, and as such, it should be easy for the user to perform. To provide a better accessibility experience, the sample defines the custom class [`CarouselAccessibilityElement`](https://developer.apple.comx-source-tag://CarouselAccessibilityElement) with its [`accessibilityTraits`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitytraits) set to [`adjustable`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits/adjustable).
+Navigating through the collection of dogs is central to the app. It’s the primary feature that users use, and as such, it should be easy for the user to perform. To provide a better accessibility experience, the sample defines the custom class [CarouselAccessibilityElement](x-source-tag://CarouselAccessibilityElement) with its [`accessibilityTraits`](../ObjectiveC/nsobject-swift.class/accessibilitytraits.md) set to [`adjustable`](../UIKit/uiaccessibilitytraits/adjustable.md).
 
 ```swift
 override var accessibilityTraits: UIAccessibilityTraits {
@@ -42,9 +44,9 @@ override var accessibilityTraits: UIAccessibilityTraits {
 }
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://accessibility_traits)
+[View in Source](x-source-tag://accessibility_traits)
 
-The [`adjustable`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits/adjustable) trait tells VoiceOver that the element behaves like a picker by responding to the [`accessibilityIncrement()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityincrement()) and [`accessibilityDecrement()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitydecrement()) callback methods.
+The [`adjustable`](../UIKit/uiaccessibilitytraits/adjustable.md) trait tells VoiceOver that the element behaves like a picker by responding to the [`accessibilityIncrement()`](../ObjectiveC/nsobject-swift.class/accessibilityincrement%28%29.md) and [`accessibilityDecrement()`](../ObjectiveC/nsobject-swift.class/accessibilitydecrement%28%29.md) callback methods.
 
 ```swift
 override func accessibilityIncrement() {
@@ -58,9 +60,9 @@ override func accessibilityDecrement() {
 }
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://accessibility_increment_decrement)
+[View in Source](x-source-tag://accessibility_increment_decrement)
 
-The sample then creates an instance of [`CarouselAccessibilityElement`](https://developer.apple.comx-source-tag://CarouselAccessibilityElement), settings its frame to the collection view’s frame.
+The sample then creates an instance of [`CarouselAccessibilityElement`](x-source-tag://CarouselAccessibilityElement), settings its frame to the collection view’s frame.
 
 ```swift
 let carouselAccessibilityElement: CarouselAccessibilityElement
@@ -77,20 +79,20 @@ if let theCarouselAccessibilityElement = self.carouselAccessibilityElement {
 }
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://using_carousel_accessibility_element)
+[View in Source](x-source-tag://using_carousel_accessibility_element)
 
 With VoiceOver on, the carousel accessibility element adds two new gestures on top of the collection view:
 
 - Swipe up to move forward through the collection.
 - Swipe down to move backward through the collection.
 
-The sample’s use of [`CarouselAccessibilityElement`](https://developer.apple.comx-source-tag://CarouselAccessibilityElement) also makes it possible for the user to swipe to the favorite and gallery buttons for every dog in the list, rather than having the buttons reachable only at the end of the list. Although the gestures to swipe through the list of dogs is different when VoiceOver is on, this difference makes it easier for users needing assistance to preview each dog.
+The sample’s use of [`CarouselAccessibilityElement`](x-source-tag://CarouselAccessibilityElement) also makes it possible for the user to swipe to the favorite and gallery buttons for every dog in the list, rather than having the buttons reachable only at the end of the list. Although the gestures to swipe through the list of dogs is different when VoiceOver is on, this difference makes it easier for users needing assistance to preview each dog.
 
-##### Display Non Modal Modal Views
+##### Display non-modal modal views
 
 When the user taps the gallery button, the app displays a full-screen modal view. However, in the sample this modal view isn’t from a view controller that the app presents modally. Instead, it’s a view with a transparent background displayed on top of the app’s main view. Because of the transparent background, parts of the underlying view are still available to VoiceOver, and VoiceOver doesn’t know that those visible parts should not be available.
 
-To tell VoiceOver that the underlying view is not available, and to treat the top view as a modal view, the top view returns `true` for the [`accessibilityViewIsModal`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityviewismodal) property.
+To tell VoiceOver that the underlying view is not available, and to treat the top view as a modal view, the top view returns `true` for the [`accessibilityViewIsModal`](../ObjectiveC/nsobject-swift.class/accessibilityviewismodal.md) property.
 
 ```swift
 override var accessibilityViewIsModal: Bool {
@@ -102,13 +104,13 @@ override var accessibilityViewIsModal: Bool {
 }
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://is_modal)
+[View in Source](x-source-tag://is_modal)
 
-##### Group Labels
+##### Group labels
 
 When referring to separate elements belonging in the same context, it’s essential to convey a single set of information about the items. For example, the sample app displays a title label, such as *NAME*, and a value label, such as the dog’s name. These are two separate elements—*title* and *value*—but they are part of the same context.
 
-To place these two elements into the same accessibility context, use [`UIAccessibilityElement`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement) to encapsulate the information from each label. For example, the sample project’s [`DogStatsView`](https://developer.apple.comx-source-tag://DogStatsView) groups each *title* and *value* label combination into accessibility elements. The project also sets the [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/accessibilitylabel) with the text from the two [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) objects, and sets [`accessibilityFrameInContainerSpace`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/accessibilityframeincontainerspace) to a frame containing both labels. This allows VoiceOver to recognize each *title-value* label pairing as a single accessibility element. In turn, the user hears the title and value each time a *title-value* accessibility element has focus.
+To place these two elements into the same accessibility context, use [`UIAccessibilityElement`](../UIKit/uiaccessibilityelement.md) to encapsulate the information from each label. For example, the sample project’s [DogStatsView](x-source-tag://DogStatsView) groups each *title* and *value* label combination into accessibility elements. The project also sets the [`accessibilityLabel`](../UIKit/uiaccessibilityelement/accessibilitylabel.md) with the text from the two [`UILabel`](../UIKit/uilabel.md) objects, and sets [`accessibilityFrameInContainerSpace`](../UIKit/uiaccessibilityelement/accessibilityframeincontainerspace.md) to a frame containing both labels. This allows VoiceOver to recognize each *title-value* label pairing as a single accessibility element. In turn, the user hears the title and value each time a *title-value* accessibility element has focus.
 
 ```swift
 var elements = [UIAccessibilityElement]()
@@ -124,11 +126,11 @@ nameElement.accessibilityFrameInContainerSpace = nameTitleLabel.frame.union(name
 elements.append(nameElement)
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://grouping_elements)
+[View in Source](x-source-tag://grouping_elements)
 
-##### Add Custom Actions
+##### Add custom actions
 
-The sample app also displays the name of the animal shelter housing the dog. Next to the shelter name are two buttons: one initiates a call to the shelter and the other displays the location of the shelter. To make the buttons available to VoiceOver users, the app uses [`UIAccessibilityCustomAction`](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction) to specify a name for the action along with the object and selector to use when performing the action. With the custom action, VoiceOver users can access the action using the VoiceOver rotor.
+The sample app also displays the name of the animal shelter housing the dog. Next to the shelter name are two buttons: one initiates a call to the shelter and the other displays the location of the shelter. To make the buttons available to VoiceOver users, the app uses [`UIAccessibilityCustomAction`](../UIKit/uiaccessibilitycustomaction.md) to specify a name for the action along with the object and selector to use when performing the action. With the custom action, VoiceOver users can access the action using the VoiceOver rotor.
 
 ```swift
 shelterInfoView.accessibilityCustomActions = [
@@ -145,17 +147,18 @@ shelterInfoView.accessibilityCustomActions = [
 ]
 ```
 
-[`View in Source`](https://developer.apple.comx-source-tag://custom_actions)
+[View in Source](x-source-tag://custom_actions)
 
 ## See Also
 
-- [Enhancing the accessibility of your SwiftUI app](enhancing-the-accessibility-of-your-swiftui-app.md)
+### Sample code
+- [Enhancing the accessibility of your SwiftUI app](./enhancing-the-accessibility-of-your-swiftui-app.md)
   Support advancements in SwiftUI accessibility to make your app accessible to everyone.
-- [Creating accessible views](../swiftui/creating-accessible-views.md)
+- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
-- [Integrating accessibility into your app](integrating-accessibility-into-your-app.md)
+- [Integrating accessibility into your app](./integrating-accessibility-into-your-app.md)
   Make your app more accessible to users with disabilities by adding accessibility features.
-- [Accessibility design for Mac Catalyst](accessibility_design_for_mac_catalyst.md)
+- [Accessibility design for Mac Catalyst](./accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
 
 

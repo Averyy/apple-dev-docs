@@ -1,7 +1,8 @@
 # resultsLimit
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of records to delete.
 
@@ -10,7 +11,7 @@ The maximum number of records to delete.
 
 ## Declaration
 
-```swift
+```
 attribute Int32? resultsLimit;
 ```
 

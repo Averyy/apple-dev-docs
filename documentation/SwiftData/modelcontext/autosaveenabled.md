@@ -1,7 +1,8 @@
 # autosaveEnabled
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the context should automatically save any pending changes when certain events occur.
 
@@ -23,21 +24,22 @@ var autosaveEnabled: Bool { get set }
 
 ## Mentions
 
-- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
+- [Preserving your app’s model data across launches](../preserving-your-apps-model-data-across-launches.md)
 
 #### Discussion
 
-When `true`, the context calls [`save()`](modelcontext/save().md) after you make changes to any inserted or registered models. The context also calls `save()` at various times during the lifecycle of windows, scenes, views, and sheets.
+When `true`, the context calls [`save()`](./save%28%29.md) after you make changes to any inserted or registered models. The context also calls `save()` at various times during the lifecycle of windows, scenes, views, and sheets.
 
-The default value is `false`. SwiftData automatically sets this property to `true` for the model container’s [`mainContext`](modelcontainer/maincontext.md).
+The default value is `false`. SwiftData automatically sets this property to `true` for the model container’s [`mainContext`](../modelcontainer/maincontext.md).
 
 ## See Also
 
-- [func save() throws](modelcontext/save.md)
+### Persisting unsaved changes
+- [func save() throws](./save%28%29.md)
   Writes any pending inserts, changes, and deletes to the persistent storage.
-- [func transaction(block: () throws -> Void) throws](modelcontext/transaction(block:).md)
+- [func transaction(block: () throws -> Void) throws](./transaction%28block%29.md)
   Runs the provided closure, and once it finishes, writes any pending inserts, changes, and deletes to the persistent storage.
-- [func rollback()](modelcontext/rollback.md)
+- [func rollback()](./rollback%28%29.md)
   Discards pending inserts and deletes, restores changed models to their most recent committed state, and empties the undo stack.
 
 

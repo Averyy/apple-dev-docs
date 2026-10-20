@@ -1,7 +1,8 @@
 # action
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action parameter data that remains constant across one or more events intervals defined for the action animation.
 

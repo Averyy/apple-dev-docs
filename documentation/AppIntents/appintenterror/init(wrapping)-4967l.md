@@ -1,7 +1,8 @@
 # init(wrapping:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an error by wrapping an existing localized error.
 
@@ -22,11 +23,11 @@ init(wrapping error: some CustomLocalizedStringResourceConvertible & Error)
 
 #### Discussion
 
-Conform your custom [`Error`](https://developer.apple.com/documentation/swift/error) to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) to provide a localized description of the error.
+Conform your custom [`Error`](../../Swift/error.md) to [`CustomLocalizedStringResourceConvertible`](../../Foundation/customlocalizedstringresourceconvertible.md) to provide a localized description of the error.
 
-The system calls this initializer for errors thrown from [`perform()`](appintent/perform().md) that conform to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible).
+The system calls this initializer for errors thrown from [`perform()`](../appintent/perform%28%29.md) that conform to [`CustomLocalizedStringResourceConvertible`](../../Foundation/customlocalizedstringresourceconvertible.md).
 
-If the error conforms to both [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
+If the error conforms to both [`CustomLocalizedStringResourceConvertible`](../../Foundation/customlocalizedstringresourceconvertible.md) and [`CustomAppIntentErrorConvertible`](../customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](../customappintenterrorconvertible.md).
 
 ## Parameters
 

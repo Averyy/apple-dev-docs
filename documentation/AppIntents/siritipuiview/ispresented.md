@@ -1,14 +1,15 @@
 # isPresented
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the view should be presented to the user.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,8 @@ Defaults to `true` and gets set to `false` after the dismissal button is tapped.
 
 ## See Also
 
-- [var allowsDismissal: Bool](siritipuiview/allowsdismissal.md)
+### Getting the view’s configuration
+- [var allowsDismissal: Bool](./allowsdismissal.md)
   Indicates if the tip view should display a dismissal button
 
 

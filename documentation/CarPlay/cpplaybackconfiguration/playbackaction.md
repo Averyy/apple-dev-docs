@@ -1,7 +1,8 @@
 # playbackAction
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback action to perform on this item, such as play, pause, or replay.
 
@@ -14,6 +15,10 @@ The playback action to perform on this item, such as play, pause, or replay.
 
 ```swift
 var playbackAction: CPPlaybackConfiguration.Action { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CPPlaybackAction playbackAction;
 ```
 
 

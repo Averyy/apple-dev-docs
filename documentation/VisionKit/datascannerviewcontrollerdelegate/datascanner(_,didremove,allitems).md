@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Responds when the data scanner stops recognizing an item.
@@ -20,7 +21,7 @@ func dataScanner(_ dataScanner: DataScannerViewController, didRemove removedItem
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 #### Discussion
 
@@ -29,14 +30,21 @@ To identify an item in the `removedItems` and `allItems` parameters, use the ite
 ## Parameters
 
 - `dataScanner`: The data scanner that recognizes the item.
-- `removedItems`: The items that the data scanner removes from the [`recognizedItems`](datascannerviewcontroller/recognizeditems.md) property.
+- `removedItems`: The items that the data scanner removes from the [`recognizedItems`](../datascannerviewcontroller/recognizeditems.md) property.
 - `allItems`: The current items that the data scanner tracks. Text items appear in the reading order of the language and region.
+
+## Default Implementations
+
+### DataScannerViewControllerDelegate Implementations
+- [func dataScanner(DataScannerViewController, didRemove: [RecognizedItem], allItems: [RecognizedItem])](./datascanner%28_,didremove,allitems%29-1px77.md)
+  A default, blank implementation for when the data scanner stops recognizing an item.
 
 ## See Also
 
-- [func dataScanner(DataScannerViewController, didAdd: [RecognizedItem], allItems: [RecognizedItem])](datascannerviewcontrollerdelegate/datascanner(_:didadd:allitems:).md)
+### Customizing highlighting
+- [func dataScanner(DataScannerViewController, didAdd: [RecognizedItem], allItems: [RecognizedItem])](./datascanner%28_,didadd,allitems%29.md)
   Responds when the data scanner starts recognizing an item.
-- [func dataScanner(DataScannerViewController, didUpdate: [RecognizedItem], allItems: [RecognizedItem])](datascannerviewcontrollerdelegate/datascanner(_:didupdate:allitems:).md)
+- [func dataScanner(DataScannerViewController, didUpdate: [RecognizedItem], allItems: [RecognizedItem])](./datascanner%28_,didupdate,allitems%29.md)
   Responds when the data scanner updates the geometry of an item it recognizes.
 
 

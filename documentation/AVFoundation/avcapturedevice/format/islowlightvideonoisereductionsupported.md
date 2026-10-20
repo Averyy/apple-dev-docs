@@ -1,7 +1,8 @@
 # isLowLightVideoNoiseReductionSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the format supports low light video noise reduction.
 
@@ -17,6 +18,10 @@ Indicates whether the format supports low light video noise reduction.
 
 ```swift
 var isLowLightVideoNoiseReductionSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isLowLightVideoNoiseReductionSupported) BOOL lowLightVideoNoiseReductionSupported;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # cmGraySpace
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A luminance color space with a single component, gray. 
 

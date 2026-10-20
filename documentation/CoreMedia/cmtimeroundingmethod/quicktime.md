@@ -1,7 +1,8 @@
 # CMTimeRoundingMethod.quickTime
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds using the QuickTime method.
 
@@ -20,23 +21,28 @@ Rounds using the QuickTime method.
 case quickTime
 ```
 
+```c
+kCMTimeRoundingMethod_QuickTime
+```
+
 #### Discussion
 
-This method uses [`CMTimeRoundingMethod.roundTowardZero`](cmtimeroundingmethod/roundtowardzero.md) if converting from larger to smaller scale (more precision to less precision), but uses [`CMTimeRoundingMethod.roundAwayFromZero`](cmtimeroundingmethod/roundawayfromzero.md) if converting from smaller to larger scale (less precision to more precision).
+This method uses [`CMTimeRoundingMethod.roundTowardZero`](./roundtowardzero.md) if converting from larger to smaller scale (more precision to less precision), but uses [`CMTimeRoundingMethod.roundAwayFromZero`](./roundawayfromzero.md) if converting from smaller to larger scale (less precision to more precision).
 
 This method never rounds a negative number down to `0`, but instead returns the smallest magnitude negative time (`-1 / newTimescale`).
 
 ## See Also
 
-- [CMTimeRoundingMethod.roundHalfAwayFromZero](cmtimeroundingmethod/roundhalfawayfromzero.md)
+### Rounding Methods
+- [CMTimeRoundingMethod.roundHalfAwayFromZero](./roundhalfawayfromzero.md)
   Rounds half away from zero.
-- [CMTimeRoundingMethod.roundAwayFromZero](cmtimeroundingmethod/roundawayfromzero.md)
+- [CMTimeRoundingMethod.roundAwayFromZero](./roundawayfromzero.md)
   Rounds away from zero.
-- [CMTimeRoundingMethod.roundTowardZero](cmtimeroundingmethod/roundtowardzero.md)
+- [CMTimeRoundingMethod.roundTowardZero](./roundtowardzero.md)
   Rounds toward zero.
-- [CMTimeRoundingMethod.roundTowardPositiveInfinity](cmtimeroundingmethod/roundtowardpositiveinfinity.md)
+- [CMTimeRoundingMethod.roundTowardPositiveInfinity](./roundtowardpositiveinfinity.md)
   Rounds toward positive infinity.
-- [CMTimeRoundingMethod.roundTowardNegativeInfinity](cmtimeroundingmethod/roundtowardnegativeinfinity.md)
+- [CMTimeRoundingMethod.roundTowardNegativeInfinity](./roundtowardnegativeinfinity.md)
   Rounds toward negative infinity.
 
 

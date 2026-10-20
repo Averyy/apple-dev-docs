@@ -1,7 +1,8 @@
 # NIDLTDOAMeasurementType.final
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates the measurement derives from an initial anchor’s last message.
 
@@ -16,11 +17,16 @@ A type that indicates the measurement derives from an initial anchor’s last me
 case final
 ```
 
+```c
+NIDLTDOAMeasurementTypeFinal
+```
+
 ## See Also
 
-- [NIDLTDOAMeasurementType.poll](nidltdoameasurementtype/poll.md)
+### Identifying the measurement type
+- [NIDLTDOAMeasurementType.poll](./poll.md)
   A type that indicates the measurement derives from an initiating anchor’s first message.
-- [NIDLTDOAMeasurementType.response](nidltdoameasurementtype/response.md)
+- [NIDLTDOAMeasurementType.response](./response.md)
   A type that indicates the measurement derives from responder anchors’ messages.
 
 

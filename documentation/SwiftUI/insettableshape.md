@@ -1,7 +1,8 @@
 # InsettableShape
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A shape type that is able to inset itself to produce another shape.
 
@@ -23,48 +24,49 @@ protocol InsettableShape : Shape
 ## Topics
 
 ### Setting the stroke border characteristics
-- [func strokeBorder(_:lineWidth:antialiased:)](insettableshape/strokeborder(_:linewidth:antialiased:).md)
+- [func strokeBorder(_:lineWidth:antialiased:)](./insettableshape/strokeborder%28_,linewidth,antialiased%29.md)
   Returns a view that is the result of filling the `lineWidth`-sized border (aka inner stroke) of `self` with `content`. This is equivalent to insetting `self` by `lineWidth / 2` and stroking the resulting shape with `lineWidth` as the line-width.
-- [func strokeBorder(lineWidth: CGFloat, antialiased: Bool) -> some View](insettableshape/strokeborder(linewidth:antialiased:).md)
+- [func strokeBorder(lineWidth: CGFloat, antialiased: Bool) -> some View](./insettableshape/strokeborder%28linewidth,antialiased%29.md)
   Returns a view that is the result of filling the `lineWidth`-sized border (aka inner stroke) of `self` with the foreground color. This is equivalent to insetting `self` by `lineWidth / 2` and stroking the resulting shape with `lineWidth` as the line-width.
-- [func strokeBorder(_:style:antialiased:)](insettableshape/strokeborder(_:style:antialiased:).md)
+- [func strokeBorder(_:style:antialiased:)](./insettableshape/strokeborder%28_,style,antialiased%29.md)
   Returns a view that is the result of insetting `self` by `style.lineWidth / 2`, stroking the resulting shape with `style`, and then filling with `content`.
-- [func strokeBorder(style: StrokeStyle, antialiased: Bool) -> some View](insettableshape/strokeborder(style:antialiased:).md)
+- [func strokeBorder(style: StrokeStyle, antialiased: Bool) -> some View](./insettableshape/strokeborder%28style,antialiased%29.md)
   Returns a view that is the result of insetting `self` by `style.lineWidth / 2`, stroking the resulting shape with `style`, and then filling with the foreground color.
 ### Setting the inset
-- [func inset(by: CGFloat) -> Self.InsetShape](insettableshape/inset(by:).md)
+- [func inset(by: CGFloat) -> Self.InsetShape](./insettableshape/inset%28by%29.md)
   Returns `self` inset by `amount`.
-- [associatedtype InsetShape : InsettableShape](insettableshape/insetshape.md)
+- [associatedtype InsetShape : InsettableShape](./insettableshape/insetshape.md)
   The type of the inset shape.
 
 ## Relationships
 
 ### Inherits From
-- [Animatable](animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 ### Inherited By
-- [RoundedRectangularShape](roundedrectangularshape.md)
+- [RoundedRectangularShape](./roundedrectangularshape.md)
 ### Conforming Types
-- [ButtonBorderShape](buttonbordershape.md)
-- [Capsule](capsule.md)
-- [Circle](circle.md)
-- [ContainerRelativeShape](containerrelativeshape.md)
-- [Ellipse](ellipse.md)
-- [OffsetShape](offsetshape.md)
-- [Rectangle](rectangle.md)
-- [RotatedShape](rotatedshape.md)
-- [RoundedRectangle](roundedrectangle.md)
-- [TextInputBorderShape](textinputbordershape.md)
-- [UnevenRoundedRectangle](unevenroundedrectangle.md)
+- [ButtonBorderShape](./buttonbordershape.md)
+- [Capsule](./capsule.md)
+- [Circle](./circle.md)
+- [ContainerRelativeShape](./containerrelativeshape.md)
+- [Ellipse](./ellipse.md)
+- [OffsetShape](./offsetshape.md)
+- [Rectangle](./rectangle.md)
+- [RotatedShape](./rotatedshape.md)
+- [RoundedRectangle](./roundedrectangle.md)
+- [TextInputBorderShape](./textinputbordershape.md)
+- [UnevenRoundedRectangle](./unevenroundedrectangle.md)
 
 ## See Also
 
-- [func containerShape(_:)](view/containershape(_:).md)
+### Setting a container shape
+- [func containerShape(_:)](./view/containershape%28_%29.md)
   Sets the container shape to use for any container relative shape or concentric rectangle within this view.
-- [struct ContainerRelativeShape](containerrelativeshape.md)
+- [struct ContainerRelativeShape](./containerrelativeshape.md)
   A shape whose dimensions the system calculates from an inset version of the current container shape.
 
 

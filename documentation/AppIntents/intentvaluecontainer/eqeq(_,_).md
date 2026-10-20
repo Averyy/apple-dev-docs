@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: App Intents  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two containers are equal.
 

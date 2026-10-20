@@ -1,7 +1,8 @@
 # inputParameters
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of input parameters for the mix.
 
@@ -20,9 +21,13 @@ An array of input parameters for the mix.
 var inputParameters: [AVAudioMixInputParameters] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVAudioMixInputParameters *> * inputParameters;
+```
+
 #### Discussion
 
-The array contains instances of [`AVAudioMixInputParameters`](avaudiomixinputparameters.md). You don’t need an instance for each audio track that contributes to the mix. By default, the system processes audio for those tracks without an associated `AVAudioMixInputParameters` instance.
+The array contains instances of [`AVAudioMixInputParameters`](../avaudiomixinputparameters.md). You don’t need an instance for each audio track that contributes to the mix. By default, the system processes audio for those tracks without an associated `AVAudioMixInputParameters` instance.
 
 > ⚠️ **Warning**:  Specifying multiple `AVAudioMixInputParameters` for the same track has undefined behavior. Use only one instance per track in an audio mix.
 

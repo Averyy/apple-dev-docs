@@ -1,7 +1,8 @@
 # codable
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that describes the contents of this path in a serializable format.
 
@@ -22,11 +23,12 @@ var codable: NavigationPath.CodableRepresentation? { get }
 
 #### Discussion
 
-This value is `nil` if any of the type-erased elements of the path don’t conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol.
+This value is `nil` if any of the type-erased elements of the path don’t conform to the [`Codable`](../../Swift/codable.md) protocol.
 
 ## See Also
 
-- [NavigationPath.CodableRepresentation](navigationpath/codablerepresentation.md)
+### Encoding a path
+- [NavigationPath.CodableRepresentation](./codablerepresentation.md)
   A serializable representation of a navigation path.
 
 

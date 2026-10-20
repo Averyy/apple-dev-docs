@@ -1,7 +1,8 @@
 # init(conversationUUID:digits:tone:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that plays a sequence of tones that indicate an interaction with the keypad.
 

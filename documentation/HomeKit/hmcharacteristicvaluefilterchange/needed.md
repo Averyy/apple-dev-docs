@@ -1,7 +1,8 @@
 # HMCharacteristicValueFilterChange.needed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The filter needs to be changed.
 
@@ -19,9 +20,14 @@ The filter needs to be changed.
 case needed
 ```
 
+```c
+HMCharacteristicValueFilterChangeNeeded
+```
+
 ## See Also
 
-- [HMCharacteristicValueFilterChange.notNeeded](hmcharacteristicvaluefilterchange/notneeded.md)
+### Filter Change Indicator
+- [HMCharacteristicValueFilterChange.notNeeded](./notneeded.md)
   The filter doesn’t need to be changed.
 
 

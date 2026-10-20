@@ -1,7 +1,8 @@
 # NEProviderStopReason.appUpdate
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -17,37 +18,42 @@
 case appUpdate
 ```
 
+```c
+NEProviderStopReasonAppUpdate
+```
+
 ## See Also
 
-- [NEProviderStopReason.none](neproviderstopreason/none.md)
+### Stop Reasons
+- [NEProviderStopReason.none](./none.md)
   No specific reason.
-- [NEProviderStopReason.userInitiated](neproviderstopreason/userinitiated.md)
+- [NEProviderStopReason.userInitiated](./userinitiated.md)
   The user stopped the provider extension.
-- [NEProviderStopReason.providerFailed](neproviderstopreason/providerfailed.md)
+- [NEProviderStopReason.providerFailed](./providerfailed.md)
   The provider failed to function correctly.
-- [NEProviderStopReason.noNetworkAvailable](neproviderstopreason/nonetworkavailable.md)
+- [NEProviderStopReason.noNetworkAvailable](./nonetworkavailable.md)
   No network connectivity is currently available.
-- [NEProviderStopReason.unrecoverableNetworkChange](neproviderstopreason/unrecoverablenetworkchange.md)
+- [NEProviderStopReason.unrecoverableNetworkChange](./unrecoverablenetworkchange.md)
   The device’s network connectivity changed.
-- [NEProviderStopReason.providerDisabled](neproviderstopreason/providerdisabled.md)
+- [NEProviderStopReason.providerDisabled](./providerdisabled.md)
   The provider was disabled.
-- [NEProviderStopReason.authenticationCanceled](neproviderstopreason/authenticationcanceled.md)
+- [NEProviderStopReason.authenticationCanceled](./authenticationcanceled.md)
   The authentication process was canceled.
-- [NEProviderStopReason.configurationFailed](neproviderstopreason/configurationfailed.md)
+- [NEProviderStopReason.configurationFailed](./configurationfailed.md)
   The configuration is invalid.
-- [NEProviderStopReason.idleTimeout](neproviderstopreason/idletimeout.md)
+- [NEProviderStopReason.idleTimeout](./idletimeout.md)
   The session timed out.
-- [NEProviderStopReason.configurationDisabled](neproviderstopreason/configurationdisabled.md)
+- [NEProviderStopReason.configurationDisabled](./configurationdisabled.md)
   The configuration was disabled.
-- [NEProviderStopReason.configurationRemoved](neproviderstopreason/configurationremoved.md)
+- [NEProviderStopReason.configurationRemoved](./configurationremoved.md)
   The configuration was removed.
-- [NEProviderStopReason.superceded](neproviderstopreason/superceded.md)
+- [NEProviderStopReason.superceded](./superceded.md)
   The configuration was superceded by a higher-priority configuration.
-- [NEProviderStopReason.userLogout](neproviderstopreason/userlogout.md)
+- [NEProviderStopReason.userLogout](./userlogout.md)
   The user logged out.
-- [NEProviderStopReason.userSwitch](neproviderstopreason/userswitch.md)
+- [NEProviderStopReason.userSwitch](./userswitch.md)
   The current console user changed.
-- [NEProviderStopReason.connectionFailed](neproviderstopreason/connectionfailed.md)
+- [NEProviderStopReason.connectionFailed](./connectionfailed.md)
   The connection failed.
 
 

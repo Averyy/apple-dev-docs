@@ -1,7 +1,8 @@
 # isObject
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the instance is a JavaScript object.
 
@@ -19,23 +20,28 @@ A Boolean value that indicates whether the instance is a JavaScript object.
 var isObject: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isObject;
+```
+
 ## See Also
 
-- [var isUndefined: Bool](jsvalue/isundefined.md)
+### Determining the Type of a JavaScript Value
+- [var isUndefined: Bool](./isundefined.md)
   A Boolean value that indicates whether the instance corresponds to the JavaScript `undefined` value.
-- [var isNull: Bool](jsvalue/isnull.md)
+- [var isNull: Bool](./isnull.md)
   A Boolean value that indicates whether the instance corresponds to the JavaScript `null` value.
-- [var isBoolean: Bool](jsvalue/isboolean.md)
+- [var isBoolean: Bool](./isboolean.md)
   A Boolean value that indicates whether the instance is a JavaScript Boolean value.
-- [var isNumber: Bool](jsvalue/isnumber.md)
+- [var isNumber: Bool](./isnumber.md)
   A Boolean value that indicates whether the instance is a JavaScript numeric value.
-- [var isString: Bool](jsvalue/isstring.md)
+- [var isString: Bool](./isstring.md)
   A Boolean value that indicates whether the instance is a JavaScript `String` object.
-- [var isArray: Bool](jsvalue/isarray.md)
+- [var isArray: Bool](./isarray.md)
   A Boolean value that indicates whether the instance is a JavaScript array value.
-- [var isDate: Bool](jsvalue/isdate.md)
+- [var isDate: Bool](./isdate.md)
   A Boolean value that indicates whether the instance is a JavaScript `Date` object.
-- [var isSymbol: Bool](jsvalue/issymbol.md)
+- [var isSymbol: Bool](./issymbol.md)
   A Boolean value that indicates whether the instance is a symbol.
 
 

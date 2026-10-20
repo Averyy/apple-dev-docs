@@ -1,7 +1,8 @@
 # StorefrontsResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a storefront request.
 
@@ -10,7 +11,7 @@ The response to a storefront request.
 
 ## Declaration
 
-```swift
+```
 object StorefrontsResponse
 ```
 
@@ -20,7 +21,8 @@ object StorefrontsResponse
 
 ## See Also
 
-- [object Storefronts](storefronts.md)
+### Handling the response
+- [object Storefronts](./storefronts.md)
   A resource object that represents a region that the content is available in, and supported languages for that region.
 
 

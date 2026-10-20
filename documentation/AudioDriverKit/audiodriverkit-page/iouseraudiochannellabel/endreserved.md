@@ -1,20 +1,22 @@
 # EndReserved
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 EndReserved
 ```
 
 ## See Also
 
-- [BeginReserved](audiodriverkit/iouseraudiochannellabel/beginreserved.md)
+### Reserved Values
+- [BeginReserved](./beginreserved.md)
   The beginning of the range of channel values reserved for internal use.
 
 

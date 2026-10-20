@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a nonce from the given data.
 
@@ -22,7 +23,7 @@ init<D>(data: D) throws where D : DataProtocol
 
 #### Discussion
 
-Unless your use case calls for a nonce with a specific value, use the [`init()`](aes/gcm/nonce/init().md) method to instead create a random nonce.
+Unless your use case calls for a nonce with a specific value, use the [`init()`](./init%28%29.md) method to instead create a random nonce.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Unless your use case calls for a nonce with a specific value, use the [`init()`]
 
 ## See Also
 
-- [init()](aes/gcm/nonce/init.md)
+### Creating a nonce
+- [init()](./init%28%29.md)
   Creates a new random nonce.
 
 

@@ -1,14 +1,15 @@
 # kIOUSB30LinkStateHotResetDeadline
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateHotResetDeadline = kIOUSB30LinkStateHotResetActiveTimeout + kIOUSB30LinkStateHotResetExitTimeout + 1
 ```
 

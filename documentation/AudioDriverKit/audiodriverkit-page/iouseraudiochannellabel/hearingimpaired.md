@@ -1,7 +1,8 @@
 # HearingImpaired
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The audio for the hearing-impaired channel.
 
@@ -10,21 +11,22 @@ The audio for the hearing-impaired channel.
 
 ## Declaration
 
-```swift
+```c
 HearingImpaired
 ```
 
 ## See Also
 
-- [ClickTrack](audiodriverkit/iouseraudiochannellabel/clicktrack.md)
+### Alternate Content Channels
+- [ClickTrack](./clicktrack.md)
   The click track channel.
-- [DialogCentricMix](audiodriverkit/iouseraudiochannellabel/dialogcentricmix.md)
+- [DialogCentricMix](./dialogcentricmix.md)
   The dialog-centric mix channel.
-- [ForeignLanguage](audiodriverkit/iouseraudiochannellabel/foreignlanguage.md)
+- [ForeignLanguage](./foreignlanguage.md)
   The foreign language channel.
-- [Haptic](audiodriverkit/iouseraudiochannellabel/haptic.md)
+- [Haptic](./haptic.md)
   The haptic effects channel.
-- [Narration](audiodriverkit/iouseraudiochannellabel/narration.md)
+- [Narration](./narration.md)
   The narration channel.
 
 

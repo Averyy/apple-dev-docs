@@ -1,7 +1,8 @@
 # dryRun
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to delete matching records.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether to delete matching records.
 
 ## Declaration
 
-```swift
+```
 attribute boolean? dryRun;
 ```
 

@@ -1,7 +1,8 @@
 # AppsReportingAd.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving state of the ad at report time.
 
@@ -10,13 +11,18 @@ Advertiser-configurable serving state of the ad at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingAd.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: The ad is set to run and can participate in auctions.
+- `PAUSED`: The ad is paused by the advertiser and doesn’t participate in auctions.
+
 #### Discussion
 
-This captures the advertiser’s run-or-pause choice as of the report’s generation, separate from the system-evaluated [`AppsReportingAd.SystemStatus`](appsreportingad/systemstatus-data.typealias.md) reported in the same row.
+This captures the advertiser’s run-or-pause choice as of the report’s generation, separate from the system-evaluated [`AppsReportingAd.SystemStatus`](./systemstatus-data.typealias.md) reported in the same row.
 
 ##### Example
 
@@ -26,7 +32,7 @@ This captures the advertiser’s run-or-pause choice as of the report’s genera
 }
 ```
 
-See [`AdStatus`](adstatus.md) for additional context.
+See [`AdStatus`](../adstatus.md) for additional context.
 
 
 ---

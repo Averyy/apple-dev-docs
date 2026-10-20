@@ -1,7 +1,8 @@
 # units
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measuring system — imperial or metric — to use for units.
 
@@ -20,19 +21,32 @@ The measuring system — imperial or metric — to use for units.
 var units: MKDistanceFormatter.Units { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign) MKDistanceFormatterUnits units;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign) MKDistanceFormatterUnits units;
+```
+
 #### Discussion
 
-You can use this property to explicitly set the measuring system for units. The default value of this property is [`MKDistanceFormatter.Units.default`](mkdistanceformatter/units-swift.enum/default.md), which bases the measuring system on the user’s locale.
+You can use this property to explicitly set the measuring system for units. The default value of this property is [`MKDistanceFormatter.Units.default`](./units-swift.enum/default.md), which bases the measuring system on the user’s locale.
 
 ## See Also
 
-- [var locale: Locale!](mkdistanceformatter/locale.md)
+### Specifying the format
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting strings.
-- [MKDistanceFormatter.Units](mkdistanceformatter/units-swift.enum.md)
+- [MKDistanceFormatter.Units](./units-swift.enum.md)
   Constants that reflect the type of units to use in the string.
-- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/unitstyle.md)
+- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](./unitstyle.md)
   The preferred style for units.
-- [MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/distanceunitstyle.md)
+- [MKDistanceFormatter.DistanceUnitStyle](./distanceunitstyle.md)
   Constants that indicate the format style to use for strings.
 
 

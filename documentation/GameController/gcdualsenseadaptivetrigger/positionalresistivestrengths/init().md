@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty resistive strengths structure.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float))](gcdualsenseadaptivetrigger/positionalresistivestrengths/init(values:).md)
+### Creating resistive strengths
+- [init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Float))](./init%28values%29.md)
   Creates a resistive strengths structure with the specified strength values.
 
 

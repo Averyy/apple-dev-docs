@@ -1,7 +1,8 @@
 # HMError.Code.incompatibleNetwork
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating an incompatible network.
 
@@ -19,15 +20,20 @@ An error indicating an incompatible network.
 case incompatibleNetwork
 ```
 
+```c
+HMErrorCodeIncompatibleNetwork
+```
+
 ## See Also
 
-- [HMError.Code.enterpriseNetworkNotSupported](hmerror/code/enterprisenetworknotsupported.md)
+### Network errors
+- [HMError.Code.enterpriseNetworkNotSupported](./enterprisenetworknotsupported.md)
   An enterprise network doesn’t support this accessory.
-- [HMError.Code.failedToJoinNetwork](hmerror/code/failedtojoinnetwork.md)
+- [HMError.Code.failedToJoinNetwork](./failedtojoinnetwork.md)
   The accessory failed to join the network.
-- [HMError.Code.networkUnavailable](hmerror/code/networkunavailable.md)
+- [HMError.Code.networkUnavailable](./networkunavailable.md)
   An error indicating the network is unavailable.
-- [HMError.Code.wiFiCredentialGenerationFailed](hmerror/code/wificredentialgenerationfailed.md)
+- [HMError.Code.wiFiCredentialGenerationFailed](./wificredentialgenerationfailed.md)
   WiFi credential generation failed.
 
 

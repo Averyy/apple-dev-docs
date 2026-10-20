@@ -1,18 +1,19 @@
 # reversed()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an action that reverses the behavior of another action.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an action that reverses the behavior of another action.
 func reversed() -> SKAction
 ```
 
+```objc
+- (SKAction *) reversedAction;
+```
+
 ## Mentions
 
-- [Getting Started with Actions](getting-started-with-actions.md)
+- [Getting Started with Actions](../getting-started-with-actions.md)
 
 #### Return Value
 

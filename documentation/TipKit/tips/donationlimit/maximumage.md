@@ -1,7 +1,8 @@
 # maximumAge
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Maximum age of donations this event will persist and query. By default events have no maximum age.
 

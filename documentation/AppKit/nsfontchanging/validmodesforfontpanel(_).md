@@ -1,10 +1,11 @@
 # validModesForFontPanel(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 optional func validModesForFontPanel(_ fontPanel: NSFontPanel) -> NSFontPanel.ModeMask
 ```
 
+```objc
+- (NSFontPanelModeMask) validModesForFontPanel:(NSFontPanel *) fontPanel;
+```
+
 ## See Also
 
-- [func changeFont(NSFontManager?)](nsfontchanging/changefont(_:).md)
+### Instance Methods
+- [func changeFont(NSFontManager?)](./changefont%28_%29.md)
 
 
 ---

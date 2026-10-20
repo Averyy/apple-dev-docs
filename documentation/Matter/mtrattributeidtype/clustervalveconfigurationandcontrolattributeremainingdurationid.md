@@ -1,7 +1,8 @@
 # clusterValveConfigurationAndControlAttributeRemainingDurationID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterValveConfigurationAndControlAttributeRemainingDurationID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterValveConfigurationAndControlAttributeRemainingDurationID
 ```
 
 

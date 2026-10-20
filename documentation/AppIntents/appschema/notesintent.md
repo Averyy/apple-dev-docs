@@ -1,7 +1,8 @@
 # AppSchema.NotesIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the notes domain.
 
@@ -21,27 +22,28 @@ protocol NotesIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var appendText: some AppSchemaIntent](appschema/notesintent/appendtext.md)
+- [var appendText: some AppSchemaIntent](./notesintent/appendtext.md)
   An intent schema that adds text to the end of an existing note.
-- [var createNote: some AppSchemaIntent](appschema/notesintent/createnote.md)
+- [var createNote: some AppSchemaIntent](./notesintent/createnote.md)
   An intent schema that creates a new note.
-- [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)
+- [var updateNote: some AppSchemaIntent](./notesintent/updatenote.md)
   An intent schema that updates a note.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var createNote: some AppSchemaIntent](appschema/notesintent/createnote.md)
+### Actions
+- [var createNote: some AppSchemaIntent](./notesintent/createnote.md)
   An intent schema that creates a new note.
-- [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)
+- [var updateNote: some AppSchemaIntent](./notesintent/updatenote.md)
   An intent schema that updates a note.
-- [var appendText: some AppSchemaIntent](appschema/notesintent/appendtext.md)
+- [var appendText: some AppSchemaIntent](./notesintent/appendtext.md)
   An intent schema that adds text to the end of an existing note.
 
 

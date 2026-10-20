@@ -1,7 +1,8 @@
 # send(ins:p1:p2:data:le:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously sends an APDU command to the smart card.
 
@@ -29,7 +30,7 @@ A tuple containing the status word (sw) and response data.
 
 In an async context, Swift prefers this overload over the synchronous `send(ins:p1:p2:data:le:) throws` method. To call the synchronous overload from an async context, use a typed function reference cast: `card.send as (UInt8, UInt8, UInt8, Data?, Int?) throws -> (UInt16, Data)`
 
-> **Note**: `CancellationError` if the task was cancelled before transmission, or an error if the command fails.
+> **Throws**: `CancellationError` if the task was cancelled before transmission, or an error if the command fails.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # PlaneAnchor.Geometry.Extent
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The size of a plane.
 
@@ -17,33 +18,34 @@ struct Extent
 ## Topics
 
 ### Inspecting a plane extent
-- [var width: Float](planeanchor/geometry-swift.struct/extent-swift.struct/width.md)
+- [var width: Float](./extent-swift.struct/width.md)
   The width of a plane.
-- [var height: Float](planeanchor/geometry-swift.struct/extent-swift.struct/height.md)
+- [var height: Float](./extent-swift.struct/height.md)
   The height of a plane.
-- [var anchorFromExtentTransform: simd_float4x4](planeanchor/geometry-swift.struct/extent-swift.struct/anchorfromextenttransform.md)
+- [var anchorFromExtentTransform: simd_float4x4](./extent-swift.struct/anchorfromextenttransform.md)
   The transform from the plane extent to the plane anchor’s coordinate system.
 ### Instance Properties
-- [var description: String](planeanchor/geometry-swift.struct/extent-swift.struct/description.md)
+- [var description: String](./extent-swift.struct/description.md)
   A textual representation of this extent.
 ### Default Implementations
-- [Equatable Implementations](planeanchor/geometry-swift.struct/extent-swift.struct/equatable-implementations.md)
+- [Equatable Implementations](./extent-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var meshFaces: GeometryElement](planeanchor/geometry-swift.struct/meshfaces.md)
+### Inspecting plane geometry
+- [var meshFaces: GeometryElement](./meshfaces.md)
   The faces in the mesh that describes a plane.
-- [var meshVertices: GeometrySource](planeanchor/geometry-swift.struct/meshvertices.md)
+- [var meshVertices: GeometrySource](./meshvertices.md)
   The vertices in the mesh that describes a plane.
-- [var extent: PlaneAnchor.Geometry.Extent](planeanchor/geometry-swift.struct/extent-swift.property.md)
+- [var extent: PlaneAnchor.Geometry.Extent](./extent-swift.property.md)
   The size of a plane.
 
 

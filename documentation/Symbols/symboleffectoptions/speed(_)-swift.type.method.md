@@ -1,7 +1,8 @@
 # speed(_:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A default set of effect options with a preferred speed multiplier.
 
@@ -30,7 +31,8 @@ A new set of effect options with the preferred speed multiplier.
 
 ## See Also
 
-- [func speed(Double) -> SymbolEffectOptions](symboleffectoptions/speed(_:)-swift.method.md)
+### Configuring effect speed
+- [func speed(Double) -> SymbolEffectOptions](./speed%28_%29-swift.method.md)
   Creates a set of effect options with a preferred speed multiplier.
 
 

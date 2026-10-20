@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates if marked text exists for an active input session.
@@ -18,13 +19,18 @@ A Boolean value that indicates if marked text exists for an active input session
 var hasMarkedText: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasMarkedText;
+```
+
 ## See Also
 
-- [var markedTextRange: UITextRange?](betextinput/markedtextrange.md)
+### Managing marked text
+- [var markedTextRange: UITextRange?](./markedtextrange.md)
   A range that represents the position of the marked text.
-- [func unmarkText()](betextinput/unmarktext.md)
+- [func unmarkText()](./unmarktext%28%29.md)
   Unmarks the currently marked text.
-- [func isPointNearMarkedText(CGPoint) -> Bool](betextinput/ispointnearmarkedtext(_:).md)
+- [func isPointNearMarkedText(CGPoint) -> Bool](./ispointnearmarkedtext%28_%29.md)
   Provides a Boolean value that indicates if a point is near marked text.
 
 

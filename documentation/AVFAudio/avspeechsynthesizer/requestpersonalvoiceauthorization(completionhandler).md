@@ -1,7 +1,8 @@
 # requestPersonalVoiceAuthorization(completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Prompts the user to authorize your app to use personal voices.
 
@@ -17,7 +18,15 @@ Prompts the user to authorize your app to use personal voices.
 ## Declaration
 
 ```swift
+class func requestPersonalVoiceAuthorization(completionHandler handler: @escaping @Sendable (AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus) -> Void)
+```
+
+```swift
 class func requestPersonalVoiceAuthorization() async -> AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus
+```
+
+```objc
++ (void) requestPersonalVoiceAuthorizationWithCompletionHandler:(void (^)(AVSpeechSynthesisPersonalVoiceAuthorizationStatus status)) handler;
 ```
 
 #### Discussion
@@ -28,11 +37,12 @@ class func requestPersonalVoiceAuthorization() async -> AVSpeechSynthesizer.Pers
 
 ## See Also
 
-- [class var personalVoiceAuthorizationStatus: AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md)
+### Enabling personal voices
+- [class var personalVoiceAuthorizationStatus: AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](./personalvoiceauthorizationstatus-swift.type.property.md)
   Your app’s authorization to use personal voices.
-- [class let availableVoicesDidChangeNotification: NSNotification.Name](avspeechsynthesizer/availablevoicesdidchangenotification.md)
+- [class let availableVoicesDidChangeNotification: NSNotification.Name](./availablevoicesdidchangenotification.md)
   A notification that indicates a change in available voices for speech synthesis.
-- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum.md)
+- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](./personalvoiceauthorizationstatus-swift.enum.md)
   An enumeration that models the personal voices authorization status.
 
 

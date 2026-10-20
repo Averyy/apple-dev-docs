@@ -1,7 +1,8 @@
 # IdentityCredential
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data for a PKCS #12 password-protected identity.
 
@@ -16,7 +17,7 @@ The data for a PKCS #12 password-protected identity.
 
 ## Declaration
 
-```swift
+```
 object IdentityCredential
 ```
 
@@ -27,11 +28,12 @@ object IdentityCredential
 
 ## See Also
 
-- [object ACMECredential](acmecredential.md)
+### Credentials
+- [object ACMECredential](./acmecredential.md)
   An ACME identity that the device generates.
-- [object SCEPCredential](scepcredential.md)
+- [object SCEPCredential](./scepcredential.md)
   A SCEP identity that the device generates.
-- [object UserNameAndPasswordCredential](usernameandpasswordcredential.md)
+- [object UserNameAndPasswordCredential](./usernameandpasswordcredential.md)
   Data that describes a credential that represents a user name and password.
 
 

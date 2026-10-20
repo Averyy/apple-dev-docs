@@ -1,14 +1,15 @@
 # testAttributeRWCustom
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Mobile 10.0+
 
 ## Declaration
 
-```swift
+```
 attribute boolean testAttributeRWCustom;
 ```
 

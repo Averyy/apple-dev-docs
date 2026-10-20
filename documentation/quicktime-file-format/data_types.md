@@ -1,6 +1,7 @@
 # Data types
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 #### Overview
 
@@ -31,7 +32,7 @@ typedef struct QTVRStringAtom {
 } QTVRStringAtom, *QTVRStringAtomPtr;
 ```
 
-#### Vr World Header Atom Structure
+#### VR World Header Atom Structure
 
 ```c
 typedef struct QTVRWorldHeaderAtom {
@@ -45,7 +46,7 @@ typedef struct QTVRWorldHeaderAtom {
 } QTVRWorldHeaderAtom, *QTVRWorldHeaderAtomPtr;
 ```
 
-#### Panorama Imaging Atom Structure
+#### Panorama-Imaging Atom Structure
 
 ```c
 typedef struct QTVRPanoImagingAtom {
@@ -251,7 +252,8 @@ typedef struct QTVRTrackRefEntry QTVRTrackRefEntry;
 
 ## See Also
 
-- [Constants](constants.md)
+### C Summary
+- [Constants](./constants.md)
 
 
 ---

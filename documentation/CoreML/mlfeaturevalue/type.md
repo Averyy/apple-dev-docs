@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the feature value.
 
@@ -18,6 +19,10 @@ The type of the feature value.
 
 ```swift
 var type: MLFeatureType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MLFeatureType type;
 ```
 
 

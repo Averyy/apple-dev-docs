@@ -1,7 +1,8 @@
 # messages
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Receive data from a connection as an async stream.
 
@@ -19,6 +20,8 @@ Receive data from a connection as an async stream.
 ```swift
 var messages: AsyncThrowingStream<ApplicationProtocol.Message<ApplicationProtocol.ContentType>, any Error> { get }
 ```
+
+Available when `ApplicationProtocol` conforms to `MessageProtocol`.
 
 #### Discussion
 

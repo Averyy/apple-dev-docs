@@ -1,7 +1,8 @@
 # CKRecord.SystemFieldKey
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for types of system field keys on records.
 
@@ -11,7 +12,7 @@ Possible values for types of system field keys on records.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,38 +24,39 @@ enum SystemFieldKey
 
 #### Overview
 
-Use the values [`share`](ckrecord/systemfieldkey/share.md) and [`parent`](ckrecord/systemfieldkey/parent.md) when creating an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) for a [`CKQuery`](ckquery.md) to reference a record’s [`share`](ckrecord/share.md) or [`parent`](ckrecord/parent.md) property, respectively.
+Use the values [`share`](./systemfieldkey/share.md) and [`parent`](./systemfieldkey/parent.md) when creating an [`NSPredicate`](../../Foundation/nspredicate.md) for a [`CKQuery`](../ckquery.md) to reference a record’s [`share`](./share.md) or [`parent`](./parent.md) property, respectively.
 
 ## Topics
 
 ### Types of Shared Records
-- [static let parent: CKRecord.FieldKey](ckrecord/systemfieldkey/parent.md)
+- [static let parent: CKRecord.FieldKey](./systemfieldkey/parent.md)
   The key constant that a record uses for its CKRecord.parent.
-- [static let share: CKRecord.FieldKey](ckrecord/systemfieldkey/share.md)
+- [static let share: CKRecord.FieldKey](./systemfieldkey/share.md)
   The key constant that a record uses for its CKRecord.share.
 ### Type Properties
-- [static var creationDate: CKRecord.FieldKey](ckrecord/systemfieldkey/creationdate.md)
+- [static var creationDate: CKRecord.FieldKey](./systemfieldkey/creationdate.md)
   A key constant that a record uses for its CKRecord.creationDate.
-- [static var creatorUserRecordID: CKRecord.FieldKey](ckrecord/systemfieldkey/creatoruserrecordid.md)
+- [static var creatorUserRecordID: CKRecord.FieldKey](./systemfieldkey/creatoruserrecordid.md)
   A key constant that a record uses for its CKRecord.creatorUserRecordID.
-- [static var lastModifiedUserRecordID: CKRecord.FieldKey](ckrecord/systemfieldkey/lastmodifieduserrecordid.md)
+- [static var lastModifiedUserRecordID: CKRecord.FieldKey](./systemfieldkey/lastmodifieduserrecordid.md)
   A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
-- [static var modificationDate: CKRecord.FieldKey](ckrecord/systemfieldkey/modificationdate.md)
+- [static var modificationDate: CKRecord.FieldKey](./systemfieldkey/modificationdate.md)
   A key constant that a record uses for its CKRecord.modificationDate.
-- [static var recordID: CKRecord.FieldKey](ckrecord/systemfieldkey/recordid.md)
+- [static var recordID: CKRecord.FieldKey](./systemfieldkey/recordid.md)
   A key constant that a record uses for its CKRecord.recordID.
 
 ## See Also
 
-- [var parent: CKRecord.Reference?](ckrecord/parent.md)
+### Sharing Records
+- [var parent: CKRecord.Reference?](./parent.md)
   A reference to the record’s parent record.
-- [var share: CKRecord.Reference?](ckrecord/share.md)
+- [var share: CKRecord.Reference?](./share.md)
   A reference to the share object that determines the share status of the record.
-- [CKRecord.Reference](ckrecord/reference.md)
+- [CKRecord.Reference](./reference.md)
   A relationship between two records in a record zone.
-- [func setParent(CKRecord?)](ckrecord/setparent(_:)-23du1.md)
+- [func setParent(CKRecord?)](./setparent%28_%29-23du1.md)
   Creates and sets a reference object for a parent from its record.
-- [func setParent(CKRecord.ID?)](ckrecord/setparent(_:)-7egcx.md)
+- [func setParent(CKRecord.ID?)](./setparent%28_%29-7egcx.md)
   Creates and sets a reference object for a parent from the parent’s record ID.
 
 

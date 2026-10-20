@@ -1,9 +1,10 @@
 # kSpeechModeText
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Used with [`kSpeechInputModeProperty`](kspeechinputmodeproperty.md) to indicate that the speech channel is in text-processing mode.
+Used with [`kSpeechInputModeProperty`](./kspeechinputmodeproperty.md) to indicate that the speech channel is in text-processing mode.
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ Used with [`kSpeechInputModeProperty`](kspeechinputmodeproperty.md) to indicate 
 
 ```swift
 let kSpeechModeText: CFString
+```
+
+```c
+const CFStringRef kSpeechModeText;
 ```
 
 

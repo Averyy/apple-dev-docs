@@ -1,7 +1,8 @@
 # ConfigurationChangeStatus
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent the status of a configuration change.
 
@@ -10,7 +11,7 @@ Values that represent the status of a configuration change.
 
 ## Declaration
 
-```swift
+```
 const ConfigurationChangeStatus: Readonly<{
     readonly Initialized: "Initialized";
     readonly Refreshed: "Refreshed";
@@ -22,14 +23,15 @@ type ConfigurationChangeStatus =
 ## Topics
 
 ### Enumeration Cases
-- [Initialized](configurationchangestatus/initialized.md)
+- [Initialized](./configurationchangestatus/initialized.md)
   A status value that indicates the initialization of the configuration is successful.
-- [Refreshed](configurationchangestatus/refreshed.md)
+- [Refreshed](./configurationchangestatus/refreshed.md)
   A status value that indicates the configuration refresh is successful.
 
 ## See Also
 
-- [const ConfigurationErrorStatus](configurationerrorstatus.md)
+### Initialization and error status
+- [const ConfigurationErrorStatus](./configurationerrorstatus.md)
   A value that represents the status of a configuration error.
 
 

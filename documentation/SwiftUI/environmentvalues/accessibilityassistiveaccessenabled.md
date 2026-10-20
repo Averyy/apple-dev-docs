@@ -1,7 +1,8 @@
 # accessibilityAssistiveAccessEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Assistive Access is in use.
 
@@ -22,11 +23,12 @@ var accessibilityAssistiveAccessEnabled: Bool { get }
 
 ## See Also
 
-- [struct AssistiveAccess](assistiveaccess.md)
+### Using assistive access
+- [struct AssistiveAccess](../assistiveaccess.md)
   A scene that presents an interface appropriate for Assistive Access on iOS and iPadOS. On other platforms, this scene is unused.
-- [func assistiveAccessNavigationIcon(Image) -> some View](view/assistiveaccessnavigationicon(_:).md)
+- [func assistiveAccessNavigationIcon(Image) -> some View](../view/assistiveaccessnavigationicon%28_%29.md)
   Configures the view’s icon for purposes of navigation.
-- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](view/assistiveaccessnavigationicon(systemimage:).md)
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](../view/assistiveaccessnavigationicon%28systemimage%29.md)
   Configures the view’s icon for purposes of navigation.
 
 

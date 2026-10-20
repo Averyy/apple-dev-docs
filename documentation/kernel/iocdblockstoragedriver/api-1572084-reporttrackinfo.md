@@ -1,14 +1,15 @@
 # reportTrackInfo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn reportTrackInfo(UInt16 track, CDTrackInfo *trackInfo);
 ```
 

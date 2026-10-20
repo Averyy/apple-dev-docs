@@ -1,7 +1,8 @@
 # escape
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character that marks a C escape sequence in a CSV file.
 
@@ -21,9 +22,10 @@ var escape: String
 
 ## See Also
 
-- [var quote: String](mldatatable/parsingoptions/quote.md)
+### Handling special characters
+- [var quote: String](./quote.md)
   The character that represents a quote (`"`) in a CSV file.
-- [var doubleQuote: Bool](mldatatable/parsingoptions/doublequote.md)
+- [var doubleQuote: Bool](./doublequote.md)
   A Boolean value indicating whether two consecutive quotes (`""`) represent a single quote (`"`) in a CSV file.
 
 

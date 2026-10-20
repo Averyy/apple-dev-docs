@@ -1,7 +1,8 @@
 # cipherSuiteGroups(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set TLS ciphersuite groups to the set of enabled ciphersuites.
 

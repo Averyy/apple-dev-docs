@@ -1,23 +1,28 @@
 # MIDIObjectRef
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The common base class for many of the framework’s objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias MIDIObjectRef = UInt32
+```
+
+```c
+typedef UInt32 MIDIObjectRef;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ Developers may add their own private properties, with names that begin with thei
 
 ## See Also
 
-- [func MIDIObjectFindByUniqueID(MIDIUniqueID, UnsafeMutablePointer<MIDIObjectRef>?, UnsafeMutablePointer<MIDIObjectType>?) -> OSStatus](midiobjectfindbyuniqueid(_:_:_:).md)
+### MIDI object configuration
+- [func MIDIObjectFindByUniqueID(MIDIUniqueID, UnsafeMutablePointer<MIDIObjectRef>?, UnsafeMutablePointer<MIDIObjectType>?) -> OSStatus](./midiobjectfindbyuniqueid%28_,_,_%29.md)
   Locates a device, entity, or endpoint by its unique identifier.
-- [MIDI Object Properties](midi-object-properties.md)
+- [MIDI Object Properties](./midi-object-properties.md)
   Configure the properties of MIDI objects.
 
 

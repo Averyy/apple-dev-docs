@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.errorOnFailure
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

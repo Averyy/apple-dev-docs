@@ -1,7 +1,8 @@
 # cParagraph
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A paragraph of text.
 

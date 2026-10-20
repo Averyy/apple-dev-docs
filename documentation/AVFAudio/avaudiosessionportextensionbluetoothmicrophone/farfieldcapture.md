@@ -1,7 +1,8 @@
 # farFieldCapture
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes whether this port supports far-field input capture.
 
@@ -19,9 +20,14 @@ Describes whether this port supports far-field input capture.
 var farFieldCapture: AVAudioSessionCapability { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) AVAudioSessionCapability * farFieldCapture;
+```
+
 ## See Also
 
-- [var highQualityRecording: AVAudioSessionCapability](avaudiosessionportextensionbluetoothmicrophone/highqualityrecording.md)
+### Inspecting the port extension
+- [var highQualityRecording: AVAudioSessionCapability](./highqualityrecording.md)
   Describes whether this port supports Bluetooth high-quality recording.
 
 

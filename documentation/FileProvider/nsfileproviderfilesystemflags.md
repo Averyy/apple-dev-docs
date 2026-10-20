@@ -1,7 +1,8 @@
 # NSFileProviderFileSystemFlags
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags that define an item’s on-disk properties and its appearance in the user interface.
 
@@ -18,6 +19,10 @@ Flags that define an item’s on-disk properties and its appearance in the user 
 struct NSFileProviderFileSystemFlags
 ```
 
+```c
+enum NSFileProviderFileSystemFlags : NSUInteger;
+```
+
 #### Overview
 
 The flags define the on-disk properties of the item. The system modifies the item’s appearance based on these flags.
@@ -25,47 +30,48 @@ The flags define the on-disk properties of the item. The system modifies the ite
 ## Topics
 
 ### Flags
-- [static var userReadable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userreadable.md)
+- [static var userReadable: NSFileProviderFileSystemFlags](./nsfileproviderfilesystemflags/userreadable.md)
   The user can read the item.
-- [static var userWritable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userwritable.md)
+- [static var userWritable: NSFileProviderFileSystemFlags](./nsfileproviderfilesystemflags/userwritable.md)
   The user can modify the item.
-- [static var userExecutable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userexecutable.md)
+- [static var userExecutable: NSFileProviderFileSystemFlags](./nsfileproviderfilesystemflags/userexecutable.md)
   The user can execute the item.
-- [static var hidden: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/hidden.md)
+- [static var hidden: NSFileProviderFileSystemFlags](./nsfileproviderfilesystemflags/hidden.md)
   By default, the system hides the item when the user views the file system.
-- [static var pathExtensionHidden: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/pathextensionhidden.md)
+- [static var pathExtensionHidden: NSFileProviderFileSystemFlags](./nsfileproviderfilesystemflags/pathextensionhidden.md)
   By default, the system hides the item’s extension when showing its filename.
 ### Initializers
-- [init(rawValue: UInt)](nsfileproviderfilesystemflags/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsfileproviderfilesystemflags/init%28rawvalue%29.md)
   Creates a new file system flag from the provided value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var extendedAttributes: [String : Data]](nsfileprovideritemprotocol/extendedattributes.md)
+### Managing Metadata
+- [var extendedAttributes: [String : Data]](./nsfileprovideritemprotocol/extendedattributes.md)
   The extended file attributes synced by the File Provider extension.
-- [var fileSystemFlags: NSFileProviderFileSystemFlags](nsfileprovideritemprotocol/filesystemflags.md)
+- [var fileSystemFlags: NSFileProviderFileSystemFlags](./nsfileprovideritemprotocol/filesystemflags.md)
   Flags that define an item’s on-disk properties and its appearance in the user interface.
-- [var tagData: Data?](nsfileprovideritemprotocol/tagdata.md)
+- [var tagData: Data?](./nsfileprovideritemprotocol/tagdata.md)
   An abstract data blob representing the tags associated with the item.
-- [var userInfo: [AnyHashable : Any]?](nsfileprovideritemprotocol/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./nsfileprovideritemprotocol/userinfo.md)
   A property list that contains additional data about the item.
-- [var favoriteRank: NSNumber?](nsfileprovideritemprotocol/favoriterank.md)
+- [var favoriteRank: NSNumber?](./nsfileprovideritemprotocol/favoriterank.md)
   A 64-bit, unsigned integer indicating the order of the favorite item in the Favorites list.
-- [let NSFileProviderFavoriteRankUnranked: UInt64](nsfileproviderfavoriterankunranked.md)
+- [let NSFileProviderFavoriteRankUnranked: UInt64](./nsfileproviderfavoriterankunranked.md)
   A value that indicates that the item is not ranked.
-- [var typeAndCreator: NSFileProviderTypeAndCreator](nsfileprovideritemprotocol/typeandcreator.md)
+- [var typeAndCreator: NSFileProviderTypeAndCreator](./nsfileprovideritemprotocol/typeandcreator.md)
   The file type and creator codes for the item.
 
 

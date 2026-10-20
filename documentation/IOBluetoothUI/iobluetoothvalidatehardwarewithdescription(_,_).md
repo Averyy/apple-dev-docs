@@ -1,7 +1,8 @@
 # IOBluetoothValidateHardwareWithDescription(_:_:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -12,10 +13,15 @@
 func IOBluetoothValidateHardwareWithDescription(_ cancelButtonTitle: CFString!, _ descriptionText: CFString!) -> IOReturn
 ```
 
+```c
+IOReturn IOBluetoothValidateHardwareWithDescription(CFStringRef cancelButtonTitle, CFStringRef descriptionText);
+```
+
 ## See Also
 
-- [func IOBluetoothGetDeviceSelectorController() -> Unmanaged<IOBluetoothDeviceSelectorControllerRef>!](iobluetoothgetdeviceselectorcontroller().md)
-- [func IOBluetoothGetPairingController() -> Unmanaged<IOBluetoothPairingControllerRef>!](iobluetoothgetpairingcontroller().md)
+### Functions
+- [func IOBluetoothGetDeviceSelectorController() -> Unmanaged<IOBluetoothDeviceSelectorControllerRef>!](./iobluetoothgetdeviceselectorcontroller%28%29.md)
+- [func IOBluetoothGetPairingController() -> Unmanaged<IOBluetoothPairingControllerRef>!](./iobluetoothgetpairingcontroller%28%29.md)
 
 
 ---

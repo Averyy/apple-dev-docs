@@ -1,7 +1,8 @@
 # resolveBeneath
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If the path does not reside in the hierarchy beneath the starting directory, return an error.
 

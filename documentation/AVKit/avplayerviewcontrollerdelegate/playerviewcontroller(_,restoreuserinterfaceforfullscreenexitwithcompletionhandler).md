@@ -1,7 +1,8 @@
 # playerViewController(_:restoreUserInterfaceForFullScreenExitWithCompletionHandler:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to restore the app’s user interface after returning from a full-screen presentation.
 
@@ -14,7 +15,15 @@ Tells the delegate to restore the app’s user interface after returning from a 
 ## Declaration
 
 ```swift
+optional func playerViewController(_ playerViewController: AVPlayerViewController, restoreUserInterfaceForFullScreenExitWithCompletionHandler completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func playerViewControllerRestoreUserInterfaceForFullScreenExit(_ playerViewController: AVPlayerViewController) async -> Bool
+```
+
+```objc
+- (void) playerViewController:(AVPlayerViewController *) playerViewController restoreUserInterfaceForFullScreenExitWithCompletionHandler:(void (^)(BOOL restored)) completionHandler;
 ```
 
 ## Parameters
@@ -24,9 +33,10 @@ optional func playerViewControllerRestoreUserInterfaceForFullScreenExit(_ player
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, willBeginFullScreenPresentationWithAnimationCoordinator: any UIViewControllerTransitionCoordinator)](avplayerviewcontrollerdelegate/playerviewcontroller(_:willbeginfullscreenpresentationwithanimationcoordinator:).md)
+### Responding to full-screen presentations
+- [func playerViewController(AVPlayerViewController, willBeginFullScreenPresentationWithAnimationCoordinator: any UIViewControllerTransitionCoordinator)](./playerviewcontroller%28_,willbeginfullscreenpresentationwithanimationcoordinator%29.md)
   Tells the delegate when the player view controller is about to start full-screen display.
-- [func playerViewController(AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator: any UIViewControllerTransitionCoordinator)](avplayerviewcontrollerdelegate/playerviewcontroller(_:willendfullscreenpresentationwithanimationcoordinator:).md)
+- [func playerViewController(AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator: any UIViewControllerTransitionCoordinator)](./playerviewcontroller%28_,willendfullscreenpresentationwithanimationcoordinator%29.md)
   Tells the delegate when the player view controller is about to end full-screen display.
 
 

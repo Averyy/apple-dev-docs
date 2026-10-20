@@ -1,7 +1,8 @@
 # operation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drop operation that the drop interaction proposes to perform.
 
@@ -17,9 +18,14 @@ The drop operation that the drop interaction proposes to perform.
 var operation: UIDropOperation { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIDropOperation operation;
+```
+
 ## See Also
 
-- [init(operation: UIDropOperation)](uidropproposal/init(operation:).md)
+### Initializing a drop proposal
+- [init(operation: UIDropOperation)](./init%28operation%29.md)
   Initializes a new drop proposal with a drop operation type.
 
 

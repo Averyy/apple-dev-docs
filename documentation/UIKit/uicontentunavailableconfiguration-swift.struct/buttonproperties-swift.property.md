@@ -1,7 +1,8 @@
 # buttonProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional configuration for the primary button.
 
@@ -10,7 +11,7 @@ Additional configuration for the primary button.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

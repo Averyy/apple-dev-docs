@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title to display at the top of the panel.
 
@@ -14,6 +15,10 @@ The title to display at the top of the panel.
 
 ```swift
 var title: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
 ```
 
 

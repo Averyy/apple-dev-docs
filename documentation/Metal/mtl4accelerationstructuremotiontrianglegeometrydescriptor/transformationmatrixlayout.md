@@ -1,7 +1,8 @@
 # transformationMatrixLayout
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the layout for the transformation matrix in the transformation matrix buffer.
 
@@ -17,6 +18,10 @@ Configures the layout for the transformation matrix in the transformation matrix
 
 ```swift
 var transformationMatrixLayout: MTLMatrixLayout { get set }
+```
+
+```objc
+@property (nonatomic) MTLMatrixLayout transformationMatrixLayout;
 ```
 
 #### Discussion

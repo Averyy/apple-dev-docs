@@ -1,7 +1,8 @@
 # transcript
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that the text items in the image represent.
 

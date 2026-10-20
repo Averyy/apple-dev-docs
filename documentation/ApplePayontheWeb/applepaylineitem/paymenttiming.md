@@ -1,7 +1,8 @@
 # paymentTiming
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time that the payment occurs as part of a successful transaction.
 
@@ -11,13 +12,14 @@ The time that the payment occurs as part of a successful transaction.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentTiming paymentTiming;
 ```
 
 ## See Also
 
-- [ApplePayPaymentTiming](applepaypaymenttiming.md)
+### Configuring payment timing
+- [ApplePayPaymentTiming](../applepaypaymenttiming.md)
   A type that indicates the time a payment occurs in a transaction.
 
 

@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.MinAge
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Minimum age targeting, setting the lower bound of the target age range.
 
@@ -10,13 +11,13 @@ Minimum age targeting, setting the lower bound of the target age range.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.MinAge
 ```
 
 #### Discussion
 
-Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "minAge": {

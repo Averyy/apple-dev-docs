@@ -1,6 +1,7 @@
 # Authorization Services
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Access restricted areas of the operating system, and control access to particular features of your macOS app.
 
@@ -14,75 +15,76 @@ The `Security.Authorization` API is a programming interface to the Security Serv
 
 As shown in the image below, the Security Server is a daemon running in the operating system that provides a trusted implementation of various security protocols, including authorization computation. In turn, the Security Server relies on the Security Agent to interface with users when authentication is needed. Thus an app can verify credentials (usernames and passwords) without ever accessing them directly. This authorization process also allows the means of authentication to change in the future (such as adding Touch ID) without your having to modify your app.
 
-![Diagram showing your app sitting above the Security framework, which in turn sits above the Security Server and the Security Agent.](/images/com.apple.security/media-2891901@2x.png)
+![Diagram showing your app sitting above the Security framework, which in turn sits above the Security Server and the Security Agent.](https://developer.apple.com/tutorials/images/com.apple.security/media-2891901@2x.png)
 
-> **Note**:  For a simplified, class-based version of this API, consider using the [`SFAuthorization`](https://developer.apple.com/documentation/securityfoundation/sfauthorization) class instead. When you need a user interface that enables display and control of the current authorization state for a particular set of rights, use the [`SFAuthorizationView`](https://developer.apple.com/documentation/securityinterface/sfauthorizationview) class.
+> **Note**:  For a simplified, class-based version of this API, consider using the [`SFAuthorization`](../SecurityFoundation/sfauthorization.md) class instead. When you need a user interface that enables display and control of the current authorization state for a particular set of rights, use the [`SFAuthorizationView`](../SecurityInterface/sfauthorizationview.md) class.
 
 > ❗ **Important**:  The Authorization Services API is not supported within an App Sandbox because the API allows privilege escalation.
 
 ## Topics
 
 ### Authorization References
-- [func AuthorizationCreate(UnsafePointer<AuthorizationRights>?, UnsafePointer<AuthorizationEnvironment>?, AuthorizationFlags, UnsafeMutablePointer<AuthorizationRef?>?) -> OSStatus](authorizationcreate(_:_:_:_:).md)
+- [func AuthorizationCreate(UnsafePointer<AuthorizationRights>?, UnsafePointer<AuthorizationEnvironment>?, AuthorizationFlags, UnsafeMutablePointer<AuthorizationRef?>?) -> OSStatus](./authorizationcreate%28_,_,_,_%29.md)
   Creates a new authorization reference and provides an option to authorize or preauthorize rights.
-- [func AuthorizationFree(AuthorizationRef, AuthorizationFlags) -> OSStatus](authorizationfree(_:_:).md)
+- [func AuthorizationFree(AuthorizationRef, AuthorizationFlags) -> OSStatus](./authorizationfree%28_,_%29.md)
   Frees the memory associated with an authorization reference.
-- [struct AuthorizationFlags](authorizationflags.md)
+- [struct AuthorizationFlags](./authorizationflags.md)
   The flags used to specify authorization options.
-- [typealias AuthorizationRef](authorizationref.md)
+- [typealias AuthorizationRef](./authorizationref.md)
   A pointer to an opaque authorization reference structure.
 ### Authorization Items
-- [struct AuthorizationItem](authorizationitem.md)
+- [struct AuthorizationItem](./authorizationitem.md)
   A structure containing information about an authorization right or the authorization environment.
-- [struct AuthorizationItemSet](authorizationitemset.md)
+- [struct AuthorizationItemSet](./authorizationitemset.md)
   A structure containing a set of authorization items.
-- [typealias AuthorizationRights](authorizationrights.md)
+- [typealias AuthorizationRights](./authorizationrights.md)
   An authorization item set designated to represent a set of rights.
-- [typealias AuthorizationEnvironment](authorizationenvironment.md)
+- [typealias AuthorizationEnvironment](./authorizationenvironment.md)
   An authorization item set designated to hold environment information relevant to authorization decisions.
-- [Authorization Name Tags](authorization-name-tags.md)
+- [Authorization Name Tags](./authorization-name-tags.md)
   Use name tags to define authorization security items.
-- [func AuthorizationFreeItemSet(UnsafeMutablePointer<AuthorizationItemSet>) -> OSStatus](authorizationfreeitemset(_:).md)
+- [func AuthorizationFreeItemSet(UnsafeMutablePointer<AuthorizationItemSet>) -> OSStatus](./authorizationfreeitemset%28_%29.md)
   Frees the memory associated with a set of authorization items.
 ### Rights and Credentials
-- [func AuthorizationCopyInfo(AuthorizationRef, AuthorizationString?, UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationItemSet>?>) -> OSStatus](authorizationcopyinfo(_:_:_:).md)
+- [func AuthorizationCopyInfo(AuthorizationRef, AuthorizationString?, UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationItemSet>?>) -> OSStatus](./authorizationcopyinfo%28_,_,_%29.md)
   Retrieves supporting data such as the user name and other information gathered during evaluation of authorization.
-- [func AuthorizationCopyRights(AuthorizationRef, UnsafePointer<AuthorizationRights>, UnsafePointer<AuthorizationEnvironment>?, AuthorizationFlags, UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationRights>?>?) -> OSStatus](authorizationcopyrights(_:_:_:_:_:).md)
+- [func AuthorizationCopyRights(AuthorizationRef, UnsafePointer<AuthorizationRights>, UnsafePointer<AuthorizationEnvironment>?, AuthorizationFlags, UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationRights>?>?) -> OSStatus](./authorizationcopyrights%28_,_,_,_,_%29.md)
   Authorizes and preauthorizes rights synchronously.
-- [func AuthorizationCopyRightsAsync(AuthorizationRef, UnsafePointer<AuthorizationRights>, UnsafePointer<AuthorizationEnvironment>?, AuthorizationFlags, AuthorizationAsyncCallback)](authorizationcopyrightsasync(_:_:_:_:_:).md)
+- [func AuthorizationCopyRightsAsync(AuthorizationRef, UnsafePointer<AuthorizationRights>, UnsafePointer<AuthorizationEnvironment>?, AuthorizationFlags, AuthorizationAsyncCallback)](./authorizationcopyrightsasync%28_,_,_,_,_%29.md)
   Authorizes and preauthorizes rights asynchronously.
-- [typealias AuthorizationAsyncCallback](authorizationasynccallback.md)
+- [typealias AuthorizationAsyncCallback](./authorizationasynccallback.md)
   A block used as a callback for the asynchronous version of copying authorization rights.
-- [typealias AuthorizationString](authorizationstring.md)
+- [typealias AuthorizationString](./authorizationstring.md)
   A zero-terminated string in UTF-8 encoding.
-- [Authorization Rights Flags](authorization-rights-flags.md)
+- [Authorization Rights Flags](./authorization-rights-flags.md)
   Recognize the values the Security Server sets in an authorization item’s flag field.
 ### Import and Export
-- [func AuthorizationMakeExternalForm(AuthorizationRef, UnsafeMutablePointer<AuthorizationExternalForm>) -> OSStatus](authorizationmakeexternalform(_:_:).md)
+- [func AuthorizationMakeExternalForm(AuthorizationRef, UnsafeMutablePointer<AuthorizationExternalForm>) -> OSStatus](./authorizationmakeexternalform%28_,_%29.md)
   Creates an external representation of an authorization reference.
-- [func AuthorizationCreateFromExternalForm(UnsafePointer<AuthorizationExternalForm>, UnsafeMutablePointer<AuthorizationRef?>) -> OSStatus](authorizationcreatefromexternalform(_:_:).md)
+- [func AuthorizationCreateFromExternalForm(UnsafePointer<AuthorizationExternalForm>, UnsafeMutablePointer<AuthorizationRef?>) -> OSStatus](./authorizationcreatefromexternalform%28_,_%29.md)
   Internalizes the external representation of an authorization reference.
-- [struct AuthorizationExternalForm](authorizationexternalform.md)
+- [struct AuthorizationExternalForm](./authorizationexternalform.md)
   The external representation of an authorization reference.
-- [var kAuthorizationExternalFormLength: Int32](kauthorizationexternalformlength.md)
+- [var kAuthorizationExternalFormLength: Int32](./kauthorizationexternalformlength.md)
   The number of bytes in an external form structure’s array.
 ### The Policy Database
-- [func AuthorizationRightGet(UnsafePointer<CChar>, UnsafeMutablePointer<CFDictionary?>?) -> OSStatus](authorizationrightget(_:_:).md)
+- [func AuthorizationRightGet(UnsafePointer<CChar>, UnsafeMutablePointer<CFDictionary?>?) -> OSStatus](./authorizationrightget%28_,_%29.md)
   Retrieves a right definition as a dictionary.
-- [func AuthorizationRightSet(AuthorizationRef, UnsafePointer<CChar>, CFTypeRef, CFString?, CFBundle?, CFString?) -> OSStatus](authorizationrightset(_:_:_:_:_:_:).md)
+- [func AuthorizationRightSet(AuthorizationRef, UnsafePointer<CChar>, CFTypeRef, CFString?, CFBundle?, CFString?) -> OSStatus](./authorizationrightset%28_,_,_,_,_,_%29.md)
   Creates or updates a right entry in the policy database.
-- [func AuthorizationRightRemove(AuthorizationRef, UnsafePointer<CChar>) -> OSStatus](authorizationrightremove(_:_:).md)
+- [func AuthorizationRightRemove(AuthorizationRef, UnsafePointer<CChar>) -> OSStatus](./authorizationrightremove%28_,_%29.md)
   Removes a right from the policy database.
-- [Policy Database Constants](policy-database-constants.md)
+- [Policy Database Constants](./policy-database-constants.md)
   Use these constants to set rights and rules in the policy database.
 ### Result Codes
-- [Authorization Services Result Codes](authorization-services-result-codes.md)
+- [Authorization Services Result Codes](./authorization-services-result-codes.md)
   Recognize result codes specific to the authorization services API.
 
 ## See Also
 
-- [Authentication, Authorization, and Permissions Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AuthenticationAndAuthorizationGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011200)
-- [Authorization Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995)
+### Related Documentation
+- [Authentication, Authorization, and Permissions Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AuthenticationAndAuthorizationGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011200)
+- [Authorization Services Programming Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995)
 
 
 ---

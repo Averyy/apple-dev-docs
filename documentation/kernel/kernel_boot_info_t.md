@@ -1,14 +1,15 @@
 # kernel_boot_info_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef char kernel_boot_info_t[4096];
 ```
 

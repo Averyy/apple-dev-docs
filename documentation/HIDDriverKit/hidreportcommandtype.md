@@ -1,33 +1,35 @@
 # HIDReportCommandType
 
 **Framework**: HIDDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of the report command for a DriverKit driver.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum { ... } HIDReportCommandType;
 ```
 
 ## Topics
 
 ### Getting the Report Command Types
-- [kIOHIDReportCommandGetReport](hidreportcommandtype/kiohidreportcommandgetreport.md)
-- [kIOHIDReportCommandSetReport](hidreportcommandtype/kiohidreportcommandsetreport.md)
+- [kIOHIDReportCommandGetReport](./hidreportcommandtype/kiohidreportcommandgetreport.md)
+- [kIOHIDReportCommandSetReport](./hidreportcommandtype/kiohidreportcommandsetreport.md)
 
 ## See Also
 
-- [IOHIDCompletionAction](iohidcompletionaction.md)
+### Internal Structures
+- [IOHIDCompletionAction](./iohidcompletionaction.md)
   A function to call when a report operation completes.
-- [IOHIDCompletion](iohidcompletion.md)
+- [IOHIDCompletion](./iohidcompletion.md)
   A structure specifying the action to perform when a set/get report completes.
-- [HIDActionType](hidactiontype.md)
+- [HIDActionType](./hidactiontype.md)
 
 
 ---

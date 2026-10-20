@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this argument matcher into the given encoder.
 
@@ -22,7 +23,7 @@ func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-> **Note**: An error if encoding fails.
+> **Throws**: An error if encoding fails.
 
 ## Parameters
 

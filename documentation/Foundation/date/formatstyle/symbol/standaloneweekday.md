@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.StandaloneWeekday
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies the format for a standalone weekday.
 
@@ -23,59 +24,60 @@ struct StandaloneWeekday
 ## Topics
 
 ### Modifying a Standalone Weekday
-- [static var abbreviated: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/abbreviated.md)
+- [static var abbreviated: Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday/abbreviated.md)
   The abbreviated representation of a standalone weekday.
-- [static var narrow: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday/narrow.md)
   The shortest representation of a standalone weekday.
-- [static var oneDigit: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/onedigit.md)
+- [static var oneDigit: Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday/onedigit.md)
   The one-digit representation of a standalone weekday.
-- [static var short: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/short.md)
+- [static var short: Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday/short.md)
   The short representation of a standalone weekday.
-- [static var wide: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday/wide.md)
   The full representation of a standalone weekday.
 ### Comparing Standalone Weekdays
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear.md)
+### Modifying Date Style Format Symbols
+- [Date.FormatStyle.Symbol.CyclicYear](./cyclicyear.md)
   A type that specifies a format for a cyclic year in a date format style.
-- [Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day.md)
+- [Date.FormatStyle.Symbol.Day](./day.md)
   A type that specifies the format for a day in a date format style.
-- [Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear.md)
+- [Date.FormatStyle.Symbol.DayOfYear](./dayofyear.md)
   A type that specifies the format for the day of the year in a date format style.
-- [Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod.md)
+- [Date.FormatStyle.Symbol.DayPeriod](./dayperiod.md)
   A type that specifies a format for the time period in a date format style.
-- [Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era.md)
+- [Date.FormatStyle.Symbol.Era](./era.md)
   A type that specifies a format for the era in a date format style.
-- [Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour.md)
+- [Date.FormatStyle.Symbol.Hour](./hour.md)
   A type that specifies a format for the hour in a date format style.
-- [Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute.md)
+- [Date.FormatStyle.Symbol.Minute](./minute.md)
   A type that specifies the format for the minutes in a date format style.
-- [Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month.md)
+- [Date.FormatStyle.Symbol.Month](./month.md)
   A type that specifies a format for the month in a date format style.
-- [Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter.md)
+- [Date.FormatStyle.Symbol.Quarter](./quarter.md)
   A type that specifies the format for the quarter in a date format style.
-- [Date.FormatStyle.Symbol.Second](date/formatstyle/symbol/second.md)
+- [Date.FormatStyle.Symbol.Second](./second.md)
   A type that specifies the format for the seconds in a date format style.
-- [Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction.md)
+- [Date.FormatStyle.Symbol.SecondFraction](./secondfraction.md)
   A type that specifies the format for the second fraction in a date format style.
-- [Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth.md)
+- [Date.FormatStyle.Symbol.StandaloneMonth](./standalonemonth.md)
   A type that specifies the format for a standalone month.
-- [Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter.md)
+- [Date.FormatStyle.Symbol.StandaloneQuarter](./standalonequarter.md)
   A type that specifies the format for a standalone quarter.
-- [Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone.md)
+- [Date.FormatStyle.Symbol.TimeZone](./timezone.md)
   A type that specifies a format for the time zone in a date format style.
-- [Date.FormatStyle.Symbol.VerbatimHour](date/formatstyle/symbol/verbatimhour.md)
+- [Date.FormatStyle.Symbol.VerbatimHour](./verbatimhour.md)
   A type that specifies a format for the hour in a date format style.
 
 

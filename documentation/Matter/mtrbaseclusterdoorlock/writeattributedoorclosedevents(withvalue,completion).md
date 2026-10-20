@@ -1,7 +1,8 @@
 # writeAttributeDoorClosedEvents(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeDoorClosedEvents(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeDoorClosedEvents(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeDoorClosedEventsWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

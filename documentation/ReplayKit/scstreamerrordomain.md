@@ -1,15 +1,16 @@
 # SCStreamErrorDomain
 
 **Framework**: ReplayKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 let SCStreamErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const SCStreamErrorDomain;
+```
+
 ## See Also
 
-- [enum RPRecordingErrorCode](rprecordingerrorcode.md)
+### Errors
+- [enum RPRecordingErrorCode](./rprecordingerrorcode.md)
   The ReplayKit error domain codes.
-- [let RPRecordingErrorDomain: String](rprecordingerrordomain.md)
+- [let RPRecordingErrorDomain: String](./rprecordingerrordomain.md)
   The ReplayKit error domain.
 
 

@@ -1,18 +1,19 @@
 # init(_:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interpolation method constant with an unsigned-integer value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](vimage_interpolationmethod/init(rawvalue:).md)
+### Raw values
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates an interpolation method constant with an unsigned-integer value.
-- [var rawValue: UInt32](vimage_interpolationmethod/rawvalue.md)
+- [var rawValue: UInt32](./rawvalue.md)
   The raw value that represents the interpolation method constant.
 
 

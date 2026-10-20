@@ -1,7 +1,8 @@
 # IOUserVideoIOOperation
 
 **Framework**: VideoDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The IO operation being called on the operation handler block.
 
@@ -10,23 +11,24 @@ The IO operation being called on the operation handler block.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserVideoIOOperation;
 ```
 
 #### Discussion
 
-This value is used with [`IOOperationHandler`](videodriverkit/iooperationhandler.md).
+This value is used with [`IOOperationHandler`](./iooperationhandler.md).
 
 ## See Also
 
-- [IOUserVideoIOOperationBeginRead](videodriverkit/iouservideoiooperationbeginread.md)
+### Working with I/O operations
+- [IOUserVideoIOOperationBeginRead](./iouservideoiooperationbeginread.md)
   This operation is called just prior to reading data from the device’s stream buffers.
-- [IOUserVideoIOOperationWriteEnd](videodriverkit/iouservideoiooperationwriteend.md)
+- [IOUserVideoIOOperationWriteEnd](./iouservideoiooperationwriteend.md)
   This operation is called just after writing data to the device’s stream buffers.
-- [IOOperationHandler](videodriverkit/iooperationhandler.md)
+- [IOOperationHandler](./iooperationhandler.md)
   A block that tells the device to perform a video IO operation.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](./iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 
 

@@ -1,14 +1,15 @@
 # user_msglen_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef user_ulong_t user_msglen_t;
 ```
 

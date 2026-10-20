@@ -1,7 +1,8 @@
 # primaryTextColor
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary text color to use when displaying the background color.
 

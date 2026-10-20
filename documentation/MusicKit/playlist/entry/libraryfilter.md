@@ -1,7 +1,8 @@
 # Playlist.Entry.LibraryFilter
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the playlist entry properties your app uses for a library request.
 

@@ -1,7 +1,8 @@
 # XCTSourceCodeContext
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains call stack and source code location details to provide context for a point of execution in a test.
 
@@ -11,50 +12,55 @@ An object that contains call stack and source code location details to provide c
 class XCTSourceCodeContext
 ```
 
+```objc
+@interface XCTSourceCodeContext : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(callStack: [XCTSourceCodeFrame], location: XCTSourceCodeLocation?)](xctsourcecodecontext/init(callstack:location:).md)
+- [init(callStack: [XCTSourceCodeFrame], location: XCTSourceCodeLocation?)](./xctsourcecodecontext/init%28callstack,location%29.md)
   Initializes a new instance with a provided call stack and source code location.
-- [convenience init(callStackAddresses: [NSNumber], location: XCTSourceCodeLocation?)](xctsourcecodecontext/init(callstackaddresses:location:).md)
+- [convenience init(callStackAddresses: [NSNumber], location: XCTSourceCodeLocation?)](./xctsourcecodecontext/init%28callstackaddresses,location%29.md)
   Initializes a new instance with an array of call stack addresses and a source code location.
-- [convenience init(location: XCTSourceCodeLocation?)](xctsourcecodecontext/init(location:).md)
+- [convenience init(location: XCTSourceCodeLocation?)](./xctsourcecodecontext/init%28location%29.md)
   Initializes a new instance with a call stack from the executing thread and a provided source code location.
-- [convenience init()](xctsourcecodecontext/init.md)
+- [convenience init()](./xctsourcecodecontext/init%28%29.md)
   Initializes a new instance with a call stack from the executing thread and no location.
 ### Context Information
-- [var callStack: [XCTSourceCodeFrame]](xctsourcecodecontext/callstack.md)
+- [var callStack: [XCTSourceCodeFrame]](./xctsourcecodecontext/callstack.md)
   An array of source code frames that describes the call stack when a test issue occurs.
-- [var location: XCTSourceCodeLocation?](xctsourcecodecontext/location.md)
+- [var location: XCTSourceCodeLocation?](./xctsourcecodecontext/location.md)
   A representation of a location in source code where a test issue occurred.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [struct XCTIssue](xctissue-swift.struct.md)
+### Test Failures
+- [struct XCTIssue](./xctissue-swift.struct.md)
   An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTIssueReference](xctissuereference.md)
+- [class XCTIssueReference](./xctissuereference.md)
   An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTMutableIssue](xctmutableissue.md)
+- [class XCTMutableIssue](./xctmutableissue.md)
   A mutable object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTSourceCodeFrame](xctsourcecodeframe.md)
+- [class XCTSourceCodeFrame](./xctsourcecodeframe.md)
   An object that represents a single frame in a call stack that supports retrieval of symbol information for the address.
-- [class XCTSourceCodeLocation](xctsourcecodelocation.md)
+- [class XCTSourceCodeLocation](./xctsourcecodelocation.md)
   An object that contains a file URL and line number that represents a distinct location in source code.
-- [class XCTSourceCodeSymbolInfo](xctsourcecodesymbolinfo.md)
+- [class XCTSourceCodeSymbolInfo](./xctsourcecodesymbolinfo.md)
   An object that contains symbolication information for a specified frame in a call stack.
 
 

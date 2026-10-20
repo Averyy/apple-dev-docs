@@ -1,7 +1,8 @@
 # endAnalysis()
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops stream analysis.
 
@@ -16,19 +17,24 @@ Stops stream analysis.
 func endAnalysis()
 ```
 
+```objc
+- (void) endAnalysis;
+```
+
 #### Discussion
 
 This method stops analyzing the video stream in reference to the most recent call to `beginAnalysis`.
 
 ## See Also
 
-- [func analyze(CVPixelBuffer)](scvideostreamanalyzer/analyze(_:).md)
+### Analyzing a video stream
+- [func analyze(CVPixelBuffer)](./analyze%28_%29.md)
   Analyzes individual video-stream frames for sensitive content.
-- [func beginAnalysis(of: AVCaptureDeviceInput) throws](scvideostreamanalyzer/beginanalysis(of:)-78qm.md)
+- [func beginAnalysis(of: AVCaptureDeviceInput) throws](./beginanalysis%28of%29-78qm.md)
   Analyzes video frames for the given capture device input.
-- [func beginAnalysis(of: VTDecompressionSession) throws](scvideostreamanalyzer/beginanalysis(of:)-9ehkx.md)
+- [func beginAnalysis(of: VTDecompressionSession) throws](./beginanalysis%28of%29-9ehkx.md)
   Analyzes video frames for the given decompression session.
-- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](scvideostreamanalyzer/analysischanges.md)
+- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](./analysischanges.md)
   A stream your app uses to receive video-stream analysis results.
 
 

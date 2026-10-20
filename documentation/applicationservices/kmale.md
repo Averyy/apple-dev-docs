@@ -1,7 +1,8 @@
 # kMale
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Male voice.
 

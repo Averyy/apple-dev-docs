@@ -1,14 +1,15 @@
 # cpu_ticks
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 natural_t cpu_ticks[4];
 ```
 

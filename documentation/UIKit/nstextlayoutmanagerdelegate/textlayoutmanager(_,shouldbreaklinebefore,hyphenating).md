@@ -1,7 +1,8 @@
 # textLayoutManager(_:shouldBreakLineBefore:hyphenating:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls to determine the soft line break point.
 
@@ -16,6 +17,10 @@ The method the framework calls to determine the soft line break point.
 
 ```swift
 optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, shouldBreakLineBefore location: any NSTextLocation, hyphenating: Bool) -> Bool
+```
+
+```objc
+- (BOOL) textLayoutManager:(NSTextLayoutManager *) textLayoutManager shouldBreakLineBeforeLocation:(id<NSTextLocation>) location hyphenating:(BOOL) hyphenating;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ When `hyphenating` is `false`, `NSTextLayoutManager` tries to find the next line
 
 ## See Also
 
-- [func textLayoutManager(NSTextLayoutManager, renderingAttributesForLink: Any, at: any NSTextLocation, defaultAttributes: [NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any]?](nstextlayoutmanagerdelegate/textlayoutmanager(_:renderingattributesforlink:at:defaultattributes:).md)
+### Responding to layout changes
+- [func textLayoutManager(NSTextLayoutManager, renderingAttributesForLink: Any, at: any NSTextLocation, defaultAttributes: [NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any]?](./textlayoutmanager%28_,renderingattributesforlink,at,defaultattributes%29.md)
   The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
-- [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](nstextlayoutmanagerdelegate/textlayoutmanager(_:textlayoutfragmentfor:in:).md)
+- [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](./textlayoutmanager%28_,textlayoutfragmentfor,in%29.md)
   The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
 
 

@@ -1,15 +1,18 @@
 # NSArchiver
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A coder that stores an object’s data to an archive.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 11.0
+- iPadOS 2.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Use NSKeyedArchiver instead
 
 ## Declaration
 
@@ -17,61 +20,66 @@ A coder that stores an object’s data to an archive.
 class NSArchiver
 ```
 
+```objc
+@interface NSArchiver : NSCoder
+```
+
 #### Overview
 
-[`NSArchiver`](nsarchiver.md), a concrete subclass of [`NSCoder`](nscoder.md), provides a way to encode objects into an architecture-independent format that can be stored in a file. When you archive a graph of objects, the class information and instance variables for each object are written to the archive. The companion class [`NSUnarchiver`](nsunarchiver.md) decodes the data in an archive and creates a graph of objects equivalent to the original set.
+[`NSArchiver`](./nsarchiver.md), a concrete subclass of [`NSCoder`](./nscoder.md), provides a way to encode objects into an architecture-independent format that can be stored in a file. When you archive a graph of objects, the class information and instance variables for each object are written to the archive. The companion class [`NSUnarchiver`](./nsunarchiver.md) decodes the data in an archive and creates a graph of objects equivalent to the original set.
 
-[`NSArchiver`](nsarchiver.md) stores the archive data in a mutable data object ([`NSMutableData`](nsmutabledata.md)). After encoding the objects, you can have the [`NSArchiver`](nsarchiver.md) object write this mutable data object immediately to a file, or you can retrieve the mutable data object for some other use.
+[`NSArchiver`](./nsarchiver.md) stores the archive data in a mutable data object ([`NSMutableData`](./nsmutabledata.md)). After encoding the objects, you can have the [`NSArchiver`](./nsarchiver.md) object write this mutable data object immediately to a file, or you can retrieve the mutable data object for some other use.
 
-In macOS 10.2 and later, [`NSArchiver`](nsarchiver.md) and [`NSUnarchiver`](nsunarchiver.md) have been replaced by [`NSKeyedArchiver`](nskeyedarchiver.md) and [`NSKeyedUnarchiver`](nskeyedunarchiver.md) respectively—see [`Archives and Serializations Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
+In macOS 10.2 and later, [`NSArchiver`](./nsarchiver.md) and [`NSUnarchiver`](./nsunarchiver.md) have been replaced by [`NSKeyedArchiver`](./nskeyedarchiver.md) and [`NSKeyedUnarchiver`](./nskeyedunarchiver.md) respectively—see [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
 
 ## Topics
 
 ### Initializing an NSArchiver
-- [init(forWritingWith: NSMutableData)](nsarchiver/init(forwritingwith:).md)
+- [init(forWritingWith: NSMutableData)](./nsarchiver/init%28forwritingwith%29.md)
   Returns an archiver, initialized to encode stream and version information into a given mutable data object.
 ### Archiving data
-- [class func archivedData(withRootObject: Any) -> Data](nsarchiver/archiveddata(withrootobject:).md)
+- [class func archivedData(withRootObject: Any) -> Data](./nsarchiver/archiveddata%28withrootobject%29.md)
   Returns a data object containing the encoded form of the object graph whose root object is given.
-- [class func archiveRootObject(Any, toFile: String) -> Bool](nsarchiver/archiverootobject(_:tofile:).md)
+- [class func archiveRootObject(Any, toFile: String) -> Bool](./nsarchiver/archiverootobject%28_,tofile%29.md)
   Creates a temporary instance of `NSArchiver` and archives an object graph by encoding it into a data object and writing the resulting data object to a specified file.
-- [func encodeRootObject(Any)](nsarchiver/encoderootobject(_:).md)
+- [func encodeRootObject(Any)](./nsarchiver/encoderootobject%28_%29.md)
   Archives a given object along with all the objects to which it is connected.
-- [func encodeConditionalObject(Any?)](nsarchiver/encodeconditionalobject(_:).md)
+- [func encodeConditionalObject(Any?)](./nsarchiver/encodeconditionalobject%28_%29.md)
   Conditionally archives a given object.
 ### Getting the archived data
-- [var archiverData: NSMutableData](nsarchiver/archiverdata.md)
+- [var archiverData: NSMutableData](./nsarchiver/archiverdata.md)
   The receiver’s archive data.
 ### Substituting classes or objects
-- [func classNameEncoded(forTrueClassName: String) -> String?](nsarchiver/classnameencoded(fortrueclassname:).md)
+- [func classNameEncoded(forTrueClassName: String) -> String?](./nsarchiver/classnameencoded%28fortrueclassname%29.md)
   Returns the name of the class used to archive instances of the class with a given true name.
-- [func encodeClassName(String, intoClassName: String)](nsarchiver/encodeclassname(_:intoclassname:).md)
+- [func encodeClassName(String, intoClassName: String)](./nsarchiver/encodeclassname%28_,intoclassname%29.md)
   Encodes a substitute name for the class with a given true name.
-- [func replace(Any, with: Any)](nsarchiver/replace(_:with:).md)
+- [func replace(Any, with: Any)](./nsarchiver/replace%28_,with%29.md)
   Causes the receiver to treat subsequent requests to encode a given object as though they were requests to encode another given object.
 ### Constants
-- [Archiving Exception Names](archiving-exception-names.md)
+- [Archiving Exception Names](./archiving-exception-names.md)
   Raised by `NSArchiver` if there are problems initializing or encoding.
 ### Initializers
-- [init(forWritingWithMutableData: NSMutableData)](nsarchiver/init(forwritingwithmutabledata:).md)
+- [init(forWritingWithMutableData: NSMutableData)](./nsarchiver/init%28forwritingwithmutabledata%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoder](nscoder.md)
+- [NSCoder](./nscoder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSUnarchiver](nsunarchiver.md)
+### Deprecated
+- [class NSUnarchiver](./nsunarchiver.md)
   A decoder that restores data from an archive.
 
 

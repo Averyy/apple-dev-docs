@@ -1,7 +1,8 @@
 # defaultRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The capsule default radius RealityKit applies when you use the default initializer.
 
@@ -11,7 +12,7 @@ The capsule default radius RealityKit applies when you use the default initializ
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ static let defaultRadius: Float
 
 ## See Also
 
-- [static let defaultHeight: Float](charactercontrollercomponent/defaultheight.md)
+### Reading default values
+- [static let defaultHeight: Float](./defaultheight.md)
   The capsule height value RealityKit applies when you use the default initializer.
-- [static let defaultSkinWidth: Float](charactercontrollercomponent/defaultskinwidth.md)
+- [static let defaultSkinWidth: Float](./defaultskinwidth.md)
   The skin width value RealityKit applies when you use the default initializer.
-- [static let defaultSlopeLimit: Float](charactercontrollercomponent/defaultslopelimit.md)
+- [static let defaultSlopeLimit: Float](./defaultslopelimit.md)
   The slope limit value RealityKit applies when you use the default initializer.
-- [static let defaultStepLimit: Float](charactercontrollercomponent/defaultsteplimit.md)
+- [static let defaultStepLimit: Float](./defaultsteplimit.md)
   The step limit value RealityKit applies when you use the default initializer.
-- [static let defaultUpVector: SIMD3<Float>](charactercontrollercomponent/defaultupvector.md)
+- [static let defaultUpVector: SIMD3<Float>](./defaultupvector.md)
   The default up vector RealityKit applies when you use the default initializer.
 
 

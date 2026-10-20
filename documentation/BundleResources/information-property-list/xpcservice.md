@@ -1,7 +1,8 @@
 # XPCService
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 6.0+
@@ -11,17 +12,18 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `XPCService`
+- **Type**: dictionary
 
 ## Topics
 
 ### Property List Keys
-- [EnvironmentVariables](information-property-list/xpcservice/environmentvariables.md)
-- [JoinExistingSession](information-property-list/xpcservice/joinexistingsession.md)
-- [RunLoopType](information-property-list/xpcservice/runlooptype.md)
-- [ServiceType](information-property-list/xpcservice/servicetype.md)
+- [EnvironmentVariables](./xpcservice/environmentvariables.md)
+- [JoinExistingSession](./xpcservice/joinexistingsession.md)
+- [RunLoopType](./xpcservice/runlooptype.md)
+- [ServiceType](./xpcservice/servicetype.md)
 
 
 ---

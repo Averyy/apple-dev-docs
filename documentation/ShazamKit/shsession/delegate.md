@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that the session calls with the result of a match request.
 
@@ -20,13 +21,26 @@ The object that the session calls with the result of a match request.
 weak var delegate: (any SHSessionDelegate)? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, weak) id<SHSessionDelegate> delegate;
+```
+
+*macOS*
+
+```objc
+@property (atomic, weak) id<SHSessionDelegate> delegate;
+```
+
 ## See Also
 
-- [var catalog: SHCatalog](shsession/catalog.md)
+### Reading the session properties
+- [var catalog: SHCatalog](./catalog.md)
   The catalog object containing the reference signatures and their associated metadata that the session uses to perform matches.
-- [var results: SHSession.Results](shsession/results-swift.property.md)
+- [var results: SHSession.Results](./results-swift.property.md)
   The results as an asynchronous sequence of matches.
-- [SHSession.Results](shsession/results-swift.struct.md)
+- [SHSession.Results](./results-swift.struct.md)
   An asynchronous sequence that emits updates from a session object query.
 
 

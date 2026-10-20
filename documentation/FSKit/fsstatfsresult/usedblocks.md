@@ -1,7 +1,8 @@
 # usedBlocks
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the number of used blocks in the volume.
 
@@ -12,6 +13,10 @@ A property for the number of used blocks in the volume.
 
 ```swift
 var usedBlocks: UInt64 { get set }
+```
+
+```objc
+@property uint64_t usedBlocks;
 ```
 
 

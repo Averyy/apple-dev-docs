@@ -1,7 +1,8 @@
 # linkedPeople()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the array of all person records that are linked to the person this record represents.
 
@@ -12,6 +13,10 @@ Returns the array of all person records that are linked to the person this recor
 
 ```swift
 func linkedPeople() -> [Any]!
+```
+
+```objc
+- (NSArray *) linkedPeople;
 ```
 
 #### Return Value

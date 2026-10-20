@@ -1,7 +1,8 @@
 # prefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence, up to the specified maximum length, containing the initial elements of the sequence.
 
@@ -36,7 +37,7 @@ print(numbers.prefix(10))
 // Prints "[1, 2, 3, 4, 5]"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

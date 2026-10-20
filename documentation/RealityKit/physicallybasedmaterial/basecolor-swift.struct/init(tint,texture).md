@@ -1,7 +1,8 @@
 # init(tint:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a base color object from a color or texture on macOS.
 
@@ -12,6 +13,12 @@ Creates a base color object from a color or texture on macOS.
 
 ```swift
 init(tint: NSColor = .white, texture: MaterialParameters.Texture? = nil)
+```
+
+**Other overloads**:
+
+```swift
+init(tint: UIColor = .white, texture: MaterialParameters.Texture? = nil)
 ```
 
 #### Discussion

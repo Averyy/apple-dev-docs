@@ -1,7 +1,8 @@
 # ARRaycastQuery.Target
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of surface you allow a raycast to intersect with.
 
@@ -15,6 +16,10 @@ The types of surface you allow a raycast to intersect with.
 enum Target
 ```
 
+```c
+enum ARRaycastTarget : NSInteger;
+```
+
 #### Discussion
 
 The available target types are plane, infinite plane, and estimated plane.
@@ -22,32 +27,33 @@ The available target types are plane, infinite plane, and estimated plane.
 ## Topics
 
 ### Targets
-- [ARRaycastQuery.Target.estimatedPlane](arraycastquery/target-swift.enum/estimatedplane.md)
+- [ARRaycastQuery.Target.estimatedPlane](./target-swift.enum/estimatedplane.md)
   A raycast target that specifies nonplanar surfaces, or planes about which ARKit can only estimate.
-- [ARRaycastQuery.Target.existingPlaneGeometry](arraycastquery/target-swift.enum/existingplanegeometry.md)
+- [ARRaycastQuery.Target.existingPlaneGeometry](./target-swift.enum/existingplanegeometry.md)
   A raycast target that requires a plane to have a definitive size and shape.
-- [ARRaycastQuery.Target.existingPlaneInfinite](arraycastquery/target-swift.enum/existingplaneinfinite.md)
+- [ARRaycastQuery.Target.existingPlaneInfinite](./target-swift.enum/existingplaneinfinite.md)
   A raycast target that specifies a detected plane, regardless of its size and shape.
 ### Initializers
-- [init?(rawValue: Int)](arraycastquery/target-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./target-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var target: ARRaycastQuery.Target](arraycastquery/target-swift.property.md)
+### Specifying the Target
+- [var target: ARRaycastQuery.Target](./target-swift.property.md)
   A plane type that allows the raycast to terminate if it’s encountered.
-- [var targetAlignment: ARRaycastQuery.TargetAlignment](arraycastquery/targetalignment-swift.property.md)
+- [var targetAlignment: ARRaycastQuery.TargetAlignment](./targetalignment-swift.property.md)
   The target’s alignment with respect to gravity.
-- [ARRaycastQuery.TargetAlignment](arraycastquery/targetalignment-swift.enum.md)
+- [ARRaycastQuery.TargetAlignment](./targetalignment-swift.enum.md)
   A specification that indicates a target’s alignment with respect to gravity
 
 

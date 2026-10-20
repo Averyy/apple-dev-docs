@@ -1,7 +1,8 @@
 # PGCreateDeviceWithDescriptor(_:)
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func PGCreateDeviceWithDescriptor(_ descriptor: PGDeviceDescriptor) -> (any PGDevice)?
+```
+
+```c
+extern id<PGDevice>PGCreateDeviceWithDescriptor(PGDeviceDescriptor *descriptor);
 ```
 
 #### Discussion

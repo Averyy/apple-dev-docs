@@ -1,7 +1,8 @@
 # recordType
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the record type.
 
@@ -10,7 +11,7 @@ The name of the record type.
 
 ## Declaration
 
-```swift
+```
 attribute string recordType;
 ```
 

@@ -1,7 +1,8 @@
 # filterArray
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current array of user adjustments to effects.
 
@@ -12,6 +13,10 @@ Returns the current array of user adjustments to effects.
 
 ```swift
 var filterArray: [Any]! { get }
+```
+
+```objc
+@property (readonly) NSArray * filterArray;
 ```
 
 

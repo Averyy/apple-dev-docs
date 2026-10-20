@@ -1,6 +1,7 @@
 # Xcode 27.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -8,14 +9,18 @@ Update your apps to use new features, and test your apps against API changes.
 
 Xcode 27.1 includes Swift 6.4 and SDKs for iOS 27.1, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27.1 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27.1 requires a Mac running macOS Tahoe 26.6 or later.
 
-See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
+See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
 ##### Mac Catalyst
 
 ###### Known Issues
 
-- Projects that use APIs specific to iOS 27.1 show compile errors when building for Mac Catalyst (“undeclared identifier”, “not found”, “has no member”, “cannot find”, etc.). (185924957) **Workaround:** Use build-time conditionals like `#if !targetEnvironment(macCatalyst)` (Swift) or `#if !TARGET_OS_MACCATALYST` (Objective-C) to isolate affected code.
-- Projects that target iOS 27.1 show no Mac Catalyst run destination available. (187046347) **Workaround:** Add a Mac Catalyst 27.0 minimum deployment in target settings.
+- Projects that use APIs specific to iOS 27.1 show compile errors when building for Mac Catalyst (“undeclared identifier”, “not found”, “has no member”, “cannot find”, etc.). (185924957)
+
+  **Workaround:** Use build-time conditionals like `#if !targetEnvironment(macCatalyst)` (Swift) or `#if !TARGET_OS_MACCATALYST` (Objective-C) to isolate affected code.
+- Projects that target iOS 27.1 show no Mac Catalyst run destination available. (187046347)
+
+  **Workaround:** Add a Mac Catalyst 27.0 minimum deployment in target settings.
 
 ##### Previews
 
@@ -34,9 +39,10 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ## See Also
 
-- [Xcode 27.2 RC Release Notes](xcode-27_2-release-notes.md)
+### Xcode 27
+- [Xcode 27.2 RC Release Notes](./xcode-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 27 Release Notes](xcode-27-release-notes.md)
+- [Xcode 27 Release Notes](./xcode-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

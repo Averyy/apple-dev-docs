@@ -1,17 +1,19 @@
 # Additional data
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A variable length field containing data pointed to by the entries in the data table.
 
 ## See Also
 
-- [Entry count](packetization_hint_sample_data/entry_count.md)
+### Data fields
+- [Entry count](./entry_count.md)
   A 16-bit unsigned integer indicating the number of packet entries in the table.
-- [Reserved](packetization_hint_sample_data/reserved.md)
+- [Reserved](./reserved.md)
   Two bytes.
-- [Packet entry table](packetization_hint_sample_data/packet_entry_table.md)
+- [Packet entry table](./packet_entry_table.md)
   A variable length table containing packet entries.
 
 

@@ -1,7 +1,8 @@
 # ENOATTR
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Attribute not found.
 

@@ -1,7 +1,8 @@
 # ReviewSubmission.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,22 +11,22 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmission.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmission.Relationships.App](reviewsubmission/relationships-data.dictionary/app-data.dictionary.md)
+- [object ReviewSubmission.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object ReviewSubmission.Relationships.AppStoreVersionForReview](reviewsubmission/relationships-data.dictionary/appstoreversionforreview-data.dictionary.md)
+- [object ReviewSubmission.Relationships.AppStoreVersionForReview](./relationships-data.dictionary/appstoreversionforreview-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object ReviewSubmission.Relationships.Items](reviewsubmission/relationships-data.dictionary/items-data.dictionary.md)
+- [object ReviewSubmission.Relationships.Items](./relationships-data.dictionary/items-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object ReviewSubmission.Relationships.LastUpdatedByActor](reviewsubmission/relationships-data.dictionary/lastupdatedbyactor-data.dictionary.md)
+- [object ReviewSubmission.Relationships.LastUpdatedByActor](./relationships-data.dictionary/lastupdatedbyactor-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object ReviewSubmission.Relationships.SubmittedByActor](reviewsubmission/relationships-data.dictionary/submittedbyactor-data.dictionary.md)
+- [object ReviewSubmission.Relationships.SubmittedByActor](./relationships-data.dictionary/submittedbyactor-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -38,7 +39,8 @@ object ReviewSubmission.Relationships
 
 ## See Also
 
-- [object ReviewSubmission.Attributes](reviewsubmission/attributes-data.dictionary.md)
+### Objects
+- [object ReviewSubmission.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a review submission resource.
 
 

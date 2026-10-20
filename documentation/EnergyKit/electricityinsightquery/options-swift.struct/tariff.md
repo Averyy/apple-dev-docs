@@ -1,14 +1,15 @@
 # tariff
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A query that includes tariff-based insights.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ static let tariff: ElectricityInsightQuery.Options
 
 ## See Also
 
-- [static let cleanliness: ElectricityInsightQuery.Options](electricityinsightquery/options-swift.struct/cleanliness.md)
+### Getting the optional query insights
+- [static let cleanliness: ElectricityInsightQuery.Options](./cleanliness.md)
   A query that includes cleanliness insights.
 
 

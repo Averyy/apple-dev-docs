@@ -1,7 +1,8 @@
 # ActionIdentifier
 
 **Framework**: CarKey  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that stores the designation code for one of the actions that a vehicle feature supports.
 
@@ -20,33 +21,34 @@ struct ActionIdentifier
 
 #### Overview
 
-An [`ActionIdentifier`](actionidentifier.md) type wraps a vehicle-specific code you define. This code — known as the action identifier — corresponds to an action your vehicle can take for a particular feature. For example, you might define actions to lock or unlock the vehicle’s doors. Use this type in conjunction with a specific [`FunctionIdentifier`](functionidentifier.md) type to specify the complete action you want to perform on a vehicle.
+An [`ActionIdentifier`](./actionidentifier.md) type wraps a vehicle-specific code you define. This code — known as the action identifier — corresponds to an action your vehicle can take for a particular feature. For example, you might define actions to lock or unlock the vehicle’s doors. Use this type in conjunction with a specific [`FunctionIdentifier`](./functionidentifier.md) type to specify the complete action you want to perform on a vehicle.
 
 ## Topics
 
 ### Creating the Action Identifier
-- [init(rawValue: Int)](actionidentifier/init(rawvalue:).md)
+- [init(rawValue: Int)](./actionidentifier/init%28rawvalue%29.md)
   Creates and returns a new action identifier with the specified value.
-- [init(Int)](actionidentifier/init(_:).md)
+- [init(Int)](./actionidentifier/init%28_%29.md)
   Creates and returns a new action identifier with the specified value.
 ### Getting the Value
-- [let rawValue: Int](actionidentifier/rawvalue.md)
+- [let rawValue: Int](./actionidentifier/rawvalue.md)
   The raw value that corresponds to the feature-specific action.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [struct RemoteKeylessEntryAction](remotekeylessentryaction.md)
+### Vehicle Actions
+- [struct RemoteKeylessEntryAction](./remotekeylessentryaction.md)
   An automatically ending action that you want to perform on a vehicle.
-- [struct RemoteKeylessEntryEnduringAction](remotekeylessentryenduringaction.md)
+- [struct RemoteKeylessEntryEnduringAction](./remotekeylessentryenduringaction.md)
   An action with an optional stopping point that you want to perform on a vehicle.
-- [struct FunctionIdentifier](functionidentifier.md)
+- [struct FunctionIdentifier](./functionidentifier.md)
   A type that stores the designation code for one of your vehicle’s features.
 
 

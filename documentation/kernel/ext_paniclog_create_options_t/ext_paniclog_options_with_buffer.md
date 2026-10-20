@@ -1,14 +1,15 @@
 # EXT_PANICLOG_OPTIONS_WITH_BUFFER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 EXT_PANICLOG_OPTIONS_WITH_BUFFER
 ```
 

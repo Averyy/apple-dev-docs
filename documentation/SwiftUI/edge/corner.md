@@ -1,7 +1,8 @@
 # Edge.Corner
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration to indicate one corner of a rectangle.
 
@@ -23,28 +24,28 @@ enum Corner
 ## Topics
 
 ### Structures
-- [Edge.Corner.Set](edge/corner/set.md)
+- [Edge.Corner.Set](./corner/set.md)
   An efficient set of corners.
-- [Edge.Corner.Style](edge/corner/style.md)
+- [Edge.Corner.Style](./corner/style.md)
   A style that describes the corner of a rectangular shape.
 ### Enumeration Cases
-- [Edge.Corner.bottomLeading](edge/corner/bottomleading.md)
-- [Edge.Corner.bottomTrailing](edge/corner/bottomtrailing.md)
-- [Edge.Corner.topLeading](edge/corner/topleading.md)
-- [Edge.Corner.topTrailing](edge/corner/toptrailing.md)
+- [Edge.Corner.bottomLeading](./corner/bottomleading.md)
+- [Edge.Corner.bottomTrailing](./corner/bottomtrailing.md)
+- [Edge.Corner.topLeading](./corner/topleading.md)
+- [Edge.Corner.topTrailing](./corner/toptrailing.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 weak var delegate: (any SCRecordingEditorDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<SCRecordingEditorDelegate> delegate;
 ```
 
 #### Discussion

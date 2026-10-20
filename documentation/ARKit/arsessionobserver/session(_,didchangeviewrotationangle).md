@@ -1,7 +1,8 @@
 # session(_:didChangeViewRotationAngle:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This is called when the view rotation angle changes.
 
@@ -13,6 +14,10 @@ This is called when the view rotation angle changes.
 
 ```swift
 optional func session(_ session: ARSession, didChangeViewRotationAngle viewRotationAngle: CGFloat)
+```
+
+```objc
+- (void) session:(ARSession *) session didChangeViewRotationAngle:(CGFloat) viewRotationAngle;
 ```
 
 #### Discussion

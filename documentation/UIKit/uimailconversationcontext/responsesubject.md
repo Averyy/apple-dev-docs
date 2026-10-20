@@ -1,7 +1,8 @@
 # responseSubject
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the subject line of an intended response.
 
@@ -16,11 +17,16 @@ A string that contains the subject line of an intended response.
 var responseSubject: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSString * responseSubject;
+```
+
 ## See Also
 
-- [var responseHasCustomSignature: Bool](uimailconversationcontext/responsehascustomsignature.md)
+### Getting message details
+- [var responseHasCustomSignature: Bool](./responsehascustomsignature.md)
   A Boolean value that indicates whether the intended response contains a custom signature.
-- [var responseSecondaryRecipientIdentifiers: Set<String>](uimailconversationcontext/responsesecondaryrecipientidentifiers.md)
+- [var responseSecondaryRecipientIdentifiers: Set<String>](./responsesecondaryrecipientidentifiers.md)
   A set of strings that identifies the secondary recipients of the message, such as those in CC or BCC messages.
 
 

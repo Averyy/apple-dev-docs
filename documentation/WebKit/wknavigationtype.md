@@ -1,7 +1,8 @@
 # WKNavigationType
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of action that triggered the navigation.
 
@@ -18,37 +19,42 @@ The type of action that triggered the navigation.
 enum WKNavigationType
 ```
 
+```c
+enum WKNavigationType : NSInteger;
+```
+
 ## Topics
 
 ### Getting the Navigation Types
-- [WKNavigationType.linkActivated](wknavigationtype/linkactivated.md)
+- [WKNavigationType.linkActivated](./wknavigationtype/linkactivated.md)
   A link activation.
-- [WKNavigationType.formSubmitted](wknavigationtype/formsubmitted.md)
+- [WKNavigationType.formSubmitted](./wknavigationtype/formsubmitted.md)
   A request to submit a form.
-- [WKNavigationType.backForward](wknavigationtype/backforward.md)
+- [WKNavigationType.backForward](./wknavigationtype/backforward.md)
   A request for the frame’s next or previous item.
-- [WKNavigationType.reload](wknavigationtype/reload.md)
+- [WKNavigationType.reload](./wknavigationtype/reload.md)
   A request to reload the webpage.
-- [WKNavigationType.formResubmitted](wknavigationtype/formresubmitted.md)
+- [WKNavigationType.formResubmitted](./wknavigationtype/formresubmitted.md)
   A request to resubmit a form.
-- [WKNavigationType.other](wknavigationtype/other.md)
+- [WKNavigationType.other](./wknavigationtype/other.md)
   A navigation request that originates for some other reason.
 ### Initializers
-- [init?(rawValue: Int)](wknavigationtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wknavigationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var navigationType: WKNavigationType](wknavigationaction/navigationtype.md)
+### Getting the navigation type
+- [var navigationType: WKNavigationType](./wknavigationaction/navigationtype.md)
   The type of action that triggered the navigation.
 
 

@@ -1,7 +1,8 @@
 # signalingHeaders
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 HTTP headers forwarded to the server for authentication and session management.
 

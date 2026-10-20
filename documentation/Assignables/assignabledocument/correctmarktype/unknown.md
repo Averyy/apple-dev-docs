@@ -1,7 +1,8 @@
 # AssignableDocument.CorrectMarkType.unknown
 
 **Framework**: Assignables  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unknown
 
@@ -9,7 +10,7 @@ Unknown
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ case unknown
 
 ## See Also
 
-- [AssignableDocument.CorrectMarkType.checkmark](assignabledocument/correctmarktype/checkmark.md)
+### Mark types
+- [AssignableDocument.CorrectMarkType.checkmark](./checkmark.md)
   Correct marks are shown with checkmarks.
-- [AssignableDocument.CorrectMarkType.numeric](assignabledocument/correctmarktype/numeric.md)
+- [AssignableDocument.CorrectMarkType.numeric](./numeric.md)
   Correct marks are shown with numbers.
-- [AssignableDocument.CorrectMarkType.star](assignabledocument/correctmarktype/star.md)
+- [AssignableDocument.CorrectMarkType.star](./star.md)
   Correct marks are shown with stars.
 
 

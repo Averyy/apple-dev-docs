@@ -1,7 +1,8 @@
 # press(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Plays feedback in response to a specific UI element being pressed (touch down).
 

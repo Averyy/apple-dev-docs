@@ -1,14 +1,15 @@
 # kIO1MonochromePixelFormat
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIO1MonochromePixelFormat = 0x00000001
 ```
 

@@ -10,7 +10,7 @@ A container for descriptors for a single endpoint.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBStandardEndpointDescriptors {
     ...
 };
@@ -20,33 +20,34 @@ struct IOUSBStandardEndpointDescriptors {
 
 Use this structure to intialize and adjust pipes in the system. You must initialize the `bcdUSB` descriptor to the USB version that the device supports. Acceptable values are `0x0110`, `0x0200`, `0x0300`, `0x0310`. 
 
-Initialize the descriptor field with a pointer to a valid endpoint descriptor. USB versions `0x0300` and greater may require the [`ssCompanionDescriptor`](https://developer.apple.com/documentation/usbdriverkit/iousbstandardendpointdescriptors/sscompaniondescriptor) and [`sspCompanionDescriptor`](https://developer.apple.com/documentation/usbdriverkit/iousbstandardendpointdescriptors/sspcompaniondescriptor) fields, depending on device operating speed and values set in the descriptors. 
+Initialize the descriptor field with a pointer to a valid endpoint descriptor. USB versions `0x0300` and greater may require the [`ssCompanionDescriptor`](../USBDriverKit/iousbstandardendpointdescriptors/sscompaniondescriptor.md) and [`sspCompanionDescriptor`](../USBDriverKit/iousbstandardendpointdescriptors/sspcompaniondescriptor.md) fields, depending on device operating speed and values set in the descriptors. 
 
 For more information on when you must use these descriptors, see USB 3.2, 9.5.
 
 ## Topics
 
 ### Getting the Properties
-- [bcdUSB](iousbstandardendpointdescriptors/3294859-bcdusb.md)
+- [bcdUSB](./iousbstandardendpointdescriptors/api-3294859-bcdusb.md)
   A binary-coded decimal value that indicates the USB version that the device supports.
-- [descriptor](iousbstandardendpointdescriptors/3294860-descriptor.md)
+- [descriptor](./iousbstandardendpointdescriptors/api-3294860-descriptor.md)
   A valid endpoint descriptor.
-- [ssCompanionDescriptor](iousbstandardendpointdescriptors/3294861-sscompaniondescriptor.md)
+- [ssCompanionDescriptor](./iousbstandardendpointdescriptors/api-3294861-sscompaniondescriptor.md)
   The companion descriptor for SuperSpeed devices.
-- [sspCompanionDescriptor](iousbstandardendpointdescriptors/3294862-sspcompaniondescriptor.md)
+- [sspCompanionDescriptor](./iousbstandardendpointdescriptors/api-3294862-sspcompaniondescriptor.md)
   The companion descriptor for SuperSpeedPlus devices.
 
 ## See Also
 
-- [IOUSBEndpointDescriptor](iousbendpointdescriptor.md)
+### Endpoint Descriptors
+- [IOUSBEndpointDescriptor](./iousbendpointdescriptor.md)
   The structure for storing an endpoint descriptor.
-- [IOUSBEndpointDescriptorPtr](iousbendpointdescriptorptr.md)
+- [IOUSBEndpointDescriptorPtr](./iousbendpointdescriptorptr.md)
   A pointer to the endpoint descriptor.
-- [IOUSBEndpointProperties](iousbendpointproperties.md)
+- [IOUSBEndpointProperties](./iousbendpointproperties.md)
   A structure that holds USB endpoint properties.
-- [IOUSBEndpointPropertiesPtr](iousbendpointpropertiesptr.md)
+- [IOUSBEndpointPropertiesPtr](./iousbendpointpropertiesptr.md)
   A pointer to an endpoint properties object.
-- [IOUSBGetEndpointDescriptorOptions](iousbgetendpointdescriptoroptions.md)
+- [IOUSBGetEndpointDescriptorOptions](./iousbgetendpointdescriptoroptions.md)
   Options for fetching the endpoint descriptors of a pipe.
 
 

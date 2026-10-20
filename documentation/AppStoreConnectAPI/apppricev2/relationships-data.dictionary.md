@@ -1,7 +1,8 @@
 # AppPriceV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppPriceV2.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPriceV2.Relationships.AppPricePoint](apppricev2/relationships-data.dictionary/apppricepoint-data.dictionary.md)
-- [object AppPriceV2.Relationships.Territory](apppricev2/relationships-data.dictionary/territory-data.dictionary.md)
+- [object AppPriceV2.Relationships.AppPricePoint](./relationships-data.dictionary/apppricepoint-data.dictionary.md)
+- [object AppPriceV2.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object AppPriceV2.Relationships
 
 ## See Also
 
-- [object AppPriceV2.Attributes](apppricev2/attributes-data.dictionary.md)
+### Objects
+- [object AppPriceV2.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app price v2 resource.
 
 

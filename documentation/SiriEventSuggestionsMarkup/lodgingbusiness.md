@@ -1,7 +1,8 @@
 # LodgingBusiness
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A hotel, inn, or other lodging location.
 
@@ -10,13 +11,13 @@ A hotel, inn, or other lodging location.
 
 ## Declaration
 
-```swift
+```
 object LodgingBusiness
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `LodgingBusiness`
 - `address` (PostalAddress) *(required)*: The geographic location of the lodging.
 - `name` (string) *(required)*: The name of the lodging.
 - `telephone` (telephone): The phone number of the lodging.

@@ -1,7 +1,8 @@
 # init(resources:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new audio library from a dictionary.
 

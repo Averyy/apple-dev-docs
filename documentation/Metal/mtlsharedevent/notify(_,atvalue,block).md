@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Schedules a notification handler to be called after the shareable event’s signal value equals or exceeds a given value.
@@ -20,9 +21,13 @@ Schedules a notification handler to be called after the shareable event’s sign
 func notify(_ listener: MTLSharedEventListener, atValue value: UInt64, block: @escaping MTLSharedEventNotificationBlock)
 ```
 
+```objc
+- (void) notifyListener:(MTLSharedEventListener *) listener atValue:(uint64_t) value block:(MTLSharedEventNotificationBlock) block;
+```
+
 ## Mentions
 
-- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](../synchronizing-events-between-a-gpu-and-the-cpu.md)
 
 ## Parameters
 
@@ -32,7 +37,8 @@ func notify(_ listener: MTLSharedEventListener, atValue value: UInt64, block: @e
 
 ## See Also
 
-- [var signaledValue: UInt64](mtlsharedevent/signaledvalue.md)
+### Synchronizing a shareable event
+- [var signaledValue: UInt64](./signaledvalue.md)
   The current signal value for the shareable event.
 
 

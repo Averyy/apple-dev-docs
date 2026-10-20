@@ -1,7 +1,8 @@
 # tls
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configure TLS when used within QUIC.
 

@@ -1,7 +1,8 @@
 # chirality
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hand chirality (left or right) of this event, for relevant event kinds.
 

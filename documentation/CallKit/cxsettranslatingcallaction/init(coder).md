@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action to start or stop translating a call with the provided data.
 
@@ -14,6 +15,10 @@ Creates a new action to start or stop translating a call with the provided data.
 
 ```swift
 init?(coder aDecoder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
 ## Parameters

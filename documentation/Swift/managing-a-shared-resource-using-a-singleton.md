@@ -1,6 +1,7 @@
 # Managing a Shared Resource Using a Singleton
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Provide access to a shared resource using a single, shared class instance.
 
@@ -32,13 +33,14 @@ class Singleton {
 
 ## See Also
 
-- [Using Key-Value Observing in Swift](using-key-value-observing-in-swift.md)
+### Common Patterns
+- [Using Key-Value Observing in Swift](./using-key-value-observing-in-swift.md)
   Notify objects about changes to the properties of other objects.
-- [Using Delegates to Customize Object Behavior](using-delegates-to-customize-object-behavior.md)
+- [Using Delegates to Customize Object Behavior](./using-delegates-to-customize-object-behavior.md)
   Respond to events on behalf of a delegator.
-- [About Imported Cocoa Error Parameters](about-imported-cocoa-error-parameters.md)
+- [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md)
   Learn how Cocoa error parameters are converted to Swift throwing methods.
-- [Handling Cocoa Errors in Swift](handling-cocoa-errors-in-swift.md)
+- [Handling Cocoa Errors in Swift](./handling-cocoa-errors-in-swift.md)
   Throw and catch errors that use Cocoa’s error types.
 
 

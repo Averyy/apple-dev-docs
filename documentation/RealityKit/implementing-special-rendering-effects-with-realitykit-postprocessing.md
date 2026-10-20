@@ -1,6 +1,8 @@
 # Implementing special rendering effects with RealityKit postprocessing
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [ImplementingSpecialRenderingEffectsWithRealityKitPostprocessing.zip](https://docs-assets.developer.apple.com/published/525cf17fc437/ImplementingSpecialRenderingEffectsWithRealityKitPostprocessing.zip)
 
 Implement a variety of postprocessing techniques to alter RealityKit rendering.
 
@@ -12,17 +14,18 @@ Implement a variety of postprocessing techniques to alter RealityKit rendering.
 
 #### Overview
 
-For more information about the app and how it works, see [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md).
+For more information about the app and how it works, see [Implementing special rendering effects with RealityKit postprocessing](./implementing-special-rendering-effects-with-realitykit-postprocessing.md).
 
 ## See Also
 
-- [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
+### Metal effects
+- [Using Metal performance shaders to create custom postprocess effects](./using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
   Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
-- [Checking the pixel format of a postprocess effect’s output texture](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
+- [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md)
   Make sure your postprocess effect works on all devices.
-- [Passing Structured Data to a Metal Compute Function](passing-structured-data-to-a-metal-compute-function.md)
+- [Passing Structured Data to a Metal Compute Function](./passing-structured-data-to-a-metal-compute-function.md)
   Send nontexture data from Swift to your Metal shaders using a shared header file.
-- [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
+- [Implementing postprocess effects using Metal compute functions](./implementing-postprocess-effects-using-metal-compute-functions.md)
   Create custom shaders to implement postprocess effects.
 
 

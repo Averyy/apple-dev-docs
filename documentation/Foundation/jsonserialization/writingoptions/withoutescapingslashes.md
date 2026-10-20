@@ -1,7 +1,8 @@
 # withoutEscapingSlashes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the output doesn’t prefix slash characters with escape characters.
 
@@ -20,13 +21,18 @@ Specifies that the output doesn’t prefix slash characters with escape characte
 static var withoutEscapingSlashes: JSONSerialization.WritingOptions { get }
 ```
 
+```c
+NSJSONWritingWithoutEscapingSlashes
+```
+
 ## See Also
 
-- [static var fragmentsAllowed: JSONSerialization.WritingOptions](jsonserialization/writingoptions/fragmentsallowed.md)
+### Formatting JSON
+- [static var fragmentsAllowed: JSONSerialization.WritingOptions](./fragmentsallowed.md)
   Specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
-- [static var prettyPrinted: JSONSerialization.WritingOptions](jsonserialization/writingoptions/prettyprinted.md)
+- [static var prettyPrinted: JSONSerialization.WritingOptions](./prettyprinted.md)
   Specifies that the output uses white space and indentation to make the resulting data more readable.
-- [static var sortedKeys: JSONSerialization.WritingOptions](jsonserialization/writingoptions/sortedkeys.md)
+- [static var sortedKeys: JSONSerialization.WritingOptions](./sortedkeys.md)
   Specifies that the output sorts keys in lexicographic order.
 
 

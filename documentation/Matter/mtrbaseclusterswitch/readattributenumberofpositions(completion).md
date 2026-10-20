@@ -1,7 +1,8 @@
 # readAttributeNumberOfPositions(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfPositions(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfPositions() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfPositionsWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

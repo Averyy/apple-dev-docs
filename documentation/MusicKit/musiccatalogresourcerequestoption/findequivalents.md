@@ -1,7 +1,8 @@
 # findEquivalents
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option for finding the best available equivalent match for a resource in the current storefront for the Apple Music catalog.
 

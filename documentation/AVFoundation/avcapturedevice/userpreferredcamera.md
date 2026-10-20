@@ -1,7 +1,8 @@
 # userPreferredCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A camera the user prefers to use for video and photo capture.
 
@@ -18,9 +19,13 @@ A camera the user prefers to use for video and photo capture.
 class var userPreferredCamera: AVCaptureDevice? { get set }
 ```
 
+```objc
+@property (class, readwrite, nullable) AVCaptureDevice * userPreferredCamera;
+```
+
 #### Discussion
 
-In addition to being a [`systemPreferredCamera`](avcapturedevice/systempreferredcamera.md), you can designate a device as a user-preferred camera. Setting a value for this property allows an app to persist its preference across app launches and system reboots. The system internally maintains a short history of devices, so if a user’s most recently preferred camera isn’t currently connected, it still reports the next best choice.
+In addition to being a [`systemPreferredCamera`](./systempreferredcamera.md), you can designate a device as a user-preferred camera. Setting a value for this property allows an app to persist its preference across app launches and system reboots. The system internally maintains a short history of devices, so if a user’s most recently preferred camera isn’t currently connected, it still reports the next best choice.
 
 This property always returns a device that’s present. If no camera is available, this value is `nil`.
 
@@ -28,11 +33,12 @@ This property always returns a device that’s present. If no camera is availabl
 
 ## See Also
 
-- [class var systemPreferredCamera: AVCaptureDevice?](avcapturedevice/systempreferredcamera.md)
+### Supporting Continuity Camera
+- [class var systemPreferredCamera: AVCaptureDevice?](./systempreferredcamera.md)
   A camera the system prefers to use for video and photo capture.
-- [var isContinuityCamera: Bool](avcapturedevice/iscontinuitycamera.md)
+- [var isContinuityCamera: Bool](./iscontinuitycamera.md)
   A Boolean value that indicates whether the device is a Continuity Camera.
-- [var companionDeskViewCamera: AVCaptureDevice?](avcapturedevice/companiondeskviewcamera.md)
+- [var companionDeskViewCamera: AVCaptureDevice?](./companiondeskviewcamera.md)
   A Desk View camera associated with a device.
 
 

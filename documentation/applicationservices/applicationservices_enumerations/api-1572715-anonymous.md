@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kHIShapeEnumerateInit: Int](khishapeenumerateinit.md)
-- [var kHIShapeEnumerateRect: Int](khishapeenumeraterect.md)
-- [var kHIShapeEnumerateTerminate: Int](khishapeenumerateterminate.md)
+- [var kHIShapeEnumerateInit: Int](../khishapeenumerateinit.md)
+- [var kHIShapeEnumerateRect: Int](../khishapeenumeraterect.md)
+- [var kHIShapeEnumerateTerminate: Int](../khishapeenumerateterminate.md)
 
 
 ---

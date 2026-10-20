@@ -1,7 +1,8 @@
 # kSecAttrProtocolSMB
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 SMB protocol.
 
@@ -18,6 +19,10 @@ SMB protocol.
 
 ```swift
 let kSecAttrProtocolSMB: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolSMB;
 ```
 
 

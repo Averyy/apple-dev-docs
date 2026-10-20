@@ -1,14 +1,15 @@
 # safeRegisterClientBuffer
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn safeRegisterClientBuffer(UInt32 audioStreamIndex, void *sourceBuffer, UInt32 bufSizeInBytes, UInt32 bufferSetID);
 ```
 

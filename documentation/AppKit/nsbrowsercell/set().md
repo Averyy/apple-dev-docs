@@ -1,12 +1,13 @@
 # set()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Highlights the receiver and sets its state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Highlights the receiver and sets its state.
 func set()
 ```
 
+```objc
+- (void) set;
+```
+
 ## See Also
 
-- [func reset()](nsbrowsercell/reset.md)
+### Managing Browser Cell State
+- [func reset()](./reset%28%29.md)
   Unhighlights the receiver and unsets its state.
-- [var isLeaf: Bool](nsbrowsercell/isleaf.md)
+- [var isLeaf: Bool](./isleaf.md)
   A Boolean that indicates whether the browser cell is a leaf or a branch cell.
-- [var isLoaded: Bool](nsbrowsercell/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   A Boolean that indicates whether the cell is ready to display.
-- [func highlightColor(in: NSView) -> NSColor?](nsbrowsercell/highlightcolor(in:).md)
+- [func highlightColor(in: NSView) -> NSColor?](./highlightcolor%28in%29.md)
   Returns the highlight color that the receiver wants to display.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift Testing  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the underlying value represented by this type.

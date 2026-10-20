@@ -1,7 +1,8 @@
 # byDeletionClusters
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var byDeletionClusters: NSString.EnumerationOptions { get }
+```
+
+```c
+NSStringEnumerationByDeletionClusters
 ```
 
 

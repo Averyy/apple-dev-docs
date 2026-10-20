@@ -1,7 +1,8 @@
 # layerName
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `CAMetalLayer` name this metric corresponds to
 

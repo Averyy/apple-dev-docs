@@ -1,7 +1,8 @@
 # CMSetAttachments(_:attachments:attachmentMode:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a dictionary of attachments on an attachment bearer object.
 
@@ -20,9 +21,13 @@ Sets a dictionary of attachments on an attachment bearer object.
 func CMSetAttachments(_ target: CMAttachmentBearer, attachments theAttachments: CFDictionary, attachmentMode: CMAttachmentMode)
 ```
 
+```c
+extern void CMSetAttachments(CMAttachmentBearerRef target, CFDictionaryRef theAttachments, CMAttachmentMode attachmentMode);
+```
+
 #### Discussion
 
-`CMSetAttachments` is a convenience call that in turn calls `CMSetAttachment` for each key and value in the given dictionary. All key value pairs must be in the root level of the dictionary.  Given a [`CVBuffer`](https://developer.apple.com/documentation/corevideo/cvbuffer), `CMSetAttachments` is equivalent to `CVBufferSetAttachments`.
+`CMSetAttachments` is a convenience call that in turn calls `CMSetAttachment` for each key and value in the given dictionary. All key value pairs must be in the root level of the dictionary.  Given a [`CVBuffer`](../CoreVideo/cvbuffer.md), `CMSetAttachments` is equivalent to `CVBufferSetAttachments`.
 
 ## Parameters
 
@@ -32,17 +37,18 @@ func CMSetAttachments(_ target: CMAttachmentBearer, attachments theAttachments: 
 
 ## See Also
 
-- [func CMGetAttachment(CMAttachmentBearer, key: CFString, attachmentModeOut: UnsafeMutablePointer<CMAttachmentMode>?) -> CFTypeRef?](cmgetattachment(_:key:attachmentmodeout:).md)
+### Processing Attachments
+- [func CMGetAttachment(CMAttachmentBearer, key: CFString, attachmentModeOut: UnsafeMutablePointer<CMAttachmentMode>?) -> CFTypeRef?](./cmgetattachment%28_,key,attachmentmodeout%29.md)
   Returns an attachment from an attachment bearer object.
-- [func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachmentBearer, attachmentMode: CMAttachmentMode) -> sending CFDictionary?](cmcopydictionaryofattachments(allocator:target:attachmentmode:).md)
+- [func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachmentBearer, attachmentMode: CMAttachmentMode) -> sending CFDictionary?](./cmcopydictionaryofattachments%28allocator,target,attachmentmode%29.md)
   Returns a dictionary of all attachments for an attachment bearer object.
-- [func CMSetAttachment(CMAttachmentBearer, key: CFString, value: CFTypeRef?, attachmentMode: CMAttachmentMode)](cmsetattachment(_:key:value:attachmentmode:).md)
+- [func CMSetAttachment(CMAttachmentBearer, key: CFString, value: CFTypeRef?, attachmentMode: CMAttachmentMode)](./cmsetattachment%28_,key,value,attachmentmode%29.md)
   Sets or adds an attachment to an attachment bearer object.
-- [func CMRemoveAttachment(CMAttachmentBearer, key: CFString)](cmremoveattachment(_:key:).md)
+- [func CMRemoveAttachment(CMAttachmentBearer, key: CFString)](./cmremoveattachment%28_,key%29.md)
   Removes a specific attachment from an attachment bearer object.
-- [func CMRemoveAllAttachments(CMAttachmentBearer)](cmremoveallattachments(_:).md)
+- [func CMRemoveAllAttachments(CMAttachmentBearer)](./cmremoveallattachments%28_%29.md)
   Removes all attachments from an attachment bearer object.
-- [func CMPropagateAttachments(CMAttachmentBearer, destination: CMAttachmentBearer)](cmpropagateattachments(_:destination:).md)
+- [func CMPropagateAttachments(CMAttachmentBearer, destination: CMAttachmentBearer)](./cmpropagateattachments%28_,destination%29.md)
   Copies all propagable attachments from one attachment bearer object to another.
 
 

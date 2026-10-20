@@ -1,7 +1,8 @@
 # SRAuthorizationStatus.notDetermined
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User has not yet made a choice regarding this application
 
@@ -14,6 +15,10 @@ User has not yet made a choice regarding this application
 
 ```swift
 case notDetermined
+```
+
+```c
+SRAuthorizationStatusNotDetermined
 ```
 
 

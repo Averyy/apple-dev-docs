@@ -1,12 +1,13 @@
 # NSSharingService.Name
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the sharing services that macOS supports.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,48 +15,53 @@ Constants that describe the sharing services that macOS supports.
 struct Name
 ```
 
+```c
+typedef NSString * NSSharingServiceName;
+```
+
 ## Topics
 
 ### Creating a Sharing Service Name
-- [init(String)](nssharingservice/name/init(_:).md)
+- [init(String)](./name/init%28_%29.md)
   Creates a sharing service name using the provided string.
-- [init(rawValue: String)](nssharingservice/name/init(rawvalue:).md)
+- [init(rawValue: String)](./name/init%28rawvalue%29.md)
   Creates a sharing service name using the specified raw value.
 ### Sharing Service Names
-- [static let addToAperture: NSSharingService.Name](nssharingservice/name/addtoaperture.md)
+- [static let addToAperture: NSSharingService.Name](./name/addtoaperture.md)
   A service that shares an item provider’s contents with Aperture.
-- [static let addToIPhoto: NSSharingService.Name](nssharingservice/name/addtoiphoto.md)
+- [static let addToIPhoto: NSSharingService.Name](./name/addtoiphoto.md)
   A service that shares an item provider’s contents with iPhoto.
-- [static let addToSafariReadingList: NSSharingService.Name](nssharingservice/name/addtosafarireadinglist.md)
+- [static let addToSafariReadingList: NSSharingService.Name](./name/addtosafarireadinglist.md)
   A service that shares an item provider’s contents with Safari’s Reading List.
-- [static let cloudSharing: NSSharingService.Name](nssharingservice/name/cloudsharing.md)
+- [static let cloudSharing: NSSharingService.Name](./name/cloudsharing.md)
   A service that shares an item provider’s contents with other iCloud users.
-- [static let composeEmail: NSSharingService.Name](nssharingservice/name/composeemail.md)
+- [static let composeEmail: NSSharingService.Name](./name/composeemail.md)
   A service that uses an item provider’s contents to compose an email.
-- [static let composeMessage: NSSharingService.Name](nssharingservice/name/composemessage.md)
+- [static let composeMessage: NSSharingService.Name](./name/composemessage.md)
   A service that uses an item provider’s contents to compose a message.
-- [static let sendViaAirDrop: NSSharingService.Name](nssharingservice/name/sendviaairdrop.md)
+- [static let sendViaAirDrop: NSSharingService.Name](./name/sendviaairdrop.md)
   A service that sends an item provider’s contents to another device using AirDrop.
-- [static let useAsDesktopPicture: NSSharingService.Name](nssharingservice/name/useasdesktoppicture.md)
+- [static let useAsDesktopPicture: NSSharingService.Name](./name/useasdesktoppicture.md)
   A service that sets the item provider’s contents as the current user’s desktop picture.
 ### Deprecated
-- [Deprecated symbols](name-deprecated-symbols.md)
+- [Deprecated symbols](../name-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init?(named: NSSharingService.Name)](nssharingservice/init(named:).md)
+### Creating a Sharing Service
+- [init?(named: NSSharingService.Name)](./init%28named%29.md)
   Returns a sharing service instance representing the specified service name.
-- [init(title: String, image: NSImage, alternateImage: NSImage?, handler: () -> Void)](nssharingservice/init(title:image:alternateimage:handler:).md)
+- [init(title: String, image: NSImage, alternateImage: NSImage?, handler: () -> Void)](./init%28title,image,alternateimage,handler%29.md)
   Creates a custom sharing service object.
 
 

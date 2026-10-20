@@ -1,7 +1,8 @@
 # nrefsym
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of external reference entries provided by this module.
 
@@ -10,7 +11,7 @@ The number of external reference entries provided by this module.
 
 ## Declaration
 
-```swift
+```c
 uint32_t nrefsym;
 ```
 

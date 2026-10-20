@@ -1,7 +1,8 @@
 # cameraDeviceView(_:didEncounterError:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the camera encounters an error.
 
@@ -12,6 +13,10 @@ Invoked when the camera encounters an error.
 
 ```swift
 optional func cameraDeviceView(_ cameraDeviceView: IKCameraDeviceView!, didEncounterError error: (any Error)!)
+```
+
+```objc
+- (void) cameraDeviceView:(IKCameraDeviceView *) cameraDeviceView didEncounterError:(NSError *) error;
 ```
 
 ## Parameters

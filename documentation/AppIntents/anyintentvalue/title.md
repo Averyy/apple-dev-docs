@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,7 +22,8 @@ var title: LocalizedStringResource { get }
 
 ## See Also
 
-- [var isOptional: Bool](anyintentvalue/isoptional.md)
+### Getting type-specific information
+- [var isOptional: Bool](./isoptional.md)
 
 
 ---

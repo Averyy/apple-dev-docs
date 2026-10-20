@@ -1,7 +1,8 @@
 # messageHandler
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to be executed when a message is received from the web extension.
 
@@ -16,6 +17,10 @@ The block to be executed when a message is received from the web extension.
 
 ```swift
 var messageHandler: ((Any?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^messageHandler)(id message, NSError *error);
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AttributedTextFormatting.AttributeContainerProxy
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A proxy for a partially validated set of attributes.
 
@@ -23,24 +24,24 @@ struct AttributeContainerProxy<Scope, Attribute> where Scope : AttributeScope, A
 
 #### Overview
 
-Exposes `Attribute` as read-write and all other attributes as read-only. The type automatically queries the underlying [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) to constrain values that are accessed.
+Exposes `Attribute` as read-write and all other attributes as read-only. The type automatically queries the underlying [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md) to constrain values that are accessed.
 
 ## Topics
 
 ### Structures
-- [AttributedTextFormatting.AttributeContainerProxy.Scoped](attributedtextformatting/attributecontainerproxy/scoped.md)
+- [AttributedTextFormatting.AttributeContainerProxy.Scoped](./attributecontainerproxy/scoped.md)
   A scoped proxy for a partially validated set of attributes.
 ### Subscripts
-- [subscript(_:)](attributedtextformatting/attributecontainerproxy/subscript(_:).md)
+- [subscript(_:)](./attributecontainerproxy/subscript%28_%29.md)
   Access the value of the attribute to constrain.
-- [subscript(dynamicMember:)](attributedtextformatting/attributecontainerproxy/subscript(dynamicmember:).md)
+- [subscript(dynamicMember:)](./attributecontainerproxy/subscript%28dynamicmember%29.md)
   Access the value of the attribute to constrain.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,20 +1,22 @@
 # strlcat
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 size_t strlcat(char *dst, const char *src, size_t n);
 ```
 
 ## See Also
 
-- [strncat](1579343-strncat.md)
+### Concatenation
+- [strncat](./api-1579343-strncat.md)
 
 
 ---

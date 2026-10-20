@@ -1,7 +1,8 @@
 # additionalContactKeyDescriptors
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of contact property keys or key descriptors from contact objects to fetch in the returned contacts.
 
@@ -19,23 +20,28 @@ An array of contact property keys or key descriptors from contact objects to fet
 var additionalContactKeyDescriptors: [any CNKeyDescriptor]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<id<CNKeyDescriptor>> * additionalContactKeyDescriptors;
+```
+
 #### Discussion
 
-By default, the system only fetches [`CNContactIdentifierKey`](cncontactidentifierkey.md) if you do not include a list of additional key descriptors. The system always fetches [`CNContactIdentifierKey`](cncontactidentifierkey.md), whether you request it or not.
+By default, the system only fetches [`CNContactIdentifierKey`](../cncontactidentifierkey.md) if you do not include a list of additional key descriptors. The system always fetches [`CNContactIdentifierKey`](../cncontactidentifierkey.md), whether you request it or not.
 
-For a list of possible keys, see [`Contact Keys`](contact-keys.md).
+For a list of possible keys, see [Contact Keys](../contact-keys.md).
 
 ## See Also
 
-- [var excludedTransactionAuthors: [String]?](cnchangehistoryfetchrequest/excludedtransactionauthors.md)
+### Configuring the fetch request
+- [var excludedTransactionAuthors: [String]?](./excludedtransactionauthors.md)
   An array of strings that identify transaction authors to exclude from the fetch results.
-- [var includeGroupChanges: Bool](cnchangehistoryfetchrequest/includegroupchanges.md)
+- [var includeGroupChanges: Bool](./includegroupchanges.md)
   A Boolean value that indicates whether the fetch should also return group changes.
-- [var mutableObjects: Bool](cnchangehistoryfetchrequest/mutableobjects.md)
+- [var mutableObjects: Bool](./mutableobjects.md)
   A Boolean value that indicates whether the fetch should return mutable contacts and groups.
-- [var shouldUnifyResults: Bool](cnchangehistoryfetchrequest/shouldunifyresults.md)
+- [var shouldUnifyResults: Bool](./shouldunifyresults.md)
   A Boolean value that indicates whether the fetch should return contact changes as unified contacts.
-- [var startingToken: Data?](cnchangehistoryfetchrequest/startingtoken.md)
+- [var startingToken: Data?](./startingtoken.md)
   An opaque token that indicates a point in history in the user’s Contacts database.
 
 

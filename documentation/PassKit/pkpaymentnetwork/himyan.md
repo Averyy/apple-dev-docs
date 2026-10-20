@@ -1,7 +1,8 @@
 # himyan
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -15,6 +16,10 @@
 
 ```swift
 static let himyan: PKPaymentNetwork
+```
+
+```c
+extern PKPaymentNetwork const PKPaymentNetworkHimyan;
 ```
 
 

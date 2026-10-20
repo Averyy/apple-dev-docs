@@ -1,7 +1,8 @@
 # factor
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The down sample factor to the input stream.
 

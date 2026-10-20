@@ -1,7 +1,8 @@
 # ATSUStyleLineCountType
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSUStyleLineCountType = UInt16
+```
+
+```c
+typedef UInt16 ATSUStyleLineCountType;
 ```
 
 

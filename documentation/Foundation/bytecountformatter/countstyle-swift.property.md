@@ -1,7 +1,8 @@
 # countStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specify the number of bytes to be used for kilobytes.
 
@@ -20,27 +21,32 @@ Specify the number of bytes to be used for kilobytes.
 var countStyle: ByteCountFormatter.CountStyle { get set }
 ```
 
+```objc
+@property NSByteCountFormatterCountStyle countStyle;
+```
+
 #### Discussion
 
-The default setting is [`ByteCountFormatter.CountStyle.file`](bytecountformatter/countstyle-swift.enum/file.md), which is the system specific value for file and storage sizes.
+The default setting is [`ByteCountFormatter.CountStyle.file`](./countstyle-swift.enum/file.md), which is the system specific value for file and storage sizes.
 
 ## See Also
 
-- [var formattingContext: Formatter.Context](bytecountformatter/formattingcontext.md)
+### Setting Formatting Styles
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   Specify the formatting context for the formatted string.
-- [var allowsNonnumericFormatting: Bool](bytecountformatter/allowsnonnumericformatting.md)
+- [var allowsNonnumericFormatting: Bool](./allowsnonnumericformatting.md)
   Determines whether to allow more natural display of some values.
-- [var includesActualByteCount: Bool](bytecountformatter/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./includesactualbytecount.md)
   Determines whether to include the number of bytes after the formatted string.
-- [var isAdaptive: Bool](bytecountformatter/isadaptive.md)
+- [var isAdaptive: Bool](./isadaptive.md)
   Determines the display style of the size representation.
-- [var allowedUnits: ByteCountFormatter.Units](bytecountformatter/allowedunits.md)
+- [var allowedUnits: ByteCountFormatter.Units](./allowedunits.md)
   Specify the units that can be used in the output.
-- [var includesCount: Bool](bytecountformatter/includescount.md)
+- [var includesCount: Bool](./includescount.md)
   Determines whether to include the count in the resulting formatted string.
-- [var includesUnit: Bool](bytecountformatter/includesunit.md)
+- [var includesUnit: Bool](./includesunit.md)
   Determines whether to include the units in the resulting formatted string.
-- [var zeroPadsFractionDigits: Bool](bytecountformatter/zeropadsfractiondigits.md)
+- [var zeroPadsFractionDigits: Bool](./zeropadsfractiondigits.md)
   Determines whether to zero pad fraction digits so a consistent number of characters is displayed in a representation.
 
 

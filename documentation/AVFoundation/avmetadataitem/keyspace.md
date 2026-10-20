@@ -1,23 +1,28 @@
 # keySpace
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key space for the metadata item’s key.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var keySpace: AVMetadataKeySpace? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) AVMetadataKeySpace keySpace;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ AVFoundation uses key spaces to group related sets of keys. For example, the fra
 
 ## See Also
 
-- [var key: (any NSCopying & NSObjectProtocol)?](avmetadataitem/key.md)
+### Accessing keys and key spaces
+- [var key: (any NSCopying & NSObjectProtocol)?](./key.md)
   The key of the metadata item.
-- [var commonKey: AVMetadataKey?](avmetadataitem/commonkey.md)
+- [var commonKey: AVMetadataKey?](./commonkey.md)
   The common key of the metadata item.
 
 

@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kIORegistryIterateParents: Int](kioregistryiterateparents.md)
-- [var kIORegistryIterateRecursively: Int](kioregistryiteraterecursively.md)
+- [var kIORegistryIterateParents: Int](../kioregistryiterateparents.md)
+- [var kIORegistryIterateRecursively: Int](../kioregistryiteraterecursively.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MLDataTable.Rows
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of rows in a data table.
 
@@ -22,39 +23,40 @@ struct Rows
 ## Topics
 
 ### Accessing rows
-- [subscript(Int) -> MLDataTable.Rows.Element](mldatatable/rows-swift.struct/subscript(_:).md)
+- [subscript(Int) -> MLDataTable.Rows.Element](./rows-swift.struct/subscript%28_%29.md)
   Subscript by index. This returns a row in the data table.
 ### Manipulating indices
-- [var startIndex: Int](mldatatable/rows-swift.struct/startindex.md)
+- [var startIndex: Int](./rows-swift.struct/startindex.md)
   The position of the first row in a nonempty DataTable. If the DataTable is empty, `startIndex` is equal to `endIndex`.
-- [var endIndex: Int](mldatatable/rows-swift.struct/endindex.md)
+- [var endIndex: Int](./rows-swift.struct/endindex.md)
   The DataTable’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 ### Supporting types
-- [MLDataTable.Row](mldatatable/row.md)
+- [MLDataTable.Row](./row.md)
   A row of untyped values in a data table.
-- [MLDataTable.Rows.Element](mldatatable/rows-swift.struct/element.md)
+- [MLDataTable.Rows.Element](./rows-swift.struct/element.md)
   The Element of a DataTable is a Row. This is represented as a Dictionary-like type containing all Column names and their corresponding values.
 ### Default Implementations
-- [RandomAccessCollection Implementations](mldatatable/rows-swift.struct/randomaccesscollection-implementations.md)
+- [RandomAccessCollection Implementations](./rows-swift.struct/randomaccesscollection-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [MLDataTable.Row](mldatatable/row.md)
+### Getting information about a data table’s rows
+- [MLDataTable.Row](./row.md)
   A row of untyped values in a data table.
-- [var rows: MLDataTable.Rows](mldatatable/rows-swift.property.md)
+- [var rows: MLDataTable.Rows](./rows-swift.property.md)
   The rows of data in the table.
 
 

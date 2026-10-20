@@ -1,7 +1,8 @@
 # configureWithDefault(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the tab bar item appearance object with appropriate values for the specified style.
 
@@ -18,13 +19,18 @@ Configures the tab bar item appearance object with appropriate values for the sp
 func configureWithDefault(for style: UITabBarItemAppearance.Style)
 ```
 
+```objc
+- (void) configureWithDefaultForStyle:(UITabBarItemAppearanceStyle) style;
+```
+
 ## Parameters
 
-- `style`: The layout style for the appearance attributes. UIKit configures the object with the default appearance attributes for the specified style. For a list of possible values, see [`UITabBarItemAppearance.Style`](uitabbaritemappearance/style.md).
+- `style`: The layout style for the appearance attributes. UIKit configures the object with the default appearance attributes for the specified style. For a list of possible values, see [`UITabBarItemAppearance.Style`](./style.md).
 
 ## See Also
 
-- [UITabBarItemAppearance.Style](uitabbaritemappearance/style.md)
+### Resetting the appearance properties
+- [UITabBarItemAppearance.Style](./style.md)
   Constants indicating the layout of a tab bar item’s content.
 
 

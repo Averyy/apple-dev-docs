@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds multiple components to the set, overriding any existing components of the same type.
 
@@ -11,13 +12,25 @@ Adds multiple components to the set, overriding any existing components of the s
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency func set(_ components: [any Component])
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func set<T>(_ component: T) where T : Component
+```
+
+```swift
+@MainActor
+@preconcurrency func set<T>(_ component: T) where T : _ImplicitlyAnimatableBuiltinComponent
 ```
 
 #### Discussion

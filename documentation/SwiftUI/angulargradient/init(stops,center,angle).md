@@ -1,7 +1,8 @@
 # init(stops:center:angle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a conic gradient from a collection of color stops that completes a full turn.
 
@@ -23,9 +24,10 @@ nonisolated init(stops: [Gradient.Stop], center: UnitPoint, angle: Angle = .zero
 
 ## See Also
 
-- [init(gradient: Gradient, center: UnitPoint, angle: Angle)](angulargradient/init(gradient:center:angle:).md)
+### Creating a full rotation angular gradient
+- [init(gradient: Gradient, center: UnitPoint, angle: Angle)](./init%28gradient,center,angle%29.md)
   Creates a conic gradient that completes a full turn.
-- [init(colors: [Color], center: UnitPoint, angle: Angle)](angulargradient/init(colors:center:angle:).md)
+- [init(colors: [Color], center: UnitPoint, angle: Angle)](./init%28colors,center,angle%29.md)
   Creates a conic gradient from a collection of colors that completes a full turn.
 
 

@@ -1,7 +1,8 @@
 # awake(withContext:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the interface controller with the specified context data.
 
@@ -14,10 +15,14 @@ Initializes the interface controller with the specified context data.
 func awake(withContext context: Any?)
 ```
 
+```objc
+- (void) awakeWithContext:(id) context;
+```
+
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
+- [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
 #### Discussion
 
@@ -31,9 +36,10 @@ The default implementation of this method does nothing.
 
 ## See Also
 
-- [init()](wkinterfacecontroller/init.md)
+### Creating the interface controller
+- [init()](./init%28%29.md)
   Returns an initialized interface controller object.
-- [func setTitle(String?)](wkinterfacecontroller/settitle(_:).md)
+- [func setTitle(String?)](./settitle%28_%29.md)
   Sets the title of the interface.
 
 

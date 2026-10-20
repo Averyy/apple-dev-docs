@@ -1,7 +1,8 @@
 # instanceCountBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides a reference to a buffer containing the number of instances in the instance descriptor buffer, formatted as a 32-bit unsigned integer.
 
@@ -19,9 +20,13 @@ Provides a reference to a buffer containing the number of instances in the insta
 var instanceCountBuffer: MTL4BufferRange { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BufferRange instanceCountBuffer;
+```
+
 #### Discussion
 
-You are responsible for ensuring that the final number of instances at build time, which you provide indirectly via this buffer reference , is less than or equal to the value of property [`maxInstanceCount`](mtl4indirectinstanceaccelerationstructuredescriptor/maxinstancecount.md).
+You are responsible for ensuring that the final number of instances at build time, which you provide indirectly via this buffer reference , is less than or equal to the value of property [`maxInstanceCount`](./maxinstancecount.md).
 
 
 ---

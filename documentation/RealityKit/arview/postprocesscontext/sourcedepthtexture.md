@@ -1,7 +1,8 @@
 # sourceDepthTexture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s depth buffer.
 
@@ -20,7 +21,7 @@ var sourceDepthTexture: any MTLTexture
 
 ## Mentions
 
-- [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
+- [Implementing postprocess effects using Metal compute functions](../../implementing-postprocess-effects-using-metal-compute-functions.md)
 
 
 ---

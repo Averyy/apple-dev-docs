@@ -1,7 +1,8 @@
 # element
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element index in the scope.
 
@@ -19,13 +20,18 @@ The element index in the scope.
 var element: UInt32 { get set }
 ```
 
+```objc
+@property (readwrite) UInt32 element;
+```
+
 ## See Also
 
-- [var parameterID: UInt32](avparameterevent/parameterid.md)
+### Configuring a parameter event
+- [var parameterID: UInt32](./parameterid.md)
   The identifier of the parameter.
-- [var scope: UInt32](avparameterevent/scope.md)
+- [var scope: UInt32](./scope.md)
   The audio unit scope for the parameter.
-- [var value: Float](avparameterevent/value.md)
+- [var value: Float](./value.md)
   The value of the parameter to set.
 
 

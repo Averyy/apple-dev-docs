@@ -1,7 +1,8 @@
 # sparseStorageType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the storage format of the sparse tensor.
 
@@ -17,6 +18,10 @@ Defines the storage format of the sparse tensor.
 
 ```swift
 var sparseStorageType: MPSGraphSparseStorageType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphSparseStorageType sparseStorageType;
 ```
 
 

@@ -1,7 +1,8 @@
 # accessibilityAddTraits(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the given traits to the view.
 
@@ -23,9 +24,10 @@ func accessibilityAddTraits(_ traits: AccessibilityTraits) -> ModifiedContent<Se
 
 ## See Also
 
-- [func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityremovetraits(_:).md)
+### Assigning traits to content
+- [func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityremovetraits%28_%29.md)
   Removes the given traits from this view.
-- [struct AccessibilityTraits](accessibilitytraits.md)
+- [struct AccessibilityTraits](../accessibilitytraits.md)
   A set of accessibility traits that describe how an element behaves.
 
 

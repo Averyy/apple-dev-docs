@@ -1,7 +1,8 @@
 # LowLevelRenderer.RenderState
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The per-frame render state passed to the `render(using:_:)` callback.
 
@@ -24,21 +25,22 @@ struct RenderState
 ## Topics
 
 ### Accessing the encoder
-- [var encoder: any MTLRenderCommandEncoder](lowlevelrenderer/renderstate/encoder.md)
+- [var encoder: any MTLRenderCommandEncoder](./renderstate/encoder.md)
   The underlying Metal render command encoder for this render pass.
 ### Rendering mesh instances
-- [func render(meshInstancesArrayIndex: Int, meshInstanceIndex: Int)](lowlevelrenderer/renderstate/render(meshinstancesarrayindex:meshinstanceindex:).md)
+- [func render(meshInstancesArrayIndex: Int, meshInstanceIndex: Int)](./renderstate/render%28meshinstancesarrayindex,meshinstanceindex%29.md)
   Encodes a draw call for a single mesh instance.
-- [func render(meshInstancesArrayIndex: Int, range: Range<Int>)](lowlevelrenderer/renderstate/render(meshinstancesarrayindex:range:).md)
+- [func render(meshInstancesArrayIndex: Int, range: Range<Int>)](./renderstate/render%28meshinstancesarrayindex,range%29.md)
   Encodes draw calls for a contiguous range of mesh instances.
-- [func reset()](lowlevelrenderer/renderstate/reset.md)
+- [func reset()](./renderstate/reset%28%29.md)
   Resets the render encoder state to renderer defaults.
 
 ## See Also
 
-- [func render(using: any MTLCommandBuffer, (inout LowLevelRenderer.RenderState) -> ())](lowlevelrenderer/render(using:_:).md)
+### Rendering a frame
+- [func render(using: any MTLCommandBuffer, (inout LowLevelRenderer.RenderState) -> ())](./render%28using,_%29.md)
   Encodes draw calls for the frame into the given command buffer using a caller-controlled render callback.
-- [LowLevelRenderer.Resources](lowlevelrenderer/resources.md)
+- [LowLevelRenderer.Resources](./resources.md)
   Prepared GPU resources for a renderer.
 
 

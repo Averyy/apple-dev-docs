@@ -1,7 +1,8 @@
 # GetStartingChannel
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the starting channel of the stream.
 
@@ -10,7 +11,7 @@ Gets the starting channel of the stream.
 
 ## Declaration
 
-```swift
+```c
 uint32_t GetStartingChannel();
 ```
 
@@ -24,7 +25,8 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetStartingChannel](iouservideostream/setstartingchannel.md)
+### Working with channels
+- [SetStartingChannel](./setstartingchannel.md)
   Sets the starting channel of the stream.
 
 

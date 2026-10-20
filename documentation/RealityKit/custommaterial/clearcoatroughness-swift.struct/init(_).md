@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom clearcoat object from a physically based material’s clearcoat property.
 
@@ -20,11 +21,11 @@ init(_ value: PhysicallyBasedMaterial.ClearcoatRoughness)
 
 #### Discussion
 
-This initializer creates a new object by copying the [`scale`](physicallybasedmaterial/clearcoatroughness-swift.struct/scale.md) and [`texture`](physicallybasedmaterial/clearcoatroughness-swift.struct/texture.md) values from an existing [`PhysicallyBasedMaterial.ClearcoatRoughness`](physicallybasedmaterial/clearcoatroughness-swift.struct.md) object.
+This initializer creates a new object by copying the [`scale`](../../physicallybasedmaterial/clearcoatroughness-swift.struct/scale.md) and [`texture`](../../physicallybasedmaterial/clearcoatroughness-swift.struct/texture.md) values from an existing [`PhysicallyBasedMaterial.ClearcoatRoughness`](../../physicallybasedmaterial/clearcoatroughness-swift.struct.md) object.
 
 A clearcoat is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. Use this initializer to create an object to specify the amount of clearcoat for a material using a single value for the entire material, a UV-mapped image to specify different values for different parts of the entity, or both.
 
-The values from this property are available in the custom material’s surface shader function regardless of the value of [`lightingModel`](custommaterial/lightingmodel-swift.property.md) , but clearcoat isn’t drawn unless the custom material’s [`lightingModel`](custommaterial/lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and the surface shader calls `params.surface().set_clearcoat()`.
+The values from this property are available in the custom material’s surface shader function regardless of the value of [`lightingModel`](../lightingmodel-swift.property.md) , but clearcoat isn’t drawn unless the custom material’s [`lightingModel`](../lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](../lightingmodel-swift.enum/clearcoat.md) and the surface shader calls `params.surface().set_clearcoat()`.
 
 The following Metal code demonstrates how to retrieve `scale` and `texture` in a surface shader, and use them to specify the clearcoat and clearcoat roughness values:
 
@@ -58,13 +59,14 @@ The following Metal code demonstrates how to retrieve `scale` and `texture` in a
 
 ## Parameters
 
-- `value`: The [`clearcoatRoughness`](physicallybasedmaterial/clearcoatroughness-swift.property.md) property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
+- `value`: The [`clearcoatRoughness`](../../physicallybasedmaterial/clearcoatroughness-swift.property.md) property from a [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md).
 
 ## See Also
 
-- [init(floatLiteral: Float)](custommaterial/clearcoatroughness-swift.struct/init(floatliteral:).md)
+### Creating a clearcoat roughness object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates a clearcoat object using a single value.
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/clearcoatroughness-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a clearcoat object using a single value or a texture.
 
 

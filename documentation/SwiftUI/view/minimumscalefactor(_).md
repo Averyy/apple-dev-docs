@@ -1,7 +1,8 @@
 # minimumScaleFactor(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the minimum amount that text in this view scales down to fit in the available space.
 
@@ -29,7 +30,7 @@ A view that limits the amount of text downscaling.
 
 Use the `minimumScaleFactor(_:)` modifier if the text you place in a view doesn’t fit and it’s okay if the text shrinks to accommodate. For example, a label with a minimum scale factor of `0.5` draws its text in a font size as small as half of the actual font if needed.
 
-In the example below, the [`HStack`](hstack.md) contains a [`Text`](text.md) label with a line limit of `1`, that is next to a [`TextField`](textfield.md). To allow the label to fit into the available space, the `minimumScaleFactor(_:)` modifier shrinks the text as needed to fit into the available space.
+In the example below, the [`HStack`](../hstack.md) contains a [`Text`](../text.md) label with a line limit of `1`, that is next to a [`TextField`](../textfield.md). To allow the label to fit into the available space, the `minimumScaleFactor(_:)` modifier shrinks the text as needed to fit into the available space.
 
 ```swift
 HStack {
@@ -40,7 +41,7 @@ HStack {
 }
 ```
 
-![A screenshot showing the effect of setting a minimumScaleFactor on](/images/com.apple.SwiftUI/SwiftUI-View-minimumScaleFactor@2x.png)
+![A screenshot showing the effect of setting a minimumScaleFactor on](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-minimumScaleFactor@2x.png)
 
 ## Parameters
 
@@ -48,25 +49,26 @@ HStack {
 
 ## See Also
 
-- [func truncationMode(Text.TruncationMode) -> some View](view/truncationmode(_:).md)
+### Managing text layout
+- [func truncationMode(Text.TruncationMode) -> some View](./truncationmode%28_%29.md)
   Sets the truncation mode for lines of text that are too long to fit in the available space.
-- [var truncationMode: Text.TruncationMode](environmentvalues/truncationmode.md)
+- [var truncationMode: Text.TruncationMode](../environmentvalues/truncationmode.md)
   A value that indicates how the layout truncates the last line of text to fit into the available space.
-- [func allowsTightening(Bool) -> some View](view/allowstightening(_:).md)
+- [func allowsTightening(Bool) -> some View](./allowstightening%28_%29.md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
-- [var allowsTightening: Bool](environmentvalues/allowstightening.md)
+- [var allowsTightening: Bool](../environmentvalues/allowstightening.md)
   A Boolean value that indicates whether inter-character spacing should tighten to fit the text into the available space.
-- [var minimumScaleFactor: CGFloat](environmentvalues/minimumscalefactor.md)
+- [var minimumScaleFactor: CGFloat](../environmentvalues/minimumscalefactor.md)
   The minimum permissible proportion to shrink the font size to fit the text into the available space.
-- [func baselineOffset(CGFloat) -> some View](view/baselineoffset(_:).md)
+- [func baselineOffset(CGFloat) -> some View](./baselineoffset%28_%29.md)
   Sets the vertical offset for the text relative to its baseline in this view.
-- [func kerning(CGFloat) -> some View](view/kerning(_:).md)
+- [func kerning(CGFloat) -> some View](./kerning%28_%29.md)
   Sets the spacing, or kerning, between characters for the text in this view.
-- [func tracking(CGFloat) -> some View](view/tracking(_:).md)
+- [func tracking(CGFloat) -> some View](./tracking%28_%29.md)
   Sets the tracking for the text in this view.
-- [func flipsForRightToLeftLayoutDirection(Bool) -> some View](view/flipsforrighttoleftlayoutdirection(_:).md)
+- [func flipsForRightToLeftLayoutDirection(Bool) -> some View](./flipsforrighttoleftlayoutdirection%28_%29.md)
   Sets whether this view mirrors its contents horizontally when the layout direction is right-to-left.
-- [enum TextAlignment](textalignment.md)
+- [enum TextAlignment](../textalignment.md)
   An alignment position for text along the horizontal axis.
 
 

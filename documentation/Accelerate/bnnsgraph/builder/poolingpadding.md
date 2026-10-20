@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.PoolingPadding
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The padding that you use for pooling operations to specify zero-padding.
 

@@ -1,7 +1,8 @@
 # sigma
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sigma value with which the filter was created.
 
@@ -17,6 +18,10 @@ The sigma value with which the filter was created.
 
 ```swift
 var sigma: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float sigma;
 ```
 
 

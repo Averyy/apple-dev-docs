@@ -1,15 +1,18 @@
 # MXError.Code.launchTaskUnknown
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task hasn’t been started or has already been finished.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricManager.LaunchTaskError.Reason.taskUnknown`](../../metricmanager/launchtaskerror/reason-swift.enum/taskunknown.md) instead.
 
 ## Declaration
 
@@ -17,17 +20,22 @@ The task hasn’t been started or has already been finished.
 case launchTaskUnknown
 ```
 
+```c
+MXErrorLaunchTaskUnknown
+```
+
 ## See Also
 
-- [MXError.Code.launchTaskDuplicated](mxerror/code/launchtaskduplicated.md)
+### Launch errors
+- [MXError.Code.launchTaskDuplicated](./launchtaskduplicated.md)
   A task with the same ID has already been started.
-- [MXError.Code.launchTaskInternalFailure](mxerror/code/launchtaskinternalfailure.md)
+- [MXError.Code.launchTaskInternalFailure](./launchtaskinternalfailure.md)
   Internal failures happened inside the framework.
-- [MXError.Code.launchTaskInvalidID](mxerror/code/launchtaskinvalidid.md)
+- [MXError.Code.launchTaskInvalidID](./launchtaskinvalidid.md)
   The task ID is a `null` value or exceeds the maximum 128 character length.
-- [MXError.Code.launchTaskMaxCount](mxerror/code/launchtaskmaxcount.md)
+- [MXError.Code.launchTaskMaxCount](./launchtaskmaxcount.md)
   Exceeded the maximum number of tasks.
-- [MXError.Code.launchTaskPastDeadline](mxerror/code/launchtaskpastdeadline.md)
+- [MXError.Code.launchTaskPastDeadline](./launchtaskpastdeadline.md)
   The start call was made too late.
 
 

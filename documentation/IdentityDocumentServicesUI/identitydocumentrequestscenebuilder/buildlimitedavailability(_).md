@@ -1,12 +1,13 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

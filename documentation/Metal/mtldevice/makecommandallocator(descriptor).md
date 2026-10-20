@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new command allocator from a command allocator descriptor.
@@ -20,13 +21,17 @@ Creates a new command allocator from a command allocator descriptor.
 func makeCommandAllocator(descriptor: MTL4CommandAllocatorDescriptor) throws -> any MTL4CommandAllocator
 ```
 
+```objc
+- (id<MTL4CommandAllocator>) newCommandAllocatorWithDescriptor:(MTL4CommandAllocatorDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A [`MTL4CommandAllocator`](mtl4commandallocator.md) instance, or `nil` if the function failed.
+A [`MTL4CommandAllocator`](../mtl4commandallocator.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A [`MTL4CommandAllocatorDescriptor`](mtl4commandallocatordescriptor.md) instance that configures the [`MTL4CommandAllocator`](mtl4commandallocator.md) instance.
+- `descriptor`: A [`MTL4CommandAllocatorDescriptor`](../mtl4commandallocatordescriptor.md) instance that configures the [`MTL4CommandAllocator`](../mtl4commandallocator.md) instance.
 
 
 ---

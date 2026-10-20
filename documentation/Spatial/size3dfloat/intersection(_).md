@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the intersection of two volumetric entities.
 

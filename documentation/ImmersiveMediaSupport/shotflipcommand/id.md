@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique command ID for the immersive media file.
 

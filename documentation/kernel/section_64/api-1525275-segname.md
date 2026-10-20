@@ -1,7 +1,8 @@
 # segname
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A string specifying the name of the segment that should eventually contain this section. For compactness, intermediate object files—files of type `MH_OBJECT`—contain only one segment, in which all sections are placed. The static linker places each section in the named segment when building the final product (any file that is not of type `MH_OBJECT`).
 
@@ -10,7 +11,7 @@ A string specifying the name of the segment that should eventually contain this 
 
 ## Declaration
 
-```swift
+```c
 char segname[16];
 ```
 

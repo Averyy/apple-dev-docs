@@ -1,7 +1,8 @@
 # init(url:options:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a media data storage object associated with a file URL.
 
@@ -17,6 +18,10 @@ Creates a media data storage object associated with a file URL.
 
 ```swift
 init(url URL: URL, options: [String : Any]? = nil)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # loadRangedAnnotations(parameters:continueOnFailure:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads training examples from a data frame containing annotations.
 
@@ -44,7 +45,7 @@ If both `startTime` and `endTime` columns are missing or their values are missin
 
 Consider an example of a dataframe containing the following values:
 
-```None
+```
 ------------------------------------------------
 | fileName  | annotation | startTime | endTime |
 | ----------|------------|-----------|---------|

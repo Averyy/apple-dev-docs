@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.ExtrusionMethod.linear(depth:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Extrudes the shape with a linear extrusion in Z by the desired depth.
 
@@ -28,9 +29,9 @@ var extrusionOptions = ShapeExtrusionOptions()
 extrusionOptions.extrusionMethod = .linear(depth: 0.6)
 ```
 
-![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-linear-red.jpg)
+![](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-linear-red.jpg)
 
-You can also use [`MeshResource.ShapeExtrusionOptions.ExtrusionMethod.tracePositions(_:)`](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum/tracepositions(_:).md) an equivalent way.
+You can also use [`MeshResource.ShapeExtrusionOptions.ExtrusionMethod.tracePositions(_:)`](./tracepositions%28_%29.md) an equivalent way.
 
 ```swift
 .tracePositions([

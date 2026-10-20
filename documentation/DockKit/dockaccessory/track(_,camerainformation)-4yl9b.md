@@ -1,7 +1,8 @@
 # track(_:cameraInformation:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Automatically generate and send tracking vectors to the device.
 
@@ -19,7 +20,7 @@ final func track(_ metadata: [AVMetadataObject], cameraInformation: DockAccessor
 
 ## Mentions
 
-- [Track custom objects in a frame](track-custom-objects-in-a-frame.md)
+- [Track custom objects in a frame](../track-custom-objects-in-a-frame.md)
 
 #### Discussion
 
@@ -27,24 +28,25 @@ The vectors are based on metadata coming from the camera.
 
 Disable system tracking, then supply the observations at a fixed rate between 10 and 30 times per second. Any other rate is unsupported.
 
-> **Note**: [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
+> **Throws**: [`DockKitError.notSupported`](../dockkiterror/notsupported.md) if called on macOS.
 
 ## Parameters
 
-- `metadata`: An array of [`AVMetadataObject`](https://developer.apple.com/documentation/avfoundation/avmetadataobject) objects indicating the location of objects within the frame.
+- `metadata`: An array of [`AVMetadataObject`](../../AVFoundation/avmetadataobject.md) objects indicating the location of objects within the frame.
 - `cameraInformation`: The camera in current use and its orientation.
 
 ## See Also
 
-- [func selectSubject(at: CGPoint) async throws](dockaccessory/selectsubject(at:).md)
+### Selecting and tracking
+- [func selectSubject(at: CGPoint) async throws](./selectsubject%28at%29.md)
   Selects a subject to track at the supplied coordinates.
-- [func track([DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation) async throws](dockaccessory/track(_:camerainformation:)-44mwn.md)
+- [func track([DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation) async throws](./track%28_,camerainformation%29-44mwn.md)
   Automatically generate and send tracking vectors to the device.
-- [DockAccessory.Observation](dockaccessory/observation.md)
+- [DockAccessory.Observation](./observation.md)
   An observation of the contents of a single video frame.
-- [DockAccessory.CameraInformation](dockaccessory/camerainformation.md)
+- [DockAccessory.CameraInformation](./camerainformation.md)
   A collection of tracking information about the camera currently in use.
-- [DockAccessory.CameraOrientation](dockaccessory/cameraorientation.md)
+- [DockAccessory.CameraOrientation](./cameraorientation.md)
   The set of camera orientations used to extract coordinates.
 
 

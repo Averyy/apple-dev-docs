@@ -1,7 +1,8 @@
 # type
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string used to identify the field type.
 
@@ -10,7 +11,7 @@ A string used to identify the field type.
 
 ## Declaration
 
-```swift
+```
 attribute string type;
 ```
 

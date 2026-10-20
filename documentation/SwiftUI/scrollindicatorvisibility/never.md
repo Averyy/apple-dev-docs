@@ -1,7 +1,8 @@
 # never
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Scroll indicators should never be visible.
 
@@ -22,15 +23,16 @@ static var never: ScrollIndicatorVisibility { get }
 
 #### Discussion
 
-This value behaves like [`hidden`](scrollindicatorvisibility/hidden.md), but overrides scrollable views that choose to keep their indicators visible. When using this value, provide an alternative method of scrolling. The typical horizontal swipe gesture might not be available, depending on the current input device.
+This value behaves like [`hidden`](./hidden.md), but overrides scrollable views that choose to keep their indicators visible. When using this value, provide an alternative method of scrolling. The typical horizontal swipe gesture might not be available, depending on the current input device.
 
 ## See Also
 
-- [static var automatic: ScrollIndicatorVisibility](scrollindicatorvisibility/automatic.md)
+### Getting visibilties
+- [static var automatic: ScrollIndicatorVisibility](./automatic.md)
   Scroll indicator visibility depends on the policies of the component accepting the visibility configuration.
-- [static var hidden: ScrollIndicatorVisibility](scrollindicatorvisibility/hidden.md)
+- [static var hidden: ScrollIndicatorVisibility](./hidden.md)
   Hide the scroll indicators.
-- [static var visible: ScrollIndicatorVisibility](scrollindicatorvisibility/visible.md)
+- [static var visible: ScrollIndicatorVisibility](./visible.md)
   Show the scroll indicators.
 
 

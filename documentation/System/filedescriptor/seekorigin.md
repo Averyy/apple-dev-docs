@@ -1,7 +1,8 @@
 # FileDescriptor.SeekOrigin
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for specifying what a file descriptor’s offset is relative to.
 
@@ -24,49 +25,50 @@ struct SeekOrigin
 ## Topics
 
 ### Creating a Seek Origin
-- [static var current: FileDescriptor.SeekOrigin](filedescriptor/seekorigin/current.md)
+- [static var current: FileDescriptor.SeekOrigin](./seekorigin/current.md)
   Indicates that the offset should be set to the specified number of bytes after the current location.
-- [static var end: FileDescriptor.SeekOrigin](filedescriptor/seekorigin/end.md)
+- [static var end: FileDescriptor.SeekOrigin](./seekorigin/end.md)
   Indicates that the offset should be set to the size of the file plus the specified number of bytes.
-- [static var nextHole: FileDescriptor.SeekOrigin](filedescriptor/seekorigin/nexthole.md)
+- [static var nextHole: FileDescriptor.SeekOrigin](./seekorigin/nexthole.md)
   Indicates that the offset should be set to the next hole after the specified number of bytes.
-- [static var nextData: FileDescriptor.SeekOrigin](filedescriptor/seekorigin/nextdata.md)
+- [static var nextData: FileDescriptor.SeekOrigin](./seekorigin/nextdata.md)
   Indicates that the offset should be set to the start of the next file region that isn’t a hole and is greater than or equal to the supplied offset.
-- [static var start: FileDescriptor.SeekOrigin](filedescriptor/seekorigin/start.md)
+- [static var start: FileDescriptor.SeekOrigin](./seekorigin/start.md)
   Indicates that the offset should be set to the specified value.
 ### Debugging
-- [var description: String](filedescriptor/seekorigin/description.md)
+- [var description: String](./seekorigin/description.md)
   A textual representation of the seek origin.
-- [var debugDescription: String](filedescriptor/seekorigin/debugdescription.md)
+- [var debugDescription: String](./seekorigin/debugdescription.md)
   A textual representation of the seek origin, suitable for debugging.
 ### Working with C APIs
-- [init(rawValue: CInt)](filedescriptor/seekorigin/init(rawvalue:).md)
+- [init(rawValue: CInt)](./seekorigin/init%28rawvalue%29.md)
   Create a strongly-typed seek origin from a raw C value.
-- [var rawValue: CInt](filedescriptor/seekorigin/rawvalue.md)
+- [var rawValue: CInt](./seekorigin/rawvalue.md)
   The raw C value.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](filedescriptor/seekorigin/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](filedescriptor/seekorigin/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./seekorigin/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./seekorigin/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func seek(offset: Int64, from: FileDescriptor.SeekOrigin) throws -> Int64](filedescriptor/seek(offset:from:).md)
+### Changing a File’s Offset
+- [func seek(offset: Int64, from: FileDescriptor.SeekOrigin) throws -> Int64](./seek%28offset,from%29.md)
   Repositions the offset for the given file descriptor.
 
 

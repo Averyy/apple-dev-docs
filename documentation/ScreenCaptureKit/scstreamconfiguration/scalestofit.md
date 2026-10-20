@@ -1,7 +1,8 @@
 # scalesToFit
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to scale the output to fit the configured width and height.
 
@@ -15,21 +16,26 @@ A Boolean value that indicates whether to scale the output to fit the configured
 var scalesToFit: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL scalesToFit;
+```
+
 #### Discussion
 
 The system uses this value during independent window capture.
 
 ## See Also
 
-- [var width: Int](scstreamconfiguration/width.md)
+### Specifying dimensions
+- [var width: Int](./width.md)
   The width of the output.
-- [var height: Int](scstreamconfiguration/height.md)
+- [var height: Int](./height.md)
   The height of the output.
-- [var sourceRect: CGRect](scstreamconfiguration/sourcerect.md)
+- [var sourceRect: CGRect](./sourcerect.md)
   A rectangle that specifies the source area to capture.
-- [var destinationRect: CGRect](scstreamconfiguration/destinationrect.md)
+- [var destinationRect: CGRect](./destinationrect.md)
   A rectangle that specifies a destination into which to write the output.
-- [var preservesAspectRatio: Bool](scstreamconfiguration/preservesaspectratio.md)
+- [var preservesAspectRatio: Bool](./preservesaspectratio.md)
   A Boolean value that determines if the stream preserves aspect ratio.
 
 

@@ -1,7 +1,8 @@
 # MDLAssetResolver
 
 **Framework**: Model I/O  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 11.0+
@@ -17,20 +18,24 @@
 protocol MDLAssetResolver : NSObjectProtocol
 ```
 
+```objc
+@protocol MDLAssetResolver <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func canResolveAssetNamed(String) -> Bool](mdlassetresolver/canresolveassetnamed(_:).md)
-- [func resolveAssetNamed(String) -> URL](mdlassetresolver/resolveassetnamed(_:).md)
+- [func canResolveAssetNamed(String) -> Bool](./mdlassetresolver/canresolveassetnamed%28_%29.md)
+- [func resolveAssetNamed(String) -> URL](./mdlassetresolver/resolveassetnamed%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [MDLBundleAssetResolver](mdlbundleassetresolver.md)
-- [MDLPathAssetResolver](mdlpathassetresolver.md)
-- [MDLRelativeAssetResolver](mdlrelativeassetresolver.md)
+- [MDLBundleAssetResolver](./mdlbundleassetresolver.md)
+- [MDLPathAssetResolver](./mdlpathassetresolver.md)
+- [MDLRelativeAssetResolver](./mdlrelativeassetresolver.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # sendMessage(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an SMS message to the given destination.
 
@@ -16,7 +17,9 @@ final func sendMessage(_ message: SMSMessage) async throws
 
 #### Discussion
 
-> **Note**: - [`TelephonyMessagingSession.Error.invalidSession`](telephonymessagingsession/error/invalidsession.md) if the session isn’t valid.
+> **Throws**:
+>
+> - [`TelephonyMessagingSession.Error.invalidSession`](../telephonymessagingsession/error/invalidsession.md) if the session isn’t valid.
 
 ## Parameters
 
@@ -24,7 +27,8 @@ final func sendMessage(_ message: SMSMessage) async throws
 
 ## See Also
 
-- [struct SMSMessage](smsmessage.md)
+### Sending messages
+- [struct SMSMessage](../smsmessage.md)
   A structure that contains the data of an SMS message.
 
 

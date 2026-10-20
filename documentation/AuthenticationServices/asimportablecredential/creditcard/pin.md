@@ -1,7 +1,8 @@
 # pin
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional: The PIN number.
 

@@ -1,9 +1,10 @@
 # blendLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-[`blendLayer`](animationdefinition/blendlayer.md) is not used.
+[`blendLayer`](../animationdefinition/blendlayer.md) is not used.
 
 **Availability**:
 - iOS 18.0+

@@ -1,7 +1,8 @@
 # mipmapLevelCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of mipmaps for the texture.
 
@@ -11,7 +12,7 @@ The number of mipmaps for the texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,19 +27,20 @@ Mipmaps are additional copies of the same texture at different resolutions. This
 
 ## See Also
 
-- [var textureType: MTLTextureType](textureresource/texturetype.md)
+### Describing the texture
+- [var textureType: MTLTextureType](./texturetype.md)
   The dimension and arrangement of the texture image data.
-- [var pixelFormat: MTLPixelFormat](textureresource/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The texture’s pixel format.
-- [var height: Int](textureresource/height.md)
+- [var height: Int](./height.md)
   The height of the texture image, in pixels.
-- [var width: Int](textureresource/width.md)
+- [var width: Int](./width.md)
   The width of the texture image, in pixels.
-- [var depth: Int](textureresource/depth.md)
+- [var depth: Int](./depth.md)
   The depth of the texture image, in pixels.
-- [var arrayLength: Int](textureresource/arraylength.md)
+- [var arrayLength: Int](./arraylength.md)
   The number of slices in the texture array.
-- [var semantic: TextureResource.Semantic?](textureresource/semantic-swift.property.md)
+- [var semantic: TextureResource.Semantic?](./semantic-swift.property.md)
   The intended usage of the texture resource.
 
 

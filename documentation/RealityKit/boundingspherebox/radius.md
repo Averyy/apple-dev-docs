@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding sphere radius.
 

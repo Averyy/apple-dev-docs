@@ -1,11 +1,12 @@
 # Comparable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func < (ARConfidenceLevel, ARConfidenceLevel) -> Bool](arconfidencelevel/_(_:_:).md)
+- [static func < (ARConfidenceLevel, ARConfidenceLevel) -> Bool](./op%28_,_%29.md)
   Returns whether one confidence level is less than another.
 
 

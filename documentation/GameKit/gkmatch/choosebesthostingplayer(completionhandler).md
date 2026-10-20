@@ -1,7 +1,8 @@
 # chooseBestHostingPlayer(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines the best player in the game to act as the server for a client-server topology.
 
@@ -16,12 +17,20 @@ Determines the best player in the game to act as the server for a client-server 
 ## Declaration
 
 ```swift
+func chooseBestHostingPlayer(completionHandler: @escaping @Sendable (GKPlayer?) -> Void)
+```
+
+```swift
 func chooseBestHostingPlayer() async -> GKPlayer?
+```
+
+```objc
+- (void) chooseBestHostingPlayerWithCompletionHandler:(void (^)(GKPlayer *player)) completionHandler;
 ```
 
 ## Mentions
 
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
 #### Discussion
 
@@ -29,15 +38,20 @@ This method estimates which player has the best network connection using a varie
 
 ## Parameters
 
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - **`player`**: The player with the best estimated network performance, or `nil` if GameKit couldn’t determine the best host.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameter:
+
+  - **`player`**: The player with the best estimated network performance, or `nil` if GameKit couldn’t determine the best host.
 
 ## See Also
 
-- [func send(Data, to: [GKPlayer], dataMode: GKMatch.SendDataMode) throws](gkmatch/send(_:to:datamode:).md)
+### Sending data to other players
+- [func send(Data, to: [GKPlayer], dataMode: GKMatch.SendDataMode) throws](./send%28_,to,datamode%29.md)
   Transmits data to one or more players connected to the match.
-- [func sendData(toAllPlayers: Data, with: GKMatch.SendDataMode) throws](gkmatch/senddata(toallplayers:with:).md)
+- [func sendData(toAllPlayers: Data, with: GKMatch.SendDataMode) throws](./senddata%28toallplayers,with%29.md)
   Transmits data to all players connected to the match.
-- [GKMatch.SendDataMode](gkmatch/senddatamode.md)
+- [GKMatch.SendDataMode](./senddatamode.md)
   The mechanism used to transmit data to other players.
 
 

@@ -1,7 +1,8 @@
 # pitchMultiplier
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The baseline pitch the speech synthesizer uses when speaking the utterance.
 
@@ -10,7 +11,7 @@ The baseline pitch the speech synthesizer uses when speaking the utterance.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The baseline pitch the speech synthesizer uses when speaking the utterance.
 var pitchMultiplier: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float pitchMultiplier;
+```
+
 #### Discussion
 
 Before enqueing the utterance, set this property to a value within the range of `0.5` for lower pitch to `2.0` for higher pitch. The default value is `1.0`. Setting this after enqueing the utterance has no effect.
 
 ## See Also
 
-- [var voice: AVSpeechSynthesisVoice?](avspeechutterance/voice.md)
+### Configuring an utterance
+- [var voice: AVSpeechSynthesisVoice?](./voice.md)
   The voice the speech synthesizer uses when speaking the utterance.
-- [var volume: Float](avspeechutterance/volume.md)
+- [var volume: Float](./volume.md)
   The volume the speech synthesizer uses when speaking the utterance.
-- [var prefersAssistiveTechnologySettings: Bool](avspeechutterance/prefersassistivetechnologysettings.md)
+- [var prefersAssistiveTechnologySettings: Bool](./prefersassistivetechnologysettings.md)
   A Boolean that specifies whether assistive technology settings take precedence over the property values of this utterance.
 
 

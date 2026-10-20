@@ -1,7 +1,8 @@
 # upperAtmosphereScattering
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor that influences the color of the simulated sky.
 
@@ -19,21 +20,26 @@ A factor that influences the color of the simulated sky.
 var upperAtmosphereScattering: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float upperAtmosphereScattering;
+```
+
 #### Discussion
 
 This value affects the intensity of sunlight and the color of the sky. A value of `0.0` produces muted, dusky colors, and a value of 1.0 produces saturated, noon-like sky colors.
 
 ## See Also
 
-- [var turbidity: Float](mdlskycubetexture/turbidity.md)
+### Working with Sky Simulation Parameters
+- [var turbidity: Float](./turbidity.md)
   The cloudiness or haziness of the simulated sky.
-- [var sunElevation: Float](mdlskycubetexture/sunelevation.md)
+- [var sunElevation: Float](./sunelevation.md)
   The sun’s position in the simulated sky.
-- [var groundAlbedo: Float](mdlskycubetexture/groundalbedo.md)
+- [var groundAlbedo: Float](./groundalbedo.md)
   A factor that influences the clarity of the simulated sky.
-- [var groundColor: CGColor?](mdlskycubetexture/groundcolor.md)
+- [var groundColor: CGColor?](./groundcolor.md)
   The color of the simulated ground.
-- [var horizonElevation: Float](mdlskycubetexture/horizonelevation.md)
+- [var horizonElevation: Float](./horizonelevation.md)
   The angle, in radians relative to center, below which to render the ground color.
 
 

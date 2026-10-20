@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A set of contexts in which you can use this tensor.
@@ -18,6 +19,10 @@ A set of contexts in which you can use this tensor.
 
 ```swift
 var usage: MTLTensorUsage { get }
+```
+
+```objc
+@property (readonly) MTLTensorUsage usage;
 ```
 
 

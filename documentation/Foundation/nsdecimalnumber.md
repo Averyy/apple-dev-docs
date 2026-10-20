@@ -1,7 +1,8 @@
 # NSDecimalNumber
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for representing and performing arithmetic on base-10 numbers.
 
@@ -20,113 +21,117 @@ An object for representing and performing arithmetic on base-10 numbers.
 class NSDecimalNumber
 ```
 
+```objc
+@interface NSDecimalNumber : NSNumber
+```
+
 #### Overview
 
-In Swift, this object bridges to [`Decimal`](decimal.md); use [`NSDecimalNumber`](nsdecimalnumber.md) when you need reference semantics or other Foundation-specific behavior.
+In Swift, this object bridges to [`Decimal`](./decimal.md); use [`NSDecimalNumber`](./nsdecimalnumber.md) when you need reference semantics or other Foundation-specific behavior.
 
 `NSDecimalNumber`, an immutable subclass of `NSNumber`, provides an object-oriented wrapper for doing base-10 arithmetic. An instance can represent any number that can be expressed as `mantissa x 10^exponent` where mantissa is a decimal integer up to 38 digits long, and exponent is an integer from –128 through 127.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Decimal`](decimal.md) structure, which bridges to the [`NSDecimalNumber`](nsdecimalnumber.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Decimal`](./decimal.md) structure, which bridges to the [`NSDecimalNumber`](./nsdecimalnumber.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
 ## Topics
 
 ### Creating a Decimal Number
-- [class var one: NSDecimalNumber](nsdecimalnumber/one.md)
+- [class var one: NSDecimalNumber](./nsdecimalnumber/one.md)
   A decimal number equivalent to the number 1.0.
-- [class var zero: NSDecimalNumber](nsdecimalnumber/zero.md)
+- [class var zero: NSDecimalNumber](./nsdecimalnumber/zero.md)
   A decimal number equivalent to the number 0.0.
-- [class var notANumber: NSDecimalNumber](nsdecimalnumber/notanumber.md)
+- [class var notANumber: NSDecimalNumber](./nsdecimalnumber/notanumber.md)
   A decimal number that specifies no number.
 ### Initializing a Decimal Number
-- [init(decimal: Decimal)](nsdecimalnumber/init(decimal:).md)
+- [init(decimal: Decimal)](./nsdecimalnumber/init%28decimal%29.md)
   Initializes a decimal number to represent a given decimal.
-- [convenience init(mantissa: UInt64, exponent: Int16, isNegative: Bool)](nsdecimalnumber/init(mantissa:exponent:isnegative:).md)
+- [convenience init(mantissa: UInt64, exponent: Int16, isNegative: Bool)](./nsdecimalnumber/init%28mantissa,exponent,isnegative%29.md)
   Initializes a decimal number using the given mantissa, exponent, and sign.
-- [convenience init(string: String?)](nsdecimalnumber/init(string:).md)
+- [convenience init(string: String?)](./nsdecimalnumber/init%28string%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string.
-- [convenience init(string: String?, locale: Any?)](nsdecimalnumber/init(string:locale:).md)
+- [convenience init(string: String?, locale: Any?)](./nsdecimalnumber/init%28string,locale%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string, interpreted using a given locale.
 ### Performing Arithmetic
-- [func adding(NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/adding(_:).md)
+- [func adding(NSDecimalNumber) -> NSDecimalNumber](./nsdecimalnumber/adding%28_%29.md)
   Adds this number to another given number.
-- [func subtracting(NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/subtracting(_:).md)
+- [func subtracting(NSDecimalNumber) -> NSDecimalNumber](./nsdecimalnumber/subtracting%28_%29.md)
   Subtracts another given number from this one.
-- [func multiplying(by: NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/multiplying(by:).md)
+- [func multiplying(by: NSDecimalNumber) -> NSDecimalNumber](./nsdecimalnumber/multiplying%28by%29.md)
   Multiplies the number by another given number.
-- [func dividing(by: NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/dividing(by:).md)
+- [func dividing(by: NSDecimalNumber) -> NSDecimalNumber](./nsdecimalnumber/dividing%28by%29.md)
   Divides the number by another given number.
-- [func raising(toPower: Int) -> NSDecimalNumber](nsdecimalnumber/raising(topower:).md)
+- [func raising(toPower: Int) -> NSDecimalNumber](./nsdecimalnumber/raising%28topower%29.md)
   Raises the number to a given power.
-- [func multiplying(byPowerOf10: Int16) -> NSDecimalNumber](nsdecimalnumber/multiplying(bypowerof10:).md)
+- [func multiplying(byPowerOf10: Int16) -> NSDecimalNumber](./nsdecimalnumber/multiplying%28bypowerof10%29.md)
   Multiplies the number by 10 raised to the given power.
-- [func adding(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/adding(_:withbehavior:).md)
+- [func adding(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/adding%28_,withbehavior%29.md)
   Adds this number to another given number using the specified behavior.
-- [func subtracting(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/subtracting(_:withbehavior:).md)
+- [func subtracting(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/subtracting%28_,withbehavior%29.md)
   Subtracts this a given number from this one using the specified behavior.
-- [func multiplying(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/multiplying(by:withbehavior:).md)
+- [func multiplying(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/multiplying%28by,withbehavior%29.md)
   Multiplies this number by another given number using the specified behavior.
-- [func dividing(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/dividing(by:withbehavior:).md)
+- [func dividing(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/dividing%28by,withbehavior%29.md)
   Divides this number by another given number using the specified behavior.
-- [func raising(toPower: Int, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/raising(topower:withbehavior:).md)
+- [func raising(toPower: Int, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/raising%28topower,withbehavior%29.md)
   Raises the number to a given power using the specified behavior.
-- [func multiplying(byPowerOf10: Int16, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/multiplying(bypowerof10:withbehavior:).md)
+- [func multiplying(byPowerOf10: Int16, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/multiplying%28bypowerof10,withbehavior%29.md)
   Multiplies the number by 10 raised to the given power using the specified behavior.
 ### Rounding Off
-- [func rounding(accordingToBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/rounding(accordingtobehavior:).md)
+- [func rounding(accordingToBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./nsdecimalnumber/rounding%28accordingtobehavior%29.md)
   Returns a rounded version of the decimal number using the specified rounding behavior.
 ### Managing Behavior
-- [class var defaultBehavior: any NSDecimalNumberBehaviors](nsdecimalnumber/defaultbehavior.md)
+- [class var defaultBehavior: any NSDecimalNumberBehaviors](./nsdecimalnumber/defaultbehavior.md)
   The way arithmetic methods round off and handle error conditions.
-- [protocol NSDecimalNumberBehaviors](nsdecimalnumberbehaviors.md)
+- [protocol NSDecimalNumberBehaviors](./nsdecimalnumberbehaviors.md)
   A protocol that declares three methods that control the discretionary aspects of working with decimal numbers.
-- [class NSDecimalNumberHandler](nsdecimalnumberhandler.md)
+- [class NSDecimalNumberHandler](./nsdecimalnumberhandler.md)
   A class that adopts the decimal number behaviors protocol.
 ### Accessing the Value
-- [var decimalValue: Decimal](nsdecimalnumber/decimalvalue.md)
-  The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
-- [var doubleValue: Double](nsdecimalnumber/doublevalue.md)
+- [var decimalValue: Decimal](./nsdecimalnumber/decimalvalue.md)
+  The decimal number’s value, expressed as an [`Decimal`](./decimal.md) structure.
+- [var doubleValue: Double](./nsdecimalnumber/doublevalue.md)
   The decimal number’s closest approximate `double` value.
-- [func description(withLocale: Any?) -> String](nsdecimalnumber/description(withlocale:).md)
+- [func description(withLocale: Any?) -> String](./nsdecimalnumber/description%28withlocale%29.md)
   Returns a string representation of the decimal number appropriate for the specified locale.
-- [var objCType: UnsafePointer<CChar>](nsdecimalnumber/objctype.md)
+- [var objCType: UnsafePointer<CChar>](./nsdecimalnumber/objctype.md)
   A C string containing the Objective-C type for the data contained in the decimal number object.
 ### Comparing Decimal Numbers
-- [func compare(NSNumber) -> ComparisonResult](nsdecimalnumber/compare(_:).md)
+- [func compare(NSNumber) -> ComparisonResult](./nsdecimalnumber/compare%28_%29.md)
   Compares this decimal number and another.
 ### Getting Maximum and Minimum Possible Values
-- [class var maximum: NSDecimalNumber](nsdecimalnumber/maximum.md)
+- [class var maximum: NSDecimalNumber](./nsdecimalnumber/maximum.md)
   Returns the largest possible value of a decimal number.
-- [class var minimum: NSDecimalNumber](nsdecimalnumber/minimum.md)
+- [class var minimum: NSDecimalNumber](./nsdecimalnumber/minimum.md)
   Returns the smallest possible value of a decimal number.
 ### Recognizing Exceptions
-- [static let decimalNumberExactnessException: NSExceptionName](nsexceptionname/decimalnumberexactnessexception.md)
+- [static let decimalNumberExactnessException: NSExceptionName](./nsexceptionname/decimalnumberexactnessexception.md)
   The exception raised if there is an exactness error.
-- [static let decimalNumberOverflowException: NSExceptionName](nsexceptionname/decimalnumberoverflowexception.md)
+- [static let decimalNumberOverflowException: NSExceptionName](./nsexceptionname/decimalnumberoverflowexception.md)
   The exception raised on overflow.
-- [static let decimalNumberUnderflowException: NSExceptionName](nsexceptionname/decimalnumberunderflowexception.md)
+- [static let decimalNumberUnderflowException: NSExceptionName](./nsexceptionname/decimalnumberunderflowexception.md)
   The exception raised on underflow.
-- [static let decimalNumberDivideByZeroException: NSExceptionName](nsexceptionname/decimalnumberdividebyzeroexception.md)
+- [static let decimalNumberDivideByZeroException: NSExceptionName](./nsexceptionname/decimalnumberdividebyzeroexception.md)
   The exception raised on divide by zero.
 
 ## Relationships
 
 ### Inherits From
-- [NSNumber](nsnumber.md)
+- [NSNumber](./nsnumber.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByBooleanLiteral](../swift/expressiblebybooleanliteral.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByBooleanLiteral](../Swift/expressiblebybooleanliteral.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

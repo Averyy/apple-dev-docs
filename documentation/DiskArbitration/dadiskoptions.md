@@ -1,7 +1,8 @@
 # DADiskOptions
 
 **Framework**: Disk Arbitration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options for DADiskGetOptions() and DADiskSetOptions().
 
@@ -15,27 +16,32 @@ Options for DADiskGetOptions() and DADiskSetOptions().
 typealias DADiskOptions = UInt32
 ```
 
+```c
+typedef UInt32 DADiskOptions;
+```
+
 ## Topics
 
 ### Constants
-- [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
-- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
-- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
-- [kDADiskOptionPrivate](kdadiskoptionprivate.md)
+- [kDADiskOptionEjectUponLogout](./kdadiskoptionejectuponlogout.md)
+- [kDADiskOptionMountAutomatic](./kdadiskoptionmountautomatic.md)
+- [kDADiskOptionMountAutomaticNoDefer](./kdadiskoptionmountautomaticnodefer.md)
+- [kDADiskOptionPrivate](./kdadiskoptionprivate.md)
 
 ## See Also
 
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+### Data Types
+- [typealias DADiskClaimOptions](./dadiskclaimoptions.md)
   Options for DADiskClaim().
-- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+- [typealias DADiskEjectOptions](./dadiskejectoptions.md)
   Options for DADiskEject().
-- [typealias DADiskMountOptions](dadiskmountoptions.md)
+- [typealias DADiskMountOptions](./dadiskmountoptions.md)
   Options for DADiskMount().
-- [typealias DADiskRenameOptions](dadiskrenameoptions.md)
+- [typealias DADiskRenameOptions](./dadiskrenameoptions.md)
   Options for DADiskRename().
-- [typealias DADiskUnmountOptions](dadiskunmountoptions.md)
+- [typealias DADiskUnmountOptions](./dadiskunmountoptions.md)
   Options for DADiskUnmount().
-- [typealias DAReturn](dareturn.md)
+- [typealias DAReturn](./dareturn.md)
   A return code.
 
 

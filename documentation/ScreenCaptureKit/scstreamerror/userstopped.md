@@ -1,7 +1,8 @@
 # userStopped
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error message that indicates the user stopped the stream.
 

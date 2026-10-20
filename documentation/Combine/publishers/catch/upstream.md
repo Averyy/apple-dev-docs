@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives its elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let handler: (Upstream.Failure) -> NewPublisher](publishers/catch/handler.md)
+### Inspecting publisher properties
+- [let handler: (Upstream.Failure) -> NewPublisher](./handler.md)
   A closure that accepts the upstream failure as input and returns a publisher to replace the upstream publisher.
 
 

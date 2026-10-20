@@ -1,7 +1,8 @@
 # exr
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An EXR image.
 

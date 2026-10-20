@@ -1,7 +1,8 @@
 # activityUpdates
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An asynchronous sequence you use to observe changes to ongoing Live Activities and to asynchronously access a Live Activity when you start it.
 
@@ -17,13 +18,14 @@ static var activityUpdates: Activity<Attributes>.ActivityUpdates { get }
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 ## See Also
 
-- [static var activities: [Activity<Attributes>]](activity/activities.md)
+### Accessing Live Activities
+- [static var activities: [Activity<Attributes>]](./activities.md)
   An array of your app’s current Live Activities.
-- [Activity.ActivityUpdates](activity/activityupdates-swift.struct.md)
+- [Activity.ActivityUpdates](./activityupdates-swift.struct.md)
   A structure that offers functionality to observe changes to a Live Activity.
 
 

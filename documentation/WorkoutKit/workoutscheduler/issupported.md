@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the current device supports scheduled workouts.
 
@@ -20,13 +21,14 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [static let shared: WorkoutScheduler](workoutscheduler/shared.md)
+### Accessing the scheduler
+- [static let shared: WorkoutScheduler](./shared.md)
   A shared instance of the workout scheduler.
-- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](workoutscheduler/requestauthorization.md)
+- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](./requestauthorization%28%29.md)
   Requests authorization to schedule workouts.
-- [var authorizationState: WorkoutScheduler.AuthorizationState](workoutscheduler/authorizationstate-swift.property.md)
+- [var authorizationState: WorkoutScheduler.AuthorizationState](./authorizationstate-swift.property.md)
   The workout scheduler’s authorization status.
-- [WorkoutScheduler.AuthorizationState](workoutscheduler/authorizationstate-swift.enum.md)
+- [WorkoutScheduler.AuthorizationState](./authorizationstate-swift.enum.md)
   The workout scheduler’s authorization status.
 
 

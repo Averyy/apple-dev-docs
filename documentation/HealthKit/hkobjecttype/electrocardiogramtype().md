@@ -1,7 +1,8 @@
 # electrocardiogramType()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared electrocardiogram type.
 
@@ -19,15 +20,19 @@ Returns the shared electrocardiogram type.
 class func electrocardiogramType() -> HKElectrocardiogramType
 ```
 
+```objc
++ (HKElectrocardiogramType *) electrocardiogramType;
+```
+
 #### Return Value
 
-The shared [`HKElectrocardiogramType`](hkelectrocardiogramtype.md) instance.
+The shared [`HKElectrocardiogramType`](../hkelectrocardiogramtype.md) instance.
 
 #### Discussion
 
-This method returns an instance of the [`HKElectrocardiogramType`](hkelectrocardiogramtype.md) concrete subclass. Use this type to request permission to read [`HKElectrocardiogram`](hkelectrocardiogram.md) objects from the HealthKit store.
+This method returns an instance of the [`HKElectrocardiogramType`](../hkelectrocardiogramtype.md) concrete subclass. Use this type to request permission to read [`HKElectrocardiogram`](../hkelectrocardiogram.md) objects from the HealthKit store.
 
-> **Note**:  You can’t request permission to share [`HKActivitySummary`](hkactivitysummary.md) objects.
+> **Note**:  You can’t request permission to share [`HKActivitySummary`](../hkactivitysummary.md) objects.
 
 
 ---

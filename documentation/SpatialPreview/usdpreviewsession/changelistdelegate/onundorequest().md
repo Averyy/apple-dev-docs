@@ -2,13 +2,14 @@
 
 **Framework**: Spatial Preview  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 An undo has been requested in the session
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ func onUndoRequest()
 
 ## See Also
 
-- [func onRedoRequest()](usdpreviewsession/changelistdelegate/onredorequest.md)
+### Handling undo and redo
+- [func onRedoRequest()](./onredorequest%28%29.md)
   An redo has been requested in the session
 
 

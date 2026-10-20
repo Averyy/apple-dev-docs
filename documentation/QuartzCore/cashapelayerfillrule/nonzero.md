@@ -1,7 +1,8 @@
 # nonZero
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the non-zero winding rule. Count each left-to-right path as +1 and each right-to-left path as -1. If the sum of all crossings is 0, the point is outside the path. If the sum is nonzero, the point is inside the path and the region containing it is filled.
 
@@ -19,9 +20,14 @@ Specifies the non-zero winding rule. Count each left-to-right path as +1 and eac
 static let nonZero: CAShapeLayerFillRule
 ```
 
+```c
+extern CAShapeLayerFillRule const kCAFillRuleNonZero;
+```
+
 ## See Also
 
-- [static let evenOdd: CAShapeLayerFillRule](cashapelayerfillrule/evenodd.md)
+### Constants
+- [static let evenOdd: CAShapeLayerFillRule](./evenodd.md)
   Specifies the even-odd winding rule. Count the total number of path crossings. If the number of crossings is even, the point is outside the path. If the number of crossings is odd, the point is inside the path and the region containing it should be filled.
 
 

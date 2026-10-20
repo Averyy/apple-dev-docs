@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.naturalLanguage(argumentName:criteria:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated natural language argument matcher.
 

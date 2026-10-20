@@ -253,7 +253,7 @@ If the enumeration case you're trying to match has any associated values,
 the corresponding enumeration case pattern must specify a tuple pattern that contains
 one element for each associated value. For an example that uses a `switch` statement
 to match enumeration cases containing associated values,
-see [Associated Values](Enumerations.md#Associated-Values).
+see [Associated Values](../LanguageGuide/Enumerations.md#Associated-Values).
 
 An enumeration case pattern also matches
 values of that case wrapped in an optional.
@@ -400,7 +400,7 @@ of the `as` pattern.
 
 For an example that uses a `switch` statement
 to match values with `is` and `as` patterns,
-see [Type Casting for Any and AnyObject](TypeCasting.md#Type-Casting-for-Any-and-AnyObject).
+see [Type Casting for Any and AnyObject](../LanguageGuide/TypeCasting.md#Type-Casting-for-Any-and-AnyObject).
 
 > Grammar of a type casting pattern:
 >

@@ -1,7 +1,8 @@
 # aeBuildSyntaxBadDesc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An illegal descriptor was specified.
 

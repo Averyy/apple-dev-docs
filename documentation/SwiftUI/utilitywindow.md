@@ -1,7 +1,8 @@
 # UtilityWindow
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A specialized window scene that provides secondary utility to the content of the main scenes of an application.
 
@@ -51,28 +52,29 @@ struct PhotoInfoViewer: View {
 }
 ```
 
-`UtilityWindow` will automatically add a menu item to show/hide itself in the “View” menu. This can be removed by applying [`commandsRemoved()`](scene/commandsremoved().md) to the utility window, and manually placing a [`WindowVisibilityToggle`](windowvisibilitytoggle.md) elsewhere in an app’s commands. Utility windows can also be programmatically presented with [`openWindow`](environmentvalues/openwindow.md) and dismissed using [`dismiss`](environmentvalues/dismiss.md).
+`UtilityWindow` will automatically add a menu item to show/hide itself in the “View” menu. This can be removed by applying [`commandsRemoved()`](./scene/commandsremoved%28%29.md) to the utility window, and manually placing a [`WindowVisibilityToggle`](./windowvisibilitytoggle.md) elsewhere in an app’s commands. Utility windows can also be programmatically presented with [`openWindow`](./environmentvalues/openwindow.md) and dismissed using [`dismiss`](./environmentvalues/dismiss.md).
 
 ## Topics
 
 ### Initializers
-- [init(_:id:content:)](utilitywindow/init(_:id:content:).md)
+- [init(_:id:content:)](./utilitywindow/init%28_,id,content%29.md)
   Creates a utility window with a localized title and identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [struct WindowGroup](windowgroup.md)
+### Creating windows
+- [struct WindowGroup](./windowgroup.md)
   A scene that presents a group of identically structured windows.
-- [struct Window](window.md)
+- [struct Window](./window.md)
   A scene that presents its content in a single, unique window.
-- [protocol WindowStyle](windowstyle.md)
+- [protocol WindowStyle](./windowstyle.md)
   A specification for the appearance and interaction of a window.
-- [func windowStyle<S>(S) -> some Scene](scene/windowstyle(_:).md)
+- [func windowStyle<S>(S) -> some Scene](./scene/windowstyle%28_%29.md)
   Sets the style for windows created by this scene.
 
 

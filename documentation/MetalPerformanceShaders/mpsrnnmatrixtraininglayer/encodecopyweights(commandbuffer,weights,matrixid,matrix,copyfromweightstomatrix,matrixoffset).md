@@ -1,7 +1,8 @@
 # encodeCopyWeights(commandBuffer:weights:matrixId:matrix:copyFromWeightsToMatrix:matrixOffset:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeCopyWeights(commandBuffer: any MTLCommandBuffer, weights: [MPSMatrix], matrixId: MPSRNNMatrixId, matrix: MPSMatrix, copyFromWeightsToMatrix: Bool, matrixOffset: MTLOrigin)
+```
+
+```objc
+- (void) encodeCopyWeightsToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer weights:(NSArray<MPSMatrix *> *) weights matrixId:(MPSRNNMatrixId) matrixId matrix:(MPSMatrix *) matrix copyFromWeightsToMatrix:(BOOL) copyFromWeightsToMatrix matrixOffset:(MTLOrigin) matrixOffset;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -20,7 +21,8 @@ init?(_ text: Substring)
 
 ## See Also
 
-- [init?<S>(S)](double/init(_:)-5wmm8.md)
+### Converting Strings
+- [init?<S>(S)](./init%28_%29-5wmm8.md)
   Creates a new instance from the given string.
 
 

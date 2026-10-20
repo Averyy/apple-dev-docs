@@ -1,7 +1,8 @@
 # cmWriteSpool
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Directs the function to write the number of bytes specified by the `CMFlattenProcPtr` function’s `size` parameter. 
 

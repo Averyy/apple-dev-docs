@@ -1,7 +1,8 @@
 # kAEKeyDescArray
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Array items consist of keyword-specified descriptors with different keywords, different descriptor types, and data of variable size.
 

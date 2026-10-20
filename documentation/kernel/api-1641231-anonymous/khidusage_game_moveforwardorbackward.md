@@ -1,14 +1,15 @@
 # kHIDUsage_Game_MoveForwardOrBackward
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Game_MoveForwardOrBackward = 0x25
 ```
 

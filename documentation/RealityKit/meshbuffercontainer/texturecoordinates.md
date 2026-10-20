@@ -1,7 +1,8 @@
 # textureCoordinates
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Buffer of texture coordinates, if any.
 
@@ -11,7 +12,7 @@ Buffer of texture coordinates, if any.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

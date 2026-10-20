@@ -1,7 +1,8 @@
 # ASImportableCredential.CreditCard
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type to represent credit card information.
 
@@ -25,37 +26,38 @@ This type is a representation of `CreditCard` as defined in the Credential Excha
 ## Topics
 
 ### Accessing credit card properties
-- [var number: ASImportableEditableField?](asimportablecredential/creditcard/number.md)
+- [var number: ASImportableEditableField?](./creditcard/number.md)
   The card number.
-- [var fullName: ASImportableEditableField?](asimportablecredential/creditcard/fullname.md)
+- [var fullName: ASImportableEditableField?](./creditcard/fullname.md)
   The full name of the card owner.
-- [var cardType: ASImportableEditableField?](asimportablecredential/creditcard/cardtype.md)
+- [var cardType: ASImportableEditableField?](./creditcard/cardtype.md)
   The card type, if any.
-- [var verificationNumber: ASImportableEditableField?](asimportablecredential/creditcard/verificationnumber.md)
+- [var verificationNumber: ASImportableEditableField?](./creditcard/verificationnumber.md)
   The verification number, such as the CVC code.
-- [var expiryDate: ASImportableEditableField?](asimportablecredential/creditcard/expirydate.md)
+- [var expiryDate: ASImportableEditableField?](./creditcard/expirydate.md)
   The expiration date, if any, in MM/DD format.
-- [var validFrom: ASImportableEditableField?](asimportablecredential/creditcard/validfrom.md)
+- [var validFrom: ASImportableEditableField?](./creditcard/validfrom.md)
   The date from which the card is valid, if any.
 ### Initializers
-- [init(number: ASImportableEditableField?, fullName: ASImportableEditableField?, cardType: ASImportableEditableField?, verificationNumber: ASImportableEditableField?, pin: ASImportableEditableField?, expiryDate: ASImportableEditableField?, validFrom: ASImportableEditableField?)](asimportablecredential/creditcard/init(number:fullname:cardtype:verificationnumber:pin:expirydate:validfrom:).md)
+- [init(number: ASImportableEditableField?, fullName: ASImportableEditableField?, cardType: ASImportableEditableField?, verificationNumber: ASImportableEditableField?, pin: ASImportableEditableField?, expiryDate: ASImportableEditableField?, validFrom: ASImportableEditableField?)](./creditcard/init%28number,fullname,cardtype,verificationnumber,pin,expirydate,validfrom%29.md)
 ### Instance Properties
-- [var pin: ASImportableEditableField?](asimportablecredential/creditcard/pin.md)
+- [var pin: ASImportableEditableField?](./creditcard/pin.md)
   Optional: The PIN number.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case creditCard(ASImportableCredential.CreditCard)](asimportablecredential/creditcard(_:).md)
+### Identity credential types
+- [case creditCard(ASImportableCredential.CreditCard)](./creditcard%28_%29.md)
   A credit card credential.
 
 

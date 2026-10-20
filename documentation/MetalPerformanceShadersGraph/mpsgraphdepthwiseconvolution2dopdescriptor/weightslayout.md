@@ -1,7 +1,8 @@
 # weightsLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data layout of the weights.
 
@@ -19,9 +20,13 @@ The data layout of the weights.
 var weightsLayout: MPSGraphTensorNamedDataLayout { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout weightsLayout;
+```
+
 #### Discussion
 
-NOTE: ‘O’ index is channel multiplier index. See: [`MPSGraphTensorNamedDataLayout`](mpsgraphtensornameddatalayout.md).
+NOTE: ‘O’ index is channel multiplier index. See: [`MPSGraphTensorNamedDataLayout`](../mpsgraphtensornameddatalayout.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # TemporalAdaptor.OutputSequence
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The output sequence type.
 
@@ -22,9 +23,10 @@ typealias OutputSequence = AnyTemporalSequence<TemporalAdaptor<Base>.Output>
 
 ## See Also
 
-- [TemporalAdaptor.Input](temporaladaptor/input.md)
+### Supporting types
+- [TemporalAdaptor.Input](./input.md)
   The input type.
-- [TemporalAdaptor.Output](temporaladaptor/output.md)
+- [TemporalAdaptor.Output](./output.md)
   The output type.
 
 

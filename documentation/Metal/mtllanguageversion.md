@@ -1,7 +1,8 @@
 # MTLLanguageVersion
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Metal shading language versions.
 
@@ -19,61 +20,66 @@ Metal shading language versions.
 enum MTLLanguageVersion
 ```
 
+```c
+enum MTLLanguageVersion : NSUInteger;
+```
+
 ## Topics
 
 ### Version numbers
-- [MTLLanguageVersion.version1_1](mtllanguageversion/version1_1.md)
+- [MTLLanguageVersion.version1_1](./mtllanguageversion/version1_1.md)
   Version 1.1 of the Metal shading language.
-- [MTLLanguageVersion.version1_2](mtllanguageversion/version1_2.md)
+- [MTLLanguageVersion.version1_2](./mtllanguageversion/version1_2.md)
   Version 1.2 of the Metal shading language.
-- [MTLLanguageVersion.version2_0](mtllanguageversion/version2_0.md)
+- [MTLLanguageVersion.version2_0](./mtllanguageversion/version2_0.md)
   Version 2.0 of the Metal shading language.
-- [MTLLanguageVersion.version2_1](mtllanguageversion/version2_1.md)
+- [MTLLanguageVersion.version2_1](./mtllanguageversion/version2_1.md)
   Version 2.1 of the Metal shading language.
-- [MTLLanguageVersion.version2_2](mtllanguageversion/version2_2.md)
+- [MTLLanguageVersion.version2_2](./mtllanguageversion/version2_2.md)
   Version 2.2 of the Metal shading language.
-- [MTLLanguageVersion.version2_3](mtllanguageversion/version2_3.md)
+- [MTLLanguageVersion.version2_3](./mtllanguageversion/version2_3.md)
   Version 2.3 of the Metal shading language.
-- [MTLLanguageVersion.version2_4](mtllanguageversion/version2_4.md)
+- [MTLLanguageVersion.version2_4](./mtllanguageversion/version2_4.md)
   Version 2.4 of the Metal shading language.
-- [MTLLanguageVersion.version3_0](mtllanguageversion/version3_0.md)
+- [MTLLanguageVersion.version3_0](./mtllanguageversion/version3_0.md)
   Version 3.0 of the Metal shading language.
-- [MTLLanguageVersion.version3_1](mtllanguageversion/version3_1.md)
+- [MTLLanguageVersion.version3_1](./mtllanguageversion/version3_1.md)
   Version 3.1 of the Metal shading language.
-- [MTLLanguageVersion.version3_2](mtllanguageversion/version3_2.md)
+- [MTLLanguageVersion.version3_2](./mtllanguageversion/version3_2.md)
   Version 3.2 of the Metal shading language.
-- [MTLLanguageVersion.version1_0](mtllanguageversion/version1_0.md)
+- [MTLLanguageVersion.version1_0](./mtllanguageversion/version1_0.md)
   Version 1.0 of the Metal shading language.
 ### Enumeration Cases
-- [MTLLanguageVersion.version4_0](mtllanguageversion/version4_0.md)
-- [MTLLanguageVersion.version4_1](mtllanguageversion/version4_1.md)
+- [MTLLanguageVersion.version4_0](./mtllanguageversion/version4_0.md)
+- [MTLLanguageVersion.version4_1](./mtllanguageversion/version4_1.md)
 ### Initializers
-- [init?(rawValue: UInt)](mtllanguageversion/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtllanguageversion/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLLibrary](mtllibrary.md)
+### Shader library management
+- [protocol MTLLibrary](./mtllibrary.md)
   A collection of Metal shader functions.
-- [protocol MTLDynamicLibrary](mtldynamiclibrary.md)
+- [protocol MTLDynamicLibrary](./mtldynamiclibrary.md)
   A dynamically linkable representation of compiled shader code for a specific Metal device object.
-- [protocol MTLBinaryArchive](mtlbinaryarchive.md)
+- [protocol MTLBinaryArchive](./mtlbinaryarchive.md)
   A container for pipeline state descriptors and their associated compiled shader code.
-- [class MTLCompileOptions](mtlcompileoptions.md)
+- [class MTLCompileOptions](./mtlcompileoptions.md)
   Compilation settings for a Metal shader library.
-- [enum MTLLibraryType](mtllibrarytype.md)
+- [enum MTLLibraryType](./mtllibrarytype.md)
   A set of options for Metal library types.
-- [enum MTLCompileSymbolVisibility](mtlcompilesymbolvisibility.md)
-- [enum MTLLibraryOptimizationLevel](mtllibraryoptimizationlevel.md)
+- [enum MTLCompileSymbolVisibility](./mtlcompilesymbolvisibility.md)
+- [enum MTLLibraryOptimizationLevel](./mtllibraryoptimizationlevel.md)
   The optimization options for the Metal compiler.
 
 

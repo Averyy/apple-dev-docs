@@ -1,7 +1,8 @@
 # SecProtocolType.CIFS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates CIFS.
 
@@ -13,6 +14,10 @@ Indicates CIFS.
 
 ```swift
 case CIFS
+```
+
+```c
+kSecProtocolTypeCIFS
 ```
 
 

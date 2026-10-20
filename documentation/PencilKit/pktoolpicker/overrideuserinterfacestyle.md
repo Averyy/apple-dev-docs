@@ -1,7 +1,8 @@
 # overrideUserInterfaceStyle
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific user interface style to apply to the tool picker.
 
@@ -17,19 +18,24 @@ The specific user interface style to apply to the tool picker.
 var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIUserInterfaceStyle overrideUserInterfaceStyle;
+```
+
 #### Discussion
 
-If you set this property, consider if you need to set [`colorUserInterfaceStyle`](pktoolpicker/coloruserinterfacestyle.md) to a select a different user interface style. The default user interface style is [`UIUserInterfaceStyle.unspecified`](https://developer.apple.com/documentation/uikit/uiuserinterfacestyle/unspecified).
+If you set this property, consider if you need to set [`colorUserInterfaceStyle`](./coloruserinterfacestyle.md) to a select a different user interface style. The default user interface style is [`UIUserInterfaceStyle.unspecified`](../../UIKit/uiuserinterfacestyle/unspecified.md).
 
 ## See Also
 
-- [var isRulerActive: Bool](pktoolpicker/isruleractive.md)
+### Customizing picker behavior
+- [var isRulerActive: Bool](./isruleractive.md)
   A Boolean value that indicates whether the ruler is visible on the canvas.
-- [var colorUserInterfaceStyle: UIUserInterfaceStyle](pktoolpicker/coloruserinterfacestyle.md)
+- [var colorUserInterfaceStyle: UIUserInterfaceStyle](./coloruserinterfacestyle.md)
   The user interface style for the tool picker.
-- [var showsDrawingPolicyControls: Bool](pktoolpicker/showsdrawingpolicycontrols.md)
+- [var showsDrawingPolicyControls: Bool](./showsdrawingpolicycontrols.md)
   A Boolean value that indicates whether the default drawing policy UI is visible.
-- [var stateAutosaveName: String?](pktoolpicker/stateautosavename.md)
+- [var stateAutosaveName: String?](./stateautosavename.md)
   The name used to automatically save the tool picker’s state in the defaults system.
 
 

@@ -1,6 +1,7 @@
 # Using Long Short-Term Memory Layers (LSTM)
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Add long short-term memory (LSTM) layers to recurrent neural networks to avoid long-term dependency problems.
 
@@ -15,9 +16,9 @@ An LSTM layer consists of four gates that manipulate cell-state data:
 
 The following figure illustrates the components of an LSTM layer. The inputs are the cell-state (c), the hidden state (h), and the input data (x). The outputs are the updated cell-state (c) and hidden state (h):
 
-![Visualization of an LSTM layer showing the forget gate, input gate, candidate gate, and output gate as boxes that contain a curve that represents the gate’s activation function. The cell state is multiplied by the output of the forget gate, and then added to the product of the outputs of the input gate and candidate gate.](/images/com.apple.accelerate/media-3633106@2x.png)
+![Visualization of an LSTM layer showing the forget gate, input gate, candidate gate, and output gate as boxes that contain a curve that represents the gate’s activation function. The cell state is multiplied by the output of the forget gate, and then added to the product of the outputs of the input gate and candidate gate.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3633106@2x.png)
 
-Note that the default activation function for the forget, input, and output gates is [`sigmoid`](bnnsactivationfunction/sigmoid.md); the default activation function for the candidate gate is [`tanh`](bnnsactivationfunction/tanh.md).
+Note that the default activation function for the forget, input, and output gates is [`sigmoid`](./bnnsactivationfunction/sigmoid.md); the default activation function for the candidate gate is [`tanh`](./bnnsactivationfunction/tanh.md).
 
 BNNS provides direct apply functions for forward and backward LSTM passes, that is, you don’t need to create an explicit LSTM layer. Rather, you create descriptors of the input, output, and gates to create a parameters structure, and pass the parameters structure to the apply function.
 
@@ -101,7 +102,7 @@ var layerParams = BNNSLayerParametersLSTM(input_size:  ... ,
                                           hidden_activation: BNNSActivation(function: .identity))
 ```
 
-LSTM provides the option to define a training cache that stores intermediate results to accelerate backward computation. Use [`BNNSComputeLSTMTrainingCacheCapacity(_:)`](bnnscomputelstmtrainingcachecapacity(_:).md) to compute the size, in bytes, of the training cache:
+LSTM provides the option to define a training cache that stores intermediate results to accelerate backward computation. Use [`BNNSComputeLSTMTrainingCacheCapacity(_:)`](./bnnscomputelstmtrainingcachecapacity%28_%29.md) to compute the size, in bytes, of the training cache:
 
 ```swift
 let trainingCacheBufferBytes = BNNSComputeLSTMTrainingCacheCapacity(&layerParams)
@@ -113,7 +114,7 @@ defer {
 }
 ```
 
-Finally, call [`BNNSDirectApplyLSTMBatchTrainingCaching(_:_:_:_:)`](bnnsdirectapplylstmbatchtrainingcaching(_:_:_:_:).md) to apply the LSTM layer:
+Finally, call [`BNNSDirectApplyLSTMBatchTrainingCaching(_:_:_:_:)`](./bnnsdirectapplylstmbatchtrainingcaching%28_,_,_,_%29.md) to apply the LSTM layer:
 
 ```swift
 BNNSDirectApplyLSTMBatchTrainingCaching(&layerParams,
@@ -124,19 +125,20 @@ BNNSDirectApplyLSTMBatchTrainingCaching(&layerParams,
 
 ## See Also
 
-- [struct BNNSLSTMDataDescriptor](bnnslstmdatadescriptor.md)
+### Recurrent layers
+- [struct BNNSLSTMDataDescriptor](./bnnslstmdatadescriptor.md)
   A structure that contains the input-output, hidden, and cell state n-dimensional array descriptors for a long short-term memory (LSTM) layer.
-- [struct BNNSLSTMGateDescriptor](bnnslstmgatedescriptor.md)
+- [struct BNNSLSTMGateDescriptor](./bnnslstmgatedescriptor.md)
   A structure that describes a long short-term memory (LSTM) gate layer.
-- [struct BNNSLayerFlags](bnnslayerflags.md)
+- [struct BNNSLayerFlags](./bnnslayerflags.md)
   Options that control the behavior of a long short-term memory (LSTM) layer.
-- [struct BNNSLayerParametersLSTM](bnnslayerparameterslstm.md)
+- [struct BNNSLayerParametersLSTM](./bnnslayerparameterslstm.md)
   A structure that contains the parameters of a long short-term memory (LSTM) layer.
-- [func BNNSComputeLSTMTrainingCacheCapacity(UnsafePointer<BNNSLayerParametersLSTM>) -> Int](bnnscomputelstmtrainingcachecapacity(_:).md)
+- [func BNNSComputeLSTMTrainingCacheCapacity(UnsafePointer<BNNSLayerParametersLSTM>) -> Int](./bnnscomputelstmtrainingcachecapacity%28_%29.md)
   Returns the minimum bytes capacity of the training cache buffer a long short-term memory (LSTM) layer uses when it’s applied.
-- [func BNNSDirectApplyLSTMBatchTrainingCaching(UnsafePointer<BNNSLayerParametersLSTM>, UnsafePointer<BNNSFilterParameters>?, UnsafeMutableRawPointer?, Int) -> Int32](bnnsdirectapplylstmbatchtrainingcaching(_:_:_:_:).md)
+- [func BNNSDirectApplyLSTMBatchTrainingCaching(UnsafePointer<BNNSLayerParametersLSTM>, UnsafePointer<BNNSFilterParameters>?, UnsafeMutableRawPointer?, Int) -> Int32](./bnnsdirectapplylstmbatchtrainingcaching%28_,_,_,_%29.md)
   Applies a long short-term memory (LSTM) layer directly to an input.
-- [func BNNSDirectApplyLSTMBatchBackward(UnsafePointer<BNNSLayerParametersLSTM>, UnsafePointer<BNNSLayerParametersLSTM>, UnsafePointer<BNNSFilterParameters>?, UnsafeRawPointer?, Int) -> Int32](bnnsdirectapplylstmbatchbackward(_:_:_:_:_:).md)
+- [func BNNSDirectApplyLSTMBatchBackward(UnsafePointer<BNNSLayerParametersLSTM>, UnsafePointer<BNNSLayerParametersLSTM>, UnsafePointer<BNNSFilterParameters>?, UnsafeRawPointer?, Int) -> Int32](./bnnsdirectapplylstmbatchbackward%28_,_,_,_,_%29.md)
   Applies a long short-term memory (LSTM) filter backward to generate gradients.
 
 

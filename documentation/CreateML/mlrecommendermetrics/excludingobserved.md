@@ -1,7 +1,8 @@
 # excludingObserved
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the recommender omitted training data from the recommendations.
 
@@ -16,9 +17,10 @@ let excludingObserved: Bool
 
 ## See Also
 
-- [var precisionRecall: MLDataTable](mlrecommendermetrics/precisionrecall.md)
+### Assessing the model
+- [var precisionRecall: MLDataTable](./precisionrecall.md)
   A data table with the recall and precision for each item.
-- [var precisionRecallDataFrame: DataFrame](mlrecommendermetrics/precisionrecalldataframe.md)
+- [var precisionRecallDataFrame: DataFrame](./precisionrecalldataframe.md)
   A data table with the recall and precision for each item.
 
 

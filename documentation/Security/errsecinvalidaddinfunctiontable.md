@@ -1,7 +1,8 @@
 # errSecInvalidAddinFunctionTable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid add-in function table was detected.
 
@@ -18,6 +19,10 @@ An invalid add-in function table was detected.
 
 ```swift
 var errSecInvalidAddinFunctionTable: OSStatus { get }
+```
+
+```c
+errSecInvalidAddinFunctionTable
 ```
 
 

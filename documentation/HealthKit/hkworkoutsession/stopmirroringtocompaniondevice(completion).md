@@ -1,7 +1,8 @@
 # stopMirroringToCompanionDevice(completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops mirroring the workout session to the companion iOS device.
 
@@ -11,12 +12,20 @@ Stops mirroring the workout session to the companion iOS device.
 ## Declaration
 
 ```swift
+func stopMirroringToCompanionDevice(completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func stopMirroringToCompanionDevice() async throws
+```
+
+```objc
+- (void) stopMirroringToCompanionDeviceWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
 
-Call this method in your watchOS app to stop the mirrored workout session on the companion iOS app. After the mirroring stops, the system calls the [`workoutSession(_:didDisconnectFromRemoteDeviceWithError:)`](hkworkoutsessiondelegate/workoutsession(_:diddisconnectfromremotedevicewitherror:).md) method on the iOS companion’s session delegate.
+Call this method in your watchOS app to stop the mirrored workout session on the companion iOS app. After the mirroring stops, the system calls the [`workoutSession(_:didDisconnectFromRemoteDeviceWithError:)`](../hkworkoutsessiondelegate/workoutsession%28_,diddisconnectfromremotedevicewitherror%29.md) method on the iOS companion’s session delegate.
 
 ```swift
 session.end()
@@ -41,14 +50,17 @@ do {
 
 ## Parameters
 
-- `completion`: A block that the system calls when the stop request is complete. The system sets the following parameters: - **`success`**: A Boolean value that indicates whether the system successfully stopped mirroring the session.
-- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/swift/false), this contains an object that describes the error. Otherwise, it’s `nil`.
+- `completion`: A block that the system calls when the stop request is complete. The system sets the following parameters:
+
+  - **`success`**: A Boolean value that indicates whether the system successfully stopped mirroring the session.
+  - **`error`**: If `success` is [`false`](../../Swift/false.md), this contains an object that describes the error. Otherwise, it’s `nil`.
 
 ## See Also
 
-- [func startMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/startmirroringtocompaniondevice(completion:).md)
+### Working with remote workout sessions
+- [func startMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](./startmirroringtocompaniondevice%28completion%29.md)
   Starts mirroring the workout session to the companion iOS device.
-- [func sendToRemoteWorkoutSession(data: Data, completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/sendtoremoteworkoutsession(data:completion:).md)
+- [func sendToRemoteWorkoutSession(data: Data, completion: (Bool, (any Error)?) -> Void)](./sendtoremoteworkoutsession%28data,completion%29.md)
   Sends the provided data to the remote workout session.
 
 

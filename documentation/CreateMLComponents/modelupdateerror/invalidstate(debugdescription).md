@@ -1,7 +1,8 @@
 # ModelUpdateError.invalidState(debugDescription:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that a default initialized transformer suitable for fitting cannot perform apply before performing an update.
 

@@ -1,23 +1,30 @@
 # BNNSFilterCreateLayerResize(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new resize layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSFilterCreateLayerResize(_ layer_params: UnsafePointer<BNNSLayerParametersResize>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
+```
+
+```c
+BNNSFilterBNNSFilterCreateLayerResize(const BNNSLayerParametersResize *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -102,11 +109,12 @@ On return, `destinationData` contains the following values:
 
 ## See Also
 
-- [class ResizeLayer](bnns/resizelayer.md)
+### Resize layers
+- [class ResizeLayer](./bnns/resizelayer.md)
   A layer object that wraps a resize filter and manages its deinitialization.
-- [struct BNNSInterpolationMethod](bnnsinterpolationmethod.md)
+- [struct BNNSInterpolationMethod](./bnnsinterpolationmethod.md)
   Constants that describe interpolation methods.
-- [struct BNNSLayerParametersResize](bnnslayerparametersresize.md)
+- [struct BNNSLayerParametersResize](./bnnslayerparametersresize.md)
   A structure that contains the parameters of a resize layer.
 
 

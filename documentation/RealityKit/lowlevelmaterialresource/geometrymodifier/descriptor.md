@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.GeometryModifier.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The name and library for a user-authored Metal geometry modifier function.
 
@@ -20,29 +21,29 @@ struct Descriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:constantvalues:).md)
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](./descriptor/init%28named,in,constantvalues%29.md)
   Creates a descriptor referencing the named function in the given library, with the provided function constant values.
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsSize: Int)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:constantvalues:uniformssize:).md)
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsSize: Int)](./descriptor/init%28named,in,constantvalues,uniformssize%29.md)
   Creates a descriptor for a geometry modifier that accepts a custom uniforms argument buffer.
-- [init<UniformsType>(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsType: UniformsType.Type)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:constantvalues:uniformstype:).md)
+- [init<UniformsType>(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues, uniformsType: UniformsType.Type)](./descriptor/init%28named,in,constantvalues,uniformstype%29.md)
   Creates a descriptor for a geometry modifier that accepts a custom uniforms argument buffer, deriving the buffer size from `uniformsType`.
 ### Inspecting the configuration
-- [var library: any MTLLibrary](lowlevelmaterialresource/geometrymodifier/descriptor/library.md)
+- [var library: any MTLLibrary](./descriptor/library.md)
   The Metal library that contains the function.
-- [var constantValues: MTLFunctionConstantValues](lowlevelmaterialresource/geometrymodifier/descriptor/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues](./descriptor/constantvalues.md)
   The constant values to use when creating the function. These correspond to constants defined in your Metal code.
 ### Initializers
-- [init(named: String, in: any MTLLibrary)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:).md)
+- [init(named: String, in: any MTLLibrary)](./descriptor/init%28named,in%29.md)
   Creates a descriptor referencing the named function in the given library.
 ### Instance Properties
-- [var name: String](lowlevelmaterialresource/geometrymodifier/descriptor/name.md)
+- [var name: String](./descriptor/name.md)
   The name of the Metal function in the library.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

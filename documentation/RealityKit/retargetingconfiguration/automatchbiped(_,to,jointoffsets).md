@@ -1,7 +1,8 @@
 # automatchBiped(_:to:jointOffsets:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a retargeting configuration for bipedal characters using automatic joint matching.
 
@@ -74,9 +75,11 @@ do {
 }
 ```
 
-> **Note**: An error if configuration creation fails. All errors provide descriptive messages via their `localizedDescription` property. Common failures include: - A joint offset was specified for a joint name that doesn’t exist in the target skeleton.
-- The algorithm could not identify required joints in one or both skeletons.
-- Joint identification or rig generation failed.
+> **Throws**: An error if configuration creation fails. All errors provide descriptive messages via their `localizedDescription` property. Common failures include:
+>
+> - A joint offset was specified for a joint name that doesn’t exist in the target skeleton.
+> - The algorithm could not identify required joints in one or both skeletons.
+> - Joint identification or rig generation failed.
 
 ## Parameters
 
@@ -86,9 +89,10 @@ do {
 
 ## See Also
 
-- [static func automatchBiped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](retargetingconfiguration/automatchbiped(_:sourcetransform:to:targettransform:jointoffsets:).md)
+### Creating a configuration
+- [static func automatchBiped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](./automatchbiped%28_,sourcetransform,to,targettransform,jointoffsets%29.md)
   Creates a retargeting configuration for bipedal characters with custom root transforms.
-- [static func automatchQuadruped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](retargetingconfiguration/automatchquadruped(_:sourcetransform:to:targettransform:jointoffsets:).md)
+- [static func automatchQuadruped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](./automatchquadruped%28_,sourcetransform,to,targettransform,jointoffsets%29.md)
   Creates a retargeting configuration for quadrupedal characters using automatic joint matching.
 
 

@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new time range with the time elements of both this time range and the given time range.
 
@@ -30,7 +31,8 @@ A time range with the unique time elements of this time range and the input.
 
 ## See Also
 
-- [func intersection(CMTimeRange) -> CMTimeRange](cmtimerange/intersection(_:).md)
+### Combining Time Ranges
+- [func intersection(CMTimeRange) -> CMTimeRange](./intersection%28_%29.md)
   Returns a new time range with the time elements that are common to both this time range and the given time range.
 
 

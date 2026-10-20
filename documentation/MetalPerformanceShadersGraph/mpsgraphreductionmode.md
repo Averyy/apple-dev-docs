@@ -1,7 +1,8 @@
 # MPSGraphReductionMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reduction mode.
 
@@ -19,33 +20,37 @@ The reduction mode.
 enum MPSGraphReductionMode
 ```
 
+```c
+enum MPSGraphReductionMode : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphReductionMode.argumentMax](mpsgraphreductionmode/argumentmax.md)
+- [MPSGraphReductionMode.argumentMax](./mpsgraphreductionmode/argumentmax.md)
   Argument Max
-- [MPSGraphReductionMode.argumentMin](mpsgraphreductionmode/argumentmin.md)
+- [MPSGraphReductionMode.argumentMin](./mpsgraphreductionmode/argumentmin.md)
   Argument Min
-- [MPSGraphReductionMode.max](mpsgraphreductionmode/max.md)
+- [MPSGraphReductionMode.max](./mpsgraphreductionmode/max.md)
   Max
-- [MPSGraphReductionMode.min](mpsgraphreductionmode/min.md)
+- [MPSGraphReductionMode.min](./mpsgraphreductionmode/min.md)
   Min
-- [MPSGraphReductionMode.product](mpsgraphreductionmode/product.md)
+- [MPSGraphReductionMode.product](./mpsgraphreductionmode/product.md)
   Product
-- [MPSGraphReductionMode.sum](mpsgraphreductionmode/sum.md)
+- [MPSGraphReductionMode.sum](./mpsgraphreductionmode/sum.md)
   Sum
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphreductionmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphreductionmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOUserVideoDeviceTransportState
 
 **Framework**: VideoDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The current transport state of the device.
 
@@ -10,23 +11,24 @@ The current transport state of the device.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserVideoDeviceTransportState : uint64_t;
 ```
 
 ## Topics
 
 ### Transport states
-- [Stopped](videodriverkit/iouservideodevicetransportstate/stopped.md)
+- [Stopped](./iouservideodevicetransportstate/stopped.md)
   Device transport state is stopped.
-- [Prewarmed](videodriverkit/iouservideodevicetransportstate/prewarmed.md)
+- [Prewarmed](./iouservideodevicetransportstate/prewarmed.md)
   Device transport state is prewarmed.
-- [Running](videodriverkit/iouservideodevicetransportstate/running.md)
+- [Running](./iouservideodevicetransportstate/running.md)
   Device transport state is running.
 
 ## See Also
 
-- [GetDeviceTransportState](iouservideoclockdevice/getdevicetransportstate.md)
+### Working with transport states
+- [GetDeviceTransportState](../iouservideoclockdevice/getdevicetransportstate.md)
   Gets the transport state of the device.
 
 

@@ -1,7 +1,8 @@
 # init(position:direction:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a plane from a point on the plane and an outward normal direction.
 
@@ -24,7 +25,8 @@ init(position: SIMD3<Float>, direction: SIMD3<Float>)
 
 ## See Also
 
-- [init(position0: SIMD3<Float>, position1: SIMD3<Float>, position2: SIMD3<Float>)](lowlevelrenderer/cullconfiguration/plane/init(position0:position1:position2:).md)
+### Creating a plane
+- [init(position0: SIMD3<Float>, position1: SIMD3<Float>, position2: SIMD3<Float>)](./init%28position0,position1,position2%29.md)
   Creates a plane from three positions.
 
 

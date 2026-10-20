@@ -1,7 +1,8 @@
 # CMBlockBufferIsEmpty(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the buffer is empty.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether the buffer is empty.
 func CMBlockBufferIsEmpty(_ theBuffer: CMBlockBuffer) -> Bool
 ```
 
+```c
+extern Boolean CMBlockBufferIsEmpty(CMBlockBufferRef theBuffer);
+```
+
 #### Return Value
 
 False if the `CMBlockBuffer` is `NULL`.
@@ -34,11 +39,12 @@ Determines whether the given `CMBlockBuffer` is empty, i.e., devoid of any `memo
 
 ## See Also
 
-- [func CMBlockBufferGetDataPointer(CMBlockBuffer, atOffset: Int, lengthAtOffsetOut: UnsafeMutablePointer<Int>?, totalLengthOut: UnsafeMutablePointer<Int>?, dataPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>?) -> OSStatus](cmblockbuffergetdatapointer(_:atoffset:lengthatoffsetout:totallengthout:datapointerout:).md)
+### Inspecting a Block Buffer
+- [func CMBlockBufferGetDataPointer(CMBlockBuffer, atOffset: Int, lengthAtOffsetOut: UnsafeMutablePointer<Int>?, totalLengthOut: UnsafeMutablePointer<Int>?, dataPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>?) -> OSStatus](./cmblockbuffergetdatapointer%28_,atoffset,lengthatoffsetout,totallengthout,datapointerout%29.md)
   Gains access to the data represented by a block buffer.
-- [func CMBlockBufferGetDataLength(CMBlockBuffer) -> Int](cmblockbuffergetdatalength(_:).md)
+- [func CMBlockBufferGetDataLength(CMBlockBuffer) -> Int](./cmblockbuffergetdatalength%28_%29.md)
   Returns the total length of data that’s accessible by a block buffer.
-- [func CMBlockBufferIsRangeContiguous(CMBlockBuffer, atOffset: Int, length: Int) -> Bool](cmblockbufferisrangecontiguous(_:atoffset:length:).md)
+- [func CMBlockBufferIsRangeContiguous(CMBlockBuffer, atOffset: Int, length: Int) -> Bool](./cmblockbufferisrangecontiguous%28_,atoffset,length%29.md)
   Returns a Boolean value that indicates whether the specified range within a block buffer is contiguous.
 
 

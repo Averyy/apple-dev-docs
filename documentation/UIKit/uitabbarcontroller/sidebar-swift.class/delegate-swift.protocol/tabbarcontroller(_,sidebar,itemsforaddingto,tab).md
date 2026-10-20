@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:itemsForAddingTo:tab:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a new drag session is requesting items to add to the existing drag session in the sidebar from the specified `tab`. Return items if the specified tab can add to the drag session, or an empty array if nothing should be added.
 
@@ -15,6 +16,10 @@ Called when a new drag session is requesting items to add to the existing drag s
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, itemsForAddingTo dragSession: any UIDragSession, tab: UITab) -> [UIDragItem]
+```
+
+```objc
+- (NSArray<UIDragItem *> *) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar itemsForAddingToDragSession:(id<UIDragSession>) dragSession tab:(UITab *) tab;
 ```
 
 

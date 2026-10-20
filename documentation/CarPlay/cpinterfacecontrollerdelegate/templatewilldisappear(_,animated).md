@@ -1,7 +1,8 @@
 # templateWillDisappear(_:animated:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the template will disappear from the screen.
 
@@ -16,17 +17,22 @@ Tells the delegate that the template will disappear from the screen.
 optional func templateWillDisappear(_ aTemplate: CPTemplate, animated: Bool)
 ```
 
+```objc
+- (void) templateWillDisappear:(CPTemplate *) aTemplate animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `animated`: A Boolean value indicating whether the system animates the disappearance of the template.
 
 ## See Also
 
-- [func templateWillAppear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatewillappear(_:animated:).md)
+### Handling Display Events
+- [func templateWillAppear(CPTemplate, animated: Bool)](./templatewillappear%28_,animated%29.md)
   Tells the delegate that the template will appear onscreen.
-- [func templateDidAppear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatedidappear(_:animated:).md)
+- [func templateDidAppear(CPTemplate, animated: Bool)](./templatedidappear%28_,animated%29.md)
   Tells the delegate that the template did appear onscreen.
-- [func templateDidDisappear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatediddisappear(_:animated:).md)
+- [func templateDidDisappear(CPTemplate, animated: Bool)](./templatediddisappear%28_,animated%29.md)
   Tells the delegate that the template did disappear from the screen.
 
 

@@ -1,7 +1,8 @@
 # ICFileSpecPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICFileSpecPtr = UnsafeMutablePointer<ICFileSpec>
+```
+
+```c
+typedef ICFileSpec *ICFileSpecPtr;
 ```
 
 

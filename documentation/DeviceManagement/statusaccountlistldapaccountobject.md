@@ -1,7 +1,8 @@
 # StatusAccountListLDAPAccountObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An LDAP account.
 
@@ -14,13 +15,15 @@ An LDAP account.
 
 ## Declaration
 
-```swift
+```
 object StatusAccountListLDAPAccountObject
 ```
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the device removed the account and the status item object only contains this key and the `identifier` key.
+
+  **Default**: `false`
 - `declaration-identifier` (string): The identifier of the declaration that installed the account. Only present if a declaration installed the account.
 - `hostname` (string): The server host name for the account.
 - `identifier` (string) *(required)*: The unique identifier for the account.

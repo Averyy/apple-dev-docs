@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines the specified views into a single composite view using the layout algorithms of the custom layout container.
 
@@ -27,7 +28,7 @@ A composite view that combines all the input views.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you instantiate a custom layout that conforms to the [`Layout`](layout.md) protocol:
+Don’t call this method directly. SwiftUI calls it when you instantiate a custom layout that conforms to the [`Layout`](../layout.md) protocol:
 
 ```swift
 BasicVStack { // Implicitly calls callAsFunction.
@@ -36,11 +37,11 @@ BasicVStack { // Implicitly calls callAsFunction.
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
-- `content`: A [`ContentBuilder`](contentbuilder.md) that contains the views to lay out.
+- `content`: A [`ContentBuilder`](../contentbuilder.md) that contains the views to lay out.
 
 
 ---

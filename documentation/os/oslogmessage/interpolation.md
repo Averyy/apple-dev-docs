@@ -1,7 +1,8 @@
 # interpolation
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The log message’s string interpolation.
 
@@ -11,7 +12,7 @@ The log message’s string interpolation.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let interpolation: OSLogInterpolation
 
 ## See Also
 
-- [var bufferSize: Int](oslogmessage/buffersize.md)
+### Getting the Message Details
+- [var bufferSize: Int](./buffersize.md)
   The byte size of the buffer that the logging system receives.
-- [var maxOSLogArgumentCount: UInt8](maxoslogargumentcount.md)
+- [var maxOSLogArgumentCount: UInt8](../maxoslogargumentcount.md)
   The maximum number of interpolated expressions that a log message may contain.
 
 

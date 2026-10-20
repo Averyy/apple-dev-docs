@@ -1,12 +1,13 @@
 # FSVolume.RenameOperations
 
 **Framework**: FSKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods and properties implemented by volumes that support renaming the volume.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -14,41 +15,46 @@ Methods and properties implemented by volumes that support renaming the volume.
 protocol RenameOperations : NSObjectProtocol
 ```
 
+```objc
+@protocol FSVolumeRenameOperations <NSObject>
+```
+
 #### Overview
 
-> **Note**: Use [`FSVolume.RenameHandler`](fsvolume/renamehandler.md) instead.
+> **Deprecated**: Use [`FSVolume.RenameHandler`](./renamehandler.md) instead.
 
 ## Topics
 
 ### Renaming the volume
-- [func setVolumeName(FSFileName, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/renameoperations/setvolumename(_:replyhandler:).md)
+- [func setVolumeName(FSFileName, replyHandler: (FSFileName?, (any Error)?) -> Void)](./renameoperations/setvolumename%28_,replyhandler%29.md)
   Sets a new name for the volume.
 ### Inspecting volume properties
-- [var isVolumeRenameInhibited: Bool](fsvolume/renameoperations/isvolumerenameinhibited.md)
+- [var isVolumeRenameInhibited: Bool](./renameoperations/isvolumerenameinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [FSVolume.Operations](fsvolume/operations.md)
+### Deprecated
+- [FSVolume.Operations](./operations.md)
   Methods that all volumes implement to provide required capabilities.
-- [FSVolume.OpenCloseOperations](fsvolume/opencloseoperations.md)
+- [FSVolume.OpenCloseOperations](./opencloseoperations.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
-- [FSVolume.ReadWriteOperations](fsvolume/readwriteoperations.md)
+- [FSVolume.ReadWriteOperations](./readwriteoperations.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
-- [FSVolume.AccessCheckOperations](fsvolume/accesscheckoperations.md)
+- [FSVolume.AccessCheckOperations](./accesscheckoperations.md)
   Methods and properties implemented by volumes that want to enforce access check operations.
-- [FSVolume.PreallocateOperations](fsvolume/preallocateoperations.md)
+- [FSVolume.PreallocateOperations](./preallocateoperations.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
-- [FSVolume.XattrOperations](fsvolume/xattroperations.md)
+- [FSVolume.XattrOperations](./xattroperations.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
-- [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
+- [FSVolume.ItemDeactivation](./itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
-- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
+- [protocol FSVolumeKernelOffloadedIOOperations](../fsvolumekerneloffloadediooperations.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 
 

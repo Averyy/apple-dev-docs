@@ -1,16 +1,17 @@
 # CGRenderingBufferProvider
 
 **Framework**: Core Graphics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,18 +19,22 @@
 class CGRenderingBufferProvider
 ```
 
+```c
+typedef struct CGRenderingBufferProvider * CGRenderingBufferProviderRef;
+```
+
 ## Topics
 
 ### Protocols
-- [CGRenderingBufferProvider.Info](cgrenderingbufferprovider/info.md)
+- [CGRenderingBufferProvider.Info](./cgrenderingbufferprovider/info.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

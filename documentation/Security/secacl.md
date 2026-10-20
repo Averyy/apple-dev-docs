@@ -1,7 +1,8 @@
 # SecACL
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that represents information about an ACL entry.
 
@@ -14,11 +15,15 @@ An opaque type that represents information about an ACL entry.
 class SecACL
 ```
 
+```c
+typedef struct __SecACL * SecACLRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

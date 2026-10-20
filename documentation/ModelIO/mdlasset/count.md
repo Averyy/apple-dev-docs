@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of top-level objects in the asset.
 
@@ -19,33 +20,38 @@ The number of top-level objects in the asset.
 var count: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger count;
+```
+
 #### Discussion
 
-An asset contains one or more top-level objects (instances of the [`MDLObject`](mdlobject.md) class or one of its subclasses, such as [`MDLMesh`](mdlmesh.md)), each of which may contain a hierarchy of child objects.
+An asset contains one or more top-level objects (instances of the [`MDLObject`](../mdlobject.md) class or one of its subclasses, such as [`MDLMesh`](../mdlmesh.md)), each of which may contain a hierarchy of child objects.
 
 ## See Also
 
-- [func object(at: Int) -> MDLObject](mdlasset/object(at:).md)
+### Working with Asset Content
+- [func object(at: Int) -> MDLObject](./object%28at%29.md)
   Returns the top-level object at the specified index in the asset.
-- [subscript(Int) -> MDLObject?](mdlasset/subscript(_:).md)
+- [subscript(Int) -> MDLObject?](./subscript%28_%29.md)
   Returns the top-level object at the specified index in the asset, using subscript syntax.
-- [func childObjects(of: AnyClass) -> [MDLObject]](mdlasset/childobjects(of:).md)
+- [func childObjects(of: AnyClass) -> [MDLObject]](./childobjects%28of%29.md)
   Returns all objects contained in the asset of the specified class.
-- [func add(MDLObject)](mdlasset/add(_:).md)
+- [func add(MDLObject)](./add%28_%29.md)
   Adds the specified object to the asset’s list of top-level objects.
-- [func remove(MDLObject)](mdlasset/remove(_:).md)
+- [func remove(MDLObject)](./remove%28_%29.md)
   Removes the specified object from the asset’s list of top-level objects.
-- [var boundingBox: MDLAxisAlignedBoundingBox](mdlasset/boundingbox.md)
+- [var boundingBox: MDLAxisAlignedBoundingBox](./boundingbox.md)
   The minimum region entirely enclosing the asset’s contents.
-- [func boundingBox(atTime: TimeInterval) -> MDLAxisAlignedBoundingBox](mdlasset/boundingbox(attime:).md)
+- [func boundingBox(atTime: TimeInterval) -> MDLAxisAlignedBoundingBox](./boundingbox%28attime%29.md)
   Returns the minimum region entirely enclosing the asset’s contents at the specified time sample.
-- [var url: URL?](mdlasset/url.md)
+- [var url: URL?](./url.md)
   The URL from which the asset was loaded, if available.
-- [var bufferAllocator: any MDLMeshBufferAllocator](mdlasset/bufferallocator.md)
+- [var bufferAllocator: any MDLMeshBufferAllocator](./bufferallocator.md)
   An object responsible for allocating mesh vertex data loaded from the asset.
-- [var vertexDescriptor: MDLVertexDescriptor?](mdlasset/vertexdescriptor.md)
+- [var vertexDescriptor: MDLVertexDescriptor?](./vertexdescriptor.md)
   The description of the vertex data format to be used for loading mesh data from the asset.
-- [var masters: any MDLObjectContainerComponent](mdlasset/masters.md)
+- [var masters: any MDLObjectContainerComponent](./masters.md)
   An array of objects that can be reused in the asset’s object hierarchy through instancing.
 
 

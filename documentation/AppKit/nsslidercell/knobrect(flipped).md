@@ -1,17 +1,22 @@
 # knobRect(flipped:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle in which the slider knob is drawn.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func knobRect(flipped: Bool) -> NSRect
+```
+
+```objc
+- (NSRect) knobRectFlipped:(BOOL) flipped;
 ```
 
 #### Return Value
@@ -24,19 +29,20 @@ The knob rectangle depends on where in the slider the knob belongs—that is, it
 
 ## Parameters
 
-- `flipped`: [`true`](https://developer.apple.com/documentation/swift/true) if the coordinate system of the associated `NSSlider` or `NSMatrix` is flipped; otherwise [`false`](https://developer.apple.com/documentation/swift/false). You can determine whether this is the case by sending the `NSView` message [`isFlipped`](nsview/isflipped.md) message to the `NSMatrix` or `NSSlider`.
+- `flipped`: [`true`](../../Swift/true.md) if the coordinate system of the associated `NSSlider` or `NSMatrix` is flipped; otherwise [`false`](../../Swift/false.md). You can determine whether this is the case by sending the `NSView` message [`isFlipped`](../nsview/isflipped.md) message to the `NSMatrix` or `NSSlider`.
 
 ## See Also
 
-- [func barRect(flipped: Bool) -> NSRect](nsslidercell/barrect(flipped:).md)
+### Displaying the Cell
+- [func barRect(flipped: Bool) -> NSRect](./barrect%28flipped%29.md)
   Returns the rectangle in which the bar is drawn.
-- [func drawTickMarks()](nsslidercell/drawtickmarks.md)
+- [func drawTickMarks()](./drawtickmarks%28%29.md)
   Draws the slider’s tick marks.
-- [func drawBar(inside: NSRect, flipped: Bool)](nsslidercell/drawbar(inside:flipped:).md)
+- [func drawBar(inside: NSRect, flipped: Bool)](./drawbar%28inside,flipped%29.md)
   Draws the slider’s bar—but not its bezel or knob—inside the specified rectangle.
-- [func drawKnob()](nsslidercell/drawknob.md)
-  Calculates the rectangle in which the knob should be drawn, then calls [`drawKnob(_:)`](nsslidercell/drawknob(_:).md) to actually draw the knob.
-- [func drawKnob(NSRect)](nsslidercell/drawknob(_:).md)
+- [func drawKnob()](./drawknob%28%29.md)
+  Calculates the rectangle in which the knob should be drawn, then calls [`drawKnob(_:)`](./drawknob%28_%29.md) to actually draw the knob.
+- [func drawKnob(NSRect)](./drawknob%28_%29.md)
   Draws the slider knob in the given rectangle.
 
 

@@ -1,7 +1,8 @@
 # RosterPersonResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response that contains the people in the organization.
 
@@ -10,7 +11,7 @@ The response that contains the people in the organization.
 
 ## Declaration
 
-```swift
+```
 object RosterPersonResponse
 ```
 

@@ -1,7 +1,8 @@
 # writeAttributeCurrentApp(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeCurrentApp(withValue value: MTRApplicationLauncherClusterApplicationEPStruct?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeCurrentApp(withValue value: MTRApplicationLauncherClusterApplicationEPStruct?) async throws
+```
+
+```objc
+- (void) writeAttributeCurrentAppWithValue:(MTRApplicationLauncherClusterApplicationEPStruct *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

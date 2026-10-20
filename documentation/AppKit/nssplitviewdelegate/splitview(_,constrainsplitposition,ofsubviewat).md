@@ -1,7 +1,8 @@
 # splitView(_:constrainSplitPosition:ofSubviewAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to constrain the divider to certain positions.
 
@@ -13,6 +14,10 @@ Allows the delegate to constrain the divider to certain positions.
 ```swift
 @MainActor
 optional func splitView(_ splitView: NSSplitView, constrainSplitPosition proposedPosition: CGFloat, ofSubviewAt dividerIndex: Int) -> CGFloat
+```
+
+```objc
+- (CGFloat) splitView:(NSSplitView *) splitView constrainSplitPosition:(CGFloat) proposedPosition ofSubviewAt:(NSInteger) dividerIndex;
 ```
 
 #### Return Value

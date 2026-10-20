@@ -1,17 +1,22 @@
 # domDocument
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web frame’s DOM document.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var domDocument: DOMDocument! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) DOMDocument * DOMDocument;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ var domDocument: DOMDocument! { get }
 
 ## See Also
 
-- [var frameElement: DOMHTMLElement!](webframe/frameelement.md)
+### Getting DOM Objects
+- [var frameElement: DOMHTMLElement!](./frameelement.md)
   The web view’s DOM frame element.
-- [var globalContext: JSGlobalContextRef!](webframe/globalcontext.md)
+- [var globalContext: JSGlobalContextRef!](./globalcontext.md)
   The global JavaScript execution context for bridging between the WebKit and JavaScriptCore C API.
-- [var javaScriptContext: JSContext!](webframe/javascriptcontext.md)
+- [var javaScriptContext: JSContext!](./javascriptcontext.md)
   The frame’s global JavaScript execution context.
-- [var windowObject: WebScriptObject!](webframe/windowobject.md)
+- [var windowObject: WebScriptObject!](./windowobject.md)
   The JavaScript window object.
 
 

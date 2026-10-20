@@ -1,22 +1,24 @@
 # kIOUserNetworkPacketTSOIPV4
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkPacketTSOIPV4
 ```
 
 ## See Also
 
-- [kIOUserNetworkPacketTSOIPV6](kiousernetworkpackettsoipv6.md)
-- [kIOUserNetworkPacketLROIPV4](kiousernetworkpacketlroipv4.md)
-- [kIOUserNetworkPacketLROIPV6](kiousernetworkpacketlroipv6.md)
+### Packet types
+- [kIOUserNetworkPacketTSOIPV6](./kiousernetworkpackettsoipv6.md)
+- [kIOUserNetworkPacketLROIPV4](./kiousernetworkpacketlroipv4.md)
+- [kIOUserNetworkPacketLROIPV6](./kiousernetworkpacketlroipv6.md)
 
 
 ---

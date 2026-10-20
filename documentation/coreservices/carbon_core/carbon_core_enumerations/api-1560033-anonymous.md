@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kDTPAbortJobErr: Int](kdtpabortjoberr.md)
-- [var kDTPHoldJobErr: Int](kdtpholdjoberr.md)
-- [var kDTPStopQueueErr: Int](kdtpstopqueueerr.md)
-- [var kDTPTryAgainErr: Int](kdtptryagainerr.md)
+- [var kDTPAbortJobErr: Int](../../kdtpabortjoberr.md)
+- [var kDTPHoldJobErr: Int](../../kdtpholdjoberr.md)
+- [var kDTPStopQueueErr: Int](../../kdtpstopqueueerr.md)
+- [var kDTPTryAgainErr: Int](../../kdtptryagainerr.md)
 
 
 ---

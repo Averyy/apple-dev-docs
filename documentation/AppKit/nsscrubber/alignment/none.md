@@ -1,7 +1,8 @@
 # NSScrubber.Alignment.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No preference for item alignment.
 
@@ -14,13 +15,18 @@ No preference for item alignment.
 case none
 ```
 
+```c
+NSScrubberAlignmentNone
+```
+
 ## See Also
 
-- [NSScrubber.Alignment.center](nsscrubber/alignment/center.md)
+### Constants
+- [NSScrubber.Alignment.center](./center.md)
   Center alignment of items within the scrubber.
-- [NSScrubber.Alignment.leading](nsscrubber/alignment/leading.md)
+- [NSScrubber.Alignment.leading](./leading.md)
   Leading alignment of items within the scrubber.
-- [NSScrubber.Alignment.trailing](nsscrubber/alignment/trailing.md)
+- [NSScrubber.Alignment.trailing](./trailing.md)
   Trailing alignment of items within the scrubber.
 
 

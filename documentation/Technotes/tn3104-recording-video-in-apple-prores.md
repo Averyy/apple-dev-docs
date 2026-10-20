@@ -1,6 +1,7 @@
 # TN3104: Recording video in Apple ProRes
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Configure pieces of an AVCaptureSession to capture video in Apple ProRes.
 
@@ -8,15 +9,15 @@ Configure pieces of an AVCaptureSession to capture video in Apple ProRes.
 
 iPhone 13 Pro supports Apple ProRes video recording up to 4k at 30 fps and 1080p at 60 fps (except the 128GB model, which supports Apple ProRes video recording up to 1080p at 30 fps). This Technote details how to configure an AVCapture pipeline to capture and record a video encoded in Apple ProRes 422.
 
-For a general overview of Apple ProRes codecs, see [`About Apple ProRes`](https://developer.apple.comhttps://support.apple.com/en-us/HT202410).
+For a general overview of Apple ProRes codecs, see [About Apple ProRes](https://support.apple.com/en-us/HT202410).
 
-#### Choosing a Preset
+#### Choosing a preset
 
-Capturing video in Apple ProRes requires manual configuration of the [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice)’s [`activeFormat`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/activeformat). There is no [`AVCaptureSession.Preset`](https://developer.apple.com/documentation/avfoundation/avcapturesession/preset) available that supports capture in Apple ProRes. For this reason, set the [`sessionPreset`](https://developer.apple.com/documentation/avfoundation/avcapturesession/sessionpreset) of your [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) to [`inputPriority`](https://developer.apple.com/documentation/avfoundation/avcapturesession/preset/inputpriority), which specifies that the [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) should not automatically configure its inputs and outputs.
+Capturing video in Apple ProRes requires manual configuration of the [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md)’s [`activeFormat`](../AVFoundation/avcapturedevice/activeformat.md). There is no [`AVCaptureSession.Preset`](../AVFoundation/avcapturesession/preset.md) available that supports capture in Apple ProRes. For this reason, set the [`sessionPreset`](../AVFoundation/avcapturesession/sessionpreset.md) of your [`AVCaptureSession`](../AVFoundation/avcapturesession.md) to [`inputPriority`](../AVFoundation/avcapturesession/preset/inputpriority.md), which specifies that the [`AVCaptureSession`](../AVFoundation/avcapturesession.md) should not automatically configure its inputs and outputs.
 
-#### Selecting a Capture Format
+#### Selecting a capture format
 
-As described in [`About Apple ProRes`](https://developer.apple.comhttps://support.apple.com/en-us/HT202410), Apple ProRes 422 codecs require 10-bits-per-channel video sources, and Apple ProRes 4444 codecs support up to 12-bits-per-channel and up to 16 bits for the alpha channel. If you iterated through all of the supported capture [`formats`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/formats) of an [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) on iPhone 13 Pro, you would see capture formats with one of the following pixel formats:
+As described in [About Apple ProRes](https://support.apple.com/en-us/HT202410), Apple ProRes 422 codecs require 10-bits-per-channel video sources, and Apple ProRes 4444 codecs support up to 12-bits-per-channel and up to 16 bits for the alpha channel. If you iterated through all of the supported capture [`formats`](../AVFoundation/avcapturedevice/formats.md) of an [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) on iPhone 13 Pro, you would see capture formats with one of the following pixel formats:
 
 | Pixel Format Constant | FourCharCode | Bits Per Channel |
 | --- | --- | --- |
@@ -27,7 +28,7 @@ As described in [`About Apple ProRes`](https://developer.apple.comhttps://suppor
 
 Notice that there are no supported capture formats that capture at higher than 10-bits-per-channel, also notice that none of the supported capture formats use a 4:4:4 pixel format. Therefore, none of the capture formats output video data that is suitable as a video source for Apple ProRes 4444 codecs.
 
-To find a capture format that is suitable as a video source for an Apple ProRes 422 codec, you should iterate through the capture [`formats`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/formats) of the [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice), and return a capture format whose [`mediaSubType`](https://developer.apple.com/documentation/coremedia/cmformatdescription/mediasubtype-swift.property) is [`kCVPixelFormatType_422YpCbCr10BiPlanarVideoRange`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_422ypcbcr10biplanarvideorange):
+To find a capture format that is suitable as a video source for an Apple ProRes 422 codec, you should iterate through the capture [`formats`](../AVFoundation/avcapturedevice/formats.md) of the [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md), and return a capture format whose [`mediaSubType`](../CoreMedia/cmformatdescription/mediasubtype-swift.property.md) is [`kCVPixelFormatType_422YpCbCr10BiPlanarVideoRange`](../CoreVideo/kcvpixelformattype_422ypcbcr10biplanarvideorange.md):
 
 ```swift
 extension AVCaptureDevice {
@@ -49,21 +50,21 @@ extension AVCaptureDevice {
 }
 ```
 
-Once you have identified a capture format suitable for Apple ProRes 422, set it as the [`activeFormat`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/activeformat) of your capture device, and ensure that the capture device has a corresponding [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput) which you have successfully added as an input to the [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession). See [`Setting up a capture session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session) for more information about adding inputs to a capture session.
+Once you have identified a capture format suitable for Apple ProRes 422, set it as the [`activeFormat`](../AVFoundation/avcapturedevice/activeformat.md) of your capture device, and ensure that the capture device has a corresponding [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) which you have successfully added as an input to the [`AVCaptureSession`](../AVFoundation/avcapturesession.md). See [Setting up a capture session](../AVFoundation/setting-up-a-capture-session.md) for more information about adding inputs to a capture session.
 
-#### Choosing an Output Type
+#### Choosing an output type
 
-For many apps, using an [`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput) to write an Apple ProRes movie file is sufficient.
+For many apps, using an [`AVCaptureMovieFileOutput`](../AVFoundation/avcapturemoviefileoutput.md) to write an Apple ProRes movie file is sufficient.
 
-If you require a greater amount of control when writing the movie file, or you need access to video samples before they are written to a movie file, then you can use an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput) to get access to the video samples. Next, you can process or inspect the video samples, and then submit the video samples to an [`AVAssetWriter`](https://developer.apple.com/documentation/avfoundation/avassetwriter).
+If you require a greater amount of control when writing the movie file, or you need access to video samples before they are written to a movie file, then you can use an [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md) to get access to the video samples. Next, you can process or inspect the video samples, and then submit the video samples to an [`AVAssetWriter`](../AVFoundation/avassetwriter.md).
 
-#### Configuring the Output
+#### Configuring the output
 
-[`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput) supports writing movie files encoded with Apple ProRes 422 codecs. To check the available video codecs at runtime, you can iterate through the [`availableVideoCodecTypes`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/availablevideocodectypes).
+[`AVCaptureMovieFileOutput`](../AVFoundation/avcapturemoviefileoutput.md) supports writing movie files encoded with Apple ProRes 422 codecs. To check the available video codecs at runtime, you can iterate through the [`availableVideoCodecTypes`](../AVFoundation/avcapturemoviefileoutput/availablevideocodectypes.md).
 
-The [`availableVideoCodecTypes`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/availablevideocodectypes) array is dynamic, and depends on the [`activeFormat`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/activeformat) of the [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput) that is connected to the same [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) as the [`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput). For this reason, you should check for support of Apple ProRes 422 codecs only after you have configured the capture device to capture in an ‘x422’ format.
+The [`availableVideoCodecTypes`](../AVFoundation/avcapturemoviefileoutput/availablevideocodectypes.md) array is dynamic, and depends on the [`activeFormat`](../AVFoundation/avcapturedevice/activeformat.md) of the [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) that is connected to the same [`AVCaptureSession`](../AVFoundation/avcapturesession.md) as the [`AVCaptureMovieFileOutput`](../AVFoundation/avcapturemoviefileoutput.md). For this reason, you should check for support of Apple ProRes 422 codecs only after you have configured the capture device to capture in an ‘x422’ format.
 
-Once you have verified that the movie file output supports your desired Apple ProRes 422 codec, use the [`outputSettings(for:)`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/outputsettings(for:)) method to set specify the codec that the output should use:
+Once you have verified that the movie file output supports your desired Apple ProRes 422 codec, use the [`outputSettings(for:)`](../AVFoundation/avcapturemoviefileoutput/outputsettings%28for%29.md) method to set specify the codec that the output should use:
 
 ```swift
 // Ensure that the availableVideoCodecTypes contains the target codec.
@@ -79,15 +80,15 @@ guard let videoConnection = movieFileOutput.connection(with: .video) else {
 movieFileOutput.setOutputSettings([AVVideoCodecKey : AVVideoCodecType.proRes422.rawValue], for: videoConnection)
 ```
 
-[`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput) does not require any special configuration to be compatible with an ‘x422’ input, simply set its sample buffer delegate with the [`setSampleBufferDelegate(_:queue:)`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/setsamplebufferdelegate(_:queue:)) method, and add the output to the capture session.
+[`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md) does not require any special configuration to be compatible with an ‘x422’ input, simply set its sample buffer delegate with the [`setSampleBufferDelegate(_:queue:)`](../AVFoundation/avcapturevideodataoutput/setsamplebufferdelegate%28_,queue%29.md) method, and add the output to the capture session.
 
-#### Recording and Saving with Avcapturemoviefileoutput
+#### Recording and saving with AVCaptureMovieFileOutput
 
-Use the [`startRecording(to:recordingDelegate:)`](https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/startrecording(to:recordingdelegate:)) method to set a recording delegate and start recording to a file. When recording is stopped, you will receive the output file in [`fileOutput(_:didFinishRecordingTo:from:error:)`](https://developer.apple.com/documentation/avfoundation/avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:)). You can save this movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](https://developer.apple.com/documentation/photos/phassetchangerequest/creationrequestforassetfromvideo(atfileurl:)) method. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
+Use the [`startRecording(to:recordingDelegate:)`](../AVFoundation/avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) method to set a recording delegate and start recording to a file. When recording is stopped, you will receive the output file in [`fileOutput(_:didFinishRecordingTo:from:error:)`](../AVFoundation/avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md). You can save this movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](https://developer.apple.com/documentation/photos/phassetchangerequest/creationrequestforassetfromvideo(atfileurl:)) method. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
 
-#### Recording and Saving with Avcapturevideodataoutput and Avassetwriter
+#### Recording and saving with AVCaptureVideoDataOutput and AVAssetWriter
 
-Once you have decided to start recording, create an [`AVAssetWriter`](https://developer.apple.com/documentation/avfoundation/avassetwriter), and an [`AVAssetWriterInput`](https://developer.apple.com/documentation/avfoundation/avassetwriterinput). When you create the [`AVAssetWriterInput`](https://developer.apple.com/documentation/avfoundation/avassetwriterinput), specify outputSettings that use your preferred Apple ProRes 422 video codec. You can request recommended settings from the [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput):
+Once you have decided to start recording, create an [`AVAssetWriter`](../AVFoundation/avassetwriter.md), and an [`AVAssetWriterInput`](../AVFoundation/avassetwriterinput.md). When you create the [`AVAssetWriterInput`](../AVFoundation/avassetwriterinput.md), specify outputSettings that use your preferred Apple ProRes 422 video codec. You can request recommended settings from the [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md):
 
 ```swift
 let fileType = AVFileType.mov
@@ -112,7 +113,7 @@ do {
 assetWriter.add(writerVideoInput)
 ```
 
-Take the video samples that you receive in the [`captureOutput(_:didOutput:from:)`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:)) delegate method and append them to your movie file [`AVAssetWriterInput`](https://developer.apple.com/documentation/avfoundation/avassetwriterinput):
+Take the video samples that you receive in the [`captureOutput(_:didOutput:from:)`](../AVFoundation/avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) delegate method and append them to your movie file [`AVAssetWriterInput`](../AVFoundation/avassetwriterinput.md):
 
 ```swift
 // Start the asset writer if it hasn't been started already, and use the first sampleBuffer's presentationTimeStamp as the source time.
@@ -127,7 +128,7 @@ if writerVideoInput.isReadyForMoreMediaData {
 }
 ```
 
-When you decide to stop recording, call [`finishWriting(completionHandler:)`](https://developer.apple.com/documentation/avfoundation/avassetwriter/finishwriting(completionhandler:)). In the completion handler, you can save the movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](https://developer.apple.com/documentation/photos/phassetchangerequest/creationrequestforassetfromvideo(atfileurl:)) method, passing in the [`outputURL`](https://developer.apple.com/documentation/avfoundation/avassetwriter/outputurl) of the asset writer. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
+When you decide to stop recording, call [`finishWriting(completionHandler:)`](../AVFoundation/avassetwriter/finishwriting%28completionhandler%29.md). In the completion handler, you can save the movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](https://developer.apple.com/documentation/photos/phassetchangerequest/creationrequestforassetfromvideo(atfileurl:)) method, passing in the [`outputURL`](../AVFoundation/avassetwriter/outputurl.md) of the asset writer. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
 
 #### Revision History
 

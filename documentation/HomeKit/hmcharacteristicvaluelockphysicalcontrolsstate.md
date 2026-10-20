@@ -1,7 +1,8 @@
 # HMCharacteristicValueLockPhysicalControlsState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the lock physical control state.
 
@@ -19,25 +20,29 @@ Possible values for the lock physical control state.
 enum HMCharacteristicValueLockPhysicalControlsState
 ```
 
+```c
+enum HMCharacteristicValueLockPhysicalControlsState : NSInteger;
+```
+
 ## Topics
 
 ### Lock Physical Control State
-- [HMCharacteristicValueLockPhysicalControlsState.notLocked](hmcharacteristicvaluelockphysicalcontrolsstate/notlocked.md)
+- [HMCharacteristicValueLockPhysicalControlsState.notLocked](./hmcharacteristicvaluelockphysicalcontrolsstate/notlocked.md)
   The physical control is unlocked.
-- [HMCharacteristicValueLockPhysicalControlsState.locked](hmcharacteristicvaluelockphysicalcontrolsstate/locked.md)
+- [HMCharacteristicValueLockPhysicalControlsState.locked](./hmcharacteristicvaluelockphysicalcontrolsstate/locked.md)
   The physical control is locked.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluelockphysicalcontrolsstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluelockphysicalcontrolsstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

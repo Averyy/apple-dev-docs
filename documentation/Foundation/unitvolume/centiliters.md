@@ -1,7 +1,8 @@
 # centiliters
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The centiliters unit of volume.
 
@@ -21,37 +22,42 @@ The centiliters unit of volume.
 class var centiliters: UnitVolume { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitVolume * centiliters;
+```
+
 ## See Also
 
-- [class var megaliters: UnitVolume](unitvolume/megaliters.md)
+### Accessing Predefined Units
+- [class var megaliters: UnitVolume](./megaliters.md)
   The megaliters unit of volume.
-- [class var kiloliters: UnitVolume](unitvolume/kiloliters.md)
+- [class var kiloliters: UnitVolume](./kiloliters.md)
   The kiloliters unit of volume.
-- [class var liters: UnitVolume](unitvolume/liters.md)
+- [class var liters: UnitVolume](./liters.md)
   The liters unit of volume.
-- [class var deciliters: UnitVolume](unitvolume/deciliters.md)
+- [class var deciliters: UnitVolume](./deciliters.md)
   The deciliters unit of volume.
-- [class var milliliters: UnitVolume](unitvolume/milliliters.md)
+- [class var milliliters: UnitVolume](./milliliters.md)
   The milliliters unit of volume.
-- [class var cubicKilometers: UnitVolume](unitvolume/cubickilometers.md)
+- [class var cubicKilometers: UnitVolume](./cubickilometers.md)
   The cubic kilometers unit of volume.
-- [class var cubicMeters: UnitVolume](unitvolume/cubicmeters.md)
+- [class var cubicMeters: UnitVolume](./cubicmeters.md)
   The cubic meters unit of volume.
-- [class var cubicDecimeters: UnitVolume](unitvolume/cubicdecimeters.md)
+- [class var cubicDecimeters: UnitVolume](./cubicdecimeters.md)
   The cubic decimeters unit of volume.
-- [class var cubicCentimeters: UnitVolume](unitvolume/cubiccentimeters.md)
+- [class var cubicCentimeters: UnitVolume](./cubiccentimeters.md)
   The cubic centimeters unit of volume.
-- [class var cubicMillimeters: UnitVolume](unitvolume/cubicmillimeters.md)
+- [class var cubicMillimeters: UnitVolume](./cubicmillimeters.md)
   The cubic millimeters unit of volume.
-- [class var cubicInches: UnitVolume](unitvolume/cubicinches.md)
+- [class var cubicInches: UnitVolume](./cubicinches.md)
   The cubic inches unit of volume.
-- [class var cubicFeet: UnitVolume](unitvolume/cubicfeet.md)
+- [class var cubicFeet: UnitVolume](./cubicfeet.md)
   The cubic feet unit of volume.
-- [class var cubicYards: UnitVolume](unitvolume/cubicyards.md)
+- [class var cubicYards: UnitVolume](./cubicyards.md)
   The cubic yards unit of volume.
-- [class var cubicMiles: UnitVolume](unitvolume/cubicmiles.md)
+- [class var cubicMiles: UnitVolume](./cubicmiles.md)
   The cubic miles unit of volume.
-- [class var acreFeet: UnitVolume](unitvolume/acrefeet.md)
+- [class var acreFeet: UnitVolume](./acrefeet.md)
   The acre feet unit of volume.
 
 

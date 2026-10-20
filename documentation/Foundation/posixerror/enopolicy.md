@@ -1,7 +1,8 @@
 # ENOPOLICY
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No such policy registered.
 

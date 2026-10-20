@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (PlaneAnchor, PlaneAnchor) -> Bool](planeanchor/==(_:_:).md)
+- [static func == (PlaneAnchor, PlaneAnchor) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two plane anchors are equal.
 
 

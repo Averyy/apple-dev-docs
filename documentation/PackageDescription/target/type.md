@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the target.
 
@@ -13,9 +14,10 @@ final let type: Target.TargetType
 
 ## See Also
 
-- [var isTest: Bool](target/istest.md)
+### Describing the Target Type
+- [var isTest: Bool](./istest.md)
   A Boolean value that indicates whether this is a test target.
-- [Target.TargetType](target/targettype.md)
+- [Target.TargetType](./targettype.md)
   The different types of a target.
 
 

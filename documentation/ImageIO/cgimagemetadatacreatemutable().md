@@ -1,7 +1,8 @@
 # CGImageMetadataCreateMutable()
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an empty, mutable image metdata opaque type.
 
@@ -20,13 +21,18 @@ Creates an empty, mutable image metdata opaque type.
 func CGImageMetadataCreateMutable() -> CGMutableImageMetadata
 ```
 
+```c
+extern CGMutableImageMetadataRefCGImageMetadataCreateMutable();
+```
+
 #### Return Value
 
-A [`CGMutableImageMetadata`](cgmutableimagemetadata.md) object that contains no metadata information, or `NULL` if an error occurs. You are responsible for releasing the returned object.
+A [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) object that contains no metadata information, or `NULL` if an error occurs. You are responsible for releasing the returned object.
 
 ## See Also
 
-- [func CGImageMetadataCreateMutableCopy(CGImageMetadata) -> CGMutableImageMetadata?](cgimagemetadatacreatemutablecopy(_:).md)
+### Creating a Mutable Metadata Type
+- [func CGImageMetadataCreateMutableCopy(CGImageMetadata) -> CGMutableImageMetadata?](./cgimagemetadatacreatemutablecopy%28_%29.md)
   Creates a deep, mutable copy of the specified metadata information.
 
 

@@ -1,7 +1,8 @@
 # installing(progress:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A state indicating install progress.
 
@@ -23,7 +24,8 @@ static func installing(progress: Double?) -> ManagedContentOfferState
 
 ## See Also
 
-- [static func custom(title: String) -> ManagedContentOfferState](managedcontentofferstate/custom(title:).md)
+### Creating states
+- [static func custom(title: String) -> ManagedContentOfferState](./custom%28title%29.md)
   A state with a custom title.
 
 

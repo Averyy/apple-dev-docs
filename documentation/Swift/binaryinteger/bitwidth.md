@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of bits in the current binary representation of this value.
@@ -25,13 +26,20 @@ var bitWidth: Int { get }
 
 This property is a constant for instances of fixed-width integer types.
 
+## Default Implementations
+
+### BinaryInteger Implementations
+- [var bitWidth: Int](./bitwidth-57x70.md)
+  The number of bits in the current binary representation of this value.
+
 ## See Also
 
-- [var trailingZeroBitCount: Int](binaryinteger/trailingzerobitcount.md)
+### Working with Binary Representation
+- [var trailingZeroBitCount: Int](./trailingzerobitcount.md)
   The number of trailing zeros in this value’s binary representation.
-- [var words: Self.Words](binaryinteger/words-swift.property.md)
+- [var words: Self.Words](./words-swift.property.md)
   A collection containing the words of this value’s binary representation, in order from the least significant to most significant.
-- [associatedtype Words : RandomAccessCollection](binaryinteger/words-swift.associatedtype.md)
+- [associatedtype Words : RandomAccessCollection](./words-swift.associatedtype.md)
   A type that represents the words of a binary integer.
 
 

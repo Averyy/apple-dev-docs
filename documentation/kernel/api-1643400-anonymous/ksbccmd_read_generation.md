@@ -1,7 +1,8 @@
 # kSBCCmd_READ_GENERATION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSBCCmd_READ_GENERATION = 0x29
 ```
 

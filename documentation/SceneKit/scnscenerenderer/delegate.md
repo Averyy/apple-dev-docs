@@ -2,23 +2,28 @@
 
 **Framework**: SceneKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A delegate object that receives messages about SceneKit’s rendering process.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 weak var delegate: (any SCNSceneRendererDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<SCNSceneRendererDelegate> delegate;
 ```
 
 #### Discussion
@@ -28,9 +33,9 @@ A scene renderer delegate is a custom object that you provide. When SceneKit pro
 - Implementing per-frame game logic. Use delegate methods to update the state of your game objects and modify the scene graph in response, either at the beginning of SceneKit’s rendering process for each frame, or after SceneKit has processed actions and animations or run the physics simulation for the scene.
 - Performing custom rendering. Use a scene renderer delegate to draw your own content using Metal or OpenGL, either before SceneKit renders the scene’s contents (as a backdrop) or afterward (as an overlay).
 
-This rendering is independent of the scene graph and its contents. If you instead want to perform custom rendering that is anchored at a location in the scene’s coordinate space, use the [`rendererDelegate`](scnnode/rendererdelegate.md) property of an [`SCNNode`](scnnode.md) object in the scene graph. Or if you want to customize the rendering of SceneKit’s geometries and materials, use the [`SCNShadable`](scnshadable.md) protocol to attach GPU shaders to SceneKit objects.
+This rendering is independent of the scene graph and its contents. If you instead want to perform custom rendering that is anchored at a location in the scene’s coordinate space, use the [`rendererDelegate`](../scnnode/rendererdelegate.md) property of an [`SCNNode`](../scnnode.md) object in the scene graph. Or if you want to customize the rendering of SceneKit’s geometries and materials, use the [`SCNShadable`](../scnshadable.md) protocol to attach GPU shaders to SceneKit objects.
 
-For details, see [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md).
+For details, see [`SCNSceneRendererDelegate`](../scnscenerendererdelegate.md).
 
 
 ---

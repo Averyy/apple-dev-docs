@@ -1,7 +1,8 @@
 # focusedItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item that’s currently focused.
 
@@ -16,6 +17,10 @@ The item that’s currently focused.
 
 ```swift
 weak var focusedItem: (any UIFocusItem)? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIFocusItem> focusedItem;
 ```
 
 #### Discussion

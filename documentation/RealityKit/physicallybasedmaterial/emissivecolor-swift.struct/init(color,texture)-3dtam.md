@@ -1,7 +1,8 @@
 # init(color:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color of emitted light in iOS.
 
@@ -10,7 +11,7 @@ Creates a color of emitted light in iOS.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,17 @@ Creates a color of emitted light in iOS.
 init(color: UIColor = .black, texture: MaterialParameters.Texture? = nil)
 ```
 
+**Other overloads**:
+
+```swift
+init(color: NSColor = .black, texture: MaterialParameters.Texture? = nil)
+```
+
 #### Discussion
 
 This initializer creates an object from a color, an image texture, or from both. The `color` property defaults to black, which results in no light emissions. With custom materials, `color` and `texture` are available as inputs in your surface shader, but your surface shader must call `params.surface().set_emissive_color()`, otherwise RealityKit renders no light emission.
 
-The following Metal code demonstrates how to replicate the emissive behavior of [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) in your surface shader code:
+The following Metal code demonstrates how to replicate the emissive behavior of [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md) in your surface shader code:
 
 ```swift
     // Retrieve the emissive color tint from the CustomMaterial.
@@ -47,7 +54,7 @@ The following Metal code demonstrates how to replicate the emissive behavior of 
     params.surface().set_emissive_color(color);
 ```
 
-> **Note**: Unlike [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), [`CustomMaterial`](custommaterial.md) has no [`emissiveIntensity`](physicallybasedmaterial/emissiveintensity.md) value. If you need to pass an emissive intensity value to your surface shader, use the [`custom`](custommaterial/custom-swift.property.md) property or another unused attribute property.
+> **Note**: Unlike [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md), [`CustomMaterial`](../../custommaterial.md) has no [`emissiveIntensity`](../emissiveintensity.md) value. If you need to pass an emissive intensity value to your surface shader, use the [`custom`](../../custommaterial/custom-swift.property.md) property or another unused attribute property.
 
 ## Parameters
 
@@ -56,9 +63,10 @@ The following Metal code demonstrates how to replicate the emissive behavior of 
 
 ## See Also
 
-- [init(color: NSColor, texture: MaterialParameters.Texture?)](physicallybasedmaterial/emissivecolor-swift.struct/init(color:texture:)-5hl9i.md)
+### Creating an emissive color object
+- [init(color: NSColor, texture: MaterialParameters.Texture?)](./init%28color,texture%29-5hl9i.md)
   Creates a color of emitted light in iOS.
-- [init(CustomMaterial.EmissiveColor)](physicallybasedmaterial/emissivecolor-swift.struct/init(_:).md)
+- [init(CustomMaterial.EmissiveColor)](./init%28_%29.md)
   Creates a color of emitted light from a custom material’s emissive color property.
 
 

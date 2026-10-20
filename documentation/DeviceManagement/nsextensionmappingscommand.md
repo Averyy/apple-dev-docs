@@ -1,7 +1,8 @@
 # NSExtensionMappingsCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of the installed extensions for a user on a device.
 
@@ -10,14 +11,14 @@ The command to get a list of the installed extensions for a user on a device.
 
 ## Declaration
 
-```swift
+```
 object NSExtensionMappingsCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object NSExtensionMappingsCommand.Command](nsextensionmappingscommand/command-data.dictionary.md)
+- [object NSExtensionMappingsCommand.Command](./nsextensionmappingscommand/command-data.dictionary.md)
   The command to get a list of the installed extensions for a user on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object NSExtensionMappingsCommand
 
 ## See Also
 
-- [object NSExtensionMappingsResponse](nsextensionmappingsresponse.md)
+### Commands and responses
+- [object NSExtensionMappingsResponse](./nsextensionmappingsresponse.md)
   A response from the device after it processes the command to get a list of the installed extensions for a user on a device.
 
 

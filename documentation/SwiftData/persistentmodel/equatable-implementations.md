@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Self, Self) -> Bool](persistentmodel/==(_:_:).md)
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

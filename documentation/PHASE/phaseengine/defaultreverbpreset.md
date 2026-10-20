@@ -1,7 +1,8 @@
 # defaultReverbPreset
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The environmental surroundings that determine how sound resonates.
 
@@ -19,11 +20,16 @@ The environmental surroundings that determine how sound resonates.
 var defaultReverbPreset: PHASEReverbPreset { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PHASEReverbPreset defaultReverbPreset;
+```
+
 ## See Also
 
-- [var defaultMedium: PHASEMedium](phaseengine/defaultmedium.md)
+### Defining Environmental Effects
+- [var defaultMedium: PHASEMedium](./defaultmedium.md)
   The physical matter through which sound travels.
-- [var outputSpatializationMode: PHASESpatializationMode](phaseengine/outputspatializationmode.md)
+- [var outputSpatializationMode: PHASESpatializationMode](./outputspatializationmode.md)
   The mode the engine implements to create a 3D sound experience.
 
 

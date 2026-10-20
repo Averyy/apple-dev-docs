@@ -1,9 +1,10 @@
 # NSAllRomanInputSourcesLocaleIdentifier
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A meta-locale identifier representing the set of Roman input sources available. You can pass `[NSArray arrayWithObject: NSAllRomanInputSourcesLocaleIdentifier]` to the [`allowedInputSourceLocales`](nstextview/allowedinputsourcelocales.md) property to restrict allowed input sources to Roman only.
+A meta-locale identifier representing the set of Roman input sources available. You can pass `[NSArray arrayWithObject: NSAllRomanInputSourcesLocaleIdentifier]` to the [`allowedInputSourceLocales`](./nstextview/allowedinputsourcelocales.md) property to restrict allowed input sources to Roman only.
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ A meta-locale identifier representing the set of Roman input sources available. 
 
 ```swift
 let NSAllRomanInputSourcesLocaleIdentifier: String
+```
+
+```c
+extern NSString * NSAllRomanInputSourcesLocaleIdentifier;
 ```
 
 

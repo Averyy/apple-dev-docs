@@ -1,7 +1,8 @@
 # dataBecameReady
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when a sample buffer’s data becomes ready.
 
@@ -22,7 +23,8 @@ static let dataBecameReady: NSNotification.Name
 
 ## See Also
 
-- [static let dataFailed: NSNotification.Name](cmsamplebuffer/datafailed.md)
+### Notifications
+- [static let dataFailed: NSNotification.Name](./datafailed.md)
   A notification the system posts when a sample buffer fails to load its data.
 
 

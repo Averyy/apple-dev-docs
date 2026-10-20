@@ -1,7 +1,8 @@
 # appEntityIdentifiers
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entities that represent this content, making them available to Siri and Apple Intelligence.
 

@@ -1,7 +1,8 @@
 # init(components:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entity with multiple components.
 
@@ -10,7 +11,7 @@ Creates an entity with multiple components.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,16 @@ Creates an entity with multiple components.
 @preconcurrency convenience init(components: [any Component])
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init<each T>(components: repeat each T) where repeat each T : Component
+```
+
 #### Discussion
 
-This initializer adds the contents of `components` to the new [`Entity`](entity.md). The components you specify in this initializer override any default components of the same type that RealityKit creates the entity with, such as [`Transform`](transform.md).
+This initializer adds the contents of `components` to the new [`Entity`](../entity.md). The components you specify in this initializer override any default components of the same type that RealityKit creates the entity with, such as [`Transform`](../transform.md).
 
 For example, you can use this initializer to create an entity that anchors to the floor, displays a 1x1x1m box, and has a y-position of 0.5:
 
@@ -36,7 +44,7 @@ let floorCubeComponents = [
 let floorCubeEntity = Entity(components: floorCubeComponents)
 ```
 
-> **Note**: You can change any of the entity’s components at any time by modifying the entity’s [`components`](entity/components.md) set.
+> **Note**: You can change any of the entity’s components at any time by modifying the entity’s [`components`](./components.md) set.
 
 ## Parameters
 
@@ -44,11 +52,12 @@ let floorCubeEntity = Entity(components: floorCubeComponents)
 
 ## See Also
 
-- [init()](entity/init.md)
+### Creating an entity
+- [init()](./init%28%29.md)
   Creates a new entity.
-- [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
+- [func clone(recursive: Bool) -> Self](./clone%28recursive%29.md)
   Duplicates an entity to create a new entity.
-- [func didClone(from: Entity)](entity/didclone(from:).md)
+- [func didClone(from: Entity)](./didclone%28from%29.md)
   Tells a newly cloned entity that cloning is complete.
 
 

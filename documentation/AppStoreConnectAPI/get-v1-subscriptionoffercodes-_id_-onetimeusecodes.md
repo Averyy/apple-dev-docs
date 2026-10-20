@@ -1,7 +1,8 @@
 # List all one-time use offer codes for an auto-renewable subscription
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get details about a one-time use code for a specific subscription offer for an auto-renewable subscription.
 
@@ -14,22 +15,38 @@ Get details about a one-time use code for a specific subscription offer for an a
 
 ## Parameters
 
-- `fields[subscriptionOfferCodeOneTimeUseCodes]` ([string])
-- `fields[subscriptionOfferCodes]` ([string])
-- `include` ([string])
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[subscriptionOfferCodeOneTimeUseCodes]` ([string]): **Allowed Values**: `numberOfCodes`, `createdDate`, `expirationDate`, `active`, `environment`, `offerCode`, `values`
+- `fields[subscriptionOfferCodes]` ([string]): **Allowed Values**: `name`, `customerEligibilities`, `offerEligibility`, `duration`, `offerMode`, `numberOfPeriods`, `totalNumberOfCodes`, `productionCodeCount`, `sandboxCodeCount`, `active`, `autoRenewEnabled`, `targetSubscriptionPlanType`, `subscription`, `oneTimeUseCodes`, `customCodes`, `prices`
+- `include` ([string]): **Allowed Values**: `offerCode`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`SubscriptionOfferCodeOneTimeUseCodesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create one-time use offer codes](post-v1-subscriptionoffercodeonetimeusecodes.md)
+### Managing One-Time Use Offer Codes
+- [Create one-time use offer codes](./post-v1-subscriptionoffercodeonetimeusecodes.md)
   Create one-time use codes for an auto-renewable subscription offer.
-- [Read one-time use offer code information](get-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
+- [Read one-time use offer code information](./get-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
   Get details about a specific one-time use offer code for an auto-renewable subscription.
-- [Deactivate one-time use offer codes](patch-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
+- [Deactivate one-time use offer codes](./patch-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
   Deactivate a batch of one-time use offer codes for an auto-renewable subscription.
-- [List one-time use offer code values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
+- [List one-time use offer code values](./get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
-- [List one-time use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+- [List one-time use code IDs for a subscription offer code](./get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
   Get a list of one-time use code resource IDs for a specific subscription offer code.
 
 

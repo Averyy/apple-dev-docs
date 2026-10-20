@@ -1,7 +1,8 @@
 # init(type:data:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a MIDI meta event type and data.
 
@@ -17,6 +18,10 @@ Creates an event with a MIDI meta event type and data.
 
 ```swift
 init(type: AVMIDIMetaEvent.EventType, data: Data)
+```
+
+```objc
+- (instancetype) initWithType:(AVMIDIMetaEventType) type data:(NSData *) data;
 ```
 
 ## Parameters

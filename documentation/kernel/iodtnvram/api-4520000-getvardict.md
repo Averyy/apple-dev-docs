@@ -1,14 +1,15 @@
 # getVarDict
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getVarDict(OSSharedPtr<OSDictionary> & varDictCopy);
 ```
 

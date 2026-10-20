@@ -1,7 +1,8 @@
 # SecureEnclave.MLDSA65
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,13 +22,13 @@ enum MLDSA65
 ## Topics
 
 ### Structures
-- [SecureEnclave.MLDSA65.PrivateKey](secureenclave/mldsa65/privatekey.md)
+- [SecureEnclave.MLDSA65.PrivateKey](./mldsa65/privatekey.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

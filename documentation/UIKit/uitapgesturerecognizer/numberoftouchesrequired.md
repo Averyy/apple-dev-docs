@@ -1,7 +1,8 @@
 # numberOfTouchesRequired
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of fingers that the user must tap for gesture recognition.
 
@@ -17,9 +18,13 @@ The number of fingers that the user must tap for gesture recognition.
 var numberOfTouchesRequired: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger numberOfTouchesRequired;
+```
+
 ## Mentions
 
-- [Handling tap gestures](handling-tap-gestures.md)
+- [Handling tap gestures](../handling-tap-gestures.md)
 
 #### Discussion
 
@@ -27,9 +32,10 @@ The default value is 1.
 
 ## See Also
 
-- [var buttonMaskRequired: UIEvent.ButtonMask](uitapgesturerecognizer/buttonmaskrequired.md)
+### Configuring the gesture
+- [var buttonMaskRequired: UIEvent.ButtonMask](./buttonmaskrequired.md)
   The bit mask of the buttons the user must press for gesture recognition.
-- [var numberOfTapsRequired: Int](uitapgesturerecognizer/numberoftapsrequired.md)
+- [var numberOfTapsRequired: Int](./numberoftapsrequired.md)
   The number of taps necessary for gesture recognition.
 
 

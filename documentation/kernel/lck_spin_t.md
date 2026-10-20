@@ -1,14 +1,15 @@
 # lck_spin_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __lck_spin_t__ lck_spin_t;
 ```
 

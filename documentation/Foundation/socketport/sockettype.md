@@ -1,7 +1,8 @@
 # socketType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s socket type.
 
@@ -14,15 +15,20 @@ The receiver’s socket type.
 var socketType: Int32 { get }
 ```
 
+```objc
+@property (readonly) int socketType;
+```
+
 ## See Also
 
-- [var address: Data](socketport/address.md)
-  The receiver’s socket address structure stored inside an [`NSData`](nsdata.md) object.
-- [var `protocol`: Int32](socketport/protocol.md)
+### Getting Information
+- [var address: Data](./address.md)
+  The receiver’s socket address structure stored inside an [`NSData`](../nsdata.md) object.
+- [var `protocol`: Int32](./protocol.md)
   The protocol that the receiver uses for communication.
-- [var protocolFamily: Int32](socketport/protocolfamily.md)
+- [var protocolFamily: Int32](./protocolfamily.md)
   The protocol family that the receiver uses for communication.
-- [var socket: SocketNativeHandle](socketport/socket.md)
+- [var socket: SocketNativeHandle](./socket.md)
   The receiver’s native socket identifier on the platform.
 
 

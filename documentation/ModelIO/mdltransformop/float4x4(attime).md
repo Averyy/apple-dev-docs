@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func float4x4(atTime time: TimeInterval) -> matrix_float4x4
+```
+
+```objc
+- (matrix_float4x4) float4x4AtTime:(NSTimeInterval) time;
 ```
 
 

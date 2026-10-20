@@ -1,7 +1,8 @@
 # labelIconToTitleSpacing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spacing between the icon and title of a label.
 

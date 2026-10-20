@@ -1,7 +1,8 @@
 # UICellAccessory.LayoutDimension.actual
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory layout uses its actual dimension.
 
@@ -10,7 +11,7 @@ The accessory layout uses its actual dimension.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ case actual
 
 ## See Also
 
-- [UICellAccessory.LayoutDimension.standard](uicellaccessory-swift.struct/layoutdimension/standard.md)
+### Constants
+- [UICellAccessory.LayoutDimension.standard](./standard.md)
   The accessory layout uses the system standard layout dimension for accessories.
-- [UICellAccessory.LayoutDimension.custom(_:)](uicellaccessory-swift.struct/layoutdimension/custom(_:).md)
+- [UICellAccessory.LayoutDimension.custom(_:)](./custom%28_%29.md)
   The accessory layout uses the specified custom value.
 
 

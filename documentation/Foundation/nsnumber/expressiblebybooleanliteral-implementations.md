@@ -1,11 +1,12 @@
 # ExpressibleByBooleanLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(booleanLiteral: Bool)](nsnumber/init(booleanliteral:).md)
+- [convenience init(booleanLiteral: Bool)](./init%28booleanliteral%29.md)
   Create an instance initialized to `value`.
 
 

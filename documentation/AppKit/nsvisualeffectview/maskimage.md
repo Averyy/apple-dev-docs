@@ -1,7 +1,8 @@
 # maskImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image whose alpha channel masks the visual effect view’s material.
 
@@ -12,6 +13,10 @@ An image whose alpha channel masks the visual effect view’s material.
 
 ```swift
 var maskImage: NSImage? { get set }
+```
+
+```objc
+@property (retain, nullable) NSImage * maskImage;
 ```
 
 #### Discussion

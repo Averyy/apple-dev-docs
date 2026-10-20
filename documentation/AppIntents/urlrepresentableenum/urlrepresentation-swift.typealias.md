@@ -1,7 +1,8 @@
 # URLRepresentableEnum.URLRepresentation
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that provides the URL for the app enum.
 

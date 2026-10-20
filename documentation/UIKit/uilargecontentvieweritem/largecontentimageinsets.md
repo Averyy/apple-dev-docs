@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Insets to adjust the position of the item’s image so it appears visually centered in the large content viewer.
@@ -18,17 +19,22 @@ Insets to adjust the position of the item’s image so it appears visually cente
 var largeContentImageInsets: UIEdgeInsets { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) UIEdgeInsets largeContentImageInsets;
+```
+
 #### Discussion
 
-This property defaults to [`zero`](uiedgeinsets/zero.md).
+This property defaults to [`zero`](../uiedgeinsets/zero.md).
 
 ## See Also
 
-- [var largeContentTitle: String?](uilargecontentvieweritem/largecontenttitle.md)
+### Configuring display properties
+- [var largeContentTitle: String?](./largecontenttitle.md)
   A string that describes an item to display in the large content viewer.
-- [var largeContentImage: UIImage?](uilargecontentvieweritem/largecontentimage.md)
+- [var largeContentImage: UIImage?](./largecontentimage.md)
   An image that represents an item to display in the large content viewer.
-- [var scalesLargeContentImage: Bool](uilargecontentvieweritem/scaleslargecontentimage.md)
+- [var scalesLargeContentImage: Bool](./scaleslargecontentimage.md)
   A Boolean value that indicates whether the view scales the item’s image to a larger size or not.
 
 

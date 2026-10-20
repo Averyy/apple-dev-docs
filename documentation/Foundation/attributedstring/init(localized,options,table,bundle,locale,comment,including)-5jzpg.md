@@ -1,7 +1,8 @@
 # init(localized:options:table:bundle:locale:comment:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies.
 
@@ -34,7 +35,7 @@ You load this string with one of the initializers that takes `localized` as its 
 let visitString = AttributedString(localized: "_Please visit our [website](https://www.example.com)._")
 ```
 
-The resulting attributed string contains an [`inlinePresentationIntent`](attributescopes/foundationattributes/inlinepresentationintent.md) attribute to apply the [`emphasized`](inlinepresentationintent/emphasized.md) presentation intent over the entire string. It also applies the [`link`](attributescopes/foundationattributes/link.md) attribute to the text `sitio web`. User interface frameworks like SwiftUI and UIKit can then use these attributes when presenting the text to the user.
+The resulting attributed string contains an [`inlinePresentationIntent`](../attributescopes/foundationattributes/inlinepresentationintent.md) attribute to apply the [`emphasized`](../inlinepresentationintent/emphasized.md) presentation intent over the entire string. It also applies the [`link`](../attributescopes/foundationattributes/link.md) attribute to the text `sitio web`. User interface frameworks like SwiftUI and UIKit can then use these attributes when presenting the text to the user.
 
 ##### Applying Automatic Grammar Agreement
 
@@ -62,25 +63,26 @@ When the string loads, the automatic grammar agreement feature adjusts the text 
 - `bundle`: The bundle to use for looking up strings. If `nil`, an app searches its main bundle. The default is `nil`.
 - `locale`: The locale of the localized string to retrieve. If `nil`, this initializer uses the current locale. The default is `nil`.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
-- `scope`: An [`AttributeScopes`](attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
+- `scope`: An [`AttributeScopes`](../attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
 
 ## See Also
 
-- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md)
+### Creating a Localized Attributed String
+- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./init%28localized,options,table,bundle,locale,comment%29-8dlnl.md)
   Creates an attributed string by looking up a localized string from the app’s bundle.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8uknv.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./init%28localized,options,table,bundle,locale,comment,including%29-8uknv.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope.
-- [String.LocalizationValue](../swift/string/localizationvalue.md)
+- [String.LocalizationValue](../../Swift/string/localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
-- [AttributedString.FormattingOptions](attributedstring/formattingoptions.md)
+- [AttributedString.FormattingOptions](./formattingoptions.md)
   Options that affect the handling of attributes.
-- [init(localized: LocalizedStringResource)](attributedstring/init(localized:).md)
+- [init(localized: LocalizedStringResource)](./init%28localized%29.md)
   Creates a localized attributed string from a localized string resource.
-- [init<S>(localized: LocalizedStringResource, including: S.Type)](attributedstring/init(localized:including:)-2xebo.md)
+- [init<S>(localized: LocalizedStringResource, including: S.Type)](./init%28localized,including%29-2xebo.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope.
-- [init<S>(localized: LocalizedStringResource, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:including:)-15xc5.md)
+- [init<S>(localized: LocalizedStringResource, including: KeyPath<AttributeScopes, S.Type>)](./init%28localized,including%29-15xc5.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope that a key path identifies.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](../localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
 
 

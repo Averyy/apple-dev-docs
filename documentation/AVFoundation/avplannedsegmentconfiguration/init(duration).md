@@ -1,7 +1,8 @@
 # init(duration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of AVPlannedSegmentConfiguration specifying the duration of the planned segment.
 
@@ -17,6 +18,10 @@ Creates an instance of AVPlannedSegmentConfiguration specifying the duration of 
 
 ```swift
 init(duration: CMTime)
+```
+
+```objc
+- (instancetype) initWithDuration:(CMTime) duration;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # ARGeometryPrimitiveType
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kind of connection between vertices.
 
@@ -15,39 +16,44 @@ The kind of connection between vertices.
 enum ARGeometryPrimitiveType
 ```
 
+```c
+enum ARGeometryPrimitiveType : NSInteger;
+```
+
 #### Overview
 
-When you enable [`sceneReconstruction`](arworldtrackingconfiguration/scenereconstruction.md) on a world-tracking configuration, ARKit provies a wireframe mesh that models the shape of the real world using a collection of connected vertices. ARKit uses [`ARGeometryPrimitiveType`](argeometryprimitivetype.md) to indicate how a particular property of that mesh is interpreted. For example, a mesh geometry’s [`faces`](armeshgeometry/faces.md) property specifies that each face within the geometry is of type [`ARGeometryPrimitiveType.triangle`](argeometryprimitivetype/triangle.md).
+When you enable [`sceneReconstruction`](./arworldtrackingconfiguration/scenereconstruction.md) on a world-tracking configuration, ARKit provies a wireframe mesh that models the shape of the real world using a collection of connected vertices. ARKit uses [`ARGeometryPrimitiveType`](./argeometryprimitivetype.md) to indicate how a particular property of that mesh is interpreted. For example, a mesh geometry’s [`faces`](./armeshgeometry/faces.md) property specifies that each face within the geometry is of type [`ARGeometryPrimitiveType.triangle`](./argeometryprimitivetype/triangle.md).
 
 ## Topics
 
 ### Type of Connection
-- [ARGeometryPrimitiveType.line](argeometryprimitivetype/line.md)
+- [ARGeometryPrimitiveType.line](./argeometryprimitivetype/line.md)
   A line segment in which a line connects two vertices.
-- [ARGeometryPrimitiveType.triangle](argeometryprimitivetype/triangle.md)
+- [ARGeometryPrimitiveType.triangle](./argeometryprimitivetype/triangle.md)
   Three vertices that connect to form a triangle.
 ### Initializers
-- [init?(rawValue: Int)](argeometryprimitivetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./argeometryprimitivetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bytesPerIndex: Int](argeometryelement/bytesperindex.md)
+### Getting Index Information
+- [var bytesPerIndex: Int](./argeometryelement/bytesperindex.md)
   The number of bytes for each index.
-- [var count: Int](argeometryelement/count.md)
+- [var count: Int](./argeometryelement/count.md)
   The number of primitives in the buffer.
-- [var indexCountPerPrimitive: Int](argeometryelement/indexcountperprimitive.md)
+- [var indexCountPerPrimitive: Int](./argeometryelement/indexcountperprimitive.md)
   The number of indices for each primitive.
-- [var primitiveType: ARGeometryPrimitiveType](argeometryelement/primitivetype.md)
+- [var primitiveType: ARGeometryPrimitiveType](./argeometryelement/primitivetype.md)
   The geometry’s type of data (triangle, or line).
 
 

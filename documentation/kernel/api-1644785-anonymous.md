@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDActivityDisplayOn](1644785-anonymous/kiohidactivitydisplayon.md)
-- [kIOHIDActivityUserIdle](1644785-anonymous/kiohidactivityuseridle.md)
-- [kIOHIDCapsLockState](1644785-anonymous/kiohidcapslockstate.md)
-- [kIOHIDNumLockState](1644785-anonymous/kiohidnumlockstate.md)
+- [kIOHIDActivityDisplayOn](./api-1644785-anonymous/kiohidactivitydisplayon.md)
+- [kIOHIDActivityUserIdle](./api-1644785-anonymous/kiohidactivityuseridle.md)
+- [kIOHIDCapsLockState](./api-1644785-anonymous/kiohidcapslockstate.md)
+- [kIOHIDNumLockState](./api-1644785-anonymous/kiohidnumlockstate.md)
 
 
 ---

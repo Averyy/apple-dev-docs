@@ -1,7 +1,8 @@
 # state
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the current state of the directory
 
@@ -18,14 +19,19 @@ Specifies the current state of the directory
 var state: GSSyncState { get }
 ```
 
+```objc
+@property (readonly) GSSyncState state;
+```
+
 ## See Also
 
-- [enum GSSyncState](gssyncstate.md)
-- [var conflictedVersions: [GSSyncedDirectoryVersion]?](gssynceddirectorystate/conflictedversions.md)
+### Directory state information
+- [enum GSSyncState](../gssyncstate.md)
+- [var conflictedVersions: [GSSyncedDirectoryVersion]?](./conflictedversions.md)
   The conflicting versions.
-- [var error: (any Error)?](gssynceddirectorystate/error.md)
+- [var error: (any Error)?](./error.md)
   The error preventing you from using the directory.
-- [var url: URL?](gssynceddirectorystate/url.md)
+- [var url: URL?](./url.md)
   The URL of a directory to read and write game-save data in.
 
 

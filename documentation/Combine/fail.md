@@ -1,7 +1,8 @@
 # Fail
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that immediately terminates with the specified error.
 
@@ -23,36 +24,37 @@ struct Fail<Output, Failure> where Failure : Error
 ## Topics
 
 ### Creating a fail publisher
-- [init(error: Failure)](fail/init(error:).md)
+- [init(error: Failure)](./fail/init%28error%29.md)
   Creates a publisher that immediately terminates with the specified failure.
-- [init(outputType: Output.Type, failure: Failure)](fail/init(outputtype:failure:).md)
+- [init(outputType: Output.Type, failure: Failure)](./fail/init%28outputtype,failure%29.md)
   Creates publisher with the given output type, that immediately terminates with the specified failure.
 ### Inspecting publisher properties
-- [let error: Failure](fail/error.md)
+- [let error: Failure](./fail/error.md)
   The failure to send when terminating the publisher.
 ### Comparing publishers
-- [static func == (Fail<Output, Failure>, Fail<Output, Failure>) -> Bool](fail/==(_:_:).md)
+- [static func == (Fail<Output, Failure>, Fail<Output, Failure>) -> Bool](./fail/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](fail/equatable-implementations.md)
+- [Equatable Implementations](./fail/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../Swift/equatable.md)
+- [Publisher](./publisher.md)
 
 ## See Also
 
-- [class Future](future.md)
+### Convenience Publishers
+- [class Future](./future.md)
   A publisher that eventually produces a single value and then finishes or fails.
-- [struct Just](just.md)
+- [struct Just](./just.md)
   A publisher that emits an output to each subscriber just once, and then finishes.
-- [struct Deferred](deferred.md)
+- [struct Deferred](./deferred.md)
   A publisher that awaits subscription before running the supplied closure to create a publisher for the new subscriber.
-- [struct Empty](empty.md)
+- [struct Empty](./empty.md)
   A publisher that never publishes any values, and optionally finishes immediately.
-- [struct Record](record.md)
+- [struct Record](./record.md)
   A publisher that allows for recording a series of inputs and a completion, for later playback to each subscriber.
 
 

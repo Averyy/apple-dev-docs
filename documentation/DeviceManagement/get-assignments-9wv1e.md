@@ -1,7 +1,8 @@
 # Get Assignments
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the set of current assignments for users or devices.
 
@@ -10,10 +11,10 @@ Get the set of current assignments for users or devices.
 
 ## Mentions
 
-- [Getting started with the management API](getting-started-with-the-management-api.md)
-- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
-- [Using paginated endpoints](using-paginated-endpoints.md)
-- [Managing assets](managing-assets.md)
+- [Getting started with the management API](./getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
+- [Using paginated endpoints](./using-paginated-endpoints.md)
+- [Managing assets](./managing-assets.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ Get the set of current assignments for users or devices.
 
 **Request**:
 
-```None
+```
 ?adamId=408709785
 ```
 
@@ -53,9 +54,9 @@ Get the set of current assignments for users or devices.
 ## Topics
 
 ### Response
-- [object GetAssignmentsResponse](getassignmentsresponse.md)
+- [object GetAssignmentsResponse](./getassignmentsresponse.md)
   The paginated response that contains requested assignments.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 ## Endpoint
@@ -64,24 +65,34 @@ Get the set of current assignments for users or devices.
 
 ## Parameters
 
+### Query Parameters
+
 - `adamId` (string): The filter for the assignment product’s unique identifier.
 - `clientUserId` (string): The filter for the unique identifier of assigned users in your organization.
 - `excludeInactiveUsers` (boolean)
 - `includeUserState` (boolean)
 - `pageIndex` (int32): The requested page index.
-- `pricingParam` (string)
+- `pricingParam` (string): **Allowed Values**: `STDQ`, `PLUS`
 - `serialNumber` (string): The filter for the unique identifier of assigned devices in your organization.
 - `sinceVersionId` (string): The filter for modified assignments since the specified version identifier.
 
+## Responses
+
+- `200` OK (`GetAssignmentsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
+
 ## See Also
 
-- [Get Assets](get-assets-4ski1.md)
+### Asset management
+- [Get Assets](./get-assets-4ski1.md)
   Get the set of assets that your organization manages.
-- [Associate Assets](associate-assets.md)
+- [Associate Assets](./associate-assets.md)
   Associate assets with client user IDs and serial numbers.
-- [Disassociate Assets](disassociate-assets.md)
+- [Disassociate Assets](./disassociate-assets.md)
   Disassociate assets from client user IDs and serial numbers.
-- [Revoke Assets](revoke-assets.md)
+- [Revoke Assets](./revoke-assets.md)
   Revoke assets from client user IDs and serial numbers.
 
 

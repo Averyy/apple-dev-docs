@@ -1,7 +1,8 @@
 # incomingMessageNotifications
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of incoming message notifications produced by the service.
 
@@ -16,15 +17,16 @@ final var incomingMessageNotifications: some AsyncSequence<MMSService.IncomingMe
 
 #### Discussion
 
-Iterate over this sequence with a `for`-`await`-`in` loop to receive [`MMSService.IncomingMessageNotification`](mmsservice/incomingmessagenotification.md) instances that indicate the arrival of incoming messages.
+Iterate over this sequence with a `for`-`await`-`in` loop to receive [`MMSService.IncomingMessageNotification`](./incomingmessagenotification.md) instances that indicate the arrival of incoming messages.
 
 ## See Also
 
-- [struct CellularServiceID](cellularserviceid.md)
+### Receiving messages
+- [struct CellularServiceID](../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [struct MMSMessageID](mmsmessageid.md)
+- [struct MMSMessageID](../mmsmessageid.md)
   A structure that represents an MMS message identifier.
-- [MMSService.IncomingMessageNotification](mmsservice/incomingmessagenotification.md)
+- [MMSService.IncomingMessageNotification](./incomingmessagenotification.md)
   A structure that contains information about an incoming MMS message.
 
 

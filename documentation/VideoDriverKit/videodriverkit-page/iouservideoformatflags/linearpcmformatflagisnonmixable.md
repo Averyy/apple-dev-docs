@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsNonMixable
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Synonym for `FormatFlagIsNonMixable`.
 
@@ -10,13 +11,14 @@ Synonym for `FormatFlagIsNonMixable`.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsNonMixable
 ```
 
 ## See Also
 
-- [FormatFlagIsNonMixable](videodriverkit/iouservideoformatflags/formatflagisnonmixable.md)
+### Mixability flags
+- [FormatFlagIsNonMixable](./formatflagisnonmixable.md)
   Set to indicate when a format is non-mixable.
 
 

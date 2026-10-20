@@ -1,7 +1,8 @@
 # AudioResource.Calibration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for different calibration modes that can be applied for playback.
 
@@ -22,32 +23,33 @@ struct Calibration
 ## Topics
 
 ### Type Methods
-- [static func absolute(dBSPL: Audio.Decibel) -> AudioResource.Calibration](audioresource/calibration/absolute(dbspl:).md)
+- [static func absolute(dBSPL: Audio.Decibel) -> AudioResource.Calibration](./calibration/absolute%28dbspl%29.md)
   The reference level (-12dBLUFS) of the audio source material will be reproduced at the given `dBSPL` level on known audio output hardware.
-- [static func relative(dBSPL: Audio.Decibel) -> AudioResource.Calibration](audioresource/calibration/relative(dbspl:).md)
+- [static func relative(dBSPL: Audio.Decibel) -> AudioResource.Calibration](./calibration/relative%28dbspl%29.md)
   Relative adjustment of the resource from the default level of the audio output hardware.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AudioFileResource](audiofileresource.md)
+### Audio resources
+- [class AudioFileResource](../audiofileresource.md)
   An audio resource that you load from a file or from a URL.
-- [class AudioFileGroupResource](audiofilegroupresource.md)
+- [class AudioFileGroupResource](../audiofilegroupresource.md)
   An audio file group.
-- [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
-- [struct AudioLibraryComponent](audiolibrarycomponent.md)
+- [class AudioBufferResource](../audiobufferresource.md)
+  An audio resource that you load from an [`AVAudioBuffer`](../../AVFAudio/avaudiobuffer.md).
+- [struct AudioLibraryComponent](../audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
-- [class AudioResource](audioresource.md)
+- [class AudioResource](../audioresource.md)
   A playable audio resource
-- [AudioResource.Normalization](audioresource/normalization.md)
+- [AudioResource.Normalization](./normalization.md)
   Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 

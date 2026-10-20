@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard level of prominence for a badge.
 
@@ -34,9 +35,10 @@ List(mailboxes) { mailbox in
 
 ## See Also
 
-- [static let increased: BadgeProminence](badgeprominence/increased.md)
+### Getting background prominence
+- [static let increased: BadgeProminence](./increased.md)
   The highest level of prominence for a badge.
-- [static let decreased: BadgeProminence](badgeprominence/decreased.md)
+- [static let decreased: BadgeProminence](./decreased.md)
   The lowest level of prominence for a badge.
 
 

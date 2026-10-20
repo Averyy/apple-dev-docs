@@ -1,7 +1,8 @@
 # resolved(in:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the referenced image from the transcript.
 
@@ -21,11 +22,11 @@ func resolved(in transcript: some Sequence<Transcript.Entry>) -> Transcript.Imag
 
 #### Return Value
 
-The [`Transcript.ImageAttachment`](transcript/imageattachment.md) for this reference, or `nil` if no attachment with label [`attachmentLabel`](imagereference/attachmentlabel.md) is found in the transcript.
+The [`Transcript.ImageAttachment`](../transcript/imageattachment.md) for this reference, or `nil` if no attachment with label [`attachmentLabel`](./attachmentlabel.md) is found in the transcript.
 
 #### Discussion
 
-If more than one attachment shares an [`attachmentLabel`](imagereference/attachmentlabel.md), the attachment from the latest entry is returned.
+If more than one attachment shares an [`attachmentLabel`](./attachmentlabel.md), the attachment from the latest entry is returned.
 
 ## Parameters
 

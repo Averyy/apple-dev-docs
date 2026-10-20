@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Init without label provided as a convenience.
 

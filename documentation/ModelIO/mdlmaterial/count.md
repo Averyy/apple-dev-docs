@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of material properties in the material.
 
@@ -19,11 +20,16 @@ The number of material properties in the material.
 var count: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger count;
+```
+
 ## See Also
 
-- [subscript(String) -> MDLMaterialProperty?](mdlmaterial/subscript(_:)-323j3.md)
+### Accessing material properties with subscript syntax
+- [subscript(String) -> MDLMaterialProperty?](./subscript%28_%29-323j3.md)
   Returns the material property with the specified name, for use with subscript syntax.
-- [subscript(Int) -> MDLMaterialProperty?](mdlmaterial/subscript(_:)-19j2.md)
+- [subscript(Int) -> MDLMaterialProperty?](./subscript%28_%29-19j2.md)
   Returns the material property at the specified index in the material, for use with subscript syntax.
 
 

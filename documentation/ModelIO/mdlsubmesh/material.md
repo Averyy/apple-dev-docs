@@ -1,7 +1,8 @@
 # material
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that describes the intended surface appearance of the submesh for rendering.
 
@@ -19,9 +20,13 @@ An object that describes the intended surface appearance of the submesh for rend
 var material: MDLMaterial? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLMaterial * material;
+```
+
 #### Discussion
 
-A [`MDLMaterial`](mdlmaterial.md) object describes the complete set of rendering parameters for producing a specific surface appearance, such as color, texture, specularity, and opacity.
+A [`MDLMaterial`](../mdlmaterial.md) object describes the complete set of rendering parameters for producing a specific surface appearance, such as color, texture, specularity, and opacity.
 
 
 ---

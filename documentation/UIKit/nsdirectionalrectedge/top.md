@@ -1,7 +1,8 @@
 # top
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The top edge.
 
@@ -19,15 +20,20 @@ The top edge.
 static var top: NSDirectionalRectEdge { get }
 ```
 
+```c
+NSDirectionalRectEdgeTop
+```
+
 ## See Also
 
-- [static var leading: NSDirectionalRectEdge](nsdirectionalrectedge/leading.md)
+### Constants
+- [static var leading: NSDirectionalRectEdge](./leading.md)
   The leading edge.
-- [static var bottom: NSDirectionalRectEdge](nsdirectionalrectedge/bottom.md)
+- [static var bottom: NSDirectionalRectEdge](./bottom.md)
   The bottom edge.
-- [static var trailing: NSDirectionalRectEdge](nsdirectionalrectedge/trailing.md)
+- [static var trailing: NSDirectionalRectEdge](./trailing.md)
   The trailing edge.
-- [static var all: NSDirectionalRectEdge](nsdirectionalrectedge/all.md)
+- [static var all: NSDirectionalRectEdge](./all.md)
   All edges.
 
 

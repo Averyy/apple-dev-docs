@@ -1,7 +1,8 @@
 # MediaItem
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a new `MediaItem` object from the information stored in the URL location.
 
@@ -10,14 +11,14 @@ Creates a new `MediaItem` object from the information stored in the URL location
 
 ## Declaration
 
-```swift
+```
 new MediaItem(
     in String type, 
     in optional String url
 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the `MediaItem` object found in the location specified by the URL.
 

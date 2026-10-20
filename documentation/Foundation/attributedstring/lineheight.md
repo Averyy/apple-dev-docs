@@ -1,7 +1,8 @@
 # AttributedString.LineHeight
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The line height definition of a paragraph.
 
@@ -27,31 +28,31 @@ The line height defines the distance between the baselines of two subsequent lin
 ## Topics
 
 ### Type Properties
-- [static var loose: AttributedString.LineHeight](attributedstring/lineheight/loose.md)
+- [static var loose: AttributedString.LineHeight](./lineheight/loose.md)
   Constant line height based on a multiple of the point size that is perceived as loose.
-- [static var normal: AttributedString.LineHeight](attributedstring/lineheight/normal.md)
+- [static var normal: AttributedString.LineHeight](./lineheight/normal.md)
   Constant line height based on a multiple of the point size that is perceived as normal.
-- [static var tight: AttributedString.LineHeight](attributedstring/lineheight/tight.md)
+- [static var tight: AttributedString.LineHeight](./lineheight/tight.md)
   Constant line height based on a multiple of the point size that is perceived as tight.
-- [static var variable: AttributedString.LineHeight](attributedstring/lineheight/variable.md)
+- [static var variable: AttributedString.LineHeight](./lineheight/variable.md)
   Variable line height based on font metrics.
 ### Type Methods
-- [static func exact(points: CGFloat) -> AttributedString.LineHeight](attributedstring/lineheight/exact(points:).md)
+- [static func exact(points: CGFloat) -> AttributedString.LineHeight](./lineheight/exact%28points%29.md)
   Constant line height based on a fixed total.
-- [static func leading(increase: CGFloat) -> AttributedString.LineHeight](attributedstring/lineheight/leading(increase:).md)
+- [static func leading(increase: CGFloat) -> AttributedString.LineHeight](./lineheight/leading%28increase%29.md)
   Constant line height based on point size and a fixed increase.
-- [static func multiple(factor: CGFloat) -> AttributedString.LineHeight](attributedstring/lineheight/multiple(factor:).md)
+- [static func multiple(factor: CGFloat) -> AttributedString.LineHeight](./lineheight/multiple%28factor%29.md)
   Constant line height based on a multiple of the point size.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

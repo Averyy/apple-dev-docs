@@ -1,7 +1,8 @@
 # events(matching:)
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous list of events that match the provided criteria.
 
@@ -16,7 +17,7 @@ func events(matching criteria: [AAUSBAccessoryMatchingCriteria]) async throws ->
 
 ## Parameters
 
-- `criteria`: An array of [`AAUSBAccessoryMatchingCriteria`](aausbaccessorymatchingcriteria.md) to use to filter events.
+- `criteria`: An array of [`AAUSBAccessoryMatchingCriteria`](../aausbaccessorymatchingcriteria.md) to use to filter events.
 
 
 ---

@@ -1,7 +1,8 @@
 # setAngularVelocity(_:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the angular velocity of each axis of orientation.
 
@@ -19,13 +20,13 @@ final func setAngularVelocity(_ angularVelocity: Vector3D) async throws
 
 ## Mentions
 
-- [Modify rotation and positioning programmatically](modify-rotation-and-positioning-behavior-programmatically.md)
+- [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
 #### Discussion
 
 The angular velocity is expressed in radians per second for pitch, yaw, and roll. This method works only when you disable system tracking.
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if the accessory disconnects, or other errors if communication with the accessory fails.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if the accessory disconnects, or other errors if communication with the accessory fails.
 
 ## Parameters
 
@@ -33,11 +34,12 @@ The angular velocity is expressed in radians per second for pitch, yaw, and roll
 
 ## See Also
 
-- [func setLimits(DockAccessory.Limits) throws](dockaccessory/setlimits(_:).md)
+### Setting position and limits
+- [func setLimits(DockAccessory.Limits) throws](./setlimits%28_%29.md)
   Sets limits for the axes of rotation.
-- [func setOrientation(Vector3D, duration: Duration, relative: Bool) throws -> Progress](dockaccessory/setorientation(_:duration:relative:)-2epe2.md)
+- [func setOrientation(Vector3D, duration: Duration, relative: Bool) throws -> Progress](./setorientation%28_,duration,relative%29-2epe2.md)
   Sets the position of each axis of orientation to radians for pitch, yaw, and roll.
-- [func setOrientation(Rotation3D, duration: Duration, relative: Bool) throws -> Progress](dockaccessory/setorientation(_:duration:relative:)-6b0fl.md)
+- [func setOrientation(Rotation3D, duration: Duration, relative: Bool) throws -> Progress](./setorientation%28_,duration,relative%29-6b0fl.md)
   Sets the position of each axis of orientation to radians for pitch, yaw, and roll.
 
 

@@ -1,7 +1,8 @@
 # devices
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of devices that match the search criteria of the discovery session.
 
@@ -19,19 +20,24 @@ A list of devices that match the search criteria of the discovery session.
 var devices: [AVCaptureDevice] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureDevice *> * devices;
+```
+
 ## Mentions
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+- [Choosing a capture device](../../choosing-a-capture-device.md)
 
 #### Discussion
 
-Querying this property provides an array devices currently available on the system. The system sorts the device list according to the order you specified when you created the discovery session. If you created the session with a position of [`AVCaptureDevice.Position.unspecified`](avcapturedevice/position-swift.enum/unspecified.md), the system further sorts them by position in the [`AVCaptureDevice.Position`](avcapturedevice/position-swift.enum.md) enumeration.
+Querying this property provides an array devices currently available on the system. The system sorts the device list according to the order you specified when you created the discovery session. If you created the session with a position of [`AVCaptureDevice.Position.unspecified`](../position-swift.enum/unspecified.md), the system further sorts them by position in the [`AVCaptureDevice.Position`](../position-swift.enum.md) enumeration.
 
 Key-value observe this property to monitor changes to the device list.
 
 ## See Also
 
-- [var supportedMultiCamDeviceSets: [Set<AVCaptureDevice>]](avcapturedevice/discoverysession/supportedmulticamdevicesets.md)
+### Finding devices
+- [var supportedMultiCamDeviceSets: [Set<AVCaptureDevice>]](./supportedmulticamdevicesets.md)
   Sets of capture devices that you can use simultaneously in a multi-camera session.
 
 

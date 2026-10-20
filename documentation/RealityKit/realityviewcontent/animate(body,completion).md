@@ -1,7 +1,8 @@
 # animate(body:completion:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 26.0+
@@ -15,7 +16,7 @@ func animate(body: () -> Void, completion: (() -> Void)? = nil)
 
 ## Mentions
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+- [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
 
 ---

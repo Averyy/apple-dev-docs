@@ -1,14 +1,17 @@
 # init(id:url:shouldSendURLOnly:localizedName:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new merchant object with the specified information.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 17.0+
+- iOS 15.4+ - Deprecated in 16.4
+- iPadOS 15.4+ - Deprecated in 16.4
+- Mac Catalyst 17.0+ - Deprecated in 17.0
+
+> **Deprecated**: Not supported
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # DockAccessory.BatteryStates
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of dock accessory battery states.
 
@@ -20,19 +21,19 @@ struct BatteryStates
 ## Topics
 
 ### Structures
-- [DockAccessory.BatteryStates.Iterator](dockaccessory/batterystates-swift.struct/iterator.md)
+- [DockAccessory.BatteryStates.Iterator](./batterystates-swift.struct/iterator.md)
   An object that allows iteration over dock accessory events.
 ### Instance Methods
-- [func makeAsyncIterator() -> DockAccessory.BatteryStates.Iterator](dockaccessory/batterystates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> DockAccessory.BatteryStates.Iterator](./batterystates-swift.struct/makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory events.
 ### Type Aliases
-- [DockAccessory.BatteryStates.Element](dockaccessory/batterystates-swift.struct/element.md)
+- [DockAccessory.BatteryStates.Element](./batterystates-swift.struct/element.md)
   A dock accessory event.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

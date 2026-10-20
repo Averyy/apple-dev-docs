@@ -1,7 +1,8 @@
 # isAdhocSigned
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The code is adhoc signed i.e. it contains a code directory and page hashes but no CMS signature.
 

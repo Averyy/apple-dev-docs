@@ -1,7 +1,8 @@
 # new LookAroundPreview(parent, location, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a Look Around preview you embed on a webpage and initializes it with the constructor options you choose.
 
@@ -10,7 +11,7 @@ Creates a Look Around preview you embed on a webpage and initializes it with the
 
 ## Declaration
 
-```swift
+```
 constructor(
     parent?: HTMLElement,
     location?: CoordinateData | Place | LookAroundScene,
@@ -20,7 +21,7 @@ constructor(
 
 #### Return Value
 
-A [`LookAroundPreview`](lookaroundpreview.md) instance.
+A [`LookAroundPreview`](../lookaroundpreview.md) instance.
 
 #### Discussion
 
@@ -29,8 +30,8 @@ The Look Around preview’s constructor takes an optional `parent` argument and 
 ## Parameters
 
 - `parent`: A DOM element, or the ID of a DOM element, to use as your view’s container.
-- `location`: A [`Coordinate`](coordinate.md) that describes the location the preview shows.
-- `options`: Options that [`LookAroundPreviewOptions`](lookaroundpreviewoptions.md) defines for initializing the properties of the preview.
+- `location`: A [`Coordinate`](../coordinate.md) that describes the location the preview shows.
+- `options`: Options that [`LookAroundPreviewOptions`](../lookaroundpreviewoptions.md) defines for initializing the properties of the preview.
 
 
 ---

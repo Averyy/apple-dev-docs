@@ -1,7 +1,8 @@
 # RCSMessage.CustomReaction.Operation
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,19 +16,19 @@ enum Operation
 ## Topics
 
 ### Enumeration Cases
-- [RCSMessage.CustomReaction.Operation.add(_:)](rcsmessage/customreaction/operation-swift.enum/add(_:).md)
+- [RCSMessage.CustomReaction.Operation.add(_:)](./operation-swift.enum/add%28_%29.md)
   An operation type for adding a custom reaction.
-- [RCSMessage.CustomReaction.Operation.remove](rcsmessage/customreaction/operation-swift.enum/remove.md)
+- [RCSMessage.CustomReaction.Operation.remove](./operation-swift.enum/remove.md)
   An operation type for removing a custom reaction.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

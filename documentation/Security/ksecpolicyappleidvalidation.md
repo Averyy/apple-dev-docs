@@ -1,7 +1,8 @@
 # kSecPolicyAppleIDValidation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Policy for use in evaluating Apple ID certificates.
 
@@ -20,9 +21,13 @@ Policy for use in evaluating Apple ID certificates.
 let kSecPolicyAppleIDValidation: CFString
 ```
 
+```c
+extern CFStringRef const kSecPolicyAppleIDValidation;
+```
+
 #### Discussion
 
-To learn more about Apple ID certificates, read [`App Distribution Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
+To learn more about Apple ID certificates, read [App Distribution Guide](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
 
 
 ---

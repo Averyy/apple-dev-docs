@@ -1,7 +1,8 @@
 # TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256: SSLCipherSuite { get }
+```
+
+```c
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
 ```
 
 

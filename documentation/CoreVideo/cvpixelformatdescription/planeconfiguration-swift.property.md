@@ -1,7 +1,8 @@
 # planeConfiguration
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines planar or non-planar configuration
 

@@ -1,7 +1,8 @@
 # isOnGround
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the character controller is on the ground.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the character controller is on the ground
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let isOnGround: Bool
 
 ## See Also
 
-- [let velocity: SIMD3<Float>](charactercontrollerstatecomponent/velocity.md)
+### Accessing character controller state
+- [let velocity: SIMD3<Float>](./velocity.md)
   The linear speed relative to the origin in physics space.
 
 

@@ -1,7 +1,8 @@
 # dimensions
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the dimensions of the shape structure.
 
@@ -11,7 +12,7 @@ An array that contains the dimensions of the shape structure.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

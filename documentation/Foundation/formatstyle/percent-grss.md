@@ -1,7 +1,8 @@
 # percent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting 16-bit floating-point values as a percent representation.
 
@@ -20,17 +21,20 @@ A style for formatting 16-bit floating-point values as a percent representation.
 static var percent: FloatingPointFormatStyle<Float16>.Percent { get }
 ```
 
+Available when `Self` is `FloatingPointFormatStyle<Float16>.Percent`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`FloatingPointFormatStyle`](floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint).
+Use this type property when the call point allows the use of [`FloatingPointFormatStyle`](../floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md).
 
 ## See Also
 
-- [static var percent: FloatingPointFormatStyle<Float>.Percent](formatstyle/percent-2gva1.md)
+### Applying percentage styles for floating-point values
+- [static var percent: FloatingPointFormatStyle<Float>.Percent](./percent-2gva1.md)
   A style for formatting the Swift standard single-precision floating-point type as a percent representation.
-- [static var percent: FloatingPointFormatStyle<Double>.Percent](formatstyle/percent-6cwuv.md)
+- [static var percent: FloatingPointFormatStyle<Double>.Percent](./percent-6cwuv.md)
   A style for formatting the Swift standard single-precision floating-point type as a percent representation.
-- [FloatingPointFormatStyle.Percent](floatingpointformatstyle/percent.md)
+- [FloatingPointFormatStyle.Percent](../floatingpointformatstyle/percent.md)
   A format style that converts between floating-point percentage values and their textual representations.
 
 

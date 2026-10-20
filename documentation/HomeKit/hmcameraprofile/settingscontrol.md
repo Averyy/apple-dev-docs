@@ -1,7 +1,8 @@
 # settingsControl
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the settings on the camera.
 
@@ -19,11 +20,16 @@ Controls the settings on the camera.
 var settingsControl: HMCameraSettingsControl? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCameraSettingsControl * settingsControl;
+```
+
 ## See Also
 
-- [class HMCameraSettingsControl](hmcamerasettingscontrol.md)
+### Controlling camera settings
+- [class HMCameraSettingsControl](../hmcamerasettingscontrol.md)
   An object that represents the ability to control a camera’s settings.
-- [class HMCameraControl](hmcameracontrol.md)
+- [class HMCameraControl](../hmcameracontrol.md)
   An abstract class that represents a camera control.
 
 

@@ -1,7 +1,8 @@
 # MobileDriversLicenseDisplayRequest.Response.ValidationOutcome.rejected
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A message that indicates the user rejected the document response.
 

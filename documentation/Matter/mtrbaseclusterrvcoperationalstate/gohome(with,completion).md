@@ -1,7 +1,8 @@
 # goHome(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command GoHome
 
@@ -17,7 +18,15 @@ Command GoHome
 ## Declaration
 
 ```swift
+func goHome(with params: MTRRVCOperationalStateClusterGoHomeParams?, completion: @escaping @Sendable (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func goHome(with params: MTRRVCOperationalStateClusterGoHomeParams?) async throws -> MTRRVCOperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) goHomeWithParams:(MTRRVCOperationalStateClusterGoHomeParams *) params completion:(void (^)(MTRRVCOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

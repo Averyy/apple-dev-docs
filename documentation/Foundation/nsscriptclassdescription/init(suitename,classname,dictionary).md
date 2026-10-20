@@ -1,7 +1,8 @@
 # init(suiteName:className:dictionary:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated instance of `NSScriptClassDescription`.
 
@@ -15,13 +16,17 @@ Initializes and returns a newly allocated instance of `NSScriptClassDescription`
 init?(suiteName: String, className: String, dictionary classDeclaration: [AnyHashable : Any]?)
 ```
 
+```objc
+- (instancetype) initWithSuiteName:(NSString *) suiteName className:(NSString *) className dictionary:(NSDictionary *) classDeclaration;
+```
+
 #### Return Value
 
 The initialized instance. Returns `nil` if the event code value for the class description itself is missing or is not an `NSString`. Also returns `nil` if the superclass name or any of the subdictionaries of descriptions are not of the right type.
 
 #### Discussion
 
-This method registers `self` with the application’s global instance of [`NSScriptSuiteRegistry`](nsscriptsuiteregistry.md).
+This method registers `self` with the application’s global instance of [`NSScriptSuiteRegistry`](../nsscriptsuiteregistry.md).
 
 ## Parameters
 
@@ -31,8 +36,9 @@ This method registers `self` with the application’s global instance of [`NSScr
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [Key-Value Coding Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+- [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i)
 
 
 ---

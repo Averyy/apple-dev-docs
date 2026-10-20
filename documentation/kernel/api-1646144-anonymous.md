@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOATADefaultPerformance](1646144-anonymous/kioatadefaultperformance.md)
-- [kIOATAMaxPerformance](1646144-anonymous/kioatamaxperformance.md)
-- [kIOATAMaxPowerSavings](1646144-anonymous/kioatamaxpowersavings.md)
+- [kIOATADefaultPerformance](./api-1646144-anonymous/kioatadefaultperformance.md)
+- [kIOATAMaxPerformance](./api-1646144-anonymous/kioatamaxperformance.md)
+- [kIOATAMaxPowerSavings](./api-1646144-anonymous/kioatamaxpowersavings.md)
 
 
 ---

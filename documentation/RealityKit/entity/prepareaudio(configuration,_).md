@@ -1,7 +1,8 @@
 # prepareAudio(configuration:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares a real-time audio playback instances.
 
@@ -22,11 +23,11 @@ Prepares a real-time audio playback instances.
 
 #### Return Value
 
-An [`AudioGeneratorController`](audiogeneratorcontroller.md) instance that you use to manage audio playback. Use the controller to set the volume and start or stop playback.
+An [`AudioGeneratorController`](../audiogeneratorcontroller.md) instance that you use to manage audio playback. Use the controller to set the volume and start or stop playback.
 
 #### Discussion
 
-If you want to start playback immediately, use the [`playAudio(configuration:_:)`](entity/playaudio(configuration:_:).md) method instead.
+If you want to start playback immediately, use the [`playAudio(configuration:_:)`](./playaudio%28configuration,_%29.md) method instead.
 
 > **Note**: See `Audio.GeneratorRenderHandler` for compliance with Swift 6 concurrency.
 
@@ -37,19 +38,20 @@ If you want to start playback immediately, use the [`playAudio(configuration:_:)
 
 ## See Also
 
-- [func playAudio(AudioResource) -> AudioPlaybackController](entity/playaudio(_:).md)
+### Playing audio
+- [func playAudio(AudioResource) -> AudioPlaybackController](./playaudio%28_%29.md)
   Prepares and plays a new audio playback instance on this entity.
-- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/playaudio(configuration:_:).md)
+- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](./playaudio%28configuration,_%29.md)
   Prepares and plays a real-time audio playback instance.
-- [func prepareAudio(AudioResource) -> AudioPlaybackController](entity/prepareaudio(_:).md)
+- [func prepareAudio(AudioResource) -> AudioPlaybackController](./prepareaudio%28_%29.md)
   Prepares an audio resource for playback.
-- [func stopAllAudio()](entity/stopallaudio.md)
+- [func stopAllAudio()](./stopallaudio%28%29.md)
   Stops playback for all audio on this entity.
-- [var spatialAudio: SpatialAudioComponent?](entity/spatialaudio.md)
+- [var spatialAudio: SpatialAudioComponent?](./spatialaudio.md)
   The component that configures the spatial rendering of sounds from this entity.
-- [var ambientAudio: AmbientAudioComponent?](entity/ambientaudio.md)
+- [var ambientAudio: AmbientAudioComponent?](./ambientaudio.md)
   The component that configures the ambient rendering of sounds from this entity.
-- [var channelAudio: ChannelAudioComponent?](entity/channelaudio.md)
+- [var channelAudio: ChannelAudioComponent?](./channelaudio.md)
   The component that configures the channel-based rendering of sounds from this entity.
 
 

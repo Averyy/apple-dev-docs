@@ -1,7 +1,8 @@
 # AXFeatureOverrideSession
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A token object that represents an override session held by your app.
 
@@ -15,28 +16,33 @@ A token object that represents an override session held by your app.
 class AXFeatureOverrideSession
 ```
 
+```objc
+@interface AXFeatureOverrideSession : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AXFeatureOverrideSessionManager](axfeatureoverridesessionmanager.md)
+### Override sessions
+- [class AXFeatureOverrideSessionManager](./axfeatureoverridesessionmanager.md)
   A manager class to begin and end accessibility feature override sessions. Multiple override sessions are reconciled by combining the requests, preferring feature enablement. Ending all sessions restores the prior state of Accessibility feature enablement. Your app must be entitled with com.apple.developer.accessibility.merchant-api-control.
-- [AXFeatureOverrideSession.Options](axfeatureoverridesession/options.md)
+- [AXFeatureOverrideSession.Options](./axfeatureoverridesession/options.md)
   Options indicating which Accessibility features will be turned on or off when an override session is held by your app.
-- [let AXFeatureOverrideSessionErrorDomain: String](axfeatureoverridesessionerrordomain.md)
-- [struct AXFeatureOverrideSessionError](axfeatureoverridesessionerror-swift.struct.md)
-- [AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/code.md)
-- [com.apple.developer.accessibility.merchant-api-control](../bundleresources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [let AXFeatureOverrideSessionErrorDomain: String](./axfeatureoverridesessionerrordomain.md)
+- [struct AXFeatureOverrideSessionError](./axfeatureoverridesessionerror-swift.struct.md)
+- [AXFeatureOverrideSessionError.Code](./axfeatureoverridesessionerror-swift.struct/code.md)
+- [com.apple.developer.accessibility.merchant-api-control](../BundleResources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 
 
 ---

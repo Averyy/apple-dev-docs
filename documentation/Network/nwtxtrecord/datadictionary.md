@@ -1,7 +1,8 @@
 # dataDictionary
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the contents of an NWTXTRecord represented by a Dictionary<String, Data>.
 

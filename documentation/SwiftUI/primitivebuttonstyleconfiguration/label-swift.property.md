@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that describes the effect of calling the button’s action.
 
@@ -22,7 +23,8 @@ let label: PrimitiveButtonStyleConfiguration.Label
 
 ## See Also
 
-- [PrimitiveButtonStyleConfiguration.Label](primitivebuttonstyleconfiguration/label-swift.struct.md)
+### Configuring a button’s label
+- [PrimitiveButtonStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a button.
 
 

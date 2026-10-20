@@ -1,7 +1,8 @@
 # ceilMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Affects how the graph computes the output size.
 
@@ -17,6 +18,10 @@ Affects how the graph computes the output size.
 
 ```swift
 var ceilMode: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL ceilMode;
 ```
 
 #### Discussion

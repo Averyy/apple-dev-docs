@@ -1,7 +1,8 @@
 # libkern::adopt_memory
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 const adopt_memory_t libkern::adopt_memory;
 ```
 

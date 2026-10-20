@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.2+
@@ -14,7 +15,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](bluetoothkeyboardreturntype/init(_:).md)
+### Constants
+- [init(UInt32)](./init%28_%29.md)
 
 
 ---

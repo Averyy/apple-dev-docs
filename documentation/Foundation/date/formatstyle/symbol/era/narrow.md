@@ -1,7 +1,8 @@
 # narrow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A narrow representation of an era.
 
@@ -26,9 +27,10 @@ A custom format style conveying the shortest representation of an era. For examp
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era/abbreviated.md)
+### Modifying an Era
+- [static var abbreviated: Date.FormatStyle.Symbol.Era](./abbreviated.md)
   An abbreviated representation of an era.
-- [static var wide: Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.Era](./wide.md)
   A full representation of an era.
 
 

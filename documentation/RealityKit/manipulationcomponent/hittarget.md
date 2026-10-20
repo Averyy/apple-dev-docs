@@ -1,7 +1,8 @@
 # ManipulationComponent.HitTarget
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that redirects input to a different entity with a `ManipulationComponent`.
 
@@ -33,16 +34,16 @@ proxyTarget.components.set(targetComponent)
 ## Topics
 
 ### Initializers
-- [init(redirectedEntity: Entity?)](manipulationcomponent/hittarget/init(redirectedentity:).md)
+- [init(redirectedEntity: Entity?)](./hittarget/init%28redirectedentity%29.md)
   Initialize a `HitTarget` component redirecting to an entity that has a `ManipulationComponent`.
 ### Instance Properties
-- [var redirectedEntity: Entity?](manipulationcomponent/hittarget/redirectedentity.md)
+- [var redirectedEntity: Entity?](./hittarget/redirectedentity.md)
   The entity to redirect the interaction to.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](../component.md)
 
 
 ---

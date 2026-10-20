@@ -1,7 +1,8 @@
 # SubscriptionVersionCreateRequest.Data.Relationships.Subscription
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The subscription to associate with the new subscription version.
 
@@ -10,14 +11,14 @@ The subscription to associate with the new subscription version.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionVersionCreateRequest.Data.Relationships.Subscription
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionVersionCreateRequest.Data.Relationships.Subscription.Data](subscriptionversioncreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionVersionCreateRequest.Data.Relationships.Subscription.Data](./subscription-data.dictionary/data-data.dictionary.md)
   The resource linkage data identifying the subscription associated with this request.
 
 ## Properties

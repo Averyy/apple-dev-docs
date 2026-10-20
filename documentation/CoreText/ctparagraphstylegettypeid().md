@@ -1,7 +1,8 @@
 # CTParagraphStyleGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the paragraph style object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the paragraph style object.
 
 ```swift
 func CTParagraphStyleGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTParagraphStyleGetTypeID();
 ```
 
 

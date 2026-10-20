@@ -1,7 +1,8 @@
 # userInitiated
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Always use the default focus preference when focus moves into the affected branch.
 
@@ -22,7 +23,8 @@ static let userInitiated: DefaultFocusEvaluationPriority
 
 ## See Also
 
-- [static let automatic: DefaultFocusEvaluationPriority](defaultfocusevaluationpriority/automatic.md)
+### Getting the priorities
+- [static let automatic: DefaultFocusEvaluationPriority](./automatic.md)
   Use the default focus preference when focus moves into the affected branch automatically, but ignore it when the movement is driven by a user-initiated navigation command.
 
 

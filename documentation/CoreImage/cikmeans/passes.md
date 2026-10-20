@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var passes: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float passes;
+```
+
 ## See Also
 
-- [var count: Int](cikmeans/count.md)
-- [var inputMeans: CIImage?](cikmeans/inputmeans.md)
-- [var perceptual: Bool](cikmeans/perceptual.md)
+### Instance Properties
+- [var count: Int](./count.md)
+- [var inputMeans: CIImage?](./inputmeans.md)
+- [var perceptual: Bool](./perceptual.md)
 
 
 ---

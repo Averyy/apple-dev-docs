@@ -1,7 +1,8 @@
 # textMarkupAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of text style attributes to apply to the text.
 
@@ -19,13 +20,18 @@ A dictionary of text style attributes to apply to the text.
 var textMarkupAttributes: [String : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * textMarkupAttributes;
+```
+
 #### Discussion
 
 The supported keys for this dictionary are defined in `CMTextMarkup.h`.
 
 ## See Also
 
-- [var textSelector: String?](avtextstylerule/textselector.md)
+### Accessing the style attributes
+- [var textSelector: String?](./textselector.md)
   A string that identifies the text the style attributes apply to.
 
 

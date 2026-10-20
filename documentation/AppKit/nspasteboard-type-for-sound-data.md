@@ -1,6 +1,7 @@
 # NSPasteboard Type for Sound Data
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 The `NSSound` class defines this common pasteboard data type.
 

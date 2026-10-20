@@ -1,7 +1,8 @@
 # drawingTool
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool for drawing on the canvas.
 
@@ -27,9 +28,10 @@ Default is `PKInkingTool(.pen)`.
 
 ## See Also
 
-- [var isEditable: Bool](papermarkupviewcontroller/iseditable.md)
+### Editing markup
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that indicates whether a person can edit the canvas contents.
-- [var isRulerActive: Bool](papermarkupviewcontroller/isruleractive.md)
+- [var isRulerActive: Bool](./isruleractive.md)
   A Boolean value that indicates whether a ruler view is visible on the canvas.
 
 

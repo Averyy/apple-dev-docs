@@ -1,7 +1,8 @@
 # AnimationLibraryComponent.AnimationCollection.Iterator
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object to iterate over all animations in the collection.
 
@@ -22,11 +23,12 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../../Swift/iteratorprotocol.md)
 
 ## See Also
 
-- [func makeIterator() -> AnimationLibraryComponent.AnimationCollection.Iterator](animationlibrarycomponent/animationcollection/makeiterator.md)
+### Iterating over animations
+- [func makeIterator() -> AnimationLibraryComponent.AnimationCollection.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the animations in the collection.
 
 

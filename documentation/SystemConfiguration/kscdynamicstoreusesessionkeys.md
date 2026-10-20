@@ -1,7 +1,8 @@
 # kSCDynamicStoreUseSessionKeys
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 All keys added or set into the dynamic store should be per-session keys.
 
@@ -12,6 +13,10 @@ All keys added or set into the dynamic store should be per-session keys.
 
 ```swift
 let kSCDynamicStoreUseSessionKeys: CFString
+```
+
+```c
+extern CFStringRef const kSCDynamicStoreUseSessionKeys;
 ```
 
 

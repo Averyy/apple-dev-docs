@@ -1,7 +1,8 @@
 # byValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,8 @@
 ```swift
 var byValue: BlendShapeWeights? { get set }
 ```
+
+Available when `Value` is `BlendShapeWeights`.
 
 
 ---

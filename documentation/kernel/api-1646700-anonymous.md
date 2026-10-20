@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSENSE_FILEMARK_Mask](1646700-anonymous/ksense_filemark_mask.md)
-- [kSENSE_FILEMARK_Not_Set](1646700-anonymous/ksense_filemark_not_set.md)
-- [kSENSE_FILEMARK_Set](1646700-anonymous/ksense_filemark_set.md)
+- [kSENSE_FILEMARK_Mask](./api-1646700-anonymous/ksense_filemark_mask.md)
+- [kSENSE_FILEMARK_Not_Set](./api-1646700-anonymous/ksense_filemark_not_set.md)
+- [kSENSE_FILEMARK_Set](./api-1646700-anonymous/ksense_filemark_set.md)
 
 
 ---

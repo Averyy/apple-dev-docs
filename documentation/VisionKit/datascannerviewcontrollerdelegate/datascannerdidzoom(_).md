@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Responds when a person or your code changes the zoom factor.
@@ -20,11 +21,17 @@ func dataScannerDidZoom(_ dataScanner: DataScannerViewController)
 
 #### Discussion
 
-The data scanner invokes this method when the [`zoomFactor`](datascannerviewcontroller/zoomfactor.md) property changes.
+The data scanner invokes this method when the [`zoomFactor`](../datascannerviewcontroller/zoomfactor.md) property changes.
 
 ## Parameters
 
 - `dataScanner`: The data scanner whose zoom factor changes.
+
+## Default Implementations
+
+### DataScannerViewControllerDelegate Implementations
+- [func dataScannerDidZoom(DataScannerViewController)](./datascannerdidzoom%28_%29-5lq2p.md)
+  A default, blank implementation for when a person or your code changes the zoom factor.
 
 
 ---

@@ -1,7 +1,8 @@
 # high
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow image content to use an unrestricted extended range.
 
@@ -21,9 +22,10 @@ static let high: Image.DynamicRange
 
 ## See Also
 
-- [static let standard: Image.DynamicRange](image/dynamicrange/standard.md)
+### Getting dynamic range values
+- [static let standard: Image.DynamicRange](./standard.md)
   Restrict the image content dynamic range to the standard range.
-- [static let constrainedHigh: Image.DynamicRange](image/dynamicrange/constrainedhigh.md)
+- [static let constrainedHigh: Image.DynamicRange](./constrainedhigh.md)
   Allow image content to use some extended range. This is appropriate for placing HDR content next to SDR content.
 
 

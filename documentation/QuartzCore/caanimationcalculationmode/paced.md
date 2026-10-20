@@ -1,7 +1,8 @@
 # paced
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Linear keyframe values are interpolated to produce an even pace throughout the animation.
 
@@ -19,9 +20,13 @@ Linear keyframe values are interpolated to produce an even pace throughout the a
 static let paced: CAAnimationCalculationMode
 ```
 
+```c
+extern CAAnimationCalculationMode const kCAAnimationPaced;
+```
+
 #### Discussion
 
-`kCAAnimationPaced` gives a linearly interpolated animation, but [`keyTimes`](cakeyframeanimation/keytimes.md) and [`timingFunction`](caanimation/timingfunction.md) are ignored and keyframe times are automatically generated to give the animation a constant velocity.
+`kCAAnimationPaced` gives a linearly interpolated animation, but [`keyTimes`](../cakeyframeanimation/keytimes.md) and [`timingFunction`](../caanimation/timingfunction.md) are ignored and keyframe times are automatically generated to give the animation a constant velocity.
 
 The following code shows how to create a keyframe animation object using paced interpolation.
 
@@ -35,17 +40,18 @@ keyframeAnimation.values = [310, 60, 120, 60, 310]
 
 A layer animated with the keyframe animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Tracing the path of an animation using paced key values](/images/com.apple.quartzcore/media-2776792@2x.png)
+![Tracing the path of an animation using paced key values](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2776792@2x.png)
 
 ## See Also
 
-- [static let linear: CAAnimationCalculationMode](caanimationcalculationmode/linear.md)
+### Constants
+- [static let linear: CAAnimationCalculationMode](./linear.md)
   Simple linear calculation between keyframe values.
-- [static let discrete: CAAnimationCalculationMode](caanimationcalculationmode/discrete.md)
+- [static let discrete: CAAnimationCalculationMode](./discrete.md)
   Each keyframe value is used in turn, no interpolated values are calculated.
-- [static let cubic: CAAnimationCalculationMode](caanimationcalculationmode/cubic.md)
+- [static let cubic: CAAnimationCalculationMode](./cubic.md)
   Smooth spline calculation between keyframe values.
-- [static let cubicPaced: CAAnimationCalculationMode](caanimationcalculationmode/cubicpaced.md)
+- [static let cubicPaced: CAAnimationCalculationMode](./cubicpaced.md)
   Cubic keyframe values are interpolated to produce an even pace throughout the animation.
 
 

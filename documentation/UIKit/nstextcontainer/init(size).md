@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a text container with a specified bounding rectangle.
 
@@ -18,13 +19,17 @@ Initializes a text container with a specified bounding rectangle.
 init(size: CGSize)
 ```
 
+```objc
+- (instancetype) initWithSize:(CGSize) size;
+```
+
 #### Return Value
 
 The size of the text container’s bounding rectangle.
 
 #### Discussion
 
-The new text container must be added to an [`NSLayoutManager`](nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
+The new text container must be added to an [`NSLayoutManager`](../nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](../../AppKit/nstextview.md) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
 
 ## Parameters
 
@@ -32,12 +37,14 @@ The new text container must be added to an [`NSLayoutManager`](nslayoutmanager.m
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
-- [Cocoa Text Architecture Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
-- [func addTextContainer(NSTextContainer)](nslayoutmanager/addtextcontainer(_:).md)
+### Related Documentation
+- [Text Layout Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [Cocoa Text Architecture Guide](https://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
+- [func addTextContainer(NSTextContainer)](../nslayoutmanager/addtextcontainer%28_%29.md)
   Appends the specified text container to the series of text containers where the layout manager arranges text.
-- [Text System Storage Layer Overview](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextStorageLayer/TextStorageLayer.html#//apple_ref/doc/uid/10000087i)
-- [init(coder: NSCoder)](nstextcontainer/init(coder:).md)
+- [Text System Storage Layer Overview](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextStorageLayer/TextStorageLayer.html#//apple_ref/doc/uid/10000087i)
+### Creating a text container
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a text container from data in an unarchiver.
 
 

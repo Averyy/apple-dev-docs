@@ -1,7 +1,8 @@
 # proxyConfigured
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether a proxy was configured on the connection.
 
@@ -22,9 +23,10 @@ let proxyConfigured: Bool
 
 ## See Also
 
-- [let usedProxy: Bool](nwconnection/establishmentreport/usedproxy.md)
+### Checking for Proxies
+- [let usedProxy: Bool](./usedproxy.md)
   A Boolean indicating whether the connection used a proxy.
-- [let proxyEndpoint: NWEndpoint?](nwconnection/establishmentreport/proxyendpoint.md)
+- [let proxyEndpoint: NWEndpoint?](./proxyendpoint.md)
   The endpoint of the proxy the connection used.
 
 

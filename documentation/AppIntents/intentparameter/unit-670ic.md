@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.ElectricResistance? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitElectricResistance>`.
+
 ## See Also
 
-- [IntentParameter.ElectricResistance](intentparameter/electricresistance.md)
-- [var defaultUnit: IntentParameter<Value>.ElectricResistance?](intentparameter/defaultunit-4mrsv.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-8gwi5.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-14ddy.md)
+### Accessing unit details
+- [IntentParameter.ElectricResistance](./electricresistance.md)
+- [var defaultUnit: IntentParameter<Value>.ElectricResistance?](./defaultunit-4mrsv.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-8gwi5.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-14ddy.md)
 
 
 ---

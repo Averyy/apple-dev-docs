@@ -1,17 +1,24 @@
 # fullScreenAccessoryView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The toolbar’s full screen accessory view.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 10.13
+
+> **Deprecated**: Use an [`NSTitlebarAccessoryViewController`](../nstitlebaraccessoryviewcontroller.md) with an [`NSWindow`](../nswindow.md) instead.
 
 ## Declaration
 
 ```swift
 var fullScreenAccessoryView: NSView? { get set }
+```
+
+```objc
+@property (strong, nullable) NSView * fullScreenAccessoryView;
 ```
 
 #### Discussion
@@ -20,21 +27,22 @@ When entering full screen mode, the accessory view is removed from the window if
 
 When leaving full screen mode, the accessory view is returned to the window, if it was in the window previously.
 
-To customize this behavior, you can implement the [`NSWindow`](nswindow.md) delegate method [`windowWillExitFullScreen(_:)`](nswindowdelegate/windowwillexitfullscreen(_:).md).
+To customize this behavior, you can implement the [`NSWindow`](../nswindow.md) delegate method [`windowWillExitFullScreen(_:)`](../nswindowdelegate/windowwillexitfullscreen%28_%29.md).
 
 ## See Also
 
-- [var showsBaselineSeparator: Bool](nstoolbar/showsbaselineseparator.md)
+### Deprecated properties
+- [var showsBaselineSeparator: Bool](./showsbaselineseparator.md)
   A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
-- [var configuration: [String : Any]](nstoolbar/configuration.md)
+- [var configuration: [String : Any]](./configuration.md)
   A dictionary containing the current configuration details for the toolbar.
-- [var centeredItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/centereditemidentifier.md)
+- [var centeredItemIdentifier: NSToolbarItem.Identifier?](./centereditemidentifier.md)
   The item to display in the center of the toolbar.
-- [var fullScreenAccessoryViewMinHeight: CGFloat](nstoolbar/fullscreenaccessoryviewminheight.md)
+- [var fullScreenAccessoryViewMinHeight: CGFloat](./fullscreenaccessoryviewminheight.md)
   The minimum height of the toolbar’s full screen accessory view.
-- [var fullScreenAccessoryViewMaxHeight: CGFloat](nstoolbar/fullscreenaccessoryviewmaxheight.md)
+- [var fullScreenAccessoryViewMaxHeight: CGFloat](./fullscreenaccessoryviewmaxheight.md)
   The maximum height of the toolbar’s full screen accessory view, in points.
-- [var sizeMode: NSToolbar.SizeMode](nstoolbar/sizemode-swift.property.md)
+- [var sizeMode: NSToolbar.SizeMode](./sizemode-swift.property.md)
   The toolbar’s size mode.
 
 

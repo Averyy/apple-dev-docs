@@ -1,35 +1,37 @@
 # kIOHIDEventDriverHandlesReport
 
 **Framework**: HIDDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define kIOHIDEventDriverHandlesReport
 ```
 
 ## See Also
 
-- [kHIDAccelParametricCurvesKey](khidaccelparametriccurveskey.md)
-- [kHIDPointerReportRateKey](khidpointerreportratekey.md)
-- [kHIDScrollAccelParametricCurvesKey](khidscrollaccelparametriccurveskey.md)
-- [kIOHIDBatchIntervalKey](kiohidbatchintervalkey.md)
-- [kIOHIDBuiltInKey](kiohidbuiltinkey.md)
-- [kIOHIDCountryCodeKey](kiohidcountrycodekey.md)
-- [kIOHIDDeviceAccessEntitlementKey](kiohiddeviceaccessentitlementkey.md)
-- [kIOHIDDeviceDefaultAsyncRequestTimeout](kiohiddevicedefaultasyncrequesttimeout.md)
-- [kIOHIDDeviceMaxAsyncRequestTimeout](kiohiddevicemaxasyncrequesttimeout.md)
-- [kIOHIDDeviceMinAsyncRequestTimeout](kiohiddeviceminasyncrequesttimeout.md)
-- [kIOHIDDeviceUsageKey](kiohiddeviceusagekey.md)
-- [kIOHIDDeviceUsagePageKey](kiohiddeviceusagepagekey.md)
-- [kIOHIDDeviceUsagePairsKey](kiohiddeviceusagepairskey.md)
-- [kIOHIDDigitizerTipThresholdKey](kiohiddigitizertipthresholdkey.md)
-- [kIOHIDDropAccelPropertyEventsKey](kiohiddropaccelpropertyeventskey.md)
+### Macros
+- [kHIDAccelParametricCurvesKey](./khidaccelparametriccurveskey.md)
+- [kHIDPointerReportRateKey](./khidpointerreportratekey.md)
+- [kHIDScrollAccelParametricCurvesKey](./khidscrollaccelparametriccurveskey.md)
+- [kIOHIDBatchIntervalKey](./kiohidbatchintervalkey.md)
+- [kIOHIDBuiltInKey](./kiohidbuiltinkey.md)
+- [kIOHIDCountryCodeKey](./kiohidcountrycodekey.md)
+- [kIOHIDDeviceAccessEntitlementKey](./kiohiddeviceaccessentitlementkey.md)
+- [kIOHIDDeviceDefaultAsyncRequestTimeout](./kiohiddevicedefaultasyncrequesttimeout.md)
+- [kIOHIDDeviceMaxAsyncRequestTimeout](./kiohiddevicemaxasyncrequesttimeout.md)
+- [kIOHIDDeviceMinAsyncRequestTimeout](./kiohiddeviceminasyncrequesttimeout.md)
+- [kIOHIDDeviceUsageKey](./kiohiddeviceusagekey.md)
+- [kIOHIDDeviceUsagePageKey](./kiohiddeviceusagepagekey.md)
+- [kIOHIDDeviceUsagePairsKey](./kiohiddeviceusagepairskey.md)
+- [kIOHIDDigitizerTipThresholdKey](./kiohiddigitizertipthresholdkey.md)
+- [kIOHIDDropAccelPropertyEventsKey](./kiohiddropaccelpropertyeventskey.md)
 
 
 ---

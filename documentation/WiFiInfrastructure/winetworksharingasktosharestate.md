@@ -1,7 +1,8 @@
 # WINetworkSharingAskToShareState
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The authorization state for sharing the current Wi-Fi network with an accessory.
 
@@ -23,27 +24,28 @@ Use this type to track whether the person allowed the accessory to join the Wi-F
 ## Topics
 
 ### Checking authorization state
-- [WINetworkSharingAskToShareState.undetermined](winetworksharingasktosharestate/undetermined.md)
+- [WINetworkSharingAskToShareState.undetermined](./winetworksharingasktosharestate/undetermined.md)
   The person hasn’t decided whether to share the network with the accessory.
-- [WINetworkSharingAskToShareState.denied](winetworksharingasktosharestate/denied.md)
+- [WINetworkSharingAskToShareState.denied](./winetworksharingasktosharestate/denied.md)
   The person chose not to share the network with the accessory.
-- [WINetworkSharingAskToShareState.approved](winetworksharingasktosharestate/approved.md)
+- [WINetworkSharingAskToShareState.approved](./winetworksharingasktosharestate/approved.md)
   The person allowed the accessory to use the network.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class WINetworkSharingController](winetworksharingcontroller.md)
+### Network sharing
+- [class WINetworkSharingController](./winetworksharingcontroller.md)
   A controller that enables your container app to control network-sharing functions with connected accessories.
-- [class WINetworkSharingProvider](winetworksharingprovider.md)
+- [class WINetworkSharingProvider](./winetworksharingprovider.md)
   A provider that delivers updated Wi-Fi network information to your app extension.
 
 

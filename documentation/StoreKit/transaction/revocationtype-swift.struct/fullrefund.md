@@ -1,7 +1,8 @@
 # fullRefund
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction was fully refunded.
 

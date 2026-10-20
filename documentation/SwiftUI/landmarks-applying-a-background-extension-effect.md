@@ -1,6 +1,8 @@
 # Landmarks: Applying a background extension effect
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [LandmarksBuildingAnAppWithLiquidGlass.zip](https://docs-assets.developer.apple.com/published/a88428e6793e/LandmarksBuildingAnAppWithLiquidGlass.zip)
 
 Configure an image to blur and extend under a sidebar or inspector panel.
 
@@ -19,23 +21,23 @@ This sample demonstrates how to apply a background extension effect. In the top 
 
 **With**:
 
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2@2x.png)
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2@2x.png)
 
 **Without**:
 
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2r@2x.png)
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2r@2x.png)
 
 To apply the background extension effect, the sample:
 
 1. Aligns the view to the leading and trailing edges of the containing view.
-2. Applies the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier to the view.
+2. Applies the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) modifier to the view.
 3. Configures only the image in the background extension, and avoids applying the effect to the title and button in the overlay.
 
-##### Align the View to the Leading and Trailing Edges
+##### Align the view to the leading and trailing edges
 
-To apply the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) to a view, align the leading edge of the view next to the sidebar, and align the trailing edge of the view to the trailing edge of the containing view.
+To apply the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) to a view, align the leading edge of the view next to the sidebar, and align the trailing edge of the view to the trailing edge of the containing view.
 
-In `LandmarksView`, the `LandmarkFeaturedItemView` and the containing [`LazyVStack`](lazyvstack.md) and [`ScrollView`](scrollview.md) don’t have padding. This allows the `LandmarkFeaturedItemView` to align with the leading edge of the view next to the sidebar.
+In `LandmarksView`, the `LandmarkFeaturedItemView` and the containing [`LazyVStack`](./lazyvstack.md) and [`ScrollView`](./scrollview.md) don’t have padding. This allows the `LandmarkFeaturedItemView` to align with the leading edge of the view next to the sidebar.
 
 ```swift
 ScrollView(showsIndicators: false) {
@@ -47,11 +49,11 @@ ScrollView(showsIndicators: false) {
 }
 ```
 
-In `LandmarkDetailView`, the [`ScrollView`](scrollview.md) and [`VStack`](vstack.md) that contain the main image also don’t have any padding. This allows the main image to align against the leading edge of the containing view.
+In `LandmarkDetailView`, the [`ScrollView`](./scrollview.md) and [`VStack`](./vstack.md) that contain the main image also don’t have any padding. This allows the main image to align against the leading edge of the containing view.
 
-##### Apply the Background Extension Effect to the Image
+##### Apply the background extension effect to the image
 
-In `LandmarkDetailView`, the sample applies the background extension effect to the main image by adding the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier:
+In `LandmarkDetailView`, the sample applies the background extension effect to the main image by adding the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) modifier:
 
 ```swift
 Image(landmark.backgroundImageName)
@@ -71,11 +73,11 @@ When the inspector is open, the system extends the image in the trailing directi
 - The system flips that portion of the image horizontally toward the trailing edge and applies a blur to the flipped section.
 - The system places the modified section of the image under the inspector, immediately after the trailing edge of the image.
 
-##### Configure Only the Image
+##### Configure only the image
 
 In `LandmarksView`, the `LandmarkFeaturedItemView` has an image from the featured landmark, and includes a title for the landmark and a button you can click or tap to learn more about that location.
 
-To avoid having the landmark’s title and button appear under the sidebar in macOS, the sample applies the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier to the image before adding the overlay that includes the title and button:
+To avoid having the landmark’s title and button appear under the sidebar in macOS, the sample applies the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) modifier to the image before adding the overlay that includes the title and button:
 
 ```swift
 Image(decorative: landmark.backgroundImageName)
@@ -99,11 +101,12 @@ Image(decorative: landmark.backgroundImageName)
 
 ## See Also
 
-- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
+### App features
+- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](./landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
   Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
-- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](./landmarks-refining-the-system-provided-glass-effect-in-toolbars.md)
   Organize toolbars into related groupings to improve their appearance and utility.
-- [Landmarks: Displaying custom activity badges](landmarks-displaying-custom-activity-badges.md)
+- [Landmarks: Displaying custom activity badges](./landmarks-displaying-custom-activity-badges.md)
   Provide people with a way to mark their adventures by displaying animated custom activity badges.
 
 

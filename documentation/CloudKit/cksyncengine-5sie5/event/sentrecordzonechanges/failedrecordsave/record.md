@@ -1,7 +1,8 @@
 # record
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record that CloudKit is unable to modify.
 
@@ -11,7 +12,7 @@ The record that CloudKit is unable to modify.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

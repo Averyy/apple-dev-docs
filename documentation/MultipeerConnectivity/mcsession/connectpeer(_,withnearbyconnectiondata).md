@@ -1,7 +1,8 @@
 # connectPeer(_:withNearbyConnectionData:)
 
 **Framework**: Multipeer Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Call this method to connect a peer to the session when using your own service discovery code instead of an  `MCNearbyServiceBrowser` or `MCBrowserViewController` object.
 
@@ -19,9 +20,13 @@ Call this method to connect a peer to the session when using your own service di
 func connectPeer(_ peerID: MCPeerID, withNearbyConnectionData data: Data)
 ```
 
+```objc
+- (void) connectPeer:(MCPeerID *) peerID withNearbyConnectionData:(NSData *) data;
+```
+
 #### Discussion
 
-Call this method to connect to peers when you are using your own service discovery code instead of an `MCNearbyServiceBrowser` or `MCBrowserViewController` object. For more information, see the [`Managing Peers Manually`](mcsession#Managing-Peers-Manually.md) section in the overview of the `MCSession` class reference.
+Call this method to connect to peers when you are using your own service discovery code instead of an `MCNearbyServiceBrowser` or `MCBrowserViewController` object. For more information, see the [Managing Peers Manually](../mcsession.md#Managing-Peers-Manually) section in the overview of the `MCSession` class reference.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Call this method to connect to peers when you are using your own service discove
 
 ## See Also
 
-- [func cancelConnectPeer(MCPeerID)](mcsession/cancelconnectpeer(_:).md)
+### Managing Peers Manually
+- [func cancelConnectPeer(MCPeerID)](./cancelconnectpeer%28_%29.md)
   Cancels an attempt to connect to a peer.
-- [var connectedPeers: [MCPeerID]](mcsession/connectedpeers.md)
+- [var connectedPeers: [MCPeerID]](./connectedpeers.md)
   An array of all peers that are currently connected to this session.
-- [func nearbyConnectionData(forPeer: MCPeerID, withCompletionHandler: (Data?, (any Error)?) -> Void)](mcsession/nearbyconnectiondata(forpeer:withcompletionhandler:).md)
+- [func nearbyConnectionData(forPeer: MCPeerID, withCompletionHandler: (Data?, (any Error)?) -> Void)](./nearbyconnectiondata%28forpeer,withcompletionhandler%29.md)
   Obtains connection data for the specified peer.
 
 

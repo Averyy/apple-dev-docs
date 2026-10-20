@@ -1,7 +1,8 @@
 # NEVPNIKEv2CertificateType.ECDSA256
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ECDSA with p-256 curve certificate type.
 
@@ -19,17 +20,22 @@ The ECDSA with p-256 curve certificate type.
 case ECDSA256
 ```
 
+```c
+NEVPNIKEv2CertificateTypeECDSA256
+```
+
 ## See Also
 
-- [NEVPNIKEv2CertificateType.RSA](nevpnikev2certificatetype/rsa.md)
+### Certificate types
+- [NEVPNIKEv2CertificateType.RSA](./rsa.md)
   The RSA certificate type.
-- [NEVPNIKEv2CertificateType.ECDSA384](nevpnikev2certificatetype/ecdsa384.md)
+- [NEVPNIKEv2CertificateType.ECDSA384](./ecdsa384.md)
   The ECDSA with p-384 curve certificate type.
-- [NEVPNIKEv2CertificateType.ECDSA521](nevpnikev2certificatetype/ecdsa521.md)
+- [NEVPNIKEv2CertificateType.ECDSA521](./ecdsa521.md)
   The ECDSA with p-521 curve certificate type.
-- [NEVPNIKEv2CertificateType.ed25519](nevpnikev2certificatetype/ed25519.md)
+- [NEVPNIKEv2CertificateType.ed25519](./ed25519.md)
   The Edwards 25519 curve certificate type.
-- [NEVPNIKEv2CertificateType.RSAPSS](nevpnikev2certificatetype/rsapss.md)
+- [NEVPNIKEv2CertificateType.RSAPSS](./rsapss.md)
   The RSA-PSS certificate type.
 
 

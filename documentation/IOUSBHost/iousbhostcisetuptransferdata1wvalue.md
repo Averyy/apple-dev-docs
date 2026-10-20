@@ -1,7 +1,8 @@
 # IOUSBHostCISetupTransferData1wValue
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,17 +14,22 @@
 var IOUSBHostCISetupTransferData1wValue: UInt { get }
 ```
 
+```c
+IOUSBHostCISetupTransferData1wValue
+```
+
 ## See Also
 
-- [var IOUSBHostCISetupTransferData1bRequest: UInt](iousbhostcisetuptransferdata1brequest.md)
-- [var IOUSBHostCISetupTransferData1bRequestPhase: UInt](iousbhostcisetuptransferdata1brequestphase.md)
-- [var IOUSBHostCISetupTransferData1bmRequestType: UInt](iousbhostcisetuptransferdata1bmrequesttype.md)
-- [var IOUSBHostCISetupTransferData1bmRequestTypePhase: UInt](iousbhostcisetuptransferdata1bmrequesttypephase.md)
-- [var IOUSBHostCISetupTransferData1wIndex: UInt](iousbhostcisetuptransferdata1windex.md)
-- [var IOUSBHostCISetupTransferData1wIndexPhase: UInt](iousbhostcisetuptransferdata1windexphase.md)
-- [var IOUSBHostCISetupTransferData1wLength: UInt](iousbhostcisetuptransferdata1wlength.md)
-- [var IOUSBHostCISetupTransferData1wLengthPhase: UInt](iousbhostcisetuptransferdata1wlengthphase.md)
-- [var IOUSBHostCISetupTransferData1wValuePhase: UInt](iousbhostcisetuptransferdata1wvaluephase.md)
+### Constants
+- [var IOUSBHostCISetupTransferData1bRequest: UInt](./iousbhostcisetuptransferdata1brequest.md)
+- [var IOUSBHostCISetupTransferData1bRequestPhase: UInt](./iousbhostcisetuptransferdata1brequestphase.md)
+- [var IOUSBHostCISetupTransferData1bmRequestType: UInt](./iousbhostcisetuptransferdata1bmrequesttype.md)
+- [var IOUSBHostCISetupTransferData1bmRequestTypePhase: UInt](./iousbhostcisetuptransferdata1bmrequesttypephase.md)
+- [var IOUSBHostCISetupTransferData1wIndex: UInt](./iousbhostcisetuptransferdata1windex.md)
+- [var IOUSBHostCISetupTransferData1wIndexPhase: UInt](./iousbhostcisetuptransferdata1windexphase.md)
+- [var IOUSBHostCISetupTransferData1wLength: UInt](./iousbhostcisetuptransferdata1wlength.md)
+- [var IOUSBHostCISetupTransferData1wLengthPhase: UInt](./iousbhostcisetuptransferdata1wlengthphase.md)
+- [var IOUSBHostCISetupTransferData1wValuePhase: UInt](./iousbhostcisetuptransferdata1wvaluephase.md)
 
 
 ---

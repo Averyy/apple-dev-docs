@@ -1,7 +1,8 @@
 # SubscriptionPromotionalOffer.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription promotional offer resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription promotional offer resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPromotionalOffer.Attributes
 ```
 
@@ -25,7 +26,8 @@ object SubscriptionPromotionalOffer.Attributes
 
 ## See Also
 
-- [object SubscriptionPromotionalOffer.Relationships](subscriptionpromotionaloffer/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionPromotionalOffer.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

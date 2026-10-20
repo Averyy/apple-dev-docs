@@ -1,18 +1,19 @@
 # entryWithIdentifier(_:withClass:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads and returns a specific object in the scene source.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -28,20 +29,20 @@ A new SceneKit object (of the specified class) containing the requested scene so
 
 SceneKit recognizes objects of the following classes in scene files:
 
-- [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation)
-- [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) (macOS) or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) (iOS/watchOS/tvOS)
-- [`SCNCamera`](scncamera.md)
-- [`SCNGeometry`](scngeometry.md)
-- [`SCNLight`](scnlight.md)
-- [`SCNMaterial`](scnmaterial.md)
-- [`SCNMorpher`](scnmorpher.md)
-- [`SCNNode`](scnnode.md)
-- [`SCNScene`](scnscene.md)
-- [`SCNSkinner`](scnskinner.md)
+- [`CAAnimation`](../../QuartzCore/caanimation.md)
+- [`NSImage`](../../AppKit/nsimage.md) (macOS) or [`UIImage`](../../UIKit/uiimage.md) (iOS/watchOS/tvOS)
+- [`SCNCamera`](../scncamera.md)
+- [`SCNGeometry`](../scngeometry.md)
+- [`SCNLight`](../scnlight.md)
+- [`SCNMaterial`](../scnmaterial.md)
+- [`SCNMorpher`](../scnmorpher.md)
+- [`SCNNode`](../scnnode.md)
+- [`SCNScene`](../scnscene.md)
+- [`SCNSkinner`](../scnskinner.md)
 
 Each object in a scene file has an identifier that is unique for its class. These identifiers are determined by the software that created the scene file—for example, they may be descriptive names assigned by an artist using 3D authoring tools. For SceneKit classes with a `name` property (such as nodes and geometries), the name of an object loaded from a scene file is based on its identifier in the scene file.
 
-If you don’t have the identifier for an object you want to load, use the [`identifiersOfEntries(withClass:)`](scnscenesource/identifiersofentries(withclass:).md) method to find the identifiers for objects in a scene file. You can also see the identifier for each object in a scene file when viewing it in Xcode’s scene editor.
+If you don’t have the identifier for an object you want to load, use the [`identifiersOfEntries(withClass:)`](./identifiersofentries%28withclass%29.md) method to find the identifiers for objects in a scene file. You can also see the identifier for each object in a scene file when viewing it in Xcode’s scene editor.
 
 Calling this method instantiates an object of the specified SceneKit class and loads all content from the scene file corresponding to the requested entry. Keep in mind that loading one SceneKit object may also load other objects and their contents, such as the lights, cameras, or geometries attached to a node.
 
@@ -63,9 +64,10 @@ func loadSpaceship(from sceneSource: SCNSceneSource) -> SCNGeometry? {
 
 ## See Also
 
-- [func identifiersOfEntries(withClass: AnyClass) -> [String]](scnscenesource/identifiersofentries(withclass:).md)
+### Loading and Inspecting Scene Elements
+- [func identifiersOfEntries(withClass: AnyClass) -> [String]](./identifiersofentries%28withclass%29.md)
   Returns the identifiers for all objects in the scene source of the specified class.
-- [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](scnscenesource/entries(passingtest:).md)
+- [func entries(passingTest: (Any, String, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [Any]](./entries%28passingtest%29.md)
   Loads and returns all objects in the scene source that pass the test in a given block.
 
 

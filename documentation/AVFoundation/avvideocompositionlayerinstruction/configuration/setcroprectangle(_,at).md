@@ -1,7 +1,8 @@
 # setCropRectangle(_:at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the crop rectangle value at a time within the time range of the instruction.
 
@@ -21,9 +22,10 @@ mutating func setCropRectangle(_ rect: CGRect, at time: CMTime)
 
 ## See Also
 
-- [func addCropRectangleRamp(AVVideoCompositionLayerInstruction.CropRectangleRamp)](avvideocompositionlayerinstruction/configuration/addcroprectangleramp(_:).md)
+### Configuring the crop rectangle
+- [func addCropRectangleRamp(AVVideoCompositionLayerInstruction.CropRectangleRamp)](./addcroprectangleramp%28_%29.md)
   Sets a crop rectangle ramp to apply during the specified time range.
-- [func cropRectangleRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.CropRectangleRamp?](avvideocompositionlayerinstruction/configuration/croprectangleramp(at:).md)
+- [func cropRectangleRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.CropRectangleRamp?](./croprectangleramp%28at%29.md)
   Obtains the crop rectangle ramp that includes the specified time.
 
 

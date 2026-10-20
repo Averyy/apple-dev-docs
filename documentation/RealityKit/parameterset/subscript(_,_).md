@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Provides a bindable value for the given name.
 
@@ -11,7 +12,7 @@ Provides a bindable value for the given name.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

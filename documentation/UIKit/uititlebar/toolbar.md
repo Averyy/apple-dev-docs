@@ -1,7 +1,8 @@
 # toolbar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The toolbar displayed beneath or integrated with the title bar.
 
@@ -14,17 +15,22 @@ The toolbar displayed beneath or integrated with the title bar.
 var toolbar: NSToolbar? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSToolbar * toolbar;
+```
+
 ## Mentions
 
-- [Removing the title bar in your Mac app built with Mac Catalyst](removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
+- [Removing the title bar in your Mac app built with Mac Catalyst](../removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
 
 ## See Also
 
-- [var toolbarStyle: UITitlebarToolbarStyle](uititlebar/toolbarstyle.md)
+### Configuring the toolbar
+- [var toolbarStyle: UITitlebarToolbarStyle](./toolbarstyle.md)
   The style of the toolbar determining its appearance and location related to the title bar.
-- [enum UITitlebarToolbarStyle](uititlebartoolbarstyle.md)
+- [enum UITitlebarToolbarStyle](../uititlebartoolbarstyle.md)
   Styles that determine the toolbar’s appearance and location related to the title bar.
-- [var autoHidesToolbarInFullScreen: Bool](uititlebar/autohidestoolbarinfullscreen.md)
+- [var autoHidesToolbarInFullScreen: Bool](./autohidestoolbarinfullscreen.md)
   A Boolean value that determines whether the toolbar automatically hides in full-screen windows.
 
 

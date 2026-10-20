@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array that provides access to this program’s command line arguments.
 

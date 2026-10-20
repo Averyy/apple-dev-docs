@@ -1,9 +1,10 @@
 # kColorSyncTransformDeviceToDevice
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A [`kColorSyncTransformTag`](kcolorsynctransformtag.md) value selecting the device-to-device conversion direction.
+A [`kColorSyncTransformTag`](./kcolorsynctransformtag.md) value selecting the device-to-device conversion direction.
 
 **Availability**:
 - iOS 16.0+
@@ -20,12 +21,17 @@ A [`kColorSyncTransformTag`](kcolorsynctransformtag.md) value selecting the devi
 var kColorSyncTransformDeviceToDevice: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncTransformDeviceToDevice;
+```
+
 ## See Also
 
-- [func ColorSyncProfileCreateLink(CFArray!, CFDictionary?) -> Unmanaged<ColorSyncProfile>?](colorsyncprofilecreatelink(_:_:).md)
+### Proofing and gamut checking
+- [func ColorSyncProfileCreateLink(CFArray!, CFDictionary?) -> Unmanaged<ColorSyncProfile>?](./colorsyncprofilecreatelink%28_,_%29.md)
   Creates a device link profile from an array of profiles.
-- [var kColorSyncTransformGamutCheck: Unmanaged<CFString>!](kcolorsynctransformgamutcheck.md)
-  A [`kColorSyncTransformTag`](kcolorsynctransformtag.md) value that checks whether colors fall outside the destination gamut.
+- [var kColorSyncTransformGamutCheck: Unmanaged<CFString>!](./kcolorsynctransformgamutcheck.md)
+  A [`kColorSyncTransformTag`](./kcolorsynctransformtag.md) value that checks whether colors fall outside the destination gamut.
 
 
 ---

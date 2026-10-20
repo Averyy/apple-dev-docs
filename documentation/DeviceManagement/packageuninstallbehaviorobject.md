@@ -1,7 +1,8 @@
 # PackageUninstallBehaviorObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that describes how to uninstall the package.
 
@@ -10,21 +11,24 @@ A dictionary that describes how to uninstall the package.
 
 ## Declaration
 
-```swift
+```
 object PackageUninstallBehaviorObject
 ```
 
 ## Mentions
 
-- [Installing packages](installing-packages.md)
+- [Installing packages](./installing-packages.md)
 
 ## Properties
 
 - `Remove` (boolean): If `true`, the system removes the files that the package installs when removing the configuration.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object PackageInstallBehaviorObject](packageinstallbehaviorobject.md)
+### Objects
+- [object PackageInstallBehaviorObject](./packageinstallbehaviorobject.md)
   A dictionary that describes how and when to install the package.
 
 

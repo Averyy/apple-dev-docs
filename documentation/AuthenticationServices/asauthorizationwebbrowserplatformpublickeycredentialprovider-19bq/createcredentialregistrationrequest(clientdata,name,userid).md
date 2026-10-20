@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create a credential registration request, for registering a new passkey with the relying party.
@@ -20,7 +21,7 @@ func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClient
 
 #### Return Value
 
-The credential registration request, that you pass to [`ASAuthorizationController`](asauthorizationcontroller.md).
+The credential registration request, that you pass to [`ASAuthorizationController`](../asauthorizationcontroller.md).
 
 ## Parameters
 
@@ -30,9 +31,10 @@ The credential registration request, that you pass to [`ASAuthorizationControlle
 
 ## See Also
 
-- [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialassertionrequest(clientdata:).md)
+### Creating requests
+- [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./createcredentialassertionrequest%28clientdata%29.md)
   Create a credential assertion request, for authenticating to the relying party.
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata:name:userid:requeststyle:).md)
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28clientdata,name,userid,requeststyle%29.md)
 
 
 ---

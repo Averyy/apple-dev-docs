@@ -1,7 +1,8 @@
 # deleteSelectedItems(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the currently selected items.
 
@@ -15,6 +16,10 @@ Deletes the currently selected items.
 func deleteSelectedItems(_ sender: Any!)
 ```
 
+```objc
+- (void) deleteSelectedItems:(id) sender;
+```
+
 #### Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
@@ -25,7 +30,8 @@ This method is can be connected to a user interface item in Interface Builder.
 
 ## See Also
 
-- [var canDeleteSelectedItems: Bool](ikcameradeviceview/candeleteselecteditems.md)
+### Deleting Selected Items
+- [var canDeleteSelectedItems: Bool](./candeleteselecteditems.md)
   Returns whether the selected items can be deleted.
 
 

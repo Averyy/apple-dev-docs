@@ -1,15 +1,16 @@
 # UIDocument.ChangeKind.redone
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An undone change to the document has been redone.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ An undone change to the document has been redone.
 case redone
 ```
 
+```c
+UIDocumentChangeRedone
+```
+
 ## See Also
 
-- [UIDocument.ChangeKind.done](uidocument/changekind/done.md)
+### Constants
+- [UIDocument.ChangeKind.done](./done.md)
   A change has been made to the document.
-- [UIDocument.ChangeKind.undone](uidocument/changekind/undone.md)
+- [UIDocument.ChangeKind.undone](./undone.md)
   A change to the document has been undone.
-- [UIDocument.ChangeKind.cleared](uidocument/changekind/cleared.md)
+- [UIDocument.ChangeKind.cleared](./cleared.md)
   The document is cleared of outstanding changes.
 
 

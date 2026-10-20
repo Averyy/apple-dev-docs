@@ -1,7 +1,8 @@
 # init(mapView:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly created bar button item with the specified map view.
 
@@ -17,6 +18,10 @@ Initializes a newly created bar button item with the specified map view.
 init(mapView: MKMapView?)
 ```
 
+```objc
+- (instancetype) initWithMapView:(MKMapView *) mapView;
+```
+
 #### Return Value
 
 The initialized bar button item.
@@ -27,7 +32,8 @@ The initialized bar button item.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
 
 
 ---

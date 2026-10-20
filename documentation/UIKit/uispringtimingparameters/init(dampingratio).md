@@ -1,7 +1,8 @@
 # init(dampingRatio:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a timing parameters object with the specified damping ratio.
 
@@ -18,6 +19,10 @@ Creates a timing parameters object with the specified damping ratio.
 convenience init(dampingRatio ratio: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithDampingRatio:(CGFloat) ratio;
+```
+
 #### Return Value
 
 An initialized spring timing parameters object or `nil` if the object could not be created.
@@ -32,13 +37,14 @@ This method sets the initial velocity of any animated properties to `0.0`.
 
 ## See Also
 
-- [init()](uispringtimingparameters/init.md)
+### Initializing a spring timing parameters object
+- [init()](./init%28%29.md)
   Creates a default timing parameters object.
-- [init(dampingRatio: CGFloat, initialVelocity: CGVector)](uispringtimingparameters/init(dampingratio:initialvelocity:).md)
+- [init(dampingRatio: CGFloat, initialVelocity: CGVector)](./init%28dampingratio,initialvelocity%29.md)
   Creates a timing parameters object with the specified damping ratio and initial velocity.
-- [init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity: CGVector)](uispringtimingparameters/init(mass:stiffness:damping:initialvelocity:).md)
+- [init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity: CGVector)](./init%28mass,stiffness,damping,initialvelocity%29.md)
   Creates a timing parameters object with the specified spring stiffness, mass, damping coefficient, and initial velocity.
-- [init?(coder: NSCoder)](uispringtimingparameters/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a timing parameters object from data in an unarchiver.
 
 

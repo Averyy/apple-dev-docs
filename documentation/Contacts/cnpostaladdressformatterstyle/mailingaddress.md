@@ -1,7 +1,8 @@
 # CNPostalAddressFormatterStyle.mailingAddress
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that combines the postal address components into a multi-line mailing address.
 
@@ -17,6 +18,10 @@ A style that combines the postal address components into a multi-line mailing ad
 
 ```swift
 case mailingAddress
+```
+
+```c
+CNPostalAddressFormatterStyleMailingAddress
 ```
 
 

@@ -1,7 +1,8 @@
 # AXUIElement
 
 **Framework**: Application Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A structure used to refer to an accessibility object.
 

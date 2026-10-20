@@ -1,7 +1,8 @@
 # NSCursor.FrameResizePosition.bottom
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bottom edge of the frame.
 
@@ -13,6 +14,10 @@ The bottom edge of the frame.
 
 ```swift
 case bottom
+```
+
+```c
+NSCursorFrameResizePositionBottom
 ```
 
 

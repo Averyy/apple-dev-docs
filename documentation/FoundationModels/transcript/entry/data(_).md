@@ -1,7 +1,8 @@
 # Transcript.Entry.data(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An entry representing a custom type encoded as data.
 

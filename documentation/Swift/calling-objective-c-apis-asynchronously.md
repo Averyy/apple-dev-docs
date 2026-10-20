@@ -1,6 +1,7 @@
 # Calling Objective-C APIs Asynchronously
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Learn how functions and methods that take a completion handler are converted to Swift asynchronous functions.
 
@@ -8,11 +9,11 @@ Learn how functions and methods that take a completion handler are converted to 
 
 In Cocoa, methods that perform asynchronous operations take a completion handler as their last parameter, and the method calls that block after the operation finishes to return a result or an error. Swift 5.5 and later automatically translates Objective-C methods that take completion handlers into asynchronous methods using Swift’s native concurrency support, in addition to importing the callback-based version of the method into Swift. Because both Swift methods have the same behavior, they share the same page in the documentation.
 
-For information about asynchronous functions, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+For information about asynchronous functions, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
 ##### Understand How Swift Imports Completion Handlers
 
-Swift imports Objective-C methods that take a completion handler as two related Swift methods: a method that takes a closure, and an asynchronous method that doesn’t take a closure. For example, consider the [`present(completion:)`](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationcontroller/present(completion:)) method from PassKit. In Objective-C, it’s declared like this:
+Swift imports Objective-C methods that take a completion handler as two related Swift methods: a method that takes a closure, and an asynchronous method that doesn’t take a closure. For example, consider the [`present(completion:)`](../PassKit/pkpaymentauthorizationcontroller/present%28completion%29.md) method from PassKit. In Objective-C, it’s declared like this:
 
 ```occ
 - (void)presentWithCompletion:(void (^)(BOOL success))completion;
@@ -28,7 +29,7 @@ func present() async -> Bool
 
 The first version, `present(completion:)`, has a return type of `Void` and takes a completion handler. The second version, `present()`, returns a Boolean value and is an asynchronous method.
 
-Methods whose completion handlers populate a [`NSError`](https://developer.apple.com/documentation/foundation/nserror) pointer parameter also become throwing methods in Swift, as described in [`About Imported Cocoa Error Parameters`](about-imported-cocoa-error-parameters.md). The `NSError` parameter on an asynchronous throwing method must also be nullable, which indicates that the parameter is used only to communicate an error. For example, consider the [`write(_:timeout:completionHandler:)`](https://developer.apple.com/documentation/foundation/urlsessionstreamtask/write(_:timeout:completionhandler:)) method from [`URLSessionStreamTask`](https://developer.apple.com/documentation/foundation/urlsessionstreamtask). In Objective-C, it’s declared like this:
+Methods whose completion handlers populate a [`NSError`](../Foundation/nserror.md) pointer parameter also become throwing methods in Swift, as described in [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md). The `NSError` parameter on an asynchronous throwing method must also be nullable, which indicates that the parameter is used only to communicate an error. For example, consider the [`write(_:timeout:completionHandler:)`](../Foundation/urlsessionstreamtask/write%28_,timeout,completionhandler%29.md) method from [`URLSessionStreamTask`](../Foundation/urlsessionstreamtask.md). In Objective-C, it’s declared like this:
 
 ```occ
 - (void)writeData:(NSData *)data
@@ -48,7 +49,7 @@ func write(
 func write(_ data: Data, timeout: TimeInterval) async throws
 ```
 
-Methods whose completion handlers take multiple arguments become methods that return a tuple. For example, the [`sign(_:using:completion:)`](https://developer.apple.com/documentation/passkit/pkpasslibrary/sign(_:using:completion:)) method from PassKit is declared like this in Objective-C:
+Methods whose completion handlers take multiple arguments become methods that return a tuple. For example, the [`sign(_:using:completion:)`](../PassKit/pkpasslibrary/sign%28_,using,completion%29.md) method from PassKit is declared like this in Objective-C:
 
 ```occ
 - (void)signData:(NSData *)signData 
@@ -108,17 +109,18 @@ The name of the Swift method is modified from the Objective-C method as follows:
 
 ## See Also
 
-- [Objective-C and C Code Customization](objective-c-and-c-code-customization.md)
+### Language Interoperability with Objective-C and C
+- [Objective-C and C Code Customization](./objective-c-and-c-code-customization.md)
   Apply macros to your Objective-C APIs to customize how they’re imported into Swift.
-- [Migrating Your Objective-C Code to Swift](migrating-your-objective-c-code-to-swift.md)
+- [Migrating Your Objective-C Code to Swift](./migrating-your-objective-c-code-to-swift.md)
   Learn the recommended steps to migrate your code.
-- [Cocoa Design Patterns](cocoa-design-patterns.md)
+- [Cocoa Design Patterns](./cocoa-design-patterns.md)
   Adopt and interoperate with Cocoa design patterns in your Swift apps.
-- [Handling Dynamically Typed Methods and Objects in Swift](handling-dynamically-typed-methods-and-objects-in-swift.md)
+- [Handling Dynamically Typed Methods and Objects in Swift](./handling-dynamically-typed-methods-and-objects-in-swift.md)
   Cast instances of the Objective-C `id` type to a specific Swift type.
-- [Using Objective-C Runtime Features in Swift](using-objective-c-runtime-features-in-swift.md)
+- [Using Objective-C Runtime Features in Swift](./using-objective-c-runtime-features-in-swift.md)
   Use selectors and key paths to interact with dynamic Objective-C APIs.
-- [Imported C and Objective-C APIs](imported-c-and-objective-c-apis.md)
+- [Imported C and Objective-C APIs](./imported-c-and-objective-c-apis.md)
   Use native Swift syntax to interoperate with types and functions in C and Objective-C.
 
 

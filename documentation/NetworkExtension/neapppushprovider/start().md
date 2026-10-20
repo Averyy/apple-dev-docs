@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the framework has started the provider.
 
@@ -17,17 +18,22 @@ Indicates that the framework has started the provider.
 func start()
 ```
 
+```objc
+- (void) start;
+```
+
 #### Discussion
 
-An [`NEAppPushProvider`](neapppushprovider.md) subclass must override this method to create a connection with its server.
+An [`NEAppPushProvider`](../neapppushprovider.md) subclass must override this method to create a connection with its server.
 
 ## See Also
 
-- [func start(completionHandler: ((any Error)?) -> Void)](neapppushprovider/start(completionhandler:).md)
+### Implementing provider life cycle
+- [func start(completionHandler: ((any Error)?) -> Void)](./start%28completionhandler%29.md)
   Indicates that the framework has started the provider, and provides a completion handler for subclasses to signal their readiness.
-- [func stop(with: NEProviderStopReason, completionHandler: () -> Void)](neapppushprovider/stop(with:completionhandler:).md)
+- [func stop(with: NEProviderStopReason, completionHandler: () -> Void)](./stop%28with,completionhandler%29.md)
   Indicates that the framework needs to stop the provider.
-- [func handleTimerEvent()](neapppushprovider/handletimerevent.md)
+- [func handleTimerEvent()](./handletimerevent%28%29.md)
   Indicates a periodic status check from the framework to the provider.
 
 

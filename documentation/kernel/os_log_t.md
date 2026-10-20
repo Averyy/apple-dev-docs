@@ -1,14 +1,15 @@
 # os_log_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef NSObject<OS_os_log> *os_log_t;
 ```
 

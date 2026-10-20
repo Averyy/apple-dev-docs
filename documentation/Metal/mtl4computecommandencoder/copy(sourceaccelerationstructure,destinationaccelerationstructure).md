@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes an acceleration structure copy operation into the command buffer.
@@ -20,6 +21,10 @@ Encodes an acceleration structure copy operation into the command buffer.
 func copy(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)
 ```
 
+```objc
+- (void) copyAccelerationStructure:(id<MTLAccelerationStructure>) sourceAccelerationStructure toAccelerationStructure:(id<MTLAccelerationStructure>) destinationAccelerationStructure;
+```
+
 #### Discussion
 
 You are responsible for ensuring the source and destination acceleration structures don’t overlap in memory. If this is an instance acceleration structure, Metal preserves references to the primitive acceleration structures it references.
@@ -33,9 +38,10 @@ Typically, the destination acceleration structure is at least as large as the so
 
 ## See Also
 
-- [func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](mtl4computecommandencoder/copyandcompact(sourceaccelerationstructure:destinationaccelerationstructure:).md)
+### Encoding acceleration structure copy commands
+- [func copyAndCompact(sourceAccelerationStructure: any MTLAccelerationStructure, destinationAccelerationStructure: any MTLAccelerationStructure)](./copyandcompact%28sourceaccelerationstructure,destinationaccelerationstructure%29.md)
   Encodes a command to copy and compact an acceleration structure.
-- [func writeCompactedSize(sourceAccelerationStructure: any MTLAccelerationStructure, destinationBuffer: MTL4BufferRange)](mtl4computecommandencoder/writecompactedsize(sourceaccelerationstructure:destinationbuffer:).md)
+- [func writeCompactedSize(sourceAccelerationStructure: any MTLAccelerationStructure, destinationBuffer: MTL4BufferRange)](./writecompactedsize%28sourceaccelerationstructure,destinationbuffer%29.md)
   Encodes a command to compute the size an acceleration structure can compact into, writing the result into a buffer.
 
 

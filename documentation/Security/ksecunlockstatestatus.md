@@ -1,7 +1,8 @@
 # kSecUnlockStateStatus
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates the keychain is unlocked.
 
@@ -13,6 +14,10 @@ Indicates the keychain is unlocked.
 
 ```swift
 var kSecUnlockStateStatus: UInt32 { get }
+```
+
+```c
+kSecUnlockStateStatus
 ```
 
 

@@ -1,7 +1,8 @@
 # severity
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The severity of this issue.
 

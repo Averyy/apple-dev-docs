@@ -1,23 +1,28 @@
 # CFPlugInInstanceCreate(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a `CFPlugIn` instance of a given type using a given factory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFPlugInInstanceCreate(_ allocator: CFAllocator!, _ factoryUUID: CFUUID!, _ typeUUID: CFUUID!) -> UnsafeMutableRawPointer!
+```
+
+```c
+extern void *CFPlugInInstanceCreate(CFAllocatorRef allocator, CFUUIDRef factoryUUID, CFUUIDRef typeUUID);
 ```
 
 #### Return Value
@@ -36,7 +41,8 @@ The plug-in host uses this function to create an instance of the given type. Unl
 
 ## See Also
 
-- [func CFPlugInCreate(CFAllocator!, CFURL!) -> CFPlugIn!](cfplugincreate(_:_:).md)
+### Creating Plug-ins
+- [func CFPlugInCreate(CFAllocator!, CFURL!) -> CFPlugIn!](./cfplugincreate%28_,_%29.md)
   Creates a CFPlugIn given its URL.
 
 

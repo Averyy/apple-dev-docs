@@ -1,7 +1,8 @@
 # vfs_setauthopaqueaccess
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Mark a filesystem as having remote VNOP_ACCESS support.
 
@@ -10,11 +11,11 @@ Mark a filesystem as having remote VNOP_ACCESS support.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setauthopaqueaccess(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

@@ -1,17 +1,22 @@
 # value(forIdentifier:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value for the given identifier.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func value(forIdentifier identifier: String!) -> Any!
+```
+
+```objc
+- (id) valueForIdentifier:(NSString *) identifier;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ If the identifier is not found, returns `nil`.
 
 ## See Also
 
-- [func label(at: Int) -> String!](abmultivalue-swift.class/label(at:).md)
+### Accessing entries
+- [func label(at: Int) -> String!](./label%28at%29.md)
   Returns the label for the given index.
-- [func value(at: Int) -> Any!](abmultivalue-swift.class/value(at:).md)
+- [func value(at: Int) -> Any!](./value%28at%29.md)
   Returns the value for the given index.
-- [func label(forIdentifier: String!) -> Any!](abmultivalue-swift.class/label(foridentifier:).md)
+- [func label(forIdentifier: String!) -> Any!](./label%28foridentifier%29.md)
   Returns the label for the given identifier.
 
 

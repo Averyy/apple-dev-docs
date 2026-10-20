@@ -1,7 +1,8 @@
 # isAvailable()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A Boolean value indicating whether the current device supports the movement disorder manager.
 
@@ -14,11 +15,16 @@ A Boolean value indicating whether the current device supports the movement diso
 class func isAvailable() -> Bool
 ```
 
+```objc
++ (BOOL) isAvailable;
+```
+
 ## See Also
 
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmmovementdisordermanager/authorizationstatus.md)
+### Checking Availablility
+- [class func authorizationStatus() -> CMAuthorizationStatus](./authorizationstatus%28%29.md)
   A value indicating whether the user has authorized the app to monitor and query for movement disorder data.
-- [class func version() -> String?](cmmovementdisordermanager/version.md)
+- [class func version() -> String?](./version%28%29.md)
   Returns a string that describes the movement disorder algorithm’s current version.
 
 

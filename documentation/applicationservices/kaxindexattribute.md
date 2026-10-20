@@ -1,7 +1,8 @@
 # kAXIndexAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The index of the row or column represented by this accessibility object.
 
@@ -12,6 +13,10 @@ The index of the row or column represented by this accessibility object.
 
 ```swift
 var kAXIndexAttribute: String { get }
+```
+
+```c
+#define kAXIndexAttribute
 ```
 
 

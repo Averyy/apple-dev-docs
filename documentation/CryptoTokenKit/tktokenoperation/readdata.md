@@ -1,7 +1,8 @@
 # TKTokenOperation.readData
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,16 +19,21 @@
 case readData
 ```
 
+```c
+TKTokenOperationReadData
+```
+
 #### Discussion
 
 Read raw data of a certificate
 
 ## See Also
 
-- [TKTokenOperation.none](tktokenoperation/none.md)
-- [TKTokenOperation.signData](tktokenoperation/signdata.md)
-- [TKTokenOperation.decryptData](tktokenoperation/decryptdata.md)
-- [TKTokenOperation.performKeyExchange](tktokenoperation/performkeyexchange.md)
+### Constants
+- [TKTokenOperation.none](./none.md)
+- [TKTokenOperation.signData](./signdata.md)
+- [TKTokenOperation.decryptData](./decryptdata.md)
+- [TKTokenOperation.performKeyExchange](./performkeyexchange.md)
 
 
 ---

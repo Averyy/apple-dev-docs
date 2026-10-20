@@ -1,7 +1,8 @@
 # IsDataAvailableInIconRef(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+ - Deprecated in 10.15
@@ -10,6 +11,10 @@
 
 ```swift
 func IsDataAvailableInIconRef(_ inIconKind: OSType, _ inIconRef: IconRef!) -> Bool
+```
+
+```c
+Boolean IsDataAvailableInIconRef(OSType inIconKind, IconRef inIconRef);
 ```
 
 

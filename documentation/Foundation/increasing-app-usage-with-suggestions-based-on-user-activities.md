@@ -1,6 +1,8 @@
 # Increasing App Usage with Suggestions Based on User Activities
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Sample Code  
+**Download**: [IncreasingAppUsageWithSuggestionsBasedOnUserActivities.zip](https://docs-assets.developer.apple.com/published/b8d8e4357791/IncreasingAppUsageWithSuggestionsBasedOnUserActivities.zip)
 
 Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 
@@ -22,9 +24,9 @@ When donating location information, this sample app also verifies whether the pr
 
 You implement proactive suggestions by determining specific activities that a user can perform in your app, and whose state you can recreate at a later time. The sample app has one user activity, `view-location`, which represents the user viewing details of a specific restaurant location.
 
-In the sample app, the target includes the `view-location` activity in its [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file, as an entry with the key name . The type of this entry is `Array`, and each member is a `String` representing a supported user activity in reverse DNS notation.
+In the sample app, the target includes the `view-location` activity in its [`Information Property List`](../BundleResources/information-property-list.md) file, as an entry with the key name . The type of this entry is `Array`, and each member is a `String` representing a supported user activity in reverse DNS notation.
 
-```None
+```
 <key>NSUserActivityTypes</key>
 <array>
 <string>com.example.apple-samplecode.ProactiveToolbox.view-location</string>
@@ -33,13 +35,13 @@ In the sample app, the target includes the `view-location` activity in its [`Inf
 
 ##### Manage a User Activity
 
-At runtime, you represent a user activity with the [`NSUserActivity`](nsuseractivity.md) object. You initialize a user activity object with a string identifier, the same one declared earlier in the `Info.plist` file.
+At runtime, you represent a user activity with the [`NSUserActivity`](./nsuseractivity.md) object. You initialize a user activity object with a string identifier, the same one declared earlier in the `Info.plist` file.
 
-In the sample app, `LocationViewController` manages a single [`NSUserActivity`](nsuseractivity.md) object, representing the `view-location` activity type. When you select a restaurant, the view controller sets its [`userActivity`](https://developer.apple.com/documentation/uikit/uiresponder/useractivity) property to the `view-location` activity—registering the user activity object as the current activity, replacing any other activity previously sent to Siri or the system.
+In the sample app, `LocationViewController` manages a single [`NSUserActivity`](./nsuseractivity.md) object, representing the `view-location` activity type. When you select a restaurant, the view controller sets its [`userActivity`](../UIKit/uiresponder/useractivity.md) property to the `view-location` activity—registering the user activity object as the current activity, replacing any other activity previously sent to Siri or the system.
 
-> ❗ **Important**: When the user activity object is not contained within the responder chain, you must call the [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method to mark the object as current, which also registers the object with the system.
+> ❗ **Important**: When the user activity object is not contained within the responder chain, you must call the [`becomeCurrent()`](./nsuseractivity/becomecurrent%28%29.md) method to mark the object as current, which also registers the object with the system.
 
-The view controller also sets [`needsSave`](nsuseractivity/needssave.md) to `true`, indicating that the activity will be updated with new data in the future, which eventually results in a callback to the [`updateUserActivityState(_:)`](https://developer.apple.com/documentation/uikit/uiresponder/updateuseractivitystate(_:)) method. This is the app’s opportunity to refresh the activity object’s [`userInfo`](nsuseractivity/userinfo.md) property, with the minimal amount of information needed to restore the state of the app, before Siri or the system receives the activity.
+The view controller also sets [`needsSave`](./nsuseractivity/needssave.md) to `true`, indicating that the activity will be updated with new data in the future, which eventually results in a callback to the [`updateUserActivityState(_:)`](../UIKit/uiresponder/updateuseractivitystate%28_%29.md) method. This is the app’s opportunity to refresh the activity object’s [`userInfo`](./nsuseractivity/userinfo.md) property, with the minimal amount of information needed to restore the state of the app, before Siri or the system receives the activity.
 
 ```swift
 /*
@@ -65,7 +67,7 @@ activity.addUserInfoEntries(from: userInfo)
 
 If your user activity objects contain information that the user might want to search for later, you can have Search index those objects and consider them during subsequent on-device searches.
 
-To enable support for Search on a user activity object, set the [`isEligibleForSearch`](nsuseractivity/iseligibleforsearch.md) property to `true`. Additionally, you can make an activity object publicly accessible to all iOS users by setting the [`isEligibleForPublicIndexing`](nsuseractivity/iseligibleforpublicindexing.md) property to `true`.
+To enable support for Search on a user activity object, set the [`isEligibleForSearch`](./nsuseractivity/iseligibleforsearch.md) property to `true`. Additionally, you can make an activity object publicly accessible to all iOS users by setting the [`isEligibleForPublicIndexing`](./nsuseractivity/iseligibleforpublicindexing.md) property to `true`.
 
 ```swift
 // The following properties enable the activity to be indexed in Search.
@@ -75,7 +77,7 @@ activity.title = mapItem?.name
 activity.keywords = ["pizza"]
 ```
 
-Provide the activity object with as much rich information about the activity as possible, by configuring the [`contentAttributeSet`](nsuseractivity/contentattributeset.md), [`keywords`](nsuseractivity/keywords.md), or [`webpageURL`](nsuseractivity/webpageurl.md) properties so that the system can index the object. The app must also maintain a strong reference to any activity objects that the system uses for search results.
+Provide the activity object with as much rich information about the activity as possible, by configuring the [`contentAttributeSet`](./nsuseractivity/contentattributeset.md), [`keywords`](./nsuseractivity/keywords.md), or [`webpageURL`](./nsuseractivity/webpageurl.md) properties so that the system can index the object. The app must also maintain a strong reference to any activity objects that the system uses for search results.
 
 ```swift
 // Provide additional searchable attributes.
@@ -84,13 +86,13 @@ activity.contentAttributeSet?.supportsPhoneCall = true
 activity.contentAttributeSet?.thumbnailData = #imageLiteral(resourceName: "pizza").pngData()
 ```
 
-To learn more about Search, see [`App Search Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch).
+To learn more about Search, see [App Search Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch).
 
 ##### Provide Support for Shortcuts
 
 Siri learns about the shortcuts available to your app through donations that your app makes to Siri. You can make donations from a user activity when the action involves a view within your app, such as the sample app, which displays a list of nearby restaurants.
 
-The sample app enables support for Siri Shortcuts on a user activity object by setting the [`isEligibleForPrediction`](nsuseractivity/iseligibleforprediction.md) property to `true`. The app suggests an invocation phrase, which is displayed to the user when they create a shortcut, by setting a short, memorable phrase to the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property.
+The sample app enables support for Siri Shortcuts on a user activity object by setting the [`isEligibleForPrediction`](./nsuseractivity/iseligibleforprediction.md) property to `true`. The app suggests an invocation phrase, which is displayed to the user when they create a shortcut, by setting a short, memorable phrase to the [`suggestedInvocationPhrase`](./nsuseractivity/suggestedinvocationphrase.md) property.
 
 ```swift
 // The following properties enable the activity to be used as a shortcut with Siri.
@@ -100,11 +102,11 @@ activity.suggestedInvocationPhrase = "Show my favorite pizzeria"
 
 During development, the system provides developer settings to modify the display behavior of shortcuts, and force sync shortcuts to an Apple Watch from an iPhone device. Go to Settings > Developer on the iPhone device to test an app’s behavior with Siri Shortcuts.
 
-For more information, see [`Donating Shortcuts`](https://developer.apple.com/documentation/sirikit/donating-shortcuts).
+For more information, see [Donating Shortcuts](../SiriKit/donating-shortcuts.md).
 
 ##### Provide Support for Sharing
 
-If your user-activity object contains information about a webpage, your users can share that webpage with others through Siri. For example, the user can share the pizza restaurant they’re viewing by asking Siri to “share this”, to send a message that contains the webpage URL to another user. Siri uses the URL stored by the app in the [`webpageURL`](nsuseractivity/webpageurl.md) on the user activity.
+If your user-activity object contains information about a webpage, your users can share that webpage with others through Siri. For example, the user can share the pizza restaurant they’re viewing by asking Siri to “share this”, to send a message that contains the webpage URL to another user. Siri uses the URL stored by the app in the [`webpageURL`](./nsuseractivity/webpageurl.md) on the user activity.
 
 ```swift
 // Enable sharing this location by telling Siri to "share this".
@@ -113,9 +115,9 @@ activity.webpageURL = mapItem?.url
 
 ##### Handle Activities
 
-When a user interacts with a proactive suggestion for your app, such as through Siri Shortcuts, the system restores your app to the foreground, receives data associated with its user activity, and calls [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:continue:restorationhandler:)).
+When a user interacts with a proactive suggestion for your app, such as through Siri Shortcuts, the system restores your app to the foreground, receives data associated with its user activity, and calls [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md).
 
-To give `SearchViewController` a chance to perform its state restoration operation through [`restoreUserActivityState(_:)`](https://developer.apple.com/documentation/uikit/uiresponder/restoreuseractivitystate(_:)), the sample app verifies the activity type of the user activity object, and passes the first tab’s view controller hierarchy to the `restorationHandler` block parameter.
+To give `SearchViewController` a chance to perform its state restoration operation through [`restoreUserActivityState(_:)`](../UIKit/uiresponder/restoreuseractivitystate%28_%29.md), the sample app verifies the activity type of the user activity object, and passes the first tab’s view controller hierarchy to the `restorationHandler` block parameter.
 
 ```swift
 func application(_ application: UIApplication,
@@ -167,9 +169,9 @@ override func restoreUserActivityState(_ activity: NSUserActivity) {
 }
 ```
 
-##### Verify Quicktype Keyboard Integration
+##### Verify QuickType Keyboard Integration
 
-Text fields describe the intended purpose of input data, like a region’s name or postal code, via the [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/textcontenttype) property. If any app on the device recently donated information matching the expected text content type, that information is suggested in the QuickType keyboard as the user types in the text field.
+Text fields describe the intended purpose of input data, like a region’s name or postal code, via the [`textContentType`](../UIKit/uitextinputtraits/textcontenttype.md) property. If any app on the device recently donated information matching the expected text content type, that information is suggested in the QuickType keyboard as the user types in the text field.
 
 For example, in the sample app, a user selects a pizza restaurant, and its address is suggested in Messages or a search field in Apple Maps.
 
@@ -188,17 +190,18 @@ To verify this behavior, select a point of interest in Apple Maps, then return t
 
 ## See Also
 
-- [Creating a user activity object](creating-a-user-activity-object.md)
+### Activity Sharing
+- [Creating a user activity object](./creating-a-user-activity-object.md)
   Identify key user interactions and include the information to restore them later.
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
   Create, send, and receive user activities directly.
-- [Continuing User Activities with Handoff](continuing-user-activities-with-handoff.md)
+- [Continuing User Activities with Handoff](./continuing-user-activities-with-handoff.md)
   Define and manage which of your app’s activities can be continued between devices.
-- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
+- [Supporting the creation of Quick Notes](./supporting-the-creation-of-quick-notes.md)
   Support the creation of notes that include your app’s content.
-- [class NSUserActivity](nsuseractivity.md)
+- [class NSUserActivity](./nsuseractivity.md)
   A representation of the state of your app at a moment in time.
-- [protocol NSUserActivityDelegate](nsuseractivitydelegate.md)
+- [protocol NSUserActivityDelegate](./nsuseractivitydelegate.md)
   The interface through which a user activity instance notifies its delegate of updates.
 
 

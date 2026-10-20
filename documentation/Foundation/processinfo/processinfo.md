@@ -1,7 +1,8 @@
 # processInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the process information agent for the process.
 
@@ -20,13 +21,17 @@ Returns the process information agent for the process.
 class var processInfo: ProcessInfo { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSProcessInfo * processInfo;
+```
+
 #### Return Value
 
 Shared process information agent for the process.
 
 #### Discussion
 
-An [`ProcessInfo`](processinfo.md) object is created the first time this method is invoked, and that same object is returned on each subsequent invocation.
+An [`ProcessInfo`](../processinfo.md) object is created the first time this method is invoked, and that same object is returned on each subsequent invocation.
 
 
 ---

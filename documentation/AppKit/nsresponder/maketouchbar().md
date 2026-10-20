@@ -1,9 +1,10 @@
 # makeTouchBar()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Your custom subclass of the `NSResponder` class should override this method to create and configure your subclass’s default [`NSTouchBar`](nstouchbar.md) object.
+Your custom subclass of the `NSResponder` class should override this method to create and configure your subclass’s default [`NSTouchBar`](../nstouchbar.md) object.
 
 **Availability**:
 - macOS 10.12.2+
@@ -14,10 +15,15 @@ Your custom subclass of the `NSResponder` class should override this method to c
 func makeTouchBar() -> NSTouchBar?
 ```
 
+```objc
+- (NSTouchBar *) makeTouchBar;
+```
+
 ## See Also
 
-- [var touchBar: NSTouchBar?](nsresponder/touchbar.md)
-  The [`NSTouchBar`](nstouchbar.md) object associated with the responder.
+### Supporting the Touch Bar
+- [var touchBar: NSTouchBar?](./touchbar.md)
+  The [`NSTouchBar`](../nstouchbar.md) object associated with the responder.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:children:displayStyle:ancestorRepresentation:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mirror representing the given subject using a dictionary literal for the structure.
 

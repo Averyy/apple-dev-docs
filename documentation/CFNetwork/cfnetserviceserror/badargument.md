@@ -1,7 +1,8 @@
 # CFNetServicesError.badArgument
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A required argument was not provided.
 
@@ -19,21 +20,26 @@ A required argument was not provided.
 case badArgument
 ```
 
+```c
+kCFNetServicesErrorBadArgument
+```
+
 ## See Also
 
-- [CFNetServicesError.unknown](cfnetserviceserror/unknown.md)
+### Constants
+- [CFNetServicesError.unknown](./unknown.md)
   An unknown CFNetService error occurred.
-- [CFNetServicesError.collision](cfnetserviceserror/collision.md)
+- [CFNetServicesError.collision](./collision.md)
   An attempt was made to use a name that is already in use.
-- [CFNetServicesError.notFound](cfnetserviceserror/notfound.md)
+- [CFNetServicesError.notFound](./notfound.md)
   Not used.
-- [CFNetServicesError.inProgress](cfnetserviceserror/inprogress.md)
+- [CFNetServicesError.inProgress](./inprogress.md)
   A search is already in progress.
-- [CFNetServicesError.cancel](cfnetserviceserror/cancel.md)
+- [CFNetServicesError.cancel](./cancel.md)
   The search or service was canceled.
-- [CFNetServicesError.invalid](cfnetserviceserror/invalid.md)
+- [CFNetServicesError.invalid](./invalid.md)
   Invalid data was passed to a CFNetServices function.
-- [CFNetServicesError.timeout](cfnetserviceserror/timeout.md)
+- [CFNetServicesError.timeout](./timeout.md)
   Resolution failed because the timeout was reached.
 
 

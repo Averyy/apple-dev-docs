@@ -1,7 +1,8 @@
 # EAGLRenderingAPI.openGLES2
 
 **Framework**: OpenGL ES  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Context supports OpenGL ES 2.x rendering API.
 
@@ -16,6 +17,10 @@ Context supports OpenGL ES 2.x rendering API.
 
 ```swift
 case openGLES2
+```
+
+```c
+kEAGLRenderingAPIOpenGLES2
 ```
 
 

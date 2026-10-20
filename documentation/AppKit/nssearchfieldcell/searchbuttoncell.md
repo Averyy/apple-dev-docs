@@ -1,12 +1,13 @@
 # searchButtonCell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button cell used to display the search-button image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,14 +15,20 @@ The button cell used to display the search-button image.
 var searchButtonCell: NSButtonCell? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSButtonCell * searchButtonCell;
+```
+
 ## See Also
 
-- [Search Fields](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SearchFields/SearchFields.html#//apple_ref/doc/uid/10000168i)
-- [func resetSearchButtonCell()](nssearchfieldcell/resetsearchbuttoncell.md)
+### Related Documentation
+- [Search Fields](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SearchFields/SearchFields.html#//apple_ref/doc/uid/10000168i)
+### Managing buttons
+- [func resetSearchButtonCell()](./resetsearchbuttoncell%28%29.md)
   Resets the search button cell to its default attributes.
-- [var cancelButtonCell: NSButtonCell?](nssearchfieldcell/cancelbuttoncell.md)
+- [var cancelButtonCell: NSButtonCell?](./cancelbuttoncell.md)
   The button cell used to display the cancel-button image.
-- [func resetCancelButtonCell()](nssearchfieldcell/resetcancelbuttoncell.md)
+- [func resetCancelButtonCell()](./resetcancelbuttoncell%28%29.md)
   Resets the cancel button cell to its default attributes.
 
 

@@ -1,7 +1,8 @@
 # init(startIndex:endIndex:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new slice range structure.
 

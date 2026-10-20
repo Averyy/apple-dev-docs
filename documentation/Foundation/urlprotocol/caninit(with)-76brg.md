@@ -1,7 +1,8 @@
 # canInit(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines whether the protocol subclass can handle the specified request.
 
@@ -20,9 +21,13 @@ Determines whether the protocol subclass can handle the specified request.
 class func canInit(with request: URLRequest) -> Bool
 ```
 
+```objc
++ (BOOL) canInitWithRequest:(NSURLRequest *) request;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the protocol subclass can handle `request`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the protocol subclass can handle `request`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -36,7 +41,8 @@ This is an abstract method and subclasses must provide an implementation.
 
 ## See Also
 
-- [class func canInit(with: URLSessionTask) -> Bool](urlprotocol/caninit(with:)-18gbo.md)
+### Determining If a subclass can handle a request
+- [class func canInit(with: URLSessionTask) -> Bool](./caninit%28with%29-18gbo.md)
   Determines whether the protocol subclass can handle the specified task.
 
 

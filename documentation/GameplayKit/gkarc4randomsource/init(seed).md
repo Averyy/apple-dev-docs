@@ -1,7 +1,8 @@
 # init(seed:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a random source with the specified seed data.
 
@@ -19,15 +20,19 @@ Initializes a random source with the specified seed data.
 init(seed: Data)
 ```
 
+```objc
+- (instancetype) initWithSeed:(NSData *) seed;
+```
+
 #### Return Value
 
 A new, independent random source.
 
 #### Discussion
 
-Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKARC4RandomSource`](gkarc4randomsource.md) instance, read that instance’s [`seed`](gkarc4randomsource/seed.md) property and then create a new instance by passing the resulting data to the [`init(seed:)`](gkarc4randomsource/init(seed:).md) initializer.
+Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKARC4RandomSource`](../gkarc4randomsource.md) instance, read that instance’s [`seed`](./seed.md) property and then create a new instance by passing the resulting data to the [`init(seed:)`](./init%28seed%29.md) initializer.
 
-For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:)) function.
+For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](../../Security/secrandomcopybytes%28_,_,_%29.md) function.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](h
 
 ## See Also
 
-- [convenience init()](gkarc4randomsource/init.md)
+### Creating a Random Source
+- [convenience init()](./init%28%29.md)
   Initializes a random source from a nondeterministic seed.
 
 

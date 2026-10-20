@@ -1,7 +1,8 @@
 # letterpressStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A graphical text effect that gives glyphs the appearance of letterpress printing, which involves pressing the type into the paper.
 

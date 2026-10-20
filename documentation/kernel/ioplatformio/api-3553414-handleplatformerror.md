@@ -1,14 +1,15 @@
 # handlePlatformError
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool handlePlatformError(vm_offset_t far);
 ```
 

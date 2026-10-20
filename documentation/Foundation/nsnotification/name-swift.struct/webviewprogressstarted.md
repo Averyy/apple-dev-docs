@@ -1,12 +1,13 @@
 # WebViewProgressStarted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -20,35 +21,37 @@ The notification object is the WebView that began loading. This notification doe
 
 ## See Also
 
-- [var estimatedProgress: Double](../webkit/webview-swift.class/estimatedprogress.md)
+### Related Documentation
+- [var estimatedProgress: Double](../../../WebKit/webview-swift.class/estimatedprogress.md)
   An estimate, as a percentage, of the amount of content that is currently loaded.
-- [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
+### WebKit
+- [static let WebHistoryAllItemsRemoved: NSNotification.Name](./webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.
-- [static let WebHistoryItemChanged: NSNotification.Name](nsnotification/name-swift.struct/webhistoryitemchanged.md)
+- [static let WebHistoryItemChanged: NSNotification.Name](./webhistoryitemchanged.md)
   Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
-- [static let WebHistoryItemsAdded: NSNotification.Name](nsnotification/name-swift.struct/webhistoryitemsadded.md)
+- [static let WebHistoryItemsAdded: NSNotification.Name](./webhistoryitemsadded.md)
   Posted when history items have been added to a web history.
-- [static let WebHistoryItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryitemsremoved.md)
+- [static let WebHistoryItemsRemoved: NSNotification.Name](./webhistoryitemsremoved.md)
   Posted when items have been removed from the web history.
-- [static let WebHistoryLoaded: NSNotification.Name](nsnotification/name-swift.struct/webhistoryloaded.md)
+- [static let WebHistoryLoaded: NSNotification.Name](./webhistoryloaded.md)
   Posted when web history items have been loaded from a URL.
-- [static let WebHistorySaved: NSNotification.Name](nsnotification/name-swift.struct/webhistorysaved.md)
+- [static let WebHistorySaved: NSNotification.Name](./webhistorysaved.md)
   Posted when web history items have been saved to a URL.
-- [static let WebPreferencesChanged: NSNotification.Name](nsnotification/name-swift.struct/webpreferenceschanged.md)
+- [static let WebPreferencesChanged: NSNotification.Name](./webpreferenceschanged.md)
   Posted when the web preference settings are changed.
-- [static let WebViewDidBeginEditing: NSNotification.Name](nsnotification/name-swift.struct/webviewdidbeginediting.md)
+- [static let WebViewDidBeginEditing: NSNotification.Name](./webviewdidbeginediting.md)
   Posted when a web view begins any operation that changes its contents in response to user editing.
-- [static let WebViewDidChange: NSNotification.Name](nsnotification/name-swift.struct/webviewdidchange.md)
+- [static let WebViewDidChange: NSNotification.Name](./webviewdidchange.md)
   Posted when a web view performs any operation that changes its contents in response to user editing.
-- [static let WebViewDidChangeSelection: NSNotification.Name](nsnotification/name-swift.struct/webviewdidchangeselection.md)
+- [static let WebViewDidChangeSelection: NSNotification.Name](./webviewdidchangeselection.md)
   Posted when a web view changes its typing selection.
-- [static let WebViewDidChangeTypingStyle: NSNotification.Name](nsnotification/name-swift.struct/webviewdidchangetypingstyle.md)
+- [static let WebViewDidChangeTypingStyle: NSNotification.Name](./webviewdidchangetypingstyle.md)
   Posted when a web view changes its typing style.
-- [static let WebViewDidEndEditing: NSNotification.Name](nsnotification/name-swift.struct/webviewdidendediting.md)
+- [static let WebViewDidEndEditing: NSNotification.Name](./webviewdidendediting.md)
   Posted when a web view ends any operation that changes its contents in response to user editing.
-- [static let WebViewProgressEstimateChanged: NSNotification.Name](nsnotification/name-swift.struct/webviewprogressestimatechanged.md)
+- [static let WebViewProgressEstimateChanged: NSNotification.Name](./webviewprogressestimatechanged.md)
   Posted by a WebView object when the estimated progress value of a load changes.
-- [static let WebViewProgressFinished: NSNotification.Name](nsnotification/name-swift.struct/webviewprogressfinished.md)
+- [static let WebViewProgressFinished: NSNotification.Name](./webviewprogressfinished.md)
   Posted by a WebView object when the load has finished.
 
 

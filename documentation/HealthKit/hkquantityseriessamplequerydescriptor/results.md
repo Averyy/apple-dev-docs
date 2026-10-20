@@ -1,7 +1,8 @@
 # HKQuantitySeriesSampleQueryDescriptor.Results
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits data from the quantity series query.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that emits data from the quantity series query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,19 +23,20 @@ struct Results
 ## Topics
 
 ### Creating an Iterator
-- [HKQuantitySeriesSampleQueryDescriptor.Results.Iterator](hkquantityseriessamplequerydescriptor/results/iterator.md)
+- [HKQuantitySeriesSampleQueryDescriptor.Results.Iterator](./results/iterator.md)
   An iterator for accessing individual data entries from the series.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func results(for: HKHealthStore) -> HKQuantitySeriesSampleQueryDescriptor.Results](hkquantityseriessamplequerydescriptor/results(for:).md)
+### Running Queries
+- [func results(for: HKHealthStore) -> HKQuantitySeriesSampleQueryDescriptor.Results](./results%28for%29.md)
   Runs a one-shot query that returns an asynchronous sequence of matching series samples.
-- [HKQuantitySeriesSampleQueryDescriptor.Result](hkquantityseriessamplequerydescriptor/result.md)
+- [HKQuantitySeriesSampleQueryDescriptor.Result](./result.md)
   A set of results from a quantity series sample descriptor.
 
 

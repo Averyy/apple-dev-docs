@@ -1,7 +1,8 @@
 # conversionTRCSize
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -18,9 +19,14 @@
 class let conversionTRCSize: CFString
 ```
 
+```c
+extern CFStringRef const kCGColorConversionTRCSize;
+```
+
 ## See Also
 
-- [func converted(to: CGColorSpace, intent: CGColorRenderingIntent, options: CFDictionary?) -> CGColor?](cgcolor/converted(to:intent:options:).md)
+### Converting Between Color Spaces
+- [func converted(to: CGColorSpace, intent: CGColorRenderingIntent, options: CFDictionary?) -> CGColor?](./converted%28to,intent,options%29.md)
   Creates a new color in a different color space that matches the provided color.
 
 

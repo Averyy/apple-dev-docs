@@ -1,7 +1,8 @@
 # focusRingMaskBounds
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The focus ring mask bounds, specified in the view’s coordinate space.
 
@@ -14,23 +15,28 @@ The focus ring mask bounds, specified in the view’s coordinate space.
 var focusRingMaskBounds: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect focusRingMaskBounds;
+```
+
 #### Discussion
 
-The rectangle in this property is specified relative to the view’s interior (bounds) coordinate space. The mask bounds allows the focus ring’s overall size and position to be determined before it is drawn. Override this property if your view requires the display of a focus ring. The default value of this property is [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect).
+The rectangle in this property is specified relative to the view’s interior (bounds) coordinate space. The mask bounds allows the focus ring’s overall size and position to be determined before it is drawn. Override this property if your view requires the display of a focus ring. The default value of this property is [`NSZeroRect`](../../Foundation/nszerorect.md).
 
-> **Note**:  The information provided by this property enables Accessibility to identify selected subelements for zoom tracking, so it is important that this method provide a reasonably tight bounding box and that the [`noteFocusRingMaskChanged()`](nsview/notefocusringmaskchanged().md) method is called as described.
+> **Note**:  The information provided by this property enables Accessibility to identify selected subelements for zoom tracking, so it is important that this method provide a reasonably tight bounding box and that the [`noteFocusRingMaskChanged()`](./notefocusringmaskchanged%28%29.md) method is called as described.
 
 ## See Also
 
-- [var focusRingType: NSFocusRingType](nsview/focusringtype.md)
+### Drawing the Focus Ring
+- [var focusRingType: NSFocusRingType](./focusringtype.md)
   The type of focus ring drawn around the view.
-- [func drawFocusRingMask()](nsview/drawfocusringmask.md)
+- [func drawFocusRingMask()](./drawfocusringmask%28%29.md)
   Draws the focus ring mask for the view.
-- [func noteFocusRingMaskChanged()](nsview/notefocusringmaskchanged.md)
+- [func noteFocusRingMaskChanged()](./notefocusringmaskchanged%28%29.md)
   Invoked to notify the view that the focus ring mask requires updating.
-- [func setKeyboardFocusRingNeedsDisplay(NSRect)](nsview/setkeyboardfocusringneedsdisplay(_:).md)
+- [func setKeyboardFocusRingNeedsDisplay(NSRect)](./setkeyboardfocusringneedsdisplay%28_%29.md)
   Invalidates the area around the focus ring.
-- [class var defaultFocusRingType: NSFocusRingType](nsview/defaultfocusringtype.md)
+- [class var defaultFocusRingType: NSFocusRingType](./defaultfocusringtype.md)
   Returns the default focus ring type.
 
 

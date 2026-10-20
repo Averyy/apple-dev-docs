@@ -1,7 +1,8 @@
 # kGSSChangePasswordNewPassword
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value is a string that indicates the new password.
 
@@ -18,9 +19,14 @@ The value is a string that indicates the new password.
 var kGSSChangePasswordNewPassword: String { get }
 ```
 
+```c
+#define kGSSChangePasswordNewPassword
+```
+
 ## See Also
 
-- [var kGSSChangePasswordOldPassword: String](kgsschangepasswordoldpassword.md)
+### Password Keys
+- [var kGSSChangePasswordOldPassword: String](./kgsschangepasswordoldpassword.md)
   The value is a string that indicates the old password.
 
 

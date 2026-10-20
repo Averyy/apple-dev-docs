@@ -1,7 +1,8 @@
 # synchronizationMode
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode in which the disk image synchronizes data with the underlying storage device.
 
@@ -14,13 +15,18 @@ The mode in which the disk image synchronizes data with the underlying storage d
 var synchronizationMode: VZDiskImageSynchronizationMode { get }
 ```
 
+```objc
+@property (readonly) VZDiskImageSynchronizationMode synchronizationMode;
+```
+
 ## See Also
 
-- [var url: URL](vzdiskimagestoragedeviceattachment/url.md)
+### Getting the disk image details
+- [var url: URL](./url.md)
   The URL of the underlying disk image.
-- [var isReadOnly: Bool](vzdiskimagestoragedeviceattachment/isreadonly.md)
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether the underlying disk image is read-only.
-- [var cachingMode: VZDiskImageCachingMode](vzdiskimagestoragedeviceattachment/cachingmode.md)
+- [var cachingMode: VZDiskImageCachingMode](./cachingmode.md)
   The current cacheing mode for the virtual disk image.
 
 

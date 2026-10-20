@@ -1,18 +1,23 @@
 # identity_type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 es_tcc_identity_type_t
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var identity_type: es_tcc_identity_type_t
+```
+
+```c
+es_tcc_identity_type_t identity_type;
 ```
 
 #### Discussion

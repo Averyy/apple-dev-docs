@@ -1,7 +1,8 @@
 # Stations.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The name of the relationship you want to fetch for this resource.
 
@@ -10,14 +11,14 @@ The name of the relationship you want to fetch for this resource.
 
 ## Declaration
 
-```swift
+```
 object Stations.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Stations.Relationships.StationsRadioShowRelationship](stations/relationships-data.dictionary/stationsradioshowrelationship.md)
+- [object Stations.Relationships.StationsRadioShowRelationship](./relationships-data.dictionary/stationsradioshowrelationship.md)
   For radio show episodes, this relationship is the Apple Curator that represents the radio show.
 
 ## Properties
@@ -26,7 +27,8 @@ object Stations.Relationships
 
 ## See Also
 
-- [object Stations.Attributes](stations/attributes-data.dictionary.md)
+### Related Objects
+- [object Stations.Attributes](./attributes-data.dictionary.md)
   The attributes for a station resource.
 
 

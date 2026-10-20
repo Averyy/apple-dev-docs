@@ -1,7 +1,8 @@
 # textAlignment
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the text within its container.
 
@@ -21,9 +22,10 @@ var textAlignment: DocumentObservation.Container.Text.Alignment? { get }
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](documentobservation/container/text-swift.struct/boundingregion.md)
+### Inspecting the text
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   A polygon that defines the boundary of text.
-- [DocumentObservation.Container.Text.Alignment](documentobservation/container/text-swift.struct/alignment.md)
+- [DocumentObservation.Container.Text.Alignment](./alignment.md)
   The different text alignment types within a container.
 
 

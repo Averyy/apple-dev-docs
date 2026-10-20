@@ -1,16 +1,17 @@
 # Warping SpriteKit Content By Using an Effect Node
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Distort the child nodes of an effect node by applying a warping effect.
 
 #### Overview
 
-If you want to warp a node that doesn’t conform to [`SKWarpable`](skwarpable.md), you can add it as a child to an effect node that is warped. As an implementor of `SKWarpable`, effect node inherits the [`SKWarpGeometry`](skwarpgeometry.md) property that you assign one of the [`SKWarpGeometry`](skwarpgeometry.md) types to then warp the effect node’s children.
+If you want to warp a node that doesn’t conform to [`SKWarpable`](./skwarpable.md), you can add it as a child to an effect node that is warped. As an implementor of `SKWarpable`, effect node inherits the [`SKWarpGeometry`](./skwarpgeometry.md) property that you assign one of the [`SKWarpGeometry`](./skwarpgeometry.md) types to then warp the effect node’s children.
 
 ##### Warp Text By Using an Effect Node
 
-[`SKLabelNode`](sklabelnode.md) is one such class that doesn’t conform to `SKWarpable`. The following Swift code shows how you can warp a label node by adding it as a child to a [`SKEffectNode`](skeffectnode.md) and assign the effect node a [`SKWarpGeometryGrid`](skwarpgeometrygrid.md) that pulls out the corners horizontally and stretches the center vertically.
+[`SKLabelNode`](./sklabelnode.md) is one such class that doesn’t conform to `SKWarpable`. The following Swift code shows how you can warp a label node by adding it as a child to a [`SKEffectNode`](./skeffectnode.md) and assign the effect node a [`SKWarpGeometryGrid`](./skwarpgeometrygrid.md) that pulls out the corners horizontally and stretches the center vertically.
 
 ```swift
 let labelNode = SKLabelNode(text: "SpriteKit")
@@ -34,7 +35,7 @@ effectNode.warpGeometry = warpGeometryGrid.replacingByDestinationPositions(posit
 
 The following image shows the warped label.
 
-![Warped label](/images/com.apple.spritekit/media-3130018@2x.png)
+![Warped label](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3130018@2x.png)
 
 
 ---

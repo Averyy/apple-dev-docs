@@ -1,7 +1,8 @@
 # revocationReason
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason that the App Store refunded the transaction or revoked it from Family Sharing.
 
@@ -22,14 +23,15 @@ let revocationReason: Transaction.RevocationReason?
 
 ## Mentions
 
-- [Testing refund requests](testing-refund-requests.md)
-- [Testing Family Sharing](testing-family-sharing.md)
+- [Testing refund requests](../testing-refund-requests.md)
+- [Testing Family Sharing](../testing-family-sharing.md)
 
 ## See Also
 
-- [let revocationDate: Date?](transaction/revocationdate.md)
+### Getting revocation status
+- [let revocationDate: Date?](./revocationdate.md)
   The date that the App Store refunded the transaction or revoked it from Family Sharing.
-- [Transaction.RevocationReason](transaction/revocationreason-swift.struct.md)
+- [Transaction.RevocationReason](./revocationreason-swift.struct.md)
   Reasons that describe why the App Store may refund a transaction or revoke it from Family Sharing.
 
 

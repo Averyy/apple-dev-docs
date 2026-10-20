@@ -1,7 +1,8 @@
 # labels
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classifier labels.
 
@@ -22,11 +23,12 @@ var labels: Set<Label> { get }
 
 ## See Also
 
-- [var confidenceThresholds: [Label : Float]](multilabelclassificationmetrics/confidencethresholds.md)
+### Getting the properties
+- [var confidenceThresholds: [Label : Float]](./confidencethresholds.md)
   A dictionary of label and confidence thresholds.
-- [var exampleCount: Int](multilabelclassificationmetrics/examplecount.md)
+- [var exampleCount: Int](./examplecount.md)
   The number of examples used to compute the metrics.
-- [var meanAveragePrecision: Float](multilabelclassificationmetrics/meanaverageprecision.md)
+- [var meanAveragePrecision: Float](./meanaverageprecision.md)
   The mean average precision.
 
 

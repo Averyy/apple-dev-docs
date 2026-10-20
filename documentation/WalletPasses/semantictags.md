@@ -1,7 +1,8 @@
 # SemanticTags
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
 
@@ -12,15 +13,15 @@ An object that contains machine-readable metadata the system uses to offer a pas
 
 ## Declaration
 
-```swift
+```
 object SemanticTags
 ```
 
 ## Mentions
 
-- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+- [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](./creating-an-event-pass-using-semantic-tags.md)
+- [Supporting semantic tags in Wallet passes](./supporting-semantic-tags-in-wallet-passes.md)
 
 ## Properties
 
@@ -46,7 +47,9 @@ object SemanticTags
 - `departureAirportCode` (localizable string): The IATA airport code for the departure airport, such as `MPM` or `LHR`. Use this key only for airline boarding passes.
 - `departureAirportName` (localizable string): The full name of the departure airport, such as `Maputo International Airport`. Use this key only for airline boarding passes.
 - `departureLocationSecurityPrograms` ([string]): A list of security programs that exist at the departure location. This only shows in the UI if a program is in `passengerEligibleSecurityPrograms` and at least one of `departureLocationSecurityPrograms` or `destinationLocationSecurityPrograms`.
-- `departureLocationTimeZone` (string): The time zone of the departure location, such as `America/Chicago`. See the [`IANA Time Zone Database`](https://developer.apple.comhttps://www.iana.org/time-zones) for the full list of supported time zones.
+
+  **Allowed Values**: `PKTransitSecurityProgramTSAPreCheck`, `PKTransitSecurityProgramTSAPreCheckTouchlessID`, `PKTransitSecurityProgramOSS`, `PKTransitSecurityProgramITI`, `PKTransitSecurityProgramITD`, `PKTransitSecurityProgramGlobalEntry`, `PKTransitSecurityProgramCLEAR`
+- `departureLocationTimeZone` (string): The time zone of the departure location, such as `America/Chicago`. See the [IANA Time Zone Database](https://www.iana.org/time-zones) for the full list of supported time zones.
 - `departureCityName` (localizable string): The name of the departure city to display on the boarding pass, such as `London` or `Shanghai`.
 - `departureGate` (localizable string): The gate number or letters of the departure gate, such as `1A`. Don’t include the word *gate*.
 - `departureLocation` (SemanticTagType.Location): An object that represents the geographic coordinates of the transit departure location, suitable for display on a map. If possible, use precise locations, which are more useful to travelers; for example, the specific location of an airport gate. Use this key for any type of boarding pass.
@@ -57,7 +60,9 @@ object SemanticTags
 - `destinationAirportCode` (localizable string): The IATA airport code for the destination airport, such as `MPM` or `LHR`. Use this key only for airline boarding passes.
 - `destinationAirportName` (localizable string): The full name of the destination airport, such as `London Heathrow`. Use this key only for airline boarding passes.
 - `destinationLocationSecurityPrograms` ([string]): A list of security programs that exist at the destination location. This only shows in the UI if a program is in `passengerEligibleSecurityPrograms` and at least one of `departureLocationSecurityPrograms` or `destinationLocationSecurityPrograms`.
-- `destinationLocationTimeZone` (string): The time zone of the destination location, such as `America/Los_Angeles`. See the [`IANA Time Zone Database`](https://developer.apple.comhttps://www.iana.org/time-zones) for the full list of supported time zones.
+
+  **Allowed Values**: `PKTransitSecurityProgramTSAPreCheck`, `PKTransitSecurityProgramTSAPreCheckTouchlessID`, `PKTransitSecurityProgramOSS`, `PKTransitSecurityProgramITI`, `PKTransitSecurityProgramITD`, `PKTransitSecurityProgramGlobalEntry`, `PKTransitSecurityProgramCLEAR`
+- `destinationLocationTimeZone` (string): The time zone of the destination location, such as `America/Los_Angeles`. See the [IANA Time Zone Database](https://www.iana.org/time-zones) for the full list of supported time zones.
 - `destinationCityName` (localizable string): The name of the destination city to display on the boarding pass, such as `London` or `Shanghai`.
 - `destinationGate` (localizable string): The gate number or letter of the destination gate, such as `1A`. Don’t include the word *gate*. Use this key only for airline boarding passes.
 - `destinationLocation` (SemanticTagType.Location): An object that represents the geographic coordinates of the transit departure location, suitable for display on a map. Use this key for any type of boarding pass.
@@ -72,6 +77,8 @@ object SemanticTags
 - `eventStartDate` (ISO 8601 date as string): The date and time the event starts. Use this key for any type of event ticket.
 - `eventStartDateInfo` (SemanticTagType.EventDateInfo): An object that provides information for the date and time the event starts. Use this key for any type of event ticket.
 - `eventType` (string): The type of event. Use this key for any type of event ticket.
+
+  **Allowed Values**: `PKEventTypeGeneric`, `PKEventTypeLivePerformance`, `PKEventTypeMovie`, `PKEventTypeSports`, `PKEventTypeConference`, `PKEventTypeConvention`, `PKEventTypeWorkshop`, `PKEventTypeSocialGathering`
 - `flightCode` (localizable string): The IATA flight code, such as `EX123`. Use this key only for airline boarding passes.
 - `flightNumber` (number): The numeric portion of the IATA flight code, such as `123` for `flightCode` `EX123`. Use this key only for airline boarding passes.
 - `genre` (localizable string): The genre of the performance, such as `classical`. Use this key for any type of event ticket.
@@ -82,7 +89,7 @@ object SemanticTags
 - `internationalDocumentsVerifiedDeclarationName` (localizable string): The name of the declaration given once the passenger’s international documents are verified. Examples include `DOCS OK` or `Travel Ready`. If `internationalDocumentsAreVerified` is `true`, Wallet displays a badge on the boarding pass with this value.
 - `leagueAbbreviation` (localizable string): The abbreviated league name for a sports event. Use this key only for a sports event ticket.
 - `leagueName` (localizable string): The unabbreviated league name for a sports event. Use this key only for a sports event ticket.
-- `loungePlaceIDs` ([string]): The `MapKit` `Place IDs` that reference the transit provider lounge locations. For more information, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
+- `loungePlaceIDs` ([string]): The `MapKit` `Place IDs` that reference the transit provider lounge locations. For more information, see [Identifying unique locations with Place IDs](../MapKit/identifying-unique-locations-with-place-ids.md).
 - `membershipProgramName` (localizable string): The name of a frequent flyer or loyalty program. Use this key for any type of boarding pass.
 - `membershipProgramNumber` (localizable string): The ticketed passenger’s frequent flyer or loyalty number. Use this key for any type of boarding pass.
 - `membershipProgramStatus` (localizable string): The ticketed passenger’s frequent flyer or loyalty program status. Use this key for any type of boarding pass.
@@ -91,10 +98,14 @@ object SemanticTags
 - `originalDepartureDate` (ISO 8601 date as string): The originally scheduled date and time of departure. Use this key for any type of boarding pass.
 - `passengerAirlineSSRs` ([string]): An array of airline-specific SSRs that apply to the ticketed passenger.
 - `passengerCapabilities` ([string]): A list of capabilities the passenger has. Only use this key for airline boarding passes.
+
+  **Allowed Values**: `PKPassengerCapabilityPreboarding`, `PKPassengerCapabilityPriorityBoarding`, `PKPassengerCapabilityCarryon`, `PKPassengerCapabilityPersonalItem`, `PKPassengerCapabilityLapInfant`
 - `passengerEligibleSecurityPrograms` ([string]): A list of security programs the passenger is eligible for. This only shows in the UI if a program is in `passengerEligibleSecurityPrograms` and at least one of `departureLocationSecurityPrograms` or `destinationLocationSecurityPrograms`.
-- `passengerInformationSSRs` ([string]): An array of IATA information SSRs that apply to the ticketed passenger. A comprehensive list of service SSRs can be found in the [`the IATA Airlines Developer Guide`](https://developer.apple.comhttps://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) under A List of Information SSRs.
+
+  **Allowed Values**: `PKTransitSecurityProgramTSAPreCheck`, `PKTransitSecurityProgramTSAPreCheckTouchlessID`, `PKTransitSecurityProgramOSS`, `PKTransitSecurityProgramITI`, `PKTransitSecurityProgramITD`, `PKTransitSecurityProgramGlobalEntry`, `PKTransitSecurityProgramCLEAR`
+- `passengerInformationSSRs` ([string]): An array of IATA information SSRs that apply to the ticketed passenger. A comprehensive list of service SSRs can be found in the [the IATA Airlines Developer Guide](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) under A List of Information SSRs.
 - `passengerName` (SemanticTagType.PersonNameComponents): An object that represents the name of the passenger. Use this key for any type of boarding pass.
-- `passengerServiceSSRs` ([string]): An array of IATA SSRs that apply to the ticketed passenger. A comprehensive list of service SSRs can be found in [`the IATA Airlines Developer Guide`](https://developer.apple.comhttps://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) under A List of Service SSRs.
+- `passengerServiceSSRs` ([string]): An array of IATA SSRs that apply to the ticketed passenger. A comprehensive list of service SSRs can be found in [the IATA Airlines Developer Guide](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) under A List of Service SSRs.
 - `performerNames` ([localizable string]): An array of the full names of the performers and opening acts at the event, in decreasing order of significance. Use this key for any type of event ticket.
 - `playlistIDs` ([localizable string]): An array of the Apple Music persistent ID for each playlist corresponding to the event, in decreasing order of significance. Use this key for any type of event ticket.
 - `priorityStatus` (localizable string): The priority status the ticketed passenger holds, such as `Gold` or `Silver`. Use this key for any type of boarding pass.
@@ -131,15 +142,17 @@ object SemanticTags
 
 ## See Also
 
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+### Related Documentation
+- [Supporting semantic tags in Wallet passes](./supporting-semantic-tags-in-wallet-passes.md)
   Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
-- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
+### Boarding passes
+- [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md)
   Update your semantic tags to provide live and interactive passenger information for boarding passes.
-- [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
+- [object Pass.BoardingPass](./pass/boardingpass-data.dictionary.md)
   An object that represents the groups of fields that display the information for a boarding pass.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
 
 

@@ -1,7 +1,8 @@
 # vfs_unbusy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 "Unbusy" a mountpoint by releasing its read-write lock.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 void vfs_unbusy(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

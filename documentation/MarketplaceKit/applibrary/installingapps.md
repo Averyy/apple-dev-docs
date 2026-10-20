@@ -1,7 +1,8 @@
 # installingApps
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of apps that are pending installation completion.
 
@@ -18,13 +19,14 @@ final var installingApps: Set<AppLibrary.App> { get set }
 
 ## See Also
 
-- [AppLibrary.App](applibrary/app.md)
+### Installing apps as a marketplace
+- [AppLibrary.App](./app.md)
   Information about an app that someone installs from a marketplace, including its ID and installation status.
-- [AppLibrary.InstallationRequest](applibrary/installationrequest.md)
+- [AppLibrary.InstallationRequest](./installationrequest.md)
   A request to install an app distribution package for a given account.
-- [var isLoading: Bool](applibrary/isloading.md)
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the library is currently loading apps.
-- [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](applibrary/requestappinstallation(_:).md)
+- [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](./requestappinstallation%28_%29.md)
   Requests the installation of the given app distribution package for the given account.
 
 

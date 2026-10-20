@@ -1,7 +1,8 @@
 # CVImageBufferOriginPosition.bottomLeft
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Origin is located at lower left corner of the image
 

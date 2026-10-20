@@ -1,18 +1,19 @@
 # CTLineBreakMode
 
 **Framework**: Core Text  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify what happens when a line is too long for its frame.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,35 +21,40 @@ These constants specify what happens when a line is too long for its frame.
 enum CTLineBreakMode
 ```
 
+```c
+enum CTLineBreakMode : uint8_t;
+```
+
 ## Topics
 
 ### Constants
-- [CTLineBreakMode.byWordWrapping](ctlinebreakmode/bywordwrapping.md)
-- [CTLineBreakMode.byCharWrapping](ctlinebreakmode/bycharwrapping.md)
-- [CTLineBreakMode.byClipping](ctlinebreakmode/byclipping.md)
-- [CTLineBreakMode.byTruncatingHead](ctlinebreakmode/bytruncatinghead.md)
-- [CTLineBreakMode.byTruncatingTail](ctlinebreakmode/bytruncatingtail.md)
-- [CTLineBreakMode.byTruncatingMiddle](ctlinebreakmode/bytruncatingmiddle.md)
+- [CTLineBreakMode.byWordWrapping](./ctlinebreakmode/bywordwrapping.md)
+- [CTLineBreakMode.byCharWrapping](./ctlinebreakmode/bycharwrapping.md)
+- [CTLineBreakMode.byClipping](./ctlinebreakmode/byclipping.md)
+- [CTLineBreakMode.byTruncatingHead](./ctlinebreakmode/bytruncatinghead.md)
+- [CTLineBreakMode.byTruncatingTail](./ctlinebreakmode/bytruncatingtail.md)
+- [CTLineBreakMode.byTruncatingMiddle](./ctlinebreakmode/bytruncatingmiddle.md)
 ### Initializers
-- [init?(rawValue: UInt8)](ctlinebreakmode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./ctlinebreakmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CTTextAlignment](cttextalignment.md)
+### Constants
+- [enum CTTextAlignment](./cttextalignment.md)
   Constants that specify text alignment.
-- [enum CTWritingDirection](ctwritingdirection.md)
+- [enum CTWritingDirection](./ctwritingdirection.md)
   These constants specify the writing direction.
-- [enum CTParagraphStyleSpecifier](ctparagraphstylespecifier.md)
+- [enum CTParagraphStyleSpecifier](./ctparagraphstylespecifier.md)
   Constants used to query and modify a paragraph style object.
 
 

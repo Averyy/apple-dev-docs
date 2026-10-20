@@ -1,7 +1,8 @@
 # init(controlPoints:creationDate:id:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke path with the specified cubic B-spline control points and a unique identifier.
 
@@ -30,13 +31,14 @@ init<T>(controlPoints: T, creationDate: Date, id: UUID) where T : Sequence, T.El
 
 ## See Also
 
-- [init()](pkstrokepath-swift.struct/init.md)
+### Creating a new stroke path
+- [init()](./init%28%29.md)
   Creates an empty stroke path.
-- [init<T>(controlPoints: T, creationDate: Date)](pkstrokepath-swift.struct/init(controlpoints:creationdate:).md)
+- [init<T>(controlPoints: T, creationDate: Date)](./init%28controlpoints,creationdate%29.md)
   Creates a stroke path with the cubic B-spline control points and a date that you specify.
-- [init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.ConvertedBezierPoint) -> PKStrokePoint)](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md)
+- [init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.ConvertedBezierPoint) -> PKStrokePoint)](./init%28bezierpath,creationdate,pointprovider%29.md)
   Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
-- [PKStrokePath.ConvertedBezierPoint](pkstrokepath-swift.struct/convertedbezierpoint.md)
+- [PKStrokePath.ConvertedBezierPoint](./convertedbezierpoint.md)
   Information about a B-spline control point converted from a Bézier path.
 
 

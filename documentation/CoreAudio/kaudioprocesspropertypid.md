@@ -1,11 +1,12 @@
 # kAudioProcessPropertyPID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,13 +14,18 @@
 var kAudioProcessPropertyPID: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioProcessPropertyPID
+```
+
 ## See Also
 
-- [var kAudioProcessPropertyBundleID: AudioObjectPropertySelector](kaudioprocesspropertybundleid.md)
-- [var kAudioProcessPropertyDevices: AudioObjectPropertySelector](kaudioprocesspropertydevices.md)
-- [var kAudioProcessPropertyIsRunning: AudioObjectPropertySelector](kaudioprocesspropertyisrunning.md)
-- [var kAudioProcessPropertyIsRunningInput: AudioObjectPropertySelector](kaudioprocesspropertyisrunninginput.md)
-- [var kAudioProcessPropertyIsRunningOutput: AudioObjectPropertySelector](kaudioprocesspropertyisrunningoutput.md)
+### Constants
+- [var kAudioProcessPropertyBundleID: AudioObjectPropertySelector](./kaudioprocesspropertybundleid.md)
+- [var kAudioProcessPropertyDevices: AudioObjectPropertySelector](./kaudioprocesspropertydevices.md)
+- [var kAudioProcessPropertyIsRunning: AudioObjectPropertySelector](./kaudioprocesspropertyisrunning.md)
+- [var kAudioProcessPropertyIsRunningInput: AudioObjectPropertySelector](./kaudioprocesspropertyisrunninginput.md)
+- [var kAudioProcessPropertyIsRunningOutput: AudioObjectPropertySelector](./kaudioprocesspropertyisrunningoutput.md)
 
 
 ---

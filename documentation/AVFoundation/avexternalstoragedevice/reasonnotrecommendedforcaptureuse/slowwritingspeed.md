@@ -1,7 +1,8 @@
 # slowWritingSpeed
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -16,15 +17,20 @@
 static let slowWritingSpeed: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse
 ```
 
+```c
+extern AVExternalStorageDeviceReasonNotRecommendedForCaptureUse AVExternalStorageDeviceReasonNotRecommendedForCaptureUseSlowWritingSpeed;
+```
+
 #### Discussion
 
 Indicates that the storage device is not recommended for capture as it doesn’t support the recommended writing speed.
 
 ## See Also
 
-- [static let encrypted: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse/encrypted.md)
-- [static let unknownWritingSpeed: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse/unknownwritingspeed.md)
-- [static let unsupportedFileSystem: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse/unsupportedfilesystem.md)
+### Reasons
+- [static let encrypted: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](./encrypted.md)
+- [static let unknownWritingSpeed: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](./unknownwritingspeed.md)
+- [static let unsupportedFileSystem: AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](./unsupportedfilesystem.md)
 
 
 ---

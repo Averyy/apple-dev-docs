@@ -1,7 +1,8 @@
 # vImagePermuteChannels_RGB888(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Permutes the channels of an 8-bit-per-channel, 3-channel interleaved buffer.
 
@@ -20,9 +21,13 @@ Permutes the channels of an 8-bit-per-channel, 3-channel interleaved buffer.
 func vImagePermuteChannels_RGB888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ permuteMap: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImagePermuteChannels_RGB888(const vImage_Buffer *src, const vImage_Buffer *dest, const uint8_t permuteMap[3], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -72,19 +77,20 @@ printf("[%d, %d, %d]\n", data[0], data[1], data[2]);
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `permuteMap`: An array of three 8-bit integers with the values `0`, `1`, and `2`, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImagePermuteChannels_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](vimagepermutechannels_argb8888(_:_:_:_:).md)
+### Permuting channels
+- [func vImagePermuteChannels_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimagepermutechannels_argb8888%28_,_,_,_%29.md)
   Permutes the channels of an 8-bit-per-channel, 4-channel interleaved buffer.
-- [func vImagePermuteChannels_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](vimagepermutechannels_argb16u(_:_:_:_:).md)
+- [func vImagePermuteChannels_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimagepermutechannels_argb16u%28_,_,_,_%29.md)
   Permutes the channels of an unsigned 16-bit-per-channel, 4-channel interleaved buffer.
-- [func vImagePermuteChannels_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](vimagepermutechannels_argb16f(_:_:_:_:).md)
+- [func vImagePermuteChannels_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimagepermutechannels_argb16f%28_,_,_,_%29.md)
   Permutes the channels of a floating-point 16-bit-per-channel, 4-channel interleaved buffer.
-- [func vImagePermuteChannels_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](vimagepermutechannels_argbffff(_:_:_:_:).md)
+- [func vImagePermuteChannels_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimagepermutechannels_argbffff%28_,_,_,_%29.md)
   Permutes the channels of a floating-point 32-bit-per-channel, 4-channel interleaved buffer.
 
 

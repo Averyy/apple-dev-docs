@@ -1,7 +1,8 @@
 # GetFrameNumber
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current frame number of the USB controller.
 
@@ -10,13 +11,13 @@ Gets the current frame number of the USB controller.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetFrameNumber(uint64_t *frameNumber, uint64_t *theTime);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -29,17 +30,18 @@ This method returns the current frame number of the USB controller, omitting the
 
 ## See Also
 
-- [GetAddress](iousbhostdevice/getaddress.md)
+### Getting Device Information
+- [GetAddress](./getaddress.md)
   Returns the address of the device.
-- [GetSpeed](iousbhostdevice/getspeed.md)
+- [GetSpeed](./getspeed.md)
   Retrieves the device’s operational speed.
-- [GetPortStatus](iousbhostdevice/getportstatus.md)
+- [GetPortStatus](./getportstatus.md)
   Returns the current port status of the device.
-- [tIOUSBHostConnectionSpeed](tiousbhostconnectionspeed.md)
+- [tIOUSBHostConnectionSpeed](../tiousbhostconnectionspeed.md)
   Constants indicating the connection speed of the device.
-- [tIOUSBHostPortStatus](tiousbhostportstatus.md)
+- [tIOUSBHostPortStatus](../tiousbhostportstatus.md)
   Constants indicating the state of a port.
-- [tIOUSBHostPortType](tiousbhostporttype.md)
+- [tIOUSBHostPortType](../tiousbhostporttype.md)
   Constants indicating a port’s type.
 
 

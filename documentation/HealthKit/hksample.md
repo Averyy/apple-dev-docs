@@ -1,7 +1,8 @@
 # HKSample
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A HealthKit sample represents a piece of data associated with a start and end time.
 
@@ -19,16 +20,20 @@ A HealthKit sample represents a piece of data associated with a start and end ti
 class HKSample
 ```
 
+```objc
+@interface HKSample : HKObject
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
+- [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
+- [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
 
 #### Overview
 
-The `HKSample` class is an abstract class. You should never instantiate a `HKSample` object directly. Instead, you always work with one of its concrete subclasses: [`HKCategorySample`](hkcategorysample.md), [`HKQuantitySample`](hkquantitysample.md), [`HKCorrelation`](hkcorrelation.md), or [`HKWorkout`](hkworkout.md) classes.
+The `HKSample` class is an abstract class. You should never instantiate a `HKSample` object directly. Instead, you always work with one of its concrete subclasses: [`HKCategorySample`](./hkcategorysample.md), [`HKQuantitySample`](./hkquantitysample.md), [`HKCorrelation`](./hkcorrelation.md), or [`HKWorkout`](./hkworkout.md) classes.
 
 HealthKit samples are all immutable: You set the sample’s properties when you create it, and they cannot change.
 
@@ -37,61 +42,62 @@ If the sample represents data over a duration, the start time must be earlier th
 ## Topics
 
 ### Accessing the Sample’s Data
-- [var startDate: Date](hksample/startdate.md)
+- [var startDate: Date](./hksample/startdate.md)
   The sample’s start date.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](./hksample/enddate.md)
   The sample’s end date.
-- [var hasUndeterminedDuration: Bool](hksample/hasundeterminedduration.md)
+- [var hasUndeterminedDuration: Bool](./hksample/hasundeterminedduration.md)
   Indicates whether the sample has an unknown duration.
-- [var sampleType: HKSampleType](hksample/sampletype.md)
+- [var sampleType: HKSampleType](./hksample/sampletype.md)
   The sample type.
 ### Specifying Sort Identifiers
-- [let HKSampleSortIdentifierStartDate: String](hksamplesortidentifierstartdate.md)
+- [let HKSampleSortIdentifierStartDate: String](./hksamplesortidentifierstartdate.md)
   A constant for sorting samples based on their start date.
-- [let HKSampleSortIdentifierEndDate: String](hksamplesortidentifierenddate.md)
+- [let HKSampleSortIdentifierEndDate: String](./hksamplesortidentifierenddate.md)
   A constant for sorting samples based on their end date.
 ### Specifying Predicate Key Paths
-- [let HKPredicateKeyPathStartDate: String](hkpredicatekeypathstartdate.md)
+- [let HKPredicateKeyPathStartDate: String](./hkpredicatekeypathstartdate.md)
   The key path for accessing the sample’s start date.
-- [let HKPredicateKeyPathEndDate: String](hkpredicatekeypathenddate.md)
+- [let HKPredicateKeyPathEndDate: String](./hkpredicatekeypathenddate.md)
   The key path for accessing the sample’s end date.
 
 ## Relationships
 
 ### Inherits From
-- [HKObject](hkobject.md)
+- [HKObject](./hkobject.md)
 ### Inherited By
-- [HKAudiogramSample](hkaudiogramsample.md)
-- [HKCategorySample](hkcategorysample.md)
-- [HKClinicalRecord](hkclinicalrecord.md)
-- [HKCorrelation](hkcorrelation.md)
-- [HKDocumentSample](hkdocumentsample.md)
-- [HKElectrocardiogram](hkelectrocardiogram.md)
-- [HKMedicationDoseEvent](hkmedicationdoseevent.md)
-- [HKQuantitySample](hkquantitysample.md)
-- [HKScoredAssessment](hkscoredassessment.md)
-- [HKSeriesSample](hkseriessample.md)
-- [HKStateOfMind](hkstateofmind.md)
-- [HKVerifiableClinicalRecord](hkverifiableclinicalrecord.md)
-- [HKVisionPrescription](hkvisionprescription.md)
-- [HKWorkout](hkworkout.md)
+- [HKAudiogramSample](./hkaudiogramsample.md)
+- [HKCategorySample](./hkcategorysample.md)
+- [HKClinicalRecord](./hkclinicalrecord.md)
+- [HKCorrelation](./hkcorrelation.md)
+- [HKDocumentSample](./hkdocumentsample.md)
+- [HKElectrocardiogram](./hkelectrocardiogram.md)
+- [HKMedicationDoseEvent](./hkmedicationdoseevent.md)
+- [HKQuantitySample](./hkquantitysample.md)
+- [HKScoredAssessment](./hkscoredassessment.md)
+- [HKSeriesSample](./hkseriessample.md)
+- [HKStateOfMind](./hkstateofmind.md)
+- [HKVerifiableClinicalRecord](./hkverifiableclinicalrecord.md)
+- [HKVisionPrescription](./hkvisionprescription.md)
+- [HKWorkout](./hkworkout.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKQuantitySample](hkquantitysample.md)
+### Abstract superclasses
+- [class HKQuantitySample](./hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKObject](hkobject.md)
+- [class HKObject](./hkobject.md)
   A piece of data that can be stored inside the HealthKit store.
 
 

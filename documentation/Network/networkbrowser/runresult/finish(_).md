@@ -1,7 +1,8 @@
 # NetworkBrowser.RunResult.finish(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of meters between two map points.
 
@@ -20,6 +21,10 @@ Returns the number of meters between two map points.
 func distance(to b: MKMapPoint) -> CLLocationDistance
 ```
 
+```c
+extern CLLocationDistance MKMetersBetweenMapPoints(MKMapPoint a, MKMapPoint b);
+```
+
 #### Return Value
 
 The number of meters between the specified map points.
@@ -34,9 +39,10 @@ This distance reflects the actual distance between the two points on the surface
 
 ## See Also
 
-- [func MKMetersPerMapPointAtLatitude(CLLocationDegrees) -> CLLocationDistance](mkmeterspermappointatlatitude(_:).md)
+### Getting the distance between points
+- [func MKMetersPerMapPointAtLatitude(CLLocationDegrees) -> CLLocationDistance](../mkmeterspermappointatlatitude%28_%29.md)
   Returns the distance that one map point spans at the specified latitude.
-- [func MKMapPointsPerMeterAtLatitude(CLLocationDegrees) -> Double](mkmappointspermeteratlatitude(_:).md)
+- [func MKMapPointsPerMeterAtLatitude(CLLocationDegrees) -> Double](../mkmappointspermeteratlatitude%28_%29.md)
   Returns the number of map points that represent one meter at the specified latitude.
 
 

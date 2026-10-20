@@ -1,7 +1,8 @@
 # IOUSBHostInterfacePropertyKey
 
 **Framework**: IOUSBHost  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties of a USB interface that describe its state.
 
@@ -15,31 +16,36 @@ Properties of a USB interface that describe its state.
 struct IOUSBHostInterfacePropertyKey
 ```
 
+```c
+typedef NSString * IOUSBHostInterfacePropertyKey;
+```
+
 ## Topics
 
 ### Properties
-- [static let alternateSetting: IOUSBHostInterfacePropertyKey](iousbhostinterfacepropertykey/alternatesetting.md)
+- [static let alternateSetting: IOUSBHostInterfacePropertyKey](./iousbhostinterfacepropertykey/alternatesetting.md)
   The USB interface’s current alternative setting value.
 ### Initializing the Structure
-- [init(rawValue: String)](iousbhostinterfacepropertykey/init(rawvalue:).md)
+- [init(rawValue: String)](./iousbhostinterfacepropertykey/init%28rawvalue%29.md)
   Creates the structure.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IOUSBHostDevicePropertyKey](iousbhostdevicepropertykey.md)
+### IOServicePlane Properties
+- [struct IOUSBHostDevicePropertyKey](./iousbhostdevicepropertykey.md)
   Properties of a USB device that describe its state.
-- [struct IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey.md)
+- [struct IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey.md)
   Properties for implementing the matching service.
-- [typealias IOUSBHostPropertyKey](iousbhostpropertykey.md)
+- [typealias IOUSBHostPropertyKey](./iousbhostpropertykey.md)
   Properties that the USB host device and interface classes share.
 
 

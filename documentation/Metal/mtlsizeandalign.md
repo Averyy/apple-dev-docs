@@ -1,17 +1,18 @@
 # MTLSizeAndAlign
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The size and alignment of a resource, in bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,38 +20,43 @@ The size and alignment of a resource, in bytes.
 struct MTLSizeAndAlign
 ```
 
+```c
+typedef struct { ... } MTLSizeAndAlign;
+```
+
 ## Topics
 
 ### Accessing the size and alignment
-- [var size: Int](mtlsizeandalign/size.md)
+- [var size: Int](./mtlsizeandalign/size.md)
   The size of a resource, in bytes.
-- [var align: Int](mtlsizeandalign/align.md)
+- [var align: Int](./mtlsizeandalign/align.md)
   The alignment of a resource, in bytes.
 ### Creating instances
-- [init()](mtlsizeandalign/init.md)
+- [init()](./mtlsizeandalign/init%28%29.md)
   Creates a default instance.
-- [init(size: Int, align: Int)](mtlsizeandalign/init(size:align:).md)
+- [init(size: Int, align: Int)](./mtlsizeandalign/init%28size,align%29.md)
   Creates a new instance initialized to the given values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+### Resource memory allocation and management
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
-- [protocol MTLHeap](mtlheap.md)
+- [protocol MTLHeap](./mtlheap.md)
   A memory pool from which you can suballocate resources.
-- [class MTLHeapDescriptor](mtlheapdescriptor.md)
+- [class MTLHeapDescriptor](./mtlheapdescriptor.md)
   A configuration that customizes the behavior for a Metal memory heap.
-- [enum MTLHeapType](mtlheaptype.md)
+- [enum MTLHeapType](./mtlheaptype.md)
   The options you use to choose the heap type.
 
 

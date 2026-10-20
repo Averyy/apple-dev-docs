@@ -1,7 +1,8 @@
 # DataStoreSnapshotCodingKey
 
 **Framework**: SwiftData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The key space to use when implementing custom coders and decoders for data store snapshots,
 
@@ -24,20 +25,20 @@ enum DataStoreSnapshotCodingKey
 ## Topics
 
 ### Values that describe coding keys
-- [DataStoreSnapshotCodingKey.persistentIdentifier](datastoresnapshotcodingkey/persistentidentifier.md)
+- [DataStoreSnapshotCodingKey.persistentIdentifier](./datastoresnapshotcodingkey/persistentidentifier.md)
   A value that represents a persistent identifier.
 ### Enumeration Cases
-- [DataStoreSnapshotCodingKey.modeledProperty(_:)](datastoresnapshotcodingkey/modeledproperty(_:).md)
+- [DataStoreSnapshotCodingKey.modeledProperty(_:)](./datastoresnapshotcodingkey/modeledproperty%28_%29.md)
   A value that represents the name of the modeled property.
 
 ## Relationships
 
 ### Conforms To
-- [CodingKey](../swift/codingkey.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CodingKey](../Swift/codingkey.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

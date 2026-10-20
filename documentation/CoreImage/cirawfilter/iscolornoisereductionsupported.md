@@ -1,7 +1,8 @@
 # isColorNoiseReductionSupported
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates if the current image supports color noise reduction adjustments.
 
@@ -19,32 +20,37 @@ A Boolean that indicates if the current image supports color noise reduction adj
 var isColorNoiseReductionSupported: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isColorNoiseReductionSupported) BOOL colorNoiseReductionSupported;
+```
+
 #### Discussion
 
-If this value is `true`, you can adjust the amount of color noise reduction to apply to the image by setting [`colorNoiseReductionAmount`](cirawfilter/colornoisereductionamount.md).
+If this value is `true`, you can adjust the amount of color noise reduction to apply to the image by setting [`colorNoiseReductionAmount`](./colornoisereductionamount.md).
 
 ## See Also
 
-- [class var supportedCameraModels: [String]](cirawfilter/supportedcameramodels.md)
+### Inspecting supported camera models, decoders, and filters
+- [class var supportedCameraModels: [String]](./supportedcameramodels.md)
   An array containing the names of all supported camera models.
-- [var supportedDecoderVersions: [CIRAWDecoderVersion]](cirawfilter/supporteddecoderversions.md)
+- [var supportedDecoderVersions: [CIRAWDecoderVersion]](./supporteddecoderversions.md)
   An array of all supported decoder versions for the given image type.
-- [struct CIRAWDecoderVersion](cirawdecoderversion.md)
-- [var isContrastSupported: Bool](cirawfilter/iscontrastsupported.md)
+- [struct CIRAWDecoderVersion](../cirawdecoderversion.md)
+- [var isContrastSupported: Bool](./iscontrastsupported.md)
   A Boolean that indicates if the current image supports contrast adjustments.
-- [var isDetailSupported: Bool](cirawfilter/isdetailsupported.md)
+- [var isDetailSupported: Bool](./isdetailsupported.md)
   A Boolean that indicates if the current image supports detail enhancement adjustments.
-- [var isLensCorrectionSupported: Bool](cirawfilter/islenscorrectionsupported.md)
+- [var isLensCorrectionSupported: Bool](./islenscorrectionsupported.md)
   A Boolean that indicates if you can enable lens correction for the current image.
-- [var isLocalToneMapSupported: Bool](cirawfilter/islocaltonemapsupported.md)
+- [var isLocalToneMapSupported: Bool](./islocaltonemapsupported.md)
   A Boolean that indicates if the current image supports local tone curve adjustments.
-- [var isLuminanceNoiseReductionSupported: Bool](cirawfilter/isluminancenoisereductionsupported.md)
+- [var isLuminanceNoiseReductionSupported: Bool](./isluminancenoisereductionsupported.md)
   A Boolean that indicates if the current image supports luminance noise reduction adjustments.
-- [var isMoireReductionSupported: Bool](cirawfilter/ismoirereductionsupported.md)
+- [var isMoireReductionSupported: Bool](./ismoirereductionsupported.md)
   A Boolean that indicates if the current image supports moire artifact reduction adjustments.
-- [var isSharpnessSupported: Bool](cirawfilter/issharpnesssupported.md)
+- [var isSharpnessSupported: Bool](./issharpnesssupported.md)
   A Boolean that indicates if the current image supports sharpness adjustments.
-- [var nativeSize: CGSize](cirawfilter/nativesize.md)
+- [var nativeSize: CGSize](./nativesize.md)
   The full native size of the unscaled image.
 
 

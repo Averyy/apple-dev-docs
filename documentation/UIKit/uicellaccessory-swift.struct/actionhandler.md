@@ -1,7 +1,8 @@
 # UICellAccessory.ActionHandler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that the system calls when a user taps a cell accessory.
 
@@ -10,7 +11,7 @@ A closure that the system calls when a user taps a cell accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

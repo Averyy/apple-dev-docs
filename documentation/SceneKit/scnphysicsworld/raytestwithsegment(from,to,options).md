@@ -1,18 +1,19 @@
 # rayTestWithSegment(from:to:options:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for physics bodies along a line segment between two points in the physics world.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Searches for physics bodies along a line segment between two points in the physi
 func rayTestWithSegment(from origin: SCNVector3, to dest: SCNVector3, options: [SCNPhysicsWorld.TestOption : Any]? = nil) -> [SCNHitTestResult]
 ```
 
+```objc
+- (NSArray<SCNHitTestResult *> *) rayTestWithSegmentFromPoint:(SCNVector3) origin toPoint:(SCNVector3) dest options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
-An array of [`SCNHitTestResult`](scnhittestresult.md) objects describing search results.
+An array of [`SCNHitTestResult`](../scnhittestresult.md) objects describing search results.
 
 #### Discussion
 
@@ -52,7 +57,8 @@ if (results.firstObject.node == player) {
 
 ## See Also
 
-- [func convexSweepTest(with: SCNPhysicsShape, from: SCNMatrix4, to: SCNMatrix4, options: [SCNPhysicsWorld.TestOption : Any]?) -> [SCNPhysicsContact]](scnphysicsworld/convexsweeptest(with:from:to:options:).md)
+### Searching for Physics Bodies
+- [func convexSweepTest(with: SCNPhysicsShape, from: SCNMatrix4, to: SCNMatrix4, options: [SCNPhysicsWorld.TestOption : Any]?) -> [SCNPhysicsContact]](./convexsweeptest%28with,from,to,options%29.md)
   Searches for physics bodies in the space formed by moving a convex shape through the physics world.
 
 

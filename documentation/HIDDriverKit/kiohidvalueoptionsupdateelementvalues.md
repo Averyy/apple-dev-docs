@@ -1,25 +1,27 @@
 # kIOHIDValueOptionsUpdateElementValues
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option to update the element’s value before returning it.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDValueOptionsUpdateElementValues
 ```
 
 ## See Also
 
-- [kIOHIDValueOptionsFlagRelativeSimple](kiohidvalueoptionsflagrelativesimple.md)
+### Getting the Options
+- [kIOHIDValueOptionsFlagRelativeSimple](./kiohidvalueoptionsflagrelativesimple.md)
   An option to return a simplified version of the value.
-- [kIOHIDValueOptionsFlagPrevious](kiohidvalueoptionsflagprevious.md)
+- [kIOHIDValueOptionsFlagPrevious](./kiohidvalueoptionsflagprevious.md)
   An option to retrieve the element’s previous value.
 
 

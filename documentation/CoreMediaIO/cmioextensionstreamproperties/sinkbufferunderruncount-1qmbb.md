@@ -1,7 +1,8 @@
 # sinkBufferUnderrunCount
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer underrun count.
 
@@ -21,15 +22,16 @@ var sinkBufferUnderrunCount: Int? { get set }
 
 This value is a number the system increments whenever you’re not servicing buffers fast enough.
 
-This property translates to the [`kCMIOStreamPropertyOutputBufferUnderrunCount`](kcmiostreampropertyoutputbufferunderruncount.md) property.
+This property translates to the [`kCMIOStreamPropertyOutputBufferUnderrunCount`](../kcmiostreampropertyoutputbufferunderruncount.md) property.
 
 ## See Also
 
-- [var sinkBufferQueueSize: Int?](cmioextensionstreamproperties/sinkbufferqueuesize-9b80c.md)
+### Configuring Sink Properties
+- [var sinkBufferQueueSize: Int?](./sinkbufferqueuesize-9b80c.md)
   The buffer queue size.
-- [var sinkBuffersRequiredForStartup: Int?](cmioextensionstreamproperties/sinkbuffersrequiredforstartup-1bgyq.md)
+- [var sinkBuffersRequiredForStartup: Int?](./sinkbuffersrequiredforstartup-1bgyq.md)
   The number of buffers the stream requires for startup.
-- [var sinkEndOfData: Int?](cmioextensionstreamproperties/sinkendofdata-8fswu.md)
+- [var sinkEndOfData: Int?](./sinkendofdata-8fswu.md)
   A value that indicates whether the stream has reached its end.
 
 

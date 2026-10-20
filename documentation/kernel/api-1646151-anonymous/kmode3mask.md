@@ -1,14 +1,15 @@
 # kMode3Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kMode3Mask = (1 << kMode3Bit)
 ```
 

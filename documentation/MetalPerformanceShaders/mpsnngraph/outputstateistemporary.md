@@ -1,7 +1,8 @@
 # outputStateIsTemporary
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,17 +18,22 @@
 var outputStateIsTemporary: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL outputStateIsTemporary;
+```
+
 ## See Also
 
-- [var destinationImageAllocator: any MPSImageAllocator](mpsnngraph/destinationimageallocator.md)
-- [protocol MPSImageAllocator](mpsimageallocator.md)
-- [var intermediateImageHandles: [any MPSHandle]?](mpsnngraph/intermediateimagehandles.md)
-- [var resultHandle: (any MPSHandle)?](mpsnngraph/resulthandle.md)
-- [var resultStateHandles: [any MPSHandle]?](mpsnngraph/resultstatehandles.md)
-- [var sourceImageHandles: [any MPSHandle]](mpsnngraph/sourceimagehandles.md)
-- [var sourceStateHandles: [any MPSHandle]?](mpsnngraph/sourcestatehandles.md)
-- [var format: MPSImageFeatureChannelFormat](mpsnngraph/format.md)
-- [var resultImageIsNeeded: Bool](mpsnngraph/resultimageisneeded.md)
+### Instance Properties
+- [var destinationImageAllocator: any MPSImageAllocator](./destinationimageallocator.md)
+- [protocol MPSImageAllocator](../mpsimageallocator.md)
+- [var intermediateImageHandles: [any MPSHandle]?](./intermediateimagehandles.md)
+- [var resultHandle: (any MPSHandle)?](./resulthandle.md)
+- [var resultStateHandles: [any MPSHandle]?](./resultstatehandles.md)
+- [var sourceImageHandles: [any MPSHandle]](./sourceimagehandles.md)
+- [var sourceStateHandles: [any MPSHandle]?](./sourcestatehandles.md)
+- [var format: MPSImageFeatureChannelFormat](./format.md)
+- [var resultImageIsNeeded: Bool](./resultimageisneeded.md)
 
 
 ---

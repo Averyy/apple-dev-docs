@@ -1,7 +1,8 @@
 # accept(_:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts the session request and provides an event handler.
 
@@ -16,13 +17,14 @@ final func accept<Handler>(_ sessionRequestHandler: () -> Handler) -> AccessoryT
 
 ## Parameters
 
-- `sessionRequestHandler`: A closure that produces an [`AccessoryTransportSession.EventHandler`](accessorytransportsession/eventhandler.md) to handle session events.
+- `sessionRequestHandler`: A closure that produces an [`AccessoryTransportSession.EventHandler`](../eventhandler.md) to handle session events.
 
 ## See Also
 
-- [func reject(error: AccessoryTransportSession.Error?) -> AccessoryTransportSession.Request.Decision](accessorytransportsession/request/reject(error:).md)
+### Accepting and rejecting session requests
+- [func reject(error: AccessoryTransportSession.Error?) -> AccessoryTransportSession.Request.Decision](./reject%28error%29.md)
   Rejects the session request.
-- [AccessoryTransportSession.Request.Decision](accessorytransportsession/request/decision.md)
+- [AccessoryTransportSession.Request.Decision](./decision.md)
   An opaque type returned from the incoming session handler of an event listener.
 
 

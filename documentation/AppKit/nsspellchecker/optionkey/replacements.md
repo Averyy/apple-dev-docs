@@ -1,7 +1,8 @@
 # replacements
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An NSDictionary containing replacements to be used with NSTextCheckingTypeReplacement; if not specified, values will be taken from user’s preferences.
 
@@ -14,24 +15,29 @@ An NSDictionary containing replacements to be used with NSTextCheckingTypeReplac
 static let replacements: NSSpellChecker.OptionKey
 ```
 
+```c
+extern NSTextCheckingOptionKey NSTextCheckingReplacementsKey;
+```
+
 ## See Also
 
-- [static let documentAuthor: NSSpellChecker.OptionKey](nsspellchecker/optionkey/documentauthor.md)
+### Spell Checker Options
+- [static let documentAuthor: NSSpellChecker.OptionKey](./documentauthor.md)
   An NSString containing the name of an author to be associated with the document
-- [static let documentTitle: NSSpellChecker.OptionKey](nsspellchecker/optionkey/documenttitle.md)
+- [static let documentTitle: NSSpellChecker.OptionKey](./documenttitle.md)
   An NSString containing the title to be associated with the document.
-- [static let documentURL: NSSpellChecker.OptionKey](nsspellchecker/optionkey/documenturl.md)
+- [static let documentURL: NSSpellChecker.OptionKey](./documenturl.md)
   An NSURL to be associated with the document.
-- [static let orthography: NSSpellChecker.OptionKey](nsspellchecker/optionkey/orthography.md)
+- [static let orthography: NSSpellChecker.OptionKey](./orthography.md)
   An `NSOrthography` instance indicating an orthography to be used as a starting point for orthography checking, or as the orthography if orthography checking is not enabled.
-- [static let quotes: NSSpellChecker.OptionKey](nsspellchecker/optionkey/quotes.md)
+- [static let quotes: NSSpellChecker.OptionKey](./quotes.md)
   An `NSArray` containing four strings to be used with `quoteCheckingResult(range:replacementString:)` (opening double quote, closing double quote, opening single quote, and closing single quote in that order).
-- [static let referenceDate: NSSpellChecker.OptionKey](nsspellchecker/optionkey/referencedate.md)
+- [static let referenceDate: NSSpellChecker.OptionKey](./referencedate.md)
   An NSDate to be associated with the document, used as a referent for relative dates; if not specified, the current date will be used.
-- [static let referenceTimeZone: NSSpellChecker.OptionKey](nsspellchecker/optionkey/referencetimezone.md)
+- [static let referenceTimeZone: NSSpellChecker.OptionKey](./referencetimezone.md)
   An NSTimeZone to be associated with the document, used as a reference for dates without time zones; if not specified, the current time zone will be used.
-- [static let regularExpressions: NSSpellChecker.OptionKey](nsspellchecker/optionkey/regularexpressions.md)
-- [static let selectedRange: NSSpellChecker.OptionKey](nsspellchecker/optionkey/selectedrange.md)
+- [static let regularExpressions: NSSpellChecker.OptionKey](./regularexpressions.md)
+- [static let selectedRange: NSSpellChecker.OptionKey](./selectedrange.md)
 
 
 ---

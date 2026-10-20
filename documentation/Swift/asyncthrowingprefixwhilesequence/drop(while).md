@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Omits elements from the base asynchronous sequence until a given closure returns false, after which it passes through all remaining elements.
 

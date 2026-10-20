@@ -1,14 +1,15 @@
 # kTaskWqExceededCooperativeThreadLimit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kTaskWqExceededCooperativeThreadLimit = 0x2000000000
 ```
 

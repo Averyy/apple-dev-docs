@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the function constant.
 
@@ -19,13 +20,18 @@ The index of the function constant.
 var index: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger index;
+```
+
 ## See Also
 
-- [var name: String](mtlfunctionconstant/name.md)
+### Reading the function constant’s properties
+- [var name: String](./name.md)
   The name of the function constant.
-- [var type: MTLDataType](mtlfunctionconstant/type.md)
+- [var type: MTLDataType](./type.md)
   The data type of the function constant.
-- [var required: Bool](mtlfunctionconstant/required.md)
+- [var required: Bool](./required.md)
   A Boolean value indicating whether the function constant needs to be provided to specialize the function.
 
 

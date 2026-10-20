@@ -1,7 +1,8 @@
 # kAXIsApplicationRunningAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates if the application represented by the Dock icon this accessibility object represents is currently running.
 
@@ -12,6 +13,10 @@ Indicates if the application represented by the Dock icon this accessibility obj
 
 ```swift
 var kAXIsApplicationRunningAttribute: String { get }
+```
+
+```c
+#define kAXIsApplicationRunningAttribute
 ```
 
 

@@ -1,7 +1,8 @@
 # JSClassRef
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A JavaScript class.
 
@@ -19,19 +20,24 @@ A JavaScript class.
 typealias JSClassRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueJSClass * JSClassRef;
+```
+
 #### Discussion
 
-Use this type with [`JSObjectMake(_:_:_:)`](jsobjectmake(_:_:_:).md) to construct objects with custom behavior.
+Use this type with [`JSObjectMake(_:_:_:)`](./jsobjectmake%28_,_,_%29.md) to construct objects with custom behavior.
 
 ## See Also
 
-- [typealias JSContextGroupRef](jscontextgroupref.md)
+### JavaScriptCore Engine Interface
+- [typealias JSContextGroupRef](./jscontextgroupref.md)
   A group that associates JavaScript contexts with one another.
-- [typealias JSContextRef](jscontextref.md)
+- [typealias JSContextRef](./jscontextref.md)
   A JavaScript execution context.
-- [typealias JSGlobalContextRef](jsglobalcontextref.md)
+- [typealias JSGlobalContextRef](./jsglobalcontextref.md)
   A global JavaScript execution context.
-- [typealias JSStringRef](jsstringref.md)
+- [typealias JSStringRef](./jsstringref.md)
   A UTF-16 character buffer.
 
 

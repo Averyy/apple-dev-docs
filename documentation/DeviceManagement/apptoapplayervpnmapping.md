@@ -1,7 +1,8 @@
 # AppToAppLayerVPNMapping
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures per-app VPN settings.
 
@@ -10,7 +11,7 @@ The payload that configures per-app VPN settings.
 
 ## Declaration
 
-```swift
+```
 object AppToAppLayerVPNMapping
 ```
 
@@ -18,7 +19,7 @@ object AppToAppLayerVPNMapping
 
 Specify `com.apple.vpn.managed.appmapping` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -142,7 +143,7 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 ## Topics
 
 ### Objects
-- [object AppToAppLayerVPNMapping.AppLayerVPNMappingItem](apptoapplayervpnmapping/applayervpnmappingitem.md)
+- [object AppToAppLayerVPNMapping.AppLayerVPNMappingItem](./apptoapplayervpnmapping/applayervpnmappingitem.md)
   A dictionary defining a per-app VPN relationship.
 
 ## Properties
@@ -151,9 +152,10 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 
 ## See Also
 
-- [object AppLayerVPN](applayervpn.md)
+### VPN
+- [object AppLayerVPN](./applayervpn.md)
   The payload that configures a per-app VPN.
-- [object VPN](vpn.md)
+- [object VPN](./vpn.md)
   The payload that configures a VPN.
 
 

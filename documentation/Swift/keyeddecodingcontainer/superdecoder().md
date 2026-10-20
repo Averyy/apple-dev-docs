@@ -1,7 +1,8 @@
 # superDecoder()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `Decoder` instance for decoding `super` from the container associated with the default `super` key.
 
@@ -24,9 +25,9 @@ func superDecoder() throws -> any Decoder
 
 Equivalent to calling `superDecoder(forKey:)` with `Key(stringValue: "super", intValue: 0)`.
 
-> **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the default `super` key.
+> **Throws**: `DecodingError.keyNotFound` if `self` does not have an entry for the default `super` key.
 
-> **Note**: `DecodingError.valueNotFound` if `self` has a null entry for the default `super` key.
+> **Throws**: `DecodingError.valueNotFound` if `self` has a null entry for the default `super` key.
 
 
 ---

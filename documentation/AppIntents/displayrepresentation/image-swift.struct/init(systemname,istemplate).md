@@ -1,7 +1,8 @@
 # init(systemName:isTemplate:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image object that contains the specified system symbol image.
 
@@ -11,7 +12,7 @@ Creates an image object that contains the specified system symbol image.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

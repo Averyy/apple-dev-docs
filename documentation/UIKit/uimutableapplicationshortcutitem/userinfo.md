@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional, app-specific information that you can provide for use when your app performs the Home Screen dynamic mutable quick action.
 
@@ -17,19 +18,24 @@ Optional, app-specific information that you can provide for use when your app pe
 var userInfo: [String : any NSSecureCoding]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id<NSSecureCoding>> * userInfo;
+```
+
 #### Discussion
 
-The keys and values in this property’s dictionary must conform to the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol, and must be property-list-encodable. If they aren’t, the system raises a runtime exception when initializing the quick action. For information about property-list-encodable data, see [`Serializing Property Lists`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Articles/serializing.html#//apple_ref/doc/uid/20000952) in [`Archives and Serializations Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i) and see [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization).
+The keys and values in this property’s dictionary must conform to the [`NSSecureCoding`](../../Foundation/nssecurecoding.md) protocol, and must be property-list-encodable. If they aren’t, the system raises a runtime exception when initializing the quick action. For information about property-list-encodable data, see [Serializing Property Lists](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Articles/serializing.html#//apple_ref/doc/uid/20000952) in [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i) and see [`PropertyListSerialization`](../../Foundation/propertylistserialization.md).
 
 ## See Also
 
-- [var localizedTitle: String](uimutableapplicationshortcutitem/localizedtitle.md)
+### Inspecting a Home Screen dynamic mutable quick action
+- [var localizedTitle: String](./localizedtitle.md)
   The required, user-visible title for the Home Screen dynamic mutable quick action.
-- [var localizedSubtitle: String?](uimutableapplicationshortcutitem/localizedsubtitle.md)
+- [var localizedSubtitle: String?](./localizedsubtitle.md)
   The optional, user-visible subtitle for the Home Screen dynamic mutable quick action.
-- [var type: String](uimutableapplicationshortcutitem/type.md)
+- [var type: String](./type.md)
   A required, app-specific string that you can employ to identify the type of quick action to perform.
-- [var icon: UIApplicationShortcutIcon?](uimutableapplicationshortcutitem/icon.md)
+- [var icon: UIApplicationShortcutIcon?](./icon.md)
   The optional icon for the Home Screen dynamic mutable quick action.
 
 

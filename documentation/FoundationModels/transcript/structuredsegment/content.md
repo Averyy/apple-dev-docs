@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the segment.
 
@@ -21,9 +22,10 @@ var content: GeneratedContent { get set }
 
 ## See Also
 
-- [var source: String](transcript/structuredsegment/source.md)
+### Inspecting a structured segment
+- [var source: String](./source.md)
   A source that can be used to understand which type the content represents.
-- [var schemaName: String](transcript/structuredsegment/schemaname.md)
+- [var schemaName: String](./schemaname.md)
   A name that can be used to understand which type the content represents.
 
 

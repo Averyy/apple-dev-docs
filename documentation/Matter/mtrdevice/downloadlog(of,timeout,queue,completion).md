@@ -1,7 +1,8 @@
 # downloadLog(of:timeout:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func downloadLog(of type: MTRDiagnosticLogType, timeout: TimeInterval, queue: dispatch_queue_t, completion: @escaping @Sendable (URL?, (any Error)?) -> Void)
+```
+
+```swift
 func downloadLog(of type: MTRDiagnosticLogType, timeout: TimeInterval, queue: dispatch_queue_t) async throws -> URL
+```
+
+```objc
+- (void) downloadLogOfType:(MTRDiagnosticLogType) type timeout:(NSTimeInterval) timeout queue:(dispatch_queue_t) queue completion:(void (^)(NSURL *url, NSError *error)) completion;
 ```
 
 

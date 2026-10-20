@@ -1,11 +1,12 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(integerLiteral: Int)](cgfloat-swift.struct/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./init%28integerliteral%29.md)
   Create an instance initialized to `value`.
 
 

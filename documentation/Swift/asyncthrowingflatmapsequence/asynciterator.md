@@ -1,7 +1,8 @@
 # AsyncThrowingFlatMapSequence.AsyncIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of iterator that produces elements of the sequence.
 
@@ -19,6 +20,8 @@ The type of iterator that produces elements of the sequence.
 ```swift
 typealias AsyncIterator = AsyncThrowingFlatMapSequence<Base, SegmentOfResult>.Iterator
 ```
+
+Available when `Base` conforms to `AsyncSequence` and `SegmentOfResult` conforms to `AsyncSequence`.
 
 
 ---

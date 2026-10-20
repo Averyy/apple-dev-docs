@@ -1,16 +1,21 @@
 # authorization_judgement
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var authorization_judgement: UnsafeMutablePointer<es_event_authorization_judgement_t> { get set }
+```
+
+```c
+es_event_authorization_judgement_t * authorization_judgement;
 ```
 
 

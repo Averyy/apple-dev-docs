@@ -1,17 +1,24 @@
 # fillFraction
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Setting the Complication Data.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var fillFraction: Float { get set }
+```
+
+```objc
+@property (nonatomic) float fillFraction;
 ```
 
 #### Discussion
@@ -20,9 +27,10 @@ Specify a value between `0.0` and `1.0`, where `0.0` represents no ring and `1.0
 
 ## See Also
 
-- [var ringStyle: CLKComplicationRingStyle](clkcomplicationtemplateextralargeringtext/ringstyle.md)
+### Setting the Complication Data
+- [var ringStyle: CLKComplicationRingStyle](./ringstyle.md)
   The style of the progress ring.
-- [var textProvider: CLKTextProvider](clkcomplicationtemplateextralargeringtext/textprovider.md)
+- [var textProvider: CLKTextProvider](./textprovider.md)
   The text to display in the complication.
 
 

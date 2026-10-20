@@ -1,7 +1,8 @@
 # badge(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a badge for the view from a localized string resource.
 
@@ -19,11 +20,33 @@ Generates a badge for the view from a localized string resource.
 nonisolated func badge(_ resource: LocalizedStringResource?) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func badge(_ count: Int) -> some View
+```
+
+```swift
+nonisolated
+func badge(_ key: LocalizedStringKey?) -> some View
+```
+
+```swift
+nonisolated
+func badge(_ label: Text?) -> some View
+```
+
+```swift
+nonisolated
+func badge<S>(_ label: S?) -> some View where S : StringProtocol
+```
+
 #### Discussion
 
 Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear in list rows, tab bars, toolbar items, and menus.
 
-This modifier creates a [`Text`](text.md) view on your behalf. For more information about localizing strings, see [`Text`](text.md). The following example shows a list with a “Default” badge on one of its rows.
+This modifier creates a [`Text`](../text.md) view on your behalf. For more information about localizing strings, see [`Text`](../text.md). The following example shows a list with a “Default” badge on one of its rows.
 
 ```swift
 NavigationView {
@@ -35,7 +58,7 @@ NavigationView {
 }
 ```
 
-![A table with the navigation title Servers and four rows: North 1,](/images/com.apple.SwiftUI/View-badge-3@2x.png)
+![A table with the navigation title Servers and four rows: North 1,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-badge-3@2x.png)
 
 ## Parameters
 
@@ -43,11 +66,12 @@ NavigationView {
 
 ## See Also
 
-- [func badgeProminence(BadgeProminence) -> some View](view/badgeprominence(_:).md)
+### Displaying a badge on a list item
+- [func badgeProminence(BadgeProminence) -> some View](./badgeprominence%28_%29.md)
   Specifies the prominence of badges created by this view.
-- [var badgeProminence: BadgeProminence](environmentvalues/badgeprominence.md)
+- [var badgeProminence: BadgeProminence](../environmentvalues/badgeprominence.md)
   The prominence to apply to badges associated with this environment.
-- [struct BadgeProminence](badgeprominence.md)
+- [struct BadgeProminence](../badgeprominence.md)
   The visual prominence of a badge.
 
 

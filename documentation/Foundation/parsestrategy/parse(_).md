@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Parses a value, using this strategy.
@@ -23,7 +24,7 @@ func parse(_ value: Self.ParseInput) throws -> Self.ParseOutput
 
 #### Return Value
 
-A parsed value of the type declared by [`ParseOutput`](parsestrategy/parseoutput.md).
+A parsed value of the type declared by [`ParseOutput`](./parseoutput.md).
 
 #### Discussion
 
@@ -31,7 +32,7 @@ This method throws an error if the parse strategy can’t parse `value`.
 
 ## Parameters
 
-- `value`: A value whose type matches the strategy’s [`ParseInput`](parsestrategy/parseinput.md) type.
+- `value`: A value whose type matches the strategy’s [`ParseInput`](./parseinput.md) type.
 
 
 ---

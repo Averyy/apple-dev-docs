@@ -1,7 +1,8 @@
 # ObjectCaptureSession.CaptureState.completed
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session has saved its data and can now be safely torn down and the images folder used for reconstruction.
 

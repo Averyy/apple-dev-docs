@@ -1,7 +1,8 @@
 # kAXAscendingSortDirectionValue
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This object’s contents are sorted in ascending order.
 
@@ -12,6 +13,10 @@ This object’s contents are sorted in ascending order.
 
 ```swift
 var kAXAscendingSortDirectionValue: String { get }
+```
+
+```c
+#define kAXAscendingSortDirectionValue
 ```
 
 

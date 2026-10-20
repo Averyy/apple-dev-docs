@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the surface shader function.
 
@@ -24,7 +25,8 @@ This is the name of the Metal function the custom material uses as its surface s
 
 ## See Also
 
-- [var library: any MTLLibrary](custommaterial/surfaceshader/library.md)
+### Accessing surface shader properties
+- [var library: any MTLLibrary](./library.md)
   The Metal library that contains this surface shader function.
 
 

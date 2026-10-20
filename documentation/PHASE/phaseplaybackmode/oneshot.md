@@ -1,17 +1,18 @@
 # PHASEPlaybackMode.oneShot
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that plays a sound only once.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ An option that plays a sound only once.
 case oneShot
 ```
 
+```c
+PHASEPlaybackModeOneShot
+```
+
 ## See Also
 
-- [PHASEPlaybackMode.looping](phaseplaybackmode/looping.md)
+### Playback Modes
+- [PHASEPlaybackMode.looping](./looping.md)
   An option that restarts a sound from the begining after it finishes.
 
 

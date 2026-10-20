@@ -1,25 +1,26 @@
 # Cancel
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the queue from dequeueing any further tasks, and notifies the specified handler when all in-flight tasks finish.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Cancel(IODispatchQueueCancelHandler handler);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -31,7 +32,8 @@ This method asynchronously tells the dispatch queue to stop the execution of que
 
 ## See Also
 
-- [IODispatchQueueCancelHandler](iodispatchqueuecancelhandler.md)
+### Stopping the Queue
+- [IODispatchQueueCancelHandler](../iodispatchqueuecancelhandler.md)
   A block to execute when a canceled dispatch queue stops executing tasks.
 
 

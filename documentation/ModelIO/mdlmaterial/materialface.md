@@ -1,7 +1,8 @@
 # materialFace
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The surface of an object.
 
@@ -19,13 +20,18 @@ The surface of an object.
 var materialFace: MDLMaterialFace { get set }
 ```
 
+```objc
+@property (nonatomic) MDLMaterialFace materialFace;
+```
+
 #### Discussion
 
-Determines if the material is front-facing, back-facing, or double-sided. The default case of a [`materialFace`](mdlmaterial/materialface.md) is [`MDLMaterialFace.front`](mdlmaterialface/front.md). For more information, see [`MDLMaterialFace`](mdlmaterialface.md).
+Determines if the material is front-facing, back-facing, or double-sided. The default case of a [`materialFace`](./materialface.md) is [`MDLMaterialFace.front`](../mdlmaterialface/front.md). For more information, see [`MDLMaterialFace`](../mdlmaterialface.md).
 
 ## See Also
 
-- [var name: String](mdlmaterial/name.md)
+### Using a material
+- [var name: String](./name.md)
   A descriptive name for the material.
 
 

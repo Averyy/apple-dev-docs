@@ -1,7 +1,8 @@
 # masked
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var masked: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL masked;
 ```
 
 #### Discussion

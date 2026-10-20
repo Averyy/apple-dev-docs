@@ -1,7 +1,8 @@
 # SafariSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure Safari settings.
 
@@ -14,7 +15,7 @@ The declaration to configure Safari settings.
 
 ## Declaration
 
-```swift
+```
 object SafariSettings
 ```
 
@@ -22,7 +23,7 @@ object SafariSettings
 
 Specify `com.apple.configuration.safari.settings` as the declaration type.
 
-##### Privacy Permission Defaults
+##### Privacy permission defaults
 
 Privacy permission defaults allow an organization to suggest a set of privacy permissions for use on a website. When set, Safari displays a consent prompt listing all the configured defaults. If the user accepts, the system applies those defaults for the website. If the user declines, no defaults are set and Safari prompts the user in the normal way when the website requires permission.
 
@@ -33,7 +34,7 @@ The consent prompt only shows permissions that the user hasn’t previously seen
 
 The user can change the website privacy permission settings in Safari settings if they choose.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -45,9 +46,9 @@ The user can change the website privacy permission settings in Safari settings i
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Examples
+##### Configuration examples
 
-###### Settings and Restrictions Examples
+###### Settings and restrictions examples
 
 **Start page**:
 
@@ -88,7 +89,7 @@ This configuration restricts several Safari features.
 }
 ```
 
-###### Website Privacy Examples
+###### Website privacy examples
 
 **One website**:
 
@@ -138,62 +139,95 @@ This configuration sets the camera and microphone permission defaults in Safari 
 ## Topics
 
 ### Objects
-- [object SafariSettingsNewTabStartPageObject](safarisettingsnewtabstartpageobject.md)
+- [object SafariSettingsNewTabStartPageObject](./safarisettingsnewtabstartpageobject.md)
   Sets the start page for new tabs in Safari.
-- [object SafariSettingsPrivacyObject](safarisettingsprivacyobject.md)
+- [object SafariSettingsPrivacyObject](./safarisettingsprivacyobject.md)
   The dictionary of website privacy settings.
 
 ## Properties
 
-- `AcceptCookies` (string): The policy Safari uses for managing cookies: - `Never`: Safari always blocks cookies.
-- `CurrentWebsite`: Safari allows cookies only from the current website.
-- `VisitedWebsites`: Safari allows cookies only from visited websites.
-- `Always`: Safari always allows cookies. Available: iOS 26+ | iPadOS 26+
-Allowed enrollments: supervised
-- `AllowDisablingFraudWarning` (boolean): If `false`, the system forces fraud warnings on in Safari. Available: iOS 26+ | iPadOS 26+
-Allowed enrollments: supervised
-- `AllowHistoryClearing` (boolean): If `false`, the system disables clearing history in Safari. Allowed enrollments: supervised
-- `AllowJavaScript` (boolean): If `false`, the system disables JavaScript in Safari. Available: iOS 26+ | iPadOS 26+
-Allowed enrollments: supervised
-- `AllowPopups` (boolean): If `false`, the system disables popups in Safari. Available: iOS 26+ | iPadOS 26+
-Allowed enrollments: supervised
-- `AllowPrivateBrowsing` (boolean): If `false`, the system disables private browsing in Safari. Allowed enrollments: supervised
-- `AllowSummary` (boolean): If `false`, the system disables summarization of content in Safari. Allowed enrollments: supervised
+- `AcceptCookies` (string): The policy Safari uses for managing cookies:
+
+  - `Never`: Safari always blocks cookies.
+  - `CurrentWebsite`: Safari allows cookies only from the current website.
+  - `VisitedWebsites`: Safari allows cookies only from visited websites.
+  - `Always`: Safari always allows cookies.
+
+  Available: iOS 26+ | iPadOS 26+
+  Allowed enrollments: supervised
+
+  **Default**: `Always`; **Allowed Values**: `Never`, `CurrentWebsite`, `VisitedWebsites`, `Always`
+- `AllowDisablingFraudWarning` (boolean): If `false`, the system forces fraud warnings on in Safari.
+
+  Available: iOS 26+ | iPadOS 26+
+  Allowed enrollments: supervised
+
+  **Default**: `true`
+- `AllowHistoryClearing` (boolean): If `false`, the system disables clearing history in Safari.
+
+  Allowed enrollments: supervised
+
+  **Default**: `true`
+- `AllowJavaScript` (boolean): If `false`, the system disables JavaScript in Safari.
+
+  Available: iOS 26+ | iPadOS 26+
+  Allowed enrollments: supervised
+
+  **Default**: `true`
+- `AllowPopups` (boolean): If `false`, the system disables popups in Safari.
+
+  Available: iOS 26+ | iPadOS 26+
+  Allowed enrollments: supervised
+
+  **Default**: `true`
+- `AllowPrivateBrowsing` (boolean): If `false`, the system disables private browsing in Safari.
+
+  Allowed enrollments: supervised
+
+  **Default**: `true`
+- `AllowSummary` (boolean): If `false`, the system disables summarization of content in Safari.
+
+  Allowed enrollments: supervised
+
+  **Default**: `true`
 - `NewTabStartPage` (SafariSettingsNewTabStartPageObject): Sets the start page for new tabs in Safari.
-- `Privacy` (SafariSettingsPrivacyObject): The dictionary of website privacy settings. Available: iOS 27+ | iPadOS 27+ | macOS 27+
-Allowed enrollments: supervised
+- `Privacy` (SafariSettingsPrivacyObject): The dictionary of website privacy settings.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+
+  Allowed enrollments: supervised
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

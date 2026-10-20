@@ -1,23 +1,28 @@
 # min
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum encoded value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var min: CGFloat
+```
+
+```c
+CGFloat min;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The vImage library clamps values less than the minimum to the minimum.
 
 ## See Also
 
-- [var zero: CGFloat](vimagechanneldescription/zero.md)
+### Instance properties
+- [var zero: CGFloat](./zero.md)
   The encoding for the value zero.
-- [var full: CGFloat](vimagechanneldescription/full.md)
+- [var full: CGFloat](./full.md)
   The encoding for the value one.
-- [var max: CGFloat](vimagechanneldescription/max.md)
+- [var max: CGFloat](./max.md)
   The maximum encoded value.
 
 

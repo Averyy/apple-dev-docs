@@ -1,12 +1,13 @@
 # Providing 2D Virtual Content with SpriteKit
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Article
 
 Use SpriteKit to place two-dimensional images in 3D space in your AR experience.
 
 #### Overview
 
-SpriteKit is inherently for 2D visual content, but augmented reality involves real-world 3D spaces. Use the [`ARSKView`](arskview.md) class to create AR experiences by providing 2D sprites ([`SKNode`](https://developer.apple.com/documentation/spritekit/sknode) objects) that correspond to real-world 3D positions ([`ARAnchor`](aranchor.md) objects). When the user moves the device, the view automatically rotates and scales the SpriteKit nodes corresponding to anchors so that they appear to track the real world seen by the camera.
+SpriteKit is inherently for 2D visual content, but augmented reality involves real-world 3D spaces. Use the [`ARSKView`](./arskview.md) class to create AR experiences by providing 2D sprites ([`SKNode`](../SpriteKit/sknode.md) objects) that correspond to real-world 3D positions ([`ARAnchor`](./aranchor.md) objects). When the user moves the device, the view automatically rotates and scales the SpriteKit nodes corresponding to anchors so that they appear to track the real world seen by the camera.
 
 For example, you can place 2D images that appear to float in 3D space:
 
@@ -26,11 +27,12 @@ func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
 }
 ```
 
-The [`view(_:nodeFor:)`](arskviewdelegate/view(_:nodefor:).md) method above returns an [`SKLabelNode`](https://developer.apple.com/documentation/spritekit/sklabelnode) object, which displays a text label. Like most SpriteKit nodes, this class creates a 2D visual representation, so the [`ARSKView`](arskview.md) class presents the node in a billboard style: The sprite scales and rotates (around its z-axis) so that it appears to follow the 3D position of its anchor, but always faces toward the camera.
+The [`view(_:nodeFor:)`](./arskviewdelegate/view%28_,nodefor%29.md) method above returns an [`SKLabelNode`](../SpriteKit/sklabelnode.md) object, which displays a text label. Like most SpriteKit nodes, this class creates a 2D visual representation, so the [`ARSKView`](./arskview.md) class presents the node in a billboard style: The sprite scales and rotates (around its z-axis) so that it appears to follow the 3D position of its anchor, but always faces toward the camera.
 
 ## See Also
 
-- [var session: ARSession](arskview/session.md)
+### First Steps
+- [var session: ARSession](./arskview/session.md)
   The AR session that manages motion tracking and camera image processing for the view’s contents.
 
 

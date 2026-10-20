@@ -1,7 +1,8 @@
 # NFCTypeNameFormat
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The Type Name Format values that specify the content type for the payload data in an NFC NDEF message.
 
@@ -16,45 +17,50 @@ The Type Name Format values that specify the content type for the payload data i
 enum NFCTypeNameFormat
 ```
 
+```c
+enum NFCTypeNameFormat : uint8_t;
+```
+
 ## Topics
 
 ### Content Types
-- [NFCTypeNameFormat.absoluteURI](nfctypenameformat/absoluteuri.md)
+- [NFCTypeNameFormat.absoluteURI](./nfctypenameformat/absoluteuri.md)
   A type indicating that the payload contains a uniform resource identifier.
-- [NFCTypeNameFormat.empty](nfctypenameformat/empty.md)
+- [NFCTypeNameFormat.empty](./nfctypenameformat/empty.md)
   A type indicating that the payload contains no data.
-- [NFCTypeNameFormat.media](nfctypenameformat/media.md)
+- [NFCTypeNameFormat.media](./nfctypenameformat/media.md)
   A type indicating that the payload contains media data as defined by RFC 2046.
-- [NFCTypeNameFormat.nfcExternal](nfctypenameformat/nfcexternal.md)
+- [NFCTypeNameFormat.nfcExternal](./nfctypenameformat/nfcexternal.md)
   A type indicating that the payload contains NFC external type data.
-- [NFCTypeNameFormat.nfcWellKnown](nfctypenameformat/nfcwellknown.md)
+- [NFCTypeNameFormat.nfcWellKnown](./nfctypenameformat/nfcwellknown.md)
   A type indicating that the payload contains well-known NFC record type data.
-- [NFCTypeNameFormat.unchanged](nfctypenameformat/unchanged.md)
+- [NFCTypeNameFormat.unchanged](./nfctypenameformat/unchanged.md)
   A type indicating that the payload is part of a series of records containing chunked data.
-- [NFCTypeNameFormat.unknown](nfctypenameformat/unknown.md)
+- [NFCTypeNameFormat.unknown](./nfctypenameformat/unknown.md)
   A type indicating that the payload data type is unknown.
 ### Initializers
-- [init?(rawValue: UInt8)](nfctypenameformat/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./nfctypenameformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: Data](nfcndefpayload/identifier.md)
+### Getting Information About a Payload Record
+- [var identifier: Data](./nfcndefpayload/identifier.md)
   The identifier of the payload, as defined by the NDEF specification.
-- [var payload: Data](nfcndefpayload/payload.md)
+- [var payload: Data](./nfcndefpayload/payload.md)
   The payload, as defined by the NDEF specification.
-- [var type: Data](nfcndefpayload/type.md)
+- [var type: Data](./nfcndefpayload/type.md)
   The type of the payload, as defined by the NDEF specification.
-- [var typeNameFormat: NFCTypeNameFormat](nfcndefpayload/typenameformat.md)
+- [var typeNameFormat: NFCTypeNameFormat](./nfcndefpayload/typenameformat.md)
   The Type Name Format field of the payload, as defined by the NDEF specification.
 
 

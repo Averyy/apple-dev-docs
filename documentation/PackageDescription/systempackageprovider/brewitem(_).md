@@ -1,7 +1,8 @@
 # SystemPackageProvider.brewItem(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Packages installable by the HomeBrew package manager.
 

@@ -1,15 +1,20 @@
 # fileTransferServicesPathChangeComplete(_:error:finalPath:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesPathChangeComplete(_ inServices: OBEXFileTransferServices!, error inError: OBEXError, finalPath inPath: String!)
+```
+
+```objc
+- (void) fileTransferServicesPathChangeComplete:(OBEXFileTransferServices *) inServices error:(OBEXError) inError finalPath:(NSString *) inPath;
 ```
 
 

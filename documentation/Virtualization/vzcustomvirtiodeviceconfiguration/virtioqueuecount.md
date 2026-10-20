@@ -1,7 +1,8 @@
 # virtioQueueCount
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of virtqueues (Virtio queues) on this device.
 
@@ -12,6 +13,10 @@ The number of virtqueues (Virtio queues) on this device.
 
 ```swift
 var virtioQueueCount: UInt16 { get set }
+```
+
+```objc
+@property (readwrite) uint16_t virtioQueueCount;
 ```
 
 

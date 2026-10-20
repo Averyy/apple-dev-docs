@@ -1,7 +1,8 @@
 # SSLWriteFunc
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A pointer to a customized write function that secure transport calls to write data to the connection.
 
@@ -15,19 +16,23 @@ A pointer to a customized write function that secure transport calls to write da
 typealias SSLWriteFunc = (SSLConnectionRef, UnsafeRawPointer, UnsafeMutablePointer<Int>) -> OSStatus
 ```
 
+```c
+typedef int (*)(const void *, const void *, unsigned long *) SSLWriteFunc;
+```
+
 ## Mentions
 
-- [Using the Secure Socket Layer for Network Communication](using-the-secure-socket-layer-for-network-communication.md)
+- [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 #### Discussion
 
-Before using the secure transport API, you must write the functions [`SSLReadFunc`](sslreadfunc.md) and [`SSLWriteFunc`](sslwritefunc.md) and provide them to the library by calling the [`SSLSetIOFuncs(_:_:_:)`](sslsetiofuncs(_:_:_:).md) function.
+Before using the secure transport API, you must write the functions [`SSLReadFunc`](./sslreadfunc.md) and [`SSLWriteFunc`](./sslwritefunc.md) and provide them to the library by calling the [`SSLSetIOFuncs(_:_:_:)`](./sslsetiofuncs%28_,_,_%29.md) function.
 
-You may configure the underlying connection to operate in a non-blocking manner. In that case, a write operation may well return [`errSSLWouldBlock`](errsslwouldblock.md), indicating less data than requested was transferred and nothing is wrong except that the requested I/O hasn’t completed. This result is returned to the caller from the functions [`SSLRead(_:_:_:_:)`](sslread(_:_:_:_:).md), [`SSLWrite(_:_:_:_:)`](sslwrite(_:_:_:_:).md), or [`SSLHandshake(_:)`](sslhandshake(_:).md).
+You may configure the underlying connection to operate in a non-blocking manner. In that case, a write operation may well return [`errSSLWouldBlock`](./errsslwouldblock.md), indicating less data than requested was transferred and nothing is wrong except that the requested I/O hasn’t completed. This result is returned to the caller from the functions [`SSLRead(_:_:_:_:)`](./sslread%28_,_,_,_%29.md), [`SSLWrite(_:_:_:_:)`](./sslwrite%28_,_,_,_%29.md), or [`SSLHandshake(_:)`](./sslhandshake%28_%29.md).
 
 ## Parameters
 

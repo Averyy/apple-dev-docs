@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional information about the camera that captured the image.
 

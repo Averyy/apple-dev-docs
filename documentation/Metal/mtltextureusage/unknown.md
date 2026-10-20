@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option for a texture whose usage is unknown.
 
@@ -19,9 +20,13 @@ An option for a texture whose usage is unknown.
 static var unknown: MTLTextureUsage { get }
 ```
 
+```c
+MTLTextureUsageUnknown
+```
+
 ## Mentions
 
-- [Optimizing texture data](optimizing-texture-data.md)
+- [Optimizing texture data](../optimizing-texture-data.md)
 
 #### Discussion
 
@@ -33,15 +38,16 @@ In iOS devices with GPU family 5, Metal doesn’t apply lossless compression to 
 
 ## See Also
 
-- [static var shaderRead: MTLTextureUsage](mtltextureusage/shaderread.md)
+### Specifying texture usage options
+- [static var shaderRead: MTLTextureUsage](./shaderread.md)
   An option for reading or sampling from the texture in a shader.
-- [static var shaderWrite: MTLTextureUsage](mtltextureusage/shaderwrite.md)
+- [static var shaderWrite: MTLTextureUsage](./shaderwrite.md)
   An option for writing to the texture in a shader.
-- [static var shaderAtomic: MTLTextureUsage](mtltextureusage/shaderatomic.md)
+- [static var shaderAtomic: MTLTextureUsage](./shaderatomic.md)
   An option that enables atomic memory operations on texture elements in shader code.
-- [static var renderTarget: MTLTextureUsage](mtltextureusage/rendertarget.md)
+- [static var renderTarget: MTLTextureUsage](./rendertarget.md)
   An option for rendering to the texture in a render pass.
-- [static var pixelFormatView: MTLTextureUsage](mtltextureusage/pixelformatview.md)
+- [static var pixelFormatView: MTLTextureUsage](./pixelformatview.md)
   An option to create texture views with a different component layout.
 
 

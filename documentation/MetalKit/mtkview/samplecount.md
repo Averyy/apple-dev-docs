@@ -1,9 +1,10 @@
 # sampleCount
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The sample count used to generate the [`multisampleColorTexture`](mtkview/multisamplecolortexture.md) object.
+The sample count used to generate the [`multisampleColorTexture`](./multisamplecolortexture.md) object.
 
 **Availability**:
 - iOS 9.0+
@@ -19,15 +20,20 @@ The sample count used to generate the [`multisampleColorTexture`](mtkview/multis
 var sampleCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger sampleCount;
+```
+
 #### Discussion
 
-Support for different sample count values varies by device object. Call the [`supportsTextureSampleCount(_:)`](https://developer.apple.com/documentation/metal/mtldevice/supportstexturesamplecount(_:)) method to determine if the device object supports the sample count you want.
+Support for different sample count values varies by device object. Call the [`supportsTextureSampleCount(_:)`](../../Metal/mtldevice/supportstexturesamplecount%28_%29.md) method to determine if the device object supports the sample count you want.
 
-The default value is `1`. When you set a value greater than `1`, the view creates and configures an intermediate set of multisample textures. The pixel format is the same as the one specified for the drawable; see [`colorPixelFormat`](mtkview/colorpixelformat.md). When the view creates a render pass descriptor, the render pass uses those intermediate textures as the color render targets, with a store action to resolve these multisample textures into the drawable’s texture ([`MTLStoreAction.multisampleResolve`](https://developer.apple.com/documentation/metal/mtlstoreaction/multisampleresolve)).
+The default value is `1`. When you set a value greater than `1`, the view creates and configures an intermediate set of multisample textures. The pixel format is the same as the one specified for the drawable; see [`colorPixelFormat`](./colorpixelformat.md). When the view creates a render pass descriptor, the render pass uses those intermediate textures as the color render targets, with a store action to resolve these multisample textures into the drawable’s texture ([`MTLStoreAction.multisampleResolve`](../../Metal/mtlstoreaction/multisampleresolve.md)).
 
 ## See Also
 
-- [var multisampleColorAttachmentTextureUsage: MTLTextureUsage](mtkview/multisamplecolorattachmenttextureusage.md)
+### Configuring Multisampling
+- [var multisampleColorAttachmentTextureUsage: MTLTextureUsage](./multisamplecolorattachmenttextureusage.md)
   The texture usage characteristics that the view uses when creating multisample textures.
 
 

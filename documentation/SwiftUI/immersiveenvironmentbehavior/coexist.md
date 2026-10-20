@@ -1,7 +1,8 @@
 # coexist
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A behavior that keeps the system’s immersive environment as is when opening a scene.
 
@@ -16,7 +17,7 @@ static var coexist: ImmersiveEnvironmentBehavior { get }
 
 #### Discussion
 
-Use this value with the [`immersiveEnvironmentBehavior(_:)`](scene/immersiveenvironmentbehavior(_:).md) scene modifier to define that the system should allow the system’s immersive environment to co-exist with the scene.
+Use this value with the [`immersiveEnvironmentBehavior(_:)`](../scene/immersiveenvironmentbehavior%28_%29.md) scene modifier to define that the system should allow the system’s immersive environment to co-exist with the scene.
 
 
 ---

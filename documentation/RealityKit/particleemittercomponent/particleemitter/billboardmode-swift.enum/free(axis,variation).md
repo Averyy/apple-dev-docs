@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BillboardMode.free(axis:variation:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The axis about which the particle will be oriented is the given `axis`. The `variation` is a unit multiplier that determines how far from the given axis the particle is allowed to actually be oriented.
 

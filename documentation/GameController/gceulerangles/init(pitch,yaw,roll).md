@@ -1,7 +1,8 @@
 # init(pitch:yaw:roll:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the structure with the specified values.
 

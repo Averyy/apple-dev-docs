@@ -1,7 +1,8 @@
 # VisionError.invalidModel(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the Core ML model isn’t compatible with the request.
 
@@ -22,13 +23,14 @@ case invalidModel(String)
 
 ## See Also
 
-- [VisionError.invalidArgument(_:)](visionerror/invalidargument(_:).md)
+### Getting the invalid error
+- [VisionError.invalidArgument(_:)](./invalidargument%28_%29.md)
   An error that indicates a request has an invalid value.
-- [VisionError.invalidFormat(_:)](visionerror/invalidformat(_:).md)
+- [VisionError.invalidFormat(_:)](./invalidformat%28_%29.md)
   An error that indicates a request has data that’s formatted incorrectly.
-- [VisionError.invalidImage(_:)](visionerror/invalidimage(_:).md)
+- [VisionError.invalidImage(_:)](./invalidimage%28_%29.md)
   An error that indicates the input image is invalid.
-- [VisionError.invalidOperation(_:)](visionerror/invalidoperation(_:).md)
+- [VisionError.invalidOperation(_:)](./invalidoperation%28_%29.md)
   An error that indicates an app requests an unsupported operation.
 
 

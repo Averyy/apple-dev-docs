@@ -1,7 +1,8 @@
 # MLParameterDescription
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a model parameter that includes a default value and a constraint, if applicable.
 
@@ -20,42 +21,47 @@ A description of a model parameter that includes a default value and a constrain
 class MLParameterDescription
 ```
 
+```objc
+@interface MLParameterDescription : NSObject
+```
+
 ## Topics
 
 ### Describing the model parameter
-- [var defaultValue: Any](mlparameterdescription/defaultvalue.md)
+- [var defaultValue: Any](./mlparameterdescription/defaultvalue.md)
   The default value for the parameter.
-- [var key: MLParameterKey](mlparameterdescription/key.md)
+- [var key: MLParameterKey](./mlparameterdescription/key.md)
   The key for this parameter description value.
 ### Constraining numeric values
-- [var numericConstraint: MLNumericConstraint?](mlparameterdescription/numericconstraint.md)
+- [var numericConstraint: MLNumericConstraint?](./mlparameterdescription/numericconstraint.md)
   The constraints of this paramter description value, if and only if the value is numerical.
-- [class MLNumericConstraint](mlnumericconstraint.md)
+- [class MLNumericConstraint](./mlnumericconstraint.md)
   The value limitations of a number.
 ### Initializers
-- [init?(coder: NSCoder)](mlparameterdescription/init(coder:).md)
+- [init?(coder: NSCoder)](./mlparameterdescription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var isUpdatable: Bool](mlmodeldescription/isupdatable.md)
+### Accessing update descriptions
+- [var isUpdatable: Bool](./mlmodeldescription/isupdatable.md)
   A Boolean value that indicates whether you can update the model with additional training.
-- [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](mlmodeldescription/traininginputdescriptionsbyname.md)
+- [var trainingInputDescriptionsByName: [String : MLFeatureDescription]](./mlmodeldescription/traininginputdescriptionsbyname.md)
   A dictionary of the training input feature descriptions, which the model keys by the input’s name.
-- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](mlmodeldescription/parameterdescriptionsbykey.md)
+- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](./mlmodeldescription/parameterdescriptionsbykey.md)
   A dictionary of the descriptions for the model’s parameters.
 
 

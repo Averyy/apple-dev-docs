@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](unsaferawpointer/!=(_:_:)-9vqns.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29-9vqns.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (Self, Self) -> Bool](unsaferawpointer/==(_:_:)-4wfsx.md)
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29-4wfsx.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

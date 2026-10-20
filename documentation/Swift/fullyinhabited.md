@@ -1,7 +1,8 @@
 # FullyInhabited
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A protocol for types whose memory can safely be written as or read from raw bytes.
 
@@ -22,13 +23,14 @@ typealias FullyInhabited = ConvertibleFromBytes & ConvertibleToBytes
 
 ## See Also
 
-- [protocol ConvertibleFromBytes](convertiblefrombytes.md)
+### Safe Access to Raw Bytes
+- [protocol ConvertibleFromBytes](./convertiblefrombytes.md)
   A protocol for types whose memory can safely be populated from raw bytes, resulting in a valid instance.
-- [protocol ConvertibleToBytes](convertibletobytes.md)
+- [protocol ConvertibleToBytes](./convertibletobytes.md)
   A protocol for types whose memory can safely be read as individual raw bytes.
-- [enum ByteOrder](byteorder.md)
+- [enum ByteOrder](./byteorder.md)
   A byte ordering in memory.
-- [func bitCast<T, U>(T, to: U.Type) -> U](bitcast(_:to:).md)
+- [func bitCast<T, U>(T, to: U.Type) -> U](./bitcast%28_,to%29.md)
   Returns the bits of the given instance, interpreted as having the specified type.
 
 

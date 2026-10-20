@@ -1,7 +1,8 @@
 # LightingModel.lit(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ case lit(LitLightingModel)
 
 ## See Also
 
-- [static func lit(diffuseModel: LitLightingModel.DiffuseModel, specularModel: LitLightingModel.SpecularModel, isSubsurfaceScatteringEnabled: Bool, isMultiscatteringEnabled: Bool, isBentNormalEnabled: Bool, isClearcoatEnabled: Bool) -> LightingModel](lightingmodel/lit(diffusemodel:specularmodel:issubsurfacescatteringenabled:ismultiscatteringenabled:isbentnormalenabled:isclearcoatenabled:).md)
+### Creating a lit model
+- [static func lit(diffuseModel: LitLightingModel.DiffuseModel, specularModel: LitLightingModel.SpecularModel, isSubsurfaceScatteringEnabled: Bool, isMultiscatteringEnabled: Bool, isBentNormalEnabled: Bool, isClearcoatEnabled: Bool) -> LightingModel](./lit%28diffusemodel,specularmodel,issubsurfacescatteringenabled,ismultiscatteringenabled,isbentnormalenabled,isclearcoatenabled%29.md)
 
 
 ---

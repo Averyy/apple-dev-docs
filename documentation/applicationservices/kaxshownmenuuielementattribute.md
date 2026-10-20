@@ -1,7 +1,8 @@
 # kAXShownMenuUIElementAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of accessibility objects that represent the contextual or Dock menus provided by this accessibility object.
 
@@ -12,6 +13,10 @@ An array of accessibility objects that represent the contextual or Dock menus pr
 
 ```swift
 var kAXShownMenuUIElementAttribute: String { get }
+```
+
+```c
+#define kAXShownMenuUIElementAttribute
 ```
 
 

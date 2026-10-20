@@ -1,7 +1,8 @@
 # headerGridButtons
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigning to this property will dynamically update the List Template and show the new header.
 
@@ -14,6 +15,10 @@ Assigning to this property will dynamically update the List Template and show th
 
 ```swift
 var headerGridButtons: [CPGridButton]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<CPGridButton *> * headerGridButtons;
 ```
 
 

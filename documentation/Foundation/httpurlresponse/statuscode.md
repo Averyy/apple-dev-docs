@@ -1,7 +1,8 @@
 # statusCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The response’s HTTP status code.
 
@@ -20,13 +21,18 @@ The response’s HTTP status code.
 var statusCode: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger statusCode;
+```
+
 #### Discussion
 
-See [`RFC 2616`](https://developer.apple.comhttp://www.ietf.org/rfc/rfc2616.txt) for details.
+See [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt) for details.
 
 ## See Also
 
-- [class func localizedString(forStatusCode: Int) -> String](httpurlresponse/localizedstring(forstatuscode:).md)
+### Getting response status codes
+- [class func localizedString(forStatusCode: Int) -> String](./localizedstring%28forstatuscode%29.md)
   Returns a localized string corresponding to a specified HTTP status code.
 
 

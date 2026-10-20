@@ -1,7 +1,8 @@
 # CTFontManagerCreateFontDescriptorsFromData(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an array of font descriptors for the fonts in the supplied data.
 
@@ -20,6 +21,10 @@ Creates an array of font descriptors for the fonts in the supplied data.
 func CTFontManagerCreateFontDescriptorsFromData(_ data: CFData) -> CFArray
 ```
 
+```c
+extern CFArrayRefCTFontManagerCreateFontDescriptorsFromData(CFDataRef data);
+```
+
 #### Return Value
 
 An array of font descriptors.
@@ -28,7 +33,7 @@ An array of font descriptors.
 
 This is the preferred function when the data contains a font collection (TTC or OTC). This function returns an empty array in the event of invalid or unsupported font data.
 
-> **Note**:  The font descriptors are not available through font descriptor matching. As a result, you can’t directly look for the fonts by name with functions like [`CTFontCreateWithName(_:_:_:)`](ctfontcreatewithname(_:_:_:).md). If you wish to make the font available for name matching, use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](ctfontmanagerregisterfonturls(_:_:_:_:).md) instead.
+> **Note**:  The font descriptors are not available through font descriptor matching. As a result, you can’t directly look for the fonts by name with functions like [`CTFontCreateWithName(_:_:_:)`](./ctfontcreatewithname%28_,_,_%29.md). If you wish to make the font available for name matching, use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](./ctfontmanagerregisterfonturls%28_,_,_,_%29.md) instead.
 
 ## Parameters
 
@@ -36,39 +41,41 @@ This is the preferred function when the data contains a font collection (TTC or 
 
 ## See Also
 
-- [func CTFontManagerCreateFontDescriptorFromData(CFData) -> CTFontDescriptor?](ctfontmanagercreatefontdescriptorfromdata(_:).md)
+### Related Documentation
+- [func CTFontManagerCreateFontDescriptorFromData(CFData) -> CTFontDescriptor?](./ctfontmanagercreatefontdescriptorfromdata%28_%29.md)
   Creates a font descriptor representing the font in the supplied data.
-- [func CTFontManagerRegisterFontURLs(CFArray, CTFontManagerScope, Bool, ((CFArray, Bool) -> Bool)?)](ctfontmanagerregisterfonturls(_:_:_:_:).md)
+- [func CTFontManagerRegisterFontURLs(CFArray, CTFontManagerScope, Bool, ((CFArray, Bool) -> Bool)?)](./ctfontmanagerregisterfonturls%28_,_,_,_%29.md)
   Registers fonts from the specified font URLs with the font manager.
-- [func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(CFArray, CFSet?, CTFontDescriptorProgressHandler) -> Bool](ctfontdescriptormatchfontdescriptorswithprogresshandler(_:_:_:).md)
+### Functions
+- [func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(CFArray, CFSet?, CTFontDescriptorProgressHandler) -> Bool](./ctfontdescriptormatchfontdescriptorswithprogresshandler%28_,_,_%29.md)
   Matches font descriptors and tracks progress with a progress handler.
-- [func CTFontManagerCompareFontFamilyNames(UnsafeRawPointer, UnsafeRawPointer, UnsafeMutableRawPointer?) -> CFComparisonResult](ctfontmanagercomparefontfamilynames(_:_:_:).md)
+- [func CTFontManagerCompareFontFamilyNames(UnsafeRawPointer, UnsafeRawPointer, UnsafeMutableRawPointer?) -> CFComparisonResult](./ctfontmanagercomparefontfamilynames%28_,_,_%29.md)
   A comparator function to compare font family names and sort them according to Apple guidelines.
-- [func CTFontManagerCopyAvailableFontFamilyNames() -> CFArray](ctfontmanagercopyavailablefontfamilynames().md)
+- [func CTFontManagerCopyAvailableFontFamilyNames() -> CFArray](./ctfontmanagercopyavailablefontfamilynames%28%29.md)
   Returns an array of visible font family names sorted for user interface display.
-- [func CTFontManagerCopyAvailableFontURLs() -> CFArray](ctfontmanagercopyavailablefonturls().md)
+- [func CTFontManagerCopyAvailableFontURLs() -> CFArray](./ctfontmanagercopyavailablefonturls%28%29.md)
   Returns an array of font URLs.
-- [func CTFontManagerCopyAvailablePostScriptNames() -> CFArray](ctfontmanagercopyavailablepostscriptnames().md)
+- [func CTFontManagerCopyAvailablePostScriptNames() -> CFArray](./ctfontmanagercopyavailablepostscriptnames%28%29.md)
   Returns an array of unique PostScript font names for the fonts.
-- [func CTFontManagerCreateFontDescriptorFromData(CFData) -> CTFontDescriptor?](ctfontmanagercreatefontdescriptorfromdata(_:).md)
+- [func CTFontManagerCreateFontDescriptorFromData(CFData) -> CTFontDescriptor?](./ctfontmanagercreatefontdescriptorfromdata%28_%29.md)
   Creates a font descriptor representing the font in the supplied data.
-- [func CTFontManagerCreateFontDescriptorsFromURL(CFURL) -> CFArray?](ctfontmanagercreatefontdescriptorsfromurl(_:).md)
+- [func CTFontManagerCreateFontDescriptorsFromURL(CFURL) -> CFArray?](./ctfontmanagercreatefontdescriptorsfromurl%28_%29.md)
   Returns an array of font descriptors representing each of the fonts in the specified URL.
-- [func CTFontManagerCreateFontRequestRunLoopSource(CFIndex, (CFDictionary, pid_t) -> Unmanaged<CFArray>) -> CFRunLoopSource?](ctfontmanagercreatefontrequestrunloopsource(_:_:).md)
+- [func CTFontManagerCreateFontRequestRunLoopSource(CFIndex, (CFDictionary, pid_t) -> Unmanaged<CFArray>) -> CFRunLoopSource?](./ctfontmanagercreatefontrequestrunloopsource%28_,_%29.md)
   Creates a reference to a run loop source used to convey font requests from the Font Manager.
-- [func CTFontManagerEnableFontDescriptors(CFArray, Bool)](ctfontmanagerenablefontdescriptors(_:_:).md)
+- [func CTFontManagerEnableFontDescriptors(CFArray, Bool)](./ctfontmanagerenablefontdescriptors%28_,_%29.md)
   Enables or disables the matching font descriptors for font descriptor matching.
-- [func CTFontManagerGetAutoActivationSetting(CFString?) -> CTFontManagerAutoActivationSetting](ctfontmanagergetautoactivationsetting(_:).md)
+- [func CTFontManagerGetAutoActivationSetting(CFString?) -> CTFontManagerAutoActivationSetting](./ctfontmanagergetautoactivationsetting%28_%29.md)
   Gets the auto-activation setting for the specified bundle identifier.
-- [func CTFontManagerGetScopeForURL(CFURL) -> CTFontManagerScope](ctfontmanagergetscopeforurl(_:).md)
+- [func CTFontManagerGetScopeForURL(CFURL) -> CTFontManagerScope](./ctfontmanagergetscopeforurl%28_%29.md)
   Returns the registration scope of the specified URL.
-- [func CTFontManagerIsSupportedFont(CFURL) -> Bool](ctfontmanagerissupportedfont(_:).md)
+- [func CTFontManagerIsSupportedFont(CFURL) -> Bool](./ctfontmanagerissupportedfont%28_%29.md)
   Determines whether a file is in a supported font format.
-- [func CTFontManagerRegisterFontsForURL(CFURL, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](ctfontmanagerregisterfontsforurl(_:_:_:).md)
+- [func CTFontManagerRegisterFontsForURL(CFURL, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./ctfontmanagerregisterfontsforurl%28_,_,_%29.md)
   Registers fonts from the specified font URL with the Font Manager. Registered fonts are discoverable through font descriptor matching.
-- [func CTFontManagerRegisterFontsForURLs(CFArray, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> Bool](ctfontmanagerregisterfontsforurls(_:_:_:).md)
+- [func CTFontManagerRegisterFontsForURLs(CFArray, CTFontManagerScope, UnsafeMutablePointer<Unmanaged<CFArray>?>?) -> Bool](./ctfontmanagerregisterfontsforurls%28_,_,_%29.md)
   Registers fonts from the specified array of font URLs with the Font Manager. Registered fonts are discoverable through font descriptor matching.
-- [func CTFontManagerRegisterGraphicsFont(CGFont, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](ctfontmanagerregistergraphicsfont(_:_:).md)
+- [func CTFontManagerRegisterGraphicsFont(CGFont, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./ctfontmanagerregistergraphicsfont%28_,_%29.md)
   Registers the specified graphics font with the font manager.
 
 

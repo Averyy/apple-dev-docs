@@ -1,7 +1,8 @@
 # UCTypeSelectCreateSelector(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func UCTypeSelectCreateSelector(_ locale: LocaleRef!, _ opVariant: LocaleOperationVariant, _ options: UCCollateOptions, _ newSelector: UnsafeMutablePointer<UCTypeSelectRef?>!) -> OSStatus
+```
+
+```c
+OSStatus UCTypeSelectCreateSelector(LocaleRef locale, LocaleOperationVariant opVariant, UCCollateOptions options, UCTypeSelectRef *newSelector);
 ```
 
 

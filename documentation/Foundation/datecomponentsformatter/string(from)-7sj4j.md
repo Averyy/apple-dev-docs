@@ -1,7 +1,8 @@
 # string(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a formatted string based on the specified number of seconds.
 
@@ -20,6 +21,10 @@ Returns a formatted string based on the specified number of seconds.
 func string(from ti: TimeInterval) -> String?
 ```
 
+```objc
+- (NSString *) stringFromTimeInterval:(NSTimeInterval) ti;
+```
+
 #### Return Value
 
 A formatted string representing the specified time interval.
@@ -34,13 +39,14 @@ This method formats the specified number of seconds into the appropriate units. 
 
 ## See Also
 
-- [func string(from: DateComponents) -> String?](datecomponentsformatter/string(from:)-9exxn.md)
+### Formatting Values
+- [func string(from: DateComponents) -> String?](./string%28from%29-9exxn.md)
   Returns a formatted string based on the specified date component information.
-- [func string(for: Any?) -> String?](datecomponentsformatter/string(for:).md)
+- [func string(for: Any?) -> String?](./string%28for%29.md)
   Returns a formatted string based on the date information in the specified object.
-- [func string(from: Date, to: Date) -> String?](datecomponentsformatter/string(from:to:).md)
+- [func string(from: Date, to: Date) -> String?](./string%28from,to%29.md)
   Returns a formatted string based on the time difference between two dates.
-- [class func localizedString(from: DateComponents, unitsStyle: DateComponentsFormatter.UnitsStyle) -> String?](datecomponentsformatter/localizedstring(from:unitsstyle:).md)
+- [class func localizedString(from: DateComponents, unitsStyle: DateComponentsFormatter.UnitsStyle) -> String?](./localizedstring%28from,unitsstyle%29.md)
   Returns a localized string based on the specified date components and style option.
 
 

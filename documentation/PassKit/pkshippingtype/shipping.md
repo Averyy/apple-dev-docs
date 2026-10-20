@@ -1,7 +1,8 @@
 # PKShippingType.shipping
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shipping the purchase to the provided address using a third-party shipping company. This is the default shipping type.
 
@@ -19,13 +20,18 @@ Shipping the purchase to the provided address using a third-party shipping compa
 case shipping
 ```
 
+```c
+PKShippingTypeShipping
+```
+
 ## See Also
 
-- [PKShippingType.delivery](pkshippingtype/delivery.md)
+### Constants
+- [PKShippingType.delivery](./delivery.md)
   Delivering the purchase by the seller (for example, pizza, flower, or furniture delivery).
-- [PKShippingType.storePickup](pkshippingtype/storepickup.md)
+- [PKShippingType.storePickup](./storepickup.md)
   Store pickup of the purchase from the seller’s store.
-- [PKShippingType.servicePickup](pkshippingtype/servicepickup.md)
+- [PKShippingType.servicePickup](./servicepickup.md)
   Picking up an item from the provided address by the service (for example, transportation or shipping services that provide home pickup).
 
 

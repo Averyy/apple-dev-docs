@@ -1,14 +1,15 @@
 # kFramebufferDisableAltivecAccess
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFramebufferDisableAltivecAccess = 0x00080000
 ```
 

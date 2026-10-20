@@ -1,7 +1,8 @@
 # jitter
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variation in pitch in each frame of a transcription segment, expressed as a percentage of the frame’s fundamental frequency.
 
@@ -19,15 +20,20 @@ The variation in pitch in each frame of a transcription segment, expressed as a 
 var jitter: SFAcousticFeature { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) SFAcousticFeature * jitter;
+```
+
 ## See Also
 
-- [class SFAcousticFeature](sfacousticfeature.md)
+### Analyzing voice
+- [class SFAcousticFeature](../sfacousticfeature.md)
   The value of a voice analysis metric.
-- [var voicing: SFAcousticFeature](sfvoiceanalytics/voicing.md)
+- [var voicing: SFAcousticFeature](./voicing.md)
   The likelihood of a voice in each frame of a transcription segment.
-- [var pitch: SFAcousticFeature](sfvoiceanalytics/pitch.md)
+- [var pitch: SFAcousticFeature](./pitch.md)
   The highness or lowness of the tone (fundamental frequency) in each frame of a transcription segment, expressed as a logarithm.
-- [var shimmer: SFAcousticFeature](sfvoiceanalytics/shimmer.md)
+- [var shimmer: SFAcousticFeature](./shimmer.md)
   The variation in vocal volume stability (amplitude) in each frame of a transcription segment, expressed in decibels.
 
 

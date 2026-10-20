@@ -1,18 +1,19 @@
 # makeMachReceiveSource(port:queue:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new dispatch source object for monitoring a Mach port for pending messages.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,11 +23,11 @@ class func makeMachReceiveSource(port: mach_port_t, queue: DispatchQueue? = nil)
 
 #### Return Value
 
-A dispatch source object that conforms to the [`DispatchSourceMachReceive`](dispatchsourcemachreceive.md) protocol.
+A dispatch source object that conforms to the [`DispatchSourceMachReceive`](../dispatchsourcemachreceive.md) protocol.
 
 #### Discussion
 
-After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](dispatchobject/activate().md) method.
+After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](../dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](../dispatchobject/activate%28%29.md) method.
 
 ## Parameters
 
@@ -35,13 +36,14 @@ After creating the dispatch source, use the methods of the [`DispatchSourceProto
 
 ## See Also
 
-- [class func makeMachSendSource(port: mach_port_t, eventMask: DispatchSource.MachSendEvent, queue: DispatchQueue?) -> any DispatchSourceMachSend](dispatchsource/makemachsendsource(port:eventmask:queue:).md)
+### Creating a Mach Port Source
+- [class func makeMachSendSource(port: mach_port_t, eventMask: DispatchSource.MachSendEvent, queue: DispatchQueue?) -> any DispatchSourceMachSend](./makemachsendsource%28port,eventmask,queue%29.md)
   A dispatch source that monitors a Mach port for dead name notifications.
-- [protocol DispatchSourceMachReceive](dispatchsourcemachreceive.md)
+- [protocol DispatchSourceMachReceive](../dispatchsourcemachreceive.md)
   A dispatch source that monitors a Mach port for pending messages.
-- [protocol DispatchSourceMachSend](dispatchsourcemachsend.md)
+- [protocol DispatchSourceMachSend](../dispatchsourcemachsend.md)
   A dispatch source that monitors a Mach port for dead name notifications, indicating that a send right no longer has a corresponding receive right.
-- [DispatchSource.MachSendEvent](dispatchsource/machsendevent.md)
+- [DispatchSource.MachSendEvent](./machsendevent.md)
   Mach-related events.
 
 

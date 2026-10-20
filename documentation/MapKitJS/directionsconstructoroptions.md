@@ -1,7 +1,8 @@
 # DirectionsConstructorOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Options that you may provide when creating a directions object.
 
@@ -10,17 +11,17 @@ Options that you may provide when creating a directions object.
 
 ## Declaration
 
-```swift
+```
 interface DirectionsConstructorOptions
 ```
 
 #### Overview
 
-Use [`DirectionsConstructorOptions`](directionsconstructoroptions.md) to set options when creating a [`Directions`](directions.md) object.
+Use [`DirectionsConstructorOptions`](./directionsconstructoroptions.md) to set options when creating a [`Directions`](./directions.md) object.
 
-If you set `language` to a language ID, such as `fr-CA` or `en-GB`, MapKit JS returns step-by-step directions in the specified language, if available. If you don’t set `language` when initializing a [`Directions`](directions.md) object, the directions default to the language ID you provide when initializing the map with [`init()`](mapkit/init.md). If the map doesn’t have a specified language upon initialization, MapKit JS returns directions in the browser’s language setting.
+If you set `language` to a language ID, such as `fr-CA` or `en-GB`, MapKit JS returns step-by-step directions in the specified language, if available. If you don’t set `language` when initializing a [`Directions`](./directions.md) object, the directions default to the language ID you provide when initializing the map with [`init()`](./mapkit/init.md). If the map doesn’t have a specified language upon initialization, MapKit JS returns directions in the browser’s language setting.
 
-Set the `language` option when creating a [`Directions`](directions.md) object as in the code below:
+Set the `language` option when creating a [`Directions`](./directions.md) object as in the code below:
 
 ```javascript
 const directions = new mapkit.Directions({
@@ -31,12 +32,13 @@ const directions = new mapkit.Directions({
 ## Topics
 
 ### Initializing language
-- [language](directionsconstructoroptions/language.md)
+- [language](./directionsconstructoroptions/language.md)
   A language ID that determines the language for route information.
 
 ## See Also
 
-- [new Directions(options)](directions/directionsconstructor.md)
+### Creating a directions object
+- [new Directions(options)](./directions/directionsconstructor.md)
   Creates a directions object with options you provide.
 
 

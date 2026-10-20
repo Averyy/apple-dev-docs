@@ -1,18 +1,19 @@
 # bottom
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bottom-edge width.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The bottom-edge width.
 var bottom: CGFloat
 ```
 
+```c
+CGFloat bottom;
+```
+
 ## See Also
 
-- [var left: CGFloat](avedgewidths/left.md)
+### Edge widths
+- [var left: CGFloat](./left.md)
   The left-edge width.
-- [var top: CGFloat](avedgewidths/top.md)
+- [var top: CGFloat](./top.md)
   The top-edge width.
-- [var right: CGFloat](avedgewidths/right.md)
+- [var right: CGFloat](./right.md)
   The right-edge width.
 
 

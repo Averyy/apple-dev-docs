@@ -1,14 +1,15 @@
 # EntityIdentifierConvertible Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var entityIdentifierString: String](syncableentityidentifier/entityidentifierstring.md)
+- [var entityIdentifierString: String](./entityidentifierstring.md)
   Returns the string representation of this identifier’s local ID.
 ### Type Methods
-- [static func entityIdentifier(for: String) -> SyncableEntityIdentifier<LocalID, StableID>?](syncableentityidentifier/entityidentifier(for:).md)
+- [static func entityIdentifier(for: String) -> SyncableEntityIdentifier<LocalID, StableID>?](./entityidentifier%28for%29.md)
   Creates an identifier from a string representation.
 
 

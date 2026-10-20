@@ -1,7 +1,8 @@
 # required
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the function constant needs to be provided to specialize the function.
 
@@ -19,19 +20,24 @@ A Boolean value indicating whether the function constant needs to be provided to
 var required: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL required;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if a constant value needs to be provided for the function constant. A function constant is optional only if it is referenced in a call to the built-in `is_function_constant_defined(name)` function.
+This value is [`true`](../../Swift/true.md) if a constant value needs to be provided for the function constant. A function constant is optional only if it is referenced in a call to the built-in `is_function_constant_defined(name)` function.
 
-Refer to the [`Metal Shading Language Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) for more information.
+Refer to the [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) for more information.
 
 ## See Also
 
-- [var name: String](mtlfunctionconstant/name.md)
+### Reading the function constant’s properties
+- [var name: String](./name.md)
   The name of the function constant.
-- [var type: MTLDataType](mtlfunctionconstant/type.md)
+- [var type: MTLDataType](./type.md)
   The data type of the function constant.
-- [var index: Int](mtlfunctionconstant/index.md)
+- [var index: Int](./index.md)
   The index of the function constant.
 
 

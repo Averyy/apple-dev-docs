@@ -1,7 +1,8 @@
 # imageProvider
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure to provide an image that represents the custom tool item.
 

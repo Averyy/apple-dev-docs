@@ -1,7 +1,8 @@
 # draw(_:)
 
 **Framework**: Screen Saver  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the screen saver view.
 
@@ -14,13 +15,18 @@ Draws the screen saver view.
 func draw(_ rect: NSRect)
 ```
 
+```objc
+- (void) drawRect:(NSRect) rect;
+```
+
 #### Discussion
 
-[`ScreenSaverView`](screensaverview.md) implements [`draw(_:)`](screensaverview/draw(_:).md) to draw a black background. Subclasses can do their drawing here or in [`animateOneFrame()`](screensaverview/animateoneframe().md).
+[`ScreenSaverView`](../screensaverview.md) implements [`draw(_:)`](./draw%28_%29.md) to draw a black background. Subclasses can do their drawing here or in [`animateOneFrame()`](./animateoneframe%28%29.md).
 
 ## See Also
 
-- [var isPreview: Bool](screensaverview/ispreview.md)
+### Drawing the view
+- [var isPreview: Bool](./ispreview.md)
   A Boolean value that indicates whether the screen saver view is set to a size suitable for previewing its content.
 
 

@@ -1,14 +1,15 @@
 # StandardUSB::getEndpointMaxPacketSize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 uint16_t StandardUSB::getEndpointMaxPacketSize(uint32_t usbDeviceSpeed, const EndpointDescriptor *descriptor);
 ```
 

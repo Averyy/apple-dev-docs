@@ -1,7 +1,8 @@
 # UIPushBehavior.Mode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of force for the push behavior.
 
@@ -9,7 +10,7 @@ The type of force for the push behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,29 @@ The type of force for the push behavior.
 enum Mode
 ```
 
+```c
+enum UIPushBehaviorMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIPushBehavior.Mode.continuous](uipushbehavior/mode-swift.enum/continuous.md)
+- [UIPushBehavior.Mode.continuous](./mode-swift.enum/continuous.md)
   Option for continuous force.
-- [UIPushBehavior.Mode.instantaneous](uipushbehavior/mode-swift.enum/instantaneous.md)
+- [UIPushBehavior.Mode.instantaneous](./mode-swift.enum/instantaneous.md)
   Option for instantaneous force.
 ### Initializers
-- [init?(rawValue: Int)](uipushbehavior/mode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

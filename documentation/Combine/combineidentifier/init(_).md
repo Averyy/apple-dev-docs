@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Combine identifier, using the bit pattern of the provided object.
 
@@ -22,7 +23,8 @@ init(_ obj: AnyObject)
 
 ## See Also
 
-- [init()](combineidentifier/init.md)
+### Creating a Combine identifier
+- [init()](./init%28%29.md)
   Creates a unique Combine identifier.
 
 

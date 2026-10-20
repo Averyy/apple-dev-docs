@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version2_0
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,13 +13,18 @@
 case version2_0
 ```
 
+```c
+ASAuthorizationProviderExtensionPlatformSSOProtocolVersion2_0
+```
+
 ## Mentions
 
-- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Creating extensions that support Platform SSO](../creating-extensions-that-support-platform-sso.md)
 
 ## See Also
 
-- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version1_0](asauthorizationproviderextensionplatformssoprotocolversion/version1_0.md)
+### Enumeration Cases
+- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version1_0](./version1_0.md)
 
 
 ---

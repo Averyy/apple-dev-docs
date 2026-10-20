@@ -1,7 +1,8 @@
 # BackgroundTerminationMetric
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric that counts app terminations from the background by category.
 
@@ -19,49 +20,50 @@ struct BackgroundTerminationMetric
 
 #### Discussion
 
-This metric corresponds to the [`MetricResult.backgroundTermination(_:)`](metricresult/backgroundtermination(_:).md) case. It appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when state reporting is enabled.
+This metric corresponds to the [`MetricResult.backgroundTermination(_:)`](./metricresult/backgroundtermination%28_%29.md) case. It appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when state reporting is enabled.
 
-Use [`terminationCategory`](crashdiagnostic/terminationcategory-swift.property.md) to correlate individual crash diagnostics with these aggregate counts.
+Use [`terminationCategory`](./crashdiagnostic/terminationcategory-swift.property.md) to correlate individual crash diagnostics with these aggregate counts.
 
-Unexpected background terminations can affect downstream performance metrics such as launch time, because the app must fully restart instead of resuming from suspension. For information about launch times when the app resumes from suspension, see [`ApplicationResumeTimeMetric`](applicationresumetimemetric.md).
+Unexpected background terminations can affect downstream performance metrics such as launch time, because the app must fully restart instead of resuming from suspension. For information about launch times when the app resumes from suspension, see [`ApplicationResumeTimeMetric`](./applicationresumetimemetric.md).
 
 ## Topics
 
 ### Background termination counts
-- [let normalTerminationCount: Int](backgroundterminationmetric/normalterminationcount.md)
+- [let normalTerminationCount: Int](./backgroundterminationmetric/normalterminationcount.md)
   The number of times the application terminated normally from the background.
-- [let memoryLimitTerminationCount: Int](backgroundterminationmetric/memorylimitterminationcount.md)
+- [let memoryLimitTerminationCount: Int](./backgroundterminationmetric/memorylimitterminationcount.md)
   The number of times the system terminated the app from the background for using too much memory.
-- [let highCPUTerminationCount: Int](backgroundterminationmetric/highcputerminationcount.md)
+- [let highCPUTerminationCount: Int](./backgroundterminationmetric/highcputerminationcount.md)
   The number of times the system terminated the app from the background for using too much CPU time.
-- [let systemPressureTerminationCount: Int](backgroundterminationmetric/systempressureterminationcount.md)
+- [let systemPressureTerminationCount: Int](./backgroundterminationmetric/systempressureterminationcount.md)
   The number of times the system terminated the app from the background to free up memory.
-- [let badAccessTerminationCount: Int](backgroundterminationmetric/badaccessterminationcount.md)
+- [let badAccessTerminationCount: Int](./backgroundterminationmetric/badaccessterminationcount.md)
   The number of times the system terminated the app from the background for attempting an invalid memory access.
-- [let abnormalTerminationCount: Int](backgroundterminationmetric/abnormalterminationcount.md)
+- [let abnormalTerminationCount: Int](./backgroundterminationmetric/abnormalterminationcount.md)
   The number of times the app terminated abnormally from the background.
-- [let illegalInstructionTerminationCount: Int](backgroundterminationmetric/illegalinstructionterminationcount.md)
+- [let illegalInstructionTerminationCount: Int](./backgroundterminationmetric/illegalinstructionterminationcount.md)
   The number of times the system terminated the app from the background for attempting to execute an illegal or undefined instruction.
-- [let watchdogTerminationCount: Int](backgroundterminationmetric/watchdogterminationcount.md)
+- [let watchdogTerminationCount: Int](./backgroundterminationmetric/watchdogterminationcount.md)
   The number of times the system watchdog terminated the app from the background.
-- [let fileLockTerminationCount: Int](backgroundterminationmetric/filelockterminationcount.md)
+- [let fileLockTerminationCount: Int](./backgroundterminationmetric/filelockterminationcount.md)
   The number of times the system terminated the app from the background while being suspended and having file locks.
-- [let taskTimeoutTerminationCount: Int](backgroundterminationmetric/tasktimeoutterminationcount.md)
+- [let taskTimeoutTerminationCount: Int](./backgroundterminationmetric/tasktimeoutterminationcount.md)
   The number of times the system terminated the app from the background for exceeding the allocated time for a background task.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ForegroundTerminationMetric](foregroundterminationmetric.md)
+### Termination metrics
+- [struct ForegroundTerminationMetric](./foregroundterminationmetric.md)
   A metric that counts app terminations from the foreground by category.
 
 

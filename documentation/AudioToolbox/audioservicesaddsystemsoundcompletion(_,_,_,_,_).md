@@ -1,7 +1,8 @@
 # AudioServicesAddSystemSoundCompletion(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers a callback function that is invoked when a specified system sound finishes playing.
 
@@ -17,6 +18,10 @@ Registers a callback function that is invoked when a specified system sound fini
 
 ```swift
 func AudioServicesAddSystemSoundCompletion(_ inSystemSoundID: SystemSoundID, _ inRunLoop: CFRunLoop?, _ inRunLoopMode: CFString?, _ inCompletionRoutine: AudioServicesSystemSoundCompletionProc, _ inClientData: UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+extern OSStatus AudioServicesAddSystemSoundCompletion(SystemSoundID inSystemSoundID, CFRunLoopRef inRunLoop, CFStringRef inRunLoopMode, AudioServicesSystemSoundCompletionProc inCompletionRoutine, void *inClientData);
 ```
 
 #### Return Value
@@ -37,11 +42,13 @@ Because a system sound may play for several seconds, you might want to know when
 
 ## See Also
 
-- [func AudioServicesCreateSystemSoundID(CFURL, UnsafeMutablePointer<SystemSoundID>) -> OSStatus](audioservicescreatesystemsoundid(_:_:).md)
+### Related Documentation
+- [func AudioServicesCreateSystemSoundID(CFURL, UnsafeMutablePointer<SystemSoundID>) -> OSStatus](./audioservicescreatesystemsoundid%28_,_%29.md)
   Creates a system sound object.
-- [func AudioServicesRemoveSystemSoundCompletion(SystemSoundID)](audioservicesremovesystemsoundcompletion(_:).md)
+### Adding and Removing System Sound Callbacks
+- [func AudioServicesRemoveSystemSoundCompletion(SystemSoundID)](./audioservicesremovesystemsoundcompletion%28_%29.md)
   Unregisters any completion callback functions that were registered for a specified system sound.
-- [typealias AudioServicesSystemSoundCompletionProc](audioservicessystemsoundcompletionproc.md)
+- [typealias AudioServicesSystemSoundCompletionProc](./audioservicessystemsoundcompletionproc.md)
   A function the system invokes when a system sound finishes playing.
 
 

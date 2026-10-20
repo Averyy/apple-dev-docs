@@ -1,11 +1,13 @@
 # AssetsLibrary Data Types
 
-**Framework**: Assets Library
+**Framework**: Assets Library  
+**Role**: API Collection
 
 ## See Also
 
-- [AssetsLibrary Enumerations](assetslibrary-enumerations.md)
-- [AssetsLibrary Constants](assetslibrary-constants.md)
+### Reference
+- [AssetsLibrary Enumerations](./assetslibrary-enumerations.md)
+- [AssetsLibrary Constants](./assetslibrary-constants.md)
 
 
 ---

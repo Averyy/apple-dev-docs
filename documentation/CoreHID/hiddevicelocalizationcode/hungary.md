@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.hungary
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Hungary in the HID specification.
 

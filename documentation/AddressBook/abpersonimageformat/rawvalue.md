@@ -1,14 +1,15 @@
 # rawValue
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of an image format.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
@@ -18,9 +19,10 @@ var rawValue: UInt32
 
 ## See Also
 
-- [var kABPersonImageFormatOriginalSize: ABPersonImageFormat](kabpersonimageformatoriginalsize.md)
+### Instance Properties
+- [var kABPersonImageFormatOriginalSize: ABPersonImageFormat](../kabpersonimageformatoriginalsize.md)
   The image at its original size and shape.
-- [var kABPersonImageFormatThumbnail: ABPersonImageFormat](kabpersonimageformatthumbnail.md)
+- [var kABPersonImageFormatThumbnail: ABPersonImageFormat](../kabpersonimageformatthumbnail.md)
   The small square thumbnail.
 
 

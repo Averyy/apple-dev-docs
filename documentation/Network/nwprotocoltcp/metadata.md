@@ -1,7 +1,8 @@
 # NWProtocolTCP.Metadata
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A handle you can use to inspect a connection’s TCP state.
 
@@ -23,21 +24,21 @@ class Metadata
 ## Topics
 
 ### Inspecting TCP State
-- [var availableSendBuffer: UInt32](nwprotocoltcp/metadata/availablesendbuffer.md)
+- [var availableSendBuffer: UInt32](./metadata/availablesendbuffer.md)
   The number of available bytes in the TCP send buffer.
-- [var availableReceiveBuffer: UInt32](nwprotocoltcp/metadata/availablereceivebuffer.md)
+- [var availableReceiveBuffer: UInt32](./metadata/availablereceivebuffer.md)
   The number of available bytes in the TCP receive buffer.
 ### Instance Methods
-- [func setMaximumPacingRateBytesPerSecond(UInt64?)](nwprotocoltcp/metadata/setmaximumpacingratebytespersecond(_:).md)
+- [func setMaximumPacingRateBytesPerSecond(UInt64?)](./metadata/setmaximumpacingratebytespersecond%28_%29.md)
   Set the maximum pacing rate for this TCP connection, in bytes per second.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolMetadata](nwprotocolmetadata.md)
+- [NWProtocolMetadata](../nwprotocolmetadata.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

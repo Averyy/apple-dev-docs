@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immediate scheduler time interval from a floating-point seconds value.
 
@@ -22,11 +23,12 @@ init(floatLiteral value: Double)
 
 ## See Also
 
-- [init(Int)](immediatescheduler/schedulertimetype/stride/init(_:).md)
+### Creating Scheduler Time Strides
+- [init(Int)](./init%28_%29.md)
   Creates an immediate scheduler time interval from the given time interval.
-- [init?<T>(exactly: T)](immediatescheduler/schedulertimetype/stride/init(exactly:).md)
+- [init?<T>(exactly: T)](./init%28exactly%29.md)
   Creates an immediate scheduler time interval from a binary integer type.
-- [init(integerLiteral: Int)](immediatescheduler/schedulertimetype/stride/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./init%28integerliteral%29.md)
   Creates an immediate scheduler time interval from an integer seconds value.
 
 

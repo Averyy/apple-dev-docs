@@ -1,7 +1,8 @@
 # Start a build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Start a new Xcode Cloud build for a workflow.
 
@@ -16,7 +17,7 @@ The example request below starts a new build for a specific workflow. Use the in
 
 **Request**:
 
-```None
+```
 {
     “data”: {
         “type”: “ciBuildRuns”,
@@ -98,7 +99,20 @@ The example request below starts a new build for a specific workflow. Use the in
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `CiBuildRunCreateRequest`
+
 The request body you use to start a new Xcode Cloud build.
+
+## Responses
+
+- `201` Created (`CiBuildRunResponse`, `application/json`): The request completed successfully and a new Build Runs resource has been created.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

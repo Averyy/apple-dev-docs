@@ -1,7 +1,8 @@
 # kIOUSB30LinkStatePollingConfigurationTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The polling configuration timeout.
 
@@ -10,7 +11,7 @@ The polling configuration timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStatePollingConfigurationTimeout = 12
 ```
 

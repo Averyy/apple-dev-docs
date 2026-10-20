@@ -1,7 +1,8 @@
 # GLKTextureLoaderApplyPremultiplication
 
 **Framework**: GLKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Whether image data should be premultiplied before being loaded into the sharegroup.
 
@@ -9,7 +10,9 @@ Whether image data should be premultiplied before being loaded into the sharegro
 - iOS 5.0+
 - iPadOS 5.0+
 - macOS 10.8+
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,29 +20,34 @@ Whether image data should be premultiplied before being loaded into the sharegro
 let GLKTextureLoaderApplyPremultiplication: String
 ```
 
+```c
+extern NSString * const GLKTextureLoaderApplyPremultiplication;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies a boolean value. If [`false`](https://developer.apple.com/documentation/swift/false), the data is loaded into the sharegroup without being modified. If [`true`](https://developer.apple.com/documentation/swift/true), the red, green and blue components of each pixel are multiplied by the alpha value. If the key is not specified, the default value is [`false`](https://developer.apple.com/documentation/swift/false). Never specify [`true`](https://developer.apple.com/documentation/swift/true) for a texture that is in a compressed format.
+The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a boolean value. If [`false`](../Swift/false.md), the data is loaded into the sharegroup without being modified. If [`true`](../Swift/true.md), the red, green and blue components of each pixel are multiplied by the alpha value. If the key is not specified, the default value is [`false`](../Swift/false.md). Never specify [`true`](../Swift/true.md) for a texture that is in a compressed format.
 
 ## See Also
 
-- [let GLKTextureLoaderErrorDomain: String](glktextureloadererrordomain.md)
+### Constants
+- [let GLKTextureLoaderErrorDomain: String](./glktextureloadererrordomain.md)
   The error domain used by GLKit when returning texture loading errors.
-- [let GLKTextureLoaderErrorKey: String](glktextureloadererrorkey.md)
+- [let GLKTextureLoaderErrorKey: String](./glktextureloadererrorkey.md)
   A key used to retrieve an error string from an error object userinfo dictionary.
-- [let GLKTextureLoaderGLErrorKey: String](glktextureloaderglerrorkey.md)
+- [let GLKTextureLoaderGLErrorKey: String](./glktextureloaderglerrorkey.md)
   A key used to retrieve additional information from an error object’s userinfo dictionary.
-- [let GLKTextureLoaderGenerateMipmaps: String](glktextureloadergeneratemipmaps.md)
+- [let GLKTextureLoaderGenerateMipmaps: String](./glktextureloadergeneratemipmaps.md)
   Whether or not to create mipmaps for a texture.
-- [let GLKTextureLoaderGrayscaleAsAlpha: String](glktextureloadergrayscaleasalpha.md)
+- [let GLKTextureLoaderGrayscaleAsAlpha: String](./glktextureloadergrayscaleasalpha.md)
   Whether or not to treat greyscale image data as alpha information.
-- [let GLKTextureLoaderOriginBottomLeft: String](glktextureloaderoriginbottomleft.md)
+- [let GLKTextureLoaderOriginBottomLeft: String](./glktextureloaderoriginbottomleft.md)
   Whether or not to vertically flip image data to match OpenGL’s coordinate system.
-- [let GLKTextureLoaderSRGB: String](glktextureloadersrgb.md)
+- [let GLKTextureLoaderSRGB: String](./glktextureloadersrgb.md)
   Whether or not to treat texture image data as sRGB data.
-- [var GLK_SSE3_INTRINSICS: Int32](glk_sse3_intrinsics.md)
-- [let kGLKModelErrorDomain: String](kglkmodelerrordomain.md)
-- [let kGLKModelErrorKey: String](kglkmodelerrorkey.md)
+- [var GLK_SSE3_INTRINSICS: Int32](./glk_sse3_intrinsics.md)
+- [let kGLKModelErrorDomain: String](./kglkmodelerrordomain.md)
+- [let kGLKModelErrorKey: String](./kglkmodelerrorkey.md)
 
 
 ---

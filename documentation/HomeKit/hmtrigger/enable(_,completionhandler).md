@@ -1,7 +1,8 @@
 # enable(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the enabled state of the trigger.
 
@@ -14,12 +15,20 @@ Changes the enabled state of the trigger.
 ## Declaration
 
 ```swift
+func enable(_ enable: Bool, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enable(_ enable: Bool) async throws
+```
+
+```objc
+- (void) enable:(BOOL) enable completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
 
-Triggers can only be enabled when they are in a home. You add triggers to a home using the [`addTrigger(_:completionHandler:)`](hmhome/addtrigger(_:completionhandler:).md) method of [`HMHome`](hmhome.md).
+Triggers can only be enabled when they are in a home. You add triggers to a home using the [`addTrigger(_:completionHandler:)`](../hmhome/addtrigger%28_,completionhandler%29.md) method of [`HMHome`](../hmhome.md).
 
 When a trigger is enabled its firing conditions are checked for validity and the system starts tracking the trigger and when it will next fire.
 
@@ -27,20 +36,23 @@ In addition to having valid firing conditions, to be successfully enabled a trig
 
 ## Parameters
 
-- `enable`: `TRUE` to enable the trigger, [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `enable`: `TRUE` to enable the trigger, [`false`](../../Swift/false.md) to disable it.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var name: String](hmtrigger/name.md)
+### Managing Triggers
+- [var name: String](./name.md)
   The name of the trigger.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmtrigger/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the trigger.
-- [var isEnabled: Bool](hmtrigger/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   State of the trigger.
-- [var lastFireDate: Date?](hmtrigger/lastfiredate.md)
+- [var lastFireDate: Date?](./lastfiredate.md)
   The last time this trigger fired.
-- [var uniqueIdentifier: UUID](hmtrigger/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for this trigger.
 
 

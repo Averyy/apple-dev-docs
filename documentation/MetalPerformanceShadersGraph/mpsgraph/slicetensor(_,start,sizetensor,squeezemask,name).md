@@ -1,7 +1,8 @@
 # sliceTensor(_:start:sizeTensor:squeezeMask:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a slice operation and returns the result tensor.
 
@@ -19,13 +20,17 @@ Creates a slice operation and returns the result tensor.
 func sliceTensor(_ tensor: MPSGraphTensor, start startTensor: MPSGraphTensor, sizeTensor: MPSGraphTensor, squeezeMask: UInt32, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) sliceTensor:(MPSGraphTensor *) tensor startTensor:(MPSGraphTensor *) startTensor sizeTensor:(MPSGraphTensor *) sizeTensor squeezeMask:(uint32_t) squeezeMask name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object.
 
 #### Discussion
 
-Slices a tensor starting from `startTensor`, stopping short before `startTensor + endTensor` stepping a single pace between each value. Semantics based on [`TensorFlow Strided Slice Op`](https://developer.apple.comhttps://www.tensorflow.org/api_docs/python/tf/strided_slice).
+Slices a tensor starting from `startTensor`, stopping short before `startTensor + endTensor` stepping a single pace between each value. Semantics based on [TensorFlow Strided Slice Op](https://www.tensorflow.org/api_docs/python/tf/strided_slice).
 
 ## Parameters
 

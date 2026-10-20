@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The floating-point value with the same sign and exponent as this value, but with a significand of 1.0.
@@ -40,21 +41,22 @@ let y = x.binade
 
 ## See Also
 
-- [var exponentBitPattern: Self.RawExponent](binaryfloatingpoint/exponentbitpattern.md)
+### Working with Binary Representation
+- [var exponentBitPattern: Self.RawExponent](./exponentbitpattern.md)
   The raw encoding of the value’s exponent field.
-- [var significandBitPattern: Self.RawSignificand](binaryfloatingpoint/significandbitpattern.md)
+- [var significandBitPattern: Self.RawSignificand](./significandbitpattern.md)
   The raw encoding of the value’s significand field.
-- [var significandWidth: Int](binaryfloatingpoint/significandwidth.md)
+- [var significandWidth: Int](./significandwidth.md)
   The number of bits required to represent the value’s significand.
-- [static var exponentBitCount: Int](binaryfloatingpoint/exponentbitcount.md)
+- [static var exponentBitCount: Int](./exponentbitcount.md)
   The number of bits used to represent the type’s exponent.
-- [static var significandBitCount: Int](binaryfloatingpoint/significandbitcount.md)
+- [static var significandBitCount: Int](./significandbitcount.md)
   The available number of fractional significand bits.
-- [init(sign: FloatingPointSign, exponentBitPattern: Self.RawExponent, significandBitPattern: Self.RawSignificand)](binaryfloatingpoint/init(sign:exponentbitpattern:significandbitpattern:).md)
+- [init(sign: FloatingPointSign, exponentBitPattern: Self.RawExponent, significandBitPattern: Self.RawSignificand)](./init%28sign,exponentbitpattern,significandbitpattern%29.md)
   Creates a new instance from the specified sign and bit patterns.
-- [associatedtype RawExponent : UnsignedInteger](binaryfloatingpoint/rawexponent.md)
+- [associatedtype RawExponent : UnsignedInteger](./rawexponent.md)
   A type that represents the encoded exponent of a value.
-- [associatedtype RawSignificand : UnsignedInteger](binaryfloatingpoint/rawsignificand.md)
+- [associatedtype RawSignificand : UnsignedInteger](./rawsignificand.md)
   A type that represents the encoded significand of a value.
 
 

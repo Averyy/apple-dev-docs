@@ -1,6 +1,7 @@
 # Messaging between the app and JavaScript in a Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Communicate about events and share data between the containing app and JavaScript by using native messaging and app groups.
 
@@ -14,9 +15,9 @@ A Safari web extension consists of three parts that operate independently in the
 
 You use messaging APIs to communicate events and event data between these parts. You use app groups to share app data between them.
 
-Because the macOS or iOS app and the native app extension each run in their own sandboxed environments, they cannot share data in their respective containers. You can store data in a shared space that both the macOS or iOS app and the native app extension can access and update, by enabling app groups. For more information, see [`Sharing Data with Your Containing App`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW6).
+Because the macOS or iOS app and the native app extension each run in their own sandboxed environments, they cannot share data in their respective containers. You can store data in a shared space that both the macOS or iOS app and the native app extension can access and update, by enabling app groups. For more information, see [Sharing Data with Your Containing App](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW6).
 
-##### Send Messages From Javascript to the App
+##### Send messages from JavaScript to the app
 
 You can send messages to the native app extension from a background script or from extension pages that provide a user interface for your Safari web extension. Content scripts that are injected into web content cannot send messages to the native app extension.
 
@@ -55,11 +56,11 @@ func beginRequest(with context: NSExtensionContext) {
 }
 ```
 
-The message from the script is the first item in the `context.inputItems` dictionary using [`SFExtensionMessageKey`](sfextensionmessagekey.md) as the key. In Safari 17 or later, get the profile identifier from the `context.inputItems` dictionary using [`SFExtensionProfileKey`](sfextensionprofilekey.md) as the key. Use the profile identifier for any extension logic that you need to limit to the user’s profile or to a web app instance, such as fetching or storing data.
+The message from the script is the first item in the `context.inputItems` dictionary using [`SFExtensionMessageKey`](./sfextensionmessagekey.md) as the key. In Safari 17 or later, get the profile identifier from the `context.inputItems` dictionary using [`SFExtensionProfileKey`](./sfextensionprofilekey.md) as the key. Use the profile identifier for any extension logic that you need to limit to the user’s profile or to a web app instance, such as fetching or storing data.
 
 Reply to the message by creating an `NSExtensionItem` response, populating response data in `userInfo`, and calling `context.completeResponse:returningItems:completionHandler` with the response.
 
-##### Send Messages From the App to Javascript
+##### Send messages from the app to JavaScript
 
 To enable sending messages from the Safari web extension’s containing macOS app to its JavaScript scripts running in the browser or Mac web app, add `nativeMessaging` to the list of `permissions` in the `manifest.json` file. Send messages from the macOS app to notify the web scripts of important events, like when the user clicks a button or when data that the JavaScript script uses changes. You can’t send messages from a containing iOS app to your web extension’s JavaScript scripts.
 
@@ -96,13 +97,14 @@ The script then processes the message and initiates events in the browser.
 
 ## See Also
 
-- [let SFExtensionMessageKey: String](sfextensionmessagekey.md)
+### Messaging
+- [let SFExtensionMessageKey: String](./sfextensionmessagekey.md)
   A string the system uses as a key in a user info dictionary to identify a message.
-- [let SFExtensionProfileKey: String](sfextensionprofilekey.md)
+- [let SFExtensionProfileKey: String](./sfextensionprofilekey.md)
   A string the system uses as a key in a user info dictionary to identify a profile identifier.
-- [Messaging a Web Extension’s Native App](messaging-a-web-extension-s-native-app.md)
+- [Messaging a Web Extension’s Native App](./messaging-a-web-extension-s-native-app.md)
   Communicate between your Safari web extension and its containing app.
-- [Messaging between a webpage and your Safari web extension](messaging-between-a-webpage-and-your-safari-web-extension.md)
+- [Messaging between a webpage and your Safari web extension](./messaging-between-a-webpage-and-your-safari-web-extension.md)
   Configure your extension to enable messaging from webpages, and then update your extension to handle messages.
 
 

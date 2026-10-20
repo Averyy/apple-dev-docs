@@ -1,16 +1,19 @@
 # kAudioSessionRouteChangeReason_Unknown
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The audio route changed but the reason is not known.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+
+> **Deprecated**: Deprecated in iOS 7.0.
 
 ## Declaration
 
@@ -18,21 +21,26 @@ The audio route changed but the reason is not known.
 var kAudioSessionRouteChangeReason_Unknown: Int { get }
 ```
 
+```c
+kAudioSessionRouteChangeReason_Unknown
+```
+
 ## See Also
 
-- [var kAudioSessionRouteChangeReason_NewDeviceAvailable: Int](kaudiosessionroutechangereason_newdeviceavailable.md)
+### Constants
+- [var kAudioSessionRouteChangeReason_NewDeviceAvailable: Int](./kaudiosessionroutechangereason_newdeviceavailable.md)
   A new audio hardware device became available; for example, a headset was plugged in.
-- [var kAudioSessionRouteChangeReason_OldDeviceUnavailable: Int](kaudiosessionroutechangereason_olddeviceunavailable.md)
+- [var kAudioSessionRouteChangeReason_OldDeviceUnavailable: Int](./kaudiosessionroutechangereason_olddeviceunavailable.md)
   The previously-used audio hardware device is now unavailable; for example, a headset was unplugged.
-- [var kAudioSessionRouteChangeReason_CategoryChange: Int](kaudiosessionroutechangereason_categorychange.md)
+- [var kAudioSessionRouteChangeReason_CategoryChange: Int](./kaudiosessionroutechangereason_categorychange.md)
   The audio session category has changed.
-- [var kAudioSessionRouteChangeReason_Override: Int](kaudiosessionroutechangereason_override.md)
+- [var kAudioSessionRouteChangeReason_Override: Int](./kaudiosessionroutechangereason_override.md)
   The audio route has been overridden.
-- [var kAudioSessionRouteChangeReason_WakeFromSleep: Int](kaudiosessionroutechangereason_wakefromsleep.md)
+- [var kAudioSessionRouteChangeReason_WakeFromSleep: Int](./kaudiosessionroutechangereason_wakefromsleep.md)
   The device woke from sleep.
-- [var kAudioSessionRouteChangeReason_NoSuitableRouteForCategory: Int](kaudiosessionroutechangereason_nosuitablerouteforcategory.md)
+- [var kAudioSessionRouteChangeReason_NoSuitableRouteForCategory: Int](./kaudiosessionroutechangereason_nosuitablerouteforcategory.md)
   There is no audio hardware route for the audio session category.
-- [var kAudioSessionRouteChangeReason_RouteConfigurationChange: Int](kaudiosessionroutechangereason_routeconfigurationchange.md)
+- [var kAudioSessionRouteChangeReason_RouteConfigurationChange: Int](./kaudiosessionroutechangereason_routeconfigurationchange.md)
 
 
 ---

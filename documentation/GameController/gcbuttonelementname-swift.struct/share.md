@@ -1,7 +1,8 @@
 # share
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the Xbox share button.
 
@@ -11,7 +12,7 @@ The name of the Xbox share button.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

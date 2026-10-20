@@ -1,7 +1,8 @@
 # jpegxl
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A JPEG-XL encoded image.
 

@@ -1,14 +1,15 @@
 # receive_vfs_nspace_subsystem
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 const struct receive_vfs_nspace_subsystem receive_vfs_nspace_subsystem;
 ```
 

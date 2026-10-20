@@ -1,7 +1,8 @@
 # Default Messaging App
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether an app can be the default messaging app on someone’s device.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether an app can be the default messaging app o
 - iOS 18.2+
 - iPadOS 18.2+
 
+## Details
+
+- **Name**: `com.apple.developer.messaging-app`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -23,11 +27,12 @@ Add the Default Messaging App entitlement to your app by following these steps:
 2. Add a new capability by clicking the + Capability button and then type “Default Messaging””” in the search field.
 3. Double-click the Default Messaging App entry to add the entitlement to your app.
 
-Xcode displays the Default Messaging App entitlement, along with any other entitlements, in the capabilities list under your app’s signing information. For more information on preparing your app to become the default messaging app, see [`Preparing your app to be the default messaging app`](https://developer.apple.com/documentation/messages/preparing-your-app-to-be-the-default-messaging-app).
+Xcode displays the Default Messaging App entitlement, along with any other entitlements, in the capabilities list under your app’s signing information. For more information on preparing your app to become the default messaging app, see [Preparing your app to be the default messaging app](../../Messages/preparing-your-app-to-be-the-default-messaging-app.md).
 
 ## See Also
 
-- [Critical Messaging](entitlements/com.apple.developer.messages.critical-messaging.md)
+### Messages
+- [Critical Messaging](./com.apple.developer.messages.critical-messaging.md)
   A Boolean value that indicates whether an app can use the Critical Messaging API to send SMS messages.
 
 

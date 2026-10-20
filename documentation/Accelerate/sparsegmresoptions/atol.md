@@ -1,18 +1,19 @@
 # atol
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The absolute convergence tolerance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,25 +21,30 @@ The absolute convergence tolerance.
 var atol: Double
 ```
 
+```c
+double atol;
+```
+
 #### Discussion
 
-*‖ b-Ax ‖₂ < [`rtol`](sparsegmresoptions/rtol.md) * ‖ b-Ax₀ ‖₂ + [`atol`](sparsegmresoptions/atol.md)* indicates convergence.
+*‖ b-Ax ‖₂ < [`rtol`](./rtol.md) * ‖ b-Ax₀ ‖₂ + [`atol`](./atol.md)* indicates convergence.
 
 ## See Also
 
-- [var maxIterations: Int32](sparsegmresoptions/maxiterations.md)
+### Inspecting GMRES Options
+- [var maxIterations: Int32](./maxiterations.md)
   The maximum number of iterations to perform.
-- [var nvec: Int32](sparsegmresoptions/nvec.md)
+- [var nvec: Int32](./nvec.md)
   The number of orthogonal vectors the operation maintains.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparsegmresoptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./reporterror.md)
   An optional error-reporting routine.
-- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](sparsegmresoptions/reportstatus.md)
+- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](./reportstatus.md)
   The function to report status.
-- [var rtol: Double](sparsegmresoptions/rtol.md)
+- [var rtol: Double](./rtol.md)
   The relative convergence tolerance.
-- [var variant: SparseGMRESVariant_t](sparsegmresoptions/variant.md)
+- [var variant: SparseGMRESVariant_t](./variant.md)
   The exact variant of GMRES to implement.
-- [struct SparseGMRESVariant_t](sparsegmresvariant_t.md)
+- [struct SparseGMRESVariant_t](../sparsegmresvariant_t.md)
   Defines the exact variant of GMRES to implement
 
 

@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionRegistrationResult.failedNoRetry
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The registration fails to complete and the system doesn’t retry later.
 
@@ -14,9 +15,13 @@ The registration fails to complete and the system doesn’t retry later.
 case failedNoRetry
 ```
 
+```c
+ASAuthorizationProviderExtensionRegistrationResultFailedNoRetry
+```
+
 ## Mentions
 
-- [Registering devices and users](registering-devices-and-users.md)
+- [Registering devices and users](../registering-devices-and-users.md)
 
 #### Discussion
 
@@ -24,11 +29,12 @@ The system attemps to reregister when the mobile device management (MDM) profile
 
 ## See Also
 
-- [ASAuthorizationProviderExtensionRegistrationResult.failed](asauthorizationproviderextensionregistrationresult/failed.md)
+### Identifying the results
+- [ASAuthorizationProviderExtensionRegistrationResult.failed](./failed.md)
   The registration fails to complete and the system retries later.
-- [ASAuthorizationProviderExtensionRegistrationResult.success](asauthorizationproviderextensionregistrationresult/success.md)
+- [ASAuthorizationProviderExtensionRegistrationResult.success](./success.md)
   The registration succeeds.
-- [ASAuthorizationProviderExtensionRegistrationResult.userInterfaceRequired](asauthorizationproviderextensionregistrationresult/userinterfacerequired.md)
+- [ASAuthorizationProviderExtensionRegistrationResult.userInterfaceRequired](./userinterfacerequired.md)
   The user interface is required to complete registration.
 
 

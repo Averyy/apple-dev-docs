@@ -1,7 +1,8 @@
 # preferredBehavioralStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred behavioral style.
 
@@ -17,17 +18,22 @@ The preferred behavioral style.
 var preferredBehavioralStyle: UIBehavioralStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIBehavioralStyle preferredBehavioralStyle;
+```
+
 #### Discussion
 
-Use this property to specify the behavioral style for the button. If the value of the property is [`UIBehavioralStyle.automatic`](uibehavioralstyle/automatic.md), use the [`behavioralStyle`](uibutton/behavioralstyle.md) property to determine the actual style.
+Use this property to specify the behavioral style for the button. If the value of the property is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md), use the [`behavioralStyle`](./behavioralstyle.md) property to determine the actual style.
 
-The default value for [`preferredBehavioralStyle`](uibutton/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](uibehavioralstyle/automatic.md). To learn more about behavioral styles, see [`UIBehavioralStyle`](uibehavioralstyle.md).
+The default value for [`preferredBehavioralStyle`](./preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md). To learn more about behavioral styles, see [`UIBehavioralStyle`](../uibehavioralstyle.md).
 
 ## See Also
 
-- [var behavioralStyle: UIBehavioralStyle](uibutton/behavioralstyle.md)
+### Specifying the behavioral style
+- [var behavioralStyle: UIBehavioralStyle](./behavioralstyle.md)
   The style that determines how the button behaves.
-- [enum UIBehavioralStyle](uibehavioralstyle.md)
+- [enum UIBehavioralStyle](../uibehavioralstyle.md)
   Constants that indicate how a control behaves in apps built with Mac Catalyst.
 
 

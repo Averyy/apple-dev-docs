@@ -6,31 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/examples/mlp.html
 
 # Multi-Layer Perceptron
 
-**
-
-- [.rst](../_sources/examples/mlp.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Multi-Layer Perceptron
-
- Table of contents 
-
-# Multi-Layer Perceptron
-
 In this example we’ll learn to use `mlx.nn` by implementing a simple
 multi-layer perceptron to classify MNIST.
 
@@ -45,11 +20,11 @@ import numpy as np
 ```
 
 The model is defined as the `MLP` class which inherits from
-[mlx.nn.Module](../python/nn/module.html#mlx.nn.Module). We follow the standard idiom to make a new module:
+[mlx.nn.Module](../python/nn/module.md#mlx.nn.Module). We follow the standard idiom to make a new module:
 
 1. Define an `__init__` where the parameters and/or submodules are setup. See
-the [Module class docs](../python/nn.html#module-class) for more information on how
-[mlx.nn.Module](../python/nn/module.html#mlx.nn.Module) registers parameters.
+the [Module class docs](../python/nn.md#module-class) for more information on how
+[mlx.nn.Module](../python/nn/module.md#mlx.nn.Module) registers parameters.
 2. Define a `__call__` where the computation is implemented.
 
 ```
@@ -118,7 +93,7 @@ def batch_iterate(batch_size, X, y):
 ```
 
 Finally, we put it all together by instantiating the model, the
-[mlx.optimizers.SGD](../python/optimizers/_autosummary/mlx.optimizers.SGD.html#mlx.optimizers.SGD) optimizer, and running the training loop:
+[mlx.optimizers.SGD](../python/optimizers/_autosummary/mlx.optimizers.SGD.md#mlx.optimizers.SGD) optimizer, and running the training loop:
 
 ```
 # Load the model
@@ -149,9 +124,9 @@ for e in range(num_epochs):
 
 Note
 
-The [mlx.nn.value_and_grad()](../python/_autosummary/mlx.nn.value_and_grad.html#mlx.nn.value_and_grad) function is a convenience function to get
+The [mlx.nn.value_and_grad()](../python/_autosummary/mlx.nn.value_and_grad.md#mlx.nn.value_and_grad) function is a convenience function to get
 the gradient of a loss with respect to the trainable parameters of a model.
-This should not be confused with [mlx.core.value_and_grad()](../python/_autosummary/mlx.core.value_and_grad.html#mlx.core.value_and_grad).
+This should not be confused with [mlx.core.value_and_grad()](../python/_autosummary/mlx.core.value_and_grad.md#mlx.core.value_and_grad).
 
 The model should train to a decent accuracy (about 95%) after just a few passes
 over the training set. The [full example](https://github.com/ml-explore/mlx-examples/tree/main/mnist)

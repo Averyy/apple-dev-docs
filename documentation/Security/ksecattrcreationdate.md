@@ -1,7 +1,8 @@
 # kSecAttrCreationDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that indicates the item’s creation date.
 
@@ -20,9 +21,13 @@ A key with a value that indicates the item’s creation date.
 let kSecAttrCreationDate: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrCreationDate;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) and represents the date the item was created. Read only.
+The corresponding value is of type [`CFDate`](../CoreFoundation/cfdate.md) and represents the date the item was created. Read only.
 
 
 ---

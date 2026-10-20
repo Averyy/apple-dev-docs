@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.wifiDisabled
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that Wi-Fi is turned off.
 

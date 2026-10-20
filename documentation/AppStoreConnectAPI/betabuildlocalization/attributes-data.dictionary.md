@@ -1,7 +1,8 @@
 # BetaBuildLocalization.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Beta Build Localizations resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Beta Build Localizations resource.
 
 ## Declaration
 
-```swift
+```
 object BetaBuildLocalization.Attributes
 ```
 
@@ -50,14 +51,16 @@ Table 1 lists allowed locale values.
 
 ## Properties
 
-- `locale` (string): The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string): The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `whatsNew` (string): A field that describes changes and additions to a build and indicates features you would like your users to test.
 
 ## See Also
 
-- [Beta Build Localizations](beta-build-localizations.md)
+### Related Documentation
+- [Beta Build Localizations](../beta-build-localizations.md)
   Beta test information about builds, specific to a locale.
-- [object BetaBuildLocalization.Relationships](betabuildlocalization/relationships-data.dictionary.md)
+### Objects
+- [object BetaBuildLocalization.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

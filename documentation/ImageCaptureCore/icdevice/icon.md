@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device’s icon image.
 
@@ -18,17 +19,22 @@ The device’s icon image.
 var icon: CGImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CGImageRef icon;
+```
+
 ## See Also
 
-- [var name: String?](icdevice/name.md)
+### Identifying a Device
+- [var name: String?](./name.md)
   The device’s name as reported by the device module, or if no device module is in control of this device, by the device transport.
-- [var productKind: String?](icdevice/productkind.md)
+- [var productKind: String?](./productkind.md)
   The device’s type.
-- [var uuidString: String?](icdevice/uuidstring.md)
+- [var uuidString: String?](./uuidstring.md)
   A string representation of the device’s universally unique identifier (UUID).
-- [var persistentIDString: String?](icdevice/persistentidstring.md)
+- [var persistentIDString: String?](./persistentidstring.md)
   A string representation of the device’s persistent ID.
-- [var serialNumberString: String?](icdevice/serialnumberstring.md)
+- [var serialNumberString: String?](./serialnumberstring.md)
   The device’s serial number.
 
 

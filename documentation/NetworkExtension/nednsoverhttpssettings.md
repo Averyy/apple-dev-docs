@@ -1,7 +1,8 @@
 # NEDNSOverHTTPSSettings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The DNS resolver settings for a DNS-over-HTTPS server.
 
@@ -19,39 +20,44 @@ The DNS resolver settings for a DNS-over-HTTPS server.
 class NEDNSOverHTTPSSettings
 ```
 
+```objc
+@interface NEDNSOverHTTPSSettings : NEDNSSettings
+```
+
 ## Topics
 
 ### Configuring server properties
-- [var serverURL: URL?](nednsoverhttpssettings/serverurl.md)
+- [var serverURL: URL?](./nednsoverhttpssettings/serverurl.md)
   The URL of a DNS-over-HTTPS server.
-- [init(servers: [String])](nednssettings/init(servers:).md)
+- [init(servers: [String])](./nednssettings/init%28servers%29.md)
   Initialize the `NEDNSSetting` object.
-- [var matchDomains: [String]?](nednssettings/matchdomains.md)
+- [var matchDomains: [String]?](./nednssettings/matchdomains.md)
   A list of domain strings used to determine which DNS queries will use the DNS resolver settings contained in this object.
 ### Configuring client properties
-- [var identityReference: Data?](nednsoverhttpssettings/identityreference.md)
+- [var identityReference: Data?](./nednsoverhttpssettings/identityreference.md)
   A persistent keychain reference to a keychain item containing the certificate and private key components of the DNS client credential.
 
 ## Relationships
 
 ### Inherits From
-- [NEDNSSettings](nednssettings.md)
+- [NEDNSSettings](./nednssettings.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEDNSSettingsManager](nednssettingsmanager.md)
+### DNS configuration
+- [class NEDNSSettingsManager](./nednssettingsmanager.md)
   An object you use to create and manage a DNS settings configuration.
-- [class NEDNSOverTLSSettings](nednsovertlssettings.md)
+- [class NEDNSOverTLSSettings](./nednsovertlssettings.md)
   The DNS resolver settings for a DNS-over-TLS server.
 
 

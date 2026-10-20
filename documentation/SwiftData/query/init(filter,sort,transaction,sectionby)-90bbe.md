@@ -1,7 +1,8 @@
 # init(filter:sort:transaction:sectionBy:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sectioned query with sort descriptors, grouped into sections by a required String key path.
 
@@ -20,6 +21,8 @@ Creates a sectioned query with sort descriptors, grouped into sections by a requ
 @MainActor
 @preconcurrency init(filter: Predicate<Element>? = nil, sort descriptors: [SortDescriptor<Element>] = [], transaction: Transaction? = nil, sectionBy sectionKeyPath: KeyPath<Element, String>) where Result == SectionedResults<Element, String>
 ```
+
+Available when `Element` conforms to `PersistentModel`.
 
 
 ---

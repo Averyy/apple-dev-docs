@@ -1,18 +1,19 @@
 # SparseLSMRCTDefault
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default convergence test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The default convergence test.
 var SparseLSMRCTDefault: SparseLSMRConvergenceTest_t { get }
 ```
 
+```c
+SparseLSMRCTDefault
+```
+
 ## See Also
 
-- [var SparseLSMRCTFongSaunders: SparseLSMRConvergenceTest_t](sparselsmrctfongsaunders.md)
+### Constants
+- [var SparseLSMRCTFongSaunders: SparseLSMRConvergenceTest_t](./sparselsmrctfongsaunders.md)
   Fong and Saunder’s original convergence test.
 
 

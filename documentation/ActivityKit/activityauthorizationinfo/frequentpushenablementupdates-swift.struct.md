@@ -1,7 +1,8 @@
 # ActivityAuthorizationInfo.FrequentPushEnablementUpdates
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that can observe whether you can update Live Activities with frequent ActivityKit push notifications.
 
@@ -18,23 +19,24 @@ struct FrequentPushEnablementUpdates
 ## Topics
 
 ### Creating an iterator
-- [func makeAsyncIterator() -> ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](./frequentpushenablementupdates-swift.struct/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator.md)
+- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Iterator](./frequentpushenablementupdates-swift.struct/iterator.md)
   An iterator for accessing individual data entries from the series.
-- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Element](activityauthorizationinfo/frequentpushenablementupdates-swift.struct/element.md)
+- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates.Element](./frequentpushenablementupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var frequentPushesEnabled: Bool](activityauthorizationinfo/frequentpushesenabled.md)
+### Observing availability of frequent ActivityKit push notifications
+- [var frequentPushesEnabled: Bool](./frequentpushesenabled.md)
   A Boolean value that indicates whether a person permitted you to update Live Activities with frequent ActivityKit push notifications.
-- [let frequentPushEnablementUpdates: ActivityAuthorizationInfo.FrequentPushEnablementUpdates](activityauthorizationinfo/frequentpushenablementupdates-swift.property.md)
+- [let frequentPushEnablementUpdates: ActivityAuthorizationInfo.FrequentPushEnablementUpdates](./frequentpushenablementupdates-swift.property.md)
   An asynchronous sequence you use to observe whether a person permitted you to update Live Activities with frequent ActivityKit push notifications.
 
 

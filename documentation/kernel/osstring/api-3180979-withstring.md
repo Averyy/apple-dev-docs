@@ -1,7 +1,8 @@
 # withString
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Allocates an OSString object with a copy of an OString object.
 
@@ -11,11 +12,19 @@ Allocates an OSString object with a copy of an OString object.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static OSStringPtr withString(const OSString *aString);
+```
+
+*macOS*
+
+```c
 static OSPtr<OSString> withString(const OSString *aString);
 ```
 
-#### Return_value
+#### Return Value
 
 NULL on failure, otherwise the allocated OSString with reference count 1 to be released by the caller.
 
@@ -29,13 +38,14 @@ Allocates an OSString object with a copy of an OString object.
 
 ## See Also
 
-- [+ withCString](osstring/3180977-withcstring.md)
+### Creating a String
+- [+ withCString](./api-3180977-withcstring.md)
   Allocates an OSString object with a copy of a c-string.
-- [+ withCString](osstring/3433854-withcstring.md)
+- [+ withCString](./api-3433854-withcstring.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [+ withCStringNoCopy](osstring/3180978-withcstringnocopy.md)
+- [+ withCStringNoCopy](./api-3180978-withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [- free](osstring/3180973-free.md)
+- [- free](./api-3180973-free.md)
 
 
 ---

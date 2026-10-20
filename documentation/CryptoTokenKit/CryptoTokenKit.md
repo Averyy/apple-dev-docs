@@ -1,7 +1,8 @@
 # CryptoTokenKit
 
 **Framework**: CryptoTokenKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Access security tokens and the cryptographic assets they store.
 
@@ -27,48 +28,48 @@ Starting in macOS 10.15.4, the CryptoTokenKit framework includes support for alw
 ## Topics
 
 ### Smart Cards
-- [Using Cryptographic Assets Stored on a Smart Card](using-cryptographic-assets-stored-on-a-smart-card.md)
+- [Using Cryptographic Assets Stored on a Smart Card](./using-cryptographic-assets-stored-on-a-smart-card.md)
   Access certificates, keys, and identities stored on a smart card as if they were part of the keychain.
-- [class TKSmartCardSlotManager](tksmartcardslotmanager.md)
+- [class TKSmartCardSlotManager](./tksmartcardslotmanager.md)
   An interface to all available smart card reader slots.
-- [class TKSmartCardSlot](tksmartcardslot.md)
+- [class TKSmartCardSlot](./tksmartcardslot.md)
   A single smart card reader slot in the system.
-- [class TKSmartCard](tksmartcard.md)
+- [class TKSmartCard](./tksmartcard.md)
   A representation of a smart card.
 ### Smart Card App Extensions
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
   Grant access to user accounts and the keychain by creating a smart card app extension.
-- [Configuring Smart Card Authentication](configuring-smart-card-authentication.md)
+- [Configuring Smart Card Authentication](./configuring-smart-card-authentication.md)
   Set preferences for smart card authentication operations, including those on managed devices.
-- [class TKSmartCardTokenDriver](tksmartcardtokendriver.md)
+- [class TKSmartCardTokenDriver](./tksmartcardtokendriver.md)
   The driver that acts as an entry point for smart card app extensions.
-- [class TKSmartCardToken](tksmartcardtoken.md)
+- [class TKSmartCardToken](./tksmartcardtoken.md)
   A representation of a smart card based cryptographic token.
-- [class TKSmartCardTokenSession](tksmartcardtokensession.md)
+- [class TKSmartCardTokenSession](./tksmartcardtokensession.md)
   A token session that is based on a smart card token.
 ### Tokens
-- [class TKTokenWatcher](tktokenwatcher.md)
+- [class TKTokenWatcher](./tktokenwatcher.md)
   An object that tracks the tokens available in the system.
-- [class TKTokenDriver](tktokendriver.md)
+- [class TKTokenDriver](./tktokendriver.md)
   A base class for building token drivers.
-- [class TKToken](tktoken.md)
+- [class TKToken](./tktoken.md)
   A representation of a hardware-based cryptographic token.
-- [class TKTokenSession](tktokensession.md)
+- [class TKTokenSession](./tktokensession.md)
   A token session that manages the authentication state of a token.
 ### Errors
-- [struct TKError](tkerror.md)
+- [struct TKError](./tkerror.md)
   An error specific to the CryptoTokenKit framework.
-- [let TKErrorDomain: String](tkerrordomain.md)
+- [let TKErrorDomain: String](./tkerrordomain.md)
   The domain for all CryptoTokenKit framework errors.
-- [TKError.Code](tkerror/code.md)
+- [TKError.Code](./tkerror/code.md)
   Error codes from CryptoTokenKit.
 ### Classes
-- [class TKSmartCardSlotNFCSession](tksmartcardslotnfcsession.md)
+- [class TKSmartCardSlotNFCSession](./tksmartcardslotnfcsession.md)
   NFC session that’s related to NFC smart card slot which was created.
-- [class TKSmartCardTokenRegistrationManager](tksmartcardtokenregistrationmanager.md)
+- [class TKSmartCardTokenRegistrationManager](./tksmartcardtokenregistrationmanager.md)
   Provides a centralized management system for registering and unregistering smartcards using their token IDs.
 ### Type Aliases
-- [typealias TKTokenObjectID](tktokenobjectid-8mo7f.md)
+- [typealias TKTokenObjectID](./tktokenobjectid-8mo7f.md)
 
 
 ---

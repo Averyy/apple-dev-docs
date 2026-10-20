@@ -1,7 +1,8 @@
 # LongPressGesture
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gesture that succeeds when the user performs a long press.
 
@@ -23,14 +24,14 @@ struct LongPressGesture
 
 ## Mentions
 
-- [Adding interactivity with gestures](adding-interactivity-with-gestures.md)
-- [Composing SwiftUI gestures](composing-swiftui-gestures.md)
+- [Adding interactivity with gestures](./adding-interactivity-with-gestures.md)
+- [Composing SwiftUI gestures](./composing-swiftui-gestures.md)
 
 #### Overview
 
-To recognize a long-press gesture on a view, create and configure the gesture, then add it to the view using the [`gesture(_:including:)`](view/gesture(_:including:).md) modifier.
+To recognize a long-press gesture on a view, create and configure the gesture, then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier.
 
-Add a long-press gesture to a [`Circle`](circle.md) to animate its color from blue to red, and then change it to green when the gesture ends:
+Add a long-press gesture to a [`Circle`](./circle.md) to animate its color from blue to red, and then change it to green when the gesture ends:
 
 ```swift
 struct LongPressGestureView: View {
@@ -63,31 +64,32 @@ struct LongPressGestureView: View {
 ## Topics
 
 ### Creating a long press gesture
-- [init(minimumDuration: Double)](longpressgesture/init(minimumduration:).md)
+- [init(minimumDuration: Double)](./longpressgesture/init%28minimumduration%29.md)
   Creates a long-press gesture with a minimum duration
-- [init(minimumDuration: Double, maximumDistance: CGFloat)](longpressgesture/init(minimumduration:maximumdistance:).md)
+- [init(minimumDuration: Double, maximumDistance: CGFloat)](./longpressgesture/init%28minimumduration,maximumdistance%29.md)
   Creates a long-press gesture with a minimum duration and a maximum distance that the interaction can move before the gesture fails.
-- [init(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds)](longpressgesture/init(minimumduration:maximumdistance:inputkinds:).md)
+- [init(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds)](./longpressgesture/init%28minimumduration,maximumdistance,inputkinds%29.md)
   Creates a long-press gesture with a minimum duration, a maximum distance, and the input kinds the gesture recognizes.
-- [var minimumDuration: Double](longpressgesture/minimumduration.md)
+- [var minimumDuration: Double](./longpressgesture/minimumduration.md)
   The minimum duration of the long press that must elapse before the gesture succeeds.
-- [var maximumDistance: CGFloat](longpressgesture/maximumdistance.md)
+- [var maximumDistance: CGFloat](./longpressgesture/maximumdistance.md)
   The maximum distance that the long press can move before the gesture fails.
 
 ## Relationships
 
 ### Conforms To
-- [Gesture](gesture.md)
+- [Gesture](./gesture.md)
 
 ## See Also
 
-- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
+### Recognizing long-press gestures
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](./view/onlongpressgesture%28minimumduration,maximumdistance,perform,onpressingchanged%29.md)
   Adds an action to perform when this view recognizes a long press gesture.
-- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:inputkinds:perform:onpressingchanged:).md)
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](./view/onlongpressgesture%28minimumduration,maximumdistance,inputkinds,perform,onpressingchanged%29.md)
   Adds an action to perform when this view recognizes a long press gesture.
-- [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:perform:onpressingchanged:).md)
+- [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](./view/onlongpressgesture%28minimumduration,perform,onpressingchanged%29.md)
   Adds an action to perform when this view recognizes a long press gesture.
-- [func onLongTouchGesture(minimumDuration: Double, perform: () -> Void, onTouchingChanged: ((Bool) -> Void)?) -> some View](view/onlongtouchgesture(minimumduration:perform:ontouchingchanged:).md)
+- [func onLongTouchGesture(minimumDuration: Double, perform: () -> Void, onTouchingChanged: ((Bool) -> Void)?) -> some View](./view/onlongtouchgesture%28minimumduration,perform,ontouchingchanged%29.md)
   Adds an action to perform when this view recognizes a remote long touch gesture. A long touch gesture is when the finger is on the remote touch surface without actually pressing.
 
 

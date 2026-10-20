@@ -1,14 +1,15 @@
 # kBluetoothL2CAPCommandCodeConnectionParameterUpdateRequest
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPCommandCodeConnectionParameterUpdateRequest = 0x12
 ```
 

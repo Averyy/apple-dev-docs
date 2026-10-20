@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that represents a hearing device ear with the raw value you specify.
 

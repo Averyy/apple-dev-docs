@@ -1,7 +1,8 @@
 # firstKeyView
 
 **Framework**: Preference Panes  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first view in the keyboard focus chain.
 
@@ -15,17 +16,22 @@ The first view in the keyboard focus chain.
 var firstKeyView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * firstKeyView;
+```
+
 #### Discussion
 
 The first key view can be set in the nib file by connecting a view to the receiver’s `_firstKeyView` outlet.
 
 ## See Also
 
-- [var initialKeyView: NSView?](nspreferencepane/initialkeyview.md)
+### Handling keyboard focus
+- [var initialKeyView: NSView?](./initialkeyview.md)
   The view that should have keyboard focus when the pane is selected.
-- [var lastKeyView: NSView?](nspreferencepane/lastkeyview.md)
+- [var lastKeyView: NSView?](./lastkeyview.md)
   The last view in the keyboard focus chain.
-- [var autoSaveTextFields: Bool](nspreferencepane/autosavetextfields.md)
+- [var autoSaveTextFields: Bool](./autosavetextfields.md)
   A Boolean value that indicates whether text fields save their values before changing preference panes.
 
 

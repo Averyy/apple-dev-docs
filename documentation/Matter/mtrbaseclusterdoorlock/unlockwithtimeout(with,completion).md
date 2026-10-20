@@ -1,7 +1,8 @@
 # unlockWithTimeout(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func unlockWithTimeout(with params: MTRDoorLockClusterUnlockWithTimeoutParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func unlockWithTimeout(with params: MTRDoorLockClusterUnlockWithTimeoutParams) async throws
+```
+
+```objc
+- (void) unlockWithTimeoutWithParams:(MTRDoorLockClusterUnlockWithTimeoutParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

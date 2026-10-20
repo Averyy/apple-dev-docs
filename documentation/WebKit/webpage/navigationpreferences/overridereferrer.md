@@ -1,7 +1,8 @@
 # overrideReferrer
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Used to apply a custom `referer` header to all resource loads in the frame of this navigation.
 

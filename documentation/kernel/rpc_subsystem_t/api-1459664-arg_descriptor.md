@@ -1,14 +1,15 @@
 # arg_descriptor
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 struct rpc_routine_arg_descriptor arg_descriptor[1];
 ```
 

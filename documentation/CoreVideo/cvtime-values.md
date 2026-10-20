@@ -1,16 +1,17 @@
 # CVTime Values
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 Keys that represent Core Video time values.
 
 ## Topics
 
 ### Constants
-- [let kCVZeroTime: CVTime](kcvzerotime.md)
-  Zero time or duration. For example, [`CVDisplayLinkGetOutputVideoLatency(_:)`](cvdisplaylinkgetoutputvideolatency(_:).md) returns `kCVZeroTime` for zero video latency.
-- [let kCVIndefiniteTime: CVTime](kcvindefinitetime.md)
-  An unknown or indefinite time. For example, [`CVDisplayLinkGetNominalOutputVideoRefreshPeriod(_:)`](cvdisplaylinkgetnominaloutputvideorefreshperiod(_:).md) returns `kCVIndefiniteTime` if the display link specified is not valid.
+- [let kCVZeroTime: CVTime](./kcvzerotime.md)
+  Zero time or duration. For example, [`CVDisplayLinkGetOutputVideoLatency(_:)`](./cvdisplaylinkgetoutputvideolatency%28_%29.md) returns `kCVZeroTime` for zero video latency.
+- [let kCVIndefiniteTime: CVTime](./kcvindefinitetime.md)
+  An unknown or indefinite time. For example, [`CVDisplayLinkGetNominalOutputVideoRefreshPeriod(_:)`](./cvdisplaylinkgetnominaloutputvideorefreshperiod%28_%29.md) returns `kCVIndefiniteTime` if the display link specified is not valid.
 
 
 ---

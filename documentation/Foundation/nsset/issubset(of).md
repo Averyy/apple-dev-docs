@@ -1,7 +1,8 @@
 # isSubset(of:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether every object in the receiving set is also present in another given set.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether every object in the receiving set
 func isSubset(of otherSet: Set<AnyHashable>) -> Bool
 ```
 
+```objc
+- (BOOL) isSubsetOfSet:(NSSet<id> *) otherSet;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if every object in the receiving set is also present in `otherSet`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if every object in the receiving set is also present in `otherSet`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,13 +39,14 @@ Object equality is tested using isEqual:.
 
 ## See Also
 
-- [func intersects(Set<AnyHashable>) -> Bool](nsset/intersects(_:).md)
+### Comparing Sets
+- [func intersects(Set<AnyHashable>) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether at least one object in the receiving set is also present in another given set.
-- [func isEqual(to: Set<AnyHashable>) -> Bool](nsset/isequal(to:).md)
+- [func isEqual(to: Set<AnyHashable>) -> Bool](./isequal%28to%29.md)
   Compares the receiving set to another set.
-- [func value(forKey: String) -> Any](nsset/value(forkey:).md)
+- [func value(forKey: String) -> Any](./value%28forkey%29.md)
   Return a set containing the results of invoking `valueForKey:` on each of the receiving set’s members.
-- [func setValue(Any?, forKey: String)](nsset/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Invokes `setValue:forKey:` on each of the set’s members.
 
 

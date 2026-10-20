@@ -1,7 +1,8 @@
 # pow(bases:exponents:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates each single-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
 
@@ -11,7 +12,7 @@ Calculates each single-precision element in the bases vector, raised to the powe
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static func pow<T, U, V>(bases: T, exponents: U, result: inout V) where T : Acce
 
 ## See Also
 
-- [static func pow<U, V>(bases: U, exponents: V) -> [Double]](vforce/pow(bases:exponents:)-94dha.md)
+### Array-Oriented Power Functions
+- [static func pow<U, V>(bases: U, exponents: V) -> [Double]](./pow%28bases,exponents%29-94dha.md)
   Returns each double-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [static func pow<U, V>(bases: U, exponents: V) -> [Float]](vforce/pow(bases:exponents:)-3gl7v.md)
+- [static func pow<U, V>(bases: U, exponents: V) -> [Float]](./pow%28bases,exponents%29-3gl7v.md)
   Returns each single-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [static func pow<T, U, V>(bases: T, exponents: U, result: inout V)](vforce/pow(bases:exponents:result:)-4bso.md)
+- [static func pow<T, U, V>(bases: T, exponents: U, result: inout V)](./pow%28bases,exponents,result%29-4bso.md)
   Calculates each double-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [func vvpow(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvpow(_:_:_:_:).md)
+- [func vvpow(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](../vvpow%28_,_,_,_%29.md)
   Raises each element in an array to the power of the corresponding element in a second array of double-precision values.
-- [func vvpowf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvpowf(_:_:_:_:).md)
+- [func vvpowf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](../vvpowf%28_,_,_,_%29.md)
   Raises each element in an array to the power of the corresponding element in a second array of single-precision values.
 
 

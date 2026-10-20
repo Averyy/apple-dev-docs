@@ -7,7 +7,7 @@ Creates local pseudo FireWire address spaces for the device to access.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFWPseudoAddressSpace *createPseudoAddressSpace(
  FWAddress *addr,
  UInt32len, 
@@ -16,7 +16,7 @@ virtual IOFWPseudoAddressSpace *createPseudoAddressSpace(
  void *refcon);
 ```
 
-#### Return_value
+#### Return Value
 
 A valid `IOFWPseudoAddressSpace` object on success; NULL on failure.
 
@@ -30,19 +30,20 @@ A valid `IOFWPseudoAddressSpace` object on success; NULL on failure.
 
 ## See Also
 
-- [clearNodeFlags](iofirewiredevice/1810239-clearnodeflags.md)
+### Miscellaneous
+- [clearNodeFlags](./api-1810239-clearnodeflags.md)
   Resets the node's characteristics.
-- [createPhysicalAddressSpace](iofirewiredevice/1810254-createphysicaladdressspace.md)
+- [createPhysicalAddressSpace](./api-1810254-createphysicaladdressspace.md)
   Creates local physical FireWire address spaces for the device to access.
-- [getNodeFlags](iofirewiredevice/1810283-getnodeflags.md)
+- [getNodeFlags](./api-1810283-getnodeflags.md)
   Retrieves the node's characteristics.
-- [getUnitCount](iofirewiredevice/1810297-getunitcount.md)
+- [getUnitCount](./api-1810297-getunitcount.md)
   Returns number of units attached to this device.
-- [init](iofirewiredevice/1810312-init.md)
+- [init](./api-1810312-init.md)
   Initializes the nub.
-- [setMaxSpeed](iofirewiredevice/1810324-setmaxspeed.md)
+- [setMaxSpeed](./api-1810324-setmaxspeed.md)
   Sets the maximum speed for this node.
-- [setNodeFlags](iofirewiredevice/1810338-setnodeflags.md)
+- [setNodeFlags](./api-1810338-setnodeflags.md)
   Sets the node's characteristics.
 
 

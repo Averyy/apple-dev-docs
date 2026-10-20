@@ -1,7 +1,8 @@
 # skeleton
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracked body in 3D.
 
@@ -13,6 +14,10 @@ The tracked body in 3D.
 
 ```swift
 var skeleton: ARSkeleton3D { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) ARSkeleton3D * skeleton;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # withTaskCancellationHandler(operation:onCancel:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 
@@ -38,7 +39,7 @@ await withTaskCancellationHandler {
 }
 ```
 
-##### Execution Order and Semantics
+##### Execution order and semantics
 
 The `operation` closure is always invoked, even when the `withTaskCancellationHandler(operation:onCancel:)` method is called from a task that was already canceled.
 
@@ -50,7 +51,7 @@ The `operation` closure executes on the calling execution context, and doesn’t
 
 If cancellation occurs while the operation is running, the cancellation handler executes *concurrently* with the operation.
 
-##### Cancellation Handlers and Locks
+##### Cancellation handlers and locks
 
 Cancellation handlers which acquire locks must take care to avoid deadlock. The cancellation handler may be invoked while holding internal locks associated with the task or other tasks.  Other operations on the task, such as resuming a continuation, may acquire these same internal locks. Therefore, if a cancellation handler must acquire a lock, other code should not cancel tasks or resume continuations while holding that lock.
 
@@ -61,17 +62,18 @@ Cancellation handlers which acquire locks must take care to avoid deadlock. The 
 
 ## See Also
 
-- [struct CancellationError](cancellationerror.md)
+### Canceling Tasks
+- [struct CancellationError](./cancellationerror.md)
   An error that indicates a task was canceled.
-- [func cancel()](task/cancel.md)
+- [func cancel()](./task/cancel%28%29.md)
   Cancels this task.
-- [var isCancelled: Bool](task/iscancelled-swift.property.md)
+- [var isCancelled: Bool](./task/iscancelled-swift.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [static var isCancelled: Bool](task/iscancelled-swift.type.property.md)
+- [static var isCancelled: Bool](./task/iscancelled-swift.type.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [static func checkCancellation() throws](task/checkcancellation.md)
+- [static func checkCancellation() throws](./task/checkcancellation%28%29.md)
   Throws an error if the task was canceled.
-- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
+- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](./withtaskcancellationhandler%28operation,oncancel,isolation%29.md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 
 

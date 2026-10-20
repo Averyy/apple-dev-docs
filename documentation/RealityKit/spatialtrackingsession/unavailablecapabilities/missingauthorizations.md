@@ -1,7 +1,8 @@
 # missingAuthorizations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of requested ARKit authorizations that the user doesn’t approve.
 

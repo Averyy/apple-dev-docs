@@ -1,7 +1,8 @@
 # MTLTensorBufferAttachments
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that associates each plane of a tensor with a buffer and byte offset for buffer-backed tensor creation.
 
@@ -19,30 +20,34 @@ An object that associates each plane of a tensor with a buffer and byte offset f
 class MTLTensorBufferAttachments
 ```
 
+```objc
+@interface MTLTensorBufferAttachments : NSObject
+```
+
 ## Topics
 
 ### Instance Methods
-- [func buffer(for: MTLTensorPlaneType) -> (any MTLBuffer)?](mtltensorbufferattachments/buffer(for:).md)
+- [func buffer(for: MTLTensorPlaneType) -> (any MTLBuffer)?](./mtltensorbufferattachments/buffer%28for%29.md)
   Returns the buffer backing the given plane, or `nil` if none has been set.
-- [func offset(for: MTLTensorPlaneType) -> Int](mtltensorbufferattachments/offset(for:).md)
+- [func offset(for: MTLTensorPlaneType) -> Int](./mtltensorbufferattachments/offset%28for%29.md)
   Returns the byte offset into the buffer for the given plane.
-- [func reset()](mtltensorbufferattachments/reset.md)
+- [func reset()](./mtltensorbufferattachments/reset%28%29.md)
   Empties the container of all its elements.
-- [func setBuffer(any MTLBuffer, offset: Int, for: MTLTensorPlaneType)](mtltensorbufferattachments/setbuffer(_:offset:for:).md)
+- [func setBuffer(any MTLBuffer, offset: Int, for: MTLTensorPlaneType)](./mtltensorbufferattachments/setbuffer%28_,offset,for%29.md)
   Sets the buffer and byte offset to use as backing storage for the given plane.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

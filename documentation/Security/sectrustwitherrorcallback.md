@@ -1,7 +1,8 @@
 # SecTrustWithErrorCallback
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block called with the results of an asynchronous trust evaluation.
 
@@ -20,9 +21,13 @@ A block called with the results of an asynchronous trust evaluation.
 typealias SecTrustWithErrorCallback = (SecTrust, Bool, CFError?) -> Void
 ```
 
+```c
+typedef void (^)(struct __SecTrust *, _Bool, struct __CFError *) SecTrustWithErrorCallback;
+```
+
 #### Discussion
 
-Provide a block of this type as the final argument to the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](sectrustevaluateasyncwitherror(_:_:_:).md) method to receive the result of the trust evaluation.
+Provide a block of this type as the final argument to the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](./sectrustevaluateasyncwitherror%28_,_,_%29.md) method to receive the result of the trust evaluation.
 
 The block provides a pass or fail indicator and an error describing the reason for any failure. In the case of multiple certificate failures, the error contains a code representing the most serious. The localized description indicates the certificate with the most serious problem and the type of error. The underlying error contains a localized description of each certificate in the chain that had an error and all errors found with that certificate.
 

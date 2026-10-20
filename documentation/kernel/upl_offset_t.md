@@ -1,14 +1,15 @@
 # upl_offset_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t upl_offset_t;
 ```
 

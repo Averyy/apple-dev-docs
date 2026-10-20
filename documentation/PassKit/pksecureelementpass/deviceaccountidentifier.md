@@ -1,7 +1,8 @@
 # deviceAccountIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the device-specific account number.
 
@@ -19,13 +20,18 @@ The unique identifier for the device-specific account number.
 var deviceAccountIdentifier: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * deviceAccountIdentifier;
+```
+
 ## See Also
 
-- [var deviceAccountNumberSuffix: String](pksecureelementpass/deviceaccountnumbersuffix.md)
+### Getting the hardware attributes
+- [var deviceAccountNumberSuffix: String](./deviceaccountnumbersuffix.md)
   A display-ready version of the device-specific account number.
-- [var devicePassIdentifier: String?](pksecureelementpass/devicepassidentifier.md)
+- [var devicePassIdentifier: String?](./devicepassidentifier.md)
   An opaque value for the pass.
-- [var pairedTerminalIdentifier: String?](pksecureelementpass/pairedterminalidentifier.md)
+- [var pairedTerminalIdentifier: String?](./pairedterminalidentifier.md)
   The unique identifier of the paired terminal.
 
 

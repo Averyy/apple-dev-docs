@@ -1,17 +1,18 @@
 # init(rawValue:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an option with a string value.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 14.0 (renamed: VNVideoProcessor.RequestProcessingOptions)
+- iPadOS 14.0+ - Deprecated in 14.0 (renamed: VNVideoProcessor.RequestProcessingOptions)
+- Mac Catalyst 14.0+ - Deprecated in 14.0 (renamed: VNVideoProcessor.RequestProcessingOptions)
+- macOS 11.0+ - Deprecated in 11.0 (renamed: VNVideoProcessor.RequestProcessingOptions)
+- tvOS 14.0+ - Deprecated in 14.0 (renamed: VNVideoProcessor.RequestProcessingOptions)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: VNVideoProcessor.RequestProcessingOptions)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ init(rawValue: String)
 
 ## Parameters
 
-- `rawValue`: A string value that represents a [`frameCadence`](vnvideoprocessingoption/framecadence.md) or [`timeInterval`](vnvideoprocessingoption/timeinterval.md).
+- `rawValue`: A string value that represents a [`frameCadence`](./framecadence.md) or [`timeInterval`](./timeinterval.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # readAttributeTargetPositionLiftPercent100ths(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTargetPositionLiftPercent100ths(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTargetPositionLiftPercent100ths() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTargetPositionLiftPercent100thsWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # searchableObject
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object to search, responsible for performing the search operation and decorating the results.
 
@@ -17,9 +18,13 @@ The object to search, responsible for performing the search operation and decora
 weak var searchableObject: (any __UITextSearching)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) id<UITextSearching> searchableObject;
+```
+
 #### Discussion
 
-Use the methods this object implements from the [`UITextSearching`](uitextsearching-53wjq.md) protocol to search text in your app and decorate the found results.
+Use the methods this object implements from the [`UITextSearching`](../uitextsearching-53wjq.md) protocol to search text in your app and decorate the found results.
 
 
 ---

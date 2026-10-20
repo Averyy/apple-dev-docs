@@ -1,7 +1,8 @@
 # export(to:metadataURL:modelProvider:exportOptions:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces a 3D asset from the captured structure.
 
@@ -31,9 +32,10 @@ The file format of the output is Universal Scene Description (USD).
 
 ## See Also
 
-- [CapturedStructure.USDExportOptions](capturedstructure/usdexportoptions.md)
+### Generating a USDZ file
+- [CapturedStructure.USDExportOptions](./usdexportoptions.md)
   The type a captured structure uses to configure exports.
-- [CapturedStructure.ModelProvider](capturedstructure/modelprovider.md)
+- [CapturedStructure.ModelProvider](./modelprovider.md)
   The type a captured structure uses to output sophisticated 3D models.
 
 

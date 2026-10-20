@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.symmetric
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Symmetric
 
@@ -17,6 +18,10 @@ Symmetric
 
 ```swift
 case symmetric
+```
+
+```c
+MPSGraphPaddingModeSymmetric
 ```
 
 

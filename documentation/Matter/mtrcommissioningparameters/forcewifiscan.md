@@ -1,7 +1,8 @@
 # forceWiFiScan
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to force a network scan before requesting Wi-Fi credentials. The default is NO.
 
@@ -18,6 +19,10 @@ Whether to force a network scan before requesting Wi-Fi credentials. The default
 
 ```swift
 var forceWiFiScan: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL forceWiFiScan;
 ```
 
 #### Discussion

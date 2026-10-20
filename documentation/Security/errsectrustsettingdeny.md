@@ -1,7 +1,8 @@
 # errSecTrustSettingDeny
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The trust setting for this policy is set to Deny.
 
@@ -18,6 +19,10 @@ The trust setting for this policy is set to Deny.
 
 ```swift
 var errSecTrustSettingDeny: OSStatus { get }
+```
+
+```c
+errSecTrustSettingDeny
 ```
 
 

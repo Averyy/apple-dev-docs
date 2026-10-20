@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the stack view.
 
@@ -14,13 +15,18 @@ The delegate object for the stack view.
 weak var delegate: (any NSStackViewDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSStackViewDelegate> delegate;
+```
+
 #### Discussion
 
-The system calls a delegate method when resizing has caused a view to be detached from or reattached to the stack view. For more information, see [`NSStackViewDelegate`](nsstackviewdelegate.md).
+The system calls a delegate method when resizing has caused a view to be detached from or reattached to the stack view. For more information, see [`NSStackViewDelegate`](../nsstackviewdelegate.md).
 
 ## See Also
 
-- [protocol NSStackViewDelegate](nsstackviewdelegate.md)
+### Responding to Stack-Related Changes
+- [protocol NSStackViewDelegate](../nsstackviewdelegate.md)
   A set of methods you use to respond to a stack view detaching and reattaching views.
 
 

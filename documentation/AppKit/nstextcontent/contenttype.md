@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The semantic meaning for a text input area.
@@ -15,15 +16,20 @@ The semantic meaning for a text input area.
 var contentType: NSTextContentType? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSTextContentType contentType;
+```
+
 #### Discussion
 
-Use this property to give the system information about the expected semantic meaning for the content that people enter. For example, you might specify [`emailAddress`](nstextcontenttype/emailaddress.md) for a text field that people fill in to receive an email confirmation.
+Use this property to give the system information about the expected semantic meaning for the content that people enter. For example, you might specify [`emailAddress`](../nstextcontenttype/emailaddress.md) for a text field that people fill in to receive an email confirmation.
 
-For possible values you can use, see [`NSTextContentType`](nstextcontenttype.md); by default, the value of this property is `nil`.
+For possible values you can use, see [`NSTextContentType`](../nstextcontenttype.md); by default, the value of this property is `nil`.
 
 ## See Also
 
-- [struct NSTextContentType](nstextcontenttype.md)
+### Specifying content type
+- [struct NSTextContentType](../nstextcontenttype.md)
   Constants that identify the semantic meaning for a text-entry area.
 
 

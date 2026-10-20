@@ -1,7 +1,8 @@
 # ivar_getTypeEncoding(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type string of an instance variable.
 
@@ -20,19 +21,24 @@ Returns the type string of an instance variable.
 func ivar_getTypeEncoding(_ v: Ivar) -> UnsafePointer<CChar>?
 ```
 
+```c
+extern const char *ivar_getTypeEncoding(Ivar v);
+```
+
 #### Return Value
 
 A C string containing the instance variable’s type encoding.
 
 #### Discussion
 
-For possible values, see [`Objective-C Runtime Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048) > [`Type Encodings`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
+For possible values, see [Objective-C Runtime Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048) > [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 
 ## See Also
 
-- [func ivar_getName(Ivar) -> UnsafePointer<CChar>?](ivar_getname(_:).md)
+### Working with Instance Variables
+- [func ivar_getName(Ivar) -> UnsafePointer<CChar>?](./ivar_getname%28_%29.md)
   Returns the name of an instance variable.
-- [func ivar_getOffset(Ivar) -> Int](ivar_getoffset(_:).md)
+- [func ivar_getOffset(Ivar) -> Int](./ivar_getoffset%28_%29.md)
   Returns the offset of an instance variable.
 
 

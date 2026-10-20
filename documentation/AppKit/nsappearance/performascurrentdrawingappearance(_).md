@@ -1,7 +1,8 @@
 # performAsCurrentDrawingAppearance(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the appearance to be the active drawing appearance and perform the specified block.
 
@@ -14,6 +15,10 @@ Sets the appearance to be the active drawing appearance and perform the specifie
 func performAsCurrentDrawingAppearance(_ block: () -> Void)
 ```
 
+```objc
+- (void) performAsCurrentDrawingAppearance:(void (^)()) block;
+```
+
 #### Discussion
 
 This method saves and restores the previous current appearance.
@@ -24,9 +29,10 @@ This method saves and restores the previous current appearance.
 
 ## See Also
 
-- [class func currentDrawing() -> NSAppearance](nsappearance/currentdrawing.md)
+### Getting and Setting the Current Appearance
+- [class func currentDrawing() -> NSAppearance](./currentdrawing%28%29.md)
   The appearance that the system uses for color and asset resolution, and that’s active for drawing, usually from locking focus on a view.
-- [class var current: NSAppearance!](nsappearance/current.md)
+- [class var current: NSAppearance!](./current.md)
   Returns the appearance object that’s active on the current thread.
 
 

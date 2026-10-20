@@ -1,7 +1,8 @@
 # init(capacity:sizeMultiple:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

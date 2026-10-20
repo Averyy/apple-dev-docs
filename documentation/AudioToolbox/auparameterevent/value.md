@@ -1,22 +1,27 @@
 # value
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For a non-ramped event, this is the new parameter value. For a ramped event, this is the parameter value at the end of the ramp.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var value: AUValue
+```
+
+```c
+AUValue value;
 ```
 
 

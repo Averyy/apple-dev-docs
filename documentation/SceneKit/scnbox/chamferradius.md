@@ -1,23 +1,28 @@
 # chamferRadius
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of curvature for the edges and corners of the box. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var chamferRadius: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat chamferRadius;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The minimum (and default) corner radius is `0.0`, specifying square corners. Set
 
 The maximum corner radius is half the box’s smallest dimension. For example, if a box’s width and length are both `5.0` and its height is `10.0`, its maximum corner radius is `2.5`. With these dimensions, the box’s four rounded vertical edges join to form a cylinder and its vertical faces disappear. Increasing the corner radius beyond the maximum has no visible effect.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var chamferSegmentCount: Int](scnbox/chamfersegmentcount.md)
+### Adding Rounded Edges and Corners
+- [var chamferSegmentCount: Int](./chamfersegmentcount.md)
   The number of line segments used to create each rounded edge of the box. Animatable.
 
 

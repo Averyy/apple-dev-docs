@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name the system shows to represent the default domain.
 

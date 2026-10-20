@@ -1,7 +1,8 @@
 # AVCaptureDevice.LensStabilizationStatus.off
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lens stabilization isn’t specified for this photo capture.
 
@@ -17,15 +18,20 @@ Lens stabilization isn’t specified for this photo capture.
 case off
 ```
 
+```c
+AVCaptureLensStabilizationStatusOff
+```
+
 ## See Also
 
-- [AVCaptureDevice.LensStabilizationStatus.unsupported](avcapturedevice/lensstabilizationstatus/unsupported.md)
+### Lens stabilization values
+- [AVCaptureDevice.LensStabilizationStatus.unsupported](./unsupported.md)
   Lens stabilization isn’t available on the device or device configuration that captured this photo.
-- [AVCaptureDevice.LensStabilizationStatus.active](avcapturedevice/lensstabilizationstatus/active.md)
+- [AVCaptureDevice.LensStabilizationStatus.active](./active.md)
   Lens stabilization was active for the full duration of the photo capture.
-- [AVCaptureDevice.LensStabilizationStatus.outOfRange](avcapturedevice/lensstabilizationstatus/outofrange.md)
+- [AVCaptureDevice.LensStabilizationStatus.outOfRange](./outofrange.md)
   Lens stabilization was enabled for the photo capture, but device motion or capture duration exceeded the stabilization module’s correction limits.
-- [AVCaptureDevice.LensStabilizationStatus.unavailable](avcapturedevice/lensstabilizationstatus/unavailable.md)
+- [AVCaptureDevice.LensStabilizationStatus.unavailable](./unavailable.md)
   Lens stabilization was temporarily unavailable during the photo capture.
 
 

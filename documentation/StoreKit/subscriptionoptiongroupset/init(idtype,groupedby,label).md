@@ -1,7 +1,8 @@
 # init(idType:groupedBy:label:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -21,7 +22,8 @@
 
 ## See Also
 
-- [init(idType: GroupID.Type, groupedBy: (Product) -> GroupID, label: (GroupID) -> Label, marketingContent: (GroupID) -> MarketingContent)](subscriptionoptiongroupset/init(idtype:groupedby:label:marketingcontent:).md)
+### Creating subscription option group sets
+- [init(idType: GroupID.Type, groupedBy: (Product) -> GroupID, label: (GroupID) -> Label, marketingContent: (GroupID) -> MarketingContent)](./init%28idtype,groupedby,label,marketingcontent%29.md)
 
 
 ---

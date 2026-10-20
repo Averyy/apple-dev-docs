@@ -1,7 +1,8 @@
 # padded(forSizes:mode:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a padded tensor according to the specified padding sizes and mode.
 
@@ -54,9 +55,10 @@ let symmetricPadding = x.padded(forSizes: [(0, 0), (2, 2)], mode: .symmetric)
 
 ## See Also
 
-- [func padded(forSizes: [(before: Int, after: Int)], with: Float) -> MLTensor](mltensor/padded(forsizes:with:).md)
+### Padding the tensor
+- [func padded(forSizes: [(before: Int, after: Int)], with: Float) -> MLTensor](./padded%28forsizes,with%29.md)
   Returns a tensor padded with the given constant according to the specified padding sizes.
-- [MLTensor.PaddingMode](mltensor/paddingmode.md)
+- [MLTensor.PaddingMode](./paddingmode.md)
   A mode that dictates how a tensor is padded.
 
 

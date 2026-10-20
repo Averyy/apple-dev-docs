@@ -1,7 +1,8 @@
 # scaleKey
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ static let scaleKey: String
 
 ## See Also
 
-- [static let textureKey: String](physicallybasedmaterial/subsurfaceweight-swift.struct/texturekey.md)
+### Accessing material keys
+- [static let textureKey: String](./texturekey.md)
 
 
 ---

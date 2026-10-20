@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A description of an error when the GPU encounters an issue as it runs the committed command buffers.
@@ -18,6 +19,10 @@ A description of an error when the GPU encounters an issue as it runs the commit
 
 ```swift
 var error: (any Error)? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSError * error;
 ```
 
 

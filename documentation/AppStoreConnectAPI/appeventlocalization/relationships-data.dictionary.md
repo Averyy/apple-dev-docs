@@ -1,7 +1,8 @@
 # AppEventLocalization.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,18 +11,18 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppEventLocalization.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventLocalization.Relationships.AppEvent](appeventlocalization/relationships-data.dictionary/appevent-data.dictionary.md)
-- [object AppEventLocalization.Relationships.AppEventScreenshots](appeventlocalization/relationships-data.dictionary/appeventscreenshots-data.dictionary.md)
-- [object AppEventLocalization.Relationships.AppEventVideoClips](appeventlocalization/relationships-data.dictionary/appeventvideoclips-data.dictionary.md)
+- [object AppEventLocalization.Relationships.AppEvent](./relationships-data.dictionary/appevent-data.dictionary.md)
+- [object AppEventLocalization.Relationships.AppEventScreenshots](./relationships-data.dictionary/appeventscreenshots-data.dictionary.md)
+- [object AppEventLocalization.Relationships.AppEventVideoClips](./relationships-data.dictionary/appeventvideoclips-data.dictionary.md)
 ### Dictionaries
-- [object AppEventLocalization.Relationships.Placements](appeventlocalization/relationships-data.dictionary/placements-data.dictionary.md)
+- [object AppEventLocalization.Relationships.Placements](./relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
@@ -32,7 +33,8 @@ object AppEventLocalization.Relationships
 
 ## See Also
 
-- [object AppEventLocalization.Attributes](appeventlocalization/attributes-data.dictionary.md)
+### Objects
+- [object AppEventLocalization.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app event localization resource.
 
 

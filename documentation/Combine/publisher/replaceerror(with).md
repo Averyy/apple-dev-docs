@@ -1,7 +1,8 @@
 # replaceError(with:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces any errors in the stream with the provided element.
 
@@ -28,7 +29,7 @@ A publisher that replaces an error from the upstream publisher with the provided
 
 If the upstream publisher fails with an error, this publisher emits the provided element, then finishes normally.
 
-In the example below, a publisher of strings fails with a `MyError` instance, which sends a failure completion downstream. The [`replaceError(with:)`](publisher/replaceerror(with:).md) operator handles the failure by publishing the string `(replacement element)` and completing normally.
+In the example below, a publisher of strings fails with a `MyError` instance, which sends a failure completion downstream. The [`replaceError(with:)`](./replaceerror%28with%29.md) operator handles the failure by publishing the string `(replacement element)` and completing normally.
 
 ```swift
 struct MyError: Error {}
@@ -43,7 +44,7 @@ cancellable = fail
 // Prints: "(replacement element) finished".
 ```
 
-This [`replaceError(with:)`](publisher/replaceerror(with:).md) functionality is useful when you want to handle an error by sending a single replacement element and end the stream. Use [`catch(_:)`](publisher/catch(_:).md) to recover from an error and provide a replacement publisher to continue providing elements to the downstream subscriber.
+This [`replaceError(with:)`](./replaceerror%28with%29.md) functionality is useful when you want to handle an error by sending a single replacement element and end the stream. Use [`catch(_:)`](./catch%28_%29.md) to recover from an error and provide a replacement publisher to continue providing elements to the downstream subscriber.
 
 ## Parameters
 
@@ -51,21 +52,22 @@ This [`replaceError(with:)`](publisher/replaceerror(with:).md) functionality is 
 
 ## See Also
 
-- [func filter((Self.Output) -> Bool) -> Publishers.Filter<Self>](publisher/filter(_:).md)
+### Filtering elements
+- [func filter((Self.Output) -> Bool) -> Publishers.Filter<Self>](./filter%28_%29.md)
   Republishes all elements that match a provided closure.
-- [func tryFilter((Self.Output) throws -> Bool) -> Publishers.TryFilter<Self>](publisher/tryfilter(_:).md)
+- [func tryFilter((Self.Output) throws -> Bool) -> Publishers.TryFilter<Self>](./tryfilter%28_%29.md)
   Republishes all elements that match a provided error-throwing closure.
-- [func compactMap<T>((Self.Output) -> T?) -> Publishers.CompactMap<Self, T>](publisher/compactmap(_:).md)
+- [func compactMap<T>((Self.Output) -> T?) -> Publishers.CompactMap<Self, T>](./compactmap%28_%29.md)
   Calls a closure with each received element and publishes any returned optional that has a value.
-- [func tryCompactMap<T>((Self.Output) throws -> T?) -> Publishers.TryCompactMap<Self, T>](publisher/trycompactmap(_:).md)
+- [func tryCompactMap<T>((Self.Output) throws -> T?) -> Publishers.TryCompactMap<Self, T>](./trycompactmap%28_%29.md)
   Calls an error-throwing closure with each received element and publishes any returned optional that has a value.
-- [func removeDuplicates() -> Publishers.RemoveDuplicates<Self>](publisher/removeduplicates.md)
+- [func removeDuplicates() -> Publishers.RemoveDuplicates<Self>](./removeduplicates%28%29.md)
   Publishes only elements that don’t match the previous element.
-- [func removeDuplicates(by: (Self.Output, Self.Output) -> Bool) -> Publishers.RemoveDuplicates<Self>](publisher/removeduplicates(by:).md)
+- [func removeDuplicates(by: (Self.Output, Self.Output) -> Bool) -> Publishers.RemoveDuplicates<Self>](./removeduplicates%28by%29.md)
   Publishes only elements that don’t match the previous element, as evaluated by a provided closure.
-- [func tryRemoveDuplicates(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryRemoveDuplicates<Self>](publisher/tryremoveduplicates(by:).md)
+- [func tryRemoveDuplicates(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryRemoveDuplicates<Self>](./tryremoveduplicates%28by%29.md)
   Publishes only elements that don’t match the previous element, as evaluated by a provided error-throwing closure.
-- [func replaceEmpty(with: Self.Output) -> Publishers.ReplaceEmpty<Self>](publisher/replaceempty(with:).md)
+- [func replaceEmpty(with: Self.Output) -> Publishers.ReplaceEmpty<Self>](./replaceempty%28with%29.md)
   Replaces an empty stream with the provided element.
 
 

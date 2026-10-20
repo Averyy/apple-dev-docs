@@ -1,7 +1,8 @@
 # init(matrix:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new transform represented as a 4x4 matrix.
 
@@ -11,7 +12,7 @@ Creates a new transform represented as a 4x4 matrix.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ init(matrix: float4x4)
 
 #### Discussion
 
-A [`Transform`](transform.md) component can’t represent every transform that a general 4x4 matrix can . Using a 4x4 matrix during initialization might result in certain transformations, such as shear, being lost.
+A [`Transform`](../transform.md) component can’t represent every transform that a general 4x4 matrix can . Using a 4x4 matrix during initialization might result in certain transformations, such as shear, being lost.
 
 ## Parameters
 
@@ -29,11 +30,12 @@ A [`Transform`](transform.md) component can’t represent every transform that a
 
 ## See Also
 
-- [init()](transform/init.md)
+### Creating a transform
+- [init()](./init%28%29.md)
   Creates a transform with the values of the identity transform.
-- [init(scale: SIMD3<Float>, rotation: simd_quatf, translation: SIMD3<Float>)](transform/init(scale:rotation:translation:).md)
+- [init(scale: SIMD3<Float>, rotation: simd_quatf, translation: SIMD3<Float>)](./init%28scale,rotation,translation%29.md)
   Creates a new transformation using the given values.
-- [init(pitch: Float, yaw: Float, roll: Float)](transform/init(pitch:yaw:roll:).md)
+- [init(pitch: Float, yaw: Float, roll: Float)](./init%28pitch,yaw,roll%29.md)
   Creates a new transform from the specified Euler angles.
 
 

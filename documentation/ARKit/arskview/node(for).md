@@ -1,7 +1,8 @@
 # node(for:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the SpriteKit node associated with the specified AR anchor, if any.
 
@@ -15,6 +16,10 @@ Returns the SpriteKit node associated with the specified AR anchor, if any.
 func node(for anchor: ARAnchor) -> SKNode?
 ```
 
+```objc
+- (SKNode *) nodeForAnchor:(ARAnchor *) anchor;
+```
+
 #### Return Value
 
 The node whose position in the AR scene the anchor tracks, or `nil` if the anchor has no associated node or is not in the view’s AR session.
@@ -25,7 +30,8 @@ The node whose position in the AR scene the anchor tracks, or `nil` if the ancho
 
 ## See Also
 
-- [func anchor(for: SKNode) -> ARAnchor?](arskview/anchor(for:).md)
+### Mapping Content to Real-World Positions
+- [func anchor(for: SKNode) -> ARAnchor?](./anchor%28for%29.md)
   Returns the AR anchor associated with the specified SpriteKit node, if any.
 
 

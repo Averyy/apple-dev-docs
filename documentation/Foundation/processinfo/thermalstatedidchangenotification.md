@@ -1,7 +1,8 @@
 # thermalStateDidChangeNotification
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posts when the thermal state of the system changes.
 
@@ -20,15 +21,20 @@ Posts when the thermal state of the system changes.
 class let thermalStateDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSProcessInfoThermalStateDidChangeNotification;
+```
+
 #### Discussion
 
-The notification object is a [`ProcessInfo`](processinfo.md) instance.
+The notification object is a [`ProcessInfo`](../processinfo.md) instance.
 
-To receive [`thermalStateDidChangeNotification`](processinfo/thermalstatedidchangenotification.md), you must access the [`thermalState`](processinfo/thermalstate-swift.property.md) prior to registering for the notification.
+To receive [`thermalStateDidChangeNotification`](./thermalstatedidchangenotification.md), you must access the [`thermalState`](./thermalstate-swift.property.md) prior to registering for the notification.
 
 ## See Also
 
-- [static let NSProcessInfoPowerStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsprocessinfopowerstatedidchange.md)
+### Working with notifications
+- [static let NSProcessInfoPowerStateDidChange: NSNotification.Name](../nsnotification/name-swift.struct/nsprocessinfopowerstatedidchange.md)
   Posts when the power state of a device changes.
 
 

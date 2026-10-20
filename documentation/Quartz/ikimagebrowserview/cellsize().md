@@ -1,7 +1,8 @@
 # cellSize()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cell size.
 
@@ -14,13 +15,18 @@ Returns the cell size.
 func cellSize() -> NSSize
 ```
 
+```objc
+- (NSSize) cellSize;
+```
+
 #### Return Value
 
 The current size for the cells in the image browser view.
 
 ## See Also
 
-- [func setCellSize(NSSize)](ikimagebrowserview/setcellsize(_:).md)
+### Setting and Getting Cell Size
+- [func setCellSize(NSSize)](./setcellsize%28_%29.md)
   Sets the cell  size.
 
 

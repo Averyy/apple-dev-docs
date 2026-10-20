@@ -1,7 +1,8 @@
 # ModelActor
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for providing mutually-exclusive access to the attributes of a conforming model.
 
@@ -24,29 +25,30 @@ protocol ModelActor : Actor
 ## Topics
 
 ### Accessing the container and context
-- [var modelContainer: ModelContainer](modelactor/modelcontainer.md)
+- [var modelContainer: ModelContainer](./modelactor/modelcontainer.md)
   The ModelContainer for the ModelActor The container that manages the app’s schema and model storage configuration
-- [var modelContext: ModelContext](modelactor/modelcontext.md)
+- [var modelContext: ModelContext](./modelactor/modelcontext.md)
   The context that serializes any code running on the model actor.
 ### Accessing the executors
-- [var modelExecutor: any ModelExecutor](modelactor/modelexecutor.md)
+- [var modelExecutor: any ModelExecutor](./modelactor/modelexecutor.md)
   The executor that coordinates access to the model actor.
-- [var unownedExecutor: UnownedSerialExecutor](modelactor/unownedexecutor.md)
+- [var unownedExecutor: UnownedSerialExecutor](./modelactor/unownedexecutor.md)
   The optimized, unonwned reference to the model actor’s executor.
 ### Accessing specific models
-- [subscript<T>(PersistentIdentifier, as _: T.Type) -> T?](modelactor/subscript(_:as:).md)
+- [subscript<T>(PersistentIdentifier, as _: T.Type) -> T?](./modelactor/subscript%28_,as%29.md)
   Returns the model for the specified identifier, downcast to the appropriate class.
 
 ## Relationships
 
 ### Inherits From
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [macro ModelActor()](modelactor().md)
+### Model actors
+- [macro ModelActor()](./modelactor%28%29.md)
   Converts a Swift actor into a model actor by generating boilerplate code that fulfills the requirements of the associated protocol.
 
 

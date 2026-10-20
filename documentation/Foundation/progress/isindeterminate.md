@@ -1,7 +1,8 @@
 # isIndeterminate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the tracked progress is indeterminate.
 
@@ -20,13 +21,17 @@ A Boolean value that indicates whether the tracked progress is indeterminate.
 var isIndeterminate: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isIndeterminate) BOOL indeterminate;
+```
+
 #### Discussion
 
-Use [`isIndeterminate`](progress/isindeterminate.md) progress only when you’re unable to determine a reasonable value for either [`completedUnitCount`](progress/completedunitcount.md) or [`totalUnitCount`](progress/totalunitcount.md). Progress is indeterminate when the value of the [`totalUnitCount`](progress/totalunitcount.md) or [`completedUnitCount`](progress/completedunitcount.md) is less than zero or if both values are zero. When progress is indeterminate, [`fractionCompleted`](progress/fractioncompleted.md) returns `0.0` and [`isFinished`](progress/isfinished.md) returns `false`.
+Use [`isIndeterminate`](./isindeterminate.md) progress only when you’re unable to determine a reasonable value for either [`completedUnitCount`](./completedunitcount.md) or [`totalUnitCount`](./totalunitcount.md). Progress is indeterminate when the value of the [`totalUnitCount`](./totalunitcount.md) or [`completedUnitCount`](./completedunitcount.md) is less than zero or if both values are zero. When progress is indeterminate, [`fractionCompleted`](./fractioncompleted.md) returns `0.0` and [`isFinished`](./isfinished.md) returns `false`.
 
-By default, [`Progress`](progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
+By default, [`Progress`](../progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 
-The following code snippet clarifies the behavior for setting both [`totalUnitCount`](progress/totalunitcount.md) and [`completedUnitCount`](progress/completedunitcount.md) to `0`.
+The following code snippet clarifies the behavior for setting both [`totalUnitCount`](./totalunitcount.md) and [`completedUnitCount`](./completedunitcount.md) to `0`.
 
 ```swift
 let progress = Progress(totalUnitCount: 0) 
@@ -44,9 +49,10 @@ totalUnitCount: 0 completedUnitCount: 0 isIndeterminate: true fractionCompleted:
 
 ## See Also
 
-- [var fractionCompleted: Double](progress/fractioncompleted.md)
+### Observing Progress
+- [var fractionCompleted: Double](./fractioncompleted.md)
   The fraction of the overall work that the progress object completes, including work from its suboperations.
-- [var isFinished: Bool](progress/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates the progress object is complete.
 
 

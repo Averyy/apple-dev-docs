@@ -1,7 +1,8 @@
 # records
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The records for the successful operations.
 
@@ -10,13 +11,14 @@ The records for the successful operations.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.Record[] records;
 ```
 
 ## See Also
 
-- [numbersAsStrings](cloudkit.recordsresponse/numbersasstrings.md)
+### Getting Records
+- [numbersAsStrings](./numbersasstrings.md)
   A Boolean value indicating whether the numbers in fields are represented as strings.
 
 

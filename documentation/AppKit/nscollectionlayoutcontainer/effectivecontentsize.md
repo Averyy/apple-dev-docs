@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size of the container after content insets are applied.
@@ -15,9 +16,14 @@ The size of the container after content insets are applied.
 var effectiveContentSize: NSSize { get }
 ```
 
+```objc
+@property (readonly) NSSize effectiveContentSize;
+```
+
 ## See Also
 
-- [var contentSize: NSSize](nscollectionlayoutcontainer/contentsize.md)
+### Getting content size
+- [var contentSize: NSSize](./contentsize.md)
   The size of the container before content insets are applied.
 
 

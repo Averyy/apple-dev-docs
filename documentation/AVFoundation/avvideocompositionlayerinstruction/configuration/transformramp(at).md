@@ -1,7 +1,8 @@
 # transformRamp(at:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains the transform ramp that includes a specified time.
 
@@ -21,9 +22,10 @@ func transformRamp(at time: CMTime) -> AVVideoCompositionLayerInstruction.Transf
 
 ## See Also
 
-- [func setTransform(CGAffineTransform, at: CMTime)](avvideocompositionlayerinstruction/configuration/settransform(_:at:).md)
+### Configuring the transform
+- [func setTransform(CGAffineTransform, at: CMTime)](./settransform%28_,at%29.md)
   Sets the transform value at a time within the time range of the instruction.
-- [func addTransformRamp(AVVideoCompositionLayerInstruction.TransformRamp)](avvideocompositionlayerinstruction/configuration/addtransformramp(_:).md)
+- [func addTransformRamp(AVVideoCompositionLayerInstruction.TransformRamp)](./addtransformramp%28_%29.md)
   Sets a transform ramp to apply during a given time range.
 
 

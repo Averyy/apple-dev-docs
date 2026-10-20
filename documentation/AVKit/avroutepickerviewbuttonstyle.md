@@ -1,7 +1,8 @@
 # AVRoutePickerViewButtonStyle
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the button styles a route picker view supports.
 
@@ -14,33 +15,38 @@ Constants that define the button styles a route picker view supports.
 enum AVRoutePickerViewButtonStyle
 ```
 
+```c
+enum AVRoutePickerViewButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Creating a button style
-- [init?(rawValue: Int)](avroutepickerviewbuttonstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avroutepickerviewbuttonstyle/init%28rawvalue%29.md)
 ### Button styles
-- [AVRoutePickerViewButtonStyle.custom](avroutepickerviewbuttonstyle/custom.md)
+- [AVRoutePickerViewButtonStyle.custom](./avroutepickerviewbuttonstyle/custom.md)
   A custom button style.
-- [AVRoutePickerViewButtonStyle.plain](avroutepickerviewbuttonstyle/plain.md)
+- [AVRoutePickerViewButtonStyle.plain](./avroutepickerviewbuttonstyle/plain.md)
   A plain button style.
-- [AVRoutePickerViewButtonStyle.system](avroutepickerviewbuttonstyle/system.md)
+- [AVRoutePickerViewButtonStyle.system](./avroutepickerviewbuttonstyle/system.md)
   A system-defined button style.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVRoutePickerView](avroutepickerview.md)
+### Route selection
+- [class AVRoutePickerView](./avroutepickerview.md)
   A view that presents a list of nearby media receivers.
-- [protocol AVRoutePickerViewDelegate](avroutepickerviewdelegate.md)
+- [protocol AVRoutePickerViewDelegate](./avroutepickerviewdelegate.md)
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
 
 

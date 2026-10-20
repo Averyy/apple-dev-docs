@@ -1,7 +1,8 @@
 # NSDecimalNumber.RoundingMode
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify rounding behaviors.
 
@@ -20,9 +21,13 @@ These constants specify rounding behaviors.
 enum RoundingMode
 ```
 
+```c
+enum NSRoundingMode : NSUInteger;
+```
+
 #### Overview
 
-The rounding mode matters only if the [`scale()`](nsdecimalnumberbehaviors/scale().md) method sets a limit on the precision of `NSDecimalNumber` return values. It has no effect if [`scale()`](nsdecimalnumberbehaviors/scale().md) returns `NSDecimalNoScale`. Assuming that [`scale()`](nsdecimalnumberbehaviors/scale().md) returns 1, the rounding mode has the following effects on various original values:
+The rounding mode matters only if the [`scale()`](../nsdecimalnumberbehaviors/scale%28%29.md) method sets a limit on the precision of `NSDecimalNumber` return values. It has no effect if [`scale()`](../nsdecimalnumberbehaviors/scale%28%29.md) returns `NSDecimalNoScale`. Assuming that [`scale()`](../nsdecimalnumberbehaviors/scale%28%29.md) returns 1, the rounding mode has the following effects on various original values:
 
 | Original Value | NSRoundPlain | NSRoundDown & NS RoundUp | NSRoundBankers |
 | --- | --- | --- | --- |
@@ -35,53 +40,54 @@ The rounding mode matters only if the [`scale()`](nsdecimalnumberbehaviors/scale
 ## Topics
 
 ### Constants
-- [NSDecimalNumber.RoundingMode.plain](nsdecimalnumber/roundingmode/plain.md)
+- [NSDecimalNumber.RoundingMode.plain](./roundingmode/plain.md)
   Round to the closest possible return value; when caught halfway between two positive numbers, round up; when caught between two negative numbers, round down.
-- [NSDecimalNumber.RoundingMode.down](nsdecimalnumber/roundingmode/down.md)
+- [NSDecimalNumber.RoundingMode.down](./roundingmode/down.md)
   Round return values down.
-- [NSDecimalNumber.RoundingMode.up](nsdecimalnumber/roundingmode/up.md)
+- [NSDecimalNumber.RoundingMode.up](./roundingmode/up.md)
   Round return values up.
-- [NSDecimalNumber.RoundingMode.bankers](nsdecimalnumber/roundingmode/bankers.md)
+- [NSDecimalNumber.RoundingMode.bankers](./roundingmode/bankers.md)
   Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
 ### Initializers
-- [init?(rawValue: UInt)](nsdecimalnumber/roundingmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./roundingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func NSDecimalCompact(UnsafeMutablePointer<Decimal>)](nsdecimalcompact(_:).md)
+### Performing arithmetic using references
+- [func NSDecimalCompact(UnsafeMutablePointer<Decimal>)](../nsdecimalcompact%28_%29.md)
   Compacts the decimal structure for efficiency.
-- [func NSDecimalAdd(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimaladd(_:_:_:_:).md)
+- [func NSDecimalAdd(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimaladd%28_,_,_,_%29.md)
   Adds two decimal values.
-- [func NSDecimalSubtract(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalsubtract(_:_:_:_:).md)
+- [func NSDecimalSubtract(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimalsubtract%28_,_,_,_%29.md)
   Subtracts one decimal value from another.
-- [func NSDecimalDivide(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimaldivide(_:_:_:_:).md)
+- [func NSDecimalDivide(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimaldivide%28_,_,_,_%29.md)
   Divides one decimal value by another.
-- [func NSDecimalMultiply(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalmultiply(_:_:_:_:).md)
+- [func NSDecimalMultiply(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, UnsafePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimalmultiply%28_,_,_,_%29.md)
   Multiplies two decimal numbers together.
-- [func NSDecimalMultiplyByPowerOf10(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int16, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalmultiplybypowerof10(_:_:_:_:).md)
+- [func NSDecimalMultiplyByPowerOf10(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int16, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimalmultiplybypowerof10%28_,_,_,_%29.md)
   Multiplies a decimal by the specified power of 10.
-- [func NSDecimalRound(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode)](nsdecimalround(_:_:_:_:).md)
+- [func NSDecimalRound(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode)](../nsdecimalround%28_,_,_,_%29.md)
   Rounds off the decimal value.
-- [func NSDecimalPower(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalpower(_:_:_:_:).md)
+- [func NSDecimalPower(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>, Int, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimalpower%28_,_,_,_%29.md)
   Raises the decimal value to the specified power.
-- [func NSDecimalNormalize(UnsafeMutablePointer<Decimal>, UnsafeMutablePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](nsdecimalnormalize(_:_:_:).md)
+- [func NSDecimalNormalize(UnsafeMutablePointer<Decimal>, UnsafeMutablePointer<Decimal>, NSDecimalNumber.RoundingMode) -> NSDecimalNumber.CalculationError](../nsdecimalnormalize%28_,_,_%29.md)
   Normalizes the internal format of two decimal numbers to simplify later operations.
-- [typealias RoundingMode](decimal/roundingmode.md)
+- [typealias RoundingMode](../decimal/roundingmode.md)
   An alias for an enumeration that specifies possible rounding modes.
-- [typealias CalculationError](decimal/calculationerror.md)
+- [typealias CalculationError](../decimal/calculationerror.md)
   An alias for a type that specifies possible calculation errors.
-- [NSDecimalNumber.CalculationError](nsdecimalnumber/calculationerror.md)
-  Calculation error constants used to describe an error in [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](nsdecimalnumberbehaviors/exceptionduringoperation(_:error:leftoperand:rightoperand:).md).
+- [NSDecimalNumber.CalculationError](./calculationerror.md)
+  Calculation error constants used to describe an error in [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](../nsdecimalnumberbehaviors/exceptionduringoperation%28_,error,leftoperand,rightoperand%29.md).
 
 
 ---

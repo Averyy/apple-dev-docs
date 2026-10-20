@@ -1,7 +1,8 @@
 # load()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Invoked whenever a class or category is added to the Objective-C runtime; implement this method to perform class-specific behavior upon loading.
 
@@ -20,9 +21,13 @@ Invoked whenever a class or category is added to the Objective-C runtime; implem
 class func load()
 ```
 
+```objc
++ (void) load;
+```
+
 #### Discussion
 
-The [`load()`](nsobject-swift.class/load().md) message is sent to classes and categories that are both dynamically loaded and statically linked, but only if the newly loaded class or category implements a method that can respond.
+The [`load()`](./load%28%29.md) message is sent to classes and categories that are both dynamically loaded and statically linked, but only if the newly loaded class or category implements a method that can respond.
 
 The order of initialization is as follows:
 
@@ -36,13 +41,14 @@ In addition:
 - A class’s `+load` method is called after all of its superclasses’ `+load` methods.
 - A category `+load` method is called after the class’s own `+load` method.
 
-In a custom implementation of [`load()`](nsobject-swift.class/load().md) you can therefore safely message other unrelated classes from the same image, but any [`load()`](nsobject-swift.class/load().md) methods implemented by those classes may not have run yet.
+In a custom implementation of [`load()`](./load%28%29.md) you can therefore safely message other unrelated classes from the same image, but any [`load()`](./load%28%29.md) methods implemented by those classes may not have run yet.
 
 > ❗ **Important**:  Custom implementations of the `load` method for Swift classes bridged to Objective-C are not called automatically.
 
 ## See Also
 
-- [class func initialize()](nsobject-swift.class/initialize.md)
+### Initializing a Class
+- [class func initialize()](./initialize%28%29.md)
   Initializes the class before it receives its first message.
 
 

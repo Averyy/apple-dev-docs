@@ -1,17 +1,18 @@
 # SCPreferencesContext
 
 **Framework**: System Configuration  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure containing user-specified data and callbacks for accessing system configuration preferences.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,35 +20,40 @@ A structure containing user-specified data and callbacks for accessing system co
 struct SCPreferencesContext
 ```
 
+```c
+typedef struct { ... } SCPreferencesContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](scpreferencescontext/init.md)
+- [init()](./scpreferencescontext/init%28%29.md)
   Creates a preferences context.
-- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?, release: ((UnsafeRawPointer) -> Void)?, copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?)](scpreferencescontext/init(version:info:retain:release:copydescription:).md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?, release: ((UnsafeRawPointer) -> Void)?, copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?)](./scpreferencescontext/init%28version,info,retain,release,copydescription%29.md)
   Creates a preferences context with the specified raw values.
 ### Instance Properties
-- [var copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?](scpreferencescontext/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer) -> Unmanaged<CFString>)?](./scpreferencescontext/copydescription.md)
   The callback used to provide a description of the `info` field.
-- [var info: UnsafeMutableRawPointer?](scpreferencescontext/info.md)
+- [var info: UnsafeMutableRawPointer?](./scpreferencescontext/info.md)
   A C pointer to a user-specified block of data.
-- [var release: ((UnsafeRawPointer) -> Void)?](scpreferencescontext/release.md)
+- [var release: ((UnsafeRawPointer) -> Void)?](./scpreferencescontext/release.md)
   The calllback used to remove a retain previously added for the `info` field. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The value may be `NULL`.
-- [var retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?](scpreferencescontext/retain.md)
+- [var retain: ((UnsafeRawPointer) -> UnsafeRawPointer)?](./scpreferencescontext/retain.md)
   The callback used to add a retain for the `info` field. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The value may be `NULL`.
-- [var version: CFIndex](scpreferencescontext/version.md)
-  The version number of the structure type being passed in as a parameter to [`SCPreferencesSetCallback(_:_:_:)`](scpreferencessetcallback(_:_:_:).md). This structure is version `0`.
+- [var version: CFIndex](./scpreferencescontext/version.md)
+  The version number of the structure type being passed in as a parameter to [`SCPreferencesSetCallback(_:_:_:)`](./scpreferencessetcallback%28_,_,_%29.md). This structure is version `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [class SCPreferences](scpreferences.md)
+### Data Types
+- [class SCPreferences](./scpreferences.md)
   The handle to an open preferences session for accessing system configuration preferences.
-- [typealias SCPreferencesCallBack](scpreferencescallback.md)
+- [typealias SCPreferencesCallBack](./scpreferencescallback.md)
   Type of the callback function used when the preferences have been updated or applied.
 
 

@@ -1,7 +1,8 @@
 # AVAudioSessionSilenceSecondaryAudioHintTypeKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user info key that you use to retrieve the silence secondary audio hint type.
 
@@ -19,9 +20,13 @@ A user info key that you use to retrieve the silence secondary audio hint type.
 let AVAudioSessionSilenceSecondaryAudioHintTypeKey: String
 ```
 
+```c
+extern NSString * const AVAudioSessionSilenceSecondaryAudioHintTypeKey;
+```
+
 #### Discussion
 
-The associated value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) representing the silence secondary audio hint type. See [`AVAudioSession.SilenceSecondaryAudioHintType`](avaudiosession/silencesecondaryaudiohinttype.md) for supported values.
+The associated value is an [`NSNumber`](../Foundation/nsnumber.md) representing the silence secondary audio hint type. See [`AVAudioSession.SilenceSecondaryAudioHintType`](./avaudiosession/silencesecondaryaudiohinttype.md) for supported values.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(buffer:offset:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -17,10 +18,15 @@
 init(buffer: any MTLBuffer, offset: Int, descriptor: MPSVectorDescriptor)
 ```
 
+```objc
+- (instancetype) initWithBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset descriptor:(MPSVectorDescriptor *) descriptor;
+```
+
 ## See Also
 
-- [init(buffer: any MTLBuffer, descriptor: MPSVectorDescriptor)](mpsvector/init(buffer:descriptor:).md)
-- [init(device: any MTLDevice, descriptor: MPSVectorDescriptor)](mpsvector/init(device:descriptor:).md)
+### Initializers
+- [init(buffer: any MTLBuffer, descriptor: MPSVectorDescriptor)](./init%28buffer,descriptor%29.md)
+- [init(device: any MTLDevice, descriptor: MPSVectorDescriptor)](./init%28device,descriptor%29.md)
 
 
 ---

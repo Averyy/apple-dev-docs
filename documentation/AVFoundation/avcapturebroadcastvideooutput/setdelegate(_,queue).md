@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver’s delegate and the dispatch queue on which the delegate will be called.
 
@@ -18,21 +19,27 @@ Sets the receiver’s delegate and the dispatch queue on which the delegate will
 func setDelegate(_ delegate: (any AVCaptureBroadcastVideoOutputDelegate)?, queue delegateCallbackQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVCaptureBroadcastVideoOutputDelegate>) delegate queue:(dispatch_queue_t) delegateCallbackQueue;
+```
+
 ## Parameters
 
-- `delegate`: An object conforming to the [`AVCaptureBroadcastVideoOutputDelegate`](avcapturebroadcastvideooutputdelegate.md) protocol that will receive broadcast video output notifications.
-- `delegateCallbackQueue`: A dispatch queue on which all [`AVCaptureBroadcastVideoOutputDelegate`](avcapturebroadcastvideooutputdelegate.md) methods will be called.
+- `delegate`: An object conforming to the [`AVCaptureBroadcastVideoOutputDelegate`](../avcapturebroadcastvideooutputdelegate.md) protocol that will receive broadcast video output notifications.
+- `delegateCallbackQueue`: A dispatch queue on which all [`AVCaptureBroadcastVideoOutputDelegate`](../avcapturebroadcastvideooutputdelegate.md) methods will be called.
 
 ## See Also
 
-- [var delegate: (any AVCaptureBroadcastVideoOutputDelegate)?](avcapturebroadcastvideooutput/delegate.md)
+### Related Documentation
+- [var delegate: (any AVCaptureBroadcastVideoOutputDelegate)?](./delegate.md)
   The receiver’s delegate.
-- [protocol AVCaptureBroadcastVideoOutputDelegate](avcapturebroadcastvideooutputdelegate.md)
+- [protocol AVCaptureBroadcastVideoOutputDelegate](../avcapturebroadcastvideooutputdelegate.md)
   Protocol for receiving broadcast video output events and data.
-- [var delegate: (any AVCaptureBroadcastVideoOutputDelegate)?](avcapturebroadcastvideooutput/delegate.md)
+### Managing the Output
+- [var delegate: (any AVCaptureBroadcastVideoOutputDelegate)?](./delegate.md)
   The receiver’s delegate.
-- [var delegateCallbackQueue: dispatch_queue_t?](avcapturebroadcastvideooutput/delegatecallbackqueue.md)
-  The dispatch queue on which all [`AVCaptureBroadcastVideoOutputDelegate`](avcapturebroadcastvideooutputdelegate.md) methods will be called.
+- [var delegateCallbackQueue: dispatch_queue_t?](./delegatecallbackqueue.md)
+  The dispatch queue on which all [`AVCaptureBroadcastVideoOutputDelegate`](../avcapturebroadcastvideooutputdelegate.md) methods will be called.
 
 
 ---

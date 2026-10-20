@@ -1,6 +1,7 @@
 # Xcode 13.2 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,7 +17,9 @@ Xcode 13.2 includes SDKs for iOS 15.2, iPadOS 15.2, tvOS 15.2, watchOS 8.3, and 
 
 ###### Known Issues
 
-- If you’re using Swift packages either standalone or as dependencies in an Xcode project or workspace, the Mac App Store version of Xcode fails during package resolution with the error “Internal error: missingPackageDescriptionModule.” (86435800) **Workaround**: Download Xcode 13.2 directly from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=Xcode%2013.2).
+- If you’re using Swift packages either standalone or as dependencies in an Xcode project or workspace, the Mac App Store version of Xcode fails during package resolution with the error “Internal error: missingPackageDescriptionModule.” (86435800)
+
+  **Workaround**: Download Xcode 13.2 directly from the [Apple Developer website](https://developer.apple.com/download/all/?q=Xcode%2013.2).
 
 ###### New Features
 
@@ -26,19 +29,27 @@ Xcode 13.2 includes SDKs for iOS 15.2, iPadOS 15.2, tvOS 15.2, watchOS 8.3, and 
 
 ###### Known Issues
 
-- Apps built with Xcode 13 or Xcode 13.1 that make use of Swift Concurrency features (such as `async`/`await`), deploy to iOS prior to 15, tvOS prior to 15, or watchOS prior to 8, and have bitcode enabled may crash at launch with an error reporting that the `libswift_Concurrency.dylib` library was not loaded. (86349088) **Workaround**: Add `-Wl,-weak-lswift_Concurrency -Wl,-rpath,/usr/lib/swift` to Other Linker Flags in the app’s build settings.
+- Apps built with Xcode 13 or Xcode 13.1 that make use of Swift Concurrency features (such as `async`/`await`), deploy to iOS prior to 15, tvOS prior to 15, or watchOS prior to 8, and have bitcode enabled may crash at launch with an error reporting that the `libswift_Concurrency.dylib` library was not loaded. (86349088)
+
+  **Workaround**: Add `-Wl,-weak-lswift_Concurrency -Wl,-rpath,/usr/lib/swift` to Other Linker Flags in the app’s build settings.
 
 ##### Build System
 
 ###### New Features
 
-- The build system and Swift compiler have a new mode that better utilizes available cores, resulting in faster builds for Swift projects. The mode is opt-in, and you can enable it globally with the following user default: ```shell
-defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
-``` Please report any issues with the new build system mode through Feedback Assistant. (84467780)
+- The build system and Swift compiler have a new mode that better utilizes available cores, resulting in faster builds for Swift projects. The mode is opt-in, and you can enable it globally with the following user default:
+
+  ```shell
+  defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
+  ```
+
+  Please report any issues with the new build system mode through Feedback Assistant. (84467780)
 
 ###### Known Issues
 
-- Xcode SwiftUI Previews may occasionally fail with an error message about a modified `.h` file, such as “file `Header.h` has been modified since the module file `Module.pcm` was built: `mtime` changed.” (85938686) **Workaround**: To resolve the issue, delete the Clang module cache by running the following command in Terminal: `rm -rf "$TMPDIR/../C/clang/ModuleCache"`. Then try to preview the file again.
+- Xcode SwiftUI Previews may occasionally fail with an error message about a modified `.h` file, such as “file `Header.h` has been modified since the module file `Module.pcm` was built: `mtime` changed.” (85938686)
+
+  **Workaround**: To resolve the issue, delete the Clang module cache by running the following command in Terminal: `rm -rf "$TMPDIR/../C/clang/ModuleCache"`. Then try to preview the file again.
 - If an input to a build task is missing, the build system emits an error and cancels the build; however, it still reports a successful build. (86028889)
 
 ##### Devices
@@ -99,9 +110,15 @@ defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
 
 ###### Resolved Issues
 
-- Resolved an issue that prevented iPhone mini simulators from launching in Virtual Machines that don’t support Metal pass-through. (83663966) (FB9663296) *Note*: This fix may increase CPU use and impact overall performance when running on some hardware or in a virtual machine. If necessary you can enable higher performance by reducing quality using the following: ```shell
-defaults write com.apple.CoreSimulator FramebufferServerUseLowQualityScaling 1
-``` This mode isn’t suitable for taking screenshots, recording videos, or comparing images.
+- Resolved an issue that prevented iPhone mini simulators from launching in Virtual Machines that don’t support Metal pass-through. (83663966) (FB9663296)
+
+  *Note*: This fix may increase CPU use and impact overall performance when running on some hardware or in a virtual machine. If necessary you can enable higher performance by reducing quality using the following:
+
+  ```shell
+  defaults write com.apple.CoreSimulator FramebufferServerUseLowQualityScaling 1
+  ```
+
+  This mode isn’t suitable for taking screenshots, recording videos, or comparing images.
 
 ###### Known Issues
 
@@ -111,7 +128,9 @@ defaults write com.apple.CoreSimulator FramebufferServerUseLowQualityScaling 1
 
 ###### Known Issues
 
-- Selecting “Open in Code Review” from “Show Last Change For Line” may sometimes open an editor that never loads. (78592315) **Workaround**: Disable and reenable Code Review mode.
+- Selecting “Open in Code Review” from “Show Last Change For Line” may sometimes open an editor that never loads. (78592315)
+
+  **Workaround**: Disable and reenable Code Review mode.
 
 ##### Source Editor
 
@@ -119,7 +138,7 @@ defaults write com.apple.CoreSimulator FramebufferServerUseLowQualityScaling 1
 
 - Fixed an issue where a project using a CocoaPods installation without a “Debug” configuration set up could have a mismatch between building and semantic functionality in the editor, leading to problems like the editor showing “live issues” that don’t exist when building. (84502615) (FB9717206)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
@@ -141,7 +160,9 @@ defaults write com.apple.CoreSimulator FramebufferServerUseLowQualityScaling 1
 
 ###### Known Issues
 
-- Applications linking to RealityKit with iOS 15 or macOS 12 Monterey SDKs fail to launch in previous operating systems. (79584511) **Workaround**: Add `OTHER_LD_FLAGS = -weak_framework RealityFoundation` to your Xcode project settings to allow running RealityKit apps in older operating systems.
+- Applications linking to RealityKit with iOS 15 or macOS 12 Monterey SDKs fail to launch in previous operating systems. (79584511)
+
+  **Workaround**: Add `OTHER_LD_FLAGS = -weak_framework RealityFoundation` to your Xcode project settings to allow running RealityKit apps in older operating systems.
 - Apps that use Swift Concurrency and are built for operating systems prior to macOS 10.15, iOS 13, tvOS 13, or watchOS 6 fail to launch on those earlier operating systems. (86419499) (FB9807625)
 
 ##### Swift Packages
@@ -172,23 +193,26 @@ defaults write com.apple.CoreSimulator FramebufferServerUseLowQualityScaling 1
 
 ###### Known Issues
 
-- When onboarding new products to Xcode Cloud, Xcode doesn’t include a Start Condition, causing the onboarding to fail. (84641030) **Workaround**: During onboarding, manually add a Start Condition to the default workflow.
+- When onboarding new products to Xcode Cloud, Xcode doesn’t include a Start Condition, causing the onboarding to fail. (84641030)
+
+  **Workaround**: During onboarding, manually add a Start Condition to the default workflow.
 
 ## See Also
 
-- [Xcode 13.4.1 Release Notes](xcode-13_4_1-release-notes.md)
+### Xcode 13
+- [Xcode 13.4.1 Release Notes](./xcode-13_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.4 Release Notes](xcode-13_4-release-notes.md)
+- [Xcode 13.4 Release Notes](./xcode-13_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.3.1 Release Notes](xcode-13_3_1-release-notes.md)
+- [Xcode 13.3.1 Release Notes](./xcode-13_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.3 Release Notes](xcode-13_3-release-notes.md)
+- [Xcode 13.3 Release Notes](./xcode-13_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.2.1 Release Notes](xcode-13_2_1-release-notes.md)
+- [Xcode 13.2.1 Release Notes](./xcode-13_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.1 Release Notes](xcode-13_1-release-notes.md)
+- [Xcode 13.1 Release Notes](./xcode-13_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13 Release Notes](xcode-13-release-notes.md)
+- [Xcode 13 Release Notes](./xcode-13-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

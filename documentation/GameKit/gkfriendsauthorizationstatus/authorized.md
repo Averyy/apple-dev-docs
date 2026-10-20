@@ -1,7 +1,8 @@
 # GKFriendsAuthorizationStatus.authorized
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player authorized your game to access their list of friends.
 
@@ -20,21 +21,26 @@ The player authorized your game to access their list of friends.
 case authorized
 ```
 
+```c
+GKFriendsAuthorizationStatusAuthorized
+```
+
 ## Mentions
 
-- [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
+- [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
 #### Discussion
 
-If the [`loadFriendsAuthorizationStatus(_:)`](gklocalplayer/loadfriendsauthorizationstatus(_:).md) method returns `GKFriendsAuthorizationStatus.authorized`, the [`loadFriends(identifiedBy:completionHandler:)`](gklocalplayer/loadfriends(identifiedby:completionhandler:).md) method passes the friends list to the completion handler.
+If the [`loadFriendsAuthorizationStatus(_:)`](../gklocalplayer/loadfriendsauthorizationstatus%28_%29.md) method returns `GKFriendsAuthorizationStatus.authorized`, the [`loadFriends(identifiedBy:completionHandler:)`](../gklocalplayer/loadfriends%28identifiedby,completionhandler%29.md) method passes the friends list to the completion handler.
 
 ## See Also
 
-- [GKFriendsAuthorizationStatus.denied](gkfriendsauthorizationstatus/denied.md)
+### Authorization Statuses
+- [GKFriendsAuthorizationStatus.denied](./denied.md)
   Access to the player’s friends’ data denied.
-- [GKFriendsAuthorizationStatus.notDetermined](gkfriendsauthorizationstatus/notdetermined.md)
+- [GKFriendsAuthorizationStatus.notDetermined](./notdetermined.md)
   The player hasn’t choosen whether your game may access their friends list.
-- [GKFriendsAuthorizationStatus.restricted](gkfriendsauthorizationstatus/restricted.md)
+- [GKFriendsAuthorizationStatus.restricted](./restricted.md)
   Access to the player’s list of friends restricted.
 
 

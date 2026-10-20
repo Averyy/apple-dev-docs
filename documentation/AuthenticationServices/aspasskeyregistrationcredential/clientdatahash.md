@@ -1,7 +1,8 @@
 # clientDataHash
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hash of the client data for this credential.
 
@@ -18,13 +19,18 @@ A hash of the client data for this credential.
 var clientDataHash: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * clientDataHash;
+```
+
 ## See Also
 
-- [var attestationObject: Data](aspasskeyregistrationcredential/attestationobject.md)
+### Accessing credential information
+- [var attestationObject: Data](./attestationobject.md)
   The attestation object for this passkey.
-- [var credentialID: Data](aspasskeyregistrationcredential/credentialid.md)
+- [var credentialID: Data](./credentialid.md)
   The identifier for this credential.
-- [var relyingParty: String](aspasskeyregistrationcredential/relyingparty.md)
+- [var relyingParty: String](./relyingparty.md)
   The relying party associated with this passkey.
 
 

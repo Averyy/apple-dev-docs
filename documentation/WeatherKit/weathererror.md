@@ -1,7 +1,8 @@
 # WeatherError
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error WeatherKit returns.
 
@@ -23,29 +24,29 @@ enum WeatherError
 ## Topics
 
 ### Getting the error type
-- [WeatherError.permissionDenied](weathererror/permissiondenied.md)
+- [WeatherError.permissionDenied](./weathererror/permissiondenied.md)
   An error indicating permission denied.
-- [WeatherError.unknown](weathererror/unknown.md)
+- [WeatherError.unknown](./weathererror/unknown.md)
   An unknown error.
 ### Getting the error properties
-- [var errorDescription: String?](weathererror/errordescription.md)
+- [var errorDescription: String?](./weathererror/errordescription.md)
   A localized message describing what error occurred.
-- [var failureReason: String?](weathererror/failurereason.md)
+- [var failureReason: String?](./weathererror/failurereason.md)
   A localized message describing the reason for the failure.
-- [var helpAnchor: String?](weathererror/helpanchor.md)
+- [var helpAnchor: String?](./weathererror/helpanchor.md)
   A localized message providing text if the user requests help.
-- [var recoverySuggestion: String?](weathererror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./weathererror/recoverysuggestion.md)
   A localized message describing how to recover from the failure.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

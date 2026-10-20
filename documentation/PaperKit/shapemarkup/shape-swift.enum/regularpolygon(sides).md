@@ -1,7 +1,8 @@
 # regularPolygon(sides:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A regular polygon with equal sides and angles.
 

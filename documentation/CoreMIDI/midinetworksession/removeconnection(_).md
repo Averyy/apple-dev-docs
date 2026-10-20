@@ -1,7 +1,8 @@
 # removeConnection(_:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a connection from this session.
 
@@ -18,9 +19,13 @@ Removes a connection from this session.
 func removeConnection(_ connection: MIDINetworkConnection) -> Bool
 ```
 
+```objc
+- (BOOL) removeConnection:(MIDINetworkConnection *) connection;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the session successfully removed the connection, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the session successfully removed the connection, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -28,9 +33,10 @@ func removeConnection(_ connection: MIDINetworkConnection) -> Bool
 
 ## See Also
 
-- [func connections() -> Set<MIDINetworkConnection>](midinetworksession/connections.md)
+### Managing Connections
+- [func connections() -> Set<MIDINetworkConnection>](./connections%28%29.md)
   Returns the session’s set of MIDI network connections.
-- [func addConnection(MIDINetworkConnection) -> Bool](midinetworksession/addconnection(_:).md)
+- [func addConnection(MIDINetworkConnection) -> Bool](./addconnection%28_%29.md)
   Adds a new connection to this session.
 
 

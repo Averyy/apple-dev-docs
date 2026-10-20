@@ -1,14 +1,15 @@
 # strbufcpy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 const char * strbufcpy(char *dst, size_t dstsz, const char *src, size_t srcsz);
 ```
 

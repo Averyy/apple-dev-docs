@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The storage mode, CPU cache mode, and hazard tracking mode of the resource.
@@ -20,23 +21,28 @@ The storage mode, CPU cache mode, and hazard tracking mode of the resource.
 var resourceOptions: MTLResourceOptions { get }
 ```
 
+```objc
+@property (readonly) MTLResourceOptions resourceOptions;
+```
+
 #### Discussion
 
-The value of this property aggregates the values of [`storageMode`](mtlresource/storagemode.md), [`cpuCacheMode`](mtlresource/cpucachemode.md), and [`hazardTrackingMode`](mtlresource/hazardtrackingmode.md).
+The value of this property aggregates the values of [`storageMode`](./storagemode.md), [`cpuCacheMode`](./cpucachemode.md), and [`hazardTrackingMode`](./hazardtrackingmode.md).
 
 ## See Also
 
-- [var cpuCacheMode: MTLCPUCacheMode](mtlresource/cpucachemode.md)
+### Reading memory and storage properties
+- [var cpuCacheMode: MTLCPUCacheMode](./cpucachemode.md)
   The CPU cache mode that defines the CPU mapping of the resource.
-- [var storageMode: MTLStorageMode](mtlresource/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The location and access permissions of the resource.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlresource/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   A mode that determines whether Metal tracks and synchronizes resource access.
-- [enum MTLCPUCacheMode](mtlcpucachemode.md)
+- [enum MTLCPUCacheMode](../mtlcpucachemode.md)
   Options for the CPU cache mode that define the CPU mapping of the resource.
-- [enum MTLStorageMode](mtlstoragemode.md)
+- [enum MTLStorageMode](../mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
-- [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
+- [enum MTLHazardTrackingMode](../mtlhazardtrackingmode.md)
   Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 

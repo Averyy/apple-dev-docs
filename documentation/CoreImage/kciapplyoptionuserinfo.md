@@ -1,7 +1,8 @@
 # kCIApplyOptionUserInfo
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Information needed by a callback. The associated value is an object that Core Image will pass to any callbacks invoked for that filter.
 
@@ -14,13 +15,18 @@ Information needed by a callback. The associated value is an object that Core Im
 let kCIApplyOptionUserInfo: String
 ```
 
+```c
+extern NSString * const kCIApplyOptionUserInfo;
+```
+
 ## See Also
 
-- [let kCIApplyOptionExtent: String](kciapplyoptionextent.md)
+### Constants
+- [let kCIApplyOptionExtent: String](./kciapplyoptionextent.md)
   The extent of the image.
-- [let kCIApplyOptionDefinition: String](kciapplyoptiondefinition.md)
+- [let kCIApplyOptionDefinition: String](./kciapplyoptiondefinition.md)
   The domain of definition (DOD) of the produced image.
-- [let kCIApplyOptionColorSpace: String](kciapplyoptioncolorspace.md)
+- [let kCIApplyOptionColorSpace: String](./kciapplyoptioncolorspace.md)
   The color space of the produced image.
 
 

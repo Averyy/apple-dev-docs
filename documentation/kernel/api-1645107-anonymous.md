@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOScaleCanBorderInsetOnly](1645107-anonymous/kioscalecanborderinsetonly.md)
-- [kIOScaleCanDownSamplePixels](1645107-anonymous/kioscalecandownsamplepixels.md)
-- [kIOScaleCanRotate](1645107-anonymous/kioscalecanrotate.md)
-- [kIOScaleCanScaleInterlaced](1645107-anonymous/kioscalecanscaleinterlaced.md)
-- [kIOScaleCanSupportInset](1645107-anonymous/kioscalecansupportinset.md)
-- [kIOScaleCanUpSamplePixels](1645107-anonymous/kioscalecanupsamplepixels.md)
-- [kIOScaleStretchOnly](1645107-anonymous/kioscalestretchonly.md)
+- [kIOScaleCanBorderInsetOnly](./api-1645107-anonymous/kioscalecanborderinsetonly.md)
+- [kIOScaleCanDownSamplePixels](./api-1645107-anonymous/kioscalecandownsamplepixels.md)
+- [kIOScaleCanRotate](./api-1645107-anonymous/kioscalecanrotate.md)
+- [kIOScaleCanScaleInterlaced](./api-1645107-anonymous/kioscalecanscaleinterlaced.md)
+- [kIOScaleCanSupportInset](./api-1645107-anonymous/kioscalecansupportinset.md)
+- [kIOScaleCanUpSamplePixels](./api-1645107-anonymous/kioscalecanupsamplepixels.md)
+- [kIOScaleStretchOnly](./api-1645107-anonymous/kioscalestretchonly.md)
 
 
 ---

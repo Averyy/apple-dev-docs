@@ -1,7 +1,8 @@
 # sample
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieves the sensor-specific data sample contained in this response.
 

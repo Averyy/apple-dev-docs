@@ -1,7 +1,8 @@
 # expirationTimestamp
 
 **Framework**: VisionEntitlementServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 26.0+

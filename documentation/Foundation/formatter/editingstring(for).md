@@ -1,9 +1,10 @@
 # editingString(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-The default implementation of this method invokes [`string(for:)`](formatter/string(for:).md).
+The default implementation of this method invokes [`string(for:)`](./string%28for%29.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,13 +21,17 @@ The default implementation of this method invokes [`string(for:)`](formatter/str
 func editingString(for obj: Any) -> String?
 ```
 
+```objc
+- (NSString *) editingStringForObjectValue:(id) obj;
+```
+
 #### Return Value
 
 An `NSString` object that is used for editing the textual representation of `anObject`.
 
 #### Discussion
 
-When implementing a subclass, override this method only when the string that users see and the string that they edit are different. In your implementation, return an `NSString` object that is used for editing, following the logic recommended for implementing [`string(for:)`](formatter/string(for:).md). As an example, you would implement this method if you want the dollar signs in displayed strings removed for editing.
+When implementing a subclass, override this method only when the string that users see and the string that they edit are different. In your implementation, return an `NSString` object that is used for editing, following the logic recommended for implementing [`string(for:)`](./string%28for%29.md). As an example, you would implement this method if you want the dollar signs in displayed strings removed for editing.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ When implementing a subclass, override this method only when the string that use
 
 ## See Also
 
-- [func string(for: Any?) -> String?](formatter/string(for:).md)
+### Getting Textual Representations of Object Values
+- [func string(for: Any?) -> String?](./string%28for%29.md)
   The default implementation of this method raises an exception.
-- [func attributedString(for: Any, withDefaultAttributes: [NSAttributedString.Key : Any]?) -> NSAttributedString?](formatter/attributedstring(for:withdefaultattributes:).md)
+- [func attributedString(for: Any, withDefaultAttributes: [NSAttributedString.Key : Any]?) -> NSAttributedString?](./attributedstring%28for,withdefaultattributes%29.md)
   The default implementation returns `nil` to indicate that the formatter object does not provide an attributed string.
 
 

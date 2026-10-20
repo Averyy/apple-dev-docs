@@ -1,7 +1,8 @@
 # IconRef
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 16.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias IconRef = OpaquePointer
+```
+
+```c
+typedef struct OpaqueIconRef *IconRef;
 ```
 
 

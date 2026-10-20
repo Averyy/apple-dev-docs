@@ -1,7 +1,8 @@
 # overUnder
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that frames are packed over under.
 

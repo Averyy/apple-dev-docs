@@ -1,7 +1,8 @@
 # originalTransactionIdentifier
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the original transaction.
 
@@ -20,15 +21,20 @@ The identifier of the original transaction.
 var originalTransactionIdentifier: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger originalTransactionIdentifier;
+```
+
 #### Discussion
 
-For subscription renewals, or if you restore a purchase, the [`originalTransactionIdentifier`](sktesttransaction/originaltransactionidentifier.md) is the original transaction for that subscription or Apple In-App Purchase.
+For subscription renewals, or if you restore a purchase, the [`originalTransactionIdentifier`](./originaltransactionidentifier.md) is the original transaction for that subscription or Apple In-App Purchase.
 
 ## See Also
 
-- [var identifier: Int](sktesttransaction/identifier.md)
+### Identifying Transactions and Products
+- [var identifier: Int](./identifier.md)
   The identifier of the transaction in the testing environment.
-- [var productIdentifier: String](sktesttransaction/productidentifier.md)
+- [var productIdentifier: String](./productidentifier.md)
   An identifier that uniquely represents a product, which you provide in the StoreKit configuration file.
 
 

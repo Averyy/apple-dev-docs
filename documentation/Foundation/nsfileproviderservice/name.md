@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The File Provider service’s name.
 
@@ -18,9 +19,14 @@ The File Provider service’s name.
 var name: NSFileProviderServiceName { get }
 ```
 
+```objc
+@property (copy, readonly) NSFileProviderServiceName name;
+```
+
 ## See Also
 
-- [func getFileProviderConnection(completionHandler: (NSXPCConnection?, (any Error)?) -> Void)](nsfileproviderservice/getfileproviderconnection(completionhandler:).md)
+### Accessing the Service
+- [func getFileProviderConnection(completionHandler: (NSXPCConnection?, (any Error)?) -> Void)](./getfileproviderconnection%28completionhandler%29.md)
   Asynchronously returns the service’s connection object.
 
 

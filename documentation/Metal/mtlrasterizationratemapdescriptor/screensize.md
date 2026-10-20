@@ -1,7 +1,8 @@
 # screenSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the viewport coordinate system, in logical pixels.
 
@@ -19,9 +20,13 @@ The size of the viewport coordinate system, in logical pixels.
 var screenSize: MTLSize { get set }
 ```
 
+```objc
+@property (nonatomic) MTLSize screenSize;
+```
+
 ## Mentions
 
-- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
+- [Creating a rasterization rate map](../creating-a-rasterization-rate-map.md)
 
 #### Discussion
 

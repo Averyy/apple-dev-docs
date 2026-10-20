@@ -1,7 +1,8 @@
 # addEntity(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a GameplayKit entity to the list of entities managed by the scene.
 
@@ -19,15 +20,20 @@ Adds a GameplayKit entity to the list of entities managed by the scene.
 func addEntity(_ entity: GKEntity)
 ```
 
+```objc
+- (void) addEntity:(GKEntity *) entity;
+```
+
 ## Parameters
 
 - `entity`: The entity to be added to the scene.
 
 ## See Also
 
-- [var entities: [GKEntity]](gkscene/entities.md)
+### Managing Entities and Components
+- [var entities: [GKEntity]](./entities.md)
   The list of GameplayKit entities managed by the scene.
-- [func removeEntity(GKEntity)](gkscene/removeentity(_:).md)
+- [func removeEntity(GKEntity)](./removeentity%28_%29.md)
   Removes a GameplayKit entity from the list of entities managed by the scene.
 
 

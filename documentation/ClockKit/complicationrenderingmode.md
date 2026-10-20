@@ -1,12 +1,15 @@
 # ComplicationRenderingMode
 
 **Framework**: ClockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The complication’s appearance, as specified by the watch face.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -16,45 +19,46 @@ enum ComplicationRenderingMode
 
 ## Mentions
 
-- [Building complications with SwiftUI](building-complications-with-swiftui.md)
+- [Building complications with SwiftUI](./building-complications-with-swiftui.md)
 
 ## Topics
 
 ### Rendering Modes
-- [ComplicationRenderingMode.fullColor](complicationrenderingmode/fullcolor.md)
+- [ComplicationRenderingMode.fullColor](./complicationrenderingmode/fullcolor.md)
   The system renders the complication in full color.
-- [ComplicationRenderingMode.tinted](complicationrenderingmode/tinted.md)
+- [ComplicationRenderingMode.tinted](./complicationrenderingmode/tinted.md)
   The system renders the complication as a tinted complication.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [SwiftUI templates](swiftui-templates.md)
+### Templates
+- [SwiftUI templates](./swiftui-templates.md)
   Design complication templates using SwiftUI views.
-- [Data providers](data-providers.md)
+- [Data providers](./data-providers.md)
   Feed data to a complication template.
-- [Circular small](circular-small.md)
+- [Circular small](./circular-small.md)
   Display small, circular content in the corners of the Color watch face.
-- [Extra large](extra-large.md)
+- [Extra large](./extra-large.md)
   Display content on the X-Large watch face.
-- [Modular small](modular-small.md)
+- [Modular small](./modular-small.md)
   Display content in the smaller spaces of the Modular watch face.
-- [Modular large](modular-large.md)
+- [Modular large](./modular-large.md)
   Display multiple rows of content in the large, central complication on the Modular watch face.
-- [Utilitarian](utilitarian.md)
+- [Utilitarian](./utilitarian.md)
   Use the utilitarian templates to display content on a variety of watch faces, including the Utility, Chronograph, Simple, and character watch faces.
-- [Graphic](graphic.md)
+- [Graphic](./graphic.md)
   Display visually rich content on watch faces.
-- [class CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [class CLKComplicationTemplate](./clkcomplicationtemplate.md)
   An abstract class that defines the base behavior for all templates.
-- [enum CLKComplicationFamily](clkcomplicationfamily.md)
+- [enum CLKComplicationFamily](./clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
+- [CLKComplicationSupportedFamilies](../BundleResources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

@@ -1,22 +1,24 @@
 # vm_kernel_unslide_or_perm_external
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 void vm_kernel_unslide_or_perm_external(vm_offset_t addr, vm_offset_t *perm_addr);
 ```
 
 ## See Also
 
-- [vm_kernel_addrhash](2881947-vm_kernel_addrhash.md)
-- [vm_kernel_addrhide](2881946-vm_kernel_addrhide.md)
-- [vm_kernel_addrperm_external](1401818-vm_kernel_addrperm_external.md)
+### Untitled
+- [vm_kernel_addrhash](./api-2881947-vm_kernel_addrhash.md)
+- [vm_kernel_addrhide](./api-2881946-vm_kernel_addrhide.md)
+- [vm_kernel_addrperm_external](./api-1401818-vm_kernel_addrperm_external.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dismissHeadingCalibrationDisplay()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the heading calibration view from the screen immediately.
 
@@ -18,27 +19,32 @@ Dismisses the heading calibration view from the screen immediately.
 func dismissHeadingCalibrationDisplay()
 ```
 
+```objc
+- (void) dismissHeadingCalibrationDisplay;
+```
+
 #### Discussion
 
 Core Location uses the heading calibration alert to calibrate the available heading hardware as needed. The display of this view is automatic, assuming your delegate supports displaying the view at all. If the view is displayed, you can use this method to dismiss it after an appropriate amount of time to ensure that your app’s user interface is not unduly disrupted.
 
 ## See Also
 
-- [func startUpdatingHeading()](cllocationmanager/startupdatingheading.md)
+### Running the heading service
+- [func startUpdatingHeading()](./startupdatingheading%28%29.md)
   Starts the generation of updates that report the user’s current heading.
-- [func stopUpdatingHeading()](cllocationmanager/stopupdatingheading.md)
+- [func stopUpdatingHeading()](./stopupdatingheading%28%29.md)
   Stops the generation of heading updates.
-- [var headingFilter: CLLocationDegrees](cllocationmanager/headingfilter.md)
+- [var headingFilter: CLLocationDegrees](./headingfilter.md)
   The minimum angular change in degrees required to generate new heading events.
-- [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
+- [let kCLHeadingFilterNone: CLLocationDegrees](../kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
-- [typealias CLLocationDegrees](cllocationdegrees.md)
+- [typealias CLLocationDegrees](../cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+- [var headingBody: (any CLBodyIdentifiable)?](./headingbody.md)
   A physical body or view that defines the reference orientation for heading calculations.
-- [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
+- [var headingOrientation: CLDeviceOrientation](./headingorientation.md)
   The device orientation to use when computing heading values.
-- [enum CLDeviceOrientation](cldeviceorientation.md)
+- [enum CLDeviceOrientation](../cldeviceorientation.md)
   Constants indicating the physical orientation of the device.
 
 

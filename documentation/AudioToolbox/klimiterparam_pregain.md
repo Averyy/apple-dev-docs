@@ -1,15 +1,16 @@
 # kLimiterParam_PreGain
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kLimiterParam_PreGain: AudioUnitParameterID { get }
 ```
 
+```c
+kLimiterParam_PreGain
+```
+
 ## See Also
 
-- [var kLimiterParam_AttackTime: AudioUnitParameterID](klimiterparam_attacktime.md)
-- [var kLimiterParam_DecayTime: AudioUnitParameterID](klimiterparam_decaytime.md)
+### Constants
+- [var kLimiterParam_AttackTime: AudioUnitParameterID](./klimiterparam_attacktime.md)
+- [var kLimiterParam_DecayTime: AudioUnitParameterID](./klimiterparam_decaytime.md)
 
 
 ---

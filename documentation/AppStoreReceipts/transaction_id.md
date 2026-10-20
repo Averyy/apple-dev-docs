@@ -1,24 +1,25 @@
 # transaction_id
 
 **Framework**: App Store Receipts  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A unique identifier for a transaction, such as a purchase, restore, or renewal.
 
 **Availability**:
-- App Store Receipts 1.0+
+- App Store Receipts 1.0+ - Deprecated in 1.7
 
 ## Declaration
 
-```swift
+```
 string transaction_id
 ```
 
 #### Discussion
 
-This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
+This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](./responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](./responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 
-This value has the same format as the transaction’s [`transactionIdentifier`](https://developer.apple.com/documentation/storekit/skpaymenttransaction/transactionidentifier) property; however, the values may not be the same.
+This value has the same format as the transaction’s [`transactionIdentifier`](../StoreKit/skpaymenttransaction/transactionidentifier.md) property; however, the values may not be the same.
 
 You can use this value to:
 
@@ -27,9 +28,10 @@ You can use this value to:
 
 ## See Also
 
-- [type original_transaction_id](original_transaction_id.md)
+### Transaction identifiers
+- [type original_transaction_id](./original_transaction_id.md)
   The transaction identifier of the original purchase.
-- [type app_account_token](app_account_token.md)
+- [type app_account_token](./app_account_token.md)
   The UUID that an app optionally generates to map a customer’s in-app purchase with its resulting App Store transaction.
 
 

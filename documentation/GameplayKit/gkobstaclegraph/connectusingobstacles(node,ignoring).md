@@ -1,7 +1,8 @@
 # connectUsingObstacles(node:ignoring:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified node to the graph, connecting it to its nearest neighbors while ignoring the area occupied by the specified obstacles.
 
@@ -19,9 +20,13 @@ Adds the specified node to the graph, connecting it to its nearest neighbors whi
 func connectUsingObstacles(node: NodeType, ignoring obstaclesToIgnore: [GKPolygonObstacle])
 ```
 
+```objc
+- (void) connectNodeUsingObstacles:(NodeType) node ignoringObstacles:(NSArray<GKPolygonObstacle *> *) obstaclesToIgnore;
+```
+
 #### Discussion
 
-The [`GKObstacleGraph`](gkobstaclegraph.md) class automatically maintains a network of nodes that describes the navigable areas around its collection of obstacles. Adding a new node to the graph connects it to these nodes, such that the resulting network can be used to find paths around the obstacles to the position of the new node. GameplayKit adds new connections only if those connections do not represent a path through any obstacles (or through the buffer region around them, as specified by the [`bufferRadius`](gkobstaclegraph/bufferradius.md) property.)
+The [`GKObstacleGraph`](../gkobstaclegraph.md) class automatically maintains a network of nodes that describes the navigable areas around its collection of obstacles. Adding a new node to the graph connects it to these nodes, such that the resulting network can be used to find paths around the obstacles to the position of the new node. GameplayKit adds new connections only if those connections do not represent a path through any obstacles (or through the buffer region around them, as specified by the [`bufferRadius`](./bufferradius.md) property.)
 
 Call this method when you need to to connect a node to the graph without taking certain obstacles into account. For example, you might add a node representing the destination for a game character to move toward, but place that node inside an existing obstacle, so that the resulting path gets the character as near to that obstacle as possible.
 
@@ -32,11 +37,12 @@ Call this method when you need to to connect a node to the graph without taking 
 
 ## See Also
 
-- [func connectUsingObstacles(node: NodeType)](gkobstaclegraph/connectusingobstacles(node:).md)
+### Working with Nodes
+- [func connectUsingObstacles(node: NodeType)](./connectusingobstacles%28node%29.md)
   Adds the specified node to the graph, connecting it to its nearest neighbors without creating connections that pass through obstacles or their buffer regions.
-- [func connectUsingObstacles(node: NodeType, ignoringBufferRadiusOf: [GKPolygonObstacle])](gkobstaclegraph/connectusingobstacles(node:ignoringbufferradiusof:).md)
+- [func connectUsingObstacles(node: NodeType, ignoringBufferRadiusOf: [GKPolygonObstacle])](./connectusingobstacles%28node,ignoringbufferradiusof%29.md)
   Adds the specified node to the graph, connecting it to its nearest neighbors while ignoring the buffer regions around the specified obstacles.
-- [var bufferRadius: Float](gkobstaclegraph/bufferradius.md)
+- [var bufferRadius: Float](./bufferradius.md)
   The distance from obstacle edges that should also be considered impassable.
 
 

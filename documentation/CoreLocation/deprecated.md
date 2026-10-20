@@ -1,15 +1,16 @@
 # Deprecated
 
-**Framework**: Core Location
+**Framework**: Core Location  
+**Role**: API Collection
 
 ## Topics
 
 ### Classes
-- [class CLBeaconRegion](clbeaconregion.md)
+- [class CLBeaconRegion](./clbeaconregion.md)
   A region for detecting the presence of iBeacon devices.
-- [class CLBeaconIdentityConstraint](clbeaconidentityconstraint.md)
+- [class CLBeaconIdentityConstraint](./clbeaconidentityconstraint.md)
   Identity characteristics that can match one or more beacons.
-- [class CLCircularRegion](clcircularregion.md)
+- [class CLCircularRegion](./clcircularregion.md)
   A circular geographic region that a center point and radius deine.
 
 

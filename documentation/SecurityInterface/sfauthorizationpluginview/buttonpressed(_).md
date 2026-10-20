@@ -1,7 +1,8 @@
 # buttonPressed(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the authorization plug-in that the user pressed a button in the custom view.
 
@@ -14,9 +15,13 @@ Tells the authorization plug-in that the user pressed a button in the custom vie
 func buttonPressed(_ inButtonType: SFButtonType)
 ```
 
+```objc
+- (void) buttonPressed:(SFButtonType) inButtonType;
+```
+
 #### Discussion
 
-By default, [`buttonPressed(_:)`](sfauthorizationpluginview/buttonpressed(_:).md) will set a result of Deny when the OK or Login buttons are pressed. An [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) subclass needs to override this method to set the context values for the short name of the user so that user attributes can be looked up. To do this, use [`kAuthorizationEnvironmentUsername`](https://developer.apple.com/documentation/security/kauthorizationenvironmentusername) as the key. A subclass should also set any additional context values that are needed by the authorization plug-in to verify the user’s credentials. To do this, use the appropriate function pointers you receive from [`callbacks()`](sfauthorizationpluginview/callbacks().md).
+By default, [`buttonPressed(_:)`](./buttonpressed%28_%29.md) will set a result of Deny when the OK or Login buttons are pressed. An [`SFAuthorizationPluginView`](../sfauthorizationpluginview.md) subclass needs to override this method to set the context values for the short name of the user so that user attributes can be looked up. To do this, use [`kAuthorizationEnvironmentUsername`](../../Security/kauthorizationenvironmentusername.md) as the key. A subclass should also set any additional context values that are needed by the authorization plug-in to verify the user’s credentials. To do this, use the appropriate function pointers you receive from [`callbacks()`](./callbacks%28%29.md).
 
 When you override this method, do not call `[super buttonPressed]`.
 
@@ -26,7 +31,8 @@ When you override this method, do not call `[super buttonPressed]`.
 
 ## See Also
 
-- [func view(for: SFViewType) -> NSView!](sfauthorizationpluginview/view(for:).md)
+### Responding to User Actions
+- [func view(for: SFViewType) -> NSView!](./view%28for%29.md)
   Returns the appropriate view object for the specified view type.
 
 

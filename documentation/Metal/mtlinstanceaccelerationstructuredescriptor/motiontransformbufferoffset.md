@@ -1,7 +1,8 @@
 # motionTransformBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, to the descripton of the first motion transform.
 
@@ -19,15 +20,20 @@ The offset, in bytes, to the descripton of the first motion transform.
 var motionTransformBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger motionTransformBufferOffset;
+```
+
 #### Discussion
 
-The offset needs to be a multiple of 64 bytes. Check the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
+The offset needs to be a multiple of 64 bytes. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 
 ## See Also
 
-- [var motionTransformCount: Int](mtlinstanceaccelerationstructuredescriptor/motiontransformcount.md)
+### Specifying motion data
+- [var motionTransformCount: Int](./motiontransformcount.md)
   The number of motion transforms in the motion transform buffer.
-- [var motionTransformBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/motiontransformbuffer.md)
+- [var motionTransformBuffer: (any MTLBuffer)?](./motiontransformbuffer.md)
   A buffer that contains descriptions of each motion transform in the acceleration structure.
 
 

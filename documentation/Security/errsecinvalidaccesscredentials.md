@@ -1,7 +1,8 @@
 # errSecInvalidAccessCredentials
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid access credentials were detected.
 
@@ -18,6 +19,10 @@ Invalid access credentials were detected.
 
 ```swift
 var errSecInvalidAccessCredentials: OSStatus { get }
+```
+
+```c
+errSecInvalidAccessCredentials
 ```
 
 

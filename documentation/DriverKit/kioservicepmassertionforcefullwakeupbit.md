@@ -1,19 +1,20 @@
 # kIOServicePMAssertionForceFullWakeupBit
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 kIOServicePMAssertionForceFullWakeupBit When set, the system will immediately do a full wakeup after going to sleep.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOServicePMAssertionForceFullWakeupBit
 ```
 

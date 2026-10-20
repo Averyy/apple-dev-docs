@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestRecipientValueEndpoint
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The recipient is an endpoint.
 
@@ -10,17 +11,18 @@ The recipient is an endpoint.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestRecipientValueEndpoint
 ```
 
 ## See Also
 
-- [kIOUSBDeviceRequestRecipientValueDevice](tiousbdevicerequestrecipientvalue/kiousbdevicerequestrecipientvaluedevice.md)
+### Getting the Request Recipient
+- [kIOUSBDeviceRequestRecipientValueDevice](./kiousbdevicerequestrecipientvaluedevice.md)
   The recipient is a device object.
-- [kIOUSBDeviceRequestRecipientValueInterface](tiousbdevicerequestrecipientvalue/kiousbdevicerequestrecipientvalueinterface.md)
+- [kIOUSBDeviceRequestRecipientValueInterface](./kiousbdevicerequestrecipientvalueinterface.md)
   The recipient is an interface object.
-- [kIOUSBDeviceRequestRecipientValueOther](tiousbdevicerequestrecipientvalue/kiousbdevicerequestrecipientvalueother.md)
+- [kIOUSBDeviceRequestRecipientValueOther](./kiousbdevicerequestrecipientvalueother.md)
   The recipient is another type of entity.
 
 

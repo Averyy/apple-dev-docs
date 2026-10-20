@@ -1,21 +1,26 @@
 # ICReturnObjectError.Code.codeObjectDoesNotExist
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The object does not exist.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case codeObjectDoesNotExist
+```
+
+```c
+ICReturnCodeObjectDoesNotExist
 ```
 
 

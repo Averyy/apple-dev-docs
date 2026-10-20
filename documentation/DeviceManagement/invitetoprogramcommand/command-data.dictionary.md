@@ -1,7 +1,8 @@
 # InviteToProgramCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to invite a user to join the Volume Purchase Program (VPP).
 
@@ -13,7 +14,7 @@ The command to invite a user to join the Volume Purchase Program (VPP).
 
 ## Declaration
 
-```swift
+```
 object InviteToProgramCommand.Command
 ```
 
@@ -21,8 +22,14 @@ object InviteToProgramCommand.Command
 
 - `InvitationURL` (string) *(required)*: The Volume Purchase Program (VPP) invitation URL.
 - `ProgramID` (string) *(required)*: The program’s identifier, which can only be `com.apple.cloudvpp`.
+
+  **Allowed Values**: `com.apple.cloudvpp`
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `InviteToProgram`
 
 
 ---

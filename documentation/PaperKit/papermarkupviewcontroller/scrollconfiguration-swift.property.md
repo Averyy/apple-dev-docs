@@ -1,7 +1,8 @@
 # scrollConfiguration
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration object that provides access to scroll view functionality.
 
@@ -21,13 +22,14 @@ The configuration object that provides access to scroll view functionality.
 
 ## See Also
 
-- [PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.class.md)
+### Scrolling and zooming
+- [PaperMarkupViewController.ScrollConfiguration](./scrollconfiguration-swift.class.md)
   A cross-platform type that provides access to scroll view functionality.
-- [var contentVisibleFrame: CGRect](papermarkupviewcontroller/contentvisibleframe.md)
+- [var contentVisibleFrame: CGRect](./contentvisibleframe.md)
   The visible area of content in the scroll view.
-- [func setContentVisibleFrame(CGRect, animated: Bool)](papermarkupviewcontroller/setcontentvisibleframe(_:animated:).md)
+- [func setContentVisibleFrame(CGRect, animated: Bool)](./setcontentvisibleframe%28_,animated%29.md)
   Zooms to a specific area of the content so that it’s visible in the scroll view.
-- [var zoomRange: ClosedRange<CGFloat>](papermarkupviewcontroller/zoomrange.md)
+- [var zoomRange: ClosedRange<CGFloat>](./zoomrange.md)
   A floating-point range that specifies the minimum and maximum scale factor that can apply to the canvas’ content.
 
 

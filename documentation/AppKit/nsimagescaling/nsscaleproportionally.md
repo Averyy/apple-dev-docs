@@ -1,10 +1,13 @@
 # NSScaleProportionally
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use [`NSImageScaling`](../nsimagescaling.md) constants instead.
 
 ## Declaration
 
@@ -12,14 +15,19 @@
 static var NSScaleProportionally: NSImageScaling { get }
 ```
 
+```c
+NSScaleProportionally
+```
+
 #### Discussion
 
-Use [`NSImageScaling.scaleProportionallyDown`](nsimagescaling/scaleproportionallydown.md).
+Use [`NSImageScaling.scaleProportionallyDown`](./scaleproportionallydown.md).
 
 ## See Also
 
-- [static var NSScaleNone: NSImageScaling](nsimagescaling/nsscalenone.md)
-- [static var NSScaleToFit: NSImageScaling](nsimagescaling/nsscaletofit.md)
+### Deprecated
+- [static var NSScaleNone: NSImageScaling](./nsscalenone.md)
+- [static var NSScaleToFit: NSImageScaling](./nsscaletofit.md)
 
 
 ---

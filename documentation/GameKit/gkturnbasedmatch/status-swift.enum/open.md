@@ -1,7 +1,8 @@
 # GKTurnBasedMatch.Status.open
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that participants are actively playing.
 
@@ -20,17 +21,22 @@ A match that participants are actively playing.
 case open
 ```
 
+```c
+GKTurnBasedMatchStatusOpen
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 ## See Also
 
-- [GKTurnBasedMatch.Status.unknown](gkturnbasedmatch/status-swift.enum/unknown.md)
+### Match Statuses
+- [GKTurnBasedMatch.Status.unknown](./unknown.md)
   A match that is in an unknown state.
-- [GKTurnBasedMatch.Status.ended](gkturnbasedmatch/status-swift.enum/ended.md)
+- [GKTurnBasedMatch.Status.ended](./ended.md)
   A match that finishes.
-- [GKTurnBasedMatch.Status.matching](gkturnbasedmatch/status-swift.enum/matching.md)
+- [GKTurnBasedMatch.Status.matching](./matching.md)
   A match with empty slots that Game Center is actively filling.
 
 

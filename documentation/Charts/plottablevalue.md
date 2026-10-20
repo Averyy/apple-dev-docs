@@ -1,7 +1,8 @@
 # PlottableValue
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Labeled data that you plot in a chart using marks.
 
@@ -24,7 +25,7 @@ struct PlottableValue<Value> where Value : Plottable
 
 Provide a `PlottableValue` to a `Mark` property (e.g., x, y, foregroundStyle) to plot data values with the mark property.
 
-> ❗ **Important**: The data type must conform to [`Plottable`](plottable.md). This is a numeric value like a [`Double`](https://developer.apple.com/documentation/swift/double) or [`Int16`](https://developer.apple.com/documentation/swift/int16) for quantitative data, [`Date`](https://developer.apple.com/documentation/foundation/date) for temporal data, or [`String`](https://developer.apple.com/documentation/swift/string) for categorical data.
+> ❗ **Important**: The data type must conform to [`Plottable`](./plottable.md). This is a numeric value like a [`Double`](../Swift/double.md) or [`Int16`](../Swift/int16.md) for quantitative data, [`Date`](../Foundation/date.md) for temporal data, or [`String`](../Swift/string.md) for categorical data.
 
 You can use the `.value("Category", \.category)` shorthand to create a `PlottableValue`. The example below plots category, value, and group with the bar mark’s x, y, and foregroundStyle.
 
@@ -59,42 +60,43 @@ var body: some View {
 ## Topics
 
 ### Type Methods
-- [static func value<S>(S, Value) -> PlottableValue<Value>](plottablevalue/value(_:_:)-13lvv.md)
+- [static func value<S>(S, Value) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-13lvv.md)
   Creates a parameter value with label and value.
-- [static func value(LocalizedStringKey, Range<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-3sze5.md)
+- [static func value(LocalizedStringKey, Range<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-3sze5.md)
   Creates a parameter value with label key and value.
-- [static func value(Text, Range<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-4qa4d.md)
+- [static func value(Text, Range<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-4qa4d.md)
   Creates a parameter value with label and value.
-- [static func value<S>(S, ChartBinRange<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-6jxfn.md)
+- [static func value<S>(S, ChartBinRange<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-6jxfn.md)
   Creates a parameter value with label and value.
-- [static func value(LocalizedStringResource, Value) -> PlottableValue<Value>](plottablevalue/value(_:_:)-6p2ls.md)
+- [static func value(LocalizedStringResource, Value) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-6p2ls.md)
   Creates a parameter value with label and value.
-- [static func value(LocalizedStringKey, Value) -> PlottableValue<Value>](plottablevalue/value(_:_:)-70xhu.md)
+- [static func value(LocalizedStringKey, Value) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-70xhu.md)
   Creates a parameter value with label key and value.
-- [static func value(LocalizedStringResource, ChartBinRange<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-7ciwx.md)
+- [static func value(LocalizedStringResource, ChartBinRange<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-7ciwx.md)
   Creates a parameter value with label and value.
-- [static func value(Text, Value) -> PlottableValue<Value>](plottablevalue/value(_:_:)-7ed58.md)
+- [static func value(Text, Value) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-7ed58.md)
   Creates a parameter value with label and value.
-- [static func value(LocalizedStringKey, ChartBinRange<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-7k0m0.md)
+- [static func value(LocalizedStringKey, ChartBinRange<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-7k0m0.md)
   Creates a parameter value with label key and value.
-- [static func value(LocalizedStringResource, Range<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-8bsvd.md)
+- [static func value(LocalizedStringResource, Range<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-8bsvd.md)
   Creates a parameter value with label and value.
-- [static func value(Text, ChartBinRange<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-9bdsw.md)
+- [static func value(Text, ChartBinRange<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-9bdsw.md)
   Creates a parameter value with label and value.
-- [static func value<S>(S, Range<Value>) -> PlottableValue<Value>](plottablevalue/value(_:_:)-f1kk.md)
+- [static func value<S>(S, Range<Value>) -> PlottableValue<Value>](./plottablevalue/value%28_,_%29-f1kk.md)
   Creates a parameter value with label and value.
-- [static func value(LocalizedStringResource, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](plottablevalue/value(_:_:unit:calendar:)-1rtpi.md)
+- [static func value(LocalizedStringResource, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](./plottablevalue/value%28_,_,unit,calendar%29-1rtpi.md)
   Creates a parameter value with label and value.
-- [static func value<S>(S, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](plottablevalue/value(_:_:unit:calendar:)-2r0fo.md)
+- [static func value<S>(S, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](./plottablevalue/value%28_,_,unit,calendar%29-2r0fo.md)
   Creates a parameter value with label and value.
-- [static func value(LocalizedStringKey, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](plottablevalue/value(_:_:unit:calendar:)-8f7fe.md)
+- [static func value(LocalizedStringKey, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](./plottablevalue/value%28_,_,unit,calendar%29-8f7fe.md)
   Creates a parameter value with label key and value.
-- [static func value(Text, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](plottablevalue/value(_:_:unit:calendar:)-liyc.md)
+- [static func value(Text, Date, unit: Calendar.Component, calendar: Calendar?) -> PlottableValue<Value>](./plottablevalue/value%28_,_,unit,calendar%29-liyc.md)
   Creates a parameter value with label and value.
 
 ## See Also
 
-- [protocol Plottable](plottable.md)
+### Labeled data
+- [protocol Plottable](./plottable.md)
   A type that can serve as data to plot in a chart.
 
 

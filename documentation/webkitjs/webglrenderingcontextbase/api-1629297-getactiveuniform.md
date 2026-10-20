@@ -1,7 +1,8 @@
 # getActiveUniform
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 WebGLActiveInfo getActiveUniform(
     WebGLProgram? program, 
     GLuint index

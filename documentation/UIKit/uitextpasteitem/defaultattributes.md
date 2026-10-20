@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The dictionary of default attributes that the system applies, during pasting or dropping, to plaintext strings from an item provider.
@@ -16,6 +17,10 @@ The dictionary of default attributes that the system applies, during pasting or 
 
 ```swift
 var defaultAttributes: [NSAttributedString.Key : Any] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * defaultAttributes;
 ```
 
 

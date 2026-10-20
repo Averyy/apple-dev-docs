@@ -1,7 +1,8 @@
 # punctuation
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tag indicating that the token is punctuation.
 
@@ -20,13 +21,18 @@ A tag indicating that the token is punctuation.
 static let punctuation: NLTag
 ```
 
+```c
+extern NLTag const NLTagPunctuation;
+```
+
 ## See Also
 
-- [static let word: NLTag](nltag/word.md)
+### Token types
+- [static let word: NLTag](./word.md)
   A tag indicating that the token is a word.
-- [static let whitespace: NLTag](nltag/whitespace.md)
+- [static let whitespace: NLTag](./whitespace.md)
   A tag indicating that the token is white space of any sort.
-- [static let other: NLTag](nltag/other.md)
+- [static let other: NLTag](./other.md)
   A tag indicating that the token is a non-linguistic item, such as a symbol.
 
 

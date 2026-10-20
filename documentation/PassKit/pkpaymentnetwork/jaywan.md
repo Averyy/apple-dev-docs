@@ -1,7 +1,8 @@
 # jaywan
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Jaywan payment card.
 
@@ -19,9 +20,13 @@ A Jaywan payment card.
 static let jaywan: PKPaymentNetwork
 ```
 
+```c
+extern PKPaymentNetwork const PKPaymentNetworkJaywan;
+```
+
 ## Mentions
 
-- [Complying with regional regulations](complying-with-regional-regulations.md)
+- [Complying with regional regulations](../complying-with-regional-regulations.md)
 
 
 ---

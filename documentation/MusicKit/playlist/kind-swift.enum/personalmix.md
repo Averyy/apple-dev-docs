@@ -1,7 +1,8 @@
 # Playlist.Kind.personalMix
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the playlist is a personalized playlist for an Apple Music user.
 

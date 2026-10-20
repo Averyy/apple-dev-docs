@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.mediaStick
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A media streaming stick.
 

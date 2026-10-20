@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A nonlocalized description of the authorization value, suitable for debugging.
 

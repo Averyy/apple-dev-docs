@@ -1,18 +1,19 @@
 # CFURLBookmarkFileCreationOptions
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type for bookmark file creation options.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Type for bookmark file creation options.
 typealias CFURLBookmarkFileCreationOptions = CFOptionFlags
 ```
 
+```c
+typedef CFOptionFlags CFURLBookmarkFileCreationOptions;
+```
+
 ## See Also
 
-- [struct CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions.md)
+### Bookmark Data Types
+- [struct CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions.md)
   Type for bookmark data creation options.
-- [struct CFURLBookmarkResolutionOptions](cfurlbookmarkresolutionoptions.md)
+- [struct CFURLBookmarkResolutionOptions](./cfurlbookmarkresolutionoptions.md)
   Type for bookmark data resolution options.
 
 

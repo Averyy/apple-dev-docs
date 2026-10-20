@@ -1,7 +1,8 @@
 # query
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The query string for performing the search.
 
@@ -10,19 +11,20 @@ The query string for performing the search.
 
 ## Declaration
 
-```swift
+```
 query: string | SearchAutocompleteResult | null;
 ```
 
 #### Discussion
 
-This property is empty when you use a [`SearchAutocompleteResult`](searchautocompleteresult.md) object to perform the search.
+This property is empty when you use a [`SearchAutocompleteResult`](../searchautocompleteresult.md) object to perform the search.
 
 ## See Also
 
-- [places](searchresponse/places.md)
+### Search response
+- [places](./places.md)
   A list of places that match the search query.
-- [boundingRegion](searchresponse/boundingregion.md)
+- [boundingRegion](./boundingregion.md)
   The region that encloses the places from the search results.
 
 

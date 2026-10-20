@@ -1,7 +1,8 @@
 # CSSM_KR_BASE_ERROR
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KR_BASE_ERROR: Int { get }
+```
+
+```c
+CSSM_KR_BASE_ERROR
 ```
 
 

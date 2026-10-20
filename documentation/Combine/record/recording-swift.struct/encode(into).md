@@ -1,7 +1,8 @@
 # encode(into:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func encode(into encoder: any Encoder) throws
 ```
+
+Available when `Output` conforms to `Decodable`, `Output` conforms to `Encodable`, `Failure` conforms to `Decodable`, `Failure` conforms to `Encodable`, and `Failure` conforms to `Error`.
 
 
 ---

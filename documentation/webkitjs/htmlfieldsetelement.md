@@ -1,7 +1,8 @@
 # HTMLFieldSetElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,30 +10,30 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLFieldSetElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [disabled](htmlfieldsetelement/1633393-disabled.md)
-- [elements](htmlfieldsetelement/1634305-elements.md)
-- [form](htmlfieldsetelement/1632964-form.md)
-- [name](htmlfieldsetelement/1632151-name.md)
-- [type](htmlfieldsetelement/1630360-type.md)
-- [validationMessage](htmlfieldsetelement/1630858-validationmessage.md)
-- [validity](htmlfieldsetelement/1630171-validity.md)
-- [willValidate](htmlfieldsetelement/1633825-willvalidate.md)
+- [disabled](./htmlfieldsetelement/api-1633393-disabled.md)
+- [elements](./htmlfieldsetelement/api-1634305-elements.md)
+- [form](./htmlfieldsetelement/api-1632964-form.md)
+- [name](./htmlfieldsetelement/api-1632151-name.md)
+- [type](./htmlfieldsetelement/api-1630360-type.md)
+- [validationMessage](./htmlfieldsetelement/api-1630858-validationmessage.md)
+- [validity](./htmlfieldsetelement/api-1630171-validity.md)
+- [willValidate](./htmlfieldsetelement/api-1633825-willvalidate.md)
 ### Instance Methods
-- [checkValidity](htmlfieldsetelement/1633789-checkvalidity.md)
-- [reportValidity](htmlfieldsetelement/2870992-reportvalidity.md)
-- [setCustomValidity](htmlfieldsetelement/1629206-setcustomvalidity.md)
+- [checkValidity](./htmlfieldsetelement/api-1633789-checkvalidity.md)
+- [reportValidity](./htmlfieldsetelement/api-2870992-reportvalidity.md)
+- [setCustomValidity](./htmlfieldsetelement/api-1629206-setcustomvalidity.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

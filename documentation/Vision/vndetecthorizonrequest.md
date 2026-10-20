@@ -1,7 +1,8 @@
 # VNDetectHorizonRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image-analysis request that determines the horizon angle in an image.
 
@@ -19,31 +20,36 @@ An image-analysis request that determines the horizon angle in an image.
 class VNDetectHorizonRequest
 ```
 
+```objc
+@interface VNDetectHorizonRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Accessing the Results
-- [var results: [VNHorizonObservation]?](vndetecthorizonrequest/results.md)
+- [var results: [VNHorizonObservation]?](./vndetecthorizonrequest/results.md)
   The results of the horizon detection request.
 ### Identifying Request Revisions
-- [var VNDetectHorizonRequestRevision1: Int](vndetecthorizonrequestrevision1.md)
+- [var VNDetectHorizonRequestRevision1: Int](./vndetecthorizonrequestrevision1.md)
   A constant for specifying revision 1 of the horizon detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VNHorizonObservation](vnhorizonobservation.md)
+### Horizon detection
+- [class VNHorizonObservation](./vnhorizonobservation.md)
   The horizon angle information that an image-analysis request detects.
 
 

@@ -1,7 +1,8 @@
 # SystemCoordinator.ParticipantStates.Iterator
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 1.0+
@@ -15,21 +16,22 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async -> SystemCoordinator.ParticipantStates.Element?](systemcoordinator/participantstates/iterator/next.md)
+- [func next() async -> SystemCoordinator.ParticipantStates.Element?](./iterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> SystemCoordinator.ParticipantStates.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [SystemCoordinator.ParticipantStates.Element](systemcoordinator/participantstates/element.md)
+- [SystemCoordinator.ParticipantStates.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 

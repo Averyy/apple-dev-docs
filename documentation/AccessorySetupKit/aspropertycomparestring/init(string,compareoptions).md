@@ -1,7 +1,8 @@
 # init(string:compareOptions:)
 
 **Framework**: AccessorySetupKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property compare string instance with the given string and comparison options.
 
@@ -13,6 +14,10 @@ Creates a property compare string instance with the given string and comparison 
 
 ```swift
 init(string: String, compareOptions: NSString.CompareOptions = [])
+```
+
+```objc
+- (instancetype) initWithString:(NSString *) string compareOptions:(NSStringCompareOptions) compareOptions;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # floatingPointClass
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification of this value.
 
@@ -22,25 +23,26 @@ var floatingPointClass: FloatingPointClassification { get }
 
 #### Discussion
 
-A value’s `floatingPointClass` property describes its “class” as described by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+A value’s `floatingPointClass` property describes its “class” as described by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## See Also
 
-- [var isZero: Bool](float/iszero.md)
+### Querying a Float’s State
+- [var isZero: Bool](./iszero.md)
   A Boolean value indicating whether the instance is equal to zero.
-- [var isFinite: Bool](float/isfinite.md)
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value indicating whether this instance is finite.
-- [var isInfinite: Bool](float/isinfinite.md)
+- [var isInfinite: Bool](./isinfinite.md)
   A Boolean value indicating whether the instance is infinite.
-- [var isNaN: Bool](float/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value indicating whether the instance is NaN (“not a number”).
-- [var isSignalingNaN: Bool](float/issignalingnan.md)
+- [var isSignalingNaN: Bool](./issignalingnan.md)
   A Boolean value indicating whether the instance is a signaling NaN.
-- [var isNormal: Bool](float/isnormal.md)
+- [var isNormal: Bool](./isnormal.md)
   A Boolean value indicating whether this instance is normal.
-- [var isSubnormal: Bool](float/issubnormal.md)
+- [var isSubnormal: Bool](./issubnormal.md)
   A Boolean value indicating whether the instance is subnormal.
-- [var isCanonical: Bool](float/iscanonical.md)
+- [var isCanonical: Bool](./iscanonical.md)
   A Boolean value indicating whether the instance’s representation is in its canonical form.
 
 

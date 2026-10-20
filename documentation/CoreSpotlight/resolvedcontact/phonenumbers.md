@@ -1,7 +1,8 @@
 # phoneNumbers
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phone numbers for this contact.
 
@@ -24,7 +25,8 @@ Specify each phone number as a separate string in the array.
 
 ## See Also
 
-- [var emailAddresses: [String]](resolvedcontact/emailaddresses.md)
+### Specifying contact information
+- [var emailAddresses: [String]](./emailaddresses.md)
   The email addresses for this contact.
 
 

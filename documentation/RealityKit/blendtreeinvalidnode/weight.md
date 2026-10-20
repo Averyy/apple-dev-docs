@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount that an animation impacts the entity it applies to.
 
@@ -11,7 +12,7 @@ The amount that an animation impacts the entity it applies to.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var weight: BlendWeight
 
 ## See Also
 
-- [var name: String](blendtreeinvalidnode/name.md)
+### Configuring the blend tree invalid node
+- [var name: String](./name.md)
   A textual name for the blend node.
 
 

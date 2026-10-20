@@ -1,7 +1,8 @@
 # AttributedString.AttributeMergePolicy.keepCurrent
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy to keep the string’s current attribute value when merging multiple sets of attributes.
 
@@ -22,7 +23,8 @@ case keepCurrent
 
 ## See Also
 
-- [AttributedString.AttributeMergePolicy.keepNew](attributedstring/attributemergepolicy/keepnew.md)
+### Merge Policies
+- [AttributedString.AttributeMergePolicy.keepNew](./keepnew.md)
   A policy to keep the newly-merged attribute value when merging multiple sets of attributes.
 
 

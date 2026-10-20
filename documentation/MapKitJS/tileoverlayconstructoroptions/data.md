@@ -1,7 +1,8 @@
 # data
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Custom data for populating the URL template.
 
@@ -10,7 +11,7 @@ Custom data for populating the URL template.
 
 ## Declaration
 
-```swift
+```
 data: Record<string, any>;
 ```
 
@@ -20,11 +21,12 @@ The default value is `{}`.
 
 ## See Also
 
-- [maximumZ](tileoverlayconstructoroptions/maximumz.md)
+### Initializing tile overlay options
+- [maximumZ](./maximumz.md)
   The maximum zoom level of the overlay.
-- [minimumZ](tileoverlayconstructoroptions/minimumz.md)
+- [minimumZ](./minimumz.md)
   The minimum zoom level of the overlay.
-- [opacity](tileoverlayconstructoroptions/opacity.md)
+- [opacity](./opacity.md)
   The opacity level of the overlay.
 
 

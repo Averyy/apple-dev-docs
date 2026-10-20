@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data table from a dictionary of column names and data values.
 
@@ -21,9 +22,9 @@ init(dictionary: [String : any MLDataValueConvertible]) throws
 
 #### Discussion
 
-Use this initializer to create a data table from an in-memory [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary).
+Use this initializer to create a data table from an in-memory [`Dictionary`](../../Swift/dictionary.md).
 
-![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-init(dictionary:)-1@2x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](https://developer.apple.com/tutorials/images/com.apple.createml/MLDataTable-init(dictionary:)-1@2x.png)
 
 For example, to create a data table as shown above, first create a dictionary.
 
@@ -36,7 +37,7 @@ let data: [String: MLDataValueConvertible] = [
 ]
 ```
 
-Then, use [`init(dictionary:)`](mldatatable/init(dictionary:).md) to create a data table from the dictionary.
+Then, use [`init(dictionary:)`](./init%28dictionary%29.md) to create a data table from the dictionary.
 
 ```swift
 let bookTable = try MLDataTable(dictionary: data)
@@ -50,15 +51,16 @@ The keys of the dictionary become the column names, and the value of each key be
 
 ## See Also
 
-- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
+### Creating a data table
+- [Creating a model from tabular data](../creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
-- [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](mldatatable/init(contentsof:options:).md)
+- [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](./init%28contentsof,options%29.md)
   Creates a data table from an imported JSON or CSV file.
-- [init(namedColumns: [String : MLUntypedColumn]) throws](mldatatable/init(namedcolumns:).md)
+- [init(namedColumns: [String : MLUntypedColumn]) throws](./init%28namedcolumns%29.md)
   Creates a data table from a dictionary of column names and untyped columns.
-- [init()](mldatatable/init.md)
+- [init()](./init%28%29.md)
   Creates an empty table containing no rows or columns.
-- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
+- [MLDataTable.ParsingOptions](./parsingoptions.md)
   The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
 

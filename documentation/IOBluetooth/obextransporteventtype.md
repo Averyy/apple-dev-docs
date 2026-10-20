@@ -1,15 +1,20 @@
 # OBEXTransportEventType
 
 **Framework**: IOBluetooth  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias OBEXTransportEventType = UInt32
+```
+
+```c
+typedef uint32_t OBEXTransportEventType;
 ```
 
 #### Discussion
@@ -18,7 +23,8 @@ Pass these types in the OBEXTransportEvent, and then pass the struct on to the s
 
 ## See Also
 
-- [struct OBEXTransportEvent](obextransportevent.md)
+### DataTypes
+- [struct OBEXTransportEvent](./obextransportevent.md)
 
 
 ---

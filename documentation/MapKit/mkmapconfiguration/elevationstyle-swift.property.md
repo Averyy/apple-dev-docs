@@ -1,7 +1,8 @@
 # elevationStyle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that indicates the map’s elevation style.
 
@@ -20,9 +21,14 @@ The value that indicates the map’s elevation style.
 var elevationStyle: MKMapConfiguration.ElevationStyle { get set }
 ```
 
+```objc
+@property (nonatomic) MKMapElevationStyle elevationStyle;
+```
+
 ## See Also
 
-- [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
+### Controlling the elevation style
+- [MKMapConfiguration.ElevationStyle](./elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
 
 

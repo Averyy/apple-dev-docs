@@ -1,7 +1,8 @@
 # negativeAbsolute(_:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the negative absolute value of each element in the supplied single-precision vector.
 
@@ -11,7 +12,7 @@ Calculates the negative absolute value of each element in the supplied single-pr
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -46,11 +47,12 @@ For example, the following code calculates the negative absolute values of the e
 
 ## See Also
 
-- [static func negativeAbsolute<U>(U) -> [Float]](vdsp/negativeabsolute(_:)-66a7a.md)
+### Vector negative absolute functions
+- [static func negativeAbsolute<U>(U) -> [Float]](./negativeabsolute%28_%29-66a7a.md)
   Returns the negative absolute value of each element in the supplied single-precision vector.
-- [static func negativeAbsolute<U>(U) -> [Double]](vdsp/negativeabsolute(_:)-1b5m6.md)
+- [static func negativeAbsolute<U>(U) -> [Double]](./negativeabsolute%28_%29-1b5m6.md)
   Returns the negative absolute value of each element in the supplied double-precision vector.
-- [static func negativeAbsolute<U, V>(U, result: inout V)](vdsp/negativeabsolute(_:result:)-1gpcy.md)
+- [static func negativeAbsolute<U, V>(U, result: inout V)](./negativeabsolute%28_,result%29-1gpcy.md)
   Calculates the negative absolute value of each element in the supplied double-precision vector.
 
 

@@ -1,6 +1,8 @@
 # Culling occluded geometry using the visibility result buffer
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [CullingOccludedGeometryUsingTheVisibilityResultBuffer.zip](https://docs-assets.developer.apple.com/published/5cf090541e47/CullingOccludedGeometryUsingTheVisibilityResultBuffer.zip)
 
 Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
 
@@ -20,17 +22,17 @@ The first mode of the app shows how to use fragment counting to determine the nu
 
 The fragment-counting mode shows a stationary red sphere and a smaller green sphere, and counts the number of fragments rendered for the green sphere. The slider on the lower-left corner of the app moves the green sphere left and right. The top-right corner of the window shows the number of fragments drawn from the green sphere. The number of fragments decrease to zero as the red sphere occludes the green sphere.
 
-![A screen shot of Mode 1 that shows a larger stationary red sphere with a smaller movable green sphere to the right of it.](/images/com.apple.metal/1-mode1-screenshot.png)
+![A screen shot of Mode 1 that shows a larger stationary red sphere with a smaller movable green sphere to the right of it.](https://developer.apple.com/tutorials/images/com.apple.metal/1-mode1-screenshot.png)
 
 The occlusion-culling mode is more complex, rendering multiple spheres and using the visibility results to skip the draw calls for occluded spheres. It renders *icosahedrons*, a 20-sided polyhedron serving as a type of proxy geometry for a sphere, to the previous frame. If the fragment count is zero because it’s *occluded* (hidden), the renderer *culls* (skips drawing) it in the next frame. The slider at the bottom left moves the spheres left and right, and the label in the upper right shows the number of rendered spheres.
 
-![A screenshot of Mode 2 that shows a three-dimensional grid of spheres.](/images/com.apple.metal/2-mode2-screenshot.png)
+![A screenshot of Mode 2 that shows a three-dimensional grid of spheres.](https://developer.apple.com/tutorials/images/com.apple.metal/2-mode2-screenshot.png)
 
 The app creates Metal objects, renders 3D objects, and demonstrates two ways to use the visibility result buffer. First, it initializes the visibility result buffers and creates the sphere and icosahedron geometry. Next, it uses shared code to position and render the sphere and icosahedron geometry. Lastly, the app uses the state of the segment control to render either the fragment-counting mode or occlusion-culling mode.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
-To run this sample, you need Xcode 12 and a physical device that supports [`MTLGPUFamily.apple3`](mtlgpufamily/apple3.md), such as:
+To run this sample, you need Xcode 12 and a physical device that supports [`MTLGPUFamily.apple3`](./mtlgpufamily/apple3.md), such as:
 
 - A Mac with Apple silicon running macOS 11 or later
 - An iOS device with an A9 chip or later running iOS 12 or later
@@ -38,9 +40,9 @@ To run this sample, you need Xcode 12 and a physical device that supports [`MTLG
 
 This sample can only run on a physical device because it uses the counting occlusion query features that Simulator doesn’t support.
 
-##### Create the Visibility Result Buffer
+##### Create the visibility result buffer
 
-At initialization time, the app creates a set of visibility result buffers used in the fragment-counting and occlusion-culling modes. A visibility result buffer is an array of `uint64_t` integers stored in an [`MTLBuffer`](mtlbuffer.md). The app allows up to three frames to be in flight with the `AAPLMaxBuffersInFlight` constant. However, if the app uses only a single buffer for recording and reading visibility results, a data race condition might occur if the GPU simultaneously writes to the visibility result buffer while the CPU reads from that same buffer. To prevent this, the app uses a ring of buffers that contains one more buffer than the number of frames in flight. The `AAPLNumVisibilityBuffers` constant stores this value. At the end of the `loadMetalWithView:` method, the app creates the buffers using the shared resource storage mode to allow CPU access.
+At initialization time, the app creates a set of visibility result buffers used in the fragment-counting and occlusion-culling modes. A visibility result buffer is an array of `uint64_t` integers stored in an [`MTLBuffer`](./mtlbuffer.md). The app allows up to three frames to be in flight with the `AAPLMaxBuffersInFlight` constant. However, if the app uses only a single buffer for recording and reading visibility results, a data race condition might occur if the GPU simultaneously writes to the visibility result buffer while the CPU reads from that same buffer. To prevent this, the app uses a ring of buffers that contains one more buffer than the number of frames in flight. The `AAPLNumVisibilityBuffers` constant stores this value. At the end of the `loadMetalWithView:` method, the app creates the buffers using the shared resource storage mode to allow CPU access.
 
 ```objective-c
 // Initialize the visibility result buffers.
@@ -76,7 +78,7 @@ _visibilityBufferWriteIndex = (_visibilityBufferWriteIndex + 1) % AAPLNumVisibil
 _readFromVisibilityResultBuffer = _visibilityBuffer[_visibilityBufferReadIndex].contents;
 ```
 
-##### Create the Proxy Geometry
+##### Create the proxy geometry
 
 For the occlusion-culling mode, the app procedurally generates two geometric 3D primitives: a sphere and an icosahedron. The app uses an icosahedron as proxy geometry for the sphere in occlusion testing because it approximates a sphere using only 20 vertices.
 
@@ -115,7 +117,7 @@ const double animationAdjustmentFactor = 4;
 const double icosahedronRadius = animationAdjustmentFactor * sphereRadius;
 ```
 
-##### Render the Geometry
+##### Render the geometry
 
 For convenience, the app stores all the matrices and colors for each object in a single array of `AAPLFrameDataPerObject` structures.
 
@@ -150,7 +152,7 @@ The vertex shader uses the `meshIndex` value to get the index to retrieve the ma
 }
 ```
 
-##### Count the Visible Fragments
+##### Count the visible fragments
 
 The fragment-counting mode of the app counts the number of fragments rendered for the green sphere. It has two main steps performed by the `updateFragmentCountingMode:` and `renderFragmentCountingMode:` methods. The update method sets the projection and view matrices and the color for the first object, the red sphere. Then it sets up the matrices and color for the second object, the green sphere. Next comes the rendering phase in the `renderFragmentCountingMode:` method. Before the app renders the frame, it reads the first element from the visibility result buffer and copies it to the `numVisibleFragments` property. The view controller uses this value to update the label.
 
@@ -158,7 +160,7 @@ The fragment-counting mode of the app counts the number of fragments rendered fo
 self->_numVisibleFragments = _readFromVisibilityResultBuffer[AAPLGreenSphereIndex];
 ```
 
-The rendering process starts with configuring the [`visibilityResultBuffer`](mtlrenderpassdescriptor/visibilityresultbuffer.md) in the render pass descriptor to point to the current write buffer.
+The rendering process starts with configuring the [`visibilityResultBuffer`](./mtlrenderpassdescriptor/visibilityresultbuffer.md) in the render pass descriptor to point to the current write buffer.
 
 ```objective-c
 // Add the visibility result buffer to this render pass.
@@ -168,7 +170,7 @@ renderPassDescriptor.visibilityResultBuffer = _visibilityBuffer[_visibilityBuffe
 _renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:renderPassDescriptor];
 ```
 
-Next, it sets the render pipeline, depth state, and per-frame constant data buffers. The following code shows how the renderer draws the red and green spheres. It uses the [`setVisibilityResultMode(_:offset:)`](mtlrendercommandencoder/setvisibilityresultmode(_:offset:).md) API to set the visibility result buffer mode to [`MTLVisibilityResultMode.counting`](mtlvisibilityresultmode/counting.md). The offset into the buffer is defined by the constant `AAPLGreenSphereIndex` (which is set to `1`), that means that the second element gets the result. Then it encodes the green sphere. When rendering completes, the visibility result buffer contains the number of fragments that passed the depth and stencil tests.
+Next, it sets the render pipeline, depth state, and per-frame constant data buffers. The following code shows how the renderer draws the red and green spheres. It uses the [`setVisibilityResultMode(_:offset:)`](./mtlrendercommandencoder/setvisibilityresultmode%28_,offset%29.md) API to set the visibility result buffer mode to [`MTLVisibilityResultMode.counting`](./mtlvisibilityresultmode/counting.md). The offset into the buffer is defined by the constant `AAPLGreenSphereIndex` (which is set to `1`), that means that the second element gets the result. Then it encodes the green sphere. When rendering completes, the visibility result buffer contains the number of fragments that passed the depth and stencil tests.
 
 ```objective-c
 // Encode the sphere's vertex data.
@@ -185,7 +187,7 @@ Next, it sets the render pipeline, depth state, and per-frame constant data buff
 [self renderMeshWithIndex:(uint32_t)AAPLGreenSphereIndex];
 ```
 
-##### Skip the Draw Calls with Occlusion Culling
+##### Skip the draw calls with occlusion culling
 
 In the occlusion-culling mode, the app uses the visibility result buffer to determine which spheres to draw. Then it disables depth writes (but not the depth test) and tests proxy geometry against the image to generate visibility results for the next frame. It counts the number of drawn spheres in the `numSpheresDrawn` property for the view controller to use to update the UI label. Like the first mode, there’s an update method `updateOcclusionCullingMode:` that sets the projection and model-view matrices and the color for each sphere.
 
@@ -234,31 +236,32 @@ When Metal renders the frame, the GPU updates the visibility result buffer with 
 
 ## See Also
 
-- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
+### Render workflows
+- [Using Metal to draw a view’s contents](./using-metal-to-draw-a-views-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+- [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md)
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](./selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing render pass setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](./customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a custom Metal view](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](./creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](./calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](./encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](./implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
-- [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
+- [Loading textures and models using Metal fast resource loading](./loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
-- [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
+- [Adjusting the level of detail using Metal mesh shaders](./adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](./creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
-- [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
+- [Improving edge-rendering quality with multisample antialiasing (MSAA)](./improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
   Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
+- [Achieving smooth frame rates with a Metal display link](./achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

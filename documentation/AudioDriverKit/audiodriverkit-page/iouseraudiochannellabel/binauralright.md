@@ -1,7 +1,8 @@
 # BinauralRight
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The binaural right channel.
 
@@ -10,13 +11,14 @@ The binaural right channel.
 
 ## Declaration
 
-```swift
+```c
 BinauralRight
 ```
 
 ## See Also
 
-- [BinauralLeft](audiodriverkit/iouseraudiochannellabel/binauralleft.md)
+### Binaural Recording
+- [BinauralLeft](./binauralleft.md)
   The binaural left channel.
 
 

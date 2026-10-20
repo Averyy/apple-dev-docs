@@ -1,7 +1,8 @@
 # pointOfInterestCategory
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point-of-interest category of the feature.
 
@@ -10,25 +11,26 @@ The point-of-interest category of the feature.
 
 ## Declaration
 
-```swift
+```
 get pointOfInterestCategory(): PointOfInterestCategory | null;
 ```
 
 #### Discussion
 
-> **Note**:  This property is only available when the [`featureType`](mapfeatureannotation/featuretype.md) is [`PointOfInterest`](mapfeaturetype/pointofinterest.md).
+> **Note**:  This property is only available when the [`featureType`](./featuretype.md) is [`PointOfInterest`](../mapfeaturetype/pointofinterest.md).
 
 ## See Also
 
-- [title](mapfeatureannotation/title.md)
+### Annotation properties
+- [title](./title.md)
   The title of the feature.
-- [featureType](mapfeatureannotation/featuretype.md)
+- [featureType](./featuretype.md)
   A value that describes the type of place the feature represents.
-- [color](placeannotation/color.md)
+- [color](../placeannotation/color.md)
   The color of the place.
-- [glyphImage](placeannotation/glyphimage.md)
+- [glyphImage](../placeannotation/glyphimage.md)
   The glyph image for the place.
-- [selectedGlyphImage](placeannotation/selectedglyphimage.md)
+- [selectedGlyphImage](../placeannotation/selectedglyphimage.md)
   The selected glyph image for the place.
 
 

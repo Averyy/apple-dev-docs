@@ -1,7 +1,8 @@
 # otherParticipants
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the other participants in a group.
 
@@ -19,17 +20,22 @@ The identifiers of the other participants in a group.
 var otherParticipants: [AVCoordinatedPlaybackParticipant] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCoordinatedPlaybackParticipant *> * otherParticipants;
+```
+
 #### Discussion
 
 Use this property value to create a user interface that informs the user about the state of other participants in the group.
 
-> **Note**:  To observe changes to this property value, register for notifications of type [`otherParticipantsDidChangeNotification`](avplaybackcoordinator/otherparticipantsdidchangenotification.md).
+> **Note**:  To observe changes to this property value, register for notifications of type [`otherParticipantsDidChangeNotification`](./otherparticipantsdidchangenotification.md).
 
 ## See Also
 
-- [class AVCoordinatedPlaybackParticipant](avcoordinatedplaybackparticipant.md)
+### Observing other participants
+- [class AVCoordinatedPlaybackParticipant](../avcoordinatedplaybackparticipant.md)
   An object that represents a participant in a coordinated playback session.
-- [class let otherParticipantsDidChangeNotification: NSNotification.Name](avplaybackcoordinator/otherparticipantsdidchangenotification.md)
+- [class let otherParticipantsDidChangeNotification: NSNotification.Name](./otherparticipantsdidchangenotification.md)
   A notification that the coordinator posts when its other participants change.
 
 

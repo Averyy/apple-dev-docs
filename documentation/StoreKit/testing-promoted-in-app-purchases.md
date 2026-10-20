@@ -1,6 +1,7 @@
 # Testing promoted Apple In-App Purchases
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Test your Apple In-App Purchases before making your app available in the App Store.
 
@@ -11,8 +12,8 @@ Users can buy promoted Apple In-App Purchases from the App Store, but you need t
 | **Protocol** | `itms-services://` |
 | --- | --- |
 | **Parameter** `action` | `purchaseIntent` |
-| **Parameter** `bundleId` | The bundle ID for your app; for example: ![None](/images/com.apple.storekit/spacer.png) `com.example.app` |
-| **Parameter** `productIdentifier` | The Apple In-App Purchase product ID you want to test; for example: ![None](/images/com.apple.storekit/spacer.png) `com.example.product` |
+| **Parameter** `bundleId` | The bundle ID for your app; for example: ![](https://developer.apple.com/tutorials/images/com.apple.storekit/spacer.png) `com.example.app` |
+| **Parameter** `productIdentifier` | The Apple In-App Purchase product ID you want to test; for example: ![](https://developer.apple.com/tutorials/images/com.apple.storekit/spacer.png) `com.example.product` |
 
 The resulting URL looks like this:
 
@@ -22,11 +23,12 @@ Send this URL to yourself in an email or iMessage, and open it from your device.
 
 ## See Also
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+### Promoted Apple In-App Purchases
+- [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
   Display promoted Apple In-App Purchases on your product page and handle purchases that users initiate on the App Store.
-- [struct PurchaseIntent](purchaseintent.md)
+- [struct PurchaseIntent](./purchaseintent.md)
   An instance that emits purchase intents, which indicate that the customer initiated a purchase outside of your app, for your app to complete.
-- [Product.PromotionInfo](product/promotioninfo.md)
+- [Product.PromotionInfo](./product/promotioninfo.md)
   Information about a promoted Apple In-App Purchase that customizes its order and visibility on the device.
 
 

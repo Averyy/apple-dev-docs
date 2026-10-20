@@ -1,7 +1,8 @@
 # AccessibilitySettingsVisionObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 If present, configures vision accessibility settings.
 
@@ -14,13 +15,15 @@ If present, configures vision accessibility settings.
 
 ## Declaration
 
-```swift
+```
 object AccessibilitySettingsVisionObject
 ```
 
 ## Properties
 
 - `AllowLiveRecognition` (boolean): If `false`, disables the Accessibility Live Recognition Ask about Images and Surroundings features.
+
+  **Default**: `true`
 
 
 ---

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable description of the model.
 
@@ -24,11 +25,12 @@ Returns an empty string if the model has no description.
 
 ## See Also
 
-- [var author: String](aimodelasset/metadata-swift.struct/author.md)
+### Reading model information
+- [var author: String](./author.md)
   The name of the model’s author.
-- [var license: String](aimodelasset/metadata-swift.struct/license.md)
+- [var license: String](./license.md)
   The license text for the model.
-- [var creationDate: Date?](aimodelasset/metadata-swift.struct/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The model’s creation date.
 
 

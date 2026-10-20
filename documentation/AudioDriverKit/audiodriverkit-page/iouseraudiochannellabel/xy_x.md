@@ -1,7 +1,8 @@
 # XY_X
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The X/Y recording X channel.
 
@@ -10,13 +11,14 @@ The X/Y recording X channel.
 
 ## Declaration
 
-```swift
+```c
 XY_X
 ```
 
 ## See Also
 
-- [XY_Y](audiodriverkit/iouseraudiochannellabel/xy_y.md)
+### X/Y Recording Channels
+- [XY_Y](./xy_y.md)
   The X/Y recording Y channel.
 
 

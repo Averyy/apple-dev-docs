@@ -1,7 +1,8 @@
 # BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the Build Bundles resource that you’re relating with the Beta App Clip Invocations resource you’re creating.
 
@@ -10,7 +11,7 @@ The type and ID of the Build Bundles resource that you’re relating with the Be
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data
 ```
 
@@ -18,6 +19,8 @@ object BetaAppClipInvocationCreateRequest.Data.Relationships.BuildBundle.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Build Bundles resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `buildBundles`
 
 
 ---

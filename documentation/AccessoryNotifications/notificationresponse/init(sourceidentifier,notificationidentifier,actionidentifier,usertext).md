@@ -1,7 +1,8 @@
 # init(sourceIdentifier:notificationIdentifier:actionIdentifier:userText:)
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a notification response with the given identifiers and optional user text.
 

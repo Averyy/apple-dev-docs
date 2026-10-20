@@ -1,7 +1,8 @@
 # unavailable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `zxx` code: used in cases when the content is not in any particular languages, such as images, symbols, etc.
 

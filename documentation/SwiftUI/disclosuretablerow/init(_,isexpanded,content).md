@@ -1,7 +1,8 @@
 # init(_:isExpanded:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a disclosure group with the given value and table rows, and a binding to the expansion state (expanded or collapsed).
 

@@ -1,7 +1,8 @@
 # kSecImportExportKeychain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A keychain represented by a SecKeychainRef to be used as the target when importing or exporting.
 
@@ -12,6 +13,10 @@ A keychain represented by a SecKeychainRef to be used as the target when importi
 
 ```swift
 let kSecImportExportKeychain: CFString
+```
+
+```c
+extern CFStringRef const kSecImportExportKeychain;
 ```
 
 

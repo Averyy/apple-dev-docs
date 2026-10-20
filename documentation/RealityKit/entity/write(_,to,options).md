@@ -1,7 +1,8 @@
 # write(_:to:options:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Exports an array of entities as separate scenes within a single RealityKit file.
 
@@ -29,13 +30,13 @@ This method generates a file with a `.reality` suffix, automatically setting its
 - visionOS 2 or later
 - tvOS 26 or later
 
-Elements of the `entities` array must have a non-empty [`name`](entity/name.md) property. Each name must be unique within the array to allow unambiguous scene loading.
+Elements of the `entities` array must have a non-empty [`name`](./name.md) property. Each name must be unique within the array to allow unambiguous scene loading.
 
-After writing, individual scenes can be loaded using the [`init(contentsOf:withName:)`](entity/init(contentsof:withname:).md) initializer with the entity’s name as the scene identifier.
+After writing, individual scenes can be loaded using the [`init(contentsOf:withName:)`](./init%28contentsof,withname%29.md) initializer with the entity’s name as the scene identifier.
 
 Logs with the prefix [RealityKit File Compatibility Info] will be posted to the console whenever a component or asset requires a compatibility adjustment.
 
-> **Note**: An error if any entity in the array has an empty name.
+> **Throws**: An error if any entity in the array has an empty name.
 
 > ❗ **Important**:  During its initial setup phase, this method can indirectly block the main thread, and also has the potential to block it for the full duration of the call if the system has additional work it needs to do there.
 
@@ -47,8 +48,9 @@ Logs with the prefix [RealityKit File Compatibility Info] will be posted to the 
 
 ## See Also
 
-- [func write(to: URL, options: Entity.WriteOptions) async throws](entity/write(to:options:).md)
-- [Entity.WriteOptions](entity/writeoptions.md)
+### Writing an entity to a file
+- [func write(to: URL, options: Entity.WriteOptions) async throws](./write%28to,options%29.md)
+- [Entity.WriteOptions](./writeoptions.md)
   A set of options that control how RealityKit writes entities to a reality file.
 
 

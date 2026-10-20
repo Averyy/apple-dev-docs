@@ -1,7 +1,8 @@
 # withTransforms(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the per instance transform data synchronously on the CPU.
 

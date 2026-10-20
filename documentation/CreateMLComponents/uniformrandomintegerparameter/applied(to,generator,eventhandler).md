@@ -1,7 +1,8 @@
 # applied(to:generator:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the random apply operation on the input.
 

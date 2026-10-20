@@ -1,7 +1,8 @@
 # Event
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A repeatable user-defined action.
 
@@ -22,11 +23,11 @@ struct Event<DonationInfo> where DonationInfo : Decodable, DonationInfo : Encoda
 
 #### Overview
 
-Use an event when you want to track an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](tips/event/donate().md) to donate to the event when the action occurs, increasing the event count by one.
+Use an event when you want to track an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](./event/donate%28%29.md) to donate to the event when the action occurs, increasing the event count by one.
 
 > **Note**: In order to remain performant, by default events only query their most recent 1000 donations.
 
-##### Creating an Event with No Associated Donation Value
+##### Creating an event with no associated donation value
 
 The example below creates a `landmarksAppDidOpen` event with no associated donation value and donates it anytime `ContentView` appears:
 
@@ -56,7 +57,7 @@ struct LandmarkFeatureTip: Tip {
 }
 ```
 
-##### Creating an Event with an Associated Donation Value
+##### Creating an event with an associated donation value
 
 The example below creates a `didViewLandmarkDetail` event with an associated donation value and donates it anytime the `LandmarkDetail` appears:
 
@@ -95,7 +96,7 @@ struct LandmarkDetailTip: Tip {
 }
 ```
 
-##### Filtering an Events Donations
+##### Filtering an event’s donations
 
 TipKit provides methods on `Sequence` for filtering an event’s donations within rule predicates.
 
@@ -128,45 +129,46 @@ These methods can be combined to build complex eligibility conditions:
 ## Topics
 
 ### Initializers
-- [init(id: String)](tips/event/init(id:)-99edo.md)
+- [init(id: String)](./event/init%28id%29-99edo.md)
   Creates an event.
-- [init(id: String, donationLimit: Tips.DonationLimit)](tips/event/init(id:donationlimit:)-7tgi1.md)
+- [init(id: String, donationLimit: Tips.DonationLimit)](./event/init%28id,donationlimit%29-7tgi1.md)
   Creates an event.
 ### Initializers with a donation value
-- [init(id: String)](tips/event/init(id:)-3edd4.md)
+- [init(id: String)](./event/init%28id%29-3edd4.md)
   Creates an event with an associated donation value.
-- [init(id: String, donationLimit: Tips.DonationLimit)](tips/event/init(id:donationlimit:)-1d1hy.md)
+- [init(id: String, donationLimit: Tips.DonationLimit)](./event/init%28id,donationlimit%29-1d1hy.md)
   Creates an event with an associated donation value.
 ### Donations
-- [struct Donation](tips/event/donation.md)
+- [struct Donation](./event/donation.md)
   A repeatable user-defined action.
-- [var donations: [Tips.Event<DonationInfo>.Donation]](tips/event/donations.md)
+- [var donations: [Tips.Event<DonationInfo>.Donation]](./event/donations.md)
   Returns an events existing donations.
 ### Add Donations
-- [func donate() async](tips/event/donate.md)
+- [func donate() async](./event/donate%28%29.md)
   Donates an event with no associated `Donation` value.
-- [func donate(DonationInfo) async](tips/event/donate(_:).md)
+- [func donate(DonationInfo) async](./event/donate%28_%29.md)
   Donates an event along with its associated `Donation` value.
-- [func sendDonation((() -> Void)?)](tips/event/senddonation(_:).md)
+- [func sendDonation((() -> Void)?)](./event/senddonation%28_%29.md)
   Asynchronously donates an event with no associated `Donation` value.
-- [func sendDonation(DonationInfo, (() -> Void)?)](tips/event/senddonation(_:_:).md)
+- [func sendDonation(DonationInfo, (() -> Void)?)](./event/senddonation%28_,_%29.md)
   Asynchronously donates an event along with its associated `Donation` value.
 ### Delete Donations
-- [func deleteDonations() async throws](tips/event/deletedonations.md)
+- [func deleteDonations() async throws](./event/deletedonations%28%29.md)
   Deletes an event’s existing donations.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Rule](tips/rule.md)
+### Related Documentation
+- [struct Rule](./rule.md)
   A condition to meet before displaying a tip.
 
 

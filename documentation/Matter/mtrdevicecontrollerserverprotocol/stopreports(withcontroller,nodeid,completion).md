@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func stopReports(withController controller: Any?, nodeId: UInt64, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func stopReports(withController controller: Any?, nodeId: UInt64) async
+```
+
+```objc
+- (void) stopReportsWithController:(id) controller nodeId:(uint64_t) nodeId completion:(dispatch_block_t) completion;
 ```
 
 

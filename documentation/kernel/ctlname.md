@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ctlname {
     ...
 };
@@ -17,8 +17,8 @@ struct ctlname {
 ## Topics
 
 ### Instance Properties
-- [ctl_name](ctlname/1404233-ctl_name.md)
-- [ctl_type](ctlname/1404245-ctl_type.md)
+- [ctl_name](./ctlname/api-1404233-ctl_name.md)
+- [ctl_type](./ctlname/api-1404245-ctl_type.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # collect()
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result from a streaming response, after it completes.
 
@@ -19,6 +20,8 @@ Returns the result from a streaming response, after it completes.
 nonisolated
 (nonsending) func collect() async throws -> sending LanguageModelSession.Response<Content>
 ```
+
+Available when `Content` conforms to `Generable`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # CPManeuverState.initial
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -14,11 +15,16 @@
 case initial
 ```
 
+```c
+CPManeuverStateInitial
+```
+
 ## See Also
 
-- [CPManeuverState.prepare](cpmaneuverstate/prepare.md)
-- [CPManeuverState.execute](cpmaneuverstate/execute.md)
-- [CPManeuverState.continue](cpmaneuverstate/continue.md)
+### Enumeration Cases
+- [CPManeuverState.prepare](./prepare.md)
+- [CPManeuverState.execute](./execute.md)
+- [CPManeuverState.continue](./continue.md)
 
 
 ---

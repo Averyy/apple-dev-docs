@@ -1,7 +1,8 @@
 # NEVPNErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,11 +18,16 @@
 let NEVPNErrorDomain: String
 ```
 
+```c
+extern NSString * const NEVPNErrorDomain;
+```
+
 ## See Also
 
-- [NEVPNError.Code](nevpnerror-swift.struct/code.md)
+### Errors
+- [NEVPNError.Code](./nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
-- [NEVPNError.Code](nevpnerror-swift.struct/code.md)
+- [NEVPNError.Code](./nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
 
 

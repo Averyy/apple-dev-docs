@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct persona_token {
     ...
 };
@@ -17,8 +17,8 @@ struct persona_token {
 ## Topics
 
 ### Instance Properties
-- [originator](persona_token/1560800-originator.md)
-- [proximate](persona_token/1560786-proximate.md)
+- [originator](./persona_token/api-1560800-originator.md)
+- [proximate](./persona_token/api-1560786-proximate.md)
 
 
 ---

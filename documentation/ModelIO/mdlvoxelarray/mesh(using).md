@@ -1,7 +1,8 @@
 # mesh(using:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a closed polygon mesh around the volume of space the voxel array describes.
 
@@ -19,6 +20,10 @@ Generates a closed polygon mesh around the volume of space the voxel array descr
 func mesh(using allocator: (any MDLMeshBufferAllocator)?) -> MDLMesh?
 ```
 
+```objc
+- (MDLMesh *) meshUsingAllocator:(id<MDLMeshBufferAllocator>) allocator;
+```
+
 #### Return Value
 
 A new mesh object.
@@ -27,7 +32,7 @@ A new mesh object.
 
 Use this method to create a polygon mesh for use in rendering the object described by the voxel array.
 
-The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being generated and being loaded into GPU memory for rendering.
+The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](../../MetalKit/mtkmeshbufferallocator.md) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being generated and being loaded into GPU memory for rendering.
 
 ## Parameters
 

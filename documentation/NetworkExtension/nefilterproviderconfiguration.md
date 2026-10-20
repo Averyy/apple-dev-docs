@@ -1,7 +1,8 @@
 # NEFilterProviderConfiguration
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Configuration parameters for a content filter.
 
@@ -18,52 +19,57 @@ Configuration parameters for a content filter.
 class NEFilterProviderConfiguration
 ```
 
+```objc
+@interface NEFilterProviderConfiguration : NSObject
+```
+
 ## Topics
 
 ### Configuring filter behavior
-- [var filterBrowsers: Bool](nefilterproviderconfiguration/filterbrowsers.md)
+- [var filterBrowsers: Bool](./nefilterproviderconfiguration/filterbrowsers.md)
   A Boolean value that indicates that the system applies the filter to flows of network data originated from WebKit browser objects.
-- [var filterSockets: Bool](nefilterproviderconfiguration/filtersockets.md)
+- [var filterSockets: Bool](./nefilterproviderconfiguration/filtersockets.md)
   A Boolean value that indicates that the system applies the filter to flows of network data originated from sockets.
-- [var filterPackets: Bool](nefilterproviderconfiguration/filterpackets.md)
+- [var filterPackets: Bool](./nefilterproviderconfiguration/filterpackets.md)
   A Boolean value that indicates that the system applies the filter to packets of network data.
 ### Accessing the filter configuration
-- [var vendorConfiguration: [String : Any]?](nefilterproviderconfiguration/vendorconfiguration.md)
+- [var vendorConfiguration: [String : Any]?](./nefilterproviderconfiguration/vendorconfiguration.md)
   A dictionary of provider-specific configuration settings.
-- [var serverAddress: String?](nefilterproviderconfiguration/serveraddress.md)
+- [var serverAddress: String?](./nefilterproviderconfiguration/serveraddress.md)
   The address of a server that the Filter Control Provider may contact for rules and other configuration information.
-- [var username: String?](nefilterproviderconfiguration/username.md)
+- [var username: String?](./nefilterproviderconfiguration/username.md)
   A string that identifies the user.
-- [var organization: String?](nefilterproviderconfiguration/organization.md)
+- [var organization: String?](./nefilterproviderconfiguration/organization.md)
   A string that identifies the organization that administers the filter.
-- [var passwordReference: Data?](nefilterproviderconfiguration/passwordreference.md)
+- [var passwordReference: Data?](./nefilterproviderconfiguration/passwordreference.md)
   A persistent reference to a keychain item containing a password associated with the filter.
-- [var identityReference: Data?](nefilterproviderconfiguration/identityreference.md)
+- [var identityReference: Data?](./nefilterproviderconfiguration/identityreference.md)
   A persistent reference to a keychain item containing a certificate and private key associated with the filter.
 ### Accessing bundle identifiers
-- [var filterDataProviderBundleIdentifier: String?](nefilterproviderconfiguration/filterdataproviderbundleidentifier.md)
+- [var filterDataProviderBundleIdentifier: String?](./nefilterproviderconfiguration/filterdataproviderbundleidentifier.md)
   The bundle identifier of the filter data provider system extension.
-- [var filterPacketProviderBundleIdentifier: String?](nefilterproviderconfiguration/filterpacketproviderbundleidentifier.md)
+- [var filterPacketProviderBundleIdentifier: String?](./nefilterproviderconfiguration/filterpacketproviderbundleidentifier.md)
   The bundle identifier of the filter packet provider system extension.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEFilterManager](nefiltermanager.md)
+### Filter configuration
+- [class NEFilterManager](./nefiltermanager.md)
   An object to create and manage a content filter’s configuration.
 
 

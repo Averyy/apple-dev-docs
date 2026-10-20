@@ -1,7 +1,8 @@
 # DataScannerViewController.RecognizedDataType
 
 **Framework**: VisionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type of data that the scanner recognizes.
 
@@ -18,35 +19,36 @@ struct RecognizedDataType
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 ## Topics
 
 ### Recognizing text
-- [static func text(languages: [String], textContentType: DataScannerViewController.TextContentType?) -> DataScannerViewController.RecognizedDataType](datascannerviewcontroller/recognizeddatatype/text(languages:textcontenttype:).md)
+- [static func text(languages: [String], textContentType: DataScannerViewController.TextContentType?) -> DataScannerViewController.RecognizedDataType](./recognizeddatatype/text%28languages,textcontenttype%29.md)
   Creates a data type for text and information the scanner finds in text.
-- [DataScannerViewController.TextContentType](datascannerviewcontroller/textcontenttype.md)
+- [DataScannerViewController.TextContentType](./textcontenttype.md)
   Types of text that a data scanner recognizes.
 ### Recognizing machine-readable codes
-- [static func barcode(symbologies: [VNBarcodeSymbology]) -> DataScannerViewController.RecognizedDataType](datascannerviewcontroller/recognizeddatatype/barcode(symbologies:).md)
+- [static func barcode(symbologies: [VNBarcodeSymbology]) -> DataScannerViewController.RecognizedDataType](./recognizeddatatype/barcode%28symbologies%29.md)
   Creates a data type for barcodes the use the specified symbologies.
 ### Hashing and comparing
-- [func hash(into: inout Hasher)](datascannerviewcontroller/recognizeddatatype/hash(into:).md)
+- [func hash(into: inout Hasher)](./recognizeddatatype/hash%28into%29.md)
   Hashes the components of this value using the specified hasher.
-- [static func == (DataScannerViewController.RecognizedDataType, DataScannerViewController.RecognizedDataType) -> Bool](datascannerviewcontroller/recognizeddatatype/==(_:_:).md)
+- [static func == (DataScannerViewController.RecognizedDataType, DataScannerViewController.RecognizedDataType) -> Bool](./recognizeddatatype/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two sets have equal elements.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init(recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>, qualityLevel: DataScannerViewController.QualityLevel, recognizesMultipleItems: Bool, isHighFrameRateTrackingEnabled: Bool, isPinchToZoomEnabled: Bool, isGuidanceEnabled: Bool, isHighlightingEnabled: Bool)](datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled:).md)
+### Creating data scanners
+- [init(recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>, qualityLevel: DataScannerViewController.QualityLevel, recognizesMultipleItems: Bool, isHighFrameRateTrackingEnabled: Bool, isPinchToZoomEnabled: Bool, isGuidanceEnabled: Bool, isHighlightingEnabled: Bool)](./init%28recognizeddatatypes,qualitylevel,recognizesmultipleitems,ishighframeratetrackingenabled,ispinchtozoomenabled,isguidanceenabled,ishighlightingenabled%29.md)
   Creates a scanner for finding data, such as text and machine-readable codes, in the camera’s live video.
-- [let recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>](datascannerviewcontroller/recognizeddatatypes.md)
+- [let recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>](./recognizeddatatypes.md)
   The types of data that the data scanner identifies in the live video.
 
 

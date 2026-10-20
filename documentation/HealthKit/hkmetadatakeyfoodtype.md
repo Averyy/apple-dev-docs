@@ -1,7 +1,8 @@
 # HKMetadataKeyFoodType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type of food that the HealthKit object represents.
 
@@ -19,13 +20,18 @@ The type of food that the HealthKit object represents.
 let HKMetadataKeyFoodType: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyFoodType;
+```
+
 #### Discussion
 
-This key takes a string value. Food objects are usually [`food`](hkcorrelationtypeidentifier/food.md) samples containing any number of `Nutrition Identifiers` samples.
+This key takes a string value. Food objects are usually [`food`](./hkcorrelationtypeidentifier/food.md) samples containing any number of `Nutrition Identifiers` samples.
 
 ## See Also
 
-- [static let food: HKCorrelationTypeIdentifier](hkcorrelationtypeidentifier/food.md)
+### Essentials
+- [static let food: HKCorrelationTypeIdentifier](./hkcorrelationtypeidentifier/food.md)
   Food correlation types combine any number of nutritional samples into a single food object.
 
 

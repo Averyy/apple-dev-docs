@@ -1,7 +1,8 @@
 # splitView(_:effectiveRect:forDrawnRect:ofDividerAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to modify the rectangle where mouse clicks initiate divider dragging.
 
@@ -13,6 +14,10 @@ Allows the delegate to modify the rectangle where mouse clicks initiate divider 
 ```swift
 @MainActor
 optional func splitView(_ splitView: NSSplitView, effectiveRect proposedEffectiveRect: NSRect, forDrawnRect drawnRect: NSRect, ofDividerAt dividerIndex: Int) -> NSRect
+```
+
+```objc
+- (NSRect) splitView:(NSSplitView *) splitView effectiveRect:(NSRect) proposedEffectiveRect forDrawnRect:(NSRect) drawnRect ofDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ If a split view has no delegate, or if its delegate doesn’t respond to this me
 
 ## See Also
 
-- [func splitView(NSSplitView, shouldHideDividerAt: Int) -> Bool](nssplitviewdelegate/splitview(_:shouldhidedividerat:).md)
+### Configuring and Drawing View Dividers
+- [func splitView(NSSplitView, shouldHideDividerAt: Int) -> Bool](./splitview%28_,shouldhidedividerat%29.md)
   Allows the delegate to determine whether the user can drag a divider or adjust it off the edge of the split view.
-- [func splitView(NSSplitView, additionalEffectiveRectOfDividerAt: Int) -> NSRect](nssplitviewdelegate/splitview(_:additionaleffectiverectofdividerat:).md)
+- [func splitView(NSSplitView, additionalEffectiveRectOfDividerAt: Int) -> NSRect](./splitview%28_,additionaleffectiverectofdividerat%29.md)
   Allows the delegate to return an additional rectangle where mouse clicks can initiate divider dragging.
 
 

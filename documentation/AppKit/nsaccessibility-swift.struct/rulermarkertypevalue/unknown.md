@@ -1,12 +1,13 @@
 # unknown
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Unknown marker type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ Unknown marker type.
 static let unknown: NSAccessibility.RulerMarkerTypeValue
 ```
 
+```c
+extern NSAccessibilityRulerMarkerTypeValue const NSAccessibilityUnknownMarkerTypeValue;
+```
+
 ## See Also
 
-- [static let centerTabStop: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/centertabstop.md)
+### Markers
+- [static let centerTabStop: NSAccessibility.RulerMarkerTypeValue](./centertabstop.md)
   Center tab stop.
-- [static let decimalTabStop: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/decimaltabstop.md)
+- [static let decimalTabStop: NSAccessibility.RulerMarkerTypeValue](./decimaltabstop.md)
   Decimal tab stop.
-- [static let firstLineIndent: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/firstlineindent.md)
+- [static let firstLineIndent: NSAccessibility.RulerMarkerTypeValue](./firstlineindent.md)
   First line indent marker.
-- [static let headIndent: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/headindent.md)
+- [static let headIndent: NSAccessibility.RulerMarkerTypeValue](./headindent.md)
   Head indent marker.
-- [static let leftTabStop: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/lefttabstop.md)
+- [static let leftTabStop: NSAccessibility.RulerMarkerTypeValue](./lefttabstop.md)
   Left tab stop.
-- [static let rightTabStop: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/righttabstop.md)
+- [static let rightTabStop: NSAccessibility.RulerMarkerTypeValue](./righttabstop.md)
   Right tab stop.
-- [static let tailIndent: NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue/tailindent.md)
+- [static let tailIndent: NSAccessibility.RulerMarkerTypeValue](./tailindent.md)
   Tail indent marker.
 
 

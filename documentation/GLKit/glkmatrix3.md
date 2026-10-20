@@ -1,7 +1,8 @@
 # GLKMatrix3
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `3x3` matrix stored in column-major order.
 
@@ -15,6 +16,10 @@ A `3x3` matrix stored in column-major order.
 
 ```swift
 typealias GLKMatrix3 = _GLKMatrix3
+```
+
+```c
+typedef union _GLKMatrix3 GLKMatrix3;
 ```
 
 ##### Fields
@@ -34,7 +39,8 @@ typealias GLKMatrix3 = _GLKMatrix3
 
 ## See Also
 
-- [typealias GLKMatrix2](glkmatrix2.md)
+### Data Types
+- [typealias GLKMatrix2](./glkmatrix2.md)
   A `2x2` matrix.
 
 

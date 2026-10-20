@@ -1,7 +1,8 @@
 # SFSafariServicesVersion.version27_0
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 case version27_0
+```
+
+```c
+SFSafariServicesVersion27_0
 ```
 
 

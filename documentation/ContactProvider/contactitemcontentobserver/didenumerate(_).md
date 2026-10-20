@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides an array of contact items to the observer.
@@ -18,11 +19,12 @@ func didEnumerate(_: [ContactItem])
 
 #### Discussion
 
-You can call this method multiple times to fulfill the [`suggestedPageSize`](contactitemcontentobserver/suggestedpagesize.md).
+You can call this method multiple times to fulfill the [`suggestedPageSize`](./suggestedpagesize.md).
 
 ## See Also
 
-- [enum ContactItem](contactitem.md)
+### Providing contact items
+- [enum ContactItem](../contactitem.md)
   An item in the contact database.
 
 

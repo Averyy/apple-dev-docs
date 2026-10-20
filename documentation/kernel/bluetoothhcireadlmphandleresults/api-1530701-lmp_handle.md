@@ -1,14 +1,15 @@
 # lmp_handle
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 BluetoothLMPHandle lmp_handle;
 ```
 

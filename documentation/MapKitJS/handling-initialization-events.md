@@ -1,21 +1,22 @@
 # Handling initialization events
 
-**Framework**: MapKit JS
+**Framework**: MapKit JS  
+**Role**: API Collection
 
 Respond to events that trigger when MapKit JS initializes.
 
 #### Overview
 
-Unless you wish to explicitly control initialization timing in JavaScript, use `data-token` instead of handling initialization events directly. See [`Loading the latest version of MapKit JS`](loading-the-latest-version-of-mapkit-js.md) for more information.
+Unless you wish to explicitly control initialization timing in JavaScript, use `data-token` instead of handling initialization events directly. See [Loading the latest version of MapKit JS](./loading-the-latest-version-of-mapkit-js.md) for more information.
 
 The `mapkit` object emits two events to indicate the success or failure of a configuration operation. The initialization process configures MapKit JS. In addition, there are two events indicate the success or failure of a batch of library loads.
 
 | Event | Interface | Summary |
 | --- | --- | --- |
-| `configuration-change` | [`MapKitConfigurationChangeEvent`](mapkitconfigurationchangeevent.md) | The MapKit configuration changes due to either a successful initialization or a refresh. |
-| `error` | [`MapKitConfigurationErrorEvent`](mapkitconfigurationerrorevent.md) | MapKit fails to initialize. |
-| `load` | [`MapKitLibraryLoadEvent`](mapkitlibraryloadevent.md) | A batch of libraries loads. |
-| `load-error` | [`MapKitLibraryLoadEvent`](mapkitlibraryloadevent.md) | A batch of libraries fails to load. |
+| `configuration-change` | [`MapKitConfigurationChangeEvent`](./mapkitconfigurationchangeevent.md) | The MapKit configuration changes due to either a successful initialization or a refresh. |
+| `error` | [`MapKitConfigurationErrorEvent`](./mapkitconfigurationerrorevent.md) | MapKit fails to initialize. |
+| `load` | [`MapKitLibraryLoadEvent`](./mapkitlibraryloadevent.md) | A batch of libraries loads. |
+| `load-error` | [`MapKitLibraryLoadEvent`](./mapkitlibraryloadevent.md) | A batch of libraries fails to load. |
 
 MapKit JS invokes these events asynchronously upon success or failure of the initialization request. The example below shows a common use case:
 
@@ -37,29 +38,30 @@ mapkit.addEventListener("configuration-change", function(event) {
 ## Topics
 
 ### Events
-- [class MapKitConfigurationChangeEvent](mapkitconfigurationchangeevent.md)
+- [class MapKitConfigurationChangeEvent](./mapkitconfigurationchangeevent.md)
   An event that represents a configuration change.
-- [class MapKitConfigurationErrorEvent](mapkitconfigurationerrorevent.md)
+- [class MapKitConfigurationErrorEvent](./mapkitconfigurationerrorevent.md)
   An event that represents a configuration error.
-- [class MapKitLibraryLoadEvent](mapkitlibraryloadevent.md)
+- [class MapKitLibraryLoadEvent](./mapkitlibraryloadevent.md)
   An event that occurs when the MapKit JS library is loaded or fails loading.
 ### Initialization and error status
-- [const ConfigurationChangeStatus](configurationchangestatus.md)
+- [const ConfigurationChangeStatus](./configurationchangestatus.md)
   Values that represent the status of a configuration change.
-- [const ConfigurationErrorStatus](configurationerrorstatus.md)
+- [const ConfigurationErrorStatus](./configurationerrorstatus.md)
   A value that represents the status of a configuration error.
 
 ## See Also
 
-- [init(options)](mapkit/init.md)
+### Initialization
+- [init(options)](./mapkit/init.md)
   Initializes MapKit JS by providing an authorization callback function and optional language.
-- [interface MapKitInitializationOptions](mapkitinitializationoptions.md)
+- [interface MapKitInitializationOptions](./mapkitinitializationoptions.md)
   Initialization options for MapKit JS.
-- [Libraries](mapkit/libraries.md)
+- [Libraries](./mapkit/libraries.md)
   The list of available libraries.
-- [loadedLibraries](mapkit/loadedlibraries.md)
+- [loadedLibraries](./mapkit/loadedlibraries.md)
   A string that describes the list of loaded libraries.
-- [load(libraryNames)](mapkit/load.md)
+- [load(libraryNames)](./mapkit/load.md)
   Tells MapKit JS which libraries to load.
 
 

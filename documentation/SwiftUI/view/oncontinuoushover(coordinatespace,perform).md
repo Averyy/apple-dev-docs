@@ -1,7 +1,8 @@
 # onContinuousHover(coordinateSpace:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
@@ -18,6 +19,13 @@ Adds an action to perform when the pointer enters, moves within, and exits the v
 ```swift
 nonisolated
 func onContinuousHover(coordinateSpace: some CoordinateSpaceProtocol = .local, perform action: @escaping (HoverPhase) -> Void) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onContinuousHover(coordinateSpace: CoordinateSpace = .local, perform action: @escaping (HoverPhase) -> Void) -> some View
 ```
 
 #### Return Value
@@ -55,28 +63,29 @@ var body: some View {
 
 ## Parameters
 
-- `coordinateSpace`: The coordinate space for the location values. The default value is [`CoordinateSpace.local`](coordinatespace/local.md).
-- `action`: The action to perform whenever the pointer enters, moves within, or exits the view’s bounds. The closure takes a `phase` input that has the value [`HoverPhase.active(_:)`](hoverphase/active(_:).md) and contains the pointer’s coordinates if the pointer is within the view’s bounds. The closure receives the [`HoverPhase.ended`](hoverphase/ended.md) phase when the pointer leaves the view’s bounds.
+- `coordinateSpace`: The coordinate space for the location values. The default value is [`CoordinateSpace.local`](../coordinatespace/local.md).
+- `action`: The action to perform whenever the pointer enters, moves within, or exits the view’s bounds. The closure takes a `phase` input that has the value [`HoverPhase.active(_:)`](../hoverphase/active%28_%29.md) and contains the pointer’s coordinates if the pointer is within the view’s bounds. The closure receives the [`HoverPhase.ended`](../hoverphase/ended.md) phase when the pointer leaves the view’s bounds.
 
 ## See Also
 
-- [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
+### Responding to hover events
+- [func onHover(perform: (Bool) -> Void) -> some View](./onhover%28perform%29.md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
+- [func hoverEffect(_:isEnabled:)](./hovereffect%28_,isenabled%29.md)
   Applies a hover effect to this view.
-- [func hoverEffectDisabled(Bool) -> some View](view/hovereffectdisabled(_:).md)
+- [func hoverEffectDisabled(Bool) -> some View](./hovereffectdisabled%28_%29.md)
   Adds a condition that controls whether this view can display hover effects.
-- [func defaultHoverEffect(_:)](view/defaulthovereffect(_:).md)
+- [func defaultHoverEffect(_:)](./defaulthovereffect%28_%29.md)
   Sets the default hover effect to use for views within this view.
-- [var isHoverEffectEnabled: Bool](environmentvalues/ishovereffectenabled.md)
+- [var isHoverEffectEnabled: Bool](../environmentvalues/ishovereffectenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows hover effects to be displayed.
-- [enum HoverPhase](hoverphase.md)
+- [enum HoverPhase](../hoverphase.md)
   The current hovering state and value of the pointer.
-- [struct HoverEffectPhaseOverride](hovereffectphaseoverride.md)
+- [struct HoverEffectPhaseOverride](../hovereffectphaseoverride.md)
   Options for overriding a hover effect’s current phase.
-- [struct OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
+- [struct OrnamentHoverContentEffect](../ornamenthovercontenteffect.md)
   Presents an ornament on hover using a custom effect.
-- [struct OrnamentHoverEffect](ornamenthovereffect.md)
+- [struct OrnamentHoverEffect](../ornamenthovereffect.md)
   Presents an ornament on hover.
 
 

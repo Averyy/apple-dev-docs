@@ -11,15 +11,15 @@ Apple School Manager and Apple Business help IT administrators automate device m
 ## Topics
 
 ### Apple School Manager and Apple Business APIs
-- [Apple School Manager API](../appleschoolmanagerapi/appleschoolmanagerapi.md)
+- [Apple School Manager API](https://developer.apple.com/documentation/appleschoolmanagerapi)
   Automate device management activities and view device information in Apple School Manager.
-- [Apple Business API](../applebusinessapi/applebusinessapi.md)
+- [Apple Business API](https://developer.apple.com/documentation/applebusinessapi)
   Automate device management activities, view device information, and manage users and user groups in Apple Business.
 ### Essentials
-- [Apple School Manager and Apple Business APIs changelog](apple-school-manager-and-apple-business-api-changelog.md)
+- [Apple School Manager and Apple Business APIs changelog](./apple-school-manager-and-apple-business-api-changelog.md)
   Learn about new features and updates in the Apple School Manager and Apple Business APIs.
 ### Authorization
-- [Implementing OAuth for the Apple School Manager and Apple Business API](implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md)
+- [Implementing OAuth for the Apple School Manager and Apple Business API](./implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md)
   Manage secure access to Apple School Manager and Apple Business API accounts.
 
 

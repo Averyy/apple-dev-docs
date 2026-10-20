@@ -1,7 +1,8 @@
 # functionGraph
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the graph representing how to stitch functions together.
 
@@ -18,6 +19,10 @@ Sets the graph representing how to stitch functions together.
 ```swift
 @NSCopying
 var functionGraph: MTLFunctionStitchingGraph? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MTLFunctionStitchingGraph * functionGraph;
 ```
 
 

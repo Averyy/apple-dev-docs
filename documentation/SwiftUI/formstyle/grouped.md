@@ -1,7 +1,8 @@
 # grouped
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A form style with grouped rows.
 
@@ -21,15 +22,18 @@ nonisolated
 static var grouped: GroupedFormStyle { get }
 ```
 
+Available when `Self` is `GroupedFormStyle`.
+
 #### Discussion
 
 Rows in a grouped rows form have leading aligned labels and trailing aligned controls within visually grouped sections.
 
 ## See Also
 
-- [static var automatic: AutomaticFormStyle](formstyle/automatic.md)
+### Getting built-in form styles
+- [static var automatic: AutomaticFormStyle](./automatic.md)
   The default form style.
-- [static var columns: ColumnsFormStyle](formstyle/columns.md)
+- [static var columns: ColumnsFormStyle](./columns.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
 
 

@@ -1,7 +1,8 @@
 # IOUSBDeviceCapabilityBillboardAltMode
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for the billboard alternative mode device capability.
 
@@ -10,7 +11,7 @@ The structure for the billboard alternative mode device capability.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBDeviceCapabilityBillboardAltMode IOUSBDeviceCapabilityBillboardAltMode;
 ```
 
@@ -21,49 +22,50 @@ See *Universal Serial Bus Device Class Definition for Billboard Devices*, 1.2.1,
 ## Topics
 
 ### Instance Properties
-- [bDescriptorType](iousbdevicecapabilitybillboardaltmode/2870159-bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilitybillboardaltmode/2870151-bdevcapabilitytype.md)
-- [bIndex](iousbdevicecapabilitybillboardaltmode/2870162-bindex.md)
-- [bLength](iousbdevicecapabilitybillboardaltmode/2870161-blength.md)
-- [dwAlternateModeVdo](iousbdevicecapabilitybillboardaltmode/2870163-dwalternatemodevdo.md)
+- [bDescriptorType](./iousbdevicecapabilitybillboardaltmode/api-2870159-bdescriptortype.md)
+- [bDevCapabilityType](./iousbdevicecapabilitybillboardaltmode/api-2870151-bdevcapabilitytype.md)
+- [bIndex](./iousbdevicecapabilitybillboardaltmode/api-2870162-bindex.md)
+- [bLength](./iousbdevicecapabilitybillboardaltmode/api-2870161-blength.md)
+- [dwAlternateModeVdo](./iousbdevicecapabilitybillboardaltmode/api-2870163-dwalternatemodevdo.md)
 
 ## See Also
 
-- [IOUSBPlatformCapabilityDescriptor](iousbplatformcapabilitydescriptor.md)
+### Capability Descriptors
+- [IOUSBPlatformCapabilityDescriptor](./iousbplatformcapabilitydescriptor.md)
   The structure for the platform capability descriptor.
-- [IOUSBPlatformCapabilityDescriptorPtr](iousbplatformcapabilitydescriptorptr.md)
+- [IOUSBPlatformCapabilityDescriptorPtr](./iousbplatformcapabilitydescriptorptr.md)
   A pointer to a USB platform capability descriptor.
-- [IOUSBDeviceCapabilityBillboard](iousbdevicecapabilitybillboard.md)
+- [IOUSBDeviceCapabilityBillboard](./iousbdevicecapabilitybillboard.md)
   The structure for the billboard device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfig](iousbdevicecapabilitybillboardaltconfig.md)
+- [IOUSBDeviceCapabilityBillboardAltConfig](./iousbdevicecapabilitybillboardaltconfig.md)
   The structure for the billboard alternative configuration device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](iousbdevicecapabilitybillboardaltconfigcompatibility.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](./iousbdevicecapabilitybillboardaltconfigcompatibility.md)
   The structure for the billboard alternative configuration compatibility device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigPtr](iousbdevicecapabilitybillboardaltconfigptr.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigPtr](./iousbdevicecapabilitybillboardaltconfigptr.md)
   A pointer to a USB device capability billboard alternative configuration structure.
-- [IOUSBDeviceCapabilityBillboardAltModePtr](iousbdevicecapabilitybillboardaltmodeptr.md)
+- [IOUSBDeviceCapabilityBillboardAltModePtr](./iousbdevicecapabilitybillboardaltmodeptr.md)
   A pointer to a USB device capability billboard alternative mode structure.
-- [IOUSBDeviceCapabilityBillboardPtr](iousbdevicecapabilitybillboardptr.md)
+- [IOUSBDeviceCapabilityBillboardPtr](./iousbdevicecapabilitybillboardptr.md)
   A pointer to a USB device capability billboard object.
-- [IOUSBDeviceCapabilityContainerID](iousbdevicecapabilitycontainerid.md)
+- [IOUSBDeviceCapabilityContainerID](./iousbdevicecapabilitycontainerid.md)
   The structure for the container ID device capability.
-- [IOUSBDeviceCapabilityContainerIDPtr](iousbdevicecapabilitycontaineridptr.md)
+- [IOUSBDeviceCapabilityContainerIDPtr](./iousbdevicecapabilitycontaineridptr.md)
   A pointer to a USB device capability container ID.
-- [IOUSBDeviceCapabilityDescriptorHeader](iousbdevicecapabilitydescriptorheader.md)
+- [IOUSBDeviceCapabilityDescriptorHeader](./iousbdevicecapabilitydescriptorheader.md)
   The device capability descriptor header.
-- [IOUSBDeviceCapabilityDescriptorHeaderPtr](iousbdevicecapabilitydescriptorheaderptr.md)
+- [IOUSBDeviceCapabilityDescriptorHeaderPtr](./iousbdevicecapabilitydescriptorheaderptr.md)
   A pointer to a device capability descriptor header.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](iousbdevicecapabilitysuperspeedplususb.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](./iousbdevicecapabilitysuperspeedplususb.md)
   The structure for the SuperSpeedPlus USB device capability.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSBPtr](iousbdevicecapabilitysuperspeedplususbptr.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSBPtr](./iousbdevicecapabilitysuperspeedplususbptr.md)
   A pointer to a SuperSpeedPlus USB device capability structure.
-- [IOUSBDeviceCapabilitySuperSpeedUSB](iousbdevicecapabilitysuperspeedusb.md)
+- [IOUSBDeviceCapabilitySuperSpeedUSB](./iousbdevicecapabilitysuperspeedusb.md)
   The structure for the SuperSpeed USB device capability.
-- [IOUSBDeviceCapabilitySuperSpeedUSBPtr](iousbdevicecapabilitysuperspeedusbptr.md)
+- [IOUSBDeviceCapabilitySuperSpeedUSBPtr](./iousbdevicecapabilitysuperspeedusbptr.md)
   A pointer to a SuperSpeed USB device capability structure.
-- [IOUSBDeviceCapabilityUSB2Extension](iousbdevicecapabilityusb2extension.md)
+- [IOUSBDeviceCapabilityUSB2Extension](./iousbdevicecapabilityusb2extension.md)
   The structure for the USB 2.0 extension device capability.
-- [IOUSBDeviceCapabilityUSB2ExtensionPtr](iousbdevicecapabilityusb2extensionptr.md)
+- [IOUSBDeviceCapabilityUSB2ExtensionPtr](./iousbdevicecapabilityusb2extensionptr.md)
   A pointer to a USB 2.0 extension device capability structure.
 
 

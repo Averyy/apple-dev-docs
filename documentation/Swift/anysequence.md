@@ -1,7 +1,8 @@
 # AnySequence
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased sequence.
 
@@ -28,43 +29,44 @@ An instance of `AnySequence` forwards its operations to an underlying base seque
 ## Topics
 
 ### Initializers
-- [init<I>(() -> I)](anysequence/init(_:)-25934.md)
+- [init<I>(() -> I)](./anysequence/init%28_%29-25934.md)
   Creates a sequence whose `makeIterator()` method forwards to `makeUnderlyingIterator`.
-- [init<S>(S)](anysequence/init(_:)-307a9.md)
+- [init<S>(S)](./anysequence/init%28_%29-307a9.md)
   Creates a new sequence that wraps and forwards operations to `base`.
 ### Instance Methods
-- [func drop(while: (Element) throws -> Bool) rethrows -> AnySequence<Element>](anysequence/drop(while:).md)
-- [func dropFirst(Int) -> AnySequence<Element>](anysequence/dropfirst(_:).md)
-- [func dropLast(Int) -> [Element]](anysequence/droplast(_:).md)
-- [func filter((Element) throws -> Bool) rethrows -> [Element]](anysequence/filter(_:).md)
-- [func forEach((Element) throws -> Void) rethrows](anysequence/foreach(_:).md)
-- [func map<T, E>((Element) throws(E) -> T) throws(E) -> [T]](anysequence/map(_:).md)
-- [func prefix(Int) -> AnySequence<Element>](anysequence/prefix(_:).md)
-- [func prefix(while: (Element) throws -> Bool) rethrows -> [Element]](anysequence/prefix(while:).md)
-- [func suffix(Int) -> [Element]](anysequence/suffix(_:).md)
+- [func drop(while: (Element) throws -> Bool) rethrows -> AnySequence<Element>](./anysequence/drop%28while%29.md)
+- [func dropFirst(Int) -> AnySequence<Element>](./anysequence/dropfirst%28_%29.md)
+- [func dropLast(Int) -> [Element]](./anysequence/droplast%28_%29.md)
+- [func filter((Element) throws -> Bool) rethrows -> [Element]](./anysequence/filter%28_%29.md)
+- [func forEach((Element) throws -> Void) rethrows](./anysequence/foreach%28_%29.md)
+- [func map<T, E>((Element) throws(E) -> T) throws(E) -> [T]](./anysequence/map%28_%29.md)
+- [func prefix(Int) -> AnySequence<Element>](./anysequence/prefix%28_%29.md)
+- [func prefix(while: (Element) throws -> Bool) rethrows -> [Element]](./anysequence/prefix%28while%29.md)
+- [func suffix(Int) -> [Element]](./anysequence/suffix%28_%29.md)
 ### Default Implementations
-- [Sequence Implementations](anysequence/sequence-implementations.md)
+- [Sequence Implementations](./anysequence/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sequence](sequence.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct AnyCollection](anycollection.md)
+### Type-Erasing Wrappers
+- [struct AnyCollection](./anycollection.md)
   A type-erased wrapper over any collection with indices that support forward traversal.
-- [struct AnyBidirectionalCollection](anybidirectionalcollection.md)
+- [struct AnyBidirectionalCollection](./anybidirectionalcollection.md)
   A type-erased wrapper over any collection with indices that support bidirectional traversal.
-- [struct AnyRandomAccessCollection](anyrandomaccesscollection.md)
+- [struct AnyRandomAccessCollection](./anyrandomaccesscollection.md)
   A type-erased wrapper over any collection with indices that support random access traversal.
-- [struct AnyIterator](anyiterator.md)
+- [struct AnyIterator](./anyiterator.md)
   A type-erased iterator of `Element`.
-- [struct AnyIndex](anyindex.md)
+- [struct AnyIndex](./anyindex.md)
   A wrapper over an underlying index that hides the specific underlying type.
-- [struct AnyHashable](anyhashable.md)
+- [struct AnyHashable](./anyhashable.md)
   A type-erased hashable value.
 
 

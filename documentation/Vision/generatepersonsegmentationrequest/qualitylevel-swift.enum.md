@@ -1,7 +1,8 @@
 # GeneratePersonSegmentationRequest.QualityLevel
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the levels of quality for a person-segmentation request.
 
@@ -23,31 +24,32 @@ enum QualityLevel
 ## Topics
 
 ### Getting the quality levels
-- [GeneratePersonSegmentationRequest.QualityLevel.accurate](generatepersonsegmentationrequest/qualitylevel-swift.enum/accurate.md)
+- [GeneratePersonSegmentationRequest.QualityLevel.accurate](./qualitylevel-swift.enum/accurate.md)
   A quality option that prefers image quality over performance.
-- [GeneratePersonSegmentationRequest.QualityLevel.balanced](generatepersonsegmentationrequest/qualitylevel-swift.enum/balanced.md)
+- [GeneratePersonSegmentationRequest.QualityLevel.balanced](./qualitylevel-swift.enum/balanced.md)
   A quality option that prefers processing that balances image quality and performance.
-- [GeneratePersonSegmentationRequest.QualityLevel.fast](generatepersonsegmentationrequest/qualitylevel-swift.enum/fast.md)
+- [GeneratePersonSegmentationRequest.QualityLevel.fast](./qualitylevel-swift.enum/fast.md)
   A quality option that prefers performance over image quality.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.property.md)
+### Configuring a request
+- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.property.md)
   A value that indicates how the request balances accuracy and performance.
-- [var outputPixelFormatType: OSType](generatepersonsegmentationrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./outputpixelformattype.md)
   The desired pixel format of the observation.
-- [var supportedOutputPixelFormats: [OSType]](generatepersonsegmentationrequest/supportedoutputpixelformats.md)
+- [var supportedOutputPixelFormats: [OSType]](./supportedoutputpixelformats.md)
   The collection of supported pixel format types.
 
 

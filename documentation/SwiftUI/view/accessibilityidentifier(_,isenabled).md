@@ -1,7 +1,8 @@
 # accessibilityIdentifier(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses the string you specify to identify the view.
 
@@ -32,7 +33,8 @@ Use this value for testing. It isn’t visible to the user.
 
 ## See Also
 
-- [func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityidentifier(_:).md)
+### Identifying elements
+- [func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityidentifier%28_%29.md)
   Uses the string you specify to identify the view.
 
 

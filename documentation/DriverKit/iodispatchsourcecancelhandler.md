@@ -1,27 +1,29 @@
 # IODispatchSourceCancelHandler
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to execute when a canceled dispatch source stops executing tasks.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef void (^)(void) IODispatchSourceCancelHandler;
 ```
 
 ## See Also
 
-- [SetEnableWithCompletion](iointerruptdispatchsource/setenablewithcompletion.md)
+### Starting and Stopping the Interrupt Source
+- [SetEnableWithCompletion](./iointerruptdispatchsource/setenablewithcompletion.md)
   Enables or disables the delivery of interrupts.
-- [Cancel](iointerruptdispatchsource/cancel.md)
+- [Cancel](./iointerruptdispatchsource/cancel.md)
   Cancels all callbacks from the event source.
 
 

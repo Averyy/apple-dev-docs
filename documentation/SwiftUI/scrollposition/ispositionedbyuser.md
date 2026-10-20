@@ -1,7 +1,8 @@
 # isPositionedByUser
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the scroll view has been positioned by the user.
 

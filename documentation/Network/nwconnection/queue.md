@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which connection events are delivered.
 
@@ -22,13 +23,14 @@ final var queue: DispatchQueue? { get }
 
 ## See Also
 
-- [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](nwconnection/metadata(definition:).md)
+### Inspecting Connections
+- [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](./metadata%28definition%29.md)
   Retrieves the connection-wide metadata for a specific protocol.
-- [class NWProtocolMetadata](nwprotocolmetadata.md)
+- [class NWProtocolMetadata](../nwprotocolmetadata.md)
   The abstract superclass for specifying metadata about a network protocol.
-- [let endpoint: NWEndpoint](nwconnection/endpoint.md)
+- [let endpoint: NWEndpoint](./endpoint.md)
   The remote endpoint with which the connection was initialized.
-- [let parameters: NWParameters](nwconnection/parameters.md)
+- [let parameters: NWParameters](./parameters.md)
   The parameters with which the connection was initialized.
 
 

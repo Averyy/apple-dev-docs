@@ -1,7 +1,8 @@
 # synchronizationClock
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A clock to use for output synchronization.
 
@@ -19,9 +20,13 @@ A clock to use for output synchronization.
 var synchronizationClock: CMClock? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CMClockRef synchronizationClock;
+```
+
 #### Discussion
 
-The synchronization clock provides the timebase for sample buffers that the stream outputs. Use it to synchronize with the clocks of other media sources, such as the [`synchronizationClock`](https://developer.apple.com/documentation/avfoundation/avcapturesession/synchronizationclock) of [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession).
+The synchronization clock provides the timebase for sample buffers that the stream outputs. Use it to synchronize with the clocks of other media sources, such as the [`synchronizationClock`](../../AVFoundation/avcapturesession/synchronizationclock.md) of [`AVCaptureSession`](../../AVFoundation/avcapturesession.md).
 
 
 ---

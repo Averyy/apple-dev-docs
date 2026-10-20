@@ -1,7 +1,8 @@
 # requestDisambiguation(among:dialog:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Request that the user disambiguate amongst an array of values for this parameter.
 
@@ -11,7 +12,7 @@ Request that the user disambiguate amongst an array of values for this parameter
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Request that the user disambiguate amongst an array of values for this parameter
 ```swift
 func requestDisambiguation(among itemsToDisambiguate: [Value.ValueType], dialog: IntentDialog? = nil) async throws -> Value.ValueType
 ```
+
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 #### Return Value
 

@@ -1,14 +1,15 @@
 # landmark
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A website accessibility landmark that contains the element.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS ?+
+- macOS
 - tvOS 18.0+
 - visionOS 2.0+
 
@@ -18,13 +19,18 @@ A website accessibility landmark that contains the element.
 static var landmark: BEAccessibilityContainerType { get }
 ```
 
+```c
+BEAccessibilityContainerTypeLandmark
+```
+
 ## See Also
 
-- [static var frame: BEAccessibilityContainerType](beaccessibilitycontainertype/frame.md)
+### Layout and navigation
+- [static var frame: BEAccessibilityContainerType](./frame.md)
   A frame that contains the element.
-- [static var scrollArea: BEAccessibilityContainerType](beaccessibilitycontainertype/scrollarea.md)
+- [static var scrollArea: BEAccessibilityContainerType](./scrollarea.md)
   A scroll area that contains the element.
-- [static var semanticGroup: BEAccessibilityContainerType](beaccessibilitycontainertype/semanticgroup.md)
+- [static var semanticGroup: BEAccessibilityContainerType](./semanticgroup.md)
   A semantic group that contains the element.
 
 

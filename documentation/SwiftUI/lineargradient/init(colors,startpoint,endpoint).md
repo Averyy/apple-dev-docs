@@ -1,7 +1,8 @@
 # init(colors:startPoint:endPoint:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linear gradient from a collection of colors.
 
@@ -23,9 +24,10 @@ nonisolated init(colors: [Color], startPoint: UnitPoint, endPoint: UnitPoint)
 
 ## See Also
 
-- [init(gradient: Gradient, startPoint: UnitPoint, endPoint: UnitPoint)](lineargradient/init(gradient:startpoint:endpoint:).md)
+### Creating a linear gradient
+- [init(gradient: Gradient, startPoint: UnitPoint, endPoint: UnitPoint)](./init%28gradient,startpoint,endpoint%29.md)
   Creates a linear gradient from a base gradient.
-- [init(stops: [Gradient.Stop], startPoint: UnitPoint, endPoint: UnitPoint)](lineargradient/init(stops:startpoint:endpoint:).md)
+- [init(stops: [Gradient.Stop], startPoint: UnitPoint, endPoint: UnitPoint)](./init%28stops,startpoint,endpoint%29.md)
   Creates a linear gradient from a collection of color stops.
 
 

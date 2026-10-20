@@ -1,17 +1,22 @@
 # NSRuleEditor.NestingMode.compound
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unlimited nesting and compound rows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case compound
+```
+
+```c
+NSRuleEditorNestingModeCompound
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This is the default.
 
 ## See Also
 
-- [NSRuleEditor.NestingMode.list](nsruleeditor/nestingmode-swift.enum/list.md)
+### Modes
+- [NSRuleEditor.NestingMode.list](./list.md)
   Allows a single list, with no nesting and no compound rows.
-- [NSRuleEditor.NestingMode.simple](nsruleeditor/nestingmode-swift.enum/simple.md)
+- [NSRuleEditor.NestingMode.simple](./simple.md)
   One compound row at the top with subrows beneath it, and no further nesting allowed.
-- [NSRuleEditor.NestingMode.single](nsruleeditor/nestingmode-swift.enum/single.md)
+- [NSRuleEditor.NestingMode.single](./single.md)
   Only a single row is allowed.
 
 

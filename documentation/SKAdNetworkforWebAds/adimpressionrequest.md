@@ -1,7 +1,8 @@
 # AdImpressionRequest
 
 **Framework**: SKAdNetwork for Web Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body that devices send to fetch the web ad impression from the ad network’s server.
 
@@ -10,30 +11,31 @@ The request body that devices send to fetch the web ad impression from the ad ne
 
 ## Declaration
 
-```swift
+```
 object AdImpressionRequest
 ```
 
 ## Mentions
 
-- [Creating an attributable ad link](creating-an-attributable-ad-link.md)
+- [Creating an attributable ad link](./creating-an-attributable-ad-link.md)
 
 #### Discussion
 
-The device generates the [`AdImpressionRequest`](adimpressionrequest.md) and sends it in the body of a [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md) request. The device uses the value from the `attributionSourceNonce` in a web ad link for the `source_nonce` value in this request. The ad network looks up the fully signed web ad impression using the `source_nonce` value, which it creates when it serves the attributable ad link.
+The device generates the [`AdImpressionRequest`](./adimpressionrequest.md) and sends it in the body of a [`Get a Signed Web Ad Impression Payload`](./get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md) request. The device uses the value from the `attributionSourceNonce` in a web ad link for the `source_nonce` value in this request. The ad network looks up the fully signed web ad impression using the `source_nonce` value, which it creates when it serves the attributable ad link.
 
-> ❗ **Important**:  The `attributionSourceNonce` in a web ad, the `source_nonce` in this request, and the `nonce` in a corresponding [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
+> ❗ **Important**:  The `attributionSourceNonce` in a web ad, the `source_nonce` in this request, and the `nonce` in a corresponding [`AdImpressionResponse`](./adimpressionresponse.md) all represent the same UUID, but the encoding varies.
 
 ## Properties
 
 - `source_domain` (string) *(required)*: The effective top-level domain and one more preceding path component (eTLD+1) representation of the ad network that seeks ad attribution.
 - `source_engagement_type` (string) *(required)*: A key that describes the type of user action that leads to the ad impression. The value is `"click_to_App_Store"`.
 - `source_nonce` (string) *(required)*: A Base64URL-encoded string representation of a UUID. This value is the same value the ad network provides as the `attributionSourceNonce` in the attributable ad link.
-- `version` (string) *(required)*: The SKAdNetwork version of `"4.0"` or later. See [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes) for version information.
+- `version` (string) *(required)*: The SKAdNetwork version of `"4.0"` or later. See [SKAdNetwork release notes](../StoreKit/skadnetwork-release-notes.md) for version information.
 
 ## See Also
 
-- [Get a Signed Web Ad Impression Payload](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md)
+### Receiving a request for a web ad  payload
+- [Get a Signed Web Ad Impression Payload](./get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md)
   An endpoint you provide to receive requests from devices to serve signed ad interactions.
 
 

@@ -1,7 +1,8 @@
 # withoutMounting
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that no volume should be mounted during resolution of the bookmark data.
 
@@ -20,13 +21,18 @@ Specifies that no volume should be mounted during resolution of the bookmark dat
 static var withoutMounting: NSURL.BookmarkResolutionOptions { get }
 ```
 
+```c
+NSURLBookmarkResolutionWithoutMounting
+```
+
 ## See Also
 
-- [static var withoutUI: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutui.md)
+### Constants
+- [static var withoutUI: NSURL.BookmarkResolutionOptions](./withoutui.md)
   Specifies that no UI feedback should accompany resolution of the bookmark data.
-- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withsecurityscope.md)
+- [static var withSecurityScope: NSURL.BookmarkResolutionOptions](./withsecurityscope.md)
   Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
-- [static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing.md)
+- [static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions](./withoutimplicitstartaccessing.md)
   A property that specifies that resolution doesn’t implicitly start accessing the ephemeral security-scoped resource.
 
 

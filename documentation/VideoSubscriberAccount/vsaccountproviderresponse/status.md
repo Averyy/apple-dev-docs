@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status code for the response.
 
@@ -9,7 +10,7 @@ The status code for the response.
 - iOS 10.2+
 - iPadOS 10.2+
 - Mac Catalyst 10.2+
-- macOS ?+
+- macOS
 - tvOS 10.1+
 - visionOS 1.0+
 
@@ -19,15 +20,20 @@ The status code for the response.
 var status: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * status;
+```
+
 #### Discussion
 
 This property is `nil` if the response doesn’t match an existing status type.
 
 ## See Also
 
-- [var authenticationScheme: VSAccountProviderAuthenticationScheme](vsaccountproviderresponse/authenticationscheme.md)
+### Getting Response Info
+- [var authenticationScheme: VSAccountProviderAuthenticationScheme](./authenticationscheme.md)
   The authentication scheme type of the response.
-- [var body: String?](vsaccountproviderresponse/body.md)
+- [var body: String?](./body.md)
   The raw response from the provider.
 
 

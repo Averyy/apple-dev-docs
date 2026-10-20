@@ -1,7 +1,8 @@
 # dynamic
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to bring the app to the foreground if conditions permit it.
 
@@ -22,7 +23,7 @@ static var dynamic: IntentModes.ForegroundMode { get }
 
 #### Discussion
 
-This option allows you to choose whether to transition an action from the background to the foreground. If your app is running in the background, call the [`continueInForeground(_:alwaysConfirm:)`](appintent/continueinforeground(_:alwaysconfirm:).md) or [`needsToContinueInForegroundError(_:alwaysConfirm:)`](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md) method from your intent’s [`perform()`](appintent/perform().md) method to bring it to the foreground. If you don’t call one of these methods, the app continues running the app intent’s code in the background.
+This option allows you to choose whether to transition an action from the background to the foreground. If your app is running in the background, call the [`continueInForeground(_:alwaysConfirm:)`](../../appintent/continueinforeground%28_,alwaysconfirm%29.md) or [`needsToContinueInForegroundError(_:alwaysConfirm:)`](../../appintent/needstocontinueinforegrounderror%28_,alwaysconfirm%29.md) method from your intent’s [`perform()`](../../appintent/perform%28%29.md) method to bring it to the foreground. If you don’t call one of these methods, the app continues running the app intent’s code in the background.
 
 
 ---

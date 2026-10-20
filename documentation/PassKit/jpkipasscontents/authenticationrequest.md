@@ -1,7 +1,8 @@
 # JPKIPassContents.AuthenticationRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The user authentification request based on the generics type.
 
@@ -22,22 +23,23 @@ Use this structure to define valid user authentication request options for `User
 ## Topics
 
 ### Creating authentication request options
-- [init(type: JPKIPassContents.UserIdentity.AuthenticationType)](jpkipasscontents/authenticationrequest/init(type:)-hz9q.md)
+- [init(type: JPKIPassContents.UserIdentity.AuthenticationType)](./authenticationrequest/init%28type%29-hz9q.md)
   Initializes the user authentication request options for the user identity type.
-- [init(type: JPKIPassContents.SigningIdentity.AuthenticationType)](jpkipasscontents/authenticationrequest/init(type:)-25dbn.md)
+- [init(type: JPKIPassContents.SigningIdentity.AuthenticationType)](./authenticationrequest/init%28type%29-25dbn.md)
   Initializes the user authentication request options for the signing identity type.
 
 ## See Also
 
-- [JPKIPassContents.UserIdentity](jpkipasscontents/useridentity-swift.struct.md)
+### Defining access to the identity passes
+- [JPKIPassContents.UserIdentity](./useridentity-swift.struct.md)
   The functionality for the type of user identification.
-- [JPKIPassContents.SigningIdentity](jpkipasscontents/signingidentity-swift.struct.md)
+- [JPKIPassContents.SigningIdentity](./signingidentity-swift.struct.md)
   The authentication for signing user identification.
-- [JPKIPassContents.Signature](jpkipasscontents/signature.md)
+- [JPKIPassContents.Signature](./signature.md)
   The resulting signed data and certificate you use to sign the pass.
-- [JPKIPassContents.Certificate](jpkipasscontents/certificate.md)
+- [JPKIPassContents.Certificate](./certificate.md)
   The certificate data associated with an identity document.
-- [JPKIPassContents.Identity](jpkipasscontents/identity.md)
+- [JPKIPassContents.Identity](./identity.md)
   Defines the common functionality that JPKI digital identities support.
 
 

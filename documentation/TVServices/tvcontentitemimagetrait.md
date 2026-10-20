@@ -1,7 +1,8 @@
 # TVContentItemImageTrait
 
 **Framework**: TV Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Traits describing the type of image you want.
 
@@ -14,39 +15,44 @@ Traits describing the type of image you want.
 struct TVContentItemImageTrait
 ```
 
+```c
+enum TVContentItemImageTrait : NSUInteger;
+```
+
 ## Topics
 
 ### Traits
-- [static var screenScale1x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale1x.md)
+- [static var screenScale1x: TVContentItemImageTrait](./tvcontentitemimagetrait/screenscale1x.md)
   An image meant for a regular display.
-- [static var screenScale2x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale2x.md)
+- [static var screenScale2x: TVContentItemImageTrait](./tvcontentitemimagetrait/screenscale2x.md)
   An image meant for a Retina display.
-- [static var userInterfaceStyleDark: TVContentItemImageTrait](tvcontentitemimagetrait/userinterfacestyledark.md)
+- [static var userInterfaceStyleDark: TVContentItemImageTrait](./tvcontentitemimagetrait/userinterfacestyledark.md)
   An image meant for a dark user interface.
-- [static var userInterfaceStyleLight: TVContentItemImageTrait](tvcontentitemimagetrait/userinterfacestylelight.md)
+- [static var userInterfaceStyleLight: TVContentItemImageTrait](./tvcontentitemimagetrait/userinterfacestylelight.md)
   An image meant for a light user interface.
 ### Initializers
-- [init(rawValue: UInt)](tvcontentitemimagetrait/init(rawvalue:).md)
+- [init(rawValue: UInt)](./tvcontentitemimagetrait/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var imageURL: URL?](tvcontentitem/imageurl.md)
+### Accessing Image Resources
+- [var imageURL: URL?](./tvcontentitem/imageurl.md)
   A URL giving the location of the image to be displayed for this content item.
-- [func imageURL(forTraits: TVContentItemImageTrait) -> URL?](tvcontentitem/imageurl(fortraits:).md)
+- [func imageURL(forTraits: TVContentItemImageTrait) -> URL?](./tvcontentitem/imageurl%28fortraits%29.md)
   Retrieve the URL for the image that best matches the specified traits.
-- [func setImageURL(URL?, forTraits: TVContentItemImageTrait)](tvcontentitem/setimageurl(_:fortraits:).md)
+- [func setImageURL(URL?, forTraits: TVContentItemImageTrait)](./tvcontentitem/setimageurl%28_,fortraits%29.md)
 
 
 ---

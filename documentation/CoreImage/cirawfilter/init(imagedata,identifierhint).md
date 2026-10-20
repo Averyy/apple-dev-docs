@@ -1,7 +1,8 @@
 # init(imageData:identifierHint:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a RAW filter from the image data and type hint that you specify.
 
@@ -19,6 +20,10 @@ Creates a RAW filter from the image data and type hint that you specify.
 convenience init?(imageData data: Data, identifierHint: String?)
 ```
 
+```objc
++ (instancetype) filterWithImageData:(NSData *) data identifierHint:(NSString *) identifierHint;
+```
+
 ## Parameters
 
 - `data`: The image data.
@@ -26,9 +31,10 @@ convenience init?(imageData data: Data, identifierHint: String?)
 
 ## See Also
 
-- [convenience init?(cvPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:)-6209q.md)
+### Creating a filter
+- [convenience init?(cvPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](./init%28cvpixelbuffer,properties%29-6209q.md)
   Creates a RAW filter from the pixel buffer and its properties that you specify.
-- [convenience init?(imageURL: URL)](cirawfilter/init(imageurl:).md)
+- [convenience init?(imageURL: URL)](./init%28imageurl%29.md)
   Creates a RAW filter from the image at the URL location that you specify.
 
 

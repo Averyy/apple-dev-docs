@@ -1,7 +1,8 @@
 # HIShapeGetTypeID()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID HIShapeGetTypeID(void);
 ```
 
 

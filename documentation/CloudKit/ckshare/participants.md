@@ -1,7 +1,8 @@
 # participants
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the share’s participants.
 
@@ -20,17 +21,22 @@ An array that contains the share’s participants.
 var participants: [CKShare.Participant] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<CKShareParticipant *> * participants;
+```
+
 #### Discussion
 
 The property’s value contains all of the share’s participants that the current user has permissions to see. At a minimum, it includes the share’s owner and the current user.
 
 ## See Also
 
-- [var owner: CKShare.Participant](ckshare/owner.md)
+### Accessing the Share’s Attributes
+- [var owner: CKShare.Participant](./owner.md)
   The participant that represents the share’s owner.
-- [var currentUserParticipant: CKShare.Participant?](ckshare/currentuserparticipant.md)
+- [var currentUserParticipant: CKShare.Participant?](./currentuserparticipant.md)
   The participant that represents the current user.
-- [var url: URL?](ckshare/url.md)
+- [var url: URL?](./url.md)
   The Uniform Resource Locator (URL) for inviting participants to the share.
 
 

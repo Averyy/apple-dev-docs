@@ -1,29 +1,31 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the timer dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [Create](iotimerdispatchsource/create.md)
+### Configuring the Timer Source
+- [Create](./create.md)
   Creates and configures a timer dispatch object.
-- [init](iotimerdispatchsource/init.md)
+- [init](./init.md)
   Handles the basic initialization of the dispatch source.
-- [SetHandler](iotimerdispatchsource/sethandler.md)
+- [SetHandler](./sethandler.md)
   Sets the handler block to run when the timer fires.
 
 

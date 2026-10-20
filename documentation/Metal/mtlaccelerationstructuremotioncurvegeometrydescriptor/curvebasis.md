@@ -1,7 +1,8 @@
 # curveBasis
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var curveBasis: MTLCurveBasis { get set }
+```
+
+```objc
+@property (nonatomic) MTLCurveBasis curveBasis;
 ```
 
 

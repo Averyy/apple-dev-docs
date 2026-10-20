@@ -1,7 +1,8 @@
 # insert(copying:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the elements of a collection into this array at the specified position.
 
@@ -28,7 +29,7 @@ All existing elements at or following the specified position are moved to make r
 
 If the array does not have sufficient capacity to hold enough elements, then this reallocates the array’s storage to extend its capacity, using a geometric growth rate.
 
-> **Note**: O(`self.count` + `newElements.count`)
+> **Complexity**: O(`self.count` + `newElements.count`)
 
 ## Parameters
 

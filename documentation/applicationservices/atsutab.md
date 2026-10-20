@@ -1,7 +1,8 @@
 # ATSUTab
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSUTab
 ```
 
+```c
+typedef struct ATSUTab {
+    ...
+} ATSUTab;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsutab/1458896-init.md)
-- [init(tabPosition: ATSUTextMeasurement, tabType: ATSUTabType)](atsutab/1464597-init.md)
+- [init()](./atsutab/api-1458896-init.md)
+- [init(tabPosition: ATSUTextMeasurement, tabType: ATSUTabType)](./atsutab/api-1464597-init.md)
 ### Instance Properties
-- [var tabPosition: ATSUTextMeasurement](atsutab/1452324-tabposition.md)
-- [var tabType: ATSUTabType](atsutab/1452107-tabtype.md)
+- [var tabPosition: ATSUTextMeasurement](./atsutab/api-1452324-tabposition.md)
+- [var tabType: ATSUTabType](./atsutab/api-1452107-tabtype.md)
 
 
 ---

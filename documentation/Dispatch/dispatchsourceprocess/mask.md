@@ -1,18 +1,19 @@
 # mask
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process events being monitored by the dispatch source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ var mask: DispatchSource.ProcessEvent { get }
 
 ## See Also
 
-- [var data: DispatchSource.ProcessEvent](dispatchsourceprocess/data.md)
+### Getting the Event Data
+- [var data: DispatchSource.ProcessEvent](./data.md)
   Data associated with the last process-related event.
 
 

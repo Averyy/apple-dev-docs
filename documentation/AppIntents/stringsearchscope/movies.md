@@ -1,7 +1,8 @@
 # StringSearchScope.movies
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app supports searching for structured movie content.
 
@@ -11,7 +12,7 @@ The app supports searching for structured movie content.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -22,11 +23,12 @@ case movies
 
 ## See Also
 
-- [StringSearchScope.freeformVideo](stringsearchscope/freeformvideo.md)
+### Getting the search scopes
+- [StringSearchScope.freeformVideo](./freeformvideo.md)
   The app supports searching for free-form video content like videos people upload to social media platforms.
-- [StringSearchScope.general](stringsearchscope/general.md)
+- [StringSearchScope.general](./general.md)
   The app offers a general search functionality that’s exposed to the system.
-- [StringSearchScope.tv](stringsearchscope/tv.md)
+- [StringSearchScope.tv](./tv.md)
   The app supports searching for structured TV content including shows, seasons, or episodes.
 
 

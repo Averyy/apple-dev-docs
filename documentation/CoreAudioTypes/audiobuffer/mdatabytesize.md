@@ -1,7 +1,8 @@
 # mDataByteSize
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in the buffer.
 
@@ -20,11 +21,16 @@ The number of bytes in the buffer.
 var mDataByteSize: UInt32
 ```
 
+```c
+UInt32 mDataByteSize;
+```
+
 ## See Also
 
-- [var mNumberChannels: UInt32](audiobuffer/mnumberchannels.md)
+### Accessing the Audio
+- [var mNumberChannels: UInt32](./mnumberchannels.md)
   The number of interleaved channels in the buffer.
-- [var mData: UnsafeMutableRawPointer?](audiobuffer/mdata.md)
+- [var mData: UnsafeMutableRawPointer?](./mdata.md)
   A pointer to a buffer of audio data.
 
 

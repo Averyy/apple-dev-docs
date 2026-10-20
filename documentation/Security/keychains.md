@@ -1,6 +1,7 @@
 # Keychains
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Create and manage entire keychains in macOS.
 
@@ -13,91 +14,91 @@ In macOS, however, the system supports an arbitrary number of keychains. You typ
 ## Topics
 
 ### Creation and Deletion
-- [func SecKeychainCreate(UnsafePointer<CChar>, UInt32, UnsafeRawPointer?, Bool, SecAccess?, UnsafeMutablePointer<SecKeychain?>) -> OSStatus](seckeychaincreate(_:_:_:_:_:_:).md)
+- [func SecKeychainCreate(UnsafePointer<CChar>, UInt32, UnsafeRawPointer?, Bool, SecAccess?, UnsafeMutablePointer<SecKeychain?>) -> OSStatus](./seckeychaincreate%28_,_,_,_,_,_%29.md)
   Creates an empty keychain.
-- [func SecKeychainDelete(SecKeychain?) -> OSStatus](seckeychaindelete(_:).md)
+- [func SecKeychainDelete(SecKeychain?) -> OSStatus](./seckeychaindelete%28_%29.md)
   Deletes one or more keychains from the default keychain search list, and removes the keychain itself if it is a file.
-- [class SecKeychain](seckeychain.md)
+- [class SecKeychain](./seckeychain.md)
   An opaque type that represents a keychain.
-- [func SecKeychainGetTypeID() -> CFTypeID](seckeychaingettypeid().md)
+- [func SecKeychainGetTypeID() -> CFTypeID](./seckeychaingettypeid%28%29.md)
   Returns the unique identifier of the opaque type to which a keychain object belongs.
 ### Locking and Unlocking
-- [func SecKeychainLock(SecKeychain?) -> OSStatus](seckeychainlock(_:).md)
+- [func SecKeychainLock(SecKeychain?) -> OSStatus](./seckeychainlock%28_%29.md)
   Locks a keychain.
-- [func SecKeychainLockAll() -> OSStatus](seckeychainlockall().md)
+- [func SecKeychainLockAll() -> OSStatus](./seckeychainlockall%28%29.md)
   Locks all keychains belonging to the current user.
-- [func SecKeychainUnlock(SecKeychain?, UInt32, UnsafeRawPointer?, Bool) -> OSStatus](seckeychainunlock(_:_:_:_:).md)
+- [func SecKeychainUnlock(SecKeychain?, UInt32, UnsafeRawPointer?, Bool) -> OSStatus](./seckeychainunlock%28_,_,_,_%29.md)
   Unlocks a keychain.
 ### Settings
-- [func SecKeychainSetSettings(SecKeychain?, UnsafePointer<SecKeychainSettings>) -> OSStatus](seckeychainsetsettings(_:_:).md)
+- [func SecKeychainSetSettings(SecKeychain?, UnsafePointer<SecKeychainSettings>) -> OSStatus](./seckeychainsetsettings%28_,_%29.md)
   Changes the settings of a keychain.
-- [func SecKeychainCopySettings(SecKeychain?, UnsafeMutablePointer<SecKeychainSettings>) -> OSStatus](seckeychaincopysettings(_:_:).md)
+- [func SecKeychainCopySettings(SecKeychain?, UnsafeMutablePointer<SecKeychainSettings>) -> OSStatus](./seckeychaincopysettings%28_,_%29.md)
   Obtains a keychain’s settings.
-- [struct SecKeychainSettings](seckeychainsettings.md)
+- [struct SecKeychainSettings](./seckeychainsettings.md)
   A structure that contains information about keychain settings.
-- [var SEC_KEYCHAIN_SETTINGS_VERS1: Int32](sec_keychain_settings_vers1.md)
+- [var SEC_KEYCHAIN_SETTINGS_VERS1: Int32](./sec_keychain_settings_vers1.md)
   Defines the keychain settings version.
 ### Keychain Management
-- [func SecKeychainGetVersion(UnsafeMutablePointer<UInt32>) -> OSStatus](seckeychaingetversion(_:).md)
+- [func SecKeychainGetVersion(UnsafeMutablePointer<UInt32>) -> OSStatus](./seckeychaingetversion%28_%29.md)
   Determines the version of keychain services installed on the user’s system.
-- [func SecKeychainOpen(UnsafePointer<CChar>, UnsafeMutablePointer<SecKeychain?>) -> OSStatus](seckeychainopen(_:_:).md)
+- [func SecKeychainOpen(UnsafePointer<CChar>, UnsafeMutablePointer<SecKeychain?>) -> OSStatus](./seckeychainopen%28_,_%29.md)
   Opens a keychain.
-- [func SecKeychainSetDefault(SecKeychain?) -> OSStatus](seckeychainsetdefault(_:).md)
+- [func SecKeychainSetDefault(SecKeychain?) -> OSStatus](./seckeychainsetdefault%28_%29.md)
   Sets the default keychain.
-- [func SecKeychainCopyDefault(UnsafeMutablePointer<SecKeychain?>) -> OSStatus](seckeychaincopydefault(_:).md)
+- [func SecKeychainCopyDefault(UnsafeMutablePointer<SecKeychain?>) -> OSStatus](./seckeychaincopydefault%28_%29.md)
   Retrieves a pointer to the default keychain.
-- [func SecKeychainGetPath(SecKeychain?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<CChar>) -> OSStatus](seckeychaingetpath(_:_:_:).md)
+- [func SecKeychainGetPath(SecKeychain?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<CChar>) -> OSStatus](./seckeychaingetpath%28_,_,_%29.md)
   Determines the path of a keychain.
-- [func SecKeychainGetStatus(SecKeychain?, UnsafeMutablePointer<SecKeychainStatus>) -> OSStatus](seckeychaingetstatus(_:_:).md)
+- [func SecKeychainGetStatus(SecKeychain?, UnsafeMutablePointer<SecKeychainStatus>) -> OSStatus](./seckeychaingetstatus%28_,_%29.md)
   Retrieves status information of a keychain.
-- [typealias SecKeychainStatus](seckeychainstatus.md)
+- [typealias SecKeychainStatus](./seckeychainstatus.md)
   A value that defines the current status of a keychain.
-- [SecKeychainStatus Values](seckeychainstatus-values.md)
+- [SecKeychainStatus Values](./seckeychainstatus-values.md)
   Valid values for the keychain status type.
 ### Search
-- [func SecKeychainSetSearchList(CFArray) -> OSStatus](seckeychainsetsearchlist(_:).md)
+- [func SecKeychainSetSearchList(CFArray) -> OSStatus](./seckeychainsetsearchlist%28_%29.md)
   Specifies the list of keychains to use in the default keychain search list.
-- [func SecKeychainCopySearchList(UnsafeMutablePointer<CFArray?>) -> OSStatus](seckeychaincopysearchlist(_:).md)
+- [func SecKeychainCopySearchList(UnsafeMutablePointer<CFArray?>) -> OSStatus](./seckeychaincopysearchlist%28_%29.md)
   Retrieves a keychain search list.
-- [class SecKeychainSearch](seckeychainsearch.md)
+- [class SecKeychainSearch](./seckeychainsearch.md)
   An opaque type that contains information about a keychain search.
 ### User Interaction
-- [func SecKeychainSetUserInteractionAllowed(Bool) -> OSStatus](seckeychainsetuserinteractionallowed(_:).md)
+- [func SecKeychainSetUserInteractionAllowed(Bool) -> OSStatus](./seckeychainsetuserinteractionallowed%28_%29.md)
   Enables or disables the user interface for keychain services functions that automatically display a user interface.
-- [func SecKeychainGetUserInteractionAllowed(UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](seckeychaingetuserinteractionallowed(_:).md)
+- [func SecKeychainGetUserInteractionAllowed(UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./seckeychaingetuserinteractionallowed%28_%29.md)
   Indicates whether keychain services functions that normally display a user interaction are allowed to do so.
 ### Callbacks
-- [func SecKeychainAddCallback(SecKeychainCallback, SecKeychainEventMask, UnsafeMutableRawPointer?) -> OSStatus](seckeychainaddcallback(_:_:_:).md)
+- [func SecKeychainAddCallback(SecKeychainCallback, SecKeychainEventMask, UnsafeMutableRawPointer?) -> OSStatus](./seckeychainaddcallback%28_,_,_%29.md)
   Registers your keychain event callback function.
-- [func SecKeychainRemoveCallback(SecKeychainCallback) -> OSStatus](seckeychainremovecallback(_:).md)
+- [func SecKeychainRemoveCallback(SecKeychainCallback) -> OSStatus](./seckeychainremovecallback%28_%29.md)
   Unregisters your keychain event callback function.
-- [typealias SecKeychainCallback](seckeychaincallback.md)
+- [typealias SecKeychainCallback](./seckeychaincallback.md)
   A customized callback function that keychain services call when a keychain event has occurred.
-- [struct SecKeychainCallbackInfo](seckeychaincallbackinfo.md)
+- [struct SecKeychainCallbackInfo](./seckeychaincallbackinfo.md)
   Information about a keychain event that keychain services deliver to your app via a callback function.
-- [enum SecKeychainEvent](seckeychainevent.md)
+- [enum SecKeychainEvent](./seckeychainevent.md)
   The list of keychain events that can trigger a callback.
-- [struct SecKeychainEventMask](seckeychaineventmask.md)
+- [struct SecKeychainEventMask](./seckeychaineventmask.md)
   Bit masks corresponding to the events that can trigger a keychain callback.
 ### Preference Domains
-- [func SecKeychainGetPreferenceDomain(UnsafeMutablePointer<SecPreferencesDomain>) -> OSStatus](seckeychaingetpreferencedomain(_:).md)
+- [func SecKeychainGetPreferenceDomain(UnsafeMutablePointer<SecPreferencesDomain>) -> OSStatus](./seckeychaingetpreferencedomain%28_%29.md)
   Gets the current keychain preference domain.
-- [func SecKeychainSetPreferenceDomain(SecPreferencesDomain) -> OSStatus](seckeychainsetpreferencedomain(_:).md)
+- [func SecKeychainSetPreferenceDomain(SecPreferencesDomain) -> OSStatus](./seckeychainsetpreferencedomain%28_%29.md)
   Sets the keychain preference domain.
-- [func SecKeychainCopyDomainDefault(SecPreferencesDomain, UnsafeMutablePointer<SecKeychain?>) -> OSStatus](seckeychaincopydomaindefault(_:_:).md)
+- [func SecKeychainCopyDomainDefault(SecPreferencesDomain, UnsafeMutablePointer<SecKeychain?>) -> OSStatus](./seckeychaincopydomaindefault%28_,_%29.md)
   Retrieves the default keychain from a specified preference domain.
-- [func SecKeychainSetDomainDefault(SecPreferencesDomain, SecKeychain?) -> OSStatus](seckeychainsetdomaindefault(_:_:).md)
+- [func SecKeychainSetDomainDefault(SecPreferencesDomain, SecKeychain?) -> OSStatus](./seckeychainsetdomaindefault%28_,_%29.md)
   Sets the default keychain for a specified preference domain.
-- [func SecKeychainCopyDomainSearchList(SecPreferencesDomain, UnsafeMutablePointer<CFArray?>) -> OSStatus](seckeychaincopydomainsearchlist(_:_:).md)
+- [func SecKeychainCopyDomainSearchList(SecPreferencesDomain, UnsafeMutablePointer<CFArray?>) -> OSStatus](./seckeychaincopydomainsearchlist%28_,_%29.md)
   Retrieves the keychain search list for a specified preference domain.
-- [func SecKeychainSetDomainSearchList(SecPreferencesDomain, CFArray) -> OSStatus](seckeychainsetdomainsearchlist(_:_:).md)
+- [func SecKeychainSetDomainSearchList(SecPreferencesDomain, CFArray) -> OSStatus](./seckeychainsetdomainsearchlist%28_,_%29.md)
   Sets the keychain search list for a specified preference domain.
-- [enum SecPreferencesDomain](secpreferencesdomain.md)
+- [enum SecPreferencesDomain](./secpreferencesdomain.md)
   The keychain preference domains.
 ### Access
-- [func SecKeychainSetAccess(SecKeychain?, SecAccess) -> OSStatus](seckeychainsetaccess(_:_:).md)
+- [func SecKeychainSetAccess(SecKeychain?, SecAccess) -> OSStatus](./seckeychainsetaccess%28_,_%29.md)
   Sets the application access for a keychain.
-- [func SecKeychainCopyAccess(SecKeychain?, UnsafeMutablePointer<SecAccess?>) -> OSStatus](seckeychaincopyaccess(_:_:).md)
+- [func SecKeychainCopyAccess(SecKeychain?, UnsafeMutablePointer<SecAccess?>) -> OSStatus](./seckeychaincopyaccess%28_,_%29.md)
   Retrieves the application access of a keychain.
 
 

@@ -1,7 +1,8 @@
 # init(request:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a search object with the specified parameters.
 
@@ -20,6 +21,10 @@ Creates and returns a search object with the specified parameters.
 init(request: MKLocalSearch.Request)
 ```
 
+```objc
+- (instancetype) initWithRequest:(MKLocalSearchRequest *) request;
+```
+
 #### Return Value
 
 An initialized search object.
@@ -34,12 +39,14 @@ This method stores a copy of the object in the `request` parameter. So, the obje
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [init(request: MKLocalPointsOfInterestRequest)](mklocalsearch/init(request:)-9x8kn.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a search request
+- [init(request: MKLocalPointsOfInterestRequest)](./init%28request%29-9x8kn.md)
   Creates and returns a search object for fetching points of interest.
-- [MKLocalSearch.Request](mklocalsearch/request.md)
+- [MKLocalSearch.Request](./request.md)
   The parameters to use when searching for points of interest on the map.
-- [MKLocalSearch.ResultType](mklocalsearch/resulttype.md)
+- [MKLocalSearch.ResultType](./resulttype.md)
   Options that indicate types of search results.
 
 

@@ -1,7 +1,8 @@
 # addAnimations(_:delayFactor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified animation block with a delay.
 
@@ -18,13 +19,17 @@ Adds the specified animation block with a delay.
 func addAnimations(_ animation: @escaping () -> Void, delayFactor: CGFloat)
 ```
 
+```objc
+- (void) addAnimations:(void (^)()) animation delayFactor:(CGFloat) delayFactor;
+```
+
 #### Discussion
 
-Use this method to add new animation blocks to the animator. The animations in the new block run alongside any previously configured animations after the specified delay. Blocks added while the animator’s state is [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) are executed over the time specified by the [`duration`](uiviewpropertyanimator/duration.md) property minus any delay. Blocks added while the animator’s state is [`UIViewAnimatingState.active`](uiviewanimatingstate/active.md) are executed over the remaining portion of the total run time minus the delay. For example, if the duration is `2.0` and you add an animation block with a delay factor of `0.25` to a running animator whose [`fractionComplete`](uiviewanimating/fractioncomplete.md) property is `0.25`, the animations run for `1.0` second.
+Use this method to add new animation blocks to the animator. The animations in the new block run alongside any previously configured animations after the specified delay. Blocks added while the animator’s state is [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) are executed over the time specified by the [`duration`](./duration.md) property minus any delay. Blocks added while the animator’s state is [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md) are executed over the remaining portion of the total run time minus the delay. For example, if the duration is `2.0` and you add an animation block with a delay factor of `0.25` to a running animator whose [`fractionComplete`](../uiviewanimating/fractioncomplete.md) property is `0.25`, the animations run for `1.0` second.
 
-If the `animation` block modifies a property that is being modified by a different property animator, then the animators combine their changes in the most appropriate way. For many properties, the changes from each animator are added together to yield a new intermediate value. If a property cannot be modified in this additive manner, the new animations take over as if the [`beginFromCurrentState`](uiview/animationoptions/beginfromcurrentstate.md) option had been specified for a view-based animation.
+If the `animation` block modifies a property that is being modified by a different property animator, then the animators combine their changes in the most appropriate way. For many properties, the changes from each animator are added together to yield a new intermediate value. If a property cannot be modified in this additive manner, the new animations take over as if the [`beginFromCurrentState`](../uiview/animationoptions/beginfromcurrentstate.md) option had been specified for a view-based animation.
 
-You can call this method multiple times to add multiple blocks to the animator. It is a programmer error to call this method when the animator’s [`state`](uiviewanimating/state.md) property is set to [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md).
+You can call this method multiple times to add multiple blocks to the animator. It is a programmer error to call this method when the animator’s [`state`](../uiviewanimating/state.md) property is set to [`UIViewAnimatingState.stopped`](../uiviewanimatingstate/stopped.md).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ You can call this method multiple times to add multiple blocks to the animator. 
 
 ## See Also
 
-- [func addAnimations(() -> Void)](uiviewpropertyanimator/addanimations(_:).md)
+### Modifying animations
+- [func addAnimations(() -> Void)](./addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addCompletion((UIViewAnimatingPosition) -> Void)](uiviewpropertyanimator/addcompletion(_:).md)
+- [func addCompletion((UIViewAnimatingPosition) -> Void)](./addcompletion%28_%29.md)
   Adds the specified completion block to the animator.
-- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](uiviewpropertyanimator/continueanimation(withtimingparameters:durationfactor:).md)
+- [func continueAnimation(withTimingParameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)](./continueanimation%28withtimingparameters,durationfactor%29.md)
   Adjusts the timing and duration of a paused animation.
 
 

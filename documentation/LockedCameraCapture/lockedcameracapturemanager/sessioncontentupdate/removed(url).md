@@ -1,7 +1,8 @@
 # LockedCameraCaptureManager.SessionContentUpdate.removed(url:)
 
 **Framework**: LockedCameraCapture  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A URL to a directory of removed session content.
 

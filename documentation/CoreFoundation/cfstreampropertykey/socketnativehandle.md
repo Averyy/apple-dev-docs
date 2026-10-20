@@ -1,23 +1,28 @@
 # socketNativeHandle
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Value is a `CFData` object that contains the native handle for a socket stream—of type [`CFSocketNativeHandle`](cfsocketnativehandle.md)—to which the socket stream is connected.
+Value is a `CFData` object that contains the native handle for a socket stream—of type [`CFSocketNativeHandle`](../cfsocketnativehandle.md)—to which the socket stream is connected.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let socketNativeHandle: CFStreamPropertyKey!
+```
+
+```c
+extern CFStreamPropertyKey const kCFStreamPropertySocketNativeHandle;
 ```
 
 #### Discussion
@@ -26,34 +31,35 @@ This property is only available for socket streams. You cannot modify this value
 
 ## See Also
 
-- [static let appendToFile: CFStreamPropertyKey!](cfstreampropertykey/appendtofile.md)
+### Constants
+- [static let appendToFile: CFStreamPropertyKey!](./appendtofile.md)
   Value is a `CFBoolean` value that indicates whether to append the written data to a file, if it already exists, rather than to replace its contents.
-- [static let dataWritten: CFStreamPropertyKey!](cfstreampropertykey/datawritten.md)
+- [static let dataWritten: CFStreamPropertyKey!](./datawritten.md)
   Value is a `CFData` object that contains all the bytes written to a writable memory stream. You cannot modify this value.
-- [static let fileCurrentOffset: CFStreamPropertyKey!](cfstreampropertykey/filecurrentoffset.md)
+- [static let fileCurrentOffset: CFStreamPropertyKey!](./filecurrentoffset.md)
   Value is a `CFNumber` object containing the current file offset.
-- [static let socketRemoteHostName: CFStreamPropertyKey!](cfstreampropertykey/socketremotehostname.md)
+- [static let socketRemoteHostName: CFStreamPropertyKey!](./socketremotehostname.md)
   Value is a `CFString` object containing the name of the host to which the socket stream is connected or `NULL` if unknown.
-- [static let socketRemotePortNumber: CFStreamPropertyKey!](cfstreampropertykey/socketremoteportnumber.md)
+- [static let socketRemotePortNumber: CFStreamPropertyKey!](./socketremoteportnumber.md)
   Value is a `CFNumber` object containing the remote port number to which the socket stream is connected or `NULL` if unknown.
-- [let kCFStreamPropertyShouldCloseNativeSocket: CFString](kcfstreampropertyshouldclosenativesocket.md)
+- [let kCFStreamPropertyShouldCloseNativeSocket: CFString](../kcfstreampropertyshouldclosenativesocket.md)
   Should Close Native Socket property key.
-- [let kCFStreamPropertySocketSecurityLevel: CFString](kcfstreampropertysocketsecuritylevel.md)
+- [let kCFStreamPropertySocketSecurityLevel: CFString](../kcfstreampropertysocketsecuritylevel.md)
   Socket Security Level property key.
-- [let kCFStreamPropertySSLPeerCertificates: CFString](../cfnetwork/kcfstreampropertysslpeercertificates.md)
+- [let kCFStreamPropertySSLPeerCertificates: CFString](../../CFNetwork/kcfstreampropertysslpeercertificates.md)
   SSL Peer Certificates property key for copy operations, which return a `CFArray` object containing `SecCertificateRef` objects.
-- [let kCFStreamPropertySSLPeerTrust: CFString](../cfnetwork/kcfstreampropertysslpeertrust.md)
+- [let kCFStreamPropertySSLPeerTrust: CFString](../../CFNetwork/kcfstreampropertysslpeertrust.md)
   SSL Peer Trust property key for copy operations, which return a `SecTrustRef` object containing the result of the SSL handshake.
-- [let kCFStreamPropertySSLSettings: CFString](../cfnetwork/kcfstreampropertysslsettings.md)
+- [let kCFStreamPropertySSLSettings: CFString](../../CFNetwork/kcfstreampropertysslsettings.md)
   SSL Settings property key for set operations.
-- [let kCFStreamPropertySSLContext: CFString](../cfnetwork/kcfstreampropertysslcontext.md)
-- [let kCFStreamPropertySOCKSProxy: CFString](kcfstreampropertysocksproxy.md)
+- [let kCFStreamPropertySSLContext: CFString](../../CFNetwork/kcfstreampropertysslcontext.md)
+- [let kCFStreamPropertySOCKSProxy: CFString](../kcfstreampropertysocksproxy.md)
   SOCKS proxy property key.
-- [let kCFStreamPropertyProxyLocalBypass: CFString](../cfnetwork/kcfstreampropertyproxylocalbypass.md)
+- [let kCFStreamPropertyProxyLocalBypass: CFString](../../CFNetwork/kcfstreampropertyproxylocalbypass.md)
   Proxy Local Bypass property key.
-- [let kCFStreamPropertySocketRemoteHost: CFString](../cfnetwork/kcfstreampropertysocketremotehost.md)
+- [let kCFStreamPropertySocketRemoteHost: CFString](../../CFNetwork/kcfstreampropertysocketremotehost.md)
   The key’s value is a `CFHostRef` for the remote host if it is known. If not, its value is `NULL`.
-- [let kCFStreamPropertySocketRemoteNetService: CFString](../cfnetwork/kcfstreampropertysocketremotenetservice.md)
+- [let kCFStreamPropertySocketRemoteNetService: CFString](../../CFNetwork/kcfstreampropertysocketremotenetservice.md)
   The key’s value is a `CFNetServiceRef` for the remote network service if it is known. If not, its value is `NULL`.
 
 

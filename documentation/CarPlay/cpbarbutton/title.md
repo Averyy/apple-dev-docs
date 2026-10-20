@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title displayed on the bar button.
 
@@ -16,15 +17,20 @@ The title displayed on the bar button.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 #### Discussion
 
-Setting this property has an effect only when the button type is [`CPBarButton.Type.text`](cpbarbutton/type/text.md).
+Setting this property has an effect only when the button type is [`CPBarButton.Type.text`](./type/text.md).
 
 ## See Also
 
-- [var isEnabled: Bool](cpbarbutton/isenabled.md)
+### Configuring the Button
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that enables and disables the bar button.
-- [var image: UIImage?](cpbarbutton/image.md)
+- [var image: UIImage?](./image.md)
   The image displayed on the bar button.
 
 

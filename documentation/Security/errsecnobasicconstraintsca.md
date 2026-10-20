@@ -1,7 +1,8 @@
 # errSecNoBasicConstraintsCA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No basic CA constraints were found.
 
@@ -18,6 +19,10 @@ No basic CA constraints were found.
 
 ```swift
 var errSecNoBasicConstraintsCA: OSStatus { get }
+```
+
+```c
+errSecNoBasicConstraintsCA
 ```
 
 

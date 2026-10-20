@@ -1,7 +1,8 @@
 # CSSM_LIST_ELEMENT_PTR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_LIST_ELEMENT_PTR = UnsafeMutablePointer<cssm_list_element>
+```
+
+```c
+typedef struct cssm_list_element * CSSM_LIST_ELEMENT_PTR;
 ```
 
 

@@ -1,7 +1,8 @@
 # FoodEstablishment
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The restaurant or other food establishment that will host the reservation.
 
@@ -10,13 +11,13 @@ The restaurant or other food establishment that will host the reservation.
 
 ## Declaration
 
-```swift
+```
 object FoodEstablishment
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `FoodEstablishment`
 - `address` (PostalAddress) *(required)*: The location of the food establishment.
 - `name` (string) *(required)*: The name of the food establishment.
 - `telephone` (telephone)

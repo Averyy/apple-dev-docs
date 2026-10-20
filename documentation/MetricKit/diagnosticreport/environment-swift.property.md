@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Environment context for the device and app.
 
@@ -20,12 +21,13 @@ let environment: DiagnosticReport.Environment
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let timeRange: DateInterval](diagnosticreport/timerange.md)
+### Report details
+- [let timeRange: DateInterval](./timerange.md)
   The date interval this report covers.
 
 

@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new range set containing the contents of both this set and the given set.
 
@@ -19,6 +20,8 @@ Returns a new range set containing the contents of both this set and the given s
 ```swift
 func union(_ other: RangeSet<Bound>) -> RangeSet<Bound>
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

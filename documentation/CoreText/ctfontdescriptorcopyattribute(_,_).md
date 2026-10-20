@@ -1,7 +1,8 @@
 # CTFontDescriptorCopyAttribute(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the value associated with an arbitrary attribute.
 
@@ -20,6 +21,10 @@ Returns the value associated with an arbitrary attribute.
 func CTFontDescriptorCopyAttribute(_ descriptor: CTFontDescriptor, _ attribute: CFString) -> CFTypeRef?
 ```
 
+```c
+extern CFTypeRefCTFontDescriptorCopyAttribute(CTFontDescriptorRef descriptor, CFStringRef attribute);
+```
+
 #### Return Value
 
 A retained reference to an arbitrary attribute, or `NULL` if the requested attribute is not present.
@@ -35,9 +40,10 @@ Refer to Accessing Font Attributes for documentation explaining how each attribu
 
 ## See Also
 
-- [func CTFontDescriptorCopyAttributes(CTFontDescriptor) -> CFDictionary](ctfontdescriptorcopyattributes(_:).md)
+### Getting Attributes
+- [func CTFontDescriptorCopyAttributes(CTFontDescriptor) -> CFDictionary](./ctfontdescriptorcopyattributes%28_%29.md)
   Returns the attributes dictionary of the font descriptor.
-- [func CTFontDescriptorCopyLocalizedAttribute(CTFontDescriptor, CFString, UnsafeMutablePointer<Unmanaged<CFString>?>?) -> CFTypeRef?](ctfontdescriptorcopylocalizedattribute(_:_:_:).md)
+- [func CTFontDescriptorCopyLocalizedAttribute(CTFontDescriptor, CFString, UnsafeMutablePointer<Unmanaged<CFString>?>?) -> CFTypeRef?](./ctfontdescriptorcopylocalizedattribute%28_,_,_%29.md)
   Returns a localized value for the requested attribute, if available.
 
 

@@ -1,18 +1,19 @@
 # intersects(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether this node intersects the specified node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether this node intersects the specifie
 func intersects(_ node: SKNode) -> Bool
 ```
 
+```objc
+- (BOOL) intersectsNode:(SKNode *) node;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two nodes intersect; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the two nodes intersect; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

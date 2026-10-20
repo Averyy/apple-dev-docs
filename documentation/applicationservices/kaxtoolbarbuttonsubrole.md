@@ -1,7 +1,8 @@
 # kAXToolbarButtonSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A toolbar button (that is, the button in a window’s title bar that hides and reveals the toolbar).
 
@@ -12,6 +13,10 @@ A toolbar button (that is, the button in a window’s title bar that hides and r
 
 ```swift
 var kAXToolbarButtonSubrole: String { get }
+```
+
+```c
+#define kAXToolbarButtonSubrole
 ```
 
 

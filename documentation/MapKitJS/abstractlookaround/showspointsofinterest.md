@@ -1,7 +1,8 @@
 # showsPointsOfInterest
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Look Around view shows points of interest (POIs).
 
@@ -10,14 +11,15 @@ A Boolean value that indicates whether the Look Around view shows points of inte
 
 ## Declaration
 
-```swift
+```
 get showsPointsOfInterest(): boolean;
 set showsPointsOfInterest(value: boolean);
 ```
 
 ## See Also
 
-- [showsRoadLabels](abstractlookaround/showsroadlabels.md)
+### Controlling additional information the Look Around view displays
+- [showsRoadLabels](./showsroadlabels.md)
   A Boolean value that indicates whether the Look Around view shows road labels.
 
 

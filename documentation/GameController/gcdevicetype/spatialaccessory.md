@@ -1,7 +1,8 @@
 # spatialAccessory
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A device type that represents any spatial accessory.
 
@@ -12,6 +13,10 @@ A device type that represents any spatial accessory.
 
 ```swift
 class var spatialAccessory: GCDeviceType { get }
+```
+
+```objc
+@property (class, readonly) GCDeviceType * spatialAccessoryType;
 ```
 
 

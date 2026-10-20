@@ -1,7 +1,8 @@
 # GL_APPLE_texture_2D_limited_npot
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_APPLE_texture_2D_limited_npot: Int32 { get }
+```
+
+```c
+#define GL_APPLE_texture_2D_limited_npot
 ```
 
 

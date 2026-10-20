@@ -1,7 +1,8 @@
 # kSecTrustCertificateTransparency
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean used to indicate Certificate Transparency.
 
@@ -20,9 +21,13 @@ A key whose value is a Boolean used to indicate Certificate Transparency.
 let kSecTrustCertificateTransparency: CFString
 ```
 
+```c
+extern CFStringRef const kSecTrustCertificateTransparency;
+```
+
 #### Discussion
 
-When the key is present and the value set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), it indicates the chain is Certificate Transparency (CT) qualified.
+When the key is present and the value set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), it indicates the chain is Certificate Transparency (CT) qualified.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(symbol:converter:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a dimensional unit with the symbol and unit converter you specify.
 
@@ -18,6 +19,10 @@ Initializes a dimensional unit with the symbol and unit converter you specify.
 
 ```swift
 init(symbol: String, converter: UnitConverter)
+```
+
+```objc
+- (instancetype) initWithSymbol:(NSString *) symbol converter:(NSUnitConverter *) converter;
 ```
 
 #### Return Value

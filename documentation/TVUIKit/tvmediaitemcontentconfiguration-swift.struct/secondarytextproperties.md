@@ -1,7 +1,8 @@
 # secondaryTextProperties
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties for configuring the secondary text.
 
@@ -16,9 +17,10 @@ var secondaryTextProperties: TVMediaItemContentConfiguration.TextProperties { ge
 
 ## See Also
 
-- [TVMediaItemContentConfiguration.TextProperties](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct.md)
+### Customizing Appearance
+- [TVMediaItemContentConfiguration.TextProperties](./textproperties-swift.struct.md)
   Properties that affect the media item content configuration’s text.
-- [var textProperties: TVMediaItemContentConfiguration.TextProperties](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.property.md)
+- [var textProperties: TVMediaItemContentConfiguration.TextProperties](./textproperties-swift.property.md)
   Properties for configuring the primary text.
 
 

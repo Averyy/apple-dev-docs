@@ -1,14 +1,15 @@
 # AVCaptureDeviceWasConnected
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.7+
-- tvOS 17.0+
+- iOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.wasConnectedNotification)
+- iPadOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.wasConnectedNotification)
+- Mac Catalyst 14.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.wasConnectedNotification)
+- macOS 10.7+ - Deprecated in 15.0 (renamed: AVCaptureDevice.wasConnectedNotification)
+- tvOS 17.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.wasConnectedNotification)
 
 ## Declaration
 

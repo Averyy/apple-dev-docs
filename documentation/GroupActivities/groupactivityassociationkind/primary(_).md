@@ -1,7 +1,8 @@
 # primary(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A primary association with a SharePlay group activity that is identified by a given string value.
 
@@ -16,7 +17,7 @@ static func primary(_ identifier: String) -> GroupActivityAssociationKind
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 

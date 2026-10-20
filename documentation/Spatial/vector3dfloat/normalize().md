@@ -1,7 +1,8 @@
 # normalize()
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Normalizes the vector.
 

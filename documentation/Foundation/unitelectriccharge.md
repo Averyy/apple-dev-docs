@@ -1,7 +1,8 @@
 # UnitElectricCharge
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for electric charge.
 
@@ -20,68 +21,73 @@ A unit of measure for electric charge.
 class UnitElectricCharge
 ```
 
+```objc
+@interface NSUnitElectricCharge : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitElectricCharge`](unitelectriccharge.md) to represent specific quantities of electric charge using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitElectricCharge`](./unitelectriccharge.md) to represent specific quantities of electric charge using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Electric Charge
 
 Electric charge is a fundamental physical property of matter that causes it to experience a force within an electromagnetic field. The SI unit for electric charge is the coulomb (C), which is defined as the amount of charge carried by a current of one ampere in one second (1C = 1A · 1s). Charge is also commonly expressed in terms of ampere hours (Ah).
 
-The [`UnitElectricCharge`](unitelectriccharge.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`coulombs`](unitelectriccharge/coulombs.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitElectricCharge`](./unitelectriccharge.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`coulombs`](./unitelectriccharge/coulombs.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Coulombs | [`coulombs`](unitelectriccharge/coulombs.md) | C | `1.0` |
-| Megaampere Hours | [`megaampereHours`](unitelectriccharge/megaamperehours.md) | MAh | `3.6e9` |
-| Kiloampere Hours | [`kiloampereHours`](unitelectriccharge/kiloamperehours.md) | kAh | `3600000.0` |
-| Ampere Hours | [`ampereHours`](unitelectriccharge/amperehours.md) | Ah | `3600.0` |
-| Milliampere Hours | [`milliampereHours`](unitelectriccharge/milliamperehours.md) | mAh | `3.6` |
-| Microampere Hours | [`microampereHours`](unitelectriccharge/microamperehours.md) | µAh | `0.0036` |
+| Coulombs | [`coulombs`](./unitelectriccharge/coulombs.md) | C | `1.0` |
+| Megaampere Hours | [`megaampereHours`](./unitelectriccharge/megaamperehours.md) | MAh | `3.6e9` |
+| Kiloampere Hours | [`kiloampereHours`](./unitelectriccharge/kiloamperehours.md) | kAh | `3600000.0` |
+| Ampere Hours | [`ampereHours`](./unitelectriccharge/amperehours.md) | Ah | `3600.0` |
+| Milliampere Hours | [`milliampereHours`](./unitelectriccharge/milliamperehours.md) | mAh | `3.6` |
+| Microampere Hours | [`microampereHours`](./unitelectriccharge/microamperehours.md) | µAh | `0.0036` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var coulombs: UnitElectricCharge](unitelectriccharge/coulombs.md)
+- [class var coulombs: UnitElectricCharge](./unitelectriccharge/coulombs.md)
   The coulombs unit of electric charge.
-- [class var megaampereHours: UnitElectricCharge](unitelectriccharge/megaamperehours.md)
+- [class var megaampereHours: UnitElectricCharge](./unitelectriccharge/megaamperehours.md)
   The megaampere hours unit of electric charge.
-- [class var kiloampereHours: UnitElectricCharge](unitelectriccharge/kiloamperehours.md)
+- [class var kiloampereHours: UnitElectricCharge](./unitelectriccharge/kiloamperehours.md)
   The kiloampere hours unit of electric charge.
-- [class var ampereHours: UnitElectricCharge](unitelectriccharge/amperehours.md)
+- [class var ampereHours: UnitElectricCharge](./unitelectriccharge/amperehours.md)
   The ampere hours unit of electric charge.
-- [class var milliampereHours: UnitElectricCharge](unitelectriccharge/milliamperehours.md)
+- [class var milliampereHours: UnitElectricCharge](./unitelectriccharge/milliamperehours.md)
   The milliampere hours unit of electric charge.
-- [class var microampereHours: UnitElectricCharge](unitelectriccharge/microamperehours.md)
+- [class var microampereHours: UnitElectricCharge](./unitelectriccharge/microamperehours.md)
   The microampere hours unit of electric charge.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitElectricCurrent](unitelectriccurrent.md)
+### Electricity
+- [class UnitElectricCurrent](./unitelectriccurrent.md)
   A unit of measure for electric current.
-- [class UnitElectricPotentialDifference](unitelectricpotentialdifference.md)
+- [class UnitElectricPotentialDifference](./unitelectricpotentialdifference.md)
   A unit of measure for electric potential difference.
-- [class UnitElectricResistance](unitelectricresistance.md)
+- [class UnitElectricResistance](./unitelectricresistance.md)
   A unit of measure for electric resistance.
 
 

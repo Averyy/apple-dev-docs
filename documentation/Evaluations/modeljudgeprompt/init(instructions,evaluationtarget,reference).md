@@ -1,7 +1,8 @@
 # init(instructions:evaluationTarget:reference:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model prompt configuration.
 
@@ -36,7 +37,8 @@ let prompt = ModelJudgePrompt<ModelSample<String>>(
 
 ## See Also
 
-- [static var defaultInstructions: String](modeljudgeprompt/defaultinstructions.md)
+### Creating a prompt configuration
+- [static var defaultInstructions: String](./defaultinstructions.md)
   The default system instructions used when no custom instructions are provided.
 
 

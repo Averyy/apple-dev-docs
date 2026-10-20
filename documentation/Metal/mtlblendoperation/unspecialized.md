@@ -1,7 +1,8 @@
 # MTLBlendOperation.unspecialized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defers assigning the blend operation.
 
@@ -17,6 +18,10 @@ Defers assigning the blend operation.
 
 ```swift
 case unspecialized
+```
+
+```c
+MTLBlendOperationUnspecialized
 ```
 
 

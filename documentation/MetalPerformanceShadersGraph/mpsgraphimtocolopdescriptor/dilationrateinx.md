@@ -1,7 +1,8 @@
 # dilationRateInX
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the dilation in width dimension.
 
@@ -17,6 +18,10 @@ The property that defines the dilation in width dimension.
 
 ```swift
 var dilationRateInX: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger dilationRateInX;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(attributedSelectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a document with attributed strings that represent the selection and its surrounding context.
 
@@ -17,13 +18,18 @@ Initializes a document with attributed strings that represent the selection and 
 init(attributedSelectedText selectedText: NSAttributedString?, contextBefore: NSAttributedString?, contextAfter: NSAttributedString?, markedText: NSAttributedString?, selectedRangeInMarkedText: NSRange)
 ```
 
+```objc
+- (instancetype) initWithAttributedSelectedText:(NSAttributedString *) selectedText contextBefore:(NSAttributedString *) contextBefore contextAfter:(NSAttributedString *) contextAfter markedText:(NSAttributedString *) markedText selectedRangeInMarkedText:(NSRange) selectedRangeInMarkedText;
+```
+
 #### Discussion
 
-The `attributedSelectedText`, `contextBefore`, and `contextAfter` parameters represent the same ranges as their counterparts in [`init(selectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](betextdocumentcontext/init(selectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md), and carry the same requirements, with the addition of text formatting and style attributes.
+The `attributedSelectedText`, `contextBefore`, and `contextAfter` parameters represent the same ranges as their counterparts in [`init(selectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](./init%28selectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext%29.md), and carry the same requirements, with the addition of text formatting and style attributes.
 
 ## See Also
 
-- [init(selectedText: String?, contextBefore: String?, contextAfter: String?, markedText: String?, selectedRangeInMarkedText: NSRange)](betextdocumentcontext/init(selectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md)
+### Creating a text document context
+- [init(selectedText: String?, contextBefore: String?, contextAfter: String?, markedText: String?, selectedRangeInMarkedText: NSRange)](./init%28selectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext%29.md)
   Initializes a document with plain text strings that represent the selection and its surrounding context.
 
 

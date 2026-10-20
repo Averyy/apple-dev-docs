@@ -1,7 +1,8 @@
 # ScreenSharingConnectionDisplayConfigurationObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The display configuration for this connection.
 
@@ -10,14 +11,18 @@ The display configuration for this connection.
 
 ## Declaration
 
-```swift
+```
 object ScreenSharingConnectionDisplayConfigurationObject
 ```
 
 ## Properties
 
-- `DisplayType` (string) *(required)*: The type of display for the connection, which has these allowed values: - `Virtual1`: Create one virtual display.
-- `Virtual2`: Create two virtual displays.
+- `DisplayType` (string) *(required)*: The type of display for the connection, which has these allowed values:
+
+  - `Virtual1`: Create one virtual display.
+  - `Virtual2`: Create two virtual displays.
+
+  **Allowed Values**: `Virtual1`, `Virtual2`
 
 
 ---

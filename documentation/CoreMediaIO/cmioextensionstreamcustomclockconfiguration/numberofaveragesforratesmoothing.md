@@ -1,7 +1,8 @@
 # numberOfAveragesForRateSmoothing
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of averages to use for rate smoothing.
 
@@ -15,19 +16,24 @@ The number of averages to use for rate smoothing.
 var numberOfAveragesForRateSmoothing: UInt32 { get }
 ```
 
+```objc
+@property (atomic, readonly) uint32_t numberOfAveragesForRateSmoothing;
+```
+
 #### Discussion
 
 A value of `0` indicates that it uses the default smoothing algorithm.
 
 ## See Also
 
-- [var clockName: String](cmioextensionstreamcustomclockconfiguration/clockname.md)
+### Inspecting the Configuration
+- [var clockName: String](./clockname.md)
   The name of the clock.
-- [var sourceIdentifier: UUID](cmioextensionstreamcustomclockconfiguration/sourceidentifier.md)
+- [var sourceIdentifier: UUID](./sourceidentifier.md)
   A universally unique identifier for the clock.
-- [var getTimeCallMinimumInterval: CMTime](cmioextensionstreamcustomclockconfiguration/gettimecallminimuminterval.md)
+- [var getTimeCallMinimumInterval: CMTime](./gettimecallminimuminterval.md)
   A minimum call time interval for the clock.
-- [var numberOfEventsForRateSmoothing: UInt32](cmioextensionstreamcustomclockconfiguration/numberofeventsforratesmoothing.md)
+- [var numberOfEventsForRateSmoothing: UInt32](./numberofeventsforratesmoothing.md)
   The number of events to use for rate smoothing.
 
 

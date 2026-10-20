@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 static IOVideoStream* withBuffers(
  OSArray *buffers,
  IOStreamMode mode = kIOStreamModeOutput,
@@ -22,16 +22,17 @@ static IOVideoStream* withBuffers(
 
 ## See Also
 
-- [getStreamMode](iovideostream/1809380-getstreammode.md)
+### Miscellaneous
+- [getStreamMode](./api-1809380-getstreammode.md)
   Returns the mode of the stream, either input or output.
-- [initWithBuffers](iovideostream/1809391-initwithbuffers.md)
-- [setStreamMode](iovideostream/1809395-setstreammode.md)
+- [initWithBuffers](./api-1809391-initwithbuffers.md)
+- [setStreamMode](./api-1809395-setstreammode.md)
   Sets the mode of the stream, either input or output.
-- [startStream](iovideostream/1809402-startstream.md)
+- [startStream](./api-1809402-startstream.md)
   Start sending data on a stream.
-- [stopStream](iovideostream/1809407-stopstream.md)
+- [stopStream](./api-1809407-stopstream.md)
   Stop sending data on a stream.
-- [suspendStream](iovideostream/1809411-suspendstream.md)
+- [suspendStream](./api-1809411-suspendstream.md)
   Temporarily suspend data flow on the stream.
 
 

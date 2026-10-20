@@ -1,21 +1,23 @@
 # kIOUSB30Bitrate10Gbps
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kIOUSB30Bitrate10Gbps
 ```
 
 ## See Also
 
-- [kIOUSB30Bitrate5Gbps](kiousb30bitrate5gbps.md)
-- [kIOUSB32Bitrate20Gbps](kiousb32bitrate20gbps.md)
+### Bitrate Constants
+- [kIOUSB30Bitrate5Gbps](./kiousb30bitrate5gbps.md)
+- [kIOUSB32Bitrate20Gbps](./kiousb32bitrate20gbps.md)
 
 
 ---

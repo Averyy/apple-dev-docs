@@ -1,18 +1,19 @@
 # init(_:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a log type from the specified value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ init(_ rawValue: UInt8)
 
 ## See Also
 
-- [init(rawValue: UInt8)](oslogtype/init(rawvalue:).md)
+### Creating a Log Type
+- [init(rawValue: UInt8)](./init%28rawvalue%29.md)
   Creates a log type from the specified raw value.
 
 

@@ -1,7 +1,8 @@
 # sourceOver
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Standard source-over alpha blending with pre-multiplied alpha.
 
@@ -19,7 +20,8 @@ static var sourceOver: LowLevelRenderPipelineState.Descriptor.Blending { get }
 
 ## See Also
 
-- [static var add: LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct/add.md)
+### Creating a blending mode
+- [static var add: LowLevelRenderPipelineState.Descriptor.Blending](./add.md)
   Additive blending that combines source and destination colors.
 
 

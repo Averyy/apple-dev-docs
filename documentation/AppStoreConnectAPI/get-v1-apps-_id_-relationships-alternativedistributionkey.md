@@ -1,7 +1,8 @@
 # Get the alternative distribution key ID for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -12,23 +13,35 @@
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AppAlternativeDistributionKeyLinkageResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+### Creating and reading keys
+- [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
   Manage keys you use to sign JSON web tokens and connect marketplaces with apps.
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
   Manage keys you use to sign JSON web tokens (JWTs).
-- [Add an Alternative Distribution Key](post-v1-alternativedistributionkeys.md)
+- [Add an Alternative Distribution Key](./post-v1-alternativedistributionkeys.md)
   Add an alternative distribution key for your alternative marketplace app or web distribution.
-- [List Alternative Distribution Keys](get-v1-alternativedistributionkeys.md)
+- [List Alternative Distribution Keys](./get-v1-alternativedistributionkeys.md)
   List the alternative distribution key for your account.
-- [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
+- [Read Alternative Distribution Key Information](./get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
+- [Read an App’s Alternative Distribution Key](./get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
-- [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
+- [Remove an Alternative Distribution Key](./delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 
 

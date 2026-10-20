@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Element full screen is disabled.
 

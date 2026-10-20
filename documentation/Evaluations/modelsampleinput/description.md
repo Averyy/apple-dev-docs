@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of this input, equivalent to `promptDescription`.
 

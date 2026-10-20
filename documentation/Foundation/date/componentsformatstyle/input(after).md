@@ -1,7 +1,8 @@
 # input(after:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The next input value after the given input.
 
@@ -22,15 +23,15 @@ func input(after input: Range<Date>) -> Range<Date>?
 
 #### Return Value
 
-If [`isPositive`](date/componentsformatstyle/ispositive.md) is true, the range `input.lowerBound..<x`, where `x` is the next larger date that this style can differentiate. If [`isPositive`](date/componentsformatstyle/ispositive.md) is false, the range `x..<input.upperBound`, where `x` is the next higher date this style can differentiate, or `nil` if there is no such `x`.
+If [`isPositive`](./ispositive.md) is true, the range `input.lowerBound..<x`, where `x` is the next larger date that this style can differentiate. If [`isPositive`](./ispositive.md) is false, the range `x..<input.upperBound`, where `x` is the next higher date this style can differentiate, or `nil` if there is no such `x`.
 
 #### Discussion
 
-If [`isPositive`](date/componentsformatstyle/ispositive.md) is true, the next input value maintains the same `lowerBound` as `input`, but has a different`upperBound`. If [`isPositive`](date/componentsformatstyle/ispositive.md) is false, the next input value maintains the same `upperBound` as `input`, but as a different `lowerBound`.
+If [`isPositive`](./ispositive.md) is true, the next input value maintains the same `lowerBound` as `input`, but has a different`upperBound`. If [`isPositive`](./ispositive.md) is false, the next input value maintains the same `upperBound` as `input`, but as a different `lowerBound`.
 
-Use this function to determine if the return value provided by [`discreteInput(before:)`](date/componentsformatstyle/discreteinput(before:).md) is precise enough for your use case for any input `y`:
+Use this function to determine if the return value provided by [`discreteInput(before:)`](./discreteinput%28before%29.md) is precise enough for your use case for any input `y`:
 
-```None
+```
 guard let x = style.discreteInput(before: y) else {
     return
 }

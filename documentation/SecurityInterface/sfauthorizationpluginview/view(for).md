@@ -1,7 +1,8 @@
 # view(for:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the appropriate view object for the specified view type.
 
@@ -14,15 +15,19 @@ Returns the appropriate view object for the specified view type.
 func view(for inType: SFViewType) -> NSView!
 ```
 
+```objc
+- (NSView *) viewForType:(SFViewType) inType;
+```
+
 #### Return Value
 
-An [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object representing either a credentials view or an identity and credentials view.
+An [`NSView`](../../AppKit/nsview.md) object representing either a credentials view or an identity and credentials view.
 
 #### Discussion
 
-When the authorization plug-in calls this method, the [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) instance should return the [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object that represents the view indicated by the specified [`SFViewType`](sfviewtype.md). The [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object and its contents should have the autoresize flags set to allow the view to be resized.
+When the authorization plug-in calls this method, the [`SFAuthorizationPluginView`](../sfauthorizationpluginview.md) instance should return the [`NSView`](../../AppKit/nsview.md) object that represents the view indicated by the specified [`SFViewType`](../sfviewtype.md). The [`NSView`](../../AppKit/nsview.md) object and its contents should have the autoresize flags set to allow the view to be resized.
 
-Note that although a maximum width of 394 points is currently supported, this may change in the future. You should not assume that the width of the [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object will never change.
+Note that although a maximum width of 394 points is currently supported, this may change in the future. You should not assume that the width of the [`NSView`](../../AppKit/nsview.md) object will never change.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Note that although a maximum width of 394 points is currently supported, this ma
 
 ## See Also
 
-- [func buttonPressed(SFButtonType)](sfauthorizationpluginview/buttonpressed(_:).md)
+### Responding to User Actions
+- [func buttonPressed(SFButtonType)](./buttonpressed%28_%29.md)
   Tells the authorization plug-in that the user pressed a button in the custom view.
 
 

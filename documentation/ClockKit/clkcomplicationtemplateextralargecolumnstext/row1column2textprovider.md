@@ -1,12 +1,15 @@
 # row1Column2TextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display in the second column of the first row.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,21 +18,26 @@ The text to display in the second column of the first row.
 var row1Column2TextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * row1Column2TextProvider;
+```
+
 #### Discussion
 
-When the [`highlightColumn2`](clkcomplicationtemplateextralargecolumnstext/highlightcolumn2.md) property is [`true`](https://developer.apple.com/documentation/swift/true), a tint color is applied to this text. In multicolor environments, the text provider or template provides the tint color. In monochrome environments, the clock face provides the tint color.
+When the [`highlightColumn2`](./highlightcolumn2.md) property is [`true`](../../Swift/true.md), a tint color is applied to this text. In multicolor environments, the text provider or template provides the tint color. In monochrome environments, the clock face provides the tint color.
 
 ## See Also
 
-- [var column2Alignment: CLKComplicationColumnAlignment](clkcomplicationtemplateextralargecolumnstext/column2alignment.md)
+### Setting the Complication Data
+- [var column2Alignment: CLKComplicationColumnAlignment](./column2alignment.md)
   The alignment of the text in the second column.
-- [var highlightColumn2: Bool](clkcomplicationtemplateextralargecolumnstext/highlightcolumn2.md)
+- [var highlightColumn2: Bool](./highlightcolumn2.md)
   A Boolean value indicating which column should be drawn with a highlight.
-- [var row1Column1TextProvider: CLKTextProvider](clkcomplicationtemplateextralargecolumnstext/row1column1textprovider.md)
+- [var row1Column1TextProvider: CLKTextProvider](./row1column1textprovider.md)
   The text to display in the first column of the first row.
-- [var row2Column1TextProvider: CLKTextProvider](clkcomplicationtemplateextralargecolumnstext/row2column1textprovider.md)
+- [var row2Column1TextProvider: CLKTextProvider](./row2column1textprovider.md)
   The text to display in the first column of the second row.
-- [var row2Column2TextProvider: CLKTextProvider](clkcomplicationtemplateextralargecolumnstext/row2column2textprovider.md)
+- [var row2Column2TextProvider: CLKTextProvider](./row2column2textprovider.md)
   The text to display in the second column of the second row.
 
 

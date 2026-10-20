@@ -1,7 +1,8 @@
 # bloodAlcoholContent
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the user’s blood alcohol content.
 
@@ -19,13 +20,18 @@ A quantity sample type that measures the user’s blood alcohol content.
 static let bloodAlcoholContent: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBloodAlcoholContent;
+```
+
 #### Discussion
 
-These samples use percent units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use percent units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [static let numberOfAlcoholicBeverages: HKQuantityTypeIdentifier](hkquantitytypeidentifier/numberofalcoholicbeverages.md)
+### Alcohol consumption
+- [static let numberOfAlcoholicBeverages: HKQuantityTypeIdentifier](./numberofalcoholicbeverages.md)
   A quantity sample type that measures the number of standard alcoholic drinks that the user has consumed.
 
 

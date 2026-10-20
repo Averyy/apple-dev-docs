@@ -1,7 +1,8 @@
 # jwksEndpointURL
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The JSON Web Key Set endpoint URL for keys.
 
@@ -14,19 +15,24 @@ The JSON Web Key Set endpoint URL for keys.
 var jwksEndpointURL: URL { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSURL * jwksEndpointURL;
+```
+
 ## Mentions
 
-- [Processing the JSON Web Encryption (JWE) login response](processing-the-json-web-encryption-jwe-login-response.md)
+- [Processing the JSON Web Encryption (JWE) login response](../processing-the-json-web-encryption-jwe-login-response.md)
 
 ## See Also
 
-- [var audience: String](asauthorizationproviderextensionloginconfiguration/audience.md)
+### Obtaining the required configuration
+- [var audience: String](./audience.md)
   The audience for validation and requests.
-- [var clientID: String](asauthorizationproviderextensionloginconfiguration/clientid.md)
+- [var clientID: String](./clientid.md)
   The identifier for the client at the identity provider.
-- [var tokenEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md)
+- [var tokenEndpointURL: URL](./tokenendpointurl.md)
   The token endpoint URL for login requests.
-- [var issuer: String](asauthorizationproviderextensionloginconfiguration/issuer.md)
+- [var issuer: String](./issuer.md)
   The issuer of the identity token that the identity provider returns.
 
 

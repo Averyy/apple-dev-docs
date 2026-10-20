@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sent to the delegate when the URL connection has successfully downloaded the URL asset to a destination file.
@@ -21,6 +22,10 @@ Sent to the delegate when the URL connection has successfully downloaded the URL
 func connectionDidFinishDownloading(_ connection: NSURLConnection, destinationURL: URL)
 ```
 
+```objc
+- (void) connectionDidFinishDownloading:(NSURLConnection *) connection destinationURL:(NSURL *) destinationURL;
+```
+
 #### Discussion
 
 This method will be called once after a successful download. The file downloaded to `destinationURL` is guaranteed to exist there only for the duration of this method implementation; the delegate should copy or move the file to a more persistent and appropriate location.
@@ -32,9 +37,10 @@ This method will be called once after a successful download. The file downloaded
 
 ## See Also
 
-- [func connection(NSURLConnection, didWriteData: Int64, totalBytesWritten: Int64, expectedTotalBytes: Int64)](nsurlconnectiondownloaddelegate/connection(_:didwritedata:totalbyteswritten:expectedtotalbytes:).md)
+### Managing Downloads of URL Assets
+- [func connection(NSURLConnection, didWriteData: Int64, totalBytesWritten: Int64, expectedTotalBytes: Int64)](./connection%28_,didwritedata,totalbyteswritten,expectedtotalbytes%29.md)
   Sent to the delegate to deliver progress information for a download of a URL asset to a destination file.
-- [func connectionDidResumeDownloading(NSURLConnection, totalBytesWritten: Int64, expectedTotalBytes: Int64)](nsurlconnectiondownloaddelegate/connectiondidresumedownloading(_:totalbyteswritten:expectedtotalbytes:).md)
+- [func connectionDidResumeDownloading(NSURLConnection, totalBytesWritten: Int64, expectedTotalBytes: Int64)](./connectiondidresumedownloading%28_,totalbyteswritten,expectedtotalbytes%29.md)
   Sent to the delegate when an URL connection resumes downloading a URL asset that was earlier suspended.
 
 

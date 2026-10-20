@@ -1,7 +1,8 @@
 # errSecInvalidInputVector
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The input vector is not valid.
 
@@ -18,6 +19,10 @@ The input vector is not valid.
 
 ```swift
 var errSecInvalidInputVector: OSStatus { get }
+```
+
+```c
+errSecInvalidInputVector
 ```
 
 

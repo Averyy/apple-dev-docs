@@ -1,7 +1,8 @@
 # url
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A valid URL that corresponds to the original link.
 

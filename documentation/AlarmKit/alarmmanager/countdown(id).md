@@ -1,7 +1,8 @@
 # countdown(id:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a countdown for the alarm with the specified ID if it’s currently alerting.
 
@@ -26,13 +27,14 @@ The function throws otherwise. This is identical to the repeat function of a tim
 
 ## See Also
 
-- [func cancel(id: Alarm.ID) throws](alarmmanager/cancel(id:).md)
+### Changing an alarm state
+- [func cancel(id: Alarm.ID) throws](./cancel%28id%29.md)
   Cancels the alarm with the specified ID.
-- [func pause(id: Alarm.ID) throws](alarmmanager/pause(id:).md)
+- [func pause(id: Alarm.ID) throws](./pause%28id%29.md)
   Pauses the alarm with the specified ID if it’s in the countdown state.
-- [func resume(id: Alarm.ID) throws](alarmmanager/resume(id:).md)
+- [func resume(id: Alarm.ID) throws](./resume%28id%29.md)
   Resumes the alarm with the specified ID if it’s in the paused state.
-- [func stop(id: Alarm.ID) throws](alarmmanager/stop(id:).md)
+- [func stop(id: Alarm.ID) throws](./stop%28id%29.md)
   Stops the alarm with the specified ID.
 
 

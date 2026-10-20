@@ -1,7 +1,8 @@
 # AVExperienceController.Experience.embedded
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An experience where the video embeds within its original container.
 
@@ -24,11 +25,12 @@ It’s the app’s responsibility to correctly manage the player view controller
 
 ## See Also
 
-- [AVExperienceController.Experience.expanded](avexperiencecontroller/experience-swift.enum/expanded.md)
+### Supported experiences
+- [AVExperienceController.Experience.expanded](./expanded.md)
   An experience where the system places the video outside of its original container.
-- [AVExperienceController.Experience.multiview](avexperiencecontroller/experience-swift.enum/multiview.md)
+- [AVExperienceController.Experience.multiview](./multiview.md)
   An experience where multiple videos play together.
-- [AVExperienceController.Experience.immersive](avexperiencecontroller/experience-swift.enum/immersive.md)
+- [AVExperienceController.Experience.immersive](./immersive.md)
   Indicates an experience in which the video extends beyond the app window boundaries/container.
 
 

@@ -1,7 +1,8 @@
 # hoverEffect
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current hover effect of the hover effect component.
 

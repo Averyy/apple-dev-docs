@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher that this publisher receives elements from.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let count: Int](publishers/collectbycount/count.md)
+### Inspecting publisher properties
+- [let count: Int](./count.md)
   The maximum number of received elements to buffer before publishing.
 
 

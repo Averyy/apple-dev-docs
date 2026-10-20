@@ -1,14 +1,15 @@
 # arm_thread_state32_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct arm_thread_state arm_thread_state32_t;
 ```
 

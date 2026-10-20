@@ -1,21 +1,23 @@
 # fdimf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float fdimf(float, float);
 ```
 
 ## See Also
 
-- [fdim](1557355-fdim.md)
-- [fdiml](1557241-fdiml.md)
+### Positive Difference
+- [fdim](./api-1557355-fdim.md)
+- [fdiml](./api-1557241-fdiml.md)
 
 
 ---

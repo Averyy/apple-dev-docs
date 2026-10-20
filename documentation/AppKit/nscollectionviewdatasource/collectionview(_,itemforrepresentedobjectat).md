@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks your data source object to provide the item at the specified location in the collection view.
@@ -16,13 +17,17 @@ Asks your data source object to provide the item at the specified location in th
 func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem
 ```
 
+```objc
+- (NSCollectionViewItem *) collectionView:(NSCollectionView *) collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
 A configured item object. You must not return `nil` from this method.
 
 #### Discussion
 
-All data source objects must implement this method. Your implementation is responsible for creating, configuring, and returning the appropriate item object based on the specified index path. You do this by calling the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(withidentifier:for:).md) method of the collection view to retrieve an empty item object of the appropriate type. After receiving the item object, update its properties with the data from your app’s data structures and return it.
+All data source objects must implement this method. Your implementation is responsible for creating, configuring, and returning the appropriate item object based on the specified index path. You do this by calling the [`makeItem(withIdentifier:for:)`](../nscollectionview/makeitem%28withidentifier,for%29.md) method of the collection view to retrieve an empty item object of the appropriate type. After receiving the item object, update its properties with the data from your app’s data structures and return it.
 
 You do not need to set the frame of an item’s view from this method. The collection view gets the item’s location and other layout-related attributes from the layout object during a separate step.
 
@@ -33,7 +38,8 @@ You do not need to set the frame of an item’s view from this method. The colle
 
 ## See Also
 
-- [func collectionView(NSCollectionView, viewForSupplementaryElementOfKind: NSCollectionView.SupplementaryElementKind, at: IndexPath) -> NSView](nscollectionviewdatasource/collectionview(_:viewforsupplementaryelementofkind:at:).md)
+### Configuring Items and Supplementary Views
+- [func collectionView(NSCollectionView, viewForSupplementaryElementOfKind: NSCollectionView.SupplementaryElementKind, at: IndexPath) -> NSView](./collectionview%28_,viewforsupplementaryelementofkind,at%29.md)
   Asks your data source object to provide the supplementary view at the specified location in a section of the collection view.
 
 

@@ -1,7 +1,8 @@
 # cursorObscured
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 If this is true, the cursor has been obscured and cursorShow should not be 0. The cursor will be shown again the next time it is moved.
 
@@ -10,7 +11,7 @@ If this is true, the cursor has been obscured and cursorShow should not be 0. Th
 
 ## Declaration
 
-```swift
+```c
 char cursorObscured;
 ```
 

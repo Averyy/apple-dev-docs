@@ -1,7 +1,8 @@
 # PredicateExpressions.NotEqual
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,23 +22,23 @@ struct NotEqual<LHS, RHS> where LHS : PredicateExpression, RHS : PredicateExpres
 ## Topics
 
 ### Initializers
-- [init(lhs: LHS, rhs: RHS)](predicateexpressions/notequal/init(lhs:rhs:).md)
+- [init(lhs: LHS, rhs: RHS)](./notequal/init%28lhs,rhs%29.md)
 ### Instance Properties
-- [let lhs: LHS](predicateexpressions/notequal/lhs.md)
-- [let rhs: RHS](predicateexpressions/notequal/rhs.md)
+- [let lhs: LHS](./notequal/lhs.md)
+- [let rhs: RHS](./notequal/rhs.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

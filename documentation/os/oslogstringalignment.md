@@ -1,7 +1,8 @@
 # OSLogStringAlignment
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The alignment options for interpolated strings.
 
@@ -11,7 +12,7 @@ The alignment options for interpolated strings.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,17 +24,17 @@ struct OSLogStringAlignment
 
 ## Mentions
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+- [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
 ## Topics
 
 ### Getting the Standard Alignment
-- [static var none: OSLogStringAlignment](oslogstringalignment/none.md)
+- [static var none: OSLogStringAlignment](./oslogstringalignment/none.md)
   No alignment.
 ### Getting a Custom String Alignment
-- [static func left(columns: @autoclosure () -> Int) -> OSLogStringAlignment](oslogstringalignment/left(columns:).md)
+- [static func left(columns: @autoclosure () -> Int) -> OSLogStringAlignment](./oslogstringalignment/left%28columns%29.md)
   Aligns the value on the left side of a column with the specified width.
-- [static func right(columns: @autoclosure () -> Int) -> OSLogStringAlignment](oslogstringalignment/right(columns:).md)
+- [static func right(columns: @autoclosure () -> Int) -> OSLogStringAlignment](./oslogstringalignment/right%28columns%29.md)
   Aligns the value on the right side of a column with the specified width.
 
 

@@ -1,7 +1,8 @@
 # NSGridRow.Alignment
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
@@ -12,33 +13,38 @@
 enum Alignment
 ```
 
+```c
+enum NSGridRowAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Row Alignment Options
-- [NSGridRow.Alignment.firstBaseline](nsgridrow/alignment/firstbaseline.md)
-- [NSGridRow.Alignment.inherited](nsgridrow/alignment/inherited.md)
-- [NSGridRow.Alignment.lastBaseline](nsgridrow/alignment/lastbaseline.md)
-- [NSGridRow.Alignment.none](nsgridrow/alignment/none.md)
+- [NSGridRow.Alignment.firstBaseline](./alignment/firstbaseline.md)
+- [NSGridRow.Alignment.inherited](./alignment/inherited.md)
+- [NSGridRow.Alignment.lastBaseline](./alignment/lastbaseline.md)
+- [NSGridRow.Alignment.none](./alignment/none.md)
 ### Initializers
-- [init?(rawValue: Int)](nsgridrow/alignment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./alignment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var topPadding: CGFloat](nsgridrow/toppadding.md)
-- [var bottomPadding: CGFloat](nsgridrow/bottompadding.md)
-- [var height: CGFloat](nsgridrow/height.md)
-- [var rowAlignment: NSGridRow.Alignment](nsgridrow/rowalignment.md)
-- [var yPlacement: NSGridCell.Placement](nsgridrow/yplacement.md)
+### Formatting the Row
+- [var topPadding: CGFloat](./toppadding.md)
+- [var bottomPadding: CGFloat](./bottompadding.md)
+- [var height: CGFloat](./height.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
 
 
 ---

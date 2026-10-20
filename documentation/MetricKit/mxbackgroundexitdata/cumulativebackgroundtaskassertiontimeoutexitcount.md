@@ -1,16 +1,19 @@
 # cumulativeBackgroundTaskAssertionTimeoutExitCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the system terminated the app from the background for exceeding the allocated time for a background task.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`taskTimeoutTerminationCount`](../backgroundterminationmetric/tasktimeoutterminationcount.md) instead.
 
 ## Declaration
 
@@ -18,9 +21,13 @@ The number of times the system terminated the app from the background for exceed
 var cumulativeBackgroundTaskAssertionTimeoutExitCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger cumulativeBackgroundTaskAssertionTimeoutExitCount;
+```
+
 #### Discussion
 
-This exit usually occurs when the app fails to call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/endbackgroundtask(_:)) as soon as a background task is complete.
+This exit usually occurs when the app fails to call [`endBackgroundTask(_:)`](../../UIKit/uiapplication/endbackgroundtask%28_%29.md) as soon as a background task is complete.
 
 
 ---

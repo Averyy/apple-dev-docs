@@ -1,7 +1,8 @@
 # rowsOfPixelsToDiscardAtTop
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rows of pixels to discard from the top of the image.
 

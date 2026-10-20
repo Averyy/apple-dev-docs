@@ -1,19 +1,20 @@
 # setFirstObject
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an object to the OSOrderedSet at index 0 if it is not already present.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool setFirstObject(const OSMetaClassBase *anObject);
 ```
 

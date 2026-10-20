@@ -1,7 +1,8 @@
 # readAttributeBatteryAlert(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatteryAlert(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatteryAlert() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBatteryAlertWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,15 +1,20 @@
 # hv_boot_state.HV_BS_RUNNING
 
 **Framework**: Hypervisor  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case HV_BS_RUNNING
+```
+
+```c
+HV_BS_RUNNING
 ```
 
 

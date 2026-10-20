@@ -1,7 +1,8 @@
 # GameCenterPlayerAchievementSubmissionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center player achievement submission.
 
@@ -10,20 +11,20 @@ The request body you use to create a Game Center player achievement submission.
 
 ## Declaration
 
-```swift
+```
 object GameCenterPlayerAchievementSubmissionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterPlayerAchievementSubmissionCreateRequest.Data.Attributes](gamecenterplayerachievementsubmissioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterPlayerAchievementSubmissionCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a player resource.
 
 ## Properties
 
 - `attributes` (GameCenterPlayerAchievementSubmissionCreateRequest.Data.Attributes) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterPlayerAchievementSubmissions`
 
 
 ---

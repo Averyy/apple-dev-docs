@@ -1,7 +1,8 @@
 # removeArrangedSubview(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the provided view from the stack’s array of arranged subviews.
 
@@ -18,11 +19,15 @@ Removes the provided view from the stack’s array of arranged subviews.
 func removeArrangedSubview(_ view: UIView)
 ```
 
+```objc
+- (void) removeArrangedSubview:(UIView *) view;
+```
+
 #### Discussion
 
-This method removes the provided view from the stack’s [`arrangedSubviews`](uistackview/arrangedsubviews.md) array. The stack view no longer manages the view’s position and size. However, this method doesn’t remove the provided view from the stack’s [`subviews`](uiview/subviews.md) array; therefore, the view is still displayed as part of the view hierarchy.
+This method removes the provided view from the stack’s [`arrangedSubviews`](./arrangedsubviews.md) array. The stack view no longer manages the view’s position and size. However, this method doesn’t remove the provided view from the stack’s [`subviews`](../uiview/subviews.md) array; therefore, the view is still displayed as part of the view hierarchy.
 
-To prevent the view from appearing on screen after calling the stack’s [`removeArrangedSubview(_:)`](uistackview/removearrangedsubview(_:).md) method, explicitly remove the view from the subviews array by calling the view’s [`removeFromSuperview()`](uiview/removefromsuperview().md) method, or set the view’s [`isHidden`](uiview/ishidden.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+To prevent the view from appearing on screen after calling the stack’s [`removeArrangedSubview(_:)`](./removearrangedsubview%28_%29.md) method, explicitly remove the view from the subviews array by calling the view’s [`removeFromSuperview()`](../uiview/removefromsuperview%28%29.md) method, or set the view’s [`isHidden`](../uiview/ishidden.md) property to [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -30,15 +35,17 @@ To prevent the view from appearing on screen after calling the stack’s [`remov
 
 ## See Also
 
-- [func removeFromSuperview()](uiview/removefromsuperview.md)
+### Related Documentation
+- [func removeFromSuperview()](../uiview/removefromsuperview%28%29.md)
   Unlinks the view from its superview and its window, and removes it from the responder chain.
-- [convenience init(arrangedSubviews: [UIView])](uistackview/init(arrangedsubviews:).md)
+- [convenience init(arrangedSubviews: [UIView])](./init%28arrangedsubviews%29.md)
   Returns a new stack view object that manages the provided views.
-- [func addArrangedSubview(UIView)](uistackview/addarrangedsubview(_:).md)
+### Managing arranged subviews
+- [func addArrangedSubview(UIView)](./addarrangedsubview%28_%29.md)
   Adds a view to the end of the arranged subviews array.
-- [var arrangedSubviews: [UIView]](uistackview/arrangedsubviews.md)
+- [var arrangedSubviews: [UIView]](./arrangedsubviews.md)
   The list of views arranged by the stack view.
-- [func insertArrangedSubview(UIView, at: Int)](uistackview/insertarrangedsubview(_:at:).md)
+- [func insertArrangedSubview(UIView, at: Int)](./insertarrangedsubview%28_,at%29.md)
   Adds the provided view to the array of arranged subviews at the specified index.
 
 

@@ -1,7 +1,8 @@
 # anchors
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of anchors contained in the scene.
 
@@ -21,9 +22,10 @@ The collection of anchors contained in the scene.
 
 ## See Also
 
-- [func addAnchor(any HasAnchoring)](scene/addanchor(_:).md)
+### Adding and removing anchors
+- [func addAnchor(any HasAnchoring)](./addanchor%28_%29.md)
   Adds an anchor to the scene’s list of anchors.
-- [func removeAnchor(any HasAnchoring)](scene/removeanchor(_:).md)
+- [func removeAnchor(any HasAnchoring)](./removeanchor%28_%29.md)
   Removes the specified anchor from the scene.
 
 

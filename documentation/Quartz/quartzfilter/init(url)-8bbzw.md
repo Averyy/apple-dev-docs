@@ -1,7 +1,8 @@
 # init(URL:)
 
 **Framework**: Quartz  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.4+

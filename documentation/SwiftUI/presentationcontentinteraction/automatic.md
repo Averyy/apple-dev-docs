@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default swipe behavior for the presentation.
 
@@ -22,9 +23,10 @@ static var automatic: PresentationContentInteraction { get }
 
 ## See Also
 
-- [static var resizes: PresentationContentInteraction](presentationcontentinteraction/resizes.md)
+### Getting interaction behaviors
+- [static var resizes: PresentationContentInteraction](./resizes.md)
   A behavior that prioritizes resizing a presentation when swiping, rather than scrolling the content of the presentation.
-- [static var scrolls: PresentationContentInteraction](presentationcontentinteraction/scrolls.md)
+- [static var scrolls: PresentationContentInteraction](./scrolls.md)
   A behavior that prioritizes scrolling the content of a presentation when swiping, rather than resizing the presentation.
 
 

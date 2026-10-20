@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.invalidManifestEntry
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that an invalid manifest entry was encountered.
 
@@ -16,6 +17,10 @@ Indicates that an invalid manifest entry was encountered.
 
 ```swift
 case invalidManifestEntry
+```
+
+```c
+WKWebExtensionErrorInvalidManifestEntry
 ```
 
 

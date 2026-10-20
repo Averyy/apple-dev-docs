@@ -1,7 +1,8 @@
 # shuffled()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of the sequence, shuffled.
 
@@ -36,17 +37,18 @@ let shuffledNumbers = numbers.shuffled()
 
 This method is equivalent to calling `shuffled(using:)`, passing in the system’s default random generator.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## See Also
 
-- [func sorted() -> [Self.Element]](string/sorted.md)
+### Reordering a String’s Characters
+- [func sorted() -> [Self.Element]](./sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](string/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func reversed() -> ReversedCollection<Self>](string/reversed.md)
+- [func reversed() -> ReversedCollection<Self>](./reversed%28%29.md)
   Returns a view presenting the elements of the collection in reverse order.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](string/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
 
 

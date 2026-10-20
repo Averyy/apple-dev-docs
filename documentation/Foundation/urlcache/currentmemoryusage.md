@@ -1,7 +1,8 @@
 # currentMemoryUsage
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current size of the in-memory cache, in bytes.
 
@@ -20,13 +21,18 @@ The current size of the in-memory cache, in bytes.
 var currentMemoryUsage: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger currentMemoryUsage;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 ## See Also
 
-- [var memoryCapacity: Int](urlcache/memorycapacity.md)
+### Getting and setting in-memory cache properties
+- [var memoryCapacity: Int](./memorycapacity.md)
   The capacity of the in-memory cache, in bytes.
 
 

@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that paints source image samples over the background image samples.
 

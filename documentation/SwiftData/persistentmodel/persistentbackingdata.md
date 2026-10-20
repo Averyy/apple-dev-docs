@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -22,9 +23,10 @@ var persistentBackingData: any BackingData<Self> { get set }
 
 ## See Also
 
-- [static var schemaMetadata: [Schema.PropertyMetadata]](persistentmodel/schemametadata.md)
-- [var hasChanges: Bool](persistentmodel/haschanges.md)
-- [var isDeleted: Bool](persistentmodel/isdeleted.md)
+### Accessing supplementary information
+- [static var schemaMetadata: [Schema.PropertyMetadata]](./schemametadata.md)
+- [var hasChanges: Bool](./haschanges.md)
+- [var isDeleted: Bool](./isdeleted.md)
 
 
 ---

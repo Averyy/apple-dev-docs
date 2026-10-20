@@ -1,7 +1,8 @@
 # AppsAdGroupReportRow
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
 
@@ -10,7 +11,7 @@ A single row in an Apps ad group report, containing ad group metadata, total met
 
 ## Declaration
 
-```swift
+```
 object AppsAdGroupReportRow
 ```
 
@@ -148,41 +149,41 @@ The `metadata` field captures ad group identifiers and configuration at report t
 
 ## Properties
 
-- `totalMetrics` (AppsAdGroupMetrics): See [`AppsAdGroupMetrics`](appsadgroupmetrics.md) for details.
+- `totalMetrics` (AppsAdGroupMetrics): See [`AppsAdGroupMetrics`](./appsadgroupmetrics.md) for details.
 - `granularMetrics` ([AppsAdGroupMetrics]): Time-series metrics broken down by the requested granularity (for example, `DAILY`, `WEEKLY`). Present only when a `granularity` is specified in the request. When it isn’t, this field is absent and all data appears in `totalMetrics` instead.
-- `metadata` (AppsReportingAdGroup): See [`AppsReportingAdGroup`](appsreportingadgroup.md) for details.
+- `metadata` (AppsReportingAdGroup): See [`AppsReportingAdGroup`](./appsreportingadgroup.md) for details.
 
 ## See Also
 
-- [object AppsReportingRequest](appsreportingrequest.md)
+- [object AppsReportingRequest](./appsreportingrequest.md)
   Request body for apps reporting queries.
-- [object AppsReportingCampaign](appsreportingcampaign.md)
+- [object AppsReportingCampaign](./appsreportingcampaign.md)
   Campaign metadata for apps report rows.
-- [object AppsReportingAdGroup](appsreportingadgroup.md)
+- [object AppsReportingAdGroup](./appsreportingadgroup.md)
   Ad group metadata for apps report rows.
-- [object AppsReportingAd](appsreportingad.md)
+- [object AppsReportingAd](./appsreportingad.md)
   Ad metadata for apps report rows.
-- [object AppsReportingCreative](appsreportingcreative.md)
+- [object AppsReportingCreative](./appsreportingcreative.md)
   Creative metadata for apps ads.
-- [object AppsCampaignReportResponse](appscampaignreportresponse.md)
+- [object AppsCampaignReportResponse](./appscampaignreportresponse.md)
   The top-level response envelope for apps campaign-level reports.
-- [object AppsCampaignReportRow](appscampaignreportrow.md)
+- [object AppsCampaignReportRow](./appscampaignreportrow.md)
   A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object AppsCampaignReportSummary](appscampaignreportsummary.md)
+- [object AppsCampaignReportSummary](./appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
-- [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
+- [object AppsCampaignResultContainer](./appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
-- [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
+- [object AppsAdGroupReportResponse](./appsadgroupreportresponse.md)
   The top-level response envelope for apps ad group reports.
-- [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
+- [object AppsAdGroupReportSummary](./appsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad group report.
-- [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
+- [object AppsAdGroupResultContainer](./appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
-- [object AppsAdReportResponse](appsadreportresponse.md)
+- [object AppsAdReportResponse](./appsadreportresponse.md)
   The top-level response envelope for apps ad-level reports.
-- [object AppsAdReportRow](appsadreportrow.md)
+- [object AppsAdReportRow](./appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdReportSummary](appsadreportsummary.md)
+- [object AppsAdReportSummary](./appsadreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad-level report.
 
 

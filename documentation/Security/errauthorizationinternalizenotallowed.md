@@ -1,7 +1,8 @@
 # errAuthorizationInternalizeNotAllowed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Security Server denied internalization of the authorization reference.
 
@@ -13,6 +14,10 @@ The Security Server denied internalization of the authorization reference.
 
 ```swift
 var errAuthorizationInternalizeNotAllowed: OSStatus { get }
+```
+
+```c
+errAuthorizationInternalizeNotAllowed
 ```
 
 

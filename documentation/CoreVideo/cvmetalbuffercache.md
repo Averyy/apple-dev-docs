@@ -1,7 +1,8 @@
 # CVMetalBufferCache
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A cache used to create and manage Metal buffer objects.
 
@@ -19,35 +20,40 @@ A cache used to create and manage Metal buffer objects.
 class CVMetalBufferCache
 ```
 
+```c
+typedef struct __CVMetalBufferCache * CVMetalBufferCacheRef;
+```
+
 #### Overview
 
-A Core Video Metal buffer cache creates and manages [`CVMetalBuffer`](cvmetalbuffer.md) buffers. You use a Metal buffer cache to directly read from or write to GPU-based Core Video image buffers in rendering, or for sharing data with Metal kernels.
+A Core Video Metal buffer cache creates and manages [`CVMetalBuffer`](./cvmetalbuffer.md) buffers. You use a Metal buffer cache to directly read from or write to GPU-based Core Video image buffers in rendering, or for sharing data with Metal kernels.
 
 ## Topics
 
 ### Functions
-- [func CVMetalBufferCacheCreate(CFAllocator?, CFDictionary?, any MTLDevice, UnsafeMutablePointer<CVMetalBufferCache?>) -> CVReturn](cvmetalbuffercachecreate(_:_:_:_:).md)
-- [func CVMetalBufferCacheCreateBufferFromImage(CFAllocator?, CVMetalBufferCache, CVImageBuffer, UnsafeMutablePointer<CVMetalBuffer?>) -> CVReturn](cvmetalbuffercachecreatebufferfromimage(_:_:_:_:).md)
-- [func CVMetalBufferCacheFlush(CVMetalBufferCache, CVOptionFlags)](cvmetalbuffercacheflush(_:_:).md)
-- [func CVMetalBufferCacheGetTypeID() -> CFTypeID](cvmetalbuffercachegettypeid().md)
-- [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](cvmetalbuffergetbuffer(_:).md)
-- [func CVMetalBufferGetTypeID() -> CFTypeID](cvmetalbuffergettypeid().md)
+- [func CVMetalBufferCacheCreate(CFAllocator?, CFDictionary?, any MTLDevice, UnsafeMutablePointer<CVMetalBufferCache?>) -> CVReturn](./cvmetalbuffercachecreate%28_,_,_,_%29.md)
+- [func CVMetalBufferCacheCreateBufferFromImage(CFAllocator?, CVMetalBufferCache, CVImageBuffer, UnsafeMutablePointer<CVMetalBuffer?>) -> CVReturn](./cvmetalbuffercachecreatebufferfromimage%28_,_,_,_%29.md)
+- [func CVMetalBufferCacheFlush(CVMetalBufferCache, CVOptionFlags)](./cvmetalbuffercacheflush%28_,_%29.md)
+- [func CVMetalBufferCacheGetTypeID() -> CFTypeID](./cvmetalbuffercachegettypeid%28%29.md)
+- [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](./cvmetalbuffergetbuffer%28_%29.md)
+- [func CVMetalBufferGetTypeID() -> CFTypeID](./cvmetalbuffergettypeid%28%29.md)
 ### Data Types
-- [typealias CVMetalBuffer](cvmetalbuffer.md)
+- [typealias CVMetalBuffer](./cvmetalbuffer.md)
 ### Constants
-- [let kCVMetalBufferCacheMaximumBufferAgeKey: CFString](kcvmetalbuffercachemaximumbufferagekey.md)
+- [let kCVMetalBufferCacheMaximumBufferAgeKey: CFString](./kcvmetalbuffercachemaximumbufferagekey.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [CVMetalTextureCache](cvmetaltexturecache-q3j.md)
+### Metal
+- [CVMetalTextureCache](./cvmetaltexturecache-q3j.md)
   A cache used to create and manage Metal texture objects.
-- [CVMetalTexture](cvmetaltexture-q3g.md)
+- [CVMetalTexture](./cvmetaltexture-q3g.md)
   A texture-based image buffer that supplies source image data for use with the Metal framework.
 
 

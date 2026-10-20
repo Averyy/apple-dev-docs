@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

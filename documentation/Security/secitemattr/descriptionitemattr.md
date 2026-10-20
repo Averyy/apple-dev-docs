@@ -1,7 +1,8 @@
 # SecItemAttr.descriptionItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the description attribute.
 
@@ -13,6 +14,10 @@ Identifies the description attribute.
 
 ```swift
 case descriptionItemAttr
+```
+
+```c
+kSecDescriptionItemAttr
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # itemCount
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current number of files processed during a feature extraction phase, or the completed iterations during a training phase.
 
@@ -21,15 +22,16 @@ var itemCount: Int
 
 ## See Also
 
-- [var elapsedTime: TimeInterval](mlprogress/elapsedtime.md)
+### Inspecting a session’s progress
+- [var elapsedTime: TimeInterval](./elapsedtime.md)
   The time, in seconds, since the training session started.
-- [var phase: MLPhase](mlprogress/phase.md)
+- [var phase: MLPhase](./phase.md)
   The current phase of the training session.
-- [var totalItemCount: Int?](mlprogress/totalitemcount.md)
+- [var totalItemCount: Int?](./totalitemcount.md)
   The total number of files during a feature extraction phase, or total iterations during a training phase.
-- [var metrics: [MLProgress.Metric : Any]](mlprogress/metrics.md)
+- [var metrics: [MLProgress.Metric : Any]](./metrics.md)
   Measurements of the model’s performance during the training or evaluation phases of a training session.
-- [MLProgress.Metric](mlprogress/metric.md)
+- [MLProgress.Metric](./metric.md)
   Metrics you use to evaluate a model’s performance during a training session.
 
 

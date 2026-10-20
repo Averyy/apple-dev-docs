@@ -1,7 +1,8 @@
 # stop(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops a long-running query.
 
@@ -19,10 +20,14 @@ Stops a long-running query.
 func stop(_ query: HKQuery)
 ```
 
+```objc
+- (void) stopQuery:(HKQuery *) query;
+```
+
 ## Mentions
 
-- [Executing Observer Queries](executing-observer-queries.md)
-- [Reading route data](reading-route-data.md)
+- [Executing Observer Queries](../executing-observer-queries.md)
+- [Reading route data](../reading-route-data.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ Use this method on long-running queries only. Most queries automatically stop af
 
 ## Parameters
 
-- `query`: Either an [`HKObserverQuery`](hkobserverquery.md) instance or an [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) instance.
+- `query`: Either an [`HKObserverQuery`](../hkobserverquery.md) instance or an [`HKStatisticsCollectionQuery`](../hkstatisticscollectionquery.md) instance.
 
 ## See Also
 
-- [func execute(HKQuery)](hkhealthstore/execute(_:).md)
+### Querying HealthKit data
+- [func execute(HKQuery)](./execute%28_%29.md)
   Starts executing the provided query.
 
 

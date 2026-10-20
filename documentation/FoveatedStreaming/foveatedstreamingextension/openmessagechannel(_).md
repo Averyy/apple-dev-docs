@@ -2,6 +2,7 @@
 
 **Framework**: Foveated Streaming  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles a message channel opened by the host app.
@@ -18,7 +19,7 @@ func openMessageChannel(_ channel: Self.MessageChannel) throws
 
 #### Discussion
 
-The framework vends the [`FoveatedStreamingProviderMessageChannel`](foveatedstreamingprovidermessagechannel.md) and calls this when the host opens a channel.
+The framework vends the [`FoveatedStreamingProviderMessageChannel`](../foveatedstreamingprovidermessagechannel.md) and calls this when the host opens a channel.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The title and subtitle shown in title bar / navigation bar.
 

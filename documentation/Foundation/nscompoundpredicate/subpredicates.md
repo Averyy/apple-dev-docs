@@ -1,7 +1,8 @@
 # subpredicates
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s subpredicates.
 
@@ -20,11 +21,16 @@ The receiver’s subpredicates.
 var subpredicates: [Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray * subpredicates;
+```
+
 ## See Also
 
-- [var compoundPredicateType: NSCompoundPredicate.LogicalType](nscompoundpredicate/compoundpredicatetype.md)
+### Getting Information About a Compound Predicate
+- [var compoundPredicateType: NSCompoundPredicate.LogicalType](./compoundpredicatetype.md)
   The predicate type for the receiver.
-- [NSCompoundPredicate.LogicalType](nscompoundpredicate/logicaltype.md)
+- [NSCompoundPredicate.LogicalType](./logicaltype.md)
   Constants that describe the possible types of a compound predicate.
 
 

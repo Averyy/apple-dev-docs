@@ -1,7 +1,8 @@
 # hasChanges
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the context has unsaved changes.
 
@@ -23,7 +24,8 @@ var hasChanges: Bool { get }
 
 ## See Also
 
-- [var changedModelsArray: [any PersistentModel]](modelcontext/changedmodelsarray.md)
+### Modifying models
+- [var changedModelsArray: [any PersistentModel]](./changedmodelsarray.md)
   The array of registered models that have unsaved changes.
 
 

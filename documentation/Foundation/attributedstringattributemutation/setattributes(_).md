@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the attributed string’s attributes to those in a specified attribute container.
@@ -27,9 +28,10 @@ mutating func setAttributes(_ attributes: AttributeContainer)
 
 ## See Also
 
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstringattributemutation/mergeattributes(_:mergepolicy:).md)
+### Mutating the String’s Attributes
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstringattributemutation/replaceattributes(_:with:).md)
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](./replaceattributes%28_,with%29.md)
   Replaces the attributed string’s attributes with those in a specified attribute container.
 
 

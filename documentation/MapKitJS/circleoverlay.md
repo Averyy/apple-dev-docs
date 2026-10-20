@@ -1,7 +1,8 @@
 # CircleOverlay
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A circular overlay with a configurable radius that centers on a specific geographic coordinate.
 
@@ -10,15 +11,15 @@ A circular overlay with a configurable radius that centers on a specific geograp
 
 ## Declaration
 
-```swift
+```
 class CircleOverlay extends Overlay
 ```
 
 #### Overview
 
-The circle overlay provides a built-in object for creating circles. MapKit JS defines [`CircleOverlay`](circleoverlay.md) by a coordinate and a radius (in meters). All [`style`](overlayoptions/style.md) properties apply to circle overlays except `lineCap`, `lineJoin`, and `fillRule`. MapKit JS ignores properties that don’t apply.
+The circle overlay provides a built-in object for creating circles. MapKit JS defines [`CircleOverlay`](./circleoverlay.md) by a coordinate and a radius (in meters). All [`style`](./overlayoptions/style.md) properties apply to circle overlays except `lineCap`, `lineJoin`, and `fillRule`. MapKit JS ignores properties that don’t apply.
 
-[`CircleOverlay`](circleoverlay.md) doesn’t implement methods of its own. For more information, see the base object, [`Overlay`](overlay.md).
+[`CircleOverlay`](./circleoverlay.md) doesn’t implement methods of its own. For more information, see the base object, [`Overlay`](./overlay.md).
 
 The following example uses circle overlays to show the relative population sizes of three cities in the San Francisco Bay Area:
 
@@ -50,38 +51,39 @@ map.addOverlays(circles);
 ## Topics
 
 ### Creating a circle overlay
-- [new CircleOverlay(coordinate, radius, options)](circleoverlay/circleoverlayconstructor.md)
+- [new CircleOverlay(coordinate, radius, options)](./circleoverlay/circleoverlayconstructor.md)
   Creates a circle overlay with a center coordinate, radius, and style options.
-- [interface OverlayOptions](overlayoptions.md)
+- [interface OverlayOptions](./overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
 ### Defining the circle
-- [coordinate](circleoverlay/coordinate.md)
+- [coordinate](./circleoverlay/coordinate.md)
   The coordinate of the circle overlay’s center.
-- [radius](circleoverlay/radius.md)
+- [radius](./circleoverlay/radius.md)
   The circle overlay’s radius, in meters.
 
 ## Relationships
 
 ### Inherits From
-- [Overlay](overlay.md)
+- [Overlay](./overlay.md)
 
 ## See Also
 
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+### Overlays
+- [Adding interactivity to overlays](./adding-interactivity-to-overlays.md)
   Configure and respond to overlays to make them interactive.
-- [class Overlay](overlay.md)
+- [class Overlay](./overlay.md)
   An abstract base object that defines the methods and properties for map overlays.
-- [class Style](style.md)
+- [class Style](./style.md)
   A set of observable style properties for overlays, including the color and opacity of strokes and fills, and line styles.
-- [class PolylineOverlay](polylineoverlay.md)
+- [class PolylineOverlay](./polylineoverlay.md)
   An overlay of connected line segments that don’t form a closed shape.
-- [class PolygonOverlay](polygonoverlay.md)
+- [class PolygonOverlay](./polygonoverlay.md)
   An overlay consisting of one or more points that forms a closed shape.
-- [interface OverlayOptions](overlayoptions.md)
+- [interface OverlayOptions](./overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
-- [class TileOverlay](tileoverlay.md)
+- [class TileOverlay](./tileoverlay.md)
   An overlay that covers an area of the map with bitmapped tiles.
-- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+- [type TileOverlayUrlTemplate](./tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
 
 

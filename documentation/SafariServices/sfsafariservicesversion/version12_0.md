@@ -1,7 +1,8 @@
 # SFSafariServicesVersion.version12_0
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.12+
@@ -12,13 +13,18 @@
 case version12_0
 ```
 
+```c
+SFSafariServicesVersion12_0
+```
+
 ## See Also
 
-- [SFSafariServicesVersion.version10_0](sfsafariservicesversion/version10_0.md)
-- [SFSafariServicesVersion.version10_1](sfsafariservicesversion/version10_1.md)
-- [SFSafariServicesVersion.version11_0](sfsafariservicesversion/version11_0.md)
-- [SFSafariServicesVersion.version12_1](sfsafariservicesversion/version12_1.md)
-- [SFSafariServicesVersion.version13_0](sfsafariservicesversion/version13_0.md)
+### Enumeration Cases
+- [SFSafariServicesVersion.version10_0](./version10_0.md)
+- [SFSafariServicesVersion.version10_1](./version10_1.md)
+- [SFSafariServicesVersion.version11_0](./version11_0.md)
+- [SFSafariServicesVersion.version12_1](./version12_1.md)
+- [SFSafariServicesVersion.version13_0](./version13_0.md)
 
 
 ---

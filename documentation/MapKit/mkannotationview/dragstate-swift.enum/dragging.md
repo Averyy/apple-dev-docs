@@ -1,7 +1,8 @@
 # MKAnnotationView.DragState.dragging
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An annotation view is actively dragging.
 
@@ -18,19 +19,24 @@ An annotation view is actively dragging.
 case dragging
 ```
 
+```c
+MKAnnotationViewDragStateDragging
+```
+
 #### Discussion
 
 The view is in the middle of a drag operation and is tracking progress.
 
 ## See Also
 
-- [MKAnnotationView.DragState.none](mkannotationview/dragstate-swift.enum/none.md)
+### Constants
+- [MKAnnotationView.DragState.none](./none.md)
   An annotation view that doesn’t have a drag operation.
-- [MKAnnotationView.DragState.starting](mkannotationview/dragstate-swift.enum/starting.md)
+- [MKAnnotationView.DragState.starting](./starting.md)
   An annotation view begins dragging.
-- [MKAnnotationView.DragState.canceling](mkannotationview/dragstate-swift.enum/canceling.md)
+- [MKAnnotationView.DragState.canceling](./canceling.md)
   An annotation view cancels drag operation.
-- [MKAnnotationView.DragState.ending](mkannotationview/dragstate-swift.enum/ending.md)
+- [MKAnnotationView.DragState.ending](./ending.md)
   An annotation view ends dragging.
 
 

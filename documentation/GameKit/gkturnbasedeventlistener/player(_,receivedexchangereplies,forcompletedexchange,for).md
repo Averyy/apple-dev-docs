@@ -1,7 +1,8 @@
 # player(_:receivedExchangeReplies:forCompletedExchange:for:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when all recipients of an exchange request respond.
 
@@ -20,15 +21,19 @@ Handles when all recipients of an exchange request respond.
 optional func player(_ player: GKPlayer, receivedExchangeReplies replies: [GKTurnBasedExchangeReply], forCompletedExchange exchange: GKTurnBasedExchange, for match: GKTurnBasedMatch)
 ```
 
+```objc
+- (void) player:(GKPlayer *) player receivedExchangeReplies:(NSArray<GKTurnBasedExchangeReply *> *) replies forCompletedExchange:(GKTurnBasedExchange *) exchange forMatch:(GKTurnBasedMatch *) match;
+```
+
 ## Mentions
 
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
 #### Discussion
 
 GameKit sends this turn-based event to the current participant and the participant who initiates the exchange request.
 
-If your game isn’t running or is in the background on participant devices, a notification containing the localized message you provide appears. When the participant taps or clicks the notification, GameKit launches or brings the game to the foreground and then invokes the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](gkturnbasedeventlistener/player(_:receivedexchangereplies:forcompletedexchange:for:).md) method.
+If your game isn’t running or is in the background on participant devices, a notification containing the localized message you provide appears. When the participant taps or clicks the notification, GameKit launches or brings the game to the foreground and then invokes the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](./player%28_,receivedexchangereplies,forcompletedexchange,for%29.md) method.
 
 ## Parameters
 
@@ -39,9 +44,10 @@ If your game isn’t running or is in the background on participant devices, a n
 
 ## See Also
 
-- [func player(GKPlayer, receivedExchangeRequest: GKTurnBasedExchange, for: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:receivedexchangerequest:for:).md)
+### Handling Data Exchanges
+- [func player(GKPlayer, receivedExchangeRequest: GKTurnBasedExchange, for: GKTurnBasedMatch)](./player%28_,receivedexchangerequest,for%29.md)
   Handles when the local player receives an exchange request from another participant.
-- [func player(GKPlayer, receivedExchangeCancellation: GKTurnBasedExchange, for: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:receivedexchangecancellation:for:).md)
+- [func player(GKPlayer, receivedExchangeCancellation: GKTurnBasedExchange, for: GKTurnBasedMatch)](./player%28_,receivedexchangecancellation,for%29.md)
   Handles when the sender cancels an exchange request they intiated.
 
 

@@ -1,7 +1,8 @@
 # LibraryPlaylistCreationRequest.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a library playlist creation request object.
 
@@ -10,7 +11,7 @@ The attributes for a library playlist creation request object.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistCreationRequest.Attributes
 ```
 
@@ -21,7 +22,8 @@ object LibraryPlaylistCreationRequest.Attributes
 
 ## See Also
 
-- [object LibraryPlaylistCreationRequest.Relationships](libraryplaylistcreationrequest/relationships-data.dictionary.md)
+### Related Objects
+- [object LibraryPlaylistCreationRequest.Relationships](./relationships-data.dictionary.md)
   The relationships for a library playlist creation request object.
 
 

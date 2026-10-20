@@ -1,7 +1,8 @@
 # wBytesPerInterval
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The total number of bytes this endpoint transfers every service interval.
 
@@ -10,19 +11,20 @@ The total number of bytes this endpoint transfers every service interval.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wBytesPerInterval;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedendpointcompaniondescriptor/1546150-blength.md)
+### Getting the Properties
+- [bLength](./api-1546150-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbsuperspeedendpointcompaniondescriptor/1546448-bdescriptortype.md)
+- [bDescriptorType](./api-1546448-bdescriptortype.md)
   The type of the descriptor.
-- [bMaxBurst](iousbsuperspeedendpointcompaniondescriptor/1545987-bmaxburst.md)
+- [bMaxBurst](./api-1545987-bmaxburst.md)
   The maximum number of packets the endpoint can send or receive as part of a burst.
-- [bmAttributes](iousbsuperspeedendpointcompaniondescriptor/1545944-bmattributes.md)
+- [bmAttributes](./api-1545944-bmattributes.md)
   A bitmap encoding of supported device-level features.
 
 

@@ -1,14 +1,15 @@
 # fpu_rsrv4
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 char fpu_rsrv4[224];
 ```
 

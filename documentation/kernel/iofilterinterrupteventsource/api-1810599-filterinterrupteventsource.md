@@ -7,7 +7,7 @@ Factor method to create and initialise an IOFilterInterruptEventSource. See $lin
 
 ## Declaration
 
-```swift
+```cpp
 static IOFilterInterruptEventSource * filterInterruptEventSource(
  OSObject *owner, 
  IOInterruptEventSource::Action action, 
@@ -16,7 +16,7 @@ static IOFilterInterruptEventSource * filterInterruptEventSource(
  int intIndex = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 a new event source if succesful, 0 otherwise.
 
@@ -30,15 +30,16 @@ a new event source if succesful, 0 otherwise.
 
 ## See Also
 
-- [disableInterruptOccurred](iofilterinterrupteventsource/1810540-disableinterruptoccurred.md)
+### Miscellaneous
+- [disableInterruptOccurred](./api-1810540-disableinterruptoccurred.md)
   Override $link IOInterruptEventSource::disableInterruptOccurred to make a filter callout.
-- [getFilterAction](iofilterinterrupteventsource/1810653-getfilteraction.md)
+- [getFilterAction](./api-1810653-getfilteraction.md)
   Get'ter for filterAction variable.
-- [init](iofilterinterrupteventsource/1810702-init.md)
+- [init](./api-1810702-init.md)
   Primary initialiser for the IOFilterInterruptEventSource class.
-- [normalInterruptOccurred](iofilterinterrupteventsource/1810739-normalinterruptoccurred.md)
+- [normalInterruptOccurred](./api-1810739-normalinterruptoccurred.md)
   Override $link IOInterruptEventSource::normalInterruptOccured to make a filter callout.
-- [signalInterrupt](iofilterinterrupteventsource/1810772-signalinterrupt.md)
+- [signalInterrupt](./api-1810772-signalinterrupt.md)
   Cause the work loop to schedule the action.
 
 

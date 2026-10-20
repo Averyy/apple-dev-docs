@@ -1,14 +1,15 @@
 # adjustOutstandingIO
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 adjustOutstandingIO(IOService *forClient, SInt32 increment);
 ```
 

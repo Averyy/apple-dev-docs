@@ -1,17 +1,22 @@
 # kAUVoiceIOErr_UnexpectedNumberOfInputChannels
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error that indicates that the audio unit encountered an unexpected number of input channels during initialization.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kAUVoiceIOErr_UnexpectedNumberOfInputChannels: OSStatus { get }
+```
+
+```c
+kAUVoiceIOErr_UnexpectedNumberOfInputChannels
 ```
 
 

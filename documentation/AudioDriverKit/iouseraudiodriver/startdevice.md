@@ -1,7 +1,8 @@
 # StartDevice
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the driver to start I/O on an audio device or audio clock device.
 
@@ -10,19 +11,19 @@ Tells the driver to start I/O on an audio device or audio clock device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StartDevice(IOUserAudioObjectID in_object_id, IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation always returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Subclass and override this method to handle hardware-specific startup, then call the superclass to update the I/O state. The framework expects this call to always succeed for fail. The hardware can take as long as it needs in this call, provided it always either succeeds or fails.
+The default implementation always returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle hardware-specific startup, then call the superclass to update the I/O state. The framework expects this call to always succeed for fail. The hardware can take as long as it needs in this call, provided it always either succeeds or fails.
 
-This call results in a call to [`StartIO`](iouseraudiodevice/startio.md) on the device.
+This call results in a call to [`StartIO`](../iouseraudiodevice/startio.md) on the device.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ This call results in a call to [`StartIO`](iouseraudiodevice/startio.md) on the 
 
 ## See Also
 
-- [StopDevice](iouseraudiodriver/stopdevice.md)
+### Starting and Stopping the Driver
+- [StopDevice](./stopdevice.md)
   Tells the driver to stop I/O on an audio device or audio clock device.
-- [IOUserAudioObjectID](audiodriverkit/iouseraudioobjectid.md)
+- [IOUserAudioObjectID](../audiodriverkit-page/iouseraudioobjectid.md)
   An identifier that provides a handle on a specific audio object.
-- [IOUserAudioStartStopFlags](audiodriverkit/iouseraudiostartstopflags.md)
+- [IOUserAudioStartStopFlags](../audiodriverkit-page/iouseraudiostartstopflags.md)
   Values that indicate I/O starts or stops.
 
 

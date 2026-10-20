@@ -1,7 +1,8 @@
 # maximumUpdateValueLength
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of data, in bytes, that the central can receive in a single notification or indication.
 
@@ -20,10 +21,14 @@ The maximum amount of data, in bytes, that the central can receive in a single n
 var maximumUpdateValueLength: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger maximumUpdateValueLength;
+```
+
 ## Topics
 
 ### Related Documentation
-- [func updateValue(Data, for: CBMutableCharacteristic, onSubscribedCentrals: [CBCentral]?) -> Bool](cbperipheralmanager/updatevalue(_:for:onsubscribedcentrals:).md)
+- [func updateValue(Data, for: CBMutableCharacteristic, onSubscribedCentrals: [CBCentral]?) -> Bool](../cbperipheralmanager/updatevalue%28_,for,onsubscribedcentrals%29.md)
   Send an updated characteristic value to one or more subscribed centrals, using a notification or indication.
 
 

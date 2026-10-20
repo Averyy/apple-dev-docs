@@ -1,7 +1,8 @@
 # AppExtensionPoint.Error
 
 **Framework**: ExtensionFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for monitor-related requests.
 
@@ -23,23 +24,23 @@ enum Error
 ## Topics
 
 ### Getting the error codes
-- [AppExtensionPoint.Error.hostMustBeApplicationOrAppExtension](appextensionpoint/error/hostmustbeapplicationorappextension.md)
+- [AppExtensionPoint.Error.hostMustBeApplicationOrAppExtension](./error/hostmustbeapplicationorappextension.md)
   An error that indicates the definition of an extension point in an unsupported target.
-- [AppExtensionPoint.Error.hostMustDefineAppExtensionPoint(_:)](appextensionpoint/error/hostmustdefineappextensionpoint(_:).md)
+- [AppExtensionPoint.Error.hostMustDefineAppExtensionPoint(_:)](./error/hostmustdefineappextensionpoint%28_%29.md)
   An error that indicates an attempt to define an extension point outside an app.
-- [AppExtensionPoint.Error.hostMustHaveBundleIdentifier](appextensionpoint/error/hostmusthavebundleidentifier.md)
+- [AppExtensionPoint.Error.hostMustHaveBundleIdentifier](./error/hostmusthavebundleidentifier.md)
   An error that indicates the host app is missing its bundle identifier.
-- [AppExtensionPoint.Error.invalidAppExtensionPoint](appextensionpoint/error/invalidappextensionpoint.md)
+- [AppExtensionPoint.Error.invalidAppExtensionPoint](./error/invalidappextensionpoint.md)
   An error that indicates an attempt to bind to an unknown extension point.
-- [AppExtensionPoint.Error.unspecifiedAppExtensionPointName](appextensionpoint/error/unspecifiedappextensionpointname.md)
+- [AppExtensionPoint.Error.unspecifiedAppExtensionPointName](./error/unspecifiedappextensionpointname.md)
   An error that indicates the specified extension point is unknown.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

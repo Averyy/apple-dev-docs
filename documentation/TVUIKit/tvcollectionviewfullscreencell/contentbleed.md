@@ -1,7 +1,8 @@
 # contentBleed
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of content that overlaps into the masked portions of the cell.
 
@@ -14,15 +15,20 @@ The amount of content that overlaps into the masked portions of the cell.
 var contentBleed: UIEdgeInsets { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIEdgeInsets contentBleed;
+```
+
 #### Discussion
 
 The portions of content that bleed into the masked portions go out of bounds, and consequently disappear from view.
 
 ## See Also
 
-- [var cornerRadius: CGFloat](tvcollectionviewfullscreencell/cornerradius.md)
+### Modifying Cell Appearance
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius to use when drawing rounded corners for the cell.
-- [var maskAmount: CGFloat](tvcollectionviewfullscreencell/maskamount.md)
+- [var maskAmount: CGFloat](./maskamount.md)
   The factor that determines the amount of masking applied on the cell.
 
 

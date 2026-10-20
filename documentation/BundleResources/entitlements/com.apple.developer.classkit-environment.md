@@ -1,7 +1,8 @@
 # ClassKit Environment Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The ClassKit development or production environment for an education app that works with the Schoolwork app.
 
@@ -11,9 +12,15 @@ The ClassKit development or production environment for an education app that wor
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
+- **Name**: `com.apple.developer.ClassKit-environment` (ClassKit Environment)
+- **Type**: string
 
-**Type**: string
+## Possible Values
+
+- `development`: The environment used to develop and test your app locally, without requiring a Managed Apple ID issued by an educational institution.
+- `production`: The environment used by customers of your app who have a Managed Apple ID. This enviroment enables teachers and students to share data through iCloud.
 
 #### Discussion
 
@@ -25,11 +32,13 @@ To add this entitlement to your app, enable the ClassKit capability in Xcode.
 
 ## See Also
 
-- [Enabling ClassKit in your app](../classkit/enabling-classkit-in-your-app.md)
+### Related Documentation
+- [Enabling ClassKit in your app](../../ClassKit/enabling-classkit-in-your-app.md)
   Prepare your app and your development environment to adopt ClassKit.
-- [Testing your ClassKit app during development](../classkit/testing-your-classkit-app-during-development.md)
+- [Testing your ClassKit app during development](../../ClassKit/testing-your-classkit-app-during-development.md)
   Use development mode to test your app without a Managed Apple ID.
-- [com.apple.developer.automatic-assessment-configuration](entitlements/com.apple.developer.automatic-assessment-configuration.md)
+### Education
+- [com.apple.developer.automatic-assessment-configuration](./com.apple.developer.automatic-assessment-configuration.md)
   A Boolean value that indicates whether an app may create an assessment session.
 
 

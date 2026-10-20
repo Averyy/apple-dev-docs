@@ -1,7 +1,8 @@
 # NIDLTDOACoordinatesType.geodetic
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A coordinate type that specifies a latitude, longitude, and altitude triplet.
 
@@ -16,13 +17,18 @@ A coordinate type that specifies a latitude, longitude, and altitude triplet.
 case geodetic
 ```
 
+```c
+NIDLTDOACoordinatesTypeGeodetic
+```
+
 #### Discussion
 
-When the coordinate type ([`coordinatesType`](nidltdoameasurement/coordinatestype.md)) for a given measurement ([`NIDLTDOAMeasurement`](nidltdoameasurement.md)) is this option, the value of the measurement’s [`coordinates`](nidltdoameasurement/coordinates.md) is a triplet of the format (latitude, longitude, altitude).
+When the coordinate type ([`coordinatesType`](../nidltdoameasurement/coordinatestype.md)) for a given measurement ([`NIDLTDOAMeasurement`](../nidltdoameasurement.md)) is this option, the value of the measurement’s [`coordinates`](../nidltdoameasurement/coordinates.md) is a triplet of the format (latitude, longitude, altitude).
 
 ## See Also
 
-- [NIDLTDOACoordinatesType.relative](nidltdoacoordinatestype/relative.md)
+### Identifying a coordinate type
+- [NIDLTDOACoordinatesType.relative](./relative.md)
   A coordinate type that specifies a 3D Cartesian triplet.
 
 

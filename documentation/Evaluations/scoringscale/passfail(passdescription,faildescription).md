@@ -1,7 +1,8 @@
 # passFail(passDescription:failDescription:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a binary pass or fail scoring scale.
 
@@ -27,11 +28,12 @@ static func passFail(passDescription: String, failDescription: String) -> Scorin
 
 ## See Also
 
-- [static func numeric([Double : String]) -> ScoringScale](scoringscale/numeric(_:).md)
+### Creating a scale
+- [static func numeric([Double : String]) -> ScoringScale](./numeric%28_%29.md)
   Creates a scoring scale from a numeric dictionary.
-- [static func custom<Level>(Level.Type) -> ScoringScale](scoringscale/custom(_:).md)
+- [static func custom<Level>(Level.Type) -> ScoringScale](./custom%28_%29.md)
   Creates a scoring scale from a typed score level enum.
-- [init(options: [ScaleOption])](scoringscale/init(options:).md)
+- [init(options: [ScaleOption])](./init%28options%29.md)
   Creates a scoring scale with explicit options.
 
 

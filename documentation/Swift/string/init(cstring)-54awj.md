@@ -1,7 +1,8 @@
 # init(cString:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new string by copying the null-terminated UTF-8 data referenced by the given array.
 
@@ -13,7 +14,9 @@ Creates a new string by copying the null-terminated UTF-8 data referenced by the
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 6.0
+
+> **Deprecated**: Use String(decoding: array, as: UTF8.self) instead, after truncating the null termination.
 
 ## Declaration
 

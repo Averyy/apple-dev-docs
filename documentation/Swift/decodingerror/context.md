@@ -1,7 +1,8 @@
 # DecodingError.Context
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context in which the error occurred.
 
@@ -23,21 +24,21 @@ struct Context
 ## Topics
 
 ### Initializers
-- [init(codingPath: [any CodingKey], debugDescription: String, underlyingError: (any Error)?)](decodingerror/context/init(codingpath:debugdescription:underlyingerror:).md)
+- [init(codingPath: [any CodingKey], debugDescription: String, underlyingError: (any Error)?)](./context/init%28codingpath,debugdescription,underlyingerror%29.md)
   Creates a new context with the given path of coding keys and a description of what went wrong.
 ### Instance Properties
-- [let codingPath: [any CodingKey]](decodingerror/context/codingpath.md)
+- [let codingPath: [any CodingKey]](./context/codingpath.md)
   The path of coding keys taken to get to the point of the failing decode call.
-- [let debugDescription: String](decodingerror/context/debugdescription.md)
+- [let debugDescription: String](./context/debugdescription.md)
   A description of what went wrong, for debugging purposes.
-- [let underlyingError: (any Error)?](decodingerror/context/underlyingerror.md)
+- [let underlyingError: (any Error)?](./context/underlyingerror.md)
   The underlying error which caused this error, if any.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

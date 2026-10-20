@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.accessory(from:location:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An anchor point attached to a specific point on a tracked accessory.
 

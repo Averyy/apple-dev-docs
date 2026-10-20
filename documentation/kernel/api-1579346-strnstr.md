@@ -1,24 +1,26 @@
 # strnstr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 char * strnstr(const char *s, const char *find, size_t slen);
 ```
 
 ## See Also
 
-- [strchr](1579345-strchr.md)
-- [strlen](1579342-strlen.md)
-- [strnlen](1579340-strnlen.md)
-- [strprefix](1579348-strprefix.md)
-- [strsep](1441093-strsep.md)
+### String Contents
+- [strchr](./api-1579345-strchr.md)
+- [strlen](./api-1579342-strlen.md)
+- [strnlen](./api-1579340-strnlen.md)
+- [strprefix](./api-1579348-strprefix.md)
+- [strsep](./api-1441093-strsep.md)
 
 
 ---

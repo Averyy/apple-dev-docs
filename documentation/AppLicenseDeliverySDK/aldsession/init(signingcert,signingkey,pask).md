@@ -1,7 +1,8 @@
 # init(signingCert:signingKey:PASK:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a static ALDSession without a request. This should only be used when an offline generation of a static license is desired. A static license is a minimal license that is only used to install apps on the device and is not meant to enforce marketplace defined rights. Only generateStaticLicense() should be invoked to generate licenses in this case.
 

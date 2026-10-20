@@ -1,7 +1,8 @@
 # Bulk Update Keywords
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Updates multiple keywords in a single request.
 
@@ -133,13 +134,31 @@ Raise bids on two keywords and pause a third.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `KeywordUpdateBulkRequest`
+
+## Responses
+
+- `200` OK (`KeywordUpdateBulkResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Bulk Create Keywords](post-keywords-bulk-create.md)
+### Keywords
+- [Bulk Create Keywords](./post-keywords-bulk-create.md)
   Creates multiple keywords in a single request.
-- [Bulk Delete Keywords](post-keywords-bulk-delete.md)
+- [Bulk Delete Keywords](./post-keywords-bulk-delete.md)
   Soft-deletes multiple keywords in a single request.
 
 

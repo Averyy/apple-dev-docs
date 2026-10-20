@@ -1,7 +1,8 @@
 # grammarCheckingResult(range:details:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified array of grammatical errors.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified array of grammatic
 class func grammarCheckingResult(range: NSRange, details: [[String : Any]]) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) grammarCheckingResultWithRange:(NSRange) range details:(NSArray<NSDictionary<NSString *,id> *> *) details;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`grammar`](nstextcheckingresult/checkingtype/grammar.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`grammar`](./checkingtype/grammar.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [var grammarDetails: [[String : Any]]?](nstextcheckingresult/grammardetails.md)
+### Text Checking Results for Grammar
+- [var grammarDetails: [[String : Any]]?](./grammardetails.md)
   The details of a located grammatical type checking result.
 
 

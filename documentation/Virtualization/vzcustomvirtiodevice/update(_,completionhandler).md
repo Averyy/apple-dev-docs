@@ -1,7 +1,8 @@
 # update(_:completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the device’s device-specific configuration.
 
@@ -11,7 +12,15 @@ Updates the device’s device-specific configuration.
 ## Declaration
 
 ```swift
+func update(_ newConfiguration: VZVirtioDeviceSpecificConfiguration, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func update(_ newConfiguration: VZVirtioDeviceSpecificConfiguration) async throws
+```
+
+```objc
+- (void) updateDeviceSpecificConfiguration:(VZVirtioDeviceSpecificConfiguration *) newConfiguration completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -20,7 +29,7 @@ The size of the underlying data for the new configuration must be the same as th
 
 ## Parameters
 
-- `newConfiguration`: The [`VZVirtioDeviceSpecificConfiguration`](vzvirtiodevicespecificconfiguration.md) object that contains the new configuration data.
+- `newConfiguration`: The [`VZVirtioDeviceSpecificConfiguration`](../vzvirtiodevicespecificconfiguration.md) object that contains the new configuration data.
 - `completionHandler`: A block the framework calls after the device’s configuration updates successfully, or on error. The error parameter the framework passes to the block is `nil` if the configuration update was successful.
 
 

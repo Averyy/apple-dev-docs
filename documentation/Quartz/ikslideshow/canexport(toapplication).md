@@ -1,7 +1,8 @@
 # canExport(toApplication:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Finds out whether the slideshow can export its contents to an application.
 
@@ -14,17 +15,22 @@ Finds out whether the slideshow can export its contents to an application.
 class func canExport(toApplication applicationBundleIdentifier: String!) -> Bool
 ```
 
+```objc
++ (BOOL) canExportToApplication:(NSString *) applicationBundleIdentifier;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the slideshow can be exported to the specified application; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the slideshow can be exported to the specified application; [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 
-- `applicationBundleIdentifier`: The bundle identifier of the application that you want to export the slideshow to. See [`Bundle Identifiers`](bundle-identifiers.md).
+- `applicationBundleIdentifier`: The bundle identifier of the application that you want to export the slideshow to. See [Bundle Identifiers](../bundle-identifiers.md).
 
 ## See Also
 
-- [class func exportItem(Any!, toApplication: String!)](ikslideshow/exportitem(_:toapplication:).md)
+### Exporting Slideshow Items
+- [class func exportItem(Any!, toApplication: String!)](./exportitem%28_,toapplication%29.md)
   Exports a slideshow item to the application that has the provided bundle identifier.
 
 

@@ -1,7 +1,8 @@
 # data
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data returned in the HTTPS response.
 
@@ -15,6 +16,10 @@ The data returned in the HTTPS response.
 
 ```swift
 var data: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * data;
 ```
 
 

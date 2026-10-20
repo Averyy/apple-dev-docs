@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The translation component
 

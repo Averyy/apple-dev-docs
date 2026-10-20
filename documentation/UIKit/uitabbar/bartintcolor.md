@@ -1,7 +1,8 @@
 # barTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the tab bar background.
 
@@ -9,7 +10,7 @@ The tint color to apply to the tab bar background.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The tint color to apply to the tab bar background.
 var barTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * barTintColor;
+```
+
 #### Discussion
 
-Use this property to specify a custom color for the tab bar’s background. The color you specify replaces the appearance provided by the [`barStyle`](uitabbar/barstyle.md) property.
+Use this property to specify a custom color for the tab bar’s background. The color you specify replaces the appearance provided by the [`barStyle`](./barstyle.md) property.
 
 ## See Also
 
-- [var backgroundImage: UIImage?](uitabbar/backgroundimage.md)
+### Changing the background
+- [var backgroundImage: UIImage?](./backgroundimage.md)
   The custom background image for the tab bar.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The peek quick action item’s title.
@@ -17,6 +18,10 @@ The peek quick action item’s title.
 
 ```swift
 var title: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
 ```
 
 #### Discussion

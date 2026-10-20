@@ -1,7 +1,8 @@
 # LibraryPlaylistCreationRequest.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for a library playlist creation request object.
 
@@ -10,16 +11,16 @@ The relationships for a library playlist creation request object.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistCreationRequest.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryPlaylistCreationRequest.Relationships.Parent](libraryplaylistcreationrequest/relationships-data.dictionary/parent-data.dictionary.md)
+- [object LibraryPlaylistCreationRequest.Relationships.Parent](./relationships-data.dictionary/parent-data.dictionary.md)
   Library playlist folder which contains the playlist that the user creates.
-- [object LibraryPlaylistCreationRequest.Relationships.Tracks](libraryplaylistcreationrequest/relationships-data.dictionary/tracks-data.dictionary.md)
+- [object LibraryPlaylistCreationRequest.Relationships.Tracks](./relationships-data.dictionary/tracks-data.dictionary.md)
   The songs and music videos to add to the created playlist’s tracklist.
 
 ## Properties
@@ -29,7 +30,8 @@ object LibraryPlaylistCreationRequest.Relationships
 
 ## See Also
 
-- [object LibraryPlaylistCreationRequest.Attributes](libraryplaylistcreationrequest/attributes-data.dictionary.md)
+### Related Objects
+- [object LibraryPlaylistCreationRequest.Attributes](./attributes-data.dictionary.md)
   The attributes for a library playlist creation request object.
 
 

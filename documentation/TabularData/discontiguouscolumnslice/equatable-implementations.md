@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (DiscontiguousColumnSlice<WrappedElement>, DiscontiguousColumnSlice<WrappedElement>) -> Bool](discontiguouscolumnslice/==(_:_:).md)
+- [static func == (DiscontiguousColumnSlice<WrappedElement>, DiscontiguousColumnSlice<WrappedElement>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the column slices are equal.
 
 

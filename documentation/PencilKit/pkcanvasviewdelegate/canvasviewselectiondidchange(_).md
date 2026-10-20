@@ -1,7 +1,8 @@
 # canvasViewSelectionDidChange(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the selection changes.
 
@@ -15,6 +16,10 @@ Tells the delegate that the selection changes.
 
 ```swift
 optional func canvasViewSelectionDidChange(_ canvasView: PKCanvasView)
+```
+
+```objc
+- (void) canvasViewSelectionDidChange:(PKCanvasView *) canvasView;
 ```
 
 ## Parameters

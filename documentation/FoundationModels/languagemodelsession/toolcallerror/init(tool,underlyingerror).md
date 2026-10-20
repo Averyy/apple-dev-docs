@@ -1,7 +1,8 @@
 # init(tool:underlyingError:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tool call error.
 

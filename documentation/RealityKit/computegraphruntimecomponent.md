@@ -1,7 +1,8 @@
 # ComputeGraphRuntimeComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Manages the live GPU simulation for an entity’s `ComputeGraphComponent_v1`.
 
@@ -25,19 +26,19 @@ RealityKit creates the ComputeGraphRuntimeComponent automatically on the first f
 ## Topics
 
 ### Instance Properties
-- [var simulation: ComputeGraphSimulation](computegraphruntimecomponent/simulation.md)
+- [var simulation: ComputeGraphSimulation](./computegraphruntimecomponent/simulation.md)
   The underlying compute graph simulation driving this entity.
 ### Instance Methods
-- [func readOutput(ComputeNodeGraph.Port.Address) -> (any MTLBuffer)?](computegraphruntimecomponent/readoutput(_:).md)
+- [func readOutput(ComputeNodeGraph.Port.Address) -> (any MTLBuffer)?](./computegraphruntimecomponent/readoutput%28_%29.md)
   Returns the output buffer for the port at the given address.
-- [func readOutputs(ComputeNodeGraph.NodeID) -> [any MTLBuffer]?](computegraphruntimecomponent/readoutputs(_:).md)
+- [func readOutputs(ComputeNodeGraph.NodeID) -> [any MTLBuffer]?](./computegraphruntimecomponent/readoutputs%28_%29.md)
   Returns all output buffers for the given output node.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [TransientComponent](transientcomponent.md)
+- [Component](./component.md)
+- [TransientComponent](./transientcomponent.md)
 
 
 ---

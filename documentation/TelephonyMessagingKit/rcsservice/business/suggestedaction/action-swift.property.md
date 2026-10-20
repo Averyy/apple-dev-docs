@@ -1,7 +1,8 @@
 # action
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The  suggested action.
 
@@ -16,9 +17,10 @@ let action: RCSService.Business.SuggestedAction.Action
 
 ## See Also
 
-- [let displayText: String](rcsservice/business/suggestedaction/displaytext.md)
+### Accessing suggested action properties
+- [let displayText: String](./displaytext.md)
   Display text for action.
-- [RCSService.Business.SuggestedAction.Action](rcsservice/business/suggestedaction/action-swift.enum.md)
+- [RCSService.Business.SuggestedAction.Action](./action-swift.enum.md)
   Enumeration specifying the type of action contained.
 
 

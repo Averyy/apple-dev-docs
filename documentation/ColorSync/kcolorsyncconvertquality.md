@@ -1,7 +1,8 @@
 # kColorSyncConvertQuality
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for the quality of the conversion performed by the transform.
 
@@ -20,16 +21,21 @@ A key for the quality of the conversion performed by the transform.
 var kColorSyncConvertQuality: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncConvertQuality;
+```
+
 ## See Also
 
-- [var kColorSyncBestQuality: Unmanaged<CFString>!](kcolorsyncbestquality.md)
-  A [`kColorSyncConvertQuality`](kcolorsyncconvertquality.md) value that does not coalesce profile transforms; the default.
-- [var kColorSyncBlackPointCompensation: Unmanaged<CFString>!](kcolorsyncblackpointcompensation.md)
+### Setting conversion quality
+- [var kColorSyncBestQuality: Unmanaged<CFString>!](./kcolorsyncbestquality.md)
+  A [`kColorSyncConvertQuality`](./kcolorsyncconvertquality.md) value that does not coalesce profile transforms; the default.
+- [var kColorSyncBlackPointCompensation: Unmanaged<CFString>!](./kcolorsyncblackpointcompensation.md)
   A key whose `CFBooleanRef` value enables or disables black point compensation.
-- [var kColorSyncDraftQuality: Unmanaged<CFString>!](kcolorsyncdraftquality.md)
-  A [`kColorSyncConvertQuality`](kcolorsyncconvertquality.md) value that coalesces all transforms and does not interpolate.
-- [var kColorSyncNormalQuality: Unmanaged<CFString>!](kcolorsyncnormalquality.md)
-  A [`kColorSyncConvertQuality`](kcolorsyncconvertquality.md) value that coalesces all transforms.
+- [var kColorSyncDraftQuality: Unmanaged<CFString>!](./kcolorsyncdraftquality.md)
+  A [`kColorSyncConvertQuality`](./kcolorsyncconvertquality.md) value that coalesces all transforms and does not interpolate.
+- [var kColorSyncNormalQuality: Unmanaged<CFString>!](./kcolorsyncnormalquality.md)
+  A [`kColorSyncConvertQuality`](./kcolorsyncconvertquality.md) value that coalesces all transforms.
 
 
 ---

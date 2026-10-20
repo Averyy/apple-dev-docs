@@ -1,7 +1,8 @@
 # extents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full lengths of the volume along the X, Y, and Z axes of portal-local space, in meters.
 

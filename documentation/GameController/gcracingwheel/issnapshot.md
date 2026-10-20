@@ -1,7 +1,8 @@
 # isSnapshot
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the object is a snapshot of a racing wheel.
 
@@ -15,13 +16,18 @@ A Boolean value that indicates whether the object is a snapshot of a racing whee
 var isSnapshot: Bool { get }
 ```
 
+```objc
+@property (atomic, readonly, getter=isSnapshot) BOOL snapshot;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the racing wheel is a snapshot at a moment in time of a real device; otherwise, it’s an actual racing wheel.
+If [`true`](../../Swift/true.md), the racing wheel is a snapshot at a moment in time of a real device; otherwise, it’s an actual racing wheel.
 
 ## See Also
 
-- [func capture() -> GCRacingWheel](gcracingwheel/capture.md)
+### Creating snapshots
+- [func capture() -> GCRacingWheel](./capture%28%29.md)
   Returns a snapshot of the racing wheel with its current element values.
 
 

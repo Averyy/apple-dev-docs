@@ -1,7 +1,8 @@
 # init(trafficLights:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for the number of traffic lights along the route.
 
@@ -14,6 +15,10 @@ Creates additional route information for the number of traffic lights along the 
 
 ```swift
 convenience init(trafficLights: Int)
+```
+
+```objc
++ (instancetype) routeDetailWithTrafficLights:(NSUInteger) trafficLights;
 ```
 
 #### Return Value

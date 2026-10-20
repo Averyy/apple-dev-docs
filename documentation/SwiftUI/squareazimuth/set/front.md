@@ -1,9 +1,10 @@
 # front
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A set containing only [`SquareAzimuth.front`](squareazimuth/front.md).
+A set containing only [`SquareAzimuth.front`](../front.md).
 
 **Availability**:
 - visionOS 2.0+

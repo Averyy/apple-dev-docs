@@ -1,7 +1,8 @@
 # AVPlayerViewPictureInPictureDelegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods to implement to respond to Picture in Picture playback events.
 
@@ -14,46 +15,51 @@ A protocol that defines the methods to implement to respond to Picture in Pictur
 protocol AVPlayerViewPictureInPictureDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVPlayerViewPictureInPictureDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to Picture in Picture playback events
-- [func playerViewWillStartPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewwillstartpicture(inpicture:).md)
+- [func playerViewWillStartPicture(inPicture: AVPlayerView)](./avplayerviewpictureinpicturedelegate/playerviewwillstartpicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback is about to start.
-- [func playerViewDidStartPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewdidstartpicture(inpicture:).md)
+- [func playerViewDidStartPicture(inPicture: AVPlayerView)](./avplayerviewpictureinpicturedelegate/playerviewdidstartpicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback started.
-- [func playerViewWillStopPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewwillstoppicture(inpicture:).md)
+- [func playerViewWillStopPicture(inPicture: AVPlayerView)](./avplayerviewpictureinpicturedelegate/playerviewwillstoppicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback is about to stop.
-- [func playerViewDidStopPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewdidstoppicture(inpicture:).md)
+- [func playerViewDidStopPicture(inPicture: AVPlayerView)](./avplayerviewpictureinpicturedelegate/playerviewdidstoppicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback stopped.
-- [func playerView(AVPlayerView, failedToStartPictureInPictureWithError: any Error)](avplayerviewpictureinpicturedelegate/playerview(_:failedtostartpictureinpicturewitherror:).md)
+- [func playerView(AVPlayerView, failedToStartPictureInPictureWithError: any Error)](./avplayerviewpictureinpicturedelegate/playerview%28_,failedtostartpictureinpicturewitherror%29.md)
   Tells the delegate that Picture in Picture playback failed to start.
-- [func playerView(AVPlayerView, restoreUserInterfaceForPictureInPictureStopWithCompletionHandler: (Bool) -> Void)](avplayerviewpictureinpicturedelegate/playerview(_:restoreuserinterfaceforpictureinpicturestopwithcompletionhandler:).md)
+- [func playerView(AVPlayerView, restoreUserInterfaceForPictureInPictureStopWithCompletionHandler: (Bool) -> Void)](./avplayerviewpictureinpicturedelegate/playerview%28_,restoreuserinterfaceforpictureinpicturestopwithcompletionhandler%29.md)
   Tells the delegate to restore the user interface before Picture in Picture playback stops.
-- [func playerViewShouldAutomaticallyDismissAtPicture(inPictureStart: AVPlayerView) -> Bool](avplayerviewpictureinpicturedelegate/playerviewshouldautomaticallydismissatpicture(inpicturestart:).md)
+- [func playerViewShouldAutomaticallyDismissAtPicture(inPictureStart: AVPlayerView) -> Bool](./avplayerviewpictureinpicturedelegate/playerviewshouldautomaticallydismissatpicture%28inpicturestart%29.md)
   Asks the delegate if the player view should miniaturize when Picture in Picture starts.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Adopting Picture in Picture in a standard player](adopting-picture-in-picture-in-a-standard-player.md)
+### Picture in Picture
+- [Adopting Picture in Picture in a standard player](./adopting-picture-in-picture-in-a-standard-player.md)
   Add Picture in Picture (PiP) playback to your app using a player view controller.
-- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
+- [Adopting Picture in Picture in a custom player](./adopting-picture-in-picture-in-a-custom-player.md)
   Add controls to your custom player user interface to invoke Picture in Picture (PiP) playback.
-- [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
+- [Adopting Picture in Picture for video calls](./adopting-picture-in-picture-for-video-calls.md)
   Add multitasking capability to your video-call apps by using Picture in Picture (PiP).
-- [Adopting Picture in Picture playback in tvOS](adopting-picture-in-picture-playback-in-tvos.md)
+- [Adopting Picture in Picture playback in tvOS](./adopting-picture-in-picture-playback-in-tvos.md)
   Add advanced multitasking capabilities to your video apps by using Picture in Picture playback in tvOS.
-- [class AVPictureInPictureController](avpictureinpicturecontroller.md)
+- [class AVPictureInPictureController](./avpictureinpicturecontroller.md)
   A controller that responds to user-initiated Picture in Picture playback of video in a floating, resizable window.
-- [protocol AVPictureInPictureControllerDelegate](avpictureinpicturecontrollerdelegate.md)
+- [protocol AVPictureInPictureControllerDelegate](./avpictureinpicturecontrollerdelegate.md)
   A protocol to adopt to respond to Picture in Picture events.
-- [protocol AVPictureInPictureSampleBufferPlaybackDelegate](avpictureinpicturesamplebufferplaybackdelegate.md)
+- [protocol AVPictureInPictureSampleBufferPlaybackDelegate](./avpictureinpicturesamplebufferplaybackdelegate.md)
   A protocol for controlling playback from a sample buffer display layer in Picture in Picture.
-- [class AVPictureInPictureVideoCallViewController](avpictureinpicturevideocallviewcontroller.md)
+- [class AVPictureInPictureVideoCallViewController](./avpictureinpicturevideocallviewcontroller.md)
   A view controller that presents content from a video call in Picture in Picture.
 
 

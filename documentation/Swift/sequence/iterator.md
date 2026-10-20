@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
@@ -23,9 +24,10 @@ associatedtype Iterator : IteratorProtocol
 
 ## See Also
 
-- [func makeIterator() -> Self.Iterator](sequence/makeiterator.md)
+### Creating an Iterator
+- [func makeIterator() -> Self.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
-- [associatedtype Element](sequence/element.md)
+- [associatedtype Element](./element.md)
   A type representing the sequence’s elements.
 
 

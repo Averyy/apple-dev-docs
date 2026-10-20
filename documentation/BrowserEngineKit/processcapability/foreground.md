@@ -1,7 +1,8 @@
 # ProcessCapability.foreground
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A process capability for work in the foreground.
 
@@ -18,7 +19,7 @@ case foreground
 
 ## Mentions
 
-- [Managing the browser extension life cycle](managing-the-browser-extension-lifecycle.md)
+- [Managing the browser extension life cycle](../managing-the-browser-extension-lifecycle.md)
 
 #### Discussion
 
@@ -28,13 +29,14 @@ Use this capability while your browser app is in the foreground to allow extensi
 
 ## See Also
 
-- [ProcessCapability.background](processcapability/background.md)
+### Granting capabilities
+- [ProcessCapability.background](./background.md)
   A process capability for work in the background.
-- [ProcessCapability.suspended](processcapability/suspended.md)
+- [ProcessCapability.suspended](./suspended.md)
   A process capability that grants residency in a suspended state.
-- [case mediaPlaybackAndCapture(environment: MediaEnvironment)](processcapability/mediaplaybackandcapture(environment:).md)
+- [case mediaPlaybackAndCapture(environment: MediaEnvironment)](./mediaplaybackandcapture%28environment%29.md)
   The helper extension process may access media hardware required for media capture and playback.
-- [ProcessCapability.Grant](processcapability/grant.md)
+- [ProcessCapability.Grant](./grant.md)
   An object that represents the provision of a capability.
 
 

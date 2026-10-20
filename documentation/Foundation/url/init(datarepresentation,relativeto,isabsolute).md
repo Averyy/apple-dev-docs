@@ -1,7 +1,8 @@
 # init(dataRepresentation:relativeTo:isAbsolute:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly created URL using the contents of the given data, relative to a base URL.
 
@@ -26,7 +27,8 @@ If the data representation isn’t a legal URL string as ASCII bytes, the URL ob
 
 ## See Also
 
-- [var dataRepresentation: Data](url/datarepresentation.md)
+### Working with the data representation of a URL
+- [var dataRepresentation: Data](./datarepresentation.md)
   The data representation of the URL’s relativeString.
 
 

@@ -1,7 +1,8 @@
 # SCRunningApplication
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance that represents an app running on a device.
 
@@ -15,43 +16,48 @@ An instance that represents an app running on a device.
 class SCRunningApplication
 ```
 
+```objc
+@interface SCRunningApplication : NSObject
+```
+
 #### Overview
 
-Retrieve the available apps from an instance of [`SCShareableContent`](scshareablecontent.md). Select one or more apps to capture and use them to create an instance of [`SCContentFilter`](sccontentfilter.md). Apply the filter to an instance of [`SCStream`](scstream.md) to limit its output to content matching your criteria.
+Retrieve the available apps from an instance of [`SCShareableContent`](./scshareablecontent.md). Select one or more apps to capture and use them to create an instance of [`SCContentFilter`](./sccontentfilter.md). Apply the filter to an instance of [`SCStream`](./scstream.md) to limit its output to content matching your criteria.
 
 ## Topics
 
 ### Inspecting an app
-- [var processID: pid_t](scrunningapplication/processid.md)
+- [var processID: pid_t](./scrunningapplication/processid.md)
   The system process identifier of the app.
-- [var bundleIdentifier: String](scrunningapplication/bundleidentifier.md)
+- [var bundleIdentifier: String](./scrunningapplication/bundleidentifier.md)
   The unique bundle identifier of the app.
-- [var applicationName: String](scrunningapplication/applicationname.md)
+- [var applicationName: String](./scrunningapplication/applicationname.md)
   The display name of the app.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCShareableContent](scshareablecontent.md)
+### Shareable content
+- [class SCShareableContent](./scshareablecontent.md)
   An instance that represents a set of displays, apps, and windows that your app can capture.
-- [class SCShareableContentInfo](scshareablecontentinfo.md)
+- [class SCShareableContentInfo](./scshareablecontentinfo.md)
   An instance that provides information for the content in a given stream.
-- [enum SCShareableContentStyle](scshareablecontentstyle.md)
+- [enum SCShareableContentStyle](./scshareablecontentstyle.md)
   The style of content presented in a stream.
-- [class SCDisplay](scdisplay.md)
+- [class SCDisplay](./scdisplay.md)
   An instance that represents a display device.
-- [class SCWindow](scwindow.md)
+- [class SCWindow](./scwindow.md)
   An instance that represents an onscreen window.
 
 

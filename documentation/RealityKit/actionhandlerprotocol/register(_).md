@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Registers a handler that responds to raised action events for a particular action type.
@@ -23,6 +24,13 @@ static func register(_ creationHandler: @escaping (Self.EventType) -> (any Actio
 ## Parameters
 
 - `creationHandler`: The closure that instantiates the handler.
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [static func register((Self.EventType) -> (any ActionHandlerProtocol)?)](./register%28_%29-1jigj.md)
+  Registers a handler that creates an action handler, and subscribes to one or more events.
+- [static func register((Self.EventType) -> (any ActionHandlerProtocol)?)](./register%28_%29-1kxs4.md)
 
 
 ---

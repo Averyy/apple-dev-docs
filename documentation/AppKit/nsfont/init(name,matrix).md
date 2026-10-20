@@ -1,17 +1,22 @@
 # init(name:matrix:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a font object for the specified font name and matrix.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(name fontName: String, matrix fontMatrix: UnsafePointer<CGFloat>)
+```
+
+```objc
++ (NSFont *) fontWithName:(NSString *) fontName matrix:(const CGFloat *) fontMatrix;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ A font object for the specified name and transformation matrix.
 
 #### Discussion
 
-The  `fontName` is a fully specified family-face name, such as Helvetica-BoldOblique or Times-Roman (not a name as shown in the Font Panel). The `fontMatrix` is a standard 6-element transformation matrix as used in the PostScript language, specifically with the `makefont` operator. In most cases, you can simply use [`init(name:size:)`](nsfont/init(name:size:).md) to create standard scaled fonts.
+The  `fontName` is a fully specified family-face name, such as Helvetica-BoldOblique or Times-Roman (not a name as shown in the Font Panel). The `fontMatrix` is a standard 6-element transformation matrix as used in the PostScript language, specifically with the `makefont` operator. In most cases, you can simply use [`init(name:size:)`](./init%28name,size%29.md) to create standard scaled fonts.
 
 You can use the defined value `NSFontIdentityMatrix` for [1 0 0 1 0 0]. Fonts created with a matrix other than `NSFontIdentityMatrix` don’t automatically flip themselves in flipped views.
 
@@ -31,13 +36,15 @@ You can use the defined value `NSFontIdentityMatrix` for [1 0 0 1 0 0]. Fonts cr
 
 ## See Also
 
-- [var isFlipped: Bool](nsview/isflipped.md)
+### Related Documentation
+- [var isFlipped: Bool](../nsview/isflipped.md)
   A Boolean value indicating whether the view uses a flipped coordinate system.
-- [init?(name: String, size: CGFloat)](nsfont/init(name:size:).md)
+### Creating Arbitrary Fonts
+- [init?(name: String, size: CGFloat)](./init%28name,size%29.md)
   Creates a font object for the specified font name and font size.
-- [init?(descriptor: NSFontDescriptor, size: CGFloat)](nsfont/init(descriptor:size:).md)
+- [init?(descriptor: NSFontDescriptor, size: CGFloat)](./init%28descriptor,size%29.md)
   Returns a font object for the specified font descriptor and font size.
-- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](nsfont/init(descriptor:texttransform:).md)
+- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](./init%28descriptor,texttransform%29.md)
   Returns a font object for the specified font descriptor and text transform.
 
 

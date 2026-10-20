@@ -1,7 +1,8 @@
 # hasHighways
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the route contains highways.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the route contains highways.
 var hasHighways: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasHighways;
+```
+
 ## See Also
 
-- [var name: String](mkroute/name.md)
+### Getting additional route details
+- [var name: String](./name.md)
   The assigned name for the route.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var advisoryNotices: [String]](mkroute/advisorynotices.md)
+- [var advisoryNotices: [String]](./advisorynotices.md)
   An array of advisory notice strings for the route.
-- [var distance: CLLocationDistance](mkroute/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The route distance, in meters.
-- [var expectedTravelTime: TimeInterval](mkroute/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var transportType: MKDirectionsTransportType](mkroute/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The overall route transport type.
 
 

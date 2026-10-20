@@ -1,7 +1,8 @@
 # encode(to:sourceImages:sourceStates:intermediateImages:destinationStates:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,23 +18,28 @@
 func encode(to commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], sourceStates: [MPSState]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> MPSImage?
 ```
 
+```objc
+- (MPSImage *) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceImages:(NSArray<MPSImage *> *) sourceImages sourceStates:(NSArray<MPSState *> *) sourceStates intermediateImages:(NSMutableArray<MPSImage *> *) intermediateImages destinationStates:(NSMutableArray<MPSState *> *) destinationStates;
+```
+
 ## See Also
 
-- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage?](mpsnngraph/encode(to:sourceimages:).md)
-- [class MPSState](mpsstate.md)
+### Instance Methods
+- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage?](./encode%28to,sourceimages%29.md)
+- [class MPSState](../mpsstate.md)
   An opaque data container for large storage in MPS CNN filters.
-- [class MPSNNBinaryGradientState](mpsnnbinarygradientstate.md)
+- [class MPSNNBinaryGradientState](../mpsnnbinarygradientstate.md)
   A class representing the state of a gradient binary kernel when it was encoded.
-- [class MPSNNGradientState](mpsnngradientstate.md)
+- [class MPSNNGradientState](../mpsnngradientstate.md)
   A class representing the state of a gradient kernel when it was encoded.
-- [func executeAsync(withSourceImages: [MPSImage], completionHandler: MPSNNGraphCompletionHandler) -> MPSImage](mpsnngraph/executeasync(withsourceimages:completionhandler:).md)
-- [typealias MPSNNGraphCompletionHandler](mpsnngraphcompletionhandler.md)
+- [func executeAsync(withSourceImages: [MPSImage], completionHandler: MPSNNGraphCompletionHandler) -> MPSImage](./executeasync%28withsourceimages,completionhandler%29.md)
+- [typealias MPSNNGraphCompletionHandler](../mpsnngraphcompletionhandler.md)
   A notification when an asynchronous graph execution has finished.
-- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?) -> [MPSImage]?](mpsnngraph/encodebatch(to:sourceimages:sourcestates:).md)
-- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> [MPSImage]?](mpsnngraph/encodebatch(to:sourceimages:sourcestates:intermediateimages:destinationstates:).md)
-- [func readCountForSourceImage(at: Int) -> Int](mpsnngraph/readcountforsourceimage(at:).md)
-- [func readCountForSourceState(at: Int) -> Int](mpsnngraph/readcountforsourcestate(at:).md)
-- [func reloadFromDataSources()](mpsnngraph/reloadfromdatasources.md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?) -> [MPSImage]?](./encodebatch%28to,sourceimages,sourcestates%29.md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> [MPSImage]?](./encodebatch%28to,sourceimages,sourcestates,intermediateimages,destinationstates%29.md)
+- [func readCountForSourceImage(at: Int) -> Int](./readcountforsourceimage%28at%29.md)
+- [func readCountForSourceState(at: Int) -> Int](./readcountforsourcestate%28at%29.md)
+- [func reloadFromDataSources()](./reloadfromdatasources%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # superentity
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The super-entity of the receiver.
 
@@ -10,7 +11,7 @@ The super-entity of the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The super-entity of the receiver.
 unowned(unsafe) var superentity: NSEntityDescription? { get }
 ```
 
+```objc
+@property (assign, readonly, nullable) NSEntityDescription * superentity;
+```
+
 #### Discussion
 
 If the receiver has no super-entity, returns `nil`.
 
 ## See Also
 
-- [var subentitiesByName: [String : NSEntityDescription]](nsentitydescription/subentitiesbyname.md)
+### Managing inheritance
+- [var subentitiesByName: [String : NSEntityDescription]](./subentitiesbyname.md)
   A dictionary containing the receiver’s sub-entities.
-- [var subentities: [NSEntityDescription]](nsentitydescription/subentities.md)
+- [var subentities: [NSEntityDescription]](./subentities.md)
   An array containing the sub-entities of the receiver.
-- [func isKindOf(entity: NSEntityDescription) -> Bool](nsentitydescription/iskindof(entity:).md)
+- [func isKindOf(entity: NSEntityDescription) -> Bool](./iskindof%28entity%29.md)
   Returns a Boolean value that indicates whether the receiver is a sub-entity of another given entity.
 
 

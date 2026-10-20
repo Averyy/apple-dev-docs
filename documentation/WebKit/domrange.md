@@ -1,10 +1,11 @@
 # DOMRange
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -12,75 +13,80 @@
 class DOMRange
 ```
 
+```objc
+@interface DOMRange : DOMObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var collapsed: Bool](domrange/collapsed.md)
-- [var commonAncestorContainer: DOMNode!](domrange/commonancestorcontainer.md)
-- [var endContainer: DOMNode!](domrange/endcontainer.md)
-- [var endOffset: Int32](domrange/endoffset.md)
-- [var markupString: String!](domrange/markupstring.md)
+- [var collapsed: Bool](./domrange/collapsed.md)
+- [var commonAncestorContainer: DOMNode!](./domrange/commonancestorcontainer.md)
+- [var endContainer: DOMNode!](./domrange/endcontainer.md)
+- [var endOffset: Int32](./domrange/endoffset.md)
+- [var markupString: String!](./domrange/markupstring.md)
   A string in markup format corresponding to the content in the range.
-- [var startContainer: DOMNode!](domrange/startcontainer.md)
-- [var startOffset: Int32](domrange/startoffset.md)
-- [var text: String!](domrange/text.md)
-- [var webArchive: WebArchive!](domrange/webarchive.md)
+- [var startContainer: DOMNode!](./domrange/startcontainer.md)
+- [var startOffset: Int32](./domrange/startoffset.md)
+- [var text: String!](./domrange/text.md)
+- [var webArchive: WebArchive!](./domrange/webarchive.md)
   A web archive of the content in the range.
 ### Instance Methods
-- [func clone() -> DOMRange!](domrange/clone.md)
-- [func cloneContents() -> DOMDocumentFragment!](domrange/clonecontents.md)
-- [func collapse(Bool)](domrange/collapse(_:).md)
-- [func compare(DOMNode!) -> Int16](domrange/compare(_:).md)
-- [func compareBoundaryPoints(UInt16, sourceRange: DOMRange!) -> Int16](domrange/compareboundarypoints(_:sourcerange:).md)
-- [func comparePoint(DOMNode!, offset: Int32) -> Int16](domrange/comparepoint(_:offset:).md)
-- [func createContextualFragment(String!) -> DOMDocumentFragment!](domrange/createcontextualfragment(_:).md)
-- [func deleteContents()](domrange/deletecontents.md)
-- [func detach()](domrange/detach.md)
-- [func extractContents() -> DOMDocumentFragment!](domrange/extractcontents.md)
-- [func insert(DOMNode!)](domrange/insert(_:).md)
-- [func intersects(DOMNode!) -> Bool](domrange/intersects(_:).md)
-- [func isPoint(inRange: DOMNode!, offset: Int32) -> Bool](domrange/ispoint(inrange:offset:).md)
-- [func select(DOMNode!)](domrange/select(_:).md)
-- [func selectNodeContents(DOMNode!)](domrange/selectnodecontents(_:).md)
-- [func setEnd(DOMNode!, offset: Int32)](domrange/setend(_:offset:).md)
-- [func setEndAfter(DOMNode!)](domrange/setendafter(_:).md)
-- [func setEndBefore(DOMNode!)](domrange/setendbefore(_:).md)
-- [func setStart(DOMNode!, offset: Int32)](domrange/setstart(_:offset:).md)
-- [func setStartAfter(DOMNode!)](domrange/setstartafter(_:).md)
-- [func setStartBefore(DOMNode!)](domrange/setstartbefore(_:).md)
-- [func surroundContents(DOMNode!)](domrange/surroundcontents(_:).md)
-- [func toString() -> String!](domrange/tostring.md)
+- [func clone() -> DOMRange!](./domrange/clone%28%29.md)
+- [func cloneContents() -> DOMDocumentFragment!](./domrange/clonecontents%28%29.md)
+- [func collapse(Bool)](./domrange/collapse%28_%29.md)
+- [func compare(DOMNode!) -> Int16](./domrange/compare%28_%29.md)
+- [func compareBoundaryPoints(UInt16, sourceRange: DOMRange!) -> Int16](./domrange/compareboundarypoints%28_,sourcerange%29.md)
+- [func comparePoint(DOMNode!, offset: Int32) -> Int16](./domrange/comparepoint%28_,offset%29.md)
+- [func createContextualFragment(String!) -> DOMDocumentFragment!](./domrange/createcontextualfragment%28_%29.md)
+- [func deleteContents()](./domrange/deletecontents%28%29.md)
+- [func detach()](./domrange/detach%28%29.md)
+- [func extractContents() -> DOMDocumentFragment!](./domrange/extractcontents%28%29.md)
+- [func insert(DOMNode!)](./domrange/insert%28_%29.md)
+- [func intersects(DOMNode!) -> Bool](./domrange/intersects%28_%29.md)
+- [func isPoint(inRange: DOMNode!, offset: Int32) -> Bool](./domrange/ispoint%28inrange,offset%29.md)
+- [func select(DOMNode!)](./domrange/select%28_%29.md)
+- [func selectNodeContents(DOMNode!)](./domrange/selectnodecontents%28_%29.md)
+- [func setEnd(DOMNode!, offset: Int32)](./domrange/setend%28_,offset%29.md)
+- [func setEndAfter(DOMNode!)](./domrange/setendafter%28_%29.md)
+- [func setEndBefore(DOMNode!)](./domrange/setendbefore%28_%29.md)
+- [func setStart(DOMNode!, offset: Int32)](./domrange/setstart%28_,offset%29.md)
+- [func setStartAfter(DOMNode!)](./domrange/setstartafter%28_%29.md)
+- [func setStartBefore(DOMNode!)](./domrange/setstartbefore%28_%29.md)
+- [func surroundContents(DOMNode!)](./domrange/surroundcontents%28_%29.md)
+- [func toString() -> String!](./domrange/tostring%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [DOMObject](domobject.md)
+- [DOMObject](./domobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class DOMAbstractView](domabstractview.md)
-- [class DOMAttr](domattr.md)
-- [class DOMBlob](domblob.md)
-- [class DOMCDATASection](domcdatasection.md)
-- [class DOMCharacterData](domcharacterdata.md)
-- [class DOMComment](domcomment.md)
-- [class DOMCounter](domcounter.md)
-- [class DOMCSSCharsetRule](domcsscharsetrule.md)
-- [class DOMCSSFontFaceRule](domcssfontfacerule.md)
-- [class DOMCSSImportRule](domcssimportrule.md)
-- [class DOMCSSMediaRule](domcssmediarule.md)
-- [class DOMCSSPageRule](domcsspagerule.md)
-- [class DOMCSSPrimitiveValue](domcssprimitivevalue.md)
-- [class DOMCSSRule](domcssrule.md)
-- [class DOMCSSRuleList](domcssrulelist.md)
+### Document Object Model (DOM) APIs
+- [class DOMAbstractView](./domabstractview.md)
+- [class DOMAttr](./domattr.md)
+- [class DOMBlob](./domblob.md)
+- [class DOMCDATASection](./domcdatasection.md)
+- [class DOMCharacterData](./domcharacterdata.md)
+- [class DOMComment](./domcomment.md)
+- [class DOMCounter](./domcounter.md)
+- [class DOMCSSCharsetRule](./domcsscharsetrule.md)
+- [class DOMCSSFontFaceRule](./domcssfontfacerule.md)
+- [class DOMCSSImportRule](./domcssimportrule.md)
+- [class DOMCSSMediaRule](./domcssmediarule.md)
+- [class DOMCSSPageRule](./domcsspagerule.md)
+- [class DOMCSSPrimitiveValue](./domcssprimitivevalue.md)
+- [class DOMCSSRule](./domcssrule.md)
+- [class DOMCSSRuleList](./domcssrulelist.md)
 
 
 ---

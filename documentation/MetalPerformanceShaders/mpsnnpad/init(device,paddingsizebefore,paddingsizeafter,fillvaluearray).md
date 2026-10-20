@@ -1,7 +1,8 @@
 # init(device:paddingSizeBefore:paddingSizeAfter:fillValueArray:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, fillValueArray: Data?)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device paddingSizeBefore:(MPSImageCoordinate) paddingSizeBefore paddingSizeAfter:(MPSImageCoordinate) paddingSizeAfter fillValueArray:(NSData *) fillValueArray;
 ```
 
 

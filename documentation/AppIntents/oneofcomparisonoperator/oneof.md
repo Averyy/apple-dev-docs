@@ -1,7 +1,8 @@
 # OneOfComparisonOperator.oneOf
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operator that determines if the parameter is equal to one of the values in the array.
 
@@ -11,7 +12,7 @@ An operator that determines if the parameter is equal to one of the values in th
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

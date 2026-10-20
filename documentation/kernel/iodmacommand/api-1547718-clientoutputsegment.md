@@ -1,14 +1,15 @@
 # clientOutputSegment
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn clientOutputSegment(void *reference, IODMACommand *target, Segment64 segment, void *vSegList, UInt32 outSegIndex);
 ```
 

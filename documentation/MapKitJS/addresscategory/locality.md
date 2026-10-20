@@ -1,7 +1,8 @@
 # Locality
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Local administrative divisions, postal cities, and populated places.
 
@@ -10,21 +11,22 @@ Local administrative divisions, postal cities, and populated places.
 
 ## Declaration
 
-```swift
+```
 readonly Locality: "Locality";
 ```
 
 ## See Also
 
-- [AdministrativeArea](addresscategory/administrativearea.md)
+### Category values
+- [AdministrativeArea](./administrativearea.md)
   The primary administrative divisions of countries or regions.
-- [Country](addresscategory/country.md)
+- [Country](./country.md)
   Countries and regions.
-- [PostalCode](addresscategory/postalcode.md)
+- [PostalCode](./postalcode.md)
   An address code for mail sorting and delivery.
-- [SubAdministrativeArea](addresscategory/subadministrativearea.md)
+- [SubAdministrativeArea](./subadministrativearea.md)
   The secondary administrative divisions of countries or regions.
-- [SubLocality](addresscategory/sublocality.md)
+- [SubLocality](./sublocality.md)
   Local administrative subdivisions, postal city subdistricts, and neighborhoods.
 
 

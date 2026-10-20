@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.relatedGregorianYear
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 For non-Gregorian calendars, this corresponds to the extended Gregorian year in which the calendar’s year begins.
 

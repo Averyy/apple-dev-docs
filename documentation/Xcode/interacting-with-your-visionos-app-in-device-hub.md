@@ -1,22 +1,23 @@
 # Interacting with your visionOS app in Device Hub
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
 
 #### Overview
 
-Before interacting with your app, you need to build and run your app on a simulated visionOS device. In Xcode, choose a simulated visionOS device as the run destination and click the Run button. For more information, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
+Before interacting with your app, you need to build and run your app on a simulated visionOS device. In Xcode, choose a simulated visionOS device as the run destination and click the Run button. For more information, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md).
 
 After your app successfully builds, Device Hub opens to show the simulated device in a compact window running your app. Use the controls in the Device Hub canvas to alter the viewpoint of the app within the space and navigate the app’s interface.
 
-![A screenshot of Device Hub showing an Apple Vision Pro simulator in compact view running the TabletopKit sample code app.](/images/com.apple.Xcode/running-app-in-visionos-simulator@2x.png)
+![A screenshot of Device Hub showing an Apple Vision Pro simulator in compact view running the TabletopKit sample code app.](https://developer.apple.com/tutorials/images/com.apple.Xcode/running-app-in-visionos-simulator@2x.png)
 
-To take screenshots and record videos, see [`Capturing screenshots and videos from devices`](capturing-screenshots-and-videos-from-devices.md).
+To take screenshots and record videos, see [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md).
 
-> 💡 **Tip**: If you build and run your app on a physical visionOS device, you can’t interact with your app in Device Hub. Instead, use [`Mac Virtual Display on Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/use-mac-virtual-display-tan357ede966/26/visionos/26) to interact with your app with Xcode running side-by-side.
+> 💡 **Tip**: If you build and run your app on a physical visionOS device, you can’t interact with your app in Device Hub. Instead, use [Mac Virtual Display on Apple Vision Pro](https://support.apple.com/guide/apple-vision-pro/use-mac-virtual-display-tan357ede966/26/visionos/26) to interact with your app with Xcode running side-by-side.
 
-#### Interact with Your Visionos App in the Canvas
+#### Interact with your visionOS app in the canvas
 
 To use your Mac’s pointer and keyboard to create gestures, choose “Select to interact with the visionOS content” from the segmented control at the bottom of the canvas. Your pointer movements control where your eyes look when you hover over content within the space.
 
@@ -39,9 +40,9 @@ Activate other actions using device controls at the bottom of the canvas or from
 | Adjust volume (up) | Choose Device > Sound > Increase Volume. |
 | Adjust volume (down) | Choose Device > Sound > Decrease Volume. |
 
-![A screenshot of Device Hub showing an Apple Vision Pro simulator running the TabletopKit sample code app with the Control Center displayed.](/images/com.apple.Xcode/opening-control-center@2x.png)
+![A screenshot of Device Hub showing an Apple Vision Pro simulator running the TabletopKit sample code app with the Control Center displayed.](https://developer.apple.com/tutorials/images/com.apple.Xcode/opening-control-center@2x.png)
 
-#### Navigate the Space
+#### Navigate the space
 
 Use your Mac’s pointer and the keyboard to reposition your viewpoint:
 
@@ -66,7 +67,7 @@ When moving with a trackpad or Magic Mouse, Device Hub respects the natural scro
 
 You can also use a game controller to control your movement. Use the left stick to move left, right, forward, or back. Use R2 and L2 to move up and down. Use the right stick on a game controller to pan around the space.
 
-#### Switch Between Simulated Scenes
+#### Switch between Simulated Scenes
 
 Device Hub provides multiple built-in scenes you can use to simulate passthrough in different surroundings. These include unique room layouts and furniture for different testing scenarios, each available in different lighting conditions.
 
@@ -77,23 +78,24 @@ Use the Simulated Scenes to test:
 - Content layout, positioning, and scale.
 - Spatial audio and acoustics.
 
-![A screenshot of Device Hub showing an Apple Vision Pro simulator in expanded view with the Simulated Scenes popover in the inspector open.](/images/com.apple.Xcode/change-simulated-scene@2x.png)
+![A screenshot of Device Hub showing an Apple Vision Pro simulator in expanded view with the Simulated Scenes popover in the inspector open.](https://developer.apple.com/tutorials/images/com.apple.Xcode/change-simulated-scene@2x.png)
 
 To change the Simulated Scene, in the Settings inspector, click Select next to Simulated Scenes and choose a scene from the popover.
 
-#### Test Shareplay Experiences in Facetime
+#### Test SharePlay experiences in FaceTime
 
 Launch and test your app’s SharePlay experiences in a simulator using FaceTime. To start a FaceTime session, choose Device > FaceTime, then choose an option from the submenu, such as “User and 3 Spatial Participants”. After choosing an option, the selected number of Spatial and Non-Spatial Participants appear in space. Use this session to launch and test your app’s SharePlay Group Activities, and other FaceTime experiences.
 
 ## See Also
 
-- [Configuring the environment of a simulated device](configuring-the-environment-of-a-simulated-device.md)
+### Device interactions
+- [Configuring the environment of a simulated device](./configuring-the-environment-of-a-simulated-device.md)
   Modify the settings of a simulated device.
-- [Interacting with your app in Device Hub](interacting-with-your-app-in-device-hub.md)
+- [Interacting with your app in Device Hub](./interacting-with-your-app-in-device-hub.md)
   Use Device Hub to control interactions with your apps on simulated and physical devices.
-- [Capturing screenshots and videos from devices](capturing-screenshots-and-videos-from-devices.md)
+- [Capturing screenshots and videos from devices](./capturing-screenshots-and-videos-from-devices.md)
   Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
-- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+- [Interacting with devices using the command line](./interacting-with-devices-using-the-command-line.md)
   Manage simulated and physical devices from the command line.
 
 

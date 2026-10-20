@@ -1,16 +1,17 @@
 # UIInterpolatingMotionEffect.EffectType.tiltAlongHorizontalAxis
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Interpolate values along the horizontal axis, which involves the device facing left or right of the user’s viewpoint.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ Interpolate values along the horizontal axis, which involves the device facing l
 case tiltAlongHorizontalAxis
 ```
 
+```c
+UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis
+```
+
 ## See Also
 
-- [UIInterpolatingMotionEffect.EffectType.tiltAlongVerticalAxis](uiinterpolatingmotioneffect/effecttype/tiltalongverticalaxis.md)
+### Constants
+- [UIInterpolatingMotionEffect.EffectType.tiltAlongVerticalAxis](./tiltalongverticalaxis.md)
   Interpolate values along the vertical axis, which involves the device facing above or below the user’s viewpoint.
 
 

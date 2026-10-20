@@ -1,12 +1,13 @@
 # when(platforms:configuration:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a build setting condition.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.7
 
 ## Declaration
 
@@ -21,13 +22,14 @@ static func when(platforms: [Platform]? = nil, configuration: BuildConfiguration
 
 ## See Also
 
-- [static func when(platforms: [Platform]) -> BuildSettingCondition](buildsettingcondition/when(platforms:).md)
+### Checking for a Build Condition
+- [static func when(platforms: [Platform]) -> BuildSettingCondition](./when%28platforms%29.md)
   Creates a build setting condition.
-- [static func when(configuration: BuildConfiguration) -> BuildSettingCondition](buildsettingcondition/when(configuration:).md)
+- [static func when(configuration: BuildConfiguration) -> BuildSettingCondition](./when%28configuration%29.md)
   Creates a build setting condition.
-- [static func when(platforms: [Platform], configuration: BuildConfiguration) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:)-475co.md)
+- [static func when(platforms: [Platform], configuration: BuildConfiguration) -> BuildSettingCondition](./when%28platforms,configuration%29-475co.md)
   Creates a build setting condition.
-- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?, traits: Set<String>?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:traits:).md)
+- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?, traits: Set<String>?) -> BuildSettingCondition](./when%28platforms,configuration,traits%29.md)
   Creates a build setting condition.
 
 

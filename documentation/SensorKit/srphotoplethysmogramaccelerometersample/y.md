@@ -1,7 +1,8 @@
 # y
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y-axis acceleration in G’s (gravitational force).
 
@@ -16,15 +17,20 @@ The y-axis acceleration in G’s (gravitational force).
 var y: Measurement<UnitAcceleration> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitAcceleration *> * y;
+```
+
 ## See Also
 
-- [var nanosecondsSinceStart: Int64](srphotoplethysmogramaccelerometersample/nanosecondssincestart.md)
+### Accessing accelerometer data
+- [var nanosecondsSinceStart: Int64](./nanosecondssincestart.md)
   The time in nanoseconds since the start of the accelerometer data recording.
-- [var samplingFrequency: Measurement<UnitFrequency>](srphotoplethysmogramaccelerometersample/samplingfrequency.md)
+- [var samplingFrequency: Measurement<UnitFrequency>](./samplingfrequency.md)
   The frequency of the accelerometer data recording in hertz.
-- [var x: Measurement<UnitAcceleration>](srphotoplethysmogramaccelerometersample/x.md)
+- [var x: Measurement<UnitAcceleration>](./x.md)
   The x-axis acceleration in G’s (gravitational force).
-- [var z: Measurement<UnitAcceleration>](srphotoplethysmogramaccelerometersample/z.md)
+- [var z: Measurement<UnitAcceleration>](./z.md)
   The z-axis acceleration in G’s (gravitational force).
 
 

@@ -1,12 +1,13 @@
 # toolbar
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window’s toolbar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The window’s toolbar.
 var toolbar: NSToolbar? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSToolbar * toolbar;
+```
+
 #### Discussion
 
-For more information about toolbars, see [`NSToolbar`](nstoolbar.md).
+For more information about toolbars, see [`NSToolbar`](../nstoolbar.md).
 
 ## See Also
 
-- [func toggleToolbarShown(Any?)](nswindow/toggletoolbarshown(_:).md)
+### Managing Toolbars
+- [func toggleToolbarShown(Any?)](./toggletoolbarshown%28_%29.md)
   Toggles the visibility of the window’s toolbar.
-- [func runToolbarCustomizationPalette(Any?)](nswindow/runtoolbarcustomizationpalette(_:).md)
+- [func runToolbarCustomizationPalette(Any?)](./runtoolbarcustomizationpalette%28_%29.md)
   Presents the toolbar customization user interface.
 
 

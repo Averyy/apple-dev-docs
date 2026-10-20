@@ -1,7 +1,8 @@
 # ASDiscoveryDescriptor.Range.immediate
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A range in the immediate vicinity of the device performing accessory discovery.
 
@@ -15,13 +16,18 @@ A range in the immediate vicinity of the device performing accessory discovery.
 case immediate
 ```
 
+```c
+ASDiscoveryDescriptorRangeImmediate
+```
+
 #### Discussion
 
 This range means that an accessory is right next to the device running your app.
 
 ## See Also
 
-- [ASDiscoveryDescriptor.Range.default](asdiscoverydescriptor/range/default.md)
+### Bluetooth options
+- [ASDiscoveryDescriptor.Range.default](./default.md)
   The default range in which to discover accessories.
 
 

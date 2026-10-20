@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start of the time period included in these statistics.
 
@@ -19,17 +20,22 @@ The start of the time period included in these statistics.
 var startDate: Date { get }
 ```
 
+```objc
+@property (strong, readonly) NSDate * startDate;
+```
+
 #### Discussion
 
 This property contains the start date for the statistics. If you calculated these statistics using a statistics query, this is the earliest start date from all the samples that match the query. If you calculated these statistics using a statistics collection query, this is the start of the time interval for that particular collection of statistics.
 
 ## See Also
 
-- [var endDate: Date](hkstatistics/enddate.md)
+### Getting Property Data
+- [var endDate: Date](./enddate.md)
   The end of the time period included in these statistics.
-- [var quantityType: HKQuantityType](hkstatistics/quantitytype.md)
+- [var quantityType: HKQuantityType](./quantitytype.md)
   The quantity type of the samples used to calculate these statistics.
-- [var sources: [HKSource]?](hkstatistics/sources.md)
+- [var sources: [HKSource]?](./sources.md)
   An array containing all the sources contributing to these statistics.
 
 

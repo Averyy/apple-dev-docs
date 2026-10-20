@@ -1,7 +1,8 @@
 # subtitleVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of subtitle strings.
 
@@ -16,15 +17,20 @@ An array of subtitle strings.
 var subtitleVariants: [String] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * subtitleVariants;
+```
+
 #### Discussion
 
 Each subtitle should be localized and ready for display to the user. The system selects the subtitle to display based on the available screen space.
 
 ## See Also
 
-- [var titleVariants: [String]](cpnavigationalert/titlevariants.md)
+### Getting Titles
+- [var titleVariants: [String]](./titlevariants.md)
   An array of title strings.
-- [func updateTitleVariants([String], subtitleVariants: [String])](cpnavigationalert/updatetitlevariants(_:subtitlevariants:).md)
+- [func updateTitleVariants([String], subtitleVariants: [String])](./updatetitlevariants%28_,subtitlevariants%29.md)
   Updates title and subtitle variants.
 
 

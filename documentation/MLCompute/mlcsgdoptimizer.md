@@ -1,16 +1,17 @@
 # MLCSGDOptimizer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An optimizer that represents the stochastic gradient decent algorithm.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,41 +19,46 @@ An optimizer that represents the stochastic gradient decent algorithm.
 class MLCSGDOptimizer
 ```
 
+```objc
+@interface MLCSGDOptimizer : MLCOptimizer
+```
+
 ## Topics
 
 ### Creating an SGD Optimizer
-- [convenience init(descriptor: MLCOptimizerDescriptor)](mlcsgdoptimizer/init(descriptor:).md)
+- [convenience init(descriptor: MLCOptimizerDescriptor)](./mlcsgdoptimizer/init%28descriptor%29.md)
   Creates an SGD optimizer with the descriptor you specify.
-- [convenience init(descriptor: MLCOptimizerDescriptor, momentumScale: Float, usesNesterovMomentum: Bool)](mlcsgdoptimizer/init(descriptor:momentumscale:usesnesterovmomentum:).md)
+- [convenience init(descriptor: MLCOptimizerDescriptor, momentumScale: Float, usesNesterovMomentum: Bool)](./mlcsgdoptimizer/init%28descriptor,momentumscale,usesnesterovmomentum%29.md)
   Create an SGD optimizer with the descriptor, momentum scale, and option to enable Nesterov momentum that you specify.
 ### Inspecting an SGD Optimizer
-- [var momentumScale: Float](mlcsgdoptimizer/momentumscale.md)
+- [var momentumScale: Float](./mlcsgdoptimizer/momentumscale.md)
   A hyper-parameter specifying the momentum factor.
-- [var usesNesterovMomentum: Bool](mlcsgdoptimizer/usesnesterovmomentum.md)
+- [var usesNesterovMomentum: Bool](./mlcsgdoptimizer/usesnesterovmomentum.md)
   A Boolean that indicates whether you enable Nesterov momentum.
 
 ## Relationships
 
 ### Inherits From
-- [MLCOptimizer](mlcoptimizer.md)
+- [MLCOptimizer](./mlcoptimizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCRMSPropOptimizer](mlcrmspropoptimizer.md)
+### Optimizer Types
+- [class MLCRMSPropOptimizer](./mlcrmspropoptimizer.md)
   An optimizer that represents the root mean square propagation algorithm.
-- [class MLCAdamOptimizer](mlcadamoptimizer.md)
+- [class MLCAdamOptimizer](./mlcadamoptimizer.md)
   An optimizer that represents the adaptive moment estimation algorithm.
-- [class MLCAdamWOptimizer](mlcadamwoptimizer.md)
+- [class MLCAdamWOptimizer](./mlcadamwoptimizer.md)
   An optimizer that represents the Adam algorithm with weight decay.
-- [class MLCOptimizer](mlcoptimizer.md)
+- [class MLCOptimizer](./mlcoptimizer.md)
   The base class for all framework optimizers.
 
 

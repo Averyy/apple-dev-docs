@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use the default leading column visibility for the current device.
 
@@ -22,15 +23,16 @@ static var automatic: NavigationSplitViewVisibility { get }
 
 #### Discussion
 
-This computed property returns one of the three concrete cases: [`detailOnly`](navigationsplitviewvisibility/detailonly.md), [`doubleColumn`](navigationsplitviewvisibility/doublecolumn.md), or [`all`](navigationsplitviewvisibility/all.md).
+This computed property returns one of the three concrete cases: [`detailOnly`](./detailonly.md), [`doubleColumn`](./doublecolumn.md), or [`all`](./all.md).
 
 ## See Also
 
-- [static var all: NavigationSplitViewVisibility](navigationsplitviewvisibility/all.md)
+### Getting visibilities
+- [static var all: NavigationSplitViewVisibility](./all.md)
   Show all the columns of a three-column navigation split view.
-- [static var doubleColumn: NavigationSplitViewVisibility](navigationsplitviewvisibility/doublecolumn.md)
+- [static var doubleColumn: NavigationSplitViewVisibility](./doublecolumn.md)
   Show the content column and detail area of a three-column navigation split view, or the sidebar column and detail area of a two-column navigation split view.
-- [static var detailOnly: NavigationSplitViewVisibility](navigationsplitviewvisibility/detailonly.md)
+- [static var detailOnly: NavigationSplitViewVisibility](./detailonly.md)
   Hide the leading two columns of a three-column navigation split view, so that just the detail area shows.
 
 

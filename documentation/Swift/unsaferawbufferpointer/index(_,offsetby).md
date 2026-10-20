@@ -1,7 +1,8 @@
 # index(_:offsetBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index that is the specified distance from the given index.
 
@@ -20,6 +21,8 @@ Returns an index that is the specified distance from the given index.
 func index(_ i: Self.Index, offsetBy distance: Self.Index.Stride) -> Self.Index
 ```
 
+Available when `Index` conforms to `Strideable`, `Indices` is `Range<Self.Index>`, and `Index.Stride` is `Int`.
+
 #### Return Value
 
 An index offset by `distance` from the index `i`. If `distance` is positive, this is the same value as the result of `distance` calls to `index(after:)`. If `distance` is negative, this is the same value as the result of `abs(distance)` calls to `index(before:)`.
@@ -37,7 +40,7 @@ print(numbers[i])
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

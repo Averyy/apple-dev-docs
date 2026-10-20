@@ -1,6 +1,8 @@
 # Creating turn-based games
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: Sample Code  
+**Download**: [CreatingTurnBasedGames.zip](https://docs-assets.developer.apple.com/published/90a936966de7/CreatingTurnBasedGames.zip)
 
 Develop games where multiple players take turns and can exchange data while waiting for their turn.
 
@@ -16,19 +18,19 @@ This sample code project uses the GameKit framework to create a simple turn-base
 
 To create your own turn-based game, replace the SwiftUI files with your gameplay interface, and modify the `TurnBasedGame` class to support your game.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To configure the sample code project, perform the following steps in Xcode:
 
 1. If necessary, change the Bundle Identifier to a unique ID on the Signing & Capabilities pane.
 2. Add your Apple ID account and assign the target to a team so Xcode can enable Game Center.
-3. In App Store Connect, create an app record that matches the bundle ID (see [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) in App Store Connect Help).
+3. In App Store Connect, create an app record that matches the bundle ID (see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) in App Store Connect Help).
 4. Connect two iOS devices to your Mac.
 5. If necessary, click Register Device in the Signing & Capabilities pane to create the provisioning profile.
 6. Build and run the sample on the two iOS devices.
 7. If the Welcome to Game Center sheet appears, sign in using a different Apple ID on each device.
 
-##### Initialize the Player and Register for Turn Based Events
+##### Initialize the player and register for turn-based events
 
 Before using any GameKit APIs, the game needs to initialize the local player by presenting an interface for them to sign in to Game Center on their device. The `TurnBasedGame.authenticatePlayer()` method handles the initialization flow and, when complete, registers for turn-based game events.
 
@@ -37,9 +39,9 @@ Before using any GameKit APIs, the game needs to initialize the local player by 
 GKLocalPlayer.local.register(self)
 ```
 
-##### Start a Turn Based Match
+##### Start a turn-based match
 
-To start or join an existing match, the player taps the Start Match button on the content view. Then the `TurnBasedGame.startMatch()` action method creates a match request and presents a [`GKTurnBasedMatchmakerViewController`](gkturnbasedmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
+To start or join an existing match, the player taps the Start Match button on the content view. Then the `TurnBasedGame.startMatch()` action method creates a match request and presents a [`GKTurnBasedMatchmakerViewController`](./gkturnbasedmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
 
 ```swift
 // Create a match request.
@@ -56,7 +58,7 @@ viewController.turnBasedMatchmakerDelegate = self
 rootViewController?.present(viewController, animated: true) { }
 ```
 
-After the player selects opponents in the Game Center interface, GameKit dismisses the view controller and invokes the `GKTurnBasedEventListener.`[`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method, passing a new [`GKTurnBasedMatch`](gkturnbasedmatch.md) object. This method handles a variety of turn-based events throughout the match.
+After the player selects opponents in the Game Center interface, GameKit dismisses the view controller and invokes the `GKTurnBasedEventListener.`[`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) protocol method, passing a new [`GKTurnBasedMatch`](./gkturnbasedmatch.md) object. This method handles a variety of turn-based events throughout the match.
 
 The first time GameKit invokes the `player(_:receivedTurnEventFor:didBecomeActive:)` method, the local player is the current participant. This method sets the `myTurn` property to `true`, which enables the Take Turn button in the game view interface.
 
@@ -74,18 +76,18 @@ Instead of retaining the `GKTurnBasedMatch` object, which can change during the 
 currentMatchID = match.matchID
 ```
 
-##### Pass the Turn to the Next Participant
+##### Pass the turn to the next participant
 
 When the current participant taps the Take Turn button, the `TurnBasedGame.takeTurn()` action method increments the count and passes the turn to the opponent.
 
-First the `takeTurn()` method loads the current match object using the match ID it retains in the [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method.
+First the `takeTurn()` method loads the current match object using the match ID it retains in the [`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) method.
 
 ```swift
 // Load the most recent match object from the match ID.
 let match = try await GKTurnBasedMatch.load(withID: currentMatchID!)
 ```
 
-This method passes the turn to the opponent using the [`endTurn(withNextParticipants:turnTimeout:match:completionHandler:)`](gkturnbasedmatch/endturn(withnextparticipants:turntimeout:match:completionhandler:).md) method. It passes the next participant an array containing just the opponent, and a `Data` representation of the game state that contains the current count.
+This method passes the turn to the opponent using the [`endTurn(withNextParticipants:turnTimeout:match:completionHandler:)`](./gkturnbasedmatch/endturn%28withnextparticipants,turntimeout,match,completionhandler%29.md) method. It passes the next participant an array containing just the opponent, and a `Data` representation of the game state that contains the current count.
 
 ```swift
 // Create the game data to store in Game Center.
@@ -109,11 +111,11 @@ try await match.endTurn(withNextParticipants: nextParticipants, turnTimeout: GKT
 
 The first time the game passes the turn, GameKit sends invitations to all the participants.
 
-##### Accept Turn Based Match Invitations
+##### Accept turn-based match invitations
 
-When the opponent taps the Accept button in the dialog that GameKit displays on their device, GameKit invokes the `GKTurnBasedEventListener.`[`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method.
+When the opponent taps the Accept button in the dialog that GameKit displays on their device, GameKit invokes the `GKTurnBasedEventListener.`[`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) method.
 
-When the local player accepts the invitation, the other participant’s status is [`GKTurnBasedParticipant.Status.active`](gkturnbasedparticipant/status-swift.enum/active.md) and its player property is non-`nil`, allowing this method to get the opponent’s name and load their avatar from the `GKPlayer` object.
+When the local player accepts the invitation, the other participant’s status is [`GKTurnBasedParticipant.Status.active`](./gkturnbasedparticipant/status-swift.enum/active.md) and its player property is non-`nil`, allowing this method to get the opponent’s name and load their avatar from the `GKPlayer` object.
 
 ```swift
 // If the player starts the match, the opponent hasn't accepted the invitation and has no player object.
@@ -133,11 +135,11 @@ if (participant != nil) && (participant?.status != .matching) && (participant?.p
 
 The match object also contains data, such as the current count, that this method encodes to update the game view interface. The `TurnBasedGame.encodeGameData()` and `TurnBasedGame.decodeGameData()` methods store just the game properties that you need to continue playing when GameKit sends turn-based events between participants.
 
-##### Forfeit a Turn Based Match
+##### Forfeit a turn-based match
 
 If a participant taps the Forfeit button, the `TurnBasedGame.forfeitMatch()` action method quits the match whether it’s the participant’s turn or not. Because only the current participant can update the match data, GameKit provides two different methods to leave a match.
 
-When it’s the local player’s turn, the `forfeitMatch()` method creates a `Data` representation of the game data, selects the next participants, and invokes the [`participantQuitInTurn(with:nextParticipants:turnTimeout:match:completionHandler:)`](gkturnbasedmatch/participantquitinturn(with:nextparticipants:turntimeout:match:completionhandler:).md) method, passing [`GKTurnBasedMatch.Outcome.quit`](gkturnbasedmatch/outcome/quit.md) as the outcome.
+When it’s the local player’s turn, the `forfeitMatch()` method creates a `Data` representation of the game data, selects the next participants, and invokes the [`participantQuitInTurn(with:nextParticipants:turnTimeout:match:completionHandler:)`](./gkturnbasedmatch/participantquitinturn%28with,nextparticipants,turntimeout,match,completionhandler%29.md) method, passing [`GKTurnBasedMatch.Outcome.quit`](./gkturnbasedmatch/outcome/quit.md) as the outcome.
 
 ```swift
 // Create the game data to store in Game Center.
@@ -156,14 +158,14 @@ try await match.participantQuitInTurn(
     match: gameData)
 ```
 
-When it’s not the local player’s turn, the `forfeitMatch()` method calls the [`participantQuitOutOfTurn(with:withCompletionHandler:)`](gkturnbasedmatch/participantquitoutofturn(with:withcompletionhandler:).md) method.
+When it’s not the local player’s turn, the `forfeitMatch()` method calls the [`participantQuitOutOfTurn(with:withCompletionHandler:)`](./gkturnbasedmatch/participantquitoutofturn%28with,withcompletionhandler%29.md) method.
 
 ```swift
 // Forfeit the match while it's not the local player's turn.
 try await match.participantQuitOutOfTurn(with: GKTurnBasedMatch.Outcome.quit)
 ```
 
-Both of these methods change the status of the participant to [`GKTurnBasedParticipant.Status.done`](gkturnbasedparticipant/status-swift.enum/done.md) and generate a turn-based event that invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method. If there aren’t enough participants to continue (when there’s only one participant remaining in the match), this method sets the outcome of the recipient to [`GKTurnBasedMatch.Outcome.won`](gkturnbasedmatch/outcome/won.md) and ends the game.
+Both of these methods change the status of the participant to [`GKTurnBasedParticipant.Status.done`](./gkturnbasedparticipant/status-swift.enum/done.md) and generate a turn-based event that invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) method. If there aren’t enough participants to continue (when there’s only one participant remaining in the match), this method sets the outcome of the recipient to [`GKTurnBasedMatch.Outcome.won`](./gkturnbasedmatch/outcome/won.md) and ends the game.
 
 ```swift
 // Remove participants who quit or otherwise aren't in the match.
@@ -188,11 +190,11 @@ if nextParticipants.count < minPlayers {
 
 The `takeTurn()` action method also ends the match with a win if there aren’t enough participants to continue.
 
-##### Exchange Data Between Participants
+##### Exchange data between participants
 
 Participants can message other participants and exchange items while they’re waiting for the current participant to take their turn. When a participant taps the message bubble in the game view, the chat view sheet appears so the participant can send a text message to the opponent.
 
-The `TurnBasedGame.sendMessage()` method sends the text message as the data in an exchange request. It passes the data, a localizable message, and a response timeout to the `GKTurnBasedMatch.`[`sendExchange(to:data:localizableMessageKey:arguments:timeout:completionHandler:)`](gkturnbasedmatch/sendexchange(to:data:localizablemessagekey:arguments:timeout:completionhandler:).md) method.
+The `TurnBasedGame.sendMessage()` method sends the text message as the data in an exchange request. It passes the data, a localizable message, and a response timeout to the `GKTurnBasedMatch.`[`sendExchange(to:data:localizableMessageKey:arguments:timeout:completionHandler:)`](./gkturnbasedmatch/sendexchange%28to,data,localizablemessagekey,arguments,timeout,completionhandler%29.md) method.
 
 ```swift
 // Create the exchange data.
@@ -213,7 +215,7 @@ try await match.sendExchange(to: participants, data: data,
                              arguments: [], timeout: GKTurnTimeoutDefault)
 ```
 
-In the recipient’s game instance, GameKit invokes the `GKTurnBasedEventListener.`[`player(_:receivedExchangeRequest:for:)`](gkturnbasedeventlistener/player(_:receivedexchangerequest:for:).md) protocol method, passing the player, the exchange object, and the match object. This method displays the message to the recipient when they have the chat view sheet open. Otherwise, the message appears in the chat view thread the next time the participant opens it.
+In the recipient’s game instance, GameKit invokes the `GKTurnBasedEventListener.`[`player(_:receivedExchangeRequest:for:)`](./gkturnbasedeventlistener/player%28_,receivedexchangerequest,for%29.md) protocol method, passing the player, the exchange object, and the match object. This method displays the message to the recipient when they have the chat view sheet open. Otherwise, the message appears in the chat view thread the next time the participant opens it.
 
 ```swift
 // Unpack the exchange data and display the message in the chat view.
@@ -221,17 +223,17 @@ let content = String(decoding: exchange.data!, as: UTF8.self)
 let message = Message(content: content, playerName: exchange.sender.player?.displayName ?? "unknown", isLocalPlayer: false)
 ```
 
-For expedience, this method immediately accepts the exchange request when the exchange status is [`GKTurnBasedExchangeStatus.active`](gkturnbasedexchangestatus/active.md).
+For expedience, this method immediately accepts the exchange request when the exchange status is [`GKTurnBasedExchangeStatus.active`](./gkturnbasedexchangestatus/active.md).
 
 ```swift
 try await exchange.reply(withLocalizableMessageKey: "I accept the exchange request.", arguments: [], data: Data())
 ```
 
-##### Save Completed Exchanges
+##### Save completed exchanges
 
 In the sample, each participant starts with 50 items next to their names. To exchange items, a participant clicks the Exchange Item button below the Send Reminder button. The same code that accepts the chat messages also automatically accepts the exchange item request.
 
-When participants reply to exchange requests, GameKit invokes the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](gkturnbasedeventlistener/player(_:receivedexchangereplies:forcompletedexchange:for:).md) protocol method in the current participant and the sender’s game instance. In this sample, the `player(_:receivedExchangeReplies:forCompletedExchange:for:)` method invokes the `TurnBasedGame.saveExchanges()` method.
+When participants reply to exchange requests, GameKit invokes the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](./gkturnbasedeventlistener/player%28_,receivedexchangereplies,forcompletedexchange,for%29.md) protocol method in the current participant and the sender’s game instance. In this sample, the `player(_:receivedExchangeReplies:forCompletedExchange:for:)` method invokes the `TurnBasedGame.saveExchanges()` method.
 
 Because GameKit requires that the current participant save completed exchanges before ending a match, the `takeTurn()` method also invokes the `saveExchanges(for:)` method before ending a match.
 
@@ -242,7 +244,7 @@ Because only the current participant can save exchanges, the `saveExchanges(for:
 guard myTurn else { return }
 ```
 
-This method resolves the exchange by transferring one item from the recipient to the sender of the exchange request. Then it adds the participant’s exchange items to the game data, and passes it with the completed exchanges to the `GKTurnBasedMatch.`[`saveMergedMatch(_:withResolvedExchanges:completionHandler:)`](gkturnbasedmatch/savemergedmatch(_:withresolvedexchanges:completionhandler:).md) method.
+This method resolves the exchange by transferring one item from the recipient to the sender of the exchange request. Then it adds the participant’s exchange items to the game data, and passes it with the completed exchanges to the `GKTurnBasedMatch.`[`saveMergedMatch(_:withResolvedExchanges:completionHandler:)`](./gkturnbasedmatch/savemergedmatch%28_,withresolvedexchanges,completionhandler%29.md) method.
 
 ```swift
 // Resolve the game data to pass to all participants.
@@ -254,31 +256,32 @@ Task {
 }
 ```
 
-The `saveMergedMatch(_:withResolvedExchanges:completionHandler:)` method removes the completed exchange objects from the `GKTurnBasedMatch` object’s [`completedExchanges`](gkturnbasedmatch/completedexchanges.md) and [`exchanges`](gkturnbasedmatch/exchanges.md) properties.
+The `saveMergedMatch(_:withResolvedExchanges:completionHandler:)` method removes the completed exchange objects from the `GKTurnBasedMatch` object’s [`completedExchanges`](./gkturnbasedmatch/completedexchanges.md) and [`exchanges`](./gkturnbasedmatch/exchanges.md) properties.
 
-Because the match data changes, GameKit invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method in the other participants’ game instances. The `player(_:receivedTurnEventFor:didBecomeActive:)` method unpacks the match data and displays the exchanged items.
+Because the match data changes, GameKit invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) method in the other participants’ game instances. The `player(_:receivedTurnEventFor:didBecomeActive:)` method unpacks the match data and displays the exchanged items.
 
 ## See Also
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+### Turn-based games
+- [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
   Let Game Center store and forward match data between players in a turn-based game.
-- [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
+- [Sending messages to players in turn-based games](./sending-messages-to-players-in-turn-based-games.md)
   Notify players of match events by sending messages and game data.
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](./exchanging-data-between-players-in-turn-based-games.md)
   Add the ability for players to exchange game data and send messages while waiting for their turns.
-- [class GKTurnBasedMatchmakerViewController](gkturnbasedmatchmakerviewcontroller.md)
+- [class GKTurnBasedMatchmakerViewController](./gkturnbasedmatchmakerviewcontroller.md)
   An interface that allows a player to invite other players to a turn-based match and automatch to fill any empty slots.
-- [class GKTurnBasedMatch](gkturnbasedmatch.md)
+- [class GKTurnBasedMatch](./gkturnbasedmatch.md)
   An object that encapsulates the match data for games where players take turns.
-- [class GKTurnBasedParticipant](gkturnbasedparticipant.md)
+- [class GKTurnBasedParticipant](./gkturnbasedparticipant.md)
   A participant in a turn-based match.
-- [protocol GKTurnBasedEventListener](gkturnbasedeventlistener.md)
+- [protocol GKTurnBasedEventListener](./gkturnbasedeventlistener.md)
   The protocol that handles turn-based and data-exchange events between participants in a match.
-- [class GKTurnBasedExchange](gkturnbasedexchange.md)
+- [class GKTurnBasedExchange](./gkturnbasedexchange.md)
   Exchange request information that participants send in a turn-based match.
-- [class GKTurnBasedExchangeReply](gkturnbasedexchangereply.md)
+- [class GKTurnBasedExchangeReply](./gkturnbasedexchangereply.md)
   Details about a recipient’s response to an exchange request.
-- [GKGameCenterBadgingDisabled](../bundleresources/information-property-list/gkgamecenterbadgingdisabled.md)
+- [GKGameCenterBadgingDisabled](../BundleResources/information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 
 

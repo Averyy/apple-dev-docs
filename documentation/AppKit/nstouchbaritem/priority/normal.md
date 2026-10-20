@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant indicating a normal visibility priority.
 
@@ -17,11 +18,16 @@ A constant indicating a normal visibility priority.
 static var normal: NSTouchBarItem.Priority { get }
 ```
 
+```c
+static const NSTouchBarItemPriority NSTouchBarItemPriorityNormal;
+```
+
 ## See Also
 
-- [static var low: NSTouchBarItem.Priority](nstouchbaritem/priority/low.md)
+### Priorities
+- [static var low: NSTouchBarItem.Priority](./low.md)
   A constant indicating a low visibility priority.
-- [static var high: NSTouchBarItem.Priority](nstouchbaritem/priority/high.md)
+- [static var high: NSTouchBarItem.Priority](./high.md)
   A constant indicating a high visibility priority.
 
 

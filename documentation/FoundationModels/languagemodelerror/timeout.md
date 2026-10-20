@@ -1,7 +1,8 @@
 # LanguageModelError.Timeout
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a timeout.
 
@@ -22,23 +23,24 @@ struct Timeout
 ## Topics
 
 ### Creating an error instance
-- [init(debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/timeout/init(debugdescription:metadata:).md)
+- [init(debugDescription: String, metadata: [String : any Sendable])](./timeout/init%28debugdescription,metadata%29.md)
   Creates information describing a request timeout.
 ### Inspecting timeout errors
-- [var metadata: [String : any Sendable]](languagemodelerror/timeout/metadata.md)
+- [var metadata: [String : any Sendable]](./timeout/metadata.md)
   Additional information about the failure, keyed by name.
-- [var debugDescription: String](languagemodelerror/timeout/debugdescription.md)
+- [var debugDescription: String](./timeout/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case timeout(LanguageModelError.Timeout)](languagemodelerror/timeout(_:).md)
+### Request timed out error
+- [case timeout(LanguageModelError.Timeout)](./timeout%28_%29.md)
   The request timed out before the model could produce a response.
 
 

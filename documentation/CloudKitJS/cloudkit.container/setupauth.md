@@ -1,7 +1,8 @@
 # setUpAuth
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether a user is signed in and presents an appropriate sign in or sign out button.
 
@@ -10,17 +11,17 @@ Determines whether a user is signed in and presents an appropriate sign in or si
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.UserIdentity, CloudKit.CKError> setUpAuth();
 ```
 
 #### Return Value
 
-A `Promise` that resolves to a [`CloudKit.UserIdentity`](cloudkit.useridentity.md) dictionary if an active CloudKit session was found; otherwise, `null`. If an error occurs, a `Promise` object that rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` that resolves to a [`CloudKit.UserIdentity`](../cloudkit.useridentity.md) dictionary if an active CloudKit session was found; otherwise, `null`. If an error occurs, a `Promise` object that rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
-Use the [`setUpAuth`](cloudkit.container/setupauth.md) method to determine whether the user is authenticated and to display the appropriate button.
+Use the [`setUpAuth`](./setupauth.md) method to determine whether the user is authenticated and to display the appropriate button.
 
 ```javascript
 var myContainer = CloudKit.getDefaultContainer();
@@ -32,17 +33,18 @@ myContainer.setUpAuth().then(function(userIdentity) {
 });
 ```
 
-In the function, use the `userRecordName` property to get the user record name from the [`CloudKit.UserIdentity`](cloudkit.useridentity.md) parameter.
+In the function, use the `userRecordName` property to get the user record name from the [`CloudKit.UserIdentity`](../cloudkit.useridentity.md) parameter.
 
-The [`setUpAuth`](cloudkit.container/setupauth.md) method displays the appropriate buttons only if the required DOM elements are found. If the user is not signed in, the method displays a sign-in button; otherwise, it displays a sign-out button.
+The [`setUpAuth`](./setupauth.md) method displays the appropriate buttons only if the required DOM elements are found. If the user is not signed in, the method displays a sign-in button; otherwise, it displays a sign-out button.
 
 You can call this method multiple times. For example, call this method to determine if a previous CloudKit session is still valid, and call this method later to display the buttons after you add the required DOM elements.
 
 ## See Also
 
-- [whenUserSignsIn](cloudkit.container/whenusersignsin.md)
+### Authenticating Users
+- [whenUserSignsIn](./whenusersignsin.md)
   Returns an object representing a deferred or asynchronous operation that resolves when the user signs in.
-- [whenUserSignsOut](cloudkit.container/whenusersignsout.md)
+- [whenUserSignsOut](./whenusersignsout.md)
   Returns an object representing a deferred or asynchronous operation that resolves when the user signs out.
 
 

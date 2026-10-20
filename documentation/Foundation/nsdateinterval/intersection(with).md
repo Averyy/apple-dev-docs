@@ -1,7 +1,8 @@
 # intersection(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the intersection between the receiver and the specified date interval.
 
@@ -20,6 +21,10 @@ Returns the intersection between the receiver and the specified date interval.
 func intersection(with dateInterval: DateInterval) -> DateInterval?
 ```
 
+```objc
+- (NSDateInterval *) intersectionWithDateInterval:(NSDateInterval *) dateInterval;
+```
+
 #### Return Value
 
 A date interval for the intersection of the receiver and `dateInterval`, or `nil` if no intersection occurs.
@@ -28,11 +33,11 @@ A date interval for the intersection of the receiver and `dateInterval`, or `nil
 
 Calculating the intersection of date intervals is a commutative and associative operation. The intersection of a date interval with itself is equal to itself.
 
-The following figure illustrates five `NSDateInterval` objects plotted on an arbitrary time axis. Each date interval spans its [`duration`](nsdateinterval/duration.md) from left to right, from its [`startDate`](nsdateinterval/startdate.md) to its [`endDate`](nsdateinterval/enddate.md).
+The following figure illustrates five `NSDateInterval` objects plotted on an arbitrary time axis. Each date interval spans its [`duration`](./duration.md) from left to right, from its [`startDate`](./startdate.md) to its [`endDate`](./enddate.md).
 
-![None](/images/com.apple.foundation/media-2556958@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2556958@2x.png)
 
-The date intervals labeled **A** and **B** do not intersect, because the [`startDate`](nsdateinterval/startdate.md) of **B** occurs later than the [`endDate`](nsdateinterval/enddate.md) of **A**.
+The date intervals labeled **A** and **B** do not intersect, because the [`startDate`](./startdate.md) of **B** occurs later than the [`endDate`](./enddate.md) of **A**.
 
 The date intervals  labeled **C** and **D** do intersect. The date interval labeled **E** represents the result of calculating the intersection between **C** and **D**.
 
@@ -42,7 +47,8 @@ The date intervals  labeled **C** and **D** do intersect. The date interval labe
 
 ## See Also
 
-- [func intersects(DateInterval) -> Bool](nsdateinterval/intersects(_:).md)
+### Determining Intersections
+- [func intersects(DateInterval) -> Bool](./intersects%28_%29.md)
   Indicates whether the receiver intersects with the specified date interval.
 
 

@@ -1,7 +1,8 @@
 # kdf
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key derivation function (KDF) for deriving the symmetric key.
 
@@ -22,9 +23,10 @@ let kdf: HPKE.KDF
 
 ## See Also
 
-- [let aead: HPKE.AEAD](hpke/ciphersuite/aead.md)
+### Inspecting a cipher suite
+- [let aead: HPKE.AEAD](./aead.md)
   The authenticated encryption with additional data (AEAD) algorithm for encrypting and decrypting messages.
-- [let kem: HPKE.KEM](hpke/ciphersuite/kem.md)
+- [let kem: HPKE.KEM](./kem.md)
   The key encapsulation mechanism (KEM) for encapsulating the symmetric key.
 
 

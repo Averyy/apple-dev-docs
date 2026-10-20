@@ -1,7 +1,8 @@
 # volume
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,9 +18,14 @@
 var volume: HMCharacteristic? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCharacteristic * volume;
+```
+
 ## See Also
 
-- [var mute: HMCharacteristic?](hmcameraaudiocontrol/mute.md)
+### Controlling audio characteristics
+- [var mute: HMCharacteristic?](./mute.md)
 
 
 ---

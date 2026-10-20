@@ -1,7 +1,8 @@
 # SecExternalItemType.itemTypePublicKey
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a public key.
 
@@ -12,6 +13,10 @@ Indicates a public key.
 
 ```swift
 case itemTypePublicKey
+```
+
+```c
+kSecItemTypePublicKey
 ```
 
 

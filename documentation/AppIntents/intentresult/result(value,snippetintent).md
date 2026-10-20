@@ -1,7 +1,8 @@
 # result(value:snippetIntent:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates that a completed app intent returns a value and displays an interactive snippet.
 

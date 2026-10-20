@@ -1,7 +1,8 @@
 # selectAll(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects all text in the document.
 
@@ -20,19 +21,24 @@ Selects all text in the document.
 func selectAll(_ sender: Any?)
 ```
 
+```objc
+- (void) selectAll:(id) sender;
+```
+
 ## See Also
 
-- [var currentSelection: PDFSelection?](pdfview/currentselection.md)
+### Handling Selections
+- [var currentSelection: PDFSelection?](./currentselection.md)
   The current selection.
-- [func setCurrentSelection(PDFSelection?, animate: Bool)](pdfview/setcurrentselection(_:animate:).md)
+- [func setCurrentSelection(PDFSelection?, animate: Bool)](./setcurrentselection%28_,animate%29.md)
   Sets the current selection, in an animated way, if desired.
-- [func clearSelection()](pdfview/clearselection.md)
+- [func clearSelection()](./clearselection%28%29.md)
   Clears the selection.
-- [func copy(Any?)](pdfview/copy(_:).md)
+- [func copy(Any?)](./copy%28_%29.md)
   Copies the text in the selection, if any, to the Pasteboard.
-- [func scrollSelectionToVisible(Any?)](pdfview/scrollselectiontovisible(_:).md)
+- [func scrollSelectionToVisible(Any?)](./scrollselectiontovisible%28_%29.md)
   Scrolls the view until the selection is visible.
-- [var highlightedSelections: [PDFSelection]?](pdfview/highlightedselections.md)
+- [var highlightedSelections: [PDFSelection]?](./highlightedselections.md)
   Returns the array of selections that are highlighted using `setHighlightedSelections`.
 
 

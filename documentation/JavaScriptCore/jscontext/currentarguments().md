@@ -1,7 +1,8 @@
 # currentArguments()
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the arguments to the current native callback from JavaScript code.
 
@@ -19,23 +20,28 @@ Returns the arguments to the current native callback from JavaScript code.
 class func currentArguments() -> [Any]!
 ```
 
+```objc
++ (NSArray *) currentArguments;
+```
+
 #### Return Value
 
 The current callback arguments, or `nil` if not within native code called from JavaScript.
 
 #### Discussion
 
-Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain an array of [`JSValue`](jsvalue.md) objects representing the arguments to the JavaScript function responsible for that callback.
+Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain an array of [`JSValue`](../jsvalue.md) objects representing the arguments to the JavaScript function responsible for that callback.
 
 If not currently in code invoked as a callback from JavaScript, this method returns `nil`.
 
 ## See Also
 
-- [class func current() -> JSContext!](jscontext/current.md)
+### Inspecting callback state in a running context
+- [class func current() -> JSContext!](./current%28%29.md)
   Returns the context currently executing JavaScript code.
-- [class func currentCallee() -> JSValue!](jscontext/currentcallee.md)
+- [class func currentCallee() -> JSValue!](./currentcallee%28%29.md)
   Returns the currently executing JavaScript function.
-- [class func currentThis() -> JSValue!](jscontext/currentthis.md)
+- [class func currentThis() -> JSValue!](./currentthis%28%29.md)
   Returns the value of the `this` keyword in currently executing JavaScript code.
 
 

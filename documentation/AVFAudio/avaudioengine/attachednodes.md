@@ -1,7 +1,8 @@
 # attachedNodes
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A read-only set that contains the nodes you attach to the audio engine.
 
@@ -20,11 +21,16 @@ A read-only set that contains the nodes you attach to the audio engine.
 var attachedNodes: Set<AVAudioNode> { get }
 ```
 
+```objc
+@property (copy, readonly) NSSet<AVAudioNode *> * attachedNodes;
+```
+
 ## See Also
 
-- [func attach(AVAudioNode)](avaudioengine/attach(_:).md)
+### Attaching and detaching audio nodes
+- [func attach(AVAudioNode)](./attach%28_%29.md)
   Attaches an audio node to the audio engine.
-- [func detach(AVAudioNode)](avaudioengine/detach(_:).md)
+- [func detach(AVAudioNode)](./detach%28_%29.md)
   Detaches an audio node from the audio engine.
 
 

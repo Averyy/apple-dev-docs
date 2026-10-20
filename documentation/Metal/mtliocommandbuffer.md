@@ -1,7 +1,8 @@
 # MTLIOCommandBuffer
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A command buffer that contains input/output commands that work with files in the file systems and Metal resources.
 
@@ -19,72 +20,77 @@ A command buffer that contains input/output commands that work with files in the
 protocol MTLIOCommandBuffer : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLIOCommandBuffer <NSObject>
+```
+
 #### Overview
 
-Add commands an input/output command buffer to load assets from the file system directly into Metal resources. Your app can then use those resources with other commands it submits to [`MTLCommandQueue`](mtlcommandqueue.md).
+Add commands an input/output command buffer to load assets from the file system directly into Metal resources. Your app can then use those resources with other commands it submits to [`MTLCommandQueue`](./mtlcommandqueue.md).
 
 ## Topics
 
 ### Loading assets
-- [func load(any MTLBuffer, offset: Int, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](mtliocommandbuffer/load(_:offset:size:sourcehandle:sourcehandleoffset:).md)
+- [func load(any MTLBuffer, offset: Int, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](./mtliocommandbuffer/load%28_,offset,size,sourcehandle,sourcehandleoffset%29.md)
   Encodes a command that loads data from a file handle into a GPU buffer.
-- [func load(any MTLTexture, slice: Int, level: Int, size: MTLSize, sourceBytesPerRow: Int, sourceBytesPerImage: Int, destinationOrigin: MTLOrigin, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](mtliocommandbuffer/load(_:slice:level:size:sourcebytesperrow:sourcebytesperimage:destinationorigin:sourcehandle:sourcehandleoffset:).md)
+- [func load(any MTLTexture, slice: Int, level: Int, size: MTLSize, sourceBytesPerRow: Int, sourceBytesPerImage: Int, destinationOrigin: MTLOrigin, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](./mtliocommandbuffer/load%28_,slice,level,size,sourcebytesperrow,sourcebytesperimage,destinationorigin,sourcehandle,sourcehandleoffset%29.md)
   Encodes a command that loads data from a file handle into a GPU texture.
-- [func loadBytes(UnsafeMutableRawPointer, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](mtliocommandbuffer/loadbytes(_:size:sourcehandle:sourcehandleoffset:).md)
+- [func loadBytes(UnsafeMutableRawPointer, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](./mtliocommandbuffer/loadbytes%28_,size,sourcehandle,sourcehandleoffset%29.md)
   Encodes a command that loads data from a file handle into CPU-accessible memory buffer.
 ### Adding a barrier
-- [func addBarrier()](mtliocommandbuffer/addbarrier.md)
+- [func addBarrier()](./mtliocommandbuffer/addbarrier%28%29.md)
   Encodes a barrier into the command buffer.
 ### Synchronizing a command buffer
-- [func signalEvent(any MTLSharedEvent, value: UInt64)](mtliocommandbuffer/signalevent(_:value:).md)
+- [func signalEvent(any MTLSharedEvent, value: UInt64)](./mtliocommandbuffer/signalevent%28_,value%29.md)
   Encodes a command that signals a shared event to other parts of your app.
-- [func waitForEvent(any MTLSharedEvent, value: UInt64)](mtliocommandbuffer/waitforevent(_:value:).md)
+- [func waitForEvent(any MTLSharedEvent, value: UInt64)](./mtliocommandbuffer/waitforevent%28_,value%29.md)
   Encodes a command that pauses the command buffer’s execution until another part of your app signals a shared event.
 ### Adding final commands
-- [func copyStatus(buffer: any MTLBuffer, offset: Int)](mtliocommandbuffer/copystatus(buffer:offset:).md)
+- [func copyStatus(buffer: any MTLBuffer, offset: Int)](./mtliocommandbuffer/copystatus%28buffer,offset%29.md)
   Encodes a command that writes the input/output command buffer’s status to a buffer.
-- [func addCompletedHandler(MTLIOCommandBufferHandler)](mtliocommandbuffer/addcompletedhandler(_:).md)
+- [func addCompletedHandler(MTLIOCommandBufferHandler)](./mtliocommandbuffer/addcompletedhandler%28_%29.md)
   Adds a closure that Metal calls immediately after the GPU finishes executing the commands in the input/output command buffer.
 ### Submitting a command buffer
-- [func commit()](mtliocommandbuffer/commit.md)
+- [func commit()](./mtliocommandbuffer/commit%28%29.md)
   Submits the command buffer to the queue for execution on the GPU.
-- [func enqueue()](mtliocommandbuffer/enqueue.md)
+- [func enqueue()](./mtliocommandbuffer/enqueue%28%29.md)
   Reserves a place for the input/output command buffer in the input/output command queue without committing the command buffer.
 ### Canceling a command buffer
-- [func tryCancel()](mtliocommandbuffer/trycancel.md)
+- [func tryCancel()](./mtliocommandbuffer/trycancel%28%29.md)
   Submits a request to abandon a command buffer the queue is currently running.
 ### Waiting for a command buffer
-- [func waitUntilCompleted()](mtliocommandbuffer/waituntilcompleted.md)
+- [func waitUntilCompleted()](./mtliocommandbuffer/waituntilcompleted%28%29.md)
   Blocks the current thread until the GPU finishes executing the input/output command buffer and all of its completion handlers.
 ### Checking the state of a command buffer
-- [var status: MTLIOStatus](mtliocommandbuffer/status.md)
+- [var status: MTLIOStatus](./mtliocommandbuffer/status.md)
   Represents the state of the input/output command buffer.
-- [var error: (any Error)?](mtliocommandbuffer/error.md)
+- [var error: (any Error)?](./mtliocommandbuffer/error.md)
   Stores the details of an error when the GPU experienced a problem with the input/output command buffer.
 ### Debugging a command buffer
-- [var label: String?](mtliocommandbuffer/label.md)
+- [var label: String?](./mtliocommandbuffer/label.md)
   An optional name for the input/output command buffer.
-- [func pushDebugGroup(String)](mtliocommandbuffer/pushdebuggroup(_:).md)
+- [func pushDebugGroup(String)](./mtliocommandbuffer/pushdebuggroup%28_%29.md)
   Sets the current name for this input/output command encoder by adding it to the top of the debug name stack.
-- [func popDebugGroup()](mtliocommandbuffer/popdebuggroup.md)
+- [func popDebugGroup()](./mtliocommandbuffer/popdebuggroup%28%29.md)
   Restores the previous name for this input/output command encoder by removing the top item of the debug name stack.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLIOFileHandle](mtliofilehandle.md)
+### I/O command buffers
+- [protocol MTLIOFileHandle](./mtliofilehandle.md)
   Represents a raw or compressed file, such as a resource asset file in your app’s bundle.
-- [typealias MTLIOCommandBufferHandler](mtliocommandbufferhandler.md)
+- [typealias MTLIOCommandBufferHandler](./mtliocommandbufferhandler.md)
   A convenience type that defines the signature of an input/output command buffer’s completion handler.
-- [enum MTLIOStatus](mtliostatus.md)
+- [enum MTLIOStatus](./mtliostatus.md)
   Represents the state of an input/output command buffer.
-- [MTLIOError.Code](mtlioerror-swift.struct/code.md)
+- [MTLIOError.Code](./mtlioerror-swift.struct/code.md)
   The error codes for creating an input/output file handle.
-- [let MTLIOErrorDomain: String](mtlioerrordomain.md)
+- [let MTLIOErrorDomain: String](./mtlioerrordomain.md)
   The domain for input/output command queue errors.
 
 

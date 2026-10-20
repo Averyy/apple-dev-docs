@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Direction.forward
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Forward direction.
 

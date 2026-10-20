@@ -1,7 +1,8 @@
 # PDFDisplayMode.singlePageContinuous
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A display mode where the document displays in continuous mode vertically, with single-page width horizontally.
 
@@ -19,17 +20,22 @@ A display mode where the document displays in continuous mode vertically, with s
 case singlePageContinuous
 ```
 
+```c
+kPDFDisplaySinglePageContinuous
+```
+
 #### Discussion
 
 Vertical scrolling applies to the entire document.
 
 ## See Also
 
-- [PDFDisplayMode.singlePage](pdfdisplaymode/singlepage.md)
+### Constants
+- [PDFDisplayMode.singlePage](./singlepage.md)
   A display mode where the document displays one page at a time horizontally and vertically.
-- [PDFDisplayMode.twoUp](pdfdisplaymode/twoup.md)
+- [PDFDisplayMode.twoUp](./twoup.md)
   A display mode where the document displays two pages side-by-side.
-- [PDFDisplayMode.twoUpContinuous](pdfdisplaymode/twoupcontinuous.md)
+- [PDFDisplayMode.twoUpContinuous](./twoupcontinuous.md)
   A display mode where the document displays in continuous mode vertically and displays two pages side-by-side horizontally.
 
 

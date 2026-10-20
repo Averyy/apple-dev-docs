@@ -1,7 +1,8 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies an animation to perform when the binding value changes.
 
@@ -30,11 +31,12 @@ A new binding.
 
 ## See Also
 
-- [var id: Value.ID](binding/id.md)
+### Managing changes
+- [var id: Value.ID](./id.md)
   The stable identity of the entity associated with this instance, corresponding to the `id` of the binding’s wrapped value.
-- [func transaction(Transaction) -> Binding<Value>](binding/transaction(_:).md)
+- [func transaction(Transaction) -> Binding<Value>](./transaction%28_%29.md)
   Specifies a transaction for the binding.
-- [var transaction: Transaction](binding/transaction.md)
+- [var transaction: Transaction](./transaction.md)
   The binding’s transaction.
 
 

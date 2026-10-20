@@ -1,7 +1,8 @@
 # AVAudioUInteger
 
 **Framework**: Core Audio Types  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An unsigned integer type for audio operations.
 
@@ -20,21 +21,26 @@ An unsigned integer type for audio operations.
 typealias AVAudioUInteger = UInt
 ```
 
+```c
+typedef unsigned long AVAudioUInteger;
+```
+
 ## See Also
 
-- [typealias AVAudioInteger](avaudiointeger.md)
+### Common Types
+- [typealias AVAudioInteger](./avaudiointeger.md)
   An integer type for audio operations.
-- [typealias AudioSessionID](audiosessionid.md)
+- [typealias AudioSessionID](./audiosessionid.md)
   A unique identifier of an audio session.
-- [var kAudioUnitSampleFractionBits: Int32](kaudiounitsamplefractionbits.md)
+- [var kAudioUnitSampleFractionBits: Int32](./kaudiounitsamplefractionbits.md)
   The number of fractional bits in fixed-point samples.
-- [var COREAUDIOTYPES_VERSION: Int32](coreaudiotypes_version.md)
+- [var COREAUDIOTYPES_VERSION: Int32](./coreaudiotypes_version.md)
   A value that represents the Core Audio Types version.
-- [typealias AudioSampleType](audiosampletype.md)
+- [typealias AudioSampleType](./audiosampletype.md)
   The canonical audio data sample type for input and output.
-- [typealias AudioUnitSampleType](audiounitsampletype.md)
+- [typealias AudioUnitSampleType](./audiounitsampletype.md)
   The canonical audio data sample type for audio processing.
-- [struct AudioFormatListItem](audioformatlistitem.md)
+- [struct AudioFormatListItem](./audioformatlistitem.md)
 
 
 ---

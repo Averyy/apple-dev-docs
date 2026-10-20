@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates a texture resource from a low-level texture.
 
@@ -18,6 +19,13 @@ Asynchronously creates a texture resource from a low-level texture.
 ```swift
 @MainActor
 @preconcurrency convenience init(from texture: LowLevelTexture) async throws
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(from texture: LowLevelTexture) throws
 ```
 
 ## Parameters

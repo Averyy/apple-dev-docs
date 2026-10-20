@@ -1,12 +1,13 @@
 # NSSplitView.AutosaveName
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that specifies the split view’s autosave name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The type that specifies the split view’s autosave name.
 typealias AutosaveName = String
 ```
 
+```c
+typedef NSString * NSSplitViewAutosaveName;
+```
+
 ## See Also
 
-- [var autosaveName: NSSplitView.AutosaveName?](nssplitview/autosavename-swift.property.md)
+### Saving Subview Positions
+- [var autosaveName: NSSplitView.AutosaveName?](./autosavename-swift.property.md)
   The name to use when the system automatically saves the split view’s divider configuration.
 
 

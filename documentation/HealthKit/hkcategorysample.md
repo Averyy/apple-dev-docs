@@ -1,7 +1,8 @@
 # HKCategorySample
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sample with values from a short list of possible values.
 
@@ -19,110 +20,115 @@ A sample with values from a short list of possible values.
 class HKCategorySample
 ```
 
+```objc
+@interface HKCategorySample : HKSample
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
+- [Recording and querying menopausal state](./recording-and-querying-menopausal-state.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
 #### Overview
 
-You can use category samples to record data associated with a [`HKCategoryType`](hkcategorytype.md). The value for the sample must come from the appropriate category value enumeration. Each category type uses its own enumeration. Individual samples represent a value and time period. Samples with different values may have overlapping time intervals.
+You can use category samples to record data associated with a [`HKCategoryType`](./hkcategorytype.md). The value for the sample must come from the appropriate category value enumeration. Each category type uses its own enumeration. Individual samples represent a value and time period. Samples with different values may have overlapping time intervals.
 
-The [`HKCategorySample`](hkcategorysample.md) class is a concrete subclass of the [`HKSample`](hksample.md) class. Category samples are immutable: You set the sample’s properties when you create it, and they can’t change.
+The [`HKCategorySample`](./hkcategorysample.md) class is a concrete subclass of the [`HKSample`](./hksample.md) class. Category samples are immutable: You set the sample’s properties when you create it, and they can’t change.
 
 ##### Extend Category Samples
 
 Like many HealthKit classes, don’t subclass the `HKCategorySample` class. You may extend the `HKCategorySample` class by adding metadata with custom keys as appropriate for your app.
 
-For more information, see [`init(type:value:start:end:metadata:)`](hkcategorysample/init(type:value:start:end:metadata:).md).
+For more information, see [`init(type:value:start:end:metadata:)`](./hkcategorysample/init%28type,value,start,end,metadata%29.md).
 
 ## Topics
 
 ### Creating Category Samples
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date)](hkcategorysample/init(type:value:start:end:).md)
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date)](./hkcategorysample/init%28type,value,start,end%29.md)
   Creates a newly instantiated category sample.
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, metadata: [String : Any]?)](hkcategorysample/init(type:value:start:end:metadata:).md)
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, metadata: [String : Any]?)](./hkcategorysample/init%28type,value,start,end,metadata%29.md)
   Creates a newly instantiated category sample with the provided metadata.
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](hkcategorysample/init(type:value:start:end:device:metadata:).md)
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](./hkcategorysample/init%28type,value,start,end,device,metadata%29.md)
   Creates a newly instantiated category sample including the provided device and metadata.
 ### Getting Property Data
-- [var categoryType: HKCategoryType](hkcategorysample/categorytype.md)
+- [var categoryType: HKCategoryType](./hkcategorysample/categorytype.md)
   The category type for this sample.
-- [var value: Int](hkcategorysample/value.md)
+- [var value: Int](./hkcategorysample/value.md)
   The category value for this sample.
 ### Assigning Values
-- [enum HKCategoryValue](hkcategoryvalue.md)
+- [enum HKCategoryValue](./hkcategoryvalue.md)
   Categories that are undefined.
-- [enum HKCategoryValueCervicalMucusQuality](hkcategoryvaluecervicalmucusquality.md)
+- [enum HKCategoryValueCervicalMucusQuality](./hkcategoryvaluecervicalmucusquality.md)
   Categories that represent the user’s cervical mucus quality.
-- [enum HKCategoryValueMenstrualFlow](hkcategoryvaluemenstrualflow.md)
+- [enum HKCategoryValueMenstrualFlow](./hkcategoryvaluemenstrualflow.md)
   Categories that indicate the amount of menstrual flow for a given sample.
-- [enum HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult.md)
+- [enum HKCategoryValueOvulationTestResult](./hkcategoryvalueovulationtestresult.md)
   Categories that represent the result of an ovulation home test.
-- [enum HKCategoryValueContraceptive](hkcategoryvaluecontraceptive.md)
+- [enum HKCategoryValueContraceptive](./hkcategoryvaluecontraceptive.md)
   The type of contraceptive.
-- [enum HKCategoryValueSleepAnalysis](hkcategoryvaluesleepanalysis.md)
+- [enum HKCategoryValueSleepAnalysis](./hkcategoryvaluesleepanalysis.md)
   Categories that represent the result of a sleep analysis.
-- [enum HKCategoryValueAppetiteChanges](hkcategoryvalueappetitechanges.md)
+- [enum HKCategoryValueAppetiteChanges](./hkcategoryvalueappetitechanges.md)
   Categories that represent change in appetite.
-- [enum HKCategoryValuePresence](hkcategoryvaluepresence.md)
+- [enum HKCategoryValuePresence](./hkcategoryvaluepresence.md)
   Categories that indicate whether a symptom is present.
-- [enum HKCategoryValueSeverity](hkcategoryvalueseverity.md)
+- [enum HKCategoryValueSeverity](./hkcategoryvalueseverity.md)
   Categories that represent the severity of a symptom.
-- [enum HKCategoryValueEnvironmentalAudioExposureEvent](hkcategoryvalueenvironmentalaudioexposureevent.md)
+- [enum HKCategoryValueEnvironmentalAudioExposureEvent](./hkcategoryvalueenvironmentalaudioexposureevent.md)
   Exposure events for environmental audio.
-- [enum HKCategoryValueHeadphoneAudioExposureEvent](hkcategoryvalueheadphoneaudioexposureevent.md)
+- [enum HKCategoryValueHeadphoneAudioExposureEvent](./hkcategoryvalueheadphoneaudioexposureevent.md)
   Exposure events for headphone audio.
-- [enum HKCategoryValueLowCardioFitnessEvent](hkcategoryvaluelowcardiofitnessevent.md)
+- [enum HKCategoryValueLowCardioFitnessEvent](./hkcategoryvaluelowcardiofitnessevent.md)
   A value that indicates a low-level cardio fitness event.
-- [enum HKAppleWalkingSteadinessClassification](hkapplewalkingsteadinessclassification.md)
+- [enum HKAppleWalkingSteadinessClassification](./hkapplewalkingsteadinessclassification.md)
   A classification of a score based on the steadiness of the user’s gait.
-- [enum HKCategoryValueAppleWalkingSteadinessEvent](hkcategoryvalueapplewalkingsteadinessevent.md)
+- [enum HKCategoryValueAppleWalkingSteadinessEvent](./hkcategoryvalueapplewalkingsteadinessevent.md)
   The value of an event triggered by a reduced score for the steadiness of the user’s gait.
-- [enum HKCategoryValuePregnancyTestResult](hkcategoryvaluepregnancytestresult.md)
+- [enum HKCategoryValuePregnancyTestResult](./hkcategoryvaluepregnancytestresult.md)
   Category values that indicate the results of a home pregnancy test.
-- [enum HKCategoryValueProgesteroneTestResult](hkcategoryvalueprogesteronetestresult.md)
+- [enum HKCategoryValueProgesteroneTestResult](./hkcategoryvalueprogesteronetestresult.md)
   A category value that indicates the result from a home progesterone test.
-- [enum HKCategoryValueAudioExposureEvent](hkcategoryvalueaudioexposureevent.md)
+- [enum HKCategoryValueAudioExposureEvent](./hkcategoryvalueaudioexposureevent.md)
   Categories that indicate audio exposure events.
 ### Specifying Predicate Key Paths
-- [let HKPredicateKeyPathCategoryValue: String](hkpredicatekeypathcategoryvalue.md)
+- [let HKPredicateKeyPathCategoryValue: String](./hkpredicatekeypathcategoryvalue.md)
   The key path for accessing the category sample’s value.
 ### Initializers
-- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date)](hkcategorysample/init(type:value:startdate:enddate:).md)
-- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](hkcategorysample/init(type:value:startdate:enddate:device:metadata:).md)
-- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, metadata: [String : Any]?)](hkcategorysample/init(type:value:startdate:enddate:metadata:).md)
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date)](./hkcategorysample/init%28type,value,startdate,enddate%29.md)
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](./hkcategorysample/init%28type,value,startdate,enddate,device,metadata%29.md)
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, metadata: [String : Any]?)](./hkcategorysample/init%28type,value,startdate,enddate,metadata%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKCumulativeQuantitySample](hkcumulativequantitysample.md)
+### Basic samples
+- [class HKCumulativeQuantitySample](./hkcumulativequantitysample.md)
   A sample that represents a cumulative quantity.
-- [class HKDiscreteQuantitySample](hkdiscretequantitysample.md)
+- [class HKDiscreteQuantitySample](./hkdiscretequantitysample.md)
   A sample that represents a discrete quantity.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](./hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKCorrelation](hkcorrelation.md)
+- [class HKCorrelation](./hkcorrelation.md)
   A sample that groups multiple related samples into a single entry.
-- [Units and quantities](units-and-quantities.md)
+- [Units and quantities](./units-and-quantities.md)
   Objects used to specify a quantity for a given unit, and to convert between units.
-- [Metadata Keys](metadata-keys.md)
+- [Metadata Keys](./metadata-keys.md)
   Constants used to add metadata to objects stored in HealthKit.
 
 

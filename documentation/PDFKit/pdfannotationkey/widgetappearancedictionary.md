@@ -1,7 +1,8 @@
 # widgetAppearanceDictionary
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dictionary or appearance characteristic object that contains properties for controlling the widget’s visual appearance.
 
@@ -19,39 +20,44 @@ A dictionary or appearance characteristic object that contains properties for co
 static let widgetAppearanceDictionary: PDFAnnotationKey
 ```
 
+```c
+extern PDFAnnotationKey PDFAnnotationKeyWidgetAppearanceDictionary;
+```
+
 #### Discussion
 
-For details about widget appearance characteristic objects, see [`PDFAppearanceCharacteristics`](pdfappearancecharacteristics.md).
+For details about widget appearance characteristic objects, see [`PDFAppearanceCharacteristics`](../pdfappearancecharacteristics.md).
 
 ## See Also
 
-- [static let widgetBackgroundColor: PDFAnnotationKey](pdfannotationkey/widgetbackgroundcolor.md)
+### Configuring Widget Annotations
+- [static let widgetBackgroundColor: PDFAnnotationKey](./widgetbackgroundcolor.md)
   An array of floating point values or a PDF color object that specifies the widget’s background color.
-- [static let widgetBorderColor: PDFAnnotationKey](pdfannotationkey/widgetbordercolor.md)
+- [static let widgetBorderColor: PDFAnnotationKey](./widgetbordercolor.md)
   An array of floating point values or a PDF color object that specifies the widget’s border color.
-- [static let widgetCaption: PDFAnnotationKey](pdfannotationkey/widgetcaption.md)
+- [static let widgetCaption: PDFAnnotationKey](./widgetcaption.md)
   A string that a push button widget displays when it isn’t in a pressed state.
-- [static let widgetDefaultValue: PDFAnnotationKey](pdfannotationkey/widgetdefaultvalue.md)
+- [static let widgetDefaultValue: PDFAnnotationKey](./widgetdefaultvalue.md)
   A default value for the widget.
-- [static let widgetDownCaption: PDFAnnotationKey](pdfannotationkey/widgetdowncaption.md)
+- [static let widgetDownCaption: PDFAnnotationKey](./widgetdowncaption.md)
   A string that a push button widgets displays when it’s in a pressed state.
-- [static let widgetFieldFlags: PDFAnnotationKey](pdfannotationkey/widgetfieldflags.md)
+- [static let widgetFieldFlags: PDFAnnotationKey](./widgetfieldflags.md)
   An integer value that specifies flags for a widget.
-- [static let widgetFieldType: PDFAnnotationKey](pdfannotationkey/widgetfieldtype.md)
+- [static let widgetFieldType: PDFAnnotationKey](./widgetfieldtype.md)
   A string that specifies the type of widget, such as button, checkbox, or signature field.
-- [static let widgetMaxLen: PDFAnnotationKey](pdfannotationkey/widgetmaxlen.md)
+- [static let widgetMaxLen: PDFAnnotationKey](./widgetmaxlen.md)
   An integer value that specifies the maximum length of a text field, in characters.
-- [static let widgetOptions: PDFAnnotationKey](pdfannotationkey/widgetoptions.md)
+- [static let widgetOptions: PDFAnnotationKey](./widgetoptions.md)
   An array that specifies the options to present in radio buttons or choice lists.
-- [static let widgetRolloverCaption: PDFAnnotationKey](pdfannotationkey/widgetrollovercaption.md)
+- [static let widgetRolloverCaption: PDFAnnotationKey](./widgetrollovercaption.md)
   A string that push button widgets display when the pointer is over the button, but not clicking it.
-- [static let widgetRotation: PDFAnnotationKey](pdfannotationkey/widgetrotation.md)
+- [static let widgetRotation: PDFAnnotationKey](./widgetrotation.md)
   An integer value that specifies the rotation of the widget.
-- [static let widgetTextLabelUI: PDFAnnotationKey](pdfannotationkey/widgettextlabelui.md)
+- [static let widgetTextLabelUI: PDFAnnotationKey](./widgettextlabelui.md)
   A user-visible alternative field name that identifies the widget, typically for accessibility purposes.
-- [static let widgetValue: PDFAnnotationKey](pdfannotationkey/widgetvalue.md)
+- [static let widgetValue: PDFAnnotationKey](./widgetvalue.md)
   The widget’s value, typically for text and choice widgets.
-- [struct PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype.md)
+- [struct PDFAnnotationWidgetSubtype](../pdfannotationwidgetsubtype.md)
 
 
 ---

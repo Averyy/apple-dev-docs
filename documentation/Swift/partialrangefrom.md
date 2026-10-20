@@ -1,7 +1,8 @@
 # PartialRangeFrom
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A partial interval extending upward from a lower bound.
 
@@ -48,7 +49,7 @@ print(numbers[3...])
 // Prints "[40, 50, 60, 70]"
 ```
 
-#### Using a Partial Range As a Sequence
+#### Using a Partial Range as a Sequence
 
 When a partial range uses integers as its lower and upper bounds, or any other type that conforms to the `Strideable` protocol with an integer stride, you can use that range in a `for`-`in` loop or with any sequence method that doesn’t require that the sequence is finite. The elements of a partial range are the consecutive values from its lower bound continuing upward indefinitely.
 
@@ -93,44 +94,45 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 ## Topics
 
 ### Initializers
-- [init(Bound)](partialrangefrom/init(_:).md)
+- [init(Bound)](./partialrangefrom/init%28_%29.md)
 ### Instance Properties
-- [let lowerBound: Bound](partialrangefrom/lowerbound.md)
+- [let lowerBound: Bound](./partialrangefrom/lowerbound.md)
 ### Default Implementations
-- [Decodable Implementations](partialrangefrom/decodable-implementations.md)
-- [Encodable Implementations](partialrangefrom/encodable-implementations.md)
-- [RangeExpression Implementations](partialrangefrom/rangeexpression-implementations.md)
-- [Sequence Implementations](partialrangefrom/sequence-implementations.md)
+- [Decodable Implementations](./partialrangefrom/decodable-implementations.md)
+- [Encodable Implementations](./partialrangefrom/encodable-implementations.md)
+- [RangeExpression Implementations](./partialrangefrom/rangeexpression-implementations.md)
+- [Sequence Implementations](./partialrangefrom/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BNNSGraph.Builder.SliceIndex](../accelerate/bnnsgraph/builder/sliceindex.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Escapable](escapable.md)
-- [MLShapedArrayRangeExpression](../coreml/mlshapedarrayrangeexpression.md)
-- [MLTensorRangeExpression](../coreml/mltensorrangeexpression.md)
-- [NDArray.RangeExpression](../coreai/ndarray/rangeexpression.md)
-- [RangeExpression](rangeexpression.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BNNSGraph.Builder.SliceIndex](../Accelerate/bnnsgraph/builder/sliceindex.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomTestStringConvertible](../Testing/customteststringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Escapable](./escapable.md)
+- [MLShapedArrayRangeExpression](../CoreML/mlshapedarrayrangeexpression.md)
+- [MLTensorRangeExpression](../CoreML/mltensorrangeexpression.md)
+- [NDArray.RangeExpression](../CoreAI/ndarray/rangeexpression.md)
+- [RangeExpression](./rangeexpression.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct PartialRangeUpTo](partialrangeupto.md)
+### Range Expressions
+- [struct PartialRangeUpTo](./partialrangeupto.md)
   A partial half-open interval up to, but not including, an upper bound.
-- [struct PartialRangeThrough](partialrangethrough.md)
+- [struct PartialRangeThrough](./partialrangethrough.md)
   A partial interval up to, and including, an upper bound.
-- [protocol RangeExpression](rangeexpression.md)
+- [protocol RangeExpression](./rangeexpression.md)
   A type that can be used to slice a collection.
-- [enum UnboundedRange_](unboundedrange_.md)
+- [enum UnboundedRange_](./unboundedrange_.md)
   A range expression that represents the entire range of a collection.
 
 

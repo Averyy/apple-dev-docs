@@ -1,14 +1,15 @@
 # tss_procname
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 char tss_procname[65];
 ```
 

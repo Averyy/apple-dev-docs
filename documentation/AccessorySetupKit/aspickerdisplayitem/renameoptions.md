@@ -1,7 +1,8 @@
 # renameOptions
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options to allow renaming a matched accessory.
 
@@ -15,17 +16,22 @@ Options to allow renaming a matched accessory.
 var renameOptions: ASAccessory.RenameOptions { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) ASAccessoryRenameOptions renameOptions;
+```
+
 #### Discussion
 
-To permit renaming, include [`rename`](aspickerdisplayitem/setupoptions-swift.struct/rename.md) in the [`setupOptions`](aspickerdisplayitem/setupoptions-swift.property.md)
+To permit renaming, include [`rename`](./setupoptions-swift.struct/rename.md) in the [`setupOptions`](./setupoptions-swift.property.md)
 
 ## See Also
 
-- [var setupOptions: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.property.md)
+### Customizing setup options
+- [var setupOptions: ASPickerDisplayItem.SetupOptions](./setupoptions-swift.property.md)
   Custom setup options for the accessory.
-- [ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct.md)
+- [ASPickerDisplayItem.SetupOptions](./setupoptions-swift.struct.md)
   Setup options offered by the accessory picker.
-- [ASAccessory.RenameOptions](asaccessory/renameoptions.md)
+- [ASAccessory.RenameOptions](../asaccessory/renameoptions.md)
   Options that affect the behavior of an accessory renaming operation.
 
 

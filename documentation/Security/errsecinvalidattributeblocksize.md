@@ -1,7 +1,8 @@
 # errSecInvalidAttributeBlockSize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A block size attribute is not valid.
 
@@ -18,6 +19,10 @@ A block size attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeBlockSize: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeBlockSize
 ```
 
 

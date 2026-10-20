@@ -1,20 +1,22 @@
 # kIOUSBInterfaceSuspendRemoteWakeEnable
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBInterfaceSuspendRemoteWakeEnable
 ```
 
 ## See Also
 
-- [kIOUSBInterfaceSuspendLowPower](kiousbinterfacesuspendlowpower.md)
+### Getting the Options
+- [kIOUSBInterfaceSuspendLowPower](./kiousbinterfacesuspendlowpower.md)
 
 
 ---

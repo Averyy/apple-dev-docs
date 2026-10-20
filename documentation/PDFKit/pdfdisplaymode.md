@@ -1,7 +1,8 @@
 # PDFDisplayMode
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A wrapper for the chosen display mode constant.
 
@@ -19,39 +20,44 @@ A wrapper for the chosen display mode constant.
 enum PDFDisplayMode
 ```
 
+```c
+enum PDFDisplayMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PDFDisplayMode.singlePage](pdfdisplaymode/singlepage.md)
+- [PDFDisplayMode.singlePage](./pdfdisplaymode/singlepage.md)
   A display mode where the document displays one page at a time horizontally and vertically.
-- [PDFDisplayMode.singlePageContinuous](pdfdisplaymode/singlepagecontinuous.md)
+- [PDFDisplayMode.singlePageContinuous](./pdfdisplaymode/singlepagecontinuous.md)
   A display mode where the document displays in continuous mode vertically, with single-page width horizontally.
-- [PDFDisplayMode.twoUp](pdfdisplaymode/twoup.md)
+- [PDFDisplayMode.twoUp](./pdfdisplaymode/twoup.md)
   A display mode where the document displays two pages side-by-side.
-- [PDFDisplayMode.twoUpContinuous](pdfdisplaymode/twoupcontinuous.md)
+- [PDFDisplayMode.twoUpContinuous](./pdfdisplaymode/twoupcontinuous.md)
   A display mode where the document displays in continuous mode vertically and displays two pages side-by-side horizontally.
 ### Initializers
-- [init?(rawValue: Int)](pdfdisplaymode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfdisplaymode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var displayMode: PDFDisplayMode](pdfview/displaymode.md)
+### Working with Display Modes and Characteristics
+- [var displayMode: PDFDisplayMode](./pdfview/displaymode.md)
   The current display mode.
-- [Additional Display Configurations](additional-display-configurations.md)
+- [Additional Display Configurations](./additional-display-configurations.md)
   Operations for setting up page breaks, a display box, and display direction.
-- [Book Display](book-display.md)
+- [Book Display](./book-display.md)
   Operations to setup a book display for a PDF view.
-- [Graphics Properties](graphics-properties.md)
+- [Graphics Properties](./graphics-properties.md)
   Operations to define the background color, antialiasing, and greeking for a PDF view.
 
 

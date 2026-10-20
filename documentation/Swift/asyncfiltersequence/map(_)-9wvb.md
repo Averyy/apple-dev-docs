@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous sequence that maps the given error-throwing closure over the asynchronous sequence’s elements.
 

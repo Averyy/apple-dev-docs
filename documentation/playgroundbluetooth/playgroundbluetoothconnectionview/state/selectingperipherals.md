@@ -1,7 +1,8 @@
 # PlaygroundBluetoothConnectionView.State.selectingPeripherals
 
 **Framework**: Playground Bluetooth  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 One or more peripherals have been discovered and can be selected.
 

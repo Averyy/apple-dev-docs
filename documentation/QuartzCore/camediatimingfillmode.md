@@ -1,7 +1,8 @@
 # CAMediaTimingFillMode
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 2.0+
@@ -17,46 +18,51 @@
 struct CAMediaTimingFillMode
 ```
 
+```c
+typedef NSString * CAMediaTimingFillMode;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](camediatimingfillmode/init(rawvalue:).md)
+- [init(rawValue: String)](./camediatimingfillmode/init%28rawvalue%29.md)
 ### Type Properties
-- [static let backwards: CAMediaTimingFillMode](camediatimingfillmode/backwards.md)
+- [static let backwards: CAMediaTimingFillMode](./camediatimingfillmode/backwards.md)
   The receiver clamps values before zero to zero when the animation is completed.
-- [static let both: CAMediaTimingFillMode](camediatimingfillmode/both.md)
+- [static let both: CAMediaTimingFillMode](./camediatimingfillmode/both.md)
   The receiver clamps values at both ends of the object’s time space
-- [static let forwards: CAMediaTimingFillMode](camediatimingfillmode/forwards.md)
+- [static let forwards: CAMediaTimingFillMode](./camediatimingfillmode/forwards.md)
   The receiver remains visible in its final state when the animation is completed.
-- [static let removed: CAMediaTimingFillMode](camediatimingfillmode/removed.md)
+- [static let removed: CAMediaTimingFillMode](./camediatimingfillmode/removed.md)
   The receiver is removed from the presentation when the animation is completed.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CAAnimationCalculationMode](caanimationcalculationmode.md)
-- [struct CAAnimationRotationMode](caanimationrotationmode.md)
-- [struct CAEmitterLayerEmitterMode](caemitterlayeremittermode.md)
-- [struct CAEmitterLayerEmitterShape](caemitterlayeremittershape.md)
-- [struct CAEmitterLayerRenderMode](caemitterlayerrendermode.md)
-- [struct CAGradientLayerType](cagradientlayertype.md)
-- [struct CALayerContentsFilter](calayercontentsfilter.md)
-- [struct CALayerContentsFormat](calayercontentsformat.md)
-- [struct CALayerContentsGravity](calayercontentsgravity.md)
-- [struct CALayerCornerCurve](calayercornercurve.md)
-- [struct CAMediaTimingFunctionName](camediatimingfunctionname.md)
-- [struct CAScrollLayerScrollMode](cascrolllayerscrollmode.md)
-- [struct CAShapeLayerFillRule](cashapelayerfillrule.md)
-- [struct CAShapeLayerLineCap](cashapelayerlinecap.md)
-- [struct CAShapeLayerLineJoin](cashapelayerlinejoin.md)
+### Data Types
+- [struct CAAnimationCalculationMode](./caanimationcalculationmode.md)
+- [struct CAAnimationRotationMode](./caanimationrotationmode.md)
+- [struct CAEmitterLayerEmitterMode](./caemitterlayeremittermode.md)
+- [struct CAEmitterLayerEmitterShape](./caemitterlayeremittershape.md)
+- [struct CAEmitterLayerRenderMode](./caemitterlayerrendermode.md)
+- [struct CAGradientLayerType](./cagradientlayertype.md)
+- [struct CALayerContentsFilter](./calayercontentsfilter.md)
+- [struct CALayerContentsFormat](./calayercontentsformat.md)
+- [struct CALayerContentsGravity](./calayercontentsgravity.md)
+- [struct CALayerCornerCurve](./calayercornercurve.md)
+- [struct CAMediaTimingFunctionName](./camediatimingfunctionname.md)
+- [struct CAScrollLayerScrollMode](./cascrolllayerscrollmode.md)
+- [struct CAShapeLayerFillRule](./cashapelayerfillrule.md)
+- [struct CAShapeLayerLineCap](./cashapelayerlinecap.md)
+- [struct CAShapeLayerLineJoin](./cashapelayerlinejoin.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # minimumTLSVersion
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum TLS version to allow for EAP-TLS authentication.
 
@@ -19,15 +20,20 @@ The minimum TLS version to allow for EAP-TLS authentication.
 var minimumTLSVersion: NEVPNIKEv2TLSVersion { get set }
 ```
 
+```objc
+@property NEVPNIKEv2TLSVersion minimumTLSVersion;
+```
+
 #### Discussion
 
-The default value of this property is [`NEVPNIKEv2TLSVersion.versionDefault`](nevpnikev2tlsversion/versiondefault.md).
+The default value of this property is [`NEVPNIKEv2TLSVersion.versionDefault`](../nevpnikev2tlsversion/versiondefault.md).
 
 ## See Also
 
-- [var maximumTLSVersion: NEVPNIKEv2TLSVersion](nevpnprotocolikev2/maximumtlsversion.md)
+### Accessing TLS version properties
+- [var maximumTLSVersion: NEVPNIKEv2TLSVersion](./maximumtlsversion.md)
   The minimum TLS version to allow for EAP-TLS authentication.
-- [enum NEVPNIKEv2TLSVersion](nevpnikev2tlsversion.md)
+- [enum NEVPNIKEv2TLSVersion](../nevpnikev2tlsversion.md)
   An enumeration of TLS Versions for use in EAP-TLS.
 
 

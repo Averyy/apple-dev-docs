@@ -1,7 +1,8 @@
 # HKHeartRateMotionContext.notSet
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating that the user’s activity level could not be determined.
 
@@ -19,15 +20,20 @@ A value indicating that the user’s activity level could not be determined.
 case notSet
 ```
 
+```c
+HKHeartRateMotionContextNotSet
+```
+
 #### Discussion
 
-This value is identical to the sample’s metadata not containing a [`HKMetadataKeyHeartRateMotionContext`](hkmetadatakeyheartratemotioncontext.md) key.
+This value is identical to the sample’s metadata not containing a [`HKMetadataKeyHeartRateMotionContext`](../hkmetadatakeyheartratemotioncontext.md) key.
 
 ## See Also
 
-- [HKHeartRateMotionContext.active](hkheartratemotioncontext/active.md)
+### Motion Contextes
+- [HKHeartRateMotionContext.active](./active.md)
   A value indicating that the user was in motion during the heart rate sample.
-- [HKHeartRateMotionContext.sedentary](hkheartratemotioncontext/sedentary.md)
+- [HKHeartRateMotionContext.sedentary](./sedentary.md)
   A value indicating that the user has been still for at least 5 minutes prior to the heart rate sample.
 
 

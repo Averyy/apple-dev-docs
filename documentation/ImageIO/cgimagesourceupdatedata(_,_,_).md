@@ -1,7 +1,8 @@
 # CGImageSourceUpdateData(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Updates the data in an incremental image source.
 
@@ -20,6 +21,10 @@ Updates the data in an incremental image source.
 func CGImageSourceUpdateData(_ isrc: CGImageSource, _ data: CFData, _ final: Bool)
 ```
 
+```c
+extern void CGImageSourceUpdateData(CGImageSourceRef isrc, CFDataRef data, bool final);
+```
+
 #### Discussion
 
 This method updates the state of the image source and its contained images. Call this method one or more times to update the contents of an incremental data source. Each time you call the method, you must specify all of the accumulated image data, not just the new data you received.
@@ -32,7 +37,8 @@ This method updates the state of the image source and its contained images. Call
 
 ## See Also
 
-- [func CGImageSourceUpdateDataProvider(CGImageSource, CGDataProvider, Bool)](cgimagesourceupdatedataprovider(_:_:_:).md)
+### Updating an Incremental Image
+- [func CGImageSourceUpdateDataProvider(CGImageSource, CGDataProvider, Bool)](./cgimagesourceupdatedataprovider%28_,_,_%29.md)
   Updates an incremental image source with a new data provider.
 
 

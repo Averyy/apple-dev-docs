@@ -1,7 +1,8 @@
 # shouldBypassEffect
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether an effect should route input directly to output, without any processing.
 
@@ -19,21 +20,34 @@ Determines whether an effect should route input directly to output, without any 
 var shouldBypassEffect: Bool { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic) BOOL shouldBypassEffect;
+```
+
+*macOS*
+
+```objc
+@property (atomic) BOOL shouldBypassEffect;
+```
+
 #### Discussion
 
 This version 3 property is bridged to the version 2 `kAudioUnitProperty_BypassEffect` API.
 
 ## See Also
 
-- [var latency: TimeInterval](auaudiounit/latency.md)
+### Optimizing Performance
+- [var latency: TimeInterval](./latency.md)
   The audio unit’s processing latency, in seconds.
-- [var tailTime: TimeInterval](auaudiounit/tailtime.md)
+- [var tailTime: TimeInterval](./tailtime.md)
   The audio unit’s tail time, in seconds.
-- [var renderQuality: Int](auaudiounit/renderquality.md)
+- [var renderQuality: Int](./renderquality.md)
   Provides a trade-off between rendering quality and CPU load.
-- [var canProcessInPlace: Bool](auaudiounit/canprocessinplace.md)
+- [var canProcessInPlace: Bool](./canprocessinplace.md)
   Determines whether an audio unit can process in place.
-- [var isRenderingOffline: Bool](auaudiounit/isrenderingoffline.md)
+- [var isRenderingOffline: Bool](./isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
 
 

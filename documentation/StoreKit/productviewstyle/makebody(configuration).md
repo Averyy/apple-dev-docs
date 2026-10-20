@@ -2,6 +2,7 @@
 
 **Framework**: StoreKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a product view.
@@ -28,9 +29,10 @@ Creates a view that represents the body of a product view.
 
 ## See Also
 
-- [ProductViewStyle.Configuration](productviewstyle/configuration.md)
+### Creating custom product views
+- [ProductViewStyle.Configuration](./configuration.md)
   A type that represents the properties of a product view style.
-- [associatedtype Body : View](productviewstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a product view.
 
 

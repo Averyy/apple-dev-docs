@@ -1,7 +1,8 @@
 # button
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element that represents the button component on the touchpad.
 
@@ -19,9 +20,14 @@ The element that represents the button component on the touchpad.
 var button: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * button;
+```
+
 ## See Also
 
-- [var touchSurface: GCControllerDirectionPad](gccontrollertouchpad/touchsurface.md)
+### Getting the subelements
+- [var touchSurface: GCControllerDirectionPad](./touchsurface.md)
   The element that represents the state of the user’s touch on the surface of the touchpad.
 
 

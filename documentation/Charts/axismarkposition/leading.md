@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Markers on the leading edge of the chart.
 

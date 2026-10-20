@@ -1,7 +1,8 @@
 # discard()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Discards all previously collected data and invalidates the builder.
 
@@ -19,11 +20,16 @@ Discards all previously collected data and invalidates the builder.
 func discard()
 ```
 
+```objc
+- (void) discard;
+```
+
 ## See Also
 
-- [func finishSeries(metadata: [String : Any]?, completion: ([HKQuantitySample]?, (any Error)?) -> Void)](hkquantityseriessamplebuilder/finishseries(metadata:completion:).md)
+### Ending the Collection
+- [func finishSeries(metadata: [String : Any]?, completion: ([HKQuantitySample]?, (any Error)?) -> Void)](./finishseries%28metadata,completion%29.md)
   Finalizes the series and returns the resulting quantity samples.
-- [func finishSeries(metadata: [String : Any]?, endDate: Date?, completion: ([HKQuantitySample]?, (any Error)?) -> Void)](hkquantityseriessamplebuilder/finishseries(metadata:enddate:completion:).md)
+- [func finishSeries(metadata: [String : Any]?, endDate: Date?, completion: ([HKQuantitySample]?, (any Error)?) -> Void)](./finishseries%28metadata,enddate,completion%29.md)
   Finalizes the series with the provided end date, and returns the resulting quantity samples.
 
 

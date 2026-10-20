@@ -1,7 +1,8 @@
 # IORWLockAlloc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allocates and initializes a read/write lock.
 
@@ -11,11 +12,19 @@ Allocates and initializes a read/write lock.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+struct IORWLock * IORWLockAlloc(void);
+```
+
+*macOS*
+
+```c
 IORWLock * IORWLockAlloc(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Pointer to the allocated lock, or zero on failure.
 
@@ -25,19 +34,20 @@ Allocates and initializes a read/write lock in general purpose memory. Read/writ
 
 ## See Also
 
-- [IORWLockFree](1553003-iorwlockfree.md)
+### Read/Write Locks
+- [IORWLockFree](./api-1553003-iorwlockfree.md)
   Frees a read/write lock.
-- [IORWLockGetMachLock](1553033-iorwlockgetmachlock.md)
+- [IORWLockGetMachLock](./api-1553033-iorwlockgetmachlock.md)
   Accessor to a Mach read/write lock.
-- [IORWLockRead](1553004-iorwlockread.md)
+- [IORWLockRead](./api-1553004-iorwlockread.md)
   Lock a read/write lock for read.
-- [IORWLockUnlock](1553011-iorwlockunlock.md)
+- [IORWLockUnlock](./api-1553011-iorwlockunlock.md)
   Unlock a read/write lock.
-- [IORWLockWrite](1552996-iorwlockwrite.md)
+- [IORWLockWrite](./api-1552996-iorwlockwrite.md)
   Lock a read/write lock for write.
-- [IORWUnlock](1553027-iorwunlock.md)
-- [IOWriteLock](1552985-iowritelock.md)
-- [IOReadLock](1553022-ioreadlock.md)
+- [IORWUnlock](./api-1553027-iorwunlock.md)
+- [IOWriteLock](./api-1552985-iowritelock.md)
+- [IOReadLock](./api-1553022-ioreadlock.md)
 
 
 ---

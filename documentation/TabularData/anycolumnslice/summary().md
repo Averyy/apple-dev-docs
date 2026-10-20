@@ -1,7 +1,8 @@
 # summary()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a categorical summary of the column slice’s elements.
 

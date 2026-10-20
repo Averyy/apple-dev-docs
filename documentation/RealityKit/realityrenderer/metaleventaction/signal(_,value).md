@@ -1,7 +1,8 @@
 # signal(_:value:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an action that represents signaling event with the value.
 

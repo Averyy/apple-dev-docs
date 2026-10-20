@@ -1,7 +1,8 @@
 # HMMutableCharacteristicThresholdRangeEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that triggers when the value of a characteristic is within a specified range.
 
@@ -19,35 +20,40 @@ A mutable event that triggers when the value of a characteristic is within a spe
 class HMMutableCharacteristicThresholdRangeEvent
 ```
 
+```objc
+@interface HMMutableCharacteristicThresholdRangeEvent : HMCharacteristicThresholdRangeEvent
+```
+
 ## Topics
 
 ### Configuring a characteristic threshold event
-- [var characteristic: HMCharacteristic](hmmutablecharacteristicthresholdrangeevent/characteristic.md)
+- [var characteristic: HMCharacteristic](./hmmutablecharacteristicthresholdrangeevent/characteristic.md)
   The characteristic associated with the event.
-- [var thresholdRange: HMNumberRange](hmmutablecharacteristicthresholdrangeevent/thresholdrange.md)
+- [var thresholdRange: HMNumberRange](./hmmutablecharacteristicthresholdrangeevent/thresholdrange.md)
   The range of the characteristic value that triggers the event.
 
 ## Relationships
 
 ### Inherits From
-- [HMCharacteristicThresholdRangeEvent](hmcharacteristicthresholdrangeevent.md)
+- [HMCharacteristicThresholdRangeEvent](./hmcharacteristicthresholdrangeevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMNumberRange](hmnumberrange.md)
+### Characteristic ranges
+- [class HMNumberRange](./hmnumberrange.md)
   A set of numbers used to specify conditions for characteristic range threshold events.
-- [class HMCharacteristicThresholdRangeEvent](hmcharacteristicthresholdrangeevent.md)
+- [class HMCharacteristicThresholdRangeEvent](./hmcharacteristicthresholdrangeevent.md)
   An event that triggers when the value of a characteristic is within a specified range.
 
 

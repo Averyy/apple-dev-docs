@@ -1,7 +1,8 @@
 # barcodeData
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw barcode data as read from the scanned QR code.
 

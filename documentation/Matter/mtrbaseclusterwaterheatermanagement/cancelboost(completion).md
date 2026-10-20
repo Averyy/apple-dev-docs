@@ -1,7 +1,8 @@
 # cancelBoost(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func cancelBoost(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func cancelBoost() async throws
+```
+
+```objc
+- (void) cancelBoostWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

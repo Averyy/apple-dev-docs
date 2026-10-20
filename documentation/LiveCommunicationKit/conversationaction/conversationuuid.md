@@ -1,7 +1,8 @@
 # conversationUUID
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the action’s associated conversation.
 
@@ -20,13 +21,14 @@ final var conversationUUID: UUID { get }
 
 ## See Also
 
-- [var uuid: UUID](conversationaction/uuid.md)
+### Accessing action attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier that identifies the action.
-- [var timeoutDate: Date](conversationaction/timeoutdate.md)
+- [var timeoutDate: Date](./timeoutdate.md)
   The point in time that marks when the action can’t be completed anymore.
-- [var state: ConversationAction.State](conversationaction/state-swift.property.md)
+- [var state: ConversationAction.State](./state-swift.property.md)
   The action’s current state.
-- [ConversationAction.State](conversationaction/state-swift.enum.md)
+- [ConversationAction.State](./state-swift.enum.md)
   A type that describes the current state of a conversation action.
 
 

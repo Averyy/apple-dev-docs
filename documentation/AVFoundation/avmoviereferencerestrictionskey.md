@@ -1,7 +1,8 @@
 # AVMovieReferenceRestrictionsKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that specifies restrictions for a movie to use when it resolves references to external media data.
 
@@ -19,15 +20,20 @@ A key that specifies restrictions for a movie to use when it resolves references
 let AVMovieReferenceRestrictionsKey: String
 ```
 
+```c
+extern NSString * const AVMovieReferenceRestrictionsKey;
+```
+
 #### Discussion
 
-Specify a value for this key by passing an appropriate [`AVAssetReferenceRestrictions`](avassetreferencerestrictions.md) value, or the logical combination of multiple values.
+Specify a value for this key by passing an appropriate [`AVAssetReferenceRestrictions`](./avassetreferencerestrictions.md) value, or the logical combination of multiple values.
 
 Some movies contain references to media data stored outside the movie’s container, such as in another file. This key specifies a policy to use when the movie encounters these references. If a movie contains one or more references of a type that’s forbidden by the reference restrictions, the loading of the movie properties fails. Additionally, you can’t use that movie instance for playback or processing.
 
 ## See Also
 
-- [let AVMovieShouldSupportAliasDataReferencesKey: String](avmovieshouldsupportaliasdatareferenceskey.md)
+### Options
+- [let AVMovieShouldSupportAliasDataReferencesKey: String](./avmovieshouldsupportaliasdatareferenceskey.md)
   A key that specifies a Boolean value that indicates whether the system parses and resolves alias data references in the movie.
 
 

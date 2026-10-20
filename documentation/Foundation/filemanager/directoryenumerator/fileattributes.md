@@ -1,7 +1,8 @@
 # fileAttributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary with the attributes of the most recently returned file or subdirectory (as referenced by the pathname).
 
@@ -20,15 +21,20 @@ A dictionary with the attributes of the most recently returned file or subdirect
 var fileAttributes: [FileAttributeKey : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,id> * fileAttributes;
+```
+
 #### Discussion
 
-See the description of the [`fileAttributes(atPath:traverseLink:)`](filemanager/fileattributes(atpath:traverselink:).md) method of [`FileManager`](filemanager.md) for details on obtaining the attributes from the dictionary.
+See the description of the [`fileAttributes(atPath:traverseLink:)`](../fileattributes%28atpath,traverselink%29.md) method of [`FileManager`](../../filemanager.md) for details on obtaining the attributes from the dictionary.
 
 ## See Also
 
-- [var directoryAttributes: [FileAttributeKey : Any]?](filemanager/directoryenumerator/directoryattributes.md)
+### Getting File and Directory Attributes
+- [var directoryAttributes: [FileAttributeKey : Any]?](./directoryattributes.md)
   A dictionary with the attributes of the directory at which enumeration started.
-- [var level: Int](filemanager/directoryenumerator/level.md)
+- [var level: Int](./level.md)
   The number of levels deep the current object is in the directory hierarchy being enumerated.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The currently selected audio description track.
@@ -20,7 +21,7 @@ var currentAudioDescriptionOption: AVPlaybackUserInterfaceMediaSelectionOption? 
 
 #### Discussion
 
-Should be one of the options in [`audioDescriptionOptions`](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/audiodescriptionoptions.md).
+Should be one of the options in [`audioDescriptionOptions`](./audiodescriptionoptions.md).
 
 
 ---

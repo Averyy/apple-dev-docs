@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The vertical stacking order of the item in relation to other items in the section.
@@ -17,6 +18,10 @@ The vertical stacking order of the item in relation to other items in the sectio
 
 ```swift
 var zIndex: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSInteger zIndex;
 ```
 
 

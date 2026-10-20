@@ -1,33 +1,34 @@
 # Requesting CarPlay Entitlements
 
-**Framework**: CarPlay
+**Framework**: CarPlay  
+**Role**: Article
 
 Configure your CarPlay-enabled app with the entitlements it requires.
 
 #### Overview
 
-To integrate with CarPlay, you must request the appropriate entitlement for your app’s category at [`CarPlay Contact Us`](https://developer.apple.comhttps://developer.apple.com/contact/carplay) and agree to the CarPlay Entitlement Addendum. Apple reviews each application using predefined criteria. If your request meets the criteria, Apple adds the entitlement to your developer account using managed capabilities. For more information, see [`Provisioning with managed capabilities`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev38c81d4cd).
+To integrate with CarPlay, you must request the appropriate entitlement for your app’s category at [CarPlay Contact Us](https://developer.apple.com/contact/carplay) and agree to the CarPlay Entitlement Addendum. Apple reviews each application using predefined criteria. If your request meets the criteria, Apple adds the entitlement to your developer account using managed capabilities. For more information, see [Provisioning with managed capabilities](https://help.apple.com/developer-account/#/dev38c81d4cd).
 
 After you receive the entitlement, you need to configure your Xcode project to use it, which involves several steps. You create or update an App ID, generate a provisioning profile, and add an `Entitlements.plist` file to your target. Your project’s code signing settings also require minor changes.
 
-> **Note**:  CarPlay-enabled apps are subject to an additional set of App Store Review guidelines. For more information, see the [`CarPlay App Programming Guide`](https://developer.apple.comhttps://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf).
+> **Note**:  CarPlay-enabled apps are subject to an additional set of App Store Review guidelines. For more information, see the [CarPlay App Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf).
 
-##### Add Carplay Capabilities to Your App Id
+##### Add CarPlay Capabilities to Your App ID
 
 Update the App ID of your CarPlay-enabled app to include the necessary CarPlay capabilities by following these steps:
 
-1. Complete the actions in [`Register an App ID`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev1b35d6f83) to create an App ID if you don’t already have one.
-2. Sign in to your [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) account and select Certificates, Identifiers & Profiles.
+1. Complete the actions in [Register an App ID](https://help.apple.com/developer-account/#/dev1b35d6f83) to create an App ID if you don’t already have one.
+2. Sign in to your [Apple Developer](https://developer.apple.com/account/) account and select Certificates, Identifiers & Profiles.
 3. Select Identifiers in the menu on the left.
 4. Select your app’s App ID.
 5. Choose the Additional Capabilities tab.
 6. Enable the CarPlay capabilities that your app requires.
 7. Click the Save button.
-8. Create a new provisioning profile for the updated App ID. For more information, see [`Create a development provisioning profile`](https://developer.apple.comhttps://help.apple.com/developer-account/#/devf2eb157f8).
+8. Create a new provisioning profile for the updated App ID. For more information, see [Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8).
 
-![A screenshot showing the Edit your App ID Configuration page in the developer portal. The Additional Capabilities tab is in a selected state and lists the available CarPlay capabilities. The CarPlay Audio App (CarPlay framework) capability is in an enabled state.](/images/com.apple.carplay/media-3703055@2x.png)
+![A screenshot showing the Edit your App ID Configuration page in the developer portal. The Additional Capabilities tab is in a selected state and lists the available CarPlay capabilities. The CarPlay Audio App (CarPlay framework) capability is in an enabled state.](https://developer.apple.com/tutorials/images/com.apple.carplay/media-3703055@2x.png)
 
-##### Import the Carplay Provisioning Profile
+##### Import the CarPlay Provisioning Profile
 
 Configure your Xcode project to use the new provisioning profile when it code signs your CarPlay-enabled app by following these steps:
 
@@ -74,17 +75,18 @@ In Xcode, use a simulator to build and run your project. After Simulator launche
 
 ## See Also
 
-- [Displaying Content in CarPlay](displaying-content-in-carplay.md)
+### CarPlay Integration
+- [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
   Use scenes to present your app’s content on the vehicle’s built-in screen.
-- [Supporting Previous Versions of iOS](supporting-previous-versions-of-ios.md)
+- [Supporting Previous Versions of iOS](./supporting-previous-versions-of-ios.md)
   Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
-- [Using the CarPlay Simulator](using-the-carplay-simulator.md)
+- [Using the CarPlay Simulator](./using-the-carplay-simulator.md)
   Configure Simulator to run and debug your CarPlay-enabled app.
-- [class CPTemplateApplicationScene](cptemplateapplicationscene.md)
+- [class CPTemplateApplicationScene](./cptemplateapplicationscene.md)
   A CarPlay scene that controls your app’s user interface.
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
-- [class CPSessionConfiguration](cpsessionconfiguration.md)
+- [class CPSessionConfiguration](./cpsessionconfiguration.md)
   An object that provides vehicle properties and configuration for the CarPlay environment.
 
 

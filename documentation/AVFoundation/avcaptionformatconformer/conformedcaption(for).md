@@ -1,7 +1,8 @@
 # conformedCaption(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a caption that conforms to a specific format.
 
@@ -17,6 +18,10 @@ Creates a caption that conforms to a specific format.
 func conformedCaption(for caption: AVCaption) throws -> AVCaption
 ```
 
+```objc
+- (AVCaption *) conformedCaptionForCaption:(AVCaption *) caption error:(NSError **) outError;
+```
+
 #### Return Value
 
 A caption that conforms to the defined caption format.
@@ -27,7 +32,8 @@ A caption that conforms to the defined caption format.
 
 ## See Also
 
-- [var conformsCaptionsToTimeRange: Bool](avcaptionformatconformer/conformscaptionstotimerange.md)
+### Conforming captions
+- [var conformsCaptionsToTimeRange: Bool](./conformscaptionstotimerange.md)
   A Boolean value that indicates whether to conform the time range of a canonical caption.
 
 

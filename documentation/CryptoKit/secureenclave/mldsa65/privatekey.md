@@ -1,7 +1,8 @@
 # SecureEnclave.MLDSA65.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,26 +22,26 @@ struct PrivateKey
 ## Topics
 
 ### Initializers
-- [init(accessControl: SecAccessControl) throws](secureenclave/mldsa65/privatekey/init(accesscontrol:).md)
-- [init(accessControl: SecAccessControl, authenticationContext: LAContext?) throws](secureenclave/mldsa65/privatekey/init(accesscontrol:authenticationcontext:).md)
-- [init<D>(dataRepresentation: D) throws](secureenclave/mldsa65/privatekey/init(datarepresentation:).md)
-- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](secureenclave/mldsa65/privatekey/init(datarepresentation:authenticationcontext:).md)
+- [init(accessControl: SecAccessControl) throws](./privatekey/init%28accesscontrol%29.md)
+- [init(accessControl: SecAccessControl, authenticationContext: LAContext?) throws](./privatekey/init%28accesscontrol,authenticationcontext%29.md)
+- [init<D>(dataRepresentation: D) throws](./privatekey/init%28datarepresentation%29.md)
+- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](./privatekey/init%28datarepresentation,authenticationcontext%29.md)
 ### Instance Properties
-- [let dataRepresentation: Data](secureenclave/mldsa65/privatekey/datarepresentation.md)
+- [let dataRepresentation: Data](./privatekey/datarepresentation.md)
   A data representation of the private key.
-- [let publicKey: MLDSA65.PublicKey](secureenclave/mldsa65/privatekey/publickey.md)
+- [let publicKey: MLDSA65.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Instance Methods
-- [func signature<D>(for: D) throws -> Data](secureenclave/mldsa65/privatekey/signature(for:).md)
+- [func signature<D>(for: D) throws -> Data](./privatekey/signature%28for%29.md)
   Generates a MLDSA65 signature
-- [func signature<D, C>(for: D, context: C) throws -> Data](secureenclave/mldsa65/privatekey/signature(for:context:).md)
+- [func signature<D, C>(for: D, context: C) throws -> Data](./privatekey/signature%28for,context%29.md)
   Generates a MLDSA65 signature, with context
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

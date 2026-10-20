@@ -1,7 +1,8 @@
 # timescale
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier’s timescale is the number of uniquely identifiable timestamps in a second.
 
@@ -26,13 +27,14 @@ For example an audio file sampled at 44,100 Hz should have a timescale value of 
 
 ## See Also
 
-- [var durationInSeconds: TimeInterval](temporalsegmentidentifier/durationinseconds.md)
+### Getting the properties
+- [var durationInSeconds: TimeInterval](./durationinseconds.md)
   The segment duration in seconds.
-- [var range: Range<Int>](temporalsegmentidentifier/range.md)
+- [var range: Range<Int>](./range.md)
   The segment’s timestamp range.
-- [var rangeInSeconds: Range<TimeInterval>](temporalsegmentidentifier/rangeinseconds.md)
+- [var rangeInSeconds: Range<TimeInterval>](./rangeinseconds.md)
   The time range in seconds.
-- [var source: String](temporalsegmentidentifier/source.md)
+- [var source: String](./source.md)
   The segment source. For files use the full path or URL of the file.
 
 

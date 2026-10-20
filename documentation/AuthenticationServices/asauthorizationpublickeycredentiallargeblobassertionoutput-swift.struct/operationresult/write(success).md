@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.write(success:)
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that represents data the system writes to the blob.
 
@@ -24,7 +25,8 @@ case write(success: Bool)
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.read(data:)](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult/read(data:).md)
+### Results
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult.read(data:)](./read%28data%29.md)
   A result that represents data the system reads from the blob.
 
 

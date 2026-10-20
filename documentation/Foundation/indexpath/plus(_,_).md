@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Combines the elements of two index paths into a single index path.
 
@@ -22,7 +23,8 @@ static func + (lhs: IndexPath, rhs: IndexPath) -> IndexPath
 
 ## See Also
 
-- [static func += (inout IndexPath, IndexPath)](indexpath/+=(_:_:).md)
+### Adding Nodes
+- [static func += (inout IndexPath, IndexPath)](./pluseq%28_,_%29.md)
   Appends the elements of another index path to this index path.
 
 

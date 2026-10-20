@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of properties which the resource request will fetch for each music item in the response.
 

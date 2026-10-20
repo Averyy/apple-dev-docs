@@ -1,23 +1,28 @@
 # COMPRESSION_LZ4
 
 **Framework**: Compression  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The LZ4 compression algorithm for fast compression.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var COMPRESSION_LZ4: compression_algorithm { get }
+```
+
+```c
+COMPRESSION_LZ4
 ```
 
 #### Discussion
@@ -34,21 +39,22 @@ If you’re implementing a wrapper for a raw LZ4 decoder, keep in mind that a co
 
 ## See Also
 
-- [var COMPRESSION_LZFSE: compression_algorithm](compression_lzfse.md)
+### Algorithm Constants
+- [var COMPRESSION_LZFSE: compression_algorithm](./compression_lzfse.md)
   The LZFSE compression algorithm, which is recommended for use on Apple platforms.
-- [var COMPRESSION_LZ4_RAW: compression_algorithm](compression_lz4_raw.md)
+- [var COMPRESSION_LZ4_RAW: compression_algorithm](./compression_lz4_raw.md)
   The LZ4 compression algorithm, without frame headers.
-- [var COMPRESSION_LZMA: compression_algorithm](compression_lzma.md)
+- [var COMPRESSION_LZMA: compression_algorithm](./compression_lzma.md)
   The LZMA compression algorithm, which is recommended for high-compression ratio.
-- [var COMPRESSION_ZLIB: compression_algorithm](compression_zlib.md)
+- [var COMPRESSION_ZLIB: compression_algorithm](./compression_zlib.md)
   The zlib compression algorithm, which is recommended for cross-platform compression.
-- [var COMPRESSION_BROTLI: compression_algorithm](compression_brotli.md)
+- [var COMPRESSION_BROTLI: compression_algorithm](./compression_brotli.md)
   The Brotli compression algorithm, which is recommended for text compression.
-- [var COMPRESSION_LZBITMAP: compression_algorithm](compression_lzbitmap.md)
+- [var COMPRESSION_LZBITMAP: compression_algorithm](./compression_lzbitmap.md)
   The LZBITMAP compression algorithm, which is designed to exploit the vector instruction set of current CPUs.
-- [var COMPRESSION_LZMESH: compression_algorithm](compression_lzmesh.md)
+- [var COMPRESSION_LZMESH: compression_algorithm](./compression_lzmesh.md)
   The LZMESH compression algorithm, which is recommended for fast, general-purpose compression on Apple platforms.
-- [var COMPRESSION_LZRAVEN: compression_algorithm](compression_lzraven.md)
+- [var COMPRESSION_LZRAVEN: compression_algorithm](./compression_lzraven.md)
   The LZRAVEN compression algorithm, which is recommended for high-compression ratio with fast decoding on Apple platforms.
 
 

@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedReleaseResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify the phased release schedule for an App Store version.
 
@@ -10,7 +11,7 @@ The response body for endpoints that create, read, or modify the phased release 
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedReleaseResponse
 ```
 
@@ -21,15 +22,16 @@ object AppStoreVersionPhasedReleaseResponse
 
 ## See Also
 
-- [object AppStoreVersionPhasedRelease](appstoreversionphasedrelease.md)
+### Objects and Data Types
+- [object AppStoreVersionPhasedRelease](./appstoreversionphasedrelease.md)
   The data structure that represent an App Store Version Phased Releases resource.
-- [object AppStoreVersionPhasedReleaseCreateRequest](appstoreversionphasedreleasecreaterequest.md)
+- [object AppStoreVersionPhasedReleaseCreateRequest](./appstoreversionphasedreleasecreaterequest.md)
   The request body you use to create an App Store Version Phased Release.
-- [object AppStoreVersionPhasedReleaseWithoutIncludesResponse](appstoreversionphasedreleasewithoutincludesresponse.md)
+- [object AppStoreVersionPhasedReleaseWithoutIncludesResponse](./appstoreversionphasedreleasewithoutincludesresponse.md)
   A response containing a single phased release configuration, without related resources.
-- [object AppStoreVersionPhasedReleaseUpdateRequest](appstoreversionphasedreleaseupdaterequest.md)
+- [object AppStoreVersionPhasedReleaseUpdateRequest](./appstoreversionphasedreleaseupdaterequest.md)
   The request body you use to update an App Store Version Phased Release.
-- [type PhasedReleaseState](phasedreleasestate.md)
+- [type PhasedReleaseState](./phasedreleasestate.md)
   String that represents the progress of a phased release for an app version.
 
 

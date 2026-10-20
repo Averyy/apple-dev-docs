@@ -1,7 +1,8 @@
 # isPausable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is tracking work that you can pause.
 
@@ -20,35 +21,40 @@ A Boolean value that indicates whether the receiver is tracking work that you ca
 var isPausable: Bool { get set }
 ```
 
+```objc
+@property (getter=isPausable) BOOL pausable;
+```
+
 #### Discussion
 
-By default, [`Progress`](progress.md) objects aren’t pausable.
+By default, [`Progress`](../progress.md) objects aren’t pausable.
 
-You typically use this property to communicate whether controls for pausing appear in a progress-reporting user interface. [`Progress`](progress.md) itself doesn’t do anything with this property other than help pass the value from progress reporters to progress observers.
+You typically use this property to communicate whether controls for pausing appear in a progress-reporting user interface. [`Progress`](../progress.md) itself doesn’t do anything with this property other than help pass the value from progress reporters to progress observers.
 
-If an `NSProgress` is pausable, implement the ability to pause either by setting a block for the [`pausingHandler`](progress/pausinghandler.md) property, or by polling the [`isPaused`](progress/ispaused.md) property periodically while performing the relevant work.
+If an `NSProgress` is pausable, implement the ability to pause either by setting a block for the [`pausingHandler`](./pausinghandler.md) property, or by polling the [`isPaused`](./ispaused.md) property periodically while performing the relevant work.
 
 It’s valid for the value of this property to change during the lifetime of an `NSProgress` object. By default, `NSProgress` is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 
 ## See Also
 
-- [var totalUnitCount: Int64](progress/totalunitcount.md)
+### Reporting Progress
+- [var totalUnitCount: Int64](./totalunitcount.md)
   The total number of tracked units of work for the current progress.
-- [var completedUnitCount: Int64](progress/completedunitcount.md)
+- [var completedUnitCount: Int64](./completedunitcount.md)
   The number of completed units of work for the current job.
-- [var localizedDescription: String!](progress/localizeddescription.md)
+- [var localizedDescription: String!](./localizeddescription.md)
   A localized description of tracked progress for the receiver.
-- [var localizedAdditionalDescription: String!](progress/localizedadditionaldescription.md)
+- [var localizedAdditionalDescription: String!](./localizedadditionaldescription.md)
   A more specific localized description of tracked progress for the receiver.
-- [var isCancellable: Bool](progress/iscancellable.md)
+- [var isCancellable: Bool](./iscancellable.md)
   A Boolean value that indicates whether the receiver is tracking work that you can cancel.
-- [var isCancelled: Bool](progress/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that Indicates whether the receiver is tracking canceled work.
-- [var cancellationHandler: (() -> Void)?](progress/cancellationhandler.md)
+- [var cancellationHandler: (() -> Void)?](./cancellationhandler.md)
   The block to invoke when canceling progress.
-- [var isPaused: Bool](progress/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the receiver is tracking paused work.
-- [var pausingHandler: (() -> Void)?](progress/pausinghandler.md)
+- [var pausingHandler: (() -> Void)?](./pausinghandler.md)
   The block to invoke when pausing progress.
 
 

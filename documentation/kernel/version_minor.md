@@ -1,14 +1,15 @@
 # version_minor
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 const int version_minor;
 ```
 

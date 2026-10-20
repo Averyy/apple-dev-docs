@@ -1,7 +1,8 @@
 # symbolDescriptor
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An abstract representation of a QR Code symbol.
 
@@ -19,13 +20,18 @@ An abstract representation of a QR Code symbol.
 var symbolDescriptor: CIQRCodeDescriptor? { get }
 ```
 
+```objc
+@property (readonly, nullable) CIQRCodeDescriptor * symbolDescriptor;
+```
+
 #### Discussion
 
-The property is a [`CIQRCodeDescriptor`](ciqrcodedescriptor.md) instance that contains the payload, symbol version, mask pattern, and error correction level, so the QR Code can be reproduced.
+The property is a [`CIQRCodeDescriptor`](../ciqrcodedescriptor.md) instance that contains the payload, symbol version, mask pattern, and error correction level, so the QR Code can be reproduced.
 
 ## See Also
 
-- [var messageString: String?](ciqrcodefeature/messagestring.md)
+### Decoding a Detected Barcode
+- [var messageString: String?](./messagestring.md)
   The string decoded from the detected barcode.
 
 

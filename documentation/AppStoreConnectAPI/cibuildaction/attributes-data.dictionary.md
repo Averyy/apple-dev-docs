@@ -1,7 +1,8 @@
 # CiBuildAction.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Build Actions resource.
 
@@ -10,14 +11,14 @@ The attributes that describe a Build Actions resource.
 
 ## Declaration
 
-```swift
+```
 object CiBuildAction.Attributes
 ```
 
 ## Topics
 
 ### Types
-- [type CiActionType](ciactiontype.md)
+- [type CiActionType](../ciactiontype.md)
   A string that represents the type of an Xcode Cloud workflow’s action.
 
 ## Properties
@@ -33,7 +34,8 @@ object CiBuildAction.Attributes
 
 ## See Also
 
-- [object CiBuildAction.Relationships](cibuildaction/relationships-data.dictionary.md)
+### Objects
+- [object CiBuildAction.Relationships](./relationships-data.dictionary.md)
   The relationships of the Build Actions resource you included in the request and those on which you can operate.
 
 

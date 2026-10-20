@@ -1,7 +1,8 @@
 # MetalFrameRateMetric
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric that measures Metal frame rate statistics for a specific `CAMetalLayer`.
 
@@ -19,40 +20,41 @@ struct MetalFrameRateMetric
 
 #### Discussion
 
-This metric corresponds to the [`MetricResult.metalFrameRate(_:)`](metricresult/metalframerate(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
+This metric corresponds to the [`MetricResult.metalFrameRate(_:)`](./metricresult/metalframerate%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 
-Each `MetalFrameRateMetric` corresponds to a single `CAMetalLayer`, identified by [`layerName`](metalframeratemetric/layername.md). When your app has multiple Metal layers, the report may include multiple instances of this metric case, one for each layer.
+Each `MetalFrameRateMetric` corresponds to a single `CAMetalLayer`, identified by [`layerName`](./metalframeratemetric/layername.md). When your app has multiple Metal layers, the report may include multiple instances of this metric case, one for each layer.
 
 ## Topics
 
 ### Frame rate
-- [let framesPerSecond: Measurement<UnitFrequency>](metalframeratemetric/framespersecond.md)
+- [let framesPerSecond: Measurement<UnitFrequency>](./metalframeratemetric/framespersecond.md)
   The frame rate associated with this `CAMetalLayer`
-- [let frameCount: Int](metalframeratemetric/framecount.md)
+- [let frameCount: Int](./metalframeratemetric/framecount.md)
   The total Metal drawable count
-- [let activeDrawingDuration: Measurement<UnitDuration>](metalframeratemetric/activedrawingduration.md)
+- [let activeDrawingDuration: Measurement<UnitDuration>](./metalframeratemetric/activedrawingduration.md)
   The duration of time spent actively producing new frames
 ### Layer
-- [let layerName: String](metalframeratemetric/layername.md)
+- [let layerName: String](./metalframeratemetric/layername.md)
   The `CAMetalLayer` name this metric corresponds to
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GPUTimeMetric](gputimemetric.md)
+### GPU and display metrics
+- [struct GPUTimeMetric](./gputimemetric.md)
   A metric that measures the total GPU time used by the app.
-- [struct PixelLuminanceMetric](pixelluminancemetric.md)
+- [struct PixelLuminanceMetric](./pixelluminancemetric.md)
   A metric that measures the average luminosity of pixels on an OLED display.
-- [class AveragePixelLuminance](averagepixelluminance.md)
+- [class AveragePixelLuminance](./averagepixelluminance.md)
   A unit for average pixel luminance measurements.
 
 

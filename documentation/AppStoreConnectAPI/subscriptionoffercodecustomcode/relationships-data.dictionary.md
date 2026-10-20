@@ -1,7 +1,8 @@
 # SubscriptionOfferCodeCustomCode.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodeCustomCode.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodeCustomCode.Relationships.OfferCode](subscriptionoffercodecustomcode/relationships-data.dictionary/offercode-data.dictionary.md)
+- [object SubscriptionOfferCodeCustomCode.Relationships.OfferCode](./relationships-data.dictionary/offercode-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object SubscriptionOfferCodeCustomCode.Relationships
 
 ## See Also
 
-- [object SubscriptionOfferCodeCustomCode.Attributes](subscriptionoffercodecustomcode/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionOfferCodeCustomCode.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription offer code custom code resource.
 
 

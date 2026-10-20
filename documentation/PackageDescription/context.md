@@ -1,7 +1,8 @@
 # Context
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context information for a Swift package.
 
@@ -21,22 +22,23 @@ The context encapsulates states that are known when Swift Package Manager interp
 ## Topics
 
 ### Type Properties
-- [static var environment: [String : String]](context/environment.md)
+- [static var environment: [String : String]](./context/environment.md)
   Snapshot of the system environment variables.
-- [static var gitInformation: GitInformation?](context/gitinformation.md)
+- [static var gitInformation: GitInformation?](./context/gitinformation.md)
   Information about the git status of a given package, if available.
-- [static var packageDirectory: String](context/packagedirectory.md)
+- [static var packageDirectory: String](./context/packagedirectory.md)
   The directory that contains `Package.swift`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class Package](package.md)
+### Creating a Package
+- [class Package](./package.md)
   The configuration of a Swift package.
 
 

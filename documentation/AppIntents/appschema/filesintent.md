@@ -1,7 +1,8 @@
 # AppSchema.FilesIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the files domain.
 
@@ -21,35 +22,36 @@ protocol FilesIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var createFolder: some AppSchemaIntent](appschema/filesintent/createfolder.md)
+- [var createFolder: some AppSchemaIntent](./filesintent/createfolder.md)
   An intent schema that creates a new folder.
-- [var deleteFiles: some AppSchemaIntent](appschema/filesintent/deletefiles.md)
+- [var deleteFiles: some AppSchemaIntent](./filesintent/deletefiles.md)
   An intent schema that deletes existing files or folders.
-- [var moveFiles: some AppSchemaIntent](appschema/filesintent/movefiles.md)
+- [var moveFiles: some AppSchemaIntent](./filesintent/movefiles.md)
   An intent schema that moves existing files or folders.
-- [var openFile: some AppSchemaIntent](appschema/filesintent/openfile.md)
+- [var openFile: some AppSchemaIntent](./filesintent/openfile.md)
   An intent schema that opens a selected file or folder.
-- [var renameFile: some AppSchemaIntent](appschema/filesintent/renamefile.md)
+- [var renameFile: some AppSchemaIntent](./filesintent/renamefile.md)
   An intent schema that renames an existing file or folder.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var createFolder: some AppSchemaIntent](appschema/filesintent/createfolder.md)
+### Actions
+- [var createFolder: some AppSchemaIntent](./filesintent/createfolder.md)
   An intent schema that creates a new folder.
-- [var deleteFiles: some AppSchemaIntent](appschema/filesintent/deletefiles.md)
+- [var deleteFiles: some AppSchemaIntent](./filesintent/deletefiles.md)
   An intent schema that deletes existing files or folders.
-- [var moveFiles: some AppSchemaIntent](appschema/filesintent/movefiles.md)
+- [var moveFiles: some AppSchemaIntent](./filesintent/movefiles.md)
   An intent schema that moves existing files or folders.
-- [var openFile: some AppSchemaIntent](appschema/filesintent/openfile.md)
+- [var openFile: some AppSchemaIntent](./filesintent/openfile.md)
   An intent schema that opens a selected file or folder.
-- [var renameFile: some AppSchemaIntent](appschema/filesintent/renamefile.md)
+- [var renameFile: some AppSchemaIntent](./filesintent/renamefile.md)
   An intent schema that renames an existing file or folder.
 
 

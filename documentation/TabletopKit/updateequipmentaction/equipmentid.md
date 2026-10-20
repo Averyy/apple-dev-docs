@@ -1,7 +1,8 @@
 # equipmentID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the equipment to update.
 

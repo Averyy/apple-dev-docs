@@ -1,7 +1,8 @@
 # init(fileNamed:rootNode:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init?(fileNamed filename: String, rootNode: any GKSceneRootNodeType)
+```
+
+```objc
++ (instancetype) sceneWithFileNamed:(NSString *) filename rootNode:(id<GKSceneRootNodeType>) rootNode;
 ```
 
 

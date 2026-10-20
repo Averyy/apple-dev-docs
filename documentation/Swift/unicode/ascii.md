@@ -1,7 +1,8 @@
 # Unicode.ASCII
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 8.0+
@@ -22,48 +23,49 @@ enum ASCII
 ## Topics
 
 ### Structures
-- [Unicode.ASCII.Parser](unicode/ascii/parser.md)
+- [Unicode.ASCII.Parser](./ascii/parser.md)
 ### Type Aliases
-- [Unicode.ASCII.CodeUnit](unicode/ascii/codeunit.md)
+- [Unicode.ASCII.CodeUnit](./ascii/codeunit.md)
   The basic unit of encoding
-- [Unicode.ASCII.EncodedScalar](unicode/ascii/encodedscalar.md)
+- [Unicode.ASCII.EncodedScalar](./ascii/encodedscalar.md)
   A valid scalar value as represented in this encoding
-- [Unicode.ASCII.ForwardParser](unicode/ascii/forwardparser.md)
+- [Unicode.ASCII.ForwardParser](./ascii/forwardparser.md)
   A type that can be used to parse `CodeUnits` into `EncodedScalar`s.
-- [Unicode.ASCII.ReverseParser](unicode/ascii/reverseparser.md)
+- [Unicode.ASCII.ReverseParser](./ascii/reverseparser.md)
   A type that can be used to parse a reversed sequence of `CodeUnits` into `EncodedScalar`s.
 ### Type Properties
-- [static var encodedReplacementCharacter: Unicode.ASCII.EncodedScalar](unicode/ascii/encodedreplacementcharacter.md)
+- [static var encodedReplacementCharacter: Unicode.ASCII.EncodedScalar](./ascii/encodedreplacementcharacter.md)
   A unicode scalar value to be used when repairing encoding/decoding errors, as represented in this encoding.
 ### Type Methods
-- [static func decode(Unicode.ASCII.EncodedScalar) -> Unicode.Scalar](unicode/ascii/decode(_:).md)
+- [static func decode(Unicode.ASCII.EncodedScalar) -> Unicode.Scalar](./ascii/decode%28_%29.md)
   Converts from encoded to encoding-independent representation
-- [static func encode(Unicode.Scalar) -> Unicode.ASCII.EncodedScalar?](unicode/ascii/encode(_:).md)
+- [static func encode(Unicode.Scalar) -> Unicode.ASCII.EncodedScalar?](./ascii/encode%28_%29.md)
   Converts from encoding-independent to encoded representation, returning `nil` if the scalar can’t be represented in this encoding.
-- [static func isASCII(Unicode.ASCII.CodeUnit) -> Bool](unicode/ascii/isascii(_:).md)
+- [static func isASCII(Unicode.ASCII.CodeUnit) -> Bool](./ascii/isascii%28_%29.md)
   Returns whether the given code unit represents an ASCII scalar
-- [static func transcode<FromEncoding>(FromEncoding.EncodedScalar, from: FromEncoding.Type) -> Unicode.ASCII.EncodedScalar?](unicode/ascii/transcode(_:from:).md)
+- [static func transcode<FromEncoding>(FromEncoding.EncodedScalar, from: FromEncoding.Type) -> Unicode.ASCII.EncodedScalar?](./ascii/transcode%28_,from%29.md)
   Converts a scalar from another encoding’s representation, returning `nil` if the scalar can’t be represented in this encoding.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [protocol UnicodeCodec](unicodecodec.md)
+### Unicode Codecs
+- [protocol UnicodeCodec](../unicodecodec.md)
   A Unicode encoding form that translates between Unicode scalar values and form-specific code units.
-- [Unicode.UTF8](unicode/utf8.md)
-- [Unicode.UTF16](unicode/utf16.md)
-- [Unicode.UTF32](unicode/utf32.md)
-- [enum UnicodeDecodingResult](unicodedecodingresult.md)
+- [Unicode.UTF8](./utf8.md)
+- [Unicode.UTF16](./utf16.md)
+- [Unicode.UTF32](./utf32.md)
+- [enum UnicodeDecodingResult](../unicodedecodingresult.md)
   The result of one Unicode decoding step.
-- [Unicode.ParseResult](unicode/parseresult.md)
+- [Unicode.ParseResult](./parseresult.md)
   The result of attempting to parse a `T` from some input.
 
 

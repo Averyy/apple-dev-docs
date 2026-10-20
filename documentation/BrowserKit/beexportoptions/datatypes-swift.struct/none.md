@@ -1,7 +1,8 @@
 # none
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A browser data type that indicates the person chooses to export no data.
 
@@ -15,19 +16,24 @@ A browser data type that indicates the person chooses to export no data.
 static var none: BEExportOptions.DataTypes { get }
 ```
 
+```c
+BEExportDataTypesNone
+```
+
 #### Discussion
 
-When [`dataTypes`](beexportoptions/datatypes-swift.property.md) contains this option, don’t proceed with the export.
+When [`dataTypes`](../datatypes-swift.property.md) contains this option, don’t proceed with the export.
 
 ## See Also
 
-- [static var bookmarks: BEExportOptions.DataTypes](beexportoptions/datatypes-swift.struct/bookmarks.md)
+### Identifying browser data types
+- [static var bookmarks: BEExportOptions.DataTypes](./bookmarks.md)
   A data type for webpage bookmarks.
-- [static var extensions: BEExportOptions.DataTypes](beexportoptions/datatypes-swift.struct/extensions.md)
+- [static var extensions: BEExportOptions.DataTypes](./extensions.md)
   A data type for browser extensions.
-- [static var history: BEExportOptions.DataTypes](beexportoptions/datatypes-swift.struct/history.md)
+- [static var history: BEExportOptions.DataTypes](./history.md)
   A data type for page visit history.
-- [static var readingList: BEExportOptions.DataTypes](beexportoptions/datatypes-swift.struct/readinglist.md)
+- [static var readingList: BEExportOptions.DataTypes](./readinglist.md)
   A data type for the person’s reading list.
 
 

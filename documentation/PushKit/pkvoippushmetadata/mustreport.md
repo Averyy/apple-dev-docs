@@ -1,7 +1,8 @@
 # mustReport
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean indicating whether a VoIP app must report a call or live conversation in response to receiving this VoIP notification.
 
@@ -17,6 +18,10 @@ A boolean indicating whether a VoIP app must report a call or live conversation 
 
 ```swift
 var mustReport: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL mustReport;
 ```
 
 

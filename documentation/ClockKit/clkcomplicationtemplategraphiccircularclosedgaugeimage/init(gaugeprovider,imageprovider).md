@@ -1,17 +1,22 @@
 # init(gaugeProvider:imageProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template with a closed circular gauge, and an image in the center.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(gaugeProvider: CLKGaugeProvider, imageProvider: CLKFullColorImageProvider)
+```
+
+```objc
+- (instancetype) initWithGaugeProvider:(CLKGaugeProvider *) gaugeProvider imageProvider:(CLKFullColorImageProvider *) imageProvider;
 ```
 
 ## Parameters

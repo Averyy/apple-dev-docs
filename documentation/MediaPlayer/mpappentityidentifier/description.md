@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 
@@ -11,7 +12,7 @@ A textual representation of this instance.
 - Mac Catalyst 27.0+
 - macOS 27.0+
 - tvOS 27.0+
-- visionOS ?+
+- visionOS
 - watchOS 27.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ override final var description: String { get }
 
 Calling this property directly is discouraged. Instead, convert an instance of any type to a string by using the `String(describing:)` initializer. This initializer works with any type, and uses the custom `description` property for types that conform to `CustomStringConvertible`:
 
-```None
+```
 struct Point: CustomStringConvertible {
     let x: Int, y: Int
 

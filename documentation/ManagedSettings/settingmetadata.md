@@ -1,7 +1,8 @@
 # SettingMetadata
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Additional information about a configurable setting.
 
@@ -19,12 +20,13 @@ struct SettingMetadata<Value>
 ## Topics
 
 ### Getting the default
-- [let defaultValue: Value](settingmetadata/defaultvalue.md)
+- [let defaultValue: Value](./settingmetadata/defaultvalue.md)
   The implicit value for a setting if your app doesn’t set a value.
 
 ## See Also
 
-- [struct BoundedSettingMetadata](boundedsettingmetadata.md)
+### Accessing metadata
+- [struct BoundedSettingMetadata](./boundedsettingmetadata.md)
   Additional information about a bounded setting.
 
 

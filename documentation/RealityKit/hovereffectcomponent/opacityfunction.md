@@ -1,7 +1,8 @@
 # HoverEffectComponent.OpacityFunction
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The blending technique options a hover effect applies to its entity’s base material.
 
@@ -21,20 +22,20 @@ enum OpacityFunction
 ## Topics
 
 ### Enumeration Cases
-- [HoverEffectComponent.OpacityFunction.blend](hovereffectcomponent/opacityfunction/blend.md)
+- [HoverEffectComponent.OpacityFunction.blend](./opacityfunction/blend.md)
   Draws the hover effect with an opacity that’s equal to the product of the entity’s base material and the shader’s output.
-- [HoverEffectComponent.OpacityFunction.full](hovereffectcomponent/opacityfunction/full.md)
+- [HoverEffectComponent.OpacityFunction.full](./opacityfunction/full.md)
   Applies an opaque hover effect and ignores the opacity of the entity’s base material.
-- [HoverEffectComponent.OpacityFunction.mask](hovereffectcomponent/opacityfunction/mask.md)
+- [HoverEffectComponent.OpacityFunction.mask](./opacityfunction/mask.md)
   Applies a hover effect with full opacity when the opacity of the entity’s base material is greater than five percent.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

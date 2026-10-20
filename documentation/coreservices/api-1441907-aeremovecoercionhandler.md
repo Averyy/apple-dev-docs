@@ -1,7 +1,8 @@
 # AERemoveCoercionHandler(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes a coercion handler from a coercion handler dispatch table.
 
@@ -14,9 +15,13 @@ Removes a coercion handler from a coercion handler dispatch table.
 func AERemoveCoercionHandler(_ fromType: DescType, _ toType: DescType, _ handler: AECoercionHandlerUPP!, _ isSysHandler: Bool) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AERemoveCoercionHandler(DescType fromType, DescType toType, AECoercionHandlerUPP handler, Boolean isSysHandler);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
@@ -26,16 +31,17 @@ Use of system coercion tables is not recommended. For more information, see Writ
 
 ## Parameters
 
-- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
-- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
-- `handler`: A universal procedure pointer to the coercion handler to remove. Although the parameters `fromType` and `toType` are sufficient to identify the handler, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the event class and event ID to identify the handler. See [`AECoercionHandlerUPP`](aecoercionhandlerupp.md).
+- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md). See [`DescType`](./desctype.md).
+- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md). See [`DescType`](./desctype.md).
+- `handler`: A universal procedure pointer to the coercion handler to remove. Although the parameters `fromType` and `toType` are sufficient to identify the handler, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the event class and event ID to identify the handler. See [`AECoercionHandlerUPP`](./aecoercionhandlerupp.md).
 - `isSysHandler`: Specifies the coercion table to remove the handler from. Pass `TRUE` to remove the handler from the system coercion table or `FALSE` to remove the handler from your application’s coercion table. Use of the system coercion table is not recommended.
 
 ## See Also
 
-- [func AEGetCoercionHandler(DescType, DescType, UnsafeMutablePointer<AECoercionHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, UnsafeMutablePointer<DarwinBoolean>!, Bool) -> OSErr](1445348-aegetcoercionhandler.md)
+### Managing Coercion Handler Dispatch Tables
+- [func AEGetCoercionHandler(DescType, DescType, UnsafeMutablePointer<AECoercionHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, UnsafeMutablePointer<DarwinBoolean>!, Bool) -> OSErr](./api-1445348-aegetcoercionhandler.md)
   Gets the coercion handler for a specified descriptor type.
-- [func AEInstallCoercionHandler(DescType, DescType, AECoercionHandlerUPP!, SRefCon!, Bool, Bool) -> OSErr](1445548-aeinstallcoercionhandler.md)
+- [func AEInstallCoercionHandler(DescType, DescType, AECoercionHandlerUPP!, SRefCon!, Bool, Bool) -> OSErr](./api-1445548-aeinstallcoercionhandler.md)
   Installs a coercion handler in either the application or system coercion handler dispatch table.
 
 

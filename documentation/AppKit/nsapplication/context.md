@@ -1,17 +1,24 @@
 # context
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The graphics context associated with the app.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.12
+
+> **Deprecated**: This method always returns nil. If you need access to the current drawing context, use [NSGraphicsContext currentContext] inside of a draw operation.
 
 ## Declaration
 
 ```swift
 var context: NSGraphicsContext? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSGraphicsContext * context;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextReplacementReason
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that indicate whether Writing Tools is animating changes to your view’s text.
 
@@ -17,42 +18,47 @@ Options that indicate whether Writing Tools is animating changes to your view’
 enum TextReplacementReason
 ```
 
+```c
+enum UIWritingToolsCoordinatorTextReplacementReason : NSInteger;
+```
+
 #### Overview
 
-During an operation, Writing Tools delivers replacement text to the delegate of the active [`UIWritingToolsCoordinator`](uiwritingtoolscoordinator.md) object. Depending on the configured experience for your view, it delivers these changes as either interactive or noninteractive replacements. For interactive replacements, Writing Tools animates the change automatically and provides you with the information you need to perform any related animations.
+During an operation, Writing Tools delivers replacement text to the delegate of the active [`UIWritingToolsCoordinator`](../uiwritingtoolscoordinator.md) object. Depending on the configured experience for your view, it delivers these changes as either interactive or noninteractive replacements. For interactive replacements, Writing Tools animates the change automatically and provides you with the information you need to perform any related animations.
 
 ## Topics
 
 ### Getting the reasons
-- [UIWritingToolsCoordinator.TextReplacementReason.interactive](uiwritingtoolscoordinator/textreplacementreason/interactive.md)
+- [UIWritingToolsCoordinator.TextReplacementReason.interactive](./textreplacementreason/interactive.md)
   An option to animate the replacement of text in your view.
-- [UIWritingToolsCoordinator.TextReplacementReason.noninteractive](uiwritingtoolscoordinator/textreplacementreason/noninteractive.md)
+- [UIWritingToolsCoordinator.TextReplacementReason.noninteractive](./textreplacementreason/noninteractive.md)
   An option to replace the text in your view without animating the change.
 ### Enumeration Cases
-- [UIWritingToolsCoordinator.TextReplacementReason.accepted](uiwritingtoolscoordinator/textreplacementreason/accepted.md)
+- [UIWritingToolsCoordinator.TextReplacementReason.accepted](./textreplacementreason/accepted.md)
   An option to replace the text in your view when a grammar suggestion is accepted.
-- [UIWritingToolsCoordinator.TextReplacementReason.rejected](uiwritingtoolscoordinator/textreplacementreason/rejected.md)
+- [UIWritingToolsCoordinator.TextReplacementReason.rejected](./textreplacementreason/rejected.md)
   An option to replace the text in your view when a grammar suggestion is rejected.
-- [UIWritingToolsCoordinator.TextReplacementReason.temporary](uiwritingtoolscoordinator/textreplacementreason/temporary.md)
+- [UIWritingToolsCoordinator.TextReplacementReason.temporary](./textreplacementreason/temporary.md)
   An option to replace the text in your view when a grammar suggestion is temporarily shown to preview the proposed change in the text.
 ### Initializers
-- [init?(rawValue: Int)](uiwritingtoolscoordinator/textreplacementreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./textreplacementreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIWritingToolsCoordinator.ContextScope](uiwritingtoolscoordinator/contextscope.md)
+### Getting the supporting types
+- [UIWritingToolsCoordinator.ContextScope](./contextscope.md)
   Options that indicate how much of your content Writing Tools requested.
-- [UIWritingToolsCoordinator.TextAnimation](uiwritingtoolscoordinator/textanimation.md)
+- [UIWritingToolsCoordinator.TextAnimation](./textanimation.md)
   The types of animations that Writing Tools performs during an interactive update of your view.
 
 

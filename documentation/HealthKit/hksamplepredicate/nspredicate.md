@@ -1,7 +1,8 @@
 # nsPredicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional predicate that further restricts the results that the query returns.
 
@@ -10,7 +11,7 @@ An optional predicate that further restricts the results that the query returns.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,7 +23,8 @@ nonisolated
 
 ## See Also
 
-- [let sampleType: HKSampleType](hksamplepredicate/sampletype.md)
+### Accessing Sample Predicate Data
+- [let sampleType: HKSampleType](./sampletype.md)
   The type of samples that the query returns.
 
 

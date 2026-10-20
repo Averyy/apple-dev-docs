@@ -1,7 +1,8 @@
 # cleanAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that applies both pixel aspect ratio and clean aperture.
 
@@ -19,15 +20,20 @@ A mode that applies both pixel aspect ratio and clean aperture.
 static let cleanAperture: AVAssetImageGenerator.ApertureMode
 ```
 
+```c
+extern AVAssetImageGeneratorApertureMode const AVAssetImageGeneratorApertureModeCleanAperture;
+```
+
 #### Discussion
 
 An image’s clean aperture is a region of video free from transition artifacts caused by the encoding of the signal.
 
 ## See Also
 
-- [static let encodedPixels: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/encodedpixels.md)
+### Aperture modes
+- [static let encodedPixels: AVAssetImageGenerator.ApertureMode](./encodedpixels.md)
   A mode that applies neither pixel aspect ratio nor clean aperture.
-- [static let productionAperture: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/productionaperture.md)
+- [static let productionAperture: AVAssetImageGenerator.ApertureMode](./productionaperture.md)
   A mode that applies only pixel aspect ratio.
 
 

@@ -1,7 +1,8 @@
 # getIndexes(_:range:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the indexes stored in the index path from the positions specified by the position range into the specified indexes.
 
@@ -20,20 +21,25 @@ Copies the indexes stored in the index path from the positions specified by the 
 func getIndexes(_ indexes: UnsafeMutablePointer<Int>, range positionRange: NSRange)
 ```
 
+```objc
+- (void) getIndexes:(NSUInteger *) indexes range:(NSRange) positionRange;
+```
+
 #### Discussion
 
 You must allocate the memory for the C array.
 
 ## Parameters
 
-- `indexes`: Pointer to a C array of at least as many [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger) objects as specified by the length of `positionRange`. On return, the array holds the index path’s indexes.
-- `positionRange`: A range of valid positions within the index path. If the location plus the length of `positionRange` is greater than the length of the index path, this method raises an [`rangeException`](nsexceptionname/rangeexception.md).
+- `indexes`: Pointer to a C array of at least as many [`NSUInteger`](../../ObjectiveC/nsuinteger.md) objects as specified by the length of `positionRange`. On return, the array holds the index path’s indexes.
+- `positionRange`: A range of valid positions within the index path. If the location plus the length of `positionRange` is greater than the length of the index path, this method raises an [`rangeException`](../nsexceptionname/rangeexception.md).
 
 ## See Also
 
-- [func index(atPosition: Int) -> Int](nsindexpath/index(atposition:).md)
+### Working with Indexes
+- [func index(atPosition: Int) -> Int](./index%28atposition%29.md)
   Provides the value at a particular node in the index path.
-- [func getIndexes(UnsafeMutablePointer<Int>)](nsindexpath/getindexes(_:).md)
+- [func getIndexes(UnsafeMutablePointer<Int>)](./getindexes%28_%29.md)
   Copies the objects contained in the index path into indexes.
 
 

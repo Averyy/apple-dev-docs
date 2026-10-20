@@ -1,7 +1,8 @@
 # refreshed
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Objects that were refreshed.
 

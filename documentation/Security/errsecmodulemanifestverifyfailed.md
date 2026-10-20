@@ -1,7 +1,8 @@
 # errSecModuleManifestVerifyFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A module manifest verification failure occurred.
 
@@ -18,6 +19,10 @@ A module manifest verification failure occurred.
 
 ```swift
 var errSecModuleManifestVerifyFailed: OSStatus { get }
+```
+
+```c
+errSecModuleManifestVerifyFailed
 ```
 
 

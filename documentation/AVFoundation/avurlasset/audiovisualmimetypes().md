@@ -1,7 +1,8 @@
 # audiovisualMIMETypes()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of the MIME types the asset supports.
 
@@ -20,17 +21,22 @@ Returns an array of the MIME types the asset supports.
 class func audiovisualMIMETypes() -> [String]
 ```
 
+```objc
++ (NSArray<NSString *> *) audiovisualMIMETypes;
+```
+
 #### Return Value
 
 An array of MIME type strings.
 
 ## See Also
 
-- [class func audiovisualTypes() -> [AVFileType]](avurlasset/audiovisualtypes.md)
+### Determining supported media types
+- [class func audiovisualTypes() -> [AVFileType]](./audiovisualtypes%28%29.md)
   Returns an array of the file types the asset supports.
-- [class func isPlayableExtendedMIMEType(String) -> Bool](avurlasset/isplayableextendedmimetype(_:).md)
+- [class func isPlayableExtendedMIMEType(String) -> Bool](./isplayableextendedmimetype%28_%29.md)
   Returns a Boolean value that indicates whether the asset is playable with the specified codecs and container type.
-- [class var audiovisualContentTypes: [UTType]](avurlasset/audiovisualcontenttypes.md)
+- [class var audiovisualContentTypes: [UTType]](./audiovisualcontenttypes.md)
   Provides the content types the AVURLAsset class understands.
 
 

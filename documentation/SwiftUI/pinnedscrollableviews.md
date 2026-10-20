@@ -1,7 +1,8 @@
 # PinnedScrollableViews
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of view types that may be pinned to the bounds of a scroll view.
 
@@ -22,36 +23,37 @@ struct PinnedScrollableViews
 
 ## Mentions
 
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
 
 ## Topics
 
 ### Getting scrollable view types
-- [static let sectionHeaders: PinnedScrollableViews](pinnedscrollableviews/sectionheaders.md)
+- [static let sectionHeaders: PinnedScrollableViews](./pinnedscrollableviews/sectionheaders.md)
   The header view of each `Section` will be pinned.
-- [static let sectionFooters: PinnedScrollableViews](pinnedscrollableviews/sectionfooters.md)
+- [static let sectionFooters: PinnedScrollableViews](./pinnedscrollableviews/sectionfooters.md)
   The footer view of each `Section` will be pinned.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+### Dynamically arranging views in one dimension
+- [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
   Split content into logical sections inside lazy stack views.
-- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
+- [Creating performant scrollable stacks](./creating-performant-scrollable-stacks.md)
   Display large numbers of repeated views efficiently with scroll views, stack views, and lazy stacks.
-- [struct LazyHStack](lazyhstack.md)
+- [struct LazyHStack](./lazyhstack.md)
   A view that arranges its children in a line that grows horizontally, creating items only as needed.
-- [struct LazyVStack](lazyvstack.md)
+- [struct LazyVStack](./lazyvstack.md)
   A view that arranges its children in a line that grows vertically, creating items only as needed.
 
 

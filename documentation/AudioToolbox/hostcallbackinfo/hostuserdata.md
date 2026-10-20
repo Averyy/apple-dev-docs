@@ -1,22 +1,27 @@
 # hostUserData
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom data specified by your application. May be `NULL`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var hostUserData: UnsafeMutableRawPointer?
+```
+
+```c
+void * hostUserData;
 ```
 
 

@@ -1,6 +1,7 @@
 # Suggestions Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
 
@@ -9,28 +10,28 @@ Discover keyword, phrase, category, and Target CPA suggestions to expand keyword
 
 #### Overview
 
-Suggestions are read-only discovery tools for campaign setup and keyword expansion. Unlike [`Recommendations Endpoints`](recommendations-endpoints.md), they’re stateless. There’s no apply or dismiss step and no lifecycle to track.
+Suggestions are read-only discovery tools for campaign setup and keyword expansion. Unlike [Recommendations Endpoints](./recommendations-endpoints.md), they’re stateless. There’s no apply or dismiss step and no lifecycle to track.
 
 #### Query the Suggestions Endpoints
 
-For bid sizing when launching a new App Store [`Campaigns Endpoints`](campaigns-endpoints.md), use [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md) to retrieve the recommended target CPA based on recent tap-install CPI data. That endpoint uses a `filters`-only request body.
+For bid sizing when launching a new App Store [campaign](./campaigns-endpoints.md), use [`Query Target CPA Suggestion`](./query-target-cpa-suggestion.md) to retrieve the recommended target CPA based on recent tap-install CPI data. That endpoint uses a `filters`-only request body.
 
-The three keyword discovery endpoints use a `POST /query` pattern with a [`RecommendationQueryRequest`](recommendationqueryrequest.md) body. Each result includes a `popularity` score on a 0–100 scale. To prioritize the highest-impact candidates, sort by `popularity DESC`. The suggestions API exposes four endpoints, each returning a different type of suggestion:
+The three keyword discovery endpoints use a `POST /query` pattern with a [`RecommendationQueryRequest`](./recommendationqueryrequest.md) body. Each result includes a `popularity` score on a 0–100 scale. To prioritize the highest-impact candidates, sort by `popularity DESC`. The suggestions API exposes four endpoints, each returning a different type of suggestion:
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/suggestions/keywords/query` | Returns ranked keyword strings for a given app, scoped to a promoted object and optional App Store countries or regions. See [`Query Keyword Suggestions`](query-keyword-suggestions.md). |
-| `POST` | `/v1/suggestions/phrases/query` | Returns natural-language search phrases associated with an app or brand, or matched by text. Supports `SUGGESTION` and `SEARCH` routes. See [`Query Phrase Suggestions`](query-phrase-suggestions.md). |
-| `POST` | `/v1/suggestions/categories/query` | Returns genre category names for apps or brands, or matched by name. Supports `SUGGESTION` and `SEARCH` routes. See [`Query Category Suggestions`](query-category-suggestions.md). |
-| `POST` | `/v1/suggestions/target-cpas/query` | Retrieves the recommended target CPA for an App Store app based on recent tap-install CPI data. See [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md). |
+| `POST` | `/v1/suggestions/keywords/query` | Returns ranked keyword strings for a given app, scoped to a promoted object and optional App Store countries or regions. See [`Query Keyword Suggestions`](./query-keyword-suggestions.md). |
+| `POST` | `/v1/suggestions/phrases/query` | Returns natural-language search phrases associated with an app or brand, or matched by text. Supports `SUGGESTION` and `SEARCH` routes. See [`Query Phrase Suggestions`](./query-phrase-suggestions.md). |
+| `POST` | `/v1/suggestions/categories/query` | Returns genre category names for apps or brands, or matched by name. Supports `SUGGESTION` and `SEARCH` routes. See [`Query Category Suggestions`](./query-category-suggestions.md). |
+| `POST` | `/v1/suggestions/target-cpas/query` | Retrieves the recommended target CPA for an App Store app based on recent tap-install CPI data. See [`Query Target CPA Suggestion`](./query-target-cpa-suggestion.md). |
 
-##### Keywords Vs Phrases
+##### Keywords vs. Phrases
 
-Keyword and phrase suggestions serve different targeting needs. [`Query Keyword Suggestions`](query-keyword-suggestions.md) returns single ranked keyword strings meant to seed exact-match keyword targeting, and its results feed directly into [`Create a Keyword`](post-keywords.md). [`Query Phrase Suggestions`](query-phrase-suggestions.md) returns natural-language, multi-word search phrases people actually type, useful for broader phrase-level discovery or gauging phrase traffic rather than picking discrete keyword terms.
+Keyword and phrase suggestions serve different targeting needs. [`Query Keyword Suggestions`](./query-keyword-suggestions.md) returns single ranked keyword strings meant to seed exact-match keyword targeting, and its results feed directly into [`Create a Keyword`](./post-keywords.md). [`Query Phrase Suggestions`](./query-phrase-suggestions.md) returns natural-language, multi-word search phrases people actually type, useful for broader phrase-level discovery or gauging phrase traffic rather than picking discrete keyword terms.
 
 ##### Request Keyword Suggestions
 
-The `promotedObjectId` and `promotedObjectType` fields are both required. Optionally scope results to specific App Store countries or regions with `countriesOrRegions`, or seed with specific `terms` to get related suggestions. Results are [`KeywordSuggestion`](keywordsuggestion.md) objects. To activate a suggestion, create a keyword entity via [`Create a Keyword`](post-keywords.md). Here’s a sample request that scopes suggestions to a single app and two countries:
+The `promotedObjectId` and `promotedObjectType` fields are both required. Optionally scope results to specific App Store countries or regions with `countriesOrRegions`, or seed with specific `terms` to get related suggestions. Results are [`KeywordSuggestion`](./keywordsuggestion.md) objects. To activate a suggestion, create a keyword entity via [`Create a Keyword`](./post-keywords.md). Here’s a sample request that scopes suggestions to a single app and two countries:
 
 ```json
 {
@@ -84,24 +85,26 @@ Use `SUGGESTION` when building a keyword list from scratch. Use `SEARCH` to chec
 
 ## Topics
 
-- [Query Keyword Suggestions](query-keyword-suggestions.md)
+- [Query Keyword Suggestions](./query-keyword-suggestions.md)
   Query keyword suggestions based on search terms and App Store countries or regions using structured filters.
-- [Query Phrase Suggestions](query-phrase-suggestions.md)
+- [Query Phrase Suggestions](./query-phrase-suggestions.md)
   Query phrase suggestions using either a discovery or search route based on the query type.
-- [Query Category Suggestions](query-category-suggestions.md)
+- [Query Category Suggestions](./query-category-suggestions.md)
   Query category suggestions for apps or brands using either a discovery or search route based on the query type.
-- [Query Target CPA Suggestion](query-target-cpa-suggestion.md)
+- [Query Target CPA Suggestion](./query-target-cpa-suggestion.md)
   Retrieve the recommended target CPA for a new Maximize Conversions campaign on the App Store.
 
 ## See Also
 
-- [Recommendations Endpoints](recommendations-endpoints.md)
+### Related Documentation
+- [Recommendations Endpoints](./recommendations-endpoints.md)
   Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
-- [Managing Reports](reports.md)
+- [Managing Reports](./reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
-- [Insights Endpoints](insights-endpoints.md)
+- [Insights Endpoints](./insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
-- [Suggestions Data Objects](suggestions-data-objects.md)
+### Suggestions
+- [Suggestions Data Objects](./suggestions-data-objects.md)
   Read the keyword, phrase, category, and Target CPA suggestions that the suggestions endpoints return.
 
 

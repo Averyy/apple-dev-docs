@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ManagedApp  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a configuration decoding error code.
 

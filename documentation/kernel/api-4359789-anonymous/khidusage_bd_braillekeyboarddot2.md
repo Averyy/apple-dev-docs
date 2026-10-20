@@ -1,14 +1,15 @@
 # kHIDUsage_BD_BrailleKeyboardDot2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BD_BrailleKeyboardDot2 = 0x202
 ```
 

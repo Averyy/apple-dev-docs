@@ -1,7 +1,8 @@
 # EvaluationResultsError.emptyJSONFile
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The JSON file exists but contains no data.
 

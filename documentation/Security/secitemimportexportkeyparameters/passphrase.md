@@ -1,7 +1,8 @@
 # passphrase
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password to use during key import or export.
 
@@ -14,11 +15,15 @@ The password to use during key import or export.
 var passphrase: Unmanaged<CFTypeRef>?
 ```
 
+```c
+CFTypeRef passphrase;
+```
+
 #### Discussion
 
-You may specify either a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) or a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) instance for the passphrase. The PKCS12 format requires passwords in Unicode format, and passing in a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) as the password is the surest way to meet this requirement  (and ensure compatibility with other implementations). If you supply a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) instance as the password for a PKCS12 export operation, the data is assumed to be in UTF8 form and converted as appropriate.
+You may specify either a [`CFString`](../../CoreFoundation/cfstring.md) or a [`CFData`](../../CoreFoundation/cfdata.md) instance for the passphrase. The PKCS12 format requires passwords in Unicode format, and passing in a [`CFString`](../../CoreFoundation/cfstring.md) as the password is the surest way to meet this requirement  (and ensure compatibility with other implementations). If you supply a [`CFData`](../../CoreFoundation/cfdata.md) instance as the password for a PKCS12 export operation, the data is assumed to be in UTF8 form and converted as appropriate.
 
-When importing or exporting keys ([`SecKey`](seckey.md) objects) in one of the wrapped formats ([`SecExternalFormat.formatWrappedOpenSSL`](secexternalformat/formatwrappedopenssl.md), [`SecExternalFormat.formatWrappedSSH`](secexternalformat/formatwrappedssh.md), or [`SecExternalFormat.formatWrappedPKCS8`](secexternalformat/formatwrappedpkcs8.md)) or in PKCS12 format, you must either explicitly specify the passphrase field or set the [`securePassphrase`](seckeyimportexportflags/securepassphrase.md) bit the flags field (to prompt the user to enter the password).
+When importing or exporting keys ([`SecKey`](../seckey.md) objects) in one of the wrapped formats ([`SecExternalFormat.formatWrappedOpenSSL`](../secexternalformat/formatwrappedopenssl.md), [`SecExternalFormat.formatWrappedSSH`](../secexternalformat/formatwrappedssh.md), or [`SecExternalFormat.formatWrappedPKCS8`](../secexternalformat/formatwrappedpkcs8.md)) or in PKCS12 format, you must either explicitly specify the passphrase field or set the [`securePassphrase`](../seckeyimportexportflags/securepassphrase.md) bit the flags field (to prompt the user to enter the password).
 
 
 ---

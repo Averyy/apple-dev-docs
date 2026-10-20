@@ -1,15 +1,20 @@
 # click()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func click()
+```
+
+```objc
+- (void) click;
 ```
 
 

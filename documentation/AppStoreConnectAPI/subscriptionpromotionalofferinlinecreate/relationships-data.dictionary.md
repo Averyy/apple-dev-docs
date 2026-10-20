@@ -1,7 +1,8 @@
 # SubscriptionPromotionalOfferInlineCreate.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPromotionalOfferInlineCreate.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPromotionalOfferInlineCreate.Relationships.Prices](subscriptionpromotionalofferinlinecreate/relationships-data.dictionary/prices-data.dictionary.md)
-- [object SubscriptionPromotionalOfferInlineCreate.Relationships.Subscription](subscriptionpromotionalofferinlinecreate/relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionPromotionalOfferInlineCreate.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
+- [object SubscriptionPromotionalOfferInlineCreate.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object SubscriptionPromotionalOfferInlineCreate.Relationships
 
 ## See Also
 
-- [object SubscriptionPromotionalOfferInlineCreate.Attributes](subscriptionpromotionalofferinlinecreate/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionPromotionalOfferInlineCreate.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription promotional offer inline create resource.
 
 

@@ -1,7 +1,8 @@
 # releaseState
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The release state of the achievement in App Store Connect.
 
@@ -18,6 +19,10 @@ The release state of the achievement in App Store Connect.
 
 ```swift
 var releaseState: GKReleaseState { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) GKReleaseState releaseState;
 ```
 
 

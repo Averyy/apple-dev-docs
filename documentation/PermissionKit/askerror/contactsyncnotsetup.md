@@ -1,7 +1,8 @@
 # AskError.contactSyncNotSetup
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates contact sync isn’t enabled to send permission requests.
 
@@ -20,13 +21,14 @@ case contactSyncNotSetup
 
 ## See Also
 
-- [AskError.unknown](askerror/unknown.md)
+### Handling errors
+- [AskError.unknown](./unknown.md)
   Indicates an unknown error response.
-- [AskError.communicationLimitsNotEnabled](askerror/communicationlimitsnotenabled.md)
+- [AskError.communicationLimitsNotEnabled](./communicationlimitsnotenabled.md)
   Indicates communication limits isn’t enabled to send permission requests.
-- [AskError.invalidQuestion](askerror/invalidquestion.md)
+- [AskError.invalidQuestion](./invalidquestion.md)
   Indicates your permission request is invalid.
-- [case systemError(underlyingError: any Error)](askerror/systemerror(underlyingerror:).md)
+- [case systemError(underlyingError: any Error)](./systemerror%28underlyingerror%29.md)
 
 
 ---

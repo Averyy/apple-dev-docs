@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,9 +12,10 @@ This field must be set to `'tref'`.
 
 ## See Also
 
-- [Size](track_reference_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this track reference atom.
-- [Track reference type atom](track_reference_atom/track_reference_type_atom.md)
+- [Track reference type atom](./track_reference_type_atom.md)
   A list of track reference type atoms containing the track reference information.
 
 

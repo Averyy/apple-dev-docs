@@ -1,17 +1,18 @@
 # CIBicubicScaleTransform
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a bicubic scale transform filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,50 +20,56 @@ The properties you use to configure a bicubic scale transform filter.
 protocol CIBicubicScaleTransform : CIFilterProtocol
 ```
 
+```objc
+@protocol CIBicubicScaleTransform <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var aspectRatio: Float](cibicubicscaletransform/aspectratio.md)
+- [var aspectRatio: Float](./cibicubicscaletransform/aspectratio.md)
   The additional horizontal scaling factor to use on the image.
-- [var inputImage: CIImage?](cibicubicscaletransform/inputimage.md)
+- [var inputImage: CIImage?](./cibicubicscaletransform/inputimage.md)
   The image to use as an input image.
-- [var parameterB: Float](cibicubicscaletransform/parameterb.md)
+- [var parameterB: Float](./cibicubicscaletransform/parameterb.md)
   The value of B to use for the cubic resampling function.
-- [var parameterC: Float](cibicubicscaletransform/parameterc.md)
+- [var parameterC: Float](./cibicubicscaletransform/parameterc.md)
   The value of C to use for the cubic resampling function.
-- [var scale: Float](cibicubicscaletransform/scale.md)
+- [var scale: Float](./cibicubicscaletransform/scale.md)
   The scaling factor to use on the image.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func bicubicScaleTransform() -> any CIFilter & CIBicubicScaleTransform](cifilter-swift.class/bicubicscaletransform.md)
+### Related Documentation
+- [class func bicubicScaleTransform() -> any CIFilter & CIBicubicScaleTransform](./cifilter-swift.class/bicubicscaletransform%28%29.md)
   Produces a high-quality scaled version of an image.
-- [protocol CIEdgePreserveUpsample](ciedgepreserveupsample.md)
+### Protocols
+- [protocol CIEdgePreserveUpsample](./ciedgepreserveupsample.md)
   The properties you use to configure an edge preserve upsample filter.
-- [protocol CIFourCoordinateGeometryFilter](cifourcoordinategeometryfilter.md)
+- [protocol CIFourCoordinateGeometryFilter](./cifourcoordinategeometryfilter.md)
   The properties you use to configure a geometry adjustment filters that requires four coordinates.
-- [protocol CIKeystoneCorrectionCombined](cikeystonecorrectioncombined.md)
+- [protocol CIKeystoneCorrectionCombined](./cikeystonecorrectioncombined.md)
   The properties you use to configure a keystone correction combined filter.
-- [protocol CIKeystoneCorrectionHorizontal](cikeystonecorrectionhorizontal.md)
+- [protocol CIKeystoneCorrectionHorizontal](./cikeystonecorrectionhorizontal.md)
   The properties you use to configure a keystone correction horizontal filter.
-- [protocol CIKeystoneCorrectionVertical](cikeystonecorrectionvertical.md)
+- [protocol CIKeystoneCorrectionVertical](./cikeystonecorrectionvertical.md)
   The properties you use to configure a keystone correction vertical filter.
-- [protocol CILanczosScaleTransform](cilanczosscaletransform.md)
+- [protocol CILanczosScaleTransform](./cilanczosscaletransform.md)
   The properties you use to configure a Lanczos scale transform filter.
-- [protocol CIPerspectiveCorrection](ciperspectivecorrection.md)
+- [protocol CIPerspectiveCorrection](./ciperspectivecorrection.md)
   The properties you use to configure a perspective correction filter.
-- [protocol CIPerspectiveRotate](ciperspectiverotate.md)
+- [protocol CIPerspectiveRotate](./ciperspectiverotate.md)
   The properties you use to configure a perspective rotate filter.
-- [protocol CIPerspectiveTransform](ciperspectivetransform.md)
+- [protocol CIPerspectiveTransform](./ciperspectivetransform.md)
   The properties you use to configure a perspective transform filter.
-- [protocol CIPerspectiveTransformWithExtent](ciperspectivetransformwithextent.md)
+- [protocol CIPerspectiveTransformWithExtent](./ciperspectivetransformwithextent.md)
   The properties you use to configure a perspective transform with extent filter.
-- [protocol CIStraighten](cistraighten.md)
+- [protocol CIStraighten](./cistraighten.md)
   The properties you use to configure a straighten filter.
 
 

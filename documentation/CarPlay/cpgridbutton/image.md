@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed on the button.
 
@@ -16,13 +17,18 @@ The image displayed on the button.
 var image: UIImage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIImage * image;
+```
+
 #### Discussion
 
 When creating a grid button, don’t provide an animated image. If you do, the button uses the first image in the animation sequence.
 
 ## See Also
 
-- [var titleVariants: [String]](cpgridbutton/titlevariants.md)
+### Obtaining Grid Button Information
+- [var titleVariants: [String]](./titlevariants.md)
   An array of title variants for the button.
 
 

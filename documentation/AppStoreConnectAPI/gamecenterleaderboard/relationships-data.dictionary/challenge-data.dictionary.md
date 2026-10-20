@@ -1,21 +1,22 @@
 # GameCenterLeaderboard.Relationships.Challenge
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API - Deprecated
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboard.Relationships.Challenge
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboard.Relationships.Challenge.Data](gamecenterleaderboard/relationships-data.dictionary/challenge-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboard.Relationships.Challenge.Data](./challenge-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

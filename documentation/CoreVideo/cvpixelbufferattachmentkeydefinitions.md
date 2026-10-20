@@ -1,7 +1,8 @@
 # CVPixelBufferAttachmentKeyDefinitions
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for pixel buffer attachment keys.
 
@@ -23,20 +24,21 @@ enum CVPixelBufferAttachmentKeyDefinitions
 ## Topics
 
 ### Type Properties
-- [static let proResRawMetadata: CVAttachmentCompositeKeyDefinition<CVPixelBufferAttachmentKeyDefinitions.ShouldPropagate, CVProResRawMetadata>](cvpixelbufferattachmentkeydefinitions/proresrawmetadata.md)
+- [static let proResRawMetadata: CVAttachmentCompositeKeyDefinition<CVPixelBufferAttachmentKeyDefinitions.ShouldPropagate, CVProResRawMetadata>](./cvpixelbufferattachmentkeydefinitions/proresrawmetadata.md)
   ProRes RAW image metadata used for raw conversion.
-- [static let senselArrayPattern: CVAttachmentKeyDefinition<CVPixelBufferAttachmentKeyDefinitions.ShouldNotPropagate, CVSenselArrayPattern>](cvpixelbufferattachmentkeydefinitions/senselarraypattern.md)
+- [static let senselArrayPattern: CVAttachmentKeyDefinition<CVPixelBufferAttachmentKeyDefinitions.ShouldNotPropagate, CVSenselArrayPattern>](./cvpixelbufferattachmentkeydefinitions/senselarraypattern.md)
   Bayer pattern indicating sensel arrangement.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentKeyDefinitions](cvattachmentkeydefinitions.md)
-- [CVImageBufferAttachmentKeyDefinitions](cvimagebufferattachmentkeydefinitions.md)
+- [CVAttachmentKeyDefinitions](./cvattachmentkeydefinitions.md)
+- [CVImageBufferAttachmentKeyDefinitions](./cvimagebufferattachmentkeydefinitions.md)
 
 ## See Also
 
-- [protocol CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
+### Protocols
+- [protocol CVPixelBufferRepresentable](./cvpixelbufferrepresentable.md)
   CVPixelBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVPixelBuffer type.
 
 

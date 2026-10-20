@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardExpirationState.notExpired
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card is valid.
 

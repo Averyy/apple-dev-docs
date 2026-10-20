@@ -1,7 +1,8 @@
 # kSCDynamicStorePropNetServiceIDs
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The dynamic store key `ServiceIDs`, whose value is of type `CFArray`, containing elements of type `CFString`.
 
@@ -14,17 +15,22 @@ The dynamic store key `ServiceIDs`, whose value is of type `CFArray`, containing
 let kSCDynamicStorePropNetServiceIDs: CFString
 ```
 
+```c
+extern CFStringRef const kSCDynamicStorePropNetServiceIDs;
+```
+
 ## See Also
 
-- [let kSCDynamicStorePropSetupCurrentSet: CFString](kscdynamicstorepropsetupcurrentset-swift.var.md)
+### Constants
+- [let kSCDynamicStorePropSetupCurrentSet: CFString](./kscdynamicstorepropsetupcurrentset-swift.var.md)
   The dynamic store key `CurrentSet`, whose value is of type `CFNumber`.
-- [let kSCDynamicStorePropSetupLastUpdated: CFString](kscdynamicstorepropsetuplastupdated-swift.var.md)
+- [let kSCDynamicStorePropSetupLastUpdated: CFString](./kscdynamicstorepropsetuplastupdated-swift.var.md)
   The dynamic store key `LastUpdated`.
-- [let kSCDynamicStorePropNetInterfaces: CFString](kscdynamicstorepropnetinterfaces-swift.var.md)
+- [let kSCDynamicStorePropNetInterfaces: CFString](./kscdynamicstorepropnetinterfaces-swift.var.md)
   The dynamic store key `Interfaces`, whose value is of type `CFArray`, containing elements of type `CFString`.
-- [let kSCDynamicStorePropNetPrimaryInterface: CFString](kscdynamicstorepropnetprimaryinterface-swift.var.md)
+- [let kSCDynamicStorePropNetPrimaryInterface: CFString](./kscdynamicstorepropnetprimaryinterface-swift.var.md)
   The dynamic store key `PrimaryInterface`, whose value is of type `CFString`.
-- [let kSCDynamicStorePropNetPrimaryService: CFString](kscdynamicstorepropnetprimaryservice-swift.var.md)
+- [let kSCDynamicStorePropNetPrimaryService: CFString](./kscdynamicstorepropnetprimaryservice-swift.var.md)
   The dynamic store key `PrimaryService`, whose value is of type `CFString`.
 
 

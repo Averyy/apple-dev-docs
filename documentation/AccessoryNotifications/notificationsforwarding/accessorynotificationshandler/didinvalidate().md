@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles notification session termination.
@@ -21,7 +22,8 @@ Clean up resources and clear stored session references when the system calls thi
 
 ## See Also
 
-- [func didActivate(for: NotificationsForwarding.Session)](notificationsforwarding/accessorynotificationshandler/didactivate(for:).md)
+### Managing the session life cycle
+- [func didActivate(for: NotificationsForwarding.Session)](./didactivate%28for%29.md)
   Establishes a notification session for communication with the system.
 
 

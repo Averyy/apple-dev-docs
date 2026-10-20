@@ -1,7 +1,8 @@
 # extensionPointName
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The extension point identifier.
 

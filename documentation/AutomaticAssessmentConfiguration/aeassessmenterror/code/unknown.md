@@ -1,7 +1,8 @@
 # AEAssessmentError.Code.unknown
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session encountered an unknown error.
 
@@ -17,13 +18,18 @@ The session encountered an unknown error.
 case unknown
 ```
 
+```c
+AEAssessmentErrorUnknown
+```
+
 ## See Also
 
-- [AEAssessmentError.Code.configurationUpdatesNotSupported](aeassessmenterror/code/configurationupdatesnotsupported.md)
+### Possible errors
+- [AEAssessmentError.Code.configurationUpdatesNotSupported](./configurationupdatesnotsupported.md)
   An active session fails to update its configuration because configuration updates are not supported by the current device or platform.
-- [AEAssessmentError.Code.multipleParticipantsNotSupported](aeassessmenterror/code/multipleparticipantsnotsupported.md)
+- [AEAssessmentError.Code.multipleParticipantsNotSupported](./multipleparticipantsnotsupported.md)
   A session fails to begin or update with a configuration that contains one or more participant applications because mulitple participant configurations are not supported by the device or platform.
-- [AEAssessmentError.Code.unsupportedPlatform](aeassessmenterror/code/unsupportedplatform.md)
+- [AEAssessmentError.Code.unsupportedPlatform](./unsupportedplatform.md)
   The feature isn’t supported on this platform.
 
 

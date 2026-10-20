@@ -1,7 +1,8 @@
 # mixer
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var mixer: PHASEMixer { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) PHASEMixer * mixer;
 ```
 
 #### Discussion

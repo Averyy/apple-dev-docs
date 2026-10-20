@@ -1,7 +1,8 @@
 # engineRef()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the authorization engine handle with which this instance was initialized.
 
@@ -14,19 +15,24 @@ Returns the authorization engine handle with which this instance was initialized
 func engineRef() -> AuthorizationEngineRef!
 ```
 
+```objc
+- (AuthorizationEngineRef) engineRef;
+```
+
 #### Return Value
 
-A handle of type [`AuthorizationEngineRef`](https://developer.apple.com/documentation/security/authorizationengineref).
+A handle of type [`AuthorizationEngineRef`](../../Security/authorizationengineref.md).
 
 #### Discussion
 
-Use the authorization engine handle when you call the functions in the [`AuthorizationCallbacks`](https://developer.apple.com/documentation/security/authorizationcallbacks) structure to set a result or a context value.
+Use the authorization engine handle when you call the functions in the [`AuthorizationCallbacks`](../../Security/authorizationcallbacks.md) structure to set a result or a context value.
 
 ## See Also
 
-- [func callbacks() -> UnsafePointer<AuthorizationCallbacks>!](sfauthorizationpluginview/callbacks.md)
+### Getting Instance Information
+- [func callbacks() -> UnsafePointer<AuthorizationCallbacks>!](./callbacks%28%29.md)
   Returns the authorization callbacks structure with which this instance was initialized.
-- [func lastError() -> (any Error)!](sfauthorizationpluginview/lasterror.md)
+- [func lastError() -> (any Error)!](./lasterror%28%29.md)
   Returns the last error that occurred during evaluation.
 
 

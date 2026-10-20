@@ -1,12 +1,13 @@
 # printer
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The printer object to be used for printing.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The printer object to be used for printing.
 var printer: NSPrinter { get set }
 ```
 
+```objc
+@property (copy) NSPrinter * printer;
+```
+
 ## See Also
 
-- [class NSPrinter](nsprinter.md)
+### Specifying the Printer
+- [class NSPrinter](../nsprinter.md)
   An object that describes a printer’s capabilities.
 
 

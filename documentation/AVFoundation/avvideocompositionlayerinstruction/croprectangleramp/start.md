@@ -1,7 +1,8 @@
 # start
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,8 +20,9 @@ var start: CGRect
 
 ## See Also
 
-- [var end: CGRect](avvideocompositionlayerinstruction/croprectangleramp/end.md)
-- [var timeRange: CMTimeRange](avvideocompositionlayerinstruction/croprectangleramp/timerange.md)
+### Inspecting the crop rectangle ramp
+- [var end: CGRect](./end.md)
+- [var timeRange: CMTimeRange](./timerange.md)
 
 
 ---

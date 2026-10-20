@@ -1,7 +1,8 @@
 # LightmapComponent.SurfaceExtractor.ExtractionMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies what surface property to extract.
 
@@ -17,19 +18,20 @@ enum ExtractionMode
 ## Topics
 
 ### Choosing the extraction mode
-- [LightmapComponent.SurfaceExtractor.ExtractionMode.finalShadedColor](lightmapcomponent/surfaceextractor/extractionmode/finalshadedcolor.md)
+- [LightmapComponent.SurfaceExtractor.ExtractionMode.finalShadedColor](./extractionmode/finalshadedcolor.md)
   This will extract the final shaded color as it would be normally rendered, with all the effects from lights, shadows, etc. View-dependent effects like specular highlights will be consistent with the camera transform provided to `extractSurfacesForAtlasSlice`.
-- [LightmapComponent.SurfaceExtractor.ExtractionMode.baseColor](lightmapcomponent/surfaceextractor/extractionmode/basecolor.md)
+- [LightmapComponent.SurfaceExtractor.ExtractionMode.baseColor](./extractionmode/basecolor.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [func extractSurfacesForAtlasSlice(mode: LightmapComponent.SurfaceExtractor.ExtractionMode, atlasTextureIndex: Int, textureSliceIndex: Int, cameraOutput: RealityRenderer.CameraOutput, cameraTransform: Transform, cameraFOVDegrees: Float, onComplete: (() -> Void)?) throws](lightmapcomponent/surfaceextractor/extractsurfacesforatlasslice(mode:atlastextureindex:texturesliceindex:cameraoutput:cameratransform:camerafovdegrees:oncomplete:).md)
+### Extracting surfaces
+- [func extractSurfacesForAtlasSlice(mode: LightmapComponent.SurfaceExtractor.ExtractionMode, atlasTextureIndex: Int, textureSliceIndex: Int, cameraOutput: RealityRenderer.CameraOutput, cameraTransform: Transform, cameraFOVDegrees: Float, onComplete: (() -> Void)?) throws](./extractsurfacesforatlasslice%28mode,atlastextureindex,texturesliceindex,cameraoutput,cameratransform,camerafovdegrees,oncomplete%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSTextScalingType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the text scaling.
 
@@ -19,29 +20,34 @@ Constants that specify the text scaling.
 enum NSTextScalingType
 ```
 
+```c
+enum NSTextScalingType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTextScalingType.standard](nstextscalingtype/standard.md)
+- [NSTextScalingType.standard](./nstextscalingtype/standard.md)
   Font sizes throughout the document appear visually similar to how they would render in macOS and non-Apple platforms.
-- [NSTextScalingType.iOS](nstextscalingtype/ios.md)
+- [NSTextScalingType.iOS](./nstextscalingtype/ios.md)
   Font sizes throughout the document appear visually similar to how they would render in iOS.
 ### Initializers
-- [init?(rawValue: Int)](nstextscalingtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nstextscalingtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Document reading option keys](document-reading-option-keys.md)
+### Getting document-wide attributes
+- [Document reading option keys](./document-reading-option-keys.md)
   Keys for constructing an attributed string from data on disk.
 
 

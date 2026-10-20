@@ -1,7 +1,8 @@
 # nw_report_resolution_source_t
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Sources that may provide DNS responses.
 
@@ -20,61 +21,66 @@ Sources that may provide DNS responses.
 struct nw_report_resolution_source_t
 ```
 
+```c
+typedef enum { ... } nw_report_resolution_source_t;
+```
+
 ## Topics
 
 ### Resolution Sources
-- [var nw_report_resolution_source_query: nw_report_resolution_source_t](nw_report_resolution_source_query.md)
+- [var nw_report_resolution_source_query: nw_report_resolution_source_t](./nw_report_resolution_source_query.md)
   The DNS response was received from the network.
-- [var nw_report_resolution_source_cache: nw_report_resolution_source_t](nw_report_resolution_source_cache.md)
+- [var nw_report_resolution_source_cache: nw_report_resolution_source_t](./nw_report_resolution_source_cache.md)
   The DNS response was retrieved from a local cache.
-- [var nw_report_resolution_source_expired_cache: nw_report_resolution_source_t](nw_report_resolution_source_expired_cache.md)
+- [var nw_report_resolution_source_expired_cache: nw_report_resolution_source_t](./nw_report_resolution_source_expired_cache.md)
   The DNS response had expired and was retrieved from a local cache.
 ### Initializers
-- [init(UInt32)](nw_report_resolution_source_t/init(_:).md)
-- [init(rawValue: UInt32)](nw_report_resolution_source_t/init(rawvalue:).md)
+- [init(UInt32)](./nw_report_resolution_source_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./nw_report_resolution_source_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](nw_report_resolution_source_t/rawvalue.md)
+- [var rawValue: UInt32](./nw_report_resolution_source_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct nw_connection_group_state_t](nw_connection_group_state_t.md)
+### C Network Structures
+- [struct nw_connection_group_state_t](./nw_connection_group_state_t.md)
   States that indicate whether you can use a connection group to send and receive messages.
-- [struct nw_browser_state_t](nw_browser_state_t.md)
+- [struct nw_browser_state_t](./nw_browser_state_t.md)
   States indicating whether a browser is able to discover services.
-- [struct nw_connection_state_t](nw_connection_state_t.md)
+- [struct nw_connection_state_t](./nw_connection_state_t.md)
   States indicating whether a connection can be used to send and receive data.
-- [struct nw_data_transfer_report_state_t](nw_data_transfer_report_state_t.md)
+- [struct nw_data_transfer_report_state_t](./nw_data_transfer_report_state_t.md)
   States indicating whether a data transfer report is collected yet.
-- [struct nw_endpoint_type_t](nw_endpoint_type_t.md)
+- [struct nw_endpoint_type_t](./nw_endpoint_type_t.md)
   The type of a network endpoint, such as a host or a service.
-- [struct nw_error_domain_t](nw_error_domain_t.md)
+- [struct nw_error_domain_t](./nw_error_domain_t.md)
   The error domain for errors used by the Network framework.
-- [struct nw_ethernet_channel_state_t](nw_ethernet_channel_state_t.md)
+- [struct nw_ethernet_channel_state_t](./nw_ethernet_channel_state_t.md)
   States indicating whether an Ethernet channel is able to send and receive frames.
-- [struct nw_framer_start_result_t](nw_framer_start_result_t.md)
+- [struct nw_framer_start_result_t](./nw_framer_start_result_t.md)
   Results that you send to indicate the disposition of your protocol after the start handler is invoked.
-- [struct nw_interface_type_t](nw_interface_type_t.md)
+- [struct nw_interface_type_t](./nw_interface_type_t.md)
   Types of network interfaces, based on their link layer media types.
-- [struct nw_ip_ecn_flag_t](nw_ip_ecn_flag_t.md)
+- [struct nw_ip_ecn_flag_t](./nw_ip_ecn_flag_t.md)
   Flag values for Explicit Congestion Notifications in IP packets.
-- [struct nw_ip_local_address_preference_t](nw_ip_local_address_preference_t.md)
+- [struct nw_ip_local_address_preference_t](./nw_ip_local_address_preference_t.md)
   Types of local addresses that can be selected, such as temporary or stable.
-- [struct nw_ip_version_t](nw_ip_version_t.md)
+- [struct nw_ip_version_t](./nw_ip_version_t.md)
   IP versions to require on connections and listeners.
-- [struct nw_listener_state_t](nw_listener_state_t.md)
+- [struct nw_listener_state_t](./nw_listener_state_t.md)
   States indicating whether a listener is able to accept incoming connections.
-- [struct nw_multipath_service_t](nw_multipath_service_t.md)
+- [struct nw_multipath_service_t](./nw_multipath_service_t.md)
   Modes in which a connection can support multipath protocols.
-- [struct nw_parameters_expired_dns_behavior_t](nw_parameters_expired_dns_behavior_t.md)
+- [struct nw_parameters_expired_dns_behavior_t](./nw_parameters_expired_dns_behavior_t.md)
   Options for configuring how expired DNS answers should be used.
 
 

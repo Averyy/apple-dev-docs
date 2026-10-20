@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new transform from the specified affine transform.
 
@@ -18,6 +19,10 @@ Returns a new transform from the specified affine transform.
 
 ```swift
 init(_ transform: AffineTransform3DFloat)
+```
+
+```c
+static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeWithAffine(SPAffineTransform3DFloat transform);
 ```
 
 

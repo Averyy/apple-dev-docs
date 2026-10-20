@@ -1,7 +1,8 @@
 # dataTypes
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of data associated with the record.
 
@@ -18,13 +19,18 @@ The types of data associated with the record.
 var dataTypes: Set<String> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSString *> * dataTypes;
+```
+
 #### Discussion
 
-Each record contains the set of types that the associated website stores. For a list of possible types, see [`Data Store Record Types`](data-store-record-types.md).
+Each record contains the set of types that the associated website stores. For a list of possible types, see [Data Store Record Types](../data-store-record-types.md).
 
 ## See Also
 
-- [Data Store Record Types](data-store-record-types.md)
+### Getting the Data Type
+- [Data Store Record Types](../data-store-record-types.md)
   Explore the constants that identify the types of data that websites store.
 
 

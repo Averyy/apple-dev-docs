@@ -1,7 +1,8 @@
 # CBIdentityPicker
 
 **Framework**: Collaboration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `CBIdentityPicker` object allows a user to select identities—for example, user or group objects—that it wants one or more services or shared resources to have access to. An identity picker can be displayed either as an application-modal dialog or as a sheet attached to a document window. An identity picker returns the selected records to be added to access control lists using Collaboration. If a selected record is not a user or group identity, then an identity picker prompts the user for additional information—such as a password—to promote that record to a sharing account.
 
@@ -14,35 +15,39 @@ A `CBIdentityPicker` object allows a user to select identities—for example, us
 class CBIdentityPicker
 ```
 
+```objc
+@interface CBIdentityPicker : NSObject
+```
+
 ## Topics
 
 ### Running an Identity Picker
-- [func runModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](cbidentitypicker/runmodal(for:modaldelegate:didend:contextinfo:).md)
+- [func runModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](./cbidentitypicker/runmodal%28for,modaldelegate,didend,contextinfo%29.md)
   Runs the receiver modally as a sheet attached to a specified window.
-- [func runModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](cbidentitypicker/runmodal(for:completionhandler:).md)
+- [func runModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./cbidentitypicker/runmodal%28for,completionhandler%29.md)
   Runs the identity picker modally as a sheet attached to a specified window.
-- [func runModal() -> Int](cbidentitypicker/runmodal.md)
+- [func runModal() -> Int](./cbidentitypicker/runmodal%28%29.md)
   Runs the receiver as an application-modal dialog.
 ### Retrieving Identities
-- [var identities: [CBIdentity]](cbidentitypicker/identities.md)
+- [var identities: [CBIdentity]](./cbidentitypicker/identities.md)
   The array of identities (represented by `CBIdentity` objects) selected using the identity picker.
 ### Setting and Getting Properties
-- [var title: String?](cbidentitypicker/title.md)
+- [var title: String?](./cbidentitypicker/title.md)
   The title of the identity picker.
-- [var allowsMultipleSelection: Bool](cbidentitypicker/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./cbidentitypicker/allowsmultipleselection.md)
   A Boolean value indicating whether the user is allowed to select multiple identities.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

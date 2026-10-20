@@ -1,6 +1,7 @@
 # QuickTime movie files
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 The QuickTime file format describes the characteristics of QuickTime movie files.
 
@@ -30,7 +31,7 @@ A QuickTime movie file typically contains one or more movie data atoms, which co
 
 The following figure shows the essential atom types in a QuickTime movie file within which other atoms are stored. In addition, the file may contain free space atoms, preview atoms, and other atoms not enumerated in this file format specification. Unknown atom types should be ignored.
 
-![The structure of a QuickTime movie file.](/images/com.apple.qtff/quicktime-movie-file-structure@2x.png)
+![The structure of a QuickTime movie file.](https://developer.apple.com/tutorials/images/com.apple.qtff/quicktime-movie-file-structure@2x.png)
 
 The following table lists the basic atom types.
 
@@ -49,29 +50,30 @@ The following sections describe these basic atom types (except for the movie ato
 ## Topics
 
 ### Declaring compatibility
-- [File type compatibility atom ('ftyp')](file_type_compatibility_atom.md)
+- [File type compatibility atom ('ftyp')](./file_type_compatibility_atom.md)
   An atom that identifies the file type specifications with which the file is compatible.
 ### Setting free space
-- [Free space atom ('free')](free_space_atom.md)
+- [Free space atom ('free')](./free_space_atom.md)
   An atom that designates unused space in the movie data file.
-- [Skip atom ('skip')](skip_atom.md)
+- [Skip atom ('skip')](./skip_atom.md)
   An atom that designates unused space in the movie data file.
-- [Wide atom ('wide')](wide_atom.md)
+- [Wide atom ('wide')](./wide_atom.md)
   An atom that designates reserved space in the movie data file.
 ### Describing movie data
-- [Movie data atom ('mdat')](movie_data_atom.md)
+- [Movie data atom ('mdat')](./movie_data_atom.md)
   An atom that contains movie data.
 ### Describing preview information
-- [Preview atom ('pnot')](preview_atom.md)
+- [Preview atom ('pnot')](./preview_atom.md)
   An atom that contains information that allows you to find the preview image associated with a QuickTime movie.
 
 ## See Also
 
-- [Atoms](atoms.md)
+### Building in QuickTime
+- [Atoms](./atoms.md)
   The basic data unit in a QuickTime file is the atom.
-- [QT atoms and atom containers](qt_atoms_and_atom_containers.md)
+- [QT atoms and atom containers](./qt_atoms_and_atom_containers.md)
   An enhanced data structure that provide a more general-purpose storage format.
-- [Creating, copying, and disposing of atom containers](creating_copying_and_disposing_of_atom_containers.md)
+- [Creating, copying, and disposing of atom containers](./creating_copying_and_disposing_of_atom_containers.md)
   Manage atoms in atom containers.
 
 

@@ -1,14 +1,15 @@
 # id
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the status event.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,9 +19,10 @@ let id: UUID
 
 ## See Also
 
-- [let timestamp: Date](electricvehiclestatusevent/timestamp.md)
+### Identifying the event
+- [let timestamp: Date](./timestamp.md)
   The time when the status event occurs.
-- [let sessionIdentifier: UUID?](electricvehiclestatusevent/sessionidentifier.md)
+- [let sessionIdentifier: UUID?](./sessionidentifier.md)
   A unique identifier for the session.
 
 

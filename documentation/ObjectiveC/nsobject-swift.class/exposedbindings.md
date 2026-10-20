@@ -1,17 +1,22 @@
 # exposedBindings
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array containing the bindings exposed by the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var exposedBindings: [NSBindingName] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSString *> * exposedBindings;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ A subclass can override this method to remove bindings that are exposed by a sup
 
 ## See Also
 
-- [class func exposeBinding(NSBindingName)](nsobject-swift.class/exposebinding(_:).md)
+### Exposing bindings
+- [class func exposeBinding(NSBindingName)](./exposebinding%28_%29.md)
   Exposes the specified `binding`, advertising its availability.
 
 

@@ -1,7 +1,8 @@
 # removeItem(identifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the item with matching `itemIdentifier` in the receiving toolbar. If multiple items share the same identifier (as is the case with space items) all matching items will be removed. To remove only a single space item, use `-removeItemAtIndex:` instead.
 
@@ -15,6 +16,10 @@ Removes the item with matching `itemIdentifier` in the receiving toolbar. If mul
 
 ```swift
 func removeItem(identifier itemIdentifier: NSToolbarItem.Identifier)
+```
+
+```objc
+- (void) removeItemWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier;
 ```
 
 #### Discussion

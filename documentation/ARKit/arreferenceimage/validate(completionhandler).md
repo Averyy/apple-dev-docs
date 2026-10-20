@@ -1,7 +1,8 @@
 # validate(completionHandler:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the reference image is valid.
 
@@ -12,12 +13,20 @@ Determines whether the reference image is valid.
 ## Declaration
 
 ```swift
+func validate(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func validate() async throws
+```
+
+```objc
+- (void) validateWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-ARKit considers certain images invalid for image tracking (for example, an image that’s all white). Call this function on a reference image you create programmatically to make sure ARKit can track it, before passing it in to your session’s [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) array.
+ARKit considers certain images invalid for image tracking (for example, an image that’s all white). Call this function on a reference image you create programmatically to make sure ARKit can track it, before passing it in to your session’s [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) array.
 
 You only need this function when you create a reference image programmatically, because Xcode performs this validation for you when you create a reference image in an asset catalog.
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOAudioEngineState state;
 ```
 
@@ -15,23 +15,24 @@ The current state of the IOAudioEngine - running, stopped, paused.
 
 ## See Also
 
-- [workLoop](ioaudioengine/workloop.md)
-- [userClients](ioaudioengine/userclients.md)
-- [status](ioaudioengine/status.md)
-- [sampleRate](ioaudioengine/samplerate.md)
-- [runEraseHead](ioaudioengine/runerasehead.md)
-- [outputStreams](ioaudioengine/outputstreams.md)
-- [numSampleFramesPerBuffer](ioaudioengine/numsampleframesperbuffer.md)
-- [numErasesPerBuffer](ioaudioengine/numerasesperbuffer.md)
-- [numActiveUserClients](ioaudioengine/numactiveuserclients.md)
-- [isRegistered](ioaudioengine/isregistered.md)
-- [inputStreams](ioaudioengine/inputstreams.md)
-- [deviceStartedAudioEngine](ioaudioengine/devicestartedaudioengine.md)
-- [defaultAudioControls](ioaudioengine/defaultaudiocontrols.md)
-- [configurationChangeInProgress](ioaudioengine/configurationchangeinprogress.md)
-- [commandGate](ioaudioengine/commandgate.md)
-- [audioEngineStopPosition](ioaudioengine/audioenginestopposition.md)
-- [audioDevice](ioaudioengine/audiodevice.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [userClients](./userclients.md)
+- [status](./status.md)
+- [sampleRate](./samplerate.md)
+- [runEraseHead](./runerasehead.md)
+- [outputStreams](./outputstreams.md)
+- [numSampleFramesPerBuffer](./numsampleframesperbuffer.md)
+- [numErasesPerBuffer](./numerasesperbuffer.md)
+- [numActiveUserClients](./numactiveuserclients.md)
+- [isRegistered](./isregistered.md)
+- [inputStreams](./inputstreams.md)
+- [deviceStartedAudioEngine](./devicestartedaudioengine.md)
+- [defaultAudioControls](./defaultaudiocontrols.md)
+- [configurationChangeInProgress](./configurationchangeinprogress.md)
+- [commandGate](./commandgate.md)
+- [audioEngineStopPosition](./audioenginestopposition.md)
+- [audioDevice](./audiodevice.md)
 
 
 ---

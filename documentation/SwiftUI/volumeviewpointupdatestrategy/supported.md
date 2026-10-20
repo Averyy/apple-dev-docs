@@ -1,9 +1,10 @@
 # supported
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The action should only be run when the new viewpoint is equivalent to one of the values provided through [`supportedVolumeViewpoints(_:)`](view/supportedvolumeviewpoints(_:).md).
+The action should only be run when the new viewpoint is equivalent to one of the values provided through [`supportedVolumeViewpoints(_:)`](../view/supportedvolumeviewpoints%28_%29.md).
 
 **Availability**:
 - visionOS 2.0+

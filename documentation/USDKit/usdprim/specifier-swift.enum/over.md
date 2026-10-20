@@ -1,7 +1,8 @@
 # USDPrim.Specifier.over
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies only if the prim exists in a weaker layer.
 

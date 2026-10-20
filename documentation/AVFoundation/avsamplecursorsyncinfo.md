@@ -1,18 +1,19 @@
 # AVSampleCursorSyncInfo
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the attributes of media samples to consider when resynchronizing a decoder.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,38 +21,43 @@ A structure that describes the attributes of media samples to consider when resy
 struct AVSampleCursorSyncInfo
 ```
 
+```c
+typedef struct { ... } AVSampleCursorSyncInfo;
+```
+
 ## Topics
 
 ### Sync information
-- [var sampleIsFullSync: ObjCBool](avsamplecursorsyncinfo/sampleisfullsync.md)
+- [var sampleIsFullSync: ObjCBool](./avsamplecursorsyncinfo/sampleisfullsync.md)
   A Boolean value that indicates whether a sample is a full sync sample.
-- [var sampleIsPartialSync: ObjCBool](avsamplecursorsyncinfo/sampleispartialsync.md)
+- [var sampleIsPartialSync: ObjCBool](./avsamplecursorsyncinfo/sampleispartialsync.md)
   A Boolean value that indicates whether a sample is a partial sync sample.
-- [var sampleIsDroppable: ObjCBool](avsamplecursorsyncinfo/sampleisdroppable.md)
+- [var sampleIsDroppable: ObjCBool](./avsamplecursorsyncinfo/sampleisdroppable.md)
   A Boolean value that indicates whether a sample is droppable.
 ### Initializers
-- [init()](avsamplecursorsyncinfo/init.md)
+- [init()](./avsamplecursorsyncinfo/init%28%29.md)
   Creates a sample cursor sync information structure.
-- [init(sampleIsFullSync: ObjCBool, sampleIsPartialSync: ObjCBool, sampleIsDroppable: ObjCBool)](avsamplecursorsyncinfo/init(sampleisfullsync:sampleispartialsync:sampleisdroppable:).md)
+- [init(sampleIsFullSync: ObjCBool, sampleIsPartialSync: ObjCBool, sampleIsDroppable: ObjCBool)](./avsamplecursorsyncinfo/init%28sampleisfullsync,sampleispartialsync,sampleisdroppable%29.md)
   Creates a sample cursor sync information structure with media sample information.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class AVSampleCursor](avsamplecursor.md)
+### Sample cursors
+- [class AVSampleCursor](./avsamplecursor.md)
   An object that provides information about the media sample at the cursor’s current position.
-- [struct AVSampleCursorDependencyInfo](avsamplecursordependencyinfo.md)
+- [struct AVSampleCursorDependencyInfo](./avsamplecursordependencyinfo.md)
   A value for describing dependencies between a media sample and other media samples in the same sample sequence.
-- [struct AVSampleCursorAudioDependencyInfo](avsamplecursoraudiodependencyinfo.md)
+- [struct AVSampleCursorAudioDependencyInfo](./avsamplecursoraudiodependencyinfo.md)
   A structure that describes the independent decodability of audio samples.
-- [struct AVSampleCursorStorageRange](avsamplecursorstoragerange.md)
+- [struct AVSampleCursorStorageRange](./avsamplecursorstoragerange.md)
   A structure that indicates the offset and length of storage for a media sample or its chunk.
-- [struct AVSampleCursorChunkInfo](avsamplecursorchunkinfo.md)
+- [struct AVSampleCursorChunkInfo](./avsamplecursorchunkinfo.md)
   A value that provides information about a chunk of media samples.
 
 

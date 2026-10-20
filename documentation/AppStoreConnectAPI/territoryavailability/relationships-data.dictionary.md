@@ -1,7 +1,8 @@
 # TerritoryAvailability.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object TerritoryAvailability.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object TerritoryAvailability.Relationships.Territory](territoryavailability/relationships-data.dictionary/territory-data.dictionary.md)
+- [object TerritoryAvailability.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object TerritoryAvailability.Relationships
 
 ## See Also
 
-- [object TerritoryAvailability.Attributes](territoryavailability/attributes-data.dictionary.md)
+### Objects
+- [object TerritoryAvailability.Attributes](./attributes-data.dictionary.md)
   The attributes that describe a territory availability resource.
 
 

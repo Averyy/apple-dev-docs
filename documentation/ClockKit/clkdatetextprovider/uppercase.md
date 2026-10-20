@@ -1,12 +1,15 @@
 # uppercase
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the date string displays in uppercase.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,17 +17,22 @@ A Boolean value that determines whether the date string displays in uppercase.
 var uppercase: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL uppercase;
+```
+
 #### Discussion
 
-By default, this property is set to [`false`](https://developer.apple.com/documentation/swift/false). Set it to [`true`](https://developer.apple.com/documentation/foundation/nsexpression/true) if you want the text provider to produce uppercase text.
+By default, this property is set to [`false`](../../Swift/false.md). Set it to [`true`](../../Foundation/nsexpression/true.md) if you want the text provider to produce uppercase text.
 
 ## See Also
 
-- [var date: Date](clkdatetextprovider/date.md)
+### Getting the Date Information
+- [var date: Date](./date.md)
   The date to display.
-- [var timeZone: TimeZone?](clkdatetextprovider/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone used in the formatted string.
-- [var calendarUnits: NSCalendar.Unit](clkdatetextprovider/calendarunits.md)
+- [var calendarUnits: NSCalendar.Unit](./calendarunits.md)
   The calendar units to include in the formatted string.
 
 

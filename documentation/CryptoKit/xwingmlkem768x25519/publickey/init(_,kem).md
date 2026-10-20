@@ -1,7 +1,8 @@
 # init(_:kem:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an X-Wing public key for use with HPKE.
 
@@ -25,7 +26,7 @@ init<D>(_ serialization: D, kem: HPKE.KEM) throws where D : ContiguousBytes
 - serialization: The serialized bytes of the public key.
 - kem: The key encapsulation mechanism to use with the public key.
 
-> **Note**: [`HPKE.Errors.inconsistentCiphersuiteAndKey`](hpke/errors/inconsistentciphersuiteandkey.md) if the key encapsulation mechanism requested is incompatible with this public key.
+> **Throws**: [`HPKE.Errors.inconsistentCiphersuiteAndKey`](../../hpke/errors/inconsistentciphersuiteandkey.md) if the key encapsulation mechanism requested is incompatible with this public key.
 
 
 ---

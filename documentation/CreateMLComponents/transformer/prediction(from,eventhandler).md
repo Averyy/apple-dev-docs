@@ -1,7 +1,8 @@
 # prediction(from:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction on a sequence of annotated inputs.
 
@@ -31,9 +32,10 @@ Annotated predictions produced by applying the transformer to the inputs.
 
 ## See Also
 
-- [func callAsFunction(_:eventHandler:)](transformer/callasfunction(_:eventhandler:).md)
+### Transforming and predicting
+- [func callAsFunction(_:eventHandler:)](./callasfunction%28_,eventhandler%29.md)
   Performs the transformation on a single input.
-- [func prediction(from:)](transformer/prediction(from:).md)
+- [func prediction(from:)](./prediction%28from%29.md)
   Performs a prediction from a single input.
 
 

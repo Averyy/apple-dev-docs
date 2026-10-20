@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a batch provider based on feature names and their associated arrays of data.
 
@@ -20,6 +21,10 @@ Creates a batch provider based on feature names and their associated arrays of d
 init(dictionary: [String : [Any]]) throws
 ```
 
+```objc
+- (instancetype) initWithDictionary:(NSDictionary<NSString *,NSArray *> *) dictionary error:(NSError **) error;
+```
+
 #### Discussion
 
 This initializer is convenient when the data are available as individual arrays.
@@ -31,11 +36,12 @@ let batch = try  MLArrayBatchProvider(dictionary: ["age": [30, 35, 29],
 
 ## Parameters
 
-- `dictionary`: A dictionary which maps feature names to an array of values. The error case occurs when all the arrays do not have the same length or the values in an aray are not expressible as an [`MLFeatureValue`](mlfeaturevalue.md).
+- `dictionary`: A dictionary which maps feature names to an array of values. The error case occurs when all the arrays do not have the same length or the values in an aray are not expressible as an [`MLFeatureValue`](../mlfeaturevalue.md).
 
 ## See Also
 
-- [init(array: [any MLFeatureProvider])](mlarraybatchprovider/init(array:).md)
+### Creating a batch provider
+- [init(array: [any MLFeatureProvider])](./init%28array%29.md)
   Creates the batch provider based on the array of feature providers.
 
 

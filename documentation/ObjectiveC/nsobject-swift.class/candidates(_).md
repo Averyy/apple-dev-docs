@@ -1,17 +1,22 @@
 # candidates(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of candidates.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func candidates(_ sender: Any!) -> [Any]!
+```
+
+```objc
+- (NSArray *) candidates:(id) sender;
 ```
 
 #### Return Value

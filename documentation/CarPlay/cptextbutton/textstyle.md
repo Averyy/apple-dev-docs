@@ -1,7 +1,8 @@
 # textStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text style the button applies to its title.
 
@@ -16,9 +17,14 @@ The text style the button applies to its title.
 var textStyle: CPTextButtonStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CPTextButtonStyle textStyle;
+```
+
 ## See Also
 
-- [enum CPTextButtonStyle](cptextbuttonstyle.md)
+### Managing the Button Style
+- [enum CPTextButtonStyle](../cptextbuttonstyle.md)
   The styles a button can apply to its title to communicate its action.
 
 

@@ -1,7 +1,8 @@
 # urlIsPlayingVideo
 
 **Framework**: Screen Time  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether there are one or more videos currently playing in the webpage.
 
@@ -17,21 +18,26 @@ A Boolean that indicates whether there are one or more videos currently playing 
 var urlIsPlayingVideo: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL URLIsPlayingVideo;
+```
+
 #### Discussion
 
-The default value is [`NO`](https://developer.apple.com/documentation/objectivec/no). Set this value when the webpage starts or stops playing video.
+The default value is [`NO`](../../ObjectiveC/no.md). Set this value when the webpage starts or stops playing video.
 
-> ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/objectivec/no) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL stops currently playing media and won’t immediately start playing new media.
+> ❗ **Important**: Set this value to [`NO`](../../ObjectiveC/no.md) prior to changing [`url`](./url.md) if the new webpage at that URL stops currently playing media and won’t immediately start playing new media.
 
 ## See Also
 
-- [var suppressUsageRecording: Bool](stwebpagecontroller/suppressusagerecording.md)
+### Instance properties
+- [var suppressUsageRecording: Bool](./suppressusagerecording.md)
   A Boolean that indicates whether the webpage controller is not recording web usage.
-- [var url: URL?](stwebpagecontroller/url.md)
+- [var url: URL?](./url.md)
   The URL for the webpage.
-- [var urlIsBlocked: Bool](stwebpagecontroller/urlisblocked.md)
+- [var urlIsBlocked: Bool](./urlisblocked.md)
   A Boolean that indicates whether a parent or guardian has blocked the URL.
-- [var urlIsPictureInPicture: Bool](stwebpagecontroller/urlispictureinpicture.md)
+- [var urlIsPictureInPicture: Bool](./urlispictureinpicture.md)
   A Boolean that indicates whether the webpage is currently displaying a floating picture in picture window.
 
 

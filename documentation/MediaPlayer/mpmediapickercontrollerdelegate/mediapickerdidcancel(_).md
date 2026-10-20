@@ -1,7 +1,8 @@
 # mediaPickerDidCancel(_:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method that the system calls when a user taps Cancel to dismiss a media item picker.
 
@@ -16,9 +17,13 @@ A method that the system calls when a user taps Cancel to dismiss a media item p
 optional func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController)
 ```
 
+```objc
+- (void) mediaPickerDidCancel:(MPMediaPickerController *) mediaPicker;
+```
+
 ## Mentions
 
-- [Displaying a media picker from your app](displaying-a-media-picker-from-your-app.md)
+- [Displaying a media picker from your app](../displaying-a-media-picker-from-your-app.md)
 
 ## Parameters
 
@@ -26,7 +31,8 @@ optional func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController)
 
 ## See Also
 
-- [func mediaPicker(MPMediaPickerController, didPickMediaItems: MPMediaItemCollection)](mpmediapickercontrollerdelegate/mediapicker(_:didpickmediaitems:).md)
+### Responding to user actions
+- [func mediaPicker(MPMediaPickerController, didPickMediaItems: MPMediaItemCollection)](./mediapicker%28_,didpickmediaitems%29.md)
   A method that the system calls when a user selects a set of media items.
 
 

@@ -1,7 +1,8 @@
 # reportVolatileMetadataUpdate(_:)
 
 **Framework**: StateReporting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the volatile metadata within the current state without beginning a new transition.
 
@@ -22,7 +23,7 @@ final func reportVolatileMetadataUpdate(_ updatedMetadata: VolatileMetadata?)
 
 ## Mentions
 
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](../getting-started-with-statereporting.md)
 
 #### Discussion
 

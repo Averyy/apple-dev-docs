@@ -1,7 +1,8 @@
 # expiresDate
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The UNIX time, in milliseconds, an auto-renewable subscription purchase expires or renews.
 
@@ -10,7 +11,7 @@ The UNIX time, in milliseconds, an auto-renewable subscription purchase expires 
 
 ## Declaration
 
-```swift
+```
 timestamp expiresDate
 ```
 
@@ -20,19 +21,20 @@ The `expiresDate` is a static value that applies for each transaction. When the 
 
 ## See Also
 
-- [type autoRenewStatus](autorenewstatus.md)
+### Subscription renewal and expiration
+- [type autoRenewStatus](./autorenewstatus.md)
   The renewal status for an auto-renewable subscription.
-- [type autoRenewProductId](autorenewproductid.md)
+- [type autoRenewProductId](./autorenewproductid.md)
   The identifier of the product that renews at the next billing period.
-- [type billingPlanType](billingplantype.md)
-- [type expirationIntent](expirationintent.md)
+- [type billingPlanType](./billingplantype.md)
+- [type expirationIntent](./expirationintent.md)
   The reason an auto-renewable subscription expired.
-- [type isUpgraded](isupgraded.md)
+- [type isUpgraded](./isupgraded.md)
   A Boolean value that indicates whether the customer upgraded to another subscription.
-- [type renewalBillingPlanType](renewalbillingplantype.md)
-- [type renewalDate](renewaldate.md)
+- [type renewalBillingPlanType](./renewalbillingplantype.md)
+- [type renewalDate](./renewaldate.md)
   The UNIX time, in milliseconds, when the most recent auto-renewable subscription purchase expires.
-- [type renewalPrice](renewalprice.md)
+- [type renewalPrice](./renewalprice.md)
   The renewal price, in milliunits, of the auto-renewable subscription that renews at the next billing period.
 
 

@@ -1,7 +1,8 @@
 # ImmersiveCameraLensDefinition
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 
@@ -25,41 +26,42 @@ Initializer method creates these types from ILPD data blobs (JSON contents) read
 ## Topics
 
 ### Initializers
-- [init(from: Data) throws](immersivecameralensdefinition/init(from:).md)
+- [init(from: Data) throws](./immersivecameralensdefinition/init%28from%29.md)
   Creates an `ImmersiveCameraLensDefinition` object from a ILPD data blob, basically the JSON contents of a ILPD file..
 ### Instance Properties
-- [var cameraID: String](immersivecameralensdefinition/cameraid.md)
+- [var cameraID: String](./immersivecameralensdefinition/cameraid.md)
   The unique identifier of the immersive camera associated with this lens definition instance.
 ### Instance Methods
-- [func generateSTMap(device: any MTLDevice, cameraEye: ImmersiveCameraLensDefinition.Eye, stmapType: ImmersiveCameraLensDefinition.STMapType, into: any MTLTexture) async throws](immersivecameralensdefinition/generatestmap(device:cameraeye:stmaptype:into:).md)
+- [func generateSTMap(device: any MTLDevice, cameraEye: ImmersiveCameraLensDefinition.Eye, stmapType: ImmersiveCameraLensDefinition.STMapType, into: any MTLTexture) async throws](./immersivecameralensdefinition/generatestmap%28device,cameraeye,stmaptype,into%29.md)
   Generates an STMap for the given projection type and for the given camera eye into the provided texture asynchronously.
 ### Enumerations
-- [ImmersiveCameraLensDefinition.Eye](immersivecameralensdefinition/eye.md)
+- [ImmersiveCameraLensDefinition.Eye](./immersivecameralensdefinition/eye.md)
   A value that represents a camera lens eye.
-- [ImmersiveCameraLensDefinition.STMapType](immersivecameralensdefinition/stmaptype.md)
+- [ImmersiveCameraLensDefinition.STMapType](./immersivecameralensdefinition/stmaptype.md)
   A value that represents a camera lens projection type.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [actor VenueDescriptor](venuedescriptor.md)
+### Camera metadata
+- [actor VenueDescriptor](./venuedescriptor.md)
   The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
-- [struct ImmersiveCamera](immersivecamera.md)
+- [struct ImmersiveCamera](./immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
-- [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
+- [struct ImmersiveCameraCalibration](./immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
-- [enum ImmersiveCameraMask](immersivecameramask.md)
+- [enum ImmersiveCameraMask](./immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
-- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+- [struct ImmersiveDynamicMask](./immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [class ImmersiveImageMask](immersiveimagemask.md)
+- [class ImmersiveImageMask](./immersiveimagemask.md)
   An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 

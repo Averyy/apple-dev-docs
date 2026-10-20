@@ -1,7 +1,8 @@
 # vfs_context_rele
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Release references on components of a context and deallocate it.
 
@@ -10,11 +11,11 @@ Release references on components of a context and deallocate it.
 
 ## Declaration
 
-```swift
+```c
 int vfs_context_rele(vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 Always 0.
 

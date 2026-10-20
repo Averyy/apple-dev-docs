@@ -1,7 +1,8 @@
 # missingCount
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of missing elements in the column slice.
 

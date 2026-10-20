@@ -1,7 +1,8 @@
 # UICalendarViewDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that a calendar view uses to display decorations for dates.
 
@@ -18,32 +19,37 @@ An object that a calendar view uses to display decorations for dates.
 protocol UICalendarViewDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UICalendarViewDelegate <NSObject>
+```
+
 ## Topics
 
 ### Providing calendar view decorations
-- [func calendarView(UICalendarView, decorationFor: DateComponents) -> UICalendarView.Decoration?](uicalendarviewdelegate/calendarview(_:decorationfor:).md)
+- [func calendarView(UICalendarView, decorationFor: DateComponents) -> UICalendarView.Decoration?](./uicalendarviewdelegate/calendarview%28_,decorationfor%29.md)
   Creates a calendar view decoration for the date represented by the date components you provide.
 ### Instance Methods
-- [func calendarView(UICalendarView, didChangeVisibleDateComponentsFrom: DateComponents)](uicalendarviewdelegate/calendarview(_:didchangevisibledatecomponentsfrom:).md)
+- [func calendarView(UICalendarView, didChangeVisibleDateComponentsFrom: DateComponents)](./uicalendarviewdelegate/calendarview%28_,didchangevisibledatecomponentsfrom%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var fontDesign: UIFontDescriptor.SystemDesign](uicalendarview/fontdesign.md)
+### Customizing the calendar display
+- [var fontDesign: UIFontDescriptor.SystemDesign](./uicalendarview/fontdesign.md)
   A font design that the calendar view uses for displaying calendar text.
-- [var delegate: (any UICalendarViewDelegate)?](uicalendarview/delegate.md)
+- [var delegate: (any UICalendarViewDelegate)?](./uicalendarview/delegate.md)
   A delegate object the calendar view calls for decoration views.
-- [UICalendarView.Decoration](uicalendarview/decoration.md)
+- [UICalendarView.Decoration](./uicalendarview/decoration.md)
   A view that a calendar view displays for a specific date.
-- [UICalendarView.DecorationSize](uicalendarview/decorationsize.md)
+- [UICalendarView.DecorationSize](./uicalendarview/decorationsize.md)
   Constants that indicate the relative size of a decoration in a calendar view.
-- [var wantsDateDecorations: Bool](uicalendarview/wantsdatedecorations.md)
+- [var wantsDateDecorations: Bool](./uicalendarview/wantsdatedecorations.md)
   A Boolean value that indicates whether the calendar view displays date decorations.
-- [func reloadDecorations(forDateComponents: [DateComponents], animated: Bool)](uicalendarview/reloaddecorations(fordatecomponents:animated:).md)
+- [func reloadDecorations(forDateComponents: [DateComponents], animated: Bool)](./uicalendarview/reloaddecorations%28fordatecomponents,animated%29.md)
   Reloads the decorations for the dates you provide, with an option to animate the decoration reload.
 
 

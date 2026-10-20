@@ -1,7 +1,8 @@
 # isVisible()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether or not the candidates window is visible.
 
@@ -14,21 +15,26 @@ Returns whether or not the candidates window is visible.
 func isVisible() -> Bool
 ```
 
+```objc
+- (BOOL) isVisible;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the candidates window is visible; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the candidates window is visible; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func show(IMKCandidatesLocationHint)](imkcandidates/show(_:).md)
+### Managing Window Visibility and Behavior
+- [func show(IMKCandidatesLocationHint)](./show%28_%29.md)
   Shows the candidates window.
-- [func hide()](imkcandidates/hide.md)
+- [func hide()](./hide%28%29.md)
   Hides a candidates window, if it is visible.
-- [func setDismissesAutomatically(Bool)](imkcandidates/setdismissesautomatically(_:).md)
+- [func setDismissesAutomatically(Bool)](./setdismissesautomatically%28_%29.md)
   Sets the state of the flag that determines whether the candidates window dismisses automatically.
-- [func dismissesAutomatically() -> Bool](imkcandidates/dismissesautomatically.md)
+- [func dismissesAutomatically() -> Bool](./dismissesautomatically%28%29.md)
   Returns the state of the flag that determines whether the candidates window dismisses automatically.
-- [func update()](imkcandidates/update.md)
+- [func update()](./update%28%29.md)
   Updates the candidates that are displayed in the candidates window.
 
 

@@ -1,7 +1,8 @@
 # elapsedTime
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elapsed time for the workout based on the builder’s current contents, including pauses.
 
@@ -9,13 +10,17 @@ The elapsed time for the workout based on the builder’s current contents, incl
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - watchOS 5.0+
 
 ## Declaration
 
 ```swift
 var elapsedTime: TimeInterval { get }
+```
+
+```objc
+@property (assign, readonly) NSTimeInterval elapsedTime;
 ```
 
 

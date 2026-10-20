@@ -1,7 +1,8 @@
 # kMDItemAppleLoopDescriptors
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies multiple pieces of descriptive information about a loop. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Specifies multiple pieces of descriptive information about a loop. A CFArray of 
 
 ```swift
 let kMDItemAppleLoopDescriptors: CFString!
+```
+
+```c
+const CFStringRef kMDItemAppleLoopDescriptors;
 ```
 
 #### Discussion

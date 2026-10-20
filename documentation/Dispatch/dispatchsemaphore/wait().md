@@ -1,18 +1,19 @@
 # wait()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits for, or decrements, a semaphore.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ Decrement the counting semaphore. If the resulting value is less than zero, this
 
 ## See Also
 
-- [func wait(timeout: DispatchTime) -> DispatchTimeoutResult](dispatchsemaphore/wait(timeout:).md)
+### Blocking on the Semaphore
+- [func wait(timeout: DispatchTime) -> DispatchTimeoutResult](./wait%28timeout%29.md)
   Waits for, or decrements, a semaphore.
-- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](dispatchsemaphore/wait(walltimeout:).md)
+- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](./wait%28walltimeout%29.md)
   Waits for, or decrements, a semaphore.
 
 

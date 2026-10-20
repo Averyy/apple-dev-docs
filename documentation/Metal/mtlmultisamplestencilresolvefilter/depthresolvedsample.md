@@ -1,7 +1,8 @@
 # MTLMultisampleStencilResolveFilter.depthResolvedSample
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Chooses the stencil sample corresponding to the depth sample selected by the depth resolve filter.
 
@@ -19,13 +20,18 @@ Chooses the stencil sample corresponding to the depth sample selected by the dep
 case depthResolvedSample
 ```
 
+```c
+MTLMultisampleStencilResolveFilterDepthResolvedSample
+```
+
 #### Discussion
 
 The resolve filter selects the stencil sample corresponding to the sample that the depth resolve filter would have selected.
 
 ## See Also
 
-- [MTLMultisampleStencilResolveFilter.sample0](mtlmultisamplestencilresolvefilter/sample0.md)
+### Stencil resolve filters
+- [MTLMultisampleStencilResolveFilter.sample0](./sample0.md)
   Chooses the first stencil sample in the pixel.
 
 

@@ -1,7 +1,8 @@
 # addingObjects(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new array that is a copy of the receiving array with the objects contained in another array added to the end.
 
@@ -20,6 +21,10 @@ Returns a new array that is a copy of the receiving array with the objects conta
 func addingObjects(from otherArray: [Any]) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) arrayByAddingObjectsFromArray:(NSArray<id> *) otherArray;
+```
+
 #### Return Value
 
 A new array that is a copy of the receiving array with the objects contained in `otherArray` added to the end.
@@ -30,13 +35,15 @@ A new array that is a copy of the receiving array with the objects contained in 
 
 ## See Also
 
-- [func addObjects(from: [Any])](nsmutablearray/addobjects(from:).md)
+### Related Documentation
+- [func addObjects(from: [Any])](../nsmutablearray/addobjects%28from%29.md)
   Adds the objects contained in another given array to the end of the receiving array’s content.
-- [func adding(Any) -> [Any]](nsarray/adding(_:).md)
+### Deriving New Arrays
+- [func adding(Any) -> [Any]](./adding%28_%29.md)
   Returns a new array that is a copy of the receiving array with a given object added to the end.
-- [func filtered(using: NSPredicate) -> [Any]](nsarray/filtered(using:).md)
+- [func filtered(using: NSPredicate) -> [Any]](./filtered%28using%29.md)
   Evaluates a given predicate against each object in the receiving array and returns a new array containing the objects for which the predicate returns true.
-- [func subarray(with: NSRange) -> [Any]](nsarray/subarray(with:).md)
+- [func subarray(with: NSRange) -> [Any]](./subarray%28with%29.md)
   Returns a new array containing the receiving array’s elements that fall within the limits specified by a given range.
 
 

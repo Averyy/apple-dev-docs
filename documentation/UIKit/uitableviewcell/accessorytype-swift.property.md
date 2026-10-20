@@ -1,7 +1,8 @@
 # accessoryType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of standard accessory view for the cell to use in the table view’s normal state.
 
@@ -9,7 +10,7 @@ The type of standard accessory view for the cell to use in the table view’s no
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,30 +19,36 @@ The type of standard accessory view for the cell to use in the table view’s no
 var accessoryType: UITableViewCell.AccessoryType { get set }
 ```
 
+```objc
+@property (nonatomic) UITableViewCellAccessoryType accessoryType;
+```
+
 ## Mentions
 
-- [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
-- [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
+- [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
+- [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
 #### Discussion
 
-The accessory view appears in the right side of the cell in the table view’s normal (default) state. The standard accessory views include the disclosure chevron; for a description of valid [`accessoryType`](uitableviewcell/accessorytype-swift.property.md) constants, see [`UITableViewCell.AccessoryType`](uitableviewcell/accessorytype-swift.enum.md). The default is [`UITableViewCell.AccessoryType.none`](uitableviewcell/accessorytype-swift.enum/none.md). If a custom accessory view is set through the [`accessoryView`](uitableviewcell/accessoryview.md) property, the value of this property is ignored. If the cell is enabled and the accessory type is [`UITableViewCell.AccessoryType.detailDisclosureButton`](uitableviewcell/accessorytype-swift.enum/detaildisclosurebutton.md), the accessory view tracks touches and, when tapped, sends the data-source object a [`tableView(_:accessoryButtonTappedForRowWith:)`](uitableviewdelegate/tableview(_:accessorybuttontappedforrowwith:).md) message.
+The accessory view appears in the right side of the cell in the table view’s normal (default) state. The standard accessory views include the disclosure chevron; for a description of valid [`accessoryType`](./accessorytype-swift.property.md) constants, see [`UITableViewCell.AccessoryType`](./accessorytype-swift.enum.md). The default is [`UITableViewCell.AccessoryType.none`](./accessorytype-swift.enum/none.md). If a custom accessory view is set through the [`accessoryView`](./accessoryview.md) property, the value of this property is ignored. If the cell is enabled and the accessory type is [`UITableViewCell.AccessoryType.detailDisclosureButton`](./accessorytype-swift.enum/detaildisclosurebutton.md), the accessory view tracks touches and, when tapped, sends the data-source object a [`tableView(_:accessoryButtonTappedForRowWith:)`](../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) message.
 
-The accessory-type image cross-fades between normal and editing states if it set for both states; use the [`editingAccessoryType`](uitableviewcell/editingaccessorytype.md) property to set the accessory type for the cell during editing mode. If this property is not set for both states, the cell is animated to slide in or out, as necessary.
+The accessory-type image cross-fades between normal and editing states if it set for both states; use the [`editingAccessoryType`](./editingaccessorytype.md) property to set the accessory type for the cell during editing mode. If this property is not set for both states, the cell is animated to slide in or out, as necessary.
 
 ## See Also
 
-- [func willTransition(to: UITableViewCell.StateMask)](uitableviewcell/willtransition(to:).md)
+### Related Documentation
+- [func willTransition(to: UITableViewCell.StateMask)](./willtransition%28to%29.md)
   Notifies the cell that it’s about to transition to a new cell state.
-- [func didTransition(to: UITableViewCell.StateMask)](uitableviewcell/didtransition(to:).md)
+- [func didTransition(to: UITableViewCell.StateMask)](./didtransition%28to%29.md)
   Notifies the cell that it transitioned to a new cell state.
-- [var accessoryView: UIView?](uitableviewcell/accessoryview.md)
+### Managing accessory views
+- [var accessoryView: UIView?](./accessoryview.md)
   The view to use on the right side of the cell, typically as a control, in the table view’s normal state.
-- [var editingAccessoryType: UITableViewCell.AccessoryType](uitableviewcell/editingaccessorytype.md)
+- [var editingAccessoryType: UITableViewCell.AccessoryType](./editingaccessorytype.md)
   The type of standard accessory view for the cell to use in the table view’s editing state.
-- [var editingAccessoryView: UIView?](uitableviewcell/editingaccessoryview.md)
+- [var editingAccessoryView: UIView?](./editingaccessoryview.md)
   The view to use on the right side of the cell, typically as a control, in the table view’s editing state.
-- [UITableViewCell.AccessoryType](uitableviewcell/accessorytype-swift.enum.md)
+- [UITableViewCell.AccessoryType](./accessorytype-swift.enum.md)
   The type of standard accessory control used by a cell.
 
 

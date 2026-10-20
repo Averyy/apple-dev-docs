@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle that encloses the text selection rectangle’s text range.
 
@@ -9,13 +10,17 @@ The rectangle that encloses the text selection rectangle’s text range.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var rect: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect rect;
 ```
 
 #### Discussion

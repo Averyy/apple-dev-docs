@@ -1,11 +1,12 @@
 # Layout Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [GridLayout.Cache](gridlayout/cache.md)
+- [GridLayout.Cache](./cache.md)
   A stateful grid layout algorithm.
 
 

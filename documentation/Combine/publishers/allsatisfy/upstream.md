@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let predicate: (Upstream.Output) -> Bool](publishers/allsatisfy/predicate.md)
+### Inspecting publisher properties
+- [let predicate: (Upstream.Output) -> Bool](./predicate.md)
   A closure that evaluates each received element.
 
 

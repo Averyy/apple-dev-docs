@@ -1,12 +1,13 @@
 # isNativeType(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the document can read and write the data natively.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value that indicates whether the document can read and write t
 class func isNativeType(_ type: String) -> Bool
 ```
 
+```objc
++ (BOOL) isNativeType:(NSString *) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the document type is a native type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the document type is a native type; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -24,13 +29,14 @@ class func isNativeType(_ type: String) -> Bool
 
 ## See Also
 
-- [class var readableTypes: [String]](nsdocument/readabletypes.md)
+### Managing File Type Information
+- [class var readableTypes: [String]](./readabletypes.md)
   Returns the types of data the receiver can read natively and any types filterable to that native type.
-- [class var writableTypes: [String]](nsdocument/writabletypes.md)
+- [class var writableTypes: [String]](./writabletypes.md)
   Returns the types of data the receiver can write natively and any types filterable to that native type.
-- [func writableTypes(for: NSDocument.SaveOperationType) -> [String]](nsdocument/writabletypes(for:).md)
+- [func writableTypes(for: NSDocument.SaveOperationType) -> [String]](./writabletypes%28for%29.md)
   Returns the names of the types to which this document can be saved for a specified kind of save operation.
-- [func fileNameExtension(forType: String, saveOperation: NSDocument.SaveOperationType) -> String?](nsdocument/filenameextension(fortype:saveoperation:).md)
+- [func fileNameExtension(forType: String, saveOperation: NSDocument.SaveOperationType) -> String?](./filenameextension%28fortype,saveoperation%29.md)
   Returns a filename extension that can be appended to a base filename, for a specified file type and kind of save operation.
 
 

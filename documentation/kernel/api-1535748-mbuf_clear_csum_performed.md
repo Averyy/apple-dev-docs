@@ -1,18 +1,19 @@
 # mbuf_clear_csum_performed
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_clear_csum_performed(mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

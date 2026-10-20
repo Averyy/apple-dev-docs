@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the entity along the x, y, and z axes.
 
@@ -11,7 +12,7 @@ The position of the entity along the x, y, and z axes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var translation: SIMD3<Float>
 
 ## See Also
 
-- [var scale: SIMD3<Float>](transform/scale.md)
+### Setting transform properties
+- [var scale: SIMD3<Float>](./scale.md)
   The scaling factor applied to the entity.
-- [var rotation: simd_quatf](transform/rotation.md)
+- [var rotation: simd_quatf](./rotation.md)
   The rotation of the entity specified as a unit quaternion.
-- [var matrix: float4x4](transform/matrix.md)
+- [var matrix: float4x4](./matrix.md)
   The transform represented as a 4x4 matrix.
 
 

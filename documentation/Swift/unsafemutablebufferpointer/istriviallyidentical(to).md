@@ -1,7 +1,8 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether two instances refer to the same memory region.
 
@@ -22,7 +23,7 @@ func isTriviallyIdentical(to other: UnsafeMutableBufferPointer<Element>) -> Bool
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

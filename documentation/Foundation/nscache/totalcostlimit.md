@@ -1,7 +1,8 @@
 # totalCostLimit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum total cost that the cache can hold before it starts evicting objects.
 
@@ -20,6 +21,10 @@ The maximum total cost that the cache can hold before it starts evicting objects
 var totalCostLimit: Int { get set }
 ```
 
+```objc
+@property NSUInteger totalCostLimit;
+```
+
 #### Discussion
 
 If `0`, there is no total cost limit. The default value is `0`.
@@ -30,9 +35,11 @@ This is not a strict limit, and if the cache goes over the limit, an object in t
 
 ## See Also
 
-- [func setObject(ObjectType, forKey: KeyType, cost: Int)](nscache/setobject(_:forkey:cost:).md)
+### Related Documentation
+- [func setObject(ObjectType, forKey: KeyType, cost: Int)](./setobject%28_,forkey,cost%29.md)
   Sets the value of the specified key in the cache, and associates the key-value pair with the specified cost.
-- [var countLimit: Int](nscache/countlimit.md)
+### Managing Cache Size
+- [var countLimit: Int](./countlimit.md)
   The maximum number of objects the cache should hold.
 
 

@@ -1,6 +1,7 @@
 # Synchronizing events within a single device
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Use nonshareable events to synchronize your app’s work within a single device.
 
@@ -8,7 +9,7 @@ Use nonshareable events to synchronize your app’s work within a single device.
 
 The following figure and code show a nonshareable event that synchronizes graphics rendering on one command queue with compute processing on another.
 
-![Timeline diagram that shows a nonshareable synchronization event encoded into two command queues. Command queue A shows graphics-rendering commands, and command queue B shows compute-processing commands.](/images/com.apple.metal/synchronizing-events-within-a-single-device-1@2x.png)
+![Timeline diagram that shows a nonshareable synchronization event encoded into two command queues. Command queue A shows graphics-rendering commands, and command queue B shows compute-processing commands.](https://developer.apple.com/tutorials/images/com.apple.metal/synchronizing-events-within-a-single-device-1@2x.png)
 
 **Swift**:
 
@@ -90,23 +91,24 @@ When two sets of commands have dependencies on each other, the code expresses th
 
 ## See Also
 
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+### Synchronizing with events
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [About synchronization events](about-synchronization-events.md)
+- [About synchronization events](./about-synchronization-events.md)
   Synchronize access to resources in your app by signaling events.
-- [Synchronizing events across multiple devices or processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing events across multiple devices or processes](./synchronizing-events-across-multiple-devices-or-processes.md)
   Use shareable events to synchronize your app’s work across multiple devices or processes.
-- [Synchronizing events between a GPU and the CPU](synchronizing-events-between-a-gpu-and-the-cpu.md)
+- [Synchronizing events between a GPU and the CPU](./synchronizing-events-between-a-gpu-and-the-cpu.md)
   Use shareable events to synchronize your app’s work between a GPU and the CPU.
-- [protocol MTLEvent](mtlevent.md)
+- [protocol MTLEvent](./mtlevent.md)
   A type that synchronizes memory operations to one or more resources within a single Metal device.
-- [protocol MTLSharedEvent](mtlsharedevent.md)
+- [protocol MTLSharedEvent](./mtlsharedevent.md)
   A type that synchronizes memory operations to one or more resources across multiple CPUs, GPUs, and processes.
-- [class MTLSharedEventHandle](mtlsharedeventhandle.md)
+- [class MTLSharedEventHandle](./mtlsharedeventhandle.md)
   An instance you use to recreate a shareable event.
-- [class MTLSharedEventListener](mtlsharedeventlistener.md)
+- [class MTLSharedEventListener](./mtlsharedeventlistener.md)
   A listener for shareable event notifications.
-- [typealias MTLSharedEventNotificationBlock](mtlsharedeventnotificationblock.md)
+- [typealias MTLSharedEventNotificationBlock](./mtlsharedeventnotificationblock.md)
   A block of code invoked after a shareable event’s signal value equals or exceeds a given value.
 
 

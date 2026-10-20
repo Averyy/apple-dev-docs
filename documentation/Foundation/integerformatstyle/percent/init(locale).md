@@ -1,7 +1,8 @@
 # init(locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer percent format style that uses the given locale.
 
@@ -22,7 +23,7 @@ init(locale: Locale = .autoupdatingCurrent)
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
+- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](../../locale/autoupdatingcurrent.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # SecRandomCopyBytes(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates an array of cryptographically secure random bytes.
 
@@ -20,9 +21,13 @@ Generates an array of cryptographically secure random bytes.
 func SecRandomCopyBytes(_ rnd: SecRandomRef?, _ count: Int, _ bytes: UnsafeMutableRawPointer) -> Int32
 ```
 
+```c
+int SecRandomCopyBytes(SecRandomRef rnd, size_t count, void *bytes);
+```
+
 #### Return Value
 
-A result code set to [`errSecSuccess`](errsecsuccess.md) or some other value on failure.
+A result code set to [`errSecSuccess`](./errsecsuccess.md) or some other value on failure.
 
 #### Discussion
 
@@ -56,7 +61,7 @@ if (status == errSecSuccess) { // Always test the status.
 
 ## Parameters
 
-- `rnd`: The random number generator object to use. Specify [`kSecRandomDefault`](ksecrandomdefault.md) to use the default random number generator.
+- `rnd`: The random number generator object to use. Specify [`kSecRandomDefault`](./ksecrandomdefault.md) to use the default random number generator.
 - `count`: The number of random bytes to return in the array pointed to by the `bytes` parameter.
 - `bytes`: A pointer to an array that the function fills with cryptographically secure random bytes. Use an array that is large enough to hold at least `count` bytes.
 

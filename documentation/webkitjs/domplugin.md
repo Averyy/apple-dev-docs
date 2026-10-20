@@ -1,7 +1,8 @@
 # DOMPlugin
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMPlugin
 ```
 
 ## Topics
 
 ### Instance Properties
-- [description](domplugin/1634059-description.md)
-- [filename](domplugin/1629711-filename.md)
-- [length](domplugin/1632940-length.md)
-- [name](domplugin/1632361-name.md)
+- [description](./domplugin/api-1634059-description.md)
+- [filename](./domplugin/api-1629711-filename.md)
+- [length](./domplugin/api-1632940-length.md)
+- [name](./domplugin/api-1632361-name.md)
 ### Instance Methods
-- [item](domplugin/1633832-item.md)
-- [namedItem](domplugin/1630338-nameditem.md)
+- [item](./domplugin/api-1633832-item.md)
+- [namedItem](./domplugin/api-1630338-nameditem.md)
 
 
 ---

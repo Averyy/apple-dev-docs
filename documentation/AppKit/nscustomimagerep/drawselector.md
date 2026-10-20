@@ -1,12 +1,13 @@
 # drawSelector
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selector for the delegate’s drawing method.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The selector for the delegate’s drawing method.
 var drawSelector: Selector? { get }
 ```
 
+```objc
+@property (readonly, nullable) SEL drawSelector;
+```
+
 ## See Also
 
-- [var delegate: AnyObject?](nscustomimagerep/delegate.md)
+### Getting Information About Images
+- [var delegate: AnyObject?](./delegate.md)
   The delegate object that renders the image for the image representation.
 
 

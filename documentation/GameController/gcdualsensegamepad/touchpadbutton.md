@@ -1,7 +1,8 @@
 # touchpadButton
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button element on the touchpad of the controller.
 
@@ -17,6 +18,10 @@ The button element on the touchpad of the controller.
 
 ```swift
 var touchpadButton: GCControllerButtonInput { get }
+```
+
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * touchpadButton;
 ```
 
 

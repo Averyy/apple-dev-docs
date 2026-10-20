@@ -1,7 +1,8 @@
 # disabledCount
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of app extensions that someone disabled.
 
@@ -26,9 +27,10 @@ A person can disable app extensions to prevent your host app from loading them. 
 
 ## See Also
 
-- [var identities: [AppExtensionIdentity]](appextensionpoint/monitor/state-swift.struct/identities.md)
+### Getting the app extension status
+- [var identities: [AppExtensionIdentity]](./identities.md)
   The set of approved and enabled app extensions.
-- [var unapprovedCount: Int](appextensionpoint/monitor/state-swift.struct/unapprovedcount.md)
+- [var unapprovedCount: Int](./unapprovedcount.md)
   The number of identity entries that someone hasn’t yet enabled.
 
 

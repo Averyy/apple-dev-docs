@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for observing events that occur during the user interaction.
 
@@ -20,9 +21,14 @@ The delegate for observing events that occur during the user interaction.
 weak var delegate: (any TKSmartCardUserInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<TKSmartCardUserInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol TKSmartCardUserInteractionDelegate](tksmartcarduserinteractiondelegate.md)
+### Handling User Interaction Events
+- [protocol TKSmartCardUserInteractionDelegate](../tksmartcarduserinteractiondelegate.md)
   The interface implemented by a Smart Card user interaction delegate to handle user interaction events.
 
 

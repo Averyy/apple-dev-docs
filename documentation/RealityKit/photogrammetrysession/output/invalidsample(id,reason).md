@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.invalidSample(id:reason:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A provided sample was invalid.
 
@@ -24,10 +25,11 @@ case invalidSample(id: Int, reason: String)
 
 ## See Also
 
-- [PhotogrammetrySession.Output.automaticDownsampling](photogrammetrysession/output/automaticdownsampling.md)
+### Monitoring data ingestion
+- [PhotogrammetrySession.Output.automaticDownsampling](./automaticdownsampling.md)
   The session reduced the image size because of memory constraints.
-- [PhotogrammetrySession.Output.skippedSample(id:)](photogrammetrysession/output/skippedsample(id:).md)
-  The type of element used for Object Capture updates. The [`PhotogrammetrySample`](photogrammetrysample.md) with the [`id`](photogrammetrysample/id.md) indicated was not able to be used for reconstruction.
+- [PhotogrammetrySession.Output.skippedSample(id:)](./skippedsample%28id%29.md)
+  The type of element used for Object Capture updates. The [`PhotogrammetrySample`](../../photogrammetrysample.md) with the [`id`](../../photogrammetrysample/id.md) indicated was not able to be used for reconstruction.
 
 
 ---

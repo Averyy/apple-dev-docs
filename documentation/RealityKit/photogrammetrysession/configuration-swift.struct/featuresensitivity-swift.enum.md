@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.FeatureSensitivity
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The sensitivity to sample landmarks.
 
@@ -20,22 +21,23 @@ enum FeatureSensitivity
 ## Topics
 
 ### Specifying feature sensitivity
-- [PhotogrammetrySession.Configuration.FeatureSensitivity.normal](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.enum/normal.md)
+- [PhotogrammetrySession.Configuration.FeatureSensitivity.normal](./featuresensitivity-swift.enum/normal.md)
   The session uses the default algorithm to detect landmarks.
-- [PhotogrammetrySession.Configuration.FeatureSensitivity.high](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.enum/high.md)
+- [PhotogrammetrySession.Configuration.FeatureSensitivity.high](./featuresensitivity-swift.enum/high.md)
   The session uses a slower, more sensitive algorithm to detect landmarks.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var featureSensitivity: PhotogrammetrySession.Configuration.FeatureSensitivity](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.property.md)
+### Configuring feature sensitivity
+- [var featureSensitivity: PhotogrammetrySession.Configuration.FeatureSensitivity](./featuresensitivity-swift.property.md)
   The precision of landmark detection.
 
 

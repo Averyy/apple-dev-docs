@@ -1,7 +1,8 @@
 # didOpenTab(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a new tab is opened to fire appropriate events with all loaded web extensions.
 
@@ -18,6 +19,10 @@ Should be called by the app when a new tab is opened to fire appropriate events 
 func didOpenTab(_ newTab: any WKWebExtensionTab)
 ```
 
+```objc
+- (void) didOpenTab:(id<WKWebExtensionTab>) newTab;
+```
+
 #### Discussion
 
 This method informs all loaded extensions of the opening of a new tab, ensuring consistent understanding across extensions.
@@ -30,7 +35,8 @@ If the intention is to inform only a specific extension, you should use the resp
 
 ## See Also
 
-- [func didCloseTab(any WKWebExtensionTab, windowIsClosing: Bool)](wkwebextensioncontroller/didclosetab(_:windowisclosing:).md)
+### Related Documentation
+- [func didCloseTab(any WKWebExtensionTab, windowIsClosing: Bool)](./didclosetab%28_,windowisclosing%29.md)
   Should be called by the app when a tab is closed to fire appropriate events with all loaded web extensions.
 
 

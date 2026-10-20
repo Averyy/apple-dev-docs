@@ -1,15 +1,20 @@
 # kGraphicEQParam_NumberOfBands
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kGraphicEQParam_NumberOfBands: AudioUnitParameterID { get }
+```
+
+```c
+kGraphicEQParam_NumberOfBands
 ```
 
 

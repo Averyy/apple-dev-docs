@@ -11,10 +11,10 @@ Used for the function `CMGetProfileByUse` and `SetDefaultProfileByUse`.
 ## Topics
 
 ### Constants
-- [var cmInputUse: Int](cminputuse.md)
-- [var cmOutputUse: Int](cmoutputuse.md)
-- [var cmDisplayUse: Int](cmdisplayuse.md)
-- [var cmProofUse: Int](cmproofuse.md)
+- [var cmInputUse: Int](../cminputuse.md)
+- [var cmOutputUse: Int](../cmoutputuse.md)
+- [var cmDisplayUse: Int](../cmdisplayuse.md)
+- [var cmProofUse: Int](../cmproofuse.md)
 
 
 ---

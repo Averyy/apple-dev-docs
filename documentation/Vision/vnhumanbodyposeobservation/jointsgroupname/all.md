@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All body point groups.
 
@@ -17,6 +18,10 @@ All body point groups.
 
 ```swift
 static let all: VNHumanBodyPoseObservation.JointsGroupName
+```
+
+```c
+extern VNHumanBodyPoseObservationJointsGroupName const VNHumanBodyPoseObservationJointsGroupNameAll;
 ```
 
 

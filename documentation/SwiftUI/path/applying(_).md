@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a path constructed by applying the transform to all points of the path.
 
@@ -30,9 +31,10 @@ A new copy of the path with the transform applied to all points.
 
 ## See Also
 
-- [func offsetBy(dx: CGFloat, dy: CGFloat) -> Path](path/offsetby(dx:dy:).md)
+### Transforming the path
+- [func offsetBy(dx: CGFloat, dy: CGFloat) -> Path](./offsetby%28dx,dy%29.md)
   Returns a path constructed by translating all its points.
-- [func trimmedPath(from: CGFloat, to: CGFloat) -> Path](path/trimmedpath(from:to:).md)
+- [func trimmedPath(from: CGFloat, to: CGFloat) -> Path](./trimmedpath%28from,to%29.md)
   Returns a partial copy of the path.
 
 

@@ -1,7 +1,8 @@
 # init(name:parentID:restTransform:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a joint with the provided base elements.
 

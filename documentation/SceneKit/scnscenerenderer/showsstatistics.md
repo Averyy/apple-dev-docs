@@ -2,23 +2,28 @@
 
 **Framework**: SceneKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that determines whether SceneKit displays rendering performance statistics in an accessory view.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var showsStatistics: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL showsStatistics;
 ```
 
 #### Discussion
@@ -27,20 +32,21 @@ The SceneKit statistics view displays various information about scene rendering 
 
 ## See Also
 
-- [var pointOfView: SCNNode?](scnscenerenderer/pointofview.md)
+### Managing Scene Display
+- [var pointOfView: SCNNode?](./pointofview.md)
   The node from which the scene’s contents are viewed for rendering.
-- [var autoenablesDefaultLighting: Bool](scnscenerenderer/autoenablesdefaultlighting.md)
+- [var autoenablesDefaultLighting: Bool](./autoenablesdefaultlighting.md)
   A Boolean value that determines whether SceneKit automatically adds lights to a scene.
-- [var isJitteringEnabled: Bool](scnscenerenderer/isjitteringenabled.md)
+- [var isJitteringEnabled: Bool](./isjitteringenabled.md)
   A Boolean value that determines whether SceneKit applies jittering to reduce aliasing artifacts.
-- [var debugOptions: SCNDebugOptions](scnscenerenderer/debugoptions.md)
+- [var debugOptions: SCNDebugOptions](./debugoptions.md)
   Options for drawing overlay content in a scene that can aid debugging.
-- [var renderingAPI: SCNRenderingAPI](scnscenerenderer/renderingapi.md)
+- [var renderingAPI: SCNRenderingAPI](./renderingapi.md)
   The graphics technology SceneKit uses to render the scene.
-- [struct SCNDebugOptions](scndebugoptions.md)
-  Options for drawing overlays with SceneKit content that can aid in debugging, used with the [`debugOptions`](scnscenerenderer/debugoptions.md) property.
-- [enum SCNRenderingAPI](scnrenderingapi.md)
-  Options for choosing the graphics technology for an [`SCNView`](scnview.md) object (or other SceneKit renderer) to use for drawing its contents. Used by the [`renderingAPI`](scnscenerenderer/renderingapi.md) property and the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) option when initializing an [`SCNView`](scnview.md) object.
+- [struct SCNDebugOptions](../scndebugoptions.md)
+  Options for drawing overlays with SceneKit content that can aid in debugging, used with the [`debugOptions`](./debugoptions.md) property.
+- [enum SCNRenderingAPI](../scnrenderingapi.md)
+  Options for choosing the graphics technology for an [`SCNView`](../scnview.md) object (or other SceneKit renderer) to use for drawing its contents. Used by the [`renderingAPI`](./renderingapi.md) property and the [`preferredRenderingAPI`](../scnview/option/preferredrenderingapi.md) option when initializing an [`SCNView`](../scnview.md) object.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(sectionProvider:configuration:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a compositional layout object with a section provider and an additional configuration.
 
@@ -14,13 +15,18 @@ Creates a compositional layout object with a section provider and an additional 
 init(sectionProvider: @escaping NSCollectionViewCompositionalLayoutSectionProvider, configuration: NSCollectionViewCompositionalLayoutConfiguration)
 ```
 
+```objc
+- (instancetype) initWithSectionProvider:(NSCollectionViewCompositionalLayoutSectionProvider) sectionProvider configuration:(NSCollectionViewCompositionalLayoutConfiguration *) configuration;
+```
+
 ## See Also
 
-- [init(section: NSCollectionLayoutSection)](nscollectionviewcompositionallayout/init(section:).md)
+### Creating a Layout
+- [init(section: NSCollectionLayoutSection)](./init%28section%29.md)
   Creates a compositional layout object with a single section.
-- [init(section: NSCollectionLayoutSection, configuration: NSCollectionViewCompositionalLayoutConfiguration)](nscollectionviewcompositionallayout/init(section:configuration:).md)
+- [init(section: NSCollectionLayoutSection, configuration: NSCollectionViewCompositionalLayoutConfiguration)](./init%28section,configuration%29.md)
   Creates a compositional layout object with a single section and an additional configuration.
-- [init(sectionProvider: NSCollectionViewCompositionalLayoutSectionProvider)](nscollectionviewcompositionallayout/init(sectionprovider:).md)
+- [init(sectionProvider: NSCollectionViewCompositionalLayoutSectionProvider)](./init%28sectionprovider%29.md)
   Creates a compositional layout object with a section provider to supply the layout’s sections.
 
 

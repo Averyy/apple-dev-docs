@@ -1,7 +1,8 @@
 # containedNodeSet()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds nodes that are visible in the camera’s viewport.
 
@@ -20,6 +21,10 @@ Finds nodes that are visible in the camera’s viewport.
 func containedNodeSet() -> Set<SKNode>
 ```
 
+```objc
+- (NSSet<SKNode *> *) containedNodeSet;
+```
+
 #### Return Value
 
 The set of nodes that are in the same scene as the camera and contained in the camera’s viewport.
@@ -30,7 +35,8 @@ The camera must be part of a scene’s node hierarchy and the scene must be pres
 
 ## See Also
 
-- [func contains(SKNode) -> Bool](skcameranode/contains(_:).md)
+### Node Visibility
+- [func contains(SKNode) -> Bool](./contains%28_%29.md)
   Checks to see if a node is visible in the camera’s viewport.
 
 

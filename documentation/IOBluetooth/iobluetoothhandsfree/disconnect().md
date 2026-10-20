@@ -1,7 +1,8 @@
 # disconnect()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnect from the device
 
@@ -12,6 +13,10 @@ Disconnect from the device
 
 ```swift
 func disconnect()
+```
+
+```objc
+- (void) disconnect;
 ```
 
 #### Discussion

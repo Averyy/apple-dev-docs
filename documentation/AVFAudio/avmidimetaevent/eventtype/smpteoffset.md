@@ -1,7 +1,8 @@
 # AVMIDIMetaEvent.EventType.smpteOffset
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event type that represents a SMPTE time offset.
 
@@ -19,37 +20,42 @@ An event type that represents a SMPTE time offset.
 case smpteOffset
 ```
 
+```c
+AVMIDIMetaEventTypeSmpteOffset
+```
+
 ## See Also
 
-- [AVMIDIMetaEvent.EventType.copyright](avmidimetaevent/eventtype/copyright.md)
+### Identifying meta event types
+- [AVMIDIMetaEvent.EventType.copyright](./copyright.md)
   An event type that represents a copyright.
-- [AVMIDIMetaEvent.EventType.cuePoint](avmidimetaevent/eventtype/cuepoint.md)
+- [AVMIDIMetaEvent.EventType.cuePoint](./cuepoint.md)
   An event type that represents a cue point.
-- [AVMIDIMetaEvent.EventType.endOfTrack](avmidimetaevent/eventtype/endoftrack.md)
+- [AVMIDIMetaEvent.EventType.endOfTrack](./endoftrack.md)
   An event type that represents the end of the track.
-- [AVMIDIMetaEvent.EventType.instrument](avmidimetaevent/eventtype/instrument.md)
+- [AVMIDIMetaEvent.EventType.instrument](./instrument.md)
   An event type that represents an instrument.
-- [AVMIDIMetaEvent.EventType.keySignature](avmidimetaevent/eventtype/keysignature.md)
+- [AVMIDIMetaEvent.EventType.keySignature](./keysignature.md)
   An event type that represents a key signature.
-- [AVMIDIMetaEvent.EventType.lyric](avmidimetaevent/eventtype/lyric.md)
+- [AVMIDIMetaEvent.EventType.lyric](./lyric.md)
   An event type that represents a lyric.
-- [AVMIDIMetaEvent.EventType.marker](avmidimetaevent/eventtype/marker.md)
+- [AVMIDIMetaEvent.EventType.marker](./marker.md)
   An event type that represents a marker.
-- [AVMIDIMetaEvent.EventType.midiChannel](avmidimetaevent/eventtype/midichannel.md)
+- [AVMIDIMetaEvent.EventType.midiChannel](./midichannel.md)
   An event type that represents a MIDI channel.
-- [AVMIDIMetaEvent.EventType.midiPort](avmidimetaevent/eventtype/midiport.md)
+- [AVMIDIMetaEvent.EventType.midiPort](./midiport.md)
   An event type that represents a MIDI port.
-- [AVMIDIMetaEvent.EventType.proprietaryEvent](avmidimetaevent/eventtype/proprietaryevent.md)
+- [AVMIDIMetaEvent.EventType.proprietaryEvent](./proprietaryevent.md)
   An event type that represents a proprietary event.
-- [AVMIDIMetaEvent.EventType.sequenceNumber](avmidimetaevent/eventtype/sequencenumber.md)
+- [AVMIDIMetaEvent.EventType.sequenceNumber](./sequencenumber.md)
   An event type that represents a sequence number.
-- [AVMIDIMetaEvent.EventType.tempo](avmidimetaevent/eventtype/tempo.md)
+- [AVMIDIMetaEvent.EventType.tempo](./tempo.md)
   An event type that represents a tempo.
-- [AVMIDIMetaEvent.EventType.text](avmidimetaevent/eventtype/text.md)
+- [AVMIDIMetaEvent.EventType.text](./text.md)
   An event type that represents text.
-- [AVMIDIMetaEvent.EventType.timeSignature](avmidimetaevent/eventtype/timesignature.md)
+- [AVMIDIMetaEvent.EventType.timeSignature](./timesignature.md)
   An event type that represents a time signature.
-- [AVMIDIMetaEvent.EventType.trackName](avmidimetaevent/eventtype/trackname.md)
+- [AVMIDIMetaEvent.EventType.trackName](./trackname.md)
   An event type that represents a track name.
 
 

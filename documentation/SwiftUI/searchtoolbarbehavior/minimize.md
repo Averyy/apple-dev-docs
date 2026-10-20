@@ -1,7 +1,8 @@
 # minimize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A search toolbar behavior that prefers rendering a search field as a button-like control.
 

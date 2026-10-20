@@ -1,17 +1,22 @@
 # hideOtherApplications()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides all applications other than the sender.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func hideOtherApplications()
+```
+
+```objc
+- (void) hideOtherApplications;
 ```
 
 #### Discussion
@@ -22,7 +27,8 @@ You must call this method from your app’s main thread.
 
 ## See Also
 
-- [func openApplication(at: URL, configuration: NSWorkspace.OpenConfiguration, completionHandler: ((NSRunningApplication?, (any Error)?) -> Void)?)](nsworkspace/openapplication(at:configuration:completionhandler:).md)
+### Launching and Hiding Apps
+- [func openApplication(at: URL, configuration: NSWorkspace.OpenConfiguration, completionHandler: ((NSRunningApplication?, (any Error)?) -> Void)?)](./openapplication%28at,configuration,completionhandler%29.md)
   Launches the app at the specified URL and asynchronously reports back on the app’s status.
 
 

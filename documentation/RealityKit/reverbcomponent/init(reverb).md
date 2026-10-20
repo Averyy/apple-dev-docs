@@ -1,7 +1,8 @@
 # init(reverb:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a component from a reverberation setting.
 

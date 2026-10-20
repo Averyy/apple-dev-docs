@@ -1,7 +1,8 @@
 # defaultWidth(forInkType:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default line width for the specified tool type.
 
@@ -18,6 +19,10 @@ Returns the default line width for the specified tool type.
 class func defaultWidth(forInkType inkType: __PKInkType) -> CGFloat
 ```
 
+```objc
++ (CGFloat) defaultWidthForInkType:(PKInkType) inkType;
+```
+
 #### Return Value
 
 The default line width (in points) for the specified tool type.
@@ -28,9 +33,10 @@ The default line width (in points) for the specified tool type.
 
 ## See Also
 
-- [class func minimumWidth(forInkType: __PKInkType) -> CGFloat](pkinkingtoolreference/minimumwidth(forinktype:).md)
+### Getting the standard ink widths
+- [class func minimumWidth(forInkType: __PKInkType) -> CGFloat](./minimumwidth%28forinktype%29.md)
   Returns the minimum allowed line width for the specified tool type.
-- [class func maximumWidth(forInkType: __PKInkType) -> CGFloat](pkinkingtoolreference/maximumwidth(forinktype:).md)
+- [class func maximumWidth(forInkType: __PKInkType) -> CGFloat](./maximumwidth%28forinktype%29.md)
   Returns the maximum allowed line width for the specified tool type.
 
 

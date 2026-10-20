@@ -1,7 +1,8 @@
 # AsscEntry
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,15 +13,21 @@
 struct AsscEntry
 ```
 
+```c
+typedef struct AsscEntry {
+    ...
+} AsscEntry;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](asscentry/1458948-init.md)
-- [init(fontSize: Int16, fontStyle: Int16, fontID: Int16)](asscentry/1462127-init.md)
+- [init()](./asscentry/api-1458948-init.md)
+- [init(fontSize: Int16, fontStyle: Int16, fontID: Int16)](./asscentry/api-1462127-init.md)
 ### Instance Properties
-- [var fontID: Int16](asscentry/1458788-fontid.md)
-- [var fontSize: Int16](asscentry/1464349-fontsize.md)
-- [var fontStyle: Int16](asscentry/1460878-fontstyle.md)
+- [var fontID: Int16](./asscentry/api-1458788-fontid.md)
+- [var fontSize: Int16](./asscentry/api-1464349-fontsize.md)
+- [var fontStyle: Int16](./asscentry/api-1460878-fontstyle.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # copyDescription
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A prototype for a function callback that providesa description of the specified data. Called on the info pointer.This field may be `NULL`.
 
@@ -13,6 +14,10 @@ A prototype for a function callback that providesa description of the specified 
 
 ```swift
 var copyDescription: CFAllocatorCopyDescriptionCallBack!
+```
+
+```c
+CFAllocatorCopyDescriptionCallBack copyDescription;
 ```
 
 

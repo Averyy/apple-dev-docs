@@ -1,7 +1,8 @@
 # openTabs
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of open tabs in all open windows that are exposed to this extension.
 
@@ -18,15 +19,20 @@ A set of open tabs in all open windows that are exposed to this extension.
 var openTabs: Set<AnyHashable> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<id<WKWebExtensionTab>> * openTabs;
+```
+
 #### Discussion
 
-Provides a set of tabs in all open windows that are visible to the extension, as updated by the [`didOpenTab(_:)`](wkwebextensioncontext/didopentab(_:).md) and [`didCloseTab:windowIsClosing:`](wkwebextensioncontext/didclosetab:windowisclosing:.md) methods.
+Provides a set of tabs in all open windows that are visible to the extension, as updated by the [`didOpenTab(_:)`](./didopentab%28_%29.md) and [`didCloseTab:windowIsClosing:`](./didclosetab_windowisclosing_.md) methods.
 
-Initially populated by the tabs in the windows returned by the extension controller delegate method [`webExtensionController(_:openWindowsFor:)`](wkwebextensioncontrollerdelegate/webextensioncontroller(_:openwindowsfor:).md).
+Initially populated by the tabs in the windows returned by the extension controller delegate method [`webExtensionController(_:openWindowsFor:)`](../wkwebextensioncontrollerdelegate/webextensioncontroller%28_,openwindowsfor%29.md).
 
 ## See Also
 
-- [func didOpenTab(any WKWebExtensionTab)](wkwebextensioncontext/didopentab(_:).md)
+### Related Documentation
+- [func didOpenTab(any WKWebExtensionTab)](./didopentab%28_%29.md)
   Called by the app when a new tab is opened to fire appropriate events with only this extension.
 
 

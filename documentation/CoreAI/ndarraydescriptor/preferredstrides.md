@@ -1,7 +1,8 @@
 # preferredStrides
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strides that avoid data layout transformations during inference.
 
@@ -20,7 +21,7 @@ var preferredStrides: [Int] { get }
 
 #### Discussion
 
-During the specialization of an [`AIModel`](aimodel.md), a preferred memory layout for a given ndArray value may be set depending on structure of the model and which compute units it is specialized for. In some cases, this can result in a non-contiguous layout being preferred/required by the backing compute. In such case, you are still able to provide `InferenceFunction.run` normal contiguous ndArray values, however it may incur a copy to the preferred layout. As such, this property provides an opportunity for you to optimize performance by creating your source ndArray value with the preferred striding and avoiding that copy.
+During the specialization of an [`AIModel`](../aimodel.md), a preferred memory layout for a given ndArray value may be set depending on structure of the model and which compute units it is specialized for. In some cases, this can result in a non-contiguous layout being preferred/required by the backing compute. In such case, you are still able to provide `InferenceFunction.run` normal contiguous ndArray values, however it may incur a copy to the preferred layout. As such, this property provides an opportunity for you to optimize performance by creating your source ndArray value with the preferred striding and avoiding that copy.
 
 > **Note**: Constructing an ndArray with these preferred strides may result in a non-contiguous layout. In such case calling `ndArrayView.contiguousElements` on a view of the ndArray will return `nil`. If you choose to use the preferred strides, you must read/write the resulting ndArray by dynamically respecting whatever strides are returned:
 
@@ -45,7 +46,8 @@ if let contiguousElements = view.contiguousElements {
 
 ## See Also
 
-- [var minimumByteCount: Int](ndarraydescriptor/minimumbytecount.md)
+### Computing layout
+- [var minimumByteCount: Int](./minimumbytecount.md)
   The minimum number of bytes needed for storage with this descriptor’s shape and preferred strides.
 
 

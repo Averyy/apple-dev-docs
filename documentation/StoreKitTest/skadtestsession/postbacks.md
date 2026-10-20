@@ -1,7 +1,8 @@
 # postbacks
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of test postbacks you set in the testing environment.
 
@@ -16,17 +17,22 @@ An array of test postbacks you set in the testing environment.
 var postbacks: [SKAdTestPostback] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<SKAdTestPostback *> * postbacks;
+```
+
 #### Discussion
 
-Use this property to check that your updates to the test postbacks, such as conversion value updates, are working as expected. See [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md) for information on adding postbacks to the test session.
+Use this property to check that your updates to the test postbacks, such as conversion value updates, are working as expected. See [`setPostbacks(_:)`](./setpostbacks%28_%29.md) for information on adding postbacks to the test session.
 
 ## See Also
 
-- [func setPostbacks([SKAdTestPostback]) throws](skadtestsession/setpostbacks(_:).md)
+### Adding and sending postbacks
+- [func setPostbacks([SKAdTestPostback]) throws](./setpostbacks%28_%29.md)
   Add test postbacks to the test session.
-- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](skadtestsession/flushpostbacks(responses:).md)
+- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](./flushpostbacks%28responses%29.md)
   Sends the test postbacks and handles the responses.
-- [typealias SKANTestPostbackResponseHandler](skantestpostbackresponsehandler.md)
+- [typealias SKANTestPostbackResponseHandler](../skantestpostbackresponsehandler.md)
   A type that represents the test postback response handler.
 
 

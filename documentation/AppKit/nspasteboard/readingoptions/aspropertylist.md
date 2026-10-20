@@ -1,7 +1,8 @@
 # asPropertyList
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to read data from the pasteboard and unserialize it as a property list.
 
@@ -14,13 +15,18 @@ An option to read data from the pasteboard and unserialize it as a property list
 static var asPropertyList: NSPasteboard.ReadingOptions { get }
 ```
 
+```c
+NSPasteboardReadingAsPropertyList
+```
+
 ## See Also
 
-- [static var asData: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/asdata.md)
+### Options
+- [static var asData: NSPasteboard.ReadingOptions](./asdata.md)
   An option to read data from the pasteboard as-is and return it as a data object.
-- [static var asString: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/asstring.md)
+- [static var asString: NSPasteboard.ReadingOptions](./asstring.md)
   An option to read data from the pasteboard and convert it to a string object.
-- [static var asKeyedArchive: NSPasteboard.ReadingOptions](nspasteboard/readingoptions/askeyedarchive.md)
+- [static var asKeyedArchive: NSPasteboard.ReadingOptions](./askeyedarchive.md)
   An option to read data from the pasteboard and use it to initialize the object.
 
 

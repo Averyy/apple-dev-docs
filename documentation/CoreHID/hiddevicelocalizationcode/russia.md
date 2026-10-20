@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.russia
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Russia in the HID specification.
 

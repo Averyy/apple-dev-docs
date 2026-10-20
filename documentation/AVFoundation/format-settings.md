@@ -7,21 +7,22 @@ The audio settings that apply to all audio formats that the audio player and rec
 ## Topics
 
 ### Settings
-- [let AVFormatIDKey: String](../avfaudio/avformatidkey.md)
+- [let AVFormatIDKey: String](../AVFAudio/avformatidkey.md)
   An integer value that represents the format of the audio data.
-- [let AVSampleRateKey: String](../avfaudio/avsampleratekey.md)
+- [let AVSampleRateKey: String](../AVFAudio/avsampleratekey.md)
   A floating point value that represents the sample rate, in hertz.
-- [let AVNumberOfChannelsKey: String](../avfaudio/avnumberofchannelskey.md)
+- [let AVNumberOfChannelsKey: String](../AVFAudio/avnumberofchannelskey.md)
   An integer value that represents the number of channels.
 
 ## See Also
 
-- [class AVAudioFormat](../avfaudio/avaudioformat.md)
+### Formats
+- [class AVAudioFormat](../AVFAudio/avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](../avfaudio/avaudiochannellayout.md)
+- [class AVAudioChannelLayout](../AVFAudio/avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [let AVChannelLayoutKey: String](../avfaudio/avchannellayoutkey.md)
-- [Linear PCM format settings](linear-pcm-format-settings.md)
+- [let AVChannelLayoutKey: String](../AVFAudio/avchannellayoutkey.md)
+- [Linear PCM format settings](./linear-pcm-format-settings.md)
   The audio settings that apply to linear PCM audio formats.
 
 

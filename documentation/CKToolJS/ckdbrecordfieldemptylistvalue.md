@@ -1,7 +1,8 @@
 # CKDBRecordFieldEmptyListValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the field of type empty list.
 
@@ -10,7 +11,7 @@ The value of the field of type empty list.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldEmptyListValue {
 	string type;
 	string[]? value;
@@ -30,9 +31,9 @@ import type { CKDBRecordFieldEmptyListValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldemptylistvalue/type.md)
+- [type](./ckdbrecordfieldemptylistvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldemptylistvalue/value.md)
+- [value](./ckdbrecordfieldemptylistvalue/value.md)
   An empty array.
 
 

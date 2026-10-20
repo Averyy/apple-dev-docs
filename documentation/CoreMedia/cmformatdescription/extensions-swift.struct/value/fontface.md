@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.FontFace
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,35 +22,36 @@ struct FontFace
 ## Topics
 
 ### Font Faces
-- [static let all: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/all.md)
-- [static let bold: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/bold.md)
-- [static let italic: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/italic.md)
-- [static let underline: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/underline.md)
+- [static let all: CMFormatDescription.Extensions.Value.FontFace](./fontface/all.md)
+- [static let bold: CMFormatDescription.Extensions.Value.FontFace](./fontface/bold.md)
+- [static let italic: CMFormatDescription.Extensions.Value.FontFace](./fontface/italic.md)
+- [static let underline: CMFormatDescription.Extensions.Value.FontFace](./fontface/underline.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [OptionSet](../../../../Swift/optionset.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../../Swift/setalgebra.md)
 
 ## See Also
 
-- [CMFormatDescription.Extensions.Value.AlphaChannelMode](cmformatdescription/extensions-swift.struct/value/alphachannelmode.md)
-- [CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation.md)
-- [CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries.md)
-- [CMFormatDescription.Extensions.Value.FieldDetail](cmformatdescription/extensions-swift.struct/value/fielddetail.md)
-- [CMFormatDescription.Extensions.Value.MPEG2VideoProfile](cmformatdescription/extensions-swift.struct/value/mpeg2videoprofile.md)
-- [CMFormatDescription.Extensions.Value.TextDisplayFlags](cmformatdescription/extensions-swift.struct/value/textdisplayflags.md)
-- [CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification.md)
-- [CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction.md)
-- [CMFormatDescription.Extensions.Value.Vendor](cmformatdescription/extensions-swift.struct/value/vendor.md)
-- [CMFormatDescription.Extensions.Value.YCbCrMatrix](cmformatdescription/extensions-swift.struct/value/ycbcrmatrix.md)
+### Constants
+- [CMFormatDescription.Extensions.Value.AlphaChannelMode](./alphachannelmode.md)
+- [CMFormatDescription.Extensions.Value.ChromaLocation](./chromalocation.md)
+- [CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries.md)
+- [CMFormatDescription.Extensions.Value.FieldDetail](./fielddetail.md)
+- [CMFormatDescription.Extensions.Value.MPEG2VideoProfile](./mpeg2videoprofile.md)
+- [CMFormatDescription.Extensions.Value.TextDisplayFlags](./textdisplayflags.md)
+- [CMFormatDescription.Extensions.Value.TextJustification](./textjustification.md)
+- [CMFormatDescription.Extensions.Value.TransferFunction](./transferfunction.md)
+- [CMFormatDescription.Extensions.Value.Vendor](./vendor.md)
+- [CMFormatDescription.Extensions.Value.YCbCrMatrix](./ycbcrmatrix.md)
 
 
 ---

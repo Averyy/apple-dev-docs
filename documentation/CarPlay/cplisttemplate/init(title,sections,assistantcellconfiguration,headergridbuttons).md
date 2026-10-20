@@ -1,7 +1,8 @@
 # init(title:sections:assistantCellConfiguration:headerGridButtons:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a list template with one or more grid buttons to displayed in a list header.
 
@@ -14,6 +15,10 @@ Initialize a list template with one or more grid buttons to displayed in a list 
 
 ```swift
 init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?, headerGridButtons: [CPGridButton]?)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title sections:(NSArray<CPListSection *> *) sections assistantCellConfiguration:(CPAssistantCellConfiguration *) assistantCellConfiguration headerGridButtons:(NSArray<CPGridButton *> *) headerGridButtons;
 ```
 
 

@@ -1,7 +1,8 @@
 # endGeneratingPlaybackNotifications()
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the generation of playback notifications.
 
@@ -18,9 +19,14 @@ Ends the generation of playback notifications.
 func endGeneratingPlaybackNotifications()
 ```
 
+```objc
+- (void) endGeneratingPlaybackNotifications;
+```
+
 ## See Also
 
-- [func beginGeneratingPlaybackNotifications()](mpmusicplayercontroller/begingeneratingplaybacknotifications.md)
+### Using music player notifications
+- [func beginGeneratingPlaybackNotifications()](./begingeneratingplaybacknotifications%28%29.md)
   Starts the generation of playback notifications.
 
 

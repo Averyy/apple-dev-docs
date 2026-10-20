@@ -1,7 +1,8 @@
 # errSSLConfigurationFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 TLS configuration failed.
 
@@ -18,6 +19,10 @@ TLS configuration failed.
 
 ```swift
 var errSSLConfigurationFailed: OSStatus { get }
+```
+
+```c
+errSSLConfigurationFailed
 ```
 
 

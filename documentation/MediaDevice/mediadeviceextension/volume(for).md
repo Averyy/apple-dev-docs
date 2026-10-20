@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the current volume level for the specified device.
@@ -20,7 +21,7 @@ func volume(for device: MediaOutputDevice) -> Float
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Return Value
 
@@ -28,11 +29,11 @@ The current volume level in the range 0.0 to 1.0.
 
 #### Discussion
 
-Called when a device supports [`MediaOutputDevice.VolumeControl.absolute`](mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
+Called when a device supports [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 
 #### Grouping
 
-For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.absolute`](mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
+For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.absolute`](../mediaoutputdevice/volumecontrol-swift.enum/absolute.md).
 
 ## Parameters
 

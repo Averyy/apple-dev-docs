@@ -1,7 +1,8 @@
 # Manipulable.InputDevice.Chirality
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes hand chirality (left or right) of an input device.
 
@@ -17,18 +18,18 @@ enum Chirality
 ## Topics
 
 ### Enumeration Cases
-- [Manipulable.InputDevice.Chirality.left](manipulable/inputdevice/chirality-swift.enum/left.md)
+- [Manipulable.InputDevice.Chirality.left](./chirality-swift.enum/left.md)
   The left-handed chirality.
-- [Manipulable.InputDevice.Chirality.right](manipulable/inputdevice/chirality-swift.enum/right.md)
+- [Manipulable.InputDevice.Chirality.right](./chirality-swift.enum/right.md)
   The right-handed chirality.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(preparationHandler:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the SharePlay sharing controller with a closure that creates the activity object.
 
@@ -20,7 +21,7 @@ init<ActivityType>(preparationHandler: @escaping () async throws -> ActivityType
 
 #### Discussion
 
-The initializer executes the closure asynchronously so that your app can present the view controller in a timely manner. Use this method when the creation of the [`GroupActivity`](groupactivity.md) object might take a significant amount of time.
+The initializer executes the closure asynchronously so that your app can present the view controller in a timely manner. Use this method when the creation of the [`GroupActivity`](../groupactivity.md) object might take a significant amount of time.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ The initializer executes the closure asynchronously so that your app can present
 
 ## See Also
 
-- [init<ActivityType>(ActivityType) throws](groupactivitysharingcontroller-ybcy/init(_:).md)
+### Creating the group activity sharing controller
+- [init<ActivityType>(ActivityType) throws](./init%28_%29.md)
   Initializes the sharing controller with the specified activity and type information.
 
 

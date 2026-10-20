@@ -1,12 +1,13 @@
 # RandomAccessCollection Implementations
 
-**Framework**: Core MIDI
+**Framework**: Core MIDI  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var endIndex: Int](unsafemutablemidipacketpointer/endindex.md)
-- [var startIndex: Int](unsafemutablemidipacketpointer/startindex.md)
+- [var endIndex: Int](./endindex.md)
+- [var startIndex: Int](./startindex.md)
 
 
 ---

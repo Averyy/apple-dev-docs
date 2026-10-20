@@ -1,7 +1,8 @@
 # isUserInteractive
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this service supports user interaction.
 
@@ -19,9 +20,14 @@ A Boolean value that indicates whether this service supports user interaction.
 var isUserInteractive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isUserInteractive) BOOL userInteractive;
+```
+
 ## See Also
 
-- [var isPrimaryService: Bool](hmservice/isprimaryservice.md)
+### Reading service properties
+- [var isPrimaryService: Bool](./isprimaryservice.md)
   A Boolean value that indicates whether this service is the primary service on the accessory.
 
 

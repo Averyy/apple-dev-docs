@@ -1,7 +1,8 @@
 # keySpecifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a specifier for the object or objects to be cloned.
 
@@ -15,18 +16,24 @@ Returns a specifier for the object or objects to be cloned.
 var keySpecifier: NSScriptObjectSpecifier { get }
 ```
 
+```objc
+@property (retain, readonly) NSScriptObjectSpecifier * keySpecifier;
+```
+
 #### Return Value
 
 A specifier for the object or objects to be cloned.
 
 #### Discussion
 
-For example, the specifier may indicate that a document’s third rectangle should be cloned. The returned specifier is valid only in the context of the `NSCloneCommand` object; for example, if you send the specifier a [`container`](nsscriptobjectspecifier/container.md) message, the result is `nil`.
+For example, the specifier may indicate that a document’s third rectangle should be cloned. The returned specifier is valid only in the context of the `NSCloneCommand` object; for example, if you send the specifier a [`container`](../nsscriptobjectspecifier/container.md) message, the result is `nil`.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [func setReceiversSpecifier(NSScriptObjectSpecifier?)](nsclonecommand/setreceiversspecifier(_:).md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Working with specifiers
+- [func setReceiversSpecifier(NSScriptObjectSpecifier?)](./setreceiversspecifier%28_%29.md)
   Sets the receiver’s object specifier;.
 
 

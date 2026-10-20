@@ -1,7 +1,8 @@
 # keysSortedByValue(comparator:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values using a given comparator block.
 
@@ -20,6 +21,10 @@ Returns an array of the dictionary’s keys, in the order they would be in if th
 func keysSortedByValue(comparator cmptr: (Any, Any) -> ComparisonResult) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) keysSortedByValueUsingComparator:(NSComparator) cmptr;
+```
+
 #### Return Value
 
 An array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values using `cmptr`.
@@ -30,9 +35,10 @@ An array of the dictionary’s keys, in the order they would be in if the dictio
 
 ## See Also
 
-- [func keysSortedByValue(using: Selector) -> [Any]](nsdictionary/keyssortedbyvalue(using:).md)
+### Sorting Dictionaries
+- [func keysSortedByValue(using: Selector) -> [Any]](./keyssortedbyvalue%28using%29.md)
   Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values.
-- [func keysSortedByValue(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](nsdictionary/keyssortedbyvalue(options:usingcomparator:).md)
+- [func keysSortedByValue(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](./keyssortedbyvalue%28options,usingcomparator%29.md)
   Returns an array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values using a given comparator block and a specified set of options.
 
 

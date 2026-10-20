@@ -1,7 +1,8 @@
 # battery
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s battery information.
 
@@ -20,15 +21,20 @@ The controller’s battery information.
 var battery: GCDeviceBattery? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) GCDeviceBattery * battery;
+```
+
 #### Discussion
 
 Use this property to display the battery life or to warn the user when the controller’s battery level is low. If the controller doesn’t provide battery information, this property is `nil`.
 
 ## See Also
 
-- [var haptics: GCDeviceHaptics?](gccontroller/haptics.md)
+### Accessing battery, haptics, and light objects
+- [var haptics: GCDeviceHaptics?](./haptics.md)
   The controller’s haptics information.
-- [var light: GCDeviceLight?](gccontroller/light.md)
+- [var light: GCDeviceLight?](./light.md)
   The controller’s light settings.
 
 

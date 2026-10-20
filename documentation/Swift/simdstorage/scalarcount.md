@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of scalars, or elements, in the vector.
@@ -20,6 +21,12 @@ The number of scalars, or elements, in the vector.
 ```swift
 var scalarCount: Int { get }
 ```
+
+## Default Implementations
+
+### SIMDStorage Implementations
+- [static var scalarCount: Int](./scalarcount-swift.type.property.md)
+  The number of scalars, or elements, in a vector of this type.
 
 
 ---

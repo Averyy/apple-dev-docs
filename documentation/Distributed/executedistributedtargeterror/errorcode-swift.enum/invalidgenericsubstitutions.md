@@ -1,7 +1,8 @@
 # ExecuteDistributedTargetError.ErrorCode.invalidGenericSubstitutions
 
 **Framework**: Distributed  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Generic substitutions provided by invocation decoder are incompatible with target of the call. E.g. the generic requirements on the actual target could not be fulfilled by the obtained generic substitutions.
 
@@ -11,7 +12,7 @@ Generic substitutions provided by invocation decoder are incompatible with targe
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

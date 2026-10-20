@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom render layer with the specified compile-time constant name.
 
@@ -29,9 +30,9 @@ extension RenderLayer {
 }
 ```
 
-To create a layer from a runtime string, use [`init(rawValue:)`](renderlayer/init(rawvalue:).md) instead.
+To create a layer from a runtime string, use [`init(rawValue:)`](./init%28rawvalue%29.md) instead.
 
-> **Note**: The layer name must not be empty.
+> **Precondition**: The layer name must not be empty.
 
 ## Parameters
 

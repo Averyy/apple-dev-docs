@@ -1,7 +1,8 @@
 # NEVPNIKEv2TLSVersion
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of TLS Versions for use in EAP-TLS.
 
@@ -19,37 +20,42 @@ An enumeration of TLS Versions for use in EAP-TLS.
 enum NEVPNIKEv2TLSVersion
 ```
 
+```c
+enum NEVPNIKEv2TLSVersion : NSInteger;
+```
+
 ## Topics
 
 ### TLS versions
-- [NEVPNIKEv2TLSVersion.versionDefault](nevpnikev2tlsversion/versiondefault.md)
+- [NEVPNIKEv2TLSVersion.versionDefault](./nevpnikev2tlsversion/versiondefault.md)
   A value to use the default TLS configuration.
-- [NEVPNIKEv2TLSVersion.version1_0](nevpnikev2tlsversion/version1_0.md)
+- [NEVPNIKEv2TLSVersion.version1_0](./nevpnikev2tlsversion/version1_0.md)
   A value to use TLS version 1.0.
-- [NEVPNIKEv2TLSVersion.version1_1](nevpnikev2tlsversion/version1_1.md)
+- [NEVPNIKEv2TLSVersion.version1_1](./nevpnikev2tlsversion/version1_1.md)
   A value to use TLS version 1.1.
-- [NEVPNIKEv2TLSVersion.version1_2](nevpnikev2tlsversion/version1_2.md)
+- [NEVPNIKEv2TLSVersion.version1_2](./nevpnikev2tlsversion/version1_2.md)
   A value to use TLS version 1.2.
 ### Enumeration Cases
-- [NEVPNIKEv2TLSVersion.version1_3](nevpnikev2tlsversion/version1_3.md)
+- [NEVPNIKEv2TLSVersion.version1_3](./nevpnikev2tlsversion/version1_3.md)
 ### Initializers
-- [init?(rawValue: Int)](nevpnikev2tlsversion/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nevpnikev2tlsversion/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var minimumTLSVersion: NEVPNIKEv2TLSVersion](nevpnprotocolikev2/minimumtlsversion.md)
+### Accessing TLS version properties
+- [var minimumTLSVersion: NEVPNIKEv2TLSVersion](./nevpnprotocolikev2/minimumtlsversion.md)
   The minimum TLS version to allow for EAP-TLS authentication.
-- [var maximumTLSVersion: NEVPNIKEv2TLSVersion](nevpnprotocolikev2/maximumtlsversion.md)
+- [var maximumTLSVersion: NEVPNIKEv2TLSVersion](./nevpnprotocolikev2/maximumtlsversion.md)
   The minimum TLS version to allow for EAP-TLS authentication.
 
 

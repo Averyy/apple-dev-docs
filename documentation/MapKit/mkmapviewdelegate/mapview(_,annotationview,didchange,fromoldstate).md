@@ -1,7 +1,8 @@
 # mapView(_:annotationView:didChange:fromOldState:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the drag state of one of its annotation views changes.
 
@@ -16,6 +17,10 @@ Tells the delegate when the drag state of one of its annotation views changes.
 
 ```swift
 optional func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState)
+```
+
+```objc
+- (void) mapView:(MKMapView *) mapView annotationView:(MKAnnotationView *) view didChangeDragState:(MKAnnotationViewDragState) newState fromOldState:(MKAnnotationViewDragState) oldState;
 ```
 
 #### Discussion

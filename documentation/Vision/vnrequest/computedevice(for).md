@@ -1,7 +1,8 @@
 # computeDevice(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the compute device for a compute stage.
 
@@ -29,9 +30,10 @@ The current compute device; otherwise, `nil` if one isn’t assigned.
 
 ## See Also
 
-- [func setComputeDevice(MLComputeDevice?, for: VNComputeStage)](vnrequest/setcomputedevice(_:for:).md)
+### Configuring the Compute Device
+- [func setComputeDevice(MLComputeDevice?, for: VNComputeStage)](./setcomputedevice%28_,for%29.md)
   Assigns a compute device for a compute stage.
-- [var supportedComputeStageDevices: [VNComputeStage : [MLComputeDevice]]](vnrequest/supportedcomputestagedevices.md)
+- [var supportedComputeStageDevices: [VNComputeStage : [MLComputeDevice]]](./supportedcomputestagedevices.md)
   The collection of compute devices per stage that a request supports.
 
 

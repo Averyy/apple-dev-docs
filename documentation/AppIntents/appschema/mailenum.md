@@ -1,7 +1,8 @@
 # AppSchema.MailEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the mail domain.
 
@@ -21,15 +22,15 @@ protocol MailEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var category: some AppSchemaEnum](appschema/mailenum/category.md)
+- [var category: some AppSchemaEnum](./mailenum/category.md)
   An enum schema for a category parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 
 ---

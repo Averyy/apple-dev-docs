@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a run loop scheduler time interval from a binary integer type.
 
@@ -26,11 +27,12 @@ If `exactly` can’t convert to an `Int`, the resulting time interval is `nil`.
 
 ## See Also
 
-- [init(TimeInterval)](runloop/schedulertimetype/stride/init(_:).md)
+### Creating Scheduler Time Strides
+- [init(TimeInterval)](./init%28_%29.md)
   Creates a run loop scheduler time interval from the given time interval.
-- [init(floatLiteral: TimeInterval)](runloop/schedulertimetype/stride/init(floatliteral:).md)
+- [init(floatLiteral: TimeInterval)](./init%28floatliteral%29.md)
   Creates a run loop scheduler time interval from a floating-point seconds value.
-- [init(integerLiteral: TimeInterval)](runloop/schedulertimetype/stride/init(integerliteral:).md)
+- [init(integerLiteral: TimeInterval)](./init%28integerliteral%29.md)
   Creates a run loop scheduler time interval from an integer seconds value.
 
 

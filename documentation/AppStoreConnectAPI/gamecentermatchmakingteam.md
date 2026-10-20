@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTeam
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A team configuration within a Game Center matchmaking rule set, defining team size and composition rules.
 
@@ -10,14 +11,14 @@ A team configuration within a Game Center matchmaking rule set, defining team si
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTeam
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingTeam.Attributes](gamecentermatchmakingteam/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingTeam.Attributes](./gamecentermatchmakingteam/attributes-data.dictionary.md)
   The attributes of a game-specific team.
 
 ## Properties
@@ -27,15 +28,18 @@ object GameCenterMatchmakingTeam
 - `links` (ResourceLinks): The link representations of the object.
 - `type` (string) *(required)*: The type of resource object.
 
+  **Allowed Values**: `gameCenterMatchmakingTeams`
+
 ## See Also
 
-- [object GameCenterMatchmakingTeamCreateRequest](gamecentermatchmakingteamcreaterequest.md)
+### Objects
+- [object GameCenterMatchmakingTeamCreateRequest](./gamecentermatchmakingteamcreaterequest.md)
   The request body you use to create a team.
-- [object GameCenterMatchmakingTeamUpdateRequest](gamecentermatchmakingteamupdaterequest.md)
+- [object GameCenterMatchmakingTeamUpdateRequest](./gamecentermatchmakingteamupdaterequest.md)
   The request body you use to modify a team.
-- [object GameCenterMatchmakingTeamResponse](gamecentermatchmakingteamresponse.md)
+- [object GameCenterMatchmakingTeamResponse](./gamecentermatchmakingteamresponse.md)
   The response body for endpoints that create or modify a team.
-- [object GameCenterMatchmakingTeamsResponse](gamecentermatchmakingteamsresponse.md)
+- [object GameCenterMatchmakingTeamsResponse](./gamecentermatchmakingteamsresponse.md)
   The response body for endpoints that get multiple teams.
 
 

@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system detent for a sheet that’s approximately half the height of the screen, and is inactive in compact height.
 
@@ -22,7 +23,8 @@ static let medium: PresentationDetent
 
 ## See Also
 
-- [static let large: PresentationDetent](presentationdetent/large.md)
+### Getting built-in detents
+- [static let large: PresentationDetent](./large.md)
   The system detent for a sheet at full height.
 
 

@@ -1,7 +1,8 @@
 # removeCookies(since:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes cookies that were stored after a given date.
 
@@ -20,19 +21,24 @@ Removes cookies that were stored after a given date.
 func removeCookies(since date: Date)
 ```
 
+```objc
+- (void) removeCookiesSinceDate:(NSDate *) date;
+```
+
 ## Parameters
 
 - `date`: The date after which cookies should be removed.
 
 ## See Also
 
-- [func deleteCookie(HTTPCookie)](httpcookiestorage/deletecookie(_:).md)
+### Adding and removing cookies
+- [func deleteCookie(HTTPCookie)](./deletecookie%28_%29.md)
   Deletes the specified cookie from the cookie storage.
-- [func setCookie(HTTPCookie)](httpcookiestorage/setcookie(_:).md)
+- [func setCookie(HTTPCookie)](./setcookie%28_%29.md)
   Stores a specified cookie in the cookie storage if the cookie accept policy permits.
-- [func setCookies([HTTPCookie], for: URL?, mainDocumentURL: URL?)](httpcookiestorage/setcookies(_:for:maindocumenturl:).md)
+- [func setCookies([HTTPCookie], for: URL?, mainDocumentURL: URL?)](./setcookies%28_,for,maindocumenturl%29.md)
   Adds an array of cookies to the cookie storage if the storage’s cookie acceptance policy permits.
-- [func storeCookies([HTTPCookie], for: URLSessionTask)](httpcookiestorage/storecookies(_:for:).md)
+- [func storeCookies([HTTPCookie], for: URLSessionTask)](./storecookies%28_,for%29.md)
   Stores an array of cookies in the cookie storage, on behalf of the provided task, if the cookie accept policy permits.
 
 

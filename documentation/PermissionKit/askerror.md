@@ -1,7 +1,8 @@
 # AskError
 
 **Framework**: PermissionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents errors you encounter when asking a person to send a communication permission question.
 
@@ -21,28 +22,28 @@ enum AskError
 ## Topics
 
 ### Handling errors
-- [AskError.unknown](askerror/unknown.md)
+- [AskError.unknown](./askerror/unknown.md)
   Indicates an unknown error response.
-- [AskError.communicationLimitsNotEnabled](askerror/communicationlimitsnotenabled.md)
+- [AskError.communicationLimitsNotEnabled](./askerror/communicationlimitsnotenabled.md)
   Indicates communication limits isn’t enabled to send permission requests.
-- [AskError.contactSyncNotSetup](askerror/contactsyncnotsetup.md)
+- [AskError.contactSyncNotSetup](./askerror/contactsyncnotsetup.md)
   Indicates contact sync isn’t enabled to send permission requests.
-- [AskError.invalidQuestion](askerror/invalidquestion.md)
+- [AskError.invalidQuestion](./askerror/invalidquestion.md)
   Indicates your permission request is invalid.
-- [case systemError(underlyingError: any Error)](askerror/systemerror(underlyingerror:).md)
+- [case systemError(underlyingError: any Error)](./askerror/systemerror%28underlyingerror%29.md)
 ### Enumeration Cases
-- [AskError.notAvailable](askerror/notavailable.md)
+- [AskError.notAvailable](./askerror/notavailable.md)
 ### Instance Properties
-- [var errorDescription: String?](askerror/errordescription.md)
+- [var errorDescription: String?](./askerror/errordescription.md)
   The localized description of the error.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

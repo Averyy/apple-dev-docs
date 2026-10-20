@@ -1,12 +1,13 @@
 # mouseEvent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mouse event occurred.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A mouse event occurred.
 static var mouseEvent: NSEvent.EventSubtype { get }
 ```
 
+```c
+NSEventSubtypeMouseEvent
+```
+
 ## See Also
 
-- [static var tabletPoint: NSEvent.EventSubtype](nsevent/eventsubtype/tabletpoint.md)
+### Getting Other Subtypes
+- [static var tabletPoint: NSEvent.EventSubtype](./tabletpoint.md)
   A tablet-pointer event occurred.
-- [static var tabletProximity: NSEvent.EventSubtype](nsevent/eventsubtype/tabletproximity.md)
+- [static var tabletProximity: NSEvent.EventSubtype](./tabletproximity.md)
   A tablet-proximity event occurred.
-- [NSEvent.EventSubtype.touch](nsevent/eventsubtype/touch.md)
+- [NSEvent.EventSubtype.touch](./touch.md)
   A touch event occurred.
 
 

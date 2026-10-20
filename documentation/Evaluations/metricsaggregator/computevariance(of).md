@@ -1,7 +1,8 @@
 # computeVariance(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the variance of a metric and adds it to the aggregated results.
 
@@ -26,7 +27,8 @@ mutating func computeVariance(of metric: Metric)
 
 ## See Also
 
-- [func computeStandardDeviation(of: Metric)](metricsaggregator/computestandarddeviation(of:).md)
+### Computing variability
+- [func computeStandardDeviation(of: Metric)](./computestandarddeviation%28of%29.md)
   Computes the standard deviation of a metric and adds it to the aggregated results.
 
 

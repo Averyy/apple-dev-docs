@@ -1,7 +1,8 @@
 # sec_protocol_options_set_tls_is_fallback_attempt(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -18,11 +19,15 @@
 func sec_protocol_options_set_tls_is_fallback_attempt(_ options: sec_protocol_options_t, _ is_fallback_attempt: Bool)
 ```
 
+```c
+void sec_protocol_options_set_tls_is_fallback_attempt(sec_protocol_options_t options, bool is_fallback_attempt);
+```
+
 #### Discussion
 
 Signal if this is a TLS fallback attempt.
 
-```None
+```
  A fallback attempt is one following a previously failed TLS connection
  due to version or parameter incompatibility, e.g., when speaking to a server
  that does not support a client-offered ciphersuite.

@@ -1,7 +1,8 @@
 # magic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Particles that twinkle and emit spawn particles
 

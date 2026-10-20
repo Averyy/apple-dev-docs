@@ -1,17 +1,18 @@
 # playBackward
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If set, the region is played backward.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ If set, the region is played backward.
 static var playBackward: AudioFileRegionFlags { get }
 ```
 
+```c
+kAudioFileRegionFlag_PlayBackward
+```
+
 ## See Also
 
-- [static var loopEnable: AudioFileRegionFlags](audiofileregionflags/loopenable.md)
+### Constants
+- [static var loopEnable: AudioFileRegionFlags](./loopenable.md)
   If set, the region is looped. You must set one or both of the remaining flags must also be set for the region to be looped.
-- [static var playForward: AudioFileRegionFlags](audiofileregionflags/playforward.md)
+- [static var playForward: AudioFileRegionFlags](./playforward.md)
   If set, the region is played forward.
 
 

@@ -1,7 +1,8 @@
 # IMKModeDictionary
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,16 +13,21 @@
 let IMKModeDictionary: String
 ```
 
+```c
+extern const NSString * IMKModeDictionary;
+```
+
 #### Discussion
 
 The key used to obtain an input method mode dictionary from the input method bundle.
 
 ## See Also
 
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](imkcandidatessendserverkeyeventfirst.md)
-- [let IMKControllerClass: String](imkcontrollerclass.md)
-- [let IMKDelegateClass: String](imkdelegateclass.md)
+### Constants
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+- [let IMKCandidatesSendServerKeyEventFirst: String](./imkcandidatessendserverkeyeventfirst.md)
+- [let IMKControllerClass: String](./imkcontrollerclass.md)
+- [let IMKDelegateClass: String](./imkdelegateclass.md)
 
 
 ---

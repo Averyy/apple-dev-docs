@@ -1,7 +1,8 @@
 # GCControllerDirectionPadValueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The signature for the block that executes when either axis changes values.
 
@@ -19,6 +20,10 @@ The signature for the block that executes when either axis changes values.
 typealias GCControllerDirectionPadValueChangedHandler = (GCControllerDirectionPad, Float, Float) -> Void
 ```
 
+```c
+typedef void (^)(GCControllerDirectionPad *, float, float) GCControllerDirectionPadValueChangedHandler;
+```
+
 ## Parameters
 
 - `dpad`: The directional pad element that changed.
@@ -27,7 +32,8 @@ typealias GCControllerDirectionPadValueChangedHandler = (GCControllerDirectionPa
 
 ## See Also
 
-- [var valueChangedHandler: GCControllerDirectionPadValueChangedHandler?](gccontrollerdirectionpad/valuechangedhandler.md)
+### Getting change information
+- [var valueChangedHandler: GCControllerDirectionPadValueChangedHandler?](./gccontrollerdirectionpad/valuechangedhandler.md)
   The block that the directional pad calls when the user changes its values.
 
 

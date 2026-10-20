@@ -1,17 +1,22 @@
 # setEventRefCon(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the C-API callback refCon used when the session recieves data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setEventRefCon(_ inRefCon: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) setEventRefCon:(void *) inRefCon;
 ```
 
 #### Discussion

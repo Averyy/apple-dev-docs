@@ -1,7 +1,8 @@
 # unique
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Passing this option indicates that duplicate values should be removed from the results.
 
@@ -20,9 +21,14 @@ Passing this option indicates that duplicate values should be removed from the r
 static var unique: CTFontCollectionCopyOptions { get }
 ```
 
+```c
+kCTFontCollectionCopyUnique
+```
+
 ## See Also
 
-- [static var standardSort: CTFontCollectionCopyOptions](ctfontcollectioncopyoptions/standardsort.md)
+### Constants
+- [static var standardSort: CTFontCollectionCopyOptions](./standardsort.md)
   Passing this option indicates that the return values should be sorted in standard UI order, suitable for display to the user. This is the same sorting behavior used by `NSFontPanel` and Font Book.
 
 

@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.SoundStageSize.medium
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pulls an audio stream’s channels closer to the channel layout’s front.
 

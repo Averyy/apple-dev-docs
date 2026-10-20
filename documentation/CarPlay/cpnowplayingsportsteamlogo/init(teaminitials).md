@@ -1,7 +1,8 @@
 # init(teamInitials:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 If no team logo image is available, initialize a team logo with an abbreviation or initialism for this team.
 
@@ -14,6 +15,10 @@ If no team logo image is available, initialize a team logo with an abbreviation 
 
 ```swift
 init(teamInitials: String)
+```
+
+```objc
+- (instancetype) initWithTeamInitials:(NSString *) teamInitials;
 ```
 
 #### Discussion

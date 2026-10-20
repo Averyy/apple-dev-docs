@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A localized message providing “help” text if the user requests help.
@@ -20,6 +21,12 @@ A localized message providing “help” text if the user requests help.
 ```swift
 var helpAnchor: String? { get }
 ```
+
+## Default Implementations
+
+### LocalizedError Implementations
+- [var helpAnchor: String?](./helpanchor-7ij2f.md)
+  A localized message providing “help” text if the user requests help.
 
 
 ---

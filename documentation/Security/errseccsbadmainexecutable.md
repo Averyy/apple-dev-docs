@@ -1,7 +1,8 @@
 # errSecCSBadMainExecutable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The main executable failed strict validation.
 
@@ -13,6 +14,10 @@ The main executable failed strict validation.
 
 ```swift
 var errSecCSBadMainExecutable: OSStatus { get }
+```
+
+```c
+errSecCSBadMainExecutable
 ```
 
 

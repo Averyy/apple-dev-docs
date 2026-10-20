@@ -1,9 +1,10 @@
 # LitLightingModel.SpecularModel
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The specular lighting algorithm used in a [`LitLightingModel`](litlightingmodel.md).
+The specular lighting algorithm used in a [`LitLightingModel`](../litlightingmodel.md).
 
 **Availability**:
 - iOS 27.0+
@@ -22,30 +23,31 @@ enum SpecularModel
 ## Topics
 
 ### Choosing a specular model
-- [LitLightingModel.SpecularModel.ggx](litlightingmodel/specularmodel-swift.enum/ggx.md)
+- [LitLightingModel.SpecularModel.ggx](./specularmodel-swift.enum/ggx.md)
   GGX (Trowbridge-Reitz) specular, a physically based microfacet model.
-- [LitLightingModel.SpecularModel.anisotropicGGX](litlightingmodel/specularmodel-swift.enum/anisotropicggx.md)
+- [LitLightingModel.SpecularModel.anisotropicGGX](./specularmodel-swift.enum/anisotropicggx.md)
   Anisotropic GGX specular, for surfaces with directional highlight variation such as brushed metal.
-- [LitLightingModel.SpecularModel.blinnPhong](litlightingmodel/specularmodel-swift.enum/blinnphong.md)
+- [LitLightingModel.SpecularModel.blinnPhong](./specularmodel-swift.enum/blinnphong.md)
   Blinn-Phong specular, a simple and performant approximation.
-- [LitLightingModel.SpecularModel.sheen](litlightingmodel/specularmodel-swift.enum/sheen.md)
+- [LitLightingModel.SpecularModel.sheen](./specularmodel-swift.enum/sheen.md)
   Sheen specular, designed for cloth and fabric surfaces.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var diffuseModel: LitLightingModel.DiffuseModel](litlightingmodel/diffusemodel-swift.property.md)
+### Configuring shading models
+- [var diffuseModel: LitLightingModel.DiffuseModel](./diffusemodel-swift.property.md)
   The diffuse algorithm to use.
-- [LitLightingModel.DiffuseModel](litlightingmodel/diffusemodel-swift.enum.md)
-  The diffuse lighting algorithm used in a [`LitLightingModel`](litlightingmodel.md).
-- [var specularModel: LitLightingModel.SpecularModel](litlightingmodel/specularmodel-swift.property.md)
+- [LitLightingModel.DiffuseModel](./diffusemodel-swift.enum.md)
+  The diffuse lighting algorithm used in a [`LitLightingModel`](../litlightingmodel.md).
+- [var specularModel: LitLightingModel.SpecularModel](./specularmodel-swift.property.md)
   The specular algorithm to use.
 
 

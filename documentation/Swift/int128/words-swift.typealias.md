@@ -1,7 +1,8 @@
 # Int128.Words
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the words of a binary integer.
 

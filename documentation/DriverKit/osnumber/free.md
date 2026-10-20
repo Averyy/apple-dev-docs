@@ -1,28 +1,30 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [withNumber](osnumber/withnumber-5rcqv.md)
+### Creating a Number Object
+- [withNumber](./withnumber-5rcqv.md)
   Allocates an OSNumber object with value and size.
-- [withNumber](osnumber/withnumber-2c6oe.md)
+- [withNumber](./withnumber-2c6oe.md)
   Allocates an OSNumber object with value from a c-string and size.
-- [OSNumberCreateWithUInt64Value](osnumbercreatewithuint64value.md)
-- [OSNumberPtr](osnumberptr.md)
+- [OSNumberCreateWithUInt64Value](../osnumbercreatewithuint64value.md)
+- [OSNumberPtr](../osnumberptr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # vertexCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of vertices to allocate space for.
 

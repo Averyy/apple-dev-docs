@@ -1,7 +1,8 @@
 # kQLThumbnailOptionScaleFactorKey
 
 **Framework**: Quick Look  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The scale factor for the thumbnail.
 
@@ -14,19 +15,24 @@ The scale factor for the thumbnail.
 let kQLThumbnailOptionScaleFactorKey: CFString!
 ```
 
+```c
+extern CFStringRef const kQLThumbnailOptionScaleFactorKey;
+```
+
 #### Discussion
 
-The scale factor is a `float` value that’s encapsulated in a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. If this option is absent, the default value is `1.0`.
+The scale factor is a `float` value that’s encapsulated in a [`CFNumber`](../CoreFoundation/cfnumber.md) object. If this option is absent, the default value is `1.0`.
 
 ## See Also
 
-- [var kQLReturnMask: Int32](kqlreturnmask.md)
+### Constants
+- [var kQLReturnMask: Int32](./kqlreturnmask.md)
   The Quick Look generator can create a preview.
-- [var kQLReturnHasMore: Int32](kqlreturnhasmore.md)
+- [var kQLReturnHasMore: Int32](./kqlreturnhasmore.md)
   The Quick Look generator has more content to display as part of the preview.
-- [let kQLThumbnailOptionIconModeKey: CFString!](kqlthumbnailoptioniconmodekey.md)
+- [let kQLThumbnailOptionIconModeKey: CFString!](./kqlthumbnailoptioniconmodekey.md)
   The Quick Look generator produces the thumbnail as an icon with decor.
-- [var QUICKLOOK_VERSION: Int32](quicklook_version.md)
+- [var QUICKLOOK_VERSION: Int32](./quicklook_version.md)
 
 
 ---

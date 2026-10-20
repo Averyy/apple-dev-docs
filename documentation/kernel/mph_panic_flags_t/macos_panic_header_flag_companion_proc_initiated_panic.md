@@ -1,14 +1,15 @@
 # MACOS_PANIC_HEADER_FLAG_COMPANION_PROC_INITIATED_PANIC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 MACOS_PANIC_HEADER_FLAG_COMPANION_PROC_INITIATED_PANIC
 ```
 

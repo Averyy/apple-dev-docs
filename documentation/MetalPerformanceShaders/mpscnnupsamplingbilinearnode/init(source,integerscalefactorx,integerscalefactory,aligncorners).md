@@ -1,7 +1,8 @@
 # init(source:integerScaleFactorX:integerScaleFactorY:alignCorners:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init(source sourceNode: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int, alignCorners: Bool)
 ```
 
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) sourceNode integerScaleFactorX:(NSUInteger) integerScaleFactorX integerScaleFactorY:(NSUInteger) integerScaleFactorY alignCorners:(BOOL) alignCorners;
+```
+
 ## See Also
 
-- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilinearnode/init(source:integerscalefactorx:integerscalefactory:).md)
+### Initializers
+- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](./init%28source,integerscalefactorx,integerscalefactory%29.md)
 
 
 ---

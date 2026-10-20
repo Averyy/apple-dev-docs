@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an import manager.
 
@@ -13,6 +14,10 @@ Initializes an import manager.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

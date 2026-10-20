@@ -1,7 +1,8 @@
 # operation
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aggregation operation that produced this value.
 

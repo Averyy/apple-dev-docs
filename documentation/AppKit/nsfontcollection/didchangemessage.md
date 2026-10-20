@@ -1,7 +1,8 @@
 # NSFontCollection.DidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,19 +16,19 @@ struct DidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(fontCollection: NSFontCollection, action: NSFontCollection.ActionTypeKey, collectionName: String?, oldName: String?, visibility: NSFontCollection.Visibility?)](nsfontcollection/didchangemessage/init(fontcollection:action:collectionname:oldname:visibility:).md)
+- [init(fontCollection: NSFontCollection, action: NSFontCollection.ActionTypeKey, collectionName: String?, oldName: String?, visibility: NSFontCollection.Visibility?)](./didchangemessage/init%28fontcollection,action,collectionname,oldname,visibility%29.md)
 ### Instance Properties
-- [var action: NSFontCollection.ActionTypeKey](nsfontcollection/didchangemessage/action.md)
-- [var collectionName: String?](nsfontcollection/didchangemessage/collectionname.md)
-- [var fontCollection: NSFontCollection](nsfontcollection/didchangemessage/fontcollection.md)
-- [var oldName: String?](nsfontcollection/didchangemessage/oldname.md)
-- [var visibility: NSFontCollection.Visibility?](nsfontcollection/didchangemessage/visibility.md)
+- [var action: NSFontCollection.ActionTypeKey](./didchangemessage/action.md)
+- [var collectionName: String?](./didchangemessage/collectionname.md)
+- [var fontCollection: NSFontCollection](./didchangemessage/fontcollection.md)
+- [var oldName: String?](./didchangemessage/oldname.md)
+- [var visibility: NSFontCollection.Visibility?](./didchangemessage/visibility.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

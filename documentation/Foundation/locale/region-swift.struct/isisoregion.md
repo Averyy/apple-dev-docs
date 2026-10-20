@@ -1,7 +1,8 @@
 # isISORegion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the region is an ISO-defined region.
 
@@ -22,13 +23,14 @@ var isISORegion: Bool { get }
 
 ## See Also
 
-- [var identifier: String](locale/region-swift.struct/identifier.md)
+### Examining region properties
+- [var identifier: String](./identifier.md)
   The BCP 47 identifier of the region.
-- [var containingRegion: Locale.Region?](locale/region-swift.struct/containingregion.md)
+- [var containingRegion: Locale.Region?](./containingregion.md)
   The region that contains this region, if any.
-- [var continent: Locale.Region?](locale/region-swift.struct/continent.md)
+- [var continent: Locale.Region?](./continent.md)
   The continent that contains this region, if any.
-- [var subRegions: [Locale.Region]](locale/region-swift.struct/subregions.md)
+- [var subRegions: [Locale.Region]](./subregions.md)
   An array of all the sub-regions of the region.
 
 

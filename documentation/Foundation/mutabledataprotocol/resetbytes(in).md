@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces the contents of the data buffer with zeros for the provided range.
@@ -34,6 +35,12 @@ dest.resetBytes(in: 1...3)
 ## Parameters
 
 - `range`: The range of bytes to replace with zeros.
+
+## Default Implementations
+
+### MutableDataProtocol Implementations
+- [func resetBytes<R>(in: R)](./resetbytes%28in%29-9ix6g.md)
+  Replaces the contents of the data buffer with zeros for the provided range.
 
 
 ---

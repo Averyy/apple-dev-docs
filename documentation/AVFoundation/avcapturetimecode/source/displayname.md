@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the timecode source.
 
@@ -18,15 +19,20 @@ The name of the timecode source.
 var displayName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nonnull) NSString * displayName;
+```
+
 #### Discussion
 
 This property provides a descriptive name of the timecode source, useful for display in user interfaces or logging.
 
 ## See Also
 
-- [var type: AVCaptureTimecode.SourceType](avcapturetimecode/source/type.md)
+### Inspecting the source
+- [var type: AVCaptureTimecode.SourceType](./type.md)
   The type of timecode source.
-- [var uuid: UUID](avcapturetimecode/source/uuid.md)
+- [var uuid: UUID](./uuid.md)
   A unique identifier for the timecode source.
 
 

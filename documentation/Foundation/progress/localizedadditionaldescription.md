@@ -1,7 +1,8 @@
 # localizedAdditionalDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A more specific localized description of tracked progress for the receiver.
 
@@ -20,11 +21,15 @@ A more specific localized description of tracked progress for the receiver.
 var localizedAdditionalDescription: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * localizedAdditionalDescription;
+```
+
 #### Discussion
 
-If you don’t specify your own custom value for this property, [`Progress`](progress.md) uses the value of the [`kind`](progress/kind.md) property to determine how to use the values of other properties, as well as values in the user info dictionary, to return an automatically computed string. If it fails to do that, it returns an empty string.
+If you don’t specify your own custom value for this property, [`Progress`](../progress.md) uses the value of the [`kind`](./kind.md) property to determine how to use the values of other properties, as well as values in the user info dictionary, to return an automatically computed string. If it fails to do that, it returns an empty string.
 
-The [`localizedAdditionalDescription`](progress/localizedadditionaldescription.md) is more specific than [`localizedDescription`](progress/localizeddescription.md) about the work the receiver is tracking at any particular moment. Depending on the kind of progress, the completed and total unit counts, and other parameters, localized additional descriptions resemble the following:
+The [`localizedAdditionalDescription`](./localizedadditionaldescription.md) is more specific than [`localizedDescription`](./localizeddescription.md) about the work the receiver is tracking at any particular moment. Depending on the kind of progress, the completed and total unit counts, and other parameters, localized additional descriptions resemble the following:
 
 - 3 of 10 files
 - 123 KB of 789.1 MB
@@ -32,27 +37,28 @@ The [`localizedAdditionalDescription`](progress/localizedadditionaldescription.m
 - 1.61 GB of 3.22 GB (2 KB/sec) – 2 minutes remaining
 - 1 minute remaining (1 KB/sec)
 
-By default, [`Progress`](progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
+By default, [`Progress`](../progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 
 ## See Also
 
-- [var totalUnitCount: Int64](progress/totalunitcount.md)
+### Reporting Progress
+- [var totalUnitCount: Int64](./totalunitcount.md)
   The total number of tracked units of work for the current progress.
-- [var completedUnitCount: Int64](progress/completedunitcount.md)
+- [var completedUnitCount: Int64](./completedunitcount.md)
   The number of completed units of work for the current job.
-- [var localizedDescription: String!](progress/localizeddescription.md)
+- [var localizedDescription: String!](./localizeddescription.md)
   A localized description of tracked progress for the receiver.
-- [var isCancellable: Bool](progress/iscancellable.md)
+- [var isCancellable: Bool](./iscancellable.md)
   A Boolean value that indicates whether the receiver is tracking work that you can cancel.
-- [var isCancelled: Bool](progress/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that Indicates whether the receiver is tracking canceled work.
-- [var cancellationHandler: (() -> Void)?](progress/cancellationhandler.md)
+- [var cancellationHandler: (() -> Void)?](./cancellationhandler.md)
   The block to invoke when canceling progress.
-- [var isPausable: Bool](progress/ispausable.md)
+- [var isPausable: Bool](./ispausable.md)
   A Boolean value that indicates whether the receiver is tracking work that you can pause.
-- [var isPaused: Bool](progress/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the receiver is tracking paused work.
-- [var pausingHandler: (() -> Void)?](progress/pausinghandler.md)
+- [var pausingHandler: (() -> Void)?](./pausinghandler.md)
   The block to invoke when pausing progress.
 
 

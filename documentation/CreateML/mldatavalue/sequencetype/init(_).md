@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,12 @@
 
 ```swift
 init<S>(_ elements: S) where S : Sequence, S.Element : MLDataValueConvertible
+```
+
+**Other overloads**:
+
+```swift
+init<S>(_ elements: S) where S : Sequence, S.Element == MLDataValue
 ```
 
 

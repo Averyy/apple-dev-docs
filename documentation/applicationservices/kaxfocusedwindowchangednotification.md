@@ -1,7 +1,8 @@
 # kAXFocusedWindowChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The focused window has changed.
 
@@ -12,6 +13,10 @@ The focused window has changed.
 
 ```swift
 var kAXFocusedWindowChangedNotification: String { get }
+```
+
+```c
+#define kAXFocusedWindowChangedNotification
 ```
 
 

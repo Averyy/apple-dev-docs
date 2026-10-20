@@ -1,7 +1,8 @@
 # Get Account Detail
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Obtain the details for your account.
 
@@ -15,12 +16,17 @@ Each Mobile Device Management server must be registered with Apple. This endpoin
 ## Topics
 
 ### Response
-- [object AccountDetail](accountdetail.md)
+- [object AccountDetail](./accountdetail.md)
   The response that contains the details for an account.
 
 ## Endpoint
 
 `GET https://mdmenrollment.apple.com/account`
+
+## Responses
+
+- `200` OK (`AccountDetail`, `application/json`)
+- `400` Bad Request
 
 
 ---

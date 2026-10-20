@@ -1,7 +1,8 @@
 # addGroupIfIdentifying(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func addGroupIfIdentifying(with params: MTRGroupsClusterAddGroupIfIdentifyingParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func addGroupIfIdentifying(with params: MTRGroupsClusterAddGroupIfIdentifyingParams) async throws
+```
+
+```objc
+- (void) addGroupIfIdentifyingWithParams:(MTRGroupsClusterAddGroupIfIdentifyingParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

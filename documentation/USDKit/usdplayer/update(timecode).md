@@ -1,9 +1,10 @@
 # update(timeCode:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Updates the stage to `timeCode` and returns a [`USDPlayer.FrameUpdate`](usdplayer/frameupdate.md) describing all scene changes.
+Updates the stage to `timeCode` and returns a [`USDPlayer.FrameUpdate`](./frameupdate.md) describing all scene changes.
 
 **Availability**:
 - iOS 27.0+
@@ -25,7 +26,8 @@ Returns `nil` if nothing changed.
 
 ## See Also
 
-- [USDPlayer.FrameUpdate](usdplayer/frameupdate.md)
+### Driving playback
+- [USDPlayer.FrameUpdate](./frameupdate.md)
   A snapshot of all mesh, material, texture, and deformation changes from the last update.
 
 

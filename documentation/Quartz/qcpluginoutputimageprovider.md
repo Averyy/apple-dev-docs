@@ -1,17 +1,24 @@
 # QCPlugInOutputImageProvider
 
 **Framework**: Quartz  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The `QCPlugInOuputImageProvider` protocol eliminates the need to use explicit image types for the image output ports on a custom patch. The methods in this protocol are called by the Quartz Composer engine when the output image is needed. If your custom patch has an image output port, you need to implement the appropriate methods for rendering image data and to supply information about the rendering destination and the image bounds.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 protocol QCPlugInOutputImageProvider
+```
+
+```objc
+@protocol QCPlugInOutputImageProvider
 ```
 
 #### Overview
@@ -43,40 +50,41 @@ To write images to that port, you need to implement the methods in this protocol
 ## Topics
 
 ### Rendering an Image to a Destination
-- [func render(toBuffer: UnsafeMutableRawPointer!, withBytesPerRow: Int, pixelFormat: String!, forBounds: NSRect) -> Bool](qcpluginoutputimageprovider/render(tobuffer:withbytesperrow:pixelformat:forbounds:).md)
+- [func render(toBuffer: UnsafeMutableRawPointer!, withBytesPerRow: Int, pixelFormat: String!, forBounds: NSRect) -> Bool](./qcpluginoutputimageprovider/render%28tobuffer,withbytesperrow,pixelformat,forbounds%29.md)
   Renders a subregion of the image into  the supplied memory buffer using the specified pixel format.
-- [func copyRenderedTexture(forCGLContext: CGLContextObj!, pixelFormat: String!, bounds: NSRect, isFlipped: UnsafeMutablePointer<ObjCBool>!) -> GLuint](qcpluginoutputimageprovider/copyrenderedtexture(forcglcontext:pixelformat:bounds:isflipped:).md)
+- [func copyRenderedTexture(forCGLContext: CGLContextObj!, pixelFormat: String!, bounds: NSRect, isFlipped: UnsafeMutablePointer<ObjCBool>!) -> GLuint](./qcpluginoutputimageprovider/copyrenderedtexture%28forcglcontext,pixelformat,bounds,isflipped%29.md)
   Returns the name of an OpenGL texture of type `GL_TEXTURE_RECTANGLE_EXT` that contains a subregion of the image in a given pixel format.
-- [func render(withCGLContext: CGLContextObj!, forBounds: NSRect) -> Bool](qcpluginoutputimageprovider/render(withcglcontext:forbounds:).md)
+- [func render(withCGLContext: CGLContextObj!, forBounds: NSRect) -> Bool](./qcpluginoutputimageprovider/render%28withcglcontext,forbounds%29.md)
   Renders a subregion of the image to the provided CGL context.
-- [func releaseRenderedTexture(GLuint, forCGLContext: CGLContextObj!)](qcpluginoutputimageprovider/releaserenderedtexture(_:forcglcontext:).md)
+- [func releaseRenderedTexture(GLuint, forCGLContext: CGLContextObj!)](./qcpluginoutputimageprovider/releaserenderedtexture%28_,forcglcontext%29.md)
   Releases the previously copied texture.
 ### Providing Information About the Image
-- [func imageBounds() -> NSRect](qcpluginoutputimageprovider/imagebounds.md)
+- [func imageBounds() -> NSRect](./qcpluginoutputimageprovider/imagebounds%28%29.md)
   Returns the bounds of the image expressed in pixels and aligned to integer boundaries.
-- [func imageColorSpace() -> Unmanaged<CGColorSpace>!](qcpluginoutputimageprovider/imagecolorspace.md)
+- [func imageColorSpace() -> Unmanaged<CGColorSpace>!](./qcpluginoutputimageprovider/imagecolorspace%28%29.md)
   Returns the color space of the image or `NULL` if the image should not be color matched.
-- [func shouldColorMatch() -> Bool](qcpluginoutputimageprovider/shouldcolormatch.md)
+- [func shouldColorMatch() -> Bool](./qcpluginoutputimageprovider/shouldcolormatch%28%29.md)
   Returns whether the image should be color matched.
 ### Providing Information About the Rendering Destination
-- [func supportedBufferPixelFormats() -> [Any]!](qcpluginoutputimageprovider/supportedbufferpixelformats.md)
+- [func supportedBufferPixelFormats() -> [Any]!](./qcpluginoutputimageprovider/supportedbufferpixelformats%28%29.md)
   Returns a list of pixel formats that are supported for rendering to a memory buffer.
-- [func supportedRenderedTexturePixelFormats() -> [Any]!](qcpluginoutputimageprovider/supportedrenderedtexturepixelformats.md)
+- [func supportedRenderedTexturePixelFormats() -> [Any]!](./qcpluginoutputimageprovider/supportedrenderedtexturepixelformats%28%29.md)
   Returns a list of pixel formats that are supported for rendering to an onscreen OpenGL context.
-- [func canRender(withCGLContext: CGLContextObj!) -> Bool](qcpluginoutputimageprovider/canrender(withcglcontext:).md)
+- [func canRender(withCGLContext: CGLContextObj!) -> Bool](./qcpluginoutputimageprovider/canrender%28withcglcontext%29.md)
   Returns whether the image data can be rendered into the provided CGL context.
 
 ## See Also
 
-- [QCCompositionParameterViewDelegate](qccompositionparameterviewdelegate.md)
+### Protocols
+- [QCCompositionParameterViewDelegate](./qccompositionparameterviewdelegate.md)
   A protocol for composition parameter view’s delegate.
-- [QCCompositionPickerViewDelegate](qccompositionpickerviewdelegate.md)
-  The `QCCompositionPickerViewDelegate` informal protocol defines methods that allow  your application to respond to changes in a composition picker view (a [`QCCompositionPickerView`](qccompositionpickerview.md) object).
-- [protocol QCCompositionRenderer](qccompositionrenderer.md)
-  The `QCRenderer` protocol defines the methods used to pass data to the input ports or retrieve data from the output ports of the root patch of a Quartz Composer composition. This protocol is adopted by the [`QCRenderer`](qcrenderer.md), [`QCView`](qcview.md), and [`QCCompositionLayer`](qccompositionlayer.md) classes.
-- [protocol QCPlugInContext](qcplugincontext.md)
-  The `QCPlugInContext` protocol defines methods that you use only from within the execution method ([`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md)) of a `QCPlugIn` object.
-- [protocol QCPlugInInputImageSource](qcplugininputimagesource.md)
+- [QCCompositionPickerViewDelegate](./qccompositionpickerviewdelegate.md)
+  The `QCCompositionPickerViewDelegate` informal protocol defines methods that allow  your application to respond to changes in a composition picker view (a [`QCCompositionPickerView`](./qccompositionpickerview.md) object).
+- [protocol QCCompositionRenderer](./qccompositionrenderer.md)
+  The `QCRenderer` protocol defines the methods used to pass data to the input ports or retrieve data from the output ports of the root patch of a Quartz Composer composition. This protocol is adopted by the [`QCRenderer`](./qcrenderer.md), [`QCView`](./qcview.md), and [`QCCompositionLayer`](./qccompositionlayer.md) classes.
+- [protocol QCPlugInContext](./qcplugincontext.md)
+  The `QCPlugInContext` protocol defines methods that you use only from within the execution method ([`execute(_:atTime:withArguments:)`](./qcplugin/execute%28_,attime,witharguments%29.md)) of a `QCPlugIn` object.
+- [protocol QCPlugInInputImageSource](./qcplugininputimagesource.md)
   The `QCPlugInInputImageSource` protocol eliminates the need to use explicit image types for the image input ports on your custom patch. Not only does using the protocol avoid restrictions of a specific image type, but it avoids impedance mismatches, and provides better performance by deferring pixel computation until it is needed. When you need to access the pixels in an image, you simply convert the image to a representation (texture or buffer) using one of the methods defined by the `QCPlugInInputImageSource` protocol. Use a texture representation when you want to use input images on the GPU. Use a buffer representation when you want to use input images on the CPU.
 
 

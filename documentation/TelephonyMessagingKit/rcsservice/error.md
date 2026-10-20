@@ -1,7 +1,8 @@
 # RCSService.Error
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type to define errors that can occur when performing RCS operations.
 
@@ -17,40 +18,40 @@ enum Error
 ## Topics
 
 ### Identifying errors
-- [RCSService.Error.serviceUnavailable](rcsservice/error/serviceunavailable.md)
+- [RCSService.Error.serviceUnavailable](./error/serviceunavailable.md)
   The service is unavailable.
-- [RCSService.Error.invalidArgument](rcsservice/error/invalidargument.md)
+- [RCSService.Error.invalidArgument](./error/invalidargument.md)
   A method call provided an invalid argument.
-- [RCSService.Error.decodingFailed](rcsservice/error/decodingfailed.md)
+- [RCSService.Error.decodingFailed](./error/decodingfailed.md)
   Decoding an incoming RCS message failed.
-- [RCSService.Error.notSupported](rcsservice/error/notsupported.md)
+- [RCSService.Error.notSupported](./error/notsupported.md)
   The operation isn’t supported.
-- [RCSService.Error.unknown](rcsservice/error/unknown.md)
+- [RCSService.Error.unknown](./error/unknown.md)
   An unknown problem caused the error.
-- [RCSService.Error.temporaryError](rcsservice/error/temporaryerror.md)
+- [RCSService.Error.temporaryError](./error/temporaryerror.md)
   The operation failed temporarily.
-- [RCSService.Error.permanentError](rcsservice/error/permanenterror.md)
+- [RCSService.Error.permanentError](./error/permanenterror.md)
   The operation failed permanently.
-- [RCSService.Error.internalError](rcsservice/error/internalerror.md)
+- [RCSService.Error.internalError](./error/internalerror.md)
   The framework encountered an unknown internal error.
-- [RCSService.Error.notFound](rcsservice/error/notfound.md)
+- [RCSService.Error.notFound](./error/notfound.md)
   A required resource wasn’t found.
-- [RCSService.Error.maximumSizeExceeded](rcsservice/error/maximumsizeexceeded.md)
+- [RCSService.Error.maximumSizeExceeded](./error/maximumsizeexceeded.md)
   The RCS message exceeded the maximum allowed size.
-- [RCSService.Error.endToEndEncryptionNotSupported](rcsservice/error/endtoendencryptionnotsupported.md)
+- [RCSService.Error.endToEndEncryptionNotSupported](./error/endtoendencryptionnotsupported.md)
   The operation does not support end-to-end encryption.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

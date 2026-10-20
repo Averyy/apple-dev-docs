@@ -1,7 +1,8 @@
 # formRelativePosition
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,7 @@ var formRelativePosition: Int { get }
 
 #### Discussion
 
-Specifies an element position either immediately before or immediately after a container, not inside it. The key data is specified by a descriptor of type `typeEnumerated` whose data consists of one of the constants `kAENext` and `kAEPrevious`, which are described in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). 
+Specifies an element position either immediately before or immediately after a container, not inside it. The key data is specified by a descriptor of type `typeEnumerated` whose data consists of one of the constants `kAENext` and `kAEPrevious`, which are described in [`AEDisposeToken(_:)`](./api-1446783-aedisposetoken.md). 
 
 
 ---

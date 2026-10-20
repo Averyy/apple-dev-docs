@@ -1,7 +1,8 @@
 # userSpecifiedDevices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairingView()`.
 
@@ -22,9 +23,10 @@ Only applicable to use with the `DevicePairingView()` API. Will throw an error i
 
 ## See Also
 
-- [static func selected(WAPairedDevice.Devices) -> WAPublisherListener.Devices](wapublisherlistener/devices/selected(_:)-56vig.md)
+### Selecting specific devices
+- [static func selected(WAPairedDevice.Devices) -> WAPublisherListener.Devices](./selected%28_%29-56vig.md)
   Includes only the preselected paired devices in the provided dictionary.
-- [static func selected(some Sequence<WAPairedDevice>) -> WAPublisherListener.Devices](wapublisherlistener/devices/selected(_:)-1e2.md)
+- [static func selected(some Sequence<WAPairedDevice>) -> WAPublisherListener.Devices](./selected%28_%29-1e2.md)
   Includes only the preselected paired devices in the provided list.
 
 

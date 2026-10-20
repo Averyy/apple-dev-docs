@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an accessory setup payload.
 
@@ -17,9 +18,13 @@ Creates an accessory setup payload.
 init?(url setupPayloadURL: URL?)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) setupPayloadURL;
+```
+
 #### Discussion
 
-For details about the payload’s content, please join the [`MFi Program`](https://developer.apple.comhttps://developer.apple.com/programs/mfi/).
+For details about the payload’s content, please join the [MFi Program](https://developer.apple.com/programs/mfi/).
 
 ## Parameters
 
@@ -27,9 +32,10 @@ For details about the payload’s content, please join the [`MFi Program`](https
 
 ## See Also
 
-- [init?(url: URL, ownershipToken: HMAccessoryOwnershipToken?)](hmaccessorysetuppayload/init(url:ownershiptoken:)-32mrj.md)
+### Creating a Payload
+- [init?(url: URL, ownershipToken: HMAccessoryOwnershipToken?)](./init%28url,ownershiptoken%29-32mrj.md)
   Creates an accessory setup payload instance that includes an ownership token.
-- [class HMAccessoryOwnershipToken](hmaccessoryownershiptoken.md)
+- [class HMAccessoryOwnershipToken](../hmaccessoryownershiptoken.md)
   Authentication data that your app provides when adding an accessory to a home.
 
 

@@ -1,7 +1,8 @@
 # init(frustum:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cull configuration with the given frustum.
 

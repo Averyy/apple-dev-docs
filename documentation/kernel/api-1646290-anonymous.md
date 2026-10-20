@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOCopybackCache](1646290-anonymous/kiocopybackcache.md)
-- [kIOCopybackInnerCache](1646290-anonymous/kiocopybackinnercache.md)
-- [kIODefaultCache](1646290-anonymous/kiodefaultcache.md)
-- [kIOInhibitCache](1646290-anonymous/kioinhibitcache.md)
-- [kIOWriteCombineCache](1646290-anonymous/kiowritecombinecache.md)
-- [kIOWriteThruCache](1646290-anonymous/kiowritethrucache.md)
-- [kIOPostedCombinedReordered](1646290-anonymous/kiopostedcombinedreordered.md)
-- [kIOPostedReordered](1646290-anonymous/kiopostedreordered.md)
-- [kIOPostedWrite](1646290-anonymous/kiopostedwrite.md)
-- [kIORealTimeCache](1646290-anonymous/kiorealtimecache.md)
+- [kIOCopybackCache](./api-1646290-anonymous/kiocopybackcache.md)
+- [kIOCopybackInnerCache](./api-1646290-anonymous/kiocopybackinnercache.md)
+- [kIODefaultCache](./api-1646290-anonymous/kiodefaultcache.md)
+- [kIOInhibitCache](./api-1646290-anonymous/kioinhibitcache.md)
+- [kIOWriteCombineCache](./api-1646290-anonymous/kiowritecombinecache.md)
+- [kIOWriteThruCache](./api-1646290-anonymous/kiowritethrucache.md)
+- [kIOPostedCombinedReordered](./api-1646290-anonymous/kiopostedcombinedreordered.md)
+- [kIOPostedReordered](./api-1646290-anonymous/kiopostedreordered.md)
+- [kIOPostedWrite](./api-1646290-anonymous/kiopostedwrite.md)
+- [kIORealTimeCache](./api-1646290-anonymous/kiorealtimecache.md)
 
 
 ---

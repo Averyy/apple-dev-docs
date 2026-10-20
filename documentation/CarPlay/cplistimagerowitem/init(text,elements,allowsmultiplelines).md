@@ -1,7 +1,8 @@
 # init(text:elements:allowsMultipleLines:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a list image row item with a text string, an array of @c CPListImageRowItemRowElement and a boolean to allow multiple lines in this row.
 
@@ -14,6 +15,10 @@ Initialize a list image row item with a text string, an array of @c CPListImageR
 
 ```swift
 init(text: String?, elements: [CPListImageRowItemRowElement], allowsMultipleLines: Bool)
+```
+
+```objc
+- (instancetype) initWithText:(NSString *) text elements:(NSArray<CPListImageRowItemRowElement *> *) elements allowsMultipleLines:(BOOL) allowsMultipleLines;
 ```
 
 #### Discussion

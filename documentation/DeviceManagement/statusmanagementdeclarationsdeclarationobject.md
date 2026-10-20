@@ -1,7 +1,8 @@
 # StatusManagementDeclarationsDeclarationObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Status for a declaration processed by the client.
 
@@ -16,14 +17,14 @@ Status for a declaration processed by the client.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementDeclarationsDeclarationObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusManagementDeclarationsStatusReasonObject](statusmanagementdeclarationsstatusreasonobject.md)
+- [object StatusManagementDeclarationsStatusReasonObject](./statusmanagementdeclarationsstatusreasonobject.md)
   Information about a status error.
 
 ## Properties
@@ -33,6 +34,8 @@ object StatusManagementDeclarationsDeclarationObject
 - `reasons` ([StatusManagementDeclarationsStatusReasonObject]): The details of any client errors.
 - `server-token` (string) *(required)*: The `ServerToken` of the declaration this status report refers to.
 - `valid` (string) *(required)*: This string defines the validity of the declaration. If it’s `invalid`, the `reasons` property contains more details.
+
+  **Allowed Values**: `unknown`, `invalid`, `valid`
 
 
 ---

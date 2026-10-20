@@ -1,15 +1,16 @@
 # ExpressibleByExtendedGraphemeClusterLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(extendedGraphemeClusterLiteral: String)](substring/init(extendedgraphemeclusterliteral:).md)
+- [init(extendedGraphemeClusterLiteral: String)](./init%28extendedgraphemeclusterliteral%29.md)
   Creates an instance initialized to the given value.
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](substring/init(unicodescalarliteral:)-53rjt.md)
+- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](./init%28unicodescalarliteral%29-53rjt.md)
 ### Type Aliases
-- [Substring.ExtendedGraphemeClusterLiteralType](substring/extendedgraphemeclusterliteraltype.md)
+- [Substring.ExtendedGraphemeClusterLiteralType](./extendedgraphemeclusterliteraltype.md)
   A type that represents an extended grapheme cluster literal.
 
 

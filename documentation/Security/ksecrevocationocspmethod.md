@@ -1,7 +1,8 @@
 # kSecRevocationOCSPMethod
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Perform revocation     checking using OCSP (Online Certificate Status Protocol).
 
@@ -18,6 +19,10 @@ Perform revocation     checking using OCSP (Online Certificate Status Protocol).
 
 ```swift
 var kSecRevocationOCSPMethod: CFOptionFlags { get }
+```
+
+```c
+kSecRevocationOCSPMethod
 ```
 
 

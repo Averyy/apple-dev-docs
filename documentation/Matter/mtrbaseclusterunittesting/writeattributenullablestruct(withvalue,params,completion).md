@@ -1,7 +1,8 @@
 # writeAttributeNullableStruct(withValue:params:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeNullableStruct(withValue value: MTRUnitTestingClusterSimpleStruct?, params: MTRWriteParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeNullableStruct(withValue value: MTRUnitTestingClusterSimpleStruct?, params: MTRWriteParams?) async throws
+```
+
+```objc
+- (void) writeAttributeNullableStructWithValue:(MTRUnitTestingClusterSimpleStruct *) value params:(MTRWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

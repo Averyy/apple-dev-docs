@@ -1,7 +1,8 @@
 # MPSCNNBatchNormalizationDataSource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods that a batch normalization state uses to initialize scale factors, bias terms, and batch statistics.
 
@@ -19,58 +20,63 @@ A protocol that defines methods that a batch normalization state uses to initial
 protocol MPSCNNBatchNormalizationDataSource : NSCopying, NSObjectProtocol
 ```
 
+```objc
+@protocol MPSCNNBatchNormalizationDataSource <NSObject, NSCopying>
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mpscnnbatchnormalizationdatasource/init(coder:).md)
+- [init?(coder: NSCoder)](./mpscnnbatchnormalizationdatasource/init%28coder%29.md)
 ### Instance Methods
-- [func beta() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/beta.md)
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpscnnbatchnormalizationdatasource/copy(with:device:).md)
-- [func encode(with: NSCoder)](mpscnnbatchnormalizationdatasource/encode(with:).md)
-- [func epsilon() -> Float](mpscnnbatchnormalizationdatasource/epsilon.md)
-- [func gamma() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/gamma.md)
-- [func label() -> String?](mpscnnbatchnormalizationdatasource/label.md)
-- [func load() -> Bool](mpscnnbatchnormalizationdatasource/load.md)
-- [func mean() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/mean.md)
-- [func numberOfFeatureChannels() -> Int](mpscnnbatchnormalizationdatasource/numberoffeaturechannels.md)
-- [func purge()](mpscnnbatchnormalizationdatasource/purge.md)
-- [func updateGammaAndBeta(with: MPSCNNBatchNormalizationState) -> Bool](mpscnnbatchnormalizationdatasource/updategammaandbeta(with:).md)
-- [func updateGammaAndBeta(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationGammaAndBetaState?](mpscnnbatchnormalizationdatasource/updategammaandbeta(with:batchnormalizationstate:).md)
-- [func updateMeanAndVariance(with: MPSCNNBatchNormalizationState) -> Bool](mpscnnbatchnormalizationdatasource/updatemeanandvariance(with:).md)
-- [func updateMeanAndVariance(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationMeanAndVarianceState?](mpscnnbatchnormalizationdatasource/updatemeanandvariance(with:batchnormalizationstate:).md)
-- [func variance() -> UnsafeMutablePointer<Float>?](mpscnnbatchnormalizationdatasource/variance.md)
+- [func beta() -> UnsafeMutablePointer<Float>?](./mpscnnbatchnormalizationdatasource/beta%28%29.md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpscnnbatchnormalizationdatasource/copy%28with,device%29.md)
+- [func encode(with: NSCoder)](./mpscnnbatchnormalizationdatasource/encode%28with%29.md)
+- [func epsilon() -> Float](./mpscnnbatchnormalizationdatasource/epsilon%28%29.md)
+- [func gamma() -> UnsafeMutablePointer<Float>?](./mpscnnbatchnormalizationdatasource/gamma%28%29.md)
+- [func label() -> String?](./mpscnnbatchnormalizationdatasource/label%28%29.md)
+- [func load() -> Bool](./mpscnnbatchnormalizationdatasource/load%28%29.md)
+- [func mean() -> UnsafeMutablePointer<Float>?](./mpscnnbatchnormalizationdatasource/mean%28%29.md)
+- [func numberOfFeatureChannels() -> Int](./mpscnnbatchnormalizationdatasource/numberoffeaturechannels%28%29.md)
+- [func purge()](./mpscnnbatchnormalizationdatasource/purge%28%29.md)
+- [func updateGammaAndBeta(with: MPSCNNBatchNormalizationState) -> Bool](./mpscnnbatchnormalizationdatasource/updategammaandbeta%28with%29.md)
+- [func updateGammaAndBeta(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationGammaAndBetaState?](./mpscnnbatchnormalizationdatasource/updategammaandbeta%28with,batchnormalizationstate%29.md)
+- [func updateMeanAndVariance(with: MPSCNNBatchNormalizationState) -> Bool](./mpscnnbatchnormalizationdatasource/updatemeanandvariance%28with%29.md)
+- [func updateMeanAndVariance(with: any MTLCommandBuffer, batchNormalizationState: MPSCNNBatchNormalizationState) -> MPSCNNNormalizationMeanAndVarianceState?](./mpscnnbatchnormalizationdatasource/updatemeanandvariance%28with,batchnormalizationstate%29.md)
+- [func variance() -> UnsafeMutablePointer<Float>?](./mpscnnbatchnormalizationdatasource/variance%28%29.md)
 ### Type Properties
-- [static var supportsSecureCoding: Bool](mpscnnbatchnormalizationdatasource/supportssecurecoding.md)
+- [static var supportsSecureCoding: Bool](./mpscnnbatchnormalizationdatasource/supportssecurecoding.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNCrossChannelNormalizationNode](mpscnncrosschannelnormalizationnode.md)
+### Normalization Layer Nodes
+- [class MPSCNNCrossChannelNormalizationNode](./mpscnncrosschannelnormalizationnode.md)
   A representation of a normalization kernel across feature channels.
-- [class MPSCNNLocalContrastNormalizationNode](mpscnnlocalcontrastnormalizationnode.md)
+- [class MPSCNNLocalContrastNormalizationNode](./mpscnnlocalcontrastnormalizationnode.md)
   A representation of a local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalizationNode](mpscnnspatialnormalizationnode.md)
+- [class MPSCNNSpatialNormalizationNode](./mpscnnspatialnormalizationnode.md)
   A representation of a spatial normalization kernel.
-- [class MPSCNNBatchNormalizationGradientNode](mpscnnbatchnormalizationgradientnode.md)
+- [class MPSCNNBatchNormalizationGradientNode](./mpscnnbatchnormalizationgradientnode.md)
   A representation of a gradient batch normalization kernel.
-- [class MPSCNNBatchNormalizationNode](mpscnnbatchnormalizationnode.md)
+- [class MPSCNNBatchNormalizationNode](./mpscnnbatchnormalizationnode.md)
   A representation of a batch normalization kernel.
-- [class MPSCNNInstanceNormalizationGradientNode](mpscnninstancenormalizationgradientnode.md)
+- [class MPSCNNInstanceNormalizationGradientNode](./mpscnninstancenormalizationgradientnode.md)
   A representation of a gradient instance normalization kernel.
-- [protocol MPSCNNInstanceNormalizationDataSource](mpscnninstancenormalizationdatasource.md)
+- [protocol MPSCNNInstanceNormalizationDataSource](./mpscnninstancenormalizationdatasource.md)
   A protocol that defines methods that an instance normalization uses to initialize scale factors and bias terms.
-- [class MPSCNNInstanceNormalizationNode](mpscnninstancenormalizationnode.md)
+- [class MPSCNNInstanceNormalizationNode](./mpscnninstancenormalizationnode.md)
   A representation of an instance normalization kernel.
-- [class MPSCNNLocalContrastNormalizationGradientNode](mpscnnlocalcontrastnormalizationgradientnode.md)
+- [class MPSCNNLocalContrastNormalizationGradientNode](./mpscnnlocalcontrastnormalizationgradientnode.md)
   A representation of a gradient local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalizationGradientNode](mpscnnspatialnormalizationgradientnode.md)
+- [class MPSCNNSpatialNormalizationGradientNode](./mpscnnspatialnormalizationgradientnode.md)
   A representation of a gradient spatial normalization kernel.
-- [class MPSCNNNormalizationNode](mpscnnnormalizationnode.md)
+- [class MPSCNNNormalizationNode](./mpscnnnormalizationnode.md)
   Virtual base class for CNN normalization nodes.
 
 

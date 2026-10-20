@@ -1,7 +1,8 @@
 # runLoopModes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modes governing the types of input to handle during a cycle of the run loop.
 
@@ -20,6 +21,10 @@ The modes governing the types of input to handle during a cycle of the run loop.
 var runLoopModes: [RunLoop.Mode] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * runLoopModes;
+```
+
 #### Discussion
 
 An array of string constants specifying the current run-loop modes.
@@ -28,9 +33,11 @@ By default, the sole run-loop mode is `NSDefaultRunLoopMode` (which excludes dat
 
 ## See Also
 
-- [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](runloop/perform(_:target:argument:order:modes:).md)
+### Related Documentation
+- [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](../runloop/perform%28_,target,argument,order,modes%29.md)
   Schedules the sending of a message on the receiver.
-- [var NSUndoCloseGroupingRunLoopOrdering: Int](nsundoclosegroupingrunloopordering.md)
+### Working with run loops
+- [var NSUndoCloseGroupingRunLoopOrdering: Int](../nsundoclosegroupingrunloopordering.md)
   A priority to use when using a run loop to close an undo group.
 
 

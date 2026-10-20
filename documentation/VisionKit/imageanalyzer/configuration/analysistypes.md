@@ -1,7 +1,8 @@
 # analysisTypes
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of items that the image analyzer looks for in the image.
 
@@ -20,13 +21,14 @@ let analysisTypes: ImageAnalyzer.AnalysisTypes
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../../enabling-live-text-interactions-with-images.md)
 
 ## See Also
 
-- [init(ImageAnalyzer.AnalysisTypes)](imageanalyzer/configuration/init(_:).md)
+### Creating configurations
+- [init(ImageAnalyzer.AnalysisTypes)](./init%28_%29.md)
   Creates a configuration that an image analyzer uses to find items.
-- [ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes.md)
+- [ImageAnalyzer.AnalysisTypes](../analysistypes.md)
   The types of items that an image analyzer looks for in an image.
 
 

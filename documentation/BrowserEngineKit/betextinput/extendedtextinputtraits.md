@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An object that customizes text-input appearance and behavior beyond the standard system traits.
@@ -18,9 +19,14 @@ An object that customizes text-input appearance and behavior beyond the standard
 var extendedTextInputTraits: (any BEExtendedTextInputTraits)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<BEExtendedTextInputTraits> extendedTextInputTraits;
+```
+
 ## See Also
 
-- [var isEditable: Bool](betextinput/iseditable.md)
+### Managing text traits
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that determines the ability to modify text.
 
 

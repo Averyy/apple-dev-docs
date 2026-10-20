@@ -1,7 +1,8 @@
 # UISplitViewController.DisplayMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the possible arrangements for a split view interface.
 
@@ -9,7 +10,7 @@ Constants that describe the possible arrangements for a split view interface.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,76 +19,81 @@ Constants that describe the possible arrangements for a split view interface.
 enum DisplayMode
 ```
 
+```c
+enum UISplitViewControllerDisplayMode : NSInteger;
+```
+
 #### Overview
 
-A split view controller’s display mode controls the visual arrangement of its child view controllers. You set a preferred display mode by using the [`preferredDisplayMode`](uisplitviewcontroller/preferreddisplaymode.md) property, and the split view controller updates itself and reflects the actual display mode in the [`displayMode`](uisplitviewcontroller/displaymode-swift.property.md) property.
+A split view controller’s display mode controls the visual arrangement of its child view controllers. You set a preferred display mode by using the [`preferredDisplayMode`](./preferreddisplaymode.md) property, and the split view controller updates itself and reflects the actual display mode in the [`displayMode`](./displaymode-swift.property.md) property.
 
-Display modes apply to a split view controller in an expanded arrangement. When the split view interface is collapsed — when [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/swift/true) — the display mode has no impact on the appearance of the split view controller interface.
+Display modes apply to a split view controller in an expanded arrangement. When the split view interface is collapsed — when [`isCollapsed`](./iscollapsed.md) is [`true`](../../Swift/true.md) — the display mode has no impact on the appearance of the split view controller interface.
 
-A split view controller’s split behavior ([`splitBehavior`](uisplitviewcontroller/splitbehavior-swift.property.md)) affects its possible display modes. For more information, see [`UISplitViewController.SplitBehavior`](uisplitviewcontroller/splitbehavior-swift.enum.md).
+A split view controller’s split behavior ([`splitBehavior`](./splitbehavior-swift.property.md)) affects its possible display modes. For more information, see [`UISplitViewController.SplitBehavior`](./splitbehavior-swift.enum.md).
 
 | Split Behavior | Possible Display Modes |
 | --- | --- |
-| Tile | [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md) ![None](/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.oneBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md) ![None](/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.twoBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/twobesidesecondary.md) |
-| Overlay | [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md) ![None](/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.oneOverSecondary`](uisplitviewcontroller/displaymode-swift.enum/oneoversecondary.md) ![None](/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.twoOverSecondary`](uisplitviewcontroller/displaymode-swift.enum/twooversecondary.md) |
-| Displace | [`UISplitViewController.DisplayMode.secondaryOnly`](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md) ![None](/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.oneBesideSecondary`](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md) ![None](/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.twoDisplaceSecondary`](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md) |
+| Tile | [`UISplitViewController.DisplayMode.secondaryOnly`](./displaymode-swift.enum/secondaryonly.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.oneBesideSecondary`](./displaymode-swift.enum/onebesidesecondary.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.twoBesideSecondary`](./displaymode-swift.enum/twobesidesecondary.md) |
+| Overlay | [`UISplitViewController.DisplayMode.secondaryOnly`](./displaymode-swift.enum/secondaryonly.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.oneOverSecondary`](./displaymode-swift.enum/oneoversecondary.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.twoOverSecondary`](./displaymode-swift.enum/twooversecondary.md) |
+| Displace | [`UISplitViewController.DisplayMode.secondaryOnly`](./displaymode-swift.enum/secondaryonly.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.oneBesideSecondary`](./displaymode-swift.enum/onebesidesecondary.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UISplitViewController.DisplayMode.twoDisplaceSecondary`](./displaymode-swift.enum/twodisplacesecondary.md) |
 
 There are several ways for user interaction to change the current display mode. Based on the type of user interaction (gesture or button tap), the display mode can transition between a set of predetermined states.
 
-![Flow diagram showing the possible state transitions between display modes, based on split behavior and column style.](/images/com.apple.uikit/UISplitViewController-3@2x.png)
+![Flow diagram showing the possible state transitions between display modes, based on split behavior and column style.](https://developer.apple.com/tutorials/images/com.apple.uikit/UISplitViewController-3@2x.png)
 
 ## Topics
 
 ### Constants
-- [UISplitViewController.DisplayMode.automatic](uisplitviewcontroller/displaymode-swift.enum/automatic.md)
+- [UISplitViewController.DisplayMode.automatic](./displaymode-swift.enum/automatic.md)
   The split view controller automatically decides the most appropriate display mode based on the device and the current app size.
-- [UISplitViewController.DisplayMode.secondaryOnly](uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md)
+- [UISplitViewController.DisplayMode.secondaryOnly](./displaymode-swift.enum/secondaryonly.md)
   Only the secondary view controller is shown onscreen.
-- [UISplitViewController.DisplayMode.oneBesideSecondary](uisplitviewcontroller/displaymode-swift.enum/onebesidesecondary.md)
+- [UISplitViewController.DisplayMode.oneBesideSecondary](./displaymode-swift.enum/onebesidesecondary.md)
   One sidebar appears side-by-side with the secondary view controller.
-- [UISplitViewController.DisplayMode.oneOverSecondary](uisplitviewcontroller/displaymode-swift.enum/oneoversecondary.md)
+- [UISplitViewController.DisplayMode.oneOverSecondary](./displaymode-swift.enum/oneoversecondary.md)
   One sidebar is layered on top of the secondary view controller, leaving the secondary view controller partially visible.
-- [UISplitViewController.DisplayMode.twoBesideSecondary](uisplitviewcontroller/displaymode-swift.enum/twobesidesecondary.md)
+- [UISplitViewController.DisplayMode.twoBesideSecondary](./displaymode-swift.enum/twobesidesecondary.md)
   Two sidebars appear side-by-side with the secondary view controller.
-- [UISplitViewController.DisplayMode.twoOverSecondary](uisplitviewcontroller/displaymode-swift.enum/twooversecondary.md)
+- [UISplitViewController.DisplayMode.twoOverSecondary](./displaymode-swift.enum/twooversecondary.md)
   Two sidebars are layered on top of the secondary view controller, leaving the secondary view controller partially visible.
-- [UISplitViewController.DisplayMode.twoDisplaceSecondary](uisplitviewcontroller/displaymode-swift.enum/twodisplacesecondary.md)
+- [UISplitViewController.DisplayMode.twoDisplaceSecondary](./displaymode-swift.enum/twodisplacesecondary.md)
   Two sidebars displace the secondary view controller instead of overlapping it, moving it partially offscreen.
 ### Deprecated
-- [static var primaryHidden: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.enum/primaryhidden.md)
+- [static var primaryHidden: UISplitViewController.DisplayMode](./displaymode-swift.enum/primaryhidden.md)
   The primary view controller is hidden.
-- [static var allVisible: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.enum/allvisible.md)
+- [static var allVisible: UISplitViewController.DisplayMode](./displaymode-swift.enum/allvisible.md)
   The primary and secondary view controllers are displayed side-by-side onscreen.
-- [static var primaryOverlay: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.enum/primaryoverlay.md)
+- [static var primaryOverlay: UISplitViewController.DisplayMode](./displaymode-swift.enum/primaryoverlay.md)
   The primary view controller is layered on top of the secondary view controller, leaving the secondary view controller partially visible.
 ### Initializers
-- [init?(rawValue: Int)](uisplitviewcontroller/displaymode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./displaymode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredDisplayMode: UISplitViewController.DisplayMode](uisplitviewcontroller/preferreddisplaymode.md)
+### Managing the display mode
+- [var preferredDisplayMode: UISplitViewController.DisplayMode](./preferreddisplaymode.md)
   The preferred arrangement of the split view interface.
-- [var displayMode: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.property.md)
+- [var displayMode: UISplitViewController.DisplayMode](./displaymode-swift.property.md)
   The current arrangement of the split view interface.
-- [var displayModeButtonItem: UIBarButtonItem](uisplitviewcontroller/displaymodebuttonitem.md)
+- [var displayModeButtonItem: UIBarButtonItem](./displaymodebuttonitem.md)
   A button that changes the display mode of the split view controller.
-- [var presentsWithGesture: Bool](uisplitviewcontroller/presentswithgesture.md)
+- [var presentsWithGesture: Bool](./presentswithgesture.md)
   Specifies whether a hidden view controller can be presented and dismissed using a swipe gesture.
-- [var showsSecondaryOnlyButton: Bool](uisplitviewcontroller/showssecondaryonlybutton.md)
+- [var showsSecondaryOnlyButton: Bool](./showssecondaryonlybutton.md)
   Specifies whether the secondary view controller shows a button to toggle to and from the secondary-only display mode.
-- [var displayModeButtonVisibility: UISplitViewController.DisplayModeButtonVisibility](uisplitviewcontroller/displaymodebuttonvisibility-swift.property.md)
+- [var displayModeButtonVisibility: UISplitViewController.DisplayModeButtonVisibility](./displaymodebuttonvisibility-swift.property.md)
   A setting that determines whether the display mode button is visible in the interface.
-- [UISplitViewController.DisplayModeButtonVisibility](uisplitviewcontroller/displaymodebuttonvisibility-swift.enum.md)
+- [UISplitViewController.DisplayModeButtonVisibility](./displaymodebuttonvisibility-swift.enum.md)
   Constants that determine the visibility of the display mode button.
 
 

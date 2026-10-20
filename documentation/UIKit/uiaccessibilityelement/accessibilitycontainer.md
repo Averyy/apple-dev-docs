@@ -1,7 +1,8 @@
 # accessibilityContainer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that contains the accessibility element.
 
@@ -9,13 +10,17 @@ The view that contains the accessibility element.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 weak var accessibilityContainer: AnyObject? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id accessibilityContainer;
 ```
 
 

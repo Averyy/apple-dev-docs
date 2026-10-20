@@ -1,7 +1,8 @@
 # withEncodeStream(writingTo:selectUsing:flags:threadCount:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the given closure with an encode output archive stream.
 
@@ -11,7 +12,7 @@ Calls the given closure with an encode output archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The result of the closure.
 
 #### Discussion
 
-This function opens a stream created by [`encodeStream(writingTo:selectUsing:flags:threadCount:)`](archivestream/encodestream(writingto:selectusing:flags:threadcount:).md), calls the specified closure, and closes the stream.
+This function opens a stream created by [`encodeStream(writingTo:selectUsing:flags:threadCount:)`](./encodestream%28writingto,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ This function opens a stream created by [`encodeStream(writingTo:selectUsing:fla
 
 ## See Also
 
-- [static func encodeStream(writingTo: ArchiveByteStream, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](archivestream/encodestream(writingto:selectusing:flags:threadcount:).md)
+### Encoding Data
+- [static func encodeStream(writingTo: ArchiveByteStream, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](./encodestream%28writingto,selectusing,flags,threadcount%29.md)
   Opens an encode output archive stream.
 
 

@@ -1,7 +1,8 @@
 # AEInstallEventHandler(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds an entry for an event handler to an Apple event dispatch table.
 
@@ -14,9 +15,13 @@ Adds an entry for an event handler to an Apple event dispatch table.
 func AEInstallEventHandler(_ theAEEventClass: AEEventClass, _ theAEEventID: AEEventID, _ handler: AEEventHandlerUPP!, _ handlerRefcon: SRefCon!, _ isSysHandler: Bool) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AEInstallEventHandler(AEEventClass theAEEventClass, AEEventID theAEEventID, AEEventHandlerUPP handler, SRefCon handlerRefcon, Boolean isSysHandler);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
@@ -31,9 +36,9 @@ If you use the `typeWildCard` constant for either the `theAEEventClass` or the `
 
 If an Apple event dispatch table contains one entry for an event class and a specific event ID, and also contains another entry that is identical except that it specifies a wildcard value for either the event class or the event ID, the Apple Event Manager dispatches the more specific entry. For example, if an Apple event dispatch table includes one entry that specifies the event class as `kAECoreSuite` and the event ID as `kAEDelete`, and another entry that specifies the event class as `kAECoreSuite` and the event ID as `typeWildCard`, the Apple Event Manager dispatches the Apple event handler associated with the entry that specifies the event ID as `kAEDelete`.
 
-In addition to the Apple event handler dispatch tables, applications can add entries to special handler dispatch tables, as described in [`Managing Special Handler Dispatch Tables`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1652333). 
+In addition to the Apple event handler dispatch tables, applications can add entries to special handler dispatch tables, as described in [Managing Special Handler Dispatch Tables](../applicationservices/apple_event_manager.md#1652333). 
 
-##### 1770205
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
@@ -41,17 +46,18 @@ Your application should not install a handler in a system dispatch table with th
 
 ## Parameters
 
-- `theAEEventClass`: The event class for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the `theAEEventID` parameter. See [`AEEventClass`](aeeventclass.md).
-- `theAEEventID`: The event ID for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the `theAEEventClass` parameter. See [`AEEventID`](aeeventid.md).
-- `handler`: A universal procedure pointer to the Apple event handler function to install. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `theAEEventClass`: The event class for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the `theAEEventID` parameter. See [`AEEventClass`](./aeeventclass.md).
+- `theAEEventID`: The event ID for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the `theAEEventClass` parameter. See [`AEEventID`](./aeeventid.md).
+- `handler`: A universal procedure pointer to the Apple event handler function to install. See [`AEEventHandlerUPP`](./aeeventhandlerupp.md).
 - `handlerRefcon`: A reference constant. The Apple Event Manager passes this value to the handler each time it calls it. If your handler doesn’t require a reference constant, pass 0 for this parameter.
 - `isSysHandler`: Specifies the Apple event dispatch table to add the handler to. Pass `TRUE` to add the handler to the system dispatch table or `FALSE` to add the handler to your application’s dispatch table. See Version Notes for related information.
 
 ## See Also
 
-- [func AEGetEventHandler(AEEventClass, AEEventID, UnsafeMutablePointer<AEEventHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, Bool) -> OSErr](1445631-aegeteventhandler.md)
+### Managing Apple Event Dispatch Tables
+- [func AEGetEventHandler(AEEventClass, AEEventID, UnsafeMutablePointer<AEEventHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, Bool) -> OSErr](./api-1445631-aegeteventhandler.md)
   Gets an event handler from an Apple event dispatch table.
-- [func AERemoveEventHandler(AEEventClass, AEEventID, AEEventHandlerUPP!, Bool) -> OSErr](1445239-aeremoveeventhandler.md)
+- [func AERemoveEventHandler(AEEventClass, AEEventID, AEEventHandlerUPP!, Bool) -> OSErr](./api-1445239-aeremoveeventhandler.md)
   Removes an event handler entry from an Apple event dispatch table.
 
 

@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The leftmost or rightmost gravity area in a horizontally oriented stack view, based on the user interface language or the explicitly set user interface layout direction.
 
@@ -14,19 +15,24 @@ The leftmost or rightmost gravity area in a horizontally oriented stack view, ba
 static var trailing: NSStackView.Gravity { get }
 ```
 
+```c
+NSStackViewGravityTrailing
+```
+
 #### Discussion
 
-For a left to right layout direction, the trailing gravity area is on the right. Use only when the value of the [`orientation`](nsstackview/orientation.md) property is [`NSUserInterfaceLayoutOrientation.horizontal`](nsuserinterfacelayoutorientation/horizontal.md).
+For a left to right layout direction, the trailing gravity area is on the right. Use only when the value of the [`orientation`](../orientation.md) property is [`NSUserInterfaceLayoutOrientation.horizontal`](../../nsuserinterfacelayoutorientation/horizontal.md).
 
 ## See Also
 
-- [NSStackView.Gravity.top](nsstackview/gravity/top.md)
+### Constants
+- [NSStackView.Gravity.top](./top.md)
   The topmost gravity area in a vertically oriented stack view.
-- [static var leading: NSStackView.Gravity](nsstackview/gravity/leading.md)
+- [static var leading: NSStackView.Gravity](./leading.md)
   The leftmost or rightmost gravity area in a horizontally oriented stack view, based on the user interface language or the explicitly set user interface layout direction.
-- [NSStackView.Gravity.center](nsstackview/gravity/center.md)
+- [NSStackView.Gravity.center](./center.md)
   The center gravity area, regardless of stack view layout direction or user interface language.
-- [NSStackView.Gravity.bottom](nsstackview/gravity/bottom.md)
+- [NSStackView.Gravity.bottom](./bottom.md)
   The bottommost gravity area in a vertically oriented stack view.
 
 

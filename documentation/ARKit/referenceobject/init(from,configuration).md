@@ -1,7 +1,8 @@
 # init(from:configuration:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a reference object from a URL, with reference object configuration.
 
@@ -16,7 +17,7 @@ init(from url: URL, configuration: ReferenceObject.Configuration) async throws
 
 #### Discussion
 
-> **Note**: `ObjectTrackingProvider.Error`
+> **Throws**: `ObjectTrackingProvider.Error`
 
 ## Parameters
 
@@ -25,11 +26,12 @@ init(from url: URL, configuration: ReferenceObject.Configuration) async throws
 
 ## See Also
 
-- [init(from: URL) async throws](referenceobject/init(from:).md)
+### Creating reference objects
+- [init(from: URL) async throws](./init%28from%29.md)
   Creates a reference object from a URL you provide.
-- [init(named: String, from: Bundle?) async throws](referenceobject/init(named:from:).md)
+- [init(named: String, from: Bundle?) async throws](./init%28named,from%29.md)
   Creates a reference object from a bundle.
-- [init(named: String, from: Bundle?, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(named:from:configuration:).md)
+- [init(named: String, from: Bundle?, configuration: ReferenceObject.Configuration) async throws](./init%28named,from,configuration%29.md)
   Initializes a reference object from a bundle, with reference object configuration.
 
 

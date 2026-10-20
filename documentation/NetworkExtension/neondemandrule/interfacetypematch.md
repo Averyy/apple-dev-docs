@@ -1,7 +1,8 @@
 # interfaceTypeMatch
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An interface type to identify a network.
 
@@ -19,20 +20,25 @@ An interface type to identify a network.
 var interfaceTypeMatch: NEOnDemandRuleInterfaceType { get set }
 ```
 
+```objc
+@property NEOnDemandRuleInterfaceType interfaceTypeMatch;
+```
+
 #### Discussion
 
 The type of interface that this rule matches. If the current primary network interface is of this type and all of the other conditions in the rule match, then the rule matches. If this property is `NEOnDemandRuleInterfaceTypeAny` (the default), then the current primary interface type does not factor into the rule match.
 
 ## See Also
 
-- [var dnsSearchDomainMatch: [String]?](neondemandrule/dnssearchdomainmatch.md)
+### Accessing match parameters
+- [var dnsSearchDomainMatch: [String]?](./dnssearchdomainmatch.md)
   DNS search domains that identify a network.
-- [var dnsServerAddressMatch: [String]?](neondemandrule/dnsserveraddressmatch.md)
+- [var dnsServerAddressMatch: [String]?](./dnsserveraddressmatch.md)
   DNS server addresses that identify a network.
-- [enum NEOnDemandRuleInterfaceType](neondemandruleinterfacetype.md)
-- [var ssidMatch: [String]?](neondemandrule/ssidmatch.md)
+- [enum NEOnDemandRuleInterfaceType](../neondemandruleinterfacetype.md)
+- [var ssidMatch: [String]?](./ssidmatch.md)
   SSIDs that identify a network.
-- [var probeURL: URL?](neondemandrule/probeurl.md)
+- [var probeURL: URL?](./probeurl.md)
   A URL to probe when all other network identifiers match to validate that an expected resource is available.
 
 

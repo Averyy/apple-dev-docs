@@ -1,14 +1,15 @@
 # VASErrorCodeDataNotFound
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant indicating that data wasn’t found.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASResponse.ErrorCode.dataNotFound)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASResponse.ErrorCode.dataNotFound)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCVASResponse.ErrorCode.dataNotFound)
 
 ## Declaration
 
@@ -16,11 +17,16 @@ A constant indicating that data wasn’t found.
 static var VASErrorCodeDataNotFound: NFCVASResponse.ErrorCode { get }
 ```
 
+```c
+VASErrorCodeDataNotFound
+```
+
 ## See Also
 
-- [static var VASErrorCodeDataNotActivated: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodedatanotactivated.md)
+### Data Codes
+- [static var VASErrorCodeDataNotActivated: NFCVASResponse.ErrorCode](./vaserrorcodedatanotactivated.md)
   A constant indicating that the data isn’t activated.
-- [static var VASErrorCodeIncorrectData: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodeincorrectdata.md)
+- [static var VASErrorCodeIncorrectData: NFCVASResponse.ErrorCode](./vaserrorcodeincorrectdata.md)
   A constant indicating that the data is incorrect.
 
 

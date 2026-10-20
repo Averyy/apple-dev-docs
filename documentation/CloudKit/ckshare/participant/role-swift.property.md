@@ -1,7 +1,8 @@
 # role
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant’s role for the share.
 
@@ -20,17 +21,22 @@ The participant’s role for the share.
 var role: CKShare.ParticipantRole { get set }
 ```
 
+```objc
+@property (assign) CKShareParticipantRole role;
+```
+
 ## See Also
 
-- [var permission: CKShare.ParticipantPermission](ckshare/participant/permission-swift.property.md)
+### Managing the Participant’s Capabilites
+- [var permission: CKShare.ParticipantPermission](./permission-swift.property.md)
   The participant’s permission level for the share.
-- [CKShare.Participant.Permission](ckshare/participant/permission-swift.typealias.md)
+- [CKShare.Participant.Permission](./permission-swift.typealias.md)
   A type that represents the permissions for a participant.
-- [CKShare.ParticipantPermission](ckshare/participantpermission.md)
+- [CKShare.ParticipantPermission](../participantpermission.md)
   Constants that represent the permissions to grant to a share participant.
-- [CKShare.Participant.Role](ckshare/participant/role-swift.typealias.md)
+- [CKShare.Participant.Role](./role-swift.typealias.md)
   A type that represents the role for a participant.
-- [CKShare.ParticipantRole](ckshare/participantrole.md)
+- [CKShare.ParticipantRole](../participantrole.md)
   Constants that represent the role of a share’s participant.
 
 

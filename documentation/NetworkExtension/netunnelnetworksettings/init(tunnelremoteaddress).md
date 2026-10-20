@@ -1,7 +1,8 @@
 # init(tunnelRemoteAddress:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `NETunnelNetworkSettings` object.
 
@@ -17,6 +18,10 @@ Initialize a `NETunnelNetworkSettings` object.
 
 ```swift
 init(tunnelRemoteAddress address: String)
+```
+
+```objc
+- (instancetype) initWithTunnelRemoteAddress:(NSString *) address;
 ```
 
 ## Parameters

@@ -1,15 +1,16 @@
 # SetLEDState
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetLEDState(uint32_t usagePage, uint32_t usage, bool on);
 ```
 

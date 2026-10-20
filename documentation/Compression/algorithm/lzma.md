@@ -1,7 +1,8 @@
 # Algorithm.lzma
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The LZMA compression algorithm, which is recommended for high-compression ratio.
 
@@ -11,7 +12,7 @@ The LZMA compression algorithm, which is recommended for high-compression ratio.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ The Compression library implements the LZMA encoder at level 6 only.  This is th
 
 ## See Also
 
-- [var COMPRESSION_LZMA: compression_algorithm](compression_lzma.md)
+### Related Documentation
+- [var COMPRESSION_LZMA: compression_algorithm](../compression_lzma.md)
   The LZMA compression algorithm, which is recommended for high-compression ratio.
 
 

@@ -1,12 +1,13 @@
 # terminalType
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UInt32 whose value describes the general kind of functionality attached to the stream. Constants for some of the values for this property can be found in the enum in the AudioStream Constants section of AudioHardwareBase.h.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

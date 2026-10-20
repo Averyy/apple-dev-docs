@@ -1,7 +1,8 @@
 # clipped(antialiased:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clips this view to its bounding rectangular frame.
 
@@ -23,7 +24,7 @@ func clipped(antialiased: Bool = false) -> some View
 
 ## Mentions
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+- [Fitting images into available space](../fitting-images-into-available-space.md)
 
 #### Return Value
 
@@ -43,7 +44,7 @@ Text("This long text string is clipped")
     .border(Color.gray)
 ```
 
-![Screenshot showing text clipped to its](/images/com.apple.SwiftUI/SwiftUI-View-clipped@2x.png)
+![Screenshot showing text clipped to its](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-clipped@2x.png)
 
 ## Parameters
 
@@ -51,9 +52,10 @@ Text("This long text string is clipped")
 
 ## See Also
 
-- [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](view/mask(alignment:_:).md)
+### Masking and clipping
+- [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](./mask%28alignment,_%29.md)
   Masks this view using the alpha channel of the given view.
-- [func clipShape<S>(S, style: FillStyle) -> some View](view/clipshape(_:style:).md)
+- [func clipShape<S>(S, style: FillStyle) -> some View](./clipshape%28_,style%29.md)
   Sets a clipping shape for this view.
 
 

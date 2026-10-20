@@ -1,14 +1,15 @@
 # ifnetem_model
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 if_netem_model_t ifnetem_model;
 ```
 

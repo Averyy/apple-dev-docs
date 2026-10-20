@@ -1,7 +1,8 @@
 # phaseAnimator(_:trigger:content:animation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Animates effects that you apply to a view over a sequence of phases that change based on a trigger.
 
@@ -36,11 +37,12 @@ Later, when the value of the `trigger` input changes, the modifier provides its 
 
 ## See Also
 
-- [Controlling the timing and movements of your animations](controlling-the-timing-and-movements-of-your-animations.md)
+### Creating phase-based animation
+- [Controlling the timing and movements of your animations](../controlling-the-timing-and-movements-of-your-animations.md)
   Build sophisticated animations that you control using phase and keyframe animators.
-- [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:content:animation:).md)
+- [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](./phaseanimator%28_,content,animation%29.md)
   Animates effects that you apply to a view over a sequence of phases that change continuously.
-- [struct PhaseAnimator](phaseanimator.md)
+- [struct PhaseAnimator](../phaseanimator.md)
   A container that animates its content by automatically cycling through a collection of phases that you provide, each defining a discrete step within an animation.
 
 

@@ -1,7 +1,8 @@
 # signbit(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sign bit of the input tensor elements.
 
@@ -17,6 +18,10 @@ Returns the sign bit of the input tensor elements.
 
 ```swift
 func signbit(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) signbitWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -2,6 +2,7 @@
 
 **Framework**: StateReporting  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A dictionary mapping string keys to reportable values that describes the current metadata.

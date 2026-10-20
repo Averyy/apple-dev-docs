@@ -1,14 +1,15 @@
 # set_cr3_composed
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 void set_cr3_composed(uintptr_t base, uint16_t pcid, uint64_t preserve);
 ```
 

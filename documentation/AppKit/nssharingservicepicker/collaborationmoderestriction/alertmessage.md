@@ -1,7 +1,8 @@
 # alertMessage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message of the alert if a reason for disabling is provided
 
@@ -12,6 +13,10 @@ The message of the alert if a reason for disabling is provided
 
 ```swift
 var alertMessage: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * alertMessage;
 ```
 
 

@@ -1,17 +1,20 @@
 # HMUserFailedAccessoriesKey
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for retrieving details of what accessories failed to add or remove a user.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 8.0+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,17 +22,22 @@ The key for retrieving details of what accessories failed to add or remove a use
 let HMUserFailedAccessoriesKey: String
 ```
 
+```c
+extern NSString * const HMUserFailedAccessoriesKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) of [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) objects. Each dictionary contains the [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) of the accessory that failed to be added/removed and the value corresponding to the dictionary key is an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that provides more details on the underlying error for that accessory.
+The value associated with this key is an [`NSArray`](../Foundation/nsarray.md) of [`NSDictionary`](../Foundation/nsdictionary.md) objects. Each dictionary contains the [`NSUUID`](../Foundation/nsuuid.md) of the accessory that failed to be added/removed and the value corresponding to the dictionary key is an [`NSError`](../Foundation/nserror.md) that provides more details on the underlying error for that accessory.
 
 ## See Also
 
-- [func homeAccessControl(for: HMUser) -> HMHomeAccessControl](hmhome/homeaccesscontrol(for:).md)
+### Controlling user access
+- [func homeAccessControl(for: HMUser) -> HMHomeAccessControl](./hmhome/homeaccesscontrol%28for%29.md)
   Retrieves the access level of a user associated with the home.
-- [class HMHomeAccessControl](hmhomeaccesscontrol.md)
+- [class HMHomeAccessControl](./hmhomeaccesscontrol.md)
   The access privileges of a user associated with a home.
-- [class HMAccessControl](hmaccesscontrol.md)
+- [class HMAccessControl](./hmaccesscontrol.md)
   An abstract superclass for accessing user privileges.
 
 

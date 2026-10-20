@@ -1,7 +1,8 @@
 # concatenated(with:alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a concatenated tensor along the specified axis.
 
@@ -27,7 +28,8 @@ func concatenated(with other: MLTensor, alongAxis axis: Int = 0) -> MLTensor
 
 ## See Also
 
-- [func clamped(to:)](mltensor/clamped(to:).md)
+### Clamping and concatenating
+- [func clamped(to:)](./clamped%28to%29.md)
   Clamps all elements to the given lower and upper bounds, inclusively.
 
 

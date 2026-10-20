@@ -1,7 +1,8 @@
 # soundName
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filename of the sound file to play when a notification arrives.
 
@@ -19,21 +20,26 @@ The filename of the sound file to play when a notification arrives.
 var soundName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * soundName;
+```
+
 #### Discussion
 
 If you specify a value, the system uses it to locate a sound file in the app’s bundle. The sound plays when the system receives a push notification. If the system can’t find the specified file, or if you use the string `default`, the system plays the default sound.
 
 ## See Also
 
-- [var alertBody: String?](cksubscription/notificationinfo-swift.class/alertbody.md)
+### Accessing the Notification Alert
+- [var alertBody: String?](./alertbody.md)
   The text for the notification’s alert.
-- [var alertLocalizationKey: String?](cksubscription/notificationinfo-swift.class/alertlocalizationkey.md)
+- [var alertLocalizationKey: String?](./alertlocalizationkey.md)
   The key that identifies the localized string for the notification’s alert.
-- [var alertLocalizationArgs: [CKRecord.FieldKey]?](cksubscription/notificationinfo-swift.class/alertlocalizationargs.md)
+- [var alertLocalizationArgs: [CKRecord.FieldKey]?](./alertlocalizationargs.md)
   The fields for building a notification’s alert.
-- [var alertActionLocalizationKey: String?](cksubscription/notificationinfo-swift.class/alertactionlocalizationkey.md)
+- [var alertActionLocalizationKey: String?](./alertactionlocalizationkey.md)
   The key that identifies the localized string for the notification’s action.
-- [var alertLaunchImage: String?](cksubscription/notificationinfo-swift.class/alertlaunchimage.md)
+- [var alertLaunchImage: String?](./alertlaunchimage.md)
   The filename of an image to use as a launch image.
 
 

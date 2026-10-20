@@ -1,7 +1,8 @@
 # inputDescriptor(of:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the descriptor for the specified input.
 
@@ -20,7 +21,7 @@ func inputDescriptor(of inputName: String) -> InferenceValue.Descriptor?
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 #### Return Value
 
@@ -32,9 +33,10 @@ The descriptor for the input, or `nil` if the function doesn’t have an input w
 
 ## See Also
 
-- [var inputCount: Int](inferencefunctiondescriptor/inputcount.md)
+### Describing inputs
+- [var inputCount: Int](./inputcount.md)
   The number of inputs the function accepts.
-- [var inputNames: [String]](inferencefunctiondescriptor/inputnames.md)
+- [var inputNames: [String]](./inputnames.md)
   The names of the function’s inputs.
 
 

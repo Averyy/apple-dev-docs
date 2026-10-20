@@ -1,7 +1,8 @@
 # sizeThatFits(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the space needed by the text view, for a proposed size.
 

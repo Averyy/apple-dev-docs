@@ -1,7 +1,8 @@
 # Tips.InvalidationReason.displayCountExceeded
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tip exceeded its maximum display count.
 

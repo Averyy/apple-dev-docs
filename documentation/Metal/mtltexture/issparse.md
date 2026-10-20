@@ -1,7 +1,8 @@
 # isSparse
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this is a sparse texture.
 
@@ -15,15 +16,28 @@ A Boolean value that indicates whether this is a sparse texture.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var isSparse: Bool { get }
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional var isSparse: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isSparse;
+```
+
 ## See Also
 
-- [var firstMipmapInTail: Int](mtltexture/firstmipmapintail.md)
+### Querying sparse properties
+- [var firstMipmapInTail: Int](./firstmipmapintail.md)
   The index of the first mipmap in the tail.
-- [var tailSizeInBytes: Int](mtltexture/tailsizeinbytes.md)
+- [var tailSizeInBytes: Int](./tailsizeinbytes.md)
   The size of the sparse texture tail, in bytes.
 
 

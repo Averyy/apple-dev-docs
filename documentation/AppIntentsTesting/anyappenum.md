@@ -1,7 +1,8 @@
 # AnyAppEnum
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased representation of an app enumeration that provides dynamic enumeration value access.
 
@@ -22,7 +23,7 @@ struct AnyAppEnum
 
 #### Overview
 
-Use `AnyAppEnum` to work with enumerations when you don’t know the specific enumeration type at compile time. At compile, the [`AnyAppEnum`](anyappenum.md) structure resolves to your app enum type and gives you access to its value as shown in the following example:
+Use `AnyAppEnum` to work with enumerations when you don’t know the specific enumeration type at compile time. At compile, the [`AnyAppEnum`](./anyappenum.md) structure resolves to your app enum type and gives you access to its value as shown in the following example:
 
 ```swift
 let definitions = IntentDefinitions(
@@ -46,41 +47,42 @@ let priorityLevel = try highPriority.as(String.self)
 ## Topics
 
 ### Creating an enum
-- [init(typeIdentifier: String, rawValue: String)](anyappenum/init(typeidentifier:rawvalue:).md)
+- [init(typeIdentifier: String, rawValue: String)](./anyappenum/init%28typeidentifier,rawvalue%29.md)
   Creates a new instance with the specified enumeration identifier and raw value.
-- [init(typeIdentifier: String, value: any LosslessStringConvertible)](anyappenum/init(typeidentifier:value:).md)
+- [init(typeIdentifier: String, value: any LosslessStringConvertible)](./anyappenum/init%28typeidentifier,value%29.md)
   Creates an enumeration with a typed raw value.
-- [var typeIdentifier: String](anyappenum/typeidentifier.md)
+- [var typeIdentifier: String](./anyappenum/typeidentifier.md)
   The enumeration’s type identifier.
-- [var rawValue: String](anyappenum/rawvalue.md)
+- [var rawValue: String](./anyappenum/rawvalue.md)
   The raw value of the selected enumeration option.
 ### Converting enum values
-- [func `as`<T>(T.Type) throws -> T](anyappenum/as(_:).md)
+- [func `as`<T>(T.Type) throws -> T](./anyappenum/as%28_%29.md)
   Casts the raw value to the specified type.
 ### Default Implementations
-- [CustomStringConvertible Implementations](anyappenum/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./anyappenum/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnyAppIntent](anyappintent.md)
+### Intermediate types
+- [struct AnyAppIntent](./anyappintent.md)
   A type-erased, intermediate representation of an app intent for testing purposes.
-- [struct AnyAppEntity](anyappentity.md)
+- [struct AnyAppEntity](./anyappentity.md)
   A type-erased, intermediate representation of your app entity for testing purposes.
-- [struct AnyEntityQuery](anyentityquery.md)
+- [struct AnyEntityQuery](./anyentityquery.md)
   A type-erased, intermediate representation of your entity query for testing purposes.
-- [struct AnyTransientAppEntity](anytransientappentity.md)
+- [struct AnyTransientAppEntity](./anytransientappentity.md)
   A type-erased representation of a transient app entity that provides dynamic property access.
 
 

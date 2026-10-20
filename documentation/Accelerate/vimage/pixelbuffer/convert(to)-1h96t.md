@@ -1,7 +1,8 @@
 # convert(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the contents of the floating-point 16-bit-per-channel, 2-channel interleaved pixel buffer to 8-bit-per-channel format.
 
@@ -11,7 +12,7 @@ Converts the contents of the floating-point 16-bit-per-channel, 2-channel interl
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Converts the contents of the floating-point 16-bit-per-channel, 2-channel interl
 ```swift
 func convert(to destination: vImage.PixelBuffer<vImage.Interleaved8x2>)
 ```
+
+Available when `Format` is `vImage.Interleaved16Fx2`.
 
 #### Discussion
 
@@ -30,11 +33,12 @@ This function converts the source values in the range `[0.0, 1.0]` to the destin
 
 ## See Also
 
-- [func convert(to: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/convert(to:)-449hx.md)
+### Conversion from 16-bit to 8-bit
+- [func convert(to: vImage.PixelBuffer<vImage.Planar8>)](./convert%28to%29-449hx.md)
   Converts the contents of the floating-point 16-bit planar pixel buffer to 8-bit planar format.
-- [func convert(to: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/convert(to:)-k50a.md)
+- [func convert(to: vImage.PixelBuffer<vImage.Interleaved8x4>)](./convert%28to%29-k50a.md)
   Converts the contents of the unsigned 16-bit-per-channel, 4-channel interleaved pixel buffer to 8-bit-per-channel format.
-- [func convert(to: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/convert(to:)-9xnxc.md)
+- [func convert(to: vImage.PixelBuffer<vImage.Interleaved8x4>)](./convert%28to%29-9xnxc.md)
   Converts the contents of the floating-point 16-bit-per-channel, 4-channel interleaved pixel buffer to 8-bit-per-channel format.
 
 

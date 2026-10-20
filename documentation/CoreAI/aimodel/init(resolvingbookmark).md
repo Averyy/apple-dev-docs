@@ -1,7 +1,8 @@
 # init(resolvingBookmark:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an `AIModel`  by resolving bookmark data pointing to its specialized asset in a cache
 
@@ -26,7 +27,7 @@ If the bookmark data can be resolved, the resulting `AIModel` pins and reference
 
 Resolving bookmark data involves checking it is a valid bookmark, validating the associated cache and cache entry it references exists, and returning a AIModel constructed with that specialized asset contained within that entry. If any of these steps fail, nil is returned
 
-> **Note**: If the bookmark data is malformed due to not being sourced from AIModel.bookmarkData an error is thrown
+> **Throws**: If the bookmark data is malformed due to not being sourced from AIModel.bookmarkData an error is thrown
 
 ## Parameters
 
@@ -34,8 +35,9 @@ Resolving bookmark data involves checking it is a valid bookmark, validating the
 
 ## See Also
 
-- [init(contentsOf: URL, options: SpecializationOptions) async throws](aimodel/init(contentsof:options:).md)
-  Creates an [`AIModel`](aimodel.md) from a `.aimodel`or `.aimodelc` file.
+### Creating a model
+- [init(contentsOf: URL, options: SpecializationOptions) async throws](./init%28contentsof,options%29.md)
+  Creates an [`AIModel`](../aimodel.md) from a `.aimodel`or `.aimodelc` file.
 
 
 ---

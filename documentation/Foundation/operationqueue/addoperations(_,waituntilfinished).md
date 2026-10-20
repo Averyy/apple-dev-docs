@@ -1,7 +1,8 @@
 # addOperations(_:waitUntilFinished:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified operations to the queue.
 
@@ -20,32 +21,37 @@ Adds the specified operations to the queue.
 func addOperations(_ ops: [Operation], waitUntilFinished wait: Bool)
 ```
 
+```objc
+- (void) addOperations:(NSArray<NSOperation *> *) ops waitUntilFinished:(BOOL) wait;
+```
+
 #### Discussion
 
 An operation object can be in at most one operation queue at a time and cannot be added if it is currently executing or finished. This method throws an `NSInvalidArgumentException` exception if any of those error conditions are true for any of the operations in the `ops` parameter.
 
-Once added, the specified `operation` remains in the queue until its [`isFinished`](operation/isfinished.md) method returns [`true`](https://developer.apple.com/documentation/swift/true).
+Once added, the specified `operation` remains in the queue until its [`isFinished`](../operation/isfinished.md) method returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
 - `ops`: The operations to be added to the queue.
-- `wait`: If [`true`](https://developer.apple.com/documentation/swift/true), the current thread is blocked until all of the specified operations finish executing. If [`false`](https://developer.apple.com/documentation/swift/false), the operations are added to the queue and control returns immediately to the caller.
+- `wait`: If [`true`](../../Swift/true.md), the current thread is blocked until all of the specified operations finish executing. If [`false`](../../Swift/false.md), the operations are added to the queue and control returns immediately to the caller.
 
 ## See Also
 
-- [func addOperation(Operation)](operationqueue/addoperation(_:)-64o8a.md)
+### Managing Operations in the Queue
+- [func addOperation(Operation)](./addoperation%28_%29-64o8a.md)
   Adds the specified operation to the receiver.
-- [func addOperation(() -> Void)](operationqueue/addoperation(_:)-5s294.md)
+- [func addOperation(() -> Void)](./addoperation%28_%29-5s294.md)
   Wraps the specified block in an operation and adds it to the receiver.
-- [func addBarrierBlock(() -> Void)](operationqueue/addbarrierblock(_:).md)
+- [func addBarrierBlock(() -> Void)](./addbarrierblock%28_%29.md)
   Invokes a block when the queue finishes all enqueued operations, and prevents subsequent operations from starting until the block has completed.
-- [func cancelAllOperations()](operationqueue/cancelalloperations.md)
+- [func cancelAllOperations()](./cancelalloperations%28%29.md)
   Cancels all queued and executing operations.
-- [func waitUntilAllOperationsAreFinished()](operationqueue/waituntilalloperationsarefinished.md)
+- [func waitUntilAllOperationsAreFinished()](./waituntilalloperationsarefinished%28%29.md)
   Blocks the current thread until all the receiver’s queued and executing operations finish executing.
-- [var operations: [Operation]](operationqueue/operations.md)
+- [var operations: [Operation]](./operations.md)
   The operations currently in the queue.
-- [var operationCount: Int](operationqueue/operationcount.md)
+- [var operationCount: Int](./operationcount.md)
   The number of operations currently in the queue.
 
 

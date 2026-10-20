@@ -1,7 +1,8 @@
 # MPMediaItemArtwork
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A graphical image, such as music album cover art, associated with a media item.
 
@@ -20,50 +21,55 @@ A graphical image, such as music album cover art, associated with a media item.
 class MPMediaItemArtwork
 ```
 
+```objc
+@interface MPMediaItemArtwork : NSObject
+```
+
 ## Topics
 
 ### Resizing existing artwork
-- [init(boundsSize: CGSize, requestHandler: (CGSize) -> UIImage)](mpmediaitemartwork/init(boundssize:requesthandler:).md)
+- [init(boundsSize: CGSize, requestHandler: (CGSize) -> UIImage)](./mpmediaitemartwork/init%28boundssize,requesthandler%29.md)
   Creates a new image from existing artwork with the specified bounds.
 ### Using a media item image
-- [func image(at: CGSize) -> UIImage?](mpmediaitemartwork/image(at:).md)
+- [func image(at: CGSize) -> UIImage?](./mpmediaitemartwork/image%28at%29.md)
   Returns the artwork image for an item at the given size.
-- [var bounds: CGRect](mpmediaitemartwork/bounds.md)
+- [var bounds: CGRect](./mpmediaitemartwork/bounds.md)
   The maximum size, in points, of the image associated with the media item artwork.
 ### Initializers
-- [convenience init(image: UIImage)](mpmediaitemartwork/init(image:).md)
+- [convenience init(image: UIImage)](./mpmediaitemartwork/init%28image%29.md)
   Initializes a media item artwork instance with a full-size image.
 ### Instance Properties
-- [var imageCropRect: CGRect](mpmediaitemartwork/imagecroprect.md)
+- [var imageCropRect: CGRect](./mpmediaitemartwork/imagecroprect.md)
   The bounds, in points, of the content area for the full size image associated with the media item artwork.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+### Media items and playlists
+- [Providing animated artwork for media items](./providing-animated-artwork-for-media-items.md)
   Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
-- [class MPMediaItem](mpmediaitem.md)
+- [class MPMediaItem](./mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
-- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+- [class MPMediaItemAnimatedArtwork](./mpmediaitemanimatedartwork.md)
   An animated image, such as an animated music album cover art, for a media item.
-- [class MPMediaItemCollection](mpmediaitemcollection.md)
+- [class MPMediaItemCollection](./mpmediaitemcollection.md)
   A sorted set of media items from the media library.
-- [class MPMediaPlaylist](mpmediaplaylist.md)
+- [class MPMediaPlaylist](./mpmediaplaylist.md)
   A playable collection of related media items.
-- [class MPMediaPlaylistCreationMetadata](mpmediaplaylistcreationmetadata.md)
+- [class MPMediaPlaylistCreationMetadata](./mpmediaplaylistcreationmetadata.md)
   A set of attributes for describing a playlist when creating it.
-- [class MPMediaEntity](mpmediaentity.md)
+- [class MPMediaEntity](./mpmediaentity.md)
   The abstract superclass for media items, media item collections, and media playlist instances.
 
 

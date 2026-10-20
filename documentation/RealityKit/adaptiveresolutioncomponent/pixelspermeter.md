@@ -1,7 +1,8 @@
 # pixelsPerMeter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A read-only value representing the suggested pixels per meter necessary to render an object.
 

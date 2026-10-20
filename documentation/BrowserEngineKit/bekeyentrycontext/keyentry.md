@@ -1,7 +1,8 @@
 # keyEntry
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 BEKeyEntry for which this context is representing.
 
@@ -17,11 +18,16 @@ BEKeyEntry for which this context is representing.
 var keyEntry: BEKeyEntry { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) BEKeyEntry * keyEntry;
+```
+
 ## See Also
 
-- [var shouldInsertCharacter: Bool](bekeyentrycontext/shouldinsertcharacter.md)
+### Getting the information about the key event
+- [var shouldInsertCharacter: Bool](./shouldinsertcharacter.md)
   Represents whether a character should be inserted.
-- [var shouldEvaluateForInputSystemHandling: Bool](bekeyentrycontext/shouldevaluateforinputsystemhandling.md)
+- [var shouldEvaluateForInputSystemHandling: Bool](./shouldevaluateforinputsystemhandling.md)
   Represents whether the key event should be evaluated within the context of a composed input mode.
 
 

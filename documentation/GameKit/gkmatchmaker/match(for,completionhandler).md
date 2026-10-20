@@ -1,7 +1,8 @@
 # match(for:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a match from an invitation that the local player accepts.
 
@@ -16,7 +17,15 @@ Creates a match from an invitation that the local player accepts.
 ## Declaration
 
 ```swift
+func match(for invite: GKInvite, completionHandler: (@Sendable (GKMatch?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func match(for invite: GKInvite) async throws -> GKMatch
+```
+
+```objc
+- (void) matchForInvite:(GKInvite *) invite completionHandler:(void (^)(GKMatch *match, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -26,8 +35,12 @@ Use this method when you implement your own interface to inform you when the loc
 ## Parameters
 
 - `invite`: The invitation that the local player accepts.
-- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`match`**: The match that GameKit creates when the local player accepts the invitation. If unsuccessful, this parameter is `nil`.
-- **`error`**: Describes an error if one occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  This block receives the following parameters:
+
+  - **`match`**: The match that GameKit creates when the local player accepts the invitation. If unsuccessful, this parameter is `nil`.
+  - **`error`**: Describes an error if one occurs, or `nil` if the operation completes.
 
 
 ---

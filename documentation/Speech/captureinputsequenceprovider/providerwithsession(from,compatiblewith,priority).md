@@ -1,7 +1,8 @@
 # providerWithSession(from:compatibleWith:priority:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an input sequence provider that reads from an audio capture device, and configures a new audio capture session with that device.
 
@@ -27,9 +28,9 @@ An instance of this class.
 
 This method also creates and configures a new `AVCaptureSession` with default settings. Initializing a session can take some time; you should call this method in a background task.
 
-Use the [`captureSession`](captureinputsequenceprovider/capturesession.md) property to start, stop, or otherwise manage the capture session.
+Use the [`captureSession`](./capturesession.md) property to start, stop, or otherwise manage the capture session.
 
-> **Note**: On iOS, tvOS, visionOS, and watchOS platforms, this method automatically configures your application’s default `AVAudioSession`. To avoid this behavior, call [`provider(from:in:compatibleWith:priority:)`](captureinputsequenceprovider/provider(from:in:compatiblewith:priority:).md) instead.
+> **Note**: On iOS, tvOS, visionOS, and watchOS platforms, this method automatically configures your application’s default `AVAudioSession`. To avoid this behavior, call [`provider(from:in:compatibleWith:priority:)`](./provider%28from,in,compatiblewith,priority%29.md) instead.
 
 ## Parameters
 
@@ -39,9 +40,10 @@ Use the [`captureSession`](captureinputsequenceprovider/capturesession.md) prope
 
 ## See Also
 
-- [static func provider(from: AVCaptureDevice, in: AVCaptureSession, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](captureinputsequenceprovider/provider(from:in:compatiblewith:priority:).md)
+### Creating a provider
+- [static func provider(from: AVCaptureDevice, in: AVCaptureSession, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](./provider%28from,in,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from an audio capture device.
-- [init(session: AVCaptureSession, analyzerFormat: AVAudioFormat, priority: TaskPriority?) throws](captureinputsequenceprovider/init(session:analyzerformat:priority:).md)
+- [init(session: AVCaptureSession, analyzerFormat: AVAudioFormat, priority: TaskPriority?) throws](./init%28session,analyzerformat,priority%29.md)
   Creates an input sequence provider.
 
 

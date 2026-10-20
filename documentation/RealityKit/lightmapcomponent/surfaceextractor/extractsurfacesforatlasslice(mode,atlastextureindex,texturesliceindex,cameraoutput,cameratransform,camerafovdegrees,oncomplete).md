@@ -1,7 +1,8 @@
 # extractSurfacesForAtlasSlice(mode:atlasTextureIndex:textureSliceIndex:cameraOutput:cameraTransform:cameraFOVDegrees:onComplete:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+
@@ -15,7 +16,8 @@ func extractSurfacesForAtlasSlice(mode: LightmapComponent.SurfaceExtractor.Extra
 
 ## See Also
 
-- [LightmapComponent.SurfaceExtractor.ExtractionMode](lightmapcomponent/surfaceextractor/extractionmode.md)
+### Extracting surfaces
+- [LightmapComponent.SurfaceExtractor.ExtractionMode](./extractionmode.md)
   Specifies what surface property to extract.
 
 

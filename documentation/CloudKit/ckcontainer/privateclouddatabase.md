@@ -1,23 +1,28 @@
 # privateCloudDatabase
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s private database.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var privateCloudDatabase: CKDatabase { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) CKDatabase * privateCloudDatabase;
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ The user’s private database is only available if the device has an iCloud acco
 
 Data in the private database counts toward the user’s iCloud storage quota.
 
-If there isn’t an iCloud account on the user’s device, this property still returns a database, but any attempt to use it results in an error. To determine if there is an iCloud account on the device, use the [`accountStatus(completionHandler:)`](ckcontainer/accountstatus(completionhandler:).md) method.
+If there isn’t an iCloud account on the user’s device, this property still returns a database, but any attempt to use it results in an error. To determine if there is an iCloud account on the device, use the [`accountStatus(completionHandler:)`](./accountstatus%28completionhandler%29.md) method.
 
 ## See Also
 
-- [var publicCloudDatabase: CKDatabase](ckcontainer/publicclouddatabase.md)
+### Getting the Public and Private Databases
+- [var publicCloudDatabase: CKDatabase](./publicclouddatabase.md)
   The app’s public database.
-- [var sharedCloudDatabase: CKDatabase](ckcontainer/sharedclouddatabase.md)
+- [var sharedCloudDatabase: CKDatabase](./sharedclouddatabase.md)
   The database that contains shared data.
-- [func database(with: CKDatabase.Scope) -> CKDatabase](ckcontainer/database(with:).md)
+- [func database(with: CKDatabase.Scope) -> CKDatabase](./database%28with%29.md)
   Returns the database with the specified scope.
 
 

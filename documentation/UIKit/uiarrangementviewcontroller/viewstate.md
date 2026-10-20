@@ -1,7 +1,8 @@
 # UIArrangementViewController.ViewState
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The state of a view within an arrangement.
 
@@ -21,16 +22,17 @@ struct ViewState
 ## Topics
 
 ### Getting the state
-- [var isHidden: Bool](uiarrangementviewcontroller/viewstate/ishidden.md)
+- [var isHidden: Bool](./viewstate/ishidden.md)
   A Boolean value that indicates whether the view is hidden in the current arrangement.
-- [var splitAxis: UIAxis](uiarrangementviewcontroller/viewstate/splitaxis.md)
+- [var splitAxis: UIAxis](./viewstate/splitaxis.md)
   The axis of the current split for the view within the arrangement if it exists.
-- [var zIndex: Int](uiarrangementviewcontroller/viewstate/zindex.md)
+- [var zIndex: Int](./viewstate/zindex.md)
   The z-index of the view within the arrangement.
 
 ## See Also
 
-- [func state(for: UIArrangementViewController.ViewPlacement) -> UIArrangementViewController.ViewState?](uiarrangementviewcontroller/state(for:).md)
+### Getting view state
+- [func state(for: UIArrangementViewController.ViewPlacement) -> UIArrangementViewController.ViewState?](./state%28for%29.md)
   Returns the view state for a placement in the arrangement.
 
 

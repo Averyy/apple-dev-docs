@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier for binding to a system-defined extension point.
 
@@ -26,7 +27,8 @@ init(_ value: StaticString)
 
 ## See Also
 
-- [init(host: StaticString, name: StaticString)](appextensionpoint/identifier/init(host:name:).md)
+### Creating an identifier attribute
+- [init(host: StaticString, name: StaticString)](./init%28host,name%29.md)
   Creates an identifier for binding to a host app’s extension point.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Sprt_StickFaceAngle
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Sprt_StickFaceAngle = 0x34
 ```
 

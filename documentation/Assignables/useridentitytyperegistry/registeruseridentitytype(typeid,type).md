@@ -1,7 +1,8 @@
 # registerUserIdentityType(typeID:type:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a user identity type for use when deserializing the user identity from `Data`.
 
@@ -9,7 +10,7 @@ Registers a user identity type for use when deserializing the user identity from
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

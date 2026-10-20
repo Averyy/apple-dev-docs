@@ -1,7 +1,8 @@
 # USDTransformOperation.Precision.float
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Single precision (32-bit).
 

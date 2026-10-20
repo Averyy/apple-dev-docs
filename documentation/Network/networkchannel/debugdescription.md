@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Generate a string representation of NetworkChannel suitable for logging
 

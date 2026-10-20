@@ -1,7 +1,8 @@
 # RVPark
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for recreational vehicle (RV) parks.
 
@@ -10,7 +11,7 @@ The point-of-interest category for recreational vehicle (RV) parks.
 
 ## Declaration
 
-```swift
+```
 readonly RVPark: "RVPark";
 ```
 

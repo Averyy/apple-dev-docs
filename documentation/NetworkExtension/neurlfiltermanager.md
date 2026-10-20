@@ -1,7 +1,8 @@
 # NEURLFilterManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class you use to configure and control a URL filter.
 
@@ -19,11 +20,11 @@ class NEURLFilterManager
 
 #### Overview
 
-The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [`WebKit`](https://developer.apple.com/documentation/webkit) and [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) APIs.
+The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [WebKit](../WebKit/WebKit.md) and [`URLSession`](../Foundation/urlsession.md) APIs.
 
 During URL filtering, the system performs sub-URL generation to enumurate all possible sub-URLs for the URL in question. For example, this URL:
 
-```None
+```
 https://www.sub1.example.com/a/b/c?id=123#fragment
 ```
 
@@ -80,16 +81,16 @@ Parses into the following sub-URLs:
 
 The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict determines if the app blocks the requested URL. Note that the manager Punycodes the requested URL before parsing; be sure to Punycode your own URL dataset before constructing your Bloom filter and PIR database.
 
-Neither the Bloom filter nor PIR supports wildcards or regular expressions. For a more flexible URL matching solution, use the [`urlParsingConfiguration`](neurlfiltermanager/urlparsingconfiguration.md) property to select the URL components, including the scheme, domain, path, query, and fragment, that you want to include in the parsing results. You can also use the [`urlParsingRegularExpression`](neurlfiltermanager/urlparsingregularexpression.md) property to implement custom parsing.
+Neither the Bloom filter nor PIR supports wildcards or regular expressions. For a more flexible URL matching solution, use the [`urlParsingConfiguration`](./neurlfiltermanager/urlparsingconfiguration.md) property to select the URL components, including the scheme, domain, path, query, and fragment, that you want to include in the parsing results. You can also use the [`urlParsingRegularExpression`](./neurlfiltermanager/urlparsingregularexpression.md) property to implement custom parsing.
 
 Instances of this class are thread-safe.
 
-#### Configure the Pir Server
+#### Configure the PIR server
 
 URL filtering requires that your app’s information property list contain a top-level `NSPIRConfiguration` dictionary. The dictionary includes two keys:
 
-- **`PIRServerURL`**: (Required) The URL of the PIR server. The value of this key is equivalent to the [`pirServerURL`](neurlfiltermanager/pirserverurl.md) property.
-- **`PrivacyPassIssuerURL`**: (Optional) The URL of the Privacy Pass Issuer. The value of this key is equivalent to the [`pirPrivacyPassIssuerURL`](neurlfiltermanager/pirprivacypassissuerurl.md) property. If absent, the `PrivacyPassIssuerURL` defaults to the value of `PIRServerURL`.
+- **`PIRServerURL`**: (Required) The URL of the PIR server. The value of this key is equivalent to the [`pirServerURL`](./neurlfiltermanager/pirserverurl.md) property.
+- **`PrivacyPassIssuerURL`**: (Optional) The URL of the Privacy Pass Issuer. The value of this key is equivalent to the [`pirPrivacyPassIssuerURL`](./neurlfiltermanager/pirprivacypassissuerurl.md) property. If absent, the `PrivacyPassIssuerURL` defaults to the value of `PIRServerURL`.
 
 An `NSPIRConfiguration` dictionary may look like this example:
 
@@ -103,94 +104,95 @@ An `NSPIRConfiguration` dictionary may look like this example:
 </dict>
 ```
 
-See the [`PIRService - NEURLFilter`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice#NEURLFilter) documentation for updated security guidance to configure your PIR server to support a URL filter.
+See the [PIRService - NEURLFilter](https://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice#NEURLFilter) documentation for updated security guidance to configure your PIR server to support a URL filter.
 
 ## Topics
 
 ### Obtaining the shared instance
-- [static var shared: NEURLFilterManager](neurlfiltermanager/shared.md)
+- [static var shared: NEURLFilterManager](./neurlfiltermanager/shared.md)
   The shared filter manager instance your app uses to manage URL filters.
 ### Working with a Private Information Retrieval server
-- [var pirAuthenticationToken: String?](neurlfiltermanager/pirauthenticationtoken.md)
+- [var pirAuthenticationToken: String?](./neurlfiltermanager/pirauthenticationtoken.md)
   A PIR per-user authentication token string.
-- [func refreshPIRParameters() async throws](neurlfiltermanager/refreshpirparameters.md)
+- [func refreshPIRParameters() async throws](./neurlfiltermanager/refreshpirparameters%28%29.md)
   Refetches PIR parameters from the server.
-- [func resetPIRCache() async throws](neurlfiltermanager/resetpircache.md)
+- [func resetPIRCache() async throws](./neurlfiltermanager/resetpircache%28%29.md)
   Resets the PIR on-device cache.
-- [var pirServerURL: URL?](neurlfiltermanager/pirserverurl.md)
+- [var pirServerURL: URL?](./neurlfiltermanager/pirserverurl.md)
   A URL that contains the domain name of the PIR server.
-- [var pirPrivacyPassIssuerURL: URL?](neurlfiltermanager/pirprivacypassissuerurl.md)
+- [var pirPrivacyPassIssuerURL: URL?](./neurlfiltermanager/pirprivacypassissuerurl.md)
   A URL that contains the domain name of Privacy Pass issuer.
 ### Working with the filter configuration
-- [func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthenticationToken: String, controlProviderBundleIdentifier: String) throws](neurlfiltermanager/setconfiguration(pirserverurl:pirprivacypassissuerurl:pirauthenticationtoken:controlproviderbundleidentifier:).md)
+- [func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthenticationToken: String, controlProviderBundleIdentifier: String) throws](./neurlfiltermanager/setconfiguration%28pirserverurl,pirprivacypassissuerurl,pirauthenticationtoken,controlproviderbundleidentifier%29.md)
   Sets a URL filter configuration with the required PIR server attributes and app extension information.
-- [func loadFromPreferences() async throws](neurlfiltermanager/loadfrompreferences.md)
+- [func loadFromPreferences() async throws](./neurlfiltermanager/loadfrompreferences%28%29.md)
   Loads the current URL filter configuration from the caller’s URL filter preferences.
-- [func saveToPreferences() async throws](neurlfiltermanager/savetopreferences.md)
+- [func saveToPreferences() async throws](./neurlfiltermanager/savetopreferences%28%29.md)
   Saves the URL filter configuration in the caller’s URL filter preferences.
-- [func removeFromPreferences() async throws](neurlfiltermanager/removefrompreferences.md)
+- [func removeFromPreferences() async throws](./neurlfiltermanager/removefrompreferences%28%29.md)
   Removes the URL filter configuration from the caller’s URL filter preferences.
-- [func handleConfigChange() -> any AsyncSequence<Bool, Never>](neurlfiltermanager/handleconfigchange.md)
+- [func handleConfigChange() -> any AsyncSequence<Bool, Never>](./neurlfiltermanager/handleconfigchange%28%29.md)
   Sets up an observer for the filter configuration change notification and models it as an asynchronous sequence.
 ### Customizing filter parsing behavior
-- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/urlparsingconfiguration.md)
+- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](./neurlfiltermanager/urlparsingconfiguration.md)
   A property to configure the filter’s parser behavior.
-- [NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/parsingconfiguration.md)
+- [NEURLFilterManager.ParsingConfiguration](./neurlfiltermanager/parsingconfiguration.md)
   A type to configure the filter’s parser behavior.
-- [var urlParsingRegularExpression: String?](neurlfiltermanager/urlparsingregularexpression.md)
+- [var urlParsingRegularExpression: String?](./neurlfiltermanager/urlparsingregularexpression.md)
   A regular expression used for advanced URL parsing.
-- [func setURLParsingRegularExpression(String?) throws](neurlfiltermanager/seturlparsingregularexpression(_:).md)
+- [func setURLParsingRegularExpression(String?) throws](./neurlfiltermanager/seturlparsingregularexpression%28_%29.md)
   Sets a regular expression for use in URL parsing.
 ### Working with filter statuses
-- [var status: NEURLFilterManager.Status](neurlfiltermanager/status-swift.property.md)
+- [var status: NEURLFilterManager.Status](./neurlfiltermanager/status-swift.property.md)
   The current status of the URL filter.
-- [func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>](neurlfiltermanager/handlestatuschange.md)
+- [func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>](./neurlfiltermanager/handlestatuschange%28%29.md)
   Sets up an observer for the status notification and models it as an asynchronous sequence.
-- [NEURLFilterManager.Status](neurlfiltermanager/status-swift.enum.md)
+- [NEURLFilterManager.Status](./neurlfiltermanager/status-swift.enum.md)
   An enumeration of URL filter status codes.
 ### Managing filter life cycle
-- [var isEnabled: Bool](neurlfiltermanager/isenabled.md)
+- [var isEnabled: Bool](./neurlfiltermanager/isenabled.md)
   A Boolean value that toggles the enabled status of the URL filter.
-- [var shouldFailClosed: Bool](neurlfiltermanager/shouldfailclosed.md)
+- [var shouldFailClosed: Bool](./neurlfiltermanager/shouldfailclosed.md)
   A Boolean value that determines how the filter behaves if it fails to make a filtering decision.
-- [var prefilterFetchInterval: TimeInterval](neurlfiltermanager/prefilterfetchinterval.md)
+- [var prefilterFetchInterval: TimeInterval](./neurlfiltermanager/prefilterfetchinterval.md)
   The time interval at which the the filter control provider app extension runs.
 ### Producing filtering reports
-- [var reportEndpoint: String?](neurlfiltermanager/reportendpoint.md)
+- [var reportEndpoint: String?](./neurlfiltermanager/reportendpoint.md)
   The endpoint that the filter manager sends blocked URL reports to.
-- [var reportFormat: NEURLFilterManager.ReportFormat](neurlfiltermanager/reportformat-swift.property.md)
+- [var reportFormat: NEURLFilterManager.ReportFormat](./neurlfiltermanager/reportformat-swift.property.md)
   The format the manager uses to send blocked URL reports.
-- [NEURLFilterManager.ReportFormat](neurlfiltermanager/reportformat-swift.enum.md)
+- [NEURLFilterManager.ReportFormat](./neurlfiltermanager/reportformat-swift.enum.md)
   An enumertion of report format types used when reporting blocked URLs.
-- [var reportInterval: TimeInterval](neurlfiltermanager/reportinterval.md)
+- [var reportInterval: TimeInterval](./neurlfiltermanager/reportinterval.md)
   The time interval (in seconds) at which the system sends reports of blocked URLs.
 ### Identifying app and extension bundles
-- [var appBundleIdentifier: String?](neurlfiltermanager/appbundleidentifier.md)
+- [var appBundleIdentifier: String?](./neurlfiltermanager/appbundleidentifier.md)
   The bundle identifier of the URL filter app.
-- [var controlProviderBundleIdentifier: String?](neurlfiltermanager/controlproviderbundleidentifier.md)
+- [var controlProviderBundleIdentifier: String?](./neurlfiltermanager/controlproviderbundleidentifier.md)
   The bundle identifier of the filter controller provider app extension.
 ### Handling errors
-- [var lastDisconnectError: NEURLFilterManager.Error?](neurlfiltermanager/lastdisconnecterror.md)
+- [var lastDisconnectError: NEURLFilterManager.Error?](./neurlfiltermanager/lastdisconnecterror.md)
   The most recent error that caused the URL Filter to stop.
-- [NEURLFilterManager.Error](neurlfiltermanager/error.md)
+- [NEURLFilterManager.Error](./neurlfiltermanager/error.md)
   An enumeration of URL filter error codes
 ### Describing the filter
-- [var localizedDescription: LocalizedStringResource?](neurlfiltermanager/localizeddescription.md)
+- [var localizedDescription: LocalizedStringResource?](./neurlfiltermanager/localizeddescription.md)
   A string containing a description of the URL filter.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NEURLFilterControlProvider](neurlfiltercontrolprovider.md)
+### URL filters
+- [protocol NEURLFilterControlProvider](./neurlfiltercontrolprovider.md)
   A protocol that defines an object that’s responsible for fetching pre-filter data.
-- [class NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
+- [class NEURLFilterControlProviderConfiguration](./neurlfiltercontrolproviderconfiguration.md)
   A class that defines app extension configurations for the URL Filter control provider app extension.
-- [class NEURLFilter](neurlfilter.md)
+- [class NEURLFilter](./neurlfilter.md)
   A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
 
 

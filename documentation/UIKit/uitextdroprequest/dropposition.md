@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The text position corresponding to the location of a drop session.
@@ -18,11 +19,16 @@ The text position corresponding to the location of a drop session.
 var dropPosition: UITextPosition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITextPosition * dropPosition;
+```
+
 ## See Also
 
-- [var isSameView: Bool](uitextdroprequest/issameview.md)
+### Getting information about the text drop request
+- [var isSameView: Bool](./issameview.md)
   A Boolean value indicating whether the drag and the drop are within the same text view.
-- [var suggestedProposal: UITextDropProposal](uitextdroprequest/suggestedproposal.md)
+- [var suggestedProposal: UITextDropProposal](./suggestedproposal.md)
   The text drop proposal offered by the text view.
 
 

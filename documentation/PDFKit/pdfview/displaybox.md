@@ -1,7 +1,8 @@
 # displayBox
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current style of display box.
 
@@ -19,9 +20,13 @@ The current style of display box.
 var displayBox: PDFDisplayBox { get set }
 ```
 
+```objc
+@property (nonatomic) PDFDisplayBox displayBox;
+```
+
 #### Discussion
 
-The available values for display boxes are defined in the Constants section in the [`PDFPage`](pdfpage.md) class.
+The available values for display boxes are defined in the Constants section in the [`PDFPage`](../pdfpage.md) class.
 
 
 ---

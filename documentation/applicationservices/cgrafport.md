@@ -1,7 +1,8 @@
 # CGrafPort
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CGrafPort = GrafPort
+```
+
+```c
+typedef GrafPort CGrafPort;
 ```
 
 

@@ -1,7 +1,8 @@
 # badCallOrderErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A status call was made before being set up first. 
 

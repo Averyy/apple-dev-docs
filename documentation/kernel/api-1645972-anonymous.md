@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [sockopt_get](1645972-anonymous/sockopt_get.md)
-- [sockopt_set](1645972-anonymous/sockopt_set.md)
+- [sockopt_get](./api-1645972-anonymous/sockopt_get.md)
+- [sockopt_set](./api-1645972-anonymous/sockopt_set.md)
 
 
 ---

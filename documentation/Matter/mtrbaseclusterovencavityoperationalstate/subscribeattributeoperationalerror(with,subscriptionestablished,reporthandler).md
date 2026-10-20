@@ -1,7 +1,8 @@
 # subscribeAttributeOperationalError(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeOperationalError(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTROvenCavityOperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeOperationalErrorWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTROvenCavityOperationalStateClusterErrorStateStruct *value, NSError *error)) reportHandler;
 ```
 
 

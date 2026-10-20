@@ -1,7 +1,8 @@
 # crossFade
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A navigation transition that cross-fades between the appearing view and the disappearing view.
 
@@ -18,6 +19,8 @@ A navigation transition that cross-fades between the appearing view and the disa
 ```swift
 static var crossFade: CrossFadeNavigationTransition { get }
 ```
+
+Available when `Self` is `CrossFadeNavigationTransition`.
 
 #### Discussion
 
@@ -46,15 +49,16 @@ struct ContentView: View {
 
 ## See Also
 
-- [static var automatic: AutomaticNavigationTransition](navigationtransition/automatic.md)
+### Getting built-in transitions
+- [static var automatic: AutomaticNavigationTransition](./automatic.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [struct AutomaticNavigationTransition](automaticnavigationtransition.md)
+- [struct AutomaticNavigationTransition](../automaticnavigationtransition.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](../crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](navigationtransition/zoom(sourceid:in:).md)
+- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](./zoom%28sourceid,in%29.md)
   A navigation transition that zooms the appearing view from a given source view.
-- [struct ZoomNavigationTransition](zoomnavigationtransition.md)
+- [struct ZoomNavigationTransition](../zoomnavigationtransition.md)
   A navigation transition that zooms the appearing view from a given source view.
 
 

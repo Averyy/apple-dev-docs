@@ -1,7 +1,8 @@
 # init(delegate:queue:options:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the central manager with specified delegate, dispatch queue, and initialization options.
 
@@ -20,29 +21,34 @@ Initializes the central manager with specified delegate, dispatch queue, and ini
 init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<CBCentralManagerDelegate>) delegate queue:(dispatch_queue_t) queue options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
 Returns a newly initialized central manager.
 
 #### Discussion
 
-This method is the designated initializer for the [`CBCentralManager`](cbcentralmanager.md) class.
+This method is the designated initializer for the [`CBCentralManager`](../cbcentralmanager.md) class.
 
 ## Parameters
 
 - `delegate`: The delegate that receives the central events.
 - `queue`: The dispatch queue used to dispatch the central role events. If the value is `nil`, the central manager dispatches central role events using the main queue.
-- `options`: An optional dictionary that contains initialization options for a central manager. For available options, see [`Central Manager Initialization Options`](central-manager-initialization-options.md).
+- `options`: An optional dictionary that contains initialization options for a central manager. For available options, see [Central Manager Initialization Options](../central-manager-initialization-options.md).
 
 ## See Also
 
-- [convenience init()](cbcentralmanager/init.md)
+### Initializing a Central Manager
+- [convenience init()](./init%28%29.md)
   Initializes the central manager without a delegate.
-- [convenience init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?)](cbcentralmanager/init(delegate:queue:).md)
+- [convenience init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?)](./init%28delegate,queue%29.md)
   Initializes the central manager with a specified delegate and dispatch queue.
-- [Central Manager Initialization Options](central-manager-initialization-options.md)
+- [Central Manager Initialization Options](../central-manager-initialization-options.md)
   Keys used to pass options when initializing a central manager.
-- [Central Manager State Restoration Options](central-manager-state-restoration-options.md)
+- [Central Manager State Restoration Options](../central-manager-state-restoration-options.md)
   Restore central manager state in scene-based apps.
 
 

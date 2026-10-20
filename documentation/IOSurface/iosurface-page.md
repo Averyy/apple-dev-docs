@@ -1,7 +1,8 @@
 # IOSurface
 
 **Framework**: IOSurface  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Data type representing an IOSurface opaque object.
 
@@ -19,67 +20,72 @@ Data type representing an IOSurface opaque object.
 class IOSurface
 ```
 
+```objc
+@interface IOSurface : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(properties: [IOSurfacePropertyKey : any Sendable])](iosurface/init(properties:).md)
-- [init(IOSurfaceRef)](iosurface/init(_:).md)
-- [init?(coder: NSCoder)](iosurface/init(coder:).md)
+- [init?(properties: [IOSurfacePropertyKey : any Sendable])](./iosurface-page/init%28properties%29.md)
+- [init(IOSurfaceRef)](./iosurface-page/init%28_%29.md)
+- [init?(coder: NSCoder)](./iosurface-page/init%28coder%29.md)
 ### Instance Properties
-- [var allocationSize: Int](iosurface/allocationsize.md)
-- [var allowsPixelSizeCasting: Bool](iosurface/allowspixelsizecasting.md)
-- [var baseAddress: UnsafeMutableRawPointer](iosurface/baseaddress.md)
-- [var bytesPerElement: Int](iosurface/bytesperelement.md)
-- [var bytesPerRow: Int](iosurface/bytesperrow.md)
-- [var elementHeight: Int](iosurface/elementheight.md)
-- [var elementWidth: Int](iosurface/elementwidth.md)
-- [var height: Int](iosurface/height.md)
-- [var isInUse: Bool](iosurface/isinuse.md)
-- [var localUseCount: Int32](iosurface/localusecount.md)
-- [var pixelFormat: OSType](iosurface/pixelformat.md)
-- [var planeCount: Int](iosurface/planecount.md)
-- [var seed: UInt32](iosurface/seed.md)
-- [var width: Int](iosurface/width.md)
-- [var surfaceID: UInt32](iosurface/surfaceid.md)
+- [var allocationSize: Int](./iosurface-page/allocationsize.md)
+- [var allowsPixelSizeCasting: Bool](./iosurface-page/allowspixelsizecasting.md)
+- [var baseAddress: UnsafeMutableRawPointer](./iosurface-page/baseaddress.md)
+- [var bytesPerElement: Int](./iosurface-page/bytesperelement.md)
+- [var bytesPerRow: Int](./iosurface-page/bytesperrow.md)
+- [var elementHeight: Int](./iosurface-page/elementheight.md)
+- [var elementWidth: Int](./iosurface-page/elementwidth.md)
+- [var height: Int](./iosurface-page/height.md)
+- [var isInUse: Bool](./iosurface-page/isinuse.md)
+- [var localUseCount: Int32](./iosurface-page/localusecount.md)
+- [var pixelFormat: OSType](./iosurface-page/pixelformat.md)
+- [var planeCount: Int](./iosurface-page/planecount.md)
+- [var seed: UInt32](./iosurface-page/seed.md)
+- [var width: Int](./iosurface-page/width.md)
+- [var surfaceID: UInt32](./iosurface-page/surfaceid.md)
 ### Instance Methods
-- [func allAttachments() -> [String : any Sendable]?](iosurface/allattachments.md)
-- [func attachment(forKey: String) -> (any Sendable)?](iosurface/attachment(forkey:).md)
-- [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](iosurface/baseaddressofplane(at:).md)
-- [func bytesPerElementOfPlane(at: Int) -> Int](iosurface/bytesperelementofplane(at:).md)
-- [func bytesPerRowOfPlane(at: Int) -> Int](iosurface/bytesperrowofplane(at:).md)
-- [func decrementUseCount()](iosurface/decrementusecount.md)
-- [func elementHeightOfPlane(at: Int) -> Int](iosurface/elementheightofplane(at:).md)
-- [func elementWidthOfPlane(at: Int) -> Int](iosurface/elementwidthofplane(at:).md)
-- [func heightOfPlane(at: Int) -> Int](iosurface/heightofplane(at:).md)
-- [func incrementUseCount()](iosurface/incrementusecount.md)
-- [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/lock(options:seed:).md)
-- [func removeAllAttachments()](iosurface/removeallattachments.md)
-- [func removeAttachment(forKey: String)](iosurface/removeattachment(forkey:).md)
-- [func setAllAttachments([String : any Sendable])](iosurface/setallattachments(_:).md)
-- [func setAttachment(any Sendable, forKey: String)](iosurface/setattachment(_:forkey:).md)
-- [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](iosurface/setpurgeable(_:oldstate:).md)
-- [func unlock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/unlock(options:seed:).md)
-- [func widthOfPlane(at: Int) -> Int](iosurface/widthofplane(at:).md)
+- [func allAttachments() -> [String : any Sendable]?](./iosurface-page/allattachments%28%29.md)
+- [func attachment(forKey: String) -> (any Sendable)?](./iosurface-page/attachment%28forkey%29.md)
+- [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](./iosurface-page/baseaddressofplane%28at%29.md)
+- [func bytesPerElementOfPlane(at: Int) -> Int](./iosurface-page/bytesperelementofplane%28at%29.md)
+- [func bytesPerRowOfPlane(at: Int) -> Int](./iosurface-page/bytesperrowofplane%28at%29.md)
+- [func decrementUseCount()](./iosurface-page/decrementusecount%28%29.md)
+- [func elementHeightOfPlane(at: Int) -> Int](./iosurface-page/elementheightofplane%28at%29.md)
+- [func elementWidthOfPlane(at: Int) -> Int](./iosurface-page/elementwidthofplane%28at%29.md)
+- [func heightOfPlane(at: Int) -> Int](./iosurface-page/heightofplane%28at%29.md)
+- [func incrementUseCount()](./iosurface-page/incrementusecount%28%29.md)
+- [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](./iosurface-page/lock%28options,seed%29.md)
+- [func removeAllAttachments()](./iosurface-page/removeallattachments%28%29.md)
+- [func removeAttachment(forKey: String)](./iosurface-page/removeattachment%28forkey%29.md)
+- [func setAllAttachments([String : any Sendable])](./iosurface-page/setallattachments%28_%29.md)
+- [func setAttachment(any Sendable, forKey: String)](./iosurface-page/setattachment%28_,forkey%29.md)
+- [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](./iosurface-page/setpurgeable%28_,oldstate%29.md)
+- [func unlock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](./iosurface-page/unlock%28options,seed%29.md)
+- [func widthOfPlane(at: Int) -> Int](./iosurface-page/widthofplane%28at%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class IOSurfaceRef](iosurfaceref.md)
+### Classes
+- [class IOSurfaceRef](./iosurfaceref.md)
   Data type representing an IOSurface opaque object.
 
 

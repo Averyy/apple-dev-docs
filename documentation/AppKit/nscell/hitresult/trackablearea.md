@@ -1,7 +1,8 @@
 # trackableArea
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A trackable area in the cell.
 
@@ -14,11 +15,16 @@ A trackable area in the cell.
 static var trackableArea: NSCell.HitResult { get }
 ```
 
+```c
+NSCellHitTrackableArea
+```
+
 ## See Also
 
-- [static var contentArea: NSCell.HitResult](nscell/hitresult/contentarea.md)
+### Constants
+- [static var contentArea: NSCell.HitResult](./contentarea.md)
   A content area in the cell.
-- [static var editableTextArea: NSCell.HitResult](nscell/hitresult/editabletextarea.md)
+- [static var editableTextArea: NSCell.HitResult](./editabletextarea.md)
   An editable text area of the cell.
 
 

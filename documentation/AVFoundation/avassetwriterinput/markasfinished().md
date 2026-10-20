@@ -1,7 +1,8 @@
 # markAsFinished()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the input as finished to indicate that you’re done appending samples to it.
 
@@ -19,31 +20,36 @@ Marks the input as finished to indicate that you’re done appending samples to 
 func markAsFinished()
 ```
 
+```objc
+- (void) markAsFinished;
+```
+
 #### Discussion
 
-Apps that monitor an input’s [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) value must call this method when they finish appending to it. This is necessary to prevent other inputs from stalling because they’re waiting on the input’s media data to complete the ideal interleaving pattern.
+Apps that monitor an input’s [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) value must call this method when they finish appending to it. This is necessary to prevent other inputs from stalling because they’re waiting on the input’s media data to complete the ideal interleaving pattern.
 
-After calling this method from the serial queue passed to [`requestMediaDataWhenReady(on:using:)`](avassetwriterinput/requestmediadatawhenready(on:using:).md), the input issues no more invocations of the callback it passes to that method.
+After calling this method from the serial queue passed to [`requestMediaDataWhenReady(on:using:)`](./requestmediadatawhenready%28on,using%29.md), the input issues no more invocations of the callback it passes to that method.
 
 ## See Also
 
-- [var expectsMediaDataInRealTime: Bool](avassetwriterinput/expectsmediadatainrealtime.md)
+### Appending media samples
+- [var expectsMediaDataInRealTime: Bool](./expectsmediadatainrealtime.md)
   A Boolean value that indicates whether the input tailors its processing for real-time sources.
-- [var isReadyForMoreMediaData: Bool](avassetwriterinput/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   A Boolean value that indicates whether the input is ready to accept media data.
-- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avassetwriterinput/requestmediadatawhenready(on:using:).md)
+- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](./requestmediadatawhenready%28on,using%29.md)
   Tells the input to request media data, at its convenience, to write to the output file.
-- [func append(CMSampleBuffer) -> Bool](avassetwriterinput/append(_:).md)
+- [func append(CMSampleBuffer) -> Bool](./append%28_%29.md)
   Appends a sample buffer to an input to write to the output file.
-- [AVAssetWriterInput.SampleBufferReceiver](avassetwriterinput/samplebufferreceiver.md)
+- [AVAssetWriterInput.SampleBufferReceiver](./samplebufferreceiver.md)
   Provides an interface for writing sample buffers to an input.
-- [AVAssetWriterInput.PixelBufferReceiver](avassetwriterinput/pixelbufferreceiver.md)
+- [AVAssetWriterInput.PixelBufferReceiver](./pixelbufferreceiver.md)
   Provides an interface for writing pixel buffers to an input.
-- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](avassetwriterinput/taggedpixelbuffergroupreceiver.md)
+- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](./taggedpixelbuffergroupreceiver.md)
   Provides an interface for writing tagged pixel buffers to an input.
-- [AVAssetWriterInput.MetadataReceiver](avassetwriterinput/metadatareceiver.md)
+- [AVAssetWriterInput.MetadataReceiver](./metadatareceiver.md)
   Provides an interface for writing timed metadata groups to an input.
-- [AVAssetWriterInput.CaptionReceiver](avassetwriterinput/captionreceiver.md)
+- [AVAssetWriterInput.CaptionReceiver](./captionreceiver.md)
   Provides an interface for writing caption data to an input.
 
 

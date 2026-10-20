@@ -1,7 +1,8 @@
 # NSTextInsertionIndicator.AutomaticModeOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect the automatic display mode.
 
@@ -14,43 +15,48 @@ Options that affect the automatic display mode.
 struct AutomaticModeOptions
 ```
 
+```c
+enum NSTextInsertionIndicatorAutomaticModeOptions : NSInteger;
+```
+
 ## Topics
 
 ### Configuring automatic mode options
-- [static var showEffectsView: NSTextInsertionIndicator.AutomaticModeOptions](nstextinsertionindicator/automaticmodeoptions-swift.struct/showeffectsview.md)
+- [static var showEffectsView: NSTextInsertionIndicator.AutomaticModeOptions](./automaticmodeoptions-swift.struct/showeffectsview.md)
   Specifies whether a trailing glow displays during dictation.
-- [static var showWhileTracking: NSTextInsertionIndicator.AutomaticModeOptions](nstextinsertionindicator/automaticmodeoptions-swift.struct/showwhiletracking.md)
+- [static var showWhileTracking: NSTextInsertionIndicator.AutomaticModeOptions](./automaticmodeoptions-swift.struct/showwhiletracking.md)
   Specifies whether the insertion indicator shows during a tracking loop.
 ### Initializers
-- [init(rawValue: Int)](nstextinsertionindicator/automaticmodeoptions-swift.struct/init(rawvalue:).md)
+- [init(rawValue: Int)](./automaticmodeoptions-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+### Text input
+- [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
   Incorporate the system text cursor into your custom text UI in AppKit.
-- [class NSTextInputContext](nstextinputcontext.md)
+- [class NSTextInputContext](../nstextinputcontext.md)
   An object that represents the Cocoa text input system.
-- [protocol NSTextInputClient](nstextinputclient.md)
+- [protocol NSTextInputClient](../nstextinputclient.md)
   A set of methods that text views need to implement to interact properly with the text input management system.
-- [class NSTextAlternatives](nstextalternatives.md)
+- [class NSTextAlternatives](../nstextalternatives.md)
   A list of alternative strings for a piece of text.
-- [protocol NSTextContent](nstextcontent.md)
+- [protocol NSTextContent](../nstextcontent.md)
   A protocol that describes specific kinds of input content types.
-- [class NSTextInsertionIndicator](nstextinsertionindicator.md)
+- [class NSTextInsertionIndicator](../nstextinsertionindicator.md)
   A view that represents the insertion indicator in text.
-- [NSTextInsertionIndicator.DisplayMode](nstextinsertionindicator/displaymode-swift.enum.md)
+- [NSTextInsertionIndicator.DisplayMode](./displaymode-swift.enum.md)
   Constants that determine how to display the system text cursor in a custom text UI.
 
 

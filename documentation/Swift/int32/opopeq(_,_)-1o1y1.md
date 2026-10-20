@@ -1,7 +1,8 @@
 # >>=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Stores the result of shifting a value’s binary representation the specified number of digits to the right in the left-hand-side variable.
 

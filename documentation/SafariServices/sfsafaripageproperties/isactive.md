@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the page is currently active.
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the page is currently active.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isActive) BOOL active;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if active; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if active; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var title: String?](sfsafaripageproperties/title.md)
+### Getting the Safari Page Properties
+- [var title: String?](./title.md)
   The title of the page.
-- [var url: URL?](sfsafaripageproperties/url.md)
+- [var url: URL?](./url.md)
   Indicates the URL of the page.
-- [var usesPrivateBrowsing: Bool](sfsafaripageproperties/usesprivatebrowsing.md)
+- [var usesPrivateBrowsing: Bool](./usesprivatebrowsing.md)
   A Boolean value that indicates whether the page is using Safari Private Browsing.
 
 

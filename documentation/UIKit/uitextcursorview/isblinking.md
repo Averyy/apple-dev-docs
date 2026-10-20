@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that determines whether the blink animation is running.
@@ -19,13 +20,18 @@ A Boolean value that determines whether the blink animation is running.
 var isBlinking: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isBlinking) BOOL blinking;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the system to start animating the blink effect for the insertion point cursor. Set the property to [`false`](https://developer.apple.com/documentation/swift/false) to stop the blink animation.
+Set this property to [`true`](../../Swift/true.md) when you want the system to start animating the blink effect for the insertion point cursor. Set the property to [`false`](../../Swift/false.md) to stop the blink animation.
 
 ## See Also
 
-- [func resetBlinkAnimation()](uitextcursorview/resetblinkanimation.md)
+### Determining the animation state
+- [func resetBlinkAnimation()](./resetblinkanimation%28%29.md)
   Resets the blink animation to avoid glitches while someone is typing.
 
 

@@ -1,14 +1,15 @@
 # CS_SHA256_LEN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 CS_SHA256_LEN = 32
 ```
 

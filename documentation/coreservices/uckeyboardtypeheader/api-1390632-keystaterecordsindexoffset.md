@@ -1,9 +1,10 @@
 # keyStateRecordsIndexOffset
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyStateRecordsIndex`](uckeystaterecordsindex.md), if such is used in the resource. This value may be 0 if no dead-key state records are included in the resource.
+An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyStateRecordsIndex`](../uckeystaterecordsindex.md), if such is used in the resource. This value may be 0 if no dead-key state records are included in the resource.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ An unsigned 32-bit integer providing an offset to a structure of type [`UCKeySta
 
 ```swift
 var keyStateRecordsIndexOffset: UInt32
+```
+
+```c
+UInt32 keyStateRecordsIndexOffset;
 ```
 
 

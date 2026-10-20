@@ -1,7 +1,8 @@
 # getRecurrentOutputMatrix(forLayerIndex:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 func getRecurrentOutputMatrix(forLayerIndex layerIndex: Int) -> MPSMatrix?
 ```
 
+```objc
+- (MPSMatrix *) getRecurrentOutputMatrixForLayerIndex:(NSUInteger) layerIndex;
+```
+
 ## See Also
 
-- [func getMemoryCellMatrix(forLayerIndex: Int) -> MPSMatrix?](mpsrnnrecurrentmatrixstate/getmemorycellmatrix(forlayerindex:).md)
+### Instance Methods
+- [func getMemoryCellMatrix(forLayerIndex: Int) -> MPSMatrix?](./getmemorycellmatrix%28forlayerindex%29.md)
 
 
 ---

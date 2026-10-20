@@ -1,7 +1,8 @@
 # kMDQueryResultContentRelevance
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A CFNumberRef with a floating point value between 0.0 and 1.0 inclusive.
 
@@ -12,6 +13,10 @@ A CFNumberRef with a floating point value between 0.0 and 1.0 inclusive.
 
 ```swift
 let kMDQueryResultContentRelevance: CFString!
+```
+
+```c
+const CFStringRef kMDQueryResultContentRelevance;
 ```
 
 

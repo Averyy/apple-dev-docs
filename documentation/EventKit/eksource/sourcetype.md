@@ -1,7 +1,8 @@
 # sourceType
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of this source object.
 
@@ -19,17 +20,22 @@ The type of this source object.
 var sourceType: EKSourceType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) EKSourceType sourceType;
+```
+
 #### Discussion
 
-Possible values are described in [`EKSourceType`](eksourcetype.md).
+Possible values are described in [`EKSourceType`](../eksourcetype.md).
 
 ## See Also
 
-- [enum EKSourceType](eksourcetype.md)
+### Accessing Source Properties
+- [enum EKSourceType](../eksourcetype.md)
   The type of source object.
-- [var sourceIdentifier: String](eksource/sourceidentifier.md)
+- [var sourceIdentifier: String](./sourceidentifier.md)
   A unique identifier for the source object.
-- [var title: String](eksource/title.md)
+- [var title: String](./title.md)
   The name of this source object.
 
 

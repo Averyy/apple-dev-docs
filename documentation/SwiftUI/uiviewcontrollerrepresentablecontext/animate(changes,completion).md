@@ -1,7 +1,8 @@
 # animate(changes:completion:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Animates changes using the animation in the current transaction.
 
@@ -21,7 +22,7 @@ Animates changes using the animation in the current transaction.
 
 #### Discussion
 
-This combines doc://com.apple.documentation/documentation/UIKit/UIView/4429628-animate with the with the current transaction’s animation. When you start a SwiftUI animation using [`withAnimation(_:_:)`](withanimation(_:_:).md) and have a mutated SwiftUI state that causes the representable object to update, use this method to animate changes in the representable object using the same `Animation` timing.
+This combines https://developer.apple.com/documentation/UIKit/UIView/4429628-animate with the with the current transaction’s animation. When you start a SwiftUI animation using [`withAnimation(_:_:)`](../withanimation%28_,_%29.md) and have a mutated SwiftUI state that causes the representable object to update, use this method to animate changes in the representable object using the same `Animation` timing.
 
 ```swift
 struct ContentView: View {

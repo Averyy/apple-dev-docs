@@ -1,11 +1,12 @@
 # ExpressibleByStringInterpolation Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [Date.FormatString.StringInterpolation](date/formatstring/stringinterpolation.md)
+- [Date.FormatString.StringInterpolation](./stringinterpolation.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # pointOfInterestCategory
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category of the place.
 
@@ -10,17 +11,18 @@ The category of the place.
 
 ## Declaration
 
-```swift
+```
 pointOfInterestCategory: PointOfInterestCategory | null;
 ```
 
 ## See Also
 
-- [name](place/name.md)
+### Place name and category
+- [name](./name.md)
   The name of the place.
-- [formattedAddress](place/formattedaddress.md)
+- [formattedAddress](./formattedaddress.md)
   The address of the place, formatted using its conventions of its country or region.
-- [areasOfInterest](place/areasofinterest.md)
+- [areasOfInterest](./areasofinterest.md)
   Common names of the area in which the place resides.
 
 

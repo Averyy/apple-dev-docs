@@ -1,7 +1,8 @@
 # lock(before:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire a lock before a given date.
 
@@ -20,9 +21,13 @@ Attempts to acquire a lock before a given date.
 func lock(before limit: Date) -> Bool
 ```
 
+```objc
+- (BOOL) lockBeforeDate:(NSDate *) limit;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the lock is acquired before `limit`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the lock is acquired before `limit`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,8 +39,10 @@ The thread is blocked until the receiver acquires the lock or `limit` is reached
 
 ## See Also
 
-- [Threading Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
-- [func `try`() -> Bool](nsrecursivelock/try.md)
+### Related Documentation
+- [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
+### Acquiring a Lock
+- [func `try`() -> Bool](./try%28%29.md)
   Attempts to acquire a lock, and immediately returns a Boolean value that indicates whether the attempt was successful.
 
 

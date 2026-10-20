@@ -1,7 +1,8 @@
 # AdQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for an Ad query, containing matched results and pagination metadata.
 
@@ -10,7 +11,7 @@ The response object for an Ad query, containing matched results and pagination m
 
 ## Declaration
 
-```swift
+```
 object AdQueryResponse
 ```
 
@@ -51,19 +52,19 @@ To scope results by `adGroupId`, `campaignId`, `status`, or other filterable fie
 
 ## Properties
 
-- `result` ([Ad]): Array of [`Ad`](ad.md). Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error information if the request encountered an error. See [`Error`](error.md). Read-only.
+- `result` ([Ad]): Array of [`Ad`](./ad.md). Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error information if the request encountered an error. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Ad](ad.md)
+- [object Ad](./ad.md)
   Ad entity that links an ad creative to an ad group for serving.
-- [object AdCreate](adcreate.md)
+- [object AdCreate](./adcreate.md)
   The request body for creating a new Ad object.
-- [object AdUpdate](adupdate.md)
+- [object AdUpdate](./adupdate.md)
   The request body for updating an existing Ad object.
-- [object AdResponse](adresponse.md)
+- [object AdResponse](./adresponse.md)
   The response object for an Ad operation.
 
 

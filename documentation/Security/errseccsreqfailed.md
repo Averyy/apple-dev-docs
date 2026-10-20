@@ -1,7 +1,8 @@
 # errSecCSReqFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The code failed to satisfy one of the code requirements.
 
@@ -13,6 +14,10 @@ The code failed to satisfy one of the code requirements.
 
 ```swift
 var errSecCSReqFailed: OSStatus { get }
+```
+
+```c
+errSecCSReqFailed
 ```
 
 

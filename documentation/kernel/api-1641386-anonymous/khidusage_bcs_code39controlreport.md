@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_Code39ControlReport
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_Code39ControlReport = 0x18
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the GPU can create a rasterization rate map with a specific number of layers.
@@ -20,13 +21,18 @@ Returns a Boolean value that indicates whether the GPU can create a rasterizatio
 func supportsRasterizationRateMap(layerCount: Int) -> Bool
 ```
 
+```objc
+- (BOOL) supportsRasterizationRateMapWithLayerCount:(NSUInteger) layerCount;
+```
+
 ## Parameters
 
 - `layerCount`: The number of layers for a rasterization rate map.
 
 ## See Also
 
-- [func makeRasterizationRateMap(descriptor: MTLRasterizationRateMapDescriptor) -> (any MTLRasterizationRateMap)?](mtldevice/makerasterizationratemap(descriptor:).md)
+### Creating rasterization rate maps
+- [func makeRasterizationRateMap(descriptor: MTLRasterizationRateMapDescriptor) -> (any MTLRasterizationRateMap)?](./makerasterizationratemap%28descriptor%29.md)
   Creates a rasterization rate map instance.
 
 

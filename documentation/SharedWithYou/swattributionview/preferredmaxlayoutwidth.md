@@ -1,7 +1,8 @@
 # preferredMaxLayoutWidth
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A width the system uses to constrain the view contents.
 
@@ -19,27 +20,32 @@ A width the system uses to constrain the view contents.
 var preferredMaxLayoutWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) CGFloat preferredMaxLayoutWidth;
+```
+
 #### Discussion
 
-When embedding this view in a SwiftUI [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/swiftui/nsviewrepresentable) view, the system constrains its contents to the `preferredMaxLayoutWidth` width.
+When embedding this view in a SwiftUI [`UIViewRepresentable`](../../SwiftUI/uiviewrepresentable.md) or [`NSViewRepresentable`](../../SwiftUI/nsviewrepresentable.md) view, the system constrains its contents to the `preferredMaxLayoutWidth` width.
 
-If you’re not using SwiftUI this property shouldn’t be necessary, as [`SWAttributionView`](swattributionview.md) otherwise derives the maximum width from the frame or constraints you set.
+If you’re not using SwiftUI this property shouldn’t be necessary, as [`SWAttributionView`](../swattributionview.md) otherwise derives the maximum width from the frame or constraints you set.
 
 ## See Also
 
-- [var backgroundStyle: SWAttributionView.BackgroundStyle](swattributionview/backgroundstyle-swift.property.md)
+### Customizing highlights
+- [var backgroundStyle: SWAttributionView.BackgroundStyle](./backgroundstyle-swift.property.md)
   The background style of the child view that contains names and avatars.
-- [var displayContext: SWAttributionView.DisplayContext](swattributionview/displaycontext-swift.property.md)
+- [var displayContext: SWAttributionView.DisplayContext](./displaycontext-swift.property.md)
   The context for the content the system displays with this view.
-- [var highlight: SWHighlight?](swattributionview/highlight.md)
+- [var highlight: SWHighlight?](./highlight.md)
   The highlight you use to display this attribution.
-- [var highlightMenu: UIMenu](swattributionview/highlightmenu.md)
+- [var highlightMenu: UIMenu](./highlightmenu.md)
   A menu with a list of system actions specific to this hightlight.
-- [var horizontalAlignment: SWAttributionView.HorizontalAlignment](swattributionview/horizontalalignment-swift.property.md)
+- [var horizontalAlignment: SWAttributionView.HorizontalAlignment](./horizontalalignment-swift.property.md)
   The horizontal alignment of the view.
-- [var menuTitleForHideAction: String?](swattributionview/menutitleforhideaction.md)
+- [var menuTitleForHideAction: String?](./menutitleforhideaction.md)
   A localized string the system uses as a custom title for the hide menu item.
-- [var supplementalMenu: UIMenu?](swattributionview/supplementalmenu.md)
+- [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
 
 

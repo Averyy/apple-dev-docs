@@ -1,7 +1,8 @@
 # addNode(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a node to the graph.
 
@@ -12,7 +13,7 @@ Adds a node to the graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -26,7 +27,7 @@ The key assigned to the newly added node.
 
 #### Discussion
 
-> **Note**: A `NodeError` if the node cannot be added.
+> **Throws**: A `NodeError` if the node cannot be added.
 
 ## Parameters
 

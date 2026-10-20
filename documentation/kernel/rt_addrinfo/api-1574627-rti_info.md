@@ -1,14 +1,15 @@
 # rti_info
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr *rti_info[8];
 ```
 

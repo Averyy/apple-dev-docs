@@ -1,7 +1,8 @@
 # request
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol’s request.
 
@@ -20,15 +21,20 @@ The protocol’s request.
 var request: URLRequest { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLRequest * request;
+```
+
 ## See Also
 
-- [var cachedResponse: CachedURLResponse?](urlprotocol/cachedresponse.md)
+### Getting protocol attributes
+- [var cachedResponse: CachedURLResponse?](./cachedresponse.md)
   The protocol’s cached response.
-- [var client: (any URLProtocolClient)?](urlprotocol/client.md)
+- [var client: (any URLProtocolClient)?](./client.md)
   The object the protocol uses to communicate with the URL loading system.
-- [protocol URLProtocolClient](urlprotocolclient.md)
-  The interface used by [`URLProtocol`](urlprotocol.md) subclasses to communicate with the URL Loading System.
-- [var task: URLSessionTask?](urlprotocol/task.md)
+- [protocol URLProtocolClient](../urlprotocolclient.md)
+  The interface used by [`URLProtocol`](../urlprotocol.md) subclasses to communicate with the URL Loading System.
+- [var task: URLSessionTask?](./task.md)
   The protocol’s task.
 
 

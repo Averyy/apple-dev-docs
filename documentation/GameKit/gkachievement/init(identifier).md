@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an achievement for the local player.
 
@@ -20,9 +21,13 @@ Initializes an achievement for the local player.
 init(identifier: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
+```
+
 ## Mentions
 
-- [Rewarding players with achievements](rewarding-players-with-achievements.md)
+- [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ An achievement for a player, or `nil` if an error occurs.
 
 #### Discussion
 
-Before creating an achievement, use the [`loadAchievements(completionHandler:)`](gkachievement/loadachievements(completionhandler:).md) method to load the achievements that are in progress. If the achievement you want to report progress on isn’t in the array that GameKit passes to the handler, use this method to initialize the achievement.
+Before creating an achievement, use the [`loadAchievements(completionHandler:)`](./loadachievements%28completionhandler%29.md) method to load the achievements that are in progress. If the achievement you want to report progress on isn’t in the array that GameKit passes to the handler, use this method to initialize the achievement.
 
 ## Parameters
 
@@ -38,9 +43,10 @@ Before creating an achievement, use the [`loadAchievements(completionHandler:)`]
 
 ## See Also
 
-- [class func loadAchievements(completionHandler: (([GKAchievement]?, (any Error)?) -> Void)?)](gkachievement/loadachievements(completionhandler:).md)
+### Loading and Initializing Achievements
+- [class func loadAchievements(completionHandler: (([GKAchievement]?, (any Error)?) -> Void)?)](./loadachievements%28completionhandler%29.md)
   Loads the achievements that you previously reported the player making progress toward.
-- [init(identifier: String, player: GKPlayer)](gkachievement/init(identifier:player:).md)
+- [init(identifier: String, player: GKPlayer)](./init%28identifier,player%29.md)
   Initializes an achievement for a player.
 
 

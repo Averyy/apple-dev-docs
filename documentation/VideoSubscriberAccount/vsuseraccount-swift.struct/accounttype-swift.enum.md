@@ -1,7 +1,8 @@
 # VSUserAccount.AccountType
 
 **Framework**: Video Subscriber Account  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent whether a user has access to paid content.
 
@@ -10,7 +11,7 @@ Constants that represent whether a user has access to paid content.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,30 +21,31 @@ enum AccountType
 
 #### Overview
 
-The default is [`VSUserAccount.AccountType.free`](vsuseraccount-swift.struct/accounttype-swift.enum/free.md).
+The default is [`VSUserAccount.AccountType.free`](./accounttype-swift.enum/free.md).
 
 ## Topics
 
 ### Account types
-- [VSUserAccount.AccountType.free](vsuseraccount-swift.struct/accounttype-swift.enum/free.md)
+- [VSUserAccount.AccountType.free](./accounttype-swift.enum/free.md)
   A constant that indicates a user has access to free content.
-- [VSUserAccount.AccountType.paid](vsuseraccount-swift.struct/accounttype-swift.enum/paid.md)
+- [VSUserAccount.AccountType.paid](./accounttype-swift.enum/paid.md)
   A constant that indicate a user has access to paid content.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(accountType: VSUserAccount.AccountType, updateURL: URL?)](vsuseraccount-swift.struct/init(accounttype:updateurl:).md)
+### Creating user accounts
+- [init(accountType: VSUserAccount.AccountType, updateURL: URL?)](./init%28accounttype,updateurl%29.md)
   Creates a user account object with a URL for account update requests.
 
 

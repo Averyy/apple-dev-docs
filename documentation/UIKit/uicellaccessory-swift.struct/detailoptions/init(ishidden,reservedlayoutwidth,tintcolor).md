@@ -1,7 +1,8 @@
 # init(isHidden:reservedLayoutWidth:tintColor:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a detail accessory options structure.
 
@@ -10,7 +11,7 @@ Creates a detail accessory options structure.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - tvOS 15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # HKSwimmingStrokeStyle
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The style of stroke while swimming.
 
@@ -19,35 +20,39 @@ The style of stroke while swimming.
 enum HKSwimmingStrokeStyle
 ```
 
+```c
+enum HKSwimmingStrokeStyle : NSInteger;
+```
+
 ## Topics
 
 ### Strokes
-- [HKSwimmingStrokeStyle.backstroke](hkswimmingstrokestyle/backstroke.md)
+- [HKSwimmingStrokeStyle.backstroke](./hkswimmingstrokestyle/backstroke.md)
   The user swam the backstroke.
-- [HKSwimmingStrokeStyle.breaststroke](hkswimmingstrokestyle/breaststroke.md)
+- [HKSwimmingStrokeStyle.breaststroke](./hkswimmingstrokestyle/breaststroke.md)
   The user swam the breaststroke.
-- [HKSwimmingStrokeStyle.butterfly](hkswimmingstrokestyle/butterfly.md)
+- [HKSwimmingStrokeStyle.butterfly](./hkswimmingstrokestyle/butterfly.md)
   The user swam the butterfly stroke.
-- [HKSwimmingStrokeStyle.freestyle](hkswimmingstrokestyle/freestyle.md)
+- [HKSwimmingStrokeStyle.freestyle](./hkswimmingstrokestyle/freestyle.md)
   The user swam the freestyle stroke.
-- [HKSwimmingStrokeStyle.mixed](hkswimmingstrokestyle/mixed.md)
+- [HKSwimmingStrokeStyle.mixed](./hkswimmingstrokestyle/mixed.md)
   The user swam a mixture of strokes.
-- [HKSwimmingStrokeStyle.kickboard](hkswimmingstrokestyle/kickboard.md)
+- [HKSwimmingStrokeStyle.kickboard](./hkswimmingstrokestyle/kickboard.md)
   The user swam using a kickboard.
-- [HKSwimmingStrokeStyle.unknown](hkswimmingstrokestyle/unknown.md)
+- [HKSwimmingStrokeStyle.unknown](./hkswimmingstrokestyle/unknown.md)
   The user’s stroke could not be determined.
 ### Initializers
-- [init?(rawValue: Int)](hkswimmingstrokestyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkswimmingstrokestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # security
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The security type.
 
@@ -14,9 +15,14 @@ The security type.
 var security: CWSecurity { get set }
 ```
 
+```objc
+@property CWSecurity security;
+```
+
 ## See Also
 
-- [var ssidData: Data?](cwmutablenetworkprofile/ssiddata.md)
+### Configuring Network Profiles
+- [var ssidData: Data?](./ssiddata.md)
   The service set identifier (SSID).
 
 

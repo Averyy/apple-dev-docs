@@ -1,7 +1,8 @@
 # ILMessageFilterQueryHandling
 
 **Framework**: SMS and Call Reporting  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods implemented by a Message Filter app extension to handle query requests.
 
@@ -17,9 +18,13 @@ A set of methods implemented by a Message Filter app extension to handle query r
 protocol ILMessageFilterQueryHandling : NSObjectProtocol
 ```
 
+```objc
+@protocol ILMessageFilterQueryHandling <NSObject>
+```
+
 ## Mentions
 
-- [Creating a Message Filter App Extension](creating-a-message-filter-app-extension.md)
+- [Creating a Message Filter App Extension](./creating-a-message-filter-app-extension.md)
 
 #### Overview
 
@@ -30,17 +35,18 @@ When the app extension defers a query request to a server, the system handles al
 ## Topics
 
 ### Handling a Query Request
-- [func handle(ILMessageFilterQueryRequest, context: ILMessageFilterExtensionContext, completion: (ILMessageFilterQueryResponse) -> Void)](ilmessagefilterqueryhandling/handle(_:context:completion:).md)
+- [func handle(ILMessageFilterQueryRequest, context: ILMessageFilterExtensionContext, completion: (ILMessageFilterQueryResponse) -> Void)](./ilmessagefilterqueryhandling/handle%28_,context,completion%29.md)
   Evaluates a query request and tells the system how to handle the message represented in the request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ILMessageFilterQueryRequest](ilmessagefilterqueryrequest.md)
+### Queries
+- [class ILMessageFilterQueryRequest](./ilmessagefilterqueryrequest.md)
   A request for a Message Filter app extension to determine the status of a message received from an unknown sender.
 
 

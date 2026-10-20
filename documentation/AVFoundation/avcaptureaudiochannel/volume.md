@@ -1,7 +1,8 @@
 # volume
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current volume (gain) of the channel.
 
@@ -14,9 +15,14 @@ The current volume (gain) of the channel.
 var volume: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float volume;
+```
+
 ## See Also
 
-- [var isEnabled: Bool](avcaptureaudiochannel/isenabled.md)
+### Configuring a channel
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the channel is in an enabled state.
 
 

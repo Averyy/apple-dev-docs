@@ -1,7 +1,8 @@
 # countOfResponseBodyBytesReceived
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes transferred for the response body.
 
@@ -20,21 +21,26 @@ The number of bytes transferred for the response body.
 var countOfResponseBodyBytesReceived: Int64 { get }
 ```
 
+```objc
+@property (readonly) int64_t countOfResponseBodyBytesReceived;
+```
+
 #### Discussion
 
 This value includes protocol-specific framing, transfer encoding, and content encoding.
 
 ## See Also
 
-- [var countOfRequestBodyBytesBeforeEncoding: Int64](urlsessiontasktransactionmetrics/countofrequestbodybytesbeforeencoding.md)
+### Accessing data transfer metrics
+- [var countOfRequestBodyBytesBeforeEncoding: Int64](./countofrequestbodybytesbeforeencoding.md)
   The size of the upload body data, file, or stream, in bytes.
-- [var countOfRequestBodyBytesSent: Int64](urlsessiontasktransactionmetrics/countofrequestbodybytessent.md)
+- [var countOfRequestBodyBytesSent: Int64](./countofrequestbodybytessent.md)
   The number of bytes transferred for the request body.
-- [var countOfRequestHeaderBytesSent: Int64](urlsessiontasktransactionmetrics/countofrequestheaderbytessent.md)
+- [var countOfRequestHeaderBytesSent: Int64](./countofrequestheaderbytessent.md)
   The number of bytes transferred for the request header.
-- [var countOfResponseBodyBytesAfterDecoding: Int64](urlsessiontasktransactionmetrics/countofresponsebodybytesafterdecoding.md)
+- [var countOfResponseBodyBytesAfterDecoding: Int64](./countofresponsebodybytesafterdecoding.md)
   The size of data delivered to your delegate or completion handler.
-- [var countOfResponseHeaderBytesReceived: Int64](urlsessiontasktransactionmetrics/countofresponseheaderbytesreceived.md)
+- [var countOfResponseHeaderBytesReceived: Int64](./countofresponseheaderbytesreceived.md)
   The number of bytes transferred for the response header.
 
 

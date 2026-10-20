@@ -1,7 +1,8 @@
 # UserID
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Swift wrapper of the C `uid_t` type.
 
@@ -24,26 +25,26 @@ struct UserID
 ## Topics
 
 ### Initializers
-- [init(CInterop.UserID)](userid/init(_:).md)
+- [init(CInterop.UserID)](./userid/init%28_%29.md)
   Creates a strongly-typed `UserID` from the raw C value.
-- [init(rawValue: CInterop.UserID)](userid/init(rawvalue:).md)
+- [init(rawValue: CInterop.UserID)](./userid/init%28rawvalue%29.md)
   Creates a strongly-typed `UserID` from the raw C value.
 ### Instance Properties
-- [var rawValue: CInterop.UserID](userid/rawvalue.md)
+- [var rawValue: CInterop.UserID](./userid/rawvalue.md)
   The raw C `uid_t`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

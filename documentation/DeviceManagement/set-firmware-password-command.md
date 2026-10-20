@@ -1,7 +1,8 @@
 # Set Firmware Password
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Change or clear the firmware password on a device.
 
@@ -20,7 +21,7 @@ Refer to the following sections to determine supported channels and requirements
 
 This command isn’t supported on a Mac with Apple silicon.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ This command isn’t supported on a Mac with Apple silicon.
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -81,9 +82,9 @@ This command isn’t supported on a Mac with Apple silicon.
 ## Topics
 
 ### Commands and responses
-- [object SetFirmwarePasswordCommand](setfirmwarepasswordcommand.md)
+- [object SetFirmwarePasswordCommand](./setfirmwarepasswordcommand.md)
   The command to change or clear the firmware password on a device.
-- [object SetFirmwarePasswordResponse](setfirmwarepasswordresponse.md)
+- [object SetFirmwarePasswordResponse](./setfirmwarepasswordresponse.md)
   A response from the device after it processes the command to change or clear the firmware password on a device.
 
 ## Endpoint
@@ -92,19 +93,27 @@ This command isn’t supported on a Mac with Apple silicon.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `SetFirmwarePasswordCommand`
+
 The request object the server returns for the Set Firmware Password Command.
+
+## Responses
+
+- `200` OK (`SetFirmwarePasswordResponse`, `application/xml`): The response object the system returns for the Set Firmware Password Command.
 
 ## See Also
 
-- [Clear Passcode](clear-passcode-command.md)
+### Passwords
+- [Clear Passcode](./clear-passcode-command.md)
   Remove the passcode from a device.
-- [Clear Restrictions Password](clear-restrictions-password-command.md)
+- [Clear Restrictions Password](./clear-restrictions-password-command.md)
   Clear the Screen Time password and the restrictions on a device.
-- [Unlock User Account](unlock-user-account-command.md)
+- [Unlock User Account](./unlock-user-account-command.md)
   Unlock a user account that the system locked because of too many failed password attempts.
-- [Set Auto Admin Password](set-auto-admin-password-command.md)
+- [Set Auto Admin Password](./set-auto-admin-password-command.md)
   Update the local administrator account password.
-- [Verify Firmware Password](verify-firmware-password-command.md)
+- [Verify Firmware Password](./verify-firmware-password-command.md)
   Verify the firmware password on a device.
 
 

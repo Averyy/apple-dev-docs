@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides metadata to the capture session.
 
@@ -17,9 +18,13 @@ Provides metadata to the capture session.
 func append(_ metadata: AVTimedMetadataGroup) throws
 ```
 
+```objc
+- (BOOL) appendTimedMetadataGroup:(AVTimedMetadataGroup *) metadata error:(NSError **) outError;
+```
+
 ## Parameters
 
-- `metadata`: A timed group of metadata. To denote a period of no metadata, pass an empty [`AVTimedMetadataGroup`](avtimedmetadatagroup.md).
+- `metadata`: A timed group of metadata. To denote a period of no metadata, pass an empty [`AVTimedMetadataGroup`](../avtimedmetadatagroup.md).
 
 
 ---

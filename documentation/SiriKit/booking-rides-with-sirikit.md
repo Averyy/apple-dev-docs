@@ -1,6 +1,8 @@
 # Booking Rides with SiriKit
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Sample Code  
+**Download**: [BookingRidesWithSiriKit.zip](https://docs-assets.developer.apple.com/published/96e002fc0d25/BookingRidesWithSiriKit.zip)
 
 Add Intents extensions to your app to handle requests to book rides using Siri and Maps.
 
@@ -14,7 +16,7 @@ Add Intents extensions to your app to handle requests to book rides using Siri a
 
 The app in this sample project demonstrates how to use app extensions to give users the ability to book rides through Siri and Maps. App extensions implement the necessary intent-handling protocols for the ride-booking domain.
 
-For information about the general process of adding an Intents extension to your app, including how to enable the Siri capability and configure the NSExtension keys in the `Info.plist` file, see [`Creating an Intents App Extension`](creating-an-intents-app-extension.md).
+For information about the general process of adding an Intents extension to your app, including how to enable the Siri capability and configure the NSExtension keys in the `Info.plist` file, see [Creating an Intents App Extension](./creating-an-intents-app-extension.md).
 
 The `GetRideStatusHandler` class, which conforms to the [`INGetRideStatusIntentHandling`](https://developer.apple.com/documentation/intents/ingetridestatusintenthandling) protocol, contains comments to help you implement the ridesharing domain for your server. It does not include implementation, but has hints about where to perform certain implementation tasks.
 
@@ -127,7 +129,7 @@ By conforming to the [`INListRideOptionsIntentHandling`](https://developer.apple
 
 To add ride options to Maps, create an [`INRideOption`](https://developer.apple.com/documentation/intents/inrideoption) object and populate it with, at minimum,  `name`, `estimatedPickupDate`, `availablePartySizeOptions`, and `priceRange`. Populate the response object’s `expirationDate`, `paymentMethods`, and `rideOptions` properties and pass the response object into the completion handler.
 
-```None
+```
 func handle(intent: INListRideOptionsIntent, completion: @escaping (INListRideOptionsIntentResponse) -> Void) {
     for(index, name) in rideNames.enumerated() {
         let rideOption = INRideOption(name: name, estimatedPickupDate: Date(timeIntervalSinceNow: 120))
@@ -160,7 +162,7 @@ func handle(intent: INListRideOptionsIntent, completion: @escaping (INListRideOp
 
 To ensure that the ride options show up in Maps, add the [`INGetRideStatusIntent`](https://developer.apple.com/documentation/intents/ingetridestatusintent), [`INListRideOptionsIntent`](https://developer.apple.com/documentation/intents/inlistrideoptionsintent), and [`INRequestRideIntent`](https://developer.apple.com/documentation/intents/inrequestrideintent) keys to your extension’s `Info.plist` file under IntentsSupported.
 
-##### Customize the Ride Request Ui in Siri
+##### Customize the Ride Request UI in Siri
 
 You can create a custom UI for Siri or Maps to display when a user requests a ride.
 
@@ -168,21 +170,22 @@ Use Interface Builder to modify the `MainInterface` storyboard in the RideExtens
 
 ## See Also
 
-- [Adding Shortcuts for Wind Down](adding-shortcuts-for-wind-down.md)
+### Sample code
+- [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
-- [Handling Payment Requests with SiriKit](handling-payment-requests-with-sirikit.md)
+- [Handling Payment Requests with SiriKit](./handling-payment-requests-with-sirikit.md)
   Add an Intent Extension to your app to handle money transfer requests with Siri.
-- [Handling Workout Requests with SiriKit](handling-workout-requests-with-sirikit.md)
+- [Handling Workout Requests with SiriKit](./handling-workout-requests-with-sirikit.md)
   Add an Intent Extension to your app that handles requests to control workouts with Siri.
-- [Integrating Your App with Siri Event Suggestions](integrating-your-app-with-siri-event-suggestions.md)
+- [Integrating Your App with Siri Event Suggestions](./integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
-- [Managing Audio with SiriKit](managing-audio-with-sirikit.md)
+- [Managing Audio with SiriKit](./managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
-- [Providing Hands-Free App Control with Intents](providing-hands-free-app-control-with-intents.md)
+- [Providing Hands-Free App Control with Intents](./providing-hands-free-app-control-with-intents.md)
   Resolve, confirm, and handle intents without an extension.
-- [Soup Chef: Accelerating App Interactions with Shortcuts](soup-chef-accelerating-app-interactions-with-shortcuts.md)
+- [Soup Chef: Accelerating App Interactions with Shortcuts](./soup-chef-accelerating-app-interactions-with-shortcuts.md)
   Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions.
-- [Soup Chef with App Intents: Migrating custom intents](soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 
 

@@ -1,7 +1,8 @@
 # AudioQueueNewOutput(_:_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new playback audio queue object.
 
@@ -19,6 +20,10 @@ Creates a new playback audio queue object.
 func AudioQueueNewOutput(_ inFormat: UnsafePointer<AudioStreamBasicDescription>, _ inCallbackProc: AudioQueueOutputCallback, _ inUserData: UnsafeMutableRawPointer?, _ inCallbackRunLoop: CFRunLoop?, _ inCallbackRunLoopMode: CFString?, _ inFlags: UInt32, _ outAQ: UnsafeMutablePointer<AudioQueueRef?>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueNewOutput(const AudioStreamBasicDescription *inFormat, AudioQueueOutputCallback inCallbackProc, void *inUserData, CFRunLoopRef inCallbackRunLoop, CFStringRef inCallbackRunLoopMode, UInt32 inFlags, AudioQueueRef*outAQ);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -26,27 +31,29 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inFormat`: The data format of the audio to play. For linear PCM, only interleaved formats are supported. Compressed formats are also supported.
-- `inCallbackProc`: A callback function to use with the playback audio queue. The audio queue invokes the callback when the audio queue has finished acquiring a buffer. See [`AudioQueueOutputCallback`](audioqueueoutputcallback.md).
+- `inCallbackProc`: A callback function to use with the playback audio queue. The audio queue invokes the callback when the audio queue has finished acquiring a buffer. See [`AudioQueueOutputCallback`](./audioqueueoutputcallback.md).
 - `inUserData`: A custom data structure for use with the callback function.
 - `inCallbackRunLoop`: The event loop on which the callback function pointed to by the `inCallbackProc` parameter is to be called. If you specify `NULL`, the callback is invoked on one of the audio queue’s internal threads.
-- `inCallbackRunLoopMode`: The run loop mode in which to invoke the callback function specified in the `inCallbackProc` parameter. Typically, you pass `kCFRunLoopCommonModes` or use `NULL`, which is equivalent. You can choose to create your own thread with your own run loops. For more information on run loops, see Run Loops and [`CFRunLoop`](https://developer.apple.com/documentation/corefoundation/cfrunloop).
+- `inCallbackRunLoopMode`: The run loop mode in which to invoke the callback function specified in the `inCallbackProc` parameter. Typically, you pass `kCFRunLoopCommonModes` or use `NULL`, which is equivalent. You can choose to create your own thread with your own run loops. For more information on run loops, see Run Loops and [`CFRunLoop`](../CoreFoundation/cfrunloop.md).
 - `inFlags`: Reserved for future use. Must be `0`.
 - `outAQ`: On output, the newly created playback audio queue object.
 
 ## See Also
 
-- [func AudioQueueOfflineRender(AudioQueueRef, UnsafePointer<AudioTimeStamp>, AudioQueueBufferRef, UInt32) -> OSStatus](audioqueueofflinerender(_:_:_:_:).md)
+### Related Documentation
+- [func AudioQueueOfflineRender(AudioQueueRef, UnsafePointer<AudioTimeStamp>, AudioQueueBufferRef, UInt32) -> OSStatus](./audioqueueofflinerender%28_,_,_,_%29.md)
   Exports audio to a buffer, instead of to a device, using a playback audio queue.
-- [func AudioQueueNewOutputWithDispatchQueue(UnsafeMutablePointer<AudioQueueRef?>, UnsafePointer<AudioStreamBasicDescription>, UInt32, dispatch_queue_t, AudioQueueOutputCallbackBlock) -> OSStatus](audioqueuenewoutputwithdispatchqueue(_:_:_:_:_:).md)
-- [func AudioQueueNewInputWithDispatchQueue(UnsafeMutablePointer<AudioQueueRef?>, UnsafePointer<AudioStreamBasicDescription>, UInt32, dispatch_queue_t, AudioQueueInputCallbackBlock) -> OSStatus](audioqueuenewinputwithdispatchqueue(_:_:_:_:_:).md)
-- [func AudioQueueNewInput(UnsafePointer<AudioStreamBasicDescription>, AudioQueueInputCallback, UnsafeMutableRawPointer?, CFRunLoop?, CFString?, UInt32, UnsafeMutablePointer<AudioQueueRef?>) -> OSStatus](audioqueuenewinput(_:_:_:_:_:_:_:).md)
+### Creating and Disposing of Audio Queues
+- [func AudioQueueNewOutputWithDispatchQueue(UnsafeMutablePointer<AudioQueueRef?>, UnsafePointer<AudioStreamBasicDescription>, UInt32, dispatch_queue_t, AudioQueueOutputCallbackBlock) -> OSStatus](./audioqueuenewoutputwithdispatchqueue%28_,_,_,_,_%29.md)
+- [func AudioQueueNewInputWithDispatchQueue(UnsafeMutablePointer<AudioQueueRef?>, UnsafePointer<AudioStreamBasicDescription>, UInt32, dispatch_queue_t, AudioQueueInputCallbackBlock) -> OSStatus](./audioqueuenewinputwithdispatchqueue%28_,_,_,_,_%29.md)
+- [func AudioQueueNewInput(UnsafePointer<AudioStreamBasicDescription>, AudioQueueInputCallback, UnsafeMutableRawPointer?, CFRunLoop?, CFString?, UInt32, UnsafeMutablePointer<AudioQueueRef?>) -> OSStatus](./audioqueuenewinput%28_,_,_,_,_,_,_%29.md)
   Creates a new recording audio queue object.
-- [func AudioQueueDispose(AudioQueueRef, Bool) -> OSStatus](audioqueuedispose(_:_:).md)
+- [func AudioQueueDispose(AudioQueueRef, Bool) -> OSStatus](./audioqueuedispose%28_,_%29.md)
   Disposes of an audio queue.
-- [typealias AudioQueueRef](audioqueueref.md)
+- [typealias AudioQueueRef](./audioqueueref.md)
   Defines an opaque data type that represents an audio queue.
-- [typealias AudioQueueInputCallbackBlock](audioqueueinputcallbackblock.md)
-- [typealias AudioQueueOutputCallbackBlock](audioqueueoutputcallbackblock.md)
+- [typealias AudioQueueInputCallbackBlock](./audioqueueinputcallbackblock.md)
+- [typealias AudioQueueOutputCallbackBlock](./audioqueueoutputcallbackblock.md)
 
 
 ---

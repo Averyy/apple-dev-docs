@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of time, in seconds, that the session spans.
 
@@ -14,6 +15,10 @@ The length of time, in seconds, that the session spans.
 
 ```swift
 var duration: TimeInterval { get }
+```
+
+```objc
+@property (readonly) NSTimeInterval duration;
 ```
 
 

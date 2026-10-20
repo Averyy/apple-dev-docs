@@ -1,20 +1,22 @@
 # nicproxy_keepalive_ethertype_ip
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 nicproxy_keepalive_ethertype_ip
 ```
 
 ## See Also
 
-- [nicproxy_keepalive_tcp](nicproxy_keepalive_tcp.md)
+### Proxy keepalive
+- [nicproxy_keepalive_tcp](./nicproxy_keepalive_tcp.md)
 
 
 ---

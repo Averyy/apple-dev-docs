@@ -1,7 +1,8 @@
 # Transcript.Segment
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of segments that may be included in a transcript entry.
 
@@ -22,31 +23,32 @@ The types of segments that may be included in a transcript entry.
 ## Topics
 
 ### Segment cases
-- [case text(Transcript.TextSegment)](transcript/segment/text(_:).md)
+- [case text(Transcript.TextSegment)](./segment/text%28_%29.md)
   A segment containing text.
-- [case attachment(Transcript.AttachmentSegment)](transcript/segment/attachment(_:).md)
+- [case attachment(Transcript.AttachmentSegment)](./segment/attachment%28_%29.md)
   A segment containing an attachment.
-- [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
+- [case structure(Transcript.StructuredSegment)](./segment/structure%28_%29.md)
   A segment containing structured content.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.TextSegment](transcript/textsegment.md)
+### Segments
+- [Transcript.TextSegment](./textsegment.md)
   A segment containing text.
-- [Transcript.StructuredSegment](transcript/structuredsegment.md)
+- [Transcript.StructuredSegment](./structuredsegment.md)
   A segment containing structured content.
-- [Transcript.AttachmentSegment](transcript/attachmentsegment.md)
+- [Transcript.AttachmentSegment](./attachmentsegment.md)
   A segment containing attached files or images.
 
 

@@ -1,7 +1,8 @@
 # HKAttachment.AsyncBytes
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that returns the attached file as a series of bytes.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that returns the attached file as a series of bytes.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ struct AsyncBytes
 
 #### Overview
 
-To access the attachment file as an asynchronous sequence of bytes, get a data reader from the attachment store, and then access its [`bytes`](hkattachmentdatareader/bytes.md) using a `for-await-in` loop.
+To access the attachment file as an asynchronous sequence of bytes, get a data reader from the attachment store, and then access its [`bytes`](../hkattachmentdatareader/bytes.md) using a `for-await-in` loop.
 
 ```swift
 // Get a data reader for the attachment.
@@ -44,21 +45,22 @@ do {
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var name: String](hkattachment/name.md)
+### Accessing attachment data
+- [var name: String](./name.md)
   The name of the attached file.
-- [var identifier: UUID](hkattachment/identifier.md)
+- [var identifier: UUID](./identifier.md)
   The universally unique identifier for the attached file.
-- [var contentType: UTType](hkattachment/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The type of data stored in the attached file.
-- [var size: Int](hkattachment/size.md)
+- [var size: Int](./size.md)
   The attachment’s size (in bytes).
-- [var creationDate: Date](hkattachment/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The attachment’s creation date.
-- [var metadata: [String : Any]?](hkattachment/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   Additional data associated with the attachment in the HealthKit store.
 
 

@@ -1,7 +1,8 @@
 # GameCenterChallengeImageResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single image asset for a Game Center challenge.
 
@@ -10,7 +11,7 @@ A response containing a single image asset for a Game Center challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImageResponse
 ```
 
@@ -21,14 +22,15 @@ object GameCenterChallengeImageResponse
 
 ## See Also
 
-- [object GameCenterChallengeImage](gamecenterchallengeimage.md)
+### Objects
+- [object GameCenterChallengeImage](./gamecenterchallengeimage.md)
   An image asset used to represent a Game Center challenge in the player interface.
-- [object GameCenterChallengeImageCreateRequest](gamecenterchallengeimagecreaterequest.md)
+- [object GameCenterChallengeImageCreateRequest](./gamecenterchallengeimagecreaterequest.md)
   The request body for uploading an image asset for a Game Center challenge.
-- [object GameCenterChallengeImageUpdateRequest](gamecenterchallengeimageupdaterequest.md)
+- [object GameCenterChallengeImageUpdateRequest](./gamecenterchallengeimageupdaterequest.md)
   The request body you use to update a challenge.
-- [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
-- [object GameCenterChallengeVersionDefaultImageLinkageResponse](gamecenterchallengeversiondefaultimagelinkageresponse.md)
+- [object GameCenterChallengeLocalizationImageLinkageResponse](./gamecenterchallengelocalizationimagelinkageresponse.md)
+- [object GameCenterChallengeVersionDefaultImageLinkageResponse](./gamecenterchallengeversiondefaultimagelinkageresponse.md)
 
 
 ---

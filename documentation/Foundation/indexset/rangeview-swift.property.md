@@ -1,7 +1,8 @@
 # rangeView
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a `Range`-based view of the entire contents of `self`.
 
@@ -22,9 +23,10 @@ var rangeView: IndexSet.RangeView { get }
 
 ## See Also
 
-- [func rangeView(of: Range<IndexSet.Element>) -> IndexSet.RangeView](indexset/rangeview(of:)-5xqe8.md)
+### Getting a Range-Based View
+- [func rangeView(of: Range<IndexSet.Element>) -> IndexSet.RangeView](./rangeview%28of%29-5xqe8.md)
   Returns a `Range`-based view of `self`.
-- [IndexSet.RangeView](indexset/rangeview-swift.struct.md)
+- [IndexSet.RangeView](./rangeview-swift.struct.md)
   A view of the contents of an IndexSet, organized by range.
 
 

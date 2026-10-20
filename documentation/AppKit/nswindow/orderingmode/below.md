@@ -1,12 +1,13 @@
 # NSWindow.OrderingMode.below
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Moves the window below the indicated window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Moves the window below the indicated window.
 case below
 ```
 
+```c
+NSWindowBelow
+```
+
 ## See Also
 
-- [NSWindow.OrderingMode.above](nswindow/orderingmode/above.md)
+### Constants
+- [NSWindow.OrderingMode.above](./above.md)
   Moves the window above the indicated window.
-- [NSWindow.OrderingMode.out](nswindow/orderingmode/out.md)
+- [NSWindow.OrderingMode.out](./out.md)
   Moves the window off the screen.
 
 

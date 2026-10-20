@@ -1,7 +1,8 @@
 # init(mNumberChannels:mDataByteSize:mData:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio buffer with audio data.
 
@@ -28,7 +29,8 @@ init(mNumberChannels: UInt32, mDataByteSize: UInt32, mData: UnsafeMutableRawPoin
 
 ## See Also
 
-- [init()](audiobuffer/init.md)
+### Creating a Buffer
+- [init()](./init%28%29.md)
   Creates an empty audio buffer.
 
 

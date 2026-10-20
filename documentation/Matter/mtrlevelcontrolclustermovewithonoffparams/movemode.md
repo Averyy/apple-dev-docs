@@ -1,7 +1,8 @@
 # moveMode
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var moveMode: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * moveMode;
 ```
 
 

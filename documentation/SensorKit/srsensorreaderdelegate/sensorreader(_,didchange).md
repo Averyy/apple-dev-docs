@@ -1,19 +1,26 @@
 # sensorReader(_:didChange:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate of the reader’s new authorization status.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
 ```swift
 optional func sensorReader(_ reader: SRSensorReader, didChange authorizationStatus: SRAuthorizationStatus)
+```
+
+```objc
+- (void) sensorReader:(SRSensorReader *) reader didChangeAuthorizationStatus:(SRAuthorizationStatus) authorizationStatus;
 ```
 
 ## Parameters

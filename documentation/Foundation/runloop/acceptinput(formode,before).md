@@ -1,7 +1,8 @@
 # acceptInput(forMode:before:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the loop once or until the specified date, accepting input only for the specified mode.
 
@@ -20,6 +21,10 @@ Runs the loop once or until the specified date, accepting input only for the spe
 func acceptInput(forMode mode: RunLoop.Mode, before limitDate: Date)
 ```
 
+```objc
+- (void) acceptInputForMode:(NSRunLoopMode) mode beforeDate:(NSDate *) limitDate;
+```
+
 #### Discussion
 
 If no input sources or timers are attached to the run loop, this method exits immediately; otherwise, it runs the run loop once, returning as soon as one input source processes a message or the specifed time elapses.
@@ -35,11 +40,12 @@ Manually removing all known input sources and timers from the run loop is not a 
 
 ## See Also
 
-- [func run()](runloop/run.md)
+### Running a Loop
+- [func run()](./run%28%29.md)
   Puts the receiver into a permanent loop, during which time it processes data from all attached input sources.
-- [func run(mode: RunLoop.Mode, before: Date) -> Bool](runloop/run(mode:before:).md)
+- [func run(mode: RunLoop.Mode, before: Date) -> Bool](./run%28mode,before%29.md)
   Runs the loop once, blocking for input in the specified mode until a given date.
-- [func run(until: Date)](runloop/run(until:).md)
+- [func run(until: Date)](./run%28until%29.md)
   Runs the loop until the specified date, during which time it processes data from all attached input sources.
 
 

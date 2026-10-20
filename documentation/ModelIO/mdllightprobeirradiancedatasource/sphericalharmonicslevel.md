@@ -1,7 +1,8 @@
 # sphericalHarmonicsLevel
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of levels of spherical harmonics information provided by the data source.
 
@@ -19,15 +20,20 @@ The number of levels of spherical harmonics information provided by the data sou
 optional var sphericalHarmonicsLevel: Int { get set }
 ```
 
+```objc
+@property NSUInteger sphericalHarmonicsLevel;
+```
+
 #### Discussion
 
-Each level of spherical harmonics contains more coefficients, and thus affects the layout of the data containing those coefficients. For details, see the [`sphericalHarmonicsCoefficients(atPosition:)`](mdllightprobeirradiancedatasource/sphericalharmonicscoefficients(atposition:).md) method.
+Each level of spherical harmonics contains more coefficients, and thus affects the layout of the data containing those coefficients. For details, see the [`sphericalHarmonicsCoefficients(atPosition:)`](./sphericalharmonicscoefficients%28atposition%29.md) method.
 
 ## See Also
 
-- [var boundingBox: MDLAxisAlignedBoundingBox](mdllightprobeirradiancedatasource/boundingbox.md)
+### Providing Light Probe Information
+- [var boundingBox: MDLAxisAlignedBoundingBox](./boundingbox.md)
   The bounding region of the scene to which light probes are being added.
-- [func sphericalHarmonicsCoefficients(atPosition: vector_float3) -> Data](mdllightprobeirradiancedatasource/sphericalharmonicscoefficients(atposition:).md)
+- [func sphericalHarmonicsCoefficients(atPosition: vector_float3) -> Data](./sphericalharmonicscoefficients%28atposition%29.md)
   Asks the data source to provide spherical harmonics coefficients that describe lighting conditions in all directions from the specified point in a scene.
 
 

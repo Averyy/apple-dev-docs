@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns whether the primitive contains any `NaN` values.

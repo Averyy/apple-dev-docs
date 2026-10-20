@@ -1,7 +1,8 @@
 # deleteReminders
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that deletes reminders.
 
@@ -20,7 +21,7 @@ var deleteReminders: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `reminders` domain and one of your app’s actions matches the `deleteReminders` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .reminders.deleteReminders)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `reminders` domain and one of your app’s actions matches the `deleteReminders` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .reminders.deleteReminders)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `deleteReminders` schema:
 
@@ -40,17 +41,18 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var createList: some AppSchemaIntent](appschema/remindersintent/createlist.md)
+### Actions
+- [var createList: some AppSchemaIntent](./createlist.md)
   An intent schema that creates a new reminder list.
-- [var createReminder: some AppSchemaIntent](appschema/remindersintent/createreminder.md)
+- [var createReminder: some AppSchemaIntent](./createreminder.md)
   An intent schema that creates a new reminder.
-- [var createSection: some AppSchemaIntent](appschema/remindersintent/createsection.md)
+- [var createSection: some AppSchemaIntent](./createsection.md)
   An intent schema that creates a new reminder list section.
-- [var updateReminder: some AppSchemaIntent](appschema/remindersintent/updatereminder.md)
+- [var updateReminder: some AppSchemaIntent](./updatereminder.md)
   An intent schema that updates a reminder.
 
 

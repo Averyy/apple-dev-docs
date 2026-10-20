@@ -1,7 +1,8 @@
 # init(cubeFromImage:named:options:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates a cube texture resource from a 2D image of cube faces.
 
@@ -20,29 +21,36 @@ Asynchronously creates a cube texture resource from a 2D image of cube faces.
 @preconcurrency convenience init(cubeFromImage cgImage: CGImage, named resourceName: String? = nil, options: TextureResource.CreateOptions) async throws
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(cubeFromImage cgImage: CGImage, named resourceName: String? = nil, options: TextureResource.CreateOptions) throws
+```
+
 #### Discussion
 
 RealityKit extracts the cube faces from the source 2D image using a convention based on its aspect ratio, which needs to be one of the following:
 
 - If `height == 6 * width`, RealityKit treats the source image as a vertical strip of the cube faces, containing [+X, -X, +Y, -Y, +Z, -Z]  from top to bottom:
 
-![A cube source image showing the expected cube face’s orientation for a vertical strip](/images/com.apple.RealityKit/textureresource-cube-vstrip-orientation.jpg)
+![A cube source image showing the expected cube face’s orientation for a vertical strip](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-vstrip-orientation.jpg)
 
 - If `6 * height == width`, RealityKit treats the source image as a horizontal strip of the cube faces, containing [+X, -X, +Y, -Y, +Z, -Z] from left to right:
 
-![A cube source image showing the expected cube face’s orientation for a vertical strip](/images/com.apple.RealityKit/textureresource-cube-hstrip-orientation.jpg)
+![A cube source image showing the expected cube face’s orientation for a vertical strip](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-hstrip-orientation.jpg)
 
 - If `height / 3 == width / 4`, RealityKit treats the source image as a cross layout of the cube faces as follows:
 
-```None
+```
     [+Y]
 [+X][-Z][-X][+Z]
     [-Y]
 ```
 
-![A cube source image showing the expected cube face’s orientation and layout for a cross](/images/com.apple.RealityKit/textureresource-cube-cross-orientation.jpg)
+![A cube source image showing the expected cube face’s orientation and layout for a cross](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-cross-orientation.jpg)
 
-Use the resulting texture to create an [`EnvironmentResource`](environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
+Use the resulting texture to create an [`EnvironmentResource`](../environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
 
 ```swift
 if let source = CGImageSourceCreateWithURL(url as CFURL, nil),

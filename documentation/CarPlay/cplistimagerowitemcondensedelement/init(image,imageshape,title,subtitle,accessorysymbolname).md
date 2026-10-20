@@ -1,7 +1,8 @@
 # init(image:imageShape:title:subtitle:accessorySymbolName:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a list image row condensed element with an image, an image shape, a title, subtitle and a system symbol name.
 
@@ -14,6 +15,10 @@ Initialize a list image row condensed element with an image, an image shape, a t
 
 ```swift
 init(image: UIImage, imageShape: CPListImageRowItemCondensedElement.Shape, title: String, subtitle: String?, accessorySymbolName: String?)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image imageShape:(CPListImageRowItemCondensedElementShape) imageShape title:(NSString *) title subtitle:(NSString *) subtitle accessorySymbolName:(NSString *) accessorySymbolName;
 ```
 
 ## Parameters

@@ -1,16 +1,17 @@
 # HKVerifiableClinicalRecordQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query for one-time access to a SMART Health Card or EU Digital COVID Certificate.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,15 @@ A query for one-time access to a SMART Health Card or EU Digital COVID Certifica
 class HKVerifiableClinicalRecordQuery
 ```
 
+```objc
+@interface HKVerifiableClinicalRecordQuery : HKQuery
+```
+
 #### Overview
 
-> **Note**:  To use Swift concurrency when reading verifiable clinical records, see [`HKVerifiableClinicalRecordQueryDescriptor`](hkverifiableclinicalrecordquerydescriptor.md).
+> **Note**:  To use Swift concurrency when reading verifiable clinical records, see [`HKVerifiableClinicalRecordQueryDescriptor`](./hkverifiableclinicalrecordquerydescriptor.md).
 
-Use an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) object to request one-time access to a SMART Health Card or EU Digital COVID Certificate. For example, the following code requests cards that represent immunizations within the last six months.
+Use an [`HKVerifiableClinicalRecordQuery`](./hkverifiableclinicalrecordquery.md) object to request one-time access to a SMART Health Card or EU Digital COVID Certificate. For example, the following code requests cards that represent immunizations within the last six months.
 
 ```swift
 // Calculate the start and end dates.
@@ -68,44 +73,45 @@ store.execute(query)
 
 Unlike other HealthKit queries, you don’t need to request permission to read verifiable health records before running this query. HealthKit prompts the user for permission to read the records each time you run the query.
 
-> **Note**:  Running an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [`Request Access to the Verifiable Health Records Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/verifiable-health-records/).
+> **Note**:  Running an [`HKVerifiableClinicalRecordQuery`](./hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](./hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [Request Access to the Verifiable Health Records Entitlement](https://developer.apple.com/contact/request/verifiable-health-records/).
 
 ## Topics
 
 ### Creating Queries
-- [init(recordTypes: [String], sourceTypes: [HKVerifiableClinicalRecordSourceType], predicate: NSPredicate?, resultsHandler: (HKVerifiableClinicalRecordQuery, [HKVerifiableClinicalRecord]?, (any Error)?) -> Void)](hkverifiableclinicalrecordquery/init(recordtypes:sourcetypes:predicate:resultshandler:).md)
+- [init(recordTypes: [String], sourceTypes: [HKVerifiableClinicalRecordSourceType], predicate: NSPredicate?, resultsHandler: (HKVerifiableClinicalRecordQuery, [HKVerifiableClinicalRecord]?, (any Error)?) -> Void)](./hkverifiableclinicalrecordquery/init%28recordtypes,sourcetypes,predicate,resultshandler%29.md)
   Creates a query for one-time access to a verifiable clinical record.
-- [init(recordTypes: [String], predicate: NSPredicate?, resultsHandler: (HKVerifiableClinicalRecordQuery, [HKVerifiableClinicalRecord]?, (any Error)?) -> Void)](hkverifiableclinicalrecordquery/init(recordtypes:predicate:resultshandler:).md)
+- [init(recordTypes: [String], predicate: NSPredicate?, resultsHandler: (HKVerifiableClinicalRecordQuery, [HKVerifiableClinicalRecord]?, (any Error)?) -> Void)](./hkverifiableclinicalrecordquery/init%28recordtypes,predicate,resultshandler%29.md)
   Creates a query for one-time access to a SMART Health Card.
 ### Accessing the Metadata
-- [var recordTypes: [String]](hkverifiableclinicalrecordquery/recordtypes.md)
+- [var recordTypes: [String]](./hkverifiableclinicalrecordquery/recordtypes.md)
   The type of records that this query returns.
-- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](hkverifiableclinicalrecordquery/sourcetypes.md)
+- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](./hkverifiableclinicalrecordquery/sourcetypes.md)
   The format of the verifiable clinical record.
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKVerifiableClinicalRecordQueryDescriptor](hkverifiableclinicalrecordquerydescriptor.md)
+### Clinical record queries
+- [struct HKVerifiableClinicalRecordQueryDescriptor](./hkverifiableclinicalrecordquerydescriptor.md)
   A query interface that provides one-time access to a SMART Health Card or EU Digital COVID Certificate using Swift concurrency.
-- [struct HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype.md)
+- [struct HKVerifiableClinicalRecordSourceType](./hkverifiableclinicalrecordsourcetype.md)
   The source type for the verifiable clinical record.
-- [struct HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype.md)
+- [struct HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype.md)
   The type of record returned by a verifiable clinical record query.
-- [class HKDocumentQuery](hkdocumentquery.md)
+- [class HKDocumentQuery](./hkdocumentquery.md)
   A query that returns a snapshot of all matching documents currently saved in the HealthKit store.
 
 

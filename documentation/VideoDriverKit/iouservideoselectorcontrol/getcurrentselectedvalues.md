@@ -1,7 +1,8 @@
 # GetCurrentSelectedValues
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current selected values of the control.
 
@@ -10,7 +11,7 @@ Gets the current selected values of the control.
 
 ## Declaration
 
-```swift
+```c
 size_t GetCurrentSelectedValues(IOUserVideoSelectorValue *out_values, size_t in_num_values);
 ```
 
@@ -29,19 +30,20 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetCurrentSelectedValues](iouservideoselectorcontrol/setcurrentselectedvalues.md)
+### Accessing the value
+- [SetCurrentSelectedValues](./setcurrentselectedvalues.md)
   Sets the current control value.
-- [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+- [IOUserVideoSelectorValue](../iouservideoselectorvalue.md)
   Selector value for controls.
-- [GetControlValuesCount](iouservideoselectorcontrol/getcontrolvaluescount.md)
+- [GetControlValuesCount](./getcontrolvaluescount.md)
   Gets the number of available selector control values.
-- [AddControlValueDescriptions](iouservideoselectorcontrol/addcontrolvaluedescriptions.md)
+- [AddControlValueDescriptions](./addcontrolvaluedescriptions.md)
   Adds control value descriptions to the selector control.
-- [RemoveControlValueDescriptions](iouservideoselectorcontrol/removecontrolvaluedescriptions.md)
+- [RemoveControlValueDescriptions](./removecontrolvaluedescriptions.md)
   Removes selector control values from the selector control.
-- [GetControlValueDescriptions](iouservideoselectorcontrol/getcontrolvaluedescriptions.md)
+- [GetControlValueDescriptions](./getcontrolvaluedescriptions.md)
   Gets the selector values for the control.
-- [IOUserVideoSelectorValueDescription](iouservideoselectorvaluedescription.md)
+- [IOUserVideoSelectorValueDescription](../iouservideoselectorvaluedescription.md)
   A selector control’s value and name.
 
 

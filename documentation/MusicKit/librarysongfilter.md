@@ -1,7 +1,8 @@
 # LibrarySongFilter
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Song properties your app uses as a filter for a library request.
 
@@ -23,21 +24,21 @@ protocol LibrarySongFilter
 ## Topics
 
 ### Instance Properties
-- [var albumTitle: String?](librarysongfilter/albumtitle.md)
+- [var albumTitle: String?](./librarysongfilter/albumtitle.md)
   The title of the album the song appears on.
-- [var albums: MusicItemCollection<Album>?](librarysongfilter/albums.md)
+- [var albums: MusicItemCollection<Album>?](./librarysongfilter/albums.md)
   The song’s associated albums.
-- [var artistName: String?](librarysongfilter/artistname.md)
+- [var artistName: String?](./librarysongfilter/artistname.md)
   The artist’s name.
-- [var artists: MusicItemCollection<Artist>?](librarysongfilter/artists.md)
+- [var artists: MusicItemCollection<Artist>?](./librarysongfilter/artists.md)
   The song’s associated artists.
-- [var composerName: String?](librarysongfilter/composername.md)
+- [var composerName: String?](./librarysongfilter/composername.md)
   The name of the song’s composer.
-- [var genres: MusicItemCollection<Genre>?](librarysongfilter/genres.md)
+- [var genres: MusicItemCollection<Genre>?](./librarysongfilter/genres.md)
   The song’s associated genres.
-- [var id: MusicItemID](librarysongfilter/id.md)
+- [var id: MusicItemID](./librarysongfilter/id.md)
   The unique identifier for the song.
-- [var title: String](librarysongfilter/title.md)
+- [var title: String](./librarysongfilter/title.md)
   The title of the song.
 
 

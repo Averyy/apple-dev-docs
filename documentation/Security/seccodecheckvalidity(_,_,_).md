@@ -1,7 +1,8 @@
 # SecCodeCheckValidity(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs dynamic validation of signed code.
 
@@ -15,9 +16,13 @@ Performs dynamic validation of signed code.
 func SecCodeCheckValidity(_ code: SecCode, _ flags: SecCSFlags, _ requirement: SecRequirement?) -> OSStatus
 ```
 
+```c
+OSStatus SecCodeCheckValidity(SecCodeRef code, SecCSFlags flags, SecRequirementRef requirement);
+```
+
 #### Return Value
 
-A result code. See [`Code Signing Services Result Codes`](code-signing-services-result-codes.md).
+A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
 #### Discussion
 
@@ -28,8 +33,8 @@ This function is secure against attempts to modify the file system source of the
 ## Parameters
 
 - `code`: The code object to be validated.
-- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
-- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](secrequirementcreatewithstring(_:_:_:).md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirementcreatewithstringanderrors(_:_:_:_:).md) function to create a code requirement object. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
+- `flags`: Optional flags; see [`SecCSFlags`](./seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](./seccsflags/kseccsdefaultflags.md) for standard behavior.
+- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](./secrequirementcreatewithstring%28_,_,_%29.md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](./secrequirementcreatewithstringanderrors%28_,_,_,_%29.md) function to create a code requirement object. See [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
 
 
 ---

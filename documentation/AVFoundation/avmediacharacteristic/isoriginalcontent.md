@@ -1,7 +1,8 @@
 # isOriginalContent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track or media selection option contains original content.
 
@@ -20,17 +21,22 @@ A media characteristic that indicates that a track or media selection option con
 static let isOriginalContent: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicIsOriginalContent;
+```
+
 #### Discussion
 
 This characteristic differentiates original content from supplementary or derivative content, such as a language translation.
 
 ## See Also
 
-- [static let isMainProgramContent: AVMediaCharacteristic](avmediacharacteristic/ismainprogramcontent.md)
+### Content
+- [static let isMainProgramContent: AVMediaCharacteristic](./ismainprogramcontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
-- [static let isAuxiliaryContent: AVMediaCharacteristic](avmediacharacteristic/isauxiliarycontent.md)
+- [static let isAuxiliaryContent: AVMediaCharacteristic](./isauxiliarycontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation.
-- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+- [static let machineGenerated: AVMediaCharacteristic](./machinegenerated.md)
   A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
 

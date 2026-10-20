@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a PDF style instance that configures the layout of previews for PDF files.
 
@@ -20,9 +21,10 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](qlpreviewpdfstyle/init(rawvalue:).md)
+### Creating a Preview Style for PDF Files
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a PDF style instance that configures the layout of previews for PDF files.
-- [var rawValue: UInt32](qlpreviewpdfstyle/rawvalue.md)
+- [var rawValue: UInt32](./rawvalue.md)
   The raw value that represents the layout of previews for PDF files.
 
 

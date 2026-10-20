@@ -1,7 +1,8 @@
 # NSBackgroundActivityScheduler.CompletionHandler
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.10+
@@ -12,9 +13,14 @@
 typealias CompletionHandler = @Sendable (NSBackgroundActivityScheduler.Result) -> Void
 ```
 
+```c
+typedef void (^)(enum NSBackgroundActivityResult) NSBackgroundActivityCompletionHandler;
+```
+
 ## See Also
 
-- [func schedule((NSBackgroundActivityScheduler.CompletionHandler) -> Void)](nsbackgroundactivityscheduler/schedule(_:).md)
+### Scheduling Activity
+- [func schedule((NSBackgroundActivityScheduler.CompletionHandler) -> Void)](./schedule%28_%29.md)
   Begins scheduling the background activity.
 
 

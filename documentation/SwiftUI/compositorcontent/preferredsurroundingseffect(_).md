@@ -1,7 +1,8 @@
 # preferredSurroundingsEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an effect to passthrough video.
 
@@ -22,7 +23,7 @@ A CompositorContent that exhibits the specified preference.
 
 #### Discussion
 
-Use this modifier to indicate a preference for the appearance of passthrough video when displaying the modified compositor content. For example, you can enhance the immersiveness of a scene that uses the default [`mixed`](immersionstyle/mixed.md) immersion style by applying the [`systemDark`](surroundingseffect/systemdark.md) preference to a compositor content inside the scene.
+Use this modifier to indicate a preference for the appearance of passthrough video when displaying the modified compositor content. For example, you can enhance the immersiveness of a scene that uses the default [`mixed`](../immersionstyle/mixed.md) immersion style by applying the [`systemDark`](../surroundingseffect/systemdark.md) preference to a compositor content inside the scene.
 
 This also dims passthrough video, which helps to draw attention to the scene’s virtual content while still enabling people to remain aware of their surroundings.
 

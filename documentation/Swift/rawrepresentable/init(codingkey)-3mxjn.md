@@ -1,7 +1,8 @@
 # init(codingKey:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.4+
@@ -17,6 +18,8 @@
 ```swift
 init?<T>(codingKey: T) where T : CodingKey
 ```
+
+Available when `Self` conforms to `CodingKeyRepresentable` and `RawValue` is `Int`.
 
 
 ---

@@ -1,17 +1,22 @@
 # cellAttribute(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value for the specified cell attribute.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func cellAttribute(_ parameter: NSCell.Attribute) -> Int
+```
+
+```objc
+- (NSInteger) cellAttribute:(NSCellAttribute) parameter;
 ```
 
 #### Return Value
@@ -24,13 +29,14 @@ The value for the cell attribute specified by `aParameter`.
 
 ## See Also
 
-- [func setCellAttribute(NSCell.Attribute, to: Int)](nscell/setcellattribute(_:to:).md)
+### Managing Cell Attributes
+- [func setCellAttribute(NSCell.Attribute, to: Int)](./setcellattribute%28_,to%29.md)
   Sets the value for the specified cell attribute.
-- [var type: NSCell.CellType](nscell/type.md)
+- [var type: NSCell.CellType](./type.md)
   The type of the cell.
-- [var isEnabled: Bool](nscell/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the cell is currently enabled.
-- [var allowsUndo: Bool](nscell/allowsundo.md)
+- [var allowsUndo: Bool](./allowsundo.md)
   A Boolean value indicating whether the cell assumes responsibility for undo operations.
 
 

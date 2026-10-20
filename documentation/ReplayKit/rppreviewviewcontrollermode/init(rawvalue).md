@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: ReplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- tvOS ?+
+- tvOS
 
 ## Declaration
 

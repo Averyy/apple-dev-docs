@@ -1,7 +1,8 @@
 # vDSP.WindowSequence
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify window sequence functions.
 
@@ -11,7 +12,7 @@ Constants that specify window sequence functions.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,40 +24,41 @@ enum WindowSequence
 ## Topics
 
 ### Enumeration Cases
-- [vDSP.WindowSequence.blackman](vdsp/windowsequence/blackman.md)
+- [vDSP.WindowSequence.blackman](./windowsequence/blackman.md)
   The Blackman window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hamming](vdsp/windowsequence/hamming.md)
+- [vDSP.WindowSequence.hamming](./windowsequence/hamming.md)
   The Hamming window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hanningDenormalized](vdsp/windowsequence/hanningdenormalized.md)
+- [vDSP.WindowSequence.hanningDenormalized](./windowsequence/hanningdenormalized.md)
   The denormalized-Hann window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hanningNormalized](vdsp/windowsequence/hanningnormalized.md)
+- [vDSP.WindowSequence.hanningNormalized](./windowsequence/hanningnormalized.md)
   The normalized-Hann window, used to reduce spectral leakage prior to discrete Fourier transform.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [vDSP.DCTTransformType](vdsp/dcttransformtype.md)
+### Enumerations
+- [vDSP.DCTTransformType](./dcttransformtype.md)
   An enumeration that describes the discrete cosine transform types.
-- [vDSP.DFTTransformType](vdsp/dfttransformtype.md)
+- [vDSP.DFTTransformType](./dfttransformtype.md)
   Discrete Fourier transform types.
-- [vDSP.FourierTransformDirection](vdsp/fouriertransformdirection.md)
+- [vDSP.FourierTransformDirection](./fouriertransformdirection.md)
   Fast Fourier transform directions.
-- [vDSP.IntegrationRule](vdsp/integrationrule.md)
+- [vDSP.IntegrationRule](./integrationrule.md)
   Integration rules.
-- [vDSP.Radix](vdsp/radix.md)
+- [vDSP.Radix](./radix.md)
   Fast Fourier transform radices.
-- [vDSP.RoundingMode](vdsp/roundingmode.md)
+- [vDSP.RoundingMode](./roundingmode.md)
   Floating point to integer conversion rounding modes.
-- [vDSP.SortOrder](vdsp/sortorder.md)
+- [vDSP.SortOrder](./sortorder.md)
   Constants that specify the sorting order.
-- [vDSP.ThresholdRule](vdsp/thresholdrule.md)
+- [vDSP.ThresholdRule](./thresholdrule.md)
   Constants that specify vector threshold rules.
-- [vDSP.DFTError](vdsp/dfterror.md)
+- [vDSP.DFTError](./dfterror.md)
 
 
 ---

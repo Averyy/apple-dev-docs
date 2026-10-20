@@ -1,21 +1,26 @@
 # dropout
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dropout rate you apply to the output projection weights.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 var dropout: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float dropout;
 ```
 
 #### Discussion
@@ -24,19 +29,20 @@ If `dropout` is non-zero, the layer adds a dropout operation to all the output p
 
 ## See Also
 
-- [var modelDimension: Int](mlcmultiheadattentiondescriptor/modeldimension.md)
+### Inspecting Multi-Head Attention Descriptors
+- [var modelDimension: Int](./modeldimension.md)
   The model or embedding dimension.
-- [var keyDimension: Int](mlcmultiheadattentiondescriptor/keydimension.md)
+- [var keyDimension: Int](./keydimension.md)
   The total dimension of key space, which must be divisible by the number of heads.
-- [var valueDimension: Int](mlcmultiheadattentiondescriptor/valuedimension.md)
+- [var valueDimension: Int](./valuedimension.md)
   The total dimension of value space, which must be divisible by the number of heads.
-- [var headCount: Int](mlcmultiheadattentiondescriptor/headcount.md)
+- [var headCount: Int](./headcount.md)
   The number of parallel attention heads.
-- [var hasBiases: Bool](mlcmultiheadattentiondescriptor/hasbiases.md)
+- [var hasBiases: Bool](./hasbiases.md)
   A Boolean that specifies whether you add a bias to query, key, value, and output projections.
-- [var hasAttentionBiases: Bool](mlcmultiheadattentiondescriptor/hasattentionbiases.md)
+- [var hasAttentionBiases: Bool](./hasattentionbiases.md)
   A Boolean that specifies whether you add an array of biases to key and value, respectively.
-- [var addsZeroAttention: Bool](mlcmultiheadattentiondescriptor/addszeroattention.md)
+- [var addsZeroAttention: Bool](./addszeroattention.md)
   A Boolean that specifies whether you add a row of zeros to projected key and value.
 
 

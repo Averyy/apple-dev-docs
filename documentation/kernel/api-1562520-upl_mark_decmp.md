@@ -1,14 +1,15 @@
 # upl_mark_decmp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 void upl_mark_decmp(upl_t upl);
 ```
 

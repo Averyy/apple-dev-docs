@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the gazetteer.
 
@@ -16,11 +17,12 @@ var description: String { get }
 
 ## See Also
 
-- [var model: MLModel](mlgazetteer/model.md)
+### Describing a gazetteer
+- [var model: MLModel](./model.md)
   The gazetteer contained within a Core ML model file stored in memory.
-- [var debugDescription: String](mlgazetteer/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the gazetteer that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlgazetteer/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the gazetteer shown in a playground.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An object describing the physical extents of the input, if the input represents a physical unit of measurement.
@@ -18,6 +19,10 @@ An object describing the physical extents of the input, if the input represents 
 
 ```swift
 var physicalExtents: (any GCPhysicalInputExtents)? { get }
+```
+
+```objc
+@property (readonly, nullable) id<GCPhysicalInputExtents> physicalExtents;
 ```
 
 

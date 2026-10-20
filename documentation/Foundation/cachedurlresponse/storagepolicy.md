@@ -1,7 +1,8 @@
 # storagePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cached response’s storage policy.
 
@@ -20,17 +21,22 @@ The cached response’s storage policy.
 var storagePolicy: URLCache.StoragePolicy { get }
 ```
 
+```objc
+@property (readonly) NSURLCacheStoragePolicy storagePolicy;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 ## See Also
 
-- [var data: Data](cachedurlresponse/data.md)
+### Getting cached URL response properties
+- [var data: Data](./data.md)
   The cached response’s data.
-- [var response: URLResponse](cachedurlresponse/response.md)
+- [var response: URLResponse](./response.md)
   The URL response object associated with the instance.
-- [var userInfo: [AnyHashable : Any]?](cachedurlresponse/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The cached response’s user info dictionary.
 
 

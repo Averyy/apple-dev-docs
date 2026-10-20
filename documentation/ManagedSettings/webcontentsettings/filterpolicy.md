@@ -1,7 +1,8 @@
 # WebContentSettings.FilterPolicy
 
 **Framework**: Managed Settings  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The policies available for filtering web content based on specific web domains.
 
@@ -19,28 +20,29 @@ enum FilterPolicy
 ## Topics
 
 ### Providing filters and exceptions
-- [WebContentSettings.FilterPolicy.all(except:)](webcontentsettings/filterpolicy/all(except:).md)
+- [WebContentSettings.FilterPolicy.all(except:)](./filterpolicy/all%28except%29.md)
   The system blocks all websites except the ones you specify.
-- [case auto(Set<WebDomain>, except: Set<WebDomain>)](webcontentsettings/filterpolicy/auto(_:except:).md)
+- [case auto(Set<WebDomain>, except: Set<WebDomain>)](./filterpolicy/auto%28_,except%29.md)
   The system blocks adult content.
-- [WebContentSettings.FilterPolicy.none](webcontentsettings/filterpolicy/none.md)
+- [WebContentSettings.FilterPolicy.none](./filterpolicy/none.md)
   The policy doesn’t affect any domains.
-- [WebContentSettings.FilterPolicy.specific(_:)](webcontentsettings/filterpolicy/specific(_:).md)
+- [WebContentSettings.FilterPolicy.specific(_:)](./filterpolicy/specific%28_%29.md)
   The policy blocks the specified domains.
 ### Comparing policies
-- [static func == (WebContentSettings.FilterPolicy, WebContentSettings.FilterPolicy) -> Bool](webcontentsettings/filterpolicy/==(_:_:).md)
+- [static func == (WebContentSettings.FilterPolicy, WebContentSettings.FilterPolicy) -> Bool](./filterpolicy/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [var blockedByFilter: WebContentSettings.FilterPolicy?](webcontentsettings/blockedbyfilter-swift.property.md)
+### Filtering web domains
+- [var blockedByFilter: WebContentSettings.FilterPolicy?](./blockedbyfilter-swift.property.md)
   The current policy for filtering websites.
-- [static let blockedByFilter: SettingMetadata<WebContentSettings.FilterPolicy>](webcontentsettings/blockedbyfilter-swift.type.property.md)
+- [static let blockedByFilter: SettingMetadata<WebContentSettings.FilterPolicy>](./blockedbyfilter-swift.type.property.md)
   A description of the setting that controls which websites a user can access.
 
 

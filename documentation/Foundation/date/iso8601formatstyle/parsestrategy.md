@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy used to parse a string into a date.
 
@@ -22,7 +23,8 @@ var parseStrategy: Date.ISO8601FormatStyle { get }
 
 ## See Also
 
-- [func parse(String) throws -> Date](date/iso8601formatstyle/parse(_:).md)
+### Parsing an ISO 8601 Format Style
+- [func parse(String) throws -> Date](./parse%28_%29.md)
   Parses a string into a date.
 
 

@@ -1,7 +1,8 @@
 # BNNSLayerFlagsLSTMBidirectional
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that enables bidirectional long short-term memory (LSTM).
 
@@ -20,12 +21,17 @@ A flag that enables bidirectional long short-term memory (LSTM).
 var BNNSLayerFlagsLSTMBidirectional: BNNSLayerFlags { get }
 ```
 
+```c
+BNNSLayerFlagsLSTMBidirectional
+```
+
 ## See Also
 
-- [var rawValue: UInt32](bnnslayerflags/rawvalue.md)
-- [init(UInt32)](bnnslayerflags/init(_:).md)
-- [init(rawValue: UInt32)](bnnslayerflags/init(rawvalue:).md)
-- [var BNNSLayerFlagsLSTMDefaultActivations: BNNSLayerFlags](bnnslayerflagslstmdefaultactivations.md)
+### LSTM Layer Flags
+- [var rawValue: UInt32](./bnnslayerflags/rawvalue.md)
+- [init(UInt32)](./bnnslayerflags/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnslayerflags/init%28rawvalue%29.md)
+- [var BNNSLayerFlagsLSTMDefaultActivations: BNNSLayerFlags](./bnnslayerflagslstmdefaultactivations.md)
   A flag that ignores the specified gate activations and instructs the operation to use default activations.
 
 

@@ -1,7 +1,8 @@
 # NSLocalizedString(_:tableName:bundle:value:comment:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a localized string from a table that Xcode generates for you when exporting localizations.
 
@@ -22,15 +23,15 @@ func NSLocalizedString(_ key: String, tableName: String? = nil, bundle: Bundle =
 
 #### Return Value
 
-The result of sending [`localizedString(forKey:value:table:)`](bundle/localizedstring(forkey:value:table:).md) to `bundle`, passing the specified `key`, `value`, and `tableName`.
+The result of sending [`localizedString(forKey:value:table:)`](./bundle/localizedstring%28forkey,value,table%29.md) to `bundle`, passing the specified `key`, `value`, and `tableName`.
 
 #### Discussion
 
 Use this function to automatically generate a strings files named `[tableName].strings` located in `bundle` from your code when exporting localizations from Xcode or the `genstrings` utility.
 
-For information about inserting plural nouns and units into localized strings, see [`Localizing strings that contain plurals`](https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals).
+For information about inserting plural nouns and units into localized strings, see [Localizing strings that contain plurals](../Xcode/localizing-strings-that-contain-plurals.md).
 
-> ❗ **Important**:  The values for `key`, `tableName`, `value`, and `comment` must be string literal values. Xcode can read these values from source code to automatically create localization tables when exporting localizations, but it doesn’t resolve string variables. If you want to use string variables, manually create a strings file and use [`localizedString(forKey:value:table:)`](bundle/localizedstring(forkey:value:table:).md) instead. For more information on strings files, see [`String Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6).
+> ❗ **Important**:  The values for `key`, `tableName`, `value`, and `comment` must be string literal values. Xcode can read these values from source code to automatically create localization tables when exporting localizations, but it doesn’t resolve string variables. If you want to use string variables, manually create a strings file and use [`localizedString(forKey:value:table:)`](./bundle/localizedstring%28forkey,value,table%29.md) instead. For more information on strings files, see [String Resources](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6).
 
 ##### Choose Meaningful Keys
 
@@ -75,7 +76,7 @@ NSLocalizedString("dominant-color-caption",
 "dominant-color-caption" = "The dominant color is (dominantColor).";
 ```
 
-Instead, to dynamically insert values within localized strings, set `value` to a format string, and use [`localizedStringWithFormat(_:_:)`](https://developer.apple.com/documentation/swift/string/localizedstringwithformat(_:_:)) to insert those values.
+Instead, to dynamically insert values within localized strings, set `value` to a format string, and use [`localizedStringWithFormat(_:_:)`](../Swift/string/localizedstringwithformat%28_,_%29.md) to insert those values.
 
 ```swift
 let format = NSLocalizedString("dominant-color-caption",
@@ -89,7 +90,7 @@ let localizedString = String.localizedStringWithFormat(format, favoriteColor)
 "dominant-color-copation" = "The dominant color is %@.";
 ```
 
-For information about inserting plural nouns and units into localized strings, see [`Localizing strings that contain plurals`](https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals).
+For information about inserting plural nouns and units into localized strings, see [Localizing strings that contain plurals](../Xcode/localizing-strings-that-contain-plurals.md).
 
 ##### Avoid Multiline String Literals
 
@@ -111,7 +112,7 @@ The previous code sample adds the following entry into `Localized.strings` when 
 "loading-screen.venus-flytrap-fact" = "\nDid you know that venus flytraps have flowers atop very long stems?\nThe long stem keeps insects a safe distance away from their digestive leaves below.\n";
 ```
 
-You can preserve the aesthetics of mirroring newlines in a string in their code representation by using string concatenation with [`+(_:_:)`](https://developer.apple.com/documentation/swift/string/+(_:_:)).
+You can preserve the aesthetics of mirroring newlines in a string in their code representation by using string concatenation with [`+(_:_:)`](../Swift/string/plus%28_,_%29.md).
 
 ```swift
 NSLocalizedString("loading-screen.venus-flytrap-fact",
@@ -144,7 +145,9 @@ The word "bazillion" is intentionally used to invoke a sense of childish excitem
 
 ## Parameters
 
-- `key`: The key for a string in the specified table. > **Note**:  Xcode can’t export localizations for strings whose `key` is a string variable or an empty string.
+- `key`: The key for a string in the specified table.
+
+  > **Note**:  Xcode can’t export localizations for strings whose `key` is a string variable or an empty string.
 - `tableName`: The name of the table containing the key-value pairs. Also, the suffix for the strings file (a file with th`e.strings` extension) to store the localized string. This defaults to the table in `Localizable.strings` when `tableName` is `nil` or an empty string.
 - `bundle`: The bundle containing the table’s strings file. The main bundle is used if one isn’t specified.
 - `value`: The localized string for the development locale. For other locales, return this value if `key` isn’t found in the table.
@@ -152,19 +155,21 @@ The word "bazillion" is intentionally used to invoke a sense of childish excitem
 
 ## See Also
 
-- [Exporting localizations](../xcode/exporting-localizations.md)
+### Related Documentation
+- [Exporting localizations](../Xcode/exporting-localizations.md)
   Provide the localizable files from your project to localizers.
-- [Importing localizations](../xcode/importing-localizations.md)
+- [Importing localizations](../Xcode/importing-localizations.md)
   Import the files that you translate or adapt for a language and region into your project.
-- [struct Locale](locale.md)
+### Localization
+- [struct Locale](./locale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
-- [class NSOrthography](nsorthography.md)
+- [class NSOrthography](./nsorthography.md)
   A description of the linguistic content of natural language text, typically used for spelling and grammar checking.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](./localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
-- [protocol CustomLocalizedStringResourceConvertible](customlocalizedstringresourceconvertible.md)
+- [protocol CustomLocalizedStringResourceConvertible](./customlocalizedstringresourceconvertible.md)
   A type that provides an out-of-process localizable description.
-- [struct URLResource](urlresource.md)
+- [struct URLResource](./urlresource.md)
   A resource located at a particular file URL within a bundle.
 
 

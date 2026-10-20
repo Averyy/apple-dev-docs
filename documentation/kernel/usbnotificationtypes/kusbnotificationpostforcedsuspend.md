@@ -1,7 +1,8 @@
 # kUSBNotificationPostForcedSuspend
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system sends a notification after a forced suspend completes.
 
@@ -10,7 +11,7 @@ The system sends a notification after a forced suspend completes.
 
 ## Declaration
 
-```swift
+```c
 kUSBNotificationPostForcedSuspend = (1 << kUSBNotificationPostForcedSuspendBit)
 ```
 

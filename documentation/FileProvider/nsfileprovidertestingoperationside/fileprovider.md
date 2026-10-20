@@ -1,7 +1,8 @@
 # NSFileProviderTestingOperationSide.fileProvider
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The File Provider extension’s remote storage.
 
@@ -18,9 +19,14 @@ The File Provider extension’s remote storage.
 case fileProvider
 ```
 
+```c
+NSFileProviderTestingOperationSideFileProvider
+```
+
 ## See Also
 
-- [NSFileProviderTestingOperationSide.disk](nsfileprovidertestingoperationside/disk.md)
+### Locations
+- [NSFileProviderTestingOperationSide.disk](./disk.md)
   The File Provider extension’s local storage.
 
 

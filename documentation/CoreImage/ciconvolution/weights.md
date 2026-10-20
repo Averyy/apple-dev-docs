@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The convolution kernel.
@@ -11,7 +12,7 @@ The convolution kernel.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The convolution kernel.
 var weights: CIVector { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIVector * weights;
+```
+
 ## See Also
 
-- [var bias: Float](ciconvolution/bias.md)
+### Instance Properties
+- [var bias: Float](./bias.md)
   A value that’s added to each output pixel.
-- [var inputImage: CIImage?](ciconvolution/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

@@ -1,7 +1,8 @@
 # extensionInput
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An input for WebAuthn extensions.
 
@@ -20,7 +21,8 @@ var extensionInput: ASPasskeyAssertionCredentialExtensionInput? { get }
 
 ## See Also
 
-- [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
+### Working with WebAuthn extensions
+- [struct ASPasskeyAssertionCredentialExtensionInput](../aspasskeyassertioncredentialextensioninput-swift.struct.md)
   A type that encapsulates input for various WebAuthn extensions during passkey assertion.
 
 

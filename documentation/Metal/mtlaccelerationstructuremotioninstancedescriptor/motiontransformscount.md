@@ -1,7 +1,8 @@
 # motionTransformsCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of motion data key-frames, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
@@ -19,17 +20,22 @@ The number of motion data key-frames, which applies to the next acceleration-str
 var motionTransformsCount: UInt32
 ```
 
+```c
+uint32_t motionTransformsCount;
+```
+
 ## See Also
 
-- [var motionStartTime: Float](mtlaccelerationstructuremotioninstancedescriptor/motionstarttime.md)
+### Specifying motion data
+- [var motionStartTime: Float](./motionstarttime.md)
   A starting time for the range of motion that the key-frame data represents.
-- [var motionEndTime: Float](mtlaccelerationstructuremotioninstancedescriptor/motionendtime.md)
+- [var motionEndTime: Float](./motionendtime.md)
   An ending time for the range of motion that the key-frame data represents.
-- [var motionStartBorderMode: MTLMotionBorderMode](mtlaccelerationstructuremotioninstancedescriptor/motionstartbordermode.md)
+- [var motionStartBorderMode: MTLMotionBorderMode](./motionstartbordermode.md)
   A behavior that configures how a motion instance handles timestamps before a starting time.
-- [var motionEndBorderMode: MTLMotionBorderMode](mtlaccelerationstructuremotioninstancedescriptor/motionendbordermode.md)
+- [var motionEndBorderMode: MTLMotionBorderMode](./motionendbordermode.md)
   A behavior that configures how a motion instance handles timestamps after an ending time.
-- [var motionTransformsStartIndex: UInt32](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md)
+- [var motionTransformsStartIndex: UInt32](./motiontransformsstartindex.md)
   The index of motion data that represents the first key-frame motion data, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
 

@@ -1,7 +1,8 @@
 # init(operationsWithinApp:operationsOutsideApp:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default drag configuration with operation `.copy` support for drags within the application and to other applications.
 

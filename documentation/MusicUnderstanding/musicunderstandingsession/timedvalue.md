@@ -1,7 +1,8 @@
 # MusicUnderstandingSession.TimedValue
 
 **Framework**: Music Understanding  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that pairs a value with a time.
 
@@ -27,32 +28,33 @@ The `TimedValue` pairs a value with a `CMTime` point — a measurement at a spec
 ## Topics
 
 ### Getting the time
-- [let time: CMTime](musicunderstandingsession/timedvalue/time.md)
+- [let time: CMTime](./timedvalue/time.md)
   The time at which the value applies.
 ### Getting the value
-- [let value: Value](musicunderstandingsession/timedvalue/value.md)
+- [let value: Value](./timedvalue/value.md)
   The value associated with the time.
 ### Initializers
-- [init(from: any Decoder) throws](musicunderstandingsession/timedvalue/init(from:).md)
+- [init(from: any Decoder) throws](./timedvalue/init%28from%29.md)
   Creates a timed value by decoding from the given decoder.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](musicunderstandingsession/timedvalue/encode(to:).md)
+- [func encode(to: any Encoder) throws](./timedvalue/encode%28to%29.md)
   Encodes the timed value into the given encoder.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MusicUnderstandingSession.RangedValue](musicunderstandingsession/rangedvalue.md)
+### Support types
+- [MusicUnderstandingSession.RangedValue](./rangedvalue.md)
   A structure that pairs a value over a time range.
-- [struct AnalysisType](analysistype.md)
+- [struct AnalysisType](../analysistype.md)
   The analysis type for each session.
 
 

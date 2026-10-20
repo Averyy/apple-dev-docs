@@ -1,7 +1,8 @@
 # NLTagger.AssetsResult.available
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The asset is now available and loaded onto the device.
 
@@ -20,11 +21,16 @@ The asset is now available and loaded onto the device.
 case available
 ```
 
+```c
+NLTaggerAssetsResultAvailable
+```
+
 ## See Also
 
-- [NLTagger.AssetsResult.notAvailable](nltagger/assetsresult/notavailable.md)
+### Asset request responses
+- [NLTagger.AssetsResult.notAvailable](./notavailable.md)
   The asset is unavailable on the device.
-- [NLTagger.AssetsResult.error](nltagger/assetsresult/error.md)
+- [NLTagger.AssetsResult.error](./error.md)
   The framework couldn’t load the asset due to an error.
 
 

@@ -1,7 +1,8 @@
 # GKExchangeTimeoutNone
 
 **Framework**: GameKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An exchange request timeout that doesn’t expire.
 
@@ -20,9 +21,14 @@ An exchange request timeout that doesn’t expire.
 var GKExchangeTimeoutNone: TimeInterval
 ```
 
+```c
+extern NSTimeInterval GKExchangeTimeoutNone;
+```
+
 ## See Also
 
-- [var GKExchangeTimeoutDefault: TimeInterval](gkexchangetimeoutdefault.md)
+### Timeouts
+- [var GKExchangeTimeoutDefault: TimeInterval](./gkexchangetimeoutdefault.md)
   A one-day exchange request timeout.
 
 

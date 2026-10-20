@@ -1,7 +1,8 @@
 # snapshot(saveToHDR:completion:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Takes a screenshot.
 
@@ -9,6 +10,13 @@ Takes a screenshot.
 - macOS 10.15+
 
 ## Declaration
+
+```swift
+@MainActor
+@preconcurrency func snapshot(saveToHDR: Bool, completion: @escaping (ARView.Image?) -> Void)
+```
+
+**Other overloads**:
 
 ```swift
 @MainActor

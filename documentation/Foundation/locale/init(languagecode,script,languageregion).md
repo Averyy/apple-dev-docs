@@ -1,7 +1,8 @@
 # init(languageCode:script:languageRegion:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a locale with the specified language code, script, and region identifier.
 
@@ -28,13 +29,14 @@ init(languageCode: Locale.LanguageCode? = nil, script: Locale.Script? = nil, lan
 
 ## See Also
 
-- [init(components: Locale.Components)](locale/init(components:).md)
+### Creating a locale by components
+- [init(components: Locale.Components)](./init%28components%29.md)
   Creates a locale from the given components.
-- [Locale.Components](locale/components.md)
+- [Locale.Components](./components.md)
   A type that represents the components of a locale, for use when creating a locale with specific overrides.
-- [init(languageComponents: Locale.Language.Components)](locale/init(languagecomponents:).md)
+- [init(languageComponents: Locale.Language.Components)](./init%28languagecomponents%29.md)
   Creates a locale from the given language components.
-- [Locale.Language.Components](locale/language-swift.struct/components.md)
+- [Locale.Language.Components](./language-swift.struct/components.md)
   A type that identifies a language by its various components.
 
 

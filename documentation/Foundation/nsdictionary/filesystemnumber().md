@@ -1,7 +1,8 @@
 # fileSystemNumber()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the filesystem number.
 
@@ -20,41 +21,46 @@ Returns the filesystem number.
 func fileSystemNumber() -> Int
 ```
 
+```objc
+- (NSInteger) fileSystemNumber;
+```
+
 #### Return Value
 
-The value associated with the [`systemNumber`](fileattributekey/systemnumber.md) file attributes key as an `Int` (`unsigned long` in Objective-C), or `0` if the file attributes dictionary has no entry for the key
+The value associated with the [`systemNumber`](../fileattributekey/systemnumber.md) file attributes key as an `Int` (`unsigned long` in Objective-C), or `0` if the file attributes dictionary has no entry for the key
 
 ## See Also
 
-- [func fileSize() -> UInt64](nsdictionary/filesize.md)
+### Accessing File Attributes
+- [func fileSize() -> UInt64](./filesize%28%29.md)
   Returns the file’s size, in bytes.
-- [func fileType() -> String?](nsdictionary/filetype.md)
+- [func fileType() -> String?](./filetype%28%29.md)
   Returns the file type.
-- [func fileCreationDate() -> Date?](nsdictionary/filecreationdate.md)
+- [func fileCreationDate() -> Date?](./filecreationdate%28%29.md)
   Returns the file’s creation date.
-- [func fileModificationDate() -> Date?](nsdictionary/filemodificationdate.md)
+- [func fileModificationDate() -> Date?](./filemodificationdate%28%29.md)
   Returns file’s modification date.
-- [func filePosixPermissions() -> Int](nsdictionary/fileposixpermissions.md)
+- [func filePosixPermissions() -> Int](./fileposixpermissions%28%29.md)
   Returns the file’s POSIX permissions.
-- [func fileOwnerAccountID() -> NSNumber?](nsdictionary/fileowneraccountid.md)
+- [func fileOwnerAccountID() -> NSNumber?](./fileowneraccountid%28%29.md)
   Returns the file’s owner account ID.
-- [func fileOwnerAccountName() -> String?](nsdictionary/fileowneraccountname.md)
+- [func fileOwnerAccountName() -> String?](./fileowneraccountname%28%29.md)
   Returns the file’s owner account name.
-- [func fileGroupOwnerAccountID() -> NSNumber?](nsdictionary/filegroupowneraccountid.md)
+- [func fileGroupOwnerAccountID() -> NSNumber?](./filegroupowneraccountid%28%29.md)
   Returns file’s group owner account ID.
-- [func fileGroupOwnerAccountName() -> String?](nsdictionary/filegroupowneraccountname.md)
+- [func fileGroupOwnerAccountName() -> String?](./filegroupowneraccountname%28%29.md)
   Returns the file’s group owner account name.
-- [func fileExtensionHidden() -> Bool](nsdictionary/fileextensionhidden.md)
+- [func fileExtensionHidden() -> Bool](./fileextensionhidden%28%29.md)
   Returns a Boolean value indicating whether the file hides its extension.
-- [func fileIsImmutable() -> Bool](nsdictionary/fileisimmutable.md)
+- [func fileIsImmutable() -> Bool](./fileisimmutable%28%29.md)
   Returns a Boolean value indicating whether the file is immutable.
-- [func fileIsAppendOnly() -> Bool](nsdictionary/fileisappendonly.md)
+- [func fileIsAppendOnly() -> Bool](./fileisappendonly%28%29.md)
   Returns a Boolean value indicating whether the file is append only.
-- [func fileSystemFileNumber() -> Int](nsdictionary/filesystemfilenumber.md)
+- [func fileSystemFileNumber() -> Int](./filesystemfilenumber%28%29.md)
   Returns the filesystem file number.
-- [func fileHFSTypeCode() -> OSType](nsdictionary/filehfstypecode.md)
+- [func fileHFSTypeCode() -> OSType](./filehfstypecode%28%29.md)
   Returns file’s HFS type code.
-- [func fileHFSCreatorCode() -> OSType](nsdictionary/filehfscreatorcode.md)
+- [func fileHFSCreatorCode() -> OSType](./filehfscreatorcode%28%29.md)
   Returns the file’s HFS creator code.
 
 

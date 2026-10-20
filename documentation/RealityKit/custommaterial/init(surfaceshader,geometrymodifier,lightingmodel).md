@@ -1,7 +1,8 @@
 # init(surfaceShader:geometryModifier:lightingModel:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom material from a lighting model, surface shader, and geometry modifier.
 
@@ -20,13 +21,13 @@ init(surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMateri
 
 ## Mentions
 
-- [Modifying RealityKit rendering using custom materials](modifying-realitykit-rendering-using-custom-materials.md)
+- [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
 
 #### Discussion
 
-This initializer creates a custom material using a lighting model you specify, which determines how RealityKit renders the output of your shader functions. The [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) and [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) use RealityKit’s physically-based shaders to render the entity based on the output of your shader functions. When using these lighting models, RealityKit uses all provided material attributes like [`baseColor`](custommaterial/basecolor-swift.property.md), [`metallic`](custommaterial/metallic-swift.property.md) and [`normal`](custommaterial/normal-swift.property.md).
+This initializer creates a custom material using a lighting model you specify, which determines how RealityKit renders the output of your shader functions. The [`CustomMaterial.LightingModel.lit`](./lightingmodel-swift.enum/lit.md) and [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md) use RealityKit’s physically-based shaders to render the entity based on the output of your shader functions. When using these lighting models, RealityKit uses all provided material attributes like [`baseColor`](./basecolor-swift.property.md), [`metallic`](./metallic-swift.property.md) and [`normal`](./normal-swift.property.md).
 
-The [`CustomMaterial.LightingModel.unlit`](custommaterial/lightingmodel-swift.enum/unlit.md) lighting model renders the entity with no shadows or surface effects. This lighting model only supports [`baseColor`](custommaterial/basecolor-swift.property.md) and [`blending`](custommaterial/blending-swift.property.md).
+The [`CustomMaterial.LightingModel.unlit`](./lightingmodel-swift.enum/unlit.md) lighting model renders the entity with no shadows or surface effects. This lighting model only supports [`baseColor`](./basecolor-swift.property.md) and [`blending`](./blending-swift.property.md).
 
 ## Parameters
 
@@ -36,11 +37,12 @@ The [`CustomMaterial.LightingModel.unlit`](custommaterial/lightingmodel-swift.en
 
 ## See Also
 
-- [init(from: any Material, geometryModifier: CustomMaterial.GeometryModifier) throws](custommaterial/init(from:geometrymodifier:).md)
+### Creating custom materials
+- [init(from: any Material, geometryModifier: CustomMaterial.GeometryModifier) throws](./init%28from,geometrymodifier%29.md)
   Creates a custom material from an existing material and a geometry modifier.
-- [init(from: any Material, surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMaterial.GeometryModifier?) throws](custommaterial/init(from:surfaceshader:geometrymodifier:).md)
+- [init(from: any Material, surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMaterial.GeometryModifier?) throws](./init%28from,surfaceshader,geometrymodifier%29.md)
   Creates a custom material from an existing material, surface shader, and geometry modifier.
-- [init(program: CustomMaterial.Program)](custommaterial/init(program:).md)
+- [init(program: CustomMaterial.Program)](./init%28program%29.md)
 
 
 ---

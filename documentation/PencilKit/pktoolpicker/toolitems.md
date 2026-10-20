@@ -1,7 +1,8 @@
 # toolItems
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All tool items in the tool picker.
 
@@ -15,6 +16,10 @@ All tool items in the tool picker.
 
 ```swift
 var toolItems: [PKToolPickerItem] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<PKToolPickerItem *> * toolItems;
 ```
 
 

@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of a request to share a group activity.
 
@@ -21,7 +22,8 @@ Use this property to perform actions related to the starting of the activity. Yo
 
 ## See Also
 
-- [enum GroupActivitySharingResult](groupactivitysharingresult-1gln2.md)
+### Getting the result
+- [enum GroupActivitySharingResult](../groupactivitysharingresult-1gln2.md)
   The result of a request to share a group activity in macOS.
 
 

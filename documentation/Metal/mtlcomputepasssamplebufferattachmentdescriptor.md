@@ -1,7 +1,8 @@
 # MTLComputePassSampleBufferAttachmentDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that instructs the GPU where to store counter data from the beginning and end of a compute pass.
 
@@ -19,46 +20,51 @@ A configuration that instructs the GPU where to store counter data from the begi
 class MTLComputePassSampleBufferAttachmentDescriptor
 ```
 
+```objc
+@interface MTLComputePassSampleBufferAttachmentDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
 
-For more context about configuring sample buffer attachments for compute passes, see [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md). That article is one of a series in [`GPU counters and counter sample buffers`](gpu-counters-and-counter-sample-buffers.md) about sampling Metal hardware counters for performance measurement.
+For more context about configuring sample buffer attachments for compute passes, see [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md). That article is one of a series in [GPU counters and counter sample buffers](./gpu-counters-and-counter-sample-buffers.md) about sampling Metal hardware counters for performance measurement.
 
 ## Topics
 
 ### Configuring the sample buffer attachment
-- [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlcomputepasssamplebufferattachmentdescriptor/samplebuffer.md)
+- [var sampleBuffer: (any MTLCounterSampleBuffer)?](./mtlcomputepasssamplebufferattachmentdescriptor/samplebuffer.md)
   A specialized memory buffer that the GPU uses to store its counter data during a compute pass.
-- [var startOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
+- [var startOfEncoderSampleIndex: Int](./mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the start of a compute pass.
-- [var endOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/endofencodersampleindex.md)
+- [var endOfEncoderSampleIndex: Int](./mtlcomputepasssamplebufferattachmentdescriptor/endofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the end of a compute pass.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLComputePassDescriptor](mtlcomputepassdescriptor.md)
+### Configuring a compute pass
+- [class MTLComputePassDescriptor](./mtlcomputepassdescriptor.md)
   A description of how to dispatch execution of pass commands and GPU performance sampling.
-- [enum MTLDispatchType](mtldispatchtype.md)
+- [enum MTLDispatchType](./mtldispatchtype.md)
   The type of dispatch method to use when calling encoded functions.
-- [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)
+- [struct MTLDispatchThreadgroupsIndirectArguments](./mtldispatchthreadgroupsindirectarguments.md)
   The data layout required for arguments needed to specify the size of threadgroups.
-- [class MTLComputePassSampleBufferAttachmentDescriptorArray](mtlcomputepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLComputePassSampleBufferAttachmentDescriptorArray](./mtlcomputepasssamplebufferattachmentdescriptorarray.md)
   A container that stores an array of sample buffer attachments for a compute pass.
 
 

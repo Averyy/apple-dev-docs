@@ -1,7 +1,8 @@
 # maxCallStackDepth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum call stack depth for indirect function calls in compute shaders.
 
@@ -19,6 +20,10 @@ The maximum call stack depth for indirect function calls in compute shaders.
 var maxCallStackDepth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxCallStackDepth;
+```
+
 #### Discussion
 
 The property’s default value is `1`. Change its value if you use recursive functions in your compute pass.
@@ -29,11 +34,12 @@ The maximum call stack depth applies only to indirect function calls in your sha
 
 ## See Also
 
-- [var computeFunction: (any MTLFunction)?](mtlcomputepipelinedescriptor/computefunction.md)
+### Configuring the compute execution environment
+- [var computeFunction: (any MTLFunction)?](./computefunction.md)
   The compute kernel the pipeline calls.
-- [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtlcomputepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
+- [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](./threadgroupsizeismultipleofthreadexecutionwidth.md)
   A Boolean value that indicates whether the threadgroup size is always a multiple of the thread execution width.
-- [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinedescriptor/maxtotalthreadsperthreadgroup.md)
+- [var maxTotalThreadsPerThreadgroup: Int](./maxtotalthreadsperthreadgroup.md)
   A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
 
 

@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsSinglesView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Albums associated with the artist and categorized as singles.
 
@@ -10,7 +11,7 @@ Albums associated with the artist and categorized as singles.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsSinglesView.Attributes
 ```
 

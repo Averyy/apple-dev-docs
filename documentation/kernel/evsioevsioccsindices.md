@@ -1,22 +1,23 @@
 # evsioEVSIOCCSIndices
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum evsioEVSIOCCSIndices evsioEVSIOCCSIndices;
 ```
 
 ## Topics
 
 ### Constants
-- [EVSIOCCS_X](evsioevsioccsindices/evsioccs_x.md)
-- [EVSIOCCS_Y](evsioevsioccsindices/evsioccs_y.md)
+- [EVSIOCCS_X](./evsioevsioccsindices/evsioccs_x.md)
+- [EVSIOCCS_Y](./evsioevsioccsindices/evsioccs_y.md)
 
 
 ---

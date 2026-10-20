@@ -1,7 +1,8 @@
 # getSignedIdentityProof(for:using:completionHandler:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signs passed-in data with the local device’s private key.
 
@@ -15,12 +16,20 @@ Signs passed-in data with the local device’s private key.
 ## Declaration
 
 ```swift
+func getSignedIdentityProof(for collaborationHighlight: SWCollaborationHighlight, using data: Data, completionHandler: @escaping @Sendable (SWPerson.SignedIdentityProof?, (any Error)?) -> Void)
+```
+
+```swift
 func signedIdentityProof(for collaborationHighlight: SWCollaborationHighlight, using data: Data) async throws -> SWPerson.SignedIdentityProof
+```
+
+```objc
+- (void) getSignedIdentityProofForCollaborationHighlight:(SWCollaborationHighlight *) collaborationHighlight usingData:(NSData *) data completionHandler:(void (^)(SWSignedPersonIdentityProof *, NSError *)) completionHandler;
 ```
 
 ## Mentions
 
-- [Adding custom collaboration to your app](adding-custom-collaboration-to-your-app.md)
+- [Adding custom collaboration to your app](../adding-custom-collaboration-to-your-app.md)
 
 #### Discussion
 
@@ -28,7 +37,7 @@ When a collaboration message is sent, the system sends it individually to each o
 
 The root hash is the root node of a data structure called a Merkle tree. A Merkle tree is a binary tree that is built by performing a sequence of hashing operations. In order to derive an identity for the user based on their public keys, the keys are used as the leaves of this tree. The hashing algorithm used in the Merkle tree ensures that the root node can only be computed from that set of keys.
 
-> **Note**:  Session 10093: [`Integrate your custom collaboration app with Messages`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10093/)
+> **Related Sessions from WWDC22**:  Session 10093: [Integrate your custom collaboration app with Messages](https://developer.apple.com/videos/play/wwdc2022/10093/)
 
 ## Parameters
 
@@ -38,15 +47,16 @@ The root hash is the root node of a data structure called a Merkle tree. A Merkl
 
 ## See Also
 
-- [class var isSystemCollaborationSupportAvailable: Bool](swhighlightcenter/issystemcollaborationsupportavailable.md)
+### Retrieving collaboration highlights
+- [class var isSystemCollaborationSupportAvailable: Bool](./issystemcollaborationsupportavailable.md)
   A Boolean value that represents full support for Messages collaboration features.
-- [func collaborationHighlight(forIdentifier: SWCollaborationIdentifier) throws -> SWCollaborationHighlight](swhighlightcenter/collaborationhighlight(foridentifier:)-23ytv.md)
+- [func collaborationHighlight(forIdentifier: SWCollaborationIdentifier) throws -> SWCollaborationHighlight](./collaborationhighlight%28foridentifier%29-23ytv.md)
   Returns a collaboration highlight for a specified collaboration identifier.
-- [func collaborationHighlight(forIdentifier: String) throws -> SWCollaborationHighlight](swhighlightcenter/collaborationhighlight(foridentifier:)-87lhr.md)
+- [func collaborationHighlight(forIdentifier: String) throws -> SWCollaborationHighlight](./collaborationhighlight%28foridentifier%29-87lhr.md)
   Returns a collaboration highlight for a specified identifier string.
-- [func getCollaborationHighlight(for: URL, completionHandler: (SWCollaborationHighlight?, (any Error)?) -> Void)](swhighlightcenter/getcollaborationhighlight(for:completionhandler:).md)
+- [func getCollaborationHighlight(for: URL, completionHandler: (SWCollaborationHighlight?, (any Error)?) -> Void)](./getcollaborationhighlight%28for,completionhandler%29.md)
   Returns a collaboration highlight for a specified URL.
-- [func getHighlightFor(URL, completionHandler: (SWHighlight?, (any Error)?) -> Void)](swhighlightcenter/gethighlightfor(_:completionhandler:).md)
+- [func getHighlightFor(URL, completionHandler: (SWHighlight?, (any Error)?) -> Void)](./gethighlightfor%28_,completionhandler%29.md)
   Returns a highlight for a specified URL.
 
 

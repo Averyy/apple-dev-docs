@@ -1,7 +1,8 @@
 # AdGroup.BidStrategy
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Defines how this ad group competes in auctions, including bid type, optimization goal, and bid amount.
 
@@ -10,7 +11,7 @@ Defines how this ad group competes in auctions, including bid type, optimization
 
 ## Declaration
 
-```swift
+```
 object AdGroup.BidStrategy
 ```
 
@@ -35,9 +36,9 @@ The `bidStrategy` field ties this ad group’s bidding mechanics to its optimiza
 
 ## Properties
 
-- `bidStrategyType` (BidStrategy.BidStrategyType): The bid strategy type. Values: `MANUAL_CPT` (goal `TAP`, supported on App Store and Apple Maps), `MANUAL_CPM` (goal `IMPRESSION`, Apple Maps only), `MAX_CONVERSIONS` (goal `INSTALL`, App Store only), `MAX_ENGAGEMENTS` (goal `TAP`, Apple Maps only). See [`BidStrategyType`](bidstrategytype.md). Mutable.
-- `bidStrategyGoal` (BidStrategy.BidStrategyGoal): The optimization goal for this bid strategy. Values: `TAP` (pairs with `MANUAL_CPT` or `MAX_ENGAGEMENTS`), `IMPRESSION` (pairs with `MANUAL_CPM`), `INSTALL` (pairs with `MAX_CONVERSIONS`). See [`BidStrategyGoal`](bidstrategygoal.md). Mutable. Must be paired with a matching `bidStrategyType`.
-- `bid` (Money): The bid amount, setting the monetary ceiling for each auction entry. For `MANUAL_CPT` strategies, this value directly governs auction participation. For automated strategies, it acts as an upper bound. See [`Money`](money.md). Mutable.
+- `bidStrategyType` (BidStrategy.BidStrategyType): The bid strategy type. Values: `MANUAL_CPT` (goal `TAP`, supported on App Store and Apple Maps), `MANUAL_CPM` (goal `IMPRESSION`, Apple Maps only), `MAX_CONVERSIONS` (goal `INSTALL`, App Store only), `MAX_ENGAGEMENTS` (goal `TAP`, Apple Maps only). See [`BidStrategyType`](../bidstrategytype.md). Mutable.
+- `bidStrategyGoal` (BidStrategy.BidStrategyGoal): The optimization goal for this bid strategy. Values: `TAP` (pairs with `MANUAL_CPT` or `MAX_ENGAGEMENTS`), `IMPRESSION` (pairs with `MANUAL_CPM`), `INSTALL` (pairs with `MAX_CONVERSIONS`). See [`BidStrategyGoal`](../bidstrategygoal.md). Mutable. Must be paired with a matching `bidStrategyType`.
+- `bid` (Money): The bid amount, setting the monetary ceiling for each auction entry. For `MANUAL_CPT` strategies, this value directly governs auction participation. For automated strategies, it acts as an upper bound. See [`Money`](../money.md). Mutable.
 
 
 ---

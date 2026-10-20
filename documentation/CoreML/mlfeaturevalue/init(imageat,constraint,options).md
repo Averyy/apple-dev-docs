@@ -1,7 +1,8 @@
 # init(imageAt:constraint:options:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct image feature value from an image on disk, using a model specified image constraint. Orientation is read from Exif if avaiable
 
@@ -18,6 +19,10 @@ Construct image feature value from an image on disk, using a model specified ima
 
 ```swift
 convenience init(imageAt url: URL, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) featureValueWithImageAtURL:(NSURL *) url constraint:(MLImageConstraint *) constraint options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 

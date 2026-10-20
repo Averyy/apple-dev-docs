@@ -1,7 +1,8 @@
 # isBidirectional
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the connection is bidirectional. If false, pathfinds will only allow going from startPoint to endPoint. If true, pathfinds will allow going in both directions.
 
@@ -21,9 +22,10 @@ var isBidirectional: Bool
 
 ## See Also
 
-- [var startPoint: SIMD3<Float>](navigationmeshresource/offmeshconnection/startpoint.md)
+### Defining the path
+- [var startPoint: SIMD3<Float>](./startpoint.md)
   The start point of the off-mesh connection.
-- [var endPoint: SIMD3<Float>](navigationmeshresource/offmeshconnection/endpoint.md)
+- [var endPoint: SIMD3<Float>](./endpoint.md)
   The end point of the off-mesh connection.
 
 

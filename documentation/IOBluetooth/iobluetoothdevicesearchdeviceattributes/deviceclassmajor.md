@@ -1,15 +1,20 @@
 # deviceClassMajor
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var deviceClassMajor: BluetoothDeviceClassMajor
+```
+
+```c
+BluetoothDeviceClassMajor deviceClassMajor;
 ```
 
 

@@ -1,7 +1,8 @@
 # MLModelErrorDomain
 
 **Framework**: Core ML  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Core ML errors.
 
@@ -20,11 +21,16 @@ The domain for Core ML errors.
 let MLModelErrorDomain: String
 ```
 
+```c
+extern NSString * const MLModelErrorDomain;
+```
+
 ## See Also
 
-- [struct MLModelError](mlmodelerror-swift.struct.md)
+### Model errors
+- [struct MLModelError](./mlmodelerror-swift.struct.md)
   Information about a Core ML model error.
-- [MLModelError.Code](mlmodelerror-swift.struct/code.md)
+- [MLModelError.Code](./mlmodelerror-swift.struct/code.md)
   Information about a Core ML model error.
 
 

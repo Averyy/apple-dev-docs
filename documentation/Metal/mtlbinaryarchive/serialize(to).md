@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes the contents of the archive to a file.
@@ -18,6 +19,10 @@ Writes the contents of the archive to a file.
 
 ```swift
 func serialize(to url: URL) throws
+```
+
+```objc
+- (BOOL) serializeToURL:(NSURL *) url error:(NSError **) error;
 ```
 
 #### Discussion

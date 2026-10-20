@@ -1,6 +1,7 @@
 # handlesOverflow
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Adds the “MORE” label to a description.
 
@@ -8,20 +9,21 @@ Adds the “MORE” label to a description.
 
 Use the `handlesOverflow` attribute to enable a `description` element to become focusable and display the “MORE” label when the inner text does not fit in the displayable area.
 
-##### Values for Handlesoverflow
+##### Values for handlesOverflow
 
 - **`false`**: Boolean value that indicates that the description element is not focusable.
 - **`true`**: Boolean value that indicates that the element is focusable and displays the “MORE” tag when needed.
 
-##### Elements That Use Handlesoverflow
+##### Elements that Use handlesOverflow
 
-- [`description`](description.md)
+- [description](./description.md)
 
 ## See Also
 
-- [autoHighlight](autohighlight.md)
+### Focus Attributes
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [disabled](disabled.md)
+- [disabled](./disabled.md)
   Sets an element as unfocusable.
 
 

@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the (singleton) instance of the shared remote layer server.
 
@@ -13,6 +14,10 @@ Returns the (singleton) instance of the shared remote layer server.
 
 ```swift
 class func shared() -> CARemoteLayerServer
+```
+
+```objc
++ (CARemoteLayerServer *) sharedServer;
 ```
 
 

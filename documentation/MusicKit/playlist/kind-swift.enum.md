@@ -1,7 +1,8 @@
 # Playlist.Kind
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available kinds of playlists.
 
@@ -23,26 +24,26 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [Playlist.Kind.editorial](playlist/kind-swift.enum/editorial.md)
+- [Playlist.Kind.editorial](./kind-swift.enum/editorial.md)
   Indicates that the playlist was created by an Apple Music curator.
-- [Playlist.Kind.external](playlist/kind-swift.enum/external.md)
+- [Playlist.Kind.external](./kind-swift.enum/external.md)
   Indicates that the playlist was created by an external curator.
-- [Playlist.Kind.personalMix](playlist/kind-swift.enum/personalmix.md)
+- [Playlist.Kind.personalMix](./kind-swift.enum/personalmix.md)
   Indicates that the playlist is a personalized playlist for an Apple Music user.
-- [Playlist.Kind.replay](playlist/kind-swift.enum/replay.md)
+- [Playlist.Kind.replay](./kind-swift.enum/replay.md)
   Indicates that the playlist is a personalized Replay playlist for an Apple Music user.
-- [Playlist.Kind.userShared](playlist/kind-swift.enum/usershared.md)
+- [Playlist.Kind.userShared](./kind-swift.enum/usershared.md)
   Indicates that the playlist was created and shared by an Apple Music user.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

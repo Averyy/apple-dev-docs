@@ -1,7 +1,8 @@
 # school
 
 **Framework**: RelevanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person’s inferred school location.
 
@@ -22,11 +23,12 @@ static var school: RelevantContext.InferredLocation { get }
 
 ## See Also
 
-- [static var commute: RelevantContext.InferredLocation](relevantcontext/inferredlocation/commute.md)
+### Conditions
+- [static var commute: RelevantContext.InferredLocation](./commute.md)
   A person’s commute between two inferred locations.
-- [static var home: RelevantContext.InferredLocation](relevantcontext/inferredlocation/home.md)
+- [static var home: RelevantContext.InferredLocation](./home.md)
   A person’s inferred home location.
-- [static var work: RelevantContext.InferredLocation](relevantcontext/inferredlocation/work.md)
+- [static var work: RelevantContext.InferredLocation](./work.md)
   A person’s inferred work location.
 
 

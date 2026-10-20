@@ -1,7 +1,8 @@
 # VNDetectContoursRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that detects the contours of the edges of an image.
 
@@ -19,40 +20,44 @@ A request that detects the contours of the edges of an image.
 class VNDetectContoursRequest
 ```
 
+```objc
+@interface VNDetectContoursRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Configuring the Request
-- [var contrastAdjustment: Float](vndetectcontoursrequest/contrastadjustment.md)
+- [var contrastAdjustment: Float](./vndetectcontoursrequest/contrastadjustment.md)
   The amount by which to adjust the image contrast.
-- [var contrastPivot: NSNumber?](vndetectcontoursrequest/contrastpivot.md)
+- [var contrastPivot: NSNumber?](./vndetectcontoursrequest/contrastpivot.md)
   The pixel value to use as a pivot for the contrast.
-- [var detectsDarkOnLight: Bool](vndetectcontoursrequest/detectsdarkonlight.md)
+- [var detectsDarkOnLight: Bool](./vndetectcontoursrequest/detectsdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background to aid in detection.
-- [var maximumImageDimension: Int](vndetectcontoursrequest/maximumimagedimension.md)
+- [var maximumImageDimension: Int](./vndetectcontoursrequest/maximumimagedimension.md)
   The maximum image dimension to use for contour detection.
-- [var detectDarkOnLight: Bool](vndetectcontoursrequest/detectdarkonlight.md)
+- [var detectDarkOnLight: Bool](./vndetectcontoursrequest/detectdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background.
 ### Accessing the Results
-- [var results: [VNContoursObservation]?](vndetectcontoursrequest/results.md)
+- [var results: [VNContoursObservation]?](./vndetectcontoursrequest/results.md)
   The results of the request to detect contours.
-- [class VNContoursObservation](vncontoursobservation.md)
+- [class VNContoursObservation](./vncontoursobservation.md)
   An object that represents the detected contours in an image.
 ### Identifying Request Revisions
-- [var VNDetectContourRequestRevision1: Int](vndetectcontourrequestrevision1.md)
+- [var VNDetectContourRequestRevision1: Int](./vndetectcontourrequestrevision1.md)
   A constant for specifying revision 1 of the contours detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

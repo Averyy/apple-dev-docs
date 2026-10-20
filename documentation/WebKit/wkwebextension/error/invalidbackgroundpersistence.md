@@ -1,7 +1,8 @@
 # invalidBackgroundPersistence
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the extension specified background persistence that was not compatible with the platform or features requested.
 

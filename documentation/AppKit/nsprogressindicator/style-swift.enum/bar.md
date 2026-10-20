@@ -1,12 +1,13 @@
 # NSProgressIndicator.Style.bar
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rectangular indicator that can be determinate or indeterminate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A rectangular indicator that can be determinate or indeterminate.
 case bar
 ```
 
+```c
+NSProgressIndicatorStyleBar
+```
+
 ## See Also
 
-- [NSProgressIndicator.Style.spinning](nsprogressindicator/style-swift.enum/spinning.md)
+### Constants
+- [NSProgressIndicator.Style.spinning](./spinning.md)
   A small circular indicator that can be determinate or indeterminate.
 
 

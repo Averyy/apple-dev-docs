@@ -1,7 +1,8 @@
 # dependentLocalities
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of common names for the local area or neighborhood of the place.
 
@@ -10,7 +11,7 @@ An array of common names for the local area or neighborhood of the place.
 
 ## Declaration
 
-```swift
+```
 dependentLocalities: string[] | null;
 ```
 

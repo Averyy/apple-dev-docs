@@ -1,7 +1,8 @@
 # havingPredicate
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate used to filter rows being returned by a query containing a GROUP BY directive.
 
@@ -10,7 +11,7 @@ The predicate used to filter rows being returned by a query containing a GROUP B
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,21 @@ The predicate used to filter rows being returned by a query containing a GROUP B
 var havingPredicate: NSPredicate? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSPredicate * havingPredicate;
+```
+
 #### Discussion
 
-If a `havingPredicate` value is supplied, the predicate will be run after. Specifying a `havingPredicate` requires that [`propertiesToGroupBy`](nsfetchrequest/propertiestogroupby.md) also be specified.
+If a `havingPredicate` value is supplied, the predicate will be run after. Specifying a `havingPredicate` requires that [`propertiesToGroupBy`](./propertiestogroupby.md) also be specified.
 
 ## See Also
 
-- [class NSFetchRequest](nsfetchrequest.md)
+### Related Documentation
+- [class NSFetchRequest](../nsfetchrequest.md)
   A description of search criteria used to retrieve data from a persistent store.
-- [var propertiesToGroupBy: [Any]?](nsfetchrequest/propertiestogroupby.md)
+### Grouping and Filtering Dictionary Results
+- [var propertiesToGroupBy: [Any]?](./propertiestogroupby.md)
   An array of objects that indicates how data should be grouped before a select statement is run in a SQL database.
 
 

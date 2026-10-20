@@ -1,7 +1,8 @@
 # LASecret
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Data that’s protected by a persisted right.
 
@@ -18,33 +19,38 @@ Data that’s protected by a persisted right.
 class LASecret
 ```
 
+```objc
+@interface LASecret : NSObject
+```
+
 #### Overview
 
-You create [`LASecret`](lasecret.md) instances when you store an [`LAPersistedRight`](lapersistedright.md); you can’t create them directly.
+You create [`LASecret`](./lasecret.md) instances when you store an [`LAPersistedRight`](./lapersistedright.md); you can’t create them directly.
 
 ## Topics
 
 ### Loading secret data
-- [func loadData(completion: (Data?, (any Error)?) -> Void)](lasecret/loaddata(completion:).md)
+- [func loadData(completion: (Data?, (any Error)?) -> Void)](./lasecret/loaddata%28completion%29.md)
   Retrieves data stored in a secret.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class LARightStore](larightstore.md)
+### Persistence
+- [class LARightStore](./larightstore.md)
   A container for data protected by a right.
-- [class LAPersistedRight](lapersistedright.md)
+- [class LAPersistedRight](./lapersistedright.md)
   A right that gates access to a key and a secret.
 
 

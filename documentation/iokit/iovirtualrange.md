@@ -1,7 +1,8 @@
 # IOVirtualRange
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -16,14 +17,20 @@
 struct IOVirtualRange
 ```
 
+```c
+typedef struct IOVirtualRange {
+    ...
+} IOVirtualRange;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](iovirtualrange/1514435-init.md)
-- [init(address: IOVirtualAddress, length: IOByteCount)](iovirtualrange/1514575-init.md)
+- [init()](./iovirtualrange/api-1514435-init.md)
+- [init(address: IOVirtualAddress, length: IOByteCount)](./iovirtualrange/api-1514575-init.md)
 ### Instance Properties
-- [var address: IOVirtualAddress](iovirtualrange/1514871-address.md)
-- [var length: IOByteCount](iovirtualrange/1514469-length.md)
+- [var address: IOVirtualAddress](./iovirtualrange/api-1514871-address.md)
+- [var length: IOByteCount](./iovirtualrange/api-1514469-length.md)
 
 
 ---

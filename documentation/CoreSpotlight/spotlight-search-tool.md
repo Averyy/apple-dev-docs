@@ -1,56 +1,57 @@
 # Spotlight search tool
 
-**Framework**: Core Spotlight
+**Framework**: Core Spotlight  
+**Role**: API Collection
 
 Make your app’s indexed content available to the system’s Foundation models as additional context to use when answering prompts.
 
 #### Overview
 
-Your app’s Spotlight search index provides fast access to your app’s content when you need to find something. The [`SpotlightSearchTool`](spotlightsearchtool.md) provides an efficient way for the Foundation Models framework to access the content in that index and use it to answer prompts. Include this tool in the Foundation Models session you use to run prompts that require your app’s custom content. Configure the search tool as needed to customize its behavior or the search behaviors.
+Your app’s Spotlight search index provides fast access to your app’s content when you need to find something. The [`SpotlightSearchTool`](./spotlightsearchtool.md) provides an efficient way for the Foundation Models framework to access the content in that index and use it to answer prompts. Include this tool in the Foundation Models session you use to run prompts that require your app’s custom content. Configure the search tool as needed to customize its behavior or the search behaviors.
 
 ## Topics
 
 ### Essentials
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
   Make the content you index for Spotlight available to Foundation models to help generate responses to prompts.
-- [Searching indexed content with natural language](searching-indexed-content-with-natural-language.md)
+- [Searching indexed content with natural language](./searching-indexed-content-with-natural-language.md)
   Give a language model access to your app’s Core Spotlight index to enable natural-language queries over searchable content.
 ### Tool configuration
-- [struct SpotlightSearchTool](spotlightsearchtool.md)
+- [struct SpotlightSearchTool](./spotlightsearchtool.md)
   A tool you use to make your app’s custom data available to Foundation Models.
-- [SpotlightSearchTool.Configuration](spotlightsearchtool/configuration-swift.struct.md)
+- [SpotlightSearchTool.Configuration](./spotlightsearchtool/configuration-swift.struct.md)
   The configuration data to use when creating a Spotlight search tool.
 ### Data sources
-- [struct SearchSource](searchsource.md)
+- [struct SearchSource](./searchsource.md)
   A source of data for Spotlight to search.
-- [struct CoreSpotlightSource](corespotlightsource.md)
+- [struct CoreSpotlightSource](./corespotlightsource.md)
   A search source that retrieves data from the app’s Spotlight index.
-- [struct FileSource](filesource.md)
+- [struct FileSource](./filesource.md)
   A search source that retrieves indexed metadata from files and directories visible to Spotlight.
-- [struct SearchableItemAttribute](searchableitemattribute.md)
+- [struct SearchableItemAttribute](./searchableitemattribute.md)
   An attribute from a content item that the Spotlight search tool can include in search results.
 ### Tool customization
-- [protocol CustomStage](customstage.md)
+- [protocol CustomStage](./customstage.md)
   A custom processing stage the Spotlight search tool uses to identify search results.
-- [struct SearchPipelineData](searchpipelinedata.md)
+- [struct SearchPipelineData](./searchpipelinedata.md)
   The type you use to store the output from a custom stage.
-- [enum SearchPipelineDataType](searchpipelinedatatype.md)
+- [enum SearchPipelineDataType](./searchpipelinedatatype.md)
   Data types that a pipeline stage accepts or produces.
-- [struct ScoredSearchableItem](scoredsearchableitem.md)
+- [struct ScoredSearchableItem](./scoredsearchableitem.md)
   A searchable item paired with a caller-assigned relevance score.
 ### Contact resolution
-- [protocol ContactResolver](contactresolver.md)
+- [protocol ContactResolver](./contactresolver.md)
   An interface you use to help Foundation models resolve references to the person using the app.
-- [struct ResolvedContact](resolvedcontact.md)
+- [struct ResolvedContact](./resolvedcontact.md)
   Contact information to help a search query match references to a person or organization.
 ### Search results
-- [struct SearchCount](searchcount.md)
+- [struct SearchCount](./searchcount.md)
   A scalar count result (e.g., “47 emails from John”).
-- [struct SearchResultsTable](searchresultstable.md)
+- [struct SearchResultsTable](./searchresultstable.md)
   Tabulated result data — rows with typed columns for display or spreadsheet export.
-- [struct SearchStatistic](searchstatistic.md)
+- [struct SearchStatistic](./searchstatistic.md)
   A scalar statistic derived from search results (sum, average, max, min, median, stddev).
-- [struct SearchTextResult](searchtextresult.md)
+- [struct SearchTextResult](./searchtextresult.md)
   LLM-generated text summary or analysis from a pipeline stage.
 
 

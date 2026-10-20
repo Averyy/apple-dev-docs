@@ -1,7 +1,8 @@
 # typePString
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Pascal string—unsigned length byte followed by Mac OS Roman characters. Deprecated.
 

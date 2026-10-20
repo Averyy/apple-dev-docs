@@ -2,6 +2,7 @@
 
 **Framework**: HealthKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Initiates a query that returns its results using an asynchronous sequence.
@@ -11,7 +12,7 @@ Initiates a query that returns its results using an asynchronous sequence.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,11 +23,11 @@ func results(for healthStore: HKHealthStore) -> Self.Sequence
 
 ## Mentions
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
+- [Running Queries with Swift Concurrency](../running-queries-with-swift-concurrency.md)
 
 #### Discussion
 
-The adopting type’s [`Sequence`](hkasyncsequencequery/sequence.md) associated type specifies the type of [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) that this method returns. For example, the [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) returns a sequence of [`HKAnchoredObjectQueryDescriptor.Result`](hkanchoredobjectquerydescriptor/result.md) instances.
+The adopting type’s [`Sequence`](./sequence.md) associated type specifies the type of [`AsyncSequence`](../../Swift/asyncsequence.md) that this method returns. For example, the [`HKAnchoredObjectQueryDescriptor`](../hkanchoredobjectquerydescriptor.md) returns a sequence of [`HKAnchoredObjectQueryDescriptor.Result`](../hkanchoredobjectquerydescriptor/result.md) instances.
 
 ```swift
 let anchorDescriptor =
@@ -43,9 +44,9 @@ updateTask = Task {
 }
 ```
 
-Query descriptors for series data, like [`HKQuantitySeriesSampleQueryDescriptor`](hkquantityseriessamplequerydescriptor.md), use an asynchronous sequence to return the high-frequency samples from a condensed sample, for example accessing individual heart rate samples from data recorded during a workout. These sequences have a finite size. When your app iterates over the sequence’s contents, the iteration automatically terminates after you receive all the data.
+Query descriptors for series data, like [`HKQuantitySeriesSampleQueryDescriptor`](../hkquantityseriessamplequerydescriptor.md), use an asynchronous sequence to return the high-frequency samples from a condensed sample, for example accessing individual heart rate samples from data recorded during a workout. These sequences have a finite size. When your app iterates over the sequence’s contents, the iteration automatically terminates after you receive all the data.
 
-Other query descriptors, like [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md), use this method to set up long-running queries that monitor the HealthKit store in the background. These queries continue to send updates using the asynchronous sequence. In these cases, code that iterates over the sequence continues until you cancel the sequence.
+Other query descriptors, like [`HKAnchoredObjectQueryDescriptor`](../hkanchoredobjectquerydescriptor.md), use this method to set up long-running queries that monitor the HealthKit store in the background. These queries continue to send updates using the asynchronous sequence. In these cases, code that iterates over the sequence continues until you cancel the sequence.
 
 ## Parameters
 
@@ -53,7 +54,8 @@ Other query descriptors, like [`HKAnchoredObjectQueryDescriptor`](hkanchoredobje
 
 ## See Also
 
-- [associatedtype Sequence : AsyncSequence](hkasyncsequencequery/sequence.md)
+### Running Queries
+- [associatedtype Sequence : AsyncSequence](./sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(width:height:depth:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new point from the floating-point values.
 

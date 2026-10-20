@@ -1,7 +1,8 @@
 # bestRepresentation(for:context:hints:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the best representation of the image for the specified rectangle using the provided hints.
 
@@ -12,6 +13,10 @@ Returns the best representation of the image for the specified rectangle using t
 
 ```swift
 func bestRepresentation(for rect: NSRect, context referenceContext: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?) -> NSImageRep?
+```
+
+```objc
+- (NSImageRep *) bestRepresentationForRect:(NSRect) rect context:(NSGraphicsContext *) referenceContext hints:(NSDictionary<NSString *,id> *) hints;
 ```
 
 #### Return Value
@@ -26,17 +31,18 @@ The image representation that most closely matches the specified criteria.
 
 ## See Also
 
-- [func addRepresentation(NSImageRep)](nsimage/addrepresentation(_:).md)
+### Working with Representations of Images
+- [func addRepresentation(NSImageRep)](./addrepresentation%28_%29.md)
   Adds the specified image representation object to the image.
-- [func addRepresentations([NSImageRep])](nsimage/addrepresentations(_:).md)
+- [func addRepresentations([NSImageRep])](./addrepresentations%28_%29.md)
   Adds an array of image representation objects to the image.
-- [var representations: [NSImageRep]](nsimage/representations.md)
+- [var representations: [NSImageRep]](./representations.md)
   An array containing all of the image object’s image representations.
-- [func removeRepresentation(NSImageRep)](nsimage/removerepresentation(_:).md)
+- [func removeRepresentation(NSImageRep)](./removerepresentation%28_%29.md)
   Removes and releases the specified image representation.
-- [NSImageRep.HintKey](nsimagerep/hintkey.md)
+- [NSImageRep.HintKey](../nsimagerep/hintkey.md)
   Constants for the keys to include in a hints dictionary when drawing the image.
-- [NSImage.LayoutDirection](nsimage/layoutdirection.md)
+- [NSImage.LayoutDirection](./layoutdirection.md)
   Constants that describe the layout direction for the image.
 
 

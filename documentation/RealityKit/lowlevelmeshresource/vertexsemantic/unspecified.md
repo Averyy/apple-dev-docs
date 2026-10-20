@@ -1,7 +1,8 @@
 # LowLevelMeshResource.VertexSemantic.unspecified
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A semantic that doesn’t specify the role of the vertex.
 

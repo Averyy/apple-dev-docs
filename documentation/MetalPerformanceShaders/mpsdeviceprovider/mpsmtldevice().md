@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -9,13 +10,17 @@
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func mpsMTLDevice() -> (any MTLDevice)!
+```
+
+```objc
+- (id<MTLDevice>) mpsMTLDevice;
 ```
 
 

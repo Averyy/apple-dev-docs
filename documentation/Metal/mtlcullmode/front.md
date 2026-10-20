@@ -1,7 +1,8 @@
 # MTLCullMode.front
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Culls front-facing primitives.
 
@@ -10,7 +11,7 @@ Culls front-facing primitives.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ Culls front-facing primitives.
 case front
 ```
 
+```c
+MTLCullModeFront
+```
+
 ## See Also
 
-- [MTLCullMode.none](mtlcullmode/none.md)
+### Cull modes
+- [MTLCullMode.none](./none.md)
   Does not cull any primitives.
-- [MTLCullMode.back](mtlcullmode/back.md)
+- [MTLCullMode.back](./back.md)
   Culls back-facing primitives.
 
 

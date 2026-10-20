@@ -1,7 +1,8 @@
 # maneuverTravelEstimates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 maneuverTravelEstimates is a CPTravelEstimates object, describing the travel estimates for the first maneuver in the list of current maneuvers.
 
@@ -15,6 +16,10 @@ maneuverTravelEstimates is a CPTravelEstimates object, describing the travel est
 ```swift
 @NSCopying
 var maneuverTravelEstimates: CPTravelEstimates { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CPTravelEstimates * maneuverTravelEstimates;
 ```
 
 

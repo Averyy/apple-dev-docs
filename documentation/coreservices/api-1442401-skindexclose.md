@@ -1,7 +1,8 @@
 # SKIndexClose(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Closes an index.
 
@@ -14,9 +15,13 @@ Closes an index.
 func SKIndexClose(_ inIndex: SKIndex!)
 ```
 
+```c
+void SKIndexClose(SKIndexRef inIndex);
+```
+
 #### Discussion
 
-When your application no longer needs an index that it has opened or created, call [`SKIndexClose(_:)`](1442401-skindexclose.md). Calling this function is equivalent to calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) on an index.
+When your application no longer needs an index that it has opened or created, call [`SKIndexClose(_:)`](./api-1442401-skindexclose.md). Calling this function is equivalent to calling [`CFRelease`](../CoreFoundation/cfrelease.md) on an index.
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
@@ -26,19 +31,20 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 ## See Also
 
-- [func SKIndexCreateWithURL(CFURL!, CFString!, SKIndexType, CFDictionary!) -> Unmanaged<SKIndex>!](1446111-skindexcreatewithurl.md)
+### Creating, Opening, and Closing Indexes
+- [func SKIndexCreateWithURL(CFURL!, CFString!, SKIndexType, CFDictionary!) -> Unmanaged<SKIndex>!](./api-1446111-skindexcreatewithurl.md)
   Creates a named index in a file whose location is specified with a CFURL object.
-- [func SKIndexCreateWithMutableData(CFMutableData!, CFString!, SKIndexType, CFDictionary!) -> Unmanaged<SKIndex>!](1447500-skindexcreatewithmutabledata.md)
+- [func SKIndexCreateWithMutableData(CFMutableData!, CFString!, SKIndexType, CFDictionary!) -> Unmanaged<SKIndex>!](./api-1447500-skindexcreatewithmutabledata.md)
   Creates a named index stored in a `CFMutableDataRef` object.
-- [func SKIndexOpenWithData(CFData!, CFString!) -> Unmanaged<SKIndex>!](1446398-skindexopenwithdata.md)
+- [func SKIndexOpenWithData(CFData!, CFString!) -> Unmanaged<SKIndex>!](./api-1446398-skindexopenwithdata.md)
   Opens an existing, named index for searching only.
-- [func SKIndexOpenWithMutableData(CFMutableData!, CFString!) -> Unmanaged<SKIndex>!](1444201-skindexopenwithmutabledata.md)
+- [func SKIndexOpenWithMutableData(CFMutableData!, CFString!) -> Unmanaged<SKIndex>!](./api-1444201-skindexopenwithmutabledata.md)
   Opens an existing, named index for searching and updating.
-- [func SKIndexOpenWithURL(CFURL!, CFString!, Bool) -> Unmanaged<SKIndex>!](1449017-skindexopenwithurl.md)
+- [func SKIndexOpenWithURL(CFURL!, CFString!, Bool) -> Unmanaged<SKIndex>!](./api-1449017-skindexopenwithurl.md)
   Opens an existing, named index stored in a file whose location is specified with a CFURL object.
-- [func SKIndexGetIndexType(SKIndex!) -> SKIndexType](1442236-skindexgetindextype.md)
+- [func SKIndexGetIndexType(SKIndex!) -> SKIndexType](./api-1442236-skindexgetindextype.md)
   Gets the category of an index.
-- [func SKIndexGetTypeID() -> CFTypeID](1450223-skindexgettypeid.md)
+- [func SKIndexGetTypeID() -> CFTypeID](./api-1450223-skindexgettypeid.md)
   Gets the type identifier for Search Kit indexes.
 
 

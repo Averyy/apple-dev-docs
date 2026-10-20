@@ -1,7 +1,8 @@
 # createMutableRawSpan()
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return a MutableRawSpan to the underlying bytes of the data buffer.
 

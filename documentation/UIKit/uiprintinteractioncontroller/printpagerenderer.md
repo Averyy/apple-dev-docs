@@ -1,7 +1,8 @@
 # printPageRenderer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that draws pages of printable content when UIKit requests it.
 
@@ -17,21 +18,26 @@ An object that draws pages of printable content when UIKit requests it.
 var printPageRenderer: UIPrintPageRenderer? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIPrintPageRenderer * printPageRenderer;
+```
+
 #### Discussion
 
-The object assigned to this property must be an instance of a custom subclass of [`UIPrintPageRenderer`](uiprintpagerenderer.md). The `UIPrintInteractionController` class retains the page-renderer object and releases it at the end of the print job. The default value is `nil`.
+The object assigned to this property must be an instance of a custom subclass of [`UIPrintPageRenderer`](../uiprintpagerenderer.md). The `UIPrintInteractionController` class retains the page-renderer object and releases it at the end of the print job. The default value is `nil`.
 
-If you set this property, `UIPrintInteractionController` sets the [`printingItems`](uiprintinteractioncontroller/printingitems.md), [`printingItem`](uiprintinteractioncontroller/printingitem.md), [`printFormatter`](uiprintinteractioncontroller/printformatter.md) properties to `nil`. (Only one of these properties can be set for a print job.)
+If you set this property, `UIPrintInteractionController` sets the [`printingItems`](./printingitems.md), [`printingItem`](./printingitem.md), [`printFormatter`](./printformatter.md) properties to `nil`. (Only one of these properties can be set for a print job.)
 
-If this property is set and the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true)—and the rendered content is greater than one page—the printing options include the control for selecting a page range.
+If this property is set and the [`showsPageRange`](./showspagerange.md) property is set to [`true`](../../Swift/true.md)—and the rendered content is greater than one page—the printing options include the control for selecting a page range.
 
 ## See Also
 
-- [var printingItem: Any?](uiprintinteractioncontroller/printingitem.md)
+### Providing the source of printable content
+- [var printingItem: Any?](./printingitem.md)
   A single ready-to-print object.
-- [var printingItems: [Any]?](uiprintinteractioncontroller/printingitems.md)
+- [var printingItems: [Any]?](./printingitems.md)
   An array of ready-to-print objects.
-- [var printFormatter: UIPrintFormatter?](uiprintinteractioncontroller/printformatter.md)
+- [var printFormatter: UIPrintFormatter?](./printformatter.md)
   An object that lays out the content of pages according to the kind of content.
 
 

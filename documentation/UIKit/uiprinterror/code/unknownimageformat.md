@@ -1,7 +1,8 @@
 # UIPrintError.Code.unknownImageFormat
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An image is in a format that UIKit doesn’t recognize for printing.
 
@@ -17,13 +18,18 @@ An image is in a format that UIKit doesn’t recognize for printing.
 case unknownImageFormat
 ```
 
+```c
+UIPrintUnknownImageFormatError
+```
+
 ## See Also
 
-- [UIPrintError.Code.notAvailable](uiprinterror/code/notavailable.md)
+### Error codes
+- [UIPrintError.Code.notAvailable](./notavailable.md)
   The device doesn’t support printing.
-- [UIPrintError.Code.noContent](uiprinterror/code/nocontent.md)
+- [UIPrintError.Code.noContent](./nocontent.md)
   UIKit hasn’t assigned a print formatter, page renderer, or printing item to print.
-- [UIPrintError.Code.jobFailed](uiprinterror/code/jobfailed.md)
+- [UIPrintError.Code.jobFailed](./jobfailed.md)
   An internal error occurred with the print job.
 
 

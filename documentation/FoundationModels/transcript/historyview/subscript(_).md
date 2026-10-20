@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation Models  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the subsequence of entries within the specified bounds.
 
@@ -17,6 +18,12 @@ Accesses the subsequence of entries within the specified bounds.
 
 ```swift
 subscript(bounds: Range<Transcript.HistoryView.Index>) -> Transcript.HistoryView { get set }
+```
+
+**Other overloads**:
+
+```swift
+subscript(position: Transcript.HistoryView.Index) -> Transcript.Entry { get set }
 ```
 
 ## Parameters

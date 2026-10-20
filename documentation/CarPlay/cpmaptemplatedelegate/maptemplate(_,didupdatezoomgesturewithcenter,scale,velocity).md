@@ -1,7 +1,8 @@
 # mapTemplate(_:didUpdateZoomGestureWithCenter:scale:velocity:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a person is zooming on the map.
 
@@ -16,9 +17,13 @@ Tells the delegate that a person is zooming on the map.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didUpdateZoomGestureWithCenter center: CGPoint, scale: CGFloat, velocity: CGFloat)
 ```
 
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didUpdateZoomGestureWithCenter:(CGPoint) center scale:(CGFloat) scale velocity:(CGFloat) velocity;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 - `center`: A `CGPoint` that indicates the center point of the zoom.
 - `scale`: A `CGFloat` that indicates the scale factor relative to the zoom gesture in screen coordinates.
 - `velocity`: The velocity of the zoom gesture in scale factor per second.

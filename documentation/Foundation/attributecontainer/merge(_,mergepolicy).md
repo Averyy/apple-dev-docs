@@ -1,7 +1,8 @@
 # merge(_:mergePolicy:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges the container’s attributes with those in another attribute container.
 
@@ -27,9 +28,10 @@ mutating func merge(_ other: AttributeContainer, mergePolicy: AttributedString.A
 
 ## See Also
 
-- [func merging(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy) -> AttributeContainer](attributecontainer/merging(_:mergepolicy:).md)
+### Modifying Attributes
+- [func merging(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy) -> AttributeContainer](./merging%28_,mergepolicy%29.md)
   Returns an attribute container by merging the container’s attributes with those in another attribute container.
-- [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
+- [AttributedString.AttributeMergePolicy](../attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
 
 

@@ -1,7 +1,8 @@
 # urlCache
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL cache for providing cached responses to requests within the session.
 
@@ -20,9 +21,13 @@ The URL cache for providing cached responses to requests within the session.
 var urlCache: URLCache? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSURLCache * URLCache;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
@@ -38,7 +43,8 @@ For ephemeral sessions, the default value is a private cache object that stores 
 
 ## See Also
 
-- [var requestCachePolicy: NSURLRequest.CachePolicy](urlsessionconfiguration/requestcachepolicy.md)
+### Setting caching policies
+- [var requestCachePolicy: NSURLRequest.CachePolicy](./requestcachepolicy.md)
   A predefined constant that determines when to return a response from the cache.
 
 

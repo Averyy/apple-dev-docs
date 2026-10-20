@@ -1,7 +1,8 @@
 # SCShareableContentInfo
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance that provides information for the content in a given stream.
 
@@ -15,39 +16,44 @@ An instance that provides information for the content in a given stream.
 class SCShareableContentInfo
 ```
 
+```objc
+@interface SCShareableContentInfo : NSObject
+```
+
 ## Topics
 
 ### Shared content properties
-- [var contentRect: CGRect](scshareablecontentinfo/contentrect.md)
+- [var contentRect: CGRect](./scshareablecontentinfo/contentrect.md)
   The size and location of content for the stream.
-- [var pointPixelScale: Float](scshareablecontentinfo/pointpixelscale.md)
+- [var pointPixelScale: Float](./scshareablecontentinfo/pointpixelscale.md)
   The scaling from points to output pixel resolution for the stream.
-- [var style: SCShareableContentStyle](scshareablecontentinfo/style.md)
+- [var style: SCShareableContentStyle](./scshareablecontentinfo/style.md)
   The current presentation style of the stream.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCShareableContent](scshareablecontent.md)
+### Shareable content
+- [class SCShareableContent](./scshareablecontent.md)
   An instance that represents a set of displays, apps, and windows that your app can capture.
-- [enum SCShareableContentStyle](scshareablecontentstyle.md)
+- [enum SCShareableContentStyle](./scshareablecontentstyle.md)
   The style of content presented in a stream.
-- [class SCDisplay](scdisplay.md)
+- [class SCDisplay](./scdisplay.md)
   An instance that represents a display device.
-- [class SCRunningApplication](scrunningapplication.md)
+- [class SCRunningApplication](./scrunningapplication.md)
   An instance that represents an app running on a device.
-- [class SCWindow](scwindow.md)
+- [class SCWindow](./scwindow.md)
   An instance that represents an onscreen window.
 
 

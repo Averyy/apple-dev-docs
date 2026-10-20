@@ -6,26 +6,9 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.stream_line_reader
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.stream_line_reader.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.stream_line_reader
-
- Table of contents 
-
-## Contents
-
-# mlx.data.stream_line_reader
-
 **mlx.data.stream_line_reader(*file: object*, *key: str*, *unzip: bool = False*, ***, *local_prefix: str = ''*, *file_fetcher: mlx::data::core::FileFetcher = None*, *file_fetcher_handle: mlx::data::core::FileFetcherHandle = None*) → mlx.data._c.Stream**
 : Stream lines from a file.
-Similar to [stream_csv_reader()](mlx.data.stream_csv_reader.html#mlx.data.stream_csv_reader), a file can be a filename or a
+Similar to [stream_csv_reader()](mlx.data.stream_csv_reader.md#mlx.data.stream_csv_reader), a file can be a filename or a
 python object with a `read()` and a `seek()`.
 
 Note
@@ -43,5 +26,3 @@ read the csv files possibly from a remote location.
 **file_fetcher_handle** (*mlx.data.core.FileFetcherHandle**, **optional*) – A
 handle to ensure that the file is kept on disk if a stream is
 passed instead of a filename.
-
-** Contents

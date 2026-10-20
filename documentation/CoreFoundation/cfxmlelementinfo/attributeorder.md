@@ -1,17 +1,22 @@
 # attributeOrder
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array specifying the order in which the attributes appeared in the XML document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var attributeOrder: Unmanaged<CFArray>!
+```
+
+```c
+CFArrayRef attributeOrder;
 ```
 
 

@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes progress tracking.
 
@@ -20,19 +21,24 @@ Resumes progress tracking.
 func resume()
 ```
 
+```objc
+- (void) resume;
+```
+
 #### Discussion
 
-This method invokes the block for [`resumingHandler`](progress/resuminghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](progress/ispaused.md) property return [`false`](https://developer.apple.com/documentation/swift/false).
+This method invokes the block for [`resumingHandler`](./resuminghandler.md), if there is one, and ensures that any subsequent reads of the [`isPaused`](./ispaused.md) property return [`false`](../../Swift/false.md).
 
 If the receiver has suboperations, the system resumes their progress as well.
 
 ## See Also
 
-- [func cancel()](progress/cancel.md)
+### Controlling Progress
+- [func cancel()](./cancel%28%29.md)
   Cancels progress tracking.
-- [func pause()](progress/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses progress tracking.
-- [var resumingHandler: (() -> Void)?](progress/resuminghandler.md)
+- [var resumingHandler: (() -> Void)?](./resuminghandler.md)
   The block to invoke when progress resumes.
 
 

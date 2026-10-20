@@ -1,6 +1,7 @@
 # Supporting languages and locales with Foundation Models
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Generate content in the language people prefer when they interact with your app.
 
@@ -15,9 +16,9 @@ When you enhance your app with multilingual support, generate content in the lan
 - Determining the language or languages a person wants to use when they interact with your app.
 - Gracefully handling languages that Apple Intelligence doesn’t support.
 
-For more information about the languages and locales that Apple Intelligence supports, see the “Supported languages” section in [`How to get Apple Intelligence`](https://developer.apple.comhttps://support.apple.com/en-us/121115).
+For more information about the languages and locales that Apple Intelligence supports, see the “Supported languages” section in [How to get Apple Intelligence](https://support.apple.com/en-us/121115).
 
-#### Prompt the Model in the Language You Prefer
+#### Prompt the model in the language you prefer
 
 Write your app’s built-in prompts in the language with which you normally write code, if Apple Intelligence supports that language. Translate your prompts into a supported language if your preferred language isn’t supported. In the code below, *all* inputs need to be in supported language for the model to understand, including all `Generable` types and descriptions:
 
@@ -43,11 +44,11 @@ struct CatProfile {
 
 Because the framework treats `Generable` types as model inputs, the names of properties like `age` or `profile` are just as important as the `@Guide` descriptions for helping the model understand your request.
 
-#### Check a Persons Language Settings for Your App
+#### Check a person’s language settings for your app
 
 People can use the Settings app on their device to configure the language they prefer to use on a per-app basis, which might differ from their default language. If your app supports a language that Apple Intelligence doesn’t, you need to verify that the current language setting of your app is supported before you call the model. Keep in mind that language support improves over time in newer model and OS versions. Thus, someone using your app with an older OS may not have the latest language support.
 
-Before you call the model, run [`supportsLocale(_:)`](systemlanguagemodel/supportslocale(_:).md) to verify the support for a locale. By default, the method uses [`current`](https://developer.apple.com/documentation/foundation/locale/current), which takes into account a person’s current language and app-specific settings. This method returns true if the model supports this locale, or if this locale is considered similar enough to a supported locale, such as `en-AU` and `en-NZ`:
+Before you call the model, run [`supportsLocale(_:)`](./systemlanguagemodel/supportslocale%28_%29.md) to verify the support for a locale. By default, the method uses [`current`](../Foundation/locale/current.md), which takes into account a person’s current language and app-specific settings. This method returns true if the model supports this locale, or if this locale is considered similar enough to a supported locale, such as `en-AU` and `en-NZ`:
 
 ```swift
 if SystemLanguageModel.default.supportsLocale() {
@@ -55,11 +56,11 @@ if SystemLanguageModel.default.supportsLocale() {
 }
 ```
 
-For advanced use cases where you need full language support details, use [`supportedLanguages`](systemlanguagemodel/supportedlanguages.md) to retrieve a list of languages supported by the on-device model.
+For advanced use cases where you need full language support details, use [`supportedLanguages`](./systemlanguagemodel/supportedlanguages.md) to retrieve a list of languages supported by the on-device model.
 
-#### Handle an Unsupported Language or Locale Errors
+#### Handle an unsupported language or locale errors
 
-When you call [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) on a [`LanguageModelSession`](languagemodelsession.md), the Foundation Models framework checks the language or languages of the input prompt text, and whether your prompt asks the model to respond in any specific language or languages. If the model detects a language it doesn’t support, the session throws [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](languagemodelerror/unsupportedlanguageorlocale(_:).md). Handle the error by communicating to the person using your app that a language in their request is unsupported.
+When you call [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) on a [`LanguageModelSession`](./languagemodelsession.md), the Foundation Models framework checks the language or languages of the input prompt text, and whether your prompt asks the model to respond in any specific language or languages. If the model detects a language it doesn’t support, the session throws [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](./languagemodelerror/unsupportedlanguageorlocale%28_%29.md). Handle the error by communicating to the person using your app that a language in their request is unsupported.
 
 If your app supports languages or locales that Apple Intelligence doesn’t, help people that use your app by:
 
@@ -67,11 +68,11 @@ If your app supports languages or locales that Apple Intelligence doesn’t, hel
 - Disabling your Foundation Models framework feature.
 - Providing an alternative app experience, if possible.
 
-> ❗ **Important**: Guardrails for model input and output safety are only for supported languages and locales. If a prompt contains sensitive content in an unsupported language, which typically is a short phrase mixed-in with text in a supported language, it might not throw a [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](languagemodelerror/unsupportedlanguageorlocale(_:).md) error. If unsupported-language detection fails, the guardrails may also fail to flag that short, unsupported content. For more on guardrails, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
+> ❗ **Important**: Guardrails for model input and output safety are only for supported languages and locales. If a prompt contains sensitive content in an unsupported language, which typically is a short phrase mixed-in with text in a supported language, it might not throw a [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](./languagemodelerror/unsupportedlanguageorlocale%28_%29.md) error. If unsupported-language detection fails, the guardrails may also fail to flag that short, unsupported content. For more on guardrails, see [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md).
 
-#### Use Instructions to Set the Locale and Language
+#### Use Instructions to set the locale and language
 
-For locales other than United States English, you can improve response quality by telling the model which locale to use by detailing a set of [`Instructions`](instructions.md). Start with the *exact* phrase in English. This special phrase comes from the model’s training, and reduces the possibility of hallucinations in multilingual situations:
+For locales other than United States English, you can improve response quality by telling the model which locale to use by detailing a set of [`Instructions`](./instructions.md). Start with the *exact* phrase in English. This special phrase comes from the model’s training, and reduces the possibility of hallucinations in multilingual situations:
 
 ```swift
 func localeInstructions(for locale: Locale = Locale.current) -> String {
@@ -101,11 +102,12 @@ Finally, thoroughly test your instructions to ensure the model is responding in 
 
 ## See Also
 
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+### System language model
+- [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md)
   Identify topics, actions, objects, and emotions in input text with a content tagging model.
-- [class SystemLanguageModel](systemlanguagemodel.md)
+- [class SystemLanguageModel](./systemlanguagemodel.md)
   An on-device Apple Foundation Model capable of text generation tasks.
-- [enum LanguageModelError](languagemodelerror.md)
+- [enum LanguageModelError](./languagemodelerror.md)
   A failure that may occur while generating a response when using any language model.
 
 

@@ -1,7 +1,8 @@
 # typeName
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prim’s type name.
 

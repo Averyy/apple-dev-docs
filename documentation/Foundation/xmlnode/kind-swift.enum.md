@@ -1,9 +1,10 @@
 # XMLNode.Kind
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-`NSXMLNode` declares the following constants of type NSXMLNodeKind for specifying a node’s kind in the initializer methods [`init(kind:)`](xmlnode/init(kind:).md) and [`init(kind:options:)`](xmlnode/init(kind:options:).md):
+`NSXMLNode` declares the following constants of type NSXMLNodeKind for specifying a node’s kind in the initializer methods [`init(kind:)`](./init%28kind%29.md) and [`init(kind:options:)`](./init%28kind,options%29.md):
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,52 +16,57 @@
 enum Kind
 ```
 
+```c
+enum NSXMLNodeKind : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [XMLNode.Kind.invalid](xmlnode/kind-swift.enum/invalid.md)
-  Indicates a node object created without a valid kind being specified (as returned by the [`kind`](xmlnode/kind-swift.property.md) method).
-- [XMLNode.Kind.document](xmlnode/kind-swift.enum/document.md)
+- [XMLNode.Kind.invalid](./kind-swift.enum/invalid.md)
+  Indicates a node object created without a valid kind being specified (as returned by the [`kind`](./kind-swift.property.md) method).
+- [XMLNode.Kind.document](./kind-swift.enum/document.md)
   Specifies a document node.
-- [XMLNode.Kind.element](xmlnode/kind-swift.enum/element.md)
+- [XMLNode.Kind.element](./kind-swift.enum/element.md)
   Specifies an element node.
-- [XMLNode.Kind.attribute](xmlnode/kind-swift.enum/attribute.md)
+- [XMLNode.Kind.attribute](./kind-swift.enum/attribute.md)
   Specifies an attribute node
-- [XMLNode.Kind.namespace](xmlnode/kind-swift.enum/namespace.md)
+- [XMLNode.Kind.namespace](./kind-swift.enum/namespace.md)
   Specifies a namespace node.
-- [XMLNode.Kind.processingInstruction](xmlnode/kind-swift.enum/processinginstruction.md)
+- [XMLNode.Kind.processingInstruction](./kind-swift.enum/processinginstruction.md)
   Specifies a processing-instruction node.
-- [XMLNode.Kind.comment](xmlnode/kind-swift.enum/comment.md)
+- [XMLNode.Kind.comment](./kind-swift.enum/comment.md)
   Specifies a comment node.
-- [XMLNode.Kind.text](xmlnode/kind-swift.enum/text.md)
+- [XMLNode.Kind.text](./kind-swift.enum/text.md)
   Specifies a text node.
-- [XMLNode.Kind.DTDKind](xmlnode/kind-swift.enum/dtdkind.md)
+- [XMLNode.Kind.DTDKind](./kind-swift.enum/dtdkind.md)
   Specifies a document-type declaration (DTD) node.
-- [XMLNode.Kind.entityDeclaration](xmlnode/kind-swift.enum/entitydeclaration.md)
+- [XMLNode.Kind.entityDeclaration](./kind-swift.enum/entitydeclaration.md)
   Specifies an entity-declaration node.
-- [XMLNode.Kind.attributeDeclaration](xmlnode/kind-swift.enum/attributedeclaration.md)
+- [XMLNode.Kind.attributeDeclaration](./kind-swift.enum/attributedeclaration.md)
   Specifies an attribute-list declaration node.
-- [XMLNode.Kind.elementDeclaration](xmlnode/kind-swift.enum/elementdeclaration.md)
+- [XMLNode.Kind.elementDeclaration](./kind-swift.enum/elementdeclaration.md)
   Specifies an element declaration node.
-- [XMLNode.Kind.notationDeclaration](xmlnode/kind-swift.enum/notationdeclaration.md)
+- [XMLNode.Kind.notationDeclaration](./kind-swift.enum/notationdeclaration.md)
   Specifies a notation declaration node.
 ### Initializers
-- [init?(rawValue: UInt)](xmlnode/kind-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./kind-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [XMLNode.Options](xmlnode/options.md)
-  These constants are input and output options for all `NSXMLNode` objects (unless otherwise indicated), including [`XMLDocument`](xmldocument.md) objects. You can specify these options in the `NSXMLNode` methods [`init(kind:options:)`](xmlnode/init(kind:options:).md) and [`xmlString(options:)`](xmlnode/xmlstring(options:).md).
+### Constants
+- [XMLNode.Options](./options.md)
+  These constants are input and output options for all `NSXMLNode` objects (unless otherwise indicated), including [`XMLDocument`](../xmldocument.md) objects. You can specify these options in the `NSXMLNode` methods [`init(kind:options:)`](./init%28kind,options%29.md) and [`xmlString(options:)`](./xmlstring%28options%29.md).
 
 
 ---

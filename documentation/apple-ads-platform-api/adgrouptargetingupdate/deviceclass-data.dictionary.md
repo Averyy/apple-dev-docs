@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.DeviceClass
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Device class targeting (for example, `IPHONE` or `IPAD`).
 
@@ -10,13 +11,13 @@ Device class targeting (for example, `IPHONE` or `IPAD`).
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.DeviceClass
 ```
 
 #### Discussion
 
-Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Applies to App Store campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "deviceClass": {

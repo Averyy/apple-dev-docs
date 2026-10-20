@@ -1,17 +1,22 @@
 # criteria(forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the currently chosen items for a given row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func criteria(forRow row: Int) -> [Any]
+```
+
+```objc
+- (NSArray *) criteriaForRow:(NSInteger) row;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The currently chosen items for row `row`.
 
 #### Discussion
 
-The items returned are the same as those returned by calling the delegate’s [`ruleEditor(_:child:forCriterion:with:)`](nsruleeditordelegate/ruleeditor(_:child:forcriterion:with:).md) method once for each item in the row.
+The items returned are the same as those returned by calling the delegate’s [`ruleEditor(_:child:forCriterion:with:)`](../nsruleeditordelegate/ruleeditor%28_,child,forcriterion,with%29.md) method once for each item in the row.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ The items returned are the same as those returned by calling the delegate’s [`
 
 ## See Also
 
-- [func reloadCriteria()](nsruleeditor/reloadcriteria.md)
+### Providing Data
+- [func reloadCriteria()](./reloadcriteria%28%29.md)
   Instructs the receiver to refetch criteria from its delegate.
-- [func setCriteria([Any], andDisplayValues: [Any], forRowAt: Int)](nsruleeditor/setcriteria(_:anddisplayvalues:forrowat:).md)
+- [func setCriteria([Any], andDisplayValues: [Any], forRowAt: Int)](./setcriteria%28_,anddisplayvalues,forrowat%29.md)
   Modifies the row at a given index to contain the given items and values.
-- [func displayValues(forRow: Int) -> [Any]](nsruleeditor/displayvalues(forrow:).md)
+- [func displayValues(forRow: Int) -> [Any]](./displayvalues%28forrow%29.md)
   Returns the chosen values for a given row.
 
 

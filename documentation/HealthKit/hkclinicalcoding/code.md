@@ -1,7 +1,8 @@
 # code
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clinical code that represents a medical concept inside the coding system.
 
@@ -17,6 +18,10 @@ The clinical code that represents a medical concept inside the coding system.
 
 ```swift
 var code: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * code;
 ```
 
 #### Discussion

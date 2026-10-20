@@ -1,15 +1,16 @@
 # vDSP Compile-Time Version Information
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 The version of vDSP at compile time.
 
 ## Topics
 
 ### Constants
-- [var vDSP_Version0: Int32](vdsp_version0.md)
+- [var vDSP_Version0: Int32](./vdsp_version0.md)
   The vDSP major version.
-- [var vDSP_Version1: Int32](vdsp_version1.md)
+- [var vDSP_Version1: Int32](./vdsp_version1.md)
   The vDSP minor version.
 
 

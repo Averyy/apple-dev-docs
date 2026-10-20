@@ -1,7 +1,8 @@
 # mostFeaturefulSupportedConfiguration
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This object represents the most fully featured configuration that’s supported by both the current host and by this restore image.
 
@@ -15,19 +16,24 @@ This object represents the most fully featured configuration that’s supported 
 var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) VZMacOSConfigurationRequirements * mostFeaturefulSupportedConfiguration;
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
 ## See Also
 
-- [var buildVersion: String](vzmacosrestoreimage/buildversion.md)
+### Getting Information About the Restore Image
+- [var buildVersion: String](./buildversion.md)
   The build version this restore image contains.
-- [var isSupported: Bool](vzmacosrestoreimage/issupported.md)
+- [var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current host supports this restore image.
-- [var operatingSystemVersion: OperatingSystemVersion](vzmacosrestoreimage/operatingsystemversion.md)
+- [var operatingSystemVersion: OperatingSystemVersion](./operatingsystemversion.md)
   The operating system version this restore image contains.
-- [var url: URL](vzmacosrestoreimage/url.md)
+- [var url: URL](./url.md)
   The URL of this restore image.
 
 

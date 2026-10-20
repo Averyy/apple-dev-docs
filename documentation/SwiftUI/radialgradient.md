@@ -1,7 +1,8 @@
 # RadialGradient
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A radial gradient.
 
@@ -25,57 +26,58 @@ nonisolated struct RadialGradient
 
 The gradient applies the color function as the distance from a center point, scaled to fit within the defined start and end radii. The gradient maps the unit space center point into the bounding rectangle of each shape filled with the gradient.
 
-When using a radial gradient as a shape style, you can also use [`radialGradient(_:center:startRadius:endRadius:)`](shapestyle/radialgradient(_:center:startradius:endradius:).md).
+When using a radial gradient as a shape style, you can also use [`radialGradient(_:center:startRadius:endRadius:)`](./shapestyle/radialgradient%28_,center,startradius,endradius%29.md).
 
 ## Topics
 
 ### Creating a radial gradient
-- [init(gradient: Gradient, center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](radialgradient/init(gradient:center:startradius:endradius:).md)
+- [init(gradient: Gradient, center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](./radialgradient/init%28gradient,center,startradius,endradius%29.md)
   Creates a radial gradient from a base gradient.
-- [init(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](radialgradient/init(colors:center:startradius:endradius:).md)
+- [init(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](./radialgradient/init%28colors,center,startradius,endradius%29.md)
   Creates a radial gradient from a collection of colors.
-- [init(stops: [Gradient.Stop], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](radialgradient/init(stops:center:startradius:endradius:).md)
+- [init(stops: [Gradient.Stop], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](./radialgradient/init%28stops,center,startradius,endradius%29.md)
   Creates a radial gradient from a collection of color stops.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
-- [View](view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct AngularGradient](angulargradient.md)
+### Supporting types
+- [struct AngularGradient](./angulargradient.md)
   An angular gradient.
-- [struct EllipticalGradient](ellipticalgradient.md)
+- [struct EllipticalGradient](./ellipticalgradient.md)
   A radial gradient that draws an ellipse.
-- [struct LinearGradient](lineargradient.md)
+- [struct LinearGradient](./lineargradient.md)
   A linear gradient.
-- [struct Material](material.md)
+- [struct Material](./material.md)
   A background material type.
-- [struct ImagePaint](imagepaint.md)
+- [struct ImagePaint](./imagepaint.md)
   A shape style that fills a shape by repeating a region of an image.
-- [struct HierarchicalShapeStyle](hierarchicalshapestyle.md)
+- [struct HierarchicalShapeStyle](./hierarchicalshapestyle.md)
   A shape style that maps to one of the numbered content styles.
-- [struct HierarchicalShapeStyleModifier](hierarchicalshapestylemodifier.md)
+- [struct HierarchicalShapeStyleModifier](./hierarchicalshapestylemodifier.md)
   Styles that you can apply to hierarchical shapes.
-- [struct ForegroundStyle](foregroundstyle.md)
+- [struct ForegroundStyle](./foregroundstyle.md)
   The foreground style in the current context.
-- [struct BackgroundStyle](backgroundstyle.md)
+- [struct BackgroundStyle](./backgroundstyle.md)
   The background style in the current context.
-- [struct SelectionShapeStyle](selectionshapestyle.md)
+- [struct SelectionShapeStyle](./selectionshapestyle.md)
   A style used to visually indicate selection following platform conventional colors and behaviors.
-- [struct SeparatorShapeStyle](separatorshapestyle.md)
+- [struct SeparatorShapeStyle](./separatorshapestyle.md)
   A style appropriate for foreground separator or border lines.
-- [struct TintShapeStyle](tintshapestyle.md)
+- [struct TintShapeStyle](./tintshapestyle.md)
   A style that reflects the current tint color.
-- [struct FillShapeStyle](fillshapestyle.md)
+- [struct FillShapeStyle](./fillshapestyle.md)
   A shape style that displays one of the overlay fills.
-- [struct LinkShapeStyle](linkshapestyle.md)
+- [struct LinkShapeStyle](./linkshapestyle.md)
   A style appropriate for links.
-- [struct PlaceholderTextShapeStyle](placeholdertextshapestyle.md)
+- [struct PlaceholderTextShapeStyle](./placeholdertextshapestyle.md)
   A style appropriate for placeholder text.
 
 

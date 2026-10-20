@@ -1,6 +1,7 @@
 # Apple Event Manager
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 #### Overview
 
@@ -12,7 +13,7 @@ Applications typically use Apple events to request services and information from
 
 Some Apple Event Manager functions are marked as being thread safe—for all other functions, you should call them only on the main thread.
 
-For an overview of technologies that take advantage of the Apple Event Manager, see [`AppleScript Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html#//apple_ref/doc/uid/10000156i).
+For an overview of technologies that take advantage of the Apple Event Manager, see [AppleScript Overview](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html#//apple_ref/doc/uid/10000156i).
 
 For information on working with Apple events, including events sent by the Mac OS, see Responding to Apple Events in Apple Events Programming Guide. For information about individual four-character codes used in Apple events, see AppleScript Terminology and Apple Event Codes Reference.
 
@@ -20,292 +21,292 @@ The Apple Event Manager is implemented by the AE framework, a subframework of th
 
 The AE framework does not force a connection to the window server. This allows daemons and startup items that work with Apple events to continue working across log outs.
 
-##### 1770164
+##### Gestalt Constants
 
 You can check for version and feature availabilityinformation by using the Apple Event Manager selectors defined inthe Gestalt Manager. For more information see *Inside macOS: Gestalt Manager Reference*. 
 
 ## Topics
 
 ### Adding Items to Descriptor Lists
-- [func AEPutArray(UnsafeMutablePointer<AEDescList>!, AEArrayType, UnsafePointer<AEArrayData>!, DescType, Size, Int) -> OSErr](../coreservices/1442535-aeputarray.md)
+- [func AEPutArray(UnsafeMutablePointer<AEDescList>!, AEArrayType, UnsafePointer<AEArrayData>!, DescType, Size, Int) -> OSErr](../coreservices/api-1442535-aeputarray.md)
   Inserts the data for an Apple event array into a descriptor list, replacing any previous descriptors in the list.
-- [func AEPutDesc(UnsafeMutablePointer<AEDescList>!, Int, UnsafePointer<AEDesc>!) -> OSErr](../coreservices/1450093-aeputdesc.md)
+- [func AEPutDesc(UnsafeMutablePointer<AEDescList>!, Int, UnsafePointer<AEDesc>!) -> OSErr](../coreservices/api-1450093-aeputdesc.md)
   Adds a descriptor to any descriptor list, possibly replacing an existing descriptor in the list.
-- [func AEPutPtr(UnsafeMutablePointer<AEDescList>!, Int, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/1445287-aeputptr.md)
+- [func AEPutPtr(UnsafeMutablePointer<AEDescList>!, Int, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/api-1445287-aeputptr.md)
   Inserts data specified in a buffer into a descriptor list as a descriptor, possibly replacing an existing descriptor in the list.
 ### Adding Parameters and Attributes to Apple Events and Apple Event Records
-- [func AEPutAttributeDesc(UnsafeMutablePointer<AppleEvent>!, AEKeyword, UnsafePointer<AEDesc>!) -> OSErr](../coreservices/1441790-aeputattributedesc.md)
+- [func AEPutAttributeDesc(UnsafeMutablePointer<AppleEvent>!, AEKeyword, UnsafePointer<AEDesc>!) -> OSErr](../coreservices/api-1441790-aeputattributedesc.md)
   Adds a descriptor and a keyword to an Apple event as an attribute.
-- [func AEPutAttributePtr(UnsafeMutablePointer<AppleEvent>!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/1445940-aeputattributeptr.md)
+- [func AEPutAttributePtr(UnsafeMutablePointer<AppleEvent>!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/api-1445940-aeputattributeptr.md)
   Adds a pointer to data, a descriptor type, and a keyword to an Apple event as an attribute.
-- [func AEPutParamDesc(UnsafeMutablePointer<AppleEvent>!, AEKeyword, UnsafePointer<AEDesc>!) -> OSErr](../coreservices/1447576-aeputparamdesc.md)
+- [func AEPutParamDesc(UnsafeMutablePointer<AppleEvent>!, AEKeyword, UnsafePointer<AEDesc>!) -> OSErr](../coreservices/api-1447576-aeputparamdesc.md)
   Inserts a descriptor and a keyword into an Apple event or Apple event record as an Apple event parameter.
-- [func AEPutParamPtr(UnsafeMutablePointer<AppleEvent>!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/1449263-aeputparamptr.md)
+- [func AEPutParamPtr(UnsafeMutablePointer<AppleEvent>!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSErr](../coreservices/api-1449263-aeputparamptr.md)
   Inserts data, a descriptor type, and a keyword into an Apple event or Apple event record as an Apple event parameter.
 ### Coercing Descriptor Types
-- [func AECoerceDesc(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1446519-aecoercedesc.md)
+- [func AECoerceDesc(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1446519-aecoercedesc.md)
   Coerces the data in a descriptor to another descriptor type and creates a descriptor containing the newly coerced data.
-- [func AECoercePtr(DescType, UnsafeRawPointer!, Size, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1441846-aecoerceptr.md)
+- [func AECoercePtr(DescType, UnsafeRawPointer!, Size, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1441846-aecoerceptr.md)
   Coerces data to a desired descriptor type and creates a descriptor containing the newly coerced data.
 ### Counting the Items in Descriptor Lists
-- [func AECountItems(UnsafePointer<AEDescList>!, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/1449533-aecountitems.md)
+- [func AECountItems(UnsafePointer<AEDescList>!, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/api-1449533-aecountitems.md)
   Counts the number of descriptors in a descriptor list.
 ### Creating an Apple Event
-- [func AECreateAppleEvent(AEEventClass, AEEventID, UnsafePointer<AEAddressDesc>!, AEReturnID, AETransactionID, UnsafeMutablePointer<AppleEvent>!) -> OSErr](../coreservices/1448525-aecreateappleevent.md)
+- [func AECreateAppleEvent(AEEventClass, AEEventID, UnsafePointer<AEAddressDesc>!, AEReturnID, AETransactionID, UnsafeMutablePointer<AppleEvent>!) -> OSErr](../coreservices/api-1448525-aecreateappleevent.md)
   Creates an Apple event with several important attributes but no parameters.
 ### Creating and Duplicating Descriptors
-- [func AECreateDesc(DescType, UnsafeRawPointer!, Size, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1448535-aecreatedesc.md)
+- [func AECreateDesc(DescType, UnsafeRawPointer!, Size, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1448535-aecreatedesc.md)
   Creates a new descriptor that incorporates the specified data.
-- [func AECreateDescFromExternalPtr(OSType, UnsafeRawPointer!, Size, AEDisposeExternalUPP!, SRefCon!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/1446239-aecreatedescfromexternalptr.md)
+- [func AECreateDescFromExternalPtr(OSType, UnsafeRawPointer!, Size, AEDisposeExternalUPP!, SRefCon!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/api-1446239-aecreatedescfromexternalptr.md)
   Creates a new descriptor that uses a memory buffer supplied by the caller.
-- [func AEDuplicateDesc(UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1442661-aeduplicatedesc.md)
+- [func AEDuplicateDesc(UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1442661-aeduplicatedesc.md)
   Creates a copy of a descriptor.
 ### Creating, Calling, and Deleting Universal Procedure Pointers
-- [func DisposeAECoerceDescUPP(AECoerceDescUPP!)](../coreservices/1448721-disposeaecoercedescupp.md)
+- [func DisposeAECoerceDescUPP(AECoerceDescUPP!)](../coreservices/api-1448721-disposeaecoercedescupp.md)
   Disposes of a universal procedure pointer to a function that coerces data stored in a descriptor.
-- [func DisposeAECoercePtrUPP(AECoercePtrUPP!)](../coreservices/1450664-disposeaecoerceptrupp.md)
+- [func DisposeAECoercePtrUPP(AECoercePtrUPP!)](../coreservices/api-1450664-disposeaecoerceptrupp.md)
   Disposes of a universal procedure pointer to a function that coerces data stored in a buffer.
-- [func DisposeAEDisposeExternalUPP(AEDisposeExternalUPP!)](../coreservices/1447284-disposeaedisposeexternalupp.md)
+- [func DisposeAEDisposeExternalUPP(AEDisposeExternalUPP!)](../coreservices/api-1447284-disposeaedisposeexternalupp.md)
   Disposes of a universal procedure pointer to a function that disposes of data supplied to the `AECreateDescFromExternalPtr` function.
-- [func DisposeAEEventHandlerUPP(AEEventHandlerUPP!)](../coreservices/1442066-disposeaeeventhandlerupp.md)
+- [func DisposeAEEventHandlerUPP(AEEventHandlerUPP!)](../coreservices/api-1442066-disposeaeeventhandlerupp.md)
   Disposes of a universal procedure pointer to an event handler function.
-- [func DisposeOSLAccessorUPP(OSLAccessorUPP!)](../coreservices/1444684-disposeoslaccessorupp.md)
+- [func DisposeOSLAccessorUPP(OSLAccessorUPP!)](../coreservices/api-1444684-disposeoslaccessorupp.md)
   Disposes of a universal procedure pointer to an object accessor function.
-- [func DisposeOSLAdjustMarksUPP(OSLAdjustMarksUPP!)](../coreservices/1443940-disposeosladjustmarksupp.md)
+- [func DisposeOSLAdjustMarksUPP(OSLAdjustMarksUPP!)](../coreservices/api-1443940-disposeosladjustmarksupp.md)
   Disposes of a universal procedure pointer to an object callback adjust marks function.
-- [func DisposeOSLCompareUPP(OSLCompareUPP!)](../coreservices/1448398-disposeoslcompareupp.md)
+- [func DisposeOSLCompareUPP(OSLCompareUPP!)](../coreservices/api-1448398-disposeoslcompareupp.md)
   Disposes of a universal procedure pointer to an object callback comparison function.
-- [func DisposeOSLCountUPP(OSLCountUPP!)](../coreservices/1443984-disposeoslcountupp.md)
+- [func DisposeOSLCountUPP(OSLCountUPP!)](../coreservices/api-1443984-disposeoslcountupp.md)
   Disposes of a universal procedure pointer to an object callback count function.
-- [func DisposeOSLDisposeTokenUPP(OSLDisposeTokenUPP!)](../coreservices/1442670-disposeosldisposetokenupp.md)
+- [func DisposeOSLDisposeTokenUPP(OSLDisposeTokenUPP!)](../coreservices/api-1442670-disposeosldisposetokenupp.md)
   Disposes of a universal procedure pointer to an object callback dispose token function.
-- [func DisposeOSLGetErrDescUPP(OSLGetErrDescUPP!)](../coreservices/1446061-disposeoslgeterrdescupp.md)
+- [func DisposeOSLGetErrDescUPP(OSLGetErrDescUPP!)](../coreservices/api-1446061-disposeoslgeterrdescupp.md)
   Disposes of a universal procedure pointer to an object callback get error descriptor function.
-- [func DisposeOSLGetMarkTokenUPP(OSLGetMarkTokenUPP!)](../coreservices/1442377-disposeoslgetmarktokenupp.md)
+- [func DisposeOSLGetMarkTokenUPP(OSLGetMarkTokenUPP!)](../coreservices/api-1442377-disposeoslgetmarktokenupp.md)
   Disposes of a universal procedure pointer to an object callback get mark function.
-- [func DisposeOSLMarkUPP(OSLMarkUPP!)](../coreservices/1449253-disposeoslmarkupp.md)
+- [func DisposeOSLMarkUPP(OSLMarkUPP!)](../coreservices/api-1449253-disposeoslmarkupp.md)
   Disposes of a universal procedure pointer to an object callback mark function.
-- [func InvokeAECoerceDescUPP(UnsafePointer<AEDesc>!, DescType, SRefCon!, UnsafeMutablePointer<AEDesc>!, AECoerceDescUPP!) -> OSErr](../coreservices/1445450-invokeaecoercedescupp.md)
+- [func InvokeAECoerceDescUPP(UnsafePointer<AEDesc>!, DescType, SRefCon!, UnsafeMutablePointer<AEDesc>!, AECoerceDescUPP!) -> OSErr](../coreservices/api-1445450-invokeaecoercedescupp.md)
   Calls a universal procedure pointer to a function that coerces data stored in a descriptor.
-- [func InvokeAECoercePtrUPP(DescType, UnsafeRawPointer!, Size, DescType, SRefCon!, UnsafeMutablePointer<AEDesc>!, AECoercePtrUPP!) -> OSErr](../coreservices/1447079-invokeaecoerceptrupp.md)
+- [func InvokeAECoercePtrUPP(DescType, UnsafeRawPointer!, Size, DescType, SRefCon!, UnsafeMutablePointer<AEDesc>!, AECoercePtrUPP!) -> OSErr](../coreservices/api-1447079-invokeaecoerceptrupp.md)
   Calls a universal procedure pointer to a function that coerces data stored in a buffer.
-- [func InvokeAEDisposeExternalUPP(UnsafeRawPointer!, Size, SRefCon!, AEDisposeExternalUPP!)](../coreservices/1441717-invokeaedisposeexternalupp.md)
+- [func InvokeAEDisposeExternalUPP(UnsafeRawPointer!, Size, SRefCon!, AEDisposeExternalUPP!)](../coreservices/api-1441717-invokeaedisposeexternalupp.md)
   Calls a dispose external universal procedure pointer.
-- [func InvokeAEEventHandlerUPP(UnsafePointer<AppleEvent>!, UnsafeMutablePointer<AppleEvent>!, SRefCon!, AEEventHandlerUPP!) -> OSErr](../coreservices/1446585-invokeaeeventhandlerupp.md)
+- [func InvokeAEEventHandlerUPP(UnsafePointer<AppleEvent>!, UnsafeMutablePointer<AppleEvent>!, SRefCon!, AEEventHandlerUPP!) -> OSErr](../coreservices/api-1446585-invokeaeeventhandlerupp.md)
   Calls an event handler universal procedure pointer.
-- [func InvokeOSLAccessorUPP(DescType, UnsafePointer<AEDesc>!, DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, SRefCon!, OSLAccessorUPP!) -> OSErr](../coreservices/1448978-invokeoslaccessorupp.md)
+- [func InvokeOSLAccessorUPP(DescType, UnsafePointer<AEDesc>!, DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, SRefCon!, OSLAccessorUPP!) -> OSErr](../coreservices/api-1448978-invokeoslaccessorupp.md)
   Calls an object accessor universal procedure pointer.
-- [func InvokeOSLAdjustMarksUPP(Int, Int, UnsafePointer<AEDesc>!, OSLAdjustMarksUPP!) -> OSErr](../coreservices/1448506-invokeosladjustmarksupp.md)
+- [func InvokeOSLAdjustMarksUPP(Int, Int, UnsafePointer<AEDesc>!, OSLAdjustMarksUPP!) -> OSErr](../coreservices/api-1448506-invokeosladjustmarksupp.md)
   Calls an object callback adjust marks universal procedure pointer.
-- [func InvokeOSLCompareUPP(DescType, UnsafePointer<AEDesc>!, UnsafePointer<AEDesc>!, UnsafeMutablePointer<DarwinBoolean>!, OSLCompareUPP!) -> OSErr](../coreservices/1443110-invokeoslcompareupp.md)
+- [func InvokeOSLCompareUPP(DescType, UnsafePointer<AEDesc>!, UnsafePointer<AEDesc>!, UnsafeMutablePointer<DarwinBoolean>!, OSLCompareUPP!) -> OSErr](../coreservices/api-1443110-invokeoslcompareupp.md)
   Calls an object callback comparison universal procedure pointer.
-- [func InvokeOSLCountUPP(DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<Int>!, OSLCountUPP!) -> OSErr](../coreservices/1448030-invokeoslcountupp.md)
+- [func InvokeOSLCountUPP(DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<Int>!, OSLCountUPP!) -> OSErr](../coreservices/api-1448030-invokeoslcountupp.md)
   Calls an object callback count universal procedure pointer.
-- [func InvokeOSLDisposeTokenUPP(UnsafeMutablePointer<AEDesc>!, OSLDisposeTokenUPP!) -> OSErr](../coreservices/1443963-invokeosldisposetokenupp.md)
+- [func InvokeOSLDisposeTokenUPP(UnsafeMutablePointer<AEDesc>!, OSLDisposeTokenUPP!) -> OSErr](../coreservices/api-1443963-invokeosldisposetokenupp.md)
   Calls an object callback dispose token universal procedure pointer.
-- [func InvokeOSLGetErrDescUPP(UnsafeMutablePointer<UnsafeMutablePointer<AEDesc>?>!, OSLGetErrDescUPP!) -> OSErr](../coreservices/1448420-invokeoslgeterrdescupp.md)
+- [func InvokeOSLGetErrDescUPP(UnsafeMutablePointer<UnsafeMutablePointer<AEDesc>?>!, OSLGetErrDescUPP!) -> OSErr](../coreservices/api-1448420-invokeoslgeterrdescupp.md)
   Calls an object callback get error descriptor universal procedure pointer.
-- [func InvokeOSLGetMarkTokenUPP(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!, OSLGetMarkTokenUPP!) -> OSErr](../coreservices/1441894-invokeoslgetmarktokenupp.md)
+- [func InvokeOSLGetMarkTokenUPP(UnsafePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!, OSLGetMarkTokenUPP!) -> OSErr](../coreservices/api-1441894-invokeoslgetmarktokenupp.md)
   Calls an object callback get mark universal procedure pointer.
-- [func InvokeOSLMarkUPP(UnsafePointer<AEDesc>!, UnsafePointer<AEDesc>!, Int, OSLMarkUPP!) -> OSErr](../coreservices/1447444-invokeoslmarkupp.md)
+- [func InvokeOSLMarkUPP(UnsafePointer<AEDesc>!, UnsafePointer<AEDesc>!, Int, OSLMarkUPP!) -> OSErr](../coreservices/api-1447444-invokeoslmarkupp.md)
   Calls an object callback mark universal procedure pointer.
-- [func NewAECoerceDescUPP(AECoerceDescProcPtr!) -> AECoerceDescUPP!](../coreservices/1445885-newaecoercedescupp.md)
+- [func NewAECoerceDescUPP(AECoerceDescProcPtr!) -> AECoerceDescUPP!](../coreservices/api-1445885-newaecoercedescupp.md)
   Creates a new universal procedure pointer to a function that coerces data stored in a descriptor.
-- [func NewAECoercePtrUPP(AECoercePtrProcPtr!) -> AECoercePtrUPP!](../coreservices/1449962-newaecoerceptrupp.md)
+- [func NewAECoercePtrUPP(AECoercePtrProcPtr!) -> AECoercePtrUPP!](../coreservices/api-1449962-newaecoerceptrupp.md)
   Creates a new universal procedure pointer to a function that coerces data stored in a buffer.
-- [func NewAEDisposeExternalUPP(AEDisposeExternalProcPtr!) -> AEDisposeExternalUPP!](../coreservices/1447774-newaedisposeexternalupp.md)
+- [func NewAEDisposeExternalUPP(AEDisposeExternalProcPtr!) -> AEDisposeExternalUPP!](../coreservices/api-1447774-newaedisposeexternalupp.md)
   Creates a new universal procedure pointer to a function that disposes of data stored in a buffer.
-- [func NewAEEventHandlerUPP(AEEventHandlerProcPtr!) -> AEEventHandlerUPP!](../coreservices/1446862-newaeeventhandlerupp.md)
+- [func NewAEEventHandlerUPP(AEEventHandlerProcPtr!) -> AEEventHandlerUPP!](../coreservices/api-1446862-newaeeventhandlerupp.md)
   Creates a new universal procedure pointer to an event handler function.
-- [func NewOSLAccessorUPP(OSLAccessorProcPtr!) -> OSLAccessorUPP!](../coreservices/1449584-newoslaccessorupp.md)
+- [func NewOSLAccessorUPP(OSLAccessorProcPtr!) -> OSLAccessorUPP!](../coreservices/api-1449584-newoslaccessorupp.md)
   Creates a new universal procedure pointer to an object accessor function.
-- [func NewOSLAdjustMarksUPP(OSLAdjustMarksProcPtr!) -> OSLAdjustMarksUPP!](../coreservices/1443347-newosladjustmarksupp.md)
+- [func NewOSLAdjustMarksUPP(OSLAdjustMarksProcPtr!) -> OSLAdjustMarksUPP!](../coreservices/api-1443347-newosladjustmarksupp.md)
   Creates a new universal procedure pointer to an object callback adjust marks function.
-- [func NewOSLCompareUPP(OSLCompareProcPtr!) -> OSLCompareUPP!](../coreservices/1444603-newoslcompareupp.md)
+- [func NewOSLCompareUPP(OSLCompareProcPtr!) -> OSLCompareUPP!](../coreservices/api-1444603-newoslcompareupp.md)
   Creates a new universal procedure pointer to an object callback comparison function.
-- [func NewOSLCountUPP(OSLCountProcPtr!) -> OSLCountUPP!](../coreservices/1448156-newoslcountupp.md)
+- [func NewOSLCountUPP(OSLCountProcPtr!) -> OSLCountUPP!](../coreservices/api-1448156-newoslcountupp.md)
   Creates a new universal procedure pointer to an object callback count function.
-- [func NewOSLDisposeTokenUPP(OSLDisposeTokenProcPtr!) -> OSLDisposeTokenUPP!](../coreservices/1450027-newosldisposetokenupp.md)
+- [func NewOSLDisposeTokenUPP(OSLDisposeTokenProcPtr!) -> OSLDisposeTokenUPP!](../coreservices/api-1450027-newosldisposetokenupp.md)
   Creates a new universal procedure pointer to an object callback dispose token function.
-- [func NewOSLGetErrDescUPP(OSLGetErrDescProcPtr!) -> OSLGetErrDescUPP!](../coreservices/1447934-newoslgeterrdescupp.md)
+- [func NewOSLGetErrDescUPP(OSLGetErrDescProcPtr!) -> OSLGetErrDescUPP!](../coreservices/api-1447934-newoslgeterrdescupp.md)
   Creates a new universal procedure pointer to an object callback get error descriptor function.
-- [func NewOSLGetMarkTokenUPP(OSLGetMarkTokenProcPtr!) -> OSLGetMarkTokenUPP!](../coreservices/1445166-newoslgetmarktokenupp.md)
+- [func NewOSLGetMarkTokenUPP(OSLGetMarkTokenProcPtr!) -> OSLGetMarkTokenUPP!](../coreservices/api-1445166-newoslgetmarktokenupp.md)
   Creates a new universal procedure pointer to an object callback get mark function.
-- [func NewOSLMarkUPP(OSLMarkProcPtr!) -> OSLMarkUPP!](../coreservices/1446942-newoslmarkupp.md)
+- [func NewOSLMarkUPP(OSLMarkProcPtr!) -> OSLMarkUPP!](../coreservices/api-1446942-newoslmarkupp.md)
   Creates a new universal procedure pointer to an object callback mark function.
 ### Creating Descriptor Lists and Apple Event Records
-- [func AECreateList(UnsafeRawPointer!, Size, Bool, UnsafeMutablePointer<AEDescList>!) -> OSErr](../coreservices/1448643-aecreatelist.md)
+- [func AECreateList(UnsafeRawPointer!, Size, Bool, UnsafeMutablePointer<AEDescList>!) -> OSErr](../coreservices/api-1448643-aecreatelist.md)
   Creates an empty descriptor list or Apple event record.
 ### Creating Object Specifiers
-- [func CreateCompDescriptor(DescType, UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1449155-createcompdescriptor.md)
+- [func CreateCompDescriptor(DescType, UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1449155-createcompdescriptor.md)
   Creates a comparison descriptor that specifies how to compare one or more Apple event objects with either another Apple event object or a descriptor.
-- [func CreateLogicalDescriptor(UnsafeMutablePointer<AEDescList>!, DescType, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1445212-createlogicaldescriptor.md)
+- [func CreateLogicalDescriptor(UnsafeMutablePointer<AEDescList>!, DescType, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1445212-createlogicaldescriptor.md)
   Creates a logical descriptor that specifies a logical operator and one or more logical terms for the Apple Event Manager to evaluate. 
-- [func CreateObjSpecifier(DescType, UnsafeMutablePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1450244-createobjspecifier.md)
+- [func CreateObjSpecifier(DescType, UnsafeMutablePointer<AEDesc>!, DescType, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1450244-createobjspecifier.md)
   Assembles an object specifier that identifies one or more Apple event objects, from other descriptors.
-- [func CreateOffsetDescriptor(Int, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1444957-createoffsetdescriptor.md)
+- [func CreateOffsetDescriptor(Int, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1444957-createoffsetdescriptor.md)
   Creates an offset descriptor that specifies the position of an element in relation to the beginning or end of its container. 
-- [func CreateRangeDescriptor(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1444087-createrangedescriptor.md)
+- [func CreateRangeDescriptor(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!, Bool, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1444087-createrangedescriptor.md)
   Creates a range descriptor that specifies a series of consecutive elements in the same container. 
 ### Deallocating Memory for Descriptors
-- [func AEDisposeDesc(UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1444208-aedisposedesc.md)
+- [func AEDisposeDesc(UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1444208-aedisposedesc.md)
   Deallocates the memory used by a descriptor.
 ### Deallocating Memory for Tokens
-- [func AEDisposeToken(UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1446783-aedisposetoken.md)
+- [func AEDisposeToken(UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1446783-aedisposetoken.md)
   Deallocates the memory used by a token.
 ### Deleting Descriptors
-- [func AEDeleteItem(UnsafeMutablePointer<AEDescList>!, Int) -> OSErr](../coreservices/1447164-aedeleteitem.md)
+- [func AEDeleteItem(UnsafeMutablePointer<AEDescList>!, Int) -> OSErr](../coreservices/api-1447164-aedeleteitem.md)
   Deletes a descriptor from a descriptor list, causing all subsequent descriptors to move up one place. 
-- [func AEDeleteParam(UnsafeMutablePointer<AppleEvent>!, AEKeyword) -> OSErr](../coreservices/1444338-aedeleteparam.md)
+- [func AEDeleteParam(UnsafeMutablePointer<AppleEvent>!, AEKeyword) -> OSErr](../coreservices/api-1444338-aedeleteparam.md)
   Deletes a keyword-specified parameter from an Apple event record.
 ### Getting, Calling, and Removing Object Accessor Functions
-- [func AECallObjectAccessor(DescType, UnsafePointer<AEDesc>!, DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1447059-aecallobjectaccessor.md)
+- [func AECallObjectAccessor(DescType, UnsafePointer<AEDesc>!, DescType, DescType, UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1447059-aecallobjectaccessor.md)
   Invokes the appropriate object accessor function for a specific desired type and container type. 
-- [func AEGetObjectAccessor(DescType, DescType, UnsafeMutablePointer<OSLAccessorUPP?>!, UnsafeMutablePointer<SRefCon?>!, Bool) -> OSErr](../coreservices/1449054-aegetobjectaccessor.md)
+- [func AEGetObjectAccessor(DescType, DescType, UnsafeMutablePointer<OSLAccessorUPP?>!, UnsafeMutablePointer<SRefCon?>!, Bool) -> OSErr](../coreservices/api-1449054-aegetobjectaccessor.md)
   Gets an object accessor function from an object accessor dispatch table. 
-- [func AEInstallObjectAccessor(DescType, DescType, OSLAccessorUPP!, SRefCon!, Bool) -> OSErr](../coreservices/1447905-aeinstallobjectaccessor.md)
+- [func AEInstallObjectAccessor(DescType, DescType, OSLAccessorUPP!, SRefCon!, Bool) -> OSErr](../coreservices/api-1447905-aeinstallobjectaccessor.md)
   Adds or replaces an entry for an object accessor function to an object accessor dispatch table.
-- [func AERemoveObjectAccessor(DescType, DescType, OSLAccessorUPP!, Bool) -> OSErr](../coreservices/1442552-aeremoveobjectaccessor.md)
+- [func AERemoveObjectAccessor(DescType, DescType, OSLAccessorUPP!, Bool) -> OSErr](../coreservices/api-1442552-aeremoveobjectaccessor.md)
   Removes an object accessor function from an object accessor dispatch table. 
 ### Getting Data or Descriptors From Apple Events and Apple Event Records
-- [func AEGetAttributeDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1450314-aegetattributedesc.md)
+- [func AEGetAttributeDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1450314-aegetattributedesc.md)
   Gets a copy of the descriptor for a specified Apple event attribute from an Apple event; typically used when your application needs to pass the descriptor on to another function.
-- [func AEGetAttributePtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/1445109-aegetattributeptr.md)
+- [func AEGetAttributePtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1445109-aegetattributeptr.md)
   Gets a copy of the data for a specified Apple event attribute from an Apple event; typically used when your application needs to work with the data directly.
-- [func AEGetParamDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1449233-aegetparamdesc.md)
+- [func AEGetParamDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1449233-aegetparamdesc.md)
   Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event or an Apple event record.
-- [func AEGetParamPtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/1444069-aegetparamptr.md)
+- [func AEGetParamPtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1444069-aegetparamptr.md)
   Gets a copy of the data for a specified Apple event parameter from an Apple event or an Apple event record.
 ### Getting Information About the Apple Event Manager
-- [func AEManagerInfo(AEKeyword, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/1449373-aemanagerinfo.md)
+- [func AEManagerInfo(AEKeyword, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/api-1449373-aemanagerinfo.md)
   Provides information about the version of the Apple Event Manager currently available or the number of processes that are currently recording Apple events.
 ### Getting Items From Descriptor Lists
-- [func AEGetArray(UnsafePointer<AEDescList>!, AEArrayType, AEArrayDataPointer!, Size, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/1445720-aegetarray.md)
+- [func AEGetArray(UnsafePointer<AEDescList>!, AEArrayType, AEArrayDataPointer!, Size, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!, UnsafeMutablePointer<Int>!) -> OSErr](../coreservices/api-1445720-aegetarray.md)
   Extracts data from an Apple event array created with the `AEPutArray` function and stores it as a standard array of fixed size items in the specified buffer.
-- [func AEGetNthDesc(UnsafePointer<AEDescList>!, Int, DescType, UnsafeMutablePointer<AEKeyword>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1448326-aegetnthdesc.md)
+- [func AEGetNthDesc(UnsafePointer<AEDescList>!, Int, DescType, UnsafeMutablePointer<AEKeyword>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1448326-aegetnthdesc.md)
    Copies a descriptor from a specified position in a descriptor list into a specified descriptor; typically used when your application needs to pass the extracted data to another function as a descriptor.
-- [func AEGetNthPtr(UnsafePointer<AEDescList>!, Int, DescType, UnsafeMutablePointer<AEKeyword>!, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/1447539-aegetnthptr.md)
+- [func AEGetNthPtr(UnsafePointer<AEDescList>!, Int, DescType, UnsafeMutablePointer<AEKeyword>!, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1447539-aegetnthptr.md)
   Gets a copy of the data from a descriptor at a specified position in a descriptor list; typically used when your application needs to work with the extracted data directly.
 ### Getting the Sizes and Descriptor Types of Descriptors
-- [func AESizeOfAttribute(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/1445764-aesizeofattribute.md)
+- [func AESizeOfAttribute(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1445764-aesizeofattribute.md)
   Gets the size and descriptor type of an Apple event attribute from a descriptor of type `AppleEvent`.
-- [func AESizeOfNthItem(UnsafePointer<AEDescList>!, Int, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/1447307-aesizeofnthitem.md)
+- [func AESizeOfNthItem(UnsafePointer<AEDescList>!, Int, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1447307-aesizeofnthitem.md)
   Gets the data size and descriptor type of the descriptor at a specified position in a descriptor list.
-- [func AESizeOfParam(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/1449998-aesizeofparam.md)
+- [func AESizeOfParam(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](../coreservices/api-1449998-aesizeofparam.md)
   Gets the size and descriptor type of an Apple event parameter from a descriptor of type `AERecord` or `AppleEvent`.
 ### Initializing the Object Support Library
-- [func AEObjectInit() -> OSErr](../coreservices/1447372-aeobjectinit.md)
+- [func AEObjectInit() -> OSErr](../coreservices/api-1447372-aeobjectinit.md)
   Initializes the Object Support Library.
-- [func AESetObjectCallbacks(OSLCompareUPP!, OSLCountUPP!, OSLDisposeTokenUPP!, OSLGetMarkTokenUPP!, OSLMarkUPP!, OSLAdjustMarksUPP!, OSLGetErrDescUPP!) -> OSErr](../coreservices/1447756-aesetobjectcallbacks.md)
+- [func AESetObjectCallbacks(OSLCompareUPP!, OSLCountUPP!, OSLDisposeTokenUPP!, OSLGetMarkTokenUPP!, OSLMarkUPP!, OSLAdjustMarksUPP!, OSLGetErrDescUPP!) -> OSErr](../coreservices/api-1447756-aesetobjectcallbacks.md)
   Specifies the object callback functions for your application.
 ### Locating Processes on Remote Computers
-- [func AECreateRemoteProcessResolver(CFAllocator!, CFURL!) -> AERemoteProcessResolverRef!](../coreservices/1445692-aecreateremoteprocessresolver.md)
+- [func AECreateRemoteProcessResolver(CFAllocator!, CFURL!) -> AERemoteProcessResolverRef!](../coreservices/api-1445692-aecreateremoteprocessresolver.md)
   Creates an object for resolving a list of remote processes.
-- [func AEDisposeRemoteProcessResolver(AERemoteProcessResolverRef!)](../coreservices/1442572-aedisposeremoteprocessresolver.md)
+- [func AEDisposeRemoteProcessResolver(AERemoteProcessResolverRef!)](../coreservices/api-1442572-aedisposeremoteprocessresolver.md)
   Disposes of an `AERemoteProcessResolverRef`.
-- [func AERemoteProcessResolverGetProcesses(AERemoteProcessResolverRef!, UnsafeMutablePointer<CFStreamError>!) -> Unmanaged<CFArray>!](../coreservices/1444456-aeremoteprocessresolvergetproces.md)
+- [func AERemoteProcessResolverGetProcesses(AERemoteProcessResolverRef!, UnsafeMutablePointer<CFStreamError>!) -> Unmanaged<CFArray>!](../coreservices/api-1444456-aeremoteprocessresolvergetproces.md)
   Returns an array of objects containing information about processes running on a remote machine.
-- [func AERemoteProcessResolverScheduleWithRunLoop(AERemoteProcessResolverRef!, CFRunLoop!, CFString!, AERemoteProcessResolverCallback!, UnsafePointer<AERemoteProcessResolverContext>!)](../coreservices/1447259-aeremoteprocessresolverschedulew.md)
+- [func AERemoteProcessResolverScheduleWithRunLoop(AERemoteProcessResolverRef!, CFRunLoop!, CFString!, AERemoteProcessResolverCallback!, UnsafePointer<AERemoteProcessResolverContext>!)](../coreservices/api-1447259-aeremoteprocessresolverschedulew.md)
   Schedules a resolver for execution on a given run loop in a given mode.
 ### Managing Apple Event Dispatch Tables
-- [func AEGetEventHandler(AEEventClass, AEEventID, UnsafeMutablePointer<AEEventHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, Bool) -> OSErr](../coreservices/1445631-aegeteventhandler.md)
+- [func AEGetEventHandler(AEEventClass, AEEventID, UnsafeMutablePointer<AEEventHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, Bool) -> OSErr](../coreservices/api-1445631-aegeteventhandler.md)
   Gets an event handler from an Apple event dispatch table.
-- [func AEInstallEventHandler(AEEventClass, AEEventID, AEEventHandlerUPP!, SRefCon!, Bool) -> OSErr](../coreservices/1448596-aeinstalleventhandler.md)
+- [func AEInstallEventHandler(AEEventClass, AEEventID, AEEventHandlerUPP!, SRefCon!, Bool) -> OSErr](../coreservices/api-1448596-aeinstalleventhandler.md)
   Adds an entry for an event handler to an Apple event dispatch table.
-- [func AERemoveEventHandler(AEEventClass, AEEventID, AEEventHandlerUPP!, Bool) -> OSErr](../coreservices/1445239-aeremoveeventhandler.md)
+- [func AERemoveEventHandler(AEEventClass, AEEventID, AEEventHandlerUPP!, Bool) -> OSErr](../coreservices/api-1445239-aeremoveeventhandler.md)
   Removes an event handler entry from an Apple event dispatch table.
 ### Managing Coercion Handler Dispatch Tables
-- [func AEGetCoercionHandler(DescType, DescType, UnsafeMutablePointer<AECoercionHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, UnsafeMutablePointer<DarwinBoolean>!, Bool) -> OSErr](../coreservices/1445348-aegetcoercionhandler.md)
+- [func AEGetCoercionHandler(DescType, DescType, UnsafeMutablePointer<AECoercionHandlerUPP?>!, UnsafeMutablePointer<SRefCon?>!, UnsafeMutablePointer<DarwinBoolean>!, Bool) -> OSErr](../coreservices/api-1445348-aegetcoercionhandler.md)
   Gets the coercion handler for a specified descriptor type.
-- [func AEInstallCoercionHandler(DescType, DescType, AECoercionHandlerUPP!, SRefCon!, Bool, Bool) -> OSErr](../coreservices/1445548-aeinstallcoercionhandler.md)
+- [func AEInstallCoercionHandler(DescType, DescType, AECoercionHandlerUPP!, SRefCon!, Bool, Bool) -> OSErr](../coreservices/api-1445548-aeinstallcoercionhandler.md)
   Installs a coercion handler in either the application or system coercion handler dispatch table.
-- [func AERemoveCoercionHandler(DescType, DescType, AECoercionHandlerUPP!, Bool) -> OSErr](../coreservices/1441907-aeremovecoercionhandler.md)
+- [func AERemoveCoercionHandler(DescType, DescType, AECoercionHandlerUPP!, Bool) -> OSErr](../coreservices/api-1441907-aeremovecoercionhandler.md)
   Removes a coercion handler from a coercion handler dispatch table.
 ### Managing Special Handler Dispatch Tables
-- [func AEGetSpecialHandler(AEKeyword, UnsafeMutablePointer<AEEventHandlerUPP?>!, Bool) -> OSErr](../coreservices/1444274-aegetspecialhandler.md)
+- [func AEGetSpecialHandler(AEKeyword, UnsafeMutablePointer<AEEventHandlerUPP?>!, Bool) -> OSErr](../coreservices/api-1444274-aegetspecialhandler.md)
   Gets a specified handler from a special handler dispatch table.
-- [func AEInstallSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](../coreservices/1445532-aeinstallspecialhandler.md)
+- [func AEInstallSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](../coreservices/api-1445532-aeinstallspecialhandler.md)
   Installs a callback function in a special handler dispatch table.
-- [func AERemoveSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](../coreservices/1447960-aeremovespecialhandler.md)
+- [func AERemoveSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](../coreservices/api-1447960-aeremovespecialhandler.md)
   Removes a handler from a special handler dispatch table.
 ### Operating On Descriptor Data
-- [func AEGetDescData(UnsafePointer<AEDesc>!, UnsafeMutableRawPointer!, Size) -> OSErr](../coreservices/1444427-aegetdescdata.md)
+- [func AEGetDescData(UnsafePointer<AEDesc>!, UnsafeMutableRawPointer!, Size) -> OSErr](../coreservices/api-1444427-aegetdescdata.md)
   Gets the data from the specified descriptor.
-- [func AEGetDescDataSize(UnsafePointer<AEDesc>!) -> Size](../coreservices/1450119-aegetdescdatasize.md)
+- [func AEGetDescDataSize(UnsafePointer<AEDesc>!) -> Size](../coreservices/api-1450119-aegetdescdatasize.md)
   Gets the size, in bytes, of the data in the specified descriptor.
-- [func AEGetDescDataRange(UnsafePointer<AEDesc>!, UnsafeMutableRawPointer!, Size, Size) -> OSStatus](../coreservices/1446560-aegetdescdatarange.md)
+- [func AEGetDescDataRange(UnsafePointer<AEDesc>!, UnsafeMutableRawPointer!, Size, Size) -> OSStatus](../coreservices/api-1446560-aegetdescdatarange.md)
   Retrieves a specified series of bytes from the specified descriptor.
-- [func AEReplaceDescData(DescType, UnsafeRawPointer!, Size, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1446695-aereplacedescdata.md)
+- [func AEReplaceDescData(DescType, UnsafeRawPointer!, Size, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1446695-aereplacedescdata.md)
   Copies the specified data into the specified descriptor, replacing any previous data.
 ### Resolving Object Specifiers
-- [func AEResolve(UnsafePointer<AEDesc>!, Int16, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/1449720-aeresolve.md)
+- [func AEResolve(UnsafePointer<AEDesc>!, Int16, UnsafeMutablePointer<AEDesc>!) -> OSErr](../coreservices/api-1449720-aeresolve.md)
   Resolves an object specifier.
 ### Creating Apple Event Structures in Memory
-- [func AEPrintDescToHandle(UnsafePointer<AEDesc>!, UnsafeMutablePointer<Handle?>!) -> OSStatus](../coreservices/1445158-aeprintdesctohandle.md)
+- [func AEPrintDescToHandle(UnsafePointer<AEDesc>!, UnsafeMutablePointer<Handle?>!) -> OSStatus](../coreservices/api-1445158-aeprintdesctohandle.md)
   Provides a pretty printer facility for displaying the contents of Apple event descriptors.
-- [func vAEBuildAppleEvent(AEEventClass, AEEventID, DescType, UnsafeRawPointer!, Size, Int16, Int32, UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/1441729-vaebuildappleevent.md)
+- [func vAEBuildAppleEvent(AEEventClass, AEEventID, DescType, UnsafeRawPointer!, Size, Int16, Int32, UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/api-1441729-vaebuildappleevent.md)
   Allows you to encapsulate calls to `AEBuildAppleEvent` in a wrapper routine.
-- [func vAEBuildDesc(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/1446775-vaebuilddesc.md)
+- [func vAEBuildDesc(UnsafeMutablePointer<AEDesc>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/api-1446775-vaebuilddesc.md)
   Allows you to encapsulate calls to `AEBuildDesc` in your own wrapper routines.
-- [func vAEBuildParameters(UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/1448040-vaebuildparameters.md)
+- [func vAEBuildParameters(UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AEBuildError>!, UnsafePointer<CChar>!, CVaListPointer) -> OSStatus](../coreservices/api-1448040-vaebuildparameters.md)
   Allows you to encapsulate calls to `AEBuildParameters` in your own `stdarg`-style wrapper routines, using techniques similar to those allowed by vsprintf.
 ### Creating Apple Event Structures Using Streams
-- [func AEStreamClose(AEStreamRef!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/1449821-aestreamclose.md)
+- [func AEStreamClose(AEStreamRef!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/api-1449821-aestreamclose.md)
   Closes and deallocates an `AEStreamRef`.
-- [func AEStreamCloseDesc(AEStreamRef!) -> OSStatus](../coreservices/1449272-aestreamclosedesc.md)
+- [func AEStreamCloseDesc(AEStreamRef!) -> OSStatus](../coreservices/api-1449272-aestreamclosedesc.md)
   Marks the end of a descriptor in an `AEStreamRef`.
-- [func AEStreamCloseList(AEStreamRef!) -> OSStatus](../coreservices/1448185-aestreamcloselist.md)
+- [func AEStreamCloseList(AEStreamRef!) -> OSStatus](../coreservices/api-1448185-aestreamcloselist.md)
   Marks the end of a list of descriptors in an `AEStreamRef`.
-- [func AEStreamCloseRecord(AEStreamRef!) -> OSStatus](../coreservices/1449522-aestreamcloserecord.md)
+- [func AEStreamCloseRecord(AEStreamRef!) -> OSStatus](../coreservices/api-1449522-aestreamcloserecord.md)
   Marks the end of a record in an `AEStreamRef`.
-- [func AEStreamCreateEvent(AEEventClass, AEEventID, DescType, UnsafeRawPointer!, Size, Int16, Int32) -> AEStreamRef!](../coreservices/1446562-aestreamcreateevent.md)
+- [func AEStreamCreateEvent(AEEventClass, AEEventID, DescType, UnsafeRawPointer!, Size, Int16, Int32) -> AEStreamRef!](../coreservices/api-1446562-aestreamcreateevent.md)
   Creates a new Apple event and opens a stream for writing data to it.
-- [func AEStreamOpen() -> AEStreamRef!](../coreservices/1447732-aestreamopen.md)
+- [func AEStreamOpen() -> AEStreamRef!](../coreservices/api-1447732-aestreamopen.md)
   Opens a new `AEStreamRef` for use in building a descriptor.
-- [func AEStreamOpenDesc(AEStreamRef!, DescType) -> OSStatus](../coreservices/1446544-aestreamopendesc.md)
+- [func AEStreamOpenDesc(AEStreamRef!, DescType) -> OSStatus](../coreservices/api-1446544-aestreamopendesc.md)
   Marks the beginning of a descriptor in an `AEStreamRef`.
-- [func AEStreamOpenEvent(UnsafeMutablePointer<AppleEvent>!) -> AEStreamRef!](../coreservices/1445366-aestreamopenevent.md)
+- [func AEStreamOpenEvent(UnsafeMutablePointer<AppleEvent>!) -> AEStreamRef!](../coreservices/api-1445366-aestreamopenevent.md)
   Opens a stream for an existing Apple event.
-- [func AEStreamOpenKeyDesc(AEStreamRef!, AEKeyword, DescType) -> OSStatus](../coreservices/1442897-aestreamopenkeydesc.md)
+- [func AEStreamOpenKeyDesc(AEStreamRef!, AEKeyword, DescType) -> OSStatus](../coreservices/api-1442897-aestreamopenkeydesc.md)
   Marks the beginning of a key descriptor in an `AEStreamRef`.
-- [func AEStreamOpenList(AEStreamRef!) -> OSStatus](../coreservices/1448594-aestreamopenlist.md)
+- [func AEStreamOpenList(AEStreamRef!) -> OSStatus](../coreservices/api-1448594-aestreamopenlist.md)
   Marks the beginning of a descriptor list in an `AEStreamRef`.
-- [func AEStreamOpenRecord(AEStreamRef!, DescType) -> OSStatus](../coreservices/1447141-aestreamopenrecord.md)
+- [func AEStreamOpenRecord(AEStreamRef!, DescType) -> OSStatus](../coreservices/api-1447141-aestreamopenrecord.md)
   Marks the beginning of an Apple event record in an `AEStreamRef`.
-- [func AEStreamOptionalParam(AEStreamRef!, AEKeyword) -> OSStatus](../coreservices/1444481-aestreamoptionalparam.md)
+- [func AEStreamOptionalParam(AEStreamRef!, AEKeyword) -> OSStatus](../coreservices/api-1444481-aestreamoptionalparam.md)
   Designates a parameter in an Apple event as optional.
-- [func AEStreamSetRecordType(AEStreamRef!, DescType) -> OSStatus](../coreservices/1447704-aestreamsetrecordtype.md)
+- [func AEStreamSetRecordType(AEStreamRef!, DescType) -> OSStatus](../coreservices/api-1447704-aestreamsetrecordtype.md)
   Sets the type of the most recently created record in an `AEStreamRef`.
-- [func AEStreamWriteAEDesc(AEStreamRef!, UnsafePointer<AEDesc>!) -> OSStatus](../coreservices/1448487-aestreamwriteaedesc.md)
+- [func AEStreamWriteAEDesc(AEStreamRef!, UnsafePointer<AEDesc>!) -> OSStatus](../coreservices/api-1448487-aestreamwriteaedesc.md)
   Copies an existing descriptor into an `AEStreamRef`.
-- [func AEStreamWriteData(AEStreamRef!, UnsafeRawPointer!, Size) -> OSStatus](../coreservices/1442610-aestreamwritedata.md)
+- [func AEStreamWriteData(AEStreamRef!, UnsafeRawPointer!, Size) -> OSStatus](../coreservices/api-1442610-aestreamwritedata.md)
   Appends data to the current descriptor in an `AEStreamRef`.
-- [func AEStreamWriteDesc(AEStreamRef!, DescType, UnsafeRawPointer!, Size) -> OSStatus](../coreservices/1450387-aestreamwritedesc.md)
+- [func AEStreamWriteDesc(AEStreamRef!, DescType, UnsafeRawPointer!, Size) -> OSStatus](../coreservices/api-1450387-aestreamwritedesc.md)
   Appends the data for a complete descriptor to an `AEStreamRef`.
-- [func AEStreamWriteKey(AEStreamRef!, AEKeyword) -> OSStatus](../coreservices/1448750-aestreamwritekey.md)
+- [func AEStreamWriteKey(AEStreamRef!, AEKeyword) -> OSStatus](../coreservices/api-1448750-aestreamwritekey.md)
   Marks the beginning of a keyword/descriptor pair for a descriptor in an `AEStreamRef`.
-- [func AEStreamWriteKeyDesc(AEStreamRef!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSStatus](../coreservices/1442568-aestreamwritekeydesc.md)
+- [func AEStreamWriteKeyDesc(AEStreamRef!, AEKeyword, DescType, UnsafeRawPointer!, Size) -> OSStatus](../coreservices/api-1442568-aestreamwritekeydesc.md)
   Writes a complete keyword/descriptor pair to an `AEStreamRef`.
 ### Working With Lower Level Apple Event Functions
-- [func AEGetRegisteredMachPort() -> mach_port_t](../coreservices/1449736-aegetregisteredmachport.md)
+- [func AEGetRegisteredMachPort() -> mach_port_t](../coreservices/api-1449736-aegetregisteredmachport.md)
   Returns the Mach port (in the form of a `mach_port_t`) that was registered with the bootstrap server for this process.
-- [func AEDecodeMessage(UnsafeMutablePointer<mach_msg_header_t>!, UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AppleEvent>!) -> OSStatus](../coreservices/1447827-aedecodemessage.md)
+- [func AEDecodeMessage(UnsafeMutablePointer<mach_msg_header_t>!, UnsafeMutablePointer<AppleEvent>!, UnsafeMutablePointer<AppleEvent>!) -> OSStatus](../coreservices/api-1447827-aedecodemessage.md)
   Decodes a Mach message and converts it into an Apple event and its related reply.
-- [func AESendMessage(UnsafePointer<AppleEvent>!, UnsafeMutablePointer<AppleEvent>!, AESendMode, Int) -> OSStatus](../coreservices/1442994-aesendmessage.md)
+- [func AESendMessage(UnsafePointer<AppleEvent>!, UnsafeMutablePointer<AppleEvent>!, AESendMode, Int) -> OSStatus](../coreservices/api-1442994-aesendmessage.md)
   Sends an AppleEvent to a target process without some of the overhead required by `AESend`.
-- [func AEProcessMessage(UnsafeMutablePointer<mach_msg_header_t>!) -> OSStatus](../coreservices/1444387-aeprocessmessage.md)
+- [func AEProcessMessage(UnsafeMutablePointer<mach_msg_header_t>!) -> OSStatus](../coreservices/api-1444387-aeprocessmessage.md)
   Decodes and dispatches a low level Mach message event to an event handler, including packaging and returning the reply to the sender.
 ### Serializing Apple Event Data
-- [func AESizeOfFlattenedDesc(UnsafePointer<AEDesc>!) -> Size](../coreservices/1447305-aesizeofflatteneddesc.md)
+- [func AESizeOfFlattenedDesc(UnsafePointer<AEDesc>!) -> Size](../coreservices/api-1447305-aesizeofflatteneddesc.md)
   Returns the amount of buffer space needed to store the descriptor after flattening it.
-- [func AEFlattenDesc(UnsafePointer<AEDesc>!, Ptr!, Size, UnsafeMutablePointer<Size>!) -> OSStatus](../coreservices/1441808-aeflattendesc.md)
+- [func AEFlattenDesc(UnsafePointer<AEDesc>!, Ptr!, Size, UnsafeMutablePointer<Size>!) -> OSStatus](../coreservices/api-1441808-aeflattendesc.md)
   Flattens the specified descriptor and stores the data in the supplied buffer.
-- [func AEUnflattenDesc(UnsafeRawPointer!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/1448997-aeunflattendesc.md)
+- [func AEUnflattenDesc(UnsafeRawPointer!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](../coreservices/api-1448997-aeunflattendesc.md)
   Unflattens the data in the passed buffer and creates a descriptor from it.
 ### Miscellaneous
-- [func AECheckIsRecord(UnsafePointer<AEDesc>!) -> Bool](../coreservices/1444011-aecheckisrecord.md)
+- [func AECheckIsRecord(UnsafePointer<AEDesc>!) -> Bool](../coreservices/api-1444011-aecheckisrecord.md)
   Determines whether a descriptor is truly an `AERecord`.
-- [func AEInitializeDesc(UnsafeMutablePointer<AEDesc>!)](../coreservices/1446047-aeinitializedesc.md)
+- [func AEInitializeDesc(UnsafeMutablePointer<AEDesc>!)](../coreservices/api-1446047-aeinitializedesc.md)
   Initializes a new descriptor. 
 ### Callbacks
 - [typealias AERemoteProcessResolverCallback](../coreservices/aeremoteprocessresolvercallback.md)
@@ -427,120 +428,120 @@ You can check for version and feature availabilityinformation by using the Apple
   Represents syntax errors found by an Apple Event build routine.
 - [typealias AESendMode](../coreservices/aesendmode.md)
   Specify send preferences to the `AESend` function.
-- [Apple Event Recording Event ID Constants](../coreservices/apple_events/1527224-apple_event_recording_event_id_c.md)
+- [Apple Event Recording Event ID Constants](../coreservices/apple_events/api-1527224-apple_event_recording_event_id_c.md)
   Specify event IDs for events that deal with Apple event recording.
-- [cAEList](apple_event_manager/1556411-caelist.md)
-- [Callback Constants for the AEResolve Function](../coreservices/apple_events/1572741-callback_constants_for_the_aeres.md)
+- [cAEList](./apple_event_manager/api-1556411-caelist.md)
+- [Callback Constants for the AEResolve Function](../coreservices/apple_events/api-1572741-callback_constants_for_the_aeres.md)
   Specify supported callback features to the `AEResolve` function.
-- [cInsertionLoc](apple_event_manager/1556389-cinsertionloc.md)
-- [cKeystroke](apple_event_manager/1556385-ckeystroke.md)
-- [Comparison Operator Constants](apple_event_manager/comparison_operator_constants.md)
+- [cInsertionLoc](./apple_event_manager/api-1556389-cinsertionloc.md)
+- [cKeystroke](./apple_event_manager/api-1556385-ckeystroke.md)
+- [Comparison Operator Constants](./apple_event_manager/comparison_operator_constants.md)
   Specify a comparison operation to perform on two operands.
-- [Constants for Object Specifiers, Positions, and Logical and Comparison Operations](../coreservices/apple_events/1572744-constants_for_object_specifiers_.md)
+- [Constants for Object Specifiers, Positions, and Logical and Comparison Operations](../coreservices/apple_events/api-1572744-constants_for_object_specifiers_.md)
   Specify the types of the four keyword-specified descriptors that make up the data in an object specifier, as well as constants for position, logical operations, and comparison operations.
-- [cURL](apple_event_manager/1556375-curl.md)
-- [cVersion](apple_event_manager/cversion.md)
-- [Data Array Constants](../coreservices/apple_events/1542848-data_array_constants.md)
+- [cURL](./apple_event_manager/api-1556375-curl.md)
+- [cVersion](./apple_event_manager/cversion.md)
+- [Data Array Constants](../coreservices/apple_events/api-1542848-data_array_constants.md)
   Specify an array type for storing or extracting descriptor lists with the `AEPutArray` and `AEGetArray` functions.
-- [Descriptor Type Constants](../coreservices/apple_events/1542788-descriptor_type_constants.md)
+- [Descriptor Type Constants](../coreservices/apple_events/api-1542788-descriptor_type_constants.md)
   Specify types for descriptors.
-- [eScheme](apple_event_manager/1556397-escheme.md)
-- [Event Class Constants](../coreservices/apple_events/1527210-event_class_constants.md)
+- [eScheme](./apple_event_manager/api-1556397-escheme.md)
+- [Event Class Constants](../coreservices/apple_events/api-1527210-event_class_constants.md)
   Specify the event class for an Apple event.
-- [Event ID Constants](../coreservices/apple_events/1527223-event_id_constants.md)
+- [Event ID Constants](../coreservices/apple_events/api-1527223-event_id_constants.md)
   Specify the event ID for an Apple event.
-- [Event Source Constants](../coreservices/apple_events/1527201-event_source_constants.md)
+- [Event Source Constants](../coreservices/apple_events/api-1527201-event_source_constants.md)
   Identify how an Apple event was delivered.
-- [Factoring Constants](../coreservices/apple_events/1542928-factoring_constants.md)
-- [ID Constants for the AECreateAppleEvent Function](../coreservices/apple_events/1542799-id_constants_for_the_aecreateapp.md)
+- [Factoring Constants](../coreservices/apple_events/api-1542928-factoring_constants.md)
+- [ID Constants for the AECreateAppleEvent Function](../coreservices/apple_events/api-1542799-id_constants_for_the_aecreateapp.md)
   Specify values for the ID parameters of the `AECreateAppleEvent` function.
-- [Key Form and Descriptor Type Object Specifier Constants](../coreservices/apple_events/1572731-key_form_and_descriptor_type_obj.md)
+- [Key Form and Descriptor Type Object Specifier Constants](../coreservices/apple_events/api-1572731-key_form_and_descriptor_type_obj.md)
   Specify possible values for the `keyAEKeyForm` field of an object specifier, as well as descriptor types used in resolving object specifiers.
-- [Keyword Attribute Constants](../coreservices/apple_events/1542920-keyword_attribute_constants.md)
+- [Keyword Attribute Constants](../coreservices/apple_events/api-1542920-keyword_attribute_constants.md)
   Specify keyword values for Apple event attributes.
-- [Keyword Parameter Constants](../coreservices/apple_events/1527206-keyword_parameter_constants.md)
+- [Keyword Parameter Constants](../coreservices/apple_events/api-1527206-keyword_parameter_constants.md)
   Specify keyword values for Apple event parameters, as well as information for the `AEManagerInfo` function to retrieve. Some common key word values are shown here.
-- [Launch Apple Event Constants](../coreservices/apple_events/1556410-launch_apple_event_constants.md)
+- [Launch Apple Event Constants](../coreservices/apple_events/api-1556410-launch_apple_event_constants.md)
   In a `kAEOpenApplication` event, specify information about how the receiving application was launched.
-- [Numeric Descriptor Type Constants](../coreservices/apple_events/1542872-numeric_descriptor_type_constant.md)
+- [Numeric Descriptor Type Constants](../coreservices/apple_events/api-1542872-numeric_descriptor_type_constant.md)
   Specify types for numeric descriptors.
-- [Object Class ID Constants](../coreservices/apple_events/1556368-object_class_id_constants.md)
+- [Object Class ID Constants](../coreservices/apple_events/api-1556368-object_class_id_constants.md)
   Specify the object class for an Apple event object.
-- [Other Descriptor Type Constants](../coreservices/apple_events/1542760-other_descriptor_type_constants.md)
+- [Other Descriptor Type Constants](../coreservices/apple_events/api-1542760-other_descriptor_type_constants.md)
   Specify types for Boolean and character descriptors.
-- [Priority Constants for the AESend Function (Deprecated in macOS)](../coreservices/apple_events/1542840-priority_constants_for_the_aesen.md)
+- [Priority Constants for the AESend Function (Deprecated in macOS)](../coreservices/apple_events/api-1542840-priority_constants_for_the_aesen.md)
   Specify a value for the `sendPriority` parameter of the `AESend` function.
-- [Remote Process Dictionary Keys](apple_event_manager/remote_process_dictionary_keys.md)
+- [Remote Process Dictionary Keys](./apple_event_manager/remote_process_dictionary_keys.md)
   Used to extract information from dictionaries with entries that describe remote processes.
-- [Special Handler Callback Constants](../coreservices/apple_events/1572726-special_handler_callback_constan.md)
+- [Special Handler Callback Constants](../coreservices/apple_events/api-1572726-special_handler_callback_constan.md)
   Specify an object callback function to install, get, or remove from the special handler dispatch table.
-- [Timeout Constants](../coreservices/apple_events/1542814-timeout_constants.md)
+- [Timeout Constants](../coreservices/apple_events/api-1542814-timeout_constants.md)
   Specify a timeout value.
-- [Whose Test Constants](apple_event_manager/whose_test_constants.md)
-- [kAEDoObjectsExist](apple_event_manager/kaedoobjectsexist.md)
-- [kAEDebugPOSTHeader](../coreservices/apple_events/1542854-kaedebugpostheader.md)
-- [kAEGetPrivilegeSelection](apple_event_manager/kaegetprivilegeselection.md)
-- [kAEHandleArray](../coreservices/apple_events/1542886-kaehandlearray.md)
-- [kAEInfo](../coreservices/apple_events/1556393-kaeinfo.md)
-- [kAEInternetSuite](../coreservices/apple_events/1556388-kaeinternetsuite.md)
-- [kAEISGetURL](../coreservices/apple_events/1556362-kaeisgeturl.md)
-- [kAEISHTTPSearchArgs](../coreservices/apple_events/1556404-kaeishttpsearchargs.md)
-- [kAELogOut](../coreservices/apple_events/1556395-kaelogout.md)
-- [kAEMenuClass](../coreservices/apple_events/1556392-kaemenuclass.md)
-- [kAEMouseClass](../coreservices/apple_events/1556409-kaemouseclass.md)
-- [kAENonmodifiable](../coreservices/apple_events/1556386-kaenonmodifiable.md)
-- [kAEQDNotOr](../coreservices/apple_events/1556377-kaeqdnotor.md)
-- [kAESetPosition](../coreservices/apple_events/1556407-kaesetposition.md)
-- [kAESocks4Protocol](../coreservices/apple_events/1542847-kaesocks4protocol.md)
-- [kAEUseHTTPProxyAttr](../coreservices/apple_events/1542824-kaeusehttpproxyattr.md)
+- [Whose Test Constants](./apple_event_manager/whose_test_constants.md)
+- [kAEDoObjectsExist](./apple_event_manager/kaedoobjectsexist.md)
+- [kAEDebugPOSTHeader](../coreservices/apple_events/api-1542854-kaedebugpostheader.md)
+- [kAEGetPrivilegeSelection](./apple_event_manager/kaegetprivilegeselection.md)
+- [kAEHandleArray](../coreservices/apple_events/api-1542886-kaehandlearray.md)
+- [kAEInfo](../coreservices/apple_events/api-1556393-kaeinfo.md)
+- [kAEInternetSuite](../coreservices/apple_events/api-1556388-kaeinternetsuite.md)
+- [kAEISGetURL](../coreservices/apple_events/api-1556362-kaeisgeturl.md)
+- [kAEISHTTPSearchArgs](../coreservices/apple_events/api-1556404-kaeishttpsearchargs.md)
+- [kAELogOut](../coreservices/apple_events/api-1556395-kaelogout.md)
+- [kAEMenuClass](../coreservices/apple_events/api-1556392-kaemenuclass.md)
+- [kAEMouseClass](../coreservices/apple_events/api-1556409-kaemouseclass.md)
+- [kAENonmodifiable](../coreservices/apple_events/api-1556386-kaenonmodifiable.md)
+- [kAEQDNotOr](../coreservices/apple_events/api-1556377-kaeqdnotor.md)
+- [kAESetPosition](../coreservices/apple_events/api-1556407-kaesetposition.md)
+- [kAESocks4Protocol](../coreservices/apple_events/api-1542847-kaesocks4protocol.md)
+- [kAEUseHTTPProxyAttr](../coreservices/apple_events/api-1542824-kaeusehttpproxyattr.md)
   Web Services Proxy support—these constants should be added as attributes of the event that is being sent (not as part of the direct object).
-- [kAEUserTerminology](../coreservices/apple_events/1457902-kaeuserterminology.md)
-- [kAEUseSocksAttr](../coreservices/apple_events/1542933-kaeusesocksattr.md)
-- [kAEUTHasReturningParam](../coreservices/apple_events/1457911-kaeuthasreturningparam.md)
-- [kAEZoomIn](../coreservices/apple_events/1556365-kaezoomin.md)
-- [kBySmallIcon](apple_event_manager/1556391-kbysmallicon.md)
-- [kConnSuite](apple_event_manager/1556369-kconnsuite.md)
-- [keyAEAngle](../coreservices/apple_events/1556380-keyaeangle.md)
-- [keyAEBaseAddr](../coreservices/apple_events/1556383-keyaebaseaddr.md)
-- [keyAEDoScale](../coreservices/apple_events/1556387-keyaedoscale.md)
-- [keyAEHiliteRange](../coreservices/apple_events/1556379-keyaehiliterange.md)
-- [keyAEKeyword](../coreservices/apple_events/1556374-keyaekeyword.md)
-- [keyAEPropData](apple_event_manager/keyaepropdata.md)
-- [keyAESuiteID](../coreservices/apple_events/1556370-keyaesuiteid.md)
-- [keyMenuID](../coreservices/apple_events/1556381-keymenuid.md)
-- [keyMiscellaneous](../coreservices/apple_events/1556399-keymiscellaneous.md)
-- [keyReplyPortAttr](../coreservices/apple_events/1571648-keyreplyportattr.md)
-- [keySOAPStructureMetaData](../coreservices/apple_events/1542797-keysoapstructuremetadata.md)
-- [keyUserNameAttr](../coreservices/apple_events/1542780-keyusernameattr.md)
-- [kFAServerApp](apple_event_manager/1556384-kfaserverapp.md)
-- [kLaunchToGetTerminology](apple_event_manager/1457909-klaunchtogetterminology.md)
-- [kNextBody](apple_event_manager/1556402-knextbody.md)
-- [kOSIZDontOpenResourceFile](apple_event_manager/1457903-kosizdontopenresourcefile.md)
-- [kReadExtensionTermsMask](apple_event_manager/1457896-kreadextensiontermsmask.md)
-- [kSOAP1999Schema](apple_event_manager/1542943-ksoap1999schema.md)
-- [kTextServiceClass](apple_event_manager/1556406-ktextserviceclass.md)
-- [kTSMHiliteCaretPosition](apple_event_manager/1556398-ktsmhilitecaretposition.md)
+- [kAEUserTerminology](../coreservices/apple_events/api-1457902-kaeuserterminology.md)
+- [kAEUseSocksAttr](../coreservices/apple_events/api-1542933-kaeusesocksattr.md)
+- [kAEUTHasReturningParam](../coreservices/apple_events/api-1457911-kaeuthasreturningparam.md)
+- [kAEZoomIn](../coreservices/apple_events/api-1556365-kaezoomin.md)
+- [kBySmallIcon](./apple_event_manager/api-1556391-kbysmallicon.md)
+- [kConnSuite](./apple_event_manager/api-1556369-kconnsuite.md)
+- [keyAEAngle](../coreservices/apple_events/api-1556380-keyaeangle.md)
+- [keyAEBaseAddr](../coreservices/apple_events/api-1556383-keyaebaseaddr.md)
+- [keyAEDoScale](../coreservices/apple_events/api-1556387-keyaedoscale.md)
+- [keyAEHiliteRange](../coreservices/apple_events/api-1556379-keyaehiliterange.md)
+- [keyAEKeyword](../coreservices/apple_events/api-1556374-keyaekeyword.md)
+- [keyAEPropData](./apple_event_manager/keyaepropdata.md)
+- [keyAESuiteID](../coreservices/apple_events/api-1556370-keyaesuiteid.md)
+- [keyMenuID](../coreservices/apple_events/api-1556381-keymenuid.md)
+- [keyMiscellaneous](../coreservices/apple_events/api-1556399-keymiscellaneous.md)
+- [keyReplyPortAttr](../coreservices/apple_events/api-1571648-keyreplyportattr.md)
+- [keySOAPStructureMetaData](../coreservices/apple_events/api-1542797-keysoapstructuremetadata.md)
+- [keyUserNameAttr](../coreservices/apple_events/api-1542780-keyusernameattr.md)
+- [kFAServerApp](./apple_event_manager/api-1556384-kfaserverapp.md)
+- [kLaunchToGetTerminology](./apple_event_manager/api-1457909-klaunchtogetterminology.md)
+- [kNextBody](./apple_event_manager/api-1556402-knextbody.md)
+- [kOSIZDontOpenResourceFile](./apple_event_manager/api-1457903-kosizdontopenresourcefile.md)
+- [kReadExtensionTermsMask](./apple_event_manager/api-1457896-kreadextensiontermsmask.md)
+- [kSOAP1999Schema](./apple_event_manager/api-1542943-ksoap1999schema.md)
+- [kTextServiceClass](./apple_event_manager/api-1556406-ktextserviceclass.md)
+- [kTSMHiliteCaretPosition](./apple_event_manager/api-1556398-ktsmhilitecaretposition.md)
   Specify text highlighting information.
-- [kTSMOutsideOfBody](apple_event_manager/1556371-ktsmoutsideofbody.md)
-- [pArcAngle](apple_event_manager/1556376-parcangle.md)
-- [pFormula](apple_event_manager/1556373-pformula.md)
-- [pNewElementLoc](apple_event_manager/1556400-pnewelementloc.md)
-- [pScheme](apple_event_manager/1556408-pscheme.md)
-- [pTextStyles](apple_event_manager/1556367-ptextstyles.md)
-- [typeAEText](apple_event_manager/1556366-typeaetext.md)
-- [typeApplicationBundleID](apple_event_manager/1542896-typeapplicationbundleid.md)
+- [kTSMOutsideOfBody](./apple_event_manager/api-1556371-ktsmoutsideofbody.md)
+- [pArcAngle](./apple_event_manager/api-1556376-parcangle.md)
+- [pFormula](./apple_event_manager/api-1556373-pformula.md)
+- [pNewElementLoc](./apple_event_manager/api-1556400-pnewelementloc.md)
+- [pScheme](./apple_event_manager/api-1556408-pscheme.md)
+- [pTextStyles](./apple_event_manager/api-1556367-ptextstyles.md)
+- [typeAEText](./apple_event_manager/api-1556366-typeaetext.md)
+- [typeApplicationBundleID](./apple_event_manager/api-1542896-typeapplicationbundleid.md)
   For specifying a target application by bundle ID.
-- [typeFinderWindow](apple_event_manager/typefinderwindow.md)
-- [typeHIMenu](apple_event_manager/1556372-typehimenu.md)
-- [typeKernelProcessID](apple_event_manager/1542936-typekernelprocessid.md)
+- [typeFinderWindow](./apple_event_manager/typefinderwindow.md)
+- [typeHIMenu](./apple_event_manager/api-1556372-typehimenu.md)
+- [typeKernelProcessID](./apple_event_manager/api-1542936-typekernelprocessid.md)
   For specifying an application by UNIX process ID.
-- [typeMachPort](apple_event_manager/typemachport.md)
+- [typeMachPort](./apple_event_manager/typemachport.md)
   For specifying a Mach port.
-- [typeMeters](apple_event_manager/1556382-typemeters.md)
-- [typePixelMap](apple_event_manager/typepixelmap.md)
-- [typeReplyPortAttr](apple_event_manager/1571649-typereplyportattr.md)
-- [typeTIFF](apple_event_manager/1556405-typetiff.md)
-- [typeUnicodeText](apple_event_manager/1542918-typeunicodetext.md)
+- [typeMeters](./apple_event_manager/api-1556382-typemeters.md)
+- [typePixelMap](./apple_event_manager/typepixelmap.md)
+- [typeReplyPortAttr](./apple_event_manager/api-1571649-typereplyportattr.md)
+- [typeTIFF](./apple_event_manager/api-1556405-typetiff.md)
+- [typeUnicodeText](./apple_event_manager/api-1542918-typeunicodetext.md)
 ### Result Codes
 - [var noPortErr: Int](../coreservices/noporterr.md)
   Client hasn’t set `'SIZE'` resource toindicate awareness of high-level events
@@ -679,8 +680,9 @@ You can check for version and feature availabilityinformation by using the Apple
 
 ## See Also
 
-- [ColorSync Manager](colorsync_manager.md)
-- [Speech Synthesis Manager](speech_synthesis_manager.md)
+### Managers
+- [ColorSync Manager](./colorsync_manager.md)
+- [Speech Synthesis Manager](./speech_synthesis_manager.md)
 
 
 ---

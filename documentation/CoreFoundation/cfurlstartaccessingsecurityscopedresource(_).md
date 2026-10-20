@@ -1,7 +1,8 @@
 # CFURLStartAccessingSecurityScopedResource(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
 
@@ -20,19 +21,23 @@ In an app that has adopted App Sandbox, makes the resource pointed to by a secur
 func CFURLStartAccessingSecurityScopedResource(_ url: CFURL!) -> Bool
 ```
 
+```c
+extern Boolean CFURLStartAccessingSecurityScopedResource(CFURLRef url);
+```
+
 #### Return Value
 
 `true` if the request to access the resource succeeded; otherwise, `false`.
 
 #### Discussion
 
-When you obtain a security-scoped URL, such as by resolving a security-scoped bookmark, you cannot immediately use the resource it points to. To make the resource available to your app, by way of adding its location to your app’s sandbox, call this function (or its Cocoa equivalent, [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource())) on the security-scoped URL.
+When you obtain a security-scoped URL, such as by resolving a security-scoped bookmark, you cannot immediately use the resource it points to. To make the resource available to your app, by way of adding its location to your app’s sandbox, call this function (or its Cocoa equivalent, [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md)) on the security-scoped URL.
 
-Calls to the [`CFURLStartAccessingSecurityScopedResource(_:)`](cfurlstartaccessingsecurityscopedresource(_:).md) function (or its Cocoa equivalent) are nestable on a per-process basis. This means that if your app calls the `start` method on a URL twice, to fully relinquish access to the referenced resource you must call the corresponding `stop` method twice.
+Calls to the [`CFURLStartAccessingSecurityScopedResource(_:)`](./cfurlstartaccessingsecurityscopedresource%28_%29.md) function (or its Cocoa equivalent) are nestable on a per-process basis. This means that if your app calls the `start` method on a URL twice, to fully relinquish access to the referenced resource you must call the corresponding `stop` method twice.
 
-> ⚠️ **Warning**:  You must balance every call to the [`CFURLStartAccessingSecurityScopedResource(_:)`](cfurlstartaccessingsecurityscopedresource(_:).md) method with a corresponding call to the [`CFURLStopAccessingSecurityScopedResource(_:)`](cfurlstopaccessingsecurityscopedresource(_:).md) method. If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, such as via Powerbox or security-scoped bookmarks, until relaunched.
+> ⚠️ **Warning**:  You must balance every call to the [`CFURLStartAccessingSecurityScopedResource(_:)`](./cfurlstartaccessingsecurityscopedresource%28_%29.md) method with a corresponding call to the [`CFURLStopAccessingSecurityScopedResource(_:)`](./cfurlstopaccessingsecurityscopedresource%28_%29.md) method. If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, such as via Powerbox or security-scoped bookmarks, until relaunched.
 
-> **Note**:  Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
+> **Version note**:  Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
 
 ## Parameters
 
@@ -40,15 +45,16 @@ Calls to the [`CFURLStartAccessingSecurityScopedResource(_:)`](cfurlstartaccessi
 
 ## See Also
 
-- [func CFURLCreateBookmarkData(CFAllocator!, CFURL!, CFURLBookmarkCreationOptions, CFArray!, CFURL!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](cfurlcreatebookmarkdata(_:_:_:_:_:_:).md)
+### Working with Bookmark Data
+- [func CFURLCreateBookmarkData(CFAllocator!, CFURL!, CFURLBookmarkCreationOptions, CFArray!, CFURL!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](./cfurlcreatebookmarkdata%28_,_,_,_,_,_%29.md)
   Returns bookmark data for a URL, created with specified options and resource values.
-- [func CFURLCreateBookmarkDataFromAliasRecord(CFAllocator!, CFData!) -> Unmanaged<CFData>!](cfurlcreatebookmarkdatafromaliasrecord(_:_:).md)
+- [func CFURLCreateBookmarkDataFromAliasRecord(CFAllocator!, CFData!) -> Unmanaged<CFData>!](./cfurlcreatebookmarkdatafromaliasrecord%28_,_%29.md)
   Initializes and returns bookmark data derived from an alias record.
-- [func CFURLCreateBookmarkDataFromFile(CFAllocator!, CFURL!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](cfurlcreatebookmarkdatafromfile(_:_:_:).md)
+- [func CFURLCreateBookmarkDataFromFile(CFAllocator!, CFURL!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](./cfurlcreatebookmarkdatafromfile%28_,_,_%29.md)
   Initializes and returns bookmark data derived from a file pointed to by a specified URL.
-- [func CFURLWriteBookmarkDataToFile(CFData!, CFURL!, CFURLBookmarkFileCreationOptions, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](cfurlwritebookmarkdatatofile(_:_:_:_:).md)
+- [func CFURLWriteBookmarkDataToFile(CFData!, CFURL!, CFURLBookmarkFileCreationOptions, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./cfurlwritebookmarkdatatofile%28_,_,_,_%29.md)
   Creates an alias file on disk at a specified location with specified bookmark data.
-- [func CFURLStopAccessingSecurityScopedResource(CFURL!)](cfurlstopaccessingsecurityscopedresource(_:).md)
+- [func CFURLStopAccessingSecurityScopedResource(CFURL!)](./cfurlstopaccessingsecurityscopedresource%28_%29.md)
   In an app that adopts App Sandbox, revokes access to the resource pointed to by a security-scoped URL.
 
 

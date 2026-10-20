@@ -1,7 +1,8 @@
 # whLossDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var whLossDescriptor: MPSCNNLossDescriptor { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nonnull) MPSCNNLossDescriptor * WHLossDescriptor;
 ```
 
 

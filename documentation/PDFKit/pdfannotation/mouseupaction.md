@@ -1,17 +1,22 @@
 # mouseUpAction
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to perform when a user releases the mouse button within an annotation.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.13
 
 ## Declaration
 
 ```swift
 var mouseUpAction: PDFAction? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) PDFAction * mouseUpAction;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ The mouse-up action is optional.
 
 ## See Also
 
-- [var toolTip: String?](pdfannotation/tooltip.md)
+### Deprecated Properties
+- [var toolTip: String?](./tooltip.md)
   Returns text for display as a help tag.
 
 

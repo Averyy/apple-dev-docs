@@ -1,7 +1,8 @@
 # light
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The light font weight.
 
@@ -9,7 +10,7 @@ The light font weight.
 - iOS 8.2+
 - iPadOS 8.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,23 +20,28 @@ The light font weight.
 static let light: UIFont.Weight
 ```
 
+```c
+extern const UIFontWeight UIFontWeightLight;
+```
+
 ## See Also
 
-- [static let ultraLight: UIFont.Weight](uifont/weight/ultralight.md)
+### Using system-defined font weights
+- [static let ultraLight: UIFont.Weight](./ultralight.md)
   The ultra-light font weight.
-- [static let thin: UIFont.Weight](uifont/weight/thin.md)
+- [static let thin: UIFont.Weight](./thin.md)
   The thin font weight.
-- [static let regular: UIFont.Weight](uifont/weight/regular.md)
+- [static let regular: UIFont.Weight](./regular.md)
   The regular font weight.
-- [static let medium: UIFont.Weight](uifont/weight/medium.md)
+- [static let medium: UIFont.Weight](./medium.md)
   The medium font weight.
-- [static let semibold: UIFont.Weight](uifont/weight/semibold.md)
+- [static let semibold: UIFont.Weight](./semibold.md)
   The semibold font weight.
-- [static let bold: UIFont.Weight](uifont/weight/bold.md)
+- [static let bold: UIFont.Weight](./bold.md)
   The bold font weight.
-- [static let heavy: UIFont.Weight](uifont/weight/heavy.md)
+- [static let heavy: UIFont.Weight](./heavy.md)
   The heavy font weight.
-- [static let black: UIFont.Weight](uifont/weight/black.md)
+- [static let black: UIFont.Weight](./black.md)
   The black font weight.
 
 

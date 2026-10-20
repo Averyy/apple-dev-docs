@@ -1,7 +1,8 @@
 # diagnosticLogs.ProductData.DiagnosticInsights
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about an insight including a descriptive string, category, and URL.
 
@@ -10,7 +11,7 @@ Information about an insight including a descriptive string, category, and URL.
 
 ## Declaration
 
-```swift
+```
 object diagnosticLogs.ProductData.DiagnosticInsights
 ```
 
@@ -22,11 +23,12 @@ object diagnosticLogs.ProductData.DiagnosticInsights
 
 ## See Also
 
-- [object diagnosticLogs.ProductData.DiagnosticLogs](diagnosticlogs/productdata-data.dictionary/diagnosticlogs-data.dictionary.md)
+### Objects
+- [object diagnosticLogs.ProductData.DiagnosticLogs](./diagnosticlogs-data.dictionary.md)
   The call stack representation and metadata of the diagnostic log.
-- [type DiagnosticInsightDirection](diagnosticinsightdirection.md)
+- [type DiagnosticInsightDirection](../../diagnosticinsightdirection.md)
   A string that describes the diagnostic insight direction.
-- [type DiagnosticInsightType](diagnosticinsighttype.md)
+- [type DiagnosticInsightType](../../diagnosticinsighttype.md)
   A string that desribes the diagnostic insight type.
 
 

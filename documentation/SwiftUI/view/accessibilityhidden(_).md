@@ -1,7 +1,8 @@
 # accessibilityHidden(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether to hide this view from system accessibility features.
 
@@ -23,7 +24,8 @@ func accessibilityHidden(_ hidden: Bool) -> ModifiedContent<Self, AccessibilityA
 
 ## See Also
 
-- [func accessibilityHidden(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityhidden(_:isenabled:).md)
+### Hiding elements
+- [func accessibilityHidden(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityhidden%28_,isenabled%29.md)
   Specifies whether to hide this view from system accessibility features.
 
 

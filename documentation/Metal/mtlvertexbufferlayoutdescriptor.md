@@ -1,7 +1,8 @@
 # MTLVertexBufferLayoutDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that configures how a render pipeline fetches data to send to the vertex function.
 
@@ -10,7 +11,7 @@ An object that configures how a render pipeline fetches data to send to the vert
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,42 +20,47 @@ An object that configures how a render pipeline fetches data to send to the vert
 class MTLVertexBufferLayoutDescriptor
 ```
 
+```objc
+@interface MTLVertexBufferLayoutDescriptor : NSObject
+```
+
 ## Topics
 
 ### Organizing the vertex buffer layout
-- [var stepFunction: MTLVertexStepFunction](mtlvertexbufferlayoutdescriptor/stepfunction.md)
+- [var stepFunction: MTLVertexStepFunction](./mtlvertexbufferlayoutdescriptor/stepfunction.md)
   The circumstances under which the vertex and its attributes are presented to the vertex function.
-- [var stepRate: Int](mtlvertexbufferlayoutdescriptor/steprate.md)
+- [var stepRate: Int](./mtlvertexbufferlayoutdescriptor/steprate.md)
   The interval at which the vertex and its attributes are presented to the vertex function.
-- [var stride: Int](mtlvertexbufferlayoutdescriptor/stride.md)
+- [var stride: Int](./mtlvertexbufferlayoutdescriptor/stride.md)
   The number of bytes between the first byte of two consecutive vertices in a buffer.
-- [enum MTLVertexStepFunction](mtlvertexstepfunction.md)
+- [enum MTLVertexStepFunction](./mtlvertexstepfunction.md)
   The frequency with which the vertex function or post-tessellation vertex function fetches attribute data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLVertexDescriptor](mtlvertexdescriptor.md)
+### Render pass inputs
+- [class MTLVertexDescriptor](./mtlvertexdescriptor.md)
   An instance that describes how to organize and map data to a vertex function.
-- [class MTLVertexAttributeDescriptor](mtlvertexattributedescriptor.md)
+- [class MTLVertexAttributeDescriptor](./mtlvertexattributedescriptor.md)
   An object that determines how to store attribute data in memory and map it to the arguments of a vertex function.
-- [class MTLVertexAttributeDescriptorArray](mtlvertexattributedescriptorarray.md)
+- [class MTLVertexAttributeDescriptorArray](./mtlvertexattributedescriptorarray.md)
   An array of vertex attribute descriptor instances.
-- [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
+- [class MTLVertexBufferLayoutDescriptorArray](./mtlvertexbufferlayoutdescriptorarray.md)
   An array of vertex buffer layout descriptor instances.
-- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](./mtlbufferlayoutstridedynamic.md)
 
 
 ---

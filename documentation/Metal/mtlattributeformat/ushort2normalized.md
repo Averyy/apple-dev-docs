@@ -1,7 +1,8 @@
 # MTLAttributeFormat.ushort2Normalized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Two unsigned normalized 16-bit values
 
@@ -19,21 +20,26 @@ Two unsigned normalized 16-bit values
 case ushort2Normalized
 ```
 
+```c
+MTLAttributeFormatUShort2Normalized
+```
+
 ## See Also
 
-- [MTLAttributeFormat.shortNormalized](mtlattributeformat/shortnormalized.md)
+### 16-bit normalized integer formats
+- [MTLAttributeFormat.shortNormalized](./shortnormalized.md)
   A 16-bit, normalized, signed integer value.
-- [MTLAttributeFormat.short2Normalized](mtlattributeformat/short2normalized.md)
+- [MTLAttributeFormat.short2Normalized](./short2normalized.md)
   A two-component vector with 16-bit, normalized, signed integer values.
-- [MTLAttributeFormat.short3Normalized](mtlattributeformat/short3normalized.md)
+- [MTLAttributeFormat.short3Normalized](./short3normalized.md)
   A three-component vector with 16-bit, normalized, signed integer values.
-- [MTLAttributeFormat.short4Normalized](mtlattributeformat/short4normalized.md)
+- [MTLAttributeFormat.short4Normalized](./short4normalized.md)
   A four-component vector with 16-bit, normalized, signed integer values.
-- [MTLAttributeFormat.ushortNormalized](mtlattributeformat/ushortnormalized.md)
+- [MTLAttributeFormat.ushortNormalized](./ushortnormalized.md)
   A 16-bit, normalized, unsigned integer value.
-- [MTLAttributeFormat.ushort3Normalized](mtlattributeformat/ushort3normalized.md)
+- [MTLAttributeFormat.ushort3Normalized](./ushort3normalized.md)
   A three-component vector with 16-bit, normalized, unsigned integer values.
-- [MTLAttributeFormat.ushort4Normalized](mtlattributeformat/ushort4normalized.md)
+- [MTLAttributeFormat.ushort4Normalized](./ushort4normalized.md)
   A four-component vector with 16-bit, normalized, unsigned integer values.
 
 

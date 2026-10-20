@@ -1,7 +1,8 @@
 # tracking
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a tracking attribute.
 
@@ -22,7 +23,8 @@ let tracking: AttributeScopes.SwiftUIAttributes.TrackingAttribute
 
 ## See Also
 
-- [let font: AttributeScopes.SwiftUIAttributes.FontAttribute](attributescopes/swiftuiattributes/font.md)
+### Using Font and Layout Attributes
+- [let font: AttributeScopes.SwiftUIAttributes.FontAttribute](./font.md)
   A property for accessing a font attribute.
 
 

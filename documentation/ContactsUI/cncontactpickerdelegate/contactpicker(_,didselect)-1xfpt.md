@@ -1,7 +1,8 @@
 # contactPicker(_:didSelect:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a property of the contact has been selected by the user.
 
@@ -14,8 +15,28 @@ Called when a property of the contact has been selected by the user.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+optional func contactPicker(_ picker: CNContactPickerViewController, didSelect contactProperty: CNContactProperty)
+```
+
+*macOS*
+
 ```swift
 optional func contactPicker(_ picker: CNContactPicker, didSelect contactProperty: CNContactProperty)
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (void) contactPicker:(CNContactPickerViewController *) picker didSelectContactProperty:(CNContactProperty *) contactProperty;
+```
+
+*macOS*
+
+```objc
+- (void) contactPicker:(CNContactPicker *) picker didSelectContactProperty:(CNContactProperty *) contactProperty;
 ```
 
 #### Discussion
@@ -29,11 +50,12 @@ This delegate method ia called when the user selects a single property of the co
 
 ## See Also
 
-- [func contactPicker(CNContactPickerViewController, didSelect: CNContact)](cncontactpickerdelegate/contactpicker(_:didselect:)-7vcyc.md)
+### Responding to User Selections
+- [func contactPicker(CNContactPickerViewController, didSelect: CNContact)](./contactpicker%28_,didselect%29-7vcyc.md)
   Called after a contact has been selected by the user.
-- [func contactPicker(CNContactPickerViewController, didSelect: [CNContact])](cncontactpickerdelegate/contactpicker(_:didselect:)-5neeo.md)
+- [func contactPicker(CNContactPickerViewController, didSelect: [CNContact])](./contactpicker%28_,didselect%29-5neeo.md)
   Called after contacts have been selected by the user.
-- [func contactPicker(CNContactPickerViewController, didSelectContactProperties: [CNContactProperty])](cncontactpickerdelegate/contactpicker(_:didselectcontactproperties:).md)
+- [func contactPicker(CNContactPickerViewController, didSelectContactProperties: [CNContactProperty])](./contactpicker%28_,didselectcontactproperties%29.md)
   Called after contact properties have been selected by the user.
 
 

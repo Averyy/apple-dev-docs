@@ -1,7 +1,8 @@
 # size
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total size, in bytes
 

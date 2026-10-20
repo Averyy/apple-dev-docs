@@ -1,7 +1,8 @@
 # label
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for a corresponding value that represents a textual label for a dragging item, for example, a file name.
 
@@ -14,9 +15,14 @@ A key for a corresponding value that represents a textual label for a dragging i
 static let label: NSDraggingItem.ImageComponentKey
 ```
 
+```c
+extern NSDraggingImageComponentKey const NSDraggingImageComponentLabelKey;
+```
+
 ## See Also
 
-- [static let icon: NSDraggingItem.ImageComponentKey](nsdraggingitem/imagecomponentkey/icon.md)
+### Constants
+- [static let icon: NSDraggingItem.ImageComponentKey](./icon.md)
   A key for a corresponding value that is a dragging item’s image.
 
 

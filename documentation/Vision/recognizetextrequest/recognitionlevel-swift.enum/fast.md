@@ -1,7 +1,8 @@
 # RecognizeTextRequest.RecognitionLevel.fast
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Fast text recognition returns results more quickly at the expense of accuracy.
 
@@ -21,7 +22,8 @@ case fast
 
 ## See Also
 
-- [RecognizeTextRequest.RecognitionLevel.accurate](recognizetextrequest/recognitionlevel-swift.enum/accurate.md)
+### Getting the recognition levels
+- [RecognizeTextRequest.RecognitionLevel.accurate](./accurate.md)
   Accurate text recognition takes more time to produce a more comprehensive result.
 
 

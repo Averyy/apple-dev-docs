@@ -1,7 +1,8 @@
 # draggingLocation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current cursor location of the drag in screen coordinates.
 
@@ -12,6 +13,10 @@ The current cursor location of the drag in screen coordinates.
 
 ```swift
 var draggingLocation: NSPoint { get }
+```
+
+```objc
+@property (readonly) NSPoint draggingLocation;
 ```
 
 

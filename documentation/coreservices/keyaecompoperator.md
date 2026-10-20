@@ -1,9 +1,10 @@
 # keyAECompOperator
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Specifies a descriptor of `typeType`, whose data consists of one of the constant values described in [`Key Form and Descriptor Type Object Specifier Constants`](apple_events/1572731-key_form_and_descriptor_type_obj.md).
+Specifies a descriptor of `typeType`, whose data consists of one of the constant values described in [Key Form and Descriptor Type Object Specifier Constants](./apple_events/api-1572731-key_form_and_descriptor_type_obj.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

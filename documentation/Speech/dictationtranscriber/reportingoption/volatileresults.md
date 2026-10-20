@@ -1,7 +1,8 @@
 # DictationTranscriber.ReportingOption.volatileResults
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Provides tentative results for an audio range in addition to the finalized result.
 
@@ -24,9 +25,10 @@ The transcriber will deliver several results for an audio range as it refines th
 
 ## See Also
 
-- [DictationTranscriber.ReportingOption.alternativeTranscriptions](dictationtranscriber/reportingoption/alternativetranscriptions.md)
+### Reporting options
+- [DictationTranscriber.ReportingOption.alternativeTranscriptions](./alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
-- [DictationTranscriber.ReportingOption.frequentFinalization](dictationtranscriber/reportingoption/frequentfinalization.md)
+- [DictationTranscriber.ReportingOption.frequentFinalization](./frequentfinalization.md)
   Biases the transcriber towards responsiveness, resulting in more frequent but also less accurate finalized results.
 
 

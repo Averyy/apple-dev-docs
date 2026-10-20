@@ -1,18 +1,23 @@
 # right
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ess_tcc_authorization_right_t
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var right: es_tcc_authorization_right_t
+```
+
+```c
+es_tcc_authorization_right_t right;
 ```
 
 #### Discussion

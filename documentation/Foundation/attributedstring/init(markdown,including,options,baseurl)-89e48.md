@@ -1,7 +1,8 @@
 # init(markdown:including:options:baseURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string from a Markdown-formatted string using the provided options and attribute scope that a key path identifies.
 
@@ -22,20 +23,21 @@ init<S>(markdown: String, including scope: KeyPath<AttributeScopes, S.Type>, opt
 
 #### Discussion
 
-If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
+If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](../markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](../nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
 
 ## Parameters
 
 - `markdown`: The string that contains the Markdown formatting.
-- `scope`: The [`AttributeScopes`](attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
+- `scope`: The [`AttributeScopes`](../attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
 - `options`: Options that affect how the initializer interprets formatting in the Markdown string. This parameter defaults to no options.
 - `baseURL`: The base URL to use when resolving Markdown URLs. The initializer treats URLs as being relative to this URL. If this value is `nil`, the initializer doesn’t resolve URLs. The default is `nil`.
 
 ## See Also
 
-- [init(markdown: String, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](attributedstring/init(markdown:options:baseurl:)-52n3u.md)
+### Initializing from Markdown Strings
+- [init(markdown: String, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28markdown,options,baseurl%29-52n3u.md)
   Creates an attributed string from a Markdown-formatted string using the provided options.
-- [init<S>(markdown: String, including: S.Type, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](attributedstring/init(markdown:including:options:baseurl:)-4m51b.md)
+- [init<S>(markdown: String, including: S.Type, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28markdown,including,options,baseurl%29-4m51b.md)
   Creates an attributed string from a Markdown-formatted string using the provided options and attribute scope.
 
 

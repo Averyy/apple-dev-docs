@@ -1,7 +1,8 @@
 # selectedAnimation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active animation on the entity.
 

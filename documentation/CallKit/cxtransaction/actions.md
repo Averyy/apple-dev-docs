@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actions added to a transaction.
 
@@ -18,11 +19,16 @@ The actions added to a transaction.
 var actions: [CXAction] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<__kindof CXAction *> * actions;
+```
+
 ## See Also
 
-- [var uuid: UUID](cxtransaction/uuid.md)
+### Accessing Transaction Attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier of the transaction.
-- [var isComplete: Bool](cxtransaction/iscomplete.md)
+- [var isComplete: Bool](./iscomplete.md)
   A Boolean value that indicates whether the transaction has been completed.
 
 

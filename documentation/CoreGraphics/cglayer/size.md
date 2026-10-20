@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the width and height of a layer object.
 
@@ -10,7 +11,7 @@ Returns the width and height of a layer object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ Returns the width and height of a layer object.
 var size: CGSize { get }
 ```
 
+```c
+extern CGSize CGLayerGetSize(CGLayerRef layer);
+```
+
 ## See Also
 
-- [var context: CGContext?](cglayer/context.md)
+### Examining a Layer
+- [var context: CGContext?](./context.md)
   Returns the graphics context associated with a layer object.
 
 

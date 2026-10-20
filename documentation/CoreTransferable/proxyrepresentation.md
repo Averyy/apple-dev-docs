@@ -1,7 +1,8 @@
 # ProxyRepresentation
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transfer representation that uses another type’s transfer representation as its own.
 
@@ -22,11 +23,11 @@ struct ProxyRepresentation<Item, ProxyRepresentation> where Item : Transferable,
 
 ## Mentions
 
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
 #### Overview
 
-Use this representation to rely on an existing transfer representation that’s suitable for the type. For example,  a `Note` type might use the [`String`](https://developer.apple.com/documentation/swift/string) structure’s built-in [`Transferable`](transferable.md) conformance — a plain text representation — so it can be pasted into any text editor:
+Use this representation to rely on an existing transfer representation that’s suitable for the type. For example,  a `Note` type might use the [`String`](../Swift/string.md) structure’s built-in [`Transferable`](./transferable.md) conformance — a plain text representation — so it can be pasted into any text editor:
 
 ```swift
 struct Note: Transferable {
@@ -60,36 +61,37 @@ Write the order of the representations in the `transferRepresentation` property 
 
 `ProxyRepresentation` is a convenience, and its evaluation isn’t supposed to be calculation-heavy. Don’t perform long-running work in `exporting` and `importing` closures. They shouldn’t contain network requests, file operations, or other potentially time-consuming tasks as they can cause delays during operations with `Transferable` items.
 
-Use [`FileRepresentation`](filerepresentation.md) or [`DataRepresentation`](datarepresentation.md) to read and write files or for other lengthy tasks.
+Use [`FileRepresentation`](./filerepresentation.md) or [`DataRepresentation`](./datarepresentation.md) to read and write files or for other lengthy tasks.
 
 ## Topics
 
 ### Initializers
-- [init(exporting: (Item) async throws -> ProxyRepresentation)](proxyrepresentation/init(exporting:)-6gjdh.md)
+- [init(exporting: (Item) async throws -> ProxyRepresentation)](./proxyrepresentation/init%28exporting%29-6gjdh.md)
   Creates a transfer representation that’s exported by proxy through another transfer representation.
-- [init(exporting: (Item) throws -> ProxyRepresentation)](proxyrepresentation/init(exporting:)-q3qp.md)
+- [init(exporting: (Item) throws -> ProxyRepresentation)](./proxyrepresentation/init%28exporting%29-q3qp.md)
   Creates a transfer representation that’s exported by proxy through another transfer representation.
-- [init(exporting: (Item) throws -> ProxyRepresentation, importing: (ProxyRepresentation) throws -> Item)](proxyrepresentation/init(exporting:importing:)-4aiur.md)
+- [init(exporting: (Item) throws -> ProxyRepresentation, importing: (ProxyRepresentation) throws -> Item)](./proxyrepresentation/init%28exporting,importing%29-4aiur.md)
   Creates a transfer representation that’s imported and exported by proxy through another transfer representation.
-- [init(exporting: (Item) async throws -> ProxyRepresentation, importing: (ProxyRepresentation) async throws -> Item)](proxyrepresentation/init(exporting:importing:)-8q8zv.md)
+- [init(exporting: (Item) async throws -> ProxyRepresentation, importing: (ProxyRepresentation) async throws -> Item)](./proxyrepresentation/init%28exporting,importing%29-8q8zv.md)
   Creates a transfer representation that’s imported and exported by proxy through another transfer representation.
-- [init(exporting: (Item) throws -> ProxyRepresentation, importing: (ProxyRepresentation) async throws -> Item)](proxyrepresentation/init(exporting:importing:)-h69f.md)
+- [init(exporting: (Item) throws -> ProxyRepresentation, importing: (ProxyRepresentation) async throws -> Item)](./proxyrepresentation/init%28exporting,importing%29-h69f.md)
   Creates a transfer representation that’s imported and exported by proxy through another transfer representation.
-- [init(importing: (ProxyRepresentation) async throws -> Item)](proxyrepresentation/init(importing:)-4w9l5.md)
+- [init(importing: (ProxyRepresentation) async throws -> Item)](./proxyrepresentation/init%28importing%29-4w9l5.md)
   Creates a transfer representation that’s imported by proxy through another transfer representation.
-- [init(importing: (ProxyRepresentation) throws -> Item)](proxyrepresentation/init(importing:)-pq40.md)
+- [init(importing: (ProxyRepresentation) throws -> Item)](./proxyrepresentation/init%28importing%29-pq40.md)
   Creates a transfer representation that’s imported by proxy through another transfer representation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](./transferrepresentation.md)
 
 ## See Also
 
-- [struct TransferRepresentationVisibility](transferrepresentationvisibility.md)
+### Transfer customization
+- [struct TransferRepresentationVisibility](./transferrepresentationvisibility.md)
   The visibility levels that specify the kinds of apps and processes that can see an item in transit.
 
 

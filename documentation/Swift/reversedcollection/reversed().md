@@ -1,7 +1,8 @@
 # reversed()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reversing a reversed collection returns the original collection.
 
@@ -21,9 +22,11 @@ Reversing a reversed collection returns the original collection.
 func reversed() -> Base
 ```
 
+Available when `Base` conforms to `BidirectionalCollection`.
+
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

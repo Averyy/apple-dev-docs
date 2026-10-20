@@ -1,7 +1,8 @@
 # typeIndexDescriptor
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a descriptor whose data indicates an indexed position within a range of values.
 

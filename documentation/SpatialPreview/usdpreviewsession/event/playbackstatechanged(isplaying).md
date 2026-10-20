@@ -1,13 +1,14 @@
 # USDPreviewSession.Event.playbackStateChanged(isPlaying:)
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The USD’s animation playback state has changed
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # init(frame:)
 
 **Framework**: CoreAudioKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@
 
 ## See Also
 
-- [init?(coder: NSCoder)](augenericviewinternal/init(coder:).md)
+### Initializers
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

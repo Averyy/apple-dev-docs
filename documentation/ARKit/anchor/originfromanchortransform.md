@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The position and orientation of this anchor in world space.
@@ -18,9 +19,10 @@ var originFromAnchorTransform: simd_float4x4 { get }
 
 ## See Also
 
-- [var id: UUID](anchor/id.md)
+### Inspecting an anchor
+- [var id: UUID](./id.md)
   A unique identifier that distinguishes this anchor from all other anchors.
-- [var timestamp: TimeInterval](anchor/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
 
 
 ---

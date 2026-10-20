@@ -1,7 +1,8 @@
 # RevokeAssetsRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request for asset revocation.
 
@@ -10,13 +11,13 @@ The request for asset revocation.
 
 ## Declaration
 
-```swift
+```
 object RevokeAssetsRequest
 ```
 
 ## Mentions
 
-- [Managing assets](managing-assets.md)
+- [Managing assets](./managing-assets.md)
 
 ## Properties
 
@@ -25,9 +26,10 @@ object RevokeAssetsRequest
 
 ## See Also
 
-- [object EventResponse](eventresponse.md)
+### Request and Response
+- [object EventResponse](./eventresponse.md)
   The response that contains the event identifier.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 

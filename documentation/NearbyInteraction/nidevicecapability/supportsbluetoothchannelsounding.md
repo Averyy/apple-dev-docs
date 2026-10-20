@@ -2,6 +2,7 @@
 
 **Framework**: Nearby Interaction  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the device supports distance measurements over a Bluetooth connection.
@@ -17,6 +18,10 @@ A Boolean value that indicates whether the device supports distance measurements
 var supportsBluetoothChannelSounding: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsBluetoothChannelSounding;
+```
+
 #### Discussion
 
 Bluetooth Channel Sounding is a Bluetooth 6.0 specification ranging strategy that relies on a Bluetooth connection to measure distance between iPhone and a paired accessory.
@@ -25,8 +30,8 @@ Check this property before using Bluetooth Channel Sounding ranging to ensure th
 
 To use Bluetooth Channel Sounding,
 
-- Pair your accessory with [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit).
-- Instantiate an [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md) using the [`init(bluetoothChannelSoundingIdentifier:previousBluetoothIdentifier:)`](ninearbyaccessoryconfiguration/init(bluetoothchannelsoundingidentifier:previousbluetoothidentifier:).md) initializer:
+- Pair your accessory with [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md).
+- Instantiate an [`NINearbyAccessoryConfiguration`](../ninearbyaccessoryconfiguration.md) using the [`init(bluetoothChannelSoundingIdentifier:previousBluetoothIdentifier:)`](../ninearbyaccessoryconfiguration/init%28bluetoothchannelsoundingidentifier,previousbluetoothidentifier%29.md) initializer:
 
 ```swift
 guard NISession.deviceCapabilities.supportsBluetoothChannelSounding else {
@@ -44,15 +49,16 @@ session.run(config)
 
 ## See Also
 
-- [var supportsPreciseDistanceMeasurement: Bool](nidevicecapability/supportsprecisedistancemeasurement.md)
+### Checking session features
+- [var supportsPreciseDistanceMeasurement: Bool](./supportsprecisedistancemeasurement.md)
   A Boolean value that indicates whether the device produces precise distance measurements to nearby objects.
-- [var supportsDirectionMeasurement: Bool](nidevicecapability/supportsdirectionmeasurement.md)
+- [var supportsDirectionMeasurement: Bool](./supportsdirectionmeasurement.md)
   A Boolean value that indicates whether the device produces instantaneous direction measurements to nearby objects.
-- [var supportsCameraAssistance: Bool](nidevicecapability/supportscameraassistance.md)
+- [var supportsCameraAssistance: Bool](./supportscameraassistance.md)
   A Boolean value that indicates whether the device can leverage ARKit to improve interaction.
-- [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
+- [var supportsExtendedDistanceMeasurement: Bool](./supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
-- [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
+- [var supportsDLTDOAMeasurement: Bool](./supportsdltdoameasurement.md)
   A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
 
 

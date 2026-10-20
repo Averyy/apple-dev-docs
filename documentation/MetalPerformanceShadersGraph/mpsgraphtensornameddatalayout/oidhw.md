@@ -1,7 +1,8 @@
 # MPSGraphTensorNamedDataLayout.OIDHW
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 LayoutOIDHW
 
@@ -17,6 +18,10 @@ LayoutOIDHW
 
 ```swift
 case OIDHW
+```
+
+```c
+MPSGraphTensorNamedDataLayoutOIDHW
 ```
 
 

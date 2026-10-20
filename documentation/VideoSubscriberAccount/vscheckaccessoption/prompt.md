@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean that indicates whether your app can prompt the user to grant access.
 
@@ -9,7 +10,7 @@ A Boolean that indicates whether your app can prompt the user to grant access.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -17,6 +18,10 @@ A Boolean that indicates whether your app can prompt the user to grant access.
 
 ```swift
 static let prompt: VSCheckAccessOption
+```
+
+```c
+extern VSCheckAccessOption const VSCheckAccessOptionPrompt;
 ```
 
 

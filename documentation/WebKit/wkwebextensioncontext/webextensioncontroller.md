@@ -1,7 +1,8 @@
 # webExtensionController
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension controller this context is loaded in, otherwise `nil` if it isn’t loaded.
 
@@ -16,6 +17,10 @@ The extension controller this context is loaded in, otherwise `nil` if it isn’
 
 ```swift
 weak var webExtensionController: WKWebExtensionController? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) WKWebExtensionController * webExtensionController;
 ```
 
 

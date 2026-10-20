@@ -1,7 +1,8 @@
 # user
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The username associated with the credential.
 
@@ -16,6 +17,10 @@ The username associated with the credential.
 
 ```swift
 var user: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * user;
 ```
 
 

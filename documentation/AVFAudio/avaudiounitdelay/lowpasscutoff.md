@@ -1,7 +1,8 @@
 # lowPassCutoff
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cutoff frequency above which high frequency content rolls off, in hertz.
 
@@ -19,17 +20,22 @@ The cutoff frequency above which high frequency content rolls off, in hertz.
 var lowPassCutoff: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float lowPassCutoff;
+```
+
 #### Discussion
 
 The default value is `15000 Hz`. The valid range of values is `10 Hz` through `(sampleRate/2)`.
 
 ## See Also
 
-- [var delayTime: TimeInterval](avaudiounitdelay/delaytime.md)
+### Configuring the delay
+- [var delayTime: TimeInterval](./delaytime.md)
   The time for the input signal to reach the output.
-- [var feedback: Float](avaudiounitdelay/feedback.md)
+- [var feedback: Float](./feedback.md)
   The amount of the output signal that feeds back into the delay line.
-- [var wetDryMix: Float](avaudiounitdelay/wetdrymix.md)
+- [var wetDryMix: Float](./wetdrymix.md)
   The blend of the wet and dry signals.
 
 

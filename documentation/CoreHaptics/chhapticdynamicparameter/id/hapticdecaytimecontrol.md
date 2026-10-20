@@ -1,7 +1,8 @@
 # hapticDecayTimeControl
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dynamic parameter to change the time when a haptic pattern’s intensity begins decreasing.
 
@@ -19,15 +20,20 @@ A dynamic parameter to change the time when a haptic pattern’s intensity begin
 static let hapticDecayTimeControl: CHHapticDynamicParameter.ID
 ```
 
+```c
+extern CHHapticDynamicParameterID CHHapticDynamicParameterIDHapticDecayTimeControl;
+```
+
 ## See Also
 
-- [static let hapticIntensityControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/hapticintensitycontrol.md)
+### Haptic Dynamic Parameter IDs
+- [static let hapticIntensityControl: CHHapticDynamicParameter.ID](./hapticintensitycontrol.md)
   A dynamic parameter to change the strength of a haptic pattern.
-- [static let hapticSharpnessControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/hapticsharpnesscontrol.md)
+- [static let hapticSharpnessControl: CHHapticDynamicParameter.ID](./hapticsharpnesscontrol.md)
   A dynamic parameter to change the sharpness of a haptic pattern.
-- [static let hapticAttackTimeControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/hapticattacktimecontrol.md)
+- [static let hapticAttackTimeControl: CHHapticDynamicParameter.ID](./hapticattacktimecontrol.md)
   A dynamic parameter to change the time when a haptic pattern’s intensity begins increasing.
-- [static let hapticReleaseTimeControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/hapticreleasetimecontrol.md)
+- [static let hapticReleaseTimeControl: CHHapticDynamicParameter.ID](./hapticreleasetimecontrol.md)
   A dynamic parameter to change the time at which to begin fading the haptic pattern.
 
 

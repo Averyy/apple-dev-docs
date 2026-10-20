@@ -1,7 +1,8 @@
 # Update Users
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update details for existing users.
 
@@ -14,7 +15,7 @@ Update details for existing users.
 
 **Request**:
 
-```None
+```
 {
     "users": [
         {
@@ -47,11 +48,11 @@ Update details for existing users.
 ## Topics
 
 ### Request and Response
-- [object ManageUsersRequest](manageusersrequest.md)
+- [object ManageUsersRequest](./manageusersrequest.md)
   The request for user management.
-- [object EventResponse](eventresponse.md)
+- [object EventResponse](./eventresponse.md)
   The response that contains the event identifier.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 ## Endpoint
@@ -60,15 +61,26 @@ Update details for existing users.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ManageUsersRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`EventResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
 
 ## See Also
 
-- [Get Users](get-users-4mwln.md)
+### User management
+- [Get Users](./get-users-4mwln.md)
   Get information about a set of users.
-- [Create Users](create-users.md)
+- [Create Users](./create-users.md)
   Create users to assign apps, books, and subscriptions to.
-- [Retire Users](retire-users.md)
+- [Retire Users](./retire-users.md)
   Retire users by client user IDs.
 
 

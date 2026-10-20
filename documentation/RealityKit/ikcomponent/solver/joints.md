@@ -1,7 +1,8 @@
 # joints
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of all of the joint update stage objects of the solver instance.
 
@@ -21,7 +22,7 @@ var joints: IKComponent.JointCollection
 
 #### Discussion
 
-The order matches the order in the rig [`joints`](ikrig/joints.md).
+The order matches the order in the rig [`joints`](../../ikrig/joints.md).
 
 
 ---

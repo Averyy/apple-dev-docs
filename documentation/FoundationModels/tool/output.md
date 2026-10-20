@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The output that this tool produces for the language model to reason about in subsequent interactions.
@@ -22,13 +23,14 @@ associatedtype Output : PromptRepresentable
 
 #### Discussion
 
-Typically output is either a `String` or a [`Generable`](generable.md) type.
+Typically output is either a `String` or a [`Generable`](../generable.md) type.
 
 ## See Also
 
-- [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
+### Calling a tool
+- [func call(arguments: Self.Arguments) async throws -> Self.Output](./call%28arguments%29.md)
   Performs the tool’s action when a language model wants to use this tool.
-- [associatedtype Arguments : ConvertibleFromGeneratedContent](tool/arguments.md)
+- [associatedtype Arguments : ConvertibleFromGeneratedContent](./arguments.md)
   The arguments that this tool should accept.
 
 

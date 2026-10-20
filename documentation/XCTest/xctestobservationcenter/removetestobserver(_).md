@@ -1,9 +1,10 @@
 # removeTestObserver(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Unregisters an object conforming to [`XCTestObservation`](xctestobservation.md) as an observer for the current test session.
+Unregisters an object conforming to [`XCTestObservation`](../xctestobservation.md) as an observer for the current test session.
 
 ## Declaration
 
@@ -11,10 +12,15 @@ Unregisters an object conforming to [`XCTestObservation`](xctestobservation.md) 
 func removeTestObserver(_ testObserver: any XCTestObservation)
 ```
 
+```objc
+- (void) removeTestObserver:(id<XCTestObservation>) testObserver;
+```
+
 ## See Also
 
-- [func addTestObserver(any XCTestObservation)](xctestobservationcenter/addtestobserver(_:).md)
-  Registers an object conforming to [`XCTestObservation`](xctestobservation.md) as an observer for the current test session.
+### Managing Observers
+- [func addTestObserver(any XCTestObservation)](./addtestobserver%28_%29.md)
+  Registers an object conforming to [`XCTestObservation`](../xctestobservation.md) as an observer for the current test session.
 
 
 ---

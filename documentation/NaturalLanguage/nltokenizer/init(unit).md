@@ -1,7 +1,8 @@
 # init(unit:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tokenizer with the specified unit.
 
@@ -18,6 +19,10 @@ Creates a tokenizer with the specified unit.
 
 ```swift
 init(unit: NLTokenUnit)
+```
+
+```objc
+- (instancetype) initWithUnit:(NLTokenUnit) unit;
 ```
 
 ## Parameters

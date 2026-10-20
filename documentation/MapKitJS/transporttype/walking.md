@@ -1,7 +1,8 @@
 # Walking
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant identifying the mode of transportation as walking.
 
@@ -10,7 +11,7 @@ A constant identifying the mode of transportation as walking.
 
 ## Declaration
 
-```swift
+```
 readonly Walking: "WALKING";
 ```
 
@@ -20,9 +21,10 @@ Use for directions that are suitable for a pedestrian.
 
 ## See Also
 
-- [Automobile](transporttype/automobile.md)
+### Transport types
+- [Automobile](./automobile.md)
   A constant identifying the mode of transportation as driving.
-- [Cycling](transporttype/cycling.md)
+- [Cycling](./cycling.md)
   A constant identifying the mode of transportation as cycling.
 
 

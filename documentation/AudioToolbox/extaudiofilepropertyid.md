@@ -1,17 +1,18 @@
 # ExtAudioFilePropertyID
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An audio file object property identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,10 +20,15 @@ An audio file object property identifier.
 typealias ExtAudioFilePropertyID = UInt32
 ```
 
+```c
+typedef UInt32 ExtAudioFilePropertyID;
+```
+
 ## See Also
 
-- [typealias ExtAudioFilePacketTableInfoOverride](extaudiofilepackettableinfooverride.md)
-- [typealias ExtAudioFileRef](extaudiofileref.md)
+### Data Types
+- [typealias ExtAudioFilePacketTableInfoOverride](./extaudiofilepackettableinfooverride.md)
+- [typealias ExtAudioFileRef](./extaudiofileref.md)
   An opaque structure representing an extended audio file object.
 
 

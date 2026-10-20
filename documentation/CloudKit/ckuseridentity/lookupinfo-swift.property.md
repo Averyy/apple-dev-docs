@@ -1,7 +1,8 @@
 # lookupInfo
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lookup info for retrieving the user identity.
 
@@ -21,15 +22,20 @@ The lookup info for retrieving the user identity.
 var lookupInfo: CKUserIdentity.LookupInfo? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) CKUserIdentityLookupInfo * lookupInfo;
+```
+
 #### Discussion
 
-Use this property’s value to retrieve the user identity when using the [`CKDiscoverUserIdentitiesOperation`](ckdiscoveruseridentitiesoperation.md) and [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) operations.
+Use this property’s value to retrieve the user identity when using the [`CKDiscoverUserIdentitiesOperation`](../ckdiscoveruseridentitiesoperation.md) and [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md) operations.
 
 ## See Also
 
-- [var hasiCloudAccount: Bool](ckuseridentity/hasicloudaccount.md)
+### Accessing iCloud Information
+- [var hasiCloudAccount: Bool](./hasicloudaccount.md)
   A Boolean value that indicates whether the user has an iCloud account.
-- [CKUserIdentity.LookupInfo](ckuseridentity/lookupinfo-swift.class.md)
+- [CKUserIdentity.LookupInfo](./lookupinfo-swift.class.md)
   The criteria to use when searching for discoverable iCloud users.
 
 

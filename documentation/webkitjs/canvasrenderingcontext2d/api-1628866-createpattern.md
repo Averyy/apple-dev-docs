@@ -1,7 +1,8 @@
 # createPattern
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a pattern object using the specified image as a template. The pattern can be specified as repeating horizontally, vertically, both horizontally and vertically (the default), or not at all.
 
@@ -11,7 +12,7 @@ Creates a pattern object using the specified image as a template. The pattern ca
 
 ## Declaration
 
-```swift
+```
 CanvasPattern? createPattern(
     CanvasImageSource image, 
     DOMString repetition
@@ -29,9 +30,10 @@ When specifying a stroke style or fill style, you can pass in a pattern object i
 
 ## See Also
 
-- [createLinearGradient](canvasrenderingcontext2d/1630205-createlineargradient.md)
+### Creating Gradients and Patterns
+- [createLinearGradient](./api-1630205-createlineargradient.md)
   Creates a linear gradient object with a specified start point and a specified end point.
-- [createRadialGradient](canvasrenderingcontext2d/1631480-createradialgradient.md)
+- [createRadialGradient](./api-1631480-createradialgradient.md)
   Creates a radial gradient object using the cone defined by the specified starting and ending circles.
 
 

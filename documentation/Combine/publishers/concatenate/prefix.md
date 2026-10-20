@@ -1,7 +1,8 @@
 # prefix
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher to republish, in its entirety, before republishing elements from `suffix`.
 
@@ -22,7 +23,8 @@ let prefix: Prefix
 
 ## See Also
 
-- [let suffix: Suffix](publishers/concatenate/suffix.md)
+### Inspecting publisher properties
+- [let suffix: Suffix](./suffix.md)
   The publisher to republish only after `prefix` finishes.
 
 

@@ -1,7 +1,8 @@
 # init(value:expectations:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model sample output with an optional expected value and expectations.
 

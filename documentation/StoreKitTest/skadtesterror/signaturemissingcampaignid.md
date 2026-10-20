@@ -1,7 +1,8 @@
 # signatureMissingCampaignId
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The signature is missing the campaign identifier, in the testing environment.
 
@@ -22,9 +23,10 @@ Be sure to include the campaign identifier when you create and validate an ad im
 
 ## See Also
 
-- [static var invalidCampaignId: SKAdTestError.Code](skadtesterror/invalidcampaignid.md)
+### Getting Older Errors
+- [static var invalidCampaignId: SKAdTestError.Code](./invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [static var conflictingSource: SKAdTestError.Code](skadtesterror/conflictingsource.md)
+- [static var conflictingSource: SKAdTestError.Code](./conflictingsource.md)
   This error code is unused.
 
 

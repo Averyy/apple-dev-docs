@@ -1,6 +1,7 @@
 # Connecting a tvOS app to other devices over the local network
 
-**Framework**: DeviceDiscoveryUI
+**Framework**: DeviceDiscoveryUI  
+**Role**: Article
 
 Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
@@ -8,15 +9,15 @@ Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS de
 
 The DeviceDiscoveryUI framework provides a view that shows all the available iOS, iPadOS, and watchOS devices on your local network. Present this view in your tvOS app, to let the user select a device. The framework then creates an encrypted connection between your tvOS app and the selected device. This lets user’s enhance the tvOS experience. For example, they could control a tvOS game from their iPad, or send heart rate data from their watchOS app to the tvOS workout app. It also lets your app connect to devices across the local network, without giving your app access to the entire network.
 
-To create a network connection, start by defining which devices your app can connect with. Your app defines one or more application services. Each application service represents a different type of connection that can support a different subset of devices. Next display the list of available devices in a device picker view in your tvOS app using one of the application services. If the user selects a device, the device picker view returns an [`NWEndpoint`](https://developer.apple.com/documentation/networkextension/nwendpoint) for the selected device. Use this endpoint to create a connection, and then use the connection to communicate with the device.
+To create a network connection, start by defining which devices your app can connect with. Your app defines one or more application services. Each application service represents a different type of connection that can support a different subset of devices. Next display the list of available devices in a device picker view in your tvOS app using one of the application services. If the user selects a device, the device picker view returns an [`NWEndpoint`](../NetworkExtension/nwendpoint.md) for the selected device. Use this endpoint to create a connection, and then use the connection to communicate with the device.
 
-In your iOS, iPadOS, or watchOS app, declare that your app listens for DeviceDiscoveryUI connections. Then, as soon as your app launches, create an [`NWListener`](https://developer.apple.com/documentation/network/nwlistener). When the tvOS app connects to the listener, the listener returns a connection that your app can use to communicate with the tvOS app.
+In your iOS, iPadOS, or watchOS app, declare that your app listens for DeviceDiscoveryUI connections. Then, as soon as your app launches, create an [`NWListener`](../Network/nwlistener.md). When the tvOS app connects to the listener, the listener returns a connection that your app can use to communicate with the tvOS app.
 
-You use DeviceDiscoveryUI to present the device picker view, and then use the [`Network`](https://developer.apple.com/documentation/network) framework to create the listeners, create the connections, and send and receive messages.
+You use DeviceDiscoveryUI to present the device picker view, and then use the [Network](../Network/Network.md) framework to create the listeners, create the connections, and send and receive messages.
 
-##### Define the Supported Devices in Tvos
+##### Define the supported devices in tvOS
 
-Start by defining the application service identifiers that your apps use to establish their connections. Use the [`NSApplicationServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplicationservices) key to define the application services for your app. You provide a service identifier, a usage description, and a list of supported devices for each service. You can define more than one application service for your apps. Each service has it’s own identifier, and can connect to a different subset of devices.
+Start by defining the application service identifiers that your apps use to establish their connections. Use the [`NSApplicationServices`](../BundleResources/information-property-list/nsapplicationservices.md) key to define the application services for your app. You provide a service identifier, a usage description, and a list of supported devices for each service. You can define more than one application service for your apps. Each service has it’s own identifier, and can connect to a different subset of devices.
 
 Declare the application services in your app target’s Info tab, or in its `Info.plist` file.
 
@@ -52,11 +53,11 @@ Declare the application services in your app target’s Info tab, or in its `Inf
 
 You can use the human-readable key names in Xcode’s property list editor.
 
-![A screenshot showing the Application Services settings in Xcode’s property list editor.](/images/com.apple.devicediscoveryui/media-4030765@2x.png)
+![A screenshot showing the Application Services settings in Xcode’s property list editor.](https://developer.apple.com/tutorials/images/com.apple.devicediscoveryui/media-4030765@2x.png)
 
-##### Display the List of Available Devices
+##### Display the list of available devices
 
-Next, create and display the device picker view in your tvOS app. The following code creates and displays a [`DevicePicker`](devicepicker.md) view using SwiftUI.
+Next, create and display the device picker view in your tvOS app. The following code creates and displays a [`DevicePicker`](./devicepicker.md) view using SwiftUI.
 
 ```swift
 @State var showDevicePicker = false
@@ -86,13 +87,13 @@ var body: some View {
 }
 ```
 
-Display the [`DevicePicker`](devicepicker.md) as a modal view that covers the full screen. This example uses [`fullScreenCover(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:)) to display the device picker view when the user clicks the Connect button.
+Display the [`DevicePicker`](./devicepicker.md) as a modal view that covers the full screen. This example uses [`fullScreenCover(isPresented:onDismiss:content:)`](../SwiftUI/view/fullscreencover%28ispresented,ondismiss,content%29.md) to display the device picker view when the user clicks the Connect button.
 
-To create the device picker view, pass an [`NWBrowser.Descriptor`](https://developer.apple.com/documentation/network/nwbrowser/descriptor-swift.enum) that you created using the `NWBrowser.Descriptor.applicationService(name:options:)` method. Use the identifier that you defined in your app’s `Info.plist` file for the descriptor’s name.
+To create the device picker view, pass an [`NWBrowser.Descriptor`](../Network/nwbrowser/descriptor-swift.enum.md) that you created using the `NWBrowser.Descriptor.applicationService(name:options:)` method. Use the identifier that you defined in your app’s `Info.plist` file for the descriptor’s name.
 
-Next, provide an `onSelect` closure that takes a single [`NWEndpoint`](https://developer.apple.com/documentation/networkextension/nwendpoint) value. The system calls this closure after the user selects a device to connect to. Use the closure to set up a connection to the endpoint.
+Next, provide an `onSelect` closure that takes a single [`NWEndpoint`](../NetworkExtension/nwendpoint.md) value. The system calls this closure after the user selects a device to connect to. Use the closure to set up a connection to the endpoint.
 
-Then include a [`Label`](https://developer.apple.com/documentation/swiftui/label) view to represent your app in the device picker view, and pass the default application service parameters using the [`applicationService`](https://developer.apple.com/documentation/network/nwparameters/applicationservice) property. The default parameters create an encrypted, optimized connection between two devices on your local network. You can also add protocols defined with an [`NWProtocolFramer`](https://developer.apple.com/documentation/network/nwprotocolframer) to these defaults to support application-level messaging in your app.
+Then include a [`Label`](../SwiftUI/label.md) view to represent your app in the device picker view, and pass the default application service parameters using the [`applicationService`](../Network/nwparameters/applicationservice.md) property. The default parameters create an encrypted, optimized connection between two devices on your local network. You can also add protocols defined with an [`NWProtocolFramer`](../Network/nwprotocolframer.md) to these defaults to support application-level messaging in your app.
 
 When presented, the view shows all the supported devices on the local network.
 
@@ -104,9 +105,9 @@ These devices:
 
 If the user selects a device, the system calls your `onSelect` closure. If they dismiss the device picker view, control returns to the view that displayed the device picker view.
 
-> **Note**:  While you can display the [`DevicePicker`](devicepicker.md) view in Simulator, it won’t show any devices on the local network. To test connections, run your code on a test device instead.
+> **Note**:  While you can display the [`DevicePicker`](./devicepicker.md) view in Simulator, it won’t show any devices on the local network. To test connections, run your code on a test device instead.
 
-If you’re using [`UIKit`](https://developer.apple.com/documentation/uikit), use a [`DDDevicePickerViewController`](dddevicepickerviewcontroller.md) to present the device picker view.
+If you’re using [UIKit](../UIKit/UIKit.md), use a [`DDDevicePickerViewController`](./dddevicepickerviewcontroller.md) to present the device picker view.
 
 ```swift
 // This example uses the default application services parameters;
@@ -135,13 +136,13 @@ do {
 myDeviceConnectionManager.connectTo(endpoint: endpoint)
 ```
 
-This view controller works similarly to the [`DevicePicker`](devicepicker.md) view. The biggest difference is how your app receives the selected endpoint. In this sample, your app awaits a read on the controller’s `endpoint` property. This causes execution to pause at that point. When the user selects a device, the system returns an endpoint for that device, and execution continues. If the user dismisses the view, the controller throws an error.
+This view controller works similarly to the [`DevicePicker`](./devicepicker.md) view. The biggest difference is how your app receives the selected endpoint. In this sample, your app awaits a read on the controller’s `endpoint` property. This causes execution to pause at that point. When the user selects a device, the system returns an endpoint for that device, and execution continues. If the user dismisses the view, the controller throws an error.
 
-Alternatively, you can pass a block to the [`DDDevicePickerViewController`](dddevicepickerviewcontroller.md) object’s [`setDevicePickerCompletionHandler:`](dddevicepickerviewcontroller/setdevicepickercompletionhandler:.md) method, and the system calls this block when the user selects a device from the device picker view.
+Alternatively, you can pass a block to the [`DDDevicePickerViewController`](./dddevicepickerviewcontroller.md) object’s [`setDevicePickerCompletionHandler:`](./dddevicepickerviewcontroller/setdevicepickercompletionhandler_.md) method, and the system calls this block when the user selects a device from the device picker view.
 
-##### Connect to the Provided Endpoint
+##### Connect to the provided endpoint
 
-As soon as the user selects a device, the system passes you an [`NWEndpoint`](https://developer.apple.com/documentation/networkextension/nwendpoint). Use this endpoint to connect to the selected device. Create an [`NWConnection`](https://developer.apple.com/documentation/network/nwconnection), passing it both the endpoint and the parameters that you used to create the device picker view.
+As soon as the user selects a device, the system passes you an [`NWEndpoint`](../NetworkExtension/nwendpoint.md). Use this endpoint to connect to the selected device. Create an [`NWConnection`](../Network/nwconnection.md), passing it both the endpoint and the parameters that you used to create the device picker view.
 
 ```swift
 func connectTo(endpoint: NWEndpoint) {
@@ -156,7 +157,7 @@ func connectTo(endpoint: NWEndpoint) {
 
 You can then use this connection to send or receive messages to the connected device.
 
-##### Declare That Other Devices Listen for Connections
+##### Declare that other devices listen for connections
 
 Before a device can appear in the picker view, declare that the iOS, iPadOS, or watchOS version of your app listens for connections.
 
@@ -177,13 +178,13 @@ Start by defining the application service in your app target’s Info tab, or in
 
 You can use the human-readable key names in Xcode’s property list editor.
 
-![A screenshot showing the application services settings in Xcode’s property list editor.](/images/com.apple.devicediscoveryui/media-4030764@2x.png)
+![A screenshot showing the application services settings in Xcode’s property list editor.](https://developer.apple.com/tutorials/images/com.apple.devicediscoveryui/media-4030764@2x.png)
 
-##### Set Up the Listeners on Ios Ipados or Watchos
+##### Set up the listeners on iOS, iPadOS, or watchOS
 
 Next, to connect to your tvOS app, other versions of your app must set up a listener as soon as the app launches. The network picker can then connect to this listener.
 
-To create a listener, use the [`init(applicationService:)`](https://developer.apple.com/documentation/network/nwlistener/service-swift.struct/init(applicationservice:)) initializer, and pass the same application service name that you used in your tvOS app.
+To create a listener, use the [`init(applicationService:)`](../Network/nwlistener/service-swift.struct/init%28applicationservice%29.md) initializer, and pass the same application service name that you used in your tvOS app.
 
 ```swift
 // Set up the listener.
@@ -243,11 +244,12 @@ Start the listener as quickly as possible after your app launches. This ensures 
 
 ## See Also
 
-- [struct DevicePicker](devicepicker.md)
+### Pairing with nearby devices
+- [struct DevicePicker](./devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [class DDDevicePickerViewController](dddevicepickerviewcontroller.md)
+- [class DDDevicePickerViewController](./dddevicepickerviewcontroller.md)
   A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [struct DevicePickerSupportedAction](devicepickersupportedaction.md)
+- [struct DevicePickerSupportedAction](./devicepickersupportedaction.md)
   An environment value that indicates whether the current device supports device discovery.
 
 

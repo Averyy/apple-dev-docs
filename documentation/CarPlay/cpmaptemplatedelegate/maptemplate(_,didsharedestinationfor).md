@@ -1,7 +1,8 @@
 # mapTemplate(_:didShareDestinationFor:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a vehicle successfully handled a shared trip’s destination
 
@@ -14,6 +15,10 @@ Called when a vehicle successfully handled a shared trip’s destination
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didShareDestinationFor trip: CPTrip)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didShareDestinationForTrip:(CPTrip *) trip;
 ```
 
 

@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.rectangle(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rectangle.
 

@@ -1,7 +1,8 @@
 # notDepressed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 thread_depress_abort was called on a thread which was not currently depressed.
 

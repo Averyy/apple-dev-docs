@@ -1,7 +1,8 @@
 # CNRenderingQuality
 
 **Framework**: Cinematic  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The rendering quality, such as thumbnail, preview, export and so on.
 
@@ -18,29 +19,34 @@ The rendering quality, such as thumbnail, preview, export and so on.
 enum CNRenderingQuality
 ```
 
+```c
+enum CNRenderingQuality : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CNRenderingQuality.export](cnrenderingquality/export.md)
-- [CNRenderingQuality.exportHigh](cnrenderingquality/exporthigh.md)
-- [CNRenderingQuality.preview](cnrenderingquality/preview.md)
-- [CNRenderingQuality.thumbnail](cnrenderingquality/thumbnail.md)
+- [CNRenderingQuality.export](./cnrenderingquality/export.md)
+- [CNRenderingQuality.exportHigh](./cnrenderingquality/exporthigh.md)
+- [CNRenderingQuality.preview](./cnrenderingquality/preview.md)
+- [CNRenderingQuality.thumbnail](./cnrenderingquality/thumbnail.md)
 ### Initializers
-- [init?(rawValue: Int)](cnrenderingquality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cnrenderingquality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CNCinematicError.Code](cncinematicerror/code.md)
+### Enumerations
+- [CNCinematicError.Code](./cncinematicerror/code.md)
 
 
 ---

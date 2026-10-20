@@ -1,6 +1,8 @@
 # Tracking and altering images
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [TrackingAndAlteringImages.zip](https://docs-assets.developer.apple.com/published/37921c6fe4c6/TrackingAndAlteringImages.zip)
 
 Create images from rectangular shapes found in the user’s environment, and augment their appearance.
 
@@ -17,11 +19,11 @@ The sample app changes the appearance of the image by applying a Core ML model t
 
 To complete the effect of augmenting an image in the user’s environment, you use ARKit’s image tracking feature. ARKit can hold an altered image steady over the original image as the user moves the device in their environment. ARKit also tracks the image if it moves on its own, as when the app recognizes a banner on the side of a bus, and the bus begins to drive away.
 
-![Screenshot of the app in use. In the center of the user's view, there's a wall art picture being augmented with a stylistic image processing filter.](/images/com.apple.arkit/rendered2x-1584985272.png)
+![Screenshot of the app in use. In the center of the user's view, there's a wall art picture being augmented with a stylistic image processing filter.](https://developer.apple.com/tutorials/images/com.apple.arkit/rendered2x-1584985272.png)
 
 This sample app uses SceneKit to render its graphics.
 
-#### Detect Rectangular Shapes in the Users Environment
+#### Detect Rectangular Shapes in the User’s Environment
 
 As shown below, you can use Vision in real-time to check the camera feed for rectangles. You perform this check up to 10 times a second by using `RectangleDetector` to schedule a repeating timer with an `updateInterval` of `0.1` seconds.
 
@@ -52,7 +54,7 @@ The sample sets the `isBusy` flag to `false` when a Vision request completes or 
 
 #### Crop the Camera Feed to an Observed Rectangle
 
-When Vision finds a rectangle in the camera feed, it provides you with the rectangle’s precise coordinates through a [`VNRectangleObservation`](https://developer.apple.com/documentation/vision/vnrectangleobservation). You apply those coordinates to a Core Image perspective correction filter to crop it, leaving you with just the image data inside the rectangular shape.
+When Vision finds a rectangle in the camera feed, it provides you with the rectangle’s precise coordinates through a [`VNRectangleObservation`](../Vision/vnrectangleobservation.md). You apply those coordinates to a Core Image perspective correction filter to crop it, leaving you with just the image data inside the rectangular shape.
 
 ```swift
 private func completedVisionRequest(_ request: VNRequest?, error: Error?) {
@@ -94,15 +96,15 @@ private func completedVisionRequest(_ request: VNRequest?, error: Error?) {
 
 Using the first image in the Overview, the camera image is:
 
-![Screenshot of the session's uncropped camera feed.](/images/com.apple.arkit/rendered2x-1662142496.png)
+![Screenshot of the session's uncropped camera feed.](https://developer.apple.com/tutorials/images/com.apple.arkit/rendered2x-1662142496.png)
 
 The cropped result is:
 
-![Screenshot of the camera feed that's been cropped to just the rectangular shape that Vision observed.](/images/com.apple.arkit/rendered2x-1662142494.png)
+![Screenshot of the camera feed that's been cropped to just the rectangular shape that Vision observed.](https://developer.apple.com/tutorials/images/com.apple.arkit/rendered2x-1662142494.png)
 
 #### Create a Reference Image
 
-To prepare to track the cropped image, you create an [`ARReferenceImage`](arreferenceimage.md), which provides ARKit with everything it needs, like its look and physical size, to locate that image in the physical environment.
+To prepare to track the cropped image, you create an [`ARReferenceImage`](./arreferenceimage.md), which provides ARKit with everything it needs, like its look and physical size, to locate that image in the physical environment.
 
 ```swift
 let possibleReferenceImage = ARReferenceImage(referenceImagePixelBuffer, 
@@ -121,9 +123,9 @@ possibleReferenceImage.validate { [weak self] (error) in
     // ...
 ```
 
-#### Track the Image Using Arkit
+#### Track the Image Using ARKit
 
-Provide the reference image to ARKit to get updates on where the image lies in the camera feed when the user moves their device. Do that by creating an image tracking session and passing the reference image in to the configuration’s [`trackingImages`](arimagetrackingconfiguration/trackingimages.md).
+Provide the reference image to ARKit to get updates on where the image lies in the camera feed when the user moves their device. Do that by creating an image tracking session and passing the reference image in to the configuration’s [`trackingImages`](./arimagetrackingconfiguration/trackingimages.md).
 
 ```swift
 let configuration = ARImageTrackingConfiguration()
@@ -132,7 +134,7 @@ configuration.trackingImages = trackingImages
 sceneView.session.run(configuration, options: runOptions)
 ```
 
-Vision made the initial observation about where the image lies in 2D space in the camera feed, but ARKit resolves its location in 3D space, in the physical environment. When ARKit succeeds in recognizing the image, it creates an [`ARImageAnchor`](arimageanchor.md) and a SceneKit node at the right position. You save the anchor and node that ARKit gives you by passing them to an `AlteredImage` object.
+Vision made the initial observation about where the image lies in 2D space in the camera feed, but ARKit resolves its location in 3D space, in the physical environment. When ARKit succeeds in recognizing the image, it creates an [`ARImageAnchor`](./arimageanchor.md) and a SceneKit node at the right position. You save the anchor and node that ARKit gives you by passing them to an `AlteredImage` object.
 
 ```swift
 func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -141,11 +143,11 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 }
 ```
 
-#### Alter the Images Appearance Using Core Ml
+#### Alter the Image’s Appearance Using Core ML
 
 This sample app is bundled with a Core ML model that performs image processing. Given an input image and an integer index, the model outputs a visually modified version of that image in one of eight different styles. The particular style of the output depends on the value of the index you pass in. The first style resembles burned paper, the second style resembles a mosaic, and there are six other styles as shown in the following image.
 
-![Figure that shows screenshots of each of the 8 different artistic styles applied to a recognized image. At left, the original is shown with no style applied.](/images/com.apple.arkit/rendered2x-1584985287.png)
+![Figure that shows screenshots of each of the 8 different artistic styles applied to a recognized image. At left, the original is shown with no style applied.](https://developer.apple.com/tutorials/images/com.apple.arkit/rendered2x-1584985287.png)
 
 When Vision finds a rectangular shape in the user’s environment, you pass the camera’s image data defined by that rectangle into a new `AlteredImage`.
 
@@ -153,7 +155,7 @@ When Vision finds a rectangular shape in the user’s environment, you pass the 
 guard let newAlteredImage = AlteredImage(rectangleContent, referenceImage: possibleReferenceImage) else { return }
 ```
 
-The following code shows how you choose the artistic style to apply to the image by inputting the integer index to the Core ML model. Then, you process the image by calling the Core ML model’s [`predictions(from:options:)`](https://developer.apple.com/documentation/coreml/mlmodel/predictions(from:options:)).
+The following code shows how you choose the artistic style to apply to the image by inputting the integer index to the Core ML model. Then, you process the image by calling the Core ML model’s [`predictions(from:options:)`](../CoreML/mlmodel/predictions%28from,options%29.md).
 
 ```swift
 let input = StyleTransferModelInput(image: self.modelInputImage, index: self.styleIndexArray)
@@ -162,7 +164,7 @@ let output = try AlteredImage.styleTransferModel.prediction(input: input, option
 
 The following figure shows the result when you process the input image with a style index of 2.
 
-![Screenshot of altered image that's the result of inputting the cropped image in to the Core ML model.](/images/com.apple.arkit/rendered2x-1584985290.png)
+![Screenshot of altered image that's the result of inputting the cropped image in to the Core ML model.](https://developer.apple.com/tutorials/images/com.apple.arkit/rendered2x-1584985290.png)
 
 #### Display the Altered Image in Augmented Reality
 
@@ -184,9 +186,9 @@ func imageAlteringComplete(_ createdImage: CVPixelBuffer) {
 
 The visualization node’s contents overlap the original image when SceneKit displays it. In the case of the image above, the following screenshot shows the end result as seen through a user’s device:
 
-![Screenshot of the altered image overlay on the camera feed.](/images/com.apple.arkit/rendered2x-1584985292.png)
+![Screenshot of the altered image overlay on the camera feed.](https://developer.apple.com/tutorials/images/com.apple.arkit/rendered2x-1584985292.png)
 
-#### Continually Update the Images Appearance
+#### Continually Update the Image’s Appearance
 
 This sample demonstrates real-time image processing by switching artistic styles over time. By calling `selectNextStyle`, you can make successive alterations of the original image. `styleIndex` is the integer input to the Core ML model that determines the style of the output.
 
@@ -228,7 +230,7 @@ func visualizationNodeDidFinishFade(_ visualizationNode: VisualizationNode) {
 
 #### Respond to Image Tracking Updates
 
-As part of the image tracking feature, ARKit continues to look for the image throughout the AR session. If the image itself moves, ARKit updates the [`ARImageAnchor`](arimageanchor.md) with its corresponding image’s new location in the physical environment, and calls your delegate’s [`renderer(_:didUpdate:for:)`](arscnviewdelegate/renderer(_:didupdate:for:).md) to notify your app of the change.
+As part of the image tracking feature, ARKit continues to look for the image throughout the AR session. If the image itself moves, ARKit updates the [`ARImageAnchor`](./arimageanchor.md) with its corresponding image’s new location in the physical environment, and calls your delegate’s [`renderer(_:didUpdate:for:)`](./arscnviewdelegate/renderer%28_,didupdate,for%29.md) to notify your app of the change.
 
 ```swift
 func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
@@ -252,15 +254,16 @@ func update(_ anchor: ARAnchor) {
 
 ## See Also
 
-- [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
+### Image tracking
+- [Detecting Images in an AR Experience](./detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Tracking preregistered images in 3D space](../visionos/tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](../visionOS/tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
-- [class ImageTrackingProvider](imagetrackingprovider.md)
+- [class ImageTrackingProvider](./imagetrackingprovider.md)
   A source of live data about a 2D image’s position in a person’s surroundings.
-- [struct ImageAnchor](imageanchor.md)
+- [struct ImageAnchor](./imageanchor.md)
   A 2D image’s position in a person’s surroundings.
-- [struct ReferenceImage](referenceimage.md)
+- [struct ReferenceImage](./referenceimage.md)
   A 2D image the system uses as a reference to find the same image in a person’s surroundings.
 
 

@@ -1,7 +1,8 @@
 # init(duration:bounce:initialVelocity:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,9 +17,14 @@
 init(duration: TimeInterval, bounce: CGFloat, initialVelocity velocity: CGVector)
 ```
 
+```objc
+- (instancetype) initWithDuration:(NSTimeInterval) duration bounce:(CGFloat) bounce initialVelocity:(CGVector) velocity;
+```
+
 ## See Also
 
-- [convenience init(duration: TimeInterval, bounce: CGFloat)](uispringtimingparameters/init(duration:bounce:).md)
+### Initializers
+- [convenience init(duration: TimeInterval, bounce: CGFloat)](./init%28duration,bounce%29.md)
 
 
 ---

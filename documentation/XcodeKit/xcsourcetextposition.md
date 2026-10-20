@@ -1,7 +1,8 @@
 # XCSourceTextPosition
 
 **Framework**: XcodeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A zero-based position in a source editor, defined by a line number and column number.
 
@@ -14,30 +15,35 @@ A zero-based position in a source editor, defined by a line number and column nu
 struct XCSourceTextPosition
 ```
 
+```c
+typedef struct { ... } XCSourceTextPosition;
+```
+
 ## Topics
 
 ### Creating Source Text Positions
-- [init()](xcsourcetextposition/init.md)
+- [init()](./xcsourcetextposition/init%28%29.md)
   Creates a new source text position at the beginning of the source text.
-- [init(line: Int, column: Int)](xcsourcetextposition/init(line:column:).md)
+- [init(line: Int, column: Int)](./xcsourcetextposition/init%28line,column%29.md)
   Creates a source text position at the specified line and column.
 ### Inspecting Source Text Positions
-- [var column: Int](xcsourcetextposition/column.md)
+- [var column: Int](./xcsourcetextposition/column.md)
   The horizontal component of a source text position.
-- [var line: Int](xcsourcetextposition/line.md)
+- [var line: Int](./xcsourcetextposition/line.md)
   The vertical component of a source text position.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class XCSourceTextBuffer](xcsourcetextbuffer.md)
+### Source Text
+- [class XCSourceTextBuffer](./xcsourcetextbuffer.md)
   A buffer you use to access and modify the text contents and text selections in a source editor.
-- [class XCSourceTextRange](xcsourcetextrange.md)
+- [class XCSourceTextRange](./xcsourcetextrange.md)
   A half-open range of text in a buffer you use to select text or specify the insertion point for new text.
 
 

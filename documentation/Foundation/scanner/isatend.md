@@ -1,7 +1,8 @@
 # isAtEnd
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flag that indicates whether the receiver has exhausted all significant characters.
 
@@ -20,15 +21,20 @@ Flag that indicates whether the receiver has exhausted all significant character
 var isAtEnd: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isAtEnd) BOOL atEnd;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has exhausted all significant characters in its string, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver has exhausted all significant characters in its string, otherwise [`false`](../../Swift/false.md).
 
-If only characters from the set to be skipped remain, returns [`true`](https://developer.apple.com/documentation/swift/true).
+If only characters from the set to be skipped remain, returns [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var charactersToBeSkipped: CharacterSet?](scanner/characterstobeskipped.md)
+### Related Documentation
+- [var charactersToBeSkipped: CharacterSet?](./characterstobeskipped.md)
   Character set containing the characters the scanner ignores when looking for a scannable element.
 
 

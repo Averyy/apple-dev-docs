@@ -1,17 +1,22 @@
 # beginSheet(with:modalFor:delegate:didEnd:contextInfo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a Print panel sheet and runs it modally for the specified window.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 func beginSheet(with printInfo: NSPrintInfo, modalFor docWindow: NSWindow, delegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) beginSheetWithPrintInfo:(NSPrintInfo *) printInfo modalForWindow:(NSWindow *) docWindow delegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion

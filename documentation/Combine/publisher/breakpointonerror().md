@@ -1,7 +1,8 @@
 # breakpointOnError()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises a debugger signal upon receiving a failure.
 
@@ -28,7 +29,7 @@ A publisher that raises a debugger signal upon receiving a failure.
 
 When the upstream publisher fails with an error, this publisher raises the `SIGTRAP` signal, which stops the process in the debugger. Otherwise, this publisher passes through values and completions as-is.
 
-In this example a [`PassthroughSubject`](passthroughsubject.md) publishes strings, but its downstream [`tryMap(_:)`](publisher/trymap(_:).md) operator throws an error. This sends the error downstream as a [`Subscribers.Completion.failure(_:)`](subscribers/completion/failure(_:).md). The [`breakpointOnError()`](publisher/breakpointonerror().md) operator receives this completion and stops the app in the debugger.
+In this example a [`PassthroughSubject`](../passthroughsubject.md) publishes strings, but its downstream [`tryMap(_:)`](./trymap%28_%29.md) operator throws an error. This sends the error downstream as a [`Subscribers.Completion.failure(_:)`](../subscribers/completion/failure%28_%29.md). The [`breakpointOnError()`](./breakpointonerror%28%29.md) operator receives this completion and stops the app in the debugger.
 
 ```swift
  struct CustomError : Error {}
@@ -52,11 +53,12 @@ In this example a [`PassthroughSubject`](passthroughsubject.md) publishes string
 
 ## See Also
 
-- [func breakpoint(receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Self.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)?) -> Publishers.Breakpoint<Self>](publisher/breakpoint(receivesubscription:receiveoutput:receivecompletion:).md)
+### Debugging
+- [func breakpoint(receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Self.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)?) -> Publishers.Breakpoint<Self>](./breakpoint%28receivesubscription,receiveoutput,receivecompletion%29.md)
   Raises a debugger signal when a provided closure needs to stop the process in the debugger.
-- [func handleEvents(receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Self.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?) -> Publishers.HandleEvents<Self>](publisher/handleevents(receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:).md)
+- [func handleEvents(receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Self.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?) -> Publishers.HandleEvents<Self>](./handleevents%28receivesubscription,receiveoutput,receivecompletion,receivecancel,receiverequest%29.md)
   Performs the specified closures when publisher events occur.
-- [func print(String, to: (any TextOutputStream)?) -> Publishers.Print<Self>](publisher/print(_:to:).md)
+- [func print(String, to: (any TextOutputStream)?) -> Publishers.Print<Self>](./print%28_,to%29.md)
   Prints log messages for all publishing events.
 
 

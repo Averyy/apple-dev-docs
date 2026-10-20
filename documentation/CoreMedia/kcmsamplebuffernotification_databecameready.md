@@ -1,9 +1,10 @@
 # kCMSampleBufferNotification_DataBecameReady
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Posted on a sample buffer by the [`CMSampleBufferSetDataReady(_:)`](cmsamplebuffersetdataready(_:).md) function when the buffer becomes ready.
+Posted on a sample buffer by the [`CMSampleBufferSetDataReady(_:)`](./cmsamplebuffersetdataready%28_%29.md) function when the buffer becomes ready.
 
 **Availability**:
 - iOS 4.0+
@@ -20,11 +21,16 @@ Posted on a sample buffer by the [`CMSampleBufferSetDataReady(_:)`](cmsamplebuff
 let kCMSampleBufferNotification_DataBecameReady: CFString
 ```
 
+```c
+extern CFStringRef const kCMSampleBufferNotification_DataBecameReady;
+```
+
 ## See Also
 
-- [let kCMSampleBufferNotification_DataFailed: CFString](kcmsamplebuffernotification_datafailed.md)
-- [let kCMSampleBufferNotificationParameter_OSStatus: CFString](kcmsamplebuffernotificationparameter_osstatus.md)
-- [let kCMSampleBufferConsumerNotification_BufferConsumed: CFString](kcmsamplebufferconsumernotification_bufferconsumed.md)
+### Sample Buffer Notifications
+- [let kCMSampleBufferNotification_DataFailed: CFString](./kcmsamplebuffernotification_datafailed.md)
+- [let kCMSampleBufferNotificationParameter_OSStatus: CFString](./kcmsamplebuffernotificationparameter_osstatus.md)
+- [let kCMSampleBufferConsumerNotification_BufferConsumed: CFString](./kcmsamplebufferconsumernotification_bufferconsumed.md)
   Optionally posted when a sample buffer is consumed.
 
 

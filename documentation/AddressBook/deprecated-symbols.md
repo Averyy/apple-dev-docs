@@ -1,19 +1,20 @@
 # Deprecated symbols
 
-**Framework**: Address Book
+**Framework**: Address Book  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated classes
-- [typealias ABAddressBook](abaddressbook-swift.typealias.md)
+- [typealias ABAddressBook](./abaddressbook-swift.typealias.md)
   A reference to an ABAddressBook object.
-- [typealias ABMultiValue](abmultivalue-swift.typealias.md)
+- [typealias ABMultiValue](./abmultivalue-swift.typealias.md)
   A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
-- [typealias ABMutableMultiValue](abmutablemultivalue-swift.typealias.md)
+- [typealias ABMutableMultiValue](./abmutablemultivalue-swift.typealias.md)
   A reference to an ABMutableMultiValue object.
-- [typealias ABRecord](abrecord-swift.typealias.md)
+- [typealias ABRecord](./abrecord-swift.typealias.md)
   A reference to an ABRecord object or any of its derivedopaque types.
 
 

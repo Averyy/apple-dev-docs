@@ -1,7 +1,8 @@
 # MusicLibrarySectionRequestable
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types your app uses as sections when fetching items using a library sectioned request.
 
@@ -23,11 +24,11 @@ protocol MusicLibrarySectionRequestable
 ## Relationships
 
 ### Conforming Types
-- [Album](album.md)
-- [Artist](artist.md)
-- [Genre](genre.md)
-- [Playlist](playlist.md)
-- [TitledSection](titledsection.md)
+- [Album](./album.md)
+- [Artist](./artist.md)
+- [Genre](./genre.md)
+- [Playlist](./playlist.md)
+- [TitledSection](./titledsection.md)
 
 
 ---

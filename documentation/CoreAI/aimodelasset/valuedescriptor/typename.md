@@ -1,7 +1,8 @@
 # typeName
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value’s type name.
 
@@ -20,7 +21,8 @@ var typeName: String { get }
 
 ## See Also
 
-- [var name: String](aimodelasset/valuedescriptor/name.md)
+### Inspecting value details
+- [var name: String](./name.md)
   The value’s name.
 
 

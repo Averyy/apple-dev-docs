@@ -1,7 +1,8 @@
 # contentHeadroom
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the content headroom of the image.
 
@@ -19,6 +20,10 @@ Returns the content headroom of the image.
 var contentHeadroom: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float contentHeadroom;
+```
+
 #### Discussion
 
 If the image headroom is unknown, then the value 0.0 will be returned.
@@ -33,15 +38,16 @@ The image headroom may known when a CIImage is first initialized. If the a CIIma
 - `CVPixelBuffer` : then the headroom will be determined by `kCVImageBufferContentLightLevelInfoKey`. or deduced from pixel format or colorSpace information.
 - `BitmapData` : headroom may be deduced from pixel format or colorSpace information.
 
-If the image is the result of applying a [`CIFilter`](cifilter-swift.class.md) or [`CIKernel`](cikernel.md), this method will return `0.0`.
+If the image is the result of applying a [`CIFilter`](../cifilter-swift.class.md) or [`CIKernel`](../cikernel.md), this method will return `0.0`.
 
 There are exceptions to this.  Applying a `CIWarpKernel`` or certain ``CIFilter-class``  (e.g. `CIGaussianBlur`, `CILanczosScaleTransform`, `CIAreaAverage`and some others)  to an image will result in a ``CIImage`` instance with the same`contentHeadroom` property value.
 
 ## See Also
 
-- [var isOpaque: Bool](ciimage/isopaque.md)
+### Instance Properties
+- [var isOpaque: Bool](./isopaque.md)
   Returns YES if the image is known to have and alpha value of `1.0` over the entire image extent.
-- [var metalTexture: (any MTLTexture)?](ciimage/metaltexture.md)
+- [var metalTexture: (any MTLTexture)?](./metaltexture.md)
 
 
 ---

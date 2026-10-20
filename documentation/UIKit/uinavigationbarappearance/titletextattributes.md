@@ -1,7 +1,8 @@
 # titleTextAttributes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String attributes to apply to the text of a standard-size title.
 
@@ -18,15 +19,20 @@ String attributes to apply to the text of a standard-size title.
 var titleTextAttributes: [NSAttributedString.Key : Any] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * titleTextAttributes;
+```
+
 #### Discussion
 
-If you don’t specify font or color attributes for the text, UIKit supplies appropriate default values. For a list of possible keys, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
+If you don’t specify font or color attributes for the text, UIKit supplies appropriate default values. For a list of possible keys, see [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 
 ## See Also
 
-- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/largetitletextattributes.md)
+### Configuring the title
+- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]](./largetitletextattributes.md)
   String attributes to apply to the text of a large-size title.
-- [var titlePositionAdjustment: UIOffset](uinavigationbarappearance/titlepositionadjustment.md)
+- [var titlePositionAdjustment: UIOffset](./titlepositionadjustment.md)
   The distance, in points, by which to offset the title horizontally and vertically.
 
 

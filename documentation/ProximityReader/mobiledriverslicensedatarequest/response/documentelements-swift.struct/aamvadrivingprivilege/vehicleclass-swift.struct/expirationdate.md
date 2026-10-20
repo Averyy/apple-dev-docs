@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expiration date of the vehicle class privilege.
 

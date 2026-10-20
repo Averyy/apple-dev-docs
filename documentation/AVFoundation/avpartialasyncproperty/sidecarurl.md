@@ -1,7 +1,8 @@
 # sidecarURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
 
@@ -14,9 +15,12 @@ The sidecar URL used by the MediaExtension. The sidecar URL is returned only if 
 static var sidecarURL: AVAsyncProperty<Root, URL?> { get }
 ```
 
+Available when `Root` inherits `AVURLAsset`.
+
 ## See Also
 
-- [var description: String](avpartialasyncproperty/description.md)
+### Describing a property
+- [var description: String](./description.md)
   A description of the object.
 
 

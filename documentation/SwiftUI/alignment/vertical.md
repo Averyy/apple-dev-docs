@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment on the vertical axis.
 
@@ -22,15 +23,16 @@ var vertical: VerticalAlignment
 
 #### Discussion
 
-Set this value when you initialize an alignment using the [`init(horizontal:vertical:)`](alignment/init(horizontal:vertical:).md) method. Use one of the built-in [`VerticalAlignment`](verticalalignment.md) guides, like [`center`](verticalalignment/center.md), or a custom guide that you create.
+Set this value when you initialize an alignment using the [`init(horizontal:vertical:)`](./init%28horizontal,vertical%29.md) method. Use one of the built-in [`VerticalAlignment`](../verticalalignment.md) guides, like [`center`](../verticalalignment/center.md), or a custom guide that you create.
 
-For information about creating custom guides, see [`AlignmentID`](alignmentid.md).
+For information about creating custom guides, see [`AlignmentID`](../alignmentid.md).
 
 ## See Also
 
-- [init(horizontal: HorizontalAlignment, vertical: VerticalAlignment)](alignment/init(horizontal:vertical:).md)
+### Creating a custom alignment
+- [init(horizontal: HorizontalAlignment, vertical: VerticalAlignment)](./init%28horizontal,vertical%29.md)
   Creates a custom alignment value with the specified horizontal and vertical alignment guides.
-- [var horizontal: HorizontalAlignment](alignment/horizontal.md)
+- [var horizontal: HorizontalAlignment](./horizontal.md)
   The alignment on the horizontal axis.
 
 

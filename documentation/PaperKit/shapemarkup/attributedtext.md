@@ -1,7 +1,8 @@
 # attributedText
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributed text displayed inside this shape.
 

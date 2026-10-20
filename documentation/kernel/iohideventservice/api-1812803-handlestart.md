@@ -7,12 +7,12 @@ Prepare the hardware and driver to support I/O operations.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool handleStart(
  IOService *provider );
 ```
 
-#### Return_value
+#### Return Value
 
 True on success, or false otherwise. Returning false will cause start() to fail and return false.
 
@@ -26,21 +26,22 @@ IOHIDEventService will call this method from start() before any I/O operations a
 
 ## See Also
 
-- [dispatchDigitizerEvent](iohideventservice/1812711-dispatchdigitizerevent.md)
+### Miscellaneous
+- [dispatchDigitizerEvent](./api-1812711-dispatchdigitizerevent.md)
   Dispatch tablet events without orientation
-- [dispatchDigitizerEventWithPolarOrientation](iohideventservice/1812728-dispatchdigitizereventwithpolaro.md)
+- [dispatchDigitizerEventWithPolarOrientation](./api-1812728-dispatchdigitizereventwithpolaro.md)
   Dispatch tablet events with polar orientation
-- [dispatchDigitizerEventWithTiltOrientation](iohideventservice/1812735-dispatchdigitizereventwithtiltor.md)
+- [dispatchDigitizerEventWithTiltOrientation](./api-1812735-dispatchdigitizereventwithtiltor.md)
   Dispatch tablet events with tilt orientation
-- [dispatchMultiAxisPointerEvent](iohideventservice/1812745-dispatchmultiaxispointerevent.md)
+- [dispatchMultiAxisPointerEvent](./api-1812745-dispatchmultiaxispointerevent.md)
   Dispatch multi-axis pointer event
-- [handleClose](iohideventservice/1812757-handleclose.md)
+- [handleClose](./api-1812757-handleclose.md)
   Handle a client close on the interface.
-- [handleIsOpen](iohideventservice/1812770-handleisopen.md)
+- [handleIsOpen](./api-1812770-handleisopen.md)
   Query whether a client has an open on the interface.
-- [handleOpen](iohideventservice/1812786-handleopen.md)
+- [handleOpen](./api-1812786-handleopen.md)
   Handle a client open on the interface.
-- [handleStop](iohideventservice/1812816-handlestop.md)
+- [handleStop](./api-1812816-handlestop.md)
   Quiesce the hardware and stop the driver.
 
 

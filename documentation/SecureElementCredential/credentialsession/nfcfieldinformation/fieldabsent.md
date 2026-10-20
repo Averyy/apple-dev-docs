@@ -1,7 +1,8 @@
 # CredentialSession.NFCFieldInformation.fieldAbsent
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No NFC reader RF field is present.
 
@@ -17,7 +18,8 @@ case fieldAbsent
 
 ## See Also
 
-- [CredentialSession.NFCFieldInformation.fieldPresent](credentialsession/nfcfieldinformation/fieldpresent.md)
+### Field states
+- [CredentialSession.NFCFieldInformation.fieldPresent](./fieldpresent.md)
   An NFC reader’s RF field is present.
 
 

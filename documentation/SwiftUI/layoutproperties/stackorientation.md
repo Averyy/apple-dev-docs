@@ -1,7 +1,8 @@
 # stackOrientation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation of the containing stack-like container.
 
@@ -22,9 +23,9 @@ var stackOrientation: Axis?
 
 #### Discussion
 
-Certain views alter their behavior based on the stack orientation of the container that they appear in. For example, [`Spacer`](spacer.md) and [`Divider`](divider.md) align their major axis to match that of their container.
+Certain views alter their behavior based on the stack orientation of the container that they appear in. For example, [`Spacer`](../spacer.md) and [`Divider`](../divider.md) align their major axis to match that of their container.
 
-Set the orientation for your custom layout container by returning a configured [`LayoutProperties`](layoutproperties.md) instance from your [`Layout`](layout.md) type’s implementation of the [`layoutProperties`](layout/layoutproperties.md) method. For example, you can indicate that your layout has a [`Axis.vertical`](axis/vertical.md) major axis:
+Set the orientation for your custom layout container by returning a configured [`LayoutProperties`](../layoutproperties.md) instance from your [`Layout`](../layout.md) type’s implementation of the [`layoutProperties`](../layout/layoutproperties.md) method. For example, you can indicate that your layout has a [`Axis.vertical`](../axis/vertical.md) major axis:
 
 ```swift
 extension BasicVStack {

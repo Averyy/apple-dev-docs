@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The ratio between width and height of the screen.
@@ -17,6 +18,10 @@ The ratio between width and height of the screen.
 
 ```swift
 var aspectRatio: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float aspectRatio;
 ```
 
 #### Discussion

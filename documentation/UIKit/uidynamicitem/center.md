@@ -2,21 +2,26 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The center point of the dynamic item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var center: CGPoint { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) CGPoint center;
 ```
 
 #### Discussion
@@ -25,13 +30,14 @@ The dynamic animator (that the item is associated with) calls this method when i
 
 ## See Also
 
-- [var bounds: CGRect](uidynamicitem/bounds.md)
+### Participating in dynamic animation
+- [var bounds: CGRect](./bounds.md)
   Called when a dynamic animator needs the bounds of the dynamic item.
-- [var transform: CGAffineTransform](uidynamicitem/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The rotation of the dynamic item.
-- [var collisionBoundsType: UIDynamicItemCollisionBoundsType](uidynamicitem/collisionboundstype.md)
+- [var collisionBoundsType: UIDynamicItemCollisionBoundsType](./collisionboundstype.md)
   The type of collision bounds associated with the item.
-- [var collisionBoundingPath: UIBezierPath](uidynamicitem/collisionboundingpath.md)
+- [var collisionBoundingPath: UIBezierPath](./collisionboundingpath.md)
   The path-based shape to use for the collision bounds.
 
 

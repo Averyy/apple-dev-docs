@@ -1,7 +1,8 @@
 # update(from:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates propagated and non-propagated attachment values using the provided container.
 

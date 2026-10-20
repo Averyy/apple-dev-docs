@@ -1,7 +1,8 @@
 # consoleDevice(_:didOpen:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the framework opened a console port.
 
@@ -14,18 +15,23 @@ Tells the delegate that the framework opened a console port.
 optional func consoleDevice(_ consoleDevice: VZVirtioConsoleDevice, didOpen consolePort: VZVirtioConsolePort)
 ```
 
+```objc
+- (void) consoleDevice:(VZVirtioConsoleDevice *) consoleDevice didOpenPort:(VZVirtioConsolePort *) consolePort;
+```
+
 #### Discussion
 
-Be sure to process or flush any pending data from the [`VZVirtioConsolePort`](vzvirtioconsoleport.md) attachment before communicating with a new virtual machine process, or additional data might remain on the serial port from the previous session.
+Be sure to process or flush any pending data from the [`VZVirtioConsolePort`](../vzvirtioconsoleport.md) attachment before communicating with a new virtual machine process, or additional data might remain on the serial port from the previous session.
 
 ## Parameters
 
 - `consoleDevice`: The console port’s console device.
-- `consolePort`: The [`VZVirtioConsolePort`](vzvirtioconsoleport.md) port that the framework opened.
+- `consolePort`: The [`VZVirtioConsolePort`](../vzvirtioconsoleport.md) port that the framework opened.
 
 ## See Also
 
-- [func consoleDevice(VZVirtioConsoleDevice, didClose: VZVirtioConsolePort)](vzvirtioconsoledevicedelegate/consoledevice(_:didclose:).md)
+### Responding to console device changes
+- [func consoleDevice(VZVirtioConsoleDevice, didClose: VZVirtioConsolePort)](./consoledevice%28_,didclose%29.md)
   Tells the delegate that the framework closed a console port.
 
 

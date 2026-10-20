@@ -1,18 +1,19 @@
 # DispatchSourceTimer
 
 **Framework**: Dispatch  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A dispatch source that submits the event handler block based on a timer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,48 +23,49 @@ protocol DispatchSourceTimer : DispatchSourceProtocol, Sendable
 
 #### Overview
 
-You do not adopt this protocol in your objects. Instead, use the [`makeTimerSource(flags:queue:)`](dispatchsource/maketimersource(flags:queue:).md) method to create an object that adopts this protocol.
+You do not adopt this protocol in your objects. Instead, use the [`makeTimerSource(flags:queue:)`](./dispatchsource/maketimersource%28flags,queue%29.md) method to create an object that adopts this protocol.
 
 ## Topics
 
 ### Scheduling the Timer Trigger Conditions
-- [func schedule(deadline: DispatchTime, repeating: DispatchTimeInterval, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedule(deadline:repeating:leeway:)-hvhp.md)
+- [func schedule(deadline: DispatchTime, repeating: DispatchTimeInterval, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedule%28deadline,repeating,leeway%29-hvhp.md)
   Schedules a timer with the specified deadline, repeat interval, and leeway values.
-- [func schedule(deadline: DispatchTime, repeating: Double, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedule(deadline:repeating:leeway:)-24w9r.md)
+- [func schedule(deadline: DispatchTime, repeating: Double, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedule%28deadline,repeating,leeway%29-24w9r.md)
   Schedules a timer with the specified deadline, repeat interval, and leeway values.
-- [func schedule(wallDeadline: DispatchWallTime, repeating: DispatchTimeInterval, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedule(walldeadline:repeating:leeway:)-7c4d7.md)
+- [func schedule(wallDeadline: DispatchWallTime, repeating: DispatchTimeInterval, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedule%28walldeadline,repeating,leeway%29-7c4d7.md)
   Schedules a timer with the specified time, repeat interval, and leeway values.
-- [func schedule(wallDeadline: DispatchWallTime, repeating: Double, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedule(walldeadline:repeating:leeway:)-21bay.md)
+- [func schedule(wallDeadline: DispatchWallTime, repeating: Double, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedule%28walldeadline,repeating,leeway%29-21bay.md)
   Schedules a timer with the specified time, repeat interval, and leeway values.
 ### Deprecated
-- [func scheduleOneshot(deadline: DispatchTime, leeway: DispatchTimeInterval)](dispatchsourcetimer/scheduleoneshot(deadline:leeway:).md)
+- [func scheduleOneshot(deadline: DispatchTime, leeway: DispatchTimeInterval)](./dispatchsourcetimer/scheduleoneshot%28deadline,leeway%29.md)
   Schedules a timer to fire once with the specified deadline and leeway values.
-- [func scheduleOneshot(wallDeadline: DispatchWallTime, leeway: DispatchTimeInterval)](dispatchsourcetimer/scheduleoneshot(walldeadline:leeway:).md)
+- [func scheduleOneshot(wallDeadline: DispatchWallTime, leeway: DispatchTimeInterval)](./dispatchsourcetimer/scheduleoneshot%28walldeadline,leeway%29.md)
   Schedules a timer to fire once with the specified deadline and leeway values.
-- [func scheduleRepeating(deadline: DispatchTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-3k199.md)
+- [func scheduleRepeating(deadline: DispatchTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedulerepeating%28deadline,interval,leeway%29-3k199.md)
   Schedules a repeating timer with the specified deadline, repeat interval, and leeway values.
-- [func scheduleRepeating(deadline: DispatchTime, interval: Double, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-4wtot.md)
+- [func scheduleRepeating(deadline: DispatchTime, interval: Double, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedulerepeating%28deadline,interval,leeway%29-4wtot.md)
   Schedules a repeating timer with the specified deadline, repeat interval, and leeway values.
-- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: Double, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-6fiox.md)
+- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: Double, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedulerepeating%28walldeadline,interval,leeway%29-6fiox.md)
   Schedules a repeating timer with the specified time, repeat interval, and leeway values.
-- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-942p7.md)
+- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](./dispatchsourcetimer/schedulerepeating%28walldeadline,interval,leeway%29-942p7.md)
   Schedules a repeating timer with the specified time, repeat interval, and leeway values.
 
 ## Relationships
 
 ### Inherits From
-- [DispatchSourceProtocol](dispatchsourceprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DispatchSourceProtocol](./dispatchsourceprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DispatchSource](dispatchsource.md)
+- [DispatchSource](./dispatchsource.md)
 
 ## See Also
 
-- [class func makeTimerSource(flags: DispatchSource.TimerFlags, queue: DispatchQueue?) -> any DispatchSourceTimer](dispatchsource/maketimersource(flags:queue:).md)
+### Creating a Timer Source
+- [class func makeTimerSource(flags: DispatchSource.TimerFlags, queue: DispatchQueue?) -> any DispatchSourceTimer](./dispatchsource/maketimersource%28flags,queue%29.md)
   Creates a new dispatch source object for monitoring timer events.
-- [DispatchSource.TimerFlags](dispatchsource/timerflags.md)
+- [DispatchSource.TimerFlags](./dispatchsource/timerflags.md)
   Flags to use when configuring a timer dispatch source.
 
 

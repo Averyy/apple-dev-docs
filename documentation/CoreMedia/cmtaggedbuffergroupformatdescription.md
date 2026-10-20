@@ -1,18 +1,19 @@
 # CMTaggedBufferGroupFormatDescription
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for tagged buffer format descriptions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A type for tagged buffer format descriptions.
 typealias CMTaggedBufferGroupFormatDescription = CMFormatDescription
 ```
 
+```c
+typedef CMFormatDescriptionRef CMTaggedBufferGroupFormatDescriptionRef;
+```
+
 ## See Also
 
-- [typealias CMTaggedBufferGroupFormatType](cmtaggedbuffergroupformattype.md)
+### Types
+- [typealias CMTaggedBufferGroupFormatType](./cmtaggedbuffergroupformattype.md)
   A type for tagged buffer format information.
 
 

@@ -1,7 +1,8 @@
 # inputMuteStateChangeNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the app’s audio input mute state changes.
 
@@ -20,19 +21,24 @@ A notification the system posts when the app’s audio input mute state changes.
 class let inputMuteStateChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioApplicationInputMuteStateChangeNotification;
+```
+
 ## Topics
 
 ### User information keys
-- [class let muteStateKey: String](avaudioapplication/mutestatekey.md)
+- [class let muteStateKey: String](./mutestatekey.md)
   A user information key to determine the app’s audio mute state.
 
 ## See Also
 
-- [var isInputMuted: Bool](avaudioapplication/isinputmuted.md)
+### Managing audio input mute state
+- [var isInputMuted: Bool](./isinputmuted.md)
   A Boolean value that indicates whether the app’s audio input is in a muted state.
-- [func setInputMuted(Bool) throws](avaudioapplication/setinputmuted(_:).md)
+- [func setInputMuted(Bool) throws](./setinputmuted%28_%29.md)
   Sets a Boolean value that indicates whether the app’s audio input is in a muted state.
-- [func setInputMuteStateChangeHandler(((Bool) -> Bool)?) throws](avaudioapplication/setinputmutestatechangehandler(_:).md)
+- [func setInputMuteStateChangeHandler(((Bool) -> Bool)?) throws](./setinputmutestatechangehandler%28_%29.md)
   Sets a callback to handle changes to application-level audio muting states.
 
 

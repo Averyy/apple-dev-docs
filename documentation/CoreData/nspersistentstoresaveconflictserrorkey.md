@@ -1,16 +1,17 @@
 # NSPersistentStoreSaveConflictsErrorKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The key for the array of merge conflict objects (instances of [`NSMergeConflict`](nsmergeconflict.md)).
+The key for the array of merge conflict objects (instances of [`NSMergeConflict`](./nsmergeconflict.md)).
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The key for the array of merge conflict objects (instances of [`NSMergeConflict`
 let NSPersistentStoreSaveConflictsErrorKey: String
 ```
 
+```c
+extern NSString * const NSPersistentStoreSaveConflictsErrorKey;
+```
+
 ## See Also
 
-- [let NSAddedPersistentStoresKey: String](nsaddedpersistentstoreskey.md)
+### Constants
+- [let NSAddedPersistentStoresKey: String](./nsaddedpersistentstoreskey.md)
   Key for the array of stores that were added.
-- [let NSRemovedPersistentStoresKey: String](nsremovedpersistentstoreskey.md)
+- [let NSRemovedPersistentStoresKey: String](./nsremovedpersistentstoreskey.md)
   Key for the array of stores that were removed.
-- [let NSUUIDChangedPersistentStoresKey: String](nsuuidchangedpersistentstoreskey.md)
+- [let NSUUIDChangedPersistentStoresKey: String](./nsuuidchangedpersistentstoreskey.md)
   Key for an array containing the old and new stores.
-- [let NSPersistentStoreConnectionPoolMaxSizeKey: String](nspersistentstoreconnectionpoolmaxsizekey.md)
+- [let NSPersistentStoreConnectionPoolMaxSizeKey: String](./nspersistentstoreconnectionpoolmaxsizekey.md)
   The maximum connection pool size to use on a store that supports concurrent request handling.
-- [let NSPersistentStoreUbiquitousTransitionTypeKey: String](nspersistentstoreubiquitoustransitiontypekey.md)
+- [let NSPersistentStoreUbiquitousTransitionTypeKey: String](./nspersistentstoreubiquitoustransitiontypekey.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,14 +18,14 @@ enum : int {
 ## Topics
 
 ### Constants
-- [durationDay](1645165-anonymous/durationday.md)
-- [durationForever](1645165-anonymous/durationforever.md)
-- [durationHour](1645165-anonymous/durationhour.md)
-- [durationMicrosecond](1645165-anonymous/durationmicrosecond.md)
-- [durationMillisecond](1645165-anonymous/durationmillisecond.md)
-- [durationMinute](1645165-anonymous/durationminute.md)
-- [durationNoWait](1645165-anonymous/durationnowait.md)
-- [durationSecond](1645165-anonymous/durationsecond.md)
+- [durationDay](./api-1645165-anonymous/durationday.md)
+- [durationForever](./api-1645165-anonymous/durationforever.md)
+- [durationHour](./api-1645165-anonymous/durationhour.md)
+- [durationMicrosecond](./api-1645165-anonymous/durationmicrosecond.md)
+- [durationMillisecond](./api-1645165-anonymous/durationmillisecond.md)
+- [durationMinute](./api-1645165-anonymous/durationminute.md)
+- [durationNoWait](./api-1645165-anonymous/durationnowait.md)
+- [durationSecond](./api-1645165-anonymous/durationsecond.md)
 
 
 ---

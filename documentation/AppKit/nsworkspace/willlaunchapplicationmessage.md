@@ -1,7 +1,8 @@
 # NSWorkspace.WillLaunchApplicationMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,15 +16,15 @@ struct WillLaunchApplicationMessage
 ## Topics
 
 ### Initializers
-- [init(application: NSRunningApplication)](nsworkspace/willlaunchapplicationmessage/init(application:).md)
+- [init(application: NSRunningApplication)](./willlaunchapplicationmessage/init%28application%29.md)
 ### Instance Properties
-- [var application: NSRunningApplication](nsworkspace/willlaunchapplicationmessage/application.md)
+- [var application: NSRunningApplication](./willlaunchapplicationmessage/application.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # release
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Specifies the release of the imaging language.
 
@@ -12,6 +13,10 @@ Specifies the release of the imaging language.
 
 ```swift
 var release: Str32
+```
+
+```c
+Str32 release;
 ```
 
 

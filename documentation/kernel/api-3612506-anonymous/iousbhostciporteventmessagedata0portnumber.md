@@ -1,14 +1,15 @@
 # IOUSBHostCIPortEventMessageData0PortNumber
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIPortEventMessageData0PortNumber = IOUSBBitRange(0, 3)
 ```
 

@@ -1,7 +1,8 @@
 # presentationIndex(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the selected item to be reflected in the page indicator.
 
@@ -9,13 +10,17 @@ Returns the index of the selected item to be reflected in the page indicator.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func presentationIndex(for pageViewController: UIPageViewController) -> Int
+```
+
+```objc
+- (NSInteger) presentationIndexForPageViewController:(UIPageViewController *) pageViewController;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ The index of the selected item to be reflected in the page indicator.
 
 ## See Also
 
-- [func presentationCount(for: UIPageViewController) -> Int](uipageviewcontrollerdatasource/presentationcount(for:).md)
+### Supporting a Page Indicator
+- [func presentationCount(for: UIPageViewController) -> Int](./presentationcount%28for%29.md)
   Returns the number of items to be reflected in the page indicator.
 
 

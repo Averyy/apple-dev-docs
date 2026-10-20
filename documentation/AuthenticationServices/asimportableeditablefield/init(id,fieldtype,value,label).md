@@ -1,7 +1,8 @@
 # init(id:fieldType:value:label:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an editable field instance.
 

@@ -1,18 +1,20 @@
 # People-Picker Event Kinds
 
-**Framework**: Address Book
+**Framework**: Address Book  
+**Role**: API Collection
 
-Constants used by [`ABPickerAttributes`](abpickerattributes.md) to specify People Picker event types.
+Constants used by [`ABPickerAttributes`](./abpickerattributes.md) to specify People Picker event types.
 
 ## See Also
 
-- [struct ABPeoplePickerSelectionBehavior](abpeoplepickerselectionbehavior.md)
+### Picker
+- [struct ABPeoplePickerSelectionBehavior](./abpeoplepickerselectionbehavior.md)
   Constants indicating the possible value selection behaviors.
-- [People-Picker Event Class](people-picker-event-class.md)
+- [People-Picker Event Class](./people-picker-event-class.md)
   This is the People Picker event class.
-- [People-Picker Event Parameter Name](people-picker-event-parameter-name.md)
+- [People-Picker Event Parameter Name](./people-picker-event-parameter-name.md)
   Use this constant to obtain the ABPicker object from aPeople Picker event.
-- [People-Picker Selection Behavior](people-picker-selection-behavior.md)
+- [People-Picker Selection Behavior](./people-picker-selection-behavior.md)
   Constants to specify the selection behavior for the values of multi-value properties.
 
 

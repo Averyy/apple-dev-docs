@@ -1,7 +1,8 @@
 # cancelInteractiveMovement()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends interactive movement tracking and returns the target item to its original location.
 
@@ -18,17 +19,22 @@ Ends interactive movement tracking and returns the target item to its original l
 func cancelInteractiveMovement()
 ```
 
+```objc
+- (void) cancelInteractiveMovement;
+```
+
 #### Discussion
 
 Call this method to cancel movement tracking and return the item to its original location. For example, when using a gesture recognizer to track interactions, call this method when the gesture is cancelled. Calling this method lets the collection view know to end the tracking process and return the item to its original location.
 
 ## See Also
 
-- [func beginInteractiveMovementForItem(at: IndexPath) -> Bool](uicollectionview/begininteractivemovementforitem(at:).md)
+### Reordering items interactively
+- [func beginInteractiveMovementForItem(at: IndexPath) -> Bool](./begininteractivemovementforitem%28at%29.md)
   Initiates the interactive movement of the item at the specified index path.
-- [func updateInteractiveMovementTargetPosition(CGPoint)](uicollectionview/updateinteractivemovementtargetposition(_:).md)
+- [func updateInteractiveMovementTargetPosition(CGPoint)](./updateinteractivemovementtargetposition%28_%29.md)
   Updates the position of the item within the collection view’s bounds.
-- [func endInteractiveMovement()](uicollectionview/endinteractivemovement.md)
+- [func endInteractiveMovement()](./endinteractivemovement%28%29.md)
   Ends interactive movement tracking and moves the target item to its new location.
 
 

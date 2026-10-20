@@ -1,7 +1,8 @@
 # message
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized, user-facing string that describes the error.
 
@@ -11,7 +12,7 @@ A localized, user-facing string that describes the error.
 
 ## Declaration
 
-```swift
+```
 attribute DOMString message;
 ```
 
@@ -21,9 +22,10 @@ Provide a short, custom, localized error message that helps the user resolve the
 
 ## See Also
 
-- [code](applepayerror/code.md)
+### Error Properties
+- [code](./code.md)
   The error code for this instance.
-- [contactField](applepayerror/contactfield.md)
+- [contactField](./contactfield.md)
   The field name that contains the error on the payment sheet.
 
 

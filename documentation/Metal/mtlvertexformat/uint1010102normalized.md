@@ -1,7 +1,8 @@
 # MTLVertexFormat.uint1010102Normalized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A four-component vector with 10-bit, normalized, unsigned integer values for red, green, and blue, and a 2-bit value for alpha.
 
@@ -10,7 +11,7 @@ A four-component vector with 10-bit, normalized, unsigned integer values for red
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ A four-component vector with 10-bit, normalized, unsigned integer values for red
 case uint1010102Normalized
 ```
 
+```c
+MTLVertexFormatUInt1010102Normalized
+```
+
 ## See Also
 
-- [MTLVertexFormat.int1010102Normalized](mtlvertexformat/int1010102normalized.md)
+### 32-bit normalized integer formats
+- [MTLVertexFormat.int1010102Normalized](./int1010102normalized.md)
   A four-component vector with 10-bit, normalized, signed integer values for red, green, and blue, and a 2-bit value for alpha.
-- [MTLVertexFormat.uchar4Normalized_bgra](mtlvertexformat/uchar4normalized_bgra.md)
+- [MTLVertexFormat.uchar4Normalized_bgra](./uchar4normalized_bgra.md)
   A four-component vector with 8-bit, normalized, unsigned integer values for blue, green, red, and alpha.
 
 

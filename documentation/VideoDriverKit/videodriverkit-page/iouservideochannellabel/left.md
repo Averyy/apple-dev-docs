@@ -1,28 +1,30 @@
 # Left
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 Left
 ```
 
 ## See Also
 
-- [LeftCenter](videodriverkit/iouservideochannellabel/leftcenter.md)
-- [LeftTopFront](videodriverkit/iouservideochannellabel/lefttopfront.md)
-- [VerticalHeightLeft](videodriverkit/iouservideochannellabel/verticalheightleft.md)
+### Left channels
+- [LeftCenter](./leftcenter.md)
+- [LeftTopFront](./lefttopfront.md)
+- [VerticalHeightLeft](./verticalheightleft.md)
   WAVE: “Top Front Left”
-- [LeftTopMiddle](videodriverkit/iouservideochannellabel/lefttopmiddle.md)
-- [LeftTopRear](videodriverkit/iouservideochannellabel/lefttoprear.md)
-- [LeftTotal](videodriverkit/iouservideochannellabel/lefttotal.md)
+- [LeftTopMiddle](./lefttopmiddle.md)
+- [LeftTopRear](./lefttoprear.md)
+- [LeftTotal](./lefttotal.md)
   matrix encoded 4 channels
-- [LeftWide](videodriverkit/iouservideochannellabel/leftwide.md)
+- [LeftWide](./leftwide.md)
 
 
 ---

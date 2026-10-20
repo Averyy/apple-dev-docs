@@ -1,7 +1,8 @@
 # init(imageAt:orientation:pixelsWide:pixelsHigh:pixelFormatType:options:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct image feature value from an image on disk. The passed in orientation supersedes any in the file
 
@@ -18,6 +19,10 @@ Construct image feature value from an image on disk. The passed in orientation s
 
 ```swift
 convenience init(imageAt url: URL, orientation: CGImagePropertyOrientation, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) featureValueWithImageAtURL:(NSURL *) url orientation:(CGImagePropertyOrientation) orientation pixelsWide:(NSInteger) pixelsWide pixelsHigh:(NSInteger) pixelsHigh pixelFormatType:(OSType) pixelFormatType options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 

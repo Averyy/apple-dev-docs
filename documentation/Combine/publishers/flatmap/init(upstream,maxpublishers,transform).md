@@ -1,7 +1,8 @@
 # init(upstream:maxPublishers:transform:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that transforms elements from an upstream publisher into a new publisher.
 

@@ -1,7 +1,8 @@
 # gameControllerActivationContext
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var gameControllerActivationContext: GCGameControllerActivationContext? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) GCGameControllerActivationContext * gameControllerActivationContext;
 ```
 
 

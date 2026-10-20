@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (GeometryElement, GeometryElement) -> Bool](geometryelement/==(_:_:).md)
+- [static func == (GeometryElement, GeometryElement) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two geometry elements are equal.
 
 

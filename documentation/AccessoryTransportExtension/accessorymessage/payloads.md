@@ -1,7 +1,8 @@
 # payloads
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of payload objects that comprise the message.
 
@@ -16,7 +17,8 @@ let payloads: [AccessoryMessage.Payload]
 
 ## See Also
 
-- [AccessoryMessage.Payload](accessorymessage/payload.md)
+### Accessing message content
+- [AccessoryMessage.Payload](./payload.md)
   A structure that represents a single data payload within an accessory message.
 
 

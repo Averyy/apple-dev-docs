@@ -1,7 +1,8 @@
 # HKWorkoutActivity
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes an activity within a longer workout.
 
@@ -19,104 +20,109 @@ An object that describes an activity within a longer workout.
 class HKWorkoutActivity
 ```
 
+```objc
+@interface HKWorkoutActivity : NSObject
+```
+
 ## Mentions
 
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
 
 #### Overview
 
-Workout activity objects partition a workout into a set of separate activities. For example, you can use workout activities to record the swim, bike, and running portions of a multisport event, like a triathlon, or to represent the active and rest periods during interval training. All [`HKWorkout`](hkworkout.md) instances have at least one associated [`HKWorkoutActivity`](hkworkoutactivity.md). If you don’t explicitly set workout activities, HealthKit assigns a workout activity that matches the [`HKWorkout`](hkworkout.md) object’s activity type. For more information, see [`Dividing a HealthKit workout into activities`](dividing-a-healthkit-workout-into-activities.md).
+Workout activity objects partition a workout into a set of separate activities. For example, you can use workout activities to record the swim, bike, and running portions of a multisport event, like a triathlon, or to represent the active and rest periods during interval training. All [`HKWorkout`](./hkworkout.md) instances have at least one associated [`HKWorkoutActivity`](./hkworkoutactivity.md). If you don’t explicitly set workout activities, HealthKit assigns a workout activity that matches the [`HKWorkout`](./hkworkout.md) object’s activity type. For more information, see [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md).
 
 ## Topics
 
 ### Creating workout activities
-- [init(workoutConfiguration: HKWorkoutConfiguration, start: Date, end: Date?, metadata: [String : Any]?)](hkworkoutactivity/init(workoutconfiguration:start:end:metadata:).md)
+- [init(workoutConfiguration: HKWorkoutConfiguration, start: Date, end: Date?, metadata: [String : Any]?)](./hkworkoutactivity/init%28workoutconfiguration,start,end,metadata%29.md)
   Creates a workout activity using the provided configuration, start date, end date, and metadata.
 ### Accessing workout data
-- [var uuid: UUID](hkworkoutactivity/uuid.md)
+- [var uuid: UUID](./hkworkoutactivity/uuid.md)
   The activity’s universally unique identifier (UUID).
-- [var startDate: Date](hkworkoutactivity/startdate.md)
+- [var startDate: Date](./hkworkoutactivity/startdate.md)
   The activitiy’s start date and time.
-- [var endDate: Date?](hkworkoutactivity/enddate.md)
+- [var endDate: Date?](./hkworkoutactivity/enddate.md)
   The activity’s end date and time.
-- [var duration: TimeInterval](hkworkoutactivity/duration.md)
+- [var duration: TimeInterval](./hkworkoutactivity/duration.md)
   The activity’s duration, measured in seconds.
-- [var allStatistics: [HKQuantityType : HKStatistics]](hkworkoutactivity/allstatistics.md)
+- [var allStatistics: [HKQuantityType : HKStatistics]](./hkworkoutactivity/allstatistics.md)
   A dictionary that contains all the statistics for the activity.
-- [func statistics(for: HKQuantityType) -> HKStatistics?](hkworkoutactivity/statistics(for:).md)
+- [func statistics(for: HKQuantityType) -> HKStatistics?](./hkworkoutactivity/statistics%28for%29.md)
   Returns the activity’s statistics for the provided quantity type.
-- [var metadata: [String : Any]?](hkworkoutactivity/metadata.md)
+- [var metadata: [String : Any]?](./hkworkoutactivity/metadata.md)
   Metadata that describes the activity.
-- [var workoutConfiguration: HKWorkoutConfiguration](hkworkoutactivity/workoutconfiguration.md)
+- [var workoutConfiguration: HKWorkoutConfiguration](./hkworkoutactivity/workoutconfiguration.md)
   The configuration information for this part of the workout.
-- [var workoutEvents: [HKWorkoutEvent]](hkworkoutactivity/workoutevents.md)
+- [var workoutEvents: [HKWorkoutEvent]](./hkworkoutactivity/workoutevents.md)
   An array of events associated with the containing workout and occurring during the activity’s duration.
 ### Accessing zone data
-- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](hkworkoutactivity/zonegroupsbytype.md)
+- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](./hkworkoutactivity/zonegroupsbytype.md)
   A property that contains a dictionary that maps quantity types to their zone groups for this activity.
-- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutactivity/zonegroup(for:).md)
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](./hkworkoutactivity/zonegroup%28for%29.md)
   Returns a zone group for the specified quantity type.
 ### Specifying predicate key paths
-- [let HKPredicateKeyPathWorkoutActivity: String](hkpredicatekeypathworkoutactivity.md)
+- [let HKPredicateKeyPathWorkoutActivity: String](./hkpredicatekeypathworkoutactivity.md)
   The key path for accessing a specific workout activity.
-- [let HKPredicateKeyPathWorkoutActivityType: String](hkpredicatekeypathworkoutactivitytype.md)
+- [let HKPredicateKeyPathWorkoutActivityType: String](./hkpredicatekeypathworkoutactivitytype.md)
   The key path for accessing activities that match a workout activity type.
-- [let HKPredicateKeyPathWorkoutActivityStartDate: String](hkpredicatekeypathworkoutactivitystartdate.md)
+- [let HKPredicateKeyPathWorkoutActivityStartDate: String](./hkpredicatekeypathworkoutactivitystartdate.md)
   The key path for accessing activities with a matching start date.
-- [let HKPredicateKeyPathWorkoutActivityEndDate: String](hkpredicatekeypathworkoutactivityenddate.md)
+- [let HKPredicateKeyPathWorkoutActivityEndDate: String](./hkpredicatekeypathworkoutactivityenddate.md)
   The key path for accessing activities with a matching end date.
-- [let HKPredicateKeyPathWorkoutActivityDuration: String](hkpredicatekeypathworkoutactivityduration.md)
+- [let HKPredicateKeyPathWorkoutActivityDuration: String](./hkpredicatekeypathworkoutactivityduration.md)
   The key path for accessing activities with a matching duration.
-- [let HKPredicateKeyPathWorkoutActivityAverageQuantity: String](hkpredicatekeypathworkoutactivityaveragequantity.md)
+- [let HKPredicateKeyPathWorkoutActivityAverageQuantity: String](./hkpredicatekeypathworkoutactivityaveragequantity.md)
   The key path for accessing activities with a matching average quantity.
-- [let HKPredicateKeyPathWorkoutActivityMaximumQuantity: String](hkpredicatekeypathworkoutactivitymaximumquantity.md)
+- [let HKPredicateKeyPathWorkoutActivityMaximumQuantity: String](./hkpredicatekeypathworkoutactivitymaximumquantity.md)
   The key path for accessing activities with a matching maximum quantity.
-- [let HKPredicateKeyPathWorkoutActivityMinimumQuantity: String](hkpredicatekeypathworkoutactivityminimumquantity.md)
+- [let HKPredicateKeyPathWorkoutActivityMinimumQuantity: String](./hkpredicatekeypathworkoutactivityminimumquantity.md)
   The key path for accessing activities with a matching minimum quantity.
-- [let HKPredicateKeyPathWorkoutActivitySumQuantity: String](hkpredicatekeypathworkoutactivitysumquantity.md)
+- [let HKPredicateKeyPathWorkoutActivitySumQuantity: String](./hkpredicatekeypathworkoutactivitysumquantity.md)
   The key path for accessing activities with a matching sum.
 ### Initializers
-- [init?(coder: NSCoder)](hkworkoutactivity/init(coder:).md)
-- [init(workoutConfiguration: HKWorkoutConfiguration, startDate: Date, endDate: Date?, metadata: [String : Any]?)](hkworkoutactivity/init(workoutconfiguration:startdate:enddate:metadata:).md)
+- [init?(coder: NSCoder)](./hkworkoutactivity/init%28coder%29.md)
+- [init(workoutConfiguration: HKWorkoutConfiguration, startDate: Date, endDate: Date?, metadata: [String : Any]?)](./hkworkoutactivity/init%28workoutconfiguration,startdate,enddate,metadata%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding samples to a workout](adding-samples-to-a-workout.md)
+### Samples
+- [Adding samples to a workout](./adding-samples-to-a-workout.md)
   Create associated samples that add details to a workout.
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
   Read series data from condensed workouts.
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
   Partition multisport and interval workouts into activities that represent the different parts of the workout.
-- [class HKWorkout](hkworkout.md)
+- [class HKWorkout](./hkworkout.md)
   A workout sample that stores information about a single physical activity.
-- [class HKWorkoutBuilder](hkworkoutbuilder.md)
+- [class HKWorkoutBuilder](./hkworkoutbuilder.md)
   A builder object that incrementally constructs a workout.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [let HKWorkoutTypeIdentifier: String](hkworkouttypeidentifier.md)
+- [let HKWorkoutTypeIdentifier: String](./hkworkouttypeidentifier.md)
   The workout type identifier.
-- [enum HKWorkoutActivityType](hkworkoutactivitytype.md)
+- [enum HKWorkoutActivityType](./hkworkoutactivitytype.md)
   The type of activity performed during a workout.
-- [enum HKWorkoutSessionType](hkworkoutsessiontype.md)
+- [enum HKWorkoutSessionType](./hkworkoutsessiontype.md)
   The type of session.
-- [class HKWorkoutEvent](hkworkoutevent.md)
+- [class HKWorkoutEvent](./hkworkoutevent.md)
   An object representing an important event during a workout.
 
 

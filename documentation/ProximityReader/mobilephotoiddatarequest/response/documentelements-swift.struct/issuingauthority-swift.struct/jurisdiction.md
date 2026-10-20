@@ -1,7 +1,8 @@
 # jurisdiction
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the jurisdiction that issued the identity document.
 

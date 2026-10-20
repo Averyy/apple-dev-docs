@@ -1,7 +1,8 @@
 # availableJointsGroupNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available joint group names in the observation.
 
@@ -19,17 +20,22 @@ The available joint group names in the observation.
 var availableJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * availableJointsGroupNames;
+```
+
 ## See Also
 
-- [var availableJointNames: [VNHumanBodyPoseObservation.JointName]](vnhumanbodyposeobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNHumanBodyPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname.md)
+- [VNHumanBodyPoseObservation.JointName](./jointname.md)
   The supported joint names for the body pose.
-- [VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname.md)
+- [VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname.md)
   The supported joint group names for the body pose.
-- [func recognizedPoint(VNHumanBodyPoseObservation.JointName) throws -> VNRecognizedPoint](vnhumanbodyposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanBodyPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Retrieves the recognized point for a joint name.
-- [func recognizedPoints(VNHumanBodyPoseObservation.JointsGroupName) throws -> [VNHumanBodyPoseObservation.JointName : VNRecognizedPoint]](vnhumanbodyposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanBodyPoseObservation.JointsGroupName) throws -> [VNHumanBodyPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Retrieves the recognized points associated with the joint group name.
 
 

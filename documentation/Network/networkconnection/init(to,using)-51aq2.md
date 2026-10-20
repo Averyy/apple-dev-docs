@@ -1,7 +1,8 @@
 # init(to:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new connection to an endpoint, with protocol stack.
 
@@ -19,6 +20,8 @@ Create a new connection to an endpoint, with protocol stack.
 ```swift
 convenience init(to provider: any Connectable, @ProtocolStackBuilder<ApplicationProtocol> using builder: () -> ApplicationProtocol)
 ```
+
+Available when `ApplicationProtocol` conforms to `OneToOneProtocol`.
 
 
 ---

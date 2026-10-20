@@ -1,15 +1,18 @@
 # NCUpdateResult
 
 **Framework**: Notification Center  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of updating a widget’s state.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 10.10+
+- iOS 8.0+ - Deprecated in 14.0
+- iPadOS 8.0+ - Deprecated in 14.0
+- Mac Catalyst 8.0+ - Deprecated in 14.0
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -17,31 +20,36 @@ The result of updating a widget’s state.
 enum NCUpdateResult
 ```
 
+```c
+enum NCUpdateResult : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NCUpdateResult.newData](ncupdateresult/newdata.md)
+- [NCUpdateResult.newData](./ncupdateresult/newdata.md)
   The update resulted in new data to display.
-- [NCUpdateResult.noData](ncupdateresult/nodata.md)
+- [NCUpdateResult.noData](./ncupdateresult/nodata.md)
   The update did not result in any new data since the last update.
-- [NCUpdateResult.failed](ncupdateresult/failed.md)
+- [NCUpdateResult.failed](./ncupdateresult/failed.md)
   The update attempt failed.
 ### Initializers
-- [init?(rawValue: UInt)](ncupdateresult/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./ncupdateresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func widgetPerformUpdate(completionHandler: (NCUpdateResult) -> Void)](ncwidgetproviding/widgetperformupdate(completionhandler:).md)
+### Updating a Widget’s Contents
+- [func widgetPerformUpdate(completionHandler: (NCUpdateResult) -> Void)](./ncwidgetproviding/widgetperformupdate%28completionhandler%29.md)
   Called to give a widget an opportunity to update its contents.
 
 

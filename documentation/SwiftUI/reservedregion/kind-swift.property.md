@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of the region.
 
@@ -22,15 +23,16 @@ var kind: ReservedRegion.Kind { get }
 
 #### Discussion
 
-The kind tells you how to respond to the region. Place your content outside an [`occlusion`](reservedregion/kind-swift.struct/occlusion.md) region, and arrange it on both sides of a [`division`](reservedregion/kind-swift.struct/division.md) region.
+The kind tells you how to respond to the region. Place your content outside an [`occlusion`](./kind-swift.struct/occlusion.md) region, and arrange it on both sides of a [`division`](./kind-swift.struct/division.md) region.
 
 ## See Also
 
-- [var id: ReservedRegion.ID](reservedregion/id-swift.property.md)
+### Getting the region’s identity and kind
+- [var id: ReservedRegion.ID](./id-swift.property.md)
   The identifier of the region.
-- [ReservedRegion.ID](reservedregion/id-swift.struct.md)
+- [ReservedRegion.ID](./id-swift.struct.md)
   An identifier for a reserved region.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
+- [ReservedRegion.Kind](./kind-swift.struct.md)
   A kind of reserved region.
 
 

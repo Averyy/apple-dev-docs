@@ -1,7 +1,8 @@
 # ChangeDetails
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Field-level change record for a single API entity within a transaction.
 
@@ -10,13 +11,13 @@ Field-level change record for a single API entity within a transaction.
 
 ## Declaration
 
-```swift
+```
 object ChangeDetails
 ```
 
 #### Overview
 
-Each `ChangeDetails` record represents one entity’s complete change history for a single transaction. The `details` array contains [`ActivityDetail`](activitydetail.md) objects, each of which holds a `changes` array of field change objects capturing the `field` name, `oldValues`, and `newValues`.
+Each `ChangeDetails` record represents one entity’s complete change history for a single transaction. The `details` array contains [`ActivityDetail`](./activitydetail.md) objects, each of which holds a `changes` array of field change objects capturing the `field` name, `oldValues`, and `newValues`.
 
 ##### Example
 
@@ -55,15 +56,15 @@ Each `ChangeDetails` record represents one entity’s complete change history fo
 
 #### Discussion
 
-##### Relationship to Auditsummary
+##### Relationship to AuditSummary
 
-The `ChangeDetails` object is the field-level expansion of an [`AuditSummary`](auditsummary.md) row. The `count` field on a summary row tells you how many field change entries to expect across all `ActivityDetail` objects in `details`.
+The `ChangeDetails` object is the field-level expansion of an [`AuditSummary`](./auditsummary.md) row. The `count` field on a summary row tells you how many field change entries to expect across all `ActivityDetail` objects in `details`.
 
-##### Entitymetadata Vs Metas
+##### `entityMetaData` vs `metas`
 
 The `ChangeDetails` always populates `entityMetaData` (when metadata is available) regardless of the request’s `options.metadata` setting. It represents a point-in-time snapshot of key entity attributes captured at change time. This differs from the `metas` field on `AuditSummary`, which the request’s `options.metadata` query option controls.
 
-##### Understand Oldvalues and Newvalues
+##### Understand `oldValues` and `newValues`
 
 Both fields are string arrays. For scalar fields, each array contains a single element. For array-valued fields, each array represents the full set of values before and after the change. Interpretation by event type:
 
@@ -76,35 +77,35 @@ Both fields are string arrays. For scalar fields, each array contains a single e
 ## Topics
 
 ### Dictionaries
-- [object ChangeDetails.EntityMetaData](changedetails/entitymetadata-data.dictionary.md)
+- [object ChangeDetails.EntityMetaData](./changedetails/entitymetadata-data.dictionary.md)
   A key-value map of entity metadata captured at the time of the change, such as entity name and parent IDs.
 
 ## Properties
 
 - `transactionId` (string): The unique identifier for the transaction that produced this change record.
 - `detailId` (string): A unique identifier for this specific entity change within the transaction.
-- `eventType` (AuditEventType): The type of change operation performed. See [`AuditEventType`](auditeventtype.md).
-- `entityType` (string): The API entity type that changed, matching the name of the API entity in the Apple Ads Platform API (for example, `Campaign`, `AdGroup`, `Keyword`). Not a closed enum. See [`Change History Endpoints`](change-history-endpoints.md) for the entity types this endpoint reports on.
+- `eventType` (AuditEventType): The type of change operation performed. See [`AuditEventType`](./auditeventtype.md).
+- `entityType` (string): The API entity type that changed, matching the name of the API entity in the Apple Ads Platform API (for example, `Campaign`, `AdGroup`, `Keyword`). Not a closed enum. See [Change History Endpoints](./change-history-endpoints.md) for the entity types this endpoint reports on.
 - `entityId` (string): The platform ID of the entity that changed (for example, a campaign ID or ad group ID).
 - `eventTime` (date-time): The UTC timestamp of when the change occurred, in ISO 8601 format.
-- `userType` (AuditUserType): The category of actor that performed the change. See [`AuditUserType`](auditusertype.md) for possible values. Read-only.
+- `userType` (AuditUserType): The category of actor that performed the change. See [`AuditUserType`](./auditusertype.md) for possible values. Read-only.
 - `modifiedBy` (string): The identifier of the user or service that performed the change. We don’t expose user email, only `modifiedBy`. Read-only.
-- `entityMetaData` (ChangeDetails.EntityMetaData): A key-value map of entity metadata captured at the time of the change (for example, entity name, parent IDs). See [`ChangeDetails.EntityMetaData`](changedetails/entitymetadata-data.dictionary.md). Keys and values are strings and vary by entity type. Read-only.
-- `details` ([ActivityDetail]): An array of [`ActivityDetail`](activitydetail.md) objects. Each entry contains a `changes` array of field change objects, where every entry captures one field that changed in the transaction. Read-only.
+- `entityMetaData` (ChangeDetails.EntityMetaData): A key-value map of entity metadata captured at the time of the change (for example, entity name, parent IDs). See [`ChangeDetails.EntityMetaData`](./changedetails/entitymetadata-data.dictionary.md). Keys and values are strings and vary by entity type. Read-only.
+- `details` ([ActivityDetail]): An array of [`ActivityDetail`](./activitydetail.md) objects. Each entry contains a `changes` array of field change objects, where every entry captures one field that changed in the transaction. Read-only.
 
 ## See Also
 
-- [object ActivityDetail](activitydetail.md)
+- [object ActivityDetail](./activitydetail.md)
   A group of field-level changes that occurred within a single activity context in a change details record.
-- [object AuditSummary](auditsummary.md)
+- [object AuditSummary](./auditsummary.md)
   One row in the query change history response, grouping a single actor’s entity changes in one transaction by entity type and event type.
-- [object AuditSummaryResponse](auditsummaryresponse.md)
+- [object AuditSummaryResponse](./auditsummaryresponse.md)
   The response envelope returned by the Query Change History endpoint, wrapping an array of audit summary rows with pagination metadata.
-- [object BaseAuditResponse](baseauditresponse.md)
+- [object BaseAuditResponse](./baseauditresponse.md)
   Common response envelope fields shared by all change history response objects.
-- [object ChangeDetailsResponse](changedetailsresponse.md)
+- [object ChangeDetailsResponse](./changedetailsresponse.md)
   The response envelope returned by the Get Change History Detail endpoint, wrapping an array of change detail records with pagination metadata.
-- [object ErrorMessage](errormessage.md)
+- [object ErrorMessage](./errormessage.md)
   Error information returned in a change history response when a request fails.
 
 

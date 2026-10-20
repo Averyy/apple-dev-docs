@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingInvocation
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A request to process a play media intent.
 
@@ -10,14 +11,14 @@ A request to process a play media intent.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingInvocation
 ```
 
 ## Topics
 
 ### Accessing the Intent
-- [object PlayMediaIntentHandlingInvocation.Params](playmediaintenthandlinginvocation/params-data.dictionary.md)
+- [object PlayMediaIntentHandlingInvocation.Params](./playmediaintenthandlinginvocation/params-data.dictionary.md)
   The parameters of a play media intent request.
 
 ## Properties
@@ -25,16 +26,19 @@ object PlayMediaIntentHandlingInvocation
 - `params` (PlayMediaIntentHandlingInvocation.Params) *(required)*: The parameters of this request, including the play media intent.
 - `method` (string) *(required)*: The action for your service to take to process this intent.
 
+  **Allowed Values**: `PlayMediaIntentHandling.resolveMediaItems`, `PlayMediaIntentHandling.resolvePlayShuffled`, `PlayMediaIntentHandling.resolvePlaybackQueueLocation`, `PlayMediaIntentHandling.resolvePlaybackRepeatMode`, `PlayMediaIntentHandling.resolveResumePlayback`, `PlayMediaIntentHandling.handle`
+
 ## Relationships
 
 ### Inherits From
-- [Invocation](invocation.md)
+- [Invocation](./invocation.md)
 
 ## See Also
 
-- [object PlayMediaIntent](playmediaintent.md)
+### Processing a Play Media Intent
+- [object PlayMediaIntent](./playmediaintent.md)
   An object that describes the user’s request to play a media item.
-- [type PlayMediaIntentHandlingInvocationResponse](playmediaintenthandlinginvocationresponse.md)
+- [type PlayMediaIntentHandlingInvocationResponse](./playmediaintenthandlinginvocationresponse.md)
   The service’s response to a request to process a play media intent.
 
 

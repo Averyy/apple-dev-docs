@@ -1,7 +1,8 @@
 # renderCallbacks
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A container that holds the view’s render callbacks.
 
@@ -21,8 +22,8 @@ A container that holds the view’s render callbacks.
 
 ## Mentions
 
-- [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
-- [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
+- [Applying core image filters as a postprocess effect](../applying-core-image-filters-as-a-postprocess-effect.md)
+- [Implementing postprocess effects using Metal compute functions](../implementing-postprocess-effects-using-metal-compute-functions.md)
 
 #### Discussion
 
@@ -30,11 +31,12 @@ Render callbacks are closures RealityKit calls at predefined times. You can use 
 
 ## See Also
 
-- [var session: ARSession](arview/session.md)
+### Configuring the AR session
+- [var session: ARSession](./session.md)
   The AR session that supports the view’s rendering.
-- [var automaticallyConfigureSession: Bool](arview/automaticallyconfiguresession.md)
+- [var automaticallyConfigureSession: Bool](./automaticallyconfiguresession.md)
   An indication of whether to use an automatically configured AR session.
-- [var renderOptions: ARView.RenderOptions](arview/renderoptions-swift.property.md)
+- [var renderOptions: ARView.RenderOptions](./renderoptions-swift.property.md)
   The render options that configure the view’s AR session.
 
 

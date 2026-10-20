@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the action.
 
@@ -17,6 +18,10 @@ A unique identifier for the action.
 
 ```swift
 var uniqueIdentifier: UUID { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
 ```
 
 

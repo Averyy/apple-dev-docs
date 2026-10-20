@@ -1,7 +1,8 @@
 # NSPositionalSpecifier.InsertionPosition.after
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a position after another object.
 
@@ -15,23 +16,28 @@ Specifies a position after another object.
 case after
 ```
 
+```c
+NSPositionAfter
+```
+
 ## See Also
 
-- [NSPositionalSpecifier.InsertionPosition.before](nspositionalspecifier/insertionposition/before.md)
+### Constants
+- [NSPositionalSpecifier.InsertionPosition.before](./before.md)
   Specifies a position before another object.
-- [NSPositionalSpecifier.InsertionPosition.beginning](nspositionalspecifier/insertionposition/beginning.md)
+- [NSPositionalSpecifier.InsertionPosition.beginning](./beginning.md)
   Specifies a position at the beginning of a collection.
-- [NSPositionalSpecifier.InsertionPosition.end](nspositionalspecifier/insertionposition/end.md)
+- [NSPositionalSpecifier.InsertionPosition.end](./end.md)
   Specifies a position at the end of a collection.
-- [NSPositionalSpecifier.InsertionPosition.replace](nspositionalspecifier/insertionposition/replace.md)
+- [NSPositionalSpecifier.InsertionPosition.replace](./replace.md)
   Specifies a position in the place of another object.
-- [NSPositionalSpecifier.InsertionPosition.before](nspositionalspecifier/insertionposition/before.md)
+- [NSPositionalSpecifier.InsertionPosition.before](./before.md)
   Specifies a position before another object.
-- [NSPositionalSpecifier.InsertionPosition.beginning](nspositionalspecifier/insertionposition/beginning.md)
+- [NSPositionalSpecifier.InsertionPosition.beginning](./beginning.md)
   Specifies a position at the beginning of a collection.
-- [NSPositionalSpecifier.InsertionPosition.end](nspositionalspecifier/insertionposition/end.md)
+- [NSPositionalSpecifier.InsertionPosition.end](./end.md)
   Specifies a position at the end of a collection.
-- [NSPositionalSpecifier.InsertionPosition.replace](nspositionalspecifier/insertionposition/replace.md)
+- [NSPositionalSpecifier.InsertionPosition.replace](./replace.md)
   Specifies a position in the place of another object.
 
 

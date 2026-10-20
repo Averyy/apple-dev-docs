@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a button.
@@ -24,7 +25,7 @@ Creates a view that represents the body of a button.
 
 #### Discussion
 
-The system calls this method for each [`Button`](button.md) instance in a view hierarchy where this style is the current button style.
+The system calls this method for each [`Button`](../button.md) instance in a view hierarchy where this style is the current button style.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ The system calls this method for each [`Button`](button.md) instance in a view h
 
 ## See Also
 
-- [ButtonStyle.Configuration](buttonstyle/configuration.md)
+### Custom button styles
+- [ButtonStyle.Configuration](./configuration.md)
   The properties of a button.
-- [associatedtype Body : View](buttonstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a button.
 
 

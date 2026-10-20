@@ -1,14 +1,15 @@
 # kBluetoothL2CAPPSMATT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPPSMATT = 0x001F
 ```
 

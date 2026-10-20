@@ -1,12 +1,13 @@
 # NSPrintInfo.Orientation.portraitOrientation
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Orientation is portrait (page is taller than it is wide).
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14 (renamed: NSPrintInfo.PaperOrientation.portrait)
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Orientation is portrait (page is taller than it is wide).
 case portraitOrientation
 ```
 
+```c
+NSPortraitOrientation
+```
+
 ## See Also
 
-- [NSPrintInfo.Orientation.landscapeOrientation](nsprintinfo/orientation-swift.enum/landscapeorientation.md)
+### Constants
+- [NSPrintInfo.Orientation.landscapeOrientation](./landscapeorientation.md)
   Orientation is landscape (page is wider than it is tall).
 
 

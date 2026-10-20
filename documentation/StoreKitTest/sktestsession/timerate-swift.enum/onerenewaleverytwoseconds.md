@@ -1,7 +1,8 @@
 # SKTestSession.TimeRate.oneRenewalEveryTwoSeconds
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rate of time in the test environment in which subscriptions of any time length renew every 2 seconds.
 
@@ -20,6 +21,10 @@ A rate of time in the test environment in which subscriptions of any time length
 case oneRenewalEveryTwoSeconds
 ```
 
+```c
+SKTestTimeRateOneRenewalEveryTwoSeconds
+```
+
 #### Discussion
 
 This time rate renews subscriptions every two seconds in the testing environment, regardless of actual renewal periods for each subscription.
@@ -35,15 +40,16 @@ This time rate also affects the billing grace period and the billing retry perio
 
 ## See Also
 
-- [SKTestSession.TimeRate.oneRenewalEveryFifteenMinutes](sktestsession/timerate-swift.enum/onerenewaleveryfifteenminutes.md)
+### Fixed time rates for subscription renewals
+- [SKTestSession.TimeRate.oneRenewalEveryFifteenMinutes](./onerenewaleveryfifteenminutes.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 15 minutes.
-- [SKTestSession.TimeRate.oneRenewalEveryFiveMinutes](sktestsession/timerate-swift.enum/onerenewaleveryfiveminutes.md)
+- [SKTestSession.TimeRate.oneRenewalEveryFiveMinutes](./onerenewaleveryfiveminutes.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 5 minutes.
-- [SKTestSession.TimeRate.oneRenewalEveryMinute](sktestsession/timerate-swift.enum/onerenewaleveryminute.md)
+- [SKTestSession.TimeRate.oneRenewalEveryMinute](./onerenewaleveryminute.md)
   A rate of time in the test environment in which subscriptions of any time length renew every minute.
-- [SKTestSession.TimeRate.oneRenewalEveryThirtySeconds](sktestsession/timerate-swift.enum/onerenewaleverythirtyseconds.md)
+- [SKTestSession.TimeRate.oneRenewalEveryThirtySeconds](./onerenewaleverythirtyseconds.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 30 seconds.
-- [SKTestSession.TimeRate.oneRenewalEveryTenSeconds](sktestsession/timerate-swift.enum/onerenewaleverytenseconds.md)
+- [SKTestSession.TimeRate.oneRenewalEveryTenSeconds](./onerenewaleverytenseconds.md)
   A rate of time in the test environment in which subscriptions of any time length renew every 10 seconds.
 
 

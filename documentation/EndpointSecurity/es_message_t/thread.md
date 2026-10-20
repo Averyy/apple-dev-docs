@@ -1,18 +1,23 @@
 # thread
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thread that took the action defined in a message.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var thread: UnsafeMutablePointer<es_thread_t>?
+```
+
+```c
+es_thread_t * thread;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ This field may be NULL when threading doesn’t apply. This includes trace event
 
 ## See Also
 
-- [struct es_thread_t](es_thread_t.md)
+### Inspecting Thread Properties
+- [struct es_thread_t](../es_thread_t.md)
   A structure that represents a thread in a process.
 
 

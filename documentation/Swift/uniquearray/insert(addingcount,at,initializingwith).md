@@ -1,7 +1,8 @@
 # insert(addingCount:at:initializingWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a given number of new items into this array at the specified position, using a callback to directly initialize array storage by populating an output span.
 
@@ -39,7 +40,7 @@ buffer.insert(capacity: 3, at: 1) { target in
 // `buffer` now contains [-999, 0, 1, 2, 999]
 ```
 
-> **Note**: O(`self.count` + `count`)
+> **Complexity**: O(`self.count` + `count`)
 
 ## Parameters
 

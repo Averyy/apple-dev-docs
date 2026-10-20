@@ -1,20 +1,22 @@
 # DTEntryNameBuf
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef char DTEntryNameBuf[64];
 ```
 
 ## See Also
 
-- [DTEntry](dtentry.md)
+### Device Tree
+- [DTEntry](./dtentry.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(url:content:placeholder:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays a modifiable model from the specified URL using a custom placeholder until the model loads.
 
@@ -28,7 +29,7 @@ Model3D(url: url) { model in
 }
 ```
 
-If the load operation fails, `Model3D` continues to display the placeholder. To be able to display a different view on a load error, use the [`init(url:transaction:content:)`](model3d/init(url:transaction:content:).md) initializer instead.
+If the load operation fails, `Model3D` continues to display the placeholder. To be able to display a different view on a load error, use the [`init(url:transaction:content:)`](./init%28url,transaction,content%29.md) initializer instead.
 
 ## Parameters
 
@@ -38,15 +39,16 @@ If the load operation fails, `Model3D` continues to display the placeholder. To 
 
 ## See Also
 
-- [init(named: String, bundle: Bundle?)](model3d/init(named:bundle:).md)
+### Creating a Model3D
+- [init(named: String, bundle: Bundle?)](./init%28named,bundle%29.md)
   Loads and displays a model by name, by searching through the specified `Foundation/Bundle`.
-- [init<Model, Placeholder>(named: String, bundle: Bundle?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(named:bundle:content:placeholder:).md)
-  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), using a custom placeholder until the model loads.
-- [init(named: String, bundle: Bundle?, transaction: Transaction, content: (Model3DPhase) -> Content)](model3d/init(named:bundle:transaction:content:).md)
-  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), in phases.
-- [init(url: URL)](model3d/init(url:).md)
+- [init<Model, Placeholder>(named: String, bundle: Bundle?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](./init%28named,bundle,content,placeholder%29.md)
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](../../Foundation/bundle.md), using a custom placeholder until the model loads.
+- [init(named: String, bundle: Bundle?, transaction: Transaction, content: (Model3DPhase) -> Content)](./init%28named,bundle,transaction,content%29.md)
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](../../Foundation/bundle.md), in phases.
+- [init(url: URL)](./init%28url%29.md)
   Loads and displays a model from the specified URL.
-- [init(url: URL, transaction: Transaction, content: (Model3DPhase) -> Content)](model3d/init(url:transaction:content:).md)
+- [init(url: URL, transaction: Transaction, content: (Model3DPhase) -> Content)](./init%28url,transaction,content%29.md)
   Loads and displays a modifiable model from the specified URL in phases.
 
 

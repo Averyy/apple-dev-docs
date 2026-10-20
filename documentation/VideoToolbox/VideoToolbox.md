@@ -1,7 +1,8 @@
 # Video Toolbox
 
 **Framework**: Video Toolbox  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Work directly with hardware-accelerated video encoding and decoding capabilities.
 
@@ -20,76 +21,76 @@ VideoToolbox is a low-level framework that provides direct access to hardware en
 ## Topics
 
 ### Frame Processing
-- [Frame processing](frame-processing.md)
+- [Frame processing](./frame-processing.md)
   An interface for accessing a range of different video-processing features.
 ### Motion Estimation
-- [class VTMotionEstimationSession](vtmotionestimationsession.md)
+- [class VTMotionEstimationSession](./vtmotionestimationsession.md)
 ### Compression
-- [Encoding video for low-latency conferencing](encoding-video-for-low-latency-conferencing.md)
+- [Encoding video for low-latency conferencing](./encoding-video-for-low-latency-conferencing.md)
   Configure a compression session to optimize encoding for video-conferencing apps.
-- [Encoding video for live streaming](encoding-video-for-live-streaming.md)
+- [Encoding video for live streaming](./encoding-video-for-live-streaming.md)
   Configure a compression session to encode video for live streaming.
-- [Encoding video for offline transcoding](encoding-video-for-offline-transcoding.md)
+- [Encoding video for offline transcoding](./encoding-video-for-offline-transcoding.md)
   Configure a compression session to transcode video in offline workflows.
-- [VTCompressionSession](vtcompressionsession-api-collection.md)
+- [VTCompressionSession](./vtcompressionsession-api-collection.md)
   An object that compresses video data.
-- [VTDecompressionSession](vtdecompressionsession-api-collection.md)
+- [VTDecompressionSession](./vtdecompressionsession-api-collection.md)
   An object that decompresses video data.
-- [VTFrameSilo](vtframesilo-api-collection.md)
+- [VTFrameSilo](./vtframesilo-api-collection.md)
   An object that stores sample buffers from a multipass encoding session.
-- [VTMultiPassStorage](vtmultipassstorage-api-collection.md)
+- [VTMultiPassStorage](./vtmultipassstorage-api-collection.md)
   An object that stores video encoding metadata from a multipass encoding session.
 ### Transformation
-- [VTPixelTransferSession](vtpixeltransfersession-api-collection.md)
+- [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md)
   An object converts video data from source pixel buffers to destination pixel buffers.
-- [VTPixelRotationSession](vtpixelrotationsession-api-collection.md)
+- [VTPixelRotationSession](./vtpixelrotationsession-api-collection.md)
   An object that rotates source pixel buffers to destination pixel buffers.
 ### RAW Processing
-- [class VTRAWProcessingSession](vtrawprocessingsession.md)
+- [class VTRAWProcessingSession](./vtrawprocessingsession.md)
   An object that processes frames in camera native formats such as RAW or Bayer.
 ### Media Extension
-- [struct VTExtensionPropertiesKey](vtextensionpropertieskey.md)
+- [struct VTExtensionPropertiesKey](./vtextensionpropertieskey.md)
   A key in a Media Extension extension properties dictionary.
 ### HDR Metadata
-- [class VTHDRPerFrameMetadataGenerationSession](vthdrperframemetadatagenerationsession.md)
+- [class VTHDRPerFrameMetadataGenerationSession](./vthdrperframemetadatagenerationsession.md)
   An object that generates per-frame HDR metadata.
 ### Codec Support
-- [func VTIsHardwareDecodeSupported(CMVideoCodecType) -> Bool](vtishardwaredecodesupported(_:).md)
+- [func VTIsHardwareDecodeSupported(CMVideoCodecType) -> Bool](./vtishardwaredecodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the current system supports hardware decode for the specified codec.
-- [func VTRegisterProfessionalVideoWorkflowVideoEncoders()](vtregisterprofessionalvideoworkflowvideoencoders().md)
+- [func VTRegisterProfessionalVideoWorkflowVideoEncoders()](./vtregisterprofessionalvideoworkflowvideoencoders%28%29.md)
   Loads encoders appropriate for the client’s professional video workflows.
-- [func VTRegisterProfessionalVideoWorkflowVideoDecoders()](vtregisterprofessionalvideoworkflowvideodecoders().md)
+- [func VTRegisterProfessionalVideoWorkflowVideoDecoders()](./vtregisterprofessionalvideoworkflowvideodecoders%28%29.md)
   Loads decoders appropriate for the client’s professional video workflows.
-- [func VTRegisterSupplementalVideoDecoderIfAvailable(CMVideoCodecType)](vtregistersupplementalvideodecoderifavailable(_:).md)
+- [func VTRegisterSupplementalVideoDecoderIfAvailable(CMVideoCodecType)](./vtregistersupplementalvideodecoderifavailable%28_%29.md)
   Registers a video decoder for the specified codec type, if one exists on the current system.
-- [func VTCopySupportedPropertyDictionaryForEncoder(width: Int32, height: Int32, codecType: CMVideoCodecType, encoderSpecification: CFDictionary?, encoderIDOut: UnsafeMutablePointer<CFString?>?, supportedPropertiesOut: UnsafeMutablePointer<CFDictionary?>?) -> OSStatus](vtcopysupportedpropertydictionaryforencoder(width:height:codectype:encoderspecification:encoderidout:supportedpropertiesout:).md)
+- [func VTCopySupportedPropertyDictionaryForEncoder(width: Int32, height: Int32, codecType: CMVideoCodecType, encoderSpecification: CFDictionary?, encoderIDOut: UnsafeMutablePointer<CFString?>?, supportedPropertiesOut: UnsafeMutablePointer<CFDictionary?>?) -> OSStatus](./vtcopysupportedpropertydictionaryforencoder%28width,height,codectype,encoderspecification,encoderidout,supportedpropertiesout%29.md)
   Builds a list of supported properties and encoder ID for an encoder.
-- [func VTCopyVideoEncoderList(CFDictionary?, UnsafeMutablePointer<CFArray?>) -> OSStatus](vtcopyvideoencoderlist(_:_:).md)
+- [func VTCopyVideoEncoderList(CFDictionary?, UnsafeMutablePointer<CFArray?>) -> OSStatus](./vtcopyvideoencoderlist%28_,_%29.md)
   Builds a list of available video encoders.
-- [Video Encoder List Keys](video-encoder-list-keys.md)
+- [Video Encoder List Keys](./video-encoder-list-keys.md)
   Dictionary key constants to use to retrieve video encoder information.
 ### Utilities
-- [func VTCreateCGImageFromCVPixelBuffer(CVPixelBuffer, options: CFDictionary?, imageOut: UnsafeMutablePointer<CGImage?>) -> OSStatus](vtcreatecgimagefromcvpixelbuffer(_:options:imageout:).md)
+- [func VTCreateCGImageFromCVPixelBuffer(CVPixelBuffer, options: CFDictionary?, imageOut: UnsafeMutablePointer<CGImage?>) -> OSStatus](./vtcreatecgimagefromcvpixelbuffer%28_,options,imageout%29.md)
   Creates a Core Graphics bitmap image or image mask using the provided pixel buffer.
 ### Data Types
-- [VTSession](vtsession-api-collection.md)
+- [VTSession](./vtsession-api-collection.md)
   An abstract object that provides the common interface to configure VideoToolbox session objects.
-- [struct VTInt32Point](vtint32point.md)
+- [struct VTInt32Point](./vtint32point.md)
   A structure that represents a 32-bit integer point value.
-- [struct VTInt32Size](vtint32size.md)
+- [struct VTInt32Size](./vtint32size.md)
   A structure that represents a 32-bit integer size value.
 ### Errors
-- [Error Code Constants](1490398-error-code-constants.md)
+- [Error Code Constants](./api-1490398-error-code-constants.md)
   Constants for Video Toolbox operation error codes.
 ### Reference
-- [VideoToolbox Reference](videotoolbox-reference.md)
+- [VideoToolbox Reference](./videotoolbox-reference.md)
 ### Variables
-- [let kVTCompressionPreset_ConsistentQuality: CFString](kvtcompressionpreset_consistentquality.md)
-- [let kVTCompressionPropertyKey_ConstantQualityFactor: CFString](kvtcompressionpropertykey_constantqualityfactor.md)
-- [let kVTCompressionPropertyKey_LogTransferFunction: CFString](kvtcompressionpropertykey_logtransferfunction.md)
+- [let kVTCompressionPreset_ConsistentQuality: CFString](./kvtcompressionpreset_consistentquality.md)
+- [let kVTCompressionPropertyKey_ConstantQualityFactor: CFString](./kvtcompressionpropertykey_constantqualityfactor.md)
+- [let kVTCompressionPropertyKey_LogTransferFunction: CFString](./kvtcompressionpropertykey_logtransferfunction.md)
   Indicates that the transfer function or gamma of the content is a log format and identifies the specific log curve. Log curve identifiers include `kCVImageBufferLogTransferFunction_AppleLog` (“com.apple.rec2020.apple-log”) and `kCVImageBufferLogTransferFunction_AppleLog2` (“com.apple.apple-wide-gamut.apple-log”). When the LogTransferFunction is specified for a VTCompressionSession, if source image buffers do not have exactly that LogTransferFunction, encoding will fail.
-- [var kVTLogTransferFunctionMismatchErr: OSStatus](kvtlogtransferfunctionmismatcherr.md)
-- [let kVTProjectionKind_AppleImmersiveVideo: CFString](kvtprojectionkind_appleimmersivevideo.md)
+- [var kVTLogTransferFunctionMismatchErr: OSStatus](./kvtlogtransferfunctionmismatcherr.md)
+- [let kVTProjectionKind_AppleImmersiveVideo: CFString](./kvtprojectionkind_appleimmersivevideo.md)
 
 
 ---

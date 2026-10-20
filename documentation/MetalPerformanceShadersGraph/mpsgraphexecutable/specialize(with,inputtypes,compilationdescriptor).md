@@ -1,7 +1,8 @@
 # specialize(with:inputTypes:compilationDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specialize the executable and optimize it.
 
@@ -17,6 +18,10 @@ Specialize the executable and optimize it.
 
 ```swift
 func specialize(with device: MPSGraphDevice?, inputTypes: [MPSGraphType], compilationDescriptor: MPSGraphCompilationDescriptor?)
+```
+
+```objc
+- (void) specializeWithDevice:(MPSGraphDevice *) device inputTypes:(NSArray<MPSGraphType *> *) inputTypes compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
 #### Discussion

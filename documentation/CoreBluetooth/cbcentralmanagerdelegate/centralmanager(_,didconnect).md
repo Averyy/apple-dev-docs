@@ -1,7 +1,8 @@
 # centralManager(_:didConnect:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the central manager connected to a peripheral.
 
@@ -20,11 +21,15 @@ Tells the delegate that the central manager connected to a peripheral.
 optional func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral)
 ```
 
+```objc
+- (void) centralManager:(CBCentralManager *) central didConnectPeripheral:(CBPeripheral *) peripheral;
+```
+
 #### Discussion
 
-The manager invokes this method when a call to [`connect(_:options:)`](cbcentralmanager/connect(_:options:).md) succeeds. You typically implement this method to set the peripheral’s delegate and discover its services.
+The manager invokes this method when a call to [`connect(_:options:)`](../cbcentralmanager/connect%28_,options%29.md) succeeds. You typically implement this method to set the peripheral’s delegate and discover its services.
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 
 ## See Also
 
-- [func centralManager(CBCentralManager, didDisconnectPeripheral: CBPeripheral, error: (any Error)?)](cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:error:).md)
+### Monitoring Connections with Peripherals
+- [func centralManager(CBCentralManager, didDisconnectPeripheral: CBPeripheral, error: (any Error)?)](./centralmanager%28_,diddisconnectperipheral,error%29.md)
   Tells the delegate that the central manager disconnected from a peripheral.
-- [func centralManager(CBCentralManager, didFailToConnect: CBPeripheral, error: (any Error)?)](cbcentralmanagerdelegate/centralmanager(_:didfailtoconnect:error:).md)
+- [func centralManager(CBCentralManager, didFailToConnect: CBPeripheral, error: (any Error)?)](./centralmanager%28_,didfailtoconnect,error%29.md)
   Tells the delegate the central manager failed to create a connection with a peripheral.
-- [func centralManager(CBCentralManager, connectionEventDidOccur: CBConnectionEvent, for: CBPeripheral)](cbcentralmanagerdelegate/centralmanager(_:connectioneventdidoccur:for:).md)
+- [func centralManager(CBCentralManager, connectionEventDidOccur: CBConnectionEvent, for: CBPeripheral)](./centralmanager%28_,connectioneventdidoccur,for%29.md)
   Tells the delegate that a connection event occurred which matches the registered options.
 
 

@@ -1,7 +1,8 @@
 # init(littleEndian:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer from its little-endian representation, changing the byte order if necessary.
 

@@ -1,7 +1,8 @@
 # NSHomeKitUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to their HomeKit configuration data.
 
@@ -11,19 +12,21 @@ A message that tells people why the app is requesting access to their HomeKit co
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSHomeKitUsageDescription` (Privacy - HomeKit Usage Description)
+- **Type**: string
 
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s HomeKit configuration data.
 
-For more information about using HomeKit in your app, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/homekit/enabling-homekit-in-your-app).
+For more information about using HomeKit in your app, see [Enabling HomeKit in your app](../../HomeKit/enabling-homekit-in-your-app.md).
 
 ## See Also
 
-- [Enabling HomeKit in your app](../homekit/enabling-homekit-in-your-app.md)
+### Home
+- [Enabling HomeKit in your app](../../HomeKit/enabling-homekit-in-your-app.md)
   Declare your app’s intention to use HomeKit, and get permission from the user to access home automation accessories.
 
 

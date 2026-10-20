@@ -1,7 +1,8 @@
 # kSecSubjectItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 DER-encoded subject distinguished name.
 
@@ -12,6 +13,10 @@ DER-encoded subject distinguished name.
 
 ```swift
 var kSecSubjectItemAttr: Int { get }
+```
+
+```c
+kSecSubjectItemAttr
 ```
 
 

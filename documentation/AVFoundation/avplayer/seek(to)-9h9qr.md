@@ -1,18 +1,19 @@
 # seek(to:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the player seek to a specified date.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,9 +22,13 @@ nonisolated
 func seek(to date: Date)
 ```
 
+```objc
+- (void) seekToDate:(NSDate *) date;
+```
+
 #### Discussion
 
-The time to which the player seeks may differ from the specified `date` for efficiency. For sample accurate seeking see [`seek(to:toleranceBefore:toleranceAfter:)`](avplayer/seek(to:tolerancebefore:toleranceafter:).md).
+The time to which the player seeks may differ from the specified `date` for efficiency. For sample accurate seeking see [`seek(to:toleranceBefore:toleranceAfter:)`](./seek%28to,tolerancebefore,toleranceafter%29.md).
 
 ## Parameters
 
@@ -31,15 +36,16 @@ The time to which the player seeks may differ from the specified `date` for effi
 
 ## See Also
 
-- [func seek(to: CMTime)](avplayer/seek(to:)-87h2r.md)
+### Seeking through media
+- [func seek(to: CMTime)](./seek%28to%29-87h2r.md)
   Requests that the player seek to a specified time.
-- [func seek(to: CMTime, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-75bls.md)
+- [func seek(to: CMTime, completionHandler: (Bool) -> Void)](./seek%28to,completionhandler%29-75bls.md)
   Requests that the player seek to a specified time, and to notify you when the seek is complete.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](avplayer/seek(to:tolerancebefore:toleranceafter:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](./seek%28to,tolerancebefore,toleranceafter%29.md)
   Requests that the player seek to a specified time with the amount of accuracy specified by the time tolerance values.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (Bool) -> Void)](avplayer/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (Bool) -> Void)](./seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Requests that the player seek to a specified time with the amount of accuracy specified by the time tolerance values, and to notify you when the seek is complete.
-- [func seek(to: Date, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-wr1l.md)
+- [func seek(to: Date, completionHandler: (Bool) -> Void)](./seek%28to,completionhandler%29-wr1l.md)
   Requests that the player seek to a specified date, and to notify you when the seek is complete.
 
 

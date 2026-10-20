@@ -1,19 +1,45 @@
 # elements
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 
+## Details
 
+- **Name**: `elements`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `address`
+- `age`
+- `date-of-birth`
+- `document-dhs-compliance-status`
+- `document-expiration-date`
+- `document-issue-date`
+- `document-number`
+- `driving-privileges`
+- `eye-color`
+- `family-name`
+- `given-name`
+- `hair-color`
+- `height`
+- `issuing-authority`
+- `jp-individual-number`
+- `organ-donor-status`
+- `portrait`
+- `sex`
+- `veteran-status`
+- `weight`
 
 ## See Also
 
-- [document-types](entitlements/com.apple.developer.in-app-identity-presentment/document-types.md)
+### Property List Keys
+- [document-types](./document-types.md)
 
 
 ---

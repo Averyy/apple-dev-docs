@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsFullAlbumsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Full-release albums associated with the artist.
 
@@ -10,7 +11,7 @@ Full-release albums associated with the artist.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsFullAlbumsView.Attributes
 ```
 

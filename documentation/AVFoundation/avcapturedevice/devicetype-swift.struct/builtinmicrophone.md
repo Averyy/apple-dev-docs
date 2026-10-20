@@ -1,15 +1,18 @@
 # builtInMicrophone
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A built-in microphone.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 14.0+
-- macOS 10.15+
+- iOS 10.0+ - Deprecated in 17.0 (renamed: AVCaptureDevice.DeviceType.microphone)
+- iPadOS 10.0+ - Deprecated in 17.0 (renamed: AVCaptureDevice.DeviceType.microphone)
+- Mac Catalyst 14.0+ - Deprecated in 17.0 (renamed: AVCaptureDevice.DeviceType.microphone)
+- macOS 10.15+ - Deprecated in 14.0 (renamed: AVCaptureDevice.DeviceType.microphone)
+
+> **Deprecated**: Use [`microphone`](./microphone.md) instead.
 
 ## Declaration
 
@@ -17,9 +20,14 @@ A built-in microphone.
 static let builtInMicrophone: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInMicrophone;
+```
+
 ## See Also
 
-- [static let microphone: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/microphone.md)
+### Microphones
+- [static let microphone: AVCaptureDevice.DeviceType](./microphone.md)
   A microphone device type.
 
 

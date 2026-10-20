@@ -1,7 +1,8 @@
 # UIMenuSystem.ElementGroupPreference.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default preference. The element group is automatically included based on the platform and other system behaviors.
 
@@ -16,6 +17,10 @@ The default preference. The element group is automatically included based on the
 
 ```swift
 case automatic
+```
+
+```c
+UIMenuSystemElementGroupPreferenceAutomatic
 ```
 
 

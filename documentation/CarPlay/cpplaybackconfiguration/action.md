@@ -1,7 +1,8 @@
 # CPPlaybackConfiguration.Action
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The playback action to perform on the item.
 
@@ -16,25 +17,29 @@ The playback action to perform on the item.
 enum Action
 ```
 
+```c
+enum CPPlaybackAction : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CPPlaybackConfiguration.Action.none](cpplaybackconfiguration/action/none.md)
-- [CPPlaybackConfiguration.Action.pause](cpplaybackconfiguration/action/pause.md)
-- [CPPlaybackConfiguration.Action.play](cpplaybackconfiguration/action/play.md)
-- [CPPlaybackConfiguration.Action.replay](cpplaybackconfiguration/action/replay.md)
+- [CPPlaybackConfiguration.Action.none](./action/none.md)
+- [CPPlaybackConfiguration.Action.pause](./action/pause.md)
+- [CPPlaybackConfiguration.Action.play](./action/play.md)
+- [CPPlaybackConfiguration.Action.replay](./action/replay.md)
 ### Initializers
-- [init?(rawValue: Int)](cpplaybackconfiguration/action/init(rawvalue:).md)
+- [init?(rawValue: Int)](./action/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

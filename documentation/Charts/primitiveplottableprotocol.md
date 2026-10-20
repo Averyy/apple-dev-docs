@@ -1,7 +1,8 @@
 # PrimitivePlottableProtocol
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the primitive plottable types supported by the framework. Don’t use this type directly.
 
@@ -22,14 +23,14 @@ protocol PrimitivePlottableProtocol : Plottable where Self == Self.PrimitivePlot
 
 #### Overview
 
-A primitive plottable type is a numeric type like a [`Float`](https://developer.apple.com/documentation/swift/float) or [`UInt32`](https://developer.apple.com/documentation/swift/uint32) for quantitative values, [`Date`](https://developer.apple.com/documentation/foundation/date) for temporal values, or [`String`](https://developer.apple.com/documentation/swift/string) for categorical values.
+A primitive plottable type is a numeric type like a [`Float`](../Swift/float.md) or [`UInt32`](../Swift/uint32.md) for quantitative values, [`Date`](../Foundation/date.md) for temporal values, or [`String`](../Swift/string.md) for categorical values.
 
-Primitive plottable types conform to the [`Plottable`](plottable.md) protocol.
+Primitive plottable types conform to the [`Plottable`](./plottable.md) protocol.
 
 ## Relationships
 
 ### Inherits From
-- [Plottable](plottable.md)
+- [Plottable](./plottable.md)
 
 
 ---

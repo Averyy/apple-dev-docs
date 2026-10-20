@@ -1,7 +1,8 @@
 # CTSlicingManager.AppCategory.communication
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An application category for voice, video calling, and messaging services.
 
@@ -22,9 +23,10 @@ Communication slices provide optimized routing for voice and video calling, mess
 
 ## See Also
 
-- [CTSlicingManager.AppCategory.gaming](ctslicingmanager/appcategory/gaming.md)
+### App categories
+- [CTSlicingManager.AppCategory.gaming](./gaming.md)
   An application category for gaming traffic requiring low latency.
-- [CTSlicingManager.AppCategory.streaming](ctslicingmanager/appcategory/streaming.md)
+- [CTSlicingManager.AppCategory.streaming](./streaming.md)
   An application category for audio and video streaming services.
 
 

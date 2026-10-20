@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the input diffuse albedo texture for this denoiser scaler.
@@ -17,6 +18,10 @@ The pixel format of the input diffuse albedo texture for this denoiser scaler.
 
 ```swift
 var diffuseAlbedoTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat diffuseAlbedoTextureFormat;
 ```
 
 

@@ -1,7 +1,8 @@
 # webExtensionController(_:focusedWindowFor:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests the currently focused window.
 
@@ -18,11 +19,15 @@ Called when an extension context requests the currently focused window.
 optional func webExtensionController(_ controller: WKWebExtensionController, focusedWindowFor extensionContext: WKWebExtensionContext) -> (any WKWebExtensionWindow)?
 ```
 
+```objc
+- (id<WKWebExtensionWindow>) webExtensionController:(WKWebExtensionController *) controller focusedWindowForExtensionContext:(WKWebExtensionContext *) extensionContext;
+```
+
 #### Discussion
 
 This method can be optionally implemented by the app to designate the window currently in focus to the extension.
 
-If not implemented, the first window in the result of [`webExtensionController(_:openWindowsFor:)`](wkwebextensioncontrollerdelegate/webextensioncontroller(_:openwindowsfor:).md) is used.
+If not implemented, the first window in the result of [`webExtensionController(_:openWindowsFor:)`](./webextensioncontroller%28_,openwindowsfor%29.md) is used.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ If not implemented, the first window in the result of [`webExtensionController(_
 
 ## See Also
 
-- [func webExtensionController(WKWebExtensionController, openWindowsFor: WKWebExtensionContext) -> [any WKWebExtensionWindow]](wkwebextensioncontrollerdelegate/webextensioncontroller(_:openwindowsfor:).md)
+### Related Documentation
+- [func webExtensionController(WKWebExtensionController, openWindowsFor: WKWebExtensionContext) -> [any WKWebExtensionWindow]](./webextensioncontroller%28_,openwindowsfor%29.md)
   Called when an extension context requests the list of ordered open windows.
 
 

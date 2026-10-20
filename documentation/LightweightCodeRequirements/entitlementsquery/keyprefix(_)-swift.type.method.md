@@ -1,7 +1,8 @@
 # keyPrefix(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Match the specified key prefix at the root of the entitlements dicitonary. Chain additional qualifiers to constrain the value of the key.
 

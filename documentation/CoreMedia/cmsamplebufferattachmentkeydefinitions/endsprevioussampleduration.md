@@ -1,7 +1,8 @@
 # endsPreviousSampleDuration
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that sample buffer’s decode timestamp may be used to define the previous sample buffer’s duration.
 

@@ -1,7 +1,8 @@
 # init(input:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a session from a sequence of samples.
 
@@ -17,13 +18,19 @@ Creates a session from a sequence of samples.
 convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration = Configuration()) throws where S : Sequence, S.Element == PhotogrammetrySample
 ```
 
+**Other overloads**:
+
+```swift
+convenience init(input: URL, configuration: PhotogrammetrySession.Configuration = Configuration()) throws
+```
+
 #### Discussion
 
-Creates a new session instance from a custom sequence of [`PhotogrammetrySample`](photogrammetrysample.md) objects by iterating over the provided  [`Sequence`](https://developer.apple.com/documentation/swift/sequence) object.
+Creates a new session instance from a custom sequence of [`PhotogrammetrySample`](../photogrammetrysample.md) objects by iterating over the provided  [`Sequence`](../../Swift/sequence.md) object.
 
-The constructor will only use `makeIterator()` on `input` and will then iterate through the sequence only once.  A provided iterator should be lazy, or a lazy  [`Sequence`](https://developer.apple.com/documentation/swift/sequence) and map used.
+The constructor will only use `makeIterator()` on `input` and will then iterate through the sequence only once.  A provided iterator should be lazy, or a lazy  [`Sequence`](../../Swift/sequence.md) and map used.
 
-> **Note**: To minimize memory usage, use lazy sequences that only create a [`PhotogrammetrySample`](photogrammetrysample.md) as it iterates by making calls to `next()` on its associated [`IteratorProtocol`](https://developer.apple.com/documentation/swift/iteratorprotocol).
+> **Note**: To minimize memory usage, use lazy sequences that only create a [`PhotogrammetrySample`](../photogrammetrysample.md) as it iterates by making calls to `next()` on its associated [`IteratorProtocol`](../../Swift/iteratorprotocol.md).
 
 ## Parameters
 
@@ -32,9 +39,10 @@ The constructor will only use `makeIterator()` on `input` and will then iterate 
 
 ## See Also
 
-- [convenience init(input: URL, configuration: PhotogrammetrySession.Configuration) throws](photogrammetrysession/init(input:configuration:)-wo4e.md)
+### Creating the session
+- [convenience init(input: URL, configuration: PhotogrammetrySession.Configuration) throws](./init%28input,configuration%29-wo4e.md)
   Creates a session from a specified directory of images.
-- [static var isSupported: Bool](photogrammetrysession/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   Returns `true` if the current hardware supports Object Capture.
 
 

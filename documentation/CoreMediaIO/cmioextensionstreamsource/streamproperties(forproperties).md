@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the states of specified properties.
@@ -16,6 +17,10 @@ Gets the states of specified properties.
 func streamProperties(forProperties properties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionStreamProperties
 ```
 
+```objc
+- (CMIOExtensionStreamProperties *) streamPropertiesForProperties:(NSSet<NSString *> *) properties error:(NSError **) outError;
+```
+
 #### Return Value
 
 An object that contains the states of the requested properties.
@@ -26,9 +31,10 @@ An object that contains the states of the requested properties.
 
 ## See Also
 
-- [var availableProperties: Set<CMIOExtensionProperty>](cmioextensionstreamsource/availableproperties.md)
+### Managing Stream Properties
+- [var availableProperties: Set<CMIOExtensionProperty>](./availableproperties.md)
   A set of properties available for the stream.
-- [func setStreamProperties(CMIOExtensionStreamProperties) throws](cmioextensionstreamsource/setstreamproperties(_:).md)
+- [func setStreamProperties(CMIOExtensionStreamProperties) throws](./setstreamproperties%28_%29.md)
   Sets the property state of a stream.
 
 

@@ -1,7 +1,8 @@
 # ASAuthorizationAccountCreationPlatformPublicKeyCredential
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -20,30 +21,30 @@ class ASAuthorizationAccountCreationPlatformPublicKeyCredential
 ## Topics
 
 ### Instance Properties
-- [var contactIdentifier: ASContactIdentifier](asauthorizationaccountcreationplatformpublickeycredential/contactidentifier.md)
+- [var contactIdentifier: ASContactIdentifier](./asauthorizationaccountcreationplatformpublickeycredential/contactidentifier.md)
   The contact identifier provided by the user for the account.
-- [var credentialRegistration: ASAuthorizationPlatformPublicKeyCredentialRegistration](asauthorizationaccountcreationplatformpublickeycredential/credentialregistration.md)
+- [var credentialRegistration: ASAuthorizationPlatformPublicKeyCredentialRegistration](./asauthorizationaccountcreationplatformpublickeycredential/credentialregistration.md)
   The registration response for the newly created passkey.
-- [var name: PersonNameComponents?](asauthorizationaccountcreationplatformpublickeycredential/name.md)
+- [var name: PersonNameComponents?](./asauthorizationaccountcreationplatformpublickeycredential/name.md)
   Name shared by the user, if requested.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASAuthorizationCredential](asauthorizationcredential.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationCredential](./asauthorizationcredential.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

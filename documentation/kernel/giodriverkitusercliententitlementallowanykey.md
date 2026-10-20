@@ -1,14 +1,15 @@
 # gIODriverKitUserClientEntitlementAllowAnyKey
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 const OSSymbol *gIODriverKitUserClientEntitlementAllowAnyKey;
 ```
 

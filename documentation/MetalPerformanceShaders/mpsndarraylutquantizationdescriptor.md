@@ -1,7 +1,8 @@
 # MPSNDArrayLUTQuantizationDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,24 +18,28 @@
 class MPSNDArrayLUTQuantizationDescriptor
 ```
 
+```objc
+@interface MPSNDArrayLUTQuantizationDescriptor : MPSNDArrayQuantizationDescriptor
+```
+
 ## Topics
 
 ### Initializers
-- [init(dataType: MPSDataType)](mpsndarraylutquantizationdescriptor/init(datatype:).md)
-- [init(dataType: MPSDataType, vectorAxis: Int)](mpsndarraylutquantizationdescriptor/init(datatype:vectoraxis:).md)
+- [init(dataType: MPSDataType)](./mpsndarraylutquantizationdescriptor/init%28datatype%29.md)
+- [init(dataType: MPSDataType, vectorAxis: Int)](./mpsndarraylutquantizationdescriptor/init%28datatype,vectoraxis%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayQuantizationDescriptor](mpsndarrayquantizationdescriptor.md)
+- [MPSNDArrayQuantizationDescriptor](./mpsndarrayquantizationdescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

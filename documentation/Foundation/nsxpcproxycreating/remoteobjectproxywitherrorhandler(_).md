@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a proxy object that invokes the error handling block if an error occurs on the connection.
@@ -19,6 +20,10 @@ Returns a proxy object that invokes the error handling block if an error occurs 
 
 ```swift
 func remoteObjectProxyWithErrorHandler(_ handler: @escaping @Sendable (any Error) -> Void) -> Any
+```
+
+```objc
+- (id) remoteObjectProxyWithErrorHandler:(void (^)(NSError *error)) handler;
 ```
 
 #### Discussion

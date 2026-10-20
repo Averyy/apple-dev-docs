@@ -1,7 +1,8 @@
 # mMinutes
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the minutes portion of the SMPTE time.
 
@@ -20,23 +21,28 @@ The value of the minutes portion of the SMPTE time.
 var mMinutes: Int16
 ```
 
+```c
+SInt16 mMinutes;
+```
+
 ## See Also
 
-- [var mCounter: UInt32](smptetime/mcounter.md)
+### Instance Properties
+- [var mCounter: UInt32](./mcounter.md)
   The total number of messages received. It takes 8 messages to carry a full SMPTE time code.
-- [var mFlags: SMPTETimeFlags](smptetime/mflags.md)
+- [var mFlags: SMPTETimeFlags](./mflags.md)
   A set of flags that indicate the SMPTE state (see `SMPTE Time Flags`).
-- [var mFrames: Int16](smptetime/mframes.md)
+- [var mFrames: Int16](./mframes.md)
   The value of the frames portion of the SMPTE time.
-- [var mHours: Int16](smptetime/mhours.md)
+- [var mHours: Int16](./mhours.md)
   The value of the hours portion of the SMPTE time.
-- [var mSeconds: Int16](smptetime/mseconds.md)
+- [var mSeconds: Int16](./mseconds.md)
   The value of the seconds portion of the SMPTE time.
-- [var mSubframeDivisor: Int16](smptetime/msubframedivisor.md)
+- [var mSubframeDivisor: Int16](./msubframedivisor.md)
   The number of subframes per video frame (typically 80).
-- [var mSubframes: Int16](smptetime/msubframes.md)
+- [var mSubframes: Int16](./msubframes.md)
   A subframe offset to the HH:MM:SS:FF time. You can use this field to position a time marker somewhere within the time span represented by a video frame, if necessary.
-- [var mType: SMPTETimeType](smptetime/mtype.md)
+- [var mType: SMPTETimeType](./mtype.md)
   A SMPTE time type constant indicating the kind of SMPTE time used (see `SMPTE Timecode Types`).
 
 

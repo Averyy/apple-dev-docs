@@ -1,7 +1,8 @@
 # Albums.Views.AlbumsAppearsOnView
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship view from this album to a selection of playlists tracks from this album appear on.
 
@@ -10,14 +11,14 @@ A relationship view from this album to a selection of playlists tracks from this
 
 ## Declaration
 
-```swift
+```
 object Albums.Views.AlbumsAppearsOnView
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Albums.Views.AlbumsAppearsOnView.Attributes](albums/views-data.dictionary/albumsappearsonview/attributes-data.dictionary.md)
+- [object Albums.Views.AlbumsAppearsOnView.Attributes](./albumsappearsonview/attributes-data.dictionary.md)
   The attributes for the view.
 
 ## Properties
@@ -29,11 +30,12 @@ object Albums.Views.AlbumsAppearsOnView
 
 ## See Also
 
-- [object Albums.Views.AlbumsOtherVersionsView](albums/views-data.dictionary/albumsotherversionsview.md)
+### Related Objects
+- [object Albums.Views.AlbumsOtherVersionsView](./albumsotherversionsview.md)
   A relationship view for other versions of this album.
-- [object Albums.Views.AlbumsRelatedAlbumsView](albums/views-data.dictionary/albumsrelatedalbumsview.md)
+- [object Albums.Views.AlbumsRelatedAlbumsView](./albumsrelatedalbumsview.md)
   A relationship view from this album to related and similar albums.
-- [object Albums.Views.AlbumsRelatedVideosView](albums/views-data.dictionary/albumsrelatedvideosview.md)
+- [object Albums.Views.AlbumsRelatedVideosView](./albumsrelatedvideosview.md)
   A relationship view from this album to music videos for the songs on the album.
 
 

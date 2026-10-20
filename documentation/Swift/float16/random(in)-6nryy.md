@@ -1,7 +1,8 @@
 # random(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a random value within the specified range.
 
@@ -19,6 +20,8 @@ Returns a random value within the specified range.
 ```swift
 static func random(in range: ClosedRange<Self>) -> Self
 ```
+
+Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
 #### Return Value
 

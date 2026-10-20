@@ -1,7 +1,8 @@
 # AnnotatedFeatureProvider.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The transformer type created by this estimator.
 
@@ -22,7 +23,8 @@ typealias Transformer = ColumnSelectorTransformer<Base.Transformer, UnwrappedInp
 
 ## See Also
 
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> ColumnSelectorTransformer<Base.Transformer, UnwrappedInput>](annotatedfeatureprovider/fitted(to:validateon:eventhandler:).md)
+### Fitting
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> ColumnSelectorTransformer<Base.Transformer, UnwrappedInput>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a data frame
 
 

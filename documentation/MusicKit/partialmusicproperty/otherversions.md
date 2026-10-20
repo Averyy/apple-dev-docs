@@ -1,7 +1,8 @@
 # otherVersions
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of other versions of the album.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of other ve
 ```swift
 static let otherVersions: MusicRelationshipProperty<Album, Album>
 ```
+
+Available when `Root` is `Album`.
 
 
 ---

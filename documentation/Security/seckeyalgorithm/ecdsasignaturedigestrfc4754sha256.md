@@ -1,7 +1,8 @@
 # ecdsaSignatureDigestRFC4754SHA256
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An algorithm for generating signatures of SHA256 message digests.
 
@@ -18,6 +19,10 @@ An algorithm for generating signatures of SHA256 message digests.
 
 ```swift
 static let ecdsaSignatureDigestRFC4754SHA256: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDSASignatureDigestRFC4754SHA256;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(opacity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new opacity component.
 

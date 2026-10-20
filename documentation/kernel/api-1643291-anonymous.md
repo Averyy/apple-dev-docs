@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_PageB1_Page_Length](1643291-anonymous/kinquiry_pageb1_page_length.md)
-- [kINQUIRY_PageB1_Page_Length](../iokit/1572966-anonymous/kinquiry_pageb1_page_length.md)
+- [kINQUIRY_PageB1_Page_Length](./api-1643291-anonymous/kinquiry_pageb1_page_length.md)
+- [kINQUIRY_PageB1_Page_Length](../iokit/api-1572966-anonymous/kinquiry_pageb1_page_length.md)
 
 
 ---

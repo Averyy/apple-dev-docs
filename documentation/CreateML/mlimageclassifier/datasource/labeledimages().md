@@ -1,7 +1,8 @@
 # labeledImages()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the labeled images represented by the data source.
 
@@ -24,7 +25,8 @@ The labeled images that the data source represents, as a dictionary. The diction
 
 ## See Also
 
-- [MLImageClassifier.DataSource.filesByLabel(_:)](mlimageclassifier/datasource/filesbylabel(_:).md)
+### Retrieving the data
+- [MLImageClassifier.DataSource.filesByLabel(_:)](./filesbylabel%28_%29.md)
   Dictionary of labels to file URLs.
 
 

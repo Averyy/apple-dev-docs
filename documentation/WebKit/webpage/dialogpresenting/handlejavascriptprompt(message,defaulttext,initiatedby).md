@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A JavaScript `prompt()` function has been invoked.
@@ -29,6 +30,12 @@ The result of handling the invocation; if the result is affirmative, the respons
 - `message`: The message provided by JavaScript.
 - `defaultText`: The initial text provided by JavaScript, intended to be displayed in some text entry field.
 - `frame`: Information about the frame whose JavaScript process initiated this call.
+
+## Default Implementations
+
+### WebPage.DialogPresenting Implementations
+- [func handleJavaScriptPrompt(message: String, defaultText: String?, initiatedBy: WebPage.FrameInfo) async -> WebPage.JavaScriptPromptResult](./handlejavascriptprompt%28message,defaulttext,initiatedby%29-9aik4.md)
+  By default, this method immediately returns with a result of `.cancel`.
 
 
 ---

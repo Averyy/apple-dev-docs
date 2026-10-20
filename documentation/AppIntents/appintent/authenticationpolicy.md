@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The authentication policy to enforce when running the app intent.
@@ -12,7 +13,7 @@ The authentication policy to enforce when running the app intent.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,11 +24,18 @@ static var authenticationPolicy: IntentAuthenticationPolicy { get }
 
 #### Discussion
 
-Set the value of this property if you want someone to provide authentication before running the app intent. The default value of this property is [`IntentAuthenticationPolicy.alwaysAllowed`](intentauthenticationpolicy/alwaysallowed.md), which allows the intent to run without authentication, including when the device is locked.
+Set the value of this property if you want someone to provide authentication before running the app intent. The default value of this property is [`IntentAuthenticationPolicy.alwaysAllowed`](../intentauthenticationpolicy/alwaysallowed.md), which allows the intent to run without authentication, including when the device is locked.
+
+## Default Implementations
+
+### AppIntent Implementations
+- [static var authenticationPolicy: IntentAuthenticationPolicy](./authenticationpolicy-1r9kh.md)
+  The authentication policy to enforce when running the app intent.
 
 ## See Also
 
-- [enum IntentAuthenticationPolicy](intentauthenticationpolicy.md)
+### Specifying the authentication policy
+- [enum IntentAuthenticationPolicy](../intentauthenticationpolicy.md)
   The authentication policies you can apply to an app intent when it runs.
 
 

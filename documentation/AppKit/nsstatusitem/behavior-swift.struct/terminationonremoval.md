@@ -1,7 +1,8 @@
 # terminationOnRemoval
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A status item that quits the application upon removal.
 
@@ -14,15 +15,20 @@ A status item that quits the application upon removal.
 static var terminationOnRemoval: NSStatusItem.Behavior { get }
 ```
 
+```c
+NSStatusItemBehaviorTerminationOnRemoval
+```
+
 #### Discussion
 
-A status item with this behavior quits the application if the user removes it from the menu bar. This behavior implicitly provides the same functionality as [`removalAllowed`](nsstatusitem/behavior-swift.struct/removalallowed.md).
+A status item with this behavior quits the application if the user removes it from the menu bar. This behavior implicitly provides the same functionality as [`removalAllowed`](./removalallowed.md).
 
-The [`terminationOnRemoval`](nsstatusitem/behavior-swift.struct/terminationonremoval.md) behavior is suitable for applications that display only a [`NSStatusItem`](nsstatusitem.md) and provide no other user interface.
+The [`terminationOnRemoval`](./terminationonremoval.md) behavior is suitable for applications that display only a [`NSStatusItem`](../../nsstatusitem.md) and provide no other user interface.
 
 ## See Also
 
-- [static var removalAllowed: NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct/removalallowed.md)
+### Behaviors
+- [static var removalAllowed: NSStatusItem.Behavior](./removalallowed.md)
   A status item that allows interactive removal.
 
 

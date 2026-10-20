@@ -1,7 +1,8 @@
 # sum(alongAxes:keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sum along the specified axes.
 
@@ -18,6 +19,12 @@ Returns the sum along the specified axes.
 
 ```swift
 func sum(alongAxes axes: Int..., keepRank: Bool = false) -> MLTensor
+```
+
+**Other overloads**:
+
+```swift
+func sum(alongAxes axes: [Int], keepRank: Bool = false) -> MLTensor
 ```
 
 #### Return Value
@@ -42,7 +49,8 @@ await y.shapedArray(of: Float.self) // is [[12, 15]]
 
 ## See Also
 
-- [func sum(keepRank: Bool) -> MLTensor](mltensor/sum(keeprank:).md)
+### Getting the sum
+- [func sum(keepRank: Bool) -> MLTensor](./sum%28keeprank%29.md)
   Returns the sum along all axes.
 
 

@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.referenceObject(from:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An anchor point attached to an object that matches the reference of an object anchor.
 
@@ -25,11 +26,12 @@ case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)
 
 ## See Also
 
-- [AnchoringComponent.Target.image(group:name:)](anchoringcomponent/target-swift.enum/image(group:name:).md)
+### Image and object anchor targets
+- [AnchoringComponent.Target.image(group:name:)](./image%28group,name%29.md)
   An anchor point attached to the image specified by a group and a name in AR Resources.
-- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](anchoringcomponent/target-swift.enum/referenceimage(from:).md)
+- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](./referenceimage%28from%29.md)
   An anchor point attached to the image specified by an image anchoring source.
-- [AnchoringComponent.Target.object(group:name:)](anchoringcomponent/target-swift.enum/object(group:name:).md)
+- [AnchoringComponent.Target.object(group:name:)](./object%28group,name%29.md)
   An anchor point attached to the object specified by a group and a name in AR Resources.
 
 

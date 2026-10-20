@@ -1,17 +1,22 @@
 # imageReps(withContentsOfFile:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an array of image representation objects initialized using the contents of the specified file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func imageReps(withContentsOfFile filename: String) -> [NSImageRep]?
+```
+
+```objc
++ (NSArray<NSImageRep *> *) imageRepsWithContentsOfFile:(NSString *) filename;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ An array of image representation objects. The array contains one object for each
 
 #### Discussion
 
-If sent to the `NSImageRep` class object, this method returns an array of objects (all newly allocated instances of a subclass of `NSImageRep`, chosen through the use of [`class(forFileType:)`](nsimagerep/class(forfiletype:).md)) that have been initialized with the contents of the file. If sent to a subclass of `NSImageRep` that recognizes the file type, this method returns an array of objects (all instances of that subclass) that have been initialized with the contents of the file.
+If sent to the `NSImageRep` class object, this method returns an array of objects (all newly allocated instances of a subclass of `NSImageRep`, chosen through the use of [`class(forFileType:)`](./class%28forfiletype%29.md)) that have been initialized with the contents of the file. If sent to a subclass of `NSImageRep` that recognizes the file type, this method returns an array of objects (all instances of that subclass) that have been initialized with the contents of the file.
 
 This method returns `nil` in any of the following cases:
 
@@ -36,21 +41,23 @@ The `NSImageRep` subclass is initialized by creating an `NSData` object based on
 
 ## See Also
 
-- [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
+### Related Documentation
+- [class func imageFileTypes() -> [String]](./imagefiletypes%28%29.md)
   Returns the file types supported by the image representation class or one of its subclasses.
-- [class func imageReps(with: NSPasteboard) -> [NSImageRep]?](nsimagerep/imagereps(with:).md)
+### Creating Representations of Images
+- [class func imageReps(with: NSPasteboard) -> [NSImageRep]?](./imagereps%28with%29.md)
   Creates and returns an array of image representation objects initialized using the contents of the pasteboard.
-- [class func imageReps(withContentsOf: URL) -> [NSImageRep]?](nsimagerep/imagereps(withcontentsof:).md)
+- [class func imageReps(withContentsOf: URL) -> [NSImageRep]?](./imagereps%28withcontentsof%29.md)
   Creates and returns an array of image representation objects initialized using the contents of the specified URL.
-- [init?(contentsOfFile: String)](nsimagerep/init(contentsoffile:).md)
+- [init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Creates and returns an image representation object using the contents of the specified file.
-- [init?(pasteboard: NSPasteboard)](nsimagerep/init(pasteboard:).md)
+- [init?(pasteboard: NSPasteboard)](./init%28pasteboard%29.md)
   Creates and returns an image representation object using the contents of the specified pasteboard.
-- [init?(contentsOf: URL)](nsimagerep/init(contentsof:).md)
+- [init?(contentsOf: URL)](./init%28contentsof%29.md)
   Creates and returns an image representation object using the data at the specified URL.
-- [init()](nsimagerep/init.md)
+- [init()](./init%28%29.md)
   Creates and returns an image representation object.
-- [init?(coder: NSCoder)](nsimagerep/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates and returns an image representation object from data in an unarchiver.
 
 

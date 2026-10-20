@@ -1,7 +1,8 @@
 # kAXStrikethroughColorTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CGColorRef` value that describes the color of the strikethrough.
 
@@ -12,6 +13,10 @@ A `CGColorRef` value that describes the color of the strikethrough.
 
 ```swift
 var kAXStrikethroughColorTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXStrikethroughColorTextAttribute;
 ```
 
 #### Discussion

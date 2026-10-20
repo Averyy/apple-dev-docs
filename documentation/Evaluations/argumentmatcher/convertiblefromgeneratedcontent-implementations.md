@@ -1,11 +1,12 @@
 # ConvertibleFromGeneratedContent Implementations
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(GeneratedContent) throws](argumentmatcher/init(_:).md)
+- [init(GeneratedContent) throws](./init%28_%29.md)
   Creates an argument matcher from generated content.
 
 

@@ -1,7 +1,8 @@
 # serializedRepresentation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the file wrapper as an opaque data object.
 
@@ -20,15 +21,20 @@ The contents of the file wrapper as an opaque data object.
 var serializedRepresentation: Data? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSData * serializedRepresentation;
+```
+
 #### Discussion
 
-This property contains a data object in the format used by the [`fileContents`](https://developer.apple.com/documentation/appkit/nspasteboard/pasteboardtype/filecontents) pasteboard type. This data object is also suitable for passing to [`init(serializedRepresentation:)`](filewrapper/init(serializedrepresentation:).md).
+This property contains a data object in the format used by the [`fileContents`](../../AppKit/nspasteboard/pasteboardtype/filecontents.md) pasteboard type. This data object is also suitable for passing to [`init(serializedRepresentation:)`](./init%28serializedrepresentation%29.md).
 
-This property may be `nil` if the user modifies the contents of the file system node after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:)-70161.md), but before [`FileWrapper`](filewrapper.md) has read the contents of the file.  You can use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of this problem.
+This property may be `nil` if the user modifies the contents of the file system node after you call [`read(from:options:)`](./read%28from,options%29.md) or [`init(url:options:)`](./init%28url,options%29-70161.md), but before [`FileWrapper`](../filewrapper.md) has read the contents of the file.  You can use the [`immediate`](./readingoptions/immediate.md) reading option to reduce the likelihood of this problem.
 
 ## See Also
 
-- [init?(serializedRepresentation: Data)](filewrapper/init(serializedrepresentation:).md)
+### Related Documentation
+- [init?(serializedRepresentation: Data)](./init%28serializedrepresentation%29.md)
   Initializes the receiver as a regular-file file wrapper from given serialized data.
 
 

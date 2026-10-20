@@ -1,7 +1,8 @@
 # deleteDonations(matching:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the donations that match the criteria in the specified predicate.
 
@@ -11,7 +12,7 @@ Deletes the donations that match the criteria in the specified predicate.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # input
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input profile for the controller.
 
@@ -19,16 +20,21 @@ The input profile for the controller.
 var input: GCControllerLiveInput { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) GCControllerLiveInput * input;
+```
+
 ## Mentions
 
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
-- [Handling input events](handling-input-events.md)
+- [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Handling input events](../handling-input-events.md)
 
 ## See Also
 
-- [class GCControllerLiveInput](gccontrollerliveinput.md)
+### Accessing controller input
+- [class GCControllerLiveInput](../gccontrollerliveinput.md)
   The input profile for a controller.
-- [class GCControllerInputState](gccontrollerinputstate.md)
+- [class GCControllerInputState](../gccontrollerinputstate.md)
   A class that represents an input state for gamepads and arcade sticks.
 
 

@@ -1,7 +1,8 @@
 # RCSService.Business.OpenURLAction.Detent.medium
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Half screen overlay.
 
@@ -16,9 +17,10 @@ case medium
 
 ## See Also
 
-- [RCSService.Business.OpenURLAction.Detent.large](rcsservice/business/openurlaction/detent/large.md)
+### Accessing detent values
+- [RCSService.Business.OpenURLAction.Detent.large](./large.md)
   Full screen overlay.
-- [RCSService.Business.OpenURLAction.Detent.mediumLarge](rcsservice/business/openurlaction/detent/mediumlarge.md)
+- [RCSService.Business.OpenURLAction.Detent.mediumLarge](./mediumlarge.md)
   Three-quarters screen overlay.
 
 

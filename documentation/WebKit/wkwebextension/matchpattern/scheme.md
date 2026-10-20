@@ -1,9 +1,10 @@
 # scheme
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The scheme part of the pattern string, unless [`matchesAllURLs`](wkwebextension/matchpattern/matchesallurls.md) is `YES`.
+The scheme part of the pattern string, unless [`matchesAllURLs`](./matchesallurls.md) is `YES`.
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@ The scheme part of the pattern string, unless [`matchesAllURLs`](wkwebextension/
 
 ```swift
 var scheme: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * scheme;
 ```
 
 

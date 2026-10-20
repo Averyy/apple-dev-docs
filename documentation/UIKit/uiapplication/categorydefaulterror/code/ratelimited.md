@@ -1,7 +1,8 @@
 # UIApplication.CategoryDefaultError.Code.rateLimited
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system didn’t determine if your app is the default in a category because the app made the request too many times.
 
@@ -16,12 +17,16 @@ The system didn’t determine if your app is the default in a category because t
 case rateLimited
 ```
 
+```c
+UIApplicationCategoryDefaultErrorRateLimited
+```
+
 #### Discussion
 
 When you receive an error with this code, the error’s user info dictionary contains these keys:
 
-- **[`statusLastProvidedDateErrorKey`](uiapplication/categorydefaulterror/statuslastprovideddateerrorkey.md)**: The date at which the app most recently received a result indicating whether it’s the default app in a category.
-- **[`retryAvailableDateErrorKey`](uiapplication/categorydefaulterror/retryavailabledateerrorkey.md)**: The date at which the app can next request an updated response.
+- **[`statusLastProvidedDateErrorKey`](../statuslastprovideddateerrorkey.md)**: The date at which the app most recently received a result indicating whether it’s the default app in a category.
+- **[`retryAvailableDateErrorKey`](../retryavailabledateerrorkey.md)**: The date at which the app can next request an updated response.
 
 
 ---

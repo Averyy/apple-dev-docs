@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the application is currently frontmost.
 
@@ -14,22 +15,27 @@ Indicates whether the application is currently frontmost.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isActive) BOOL active;
+```
+
 #### Discussion
 
 This property is observable using key-value observing.
 
 ## See Also
 
-- [func activate(options: NSApplication.ActivationOptions) -> Bool](nsrunningapplication/activate(options:).md)
+### Activating applications
+- [func activate(options: NSApplication.ActivationOptions) -> Bool](./activate%28options%29.md)
   Attempts to activate the application using the specified options.
-- [func activate(from: NSRunningApplication, options: NSApplication.ActivationOptions) -> Bool](nsrunningapplication/activate(from:options:).md)
+- [func activate(from: NSRunningApplication, options: NSApplication.ActivationOptions) -> Bool](./activate%28from,options%29.md)
   Attempts to activate the application using the specified options.
-- [NSApplication.ActivationOptions](nsapplication/activationoptions.md)
-  The following flags are for [`activate(options:)`](nsrunningapplication/activate(options:).md).
-- [var activationPolicy: NSApplication.ActivationPolicy](nsrunningapplication/activationpolicy.md)
+- [NSApplication.ActivationOptions](../nsapplication/activationoptions.md)
+  The following flags are for [`activate(options:)`](./activate%28options%29.md).
+- [var activationPolicy: NSApplication.ActivationPolicy](./activationpolicy.md)
   Indicates the activation policy of the application.
-- [NSApplication.ActivationPolicy](nsapplication/activationpolicy-swift.enum.md)
-  Activation policies (used by [`activationPolicy`](nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
+- [NSApplication.ActivationPolicy](../nsapplication/activationpolicy-swift.enum.md)
+  Activation policies (used by [`activationPolicy`](./activationpolicy.md)) that control whether and how an app may be activated.
 
 
 ---

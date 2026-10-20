@@ -1,7 +1,8 @@
 # clearConnectionPaths()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all authored connection paths on this attribute.
 

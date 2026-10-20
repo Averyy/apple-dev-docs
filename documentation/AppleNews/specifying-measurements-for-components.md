@@ -1,6 +1,7 @@
 # Specifying Measurements for Components
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Specify the units of measure to use for margins, minimum heights, and other dimensions.
 
@@ -48,7 +49,7 @@ In this example, the component’s margin is set to 20 percent of the viewport w
 }
 ```
 
-###### Set Measurements Based on the Viewports Shortest Side
+###### Set Measurements Based on the Viewport’s Shortest Side
 
 If you base a component’s minimum height on the shortest side of the viewport, remember that the minimum height varies depending on your device orientation. If your article is being viewed in portrait orientation, the calculation is based on the width of the viewport; in landscape, the calculation is based on the height of the viewport.
 
@@ -58,7 +59,7 @@ For example, if the viewport is narrow and tall (portrait), a value of `150vmin`
 "minimumHeight": "25vmin"
 ```
 
-###### Set Measurements Based on the Viewports Longest Side
+###### Set Measurements Based on the Viewport’s Longest Side
 
 If you base a component’s minimum height on the longest side of the viewport, remember that the minimum height varies depending on your device orientation. If your article is being viewed in portrait orientation, the calculation is based on the height of the viewport; in landscape, the calculation is based on the width of the viewport.
 
@@ -136,13 +137,15 @@ This example creates a vertical margin that’s 50 percent of the left margin of
 
 ## See Also
 
-- [Creating a Layered Header](creating-a-layered-header.md)
+### Related Documentation
+- [Creating a Layered Header](./creating-a-layered-header.md)
   Create a header with a caption that’s layered in front of an image.
-- [Adding a Fixed Image Fill](adding-a-fixed-image-fill.md)
+- [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
   Add an image that remains stationary when the user scrolls.
-- [type SupportedUnits](../applenewsformat/supportedunits.md)
+### Component Measurements and Media Guidelines
+- [type SupportedUnits](https://developer.apple.com/documentation/applenewsformat/supportedunits)
   The units of measurement Apple News Format supports.
-- [Preparing Image, Video, Audio, Music, and ARKit Assets](preparing-image-video-audio-music-and-arkit-assets.md)
+- [Preparing Image, Video, Audio, Music, and ARKit Assets](./preparing-image-video-audio-music-and-arkit-assets.md)
   Add media assets to your article.
 
 

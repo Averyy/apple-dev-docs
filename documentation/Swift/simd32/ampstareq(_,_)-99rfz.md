@@ -1,7 +1,8 @@
 # &*=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Updates the left hand side with the pointwise wrapping product of two vectors.
 
@@ -19,6 +20,8 @@ Updates the left hand side with the pointwise wrapping product of two vectors.
 ```swift
 static func &*= (a: inout SIMD32<Scalar>, b: SIMD32<Scalar>)
 ```
+
+Available when `Scalar` is `UInt16`.
 
 
 ---

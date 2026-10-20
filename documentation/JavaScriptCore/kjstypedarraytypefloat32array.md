@@ -1,7 +1,8 @@
 # kJSTypedArrayTypeFloat32Array
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A 32-bit floating point array type.
 
@@ -19,29 +20,34 @@ A 32-bit floating point array type.
 var kJSTypedArrayTypeFloat32Array: JSTypedArrayType { get }
 ```
 
+```c
+kJSTypedArrayTypeFloat32Array
+```
+
 ## See Also
 
-- [var kJSTypedArrayTypeNone: JSTypedArrayType](kjstypedarraytypenone.md)
+### Constants
+- [var kJSTypedArrayTypeNone: JSTypedArrayType](./kjstypedarraytypenone.md)
   Not a typed array.
-- [var kJSTypedArrayTypeArrayBuffer: JSTypedArrayType](kjstypedarraytypearraybuffer.md)
+- [var kJSTypedArrayTypeArrayBuffer: JSTypedArrayType](./kjstypedarraytypearraybuffer.md)
   An array buffer type.
-- [var kJSTypedArrayTypeInt8Array: JSTypedArrayType](kjstypedarraytypeint8array.md)
+- [var kJSTypedArrayTypeInt8Array: JSTypedArrayType](./kjstypedarraytypeint8array.md)
   An 8-bit integer array type.
-- [var kJSTypedArrayTypeInt16Array: JSTypedArrayType](kjstypedarraytypeint16array.md)
+- [var kJSTypedArrayTypeInt16Array: JSTypedArrayType](./kjstypedarraytypeint16array.md)
   A 16-bit integer array type.
-- [var kJSTypedArrayTypeInt32Array: JSTypedArrayType](kjstypedarraytypeint32array.md)
+- [var kJSTypedArrayTypeInt32Array: JSTypedArrayType](./kjstypedarraytypeint32array.md)
   A 32-bit integer array type.
-- [var kJSTypedArrayTypeBigInt64Array: JSTypedArrayType](kjstypedarraytypebigint64array.md)
-- [var kJSTypedArrayTypeUint8Array: JSTypedArrayType](kjstypedarraytypeuint8array.md)
+- [var kJSTypedArrayTypeBigInt64Array: JSTypedArrayType](./kjstypedarraytypebigint64array.md)
+- [var kJSTypedArrayTypeUint8Array: JSTypedArrayType](./kjstypedarraytypeuint8array.md)
   An 8-bit unsigned integer array type.
-- [var kJSTypedArrayTypeUint8ClampedArray: JSTypedArrayType](kjstypedarraytypeuint8clampedarray.md)
+- [var kJSTypedArrayTypeUint8ClampedArray: JSTypedArrayType](./kjstypedarraytypeuint8clampedarray.md)
   An 8-bit unsigned integer clamped array type.
-- [var kJSTypedArrayTypeUint16Array: JSTypedArrayType](kjstypedarraytypeuint16array.md)
+- [var kJSTypedArrayTypeUint16Array: JSTypedArrayType](./kjstypedarraytypeuint16array.md)
   A 16-bit unsigned integer array type.
-- [var kJSTypedArrayTypeUint32Array: JSTypedArrayType](kjstypedarraytypeuint32array.md)
+- [var kJSTypedArrayTypeUint32Array: JSTypedArrayType](./kjstypedarraytypeuint32array.md)
   A 32-bit unsigned integer array type.
-- [var kJSTypedArrayTypeBigUint64Array: JSTypedArrayType](kjstypedarraytypebiguint64array.md)
-- [var kJSTypedArrayTypeFloat64Array: JSTypedArrayType](kjstypedarraytypefloat64array.md)
+- [var kJSTypedArrayTypeBigUint64Array: JSTypedArrayType](./kjstypedarraytypebiguint64array.md)
+- [var kJSTypedArrayTypeFloat64Array: JSTypedArrayType](./kjstypedarraytypefloat64array.md)
   A 64-bit floating point array type.
 
 

@@ -1,7 +1,8 @@
 # MusicUnderstandingSession.RangedValue
 
 **Framework**: Music Understanding  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that pairs a value over a time range.
 
@@ -27,32 +28,33 @@ The `RangedValue` is a container pairing an analysis value with a CMTimeRange se
 ## Topics
 
 ### Getting the time range
-- [let range: CMTimeRange](musicunderstandingsession/rangedvalue/range.md)
+- [let range: CMTimeRange](./rangedvalue/range.md)
   The time range over which the value applies.
 ### Getting the value
-- [let value: Value](musicunderstandingsession/rangedvalue/value.md)
+- [let value: Value](./rangedvalue/value.md)
   The value associated with the time range.
 ### Initializers
-- [init(from: any Decoder) throws](musicunderstandingsession/rangedvalue/init(from:).md)
+- [init(from: any Decoder) throws](./rangedvalue/init%28from%29.md)
   Creates a ranged value by decoding from the given decoder.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](musicunderstandingsession/rangedvalue/encode(to:).md)
+- [func encode(to: any Encoder) throws](./rangedvalue/encode%28to%29.md)
   Encodes the ranged value into the given encoder.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MusicUnderstandingSession.TimedValue](musicunderstandingsession/timedvalue.md)
+### Support types
+- [MusicUnderstandingSession.TimedValue](./timedvalue.md)
   A structure that pairs a value with a time.
-- [struct AnalysisType](analysistype.md)
+- [struct AnalysisType](../analysistype.md)
   The analysis type for each session.
 
 

@@ -1,7 +1,8 @@
 # MTAudioProcessingTapGetStorage(_:)
 
 **Framework**: Media Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves a custom storage pointer for an audio processing tap.
 
@@ -19,6 +20,10 @@ Retrieves a custom storage pointer for an audio processing tap.
 func MTAudioProcessingTapGetStorage(_ tap: MTAudioProcessingTap) -> UnsafeMutableRawPointer
 ```
 
+```c
+extern void *MTAudioProcessingTapGetStorage(MTAudioProcessingTapRef tap);
+```
+
 #### Return Value
 
 The tap storage returned by the init callback.
@@ -29,15 +34,16 @@ The tap storage returned by the init callback.
 
 ## See Also
 
-- [func MTAudioProcessingTapCreate(CFAllocator?, UnsafePointer<MTAudioProcessingTapCallbacks>, MTAudioProcessingTapCreationFlags, UnsafeMutablePointer<MTAudioProcessingTap?>) -> OSStatus](mtaudioprocessingtapcreate(_:_:_:_:).md)
+### Audio Taps
+- [func MTAudioProcessingTapCreate(CFAllocator?, UnsafePointer<MTAudioProcessingTapCallbacks>, MTAudioProcessingTapCreationFlags, UnsafeMutablePointer<MTAudioProcessingTap?>) -> OSStatus](./mtaudioprocessingtapcreate%28_,_,_,_%29.md)
   Creates a new audio processing tap.
-- [func MTAudioProcessingTapGetSourceAudio(MTAudioProcessingTap, CMItemCount, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<MTAudioProcessingTapFlags>?, UnsafeMutablePointer<CMTimeRange>?, UnsafeMutablePointer<CMItemCount>?) -> OSStatus](mtaudioprocessingtapgetsourceaudio(_:_:_:_:_:_:).md)
+- [func MTAudioProcessingTapGetSourceAudio(MTAudioProcessingTap, CMItemCount, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<MTAudioProcessingTapFlags>?, UnsafeMutablePointer<CMTimeRange>?, UnsafeMutablePointer<CMItemCount>?) -> OSStatus](./mtaudioprocessingtapgetsourceaudio%28_,_,_,_,_,_%29.md)
   Retrieves source audio for an audio processing tap.
-- [func MTAudioProcessingTapGetTypeID() -> CFTypeID](mtaudioprocessingtapgettypeid().md)
+- [func MTAudioProcessingTapGetTypeID() -> CFTypeID](./mtaudioprocessingtapgettypeid%28%29.md)
   Retrieves the type identifier for this audio processing tap.
-- [typealias MTAudioProcessingTapFlags](mtaudioprocessingtapflags.md)
+- [typealias MTAudioProcessingTapFlags](./mtaudioprocessingtapflags.md)
   Flags that indicate where to tap the audio.
-- [class MTAudioProcessingTap](mtaudioprocessingtap.md)
+- [class MTAudioProcessingTap](./mtaudioprocessingtap.md)
   An audio processing tap object.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *reserved;
 ```
 
@@ -15,9 +15,10 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
-- [syncer](ioatabuscommand/syncer.md)
-- [state](ioatabuscommand/state.md)
-- [queueChain](ioatabuscommand/queuechain.md)
+### Instance Variables
+- [syncer](./syncer.md)
+- [state](./state.md)
+- [queueChain](./queuechain.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # USDArray
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,31 +21,31 @@ struct USDArray<Element> where Element : USDValueProtocol
 ## Topics
 
 ### Initializers
-- [init()](usdarray/init-5bw9q.md)
-- [init()](usdarray/init-g2wc.md)
-- [init()](usdarray/init-opb4.md)
-- [init(some Sequence<Element>)](usdarray/init(_:)-1re5y.md)
+- [init()](./usdarray/init%28%29-5bw9q.md)
+- [init()](./usdarray/init%28%29-g2wc.md)
+- [init()](./usdarray/init%28%29-opb4.md)
+- [init(some Sequence<Element>)](./usdarray/init%28_%29-1re5y.md)
   Creates an array containing the elements of `s`.
-- [init(some Sequence<Int>)](usdarray/init(_:)-3buv9.md)
-- [init(some Sequence<UInt>)](usdarray/init(_:)-4jk2a.md)
-- [init(arrayLiteral: UInt...)](usdarray/init(arrayliteral:)-7x1vs.md)
-- [init(arrayLiteral: Int...)](usdarray/init(arrayliteral:)-w2iz.md)
+- [init(some Sequence<Int>)](./usdarray/init%28_%29-3buv9.md)
+- [init(some Sequence<UInt>)](./usdarray/init%28_%29-4jk2a.md)
+- [init(arrayLiteral: UInt...)](./usdarray/init%28arrayliteral%29-7x1vs.md)
+- [init(arrayLiteral: Int...)](./usdarray/init%28arrayliteral%29-w2iz.md)
 ### Instance Methods
-- [func append(Element)](usdarray/append(_:).md)
+- [func append(Element)](./usdarray/append%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
+- [USDPrim.Attribute.Value](./usdprim/attribute/value.md)
 
 
 ---

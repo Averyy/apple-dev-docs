@@ -1,7 +1,8 @@
 # CL_TARGET_SUPPORTS_CONDITIONS
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CL_TARGET_SUPPORTS_CONDITIONS: Int32 { get }
+```
+
+```c
+#define CL_TARGET_SUPPORTS_CONDITIONS
 ```
 
 

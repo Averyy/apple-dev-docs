@@ -1,14 +1,15 @@
 # kHIDUsage_BD_BrailleDisplay
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BD_BrailleDisplay = 0x01
 ```
 

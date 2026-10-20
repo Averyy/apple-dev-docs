@@ -1,7 +1,8 @@
 # argMax(axis:keepDimension:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an argmax operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an argmax operation to the current graph.
 ```swift
 func argMax(axis: Int, keepDimension: Bool) -> BNNSGraph.Builder.Tensor<Int32>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # WAPairedDevice.PairingInfo
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of unauthenticated information the system receives from a device before it’s paired for the first time.
 
@@ -30,34 +31,35 @@ After initial pairing completes, the system no longer sends these values in any 
 ## Topics
 
 ### Receiving device information
-- [let vendorName: String](wapaireddevice/pairinginfo-swift.struct/vendorname.md)
+- [let vendorName: String](./pairinginfo-swift.struct/vendorname.md)
   The human-readable name of the manufacturer or vendor of the physical device as a person would understand it.
-- [let modelName: String](wapaireddevice/pairinginfo-swift.struct/modelname.md)
+- [let modelName: String](./pairinginfo-swift.struct/modelname.md)
   The human-readable model name of the physical device as a person can understand it.
-- [let pairingName: String](wapaireddevice/pairinginfo-swift.struct/pairingname.md)
+- [let pairingName: String](./pairinginfo-swift.struct/pairingname.md)
   The human-readable name of the physical device as a person sees it during initial pairing.
 ### Getting a string description
-- [var description: String](wapaireddevice/pairinginfo-swift.struct/description.md)
+- [var description: String](./pairinginfo-swift.struct/description.md)
   A string description of the pairing information.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WAPairedDevice](wapaireddevice.md)
+### Paired devices
+- [struct WAPairedDevice](../wapaireddevice.md)
   A known Wi-Fi Aware device that your app can connect to.
-- [WAPairedDevice.Devices](wapaireddevice/devices.md)
+- [WAPairedDevice.Devices](./devices.md)
   A dictionary holding a snapshot of currently paired devices accessible and known to your app.
-- [WAPairedDevice.DevicesSequence](wapaireddevice/devicessequence.md)
+- [WAPairedDevice.DevicesSequence](./devicessequence.md)
   A sequence that vends updates to a paired device list, as the list changes.
 
 

@@ -1,7 +1,8 @@
 # AnyView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased view.
 
@@ -28,24 +29,25 @@ An `AnyView` allows changing the type of view used in a given view hierarchy. Wh
 ## Topics
 
 ### Creating a view
-- [init<V>(V)](anyview/init(_:).md)
+- [init<V>(V)](./anyview/init%28_%29.md)
   Create an instance that type-erases `view`.
-- [init<V>(erasing: V)](anyview/init(erasing:).md)
+- [init<V>(erasing: V)](./anyview/init%28erasing%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct EmptyView](emptyview.md)
+### Supporting view types
+- [struct EmptyView](./emptyview.md)
   A view that doesn’t contain any content.
-- [struct EquatableView](equatableview.md)
+- [struct EquatableView](./equatableview.md)
   A view type that compares itself against its previous value and prevents its child updating if its new value is the same as its old value.
-- [struct SubscriptionView](subscriptionview.md)
+- [struct SubscriptionView](./subscriptionview.md)
   A view that subscribes to a publisher with an action.
-- [struct TupleView](tupleview.md)
+- [struct TupleView](./tupleview.md)
   A View created from a swift tuple of View values.
 
 

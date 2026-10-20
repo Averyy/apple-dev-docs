@@ -1,11 +1,12 @@
 # ProjectiveTransformable3DFloat Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func applying(ProjectiveTransform3DFloat) -> simd_float3](simd3/applying(_:).md)
+- [func applying(ProjectiveTransform3DFloat) -> simd_float3](./applying%28_%29.md)
   Returns a simd vector that’s transformed by the specified projective transform.
 
 

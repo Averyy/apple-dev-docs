@@ -1,7 +1,8 @@
 # primaryAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The launch scene’s primary action.
 
@@ -18,9 +19,13 @@ The launch scene’s primary action.
 var primaryAction: UIAction? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIAction * primaryAction;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ Set this property to customize the primary action’s button in the document lau
 
 ## See Also
 
-- [var secondaryAction: UIAction?](uidocumentviewcontroller/launchoptions-swift.class/secondaryaction.md)
+### Adding actions
+- [var secondaryAction: UIAction?](./secondaryaction.md)
   The launch scene’s secondary action.
 
 

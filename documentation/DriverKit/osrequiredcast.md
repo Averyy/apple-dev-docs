@@ -1,19 +1,20 @@
 # OSRequiredCast
 
 **Framework**: DriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Casts the object to the specified type, stopping the process if the object isn’t of the correct type.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define OSRequiredCast(type, inst)
 ```
 
@@ -23,7 +24,7 @@ The object cast to the specified type.
 
 #### Discussion
 
-Use this macro when you require the object to be the specified type, and you are sure that it’s the specified type. The following example shows how to cast some object to the [`OSString`](osstring.md) class. If the object cannot be cast to a string, the macro terminates the process.
+Use this macro when you require the object to be the specified type, and you are sure that it’s the specified type. The following example shows how to cast some object to the [`OSString`](./osstring.md) class. If the object cannot be cast to a string, the macro terminates the process.
 
 ```objc
 OSString string = OSDynamicCast(OSString, anObject)
@@ -36,25 +37,26 @@ OSString string = OSDynamicCast(OSString, anObject)
 
 ## See Also
 
-- [OSDynamicCast](osdynamiccast.md)
+### Runtime support
+- [OSDynamicCast](./osdynamiccast.md)
   Casts an object safely to the specified type, if possible.
-- [IMPL](impl.md)
+- [IMPL](./impl.md)
   Tells the system that the superclass implementation of this method runs in the kernel.
-- [TYPE](type.md)
+- [TYPE](./type.md)
   Annotates a method declaration to indicate that it conforms to an existing method signature.
-- [QUEUENAME](queuename.md)
+- [QUEUENAME](./queuename.md)
   Tells the system to execute a method on the dispatch queue with the specified name.
-- [SUPERDISPATCH](superdispatch.md)
+- [SUPERDISPATCH](./superdispatch.md)
   Tells the system to execute the superclass’ implementation of the current method in the kernel.
-- [IIG_KERNEL](iig_kernel.md)
+- [IIG_KERNEL](./iig_kernel.md)
   Tells the system that the class or method runs inside the kernel.
-- [LOCAL](local.md)
+- [LOCAL](./local.md)
   Tells the system that the method runs locally in the driver extension’s process space.
-- [LOCALONLY](localonly.md)
+- [LOCALONLY](./localonly.md)
   Tells the system that the class or method runs locally in the driver extension’s process space.
-- [Error Codes](error-codes.md)
+- [Error Codes](./error-codes.md)
   Determine the reason an operation fails.
-- [C++ Runtime Support](c-runtime-support.md)
+- [C++ Runtime Support](./c-runtime-support.md)
   Examine low-level types that DriverKit uses to support kernel-level operations.
 
 

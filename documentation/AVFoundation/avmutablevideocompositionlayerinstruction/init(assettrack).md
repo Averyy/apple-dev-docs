@@ -1,17 +1,20 @@
 # init(assetTrack:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new mutable video composition layer instruction for the given track.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.0+ - Deprecated in 26.0
+- iPadOS 4.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.7+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use AVVideoCompositionLayerInstruction.Configuration instead
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Creates a new mutable video composition layer instruction for the given track.
 convenience init(assetTrack track: AVAssetTrack)
 ```
 
+```objc
++ (instancetype) videoCompositionLayerInstructionWithAssetTrack:(AVAssetTrack *) track;
+```
+
 #### Return Value
 
-A new mutable video composition layer instruction with no transform or opacity ramps and [`trackID`](avmutablevideocompositionlayerinstruction/trackid.md) initialized to the track ID of `track`.
+A new mutable video composition layer instruction with no transform or opacity ramps and [`trackID`](./trackid.md) initialized to the track ID of `track`.
 
 ## Parameters
 

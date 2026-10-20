@@ -1,7 +1,8 @@
 # init(x:y:z:order:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Euler angles structure from the specified angle structures and order.
 
@@ -11,7 +12,7 @@ Creates a new Euler angles structure from the specified angle structures and ord
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -29,13 +30,14 @@ init(x: Angle2D, y: Angle2D, z: Angle2D, order: EulerAngles.Order)
 
 ## See Also
 
-- [init()](eulerangles/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a new Euler angles structure.
-- [init(angles: simd_float3, order: EulerAngles.Order)](eulerangles/init(angles:order:)-44rv1.md)
+- [init(angles: simd_float3, order: EulerAngles.Order)](./init%28angles,order%29-44rv1.md)
   Creates a new Euler angles structure from the specified single-precision angles and order.
-- [init(angles: simd_double3, order: __SPEulerAngleOrder)](eulerangles/init(angles:order:)-93mu1.md)
+- [init(angles: simd_double3, order: __SPEulerAngleOrder)](./init%28angles,order%29-93mu1.md)
   Creates a new Euler angles structure from the specified double-precision angles and order.
-- [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](eulerangles/init(_:_:_:order:).md)
+- [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](./init%28_,_,_,order%29.md)
   Creates a new Euler angles structure from the specified angle structures and order.
 
 

@@ -1,9 +1,10 @@
 # kCFURLKeysOfUnsetValuesKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Key for the resource properties that have not been set after the [`CFURLSetResourcePropertiesForKeys(_:_:_:)`](cfurlsetresourcepropertiesforkeys(_:_:_:).md) function returns an error, returned as an array of `CFString` objects.
+Key for the resource properties that have not been set after the [`CFURLSetResourcePropertiesForKeys(_:_:_:)`](./cfurlsetresourcepropertiesforkeys%28_,_,_%29.md) function returns an error, returned as an array of `CFString` objects.
 
 **Availability**:
 - iOS 5.0+
@@ -18,6 +19,10 @@ Key for the resource properties that have not been set after the [`CFURLSetResou
 
 ```swift
 let kCFURLKeysOfUnsetValuesKey: CFString!
+```
+
+```c
+extern CFStringRef const kCFURLKeysOfUnsetValuesKey;
 ```
 
 

@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var scale: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float scale;
+```
+
 ## See Also
 
-- [var center: CGPoint](ciglassdistortion/center.md)
-- [var inputImage: CIImage?](ciglassdistortion/inputimage.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var textureImage: CIImage?](ciglassdistortion/textureimage.md)
+- [var textureImage: CIImage?](./textureimage.md)
 
 
 ---

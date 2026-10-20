@@ -1,7 +1,8 @@
 # kCGImagePropertyCIFFRecordID
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of images taken since the camera shipped.
 
@@ -20,13 +21,18 @@ The number of images taken since the camera shipped.
 let kCGImagePropertyCIFFRecordID: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyCIFFRecordID;
+```
+
 ## See Also
 
-- [let kCGImagePropertyCIFFFirmware: CFString](kcgimagepropertycifffirmware.md)
+### Camera Information
+- [let kCGImagePropertyCIFFFirmware: CFString](./kcgimagepropertycifffirmware.md)
   The firmware version of the camera.
-- [let kCGImagePropertyCIFFOwnerName: CFString](kcgimagepropertyciffownername.md)
+- [let kCGImagePropertyCIFFOwnerName: CFString](./kcgimagepropertyciffownername.md)
   The name of the camera’s owner.
-- [let kCGImagePropertyCIFFCameraSerialNumber: CFString](kcgimagepropertyciffcameraserialnumber.md)
+- [let kCGImagePropertyCIFFCameraSerialNumber: CFString](./kcgimagepropertyciffcameraserialnumber.md)
   The camera serial number.
 
 

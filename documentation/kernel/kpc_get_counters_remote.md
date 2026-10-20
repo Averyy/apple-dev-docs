@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kpc_get_counters_remote {
     ...
 };
@@ -17,10 +17,10 @@ struct kpc_get_counters_remote {
 ## Topics
 
 ### Instance Properties
-- [buf](kpc_get_counters_remote/1572360-buf.md)
-- [buf_stride](kpc_get_counters_remote/1572394-buf_stride.md)
-- [classes](kpc_get_counters_remote/1572397-classes.md)
-- [nb_counters](kpc_get_counters_remote/1572392-nb_counters.md)
+- [buf](./kpc_get_counters_remote/api-1572360-buf.md)
+- [buf_stride](./kpc_get_counters_remote/api-1572394-buf_stride.md)
+- [classes](./kpc_get_counters_remote/api-1572397-classes.md)
+- [nb_counters](./kpc_get_counters_remote/api-1572392-nb_counters.md)
 
 
 ---

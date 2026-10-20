@@ -1,7 +1,8 @@
 # CLLocationCoordinate2D
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 
@@ -20,54 +21,59 @@ The latitude and longitude associated with a location, specified using the WGS 8
 struct CLLocationCoordinate2D
 ```
 
+```c
+struct CLLocationCoordinate2D;
+```
+
 ## Topics
 
 ### Creating a location coordinate
-- [init()](cllocationcoordinate2d/init.md)
+- [init()](./cllocationcoordinate2d/init%28%29.md)
   Creates a location coordinate object.
-- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)](cllocationcoordinate2d/init(latitude:longitude:).md)
+- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)](./cllocationcoordinate2d/init%28latitude,longitude%29.md)
   Creates a location coordination object with the specified latitude and longitude values.
-- [func CLLocationCoordinate2DMake(CLLocationDegrees, CLLocationDegrees) -> CLLocationCoordinate2D](cllocationcoordinate2dmake(_:_:).md)
+- [func CLLocationCoordinate2DMake(CLLocationDegrees, CLLocationDegrees) -> CLLocationCoordinate2D](./cllocationcoordinate2dmake%28_,_%29.md)
   Formats a latitude and longitude value into a coordinate data structure format.
 ### Getting the geographic coordinates
-- [var latitude: CLLocationDegrees](cllocationcoordinate2d/latitude.md)
+- [var latitude: CLLocationDegrees](./cllocationcoordinate2d/latitude.md)
   The latitude in degrees.
-- [var longitude: CLLocationDegrees](cllocationcoordinate2d/longitude.md)
+- [var longitude: CLLocationDegrees](./cllocationcoordinate2d/longitude.md)
   The longitude in degrees.
 ### Validating a coordinate
-- [func CLLocationCoordinate2DIsValid(CLLocationCoordinate2D) -> Bool](cllocationcoordinate2disvalid(_:).md)
+- [func CLLocationCoordinate2DIsValid(CLLocationCoordinate2D) -> Bool](./cllocationcoordinate2disvalid%28_%29.md)
   Returns a Boolean value indicating whether the specified coordinate is valid.
-- [let kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D](kcllocationcoordinate2dinvalid.md)
+- [let kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D](./kcllocationcoordinate2dinvalid.md)
   An invalid coordinate value.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](../swiftui/animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
+- [Animatable](../SwiftUI/animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
+### Location updates
+- [Getting the current location of a device](./getting-the-current-location-of-a-device.md)
   Start location services and provide information the system needs to optimize power usage for those services.
-- [Handling location updates in the background](handling-location-updates-in-the-background.md)
+- [Handling location updates in the background](./handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
+- [Creating a location push service extension](./creating-a-location-push-service-extension.md)
   Add and configure an extension to enable your location-sharing app to access a person’s location in response to a request from someone else.
-- [class CLLocation](cllocation.md)
+- [class CLLocation](./cllocation.md)
   The latitude, longitude, and course information reported by the system.
-- [class CLFloor](clfloor.md)
+- [class CLFloor](./clfloor.md)
   The floor of a building on which the user’s device is located.
-- [class CLVisit](clvisit.md)
+- [class CLVisit](./clvisit.md)
   Information about the user’s location during a specific period of time.
-- [class CLLocationSourceInformation](cllocationsourceinformation.md)
+- [class CLLocationSourceInformation](./cllocationsourceinformation.md)
   Information about the source that provides a location.
-- [Monitoring location changes with Core Location](monitoring-location-changes-with-core-location.md)
+- [Monitoring location changes with Core Location](./monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
-- [class CLServiceSession](clservicesession-pt7n.md)
+- [class CLServiceSession](./clservicesession-pt7n.md)
   An object that provides diagnostics about an app’s authorization to use location services.
 
 

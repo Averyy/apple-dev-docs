@@ -1,14 +1,15 @@
 # debug_iomalloc_size
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 size_t debug_iomalloc_size;
 ```
 

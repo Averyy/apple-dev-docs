@@ -1,7 +1,8 @@
 # XCTIssueReference.Severity.error
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The severity level for an issue which represents an error in a test.
 
@@ -9,6 +10,10 @@ The severity level for an issue which represents an error in a test.
 
 ```swift
 case error
+```
+
+```c
+XCTIssueSeverityError
 ```
 
 #### Discussion

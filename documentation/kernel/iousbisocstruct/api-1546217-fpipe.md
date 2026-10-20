@@ -1,7 +1,8 @@
 # fPipe
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The pipe value.
 
@@ -10,21 +11,22 @@ The pipe value.
 
 ## Declaration
 
-```swift
+```c
 UInt32 fPipe;
 ```
 
 ## See Also
 
-- [fBufSize](iousbisocstruct/1546463-fbufsize.md)
+### Getting the Properties
+- [fBufSize](./api-1546463-fbufsize.md)
   The buffer size.
-- [fBuffer](iousbisocstruct/1546499-fbuffer.md)
+- [fBuffer](./api-1546499-fbuffer.md)
   The buffer pointer.
-- [fFrameCounts](iousbisocstruct/1546241-fframecounts.md)
+- [fFrameCounts](./api-1546241-fframecounts.md)
   The frame counts.
-- [fNumFrames](iousbisocstruct/1545923-fnumframes.md)
+- [fNumFrames](./api-1545923-fnumframes.md)
   The number of frames.
-- [fStartFrame](iousbisocstruct/1546384-fstartframe.md)
+- [fStartFrame](./api-1546384-fstartframe.md)
   The starting frame.
 
 

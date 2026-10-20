@@ -1,7 +1,8 @@
 # scene(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The anchor point for the ornament expressed as a unit point relative to the scene.
 
@@ -12,6 +13,12 @@ The anchor point for the ornament expressed as a unit point relative to the scen
 
 ```swift
 static func scene(_ anchor: UnitPoint) -> OrnamentAttachmentAnchor
+```
+
+**Other overloads**:
+
+```swift
+static func scene(_ anchor: UnitPoint3D) -> OrnamentAttachmentAnchor
 ```
 
 

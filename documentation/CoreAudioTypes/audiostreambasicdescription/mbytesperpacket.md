@@ -1,7 +1,8 @@
 # mBytesPerPacket
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in a packet of audio data.
 
@@ -20,27 +21,32 @@ The number of bytes in a packet of audio data.
 var mBytesPerPacket: UInt32
 ```
 
+```c
+UInt32 mBytesPerPacket;
+```
+
 #### Discussion
 
-To indicate variable packet size, set this field to `0`. For a format that uses variable packet size, specify the size of each packet using an [`AudioStreamPacketDescription`](audiostreampacketdescription.md) structure.
+To indicate variable packet size, set this field to `0`. For a format that uses variable packet size, specify the size of each packet using an [`AudioStreamPacketDescription`](../audiostreampacketdescription.md) structure.
 
 ## See Also
 
-- [var mFormatID: AudioFormatID](audiostreambasicdescription/mformatid.md)
+### Inspecting a description
+- [var mFormatID: AudioFormatID](./mformatid.md)
   An identifier specifying the general audio data format in the stream.
-- [var mFormatFlags: AudioFormatFlags](audiostreambasicdescription/mformatflags.md)
+- [var mFormatFlags: AudioFormatFlags](./mformatflags.md)
   Format-specific flags to specify details of the format.
-- [var mSampleRate: Float64](audiostreambasicdescription/msamplerate.md)
+- [var mSampleRate: Float64](./msamplerate.md)
   The number of frames per second of the data in the stream, when playing the stream at normal speed.
-- [var mBitsPerChannel: UInt32](audiostreambasicdescription/mbitsperchannel.md)
+- [var mBitsPerChannel: UInt32](./mbitsperchannel.md)
   The number of bits for one audio sample.
-- [var mBytesPerFrame: UInt32](audiostreambasicdescription/mbytesperframe.md)
+- [var mBytesPerFrame: UInt32](./mbytesperframe.md)
   The number of bytes from the start of one frame to the start of the next frame in an audio buffer.
-- [var mChannelsPerFrame: UInt32](audiostreambasicdescription/mchannelsperframe.md)
+- [var mChannelsPerFrame: UInt32](./mchannelsperframe.md)
   The number of channels in each frame of audio data.
-- [var mFramesPerPacket: UInt32](audiostreambasicdescription/mframesperpacket.md)
+- [var mFramesPerPacket: UInt32](./mframesperpacket.md)
   The number of frames in a packet of audio data.
-- [var mReserved: UInt32](audiostreambasicdescription/mreserved.md)
+- [var mReserved: UInt32](./mreserved.md)
   The amount to pad the structure to force an even 8-byte alignment.
 
 

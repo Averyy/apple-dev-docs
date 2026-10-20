@@ -1,7 +1,8 @@
 # get()
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces evaluation of the receiver, causing the real object to be returned immediately.
 
@@ -13,6 +14,10 @@ Forces evaluation of the receiver, causing the real object to be returned immedi
 
 ```swift
 func get() -> [Any]?
+```
+
+```objc
+- (NSArray<id> *) get;
 ```
 
 #### Return Value

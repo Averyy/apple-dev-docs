@@ -1,7 +1,8 @@
 # EnterpriseLicenseDetails.EnterpriseEntitlement.neuralEngineAccess
 
 **Framework**: VisionEntitlementServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+

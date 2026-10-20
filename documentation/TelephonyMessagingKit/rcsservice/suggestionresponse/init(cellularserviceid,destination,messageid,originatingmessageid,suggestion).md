@@ -1,7 +1,8 @@
 # init(cellularServiceID:destination:messageID:originatingMessageID:suggestion:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

@@ -1,7 +1,8 @@
 # displayMode
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current display mode.
 
@@ -19,19 +20,24 @@ The current display mode.
 var displayMode: PDFDisplayMode { get set }
 ```
 
+```objc
+@property (nonatomic) PDFDisplayMode displayMode;
+```
+
 #### Discussion
 
 See `Constants` for possible values.
 
 ## See Also
 
-- [enum PDFDisplayMode](pdfdisplaymode.md)
+### Working with Display Modes and Characteristics
+- [enum PDFDisplayMode](../pdfdisplaymode.md)
   A wrapper for the chosen display mode constant.
-- [Additional Display Configurations](additional-display-configurations.md)
+- [Additional Display Configurations](../additional-display-configurations.md)
   Operations for setting up page breaks, a display box, and display direction.
-- [Book Display](book-display.md)
+- [Book Display](../book-display.md)
   Operations to setup a book display for a PDF view.
-- [Graphics Properties](graphics-properties.md)
+- [Graphics Properties](../graphics-properties.md)
   Operations to define the background color, antialiasing, and greeking for a PDF view.
 
 

@@ -1,7 +1,8 @@
 # PDFLineStyle.none
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No line ending.
 
@@ -10,7 +11,7 @@ No line ending.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ No line ending.
 case none
 ```
 
+```c
+kPDFLineStyleNone
+```
+
 ## See Also
 
-- [PDFLineStyle.square](pdflinestyle/square.md)
+### Constants
+- [PDFLineStyle.square](./square.md)
   A square line ending filled with the annotation’s interior color, if any.
-- [PDFLineStyle.circle](pdflinestyle/circle.md)
+- [PDFLineStyle.circle](./circle.md)
   A circular line ending filled with the annotation’s interior color, if any.
-- [PDFLineStyle.diamond](pdflinestyle/diamond.md)
+- [PDFLineStyle.diamond](./diamond.md)
   A diamond-shaped line ending filled with the annotation’s interior color, if any.
-- [PDFLineStyle.openArrow](pdflinestyle/openarrow.md)
+- [PDFLineStyle.openArrow](./openarrow.md)
   An open arrowhead line ending, composed from two short lines meeting in an acute angle at the line end.
-- [PDFLineStyle.closedArrow](pdflinestyle/closedarrow.md)
+- [PDFLineStyle.closedArrow](./closedarrow.md)
   A closed arrowhead line ending, consisting of a triangle with the acute vertex at the line end and filled with the annotation’s interior color, if any.
 
 

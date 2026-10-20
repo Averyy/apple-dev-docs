@@ -1,7 +1,8 @@
 # kCGImageMetadataEnumerateRecursively
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option to enumerate recursively through a set of metadata tags.
 
@@ -20,17 +21,22 @@ An option to enumerate recursively through a set of metadata tags.
 let kCGImageMetadataEnumerateRecursively: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageMetadataEnumerateRecursively;
+```
+
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). Set the value to [`kOSBooleanTrue`](https://developer.apple.com/documentation/driverkit/kosbooleantrue) to enumerate all tags recursively. Set the value to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) to enumerate only the direct children of the root path you specify.
+The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). Set the value to [`kOSBooleanTrue`](../DriverKit/kosbooleantrue.md) to enumerate all tags recursively. Set the value to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) to enumerate only the direct children of the root path you specify.
 
-When you call [`CGImageMetadataEnumerateTagsUsingBlock(_:_:_:_:)`](cgimagemetadataenumeratetagsusingblock(_:_:_:_:).md), include this option if you want the enumeration behavior to search recursively through the available tags. If you don’t specify this key, the function behaves as if the value is false.
+When you call [`CGImageMetadataEnumerateTagsUsingBlock(_:_:_:_:)`](./cgimagemetadataenumeratetagsusingblock%28_,_,_,_%29.md), include this option if you want the enumeration behavior to search recursively through the available tags. If you don’t specify this key, the function behaves as if the value is false.
 
 ## See Also
 
-- [func CGImageMetadataEnumerateTagsUsingBlock(CGImageMetadata, CFString?, CFDictionary?, CGImageMetadataTagBlock)](cgimagemetadataenumeratetagsusingblock(_:_:_:_:).md)
+### Enumerating the Metadata Tags
+- [func CGImageMetadataEnumerateTagsUsingBlock(CGImageMetadata, CFString?, CFDictionary?, CGImageMetadataTagBlock)](./cgimagemetadataenumeratetagsusingblock%28_,_,_,_%29.md)
   Enumerates the tags of a metadata object and executes the specified block on each tag.
-- [typealias CGImageMetadataTagBlock](cgimagemetadatatagblock.md)
+- [typealias CGImageMetadataTagBlock](./cgimagemetadatatagblock.md)
   The block to execute when enumerating the tags of a metadata object.
 
 

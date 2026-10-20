@@ -1,7 +1,8 @@
 # getSignInWithAppleUpgradeAuthorization(state:nonce:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the user’s current Sign in with Apple authorization credentials.
 
@@ -14,18 +15,26 @@ Retrieves the user’s current Sign in with Apple authorization credentials.
 ## Declaration
 
 ```swift
+func getSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?, completionHandler: @escaping @Sendable (ASAuthorizationAppleIDCredential?, (any Error)?) -> Void)
+```
+
+```swift
 func requestSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?) async throws -> ASAuthorizationAppleIDCredential
+```
+
+```objc
+- (void) getSignInWithAppleUpgradeAuthorizationWithState:(NSString *) state nonce:(NSString *) nonce completionHandler:(void (^)(ASAuthorizationAppleIDCredential *authorization, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Discussion
 
 Calling this method causes the system to present the Sign in with Apple upgrade interface, dismissing any currently presented interface.
 
-For more information about the `state` and `nonce` parameters, see [`Authenticating users with Sign in with Apple`](https://developer.apple.com/documentation/signinwithapple/authenticating-users-with-sign-in-with-apple) and [`Get the most out of Sign in with Apple`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10173/).
+For more information about the `state` and `nonce` parameters, see [Authenticating users with Sign in with Apple](../../SigninwithApple/authenticating-users-with-sign-in-with-apple.md) and [Get the most out of Sign in with Apple](https://developer.apple.com/videos/play/wwdc2020/10173/).
 
 ## Parameters
 
@@ -35,13 +44,14 @@ For more information about the `state` and `nonce` parameters, see [`Authenticat
 
 ## See Also
 
-- [func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationextensioncontext/completeupgradetosigninwithapple(userinfo:).md)
+### Handling Requests
+- [func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]?)](./completeupgradetosigninwithapple%28userinfo%29.md)
   Completes the process of upgrading an account’s authentication credentials from using passwords to using Sign in with Apple.
-- [func completeChangePasswordRequest(updatedCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationextensioncontext/completechangepasswordrequest(updatedcredential:userinfo:).md)
+- [func completeChangePasswordRequest(updatedCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](./completechangepasswordrequest%28updatedcredential,userinfo%29.md)
   Completes a request to update an account’s authentication credentials from using a weak password to using a strong password.
-- [func cancelRequest(withError: any Error)](asaccountauthenticationmodificationextensioncontext/cancelrequest(witherror:).md)
+- [func cancelRequest(withError: any Error)](./cancelrequest%28witherror%29.md)
   Cancels a request with an error.
-- [let ASExtensionLocalizedFailureReasonErrorKey: String](asextensionlocalizedfailurereasonerrorkey.md)
+- [let ASExtensionLocalizedFailureReasonErrorKey: String](../asextensionlocalizedfailurereasonerrorkey.md)
   A key that specifies a string value to show to the user when a request fails.
 
 

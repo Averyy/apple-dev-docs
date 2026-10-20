@@ -1,7 +1,8 @@
 # maximumDistance
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum distance that the long press can move before the gesture fails.
 
@@ -22,17 +23,18 @@ var maximumDistance: CGFloat { get set }
 
 ## Mentions
 
-- [Adding interactivity with gestures](adding-interactivity-with-gestures.md)
+- [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
 ## See Also
 
-- [init(minimumDuration: Double)](longpressgesture/init(minimumduration:).md)
+### Creating a long press gesture
+- [init(minimumDuration: Double)](./init%28minimumduration%29.md)
   Creates a long-press gesture with a minimum duration
-- [init(minimumDuration: Double, maximumDistance: CGFloat)](longpressgesture/init(minimumduration:maximumdistance:).md)
+- [init(minimumDuration: Double, maximumDistance: CGFloat)](./init%28minimumduration,maximumdistance%29.md)
   Creates a long-press gesture with a minimum duration and a maximum distance that the interaction can move before the gesture fails.
-- [init(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds)](longpressgesture/init(minimumduration:maximumdistance:inputkinds:).md)
+- [init(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds)](./init%28minimumduration,maximumdistance,inputkinds%29.md)
   Creates a long-press gesture with a minimum duration, a maximum distance, and the input kinds the gesture recognizes.
-- [var minimumDuration: Double](longpressgesture/minimumduration.md)
+- [var minimumDuration: Double](./minimumduration.md)
   The minimum duration of the long press that must elapse before the gesture succeeds.
 
 

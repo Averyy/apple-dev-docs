@@ -1,7 +1,8 @@
 # representedElementKind
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout-specific identifier for the target view.
 
@@ -9,7 +10,7 @@ The layout-specific identifier for the target view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The layout-specific identifier for the target view.
 var representedElementKind: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * representedElementKind;
+```
+
 #### Discussion
 
-You can use the value in this property to identify the specific purpose of the supplementary or decoration view associated with the attributes. This property is `nil` if the [`representedElementCategory`](uicollectionviewlayoutattributes/representedelementcategory.md) property contains the value [`UICollectionView.ElementCategory.cell`](uicollectionview/elementcategory/cell.md).
+You can use the value in this property to identify the specific purpose of the supplementary or decoration view associated with the attributes. This property is `nil` if the [`representedElementCategory`](./representedelementcategory.md) property contains the value [`UICollectionView.ElementCategory.cell`](../uicollectionview/elementcategory/cell.md).
 
 ## See Also
 
-- [var indexPath: IndexPath](uicollectionviewlayoutattributes/indexpath.md)
+### Identifying the referenced item
+- [var indexPath: IndexPath](./indexpath.md)
   The index path of the item in the collection view.
-- [var representedElementCategory: UICollectionView.ElementCategory](uicollectionviewlayoutattributes/representedelementcategory.md)
+- [var representedElementCategory: UICollectionView.ElementCategory](./representedelementcategory.md)
   The type of the item.
-- [UICollectionView.ElementCategory](uicollectionview/elementcategory.md)
+- [UICollectionView.ElementCategory](../uicollectionview/elementcategory.md)
   Constants specifying the type of view.
 
 

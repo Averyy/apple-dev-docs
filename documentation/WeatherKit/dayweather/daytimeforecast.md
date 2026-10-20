@@ -1,7 +1,8 @@
 # daytimeForecast
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weather forecast from 7AM - 7PM on this day.
 

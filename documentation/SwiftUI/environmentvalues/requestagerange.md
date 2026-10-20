@@ -1,7 +1,8 @@
 # requestAgeRange
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action that presents a system interface to request a person’s age range.
 
@@ -19,7 +20,7 @@ var requestAgeRange: DeclaredAgeRangeAction { get }
 
 #### Discussion
 
-Call this action from a [`Button`](button.md) or [`onAppear(perform:)`](view/onappear(perform:).md) to ask people to share their age range with your app.
+Call this action from a [`Button`](../button.md) or [`onAppear(perform:)`](../view/onappear%28perform%29.md) to ask people to share their age range with your app.
 
 
 ---

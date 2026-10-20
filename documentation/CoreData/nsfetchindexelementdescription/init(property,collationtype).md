@@ -1,7 +1,8 @@
 # init(property:collationType:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an index element description using the specified property description and collation type.
 
@@ -18,6 +19,10 @@ Creates an index element description using the specified property description an
 
 ```swift
 init(property: NSPropertyDescription, collationType: NSFetchIndexElementType)
+```
+
+```objc
+- (instancetype) initWithProperty:(NSPropertyDescription *) property collationType:(NSFetchIndexElementType) collationType;
 ```
 
 

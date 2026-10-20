@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,11 +13,16 @@
 weak var delegate: (any NSFilePromiseProviderDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSFilePromiseProviderDelegate> delegate;
+```
+
 ## See Also
 
-- [var fileType: String](nsfilepromiseprovider/filetype.md)
+### Instance Properties
+- [var fileType: String](./filetype.md)
   The file type of the file promise provider.
-- [var userInfo: Any?](nsfilepromiseprovider/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   Optional user information to pass to the file promise provider.
 
 

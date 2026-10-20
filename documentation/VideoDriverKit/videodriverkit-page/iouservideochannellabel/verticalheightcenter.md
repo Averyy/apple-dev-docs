@@ -1,7 +1,8 @@
 # VerticalHeightCenter
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 WAVE: “Top Front Center”
 
@@ -10,16 +11,17 @@ WAVE: “Top Front Center”
 
 ## Declaration
 
-```swift
+```c
 VerticalHeightCenter
 ```
 
 ## See Also
 
-- [Center](videodriverkit/iouservideochannellabel/center.md)
-- [CenterTopFront](videodriverkit/iouservideochannellabel/centertopfront.md)
-- [CenterTopMiddle](videodriverkit/iouservideochannellabel/centertopmiddle.md)
-- [CenterTopRear](videodriverkit/iouservideochannellabel/centertoprear.md)
+### Center channels
+- [Center](./center.md)
+- [CenterTopFront](./centertopfront.md)
+- [CenterTopMiddle](./centertopmiddle.md)
+- [CenterTopRear](./centertoprear.md)
 
 
 ---

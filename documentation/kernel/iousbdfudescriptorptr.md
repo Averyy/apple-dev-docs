@@ -1,7 +1,8 @@
 # IOUSBDFUDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a structure that defines the USB device firmware update descriptor.
 
@@ -10,13 +11,14 @@ A pointer to a structure that defines the USB device firmware update descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBDFUDescriptor *IOUSBDFUDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBDFUDescriptor](iousbdfudescriptor.md)
+### Device Firmware Update Descriptors
+- [IOUSBDFUDescriptor](./iousbdfudescriptor.md)
   A structure that defines the USB device firmware update descriptor.
 
 

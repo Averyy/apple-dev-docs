@@ -1,6 +1,7 @@
 # Finishing a transaction
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Finish the transaction to complete the purchase process.
 
@@ -14,7 +15,7 @@ Do all of the following before you finish a transaction:
 - Deliver, download, or unlock the purchased content.
 - Update your app’s UI so the user can access the product.
 
-To finish the transaction, call the [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md) method on the payment queue.
+To finish the transaction, call the [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md) method on the payment queue.
 
 **Swift**:
 
@@ -32,15 +33,16 @@ SKPaymentTransaction *transaction = <# The currrent transaction #>;
 
 After you finish a transaction, don’t take any actions on it or do any work to deliver the product. If any work remains, your app isn’t ready to finish the transaction.
 
-> ❗ **Important**:  Don’t call the [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md) method before the transaction is actually complete and attempt to use some other mechanism in your app to track the transaction as unfinished. StoreKit doesn’t function that way, and doing that prevents your app from downloading Apple-hosted content and can lead to other issues.
+> ❗ **Important**:  Don’t call the [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md) method before the transaction is actually complete and attempt to use some other mechanism in your app to track the transaction as unfinished. StoreKit doesn’t function that way, and doing that prevents your app from downloading Apple-hosted content and can lead to other issues.
 
 ## See Also
 
-- [Unlocking purchased content](unlocking-purchased-content.md)
+### Content delivery
+- [Unlocking purchased content](./unlocking-purchased-content.md)
   Deliver content to the customer after validating the purchase.
-- [Persisting a purchase](persisting-a-purchase.md)
+- [Persisting a purchase](./persisting-a-purchase.md)
   Keep a persistent record of a purchase to continue making the product available as needed.
-- [class SKDownload](skdownload.md)
+- [class SKDownload](./skdownload.md)
   Downloadable content associated with a product.
 
 

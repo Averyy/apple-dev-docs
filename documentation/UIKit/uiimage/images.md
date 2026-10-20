@@ -1,7 +1,8 @@
 # images
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete array of image objects that compose the animation of an animated object.
 
@@ -9,7 +10,7 @@ The complete array of image objects that compose the animation of an animated ob
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,17 +20,22 @@ The complete array of image objects that compose the animation of an animated ob
 var images: [UIImage]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<UIImage *> * images;
+```
+
 #### Discussion
 
 For a non-animated image, the value of this property is `nil`.
 
 ## See Also
 
-- [var cgImage: CGImage?](uiimage/cgimage.md)
+### Getting the image data
+- [var cgImage: CGImage?](./cgimage.md)
   The underlying Quartz image data.
-- [var ciImage: CIImage?](uiimage/ciimage.md)
+- [var ciImage: CIImage?](./ciimage.md)
   The underlying Core Image data.
-- [var imageAsset: UIImageAsset?](uiimage/imageasset.md)
+- [var imageAsset: UIImageAsset?](./imageasset.md)
   The image asset (if any) for the image.
 
 

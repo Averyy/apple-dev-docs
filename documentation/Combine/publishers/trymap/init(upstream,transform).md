@@ -1,7 +1,8 @@
 # init(upstream:transform:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that transforms all elements from the upstream publisher with a provided error-throwing closure.
 

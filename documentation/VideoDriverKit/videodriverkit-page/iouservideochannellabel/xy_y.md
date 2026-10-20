@@ -1,20 +1,22 @@
 # XY_Y
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 XY_Y
 ```
 
 ## See Also
 
-- [XY_X](videodriverkit/iouservideochannellabel/xy_x.md)
+### X/Y recording channels
+- [XY_X](./xy_x.md)
 
 
 ---

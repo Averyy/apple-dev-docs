@@ -1,7 +1,8 @@
 # init(nsColor:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color from an AppKit color.
 
@@ -17,7 +18,7 @@ init(nsColor: NSColor)
 
 #### Discussion
 
-Use this method to create a SwiftUI color from an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`linkColor`](https://developer.apple.com/documentation/appkit/nscolor/linkcolor) to see how the shade adjusts to match the user’s system settings:
+Use this method to create a SwiftUI color from an [`NSColor`](../../AppKit/nscolor.md) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`linkColor`](../../AppKit/nscolor/linkcolor.md) to see how the shade adjusts to match the user’s system settings:
 
 ```swift
 struct Box: View {
@@ -30,21 +31,22 @@ struct Box: View {
 
 The `Box` view defined above automatically changes its appearance when the user turns on Dark Mode. With the light and dark appearances placed side by side, you can see the subtle difference in shades:
 
-![A side by side comparison of light and dark appearance screenshots of](/images/com.apple.SwiftUI/Color-init-4@2x.png)
+![A side by side comparison of light and dark appearance screenshots of](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Color-init-4@2x.png)
 
-> **Note**: Use this initializer only if you need to convert an existing [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
+> **Note**: Use this initializer only if you need to convert an existing [`NSColor`](../../AppKit/nscolor.md) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](../color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](./init%28_,red,green,blue,opacity%29.md), or use a system color like [`blue`](../shapestyle/blue.md).
 
 ## Parameters
 
-- `nsColor`: An [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) instance from which to create a color.
+- `nsColor`: An [`NSColor`](../../AppKit/nscolor.md) instance from which to create a color.
 
 ## See Also
 
-- [init(uiColor: UIColor)](color/init(uicolor:).md)
+### Creating a color from another color
+- [init(uiColor: UIColor)](./init%28uicolor%29.md)
   Creates a color from a UIKit color.
-- [init(cgColor: CGColor)](color/init(cgcolor:).md)
+- [init(cgColor: CGColor)](./init%28cgcolor%29.md)
   Creates a color from a Core Graphics color.
-- [var cgColor: CGColor?](color/cgcolor.md)
+- [var cgColor: CGColor?](./cgcolor.md)
   A Core Graphics representation of the color, if available.
 
 

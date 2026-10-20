@@ -1,7 +1,8 @@
 # trailing(relativeTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the trailing direction in the given user interface layout direction.
 

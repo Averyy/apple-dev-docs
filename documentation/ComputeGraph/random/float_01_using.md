@@ -1,13 +1,14 @@
 # random::float_01_using
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a pseudo-random single-precision float between 0 and 1 using a specific seed.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A pseudo-random single-precision float in the range [0.0, 1.0].
 
 This function generates a random value in the range [0.0, 1.0] using single-precision floating-point format and the provided seed. The seed is not modified, allowing for reproducible random number generation.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/random__float_01_using.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/random__float_01_using.svg)
 
 ## Parameters
 

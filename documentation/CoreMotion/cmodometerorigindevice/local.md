@@ -1,7 +1,8 @@
 # CMOdometerOriginDevice.local
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The origin of the odometer sample comes from the same device that requests the sample.
 
@@ -19,11 +20,16 @@ The origin of the odometer sample comes from the same device that requests the s
 case local
 ```
 
+```c
+CMOdometerOriginDeviceLocal
+```
+
 ## See Also
 
-- [CMOdometerOriginDevice.unknown](cmodometerorigindevice/unknown.md)
+### Device origins
+- [CMOdometerOriginDevice.unknown](./unknown.md)
   The origin of the odometer sample is unknown.
-- [CMOdometerOriginDevice.remote](cmodometerorigindevice/remote.md)
+- [CMOdometerOriginDevice.remote](./remote.md)
   The origin of the odometer sample comes from a device that’s paired with the local device.
 
 

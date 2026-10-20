@@ -1,7 +1,8 @@
 # fields
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of fields in this section.
 

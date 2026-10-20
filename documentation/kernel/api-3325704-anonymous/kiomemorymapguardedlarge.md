@@ -1,7 +1,8 @@
 # kIOMemoryMapGuardedLarge
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryMapGuardedLarge = 0x0000000C
 ```
 

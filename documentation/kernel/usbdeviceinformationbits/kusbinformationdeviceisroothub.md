@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsRootHub
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The device is the root hub simulation.
 
@@ -10,7 +11,7 @@ The device is the root hub simulation.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsRootHub = 9
 ```
 

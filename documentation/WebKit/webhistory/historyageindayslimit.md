@@ -1,12 +1,13 @@
 # historyAgeInDaysLimit
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum age of web history items that can be retrieved.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The maximum age of web history items that can be retrieved.
 var historyAgeInDaysLimit: Int32 { get set }
 ```
 
+```objc
+@property (nonatomic) int historyAgeInDaysLimit;
+```
+
 ## See Also
 
-- [var historyItemLimit: Int32](webhistory/historyitemlimit.md)
+### Getting and Setting Attributes
+- [var historyItemLimit: Int32](./historyitemlimit.md)
   The maximum number of web history items that can be stored.
 
 

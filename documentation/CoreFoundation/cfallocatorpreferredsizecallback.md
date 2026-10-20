@@ -1,23 +1,28 @@
 # CFAllocatorPreferredSizeCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A prototype for a function callback that gives the size of memory likely to be allocated, given a certain request.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CFAllocatorPreferredSizeCallBack = (CFIndex, CFOptionFlags, UnsafeMutableRawPointer?) -> CFIndex
+```
+
+```c
+typedef long (*)(long, unsigned long, void *) CFAllocatorPreferredSizeCallBack;
 ```
 
 #### Return Value
@@ -36,17 +41,18 @@ A prototype for a function callback that determines whether there is enough free
 
 ## See Also
 
-- [typealias CFAllocatorAllocateCallBack](cfallocatorallocatecallback.md)
+### Callbacks
+- [typealias CFAllocatorAllocateCallBack](./cfallocatorallocatecallback.md)
   A prototype for a function callback that allocates memory of a requested size.
-- [typealias CFAllocatorCopyDescriptionCallBack](cfallocatorcopydescriptioncallback.md)
+- [typealias CFAllocatorCopyDescriptionCallBack](./cfallocatorcopydescriptioncallback.md)
   A prototype for a function callback that provides a description of the specified data.
-- [typealias CFAllocatorDeallocateCallBack](cfallocatordeallocatecallback.md)
+- [typealias CFAllocatorDeallocateCallBack](./cfallocatordeallocatecallback.md)
   A prototype for a function callback that deallocates a block of memory.
-- [typealias CFAllocatorReallocateCallBack](cfallocatorreallocatecallback.md)
+- [typealias CFAllocatorReallocateCallBack](./cfallocatorreallocatecallback.md)
   A prototype for a function callback that reallocates memory of a requested size for an existing block of memory.
-- [typealias CFAllocatorReleaseCallBack](cfallocatorreleasecallback.md)
+- [typealias CFAllocatorReleaseCallBack](./cfallocatorreleasecallback.md)
   A prototype for a function callback that releases the given data.
-- [typealias CFAllocatorRetainCallBack](cfallocatorretaincallback.md)
+- [typealias CFAllocatorRetainCallBack](./cfallocatorretaincallback.md)
   A prototype for a function callback that retains the given data.
 
 

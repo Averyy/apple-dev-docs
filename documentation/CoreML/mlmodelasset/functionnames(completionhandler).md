@@ -1,7 +1,8 @@
 # functionNames(completionHandler:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The list of function names in the model asset.
 
@@ -17,7 +18,15 @@ The list of function names in the model asset.
 ## Declaration
 
 ```swift
+func functionNames(completionHandler handler: @escaping @Sendable ([String]?, (any Error)?) -> Void)
+```
+
+```swift
 var functionNames: [String] { get async throws }
+```
+
+```objc
+- (void) functionNamesWithCompletionHandler:(void (^)(NSArray<NSString *> *functionNames, NSError *error)) handler;
 ```
 
 #### Discussion

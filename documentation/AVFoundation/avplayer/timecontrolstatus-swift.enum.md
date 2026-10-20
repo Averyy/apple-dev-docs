@@ -1,7 +1,8 @@
 # AVPlayer.TimeControlStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the state of playback control.
 
@@ -20,39 +21,44 @@ Constants that indicate the state of playback control.
 enum TimeControlStatus
 ```
 
+```c
+enum AVPlayerTimeControlStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status values
-- [AVPlayer.TimeControlStatus.paused](avplayer/timecontrolstatus-swift.enum/paused.md)
+- [AVPlayer.TimeControlStatus.paused](./timecontrolstatus-swift.enum/paused.md)
   A state that indicates the player paused playback indefinitely.
-- [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](avplayer/timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md)
+- [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](./timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md)
   A state that indicates that the player is waiting for network conditions to improve before it can start or resume playback.
-- [AVPlayer.TimeControlStatus.playing](avplayer/timecontrolstatus-swift.enum/playing.md)
+- [AVPlayer.TimeControlStatus.playing](./timecontrolstatus-swift.enum/playing.md)
   A state that indicates that the player is currently playing media.
 ### Initializers
-- [init?(rawValue: Int)](avplayer/timecontrolstatus-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./timecontrolstatus-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var automaticallyWaitsToMinimizeStalling: Bool](avplayer/automaticallywaitstominimizestalling.md)
+### Configuring waiting behavior
+- [var automaticallyWaitsToMinimizeStalling: Bool](./automaticallywaitstominimizestalling.md)
   A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling.
-- [var reasonForWaitingToPlay: AVPlayer.WaitingReason?](avplayer/reasonforwaitingtoplay.md)
+- [var reasonForWaitingToPlay: AVPlayer.WaitingReason?](./reasonforwaitingtoplay.md)
   The reason the player is currently waiting for playback to begin or resume.
-- [AVPlayer.WaitingReason](avplayer/waitingreason.md)
+- [AVPlayer.WaitingReason](./waitingreason.md)
   The reasons a player is waiting to begin or resume playback.
-- [var timeControlStatus: AVPlayer.TimeControlStatus](avplayer/timecontrolstatus-swift.property.md)
+- [var timeControlStatus: AVPlayer.TimeControlStatus](./timecontrolstatus-swift.property.md)
   A value that indicates whether playback is in progress, paused indefinitely, or waiting for network conditions to improve.
-- [func playImmediately(atRate: Float)](avplayer/playimmediately(atrate:).md)
+- [func playImmediately(atRate: Float)](./playimmediately%28atrate%29.md)
   Plays the available media data immediately, at the specified rate.
 
 

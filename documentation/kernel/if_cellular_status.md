@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_cellular_status {
     ...
 };
@@ -17,7 +17,7 @@ struct if_cellular_status {
 ## Topics
 
 ### Instance Properties
-- [if_cell_u](if_cellular_status/3944167-if_cell_u.md)
+- [if_cell_u](./if_cellular_status/api-3944167-if_cell_u.md)
 
 
 ---

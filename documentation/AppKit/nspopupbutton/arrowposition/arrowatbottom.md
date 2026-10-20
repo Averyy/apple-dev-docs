@@ -1,12 +1,13 @@
 # NSPopUpButton.ArrowPosition.arrowAtBottom
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](nspopupbuttoncell/preferrededge.md).
+Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](../../nspopupbuttoncell/preferrededge.md).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,12 +15,17 @@ Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](
 case arrowAtBottom
 ```
 
+```c
+NSPopUpArrowAtBottom
+```
+
 ## See Also
 
-- [NSPopUpButton.ArrowPosition.noArrow](nspopupbutton/arrowposition/noarrow.md)
+### Constants
+- [NSPopUpButton.ArrowPosition.noArrow](./noarrow.md)
   Does not display any arrow in the control.
-- [NSPopUpButton.ArrowPosition.arrowAtCenter](nspopupbutton/arrowposition/arrowatcenter.md)
-  Arrow is centered vertically, pointing toward the [`preferredEdge`](nspopupbuttoncell/preferrededge.md).
+- [NSPopUpButton.ArrowPosition.arrowAtCenter](./arrowatcenter.md)
+  Arrow is centered vertically, pointing toward the [`preferredEdge`](../../nspopupbuttoncell/preferrededge.md).
 
 
 ---

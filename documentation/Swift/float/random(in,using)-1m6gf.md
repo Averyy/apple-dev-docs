@@ -1,7 +1,8 @@
 # random(in:using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a random value within the specified range, using the given generator as a source for randomness.
 
@@ -19,6 +20,8 @@ Returns a random value within the specified range, using the given generator as 
 ```swift
 static func random<T>(in range: Range<Self>, using generator: inout T) -> Self where T : RandomNumberGenerator
 ```
+
+Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
 #### Return Value
 
@@ -48,11 +51,12 @@ The `random(in:using:)` static method chooses a random value from a continuous u
 
 ## See Also
 
-- [static func random(in: Range<Self>) -> Self](float/random(in:)-6ided.md)
+### Creating a Random Value
+- [static func random(in: Range<Self>) -> Self](./random%28in%29-6ided.md)
   Returns a random value within the specified range.
-- [static func random(in: ClosedRange<Self>) -> Self](float/random(in:)-5o5h8.md)
+- [static func random(in: ClosedRange<Self>) -> Self](./random%28in%29-5o5h8.md)
   Returns a random value within the specified range.
-- [static func random<T>(in: ClosedRange<Self>, using: inout T) -> Self](float/random(in:using:)-613hx.md)
+- [static func random<T>(in: ClosedRange<Self>, using: inout T) -> Self](./random%28in,using%29-613hx.md)
   Returns a random value within the specified range, using the given generator as a source for randomness.
 
 

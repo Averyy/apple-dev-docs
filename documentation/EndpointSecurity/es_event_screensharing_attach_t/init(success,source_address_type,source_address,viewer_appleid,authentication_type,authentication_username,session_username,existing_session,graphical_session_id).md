@@ -1,11 +1,12 @@
 # init(success:source_address_type:source_address:viewer_appleid:authentication_type:authentication_username:session_username:existing_session:graphical_session_id:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

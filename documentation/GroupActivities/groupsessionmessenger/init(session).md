@@ -1,9 +1,10 @@
 # init(session:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new group session messenger with [`GroupSessionMessenger.DeliveryMode.reliable`](groupsessionmessenger/deliverymode-swift.enum/reliable.md) delivery mode and associates it with the specified session object.
+Creates a new group session messenger with [`GroupSessionMessenger.DeliveryMode.reliable`](./deliverymode-swift.enum/reliable.md) delivery mode and associates it with the specified session object.
 
 **Availability**:
 - iOS 15.0+
@@ -21,7 +22,7 @@ init<Activity>(session: GroupSession<Activity>) where Activity : GroupActivity
 
 ## Parameters
 
-- `session`: The group session to use for communication with participants. Specify a session object that is in either the [`GroupSession.State.waiting`](groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state for this parameter. However, a session must be in the joined state to send or receive messages.
+- `session`: The group session to use for communication with participants. Specify a session object that is in either the [`GroupSession.State.waiting`](../groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](../groupsession/state-swift.enum/joined.md) state for this parameter. However, a session must be in the joined state to send or receive messages.
 
 
 ---

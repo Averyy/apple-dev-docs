@@ -1,18 +1,23 @@
 # UIModalTransitionStyle.flipHorizontal
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
 ```swift
 case flipHorizontal
+```
+
+```c
+UIModalTransitionStyleFlipHorizontal
 ```
 
 #### Discussion
@@ -21,9 +26,10 @@ When the view controller is presented, the current view initiates a horizontal 3
 
 ## See Also
 
-- [UIModalTransitionStyle.coverVertical](uimodaltransitionstyle/coververtical.md)
-- [UIModalTransitionStyle.crossDissolve](uimodaltransitionstyle/crossdissolve.md)
-- [UIModalTransitionStyle.partialCurl](uimodaltransitionstyle/partialcurl.md)
+### Constants
+- [UIModalTransitionStyle.coverVertical](./coververtical.md)
+- [UIModalTransitionStyle.crossDissolve](./crossdissolve.md)
+- [UIModalTransitionStyle.partialCurl](./partialcurl.md)
 
 
 ---

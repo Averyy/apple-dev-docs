@@ -1,7 +1,8 @@
 # supplementaryInterfaceFont
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font to use for the supplementary interface.
 
@@ -20,7 +21,7 @@ final var supplementaryInterfaceFont: UIFont? { get set }
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
 #### Discussion
 
@@ -28,11 +29,12 @@ The interaction also uses the font weight for image symbols, but ignores the poi
 
 ## See Also
 
-- [var allowLongPressForDataDetectorsInTextMode: Bool](imageanalysisinteraction/allowlongpressfordatadetectorsintextmode.md)
+### Customizing the interface
+- [var allowLongPressForDataDetectorsInTextMode: Bool](./allowlongpressfordatadetectorsintextmode.md)
   A Boolean value that indicates whether people can press and hold text to activate data detectors.
-- [func setSupplementaryInterfaceHidden(Bool, animated: Bool)](imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated:).md)
+- [func setSupplementaryInterfaceHidden(Bool, animated: Bool)](./setsupplementaryinterfacehidden%28_,animated%29.md)
   Hides or shows supplementary interface objects, such as the Live Action button and Quick Actions, depending on the item type.
-- [var supplementaryInterfaceContentInsets: UIEdgeInsets](imageanalysisinteraction/supplementaryinterfacecontentinsets.md)
+- [var supplementaryInterfaceContentInsets: UIEdgeInsets](./supplementaryinterfacecontentinsets.md)
   The distances the edges of content are inset from the supplementary interface.
 
 

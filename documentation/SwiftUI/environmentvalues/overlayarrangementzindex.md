@@ -1,7 +1,8 @@
 # overlayArrangementZIndex
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z-index for a view within an overlay arrangement view.
 
@@ -37,7 +38,8 @@ struct PlayerView: View {
 
 ## See Also
 
-- [var splitArrangementAxis: Axis?](environmentvalues/splitarrangementaxis.md)
+### Arrangement views
+- [var splitArrangementAxis: Axis?](./splitarrangementaxis.md)
   The axis of the split for a view within a split arrangement view.
 
 

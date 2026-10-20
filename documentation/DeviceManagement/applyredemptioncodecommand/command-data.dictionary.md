@@ -1,7 +1,8 @@
 # ApplyRedemptionCodeCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to complete the installation of an app using a redemption code.
 
@@ -12,7 +13,7 @@ The command to complete the installation of an app using a redemption code.
 
 ## Declaration
 
-```swift
+```
 object ApplyRedemptionCodeCommand.Command
 ```
 
@@ -21,7 +22,11 @@ object ApplyRedemptionCodeCommand.Command
 - `Identifier` (string) *(required)*: The bundle identifier of the app.
 - `RedemptionCode` (string) *(required)*: The redemption code that applies to the app pending installation.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `ApplyRedemptionCode`
 
 
 ---

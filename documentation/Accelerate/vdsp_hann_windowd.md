@@ -1,7 +1,8 @@
 # vDSP_hann_windowD
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a double-precision Hann window.
 
@@ -10,19 +11,19 @@ Creates a double-precision Hann window.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
 ## Declaration
 
-```swift
+```c
 extern void vDSP_hann_windowD(double *__C, vDSP_Length __N, int __Flag);
 ```
 
 #### Discussion
 
-The [`vDSP_hann_window`](vdsp_hann_window.md) and [`vDSP_hann_windowD`](vdsp_hann_windowd.md) functions create a Hann window vector using the following operation:
+The [`vDSP_hann_window`](./vdsp_hann_window.md) and [`vDSP_hann_windowD`](./vdsp_hann_windowd.md) functions create a Hann window vector using the following operation:
 
 ```c
 If Flag & vDSP_HALF_WINDOW:
@@ -39,7 +40,7 @@ for (n = 0; n < Length; ++n)
     C[n] = W * (1 - cos(2*pi*n/N));
 ```
 
-Use [`vDSP_vmulD`](vdsp_vmuld.md) to multiply the Hann window result by a noninteger-periodic signal prior to a Fourier transform.
+Use [`vDSP_vmulD`](./vdsp_vmuld.md) to multiply the Hann window result by a noninteger-periodic signal prior to a Fourier transform.
 
 The following code shows how to generate a Hann window:
 
@@ -66,36 +67,39 @@ vDSP_hann_windowD(c, n, vDSP_HANN_DENORM);
 
 The following illustrates the values of the output vector, `c`:
 
-![Visualization of a Hann window.](/images/com.apple.accelerate/media-3368167@2x.png)
+![Visualization of a Hann window.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3368167@2x.png)
 
 ## Parameters
 
 - `__C`: The output vector.
 - `__N`: The number of elements in the output vector.
-- `__Flag`: A value that specifies the type of window that the function creates. - [`vDSP_HANN_DENORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_denorm) specifies that the function creates a denormalized window.
-- [`vDSP_HANN_DENORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_denorm) | [`vDSP_HALF_WINDOW`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_half_window) specifies that the function creates a denormalized window with only the first `(N+1)/2` points.
-- [`vDSP_HANN_NORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_norm) specifies that the function creates a normalized window.
-- [`vDSP_HANN_NORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_norm) | [`vDSP_HALF_WINDOW`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_half_window) specifies that the function creates a normalized window with only the first `(N+1)/2` points.
+- `__Flag`: A value that specifies the type of window that the function creates.
+
+  - [`vDSP_HANN_DENORM`](../kernel/api-1645052-anonymous/vdsp_hann_denorm.md) specifies that the function creates a denormalized window.
+  - [`vDSP_HANN_DENORM`](../kernel/api-1645052-anonymous/vdsp_hann_denorm.md) | [`vDSP_HALF_WINDOW`](../kernel/api-1645052-anonymous/vdsp_half_window.md) specifies that the function creates a denormalized window with only the first `(N+1)/2` points.
+  - [`vDSP_HANN_NORM`](../kernel/api-1645052-anonymous/vdsp_hann_norm.md) specifies that the function creates a normalized window.
+  - [`vDSP_HANN_NORM`](../kernel/api-1645052-anonymous/vdsp_hann_norm.md) | [`vDSP_HALF_WINDOW`](../kernel/api-1645052-anonymous/vdsp_half_window.md) specifies that the function creates a normalized window with only the first `(N+1)/2` points.
 
 ## See Also
 
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+### Vector generation with window functions
+- [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [vDSP_blkman_window](vdsp_blkman_window.md)
+- [vDSP_blkman_window](./vdsp_blkman_window.md)
   Creates a single-precision Blackman window.
-- [vDSP_blkman_windowD](vdsp_blkman_windowd.md)
+- [vDSP_blkman_windowD](./vdsp_blkman_windowd.md)
   Creates a double-precision Blackman window.
-- [vDSP_hamm_window](vdsp_hamm_window.md)
+- [vDSP_hamm_window](./vdsp_hamm_window.md)
   Creates a single-precision Hamming window.
-- [vDSP_hamm_windowD](vdsp_hamm_windowd.md)
+- [vDSP_hamm_windowD](./vdsp_hamm_windowd.md)
   Creates a double-precision Hamming window.
-- [vDSP_hann_window](vdsp_hann_window.md)
+- [vDSP_hann_window](./vdsp_hann_window.md)
   Creates a single-precision Hann window.
-- [var vDSP_HALF_WINDOW: Int](vdsp_half_window.md)
+- [var vDSP_HALF_WINDOW: Int](./vdsp_half_window.md)
   Specifies that the window should only contain the bottom half of the values (`0` to `(N+1)/2`).
-- [var vDSP_HANN_DENORM: Int](vdsp_hann_denorm.md)
+- [var vDSP_HANN_DENORM: Int](./vdsp_hann_denorm.md)
   Specifies a denormalized Hann window.
-- [var vDSP_HANN_NORM: Int](vdsp_hann_norm.md)
+- [var vDSP_HANN_NORM: Int](./vdsp_hann_norm.md)
   Specifies a normalized Hann window
 
 

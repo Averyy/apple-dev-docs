@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty directional text range.
 
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(offset: Int, length: Int)](bedirectionaltextrange/init(offset:length:).md)
+### Creating a directional text range
+- [init(offset: Int, length: Int)](./init%28offset,length%29.md)
   Creates a range for a text selection that also specifies a direction.
 
 

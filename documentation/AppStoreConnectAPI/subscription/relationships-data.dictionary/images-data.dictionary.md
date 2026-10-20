@@ -1,21 +1,22 @@
 # Subscription.Relationships.Images
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object Subscription.Relationships.Images
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Subscription.Relationships.Images.Data](subscription/relationships-data.dictionary/images-data.dictionary/data-data.dictionary.md)
+- [object Subscription.Relationships.Images.Data](./images-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # init(upstream:output:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that emits a Boolean value when it receives a specific element from its upstream publisher.
 

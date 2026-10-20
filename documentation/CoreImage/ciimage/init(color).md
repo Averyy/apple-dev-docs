@@ -1,7 +1,8 @@
 # init(color:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an image of infinite extent whose entire content is the specified color.
 
@@ -10,13 +11,17 @@ Initializes an image of infinite extent whose entire content is the specified co
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(color: CIColor)
+```
+
+```objc
+- (instancetype) initWithColor:(CIColor *) color;
 ```
 
 #### Return Value
@@ -29,16 +34,17 @@ The initialized image object.
 
 ## See Also
 
-- [class var black: CIImage](ciimage/black.md)
-- [class var blue: CIImage](ciimage/blue.md)
-- [class var clear: CIImage](ciimage/clear.md)
-- [class var cyan: CIImage](ciimage/cyan.md)
-- [class var gray: CIImage](ciimage/gray.md)
-- [class var green: CIImage](ciimage/green.md)
-- [class var magenta: CIImage](ciimage/magenta.md)
-- [class var red: CIImage](ciimage/red.md)
-- [class var white: CIImage](ciimage/white.md)
-- [class var yellow: CIImage](ciimage/yellow.md)
+### Creating Solid Colors
+- [class var black: CIImage](./black.md)
+- [class var blue: CIImage](./blue.md)
+- [class var clear: CIImage](./clear.md)
+- [class var cyan: CIImage](./cyan.md)
+- [class var gray: CIImage](./gray.md)
+- [class var green: CIImage](./green.md)
+- [class var magenta: CIImage](./magenta.md)
+- [class var red: CIImage](./red.md)
+- [class var white: CIImage](./white.md)
+- [class var yellow: CIImage](./yellow.md)
 
 
 ---

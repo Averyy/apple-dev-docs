@@ -1,17 +1,22 @@
 # knobProportion
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The proportion of the knob slot that the knob should fill.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var knobProportion: CGFloat { get set }
+```
+
+```objc
+@property CGFloat knobProportion;
 ```
 
 #### Discussion

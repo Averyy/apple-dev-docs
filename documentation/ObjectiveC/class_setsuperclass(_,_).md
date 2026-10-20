@@ -1,22 +1,29 @@
 # class_setSuperclass(_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the superclass of a given class.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 2.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 2.0+ - Deprecated in 2.0
+- iPadOS 2.0+ - Deprecated in 2.0
+- Mac Catalyst 2.0+ - Deprecated in 2.0
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: not recommended
 
 ## Declaration
 
 ```swift
 func class_setSuperclass(_ cls: AnyClass, _ newSuper: AnyClass) -> AnyClass
+```
+
+```c
+extern Classclass_setSuperclass(Class cls, Class newSuper);
 ```
 
 #### Return Value
@@ -34,35 +41,36 @@ You should not use this function.
 
 ## See Also
 
-- [func class_getName(AnyClass?) -> UnsafePointer<CChar>](class_getname(_:).md)
+### Working with Classes
+- [func class_getName(AnyClass?) -> UnsafePointer<CChar>](./class_getname%28_%29.md)
   Returns the name of a class.
-- [func class_getSuperclass(AnyClass?) -> AnyClass?](class_getsuperclass(_:).md)
+- [func class_getSuperclass(AnyClass?) -> AnyClass?](./class_getsuperclass%28_%29.md)
   Returns the superclass of a class.
-- [func class_isMetaClass(AnyClass?) -> Bool](class_ismetaclass(_:).md)
+- [func class_isMetaClass(AnyClass?) -> Bool](./class_ismetaclass%28_%29.md)
   Returns a Boolean value that indicates whether a class object is a metaclass.
-- [func class_getInstanceSize(AnyClass?) -> Int](class_getinstancesize(_:).md)
+- [func class_getInstanceSize(AnyClass?) -> Int](./class_getinstancesize%28_%29.md)
   Returns the size of instances of a class.
-- [func class_getInstanceVariable(AnyClass?, UnsafePointer<CChar>) -> Ivar?](class_getinstancevariable(_:_:).md)
+- [func class_getInstanceVariable(AnyClass?, UnsafePointer<CChar>) -> Ivar?](./class_getinstancevariable%28_,_%29.md)
   Returns the `Ivar` for a specified instance variable of a given class.
-- [func class_getClassVariable(AnyClass?, UnsafePointer<CChar>) -> Ivar?](class_getclassvariable(_:_:).md)
+- [func class_getClassVariable(AnyClass?, UnsafePointer<CChar>) -> Ivar?](./class_getclassvariable%28_,_%29.md)
   Returns the `Ivar` for a specified class variable of a given class.
-- [func class_addIvar(AnyClass?, UnsafePointer<CChar>, Int, UInt8, UnsafePointer<CChar>?) -> Bool](class_addivar(_:_:_:_:_:).md)
+- [func class_addIvar(AnyClass?, UnsafePointer<CChar>, Int, UInt8, UnsafePointer<CChar>?) -> Bool](./class_addivar%28_,_,_,_,_%29.md)
   Adds a new instance variable to a class.
-- [func class_copyIvarList(AnyClass?, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<Ivar>?](class_copyivarlist(_:_:).md)
+- [func class_copyIvarList(AnyClass?, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<Ivar>?](./class_copyivarlist%28_,_%29.md)
   Describes the instance variables declared by a class.
-- [func class_getIvarLayout(AnyClass?) -> UnsafePointer<UInt8>?](class_getivarlayout(_:).md)
+- [func class_getIvarLayout(AnyClass?) -> UnsafePointer<UInt8>?](./class_getivarlayout%28_%29.md)
   Returns a description of the `Ivar` layout for a given class.
-- [func class_setIvarLayout(AnyClass?, UnsafePointer<UInt8>?)](class_setivarlayout(_:_:).md)
+- [func class_setIvarLayout(AnyClass?, UnsafePointer<UInt8>?)](./class_setivarlayout%28_,_%29.md)
   Sets the `Ivar` layout for a given class.
-- [func class_getWeakIvarLayout(AnyClass?) -> UnsafePointer<UInt8>?](class_getweakivarlayout(_:).md)
+- [func class_getWeakIvarLayout(AnyClass?) -> UnsafePointer<UInt8>?](./class_getweakivarlayout%28_%29.md)
   Returns a description of the layout of weak `Ivar`s for a given class.
-- [func class_setWeakIvarLayout(AnyClass?, UnsafePointer<UInt8>?)](class_setweakivarlayout(_:_:).md)
+- [func class_setWeakIvarLayout(AnyClass?, UnsafePointer<UInt8>?)](./class_setweakivarlayout%28_,_%29.md)
   Sets the layout for weak `Ivar`s for a given class.
-- [func class_getProperty(AnyClass?, UnsafePointer<CChar>) -> objc_property_t?](class_getproperty(_:_:).md)
+- [func class_getProperty(AnyClass?, UnsafePointer<CChar>) -> objc_property_t?](./class_getproperty%28_,_%29.md)
   Returns a property with a given name of a given class.
-- [func class_copyPropertyList(AnyClass?, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_property_t>?](class_copypropertylist(_:_:).md)
+- [func class_copyPropertyList(AnyClass?, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_property_t>?](./class_copypropertylist%28_,_%29.md)
   Describes the properties declared by a class.
-- [func class_addMethod(AnyClass?, Selector, IMP, UnsafePointer<CChar>?) -> Bool](class_addmethod(_:_:_:_:).md)
+- [func class_addMethod(AnyClass?, Selector, IMP, UnsafePointer<CChar>?) -> Bool](./class_addmethod%28_,_,_,_%29.md)
   Adds a new method to a class with a given name and implementation.
 
 

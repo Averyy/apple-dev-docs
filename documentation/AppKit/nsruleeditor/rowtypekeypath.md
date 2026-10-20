@@ -1,17 +1,22 @@
 # rowTypeKeyPath
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path for the row type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var rowTypeKeyPath: String { get set }
+```
+
+```objc
+@property (copy) NSString * rowTypeKeyPath;
 ```
 
 #### Discussion
@@ -22,13 +27,14 @@ The default value is `@"rowType"`.
 
 ## See Also
 
-- [var rowClass: AnyClass](nsruleeditor/rowclass.md)
+### Supporting Bindings
+- [var rowClass: AnyClass](./rowclass.md)
   The class used to create a new row in the “rows” binding.
-- [var subrowsKeyPath: String](nsruleeditor/subrowskeypath.md)
+- [var subrowsKeyPath: String](./subrowskeypath.md)
   The key path for the subrows.
-- [var criteriaKeyPath: String](nsruleeditor/criteriakeypath.md)
+- [var criteriaKeyPath: String](./criteriakeypath.md)
   The criteria key path.
-- [var displayValuesKeyPath: String](nsruleeditor/displayvalueskeypath.md)
+- [var displayValuesKeyPath: String](./displayvalueskeypath.md)
   The display values key path.
 
 

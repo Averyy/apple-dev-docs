@@ -1,7 +1,8 @@
 # image
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to be drawn.
 
@@ -22,9 +23,10 @@ var image: Image
 
 ## See Also
 
-- [var scale: CGFloat](imagepaint/scale.md)
+### Configuring the image paint style
+- [var scale: CGFloat](./scale.md)
   A scale factor applied to the image while being drawn.
-- [var sourceRect: CGRect](imagepaint/sourcerect.md)
+- [var sourceRect: CGRect](./sourcerect.md)
   A unit-space rectangle defining how much of the source image to draw.
 
 

@@ -1,7 +1,8 @@
 # randomSplit(by:seed:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates two generic arrays by randomly splitting the elements of the sequence.
 

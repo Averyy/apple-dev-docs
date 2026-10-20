@@ -1,7 +1,8 @@
 # AVExtendedTempoEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a tempo change to a specific beats-per-minute value.
 
@@ -19,38 +20,43 @@ An object that represents a tempo change to a specific beats-per-minute value.
 class AVExtendedTempoEvent
 ```
 
+```objc
+@interface AVExtendedTempoEvent : AVMusicEvent
+```
+
 ## Topics
 
 ### Creating a tempo event
-- [init(tempo: Double)](avextendedtempoevent/init(tempo:).md)
+- [init(tempo: Double)](./avextendedtempoevent/init%28tempo%29.md)
   Creates an extended tempo event.
 ### Configuring a tempo event
-- [var tempo: Double](avextendedtempoevent/tempo.md)
+- [var tempo: Double](./avextendedtempoevent/tempo.md)
   The tempo in beats per minute as a positive value.
 
 ## Relationships
 
 ### Inherits From
-- [AVMusicEvent](avmusicevent.md)
+- [AVMusicEvent](./avmusicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMusicEvent](avmusicevent.md)
+### Handling music events
+- [class AVMusicEvent](./avmusicevent.md)
   A base class for the events you associate with a music track.
-- [class AVMusicUserEvent](avmusicuserevent.md)
+- [class AVMusicUserEvent](./avmusicuserevent.md)
   An object that represents a custom user message.
-- [class AVParameterEvent](avparameterevent.md)
+- [class AVParameterEvent](./avparameterevent.md)
   An object that represents a parameter event on a music track’s destination.
-- [class AVAUPresetEvent](avaupresetevent.md)
+- [class AVAUPresetEvent](./avaupresetevent.md)
   An object that represents a preset load and change on the music track’s destination audio unit.
-- [class AVExtendedNoteOnEvent](avextendednoteonevent.md)
+- [class AVExtendedNoteOnEvent](./avextendednoteonevent.md)
   An object that represents a custom extension of a MIDI note on event.
 
 

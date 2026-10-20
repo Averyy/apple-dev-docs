@@ -1,7 +1,8 @@
 # EmptyResolverSpecification
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,25 +22,26 @@ struct EmptyResolverSpecification<Value> where Value : _IntentValue
 ## Topics
 
 ### Creating the specification type
-- [init()](emptyresolverspecification/init.md)
+- [init()](./emptyresolverspecification/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ResolverSpecification](resolverspecification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ResolverSpecification](./resolverspecification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [protocol ResolverSpecification](resolverspecification.md)
+### Managing the resolution process
+- [protocol ResolverSpecification](./resolverspecification.md)
   An internal type that a resolver uses to convert data values.
-- [struct StringSearchCriteriaFromStringResolverSpecificification](stringsearchcriteriafromstringresolverspecificification.md)
+- [struct StringSearchCriteriaFromStringResolverSpecificification](./stringsearchcriteriafromstringresolverspecificification.md)
   An internal type that a resolver uses to convert data values.
-- [enum ResolverSpecificationBuilder](resolverspecificationbuilder.md)
+- [enum ResolverSpecificationBuilder](./resolverspecificationbuilder.md)
   A result builder that declaratively specifies a set of resolvers.
 
 

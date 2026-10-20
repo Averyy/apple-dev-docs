@@ -1,14 +1,15 @@
 # intptr_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_intptr_t intptr_t;
 ```
 

@@ -1,7 +1,8 @@
 # errSecMDSError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A module directory service error occurred.
 
@@ -18,6 +19,10 @@ A module directory service error occurred.
 
 ```swift
 var errSecMDSError: OSStatus { get }
+```
+
+```c
+errSecMDSError
 ```
 
 

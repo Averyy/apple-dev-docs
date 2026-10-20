@@ -1,7 +1,8 @@
 # CKDatabaseSubscription
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A subscription that generates push notifications when CloudKit modifies records in a database.
 
@@ -20,21 +21,25 @@ A subscription that generates push notifications when CloudKit modifies records 
 class CKDatabaseSubscription
 ```
 
+```objc
+@interface CKDatabaseSubscription : CKSubscription
+```
+
 #### Overview
 
 Subscriptions track the creation, modification, and deletion of records in a database, and are fundamental in keeping data on the user’s device up to date. A subscription applies only to the user that creates it. When a subscription registers a change, such as CloudKit saving a new record, it sends push notifications to the user’s devices to inform your app about the change. You can then fetch the changes and cache them on-device. When appropriate, the server excludes the device where the change originates.
 
-> **Note**: You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
+> **Note**: You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [Enabling CloudKit in Your App](./enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
 
 A database subscription executes whenever a change occurs in a custom record zone that resides in the database where you save the subscription. This is important for the shared database because you don’t know what record zones exist in advance. The only exception to this is the default record zone in the user’s private database, which doesn’t participate in database subscriptions.
 
-You can further specialize a database subscription by setting its [`recordType`](ckdatabasesubscription/recordtype-46v7a.md) property to a specific record type. This limits the scope of the subscription to only track changes to records of that type and reduces the number of notifications it generates.
+You can further specialize a database subscription by setting its [`recordType`](./ckdatabasesubscription/recordtype-46v7a.md) property to a specific record type. This limits the scope of the subscription to only track changes to records of that type and reduces the number of notifications it generates.
 
 > **Note**: Only private and shared databases support database subscriptions. If you attempt to save a database subscription in the public database, CloudKit returns an error.
 
-Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md). After the operation completes, record that state on-device (in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
+Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](./ckmodifysubscriptionsoperation.md). After the operation completes, record that state on-device (in [`UserDefaults`](../Foundation/userdefaults.md), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
 
-To configure the notification that the subscription generates, set the subscription’s [`notificationInfo`](cksubscription/notificationinfo-swift.property.md) property. Because the system coalesces notifications, don’t rely on them for specific changes. CloudKit can omit data to keep the payload size under the APNs size limit. Consider notifications an indication of remote changes, and use [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch the record zones that contain those changes. After you have the record zones, use [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md) to fetch the changed records in each zone. Server change tokens allow you to limit the fetch results to just the changes since your previous fetch.
+To configure the notification that the subscription generates, set the subscription’s [`notificationInfo`](./cksubscription/notificationinfo-swift.property.md) property. Because the system coalesces notifications, don’t rely on them for specific changes. CloudKit can omit data to keep the payload size under the APNs size limit. Consider notifications an indication of remote changes, and use [`CKFetchDatabaseChangesOperation`](./ckfetchdatabasechangesoperation.md) to fetch the record zones that contain those changes. After you have the record zones, use [`CKFetchRecordZoneChangesOperation`](./ckfetchrecordzonechangesoperation.md) to fetch the changed records in each zone. Server change tokens allow you to limit the fetch results to just the changes since your previous fetch.
 
 The example below shows how to create a database subscription in the user’s private database, configure the notifications it generates — in this case, silent push notifications — and then save that subscription to the server:
 
@@ -86,38 +91,39 @@ if([[NSUserDefaults standardUserDefaults]
 ## Topics
 
 ### Creating a Database Subscription
-- [convenience init()](ckdatabasesubscription/init.md)
+- [convenience init()](./ckdatabasesubscription/init%28%29.md)
   Creates an empty database subscription.
-- [convenience init(subscriptionID: CKSubscription.ID)](ckdatabasesubscription/init(subscriptionid:).md)
+- [convenience init(subscriptionID: CKSubscription.ID)](./ckdatabasesubscription/init%28subscriptionid%29.md)
   Creates a named subscription for all records in a database.
-- [init(coder: NSCoder)](ckdatabasesubscription/init(coder:).md)
+- [init(coder: NSCoder)](./ckdatabasesubscription/init%28coder%29.md)
   Creates a database subscription from a serialized instance.
 ### Accessing the Subscription Metadata
-- [var recordType: CKRecord.RecordType?](ckdatabasesubscription/recordtype-46v7a.md)
+- [var recordType: CKRecord.RecordType?](./ckdatabasesubscription/recordtype-46v7a.md)
   The type of record that the subscription queries.
 
 ## Relationships
 
 ### Inherits From
-- [CKSubscription](cksubscription.md)
+- [CKSubscription](./cksubscription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKDatabaseNotification](ckdatabasenotification.md)
+### Database Changes
+- [class CKDatabaseNotification](./ckdatabasenotification.md)
   A notification that triggers when the contents of a database change.
-- [class CKFetchDatabaseChangesOperation](ckfetchdatabasechangesoperation.md)
+- [class CKFetchDatabaseChangesOperation](./ckfetchdatabasechangesoperation.md)
   An operation that fetches database changes.
 
 

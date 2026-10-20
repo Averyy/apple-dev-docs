@@ -1,7 +1,8 @@
 # viewWillLayoutSubviews()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -19,19 +20,20 @@
 
 ## See Also
 
-- [func loadView()](uihostingcontroller/loadview.md)
-- [func viewWillAppear(Bool)](uihostingcontroller/viewwillappear(_:).md)
+### Responding to view-related events
+- [func loadView()](./loadview%28%29.md)
+- [func viewWillAppear(Bool)](./viewwillappear%28_%29.md)
   Notifies the view controller that its view is about to be added to a view hierarchy.
-- [func viewDidAppear(Bool)](uihostingcontroller/viewdidappear(_:).md)
+- [func viewDidAppear(Bool)](./viewdidappear%28_%29.md)
   Notifies the view controller that its view has been added to a view hierarchy.
-- [func viewWillDisappear(Bool)](uihostingcontroller/viewwilldisappear(_:).md)
+- [func viewWillDisappear(Bool)](./viewwilldisappear%28_%29.md)
   Notifies the view controller that its view will be removed from a view hierarchy.
-- [func viewDidDisappear(Bool)](uihostingcontroller/viewdiddisappear(_:).md)
-- [func willMove(toParent: UIViewController?)](uihostingcontroller/willmove(toparent:).md)
-- [func didMove(toParent: UIViewController?)](uihostingcontroller/didmove(toparent:).md)
-- [func viewWillTransition(to: CGSize, with: any UIViewControllerTransitionCoordinator)](uihostingcontroller/viewwilltransition(to:with:).md)
-- [func target(forAction: Selector, withSender: Any?) -> Any?](uihostingcontroller/target(foraction:withsender:).md)
-- [var rootView: Content](uihostingcontroller/rootview.md)
+- [func viewDidDisappear(Bool)](./viewdiddisappear%28_%29.md)
+- [func willMove(toParent: UIViewController?)](./willmove%28toparent%29.md)
+- [func didMove(toParent: UIViewController?)](./didmove%28toparent%29.md)
+- [func viewWillTransition(to: CGSize, with: any UIViewControllerTransitionCoordinator)](./viewwilltransition%28to,with%29.md)
+- [func target(forAction: Selector, withSender: Any?) -> Any?](./target%28foraction,withsender%29.md)
+- [var rootView: Content](./rootview.md)
   The root view of the SwiftUI view hierarchy managed by this view controller.
 
 

@@ -1,7 +1,8 @@
 # kCMIOStreamPropertyDeckCueing
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,23 +14,28 @@
 var kCMIOStreamPropertyDeckCueing: Int { get }
 ```
 
+```c
+kCMIOStreamPropertyDeckCueing
+```
+
 ## See Also
 
-- [var kCMIOStreamPropertyCanProcessDeckCommand: Int](kcmiostreampropertycanprocessdeckcommand.md)
-- [var kCMIOStreamPropertyClock: Int](kcmiostreampropertyclock.md)
-- [var kCMIOStreamPropertyDeck: Int](kcmiostreampropertydeck.md)
-- [var kCMIOStreamPropertyDeckDropness: Int](kcmiostreampropertydeckdropness.md)
-- [var kCMIOStreamPropertyDeckFrameNumber: Int](kcmiostreampropertydeckframenumber.md)
-- [var kCMIOStreamPropertyDeckLocal: Int](kcmiostreampropertydecklocal.md)
-- [var kCMIOStreamPropertyDeckThreaded: Int](kcmiostreampropertydeckthreaded.md)
-- [var kCMIOStreamPropertyDeviceSyncTimeoutInMSec: Int](kcmiostreampropertydevicesynctimeoutinmsec.md)
-- [var kCMIOStreamPropertyDirection: Int](kcmiostreampropertydirection.md)
-- [var kCMIOStreamPropertyEndOfData: Int](kcmiostreampropertyendofdata.md)
-- [var kCMIOStreamPropertyFirstOutputPresentationTimeStamp: Int](kcmiostreampropertyfirstoutputpresentationtimestamp.md)
-- [var kCMIOStreamPropertyFormatDescription: Int](kcmiostreampropertyformatdescription.md)
-- [var kCMIOStreamPropertyFormatDescriptions: Int](kcmiostreampropertyformatdescriptions.md)
-- [var kCMIOStreamPropertyFrameRate: Int](kcmiostreampropertyframerate.md)
-- [var kCMIOStreamPropertyFrameRateRanges: Int](kcmiostreampropertyframerateranges.md)
+### Constants
+- [var kCMIOStreamPropertyCanProcessDeckCommand: Int](./kcmiostreampropertycanprocessdeckcommand.md)
+- [var kCMIOStreamPropertyClock: Int](./kcmiostreampropertyclock.md)
+- [var kCMIOStreamPropertyDeck: Int](./kcmiostreampropertydeck.md)
+- [var kCMIOStreamPropertyDeckDropness: Int](./kcmiostreampropertydeckdropness.md)
+- [var kCMIOStreamPropertyDeckFrameNumber: Int](./kcmiostreampropertydeckframenumber.md)
+- [var kCMIOStreamPropertyDeckLocal: Int](./kcmiostreampropertydecklocal.md)
+- [var kCMIOStreamPropertyDeckThreaded: Int](./kcmiostreampropertydeckthreaded.md)
+- [var kCMIOStreamPropertyDeviceSyncTimeoutInMSec: Int](./kcmiostreampropertydevicesynctimeoutinmsec.md)
+- [var kCMIOStreamPropertyDirection: Int](./kcmiostreampropertydirection.md)
+- [var kCMIOStreamPropertyEndOfData: Int](./kcmiostreampropertyendofdata.md)
+- [var kCMIOStreamPropertyFirstOutputPresentationTimeStamp: Int](./kcmiostreampropertyfirstoutputpresentationtimestamp.md)
+- [var kCMIOStreamPropertyFormatDescription: Int](./kcmiostreampropertyformatdescription.md)
+- [var kCMIOStreamPropertyFormatDescriptions: Int](./kcmiostreampropertyformatdescriptions.md)
+- [var kCMIOStreamPropertyFrameRate: Int](./kcmiostreampropertyframerate.md)
+- [var kCMIOStreamPropertyFrameRateRanges: Int](./kcmiostreampropertyframerateranges.md)
 
 
 ---

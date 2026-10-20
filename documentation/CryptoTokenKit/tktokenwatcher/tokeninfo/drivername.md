@@ -1,7 +1,8 @@
 # driverName
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var driverName: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * driverName;
 ```
 
 

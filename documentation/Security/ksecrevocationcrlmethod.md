@@ -1,7 +1,8 @@
 # kSecRevocationCRLMethod
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Perform revocation checking using the CRL (Certification Revocation List) method.
 
@@ -18,6 +19,10 @@ Perform revocation checking using the CRL (Certification Revocation List) method
 
 ```swift
 var kSecRevocationCRLMethod: CFOptionFlags { get }
+```
+
+```c
+kSecRevocationCRLMethod
 ```
 
 

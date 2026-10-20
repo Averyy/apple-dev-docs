@@ -1,7 +1,8 @@
 # DistributedNotificationCenter.SuspensionBehavior
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify the types of notification delivery suspension behaviors.
 
@@ -15,34 +16,39 @@ These constants specify the types of notification delivery suspension behaviors.
 enum SuspensionBehavior
 ```
 
+```c
+enum NSNotificationSuspensionBehavior : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [DistributedNotificationCenter.SuspensionBehavior.drop](distributednotificationcenter/suspensionbehavior/drop.md)
+- [DistributedNotificationCenter.SuspensionBehavior.drop](./suspensionbehavior/drop.md)
   The server doesn’t queue any notifications with this name and object until the notification center resumes notification delivery.
-- [DistributedNotificationCenter.SuspensionBehavior.coalesce](distributednotificationcenter/suspensionbehavior/coalesce.md)
+- [DistributedNotificationCenter.SuspensionBehavior.coalesce](./suspensionbehavior/coalesce.md)
   The server only queues the last notification of the specified name and object; earlier notifications are dropped. In cover methods for which suspension behavior is not an explicit argument, `NSNotificationSuspensionBehaviorCoalesce` is the default.
-- [DistributedNotificationCenter.SuspensionBehavior.hold](distributednotificationcenter/suspensionbehavior/hold.md)
+- [DistributedNotificationCenter.SuspensionBehavior.hold](./suspensionbehavior/hold.md)
   The server holds all matching notifications until the queue has been filled (queue size determined by the server), at which point the server may flush queued notifications.
-- [DistributedNotificationCenter.SuspensionBehavior.deliverImmediately](distributednotificationcenter/suspensionbehavior/deliverimmediately.md)
+- [DistributedNotificationCenter.SuspensionBehavior.deliverImmediately](./suspensionbehavior/deliverimmediately.md)
 ### Initializers
-- [init?(rawValue: UInt)](distributednotificationcenter/suspensionbehavior/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./suspensionbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DistributedNotificationCenter.Options](distributednotificationcenter/options.md)
-  These constants specify the behavior of notifications posted using the [`postNotificationName(_:object:userInfo:options:)`](distributednotificationcenter/postnotificationname(_:object:userinfo:options:).md) method.
-- [DistributedNotificationCenter.CenterType](distributednotificationcenter/centertype.md)
+### Constants
+- [DistributedNotificationCenter.Options](./options.md)
+  These constants specify the behavior of notifications posted using the [`postNotificationName(_:object:userInfo:options:)`](./postnotificationname%28_,object,userinfo,options%29.md) method.
+- [DistributedNotificationCenter.CenterType](./centertype.md)
   This constant specifies the notification center type.
 
 

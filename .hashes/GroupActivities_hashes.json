@@ -66,9 +66,8 @@
       "hash": "e3cdb6f118685be1a81af298b250feee16c28ce0d9b21017a7a4731d4855acca"
     },
     "https://developer.apple.com/documentation/groupactivities/drawing_content_in_a_group_session": {
-      "etag": "W/\"b2e9ffc7aaf1c9e616d6805535d6e412\"",
       "file_path": "documentation/GroupActivities/drawing_content_in_a_group_session.md",
-      "hash": "7f155386b6d7e22c3a12c684156f2afa0cd37b51efc18d595ce8c7801ac22572"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/groupactivities/groupactivity": {
       "etag": "\"58d3-65d560bd78ce2-df\"",
@@ -1325,9 +1324,8 @@
       "hash": "e3cdb6f118685be1a81af298b250feee16c28ce0d9b21017a7a4731d4855acca"
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/drawing_content_in_a_group_session.json": {
-      "etag": "W/\"b2e9ffc7aaf1c9e616d6805535d6e412\"",
       "file_path": "documentation/GroupActivities/drawing_content_in_a_group_session.md",
-      "hash": "7f155386b6d7e22c3a12c684156f2afa0cd37b51efc18d595ce8c7801ac22572"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/groupactivity.json": {
       "etag": "\"58d3-65d560bd78ce2-df\"",
@@ -2516,6 +2514,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 503
   }
 }

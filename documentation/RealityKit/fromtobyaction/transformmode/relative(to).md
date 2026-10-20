@@ -1,7 +1,8 @@
 # FromToByAction.TransformMode.relative(to:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided transforms are relative to the resolved entities transform.
 

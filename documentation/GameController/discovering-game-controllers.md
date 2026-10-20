@@ -1,6 +1,7 @@
 # Discovering game controllers
 
-**Framework**: Game Controller
+**Framework**: Game Controller  
+**Role**: Article
 
 Implement connection and input handling to provide seamless physical controller support for players.
 
@@ -15,9 +16,9 @@ The Game Controller framework provides standardized APIs for connection monitori
 - Handle input from different controller profiles consistently.
 - Support accessibility features and assistive technologies.
 
-For more information on designing game experiences using controllers, see Human Interface Guidelines > Inputs > [`Game Controls`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-controls).
+For more information on designing game experiences using controllers, see Human Interface Guidelines > Inputs > [Game Controls](https://developer.apple.com/design/human-interface-guidelines/game-controls).
 
-#### Discover Wireless Controllers
+#### Discover wireless controllers
 
 A wireless controller isn’t visible to the device until it’s explicitly paired with the device. Before retrieving controller connection states and handling input, players need to pair their controller with the device your game supports. To pair a device:
 
@@ -30,9 +31,9 @@ If the device was previously paired, select it from the “My Devices” list to
 
 When connecting a controller to an iOS or iPadOS device using a USB cable, the controller connects automatically. When connecting a controller to a Mac, the person receives a system prompt that they need to approve before the controller is available to your game.
 
-#### Monitor for Controller Connections
+#### Monitor for controller connections
 
-After your app launches, the system automatically creates a list of connected [`controllers()`](gccontroller/controllers().md) that you use to inspect whether a controller is already in a connected state. When a person connects or disconnects a controller, the system can broadcast these connection events to your app. Use [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) to observe for connection notifications:
+After your app launches, the system automatically creates a list of connected [`controllers()`](./gccontroller/controllers%28%29.md) that you use to inspect whether a controller is already in a connected state. When a person connects or disconnects a controller, the system can broadcast these connection events to your app. Use [`NotificationCenter`](../Foundation/notificationcenter.md) to observe for connection notifications:
 
 ```swift
 import GameController
@@ -92,9 +93,9 @@ class GameControllerManager {
 }
 ```
 
-The [`controllers()`](gccontroller/controllers().md) method returns an empty array when there are no connected controllers. Observe both [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) and [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) and update your user experience according to the controller a person wants to use. When the connection status changes, the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) property contains the [`GCController`](gccontroller.md) object.
+The [`controllers()`](./gccontroller/controllers%28%29.md) method returns an empty array when there are no connected controllers. Observe both [`GCControllerDidConnectNotification`](./gccontrollerdidconnectnotification.md) and [`GCControllerDidDisconnectNotification`](./gccontrollerdiddisconnectnotification.md) and update your user experience according to the controller a person wants to use. When the connection status changes, the [`object`](../Foundation/nsnotification/object.md) property contains the [`GCController`](./gccontroller.md) object.
 
-Because the number of game controllers may vary, consider modifying your game’s input handling based on the number and types of connected controllers. The [`Game Controller`](GameController.md) framework supports controllers you attach an iPhone into and standalone extended controller designs. When multiple controllers are in a connected state, prioritize making an attached controller the default controller.
+Because the number of game controllers may vary, consider modifying your game’s input handling based on the number and types of connected controllers. The [Game Controller](./GameController.md) framework supports controllers you attach an iPhone into and standalone extended controller designs. When multiple controllers are in a connected state, prioritize making an attached controller the default controller.
 
 ```swift
 private func updateInputConfiguration(controllers: [GCController]) {
@@ -128,16 +129,16 @@ private func updateInputConfiguration(controllers: [GCController]) {
 }
 ```
 
-#### Associate a Game Controller with a Player
+#### Associate a game controller with a player
 
-Use the [`GCController`](gccontroller.md) to perform common controller-related tasks, like:
+Use the [`GCController`](./gccontroller.md) to perform common controller-related tasks, like:
 
 - Detect and set an index number for each controller that connects to the device.
 - Read the controller object’s profile properties to obtain controller input.
 - Access the controller’s battery life, light settings, and haptics information.
 - Identify whether the controller directly attaches to the device.
 
-A player index associates a controller with a specific player. Set [`playerIndex`](gccontroller/playerindex.md) to associate each player with the controller they’re using. For example, in a two-player game where both players are using controllers, you set one controller to [`GCControllerPlayerIndex.index1`](gccontrollerplayerindex/index1.md) and the other to [`GCControllerPlayerIndex.index2`](gccontrollerplayerindex/index2.md). If the controller supports it, setting the player index causes a matching LED on the controller to light up.
+A player index associates a controller with a specific player. Set [`playerIndex`](./gccontroller/playerindex.md) to associate each player with the controller they’re using. For example, in a two-player game where both players are using controllers, you set one controller to [`GCControllerPlayerIndex.index1`](./gccontrollerplayerindex/index1.md) and the other to [`GCControllerPlayerIndex.index2`](./gccontrollerplayerindex/index2.md). If the controller supports it, setting the player index causes a matching LED on the controller to light up.
 
 When a controller is no longer in use by a player, use `GCControllerPlayerIndex/indexunset`.
 
@@ -165,11 +166,11 @@ private func unassignController(_ controller: GCController) {
 }
 ```
 
-#### Choose the Profile Representation and Handle Input
+#### Choose the profile representation and handle input
 
 When you add controller support, you choose which controller profiles to support and then set up input handling to read the appropriate elements on those profiles to receive input data. A profile provides a guarantee that the controls you expect to find on a specific controller exist. A game controller can support multiple profiles, ensuring all controls each profile defines are present on the physical controller.
 
-You configure input handling based on the controller’s available input profile that you specify with [`GCSupportedGameControllers`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportedgamecontrollers). The framework supports the following game controller profiles:
+You configure input handling based on the controller’s available input profile that you specify with [`GCSupportedGameControllers`](../BundleResources/information-property-list/gcsupportedgamecontrollers.md). The framework supports the following game controller profiles:
 
 - **`Extended`**: Represents an Xbox-like, or console controller-like controller — supporting all controls found on an Xbox controller.
 - **`DualShock`**: Represents a PlayStation DUALSHOCK 4 controller for PS4.
@@ -179,7 +180,7 @@ You configure input handling based on the controller’s available input profile
 - **`Directional`**: Represents a directional pad without motion or rotation, like the second generation Siri Remote.
 - **`Spatial`**: Represents a spatial gamepad, like a PlayStation VR2 Sense Controller.
 
-The framework maps the actual physical control data to the elements of the profile you choose. When you choose a gamepad representation, you assign a callback for the associated input you want from the profile, like [`GCExtendedGamepad`](gcextendedgamepad.md):
+The framework maps the actual physical control data to the elements of the profile you choose. When you choose a gamepad representation, you assign a callback for the associated input you want from the profile, like [`GCExtendedGamepad`](./gcextendedgamepad.md):
 
 ```swift
 private func setupExtendedGamepadHandlers(_ gamepad: GCExtendedGamepad, playerIndex: Int) {
@@ -217,13 +218,13 @@ private func setupExtendedGamepadHandlers(_ gamepad: GCExtendedGamepad, playerIn
 }
 ```
 
-For more information about handling controller input events, see [`Handling input events`](handling-input-events.md).
+For more information about handling controller input events, see [Handling input events](./handling-input-events.md).
 
-#### Use Gamepads on Visionos
+#### Use gamepads on visionOS
 
-Apple Vision Pro supports all of the same game controllers that iOS, iPadOS, tvOS, and macOS support. By default, the system converts gamepad input and a person’s gaze into a pinch events and sends them to the view a person is gazing at. A gaze and gamepad button press results in a [`UIKit`](https://developer.apple.com/documentation/uikit) event or a [`SwiftUI`](https://developer.apple.com/documentation/swiftui) gesture.
+Apple Vision Pro supports all of the same game controllers that iOS, iPadOS, tvOS, and macOS support. By default, the system converts gamepad input and a person’s gaze into a pinch events and sends them to the view a person is gazing at. A gaze and gamepad button press results in a [UIKit](../UIKit/UIKit.md) event or a [SwiftUI](../SwiftUI/SwiftUI.md) gesture.
 
-A game can override the default behavior and instead receive gamepad input events through the [`Game Controller`](GameController.md) framework when a person is gazing at a game’s content view. To receive game controller events in [`UIKit`](https://developer.apple.com/documentation/uikit), add an instance of [`GCEventInteraction`](gceventinteraction.md) to the view that hosts your game’s [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer). If you use [`SwiftUI`](https://developer.apple.com/documentation/swiftui), add the [`handlesGameControllerEvents(matching:)`](https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:)) modifier:
+A game can override the default behavior and instead receive gamepad input events through the [Game Controller](./GameController.md) framework when a person is gazing at a game’s content view. To receive game controller events in [UIKit](../UIKit/UIKit.md), add an instance of [`GCEventInteraction`](./gceventinteraction.md) to the view that hosts your game’s [`CAMetalLayer`](../QuartzCore/cametallayer.md). If you use [SwiftUI](../SwiftUI/SwiftUI.md), add the [`handlesGameControllerEvents(matching:)`](../SwiftUI/view/handlesgamecontrollerevents%28matching%29.md) modifier:
 
 ```swift
 import SwiftUI
@@ -241,13 +242,14 @@ struct VisionContentView: View {
 }
 ```
 
-For more information about spatial game controllers, see [`Discovering and tracking spatial game controllers and styli`](discovering-and-tracking-spatial-game-controllers-and-styli.md).
+For more information about spatial game controllers, see [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md).
 
 ## See Also
 
-- [Game Controller updates](../updates/gamecontroller.md)
+### Essentials
+- [Game Controller updates](../Updates/gamecontroller.md)
   Learn about important changes to Game Controller.
-- [Handling input events](handling-input-events.md)
+- [Handling input events](./handling-input-events.md)
   Receive controller input using either polling or callbacks.
 
 

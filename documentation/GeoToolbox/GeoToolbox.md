@@ -1,7 +1,8 @@
 # GeoToolbox
 
 **Framework**: GeoToolbox  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Determine place descriptor information for map coordinates.
 
@@ -21,17 +22,17 @@ Use `GeoToolbox` to create `PlaceDescriptor` structures for use across Maps tech
 ## Topics
 
 ### Getting rich information about a place
-- [struct PlaceDescriptor](placedescriptor.md)
+- [struct PlaceDescriptor](./placedescriptor.md)
   A structure that contains identifying information about a place that a mapping service may use to attempt to find rich place information such as phone numbers, websites, and so on.
 ### Creating a place descriptor
-- [init?(item: MKMapItem)](placedescriptor/init(item:).md)
+- [init?(item: MKMapItem)](./placedescriptor/init%28item%29.md)
   Creates a place descriptor from a map item.
-- [init(representations: [PlaceDescriptor.PlaceRepresentation], commonName: String?, supportingRepresentations: [PlaceDescriptor.SupportingPlaceRepresentation])](placedescriptor/init(representations:commonname:supportingrepresentations:).md)
+- [init(representations: [PlaceDescriptor.PlaceRepresentation], commonName: String?, supportingRepresentations: [PlaceDescriptor.SupportingPlaceRepresentation])](./placedescriptor/init%28representations,commonname,supportingrepresentations%29.md)
   Creates a place descriptor, suitable for use when searching or retrieving rich data about a place.
 ### Values that describe places and mapping service providers
-- [PlaceDescriptor.PlaceRepresentation](placedescriptor/placerepresentation.md)
+- [PlaceDescriptor.PlaceRepresentation](./placedescriptor/placerepresentation.md)
   Values that represent a physical place, suitable for use when searching or retrieving rich data.
-- [PlaceDescriptor.SupportingPlaceRepresentation](placedescriptor/supportingplacerepresentation.md)
+- [PlaceDescriptor.SupportingPlaceRepresentation](./placedescriptor/supportingplacerepresentation.md)
   Values that describe the representation of a physical place using proprietary attributes, such as an alphanumeric location identifier from a mapping service provider.
 
 

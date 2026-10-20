@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays the audio resource.
 
@@ -22,7 +23,7 @@ Plays the audio resource.
 
 #### Discussion
 
-The controller plays from the beginning of the resource, or from the point at which it was paused if you previously called the [`pause()`](audioplaybackgroupcontroller/pause().md) method during playback. The controller ignores calls to [`play()`](audioplaybackgroupcontroller/play().md) when audio is already playing.
+The controller plays from the beginning of the resource, or from the point at which it was paused if you previously called the [`pause()`](./pause%28%29.md) method during playback. The controller ignores calls to [`play()`](./play%28%29.md) when audio is already playing.
 
 
 ---

@@ -1,23 +1,28 @@
 # CFMessagePortCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback invoked to process a message received on a CFMessagePort object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CFMessagePortCallBack = (CFMessagePort?, Int32, CFData?, UnsafeMutableRawPointer?) -> Unmanaged<CFData>?
+```
+
+```c
+typedef const struct __CFData *(*)(struct __CFMessagePort *, int, const struct __CFData *, void *) CFMessagePortCallBack;
 ```
 
 #### Return Value
@@ -33,11 +38,12 @@ If you want the message data to persist beyond this callback, you must explicitl
 - `local`: The local message port that received the message.
 - `msgid`: An arbitrary integer value assigned to the message by the sender.
 - `data`: The message data.
-- `info`: The `info` member of the [`CFMessagePortContext`](cfmessageportcontext.md) structure that was used when creating `local`.
+- `info`: The `info` member of the [`CFMessagePortContext`](./cfmessageportcontext.md) structure that was used when creating `local`.
 
 ## See Also
 
-- [typealias CFMessagePortInvalidationCallBack](cfmessageportinvalidationcallback.md)
+### Callbacks
+- [typealias CFMessagePortInvalidationCallBack](./cfmessageportinvalidationcallback.md)
   Callback invoked when a CFMessagePort object is invalidated.
 
 

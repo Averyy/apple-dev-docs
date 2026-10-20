@@ -1,7 +1,8 @@
 # AssetError.Kind.unsupportedVersion(_:)
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the asset version is unsupported.
 
@@ -24,13 +25,14 @@ This typically means a more recent version of this library generated the asset, 
 
 ## See Also
 
-- [AssetError.Kind.corruptedMetadata](asseterror/kind-swift.enum/corruptedmetadata.md)
+### Types of errors
+- [AssetError.Kind.corruptedMetadata](./corruptedmetadata.md)
   An error that indicates the asset metadata is corrupted.
-- [AssetError.Kind.duplicateName](asseterror/kind-swift.enum/duplicatename.md)
+- [AssetError.Kind.duplicateName](./duplicatename.md)
   An error that indicates a component with that name already exists in the asset.
-- [AssetError.Kind.invalidFeatureType(_:)](asseterror/kind-swift.enum/invalidfeaturetype(_:).md)
+- [AssetError.Kind.invalidFeatureType(_:)](./invalidfeaturetype%28_%29.md)
   An error that indicates the feature type is invalid.
-- [AssetError.Kind.invalidName](asseterror/kind-swift.enum/invalidname.md)
+- [AssetError.Kind.invalidName](./invalidname.md)
   An error that indicates the component name is invalid.
 
 

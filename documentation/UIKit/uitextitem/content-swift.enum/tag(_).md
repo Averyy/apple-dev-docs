@@ -1,7 +1,8 @@
 # UITextItem.Content.tag(_:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A string that represents a custom tag for a topic.
 
@@ -9,7 +10,7 @@ A string that represents a custom tag for a topic.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ case tag(String)
 
 ## See Also
 
-- [UITextItem.Content.link(_:)](uitextitem/content-swift.enum/link(_:).md)
+### Getting the content type
+- [UITextItem.Content.link(_:)](./link%28_%29.md)
   A link to a resource, such as an item on a remote server or the path to a local file.
-- [UITextItem.Content.textAttachment(_:)](uitextitem/content-swift.enum/textattachment(_:).md)
+- [UITextItem.Content.textAttachment(_:)](./textattachment%28_%29.md)
   A text attachment, such as an image or view.
 
 

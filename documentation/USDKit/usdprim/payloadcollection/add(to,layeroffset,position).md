@@ -1,7 +1,8 @@
 # add(to:layerOffset:position:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an internal payload arc that targets a prim in the same layer stack.
 
@@ -21,7 +22,7 @@ func add(to primPath: USDLayer.Path, layerOffset: USDLayer.TimeOffset = .init(),
 
 #### Discussion
 
-> **Note**: An error if the payload cannot be added.
+> **Throws**: An error if the payload cannot be added.
 
 ## Parameters
 

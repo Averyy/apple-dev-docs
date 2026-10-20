@@ -1,7 +1,8 @@
 # RCSMessage.GeolocationPush
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents geolocation push content in an RCS message.
 
@@ -17,54 +18,55 @@ struct GeolocationPush
 ## Topics
 
 ### Accessing geolocation properties
-- [var latitude: Double](rcsmessage/geolocationpush/latitude.md)
+- [var latitude: Double](./geolocationpush/latitude.md)
   The latitude of the location.
-- [var longitude: Double](rcsmessage/geolocationpush/longitude.md)
+- [var longitude: Double](./geolocationpush/longitude.md)
   The longitude of the location.
 ### Supporting RCS encryption
-- [var isEndToEndEncrypted: Bool](rcsmessage/geolocationpush/isendtoendencrypted.md)
+- [var isEndToEndEncrypted: Bool](./geolocationpush/isendtoendencrypted.md)
   A Boolean value indicating whether this message is end-to-end encrypted.
 ### Initializers
-- [init(latitude: Double, longitude: Double, description: String?)](rcsmessage/geolocationpush/init(latitude:longitude:description:).md)
+- [init(latitude: Double, longitude: Double, description: String?)](./geolocationpush/init%28latitude,longitude,description%29.md)
   Creates a geolocation push content instance with the given latitude and longitude.
 ### Instance Properties
-- [var description: String?](rcsmessage/geolocationpush/description.md)
+- [var description: String?](./geolocationpush/description.md)
   A textual description of the location.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sendMessage(RCSMessage.Text, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-70q7h.md)
+### Sending messages
+- [func sendMessage(RCSMessage.Text, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](../rcsservice/sendmessage%28_,to,using,messageid%29-70q7h.md)
   Sends a text message to a specified destination.
-- [RCSMessage.Text](rcsmessage/text.md)
+- [RCSMessage.Text](./text.md)
   A structure that represents text content in an RCS message.
-- [func sendMessage(RCSMessage.FileTransfer, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-63zct.md)
+- [func sendMessage(RCSMessage.FileTransfer, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](../rcsservice/sendmessage%28_,to,using,messageid%29-63zct.md)
   Sends a file transfer message to a specified destination.
-- [RCSMessage.FileTransfer](rcsmessage/filetransfer.md)
+- [RCSMessage.FileTransfer](./filetransfer.md)
   A structure that represents file transfer content in an RCS message.
-- [func sendMessage(RCSMessage.ComposingIndicator, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-9i178.md)
+- [func sendMessage(RCSMessage.ComposingIndicator, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](../rcsservice/sendmessage%28_,to,using,messageid%29-9i178.md)
   Sends a composing indicator message to a specified destination.
-- [RCSMessage.ComposingIndicator](rcsmessage/composingindicator.md)
+- [RCSMessage.ComposingIndicator](./composingindicator.md)
   A structure that represents RFC 3994 composing indicator content in an RCS message.
-- [func sendMessage(RCSMessage.GeolocationPush, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-y1z.md)
+- [func sendMessage(RCSMessage.GeolocationPush, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](../rcsservice/sendmessage%28_,to,using,messageid%29-y1z.md)
   Sends a geolocation push message to a specified destination.
-- [func sendMessage(RCSMessage.DispositionNotification, to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group?) async throws](rcsservice/sendmessage(_:to:using:messageid:group:).md)
+- [func sendMessage(RCSMessage.DispositionNotification, to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group?) async throws](../rcsservice/sendmessage%28_,to,using,messageid,group%29.md)
   Sends the disposition for an incoming message.
-- [RCSMessage.DispositionNotification](rcsmessage/dispositionnotification.md)
+- [RCSMessage.DispositionNotification](./dispositionnotification.md)
   A structure that represents disposition notification content in an RCS message, such as whether delivery succeeded or failed.
-- [enum RCSHandle](rcshandle.md)
+- [enum RCSHandle](../rcshandle.md)
   An enumeration that represents an RCS destination or sender.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [struct RCSMessageID](rcsmessageid.md)
+- [struct RCSMessageID](../rcsmessageid.md)
   A structure that represents an RCS message identifier.
 
 

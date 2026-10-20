@@ -1,7 +1,8 @@
 # exportedNode(with:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func exportedNode(with handle: (any MPSHandle)?) -> Self
+```
+
+```objc
++ (instancetype) exportedNodeWithHandle:(NSObject<MPSHandle> *) handle;
 ```
 
 

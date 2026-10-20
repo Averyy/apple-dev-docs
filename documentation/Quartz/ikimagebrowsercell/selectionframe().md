@@ -1,9 +1,10 @@
 # selectionFrame()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns the receiver’s selection frame rectangle, which defines the position of the selection rectangle in its [`IKImageBrowserView`](ikimagebrowserview.md).
+Returns the receiver’s selection frame rectangle, which defines the position of the selection rectangle in its [`IKImageBrowserView`](../ikimagebrowserview.md).
 
 **Availability**:
 - macOS 10.4+
@@ -12,6 +13,10 @@ Returns the receiver’s selection frame rectangle, which defines the position o
 
 ```swift
 func selectionFrame() -> NSRect
+```
+
+```objc
+- (NSRect) selectionFrame;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ Subclasses can override this method to customize the position of the selection f
 
 ## See Also
 
-- [func isSelected() -> Bool](ikimagebrowsercell/isselected.md)
+### Selection Handling
+- [func isSelected() -> Bool](./isselected%28%29.md)
   Returns whether the cell is selected.
 
 

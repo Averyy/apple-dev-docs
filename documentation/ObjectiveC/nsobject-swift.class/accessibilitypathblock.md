@@ -1,7 +1,8 @@
 # accessibilityPathBlock
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityPathBlock: AXPathReturnBlock? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) AXPathReturnBlock accessibilityPathBlock;
 ```
 
 

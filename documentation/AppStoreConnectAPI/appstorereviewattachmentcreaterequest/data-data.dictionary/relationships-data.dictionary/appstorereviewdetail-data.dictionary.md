@@ -1,7 +1,8 @@
 # AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail.Data](appstorereviewattachmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstorereviewdetail-data.dictionary/data-data.dictionary.md)
+- [object AppStoreReviewAttachmentCreateRequest.Data.Relationships.AppStoreReviewDetail.Data](./appstorereviewdetail-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties

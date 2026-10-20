@@ -1,7 +1,8 @@
 # VTHDRPerFrameMetadataGenerationSession.HDRFormat
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,19 +21,19 @@ enum HDRFormat
 ## Topics
 
 ### Formats
-- [VTHDRPerFrameMetadataGenerationSession.HDRFormat.dolbyVision](vthdrperframemetadatagenerationsession/hdrformat/dolbyvision.md)
+- [VTHDRPerFrameMetadataGenerationSession.HDRFormat.dolbyVision](./hdrformat/dolbyvision.md)
   Indicates to generate DolbyVision data for each pixel buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AssistantSchemas.MailEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe email.
 
@@ -23,22 +24,22 @@ protocol MailEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var account: some AssistantSchemas.Entity](assistantschemas/mailentity/account.md)
+- [var account: some AssistantSchemas.Entity](./mailentity/account.md)
   The app entity describes an email account.
-- [var draft: some AssistantSchemas.Entity](assistantschemas/mailentity/draft.md)
+- [var draft: some AssistantSchemas.Entity](./mailentity/draft.md)
   The app entity describes an email draft.
-- [var mailbox: some AssistantSchemas.Entity](assistantschemas/mailentity/mailbox.md)
+- [var mailbox: some AssistantSchemas.Entity](./mailentity/mailbox.md)
   The app entity describes an email mailbox.
-- [var message: some AssistantSchemas.Entity](assistantschemas/mailentity/message.md)
+- [var message: some AssistantSchemas.Entity](./mailentity/message.md)
   The app entity describes an email message.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

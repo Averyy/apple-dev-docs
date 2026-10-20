@@ -1,7 +1,8 @@
 # RCSService.Business.Suggestion
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing a suggestion from a business.
 
@@ -17,33 +18,34 @@ enum Suggestion
 ## Topics
 
 ### Determining suggestion type
-- [case action(RCSService.Business.SuggestedAction)](rcsservice/business/suggestion/action(_:).md)
+- [case action(RCSService.Business.SuggestedAction)](./suggestion/action%28_%29.md)
   Suggested action.
-- [RCSService.Business.SuggestedAction](rcsservice/business/suggestedaction.md)
+- [RCSService.Business.SuggestedAction](./suggestedaction.md)
   Suggested action sent by a business.
-- [case reply(RCSService.Business.SuggestedReply)](rcsservice/business/suggestion/reply(_:).md)
+- [case reply(RCSService.Business.SuggestedReply)](./suggestion/reply%28_%29.md)
   Suggested reply.
-- [RCSService.Business.SuggestedReply](rcsservice/business/suggestedreply.md)
+- [RCSService.Business.SuggestedReply](./suggestedreply.md)
   Suggested reply in response to a business message.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let message: RCSMessage](rcsservice/incomingmessagenotification/message.md)
+### Inspecting notification properties
+- [let message: RCSMessage](../incomingmessagenotification/message.md)
   The message contained in this notification.
-- [let groupContext: RCSGroupContext?](rcsservice/incomingmessagenotification/groupcontext.md)
+- [let groupContext: RCSGroupContext?](../incomingmessagenotification/groupcontext.md)
   The group context associated with this message.
-- [struct RCSGroupContext](rcsgroupcontext.md)
+- [struct RCSGroupContext](../../rcsgroupcontext.md)
   Structure containing information about a message’s group.
-- [let suggestions: [RCSService.Business.Suggestion]](rcsservice/incomingmessagenotification/suggestions.md)
+- [let suggestions: [RCSService.Business.Suggestion]](../incomingmessagenotification/suggestions.md)
   An array of suggestions associated with the message.
 
 

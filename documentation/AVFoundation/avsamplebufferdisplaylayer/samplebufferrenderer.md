@@ -1,7 +1,8 @@
 # sampleBufferRenderer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that enqueues video sample buffers for rendering.
 
@@ -17,6 +18,10 @@ An object that enqueues video sample buffers for rendering.
 
 ```swift
 var sampleBufferRenderer: AVSampleBufferVideoRenderer { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVSampleBufferVideoRenderer * sampleBufferRenderer;
 ```
 
 #### Discussion

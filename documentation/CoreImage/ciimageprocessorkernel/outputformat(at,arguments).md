@@ -1,7 +1,8 @@
 # outputFormat(at:arguments:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Override this class method if your processor has more than one output and you want your processor’s output to be in a specific supported `CIPixelFormat`.
 
@@ -19,6 +20,10 @@ Override this class method if your processor has more than one output and you wa
 class func outputFormat(at outputIndex: Int32, arguments: [String : Any]?) -> CIFormat
 ```
 
+```objc
++ (CIFormat) outputFormatAtIndex:(int) outputIndex arguments:(NSDictionary<NSString *,id> *) arguments;
+```
+
 #### Return Value
 
  Return the desired `CIPixelFormat`
@@ -32,7 +37,7 @@ If the outputFormat is `0`, then the output will be a supported format that best
 ## Parameters
 
 - `outputIndex`: The index that tells you which processor output for which to return the desired `CIPixelFormat`
-- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
+- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](./apply%28withextent,inputs,arguments%29.md).
 
 
 ---

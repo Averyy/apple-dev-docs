@@ -1,7 +1,8 @@
 # influenceDepthMaxJointCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of joints to be influenced by this demand.
 

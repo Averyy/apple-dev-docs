@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func wait(untilSignaledValue value: UInt64, timeoutMS milliseconds: UInt64) -> Bool
+```
+
+```objc
+- (BOOL) waitUntilSignaledValue:(uint64_t) value timeoutMS:(uint64_t) milliseconds;
 ```
 
 

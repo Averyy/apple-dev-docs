@@ -1,7 +1,8 @@
 # CSSMERR_CSP_APPLE_PUBLIC_KEY_INCOMPLETE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_CSP_APPLE_PUBLIC_KEY_INCOMPLETE: Int { get }
+```
+
+```c
+CSSMERR_CSP_APPLE_PUBLIC_KEY_INCOMPLETE
 ```
 
 

@@ -1,7 +1,8 @@
 # kUSBHostPortStatusSuspended
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The suspended port status.
 
@@ -10,7 +11,7 @@ The suspended port status.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusSuspended = kIOUSBHostPortStatusSuspended
 ```
 

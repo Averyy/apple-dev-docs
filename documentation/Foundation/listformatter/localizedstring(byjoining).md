@@ -1,7 +1,8 @@
 # localizedString(byJoining:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Constructs a formatted string from an array of strings that uses the list format specific to the current locale.
 
@@ -20,6 +21,10 @@ Constructs a formatted string from an array of strings that uses the list format
 class func localizedString(byJoining strings: [String]) -> String
 ```
 
+```objc
++ (NSString *) localizedStringByJoiningStrings:(NSArray<NSString *> *) strings;
+```
+
 #### Return Value
 
 A formatted string that joins together a list of strings using a locale-specific list format.
@@ -34,9 +39,10 @@ A formatted string that joins together a list of strings using a locale-specific
 
 ## See Also
 
-- [func string(from: [Any]) -> String?](listformatter/string(from:).md)
+### Converting Arrays to Formatted Lists
+- [func string(from: [Any]) -> String?](./string%28from%29.md)
   Creates a formatted string for an array of items.
-- [func string(for: Any?) -> String?](listformatter/string(for:).md)
+- [func string(for: Any?) -> String?](./string%28for%29.md)
   Creates a formatted string for an array of items.
 
 

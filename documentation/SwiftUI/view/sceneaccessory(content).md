@@ -1,7 +1,8 @@
 # sceneAccessory(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines any scene accessories associated with `self`.
 
@@ -37,7 +38,7 @@ struct RootView: View {
 }
 ```
 
-Use the [`onAvailabilityChange(perform:)`](sceneaccessorycontent/onavailabilitychange(perform:).md) modifier to observe a scene accessory’s system-determined availability. Observe the lifecycle of the accessory’s content using [`onAppear(perform:)`](view/onappear(perform:).md), [`onDisappear(perform:)`](view/ondisappear(perform:).md), and [`scenePhase`](environmentvalues/scenephase.md).
+Use the [`onAvailabilityChange(perform:)`](../sceneaccessorycontent/onavailabilitychange%28perform%29.md) modifier to observe a scene accessory’s system-determined availability. Observe the lifecycle of the accessory’s content using [`onAppear(perform:)`](./onappear%28perform%29.md), [`onDisappear(perform:)`](./ondisappear%28perform%29.md), and [`scenePhase`](../environmentvalues/scenephase.md).
 
 For example, you can present various controls based on the scene accessory’s current state:
 
@@ -81,11 +82,12 @@ struct RootView: View {
 
 ## See Also
 
-- [struct CameraCaptureAccessory](cameracaptureaccessory.md)
+### Presenting content on an external display
+- [struct CameraCaptureAccessory](../cameracaptureaccessory.md)
   A scene accessory that presents content during camera capture.
-- [protocol SceneAccessoryContent](sceneaccessorycontent.md)
+- [protocol SceneAccessoryContent](../sceneaccessorycontent.md)
   Conforming types represent items which define content for scene accessories.
-- [struct ExternalNonInteractiveAccessory](externalnoninteractiveaccessory.md)
+- [struct ExternalNonInteractiveAccessory](../externalnoninteractiveaccessory.md)
   A scene accessory that presents non-interactive content on an external display.
 
 

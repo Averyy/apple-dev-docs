@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: Self.ID](appentity/id.md)
+- [var id: Self.ID](./id.md)
   The stable identity of the entity associated with this instance.
 
 

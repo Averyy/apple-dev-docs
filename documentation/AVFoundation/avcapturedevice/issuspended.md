@@ -1,7 +1,8 @@
 # isSuspended
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device is in a suspended state.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the device is in a suspended state.
 var isSuspended: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSuspended) BOOL suspended;
+```
+
 #### Discussion
 
 This property is key-value observable.
 
 ## See Also
 
-- [var isConnected: Bool](avcapturedevice/isconnected.md)
+### Accessing device state
+- [var isConnected: Bool](./isconnected.md)
   A Boolean value that indicates whether a device is currently connected to the system and available for use.
-- [var isInUseByAnotherApplication: Bool](avcapturedevice/isinusebyanotherapplication.md)
+- [var isInUseByAnotherApplication: Bool](./isinusebyanotherapplication.md)
   A Boolean value that indicates whether another app is using the device.
 
 

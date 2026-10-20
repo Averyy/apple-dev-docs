@@ -1,7 +1,8 @@
 # init(exporting:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value representation that exports an entity to an `IntentPerson`.
 
@@ -19,6 +20,8 @@ Creates a value representation that exports an entity to an `IntentPerson`.
 ```swift
 init(exporting: @escaping @Sendable (Item) async throws -> IntentValue)
 ```
+
+Available when `Item` conforms to `Transferable` and `IntentValue` is `IntentPerson`.
 
 #### Discussion
 

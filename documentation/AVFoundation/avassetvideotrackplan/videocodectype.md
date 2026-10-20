@@ -1,7 +1,8 @@
 # videoCodecType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Video codec type of this track
 
@@ -17,6 +18,10 @@ Video codec type of this track
 
 ```swift
 var videoCodecType: AVVideoCodecType { get }
+```
+
+```objc
+@property (readonly) AVVideoCodecType videoCodecType;
 ```
 
 

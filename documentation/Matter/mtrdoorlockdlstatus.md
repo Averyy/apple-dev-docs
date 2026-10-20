@@ -1,7 +1,8 @@
 # MTRDoorLockDlStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,28 +19,32 @@
 enum MTRDoorLockDlStatus
 ```
 
+```c
+enum MTRDoorLockDlStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDoorLockDlStatus.duplicate](mtrdoorlockdlstatus/duplicate.md)
-- [MTRDoorLockDlStatus.failure](mtrdoorlockdlstatus/failure.md)
-- [MTRDoorLockDlStatus.invalidField](mtrdoorlockdlstatus/invalidfield.md)
-- [MTRDoorLockDlStatus.notFound](mtrdoorlockdlstatus/notfound.md)
-- [MTRDoorLockDlStatus.occupied](mtrdoorlockdlstatus/occupied.md)
-- [MTRDoorLockDlStatus.resourceExhausted](mtrdoorlockdlstatus/resourceexhausted.md)
-- [MTRDoorLockDlStatus.success](mtrdoorlockdlstatus/success.md)
+- [MTRDoorLockDlStatus.duplicate](./mtrdoorlockdlstatus/duplicate.md)
+- [MTRDoorLockDlStatus.failure](./mtrdoorlockdlstatus/failure.md)
+- [MTRDoorLockDlStatus.invalidField](./mtrdoorlockdlstatus/invalidfield.md)
+- [MTRDoorLockDlStatus.notFound](./mtrdoorlockdlstatus/notfound.md)
+- [MTRDoorLockDlStatus.occupied](./mtrdoorlockdlstatus/occupied.md)
+- [MTRDoorLockDlStatus.resourceExhausted](./mtrdoorlockdlstatus/resourceexhausted.md)
+- [MTRDoorLockDlStatus.success](./mtrdoorlockdlstatus/success.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdoorlockdlstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdoorlockdlstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

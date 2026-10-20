@@ -1,7 +1,8 @@
 # preventsAutomaticBackgroundingDuringVideoPlayback
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether video playback prevents the system from automatically backgrounding an app.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether video playback prevents the system from a
 var preventsAutomaticBackgroundingDuringVideoPlayback: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL preventsAutomaticBackgroundingDuringVideoPlayback;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which indicates the system doesn’t automatically background an app while playing video. The value of this property doesn’t prevent the user from backgrounding an app.
+The default value is [`true`](../../Swift/true.md), which indicates the system doesn’t automatically background an app while playing video. The value of this property doesn’t prevent the user from backgrounding an app.
 
-> **Note**:  When enqueuing sample buffers for playback at the user’s request, set the value to [`true`](https://developer.apple.com/documentation/swift/true), and when video playback isn’t the user’s primary focus, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+> **Note**:  When enqueuing sample buffers for playback at the user’s request, set the value to [`true`](../../Swift/true.md), and when video playback isn’t the user’s primary focus, set it to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var preventsDisplaySleepDuringVideoPlayback: Bool](avsamplebufferdisplaylayer/preventsdisplaysleepduringvideoplayback.md)
+### Preventing backgrounding
+- [var preventsDisplaySleepDuringVideoPlayback: Bool](./preventsdisplaysleepduringvideoplayback.md)
   A Boolean value that indicates whether the layer prevents the system from sleeping during video playback.
 
 

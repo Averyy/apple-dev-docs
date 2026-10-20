@@ -1,7 +1,8 @@
 # ringDIP
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The ring finger’s distal interphalangeal (DIP) joint.
 
@@ -19,13 +20,18 @@ The ring finger’s distal interphalangeal (DIP) joint.
 static let ringDIP: VNHumanHandPoseObservation.JointName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameRingDIP;
+```
+
 ## See Also
 
-- [static let ringTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringtip.md)
+### Ring
+- [static let ringTip: VNHumanHandPoseObservation.JointName](./ringtip.md)
   The tip of the ring finger.
-- [static let ringPIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringpip.md)
+- [static let ringPIP: VNHumanHandPoseObservation.JointName](./ringpip.md)
   The ring finger’s proximal interphalangeal (PIP) joint.
-- [static let ringMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringmcp.md)
+- [static let ringMCP: VNHumanHandPoseObservation.JointName](./ringmcp.md)
   The ring finger’s metacarpophalangeal (MCP) joint.
 
 

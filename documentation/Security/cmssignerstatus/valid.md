@@ -1,7 +1,8 @@
 # CMSSignerStatus.valid
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message was signed and both the signature and the signer certificate have been verified.
 
@@ -13,6 +14,10 @@ The message was signed and both the signature and the signer certificate have be
 
 ```swift
 case valid
+```
+
+```c
+kCMSSignerValid
 ```
 
 

@@ -1,45 +1,46 @@
 # HealthKit updates
 
-**Framework**: Updates
+**Framework**: Updates  
+**Role**: Article
 
 Learn about important changes to HealthKit.
 
 #### Overview
 
-Browse notable changes in [`HealthKit`](https://developer.apple.com/documentation/healthkit).
+Browse notable changes in [HealthKit](../HealthKit/HealthKit.md).
 
 #### June 2026
 
-##### Workout Zones
+##### Workout zones
 
-- Access workout zone data for heart rate and cycling power. Read zone configurations and time-in-zone information from workouts using [`HKWorkoutZoneGroup`](https://developer.apple.com/documentation/healthkit/hkworkoutzonegroup).
-- Retrieve a person’s preferred zones from Health Settings with [`preferredWorkoutZoneConfiguration(for:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/preferredworkoutzoneconfiguration(for:)).
-- Provide custom zones for specific workouts using [`HKWorkoutZoneConfiguration`](https://developer.apple.com/documentation/healthkit/hkworkoutzoneconfiguration).
-- Receive real-time zone updates during active workout sessions through [`HKLiveWorkoutBuilderDelegate`](https://developer.apple.com/documentation/healthkit/hkliveworkoutbuilderdelegate).
+- Access workout zone data for heart rate and cycling power. Read zone configurations and time-in-zone information from workouts using [`HKWorkoutZoneGroup`](../HealthKit/hkworkoutzonegroup.md).
+- Retrieve a person’s preferred zones from Health Settings with [`preferredWorkoutZoneConfiguration(for:)`](../HealthKit/hkhealthstore/preferredworkoutzoneconfiguration%28for%29.md).
+- Provide custom zones for specific workouts using [`HKWorkoutZoneConfiguration`](../HealthKit/hkworkoutzoneconfiguration.md).
+- Receive real-time zone updates during active workout sessions through [`HKLiveWorkoutBuilderDelegate`](../HealthKit/hkliveworkoutbuilderdelegate.md).
 
-##### Menopause Api
+##### Menopause API
 
-- Record and query menopausal state information using point-in-time samples. Track perimenopause, menopause, or confirmed absence of menopausal state with [`menopausalState`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/menopausalstate) and [`HKCategoryValueMenopausalState`](https://developer.apple.com/documentation/healthkit/hkcategoryvaluemenopausalstate). See [`Recording and querying menopausal state`](https://developer.apple.com/documentation/healthkit/recording-and-querying-menopausal-state).
-- Track bleeding that occurs after menopause using [`bleedingAfterMenopause`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/bleedingaftermenopause). This category type uses [`HKCategoryValueVaginalBleeding`](https://developer.apple.com/documentation/healthkit/hkcategoryvaluevaginalbleeding) to record bleeding intensity.
+- Record and query menopausal state information using point-in-time samples. Track perimenopause, menopause, or confirmed absence of menopausal state with [`menopausalState`](../HealthKit/hkcategorytypeidentifier/menopausalstate.md) and [`HKCategoryValueMenopausalState`](../HealthKit/hkcategoryvaluemenopausalstate.md). See [Recording and querying menopausal state](../HealthKit/recording-and-querying-menopausal-state.md).
+- Track bleeding that occurs after menopause using [`bleedingAfterMenopause`](../HealthKit/hkcategorytypeidentifier/bleedingaftermenopause.md). This category type uses [`HKCategoryValueVaginalBleeding`](../HealthKit/hkcategoryvaluevaginalbleeding.md) to record bleeding intensity.
 
 #### June 2025
 
-- Start workout sessions on iOS using [`HKLiveWorkoutBuilder`](https://developer.apple.com/documentation/healthkit/hkliveworkoutbuilder).
-- Query medications that a person has added to the Health app, using [`HKUserAnnotatedMedicationQueryDescriptor`](https://developer.apple.com/documentation/healthkit/hkuserannotatedmedicationquerydescriptor) and the times they’ve logged that medication using [`HKMedicationDoseEventType`](https://developer.apple.com/documentation/healthkit/hkmedicationdoseeventtype).
+- Start workout sessions on iOS using [`HKLiveWorkoutBuilder`](../HealthKit/hkliveworkoutbuilder.md).
+- Query medications that a person has added to the Health app, using [`HKUserAnnotatedMedicationQueryDescriptor`](../HealthKit/hkuserannotatedmedicationquerydescriptor.md) and the times they’ve logged that medication using [`HKMedicationDoseEventType`](../HealthKit/hkmedicationdoseeventtype.md).
 
 #### September 2024
 
-- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`underwaterDepth`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/underwaterdepth) and [`waterTemperature`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/watertemperature) to read depth and temperature data from shallow dives.
+- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`underwaterDepth`](../HealthKit/hkquantitytypeidentifier/underwaterdepth.md) and [`waterTemperature`](../HealthKit/hkquantitytypeidentifier/watertemperature.md) to read depth and temperature data from shallow dives.
 
 #### June 2024
 
 ##### General
 
 - Create HealthKit apps for VisionOS.
-- Associate perceived and estimated exertion values with workouts. Use [`workoutEffortScore`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/workouteffortscore) and [`estimatedWorkoutEffortScore`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/estimatedworkouteffortscore) to read and write exertion data. Use [`relateWorkoutEffortSample(_:with:activity:completion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/relateworkouteffortsample(_:with:activity:completion:)) to associate exertion data with a workout, and [`HKWorkoutEffortRelationshipQuery`](https://developer.apple.com/documentation/healthkit/hkworkouteffortrelationshipquery) to query for associated exertion data.
-- Access water temperature data from swimming workouts. Any Apple Watch Ultra records [`waterTemperature`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/watertemperature) samples during swimming workouts.
-- Read and write mental well-being samples using the [`HKStateOfMind`](https://developer.apple.com/documentation/healthkit/hkstateofmind), [`HKPHQ9Assessment`](https://developer.apple.com/documentation/healthkit/hkphq9assessment), and [`HKGAD7Assessment`](https://developer.apple.com/documentation/healthkit/hkgad7assessment) data types.
-- Track menstrual flow and intermenstrual bleeding during pregnancy using the [`bleedingDuringPregnancy`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/bleedingduringpregnancy) and [`bleedingAfterPregnancy`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/bleedingafterpregnancy) data types.
+- Associate perceived and estimated exertion values with workouts. Use [`workoutEffortScore`](../HealthKit/hkquantitytypeidentifier/workouteffortscore.md) and [`estimatedWorkoutEffortScore`](../HealthKit/hkquantitytypeidentifier/estimatedworkouteffortscore.md) to read and write exertion data. Use [`relateWorkoutEffortSample(_:with:activity:completion:)`](../HealthKit/hkhealthstore/relateworkouteffortsample%28_,with,activity,completion%29.md) to associate exertion data with a workout, and [`HKWorkoutEffortRelationshipQuery`](../HealthKit/hkworkouteffortrelationshipquery.md) to query for associated exertion data.
+- Access water temperature data from swimming workouts. Any Apple Watch Ultra records [`waterTemperature`](../HealthKit/hkquantitytypeidentifier/watertemperature.md) samples during swimming workouts.
+- Read and write mental well-being samples using the [`HKStateOfMind`](../HealthKit/hkstateofmind.md), [`HKPHQ9Assessment`](../HealthKit/hkphq9assessment.md), and [`HKGAD7Assessment`](../HealthKit/hkgad7assessment.md) data types.
+- Track menstrual flow and intermenstrual bleeding during pregnancy using the [`bleedingDuringPregnancy`](../HealthKit/hkcategorytypeidentifier/bleedingduringpregnancy.md) and [`bleedingAfterPregnancy`](../HealthKit/hkcategorytypeidentifier/bleedingafterpregnancy.md) data types.
 
 #### June 2023
 
@@ -52,35 +53,36 @@ Browse notable changes in [`HealthKit`](https://developer.apple.com/documentatio
 
 ## See Also
 
-- [Accelerate updates](accelerate.md)
+### Technology and frameworks
+- [Accelerate updates](./accelerate.md)
   Learn about important changes to Accelerate.
-- [Accessibility updates](accessibility.md)
+- [Accessibility updates](./accessibility.md)
   Learn about important changes to Accessibility.
-- [ActivityKit updates](activitykit.md)
+- [ActivityKit updates](./activitykit.md)
   Learn about important changes in ActivityKit.
-- [AdAttributionKit Updates](adattributionkit.md)
+- [AdAttributionKit Updates](./adattributionkit.md)
   Learn about important changes to AdAttributionKit.
-- [App Clips updates](appclips.md)
+- [App Clips updates](./appclips.md)
   Learn about important changes in App Clips.
-- [App Intents updates](appintents.md)
+- [App Intents updates](./appintents.md)
   Learn about important changes in App Intents.
-- [AppKit updates](appkit.md)
+- [AppKit updates](./appkit.md)
   Learn about important changes to AppKit.
-- [Apple Intelligence updates](apple-intelligence.md)
+- [Apple Intelligence updates](./apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
-- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+- [AppleMapsServerAPI Updates](./applemapsserverapi.md)
   Learn about important changes to AppleMapsServerAPI.
-- [Apple Pencil updates](applepencil.md)
+- [Apple Pencil updates](./applepencil.md)
   Learn about important changes to Apple Pencil.
-- [ARKit updates](arkit.md)
+- [ARKit updates](./arkit.md)
   Learn about important changes to ARKit.
-- [Audio Toolbox updates](audiotoolbox.md)
+- [Audio Toolbox updates](./audiotoolbox.md)
   Learn about important changes to Audio Toolbox.
-- [AuthenticationServices updates](authenticationservices.md)
+- [AuthenticationServices updates](./authenticationservices.md)
   Learn about important changes to AuthenticationServices.
-- [AVFAudio updates](avfaudio.md)
+- [AVFAudio updates](./avfaudio.md)
   Learn about important changes to AVFAudio.
-- [AVFoundation updates](avfoundation.md)
+- [AVFoundation updates](./avfoundation.md)
   Learn about important changes to AVFoundation.
 
 

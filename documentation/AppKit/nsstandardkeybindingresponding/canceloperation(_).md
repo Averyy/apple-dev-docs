@@ -1,17 +1,22 @@
 # cancelOperation(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the current operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func cancelOperation(_ sender: Any?)
+```
+
+```objc
+- (void) cancelOperation:(id) sender;
 ```
 
 

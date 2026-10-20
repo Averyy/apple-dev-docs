@@ -1,7 +1,8 @@
 # send(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends data received from the streaming endpoint to the host app.
 

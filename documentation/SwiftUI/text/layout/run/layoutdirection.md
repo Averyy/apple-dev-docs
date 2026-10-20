@@ -1,7 +1,8 @@
 # layoutDirection
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction of the text run.
 

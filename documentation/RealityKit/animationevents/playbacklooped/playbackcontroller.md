@@ -1,7 +1,8 @@
 # playbackController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation playback controller managing the animation that triggered the event.
 
@@ -11,7 +12,7 @@ The animation playback controller managing the animation that triggered the even
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

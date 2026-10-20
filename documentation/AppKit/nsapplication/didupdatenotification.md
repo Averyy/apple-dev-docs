@@ -1,12 +1,13 @@
 # didUpdateNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Posted at the end of the [`updateWindows()`](nsapplication/updatewindows().md) method to indicate that the app has finished updating its windows.
+Posted at the end of the [`updateWindows()`](./updatewindows%28%29.md) method to indicate that the app has finished updating its windows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,48 @@ Posted at the end of the [`updateWindows()`](nsapplication/updatewindows().md) m
 class let didUpdateNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSApplicationDidUpdateNotification;
+```
+
 #### Discussion
 
 The notification object is `NSApp`. This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 
-To observe this notification using Swift concurrency, use [`NSApplication.DidUpdateWindowsMessage`](nsapplication/didupdatewindowsmessage.md).
+To observe this notification using Swift concurrency, use [`NSApplication.DidUpdateWindowsMessage`](./didupdatewindowsmessage.md).
 
 ## See Also
 
-- [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)
+### Notifications
+- [class let didBecomeActiveNotification: NSNotification.Name](./didbecomeactivenotification.md)
   Posted immediately after the app becomes active.
-- [class let didChangeScreenParametersNotification: NSNotification.Name](nsapplication/didchangescreenparametersnotification.md)
+- [class let didChangeScreenParametersNotification: NSNotification.Name](./didchangescreenparametersnotification.md)
   Posted when the configuration of the displays attached to the computer is changed.
-- [class let didFinishLaunchingNotification: NSNotification.Name](nsapplication/didfinishlaunchingnotification.md)
-  Posted at the end of the [`finishLaunching()`](nsapplication/finishlaunching().md) method to indicate that the app has completed launching and is ready to run.
-- [class let didHideNotification: NSNotification.Name](nsapplication/didhidenotification.md)
-  Posted at the end of the [`hide(_:)`](nsapplication/hide(_:).md) method to indicate that the app is now hidden.
-- [class let didResignActiveNotification: NSNotification.Name](nsapplication/didresignactivenotification.md)
+- [class let didFinishLaunchingNotification: NSNotification.Name](./didfinishlaunchingnotification.md)
+  Posted at the end of the [`finishLaunching()`](./finishlaunching%28%29.md) method to indicate that the app has completed launching and is ready to run.
+- [class let didHideNotification: NSNotification.Name](./didhidenotification.md)
+  Posted at the end of the [`hide(_:)`](./hide%28_%29.md) method to indicate that the app is now hidden.
+- [class let didResignActiveNotification: NSNotification.Name](./didresignactivenotification.md)
   Posted immediately after the app gives up its active status to another app.
-- [class let didUnhideNotification: NSNotification.Name](nsapplication/didunhidenotification.md)
-  Posted at the end of the [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md) method to indicate that the app is now visible.
-- [class let willBecomeActiveNotification: NSNotification.Name](nsapplication/willbecomeactivenotification.md)
+- [class let didUnhideNotification: NSNotification.Name](./didunhidenotification.md)
+  Posted at the end of the [`unhideWithoutActivation()`](./unhidewithoutactivation%28%29.md) method to indicate that the app is now visible.
+- [class let willBecomeActiveNotification: NSNotification.Name](./willbecomeactivenotification.md)
   Posted immediately before the app becomes active.
-- [class let willFinishLaunchingNotification: NSNotification.Name](nsapplication/willfinishlaunchingnotification.md)
-  Posted at the start of the [`finishLaunching()`](nsapplication/finishlaunching().md) method to indicate that the app has completed its initialization process and is about to finish launching.
-- [class let willHideNotification: NSNotification.Name](nsapplication/willhidenotification.md)
-  Posted at the start of the [`hide(_:)`](nsapplication/hide(_:).md) method to indicate that the app is about to be hidden.
-- [class let willResignActiveNotification: NSNotification.Name](nsapplication/willresignactivenotification.md)
+- [class let willFinishLaunchingNotification: NSNotification.Name](./willfinishlaunchingnotification.md)
+  Posted at the start of the [`finishLaunching()`](./finishlaunching%28%29.md) method to indicate that the app has completed its initialization process and is about to finish launching.
+- [class let willHideNotification: NSNotification.Name](./willhidenotification.md)
+  Posted at the start of the [`hide(_:)`](./hide%28_%29.md) method to indicate that the app is about to be hidden.
+- [class let willResignActiveNotification: NSNotification.Name](./willresignactivenotification.md)
   Posted immediately before the app gives up its active status to another app.
-- [class let willTerminateNotification: NSNotification.Name](nsapplication/willterminatenotification.md)
+- [class let willTerminateNotification: NSNotification.Name](./willterminatenotification.md)
   Sends a notification to terminate the app.
-- [class let willUnhideNotification: NSNotification.Name](nsapplication/willunhidenotification.md)
-  Posted at the start of the [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md) method to indicate that the app is about to become visible.
-- [class let willUpdateNotification: NSNotification.Name](nsapplication/willupdatenotification.md)
-  Posted at the start of the [`updateWindows()`](nsapplication/updatewindows().md) method to indicate that the app is about to update its windows.
-- [class let didFinishRestoringWindowsNotification: NSNotification.Name](nsapplication/didfinishrestoringwindowsnotification.md)
+- [class let willUnhideNotification: NSNotification.Name](./willunhidenotification.md)
+  Posted at the start of the [`unhideWithoutActivation()`](./unhidewithoutactivation%28%29.md) method to indicate that the app is about to become visible.
+- [class let willUpdateNotification: NSNotification.Name](./willupdatenotification.md)
+  Posted at the start of the [`updateWindows()`](./updatewindows%28%29.md) method to indicate that the app is about to update its windows.
+- [class let didFinishRestoringWindowsNotification: NSNotification.Name](./didfinishrestoringwindowsnotification.md)
   Posted when the app has finished restoring windows.
-- [class let didChangeOcclusionStateNotification: NSNotification.Name](nsapplication/didchangeocclusionstatenotification.md)
+- [class let didChangeOcclusionStateNotification: NSNotification.Name](./didchangeocclusionstatenotification.md)
   Posted when the app’s occlusion state changes.
 
 

@@ -1,7 +1,8 @@
 # setpointRaiseLower(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setpointRaiseLower(with params: MTRThermostatClusterSetpointRaiseLowerParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setpointRaiseLower(with params: MTRThermostatClusterSetpointRaiseLowerParams) async throws
+```
+
+```objc
+- (void) setpointRaiseLowerWithParams:(MTRThermostatClusterSetpointRaiseLowerParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

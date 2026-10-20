@@ -1,7 +1,8 @@
 # save(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves a specific record zone.
 
@@ -11,7 +12,7 @@ Saves a specific record zone.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,7 +29,7 @@ The saved record zone (as it appears on the server).
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 
-For information on a more convenient way to save record zones, see [`modifyRecordZones(saving:deleting:)`](ckdatabase/modifyrecordzones(saving:deleting:).md).
+For information on a more convenient way to save record zones, see [`modifyRecordZones(saving:deleting:)`](./modifyrecordzones%28saving,deleting%29.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # PhysicsBodyMode.kinematic
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user controls body movement.
 
@@ -11,7 +12,7 @@ The user controls body movement.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ case kinematic
 
 ## See Also
 
-- [PhysicsBodyMode.static](physicsbodymode/static.md)
+### Setting the physics body mode
+- [PhysicsBodyMode.static](./static.md)
   The body never moves.
-- [PhysicsBodyMode.dynamic](physicsbodymode/dynamic.md)
+- [PhysicsBodyMode.dynamic](./dynamic.md)
   Forces and collisions control body movement.
 
 

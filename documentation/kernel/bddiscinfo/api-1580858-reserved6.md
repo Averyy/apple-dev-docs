@@ -1,14 +1,15 @@
 # reserved6
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 UInt8 reserved6[22];
 ```
 

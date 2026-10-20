@@ -1,17 +1,22 @@
 # viewWithTag(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view’s nearest descendant (including itself) with a specific tag, or `nil` if no subview has that tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func viewWithTag(_ tag: Int) -> NSView?
+```
+
+```objc
+- (NSView *) viewWithTag:(NSInteger) tag;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func viewWithTag(_ tag: Int) -> NSView?
 
 ## See Also
 
-- [var tag: Int](nsview/tag.md)
+### Identifying Views by Tag
+- [var tag: Int](./tag.md)
   The view’s tag, which is an integer that you use to identify the view within your app.
 
 

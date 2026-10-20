@@ -2,18 +2,19 @@
 
 **Framework**: SceneKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The OpenGL rendering context that SceneKit uses for rendering the scene.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -21,11 +22,15 @@ The OpenGL rendering context that SceneKit uses for rendering the scene.
 var context: UnsafeMutableRawPointer? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) void * context;
+```
+
 #### Discussion
 
-In macOS, the value of this property is a Core OpenGL [`cglContextObj`](https://developer.apple.com/documentation/appkit/nsopenglcontext/cglcontextobj) object.
+In macOS, the value of this property is a Core OpenGL [`cglContextObj`](../../AppKit/nsopenglcontext/cglcontextobj.md) object.
 
-In iOS, the value of this property is an [`EAGLContext`](https://developer.apple.com/documentation/opengles/eaglcontext) object.
+In iOS, the value of this property is an [`EAGLContext`](../../OpenGLES/eaglcontext.md) object.
 
 
 ---

@@ -1,7 +1,8 @@
 # loadsSubresources
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the webpage loads all of its subresources in addition to the main resource.
 

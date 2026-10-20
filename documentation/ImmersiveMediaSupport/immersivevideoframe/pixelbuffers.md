@@ -1,7 +1,8 @@
 # pixelBuffers
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of pixel buffers associated with this immersive frame.
 

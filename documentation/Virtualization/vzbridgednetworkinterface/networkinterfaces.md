@@ -1,7 +1,8 @@
 # networkInterfaces
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The bridged network interfaces that you may use in your virtual machine.
 
@@ -12,6 +13,10 @@ The bridged network interfaces that you may use in your virtual machine.
 
 ```swift
 class var networkInterfaces: [VZBridgedNetworkInterface] { get }
+```
+
+```objc
+@property (class, copy, readonly) NSArray<VZBridgedNetworkInterface *> * networkInterfaces;
 ```
 
 #### Discussion

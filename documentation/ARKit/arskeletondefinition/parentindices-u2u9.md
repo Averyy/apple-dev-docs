@@ -1,7 +1,8 @@
 # parentIndices
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent index for each joint.
 
@@ -22,11 +23,12 @@ This property may be used to identify the hierarchical dependency between joints
 
 ## See Also
 
-- [var jointNames: [String]](arskeletondefinition/jointnames.md)
+### Getting Joint Information
+- [var jointNames: [String]](./jointnames.md)
   A collection of unique joint names.
-- [var jointCount: Int](arskeletondefinition/jointcount.md)
+- [var jointCount: Int](./jointcount.md)
   The skeleton’s total number of joints.
-- [func index(for: ARSkeleton.JointName) -> Int](arskeletondefinition/index(for:).md)
+- [func index(for: ARSkeleton.JointName) -> Int](./index%28for%29.md)
   Returns the index for a given joint identifier.
 
 

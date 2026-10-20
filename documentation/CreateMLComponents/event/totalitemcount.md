@@ -1,7 +1,8 @@
 # totalItemCount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of items being processed.
 
@@ -22,11 +23,12 @@ var totalItemCount: Int?
 
 ## See Also
 
-- [var itemCount: Int](event/itemcount.md)
+### Getting the properties
+- [var itemCount: Int](./itemcount.md)
   The number of items processed so far.
-- [var metrics: [MetricsKey : any Sendable]](event/metrics.md)
+- [var metrics: [MetricsKey : any Sendable]](./metrics.md)
   A dictionary of custom metrics values.
-- [var origin: String](event/origin.md)
+- [var origin: String](./origin.md)
   A description of the event’s origin.
 
 

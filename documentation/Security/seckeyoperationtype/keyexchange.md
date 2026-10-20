@@ -1,7 +1,8 @@
 # SecKeyOperationType.keyExchange
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case keyExchange
+```
+
+```c
+kSecKeyOperationTypeKeyExchange
 ```
 
 

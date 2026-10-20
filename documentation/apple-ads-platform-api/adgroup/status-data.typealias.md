@@ -1,7 +1,8 @@
 # AdGroup.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving status for an ad group.
 
@@ -10,13 +11,18 @@ Advertiser-configurable serving status for an ad group.
 
 ## Declaration
 
-```swift
+```
 string AdGroup.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: The ad group is active and eligible to serve ads.
+- `PAUSED`: The ad group is paused and will not serve ads.
+
 #### Discussion
 
-This field directly controls auction eligibility for the ad group, independent of the system-computed [`AdGroup.SystemStatus`](adgroup/systemstatus-data.typealias.md).
+This field directly controls auction eligibility for the ad group, independent of the system-computed [`AdGroup.SystemStatus`](./systemstatus-data.typealias.md).
 
 ##### Example
 
@@ -26,7 +32,7 @@ This field directly controls auction eligibility for the ad group, independent o
 }
 ```
 
-See [`AdGroupStatus`](adgroupstatus.md) for additional context.
+See [`AdGroupStatus`](../adgroupstatus.md) for additional context.
 
 
 ---

@@ -1,7 +1,8 @@
 # allowsCloudEncryption
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to encrypt the attribute’s value.
 
@@ -20,13 +21,17 @@ A Boolean value that determines whether to encrypt the attribute’s value.
 var allowsCloudEncryption: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsCloudEncryption;
+```
+
 ## Mentions
 
-- [Configuring Attributes](configuring-attributes.md)
+- [Configuring Attributes](../configuring-attributes.md)
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to store the attribute’s value in an encrypted form in iCloud. Only use this property with new attributes. Core Data doesn’t support encrypting attributes that already exist in your CloudKit schema, or attributes that represent relationships between entities.
+Set this property to [`true`](../../Swift/true.md) to store the attribute’s value in an encrypted form in iCloud. Only use this property with new attributes. Core Data doesn’t support encrypting attributes that already exist in your CloudKit schema, or attributes that represent relationships between entities.
 
 You can also set this property using the Allow Cloud Encryption attribute in the Attributes inspector of the Core Data model editor.
 
@@ -34,13 +39,14 @@ You can also set this property using the Allow Cloud Encryption attribute in the
 
 ## See Also
 
-- [var allowsExternalBinaryDataStorage: Bool](nsattributedescription/allowsexternalbinarydatastorage.md)
+### Configuring the behavior
+- [var allowsExternalBinaryDataStorage: Bool](./allowsexternalbinarydatastorage.md)
   A Boolean value that indicates whether the attribute allows external binary storage.
-- [var defaultValue: Any?](nsattributedescription/defaultvalue.md)
+- [var defaultValue: Any?](./defaultvalue.md)
   The default value of the attribute.
-- [var preservesValueInHistoryOnDeletion: Bool](nsattributedescription/preservesvalueinhistoryondeletion.md)
+- [var preservesValueInHistoryOnDeletion: Bool](./preservesvalueinhistoryondeletion.md)
   A Boolean value that indicates whether the attribute records its value in the persistent history transaction for a managed object’s deletion.
-- [var valueTransformerName: String?](nsattributedescription/valuetransformername.md)
+- [var valueTransformerName: String?](./valuetransformername.md)
   The name of the transformer to use for the attribute value.
 
 

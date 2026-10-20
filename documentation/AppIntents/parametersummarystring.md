@@ -1,7 +1,8 @@
 # ParameterSummaryString
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A human-readable string that interpolates parameter key paths to provide user-configurable placeholders in the Shortcuts app.
 
@@ -11,7 +12,7 @@ A human-readable string that interpolates parameter key paths to provide user-co
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,29 +24,30 @@ struct ParameterSummaryString<Intent> where Intent : AppIntent
 ## Topics
 
 ### Creating the summary string
-- [init(String)](parametersummarystring/init(_:).md)
+- [init(String)](./parametersummarystring/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../Swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 
-- [protocol ParameterSummary](parametersummary.md)
+### Shortcuts support
+- [protocol ParameterSummary](./parametersummary.md)
   An interface for defining the visual representation of an app intent’s parameters.
-- [struct IntentParameterSummary](intentparametersummary.md)
+- [struct IntentParameterSummary](./intentparametersummary.md)
   A type that describes the user interface configuration of an app intent’s parameters.
-- [struct ParameterSummaryWhenCondition](parametersummarywhencondition.md)
+- [struct ParameterSummaryWhenCondition](./parametersummarywhencondition.md)
   A type that represents a conditional statement in a parameter summary.
-- [struct ParameterSummarySwitchCondition](parametersummaryswitchcondition.md)
+- [struct ParameterSummarySwitchCondition](./parametersummaryswitchcondition.md)
   A type that represents a switch statement in a parameter summary.
-- [struct ParameterSummaryCaseCondition](parametersummarycasecondition.md)
+- [struct ParameterSummaryCaseCondition](./parametersummarycasecondition.md)
   A type that represents an individual case of a switch statement in a parameter summary.
-- [struct ParameterSummaryDefaultCaseCondition](parametersummarydefaultcasecondition.md)
+- [struct ParameterSummaryDefaultCaseCondition](./parametersummarydefaultcasecondition.md)
   A type that represents the default case of a switch statement in a parameter summary.
 
 

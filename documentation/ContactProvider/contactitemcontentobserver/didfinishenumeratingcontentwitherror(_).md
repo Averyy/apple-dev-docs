@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Finishes the content enumeration with an error, indicating failure, to the observer.
@@ -18,15 +19,16 @@ func didFinishEnumeratingContentWithError(_: any Error)
 
 #### Discussion
 
-Use [`ContactProviderError.pageExpired`](contactprovidererror/pageexpired.md) to restart the content enumeration.
+Use [`ContactProviderError.pageExpired`](../contactprovidererror/pageexpired.md) to restart the content enumeration.
 
 ## See Also
 
-- [func didFinishEnumeratingContent(upTo: Data)](contactitemcontentobserver/didfinishenumeratingcontent(upto:).md)
+### Ending enumeration
+- [func didFinishEnumeratingContent(upTo: Data)](./didfinishenumeratingcontent%28upto%29.md)
   Finishes the content enumeration to the observer.
-- [func didFinishEnumeratingPage(upTo: ContactItemPage)](contactitemcontentobserver/didfinishenumeratingpage(upto:).md)
+- [func didFinishEnumeratingPage(upTo: ContactItemPage)](./didfinishenumeratingpage%28upto%29.md)
   Marks a page of items as completed.
-- [struct ContactItemPage](contactitempage.md)
+- [struct ContactItemPage](../contactitempage.md)
   A fixed offset into enumerating all contact items.
 
 

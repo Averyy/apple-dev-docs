@@ -1,18 +1,19 @@
 # DeviceStatusResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DeviceStatusResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object DeviceStatusResponse.Devices](devicestatusresponse/devices-data.dictionary.md)
+- [object DeviceStatusResponse.Devices](./devicestatusresponse/devices-data.dictionary.md)
 
 ## Properties
 
@@ -20,7 +21,8 @@ object DeviceStatusResponse
 
 ## See Also
 
-- [object DeviceStatusResponse.Devices](devicestatusresponse/devices-data.dictionary.md)
+### Response
+- [object DeviceStatusResponse.Devices](./devicestatusresponse/devices-data.dictionary.md)
 
 
 ---

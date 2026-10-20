@@ -5,17 +5,17 @@
 ## Topics
 
 ### Constants
-- [var controlPanelFolderIconResource: Int](controlpanelfoldericonresource.md)
-- [var dropFolderIconResource: Int](dropfoldericonresource.md)
-- [var extensionsFolderIconResource: Int](extensionsfoldericonresource.md)
-- [var fontsFolderIconResource: Int](fontsfoldericonresource.md)
-- [var fullTrashIconResource: Int](fulltrashiconresource.md)
-- [var mountedFolderIconResource: Int](mountedfoldericonresource.md)
-- [var ownedFolderIconResource: Int](ownedfoldericonresource.md)
-- [var preferencesFolderIconResource: Int](preferencesfoldericonresource.md)
-- [var printMonitorFolderIconResource: Int](printmonitorfoldericonresource.md)
-- [var sharedFolderIconResource: Int](sharedfoldericonresource.md)
-- [var startupFolderIconResource: Int](startupfoldericonresource.md)
+- [var controlPanelFolderIconResource: Int](../../controlpanelfoldericonresource.md)
+- [var dropFolderIconResource: Int](../../dropfoldericonresource.md)
+- [var extensionsFolderIconResource: Int](../../extensionsfoldericonresource.md)
+- [var fontsFolderIconResource: Int](../../fontsfoldericonresource.md)
+- [var fullTrashIconResource: Int](../../fulltrashiconresource.md)
+- [var mountedFolderIconResource: Int](../../mountedfoldericonresource.md)
+- [var ownedFolderIconResource: Int](../../ownedfoldericonresource.md)
+- [var preferencesFolderIconResource: Int](../../preferencesfoldericonresource.md)
+- [var printMonitorFolderIconResource: Int](../../printmonitorfoldericonresource.md)
+- [var sharedFolderIconResource: Int](../../sharedfoldericonresource.md)
+- [var startupFolderIconResource: Int](../../startupfoldericonresource.md)
 
 
 ---

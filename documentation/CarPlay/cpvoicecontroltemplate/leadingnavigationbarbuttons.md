@@ -1,7 +1,8 @@
 # leadingNavigationBarButtons
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of bar buttons to be displayed on the leading side of the navigation bar.
 
@@ -14,6 +15,10 @@ An array of bar buttons to be displayed on the leading side of the navigation ba
 
 ```swift
 var leadingNavigationBarButtons: [CPBarButton] { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSArray<CPBarButton *> * leadingNavigationBarButtons;
 ```
 
 #### Discussion

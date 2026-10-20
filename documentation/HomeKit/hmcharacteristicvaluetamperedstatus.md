@@ -1,7 +1,8 @@
 # HMCharacteristicValueTamperedStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the tampering status of an accessory.
 
@@ -19,25 +20,29 @@ Possible values for the tampering status of an accessory.
 enum HMCharacteristicValueTamperedStatus
 ```
 
+```c
+enum HMCharacteristicValueTamperedStatus : NSInteger;
+```
+
 ## Topics
 
 ### Tampered Status
-- [HMCharacteristicValueTamperedStatus.none](hmcharacteristicvaluetamperedstatus/none.md)
+- [HMCharacteristicValueTamperedStatus.none](./hmcharacteristicvaluetamperedstatus/none.md)
   The accessory has not been tampered with.
-- [HMCharacteristicValueTamperedStatus.tampered](hmcharacteristicvaluetamperedstatus/tampered.md)
+- [HMCharacteristicValueTamperedStatus.tampered](./hmcharacteristicvaluetamperedstatus/tampered.md)
   The accessory has been tampered with.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetamperedstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetamperedstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

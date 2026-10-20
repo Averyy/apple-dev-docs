@@ -1,7 +1,8 @@
 # reload
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Reloads the app.
 
@@ -10,7 +11,7 @@ Reloads the app.
 
 ## Declaration
 
-```swift
+```
 void reload(
     in Object options, 
     in optional Object reloadData

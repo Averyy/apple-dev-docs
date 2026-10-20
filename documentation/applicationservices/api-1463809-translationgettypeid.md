@@ -1,7 +1,8 @@
 # TranslationGetTypeID()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func TranslationGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID TranslationGetTypeID(void);
 ```
 
 

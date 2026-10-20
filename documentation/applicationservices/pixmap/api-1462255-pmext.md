@@ -1,7 +1,8 @@
 # pmExt
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 `Handle` to a PixMapExtension structure. Set to `NIL` if there is no extension.
 
@@ -12,6 +13,10 @@
 
 ```swift
 var pmExt: UnsafeMutableRawPointer!
+```
+
+```c
+void *pmExt;
 ```
 
 

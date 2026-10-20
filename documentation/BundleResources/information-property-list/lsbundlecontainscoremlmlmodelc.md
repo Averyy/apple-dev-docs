@@ -1,7 +1,8 @@
 # LSBundleContainsCoreMLmlmodelc
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the app contains a Core ML model to optimize loading the model.
 
@@ -13,9 +14,10 @@ A Boolean value indicating whether the app contains a Core ML model to optimize 
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `LSBundleContainsCoreMLmlmodelc` (Bundle contains CoreML models)
+- **Type**: boolean
 
 
 ---

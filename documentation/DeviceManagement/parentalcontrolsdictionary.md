@@ -1,7 +1,8 @@
 # ParentalControlsDictionary
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures parental control dictionary restrictions.
 
@@ -10,7 +11,7 @@ The payload that configures parental control dictionary restrictions.
 
 ## Declaration
 
-```swift
+```
 object ParentalControlsDictionary
 ```
 
@@ -18,7 +19,7 @@ object ParentalControlsDictionary
 
 Specify `com.apple.Dictionary` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.Dictionary` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -72,13 +73,14 @@ Specify `com.apple.Dictionary` as the payload type.
 
 ## See Also
 
-- [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)
+### Parental controls
+- [object ParentalControlsApplicationRestrictions](./parentalcontrolsapplicationrestrictions.md)
   The payload that configures parental controls for apps.
-- [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)
+- [object ParentalControlsContentFilter](./parentalcontrolscontentfilter.md)
   The payload that configures the parental control web content filters.
-- [object ParentalControlsGameCenter](parentalcontrolsgamecenter.md)
+- [object ParentalControlsGameCenter](./parentalcontrolsgamecenter.md)
   The payload that configures Game Center parental controls.
-- [object ParentalControlsTimeLimits](parentalcontrolstimelimits.md)
+- [object ParentalControlsTimeLimits](./parentalcontrolstimelimits.md)
   The payload that configures parental control time limits.
 
 

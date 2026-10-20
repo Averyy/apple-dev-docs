@@ -1,7 +1,8 @@
 # ImageAnalysisOverlayView.SubjectUnavailable
 
 **Framework**: VisionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error conditions that can occur during subject analysis.
 
@@ -16,22 +17,22 @@ enum SubjectUnavailable
 
 #### Overview
 
-This enumeration contains a failure [`ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable`](imageanalysisoverlayview/subjectunavailable/imageunavailable.md) that can occur when the [`ImageAnalysisOverlayView.Subject`](imageanalysisoverlayview/subject.md) property [`image`](imageanalysisoverlayview/subject/image.md) fails to produce a result.
+This enumeration contains a failure [`ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable`](./subjectunavailable/imageunavailable.md) that can occur when the [`ImageAnalysisOverlayView.Subject`](./subject.md) property [`image`](./subject/image.md) fails to produce a result.
 
 ## Topics
 
 ### Enumeration Cases
-- [ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable](imageanalysisoverlayview/subjectunavailable/imageunavailable.md)
+- [ImageAnalysisOverlayView.SubjectUnavailable.imageUnavailable](./subjectunavailable/imageunavailable.md)
   An error that indicates the subject fails to produce an image.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

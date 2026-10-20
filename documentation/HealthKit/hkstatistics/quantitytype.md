@@ -1,7 +1,8 @@
 # quantityType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quantity type of the samples used to calculate these statistics.
 
@@ -19,17 +20,22 @@ The quantity type of the samples used to calculate these statistics.
 var quantityType: HKQuantityType { get }
 ```
 
+```objc
+@property (strong, readonly) HKQuantityType * quantityType;
+```
+
 #### Discussion
 
 The quantity type from the statistics query used to generate these statistics.
 
 ## See Also
 
-- [var startDate: Date](hkstatistics/startdate.md)
+### Getting Property Data
+- [var startDate: Date](./startdate.md)
   The start of the time period included in these statistics.
-- [var endDate: Date](hkstatistics/enddate.md)
+- [var endDate: Date](./enddate.md)
   The end of the time period included in these statistics.
-- [var sources: [HKSource]?](hkstatistics/sources.md)
+- [var sources: [HKSource]?](./sources.md)
   An array containing all the sources contributing to these statistics.
 
 

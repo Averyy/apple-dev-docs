@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The auxiliary planes of this tensor.
@@ -20,9 +21,13 @@ The auxiliary planes of this tensor.
 var auxiliaryPlanes: [any MTLTensorAuxiliaryPlane] { get }
 ```
 
+```objc
+@property (readonly) NSArray<id<MTLTensorAuxiliaryPlane>> * auxiliaryPlanes;
+```
+
 #### Discussion
 
-Returns an array of [`MTLTensorAuxiliaryPlane`](mtltensorauxiliaryplane.md) objects describing each auxiliary plane configured on this tensor. For single-plane tensors, this array is empty.
+Returns an array of [`MTLTensorAuxiliaryPlane`](../mtltensorauxiliaryplane.md) objects describing each auxiliary plane configured on this tensor. For single-plane tensors, this array is empty.
 
 
 ---

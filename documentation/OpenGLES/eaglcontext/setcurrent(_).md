@@ -1,15 +1,18 @@
 # setCurrent(_:)
 
 **Framework**: OpenGL ES  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Makes the specified context the current rendering context for the calling thread.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 2.0+
-- tvOS 9.0+
+- iOS 2.0+ - Deprecated in 12.0
+- iPadOS 2.0+ - Deprecated in 12.0
+- Mac Catalyst 2.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,9 +20,13 @@ Makes the specified context the current rendering context for the calling thread
 class func setCurrent(_ context: EAGLContext?) -> Bool
 ```
 
+```objc
++ (BOOL) setCurrentContext:(EAGLContext *) context;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If an error occurred, the rendering context for the current thread remains unchanged.
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md). If an error occurred, the rendering context for the current thread remains unchanged.
 
 #### Discussion
 

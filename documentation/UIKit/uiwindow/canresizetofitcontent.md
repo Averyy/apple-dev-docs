@@ -1,7 +1,8 @@
 # canResizeToFitContent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window’s constraint-based content determines its size.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the window’s constraint-based content d
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the window’s constraint-based content d
 var canResizeToFitContent: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, setter=setCanResizeToFitContent:) BOOL canResizeToFitContent;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the window to maintain a fixed size. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) allows the system to perform constraints-based window sizing, which updates the window’s size to match the space needed by its content. Window-size changes occur only when the app runs on macOS.
+The default value of this property is [`false`](../../Swift/false.md), which causes the window to maintain a fixed size. Setting this property to [`true`](../../Swift/true.md) allows the system to perform constraints-based window sizing, which updates the window’s size to match the space needed by its content. Window-size changes occur only when the app runs on macOS.
 
 ## See Also
 
-- [var rootViewController: UIViewController?](uiwindow/rootviewcontroller.md)
+### Configuring the window
+- [var rootViewController: UIViewController?](./rootviewcontroller.md)
   The root view controller for the window.
-- [var windowLevel: UIWindow.Level](uiwindow/windowlevel.md)
+- [var windowLevel: UIWindow.Level](./windowlevel.md)
   The position of the window in the z-axis.
-- [UIWindow.Level](uiwindow/level.md)
+- [UIWindow.Level](./level.md)
   The positioning of windows relative to each other.
-- [var screen: UIScreen](uiwindow/screen.md)
+- [var screen: UIScreen](./screen.md)
   The screen to display the window on.
 
 

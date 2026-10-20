@@ -1,7 +1,8 @@
 # annotation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotation that someone selected or deselected.
 
@@ -10,7 +11,7 @@ The annotation that someone selected or deselected.
 
 ## Declaration
 
-```swift
+```
 readonly annotation: Annotation;
 ```
 

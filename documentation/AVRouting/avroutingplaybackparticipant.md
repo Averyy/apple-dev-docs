@@ -1,7 +1,8 @@
 # AVRoutingPlaybackParticipant
 
 **Framework**: AVRouting  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for objects that participate in playback routing arbitration.
 
@@ -17,13 +18,18 @@ A protocol for objects that participate in playback routing arbitration.
 protocol AVRoutingPlaybackParticipant
 ```
 
+```objc
+@protocol AVRoutingPlaybackParticipant
+```
+
 #### Overview
 
 Classes conform to this protocol if they participate in media playback routing arbitration for managing preferences such as priority on restricted playback routes.
 
 ## See Also
 
-- [class AVRoutingPlaybackArbiter](avroutingplaybackarbiter.md)
+### Playback arbitration
+- [class AVRoutingPlaybackArbiter](./avroutingplaybackarbiter.md)
   An object that manages playback routing preferences.
 
 

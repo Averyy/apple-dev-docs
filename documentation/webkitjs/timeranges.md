@@ -1,7 +1,8 @@
 # TimeRanges
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface TimeRanges
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](timeranges/1632772-length.md)
+- [length](./timeranges/api-1632772-length.md)
 ### Instance Methods
-- [end](timeranges/1634095-end.md)
-- [start](timeranges/1632359-start.md)
+- [end](./timeranges/api-1634095-end.md)
+- [start](./timeranges/api-1632359-start.md)
 
 
 ---

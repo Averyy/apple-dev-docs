@@ -1,7 +1,8 @@
 # QLNeedsToBeRunInMainThread
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether a Quick Look app’s generator can be run in threads other than the main thread.
 
@@ -11,21 +12,25 @@ A Boolean value indicating whether a Quick Look app’s generator can be run in 
 - macOS 10.0+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `QLNeedsToBeRunInMainThread` (Quick Look needs to be run in main thread)
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `YES`
 
 ## See Also
 
-- [QLPreviewHeight](information-property-list/qlpreviewheight.md)
+### QuickLook
+- [QLPreviewHeight](./qlpreviewheight.md)
   A hint at the height, in points, of a Quick Look app’s previews.
-- [QLPreviewWidth](information-property-list/qlpreviewwidth.md)
+- [QLPreviewWidth](./qlpreviewwidth.md)
   A hint at the width, in points, of a Quick Look app’s previews.
-- [QLSupportsConcurrentRequests](information-property-list/qlsupportsconcurrentrequests.md)
+- [QLSupportsConcurrentRequests](./qlsupportsconcurrentrequests.md)
   A Boolean value indicating whether a Quick Look app’s  generator can handle concurrent thumbnail and preview requests.
-- [QLThumbnailMinimumSize](information-property-list/qlthumbnailminimumsize.md)
+- [QLThumbnailMinimumSize](./qlthumbnailminimumsize.md)
   The minimum size, in points, along one dimension of thumbnails for a Quick Look app’s generator.
 
 

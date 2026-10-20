@@ -1,7 +1,8 @@
 # init(exporting:importing:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transfer representation that’s imported and exported by proxy through another transfer representation.
 

@@ -1,7 +1,8 @@
 # SMSMessage
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the data of an SMS message.
 
@@ -17,38 +18,39 @@ struct SMSMessage
 ## Topics
 
 ### Creating an SMS message
-- [init(cellularServiceID: CellularServiceID, handle: SMSHandle, messageID: SMSMessageID, content: SMSContent)](smsmessage/init(cellularserviceid:handle:messageid:content:).md)
+- [init(cellularServiceID: CellularServiceID, handle: SMSHandle, messageID: SMSMessageID, content: SMSContent)](./smsmessage/init%28cellularserviceid,handle,messageid,content%29.md)
   Initializes an SMS Message for sending to a receipient.
 ### Accessing message content
-- [let content: SMSContent](smsmessage/content.md)
+- [let content: SMSContent](./smsmessage/content.md)
   The textual content of the message.
-- [struct SMSContent](smscontent.md)
+- [struct SMSContent](./smscontent.md)
   A structure that holds the content of an SMS message.
 ### Accessing message properties
-- [let cellularServiceID: CellularServiceID](smsmessage/cellularserviceid.md)
+- [let cellularServiceID: CellularServiceID](./smsmessage/cellularserviceid.md)
   The cellular service identifier associated with the message.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](./cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let handle: SMSHandle](smsmessage/handle.md)
+- [let handle: SMSHandle](./smsmessage/handle.md)
   A handle that represents the originator of an incoming message or the destination of an outgoing message.
-- [struct SMSHandle](smshandle.md)
+- [struct SMSHandle](./smshandle.md)
   A structure that represents an SMS address.
-- [let messageID: SMSMessageID](smsmessage/messageid.md)
+- [let messageID: SMSMessageID](./smsmessage/messageid.md)
   A message identifier for the message.
-- [struct SMSMessageID](smsmessageid.md)
+- [struct SMSMessageID](./smsmessageid.md)
   A structure that represents an SMS message identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sendMessage(SMSMessage) async throws](smsservice/sendmessage(_:).md)
+### Sending messages
+- [func sendMessage(SMSMessage) async throws](./smsservice/sendmessage%28_%29.md)
   Sends an SMS message to the given destination.
 
 

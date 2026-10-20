@@ -1,7 +1,8 @@
 # kSecPropertyTypeString
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string.
 
@@ -12,6 +13,10 @@ A key whose value is a string.
 
 ```swift
 let kSecPropertyTypeString: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeString;
 ```
 
 

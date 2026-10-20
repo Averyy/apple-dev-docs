@@ -1,7 +1,8 @@
 # NSTextInputContext.KeyboardSelectionDidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,13 +16,13 @@ struct KeyboardSelectionDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](nstextinputcontext/keyboardselectiondidchangemessage/init.md)
+- [init()](./keyboardselectiondidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # EvaluationError.missingTranscript(evaluatorType:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An evaluator received a subject without the required transcript.
 
@@ -22,7 +23,7 @@ case missingTranscript(evaluatorType: String)
 
 #### Discussion
 
-This occurs when using [`ToolCallEvaluator`](toolcallevaluator.md) with a [`ModelSubject`](modelsubject.md) that has a `nil` transcript. Pass `session.transcript.structuredTranscript` when creating the `ModelSubject`.
+This occurs when using [`ToolCallEvaluator`](../toolcallevaluator.md) with a [`ModelSubject`](../modelsubject.md) that has a `nil` transcript. Pass `session.transcript.structuredTranscript` when creating the `ModelSubject`.
 
 ## Parameters
 

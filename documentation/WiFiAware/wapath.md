@@ -1,7 +1,8 @@
 # WAPath
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the current Wi-Fi Aware path.
 
@@ -19,30 +20,31 @@ struct WAPath
 ## Topics
 
 ### Getting a connection endpoint
-- [let endpoint: WAEndpoint](wapath/endpoint.md)
+- [let endpoint: WAEndpoint](./wapath/endpoint.md)
   The Wi-Fi Aware endpoint that’s connected.
 ### Getting a current performance
-- [let performance: WAPerformanceReport](wapath/performance.md)
+- [let performance: WAPerformanceReport](./wapath/performance.md)
   The current performance metrics for the Wi-Fi Aware data path.
 ### Getting path metrics
-- [let durationActive: Duration](wapath/durationactive.md)
+- [let durationActive: Duration](./wapath/durationactive.md)
   A property that indicates a cumulative duration data path is connected on this Wi-Fi Aware path.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NWPath](../network/nwpath.md)
+### Connection performance
+- [struct NWPath](../Network/nwpath.md)
   An object that contains information about the properties of the network that a connection uses, or that are available to your app.
-- [enum WAPerformanceMode](waperformancemode.md)
+- [enum WAPerformanceMode](./waperformancemode.md)
   The performance mode that indicates what performance criterion to prioritize.
-- [enum WAAccessCategory](waaccesscategory.md)
+- [enum WAAccessCategory](./waaccesscategory.md)
   The underling quality-of-service (QoS) the Wi-Fi layer uses to transmit data packets from a connection over the air.
-- [struct WAPerformanceReport](waperformancereport.md)
+- [struct WAPerformanceReport](./waperformancereport.md)
   The current performance state of the data path.
 
 

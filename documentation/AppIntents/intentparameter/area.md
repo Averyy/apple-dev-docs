@@ -1,7 +1,8 @@
 # IntentParameter.Area
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,39 +19,42 @@
 enum Area
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitArea>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Area.acres](intentparameter/area/acres.md)
-- [IntentParameter.Area.ares](intentparameter/area/ares.md)
-- [IntentParameter.Area.hectares](intentparameter/area/hectares.md)
-- [IntentParameter.Area.squareCentimeters](intentparameter/area/squarecentimeters.md)
-- [IntentParameter.Area.squareFeet](intentparameter/area/squarefeet.md)
-- [IntentParameter.Area.squareInches](intentparameter/area/squareinches.md)
-- [IntentParameter.Area.squareKilometers](intentparameter/area/squarekilometers.md)
-- [IntentParameter.Area.squareMegameters](intentparameter/area/squaremegameters.md)
-- [IntentParameter.Area.squareMeters](intentparameter/area/squaremeters.md)
-- [IntentParameter.Area.squareMicrometers](intentparameter/area/squaremicrometers.md)
-- [IntentParameter.Area.squareMiles](intentparameter/area/squaremiles.md)
-- [IntentParameter.Area.squareMillimeters](intentparameter/area/squaremillimeters.md)
-- [IntentParameter.Area.squareNanometers](intentparameter/area/squarenanometers.md)
-- [IntentParameter.Area.squareYards](intentparameter/area/squareyards.md)
+- [IntentParameter.Area.acres](./area/acres.md)
+- [IntentParameter.Area.ares](./area/ares.md)
+- [IntentParameter.Area.hectares](./area/hectares.md)
+- [IntentParameter.Area.squareCentimeters](./area/squarecentimeters.md)
+- [IntentParameter.Area.squareFeet](./area/squarefeet.md)
+- [IntentParameter.Area.squareInches](./area/squareinches.md)
+- [IntentParameter.Area.squareKilometers](./area/squarekilometers.md)
+- [IntentParameter.Area.squareMegameters](./area/squaremegameters.md)
+- [IntentParameter.Area.squareMeters](./area/squaremeters.md)
+- [IntentParameter.Area.squareMicrometers](./area/squaremicrometers.md)
+- [IntentParameter.Area.squareMiles](./area/squaremiles.md)
+- [IntentParameter.Area.squareMillimeters](./area/squaremillimeters.md)
+- [IntentParameter.Area.squareNanometers](./area/squarenanometers.md)
+- [IntentParameter.Area.squareYards](./area/squareyards.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Area?](intentparameter/unit-42nhg.md)
-- [var defaultUnit: IntentParameter<Value>.Area?](intentparameter/defaultunit-9sm2x.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-38cqc.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-8xbaf.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Area?](./unit-42nhg.md)
+- [var defaultUnit: IntentParameter<Value>.Area?](./defaultunit-9sm2x.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-38cqc.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-8xbaf.md)
 
 
 ---

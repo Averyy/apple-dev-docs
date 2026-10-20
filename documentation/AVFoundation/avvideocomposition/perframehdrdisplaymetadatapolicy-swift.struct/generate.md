@@ -1,7 +1,8 @@
 # generate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A video composition may generate HDR metadata and attach it to the rendered frame.
 
@@ -18,13 +19,18 @@ A video composition may generate HDR metadata and attach it to the rendered fram
 static let generate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy
 ```
 
+```c
+extern AVVideoCompositionPerFrameHDRDisplayMetadataPolicy const AVVideoCompositionPerFrameHDRDisplayMetadataPolicyGenerate;
+```
+
 #### Discussion
 
 HDR metadata generation is influenced by the color space of the rendered frame, device, and HDR metadata format platform support. Any previously attached HDR metadata of the same metadata format is overwritten.
 
 ## See Also
 
-- [static let propagate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct/propagate.md)
+### Policies
+- [static let propagate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./propagate.md)
   A policy that passes HDR metadata through, if present on the composed frame.
 
 

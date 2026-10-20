@@ -1,7 +1,8 @@
 # bAltenateMode
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The index of the alternative mode.
 
@@ -10,15 +11,16 @@ The index of the alternative mode.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bAltenateMode;
 ```
 
 ## See Also
 
-- [iAlternateModeString](iousbdevicecapabilitybillboardaltconfig/1646376-ialternatemodestring.md)
+### Getting the Properties
+- [iAlternateModeString](./api-1646376-ialternatemodestring.md)
   The index of the string descriptor describing the protocol.
-- [wSVID](iousbdevicecapabilitybillboardaltconfig/1646383-wsvid.md)
+- [wSVID](./api-1646383-wsvid.md)
   The standard or vendor ID.
 
 

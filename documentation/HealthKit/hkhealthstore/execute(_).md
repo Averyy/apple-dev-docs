@@ -1,7 +1,8 @@
 # execute(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts executing the provided query.
 
@@ -19,27 +20,32 @@ Starts executing the provided query.
 func execute(_ query: HKQuery)
 ```
 
+```objc
+- (void) executeQuery:(HKQuery *) query;
+```
+
 ## Mentions
 
-- [Executing Activity Summary Queries](executing-activity-summary-queries.md)
-- [Executing Anchored Object Queries](executing-anchored-object-queries.md)
-- [Executing Observer Queries](executing-observer-queries.md)
-- [Executing Sample Queries](executing-sample-queries.md)
-- [Executing Source Queries](executing-source-queries.md)
-- [Executing Statistical Queries](executing-statistical-queries.md)
-- [Reading route data](reading-route-data.md)
+- [Executing Activity Summary Queries](../executing-activity-summary-queries.md)
+- [Executing Anchored Object Queries](../executing-anchored-object-queries.md)
+- [Executing Observer Queries](../executing-observer-queries.md)
+- [Executing Sample Queries](../executing-sample-queries.md)
+- [Executing Source Queries](../executing-source-queries.md)
+- [Executing Statistical Queries](../executing-statistical-queries.md)
+- [Reading route data](../reading-route-data.md)
 
 #### Discussion
 
-HealthKit executes queries asynchronously on a background queue. Most queries automatically stop after they have finished executing. However, long-running queries—such as observer queries and some statistics collection queries—continue to execute in the background. To stop long-running queries, call the [`stop(_:)`](hkhealthstore/stop(_:).md) method.
+HealthKit executes queries asynchronously on a background queue. Most queries automatically stop after they have finished executing. However, long-running queries—such as observer queries and some statistics collection queries—continue to execute in the background. To stop long-running queries, call the [`stop(_:)`](./stop%28_%29.md) method.
 
 ## Parameters
 
-- `query`: A concrete subclass of the [`HKQuery`](hkquery.md) class (any of the classes [`HKSampleQuery`](hksamplequery.md), [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), [`HKCorrelationQuery`](hkcorrelationquery.md), [`HKObserverQuery`](hkobserverquery.md), [`HKSourceQuery`](hksourcequery.md), [`HKStatisticsQuery`](hkstatisticsquery.md), or [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md)).
+- `query`: A concrete subclass of the [`HKQuery`](../hkquery.md) class (any of the classes [`HKSampleQuery`](../hksamplequery.md), [`HKAnchoredObjectQuery`](../hkanchoredobjectquery.md), [`HKCorrelationQuery`](../hkcorrelationquery.md), [`HKObserverQuery`](../hkobserverquery.md), [`HKSourceQuery`](../hksourcequery.md), [`HKStatisticsQuery`](../hkstatisticsquery.md), or [`HKStatisticsCollectionQuery`](../hkstatisticscollectionquery.md)).
 
 ## See Also
 
-- [func stop(HKQuery)](hkhealthstore/stop(_:).md)
+### Querying HealthKit data
+- [func stop(HKQuery)](./stop%28_%29.md)
   Stops a long-running query.
 
 

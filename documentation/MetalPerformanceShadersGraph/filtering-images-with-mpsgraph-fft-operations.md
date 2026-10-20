@@ -1,6 +1,8 @@
 # Filtering images with MPSGraph FFT operations
 
-**Framework**: Metal Performance Shaders Graph
+**Framework**: Metal Performance Shaders Graph  
+**Role**: Sample Code  
+**Download**: [FilteringImagesWithMPSGraphFFTOperations.zip](https://docs-assets.developer.apple.com/published/f90715c6ca32/FilteringImagesWithMPSGraphFFTOperations.zip)
 
 Filter an image with MPSGraph fast Fourier transforms using the convolutional theorem.
 
@@ -10,13 +12,14 @@ Filter an image with MPSGraph fast Fourier transforms using the convolutional th
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10050: [`Optimize machine learning for Metal apps`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10050).
+> **Note**: This sample code project is associated with WWDC23 session 10050: [Optimize machine learning for Metal apps](https://developer.apple.com/wwdc23/10050).
 
 ## See Also
 
-- [Adding custom functions to a shader graph](adding-custom-functions-to-a-shader-graph.md)
+### Essentials
+- [Adding custom functions to a shader graph](./adding-custom-functions-to-a-shader-graph.md)
   Run your own graph functions on the GPU by building the function programmatically.
-- [Training a neural network using MPSGraph](training-a-neural-network-using-mps-graph.md)
+- [Training a neural network using MPSGraph](./training-a-neural-network-using-mps-graph.md)
   Train a simple neural network digit classifier.
 
 

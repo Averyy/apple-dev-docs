@@ -1,14 +1,15 @@
 # if_start
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void if_start(ifnet_t ifp);
 ```
 

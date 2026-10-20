@@ -1,7 +1,8 @@
 # topOrigin
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -17,9 +18,10 @@ var topOrigin: String?
 
 ## See Also
 
-- [var challenge: Data](aspublickeycredentialclientdata-swift.struct/challenge.md)
-- [var crossOrigin: ASPublicKeyCredentialClientData.CrossOriginValue?](aspublickeycredentialclientdata-swift.struct/crossorigin.md)
-- [var origin: String](aspublickeycredentialclientdata-swift.struct/origin.md)
+### Instance Properties
+- [var challenge: Data](./challenge.md)
+- [var crossOrigin: ASPublicKeyCredentialClientData.CrossOriginValue?](./crossorigin.md)
+- [var origin: String](./origin.md)
 
 
 ---

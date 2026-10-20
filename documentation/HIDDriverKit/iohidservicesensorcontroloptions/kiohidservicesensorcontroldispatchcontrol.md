@@ -1,15 +1,16 @@
 # kIOHIDServiceSensorControlDispatchControl
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDServiceSensorControlDispatchControl
 ```
 

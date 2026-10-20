@@ -1,7 +1,8 @@
 # assetPacks
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset packs in this manifest that are available to download.
 
@@ -21,7 +22,8 @@ let assetPacks: Set<AssetPack>
 
 ## See Also
 
-- [func assetPack(withID: String) -> AssetPack?](assetpackmanifest/assetpack(withid:).md)
+### Getting asset packs
+- [func assetPack(withID: String) -> AssetPack?](./assetpack%28withid%29.md)
   Returns the asset pack in this manifest with the given ID.
 
 

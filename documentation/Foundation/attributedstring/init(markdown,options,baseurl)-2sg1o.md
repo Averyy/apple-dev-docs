@@ -1,7 +1,8 @@
 # init(markdown:options:baseURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string from Markdown-formatted data using the provided options.
 
@@ -22,19 +23,20 @@ init(markdown: Data, options: AttributedString.MarkdownParsingOptions = .init(),
 
 #### Discussion
 
-If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
+If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](../markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](../nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
 
 ## Parameters
 
-- `markdown`: The [`Data`](data.md) instance that contains the Markdown formatting.
+- `markdown`: The [`Data`](../data.md) instance that contains the Markdown formatting.
 - `options`: Options that affect how the initializer interprets formatting in the Markdown string. This parameter defaults to no options.
 - `baseURL`: The base URL to use when resolving Markdown URLs. The initializer treats URLs as being relative to this URL. If this value is `nil`, the initializer doesn’t resolve URLs. The default is `nil`.
 
 ## See Also
 
-- [init<S>(markdown: Data, including: S.Type, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](attributedstring/init(markdown:including:options:baseurl:)-4co46.md)
+### Initializing from Markdown Data
+- [init<S>(markdown: Data, including: S.Type, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28markdown,including,options,baseurl%29-4co46.md)
   Creates an attributed string from Markdown-formatted data using the provided options and attribute scope.
-- [init<S>(markdown: Data, including: KeyPath<AttributeScopes, S.Type>, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](attributedstring/init(markdown:including:options:baseurl:)-5nap7.md)
+- [init<S>(markdown: Data, including: KeyPath<AttributeScopes, S.Type>, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28markdown,including,options,baseurl%29-5nap7.md)
   Creates an attributed string from Markdown-formatted data using the provided options and attribute scope that a key path identifies.
 
 

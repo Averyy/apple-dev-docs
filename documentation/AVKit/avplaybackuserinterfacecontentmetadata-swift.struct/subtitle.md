@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Secondary descriptive text such as artist name or episode description.
 

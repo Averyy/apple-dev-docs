@@ -1,7 +1,8 @@
 # borderColor(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,12 +18,17 @@
 func borderColor(for rectEdge: CGRectEdge) -> UIColor?
 ```
 
+```objc
+- (UIColor *) borderColorForRectEdge:(CGRectEdge) rectEdge;
+```
+
 ## See Also
 
-- [var verticalAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.property.md)
-- [var backgroundColor: UIColor?](nstextblock/backgroundcolor.md)
-- [func setBorderColor(UIColor?)](nstextblock/setbordercolor(_:).md)
-- [func setBorderColor(UIColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
+### Configuring appearance
+- [var verticalAlignment: NSTextBlock.VerticalAlignment](./verticalalignment-swift.property.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
+- [func setBorderColor(UIColor?)](./setbordercolor%28_%29.md)
+- [func setBorderColor(UIColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
 
 
 ---

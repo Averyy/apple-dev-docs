@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options available to determine the kinds of animation effects.
 
@@ -21,38 +22,38 @@ enum EmphasisMotionType
 
 #### Overview
 
-The [`EmphasizeAction`](emphasizeaction.md) structure accepts this enumeration as an initializer argument.
+The [`EmphasizeAction`](../emphasizeaction.md) structure accepts this enumeration as an initializer argument.
 
 ## Topics
 
 ### Enumeration Cases
-- [EmphasizeAction.EmphasisMotionType.blink](emphasizeaction/emphasismotiontype/blink.md)
+- [EmphasizeAction.EmphasisMotionType.blink](./emphasismotiontype/blink.md)
   Scales vertically, mimicking an eye blinking.
-- [EmphasizeAction.EmphasisMotionType.bounce](emphasizeaction/emphasismotiontype/bounce.md)
+- [EmphasizeAction.EmphasisMotionType.bounce](./emphasismotiontype/bounce.md)
   Raises up and then drops, appearing to bounce on the ground.
-- [EmphasizeAction.EmphasisMotionType.flip](emphasizeaction/emphasismotiontype/flip.md)
+- [EmphasizeAction.EmphasisMotionType.flip](./emphasismotiontype/flip.md)
   Raises up and rotates around a central axis before returning to its original position.
-- [EmphasizeAction.EmphasisMotionType.float](emphasizeaction/emphasismotiontype/float.md)
+- [EmphasizeAction.EmphasisMotionType.float](./emphasismotiontype/float.md)
   Raises up and levitates for a moment before returning to its original position.
-- [EmphasizeAction.EmphasisMotionType.jiggle](emphasizeaction/emphasismotiontype/jiggle.md)
+- [EmphasizeAction.EmphasisMotionType.jiggle](./emphasismotiontype/jiggle.md)
   Oscillates back and forth before returning to its original place.
-- [EmphasizeAction.EmphasisMotionType.pop](emphasizeaction/emphasismotiontype/pop.md)
+- [EmphasizeAction.EmphasisMotionType.pop](./emphasismotiontype/pop.md)
   Grows like an inflating bubble before shrinking as if popped.
-- [EmphasizeAction.EmphasisMotionType.pulse](emphasizeaction/emphasismotiontype/pulse.md)
+- [EmphasizeAction.EmphasisMotionType.pulse](./emphasismotiontype/pulse.md)
   Scales larger and smaller like a heartbeat.
-- [EmphasizeAction.EmphasisMotionType.spin](emphasizeaction/emphasismotiontype/spin.md)
+- [EmphasizeAction.EmphasisMotionType.spin](./emphasismotiontype/spin.md)
   Rotates around its central y-axis and returns to its original pose.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

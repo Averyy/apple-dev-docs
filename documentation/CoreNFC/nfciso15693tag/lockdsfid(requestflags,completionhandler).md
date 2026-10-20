@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+func lockDSFID(requestFlags flags: NFCISO15693RequestFlag, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func lockDSFID(requestFlags flags: NFCISO15693RequestFlag) async throws
+```
+
+```objc
+- (void) lockDSFIDWithRequestFlag:(NFCISO15693RequestFlag) flags completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 

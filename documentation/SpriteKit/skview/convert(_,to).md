@@ -1,22 +1,27 @@
 # convert(_:to:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point from view coordinates to scene coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func convert(_ point: CGPoint, to scene: SKScene) -> CGPoint
+```
+
+```objc
+- (CGPoint) convertPoint:(CGPoint) point toScene:(SKScene *) scene;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ This method performs the coordinate conversion as if the scene is presented insi
 
 ## See Also
 
-- [func convert(CGPoint, from: SKScene) -> CGPoint](skview/convert(_:from:).md)
+### Converting Between View and Scene Coordinates
+- [func convert(CGPoint, from: SKScene) -> CGPoint](./convert%28_,from%29.md)
   Converts a point from scene coordinates to view coordinates.
 
 

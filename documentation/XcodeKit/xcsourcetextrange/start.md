@@ -1,7 +1,8 @@
 # start
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start position of the range.
 
@@ -14,9 +15,14 @@ The start position of the range.
 var start: XCSourceTextPosition { get set }
 ```
 
+```objc
+@property XCSourceTextPosition start;
+```
+
 ## See Also
 
-- [var end: XCSourceTextPosition](xcsourcetextrange/end.md)
+### Getting the Bounds of Source Text Ranges
+- [var end: XCSourceTextPosition](./end.md)
   The end position of the range.
 
 

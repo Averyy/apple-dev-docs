@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](attachableimageformat/description.md)
+- [var description: String](./description.md)
 
 
 ---

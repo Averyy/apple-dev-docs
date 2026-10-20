@@ -1,7 +1,8 @@
 # stopActivityUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops headphone activity updates.
 
@@ -18,13 +19,18 @@ Stops headphone activity updates.
 func stopActivityUpdates()
 ```
 
+```objc
+- (void) stopActivityUpdates;
+```
+
 ## See Also
 
-- [func startActivityUpdates(to: OperationQueue, withHandler: CMHeadphoneActivityManager.ActivityHandler)](cmheadphoneactivitymanager/startactivityupdates(to:withhandler:).md)
+### Starting and Stopping Updates
+- [func startActivityUpdates(to: OperationQueue, withHandler: CMHeadphoneActivityManager.ActivityHandler)](./startactivityupdates%28to,withhandler%29.md)
   Starts headphone activity updates, providing data to the given handler through the given queue.
-- [func startStatusUpdates(to: OperationQueue, withHandler: CMHeadphoneActivityManager.StatusHandler)](cmheadphoneactivitymanager/startstatusupdates(to:withhandler:).md)
+- [func startStatusUpdates(to: OperationQueue, withHandler: CMHeadphoneActivityManager.StatusHandler)](./startstatusupdates%28to,withhandler%29.md)
   Starts headphone status updates, providing data to the given handler through the given queue.
-- [func stopStatusUpdates()](cmheadphoneactivitymanager/stopstatusupdates.md)
+- [func stopStatusUpdates()](./stopstatusupdates%28%29.md)
   Stops headphone status updates.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The currently selected text in the document.
@@ -17,6 +18,10 @@ The currently selected text in the document.
 
 ```swift
 var selectedText: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * selectedText;
 ```
 
 

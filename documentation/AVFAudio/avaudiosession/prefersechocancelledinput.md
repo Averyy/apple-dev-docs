@@ -1,7 +1,8 @@
 # prefersEchoCancelledInput
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the audio session’s preference for using an echo-canceled input.
 
@@ -16,13 +17,18 @@ A Boolean value that indicates the audio session’s preference for using an ech
 var prefersEchoCancelledInput: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL prefersEchoCancelledInput;
+```
+
 ## See Also
 
-- [var isEchoCancelledInputAvailable: Bool](avaudiosession/isechocancelledinputavailable.md)
+### Configuring echo cancellation
+- [var isEchoCancelledInputAvailable: Bool](./isechocancelledinputavailable.md)
   A Boolean value that indicates whether the built-in microphone and speaker route supports echo cancellation.
-- [var isEchoCancelledInputEnabled: Bool](avaudiosession/isechocancelledinputenabled.md)
+- [var isEchoCancelledInputEnabled: Bool](./isechocancelledinputenabled.md)
   A Boolean value that indicates whether an echo-canceled input is in an enabled state.
-- [func setPrefersEchoCancelledInput(Bool) throws](avaudiosession/setprefersechocancelledinput(_:).md)
+- [func setPrefersEchoCancelledInput(Bool) throws](./setprefersechocancelledinput%28_%29.md)
   Sets a preference to enable echo-canceled input on supported hardware.
 
 

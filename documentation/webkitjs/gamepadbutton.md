@@ -1,7 +1,8 @@
 # GamepadButton
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface GamepadButton
 ```
 
 ## Topics
 
 ### Instance Properties
-- [pressed](gamepadbutton/1632431-pressed.md)
-- [value](gamepadbutton/1628807-value.md)
+- [pressed](./gamepadbutton/api-1632431-pressed.md)
+- [value](./gamepadbutton/api-1628807-value.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # userLoginConfiguration
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
@@ -13,9 +14,14 @@
 var userLoginConfiguration: ASAuthorizationProviderExtensionUserLoginConfiguration? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) ASAuthorizationProviderExtensionUserLoginConfiguration * userLoginConfiguration;
+```
+
 ## See Also
 
-- [var extensionData: [AnyHashable : Any]](asauthorizationproviderextensionloginmanager/extensiondata.md)
+### Instance Properties
+- [var extensionData: [AnyHashable : Any]](./extensiondata.md)
 
 
 ---

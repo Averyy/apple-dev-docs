@@ -1,7 +1,8 @@
 # prescriptionType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of vision prescription.
 
@@ -19,21 +20,27 @@ The type of vision prescription.
 var prescriptionType: HKVisionPrescriptionType { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HKVisionPrescriptionType prescriptionType;
+```
+
 #### Discussion
 
-This property contains a value that indicates the type of prescription. For a list of possible values, see [`HKVisionPrescriptionType`](hkvisionprescriptiontype.md).
+This property contains a value that indicates the type of prescription. For a list of possible values, see [`HKVisionPrescriptionType`](../hkvisionprescriptiontype.md).
 
 ## See Also
 
-- [class HKGlassesPrescription](hkglassesprescription.md)
+### Related Documentation
+- [class HKGlassesPrescription](../hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](../hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [enum HKVisionPrescriptionType](hkvisionprescriptiontype.md)
+### Accessing the prescription data
+- [enum HKVisionPrescriptionType](../hkvisionprescriptiontype.md)
   The type of vision prescription, for example a prescription for glasses or for contacts.
-- [var dateIssued: Date](hkvisionprescription/dateissued.md)
+- [var dateIssued: Date](./dateissued.md)
   The date when the doctor issued the prescription.
-- [var expirationDate: Date?](hkvisionprescription/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date when the prescription expires.
 
 

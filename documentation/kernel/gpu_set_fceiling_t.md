@@ -1,14 +1,15 @@
 # gpu_set_fceiling_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t (*gpu_set_fceiling_t)(uint32_t gpu_fceiling_ratio, uint64_t gpu_fceiling_param);
 ```
 

@@ -1,7 +1,8 @@
 # userAgeRange
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var userAgeRange: ASUserAgeRange { get }
+```
+
+```objc
+@property (nonatomic, readonly) ASUserAgeRange userAgeRange;
 ```
 
 

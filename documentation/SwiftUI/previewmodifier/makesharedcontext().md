@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Create shared context to apply to previews. The context returned here will be cached and passed into the `body` method for every preview that applies a modifier of this type.
@@ -21,6 +22,12 @@ Create shared context to apply to previews. The context returned here will be ca
 @MainActor
 static func makeSharedContext() async throws -> Self.Context
 ```
+
+## Default Implementations
+
+### PreviewModifier Implementations
+- [static func makeSharedContext() async throws -> Self.Context](./makesharedcontext%28%29-4zi8r.md)
+  Create shared context to apply to previews. The context returned here will be cached and passed into the `body` method for every preview that applies a modifier of this type.
 
 
 ---

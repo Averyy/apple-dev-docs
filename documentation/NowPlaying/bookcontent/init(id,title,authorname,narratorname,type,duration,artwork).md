@@ -1,7 +1,8 @@
 # init(id:title:authorName:narratorName:type:duration:artwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates audiobook content.
 

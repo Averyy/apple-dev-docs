@@ -1,21 +1,22 @@
 # GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards.Data](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboards-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeaderboards.Data](./gamecenterleaderboards-data.dictionary/data-data.dictionary.md)
   The request body you use to create a Game Center leaderboard set.
 
 ## Properties
@@ -24,8 +25,9 @@ object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterLeader
 
 ## See Also
 
-- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
-- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterGroup](gamecenterleaderboardsetcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+### Objects
+- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterDetail](./gamecenterdetail-data.dictionary.md)
+- [object GameCenterLeaderboardSetCreateRequest.Data.Relationships.GameCenterGroup](./gamecentergroup-data.dictionary.md)
 
 
 ---

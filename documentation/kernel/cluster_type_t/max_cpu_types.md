@@ -1,14 +1,15 @@
 # MAX_CPU_TYPES
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 MAX_CPU_TYPES
 ```
 

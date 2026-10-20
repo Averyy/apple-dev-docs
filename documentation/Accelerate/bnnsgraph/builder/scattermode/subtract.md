@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode.subtract
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation subtracts scattered values from existing values.
 

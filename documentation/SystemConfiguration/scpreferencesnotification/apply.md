@@ -1,7 +1,8 @@
 # apply
 
 **Framework**: System Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates when a request has been made to apply the currently saved preferences to the active system configuration.
 
@@ -14,9 +15,14 @@ Indicates when a request has been made to apply the currently saved preferences 
 static var apply: SCPreferencesNotification { get }
 ```
 
+```c
+kSCPreferencesNotificationApply
+```
+
 ## See Also
 
-- [static var commit: SCPreferencesNotification](scpreferencesnotification/commit.md)
+### Constants
+- [static var commit: SCPreferencesNotification](./commit.md)
   Indicates when new preferences have been saved.
 
 

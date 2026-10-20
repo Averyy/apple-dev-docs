@@ -1,17 +1,22 @@
 # deviceDescription
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of keys and values that describe the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var deviceDescription: [NSDeviceDescriptionKey : Any] { get }
+```
+
+```objc
+@property (copy, readonly) NSDictionary<NSString *,id> * deviceDescription;
 ```
 
 #### Return Value

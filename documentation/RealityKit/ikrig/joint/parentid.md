@@ -1,7 +1,8 @@
 # parentID
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the parent joint if there is one.
 

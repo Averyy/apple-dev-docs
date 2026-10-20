@@ -1,7 +1,8 @@
 # GCControllerTouchpad.TouchState
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of the user’s touch.
 
@@ -19,33 +20,38 @@ The possible states of the user’s touch.
 enum TouchState
 ```
 
+```c
+enum GCTouchState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [GCControllerTouchpad.TouchState.up](gccontrollertouchpad/touchstate-swift.enum/up.md)
+- [GCControllerTouchpad.TouchState.up](./touchstate-swift.enum/up.md)
   The user stops or isn’t touching the surface.
-- [GCControllerTouchpad.TouchState.down](gccontrollertouchpad/touchstate-swift.enum/down.md)
+- [GCControllerTouchpad.TouchState.down](./touchstate-swift.enum/down.md)
   The user starts touching the surface.
-- [GCControllerTouchpad.TouchState.moving](gccontrollertouchpad/touchstate-swift.enum/moving.md)
+- [GCControllerTouchpad.TouchState.moving](./touchstate-swift.enum/moving.md)
   The user continues touching the surface.
 ### Initializers
-- [init?(rawValue: Int)](gccontrollertouchpad/touchstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./touchstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var touchState: GCControllerTouchpad.TouchState](gccontrollertouchpad/touchstate-swift.property.md)
+### Accessing the input values
+- [var touchState: GCControllerTouchpad.TouchState](./touchstate-swift.property.md)
   The state of the user’s touch on the surface of the touchpad.
-- [var reportsAbsoluteTouchSurfaceValues: Bool](gccontrollertouchpad/reportsabsolutetouchsurfacevalues.md)
+- [var reportsAbsoluteTouchSurfaceValues: Bool](./reportsabsolutetouchsurfacevalues.md)
   A Boolean value that determines whether the touch values are absolute or relative.
 
 

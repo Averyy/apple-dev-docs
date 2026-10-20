@@ -1,6 +1,7 @@
 # Using Imported Lightweight Generics in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Understand the constraints of imported Obj-C lightweight generic type declarations.
 
@@ -58,7 +59,8 @@ extension ListContainer {
 
 ## See Also
 
-- [Using Imported Protocol-Qualified Classes in Swift](using-imported-protocol-qualified-classes-in-swift.md)
+### Objective-C APIs
+- [Using Imported Protocol-Qualified Classes in Swift](./using-imported-protocol-qualified-classes-in-swift.md)
   Learn how imported Objective-C protocol-qualified classes and metaclasses are represented.
 
 

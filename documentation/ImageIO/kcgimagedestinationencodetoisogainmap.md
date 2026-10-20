@@ -1,7 +1,8 @@
 # kCGImageDestinationEncodeToISOGainmap
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImageDestinationEncodeToISOGainmap: CFString
+```
+
+```c
+extern CFStringRef const kCGImageDestinationEncodeToISOGainmap;
 ```
 
 

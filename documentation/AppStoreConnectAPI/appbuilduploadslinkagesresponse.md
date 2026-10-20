@@ -1,7 +1,8 @@
 # AppBuildUploadsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing the resource identifiers of builds associated with an app’s upload operations.
 
@@ -10,14 +11,14 @@ A response containing the resource identifiers of builds associated with an app�
 
 ## Declaration
 
-```swift
+```
 object AppBuildUploadsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppBuildUploadsLinkagesResponse.Data](appbuilduploadslinkagesresponse/data-data.dictionary.md)
+- [object AppBuildUploadsLinkagesResponse.Data](./appbuilduploadslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
 ## Properties
@@ -28,31 +29,32 @@ object AppBuildUploadsLinkagesResponse
 
 ## See Also
 
-- [object BuildUpload](buildupload.md)
+### Objects
+- [object BuildUpload](./buildupload.md)
   A multi-file upload operation for submitting an app build to App Store Connect.
-- [object BuildUploadBuildUploadFilesLinkagesResponse](builduploadbuilduploadfileslinkagesresponse.md)
+- [object BuildUploadBuildUploadFilesLinkagesResponse](./builduploadbuilduploadfileslinkagesresponse.md)
   A response containing the resource identifiers of upload files associated with a build upload.
-- [object BuildUploadCreateRequest](builduploadcreaterequest.md)
+- [object BuildUploadCreateRequest](./builduploadcreaterequest.md)
   The request body for initiating a build upload operation.
-- [object BuildUploadFile](builduploadfile.md)
+- [object BuildUploadFile](./builduploadfile.md)
   A single file upload record within a build upload operation, containing the upload URL and checksum for verification.
-- [object BuildUploadFileCreateRequest](builduploadfilecreaterequest.md)
+- [object BuildUploadFileCreateRequest](./builduploadfilecreaterequest.md)
   The request body for creating a file upload record within a build upload operation.
-- [object BuildUploadFileResponse](builduploadfileresponse.md)
+- [object BuildUploadFileResponse](./builduploadfileresponse.md)
   A response containing a single file upload record for a build upload.
-- [object BuildUploadFilesResponse](builduploadfilesresponse.md)
+- [object BuildUploadFilesResponse](./builduploadfilesresponse.md)
   A response containing a list of file upload records for a build upload operation.
-- [object BuildUploadFileUpdateRequest](builduploadfileupdaterequest.md)
+- [object BuildUploadFileUpdateRequest](./builduploadfileupdaterequest.md)
   The request body you use to commit a build upload file.
-- [object BuildUploadResponse](builduploadresponse.md)
+- [object BuildUploadResponse](./builduploadresponse.md)
   A response containing a single build upload operation record.
-- [object BuildUploadsResponse](builduploadsresponse.md)
+- [object BuildUploadsResponse](./builduploadsresponse.md)
   A response containing a list of build upload operations.
-- [type BuildUploadState](builduploadstate.md)
+- [type BuildUploadState](./builduploadstate.md)
   A string that represents the state of a build upload.
-- [object StateDetail](statedetail.md)
+- [object StateDetail](./statedetail.md)
   A resource describing import validation errors, warnings and information.
-- [object DeliveryFileUploadOperation](deliveryfileuploadoperation.md)
+- [object DeliveryFileUploadOperation](./deliveryfileuploadoperation.md)
   An upload operation descriptor containing the URL, HTTP method, and required headers for uploading a background asset file to Apple’s servers.
 
 

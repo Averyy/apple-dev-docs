@@ -1,7 +1,8 @@
 # ATSFlatDataFontNameDataHeader
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSFlatDataFontNameDataHeader
 ```
 
+```c
+typedef struct ATSFlatDataFontNameDataHeader {
+    ...
+} ATSFlatDataFontNameDataHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsflatdatafontnamedataheader/1464214-init.md)
-- [init(nameSpecifierType: ATSFlatDataFontSpeciferType, nameSpecifierSize: UInt32)](atsflatdatafontnamedataheader/1463521-init.md)
+- [init()](./atsflatdatafontnamedataheader/api-1464214-init.md)
+- [init(nameSpecifierType: ATSFlatDataFontSpeciferType, nameSpecifierSize: UInt32)](./atsflatdatafontnamedataheader/api-1463521-init.md)
 ### Instance Properties
-- [var nameSpecifierSize: UInt32](atsflatdatafontnamedataheader/1462952-namespecifiersize.md)
-- [var nameSpecifierType: ATSFlatDataFontSpeciferType](atsflatdatafontnamedataheader/1460209-namespecifiertype.md)
+- [var nameSpecifierSize: UInt32](./atsflatdatafontnamedataheader/api-1462952-namespecifiersize.md)
+- [var nameSpecifierType: ATSFlatDataFontSpeciferType](./atsflatdatafontnamedataheader/api-1460209-namespecifiertype.md)
 
 
 ---

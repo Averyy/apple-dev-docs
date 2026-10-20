@@ -1,7 +1,8 @@
 # NSSplitViewItem.Behavior.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default split view item behavior.
 
@@ -14,17 +15,22 @@ The default split view item behavior.
 case `default`
 ```
 
+```c
+NSSplitViewItemBehaviorDefault
+```
+
 #### Discussion
 
-This behavior corresponds to split view items that you create using [`init(viewController:)`](nssplitviewitem/init(viewcontroller:).md).
+This behavior corresponds to split view items that you create using [`init(viewController:)`](../init%28viewcontroller%29.md).
 
 ## See Also
 
-- [NSSplitViewItem.Behavior.sidebar](nssplitviewitem/behavior-swift.enum/sidebar.md)
+### Item Behaviors
+- [NSSplitViewItem.Behavior.sidebar](./sidebar.md)
   The sidebar behavior.
-- [NSSplitViewItem.Behavior.contentList](nssplitviewitem/behavior-swift.enum/contentlist.md)
+- [NSSplitViewItem.Behavior.contentList](./contentlist.md)
   The content list behavior.
-- [NSSplitViewItem.Behavior.inspector](nssplitviewitem/behavior-swift.enum/inspector.md)
+- [NSSplitViewItem.Behavior.inspector](./inspector.md)
   The inspector behavior.
 
 

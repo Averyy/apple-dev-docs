@@ -1,7 +1,8 @@
 # MDLCameraProjection.perspective
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A perspective projection.
 
@@ -19,9 +20,14 @@ A perspective projection.
 case perspective
 ```
 
+```c
+MDLCameraProjectionPerspective
+```
+
 ## See Also
 
-- [MDLCameraProjection.orthographic](mdlcameraprojection/orthographic.md)
+### Constants
+- [MDLCameraProjection.orthographic](./orthographic.md)
   An orthographic projection.
 
 

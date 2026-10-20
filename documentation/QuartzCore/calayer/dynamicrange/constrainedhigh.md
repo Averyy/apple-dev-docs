@@ -1,7 +1,8 @@
 # constrainedHigh
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,11 +18,16 @@
 static let constrainedHigh: CALayer.DynamicRange
 ```
 
+```c
+extern CADynamicRange const CADynamicRangeConstrainedHigh;
+```
+
 ## See Also
 
-- [static let automatic: CALayer.DynamicRange](calayer/dynamicrange/automatic.md)
-- [static let standard: CALayer.DynamicRange](calayer/dynamicrange/standard.md)
-- [static let high: CALayer.DynamicRange](calayer/dynamicrange/high.md)
+### Constants
+- [static let automatic: CALayer.DynamicRange](./automatic.md)
+- [static let standard: CALayer.DynamicRange](./standard.md)
+- [static let high: CALayer.DynamicRange](./high.md)
 
 
 ---

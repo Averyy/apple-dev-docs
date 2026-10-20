@@ -1,7 +1,8 @@
 # init(tableView:cellProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a diffable data source with the specified cell provider, and connects it to the specified table view.
 
@@ -10,7 +11,7 @@ Creates a diffable data source with the specified cell provider, and connects it
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ Creates a diffable data source with the specified cell provider, and connects it
 
 ## See Also
 
-- [UITableViewDiffableDataSource.CellProvider](uitableviewdiffabledatasource-2euir/cellprovider.md)
+### Creating a diffable data source
+- [UITableViewDiffableDataSource.CellProvider](./cellprovider.md)
   A closure that configures and returns a cell for a table view from its diffable data source.
 
 

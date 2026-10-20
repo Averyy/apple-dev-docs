@@ -1,7 +1,8 @@
 # init(cellularServiceID:fileURL:destinationFileURL:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a download request instance.
 
@@ -22,7 +23,8 @@ init(cellularServiceID: CellularServiceID, fileURL: URL, destinationFileURL: URL
 
 ## See Also
 
-- [init(cellularServiceID: CellularServiceID, fileMetadata: RCSFileTransferMetadata, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:filemetadata:destinationfileurl:).md)
+### Creating a download request
+- [init(cellularServiceID: CellularServiceID, fileMetadata: RCSFileTransferMetadata, destinationFileURL: URL)](./init%28cellularserviceid,filemetadata,destinationfileurl%29.md)
   Creates a download request instance.
 
 

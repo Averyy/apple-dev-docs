@@ -1,23 +1,28 @@
 # init(x:y:width:height:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map rectangle structure from the specified values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 init(x: Double, y: Double, width: Double, height: Double)
+```
+
+```c
+static MKMapRect MKMapRectMake(double x, double y, double width, double height);
 ```
 
 #### Return Value
@@ -33,11 +38,12 @@ A map rectangle with the specified values.
 
 ## See Also
 
-- [init()](mkmaprect/init.md)
+### Creating a map rectangle
+- [init()](./init%28%29.md)
   Creates the rectangle with an empty region.
-- [init(origin: MKMapPoint, size: MKMapSize)](mkmaprect/init(origin:size:).md)
+- [init(origin: MKMapPoint, size: MKMapSize)](./init%28origin,size%29.md)
   Creates the map rectangle with the specified point and size.
-- [init(MKMapRect)](mkcoordinateregion/init(_:).md)
+- [init(MKMapRect)](../mkcoordinateregion/init%28_%29.md)
   Returns the region that corresponds to the specified map rectangle.
 
 

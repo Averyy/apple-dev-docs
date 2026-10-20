@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a payment card reader with the specified options.
 
@@ -26,7 +27,8 @@ Keep a strong reference to the returned object for the duration of the reader se
 
 ## See Also
 
-- [PaymentCardReader.Options](paymentcardreader/options-swift.struct.md)
+### Creating a payment reader
+- [PaymentCardReader.Options](./options-swift.struct.md)
   Additional information you use to configure a payment card reader.
 
 

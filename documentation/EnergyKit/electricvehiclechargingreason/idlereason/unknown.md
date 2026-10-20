@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.IdleReason.unknown
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates the vehicle is idle for an unspecified or unavailable reason.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

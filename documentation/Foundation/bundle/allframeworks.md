@@ -1,7 +1,8 @@
 # allFrameworks
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of all of the application’s bundles that represent frameworks.
 
@@ -20,6 +21,10 @@ Returns an array of all of the application’s bundles that represent frameworks
 class var allFrameworks: [Bundle] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSBundle *> * allFrameworks;
+```
+
 #### Return Value
 
 An array of all of the application’s bundles that represent frameworks. Only frameworks with one or more Objective-C classes in them are included.
@@ -30,9 +35,10 @@ The returned array includes frameworks that are linked into an application when 
 
 ## See Also
 
-- [class var main: Bundle](bundle/main.md)
+### Getting standard bundle objects
+- [class var main: Bundle](./main.md)
   Returns the bundle object that contains the current executable.
-- [class var allBundles: [Bundle]](bundle/allbundles.md)
+- [class var allBundles: [Bundle]](./allbundles.md)
   Returns an array of all the application’s non-framework bundles.
 
 

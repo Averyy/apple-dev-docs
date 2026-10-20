@@ -1,7 +1,8 @@
 # kTextToSpeechVoiceType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The type of a voice resource.
 

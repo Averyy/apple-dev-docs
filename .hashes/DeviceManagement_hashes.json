@@ -4066,7 +4066,7 @@
       "hash": "7c7a406dfa7bc0c131dcd651e387f5c56141c16acaa37969f72e3d20329fee4c"
     },
     "https://developer.apple.com/documentation/devicemanagement/networkvpnvpnpluginondemandobject": {
-      "etag": "\"2ca5-65d55a31ec1ee-df\"",
+      "etag": "\"2ca5-65d55a31ec1ee\"",
       "file_path": "documentation/DeviceManagement/networkvpnvpnpluginondemandobject.md",
       "hash": "7e180bda06dba958055d704c5fa1e9c49ae62567fe9ca26d70d6d1516d84b93a"
     },
@@ -11166,7 +11166,7 @@
       "hash": "7c7a406dfa7bc0c131dcd651e387f5c56141c16acaa37969f72e3d20329fee4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/networkvpnvpnpluginondemandobject.json": {
-      "etag": "\"2ca5-65d55a31ec1ee-df\"",
+      "etag": "\"2ca5-65d55a31ec1ee\"",
       "file_path": "documentation/DeviceManagement/networkvpnvpnpluginondemandobject.md",
       "hash": "7e180bda06dba958055d704c5fa1e9c49ae62567fe9ca26d70d6d1516d84b93a"
     },
@@ -14202,6 +14202,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 2840
   }
 }

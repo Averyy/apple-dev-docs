@@ -1,7 +1,8 @@
 # sharedSecret
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shared secret.
 

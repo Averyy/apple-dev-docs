@@ -1,7 +1,8 @@
 # NSControl.ImagePosition.imageTrailing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image is on the title’s trailing edge.
 
@@ -14,23 +15,28 @@ The image is on the title’s trailing edge.
 case imageTrailing
 ```
 
+```c
+NSImageTrailing
+```
+
 ## See Also
 
-- [NSControl.ImagePosition.noImage](nscontrol/imageposition/noimage.md)
+### Positioning a Control’s Image
+- [NSControl.ImagePosition.noImage](./noimage.md)
   The cell doesn’t display an image.
-- [NSControl.ImagePosition.imageOnly](nscontrol/imageposition/imageonly.md)
+- [NSControl.ImagePosition.imageOnly](./imageonly.md)
   The cell displays an image but not a title.
-- [NSControl.ImagePosition.imageLeading](nscontrol/imageposition/imageleading.md)
+- [NSControl.ImagePosition.imageLeading](./imageleading.md)
   The image is on the title’s leading edge.
-- [NSControl.ImagePosition.imageLeft](nscontrol/imageposition/imageleft.md)
+- [NSControl.ImagePosition.imageLeft](./imageleft.md)
   The image is to the left of the title.
-- [NSControl.ImagePosition.imageRight](nscontrol/imageposition/imageright.md)
+- [NSControl.ImagePosition.imageRight](./imageright.md)
   The image is to the right of the title.
-- [NSControl.ImagePosition.imageBelow](nscontrol/imageposition/imagebelow.md)
+- [NSControl.ImagePosition.imageBelow](./imagebelow.md)
   The image is below the title.
-- [NSControl.ImagePosition.imageAbove](nscontrol/imageposition/imageabove.md)
+- [NSControl.ImagePosition.imageAbove](./imageabove.md)
   The image is above the title.
-- [NSControl.ImagePosition.imageOverlaps](nscontrol/imageposition/imageoverlaps.md)
+- [NSControl.ImagePosition.imageOverlaps](./imageoverlaps.md)
   The image overlaps the title.
 
 

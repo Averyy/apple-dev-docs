@@ -1,7 +1,8 @@
 # clearWeeklySchedule(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func clearWeeklySchedule(with params: MTRThermostatClusterClearWeeklyScheduleParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func clearWeeklySchedule(with params: MTRThermostatClusterClearWeeklyScheduleParams?) async throws
+```
+
+```objc
+- (void) clearWeeklyScheduleWithParams:(MTRThermostatClusterClearWeeklyScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

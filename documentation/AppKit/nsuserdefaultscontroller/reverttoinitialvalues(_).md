@@ -1,12 +1,13 @@
 # revertToInitialValues(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Causes the receiver to discard all edits and replace the values of all the user default properties with any corresponding values in the [`initialValues`](nsuserdefaultscontroller/initialvalues.md) dictionary.
+Causes the receiver to discard all edits and replace the values of all the user default properties with any corresponding values in the [`initialValues`](./initialvalues.md) dictionary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,25 +16,30 @@ Causes the receiver to discard all edits and replace the values of all the user 
 func revertToInitialValues(_ sender: Any?)
 ```
 
+```objc
+- (void) revertToInitialValues:(id) sender;
+```
+
 #### Discussion
 
 This effectively sets the preferences that a user can change to their “out-of-the-box” values. This method has no effect if initial values were not specified. The `sender` is typically the object that invoked this method.
 
 ## See Also
 
-- [var defaults: UserDefaults](nsuserdefaultscontroller/defaults.md)
+### Managing user defaults values
+- [var defaults: UserDefaults](./defaults.md)
   Returns the instance of NSUserDefaults in use by the receiver.
-- [var initialValues: [String : Any]?](nsuserdefaultscontroller/initialvalues.md)
+- [var initialValues: [String : Any]?](./initialvalues.md)
   Returns a dictionary containing the receiver’s initial default values.
-- [var hasUnappliedChanges: Bool](nsuserdefaultscontroller/hasunappliedchanges.md)
+- [var hasUnappliedChanges: Bool](./hasunappliedchanges.md)
   Returns whether the receiver has user default values that have not been saved to NSUserDefaults.
-- [var appliesImmediately: Bool](nsuserdefaultscontroller/appliesimmediately.md)
+- [var appliesImmediately: Bool](./appliesimmediately.md)
   Returns whether any changes made to bound user default properties are saved immediately.
-- [var values: Any](nsuserdefaultscontroller/values.md)
+- [var values: Any](./values.md)
   Returns a key value coding compliant object that is used to access the user default properties.
-- [func revert(Any?)](nsuserdefaultscontroller/revert(_:).md)
+- [func revert(Any?)](./revert%28_%29.md)
   Causes the receiver to discard any unsaved changes to bound user default properties, restoring their previous values.
-- [func save(Any?)](nsuserdefaultscontroller/save(_:).md)
+- [func save(Any?)](./save%28_%29.md)
   Saves the values of the receiver’s user default properties.
 
 

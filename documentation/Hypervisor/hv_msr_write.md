@@ -1,12 +1,13 @@
 # HV_MSR_WRITE
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Model-Specific Register (MSR) write permission.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The Model-Specific Register (MSR) write permission.
 var HV_MSR_WRITE: Int { get }
 ```
 
+```c
+HV_MSR_WRITE
+```
+
 ## Mentions
 
-- [Extending vCPU Capabilities Using Model-Specific Registers](extending-vcpu-capabilities-using-model-specific-registers.md)
+- [Extending vCPU Capabilities Using Model-Specific Registers](./extending-vcpu-capabilities-using-model-specific-registers.md)
 
 ## See Also
 
-- [var HV_MSR_NONE: Int](hv_msr_none.md)
+### Permissions
+- [var HV_MSR_NONE: Int](./hv_msr_none.md)
   The Model-Specific Register (MSR) no-access permission.
-- [var HV_MSR_READ: Int](hv_msr_read.md)
+- [var HV_MSR_READ: Int](./hv_msr_read.md)
   The Model-Specific Register (MSR) read permission.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool loopRestart;
 ```
 
@@ -15,13 +15,14 @@ Set if an event chain has been changed and the system has to be rechecked from s
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workToDo](ioworkloop/worktodo.md)
-- [workThread](ioworkloop/workthread.md)
-- [reserved](ioworkloop/reserved.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [eventChain](ioworkloop/eventchain.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workToDo](./worktodo.md)
+- [workThread](./workthread.md)
+- [reserved](./reserved.md)
+- [gateLock](./gatelock.md)
+- [eventChain](./eventchain.md)
+- [controlG](./controlg.md)
 
 
 ---

@@ -10,25 +10,26 @@ The `AppIntentVocabulary.plist` file in your iOS app contains examples of how us
 
 The Root dictionary of the `AppIntentVocabulary.plist` file contains the following keys:
 
-- **`ParameterVocabularies`**: (Optional) An array of dictionaries that define the custom terms that apply to all users of your app. For information about specifying custom terms, see [`Parameter Vocabularies`](parameter-vocabularies.md).
-- **`IntentPhrases`**: (Optional, but recommended) An array of dictionaries containing the example phrases for users. Siri displays these phrases and they guide and help Siri understand how users engage your app’s intents. For information on providing example phrases, see [`Intent Phrases`](intent-phrases.md).
+- **`ParameterVocabularies`**: (Optional) An array of dictionaries that define the custom terms that apply to all users of your app. For information about specifying custom terms, see [Parameter Vocabularies](./parameter-vocabularies.md).
+- **`IntentPhrases`**: (Optional, but recommended) An array of dictionaries containing the example phrases for users. Siri displays these phrases and they guide and help Siri understand how users engage your app’s intents. For information on providing example phrases, see [Intent Phrases](./intent-phrases.md).
 
 > ❗ **Important**:  During development, Xcode syncs your vocabulary with Siri, which uses the vocabulary to interpret requests from the version of your app on your development device. Ingestion of your vocabulary data isn’t instantaneous, though, so you may need to wait a minute or two before testing your Siri capabilities.
 
 ## Topics
 
 ### Property List Keys
-- [Parameter Vocabularies](parameter-vocabularies.md)
+- [Parameter Vocabularies](./parameter-vocabularies.md)
   The keys you include in your global vocabulary file to describe app-specific terms.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
 ### Localization
-- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+- [Localizing Your Vocabulary for Chinese Dialects](./localizing-your-vocabulary-for-chinese-dialects.md)
   Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 ## See Also
 
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+### Related Topics
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
 
 

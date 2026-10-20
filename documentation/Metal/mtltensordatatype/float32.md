@@ -1,7 +1,8 @@
 # MTLTensorDataType.float32
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A single-precision floating point data type.
 
@@ -17,6 +18,10 @@ A single-precision floating point data type.
 
 ```swift
 case float32
+```
+
+```c
+MTLTensorDataTypeFloat32
 ```
 
 

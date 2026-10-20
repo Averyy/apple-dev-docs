@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new audio input stream source.
 
@@ -12,6 +13,10 @@ Creates a new audio input stream source.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

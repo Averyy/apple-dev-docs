@@ -1,7 +1,8 @@
 # enter(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to transition the state machine from its current state to a state of the specified class.
 
@@ -19,17 +20,21 @@ Attempts to transition the state machine from its current state to a state of th
 func enter(_ stateClass: AnyClass) -> Bool
 ```
 
+```objc
+- (BOOL) enterState:(Class) stateClass;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the transition was successful; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the transition was successful; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You build a state machine by creating a unique [`GKState`](gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](gkstate/isvalidnextstate(_:).md) method of each state object determines which other states a state machine is allowed to transition into from that state. Calling this method first tests whether a transition from the current state to the specified state is valid; if not, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+You build a state machine by creating a unique [`GKState`](../gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](../gkstate/isvalidnextstate%28_%29.md) method of each state object determines which other states a state machine is allowed to transition into from that state. Calling this method first tests whether a transition from the current state to the specified state is valid; if not, this method returns [`false`](../../Swift/false.md).
 
-If a transition is allowed, the state machine sends the [`willExit(to:)`](gkstate/willexit(to:).md) message to its current state object. Then, the new state object replaces the value of the [`currentState`](gkstatemachine/currentstate.md) property. Finally, the state machine sends the  [`didEnter(from:)`](gkstate/didenter(from:).md) message to the new current state object, and this method returns [`true`](https://developer.apple.com/documentation/swift/true).
+If a transition is allowed, the state machine sends the [`willExit(to:)`](../gkstate/willexit%28to%29.md) message to its current state object. Then, the new state object replaces the value of the [`currentState`](./currentstate.md) property. Finally, the state machine sends the  [`didEnter(from:)`](../gkstate/didenter%28from%29.md) message to the new current state object, and this method returns [`true`](../../Swift/true.md).
 
-A newly created state machine’s [`currentState`](gkstatemachine/currentstate.md) property is `nil`—to choose and enter an initial state, use the [`enter(_:)`](gkstatemachine/enter(_:).md) method. In this case, the [`enter(_:)`](gkstatemachine/enter(_:).md) call always succeeds.
+A newly created state machine’s [`currentState`](./currentstate.md) property is `nil`—to choose and enter an initial state, use the [`enter(_:)`](./enter%28_%29.md) method. In this case, the [`enter(_:)`](./enter%28_%29.md) call always succeeds.
 
 ## Parameters
 
@@ -37,11 +42,12 @@ A newly created state machine’s [`currentState`](gkstatemachine/currentstate.m
 
 ## See Also
 
-- [var currentState: GKState?](gkstatemachine/currentstate.md)
+### Working with States
+- [var currentState: GKState?](./currentstate.md)
   The state machine’s current state.
-- [func canEnterState(AnyClass) -> Bool](gkstatemachine/canenterstate(_:).md)
+- [func canEnterState(AnyClass) -> Bool](./canenterstate%28_%29.md)
   Returns a Boolean value indicating whether it is valid for the state machine to transition from its current state to a state of the specified class.
-- [func update(deltaTime: TimeInterval)](gkstatemachine/update(deltatime:).md)
+- [func update(deltaTime: TimeInterval)](./update%28deltatime%29.md)
   Tells the current state object to perform per-frame updates.
 
 

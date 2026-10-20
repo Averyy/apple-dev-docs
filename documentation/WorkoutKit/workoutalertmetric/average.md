@@ -1,7 +1,8 @@
 # WorkoutAlertMetric.average
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The metric represents an average value.
 
@@ -20,7 +21,8 @@ case average
 
 ## See Also
 
-- [WorkoutAlertMetric.current](workoutalertmetric/current.md)
+### Determining the metric’s type
+- [WorkoutAlertMetric.current](./current.md)
   The metric represents the current value.
 
 

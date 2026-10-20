@@ -1,14 +1,15 @@
 # kBluetoothHCICommandLEPeriodicAdvertisingCreateSyncCancel
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandLEPeriodicAdvertisingCreateSyncCancel = 0x0045
 ```
 

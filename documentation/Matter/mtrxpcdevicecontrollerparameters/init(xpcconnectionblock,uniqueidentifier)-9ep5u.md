@@ -1,7 +1,8 @@
 # init(xpcConnectionBlock:uniqueIdentifier:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A controller created from this way will connect to a remote instance of an MTRDeviceController loaded in an XPC Service
 
@@ -18,6 +19,10 @@ A controller created from this way will connect to a remote instance of an MTRDe
 
 ```swift
 init(xpcConnectionBlock: @escaping () -> NSXPCConnection, uniqueIdentifier: UUID)
+```
+
+```objc
+- (instancetype) initWithXPCConnectionBlock:(NSXPCConnection * (^)()) xpcConnectionBlock uniqueIdentifier:(NSUUID *) uniqueIdentifier;
 ```
 
 ## Parameters

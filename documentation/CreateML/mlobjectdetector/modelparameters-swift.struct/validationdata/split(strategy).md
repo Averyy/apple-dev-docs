@@ -1,7 +1,8 @@
 # MLObjectDetector.ModelParameters.ValidationData.split(strategy:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A validation dataset Create ML derives by randomly selecting a portion of the object detector’s training dataset using the split strategy.
 
@@ -16,17 +17,18 @@ case split(strategy: MLSplitStrategy)
 
 ## Parameters
 
-- `strategy`: An [`MLSplitStrategy`](mlsplitstrategy.md) instance the enumeration case uses to select a portion of the object detector’s training dataset as its associated value.
+- `strategy`: An [`MLSplitStrategy`](../../../mlsplitstrategy.md) instance the enumeration case uses to select a portion of the object detector’s training dataset as its associated value.
 
 ## See Also
 
-- [MLObjectDetector.ModelParameters.ValidationData.dataFrame(_:imageColumn:annotationColumn:)](mlobjectdetector/modelparameters-swift.struct/validationdata/dataframe(_:imagecolumn:annotationcolumn:).md)
+### Designating validation data
+- [MLObjectDetector.ModelParameters.ValidationData.dataFrame(_:imageColumn:annotationColumn:)](./dataframe%28_,imagecolumn,annotationcolumn%29.md)
   Set validation data from the MLDataTable provided.
-- [MLObjectDetector.ModelParameters.ValidationData.dataSource(_:)](mlobjectdetector/modelparameters-swift.struct/validationdata/datasource(_:).md)
+- [MLObjectDetector.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   A validation dataset you provide as a data source.
-- [MLObjectDetector.ModelParameters.ValidationData.table(_:imageColumn:annotationColumn:)](mlobjectdetector/modelparameters-swift.struct/validationdata/table(_:imagecolumn:annotationcolumn:).md)
+- [MLObjectDetector.ModelParameters.ValidationData.table(_:imageColumn:annotationColumn:)](./table%28_,imagecolumn,annotationcolumn%29.md)
   A validation dataset you provide as a data table.
-- [MLObjectDetector.ModelParameters.ValidationData.none](mlobjectdetector/modelparameters-swift.struct/validationdata/none.md)
+- [MLObjectDetector.ModelParameters.ValidationData.none](./none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 

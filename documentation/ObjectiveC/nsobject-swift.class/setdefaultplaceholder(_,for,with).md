@@ -1,12 +1,13 @@
 # setDefaultPlaceholder(_:for:with:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets `placeholder` as the default placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 11.0
 
 ## Declaration
 
@@ -14,17 +15,23 @@ Sets `placeholder` as the default placeholder for the `binding`, when a key valu
 class func setDefaultPlaceholder(_ placeholder: Any?, for marker: Any?, with binding: NSBindingName)
 ```
 
+```objc
++ (void) setDefaultPlaceholder:(id) placeholder forMarker:(id) marker withBinding:(NSBindingName) binding;
+```
+
 #### Discussion
 
-The `marker` can be `nil` or one of the constants described in [`Selection Markers`](https://developer.apple.com/documentation/appkit/selection-markers).
+The `marker` can be `nil` or one of the constants described in [Selection Markers](../../AppKit/selection-markers.md).
 
 ## See Also
 
-- [Cocoa Bindings Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i)
-- [class func defaultPlaceholder(for: Any?, with: NSBindingName) -> Any?](nsobject-swift.class/defaultplaceholder(for:with:).md)
+### Related Documentation
+- [Cocoa Bindings Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i)
+### Deprecated Class Methods
+- [class func defaultPlaceholder(for: Any?, with: NSBindingName) -> Any?](./defaultplaceholder%28for,with%29.md)
   Returns an object that will be used as the placeholder for the `binding`, when a key value coding compliant property of an instance of the receiving class returns the value specified by `marker`, and no other placeholder has been specified.
-- [class func useStoredAccessor() -> Bool](nsobject-swift.class/usestoredaccessor.md)
-  Returns `true` if the stored value methods [`storedValue(forKey:)`](nsobject-swift.class/storedvalue(forkey:).md) and [`takeStoredValue(_:forKey:)`](nsobject-swift.class/takestoredvalue(_:forkey:).md) should use private accessor methods in preference to public accessors.
+- [class func useStoredAccessor() -> Bool](./usestoredaccessor%28%29.md)
+  Returns `true` if the stored value methods [`storedValue(forKey:)`](./storedvalue%28forkey%29.md) and [`takeStoredValue(_:forKey:)`](./takestoredvalue%28_,forkey%29.md) should use private accessor methods in preference to public accessors.
 
 
 ---

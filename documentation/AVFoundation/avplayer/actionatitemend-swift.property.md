@@ -1,18 +1,19 @@
 # actionAtItemEnd
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to perform when the current player item has finished playing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,18 @@ nonisolated
 var actionAtItemEnd: AVPlayer.ActionAtItemEnd { get set }
 ```
 
+```objc
+@property AVPlayerActionAtItemEnd actionAtItemEnd;
+```
+
 #### Discussion
 
-For possible values, see [`AVPlayer.ActionAtItemEnd`](avplayer/actionatitemend-swift.enum.md).
+For possible values, see [`AVPlayer.ActionAtItemEnd`](./actionatitemend-swift.enum.md).
 
 ## See Also
 
-- [AVPlayer.ActionAtItemEnd](avplayer/actionatitemend-swift.enum.md)
+### Responding when playback ends
+- [AVPlayer.ActionAtItemEnd](./actionatitemend-swift.enum.md)
   The actions a player can take when it finishes playing.
 
 

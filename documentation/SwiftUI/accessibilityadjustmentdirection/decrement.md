@@ -1,7 +1,8 @@
 # AccessibilityAdjustmentDirection.decrement
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ case decrement
 
 ## See Also
 
-- [AccessibilityAdjustmentDirection.increment](accessibilityadjustmentdirection/increment.md)
+### Getting an adjustment direction
+- [AccessibilityAdjustmentDirection.increment](./increment.md)
 
 
 ---

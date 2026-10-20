@@ -1,7 +1,8 @@
 # detached
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Disassociate the work item’s attributes from the current execution context.
 
@@ -10,9 +11,9 @@ Disassociate the work item’s attributes from the current execution context.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,15 +27,16 @@ When this flag is set, the system does not apply attributes from the current exe
 
 ## See Also
 
-- [static let assignCurrentContext: DispatchWorkItemFlags](dispatchworkitemflags/assigncurrentcontext.md)
+### Work Item Flags
+- [static let assignCurrentContext: DispatchWorkItemFlags](./assigncurrentcontext.md)
   Set the attributes of the work item to match the attributes of the current execution context.
-- [static let barrier: DispatchWorkItemFlags](dispatchworkitemflags/barrier.md)
+- [static let barrier: DispatchWorkItemFlags](./barrier.md)
   Cause the work item to act as a barrier block when submitted to a concurrent queue.
-- [static let enforceQoS: DispatchWorkItemFlags](dispatchworkitemflags/enforceqos.md)
+- [static let enforceQoS: DispatchWorkItemFlags](./enforceqos.md)
   Prefer the quality-of-service class associated with the block.
-- [static let inheritQoS: DispatchWorkItemFlags](dispatchworkitemflags/inheritqos.md)
+- [static let inheritQoS: DispatchWorkItemFlags](./inheritqos.md)
   Prefer the quality-of-service class associated with the current execution context.
-- [static let noQoS: DispatchWorkItemFlags](dispatchworkitemflags/noqos.md)
+- [static let noQoS: DispatchWorkItemFlags](./noqos.md)
   Execute the work item without assigning a quality-of-service class.
 
 

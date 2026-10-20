@@ -1,7 +1,8 @@
 # DefaultContactProviderDomain
 
 **Framework**: ContactProvider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default domain the extension uses.
 
@@ -18,23 +19,24 @@ struct DefaultContactProviderDomain
 ## Topics
 
 ### Creating a default domain
-- [init()](defaultcontactproviderdomain/init.md)
+- [init()](./defaultcontactproviderdomain/init%28%29.md)
   Creates an instance of the default domain.
 ### Identifying the domain
-- [let displayName: String](defaultcontactproviderdomain/displayname.md)
+- [let displayName: String](./defaultcontactproviderdomain/displayname.md)
   The display name the system shows to represent the default domain.
 ### Using the default domain identifier
-- [static let identifier: String](defaultcontactproviderdomain/identifier.md)
+- [static let identifier: String](./defaultcontactproviderdomain/identifier.md)
   The identifier used for all default domains.
 
 ## Relationships
 
 ### Conforms To
-- [ContactProviderDomain](contactproviderdomain.md)
+- [ContactProviderDomain](./contactproviderdomain.md)
 
 ## See Also
 
-- [protocol ContactProviderDomain](contactproviderdomain.md)
+### Working with domains
+- [protocol ContactProviderDomain](./contactproviderdomain.md)
   A domain, including traits like an identifier and display name, used to configure the extension.
 
 

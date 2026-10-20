@@ -1,7 +1,8 @@
 # webOrderLineItemId
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unique identifier of subscription-purchase events across devices, including renewals.
 
@@ -10,7 +11,7 @@ The unique identifier of subscription-purchase events across devices, including 
 
 ## Declaration
 
-```swift
+```
 string webOrderLineItemId
 ```
 
@@ -20,11 +21,12 @@ This value applies only to auto-renewable subscriptions.
 
 ## See Also
 
-- [type effectiveDate](effectivedate.md)
+### Response data types
+- [type effectiveDate](./effectivedate.md)
   The new subscription expiration date for a subscription-renewal extension.
-- [type originalTransactionId](originaltransactionid.md)
+- [type originalTransactionId](./originaltransactionid.md)
   The original transaction identifier of a purchase.
-- [type success](success.md)
+- [type success](./success.md)
   A Boolean value that indicates whether the subscription-renewal-date extension succeeded.
 
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The details of the data in the response.
 
@@ -10,16 +11,16 @@ The details of the data in the response.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions.GameCenterDetail](gamecentermatchmakingqueuerequestsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions.GameCenterDetail](./dimensions-data.dictionary/gamecenterdetail-data.dictionary.md)
   The links to the details of the Game Center data.
-- [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions.Result](gamecentermatchmakingqueuerequestsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/result-data.dictionary.md)
+- [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions.Result](./dimensions-data.dictionary/result-data.dictionary.md)
   The links to the details of the data.
 
 ## Properties
@@ -29,7 +30,8 @@ object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.Dimensions
 
 ## See Also
 
-- [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.DataPoints](gamecentermatchmakingqueuerequestsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingQueueRequestsV1MetricResponse.Data.DataPoints](./datapoints-data.dictionary.md)
   The key properties of the data in the response.
 
 

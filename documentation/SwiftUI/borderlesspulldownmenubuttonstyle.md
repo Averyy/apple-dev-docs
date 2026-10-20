@@ -1,12 +1,15 @@
 # BorderlessPullDownMenuButtonStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A menu button style which manifests as a borderless pull-down button.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`BorderlessButtonMenuStyle`](./borderlessbuttonmenustyle.md) instead.
 
 ## Declaration
 
@@ -17,20 +20,21 @@ struct BorderlessPullDownMenuButtonStyle
 ## Topics
 
 ### Creating a borderless pull down menu button style
-- [init()](borderlesspulldownmenubuttonstyle/init.md)
+- [init()](./borderlesspulldownmenubuttonstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [MenuButtonStyle](menubuttonstyle.md)
+- [MenuButtonStyle](./menubuttonstyle.md)
 
 ## See Also
 
-- [struct BorderlessButtonMenuButtonStyle](borderlessbuttonmenubuttonstyle.md)
+### Supporting types
+- [struct BorderlessButtonMenuButtonStyle](./borderlessbuttonmenubuttonstyle.md)
   A menu button style which manifests as a borderless button with no visual embelishments.
-- [struct DefaultMenuButtonStyle](defaultmenubuttonstyle.md)
+- [struct DefaultMenuButtonStyle](./defaultmenubuttonstyle.md)
   The default menu button style.
-- [struct PullDownMenuButtonStyle](pulldownmenubuttonstyle.md)
+- [struct PullDownMenuButtonStyle](./pulldownmenubuttonstyle.md)
   A menu button style which manifests as a pull-down button.
 
 

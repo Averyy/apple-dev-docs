@@ -1,7 +1,8 @@
 # PlaybackRepeatModeResolutionResult.ConfirmationRequired
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A result that requires the user to confirm the playback mode before proceeding.
 
@@ -10,7 +11,7 @@ A result that requires the user to confirm the playback mode before proceeding.
 
 ## Declaration
 
-```swift
+```
 object PlaybackRepeatModeResolutionResult.ConfirmationRequired
 ```
 
@@ -20,7 +21,8 @@ object PlaybackRepeatModeResolutionResult.ConfirmationRequired
 
 ## See Also
 
-- [object PlaybackRepeatModeResolutionResult.Success](playbackrepeatmoderesolutionresult/success-data.dictionary.md)
+### Specifying a Result
+- [object PlaybackRepeatModeResolutionResult.Success](./success-data.dictionary.md)
   A playback mode that successfully matches the intent.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool isStarted;
 ```
 
@@ -15,11 +15,12 @@ Internal state keeping track of when the IOAudioControl has been started.
 
 ## See Also
 
-- [workLoop](ioaudiocontrol/workloop.md)
-- [userClients](ioaudiocontrol/userclients.md)
-- [controlID](ioaudiocontrol/controlid.md)
-- [commandGate](ioaudiocontrol/commandgate.md)
-- [channelID](ioaudiocontrol/channelid.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [userClients](./userclients.md)
+- [controlID](./controlid.md)
+- [commandGate](./commandgate.md)
+- [channelID](./channelid.md)
 
 
 ---

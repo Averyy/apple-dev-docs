@@ -1,7 +1,8 @@
 # onStorefrontChange(shouldContinuePurchase:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A closure that determines whether the transaction continues if the device’s App Store storefront changes during a transaction.
 

@@ -1,7 +1,8 @@
 # copy(from:to:in:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the spec at `srcPath` in this layer (and its children) to `dstPath`.
 
@@ -32,15 +33,16 @@ func copy(from srcPath: USDLayer.Path, to dstPath: USDLayer.Path, in dstLayer: U
 
 ## See Also
 
-- [USDLayer.ListOperation](usdlayer/listoperation.md)
+### Editing scene description
+- [USDLayer.ListOperation](./listoperation.md)
   A non-destructive list of incremental editing operations for list-valued metadata and properties.
-- [USDLayer.ListOperationType](usdlayer/listoperationtype.md)
-  Identifies an operation slot in a [`USDLayer.ListOperation`](usdlayer/listoperation.md).
-- [typealias Relocate](usdlayer/relocate.md)
+- [USDLayer.ListOperationType](./listoperationtype.md)
+  Identifies an operation slot in a [`USDLayer.ListOperation`](./listoperation.md).
+- [typealias Relocate](./relocate.md)
   A single path relocation from source to target.
-- [typealias RelocatesMap](usdlayer/relocatesmap.md)
+- [typealias RelocatesMap](./relocatesmap.md)
   A mapping from source paths to target paths for relocations.
-- [USDLayer.ChangeList](usdlayer/changelist.md)
+- [USDLayer.ChangeList](./changelist.md)
   A list of changes made to a layer.
 
 

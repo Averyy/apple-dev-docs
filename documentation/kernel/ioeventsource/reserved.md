@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *reserved;
 ```
 
@@ -15,12 +15,13 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
-- [workLoop](ioeventsource/workloop.md)
-- [refcon](ioeventsource/refcon.md)
-- [owner](ioeventsource/owner.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [enabled](ioeventsource/enabled.md)
-- [action](ioeventsource/action-8l7.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [refcon](./refcon.md)
+- [owner](./owner.md)
+- [eventChainNext](./eventchainnext.md)
+- [enabled](./enabled.md)
+- [action](./action-8l7.md)
 
 
 ---

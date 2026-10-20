@@ -1,7 +1,8 @@
 # textureSlice
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the array slice in the texture to update.
 
@@ -17,6 +18,10 @@ The index of the array slice in the texture to update.
 
 ```swift
 var textureSlice: Int
+```
+
+```c
+NSUInteger textureSlice;
 ```
 
 #### Discussion

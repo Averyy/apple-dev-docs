@@ -1,7 +1,8 @@
 # makeSpatialScaler(device:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a spatial scaler instance from this descriptor’s current property values.
 
@@ -19,9 +20,13 @@ Creates a spatial scaler instance from this descriptor’s current property valu
 func makeSpatialScaler(device: any MTLDevice) -> (any MTLFXSpatialScaler)?
 ```
 
+```objc
+- (id<MTLFXSpatialScaler>) newSpatialScalerWithDevice:(id<MTLDevice>) device;
+```
+
 ## Parameters
 
-- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents the GPU that applies the spatial scaler.
+- `device`: An [`MTLDevice`](../../Metal/mtldevice.md) instance that represents the GPU that applies the spatial scaler.
 
 
 ---

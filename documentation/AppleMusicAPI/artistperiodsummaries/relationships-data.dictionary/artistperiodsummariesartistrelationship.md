@@ -1,7 +1,8 @@
 # ArtistPeriodSummaries.Relationships.ArtistPeriodSummariesArtistRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships from artist-period-summary to other resources.
 
@@ -10,7 +11,7 @@ The relationships from artist-period-summary to other resources.
 
 ## Declaration
 
-```swift
+```
 object ArtistPeriodSummaries.Relationships.ArtistPeriodSummariesArtistRelationship
 ```
 

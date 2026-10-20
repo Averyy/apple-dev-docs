@@ -1,7 +1,8 @@
 # flipZ
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that chooses between two variants for the final output computation.
 
@@ -17,6 +18,10 @@ A parameter that chooses between two variants for the final output computation.
 
 ```swift
 var flipZ: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL flipZ;
 ```
 
 #### Discussion

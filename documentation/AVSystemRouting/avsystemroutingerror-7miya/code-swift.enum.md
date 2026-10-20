@@ -1,7 +1,8 @@
 # AVSystemRoutingError.Code
 
 **Framework**: AVSystemRouting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The codes that identify the type of a routing error.
 
@@ -19,16 +20,16 @@ enum Code
 ## Topics
 
 ### Enumeration Cases
-- [AVSystemRoutingError.Code.connectionFailed](avsystemroutingerror-7miya/code-swift.enum/connectionfailed.md)
+- [AVSystemRoutingError.Code.connectionFailed](./code-swift.enum/connectionfailed.md)
   A connection failure with the remote application.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

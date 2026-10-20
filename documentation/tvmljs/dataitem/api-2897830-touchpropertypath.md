@@ -1,7 +1,8 @@
 # touchPropertyPath
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Updates the property path.
 
@@ -10,7 +11,7 @@ Updates the property path.
 
 ## Declaration
 
-```swift
+```
 void touchPropertyPath(
     in String path
 );
@@ -26,9 +27,10 @@ The property path is explicitly updated, and all bound objects are notified.
 
 ## See Also
 
-- [setPropertyPath](dataitem/2897832-setpropertypath.md)
+### Working with Property Paths
+- [setPropertyPath](./api-2897832-setpropertypath.md)
   Sets the value associated with a property path.
-- [getPropertyPath](dataitem/2897819-getpropertypath.md)
+- [getPropertyPath](./api-2897819-getpropertypath.md)
   Retrieves the value associated with a property path.
 
 

@@ -1,7 +1,8 @@
 # preferFastExport
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Expedite the reality file export when possible.
 
@@ -25,9 +26,10 @@ This option may disable archival compression during the export process. This red
 
 ## See Also
 
-- [static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions](entity/writeoptions/prefersmalltexturefiles(quality:).md)
+### Configuring export options
+- [static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions](./prefersmalltexturefiles%28quality%29.md)
   Reduce textures’ file size while preserving its dimensions.
-- [Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality.md)
+- [Entity.WriteOptions.TextureQuality](./texturequality.md)
   A texture quality level.
 
 

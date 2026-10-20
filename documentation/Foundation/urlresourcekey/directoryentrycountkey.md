@@ -1,7 +1,8 @@
 # directoryEntryCountKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key for a count of items in the directory.
 
@@ -20,15 +21,20 @@ The key for a count of items in the directory.
 static let directoryEntryCountKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLDirectoryEntryCountKey;
+```
+
 #### Discussion
 
 Not all file systems can provide this information.
 
 ## See Also
 
-- [static let isDirectoryKey: URLResourceKey](urlresourcekey/isdirectorykey.md)
+### Directory keys
+- [static let isDirectoryKey: URLResourceKey](./isdirectorykey.md)
   A key for determining whether the resource is a directory.
-- [static let parentDirectoryURLKey: URLResourceKey](urlresourcekey/parentdirectoryurlkey.md)
+- [static let parentDirectoryURLKey: URLResourceKey](./parentdirectoryurlkey.md)
   The container directory of the resource.
 
 

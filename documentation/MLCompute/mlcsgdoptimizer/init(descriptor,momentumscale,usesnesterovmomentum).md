@@ -1,21 +1,26 @@
 # init(descriptor:momentumScale:usesNesterovMomentum:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an SGD optimizer with the descriptor, momentum scale, and option to enable Nesterov momentum that you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor, momentumScale: Float, usesNesterovMomentum: Bool)
+```
+
+```objc
++ (instancetype) optimizerWithDescriptor:(MLCOptimizerDescriptor *) optimizerDescriptor momentumScale:(float) momentumScale usesNesterovMomentum:(BOOL) usesNesterovMomentum;
 ```
 
 ## Parameters
@@ -26,7 +31,8 @@ convenience init(descriptor optimizerDescriptor: MLCOptimizerDescriptor, momentu
 
 ## See Also
 
-- [convenience init(descriptor: MLCOptimizerDescriptor)](mlcsgdoptimizer/init(descriptor:).md)
+### Creating an SGD Optimizer
+- [convenience init(descriptor: MLCOptimizerDescriptor)](./init%28descriptor%29.md)
   Creates an SGD optimizer with the descriptor you specify.
 
 

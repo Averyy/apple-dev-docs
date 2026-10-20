@@ -1,7 +1,8 @@
 # VerticalDirection.down
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The downward direction.
 

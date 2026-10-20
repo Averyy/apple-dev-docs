@@ -1,18 +1,19 @@
 # init(flags:n_threads:alloc_memory:free_memory:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new common filter parameters structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -37,9 +38,10 @@ If `alloc_memory` is null, BNNS uses `posix_memalign(_:_:_:)` for memory allocat
 
 ## See Also
 
-- [init(options: BNNSFlags, threadCount: Int, allocator: BNNSAlloc?, deallocator: BNNSFree?)](bnnsfilterparameters/init(options:threadcount:allocator:deallocator:).md)
+### Initializers
+- [init(options: BNNSFlags, threadCount: Int, allocator: BNNSAlloc?, deallocator: BNNSFree?)](./init%28options,threadcount,allocator,deallocator%29.md)
   Returns a new common filter parameters structure using the specified options.
-- [init()](bnnsfilterparameters/init.md)
+- [init()](./init%28%29.md)
 
 
 ---

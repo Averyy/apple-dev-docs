@@ -1,7 +1,8 @@
 # requestAuthorization(for:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests authorization from the user to use the specified kinds of ARKit data.
 
@@ -20,7 +21,7 @@ A dictionary that contains the result of the authorization request for each auth
 
 #### Discussion
 
-You can use the [`requiredAuthorizations`](dataprovider/requiredauthorizations.md) property on any of the types that conform to the [`DataProvider`](dataprovider.md) protocol to get the list of authorizations specific to that data provider and pass it to this method.
+You can use the [`requiredAuthorizations`](../dataprovider/requiredauthorizations.md) property on any of the types that conform to the [`DataProvider`](../dataprovider.md) protocol to get the list of authorizations specific to that data provider and pass it to this method.
 
 ## Parameters
 
@@ -28,11 +29,12 @@ You can use the [`requiredAuthorizations`](dataprovider/requiredauthorizations.m
 
 ## See Also
 
-- [ARKitSession.AuthorizationType](arkitsession/authorizationtype.md)
+### Getting authorization
+- [ARKitSession.AuthorizationType](./authorizationtype.md)
   The authorization types you can request from ARKit.
-- [func queryAuthorization(for: [ARKitSession.AuthorizationType]) async -> [ARKitSession.AuthorizationType : ARKitSession.AuthorizationStatus]](arkitsession/queryauthorization(for:).md)
+- [func queryAuthorization(for: [ARKitSession.AuthorizationType]) async -> [ARKitSession.AuthorizationType : ARKitSession.AuthorizationStatus]](./queryauthorization%28for%29.md)
   Checks whether the current session is authorized for particular authorization types without requesting authorization.
-- [ARKitSession.AuthorizationStatus](arkitsession/authorizationstatus.md)
+- [ARKitSession.AuthorizationStatus](./authorizationstatus.md)
   The authorization states for a type of ARKit data.
 
 

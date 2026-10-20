@@ -1,7 +1,8 @@
 # multilineTextAlignment(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the alignment of a text view that contains multiple lines of text.
 
@@ -23,11 +24,11 @@ func multilineTextAlignment(_ alignment: TextAlignment) -> some View
 
 #### Return Value
 
-A view that aligns the lines of multiline [`Text`](text.md) instances it contains.
+A view that aligns the lines of multiline [`Text`](../text.md) instances it contains.
 
 #### Discussion
 
-Use this modifier to set an alignment for a multiline block of text. For example, the modifier centers the contents of the following [`Text`](text.md) view:
+Use this modifier to set an alignment for a multiline block of text. For example, the modifier centers the contents of the following [`Text`](../text.md) view:
 
 ```swift
 Text("This is a block of text that shows up in a text element as multiple lines.\("\n") Here we have chosen to center this text.")
@@ -42,15 +43,15 @@ The text in the above example spans more than one line because:
 
 The modifier applies the alignment to the all the lines of text in the view, regardless of why wrapping occurs:
 
-![A block of text that spans 5 lines. The lines of text are center-aligned.](/images/com.apple.SwiftUI/View-multilineTextAlignment-1-iOS@2x.png)
+![A block of text that spans 5 lines. The lines of text are center-aligned.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-multilineTextAlignment-1-iOS@2x.png)
 
-The modifier has no effect on a [`Text`](text.md) view that contains only one line of text, because a text view has a width that exactly matches the width of its widest line. If you want to align an entire text view rather than its contents, set the aligment of its container, like a [`VStack`](vstack.md) or a frame that you create with the [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](view/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:).md) modifier.
+The modifier has no effect on a [`Text`](../text.md) view that contains only one line of text, because a text view has a width that exactly matches the width of its widest line. If you want to align an entire text view rather than its contents, set the aligment of its container, like a [`VStack`](../vstack.md) or a frame that you create with the [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](./frame%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight,alignment%29.md) modifier.
 
-> **Note**: You can use this modifier to control the alignment of a [`Text`](text.md) view that you create with the [`init(_:style:)`](text/init(_:style:).md) initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
+> **Note**: You can use this modifier to control the alignment of a [`Text`](../text.md) view that you create with the [`init(_:style:)`](../text/init%28_,style%29.md) initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
 
-The modifier also affects the content alignment of other text container types, like [`TextEditor`](texteditor.md) and [`TextField`](textfield.md). In those cases, the modifier sets the alignment even when the view contains only a single line because view’s width isn’t dictated by the width of the text it contains.
+The modifier also affects the content alignment of other text container types, like [`TextEditor`](../texteditor.md) and [`TextField`](../textfield.md). In those cases, the modifier sets the alignment even when the view contains only a single line because view’s width isn’t dictated by the width of the text it contains.
 
-The modifier operates by setting the [`multilineTextAlignment`](environmentvalues/multilinetextalignment.md) value in the environment, so it affects all the text containers in the modified view hierarchy. For example, you can apply the modifier to a [`VStack`](vstack.md) to configure all the text views inside the stack.
+The modifier operates by setting the [`multilineTextAlignment`](../environmentvalues/multilinetextalignment.md) value in the environment, so it affects all the text containers in the modified view hierarchy. For example, you can apply the modifier to a [`VStack`](../vstack.md) to configure all the text views inside the stack.
 
 ## Parameters
 
@@ -58,11 +59,12 @@ The modifier operates by setting the [`multilineTextAlignment`](environmentvalue
 
 ## See Also
 
-- [func lineSpacing(CGFloat) -> some View](view/linespacing(_:).md)
+### Formatting multiline text
+- [func lineSpacing(CGFloat) -> some View](./linespacing%28_%29.md)
   Sets the amount of space between lines of text in this view.
-- [var lineSpacing: CGFloat](environmentvalues/linespacing.md)
+- [var lineSpacing: CGFloat](../environmentvalues/linespacing.md)
   The distance in points between the bottom of one line fragment and the top of the next.
-- [var multilineTextAlignment: TextAlignment](environmentvalues/multilinetextalignment.md)
+- [var multilineTextAlignment: TextAlignment](../environmentvalues/multilinetextalignment.md)
   An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
 
 

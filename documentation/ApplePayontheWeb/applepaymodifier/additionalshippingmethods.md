@@ -1,7 +1,8 @@
 # additionalShippingMethods
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of shipping method dictionaries that describe the shipping methods that the payment request supports.
 
@@ -11,17 +12,18 @@ An array of shipping method dictionaries that describe the shipping methods that
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayShippingMethod> additionalShippingMethods;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
+- [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
 ## See Also
 
-- [ApplePayShippingMethod](applepayshippingmethod.md)
+### Shipping methods
+- [ApplePayShippingMethod](../applepayshippingmethod.md)
   A dictionary that describes the shipping method for delivering physical goods.
 
 

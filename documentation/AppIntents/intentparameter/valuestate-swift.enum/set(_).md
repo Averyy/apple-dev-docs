@@ -1,7 +1,8 @@
 # IntentParameter.ValueState.set(_:)
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The parameter was provided an initial value.
 

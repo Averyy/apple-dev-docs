@@ -1,23 +1,28 @@
 # CFArrayBSearchValues(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Searches an array for a value using a binary search algorithm.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFArrayBSearchValues(_ theArray: CFArray!, _ range: CFRange, _ value: UnsafeRawPointer!, _ comparator: CFComparatorFunction!, _ context: UnsafeMutableRawPointer!) -> CFIndex
+```
+
+```c
+extern CFIndex CFArrayBSearchValues(CFArrayRef theArray, CFRange range, const void *value, CFComparatorFunction comparator, void *context);
 ```
 
 #### Return Value
@@ -40,19 +45,20 @@ The return value is one of the following:
 
 ## See Also
 
-- [func CFArrayContainsValue(CFArray!, CFRange, UnsafeRawPointer!) -> Bool](cfarraycontainsvalue(_:_:_:).md)
+### Examining an Array
+- [func CFArrayContainsValue(CFArray!, CFRange, UnsafeRawPointer!) -> Bool](./cfarraycontainsvalue%28_,_,_%29.md)
   Reports whether or not a value is in an array.
-- [func CFArrayGetCount(CFArray!) -> CFIndex](cfarraygetcount(_:).md)
+- [func CFArrayGetCount(CFArray!) -> CFIndex](./cfarraygetcount%28_%29.md)
   Returns the number of values currently in an array.
-- [func CFArrayGetCountOfValue(CFArray!, CFRange, UnsafeRawPointer!) -> CFIndex](cfarraygetcountofvalue(_:_:_:).md)
+- [func CFArrayGetCountOfValue(CFArray!, CFRange, UnsafeRawPointer!) -> CFIndex](./cfarraygetcountofvalue%28_,_,_%29.md)
   Counts the number of times a given value occurs in an array.
-- [func CFArrayGetFirstIndexOfValue(CFArray!, CFRange, UnsafeRawPointer!) -> CFIndex](cfarraygetfirstindexofvalue(_:_:_:).md)
+- [func CFArrayGetFirstIndexOfValue(CFArray!, CFRange, UnsafeRawPointer!) -> CFIndex](./cfarraygetfirstindexofvalue%28_,_,_%29.md)
   Searches an array forward for a value.
-- [func CFArrayGetLastIndexOfValue(CFArray!, CFRange, UnsafeRawPointer!) -> CFIndex](cfarraygetlastindexofvalue(_:_:_:).md)
+- [func CFArrayGetLastIndexOfValue(CFArray!, CFRange, UnsafeRawPointer!) -> CFIndex](./cfarraygetlastindexofvalue%28_,_,_%29.md)
   Searches an array backward for a value.
-- [func CFArrayGetValues(CFArray!, CFRange, UnsafeMutablePointer<UnsafeRawPointer?>!)](cfarraygetvalues(_:_:_:).md)
+- [func CFArrayGetValues(CFArray!, CFRange, UnsafeMutablePointer<UnsafeRawPointer?>!)](./cfarraygetvalues%28_,_,_%29.md)
   Fills a buffer with values from an array.
-- [func CFArrayGetValueAtIndex(CFArray!, CFIndex) -> UnsafeRawPointer!](cfarraygetvalueatindex(_:_:).md)
+- [func CFArrayGetValueAtIndex(CFArray!, CFIndex) -> UnsafeRawPointer!](./cfarraygetvalueatindex%28_,_%29.md)
   Retrieves a value at a given index.
 
 

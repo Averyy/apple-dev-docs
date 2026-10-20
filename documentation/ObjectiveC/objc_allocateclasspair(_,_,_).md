@@ -1,7 +1,8 @@
 # objc_allocateClassPair(_:_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new class and metaclass.
 
@@ -20,6 +21,10 @@ Creates a new class and metaclass.
 func objc_allocateClassPair(_ superclass: AnyClass?, _ name: UnsafePointer<CChar>, _ extraBytes: Int) -> AnyClass?
 ```
 
+```c
+extern Classobjc_allocateClassPair(Class superclass, const char *name, size_t extraBytes);
+```
+
 #### Return Value
 
 The new class, or `Nil` if the class could not be created (for example, the desired name is already in use).
@@ -28,7 +33,7 @@ The new class, or `Nil` if the class could not be created (for example, the desi
 
 You can get a pointer to the new metaclass by calling `object_getClass(newClass)`.
 
-To create a new class, start by calling [`objc_allocateClassPair(_:_:_:)`](objc_allocateclasspair(_:_:_:).md). Then set the class’s attributes with functions like [`class_addMethod(_:_:_:_:)`](class_addmethod(_:_:_:_:).md) and [`class_addIvar(_:_:_:_:_:)`](class_addivar(_:_:_:_:_:).md). When you are done building the class, call [`objc_registerClassPair(_:)`](objc_registerclasspair(_:).md). The new class is now ready for use.
+To create a new class, start by calling [`objc_allocateClassPair(_:_:_:)`](./objc_allocateclasspair%28_,_,_%29.md). Then set the class’s attributes with functions like [`class_addMethod(_:_:_:_:)`](./class_addmethod%28_,_,_,_%29.md) and [`class_addIvar(_:_:_:_:_:)`](./class_addivar%28_,_,_,_,_%29.md). When you are done building the class, call [`objc_registerClassPair(_:)`](./objc_registerclasspair%28_%29.md). The new class is now ready for use.
 
 Instance methods and instance variables should be added to the class itself. Class methods should be added to the metaclass.
 
@@ -40,11 +45,12 @@ Instance methods and instance variables should be added to the class itself. Cla
 
 ## See Also
 
-- [func objc_disposeClassPair(AnyClass)](objc_disposeclasspair(_:).md)
+### Adding Classes
+- [func objc_disposeClassPair(AnyClass)](./objc_disposeclasspair%28_%29.md)
   Destroys a class and its associated metaclass.
-- [func objc_registerClassPair(AnyClass)](objc_registerclasspair(_:).md)
-  Registers a class that was allocated using [`objc_allocateClassPair(_:_:_:)`](objc_allocateclasspair(_:_:_:).md).
-- [func objc_duplicateClass(AnyClass, UnsafePointer<CChar>, Int) -> AnyClass](objc_duplicateclass(_:_:_:).md)
+- [func objc_registerClassPair(AnyClass)](./objc_registerclasspair%28_%29.md)
+  Registers a class that was allocated using [`objc_allocateClassPair(_:_:_:)`](./objc_allocateclasspair%28_,_,_%29.md).
+- [func objc_duplicateClass(AnyClass, UnsafePointer<CChar>, Int) -> AnyClass](./objc_duplicateclass%28_,_,_%29.md)
   Used by Foundation’s Key-Value Observing.
 
 

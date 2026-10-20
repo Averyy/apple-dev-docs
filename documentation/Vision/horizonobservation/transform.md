@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform to apply to the detected horizon.
 
@@ -26,7 +27,8 @@ Apply the transform’s inverse to orient the image in an upright position and m
 
 ## See Also
 
-- [func transform(for: CGSize) -> CGAffineTransform](horizonobservation/transform(for:).md)
+### Getting the transform
+- [func transform(for: CGSize) -> CGAffineTransform](./transform%28for%29.md)
   Creates an affine transform for the specified image width and height.
 
 

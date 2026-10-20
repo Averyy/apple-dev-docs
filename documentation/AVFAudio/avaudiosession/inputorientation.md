@@ -1,7 +1,8 @@
 # inputOrientation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An orientation value that dictates which directions represent left and right when capturing audio from a built-in microphone configured for stereo recording.
 
@@ -17,19 +18,24 @@ An orientation value that dictates which directions represent left and right whe
 var inputOrientation: AVAudioSession.StereoOrientation { get }
 ```
 
+```objc
+@property (readonly) AVAudioStereoOrientation inputOrientation;
+```
+
 #### Discussion
 
 If you’re recording video, set the input orientation to match the video orientation. If you’re recording audio only, set the input orientation to match the user interface orientation. In either case, don’t modify the input orientation during recording.
 
-> ❗ **Important**:  The audio session’s input orientation is independent of the [`orientation`](avaudiosessiondatasourcedescription/orientation.md) property of an [`AVAudioSessionDataSourceDescription`](avaudiosessiondatasourcedescription.md).
+> ❗ **Important**:  The audio session’s input orientation is independent of the [`orientation`](../avaudiosessiondatasourcedescription/orientation.md) property of an [`AVAudioSessionDataSourceDescription`](../avaudiosessiondatasourcedescription.md).
 
 ## See Also
 
-- [var preferredInputOrientation: AVAudioSession.StereoOrientation](avaudiosession/preferredinputorientation.md)
+### Enabling stereo recording
+- [var preferredInputOrientation: AVAudioSession.StereoOrientation](./preferredinputorientation.md)
   The audio session’s preferred stereo input orientation.
-- [func setPreferredInputOrientation(AVAudioSession.StereoOrientation) throws](avaudiosession/setpreferredinputorientation(_:).md)
+- [func setPreferredInputOrientation(AVAudioSession.StereoOrientation) throws](./setpreferredinputorientation%28_%29.md)
   Sets the audio session’s preferred stereo input orientation.
-- [AVAudioSession.StereoOrientation](avaudiosession/stereoorientation.md)
+- [AVAudioSession.StereoOrientation](./stereoorientation.md)
   Constants that define the supported stereo orientations.
 
 

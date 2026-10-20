@@ -1,7 +1,8 @@
 # largestSubset(groupedBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the largest group of donations when grouped by the specified key path.
 

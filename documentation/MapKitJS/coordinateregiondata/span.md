@@ -1,7 +1,8 @@
 # span
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The span of the region.
 
@@ -10,13 +11,14 @@ The span of the region.
 
 ## Declaration
 
-```swift
+```
 span: CoordinateSpanData;
 ```
 
 ## See Also
 
-- [center](coordinateregiondata/center.md)
+### Region properties
+- [center](./center.md)
   The center coordinate of the region.
 
 

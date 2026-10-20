@@ -1,7 +1,8 @@
 # boundingRect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle containing all path segments.
 
@@ -26,15 +27,16 @@ This is the smallest rectangle completely enclosing all points in the path but n
 
 ## See Also
 
-- [var cgPath: CGPath](path/cgpath.md)
+### Getting the path’s characteristics
+- [var cgPath: CGPath](./cgpath.md)
   An immutable path representing the elements in the path.
-- [func contains(CGPoint, eoFill: Bool) -> Bool](path/contains(_:eofill:).md)
+- [func contains(CGPoint, eoFill: Bool) -> Bool](./contains%28_,eofill%29.md)
   Returns true if the path contains a specified point.
-- [var currentPoint: CGPoint?](path/currentpoint.md)
+- [var currentPoint: CGPoint?](./currentpoint.md)
   Returns the last point in the path, or nil if the path contains no points.
-- [var description: String](path/description.md)
+- [var description: String](./description.md)
   A description of the path that may be used to recreate the path via `init?(_:)`.
-- [var isEmpty: Bool](path/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the path contains zero elements.
 
 

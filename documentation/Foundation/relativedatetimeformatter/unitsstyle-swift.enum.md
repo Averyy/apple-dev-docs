@@ -1,7 +1,8 @@
 # RelativeDateTimeFormatter.UnitsStyle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the style to use when formatting the units of relative dates.
 
@@ -20,43 +21,48 @@ A type that represents the style to use when formatting the units of relative da
 enum UnitsStyle
 ```
 
+```c
+enum NSRelativeDateTimeFormatterUnitsStyle : NSInteger;
+```
+
 ## Topics
 
 ### Formatting Date and Time Units
-- [RelativeDateTimeFormatter.UnitsStyle.abbreviated](relativedatetimeformatter/unitsstyle-swift.enum/abbreviated.md)
+- [RelativeDateTimeFormatter.UnitsStyle.abbreviated](./unitsstyle-swift.enum/abbreviated.md)
   A style that uses abbreviated units, such as “2 mo. ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.full](relativedatetimeformatter/unitsstyle-swift.enum/full.md)
+- [RelativeDateTimeFormatter.UnitsStyle.full](./unitsstyle-swift.enum/full.md)
   A style that uses full units, such as “2 months ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.short](relativedatetimeformatter/unitsstyle-swift.enum/short.md)
+- [RelativeDateTimeFormatter.UnitsStyle.short](./unitsstyle-swift.enum/short.md)
   A style that uses shortened units, such as “2 mo. ago”.
-- [RelativeDateTimeFormatter.UnitsStyle.spellOut](relativedatetimeformatter/unitsstyle-swift.enum/spellout.md)
+- [RelativeDateTimeFormatter.UnitsStyle.spellOut](./unitsstyle-swift.enum/spellout.md)
   A style that spells out units such as “two months ago”.
 ### Initializers
-- [init?(rawValue: Int)](relativedatetimeformatter/unitsstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unitsstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var calendar: Calendar!](relativedatetimeformatter/calendar.md)
+### Configuring Formatter Options
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for formatting values that don’t have an inherent calendar of their own.
-- [var locale: Locale!](relativedatetimeformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting the date.
-- [var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle](relativedatetimeformatter/datetimestyle-swift.property.md)
+- [var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle](./datetimestyle-swift.property.md)
   The style to use when describing a relative date, for example “yesterday” or “1 day ago”.
-- [RelativeDateTimeFormatter.DateTimeStyle](relativedatetimeformatter/datetimestyle-swift.enum.md)
+- [RelativeDateTimeFormatter.DateTimeStyle](./datetimestyle-swift.enum.md)
   A type that represents the style to use when formatting relative dates, such as “1 week ago” or “last week”.
-- [var unitsStyle: RelativeDateTimeFormatter.UnitsStyle](relativedatetimeformatter/unitsstyle-swift.property.md)
+- [var unitsStyle: RelativeDateTimeFormatter.UnitsStyle](./unitsstyle-swift.property.md)
   The style to use when formatting the quantity or the name of the unit, such as “1 day ago” or “one day ago”.
-- [var formattingContext: Formatter.Context](relativedatetimeformatter/formattingcontext.md)
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   A description of where the formatted string will appear, allowing the formatter to capitalize the output appropriately.
 
 

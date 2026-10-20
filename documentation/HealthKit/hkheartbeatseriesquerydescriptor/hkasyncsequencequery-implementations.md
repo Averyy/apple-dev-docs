@@ -1,11 +1,12 @@
 # HKAsyncSequenceQuery Implementations
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func results(for: HKHealthStore) -> HKHeartbeatSeriesQueryDescriptor.Results](hkheartbeatseriesquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKHeartbeatSeriesQueryDescriptor.Results](./results%28for%29.md)
   Runs a one-shot query that returns an asynchronous sequence of data representing individual heartbeats.
 
 

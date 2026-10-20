@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tip group with the specified presentation priority.
 
@@ -22,7 +23,7 @@ init(_ priority: TipGroup.Priority = .firstAvailable, @Tips.GroupBuilder _ build
 
 ## Parameters
 
-- `priority`: Presentation priority of the tips. The default value is [`TipGroup.Priority.firstAvailable`](tipgroup/priority/firstavailable.md).
+- `priority`: Presentation priority of the tips. The default value is [`firstAvailable`](./priority/firstavailable.md).
 - `builder`: The tips to display.
 
 

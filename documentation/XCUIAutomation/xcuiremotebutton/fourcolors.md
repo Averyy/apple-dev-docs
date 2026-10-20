@@ -1,18 +1,19 @@
 # XCUIRemoteButton.fourColors
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents the color functions button on a remote.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 - tvOS 18.1+
-- visionOS ?+
-- watchOS ?+
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,33 +22,38 @@ A constant that represents the color functions button on a remote.
 case fourColors
 ```
 
+```c
+XCUIRemoteButtonFourColors
+```
+
 ## See Also
 
-- [XCUIRemoteButton.up](xcuiremotebutton/up.md)
+### Remote buttons
+- [XCUIRemoteButton.up](./up.md)
   A constant that represents the up button on a remote.
-- [XCUIRemoteButton.down](xcuiremotebutton/down.md)
+- [XCUIRemoteButton.down](./down.md)
   A constant that represents the down button on a remote.
-- [XCUIRemoteButton.left](xcuiremotebutton/left.md)
+- [XCUIRemoteButton.left](./left.md)
   A constant that represents the left button on a remote.
-- [XCUIRemoteButton.right](xcuiremotebutton/right.md)
+- [XCUIRemoteButton.right](./right.md)
   A constant that represents the right button on a remote.
-- [XCUIRemoteButton.select](xcuiremotebutton/select.md)
+- [XCUIRemoteButton.select](./select.md)
   A constant that represents the select button on a remote.
-- [XCUIRemoteButton.menu](xcuiremotebutton/menu.md)
+- [XCUIRemoteButton.menu](./menu.md)
   A constant that represents the menu button on a remote.
-- [XCUIRemoteButton.playPause](xcuiremotebutton/playpause.md)
+- [XCUIRemoteButton.playPause](./playpause.md)
   A constant that represents the play-and-pause button on a remote.
-- [XCUIRemoteButton.home](xcuiremotebutton/home.md)
+- [XCUIRemoteButton.home](./home.md)
   A constant that represents the home button on a remote.
-- [XCUIRemoteButton.pageUp](xcuiremotebutton/pageup.md)
+- [XCUIRemoteButton.pageUp](./pageup.md)
   A constant that represents the page up button on a remote.
-- [XCUIRemoteButton.pageDown](xcuiremotebutton/pagedown.md)
+- [XCUIRemoteButton.pageDown](./pagedown.md)
   A constant that represents the page down button on a remote.
-- [XCUIRemoteButton.guide](xcuiremotebutton/guide.md)
+- [XCUIRemoteButton.guide](./guide.md)
   A constant that represents the guide button on a remote.
-- [XCUIRemoteButton.oneTwoThree](xcuiremotebutton/onetwothree.md)
+- [XCUIRemoteButton.oneTwoThree](./onetwothree.md)
   A constant that represents the channel-tuning button on a remote.
-- [XCUIRemoteButton.tvProvider](xcuiremotebutton/tvprovider.md)
+- [XCUIRemoteButton.tvProvider](./tvprovider.md)
   A constant that represents the TV provider button on a remote.
 
 

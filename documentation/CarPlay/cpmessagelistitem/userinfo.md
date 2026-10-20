@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque value for the list item.
 
@@ -14,6 +15,10 @@ An opaque value for the list item.
 
 ```swift
 var userInfo: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
 ```
 
 #### Discussion

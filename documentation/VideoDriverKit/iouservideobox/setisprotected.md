@@ -1,7 +1,8 @@
 # SetIsProtected
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value indicating the box’s protection state.
 
@@ -10,7 +11,7 @@ Sets the value indicating the box’s protection state.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIsProtected(bool in_is_protected);
 ```
 
@@ -24,7 +25,8 @@ The object sends a notification to the host to update the object state on succes
 
 ## See Also
 
-- [IsProtected](iouservideobox/isprotected.md)
+### Managing protection state
+- [IsProtected](./isprotected.md)
   A Boolean value indicating if box is protected.
 
 

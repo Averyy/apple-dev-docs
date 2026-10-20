@@ -1,7 +1,8 @@
 # shakeToUndoDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the system’s Shake to Undo setting changes.
 
@@ -19,9 +20,14 @@ nonisolated
 static let shakeToUndoDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityShakeToUndoDidChangeNotification;
+```
+
 ## See Also
 
-- [static let reduceMotionStatusDidChangeNotification: NSNotification.Name](uiaccessibility/reducemotionstatusdidchangenotification.md)
+### Motion
+- [static let reduceMotionStatusDidChangeNotification: NSNotification.Name](./reducemotionstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Reduce Motion setting changes.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the entity that results from translating with the specified size.
@@ -12,8 +13,10 @@ Returns the entity that results from translating with the specified size.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use `Vector3D` variant.
 
 ## Declaration
 
@@ -25,9 +28,15 @@ func translated(by size: Size3D) -> Self
 
 - `size`: The size structure that defines the translation.
 
+## Default Implementations
+
+### Translatable3D Implementations
+- [func translated(by: Vector3D) -> Self](./translated%28by%29-2q1ko.md)
+
 ## See Also
 
-- [func translate(by: Size3D)](translatable3d/translate(by:)-86nwy.md)
+### Deprecated methods
+- [func translate(by: Size3D)](./translate%28by%29-86nwy.md)
   Translates the entity by the specified size.
 
 

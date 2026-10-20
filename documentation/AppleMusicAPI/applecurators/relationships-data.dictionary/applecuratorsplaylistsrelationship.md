@@ -1,7 +1,8 @@
 # AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the Apple curator to its playlists.
 
@@ -10,7 +11,7 @@ A relationship from the Apple curator to its playlists.
 
 ## Declaration
 
-```swift
+```
 object AppleCurators.Relationships.AppleCuratorsPlaylistsRelationship
 ```
 

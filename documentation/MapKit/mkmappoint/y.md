@@ -1,18 +1,19 @@
 # y
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the point along the y-axis of the map.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The location of the point along the y-axis of the map.
 var y: Double
 ```
 
+```c
+double y;
+```
+
 ## See Also
 
-- [var x: Double](mkmappoint/x.md)
+### Getting the point coordinates
+- [var x: Double](./x.md)
   The location of the point along the x-axis of the map.
-- [var coordinate: CLLocationCoordinate2D](mkmappoint/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   A 2D coordinate that corresponds to the latitude and longitude of the specified map point.
 
 

@@ -1,7 +1,8 @@
 # makeBody(configuration:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a view that represents the body of a button.
 
@@ -23,7 +24,7 @@ func makeBody(configuration: BorderedButtonStyle.Configuration) -> some View
 
 #### Discussion
 
-The system calls this method for each [`Button`](button.md) instance in a view hierarchy where this style is the current button style.
+The system calls this method for each [`Button`](../button.md) instance in a view hierarchy where this style is the current button style.
 
 ## Parameters
 

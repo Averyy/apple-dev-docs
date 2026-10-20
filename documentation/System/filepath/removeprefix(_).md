@@ -1,7 +1,8 @@
 # removePrefix(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If `prefix` is a prefix of `self`, removes it and returns `true`. Otherwise returns `false`.
 

@@ -1,7 +1,8 @@
 # renamed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font collection was renamed.
 
@@ -14,11 +15,16 @@ The font collection was renamed.
 static let renamed: NSFontCollection.ActionTypeKey
 ```
 
+```c
+extern NSFontCollectionActionTypeKey const NSFontCollectionWasRenamed;
+```
+
 ## See Also
 
-- [static let shown: NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey/shown.md)
+### Action Key Types
+- [static let shown: NSFontCollection.ActionTypeKey](./shown.md)
   The font collection was shown.
-- [static let hidden: NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey/hidden.md)
+- [static let hidden: NSFontCollection.ActionTypeKey](./hidden.md)
   The font collection was hidden.
 
 

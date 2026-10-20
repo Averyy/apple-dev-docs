@@ -1,7 +1,8 @@
 # KeywordUpdate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for updating an existing Keyword object.
 
@@ -10,7 +11,7 @@ The request body for updating an existing Keyword object.
 
 ## Declaration
 
-```swift
+```
 object KeywordUpdate
 ```
 
@@ -33,23 +34,23 @@ The `KeywordUpdate` object is the request payload for modifying an existing keyw
 ## Topics
 
 ### Type Aliases
-- [type KeywordUpdate.Status](keywordupdate/status-data.typealias.md)
+- [type KeywordUpdate.Status](./keywordupdate/status-data.typealias.md)
   Whether this keyword should be active and eligible to serve after the update.
 
 ## Properties
 
-- `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](money.md). Must be a valid `Money` value. `null` isn’t accepted and returns an error. Mutable.
-- `status` (KeywordUpdate.Status): Whether this keyword is active and eligible to serve. Values: `ENABLED` or `PAUSED`. See [`KeywordStatus`](keywordstatus.md). Mutable.
+- `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](./money.md). Must be a valid `Money` value. `null` isn’t accepted and returns an error. Mutable.
+- `status` (KeywordUpdate.Status): Whether this keyword is active and eligible to serve. Values: `ENABLED` or `PAUSED`. See [`KeywordStatus`](./keywordstatus.md). Mutable.
 
 ## See Also
 
-- [object Keyword](keyword.md)
+- [object Keyword](./keyword.md)
   The targeting unit that connects a user’s search query to the ad group’s ads.
-- [object KeywordCreate](keywordcreate.md)
+- [object KeywordCreate](./keywordcreate.md)
   The request body for creating a new Keyword object.
-- [object KeywordResponse](keywordresponse.md)
+- [object KeywordResponse](./keywordresponse.md)
   The response object for a Keyword operation.
-- [object KeywordQueryResponse](keywordqueryresponse.md)
+- [object KeywordQueryResponse](./keywordqueryresponse.md)
   The response object for a Keyword query, containing matched results and pagination metadata.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 String for the text that has been marked as part of an active input session
@@ -16,6 +17,10 @@ String for the text that has been marked as part of an active input session
 
 ```swift
 var markedText: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * markedText;
 ```
 
 

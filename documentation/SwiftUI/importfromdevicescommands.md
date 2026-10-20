@@ -1,7 +1,8 @@
 # ImportFromDevicesCommands
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A built-in set of commands that enables importing content from nearby devices.
 
@@ -17,34 +18,35 @@ struct ImportFromDevicesCommands
 
 #### Overview
 
-This set of commands adds items based on nearby devices and capabilities, like taking photos or scanning documents. Views can receive imported content from these menu items by using the [`importsItemProviders(_:onImport:)`](view/importsitemproviders(_:onimport:).md) modifier.
+This set of commands adds items based on nearby devices and capabilities, like taking photos or scanning documents. Views can receive imported content from these menu items by using the [`importsItemProviders(_:onImport:)`](./view/importsitemproviders%28_,onimport%29.md) modifier.
 
-These commands are optional and you can explicitly request them by passing a value of this type to the [`commands(content:)`](scene/commands(content:).md) modifier.
+These commands are optional and you can explicitly request them by passing a value of this type to the [`commands(content:)`](./scene/commands%28content%29.md) modifier.
 
 ## Topics
 
 ### Creating the command group
-- [init()](importfromdevicescommands/init.md)
+- [init()](./importfromdevicescommands/init%28%29.md)
   Creates a new set of device import commands.
 
 ## Relationships
 
 ### Conforms To
-- [Commands](commands.md)
+- [Commands](./commands.md)
 
 ## See Also
 
-- [struct SidebarCommands](sidebarcommands.md)
+### Getting built-in command groups
+- [struct SidebarCommands](./sidebarcommands.md)
   A built-in set of commands for manipulating window sidebars.
-- [struct TextEditingCommands](texteditingcommands.md)
+- [struct TextEditingCommands](./texteditingcommands.md)
   A built-in group of commands for searching, editing, and transforming selections of text.
-- [struct TextFormattingCommands](textformattingcommands.md)
+- [struct TextFormattingCommands](./textformattingcommands.md)
   A built-in set of commands for transforming the styles applied to selections of text.
-- [struct ToolbarCommands](toolbarcommands.md)
+- [struct ToolbarCommands](./toolbarcommands.md)
   A built-in set of commands for manipulating window toolbars.
-- [struct InspectorCommands](inspectorcommands.md)
+- [struct InspectorCommands](./inspectorcommands.md)
   A built-in set of commands for manipulating inspectors.
-- [struct EmptyCommands](emptycommands.md)
+- [struct EmptyCommands](./emptycommands.md)
   An empty group of commands.
 
 

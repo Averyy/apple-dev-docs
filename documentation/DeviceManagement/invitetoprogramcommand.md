@@ -1,7 +1,8 @@
 # InviteToProgramCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to invite a user to join the Volume Purchase Program (VPP).
 
@@ -13,14 +14,14 @@ The command to invite a user to join the Volume Purchase Program (VPP).
 
 ## Declaration
 
-```swift
+```
 object InviteToProgramCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object InviteToProgramCommand.Command](invitetoprogramcommand/command-data.dictionary.md)
+- [object InviteToProgramCommand.Command](./invitetoprogramcommand/command-data.dictionary.md)
   The command to invite a user to join the Volume Purchase Program (VPP).
 
 ## Properties
@@ -30,7 +31,8 @@ object InviteToProgramCommand
 
 ## See Also
 
-- [object InviteToProgramResponse](invitetoprogramresponse.md)
+### Commands and responses
+- [object InviteToProgramResponse](./invitetoprogramresponse.md)
   A response from the device after it processes the command to invite a user to join the Volume Purchase Program (VPP).
 
 

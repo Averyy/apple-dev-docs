@@ -1,17 +1,22 @@
 # init(colorSpace:components:count:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object from the specified components of the given color space.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(colorSpace space: NSColorSpace, components: UnsafePointer<CGFloat>, count numberOfComponents: Int)
+```
+
+```objc
++ (NSColor *) colorWithColorSpace:(NSColorSpace *) space components:(const CGFloat *) components count:(NSInteger) numberOfComponents;
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ The color object.
 
 ## See Also
 
-- [func usingColorSpace(NSColorSpace) -> NSColor?](nscolor/usingcolorspace(_:).md)
+### Related Documentation
+- [func usingColorSpace(NSColorSpace) -> NSColor?](./usingcolorspace%28_%29.md)
   Creates a new color object representing the color of the current color object in the specified color space.
 
 

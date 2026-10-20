@@ -1,7 +1,8 @@
 # recordPermission
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s permission to record audio.
 
@@ -20,15 +21,20 @@ The app’s permission to record audio.
 var recordPermission: AVAudioApplication.recordPermission { get }
 ```
 
+```objc
+@property (readonly) AVAudioApplicationRecordPermission recordPermission;
+```
+
 #### Discussion
 
-See [`requestRecordPermission(completionHandler:)`](avaudioapplication/requestrecordpermission(completionhandler:).md) for more information.
+See [`requestRecordPermission(completionHandler:)`](./requestrecordpermission%28completionhandler%29.md) for more information.
 
 ## See Also
 
-- [class func requestRecordPermission(completionHandler: (Bool) -> Void)](avaudioapplication/requestrecordpermission(completionhandler:).md)
+### Requesting audio recording permission
+- [class func requestRecordPermission(completionHandler: (Bool) -> Void)](./requestrecordpermission%28completionhandler%29.md)
   Determines whether the app has permission to record audio.
-- [AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.enum.md)
+- [AVAudioApplication.recordPermission](./recordpermission-swift.enum.md)
   Constants that indicate the app’s permission to record audio.
 
 

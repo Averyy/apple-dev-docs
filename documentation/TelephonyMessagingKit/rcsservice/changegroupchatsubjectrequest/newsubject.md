@@ -1,7 +1,8 @@
 # newSubject
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String specifying the new subject for the group.
 
@@ -16,9 +17,10 @@ var newSubject: String
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/changegroupchatsubjectrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var groupHandle: RCSHandle.Group](rcsservice/changegroupchatsubjectrequest/grouphandle.md)
+- [var groupHandle: RCSHandle.Group](./grouphandle.md)
   Group handle indicating the group for which to change the subject.
 
 

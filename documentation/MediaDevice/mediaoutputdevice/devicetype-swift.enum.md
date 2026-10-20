@@ -1,7 +1,8 @@
 # MediaOutputDevice.DeviceType
 
 **Framework**: Media Device  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A device type used for display in user interfaces.
 
@@ -19,40 +20,41 @@ enum DeviceType
 ## Topics
 
 ### Enumeration Cases
-- [MediaOutputDevice.DeviceType.desktopComputer](mediaoutputdevice/devicetype-swift.enum/desktopcomputer.md)
+- [MediaOutputDevice.DeviceType.desktopComputer](./devicetype-swift.enum/desktopcomputer.md)
   A desktop computer.
-- [MediaOutputDevice.DeviceType.hifiSpeaker](mediaoutputdevice/devicetype-swift.enum/hifispeaker.md)
+- [MediaOutputDevice.DeviceType.hifiSpeaker](./devicetype-swift.enum/hifispeaker.md)
   A hi-fi speaker.
-- [MediaOutputDevice.DeviceType.hifiSpeakerTwo](mediaoutputdevice/devicetype-swift.enum/hifispeakertwo.md)
+- [MediaOutputDevice.DeviceType.hifiSpeakerTwo](./devicetype-swift.enum/hifispeakertwo.md)
   A pair of hi-fi speakers.
-- [MediaOutputDevice.DeviceType.laptopComputer](mediaoutputdevice/devicetype-swift.enum/laptopcomputer.md)
+- [MediaOutputDevice.DeviceType.laptopComputer](./devicetype-swift.enum/laptopcomputer.md)
   A laptop computer.
-- [MediaOutputDevice.DeviceType.mediaStick](mediaoutputdevice/devicetype-swift.enum/mediastick.md)
+- [MediaOutputDevice.DeviceType.mediaStick](./devicetype-swift.enum/mediastick.md)
   A streaming media stick.
-- [MediaOutputDevice.DeviceType.tv](mediaoutputdevice/devicetype-swift.enum/tv.md)
+- [MediaOutputDevice.DeviceType.tv](./devicetype-swift.enum/tv.md)
   A television.
-- [MediaOutputDevice.DeviceType.tvAndHifiSpeaker](mediaoutputdevice/devicetype-swift.enum/tvandhifispeaker.md)
+- [MediaOutputDevice.DeviceType.tvAndHifiSpeaker](./devicetype-swift.enum/tvandhifispeaker.md)
   A television with a connected hi-fi speaker.
-- [MediaOutputDevice.DeviceType.tvAndMediabox](mediaoutputdevice/devicetype-swift.enum/tvandmediabox.md)
+- [MediaOutputDevice.DeviceType.tvAndMediabox](./devicetype-swift.enum/tvandmediabox.md)
   A television with a connected media box.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MediaOutputDevice](mediaoutputdevice.md)
+### Device discovery and management
+- [struct MediaOutputDevice](../mediaoutputdevice.md)
   Represents a discoverable media output device such as a TV, speaker, or streaming stick.
-- [MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct.md)
-  Defines the media capabilities supported by a [`MediaOutputDevice`](mediaoutputdevice.md).
-- [MediaOutputDevice.VolumeControl](mediaoutputdevice/volumecontrol-swift.enum.md)
+- [MediaOutputDevice.Capabilities](./capabilities-swift.struct.md)
+  Defines the media capabilities supported by a [`MediaOutputDevice`](../mediaoutputdevice.md).
+- [MediaOutputDevice.VolumeControl](./volumecontrol-swift.enum.md)
   Defines the type of volume control supported by an output device or group.
-- [MediaOutputDevice.AuthorizationMethod](mediaoutputdevice/authorizationmethod.md)
+- [MediaOutputDevice.AuthorizationMethod](./authorizationmethod.md)
   Specifies what kind of authorization UI to present when connecting to a device.
 
 

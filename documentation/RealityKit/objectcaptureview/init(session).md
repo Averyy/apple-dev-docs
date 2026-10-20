@@ -1,7 +1,8 @@
 # init(session:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Renders the current state of the provided session.
 

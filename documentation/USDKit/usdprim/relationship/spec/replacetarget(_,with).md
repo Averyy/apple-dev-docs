@@ -1,7 +1,8 @@
 # replaceTarget(_:with:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces an authored target path with a new path.
 

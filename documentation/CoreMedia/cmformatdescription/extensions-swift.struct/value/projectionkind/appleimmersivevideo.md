@@ -1,7 +1,8 @@
 # appleImmersiveVideo
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a proprietary projection used for Apple Immersive Video.
 

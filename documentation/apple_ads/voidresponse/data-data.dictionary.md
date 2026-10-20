@@ -1,7 +1,8 @@
 # VoidResponse.Data
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A default generic null response that triggers when no data returns.
 
@@ -10,7 +11,7 @@ A default generic null response that triggers when no data returns.
 
 ## Declaration
 
-```swift
+```
 object VoidResponse.Data
 ```
 

@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar for formatting the date interval.
 
@@ -22,13 +23,14 @@ var calendar: Calendar
 
 ## See Also
 
-- [func timeZone(Date.IntervalFormatStyle.Symbol.TimeZone) -> Date.IntervalFormatStyle](date/intervalformatstyle/timezone(_:).md)
+### Specifying Date Interval Format Styles
+- [func timeZone(Date.IntervalFormatStyle.Symbol.TimeZone) -> Date.IntervalFormatStyle](./timezone%28_%29.md)
   Modifies the date interval format style to use the specified time zone format.
-- [func locale(Locale) -> Date.IntervalFormatStyle](date/intervalformatstyle/locale(_:).md)
+- [func locale(Locale) -> Date.IntervalFormatStyle](./locale%28_%29.md)
   Modifies the date interval format style to use the specified locale.
-- [var locale: Locale](date/intervalformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale for formatting the date and time interval components.
-- [var timeZone: TimeZone](date/intervalformatstyle/timezone.md)
+- [var timeZone: TimeZone](./timezone.md)
   The time zone for formatting the date interval components.
 
 

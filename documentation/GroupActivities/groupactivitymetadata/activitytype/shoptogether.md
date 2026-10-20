@@ -1,7 +1,8 @@
 # shopTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared shopping activity, such as browsing for products online together.
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the auxiliary storage on the local file system.
 
@@ -12,6 +13,10 @@ The URL of the auxiliary storage on the local file system.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (copy, readonly) NSURL * URL;
 ```
 
 

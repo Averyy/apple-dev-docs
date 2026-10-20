@@ -1,7 +1,8 @@
 # deviceController(_:nodeID:downloadLogOf:timeout:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.2+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+optional func deviceController(_ controller: UUID, nodeID: NSNumber, downloadLogOf type: MTRDiagnosticLogType, timeout: TimeInterval, completion: @escaping @Sendable (URL?, (any Error)?) -> Void)
+```
+
+```swift
 optional func deviceController(_ controller: UUID, nodeID: NSNumber, downloadLogOf type: MTRDiagnosticLogType, timeout: TimeInterval) async throws -> URL
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID downloadLogOfType:(MTRDiagnosticLogType) type timeout:(NSTimeInterval) timeout completion:(void (^)(NSURL *url, NSError *error)) completion;
 ```
 
 

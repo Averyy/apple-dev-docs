@@ -1,7 +1,8 @@
 # CMSEncoderCopyRecipients(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the array of recipients specified with the `CMSEncoderAddRecipients` function.
 
@@ -14,20 +15,25 @@ Obtains the array of recipients specified with the `CMSEncoderAddRecipients` fun
 func CMSEncoderCopyRecipients(_ cmsEncoder: CMSEncoder, _ recipientsOut: UnsafeMutablePointer<CFArray?>) -> OSStatus
 ```
 
+```c
+OSStatus CMSEncoderCopyRecipients(CMSEncoderRef cmsEncoder, CFArrayRef*recipientsOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the [`CMSEncoderCreate(_:)`](cmsencodercreate(_:).md) function.
-- `recipientsOut`: On return, points to an array of certificate objects of type [`SecCertificate`](seccertificate.md) of the recipients of the message. If the [`CMSEncoderAddRecipients(_:_:)`](cmsencoderaddrecipients(_:_:).md) function has not been called for this message, this function returns a `NULL` array. You must use the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this reference when you are finished using it.
+- `cmsEncoder`: The CMSEncoder reference returned by the [`CMSEncoderCreate(_:)`](./cmsencodercreate%28_%29.md) function.
+- `recipientsOut`: On return, points to an array of certificate objects of type [`SecCertificate`](./seccertificate.md) of the recipients of the message. If the [`CMSEncoderAddRecipients(_:_:)`](./cmsencoderaddrecipients%28_,_%29.md) function has not been called for this message, this function returns a `NULL` array. You must use the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this reference when you are finished using it.
 
 ## See Also
 
-- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](cmsencodercreate(_:).md)
+### Related Documentation
+- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](./cmsencodercreate%28_%29.md)
   Creates a CMSEncoder reference.
-- [func CMSEncoderAddRecipients(CMSEncoder, CFTypeRef) -> OSStatus](cmsencoderaddrecipients(_:_:).md)
+- [func CMSEncoderAddRecipients(CMSEncoder, CFTypeRef) -> OSStatus](./cmsencoderaddrecipients%28_,_%29.md)
   Specifies a message is to be encrypted and specifies the recipients of the message.
 
 

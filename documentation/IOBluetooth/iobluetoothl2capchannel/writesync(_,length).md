@@ -1,17 +1,22 @@
 # writeSync(_:length:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the given data synchronously over the target L2CAP channel to the remote device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func writeSync(_ data: UnsafeMutableRawPointer!, length: UInt16) -> IOReturn
+```
+
+```objc
+- (IOReturn) writeSync:(void *) data length:(UInt16) length;
 ```
 
 #### Return Value

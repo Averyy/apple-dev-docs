@@ -1,7 +1,8 @@
 # UITableViewContentHuggingElements
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that determine which types of items in a table view tightly hug their content.
 
@@ -18,30 +19,35 @@ Constants that determine which types of items in a table view tightly hug their 
 struct UITableViewContentHuggingElements
 ```
 
+```c
+enum UITableViewContentHuggingElements : NSInteger;
+```
+
 ## Topics
 
 ### Specifying content-hugging elements
-- [static var sectionHeaders: UITableViewContentHuggingElements](uitableviewcontenthuggingelements/sectionheaders.md)
+- [static var sectionHeaders: UITableViewContentHuggingElements](./uitableviewcontenthuggingelements/sectionheaders.md)
   A mode where section headers in the table view tightly hug their content.
 ### Creating a content-hugging elements structure
-- [init(rawValue: Int)](uitableviewcontenthuggingelements/init(rawvalue:).md)
+- [init(rawValue: Int)](./uitableviewcontenthuggingelements/init%28rawvalue%29.md)
   Creates a content-hugging elements structure.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var contentHuggingElements: UITableViewContentHuggingElements](uitableview/contenthuggingelements.md)
+### Managing content-hugging behavior
+- [var contentHuggingElements: UITableViewContentHuggingElements](./uitableview/contenthuggingelements.md)
   A setting that determines which type of items tightly hug their content.
 
 

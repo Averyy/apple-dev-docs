@@ -1,7 +1,8 @@
 # errSecMissingAttributeStartDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A start date attribute is missing.
 
@@ -18,6 +19,10 @@ A start date attribute is missing.
 
 ```swift
 var errSecMissingAttributeStartDate: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeStartDate
 ```
 
 

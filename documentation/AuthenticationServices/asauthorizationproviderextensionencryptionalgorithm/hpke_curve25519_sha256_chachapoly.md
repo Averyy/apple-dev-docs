@@ -1,7 +1,8 @@
 # hpke_Curve25519_SHA256_ChachaPoly
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A cipher suite for HPKE that uses X25519 elliptic curve key agreement, SHA-2 key derivation with a 256-bit digest, and the ChaCha20 stream cipher with the Poly1305 message authentication code.
 
@@ -12,6 +13,10 @@ A cipher suite for HPKE that uses X25519 elliptic curve key agreement, SHA-2 key
 
 ```swift
 static let hpke_Curve25519_SHA256_ChachaPoly: ASAuthorizationProviderExtensionEncryptionAlgorithm
+```
+
+```c
+extern ASAuthorizationProviderExtensionEncryptionAlgorithm const ASAuthorizationProviderExtensionEncryptionAlgorithmHPKE_Curve25519_SHA256_ChachaPoly;
 ```
 
 

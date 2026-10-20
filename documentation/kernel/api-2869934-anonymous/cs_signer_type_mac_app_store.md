@@ -1,14 +1,15 @@
 # CS_SIGNER_TYPE_MAC_APP_STORE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 CS_SIGNER_TYPE_MAC_APP_STORE = 6
 ```
 

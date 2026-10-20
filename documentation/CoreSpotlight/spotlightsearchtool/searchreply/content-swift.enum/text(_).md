@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.text(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 LLM-generated text summary or analysis.
 

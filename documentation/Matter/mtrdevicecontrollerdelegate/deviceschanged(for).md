@@ -1,7 +1,8 @@
 # devicesChanged(for:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the delegate when the list of MTRDevice objects in memory has changed.
 
@@ -18,6 +19,10 @@ Notify the delegate when the list of MTRDevice objects in memory has changed.
 
 ```swift
 optional func devicesChanged(for controller: MTRDeviceController)
+```
+
+```objc
+- (void) devicesChangedForController:(MTRDeviceController *) controller;
 ```
 
 

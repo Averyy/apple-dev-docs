@@ -1,23 +1,28 @@
 # SCNShadowMode
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for SceneKit’s rendering of shadows cast by a light, used by the [`shadowMode`](scnlight/shadowmode.md) property.
+Options for SceneKit’s rendering of shadows cast by a light, used by the [`shadowMode`](./scnlight/shadowmode.md) property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 enum SCNShadowMode
+```
+
+```c
+enum SCNShadowMode : NSInteger;
 ```
 
 #### Overview
@@ -27,46 +32,47 @@ Each shadow mode may have a positive or negative effect on rendering performance
 ## Topics
 
 ### Constants
-- [SCNShadowMode.forward](scnshadowmode/forward.md)
+- [SCNShadowMode.forward](./scnshadowmode/forward.md)
   SceneKit renders shadows during lighting computations.
-- [SCNShadowMode.deferred](scnshadowmode/deferred.md)
+- [SCNShadowMode.deferred](./scnshadowmode/deferred.md)
   SceneKit renders shadows in a postprocessing pass.
-- [SCNShadowMode.modulated](scnshadowmode/modulated.md)
-  SceneKit renders shadows by projecting the light’s [`gobo`](scnlight/gobo.md) image. The light does not illuminate the scene.
+- [SCNShadowMode.modulated](./scnshadowmode/modulated.md)
+  SceneKit renders shadows by projecting the light’s [`gobo`](./scnlight/gobo.md) image. The light does not illuminate the scene.
 ### Initializers
-- [init?(rawValue: Int)](scnshadowmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnshadowmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var castsShadow: Bool](scnlight/castsshadow.md)
+### Managing Shadows Cast by the Light
+- [var castsShadow: Bool](./scnlight/castsshadow.md)
   A Boolean value that determines whether the light casts shadows.
-- [var shadowRadius: CGFloat](scnlight/shadowradius.md)
+- [var shadowRadius: CGFloat](./scnlight/shadowradius.md)
   A number that specifies the amount of blurring around the edges of shadows cast by the light. Animatable.
-- [var shadowColor: Any](scnlight/shadowcolor.md)
+- [var shadowColor: Any](./scnlight/shadowcolor.md)
   The color of shadows cast by the light. Animatable.
-- [var shadowMapSize: CGSize](scnlight/shadowmapsize.md)
+- [var shadowMapSize: CGSize](./scnlight/shadowmapsize.md)
   The size of the shadow map image that SceneKit renders when creating shadows.
-- [var shadowSampleCount: Int](scnlight/shadowsamplecount.md)
+- [var shadowSampleCount: Int](./scnlight/shadowsamplecount.md)
   The number of samples from the shadow map that SceneKit uses to render each pixel.
-- [var shadowMode: SCNShadowMode](scnlight/shadowmode.md)
+- [var shadowMode: SCNShadowMode](./scnlight/shadowmode.md)
   The mode SceneKit uses to render shadows.
-- [var shadowBias: CGFloat](scnlight/shadowbias.md)
+- [var shadowBias: CGFloat](./scnlight/shadowbias.md)
   The amount of correction to apply to the shadow to prevent rendering artifacts.
-- [var orthographicScale: CGFloat](scnlight/orthographicscale.md)
+- [var orthographicScale: CGFloat](./scnlight/orthographicscale.md)
   The orthographic scale SceneKit uses when rendering the shadow map for a directional light.
-- [var zFar: CGFloat](scnlight/zfar.md)
+- [var zFar: CGFloat](./scnlight/zfar.md)
   The maximum distance between the light and a visible surface for casting shadows.
-- [var zNear: CGFloat](scnlight/znear.md)
+- [var zNear: CGFloat](./scnlight/znear.md)
   The minimum distance between the light and a visible surface for casting shadows. Animatable.
 
 

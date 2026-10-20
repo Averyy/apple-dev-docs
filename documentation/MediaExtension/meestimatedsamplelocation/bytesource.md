@@ -1,7 +1,8 @@
 # byteSource
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte source to use to read the data for the sample.
 
@@ -14,11 +15,16 @@ The byte source to use to read the data for the sample.
 var byteSource: MEByteSource { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) MEByteSource * byteSource;
+```
+
 ## See Also
 
-- [var estimatedSampleLocation: AVSampleCursorStorageRange](meestimatedsamplelocation/estimatedsamplelocation.md)
+### Inspecting an estimated sample location
+- [var estimatedSampleLocation: AVSampleCursorStorageRange](./estimatedsamplelocation.md)
   The estimated starting file offset and size in bytes of the sample.
-- [var refinementDataLocation: AVSampleCursorStorageRange](meestimatedsamplelocation/refinementdatalocation.md)
+- [var refinementDataLocation: AVSampleCursorStorageRange](./refinementdatalocation.md)
   The starting file offset and size in bytes of the data necessary to provide an accurate sample location.
 
 

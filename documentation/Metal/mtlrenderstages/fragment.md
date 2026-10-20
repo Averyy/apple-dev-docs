@@ -1,7 +1,8 @@
 # fragment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The fragment rendering stage.
 
@@ -19,15 +20,20 @@ The fragment rendering stage.
 static var fragment: MTLRenderStages { get }
 ```
 
+```c
+MTLRenderStageFragment
+```
+
 ## See Also
 
-- [static var object: MTLRenderStages](mtlrenderstages/object.md)
+### Render pass stages
+- [static var object: MTLRenderStages](./object.md)
   The object rendering stage.
-- [static var mesh: MTLRenderStages](mtlrenderstages/mesh.md)
+- [static var mesh: MTLRenderStages](./mesh.md)
   The mesh rendering stage.
-- [static var vertex: MTLRenderStages](mtlrenderstages/vertex.md)
+- [static var vertex: MTLRenderStages](./vertex.md)
   The vertex rendering stage.
-- [static var tile: MTLRenderStages](mtlrenderstages/tile.md)
+- [static var tile: MTLRenderStages](./tile.md)
   The tile rendering stage.
 
 

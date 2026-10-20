@@ -1,7 +1,8 @@
 # MLTaskState.cancelling
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state of a machine learning task that’s in mid-termination, before it could finish successfully.
 
@@ -20,11 +21,16 @@ The state of a machine learning task that’s in mid-termination, before it coul
 case cancelling
 ```
 
+```c
+MLTaskStateCancelling
+```
+
 ## See Also
 
-- [MLTaskState.running](mltaskstate/running.md)
+### Transient states
+- [MLTaskState.running](./running.md)
   The state of a machine learning task that’s executing.
-- [MLTaskState.suspended](mltaskstate/suspended.md)
+- [MLTaskState.suspended](./suspended.md)
   The state of a machine learning task that’s paused.
 
 

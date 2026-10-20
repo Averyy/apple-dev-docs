@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The sort order that the comparator uses to compare.
@@ -23,9 +24,10 @@ var order: SortOrder { get set }
 
 ## See Also
 
-- [static var localized: String.Comparator](sortcomparator/localized.md)
+### Inspecting a Comparator
+- [static var localized: String.Comparator](./localized.md)
   A comparator that compares a string using a localized comparison in the current locale.
-- [static var localizedStandard: String.Comparator](sortcomparator/localizedstandard.md)
+- [static var localizedStandard: String.Comparator](./localizedstandard.md)
   A comparator that compares a string using a localized, numeric comparison in the current locale.
 
 

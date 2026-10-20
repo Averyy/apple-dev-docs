@@ -1,7 +1,8 @@
 # init(library:name:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new function reference from the provided shader library and function name string.
 

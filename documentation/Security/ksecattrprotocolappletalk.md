@@ -1,7 +1,8 @@
 # kSecAttrProtocolAppleTalk
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 AFP over AppleTalk.
 
@@ -18,6 +19,10 @@ AFP over AppleTalk.
 
 ```swift
 let kSecAttrProtocolAppleTalk: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolAppleTalk;
 ```
 
 

@@ -1,7 +1,8 @@
 # MetalKit
 
 **Framework**: MetalKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Build Metal apps quicker and easier using a common set of utility classes.
 
@@ -16,28 +17,28 @@ Build Metal apps quicker and easier using a common set of utility classes.
 ## Topics
 
 ### View Management
-- [class MTKView](mtkview.md)
+- [class MTKView](./mtkview.md)
   A specialized view that creates, configures, and displays Metal objects.
-- [protocol MTKViewDelegate](mtkviewdelegate.md)
+- [protocol MTKViewDelegate](./mtkviewdelegate.md)
   Methods for responding to a MetalKit view’s drawing and resizing events.
 ### Texture Loading
-- [class MTKTextureLoader](mtktextureloader.md)
+- [class MTKTextureLoader](./mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 ### Model Handling
-- [class MTKMesh](mtkmesh.md)
+- [class MTKMesh](./mtkmesh.md)
   A container for the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBuffer](mtkmeshbuffer.md)
+- [class MTKMeshBuffer](./mtkmeshbuffer.md)
   A buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBufferAllocator](mtkmeshbufferallocator.md)
+- [class MTKMeshBufferAllocator](./mtkmeshbufferallocator.md)
   An interface for allocating a MetalKit buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKSubmesh](mtksubmesh.md)
+- [class MTKSubmesh](./mtksubmesh.md)
   A container for the index data of a Model I/O submesh, suitable for use in a Metal app.
-- [Conversion Functions](conversion-functions.md)
+- [Conversion Functions](./conversion-functions.md)
   Convert between Metal and Model I/O vertex representations.
-- [Model Errors](model-errors.md)
+- [Model Errors](./model-errors.md)
   Learn about errors thrown by model handling methods.
 ### Reference
-- [MetalKit Functions](metalkit-functions.md)
+- [MetalKit Functions](./metalkit-functions.md)
   The MetalKit framework defines helper functions that are used to efficiently interface with the Metal and Model I/O frameworks.
 
 

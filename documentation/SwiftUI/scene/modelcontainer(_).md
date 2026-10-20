@@ -1,7 +1,8 @@
 # modelContainer(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the model container and associated model context in this scene’s environment.
 
@@ -38,7 +39,7 @@ struct RecipesApp: App {
 }
 ```
 
-The environment’s [`modelContext`](environmentvalues/modelcontext.md) property will be assigned a new context associated with this container. All implicit model context operations in this scene, such as `Query` properties, will use the environment’s context.
+The environment’s [`modelContext`](../environmentvalues/modelcontext.md) property will be assigned a new context associated with this container. All implicit model context operations in this scene, such as `Query` properties, will use the environment’s context.
 
 ## Parameters
 
@@ -46,9 +47,10 @@ The environment’s [`modelContext`](environmentvalues/modelcontext.md) property
 
 ## See Also
 
-- [func modelContext(ModelContext) -> some Scene](scene/modelcontext(_:).md)
+### Configuring a data model
+- [func modelContext(ModelContext) -> some Scene](./modelcontext%28_%29.md)
   Sets the model context in this scene’s environment.
-- [func modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)](scene/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:).md)
+- [func modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)](./modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29.md)
   Sets the model container in this scene for storing the provided model type, creating a new container if necessary, and also sets a model context for that container in this scene’s environment.
 
 

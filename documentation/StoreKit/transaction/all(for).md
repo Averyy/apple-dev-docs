@@ -1,7 +1,8 @@
 # all(for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets all the transactions associated with this product ID.
 

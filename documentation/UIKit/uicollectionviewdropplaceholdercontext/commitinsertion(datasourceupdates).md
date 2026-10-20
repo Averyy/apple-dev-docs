@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Exchanges the placeholder cell for a cell with the final content.
@@ -18,13 +19,17 @@ Exchanges the placeholder cell for a cell with the final content.
 func commitInsertion(dataSourceUpdates: (IndexPath) -> Void) -> Bool
 ```
 
+```objc
+- (BOOL) commitInsertionWithDataSourceUpdates:(void (^)(NSIndexPath *insertionIndexPath)) dataSourceUpdates;
+```
+
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
+- [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the placeholder was replaced by your content or [`false`](https://developer.apple.com/documentation/swift/false) if the placeholder was no longer in the collection view.
+[`true`](../../Swift/true.md) if the placeholder was replaced by your content or [`false`](../../Swift/false.md) if the placeholder was no longer in the collection view.
 
 #### Discussion
 
@@ -34,11 +39,14 @@ If the placeholder cell is no longer present, this method does not execute your 
 
 ## Parameters
 
-- `dataSourceUpdates`: The handler block to execute as part of committing your changes. Use this block to update your collection view’s data source with the actual data that you received. This block has no return value and takes the following parameter: - **insertionIndexPath**: The location at which to insert any items. Always use this index path for the insertion point instead of any cached values.
+- `dataSourceUpdates`: The handler block to execute as part of committing your changes. Use this block to update your collection view’s data source with the actual data that you received. This block has no return value and takes the following parameter:
+
+  - **insertionIndexPath**: The location at which to insert any items. Always use this index path for the insertion point instead of any cached values.
 
 ## See Also
 
-- [func setNeedsCellUpdate()](uicollectionviewdropplaceholdercontext/setneedscellupdate.md)
+### Updating the Placeholder Cell
+- [func setNeedsCellUpdate()](./setneedscellupdate%28%29.md)
   Updates the contents of the placeholder cell.
 
 

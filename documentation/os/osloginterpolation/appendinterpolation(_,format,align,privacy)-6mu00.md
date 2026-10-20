@@ -1,7 +1,8 @@
 # appendInterpolation(_:format:align:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated double.
 
@@ -11,7 +12,7 @@ Appends an interpolated double.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,13 +28,14 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `number`: The double value to add to the message.
-- `format`: The format to apply to the double value. You format floating-point numbers as fixed-point, hexadecimal, exponential, or hybrid values. If you don’t specify this parameter, the default format uses a fixed-point value. For more information, see [`OSLogFloatFormatting`](oslogfloatformatting.md).
+- `format`: The format to apply to the double value. You format floating-point numbers as fixed-point, hexadecimal, exponential, or hybrid values. If you don’t specify this parameter, the default format uses a fixed-point value. For more information, see [`OSLogFloatFormatting`](../oslogfloatformatting.md).
 - `align`: The alignment to apply to the value. Use this parameter to specify the width of the column containing the data, and the alignment of the data within that column. If you don’t specify this parameter, the system doesn’t align the value.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> Double, format: OSLogFloatFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:format:align:privacy:attributes:)-8bi90.md)
+### Appending Doubles
+- [func appendInterpolation(@autoclosure () -> Double, format: OSLogFloatFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,format,align,privacy,attributes%29-8bi90.md)
   Appends an interpolated double with the specified attributes.
 
 

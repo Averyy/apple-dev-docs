@@ -1,7 +1,8 @@
 # currencyGroupingSeparator
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency grouping separator for the receiver.
 
@@ -20,13 +21,18 @@ The currency grouping separator for the receiver.
 var currencyGroupingSeparator: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * currencyGroupingSeparator;
+```
+
 ## See Also
 
-- [var currencySymbol: String!](numberformatter/currencysymbol.md)
+### Configuring the Format of Currency
+- [var currencySymbol: String!](./currencysymbol.md)
   The string used by the receiver as a local currency symbol.
-- [var currencyCode: String!](numberformatter/currencycode.md)
+- [var currencyCode: String!](./currencycode.md)
   The receiver’s currency code.
-- [var internationalCurrencySymbol: String!](numberformatter/internationalcurrencysymbol.md)
+- [var internationalCurrencySymbol: String!](./internationalcurrencysymbol.md)
   The international currency symbol used by the receiver.
 
 

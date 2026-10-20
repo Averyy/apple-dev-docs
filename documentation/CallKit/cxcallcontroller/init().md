@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new call controller with a private, serial queue, which is used for calling completion blocks.
 
@@ -18,13 +19,18 @@ Initializes a new call controller with a private, serial queue, which is used fo
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new call controller initialized with a private, serial queue.
 
 ## See Also
 
-- [init(queue: dispatch_queue_t)](cxcallcontroller/init(queue:).md)
+### Creating New Call Controllers
+- [init(queue: dispatch_queue_t)](./init%28queue%29.md)
   Initializes a new call controller with a specified queue, which is used for calling completion blocks.
 
 

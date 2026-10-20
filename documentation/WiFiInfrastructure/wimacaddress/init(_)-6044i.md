@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a MAC Address from the provided data.
 
@@ -26,7 +27,8 @@ The mac address, or `nil` if the input data was invalid and it could not be cons
 
 ## See Also
 
-- [let data: Data](wimacaddress/data.md)
+### Working with MAC Addresses as data
+- [let data: Data](./data.md)
   The raw data value of the MAC Address.
 
 

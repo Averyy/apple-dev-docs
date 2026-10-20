@@ -1,7 +1,8 @@
 # libraries
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The libraries that the framework loaded or failed to load.
 
@@ -10,7 +11,7 @@ The libraries that the framework loaded or failed to load.
 
 ## Declaration
 
-```swift
+```
 readonly libraries: string[];
 ```
 

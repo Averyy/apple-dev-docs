@@ -1,7 +1,8 @@
 # init(asset:presetName:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an export session with a preset configuration.
 
@@ -19,14 +20,19 @@ Creates an export session with a preset configuration.
 init?(asset: AVAsset, presetName: String)
 ```
 
+```objc
+- (instancetype) initWithAsset:(AVAsset *) asset presetName:(NSString *) presetName;
+```
+
 ## Parameters
 
 - `asset`: The asset to export.
-- `presetName`: A string constant that specifies the preset template for the export. See [`Export presets`](export-presets.md) for available values.
+- `presetName`: A string constant that specifies the preset template for the export. See [Export presets](../export-presets.md) for available values.
 
 ## See Also
 
-- [Export presets](export-presets.md)
+### Creating an export session
+- [Export presets](../export-presets.md)
   Configure an export session to output media in standard sizes and formats.
 
 

@@ -1,7 +1,8 @@
 # add(to:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func add(to view: NSView!)
+```
+
+```objc
+- (void) addSaveOptionsToView:(NSView *) view;
 ```
 
 

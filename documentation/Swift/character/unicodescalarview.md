@@ -1,7 +1,8 @@
 # Character.UnicodeScalarView
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,12 +21,13 @@ typealias UnicodeScalarView = String.UnicodeScalarView
 
 ## See Also
 
-- [init(Unicode.Scalar)](character/init(_:)-8hq6x.md)
+### Working with a Character’s Unicode Values
+- [init(Unicode.Scalar)](./init%28_%29-8hq6x.md)
   Creates a character containing the given Unicode scalar value.
-- [var unicodeScalars: Character.UnicodeScalarView](character/unicodescalars.md)
-- [var isASCII: Bool](character/isascii.md)
+- [var unicodeScalars: Character.UnicodeScalarView](./unicodescalars.md)
+- [var isASCII: Bool](./isascii.md)
   A Boolean value indicating whether this is an ASCII character.
-- [var asciiValue: UInt8?](character/asciivalue.md)
+- [var asciiValue: UInt8?](./asciivalue.md)
   The ASCII encoding value of this character, if it is an ASCII character.
 
 

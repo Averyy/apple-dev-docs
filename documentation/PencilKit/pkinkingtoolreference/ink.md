@@ -1,7 +1,8 @@
 # ink
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ink that this tool creates strokes with.
 
@@ -18,11 +19,16 @@ The ink that this tool creates strokes with.
 var ink: PKInk { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PKInk * ink;
+```
+
 ## See Also
 
-- [var color: UIColor](pkinkingtoolreference/color.md)
+### Getting the inking tool attributes
+- [var color: UIColor](./color.md)
   The color of the ink.
-- [var width: CGFloat](pkinkingtoolreference/width.md)
+- [var width: CGFloat](./width.md)
   The base line width for new content.
 
 

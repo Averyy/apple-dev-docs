@@ -1,7 +1,8 @@
 # lineDashOffset
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The number of CSS pixels to use as the offset when drawing a line’s dash pattern.
 
@@ -10,7 +11,7 @@ The number of CSS pixels to use as the offset when drawing a line’s dash patte
 
 ## Declaration
 
-```swift
+```
 lineDashOffset?: number;
 ```
 
@@ -20,13 +21,14 @@ This has no effect if you set `lineDash` to draw solid lines by setting this pro
 
 ## See Also
 
-- [lineCap](styleconstructoroptions/linecap.md)
+### Setting line styles
+- [lineCap](./linecap.md)
   The style to use when drawing line endings.
-- [lineDash](styleconstructoroptions/linedash.md)
+- [lineDash](./linedash.md)
   An array of line and gap lengths for creating a dashed line.
-- [lineJoin](styleconstructoroptions/linejoin.md)
+- [lineJoin](./linejoin.md)
   The style to use when drawing joins between line segments.
-- [lineWidth](styleconstructoroptions/linewidth.md)
+- [lineWidth](./linewidth.md)
   The width of a line’s stroke, in CSS pixels.
 
 

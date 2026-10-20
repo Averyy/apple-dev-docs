@@ -1,9 +1,10 @@
 # forceExpiration
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Always set the [`considerExpiration`](seccsflags/considerexpiration.md) flag when validating the code.
+Always set the [`considerExpiration`](../seccsflags/considerexpiration.md) flag when validating the code.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ Always set the [`considerExpiration`](seccsflags/considerexpiration.md) flag whe
 
 ```swift
 static var forceExpiration: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureForceExpiration
 ```
 
 #### Discussion

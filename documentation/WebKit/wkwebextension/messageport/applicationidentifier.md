@@ -1,7 +1,8 @@
 # applicationIdentifier
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the app to which this port should be connected.
 
@@ -16,6 +17,10 @@ The unique identifier for the app to which this port should be connected.
 
 ```swift
 var applicationIdentifier: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * applicationIdentifier;
 ```
 
 #### Discussion

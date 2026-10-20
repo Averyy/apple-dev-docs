@@ -1,7 +1,8 @@
 # loadAppleScriptObjectiveCScripts()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func loadAppleScriptObjectiveCScripts()
+```
+
+```objc
+- (void) loadAppleScriptObjectiveCScripts;
 ```
 
 

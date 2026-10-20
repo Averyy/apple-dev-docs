@@ -1,17 +1,22 @@
 # takeObjectValueFrom(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the receiver’s cell to the object value obtained from the specified object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func takeObjectValueFrom(_ sender: Any?)
+```
+
+```objc
+- (void) takeObjectValueFrom:(id) sender;
 ```
 
 #### Discussion
@@ -20,19 +25,20 @@ You can use this method to link action messages between controls. It permits one
 
 ## Parameters
 
-- `sender`: The object from which to take the value. This object must respond to the [`objectValue`](nscontrol/objectvalue.md) property.
+- `sender`: The object from which to take the value. This object must respond to the [`objectValue`](./objectvalue.md) property.
 
 ## See Also
 
-- [func takeDoubleValueFrom(Any?)](nscontrol/takedoublevaluefrom(_:).md)
+### Interacting with Other Controls
+- [func takeDoubleValueFrom(Any?)](./takedoublevaluefrom%28_%29.md)
   Sets the value of the receiver’s cell to a double-precision floating-point value obtained from the specified object.
-- [func takeFloatValueFrom(Any?)](nscontrol/takefloatvaluefrom(_:).md)
+- [func takeFloatValueFrom(Any?)](./takefloatvaluefrom%28_%29.md)
   Sets the value of the receiver’s cell to a single-precision floating-point value obtained from the specified object.
-- [func takeIntValueFrom(Any?)](nscontrol/takeintvaluefrom(_:).md)
+- [func takeIntValueFrom(Any?)](./takeintvaluefrom%28_%29.md)
   Sets the value of the receiver’s cell to an integer value obtained from the specified object.
-- [func takeIntegerValueFrom(Any?)](nscontrol/takeintegervaluefrom(_:).md)
+- [func takeIntegerValueFrom(Any?)](./takeintegervaluefrom%28_%29.md)
   Sets the value of the receiver’s cell to an `NSInteger` value obtained from the specified object.
-- [func takeStringValueFrom(Any?)](nscontrol/takestringvaluefrom(_:).md)
+- [func takeStringValueFrom(Any?)](./takestringvaluefrom%28_%29.md)
   Sets the value of the receiver’s cell to the string value obtained from the specified object.
 
 

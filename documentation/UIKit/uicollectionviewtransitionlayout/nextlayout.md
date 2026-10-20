@@ -1,7 +1,8 @@
 # nextLayout
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection view’s new layout object.
 
@@ -9,7 +10,7 @@ The collection view’s new layout object.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The collection view’s new layout object.
 var nextLayout: UICollectionViewLayout { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UICollectionViewLayout * nextLayout;
+```
+
 #### Discussion
 
 This object provides the layout attributes representing the new position of items in the collection view. If the transition completes as expected, the collection view animates its items to the positions provided by this object.
 
 ## See Also
 
-- [var currentLayout: UICollectionViewLayout](uicollectionviewtransitionlayout/currentlayout.md)
+### Accessing the layout objects
+- [var currentLayout: UICollectionViewLayout](./currentlayout.md)
   The collection view’s current layout object.
 
 

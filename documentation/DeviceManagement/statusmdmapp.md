@@ -1,7 +1,8 @@
 # StatusMDMApp
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that lists the devices’s MDM-installed apps.
 
@@ -15,17 +16,17 @@ The status item that lists the devices’s MDM-installed apps.
 
 ## Declaration
 
-```swift
+```
 object StatusMDMApp
 ```
 
 ## Mentions
 
-- [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
+- [Transferring management of apps to declarative management](./transferring-management-of-apps-to-declarative-management.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ object StatusMDMApp
 | Allowed in system scope | iOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 **New or updated app**:
 
@@ -78,7 +79,7 @@ Reports a removed app.
 ## Topics
 
 ### Objects
-- [object StatusMDMAppAppObject](statusmdmappappobject.md)
+- [object StatusMDMAppAppObject](./statusmdmappappobject.md)
   A status report that contains details about an MDM-installed app.
 
 ## Properties
@@ -87,9 +88,10 @@ Reports a removed app.
 
 ## See Also
 
-- [object StatusAppManagedList](statusappmanagedlist.md)
+### App and package items
+- [object StatusAppManagedList](./statusappmanagedlist.md)
   The status item that lists the device’s declarative managed apps.
-- [object StatusPackageList](statuspackagelist.md)
+- [object StatusPackageList](./statuspackagelist.md)
   The status item that lists the device’s declarative packages.
 
 

@@ -1,17 +1,22 @@
 # init(data:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object using the provided image data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init?(data: Data)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data;
 ```
 
 #### Return Value
@@ -28,13 +33,14 @@ Use this method in cases where you already have image data in a supported format
 
 ## See Also
 
-- [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
+### Creating Images from Existing Data
+- [convenience init?(dataIgnoringOrientation: Data)](./init%28dataignoringorientation%29.md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
+- [convenience init(cgImage: CGImage, size: NSSize)](./init%28cgimage,size%29-8oznv.md)
   Creates a new image using the contents of the provided image.
-- [convenience init?(pasteboard: NSPasteboard)](nsimage/init(pasteboard:).md)
+- [convenience init?(pasteboard: NSPasteboard)](./init%28pasteboard%29.md)
   Initializes and returns an image object with data from the specified pasteboard.
-- [init(coder: NSCoder)](nsimage/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns an image object from data in an unarchiver.
 
 

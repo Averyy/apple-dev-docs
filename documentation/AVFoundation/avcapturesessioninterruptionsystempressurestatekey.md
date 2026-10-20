@@ -1,7 +1,8 @@
 # AVCaptureSessionInterruptionSystemPressureStateKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to retrieve a state value that indicates the system pressure level and contributing factors that caused the interruption.
 
@@ -18,15 +19,20 @@ A key to retrieve a state value that indicates the system pressure level and con
 let AVCaptureSessionInterruptionSystemPressureStateKey: String
 ```
 
+```c
+extern NSString * const AVCaptureSessionInterruptionSystemPressureStateKey;
+```
+
 #### Discussion
 
-If an interruption occurs and the value of [`AVCaptureSessionInterruptionReasonKey`](avcapturesessioninterruptionreasonkey.md) equals [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure`](avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md), the [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary for the notification contains this key and a corresponding [`AVCaptureDevice.SystemPressureState`](avcapturedevice/systempressurestate-swift.class.md) value.
+If an interruption occurs and the value of [`AVCaptureSessionInterruptionReasonKey`](./avcapturesessioninterruptionreasonkey.md) equals [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure`](./avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md), the [`userInfo`](../Foundation/notification/userinfo.md) dictionary for the notification contains this key and a corresponding [`AVCaptureDevice.SystemPressureState`](./avcapturedevice/systempressurestate-swift.class.md) value.
 
 ## See Also
 
-- [var systemPressureState: AVCaptureDevice.SystemPressureState](avcapturedevice/systempressurestate-swift.property.md)
+### Monitoring system pressure
+- [var systemPressureState: AVCaptureDevice.SystemPressureState](./avcapturedevice/systempressurestate-swift.property.md)
   A value that indicates the capture device’s current system pressure state.
-- [AVCaptureDevice.SystemPressureState](avcapturedevice/systempressurestate-swift.class.md)
+- [AVCaptureDevice.SystemPressureState](./avcapturedevice/systempressurestate-swift.class.md)
   An object that provides information about OS and hardware status affecting capture system performance and availability.
 
 

@@ -1,7 +1,8 @@
 # kLSUnknownCreator
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value to supply as the creator signatureif no file creator information is available.
 

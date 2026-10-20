@@ -1,7 +1,8 @@
 # track(_:cameraInformation:image:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Automatically generate and send tracking vectors to the device.
 
@@ -23,11 +24,11 @@ The vectors are based on metadata coming from the camera.
 
 Disable system tracking, then supply the observations at a fixed rate between 10 and 30 times per second. Any other rate is unsupported.
 
-> **Note**: [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
+> **Throws**: [`DockKitError.notSupported`](../dockkiterror/notsupported.md) if called on macOS.
 
 ## Parameters
 
-- `metadata`: An array of [`AVMetadataObject`](https://developer.apple.com/documentation/avfoundation/avmetadataobject) objects indicating the location of objects within the frame.
+- `metadata`: An array of [`AVMetadataObject`](../../AVFoundation/avmetadataobject.md) objects indicating the location of objects within the frame.
 - `cameraInformation`: The camera in current use and its orientation.
 - `image`: The captured camera image buffer.
 

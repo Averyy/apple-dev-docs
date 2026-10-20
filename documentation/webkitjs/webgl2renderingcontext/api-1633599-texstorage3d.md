@@ -1,7 +1,8 @@
 # texStorage3D
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void texStorage3D(
     GLenum target, 
     GLsizei levels, 

@@ -1,7 +1,8 @@
 # WorldTrackingProvider.WorldAnchorSharingAvailability.unavailable
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 World anchors cannot be shared with nearby participants. This indicates that either there’s no SharePlay session or the session has ended.
 

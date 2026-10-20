@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of keys in the dictionary.
 
@@ -22,7 +23,7 @@ var count: Int { get }
 
 #### Discussion
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 
 ---

@@ -1,7 +1,8 @@
 # calibratedLatency
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-calibrated latency for the current screen.
 
@@ -17,9 +18,13 @@ The user-calibrated latency for the current screen.
 var calibratedLatency: CFTimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CFTimeInterval calibratedLatency;
+```
+
 #### Discussion
 
-Use this property when you need to manually synchronize video playback with custom audio. For example, you might correlate this value with the [`latency`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/latency) property of a Core Audio unit when writing custom video-playback software. The value of this property is `0` until the user explicitly calibrates their display.
+Use this property when you need to manually synchronize video playback with custom audio. For example, you might correlate this value with the [`latency`](../../AudioToolbox/auaudiounit/latency.md) property of a Core Audio unit when writing custom video-playback software. The value of this property is `0` until the user explicitly calibrates their display.
 
 
 ---

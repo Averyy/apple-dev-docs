@@ -1,14 +1,15 @@
 # IOUSBHostCINormalTransferData1Buffer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCINormalTransferData1Buffer = IOUSBBitRange64(0, 63)
 ```
 

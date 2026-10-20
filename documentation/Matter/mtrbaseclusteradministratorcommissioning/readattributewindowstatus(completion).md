@@ -1,7 +1,8 @@
 # readAttributeWindowStatus(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWindowStatus(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWindowStatus() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWindowStatusWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

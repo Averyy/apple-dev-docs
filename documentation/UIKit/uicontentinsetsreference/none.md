@@ -1,7 +1,8 @@
 # UIContentInsetsReference.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content insets don’t have a reference point in relation to other insets.
 
@@ -18,15 +19,20 @@ Content insets don’t have a reference point in relation to other insets.
 case none
 ```
 
+```c
+UIContentInsetsReferenceNone
+```
+
 ## See Also
 
-- [UIContentInsetsReference.automatic](uicontentinsetsreference/automatic.md)
+### Constants
+- [UIContentInsetsReference.automatic](./automatic.md)
   Content insets use the system default reference point.
-- [UIContentInsetsReference.safeArea](uicontentinsetsreference/safearea.md)
+- [UIContentInsetsReference.safeArea](./safearea.md)
   Content insets use a reference point in relation to the safe area.
-- [UIContentInsetsReference.layoutMargins](uicontentinsetsreference/layoutmargins.md)
+- [UIContentInsetsReference.layoutMargins](./layoutmargins.md)
   Content insets use a reference point in relation to the layout margins.
-- [UIContentInsetsReference.readableContent](uicontentinsetsreference/readablecontent.md)
+- [UIContentInsetsReference.readableContent](./readablecontent.md)
   Content insets use a reference point in relation to the readable content guide.
 
 

@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -20,17 +21,20 @@ Hashes the essential components of this value by feeding them into the given has
 func hash(into hasher: inout Hasher)
 ```
 
+Available when `Wrapped` conforms to `Hashable`.
+
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components of this instance.
 
 ## See Also
 
-- [var unsafelyUnwrapped: Wrapped](optional/unsafelyunwrapped.md)
+### Inspecting an Optional
+- [var unsafelyUnwrapped: Wrapped](./unsafelyunwrapped.md)
   The wrapped value of this instance, unwrapped without checking whether the instance is `nil`.
-- [var debugDescription: String](optional/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of this instance, suitable for debugging.
-- [var customMirror: Mirror](optional/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
 
 

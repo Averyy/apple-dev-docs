@@ -1,15 +1,17 @@
 # Copy Client Memory Options
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Options
-- [kIOUserClientMemoryReadOnly](kiouserclientmemoryreadonly.md)
+- [kIOUserClientMemoryReadOnly](./kiouserclientmemoryreadonly.md)
 
 ## See Also
 
-- [CopyClientMemoryForType](iouserclient/copyclientmemoryfortype.md)
+### Mapping to the Client’s Memory Space
+- [CopyClientMemoryForType](./iouserclient/copyclientmemoryfortype.md)
   Return an IOMemoryDescriptor to be mapped into the client task.
 
 

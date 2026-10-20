@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of scene representing the content of the app.
@@ -23,11 +24,12 @@ associatedtype Body : Scene
 
 #### Discussion
 
-When you create a custom app, Swift infers this type from your implementation of the required [`body`](app/body-swift.property.md) property.
+When you create a custom app, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 
 ## See Also
 
-- [var body: Self.Body](app/body-swift.property.md)
+### Implementing an app
+- [var body: Self.Body](./body-swift.property.md)
   The content and behavior of the app.
 
 

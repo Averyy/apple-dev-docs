@@ -1,6 +1,8 @@
 # Creating an interactive 3D model in visionOS
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [CreatingA3DModelWithGesturesInVisionOS.zip](https://docs-assets.developer.apple.com/published/7b5bc90de8c3/CreatingA3DModelWithGesturesInVisionOS.zip)
 
 Display an interactive car model using gestures in a reality view.
 
@@ -10,14 +12,16 @@ Display an interactive car model using gestures in a reality view.
 
 #### Overview
 
-This sample demonstrates how to create and display a 3D car model that responds to gestures within visionOS. It uses the [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity) initializer to asynchronously load a model by its filename, and it implements the [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) protocol on the `ModelEntity`, to interact with the model.
+This sample demonstrates how to create and display a 3D car model that responds to gestures within visionOS. It uses the [`ModelEntity`](../RealityKit/modelentity.md) initializer to asynchronously load a model by its filename, and it implements the [`DragGesture`](../SwiftUI/draggesture.md) protocol on the `ModelEntity`, to interact with the model.
 
 At launch, the app’s main view generates the following:
 
 - A window that contains text
 - A 3D model of a car that reacts to drag and magnify gestures
 
-##### Set Up the Gestures for the Entity
+[Video: A screenshot of a visionOS app in Simulator, displaying a 3D car entity and a translucent window labeled 'Use gestures to move the car'.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-car-example-1-main-view.mov)
+
+##### Set up the gestures for the entity
 
 To make sure the car locks on the ground, the sample creates an `SIMD3` extension with the `grounded` variable to lock the y-axis to 0 during a drag gesture movement:
 
@@ -73,7 +77,7 @@ var translationGesture: some Gesture {
 
 The `initialPosition` variable resets back to `nil` when the gesture ends.
 
-> **Note**: You must use [`targetedToAnyEntity()`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoanyentity()) or related methods to enable a gesture to target an entity.
+> **Note**: You must use [`targetedToAnyEntity()`](../SwiftUI/gesture/targetedtoanyentity%28%29.md) or related methods to enable a gesture to target an entity.
 
 The `scaleGesture` applies the scale rate by the magnification on the gesture, to smoothly scale the entity during a gesture movement:
 
@@ -105,9 +109,9 @@ var scaleGesture: some Gesture {
 
 The `initialScale` variable resets back to `nil` once the gesture ends.
 
-##### Load the 3d Car Model
+##### Load the 3D car model
 
-The `CarView` loads in a USDZ file as a [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity) instance and creates a `bounds` containing a bounding box of the outer dimensional size of the `car` entity:
+The `CarView` loads in a USDZ file as a [`ModelEntity`](../RealityKit/modelentity.md) instance and creates a `bounds` containing a bounding box of the outer dimensional size of the `car` entity:
 
 ```swift
 import SwiftUI
@@ -136,9 +140,9 @@ struct CarView: View {
 }
 ```
 
-##### Set the Collision Component
+##### Set the collision component
 
-The app uses the `bounds` property to generate a bounding box with [`ShapeResource`](https://developer.apple.com/documentation/realitykit/shaperesource), which serves as a collision bound for the [`CollisionComponent`](https://developer.apple.com/documentation/realitykit/collisioncomponent). This enables the collision component to interact with the environment:
+The app uses the `bounds` property to generate a bounding box with [`ShapeResource`](../RealityKit/shaperesource.md), which serves as a collision bound for the [`CollisionComponent`](../RealityKit/collisioncomponent.md). This enables the collision component to interact with the environment:
 
 ```swift
 import SwiftUI
@@ -209,7 +213,7 @@ struct CarView: View {
 
 Finally, the app adds the `car` entity to the `RealityView`.
 
-##### Run the Immersive Scene
+##### Run the immersive scene
 
 The sample structure includes an `ImmersiveSpace` entry to the scene to include in the app’s environment:
 
@@ -229,7 +233,7 @@ struct EntryPoint: App {
 }
 ```
 
-The sample’s main view uses the [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) instance property to call the `ImmersiveSpace` that the app’s `EntryPoint` defines:
+The sample’s main view uses the [`openImmersiveSpace`](../SwiftUI/environmentvalues/openimmersivespace.md) instance property to call the `ImmersiveSpace` that the app’s `EntryPoint` defines:
 
 ```swift
 import SwiftUI
@@ -251,7 +255,12 @@ struct MainView: View {
 }
 ```
 
-###### Related Samples
+###### Related samples
+
+- [Creating an immersive space in visionOS](./creating-immersive-spaces-in-visionos-with-swiftui.md)
+  Enhance your visionOS app by adding an immersive space using RealityKit.
+- [Transforming RealityKit entities using gestures](../RealityKit/transforming-realitykit-entities-with-gestures.md)
+  Build a RealityKit component to support standard visionOS gestures on any entity.
 
 
 ---

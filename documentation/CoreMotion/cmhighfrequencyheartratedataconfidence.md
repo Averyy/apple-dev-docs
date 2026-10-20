@@ -1,7 +1,8 @@
 # CMHighFrequencyHeartRateDataConfidence
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The level of confidence in the accuracy of the heart rate data.
 
@@ -18,35 +19,40 @@ The level of confidence in the accuracy of the heart rate data.
 enum CMHighFrequencyHeartRateDataConfidence
 ```
 
+```c
+enum CMHighFrequencyHeartRateDataConfidence : NSInteger;
+```
+
 ## Topics
 
 ### Levels of confidence
-- [CMHighFrequencyHeartRateDataConfidence.low](cmhighfrequencyheartratedataconfidence/low.md)
+- [CMHighFrequencyHeartRateDataConfidence.low](./cmhighfrequencyheartratedataconfidence/low.md)
   A low level of confidence in the heart rate data.
-- [CMHighFrequencyHeartRateDataConfidence.medium](cmhighfrequencyheartratedataconfidence/medium.md)
+- [CMHighFrequencyHeartRateDataConfidence.medium](./cmhighfrequencyheartratedataconfidence/medium.md)
   A medium level of confidence in the heart rate data.
-- [CMHighFrequencyHeartRateDataConfidence.high](cmhighfrequencyheartratedataconfidence/high.md)
+- [CMHighFrequencyHeartRateDataConfidence.high](./cmhighfrequencyheartratedataconfidence/high.md)
   A high level of confidence in the heart rate data.
-- [CMHighFrequencyHeartRateDataConfidence.highest](cmhighfrequencyheartratedataconfidence/highest.md)
+- [CMHighFrequencyHeartRateDataConfidence.highest](./cmhighfrequencyheartratedataconfidence/highest.md)
   The highest level of confidence in the heart rate data.
 ### Initializers
-- [init?(rawValue: Int)](cmhighfrequencyheartratedataconfidence/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cmhighfrequencyheartratedataconfidence/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var heartRate: Double](cmhighfrequencyheartratedata/heartrate.md)
+### Accessing heart rate data
+- [var heartRate: Double](./cmhighfrequencyheartratedata/heartrate.md)
   The heart rate value in units of beats per minute (BPM).
-- [var confidence: CMHighFrequencyHeartRateDataConfidence](cmhighfrequencyheartratedata/confidence.md)
+- [var confidence: CMHighFrequencyHeartRateDataConfidence](./cmhighfrequencyheartratedata/confidence.md)
   The confidence level of the heart rate value.
 
 

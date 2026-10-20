@@ -1,7 +1,8 @@
 # DynamicIslandExpandedContentBuilder
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A result builder that constructs the content of an expanded Live Activity in the Dynamic Island.
 
@@ -20,26 +21,27 @@ struct DynamicIslandExpandedContentBuilder
 
 ### Type Methods
 - [static func buildPartialBlock<C0, C1>(accumulated: DynamicIslandExpandedContent<C0>, next: DynamicIslandExpandedContent<C1>) -> DynamicIslandExpandedContent<some View>
-](dynamicislandexpandedcontentbuilder/buildpartialblock(accumulated:next:)-39sr0.md)
+](./dynamicislandexpandedcontentbuilder/buildpartialblock%28accumulated,next%29-39sr0.md)
 - [static func buildPartialBlock<C0, C1>(accumulated: DynamicIslandExpandedContent<C0>, next: DynamicIslandExpandedRegion<C1>) -> DynamicIslandExpandedContent<some View>
-](dynamicislandexpandedcontentbuilder/buildpartialblock(accumulated:next:)-3jswv.md)
+](./dynamicislandexpandedcontentbuilder/buildpartialblock%28accumulated,next%29-3jswv.md)
 - [static func buildPartialBlock<C>(first: DynamicIslandExpandedRegion<C>) -> DynamicIslandExpandedContent<some View>
-](dynamicislandexpandedcontentbuilder/buildpartialblock(first:)-5j108.md)
+](./dynamicislandexpandedcontentbuilder/buildpartialblock%28first%29-5j108.md)
 - [static func buildPartialBlock<C>(first: DynamicIslandExpandedContent<C>) -> DynamicIslandExpandedContent<some View>
-](dynamicislandexpandedcontentbuilder/buildpartialblock(first:)-74hpw.md)
+](./dynamicislandexpandedcontentbuilder/buildpartialblock%28first%29-74hpw.md)
 
 ## See Also
 
-- [init(DynamicIslandExpandedRegionPosition, priority: Double, content: () -> Content)](dynamicislandexpandedregion/init(_:priority:content:).md)
+### Creating the expanded presentation
+- [init(DynamicIslandExpandedRegionPosition, priority: Double, content: () -> Content)](./dynamicislandexpandedregion/init%28_,priority,content%29.md)
   Creates the object that defines and positions the content of an expanded Live Activity in the Dynamic Island.
-- [struct DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition.md)
+- [struct DynamicIslandExpandedRegionPosition](./dynamicislandexpandedregionposition.md)
   View positions of an expanded Live Activity that appears in the Dynamic Island.
 - [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
-](../swiftui/view/dynamicisland(verticalplacement:).md)
+](../SwiftUI/view/dynamicisland%28verticalplacement%29.md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedRegionVerticalPlacement](dynamicislandexpandedregionverticalplacement.md)
+- [struct DynamicIslandExpandedRegionVerticalPlacement](./dynamicislandexpandedregionverticalplacement.md)
   Vertical view positions of an expanded Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedContent](dynamicislandexpandedcontent.md)
+- [struct DynamicIslandExpandedContent](./dynamicislandexpandedcontent.md)
   A view that describes the expanded presentation of a Live Activity that appears in the Dynamic Island.
 
 

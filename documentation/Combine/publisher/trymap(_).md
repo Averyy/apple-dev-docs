@@ -1,7 +1,8 @@
 # tryMap(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms all elements from the upstream publisher with a provided error-throwing closure.
 
@@ -26,9 +27,9 @@ A publisher that uses the provided closure to map elements from the upstream pub
 
 #### Discussion
 
-Combine’s [`tryMap(_:)`](publisher/trymap(_:).md) operator performs a function similar to that of [`map(_:)`](https://developer.apple.com/documentation/swift/sequence/map(_:)) in the Swift standard library: it uses a closure to transform each element it receives from the upstream publisher. You use [`tryMap(_:)`](publisher/trymap(_:).md) to transform from one kind of element to another, and to terminate publishing when the map’s closure throws an error.
+Combine’s [`tryMap(_:)`](./trymap%28_%29.md) operator performs a function similar to that of [`map(_:)`](../../Swift/sequence/map%28_%29.md) in the Swift standard library: it uses a closure to transform each element it receives from the upstream publisher. You use [`tryMap(_:)`](./trymap%28_%29.md) to transform from one kind of element to another, and to terminate publishing when the map’s closure throws an error.
 
-The following example uses an array of numbers as the source for a collection based publisher. A [`tryMap(_:)`](publisher/trymap(_:).md) operator consumes each integer from the publisher and uses a dictionary to transform it from its Arabic numeral to a Roman equivalent, as a [`String`](https://developer.apple.com/documentation/swift/string). If the [`tryMap(_:)`](publisher/trymap(_:).md)’s closure fails to look up a Roman numeral, it throws an error. The [`tryMap(_:)`](publisher/trymap(_:).md) operator catches this error and terminates publishing, sending a [`Subscribers.Completion.failure(_:)`](subscribers/completion/failure(_:).md) that wraps the error.
+The following example uses an array of numbers as the source for a collection based publisher. A [`tryMap(_:)`](./trymap%28_%29.md) operator consumes each integer from the publisher and uses a dictionary to transform it from its Arabic numeral to a Roman equivalent, as a [`String`](../../Swift/string.md). If the [`tryMap(_:)`](./trymap%28_%29.md)’s closure fails to look up a Roman numeral, it throws an error. The [`tryMap(_:)`](./trymap%28_%29.md) operator catches this error and terminates publishing, sending a [`Subscribers.Completion.failure(_:)`](../subscribers/completion/failure%28_%29.md) that wraps the error.
 
 ```swift
 struct ParseError: Error {}
@@ -51,7 +52,7 @@ cancellable = numbers.publisher
 // Prints: "V IV III II I completion: failure(ParseError())"
 ```
 
-If your closure doesn’t throw, use [`map(_:)`](publisher/map(_:)-99evh.md) instead.
+If your closure doesn’t throw, use [`map(_:)`](./map%28_%29-99evh.md) instead.
 
 ## Parameters
 
@@ -59,17 +60,18 @@ If your closure doesn’t throw, use [`map(_:)`](publisher/map(_:)-99evh.md) ins
 
 ## See Also
 
-- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](publisher/map(_:)-99evh.md)
+### Mapping elements
+- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](./map%28_%29-99evh.md)
   Transforms all elements from the upstream publisher with a provided closure.
-- [func mapError<E>((Self.Failure) -> E) -> Publishers.MapError<Self, E>](publisher/maperror(_:).md)
+- [func mapError<E>((Self.Failure) -> E) -> Publishers.MapError<Self, E>](./maperror%28_%29.md)
   Converts any failure from the upstream publisher into a new error.
-- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](publisher/replacenil(with:).md)
+- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](./replacenil%28with%29.md)
   Replaces nil elements in the stream with the provided element.
-- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](publisher/scan(_:_:).md)
+- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](./scan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to a closure along with the last value returned by the closure.
-- [func tryScan<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryScan<Self, T>](publisher/tryscan(_:_:).md)
+- [func tryScan<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryScan<Self, T>](./tryscan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to an error-throwing closure along with the last value returned by the closure.
-- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](publisher/setfailuretype(to:).md)
+- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Self, E>](./setfailuretype%28to%29.md)
   Changes the failure type declared by the upstream publisher.
 
 

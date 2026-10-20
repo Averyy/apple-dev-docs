@@ -1,7 +1,8 @@
 # certificateChainRequest(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func certificateChainRequest(with params: MTROperationalCredentialsClusterCertificateChainRequestParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTROperationalCredentialsClusterCertificateChainResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func certificateChainRequest(with params: MTROperationalCredentialsClusterCertificateChainRequestParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTROperationalCredentialsClusterCertificateChainResponseParams
+```
+
+```objc
+- (void) certificateChainRequestWithParams:(MTROperationalCredentialsClusterCertificateChainRequestParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTROperationalCredentialsClusterCertificateChainResponseParams *data, NSError *error)) completion;
 ```
 
 

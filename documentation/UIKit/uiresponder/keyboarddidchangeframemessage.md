@@ -1,7 +1,8 @@
 # UIResponder.KeyboardDidChangeFrameMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -17,20 +18,20 @@ struct KeyboardDidChangeFrameMessage
 ## Topics
 
 ### Initializers
-- [init(beginFrame: CGRect, endFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve, isLocal: Bool, screen: UIScreen)](uiresponder/keyboarddidchangeframemessage/init(beginframe:endframe:animationduration:animationcurve:islocal:screen:).md)
+- [init(beginFrame: CGRect, endFrame: CGRect, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve, isLocal: Bool, screen: UIScreen)](./keyboarddidchangeframemessage/init%28beginframe,endframe,animationduration,animationcurve,islocal,screen%29.md)
 ### Instance Properties
-- [var animationCurve: UIView.AnimationCurve](uiresponder/keyboarddidchangeframemessage/animationcurve.md)
-- [var animationDuration: TimeInterval](uiresponder/keyboarddidchangeframemessage/animationduration.md)
-- [var beginFrame: CGRect](uiresponder/keyboarddidchangeframemessage/beginframe.md)
-- [var endFrame: CGRect](uiresponder/keyboarddidchangeframemessage/endframe.md)
-- [var isLocal: Bool](uiresponder/keyboarddidchangeframemessage/islocal.md)
-- [var screen: UIScreen](uiresponder/keyboarddidchangeframemessage/screen.md)
+- [var animationCurve: UIView.AnimationCurve](./keyboarddidchangeframemessage/animationcurve.md)
+- [var animationDuration: TimeInterval](./keyboarddidchangeframemessage/animationduration.md)
+- [var beginFrame: CGRect](./keyboarddidchangeframemessage/beginframe.md)
+- [var endFrame: CGRect](./keyboarddidchangeframemessage/endframe.md)
+- [var isLocal: Bool](./keyboarddidchangeframemessage/islocal.md)
+- [var screen: UIScreen](./keyboarddidchangeframemessage/screen.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

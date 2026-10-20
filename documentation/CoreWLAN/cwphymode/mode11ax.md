@@ -1,7 +1,8 @@
 # CWPHYMode.mode11ax
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 case mode11ax
+```
+
+```c
+kCWPHYMode11ax
 ```
 
 

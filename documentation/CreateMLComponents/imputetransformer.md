@@ -1,7 +1,8 @@
 # ImputeTransformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that replaces missing values with a pre-defined value.
 
@@ -23,44 +24,45 @@ struct ImputeTransformer<Element> where Element : Decodable, Element : Encodable
 ## Topics
 
 ### Creating a transformer
-- [init(value: Element)](imputetransformer/init(value:).md)
+- [init(value: Element)](./imputetransformer/init%28value%29.md)
   Creates an impute transformer.
 ### Getting the impute value
-- [var value: Element](imputetransformer/value.md)
+- [var value: Element](./imputetransformer/value.md)
   Impute value used to replace missing values.
 ### Performing the transformation
-- [func applied(to: Element?, eventHandler: EventHandler?) -> Element](imputetransformer/applied(to:eventhandler:).md)
+- [func applied(to: Element?, eventHandler: EventHandler?) -> Element](./imputetransformer/applied%28to,eventhandler%29.md)
   Imputes a single input.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct LinearTransformer](lineartransformer.md)
+### Preprocessors
+- [struct LinearTransformer](./lineartransformer.md)
   A transformer that runs an input through a scale and offset.
-- [struct OneHotEncoder](onehotencoder.md)
+- [struct OneHotEncoder](./onehotencoder.md)
   An estimator that encodes categorical values to an integer array.
-- [struct OrdinalEncoder](ordinalencoder.md)
+- [struct OrdinalEncoder](./ordinalencoder.md)
   An ordinal encoder estimator encodes categorical values to ordinal integer values.
-- [struct NumericImputer](numericimputer.md)
+- [struct NumericImputer](./numericimputer.md)
   An estimator that replaces missing values in the numeric input.
-- [struct Reshaper](reshaper.md)
+- [struct Reshaper](./reshaper.md)
   A transformer that reshapes a shaped array.
-- [struct CategoricalImputer](categoricalimputer.md)
+- [struct CategoricalImputer](./categoricalimputer.md)
   An estimator that replaces missing values in the categorical input.
-- [struct OptionalUnwrapper](optionalunwrapper.md)
+- [struct OptionalUnwrapper](./optionalunwrapper.md)
   A transformer that unwraps optional elements and throws when encountering missing values.
 
 

@@ -1,7 +1,8 @@
 # blendMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new style based on `self` that applies the specified blend mode when drawing.
 
@@ -22,9 +23,10 @@ func blendMode(_ mode: BlendMode) -> some ShapeStyle
 
 ## See Also
 
-- [func opacity(Double) -> some ShapeStyle](shapestyle/opacity(_:)-swift.method.md)
+### Modifying a shape style
+- [func opacity(Double) -> some ShapeStyle](./opacity%28_%29-swift.method.md)
   Returns a new style based on `self` that multiplies by the specified opacity when drawing.
-- [func shadow(ShadowStyle) -> some ShapeStyle](shapestyle/shadow(_:)-swift.method.md)
+- [func shadow(ShadowStyle) -> some ShapeStyle](./shadow%28_%29-swift.method.md)
   Applies the specified shadow effect to the shape style.
 
 

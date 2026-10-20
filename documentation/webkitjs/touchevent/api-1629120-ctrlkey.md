@@ -1,7 +1,8 @@
 # ctrlKey
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A Boolean value indicating whether the control key is pressed.
 
@@ -11,7 +12,7 @@ A Boolean value indicating whether the control key is pressed.
 
 ## Declaration
 
-```swift
+```
 readonly attribute boolean ctrlKey;
 ```
 
@@ -21,21 +22,22 @@ If `true`, the control key is pressed; otherwise, it is not. If there is no keyb
 
 ## See Also
 
-- [altKey](touchevent/1633489-altkey.md)
+### Accessing Properties
+- [altKey](./api-1633489-altkey.md)
   A Boolean value indicating whether the alt key is pressed.
-- [metaKey](touchevent/1632828-metakey.md)
+- [metaKey](./api-1632828-metakey.md)
   A Boolean value indicating whether the meta key is pressed.
-- [shiftKey](touchevent/1634033-shiftkey.md)
+- [shiftKey](./api-1634033-shiftkey.md)
   A Boolean value indicating whether the shift key is pressed.
-- [changedTouches](touchevent/1629351-changedtouches.md)
-  A collection of [`Touch`](touch.md) objects representing all touches that changed in this event.
-- [targetTouches](touchevent/1632803-targettouches.md)
+- [changedTouches](./api-1629351-changedtouches.md)
+  A collection of [`Touch`](../touch.md) objects representing all touches that changed in this event.
+- [targetTouches](./api-1632803-targettouches.md)
   A collection of Touch objects representing all touches associated with this target.
-- [touches](touchevent/1632644-touches.md)
+- [touches](./api-1632644-touches.md)
   A collection of Touch objects representing all touches associated with this event.
-- [rotation](touchevent/1634480-rotation.md)
+- [rotation](./api-1634480-rotation.md)
   The delta rotation since the start of an event in degrees where clockwise is positive and counter-clockwise is negative.
-- [scale](touchevent/1632169-scale.md)
+- [scale](./api-1632169-scale.md)
   The distance between two fingers since the start of an event as a multiplier of the initial distance. 
 
 

@@ -1,7 +1,8 @@
 # mediaSelectionOptions(from:filteredAndSortedAccordingToPreferredLanguages:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of media selection options, filtering them according to whether their locales match one of the specified languages.
 
@@ -20,26 +21,31 @@ Returns an array of media selection options, filtering them according to whether
 class func mediaSelectionOptions(from mediaSelectionOptions: [AVMediaSelectionOption], filteredAndSortedAccordingToPreferredLanguages preferredLanguages: [String]) -> [AVMediaSelectionOption]
 ```
 
+```objc
++ (NSArray<AVMediaSelectionOption *> *) mediaSelectionOptionsFromArray:(NSArray<AVMediaSelectionOption *> *) mediaSelectionOptions filteredAndSortedAccordingToPreferredLanguages:(NSArray<NSString *> *) preferredLanguages;
+```
+
 #### Return Value
 
-An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects that match one of the languages in the `preferredLanguages` parameter. The objects in this array are sorted based on the language each one matches, with objects matching the most preferred language first in the array.
+An array of [`AVMediaSelectionOption`](../avmediaselectionoption.md) objects that match one of the languages in the `preferredLanguages` parameter. The objects in this array are sorted based on the language each one matches, with objects matching the most preferred language first in the array.
 
 ## Parameters
 
-- `mediaSelectionOptions`: An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects to be filtered and sorted.
-- `preferredLanguages`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a canonicalized IETF BCP 47 language identifier. The strings should be sorted in order of preference, with the string corresponding to the most preferred language as the first element in the array. Typically, you retrieve these strings using the [`preferredLanguages`](https://developer.apple.com/documentation/foundation/nslocale/preferredlanguages) class method of the [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale) class.
+- `mediaSelectionOptions`: An array of [`AVMediaSelectionOption`](../avmediaselectionoption.md) objects to be filtered and sorted.
+- `preferredLanguages`: An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains a canonicalized IETF BCP 47 language identifier. The strings should be sorted in order of preference, with the string corresponding to the most preferred language as the first element in the array. Typically, you retrieve these strings using the [`preferredLanguages`](../../Foundation/nslocale/preferredlanguages.md) class method of the [`NSLocale`](../../Foundation/nslocale.md) class.
 
 ## See Also
 
-- [class func playableMediaSelectionOptions(from: [AVMediaSelectionOption]) -> [AVMediaSelectionOption]](avmediaselectiongroup/playablemediaselectionoptions(from:).md)
+### Filtering selection options
+- [class func playableMediaSelectionOptions(from: [AVMediaSelectionOption]) -> [AVMediaSelectionOption]](./playablemediaselectionoptions%28from%29.md)
   Returns an array containing the media selection options from a given array that are playable.
-- [class func mediaSelectionOptions(from: [AVMediaSelectionOption], with: Locale) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:with:).md)
+- [class func mediaSelectionOptions(from: [AVMediaSelectionOption], with: Locale) -> [AVMediaSelectionOption]](./mediaselectionoptions%28from,with%29.md)
   Returns an array containing the media selection options from a given array that match the specified locale.
-- [class func mediaSelectionOptions(from: [AVMediaSelectionOption], withMediaCharacteristics: [AVMediaCharacteristic]) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:withmediacharacteristics:).md)
+- [class func mediaSelectionOptions(from: [AVMediaSelectionOption], withMediaCharacteristics: [AVMediaCharacteristic]) -> [AVMediaSelectionOption]](./mediaselectionoptions%28from,withmediacharacteristics%29.md)
   Returns an array containing the media selection options from a given array that match given media characteristics.
-- [class func mediaSelectionOptions(from: [AVMediaSelectionOption], withoutMediaCharacteristics: [AVMediaCharacteristic]) -> [AVMediaSelectionOption]](avmediaselectiongroup/mediaselectionoptions(from:withoutmediacharacteristics:).md)
+- [class func mediaSelectionOptions(from: [AVMediaSelectionOption], withoutMediaCharacteristics: [AVMediaCharacteristic]) -> [AVMediaSelectionOption]](./mediaselectionoptions%28from,withoutmediacharacteristics%29.md)
   Returns an array containing the media selection options from a given array that do not match given media characteristics.
-- [var customMediaSelectionScheme: AVCustomMediaSelectionScheme?](avmediaselectiongroup/custommediaselectionscheme.md)
+- [var customMediaSelectionScheme: AVCustomMediaSelectionScheme?](./custommediaselectionscheme.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
 
 

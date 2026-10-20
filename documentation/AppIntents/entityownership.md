@@ -1,7 +1,8 @@
 # EntityOwnership
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the ownership and sharing characteristics of an app entity.
 
@@ -22,7 +23,7 @@ struct EntityOwnership
 
 #### Overview
 
-The [`EntityOwnership`](entityownership.md) structure provides flag-based ownership information. Specify a single state, or combine multiple states using an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset), as shown in the following example:
+The [`EntityOwnership`](./entityownership.md) structure provides flag-based ownership information. Specify a single state, or combine multiple states using an [`OptionSet`](../Swift/optionset.md), as shown in the following example:
 
 ```swift
 // Single ownership and sharing state:
@@ -37,23 +38,23 @@ var ownership: EntityOwnership { [.shared, .public] }
 ## Topics
 
 ### Scoping entity ownership and sharing
-- [static let `public`: EntityOwnership](entityownership/public.md)
+- [static let `public`: EntityOwnership](./entityownership/public.md)
   A state that indicates the entity represents data a person shares publicly.
-- [static let shared: EntityOwnership](entityownership/shared.md)
+- [static let shared: EntityOwnership](./entityownership/shared.md)
   A state that indicates a person shares the entity with specific collaborators.
-- [static let unknown: EntityOwnership](entityownership/unknown.md)
+- [static let unknown: EntityOwnership](./entityownership/unknown.md)
   A state that indicates that entity ownership or sharing status is unknown or unspecified.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

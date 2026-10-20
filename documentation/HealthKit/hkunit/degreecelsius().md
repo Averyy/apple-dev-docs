@@ -1,22 +1,27 @@
 # degreeCelsius()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring temperature in degrees Celsius.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func degreeCelsius() -> Self
+```
+
+```objc
++ (instancetype) degreeCelsiusUnit;
 ```
 
 #### Return Value
@@ -25,9 +30,10 @@ A HealthKit unit for measuring temperature in degrees Celsius.
 
 ## See Also
 
-- [class func degreeFahrenheit() -> Self](hkunit/degreefahrenheit.md)
+### Constructing temperature units
+- [class func degreeFahrenheit() -> Self](./degreefahrenheit%28%29.md)
   Returns a HealthKit unit for measuring temperature in degrees Fahrenheit.
-- [class func kelvin() -> Self](hkunit/kelvin.md)
+- [class func kelvin() -> Self](./kelvin%28%29.md)
   Returns a HealthKit unit for measuring temperature in kelvins.
 
 

@@ -1,7 +1,8 @@
 # send(_:discontinuity:hostTimeInNanoseconds:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a media sample to stream client.
 
@@ -15,9 +16,13 @@ Sends a media sample to stream client.
 func send(_ sampleBuffer: CMSampleBuffer, discontinuity: CMIOExtensionStream.DiscontinuityFlags, hostTimeInNanoseconds: UInt64)
 ```
 
+```objc
+- (void) sendSampleBuffer:(CMSampleBufferRef) sampleBuffer discontinuity:(CMIOExtensionStreamDiscontinuityFlags) discontinuity hostTimeInNanoseconds:(uint64_t) hostTimeInNanoseconds;
+```
+
 #### Discussion
 
-Specify sample buffer timestamps that are relative to the clock timebase specified by the [`clockType`](cmioextensionstream/clocktype-swift.property.md) property.
+Specify sample buffer timestamps that are relative to the clock timebase specified by the [`clockType`](./clocktype-swift.property.md) property.
 
 > ❗ **Important**:  Attempting to send a sample buffer from a sink stream throws an exception.
 
@@ -29,9 +34,10 @@ Specify sample buffer timestamps that are relative to the clock timebase specifi
 
 ## See Also
 
-- [func consumeSampleBuffer(from: CMIOExtensionClient, completionHandler: (CMSampleBuffer?, UInt64, CMIOExtensionStream.DiscontinuityFlags, Bool, (any Error)?) -> Void)](cmioextensionstream/consumesamplebuffer(from:completionhandler:).md)
+### Processing Data
+- [func consumeSampleBuffer(from: CMIOExtensionClient, completionHandler: (CMSampleBuffer?, UInt64, CMIOExtensionStream.DiscontinuityFlags, Bool, (any Error)?) -> Void)](./consumesamplebuffer%28from,completionhandler%29.md)
   Consumes a sample buffer from a client.
-- [CMIOExtensionStream.DiscontinuityFlags](cmioextensionstream/discontinuityflags.md)
+- [CMIOExtensionStream.DiscontinuityFlags](./discontinuityflags.md)
   Constants that specify the types of discontinuities that can occur in a media stream.
 
 

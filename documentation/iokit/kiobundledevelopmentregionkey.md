@@ -1,7 +1,8 @@
 # kIOBundleDevelopmentRegionKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kIOBundleDevelopmentRegionKey: String { get }
+```
+
+```c
+#define kIOBundleDevelopmentRegionKey
 ```
 
 

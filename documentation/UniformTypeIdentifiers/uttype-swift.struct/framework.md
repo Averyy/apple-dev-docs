@@ -1,7 +1,8 @@
 # framework
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an Apple framework bundle.
 
@@ -24,21 +25,22 @@ static var framework: UTType { get }
 
 The identifier for this type is `com.apple.framework`.
 
-This type conforms to [`UTTypePluginBundle`](uttypepluginbundle.md).
+This type conforms to [`UTTypePluginBundle`](../uttypepluginbundle.md).
 
 ## See Also
 
-- [static var applicationBundle: UTType](uttype-swift.struct/applicationbundle.md)
+### Apple system types
+- [static var applicationBundle: UTType](./applicationbundle.md)
   A type that represents a bundled app.
-- [static var applicationExtension: UTType](uttype-swift.struct/applicationextension.md)
+- [static var applicationExtension: UTType](./applicationextension.md)
   A type that represents an app extension.
-- [static var spotlightImporter: UTType](uttype-swift.struct/spotlightimporter.md)
+- [static var spotlightImporter: UTType](./spotlightimporter.md)
   A type that represents a Spotlight metadata importer bundle.
-- [static var quickLookGenerator: UTType](uttype-swift.struct/quicklookgenerator.md)
+- [static var quickLookGenerator: UTType](./quicklookgenerator.md)
   A type that represents a QuickLook preview generator bundle.
-- [static var xpcService: UTType](uttype-swift.struct/xpcservice.md)
+- [static var xpcService: UTType](./xpcservice.md)
   A type that represents an XPC service bundle.
-- [static var systemPreferencesPane: UTType](uttype-swift.struct/systempreferencespane.md)
+- [static var systemPreferencesPane: UTType](./systempreferencespane.md)
   A type that represents a System Preferences pane.
 
 

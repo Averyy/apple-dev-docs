@@ -1,7 +1,8 @@
 # init(switchingResolutions:boundingBox:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a resolution metric for a level of detail component to switch with.
 

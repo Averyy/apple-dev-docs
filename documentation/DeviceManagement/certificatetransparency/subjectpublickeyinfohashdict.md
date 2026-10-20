@@ -1,7 +1,8 @@
 # CertificateTransparency.SubjectPublicKeyInfoHashDict
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary of hashed public keys.
 
@@ -16,14 +17,18 @@ A dictionary of hashed public keys.
 
 ## Declaration
 
-```swift
+```
 object CertificateTransparency.SubjectPublicKeyInfoHashDict
 ```
 
 ## Properties
 
 - `Algorithm` (string) *(required)*: The algorithm must be `sha256`.
-- `Hash` (data) *(required)*: The hash of the DER-encoding of the certificate’s `subjectPublicKeyInfo`. The hash field requires the data (`subjectPublicKeyInfo` hash) in a specific format: a Base64 encoded (binary) SHA-256 hash of the certificate’s public key.
+
+  **Allowed Values**: `sha256`
+- `Hash` (data) *(required)*: The hash of the DER-encoding of the certificate’s `subjectPublicKeyInfo`.
+
+  The hash field requires the data (`subjectPublicKeyInfo` hash) in a specific format: a Base64 encoded (binary) SHA-256 hash of the certificate’s public key.
 
 
 ---

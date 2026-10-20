@@ -1,7 +1,8 @@
 # subsystem
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Signpost subsystem
 
@@ -19,9 +20,10 @@ let subsystem: String
 
 ## See Also
 
-- [let category: String](signpostrecord/category.md)
+### Signpost details
+- [let category: String](./category.md)
   Signpost category
-- [let name: String](signpostrecord/name.md)
+- [let name: String](./name.md)
   Signpost name
 
 

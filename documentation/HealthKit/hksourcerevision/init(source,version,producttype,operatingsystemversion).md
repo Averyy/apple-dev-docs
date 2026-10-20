@@ -1,7 +1,8 @@
 # init(source:version:productType:operatingSystemVersion:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new source revision object with the provided source, version, product type, and operating system.
 
@@ -19,13 +20,17 @@ Initializes a new source revision object with the provided source, version, prod
 init(source: HKSource, version: String?, productType: String?, operatingSystemVersion: OperatingSystemVersion)
 ```
 
+```objc
+- (instancetype) initWithSource:(HKSource *) source version:(NSString *) version productType:(NSString *) productType operatingSystemVersion:(NSOperatingSystemVersion) operatingSystemVersion;
+```
+
 #### Return Value
 
 A newly initialized source revision object.
 
 #### Discussion
 
-Use this method to create source revisions for use in queries. For more information, see [`HKPredicateKeyPathSourceRevision`](hkpredicatekeypathsourcerevision.md).
+Use this method to create source revisions for use in queries. For more information, see [`HKPredicateKeyPathSourceRevision`](../hkpredicatekeypathsourcerevision.md).
 
 ## Parameters
 
@@ -36,13 +41,15 @@ Use this method to create source revisions for use in queries. For more informat
 
 ## See Also
 
-- [let HKSourceRevisionAnyVersion: String](hksourcerevisionanyversion.md)
+### Related Documentation
+- [let HKSourceRevisionAnyVersion: String](../hksourcerevisionanyversion.md)
   A constant that matches any version.
-- [let HKSourceRevisionAnyProductType: String](hksourcerevisionanyproducttype.md)
+- [let HKSourceRevisionAnyProductType: String](../hksourcerevisionanyproducttype.md)
   A constant that matches any product type.
-- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](hksourcerevisionanyoperatingsystem.md)
+- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](../hksourcerevisionanyoperatingsystem.md)
   A constant that matches any operating system.
-- [init(source: HKSource, version: String?)](hksourcerevision/init(source:version:).md)
+### Creating Source Revision Objects
+- [init(source: HKSource, version: String?)](./init%28source,version%29.md)
   Initializes a new source revision object with the provided source and version information.
 
 

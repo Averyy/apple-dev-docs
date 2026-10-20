@@ -7,13 +7,13 @@ Constructs an IODeviceMemory instance, describing one physical range.
 
 ## Declaration
 
-```swift
+```c
 static IODeviceMemory * withRange( 
  IOPhysicalAddressaddress, 
  IOPhysicalLengthwithLength );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the created IODeviceMemory on success, to be released by the caller, or zero on failure.
 
@@ -28,9 +28,10 @@ This method creates an IODeviceMemory instance for one physical range passed as 
 
 ## See Also
 
-- [arrayFromList](iodevicememory/1811066-arrayfromlist.md)
+### Miscellaneous
+- [arrayFromList](./api-1811066-arrayfromlist.md)
   Constructs an OSArray of IODeviceMemory instances, each describing one physical range, and a tag value.
-- [withSubRange](iodevicememory/1811112-withsubrange.md)
+- [withSubRange](./api-1811112-withsubrange.md)
   Constructs an IODeviceMemory instance, describing a subset of an existing IODeviceMemory range.
 
 

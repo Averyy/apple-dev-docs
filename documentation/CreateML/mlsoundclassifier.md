@@ -1,7 +1,8 @@
 # MLSoundClassifier
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A machine learning model you train with audio files to recognize and identify sounds on a device.
 
@@ -20,7 +21,7 @@ struct MLSoundClassifier
 
 #### Overview
 
-A sound classifier is a machine learning model that identifies and categorizes sounds in an app. Create a sound classifier by gathering a dataset of audio files and use them to train a model with [`MLSoundClassifier`](mlsoundclassifier.md).
+A sound classifier is a machine learning model that identifies and categorizes sounds in an app. Create a sound classifier by gathering a dataset of audio files and use them to train a model with [`MLSoundClassifier`](./mlsoundclassifier.md).
 
 Assemble an audio dataset by recording or gathering audio files that best represent the sounds you want your app to identify. Additionally, create a *negative class* — a group of related noises the sound classifier might hear but aren’t relevant — by collecting or recording example sounds.
 
@@ -39,84 +40,84 @@ Reduce a sound classifier’s bias — which can adversely affect its performan
 
 Train, evaluate, and export your sound classifier by following similar steps to creating any other Create ML model type. For more information about the Create ML training workflow, see:
 
-- [`Creating an Image Classifier Model`](creating-an-image-classifier-model.md)
-- [`Creating an Action Classifier Model`](creating-an-action-classifier-model.md)
+- [Creating an Image Classifier Model](./creating-an-image-classifier-model.md)
+- [Creating an Action Classifier Model](./creating-an-action-classifier-model.md)
 
-Add the sound classifier’s Core ML model to an Xcode project and use it to create an [`SNClassifySoundRequest`](https://developer.apple.com/documentation/soundanalysis/snclassifysoundrequest) at runtime. Your app uses the sound request to identify sounds in an audio file or audio stream by following the steps in the following articles, respectively:
+Add the sound classifier’s Core ML model to an Xcode project and use it to create an [`SNClassifySoundRequest`](../SoundAnalysis/snclassifysoundrequest.md) at runtime. Your app uses the sound request to identify sounds in an audio file or audio stream by following the steps in the following articles, respectively:
 
-- [`Classifying Sounds in an Audio File`](https://developer.apple.com/documentation/soundanalysis/classifying-sounds-in-an-audio-file)
-- [`Classifying Sounds in an Audio Stream`](https://developer.apple.com/documentation/soundanalysis/classifying-sounds-in-an-audio-stream)
+- [Classifying Sounds in an Audio File](../SoundAnalysis/classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio Stream](../SoundAnalysis/classifying-sounds-in-an-audio-stream.md)
 
 ## Topics
 
 ### Training a sound classifier asynchronously
-- [static train(trainingData:parameters:sessionParameters:)](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:).md)
+- [static train(trainingData:parameters:sessionParameters:)](./mlsoundclassifier/train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous sound classifier training session with a training dataset represented by a data source.
-- [static func makeTrainingSession(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](mlsoundclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](./mlsoundclassifier/maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous training session for a sound classifier.
-- [static func resume(MLTrainingSession<MLSoundClassifier>) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLSoundClassifier>) throws -> MLJob<MLSoundClassifier>](./mlsoundclassifier/resume%28_%29.md)
   Begins or continues an asynchronous training session for a sound classifier.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](mlsoundclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](./mlsoundclassifier/restoretrainingsession%28sessionparameters%29.md)
   Creates an asynchronous training session for a sound classifier by restoring an existing training session’s state from its parameters.
-- [static func extractFeatures(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.FeatureExtractionParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier.DataSource>](mlsoundclassifier/extractfeatures(trainingdata:parameters:sessionparameters:).md)
+- [static func extractFeatures(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.FeatureExtractionParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier.DataSource>](./mlsoundclassifier/extractfeatures%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous session that extracts sound features from a data source of sound files.
-- [MLSoundClassifier.FeatureExtractionParameters](mlsoundclassifier/featureextractionparameters.md)
+- [MLSoundClassifier.FeatureExtractionParameters](./mlsoundclassifier/featureextractionparameters.md)
   Parameters that affect the process of extracting sound features from audio files.
 ### Creating a sound classifier from a checkpoint
-- [init(checkpoint: MLCheckpoint) throws](mlsoundclassifier/init(checkpoint:).md)
+- [init(checkpoint: MLCheckpoint) throws](./mlsoundclassifier/init%28checkpoint%29.md)
   Creates a sound classifier from a training session checkpoint.
 ### Training a sound classifier synchronously
-- [init(trainingData:parameters:)](mlsoundclassifier/init(trainingdata:parameters:).md)
+- [init(trainingData:parameters:)](./mlsoundclassifier/init%28trainingdata,parameters%29.md)
   Creates a sound classifier with a training dataset represented by a data source.
 ### Evaluating a sound classifier
-- [func evaluation(on:)](mlsoundclassifier/evaluation(on:).md)
+- [func evaluation(on:)](./mlsoundclassifier/evaluation%28on%29.md)
   Generates metrics by evaluating the sound classifier’s performance on a dataset represented by a data source.
-- [var trainingMetrics: MLClassifierMetrics](mlsoundclassifier/trainingmetrics.md)
+- [var trainingMetrics: MLClassifierMetrics](./mlsoundclassifier/trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mlsoundclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./mlsoundclassifier/validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
 ### Testing a sound classifier
-- [func predictions(from: [URL]) throws -> [String]](mlsoundclassifier/predictions(from:).md)
+- [func predictions(from: [URL]) throws -> [String]](./mlsoundclassifier/predictions%28from%29.md)
   Generates predictions for an array of audio files.
-- [func predictions(from: [URL], overlapFactor: Double, predictionTimeWindowSize: TimeInterval) throws -> [String]](mlsoundclassifier/predictions(from:overlapfactor:predictiontimewindowsize:).md)
+- [func predictions(from: [URL], overlapFactor: Double, predictionTimeWindowSize: TimeInterval) throws -> [String]](./mlsoundclassifier/predictions%28from,overlapfactor,predictiontimewindowsize%29.md)
   Generates predictions that use an overlap factor and time window size for an array of audio files.
 ### Saving a sound classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlsoundclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlsoundclassifier/write%28to,metadata%29.md)
   Exports the sound classifier as a model file to a location in the file system.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlsoundclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlsoundclassifier/write%28tofile,metadata%29.md)
   Exports the sound classifier as a model file to a path in the file system.
 ### Inspecting a sound classifier model
-- [var model: MLModel](mlsoundclassifier/model.md)
+- [var model: MLModel](./mlsoundclassifier/model.md)
   The underlying model instance of the sound classifier stored in memory.
-- [let modelParameters: MLSoundClassifier.ModelParameters](mlsoundclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLSoundClassifier.ModelParameters](./mlsoundclassifier/modelparameters-swift.property.md)
   The model configuration parameters the sound classifier used during its training session.
 ### Describing a sound classifier
-- [var description: String](mlsoundclassifier/description.md)
+- [var description: String](./mlsoundclassifier/description.md)
   A text representation of the sound classifier.
-- [var debugDescription: String](mlsoundclassifier/debugdescription.md)
+- [var debugDescription: String](./mlsoundclassifier/debugdescription.md)
   A text representation of the sound classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlsoundclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlsoundclassifier/playgrounddescription.md)
   A description of the sound classifier in a playground.
 ### Supporting types
-- [MLSoundClassifier.DataSource](mlsoundclassifier/datasource.md)
+- [MLSoundClassifier.DataSource](./mlsoundclassifier/datasource.md)
   A representation of a sound-classifier dataset located in the file system or in a data table.
-- [MLSoundClassifier.ModelParameters](mlsoundclassifier/modelparameters-swift.struct.md)
+- [MLSoundClassifier.ModelParameters](./mlsoundclassifier/modelparameters-swift.struct.md)
   Parameters that affect the process of training a sound-classifier model.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlsoundclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlsoundclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlsoundclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlsoundclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlsoundclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlsoundclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

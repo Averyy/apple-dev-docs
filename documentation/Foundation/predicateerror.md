@@ -1,7 +1,8 @@
 # PredicateError
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error thrown while evaluating a predicate.
 
@@ -23,44 +24,45 @@ struct PredicateError
 ## Topics
 
 ### Errors
-- [static let forceCastFailure: PredicateError](predicateerror/forcecastfailure.md)
-- [static let forceUnwrapFailure: PredicateError](predicateerror/forceunwrapfailure.md)
-- [static let invalidInput: PredicateError](predicateerror/invalidinput.md)
-- [static let undefinedVariable: PredicateError](predicateerror/undefinedvariable.md)
+- [static let forceCastFailure: PredicateError](./predicateerror/forcecastfailure.md)
+- [static let forceUnwrapFailure: PredicateError](./predicateerror/forceunwrapfailure.md)
+- [static let invalidInput: PredicateError](./predicateerror/invalidinput.md)
+- [static let undefinedVariable: PredicateError](./predicateerror/undefinedvariable.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Predicate](predicate.md)
+### Filltering
+- [struct Predicate](./predicate.md)
   A logical condition used to test a set of input values for searching or filtering.
-- [struct PredicateCodableConfiguration](predicatecodableconfiguration.md)
+- [struct PredicateCodableConfiguration](./predicatecodableconfiguration.md)
   A specification of the expected types and key paths found in an archived predicate.
-- [protocol PredicateCodableKeyPathProviding](predicatecodablekeypathproviding.md)
+- [protocol PredicateCodableKeyPathProviding](./predicatecodablekeypathproviding.md)
   A type that provides the expected key paths found in an archived predicate.
-- [protocol PredicateExpression](predicateexpression.md)
+- [protocol PredicateExpression](./predicateexpression.md)
   A component expression that makes up part of a predicate.
-- [protocol StandardPredicateExpression](standardpredicateexpression.md)
+- [protocol StandardPredicateExpression](./standardpredicateexpression.md)
   A component expression that makes up part of a predicate, and that’s supported by the standard predicate type.
-- [enum PredicateExpressions](predicateexpressions.md)
+- [enum PredicateExpressions](./predicateexpressions.md)
   The expressions that make up a predicate.
-- [struct PredicateBindings](predicatebindings.md)
+- [struct PredicateBindings](./predicatebindings.md)
   A mapping from a predicates’s input variables to their values.
-- [class NSPredicate](nspredicate.md)
+- [class NSPredicate](./nspredicate.md)
   A definition of logical conditions for constraining a search for a fetch or for in-memory filtering.
-- [class NSExpression](nsexpression.md)
+- [class NSExpression](./nsexpression.md)
   An expression for use in a comparison predicate.
-- [class NSComparisonPredicate](nscomparisonpredicate.md)
+- [class NSComparisonPredicate](./nscomparisonpredicate.md)
   A specialized predicate for comparing expressions.
-- [class NSCompoundPredicate](nscompoundpredicate.md)
+- [class NSCompoundPredicate](./nscompoundpredicate.md)
   A specialized predicate that evaluates logical combinations of other predicates.
 
 

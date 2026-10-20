@@ -1,14 +1,15 @@
 # dispatchAbsolutePointerEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchAbsolutePointerEvent(IOGPoint *newLoc, IOGBounds *bounds, UInt32 buttonState, bool proximity, int pressure, int pressureMin, int pressureMax, int stylusAngle, AbsoluteTime ts);
 ```
 

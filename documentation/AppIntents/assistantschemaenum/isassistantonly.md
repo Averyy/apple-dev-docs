@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 ```swift
 static var isAssistantOnly: Bool { get }
 ```
+
+## Default Implementations
+
+### AssistantSchemaEnum Implementations
+- [static var isAssistantOnly: Bool](./isassistantonly-91o1k.md)
 
 
 ---

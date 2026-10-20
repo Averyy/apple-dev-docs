@@ -1,7 +1,8 @@
 # PasteboardCopyName(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardCopyName(_ inPasteboard: Pasteboard, _ outName: UnsafeMutablePointer<CFString?>) -> OSStatus
+```
+
+```c
+OSStatus PasteboardCopyName(PasteboardRef inPasteboard, CFStringRef  _Nullable *outName);
 ```
 
 

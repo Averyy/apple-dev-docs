@@ -1,7 +1,8 @@
 # MPNowPlayingPlaybackState.stopped
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app has stopped playing.
 
@@ -20,15 +21,20 @@ The app has stopped playing.
 case stopped
 ```
 
+```c
+MPNowPlayingPlaybackStateStopped
+```
+
 ## See Also
 
-- [MPNowPlayingPlaybackState.unknown](mpnowplayingplaybackstate/unknown.md)
+### Playback states
+- [MPNowPlayingPlaybackState.unknown](./unknown.md)
   The current state of the app is unknown.
-- [MPNowPlayingPlaybackState.playing](mpnowplayingplaybackstate/playing.md)
+- [MPNowPlayingPlaybackState.playing](./playing.md)
   The app is currently playing a media item.
-- [MPNowPlayingPlaybackState.paused](mpnowplayingplaybackstate/paused.md)
+- [MPNowPlayingPlaybackState.paused](./paused.md)
   The app is currently paused.
-- [MPNowPlayingPlaybackState.interrupted](mpnowplayingplaybackstate/interrupted.md)
+- [MPNowPlayingPlaybackState.interrupted](./interrupted.md)
   The app has been interrupted during playback.
 
 

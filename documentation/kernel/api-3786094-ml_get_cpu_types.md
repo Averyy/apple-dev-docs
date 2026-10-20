@@ -1,14 +1,15 @@
 # ml_get_cpu_types
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_get_cpu_types(void);
 ```
 

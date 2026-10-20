@@ -1,7 +1,8 @@
 # CMDeviceMotion.SensorLocation.headphoneRight
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sensor is in the right headphone.
 
@@ -19,11 +20,16 @@ The sensor is in the right headphone.
 case headphoneRight
 ```
 
+```c
+CMDeviceMotionSensorLocationHeadphoneRight
+```
+
 ## See Also
 
-- [CMDeviceMotion.SensorLocation.default](cmdevicemotion/sensorlocation-swift.enum/default.md)
+### Sensor Locations
+- [CMDeviceMotion.SensorLocation.default](./default.md)
   The default sensor location.
-- [CMDeviceMotion.SensorLocation.headphoneLeft](cmdevicemotion/sensorlocation-swift.enum/headphoneleft.md)
+- [CMDeviceMotion.SensorLocation.headphoneLeft](./headphoneleft.md)
   The sensor is in the left headphone.
 
 

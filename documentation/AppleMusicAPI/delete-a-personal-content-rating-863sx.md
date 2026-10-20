@@ -1,7 +1,8 @@
 # Delete a Personal Album Rating
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a user’s album rating by using the album’s identifier.
 
@@ -10,7 +11,7 @@ Remove a user’s album rating by using the album’s identifier.
 
 #### Discussion
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 A rating indicates whether a user likes `(1)` or dislikes `(-1)` the album. These are the only two ratings supported.
 
@@ -18,7 +19,7 @@ A rating indicates whether a user likes `(1)` or dislikes `(-1)` the album. Thes
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/ratings/albums/1138988512
 ```
 
@@ -34,19 +35,34 @@ No response body.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the album.
+
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
+## Responses
+
+- `204` No Content (`EmptyBodyResponse`, `application/json`): The modification was successful, but there’s no content in the response.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object Ratings](ratings.md)
+### Related Documentation
+- [object Ratings](./ratings.md)
   An object that represents a rating for a resource.
-- [Delete a Personal Music Video Rating](delete-a-personal-content-rating-9xd3d.md)
+### Deleting Catalog Ratings
+- [Delete a Personal Music Video Rating](./delete-a-personal-content-rating-9xd3d.md)
   Remove a user’s music video rating by using the music video’s identifier.
-- [Delete a Personal Playlist Rating](delete-a-personal-content-rating-mv3a.md)
+- [Delete a Personal Playlist Rating](./delete-a-personal-content-rating-mv3a.md)
   Remove a user’s playlist rating by using the playlist’s identifier.
-- [Delete a Personal Song Rating](delete-a-personal-content-rating-3a3a2.md)
+- [Delete a Personal Song Rating](./delete-a-personal-content-rating-3a3a2.md)
   Remove a user’s song rating by using the song’s identifier.
-- [Delete a Personal Station Rating](delete-a-personal-content-rating-7pbcr.md)
+- [Delete a Personal Station Rating](./delete-a-personal-content-rating-7pbcr.md)
   Remove a user’s station rating by using the station’s identifier.
 
 

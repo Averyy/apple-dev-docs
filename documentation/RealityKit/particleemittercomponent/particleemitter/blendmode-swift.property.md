@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How overlapping particles are composited together. Defaults to `alpha`.
 

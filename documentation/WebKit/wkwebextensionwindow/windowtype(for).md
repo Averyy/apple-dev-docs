@@ -1,7 +1,8 @@
 # windowType(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the type of the window is needed.
 
@@ -18,9 +19,13 @@ Called when the type of the window is needed.
 optional func windowType(for context: WKWebExtensionContext) -> WKWebExtension.WindowType
 ```
 
+```objc
+- (WKWebExtensionWindowType) windowTypeForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-Defaults to[`WKWebExtension.WindowType.normal`](wkwebextension/windowtype/normal.md) if not implemented.
+Defaults to[`WKWebExtension.WindowType.normal`](../wkwebextension/windowtype/normal.md) if not implemented.
 
 ## Parameters
 

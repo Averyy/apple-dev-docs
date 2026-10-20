@@ -1,6 +1,8 @@
 # Modernizing Safari Web Extensions
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Sample Code  
+**Download**: [ModernizingSafariWebExtensions.zip](https://docs-assets.developer.apple.com/published/d43c0429a69e/ModernizingSafariWebExtensions.zip)
 
 Learn about enhancements to Safari Web Extensions.
 
@@ -13,19 +15,20 @@ Learn about enhancements to Safari Web Extensions.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10099: What’s new in Safari Web Extensions`](https://developer.apple.comhttps://developer.apple.com/wwdc2022/10099/).
+> **Note**: This sample code project is associated with WWDC22 session [10099: What’s new in Safari Web Extensions](https://developer.apple.com/wwdc2022/10099/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode, open Safari and choose Develop > Allow Unsigned Extensions.
 
 ## See Also
 
-- [Creating a Safari web extension](creating-a-safari-web-extension.md)
+### New extensions
+- [Creating a Safari web extension](./creating-a-safari-web-extension.md)
   Build a Safari web extension in Xcode.
-- [Building and testing a Safari web extension](building-and-testing-a-safari-web-extension.md)
+- [Building and testing a Safari web extension](./building-and-testing-a-safari-web-extension.md)
   Get started with Safari web extensions by creating one from the ground up, using any code editor.
-- [Developing a Safari Web Extension](developing-a-safari-web-extension.md)
+- [Developing a Safari Web Extension](./developing-a-safari-web-extension.md)
   Customize and enhance web pages by building a Safari web extension.
 
 

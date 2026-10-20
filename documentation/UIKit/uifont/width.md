@@ -1,14 +1,15 @@
 # UIFont.Width
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -17,46 +18,51 @@
 struct Width
 ```
 
+```c
+typedef CGFloat UIFontWidth;
+```
+
 ## Topics
 
 ### Font widths
-- [static let compressed: UIFont.Width](uifont/width/compressed.md)
-- [static let condensed: UIFont.Width](uifont/width/condensed.md)
-- [static let expanded: UIFont.Width](uifont/width/expanded.md)
-- [static let standard: UIFont.Width](uifont/width/standard.md)
+- [static let compressed: UIFont.Width](./width/compressed.md)
+- [static let condensed: UIFont.Width](./width/condensed.md)
+- [static let expanded: UIFont.Width](./width/expanded.md)
+- [static let standard: UIFont.Width](./width/standard.md)
 ### Initializers
-- [init(CGFloat)](uifont/width/init(_:).md)
-- [init(rawValue: CGFloat)](uifont/width/init(rawvalue:).md)
+- [init(CGFloat)](./width/init%28_%29.md)
+- [init(rawValue: CGFloat)](./width/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func systemFont(ofSize: CGFloat) -> UIFont](uifont/systemfont(ofsize:).md)
+### Creating System Fonts
+- [class func systemFont(ofSize: CGFloat) -> UIFont](./systemfont%28ofsize%29.md)
   Returns the font object for standard interface items in the specified size.
-- [class func systemFont(ofSize: CGFloat, weight: UIFont.Weight) -> UIFont](uifont/systemfont(ofsize:weight:).md)
+- [class func systemFont(ofSize: CGFloat, weight: UIFont.Weight) -> UIFont](./systemfont%28ofsize,weight%29.md)
   Returns the font object for standard interface items in the specified size and weight.
-- [UIFont.Weight](uifont/weight.md)
+- [UIFont.Weight](./weight.md)
   Constants that represent standard typeface styles.
-- [class func systemFont(ofSize: CGFloat, weight: UIFont.Weight, width: UIFont.Width) -> UIFont](uifont/systemfont(ofsize:weight:width:).md)
-- [class func boldSystemFont(ofSize: CGFloat) -> UIFont](uifont/boldsystemfont(ofsize:).md)
+- [class func systemFont(ofSize: CGFloat, weight: UIFont.Weight, width: UIFont.Width) -> UIFont](./systemfont%28ofsize,weight,width%29.md)
+- [class func boldSystemFont(ofSize: CGFloat) -> UIFont](./boldsystemfont%28ofsize%29.md)
   Returns the font object for standard interface items in boldface type in the specified size.
-- [class func italicSystemFont(ofSize: CGFloat) -> UIFont](uifont/italicsystemfont(ofsize:).md)
+- [class func italicSystemFont(ofSize: CGFloat) -> UIFont](./italicsystemfont%28ofsize%29.md)
   Returns the font object for standard interface items in italic type in the specified size.
-- [class func monospacedSystemFont(ofSize: CGFloat, weight: UIFont.Weight) -> UIFont](uifont/monospacedsystemfont(ofsize:weight:).md)
+- [class func monospacedSystemFont(ofSize: CGFloat, weight: UIFont.Weight) -> UIFont](./monospacedsystemfont%28ofsize,weight%29.md)
   Returns the fixed-width font for standard interface text in the specified size.
-- [class func monospacedDigitSystemFont(ofSize: CGFloat, weight: UIFont.Weight) -> UIFont](uifont/monospaceddigitsystemfont(ofsize:weight:).md)
+- [class func monospacedDigitSystemFont(ofSize: CGFloat, weight: UIFont.Weight) -> UIFont](./monospaceddigitsystemfont%28ofsize,weight%29.md)
   Returns the standard system font with all digits of consistent width.
 
 

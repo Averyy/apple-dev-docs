@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regular expression from the given string, using a dynamic capture list.
 
@@ -20,6 +21,8 @@ Creates a regular expression from the given string, using a dynamic capture list
 init(_ pattern: String) throws
 ```
 
+Available when `Output` is `AnyRegexOutput`.
+
 #### Discussion
 
 Use this initializer to create a `Regex` instance from a regular expression that you have stored in `pattern`.
@@ -30,7 +33,7 @@ let simpleDigits = try Regex("[0-9]+")
 
 This initializer throws an error if `pattern` uses invalid regular expression syntax.
 
-The output type of the new `Regex` is the dynamic [`AnyRegexOutput`](anyregexoutput.md). If you know the capture structure of `pattern` ahead of time, use the `init(_:as:)` initializer instead.
+The output type of the new `Regex` is the dynamic [`AnyRegexOutput`](../anyregexoutput.md). If you know the capture structure of `pattern` ahead of time, use the `init(_:as:)` initializer instead.
 
 ## Parameters
 

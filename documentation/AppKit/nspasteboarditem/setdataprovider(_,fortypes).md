@@ -1,7 +1,8 @@
 # setDataProvider(_:forTypes:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the data provider for the specified types.
 
@@ -14,9 +15,13 @@ Sets the data provider for the specified types.
 func setDataProvider(_ dataProvider: any NSPasteboardItemDataProvider, forTypes types: [NSPasteboard.PasteboardType]) -> Bool
 ```
 
+```objc
+- (BOOL) setDataProvider:(id<NSPasteboardItemDataProvider>) dataProvider forTypes:(NSArray<NSString *> *) types;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the data provider was set successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the data provider was set successfully, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

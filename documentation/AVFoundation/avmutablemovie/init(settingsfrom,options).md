@@ -1,7 +1,8 @@
 # init(settingsFrom:options:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable movie object without tracks.
 
@@ -19,13 +20,17 @@ Creates a mutable movie object without tracks.
 init(settingsFrom movie: AVMovie?, options: [String : Any]? = nil) throws
 ```
 
+```objc
+- (instancetype) initWithSettingsFromMovie:(AVMovie *) movie options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
+```
+
 #### Return Value
 
 An `AVMutableMovie` object.
 
 #### Discussion
 
-On initialization, the [`defaultMediaDataStorage`](avmutablemovie/defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](avmutablemovietrack/mediadatastorage.md) properties are set to `nil`. To create an `AVMutableMovie` from a file and then append sample buffers to any of its tracks, you must first set one of these properties to indicate where the sample data should be written.
+On initialization, the [`defaultMediaDataStorage`](./defaultmediadatastorage.md) property and any associated [`mediaDataStorage`](../avmutablemovietrack/mediadatastorage.md) properties are set to `nil`. To create an `AVMutableMovie` from a file and then append sample buffers to any of its tracks, you must first set one of these properties to indicate where the sample data should be written.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ On initialization, the [`defaultMediaDataStorage`](avmutablemovie/defaultmediada
 
 ## See Also
 
-- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-8rnnj.md)
+### Creating a movie
+- [init(url: URL, options: [String : Any]?, error: ()) throws](./init%28url,options,error%29-8rnnj.md)
   Creates a mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
-- [init(data: Data, options: [String : Any]?, error: ()) throws](avmutablemovie/init(data:options:error:).md)
+- [init(data: Data, options: [String : Any]?, error: ()) throws](./init%28data,options,error%29.md)
   Creates a mutable movie object from a movie stored in a data object.
 
 

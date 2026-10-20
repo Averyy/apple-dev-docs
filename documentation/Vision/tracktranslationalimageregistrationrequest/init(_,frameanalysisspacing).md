@@ -1,7 +1,8 @@
 # init(_:frameAnalysisSpacing:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image-alignment tracking request to determine the affine transform.
 

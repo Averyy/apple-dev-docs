@@ -1,7 +1,8 @@
 # isNull
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var isNull: Bool { get }
+```
+
+```c
+static bool SPRect3DFloatIsNull(SPRect3DFloat rect);
 ```
 
 #### Discussion

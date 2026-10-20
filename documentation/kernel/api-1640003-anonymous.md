@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,41 +18,41 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothHCIEventMaskAll](1640003-anonymous/kbluetoothhcieventmaskall.md)
-- [kBluetoothHCIEventMaskAuthenticationComplete](1640003-anonymous/kbluetoothhcieventmaskauthenticationcomplete.md)
-- [kBluetoothHCIEventMaskChangeConnectionLinkKeyComplete](1640003-anonymous/kbluetoothhcieventmaskchangeconnectionlinkkeycomplete.md)
-- [kBluetoothHCIEventMaskCommandComplete](1640003-anonymous/kbluetoothhcieventmaskcommandcomplete.md)
-- [kBluetoothHCIEventMaskCommandStatus](1640003-anonymous/kbluetoothhcieventmaskcommandstatus.md)
-- [kBluetoothHCIEventMaskConnectionComplete](1640003-anonymous/kbluetoothhcieventmaskconnectioncomplete.md)
-- [kBluetoothHCIEventMaskConnectionPacketTypeChanged](1640003-anonymous/kbluetoothhcieventmaskconnectionpackettypechanged.md)
-- [kBluetoothHCIEventMaskConnectionRequest](1640003-anonymous/kbluetoothhcieventmaskconnectionrequest.md)
-- [kBluetoothHCIEventMaskDataBufferOverflow](1640003-anonymous/kbluetoothhcieventmaskdatabufferoverflow.md)
-- [kBluetoothHCIEventMaskDefault](1640003-anonymous/kbluetoothhcieventmaskdefault.md)
-- [kBluetoothHCIEventMaskDisconnectionComplete](1640003-anonymous/kbluetoothhcieventmaskdisconnectioncomplete.md)
-- [kBluetoothHCIEventMaskEncryptionChange](1640003-anonymous/kbluetoothhcieventmaskencryptionchange.md)
-- [kBluetoothHCIEventMaskFlushOccurred](1640003-anonymous/kbluetoothhcieventmaskflushoccurred.md)
-- [kBluetoothHCIEventMaskHardwareError](1640003-anonymous/kbluetoothhcieventmaskhardwareerror.md)
-- [kBluetoothHCIEventMaskInquiryComplete](1640003-anonymous/kbluetoothhcieventmaskinquirycomplete.md)
-- [kBluetoothHCIEventMaskInquiryResult](1640003-anonymous/kbluetoothhcieventmaskinquiryresult.md)
-- [kBluetoothHCIEventMaskLinkKeyNotification](1640003-anonymous/kbluetoothhcieventmasklinkkeynotification.md)
-- [kBluetoothHCIEventMaskLinkKeyRequest](1640003-anonymous/kbluetoothhcieventmasklinkkeyrequest.md)
-- [kBluetoothHCIEventMaskLoopbackCommand](1640003-anonymous/kbluetoothhcieventmaskloopbackcommand.md)
-- [kBluetoothHCIEventMaskMasterLinkKeyComplete](1640003-anonymous/kbluetoothhcieventmaskmasterlinkkeycomplete.md)
-- [kBluetoothHCIEventMaskMaxSlotsChange](1640003-anonymous/kbluetoothhcieventmaskmaxslotschange.md)
-- [kBluetoothHCIEventMaskModeChange](1640003-anonymous/kbluetoothhcieventmaskmodechange.md)
-- [kBluetoothHCIEventMaskNone](1640003-anonymous/kbluetoothhcieventmasknone.md)
-- [kBluetoothHCIEventMaskNumberOfCompletedPackets](1640003-anonymous/kbluetoothhcieventmasknumberofcompletedpackets.md)
-- [kBluetoothHCIEventMaskPINCodeRequest](1640003-anonymous/kbluetoothhcieventmaskpincoderequest.md)
-- [kBluetoothHCIEventMaskPageScanModeChange](1640003-anonymous/kbluetoothhcieventmaskpagescanmodechange.md)
-- [kBluetoothHCIEventMaskPageScanRepetitionModeChange](1640003-anonymous/kbluetoothhcieventmaskpagescanrepetitionmodechange.md)
-- [kBluetoothHCIEventMaskQoSSetupComplete](1640003-anonymous/kbluetoothhcieventmaskqossetupcomplete.md)
-- [kBluetoothHCIEventMaskQoSViolation](1640003-anonymous/kbluetoothhcieventmaskqosviolation.md)
-- [kBluetoothHCIEventMaskReadClockOffsetComplete](1640003-anonymous/kbluetoothhcieventmaskreadclockoffsetcomplete.md)
-- [kBluetoothHCIEventMaskReadRemoteSupportedFeaturesComplete](1640003-anonymous/kbluetoothhcieventmaskreadremotesupportedfeaturescomplete.md)
-- [kBluetoothHCIEventMaskReadRemoteVersionInformationComplete](1640003-anonymous/kbluetoothhcieventmaskreadremoteversioninformationcomplete.md)
-- [kBluetoothHCIEventMaskRemoteNameRequestComplete](1640003-anonymous/kbluetoothhcieventmaskremotenamerequestcomplete.md)
-- [kBluetoothHCIEventMaskReturnLinkKeys](1640003-anonymous/kbluetoothhcieventmaskreturnlinkkeys.md)
-- [kBluetoothHCIEventMaskRoleChange](1640003-anonymous/kbluetoothhcieventmaskrolechange.md)
+- [kBluetoothHCIEventMaskAll](./api-1640003-anonymous/kbluetoothhcieventmaskall.md)
+- [kBluetoothHCIEventMaskAuthenticationComplete](./api-1640003-anonymous/kbluetoothhcieventmaskauthenticationcomplete.md)
+- [kBluetoothHCIEventMaskChangeConnectionLinkKeyComplete](./api-1640003-anonymous/kbluetoothhcieventmaskchangeconnectionlinkkeycomplete.md)
+- [kBluetoothHCIEventMaskCommandComplete](./api-1640003-anonymous/kbluetoothhcieventmaskcommandcomplete.md)
+- [kBluetoothHCIEventMaskCommandStatus](./api-1640003-anonymous/kbluetoothhcieventmaskcommandstatus.md)
+- [kBluetoothHCIEventMaskConnectionComplete](./api-1640003-anonymous/kbluetoothhcieventmaskconnectioncomplete.md)
+- [kBluetoothHCIEventMaskConnectionPacketTypeChanged](./api-1640003-anonymous/kbluetoothhcieventmaskconnectionpackettypechanged.md)
+- [kBluetoothHCIEventMaskConnectionRequest](./api-1640003-anonymous/kbluetoothhcieventmaskconnectionrequest.md)
+- [kBluetoothHCIEventMaskDataBufferOverflow](./api-1640003-anonymous/kbluetoothhcieventmaskdatabufferoverflow.md)
+- [kBluetoothHCIEventMaskDefault](./api-1640003-anonymous/kbluetoothhcieventmaskdefault.md)
+- [kBluetoothHCIEventMaskDisconnectionComplete](./api-1640003-anonymous/kbluetoothhcieventmaskdisconnectioncomplete.md)
+- [kBluetoothHCIEventMaskEncryptionChange](./api-1640003-anonymous/kbluetoothhcieventmaskencryptionchange.md)
+- [kBluetoothHCIEventMaskFlushOccurred](./api-1640003-anonymous/kbluetoothhcieventmaskflushoccurred.md)
+- [kBluetoothHCIEventMaskHardwareError](./api-1640003-anonymous/kbluetoothhcieventmaskhardwareerror.md)
+- [kBluetoothHCIEventMaskInquiryComplete](./api-1640003-anonymous/kbluetoothhcieventmaskinquirycomplete.md)
+- [kBluetoothHCIEventMaskInquiryResult](./api-1640003-anonymous/kbluetoothhcieventmaskinquiryresult.md)
+- [kBluetoothHCIEventMaskLinkKeyNotification](./api-1640003-anonymous/kbluetoothhcieventmasklinkkeynotification.md)
+- [kBluetoothHCIEventMaskLinkKeyRequest](./api-1640003-anonymous/kbluetoothhcieventmasklinkkeyrequest.md)
+- [kBluetoothHCIEventMaskLoopbackCommand](./api-1640003-anonymous/kbluetoothhcieventmaskloopbackcommand.md)
+- [kBluetoothHCIEventMaskMasterLinkKeyComplete](./api-1640003-anonymous/kbluetoothhcieventmaskmasterlinkkeycomplete.md)
+- [kBluetoothHCIEventMaskMaxSlotsChange](./api-1640003-anonymous/kbluetoothhcieventmaskmaxslotschange.md)
+- [kBluetoothHCIEventMaskModeChange](./api-1640003-anonymous/kbluetoothhcieventmaskmodechange.md)
+- [kBluetoothHCIEventMaskNone](./api-1640003-anonymous/kbluetoothhcieventmasknone.md)
+- [kBluetoothHCIEventMaskNumberOfCompletedPackets](./api-1640003-anonymous/kbluetoothhcieventmasknumberofcompletedpackets.md)
+- [kBluetoothHCIEventMaskPINCodeRequest](./api-1640003-anonymous/kbluetoothhcieventmaskpincoderequest.md)
+- [kBluetoothHCIEventMaskPageScanModeChange](./api-1640003-anonymous/kbluetoothhcieventmaskpagescanmodechange.md)
+- [kBluetoothHCIEventMaskPageScanRepetitionModeChange](./api-1640003-anonymous/kbluetoothhcieventmaskpagescanrepetitionmodechange.md)
+- [kBluetoothHCIEventMaskQoSSetupComplete](./api-1640003-anonymous/kbluetoothhcieventmaskqossetupcomplete.md)
+- [kBluetoothHCIEventMaskQoSViolation](./api-1640003-anonymous/kbluetoothhcieventmaskqosviolation.md)
+- [kBluetoothHCIEventMaskReadClockOffsetComplete](./api-1640003-anonymous/kbluetoothhcieventmaskreadclockoffsetcomplete.md)
+- [kBluetoothHCIEventMaskReadRemoteSupportedFeaturesComplete](./api-1640003-anonymous/kbluetoothhcieventmaskreadremotesupportedfeaturescomplete.md)
+- [kBluetoothHCIEventMaskReadRemoteVersionInformationComplete](./api-1640003-anonymous/kbluetoothhcieventmaskreadremoteversioninformationcomplete.md)
+- [kBluetoothHCIEventMaskRemoteNameRequestComplete](./api-1640003-anonymous/kbluetoothhcieventmaskremotenamerequestcomplete.md)
+- [kBluetoothHCIEventMaskReturnLinkKeys](./api-1640003-anonymous/kbluetoothhcieventmaskreturnlinkkeys.md)
+- [kBluetoothHCIEventMaskRoleChange](./api-1640003-anonymous/kbluetoothhcieventmaskrolechange.md)
 
 
 ---

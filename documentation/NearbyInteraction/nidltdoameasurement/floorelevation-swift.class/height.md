@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height above the floor in meters.
 
@@ -16,15 +17,20 @@ The height above the floor in meters.
 var height: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double height;
+```
+
 #### Discussion
 
 This property specifies the vertical distance, in meters, from the floor surface to the DL-TDOA anchor’s location in the environment.
 
-Use this property in combination with [`floorNumber`](nidltdoameasurement/floorelevation-swift.class/floornumber.md) to determine the complete vertical position of the anchor in a multi-story environment.
+Use this property in combination with [`floorNumber`](./floornumber.md) to determine the complete vertical position of the anchor in a multi-story environment.
 
 ## See Also
 
-- [var floorNumber: Int](nidltdoameasurement/floorelevation-swift.class/floornumber.md)
+### Accessing floor elevation components
+- [var floorNumber: Int](./floornumber.md)
   The floor number on which the anchor resides.
 
 

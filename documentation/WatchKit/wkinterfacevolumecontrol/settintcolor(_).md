@@ -1,7 +1,8 @@
 # setTintColor(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the volume control’s tint color.
 
@@ -12,6 +13,10 @@ Sets the volume control’s tint color.
 
 ```swift
 func setTintColor(_ tintColor: UIColor?)
+```
+
+```objc
+- (void) setTintColor:(UIColor *) tintColor;
 ```
 
 #### Discussion

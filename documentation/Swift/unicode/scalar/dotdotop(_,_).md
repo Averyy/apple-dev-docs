@@ -1,7 +1,8 @@
 # ..<(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a half-open range that contains its lower bound but not its upper bound.
 
@@ -30,7 +31,7 @@ print(lessThanFive.contains(3.14))  // Prints "true"
 print(lessThanFive.contains(5.0))   // Prints "false"
 ```
 
-> **Note**: `minimum <= maximum`.
+> **Precondition**: `minimum <= maximum`.
 
 ## Parameters
 
@@ -39,13 +40,14 @@ print(lessThanFive.contains(5.0))   // Prints "false"
 
 ## See Also
 
-- [static func ... (Self) -> PartialRangeFrom<Self>](unicode/scalar/'...(_:)-9u9rz.md)
+### Creating Ranges of Scalars
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-9u9rz.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](unicode/scalar/'...(_:)-7lhvp.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-7lhvp.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](unicode/scalar/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](unicode/scalar/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
 
 

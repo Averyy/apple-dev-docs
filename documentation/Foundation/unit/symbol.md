@@ -1,7 +1,8 @@
 # symbol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbolic representation of the unit.
 
@@ -18,6 +19,10 @@ The symbolic representation of the unit.
 
 ```swift
 var symbol: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * symbol;
 ```
 
 #### Discussion

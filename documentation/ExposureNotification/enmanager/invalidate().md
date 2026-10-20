@@ -1,14 +1,17 @@
 # invalidate()
 
 **Framework**: Exposure Notification  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops any outstanding operations and invalidates the manager.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,16 +19,20 @@ Stops any outstanding operations and invalidates the manager.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
-Once you call this method, the object can no longer be used. To start using [`ENManager`](enmanager.md) again, create and activate a new instance of the class.
+Once you call this method, the object can no longer be used. To start using [`ENManager`](../enmanager.md) again, create and activate a new instance of the class.
 
 ## Topics
 
 ### Completion Handlers
-- [var invalidationHandler: (() -> Void)?](enmanager/invalidationhandler.md)
+- [var invalidationHandler: (() -> Void)?](./invalidationhandler.md)
   The handler that the framework invokes when invalidation completes.
 
 

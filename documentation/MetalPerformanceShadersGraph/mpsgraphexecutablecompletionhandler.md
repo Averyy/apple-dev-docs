@@ -1,7 +1,8 @@
 # MPSGraphExecutableCompletionHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A notification when graph executable execution finishes.
 
@@ -17,6 +18,10 @@ A notification when graph executable execution finishes.
 
 ```swift
 typealias MPSGraphExecutableCompletionHandler = ([MPSGraphTensorData], (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSArray<MPSGraphTensorData *> *, NSError *) MPSGraphExecutableCompletionHandler;
 ```
 
 ## Parameters

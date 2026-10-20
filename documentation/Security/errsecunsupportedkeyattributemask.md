@@ -1,7 +1,8 @@
 # errSecUnsupportedKeyAttributeMask
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key attribute mask is not supported.
 
@@ -18,6 +19,10 @@ The key attribute mask is not supported.
 
 ```swift
 var errSecUnsupportedKeyAttributeMask: OSStatus { get }
+```
+
+```c
+errSecUnsupportedKeyAttributeMask
 ```
 
 

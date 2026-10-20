@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Default App Clip Experience Localizations and the App Clip Header Images resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Default App Clip E
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Data](appclipdefaultexperiencelocalization/relationships-data.dictionary/appclipheaderimage-data.dictionary/data-data.dictionary.md)
+- [object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Data](./appclipheaderimage-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clip Header Images resource.
 
 ## Properties
@@ -27,7 +28,8 @@ object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage
 
 ## See Also
 
-- [object AppClipDefaultExperienceLocalization.Relationships.AppClipDefaultExperience](appclipdefaultexperiencelocalization/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperienceLocalization.Relationships.AppClipDefaultExperience](./appclipdefaultexperience-data.dictionary.md)
   The data and links that describe the relationship between the Default App Clip Experience Localizations and the Default App Clip Experiences resources.
 
 

@@ -1,7 +1,8 @@
 # angle
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle of the rotation.
 

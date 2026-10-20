@@ -1,7 +1,8 @@
 # UIContextMenuInteractionCommitStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that control the interaction commit style.
 
@@ -17,29 +18,34 @@ Constants that control the interaction commit style.
 enum UIContextMenuInteractionCommitStyle
 ```
 
+```c
+enum UIContextMenuInteractionCommitStyle : NSInteger;
+```
+
 ## Topics
 
 ### Interaction Styles
-- [UIContextMenuInteractionCommitStyle.dismiss](uicontextmenuinteractioncommitstyle/dismiss.md)
+- [UIContextMenuInteractionCommitStyle.dismiss](./uicontextmenuinteractioncommitstyle/dismiss.md)
   An interaction with no animations.
-- [UIContextMenuInteractionCommitStyle.pop](uicontextmenuinteractioncommitstyle/pop.md)
+- [UIContextMenuInteractionCommitStyle.pop](./uicontextmenuinteractioncommitstyle/pop.md)
   An interaction that uses animations.
 ### Initializers
-- [init?(rawValue: Int)](uicontextmenuinteractioncommitstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uicontextmenuinteractioncommitstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredCommitStyle: UIContextMenuInteractionCommitStyle](uicontextmenuinteractioncommitanimating/preferredcommitstyle.md)
+### Specifying the Commit Style
+- [var preferredCommitStyle: UIContextMenuInteractionCommitStyle](./uicontextmenuinteractioncommitanimating/preferredcommitstyle.md)
   The preferred animation style triggered when the user taps the preview.
 
 

@@ -1,7 +1,8 @@
 # isCanonicallyLessThan(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Whether `self` orders less than `other` under Unicode Canonical Equivalence using normalized code-unit order (in NFC).
 
@@ -22,7 +23,7 @@ func isCanonicallyLessThan(_ other: UTF8Span) -> Bool
 
 #### Discussion
 
-> **Note**: O(n)
+> **Complexity**: O(n)
 
 
 ---

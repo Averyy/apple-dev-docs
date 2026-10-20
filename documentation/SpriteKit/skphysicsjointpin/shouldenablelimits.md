@@ -1,18 +1,19 @@
 # shouldEnableLimits
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pin joint’s rotation is limited to a specific range of values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the pin joint’s rotation is limited to 
 var shouldEnableLimits: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldEnableLimits;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), the [`lowerAngleLimit`](skphysicsjointpin/loweranglelimit.md) and [`upperAngleLimit`](skphysicsjointpin/upperanglelimit.md) properties are used to limit the angle of the pin joint.
+The default value is [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), the [`lowerAngleLimit`](./loweranglelimit.md) and [`upperAngleLimit`](./upperanglelimit.md) properties are used to limit the angle of the pin joint.
 
 ## See Also
 
-- [var rotationSpeed: CGFloat](skphysicsjointpin/rotationspeed.md)
+### Configuring a Pin Joint
+- [var rotationSpeed: CGFloat](./rotationspeed.md)
   The speed, in radians per second, at which the physics bodies are driven around the pin joint.
-- [var lowerAngleLimit: CGFloat](skphysicsjointpin/loweranglelimit.md)
+- [var lowerAngleLimit: CGFloat](./loweranglelimit.md)
   The smallest angle allowed for the pin joint, in radians.
-- [var upperAngleLimit: CGFloat](skphysicsjointpin/upperanglelimit.md)
+- [var upperAngleLimit: CGFloat](./upperanglelimit.md)
   The largest angle allowed for the pin joint, in radians.
-- [var frictionTorque: CGFloat](skphysicsjointpin/frictiontorque.md)
+- [var frictionTorque: CGFloat](./frictiontorque.md)
   The resistance applied by the pin joint to spinning around the anchor point.
 
 

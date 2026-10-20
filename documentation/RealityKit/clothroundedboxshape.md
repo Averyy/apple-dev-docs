@@ -1,7 +1,8 @@
 # ClothRoundedBoxShape
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Shape representing a box with rounded edges.
 
@@ -19,34 +20,35 @@ struct ClothRoundedBoxShape
 ## Topics
 
 ### Creating a rounded box shape
-- [init(size: SIMD3<Float>, edgeRadius: Float)](clothroundedboxshape/init(size:edgeradius:).md)
+- [init(size: SIMD3<Float>, edgeRadius: Float)](./clothroundedboxshape/init%28size,edgeradius%29.md)
   Creates a rounded box shape with the given size and edge radius.
 ### Configuring the geometry
-- [var size: SIMD3<Float>](clothroundedboxshape/size.md)
+- [var size: SIMD3<Float>](./clothroundedboxshape/size.md)
   The size of the box along each axis.
-- [var edgeRadius: Float](clothroundedboxshape/edgeradius.md)
+- [var edgeRadius: Float](./clothroundedboxshape/edgeradius.md)
   The radius of the rounded edges.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ClothMeshShape](clothmeshshape.md)
+### Cloth shapes
+- [struct ClothMeshShape](./clothmeshshape.md)
   Shape representing a mesh with a configurable inflation bias.
-- [struct ClothPlaneShape](clothplaneshape.md)
+- [struct ClothPlaneShape](./clothplaneshape.md)
   Shape representing an infinite plane that encloses one half of the world.
-- [struct ClothBoxShape](clothboxshape.md)
+- [struct ClothBoxShape](./clothboxshape.md)
   Shape representing a box.
-- [struct ClothSphereShape](clothsphereshape.md)
+- [struct ClothSphereShape](./clothsphereshape.md)
   Shape representing a sphere.
-- [struct ClothCapsuleShape](clothcapsuleshape.md)
+- [struct ClothCapsuleShape](./clothcapsuleshape.md)
   Shape representing a capsule (full height is `height + 2 * radius`).
-- [enum ClothVolumeShape](clothvolumeshape.md)
+- [enum ClothVolumeShape](./clothvolumeshape.md)
   Shape suitable for use as a volume.
 
 

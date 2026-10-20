@@ -1,7 +1,8 @@
 # Entity.WriteOptions.TextureQuality
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A texture quality level.
 
@@ -21,27 +22,28 @@ struct TextureQuality
 ## Topics
 
 ### Choosing a quality level
-- [static var medium: Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality/medium.md)
+- [static var medium: Entity.WriteOptions.TextureQuality](./texturequality/medium.md)
   Reduces more the texture file size. RealityKit might not preserve fine details to reach a small file size.
-- [static var low: Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality/low.md)
+- [static var low: Entity.WriteOptions.TextureQuality](./texturequality/low.md)
   Aggressively reduces the texture file size. RealityKit can suppress some visual details to reach the smallest file size.
 ### Type Properties
-- [static var standard: Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality/standard.md)
+- [static var standard: Entity.WriteOptions.TextureQuality](./texturequality/standard.md)
   Reduces the texture file size while preserving most details.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var preferFastExport: Entity.WriteOptions](entity/writeoptions/preferfastexport.md)
+### Configuring export options
+- [static var preferFastExport: Entity.WriteOptions](./preferfastexport.md)
   Expedite the reality file export when possible.
-- [static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions](entity/writeoptions/prefersmalltexturefiles(quality:).md)
+- [static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions](./prefersmalltexturefiles%28quality%29.md)
   Reduce textures’ file size while preserving its dimensions.
 
 

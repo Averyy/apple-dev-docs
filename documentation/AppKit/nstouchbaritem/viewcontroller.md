@@ -1,7 +1,8 @@
 # viewController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller associated with this item.
 
@@ -14,9 +15,14 @@ The view controller associated with this item.
 var viewController: NSViewController? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSViewController * viewController;
+```
+
 ## See Also
 
-- [var view: NSView?](nstouchbaritem/view.md)
+### Subclassing bar items
+- [var view: NSView?](./view.md)
   The view associated with this item.
 
 

@@ -1,7 +1,8 @@
 # StoreContentBuilder
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A result builder that creates store content from closures that you provide.
 
@@ -24,23 +25,24 @@ struct StoreContentBuilder
 ## Topics
 
 ### Building store content
-- [static func buildBlock<each Content>(repeat each Content) -> TupleStoreContent<repeat each Content>](storecontentbuilder/buildblock(_:).md)
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](storecontentbuilder/buildeither(first:).md)
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](storecontentbuilder/buildeither(second:).md)
-- [static func buildExpression<Content>(Content) -> some StoreContent](storecontentbuilder/buildexpression(_:).md)
-- [static func buildIf<Content>(Content?) -> Content?](storecontentbuilder/buildif(_:).md)
-- [static func buildLimitedAvailability(any StoreContent) -> some StoreContent](storecontentbuilder/buildlimitedavailability(_:).md)
-- [struct TupleStoreContent](tuplestorecontent.md)
+- [static func buildBlock<each Content>(repeat each Content) -> TupleStoreContent<repeat each Content>](./storecontentbuilder/buildblock%28_%29.md)
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](./storecontentbuilder/buildeither%28first%29.md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](./storecontentbuilder/buildeither%28second%29.md)
+- [static func buildExpression<Content>(Content) -> some StoreContent](./storecontentbuilder/buildexpression%28_%29.md)
+- [static func buildIf<Content>(Content?) -> Content?](./storecontentbuilder/buildif%28_%29.md)
+- [static func buildLimitedAvailability(any StoreContent) -> some StoreContent](./storecontentbuilder/buildlimitedavailability%28_%29.md)
+- [struct TupleStoreContent](./tuplestorecontent.md)
 
 ## See Also
 
-- [struct SubscriptionOptionGroup](subscriptionoptiongroup.md)
+### Declaring the structure of a subscription store
+- [struct SubscriptionOptionGroup](./subscriptionoptiongroup.md)
   A group of subscription options that includes optional views for labels and marketing content.
-- [struct SubscriptionOptionGroupSet](subscriptionoptiongroupset.md)
+- [struct SubscriptionOptionGroupSet](./subscriptionoptiongroupset.md)
   A set of groups of subscription options that include optional views for labels and marketing content.
-- [struct SubscriptionPeriodGroupSet](subscriptionperiodgroupset.md)
-- [struct SubscriptionOptionSection](subscriptionoptionsection.md)
-- [protocol StoreContent](storecontent.md)
+- [struct SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [struct SubscriptionOptionSection](./subscriptionoptionsection.md)
+- [protocol StoreContent](./storecontent.md)
   A type that represents the content of a store.
 
 

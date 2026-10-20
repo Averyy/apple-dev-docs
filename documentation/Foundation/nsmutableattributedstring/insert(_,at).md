@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the characters and attributes of the given attributed string into the receiver at the given index.
 
@@ -20,9 +21,13 @@ Inserts the characters and attributes of the given attributed string into the re
 func insert(_ attrString: NSAttributedString, at loc: Int)
 ```
 
+```objc
+- (void) insertAttributedString:(NSAttributedString *) attrString atIndex:(NSUInteger) loc;
+```
+
 #### Discussion
 
-The new characters and attributes begin at the given index and the existing characters and attributes from the index to the end of the receiver are shifted by the length of the attributed string. Raises an [`rangeException`](nsexceptionname/rangeexception.md) if `loc` lies beyond the end of the receiver’s characters.
+The new characters and attributes begin at the given index and the existing characters and attributes from the index to the end of the receiver are shifted by the length of the attributed string. Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `loc` lies beyond the end of the receiver’s characters.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ The new characters and attributes begin at the given index and the existing char
 
 ## See Also
 
-- [func append(NSAttributedString)](nsmutableattributedstring/append(_:).md)
+### Changing Characters and Attributes
+- [func append(NSAttributedString)](./append%28_%29.md)
   Adds the characters and attributes of a given attributed string to the end of the receiver.
-- [func replaceCharacters(in: NSRange, with: NSAttributedString)](nsmutableattributedstring/replacecharacters(in:with:)-1uaw7.md)
+- [func replaceCharacters(in: NSRange, with: NSAttributedString)](./replacecharacters%28in,with%29-1uaw7.md)
   Replaces the characters and attributes in a given range with the characters and attributes of the given attributed string.
-- [func setAttributedString(NSAttributedString)](nsmutableattributedstring/setattributedstring(_:).md)
+- [func setAttributedString(NSAttributedString)](./setattributedstring%28_%29.md)
   Replaces the receiver’s entire contents with the characters and attributes of the given attributed string.
 
 

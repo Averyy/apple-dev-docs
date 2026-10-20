@@ -1,7 +1,8 @@
 # Preview(_:body:)
 
 **Framework**: SwiftUI  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Creates a preview of a SwiftUI view.
 
@@ -23,7 +24,7 @@ Creates a preview of a SwiftUI view.
 
 #### Overview
 
-Use this macro to display a SwiftUI preview in the canvas. You typically specify at least one preview macro for every [`View`](view.md) that your app defines to help you develop, test, and debug the view:
+Use this macro to display a SwiftUI preview in the canvas. You typically specify at least one preview macro for every [`View`](./view.md) that your app defines to help you develop, test, and debug the view:
 
 ```swift
 struct ContentView: View {
@@ -49,22 +50,23 @@ If you include more than one preview in a source file, the canvas provides contr
 }
 ```
 
-Inside the preview, you can provide different inputs, model data, and other infrastructure that the view needs for normal operation. For example, you can present a custom view as the sidebar inside a [`NavigationSplitView`](navigationsplitview.md) if that’s how your app uses the view.
+Inside the preview, you can provide different inputs, model data, and other infrastructure that the view needs for normal operation. For example, you can present a custom view as the sidebar inside a [`NavigationSplitView`](./navigationsplitview.md) if that’s how your app uses the view.
 
-Other preview macros provide different customization options. For example, if you need to modify the appearance of a preview using one or more [`PreviewTrait`](https://developer.apple.com/documentation/developertoolssupport/previewtrait), instances, use the [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) macro.
+Other preview macros provide different customization options. For example, if you need to modify the appearance of a preview using one or more [`PreviewTrait`](../DeveloperToolsSupport/previewtrait.md), instances, use the [`Preview(_:traits:_:body:)`](./preview%28_,traits,_,body%29.md) macro.
 
 ## Parameters
 
 - `name`: An optional display name for the preview. If you don’t specify a name, the canvas labels the preview using the line number where the preview appears in source.
-- `body`: A [`ContentBuilder`](contentbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
+- `body`: A [`ContentBuilder`](./contentbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
 
 ## See Also
 
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>, PreviewTrait<Preview.ViewTraits>..., body: () -> any View)](preview(_:traits:_:body:).md)
+### Creating a preview
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>, PreviewTrait<Preview.ViewTraits>..., body: () -> any View)](./preview%28_,traits,_,body%29.md)
   Creates a preview of a SwiftUI view using the specified traits.
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View, cameras: () -> [PreviewCamera])](preview(_:traits:body:cameras:).md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View, cameras: () -> [PreviewCamera])](./preview%28_,traits,body,cameras%29.md)
   Creates a preview of a SwiftUI view using the specified traits and custom viewpoints.
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> any View)](preview(_:traits:arguments:body:).md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> any View)](./preview%28_,traits,arguments,body%29.md)
   Creates a group of previews of a parameterized SwiftUI view, varying its inputs over the provided arguments.
 
 

@@ -1,7 +1,8 @@
 # status
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current status of the hinge.
 
@@ -22,9 +23,10 @@ var status: DeviceHinge.Status
 
 ## See Also
 
-- [var angle: Angle](devicehinge/angle.md)
+### Getting hinge information
+- [var angle: Angle](./angle.md)
   Current angle of the hinge.
-- [DeviceHinge.Status](devicehinge/status-swift.struct.md)
+- [DeviceHinge.Status](./status-swift.struct.md)
   The status of an individual hinge.
 
 

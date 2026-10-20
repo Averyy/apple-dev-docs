@@ -1,7 +1,8 @@
 # kSMRightBlessPrivilegedHelper
 
 **Framework**: Service Management  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authorization rights key for approving and installing a privileged helper tool.
 
@@ -15,9 +16,14 @@ The authorization rights key for approving and installing a privileged helper to
 var kSMRightBlessPrivilegedHelper: String { get }
 ```
 
+```c
+#define kSMRightBlessPrivilegedHelper
+```
+
 ## See Also
 
-- [var kSMRightModifySystemDaemons: String](ksmrightmodifysystemdaemons.md)
+### Constants
+- [var kSMRightModifySystemDaemons: String](./ksmrightmodifysystemdaemons.md)
   The authorization rights key for modifying system daemons.
 
 

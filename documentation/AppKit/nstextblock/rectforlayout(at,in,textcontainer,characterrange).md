@@ -1,7 +1,8 @@
 # rectForLayout(at:in:textContainer:characterRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle within which glyphs should be laid out for the specified arguments.
 
@@ -12,6 +13,10 @@ Returns the rectangle within which glyphs should be laid out for the specified a
 
 ```swift
 func rectForLayout(at startingPoint: NSPoint, in rect: NSRect, textContainer: NSTextContainer, characterRange charRange: NSRange) -> NSRect
+```
+
+```objc
+- (NSRect) rectForLayoutAtPoint:(NSPoint) startingPoint inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
 #### Return Value
@@ -27,11 +32,12 @@ This method is called by the typesetter before the text block is laid out to ret
 - `startingPoint`: The location, in container coordinates, where layout begins.
 - `rect`: The rectangle in which the block is constrained to lie. For top-level blocks, this is the container rectangle of `textContainer`; for nested blocks, this is the layout rectangle of the enclosing block.
 - `textContainer`: The text container being used for the layout.
-- `charRange`: The range of the characters in the [`NSTextStorage`](nstextstorage.md) object whose glyphs are to be drawn.
+- `charRange`: The range of the characters in the [`NSTextStorage`](../nstextstorage.md) object whose glyphs are to be drawn.
 
 ## See Also
 
-- [func boundsRect(forContentRect: NSRect, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](nstextblock/boundsrect(forcontentrect:in:textcontainer:characterrange:).md)
+### Determining size and position of a text block
+- [func boundsRect(forContentRect: NSRect, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](./boundsrect%28forcontentrect,in,textcontainer,characterrange%29.md)
   Returns the rectangle the text in the block actually occupies, including padding, borders, and margins.
 
 

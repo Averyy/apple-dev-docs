@@ -1,7 +1,8 @@
 # vm_pkt_iov
 
 **Framework**: vmnet  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of packet buffers.
 
@@ -15,13 +16,18 @@ An array of packet buffers.
 var vm_pkt_iov: UnsafeMutablePointer<iovec>
 ```
 
+```c
+struct iovec * vm_pkt_iov;
+```
+
 ## See Also
 
-- [var vm_flags: UInt32](vmpktdesc/vm_flags.md)
+### Fields
+- [var vm_flags: UInt32](./vm_flags.md)
   Option flags associated with the packet.
-- [var vm_pkt_iovcnt: UInt32](vmpktdesc/vm_pkt_iovcnt.md)
+- [var vm_pkt_iovcnt: UInt32](./vm_pkt_iovcnt.md)
   The number of packet buffers in `vm_pkt_iov`.
-- [var vm_pkt_size: Int](vmpktdesc/vm_pkt_size.md)
+- [var vm_pkt_size: Int](./vm_pkt_size.md)
   The size of the packet, in bytes.
 
 

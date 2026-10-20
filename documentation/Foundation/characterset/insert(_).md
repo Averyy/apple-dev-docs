@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Insert a `Unicode.Scalar` representation of a character into the `CharacterSet`.
 

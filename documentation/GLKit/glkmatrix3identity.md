@@ -1,7 +1,8 @@
 # GLKMatrix3Identity
 
 **Framework**: GLKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A `3x3` identity matrix.
 
@@ -15,6 +16,10 @@ A `3x3` identity matrix.
 
 ```swift
 let GLKMatrix3Identity: GLKMatrix3
+```
+
+```c
+extern const GLKMatrix3 GLKMatrix3Identity;
 ```
 
 

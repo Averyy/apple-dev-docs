@@ -1,14 +1,15 @@
 # actionDidStop
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void actionDidStop(IOService *victim, IOOptionBits options, void *, void *, void *);
 ```
 

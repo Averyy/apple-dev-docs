@@ -1,7 +1,8 @@
 # mapOverlayLevel(level:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the position of overlays relative to other map content.
 
@@ -11,7 +12,7 @@ Specifies the position of overlays relative to other map content.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,11 +24,11 @@ Specifies the position of overlays relative to other map content.
 
 #### Return Value
 
-Returns [`MapContent`](mapcontent.md) with overlays drawn with the positioning level you specified.
+Returns [`MapContent`](../mapcontent.md) with overlays drawn with the positioning level you specified.
 
 ## Parameters
 
-- `level`: One of the [`MKOverlayLevel`](mkoverlaylevel.md) levels.
+- `level`: One of the [`MKOverlayLevel`](../mkoverlaylevel.md) levels.
 
 
 ---

@@ -1,7 +1,8 @@
 # labels
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification of the recognized object.
 
@@ -22,9 +23,10 @@ let labels: [ClassificationObservation]
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [struct ClassificationObservation](classificationobservation.md)
+- [struct ClassificationObservation](../classificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
 
 

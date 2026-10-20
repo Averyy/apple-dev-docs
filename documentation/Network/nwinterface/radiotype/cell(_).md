@@ -1,7 +1,8 @@
 # NWInterface.RadioType.cell(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

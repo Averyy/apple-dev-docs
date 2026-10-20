@@ -1,7 +1,8 @@
 # CKAccountChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that a container posts when the status of an iCloud account changes.
 
@@ -22,7 +23,7 @@ static let CKAccountChanged: NSNotification.Name
 
 #### Discussion
 
-Create an instance of [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) to receive this notification. The container posts the notification using an arbitrary queue. Use the [`accountStatus(completionHandler:)`](https://developer.apple.com/documentation/cloudkit/ckcontainer/accountstatus(completionhandler:)) method to obtain the account’s status.
+Create an instance of [`CKContainer`](../../../CloudKit/ckcontainer.md) to receive this notification. The container posts the notification using an arbitrary queue. Use the [`accountStatus(completionHandler:)`](../../../CloudKit/ckcontainer/accountstatus%28completionhandler%29.md) method to obtain the account’s status.
 
 
 ---

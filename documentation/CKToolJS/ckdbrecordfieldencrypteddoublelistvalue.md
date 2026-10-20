@@ -1,7 +1,8 @@
 # CKDBRecordFieldEncryptedDoubleListValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the encrypted field of type double list.
 
@@ -10,7 +11,7 @@ The value of the encrypted field of type double list.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldEncryptedDoubleListValue {
 	string type;
 	Double[]? value;
@@ -30,18 +31,19 @@ import type { CKDBRecordFieldEncryptedDoubleListValue } from "@apple/cktool.data
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldencrypteddoublelistvalue/type.md)
+- [type](./ckdbrecordfieldencrypteddoublelistvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldencrypteddoublelistvalue/value.md)
+- [value](./ckdbrecordfieldencrypteddoublelistvalue/value.md)
   An array of double values.
 
 ## See Also
 
-- [CKDBRecordFieldDoubleValue](ckdbrecordfielddoublevalue.md)
+### Doubles
+- [CKDBRecordFieldDoubleValue](./ckdbrecordfielddoublevalue.md)
   The value of the field of type double.
-- [CKDBRecordFieldDoubleListValue](ckdbrecordfielddoublelistvalue.md)
+- [CKDBRecordFieldDoubleListValue](./ckdbrecordfielddoublelistvalue.md)
   The value of the field of type double list.
-- [CKDBRecordFieldEncryptedDoubleValue](ckdbrecordfieldencrypteddoublevalue.md)
+- [CKDBRecordFieldEncryptedDoubleValue](./ckdbrecordfieldencrypteddoublevalue.md)
   The value of the encrypted field of type double.
 
 

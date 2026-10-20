@@ -1,7 +1,8 @@
 # InstantProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -21,22 +22,22 @@ protocol InstantProtocol<Duration> : Comparable, Hashable, Sendable
 ## Topics
 
 ### Associated Types
-- [associatedtype Duration : DurationProtocol](instantprotocol/duration.md)
+- [associatedtype Duration : DurationProtocol](./instantprotocol/duration.md)
 ### Instance Methods
-- [func advanced(by: Self.Duration) -> Self](instantprotocol/advanced(by:).md)
-- [func duration(to: Self) -> Self.Duration](instantprotocol/duration(to:).md)
+- [func advanced(by: Self.Duration) -> Self](./instantprotocol/advanced%28by%29.md)
+- [func duration(to: Self) -> Self.Duration](./instantprotocol/duration%28to%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](./comparable.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 ### Conforming Types
-- [ContinuousClock.Instant](continuousclock/instant.md)
-- [SuspendingClock.Instant](suspendingclock/instant.md)
+- [ContinuousClock.Instant](./continuousclock/instant.md)
+- [SuspendingClock.Instant](./suspendingclock/instant.md)
 
 
 ---

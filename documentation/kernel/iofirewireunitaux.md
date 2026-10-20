@@ -1,39 +1,41 @@
 # IOFireWireUnitAux
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```cpp
 class IOFireWireUnitAux : IOFireWireNubAux
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- createSimpleContiguousPhysicalAddressSpace](iofirewireunitaux/1553363-createsimplecontiguousphysicalad.md)
-- [- createSimplePhysicalAddressSpace](iofirewireunitaux/1553351-createsimplephysicaladdressspace.md)
-- [- free](iofirewireunitaux/1553360-free.md)
-- [- getMetaClass](iofirewireunitaux/1553355-getmetaclass.md)
-- [- init](iofirewireunitaux/1553361-init.md)
-- [- isPhysicalAccessEnabled](iofirewireunitaux/1553362-isphysicalaccessenabled.md)
+- [- createSimpleContiguousPhysicalAddressSpace](./iofirewireunitaux/api-1553363-createsimplecontiguousphysicalad.md)
+- [- createSimplePhysicalAddressSpace](./iofirewireunitaux/api-1553351-createsimplephysicaladdressspace.md)
+- [- free](./iofirewireunitaux/api-1553360-free.md)
+- [- getMetaClass](./iofirewireunitaux/api-1553355-getmetaclass.md)
+- [- init](./iofirewireunitaux/api-1553361-init.md)
+- [- isPhysicalAccessEnabled](./iofirewireunitaux/api-1553362-isphysicalaccessenabled.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOFireWireNubAux](iofirewirenubaux.md)
+- [IOFireWireNubAux](./iofirewirenubaux.md)
 
 ## See Also
 
-- [IOFireWireControllerAux](iofirewirecontrolleraux.md)
-- [IOFireWireLocalNodeAux](iofirewirelocalnodeaux.md)
-- [IOFireWireBusAux](iofirewirebusaux.md)
-- [IOFireWireDeviceAux](iofirewiredeviceaux.md)
-- [IOFireWireNubAux](iofirewirenubaux.md)
+### Auxilliary Units
+- [IOFireWireControllerAux](./iofirewirecontrolleraux.md)
+- [IOFireWireLocalNodeAux](./iofirewirelocalnodeaux.md)
+- [IOFireWireBusAux](./iofirewirebusaux.md)
+- [IOFireWireDeviceAux](./iofirewiredeviceaux.md)
+- [IOFireWireNubAux](./iofirewirenubaux.md)
 
 
 ---

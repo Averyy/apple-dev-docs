@@ -1,7 +1,8 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes a custom property.
 
@@ -10,7 +11,7 @@ Initializes a custom property.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserVideoDriver *in_video_driver, IOUserVideoObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserVideoCustomPropertyDataType in_qualifier_data_type, IOUserVideoCustomPropertyDataType in_data_type);
 ```
 
@@ -28,11 +29,12 @@ True on success.
 
 ## See Also
 
-- [Create](iouservideocustomproperty/create.md)
+### Creating a custom property
+- [Create](./create.md)
   A static factory method that allocates and initializes a custom property.
-- [IOUserVideoObjectPropertyAddress](videodriverkit/iouservideoobjectpropertyaddress.md)
+- [IOUserVideoObjectPropertyAddress](../videodriverkit-page/iouservideoobjectpropertyaddress.md)
   A data structure that contains all the three parts to identify a specific property, for easy transmission.
-- [IOUserVideoCustomPropertyDataType](videodriverkit/iouservideocustompropertydatatype.md)
+- [IOUserVideoCustomPropertyDataType](../videodriverkit-page/iouservideocustompropertydatatype.md)
   Data qualifier types used for custom properties.
 
 

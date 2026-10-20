@@ -1,7 +1,8 @@
 # allowedScrollTypesMask
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A scroll type mask that enables recognition of scroll events.
 
@@ -17,17 +18,22 @@ A scroll type mask that enables recognition of scroll events.
 var allowedScrollTypesMask: UIScrollTypeMask { get set }
 ```
 
+```objc
+@property (nonatomic) UIScrollTypeMask allowedScrollTypesMask;
+```
+
 #### Discussion
 
-Setting this mask enables the pan gesture to recognize scroll events, like a mouse scroll movement or a two-finger scroll on a track pad. See [`UIScrollType`](uiscrolltype.md).
+Setting this mask enables the pan gesture to recognize scroll events, like a mouse scroll movement or a two-finger scroll on a track pad. See [`UIScrollType`](../uiscrolltype.md).
 
-> **Note**:  Setting this property doesn’t disable scrolling through touches. To disable touch scrolling, return [`false`](https://developer.apple.com/documentation/swift/false) from [`gestureRecognizer(_:shouldReceive:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md) or set the [`allowedTouchTypes`](uigesturerecognizer/allowedtouchtypes.md) to an empty array.
+> **Note**:  Setting this property doesn’t disable scrolling through touches. To disable touch scrolling, return [`false`](../../Swift/false.md) from [`gestureRecognizer(_:shouldReceive:)`](../uigesturerecognizerdelegate/gesturerecognizer%28_,shouldreceive%29-16fuh.md) or set the [`allowedTouchTypes`](../uigesturerecognizer/allowedtouchtypes.md) to an empty array.
 
 ## See Also
 
-- [struct UIScrollTypeMask](uiscrolltypemask.md)
+### Tracking scroll events
+- [struct UIScrollTypeMask](../uiscrolltypemask.md)
   A bit mask identifying the scroll type of a pan gesture.
-- [enum UIScrollType](uiscrolltype.md)
+- [enum UIScrollType](../uiscrolltype.md)
   Constants that define the type of the scroll.
 
 

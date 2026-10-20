@@ -1,6 +1,7 @@
 # Setting up push notifications for your device management customers
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Create and sign a certificate signing request (CSR) to enable push notifications.
 
@@ -12,7 +13,7 @@ A device management service uses the the Apple Push Notification service (APNs) 
 
 Use a separate push certificate for each customer. This enables independent management of each customer’s certificate and prevents customers from being able to see each other’s device tokens.
 
-#### Create a Csr
+#### Create a CSR
 
 During the setup process for your service, create an operation that generates a CSR for your customer. Execute this process within the instance of your device management service that your customer has access to.
 
@@ -20,9 +21,9 @@ During the setup process for your service, create an operation that generates a 
 
 Upload the CSR to your internal infrastructure and then perform the signing process.
 
-#### Sign the Csr
+#### Sign the CSR
 
-Download an MDM Vendor CSR Signing Certificate from the [`Apple Developer Portal`](https://developer.apple.comhttps://developer.apple.com/help/account/certificates/mdm-vendor-csr-signing-certificate). Then create a script to sign the customer’s CSR by following these instructions:
+Download an MDM Vendor CSR Signing Certificate from the [Apple Developer Portal](https://developer.apple.com/help/account/certificates/mdm-vendor-csr-signing-certificate). Then create a script to sign the customer’s CSR by following these instructions:
 
 1. If the CSR is in PEM format, convert it to a Distinguished Encoding Rules (DER) file, which has a binary format.
 2. Sign the binary-formatted CSR with the private key from the device management (MDM) signing certificate using the `SHA256WithRSA` signing algorithm.
@@ -35,8 +36,8 @@ Download an MDM Vendor CSR Signing Certificate from the [`Apple Developer Portal
 Make sure that the `PushCertCertificateChain` value contains a complete certificate chain all the way back to a recognized root certificate, including the root certificate. This means it contains the following:
 
 - Your device management (MDM) signing certificate
-- The WWDR intermediate certificate, which is available from [`https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer`](https://developer.apple.comhttps://www.apple.com/certificateauthority/AppleWWDRCAG3.cer).
-- The Apple root certificate, which is available from [`http://www.apple.com/appleca/AppleIncRootCertificate.cer`](https://developer.apple.comhttp://www.apple.com/appleca/AppleIncRootCertificate.cer)
+- The WWDR intermediate certificate, which is available from [https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer](https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer).
+- The Apple root certificate, which is available from [http://www.apple.com/appleca/AppleIncRootCertificate.cer](http://www.apple.com/appleca/AppleIncRootCertificate.cer)
 
 Also, ensure that each of the above certificates complies with PEM-formatting standards, which includes that each line except the last contains exactly 64 printable characters, and the last line contains 64 or fewer printable characters.
 
@@ -45,13 +46,13 @@ Save the certificate and its chain as a file that ends in `.pem` and then verify
 - `certtool -e < filename.pem`
 - `openssl verify filename.pem`
 
-To learn more about certificates and chains of trust, see [`Security Overview`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html).
+To learn more about certificates and chains of trust, see [Security Overview](https://developer.apple.com/library/content/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html).
 
 After delivering the signed CSR back to the customer, the customer must log in to `https://identity.apple.com/pushcert` using a Managed Apple Account (recommended) or a verified Apple Account and upload the CSR to the Apple Push Certificates Portal. The portal creates a certificate titled `MDM__Certificate.pem`. The customer then returns to your setup process to upload the APNs certificate for device management.
 
 See the sample code references below for additional information.
 
-#### Java Sample Code
+#### Java sample code
 
 ```other
 /**
@@ -85,7 +86,7 @@ byte[] reqPlist = createPlist(new String(Base64.encodeBase64(csr)),certChain, ne
 }
 ```
 
-#### Net Sample Code
+#### .Net sample code
 
 ```other
 var privateKey = new PrivateKey(PrivateKey.KeySpecification.AtKeyExchange, 2048, false, true);
@@ -106,7 +107,7 @@ byte[] signedHash = crypt.SignHash(hash, CryptoConfig.MapNameToOID("SHA256"));
 var signedHashBytesBase64 = Convert.ToBase64String(signedHash);
 ```
 
-#### Property List Sample Code
+#### Property list sample code
 
 ```other
 <?xml version="1.0" encoding="UTF-8"?>

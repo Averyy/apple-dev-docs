@@ -1,7 +1,8 @@
 # tile(input:output:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates an output tensor by tiling an input tensor multiple times.
 
@@ -11,8 +12,10 @@ Generates an output tensor by tiling an input tensor multiple times.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -28,37 +31,39 @@ static func tile(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, fi
 
 ## See Also
 
-- [func BNNSTile(UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnstile(_:_:_:).md)
+### Related Documentation
+- [func BNNSTile(UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](../bnnstile%28_,_,_%29.md)
   Generates an output tensor by tiling an input tensor multiple times.
-- [static func copy(BNNSNDArrayDescriptor, to: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters?) throws](bnns/copy(_:to:filterparameters:).md)
+### Utility functions
+- [static func copy(BNNSNDArrayDescriptor, to: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters?) throws](./copy%28_,to,filterparameters%29.md)
   Copies the contents of an n-dimensional array descriptor to another descriptor of the same shape.
-- [static func transpose(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, firstTransposeAxis: Int, secondTransposeAxis: Int, filterParameters: BNNSFilterParameters?) throws](bnns/transpose(input:output:firsttransposeaxis:secondtransposeaxis:filterparameters:).md)
+- [static func transpose(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, firstTransposeAxis: Int, secondTransposeAxis: Int, filterParameters: BNNSFilterParameters?) throws](./transpose%28input,output,firsttransposeaxis,secondtransposeaxis,filterparameters%29.md)
   Transposes a tensor by swapping two of its dimensions.
-- [func BNNSCopy(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnscopy(_:_:_:).md)
+- [func BNNSCopy(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](../bnnscopy%28_,_,_%29.md)
   Copies the contents of an n-dimensional array descriptor to another of the same shape.
-- [func BNNSTranspose(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Int, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnstranspose(_:_:_:_:_:).md)
+- [func BNNSTranspose(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Int, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](../bnnstranspose%28_,_,_,_,_%29.md)
   Transposes a tensor by swapping two of its dimensions.
-- [func BNNSGetPointer(BNNSFilter?, BNNSPointerSpecifier) -> BNNSNDArrayDescriptor](bnnsgetpointer(_:_:).md)
+- [func BNNSGetPointer(BNNSFilter?, BNNSPointerSpecifier) -> BNNSNDArrayDescriptor](../bnnsgetpointer%28_,_%29.md)
   Returns an n-dimensional array descriptor that contains a reference to a filter-data member.
-- [struct BNNSPointerSpecifier](bnnspointerspecifier.md)
+- [struct BNNSPointerSpecifier](../bnnspointerspecifier.md)
   Constants that specify which pointer the BNNS get filter function returns.
-- [class GramLayer](bnns/gramlayer.md)
+- [class GramLayer](./gramlayer.md)
   A layer object that wraps a Gram matrix filter and manages its deinitialization.
-- [struct BNNSLayerParametersGram](bnnslayerparametersgram.md)
+- [struct BNNSLayerParametersGram](../bnnslayerparametersgram.md)
   A set of parameters that define a Gram matrix layer.
-- [func BNNSFilterCreateLayerGram(UnsafePointer<BNNSLayerParametersGram>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayergram(_:_:).md)
+- [func BNNSFilterCreateLayerGram(UnsafePointer<BNNSLayerParametersGram>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayergram%28_,_%29.md)
   Returns a new Gram matrix layer.
-- [static func clip(to: ClosedRange<Float>, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](bnns/clip(to:input:output:).md)
+- [static func clip(to: ClosedRange<Float>, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](./clip%28to,input,output%29.md)
   Clips the input tensor to a closed range and writes the result to the output tensor.
-- [static func clipByNorm(threshold: Float, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]?) throws](bnns/clipbynorm(threshold:input:output:axes:).md)
+- [static func clipByNorm(threshold: Float, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]?) throws](./clipbynorm%28threshold,input,output,axes%29.md)
   Clips the input tensor to a Euclidean norm and writes the result to the output tensor.
-- [static func clipByGlobalNorm(threshold: Float, inputs: [BNNSNDArrayDescriptor], outputs: [BNNSNDArrayDescriptor], globalNorm: Float) throws](bnns/clipbyglobalnorm(threshold:inputs:outputs:globalnorm:).md)
+- [static func clipByGlobalNorm(threshold: Float, inputs: [BNNSNDArrayDescriptor], outputs: [BNNSNDArrayDescriptor], globalNorm: Float) throws](./clipbyglobalnorm%28threshold,inputs,outputs,globalnorm%29.md)
   Clips the input tensors to a global Euclidean norm and writes the result to the output tensors.
-- [func BNNSClipByValue(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](bnnsclipbyvalue(_:_:_:_:).md)
+- [func BNNSClipByValue(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](../bnnsclipbyvalue%28_,_,_,_%29.md)
   Clips a tensor’s values to the specified minimum and maximum values.
-- [func BNNSClipByNorm(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Float, UInt32) -> Int32](bnnsclipbynorm(_:_:_:_:).md)
+- [func BNNSClipByNorm(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Float, UInt32) -> Int32](../bnnsclipbynorm%28_,_,_,_%29.md)
   Clips a tensor’s values to a maximum Euclidean norm.
-- [func BNNSClipByGlobalNorm(UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafeMutablePointer<UnsafePointer<BNNSNDArrayDescriptor>>, Int, Float, Float) -> Int32](bnnsclipbyglobalnorm(_:_:_:_:_:).md)
+- [func BNNSClipByGlobalNorm(UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafeMutablePointer<UnsafePointer<BNNSNDArrayDescriptor>>, Int, Float, Float) -> Int32](../bnnsclipbyglobalnorm%28_,_,_,_,_%29.md)
   Clips a tensor’s values to a maximum global Euclidean norm.
 
 

@@ -1,7 +1,8 @@
 # init(commandDescription:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an a script command object initialized from the passed command description.
 
@@ -13,6 +14,10 @@ Returns an a script command object initialized from the passed command descripti
 
 ```swift
 init(commandDescription commandDef: NSScriptCommandDescription)
+```
+
+```objc
+- (instancetype) initWithCommandDescription:(NSScriptCommandDescription *) commandDef;
 ```
 
 #### Return Value
@@ -29,10 +34,11 @@ To make this command object usable, you must set its receiving objects and argum
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [var receiversSpecifier: NSScriptObjectSpecifier?](nsscriptcommand/receiversspecifier.md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+- [var receiversSpecifier: NSScriptObjectSpecifier?](./receiversspecifier.md)
   Sets the object specifier to `receiversSpec` that, when evaluated, indicates the receiver or receivers of the command.
-- [var arguments: [String : Any]?](nsscriptcommand/arguments.md)
+- [var arguments: [String : Any]?](./arguments.md)
   Sets the arguments of the command to `args`.
 
 

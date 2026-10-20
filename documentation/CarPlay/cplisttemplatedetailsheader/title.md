@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary title text displayed in the header.
 
@@ -14,6 +15,10 @@ The primary title text displayed in the header.
 
 ```swift
 var title: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
 ```
 
 #### Discussion

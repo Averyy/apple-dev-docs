@@ -1,27 +1,29 @@
 # IOATARegPtr8
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef IOATAReg8 *IOATARegPtr8;
 ```
 
 ## See Also
 
-- [IOATAReg32](ioatareg32.md)
-- [IOATAReg16](ioatareg16.md)
-- [IOATAReg8](ioatareg8.md)
-- [IOATAIOReg32](ioataioreg32.md)
-- [IOATAIOReg16](ioataioreg16.md)
-- [IOATAIOReg8](ioataioreg8.md)
-- [IOATARegPtr32](ioataregptr32.md)
-- [IOATARegPtr16](ioataregptr16.md)
+### Registers
+- [IOATAReg32](./ioatareg32.md)
+- [IOATAReg16](./ioatareg16.md)
+- [IOATAReg8](./ioatareg8.md)
+- [IOATAIOReg32](./ioataioreg32.md)
+- [IOATAIOReg16](./ioataioreg16.md)
+- [IOATAIOReg8](./ioataioreg8.md)
+- [IOATARegPtr32](./ioataregptr32.md)
+- [IOATARegPtr16](./ioataregptr16.md)
 
 
 ---

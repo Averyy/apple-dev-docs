@@ -1,7 +1,8 @@
 # canPaste(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that determines whether the responder object can perform a paste operation using data provided by the item providers.
 
@@ -17,17 +18,22 @@ Returns a Boolean value that determines whether the responder object can perform
 optional func canPaste(_ itemProviders: [NSItemProvider]) -> Bool
 ```
 
+```objc
+- (BOOL) canPasteItemProviders:(NSArray<NSItemProvider *> *) itemProviders;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the responder object can perform a paste operation using specified item providers; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the responder object can perform a paste operation using specified item providers; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `itemProviders`: An array of [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) objects.
+- `itemProviders`: An array of [`NSItemProvider`](../../Foundation/nsitemprovider.md) objects.
 
 ## See Also
 
-- [func paste(itemProviders: [NSItemProvider])](uipasteconfigurationsupporting/paste(itemproviders:).md)
+### Performing a paste operation
+- [func paste(itemProviders: [NSItemProvider])](./paste%28itemproviders%29.md)
   Performs a paste operation on the responder object.
 
 

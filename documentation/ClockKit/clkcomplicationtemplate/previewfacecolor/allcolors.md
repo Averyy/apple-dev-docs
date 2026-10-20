@@ -1,12 +1,15 @@
 # allColors
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array containing all valid face colors.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -16,21 +19,22 @@ static var allColors: [CLKComplicationTemplate.PreviewFaceColor] { get }
 
 ## See Also
 
-- [static let multicolor: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/multicolor.md)
+### Colors
+- [static let multicolor: CLKComplicationTemplate.PreviewFaceColor](./multicolor.md)
   The preview displays a full-color watch face.
-- [static let pink: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/pink.md)
+- [static let pink: CLKComplicationTemplate.PreviewFaceColor](./pink.md)
   The preview displays a watch face with a pink tint color.
-- [static let red: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/red.md)
+- [static let red: CLKComplicationTemplate.PreviewFaceColor](./red.md)
   The preview displays a watch face with a red tint color.
-- [static let orange: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/orange.md)
+- [static let orange: CLKComplicationTemplate.PreviewFaceColor](./orange.md)
   The preview displays a watch face with an orange tint color.
-- [static let yellow: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/yellow.md)
+- [static let yellow: CLKComplicationTemplate.PreviewFaceColor](./yellow.md)
   The preview displays a watch face with a yellow tint color.
-- [static let green: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/green.md)
+- [static let green: CLKComplicationTemplate.PreviewFaceColor](./green.md)
   The preview displays a watch face with a green tint color.
-- [static let blue: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/blue.md)
+- [static let blue: CLKComplicationTemplate.PreviewFaceColor](./blue.md)
   The preview displays a watch face with a blue tint color.
-- [static let purple: CLKComplicationTemplate.PreviewFaceColor](clkcomplicationtemplate/previewfacecolor/purple.md)
+- [static let purple: CLKComplicationTemplate.PreviewFaceColor](./purple.md)
   The preview displays a watch face with a purple tint color.
 
 

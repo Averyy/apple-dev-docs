@@ -1,7 +1,8 @@
 # referenceObject
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detected object referenced by the object anchor.
 
@@ -15,9 +16,13 @@ The detected object referenced by the object anchor.
 var referenceObject: ARReferenceObject { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ARReferenceObject * referenceObject;
+```
+
 #### Discussion
 
-This object is always one of the [`ARReferenceObject`](arreferenceobject.md) objects you provided in the [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) array when configuring the session.
+This object is always one of the [`ARReferenceObject`](../arreferenceobject.md) objects you provided in the [`detectionObjects`](../arworldtrackingconfiguration/detectionobjects.md) array when configuring the session.
 
 
 ---

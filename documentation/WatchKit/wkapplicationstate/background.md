@@ -1,7 +1,8 @@
 # WKApplicationState.background
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Watch app is running in the background.
 
@@ -14,10 +15,14 @@ The Watch app is running in the background.
 case background
 ```
 
+```c
+WKApplicationStateBackground
+```
+
 ## Mentions
 
-- [Handling Common State Transitions](handling-common-state-transitions.md)
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Handling Common State Transitions](../handling-common-state-transitions.md)
+- [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
 #### Discussion
 
@@ -25,9 +30,10 @@ The system can wake suspended apps in the background. It can also launch apps th
 
 ## See Also
 
-- [WKApplicationState.active](wkapplicationstate/active.md)
+### Constants
+- [WKApplicationState.active](./active.md)
   The Watch app is running in the foreground and currently receiving events.
-- [WKApplicationState.inactive](wkapplicationstate/inactive.md)
+- [WKApplicationState.inactive](./inactive.md)
   The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
 
 

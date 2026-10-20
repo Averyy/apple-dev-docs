@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-workflow.html
 
 # Optimization Workflow
 
-**
-
-- [.md](../_sources/source/opt-workflow.md)
-- **
-
-.pdf
-
-**
-
-# Optimization Workflow
-
- Table of contents 
-
-## Contents
-
-# Optimization Workflow
-
 The workflow to compress a model can be divided into three categories.
 They vary in terms of what is required, how
 time or data intensive the process is, and how much of the model accuracy can be preserved
@@ -102,14 +85,18 @@ For large models, if the data-free or calibration data based techniques lead to 
 then it is recommended to first compress the weights of the torch model, using something like the data-free
 approach, and then try to regain accuracy by performing parameter-efficient fine-tuning (attaching adapters to the models and fine-tuning those).
 
+![Accuracy trade-off with compression](https://apple.github.io/coremltools/docs-guides/_images/workflows_accuracy_vs_compression.png)
+
 A hypothetical “accuracy-compression amount” trade-off curve to illustrate what you may see
 on average for different compression workflows.
+
+![Compression workflows](https://apple.github.io/coremltools/docs-guides/_images/three_compression_workflows.png)
 
 Compression workflows for different input model formats
 
 ## APIs for each workflow
 
-To find a list of APIs, see [What’s New](opt-whats-new.html#core-ml-tools-optimization-apis).
+To find a list of APIs, see [What’s New](opt-whats-new.md#core-ml-tools-optimization-apis).
 Find a brief overview of a few of the APIs below.
 Check out the API description page in each of the
 [palettization](opt-palettization-api.md), [quantization](opt-quantization-api.md), and
@@ -215,10 +202,8 @@ as it involves integration into the torch training code.
 This integration can be very easily done by simply modifying the original training code with a few lines of code, primarily
 via invocations of the `prepare`, `step` and `finalize` methods.
 See examples of fine-tuning with
-[palettization](https://apple.github.io/coremltools/_examples/dkm_palettization.md),
-[quantization](https://apple.github.io/coremltools/_examples/linear_quantization.md),
+[palettization](https://apple.github.io/coremltools/_examples/dkm_palettization.html),
+[quantization](https://apple.github.io/coremltools/_examples/linear_quantization.html),
 and
-[pruning](https://apple.github.io/coremltools/_examples/magnitude_pruning.md)
+[pruning](https://apple.github.io/coremltools/_examples/magnitude_pruning.html)
 on an MNIST model to get an overview of the APIs.
-
-** Contents

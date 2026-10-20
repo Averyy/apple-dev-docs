@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.State
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states that indicate the current activity, if any, Writing Tools is performing in your view.
 
@@ -17,43 +18,48 @@ The states that indicate the current activity, if any, Writing Tools is performi
 enum State
 ```
 
+```c
+enum UIWritingToolsCoordinatorState : NSInteger;
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Overview
 
-Making changes to your view requires several different levels of interaction. Initially, Writing Tools displays its UI and collects information about what the person wants to do. When the person selects an operation, Writing Tools sends the relevant details to a large language model (LLM) and processes the results. It then works with the custom view to integrate any changes into the view’s text storage. During each of these activities, the coordinator reflects what’s happening in its [`state`](uiwritingtoolscoordinator/state-swift.property.md) property. You can use the current state as a guide to making decisions in other parts of your view.
+Making changes to your view requires several different levels of interaction. Initially, Writing Tools displays its UI and collects information about what the person wants to do. When the person selects an operation, Writing Tools sends the relevant details to a large language model (LLM) and processes the results. It then works with the custom view to integrate any changes into the view’s text storage. During each of these activities, the coordinator reflects what’s happening in its [`state`](./state-swift.property.md) property. You can use the current state as a guide to making decisions in other parts of your view.
 
 ## Topics
 
 ### Getting the animation types
-- [UIWritingToolsCoordinator.State.inactive](uiwritingtoolscoordinator/state-swift.enum/inactive.md)
+- [UIWritingToolsCoordinator.State.inactive](./state-swift.enum/inactive.md)
   A state that indicates Writing Tools isn’t currently performing any work on your view’s content.
-- [UIWritingToolsCoordinator.State.noninteractive](uiwritingtoolscoordinator/state-swift.enum/noninteractive.md)
+- [UIWritingToolsCoordinator.State.noninteractive](./state-swift.enum/noninteractive.md)
   A state that indicates Writing Tools is handling interactions in the system UI, instead of in your view.
-- [UIWritingToolsCoordinator.State.interactiveResting](uiwritingtoolscoordinator/state-swift.enum/interactiveresting.md)
+- [UIWritingToolsCoordinator.State.interactiveResting](./state-swift.enum/interactiveresting.md)
   A state that indicates Writing Tools is in the resting state for an inline editing experience.
-- [UIWritingToolsCoordinator.State.interactiveStreaming](uiwritingtoolscoordinator/state-swift.enum/interactivestreaming.md)
+- [UIWritingToolsCoordinator.State.interactiveStreaming](./state-swift.enum/interactivestreaming.md)
   A state that indicates Writing Tools is processing a request and incorporating changes interactively into your view.
 ### Initializers
-- [init?(rawValue: Int)](uiwritingtoolscoordinator/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func stopWritingTools()](uiwritingtoolscoordinator/stopwritingtools.md)
+### Managing the current state
+- [func stopWritingTools()](./stopwritingtools%28%29.md)
   Stops the current Writing Tools operation and dismisses the system UI.
-- [var state: UIWritingToolsCoordinator.State](uiwritingtoolscoordinator/state-swift.property.md)
+- [var state: UIWritingToolsCoordinator.State](./state-swift.property.md)
   The current level of Writing Tools activity in your view.
 
 

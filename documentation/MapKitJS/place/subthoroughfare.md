@@ -1,7 +1,8 @@
 # subThoroughfare
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number on the street at the place.
 
@@ -10,21 +11,22 @@ The number on the street at the place.
 
 ## Declaration
 
-```swift
+```
 subThoroughfare: string | null;
 ```
 
 #### Discussion
 
-For example, the [`subThoroughfare`](place/subthoroughfare.md) for an address in Golden Gate Park in San Francisco, California, is `"1054"`.
+For example, the [`subThoroughfare`](./subthoroughfare.md) for an address in Golden Gate Park in San Francisco, California, is `"1054"`.
 
 ## See Also
 
-- [thoroughfare](place/thoroughfare.md)
+### Street address
+- [thoroughfare](./thoroughfare.md)
   The street name at the place.
-- [fullThoroughfare](place/fullthoroughfare.md)
+- [fullThoroughfare](./fullthoroughfare.md)
   A combination of thoroughfare and subthoroughfare.
-- [postCode](place/postcode.md)
+- [postCode](./postcode.md)
   The postal code of the place.
 
 

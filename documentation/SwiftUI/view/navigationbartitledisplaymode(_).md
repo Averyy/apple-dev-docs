@@ -1,7 +1,8 @@
 # navigationBarTitleDisplayMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the title display mode for this view.
 
@@ -25,9 +26,10 @@ func navigationBarTitleDisplayMode(_ displayMode: NavigationBarItem.TitleDisplay
 
 ## See Also
 
-- [func navigationBarBackButtonHidden(Bool) -> some View](view/navigationbarbackbuttonhidden(_:).md)
+### Configuring the navigation bar
+- [func navigationBarBackButtonHidden(Bool) -> some View](./navigationbarbackbuttonhidden%28_%29.md)
   Hides the navigation bar back button for the view.
-- [struct NavigationBarItem](navigationbaritem.md)
+- [struct NavigationBarItem](../navigationbaritem.md)
   A configuration for a navigation bar that represents a view at the top of a navigation stack.
 
 

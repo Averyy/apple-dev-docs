@@ -1,7 +1,8 @@
 # CMBufferQueue.TriggerCondition
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of trigger conditions.
 
@@ -23,33 +24,34 @@ enum TriggerCondition
 ## Topics
 
 ### Conditions
-- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesGreaterThan(_:)](cmbufferqueue/triggercondition/whenbuffercountbecomesgreaterthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesLessThan(_:)](cmbufferqueue/triggercondition/whenbuffercountbecomeslessthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDataBecomesReady](cmbufferqueue/triggercondition/whendatabecomesready.md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThan(_:)](cmbufferqueue/triggercondition/whendurationbecomesgreaterthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThanOrEqualTo(_:)](cmbufferqueue/triggercondition/whendurationbecomesgreaterthanorequalto(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThan(_:)](cmbufferqueue/triggercondition/whendurationbecomeslessthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThanOrEqualTo(_:)](cmbufferqueue/triggercondition/whendurationbecomeslessthanorequalto(_:).md)
-- [CMBufferQueue.TriggerCondition.whenEndOfDataReached](cmbufferqueue/triggercondition/whenendofdatareached.md)
-- [CMBufferQueue.TriggerCondition.whenMaxPresentationTimeStampChanges](cmbufferqueue/triggercondition/whenmaxpresentationtimestampchanges.md)
-- [CMBufferQueue.TriggerCondition.whenMinPresentationTimeStampChanges](cmbufferqueue/triggercondition/whenminpresentationtimestampchanges.md)
-- [CMBufferQueue.TriggerCondition.whenReset](cmbufferqueue/triggercondition/whenreset.md)
+- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesGreaterThan(_:)](./triggercondition/whenbuffercountbecomesgreaterthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesLessThan(_:)](./triggercondition/whenbuffercountbecomeslessthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDataBecomesReady](./triggercondition/whendatabecomesready.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThan(_:)](./triggercondition/whendurationbecomesgreaterthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThanOrEqualTo(_:)](./triggercondition/whendurationbecomesgreaterthanorequalto%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThan(_:)](./triggercondition/whendurationbecomeslessthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThanOrEqualTo(_:)](./triggercondition/whendurationbecomeslessthanorequalto%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenEndOfDataReached](./triggercondition/whenendofdatareached.md)
+- [CMBufferQueue.TriggerCondition.whenMaxPresentationTimeStampChanges](./triggercondition/whenmaxpresentationtimestampchanges.md)
+- [CMBufferQueue.TriggerCondition.whenMinPresentationTimeStampChanges](./triggercondition/whenminpresentationtimestampchanges.md)
+- [CMBufferQueue.TriggerCondition.whenReset](./triggercondition/whenreset.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func installTrigger(condition: CMBufferQueue.TriggerCondition, CMBufferQueueTriggerHandler?) throws -> CMBufferQueue.TriggerToken](cmbufferqueue/installtrigger(condition:_:).md)
+### Managing Triggers
+- [func installTrigger(condition: CMBufferQueue.TriggerCondition, CMBufferQueueTriggerHandler?) throws -> CMBufferQueue.TriggerToken](./installtrigger%28condition,_%29.md)
   Installs a trigger on the queue.
-- [func removeTrigger(CMBufferQueue.TriggerToken) throws](cmbufferqueue/removetrigger(_:).md)
+- [func removeTrigger(CMBufferQueue.TriggerToken) throws](./removetrigger%28_%29.md)
   Removes a trigger from the queue.
-- [func testTrigger(CMBufferQueue.TriggerToken) -> Bool](cmbufferqueue/testtrigger(_:).md)
+- [func testTrigger(CMBufferQueue.TriggerToken) -> Bool](./testtrigger%28_%29.md)
   Tests a trigger condition.
-- [CMBufferQueue.TriggerToken](cmbufferqueue/triggertoken.md)
+- [CMBufferQueue.TriggerToken](./triggertoken.md)
   A type alias for a trigger token.
 
 

@@ -1,7 +1,8 @@
 # SecTaskValidateForRequirement(task:requirement:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tests whether a task’s executable satisfies a lightweight code requirement.
 
@@ -21,7 +22,7 @@ If the requirement matches the process, then `true`; `false` if it doesn’t.
 
 #### Discussion
 
-This function throws a value from [`ConstraintError`](constrainterror.md) if it can’t evaluate whether the executable satisfies the lightweight code requirement.
+This function throws a value from [`ConstraintError`](./constrainterror.md) if it can’t evaluate whether the executable satisfies the lightweight code requirement.
 
 ## Parameters
 
@@ -30,19 +31,20 @@ This function throws a value from [`ConstraintError`](constrainterror.md) if it 
 
 ## See Also
 
-- [struct ProcessCodeRequirement](processcoderequirement.md)
+### Checking code requirements for running processes
+- [struct ProcessCodeRequirement](./processcoderequirement.md)
   A lightweight code requirement that you use to evaluate a running process.
-- [func allOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](allof(requirement:)-4k3ay.md)
+- [func allOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](./allof%28requirement%29-4k3ay.md)
   Creates a constraint that requires a running process’s executable to satisfy all of the provided constraints.
-- [func anyOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](anyof(requirement:)-vwhn.md)
+- [func anyOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](./anyof%28requirement%29-vwhn.md)
   Creates a constraint that requires a running process’s executable to satisfy any of the provided constraints.
-- [protocol ProcessConstraint](processconstraint.md)
+- [protocol ProcessConstraint](./processconstraint.md)
   A protocol to which a lightweight code requirement constraint conforms if you can use it in process code requirements.
-- [struct ProcessCodeSigningFlags](processcodesigningflags.md)
+- [struct ProcessCodeSigningFlags](./processcodesigningflags.md)
   A constraint that matches the current code-signing flags of a process.
-- [struct ProcessConstraintBuilder](processconstraintbuilder.md)
+- [struct ProcessConstraintBuilder](./processconstraintbuilder.md)
   A custom parameter attribute that constructs process constraints from closures.
-- [struct TeamIdentifierMatchesCurrentProcess](teamidentifiermatchescurrentprocess.md)
+- [struct TeamIdentifierMatchesCurrentProcess](./teamidentifiermatchescurrentprocess.md)
   A constraint that matches if a process has the same team identifier as the calling process.
 
 

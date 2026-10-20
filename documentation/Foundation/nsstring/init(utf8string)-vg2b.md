@@ -1,7 +1,8 @@
 # init(utf8String:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an @c NSString object initialized by copying the characters from a given C array of UTF8-encoded bytes.
 
@@ -18,6 +19,10 @@ Returns an @c NSString object initialized by copying the characters from a given
 
 ```swift
 convenience init?(utf8String nullTerminatedCString: UnsafePointer<CChar>)
+```
+
+```objc
+- (instancetype) initWithUTF8String:(const char *) nullTerminatedCString;
 ```
 
 #### Return Value

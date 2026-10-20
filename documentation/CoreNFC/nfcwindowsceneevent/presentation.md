@@ -1,7 +1,8 @@
 # NFCWindowSceneEvent.presentation
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user performed a gesture to present an NFC display.
 
@@ -22,7 +23,8 @@ This gesture can be a double-click of the side button on Face ID devices, or of 
 
 ## See Also
 
-- [NFCWindowSceneEvent.readerDetected](nfcwindowsceneevent/readerdetected.md)
+### Events
+- [NFCWindowSceneEvent.readerDetected](./readerdetected.md)
   The eligible device detected the RF field of an NFC reader.
 
 

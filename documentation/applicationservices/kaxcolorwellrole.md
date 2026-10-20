@@ -1,7 +1,8 @@
 # kAXColorWellRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A color well.
 
@@ -12,6 +13,10 @@ A color well.
 
 ```swift
 var kAXColorWellRole: String { get }
+```
+
+```c
+#define kAXColorWellRole
 ```
 
 

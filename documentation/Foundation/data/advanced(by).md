@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new data buffer created by removing the given number of bytes from the front of the original buffer.
 

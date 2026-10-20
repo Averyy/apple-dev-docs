@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual void insertAfter(
  IOFWCommand &prev);
 ```
@@ -21,8 +21,9 @@ inserts a command after the specified one.
 
 ## See Also
 
-- [removeFromQ](iofwcommand/1813168-removefromq.md)
-- [setHead](iofwcommand/1813176-sethead.md)
+### Miscellaneous
+- [removeFromQ](./api-1813168-removefromq.md)
+- [setHead](./api-1813176-sethead.md)
 
 
 ---

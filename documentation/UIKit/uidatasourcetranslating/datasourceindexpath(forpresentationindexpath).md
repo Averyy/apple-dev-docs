@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Translates an index in your presented layout to the equivalent index in your data source object.
@@ -19,6 +20,10 @@ Translates an index in your presented layout to the equivalent index in your dat
 func dataSourceIndexPath(forPresentationIndexPath presentationIndexPath: IndexPath?) -> IndexPath?
 ```
 
+```objc
+- (NSIndexPath *) dataSourceIndexPathForPresentationIndexPath:(NSIndexPath *) presentationIndexPath;
+```
+
 #### Return Value
 
 The index path of the same item in the data source object, or `nil` if the item is no longer in the data source.
@@ -29,7 +34,8 @@ The index path of the same item in the data source object, or `nil` if the item 
 
 ## See Also
 
-- [func presentationIndexPath(forDataSourceIndexPath: IndexPath?) -> IndexPath?](uidatasourcetranslating/presentationindexpath(fordatasourceindexpath:).md)
+### Managing item positions
+- [func presentationIndexPath(forDataSourceIndexPath: IndexPath?) -> IndexPath?](./presentationindexpath%28fordatasourceindexpath%29.md)
   Translates an index in your data source object to the equivalent index in your presented layout.
 
 

@@ -1,7 +1,8 @@
 # SparseConvertFromCoordinate(_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts from coordinate format arrays to a matrix of real double-precision values, dropping out-of-range entries and summing duplicates, without any internal memory allocations.
 
@@ -20,21 +21,25 @@ Converts from coordinate format arrays to a matrix of real double-precision valu
 func SparseConvertFromCoordinate(_ rowCount: Int32, _ columnCount: Int32, _ blockCount: Int, _ blockSize: UInt8, _ attributes: SparseAttributes_t, _ row: UnsafePointer<Int32>, _ column: UnsafePointer<Int32>, _ data: UnsafePointer<Double>, _ storage: UnsafeMutableRawPointer, _ workspace: UnsafeMutableRawPointer) -> SparseMatrix_Double
 ```
 
+```c
+static SparseMatrix_Double SparseConvertFromCoordinate(int rowCount, int columnCount, long blockCount, uint8_t blockSize, SparseAttributes_t attributes, const int *row, const int *column, const double *data, void *storage, void *workspace);
+```
+
 ## Mentions
 
-- [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
+- [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
 
 #### Return Value
 
-A new [`SparseMatrix_Double`](sparsematrix_double.md) object, using the memory you provide in the storage parameter. After you finish using a sparse matrix, call [`SparseCleanup(_:)`](sparsecleanup(_:)-6ywzn.md) to release its references to any memory that the Sparse Solvers library allocates.
+A new [`SparseMatrix_Double`](./sparsematrix_double.md) object, using the memory you provide in the storage parameter. After you finish using a sparse matrix, call [`SparseCleanup(_:)`](./sparsecleanup%28_%29-6ywzn.md) to release its references to any memory that the Sparse Solvers library allocates.
 
 #### Discussion
 
 The conversion drops out-of-range entries, and sums duplicate entries.
 
-You may supply entries in either triangle for symmetric matrices. The conversion transposes entries in the triangle that [`triangle`](sparseattributes_t/triangle.md) doesn’t specify, and sums duplicate entries.
+You may supply entries in either triangle for symmetric matrices. The conversion transposes entries in the triangle that [`triangle`](./sparseattributes_t/triangle.md) doesn’t specify, and sums duplicate entries.
 
-For triangular matrices, the conversion drops entries in the triangle that [`triangle`](sparseattributes_t/triangle.md) doesn’t specify.
+For triangular matrices, the conversion drops entries in the triangle that [`triangle`](./sparseattributes_t/triangle.md) doesn’t specify.
 
 ## Parameters
 
@@ -51,13 +56,14 @@ For triangular matrices, the conversion drops entries in the triangle that [`tri
 
 ## See Also
 
-- [Creating a sparse matrix from coordinate format arrays](creating-a-sparse-matrix-from-coordinate-format-arrays.md)
+### Support for coordinate format arrays
+- [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
   Use separate coordinate format arrays to create sparse matrices.
-- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Double>) -> SparseMatrix_Double](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2el.md)
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Double>) -> SparseMatrix_Double](./sparseconvertfromcoordinate%28_,_,_,_,_,_,_,_%29-4n2el.md)
   Converts from coordinate format arrays to a matrix of real double-precision values, dropping out-of-range entries and summing duplicates.
-- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Float>) -> SparseMatrix_Float](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:)-4n2th.md)
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Float>) -> SparseMatrix_Float](./sparseconvertfromcoordinate%28_,_,_,_,_,_,_,_%29-4n2th.md)
   Converts from coordinate format arrays to a matrix of real single-precision values, dropping out-of-range entries and summing duplicates.
-- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Float>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Float](sparseconvertfromcoordinate(_:_:_:_:_:_:_:_:_:_:)-84plp.md)
+- [func SparseConvertFromCoordinate(Int32, Int32, Int, UInt8, SparseAttributes_t, UnsafePointer<Int32>, UnsafePointer<Int32>, UnsafePointer<Float>, UnsafeMutableRawPointer, UnsafeMutableRawPointer) -> SparseMatrix_Float](./sparseconvertfromcoordinate%28_,_,_,_,_,_,_,_,_,_%29-84plp.md)
   Converts from coordinate format arrays to a matrix of real single-precision values, dropping out-of-range entries and summing duplicates, without any internal memory allocations.
 
 

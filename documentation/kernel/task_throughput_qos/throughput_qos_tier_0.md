@@ -1,14 +1,15 @@
 # THROUGHPUT_QOS_TIER_0
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 THROUGHPUT_QOS_TIER_0 = ((0xFE << 16) | 1)
 ```
 

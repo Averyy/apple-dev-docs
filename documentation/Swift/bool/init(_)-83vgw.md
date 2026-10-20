@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Boolean value from the given string.
 
@@ -30,7 +31,8 @@ If the `description` value is any string other than `"true"` or `"false"`, the r
 
 ## See Also
 
-- [init(Bool)](bool/init(_:)-25sp9.md)
+### Creating a Boolean From Another Value
+- [init(Bool)](./init%28_%29-25sp9.md)
   Creates an instance equal to the given Boolean value.
 
 

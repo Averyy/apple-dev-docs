@@ -1,7 +1,8 @@
 # localizedString(from:dateStyle:timeStyle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string representation of a specified date, that the system formats for the current locale using the specified date and time styles.
 
@@ -18,6 +19,10 @@ Returns a string representation of a specified date, that the system formats for
 
 ```swift
 class func localizedString(from date: Date, dateStyle dstyle: DateFormatter.Style, timeStyle tstyle: DateFormatter.Style) -> String
+```
+
+```objc
++ (NSString *) localizedStringFromDate:(NSDate *) date dateStyle:(NSDateFormatterStyle) dstyle timeStyle:(NSDateFormatterStyle) tstyle;
 ```
 
 #### Return Value
@@ -39,16 +44,17 @@ NSString *result = [formatter stringForObjectValue:date];
 ## Parameters
 
 - `date`: A date.
-- `dstyle`: A format style for the date. For possible values, see [`DateFormatter.Style`](dateformatter/style.md).
-- `tstyle`: A format style for the time. For possible values, see [`DateFormatter.Style`](dateformatter/style.md).
+- `dstyle`: A format style for the date. For possible values, see [`DateFormatter.Style`](./style.md).
+- `tstyle`: A format style for the time. For possible values, see [`DateFormatter.Style`](./style.md).
 
 ## See Also
 
-- [func date(from: String) -> Date?](dateformatter/date(from:).md)
+### Converting Objects
+- [func date(from: String) -> Date?](./date%28from%29.md)
   Returns a date representation of a specified string that the system interprets using the receiver’s current settings.
-- [func string(from: Date) -> String](dateformatter/string(from:).md)
+- [func string(from: Date) -> String](./string%28from%29.md)
   Returns a string representation of a specified date that the system formats using the receiver’s current settings.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, range: UnsafeMutablePointer<NSRange>?) throws](dateformatter/getobjectvalue(_:for:range:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, range: UnsafeMutablePointer<NSRange>?) throws](./getobjectvalue%28_,for,range%29.md)
   Returns by reference a date representation of a specified string and its date range, as well as a Boolean value that indicates whether the system can parse the string.
 
 

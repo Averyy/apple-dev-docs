@@ -1,7 +1,8 @@
 # currentPath
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current path for the connection, which can be used to extract interface and effective endpoint information
 

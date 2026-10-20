@@ -2,6 +2,7 @@
 
 **Framework**: MetalKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the view’s contents upon receiving a change in layout, resolution, or size.
@@ -19,6 +20,10 @@ Updates the view’s contents upon receiving a change in layout, resolution, or 
 ```swift
 @MainActor
 func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize)
+```
+
+```objc
+- (void) mtkView:(MTKView *) view drawableSizeWillChange:(CGSize) size;
 ```
 
 #### Discussion

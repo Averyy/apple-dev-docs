@@ -1,7 +1,8 @@
 # SVGGraphicsElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,26 +10,26 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGGraphicsElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [farthestViewportElement](svggraphicselement/1629796-farthestviewportelement.md)
-- [nearestViewportElement](svggraphicselement/1630641-nearestviewportelement.md)
-- [transform](svggraphicselement/1633870-transform.md)
+- [farthestViewportElement](./svggraphicselement/api-1629796-farthestviewportelement.md)
+- [nearestViewportElement](./svggraphicselement/api-1630641-nearestviewportelement.md)
+- [transform](./svggraphicselement/api-1633870-transform.md)
 ### Instance Methods
-- [getBBox](svggraphicselement/1628818-getbbox.md)
-- [getCTM](svggraphicselement/1632773-getctm.md)
-- [getScreenCTM](svggraphicselement/1630760-getscreenctm.md)
-- [getTransformToElement](svggraphicselement/1632419-gettransformtoelement.md)
+- [getBBox](./svggraphicselement/api-1628818-getbbox.md)
+- [getCTM](./svggraphicselement/api-1632773-getctm.md)
+- [getScreenCTM](./svggraphicselement/api-1630760-getscreenctm.md)
+- [getTransformToElement](./svggraphicselement/api-1632419-gettransformtoelement.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

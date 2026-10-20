@@ -1,7 +1,8 @@
 # isVideoBinned
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format produces video data in a binned format.
 
@@ -17,21 +18,26 @@ A Boolean value that indicates whether the format produces video data in a binne
 var isVideoBinned: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVideoBinned) BOOL videoBinned;
+```
+
 #### Discussion
 
 Binning is a pixel-combining process which can result in greater low light sensitivity at the cost of reduced resolution.
 
 ## See Also
 
-- [var isAutoVideoFrameRateSupported: Bool](avcapturedevice/format/isautovideoframeratesupported.md)
+### Determining video capture support
+- [var isAutoVideoFrameRateSupported: Bool](./isautovideoframeratesupported.md)
   A Boolean value that Indicates whether the format supports performing automatic video frame rate adjustments.
-- [var videoSupportedFrameRateRanges: [AVFrameRateRange]](avcapturedevice/format/videosupportedframerateranges.md)
+- [var videoSupportedFrameRateRanges: [AVFrameRateRange]](./videosupportedframerateranges.md)
   A list of frame rate ranges that a format supports.
-- [class AVFrameRateRange](avframeraterange.md)
+- [class AVFrameRateRange](../../avframeraterange.md)
   An immutable type that represents a range of valid frame rates.
-- [var isVideoHDRSupported: Bool](avcapturedevice/format/isvideohdrsupported.md)
+- [var isVideoHDRSupported: Bool](./isvideohdrsupported.md)
   A Boolean value that indicates whether the format supports high dynamic range streaming.
-- [var isMultiCamSupported: Bool](avcapturedevice/format/ismulticamsupported.md)
+- [var isMultiCamSupported: Bool](./ismulticamsupported.md)
   A Boolean value that indicates whether a multi-camera capture session supports this format.
 
 

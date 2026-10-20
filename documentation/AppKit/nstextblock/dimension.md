@@ -1,9 +1,10 @@
 # NSTextBlock.Dimension
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The following constants specify values used by the methods [`setValue(_:type:for:)`](nstextblock/setvalue(_:type:for:).md), [`value(for:)`](nstextblock/value(for:).md), and [`valueType(for:)`](nstextblock/valuetype(for:).md) to specify text block dimensions.
+The following constants specify values used by the methods [`setValue(_:type:for:)`](./setvalue%28_,type,for%29.md), [`value(for:)`](./value%28for%29.md), and [`valueType(for:)`](./valuetype%28for%29.md) to specify text block dimensions.
 
 **Availability**:
 - macOS 10.0+
@@ -14,50 +15,55 @@ The following constants specify values used by the methods [`setValue(_:type:for
 enum Dimension
 ```
 
+```c
+enum NSTextBlockDimension : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTextBlock.Dimension.width](nstextblock/dimension/width.md)
+- [NSTextBlock.Dimension.width](./dimension/width.md)
   Width of the text block.
-- [NSTextBlock.Dimension.minimumWidth](nstextblock/dimension/minimumwidth.md)
+- [NSTextBlock.Dimension.minimumWidth](./dimension/minimumwidth.md)
   Minimum width of the text block.
-- [NSTextBlock.Dimension.maximumWidth](nstextblock/dimension/maximumwidth.md)
+- [NSTextBlock.Dimension.maximumWidth](./dimension/maximumwidth.md)
   Maximum width of the text block.
-- [NSTextBlock.Dimension.height](nstextblock/dimension/height.md)
+- [NSTextBlock.Dimension.height](./dimension/height.md)
   Height of the text block.
-- [NSTextBlock.Dimension.minimumHeight](nstextblock/dimension/minimumheight.md)
+- [NSTextBlock.Dimension.minimumHeight](./dimension/minimumheight.md)
   Minimum height of the text block.
-- [NSTextBlock.Dimension.maximumHeight](nstextblock/dimension/maximumheight.md)
+- [NSTextBlock.Dimension.maximumHeight](./dimension/maximumheight.md)
   Maximum height of the text block.
 ### Initializers
-- [init?(rawValue: Int)](nstextblock/dimension/init(rawvalue:).md)
+- [init?(rawValue: Int)](./dimension/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setValue(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Dimension)](nstextblock/setvalue(_:type:for:).md)
+### Working with dimensions of content
+- [func setValue(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Dimension)](./setvalue%28_,type,for%29.md)
   Sets a dimension of the text block.
-- [func value(for: NSTextBlock.Dimension) -> CGFloat](nstextblock/value(for:).md)
+- [func value(for: NSTextBlock.Dimension) -> CGFloat](./value%28for%29.md)
   Returns the value of the specified text block dimension.
-- [func valueType(for: NSTextBlock.Dimension) -> NSTextBlock.ValueType](nstextblock/valuetype(for:).md)
+- [func valueType(for: NSTextBlock.Dimension) -> NSTextBlock.ValueType](./valuetype%28for%29.md)
   Returns the value type of the specified text block dimension.
-- [func setContentWidth(CGFloat, type: NSTextBlock.ValueType)](nstextblock/setcontentwidth(_:type:).md)
+- [func setContentWidth(CGFloat, type: NSTextBlock.ValueType)](./setcontentwidth%28_,type%29.md)
   Sets the width of the text block.
-- [var contentWidth: CGFloat](nstextblock/contentwidth.md)
+- [var contentWidth: CGFloat](./contentwidth.md)
   The width of the text block.
-- [var contentWidthValueType: NSTextBlock.ValueType](nstextblock/contentwidthvaluetype.md)
+- [var contentWidthValueType: NSTextBlock.ValueType](./contentwidthvaluetype.md)
   The type of value stored for the text block width.
-- [NSTextBlock.ValueType](nstextblock/valuetype.md)
-  The following constants specify values used by the methods [`setValue(_:type:for:)`](nstextblock/setvalue(_:type:for:).md) and [`valueType(for:)`](nstextblock/valuetype(for:).md) to specify text block value types.
+- [NSTextBlock.ValueType](./valuetype.md)
+  The following constants specify values used by the methods [`setValue(_:type:for:)`](./setvalue%28_,type,for%29.md) and [`valueType(for:)`](./valuetype%28for%29.md) to specify text block value types.
 
 
 ---

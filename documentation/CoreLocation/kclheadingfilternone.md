@@ -1,7 +1,8 @@
 # kCLHeadingFilterNone
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant indicating that all header values should be reported.
 
@@ -20,27 +21,32 @@ A constant indicating that all header values should be reported.
 let kCLHeadingFilterNone: CLLocationDegrees
 ```
 
+```c
+extern const CLLocationDegrees kCLHeadingFilterNone;
+```
+
 #### Discussion
 
 Use this constant to indicate that any change to the heading, regardless of how small, should be reported.
 
 ## See Also
 
-- [func startUpdatingHeading()](cllocationmanager/startupdatingheading.md)
+### Running the heading service
+- [func startUpdatingHeading()](./cllocationmanager/startupdatingheading%28%29.md)
   Starts the generation of updates that report the user’s current heading.
-- [func stopUpdatingHeading()](cllocationmanager/stopupdatingheading.md)
+- [func stopUpdatingHeading()](./cllocationmanager/stopupdatingheading%28%29.md)
   Stops the generation of heading updates.
-- [func dismissHeadingCalibrationDisplay()](cllocationmanager/dismissheadingcalibrationdisplay.md)
+- [func dismissHeadingCalibrationDisplay()](./cllocationmanager/dismissheadingcalibrationdisplay%28%29.md)
   Dismisses the heading calibration view from the screen immediately.
-- [var headingFilter: CLLocationDegrees](cllocationmanager/headingfilter.md)
+- [var headingFilter: CLLocationDegrees](./cllocationmanager/headingfilter.md)
   The minimum angular change in degrees required to generate new heading events.
-- [typealias CLLocationDegrees](cllocationdegrees.md)
+- [typealias CLLocationDegrees](./cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+- [var headingBody: (any CLBodyIdentifiable)?](./cllocationmanager/headingbody.md)
   A physical body or view that defines the reference orientation for heading calculations.
-- [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
+- [var headingOrientation: CLDeviceOrientation](./cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
-- [enum CLDeviceOrientation](cldeviceorientation.md)
+- [enum CLDeviceOrientation](./cldeviceorientation.md)
   Constants indicating the physical orientation of the device.
 
 

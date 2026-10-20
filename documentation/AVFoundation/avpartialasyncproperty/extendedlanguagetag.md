@@ -1,7 +1,8 @@
 # extendedLanguageTag
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The language tag of the track.
 
@@ -20,15 +21,18 @@ The language tag of the track.
 static var extendedLanguageTag: AVAsyncProperty<Root, String?> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-The value is a [`BCP-47`](https://developer.apple.comhttps://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
+The value is a [BCP-47](https://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
 
 ## See Also
 
-- [static var languageCode: AVAsyncProperty<Root, String?>](avpartialasyncproperty/languagecode.md)
+### Loading language support
+- [static var languageCode: AVAsyncProperty<Root, String?>](./languagecode.md)
   The language code of the track.
 
 

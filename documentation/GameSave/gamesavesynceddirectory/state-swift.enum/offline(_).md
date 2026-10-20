@@ -1,7 +1,8 @@
 # GameSaveSyncedDirectory.State.offline(_:)
 
 **Framework**: GameSave  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The directory is available locally, but not fully synced because the device is offline.
 
@@ -24,17 +25,18 @@ case offline(URL)
 
 ## See Also
 
-- [GameSaveSyncedDirectory.State.closed](gamesavesynceddirectory/state-swift.enum/closed.md)
+### Directory states
+- [GameSaveSyncedDirectory.State.closed](./closed.md)
   The directory is closed.
-- [case conflicted(versions: [GameSaveSyncedDirectory.Version])](gamesavesynceddirectory/state-swift.enum/conflicted(versions:).md)
+- [case conflicted(versions: [GameSaveSyncedDirectory.Version])](./conflicted%28versions%29.md)
   The directory has conflicts with the cloud, which the game needs to resolve.
-- [GameSaveSyncedDirectory.State.error(_:)](gamesavesynceddirectory/state-swift.enum/error(_:).md)
+- [GameSaveSyncedDirectory.State.error(_:)](./error%28_%29.md)
   The directory is in error state and can’t be used.
-- [GameSaveSyncedDirectory.State.local(_:)](gamesavesynceddirectory/state-swift.enum/local(_:).md)
+- [GameSaveSyncedDirectory.State.local(_:)](./local%28_%29.md)
   The directory is local-only and not synced to iCloud.
-- [GameSaveSyncedDirectory.State.ready(_:)](gamesavesynceddirectory/state-swift.enum/ready(_:).md)
+- [GameSaveSyncedDirectory.State.ready(_:)](./ready%28_%29.md)
   The directory is fully synced and ready to use.
-- [GameSaveSyncedDirectory.State.syncing](gamesavesynceddirectory/state-swift.enum/syncing.md)
+- [GameSaveSyncedDirectory.State.syncing](./syncing.md)
   The directory is currently syncing and is not ready yet.
 
 

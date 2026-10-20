@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct instrs_cycles_snapshot_v2 {
     ...
 };
@@ -17,10 +17,10 @@ struct instrs_cycles_snapshot_v2 {
 ## Topics
 
 ### Instance Properties
-- [ics_cycles](instrs_cycles_snapshot_v2/3943578-ics_cycles.md)
-- [ics_instructions](instrs_cycles_snapshot_v2/3943579-ics_instructions.md)
-- [ics_p_cycles](instrs_cycles_snapshot_v2/3943580-ics_p_cycles.md)
-- [ics_p_instructions](instrs_cycles_snapshot_v2/3943581-ics_p_instructions.md)
+- [ics_cycles](./instrs_cycles_snapshot_v2/api-3943578-ics_cycles.md)
+- [ics_instructions](./instrs_cycles_snapshot_v2/api-3943579-ics_instructions.md)
+- [ics_p_cycles](./instrs_cycles_snapshot_v2/api-3943580-ics_p_cycles.md)
+- [ics_p_instructions](./instrs_cycles_snapshot_v2/api-3943581-ics_p_instructions.md)
 
 
 ---

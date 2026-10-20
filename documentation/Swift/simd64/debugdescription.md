@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance, suitable for debugging.
 
@@ -19,6 +20,8 @@ A textual representation of this instance, suitable for debugging.
 ```swift
 var debugDescription: String { get }
 ```
+
+Available when `Scalar` conforms to `SIMDScalar`.
 
 #### Discussion
 

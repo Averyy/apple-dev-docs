@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the details of a subscription price increase.
 
@@ -23,23 +24,23 @@ struct PriceIncreaseInfo
 ## Topics
 
 ### Information about a price increase
-- [let dependentSKUs: [String]](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/dependentskus.md)
+- [let dependentSKUs: [String]](./priceincreaseinfo-swift.struct/dependentskus.md)
   An array of one or more SKUs on which the current subscription offer depends.
-- [let price: Decimal](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/price.md)
+- [let price: Decimal](./priceincreaseinfo-swift.struct/price.md)
   The cost of the price increase in the location-specific currency.
-- [let status: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.property.md)
+- [let status: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./priceincreaseinfo-swift.struct/status-swift.property.md)
   The status of the price increase.
 ### Structures
-- [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.struct.md)
+- [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./priceincreaseinfo-swift.struct/status-swift.struct.md)
   Values that describe the status of a subscription price increase.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../../Swift/equatable.md)
+- [Hashable](../../../../../../Swift/hashable.md)
+- [Sendable](../../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../../Swift/sendablemetatype.md)
 
 
 ---

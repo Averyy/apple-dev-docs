@@ -1,7 +1,8 @@
 # init(conversationIdentifier:text:leadingConfiguration:trailingConfiguration:detailText:trailingText:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list item that represents an existing conversation.
 
@@ -16,6 +17,10 @@ Creates a list item that represents an existing conversation.
 init(conversationIdentifier: String, text: String, leadingConfiguration: CPMessageListItemLeadingConfiguration, trailingConfiguration: CPMessageListItemTrailingConfiguration?, detailText: String?, trailingText: String?)
 ```
 
+```objc
+- (instancetype) initWithConversationIdentifier:(NSString *) conversationIdentifier text:(NSString *) text leadingConfiguration:(CPMessageListItemLeadingConfiguration *) leadingConfiguration trailingConfiguration:(CPMessageListItemTrailingConfiguration *) trailingConfiguration detailText:(NSString *) detailText trailingText:(NSString *) trailingText;
+```
+
 ## Parameters
 
 - `conversationIdentifier`: Your app’s unique identifier for the conversation. Siri passes this value to your app when the user selects the list item.
@@ -27,7 +32,8 @@ init(conversationIdentifier: String, text: String, leadingConfiguration: CPMessa
 
 ## See Also
 
-- [init(fullName: String, phoneOrEmailAddress: String, leadingConfiguration: CPMessageListItemLeadingConfiguration, trailingConfiguration: CPMessageListItemTrailingConfiguration?, detailText: String?, trailingText: String?)](cpmessagelistitem/init(fullname:phoneoremailaddress:leadingconfiguration:trailingconfiguration:detailtext:trailingtext:).md)
+### Creating a Message List Item
+- [init(fullName: String, phoneOrEmailAddress: String, leadingConfiguration: CPMessageListItemLeadingConfiguration, trailingConfiguration: CPMessageListItemTrailingConfiguration?, detailText: String?, trailingText: String?)](./init%28fullname,phoneoremailaddress,leadingconfiguration,trailingconfiguration,detailtext,trailingtext%29.md)
   Creates a list item that represents a contact.
 
 

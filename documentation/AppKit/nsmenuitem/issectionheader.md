@@ -1,7 +1,8 @@
 # isSectionHeader
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the menu item is a section header.
 
@@ -12,6 +13,10 @@ A Boolean value indicating whether the menu item is a section header.
 
 ```swift
 var isSectionHeader: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSectionHeader) BOOL sectionHeader;
 ```
 
 

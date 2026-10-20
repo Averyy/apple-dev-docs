@@ -1,7 +1,8 @@
 # requirePassphase
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a passphrase should be required for every access.
 
@@ -12,6 +13,10 @@ Indicates that a passphrase should be required for every access.
 
 ```swift
 static var requirePassphase: SecKeychainPromptSelector { get }
+```
+
+```c
+kSecKeychainPromptRequirePassphase
 ```
 
 

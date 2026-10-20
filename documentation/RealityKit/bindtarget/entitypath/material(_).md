@@ -1,7 +1,8 @@
 # material(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a specified material’s path.
 

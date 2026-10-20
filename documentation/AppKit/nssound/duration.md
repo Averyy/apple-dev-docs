@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the sound, in seconds.
 
@@ -14,11 +15,16 @@ The duration of the sound, in seconds.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [class var soundUnfilteredTypes: [String]](nssound/soundunfilteredtypes.md)
+### Getting Sound Information
+- [class var soundUnfilteredTypes: [String]](./soundunfilteredtypes.md)
   Provides the file types the `NSSound` class understands.
-- [init?(named: NSSound.Name)](nssound/init(named:).md)
+- [init?(named: NSSound.Name)](./init%28named%29.md)
   Returns the `NSSound` instance associated with a given name.
 
 

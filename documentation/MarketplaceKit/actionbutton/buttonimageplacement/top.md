@@ -1,7 +1,8 @@
 # ActionButton.ButtonImagePlacement.top
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+

@@ -1,7 +1,8 @@
 # init(device:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, descriptor: MPSMatrixDescriptor)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device descriptor:(MPSMatrixDescriptor *) descriptor;
 ```
 
 

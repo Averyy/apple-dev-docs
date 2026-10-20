@@ -1,7 +1,8 @@
 # CBPeripheralManagerOptionRestoreIdentifierKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string containing a unique identifier (UID) for the peripheral manager to instantiate.
 
@@ -20,17 +21,22 @@ A string containing a unique identifier (UID) for the peripheral manager to inst
 let CBPeripheralManagerOptionRestoreIdentifierKey: String
 ```
 
+```c
+extern NSString * const CBPeripheralManagerOptionRestoreIdentifierKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). The system uses this UID to identify a specific [`CBPeripheralManager`](cbperipheralmanager.md), so the UID must be identical across executions of the app. If your app creates multiple [`CBPeripheralManager`](cbperipheralmanager.md) instances, assign each a distinct UID to prevent state from being mixed up between them.
+The value associated with this key is an [`NSString`](../Foundation/nsstring.md). The system uses this UID to identify a specific [`CBPeripheralManager`](./cbperipheralmanager.md), so the UID must be identical across executions of the app. If your app creates multiple [`CBPeripheralManager`](./cbperipheralmanager.md) instances, assign each a distinct UID to prevent state from being mixed up between them.
 
-In scene-based apps that adopt [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate), `launchOptions` is always `nil` on launch, so `UIApplicationLaunchOptionsBluetoothPeripheralsKey` is not available to deliver identifiers. Persist the UID yourself (for example, in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults)) and pass it to [`init(delegate:queue:options:)`](cbperipheralmanager/init(delegate:queue:options:).md) on every launch.
+In scene-based apps that adopt [`UISceneDelegate`](../UIKit/uiscenedelegate.md), `launchOptions` is always `nil` on launch, so `UIApplicationLaunchOptionsBluetoothPeripheralsKey` is not available to deliver identifiers. Persist the UID yourself (for example, in [`UserDefaults`](../Foundation/userdefaults.md)) and pass it to [`init(delegate:queue:options:)`](./cbperipheralmanager/init%28delegate,queue,options%29.md) on every launch.
 
-Providing this key causes Core Bluetooth to call [`peripheralManager(_:willRestoreState:)`](cbperipheralmanagerdelegate/peripheralmanager(_:willrestorestate:).md) with the preserved state when restoration is available. For a description of the state dictionary keys your delegate receives, see [`Peripheral Manager State Restoration Options`](peripheral-manager-state-restoration-options.md).
+Providing this key causes Core Bluetooth to call [`peripheralManager(_:willRestoreState:)`](./cbperipheralmanagerdelegate/peripheralmanager%28_,willrestorestate%29.md) with the preserved state when restoration is available. For a description of the state dictionary keys your delegate receives, see [Peripheral Manager State Restoration Options](./peripheral-manager-state-restoration-options.md).
 
 ## See Also
 
-- [let CBPeripheralManagerOptionShowPowerAlertKey: String](cbperipheralmanageroptionshowpoweralertkey.md)
+### Initialization Options
+- [let CBPeripheralManagerOptionShowPowerAlertKey: String](./cbperipheralmanageroptionshowpoweralertkey.md)
   A Boolean value specifying whether the system should warn if Bluetooth is in the powered-off state when instantiating the peripheral manager.
 
 

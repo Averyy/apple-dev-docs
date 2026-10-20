@@ -1,7 +1,8 @@
 # init(animationCurve:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the object with the specified UIKit timing curve.
 
@@ -18,13 +19,17 @@ Initializes the object with the specified UIKit timing curve.
 init(animationCurve curve: UIView.AnimationCurve)
 ```
 
+```objc
+- (instancetype) initWithAnimationCurve:(UIViewAnimationCurve) curve;
+```
+
 #### Return Value
 
 An initialized timing parameter object or `nil` if the object could not be created.
 
 #### Discussion
 
-Use this method to create a timing curve that uses the standard UIKit timing curves such as [`UIView.AnimationCurve.easeIn`](uiview/animationcurve/easein.md), [`UIView.AnimationCurve.easeOut`](uiview/animationcurve/easeout.md), [`UIView.AnimationCurve.easeInOut`](uiview/animationcurve/easeinout.md), or [`UIView.AnimationCurve.linear`](uiview/animationcurve/linear.md).
+Use this method to create a timing curve that uses the standard UIKit timing curves such as [`UIView.AnimationCurve.easeIn`](../uiview/animationcurve/easein.md), [`UIView.AnimationCurve.easeOut`](../uiview/animationcurve/easeout.md), [`UIView.AnimationCurve.easeInOut`](../uiview/animationcurve/easeinout.md), or [`UIView.AnimationCurve.linear`](../uiview/animationcurve/linear.md).
 
 ## Parameters
 
@@ -32,11 +37,12 @@ Use this method to create a timing curve that uses the standard UIKit timing cur
 
 ## See Also
 
-- [init()](uicubictimingparameters/init.md)
+### Initializing a cubic timing parameters object
+- [init()](./init%28%29.md)
   Initializes the object with the system’s default timing curve.
-- [init(controlPoint1: CGPoint, controlPoint2: CGPoint)](uicubictimingparameters/init(controlpoint1:controlpoint2:).md)
+- [init(controlPoint1: CGPoint, controlPoint2: CGPoint)](./init%28controlpoint1,controlpoint2%29.md)
   Initializes the object with the specified control points for a cubic Bézier curve.
-- [init?(coder: NSCoder)](uicubictimingparameters/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a timing parameters object from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSDestLatitude
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The latitude of the destination point.
 
@@ -20,21 +21,26 @@ The latitude of the destination point.
 let kCGImagePropertyGPSDestLatitude: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGPSDestLatitude;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGPSDestLongitude: CFString](kcgimagepropertygpsdestlongitude.md)
+### Destinations
+- [let kCGImagePropertyGPSDestLongitude: CFString](./kcgimagepropertygpsdestlongitude.md)
   The longitude of the destination point.
-- [let kCGImagePropertyGPSDestBearing: CFString](kcgimagepropertygpsdestbearing.md)
+- [let kCGImagePropertyGPSDestBearing: CFString](./kcgimagepropertygpsdestbearing.md)
   The bearing to the destination point.
-- [let kCGImagePropertyGPSDestDistance: CFString](kcgimagepropertygpsdestdistance.md)
+- [let kCGImagePropertyGPSDestDistance: CFString](./kcgimagepropertygpsdestdistance.md)
   The distance to the destination point.
-- [let kCGImagePropertyGPSDestLatitudeRef: CFString](kcgimagepropertygpsdestlatituderef.md)
+- [let kCGImagePropertyGPSDestLatitudeRef: CFString](./kcgimagepropertygpsdestlatituderef.md)
   An indication of whether the latitude of the destination point is northern or southern.
-- [let kCGImagePropertyGPSDestLongitudeRef: CFString](kcgimagepropertygpsdestlongituderef.md)
+- [let kCGImagePropertyGPSDestLongitudeRef: CFString](./kcgimagepropertygpsdestlongituderef.md)
   An indication of whether the longitude of the destination point is east or west.
-- [let kCGImagePropertyGPSDestBearingRef: CFString](kcgimagepropertygpsdestbearingref.md)
+- [let kCGImagePropertyGPSDestBearingRef: CFString](./kcgimagepropertygpsdestbearingref.md)
   The reference for giving the bearing to the destination point.
-- [let kCGImagePropertyGPSDestDistanceRef: CFString](kcgimagepropertygpsdestdistanceref.md)
+- [let kCGImagePropertyGPSDestDistanceRef: CFString](./kcgimagepropertygpsdestdistanceref.md)
   The units for expressing the distance to the destination point.
 
 

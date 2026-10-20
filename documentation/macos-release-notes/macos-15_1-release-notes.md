@@ -1,14 +1,15 @@
 # macOS Sequoia 15.1 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 15.1 SDK provides support to develop apps for Mac computers running Sequoia 15.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [`Xcode 16.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_1-release-notes).
+The macOS 15.1 SDK provides support to develop apps for Mac computers running Sequoia 15.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [Xcode 16.1 Release Notes](../Xcode-Release-Notes/xcode-16_1-release-notes.md).
 
-##### Appkit
+##### AppKit
 
 ###### Resolved Issues
 
@@ -20,7 +21,7 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 - Resolved an issue where iBooks Author quits unexpectedly when clicking Charts or Widgets in the toolbar.  (134693081)
 
-##### Datadetection
+##### DataDetection
 
 ###### Resolved Issues
 
@@ -44,7 +45,7 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Back-deploying apps that link QuickLookUI to macOS 11 or earlier might crash.  (133213738) (FB14667312)
 
-##### Screencapturekit
+##### ScreenCaptureKit
 
 ###### New Features
 
@@ -56,7 +57,7 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Some of the buttons on the macOS Siri snippets might be unresponsive when using Siri through Voice.  (133194038)
 
-##### Storekit
+##### StoreKit
 
 ###### Resolved Issues
 
@@ -68,7 +69,7 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Any project that utilizes Swift Charts fails to build when targeting iOS, macOS, or visionOS.  (135905498)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
@@ -76,7 +77,9 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- macOS apps might crash with an exception related to duplicate toolbar items. This often happens when either (A) `NavigationSplitView`s are nested or (B) toolbars with `id`s are specified (`View.toolbar(id:...)`) and a new window is created with the same identified toolbar.  (134589426) **Workaround:** (A) Use apply `.toolbar(removing: .sidebarToggle)` within the sidebar column of the inner `NavigationSplitView`. (B) Temporarily stop using identified toolbars until this issue is addressed. Alternatively, sometimes it might be possible to workaround (B) by moving toolbar items around or rendering them after a short delay.
+- macOS apps might crash with an exception related to duplicate toolbar items. This often happens when either (A) `NavigationSplitView`s are nested or (B) toolbars with `id`s are specified (`View.toolbar(id:...)`) and a new window is created with the same identified toolbar.  (134589426)
+
+  **Workaround:** (A) Use apply `.toolbar(removing: .sidebarToggle)` within the sidebar column of the inner `NavigationSplitView`. (B) Temporarily stop using identified toolbars until this issue is addressed. Alternatively, sometimes it might be possible to workaround (B) by moving toolbar items around or rendering them after a short delay.
 - On macOS 15.1, Tabs in TabViews that use the .sidebarAdaptable style might not be selected when the Tab label is clicked.  (137277517) (FB15383066)
 
 ##### System Integrity Protection
@@ -85,7 +88,7 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Users might be incorrectly prompted when an app that is distributed through TestFlight attempts to access an application group container.  (131606564) (FB14288230)
 
-##### Uikit
+##### UIKit
 
 ###### Resolved Issues
 
@@ -93,17 +96,18 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 ## See Also
 
-- [macOS Sequoia 15.6 Release Notes](macos-15_6-release-notes.md)
+### macOS 15
+- [macOS Sequoia 15.6 Release Notes](./macos-15_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
+- [macOS Sequoia 15.5 Release Notes](./macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.4 Release Notes](macos-15_4-release-notes.md)
+- [macOS Sequoia 15.4 Release Notes](./macos-15_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.3 Release Notes](macos-15_3-release-notes.md)
+- [macOS Sequoia 15.3 Release Notes](./macos-15_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.2 Release Notes](macos-15_2-release-notes.md)
+- [macOS Sequoia 15.2 Release Notes](./macos-15_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15 Release Notes](macos-15-release-notes.md)
+- [macOS Sequoia 15 Release Notes](./macos-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

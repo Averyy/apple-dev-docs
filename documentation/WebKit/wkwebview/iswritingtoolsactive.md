@@ -1,7 +1,8 @@
 # isWritingToolsActive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,9 +17,14 @@
 var isWritingToolsActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isWritingToolsActive) BOOL writingToolsActive;
+```
+
 ## See Also
 
-- [var conversationContext: UIConversationContext](wkwebview/conversationcontext.md)
+### Supporting Writing Tools
+- [var conversationContext: UIConversationContext](./conversationcontext.md)
 
 
 ---

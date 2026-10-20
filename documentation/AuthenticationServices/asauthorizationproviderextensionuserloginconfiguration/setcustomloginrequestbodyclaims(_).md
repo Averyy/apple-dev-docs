@@ -1,7 +1,8 @@
 # setCustomLoginRequestBodyClaims(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,11 +13,16 @@
 func setCustomLoginRequestBodyClaims(_ claims: [String : Any]) throws
 ```
 
+```objc
+- (BOOL) setCustomLoginRequestBodyClaims:(NSDictionary<NSString *,id> *) claims returningError:(NSError **) error;
+```
+
 ## See Also
 
-- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomassertionrequestbodyclaims(_:).md)
-- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomassertionrequestheaderclaims(_:).md)
-- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestheaderclaims(_:).md)
+### Instance Methods
+- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](./setcustomassertionrequestbodyclaims%28_%29.md)
+- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](./setcustomassertionrequestheaderclaims%28_%29.md)
+- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](./setcustomloginrequestheaderclaims%28_%29.md)
 
 
 ---

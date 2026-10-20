@@ -1,7 +1,8 @@
 # errSecParam
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 One or more parameters passed to the function are not valid.
 
@@ -18,6 +19,10 @@ One or more parameters passed to the function are not valid.
 
 ```swift
 var errSecParam: OSStatus { get }
+```
+
+```c
+errSecParam
 ```
 
 

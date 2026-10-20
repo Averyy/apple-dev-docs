@@ -1,9 +1,10 @@
 # PortalComponent.BoundaryMode.crossingOnly
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the boundary.
+Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) cross the boundary.
 
 **Availability**:
 - iOS 27.0+

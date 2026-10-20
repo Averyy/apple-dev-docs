@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate assigned when this object was created.
 
@@ -20,6 +21,10 @@ The delegate assigned when this object was created.
 var delegate: (any URLSessionDelegate)? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) id<NSURLSessionDelegate> delegate;
+```
+
 #### Discussion
 
 This delegate object is responsible for handling authentication challenges, for making caching decisions, and for handling other session-related events. The session object keeps a strong reference to this delegate until your app exits or explicitly invalidates the session. If you do not invalidate the session, your app leaks memory until it exits.
@@ -28,11 +33,12 @@ This delegate object is responsible for handling authentication challenges, for 
 
 ## See Also
 
-- [protocol URLSessionDelegate](urlsessiondelegate.md)
+### Working with a delegate
+- [protocol URLSessionDelegate](../urlsessiondelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle session-level events, like session life cycle changes.
-- [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
+- [protocol URLSessionTaskDelegate](../urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
-- [var delegateQueue: OperationQueue](urlsession/delegatequeue.md)
+- [var delegateQueue: OperationQueue](./delegatequeue.md)
   The operation queue provided when this object was created.
 
 

@@ -1,7 +1,8 @@
 # CMWaterSubmersionMeasurement.DepthState.submergedShallow
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is submerged, but less than 1 meter under water.
 
@@ -18,19 +19,24 @@ The device is submerged, but less than 1 meter under water.
 case submergedShallow
 ```
 
+```c
+CMWaterSubmersionDepthStateSubmergedShallow
+```
+
 ## See Also
 
-- [CMWaterSubmersionMeasurement.DepthState.notSubmerged](cmwatersubmersionmeasurement/depthstate/notsubmerged.md)
+### Depth states
+- [CMWaterSubmersionMeasurement.DepthState.notSubmerged](./notsubmerged.md)
   The device is not submerged in water.
-- [CMWaterSubmersionMeasurement.DepthState.submergedDeep](cmwatersubmersionmeasurement/depthstate/submergeddeep.md)
+- [CMWaterSubmersionMeasurement.DepthState.submergedDeep](./submergeddeep.md)
   The device is submerged at least 1 meter under water.
-- [CMWaterSubmersionMeasurement.DepthState.approachingMaxDepth](cmwatersubmersionmeasurement/depthstate/approachingmaxdepth.md)
+- [CMWaterSubmersionMeasurement.DepthState.approachingMaxDepth](./approachingmaxdepth.md)
   The device is approaching the maximum safe diving depth.
-- [CMWaterSubmersionMeasurement.DepthState.pastMaxDepth](cmwatersubmersionmeasurement/depthstate/pastmaxdepth.md)
+- [CMWaterSubmersionMeasurement.DepthState.pastMaxDepth](./pastmaxdepth.md)
   The device has exceeded the maximum safe diving depth.
-- [CMWaterSubmersionMeasurement.DepthState.sensorDepthError](cmwatersubmersionmeasurement/depthstate/sensordeptherror.md)
+- [CMWaterSubmersionMeasurement.DepthState.sensorDepthError](./sensordeptherror.md)
   An error with the depth sensor occurred.
-- [CMWaterSubmersionMeasurement.DepthState.unknown](cmwatersubmersionmeasurement/depthstate/unknown.md)
+- [CMWaterSubmersionMeasurement.DepthState.unknown](./unknown.md)
   The device’s depth state is unknown.
 
 

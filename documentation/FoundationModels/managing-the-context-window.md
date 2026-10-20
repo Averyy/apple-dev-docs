@@ -1,6 +1,7 @@
 # Managing the context window
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Optimize your app’s token usage when prompting a model with the Foundation Models framework.
 
@@ -12,21 +13,21 @@ The size of the context window matters, because every session interaction with t
 
 Understanding and managing the context window is essential for building reliable AI features in your app. This article covers several strategies for staying within a token budget, along with how to recover from exceeding the budget.
 
-#### Understand Tokens and the Context Window
+#### Understand tokens and the context window
 
 In Latin alphabet languages such as English, a token typically represents three to four characters. For multibyte languages such as Chinese, Japanese, Korean, and Vietnamese a token typically represents one character.
 
-The context window defines the maximum number of tokens the model can process in a [`LanguageModelSession`](languagemodelsession.md) instance. When you prompt the model using the same session, you consume more of the context window. Use [`tokenCount(for:)`](systemlanguagemodel/tokencount(for:).md) to understand how many tokens your prompt, instruction, or tool uses. You can also call [`contextSize`](systemlanguagemodel/contextsize.md) to retrieve the maximum size (in tokens) that the model supports.
+The context window defines the maximum number of tokens the model can process in a [`LanguageModelSession`](./languagemodelsession.md) instance. When you prompt the model using the same session, you consume more of the context window. Use [`tokenCount(for:)`](./systemlanguagemodel/tokencount%28for%29.md) to understand how many tokens your prompt, instruction, or tool uses. You can also call [`contextSize`](./systemlanguagemodel/contextsize.md) to retrieve the maximum size (in tokens) that the model supports.
 
 The following diagram shows the context window filling over a number of turns of a conversation. In a later turn, the context window is nearly full with the accumulated content from the previous turns, and eventually appears with a dashed red border to indicate that the session exceeded the content size:
 
-![A diagram showing how the context window fills over a number of turns of a conversation.](/images/com.apple.foundationmodels/managing-the-context-window-context-window@2x.png)
+![A diagram showing how the context window fills over a number of turns of a conversation.](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/managing-the-context-window-context-window@2x.png)
 
-After reaching the context size, the session can no longer process additional requests and throws an [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md) error. When this happens, trim the session history or create a new session to get a fresh context window. Use [`init(model:tools:transcript:)`](languagemodelsession/init(model:tools:transcript:).md) and include any state from the original session that’s necessary for the request, then retry:
+After reaching the context size, the session can no longer process additional requests and throws an [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) error. When this happens, trim the session history or create a new session to get a fresh context window. Use [`init(model:tools:transcript:)`](./languagemodelsession/init%28model,tools,transcript%29.md) and include any state from the original session that’s necessary for the request, then retry:
 
-![A diagram showing a new session with a fresh context window. The session](/images/com.apple.foundationmodels/managing-the-context-window-new-context-window@2x.png)
+![A diagram showing a new session with a fresh context window. The session](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/managing-the-context-window-new-context-window@2x.png)
 
-#### Profile Token Usage in Xcode
+#### Profile token usage in Xcode
 
 Before optimizing your token usage, it’s important to understand how your interaction with the model impacts token growth. The Foundation Models instrument in Xcode provides real-time visibility into token usage. To profile your app in Xcode:
 
@@ -35,7 +36,7 @@ Before optimizing your token usage, it’s important to understand how your inte
 3. Click the Record button and interact with your app’s AI features.
 4. Observe the token count as your app interacts with the model.
 
-![A screenshot of Instruments displaying the Foundation Models instrument track](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis@2x.png)
+![A screenshot of Instruments displaying the Foundation Models instrument track](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis@2x.png)
 
 The instrument shows you exactly how many tokens each interaction uses for your app’s input and output tokens the model generates. It provides a detailed breakdown of your session requests, prompts, responses, and tool calls to help you identify opportunities for optimization, like:
 
@@ -44,9 +45,9 @@ The instrument shows you exactly how many tokens each interaction uses for your 
 - Managing the amount of context your generable types and tools use.
 - Identifying areas of opportunity to break a task into separate sessions with a fresh context window.
 
-For more information about profiling, see [`Analyzing the runtime performance of your Foundation Models app`](analyzing-the-runtime-performance-of-your-foundation-models-app.md).
+For more information about profiling, see [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 
-#### Write Concise Prompts and Instructions
+#### Write concise prompts and instructions
 
 Prompts and instructions often consume the most tokens, especially in multiturn conversations. Shorter, clearer prompts not only save tokens but they often produce better results. Focus on clarity and brevity, along with:
 
@@ -56,14 +57,14 @@ Prompts and instructions often consume the most tokens, especially in multiturn 
 - Reduce prompts to no more than three paragraphs in length.
 - Eliminate indirect language, excessive formality, and ambiguous jargon.
 
-For more information on prompting a model, see [`Prompting an on-device foundation model`](prompting-an-on-device-foundation-model.md).
+For more information on prompting a model, see [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md).
 
-#### Ask the Model for Less Content
+#### Ask the model for less content
 
 If you notice the model produces long, detailed responses, try limiting how many tokens the model uses in its responses:
 
 - Specify the desired response length in your prompt, by starting the prompt with text like “In three sentences…,” or “List three reasons…”.
-- For [`Generable`](generable.md) arrays, add an `@Guide` macro that specifies a [`maximumCount(_:)`](generationguide/maximumcount(_:).md) to limit the number of items the model produces.
+- For [`Generable`](./generable.md) arrays, add an `@Guide` macro that specifies a [`maximumCount(_:)`](./generationguide/maximumcount%28_%29.md) to limit the number of items the model produces.
 
 ```swift
 @Generable 
@@ -74,9 +75,9 @@ struct GameSettings {
 }
 ```
 
-> ❗ **Important**: Only use [`maximumResponseTokens`](generationoptions/maximumresponsetokens.md) to prevent verbose responses. Limiting tokens can cause the model to generate incomplete or grammatically incorrect responses, like “A cat is a small.”
+> ❗ **Important**: Only use [`maximumResponseTokens`](./generationoptions/maximumresponsetokens.md) to prevent verbose responses. Limiting tokens can cause the model to generate incomplete or grammatically incorrect responses, like “A cat is a small.”
 
-#### Simplify Generable Types
+#### Simplify generable types
 
 Generable types consume tokens in multiple ways. The framework converts each type’s structure into a JSON schema and sends that to the model.
 
@@ -105,7 +106,7 @@ struct ContentAnalysis {
 
 Test Generable types without an `@Guide` macro first, then add guide annotations to the properties that need more clarity to help the model improve the response quality. If you have an unclear property name, it won’t convey the right intent to the model. Instead, consider renaming the property so it’s easier to interpret, or apply an `@Guide` macro to provide a description that the model uses when generating a response.
 
-#### Use Tool Calling Efficiently
+#### Use tool calling efficiently
 
 Like `@Generable` types, each tool call and its output consume tokens. The framework sends tool definitions — including names, descriptions, and parameters — to the model so it can decide when to call them. To use tools efficiently:
 
@@ -149,7 +150,7 @@ final class FindPointsOfInterestTool: Tool {
 
 For complex workflows that approach the context window limit, split tool usage across multiple sessions. When you need the model to generate tool arguments, consider asking the model to generate those in one session, execute the tool in your code, then have the model process the tool’s output in a new session.
 
-#### Split Large Tasks Across Multiple Sessions
+#### Split large tasks across multiple sessions
 
 When a task requires more than the size of the context window, divide it into smaller steps that each run in a new language model session. For example, to summarize a long article:
 
@@ -203,9 +204,9 @@ let prompt = """
 let finalSummary = try await finalSession.respond(to: prompt).content
 ```
 
-#### Handle Context Window Errors
+#### Handle context window errors
 
-Even with careful optimization, you may exceed the context window limit. This commonly occurs in open-ended conversations where people continue chatting until they reach the token limit. When your app exceeds the limit, the framework throws an [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md) error and the session stops responding. When this occurs, create a new session and evaluate your user experience so people understand what happened. You can catch the error in your code, like the following example shows:
+Even with careful optimization, you may exceed the context window limit. This commonly occurs in open-ended conversations where people continue chatting until they reach the token limit. When your app exceeds the limit, the framework throws an [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) error and the session stops responding. When this occurs, create a new session and evaluate your user experience so people understand what happened. You can catch the error in your code, like the following example shows:
 
 ```swift
 do {
@@ -235,19 +236,20 @@ The first transcript entry often contains important instructions and the last en
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+### Sessions and prompts
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+- [Updating prompts for new model versions](./updating-prompts-for-new-model-versions.md)
   Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [class LanguageModelSession](languagemodelsession.md)
+- [class LanguageModelSession](./languagemodelsession.md)
   An object that represents a session that interacts with a language model.
-- [struct Instructions](instructions.md)
+- [struct Instructions](./instructions.md)
   Details you provide that define the model’s intended behavior on prompts.
-- [struct Prompt](prompt.md)
+- [struct Prompt](./prompt.md)
   A prompt from a person to the model.
-- [struct GenerationOptions](generationoptions.md)
+- [struct GenerationOptions](./generationoptions.md)
   Options that control how the model generates its response to a prompt.
-- [struct ContextOptions](contextoptions.md)
+- [struct ContextOptions](./contextoptions.md)
   Options that configure details that should appear in the prompt.
 
 

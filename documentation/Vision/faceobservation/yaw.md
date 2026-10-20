@@ -1,7 +1,8 @@
 # yaw
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The yaw angle of a face.
 
@@ -26,15 +27,16 @@ This value indicates the rotational angle of the face around the y-axis.
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [FaceObservation.Landmarks2D](faceobservation/landmarks2d.md)
+- [FaceObservation.Landmarks2D](./landmarks2d.md)
   A collection of facial features that a request detects.
-- [var landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
+- [var landmarks: FaceObservation.Landmarks2D?](./landmarks.md)
   The facial features of the detected face.
-- [let pitch: Measurement<UnitAngle>](faceobservation/pitch.md)
+- [let pitch: Measurement<UnitAngle>](./pitch.md)
   The pitch angle of a face.
-- [let roll: Measurement<UnitAngle>](faceobservation/roll.md)
+- [let roll: Measurement<UnitAngle>](./roll.md)
   The roll angle of a face.
 
 

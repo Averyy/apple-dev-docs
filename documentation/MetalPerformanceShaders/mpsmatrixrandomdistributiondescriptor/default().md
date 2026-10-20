@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func `default`() -> MPSMatrixRandomDistributionDescriptor
+```
+
+```objc
++ (MPSMatrixRandomDistributionDescriptor *) defaultDistributionDescriptor;
 ```
 
 

@@ -1,7 +1,8 @@
 # isEncrypted
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the message encoder encrypted the message.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates if the message encoder encrypted the message.
 var isEncrypted: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL isEncrypted;
+```
+
 ## See Also
 
-- [init(rawData: Data, isSigned: Bool, isEncrypted: Bool)](meencodedoutgoingmessage/init(rawdata:issigned:isencrypted:).md)
+### Encoding Outgoing Messages
+- [init(rawData: Data, isSigned: Bool, isEncrypted: Bool)](./init%28rawdata,issigned,isencrypted%29.md)
   Creates an object that contains the outgoing message’s encoded data, and indicates if the encoder encrypted or signed the message.
-- [var isSigned: Bool](meencodedoutgoingmessage/issigned.md)
+- [var isSigned: Bool](./issigned.md)
   A Boolean value that indicates if the message encoder signed the message.
-- [var rawData: Data](meencodedoutgoingmessage/rawdata.md)
+- [var rawData: Data](./rawdata.md)
   The encrypted, signed, or both encrypted and signed data for the outgoing message.
 
 

@@ -1,16 +1,19 @@
 # applicationResponsivenessMetrics
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metrics indicating an app’s responsiveness to user interaction for the reporting period.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](../metricresult.md), and read the [`HangTimeMetric`](../hangtimemetric.md) case instead.
 
 ## Declaration
 
@@ -18,11 +21,16 @@ The metrics indicating an app’s responsiveness to user interaction for the rep
 var applicationResponsivenessMetrics: MXAppResponsivenessMetric? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) MXAppResponsivenessMetric * applicationResponsivenessMetrics;
+```
+
 ## See Also
 
-- [var applicationLaunchMetrics: MXAppLaunchMetric?](mxmetricpayload/applicationlaunchmetrics.md)
+### Reading responsiveness metrics
+- [var applicationLaunchMetrics: MXAppLaunchMetric?](./applicationlaunchmetrics.md)
   The app launch and resume metrics for the reporting period.
-- [var animationMetrics: MXAnimationMetric?](mxmetricpayload/animationmetrics.md)
+- [var animationMetrics: MXAnimationMetric?](./animationmetrics.md)
   The metrics for the responsiveness of app animations for the reporting period.
 
 

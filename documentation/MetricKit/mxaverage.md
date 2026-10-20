@@ -1,16 +1,19 @@
 # MXAverage
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for an average.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`AverageStatistics`](./averagestatistics.md) instead.
 
 ## Declaration
 
@@ -18,59 +21,64 @@ A unit of measure for an average.
 class MXAverage<UnitType> where UnitType : Unit
 ```
 
+```objc
+@interface MXAverage : NSObject
+```
+
 ## Topics
 
 ### Reading the data
-- [var averageMeasurement: Measurement<UnitType>](mxaverage/averagemeasurement.md)
+- [var averageMeasurement: Measurement<UnitType>](./mxaverage/averagemeasurement.md)
   The value of the average.
-- [var sampleCount: Int](mxaverage/samplecount.md)
+- [var sampleCount: Int](./mxaverage/samplecount.md)
   The number of samples used to calculate the average.
-- [var standardDeviation: Double](mxaverage/standarddeviation.md)
+- [var standardDeviation: Double](./mxaverage/standarddeviation.md)
   The standard deviation of the distribution of values used to calculate the average.
 ### Initializers
-- [init?(coder: NSCoder)](mxaverage/init(coder:).md)
+- [init?(coder: NSCoder)](./mxaverage/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXCallStackTree](mxcallstacktree.md)
+### Supporting types
+- [class MXCallStackTree](./mxcallstacktree.md)
   An object representing the call stack for an exception.
-- [class MXMetaData](mxmetadata.md)
+- [class MXMetaData](./mxmetadata.md)
   An object containing system-level information about the device.
-- [class MXHistogram](mxhistogram.md)
+- [class MXHistogram](./mxhistogram.md)
   An object representing a histogram of data values of the same type of unit.
-- [class MXHistogramBucket](mxhistogrambucket.md)
+- [class MXHistogramBucket](./mxhistogrambucket.md)
   An object representing a bucket of data in a histogram.
-- [class MXDiagnostic](mxdiagnostic.md)
+- [class MXDiagnostic](./mxdiagnostic.md)
   An abstract data class for a diagnostic.
-- [class MXMetric](mxmetric.md)
+- [class MXMetric](./mxmetric.md)
   An abstract data class for a metric.
-- [struct MXError](mxerror.md)
+- [struct MXError](./mxerror.md)
   Error domain for error handling of app metrics.
-- [MXError.Code](mxerror/code.md)
+- [MXError.Code](./mxerror/code.md)
   Error codes for error values from app metrics.
-- [let MXErrorDomain: String](mxerrordomain.md)
+- [let MXErrorDomain: String](./mxerrordomain.md)
   Error domain for error values from app metrics.
-- [class MXCrashDiagnosticObjectiveCExceptionReason](mxcrashdiagnosticobjectivecexceptionreason.md)
+- [class MXCrashDiagnosticObjectiveCExceptionReason](./mxcrashdiagnosticobjectivecexceptionreason.md)
   An object that represents the exception reason for an uncaught ObjC exception.
-- [class MXSignpostRecord](mxsignpostrecord.md)
+- [class MXSignpostRecord](./mxsignpostrecord.md)
   An object representing the record for a signpost interval or event.
-- [class MXUnitAveragePixelLuminance](mxunitaveragepixelluminance.md)
+- [class MXUnitAveragePixelLuminance](./mxunitaveragepixelluminance.md)
   A unit of measure of pixel luminosity on an OLED display.
-- [class MXUnitSignalBars](mxunitsignalbars.md)
+- [class MXUnitSignalBars](./mxunitsignalbars.md)
   A unit of measure for the number of bars of cellular network connectivity.
 
 

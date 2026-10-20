@@ -1,7 +1,8 @@
 # init(length:vectors:vectorBytes:dataType:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 convenience init(length: Int, vectors: Int, vectorBytes: Int, dataType: MPSDataType)
 ```
 
+```objc
++ (instancetype) vectorDescriptorWithLength:(NSUInteger) length vectors:(NSUInteger) vectors vectorBytes:(NSUInteger) vectorBytes dataType:(MPSDataType) dataType;
+```
+
 ## See Also
 
-- [convenience init(length: Int, dataType: MPSDataType)](mpsvectordescriptor/init(length:datatype:).md)
+### Initializers
+- [convenience init(length: Int, dataType: MPSDataType)](./init%28length,datatype%29.md)
 
 
 ---

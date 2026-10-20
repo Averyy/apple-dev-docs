@@ -1,21 +1,22 @@
 # AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment.Data](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment.Data](./appstoreversionexperimenttreatment-data.dictionary/data-data.dictionary.md)
   The request body you use to create an App Store version experiment treatment localization.
 
 ## Properties

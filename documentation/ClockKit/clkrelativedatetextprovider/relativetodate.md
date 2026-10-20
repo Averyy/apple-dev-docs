@@ -1,12 +1,13 @@
 # relativeToDate
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end date that the text provider uses when calculating a fixed, relative date.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The end date that the text provider uses when calculating a fixed, relative date
 var relativeToDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSDate * relativeToDate;
+```
+
 ## See Also
 
-- [var date: Date](clkrelativedatetextprovider/date.md)
+### Getting the Date Information
+- [var date: Date](./date.md)
   The target date to use for calculations.
-- [var relativeDateStyle: CLKRelativeDateStyle](clkrelativedatetextprovider/relativedatestyle.md)
+- [var relativeDateStyle: CLKRelativeDateStyle](./relativedatestyle.md)
   The formatting style to use for the relative time value.
-- [var calendarUnits: NSCalendar.Unit](clkrelativedatetextprovider/calendarunits.md)
+- [var calendarUnits: NSCalendar.Unit](./calendarunits.md)
   The calendar units to include in the formatted string.
 
 

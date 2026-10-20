@@ -1,7 +1,8 @@
 # init(captureDevice:cameraPosition:orientation:cameraIntrinsics:referenceDimensions:)
 
 **Framework**: DockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes the camera in use for tracking.
 

@@ -1,7 +1,8 @@
 # UIScrollView.ContentInsetAdjustmentBehavior
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating how safe area insets are added to the adjusted content inset.
 
@@ -18,39 +19,44 @@ Constants indicating how safe area insets are added to the adjusted content inse
 enum ContentInsetAdjustmentBehavior
 ```
 
+```c
+enum UIScrollViewContentInsetAdjustmentBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIScrollView.ContentInsetAdjustmentBehavior.always](uiscrollview/contentinsetadjustmentbehavior-swift.enum/always.md)
+- [UIScrollView.ContentInsetAdjustmentBehavior.always](./contentinsetadjustmentbehavior-swift.enum/always.md)
   Always include the safe area insets in the content adjustment.
-- [UIScrollView.ContentInsetAdjustmentBehavior.automatic](uiscrollview/contentinsetadjustmentbehavior-swift.enum/automatic.md)
+- [UIScrollView.ContentInsetAdjustmentBehavior.automatic](./contentinsetadjustmentbehavior-swift.enum/automatic.md)
   Automatically adjust the scroll view insets.
-- [UIScrollView.ContentInsetAdjustmentBehavior.never](uiscrollview/contentinsetadjustmentbehavior-swift.enum/never.md)
+- [UIScrollView.ContentInsetAdjustmentBehavior.never](./contentinsetadjustmentbehavior-swift.enum/never.md)
   Do not adjust the scroll view insets.
-- [UIScrollView.ContentInsetAdjustmentBehavior.scrollableAxes](uiscrollview/contentinsetadjustmentbehavior-swift.enum/scrollableaxes.md)
+- [UIScrollView.ContentInsetAdjustmentBehavior.scrollableAxes](./contentinsetadjustmentbehavior-swift.enum/scrollableaxes.md)
   Adjust the insets only in the scrollable directions.
 ### Initializers
-- [init?(rawValue: Int)](uiscrollview/contentinsetadjustmentbehavior-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./contentinsetadjustmentbehavior-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var adjustedContentInset: UIEdgeInsets](uiscrollview/adjustedcontentinset.md)
+### Managing the content inset behavior
+- [var adjustedContentInset: UIEdgeInsets](./adjustedcontentinset.md)
   The insets derived from the content insets and the safe area of the scroll view.
-- [var contentInset: UIEdgeInsets](uiscrollview/contentinset.md)
+- [var contentInset: UIEdgeInsets](./contentinset.md)
   The custom distance that the content view is inset from the safe area or scroll view edges.
-- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](uiscrollview/contentinsetadjustmentbehavior-swift.property.md)
+- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](./contentinsetadjustmentbehavior-swift.property.md)
   The behavior for determining the adjusted content offsets.
-- [func adjustedContentInsetDidChange()](uiscrollview/adjustedcontentinsetdidchange.md)
+- [func adjustedContentInsetDidChange()](./adjustedcontentinsetdidchange%28%29.md)
   Notifies the scroll view when the adjusted content insets of the scroll view change.
 
 

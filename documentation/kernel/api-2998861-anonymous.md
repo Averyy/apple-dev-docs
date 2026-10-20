@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDUsage_CC_Autofocus](2998861-anonymous/khidusage_cc_autofocus.md)
-- [kHIDUsage_CC_Shutter](2998861-anonymous/khidusage_cc_shutter.md)
-- [kHIDUsage_CC_Undefined](2998861-anonymous/khidusage_cc_undefined.md)
+- [kHIDUsage_CC_Autofocus](./api-2998861-anonymous/khidusage_cc_autofocus.md)
+- [kHIDUsage_CC_Shutter](./api-2998861-anonymous/khidusage_cc_shutter.md)
+- [kHIDUsage_CC_Undefined](./api-2998861-anonymous/khidusage_cc_undefined.md)
 
 
 ---

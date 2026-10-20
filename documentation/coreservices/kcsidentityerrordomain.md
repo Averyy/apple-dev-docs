@@ -1,7 +1,8 @@
 # kCSIdentityErrorDomain
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 let kCSIdentityErrorDomain: CFString!
+```
+
+```c
+const CFStringRef kCSIdentityErrorDomain;
 ```
 
 

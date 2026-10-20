@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.chatBubble(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A speech bubble with a tail pointing to a specific location.
 

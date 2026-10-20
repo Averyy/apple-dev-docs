@@ -1,7 +1,8 @@
 # kCMTimebaseNotificationKey_EventTime
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A notification that a timebase posts after a discontinuous time jump.
 
@@ -18,6 +19,10 @@ A notification that a timebase posts after a discontinuous time jump.
 
 ```swift
 let kCMTimebaseNotificationKey_EventTime: CFString
+```
+
+```c
+extern CFStringRef const kCMTimebaseNotificationKey_EventTime;
 ```
 
 

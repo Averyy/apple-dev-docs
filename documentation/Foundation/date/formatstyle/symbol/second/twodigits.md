@@ -1,7 +1,8 @@
 # twoDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The custom format style that conveys a two-digit numeric second, zero-padded if necessary.
 
@@ -26,7 +27,8 @@ This style represents the seconds field like `01` or `18`.
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.Second](date/formatstyle/symbol/second/defaultdigits.md)
+### Modifying a Second
+- [static var defaultDigits: Date.FormatStyle.Symbol.Second](./defaultdigits.md)
   The custom format style that conveys the minimum number of digits that represents the numeric second.
 
 

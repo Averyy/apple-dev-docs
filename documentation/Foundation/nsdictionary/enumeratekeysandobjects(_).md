@@ -1,7 +1,8 @@
 # enumerateKeysAndObjects(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a given block object to the entries of the dictionary.
 
@@ -20,9 +21,13 @@ Applies a given block object to the entries of the dictionary.
 func enumerateKeysAndObjects(_ block: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateKeysAndObjectsUsingBlock:(void (^)(KeyType key, ObjectType obj, BOOL *stop)) block;
+```
+
 #### Discussion
 
-If the block sets `*stop` to [`true`](https://developer.apple.com/documentation/swift/true), the enumeration stops.
+If the block sets `*stop` to [`true`](../../Swift/true.md), the enumeration stops.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ If the block sets `*stop` to [`true`](https://developer.apple.com/documentation/
 
 ## See Also
 
-- [func keyEnumerator() -> NSEnumerator](nsdictionary/keyenumerator.md)
+### Enumerating Dictionaries
+- [func keyEnumerator() -> NSEnumerator](./keyenumerator%28%29.md)
   Provides an enumerator to access the keys in the dictionary.
-- [func objectEnumerator() -> NSEnumerator](nsdictionary/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each value in the dictionary.
-- [func enumerateKeysAndObjects(options: NSEnumerationOptions, using: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdictionary/enumeratekeysandobjects(options:using:).md)
+- [func enumerateKeysAndObjects(options: NSEnumerationOptions, using: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratekeysandobjects%28options,using%29.md)
   Applies a given block object to the entries of the dictionary, with options specifying how the enumeration is performed.
-- [func makeIterator() -> NSDictionary.Iterator](nsdictionary/makeiterator.md)
+- [func makeIterator() -> NSDictionary.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
 
 

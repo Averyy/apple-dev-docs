@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that describes the task represented by the progress view.
 
@@ -28,7 +29,8 @@ If the progress view is defined using a `Progress` instance, then this label is 
 
 ## See Also
 
-- [ProgressViewStyleConfiguration.Label](progressviewstyleconfiguration/label-swift.struct.md)
+### Configuring the label
+- [ProgressViewStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label describing the task represented by the progress view.
 
 

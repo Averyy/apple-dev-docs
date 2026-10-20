@@ -1,12 +1,13 @@
 # accessibilityPerformDecrement()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decrements the switch’s value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ Decrements the switch’s value.
 optional func accessibilityPerformDecrement() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformDecrement;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully triggered; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
+[`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
 #### Discussion
 
-This method must post an [`valueChanged`](nsaccessibility-swift.struct/notification/valuechanged.md) notification after changing the switch’s value.
+This method must post an [`valueChanged`](../nsaccessibility-swift.struct/notification/valuechanged.md) notification after changing the switch’s value.
 
 ## See Also
 
-- [func accessibilityPerformIncrement() -> Bool](nsaccessibilityswitch/accessibilityperformincrement.md)
+### Supporting Accessibility
+- [func accessibilityPerformIncrement() -> Bool](./accessibilityperformincrement%28%29.md)
   Increments the switch’s value.
-- [func accessibilityValue() -> String?](nsaccessibilityswitch/accessibilityvalue.md)
+- [func accessibilityValue() -> String?](./accessibilityvalue%28%29.md)
   Returns the switch’s value.
 
 

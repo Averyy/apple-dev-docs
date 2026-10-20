@@ -1,10 +1,11 @@
 # NSRulerView.UnitName
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,31 +13,36 @@
 struct UnitName
 ```
 
+```c
+typedef NSString * NSRulerViewUnitName;
+```
+
 ## Topics
 
 ### Ruler Units
-- [static let centimeters: NSRulerView.UnitName](nsrulerview/unitname/centimeters.md)
-- [static let inches: NSRulerView.UnitName](nsrulerview/unitname/inches.md)
-- [static let picas: NSRulerView.UnitName](nsrulerview/unitname/picas.md)
-- [static let points: NSRulerView.UnitName](nsrulerview/unitname/points.md)
+- [static let centimeters: NSRulerView.UnitName](./unitname/centimeters.md)
+- [static let inches: NSRulerView.UnitName](./unitname/inches.md)
+- [static let picas: NSRulerView.UnitName](./unitname/picas.md)
+- [static let points: NSRulerView.UnitName](./unitname/points.md)
 ### Initializers
-- [init(String)](nsrulerview/unitname/init(_:).md)
-- [init(rawValue: String)](nsrulerview/unitname/init(rawvalue:).md)
+- [init(String)](./unitname/init%28_%29.md)
+- [init(rawValue: String)](./unitname/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func registerUnit(withName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])](nsrulerview/registerunit(withname:abbreviation:unittopointsconversionfactor:stepupcycle:stepdowncycle:).md)
+### Altering measurement units
+- [class func registerUnit(withName: NSRulerView.UnitName, abbreviation: String, unitToPointsConversionFactor: CGFloat, stepUpCycle: [NSNumber], stepDownCycle: [NSNumber])](./registerunit%28withname,abbreviation,unittopointsconversionfactor,stepupcycle,stepdowncycle%29.md)
   Registers a new unit of measurement with the NSRulerView class, making it available to all instances of NSRulerView.
-- [var measurementUnits: NSRulerView.UnitName](nsrulerview/measurementunits.md)
+- [var measurementUnits: NSRulerView.UnitName](./measurementunits.md)
   The measurement units used by the ruler to `unitName`.
 
 

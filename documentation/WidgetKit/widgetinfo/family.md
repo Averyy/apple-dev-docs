@@ -1,7 +1,8 @@
 # family
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the widget: small, medium, or large.
 
@@ -21,9 +22,10 @@ let family: WidgetFamily
 
 ## See Also
 
-- [let kind: String](widgetinfo/kind.md)
+### Getting Configured Widget Information
+- [let kind: String](./kind.md)
   The string specified during creation of the widget’s configuration.
-- [let configuration: INIntent?](widgetinfo/configuration.md)
+- [let configuration: INIntent?](./configuration.md)
   A SiriKit intent that contains user-edited values.
 
 

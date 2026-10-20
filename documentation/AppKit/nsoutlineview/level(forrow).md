@@ -1,17 +1,22 @@
 # level(forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the indentation level for a given row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func level(forRow row: Int) -> Int
+```
+
+```objc
+- (NSInteger) levelForRow:(NSInteger) row;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ The levels are zero-based—that is, the first level of displayed items is level
 
 ## See Also
 
-- [func level(forItem: Any?) -> Int](nsoutlineview/level(foritem:).md)
+### Working with Indentation
+- [func level(forItem: Any?) -> Int](./level%28foritem%29.md)
   Returns the indentation level for a given item.
-- [var indentationPerLevel: CGFloat](nsoutlineview/indentationperlevel.md)
+- [var indentationPerLevel: CGFloat](./indentationperlevel.md)
   The per-level indentation, measured in points.
-- [var indentationMarkerFollowsCell: Bool](nsoutlineview/indentationmarkerfollowscell.md)
+- [var indentationMarkerFollowsCell: Bool](./indentationmarkerfollowscell.md)
   A Boolean value indicating whether the indentation marker symbol displayed in the outline column should be indented along with the cell contents.
 
 

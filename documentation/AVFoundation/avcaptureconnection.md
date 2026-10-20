@@ -1,7 +1,8 @@
 # AVCaptureConnection
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a connection from a capture input to a capture output.
 
@@ -19,136 +20,141 @@ An object that represents a connection from a capture input to a capture output.
 class AVCaptureConnection
 ```
 
+```objc
+@interface AVCaptureConnection : NSObject
+```
+
 #### Overview
 
-Capture inputs have one or more input ports (instances of [`AVCaptureInput.Port`](avcaptureinput/port.md)). Capture outputs can accept data from one or more sources (for example, an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) object accepts both video and audio data).
+Capture inputs have one or more input ports (instances of [`AVCaptureInput.Port`](./avcaptureinput/port.md)). Capture outputs can accept data from one or more sources (for example, an [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md) object accepts both video and audio data).
 
-You can add an `AVCaptureConnection` instance to a session using the [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method only if the [`canAddConnection(_:)`](avcapturesession/canaddconnection(_:).md) method returns [`true`](https://developer.apple.com/documentation/swift/true). When using the [`addInput(_:)`](avcapturesession/addinput(_:).md) or [`addOutput(_:)`](avcapturesession/addoutput(_:).md) method, the session forms connections automatically between all compatible inputs and outputs. You only need to add connections manually when adding an input or output with no connections. You can also use connections to enable or disable the flow of data from a given input or to a given output.
+You can add an `AVCaptureConnection` instance to a session using the [`addConnection(_:)`](./avcapturesession/addconnection%28_%29.md) method only if the [`canAddConnection(_:)`](./avcapturesession/canaddconnection%28_%29.md) method returns [`true`](../Swift/true.md). When using the [`addInput(_:)`](./avcapturesession/addinput%28_%29.md) or [`addOutput(_:)`](./avcapturesession/addoutput%28_%29.md) method, the session forms connections automatically between all compatible inputs and outputs. You only need to add connections manually when adding an input or output with no connections. You can also use connections to enable or disable the flow of data from a given input or to a given output.
 
 ## Topics
 
 ### Creating a connection
-- [init(inputPorts: [AVCaptureInput.Port], output: AVCaptureOutput)](avcaptureconnection/init(inputports:output:).md)
+- [init(inputPorts: [AVCaptureInput.Port], output: AVCaptureOutput)](./avcaptureconnection/init%28inputports,output%29.md)
   Creates a capture connection that represents a connection between multiple input ports and an output.
-- [init(inputPort: AVCaptureInput.Port, videoPreviewLayer: AVCaptureVideoPreviewLayer)](avcaptureconnection/init(inputport:videopreviewlayer:).md)
+- [init(inputPort: AVCaptureInput.Port, videoPreviewLayer: AVCaptureVideoPreviewLayer)](./avcaptureconnection/init%28inputport,videopreviewlayer%29.md)
   Creates a capture connection that represents a connection between an input port and a video preview layer.
 ### Enabling a connection
-- [var isEnabled: Bool](avcaptureconnection/isenabled.md)
+- [var isEnabled: Bool](./avcaptureconnection/isenabled.md)
   Turns the connection on and off.
-- [var isActive: Bool](avcaptureconnection/isactive.md)
+- [var isActive: Bool](./avcaptureconnection/isactive.md)
   Indicates whether the connection is active.
 ### Inspecting a connection
-- [var inputPorts: [AVCaptureInput.Port]](avcaptureconnection/inputports.md)
+- [var inputPorts: [AVCaptureInput.Port]](./avcaptureconnection/inputports.md)
   An array of the connection’s input ports.
-- [var output: AVCaptureOutput?](avcaptureconnection/output.md)
+- [var output: AVCaptureOutput?](./avcaptureconnection/output.md)
   The connection’s output port, if applicable.
-- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](avcaptureconnection/videopreviewlayer.md)
+- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](./avcaptureconnection/videopreviewlayer.md)
   The video preview layer associated with the connection.
-- [var audioChannels: [AVCaptureAudioChannel]](avcaptureconnection/audiochannels.md)
+- [var audioChannels: [AVCaptureAudioChannel]](./avcaptureconnection/audiochannels.md)
   An array of audio channels that the connection provides.
 ### Rotating a video
-- [func isVideoRotationAngleSupported(CGFloat) -> Bool](avcaptureconnection/isvideorotationanglesupported(_:).md)
+- [func isVideoRotationAngleSupported(CGFloat) -> Bool](./avcaptureconnection/isvideorotationanglesupported%28_%29.md)
   Returns a Boolean value that indicates whether the connection supports a rotation angle.
-- [var videoRotationAngle: CGFloat](avcaptureconnection/videorotationangle.md)
+- [var videoRotationAngle: CGFloat](./avcaptureconnection/videorotationangle.md)
   A rotation angle the connection applies to the video flowing through it.
 ### Mirroring a video
-- [var isVideoMirroringSupported: Bool](avcaptureconnection/isvideomirroringsupported.md)
+- [var isVideoMirroringSupported: Bool](./avcaptureconnection/isvideomirroringsupported.md)
   A Boolean value that indicates whether the connection supports video mirroring.
-- [var isVideoMirrored: Bool](avcaptureconnection/isvideomirrored.md)
+- [var isVideoMirrored: Bool](./avcaptureconnection/isvideomirrored.md)
   A Boolean value that indicates whether the connection horizontally flips the video flowing through it.
-- [var automaticallyAdjustsVideoMirroring: Bool](avcaptureconnection/automaticallyadjustsvideomirroring.md)
+- [var automaticallyAdjustsVideoMirroring: Bool](./avcaptureconnection/automaticallyadjustsvideomirroring.md)
   A Boolean value that indicates whether you can enable mirroring based on a session’s configuration.
 ### Stabilizing video
-- [var isVideoStabilizationSupported: Bool](avcaptureconnection/isvideostabilizationsupported.md)
+- [var isVideoStabilizationSupported: Bool](./avcaptureconnection/isvideostabilizationsupported.md)
   A Boolean value that indicates whether this connection supports video stabilization.
-- [var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode](avcaptureconnection/activevideostabilizationmode.md)
+- [var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode](./avcaptureconnection/activevideostabilizationmode.md)
   The connection’s current stabilization mode.
-- [var preferredVideoStabilizationMode: AVCaptureVideoStabilizationMode](avcaptureconnection/preferredvideostabilizationmode.md)
+- [var preferredVideoStabilizationMode: AVCaptureVideoStabilizationMode](./avcaptureconnection/preferredvideostabilizationmode.md)
   The stabilization mode that’s the most appropriate for a video connection.
 ### Delivering camera calibration settings
-- [var isCameraIntrinsicMatrixDeliverySupported: Bool](avcaptureconnection/iscameraintrinsicmatrixdeliverysupported.md)
+- [var isCameraIntrinsicMatrixDeliverySupported: Bool](./avcaptureconnection/iscameraintrinsicmatrixdeliverysupported.md)
   A Boolean value that indicates whether the capture connection currently supports delivering camera intrinsics information.
-- [var isCameraIntrinsicMatrixDeliveryEnabled: Bool](avcaptureconnection/iscameraintrinsicmatrixdeliveryenabled.md)
+- [var isCameraIntrinsicMatrixDeliveryEnabled: Bool](./avcaptureconnection/iscameraintrinsicmatrixdeliveryenabled.md)
   A Boolean value that indicates whether the connection can configure the capture pipeline to deliver camera intrinsics information.
 ### Configuring a video’s frame rate
-- [var isVideoMinFrameDurationSupported: Bool](avcaptureconnection/isvideominframedurationsupported.md)
+- [var isVideoMinFrameDurationSupported: Bool](./avcaptureconnection/isvideominframedurationsupported.md)
   A Boolean value that indicates whether the connection supports a minimum frame duration.
-- [var videoMinFrameDuration: CMTime](avcaptureconnection/videominframeduration.md)
+- [var videoMinFrameDuration: CMTime](./avcaptureconnection/videominframeduration.md)
   The smallest time interval the connection can apply between consecutive video frames.
-- [var isVideoMaxFrameDurationSupported: Bool](avcaptureconnection/isvideomaxframedurationsupported.md)
+- [var isVideoMaxFrameDurationSupported: Bool](./avcaptureconnection/isvideomaxframedurationsupported.md)
   A Boolean value that indicates whether the connection supports a maximum frame duration.
-- [var videoMaxFrameDuration: CMTime](avcaptureconnection/videomaxframeduration.md)
+- [var videoMaxFrameDuration: CMTime](./avcaptureconnection/videomaxframeduration.md)
   The largest time interval the connection can apply between consecutive video frames.
 ### Scaling a video
-- [var videoMaxScaleAndCropFactor: CGFloat](avcaptureconnection/videomaxscaleandcropfactor.md)
+- [var videoMaxScaleAndCropFactor: CGFloat](./avcaptureconnection/videomaxscaleandcropfactor.md)
   The connection’s maximum video scale and crop factor.
-- [var videoScaleAndCropFactor: CGFloat](avcaptureconnection/videoscaleandcropfactor.md)
+- [var videoScaleAndCropFactor: CGFloat](./avcaptureconnection/videoscaleandcropfactor.md)
   The current scale and crop factor the video output uses.
 ### Interlacing video
-- [var isVideoFieldModeSupported: Bool](avcaptureconnection/isvideofieldmodesupported.md)
+- [var isVideoFieldModeSupported: Bool](./avcaptureconnection/isvideofieldmodesupported.md)
   A Boolean value that indicates whether the connection supports setting a video field mode.
-- [var videoFieldMode: AVVideoFieldMode](avcaptureconnection/videofieldmode.md)
+- [var videoFieldMode: AVVideoFieldMode](./avcaptureconnection/videofieldmode.md)
   A setting that tells the connection how to interlace video flowing through it.
-- [enum AVVideoFieldMode](avvideofieldmode.md)
+- [enum AVVideoFieldMode](./avvideofieldmode.md)
   Constants that indicate which interlacing modes the connection applies to video flowing through it.
 ### Deprecated
-- [var isVideoStabilizationEnabled: Bool](avcaptureconnection/isvideostabilizationenabled.md)
+- [var isVideoStabilizationEnabled: Bool](./avcaptureconnection/isvideostabilizationenabled.md)
   A Boolean value that indicates whether video stabilization is active for the connection.
-- [var enablesVideoStabilizationWhenAvailable: Bool](avcaptureconnection/enablesvideostabilizationwhenavailable.md)
+- [var enablesVideoStabilizationWhenAvailable: Bool](./avcaptureconnection/enablesvideostabilizationwhenavailable.md)
   A Boolean value that indicates whether the system enables video stabilization when it’s available.
-- [var isVideoOrientationSupported: Bool](avcaptureconnection/isvideoorientationsupported.md)
+- [var isVideoOrientationSupported: Bool](./avcaptureconnection/isvideoorientationsupported.md)
   A Boolean value that indicates whether the connection supports changing the orientation of the video.
-- [var videoOrientation: AVCaptureVideoOrientation](avcaptureconnection/videoorientation.md)
+- [var videoOrientation: AVCaptureVideoOrientation](./avcaptureconnection/videoorientation.md)
   An orientation that tells the connection how to rotate a video flowing through it.
-- [enum AVCaptureVideoOrientation](avcapturevideoorientation.md)
+- [enum AVCaptureVideoOrientation](./avcapturevideoorientation.md)
   Constants indicating video orientation.
 ### Instance Properties
-- [var automaticallyEnablesLowLightVideoNoiseReduction: Bool](avcaptureconnection/automaticallyenableslowlightvideonoisereduction.md)
+- [var automaticallyEnablesLowLightVideoNoiseReduction: Bool](./avcaptureconnection/automaticallyenableslowlightvideonoisereduction.md)
   Indicates whether the connection should automatically enable low light video noise reduction when the connection supports it.
-- [var isLowLightVideoNoiseReductionEnabled: Bool](avcaptureconnection/islowlightvideonoisereductionenabled.md)
+- [var isLowLightVideoNoiseReductionEnabled: Bool](./avcaptureconnection/islowlightvideonoisereductionenabled.md)
   Indicates whether low light video noise reduction is enabled for the current session.
-- [var isLowLightVideoNoiseReductionSupported: Bool](avcaptureconnection/islowlightvideonoisereductionsupported.md)
+- [var isLowLightVideoNoiseReductionSupported: Bool](./avcaptureconnection/islowlightvideonoisereductionsupported.md)
   Indicates whether the connection supports low light video noise reduction.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+### Capture sessions
+- [Setting up a capture session](./setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
-- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
-- [AVCam: Building a camera app](avcam-building-a-camera-app.md)
+- [AVCam: Building a camera app](./avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [Building a responsive camera app that launches quickly](building-a-responsive-camera-app-that-launches-quickly.md)
+- [Building a responsive camera app that launches quickly](./building-a-responsive-camera-app-that-launches-quickly.md)
   Show a camera preview sooner by deferring capture output setup and postponing noncritical interface elements.
-- [Capturing Cinematic video](capturing-cinematic-video.md)
+- [Capturing Cinematic video](./capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
-- [Supporting Center Stage front camera in your iOS app](supporting-center-stage-front-camera-in-your-ios-app.md)
+- [Supporting Center Stage front camera in your iOS app](./supporting-center-stage-front-camera-in-your-ios-app.md)
   Enable Center Stage for photos and videos on the iPhone front camera.
-- [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
+- [AVMultiCamPiP: Capturing from Multiple Cameras](./avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](./avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
-- [Registering a camera capture accessory on iPhone Duo](registering-a-camera-capture-accessory-on-iphone-duo.md)
+- [Registering a camera capture accessory on iPhone Duo](./registering-a-camera-capture-accessory-on-iphone-duo.md)
   Provide content to the person in front of the camera by pairing it with your capture interface.
-- [class AVCaptureSession](avcapturesession.md)
+- [class AVCaptureSession](./avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
-- [class AVCaptureMultiCamSession](avcapturemulticamsession.md)
+- [class AVCaptureMultiCamSession](./avcapturemulticamsession.md)
   A capture session that supports simultaneous capture from multiple inputs of the same media type.
-- [class AVCaptureInput](avcaptureinput.md)
+- [class AVCaptureInput](./avcaptureinput.md)
   An abstract superclass for objects that provide input data to a capture session.
-- [class AVCaptureOutput](avcaptureoutput.md)
+- [class AVCaptureOutput](./avcaptureoutput.md)
   An abstract superclass for objects that provide media output destinations for a capture session.
 
 

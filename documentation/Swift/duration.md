@@ -1,7 +1,8 @@
 # Duration
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of high precision time.
 
@@ -38,96 +39,97 @@ Typical construction of `Duration` values should be created via the static metho
 ## Topics
 
 ### Creating a duration
-- [init(secondsComponent: Int64, attosecondsComponent: Int64)](duration/init(secondscomponent:attosecondscomponent:).md)
+- [init(secondsComponent: Int64, attosecondsComponent: Int64)](./duration/init%28secondscomponent,attosecondscomponent%29.md)
   Construct a `Duration` by adding attoseconds to a seconds value.
-- [static func seconds<T>(T) -> Duration](duration/seconds(_:)-311cx.md)
+- [static func seconds<T>(T) -> Duration](./duration/seconds%28_%29-311cx.md)
   Construct a `Duration` given a number of seconds represented as a `BinaryInteger`.
-- [static func seconds(Double) -> Duration](duration/seconds(_:)-5ifzr.md)
+- [static func seconds(Double) -> Duration](./duration/seconds%28_%29-5ifzr.md)
   Construct a `Duration` given a number of seconds represented as a `Double` by converting the value into the closest attosecond scale value.
-- [static func milliseconds<T>(T) -> Duration](duration/milliseconds(_:)-1w328.md)
+- [static func milliseconds<T>(T) -> Duration](./duration/milliseconds%28_%29-1w328.md)
   Construct a `Duration` given a number of milliseconds represented as a `BinaryInteger`.
-- [static func milliseconds(Double) -> Duration](duration/milliseconds(_:)-7ledy.md)
+- [static func milliseconds(Double) -> Duration](./duration/milliseconds%28_%29-7ledy.md)
   Construct a `Duration` given a number of seconds milliseconds as a `Double` by converting the value into the closest attosecond scale value.
-- [static func microseconds(Double) -> Duration](duration/microseconds(_:)-1zzcc.md)
+- [static func microseconds(Double) -> Duration](./duration/microseconds%28_%29-1zzcc.md)
   Construct a `Duration` given a number of seconds microseconds as a `Double` by converting the value into the closest attosecond scale value.
-- [static func microseconds<T>(T) -> Duration](duration/microseconds(_:)-2majo.md)
+- [static func microseconds<T>(T) -> Duration](./duration/microseconds%28_%29-2majo.md)
   Construct a `Duration` given a number of microseconds represented as a `BinaryInteger`.
 ### Accessing a duration’s components
-- [var components: (seconds: Int64, attoseconds: Int64)](duration/components.md)
+- [var components: (seconds: Int64, attoseconds: Int64)](./duration/components.md)
   The composite components of the `Duration`.
 ### Performing calculations on durations
-- [static func * (Duration, Double) -> Duration](duration/*(_:_:)-3d469.md)
-- [static func *= <T>(inout Duration, T)](duration/*=(_:_:).md)
-- [static func / (Duration, Double) -> Duration](duration/_(_:_:)-7fkmh.md)
-- [static func /= (inout Duration, Double)](duration/_=(_:_:)-10rgx.md)
-- [static func /= <T>(inout Duration, T)](duration/_=(_:_:)-1qfv3.md)
+- [static func * (Duration, Double) -> Duration](./duration/star%28_,_%29-3d469.md)
+- [static func *= <T>(inout Duration, T)](./duration/stareq%28_,_%29.md)
+- [static func / (Duration, Double) -> Duration](./duration/op%28_,_%29-7fkmh.md)
+- [static func /= (inout Duration, Double)](./duration/opeq%28_,_%29-10rgx.md)
+- [static func /= <T>(inout Duration, T)](./duration/opeq%28_,_%29-1qfv3.md)
 ### Formatting a duration
-- [func formatted() -> String](duration/formatted.md)
+- [func formatted() -> String](./duration/formatted%28%29.md)
   Formats the string using a localized hour-minute-second time pattern.
-- [func formatted<S>(S) -> S.FormatOutput](duration/formatted(_:).md)
+- [func formatted<S>(S) -> S.FormatOutput](./duration/formatted%28_%29.md)
   Formats the duration, using the provided format style.
-- [Duration.TimeFormatStyle](duration/timeformatstyle.md)
+- [Duration.TimeFormatStyle](./duration/timeformatstyle.md)
   A format style that shows durations in a compact, localized format with separators.
-- [Duration.UnitsFormatStyle](duration/unitsformatstyle.md)
+- [Duration.UnitsFormatStyle](./duration/unitsformatstyle.md)
   A format style that shows durations with localized labeled components
 ### Initializers
-- [init(attoseconds: Int128)](duration/init(attoseconds:).md)
+- [init(attoseconds: Int128)](./duration/init%28attoseconds%29.md)
   Construct a `Duration` from the given number of attoseconds.
 ### Instance Properties
-- [var attoseconds: Int128](duration/attoseconds.md)
+- [var attoseconds: Int128](./duration/attoseconds.md)
   The number of attoseconds represented by this `Duration`.
 ### Type Aliases
-- [typealias Specification](duration/specification.md)
-- [typealias UnwrappedType](duration/unwrappedtype.md)
-- [typealias ValueType](duration/valuetype.md)
+- [typealias Specification](./duration/specification.md)
+- [typealias UnwrappedType](./duration/unwrappedtype.md)
+- [typealias ValueType](./duration/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](duration/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./duration/defaultresolverspecification.md)
 ### Type Methods
-- [static func nanoseconds(Double) -> Duration](duration/nanoseconds(_:)-1cg32.md)
+- [static func nanoseconds(Double) -> Duration](./duration/nanoseconds%28_%29-1cg32.md)
   Construct a `Duration` given a number of nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
-- [static func nanoseconds<T>(T) -> Duration](duration/nanoseconds(_:)-8nsaz.md)
+- [static func nanoseconds<T>(T) -> Duration](./duration/nanoseconds%28_%29-8nsaz.md)
   Construct a `Duration` given a number of nanoseconds represented as a `BinaryInteger`.
 ### Default Implementations
-- [AdditiveArithmetic Implementations](duration/additivearithmetic-implementations.md)
-- [AtomicRepresentable Implementations](duration/atomicrepresentable-implementations.md)
-- [Comparable Implementations](duration/comparable-implementations.md)
-- [CustomStringConvertible Implementations](duration/customstringconvertible-implementations.md)
-- [Decodable Implementations](duration/decodable-implementations.md)
-- [DurationProtocol Implementations](duration/durationprotocol-implementations.md)
-- [Encodable Implementations](duration/encodable-implementations.md)
-- [Equatable Implementations](duration/equatable-implementations.md)
-- [Hashable Implementations](duration/hashable-implementations.md)
+- [AdditiveArithmetic Implementations](./duration/additivearithmetic-implementations.md)
+- [AtomicRepresentable Implementations](./duration/atomicrepresentable-implementations.md)
+- [Comparable Implementations](./duration/comparable-implementations.md)
+- [CustomStringConvertible Implementations](./duration/customstringconvertible-implementations.md)
+- [Decodable Implementations](./duration/decodable-implementations.md)
+- [DurationProtocol Implementations](./duration/durationprotocol-implementations.md)
+- [Encodable Implementations](./duration/encodable-implementations.md)
+- [Equatable Implementations](./duration/equatable-implementations.md)
+- [Hashable Implementations](./duration/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](additivearithmetic.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Comparable](comparable.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Decodable](decodable.md)
-- [DisplayRepresentable](../appintents/displayrepresentable.md)
-- [DurationProtocol](durationprotocol.md)
-- [ElectricityInsightMeasure](../energykit/electricityinsightmeasure.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [InstanceDisplayRepresentable](../appintents/instancedisplayrepresentable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [TypeDisplayRepresentable](../appintents/typedisplayrepresentable.md)
+- [AdditiveArithmetic](./additivearithmetic.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Comparable](./comparable.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Decodable](./decodable.md)
+- [DisplayRepresentable](../AppIntents/displayrepresentable.md)
+- [DurationProtocol](./durationprotocol.md)
+- [ElectricityInsightMeasure](../EnergyKit/electricityinsightmeasure.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [InstanceDisplayRepresentable](../AppIntents/instancedisplayrepresentable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [TypeDisplayRepresentable](../AppIntents/typedisplayrepresentable.md)
 
 ## See Also
 
-- [protocol DurationProtocol](durationprotocol.md)
+### Durations
+- [protocol DurationProtocol](./durationprotocol.md)
   A type that defines a duration for a given `InstantProtocol` type.
 
 

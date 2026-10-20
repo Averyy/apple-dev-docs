@@ -1,12 +1,13 @@
 # wraps
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the cell wraps text whose length that exceeds the cell’s frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ A Boolean value indicating whether the cell wraps text whose length that exceeds
 var wraps: Bool { get set }
 ```
 
+```objc
+@property BOOL wraps;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell wraps text and makes the cell non-scrollable. If the text of the cell is an attributed string value, you must explicitly set the paragraph style line break mode. Setting the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) is equivalent to setting the [`lineBreakMode`](nscell/linebreakmode.md) property to [`NSLineBreakMode.byWordWrapping`](nslinebreakmode/bywordwrapping.md).
+When the value of this property is [`true`](../../Swift/true.md), the cell wraps text and makes the cell non-scrollable. If the text of the cell is an attributed string value, you must explicitly set the paragraph style line break mode. Setting the value of this property to [`true`](../../Swift/true.md) is equivalent to setting the [`lineBreakMode`](./linebreakmode.md) property to [`NSLineBreakMode.byWordWrapping`](../nslinebreakmode/bywordwrapping.md).
 
 ## See Also
 
-- [var isEditable: Bool](nscell/iseditable.md)
+### Modifying Textual Attributes
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value indicating whether the cell is editable.
-- [var isSelectable: Bool](nscell/isselectable.md)
+- [var isSelectable: Bool](./isselectable.md)
   A Boolean value indicating whether the cell’s text can be selected.
-- [var isScrollable: Bool](nscell/isscrollable.md)
+- [var isScrollable: Bool](./isscrollable.md)
   A Boolean value indicating whether excess text scrolls past the cell’s bounds.
-- [var alignment: NSTextAlignment](nscell/alignment.md)
+- [var alignment: NSTextAlignment](./alignment.md)
   The alignment of the cell’s text.
-- [var font: NSFont?](nscell/font.md)
+- [var font: NSFont?](./font.md)
   The font that the cell uses to display text.
-- [var lineBreakMode: NSLineBreakMode](nscell/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The line break mode to use when drawing text in the cell.
-- [var truncatesLastVisibleLine: Bool](nscell/truncateslastvisibleline.md)
+- [var truncatesLastVisibleLine: Bool](./truncateslastvisibleline.md)
   A Boolean value indicating whether the cell truncates text that does not fit within the cell’s bounds.
-- [var baseWritingDirection: NSWritingDirection](nscell/basewritingdirection.md)
+- [var baseWritingDirection: NSWritingDirection](./basewritingdirection.md)
   The initial writing direction used to determine the actual writing direction for text.
-- [var attributedStringValue: NSAttributedString](nscell/attributedstringvalue.md)
+- [var attributedStringValue: NSAttributedString](./attributedstringvalue.md)
   The cell’s value as an attributed string.
-- [var allowsEditingTextAttributes: Bool](nscell/allowseditingtextattributes.md)
+- [var allowsEditingTextAttributes: Bool](./allowseditingtextattributes.md)
   A Boolean value indicating whether the cell allows the editing of its content’s text attributes by the user.
-- [var importsGraphics: Bool](nscell/importsgraphics.md)
+- [var importsGraphics: Bool](./importsgraphics.md)
   A Boolean value indicating whether the cell supports the importation of images into its text.
-- [func setUpFieldEditorAttributes(NSText) -> NSText](nscell/setupfieldeditorattributes(_:).md)
+- [func setUpFieldEditorAttributes(NSText) -> NSText](./setupfieldeditorattributes%28_%29.md)
   Configures the textual and background attributes of the receiver’s field editor.
-- [var title: String](nscell/title.md)
+- [var title: String](./title.md)
   The cell’s title text.
 
 

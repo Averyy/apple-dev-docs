@@ -1,14 +1,15 @@
 # icmp_hun
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 union icmp_hun;
 ```
 

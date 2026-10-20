@@ -1,12 +1,13 @@
 # NSButton.BezelStyle.toolbar
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button style that’s appropriate for a toolbar item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A button style that’s appropriate for a toolbar item.
 case toolbar
 ```
 
+```c
+NSBezelStyleToolbar
+```
+
 #### Discussion
 
-Use this case for displaying a button in an [`NSToolbar`](nstoolbar.md).
+Use this case for displaying a button in an [`NSToolbar`](../../nstoolbar.md).
 
 **Swift**:
 
@@ -34,13 +39,14 @@ button.title = @"Toolbar";
 button.bezelStyle = NSBezelStyleToolbar;
 ```
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also
 
-- [NSButton.BezelStyle.accessoryBar](nsbutton/bezelstyle-swift.enum/accessorybar.md)
+### Toolbar
+- [NSButton.BezelStyle.accessoryBar](./accessorybar.md)
   A button style that’s typically used in the context of an accessory toolbar for buttons that narrow the focus of a search or other operation.
-- [NSButton.BezelStyle.accessoryBarAction](nsbutton/bezelstyle-swift.enum/accessorybaraction.md)
+- [NSButton.BezelStyle.accessoryBarAction](./accessorybaraction.md)
   A button style that you use for extra actions in an accessory toolbar.
 
 

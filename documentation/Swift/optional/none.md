@@ -1,7 +1,8 @@
 # Optional.none
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The absence of a value.
 
@@ -26,7 +27,8 @@ In code, the absence of a value is typically written using the `nil` literal rat
 
 ## See Also
 
-- [init(nilLiteral: ())](optional/init(nilliteral:).md)
+### Creating a Nil Value
+- [init(nilLiteral: ())](./init%28nilliteral%29.md)
   Creates an instance initialized with `nil`.
 
 

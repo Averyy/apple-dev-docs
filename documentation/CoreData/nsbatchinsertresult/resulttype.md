@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of result that Core Data returns from this request.
 
@@ -20,11 +21,16 @@ The type of result that Core Data returns from this request.
 var resultType: NSBatchInsertRequestResultType { get }
 ```
 
+```objc
+@property (readonly) NSBatchInsertRequestResultType resultType;
+```
+
 ## See Also
 
-- [var result: Any?](nsbatchinsertresult/result.md)
+### Accessing Results
+- [var result: Any?](./result.md)
   The result of a batch-insertion request.
-- [enum NSBatchInsertRequestResultType](nsbatchinsertrequestresulttype.md)
+- [enum NSBatchInsertRequestResultType](../nsbatchinsertrequestresulttype.md)
   Result types for a batch-insertion request.
 
 

@@ -1,7 +1,8 @@
 # vmnet_network_configuration_create(_:_:)
 
 **Framework**: vmnet  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a network configuration object with the specified operating mode.
 
@@ -13,6 +14,10 @@ Creates a network configuration object with the specified operating mode.
 
 ```swift
 func vmnet_network_configuration_create(_ mode: vmnet_mode_t, _ status: UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_configuration_ref?
+```
+
+```c
+vmnet_network_configuration_refvmnet_network_configuration_create(vmnet_mode_t mode, vmnet_return_t *status);
 ```
 
 #### Return Value
@@ -35,7 +40,7 @@ All other parameters are optional and have the following default value:
 - DHCP reservation: none
 - MTU: 1500
 
-Use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release the network configuration object.
+Use [`CFRelease`](../CoreFoundation/cfrelease.md) to release the network configuration object.
 
 ## Parameters
 
@@ -44,11 +49,12 @@ Use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrel
 
 ## See Also
 
-- [func vmnet_network_create(vmnet_network_configuration_ref, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create(_:_:).md)
+### Creating a network configuration
+- [func vmnet_network_create(vmnet_network_configuration_ref, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](./vmnet_network_create%28_,_%29.md)
   Creates a vmnet network based on the provided configuration.
-- [func vmnet_network_create_with_serialization(xpc_object_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create_with_serialization(_:_:).md)
+- [func vmnet_network_create_with_serialization(xpc_object_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](./vmnet_network_create_with_serialization%28_,_%29.md)
   Creates a vmnet network from an XPC object you obtained from calling the vmnet networkcopy serialization API.
-- [func vmnet_network_copy_serialization(vmnet_network_ref, UnsafeMutablePointer<vmnet_return_t>?) -> xpc_object_t?](vmnet_network_copy_serialization(_:_:).md)
+- [func vmnet_network_copy_serialization(vmnet_network_ref, UnsafeMutablePointer<vmnet_return_t>?) -> xpc_object_t?](./vmnet_network_copy_serialization%28_,_%29.md)
   Serializes a vmnet network to an XPC object.
 
 

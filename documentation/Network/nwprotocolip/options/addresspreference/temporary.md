@@ -1,7 +1,8 @@
 # NWProtocolIP.Options.AddressPreference.temporary
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 14.0+

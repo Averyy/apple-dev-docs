@@ -1,7 +1,8 @@
 # silentOnTouch
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allows a direct touch area to immediately receive touch events without triggering VoiceOver audio.
 
@@ -17,6 +18,10 @@ Allows a direct touch area to immediately receive touch events without triggerin
 
 ```swift
 static var silentOnTouch: UIAccessibility.DirectTouchOptions { get }
+```
+
+```c
+UIAccessibilityDirectTouchOptionSilentOnTouch
 ```
 
 #### Discussion

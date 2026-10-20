@@ -1,7 +1,8 @@
 # WebKitNamedFlow
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitNamedFlow
 ```
 
 ## Topics
 
 ### Instance Properties
-- [firstEmptyRegionIndex](webkitnamedflow/1633942-firstemptyregionindex.md)
-- [name](webkitnamedflow/1631243-name.md)
-- [overset](webkitnamedflow/1630679-overset.md)
+- [firstEmptyRegionIndex](./webkitnamedflow/api-1633942-firstemptyregionindex.md)
+- [name](./webkitnamedflow/api-1631243-name.md)
+- [overset](./webkitnamedflow/api-1630679-overset.md)
 ### Instance Methods
-- [getContent](webkitnamedflow/1631262-getcontent.md)
-- [getRegions](webkitnamedflow/1631848-getregions.md)
-- [getRegionsByContent](webkitnamedflow/1632823-getregionsbycontent.md)
+- [getContent](./webkitnamedflow/api-1631262-getcontent.md)
+- [getRegions](./webkitnamedflow/api-1631848-getregions.md)
+- [getRegionsByContent](./webkitnamedflow/api-1632823-getregionsbycontent.md)
 
 ## Relationships
 

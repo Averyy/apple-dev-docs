@@ -1,7 +1,8 @@
 # init(session:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object capture view from an existing session using the current segment’s point cloud.
 

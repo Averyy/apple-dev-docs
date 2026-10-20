@@ -1,7 +1,8 @@
 # hvf
 
 **Framework**: hvf  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Render Hierarchical Variable Font (HVF) glyph outlines, and support font editors and related tools.
 
@@ -27,40 +28,40 @@ The Swift interface adds support for the following:
 ## Topics
 
 ### Classes
-- [class HVGLPartLoader](hvglpartloader.md)
+- [class HVGLPartLoader](./hvglpartloader.md)
   Special loader object for an HVGL table in memory, which must be Double-aligned Typically this is from a memory-mapped font
-- [class PartRenderer](partrenderer.md)
+- [class PartRenderer](./partrenderer.md)
   An object that can be used to set parameters for rendering a part, to render the part, and to diagnose the results of rendering
 ### Protocols
-- [protocol CompositeWriter](compositewriter.md)
+- [protocol CompositeWriter](./compositewriter.md)
   Protocol for creating a Composite part for rendering or to build an HVGL table
-- [protocol PartGenerator](partgenerator.md)
+- [protocol PartGenerator](./partgenerator.md)
   Protocol for returning a writer object to create Shape or Composite data
-- [protocol ShapeWriter](shapewriter.md)
+- [protocol ShapeWriter](./shapewriter.md)
   A protocol for creating a Shape part for rendering or to build an HVGL table
 ### Structures
-- [struct CompositeExtremumIndex](compositeextremumindex.md)
+- [struct CompositeExtremumIndex](./compositeextremumindex.md)
   The index of an extremum rotation or translation in a Composite part
-- [struct CompositeSubpart](compositesubpart.md)
+- [struct CompositeSubpart](./compositesubpart.md)
   A subpart in a Composite part
-- [struct CompositeSubpartTranslation](compositesubparttranslation.md)
+- [struct CompositeSubpartTranslation](./compositesubparttranslation.md)
   A subpart translation in a Composite part
 ### Variables
-- [let hvfLibraryVersion: (major: Int, minor: Int, patch: Int)](hvflibraryversion-swift.var.md)
+- [let hvfLibraryVersion: (major: Int, minor: Int, patch: Int)](./hvflibraryversion-swift.var.md)
   Return the version of the HVF library
 ### Type Aliases
-- [typealias CustomPartLoader](custompartloader.md)
+- [typealias CustomPartLoader](./custompartloader.md)
   Closure which loads parts from an arbitrary source The first parameter is the part index which uniquely identifiers a part; these are assigned by the loader The second parameter is a PartGenerator the loader uses to get a ShapeWriter or CompositeWriter to create the requested part The result is the generated part, passed back in a PartResult
 ### Enumerations
-- [enum AxisExtremum](axisextremum.md)
+- [enum AxisExtremum](./axisextremum.md)
   Which extremum within an axis
-- [enum PartResult](partresult.md)
+- [enum PartResult](./partresult.md)
   The result returned from a part loader
-- [enum PointCoordinate](pointcoordinate.md)
+- [enum PointCoordinate](./pointcoordinate.md)
   Which coordinate within a point
-- [enum SegmentBlendType](segmentblendtype.md)
+- [enum SegmentBlendType](./segmentblendtype.md)
   The blend type for a segment of a path
-- [enum SegmentPoint](segmentpoint.md)
+- [enum SegmentPoint](./segmentpoint.md)
   Which point within a segment
 
 

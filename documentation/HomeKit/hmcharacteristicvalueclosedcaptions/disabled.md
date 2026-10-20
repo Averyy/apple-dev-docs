@@ -1,7 +1,8 @@
 # HMCharacteristicValueClosedCaptions.disabled
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Closed captions is disabled.
 
@@ -19,9 +20,14 @@ Closed captions is disabled.
 case disabled
 ```
 
+```c
+HMCharacteristicValueClosedCaptionsDisabled
+```
+
 ## See Also
 
-- [HMCharacteristicValueClosedCaptions.enabled](hmcharacteristicvalueclosedcaptions/enabled.md)
+### Closed caption states
+- [HMCharacteristicValueClosedCaptions.enabled](./enabled.md)
   Closed captions is enabled.
 
 

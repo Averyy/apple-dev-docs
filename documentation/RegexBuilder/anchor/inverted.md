@@ -1,7 +1,8 @@
 # inverted
 
 **Framework**: RegexBuilder  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inverse of this anchor, which matches at every position that this anchor does not.
 
@@ -11,7 +12,7 @@ The inverse of this anchor, which matches at every position that this anchor doe
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ var inverted: Anchor { get }
 
 #### Discussion
 
-For the [`wordBoundary`](anchor/wordboundary.md) and [`textSegmentBoundary`](anchor/textsegmentboundary.md) anchors, the inverted version corresponds to `\B` and `\Y`, respectively.
+For the [`wordBoundary`](./wordboundary.md) and [`textSegmentBoundary`](./textsegmentboundary.md) anchors, the inverted version corresponds to `\B` and `\Y`, respectively.
 
 
 ---

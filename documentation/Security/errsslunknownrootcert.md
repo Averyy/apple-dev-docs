@@ -1,7 +1,8 @@
 # errSSLUnknownRootCert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Certificate chain is valid, but root is nottrusted.
 
@@ -18,6 +19,10 @@ Certificate chain is valid, but root is nottrusted.
 
 ```swift
 var errSSLUnknownRootCert: OSStatus { get }
+```
+
+```c
+errSSLUnknownRootCert
 ```
 
 

@@ -1,15 +1,16 @@
 # XCUIDevice.Button.action
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device’s action button.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -18,19 +19,24 @@ The device’s action button.
 case action
 ```
 
+```c
+XCUIDeviceButtonAction
+```
+
 #### Discussion
 
-The button you use for specific actions in workout apps, available in watchOS 9 and later on Apple Watch Ultra. You can use [`hasHardwareButton(_:)`](xcuidevice/hashardwarebutton(_:).md) to check for its availability from your test.
+The button you use for specific actions in workout apps, available in watchOS 9 and later on Apple Watch Ultra. You can use [`hasHardwareButton(_:)`](../hashardwarebutton%28_%29.md) to check for its availability from your test.
 
 ## See Also
 
-- [XCUIDevice.Button.home](xcuidevice/button/home.md)
+### Device buttons
+- [XCUIDevice.Button.home](./home.md)
   The device’s home button.
-- [XCUIDevice.Button.volumeUp](xcuidevice/button/volumeup.md)
+- [XCUIDevice.Button.volumeUp](./volumeup.md)
   The device’s volume up button.
-- [XCUIDevice.Button.volumeDown](xcuidevice/button/volumedown.md)
+- [XCUIDevice.Button.volumeDown](./volumedown.md)
   The device’s volume down button.
-- [XCUIDevice.Button.camera](xcuidevice/button/camera.md)
+- [XCUIDevice.Button.camera](./camera.md)
   The device’s camera button.
 
 

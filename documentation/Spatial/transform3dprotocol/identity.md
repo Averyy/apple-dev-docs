@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 Returns the identity transform.

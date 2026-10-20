@@ -1,7 +1,8 @@
 # stopAnimating()
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the sticker’s animation.
 
@@ -16,13 +17,18 @@ Stops the sticker’s animation.
 func stopAnimating()
 ```
 
+```objc
+- (void) stopAnimating;
+```
+
 ## See Also
 
-- [var animationDuration: TimeInterval](msstickerview/animationduration.md)
+### Controlling Sticker Animation
+- [var animationDuration: TimeInterval](./animationduration.md)
   The amount of time it takes to complete the sticker’s animation.
-- [func isAnimating() -> Bool](msstickerview/isanimating.md)
+- [func isAnimating() -> Bool](./isanimating%28%29.md)
   Returns a Boolean value that indicates whether the sticker is animating.
-- [func startAnimating()](msstickerview/startanimating.md)
+- [func startAnimating()](./startanimating%28%29.md)
   Starts the sticker’s animation, beginning with the first frame.
 
 

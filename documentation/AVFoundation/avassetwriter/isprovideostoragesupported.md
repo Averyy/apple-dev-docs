@@ -1,7 +1,8 @@
 # isProVideoStorageSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the receiver supports writing to pre-allocated storage on this device for high data rate video capture formats such as ProRes.
 
@@ -16,6 +17,10 @@ Indicates whether the receiver supports writing to pre-allocated storage on this
 
 ```swift
 var isProVideoStorageSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isProVideoStorageSupported) BOOL proVideoStorageSupported;
 ```
 
 #### Discussion

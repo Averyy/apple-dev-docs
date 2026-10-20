@@ -1,7 +1,8 @@
 # PaperMarkupViewController.TouchMode.selection
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Select strokes/elements on a canvas.
 
@@ -24,7 +25,8 @@ case selection
 
 ## See Also
 
-- [PaperMarkupViewController.TouchMode.drawing](papermarkupviewcontroller/touchmode/drawing.md)
+### Choosing a mode
+- [PaperMarkupViewController.TouchMode.drawing](./drawing.md)
   Draw with the PencilKit tool.
 
 

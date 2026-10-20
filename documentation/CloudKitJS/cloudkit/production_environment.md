@@ -10,13 +10,14 @@ The container environment is accessible by both development apps and apps availa
 
 ## Declaration
 
-```swift
+```
 const String PRODUCTION_ENVIRONMENT;
 ```
 
 ## See Also
 
-- [DEVELOPMENT_ENVIRONMENT](cloudkit/development_environment.md)
+### Constants
+- [DEVELOPMENT_ENVIRONMENT](./development_environment.md)
   The container environment is not accessible by apps available on the store.
 
 

@@ -1,9 +1,10 @@
 # blackBlock
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The bit pattern for a block of black pixels.  If absent, black is assumed to be all zeros. Otherwise, this should be [`bitsPerBlock`](cvpixelformatdescription/pixellayout/bitsperblock.md) bits long. If bitsPerBlock is less than a byte, repeat the bit pattern for the full byte.
+The bit pattern for a block of black pixels.  If absent, black is assumed to be all zeros. Otherwise, this should be [`bitsPerBlock`](./bitsperblock.md) bits long. If bitsPerBlock is less than a byte, repeat the bit pattern for the full byte.
 
 **Availability**:
 - iOS 26.0+

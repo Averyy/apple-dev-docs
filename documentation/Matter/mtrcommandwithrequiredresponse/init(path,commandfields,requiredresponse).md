@@ -1,7 +1,8 @@
 # init(path:commandFields:requiredResponse:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(path: MTRCommandPath, commandFields: [String : Any]?, requiredResponse: [NSNumber : [String : Any]]?)
+```
+
+```objc
+- (instancetype) initWithPath:(MTRCommandPath *) path commandFields:(NSDictionary<NSString *,id> *) commandFields requiredResponse:(NSDictionary<NSNumber *,NSDictionary<NSString *,id> *> *) requiredResponse;
 ```
 
 

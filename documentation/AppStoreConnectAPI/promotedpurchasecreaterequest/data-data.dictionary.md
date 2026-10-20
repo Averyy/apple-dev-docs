@@ -1,7 +1,8 @@
 # PromotedPurchaseCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a promoted purchase.
 
@@ -10,23 +11,23 @@ The request body you use to create a promoted purchase.
 
 ## Declaration
 
-```swift
+```
 object PromotedPurchaseCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object PromotedPurchaseCreateRequest.Data.Attributes](promotedpurchasecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object PromotedPurchaseCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a promoted purchase create request resource.
-- [object PromotedPurchaseCreateRequest.Data.Relationships](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object PromotedPurchaseCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (PromotedPurchaseCreateRequest.Data.Attributes) *(required)*
 - `relationships` (PromotedPurchaseCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `promotedPurchases`
 
 
 ---

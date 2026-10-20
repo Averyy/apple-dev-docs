@@ -1,7 +1,8 @@
 # init(weightsMapping:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a BlendShapeWeightsComponent from a BlendShapeWeightsMapping.
 

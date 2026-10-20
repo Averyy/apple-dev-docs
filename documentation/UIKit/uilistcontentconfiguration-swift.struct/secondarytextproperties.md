@@ -1,7 +1,8 @@
 # secondaryTextProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties for configuring the secondary text.
 
@@ -10,7 +11,7 @@ Properties for configuring the secondary text.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var secondaryTextProperties: UIListContentConfiguration.TextProperties { get set
 
 ## See Also
 
-- [var imageProperties: UIListContentConfiguration.ImageProperties](uilistcontentconfiguration-swift.struct/imageproperties-swift.property.md)
+### Customizing appearance
+- [var imageProperties: UIListContentConfiguration.ImageProperties](./imageproperties-swift.property.md)
   Properties for configuring the image.
-- [var textProperties: UIListContentConfiguration.TextProperties](uilistcontentconfiguration-swift.struct/textproperties-swift.property.md)
+- [var textProperties: UIListContentConfiguration.TextProperties](./textproperties-swift.property.md)
   Properties for configuring the primary text.
-- [UIListContentConfiguration.ImageProperties](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct.md)
+- [UIListContentConfiguration.ImageProperties](./imageproperties-swift.struct.md)
   Properties that affect the list content configuration’s image.
-- [UIListContentConfiguration.TextProperties](uilistcontentconfiguration-swift.struct/textproperties-swift.struct.md)
+- [UIListContentConfiguration.TextProperties](./textproperties-swift.struct.md)
   Properties that affect the list content configuration’s text.
 
 

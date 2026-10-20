@@ -1,7 +1,8 @@
 # AppExtension.Identifier
 
 **Framework**: ExtensionFoundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.2+

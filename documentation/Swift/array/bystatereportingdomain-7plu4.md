@@ -1,7 +1,8 @@
 # byStateReportingDomain
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All states from all interval entries grouped by their StateReporting domain.
 
@@ -16,6 +17,8 @@ All states from all interval entries grouped by their StateReporting domain.
 ```swift
 var byStateReportingDomain: [StateReportingDomain : [MetricManager.ReportedState]] { get }
 ```
+
+Available when `Element` is `MetricReport.IntervalEntry`.
 
 
 ---

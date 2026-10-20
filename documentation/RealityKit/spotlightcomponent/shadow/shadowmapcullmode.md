@@ -1,7 +1,8 @@
 # SpotLightComponent.Shadow.ShadowMapCullMode
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -19,11 +20,12 @@ typealias ShadowMapCullMode = MaterialParameterTypes.FaceCulling
 
 ## See Also
 
-- [struct SpotLightComponent](spotlightcomponent.md)
+### Spotlights and their shadows
+- [struct SpotLightComponent](../../spotlightcomponent.md)
   A component that defines a spotlight source.
-- [SpotLightComponent.Shadow](spotlightcomponent/shadow.md)
+- [SpotLightComponent.Shadow](../shadow.md)
   A spotlight component that adds shadows to entities that it illuminates.
-- [SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/shadowclippingplane.md)
+- [SpotLightComponent.Shadow.ShadowClippingPlane](./shadowclippingplane.md)
   An object that specifies the mode of a shadow clipping plane.
 
 

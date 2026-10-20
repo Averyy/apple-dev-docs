@@ -1,7 +1,8 @@
 # maximumErrorKey
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 They key that accesses the maximum error value.
 
@@ -21,11 +22,12 @@ static let maximumErrorKey: ProgressUserInfoKey
 
 ## See Also
 
-- [static let rootMeanSquaredErrorKey: ProgressUserInfoKey](mlprogress/rootmeansquarederrorkey.md)
+### Accessing error information
+- [static let rootMeanSquaredErrorKey: ProgressUserInfoKey](./rootmeansquarederrorkey.md)
   They key that accesses the root-mean-squared error value.
-- [static let validationMaximumErrorKey: ProgressUserInfoKey](mlprogress/validationmaximumerrorkey.md)
+- [static let validationMaximumErrorKey: ProgressUserInfoKey](./validationmaximumerrorkey.md)
   They key that accesses the validation maximum error value.
-- [static let validationRootMeanSquaredErrorKey: ProgressUserInfoKey](mlprogress/validationrootmeansquarederrorkey.md)
+- [static let validationRootMeanSquaredErrorKey: ProgressUserInfoKey](./validationrootmeansquarederrorkey.md)
   They key that accesses the validation root-mean-squared error value.
 
 

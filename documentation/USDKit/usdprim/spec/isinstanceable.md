@@ -1,7 +1,8 @@
 # isInstanceable
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this prim is marked as an instance, or `nil` if not authored.
 

@@ -1,7 +1,8 @@
 # logicalAnd(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic logical AND operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic logical AND operation and return the old and new value, applyi
 @discardableResult
 func logicalAnd(_ operand: Bool, ordering: AtomicUpdateOrdering) -> (oldValue: Bool, newValue: Bool)
 ```
+
+Available when `Value` is `Bool`.
 
 #### Return Value
 

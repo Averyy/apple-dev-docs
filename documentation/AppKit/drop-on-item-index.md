@@ -1,18 +1,20 @@
 # Drop on Item Index
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 This constant defines an index that allows you to drop an item directly on a target.
 
 ## Topics
 
 ### Constants
-- [var NSOutlineViewDropOnItemIndex: Int](nsoutlineviewdroponitemindex.md)
+- [var NSOutlineViewDropOnItemIndex: Int](./nsoutlineviewdroponitemindex.md)
   May be used as a valid child index of a drop target item.
 
 ## See Also
 
-- [Outline View Button Keys](outline-view-button-keys.md)
+### Constants
+- [Outline View Button Keys](./outline-view-button-keys.md)
   These keys are used by the outline view to create disclosure buttons that collapse and expand items.
 
 

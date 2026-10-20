@@ -1,14 +1,15 @@
 # desiredRecordTypes
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 attribute String[] desiredRecordTypes;
 ```
 

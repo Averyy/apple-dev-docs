@@ -1,7 +1,8 @@
 # fileOutput(_:didStartRecordingTo:from:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the output has started writing to a file.
 
@@ -18,9 +19,13 @@ Informs the delegate when the output has started writing to a file.
 optional func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection])
 ```
 
+```objc
+- (void) captureOutput:(AVCaptureFileOutput *) output didStartRecordingToOutputFileAtURL:(NSURL *) fileURL fromConnections:(NSArray<AVCaptureConnection *> *) connections;
+```
+
 #### Discussion
 
-If an error condition prevents any data from being written, this method may not be called. [`fileOutput(_:willFinishRecordingTo:from:error:)`](avcapturefileoutputrecordingdelegate/fileoutput(_:willfinishrecordingto:from:error:).md) and [`fileOutput(_:didFinishRecordingTo:from:error:)`](avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:).md) are always called, even if no data is written.
+If an error condition prevents any data from being written, this method may not be called. [`fileOutput(_:willFinishRecordingTo:from:error:)`](./fileoutput%28_,willfinishrecordingto,from,error%29.md) and [`fileOutput(_:didFinishRecordingTo:from:error:)`](./fileoutput%28_,didfinishrecordingto,from,error%29.md) are always called, even if no data is written.
 
 You should not assume that this method will be called on a specific thread, and should make this method as efficient as possible.
 
@@ -28,18 +33,19 @@ You should not assume that this method will be called on a specific thread, and 
 
 - `output`: The capture file output that started writing the file.
 - `fileURL`: The file URL of the file that is being written.
-- `connections`: An array of [`AVCaptureConnection`](avcaptureconnection.md) objects attached to the file output that provided the data that is being written to the file.
+- `connections`: An array of [`AVCaptureConnection`](../avcaptureconnection.md) objects attached to the file output that provided the data that is being written to the file.
 
 ## See Also
 
-- [func fileOutput(AVCaptureFileOutput, didStartRecordingTo: URL, startPTS: CMTime, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didstartrecordingto:startpts:from:).md)
-- [func fileOutput(AVCaptureFileOutput, willFinishRecordingTo: URL, from: [AVCaptureConnection], error: (any Error)?)](avcapturefileoutputrecordingdelegate/fileoutput(_:willfinishrecordingto:from:error:).md)
+### Delegate methods
+- [func fileOutput(AVCaptureFileOutput, didStartRecordingTo: URL, startPTS: CMTime, from: [AVCaptureConnection])](./fileoutput%28_,didstartrecordingto,startpts,from%29.md)
+- [func fileOutput(AVCaptureFileOutput, willFinishRecordingTo: URL, from: [AVCaptureConnection], error: (any Error)?)](./fileoutput%28_,willfinishrecordingto,from,error%29.md)
   Informs the delegate when the output will stop writing new samples to a file.
-- [func fileOutput(AVCaptureFileOutput, didFinishRecordingTo: URL, from: [AVCaptureConnection], error: (any Error)?)](avcapturefileoutputrecordingdelegate/fileoutput(_:didfinishrecordingto:from:error:).md)
+- [func fileOutput(AVCaptureFileOutput, didFinishRecordingTo: URL, from: [AVCaptureConnection], error: (any Error)?)](./fileoutput%28_,didfinishrecordingto,from,error%29.md)
   Informs the delegate when all pending data has been written to an output file.
-- [func fileOutput(AVCaptureFileOutput, didPauseRecordingTo: URL, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didpauserecordingto:from:).md)
+- [func fileOutput(AVCaptureFileOutput, didPauseRecordingTo: URL, from: [AVCaptureConnection])](./fileoutput%28_,didpauserecordingto,from%29.md)
   Called whenever the output is recording to a file and successfully pauses the recording at the request of a client.
-- [func fileOutput(AVCaptureFileOutput, didResumeRecordingTo: URL, from: [AVCaptureConnection])](avcapturefileoutputrecordingdelegate/fileoutput(_:didresumerecordingto:from:).md)
+- [func fileOutput(AVCaptureFileOutput, didResumeRecordingTo: URL, from: [AVCaptureConnection])](./fileoutput%28_,didresumerecordingto,from%29.md)
   Called whenever the output, at the request of the client, successfully resumes a file recording that was paused.
 
 

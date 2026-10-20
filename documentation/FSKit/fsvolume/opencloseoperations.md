@@ -1,17 +1,22 @@
 # FSVolume.OpenCloseOperations
 
 **Framework**: FSKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods and properties implemented by volumes that want to receive open and close calls for each item.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 protocol OpenCloseOperations : NSObjectProtocol
+```
+
+```objc
+@protocol FSVolumeOpenCloseOperations <NSObject>
 ```
 
 #### Overview
@@ -20,43 +25,44 @@ When a file system volume conforms to this protocol, the kernel layer issues an 
 
 If a file system volume doesn’t conform to this protocol, the kernel layer can skip making such calls to the volume.
 
-> **Note**: Use [`FSVolume.OpenCloseHandler`](fsvolume/openclosehandler.md) instead.
+> **Deprecated**: Use [`FSVolume.OpenCloseHandler`](./openclosehandler.md) instead.
 
 ## Topics
 
 ### Opening and closing
-- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
+- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](./opencloseoperations/openitem%28_,modes,replyhandler%29.md)
   Opens a file for access.
-- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/closeitem(_:modes:replyhandler:).md)
+- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](./opencloseoperations/closeitem%28_,modes,replyhandler%29.md)
   Closes a file from further access.
-- [FSVolume.OpenModes](fsvolume/openmodes.md)
+- [FSVolume.OpenModes](./openmodes.md)
   Defined modes for opening a file.
 ### Inspecting volume properties
-- [var isOpenCloseInhibited: Bool](fsvolume/opencloseoperations/isopencloseinhibited.md)
+- [var isOpenCloseInhibited: Bool](./opencloseoperations/isopencloseinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [FSVolume.Operations](fsvolume/operations.md)
+### Deprecated
+- [FSVolume.Operations](./operations.md)
   Methods that all volumes implement to provide required capabilities.
-- [FSVolume.ReadWriteOperations](fsvolume/readwriteoperations.md)
+- [FSVolume.ReadWriteOperations](./readwriteoperations.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
-- [FSVolume.AccessCheckOperations](fsvolume/accesscheckoperations.md)
+- [FSVolume.AccessCheckOperations](./accesscheckoperations.md)
   Methods and properties implemented by volumes that want to enforce access check operations.
-- [FSVolume.RenameOperations](fsvolume/renameoperations.md)
+- [FSVolume.RenameOperations](./renameoperations.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [FSVolume.PreallocateOperations](fsvolume/preallocateoperations.md)
+- [FSVolume.PreallocateOperations](./preallocateoperations.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
-- [FSVolume.XattrOperations](fsvolume/xattroperations.md)
+- [FSVolume.XattrOperations](./xattroperations.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
-- [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
+- [FSVolume.ItemDeactivation](./itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
-- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
+- [protocol FSVolumeKernelOffloadedIOOperations](../fsvolumekerneloffloadediooperations.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 
 

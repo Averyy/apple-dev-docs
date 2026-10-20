@@ -1,7 +1,8 @@
 # BuilderConditional
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A conditional result from a result builder.
 
@@ -23,17 +24,17 @@ struct BuilderConditional<TrueContent, FalseContent>
 
 #### Overview
 
-Don’t use this type directly. The result builders defined by the framework, like [`ChartContentBuilder`](chartcontentbuilder.md) and [`AxisContentBuilder`](axiscontentbuilder.md), use it as part of the building process.
+Don’t use this type directly. The result builders defined by the framework, like [`ChartContentBuilder`](./chartcontentbuilder.md) and [`AxisContentBuilder`](./axiscontentbuilder.md), use it as part of the building process.
 
 ## Relationships
 
 ### Conforms To
-- [AxisContent](axiscontent.md)
-- [AxisMark](axismark.md)
-- [Chart3DContent](chart3dcontent.md)
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AxisContent](./axiscontent.md)
+- [AxisMark](./axismark.md)
+- [Chart3DContent](./chart3dcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 
 ---

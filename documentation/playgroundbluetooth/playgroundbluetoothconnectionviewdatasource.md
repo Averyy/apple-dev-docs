@@ -1,7 +1,8 @@
 # PlaygroundBluetoothConnectionViewDataSource
 
 **Framework**: Playground Bluetooth  
-**Kind**: intf
+**Kind**: intf  
+**Role**: Protocol
 
 The protocol you adopt to display an available peripheral in a playground page’s connection view.
 
@@ -17,7 +18,7 @@ protocol PlaygroundBluetoothConnectionViewDataSource : AnyObject
 
 #### Overview
 
-The example below shows a conformance to this protocol that uses images from a playground book’s [`Public and Private Resources Folders`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW14).
+The example below shows a conformance to this protocol that uses images from a playground book’s [Public and Private Resources Folders](https://developer.apple.com/library/archive/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW14).
 
 ```swift
 extension PageViewDelegate: PlaygroundBluetoothConnectionViewDataSource {
@@ -31,19 +32,20 @@ extension PageViewDelegate: PlaygroundBluetoothConnectionViewDataSource {
 }
 ```
 
-Some peripherals have Bluetooth characteristics that provide information about the peripheral’s battery charge level or firmware status. Include this information in the [`PlaygroundBluetoothConnectionView.Item`](playgroundbluetoothconnectionview/item.md) you create when it will help people pick a peripheral.
+Some peripherals have Bluetooth characteristics that provide information about the peripheral’s battery charge level or firmware status. Include this information in the [`PlaygroundBluetoothConnectionView.Item`](./playgroundbluetoothconnectionview/item.md) you create when it will help people pick a peripheral.
 
 ## Topics
 
 ### Displaying Connection View Items
-- [func connectionView(PlaygroundBluetoothConnectionView, itemForPeripheral: CBPeripheral, withAdvertisementData: [String : Any]?) -> PlaygroundBluetoothConnectionView.Item](playgroundbluetoothconnectionviewdatasource/3029520-connectionview.md)
+- [func connectionView(PlaygroundBluetoothConnectionView, itemForPeripheral: CBPeripheral, withAdvertisementData: [String : Any]?) -> PlaygroundBluetoothConnectionView.Item](./playgroundbluetoothconnectionviewdatasource/api-3029520-connectionview.md)
   Tells the delegate that a new peripheral was discovered and can be displayed in the connection view.
 
 ## See Also
 
-- [class PlaygroundBluetoothConnectionView](playgroundbluetoothconnectionview.md)
+### Peripheral Display
+- [class PlaygroundBluetoothConnectionView](./playgroundbluetoothconnectionview.md)
   A view that displays the connection status of a peripheral to the central manager for the current page and manages connections to other peripherals.
-- [protocol PlaygroundBluetoothConnectionViewDelegate](playgroundbluetoothconnectionviewdelegate.md)
+- [protocol PlaygroundBluetoothConnectionViewDelegate](./playgroundbluetoothconnectionviewdelegate.md)
   A delegate you use to respond to user- and system-initiated interactions with the central manager’s connection view.
 
 

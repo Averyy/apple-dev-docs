@@ -1,7 +1,8 @@
 # SMAppService.Status.notFound
 
 **Framework**: Service Management  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred and the framework couldn’t find this service.
 
@@ -15,13 +16,18 @@ An error occurred and the framework couldn’t find this service.
 case notFound
 ```
 
+```c
+SMAppServiceStatusNotFound
+```
+
 ## See Also
 
-- [SMAppService.Status.notRegistered](smappservice/status-swift.enum/notregistered.md)
+### Constants
+- [SMAppService.Status.notRegistered](./notregistered.md)
   The service hasn’t registered with the Service Management framework, or the service attempted to reregister after it was already registered.
-- [SMAppService.Status.enabled](smappservice/status-swift.enum/enabled.md)
+- [SMAppService.Status.enabled](./enabled.md)
   The service has been successfully registered and is eligible to run.
-- [SMAppService.Status.requiresApproval](smappservice/status-swift.enum/requiresapproval.md)
+- [SMAppService.Status.requiresApproval](./requiresapproval.md)
   The service has been successfully registered, but the user needs to take action in System Preferences.
 
 

@@ -1,7 +1,8 @@
 # AttributedTextFormatting.AnyDefinition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased text formatting definition.
 
@@ -23,12 +24,12 @@ struct AnyDefinition<Scope> where Scope : AttributeScope
 ## Topics
 
 ### Initializers
-- [init<D>(D)](attributedtextformatting/anydefinition/init(_:).md)
+- [init<D>(D)](./anydefinition/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+- [AttributedTextFormattingDefinition](../attributedtextformattingdefinition.md)
 
 
 ---

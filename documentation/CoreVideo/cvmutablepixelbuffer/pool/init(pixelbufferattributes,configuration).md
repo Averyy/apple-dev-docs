@@ -1,7 +1,8 @@
 # init(pixelBufferAttributes:configuration:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new pixel buffer pool which creates pixel buffers using `pixelBufferAttributes`.
 

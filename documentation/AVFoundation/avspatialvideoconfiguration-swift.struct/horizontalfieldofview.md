@@ -1,7 +1,8 @@
 # horizontalFieldOfView
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies horizontal field of view in thousandths of a degree. Can be nil if the value is unknown.
 
@@ -21,11 +22,12 @@ var horizontalFieldOfView: UInt32?
 
 ## See Also
 
-- [var cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection?](avspatialvideoconfiguration-swift.struct/cameracalibrationdatalenscollection.md)
+### Modifying the configuration
+- [var cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection?](./cameracalibrationdatalenscollection.md)
   Specifies intrinsic and extrinsic parameters for single or multiple lenses.
-- [var cameraSystemBaseline: UInt32?](avspatialvideoconfiguration-swift.struct/camerasystembaseline.md)
+- [var cameraSystemBaseline: UInt32?](./camerasystembaseline.md)
   Specifies the distance between centers of the lenses of the camera system that created the video.
-- [var disparityAdjustment: Int32?](avspatialvideoconfiguration-swift.struct/disparityadjustment.md)
+- [var disparityAdjustment: Int32?](./disparityadjustment.md)
   Specifies a relative shift of the left and right images, which changes the zero parallax plane.
 
 

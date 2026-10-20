@@ -1,7 +1,8 @@
 # kSCSIServiceAction_CHANGE_ALIASES
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceAction_CHANGE_ALIASES = 0x0B
 ```
 

@@ -1,6 +1,7 @@
 # Balance
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Represent balance values with 16-bit fixed-point numbers.
 
@@ -10,11 +11,12 @@ Represent balance values as 16-bit, fixed-point numbers that range from `-1.0` t
 
 ## See Also
 
-- [Matrices](matrices.md)
+### Graphics and colors
+- [Matrices](./matrices.md)
   QuickTime files use matrices to describe spatial information about many objects, such as tracks within a movie.
-- [Graphics modes](graphics_modes.md)
+- [Graphics modes](./graphics_modes.md)
   QuickTime files use graphics modes to describe how one video or graphics layer should be combined with the layers beneath it.
-- [RGB colors](rgb_colors.md)
+- [RGB colors](./rgb_colors.md)
   Colors stored as three consecutive unsigned 16-bit integers in the following order: red, green, blue.
 
 

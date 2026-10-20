@@ -1,7 +1,8 @@
 # versionHash
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version hash for the attribute.
 
@@ -10,7 +11,7 @@ The version hash for the attribute.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The version hash for the attribute.
 var versionHash: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * versionHash;
+```
+
 #### Discussion
 
-The version hash is used to uniquely identify an attribute based on its configuration. This value includes the [`versionHash`](nspropertydescription/versionhash.md) information from [`NSPropertyDescription`](nspropertydescription.md) and the attribute type.
+The version hash is used to uniquely identify an attribute based on its configuration. This value includes the [`versionHash`](../nspropertydescription/versionhash.md) information from [`NSPropertyDescription`](../nspropertydescription.md) and the attribute type.
 
 ## See Also
 
-- [var versionHash: Data](nspropertydescription/versionhash.md)
+### Related Documentation
+- [var versionHash: Data](../nspropertydescription/versionhash.md)
   The version hash for the receiver.
 
 

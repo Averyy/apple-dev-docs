@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 
@@ -22,7 +23,7 @@ func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSe
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

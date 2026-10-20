@@ -1,7 +1,8 @@
 # MEMessageSecurityError.Code
 
 **Framework**: MailKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
@@ -12,23 +13,27 @@
 enum Code
 ```
 
+```c
+enum MEMessageSecurityErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MEMessageSecurityError.Code.decodingError](memessagesecurityerror/code/decodingerror.md)
-- [MEMessageSecurityError.Code.encodingError](memessagesecurityerror/code/encodingerror.md)
+- [MEMessageSecurityError.Code.decodingError](./code/decodingerror.md)
+- [MEMessageSecurityError.Code.encodingError](./code/encodingerror.md)
 ### Initializers
-- [init?(rawValue: Int)](memessagesecurityerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

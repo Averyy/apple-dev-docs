@@ -1,7 +1,8 @@
 # NWBrowser.Descriptor
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A service description used to discover Bonjour services.
 
@@ -23,31 +24,32 @@ enum Descriptor
 ## Topics
 
 ### Descriptor Types
-- [case bonjour(type: String, domain: String?)](nwbrowser/descriptor-swift.enum/bonjour(type:domain:).md)
+- [case bonjour(type: String, domain: String?)](./descriptor-swift.enum/bonjour%28type,domain%29.md)
   A service descriptor used to discover a Bonjour service.
-- [case bonjourWithTXTRecord(type: String, domain: String?)](nwbrowser/descriptor-swift.enum/bonjourwithtxtrecord(type:domain:).md)
+- [case bonjourWithTXTRecord(type: String, domain: String?)](./descriptor-swift.enum/bonjourwithtxtrecord%28type,domain%29.md)
   A service descriptor used to discover a Bonjour service with associated TXT records.
 ### Enumeration Cases
-- [NWBrowser.Descriptor.applicationService(name:)](nwbrowser/descriptor-swift.enum/applicationservice(name:).md)
+- [NWBrowser.Descriptor.applicationService(name:)](./descriptor-swift.enum/applicationservice%28name%29.md)
   Returns a browser descriptor for application services.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(for: NWBrowser.Descriptor, using: NWParameters)](nwbrowser/init(for:using:).md)
+### Browsing for Services
+- [init(for: NWBrowser.Descriptor, using: NWParameters)](./init%28for,using%29.md)
   Initializes a browser with a type of service to discover.
-- [func start(queue: DispatchQueue)](nwbrowser/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Starts browsing for services, and sets the queue on which all browser events will be delivered.
-- [var browseResultsChangedHandler: ((Set<NWBrowser.Result>, Set<NWBrowser.Result.Change>) -> Void)?](nwbrowser/browseresultschangedhandler.md)
+- [var browseResultsChangedHandler: ((Set<NWBrowser.Result>, Set<NWBrowser.Result.Change>) -> Void)?](./browseresultschangedhandler.md)
   A handler that delivers updates about discovered services.
-- [NWBrowser.Result](nwbrowser/result.md)
+- [NWBrowser.Result](./result.md)
   A set of discovered services and changes from the last result.
-- [var browseResults: Set<NWBrowser.Result>](nwbrowser/browseresults.md)
+- [var browseResults: Set<NWBrowser.Result>](./browseresults.md)
   The list of discovered services.
 
 

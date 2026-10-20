@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts `self` to its textual representation.
 

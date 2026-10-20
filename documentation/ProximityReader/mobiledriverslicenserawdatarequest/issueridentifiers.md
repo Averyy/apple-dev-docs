@@ -1,7 +1,8 @@
 # issuerIdentifiers
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subject key identifiers of the issuers trusted by the reader.
 

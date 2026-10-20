@@ -1,7 +1,8 @@
 # Add a Search Keyword to a Custom Product Page Localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Assign one or more search keywords to a specific custom product page localization.
 
@@ -14,15 +15,34 @@ Assign one or more search keywords to a specific custom product page localizatio
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List Custom Product Pages Localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List Custom Product Pages Localizations`](./get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest`
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List keywords for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)
+### Managing search keywords
+- [List keywords for a custom product page localization](./get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)
   List the search keywords for a specific custom product page localization.
-- [List all search keywords for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [List all search keywords for a custom product page localization](./get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Get a list of search keyword IDs for a custom product page localization.
-- [Remove a Search Keyword From a Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [Remove a Search Keyword From a Custom Product Page Localization](./delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Unassign a search keyword from a specific custom product page localization.
 
 

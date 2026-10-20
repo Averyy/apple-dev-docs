@@ -1,7 +1,8 @@
 # setOwnership
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Set the task that owns the descriptor’s memory. 
 
@@ -10,15 +11,16 @@ Set the task that owns the descriptor’s memory.
 
 ## Declaration
 
-```swift
+```c
 IOReturn setOwnership(task_t newOwner, int newLedgerTag, IOOptionBits newLedgerOptions);
 ```
 
 ## See Also
 
-- [setPurgeable](iomemorydescriptor/1812865-setpurgeable.md)
+### Configuring the Descriptor
+- [setPurgeable](./api-1812865-setpurgeable.md)
   Control the purgeable status of a memory descriptors memory.
-- [- setPurgeable](iomemorydescriptor/1442065-setpurgeable.md)
+- [- setPurgeable](./api-1442065-setpurgeable.md)
   Control the purgeable status of a memory descriptors memory.
 
 

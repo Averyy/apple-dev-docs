@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum IONVRAMOperation : unsigned int {
     ...
 };
@@ -17,12 +17,12 @@ enum IONVRAMOperation : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONVRAMOperationDelete](ionvramoperation/kionvramoperationdelete.md)
-- [kIONVRAMOperationInit](ionvramoperation/kionvramoperationinit.md)
-- [kIONVRAMOperationObliterate](ionvramoperation/kionvramoperationobliterate.md)
-- [kIONVRAMOperationRead](ionvramoperation/kionvramoperationread.md)
-- [kIONVRAMOperationReset](ionvramoperation/kionvramoperationreset.md)
-- [kIONVRAMOperationWrite](ionvramoperation/kionvramoperationwrite.md)
+- [kIONVRAMOperationDelete](./ionvramoperation/kionvramoperationdelete.md)
+- [kIONVRAMOperationInit](./ionvramoperation/kionvramoperationinit.md)
+- [kIONVRAMOperationObliterate](./ionvramoperation/kionvramoperationobliterate.md)
+- [kIONVRAMOperationRead](./ionvramoperation/kionvramoperationread.md)
+- [kIONVRAMOperationReset](./ionvramoperation/kionvramoperationreset.md)
+- [kIONVRAMOperationWrite](./ionvramoperation/kionvramoperationwrite.md)
 
 
 ---

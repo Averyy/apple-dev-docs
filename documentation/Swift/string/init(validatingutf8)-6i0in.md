@@ -1,15 +1,16 @@
 # init(validatingUTF8:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 15.0 (renamed: init(validating:))
+- iPadOS 14.0+ - Deprecated in 15.0 (renamed: init(validating:))
+- Mac Catalyst 14.0+ - Deprecated in 15.0 (renamed: init(validating:))
+- macOS 11.0+ - Deprecated in 12.0 (renamed: init(validating:))
+- tvOS 14.0+ - Deprecated in 15.0 (renamed: init(validating:))
+- watchOS 7.0+ - Deprecated in 8.0 (renamed: init(validating:))
 
 ## Declaration
 
@@ -19,7 +20,8 @@ init?(validatingUTF8 path: FilePath)
 
 ## See Also
 
-- [init(FilePath)](string/init(_:)-3a5mh.md)
+### Working with Paths
+- [init(FilePath)](./init%28_%29-3a5mh.md)
 
 
 ---

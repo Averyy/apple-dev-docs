@@ -1,7 +1,8 @@
 # playbackController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio playback group controller that triggered the event.
 

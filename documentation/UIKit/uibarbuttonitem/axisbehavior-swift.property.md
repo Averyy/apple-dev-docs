@@ -1,7 +1,8 @@
 # axisBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bar axis behavior of the item.
 
@@ -18,17 +19,22 @@ The bar axis behavior of the item.
 var axisBehavior: UIBarButtonItem.AxisBehavior { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIBarButtonItemAxisBehavior axisBehavior;
+```
+
 #### Discussion
 
 The default value is `UIBarButtonItemAxisBehaviorAutomatic`.
 
 ## See Also
 
-- [var hidesSharedBackground: Bool](uibarbuttonitem/hidessharedbackground.md)
+### Customizing placement in a toolbar
+- [var hidesSharedBackground: Bool](./hidessharedbackground.md)
   A boolean value indicating whether the background this item may share with other items in the bar should be hidden.
-- [var sharesBackground: Bool](uibarbuttonitem/sharesbackground.md)
+- [var sharesBackground: Bool](./sharesbackground.md)
   A boolean value indicating whether this bar button item can share a background with other items in a navigation bar or a toolbar.
-- [UIBarButtonItem.AxisBehavior](uibarbuttonitem/axisbehavior-swift.enum.md)
+- [UIBarButtonItem.AxisBehavior](./axisbehavior-swift.enum.md)
 
 
 ---

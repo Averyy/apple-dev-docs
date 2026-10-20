@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keypadEqualSignAS400
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 134 (decimal)/86 (hexadecimal).
 
@@ -18,37 +19,42 @@ The raw usage code 134 (decimal)/86 (hexadecimal).
 case keypadEqualSignAS400
 ```
 
+```c
+UIKeyboardHIDUsageKeypadEqualSignAS400
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keypad0](uikeyboardhidusage/keypad0.md)
+### Keypad keys
+- [UIKeyboardHIDUsage.keypad0](./keypad0.md)
   The raw usage code 98 (decimal)/62 (hexadecimal).
-- [UIKeyboardHIDUsage.keypad1](uikeyboardhidusage/keypad1.md)
+- [UIKeyboardHIDUsage.keypad1](./keypad1.md)
   The raw usage code 89 (decimal)/59 (hexadecimal).
-- [UIKeyboardHIDUsage.keypad2](uikeyboardhidusage/keypad2.md)
+- [UIKeyboardHIDUsage.keypad2](./keypad2.md)
   The raw usage code 90 (decimal)/5A (hexadecimal).
-- [UIKeyboardHIDUsage.keypad3](uikeyboardhidusage/keypad3.md)
+- [UIKeyboardHIDUsage.keypad3](./keypad3.md)
   The raw usage code 91 (decimal)/5B (hexadecimal).
-- [UIKeyboardHIDUsage.keypad4](uikeyboardhidusage/keypad4.md)
+- [UIKeyboardHIDUsage.keypad4](./keypad4.md)
   The raw usage code 92 (decimal)/5C (hexadecimal).
-- [UIKeyboardHIDUsage.keypad5](uikeyboardhidusage/keypad5.md)
+- [UIKeyboardHIDUsage.keypad5](./keypad5.md)
   The raw usage code 93 (decimal)/5D (hexadecimal).
-- [UIKeyboardHIDUsage.keypad6](uikeyboardhidusage/keypad6.md)
+- [UIKeyboardHIDUsage.keypad6](./keypad6.md)
   The raw usage code 94 (decimal)/5E (hexadecimal).
-- [UIKeyboardHIDUsage.keypad7](uikeyboardhidusage/keypad7.md)
+- [UIKeyboardHIDUsage.keypad7](./keypad7.md)
   The raw usage code 95 (decimal)/5F (hexadecimal).
-- [UIKeyboardHIDUsage.keypad8](uikeyboardhidusage/keypad8.md)
+- [UIKeyboardHIDUsage.keypad8](./keypad8.md)
   The raw usage code 96 (decimal)/60 (hexadecimal).
-- [UIKeyboardHIDUsage.keypad9](uikeyboardhidusage/keypad9.md)
+- [UIKeyboardHIDUsage.keypad9](./keypad9.md)
   The raw usage code 97 (decimal)/61 (hexadecimal).
-- [UIKeyboardHIDUsage.keypadAsterisk](uikeyboardhidusage/keypadasterisk.md)
+- [UIKeyboardHIDUsage.keypadAsterisk](./keypadasterisk.md)
   The raw usage code 85 (decimal)/55 (hexadecimal).
-- [UIKeyboardHIDUsage.keypadComma](uikeyboardhidusage/keypadcomma.md)
+- [UIKeyboardHIDUsage.keypadComma](./keypadcomma.md)
   The raw usage code 133 (decimal)/85 (hexadecimal).
-- [UIKeyboardHIDUsage.keypadEnter](uikeyboardhidusage/keypadenter.md)
+- [UIKeyboardHIDUsage.keypadEnter](./keypadenter.md)
   The raw usage code 88 (decimal)/58 (hexadecimal).
-- [UIKeyboardHIDUsage.keypadEqualSign](uikeyboardhidusage/keypadequalsign.md)
+- [UIKeyboardHIDUsage.keypadEqualSign](./keypadequalsign.md)
   The raw usage code 103 (decimal)/67 (hexadecimal).
-- [UIKeyboardHIDUsage.keypadHyphen](uikeyboardhidusage/keypadhyphen.md)
+- [UIKeyboardHIDUsage.keypadHyphen](./keypadhyphen.md)
   The raw usage code 86 (decimal)/56 (hexadecimal).
 
 

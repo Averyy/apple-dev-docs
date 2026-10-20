@@ -1,7 +1,8 @@
 # HIShapeIsEmpty(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeIsEmpty(_ inShape: HIShape!) -> Bool
+```
+
+```c
+Boolean HIShapeIsEmpty(HIShapeRef inShape);
 ```
 
 

@@ -1,7 +1,8 @@
 # errorComment
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the error encountered.
 
@@ -20,6 +21,10 @@ A description of the error encountered.
 var errorComment: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * errorComment;
+```
+
 #### Discussion
 
 The property corresponds to “comment”.
@@ -28,19 +33,20 @@ The value of this property may be `nil` if further information is not available.
 
 ## See Also
 
-- [var date: Date?](avplayeritemerrorlogevent/date.md)
+### Getting information about the event
+- [var date: Date?](./date.md)
   The date and time when the error occurred.
-- [var uri: String?](avplayeritemerrorlogevent/uri.md)
+- [var uri: String?](./uri.md)
   The URI of the playback item that had an error.
-- [var serverAddress: String?](avplayeritemerrorlogevent/serveraddress.md)
+- [var serverAddress: String?](./serveraddress.md)
   The IP address of the server that was the source of the error.
-- [var playbackSessionID: String?](avplayeritemerrorlogevent/playbacksessionid.md)
+- [var playbackSessionID: String?](./playbacksessionid.md)
   A GUID that identifies the playback session that had an error.
-- [var errorStatusCode: Int](avplayeritemerrorlogevent/errorstatuscode.md)
+- [var errorStatusCode: Int](./errorstatuscode.md)
   A unique error code identifier.
-- [var errorDomain: String](avplayeritemerrorlogevent/errordomain.md)
+- [var errorDomain: String](./errordomain.md)
   The domain of the error.
-- [var allHTTPResponseHeaderFields: [String : String]?](avplayeritemerrorlogevent/allhttpresponseheaderfields.md)
+- [var allHTTPResponseHeaderFields: [String : String]?](./allhttpresponseheaderfields.md)
   The HTTP header fields the server returns.
 
 

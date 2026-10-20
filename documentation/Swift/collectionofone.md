@@ -1,7 +1,8 @@
 # CollectionOfOne
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection containing a single element.
 
@@ -35,54 +36,55 @@ let b = a + CollectionOfOne(toAdd)
 ## Topics
 
 ### Initializers
-- [init(Element)](collectionofone/init(_:).md)
+- [init(Element)](./collectionofone/init%28_%29.md)
   Creates an instance containing just the given element.
 ### Instance Properties
-- [var mutableSpan: MutableSpan<Element>](collectionofone/mutablespan.md)
+- [var mutableSpan: MutableSpan<Element>](./collectionofone/mutablespan.md)
   A mutable span over the single element of this collection.
-- [var span: Span<Element>](collectionofone/span.md)
+- [var span: Span<Element>](./collectionofone/span.md)
   A span over the single element of this collection.
 ### Default Implementations
-- [BidirectionalCollection Implementations](collectionofone/bidirectionalcollection-implementations.md)
-- [Collection Implementations](collectionofone/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](collectionofone/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](collectionofone/customreflectable-implementations.md)
-- [Equatable Implementations](collectionofone/equatable-implementations.md)
-- [Hashable Implementations](collectionofone/hashable-implementations.md)
-- [MutableCollection Implementations](collectionofone/mutablecollection-implementations.md)
-- [RandomAccessCollection Implementations](collectionofone/randomaccesscollection-implementations.md)
-- [Sequence Implementations](collectionofone/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./collectionofone/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./collectionofone/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./collectionofone/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./collectionofone/customreflectable-implementations.md)
+- [Equatable Implementations](./collectionofone/equatable-implementations.md)
+- [Hashable Implementations](./collectionofone/hashable-implementations.md)
+- [MutableCollection Implementations](./collectionofone/mutablecollection-implementations.md)
+- [RandomAccessCollection Implementations](./collectionofone/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./collectionofone/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [MutableCollection](mutablecollection.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [MutableCollection](./mutablecollection.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [func repeatElement<T>(T, count: Int) -> Repeated<T>](repeatelement(_:count:).md)
+### Special-Use Collections
+- [func repeatElement<T>(T, count: Int) -> Repeated<T>](./repeatelement%28_,count%29.md)
   Creates a collection containing the specified number of the given element.
-- [struct EmptyCollection](emptycollection.md)
+- [struct EmptyCollection](./emptycollection.md)
   A collection whose element type is `Element` but that is always empty.
-- [struct KeyValuePairs](keyvaluepairs.md)
+- [struct KeyValuePairs](./keyvaluepairs.md)
   A lightweight collection of key-value pairs.
-- [typealias DictionaryLiteral](dictionaryliteral.md)
+- [typealias DictionaryLiteral](./dictionaryliteral.md)
 
 
 ---

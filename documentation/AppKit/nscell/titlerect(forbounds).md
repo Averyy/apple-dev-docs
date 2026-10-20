@@ -1,17 +1,22 @@
 # titleRect(forBounds:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle in which the receiver draws its title text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func titleRect(forBounds rect: NSRect) -> NSRect
+```
+
+```objc
+- (NSRect) titleRectForBounds:(NSRect) rect;
 ```
 
 #### Return Value
@@ -28,17 +33,18 @@ If the receiver is a text-type cell, this method resizes the drawing rectangle f
 
 ## See Also
 
-- [func calcDrawInfo(NSRect)](nscell/calcdrawinfo(_:).md)
+### Determining Cell Size
+- [func calcDrawInfo(NSRect)](./calcdrawinfo%28_%29.md)
   Recalculates the cell geometry.
-- [var cellSize: NSSize](nscell/cellsize.md)
+- [var cellSize: NSSize](./cellsize.md)
   The minimum size needed to display the cell.
-- [func cellSize(forBounds: NSRect) -> NSSize](nscell/cellsize(forbounds:).md)
+- [func cellSize(forBounds: NSRect) -> NSSize](./cellsize%28forbounds%29.md)
   Returns the minimum size needed to display the receiver, constraining it to the specified rectangle.
-- [func drawingRect(forBounds: NSRect) -> NSRect](nscell/drawingrect(forbounds:).md)
+- [func drawingRect(forBounds: NSRect) -> NSRect](./drawingrect%28forbounds%29.md)
   Returns the rectangle within which the receiver draws itself
-- [func imageRect(forBounds: NSRect) -> NSRect](nscell/imagerect(forbounds:).md)
+- [func imageRect(forBounds: NSRect) -> NSRect](./imagerect%28forbounds%29.md)
   Returns the rectangle in which the receiver draws its image.
-- [var controlSize: NSControl.ControlSize](nscell/controlsize.md)
+- [var controlSize: NSControl.ControlSize](./controlsize.md)
   The size of the cell.
 
 

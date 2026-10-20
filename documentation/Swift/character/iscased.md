@@ -1,7 +1,8 @@
 # isCased
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this character changes under any form of case conversion.
 
@@ -22,13 +23,14 @@ var isCased: Bool { get }
 
 ## See Also
 
-- [var isUppercase: Bool](character/isuppercase.md)
+### Checking a Character’s Case
+- [var isUppercase: Bool](./isuppercase.md)
   A Boolean value indicating whether this character is considered uppercase.
-- [func uppercased() -> String](character/uppercased.md)
+- [func uppercased() -> String](./uppercased%28%29.md)
   Returns an uppercased version of this character.
-- [var isLowercase: Bool](character/islowercase.md)
+- [var isLowercase: Bool](./islowercase.md)
   A Boolean value indicating whether this character is considered lowercase.
-- [func lowercased() -> String](character/lowercased.md)
+- [func lowercased() -> String](./lowercased%28%29.md)
   Returns a lowercased version of this character.
 
 

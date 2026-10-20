@@ -1,7 +1,8 @@
 # targetedToAnyEntity()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requires this gesture to target an entity.
 
@@ -25,11 +26,12 @@ A `RealityCoordinateSpaceConvertible`value containing the original gesture value
 
 ## See Also
 
+### Using a gesture with a RealityKit entity
 - [func targetedToEntity(Entity) -> some Gesture<EntityTargetValue<Self.Value>>
-](gesture/targetedtoentity(_:).md)
+](./targetedtoentity%28_%29.md)
   Requires this gesture to target an entity or a descendant of entity.
 - [func targetedToEntity(where: QueryPredicate<Entity>) -> some Gesture<EntityTargetValue<Self.Value>>
-](gesture/targetedtoentity(where:).md)
+](./targetedtoentity%28where%29.md)
   Requires this gesture to target an entity that can be found in the results of the query.
 
 

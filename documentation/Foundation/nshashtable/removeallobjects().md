@@ -1,7 +1,8 @@
 # removeAllObjects()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all objects from the hash table.
 
@@ -20,11 +21,16 @@ Removes all objects from the hash table.
 func removeAllObjects()
 ```
 
+```objc
+- (void) removeAllObjects;
+```
+
 ## See Also
 
-- [func add(ObjectType?)](nshashtable/add(_:).md)
+### Manipulating Membership
+- [func add(ObjectType?)](./add%28_%29.md)
   Adds a given object to the hash table.
-- [func remove(ObjectType?)](nshashtable/remove(_:).md)
+- [func remove(ObjectType?)](./remove%28_%29.md)
   Removes a given object from the hash table.
 
 

@@ -1,30 +1,33 @@
 # NSExtensionServiceFinderPreviewLabel
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A name for display when the extension appears in the Finder Preview pane and Quick Actions menu.
 
 **Availability**:
 - macOS 10.14+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSExtensionServiceFinderPreviewLabel`
+- **Type**: string
 
 #### Discussion
 
-This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md) key.
+This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](./nsextensionserviceallowsfinderpreviewitem.md) key.
 
-If the [`NSExtensionServiceFinderPreviewLabel`](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewlabel.md) key isn’t provided, the extension’s display name is used.
+If the [`NSExtensionServiceFinderPreviewLabel`](./nsextensionservicefinderpreviewlabel.md) key isn’t provided, the extension’s display name is used.
 
 ## See Also
 
-- [NSExtensionServiceAllowsFinderPreviewItem](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md)
+### Quick Actions
+- [NSExtensionServiceAllowsFinderPreviewItem](./nsextensionserviceallowsfinderpreviewitem.md)
   A Boolean value indicating whether the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewIconName](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md)
+- [NSExtensionServiceFinderPreviewIconName](./nsextensionservicefinderpreviewiconname.md)
   The name of an icon for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceRoleType](information-property-list/nsextension/nsextensionattributes/nsextensionserviceroletype.md)
+- [NSExtensionServiceRoleType](./nsextensionserviceroletype.md)
   The type of task an Action extension performs.
 
 

@@ -1,7 +1,8 @@
 # init(lookingAt:from:name:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera that looks towards a specified point in the preview from a different specified point.
 
@@ -16,7 +17,7 @@ init(lookingAt position: Point3D, from: Point3D, name: String? = nil)
 
 #### Discussion
 
-Use one or more cameras with one of the preview macros that takes a `cameras` input — like [`Preview(_:traits:body:cameras:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:body:cameras:)) — to create custom viewpoints for the preview. The canvas offers custom cameras in its camera picker along with a set of standard cameras.
+Use one or more cameras with one of the preview macros that takes a `cameras` input — like [`Preview(_:traits:body:cameras:)`](../../SwiftUI/preview%28_,traits,body,cameras%29.md) — to create custom viewpoints for the preview. The canvas offers custom cameras in its camera picker along with a set of standard cameras.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ Use one or more cameras with one of the preview macros that takes a `cameras` in
 
 ## See Also
 
-- [init(from: UnitPoint3D, zoom: Double, name: String?)](previewcamera/init(from:zoom:name:).md)
+### Creating a preview camera
+- [init(from: UnitPoint3D, zoom: Double, name: String?)](./init%28from,zoom,name%29.md)
   Creates a camera that looks toward the preview center from a specified unit point.
 
 

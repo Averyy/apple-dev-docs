@@ -1326,9 +1326,8 @@
       "hash": "2bfa38be6f97e35c109be171067675c2ad6f379c342af9545843256ac9d63331"
     },
     "https://developer.apple.com/documentation/createmlcomponents/counting_human_body_action_repetitions_in_a_live_video_feed": {
-      "etag": "W/\"60d484a14453f7050960d24c5a89ce30\"",
       "file_path": "documentation/CreateMLComponents/counting_human_body_action_repetitions_in_a_live_video_feed.md",
-      "hash": "560878baf5b7a12ce02ac78553cd9c3ed8aed602c68a2bffce9847cc111ff887"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/createmlcomponents/creating-a-multi-label-image-classifier": {
       "etag": "\"787e-65d55bf6dac0c-df\"",
@@ -9436,9 +9435,8 @@
       "hash": "2bfa38be6f97e35c109be171067675c2ad6f379c342af9545843256ac9d63331"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/counting_human_body_action_repetitions_in_a_live_video_feed.json": {
-      "etag": "W/\"60d484a14453f7050960d24c5a89ce30\"",
       "file_path": "documentation/CreateMLComponents/counting_human_body_action_repetitions_in_a_live_video_feed.md",
-      "hash": "560878baf5b7a12ce02ac78553cd9c3ed8aed602c68a2bffce9847cc111ff887"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/creating-a-multi-label-image-classifier.json": {
       "etag": "\"787e-65d55bf6dac0c-df\"",
@@ -16222,6 +16220,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 3244
   }
 }

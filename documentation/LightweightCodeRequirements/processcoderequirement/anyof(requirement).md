@@ -1,9 +1,10 @@
 # anyOf(requirement:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Create a [`ProcessCodeRequirement`](processcoderequirement.md) that requires matching any of the provided constraints.
+Create a [`ProcessCodeRequirement`](../processcoderequirement.md) that requires matching any of the provided constraints.
 
 **Availability**:
 - iOS 17.4+

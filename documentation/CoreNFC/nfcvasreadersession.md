@@ -1,7 +1,8 @@
 # NFCVASReaderSession
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reader session for processing Value Added Service (VAS) tags.
 
@@ -16,6 +17,10 @@ A reader session for processing Value Added Service (VAS) tags.
 class NFCVASReaderSession
 ```
 
+```objc
+@interface NFCVASReaderSession : NFCReaderSession
+```
+
 #### Overview
 
 > **Note**:  Using NFCVASReaderSession requires an entitlement from Apple. Updates will include information about the entitlement and a link to the entitlement request form.
@@ -23,41 +28,42 @@ class NFCVASReaderSession
 ## Topics
 
 ### Creating a VAS Reader Session
-- [init(vasCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:)-23h52.md)
+- [init(vasCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](./nfcvasreadersession/init%28vascommandconfigurations,delegate,queue%29-23h52.md)
   Creates a VAS reader session.
-- [class NFCVASCommandConfiguration](nfcvascommandconfiguration.md)
+- [class NFCVASCommandConfiguration](./nfcvascommandconfiguration.md)
   An object providing the configuration for a GET VAS DATA command.
-- [protocol NFCVASReaderSessionDelegate](nfcvasreadersessiondelegate.md)
+- [protocol NFCVASReaderSessionDelegate](./nfcvasreadersessiondelegate.md)
   A protocol that an object implements to receive callbacks from a VAS reader session.
 ### Initializers
-- [init(VASCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:)-8qhci.md)
+- [init(VASCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](./nfcvasreadersession/init%28vascommandconfigurations,delegate,queue%29-8qhci.md)
 
 ## Relationships
 
 ### Inherits From
-- [NFCReaderSession](nfcreadersession-swift.class.md)
+- [NFCReaderSession](./nfcreadersession-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NFCReaderSessionProtocol](./nfcreadersessionprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NFCNDEFReaderSession](nfcndefreadersession.md)
+### Reader sessions
+- [class NFCNDEFReaderSession](./nfcndefreadersession.md)
   A reader session for detecting NFC Data Exchange Format (NDEF) tags.
-- [class NFCTagReaderSession](nfctagreadersession.md)
+- [class NFCTagReaderSession](./nfctagreadersession.md)
   A reader session for detecting ISO7816, ISO15693, FeliCa, and MIFARE tags.
-- [class NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
+- [class NFCPaymentTagReaderSession](./nfcpaymenttagreadersession.md)
   A reader session that supports the use of payment tags.
-- [class NFCReaderSession](nfcreadersession-swift.class.md)
+- [class NFCReaderSession](./nfcreadersession-swift.class.md)
   The abstract base class that represents a reader session for detecting NFC tags.
-- [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
+- [protocol NFCReaderSessionProtocol](./nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 
 

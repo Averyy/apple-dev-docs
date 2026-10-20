@@ -1,7 +1,8 @@
 # Delete a Keyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Soft-delete a keyword by ID, setting its deleted field to true and stopping bids on that term.
 
@@ -30,7 +31,7 @@ The soft delete is reflected consistently across subsequent GET and PUT requests
 
 Deletes a keyword by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
-```None
+```
 DELETE https://api.ads.apple.com/v1/keywords/888999000
 ```
 
@@ -46,17 +47,33 @@ DELETE https://api.ads.apple.com/v1/keywords/888999000
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Keyword](post-keywords.md)
+- [Create a Keyword](./post-keywords.md)
   Create a new keyword in an ad group, setting the match type and optional bid amount.
-- [Query Keywords](post-keywords-query.md)
+- [Query Keywords](./post-keywords-query.md)
   Query keywords using structured filters, sorting, and pagination.
-- [Get a Keyword](get-keywords-_id_.md)
+- [Get a Keyword](./get-keywords-_id_.md)
   Retrieve a single keyword by its unique identifier.
-- [Update a Keyword](put-keywords-_id_.md)
+- [Update a Keyword](./put-keywords-_id_.md)
   Update a keyword’s bid amount or status to optimize spend and control delivery for that term.
 
 

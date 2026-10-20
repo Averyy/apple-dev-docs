@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(imageCell: NSImage?)](nsbrowsercell/init(imagecell:).md)
-- [init(textCell: String)](nsbrowsercell/init(textcell:).md)
+### Initializers
+- [init(imageCell: NSImage?)](./init%28imagecell%29.md)
+- [init(textCell: String)](./init%28textcell%29.md)
 
 
 ---

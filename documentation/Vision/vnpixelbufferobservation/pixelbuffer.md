@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that results from a request with image output.
 
@@ -19,13 +20,18 @@ The image that results from a request with image output.
 var pixelBuffer: CVPixelBuffer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CVPixelBufferRef pixelBuffer;
+```
+
 #### Discussion
 
-[`VNCoreMLRequest`](vncoremlrequest.md) produces observations that contain images in pixel buffer format. The confidence level is always `1.0`.
+[`VNCoreMLRequest`](../vncoremlrequest.md) produces observations that contain images in pixel buffer format. The confidence level is always `1.0`.
 
 ## See Also
 
-- [var featureName: String?](vnpixelbufferobservation/featurename.md)
+### Parsing Observation Content
+- [var featureName: String?](./featurename.md)
   A feature name that the CoreML model defines.
 
 

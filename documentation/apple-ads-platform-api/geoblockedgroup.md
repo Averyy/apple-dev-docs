@@ -1,7 +1,8 @@
 # GeoBlockedGroup
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A blocking rule that names the supply source(s) and reason code(s) restricting a geo location.
 
@@ -10,7 +11,7 @@ A blocking rule that names the supply source(s) and reason code(s) restricting a
 
 ## Declaration
 
-```swift
+```
 object GeoBlockedGroup
 ```
 
@@ -35,7 +36,7 @@ The `GeoEligibility` responses embed `GeoBlockedGroup`. It describes why a geogr
 }
 ```
 
-###### Reasons Accepted Values
+###### `reasons` accepted values
 
 Hard-block (always filtered from results):
 
@@ -56,19 +57,21 @@ Soft-block (included by default, filtered only when `eligible=true`):
 - `supplySource` ([SearchSupplySourceType]): Array of supply source strings this restriction applies to. Values: `APPSTORE`, `MAPS`. Read-only.
 - `reasons` ([string]): Array of reason codes for the eligibility restriction. See reason codes below. Read-only.
 
+  **Allowed Values**: `NO_MUID`, `NOT_SUPPORTED`, `SOURCE_REMOVED`, `COUNTRY_NOT_SUPPORTED`, `COUNTRY_NOT_SEARCHABLE`, `MAPS_SOURCE_NOT_MATCHED`, `LOCALITY_LOW_SEARCH_VOLUME`, `POSTAL_CODE_SPARSE`
+
 ## See Also
 
-- [object GeoRequest](georequest.md)
+- [object GeoRequest](./georequest.md)
   A single geo entity lookup criterion used in a geo location search request.
-- [object GeoSearchPostRequest](geosearchpostrequest.md)
+- [object GeoSearchPostRequest](./geosearchpostrequest.md)
   Request body for querying geo locations.
-- [object GeoSearchResponse](geosearchresponse.md)
+- [object GeoSearchResponse](./geosearchresponse.md)
   Response envelope for the geo location search endpoints.
-- [object GeoSearchPagination](geosearchpagination.md)
+- [object GeoSearchPagination](./geosearchpagination.md)
   Pagination parameters for geo location search requests and responses.
-- [object GeoEligibility](geoeligibility.md)
+- [object GeoEligibility](./geoeligibility.md)
   Eligibility restrictions for a geographic location, scoped to the supply source specified in the request.
-- [object SearchEntity](searchentity.md)
+- [object SearchEntity](./searchentity.md)
   A single geographic location result returned by the geo search endpoints.
 
 

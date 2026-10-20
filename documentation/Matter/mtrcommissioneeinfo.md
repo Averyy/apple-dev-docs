@@ -1,7 +1,8 @@
 # MTRCommissioneeInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information read from the commissionee device during commissioning.
 
@@ -20,36 +21,40 @@ Information read from the commissionee device during commissioning.
 class MTRCommissioneeInfo
 ```
 
+```objc
+@interface MTRCommissioneeInfo : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mtrcommissioneeinfo/init(coder:).md)
+- [init?(coder: NSCoder)](./mtrcommissioneeinfo/init%28coder%29.md)
 ### Instance Properties
-- [var attributes: [MTRAttributePath : [String : Any]]?](mtrcommissioneeinfo/attributes.md)
+- [var attributes: [MTRAttributePath : [String : Any]]?](./mtrcommissioneeinfo/attributes.md)
   Attributes that were read from the commissionee.  This will contain the following, if they are available:
-- [var endpointsById: [NSNumber : MTREndpointInfo]?](mtrcommissioneeinfo/endpointsbyid.md)
+- [var endpointsById: [NSNumber : MTREndpointInfo]?](./mtrcommissioneeinfo/endpointsbyid.md)
   Endpoint information for all endpoints of the commissionee. Will be present only if readEndpointInformation is set to YES on MTRCommissioningParameters.
-- [var productIdentity: MTRProductIdentity](mtrcommissioneeinfo/productidentity.md)
+- [var productIdentity: MTRProductIdentity](./mtrcommissioneeinfo/productidentity.md)
   The product identity (VID / PID) of the commissionee.
-- [var rootEndpoint: MTREndpointInfo?](mtrcommissioneeinfo/rootendpoint.md)
+- [var rootEndpoint: MTREndpointInfo?](./mtrcommissioneeinfo/rootendpoint.md)
   Endpoint information for the root endpoint of the commissionee. Will be present only if readEndpointInformation is set to YES on MTRCommissioningParameters.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

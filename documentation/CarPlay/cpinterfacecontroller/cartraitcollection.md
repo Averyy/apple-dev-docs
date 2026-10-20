@@ -1,7 +1,8 @@
 # carTraitCollection
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trait collection of the vehicle’s primary screen.
 
@@ -16,9 +17,13 @@ The trait collection of the vehicle’s primary screen.
 var carTraitCollection: UITraitCollection { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UITraitCollection * carTraitCollection;
+```
+
 #### Discussion
 
-Use this trait collection to derive metrics, such as display scale, for your CarPlay templates. For example, images you display in a [`CPListTemplate`](cplisttemplate.md) can use this trait collection’s display scale rather than the scale of the user’s iPhone screen.
+Use this trait collection to derive metrics, such as display scale, for your CarPlay templates. For example, images you display in a [`CPListTemplate`](../cplisttemplate.md) can use this trait collection’s display scale rather than the scale of the user’s iPhone screen.
 
 
 ---

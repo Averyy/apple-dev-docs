@@ -1,7 +1,8 @@
 # bEndpointAddress
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the endpoint.
 
@@ -10,7 +11,7 @@ The address of the endpoint.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bEndpointAddress;
 ```
 
@@ -20,15 +21,16 @@ The address includes information about the direction of the endpoint.
 
 ## See Also
 
-- [bLength](iousbendpointdescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The length of the descriptor in bytes.
-- [bDescriptorType](iousbendpointdescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bmAttributes](iousbendpointdescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   The attributes of the endpoint.
-- [wMaxPacketSize](iousbendpointdescriptor/wmaxpacketsize.md)
+- [wMaxPacketSize](./wmaxpacketsize.md)
   The maximum packet size that the endpoint supports.
-- [bInterval](iousbendpointdescriptor/binterval.md)
+- [bInterval](./binterval.md)
   The interval to use when polling the endpoint for data transfers, specified in frames or microframes depending on the device’s speed.
 
 

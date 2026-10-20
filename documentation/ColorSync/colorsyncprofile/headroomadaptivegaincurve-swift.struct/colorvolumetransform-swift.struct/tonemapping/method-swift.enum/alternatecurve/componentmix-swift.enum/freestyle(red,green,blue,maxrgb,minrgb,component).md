@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix.freeStyle(red:green:blue:maxRGB:minRGB:component:)
 
 **Framework**: ColorSync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 signal = R·`red` + G·`green` + B·`blue` + MAX(R,G,B)·`maxRGB` + MIN(R,G,B)·`minRGB` + C·`component`
 

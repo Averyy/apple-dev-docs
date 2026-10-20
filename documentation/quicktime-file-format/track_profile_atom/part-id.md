@@ -1,7 +1,8 @@
 # Part-ID
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit field that defines the feature as being either brand-specific or universal.
 
@@ -11,11 +12,12 @@ The second field is the part-ID, which defines the feature as being either brand
 
 ## See Also
 
-- [Reserved](track_profile_atom/reserved.md)
+### Data fields
+- [Reserved](./reserved.md)
   A 32-bit field.
-- [Feature code](track_profile_atom/feature_code.md)
+- [Feature code](./feature_code.md)
   A 32-bit unsigned integer that represents a code specifying a feature.
-- [Value](track_profile_atom/value.md)
+- [Value](./value.md)
   A 32-bit field that represents a value related to a feature.
 
 

@@ -1,7 +1,8 @@
 # init(name:valueLength:value:flags:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new authorization item.
 

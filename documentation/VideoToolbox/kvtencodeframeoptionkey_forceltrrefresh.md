@@ -1,7 +1,8 @@
 # kVTEncodeFrameOptionKey_ForceLTRRefresh
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether to force Long Term Reference (LTR).
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether to force Long Term Reference (LTR).
 let kVTEncodeFrameOptionKey_ForceLTRRefresh: CFString
 ```
 
+```c
+extern CFStringRef const kVTEncodeFrameOptionKey_ForceLTRRefresh;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_EnableLTR: CFString](kvtcompressionpropertykey_enableltr.md)
+### Long-Term Reference
+- [let kVTCompressionPropertyKey_EnableLTR: CFString](./kvtcompressionpropertykey_enableltr.md)
   Enables Long Term Reference (LTR) frames during encoding.
-- [let kVTEncodeFrameOptionKey_AcknowledgedLTRTokens: CFString](kvtencodeframeoptionkey_acknowledgedltrtokens.md)
+- [let kVTEncodeFrameOptionKey_AcknowledgedLTRTokens: CFString](./kvtencodeframeoptionkey_acknowledgedltrtokens.md)
   Enable Long Term Reference (LTR) frames during encoding.
-- [let kVTSampleAttachmentKey_RequireLTRAcknowledgementToken: CFString](kvtsampleattachmentkey_requireltracknowledgementtoken.md)
+- [let kVTSampleAttachmentKey_RequireLTRAcknowledgementToken: CFString](./kvtsampleattachmentkey_requireltracknowledgementtoken.md)
   A number value that contains a unique token for this Long Term Reference (LTR).
 
 

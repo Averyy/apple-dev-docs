@@ -1,7 +1,8 @@
 # MTRSmokeCOAlarmExpressedState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,30 +19,34 @@
 enum MTRSmokeCOAlarmExpressedState
 ```
 
+```c
+enum MTRSmokeCOAlarmExpressedState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRSmokeCOAlarmExpressedState.batteryAlert](mtrsmokecoalarmexpressedstate/batteryalert.md)
-- [MTRSmokeCOAlarmExpressedState.coAlarm](mtrsmokecoalarmexpressedstate/coalarm.md)
-- [MTRSmokeCOAlarmExpressedState.endOfService](mtrsmokecoalarmexpressedstate/endofservice.md)
-- [MTRSmokeCOAlarmExpressedState.hardwareFault](mtrsmokecoalarmexpressedstate/hardwarefault.md)
-- [MTRSmokeCOAlarmExpressedState.interconnectCO](mtrsmokecoalarmexpressedstate/interconnectco.md)
-- [MTRSmokeCOAlarmExpressedState.interconnectSmoke](mtrsmokecoalarmexpressedstate/interconnectsmoke.md)
-- [MTRSmokeCOAlarmExpressedState.normal](mtrsmokecoalarmexpressedstate/normal.md)
-- [MTRSmokeCOAlarmExpressedState.smokeAlarm](mtrsmokecoalarmexpressedstate/smokealarm.md)
-- [MTRSmokeCOAlarmExpressedState.testing](mtrsmokecoalarmexpressedstate/testing.md)
+- [MTRSmokeCOAlarmExpressedState.batteryAlert](./mtrsmokecoalarmexpressedstate/batteryalert.md)
+- [MTRSmokeCOAlarmExpressedState.coAlarm](./mtrsmokecoalarmexpressedstate/coalarm.md)
+- [MTRSmokeCOAlarmExpressedState.endOfService](./mtrsmokecoalarmexpressedstate/endofservice.md)
+- [MTRSmokeCOAlarmExpressedState.hardwareFault](./mtrsmokecoalarmexpressedstate/hardwarefault.md)
+- [MTRSmokeCOAlarmExpressedState.interconnectCO](./mtrsmokecoalarmexpressedstate/interconnectco.md)
+- [MTRSmokeCOAlarmExpressedState.interconnectSmoke](./mtrsmokecoalarmexpressedstate/interconnectsmoke.md)
+- [MTRSmokeCOAlarmExpressedState.normal](./mtrsmokecoalarmexpressedstate/normal.md)
+- [MTRSmokeCOAlarmExpressedState.smokeAlarm](./mtrsmokecoalarmexpressedstate/smokealarm.md)
+- [MTRSmokeCOAlarmExpressedState.testing](./mtrsmokecoalarmexpressedstate/testing.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrsmokecoalarmexpressedstate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrsmokecoalarmexpressedstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

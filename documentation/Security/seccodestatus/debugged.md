@@ -1,7 +1,8 @@
 # debugged
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The code has been debugged by another process that was allowed to do so.
 
@@ -13,6 +14,10 @@ The code has been debugged by another process that was allowed to do so.
 
 ```swift
 static var debugged: SecCodeStatus { get }
+```
+
+```c
+kSecCodeStatusDebugged
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image picker’s delegate object.
 
@@ -17,15 +18,20 @@ The image picker’s delegate object.
 weak var delegate: (any UIImagePickerControllerDelegate & UINavigationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIImagePickerControllerDelegate,UINavigationControllerDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate receives notifications when the user picks an image or movie, or exits the picker interface. The delegate also decides when to dismiss the picker interface, so you must provide a delegate to use a picker. If this property is `nil`, the picker is dismissed immediately if you try to show it.
 
-For information about the methods you can implement for your delegate object, see [`UIImagePickerControllerDelegate`](uiimagepickercontrollerdelegate.md).
+For information about the methods you can implement for your delegate object, see [`UIImagePickerControllerDelegate`](../uiimagepickercontrollerdelegate.md).
 
 ## See Also
 
-- [protocol UIImagePickerControllerDelegate](uiimagepickercontrollerdelegate.md)
+### Responding to interactions with the picker
+- [protocol UIImagePickerControllerDelegate](../uiimagepickercontrollerdelegate.md)
   A set of methods that your delegate object must implement to interact with the image picker interface.
 
 

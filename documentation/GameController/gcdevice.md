@@ -1,7 +1,8 @@
 # GCDevice
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines a common interface for game input devices.
 
@@ -19,6 +20,10 @@ A protocol that defines a common interface for game input devices.
 protocol GCDevice : NSObjectProtocol
 ```
 
+```objc
+@protocol GCDevice <NSObject>
+```
+
 #### Overview
 
 This protocol provides common properties for game controllers, and mouse and keyboard devices.
@@ -26,46 +31,47 @@ This protocol provides common properties for game controllers, and mouse and key
 ## Topics
 
 ### Getting device information
-- [var vendorName: String?](gcdevice/vendorname.md)
+- [var vendorName: String?](./gcdevice/vendorname.md)
   The manufacturer-provided name for the device, or the user’s name for the device.
-- [var productCategory: String](gcdevice/productcategory.md)
+- [var productCategory: String](./gcdevice/productcategory.md)
   The product category that identifies the type of controller.
-- [Product category constants](product-category-constants.md)
+- [Product category constants](./product-category-constants.md)
 ### Handling input
-- [var handlerQueue: dispatch_queue_t](gcdevice/handlerqueue.md)
+- [var handlerQueue: dispatch_queue_t](./gcdevice/handlerqueue.md)
   The dispatch queue that the framework uses to call element value change handlers.
-- [var physicalInputProfile: GCPhysicalInputProfile](gcdevice/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gcdevice/physicalinputprofile.md)
   The device’s physical input profile, such as a controller’s extended gamepad.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [GCController](gccontroller.md)
-- [GCKeyboard](gckeyboard.md)
-- [GCMouse](gcmouse.md)
-- [GCRacingWheel](gcracingwheel.md)
-- [GCSpatialAccessory](gcspatialaccessory.md)
-- [GCStylus](gcstylus.md)
+- [GCController](./gccontroller.md)
+- [GCKeyboard](./gckeyboard.md)
+- [GCMouse](./gcmouse.md)
+- [GCRacingWheel](./gcracingwheel.md)
+- [GCSpatialAccessory](./gcspatialaccessory.md)
+- [GCStylus](./gcstylus.md)
 
 ## See Also
 
-- [Supporting Game Controllers](supporting-game-controllers.md)
+### Game controllers
+- [Supporting Game Controllers](./supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
-- [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
+- [Letting players use their second-generation Siri Remote as a game controller](./letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
   Receive controller and stylus input to interact with content in your augmented reality app.
-- [class GCController](gccontroller.md)
+- [class GCController](./gccontroller.md)
   A representation of a real game controller, a virtual controller, or a snapshot of a controller.
-- [class GCRacingWheel](gcracingwheel.md)
+- [class GCRacingWheel](./gcracingwheel.md)
   An object that represents a physical racing wheel controller connected to a device.
-- [class GCKeyboard](gckeyboard.md)
+- [class GCKeyboard](./gckeyboard.md)
   An object that represents a physical keyboard connected to a device.
-- [class GCMouse](gcmouse.md)
+- [class GCMouse](./gcmouse.md)
   An object that represents a physical mouse connected to a device.
-- [class GCStylus](gcstylus.md)
+- [class GCStylus](./gcstylus.md)
   An object that represents a physical stylus connected to the device.
 
 

@@ -1,7 +1,8 @@
 # init(networkName:extendedPANID:masterKey:PSKc:channelNumber:panID:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+

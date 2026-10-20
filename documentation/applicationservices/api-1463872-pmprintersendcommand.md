@@ -1,7 +1,8 @@
 # PMPrinterSendCommand(_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func PMPrinterSendCommand(_ printer: PMPrinter, _ commandString: CFString, _ jobTitle: CFString?, _ options: CFDictionary?) -> OSStatus
+```
+
+```c
+OSStatus PMPrinterSendCommand(PMPrinter printer, CFStringRef commandString, CFStringRef jobTitle, CFDictionaryRef options);
 ```
 
 

@@ -1,17 +1,22 @@
 # doubleValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that indicates the current extent of the progress indicator.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var doubleValue: Double { get set }
+```
+
+```objc
+@property double doubleValue;
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ An indeterminate progress indicator does not use this value.
 
 ## See Also
 
-- [func increment(by: Double)](nsprogressindicator/increment(by:).md)
+### Advancing the progress bar
+- [func increment(by: Double)](./increment%28by%29.md)
   Advances the progress bar of a determinate progress indicator by the specified amount.
-- [var minValue: Double](nsprogressindicator/minvalue.md)
+- [var minValue: Double](./minvalue.md)
   The minimum value for the progress indicator.
-- [var maxValue: Double](nsprogressindicator/maxvalue.md)
+- [var maxValue: Double](./maxvalue.md)
   The maximum value for the progress indicator.
 
 

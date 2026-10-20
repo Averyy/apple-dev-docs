@@ -1,7 +1,8 @@
 # NSMetadataQuery
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query that you perform against Spotlight metadata.
 
@@ -20,11 +21,15 @@ A query that you perform against Spotlight metadata.
 class NSMetadataQuery
 ```
 
+```objc
+@interface NSMetadataQuery : NSObject
+```
+
 #### Overview
 
-The [`NSMetadataQuery`](nsmetadataquery.md) class encapsulates the functionality provided by the [`MDQuery`](https://developer.apple.com/documentation/coreservices/file_metadata/mdquery) opaque type for querying the Spotlight metadata.
+The [`NSMetadataQuery`](./nsmetadataquery.md) class encapsulates the functionality provided by the [MDQuery](../coreservices/file_metadata/mdquery.md) opaque type for querying the Spotlight metadata.
 
-[`NSMetadataQuery`](nsmetadataquery.md) objects provide metadata query results in several ways:
+[`NSMetadataQuery`](./nsmetadataquery.md) objects provide metadata query results in several ways:
 
 - As individual attribute values for requested attributes.
 - As value lists that contain the distinct values for given attributes in the query results.
@@ -33,110 +38,111 @@ The [`NSMetadataQuery`](nsmetadataquery.md) class encapsulates the functionality
 
 Queries have two phases: the initial gathering phase that collects all currently matching results and a second live-update phase.
 
-By default, the receiver has no limitation on its search scope. Use the [`searchScopes`](nsmetadataquery/searchscopes.md) property to customize.
+By default, the receiver has no limitation on its search scope. Use the [`searchScopes`](./nsmetadataquery/searchscopes.md) property to customize.
 
-By default, notification of updated results occurs at 1.0 seconds. Use the [`notificationBatchingInterval`](nsmetadataquery/notificationbatchinginterval.md) property to customize.
+By default, notification of updated results occurs at 1.0 seconds. Use the [`notificationBatchingInterval`](./nsmetadataquery/notificationbatchinginterval.md) property to customize.
 
-You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) property before starting a query.
+You must set a predicate with the [`predicate`](./nsmetadataquery/predicate.md) property before starting a query.
 
 ## Topics
 
 ### Configuring queries
-- [var searchScopes: [Any]](nsmetadataquery/searchscopes.md)
+- [var searchScopes: [Any]](./nsmetadataquery/searchscopes.md)
   An array containing the search scopes.
-- [var predicate: NSPredicate?](nsmetadataquery/predicate.md)
+- [var predicate: NSPredicate?](./nsmetadataquery/predicate.md)
   The predicate used to filter query results.
-- [var sortDescriptors: [NSSortDescriptor]](nsmetadataquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]](./nsmetadataquery/sortdescriptors.md)
   An array of sort descriptor objects.
-- [var valueListAttributes: [String]](nsmetadataquery/valuelistattributes.md)
+- [var valueListAttributes: [String]](./nsmetadataquery/valuelistattributes.md)
   An array of attributes whose values are gathered by the query.
-- [var groupingAttributes: [String]?](nsmetadataquery/groupingattributes.md)
+- [var groupingAttributes: [String]?](./nsmetadataquery/groupingattributes.md)
   An array of grouping attributes. (read-only)
-- [var notificationBatchingInterval: TimeInterval](nsmetadataquery/notificationbatchinginterval.md)
+- [var notificationBatchingInterval: TimeInterval](./nsmetadataquery/notificationbatchinginterval.md)
   The interval at which notification of updated results occurs.
-- [var delegate: (any NSMetadataQueryDelegate)?](nsmetadataquery/delegate.md)
+- [var delegate: (any NSMetadataQueryDelegate)?](./nsmetadataquery/delegate.md)
   The query’s delegate.
-- [var searchItems: [Any]?](nsmetadataquery/searchitems.md)
+- [var searchItems: [Any]?](./nsmetadataquery/searchitems.md)
   An array of objects that define the query’s scope.
 ### Running queries
-- [var isStarted: Bool](nsmetadataquery/isstarted.md)
+- [var isStarted: Bool](./nsmetadataquery/isstarted.md)
   A Boolean value that indicates whether the query has started. (read-only)
-- [func start() -> Bool](nsmetadataquery/start.md)
+- [func start() -> Bool](./nsmetadataquery/start%28%29.md)
   Attempts to start the query.
-- [var isGathering: Bool](nsmetadataquery/isgathering.md)
+- [var isGathering: Bool](./nsmetadataquery/isgathering.md)
   A Boolean value that indicates whether the receiver is in the initial gathering phase of the query. (read-only)
-- [var isStopped: Bool](nsmetadataquery/isstopped.md)
+- [var isStopped: Bool](./nsmetadataquery/isstopped.md)
   A Boolean value that indicates whether the query has stopped.
-- [func stop()](nsmetadataquery/stop.md)
+- [func stop()](./nsmetadataquery/stop%28%29.md)
   Stops the receiver’s current query from gathering any further results.
 ### Getting query results
-- [var results: [Any]](nsmetadataquery/results.md)
+- [var results: [Any]](./nsmetadataquery/results.md)
   An array containing the query’s results.
-- [var resultCount: Int](nsmetadataquery/resultcount.md)
+- [var resultCount: Int](./nsmetadataquery/resultcount.md)
   The number of results returned by the query. (read-only)
-- [func result(at: Int) -> Any](nsmetadataquery/result(at:).md)
+- [func result(at: Int) -> Any](./nsmetadataquery/result%28at%29.md)
   Returns the query result at a specific index.
-- [func index(ofResult: Any) -> Int](nsmetadataquery/index(ofresult:).md)
+- [func index(ofResult: Any) -> Int](./nsmetadataquery/index%28ofresult%29.md)
   Returns the index of a query result object in the receiver’s results array.
-- [var groupedResults: [NSMetadataQueryResultGroup]](nsmetadataquery/groupedresults.md)
+- [var groupedResults: [NSMetadataQueryResultGroup]](./nsmetadataquery/groupedresults.md)
   An array containing hierarchical groups of query results. (read-only)
-- [class NSMetadataQueryResultGroup](nsmetadataqueryresultgroup.md)
-  The `NSMetadataQueryResultGroup` class represents a collection of grouped attribute results returned by an [`NSMetadataQuery`](nsmetadataquery.md) object.
-- [func enumerateResults((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsmetadataquery/enumerateresults(_:).md)
+- [class NSMetadataQueryResultGroup](./nsmetadataqueryresultgroup.md)
+  The `NSMetadataQueryResultGroup` class represents a collection of grouped attribute results returned by an [`NSMetadataQuery`](./nsmetadataquery.md) object.
+- [func enumerateResults((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsmetadataquery/enumerateresults%28_%29.md)
   Enumerates the current set of results using the given block.
-- [func enumerateResults(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsmetadataquery/enumerateresults(options:using:).md)
+- [func enumerateResults(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsmetadataquery/enumerateresults%28options,using%29.md)
   Enumerates the current set of results using the given options and block.
-- [var valueLists: [String : [NSMetadataQueryAttributeValueTuple]]](nsmetadataquery/valuelists.md)
+- [var valueLists: [String : [NSMetadataQueryAttributeValueTuple]]](./nsmetadataquery/valuelists.md)
   A dictionary containing the value lists generated by the query.
-- [class NSMetadataQueryAttributeValueTuple](nsmetadataqueryattributevaluetuple.md)
+- [class NSMetadataQueryAttributeValueTuple](./nsmetadataqueryattributevaluetuple.md)
   The `NSMetadataQueryAttributeValueTuple` class represents attribute-value tuples, which are objects that contain the attribute name and value of a metadata attribute.
-- [func value(ofAttribute: String, forResultAt: Int) -> Any?](nsmetadataquery/value(ofattribute:forresultat:).md)
+- [func value(ofAttribute: String, forResultAt: Int) -> Any?](./nsmetadataquery/value%28ofattribute,forresultat%29.md)
   Returns the value for the attribute name `attrName` at the index in the results specified by `idx`.
-- [func enableUpdates()](nsmetadataquery/enableupdates.md)
+- [func enableUpdates()](./nsmetadataquery/enableupdates%28%29.md)
   Enables updates to the query results.
-- [func disableUpdates()](nsmetadataquery/disableupdates.md)
+- [func disableUpdates()](./nsmetadataquery/disableupdates%28%29.md)
   Disables updates to the query results.
-- [var operationQueue: OperationQueue?](nsmetadataquery/operationqueue.md)
+- [var operationQueue: OperationQueue?](./nsmetadataquery/operationqueue.md)
   The queue on which query result notifications are posted.
 ### Working with notifications
-- [static let NSMetadataQueryDidFinishGathering: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidfinishgathering.md)
+- [static let NSMetadataQueryDidFinishGathering: NSNotification.Name](./nsnotification/name-swift.struct/nsmetadataquerydidfinishgathering.md)
   Posted when the receiver has finished with the initial result-gathering phase of the query.
-- [static let NSMetadataQueryDidStartGathering: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidstartgathering.md)
+- [static let NSMetadataQueryDidStartGathering: NSNotification.Name](./nsnotification/name-swift.struct/nsmetadataquerydidstartgathering.md)
   Posted when the receiver begins with the initial result-gathering phase of the query.
-- [static let NSMetadataQueryDidUpdate: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidupdate.md)
+- [static let NSMetadataQueryDidUpdate: NSNotification.Name](./nsnotification/name-swift.struct/nsmetadataquerydidupdate.md)
   Posted when the receiver’s results have changed during the live-update phase of the query.
-- [static let NSMetadataQueryGatheringProgress: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerygatheringprogress.md)
+- [static let NSMetadataQueryGatheringProgress: NSNotification.Name](./nsnotification/name-swift.struct/nsmetadataquerygatheringprogress.md)
   Posted as the receiver is collecting results during the initial result-gathering phase of the query.
 ### Working with notification messages
-- [NSMetadataQuery.DidFinishGatheringMessage](nsmetadataquery/didfinishgatheringmessage.md)
+- [NSMetadataQuery.DidFinishGatheringMessage](./nsmetadataquery/didfinishgatheringmessage.md)
   A message a metadata query sends when it finishes the initial result-gathering phase of the query.
-- [NSMetadataQuery.DidStartGatheringMessage](nsmetadataquery/didstartgatheringmessage.md)
+- [NSMetadataQuery.DidStartGatheringMessage](./nsmetadataquery/didstartgatheringmessage.md)
   A message a metadata query sends when it starts the initial result-gathering phase of the query.
 ### Constants
-- [Metadata Query Search Scopes](metadata-query-search-scopes.md)
-  Constants for the predefined search scopes used by [`searchScopes`](nsmetadataquery/searchscopes.md).
-- [Content Relevance](content-relevance.md)
+- [Metadata Query Search Scopes](./metadata-query-search-scopes.md)
+  Constants for the predefined search scopes used by [`searchScopes`](./nsmetadataquery/searchscopes.md).
+- [Content Relevance](./content-relevance.md)
   In addition to including the requested metadata attributes, a query result also includes content relevance, accessed with the following key.
-- [Keys for Use with a Notification Info Dictionary](keys-for-use-with-a-notification-info-dictionary.md)
+- [Keys for Use with a Notification Info Dictionary](./keys-for-use-with-a-notification-info-dictionary.md)
   Constants for keys to retrieve the collection of changed items from a notification’s user info dictionary.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSMetadataQueryDelegate](nsmetadataquerydelegate.md)
+### File Search
+- [protocol NSMetadataQueryDelegate](./nsmetadataquerydelegate.md)
   An interface that enables the delegate of a metadata query to provide substitute results or attributes.
-- [class NSMetadataItem](nsmetadataitem.md)
+- [class NSMetadataItem](./nsmetadataitem.md)
   The metadata associated with a file.
 
 

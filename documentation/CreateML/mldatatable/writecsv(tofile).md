@@ -1,7 +1,8 @@
 # writeCSV(toFile:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports a CSV file of the data table to the given directory path.
 
@@ -25,11 +26,12 @@ func writeCSV(toFile path: String) throws
 
 ## See Also
 
-- [func write(to: URL) throws](mldatatable/write(to:).md)
+### Saving a data table
+- [func write(to: URL) throws](./write%28to%29.md)
   Exports a binary file of the data table to the given directory URL.
-- [func write(toDirectory: String) throws](mldatatable/write(todirectory:).md)
+- [func write(toDirectory: String) throws](./write%28todirectory%29.md)
   Exports a binary file of the data table to the given directory path.
-- [func writeCSV(to: URL) throws](mldatatable/writecsv(to:).md)
+- [func writeCSV(to: URL) throws](./writecsv%28to%29.md)
   Exports a CSV file of the data table to the given directory URL.
 
 

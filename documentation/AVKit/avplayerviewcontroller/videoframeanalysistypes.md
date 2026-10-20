@@ -1,7 +1,8 @@
 # videoFrameAnalysisTypes
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of analysis a player view controller performs on a paused video frame.
 
@@ -16,13 +17,18 @@ The types of analysis a player view controller performs on a paused video frame.
 var videoFrameAnalysisTypes: AVVideoFrameAnalysisType { get set }
 ```
 
+```objc
+@property (nonatomic) AVVideoFrameAnalysisType videoFrameAnalysisTypes;
+```
+
 ## See Also
 
-- [var allowsVideoFrameAnalysis: Bool](avplayerviewcontroller/allowsvideoframeanalysis.md)
+### Configuring frame analysis
+- [var allowsVideoFrameAnalysis: Bool](./allowsvideoframeanalysis.md)
   A Boolean value that indicates whether to perform video frame analysis.
-- [var toggleLookupAction: UIAction](avplayerviewcontroller/togglelookupaction.md)
+- [var toggleLookupAction: UIAction](./togglelookupaction.md)
   An action that enables the visual lookup interface.
-- [struct AVVideoFrameAnalysisType](avvideoframeanalysistype.md)
+- [struct AVVideoFrameAnalysisType](../avvideoframeanalysistype.md)
   Constants that define the types of analysis a player view controller may perform on a paused video frame.
 
 

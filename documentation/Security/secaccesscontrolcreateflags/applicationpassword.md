@@ -1,7 +1,8 @@
 # applicationPassword
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Option to use an application-provided password for data encryption key generation.
 
@@ -20,9 +21,13 @@ Option to use an application-provided password for data encryption key generatio
 static var applicationPassword: SecAccessControlCreateFlags { get }
 ```
 
+```c
+kSecAccessControlApplicationPassword
+```
+
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Restricting keychain item accessibility](../restricting-keychain-item-accessibility.md)
 
 #### Discussion
 

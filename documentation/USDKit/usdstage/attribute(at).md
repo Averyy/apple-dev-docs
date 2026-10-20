@@ -1,7 +1,8 @@
 # attribute(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the attribute at a given path, if it exists.
 
@@ -25,21 +26,22 @@ If no attribute exists at the resolved path, returns an invalid attribute handle
 
 ## See Also
 
-- [func prim(at: USDLayer.Path) -> USDPrim](usdstage/prim(at:).md)
+### Accessing prims and properties
+- [func prim(at: USDLayer.Path) -> USDPrim](./prim%28at%29.md)
   Returns the prim at a given path, if it exists.
-- [func object(at: USDLayer.Path) -> USDStage.Object](usdstage/object(at:).md)
+- [func object(at: USDLayer.Path) -> USDStage.Object](./object%28at%29.md)
   Returns the object at a given path, if it exists.
-- [func property(at: USDLayer.Path) -> USDPrim.Property](usdstage/property(at:).md)
+- [func property(at: USDLayer.Path) -> USDPrim.Property](./property%28at%29.md)
   Returns the property at a given path, if it exists.
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdstage/relationship(at:).md)
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](./relationship%28at%29.md)
   Returns the relationship at a given path, if it exists.
-- [var pseudoRoot: USDPrim](usdstage/pseudoroot.md)
+- [var pseudoRoot: USDPrim](./pseudoroot.md)
   The prim at the top of the stage’s namespace, whose path is `/`.
-- [var defaultPrim: USDPrim?](usdstage/defaultprim.md)
+- [var defaultPrim: USDPrim?](./defaultprim.md)
   The prim designated as this stage’s default entry point when the stage is referenced.
-- [var hasDefaultPrim: Bool](usdstage/hasdefaultprim.md)
+- [var hasDefaultPrim: Bool](./hasdefaultprim.md)
   Return true if this stage’s root layer has an authored opinion for the default prim layer metadata.
-- [USDStage.Object](usdstage/object.md)
+- [USDStage.Object](./object.md)
 
 
 ---

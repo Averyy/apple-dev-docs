@@ -1,7 +1,8 @@
 # filenameExtension
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type property that returns the tag class used to map a type to a filename extension.
 
@@ -30,7 +31,8 @@ The raw value of this tag class is `public.filename-extension`.
 
 ## See Also
 
-- [static var mimeType: UTTagClass](uttagclass/mimetype.md)
+### Getting a declared types mapping
+- [static var mimeType: UTTagClass](./mimetype.md)
   A type property that returns the tag class used to map a type to a MIME type.
 
 

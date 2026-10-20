@@ -1,14 +1,15 @@
 # getMediumWithIndex
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IONetworkMedium * getMediumWithIndex(const OSDictionary *dict, UInt32 index, UInt32 mask);
 ```
 

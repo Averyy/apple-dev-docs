@@ -1,7 +1,8 @@
 # vn_bwrite
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 System-provided implementation of "bwrite" vnop.
 
@@ -10,11 +11,11 @@ System-provided implementation of "bwrite" vnop.
 
 ## Declaration
 
-```swift
+```c
 int vn_bwrite(struct vnop_bwrite_args *ap);
 ```
 
-#### Return_value
+#### Return Value
 
 Results of buf_bwrite directly.
 

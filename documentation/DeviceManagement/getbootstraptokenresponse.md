@@ -1,7 +1,8 @@
 # GetBootstrapTokenResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The get bootstrap token response details.
 
@@ -14,7 +15,7 @@ The get bootstrap token response details.
 
 ## Declaration
 
-```swift
+```
 object GetBootstrapTokenResponse
 ```
 
@@ -24,7 +25,8 @@ object GetBootstrapTokenResponse
 
 ## See Also
 
-- [object GetBootstrapTokenRequest](getbootstraptokenrequest.md)
+### Requests and responses
+- [object GetBootstrapTokenRequest](./getbootstraptokenrequest.md)
   The get bootstrap token request details.
 
 

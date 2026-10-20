@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeOneTimeUseCode.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,18 +11,18 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeOneTimeUseCode.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/createdbyactor-data.dictionary.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor](./relationships-data.dictionary/createdbyactor-data.dictionary.md)
   The data that describes the created by actor of the In-App Purchase offer code one-time use code.
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor](./relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
   The data that describes the deactivated by actor of the In-App Purchase offer code one-time use code.
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/values-data.dictionary.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values](./relationships-data.dictionary/values-data.dictionary.md)
   Information about the values of the In-App Purchase offer code one-time use code.
 
 ## Properties
@@ -32,7 +33,8 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Attributes](inapppurchaseoffercodeonetimeusecode/attributes-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase offer code one-time use code resource.
 
 

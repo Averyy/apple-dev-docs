@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the session’s delegate object and the dispatch queue on which to call the delegate’s methods.
 
@@ -20,16 +21,21 @@ Sets the session’s delegate object and the dispatch queue on which to call the
 func setDelegate(_ delegate: (any AVContentKeySessionDelegate)?, queue delegateQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVContentKeySessionDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
+```
+
 ## Parameters
 
-- `delegate`: An object that conforms to the [`AVContentKeySessionDelegate`](avcontentkeysessiondelegate.md) protocol.
+- `delegate`: An object that conforms to the [`AVContentKeySessionDelegate`](../avcontentkeysessiondelegate.md) protocol.
 - `delegateQueue`: The dispatch queue on which the session calls the delegate object.
 
 ## See Also
 
-- [var delegate: (any AVContentKeySessionDelegate)?](avcontentkeysession/delegate.md)
+### Managing the delegate object
+- [var delegate: (any AVContentKeySessionDelegate)?](./delegate.md)
   The content key session’s delegate object.
-- [var delegateQueue: dispatch_queue_t?](avcontentkeysession/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue the session uses to invoke delegate callbacks.
 
 

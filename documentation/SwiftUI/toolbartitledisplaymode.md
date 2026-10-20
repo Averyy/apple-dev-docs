@@ -1,7 +1,8 @@
 # ToolbarTitleDisplayMode
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the behavior of title of a toolbar.
 
@@ -22,7 +23,7 @@ struct ToolbarTitleDisplayMode
 
 #### Overview
 
-Use the [`toolbarTitleDisplayMode(_:)`](view/toolbartitledisplaymode(_:).md) modifier to configure the title display behavior of your toolbar:
+Use the [`toolbarTitleDisplayMode(_:)`](./view/toolbartitledisplaymode%28_%29.md) modifier to configure the title display behavior of your toolbar:
 
 ```swift
 NavigationStack {
@@ -34,18 +35,19 @@ NavigationStack {
 ## Topics
 
 ### Getting display modes
-- [static var automatic: ToolbarTitleDisplayMode](toolbartitledisplaymode/automatic.md)
+- [static var automatic: ToolbarTitleDisplayMode](./toolbartitledisplaymode/automatic.md)
   The automatic mode.
-- [static var inline: ToolbarTitleDisplayMode](toolbartitledisplaymode/inline.md)
+- [static var inline: ToolbarTitleDisplayMode](./toolbartitledisplaymode/inline.md)
   The inline mode.
-- [static var inlineLarge: ToolbarTitleDisplayMode](toolbartitledisplaymode/inlinelarge.md)
+- [static var inlineLarge: ToolbarTitleDisplayMode](./toolbartitledisplaymode/inlinelarge.md)
   The inline large mode.
-- [static var large: ToolbarTitleDisplayMode](toolbartitledisplaymode/large.md)
+- [static var large: ToolbarTitleDisplayMode](./toolbartitledisplaymode/large.md)
   The large mode.
 
 ## See Also
 
-- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
+### Configuring the toolbar title display mode
+- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](./view/toolbartitledisplaymode%28_%29.md)
   Configures the toolbar title display mode for this view.
 
 

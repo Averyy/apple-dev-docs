@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 contentType type, can be same as previousType
 

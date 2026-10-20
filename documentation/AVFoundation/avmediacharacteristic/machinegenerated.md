@@ -1,7 +1,8 @@
 # machineGenerated
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
@@ -20,6 +21,10 @@ A media characteristic that indicates that a track was generated in an automated
 static let machineGenerated: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicMachineGenerated;
+```
+
 #### Discussion
 
 This media characteristic can be used to distinguish machine generated content from human authored content. The value of this characteristic is @“public.machine-generated”.
@@ -30,11 +35,12 @@ Also see -[AVAssetTrack hasMediaCharacteristic:] and -[AVMediaSelectionOption ha
 
 ## See Also
 
-- [static let isOriginalContent: AVMediaCharacteristic](avmediacharacteristic/isoriginalcontent.md)
+### Content
+- [static let isOriginalContent: AVMediaCharacteristic](./isoriginalcontent.md)
   A media characteristic that indicates that a track or media selection option contains original content.
-- [static let isMainProgramContent: AVMediaCharacteristic](avmediacharacteristic/ismainprogramcontent.md)
+- [static let isMainProgramContent: AVMediaCharacteristic](./ismainprogramcontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
-- [static let isAuxiliaryContent: AVMediaCharacteristic](avmediacharacteristic/isauxiliarycontent.md)
+- [static let isAuxiliaryContent: AVMediaCharacteristic](./isauxiliarycontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation.
 
 

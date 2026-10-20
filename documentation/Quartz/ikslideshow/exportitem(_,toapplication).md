@@ -1,7 +1,8 @@
 # exportItem(_:toApplication:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Exports a slideshow item to the application that has the provided bundle identifier.
 
@@ -14,6 +15,10 @@ Exports a slideshow item to the application that has the provided bundle identif
 class func exportItem(_ item: Any!, toApplication applicationBundleIdentifier: String!)
 ```
 
+```objc
++ (void) exportSlideshowItem:(id) item toApplication:(NSString *) applicationBundleIdentifier;
+```
+
 ## Parameters
 
 - `item`: The item to export
@@ -21,7 +26,8 @@ class func exportItem(_ item: Any!, toApplication applicationBundleIdentifier: S
 
 ## See Also
 
-- [class func canExport(toApplication: String!) -> Bool](ikslideshow/canexport(toapplication:).md)
+### Exporting Slideshow Items
+- [class func canExport(toApplication: String!) -> Bool](./canexport%28toapplication%29.md)
   Finds out whether the slideshow can export its contents to an application.
 
 

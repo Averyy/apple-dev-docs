@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Welcome Message identifier provided by a business.
 

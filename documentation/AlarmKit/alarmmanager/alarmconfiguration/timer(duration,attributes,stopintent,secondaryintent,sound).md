@@ -1,7 +1,8 @@
 # timer(duration:attributes:stopIntent:secondaryIntent:sound:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration that behaves like a traditional timer.
 
@@ -30,7 +31,8 @@ The timer starts immediately, runs for `duration` seconds, and then alerts. If y
 
 ## See Also
 
-- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:stopintent:secondaryintent:sound:).md)
+### Configuring a countdown
+- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](./init%28countdownduration,schedule,attributes,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a countdown.
 
 

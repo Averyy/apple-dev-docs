@@ -1,7 +1,8 @@
 # kSecMatchIssuers
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string to match against a certificate or identity’s issuers.
 
@@ -20,9 +21,13 @@ A key whose value is a string to match against a certificate or identity’s iss
 let kSecMatchIssuers: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchIssuers;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), where the array consists of X.500 names of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). If provided, returned certificates or identities are limited to those whose certificate chain contains one of the issuers provided in this list.
+The corresponding value is of type [`CFArray`](../CoreFoundation/cfarray.md), where the array consists of X.500 names of type [`CFData`](../CoreFoundation/cfdata.md). If provided, returned certificates or identities are limited to those whose certificate chain contains one of the issuers provided in this list.
 
 
 ---

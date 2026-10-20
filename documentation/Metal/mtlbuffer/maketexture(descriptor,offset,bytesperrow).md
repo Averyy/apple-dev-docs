@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a texture that shares its storage with the buffer.
@@ -11,7 +12,7 @@ Creates a texture that shares its storage with the buffer.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.13+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,10 +21,14 @@ Creates a texture that shares its storage with the buffer.
 func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int) -> (any MTLTexture)?
 ```
 
+```objc
+- (id<MTLTexture>) newTextureWithDescriptor:(MTLTextureDescriptor *) descriptor offset:(NSUInteger) offset bytesPerRow:(NSUInteger) bytesPerRow;
+```
+
 ## Mentions
 
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
-- [Optimizing texture data](optimizing-texture-data.md)
+- [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
+- [Optimizing texture data](../optimizing-texture-data.md)
 
 #### Return Value
 
@@ -31,13 +36,13 @@ A new texture that shares the buffer’s underlying storage.
 
 #### Discussion
 
-This method creates a new [`MTLTexture`](mtltexture.md) instance that uses the same data as the buffer’s. Modifying the buffer also modifies the new texture because they share the same underlying memory.
+This method creates a new [`MTLTexture`](../mtltexture.md) instance that uses the same data as the buffer’s. Modifying the buffer also modifies the new texture because they share the same underlying memory.
 
 > **Note**:  Metal may not be able to optimize a texture that shares memory with a buffer.
 
 The texture’s resource data is coherent between multiple render passes. However, that data may not be coherent within a single render pass due to caching at runtime. For example, a texture you create from the method may not be able to immediately reflect changes to the underlying buffer that come from a render or kernel function.
 
-If this buffer’s [`storageMode`](mtltexturedescriptor/storagemode.md) is [`MTLStorageMode.managed`](mtlstoragemode/managed.md), and a render or kernel function modifies it, the CPU can access the new values through a texture after calling the [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) method. CPU memory operations are only coherent between command buffer boundaries. GPU barriers guard its memory operations to buffers and textures so that each operation finishes running before the next one begins.
+If this buffer’s [`storageMode`](../mtltexturedescriptor/storagemode.md) is [`MTLStorageMode.managed`](../mtlstoragemode/managed.md), and a render or kernel function modifies it, the CPU can access the new values through a texture after calling the [`synchronize(resource:)`](../mtlblitcommandencoder/synchronize%28resource%29.md) method. CPU memory operations are only coherent between command buffer boundaries. GPU barriers guard its memory operations to buffers and textures so that each operation finishes running before the next one begins.
 
 You can create multiple, nonoverlapping textures that use the same buffer; however, the GPU serializes memory operations to those textures.
 
@@ -45,25 +50,25 @@ You can create multiple, nonoverlapping textures that use the same buffer; howev
 
 To create a linear texture, you need to:
 
-- Align the `offset` and `bytesPerRow` parameters to the value that the [`minimumLinearTextureAlignment(for:)`](mtldevice/minimumlineartexturealignment(for:).md) method returns.
+- Align the `offset` and `bytesPerRow` parameters to the value that the [`minimumLinearTextureAlignment(for:)`](../mtldevice/minimumlineartexturealignment%28for%29.md) method returns.
 - Set the `bytesPerRow` parameter to a value greater than or equal to the number of bytes in one row of pixels — the product of the row’s width, in pixels, and the size of one pixel, in bytes.
 
 Additionally, creating a linear texture from this method adds the following restrictions for the `descriptor` parameter’s properties:
 
 | Property | Acceptable values for a linear texture |
 | --- | --- |
-| [`textureType`](mtltexturedescriptor/texturetype.md) | [`MTLTextureType.type2D`](mtltexturetype/type2d.md) or [`MTLTextureType.typeTextureBuffer`](mtltexturetype/typetexturebuffer.md) |
-| [`depth`](mtltexturedescriptor/depth.md) | `1` |
-| [`arrayLength`](mtltexturedescriptor/arraylength.md) | `1` |
-| [`mipmapLevelCount`](mtltexturedescriptor/mipmaplevelcount.md) | `1` |
-| [`sampleCount`](mtltexturedescriptor/samplecount.md) | `1` |
-| [`usage`](mtltexturedescriptor/usage.md) | The [`renderTarget`](mtltextureusage/rendertarget.md) value if the [`MTLDevice`](mtldevice.md) instance supports [`MTLGPUFamily.apple1`](mtlgpufamily/apple1.md) (see [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md)), or any other [`MTLTextureUsage`](mtltextureusage.md) value |
-| [`storageMode`](mtltexturedescriptor/storagemode.md) | The same value as this buffer’s [`storageMode`](mtlresource/storagemode.md) property (see [`Resource fundamentals`](resource-fundamentals.md)) |
-| [`pixelFormat`](mtltexturedescriptor/pixelformat.md) | Any ordinary or packed color [`MTLPixelFormat`](mtlpixelformat.md), except [`MTLPixelFormat.gbgr422`](mtlpixelformat/gbgr422.md) and [`MTLPixelFormat.bgrg422`](mtlpixelformat/bgrg422.md) |
+| [`textureType`](../mtltexturedescriptor/texturetype.md) | [`MTLTextureType.type2D`](../mtltexturetype/type2d.md) or [`MTLTextureType.typeTextureBuffer`](../mtltexturetype/typetexturebuffer.md) |
+| [`depth`](../mtltexturedescriptor/depth.md) | `1` |
+| [`arrayLength`](../mtltexturedescriptor/arraylength.md) | `1` |
+| [`mipmapLevelCount`](../mtltexturedescriptor/mipmaplevelcount.md) | `1` |
+| [`sampleCount`](../mtltexturedescriptor/samplecount.md) | `1` |
+| [`usage`](../mtltexturedescriptor/usage.md) | The [`renderTarget`](../mtltextureusage/rendertarget.md) value if the [`MTLDevice`](../mtldevice.md) instance supports [`MTLGPUFamily.apple1`](../mtlgpufamily/apple1.md) (see [`supportsFamily(_:)`](../mtldevice/supportsfamily%28_%29.md)), or any other [`MTLTextureUsage`](../mtltextureusage.md) value |
+| [`storageMode`](../mtltexturedescriptor/storagemode.md) | The same value as this buffer’s [`storageMode`](../mtlresource/storagemode.md) property (see [Resource fundamentals](../resource-fundamentals.md)) |
+| [`pixelFormat`](../mtltexturedescriptor/pixelformat.md) | Any ordinary or packed color [`MTLPixelFormat`](../mtlpixelformat.md), except [`MTLPixelFormat.gbgr422`](../mtlpixelformat/gbgr422.md) and [`MTLPixelFormat.bgrg422`](../mtlpixelformat/bgrg422.md) |
 
-Samplers can use any [`MTLSamplerAddressMode`](mtlsampleraddressmode.md) to sample linear textures from this method on any device that supports the [`MTLGPUFamily.apple2`](mtlgpufamily/apple2.md) feature family or later.
+Samplers can use any [`MTLSamplerAddressMode`](../mtlsampleraddressmode.md) to sample linear textures from this method on any device that supports the [`MTLGPUFamily.apple2`](../mtlgpufamily/apple2.md) feature family or later.
 
-> **Note**:  For devices that support only the [`MTLGPUFamily.apple1`](mtlgpufamily/apple1.md) feature family, samplers can only use [`MTLSamplerAddressMode.clampToEdge`](mtlsampleraddressmode/clamptoedge.md) to sample a linear texture.
+> **Note**:  For devices that support only the [`MTLGPUFamily.apple1`](../mtlgpufamily/apple1.md) feature family, samplers can only use [`MTLSamplerAddressMode.clampToEdge`](../mtlsampleraddressmode/clamptoedge.md) to sample a linear texture.
 
 ## Parameters
 

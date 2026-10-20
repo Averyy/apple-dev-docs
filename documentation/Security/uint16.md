@@ -1,7 +1,8 @@
 # uint16
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias uint16 = UInt16
+```
+
+```c
+typedef uint16_t uint16;
 ```
 
 

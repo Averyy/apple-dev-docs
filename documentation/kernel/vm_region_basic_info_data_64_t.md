@@ -1,14 +1,15 @@
 # vm_region_basic_info_data_64_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vm_region_basic_info_64 {
     ...
 } vm_region_basic_info_data_64_t;
@@ -17,28 +18,29 @@ typedef struct vm_region_basic_info_64 {
 ## Topics
 
 ### Instance Properties
-- [behavior](vm_region_basic_info_data_64_t/1573734-behavior.md)
-- [inheritance](vm_region_basic_info_data_64_t/1573747-inheritance.md)
-- [max_protection](vm_region_basic_info_data_64_t/1573669-max_protection.md)
-- [offset](vm_region_basic_info_data_64_t/1573661-offset.md)
-- [protection](vm_region_basic_info_data_64_t/1573685-protection.md)
-- [reserved](vm_region_basic_info_data_64_t/1573662-reserved.md)
-- [shared](vm_region_basic_info_data_64_t/1573617-shared.md)
-- [user_wired_count](vm_region_basic_info_data_64_t/1573712-user_wired_count.md)
+- [behavior](./vm_region_basic_info_data_64_t/api-1573734-behavior.md)
+- [inheritance](./vm_region_basic_info_data_64_t/api-1573747-inheritance.md)
+- [max_protection](./vm_region_basic_info_data_64_t/api-1573669-max_protection.md)
+- [offset](./vm_region_basic_info_data_64_t/api-1573661-offset.md)
+- [protection](./vm_region_basic_info_data_64_t/api-1573685-protection.md)
+- [reserved](./vm_region_basic_info_data_64_t/api-1573662-reserved.md)
+- [shared](./vm_region_basic_info_data_64_t/api-1573617-shared.md)
+- [user_wired_count](./vm_region_basic_info_data_64_t/api-1573712-user_wired_count.md)
 
 ## See Also
 
-- [vm_region](1585377-vm_region.md)
-- [vm_region_64](1585386-vm_region_64.md)
-- [vm_region_recurse](1585351-vm_region_recurse.md)
-- [vm_region_recurse_64](1585424-vm_region_recurse_64.md)
-- [vm_region_basic_info_data_t](vm_region_basic_info_data_t.md)
-- [vm_region_extended_info_data_t](vm_region_extended_info_data_t.md)
-- [vm_region_submap_info_data_64_t](vm_region_submap_info_data_64_t.md)
-- [vm_region_submap_info_data_t](vm_region_submap_info_data_t.md)
-- [vm_region_submap_short_info_data_64_t](vm_region_submap_short_info_data_64_t.md)
-- [vm_region_top_info_data_t](vm_region_top_info_data_t.md)
-- [vm_page_info_basic_data_t](vm_page_info_basic_data_t.md)
+### Regions
+- [vm_region](./api-1585377-vm_region.md)
+- [vm_region_64](./api-1585386-vm_region_64.md)
+- [vm_region_recurse](./api-1585351-vm_region_recurse.md)
+- [vm_region_recurse_64](./api-1585424-vm_region_recurse_64.md)
+- [vm_region_basic_info_data_t](./vm_region_basic_info_data_t.md)
+- [vm_region_extended_info_data_t](./vm_region_extended_info_data_t.md)
+- [vm_region_submap_info_data_64_t](./vm_region_submap_info_data_64_t.md)
+- [vm_region_submap_info_data_t](./vm_region_submap_info_data_t.md)
+- [vm_region_submap_short_info_data_64_t](./vm_region_submap_short_info_data_64_t.md)
+- [vm_region_top_info_data_t](./vm_region_top_info_data_t.md)
+- [vm_page_info_basic_data_t](./vm_page_info_basic_data_t.md)
 
 
 ---

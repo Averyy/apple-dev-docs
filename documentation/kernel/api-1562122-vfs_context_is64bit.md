@@ -1,7 +1,8 @@
 # vfs_context_is64bit
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a vfs_context_t corresponds to a 64-bit user process.
 
@@ -10,11 +11,11 @@ Determine if a vfs_context_t corresponds to a 64-bit user process.
 
 ## Declaration
 
-```swift
+```c
 int vfs_context_is64bit(vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if context is of 64-bit process, 0 otherwise.
 

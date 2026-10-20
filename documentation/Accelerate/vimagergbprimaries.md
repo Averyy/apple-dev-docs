@@ -1,23 +1,28 @@
 # vImageRGBPrimaries
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the chromaticity of primaries that define a color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct vImageRGBPrimaries
+```
+
+```c
+typedef struct vImageRGBPrimaries { ... } vImageRGBPrimaries;
 ```
 
 #### Overview
@@ -39,43 +44,44 @@ var rgbPrimaries = vImageRGBPrimaries(
 ## Topics
 
 ### Initializers
-- [init(red_x: Float, green_x: Float, blue_x: Float, white_x: Float, red_y: Float, green_y: Float, blue_y: Float, white_y: Float)](vimagergbprimaries/init(red_x:green_x:blue_x:white_x:red_y:green_y:blue_y:white_y:).md)
+- [init(red_x: Float, green_x: Float, blue_x: Float, white_x: Float, red_y: Float, green_y: Float, blue_y: Float, white_y: Float)](./vimagergbprimaries/init%28red_x,green_x,blue_x,white_x,red_y,green_y,blue_y,white_y%29.md)
   Creates a structure that represents the specified chromaticity of primaries defining a color space.
-- [init()](vimagergbprimaries/init.md)
+- [init()](./vimagergbprimaries/init%28%29.md)
   Creates an empty RGB primaries structure.
 ### Color primary properties
-- [var red_x: Float](vimagergbprimaries/red_x.md)
+- [var red_x: Float](./vimagergbprimaries/red_x.md)
   The red `x` value according to the CIE 1931 color space.
-- [var green_x: Float](vimagergbprimaries/green_x.md)
+- [var green_x: Float](./vimagergbprimaries/green_x.md)
   The green `x` value according to the CIE 1931 color space.
-- [var blue_x: Float](vimagergbprimaries/blue_x.md)
+- [var blue_x: Float](./vimagergbprimaries/blue_x.md)
   The blue `x` value according to the CIE 1931 color space.
-- [var white_x: Float](vimagergbprimaries/white_x.md)
+- [var white_x: Float](./vimagergbprimaries/white_x.md)
   The white point `x` value according to the CIE 1931 color space.
-- [var red_y: Float](vimagergbprimaries/red_y.md)
+- [var red_y: Float](./vimagergbprimaries/red_y.md)
   The red `y` value according to the CIE 1931 color space.
-- [var green_y: Float](vimagergbprimaries/green_y.md)
+- [var green_y: Float](./vimagergbprimaries/green_y.md)
   The green_ _`y` value according to the CIE 1931 color space.
-- [var blue_y: Float](vimagergbprimaries/blue_y.md)
+- [var blue_y: Float](./vimagergbprimaries/blue_y.md)
   The blue `y` value according to the CIE 1931 color space.
-- [var white_y: Float](vimagergbprimaries/white_y.md)
+- [var white_y: Float](./vimagergbprimaries/white_y.md)
   The white point `y` value according to the CIE 1931 color space.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(UnsafePointer<vImageRGBPrimaries>, UnsafePointer<vImageTransferFunction>, CGColorRenderingIntent, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<CGColorSpace>!](vimagecreatergbcolorspacewithprimariesandtransferfunction(_:_:_:_:_:).md)
+### Creating Core Graphics color spaces
+- [func vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(UnsafePointer<vImageRGBPrimaries>, UnsafePointer<vImageTransferFunction>, CGColorRenderingIntent, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<CGColorSpace>!](./vimagecreatergbcolorspacewithprimariesandtransferfunction%28_,_,_,_,_%29.md)
   Creates an RGB color space based on primitives from Y’CbCr specifications.
-- [struct vImageTransferFunction](vimagetransferfunction.md)
+- [struct vImageTransferFunction](./vimagetransferfunction.md)
   A transfer function to convert from linear to nonlinear RGB.
-- [func vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction(UnsafePointer<vImageWhitePoint>, UnsafePointer<vImageTransferFunction>, CGColorRenderingIntent, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<CGColorSpace>!](vimagecreatemonochromecolorspacewithwhitepointandtransferfunction(_:_:_:_:_:).md)
+- [func vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction(UnsafePointer<vImageWhitePoint>, UnsafePointer<vImageTransferFunction>, CGColorRenderingIntent, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<CGColorSpace>!](./vimagecreatemonochromecolorspacewithwhitepointandtransferfunction%28_,_,_,_,_%29.md)
   Creates a monochrome color space based on primitives from Y’CbCr specifications.
-- [struct vImageWhitePoint](vimagewhitepoint.md)
+- [struct vImageWhitePoint](./vimagewhitepoint.md)
   A representation of a white point according to the CIE 1931 color space.
 
 

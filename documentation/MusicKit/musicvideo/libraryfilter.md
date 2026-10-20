@@ -1,7 +1,8 @@
 # MusicVideo.LibraryFilter
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the music video properties your app uses for a library request.
 

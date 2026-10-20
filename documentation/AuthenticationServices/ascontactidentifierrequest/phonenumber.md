@@ -1,7 +1,8 @@
 # ASContactIdentifierRequest.phoneNumber
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the app accepts a phone number as the contact identifier for the new account.
 

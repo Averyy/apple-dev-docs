@@ -1,7 +1,8 @@
 # AnyChartSymbolShape
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased plotting shape.
 
@@ -24,29 +25,30 @@ struct AnyChartSymbolShape
 ## Topics
 
 ### Initializers
-- [init(any ChartSymbolShape)](anychartsymbolshape/init(_:).md)
+- [init(any ChartSymbolShape)](./anychartsymbolshape/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](../swiftui/animatable.md)
-- [ChartSymbolShape](chartsymbolshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](../swiftui/shape.md)
-- [View](../swiftui/view.md)
+- [Animatable](../SwiftUI/animatable.md)
+- [ChartSymbolShape](./chartsymbolshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](../SwiftUI/shape.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct MarkStackingMethod](markstackingmethod.md)
+### Mark configuration
+- [struct MarkStackingMethod](./markstackingmethod.md)
   The ways in which you can stack marks in a chart.
-- [struct MarkDimension](markdimension.md)
+- [struct MarkDimension](./markdimension.md)
   An individual dimension representing a mark’s width or height.
-- [struct InterpolationMethod](interpolationmethod.md)
+- [struct InterpolationMethod](./interpolationmethod.md)
   The ways in which line or area marks interpolate their data.
-- [struct BasicChartSymbolShape](basicchartsymbolshape.md)
+- [struct BasicChartSymbolShape](./basicchartsymbolshape.md)
   A basic chart symbol shape.
-- [protocol ChartSymbolShape](chartsymbolshape.md)
+- [protocol ChartSymbolShape](./chartsymbolshape.md)
   A type that can act as a shape for the marks that you add to a chart.
 
 

@@ -1,7 +1,8 @@
 # UITabAccessory.Environment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -14,29 +15,33 @@
 enum Environment
 ```
 
+```c
+enum UITabAccessoryEnvironment : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UITabAccessory.Environment.inline](uitabaccessory/environment/inline.md)
+- [UITabAccessory.Environment.inline](./environment/inline.md)
   The environment for when the accessory is laid out inline with the collapsed bottom tab bar.
-- [UITabAccessory.Environment.none](uitabaccessory/environment/none.md)
+- [UITabAccessory.Environment.none](./environment/none.md)
   The trait collection is from a view that is not in an active tab accessory environment.
-- [UITabAccessory.Environment.regular](uitabaccessory/environment/regular.md)
+- [UITabAccessory.Environment.regular](./environment/regular.md)
   The environment for when the accessory is laid out either:
-- [UITabAccessory.Environment.unspecified](uitabaccessory/environment/unspecified.md)
+- [UITabAccessory.Environment.unspecified](./environment/unspecified.md)
   Indicates the absence of any information about whether or not the trait collection is from a view that is in a tab accessory.
 ### Initializers
-- [init?(rawValue: Int)](uitabaccessory/environment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./environment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # biometry
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains biometric domain state.
 
@@ -16,6 +17,10 @@ Contains biometric domain state.
 
 ```swift
 var biometry: LADomainStateBiometry { get }
+```
+
+```objc
+@property (nonatomic, readonly) LADomainStateBiometry * biometry;
 ```
 
 

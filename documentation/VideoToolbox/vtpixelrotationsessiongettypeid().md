@@ -1,7 +1,8 @@
 # VTPixelRotationSessionGetTypeID()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier for the rotation session.
 
@@ -17,6 +18,10 @@ Returns the Core Foundation type identifier for the rotation session.
 
 ```swift
 func VTPixelRotationSessionGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID VTPixelRotationSessionGetTypeID();
 ```
 
 #### Return Value

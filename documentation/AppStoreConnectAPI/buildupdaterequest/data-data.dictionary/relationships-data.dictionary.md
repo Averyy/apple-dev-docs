@@ -1,7 +1,8 @@
 # BuildUpdateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object BuildUpdateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration](buildupdaterequest/data-data.dictionary/relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
+- [object BuildUpdateRequest.Data.Relationships.AppEncryptionDeclaration](./relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object BuildUpdateRequest.Data.Relationships
 
 ## See Also
 
-- [object BuildUpdateRequest.Data.Attributes](buildupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object BuildUpdateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 

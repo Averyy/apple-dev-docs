@@ -1,7 +1,8 @@
 # init(style:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color well that adopts the specified appearance style.
 
@@ -14,13 +15,17 @@ Creates a color well that adopts the specified appearance style.
 convenience init(style: NSColorWell.Style)
 ```
 
+```objc
++ (instancetype) colorWellWithStyle:(NSColorWellStyle) style;
+```
+
 #### Return Value
 
 A color well configured with the specified style.
 
 ## Parameters
 
-- `style`: The style to use to configure the color well control. For a list of possible values, see [`NSColorWell.Style`](nscolorwell/style.md).
+- `style`: The style to use to configure the color well control. For a list of possible values, see [`NSColorWell.Style`](./style.md).
 
 
 ---

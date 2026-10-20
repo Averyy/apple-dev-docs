@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that uses International Press Telecommunications Council (IPTC) metadata.
 
@@ -18,6 +19,10 @@ A dictionary of key-value pairs for an image that uses International Press Telec
 
 ```swift
 let kCGImagePropertyIPTCDictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyIPTCDictionary;
 ```
 
 

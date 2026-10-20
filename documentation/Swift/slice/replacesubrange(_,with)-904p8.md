@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func replaceSubrange<C>(_ subRange: Range<Slice<Base>.Index>, with newElements: C) where C : Collection, Base.Element == C.Element
 ```
+
+Available when `Base` conforms to `BidirectionalCollection` and `RangeReplaceableCollection`.
 
 
 ---

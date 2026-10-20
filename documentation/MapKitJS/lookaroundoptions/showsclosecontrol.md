@@ -1,7 +1,8 @@
 # showsCloseControl
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether the Look Around view displays a close control.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the Look Around view displays a close con
 
 ## Declaration
 
-```swift
+```
 showsCloseControl?: boolean;
 ```
 

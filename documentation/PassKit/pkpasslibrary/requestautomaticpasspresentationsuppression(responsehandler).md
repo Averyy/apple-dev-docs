@@ -1,7 +1,8 @@
 # requestAutomaticPassPresentationSuppression(responseHandler:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Prevents the device from automatically displaying the Apple Pay interface.
 
@@ -19,9 +20,13 @@ Prevents the device from automatically displaying the Apple Pay interface.
 class func requestAutomaticPassPresentationSuppression(responseHandler: @escaping (PKAutomaticPassPresentationSuppressionResult) -> Void) -> PKSuppressionRequestToken
 ```
 
+```objc
++ (PKSuppressionRequestToken) requestAutomaticPassPresentationSuppressionWithResponseHandler:(void (^)(PKAutomaticPassPresentationSuppressionResult result)) responseHandler;
+```
+
 #### Return Value
 
-A [`PKPassLibrary`](pkpasslibrary.md) value that represents this request. Use this token to end the suppression of Apple Pay passes.
+A [`PKPassLibrary`](../pkpasslibrary.md) value that represents this request. Use this token to end the suppression of Apple Pay passes.
 
 #### Discussion
 
@@ -35,23 +40,26 @@ This method operates asynchronously, and schedules the request and returns immed
 
 The first time the system calls this method, it alerts the user that Apple Pay is unavailable. This alert doesn’t display again until you uninstall and reinstall the app.
 
-> ❗ **Important**:  This method requires a special entitlement from Apple. If the entitlement isn’t present, the request fails with a [`PKPassLibrary`](pkpasslibrary.md) result. For more information, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
+> ❗ **Important**:  This method requires a special entitlement from Apple. If the entitlement isn’t present, the request fails with a [`PKPassLibrary`](../pkpasslibrary.md) result. For more information, see [developer.apple.com/apple-pay/](https://developer.apple.com/apple-pay/).
 
 ## Parameters
 
-- `responseHandler`: The response handler for the request. - **result**: The success or failure of the request.
+- `responseHandler`: The response handler for the request.
+
+  - **result**: The success or failure of the request.
 
 ## See Also
 
-- [func present(PKSecureElementPass)](pkpasslibrary/present(_:)-9467u.md)
+### Presenting and suppressing passes
+- [func present(PKSecureElementPass)](./present%28_%29-9467u.md)
   Presents a Secure Element pass.
-- [class func isSuppressingAutomaticPassPresentation() -> Bool](pkpasslibrary/issuppressingautomaticpasspresentation.md)
+- [class func isSuppressingAutomaticPassPresentation() -> Bool](./issuppressingautomaticpasspresentation%28%29.md)
   Returns a Boolean value that indicates whether the system suppresses the automatic presentation of Apple Pay passes.
-- [enum PKAutomaticPassPresentationSuppressionResult](pkautomaticpasspresentationsuppressionresult.md)
+- [enum PKAutomaticPassPresentationSuppressionResult](../pkautomaticpasspresentationsuppressionresult.md)
   The result of an attempt to suppress automatic pass presentation.
-- [class func endAutomaticPassPresentationSuppression(withRequestToken: PKSuppressionRequestToken)](pkpasslibrary/endautomaticpasspresentationsuppression(withrequesttoken:).md)
+- [class func endAutomaticPassPresentationSuppression(withRequestToken: PKSuppressionRequestToken)](./endautomaticpasspresentationsuppression%28withrequesttoken%29.md)
   Reenables the automatic display of the Apple Pay interface.
-- [typealias PKSuppressionRequestToken](pksuppressionrequesttoken.md)
+- [typealias PKSuppressionRequestToken](../pksuppressionrequesttoken.md)
   A token that represents a request to suppress the automatic presentation of payment passes.
 
 

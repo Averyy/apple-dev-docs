@@ -1,7 +1,8 @@
 # MarketplaceSearchDetail.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a marketplace search detail resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a marketplace search detail resource.
 
 ## Declaration
 
-```swift
+```
 object MarketplaceSearchDetail.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # paper
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A matte, paper-like texture for the widget’s coating layer.
 
@@ -16,11 +17,12 @@ static let paper: WidgetTexture
 
 ## Mentions
 
-- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+- [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
 ## See Also
 
-- [static let glass: WidgetTexture](widgettexture/glass.md)
+### Textures
+- [static let glass: WidgetTexture](./glass.md)
   A reflective, clear glass-like texture for the widget’s coating layer.
 
 

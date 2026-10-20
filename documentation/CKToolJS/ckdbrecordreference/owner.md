@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The owner of the referenced record.
 
@@ -10,7 +11,7 @@ The owner of the referenced record.
 
 ## Declaration
 
-```swift
+```
 attribute string? owner;
 ```
 

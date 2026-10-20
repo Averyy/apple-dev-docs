@@ -1,7 +1,8 @@
 # isNull()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the unit is null.
 
@@ -19,9 +20,13 @@ Returns a Boolean value indicating whether the unit is null.
 func isNull() -> Bool
 ```
 
+```objc
+- (BOOL) isNull;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the unit is null; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the unit is null; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,9 +34,10 @@ Null units occur only when you create compound units in which all the units canc
 
 ## See Also
 
-- [convenience init(from: String)](hkunit/init(from:)-9qont.md)
+### Working with units
+- [convenience init(from: String)](./init%28from%29-9qont.md)
   Returns the unit instance described by the provided string.
-- [var unitString: String](hkunit/unitstring.md)
+- [var unitString: String](./unitstring.md)
   A string representation of the unit object.
 
 

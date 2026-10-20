@@ -1,7 +1,8 @@
 # HKMetadataKeyHeartRateEventThreshold
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that records the threshold of high or low heart rate events in beats per minute.
 
@@ -19,9 +20,13 @@ A key that records the threshold of high or low heart rate events in beats per m
 let HKMetadataKeyHeartRateEventThreshold: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyHeartRateEventThreshold;
+```
+
 #### Discussion
 
-The value for this key contains an [`HKQuantity`](hkquantity.md) object with count/time units, described in [`HKUnit`](hkunit.md). This metadata key is used by [`highHeartRateEvent`](hkcategorytypeidentifier/highheartrateevent.md) and [`lowHeartRateEvent`](hkcategorytypeidentifier/lowheartrateevent.md) category samples.
+The value for this key contains an [`HKQuantity`](./hkquantity.md) object with count/time units, described in [`HKUnit`](./hkunit.md). This metadata key is used by [`highHeartRateEvent`](./hkcategorytypeidentifier/highheartrateevent.md) and [`lowHeartRateEvent`](./hkcategorytypeidentifier/lowheartrateevent.md) category samples.
 
 
 ---

@@ -1,7 +1,8 @@
 # DiagnosticInsight.ReferenceVersions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A collection of app versions referenced in a diagnostic insight, indicating which versions are affected.
 
@@ -10,7 +11,7 @@ A collection of app versions referenced in a diagnostic insight, indicating whic
 
 ## Declaration
 
-```swift
+```
 object DiagnosticInsight.ReferenceVersions
 ```
 

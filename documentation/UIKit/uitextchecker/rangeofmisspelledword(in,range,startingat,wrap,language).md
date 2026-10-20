@@ -1,7 +1,8 @@
 # rangeOfMisspelledWord(in:range:startingAt:wrap:language:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a search of a range of a string for a misspelled word.
 
@@ -9,13 +10,17 @@ Initiates a search of a range of a string for a misspelled word.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func rangeOfMisspelledWord(in stringToCheck: String, range: NSRange, startingAt startingOffset: Int, wrap wrapFlag: Bool, language: String) -> NSRange
+```
+
+```objc
+- (NSRange) rangeOfMisspelledWordInString:(NSString *) stringToCheck range:(NSRange) range startingAt:(NSInteger) startingOffset wrap:(BOOL) wrapFlag language:(NSString *) language;
 ```
 
 #### Return Value
@@ -31,7 +36,7 @@ To search an entire string or a range within that string, call this method in a 
 - `stringToCheck`: The string to check for misspelled words.
 - `range`: The range of `stringToCheck` to check for a misspelled word.
 - `startingOffset`: The offset within `range` of `stringToCheck` to begin checking for misspelled words.
-- `wrapFlag`: [`true`](https://developer.apple.com/documentation/swift/true) to continue checking from the beginning of `range` if no misspelled word is found between `startingOffset` and the end of `range`. Specify [`false`](https://developer.apple.com/documentation/swift/false) to have spell-checking end at the end of `range`.
+- `wrapFlag`: [`true`](../../Swift/true.md) to continue checking from the beginning of `range` if no misspelled word is found between `startingOffset` and the end of `range`. Specify [`false`](../../Swift/false.md) to have spell-checking end at the end of `range`.
 - `language`: The language of the of words to be checked for correct spelling. This string is a ISO 639-1 language code or a combined ISO 639-1 language code and ISO 3166-1 regional code (for example, `fr_FR`).
 
 

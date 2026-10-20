@@ -1,7 +1,8 @@
 # MTLArrayType
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of an array.
 
@@ -10,7 +11,7 @@ A description of an array.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,59 +20,64 @@ A description of an array.
 class MTLArrayType
 ```
 
+```objc
+@interface MTLArrayType : MTLType
+```
+
 #### Overview
 
-An [`MTLArrayType`](mtlarraytype.md) instance provides details about an array parameter. Don’t create [`MTLArrayType`](mtlarraytype.md) instances directly; other reflection instances contain properties to determine if a parameter is an array and to obtain the [`MTLArrayType`](mtlarraytype.md) instance that describes the array.
+An [`MTLArrayType`](./mtlarraytype.md) instance provides details about an array parameter. Don’t create [`MTLArrayType`](./mtlarraytype.md) instances directly; other reflection instances contain properties to determine if a parameter is an array and to obtain the [`MTLArrayType`](./mtlarraytype.md) instance that describes the array.
 
 ## Topics
 
 ### Describing the array elements
-- [var arrayLength: Int](mtlarraytype/arraylength.md)
+- [var arrayLength: Int](./mtlarraytype/arraylength.md)
   The number of elements in the array.
-- [var elementType: MTLDataType](mtlarraytype/elementtype.md)
+- [var elementType: MTLDataType](./mtlarraytype/elementtype.md)
   The data type of the array’s elements.
-- [var stride: Int](mtlarraytype/stride.md)
+- [var stride: Int](./mtlarraytype/stride.md)
   The stride between array elements, in bytes.
-- [var argumentIndexStride: Int](mtlarraytype/argumentindexstride.md)
+- [var argumentIndexStride: Int](./mtlarraytype/argumentindexstride.md)
   The stride, in bytes, between argument indices.
 ### Obtaining details for complex array elements
-- [func element() -> MTLArrayType?](mtlarraytype/element.md)
+- [func element() -> MTLArrayType?](./mtlarraytype/element%28%29.md)
   Provides a description of the underlying type when an array holds other arrays as its elements.
-- [func elementStructType() -> MTLStructType?](mtlarraytype/elementstructtype.md)
+- [func elementStructType() -> MTLStructType?](./mtlarraytype/elementstructtype%28%29.md)
   Provides a description of the underlying struct type when an array holds structs as its elements.
-- [func elementPointerType() -> MTLPointerType?](mtlarraytype/elementpointertype.md)
+- [func elementPointerType() -> MTLPointerType?](./mtlarraytype/elementpointertype%28%29.md)
   Provides a description of the underlying pointer type when an array holds pointers as its elements.
-- [func elementTextureReferenceType() -> MTLTextureReferenceType?](mtlarraytype/elementtexturereferencetype.md)
+- [func elementTextureReferenceType() -> MTLTextureReferenceType?](./mtlarraytype/elementtexturereferencetype%28%29.md)
   Provides a description of the underlying texture type when an array holds textures as its elements.
 ### Instance Methods
-- [func elementTensorReferenceType() -> MTLTensorReferenceType?](mtlarraytype/elementtensorreferencetype.md)
+- [func elementTensorReferenceType() -> MTLTensorReferenceType?](./mtlarraytype/elementtensorreferencetype%28%29.md)
   Provides a description of the underlying tensor type when this array holds tensors as its elements.
 
 ## Relationships
 
 ### Inherits From
-- [MTLType](mtltype.md)
+- [MTLType](./mtltype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLType](mtltype.md)
+### Shader types
+- [class MTLType](./mtltype.md)
   A description of a data type.
-- [enum MTLDataType](mtldatatype.md)
+- [enum MTLDataType](./mtldatatype.md)
   The parameter type options for GPU functions, such as shaders and compute kernels.
-- [class MTLStructType](mtlstructtype.md)
+- [class MTLStructType](./mtlstructtype.md)
   A description of a structure.
-- [class MTLStructMember](mtlstructmember.md)
+- [class MTLStructMember](./mtlstructmember.md)
   An instance that provides information about a field in a structure.
-- [class MTLPointerType](mtlpointertype.md)
+- [class MTLPointerType](./mtlpointertype.md)
   A description of a pointer.
-- [class MTLTextureReferenceType](mtltexturereferencetype.md)
+- [class MTLTextureReferenceType](./mtltexturereferencetype.md)
   A description of a texture.
 
 

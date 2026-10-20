@@ -1,7 +1,8 @@
 # errSSLClosedGraceful
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The connection closed gracefully.
 
@@ -18,6 +19,10 @@ The connection closed gracefully.
 
 ```swift
 var errSSLClosedGraceful: OSStatus { get }
+```
+
+```c
+errSSLClosedGraceful
 ```
 
 

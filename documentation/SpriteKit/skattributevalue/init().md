@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a new attribute value object
 
@@ -20,15 +21,20 @@ Creates and initializes a new attribute value object
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(float: Float)](skattributevalue/init(float:).md)
+### Initializers
+- [convenience init(float: Float)](./init%28float%29.md)
   Creates and initializes a new attribute value object that holds a floating point number.
-- [convenience init(vectorFloat2: vector_float2)](skattributevalue/init(vectorfloat2:).md)
+- [convenience init(vectorFloat2: vector_float2)](./init%28vectorfloat2%29.md)
   Creates and initializes a new attribute value object that holds a vector of two floating point numbers.
-- [convenience init(vectorFloat3: vector_float3)](skattributevalue/init(vectorfloat3:).md)
+- [convenience init(vectorFloat3: vector_float3)](./init%28vectorfloat3%29.md)
   Creates and initializes a new attribute value object that holds a vector of three floating point numbers.
-- [convenience init(vectorFloat4: vector_float4)](skattributevalue/init(vectorfloat4:).md)
+- [convenience init(vectorFloat4: vector_float4)](./init%28vectorfloat4%29.md)
   Creates and initializes a new attribute value object that holds a vector of four floating point numbers.
 
 

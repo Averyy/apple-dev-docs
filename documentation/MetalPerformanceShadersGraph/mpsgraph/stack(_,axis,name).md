@@ -1,7 +1,8 @@
 # stack(_:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a stack operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a stack operation and returns the result tensor.
 
 ```swift
 func stack(_ inputTensors: [MPSGraphTensor], axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) stackTensors:(NSArray<MPSGraphTensor *> *) inputTensors axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

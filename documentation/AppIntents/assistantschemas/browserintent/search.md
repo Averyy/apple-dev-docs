@@ -1,7 +1,8 @@
 # search
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the Assistant schema for performing a web search.
 
@@ -13,6 +14,8 @@ The app intent conforms to the Assistant schema for performing a web search.
 - tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
+
+> **Deprecated**: Use .system.search instead
 
 ## Declaration
 
@@ -38,7 +41,7 @@ struct SearchWebIntent: ShowInAppSearchResultsIntent {
 }
 ```
 
-For more information about the `.browser` app intent domain, see [`Browser`](app-schema-domain-browser.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.browser` app intent domain, see [Browser](../../app-schema-domain-browser.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

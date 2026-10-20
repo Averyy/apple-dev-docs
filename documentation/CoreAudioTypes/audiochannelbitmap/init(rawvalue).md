@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio channel bitmap.
 

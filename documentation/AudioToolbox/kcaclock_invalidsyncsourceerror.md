@@ -1,10 +1,11 @@
 # kCAClock_InvalidSyncSourceError
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,19 +13,24 @@
 var kCAClock_InvalidSyncSourceError: OSStatus { get }
 ```
 
+```c
+kCAClock_InvalidSyncSourceError
+```
+
 ## See Also
 
-- [var kCAClock_CannotSetTimeError: OSStatus](kcaclock_cannotsettimeerror.md)
-- [var kCAClock_InvalidPlayRateError: OSStatus](kcaclock_invalidplayrateerror.md)
-- [var kCAClock_InvalidPropertySizeError: OSStatus](kcaclock_invalidpropertysizeerror.md)
-- [var kCAClock_InvalidSMPTEFormatError: OSStatus](kcaclock_invalidsmpteformaterror.md)
-- [var kCAClock_InvalidSMPTEOffsetError: OSStatus](kcaclock_invalidsmpteoffseterror.md)
-- [var kCAClock_InvalidSyncModeError: OSStatus](kcaclock_invalidsyncmodeerror.md)
-- [var kCAClock_InvalidTimeFormatError: OSStatus](kcaclock_invalidtimeformaterror.md)
-- [var kCAClock_InvalidTimebaseError: OSStatus](kcaclock_invalidtimebaseerror.md)
-- [var kCAClock_InvalidTimebaseSourceError: OSStatus](kcaclock_invalidtimebasesourceerror.md)
-- [var kCAClock_InvalidUnitError: OSStatus](kcaclock_invaliduniterror.md)
-- [var kCAClock_UnknownPropertyError: OSStatus](kcaclock_unknownpropertyerror.md)
+### Constants
+- [var kCAClock_CannotSetTimeError: OSStatus](./kcaclock_cannotsettimeerror.md)
+- [var kCAClock_InvalidPlayRateError: OSStatus](./kcaclock_invalidplayrateerror.md)
+- [var kCAClock_InvalidPropertySizeError: OSStatus](./kcaclock_invalidpropertysizeerror.md)
+- [var kCAClock_InvalidSMPTEFormatError: OSStatus](./kcaclock_invalidsmpteformaterror.md)
+- [var kCAClock_InvalidSMPTEOffsetError: OSStatus](./kcaclock_invalidsmpteoffseterror.md)
+- [var kCAClock_InvalidSyncModeError: OSStatus](./kcaclock_invalidsyncmodeerror.md)
+- [var kCAClock_InvalidTimeFormatError: OSStatus](./kcaclock_invalidtimeformaterror.md)
+- [var kCAClock_InvalidTimebaseError: OSStatus](./kcaclock_invalidtimebaseerror.md)
+- [var kCAClock_InvalidTimebaseSourceError: OSStatus](./kcaclock_invalidtimebasesourceerror.md)
+- [var kCAClock_InvalidUnitError: OSStatus](./kcaclock_invaliduniterror.md)
+- [var kCAClock_UnknownPropertyError: OSStatus](./kcaclock_unknownpropertyerror.md)
 
 
 ---

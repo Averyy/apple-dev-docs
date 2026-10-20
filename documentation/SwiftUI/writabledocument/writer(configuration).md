@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a writer to save this document to disk.
@@ -21,7 +22,7 @@ func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writ
 
 #### Discussion
 
-Return a [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) for cases that don’t require custom writing logic, or a [`DocumentWriter`](documentwriter.md) for direct URL access or streaming writes.
+Return a [`FileWrapperDocumentWriter`](../filewrapperdocumentwriter.md) for cases that don’t require custom writing logic, or a [`DocumentWriter`](../documentwriter.md) for direct URL access or streaming writes.
 
 ## Parameters
 
@@ -29,13 +30,14 @@ Return a [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) for cases t
 
 ## See Also
 
-- [static var writableContentTypes: [UTType]](writabledocument/writablecontenttypes.md)
+### Writing a document
+- [static var writableContentTypes: [UTType]](./writablecontenttypes.md)
   The content types this document can save or export to.
-- [WritableDocument.WriteConfiguration](writabledocument/writeconfiguration.md)
+- [WritableDocument.WriteConfiguration](./writeconfiguration.md)
   The configuration for writing document contents.
-- [associatedtype Writer : DocumentWriter](writabledocument/writer.md)
+- [associatedtype Writer : DocumentWriter](./writer.md)
   A type that implements writing to disk.
-- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](writabledocument/snapshot(contenttype:).md)
+- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](./snapshot%28contenttype%29.md)
   Captures the document’s current state for saving.
 
 

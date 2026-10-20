@@ -1,18 +1,19 @@
 # proto_media_resolve_multi
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*proto_media_resolve_multi)(ifnet_t ifp, const struct sockaddr *proto_addr, struct sockaddr_dl *out_ll, size_t ll_len);
 ```
 
-#### Return_value
+#### Return Value
 
 Return zero on success or an errno error value on failure.
 

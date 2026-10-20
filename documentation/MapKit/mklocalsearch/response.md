@@ -1,7 +1,8 @@
 # MKLocalSearch.Response
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The results from a map-based search.
 
@@ -20,29 +21,33 @@ The results from a map-based search.
 class Response
 ```
 
+```objc
+@interface MKLocalSearchResponse : NSObject
+```
+
 #### Overview
 
-You don’t create instances of this class directly. After initiating a map search using an [`MKLocalSearch`](mklocalsearch.md) object, MapKit passes an instance of this class to your completion handler.
+You don’t create instances of this class directly. After initiating a map search using an [`MKLocalSearch`](../mklocalsearch.md) object, MapKit passes an instance of this class to your completion handler.
 
 ## Topics
 
 ### Getting the search results
-- [var mapItems: [MKMapItem]](mklocalsearch/response/mapitems.md)
+- [var mapItems: [MKMapItem]](./response/mapitems.md)
   An array of map items representing the search results.
-- [var boundingRegion: MKCoordinateRegion](mklocalsearch/response/boundingregion.md)
+- [var boundingRegion: MKCoordinateRegion](./response/boundingregion.md)
   The map region that encloses the returned search results.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

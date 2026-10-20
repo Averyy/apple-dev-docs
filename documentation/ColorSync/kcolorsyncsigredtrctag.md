@@ -1,7 +1,8 @@
 # kColorSyncSigRedTRCTag
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature of the red channel’s tone reproduction curve (TRC) tag.
 
@@ -20,19 +21,24 @@ The signature of the red channel’s tone reproduction curve (TRC) tag.
 var kColorSyncSigRedTRCTag: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncSigRedTRCTag;
+```
+
 ## See Also
 
-- [var kColorSyncSigRedColorantTag: Unmanaged<CFString>!](kcolorsyncsigredcoloranttag.md)
+### Identifying colorant and curve tags
+- [var kColorSyncSigRedColorantTag: Unmanaged<CFString>!](./kcolorsyncsigredcoloranttag.md)
   The signature of the red colorant tag, giving the red channel’s PCSXYZ values.
-- [var kColorSyncSigGreenColorantTag: Unmanaged<CFString>!](kcolorsyncsiggreencoloranttag.md)
+- [var kColorSyncSigGreenColorantTag: Unmanaged<CFString>!](./kcolorsyncsiggreencoloranttag.md)
   The signature of the green colorant tag, giving the green channel’s PCSXYZ values.
-- [var kColorSyncSigBlueColorantTag: Unmanaged<CFString>!](kcolorsyncsigbluecoloranttag.md)
+- [var kColorSyncSigBlueColorantTag: Unmanaged<CFString>!](./kcolorsyncsigbluecoloranttag.md)
   The signature of the blue colorant tag, giving the blue channel’s PCSXYZ values.
-- [var kColorSyncSigGreenTRCTag: Unmanaged<CFString>!](kcolorsyncsiggreentrctag.md)
+- [var kColorSyncSigGreenTRCTag: Unmanaged<CFString>!](./kcolorsyncsiggreentrctag.md)
   The signature of the green channel’s tone reproduction curve (TRC) tag.
-- [var kColorSyncSigBlueTRCTag: Unmanaged<CFString>!](kcolorsyncsigbluetrctag.md)
+- [var kColorSyncSigBlueTRCTag: Unmanaged<CFString>!](./kcolorsyncsigbluetrctag.md)
   The signature of the blue channel’s tone reproduction curve (TRC) tag.
-- [var kColorSyncSigGrayTRCTag: Unmanaged<CFString>!](kcolorsyncsiggraytrctag.md)
+- [var kColorSyncSigGrayTRCTag: Unmanaged<CFString>!](./kcolorsyncsiggraytrctag.md)
   The signature of the grayscale tone reproduction curve (TRC) tag.
 
 

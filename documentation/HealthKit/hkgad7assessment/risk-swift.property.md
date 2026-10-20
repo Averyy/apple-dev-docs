@@ -1,7 +1,8 @@
 # risk
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var risk: HKGAD7Assessment.Risk { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) HKGAD7AssessmentRisk risk;
 ```
 
 

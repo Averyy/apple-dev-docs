@@ -1,7 +1,8 @@
 # init(_:estimator:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a select operation with an estimator.
 
@@ -27,9 +28,10 @@ init(_ columnSelection: ColumnSelection, estimator: Estimator)
 
 ## See Also
 
-- [init(columns: [String], estimator: Estimator)](columnselector/init(columns:estimator:).md)
+### Creating the selection
+- [init(columns: [String], estimator: Estimator)](./init%28columns,estimator%29.md)
   Creates a select operation with an estimator.
-- [init<T>(ColumnSelection, transformer: T)](columnselector/init(_:transformer:).md)
+- [init<T>(ColumnSelection, transformer: T)](./init%28_,transformer%29.md)
   Creates a select operation with a transformer.
 
 

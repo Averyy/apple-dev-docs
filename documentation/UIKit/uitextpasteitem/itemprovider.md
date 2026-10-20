@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item provider for the item being pasted or dropped.
@@ -18,9 +19,14 @@ The item provider for the item being pasted or dropped.
 var itemProvider: NSItemProvider { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSItemProvider * itemProvider;
+```
+
 ## See Also
 
-- [var localObject: Any?](uitextpasteitem/localobject.md)
+### Accessing the text paste item’s data
+- [var localObject: Any?](./localobject.md)
   The custom local object that the copy or drag source optionally attached to the drag item.
 
 

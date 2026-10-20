@@ -1,7 +1,8 @@
 # statusBarStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current appearance of the status bar.
 
@@ -17,13 +18,18 @@ The current appearance of the status bar.
 var statusBarStyle: UIStatusBarStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIStatusBarStyle statusBarStyle;
+```
+
 #### Discussion
 
-To customize the status bar’s style for each of your view controllers, override their [`preferredStatusBarStyle`](uiviewcontroller/preferredstatusbarstyle.md) property.
+To customize the status bar’s style for each of your view controllers, override their [`preferredStatusBarStyle`](../uiviewcontroller/preferredstatusbarstyle.md) property.
 
 ## See Also
 
-- [var isStatusBarHidden: Bool](uistatusbarmanager/isstatusbarhidden.md)
+### Getting the status bar configuration
+- [var isStatusBarHidden: Bool](./isstatusbarhidden.md)
   A Boolean value that indicates whether the status bar is currently hidden.
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 
 # mlx.nn.GLU
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.GLU.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.GLU
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.GLU
-
 **class GLU(*axis: int = -1*)**
 : Applies the gated linear unit function.
 This function splits the `axis` dimension of the input into two halves
@@ -44,5 +17,3 @@ Parameters:
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimension to split along. Default: `-1`
 
 Methods
-
-** Contents

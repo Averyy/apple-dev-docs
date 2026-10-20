@@ -1,7 +1,8 @@
 # init(path:uuid:baseAddress:size:cpuType:cpuSubType:)
 
 **Framework**: CrashReportExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a binary image info instance.
 
@@ -9,9 +10,9 @@ Creates a binary image info instance.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

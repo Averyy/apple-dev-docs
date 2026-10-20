@@ -1,7 +1,8 @@
 # nextResult(isolation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -12,6 +13,8 @@
 - visionOS 1.0+
 - watchOS 6.0+
 
+> **Deprecated**: Replaced by nonisolated(nonsending) overload
+
 ## Declaration
 
 ```swift
@@ -20,12 +23,13 @@ mutating func nextResult(isolation: isolated (any Actor)? = #isolation) async ->
 
 ## See Also
 
-- [func add(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) async -> Bool](throwingtaskgroup/add(priority:operation:).md)
-- [func async(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/async(priority:operation:).md)
-- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/asyncunlesscancelled(priority:operation:).md)
-- [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/spawn(priority:operation:).md)
-- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/spawnunlesscancelled(priority:operation:).md)
-- [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)
+### Deprecated
+- [func add(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) async -> Bool](./add%28priority,operation%29.md)
+- [func async(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](./async%28priority,operation%29.md)
+- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](./asyncunlesscancelled%28priority,operation%29.md)
+- [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](./spawn%28priority,operation%29.md)
+- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](./spawnunlesscancelled%28priority,operation%29.md)
+- [func waitForAll(isolation: isolated (any Actor)?) async throws](./waitforall%28isolation%29.md)
 
 
 ---

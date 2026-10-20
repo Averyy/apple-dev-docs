@@ -1,12 +1,13 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the cell’s background.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,21 @@ The color of the cell’s background.
 var backgroundColor: NSColor? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSColor * backgroundColor;
+```
+
 #### Discussion
 
 The background color is drawn behind the cell’s text.
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nstextfield/backgroundcolor.md)
+### Related Documentation
+- [var backgroundColor: NSColor?](../nstextfield/backgroundcolor.md)
   The color of the background the text field’s cell draws behind the text.
-- [var drawsBackground: Bool](nstextfieldcell/drawsbackground.md)
+### Controlling the Background
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value that indicates whether the cell draws its background color.
 
 

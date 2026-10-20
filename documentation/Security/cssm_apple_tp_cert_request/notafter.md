@@ -1,7 +1,8 @@
 # notAfter
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var notAfter: uint32
+```
+
+```c
+uint32 notAfter;
 ```
 
 

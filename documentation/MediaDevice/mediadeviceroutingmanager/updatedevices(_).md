@@ -1,7 +1,8 @@
 # updateDevices(_:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that one or more devices have changed state, so their information can be refreshed in device lists.
 
@@ -19,11 +20,11 @@ final func updateDevices(_ devices: [MediaOutputDevice])
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 
-Call this function when [`MediaOutputDevice`](mediaoutputdevice.md) instances have had their state updated. This may be called after an activate or deactivate call to reflect updated grouping information.
+Call this function when [`MediaOutputDevice`](../mediaoutputdevice.md) instances have had their state updated. This may be called after an activate or deactivate call to reflect updated grouping information.
 
 ## Parameters
 

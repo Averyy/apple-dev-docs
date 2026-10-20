@@ -1,17 +1,20 @@
 # init(onIncrement:onDecrement:onEditingChanged:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- macOS 10.15+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+- watchOS 9.0+ - Deprecated in 27.2 (renamed: Stepper(label:onIncrement:onDecrement:onEditingChanged:))
+
+> **Deprecated**: Use [`init(label:onIncrement:onDecrement:onEditingChanged:)`](./init%28label,onincrement,ondecrement,oneditingchanged%29.md) instead.
 
 ## Declaration
 
@@ -20,11 +23,13 @@ nonisolated
 init(onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in }, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`.
+
 #### Discussion
 
 Use this initializer to create a control with a custom title that executes closures you provide when the user clicks or taps the stepper’s increment or decrement buttons.
 
-The example below uses an array that holds a number of [`Color`](color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps on the stepper’s increment or decrement buttons SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
+The example below uses an array that holds a number of [`Color`](../color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps on the stepper’s increment or decrement buttons SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
 
 ```swift
 struct StepperView: View {
@@ -54,7 +59,7 @@ struct StepperView: View {
 
 }
 
-![A view displaying a stepper that uses a text view for stepper’s title and that changes the background color of its view when incremented or decremented. The view selects the new background color from a predefined array of colors using the stepper’s value as the index.](/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
+![A view displaying a stepper that uses a text view for stepper’s title and that changes the background color of its view when incremented or decremented. The view selects the new background color from a predefined array of colors using the stepper’s value as the index.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
 
 ## Parameters
 
@@ -65,9 +70,10 @@ struct StepperView: View {
 
 ## See Also
 
-- [init<V>(value: Binding<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(value:step:oneditingchanged:label:).md)
+### Deprecated
+- [init<V>(value: Binding<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](./init%28value,step,oneditingchanged,label%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](stepper/init(value:in:step:oneditingchanged:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, label: () -> Label)](./init%28value,in,step,oneditingchanged,label%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide.
 
 

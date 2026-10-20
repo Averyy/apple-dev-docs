@@ -1,7 +1,8 @@
 # init(id:userName:email:fullName:collections:items:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an account instance from its required and optional properties.
 
@@ -24,8 +25,8 @@ init(id: Data, userName: String, email: String, fullName: String? = nil, collect
 - `userName`: The username associated with the account.
 - `email`: The email address associated with the account.
 - `fullName`: The full name of the account owner, if provided.
-- `collections`: An array of [`ASImportableCollection`](asimportablecollection.md) instances to store in the account.
-- `items`: An array of [`ASImportableItem`](asimportableitem.md) instances to store in the account.
+- `collections`: An array of [`ASImportableCollection`](../asimportablecollection.md) instances to store in the account.
+- `items`: An array of [`ASImportableItem`](../asimportableitem.md) instances to store in the account.
 
 
 ---

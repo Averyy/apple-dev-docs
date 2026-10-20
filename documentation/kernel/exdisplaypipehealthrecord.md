@@ -1,14 +1,15 @@
 # EXDisplayPipeHealthRecord
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct EXDisplayPipeHealthRecord {
     ...
 } EXDisplayPipeHealthRecord;
@@ -17,8 +18,8 @@ typedef struct EXDisplayPipeHealthRecord {
 ## Topics
 
 ### Instance Properties
-- [health](exdisplaypipehealthrecord/4460325-health.md)
-- [timestamp](exdisplaypipehealthrecord/4460326-timestamp.md)
+- [health](./exdisplaypipehealthrecord/api-4460325-health.md)
+- [timestamp](./exdisplaypipehealthrecord/api-4460326-timestamp.md)
 
 
 ---

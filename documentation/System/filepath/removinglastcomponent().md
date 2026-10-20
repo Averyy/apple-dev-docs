@@ -1,7 +1,8 @@
 # removingLastComponent()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new path with everything up to but not including `lastComponent`.
 
@@ -26,14 +27,18 @@ If the path only contains a root, returns `self`. If the path has no root and on
 
 Examples:
 
-- Unix: - `/usr/bin/ls => /usr/bin`
-- `/foo        => /`
-- `/           => /`
-- `foo         => ""`
-- Windows: - `C:\foo\bar.exe                 => C:\foo`
-- `C:\                            => C:\`
-- `\\server\share\folder\file.txt => \\server\share\folder`
-- `\\server\share\                => \\server\share\`
+- Unix:
+
+  - `/usr/bin/ls => /usr/bin`
+  - `/foo        => /`
+  - `/           => /`
+  - `foo         => ""`
+- Windows:
+
+  - `C:\foo\bar.exe                 => C:\foo`
+  - `C:\                            => C:\`
+  - `\\server\share\folder\file.txt => \\server\share\folder`
+  - `\\server\share\                => \\server\share\`
 
 
 ---

@@ -1,7 +1,8 @@
 # adaptor
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The virtual machine view adaptor.
 
@@ -17,7 +18,7 @@ The virtual machine view adaptor.
 
 #### Discussion
 
-Use this property to assign a [`VZVirtualMachineViewAdaptor`](vzvirtualmachineviewadaptor.md), which is a sendable wrapper that connects a virtual machine view to a virtual machine.
+Use this property to assign a [`VZVirtualMachineViewAdaptor`](../vzvirtualmachineviewadaptor.md), which is a sendable wrapper that connects a virtual machine view to a virtual machine.
 
 
 ---

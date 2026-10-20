@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type this format style accepts as input.
@@ -23,7 +24,7 @@ associatedtype FormatInput
 
 #### Discussion
 
-Swift type inference uses this value to determine which static accessors are available at a given call point. For example, when you format an [`Int32`](https://developer.apple.com/documentation/swift/int32), you can use the static [`number`](formatstyle/number-4cj49.md) property that provies a `IntegerFormatStyle<Int32>`, as seen in the following example. This works because the style’s input type `IntegerFormatStyle/FormatInput` is a [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) generically constrained to the [`Int32`](https://developer.apple.com/documentation/swift/int32) type.
+Swift type inference uses this value to determine which static accessors are available at a given call point. For example, when you format an [`Int32`](../../Swift/int32.md), you can use the static [`number`](./number-4cj49.md) property that provies a `IntegerFormatStyle<Int32>`, as seen in the following example. This works because the style’s input type `IntegerFormatStyle/FormatInput` is a [`BinaryInteger`](../../Swift/binaryinteger.md) generically constrained to the [`Int32`](../../Swift/int32.md) type.
 
 ```swift
 let perihelionDistanceToSunInKm: Int32 = 147098291
@@ -33,7 +34,8 @@ perihelionDistanceToSunInKm.formatted(.number
 
 ## See Also
 
-- [associatedtype FormatOutput](formatstyle/formatoutput.md)
+### Declaring input and output types
+- [associatedtype FormatOutput](./formatoutput.md)
   The type this format style produces as output.
 
 

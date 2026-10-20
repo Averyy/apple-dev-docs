@@ -1,7 +1,8 @@
 # isRemovedOnCompletion
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the animation is removed from the target layer’s animations upon completion.
 
@@ -19,13 +20,18 @@ Determines if the animation is removed from the target layer’s animations upon
 var isRemovedOnCompletion: Bool { get set }
 ```
 
+```objc
+@property (getter=isRemovedOnCompletion) BOOL removedOnCompletion;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the animation is removed from the target layer’s animations once its active duration has passed. Defaults to [`true`](https://developer.apple.com/documentation/swift/true).
+When [`true`](../../Swift/true.md), the animation is removed from the target layer’s animations once its active duration has passed. Defaults to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var timingFunction: CAMediaTimingFunction?](caanimation/timingfunction.md)
+### Animation Attributes
+- [var timingFunction: CAMediaTimingFunction?](./timingfunction.md)
   An optional timing function defining the pacing of the animation.
 
 

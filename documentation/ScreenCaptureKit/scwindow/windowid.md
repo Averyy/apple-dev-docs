@@ -1,7 +1,8 @@
 # windowID
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics window identifier.
 
@@ -15,13 +16,18 @@ The Core Graphics window identifier.
 var windowID: CGWindowID { get }
 ```
 
+```objc
+@property (readonly) CGWindowID windowID;
+```
+
 ## See Also
 
-- [var title: String?](scwindow/title.md)
+### Identifying windows
+- [var title: String?](./title.md)
   The string that displays in a window’s title bar.
-- [var owningApplication: SCRunningApplication?](scwindow/owningapplication.md)
+- [var owningApplication: SCRunningApplication?](./owningapplication.md)
   The app that owns the window.
-- [var windowLayer: Int](scwindow/windowlayer.md)
+- [var windowLayer: Int](./windowlayer.md)
   The layer of the window relative to other windows.
 
 

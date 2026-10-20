@@ -1,7 +1,8 @@
 # keyPath
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the key path the receiver animates.
 
@@ -19,13 +20,18 @@ Specifies the key path the receiver animates.
 var keyPath: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * keyPath;
+```
+
 #### Discussion
 
 The key path is relative to the layer the receiver is attached to.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

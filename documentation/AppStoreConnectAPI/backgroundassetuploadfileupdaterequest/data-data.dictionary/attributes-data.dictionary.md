@@ -1,7 +1,8 @@
 # BackgroundAssetUploadFileUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a background asset upload file update request resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a background asset upload file update request resource.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUploadFileUpdateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `sourceFileChecksum` (string): This attribute is deprecated. Use `sourceFileChecksum` instead.
+- `sourceFileChecksum` (string) *(deprecated)*: This attribute is deprecated. Use `sourceFileChecksum` instead.
 - `sourceFileChecksums` (Checksums)
 - `uploaded` (boolean)
 

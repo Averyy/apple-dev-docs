@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the user presses the button.
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the user presses the button.
 var isPressed: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isPressed) BOOL pressed;
+```
+
 ## See Also
 
-- [var lastPressedStateTimestamp: TimeInterval](gcpressedstateinput/lastpressedstatetimestamp.md)
+### Getting change information
+- [var lastPressedStateTimestamp: TimeInterval](./lastpressedstatetimestamp.md)
   The time of the most recent press state change.
-- [var lastPressedStateLatency: TimeInterval](gcpressedstateinput/lastpressedstatelatency.md)
+- [var lastPressedStateLatency: TimeInterval](./lastpressedstatelatency.md)
   The time in seconds between the last press state change and the current time.
-- [var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInput, Bool) -> Void)?](gcpressedstateinput/presseddidchangehandler.md)
+- [var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInput, Bool) -> Void)?](./presseddidchangehandler.md)
   The block that the profile calls when an element’s press state changes.
 
 

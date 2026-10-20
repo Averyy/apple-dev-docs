@@ -1,14 +1,15 @@
 # CNCustomDetectionTrack
 
 **Framework**: Cinematic  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a discrete detection track composed of individual detections.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -21,30 +22,31 @@ class CNCustomDetectionTrack
 ## Topics
 
 ### Initializers
-- [init(detections: [CNDetection], smooth: Bool)](cncustomdetectiontrack-9a2zo/init(detections:smooth:).md)
+- [init(detections: [CNDetection], smooth: Bool)](./cncustomdetectiontrack-9a2zo/init%28detections,smooth%29.md)
   Initializes a custom detection track object with an array of detections and optionally applying smoothing.
 ### Instance Properties
-- [var allDetections: [CNDetection]](cncustomdetectiontrack-9a2zo/alldetections.md)
+- [var allDetections: [CNDetection]](./cncustomdetectiontrack-9a2zo/alldetections.md)
   All detected objects in the track.
 
 ## Relationships
 
 ### Inherits From
-- [CNDetectionTrack](cndetectiontrack-2bxtd.md)
+- [CNDetectionTrack](./cndetectiontrack-2bxtd.md)
 
 ## See Also
 
-- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+### Editing
+- [Editing Spatial Audio with an audio mix](./editing-spatial-audio-with-an-audio-mix.md)
   Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
-- [struct CNDetection](cndetection-swift.struct.md)
+- [struct CNDetection](./cndetection-swift.struct.md)
   A structure that represents a detected subject, face, torso or pet at a particular time.
-- [struct CNDecision](cndecision-swift.struct.md)
+- [struct CNDecision](./cndecision-swift.struct.md)
   An object that represents a decision to focus on a particular detection, or group of detections, at a particular time.
-- [class CNDetectionTrack](cndetectiontrack-2bxtd.md)
+- [class CNDetectionTrack](./cndetectiontrack-2bxtd.md)
   An object representing a series of detections of the same subject over time.
-- [class CNFixedDetectionTrack](cnfixeddetectiontrack-93rrw.md)
+- [class CNFixedDetectionTrack](./cnfixeddetectiontrack-93rrw.md)
   An object representing the fixed detection track.
-- [enum CNDetectionType](cndetectiontype.md)
+- [enum CNDetectionType](./cndetectiontype.md)
   The type of object detected, such as face, torso, cat, dog and so on.
 
 

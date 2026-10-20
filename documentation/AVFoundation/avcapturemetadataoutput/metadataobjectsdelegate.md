@@ -1,7 +1,8 @@
 # metadataObjectsDelegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the capture metadata output object.
 
@@ -18,19 +19,24 @@ The delegate of the capture metadata output object.
 var metadataObjectsDelegate: (any AVCaptureMetadataOutputObjectsDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<AVCaptureMetadataOutputObjectsDelegate> metadataObjectsDelegate;
+```
+
 #### Discussion
 
-The delegate object must conform to the [`AVCaptureMetadataOutputObjectsDelegate`](avcapturemetadataoutputobjectsdelegate.md) protocol. The object in this property is used to process all metadata objects captured from the capture metadata output object’s connection.
+The delegate object must conform to the [`AVCaptureMetadataOutputObjectsDelegate`](../avcapturemetadataoutputobjectsdelegate.md) protocol. The object in this property is used to process all metadata objects captured from the capture metadata output object’s connection.
 
-To set the delegate object, you must use the [`setMetadataObjectsDelegate(_:queue:)`](avcapturemetadataoutput/setmetadataobjectsdelegate(_:queue:).md) method.
+To set the delegate object, you must use the [`setMetadataObjectsDelegate(_:queue:)`](./setmetadataobjectsdelegate%28_,queue%29.md) method.
 
 ## See Also
 
-- [func setMetadataObjectsDelegate((any AVCaptureMetadataOutputObjectsDelegate)?, queue: dispatch_queue_t?)](avcapturemetadataoutput/setmetadataobjectsdelegate(_:queue:).md)
+### Receiving captured metadata objects
+- [func setMetadataObjectsDelegate((any AVCaptureMetadataOutputObjectsDelegate)?, queue: dispatch_queue_t?)](./setmetadataobjectsdelegate%28_,queue%29.md)
   Sets the delegate and dispatch queue to use handle callbacks.
-- [var metadataObjectsCallbackQueue: dispatch_queue_t?](avcapturemetadataoutput/metadataobjectscallbackqueue.md)
+- [var metadataObjectsCallbackQueue: dispatch_queue_t?](./metadataobjectscallbackqueue.md)
   The dispatch queue on which to execute the delegate’s methods.
-- [protocol AVCaptureMetadataOutputObjectsDelegate](avcapturemetadataoutputobjectsdelegate.md)
+- [protocol AVCaptureMetadataOutputObjectsDelegate](../avcapturemetadataoutputobjectsdelegate.md)
   Methods for receiving metadata produced by a metadata capture output.
 
 

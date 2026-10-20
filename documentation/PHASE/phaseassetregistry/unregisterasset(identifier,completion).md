@@ -1,7 +1,8 @@
 # unregisterAsset(identifier:completion:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deallocates system memory for a given asset and removes it from the engine’s list of registered assets.
 
@@ -16,14 +17,26 @@ Deallocates system memory for a given asset and removes it from the engine’s l
 ## Declaration
 
 ```swift
+func unregisterAsset(identifier: String, completion handler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func unregisterAsset(identifier: String) async -> Bool
+```
+
+```objc
+- (void) unregisterAssetWithIdentifier:(NSString *) identifier completion:(void (^)(bool success)) handler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func unregisterAsset(identifier: String) async -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func unregisterAsset(identifier: String) async -> Bool
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
@@ -32,9 +45,10 @@ func unregisterAsset(identifier: String) async -> Bool
 
 ## See Also
 
-- [func registerSoundAsset(url: URL, identifier: String?, assetType: PHASEAsset.AssetType, channelLayout: AVAudioChannelLayout?, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset](phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).md)
+### Registering Sound Assets
+- [func registerSoundAsset(url: URL, identifier: String?, assetType: PHASEAsset.AssetType, channelLayout: AVAudioChannelLayout?, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset](./registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md)
   Loads a sound asset from the argument URL and adds it to the engine’s list of registered assets.
-- [func registerSoundAsset(data: Data, identifier: String?, format: AVAudioFormat, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset](phaseassetregistry/registersoundasset(data:identifier:format:normalizationmode:).md)
+- [func registerSoundAsset(data: Data, identifier: String?, format: AVAudioFormat, normalizationMode: PHASENormalizationMode) throws -> PHASESoundAsset](./registersoundasset%28data,identifier,format,normalizationmode%29.md)
   Loads a sound asset from memory and adds it to the engine’s list of registered assets.
 
 

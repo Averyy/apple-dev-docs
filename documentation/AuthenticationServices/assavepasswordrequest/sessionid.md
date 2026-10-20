@@ -1,7 +1,8 @@
 # sessionID
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ID that represents a form’s session.
 
@@ -15,6 +16,10 @@ An ID that represents a form’s session.
 
 ```swift
 var sessionID: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * sessionID;
 ```
 
 

@@ -1,7 +1,8 @@
 # destroyRights
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that instructs the Security Server to revoke authorization.
 
@@ -13,6 +14,10 @@ A flag that instructs the Security Server to revoke authorization.
 
 ```swift
 static var destroyRights: AuthorizationFlags { get }
+```
+
+```c
+kAuthorizationFlagDestroyRights
 ```
 
 #### Discussion

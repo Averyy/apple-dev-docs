@@ -1,12 +1,15 @@
 # NSUserNotificationDefaultSoundName
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default notification sound.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The default notification sound.
 let NSUserNotificationDefaultSoundName: String
 ```
 
+```c
+extern NSString * const NSUserNotificationDefaultSoundName;
+```
+
 ## See Also
 
-- [NSUserNotification.ActivationType](nsusernotification/activationtype-swift.enum.md)
+### Constants
+- [NSUserNotification.ActivationType](./nsusernotification/activationtype-swift.enum.md)
   These constants describe how the user notification was activated.
 
 

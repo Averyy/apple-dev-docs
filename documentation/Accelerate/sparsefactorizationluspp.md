@@ -1,7 +1,8 @@
 # SparseFactorizationLUSPP
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 LU factorization with partial pivoting restricted to within supernodes only.
 
@@ -20,13 +21,18 @@ LU factorization with partial pivoting restricted to within supernodes only.
 var SparseFactorizationLUSPP: SparseFactorization_t { get }
 ```
 
+```c
+SparseFactorizationLUSPP
+```
+
 ## See Also
 
-- [var SparseFactorizationLU: SparseFactorization_t](sparsefactorizationlu.md)
+### LU factorization types
+- [var SparseFactorizationLU: SparseFactorization_t](./sparsefactorizationlu.md)
   Default LU factorization, currently LU with TPP.
-- [var SparseFactorizationLUTPP: SparseFactorization_t](sparsefactorizationlutpp.md)
+- [var SparseFactorizationLUTPP: SparseFactorization_t](./sparsefactorizationlutpp.md)
   LU factorization with threshold partial pivoting.
-- [var SparseFactorizationLUUnpivoted: SparseFactorization_t](sparsefactorizationluunpivoted.md)
+- [var SparseFactorizationLUUnpivoted: SparseFactorization_t](./sparsefactorizationluunpivoted.md)
   LU factorization with no numerical pivoting.
 
 

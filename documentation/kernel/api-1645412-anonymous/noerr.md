@@ -1,7 +1,8 @@
 # noErr
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 No error
 
@@ -10,7 +11,7 @@ No error
 
 ## Declaration
 
-```swift
+```c
 noErr = 0
 ```
 

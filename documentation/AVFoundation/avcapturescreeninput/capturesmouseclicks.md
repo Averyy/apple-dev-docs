@@ -1,7 +1,8 @@
 # capturesMouseClicks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether mouse clicks appear highlighted in the captured output.
 
@@ -14,15 +15,20 @@ A Boolean value that specifies whether mouse clicks appear highlighted in the ca
 var capturesMouseClicks: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL capturesMouseClicks;
+```
+
 #### Discussion
 
 By default, `AVCaptureScreenInput` does not highlight mouse clicks in its captured output.
 
-If you set this property is set to [`true`](https://developer.apple.com/documentation/swift/true), mouse clicks are highlighted (a circle is drawn around the mouse for the duration of the click) in the captured output.
+If you set this property is set to [`true`](../../Swift/true.md), mouse clicks are highlighted (a circle is drawn around the mouse for the duration of the click) in the captured output.
 
 ## See Also
 
-- [var capturesCursor: Bool](avcapturescreeninput/capturescursor.md)
+### Capturing mouse activity
+- [var capturesCursor: Bool](./capturescursor.md)
   A Boolean value that specifies whether the mouse cursor appears in the captured output.
 
 

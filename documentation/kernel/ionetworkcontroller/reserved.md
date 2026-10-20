@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData * _reserved;
 ```
 
@@ -15,6 +15,7 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
+### Related Documentation
 - [collectionGroup-1661031](collectionGroup-1661031)
 
 

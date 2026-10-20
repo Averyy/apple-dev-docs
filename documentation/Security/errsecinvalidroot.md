@@ -1,7 +1,8 @@
 # errSecInvalidRoot
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The root or anchor certificate is not valid.
 
@@ -18,6 +19,10 @@ The root or anchor certificate is not valid.
 
 ```swift
 var errSecInvalidRoot: OSStatus { get }
+```
+
+```c
+errSecInvalidRoot
 ```
 
 

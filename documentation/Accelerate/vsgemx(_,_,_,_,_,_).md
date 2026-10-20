@@ -1,17 +1,24 @@
 # vSgemx(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies a matrix by a scalar and then by a vector, and adds the resulting vector to a second vector.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Use cblas_sgemv instead
 
 ## Declaration
 
 ```swift
 func vSgemx(_ m: Int32, _ n: Int32, _ alpha: Float, _ a: UnsafePointer<vFloat>, _ x: UnsafePointer<vFloat>, _ y: UnsafeMutablePointer<vFloat>)
+```
+
+```c
+extern void vSgemx(int32_t m, int32_t n, float alpha, const vFloat *a, const vFloat *x, vFloat *y);
 ```
 
 #### Discussion
@@ -29,9 +36,10 @@ Matrix `a` is multiplied by `alpha` and then by vector `x`; the resulting vector
 
 ## See Also
 
-- [func vSgemv(CChar, Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, Float, UnsafeMutablePointer<vFloat>)](vsgemv(_:_:_:_:_:_:_:_:).md)
+### Matrix-Vector Linear Algebra Functions (from vectorOps.h)
+- [func vSgemv(CChar, Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, Float, UnsafeMutablePointer<vFloat>)](./vsgemv%28_,_,_,_,_,_,_,_%29.md)
   Multiplies a vector by a scalar. Multiplies a matrix by another scalar, then by a second vector, and adds the resulting vector to the first vector. This function can also perform the calculation with the transpose of the original matrix instead of the matrix itself. A selector parameter determines whether the transpose is used.
-- [func vSgemtx(Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsgemtx(_:_:_:_:_:_:).md)
+- [func vSgemtx(Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsgemtx%28_,_,_,_,_,_%29.md)
   Forms the transpose of a matrix, multiplies it by a scalar and then by a vector, and adds the resulting vector to a second vector.
 
 

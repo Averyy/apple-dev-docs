@@ -1,22 +1,24 @@
 # getParentCollection
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOHIDElement * getParentCollection();
 ```
 
 ## See Also
 
-- [addElement](iohiddigitizercollection/addelement.md)
-- [getElements](iohiddigitizercollection/getelements.md)
+### Managing the Collection Elements
+- [addElement](./addelement.md)
+- [getElements](./getelements.md)
 
 
 ---

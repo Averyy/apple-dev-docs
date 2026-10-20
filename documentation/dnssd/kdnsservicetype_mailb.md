@@ -1,7 +1,8 @@
 # kDNSServiceType_MAILB
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceType_MAILB: Int { get }
+```
+
+```c
+kDNSServiceType_MAILB
 ```
 
 #### Discussion

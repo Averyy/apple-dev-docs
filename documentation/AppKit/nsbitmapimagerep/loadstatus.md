@@ -1,12 +1,13 @@
 # NSBitmapImageRep.LoadStatus
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify the loading status of the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,41 +15,46 @@ Constants that identify the loading status of the image.
 enum LoadStatus
 ```
 
+```c
+enum NSImageRepLoadStatus : NSInteger;
+```
+
 #### Overview
 
-These status values are returned by [`incrementalLoad(from:complete:)`](nsbitmapimagerep/incrementalload(from:complete:).md).
+These status values are returned by [`incrementalLoad(from:complete:)`](./incrementalload%28from,complete%29.md).
 
 ## Topics
 
 ### Constants
-- [NSBitmapImageRep.LoadStatus.unknownType](nsbitmapimagerep/loadstatus/unknowntype.md)
+- [NSBitmapImageRep.LoadStatus.unknownType](./loadstatus/unknowntype.md)
   Not enough data to determine image format. You should continue to provide more data.
-- [NSBitmapImageRep.LoadStatus.readingHeader](nsbitmapimagerep/loadstatus/readingheader.md)
+- [NSBitmapImageRep.LoadStatus.readingHeader](./loadstatus/readingheader.md)
   The image format is known, but not enough data has been read to determine the size, depth, etc., of the image. You should continue to provide more data.
-- [NSBitmapImageRep.LoadStatus.willNeedAllData](nsbitmapimagerep/loadstatus/willneedalldata.md)
+- [NSBitmapImageRep.LoadStatus.willNeedAllData](./loadstatus/willneedalldata.md)
   Incremental loading cannot be supported.
-- [NSBitmapImageRep.LoadStatus.invalidData](nsbitmapimagerep/loadstatus/invaliddata.md)
+- [NSBitmapImageRep.LoadStatus.invalidData](./loadstatus/invaliddata.md)
   An error occurred during image decompression. The image contains the portions of the data that have already been successfully decompressed, if any
-- [NSBitmapImageRep.LoadStatus.unexpectedEOF](nsbitmapimagerep/loadstatus/unexpectedeof.md)
+- [NSBitmapImageRep.LoadStatus.unexpectedEOF](./loadstatus/unexpectedeof.md)
   Not enough data was available to fully decompress the image.
-- [NSBitmapImageRep.LoadStatus.completed](nsbitmapimagerep/loadstatus/completed.md)
+- [NSBitmapImageRep.LoadStatus.completed](./loadstatus/completed.md)
   Enough data has been provided to successfully decompress the image (regardless of the complete: flag).
 ### Initializers
-- [init?(rawValue: Int)](nsbitmapimagerep/loadstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./loadstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func incrementalLoad(from: Data, complete: Bool) -> Int](nsbitmapimagerep/incrementalload(from:complete:).md)
+### Loading Images Incrementally
+- [func incrementalLoad(from: Data, complete: Bool) -> Int](./incrementalload%28from,complete%29.md)
   Loads the current image data into an incrementally-loaded image representation and returns the current status of the image.
 
 

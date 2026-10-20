@@ -1,7 +1,8 @@
 # supports64BitObjectIDs
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the volume supports 64-bit object IDs.
 
@@ -14,11 +15,16 @@ A Boolean property that indicates whether the volume supports 64-bit object IDs.
 var supports64BitObjectIDs: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supports64BitObjectIDs;
+```
+
 ## See Also
 
-- [var supportsPersistentObjectIDs: Bool](fsvolume/supportedcapabilities/supportspersistentobjectids.md)
+### Declaring identifier capabilities
+- [var supportsPersistentObjectIDs: Bool](./supportspersistentobjectids.md)
   A Boolean property that indicates whether the volume supports persistent object identifiers and can look up file system objects by their IDs.
-- [var supportsDocumentID: Bool](fsvolume/supportedcapabilities/supportsdocumentid.md)
+- [var supportsDocumentID: Bool](./supportsdocumentid.md)
   A Boolean property that indicates whether the volume supports document IDs for document revisions.
 
 

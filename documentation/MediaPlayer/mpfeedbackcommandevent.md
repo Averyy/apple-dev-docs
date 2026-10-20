@@ -1,7 +1,8 @@
 # MPFeedbackCommandEvent
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event requesting a change in the feedback setting.
 
@@ -20,31 +21,36 @@ An event requesting a change in the feedback setting.
 class MPFeedbackCommandEvent
 ```
 
+```objc
+@interface MPFeedbackCommandEvent : MPRemoteCommandEvent
+```
+
 ## Topics
 
 ### Determining the type of feedback action
-- [var isNegative: Bool](mpfeedbackcommandevent/isnegative.md)
+- [var isNegative: Bool](./mpfeedbackcommandevent/isnegative.md)
   A Boolean value that indicates whether an app should perform a negative command appropriate to the target.
 
 ## Relationships
 
 ### Inherits From
-- [MPRemoteCommandEvent](mpremotecommandevent.md)
+- [MPRemoteCommandEvent](./mpremotecommandevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPFeedbackCommand](mpfeedbackcommand.md)
+### Responding to feedback and rating events
+- [class MPFeedbackCommand](./mpfeedbackcommand.md)
   An object that reflects the feedback state for the playing item.
-- [class MPRatingCommand](mpratingcommand.md)
+- [class MPRatingCommand](./mpratingcommand.md)
   An object that provides a detailed rating for the playing item.
-- [class MPRatingCommandEvent](mpratingcommandevent.md)
+- [class MPRatingCommandEvent](./mpratingcommandevent.md)
   An event requesting a change in the rating.
 
 

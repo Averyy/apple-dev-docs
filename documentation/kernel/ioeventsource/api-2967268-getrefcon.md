@@ -1,14 +1,15 @@
 # getRefcon
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 void * getRefcon(void);
 ```
 

@@ -1,7 +1,8 @@
 # MTLTensorDataType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible data types for the elements of a tensor.
 
@@ -19,80 +20,85 @@ The possible data types for the elements of a tensor.
 enum MTLTensorDataType
 ```
 
+```c
+enum MTLTensorDataType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLTensorDataType.bfloat16](mtltensordatatype/bfloat16.md)
+- [MTLTensorDataType.bfloat16](./mtltensordatatype/bfloat16.md)
   A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits, and 1 sign bit.
-- [MTLTensorDataType.float16](mtltensordatatype/float16.md)
+- [MTLTensorDataType.float16](./mtltensordatatype/float16.md)
   A half-precision floating point data type.
-- [MTLTensorDataType.float32](mtltensordatatype/float32.md)
+- [MTLTensorDataType.float32](./mtltensordatatype/float32.md)
   A single-precision floating point data type.
-- [MTLTensorDataType.int16](mtltensordatatype/int16.md)
+- [MTLTensorDataType.int16](./mtltensordatatype/int16.md)
   A 16-bit signed integer data type.
-- [MTLTensorDataType.int2](mtltensordatatype/int2.md)
+- [MTLTensorDataType.int2](./mtltensordatatype/int2.md)
   A 2-bit signed integer data type.
-- [MTLTensorDataType.int32](mtltensordatatype/int32.md)
+- [MTLTensorDataType.int32](./mtltensordatatype/int32.md)
   A 32-bit signed integer data type.
-- [MTLTensorDataType.int4](mtltensordatatype/int4.md)
+- [MTLTensorDataType.int4](./mtltensordatatype/int4.md)
   A 4-bit signed integer data type.
-- [MTLTensorDataType.int8](mtltensordatatype/int8.md)
+- [MTLTensorDataType.int8](./mtltensordatatype/int8.md)
   An 8-bit signed integer data type.
-- [MTLTensorDataType.metalFloat4e2m1](mtltensordatatype/metalfloat4e2m1.md)
+- [MTLTensorDataType.metalFloat4e2m1](./mtltensordatatype/metalfloat4e2m1.md)
   A 4-bit floating point data type with 2 exponent bits, 1 mantissa bit, and 1 sign bit.
-- [MTLTensorDataType.metalFloat8e4m3](mtltensordatatype/metalfloat8e4m3.md)
+- [MTLTensorDataType.metalFloat8e4m3](./mtltensordatatype/metalfloat8e4m3.md)
   An 8-bit floating point data type with 4 exponent bits, 3 mantissa bits, and 1 sign bit.
-- [MTLTensorDataType.metalFloat8e5m2](mtltensordatatype/metalfloat8e5m2.md)
+- [MTLTensorDataType.metalFloat8e5m2](./mtltensordatatype/metalfloat8e5m2.md)
   An 8-bit floating point data type with 5 exponent bits, 2 mantissa bits, and 1 sign bit.
-- [MTLTensorDataType.metalFloat8ue8m0](mtltensordatatype/metalfloat8ue8m0.md)
+- [MTLTensorDataType.metalFloat8ue8m0](./mtltensordatatype/metalfloat8ue8m0.md)
   An 8-bit floating point data type with 8 exponent bits, 0 mantissa bits, and no sign bit.
-- [MTLTensorDataType.none](mtltensordatatype/none.md)
+- [MTLTensorDataType.none](./mtltensordatatype/none.md)
   An invalid data type.
-- [MTLTensorDataType.uint16](mtltensordatatype/uint16.md)
+- [MTLTensorDataType.uint16](./mtltensordatatype/uint16.md)
   A 16-bit unsigned integer data type.
-- [MTLTensorDataType.uint2](mtltensordatatype/uint2.md)
+- [MTLTensorDataType.uint2](./mtltensordatatype/uint2.md)
   A 2-bit unsigned integer data type.
-- [MTLTensorDataType.uint32](mtltensordatatype/uint32.md)
+- [MTLTensorDataType.uint32](./mtltensordatatype/uint32.md)
   A 32-bit unsigned integer data type.
-- [MTLTensorDataType.uint4](mtltensordatatype/uint4.md)
+- [MTLTensorDataType.uint4](./mtltensordatatype/uint4.md)
   A 4-bit unsigned integer data type.
-- [MTLTensorDataType.uint8](mtltensordatatype/uint8.md)
+- [MTLTensorDataType.uint8](./mtltensordatatype/uint8.md)
   An 8-bit unsigned integer data type.
 ### Initializers
-- [init?(rawValue: Int)](mtltensordatatype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtltensordatatype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLTensor](mtltensor.md)
+### Tensors
+- [protocol MTLTensor](./mtltensor.md)
   A resource representing a multi-dimensional array that you can use with machine learning workloads.
-- [class MTLTensorDescriptor](mtltensordescriptor.md)
+- [class MTLTensorDescriptor](./mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
-- [class MTLTensorExtents](mtltensorextents.md)
+- [class MTLTensorExtents](./mtltensorextents.md)
   An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
-- [class MTLTensorReferenceType](mtltensorreferencetype.md)
+- [class MTLTensorReferenceType](./mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
-- [struct MTLTensorUsage](mtltensorusage.md)
+- [struct MTLTensorUsage](./mtltensorusage.md)
   The contexts in which you can use a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [protocol MTLTensorBinding](mtltensorbinding.md)
+- [protocol MTLTensorBinding](./mtltensorbinding.md)
   An object that represents a tensor bound to a graphics or compute function or a machine learning function.
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [MTLTensorError.Code](./mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [var MTL_TENSOR_MAX_RANK: Int32](mtl_tensor_max_rank.md)
+- [var MTL_TENSOR_MAX_RANK: Int32](./mtl_tensor_max_rank.md)
 
 
 ---

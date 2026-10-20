@@ -1,7 +1,8 @@
 # renameAction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a closure to run for the rename action.
 
@@ -21,13 +22,20 @@ nonisolated
 func renameAction(_ action: @escaping () -> Void) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func renameAction(_ isFocused: FocusState<Bool>.Binding) -> some View
+```
+
 #### Return Value
 
 A view that has the specified rename action.
 
 #### Discussion
 
-Use this modifier in conjunction with the [`RenameButton`](renamebutton.md) to implement standard rename interactions. A rename button receives its action from the environment. Use this modifier to customize the action provided to the rename button.
+Use this modifier in conjunction with the [`RenameButton`](../renamebutton.md) to implement standard rename interactions. A rename button receives its action from the environment. Use this modifier to customize the action provided to the rename button.
 
 ```swift
 struct RowView: View {
@@ -55,11 +63,12 @@ When the user taps the rename button in the context menu, the rename action focu
 
 ## See Also
 
-- [struct RenameButton](renamebutton.md)
+### Renaming a document
+- [struct RenameButton](../renamebutton.md)
   A button that triggers a standard rename action.
-- [var rename: RenameAction?](environmentvalues/rename.md)
+- [var rename: RenameAction?](../environmentvalues/rename.md)
   An action that activates the standard rename interaction.
-- [struct RenameAction](renameaction.md)
+- [struct RenameAction](../renameaction.md)
   An action that activates a standard rename interaction.
 
 

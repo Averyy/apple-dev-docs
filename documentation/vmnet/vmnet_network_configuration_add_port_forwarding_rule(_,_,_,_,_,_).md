@@ -1,7 +1,8 @@
 # vmnet_network_configuration_add_port_forwarding_rule(_:_:_:_:_:_:)
 
 **Framework**: vmnet  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Configures a new port forwarding rule for a vmnet network.
 
@@ -15,13 +16,17 @@ Configures a new port forwarding rule for a vmnet network.
 func vmnet_network_configuration_add_port_forwarding_rule(_ config: vmnet_network_configuration_ref, _ protocol: UInt8, _ address_family: sa_family_t, _ internal_port: UInt16, _ external_port: UInt16, _ internal_address: UnsafeRawPointer) -> vmnet_return_t
 ```
 
+```c
+vmnet_return_t vmnet_network_configuration_add_port_forwarding_rule(vmnet_network_configuration_ref config, uint8_t protocol, sa_family_t address_family, uint16_t internal_port, uint16_t external_port, const void *internal_address);
+```
+
 #### Return Value
 
 `VMNET_SUCCESS` on success, an error otherwise.
 
 #### Discussion
 
-An app won’t be able to query or remove rules until the it starts the network. To do that, use [`vmnet_interface_remove_ip_port_forwarding_rule(_:_:_:_:_:)`](vmnet_interface_remove_ip_port_forwarding_rule(_:_:_:_:_:).md) or [`vmnet_interface_get_ip_port_forwarding_rules(_:_:_:)`](vmnet_interface_get_ip_port_forwarding_rules(_:_:_:).md) APIs, respectively.
+An app won’t be able to query or remove rules until the it starts the network. To do that, use [`vmnet_interface_remove_ip_port_forwarding_rule(_:_:_:_:_:)`](./vmnet_interface_remove_ip_port_forwarding_rule%28_,_,_,_,_%29.md) or [`vmnet_interface_get_ip_port_forwarding_rules(_:_:_:)`](./vmnet_interface_get_ip_port_forwarding_rules%28_,_,_%29.md) APIs, respectively.
 
 ## Parameters
 
@@ -34,35 +39,36 @@ An app won’t be able to query or remove rules until the it starts the network.
 
 ## See Also
 
-- [typealias vmnet_network_configuration_ref](vmnet_network_configuration_ref.md)
+### Customizing a network configuration
+- [typealias vmnet_network_configuration_ref](./vmnet_network_configuration_ref.md)
   A reference to a network vmnet network configuration.
-- [func vmnet_network_configuration_add_dhcp_reservation(vmnet_network_configuration_ref, UnsafePointer<ether_addr_t>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_add_dhcp_reservation(_:_:_:).md)
+- [func vmnet_network_configuration_add_dhcp_reservation(vmnet_network_configuration_ref, UnsafePointer<ether_addr_t>, UnsafePointer<in_addr>) -> vmnet_return_t](./vmnet_network_configuration_add_dhcp_reservation%28_,_,_%29.md)
   Configures a new dhcp reservation for a vmnet network.
-- [func vmnet_network_configuration_disable_router_advertisement(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_router_advertisement(_:).md)
+- [func vmnet_network_configuration_disable_router_advertisement(vmnet_network_configuration_ref)](./vmnet_network_configuration_disable_router_advertisement%28_%29.md)
   Disables router advertisement on a network.
-- [func vmnet_network_configuration_disable_nat66(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat66(_:).md)
+- [func vmnet_network_configuration_disable_nat66(vmnet_network_configuration_ref)](./vmnet_network_configuration_disable_nat66%28_%29.md)
   Disables NAT66 on a network.
-- [func vmnet_network_configuration_disable_nat44(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat44(_:).md)
+- [func vmnet_network_configuration_disable_nat44(vmnet_network_configuration_ref)](./vmnet_network_configuration_disable_nat44%28_%29.md)
   Disables NAT44 on a network.
-- [func vmnet_network_configuration_disable_dns_proxy(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dns_proxy(_:).md)
+- [func vmnet_network_configuration_disable_dns_proxy(vmnet_network_configuration_ref)](./vmnet_network_configuration_disable_dns_proxy%28_%29.md)
   Disables the DNS proxy on a network.
-- [func vmnet_network_configuration_disable_dhcp(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dhcp(_:).md)
+- [func vmnet_network_configuration_disable_dhcp(vmnet_network_configuration_ref)](./vmnet_network_configuration_disable_dhcp%28_%29.md)
   Disables DHCP server on a network.
-- [let vmnet_nat66_prefix_length_key: UnsafePointer<CChar>](vmnet_nat66_prefix_length_key.md)
+- [let vmnet_nat66_prefix_length_key: UnsafePointer<CChar>](./vmnet_nat66_prefix_length_key.md)
   The IPv6 prefix (uint64) to use with vmnet shared mode.
-- [let vmnet_nat66_prefix_key: UnsafePointer<CChar>](vmnet_nat66_prefix_key.md)
+- [let vmnet_nat66_prefix_key: UnsafePointer<CChar>](./vmnet_nat66_prefix_key.md)
   The IPv6 prefix string to use with vmnet shared mode.
-- [func vmnet_port_forwarding_rule_get_details(xpc_object_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<UInt16>, UnsafeMutablePointer<in_addr>, UnsafeMutablePointer<UInt16>) -> vmnet_return_t](vmnet_port_forwarding_rule_get_details(_:_:_:_:_:).md)
+- [func vmnet_port_forwarding_rule_get_details(xpc_object_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<UInt16>, UnsafeMutablePointer<in_addr>, UnsafeMutablePointer<UInt16>) -> vmnet_return_t](./vmnet_port_forwarding_rule_get_details%28_,_,_,_,_%29.md)
   Extracts port forwarding rule details from the rule XPC dictionary object.
-- [func vmnet_network_configuration_set_external_interface(vmnet_network_configuration_ref, UnsafePointer<CChar>) -> vmnet_return_t](vmnet_network_configuration_set_external_interface(_:_:).md)
+- [func vmnet_network_configuration_set_external_interface(vmnet_network_configuration_ref, UnsafePointer<CChar>) -> vmnet_return_t](./vmnet_network_configuration_set_external_interface%28_,_%29.md)
   Configures the external interface of a vmnet network.
-- [func vmnet_network_configuration_set_ipv4_subnet(vmnet_network_configuration_ref, UnsafePointer<in_addr>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_set_ipv4_subnet(_:_:_:).md)
+- [func vmnet_network_configuration_set_ipv4_subnet(vmnet_network_configuration_ref, UnsafePointer<in_addr>, UnsafePointer<in_addr>) -> vmnet_return_t](./vmnet_network_configuration_set_ipv4_subnet%28_,_,_%29.md)
   Configures the IPv4 addresses of a vmnet network.
-- [func vmnet_network_configuration_set_ipv6_prefix(vmnet_network_configuration_ref, UnsafePointer<in6_addr>, UInt8) -> vmnet_return_t](vmnet_network_configuration_set_ipv6_prefix(_:_:_:).md)
+- [func vmnet_network_configuration_set_ipv6_prefix(vmnet_network_configuration_ref, UnsafePointer<in6_addr>, UInt8) -> vmnet_return_t](./vmnet_network_configuration_set_ipv6_prefix%28_,_,_%29.md)
   Configures the IPv6 prefix for a vmnet network object.
-- [func vmnet_network_configuration_set_mtu(vmnet_network_configuration_ref, UInt32) -> vmnet_return_t](vmnet_network_configuration_set_mtu(_:_:).md)
+- [func vmnet_network_configuration_set_mtu(vmnet_network_configuration_ref, UInt32) -> vmnet_return_t](./vmnet_network_configuration_set_mtu%28_,_%29.md)
   Configures the maximum transmission unit (MTU) for a vmnet network.
-- [func vmnet_network_get_ipv6_prefix(vmnet_network_ref, UnsafeMutablePointer<in6_addr>, UnsafeMutablePointer<UInt8>)](vmnet_network_get_ipv6_prefix(_:_:_:).md)
+- [func vmnet_network_get_ipv6_prefix(vmnet_network_ref, UnsafeMutablePointer<in6_addr>, UnsafeMutablePointer<UInt8>)](./vmnet_network_get_ipv6_prefix%28_,_,_%29.md)
   Returns the IPv6 prefix of a network.
 
 

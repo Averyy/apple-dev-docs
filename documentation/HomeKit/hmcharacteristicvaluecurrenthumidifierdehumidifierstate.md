@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentHumidifierDehumidifierState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the current humidifier or dehumidifier state.
 
@@ -19,29 +20,33 @@ Possible values for the current humidifier or dehumidifier state.
 enum HMCharacteristicValueCurrentHumidifierDehumidifierState
 ```
 
+```c
+enum HMCharacteristicValueCurrentHumidifierDehumidifierState : NSInteger;
+```
+
 ## Topics
 
 ### Current States
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.inactive](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/inactive.md)
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.inactive](./hmcharacteristicvaluecurrenthumidifierdehumidifierstate/inactive.md)
   The accesory is off.
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.idle](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/idle.md)
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.idle](./hmcharacteristicvaluecurrenthumidifierdehumidifierstate/idle.md)
   The accessory is idle.
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.humidifying](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/humidifying.md)
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.humidifying](./hmcharacteristicvaluecurrenthumidifierdehumidifierstate/humidifying.md)
   The accessory is adding water to the air.
-- [HMCharacteristicValueCurrentHumidifierDehumidifierState.dehumidifying](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/dehumidifying.md)
+- [HMCharacteristicValueCurrentHumidifierDehumidifierState.dehumidifying](./hmcharacteristicvaluecurrenthumidifierdehumidifierstate/dehumidifying.md)
   The accessory is removing water from the air.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrenthumidifierdehumidifierstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrenthumidifierdehumidifierstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

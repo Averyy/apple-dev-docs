@@ -1,14 +1,15 @@
 # CS_LAUNCH_TYPE_NONE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CS_LAUNCH_TYPE_NONE
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the custom actions of the current accessibility element.
@@ -17,9 +18,10 @@ func setAccessibilityCustomActions(_ accessibilityCustomActions: [NSAccessibilit
 
 ## See Also
 
-- [func accessibilityCustomActions() -> [NSAccessibilityCustomAction]?](nsaccessibilityprotocol/accessibilitycustomactions.md)
+### Assigning actions
+- [func accessibilityCustomActions() -> [NSAccessibilityCustomAction]?](./accessibilitycustomactions%28%29.md)
   Returns the custom actions of the current accessibility element.
-- [class NSAccessibilityCustomAction](nsaccessibilitycustomaction.md)
+- [class NSAccessibilityCustomAction](../nsaccessibilitycustomaction.md)
   A custom action to perform on an accessible object.
 
 

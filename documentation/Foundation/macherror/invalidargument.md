@@ -1,7 +1,8 @@
 # invalidArgument
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The function requested was not applicable to this type of argument, or an argument is invalid.
 

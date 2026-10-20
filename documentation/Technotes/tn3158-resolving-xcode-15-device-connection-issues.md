@@ -1,6 +1,7 @@
 # TN3158: Resolving Xcode 15 device connection issues
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Identify software preventing Xcode 15 from connecting to Apple devices, and modify your configuration to allow these connections.
 
@@ -9,12 +10,12 @@ Identify software preventing Xcode 15 from connecting to Apple devices, and modi
 Xcode 15 uses a network-based interface to communicate with Apple devices connected to the Mac with a USB cable. In some environments, network management software may interfere with Xcode’s ability to connect to these devices. These configurations include:
 
 - VPN apps using Packet Filter (PF) rules
-- VPN apps using a [`Network Extension`](https://developer.apple.com/documentation/networkextension) provider with [`includeAllNetworks`](https://developer.apple.com/documentation/networkextension/nevpnprotocol/includeallnetworks) enabled
+- VPN apps using a [Network Extension](../NetworkExtension/NetworkExtension.md) provider with [`includeAllNetworks`](../NetworkExtension/nevpnprotocol/includeallnetworks.md) enabled
 - Security configurations using PF
 
 These configurations can prevent the link-local IPv6 traffic that Xcode uses to communicate with a connected Apple device from reaching the device. If you’re a VPN developer or IT professional, follow this document to verify what parts of your configuration affect Xcode, and how to modify your configuration to avoid blocking Xcode’s device communication network traffic. If you’re an app developer in a large organization experiencing device connection issues with Xcode 15, you may need to get assistance from your IT department. If you’re an app developer using a commercial VPN or security product not administered by an IT department, contact the vendor for assistance.
 
-#### Create a Test Environment
+#### Create a test environment
 
 Create an isolated test environment to confirm any device connection issues you are experiencing, and then identify the specific parts of your configuration preventing Xcode’s connection to an attached Apple device. A complex environment may have multiple pieces of software installed that affect Xcode’s ability to communicate with connected devices, such as a VPN, a security configuration, or both.
 
@@ -33,11 +34,11 @@ After confirming the software affecting Xcode’s connection to a connected devi
 - If you’re a VPN developer or an IT professional that can modify your security configuration, proceed with this document.
 - If you’ve identified a software product from a vendor as the source of the issue, contact the vendor for support.
 
-#### Update Software Using Packet Filtering Rules
+#### Update software using packet filtering rules
 
 If your VPN product or security configuration uses PF to filter network packets, update your PF rules to allow traffic on the network interfaces Xcode uses for device communication. These rules need to be continuously updated, as the network interfaces Xcode uses to communicate with a connected device changes over time.
 
-To monitor for network interface changes, use [`NWPathMonitor`](https://developer.apple.com/documentation/network/nwpathmonitor), or create a [`nw_path_monitor_t`](https://developer.apple.com/documentation/network/nw_path_monitor_t) through [`nw_path_monitor_create()`](https://developer.apple.com/documentation/network/nw_path_monitor_create()). Each time the path monitor notifies you that the network interfaces changed, use `ioctl` with a `SIOCGIFDIRECTLINK` request to identify the multiple network interfaces Xcode uses for device connection traffic. The system marks these interfaces with the `ifr_is_directlink` flag. Configure your PF rules to allow any IPv6 traffic on interfaces marked with this flag through the filter.
+To monitor for network interface changes, use [`NWPathMonitor`](../Network/nwpathmonitor.md), or create a [`nw_path_monitor_t`](../Network/nw_path_monitor_t.md) through [`nw_path_monitor_create()`](../Network/nw_path_monitor_create%28%29.md). Each time the path monitor notifies you that the network interfaces changed, use `ioctl` with a `SIOCGIFDIRECTLINK` request to identify the multiple network interfaces Xcode uses for device connection traffic. The system marks these interfaces with the `ifr_is_directlink` flag. Configure your PF rules to allow any IPv6 traffic on interfaces marked with this flag through the filter.
 
 ```c
 /**
@@ -69,11 +70,11 @@ int isDirectLinkInterface(const char * name) {
 
 The `SIOCGIFDIRECTLINK` API was added in macOS 14.4, and requires building your software with Xcode 15.3. If you’re using an older version of macOS, you need to upgrade to macOS 14.4.
 
-> ❗ **Important**: If you maintain a VPN product that uses PF rather than a Network Extension provider, make a plan to migrate to a Network Extension provider. See [`TN3165: Packet Filter is not API`](tn3165-packet-filter-is-not-api.md).
+> ❗ **Important**: If you maintain a VPN product that uses PF rather than a Network Extension provider, make a plan to migrate to a Network Extension provider. See [TN3165: Packet Filter is not API](./tn3165-packet-filter-is-not-api.md).
 
-#### Review If Your Vpn Requires Sending All Network Traffic Over the Tunnel
+#### Review if your VPN requires sending all network traffic over the tunnel
 
-VPN products based on the [`NEVPNProtocol`](https://developer.apple.com/documentation/networkextension/nevpnprotocol) interface should review their use of the `includeAllNetworks` property. If `includeAllNetworks` is required for your configuration, set [`excludeDeviceCommunication`](https://developer.apple.com/documentation/networkextension/nevpnprotocol/excludedevicecommunication) to `true` so that Xcode’s device communication is omitted from your tunnel.
+VPN products based on the [`NEVPNProtocol`](../NetworkExtension/nevpnprotocol.md) interface should review their use of the `includeAllNetworks` property. If `includeAllNetworks` is required for your configuration, set [`excludeDeviceCommunication`](../NetworkExtension/nevpnprotocol/excludedevicecommunication.md) to `true` so that Xcode’s device communication is omitted from your tunnel.
 
 #### Revision History
 

@@ -1,7 +1,8 @@
 # MTRMessagesClusterPresentMessagesRequestParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,33 +19,37 @@
 class MTRMessagesClusterPresentMessagesRequestParams
 ```
 
+```objc
+@interface MTRMessagesClusterPresentMessagesRequestParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var duration: NSNumber?](mtrmessagesclusterpresentmessagesrequestparams/duration.md)
-- [var messageControl: NSNumber](mtrmessagesclusterpresentmessagesrequestparams/messagecontrol.md)
-- [var messageID: Data](mtrmessagesclusterpresentmessagesrequestparams/messageid.md)
-- [var messageText: String](mtrmessagesclusterpresentmessagesrequestparams/messagetext.md)
-- [var priority: NSNumber](mtrmessagesclusterpresentmessagesrequestparams/priority.md)
-- [var responses: [Any]?](mtrmessagesclusterpresentmessagesrequestparams/responses.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrmessagesclusterpresentmessagesrequestparams/serversideprocessingtimeout.md)
+- [var duration: NSNumber?](./mtrmessagesclusterpresentmessagesrequestparams/duration.md)
+- [var messageControl: NSNumber](./mtrmessagesclusterpresentmessagesrequestparams/messagecontrol.md)
+- [var messageID: Data](./mtrmessagesclusterpresentmessagesrequestparams/messageid.md)
+- [var messageText: String](./mtrmessagesclusterpresentmessagesrequestparams/messagetext.md)
+- [var priority: NSNumber](./mtrmessagesclusterpresentmessagesrequestparams/priority.md)
+- [var responses: [Any]?](./mtrmessagesclusterpresentmessagesrequestparams/responses.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrmessagesclusterpresentmessagesrequestparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var startTime: NSNumber?](mtrmessagesclusterpresentmessagesrequestparams/starttime.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrmessagesclusterpresentmessagesrequestparams/timedinvoketimeoutms.md)
+- [var startTime: NSNumber?](./mtrmessagesclusterpresentmessagesrequestparams/starttime.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrmessagesclusterpresentmessagesrequestparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

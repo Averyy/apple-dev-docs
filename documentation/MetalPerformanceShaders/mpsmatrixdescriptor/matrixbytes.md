@@ -1,7 +1,8 @@
 # matrixBytes
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,19 +18,24 @@
 var matrixBytes: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger matrixBytes;
+```
+
 ## See Also
 
-- [var rows: Int](mpsmatrixdescriptor/rows.md)
+### Properties
+- [var rows: Int](./rows.md)
   The number of rows in the matrix.
-- [var columns: Int](mpsmatrixdescriptor/columns.md)
+- [var columns: Int](./columns.md)
   The number of columns in the matrix.
-- [var dataType: MPSDataType](mpsmatrixdescriptor/datatype.md)
+- [var dataType: MPSDataType](./datatype.md)
   The type of the values in the matrix.
-- [enum MPSDataType](mpsdatatype.md)
+- [enum MPSDataType](../mpsdatatype.md)
   A value to specify a type of data.
-- [var rowBytes: Int](mpsmatrixdescriptor/rowbytes.md)
+- [var rowBytes: Int](./rowbytes.md)
   The stride, in bytes, between corresponding elements of consecutive rows in the matrix.
-- [var matrices: Int](mpsmatrixdescriptor/matrices.md)
+- [var matrices: Int](./matrices.md)
 
 
 ---

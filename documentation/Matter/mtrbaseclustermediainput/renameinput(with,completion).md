@@ -1,7 +1,8 @@
 # renameInput(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func renameInput(with params: MTRMediaInputClusterRenameInputParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func renameInput(with params: MTRMediaInputClusterRenameInputParams) async throws
+```
+
+```objc
+- (void) renameInputWithParams:(MTRMediaInputClusterRenameInputParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

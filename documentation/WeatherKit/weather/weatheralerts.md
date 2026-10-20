@@ -1,7 +1,8 @@
 # weatherAlerts
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of severe weather alerts.
 

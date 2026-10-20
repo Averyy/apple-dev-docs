@@ -1,7 +1,8 @@
 # timeout
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -19,11 +20,12 @@ static var timeout: SFSpeechError.Code { get }
 
 ## See Also
 
-- [static var audioReadFailed: SFSpeechError.Code](sfspeecherror/audioreadfailed.md)
-- [static var internalServiceError: SFSpeechError.Code](sfspeecherror/internalserviceerror.md)
-- [static var malformedSupplementalModel: SFSpeechError.Code](sfspeecherror/malformedsupplementalmodel.md)
-- [static var missingParameter: SFSpeechError.Code](sfspeecherror/missingparameter.md)
-- [static var undefinedTemplateClassName: SFSpeechError.Code](sfspeecherror/undefinedtemplateclassname.md)
+### Aliased error codes
+- [static var audioReadFailed: SFSpeechError.Code](./audioreadfailed.md)
+- [static var internalServiceError: SFSpeechError.Code](./internalserviceerror.md)
+- [static var malformedSupplementalModel: SFSpeechError.Code](./malformedsupplementalmodel.md)
+- [static var missingParameter: SFSpeechError.Code](./missingparameter.md)
+- [static var undefinedTemplateClassName: SFSpeechError.Code](./undefinedtemplateclassname.md)
 
 
 ---

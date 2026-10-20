@@ -1,21 +1,28 @@
 # stretchableImage(withLeftCapWidth:topCapHeight:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a new image object with the specified cap values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
+- watchOS
+
+> **Deprecated**: Use the [`resizableImage(withCapInsets:)`](./resizableimage%28withcapinsets%29.md) instead, specifying cap insets such that the interior is a `1x1` area.
 
 ## Declaration
 
 ```swift
 func stretchableImage(withLeftCapWidth leftCapWidth: Int, topCapHeight: Int) -> UIImage
+```
+
+```objc
+- (UIImage *) stretchableImageWithLeftCapWidth:(NSInteger) leftCapWidth topCapHeight:(NSInteger) topCapHeight;
 ```
 
 #### Return Value
@@ -30,14 +37,15 @@ You use this method to add cap values to an image or to change the existing cap 
 
 ## Parameters
 
-- `leftCapWidth`: The value to use for the left cap width. Specify `0` if you want the entire image to be horizontally stretchable. For a discussion of how a non-zero value affects the image, see the [`leftCapWidth`](uiimage/leftcapwidth.md) property.
-- `topCapHeight`: The value to use for the top cap height. Specify `0` if you want the entire image to be vertically stretchable. For a discussion of how a non-zero value affects the image, see the [`topCapHeight`](uiimage/topcapheight.md) property.
+- `leftCapWidth`: The value to use for the left cap width. Specify `0` if you want the entire image to be horizontally stretchable. For a discussion of how a non-zero value affects the image, see the [`leftCapWidth`](./leftcapwidth.md) property.
+- `topCapHeight`: The value to use for the top cap height. Specify `0` if you want the entire image to be vertically stretchable. For a discussion of how a non-zero value affects the image, see the [`topCapHeight`](./topcapheight.md) property.
 
 ## See Also
 
-- [var leftCapWidth: Int](uiimage/leftcapwidth.md)
+### Deprecated
+- [var leftCapWidth: Int](./leftcapwidth.md)
   The horizontal end-cap size.
-- [var topCapHeight: Int](uiimage/topcapheight.md)
+- [var topCapHeight: Int](./topcapheight.md)
   The vertical end-cap size.
 
 

@@ -1,7 +1,8 @@
 # calibrationMode
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sound pressure level strategy for loudness correction.
 
@@ -19,15 +20,20 @@ A sound pressure level strategy for loudness correction.
 var calibrationMode: PHASECalibrationMode { get }
 ```
 
+```objc
+@property (readonly) PHASECalibrationMode calibrationMode;
+```
+
 #### Discussion
 
-The default value is [`PHASECalibrationMode.none`](phasecalibrationmode/none.md). To set a value, call [`setCalibrationMode(calibrationMode:level:)`](phasegeneratornodedefinition/setcalibrationmode(calibrationmode:level:).md).
+The default value is [`PHASECalibrationMode.none`](../phasecalibrationmode/none.md). To set a value, call [`setCalibrationMode(calibrationMode:level:)`](./setcalibrationmode%28calibrationmode,level%29.md).
 
 ## See Also
 
-- [func setCalibrationMode(calibrationMode: PHASECalibrationMode, level: Double)](phasegeneratornodedefinition/setcalibrationmode(calibrationmode:level:).md)
+### Calibrating Loudness
+- [func setCalibrationMode(calibrationMode: PHASECalibrationMode, level: Double)](./setcalibrationmode%28calibrationmode,level%29.md)
   Selects a loudness correction strategy and reference level.
-- [var level: Double](phasegeneratornodedefinition/level.md)
+- [var level: Double](./level.md)
   The node’s loudness.
 
 

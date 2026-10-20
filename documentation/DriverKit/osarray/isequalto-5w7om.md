@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares all members of two arrays with isEqualTo().
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool isEqualTo(const OSArray *anArray) const;
 ```
 
@@ -31,7 +32,8 @@ If the arrays have equal counts, each member is compared with the other at the s
 
 ## See Also
 
-- [isEqualTo](osarray/isequalto-93qxy.md)
+### Comparing Arrays
+- [isEqualTo](./isequalto-93qxy.md)
   Compares the array with an OSObject
 
 

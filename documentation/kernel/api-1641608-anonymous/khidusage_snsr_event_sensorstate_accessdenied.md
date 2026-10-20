@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Event_SensorState_AccessDenied
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Event_SensorState_AccessDenied = 0x0805
 ```
 

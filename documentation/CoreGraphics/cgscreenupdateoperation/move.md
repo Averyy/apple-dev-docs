@@ -1,13 +1,14 @@
 # move
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A screen-move operation.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ A screen-move operation.
 static var move: CGScreenUpdateOperation { get }
 ```
 
+```c
+kCGScreenUpdateOperationMove
+```
+
 ## See Also
 
-- [static var refresh: CGScreenUpdateOperation](cgscreenupdateoperation/refresh.md)
+### Constants
+- [static var refresh: CGScreenUpdateOperation](./refresh.md)
   A screen-refresh operation.
-- [static var reducedDirtyRectangleCount: CGScreenUpdateOperation](cgscreenupdateoperation/reduceddirtyrectanglecount.md)
+- [static var reducedDirtyRectangleCount: CGScreenUpdateOperation](./reduceddirtyrectanglecount.md)
 
 
 ---

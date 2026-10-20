@@ -1,25 +1,27 @@
 # initWith
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool initWith(IOService *reportingService, IOReportCategories categories, uint64_t channelID, const char *channelName, IOReportUnit unit, int nSegments, IOHistogramSegmentConfig *config);
 ```
 
 ## See Also
 
-- [addChannel](iohistogramreporter/addchannel.md)
-- [overrideBucketValues](iohistogramreporter/overridebucketvalues.md)
-- [tallyValue](iohistogramreporter/tallyvalue.md)
+### Instance Methods
+- [addChannel](./addchannel.md)
+- [overrideBucketValues](./overridebucketvalues.md)
+- [tallyValue](./tallyvalue.md)
 
 
 ---

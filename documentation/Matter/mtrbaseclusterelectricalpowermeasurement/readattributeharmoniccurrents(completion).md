@@ -1,7 +1,8 @@
 # readAttributeHarmonicCurrents(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeHarmonicCurrents(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeHarmonicCurrents() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeHarmonicCurrentsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

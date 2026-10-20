@@ -1,7 +1,8 @@
 # isMiniaturizable
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the window displays a minimize button.
 
@@ -18,9 +19,14 @@ A Boolean value that determines whether the window displays a minimize button.
 var isMiniaturizable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isMiniaturizable) BOOL miniaturizable;
+```
+
 ## See Also
 
-- [var isClosable: Bool](uiscenewindowingbehaviors/isclosable.md)
+### Specifying window behaviors
+- [var isClosable: Bool](./isclosable.md)
   A Boolean value that determines whether the window displays a close button.
 
 

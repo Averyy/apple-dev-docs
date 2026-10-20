@@ -1,7 +1,8 @@
 # ForceMode.force
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant force or torque applied to a body, influencing motion over time.
 
@@ -21,9 +22,9 @@ case force
 
 #### Discussion
 
-The quantity that user sets via [`setForce(_:index:)`](forceeffectparameters/setforce(_:index:).md) has the units of mass * distance /  time^2. i.e. a force ( mass * acceleration ). `force` mode causes a change in acceleration that varies proportionally to a body’s mass.
+The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of mass * distance /  time^2. i.e. a force ( mass * acceleration ). `force` mode causes a change in acceleration that varies proportionally to a body’s mass.
 
-The quantity that user sets via [`setTorque(_:index:)`](forceeffectparameters/settorque(_:index:).md) has the units of mass * distance^2 / time^2. `force` mode causes a change in angular acceleration that varies proportionally to a body’s mass and inertia.
+The quantity that user sets via [`setTorque(_:index:)`](../forceeffectparameters/settorque%28_,index%29.md) has the units of mass * distance^2 / time^2. `force` mode causes a change in angular acceleration that varies proportionally to a body’s mass and inertia.
 
 
 ---

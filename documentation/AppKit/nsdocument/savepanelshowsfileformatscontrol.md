@@ -1,7 +1,8 @@
 # savePanelShowsFileFormatsControl
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var savePanelShowsFileFormatsControl: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL savePanelShowsFileFormatsControl;
 ```
 
 

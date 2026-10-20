@@ -1,7 +1,8 @@
 # clusterUnitTestingAttributeRangeRestrictedInt16sID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterUnitTestingAttributeRangeRestrictedInt16sID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterUnitTestingAttributeRangeRestrictedInt16sID
 ```
 
 

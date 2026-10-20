@@ -1,7 +1,8 @@
 # connector
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var connector: CPChargingStationConnection.Connector { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CPChargingStationConnectionConnector connector;
 ```
 
 

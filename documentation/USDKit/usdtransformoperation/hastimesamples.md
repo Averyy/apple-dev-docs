@@ -1,7 +1,8 @@
 # hasTimeSamples
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the operation has authored time samples.
 

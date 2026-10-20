@@ -1,7 +1,8 @@
 # UIPageControl.InteractionState
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the interaction states of the page control.
 
@@ -18,33 +19,38 @@ Constants that define the interaction states of the page control.
 enum InteractionState
 ```
 
+```c
+enum UIPageControlInteractionState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIPageControl.InteractionState.none](uipagecontrol/interactionstate-swift.enum/none.md)
+- [UIPageControl.InteractionState.none](./interactionstate-swift.enum/none.md)
   The default interaction state, where no interaction has occurred.
-- [UIPageControl.InteractionState.discrete](uipagecontrol/interactionstate-swift.enum/discrete.md)
+- [UIPageControl.InteractionState.discrete](./interactionstate-swift.enum/discrete.md)
   The interaction state for which the page changes through a single, discrete interaction.
-- [UIPageControl.InteractionState.continuous](uipagecontrol/interactionstate-swift.enum/continuous.md)
+- [UIPageControl.InteractionState.continuous](./interactionstate-swift.enum/continuous.md)
   The interaction state for which the page changes through a continuous interaction.
 ### Initializers
-- [init?(rawValue: Int)](uipagecontrol/interactionstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./interactionstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var allowsContinuousInteraction: Bool](uipagecontrol/allowscontinuousinteraction.md)
+### Customizing the interaction state
+- [var allowsContinuousInteraction: Bool](./allowscontinuousinteraction.md)
   A Boolean value that determines whether the page control allows continuous interaction.
-- [var interactionState: UIPageControl.InteractionState](uipagecontrol/interactionstate-swift.property.md)
+- [var interactionState: UIPageControl.InteractionState](./interactionstate-swift.property.md)
   The interaction state when the current page changes.
 
 

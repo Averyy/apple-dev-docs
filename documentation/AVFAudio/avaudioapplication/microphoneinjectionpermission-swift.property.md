@@ -1,7 +1,8 @@
 # microphoneInjectionPermission
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates an app’s permission to add audio to calls.
 
@@ -17,11 +18,16 @@ A value that indicates an app’s permission to add audio to calls.
 var microphoneInjectionPermission: AVAudioApplication.MicrophoneInjectionPermission { get }
 ```
 
+```objc
+@property (readonly) AVAudioApplicationMicrophoneInjectionPermission microphoneInjectionPermission;
+```
+
 ## See Also
 
-- [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](avaudioapplication/requestmicrophoneinjectionpermission(completionhandler:).md)
+### Managing microphone injection permission
+- [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](./requestmicrophoneinjectionpermission%28completionhandler%29.md)
   Requests the app’s permission to add audio to calls.
-- [AVAudioApplication.MicrophoneInjectionPermission](avaudioapplication/microphoneinjectionpermission-swift.enum.md)
+- [AVAudioApplication.MicrophoneInjectionPermission](./microphoneinjectionpermission-swift.enum.md)
   Constants that indicate an app’s permission to add audio to calls.
 
 

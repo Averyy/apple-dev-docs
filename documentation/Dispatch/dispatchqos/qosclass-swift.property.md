@@ -1,18 +1,19 @@
 # qosClass
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quality-of-service class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ let qosClass: DispatchQoS.QoSClass
 
 ## See Also
 
-- [let relativePriority: Int](dispatchqos/relativepriority.md)
+### Getting the QoS Attributes
+- [let relativePriority: Int](./relativepriority.md)
   The priority of a quality of service relative to others with the same class.
 
 

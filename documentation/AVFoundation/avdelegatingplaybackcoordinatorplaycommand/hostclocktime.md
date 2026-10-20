@@ -1,7 +1,8 @@
 # hostClockTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A host clock time to use to begin playback.
 
@@ -19,11 +20,16 @@ A host clock time to use to begin playback.
 var hostClockTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime hostClockTime;
+```
+
 ## See Also
 
-- [var rate: Float](avdelegatingplaybackcoordinatorplaycommand/rate.md)
+### Accessing command details
+- [var rate: Float](./rate.md)
   A rate to use when starting playback.
-- [var itemTime: CMTime](avdelegatingplaybackcoordinatorplaycommand/itemtime.md)
+- [var itemTime: CMTime](./itemtime.md)
   A time in the item timeline to use to begin playback.
 
 

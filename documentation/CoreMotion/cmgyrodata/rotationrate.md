@@ -1,7 +1,8 @@
 # rotationRate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation rate as measured by the device’s gyroscope.
 
@@ -19,18 +20,24 @@ The rotation rate as measured by the device’s gyroscope.
 var rotationRate: CMRotationRate { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMRotationRate rotationRate;
+```
+
 #### Discussion
 
-This property yields a measurement of the device’s rate of rotation around three axes. Whereas this property gives the raw data from the gyroscope, the identically named property of [`CMDeviceMotion`](cmdevicemotion.md) gives a [`CMRotationRate`](cmrotationrate.md) structure measuring gyroscope data whose bias has been removed by Core Motion algorithms.
+This property yields a measurement of the device’s rate of rotation around three axes. Whereas this property gives the raw data from the gyroscope, the identically named property of [`CMDeviceMotion`](../cmdevicemotion.md) gives a [`CMRotationRate`](../cmrotationrate.md) structure measuring gyroscope data whose bias has been removed by Core Motion algorithms.
 
 ## See Also
 
-- [Event Handling Guide for UIKit Apps](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html?language=swift#//apple_ref/doc/uid/TP40009541)
-- [struct CMRotationRate](cmrotationrate.md)
+### Related Documentation
+- [Event Handling Guide for UIKit Apps](https://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html?language=swift#//apple_ref/doc/uid/TP40009541)
+### Getting the Rotation Rate
+- [struct CMRotationRate](../cmrotationrate.md)
   The type of structures representing a measurement of rotation rate.
-- [class CMRotationRateData](cmrotationratedata.md)
+- [class CMRotationRateData](../cmrotationratedata.md)
   A data object that contains a single rotation-rate measurement.
-- [class CMRecordedRotationRateData](cmrecordedrotationratedata.md)
+- [class CMRecordedRotationRateData](../cmrecordedrotationratedata.md)
   A data object that contains a single rotation-rate measurement at a specific time.
 
 

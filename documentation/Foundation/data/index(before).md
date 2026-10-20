@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index that immediately precedes the specified index.
 
@@ -22,13 +23,14 @@ func index(before i: Data.Index) -> Data.Index
 
 ## See Also
 
-- [typealias Index](data/index.md)
+### Manipulating Indexes
+- [typealias Index](./index.md)
   A type used to indicate a position in a data’s buffer.
-- [var startIndex: Data.Index](data/startindex.md)
+- [var startIndex: Data.Index](./startindex.md)
   The beginning index into the data.
-- [var endIndex: Data.Index](data/endindex.md)
+- [var endIndex: Data.Index](./endindex.md)
   The end index into the data.
-- [func index(after: Data.Index) -> Data.Index](data/index(after:).md)
+- [func index(after: Data.Index) -> Data.Index](./index%28after%29.md)
   Returns the index that immediately follows the specified index.
 
 

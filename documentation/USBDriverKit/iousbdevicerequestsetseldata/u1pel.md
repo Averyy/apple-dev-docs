@@ -1,22 +1,24 @@
 # u1Pel
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t u1Pel;
 ```
 
 ## See Also
 
-- [u1Sel](iousbdevicerequestsetseldata/u1sel.md)
-- [u2Sel](iousbdevicerequestsetseldata/u2sel.md)
-- [u2Pel](iousbdevicerequestsetseldata/u2pel.md)
+### Getting the SEL Data
+- [u1Sel](./u1sel.md)
+- [u2Sel](./u2sel.md)
+- [u2Pel](./u2pel.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # textField
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text field that the scrubber item uses to display its text.
 
@@ -14,13 +15,18 @@ The text field that the scrubber item uses to display its text.
 var textField: NSTextField { get }
 ```
 
+```objc
+@property (strong, readonly) NSTextField * textField;
+```
+
 #### Discussion
 
-Access and configure the underlying text field used to display the text in the [`title`](nsscrubbertextitemview/title.md) property.
+Access and configure the underlying text field used to display the text in the [`title`](./title.md) property.
 
 ## See Also
 
-- [var title: String](nsscrubbertextitemview/title.md)
+### Providing text content
+- [var title: String](./title.md)
   The text displayed for the scrubber item.
 
 

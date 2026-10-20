@@ -1,14 +1,15 @@
 # gpu_energy_data_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef gpu_energy_data *gpu_energy_data_t;
 ```
 

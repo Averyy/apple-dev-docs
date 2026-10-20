@@ -1,6 +1,7 @@
 # Editing source files in Xcode
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use features of the source editor to help you write, navigate, document, and understand code more quickly.
 
@@ -10,13 +11,13 @@ As you write code, you can save time by using code completion and code snippets 
 
 To get started, select a source file in the Project navigator and Xcode opens it in the source editor on the right.
 
-To configure the project window with multiple editors and assistants, see [`Configuring the Xcode project window`](configuring-the-xcode-project-window.md). To use coding intelligence to generate code, playgrounds, previews, and documentation, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
+To configure the project window with multiple editors and assistants, see [Configuring the Xcode project window](./configuring-the-xcode-project-window.md). To use coding intelligence to generate code, playgrounds, previews, and documentation, see [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md).
 
-##### Enter Code Using Code Completion
+##### Enter code using code completion
 
 As you type code in the source editor, use code completion to assist with variable and function names. When you use code completion for a method or function with parameters, Xcode provides a placeholder for each parameter that you need to add.
 
-![An Xcode screenshot showing the Project navigator on the left and the source editor on the right with the word Button partially entered and a menu showing the first code completion suggestion selected.](/images/com.apple.Xcode/editing-source-code-completion@2x.png)
+![An Xcode screenshot showing the Project navigator on the left and the source editor on the right with the word Button partially entered and a menu showing the first code completion suggestion selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/editing-source-code-completion@2x.png)
 
 To navigate between placeholders, press Tab and Shift-Tab (or choose Navigate > Jump to Next Placeholder and Navigate > Jump to Previous Placeholder, respectively).
 
@@ -24,7 +25,7 @@ In Swift files, predictive code completion offers code suggestions at your inser
 
 You can customize or disable code completion by choosing Xcode > Settings > Editing > Completion.
 
-##### Add and Create Reusable Code Snippets
+##### Add and create reusable code snippets
 
 For common code structures, Xcode provides preexisting code snippets you can insert into your code, or you can create your own.
 
@@ -35,7 +36,7 @@ To insert a snippet in your code:
 3. Select a snippet and drag it to the desired location in the source editor.
 4. In the source editor, press the Tab and Shift-Tab keys to navigate between placeholders in the snippet.
 
-![An Xcode screenshot of the library with Swift Test entered in the search field at the top, Swift Testing: Suite Struct with Traits selected in the sidebar, and the code snippet with placeholders on the right.](/images/com.apple.Xcode/editing-source-add-code-snippet@2x.png)
+![An Xcode screenshot of the library with Swift Test entered in the search field at the top, Swift Testing: Suite Struct with Traits selected in the sidebar, and the code snippet with placeholders on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/editing-source-add-code-snippet@2x.png)
 
 To create your own code snippet:
 
@@ -45,17 +46,17 @@ To create your own code snippet:
 4. Select the language and platform, enter any text to use for code completion, and select the scope.
 5. Click Done.
 
-![An Xcode screenshot of the library with a new code snippet selected in the sidebar and a form on the right for entering the snippet’s name, summary, and code.](/images/com.apple.Xcode/editing-source-create-code-snippet@2x.png)
+![An Xcode screenshot of the library with a new code snippet selected in the sidebar and a form on the right for entering the snippet’s name, summary, and code.](https://developer.apple.com/tutorials/images/com.apple.Xcode/editing-source-create-code-snippet@2x.png)
 
 To delete a code snippet that you create, select it in the library sidebar and click Delete.
 
-##### Annotate Your Code for Visibility
+##### Annotate your code for visibility
 
 The jump bar and the minimap each provide a quick visual way to navigate your code in the source editor. To show the minimap that appears on the right of the source editor, choose Minimap from the Adjust Editor Options menu on the right of the editor toolbar.
 
 Then annotate your code with `MARK`, `TODO`, and `FIXME` comments to enhance the power of these tools when organizing your code.
 
-![An Xcode screenshot of the project window with the Project navigator on the left and the source editor on the right with the jump bar menu and minimap on the right showing the MARK, TODO, and FIXME comments.](/images/com.apple.Xcode/editing-source-annotate-code@2x.png)
+![An Xcode screenshot of the project window with the Project navigator on the left and the source editor on the right with the jump bar menu and minimap on the right showing the MARK, TODO, and FIXME comments.](https://developer.apple.com/tutorials/images/com.apple.Xcode/editing-source-annotate-code@2x.png)
 
 Add a `MARK` comment to add a heading to a section of code. Include a dash in the comment to instruct Xcode to show a divider line before the section in the jump bar and minimap.
 
@@ -84,23 +85,24 @@ In addition to the organizational benefits, consistent use of `MARK`, `TODO`, an
 
 For Objective-C, use the `#pragma mark`, `#pragma fixme`, and `#pragma todo` macros instead.
 
-##### Add Quick Help Comments to Your Code
+##### Add Quick Help comments to your code
 
 You can use Quick Help to learn about existing APIs and document your own symbols for yourself or other developers. To view Quick Help, Control-click a symbol and choose Show Quick Help from the contextual menu.
 
 To add Quick Help to symbols in your code, Command-click a symbol declaration without documentation comments and choose Add Documentation. Xcode adds lines of comments, preceded with three slashes (`///`), that have placeholders for a description, parameters, throws, and a return value, depending on the symbol declaration. Update the placeholders using Markup syntax to complete the comments and enable Quick Help for the symbol.
 
-![An Xcode screenshot of the project window with the Project navigator on the left and the source editor on the right with the documentation comments appearing above a function with the first placeholder text selected.](/images/com.apple.Xcode/editing-source-add-documentation@2x.png)
+![An Xcode screenshot of the project window with the Project navigator on the left and the source editor on the right with the documentation comments appearing above a function with the first placeholder text selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/editing-source-add-documentation@2x.png)
 
 Then, to review your documentation in Quick Help, Control-click the symbol and choose Show Quick Help. Xcode formats and displays the information in your documentation comments.
 
-For more information on writing and distributing documentation of your code, see [`Writing documentation`](writing-documentation.md).
+For more information on writing and distributing documentation of your code, see [Writing documentation](./writing-documentation.md).
 
 ## See Also
 
-- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+### Source file creation, organization, and editing
+- [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md)
   Submit prompts in the same place you want to make changes to your code.
-- [Running code snippets using the playground macro](running-code-snippets-using-the-playground-macro.md)
+- [Running code snippets using the playground macro](./running-code-snippets-using-the-playground-macro.md)
   Add playgrounds to your code that run and display results in the canvas.
 
 

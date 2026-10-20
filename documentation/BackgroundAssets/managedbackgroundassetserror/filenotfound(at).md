@@ -1,7 +1,8 @@
 # ManagedBackgroundAssetsError.fileNotFound(at:)
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that’s thrown when the system can’t find a file at the specified path.
 
@@ -21,7 +22,8 @@ case fileNotFound(at: FilePath)
 
 ## See Also
 
-- [ManagedBackgroundAssetsError.assetPackNotFound(withID:)](managedbackgroundassetserror/assetpacknotfound(withid:).md)
+### Errors
+- [ManagedBackgroundAssetsError.assetPackNotFound(withID:)](./assetpacknotfound%28withid%29.md)
   An error that’s thrown when the system can’t find an asset pack with the given ID.
 
 

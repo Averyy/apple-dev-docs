@@ -1,7 +1,8 @@
 # fulfill(dateConnected:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the local participant successfully joined an incoming conversation.
 

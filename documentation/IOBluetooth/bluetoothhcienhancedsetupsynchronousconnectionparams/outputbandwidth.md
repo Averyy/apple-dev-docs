@@ -1,15 +1,20 @@
 # outputBandwidth
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var outputBandwidth: UInt32
+```
+
+```c
+uint32_t outputBandwidth;
 ```
 
 

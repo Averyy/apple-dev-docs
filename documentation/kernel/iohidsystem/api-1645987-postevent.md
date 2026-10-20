@@ -1,14 +1,15 @@
 # postEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void postEvent(int what, IOFixedPoint64 *location, AbsoluteTime ts, NXEventData *myData, OSObject *sender, UInt32 extPID, bool processKEQ, UInt32 options);
 ```
 

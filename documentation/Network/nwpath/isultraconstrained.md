@@ -1,7 +1,8 @@
 # isUltraConstrained
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Checks if the path uses an NWInterface that is considered to be constrained by user preference
 

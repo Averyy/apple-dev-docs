@@ -1,7 +1,8 @@
 # cameraViewModel(for:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the camera view model for the given immersive camera identifier.
 
@@ -28,11 +29,12 @@ ImmersiveCameraViewModel describing the geometries, mask and other information t
 
 ## See Also
 
-- [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
+### Configuring cameras
+- [var cameras: [ImmersiveCamera]](./cameras.md)
   An array of all the immersive cameras contained in the venue descriptor (both original and dynamic).
-- [func addCamera(ImmersiveCamera) throws](venuedescriptor/addcamera(_:).md)
+- [func addCamera(ImmersiveCamera) throws](./addcamera%28_%29.md)
   Adds a new immersive camera definition to the venue descriptor.
-- [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
+- [func removeCamera(id: String) throws](./removecamera%28id%29.md)
   Removes an immersive camera definition from the venue descriptor.
 
 

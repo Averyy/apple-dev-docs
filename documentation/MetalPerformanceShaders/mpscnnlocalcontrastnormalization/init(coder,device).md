@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a local contrast normalization kernel.
 
@@ -19,9 +20,14 @@ Initializes a local contrast normalization kernel.
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalization/init(device:kernelwidth:kernelheight:).md)
+### Initializers
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](./init%28device,kernelwidth,kernelheight%29.md)
   Initializes a local contrast normalization kernel.
 
 

@@ -1,7 +1,8 @@
 # mattingImage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portrait effects matte’s internal image, formatted as a pixel buffer.
 
@@ -20,17 +21,22 @@ The portrait effects matte’s internal image, formatted as a pixel buffer.
 var mattingImage: CVPixelBuffer { get }
 ```
 
+```objc
+@property (readonly) CVPixelBufferRef mattingImage;
+```
+
 #### Discussion
 
-Query the pixel format using the [`pixelFormatType`](avportraiteffectsmatte/pixelformattype.md) property.
+Query the pixel format using the [`pixelFormatType`](./pixelformattype.md) property.
 
 ## See Also
 
-- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+### Examining a Portrait Effects matte
+- [Extracting Portrait Effects matte image data from a photo](../extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
-- [var pixelFormatType: OSType](avportraiteffectsmatte/pixelformattype.md)
+- [var pixelFormatType: OSType](./pixelformattype.md)
   The pixel format type of this portrait effects matte’s internal image.
-- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avportraiteffectsmatte/dictionaryrepresentation(forauxiliarydatatype:).md)
+- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](./dictionaryrepresentation%28forauxiliarydatatype%29.md)
   A dictionary of primitive map information used for writing an image file with a portrait effects matte.
 
 

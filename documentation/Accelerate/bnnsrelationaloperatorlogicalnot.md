@@ -1,7 +1,8 @@
 # BNNSRelationalOperatorLogicalNOT
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operator that indicates the logical NOT relationship.
 
@@ -20,17 +21,22 @@ The operator that indicates the logical NOT relationship.
 var BNNSRelationalOperatorLogicalNOT: BNNSRelationalOperator { get }
 ```
 
+```c
+BNNSRelationalOperatorLogicalNOT
+```
+
 ## See Also
 
-- [var BNNSRelationalOperatorLogicalAND: BNNSRelationalOperator](bnnsrelationaloperatorlogicaland.md)
+### Logical Operators
+- [var BNNSRelationalOperatorLogicalAND: BNNSRelationalOperator](./bnnsrelationaloperatorlogicaland.md)
   The operator that indicates the logical AND relationship.
-- [var BNNSRelationalOperatorLogicalNAND: BNNSRelationalOperator](bnnsrelationaloperatorlogicalnand.md)
+- [var BNNSRelationalOperatorLogicalNAND: BNNSRelationalOperator](./bnnsrelationaloperatorlogicalnand.md)
   The operator that indicates the logical NAND relationship.
-- [var BNNSRelationalOperatorLogicalNOR: BNNSRelationalOperator](bnnsrelationaloperatorlogicalnor.md)
+- [var BNNSRelationalOperatorLogicalNOR: BNNSRelationalOperator](./bnnsrelationaloperatorlogicalnor.md)
   The operator that indicates the logical NOR relationship.
-- [var BNNSRelationalOperatorLogicalOR: BNNSRelationalOperator](bnnsrelationaloperatorlogicalor.md)
+- [var BNNSRelationalOperatorLogicalOR: BNNSRelationalOperator](./bnnsrelationaloperatorlogicalor.md)
   The operator that indicates the logical OR relationship.
-- [var BNNSRelationalOperatorLogicalXOR: BNNSRelationalOperator](bnnsrelationaloperatorlogicalxor.md)
+- [var BNNSRelationalOperatorLogicalXOR: BNNSRelationalOperator](./bnnsrelationaloperatorlogicalxor.md)
   The operator that indicates the logical XOR relationship.
 
 

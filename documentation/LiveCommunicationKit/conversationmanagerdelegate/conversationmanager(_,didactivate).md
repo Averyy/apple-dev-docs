@@ -2,6 +2,7 @@
 
 **Framework**: LiveCommunicationKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the app activated the conversation’s audio session.
@@ -21,7 +22,7 @@ func conversationManager(_ manager: ConversationManager, didActivate audioSessio
 
 ## Mentions
 
-- [Initiating VoIP conversations with LiveCommunicationKit](initiating-voip-conversations-with-livecommunicationkit.md)
+- [Initiating VoIP conversations with LiveCommunicationKit](../initiating-voip-conversations-with-livecommunicationkit.md)
 
 ## Parameters
 
@@ -30,9 +31,10 @@ func conversationManager(_ manager: ConversationManager, didActivate audioSessio
 
 ## See Also
 
-- [func conversationManager(ConversationManager, conversationChanged: Conversation)](conversationmanagerdelegate/conversationmanager(_:conversationchanged:).md)
+### Receiving status updates
+- [func conversationManager(ConversationManager, conversationChanged: Conversation)](./conversationmanager%28_,conversationchanged%29.md)
   Tells the delegate that a conversation changed.
-- [func conversationManager(ConversationManager, didDeactivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:diddeactivate:).md)
+- [func conversationManager(ConversationManager, didDeactivate: AVAudioSession)](./conversationmanager%28_,diddeactivate%29.md)
   Tells the delegate that the app deactivated a conversation’s audio session..
 
 

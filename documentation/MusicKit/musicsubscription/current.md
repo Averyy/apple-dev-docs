@@ -1,7 +1,8 @@
 # current
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current state of the user’s subscription to Apple Music.
 

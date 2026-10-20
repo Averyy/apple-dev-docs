@@ -1,7 +1,8 @@
 # defaultAttachmentScaling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default amount of scaling to apply when an attachment image is too large to fit in a text container.
 
@@ -14,13 +15,18 @@ The default amount of scaling to apply when an attachment image is too large to 
 var defaultAttachmentScaling: NSImageScaling { get set }
 ```
 
+```objc
+@property NSImageScaling defaultAttachmentScaling;
+```
+
 #### Discussion
 
 Attachment cells control their own size and drawing, so this setting is only advisory to them, but Application Kit–supplied attachment cells respect it.
 
 ## See Also
 
-- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](nslayoutmanager/showattachmentcell(_:in:characterindex:).md)
+### Managing attachments
+- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](./showattachmentcell%28_,in,characterindex%29.md)
   Draws an attachment cell.
 
 

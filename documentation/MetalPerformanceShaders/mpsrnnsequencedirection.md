@@ -1,17 +1,18 @@
 # MPSRNNSequenceDirection
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Directions that a sequence of inputs can be processed by a recurrent neural network layer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,39 +20,44 @@ Directions that a sequence of inputs can be processed by a recurrent neural netw
 enum MPSRNNSequenceDirection
 ```
 
+```c
+enum MPSRNNSequenceDirection : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSRNNSequenceDirection.backward](mpsrnnsequencedirection/backward.md)
-- [MPSRNNSequenceDirection.forward](mpsrnnsequencedirection/forward.md)
+- [MPSRNNSequenceDirection.backward](./mpsrnnsequencedirection/backward.md)
+- [MPSRNNSequenceDirection.forward](./mpsrnnsequencedirection/forward.md)
 ### Initializers
-- [init?(rawValue: UInt)](mpsrnnsequencedirection/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsrnnsequencedirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MPSRNNImageInferenceLayer](mpsrnnimageinferencelayer.md)
+### Recurrent Neural Networks
+- [class MPSRNNImageInferenceLayer](./mpsrnnimageinferencelayer.md)
   A recurrent neural network layer for inference on Metal Performance Shaders images.
-- [class MPSRNNMatrixInferenceLayer](mpsrnnmatrixinferencelayer.md)
+- [class MPSRNNMatrixInferenceLayer](./mpsrnnmatrixinferencelayer.md)
   A recurrent neural network layer for inference on Metal Performance Shaders matrices.
-- [class MPSRNNSingleGateDescriptor](mpsrnnsinglegatedescriptor.md)
+- [class MPSRNNSingleGateDescriptor](./mpsrnnsinglegatedescriptor.md)
   A description of a simple recurrent block or layer.
-- [class MPSGRUDescriptor](mpsgrudescriptor.md)
+- [class MPSGRUDescriptor](./mpsgrudescriptor.md)
   A description of a gated recurrent unit block or layer.
-- [class MPSLSTMDescriptor](mpslstmdescriptor.md)
+- [class MPSLSTMDescriptor](./mpslstmdescriptor.md)
   A description of a long short-term memory block or layer.
-- [class MPSRNNMatrixTrainingLayer](mpsrnnmatrixtraininglayer.md)
+- [class MPSRNNMatrixTrainingLayer](./mpsrnnmatrixtraininglayer.md)
   A layer for training recurrent neural networks on Metal Performance Shaders matrices.
-- [class MPSRNNMatrixTrainingState](mpsrnnmatrixtrainingstate.md)
+- [class MPSRNNMatrixTrainingState](./mpsrnnmatrixtrainingstate.md)
   A class that holds data from a forward pass to be used in a backward pass.
 
 

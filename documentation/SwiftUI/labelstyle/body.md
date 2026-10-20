@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a label.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](labelstyle/makebody(configuration:).md)
+### Creating custom label styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a label.
-- [LabelStyle.Configuration](labelstyle/configuration.md)
+- [LabelStyle.Configuration](./configuration.md)
   The properties of a label.
 
 

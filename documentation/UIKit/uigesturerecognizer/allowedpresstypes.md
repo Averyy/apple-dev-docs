@@ -1,7 +1,8 @@
 # allowedPressTypes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of press types used to distinguish the type of button press.
 
@@ -18,15 +19,20 @@ An array of press types used to distinguish the type of button press.
 var allowedPressTypes: [NSNumber] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSNumber *> * allowedPressTypes;
+```
+
 #### Discussion
 
-This property is an array of `UIPressTypes` that activates the gesture recognizer to distinguish the type of button press. The default press type is [`UIPress.PressType.select`](uipress/presstype/select.md). When this property is set to an empty array, the gesture recognizer will respond to taps like a touch pad like surface. For a list of possible press types, see [`UIPress.PressType`](uipress/presstype.md) enumeration in the [`UIPress`](uipress.md).
+This property is an array of `UIPressTypes` that activates the gesture recognizer to distinguish the type of button press. The default press type is [`UIPress.PressType.select`](../uipress/presstype/select.md). When this property is set to an empty array, the gesture recognizer will respond to taps like a touch pad like surface. For a list of possible press types, see [`UIPress.PressType`](../uipress/presstype.md) enumeration in the [`UIPress`](../uipress.md).
 
 ## See Also
 
-- [var allowedTouchTypes: [NSNumber]](uigesturerecognizer/allowedtouchtypes.md)
+### Recognizing different gestures
+- [var allowedTouchTypes: [NSNumber]](./allowedtouchtypes.md)
   An array of touch types used to distinguish type of touches.
-- [var requiresExclusiveTouchType: Bool](uigesturerecognizer/requiresexclusivetouchtype.md)
+- [var requiresExclusiveTouchType: Bool](./requiresexclusivetouchtype.md)
   A Boolean value that indicates whether the gesture recognizer considers touches of different types simultaneously.
 
 

@@ -1,7 +1,8 @@
 # Manipulable.InputDevice.Kind.directPinch
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pinching hand in close proximity to content.
 

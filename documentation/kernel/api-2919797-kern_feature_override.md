@@ -1,14 +1,15 @@
 # kern_feature_override
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 boolean_t kern_feature_override(kf_override_flag_t fmask);
 ```
 

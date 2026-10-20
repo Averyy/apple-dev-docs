@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the range.
 
@@ -20,11 +21,14 @@ A textual representation of the range.
 var description: String { get }
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 ## See Also
 
-- [var debugDescription: String](range/debugdescription.md)
+### Describing a Range
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the range, suitable for debugging.
-- [var customMirror: Mirror](range/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
 
 

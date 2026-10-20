@@ -1,7 +1,8 @@
 # cleanApertureDimensions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clean aperture dimension of the track.
 
@@ -19,17 +20,22 @@ The clean aperture dimension of the track.
 var cleanApertureDimensions: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize cleanApertureDimensions;
+```
+
 ## See Also
 
-- [var naturalSize: CGSize](avmutablemovietrack/naturalsize.md)
+### Accessing visual characteristics
+- [var naturalSize: CGSize](./naturalsize.md)
   The dimensions used to display the visual media data for the track.
-- [var preferredTransform: CGAffineTransform](avmutablemovietrack/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The transform performed on the visual media data of the track for display purposes.
-- [var layer: Int](avmutablemovietrack/layer.md)
+- [var layer: Int](./layer.md)
   The layer level for the visual media of the track.
-- [var productionApertureDimensions: CGSize](avmutablemovietrack/productionaperturedimensions.md)
+- [var productionApertureDimensions: CGSize](./productionaperturedimensions.md)
   The production aperture dimensions of the track.
-- [var encodedPixelsDimensions: CGSize](avmutablemovietrack/encodedpixelsdimensions.md)
+- [var encodedPixelsDimensions: CGSize](./encodedpixelsdimensions.md)
   The encoded pixels dimensions of the track.
 
 

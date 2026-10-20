@@ -1,7 +1,8 @@
 # capabilities
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capabilities of the device.
 

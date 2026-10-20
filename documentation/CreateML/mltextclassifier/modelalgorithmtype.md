@@ -1,7 +1,8 @@
 # MLTextClassifier.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of algorithm that a text classifier uses.
 
@@ -20,8 +21,8 @@ enum ModelAlgorithmType
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Creating a text classifier model](../creating-a-text-classifier-model.md)
+- [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
 #### Overview
 
@@ -30,40 +31,41 @@ Typically, `maxEnt` is the fastest training algorithm. If the text classifier’
 ## Topics
 
 ### Selecting an algorithm type
-- [MLTextClassifier.ModelAlgorithmType.crf(revision:)](mltextclassifier/modelalgorithmtype/crf(revision:).md)
+- [MLTextClassifier.ModelAlgorithmType.crf(revision:)](./modelalgorithmtype/crf%28revision%29.md)
   A text classification algorithm that uses a statistical model of transition probabilities between words.
-- [MLTextClassifier.ModelAlgorithmType.maxEnt(revision:)](mltextclassifier/modelalgorithmtype/maxent(revision:).md)
+- [MLTextClassifier.ModelAlgorithmType.maxEnt(revision:)](./modelalgorithmtype/maxent%28revision%29.md)
   A text classification algorithm that uses multinomial logistic regression based on the frequencies of words, independent of context.
-- [case transferLearning(MLTextClassifier.FeatureExtractorType, revision: Int?)](mltextclassifier/modelalgorithmtype/transferlearning(_:revision:).md)
+- [case transferLearning(MLTextClassifier.FeatureExtractorType, revision: Int?)](./modelalgorithmtype/transferlearning%28_,revision%29.md)
   A text classification algorithm that uses transfer learning by leveraging a feature extractor to generate embeddings.
-- [MLTextClassifier.FeatureExtractorType](mltextclassifier/featureextractortype.md)
+- [MLTextClassifier.FeatureExtractorType](./featureextractortype.md)
   The text feature extractor type.
 ### Describing an algorithm type
-- [var description: String](mltextclassifier/modelalgorithmtype/description.md)
+- [var description: String](./modelalgorithmtype/description.md)
   A text representation of the algorithm type.
-- [var debugDescription: String](mltextclassifier/modelalgorithmtype/debugdescription.md)
+- [var debugDescription: String](./modelalgorithmtype/debugdescription.md)
   A text representation of the algorithm type that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mltextclassifier/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelalgorithmtype/playgrounddescription.md)
   A description of the algorithm type shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mltextclassifier/modelalgorithmtype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mltextclassifier/modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mltextclassifier/modelalgorithmtype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelalgorithmtype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelalgorithmtype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLTextClassifier.FeatureExtractorType](mltextclassifier/featureextractortype.md)
+### Supporting types
+- [MLTextClassifier.FeatureExtractorType](./featureextractortype.md)
   The text feature extractor type.
 
 

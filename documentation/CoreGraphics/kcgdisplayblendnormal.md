@@ -1,13 +1,14 @@
 # kCGDisplayBlendNormal
 
 **Framework**: Core Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The blend color is not applied at the start or end of a fade operation.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,36 +16,41 @@ The blend color is not applied at the start or end of a fade operation.
 var kCGDisplayBlendNormal: Double { get }
 ```
 
+```c
+#define kCGDisplayBlendNormal
+```
+
 ## See Also
 
-- [class let conversionBlackPointCompensation: CFString](cgcolor/conversionblackpointcompensation.md)
+### Constants
+- [class let conversionBlackPointCompensation: CFString](./cgcolor/conversionblackpointcompensation.md)
   An option for whether to apply black point compensation when converting between color profiles.
-- [var kCGDisplayBitsPerPixel: String](kcgdisplaybitsperpixel.md)
+- [var kCGDisplayBitsPerPixel: String](./kcgdisplaybitsperpixel.md)
   Specifies a CFNumber integer value that represents the number of bits in a pixel.
-- [var kCGDisplayBitsPerSample: String](kcgdisplaybitspersample.md)
+- [var kCGDisplayBitsPerSample: String](./kcgdisplaybitspersample.md)
   Specifies a CFNumber integer value that represents the number of bits in an individual sample (for example, a color value in an RGB pixel).
-- [var kCGDisplayBlendSolidColor: Double](kcgdisplayblendsolidcolor.md)
+- [var kCGDisplayBlendSolidColor: Double](./kcgdisplayblendsolidcolor.md)
   The user sees only the blend color at the start or end of a fade operation.
-- [var kCGDisplayBytesPerRow: String](kcgdisplaybytesperrow.md)
+- [var kCGDisplayBytesPerRow: String](./kcgdisplaybytesperrow.md)
   Specifies a CFNumber integer value that represents the number of bytes in a row on the display.
-- [var kCGDisplayFadeReservationInvalidToken: Int32](kcgdisplayfadereservationinvalidtoken.md)
-- [var kCGDisplayHeight: String](kcgdisplayheight.md)
+- [var kCGDisplayFadeReservationInvalidToken: Int32](./kcgdisplayfadereservationinvalidtoken.md)
+- [var kCGDisplayHeight: String](./kcgdisplayheight.md)
   Specifies a CFNumber integer value that represents the height of the display in pixels.
-- [var kCGDisplayIOFlags: String](kcgdisplayioflags.md)
+- [var kCGDisplayIOFlags: String](./kcgdisplayioflags.md)
   Specifies a CFNumber integer value that contains the I/O Kit display mode flags. For more information, see the header file `IOKit/IOGraphicsTypes.h`.
-- [var kCGDisplayMode: String](kcgdisplaymode.md)
+- [var kCGDisplayMode: String](./kcgdisplaymode.md)
   Specifies a `CFNumber` integer value that represents the I/O Kit display mode number.
-- [var kCGDisplayModeIsInterlaced: String](kcgdisplaymodeisinterlaced.md)
+- [var kCGDisplayModeIsInterlaced: String](./kcgdisplaymodeisinterlaced.md)
   Specifies a CFBoolean value indicating that the I/O Kit interlace mode flag is set.
-- [var kCGDisplayModeIsSafeForHardware: String](kcgdisplaymodeissafeforhardware.md)
+- [var kCGDisplayModeIsSafeForHardware: String](./kcgdisplaymodeissafeforhardware.md)
   Specifies a CFBoolean value indicating that the display mode doesn’t need a confirmation dialog to be set.
-- [var kCGDisplayModeIsStretched: String](kcgdisplaymodeisstretched.md)
+- [var kCGDisplayModeIsStretched: String](./kcgdisplaymodeisstretched.md)
   Specifies a CFBoolean value indicating that the I/O Kit stretched mode flag is set.
-- [var kCGDisplayModeIsTelevisionOutput: String](kcgdisplaymodeistelevisionoutput.md)
+- [var kCGDisplayModeIsTelevisionOutput: String](./kcgdisplaymodeistelevisionoutput.md)
   Specifies a CFBoolean value indicating that the I/O Kit television output mode flag is set.
-- [var kCGDisplayModeUsableForDesktopGUI: String](kcgdisplaymodeusablefordesktopgui.md)
+- [var kCGDisplayModeUsableForDesktopGUI: String](./kcgdisplaymodeusablefordesktopgui.md)
   Specifies a CFBoolean value that indicates whether the display is suitable for use with the macOS graphical user interface. The criteria include factors such as sufficient width and height and adequate pixel depth.
-- [var kCGDisplayRefreshRate: String](kcgdisplayrefreshrate.md)
+- [var kCGDisplayRefreshRate: String](./kcgdisplayrefreshrate.md)
   Specifies a `CFNumber` double-precision floating point value that represents the refresh rate of a CRT display.
 
 

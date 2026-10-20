@@ -1,22 +1,27 @@
 # predicateForQuantitySamples(with:quantity:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that matches samples based on the target quantity.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func predicateForQuantitySamples(with operatorType: NSComparisonPredicate.Operator, quantity: HKQuantity) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForQuantitySamplesWithOperatorType:(NSPredicateOperatorType) operatorType quantity:(HKQuantity *) quantity;
 ```
 
 #### Return Value
@@ -69,9 +74,10 @@ NSPredicate *explicitUnderTargetWeight =
 
 ## See Also
 
-- [let HKPredicateKeyPathQuantity: String](hkpredicatekeypathquantity.md)
+### Related Documentation
+- [let HKPredicateKeyPathQuantity: String](../hkpredicatekeypathquantity.md)
   The key path for accessing the sample’s quantity.
-- [var quantity: HKQuantity](hkquantitysample/quantity.md)
+- [var quantity: HKQuantity](../hkquantitysample/quantity.md)
   The quantity for this sample.
 
 

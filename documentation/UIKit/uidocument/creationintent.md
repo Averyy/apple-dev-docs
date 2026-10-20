@@ -1,7 +1,8 @@
 # UIDocument.CreationIntent
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An app intent that creates new documents for your app.
 
@@ -17,9 +18,13 @@ An app intent that creates new documents for your app.
 struct CreationIntent
 ```
 
+```c
+typedef NSString * UIDocumentCreationIntent;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
 #### Overview
 
@@ -32,27 +37,27 @@ extension UIDocument.CreationIntent {
 }
 ```
 
-For more information, see [`Customizing a document-based app’s launch experience`](customizing-a-document-based-app-s-launch-experience.md).
+For more information, see [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md).
 
 ## Topics
 
 ### Accessing creation intents
-- [static let `default`: UIDocument.CreationIntent](uidocument/creationintent/default.md)
+- [static let `default`: UIDocument.CreationIntent](./creationintent/default.md)
   The default document creation intent.
 ### Creating new intents
-- [init(String)](uidocument/creationintent/init(_:).md)
+- [init(String)](./creationintent/init%28_%29.md)
   Create a new document creation intent using the provided string.
-- [init(rawValue: String)](uidocument/creationintent/init(rawvalue:).md)
+- [init(rawValue: String)](./creationintent/init%28rawvalue%29.md)
   Create a new document creation intent using the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

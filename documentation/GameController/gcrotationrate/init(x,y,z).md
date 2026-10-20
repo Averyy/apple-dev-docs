@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rotation rate structure with the specified values.
 

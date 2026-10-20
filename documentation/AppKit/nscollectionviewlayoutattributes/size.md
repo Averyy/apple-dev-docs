@@ -1,7 +1,8 @@
 # size
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the element.
 
@@ -14,19 +15,24 @@ The size of the element.
 var size: NSSize { get set }
 ```
 
+```objc
+@property NSSize size;
+```
+
 #### Discussion
 
-Setting the value of this property also updates the value in the [`frame`](nscollectionviewlayoutattributes/frame.md) property.
+Setting the value of this property also updates the value in the [`frame`](./frame.md) property.
 
 ## See Also
 
-- [var frame: NSRect](nscollectionviewlayoutattributes/frame.md)
+### Accessing the Layout Attributes
+- [var frame: NSRect](./frame.md)
   The frame rectangle of the element.
-- [var alpha: CGFloat](nscollectionviewlayoutattributes/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   The transparency of the element.
-- [var isHidden: Bool](nscollectionviewlayoutattributes/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value indicating whether the element is hidden.
-- [var zIndex: Int](nscollectionviewlayoutattributes/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The element’s position on the z axis.
 
 

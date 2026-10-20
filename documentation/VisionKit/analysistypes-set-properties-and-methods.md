@@ -1,15 +1,16 @@
 # Set properties and methods
 
-**Framework**: VisionKit
+**Framework**: VisionKit  
+**Role**: API Collection
 
 The properties and methods that conform to the option set protocol.
 
 ## Topics
 
 ### Creating sets
-- [init(rawValue: UInt)](imageanalyzer/analysistypes/init(rawvalue:).md)
+- [init(rawValue: UInt)](./imageanalyzer/analysistypes/init%28rawvalue%29.md)
   Creates an analysis type with the given value.
-- [var rawValue: UInt](imageanalyzer/analysistypes/rawvalue.md)
+- [var rawValue: UInt](./imageanalyzer/analysistypes/rawvalue.md)
   A unique, underlying value for the analysis type.
 
 

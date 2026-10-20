@@ -1,7 +1,8 @@
 # HKCategoryValueAppleStandHour.stood
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user stood up and moved for at least one continuous minute during the sample.
 
@@ -19,9 +20,14 @@ The user stood up and moved for at least one continuous minute during the sample
 case stood
 ```
 
+```c
+HKCategoryValueAppleStandHourStood
+```
+
 ## See Also
 
-- [HKCategoryValueAppleStandHour.idle](hkcategoryvalueapplestandhour/idle.md)
+### Constants
+- [HKCategoryValueAppleStandHour.idle](./idle.md)
   The user didn’t stand up and move for at least one continuous minute during the sample.
 
 

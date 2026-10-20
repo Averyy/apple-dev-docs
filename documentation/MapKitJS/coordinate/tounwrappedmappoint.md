@@ -1,7 +1,8 @@
 # toUnwrappedMapPoint()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the unwrapped map point that corresponds to the coordinate.
 
@@ -10,7 +11,7 @@ Returns the unwrapped map point that corresponds to the coordinate.
 
 ## Declaration
 
-```swift
+```
 toUnwrappedMapPoint(): MapPoint;
 ```
 
@@ -20,11 +21,12 @@ The unwrapped map point value that corresponds to the coordinate on a two-dimens
 
 ## See Also
 
-- [copy()](coordinate/copy.md)
+### Comparing, copying, and converting coordinates
+- [copy()](./copy.md)
   Returns a copy of the coordinate.
-- [equals(anotherCoordinate)](coordinate/equals.md)
+- [equals(anotherCoordinate)](./equals.md)
   Returns a Boolean value indicating whether two coordinates are equal.
-- [toMapPoint()](coordinate/tomappoint.md)
+- [toMapPoint()](./tomappoint.md)
   Returns the map point that corresponds to the coordinate.
 
 

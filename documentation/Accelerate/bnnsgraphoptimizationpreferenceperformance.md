@@ -1,7 +1,8 @@
 # BNNSGraphOptimizationPreferencePerformance
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies compilation optimization for best execution performance.
 
@@ -20,11 +21,16 @@ A constant that specifies compilation optimization for best execution performanc
 var BNNSGraphOptimizationPreferencePerformance: BNNSGraphOptimizationPreference { get }
 ```
 
+```c
+BNNSGraphOptimizationPreferencePerformance
+```
+
 ## See Also
 
-- [var rawValue: UInt32](bnnsgraphoptimizationpreference/rawvalue.md)
+### Instance properties
+- [var rawValue: UInt32](./bnnsgraphoptimizationpreference/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSGraphOptimizationPreferenceIRSize: BNNSGraphOptimizationPreference](bnnsgraphoptimizationpreferenceirsize.md)
+- [var BNNSGraphOptimizationPreferenceIRSize: BNNSGraphOptimizationPreference](./bnnsgraphoptimizationpreferenceirsize.md)
   A constant that specifies compilation optimization for smallest graph size on disk.
 
 

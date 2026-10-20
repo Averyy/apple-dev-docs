@@ -1,7 +1,8 @@
 # ComputeNodeGraph.ValueType.enumeration(typeName:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Value is from enumeration with the given typeName
 
@@ -12,7 +13,7 @@ Value is from enumeration with the given typeName
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

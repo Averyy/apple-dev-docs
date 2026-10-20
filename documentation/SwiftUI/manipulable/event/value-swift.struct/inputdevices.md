@@ -1,7 +1,8 @@
 # inputDevices
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input devices that a person is using to manipulate a view.
 

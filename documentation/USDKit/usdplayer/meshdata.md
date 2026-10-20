@@ -1,7 +1,8 @@
 # USDPlayer.MeshData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Mesh geometry data from a USD mesh prim.
 
@@ -22,36 +23,36 @@ struct MeshData
 ## Topics
 
 ### Structures
-- [USDPlayer.MeshData.Update](usdplayer/meshdata/update.md)
+- [USDPlayer.MeshData.Update](./meshdata/update.md)
   Delta update carrying only the mesh fields that changed since the last frame.
 ### Instance Properties
-- [let assignedMaterials: [USDPlayer.MaterialID]](usdplayer/meshdata/assignedmaterials.md)
+- [let assignedMaterials: [USDPlayer.MaterialID]](./meshdata/assignedmaterials.md)
   Material IDs bound to each mesh part, in order.
-- [let descriptor: LowLevelMesh.Descriptor](usdplayer/meshdata/descriptor.md)
+- [let descriptor: LowLevelMesh.Descriptor](./meshdata/descriptor.md)
   Low-level mesh descriptor.
-- [let id: USDPlayer.MeshID](usdplayer/meshdata/id.md)
+- [let id: USDPlayer.MeshID](./meshdata/id.md)
   Unique identifier for this mesh resource.
-- [let indexData: Data](usdplayer/meshdata/indexdata.md)
+- [let indexData: Data](./meshdata/indexdata.md)
   Index buffer data.
-- [let instanceTransforms: [float4x4]](usdplayer/meshdata/instancetransforms.md)
+- [let instanceTransforms: [float4x4]](./meshdata/instancetransforms.md)
   World-space transforms for each mesh instance.
-- [let meshType: USDPlayer.MeshData.MeshType](usdplayer/meshdata/meshtype-swift.property.md)
+- [let meshType: USDPlayer.MeshData.MeshType](./meshdata/meshtype-swift.property.md)
   Whether the mesh is rigid or driven by a deformation resource.
-- [let parts: [LowLevelMesh.Part]](usdplayer/meshdata/parts.md)
+- [let parts: [LowLevelMesh.Part]](./meshdata/parts.md)
   Low-level mesh parts.
-- [let primPath: String](usdplayer/meshdata/primpath.md)
+- [let primPath: String](./meshdata/primpath.md)
   USD prim path this mesh corresponds to.
-- [let vertexData: [Data]](usdplayer/meshdata/vertexdata.md)
+- [let vertexData: [Data]](./meshdata/vertexdata.md)
   Vertex buffer data.
 ### Enumerations
-- [USDPlayer.MeshData.MeshType](usdplayer/meshdata/meshtype-swift.enum.md)
+- [USDPlayer.MeshData.MeshType](./meshdata/meshtype-swift.enum.md)
   Distinguishes static and deformable mesh geometries.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

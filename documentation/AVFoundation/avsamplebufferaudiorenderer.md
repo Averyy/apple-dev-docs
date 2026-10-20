@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to decompress audio and play compressed or uncompressed audio.
 
@@ -20,84 +21,89 @@ An object used to decompress audio and play compressed or uncompressed audio.
 class AVSampleBufferAudioRenderer
 ```
 
+```objc
+@interface AVSampleBufferAudioRenderer : NSObject
+```
+
 ## Mentions
 
-- [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
+- [Implementing flexible enhanced buffering for your content](./implementing-flexible-enhanced-buffering-for-your-content.md)
+- [Supporting AirPlay in your app](./supporting-airplay-in-your-app.md)
 
 #### Overview
 
-You must add an instance of this class to an [`AVSampleBufferRenderSynchronizer`](avsamplebufferrendersynchronizer.md) before queuing the first sample buffer.
+You must add an instance of this class to an [`AVSampleBufferRenderSynchronizer`](./avsamplebufferrendersynchronizer.md) before queuing the first sample buffer.
 
 ## Topics
 
 ### Determining rendering status
-- [var status: AVQueuedSampleBufferRenderingStatus](avsamplebufferaudiorenderer/status.md)
+- [var status: AVQueuedSampleBufferRenderingStatus](./avsamplebufferaudiorenderer/status.md)
   The status of the audio renderer.
-- [enum AVQueuedSampleBufferRenderingStatus](avqueuedsamplebufferrenderingstatus.md)
+- [enum AVQueuedSampleBufferRenderingStatus](./avqueuedsamplebufferrenderingstatus.md)
   The statuses for sample buffer rendering.
 ### Removing queued buffers
-- [func flush(fromSourceTime: CMTime, completionHandler: (Bool) -> Void)](avsamplebufferaudiorenderer/flush(fromsourcetime:completionhandler:).md)
+- [func flush(fromSourceTime: CMTime, completionHandler: (Bool) -> Void)](./avsamplebufferaudiorenderer/flush%28fromsourcetime,completionhandler%29.md)
   Flushes queued sample buffers with presentation time stamps later than or equal to the specified time.
-- [let AVSampleBufferAudioRendererFlushTimeKey: String](avsamplebufferaudiorendererflushtimekey.md)
+- [let AVSampleBufferAudioRendererFlushTimeKey: String](./avsamplebufferaudiorendererflushtimekey.md)
   The key that indicates the presentation timestamp of the first queued sample that was flushed.
 ### Configuring time and pitch
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avsamplebufferaudiorenderer/audiotimepitchalgorithm.md)
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./avsamplebufferaudiorenderer/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch at different rates.
-- [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)
+- [struct AVAudioTimePitchAlgorithm](./avaudiotimepitchalgorithm.md)
   An algorithm used to set the audio pitch as the rate changes.
 ### Configuring audio spatialization
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avsamplebufferaudiorenderer/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](./avsamplebufferaudiorenderer/allowedaudiospatializationformats.md)
   The source audio channel layouts the audio renderer supports for spatialization.
 ### Managing audio output
-- [var volume: Float](avsamplebufferaudiorenderer/volume.md)
+- [var volume: Float](./avsamplebufferaudiorenderer/volume.md)
   The current audio volume for the audio renderer.
-- [var isMuted: Bool](avsamplebufferaudiorenderer/ismuted.md)
+- [var isMuted: Bool](./avsamplebufferaudiorenderer/ismuted.md)
   A Boolean value that indicates whether audio for the renderer is in a muted state.
-- [var audioOutputDeviceUniqueID: String?](avsamplebufferaudiorenderer/audiooutputdeviceuniqueid.md)
+- [var audioOutputDeviceUniqueID: String?](./avsamplebufferaudiorenderer/audiooutputdeviceuniqueid.md)
   The unique identifier of the output device used to play audio.
 ### Responding to errors
-- [var error: (any Error)?](avsamplebufferaudiorenderer/error.md)
+- [var error: (any Error)?](./avsamplebufferaudiorenderer/error.md)
   The error that caused the renderer to no longer render sample buffers.
 ### Classes
-- [AVSampleBufferAudioRenderer.Receiver](avsamplebufferaudiorenderer/receiver.md)
+- [AVSampleBufferAudioRenderer.Receiver](./avsamplebufferaudiorenderer/receiver.md)
 ### Instance Properties
-- [var hasSufficientMediaDataForReliablePlaybackStart: Bool](avsamplebufferaudiorenderer/hassufficientmediadataforreliableplaybackstart.md)
+- [var hasSufficientMediaDataForReliablePlaybackStart: Bool](./avsamplebufferaudiorenderer/hassufficientmediadataforreliableplaybackstart.md)
   Indicates whether the enqueued media data meets the renderer’s preroll level.
-- [var isReadyForMoreMediaData: Bool](avsamplebufferaudiorenderer/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./avsamplebufferaudiorenderer/isreadyformoremediadata.md)
   Indicates the readiness of the receiver to accept more sample buffers.
 ### Instance Methods
-- [func enqueue(CMSampleBuffer)](avsamplebufferaudiorenderer/enqueue(_:).md)
+- [func enqueue(CMSampleBuffer)](./avsamplebufferaudiorenderer/enqueue%28_%29.md)
   Sends a sample buffer in order to render its contents.
-- [func flush()](avsamplebufferaudiorenderer/flush.md)
+- [func flush()](./avsamplebufferaudiorenderer/flush%28%29.md)
   Instructs the receiver to discard pending enqueued sample buffers.
-- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avsamplebufferaudiorenderer/requestmediadatawhenready(on:using:).md)
+- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](./avsamplebufferaudiorenderer/requestmediadatawhenready%28on,using%29.md)
   Instructs the target to invoke a client-supplied block repeatedly, at its convenience, in order to gather sample buffers for playback.
-- [func stopRequestingMediaData()](avsamplebufferaudiorenderer/stoprequestingmediadata.md)
+- [func stopRequestingMediaData()](./avsamplebufferaudiorenderer/stoprequestingmediadata%28%29.md)
   Cancels any current requestMediaDataWhenReadyOnQueue:usingBlock: call.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVQueuedSampleBufferRendering](./avqueuedsamplebufferrendering.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
+### Presentation
+- [protocol AVQueuedSampleBufferRendering](./avqueuedsamplebufferrendering.md)
   Methods you can implement to enqueue sample buffers for presentation.
-- [class AVSampleBufferRenderSynchronizer](avsamplebufferrendersynchronizer.md)
+- [class AVSampleBufferRenderSynchronizer](./avsamplebufferrendersynchronizer.md)
   An object used to synchronize multiple queued sample buffers to a single timeline.
-- [class AVSampleBufferDisplayLayer](avsamplebufferdisplaylayer.md)
+- [class AVSampleBufferDisplayLayer](./avsamplebufferdisplaylayer.md)
   An object that displays compressed or uncompressed video frames.
-- [class AVSampleBufferVideoRenderer](avsamplebuffervideorenderer.md)
+- [class AVSampleBufferVideoRenderer](./avsamplebuffervideorenderer.md)
   An object that enqueues video sample buffers for rendering.
 
 

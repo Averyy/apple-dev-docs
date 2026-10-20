@@ -1,7 +1,8 @@
 # CVPixelBufferReleaseBytesCallback
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that defines a release callback function.
 
@@ -20,9 +21,13 @@ A type that defines a release callback function.
 typealias CVPixelBufferReleaseBytesCallback = (UnsafeMutableRawPointer?, UnsafeRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(void *, const void *) CVPixelBufferReleaseBytesCallback;
+```
+
 #### Discussion
 
-When you create a pixel buffer using [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithbytes(_:_:_:_:_:_:_:_:_:_:).md), you can optionally pass a callback function that’s invoked when the system frees the pixel buffer. Use this callback function to release the pixel data and perform any other cleanup needed when the buffer is released.
+When you create a pixel buffer using [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](./cvpixelbuffercreatewithbytes%28_,_,_,_,_,_,_,_,_,_%29.md), you can optionally pass a callback function that’s invoked when the system frees the pixel buffer. Use this callback function to release the pixel data and perform any other cleanup needed when the buffer is released.
 
 You define a callback function as shown below:
 
@@ -49,13 +54,14 @@ void releaseCallback(void *releaseRefCon, const void *baseAddress) {
 
 ## Parameters
 
-- `releaseRefCon`: A pointer to application-defined data. This pointer is the same as that passed in the `releaseRefCon` parameter of [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithbytes(_:_:_:_:_:_:_:_:_:_:).md).
-- `baseAddress`: A pointer to the base address of the memory holding the pixels. This pointer is the same as that passed in the `baseAddress` parameter of [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithbytes(_:_:_:_:_:_:_:_:_:_:).md).
+- `releaseRefCon`: A pointer to application-defined data. This pointer is the same as that passed in the `releaseRefCon` parameter of [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](./cvpixelbuffercreatewithbytes%28_,_,_,_,_,_,_,_,_,_%29.md).
+- `baseAddress`: A pointer to the base address of the memory holding the pixels. This pointer is the same as that passed in the `baseAddress` parameter of [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](./cvpixelbuffercreatewithbytes%28_,_,_,_,_,_,_,_,_,_%29.md).
 
 ## See Also
 
-- [typealias CVPixelBufferReleasePlanarBytesCallback](cvpixelbufferreleaseplanarbytescallback.md)
-  Defines a pointer to a pixel buffer release callback function, which is called when a pixel buffer created by [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) is released.
+### Callbacks
+- [typealias CVPixelBufferReleasePlanarBytesCallback](./cvpixelbufferreleaseplanarbytescallback.md)
+  Defines a pointer to a pixel buffer release callback function, which is called when a pixel buffer created by [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./cvpixelbuffercreatewithplanarbytes%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) is released.
 
 
 ---

@@ -1,7 +1,8 @@
 # onWithRecallGlobalScene(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func onWithRecallGlobalScene(with params: MTROnOffClusterOnWithRecallGlobalSceneParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func onWithRecallGlobalScene(with params: MTROnOffClusterOnWithRecallGlobalSceneParams?) async throws
+```
+
+```objc
+- (void) onWithRecallGlobalSceneWithParams:(MTROnOffClusterOnWithRecallGlobalSceneParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

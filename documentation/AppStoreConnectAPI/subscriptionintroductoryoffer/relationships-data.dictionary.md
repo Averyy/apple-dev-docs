@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOffer.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOffer.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionIntroductoryOffer.Relationships.Subscription](subscriptionintroductoryoffer/relationships-data.dictionary/subscription-data.dictionary.md)
-- [object SubscriptionIntroductoryOffer.Relationships.SubscriptionPricePoint](subscriptionintroductoryoffer/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
-- [object SubscriptionIntroductoryOffer.Relationships.Territory](subscriptionintroductoryoffer/relationships-data.dictionary/territory-data.dictionary.md)
+- [object SubscriptionIntroductoryOffer.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionIntroductoryOffer.Relationships.SubscriptionPricePoint](./relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
+- [object SubscriptionIntroductoryOffer.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object SubscriptionIntroductoryOffer.Relationships
 
 ## See Also
 
-- [object SubscriptionIntroductoryOffer.Attributes](subscriptionintroductoryoffer/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionIntroductoryOffer.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription introductory offer resource.
 
 

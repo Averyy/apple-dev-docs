@@ -1,7 +1,8 @@
 # gridPosition
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the node on a discrete integer grid.
 
@@ -19,11 +20,15 @@ The position of the node on a discrete integer grid.
 var gridPosition: vector_int2 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) vector_int2 gridPosition;
+```
+
 #### Discussion
 
 You specify the position only when creating a node.
 
-When working with an array of nodes returned by the [`GKGraph`](gkgraph.md) [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method, read the position from each node to determine the path for an entity in your game scene to follow.
+When working with an array of nodes returned by the [`GKGraph`](../gkgraph.md) [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method, read the position from each node to determine the path for an entity in your game scene to follow.
 
 
 ---

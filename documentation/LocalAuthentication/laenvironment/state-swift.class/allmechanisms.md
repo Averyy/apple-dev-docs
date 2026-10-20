@@ -1,7 +1,8 @@
 # allMechanisms
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var allMechanisms: [LAEnvironment.Mechanism] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<LAEnvironmentMechanism *> * allMechanisms;
 ```
 
 #### Discussion

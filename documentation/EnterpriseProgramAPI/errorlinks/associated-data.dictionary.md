@@ -1,18 +1,19 @@
 # ErrorLinks.Associated
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ErrorLinks.Associated
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ErrorLinks.Associated.Meta](errorlinks/associated-data.dictionary/meta-data.dictionary.md)
+- [object ErrorLinks.Associated.Meta](./associated-data.dictionary/meta-data.dictionary.md)
 
 ## Properties
 

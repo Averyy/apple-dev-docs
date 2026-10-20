@@ -1,7 +1,8 @@
 # checkHapticTrackAvailabilityForMedia(matchingCode:completionHandler:)
 
 **Framework**: Media Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether a haptic track is available for the song with the specified International Standard Recording Code (ISRC).
 
@@ -16,7 +17,15 @@ Checks whether a haptic track is available for the song with the specified Inter
 ## Declaration
 
 ```swift
+func checkHapticTrackAvailabilityForMedia(matchingCode internationalStandardRecordingCode: String, completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func isHapticTrackAvailable(forMediaMatching internationalStandardRecordingCode: String) async -> Bool
+```
+
+```objc
+- (void) checkHapticTrackAvailabilityForMediaMatchingCode:(NSString *) internationalStandardRecordingCode completionHandler:(void (^)(BOOL musicHapticsAvailable)) completionHandler;
 ```
 
 

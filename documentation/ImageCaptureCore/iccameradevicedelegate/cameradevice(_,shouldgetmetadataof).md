@@ -1,7 +1,8 @@
 # cameraDevice(_:shouldGetMetadataOf:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the client when the camera is about to execute queued requests for the metadata of a specific item.
 
@@ -18,15 +19,20 @@ Tells the client when the camera is about to execute queued requests for the met
 optional func cameraDevice(_ cameraDevice: ICCameraDevice, shouldGetMetadataOf item: ICCameraItem) -> Bool
 ```
 
+```objc
+- (BOOL) cameraDevice:(ICCameraDevice *) cameraDevice shouldGetMetadataOfItem:(ICCameraItem *) item;
+```
+
 #### Discussion
 
 If the request is no longer needed—for example, if the item is no longer displayed on the screen—the client can cancel sending a request to the camera, speeding up the execution queue.
 
 ## See Also
 
-- [func cameraDevice(ICCameraDevice, didReceiveMetadata: [AnyHashable : Any]?, for: ICCameraItem, error: (any Error)?)](iccameradevicedelegate/cameradevice(_:didreceivemetadata:for:error:).md)
+### Receiving Metadata
+- [func cameraDevice(ICCameraDevice, didReceiveMetadata: [AnyHashable : Any]?, for: ICCameraItem, error: (any Error)?)](./cameradevice%28_,didreceivemetadata,for,error%29.md)
   Tells the client when the metadata requested for an item on a camera is available.
-- [func cameraDevice(ICCameraDevice, didReceiveMetadataFor: ICCameraItem)](iccameradevicedelegate/cameradevice(_:didreceivemetadatafor:).md)
+- [func cameraDevice(ICCameraDevice, didReceiveMetadataFor: ICCameraItem)](./cameradevice%28_,didreceivemetadatafor%29.md)
   Tells the client when the metadata requested for an item on a camera is available.
 
 

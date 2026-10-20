@@ -1,7 +1,8 @@
 # profileDidUpdateNetworkAccessMode(_:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the network access mode has changed.
 
@@ -17,6 +18,10 @@ Tells the delegate that the network access mode has changed.
 
 ```swift
 optional func profileDidUpdateNetworkAccessMode(_ profile: HMNetworkConfigurationProfile)
+```
+
+```objc
+- (void) profileDidUpdateNetworkAccessMode:(HMNetworkConfigurationProfile *) profile;
 ```
 
 ## Parameters

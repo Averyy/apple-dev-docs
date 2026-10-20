@@ -1,7 +1,8 @@
 # NSBatchInsertResult
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result that Core Data returns when executing a batch-insertion request.
 
@@ -20,31 +21,36 @@ The result that Core Data returns when executing a batch-insertion request.
 class NSBatchInsertResult
 ```
 
+```objc
+@interface NSBatchInsertResult : NSPersistentStoreResult
+```
+
 ## Topics
 
 ### Accessing Results
-- [var result: Any?](nsbatchinsertresult/result.md)
+- [var result: Any?](./nsbatchinsertresult/result.md)
   The result of a batch-insertion request.
-- [var resultType: NSBatchInsertRequestResultType](nsbatchinsertresult/resulttype.md)
+- [var resultType: NSBatchInsertRequestResultType](./nsbatchinsertresult/resulttype.md)
   The type of result that Core Data returns from this request.
-- [enum NSBatchInsertRequestResultType](nsbatchinsertrequestresulttype.md)
+- [enum NSBatchInsertRequestResultType](./nsbatchinsertrequestresulttype.md)
   Result types for a batch-insertion request.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreResult](nspersistentstoreresult.md)
+- [NSPersistentStoreResult](./nspersistentstoreresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSBatchInsertRequest](nsbatchinsertrequest.md)
+### Data Inserts
+- [class NSBatchInsertRequest](./nsbatchinsertrequest.md)
   A request to insert a batch of data in a persistent store.
 
 

@@ -1,7 +1,8 @@
 # corpsePort
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that provides a Mach port to the crashed process.
 
@@ -9,9 +10,9 @@ A property that provides a Mach port to the crashed process.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ The corpse port is a read-only task port for a process that terminated but is st
 
 ## See Also
 
-- [var reason: CrashReason](crashedprocess/reason.md)
+### Accessing process properties
+- [var reason: CrashReason](./reason.md)
   Contextual information about the reported crash.
-- [struct CrashReason](crashreason.md)
+- [struct CrashReason](../crashreason.md)
   Context information about the crash being reported
-- [var binaryImages: [BinaryImageInfo]](crashedprocess/binaryimages.md)
+- [var binaryImages: [BinaryImageInfo]](./binaryimages.md)
   A list of binary images from the crashed process.
-- [struct BinaryImageInfo](binaryimageinfo.md)
+- [struct BinaryImageInfo](../binaryimageinfo.md)
   A type that represents a binary image loaded in the crashed process.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift Charts  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The primitive plottable value that corresponds to the plottable value of the underlying type.
@@ -20,6 +21,12 @@ The primitive plottable value that corresponds to the plottable value of the und
 ```swift
 var primitivePlottable: Self.PrimitivePlottable { get }
 ```
+
+## Default Implementations
+
+### Plottable Implementations
+- [var primitivePlottable: String](./primitiveplottable-4a60p.md)
+- [var primitivePlottable: Self](./primitiveplottable-8wzif.md)
 
 
 ---

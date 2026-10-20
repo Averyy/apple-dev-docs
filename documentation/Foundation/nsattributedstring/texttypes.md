@@ -1,7 +1,8 @@
 # textTypes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of UTI strings that identify the file types that attributed strings support, either directly or through a user-installed filter service.
 
@@ -14,6 +15,10 @@ An array of UTI strings that identify the file types that attributed strings sup
 class var textTypes: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * textTypes;
+```
+
 #### Return Value
 
 An array of `NSString` objects, each of which contains a UTI identifying a supported file type.
@@ -24,9 +29,10 @@ The returned list includes UTIs all file types supported by the receiver plus th
 
 ## See Also
 
-- [func prefersRTFD(in: NSRange) -> Bool](nsattributedstring/prefersrtfd(in:).md)
+### Getting the supported text-file formats
+- [func prefersRTFD(in: NSRange) -> Bool](./prefersrtfd%28in%29.md)
   Returns a Boolean value that indicates whether the specified range of text prefers RTFD formatting.
-- [class var textUnfilteredTypes: [String]](nsattributedstring/textunfilteredtypes.md)
+- [class var textUnfilteredTypes: [String]](./textunfilteredtypes.md)
   An array of UTI strings that identify the file types that attributed strings support directly.
 
 

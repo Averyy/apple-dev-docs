@@ -1,7 +1,8 @@
 # kSecReturnAttributes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean indicating whether or not to return item attributes.
 
@@ -20,9 +21,13 @@ A key whose value is a Boolean indicating whether or not to return item attribut
 let kSecReturnAttributes: CFString
 ```
 
+```c
+extern CFStringRef const kSecReturnAttributes;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that a dictionary of the (unencrypted) attributes of an item should be returned in the form of a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) using the keys and values defined in [`Item attribute keys and values`](item-attribute-keys-and-values.md).
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that a dictionary of the (unencrypted) attributes of an item should be returned in the form of a [`CFDictionary`](../CoreFoundation/cfdictionary.md) using the keys and values defined in [Item attribute keys and values](./item-attribute-keys-and-values.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # MTLCommandBufferErrorDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Metal command buffer errors.
 
@@ -10,13 +11,17 @@ The domain for Metal command buffer errors.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 let MTLCommandBufferErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const MTLCommandBufferErrorDomain;
 ```
 
 

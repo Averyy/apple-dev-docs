@@ -1,7 +1,8 @@
 # dataChannelDescription
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of data channels selected for this configuration.
 
@@ -22,11 +23,12 @@ var dataChannelDescription: [[CMTag]] { get }
 
 ## See Also
 
-- [var sourcePlayerItem: AVPlayerItem?](avplayervideooutput/configuration/sourceplayeritem.md)
+### Inspecting the configuration
+- [var sourcePlayerItem: AVPlayerItem?](./sourceplayeritem.md)
   The player item that’s the source of this configuration.
-- [var activationTime: CMTime](avplayervideooutput/configuration/activationtime.md)
+- [var activationTime: CMTime](./activationtime.md)
   The host time this configuration became active on its associated player object.
-- [var preferredTransform: CGAffineTransform](avplayervideooutput/configuration/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The preferred transform of the visual media.
 
 

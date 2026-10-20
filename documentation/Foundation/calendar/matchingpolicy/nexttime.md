@@ -1,7 +1,8 @@
 # Calendar.MatchingPolicy.nextTime
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 If there is no matching time before the end of the next instance of the next higher component to the highest specified component in the `DateComponents` argument, the algorithm will return the next existing time which exists.
 
@@ -26,11 +27,12 @@ For example, during a daylight saving transition there may be no 2:37am. The res
 
 ## See Also
 
-- [Calendar.MatchingPolicy.nextTimePreservingSmallerComponents](calendar/matchingpolicy/nexttimepreservingsmallercomponents.md)
+### Enumeration Cases
+- [Calendar.MatchingPolicy.nextTimePreservingSmallerComponents](./nexttimepreservingsmallercomponents.md)
   If specified, and there is no matching time before the end of the next instance of the next higher component to the highest specified component in the `DateComponents` argument, the method returns the next existing value of the missing component and preserves the lower components’ values (for example, no 2:37am results in 3:37am, if that exists).
-- [Calendar.MatchingPolicy.previousTimePreservingSmallerComponents](calendar/matchingpolicy/previoustimepreservingsmallercomponents.md)
+- [Calendar.MatchingPolicy.previousTimePreservingSmallerComponents](./previoustimepreservingsmallercomponents.md)
   If there is no matching time before the end of the next instance of the next higher component to the highest specified component in the `DateComponents` argument, the algorithm will return the previous existing value of the missing component and preserves the lower components’ values.
-- [Calendar.MatchingPolicy.strict](calendar/matchingpolicy/strict.md)
+- [Calendar.MatchingPolicy.strict](./strict.md)
   If specified, the algorithm travels as far forward or backward as necessary looking for a match.
 
 

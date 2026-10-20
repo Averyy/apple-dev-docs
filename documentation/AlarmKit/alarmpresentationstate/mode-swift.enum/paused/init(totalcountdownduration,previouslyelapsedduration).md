@@ -1,7 +1,8 @@
 # init(totalCountdownDuration:previouslyElapsedDuration:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of a paused state.
 
@@ -23,9 +24,10 @@ init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterv
 
 ## See Also
 
-- [var previouslyElapsedDuration: TimeInterval](alarmpresentationstate/mode-swift.enum/paused/previouslyelapsedduration.md)
+### Pausing an alarm
+- [var previouslyElapsedDuration: TimeInterval](./previouslyelapsedduration.md)
   The amount of time that elapsed before the most recent pause of the countdown.
-- [var totalCountdownDuration: TimeInterval](alarmpresentationstate/mode-swift.enum/paused/totalcountdownduration.md)
+- [var totalCountdownDuration: TimeInterval](./totalcountdownduration.md)
   The total duration of the countdown.
 
 

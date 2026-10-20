@@ -1,7 +1,8 @@
 # fidelity
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fidelity of this hand.
 

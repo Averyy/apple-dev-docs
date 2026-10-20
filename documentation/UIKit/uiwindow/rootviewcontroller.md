@@ -1,7 +1,8 @@
 # rootViewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root view controller for the window.
 
@@ -9,7 +10,7 @@ The root view controller for the window.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The root view controller for the window.
 var rootViewController: UIViewController? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIViewController * rootViewController;
+```
+
 ## Mentions
 
-- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
+- [Managing content in your app’s windows](../managing-content-in-your-app-s-windows.md)
 
 #### Discussion
 
@@ -30,13 +35,14 @@ The default value of this property is `nil`.
 
 ## See Also
 
-- [var windowLevel: UIWindow.Level](uiwindow/windowlevel.md)
+### Configuring the window
+- [var windowLevel: UIWindow.Level](./windowlevel.md)
   The position of the window in the z-axis.
-- [UIWindow.Level](uiwindow/level.md)
+- [UIWindow.Level](./level.md)
   The positioning of windows relative to each other.
-- [var canResizeToFitContent: Bool](uiwindow/canresizetofitcontent.md)
+- [var canResizeToFitContent: Bool](./canresizetofitcontent.md)
   A Boolean value that indicates whether the window’s constraint-based content determines its size.
-- [var screen: UIScreen](uiwindow/screen.md)
+- [var screen: UIScreen](./screen.md)
   The screen to display the window on.
 
 

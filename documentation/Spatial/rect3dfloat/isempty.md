@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var isEmpty: Bool { get }
+```
+
+```c
+static bool SPRect3DFloatIsEmpty(SPRect3DFloat rect);
 ```
 
 #### Discussion

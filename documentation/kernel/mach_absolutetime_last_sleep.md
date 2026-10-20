@@ -1,14 +1,15 @@
 # mach_absolutetime_last_sleep
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 uint64_t mach_absolutetime_last_sleep;
 ```
 

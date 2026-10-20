@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that handles messages about the user’s interaction with a font picker.
 
@@ -17,11 +18,16 @@ The object that handles messages about the user’s interaction with a font pick
 weak var delegate: (any UIFontPickerViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIFontPickerViewControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UIFontPickerViewControllerDelegate](uifontpickerviewcontrollerdelegate.md)
+### Responding to font picker interactions
+- [protocol UIFontPickerViewControllerDelegate](../uifontpickerviewcontrollerdelegate.md)
   A set of optional methods for receiving messages about the user’s interaction with the font picker.
-- [var selectedFontDescriptor: UIFontDescriptor?](uifontpickerviewcontroller/selectedfontdescriptor.md)
+- [var selectedFontDescriptor: UIFontDescriptor?](./selectedfontdescriptor.md)
   Information about the font family or face selected by the user in the font picker.
 
 

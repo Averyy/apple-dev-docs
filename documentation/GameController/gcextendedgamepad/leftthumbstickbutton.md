@@ -1,7 +1,8 @@
 # leftThumbstickButton
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button on the left thumbstick of the controller.
 
@@ -19,17 +20,22 @@ The button on the left thumbstick of the controller.
 var leftThumbstickButton: GCControllerButtonInput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GCControllerButtonInput * leftThumbstickButton;
+```
+
 #### Discussion
 
 If the thumbstick has a clickable component, this is a digital button.
 
 ## See Also
 
-- [var leftThumbstick: GCControllerDirectionPad](gcextendedgamepad/leftthumbstick.md)
+### Getting thumbstick and thumbstick button inputs
+- [var leftThumbstick: GCControllerDirectionPad](./leftthumbstick.md)
   The controller’s left thumbstick element.
-- [var rightThumbstick: GCControllerDirectionPad](gcextendedgamepad/rightthumbstick.md)
+- [var rightThumbstick: GCControllerDirectionPad](./rightthumbstick.md)
   The controller’s right thumbstick element.
-- [var rightThumbstickButton: GCControllerButtonInput?](gcextendedgamepad/rightthumbstickbutton.md)
+- [var rightThumbstickButton: GCControllerButtonInput?](./rightthumbstickbutton.md)
   The button on the right thumbstick of the controller.
 
 

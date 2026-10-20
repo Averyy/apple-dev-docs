@@ -1,14 +1,15 @@
 # kBluetoothHCICommandLESetAdvertiseEnable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandLESetAdvertiseEnable = 0x000A
 ```
 

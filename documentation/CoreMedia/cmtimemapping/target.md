@@ -1,7 +1,8 @@
 # target
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time range on the target timeline.
 
@@ -20,13 +21,18 @@ A time range on the target timeline.
 var target: CMTimeRange
 ```
 
+```c
+CMTimeRange target;
+```
+
 #### Discussion
 
 If the target and source have different durations, the source segment should play at a rate of `source.duration / target.duration` to fit.
 
 ## See Also
 
-- [var source: CMTimeRange](cmtimemapping/source.md)
+### Accessing Time Ranges
+- [var source: CMTimeRange](./source.md)
   A time range on the source timeline.
 
 

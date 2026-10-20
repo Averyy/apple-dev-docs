@@ -1,12 +1,15 @@
 # updateUserActivity(_:userInfo:webpageURL:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the current user activity with the system.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 5.0
+
+> **Deprecated**: Use [`update(_:)`](./update%28_%29.md) instead.
 
 ## Declaration
 
@@ -14,44 +17,49 @@ Registers the current user activity with the system.
 func updateUserActivity(_ type: String, userInfo: [AnyHashable : Any]? = nil, webpageURL: URL?)
 ```
 
+```objc
+- (void) updateUserActivity:(NSString *) type userInfo:(NSDictionary *) userInfo webpageURL:(NSURL *) webpageURL;
+```
+
 #### Discussion
 
 Use this method to publish your app’s current activity so that it can be handled as needed. When calling this method, you must specify a value for the `userInfo` parameter, the `webpageURL` parameter, or both. Call this method in the following situations:
 
 - In your glance interface controller, call this method and provide a `userInfo` dictionary with information about what the glance displays. If the user taps your glance, that contextual information passes to your app so it can configure its interface.
-- Call this method to register the current activity with Handoff. The system delivers the information to the user’s iPhone, which can propagate the Handoff information to the user’s other devices. For more information about supporting Handoff, see [`Handoff Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338).
+- Call this method to register the current activity with Handoff. The system delivers the information to the user’s iPhone, which can propagate the Handoff information to the user’s other devices. For more information about supporting Handoff, see [Handoff Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338).
 
 Call this method at any time during the execution of your interface controller’s code. The system takes the information you provide and stores it for delivery to the appropriate target.
 
 ## Parameters
 
 - `type`: The type of activity to be continued. The value is a developer-defined string in reverse-DNS format by convention, for example, `com.myCompany.myEditor.editing`. This parameter must not be `nil` or an empty string.
-- `userInfo`: A dictionary containing app-specific state information needed to continue an activity on another device. Keys and values in the dictionary must be of the following types: [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSSet`](https://developer.apple.com/documentation/foundation/nsset), or [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
+- `userInfo`: A dictionary containing app-specific state information needed to continue an activity on another device. Keys and values in the dictionary must be of the following types: [`NSArray`](../../Foundation/nsarray.md), [`NSData`](../../Foundation/nsdata.md), [`NSDate`](../../Foundation/nsdate.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSNull`](../../Foundation/nsnull.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSSet`](../../Foundation/nsset.md), or [`NSString`](../../Foundation/nsstring.md).
 - `webpageURL`: A URL containing the web page to load in a browser to continue the activity. The scheme of the URL must be `http` or `https`. Any other scheme throws an exception.
 
 ## See Also
 
-- [Text Response Key](text-response-key.md)
+### Deprecated symbols
+- [Text Response Key](../text-response-key.md)
   Keys for retrieving text response information.
-- [func addMenuItem(withImageNamed: String, title: String, action: Selector)](wkinterfacecontroller/addmenuitem(withimagenamed:title:action:).md)
+- [func addMenuItem(withImageNamed: String, title: String, action: Selector)](./addmenuitem%28withimagenamed,title,action%29.md)
   Adds an action to the context menu using an existing image resource in your Watch app bundle.
-- [func addMenuItem(with: WKMenuItemIcon, title: String, action: Selector)](wkinterfacecontroller/addmenuitem(with:title:action:)-6pb4t.md)
+- [func addMenuItem(with: WKMenuItemIcon, title: String, action: Selector)](./addmenuitem%28with,title,action%29-6pb4t.md)
   Adds an action to the context menu using a system-provided icon.
-- [func addMenuItem(with: UIImage, title: String, action: Selector)](wkinterfacecontroller/addmenuitem(with:title:action:)-1q2zj.md)
+- [func addMenuItem(with: UIImage, title: String, action: Selector)](./addmenuitem%28with,title,action%29-1q2zj.md)
   Adds an action to the context menu by using an image provided by your WatchKit extension.
-- [func beginGlanceUpdates()](wkinterfacecontroller/beginglanceupdates.md)
+- [func beginGlanceUpdates()](./beginglanceupdates%28%29.md)
   Tells the system that you are about to start a potentially lengthy update task for your glance.
-- [func clearAllMenuItems()](wkinterfacecontroller/clearallmenuitems.md)
+- [func clearAllMenuItems()](./clearallmenuitems%28%29.md)
   Removes all programmatically added actions from the context menu.
-- [func endGlanceUpdates()](wkinterfacecontroller/endglanceupdates.md)
+- [func endGlanceUpdates()](./endglanceupdates%28%29.md)
   Tells the system that you finished updating your glance content.
-- [func handleUserActivity([AnyHashable : Any]?)](wkinterfacecontroller/handleuseractivity(_:).md)
+- [func handleUserActivity([AnyHashable : Any]?)](./handleuseractivity%28_%29.md)
   Responds to Handoff–related activity.
-- [func presentController([(name: String, context: AnyObject)])](wkinterfacecontroller/presentcontroller(_:).md)
+- [func presentController([(name: String, context: AnyObject)])](./presentcontroller%28_%29.md)
   Presents a page-based interface modally.
-- [class func reloadRootControllers(withNames: [String], contexts: [Any]?)](wkinterfacecontroller/reloadrootcontrollers(withnames:contexts:).md)
+- [class func reloadRootControllers(withNames: [String], contexts: [Any]?)](./reloadrootcontrollers%28withnames,contexts%29.md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface.
-- [enum WKMenuItemIcon](wkmenuitemicon.md)
+- [enum WKMenuItemIcon](../wkmenuitemicon.md)
   Template images that you can use for menus.
 
 

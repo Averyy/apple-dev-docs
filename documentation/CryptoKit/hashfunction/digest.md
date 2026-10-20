@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -21,7 +22,8 @@ associatedtype Digest : Digest
 
 ## See Also
 
-- [protocol Digest](digest.md)
+### Specifying the output type
+- [protocol Digest](../digest.md)
   A type that represents the output of a hash.
 
 

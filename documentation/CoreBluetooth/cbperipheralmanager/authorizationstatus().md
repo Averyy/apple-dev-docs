@@ -1,18 +1,21 @@
 # authorizationStatus()
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the app’s authorization status for sharing data while in the background.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.15
+- tvOS 9.0+ - Deprecated in 13.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use CBManagerAuthorization instead
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns the app’s authorization status for sharing data while in the backgroun
 class func authorizationStatus() -> CBPeripheralManagerAuthorizationStatus
 ```
 
+```objc
++ (CBPeripheralManagerAuthorizationStatus) authorizationStatus;
+```
+
 #### Return Value
 
-A value that indicates whether the app has authorization to share data using Bluetooth services while in the background. For a list of possible values, see [`CBPeripheralManagerAuthorizationStatus`](cbperipheralmanagerauthorizationstatus.md).
+A value that indicates whether the app has authorization to share data using Bluetooth services while in the background. For a list of possible values, see [`CBPeripheralManagerAuthorizationStatus`](../cbperipheralmanagerauthorizationstatus.md).
 
 #### Discussion
 
@@ -32,9 +39,10 @@ Calling this method doesn’t prompt the user for access. Instead, you use this 
 
 ## See Also
 
-- [enum CBPeripheralManagerAuthorizationStatus](cbperipheralmanagerauthorizationstatus.md)
+### Monitoring the State of a Peripheral Manager
+- [enum CBPeripheralManagerAuthorizationStatus](../cbperipheralmanagerauthorizationstatus.md)
   Values representing the current authorization state of the peripheral manager.
-- [enum CBPeripheralManagerState](cbperipheralmanagerstate.md)
+- [enum CBPeripheralManagerState](../cbperipheralmanagerstate.md)
   Values that represent the current state of the peripheral manager.
 
 

@@ -1,7 +1,8 @@
 # mapTemplate(_:didReceiveUpdatedRouteSource:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the route source status has been updated by the built-in system.
 
@@ -14,6 +15,10 @@ Called when the route source status has been updated by the built-in system.
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didReceiveUpdatedRouteSource routeSource: CPRouteSource)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didReceiveUpdatedRouteSource:(CPRouteSource) routeSource;
 ```
 
 

@@ -1,7 +1,8 @@
 # RCSService.Business.SuggestedAction.Action.createCalendarEvent(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Calendar action.
 
@@ -16,7 +17,8 @@ case createCalendarEvent(RCSService.Business.CreateCalendarEventAction)
 
 ## See Also
 
-- [RCSService.Business.CreateCalendarEventAction](rcsservice/business/createcalendareventaction.md)
+### Handling calendar event actions
+- [RCSService.Business.CreateCalendarEventAction](../../createcalendareventaction.md)
   Structure representing an action to create a calendar event.
 
 

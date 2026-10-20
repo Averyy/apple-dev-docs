@@ -1,7 +1,8 @@
 # Publishers.TryDropWhile.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -22,11 +23,12 @@ typealias Failure = Error
 
 #### Discussion
 
-This publisher produces the Swift [`Error`](https://developer.apple.com/documentation/swift/error) type.
+This publisher produces the Swift [`Error`](../../../Swift/error.md) type.
 
 ## See Also
 
-- [Publishers.TryDropWhile.Output](publishers/trydropwhile/output.md)
+### Declaring supporting types
+- [Publishers.TryDropWhile.Output](./output.md)
   The kind of values published by this publisher.
 
 

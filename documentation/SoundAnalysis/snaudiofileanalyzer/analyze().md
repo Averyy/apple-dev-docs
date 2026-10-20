@@ -1,7 +1,8 @@
 # analyze()
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes the audio file synchronously.
 
@@ -20,9 +21,13 @@ Analyzes the audio file synchronously.
 func analyze()
 ```
 
+```objc
+- (void) analyze;
+```
+
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
 #### Discussion
 
@@ -34,9 +39,10 @@ The audio file analyzer sends errors to each request’s results observer.
 
 ## See Also
 
-- [func analyze(completionHandler: (Bool) -> Void)](snaudiofileanalyzer/analyze(completionhandler:).md)
+### Analyzing Data
+- [func analyze(completionHandler: (Bool) -> Void)](./analyze%28completionhandler%29.md)
   Analyzes the audio file asynchronously.
-- [func cancelAnalysis()](snaudiofileanalyzer/cancelanalysis.md)
+- [func cancelAnalysis()](./cancelanalysis%28%29.md)
   Cancels all the asynchronous sound analysis requests the analyzer is currently processing.
 
 

@@ -1,7 +1,8 @@
 # ARObjectAnchor
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An anchor for a real-world 3D object that ARKit detects in the physical environment.
 
@@ -15,47 +16,52 @@ An anchor for a real-world 3D object that ARKit detects in the physical environm
 class ARObjectAnchor
 ```
 
+```objc
+@interface ARObjectAnchor : ARAnchor
+```
+
 #### Overview
 
-When you run a world-tracking AR session and specify [`ARReferenceObject`](arreferenceobject.md) objects for the session configuration’s [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) property, ARKit searches for those objects in the real-world environment. When the session recognizes an object, it automatically adds to its list of anchors an [`ARObjectAnchor`](arobjectanchor.md) for each detected object.
+When you run a world-tracking AR session and specify [`ARReferenceObject`](./arreferenceobject.md) objects for the session configuration’s [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md) property, ARKit searches for those objects in the real-world environment. When the session recognizes an object, it automatically adds to its list of anchors an [`ARObjectAnchor`](./arobjectanchor.md) for each detected object.
 
-To place virtual 3D content that matches the position or size of the detected object, use the anchor’s inherited [`transform`](aranchor/transform.md) property together with the [`center`](arreferenceobject/center.md) and [`extent`](arreferenceobject/extent.md) of the anchor’s [`referenceObject`](arobjectanchor/referenceobject.md).
+To place virtual 3D content that matches the position or size of the detected object, use the anchor’s inherited [`transform`](./aranchor/transform.md) property together with the [`center`](./arreferenceobject/center.md) and [`extent`](./arreferenceobject/extent.md) of the anchor’s [`referenceObject`](./arobjectanchor/referenceobject.md).
 
 ## Topics
 
 ### Identifying Detected Objects
-- [var referenceObject: ARReferenceObject](arobjectanchor/referenceobject.md)
+- [var referenceObject: ARReferenceObject](./arobjectanchor/referenceobject.md)
   The detected object referenced by the object anchor.
 ### Instance Properties
-- [var isTracked: Bool](arobjectanchor/istracked.md)
+- [var isTracked: Bool](./arobjectanchor/istracked.md)
   A Boolean value indicating whether the anchor is currently being tracked.
 
 ## Relationships
 
 ### Inherits From
-- [ARAnchor](aranchor.md)
+- [ARAnchor](./aranchor.md)
 ### Conforms To
-- [ARAnchorCopying](aranchorcopying.md)
-- [ARTrackable](artrackable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ARAnchorCopying](./aranchorcopying.md)
+- [ARTrackable](./artrackable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Visualizing and interacting with a reconstructed scene](visualizing-and-interacting-with-a-reconstructed-scene.md)
+### Physical Objects
+- [Visualizing and interacting with a reconstructed scene](./visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [Scanning and Detecting 3D Objects](scanning-and-detecting-3d-objects.md)
+- [Scanning and Detecting 3D Objects](./scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
-- [class ARReferenceObject](arreferenceobject.md)
+- [class ARReferenceObject](./arreferenceobject.md)
   The description of a 3D object that you want ARKit to detect in the physical environment.
 
 

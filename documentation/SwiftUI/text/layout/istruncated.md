@@ -1,7 +1,8 @@
 # isTruncated
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates if this text is truncated.
 

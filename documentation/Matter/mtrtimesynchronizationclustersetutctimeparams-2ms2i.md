@@ -1,7 +1,8 @@
 # MTRTimeSynchronizationClusterSetUtcTimeParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 class MTRTimeSynchronizationClusterSetUtcTimeParams
 ```
 
+```objc
+@interface MTRTimeSynchronizationClusterSetUtcTimeParams : MTRTimeSynchronizationClusterSetUTCTimeParams
+```
+
 ## Topics
 
 ### Instance Properties
-- [var granularity: NSNumber](mtrtimesynchronizationclustersetutctimeparams-2ms2i/granularity.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrtimesynchronizationclustersetutctimeparams-2ms2i/serversideprocessingtimeout.md)
-- [var timeSource: NSNumber?](mtrtimesynchronizationclustersetutctimeparams-2ms2i/timesource.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrtimesynchronizationclustersetutctimeparams-2ms2i/timedinvoketimeoutms.md)
-- [var utcTime: NSNumber](mtrtimesynchronizationclustersetutctimeparams-2ms2i/utctime.md)
+- [var granularity: NSNumber](./mtrtimesynchronizationclustersetutctimeparams-2ms2i/granularity.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrtimesynchronizationclustersetutctimeparams-2ms2i/serversideprocessingtimeout.md)
+- [var timeSource: NSNumber?](./mtrtimesynchronizationclustersetutctimeparams-2ms2i/timesource.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrtimesynchronizationclustersetutctimeparams-2ms2i/timedinvoketimeoutms.md)
+- [var utcTime: NSNumber](./mtrtimesynchronizationclustersetutctimeparams-2ms2i/utctime.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRTimeSynchronizationClusterSetUTCTimeParams](mtrtimesynchronizationclustersetutctimeparams-1ru2r.md)
+- [MTRTimeSynchronizationClusterSetUTCTimeParams](./mtrtimesynchronizationclustersetutctimeparams-1ru2r.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

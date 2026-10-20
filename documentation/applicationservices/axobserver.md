@@ -1,7 +1,8 @@
 # AXObserver
 
 **Framework**: Application Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.2+
@@ -14,7 +15,7 @@ class AXObserver
 
 #### Overview
 
-An AXObserverRef is a CFType. Like all CFTypes, they are reference counted ([`CFRetain`](https://developer.apple.com/documentation/corefoundation/cfretain), [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease)).
+An AXObserverRef is a CFType. Like all CFTypes, they are reference counted ([`CFRetain`](../CoreFoundation/cfretain.md), [`CFRelease`](../CoreFoundation/cfrelease.md)).
 
 
 ---

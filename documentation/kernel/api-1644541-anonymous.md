@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kGammaTableIDFindFirst](1644541-anonymous/kgammatableidfindfirst.md)
-- [kGammaTableIDNoMoreTables](1644541-anonymous/kgammatableidnomoretables.md)
-- [kGammaTableIDSpecific](1644541-anonymous/kgammatableidspecific.md)
+- [kGammaTableIDFindFirst](./api-1644541-anonymous/kgammatableidfindfirst.md)
+- [kGammaTableIDNoMoreTables](./api-1644541-anonymous/kgammatableidnomoretables.md)
+- [kGammaTableIDSpecific](./api-1644541-anonymous/kgammatableidspecific.md)
 
 
 ---

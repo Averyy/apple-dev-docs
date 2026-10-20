@@ -1,14 +1,15 @@
 # SO_TRACKER_ACTION_DUMP_BY_APP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 SO_TRACKER_ACTION_DUMP_BY_APP = 2
 ```
 

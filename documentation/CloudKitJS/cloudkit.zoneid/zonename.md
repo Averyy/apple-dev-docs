@@ -1,7 +1,8 @@
 # zoneName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that identifies the record zone. The default value is `_defaultZone`, which indicates the default zone of the current database. This key is required.
 
@@ -10,7 +11,7 @@ The name that identifies the record zone. The default value is `_defaultZone`, w
 
 ## Declaration
 
-```swift
+```
 attribute String zoneName;
 ```
 

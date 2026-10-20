@@ -1,23 +1,25 @@
 # initWithType
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool initWithType(IOHIDDigitizerCollectionType type, IOHIDElement *parentCollection);
 ```
 
 ## See Also
 
-- [withType](iohiddigitizercollection/withtype.md)
-- [free](iohiddigitizercollection/free.md)
-- [IOHIDDigitizerCollectionType](iohiddigitizercollectiontype.md)
+### Creating a Digitizer Collection
+- [withType](./withtype.md)
+- [free](./free.md)
+- [IOHIDDigitizerCollectionType](../iohiddigitizercollectiontype.md)
 
 
 ---

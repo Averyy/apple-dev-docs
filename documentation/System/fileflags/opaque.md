@@ -1,7 +1,8 @@
 # opaque
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Directory is opaque when viewed through a union mount.
 

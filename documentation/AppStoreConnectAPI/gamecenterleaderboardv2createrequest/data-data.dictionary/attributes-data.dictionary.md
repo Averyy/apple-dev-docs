@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2CreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center leaderboard create request.
 
@@ -10,7 +11,7 @@ The request body you use to create a Game Center leaderboard create request.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2CreateRequest.Data.Attributes
 ```
 
@@ -39,14 +40,15 @@ object GameCenterLeaderboardV2CreateRequest.Data.Attributes
 - `referenceName` (string) *(required)*
 - `scoreRangeEnd` (number)
 - `scoreRangeStart` (number)
-- `scoreSortType` (string) *(required)*
-- `submissionType` (string) *(required)*
+- `scoreSortType` (string) *(required)*: **Allowed Values**: `ASC`, `DESC`
+- `submissionType` (string) *(required)*: **Allowed Values**: `BEST_SCORE`, `MOST_RECENT_SCORE`
 - `vendorIdentifier` (string) *(required)*
-- `visibility` (string)
+- `visibility` (string): **Allowed Values**: `SHOW_FOR_ALL`, `HIDE_FOR_ALL`
 
 ## See Also
 
-- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

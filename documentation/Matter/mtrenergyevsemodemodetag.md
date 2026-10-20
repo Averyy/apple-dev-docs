@@ -1,7 +1,8 @@
 # MTREnergyEVSEModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,35 +19,39 @@
 enum MTREnergyEVSEModeModeTag
 ```
 
+```c
+enum MTREnergyEVSEModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTREnergyEVSEModeModeTag.V2X](mtrenergyevsemodemodetag/v2x.md)
-- [MTREnergyEVSEModeModeTag.auto](mtrenergyevsemodemodetag/auto.md)
-- [MTREnergyEVSEModeModeTag.day](mtrenergyevsemodemodetag/day.md)
-- [MTREnergyEVSEModeModeTag.lowEnergy](mtrenergyevsemodemodetag/lowenergy.md)
-- [MTREnergyEVSEModeModeTag.lowNoise](mtrenergyevsemodemodetag/lownoise.md)
-- [MTREnergyEVSEModeModeTag.manual](mtrenergyevsemodemodetag/manual.md)
-- [MTREnergyEVSEModeModeTag.max](mtrenergyevsemodemodetag/max.md)
-- [MTREnergyEVSEModeModeTag.min](mtrenergyevsemodemodetag/min.md)
-- [MTREnergyEVSEModeModeTag.night](mtrenergyevsemodemodetag/night.md)
-- [MTREnergyEVSEModeModeTag.quick](mtrenergyevsemodemodetag/quick.md)
-- [MTREnergyEVSEModeModeTag.quiet](mtrenergyevsemodemodetag/quiet.md)
-- [MTREnergyEVSEModeModeTag.solarCharging](mtrenergyevsemodemodetag/solarcharging.md)
-- [MTREnergyEVSEModeModeTag.timeOfUse](mtrenergyevsemodemodetag/timeofuse.md)
-- [MTREnergyEVSEModeModeTag.vacation](mtrenergyevsemodemodetag/vacation.md)
+- [MTREnergyEVSEModeModeTag.V2X](./mtrenergyevsemodemodetag/v2x.md)
+- [MTREnergyEVSEModeModeTag.auto](./mtrenergyevsemodemodetag/auto.md)
+- [MTREnergyEVSEModeModeTag.day](./mtrenergyevsemodemodetag/day.md)
+- [MTREnergyEVSEModeModeTag.lowEnergy](./mtrenergyevsemodemodetag/lowenergy.md)
+- [MTREnergyEVSEModeModeTag.lowNoise](./mtrenergyevsemodemodetag/lownoise.md)
+- [MTREnergyEVSEModeModeTag.manual](./mtrenergyevsemodemodetag/manual.md)
+- [MTREnergyEVSEModeModeTag.max](./mtrenergyevsemodemodetag/max.md)
+- [MTREnergyEVSEModeModeTag.min](./mtrenergyevsemodemodetag/min.md)
+- [MTREnergyEVSEModeModeTag.night](./mtrenergyevsemodemodetag/night.md)
+- [MTREnergyEVSEModeModeTag.quick](./mtrenergyevsemodemodetag/quick.md)
+- [MTREnergyEVSEModeModeTag.quiet](./mtrenergyevsemodemodetag/quiet.md)
+- [MTREnergyEVSEModeModeTag.solarCharging](./mtrenergyevsemodemodetag/solarcharging.md)
+- [MTREnergyEVSEModeModeTag.timeOfUse](./mtrenergyevsemodemodetag/timeofuse.md)
+- [MTREnergyEVSEModeModeTag.vacation](./mtrenergyevsemodemodetag/vacation.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrenergyevsemodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrenergyevsemodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

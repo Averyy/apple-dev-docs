@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture view’s delegate object.
 
@@ -14,13 +15,18 @@ The capture view’s delegate object.
 weak var delegate: (any AVCaptureViewDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<AVCaptureViewDelegate> delegate;
+```
+
 #### Discussion
 
 The capture view disables the start recording button if you don’t provide a delegate object.
 
 ## See Also
 
-- [protocol AVCaptureViewDelegate](avcaptureviewdelegate.md)
+### Configuring the delegate
+- [protocol AVCaptureViewDelegate](../avcaptureviewdelegate.md)
   The protocol that defines the methods you can implement to respond to capture view events.
 
 

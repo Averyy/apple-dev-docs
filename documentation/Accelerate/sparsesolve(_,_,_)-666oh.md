@@ -1,7 +1,8 @@
 # SparseSolve(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solves the system *Ax = b* using the supplied single-precision factorization of *A*.
 
@@ -20,11 +21,15 @@ Solves the system *Ax = b* using the supplied single-precision factorization of 
 func SparseSolve(_ Factored: SparseOpaqueFactorization_Float, _ b: DenseVector_Float, _ x: DenseVector_Float)
 ```
 
+```c
+static void SparseSolve(SparseOpaqueFactorization_Float Factored, DenseVector_Float b, DenseVector_Float x);
+```
+
 #### Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. The following figure shows a system of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703894@2x.png)
+![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703894@2x.png)
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 
@@ -120,7 +125,7 @@ If the factorization is *A = QR*, the function returns the solution of minimum n
 
 If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
+If the factorization is [`SparseFactorizationCholeskyAtA`](./sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
@@ -130,7 +135,8 @@ If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationch
 
 ## See Also
 
-- [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double, DenseVector_Double)](sparsesolve(_:_:_:)-416bj.md)
+### Out-of-place direct solving functions
+- [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double, DenseVector_Double)](./sparsesolve%28_,_,_%29-416bj.md)
   Solves the system *Ax = b* using the supplied double-precision factorization of *A*.
 
 

@@ -1,7 +1,8 @@
 # init(recordType:predicate:subscriptionID:options:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named query-based subscription that queries records of a specific type.
 
@@ -11,7 +12,7 @@ Creates a named query-based subscription that queries records of a specific type
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -27,13 +28,14 @@ The subscription that this method returns is a query-based subscription with a s
 ## Parameters
 
 - `recordType`: The record’s type. You’re responsible for defining your app’s record types.
-- `predicate`: The predicate that identifies the records for inclusion in the subscription. For information about the operators that predicates support, see the discussion in [`CKQuery`](ckquery.md).
+- `predicate`: The predicate that identifies the records for inclusion in the subscription. For information about the operators that predicates support, see the discussion in [`CKQuery`](../ckquery.md).
 - `subscriptionID`: The subscription’s name. You must specify a value that is unique in the target database, you should not specify an empty string.
-- `querySubscriptionOptions`: A bitmask of configuration options. See [`CKQuerySubscription.Options`](ckquerysubscription/options.md) for more information.
+- `querySubscriptionOptions`: A bitmask of configuration options. See [`CKQuerySubscription.Options`](./options.md) for more information.
 
 ## See Also
 
-- [init(coder: NSCoder)](ckquerysubscription/init(coder:).md)
+### Creating a Subscription
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a query-based subscription from a serialized instance.
 
 

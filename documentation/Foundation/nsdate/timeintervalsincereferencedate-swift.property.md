@@ -1,7 +1,8 @@
 # timeIntervalSinceReferenceDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interval between the date object and 00:00:00 UTC on 1 January 2001.
 
@@ -20,21 +21,26 @@ The interval between the date object and 00:00:00 UTC on 1 January 2001.
 var timeIntervalSinceReferenceDate: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval timeIntervalSinceReferenceDate;
+```
+
 #### Discussion
 
 This property’s value is negative if the date object is earlier than the system’s absolute reference date (00:00:00 UTC on 1 January 2001).
 
 ## See Also
 
-- [func timeIntervalSince(Date) -> TimeInterval](nsdate/timeintervalsince(_:).md)
+### Getting Time Intervals
+- [func timeIntervalSince(Date) -> TimeInterval](./timeintervalsince%28_%29.md)
   Returns the interval between the receiver and another given date.
-- [var timeIntervalSinceNow: TimeInterval](nsdate/timeintervalsincenow.md)
+- [var timeIntervalSinceNow: TimeInterval](./timeintervalsincenow.md)
   The interval between the date object and the current date and time.
-- [var timeIntervalSince1970: TimeInterval](nsdate/timeintervalsince1970.md)
+- [var timeIntervalSince1970: TimeInterval](./timeintervalsince1970.md)
   The interval between the date object and 00:00:00 UTC on 1 January 1970.
-- [class var timeIntervalSinceReferenceDate: TimeInterval](nsdate/timeintervalsincereferencedate-swift.type.property.md)
+- [class var timeIntervalSinceReferenceDate: TimeInterval](./timeintervalsincereferencedate-swift.type.property.md)
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
-- [var NSTimeIntervalSince1970: Double](nstimeintervalsince1970.md)
+- [var NSTimeIntervalSince1970: Double](../nstimeintervalsince1970.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
 
 

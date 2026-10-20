@@ -1,10 +1,11 @@
 # kAUNetStatus_Connecting
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kAUNetStatus_Connecting: Int { get }
 ```
 
+```c
+kAUNetStatus_Connecting
+```
+
 ## See Also
 
-- [var kAUNetStatus_Connected: Int](kaunetstatus_connected.md)
-- [var kAUNetStatus_Listening: Int](kaunetstatus_listening.md)
-- [var kAUNetStatus_NotConnected: Int](kaunetstatus_notconnected.md)
-- [var kAUNetStatus_Overflow: Int](kaunetstatus_overflow.md)
-- [var kAUNetStatus_Underflow: Int](kaunetstatus_underflow.md)
+### Constants
+- [var kAUNetStatus_Connected: Int](./kaunetstatus_connected.md)
+- [var kAUNetStatus_Listening: Int](./kaunetstatus_listening.md)
+- [var kAUNetStatus_NotConnected: Int](./kaunetstatus_notconnected.md)
+- [var kAUNetStatus_Overflow: Int](./kaunetstatus_overflow.md)
+- [var kAUNetStatus_Underflow: Int](./kaunetstatus_underflow.md)
 
 
 ---

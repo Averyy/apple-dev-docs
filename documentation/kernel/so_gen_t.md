@@ -1,14 +1,15 @@
 # so_gen_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef u_quad_t so_gen_t;
 ```
 

@@ -1,7 +1,8 @@
 # init(sampleType:predicate:updateHandler:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates and returns a query that monitors the HealthKit store and responds to changes.
 
@@ -19,9 +20,13 @@ Instantiates and returns a query that monitors the HealthKit store and responds 
 init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: @escaping @Sendable (HKObserverQuery, @escaping HKObserverQueryCompletionHandler, (any Error)?) -> Void)
 ```
 
+```objc
+- (instancetype) initWithSampleType:(HKSampleType *) sampleType predicate:(NSPredicate *) predicate updateHandler:(void (^)(HKObserverQuery *query, HKObserverQueryCompletionHandler completionHandler, NSError *error)) updateHandler;
+```
+
 ## Mentions
 
-- [Executing Observer Queries](executing-observer-queries.md)
+- [Executing Observer Queries](../executing-observer-queries.md)
 
 #### Return Value
 
@@ -29,25 +34,28 @@ A newly initialized observer query object.
 
 #### Discussion
 
-After instantiating the query, call the [`HKHealthStore`](hkhealthstore.md) class’s [`execute(_:)`](hkhealthstore/execute(_:).md) method to run this query. Observer queries are long-running tasks. They continue to run on an anonymous background thread and call their results handler whenever they detects relevant changes to the HealthKit store. To stop a query, call the [`HKHealthStore`](hkhealthstore.md) class’s [`stop(_:)`](hkhealthstore/stop(_:).md) method.
+After instantiating the query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run this query. Observer queries are long-running tasks. They continue to run on an anonymous background thread and call their results handler whenever they detects relevant changes to the HealthKit store. To stop a query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`stop(_:)`](../hkhealthstore/stop%28_%29.md) method.
 
-The provided update handler block is called every time samples matching this query are saved to or deleted from the HealthKit store. You often need to launch other queries from inside this block to get the updated data. In particular, you can use Anchored Object Queries to retrieve the list of new samples that have been added to the store. For more information, see [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md)
+The provided update handler block is called every time samples matching this query are saved to or deleted from the HealthKit store. You often need to launch other queries from inside this block to get the updated data. In particular, you can use Anchored Object Queries to retrieve the list of new samples that have been added to the store. For more information, see [`HKAnchoredObjectQuery`](../hkanchoredobjectquery.md)
 
 ## Parameters
 
-- `sampleType`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the [`HKSampleType`](hksampletype.md) class (the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md),  and [`HKCorrelationType`](hkcorrelationtype.md) classes)
+- `sampleType`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the [`HKSampleType`](../hksampletype.md) class (the [`HKQuantityType`](../hkquantitytype.md), [`HKCategoryType`](../hkcategorytype.md), [`HKWorkoutType`](../hkworkouttype.md),  and [`HKCorrelationType`](../hkcorrelationtype.md) classes)
 - `predicate`: A predicate that limits the samples matched by the query. Pass `nil` if you want to receive updates for every new sample of the specified type.
-- `updateHandler`: A block that is called when a matching sample is saved to or deleted from the HealthKit store. This block takes the following parameters: - **query**: A reference to the query calling this block.
-- **completionHandler**: If you have registered for background updates, you must call this completion handler as soon as you are done processing the incoming data. This tells HealthKit that you have successfully received the background update. Additionally, you should only call the completion handler when you are using background updates. For more information on using this completion handler, see [`HKObserverQueryCompletionHandler`](hkobserverquerycompletionhandler.md).
-- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
+- `updateHandler`: A block that is called when a matching sample is saved to or deleted from the HealthKit store. This block takes the following parameters:
+
+  - **query**: A reference to the query calling this block.
+  - **completionHandler**: If you have registered for background updates, you must call this completion handler as soon as you are done processing the incoming data. This tells HealthKit that you have successfully received the background update. Additionally, you should only call the completion handler when you are using background updates. For more information on using this completion handler, see [`HKObserverQueryCompletionHandler`](../hkobserverquerycompletionhandler.md).
+  - **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 
-- [Executing Observer Queries](executing-observer-queries.md)
+### Creating Observer Queries
+- [Executing Observer Queries](../executing-observer-queries.md)
   Create and run observer queries.
-- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(querydescriptors:updatehandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./init%28querydescriptors,updatehandler%29.md)
   Creates a query that monitors the HealthKit store and responds to any changes matching any of the query descriptors you provided.
-- [typealias HKObserverQueryCompletionHandler](hkobserverquerycompletionhandler.md)
+- [typealias HKObserverQueryCompletionHandler](../hkobserverquerycompletionhandler.md)
   The completion handler for background deliveries.
 
 

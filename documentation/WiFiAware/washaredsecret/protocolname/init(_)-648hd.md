@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom protocol with the provided unique string.
 
@@ -18,7 +19,7 @@ init?(_ data: Data)
 
 #### Return Value
 
-A new [`WASharedSecret.ProtocolName`](washaredsecret/protocolname.md), or `nil` if the provided data was too short.
+A new [`WASharedSecret.ProtocolName`](../protocolname.md), or `nil` if the provided data was too short.
 
 #### Discussion
 

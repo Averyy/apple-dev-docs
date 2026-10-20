@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array that describes the mesh to render.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ An array that describes the mesh to render.
 var mesh: [Any] { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSArray * mesh;
+```
+
 #### Discussion
 
-Specify the mesh as an array of line segments. Each line segment is stored as a [`CIVector`](civector.md) instance that describes the line as a start point and an end point.
+Specify the mesh as an array of line segments. Each line segment is stored as a [`CIVector`](../civector.md) instance that describes the line as a start point and an end point.
 
 ## See Also
 
-- [var color: CIColor](cimeshgenerator/color.md)
+### Instance Properties
+- [var color: CIColor](./color.md)
   The color of the rendered mesh.
-- [var width: Float](cimeshgenerator/width.md)
+- [var width: Float](./width.md)
   The width of the effect.
 
 

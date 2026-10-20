@@ -1,7 +1,8 @@
 # angularVelocity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The angular velocity of each rigid body.
 

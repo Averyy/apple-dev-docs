@@ -1,7 +1,8 @@
 # FilterCondition
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single filter condition used in a recommendation query request to narrow results.
 
@@ -10,7 +11,7 @@ A single filter condition used in a recommendation query request to narrow resul
 
 ## Declaration
 
-```swift
+```
 object RecommendationFilterCondition
 ```
 
@@ -53,27 +54,29 @@ Always pass `value` as an array.
 ## Properties
 
 - `field` (string) *(required)*: The name of the field to filter on. Must match a field name on the recommendation object being queried, for example `state`, `promotedObjectId`, `campaignId`.
-- `operator` (RecommendationFilterOperator) *(required)*: The comparison operator to apply. See [`FilterOperator`](recommendationfilteroperator.md).
+- `operator` (RecommendationFilterOperator) *(required)*: The comparison operator to apply. See [`FilterOperator`](./recommendationfilteroperator.md).
 - `value` ([string]) *(required)*: An array of one or more filter values. Always supplied as an array, even when filtering with a single value, for example `value: [AVAILABLE]`.
 - `ignoreCase` (boolean): When `true`, string matching is case-insensitive. Defaults to `false`.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object RecommendationQueryRequest](recommendationqueryrequest.md)
+- [object RecommendationQueryRequest](./recommendationqueryrequest.md)
   The structured request body for all recommendation query endpoints.
-- [object RecommendationQueryRequestPagination](recommendationqueryrequestpagination.md)
+- [object RecommendationQueryRequestPagination](./recommendationqueryrequestpagination.md)
   Pagination parameters for a recommendation query request.
-- [object RecommendationSorting](recommendationsorting.md)
+- [object RecommendationSorting](./recommendationsorting.md)
   A sort specification used in a recommendation query request to order results.
-- [type RecommendationSortingOrder](recommendationsortingorder.md)
+- [type RecommendationSortingOrder](./recommendationsortingorder.md)
   The sort direction used in a recommendation sorting specification.
-- [type RecommendationFilterOperator](recommendationfilteroperator.md)
+- [type RecommendationFilterOperator](./recommendationfilteroperator.md)
   The comparison operator applied in a recommendation filter condition.
-- [type RecommendationState](recommendationstate.md)
+- [type RecommendationState](./recommendationstate.md)
   The lifecycle state of a recommendation, indicating whether it’s available to act on or has already been accepted or rejected.
-- [type RecommendationStatus](recommendationstatus.md)
+- [type RecommendationStatus](./recommendationstatus.md)
   The operational status of a recommendation record, independent of its lifecycle state.
-- [type RecommendationCategory](recommendationcategory.md)
+- [type RecommendationCategory](./recommendationcategory.md)
   Enumeration that categorizes a recommendation by optimization area and origin.
 
 

@@ -1,17 +1,18 @@
 # scaleY
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical scale factor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The vertical scale factor.
 var scaleY: Double
 ```
 
+```c
+double scaleY;
+```
+
 ## See Also
 
-- [var scaleX: Double](mpsscaletransform/scalex.md)
+### Fields
+- [var scaleX: Double](./scalex.md)
   The horizontal scale factor.
-- [var translateX: Double](mpsscaletransform/translatex.md)
+- [var translateX: Double](./translatex.md)
   The horizontal translation factor.
-- [var translateY: Double](mpsscaletransform/translatey.md)
+- [var translateY: Double](./translatey.md)
   The vertical translation factor.
 
 

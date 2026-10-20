@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a default-initialized transformer suitable for incremental fitting.
@@ -23,9 +24,10 @@ func makeTransformer() -> Self.Transformer
 
 ## See Also
 
-- [func update<InputSequence>(inout Self.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](updatableestimator/update(_:with:eventhandler:).md)
+### Transforming
+- [func update<InputSequence>(inout Self.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
-- [func update<InputSequence>(inout Self.Transformer, with: InputSequence) async throws](updatableestimator/update(_:with:).md)
+- [func update<InputSequence>(inout Self.Transformer, with: InputSequence) async throws](./update%28_,with%29.md)
 
 
 ---

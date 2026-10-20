@@ -1,7 +1,8 @@
 # seek(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the playback position to the specified time.
 

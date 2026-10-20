@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the priority for a new input/output command queue.
 
@@ -19,13 +20,18 @@ Configures the priority for a new input/output command queue.
 var priority: MTLIOPriority { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLIOPriority priority;
+```
+
 ## See Also
 
-- [var type: MTLIOCommandQueueType](mtliocommandqueuedescriptor/type.md)
+### Configuring the input/output command queue
+- [var type: MTLIOCommandQueueType](./type.md)
   Configures the queue type for a new input/output command queue.
-- [var maxCommandsInFlight: Int](mtliocommandqueuedescriptor/maxcommandsinflight.md)
+- [var maxCommandsInFlight: Int](./maxcommandsinflight.md)
   Sets the largest number of individual commands that an input/output command queue can run at a time.
-- [var maxCommandBufferCount: Int](mtliocommandqueuedescriptor/maxcommandbuffercount.md)
+- [var maxCommandBufferCount: Int](./maxcommandbuffercount.md)
   Sets the largest number of outstanding input/output command buffers a queue can have at any point in time.
 
 

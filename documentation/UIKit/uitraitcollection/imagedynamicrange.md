@@ -1,7 +1,8 @@
 # imageDynamicRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The imageDynamicRange determines how HDR images will render in the given trait environment. SDR images are unaffected.
 
@@ -16,6 +17,10 @@ The imageDynamicRange determines how HDR images will render in the given trait e
 
 ```swift
 var imageDynamicRange: UIImage.DynamicRange { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIImageDynamicRange imageDynamicRange;
 ```
 
 

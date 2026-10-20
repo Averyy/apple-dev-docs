@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier for the target item.
@@ -19,15 +20,20 @@ The unique identifier for the target item.
 var targetItemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderItemIdentifier targetItemIdentifier;
+```
+
 ## See Also
 
-- [var sourceItemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestingdeletion/sourceitemidentifier.md)
+### Accessing the Operation’s Data
+- [var sourceItemIdentifier: NSFileProviderItemIdentifier](./sourceitemidentifier.md)
   The unique identifier for the source item.
-- [var targetSide: NSFileProviderTestingOperationSide](nsfileprovidertestingdeletion/targetside.md)
+- [var targetSide: NSFileProviderTestingOperationSide](./targetside.md)
   The target location for the delete operation.
-- [var targetItemBaseVersion: NSFileProviderItemVersion](nsfileprovidertestingdeletion/targetitembaseversion.md)
+- [var targetItemBaseVersion: NSFileProviderItemVersion](./targetitembaseversion.md)
   The version of the deleted item.
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileprovidertestingdeletion/domainversion.md)
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The domain’s version when the source location deleted the item.
 
 

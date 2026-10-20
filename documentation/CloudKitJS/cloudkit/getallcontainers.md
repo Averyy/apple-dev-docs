@@ -1,7 +1,8 @@
 # getAllContainers
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all the containers that were configured.
 
@@ -10,7 +11,7 @@ Returns all the containers that were configured.
 
 ## Declaration
 
-```swift
+```
 CloudKit.Container[] getAllContainers();
 ```
 
@@ -20,11 +21,13 @@ All the configured containers.
 
 ## See Also
 
-- [configure](cloudkit/configure.md)
+### Related Documentation
+- [configure](./configure.md)
   Configures CloudKit JS.
-- [getDefaultContainer](cloudkit/getdefaultcontainer.md)
+### Accessing Containers
+- [getDefaultContainer](./getdefaultcontainer.md)
   Returns the default container.
-- [getContainer](cloudkit/getcontainer.md)
+- [getContainer](./getcontainer.md)
   Returns the container with the specified container ID.
 
 

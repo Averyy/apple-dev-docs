@@ -1,7 +1,8 @@
 # ReadyStates
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 A static property that allows you to access the Look Around ready state.
 
@@ -10,13 +11,13 @@ A static property that allows you to access the Look Around ready state.
 
 ## Declaration
 
-```swift
+```
 static ReadyStates: typeof LookAroundReadyState;
 ```
 
 #### Discussion
 
-Use this object to access the [`LookAroundReadyState`](lookaroundreadystate.md) enumeration with `mapkit.LookAround.ReadyStates`.
+Use this object to access the [`LookAroundReadyState`](../lookaroundreadystate.md) enumeration with `mapkit.LookAround.ReadyStates`.
 
 
 ---

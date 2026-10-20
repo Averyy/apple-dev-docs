@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: ContactProvider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the extension terminate.
 
@@ -17,7 +18,7 @@ func invalidate() async throws
 
 #### Discussion
 
-This calls [`invalidate()`](contactproviderextension/invalidate().md) on the extension.
+This calls [`invalidate()`](../contactproviderextension/invalidate%28%29.md) on the extension.
 
 
 ---

@@ -1,7 +1,8 @@
 # invalidArchive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the archive file is invalid or corrupt.
 

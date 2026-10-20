@@ -1,7 +1,8 @@
 # quaternaryLabelColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The quaternary color to use for text labels and separators.
 
@@ -14,17 +15,22 @@ The quaternary color to use for text labels and separators.
 class var quaternaryLabelColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * quaternaryLabelColor;
+```
+
 #### Discussion
 
 Use this color for the least important text in your interface and for separators between text items. For example, you would use this color for secondary text that is disabled. You can also use it for other types of quaternary app content.
 
 ## See Also
 
-- [class var labelColor: NSColor](nscolor/labelcolor.md)
+### Label colors
+- [class var labelColor: NSColor](./labelcolor.md)
   The primary color to use for text labels.
-- [class var secondaryLabelColor: NSColor](nscolor/secondarylabelcolor.md)
+- [class var secondaryLabelColor: NSColor](./secondarylabelcolor.md)
   The secondary color to use for text labels.
-- [class var tertiaryLabelColor: NSColor](nscolor/tertiarylabelcolor.md)
+- [class var tertiaryLabelColor: NSColor](./tertiarylabelcolor.md)
   The tertiary color to use for text labels.
 
 

@@ -1,7 +1,8 @@
 # center
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center pixel of the radial distortion mapping.
 

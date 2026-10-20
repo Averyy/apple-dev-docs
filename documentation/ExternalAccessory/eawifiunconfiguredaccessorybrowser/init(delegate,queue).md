@@ -1,7 +1,8 @@
 # init(delegate:queue:)
 
 **Framework**: External Accessory  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a browser object that scans for unconfigured accessories.
 
@@ -15,6 +16,10 @@ Creates a browser object that scans for unconfigured accessories.
 
 ```swift
 init(delegate: (any EAWiFiUnconfiguredAccessoryBrowserDelegate)?, queue: dispatch_queue_t?)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<EAWiFiUnconfiguredAccessoryBrowserDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
 #### Return Value

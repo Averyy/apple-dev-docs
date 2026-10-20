@@ -1,15 +1,20 @@
 # dcr_timer
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var dcr_timer: UInt32
+```
+
+```c
+uint32_t dcr_timer;
 ```
 
 

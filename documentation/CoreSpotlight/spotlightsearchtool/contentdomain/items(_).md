@@ -1,7 +1,8 @@
 # items(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Any items with title, text, and dates with custom attribute mapping.
 
@@ -20,9 +21,10 @@ static func items(_ config: SpotlightSearchTool.ContentDomain.Items) -> Spotligh
 
 ## See Also
 
-- [static var items: SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/items-swift.type.property.md)
+### Getting the items domain
+- [static var items: SpotlightSearchTool.ContentDomain](./items-swift.type.property.md)
   Any items with title, text, and dates.
-- [SpotlightSearchTool.ContentDomain.Items](spotlightsearchtool/contentdomain/items-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.Items](./items-swift.struct.md)
   Attribute mapping for the items domain.
 
 

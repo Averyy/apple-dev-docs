@@ -1,7 +1,8 @@
 # dropFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence containing all but the given number of initial elements.
 
@@ -36,7 +37,7 @@ print(numbers.dropFirst(10))
 // Prints "[]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop from the beginning of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop from the beginning of the collection.
 
 ## Parameters
 

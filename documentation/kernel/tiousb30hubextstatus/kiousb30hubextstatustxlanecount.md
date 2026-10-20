@@ -1,7 +1,8 @@
 # kIOUSB30HubExtStatusTxLaneCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The transmit lane count.
 
@@ -10,7 +11,7 @@ The transmit lane count.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubExtStatusTxLaneCount = IOUSBBitRange(12, 15)
 ```
 

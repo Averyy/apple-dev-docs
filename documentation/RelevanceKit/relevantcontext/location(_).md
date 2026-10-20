@@ -1,7 +1,8 @@
 # location(_:)
 
 **Framework**: RelevanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells the system a widget is relevant at a specific location.
 
@@ -25,9 +26,9 @@ A contextual clue that the system uses to determine the relevance of a widget in
 
 #### Discussion
 
-To indicate relevance at a specific location, request a person’s permission to access their location with the When in Use or Always access level. For more information on creating a widget that can access location information, refer to [`Accessing location information in widgets`](https://developer.apple.com/documentation/widgetkit/accessing-location-information-in-widgets).
+To indicate relevance at a specific location, request a person’s permission to access their location with the When in Use or Always access level. For more information on creating a widget that can access location information, refer to [Accessing location information in widgets](../../WidgetKit/accessing-location-information-in-widgets.md).
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](../../WidgetKit/widget-suggestions-in-smart-stacks.md).
 
 ## Parameters
 
@@ -35,9 +36,10 @@ To indicate relevance at a specific location, request a person’s permission to
 
 ## See Also
 
-- [static func location(inferred: RelevantContext.InferredLocation) -> RelevantContext](relevantcontext/location(inferred:).md)
+### Location clues
+- [static func location(inferred: RelevantContext.InferredLocation) -> RelevantContext](./location%28inferred%29.md)
   Tells the system a widget is relevant at a person’s inferred location.
-- [RelevantContext.InferredLocation](relevantcontext/inferredlocation.md)
+- [RelevantContext.InferredLocation](./inferredlocation.md)
   A structure with values for a person’s inferred home, work, school, and commute locations.
 
 

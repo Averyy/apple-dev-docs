@@ -1,7 +1,8 @@
 # SCStreamConfiguration.Preset.captureHDRScreenshotLocalDisplay
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 case captureHDRScreenshotLocalDisplay
+```
+
+```c
+SCStreamConfigurationPresetCaptureHDRScreenshotLocalDisplay
 ```
 
 

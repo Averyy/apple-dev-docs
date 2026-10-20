@@ -1,14 +1,15 @@
 # kas
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 nicproxy_keep_alive_info_t kas;
 ```
 

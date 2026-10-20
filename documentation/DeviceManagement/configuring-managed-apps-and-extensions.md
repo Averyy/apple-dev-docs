@@ -1,16 +1,17 @@
 # Configuring managed apps and extensions
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Provide managed apps and extensions with app configuration and secrets.
 
 #### Overview
 
-Device management services can configure managed apps and their extensions with declarative app configuration, which can consist of configuration data and secrets. With this feature, organizations can customize managed apps and extensions for their users. Managed apps and extensions use the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework to access declarative app configurations.
+Device management services can configure managed apps and their extensions with declarative app configuration, which can consist of configuration data and secrets. With this feature, organizations can customize managed apps and extensions for their users. Managed apps and extensions use the [ManagedApp](../ManagedApp/ManagedApp.md) framework to access declarative app configurations.
 
-#### Configure a Managed App
+#### Configure a managed app
 
-The [`AppManaged`](appmanaged.md) configuration contains a `AppConfig` key that provides the declarative app configuration for managed apps. Secrets can be passwords, identities, or certificates. The `AppConfig` key specifies the declarative app configuration as a set of declarative management assets. This key is an object with the following keys:
+The [`AppManaged`](./appmanaged.md) configuration contains a `AppConfig` key that provides the declarative app configuration for managed apps. Secrets can be passwords, identities, or certificates. The `AppConfig` key specifies the declarative app configuration as a set of declarative management assets. This key is an object with the following keys:
 
 | Key | Type | Description |
 | --- | --- | --- |
@@ -19,50 +20,51 @@ The [`AppManaged`](appmanaged.md) configuration contains a `AppConfig` key that 
 | `Identities` | Array | (Optional) An array of objects representing identity data |
 | `Certificates` | Array | (Optional) An array of objects representing certificate data |
 
-The device verifies the code signature of an app that requests declarative app configuration from the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework and ensures it matches the code signature of the installed managed app. The device provides declarative app configuration only to apps with verified code signatures.
+The device verifies the code signature of an app that requests declarative app configuration from the [ManagedApp](../ManagedApp/ManagedApp.md) framework and ensures it matches the code signature of the installed managed app. The device provides declarative app configuration only to apps with verified code signatures.
 
-#### Define the Asset to Provide Configuration Data
+#### Define the asset to provide configuration data
 
-The `DataAssetReference` key in the [`AppManagedAppConfigDictionaryObject`](appmanagedappconfigdictionaryobject.md) object references an asset declaration that provides property list data. The asset declaration needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with its `ContentType` key set to the appropriate type. Ensure the asset data is no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
+The `DataAssetReference` key in the [`AppManagedAppConfigDictionaryObject`](./appmanagedappconfigdictionaryobject.md) object references an asset declaration that provides property list data. The asset declaration needs to be of type [com.apple.asset.data](https://developer.apple.com``/DeviceManagement/AssetData``) with its `ContentType` key set to the appropriate type. Ensure the asset data is no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
 
-#### Define the Assets to Provide Data for Secrets
+#### Define the assets to provide data for secrets
 
-The `Passwords`, `Identities`, and `Certificates` keys in the [`AppManagedAppConfigDictionaryObject`](appmanagedappconfigdictionaryobject.md) object are arrays of [`AppManagedCredentialConfigObject`](appmanagedcredentialconfigobject.md) objects, each containing the following keys:
+The `Passwords`, `Identities`, and `Certificates` keys in the [`AppManagedAppConfigDictionaryObject`](./appmanagedappconfigdictionaryobject.md) object are arrays of [`AppManagedCredentialConfigObject`](./appmanagedcredentialconfigobject.md) objects, each containing the following keys:
 
 | Key | Type | Description |
 | --- | --- | --- |
 | `Identifier` | String | (Required) The identifier the managed app uses to fetch the secret |
 | `AssetReference` | String | (Required) The identifier of the asset declaration that contains a reference to the data for the secret |
 
-The `Identifier` key contains a unique identifier for the secret that the managed app fetches using the APIs that the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework defines. The managed app’s developer specifies the allowed identifiers and how the app uses the secrets.
+The `Identifier` key contains a unique identifier for the secret that the managed app fetches using the APIs that the [ManagedApp](../ManagedApp/ManagedApp.md) framework defines. The managed app’s developer specifies the allowed identifiers and how the app uses the secrets.
 
 The `AssetReference` key references an asset declaration that provides the data for the secret. The parent object’s key determines the allowed asset types:
 
 | Key | Allowed asset types |
 | --- | --- |
-| `Passwords` | [`com.apple.asset.credential.userpassword`](https://developer.apple.com``/DeviceManagement/AssetCredentialUserNameAndPassword``) |
-| `Identities` | [`com.apple.asset.credential.identity`](https://developer.apple.com``/DeviceManagement/AssetCredentialIdentity``), [`com.apple.asset.credential.scep`](https://developer.apple.com``/DeviceManagement/AssetCredentialSCEP``), [`com.apple.asset.credential.acme`](https://developer.apple.com``/DeviceManagement/AssetCredentialACME``) |
-| `Certificates` | [`com.apple.asset.credential.certificate`](https://developer.apple.com``/DeviceManagement/AssetCredentialCertificate``) |
+| `Passwords` | [com.apple.asset.credential.userpassword](https://developer.apple.com``/DeviceManagement/AssetCredentialUserNameAndPassword``) |
+| `Identities` | [com.apple.asset.credential.identity](https://developer.apple.com``/DeviceManagement/AssetCredentialIdentity``), [com.apple.asset.credential.scep](https://developer.apple.com``/DeviceManagement/AssetCredentialSCEP``), [com.apple.asset.credential.acme](https://developer.apple.com``/DeviceManagement/AssetCredentialACME``) |
+| `Certificates` | [com.apple.asset.credential.certificate](https://developer.apple.com``/DeviceManagement/AssetCredentialCertificate``) |
 
-#### Configure a Managed Apps Extensions
+#### Configure a managed app’s extensions
 
-The device can also provide declarative app configuration for the managed app’s extensions. The `ExtensionConfigs` key specifies a dictionary whose keys are the composed identifiers of extensions, and whose values are objects that are the same as the [`AppManagedAppConfigDictionaryObject`](appmanagedappconfigdictionaryobject.md) object described above.
+The device can also provide declarative app configuration for the managed app’s extensions. The `ExtensionConfigs` key specifies a dictionary whose keys are the composed identifiers of extensions, and whose values are objects that are the same as the [`AppManagedAppConfigDictionaryObject`](./appmanagedappconfigdictionaryobject.md) object described above.
 
 The extension’s composed identifier contains its bundle ID and team ID. To create it, start with the bundle ID, append a space, and then add the team ID in parentheses. For example, `com.example.app.extension (ABCDE12345)` is an extension with a bundle ID of `com.example.app.extension` and a team ID of `ABCDE12345`.
 
-The device verifies the code signature of extensions that request declarative app configuration from the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework and matches it with the composed identifier. It provides declarative app configuration only to extensions with a verified code signature. For more information on code signing, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements).
+The device verifies the code signature of extensions that request declarative app configuration from the [ManagedApp](../ManagedApp/ManagedApp.md) framework and matches it with the composed identifier. It provides declarative app configuration only to extensions with a verified code signature. For more information on code signing, see [TN3127: Inside Code Signing: Requirements](../Technotes/tn3127-inside-code-signing-requirements.md).
 
-#### Configure a Managed App with a Legacy App Configuration
+#### Configure a managed app with a legacy app configuration
 
-For backward compatibility, the device supports configuring managed apps with legacy app configuration data to allow the apps to use the MDMv1 `UserDefaults`-based mechanism for reading configuration. This option allows device management services to configure a declarative managed app that uses legacy app configuration data, while waiting for the app developer to add support for the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework.
+For backward compatibility, the device supports configuring managed apps with legacy app configuration data to allow the apps to use the MDMv1 `UserDefaults`-based mechanism for reading configuration. This option allows device management services to configure a declarative managed app that uses legacy app configuration data, while waiting for the app developer to add support for the [ManagedApp](../ManagedApp/ManagedApp.md) framework.
 
-The [`AppManaged`](appmanaged.md) configuration’s `LegacyAppConfigAssetReference` key references an asset declaration for the legacy app configuration property list data. The corresponding asset needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with the asset’s `ContentType` key set to the appropriate type. Ensure the asset data is no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
+The [`AppManaged`](./appmanaged.md) configuration’s `LegacyAppConfigAssetReference` key references an asset declaration for the legacy app configuration property list data. The corresponding asset needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with the asset’s `ContentType` key set to the appropriate type. Ensure the asset data is no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
 
-Declarative management supports a many-to-many relationship between configurations and assets, so you can use the same asset for the legacy app configuration data and the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework-based app config data. This option allows a single set of configurations and assets to be compatible with older and newer versions of a managed app, where the older version supports only the legacy app configuration data capability, and the newer version uses the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework. The newer version of the managed app should support both the legacy app configuration data and the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework — the framework configuration takes precedence. This allows the developer to update the app without breaking device management services that haven’t transitioned to declarative app configuration yet.
+Declarative management supports a many-to-many relationship between configurations and assets, so you can use the same asset for the legacy app configuration data and the [ManagedApp](../ManagedApp/ManagedApp.md) framework-based app config data. This option allows a single set of configurations and assets to be compatible with older and newer versions of a managed app, where the older version supports only the legacy app configuration data capability, and the newer version uses the [ManagedApp](../ManagedApp/ManagedApp.md) framework. The newer version of the managed app should support both the legacy app configuration data and the [ManagedApp](../ManagedApp/ManagedApp.md) framework — the framework configuration takes precedence. This allows the developer to update the app without breaking device management services that haven’t transitioned to declarative app configuration yet.
 
 ## See Also
 
-- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
+### Configure managed apps
+- [Allowing and denying apps and binaries](./allowing-and-denying-apps-and-binaries.md)
   Control what apps and binaries can run on supervised Apple devices.
 
 

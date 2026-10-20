@@ -1,7 +1,8 @@
 # kVTProfileLevel_MP4V_AdvancedSimple_L4
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,19 +18,24 @@
 let kVTProfileLevel_MP4V_AdvancedSimple_L4: CFString
 ```
 
+```c
+extern CFStringRef const kVTProfileLevel_MP4V_AdvancedSimple_L4;
+```
+
 ## See Also
 
-- [let kVTProfileLevel_MP4V_Simple_L0: CFString](kvtprofilelevel_mp4v_simple_l0.md)
-- [let kVTProfileLevel_MP4V_Simple_L1: CFString](kvtprofilelevel_mp4v_simple_l1.md)
-- [let kVTProfileLevel_MP4V_Simple_L2: CFString](kvtprofilelevel_mp4v_simple_l2.md)
-- [let kVTProfileLevel_MP4V_Simple_L3: CFString](kvtprofilelevel_mp4v_simple_l3.md)
-- [let kVTProfileLevel_MP4V_AdvancedSimple_L0: CFString](kvtprofilelevel_mp4v_advancedsimple_l0.md)
-- [let kVTProfileLevel_MP4V_AdvancedSimple_L1: CFString](kvtprofilelevel_mp4v_advancedsimple_l1.md)
-- [let kVTProfileLevel_MP4V_AdvancedSimple_L2: CFString](kvtprofilelevel_mp4v_advancedsimple_l2.md)
-- [let kVTProfileLevel_MP4V_AdvancedSimple_L3: CFString](kvtprofilelevel_mp4v_advancedsimple_l3.md)
-- [let kVTProfileLevel_MP4V_Main_L2: CFString](kvtprofilelevel_mp4v_main_l2.md)
-- [let kVTProfileLevel_MP4V_Main_L3: CFString](kvtprofilelevel_mp4v_main_l3.md)
-- [let kVTProfileLevel_MP4V_Main_L4: CFString](kvtprofilelevel_mp4v_main_l4.md)
+### MP4V
+- [let kVTProfileLevel_MP4V_Simple_L0: CFString](./kvtprofilelevel_mp4v_simple_l0.md)
+- [let kVTProfileLevel_MP4V_Simple_L1: CFString](./kvtprofilelevel_mp4v_simple_l1.md)
+- [let kVTProfileLevel_MP4V_Simple_L2: CFString](./kvtprofilelevel_mp4v_simple_l2.md)
+- [let kVTProfileLevel_MP4V_Simple_L3: CFString](./kvtprofilelevel_mp4v_simple_l3.md)
+- [let kVTProfileLevel_MP4V_AdvancedSimple_L0: CFString](./kvtprofilelevel_mp4v_advancedsimple_l0.md)
+- [let kVTProfileLevel_MP4V_AdvancedSimple_L1: CFString](./kvtprofilelevel_mp4v_advancedsimple_l1.md)
+- [let kVTProfileLevel_MP4V_AdvancedSimple_L2: CFString](./kvtprofilelevel_mp4v_advancedsimple_l2.md)
+- [let kVTProfileLevel_MP4V_AdvancedSimple_L3: CFString](./kvtprofilelevel_mp4v_advancedsimple_l3.md)
+- [let kVTProfileLevel_MP4V_Main_L2: CFString](./kvtprofilelevel_mp4v_main_l2.md)
+- [let kVTProfileLevel_MP4V_Main_L3: CFString](./kvtprofilelevel_mp4v_main_l3.md)
+- [let kVTProfileLevel_MP4V_Main_L4: CFString](./kvtprofilelevel_mp4v_main_l4.md)
 
 
 ---

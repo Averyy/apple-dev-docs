@@ -1,14 +1,15 @@
 # GetProvisionStatus
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn GetProvisionStatus(UInt64 block, UInt64 nblks, UInt32 *extentsCount, IOBlockStorageProvisionDeviceExtent *extents);
 ```
 

@@ -1,7 +1,8 @@
 # prefersEphemeralWebBrowserSession
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the session should ask the browser for a private authentication session.
 
@@ -19,19 +20,23 @@ A Boolean value that indicates whether the session should ask the browser for a 
 var prefersEphemeralWebBrowserSession: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL prefersEphemeralWebBrowserSession;
+```
+
 ## Mentions
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
 #### Discussion
 
-Set [`prefersEphemeralWebBrowserSession`](aswebauthenticationsession/prefersephemeralwebbrowsersession.md) to `true` to request that the browser doesn’t share cookies or other browsing data between the authentication session and the user’s normal browser session.
+Set [`prefersEphemeralWebBrowserSession`](./prefersephemeralwebbrowsersession.md) to `true` to request that the browser doesn’t share cookies or other browsing data between the authentication session and the user’s normal browser session.
 
 Safari always respects the request. In macOS, someone can choose a different default browser that might or might not respect the request.
 
 The value of this property is `false` by default.
 
-Set this property before you call [`start()`](aswebauthenticationsession/start().md). Otherwise it has no effect.
+Set this property before you call [`start()`](./start%28%29.md). Otherwise it has no effect.
 
 
 ---

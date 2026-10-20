@@ -1,7 +1,8 @@
 # environment(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the environment value of the specified key path to the given value.
 
@@ -27,7 +28,7 @@ A view that has the given value set in its environment.
 
 #### Discussion
 
-Use this modifier to set one of the writable properties of the [`EnvironmentValues`](environmentvalues.md) structure, including custom values that you create. For example, you can create a custom environment key `styleOverrides` to set a value that represents style settings that for the entire app:
+Use this modifier to set one of the writable properties of the [`EnvironmentValues`](../environmentvalues.md) structure, including custom values that you create. For example, you can create a custom environment key `styleOverrides` to set a value that represents style settings that for the entire app:
 
 ```swift
 WindowGroup {
@@ -36,7 +37,7 @@ WindowGroup {
 .environment(\.styleOverrides, StyleOverrides())
 ```
 
-You then read the value inside `ContentView` or one of its descendants using the [`Environment`](environment.md) property wrapper:
+You then read the value inside `ContentView` or one of its descendants using the [`Environment`](../environment.md) property wrapper:
 
 ```swift
 struct MyView: View {
@@ -50,14 +51,15 @@ This modifier affects the given scene, as well as that scene’s descendant view
 
 ## Parameters
 
-- `keyPath`: A key path that indicates the property of the [`EnvironmentValues`](environmentvalues.md) structure to update.
+- `keyPath`: A key path that indicates the property of the [`EnvironmentValues`](../environmentvalues.md) structure to update.
 - `value`: The new value to set for the item specified by `keyPath`.
 
 ## See Also
 
-- [func environment<T>(T?) -> some Scene](scene/environment(_:).md)
+### Modifying the environment of a scene
+- [func environment<T>(T?) -> some Scene](./environment%28_%29.md)
   Places an observable object in the scene’s environment.
-- [func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some Scene](scene/transformenvironment(_:transform:).md)
+- [func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some Scene](./transformenvironment%28_,transform%29.md)
   Transforms the environment value of the specified key path with the given function.
 
 

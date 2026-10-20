@@ -1,14 +1,15 @@
 # kHIDUsage_BS_Charging
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BS_Charging = 0x44
 ```
 

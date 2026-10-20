@@ -1,14 +1,15 @@
 # kESCSeven16Inch
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kESCSeven16Inch = 0x2D
 ```
 

@@ -1,7 +1,8 @@
 # AVExternalStorageDeviceDiscoverySession
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Informs your app when the external storage devices connect to and disconnect from the system.
 
@@ -18,45 +19,50 @@ Informs your app when the external storage devices connect to and disconnect fro
 class AVExternalStorageDeviceDiscoverySession
 ```
 
+```objc
+@interface AVExternalStorageDeviceDiscoverySession : NSObject
+```
+
 ## Topics
 
 ### Checking for session support on a device
-- [class var isSupported: Bool](avexternalstoragedevicediscoverysession/issupported.md)
+- [class var isSupported: Bool](./avexternalstoragedevicediscoverysession/issupported.md)
   A Boolean value that indicates whether the system supports external storage devices.
 ### Retrieving the shared device discovery session instance
-- [class var shared: AVExternalStorageDeviceDiscoverySession?](avexternalstoragedevicediscoverysession/shared.md)
+- [class var shared: AVExternalStorageDeviceDiscoverySession?](./avexternalstoragedevicediscoverysession/shared.md)
   The system’s singleton device discovery session instance.
 ### Monitoring for storage device updates
-- [var externalStorageDevices: [AVExternalStorageDevice]](avexternalstoragedevicediscoverysession/externalstoragedevices.md)
+- [var externalStorageDevices: [AVExternalStorageDevice]](./avexternalstoragedevicediscoverysession/externalstoragedevices.md)
   An array of external storage devices the session updates as individual devices connect or disconnect from the system.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+### Capture devices
+- [Choosing a capture device](./choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
-- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+- [Supporting device rotation in your camera app](./supporting-device-rotation-in-your-camera-app.md)
   Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
-- [class AVCaptureDevice](avcapturedevice.md)
+- [class AVCaptureDevice](./avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
-- [class AVCaptureDeviceInput](avcapturedeviceinput.md)
+- [class AVCaptureDeviceInput](./avcapturedeviceinput.md)
   An object that provides media input from a capture device to a capture session.
-- [class AVContinuityDevice](avcontinuitydevice.md)
+- [class AVContinuityDevice](./avcontinuitydevice.md)
   A class that represents a physical iOS device that’s nearby and can provide access to its cameras and microphones.
-- [class AVExternalStorageDevice](avexternalstoragedevice.md)
+- [class AVExternalStorageDevice](./avexternalstoragedevice.md)
   Represents a physical external storage device that stores media assets.
 
 

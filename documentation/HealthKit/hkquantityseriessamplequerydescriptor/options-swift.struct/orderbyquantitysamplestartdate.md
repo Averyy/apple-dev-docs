@@ -1,7 +1,8 @@
 # orderByQuantitySampleStartDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option indicating that the results are grouped by the containing quantity sample’s start date.
 
@@ -10,7 +11,7 @@ An option indicating that the results are grouped by the containing quantity sam
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,7 +22,8 @@ static let orderByQuantitySampleStartDate: HKQuantitySeriesSampleQueryDescriptor
 
 ## See Also
 
-- [static let includeSample: HKQuantitySeriesSampleQueryDescriptor.Options](hkquantityseriessamplequerydescriptor/options-swift.struct/includesample.md)
+### Setting Options
+- [static let includeSample: HKQuantitySeriesSampleQueryDescriptor.Options](./includesample.md)
   An option indicating that the results should include a reference to the quantity sample that contains the series data.
 
 

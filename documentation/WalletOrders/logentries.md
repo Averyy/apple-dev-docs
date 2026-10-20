@@ -1,7 +1,8 @@
 # LogEntries
 
 **Framework**: Wallet Orders  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An array of log messages.
 
@@ -12,7 +13,7 @@ An array of log messages.
 
 ## Declaration
 
-```swift
+```
 object LogEntries
 ```
 
@@ -22,7 +23,8 @@ object LogEntries
 
 ## See Also
 
-- [Receive log messages](receive-log-messages.md)
+### Message logs
+- [Receive log messages](./receive-log-messages.md)
   Records log messages on your server.
 
 

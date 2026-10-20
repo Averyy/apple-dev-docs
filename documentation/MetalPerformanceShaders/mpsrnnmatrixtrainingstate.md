@@ -1,7 +1,8 @@
 # MPSRNNMatrixTrainingState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that holds data from a forward pass to be used in a backward pass.
 
@@ -19,33 +20,38 @@ A class that holds data from a forward pass to be used in a backward pass.
 class MPSRNNMatrixTrainingState
 ```
 
+```objc
+@interface MPSRNNMatrixTrainingState : MPSState
+```
+
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSRNNImageInferenceLayer](mpsrnnimageinferencelayer.md)
+### Recurrent Neural Networks
+- [class MPSRNNImageInferenceLayer](./mpsrnnimageinferencelayer.md)
   A recurrent neural network layer for inference on Metal Performance Shaders images.
-- [class MPSRNNMatrixInferenceLayer](mpsrnnmatrixinferencelayer.md)
+- [class MPSRNNMatrixInferenceLayer](./mpsrnnmatrixinferencelayer.md)
   A recurrent neural network layer for inference on Metal Performance Shaders matrices.
-- [class MPSRNNSingleGateDescriptor](mpsrnnsinglegatedescriptor.md)
+- [class MPSRNNSingleGateDescriptor](./mpsrnnsinglegatedescriptor.md)
   A description of a simple recurrent block or layer.
-- [class MPSGRUDescriptor](mpsgrudescriptor.md)
+- [class MPSGRUDescriptor](./mpsgrudescriptor.md)
   A description of a gated recurrent unit block or layer.
-- [class MPSLSTMDescriptor](mpslstmdescriptor.md)
+- [class MPSLSTMDescriptor](./mpslstmdescriptor.md)
   A description of a long short-term memory block or layer.
-- [enum MPSRNNSequenceDirection](mpsrnnsequencedirection.md)
+- [enum MPSRNNSequenceDirection](./mpsrnnsequencedirection.md)
   Directions that a sequence of inputs can be processed by a recurrent neural network layer.
-- [class MPSRNNMatrixTrainingLayer](mpsrnnmatrixtraininglayer.md)
+- [class MPSRNNMatrixTrainingLayer](./mpsrnnmatrixtraininglayer.md)
   A layer for training recurrent neural networks on Metal Performance Shaders matrices.
 
 

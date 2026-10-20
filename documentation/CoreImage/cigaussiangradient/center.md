@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The center of the effect as x and y coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The center of the effect as x and y coordinates.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var color0: CIColor](cigaussiangradient/color0.md)
+### Instance Properties
+- [var color0: CIColor](./color0.md)
   The first color to use in the gradient.
-- [var color1: CIColor](cigaussiangradient/color1.md)
+- [var color1: CIColor](./color1.md)
   The second color to use in the gradient.
-- [var radius: Float](cigaussiangradient/radius.md)
+- [var radius: Float](./radius.md)
   The radius of the Gaussian distribution.
 
 

@@ -1,7 +1,8 @@
 # fileNameTooLong
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file name is too long.
 
@@ -22,7 +23,7 @@ static var fileNameTooLong: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `ENAMETOOLONG`.
 
 ## See Also
 
-- [static var tooManyRemoteLevels: Errno](errno/toomanyremotelevels.md)
+### Path Errors
+- [static var tooManyRemoteLevels: Errno](./toomanyremotelevels.md)
   Too many levels of remote in path.
-- [static var tooManySymbolicLinkLevels: Errno](errno/toomanysymboliclinklevels.md)
+- [static var tooManySymbolicLinkLevels: Errno](./toomanysymboliclinklevels.md)
   Too many levels of symbolic links.
 
 

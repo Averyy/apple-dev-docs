@@ -1,21 +1,22 @@
 # TestCEReactionsStringifier
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 interface TestCEReactionsStringifier
 ```
 
 ## Topics
 
 ### Instance Properties
-- [value](testcereactionsstringifier/2871464-value.md)
+- [value](./testcereactionsstringifier/api-2871464-value.md)
 
 
 ---

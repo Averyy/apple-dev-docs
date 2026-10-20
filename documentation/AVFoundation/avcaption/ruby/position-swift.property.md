@@ -1,7 +1,8 @@
 # position
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ruby text position.
 
@@ -17,15 +18,20 @@ The ruby text position.
 var position: AVCaption.Ruby.Position { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptionRubyPosition position;
+```
+
 ## See Also
 
-- [var text: String](avcaption/ruby/text.md)
+### Accessing text properties
+- [var text: String](./text.md)
   The ruby text.
-- [AVCaption.Ruby.Position](avcaption/ruby/position-swift.enum.md)
+- [AVCaption.Ruby.Position](./position-swift.enum.md)
   Constants that indicate ruby text positions.
-- [var alignment: AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.property.md)
+- [var alignment: AVCaption.Ruby.Alignment](./alignment-swift.property.md)
   The ruby text alignment.
-- [AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.enum.md)
+- [AVCaption.Ruby.Alignment](./alignment-swift.enum.md)
   Constants that indicate ruby text alignments.
 
 

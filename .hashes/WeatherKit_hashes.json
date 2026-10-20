@@ -1466,9 +1466,8 @@
       "hash": "454d835b899ac90eb9341f7ee03696a5ed1f74da64edf599fe888e1cd07c3058"
     },
     "https://developer.apple.com/documentation/weatherkit/weatheravailability/availabilitykind/!=(_:_:)": {
-      "etag": "W/\"7b1fab600e1705d49db2dcf85f85e443\"",
       "file_path": "documentation/WeatherKit/weatheravailability/availabilitykind/noteq(_,_).md",
-      "hash": "103d50a72b71f93372e0679c41ac5b692c70e7288fe40bc01227b6c40100cf70"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/weatherkit/weatheravailability/availabilitykind/available": {
       "etag": "\"116b-65d560d0aba94-df\"",
@@ -1766,14 +1765,12 @@
       "hash": "3bc23d0f0e608d4d624e4b061a7dff6cbeede21c58a221654a10438864af8d8a"
     },
     "https://developer.apple.com/documentation/weatherkit/weathererror/!=(_:_:)": {
-      "etag": "W/\"fbb116df8a67188bf7577a25b8085edc\"",
       "file_path": "documentation/WeatherKit/weathererror/noteq(_,_).md",
-      "hash": "4c29a0854a76edbf1e6048fd02f9f40a6cff4c9b5b276d8c22094e67b56037db"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/weatherkit/weathererror/==(_:_:)": {
-      "etag": "W/\"b7ecbcd65f821be5fd184646880ad6a3\"",
       "file_path": "documentation/WeatherKit/weathererror/eqeq(_,_).md",
-      "hash": "75c7c8c8d18535dca1903083a41d2505f652914dd3ecdf572a51d23b245a202c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/weatherkit/weathererror/errordescription": {
       "etag": "\"1b49-65d560cfa4abd-df\"",
@@ -2001,9 +1998,8 @@
       "hash": "2d7fa331617d7e3990835f84ba9729196a2c518587a073ab83c56f8a4bb54923"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherseverity/!=(_:_:)": {
-      "etag": "W/\"2de9d57826241ca3ebaec002739c2a60\"",
       "file_path": "documentation/WeatherKit/weatherseverity/noteq(_,_).md",
-      "hash": "7826b3695dc4077ca41068abb7d238b9809011428af881063382ec25955b9765"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/weatherkit/weatherseverity/accessibilitydescription": {
       "etag": "\"16c4-65d560d0aba94-df\"",
@@ -3651,9 +3647,8 @@
       "hash": "454d835b899ac90eb9341f7ee03696a5ed1f74da64edf599fe888e1cd07c3058"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatheravailability/availabilitykind/!=(_:_:).json": {
-      "etag": "W/\"7b1fab600e1705d49db2dcf85f85e443\"",
       "file_path": "documentation/WeatherKit/weatheravailability/availabilitykind/noteq(_,_).md",
-      "hash": "103d50a72b71f93372e0679c41ac5b692c70e7288fe40bc01227b6c40100cf70"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatheravailability/availabilitykind/available.json": {
       "etag": "\"116b-65d560d0aba94-df\"",
@@ -3951,14 +3946,12 @@
       "hash": "3bc23d0f0e608d4d624e4b061a7dff6cbeede21c58a221654a10438864af8d8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathererror/!=(_:_:).json": {
-      "etag": "W/\"fbb116df8a67188bf7577a25b8085edc\"",
       "file_path": "documentation/WeatherKit/weathererror/noteq(_,_).md",
-      "hash": "4c29a0854a76edbf1e6048fd02f9f40a6cff4c9b5b276d8c22094e67b56037db"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathererror/==(_:_:).json": {
-      "etag": "W/\"b7ecbcd65f821be5fd184646880ad6a3\"",
       "file_path": "documentation/WeatherKit/weathererror/eqeq(_,_).md",
-      "hash": "75c7c8c8d18535dca1903083a41d2505f652914dd3ecdf572a51d23b245a202c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathererror/errordescription.json": {
       "etag": "\"1b49-65d560cfa4abd-df\"",
@@ -4186,9 +4179,8 @@
       "hash": "2d7fa331617d7e3990835f84ba9729196a2c518587a073ab83c56f8a4bb54923"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherseverity/!=(_:_:).json": {
-      "etag": "W/\"2de9d57826241ca3ebaec002739c2a60\"",
       "file_path": "documentation/WeatherKit/weatherseverity/noteq(_,_).md",
-      "hash": "7826b3695dc4077ca41068abb7d238b9809011428af881063382ec25955b9765"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherseverity/accessibilitydescription.json": {
       "etag": "\"16c4-65d560d0aba94-df\"",
@@ -4352,6 +4344,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 871
   }
 }

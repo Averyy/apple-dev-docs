@@ -1,7 +1,8 @@
 # inset(by:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new rectangle with the same center point after applying the specified inset amount.
 
@@ -20,6 +21,10 @@ Returns a new rectangle with the same center point after applying the specified 
 func inset(by dXYZ: Size3D) -> Rect3D
 ```
 
+```c
+static SPRect3D SPRect3DInset(SPRect3D rect, SPSize3D dXYZ);
+```
+
 #### Return Value
 
 A new rectangle with the same center point after applying the specified inset amount.
@@ -30,13 +35,14 @@ A new rectangle with the same center point after applying the specified inset am
 
 ## See Also
 
-- [var integral: Rect3D](rect3d/integral.md)
+### Creating derived 3D rectangles
+- [var integral: Rect3D](./integral.md)
   Returns the smallest rectangle after converting the source rectangle values to integers.
-- [func formInset(by: Size3D)](rect3d/forminset(by:).md)
+- [func formInset(by: Size3D)](./forminset%28by%29.md)
   Insets the rectangle by the specified size.
-- [func intersection(Rect3D) -> Rect3D?](rect3d/intersection(_:).md)
+- [func intersection(Rect3D) -> Rect3D?](./intersection%28_%29.md)
   Returns the intersection of two rectangles.
-- [var standardized: Rect3D](rect3d/standardized.md)
+- [var standardized: Rect3D](./standardized.md)
   A rectangle with positive dimensions.
 
 

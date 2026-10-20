@@ -1,7 +1,8 @@
 # number
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel number.
 

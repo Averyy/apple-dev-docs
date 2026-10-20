@@ -1,7 +1,8 @@
 # AccessorySecuritySession.Request.Decision
 
 **Framework**: Accessory Transport Extension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the decision to accept or reject a session request.
 
@@ -16,13 +17,14 @@ struct Decision
 
 #### Overview
 
-The [`accept(_:)`](accessorysecuritysession/request/accept(_:).md) and [`reject(error:)`](accessorysecuritysession/request/reject(error:).md) methods return this type.
+The [`accept(_:)`](./accept%28_%29.md) and [`reject(error:)`](./reject%28error%29.md) methods return this type.
 
 ## See Also
 
-- [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/accept(_:).md)
+### Responding to the request
+- [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](./accept%28_%29.md)
   Accepts the session request with an event handler.
-- [func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/reject(error:).md)
+- [func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision](./reject%28error%29.md)
   Rejects the session request with an optional error.
 
 

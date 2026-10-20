@@ -1,7 +1,8 @@
 # vImageConvolveFloatKernel_ARGB8888(_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Convolves an 8-bit-per-channel, 4-channel interleaved image using 32-bit weights.
 
@@ -20,13 +21,17 @@ Convolves an 8-bit-per-channel, 4-channel interleaved image using 32-bit weights
 func vImageConvolveFloatKernel_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ kernel: UnsafePointer<Float>!, _ kernelHeight: UInt32, _ kernelWidth: UInt32, _ bias: Float, _ backgroundColor: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvolveFloatKernel_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const float *kernel, uint32_t kernelHeight, uint32_t kernelWidth, float bias, const Pixel_8888 backgroundColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -51,8 +56,12 @@ You can use the same workspace memory for a group of images that are different s
 - `kernelHeight`: The height of the convolution kernel.
 - `kernelWidth`: The width of the convolution kernel.
 - `bias`: The value that the operation adds to each element in the convolution result.
-- `backgroundColor`: The background color that the function applies when you pass the [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md) flag.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](kvimagecopyinplace.md), [`kvImageTruncateKernel`](kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](kvimageedgeextend.md).
+- `backgroundColor`: The background color that the function applies when you pass the [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](./kvimagecopyinplace.md), [`kvImageTruncateKernel`](./kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
 
 
 ---

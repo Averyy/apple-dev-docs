@@ -1,7 +1,8 @@
 # createAccessToken()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates an opaque token that the system uses to keep your networking extension active in the background.
 
@@ -18,11 +19,12 @@ Generates an opaque token that the system uses to keep your networking extension
 
 #### Discussion
 
-Use this method to generate a token that you pass to [`init(sourceURL:destinationURL:observedProgress:liveActivityAccessToken:)`](bedownloadmonitor-9bwls/init(sourceurl:destinationurl:observedprogress:liveactivityaccesstoken:).md).
+Use this method to generate a token that you pass to [`init(sourceURL:destinationURL:observedProgress:liveActivityAccessToken:)`](./init%28sourceurl,destinationurl,observedprogress,liveactivityaccesstoken%29.md).
 
 ## See Also
 
-- [init(sourceURL: URL, destinationURL: URL, observedProgress: Progress, liveActivityAccessToken: Data)](bedownloadmonitor-9bwls/init(sourceurl:destinationurl:observedprogress:liveactivityaccesstoken:).md)
+### Creating a download monitor
+- [init(sourceURL: URL, destinationURL: URL, observedProgress: Progress, liveActivityAccessToken: Data)](./init%28sourceurl,destinationurl,observedprogress,liveactivityaccesstoken%29.md)
   Initializes a download monitor to report progress for the specified download.
 
 

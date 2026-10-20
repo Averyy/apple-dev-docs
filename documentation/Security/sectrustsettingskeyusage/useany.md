@@ -1,7 +1,8 @@
 # useAny
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key can be used for any purpose.
 
@@ -13,6 +14,10 @@ The key can be used for any purpose.
 
 ```swift
 static var useAny: SecTrustSettingsKeyUsage { get }
+```
+
+```c
+kSecTrustSettingsKeyUseAny
 ```
 
 #### Discussion

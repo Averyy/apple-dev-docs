@@ -1,11 +1,12 @@
 # OpenGL ES Data Types
 
-**Framework**: OpenGL ES
+**Framework**: OpenGL ES  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias GLclampx](glclampx.md)
+- [typealias GLclampx](./glclampx.md)
 
 
 ---

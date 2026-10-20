@@ -1,7 +1,8 @@
 # CompactPickerSubscriptionStoreControlStyle.Placement
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The placement of the compact subscription picker in a subscription store view.
 
@@ -21,18 +22,18 @@ struct Placement
 ## Topics
 
 ### Getting a placement
-- [static var automatic: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/automatic.md)
-- [static var bottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/bottombar.md)
+- [static var automatic: CompactPickerSubscriptionStoreControlStyle.Placement](./placement/automatic.md)
+- [static var bottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](./placement/bottombar.md)
   A placement that locates the compact picker in a bar near the bottom of the main scroll view in a subscription store view.
-- [static var buttonsInBottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/buttonsinbottombar.md)
+- [static var buttonsInBottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](./placement/buttonsinbottombar.md)
   A hybrid placement that positions subscription controls within the main scroll view, and places auxiliary buttons in the bottom bar.
-- [static var scrollView: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/scrollview.md)
+- [static var scrollView: CompactPickerSubscriptionStoreControlStyle.Placement](./placement/scrollview.md)
 
 ## Relationships
 
 ### Conforms To
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SubscriptionStoreControlPlacement](../subscriptionstorecontrolplacement.md)
 
 
 ---

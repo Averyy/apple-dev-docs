@@ -1,7 +1,8 @@
 # DockAccessory.TrackingState
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of the active tracking session state.
 
@@ -24,17 +25,17 @@ The active tracking session emits this state 10 times per second.
 ## Topics
 
 ### Instance Properties
-- [var description: String](dockaccessory/trackingstate/description.md)
-- [var time: Date](dockaccessory/trackingstate/time.md)
+- [var description: String](./trackingstate/description.md)
+- [var time: Date](./trackingstate/time.md)
   The timestamp indicating when the dock captured the tracking state.
-- [var trackedSubjects: [DockAccessory.TrackedSubjectType]](dockaccessory/trackingstate/trackedsubjects.md)
+- [var trackedSubjects: [DockAccessory.TrackedSubjectType]](./trackingstate/trackedsubjects.md)
   A collection of actively tracked subjects.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

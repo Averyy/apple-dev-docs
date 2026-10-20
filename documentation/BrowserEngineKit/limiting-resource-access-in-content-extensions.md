@@ -1,6 +1,7 @@
 # Limiting resource access in web content extensions
 
-**Framework**: BrowserEngineKit
+**Framework**: BrowserEngineKit  
+**Role**: Article
 
 Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
 
@@ -10,9 +11,9 @@ Web content extensions parse resources and run code from unknown sources. An att
 
 Mitigate the impact of any successful attack by reducing your content extension’s privilege before processing resources from remote websites.
 
-#### Restrict the Sandbox for Your Web Content Extension
+#### Restrict the sandbox for your web content extension
 
-When the system launches your web content extension, the extension has permissive access to a variety of services and resources that you use to initialize the extension. Once your extension is ready to begin loading web content, call the [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) method on your extension’s main object:
+When the system launches your web content extension, the extension has permissive access to a variety of services and resources that you use to initialize the extension. Once your extension is ready to begin loading web content, call the [`applyRestrictedSandbox(revision:)`](./restrictedsandboxappliable/applyrestrictedsandbox%28revision%29.md) method on your extension’s main object:
 
 ```swift
 class MyWebContentExtension: WebContentExtension {
@@ -25,7 +26,7 @@ class MyWebContentExtension: WebContentExtension {
 }
 ```
 
-#### Restrict Resource Access
+#### Restrict resource access
 
 Once your web content extension is locked down, it’s unable to do any of the following.
 
@@ -62,21 +63,22 @@ Write or allocate:
 
 Design your web content extension so that it doesn’t need to do any of the above.
 
-> **Note**:  The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. The first revision of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
+> **Note**:  The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](./restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. The first revision of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
 
-#### Restrict Access to System Notifications
+#### Restrict access to system notifications
 
 Limit the possibility for malicious code that runs in your web-content extension to post notifications using the system’s notification service by adding the `com.apple.developer.web-browser-engine.restrict.notifyd` entitlement with the value `true`. When it has this entitlement, your web-content extension can’t post notifications by connecting directly to the system’s notification daemon.
 
 ## See Also
 
-- [Accessing files in browser extensions](accessing-files-in-browser-extensions.md)
+### Access control
+- [Accessing files in browser extensions](./accessing-files-in-browser-extensions.md)
   Grant extensions access to files from within your browser app.
-- [Attributing memory to a content extension](attributing-memory-to-a-content-extension.md)
+- [Attributing memory to a content extension](./attributing-memory-to-a-content-extension.md)
   Adhere to operating-system limits on GPU memory use.
-- [protocol RestrictedSandboxAppliable](restrictedsandboxappliable.md)
+- [protocol RestrictedSandboxAppliable](./restrictedsandboxappliable.md)
   A protocol that browser extensions implement to opt into a more restricted sandbox.
-- [enum RestrictedSandboxRevision](restrictedsandboxrevision.md)
+- [enum RestrictedSandboxRevision](./restrictedsandboxrevision.md)
   Revisions to the restricted sandbox rules.
 
 

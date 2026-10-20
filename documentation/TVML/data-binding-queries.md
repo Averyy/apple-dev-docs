@@ -11,12 +11,13 @@ Using these queries with JSON information and the `specialize` element provides 
 ## Topics
 
 ### Data Binding Queries
-- [{property-path}](property-path.md)
+- [{property-path}](./property-path.md)
   Compares a value from a JSON file to a specified value to find out if they are equal.
 
 ## See Also
 
-- [Media Queries](media-queries.md)
+### Queries
+- [Media Queries](./media-queries.md)
   Change the look and layout of a page based on the user’s preferences.
 
 

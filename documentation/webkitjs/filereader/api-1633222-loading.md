@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short LOADING;
 ```
 
 ## See Also
 
-- [DONE](filereader/1631188-done.md)
-- [EMPTY](filereader/1630998-empty.md)
+### Miscellaneous
+- [DONE](./api-1631188-done.md)
+- [EMPTY](./api-1630998-empty.md)
 
 
 ---

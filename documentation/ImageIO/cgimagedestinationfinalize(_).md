@@ -1,7 +1,8 @@
 # CGImageDestinationFinalize(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Writes image data and properties to the data, URL, or data consumer associated with the image destination.
 
@@ -18,6 +19,10 @@ Writes image data and properties to the data, URL, or data consumer associated w
 
 ```swift
 func CGImageDestinationFinalize(_ idst: CGImageDestination) -> Bool
+```
+
+```c
+extern bool CGImageDestinationFinalize(CGImageDestinationRef idst);
 ```
 
 #### Return Value

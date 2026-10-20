@@ -1,7 +1,8 @@
 # canAddConnection(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether a you can add a connection to a capture session.
 
@@ -19,9 +20,13 @@ Determines whether a you can add a connection to a capture session.
 func canAddConnection(_ connection: AVCaptureConnection) -> Bool
 ```
 
+```objc
+- (BOOL) canAddConnection:(AVCaptureConnection *) connection;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can add the connection; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you can add the connection; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,17 +34,18 @@ func canAddConnection(_ connection: AVCaptureConnection) -> Bool
 
 ## See Also
 
-- [var connections: [AVCaptureConnection]](avcapturesession/connections.md)
+### Connecting inputs and outputs
+- [var connections: [AVCaptureConnection]](./connections.md)
   The connections between inputs and outputs that a capture session contains.
-- [func addConnection(AVCaptureConnection)](avcapturesession/addconnection(_:).md)
+- [func addConnection(AVCaptureConnection)](./addconnection%28_%29.md)
   Adds a connection to the capture session.
-- [func addInputWithNoConnections(AVCaptureInput)](avcapturesession/addinputwithnoconnections(_:).md)
+- [func addInputWithNoConnections(AVCaptureInput)](./addinputwithnoconnections%28_%29.md)
   Adds a capture input to a session without forming any connections.
-- [func addOutputWithNoConnections(AVCaptureOutput)](avcapturesession/addoutputwithnoconnections(_:).md)
+- [func addOutputWithNoConnections(AVCaptureOutput)](./addoutputwithnoconnections%28_%29.md)
   Adds a capture output to the session without forming any connections.
-- [func removeConnection(AVCaptureConnection)](avcapturesession/removeconnection(_:).md)
+- [func removeConnection(AVCaptureConnection)](./removeconnection%28_%29.md)
   Removes a capture connection from the session.
-- [class AVCaptureAudioChannel](avcaptureaudiochannel.md)
+- [class AVCaptureAudioChannel](../avcaptureaudiochannel.md)
   An object that monitors average and peak power levels for an audio channel in a capture connection.
 
 

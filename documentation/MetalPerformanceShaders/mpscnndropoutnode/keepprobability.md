@@ -1,7 +1,8 @@
 # keepProbability
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var keepProbability: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float keepProbability;
 ```
 
 

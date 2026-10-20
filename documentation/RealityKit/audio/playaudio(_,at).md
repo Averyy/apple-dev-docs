@@ -1,7 +1,8 @@
 # playAudio(_:at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Prepares and plays multiple audio resources for synchronized playback at a specified time.
 
@@ -26,15 +27,15 @@ An `AudioPlaybackGroupController` for the synchronized group.
 
 #### Discussion
 
-This method creates an `AudioPlaybackGroupController` that coordinates playback across multiple entity/resource pairs. All audio sources in the group will be synchronized to sample-accurate precision. After the controller is created, the [`play(at:)`](audioplaybackgroupcontroller/play(at:).md) method of the controller that it returns is immediately called.
+This method creates an `AudioPlaybackGroupController` that coordinates playback across multiple entity/resource pairs. All audio sources in the group will be synchronized to sample-accurate precision. After the controller is created, the [`play(at:)`](../audioplaybackgroupcontroller/play%28at%29.md) method of the controller that it returns is immediately called.
 
 Any call to play() will cancel pending scheduled time and play audio immediately, while any call to playAudio(at: AVAudioTime) will cancel current scheduled time and schedule for new time.
 
 To maintain precise timing, audio preparation must complete before the scheduled playback time. If preparation is still in progress when the scheduled time arrives, or if the scheduled time is in the past, playback will start immediately, which may result in timing drift.
 
-The returned controller’s [`isPlaying`](audioplaybackgroupcontroller/isplaying.md) property becomes `true` immediately after this call returns. Code that checks `isPlaying` to decide whether to trigger another action — such as starting a different sound — reads the correct state without racing against the scheduled start time.
+The returned controller’s [`isPlaying`](../audioplaybackgroupcontroller/isplaying.md) property becomes `true` immediately after this call returns. Code that checks `isPlaying` to decide whether to trigger another action — such as starting a different sound — reads the correct state without racing against the scheduled start time.
 
-> **Note**: An error if the audio preparation fails.
+> **Throws**: An error if the audio preparation fails.
 
 #### Usage Notes
 
@@ -49,9 +50,10 @@ The returned controller’s [`isPlaying`](audioplaybackgroupcontroller/isplaying
 
 ## See Also
 
-- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/playaudio(_:).md)
+### Playing audio resources
+- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](./playaudio%28_%29.md)
   Prepares and plays multiple audio resources for synchronized playback
-- [static func prepareAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/prepareaudio(_:).md)
+- [static func prepareAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](./prepareaudio%28_%29.md)
   Prepares multiple audio resources for synchronized playback without starting them.
 
 

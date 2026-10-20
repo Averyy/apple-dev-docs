@@ -1,21 +1,22 @@
 # AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment.Data](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperiment-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment.Data](./appstoreversionexperiment-data.dictionary/data-data.dictionary.md)
   The request body you use to create an App Store version experiment treatment.
 
 ## Properties
@@ -24,7 +25,8 @@ object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppSto
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](./appstoreversionexperimentv2-data.dictionary.md)
 
 
 ---

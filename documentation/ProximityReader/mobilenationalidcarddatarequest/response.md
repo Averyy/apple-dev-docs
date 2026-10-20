@@ -1,7 +1,8 @@
 # MobileNationalIDCardDataRequest.Response
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the response information from a successful mobile national ID card data request.
 
@@ -19,24 +20,24 @@ struct Response
 ## Topics
 
 ### Structures
-- [MobileNationalIDCardDataRequest.Response.DocumentElements](mobilenationalidcarddatarequest/response/documentelements-swift.struct.md)
+- [MobileNationalIDCardDataRequest.Response.DocumentElements](./response/documentelements-swift.struct.md)
   A type that contains the document elements from a successful mobile national ID card data request.
 ### Instance Properties
-- [let documentElements: MobileNationalIDCardDataRequest.Response.DocumentElements](mobilenationalidcarddatarequest/response/documentelements-swift.property.md)
+- [let documentElements: MobileNationalIDCardDataRequest.Response.DocumentElements](./response/documentelements-swift.property.md)
   The document elements from a successful mobile national ID card data request.
-- [let region: Locale.Region](mobilenationalidcarddatarequest/response/region.md)
+- [let region: Locale.Region](./response/region.md)
   The region of the requested document.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MobileDocumentDataResponse](mobiledocumentdataresponse.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [MobileDocumentDataResponse](../mobiledocumentdataresponse.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NEURLFilterManager.ParsingConfiguration.QueryOptions
 
 **Framework**: Network Extension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents options for parsing the URL query component.
 
@@ -20,39 +21,40 @@ struct QueryOptions
 ## Topics
 
 ### Creating a query options instance
-- [init(excluded: Bool, parameters: [String]?)](neurlfiltermanager/parsingconfiguration/queryoptions/init(excluded:parameters:).md)
+- [init(excluded: Bool, parameters: [String]?)](./queryoptions/init%28excluded,parameters%29.md)
   Creates a new query options configuration with default values.
 ### Working with query options
-- [var excluded: Bool](neurlfiltermanager/parsingconfiguration/queryoptions/excluded.md)
+- [var excluded: Bool](./queryoptions/excluded.md)
   A Boolean value that indicates whether to exclude the query component from URL parsing.
-- [var parameters: [String]?](neurlfiltermanager/parsingconfiguration/queryoptions/parameters.md)
+- [var parameters: [String]?](./queryoptions/parameters.md)
   An array of parameter names to extract.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var excludeScheme: Bool](neurlfiltermanager/parsingconfiguration/excludescheme.md)
+### Working with configuration options
+- [var excludeScheme: Bool](./excludescheme.md)
   A Boolean value that indicates whether parsing should exclude the URL scheme.
-- [var domain: NEURLFilterManager.ParsingConfiguration.DomainOptions](neurlfiltermanager/parsingconfiguration/domain.md)
+- [var domain: NEURLFilterManager.ParsingConfiguration.DomainOptions](./domain.md)
   Parsing options for the URL domain component.
-- [NEURLFilterManager.ParsingConfiguration.DomainOptions](neurlfiltermanager/parsingconfiguration/domainoptions.md)
+- [NEURLFilterManager.ParsingConfiguration.DomainOptions](./domainoptions.md)
   A type that represents options for parsing the URL domain component.
-- [var path: NEURLFilterManager.ParsingConfiguration.PathOptions](neurlfiltermanager/parsingconfiguration/path.md)
+- [var path: NEURLFilterManager.ParsingConfiguration.PathOptions](./path.md)
   Parsing options for the URL path component.
-- [NEURLFilterManager.ParsingConfiguration.PathOptions](neurlfiltermanager/parsingconfiguration/pathoptions.md)
+- [NEURLFilterManager.ParsingConfiguration.PathOptions](./pathoptions.md)
   A type that represents options for parsing the URL path component.
-- [var query: NEURLFilterManager.ParsingConfiguration.QueryOptions](neurlfiltermanager/parsingconfiguration/query.md)
+- [var query: NEURLFilterManager.ParsingConfiguration.QueryOptions](./query.md)
   Parsing options for the URL query component.
-- [var excludeFragment: Bool](neurlfiltermanager/parsingconfiguration/excludefragment.md)
+- [var excludeFragment: Bool](./excludefragment.md)
   A Boolean value that indicates whether parsing should exclude the URL fragment.
-- [var excludeIntermediates: Bool](neurlfiltermanager/parsingconfiguration/excludeintermediates.md)
+- [var excludeIntermediates: Bool](./excludeintermediates.md)
   A Boolean value that indicates whether parsing should exclude the URL fragment.
-- [var caseSensitive: Bool](neurlfiltermanager/parsingconfiguration/casesensitive.md)
+- [var caseSensitive: Bool](./casesensitive.md)
   A Boolean value that indicates whether parsing should be case-sensitive.
 
 

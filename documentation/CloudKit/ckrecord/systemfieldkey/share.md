@@ -1,7 +1,8 @@
 # share
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key constant that a record uses for its CKRecord.share.
 
@@ -11,7 +12,7 @@ The key constant that a record uses for its CKRecord.share.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,7 +24,8 @@ static let share: CKRecord.FieldKey
 
 ## See Also
 
-- [static let parent: CKRecord.FieldKey](ckrecord/systemfieldkey/parent.md)
+### Types of Shared Records
+- [static let parent: CKRecord.FieldKey](./parent.md)
   The key constant that a record uses for its CKRecord.parent.
 
 

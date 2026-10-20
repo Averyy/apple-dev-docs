@@ -1,7 +1,8 @@
 # player
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 
 ```swift
 var player: AVPlayer { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) AVPlayer * player;
 ```
 
 #### Discussion

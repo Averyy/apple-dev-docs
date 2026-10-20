@@ -1,7 +1,8 @@
 # BetaBuildLocalizationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
@@ -10,7 +11,7 @@ Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object BetaBuildLocalizationUpdateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object BetaBuildLocalizationUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [Beta Build Localizations](beta-build-localizations.md)
+### Related Documentation
+- [Beta Build Localizations](../../beta-build-localizations.md)
   Beta test information about builds, specific to a locale.
 
 

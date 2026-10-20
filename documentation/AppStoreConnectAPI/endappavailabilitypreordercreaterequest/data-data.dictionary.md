@@ -1,7 +1,8 @@
 # EndAppAvailabilityPreOrderCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an end app availability pre-order.
 
@@ -10,20 +11,20 @@ The request body you use to create an end app availability pre-order.
 
 ## Declaration
 
-```swift
+```
 object EndAppAvailabilityPreOrderCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships](endappavailabilitypreordercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object EndAppAvailabilityPreOrderCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `relationships` (EndAppAvailabilityPreOrderCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `endAppAvailabilityPreOrders`
 
 
 ---

@@ -1,7 +1,8 @@
 # alertPrompt
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prompt to display in the secure passphrase alert panel.
 
@@ -14,9 +15,13 @@ The prompt to display in the secure passphrase alert panel.
 var alertPrompt: Unmanaged<CFString>
 ```
 
+```c
+CFStringRef alertPrompt;
+```
+
 #### Discussion
 
-When importing or exporting a key, if you set the [`securePassphrase`](seckeyimportexportflags/securepassphrase.md) flag bit, you can optionally use this field to specify a string for the prompt that appears in the password panel.
+When importing or exporting a key, if you set the [`securePassphrase`](../seckeyimportexportflags/securepassphrase.md) flag bit, you can optionally use this field to specify a string for the prompt that appears in the password panel.
 
 
 ---

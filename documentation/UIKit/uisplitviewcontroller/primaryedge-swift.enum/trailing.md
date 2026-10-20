@@ -1,7 +1,8 @@
 # UISplitViewController.PrimaryEdge.trailing
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Place the primary view controller on the trailing edge of the interface.
 
@@ -18,13 +19,18 @@ Place the primary view controller on the trailing edge of the interface.
 case trailing
 ```
 
+```c
+UISplitViewControllerPrimaryEdgeTrailing
+```
+
 #### Discussion
 
 In an interface that is oriented left-to-right, this value corresponds to the right side of the split view interface. For right-to-left interfaces, the trailing edge is on the left side.
 
 ## See Also
 
-- [UISplitViewController.PrimaryEdge.leading](uisplitviewcontroller/primaryedge-swift.enum/leading.md)
+### Constants
+- [UISplitViewController.PrimaryEdge.leading](./leading.md)
   Place the primary view controller on the leading edge of the interface.
 
 

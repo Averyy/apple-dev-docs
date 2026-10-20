@@ -1,17 +1,22 @@
 # preventWindowOrdering()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suppresses the usual window ordering in handling the most recent mouse-down event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func preventWindowOrdering()
+```
+
+```objc
+- (void) preventWindowOrdering;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This method is only useful for mouse-down events when you want to prevent the wi
 
 ## See Also
 
-- [func arrangeInFront(Any?)](nsapplication/arrangeinfront(_:).md)
+### Managing Window Layers
+- [func arrangeInFront(Any?)](./arrangeinfront%28_%29.md)
   Arranges windows listed in the Window menu in front of all other windows.
 
 

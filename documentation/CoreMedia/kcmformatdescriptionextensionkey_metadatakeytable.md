@@ -1,7 +1,8 @@
 # kCMFormatDescriptionExtensionKey_MetadataKeyTable
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCMFormatDescriptionExtensionKey_MetadataKeyTable: CFString
+```
+
+```c
+extern CFStringRef const kCMFormatDescriptionExtensionKey_MetadataKeyTable;
 ```
 
 

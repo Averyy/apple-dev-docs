@@ -1,7 +1,8 @@
 # initialize3DTexture1(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func initialize3DTexture1(_ tex: (any MTLTexture)?)
+```
+
+```objc
+- (void) initialize3DTexture1:(id<MTLTexture>) tex;
 ```
 
 #### Discussion

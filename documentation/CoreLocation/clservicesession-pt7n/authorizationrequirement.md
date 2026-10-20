@@ -1,7 +1,8 @@
 # CLServiceSession.AuthorizationRequirement
 
 **Framework**: Core Location  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe when the service session needs to request authorization.
 
@@ -22,21 +23,22 @@ enum AuthorizationRequirement
 ## Topics
 
 ### Authorization requirement values
-- [CLServiceSession.AuthorizationRequirement.always](clservicesession-pt7n/authorizationrequirement/always.md)
-- [CLServiceSession.AuthorizationRequirement.none](clservicesession-pt7n/authorizationrequirement/none.md)
-- [CLServiceSession.AuthorizationRequirement.whenInUse](clservicesession-pt7n/authorizationrequirement/wheninuse.md)
+- [CLServiceSession.AuthorizationRequirement.always](./authorizationrequirement/always.md)
+- [CLServiceSession.AuthorizationRequirement.none](./authorizationrequirement/none.md)
+- [CLServiceSession.AuthorizationRequirement.whenInUse](./authorizationrequirement/wheninuse.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init(authorization: CLServiceSession.AuthorizationRequirement)](clservicesession-pt7n/init(authorization:).md)
+### Creating a session
+- [init(authorization: CLServiceSession.AuthorizationRequirement)](./init%28authorization%29.md)
   Creates a services session by using the authorization mode you specify.
-- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).md)
+- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](./init%28authorization,fullaccuracypurposekey%29.md)
   Creates a services session by using the authorization mode and purpose key you specify.
 
 

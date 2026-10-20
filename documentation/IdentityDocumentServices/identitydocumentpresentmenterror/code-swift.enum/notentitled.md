@@ -1,14 +1,15 @@
 # IdentityDocumentPresentmentError.Code.notEntitled
 
 **Framework**: IdentityDocumentServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the caller is not entitled.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

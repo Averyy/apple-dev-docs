@@ -1,7 +1,8 @@
 # VTTRegionList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface VTTRegionList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](vttregionlist/1633466-length.md)
+- [length](./vttregionlist/api-1633466-length.md)
 ### Instance Methods
-- [getRegionById](vttregionlist/1634446-getregionbyid.md)
-- [item](vttregionlist/1628951-item.md)
+- [getRegionById](./vttregionlist/api-1634446-getregionbyid.md)
+- [item](./vttregionlist/api-1628951-item.md)
 
 
 ---

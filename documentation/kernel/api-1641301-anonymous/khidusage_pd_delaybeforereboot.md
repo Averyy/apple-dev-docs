@@ -1,14 +1,15 @@
 # kHIDUsage_PD_DelayBeforeReboot
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PD_DelayBeforeReboot = 0x55
 ```
 

@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.emailAddress(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents an email address.
 

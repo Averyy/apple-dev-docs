@@ -1,14 +1,15 @@
 # setHardwareAssists
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setHardwareAssists(UInt32 hardwareAssists, UInt32 hardwareAssistsMask);
 ```
 

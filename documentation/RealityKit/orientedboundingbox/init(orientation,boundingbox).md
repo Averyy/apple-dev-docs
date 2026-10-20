@@ -1,7 +1,8 @@
 # init(orientation:boundingBox:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

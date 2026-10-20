@@ -1,12 +1,13 @@
 # canInsert
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether an object can be inserted into the receiver’s content collection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value that indicates whether an object can be inserted into th
 var canInsert: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canInsert;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if an object can be inserted into the receiver’s content collection, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if an object can be inserted into the receiver’s content collection, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -26,7 +31,8 @@ This property is observable using key-value observing.
 
 ## See Also
 
-- [func insert(Any?)](nsarraycontroller/insert(_:).md)
+### Inserting
+- [func insert(Any?)](./insert%28_%29.md)
   Creates a new object and inserts it into the receiver’s content array.
 
 

@@ -1,18 +1,19 @@
 # CGPDFObjectRef
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains information about a PDF object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,29 +21,34 @@ A type that contains information about a PDF object.
 struct CGPDFObjectRef
 ```
 
+```c
+typedef struct CGPDFObject * CGPDFObjectRef;
+```
+
 ## Topics
 
 ### Initializers
-- [init(OpaquePointer)](cgpdfobjectref/init(_:).md)
-- [init(rawValue: OpaquePointer)](cgpdfobjectref/init(rawvalue:).md)
+- [init(OpaquePointer)](./cgpdfobjectref/init%28_%29.md)
+- [init(rawValue: OpaquePointer)](./cgpdfobjectref/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CGPDFBoolean](cgpdfboolean.md)
+### Data Types
+- [typealias CGPDFBoolean](./cgpdfboolean.md)
   A PDF Boolean value.
-- [typealias CGPDFInteger](cgpdfinteger.md)
+- [typealias CGPDFInteger](./cgpdfinteger.md)
   A PDF integer value.
-- [typealias CGPDFReal](cgpdfreal.md)
+- [typealias CGPDFReal](./cgpdfreal.md)
   A PDF real value.
 
 

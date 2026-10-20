@@ -1,7 +1,8 @@
 # os_signpost(_:dso:log:name:signpostID:_:_:)
 
 **Framework**: os  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Logs a point of interest in your code as a time interval or as an event for debugging performance in Instruments, and includes a detailed message.
 
@@ -11,8 +12,10 @@ Logs a point of interest in your code as a time interval or as an event for debu
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
+
+> **Deprecated**: Use [`beginInterval(_:id:_:)`](./ossignposter/begininterval%28_,id,_%29.md) instead.
 
 ## Declaration
 
@@ -31,19 +34,20 @@ func os_signpost(_ type: OSSignpostType, dso: UnsafeRawPointer = #dsohandle, log
 
 ## See Also
 
-- [func os_signpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID)](os_signpost(_:dso:log:name:signpostid:)-2oz8u.md)
+### Measure Events
+- [func os_signpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID)](./os_signpost%28_,dso,log,name,signpostid%29-2oz8u.md)
   Logs a point of interest in your code as a time interval or as an event for debugging performance in Instruments.
-- [struct OSSignpostType](ossignposttype.md)
+- [struct OSSignpostType](./ossignposttype.md)
   The different kinds of signpost.
-- [func os_signpost(OSSignpostAnimationBegin, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID)](os_signpost(_:dso:log:name:signpostid:)-12m3v.md)
+- [func os_signpost(OSSignpostAnimationBegin, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID)](./os_signpost%28_,dso,log,name,signpostid%29-12m3v.md)
   Logs the beginning of an animation as a point-of-interest in your code, without a message.
-- [func os_signpost(OSSignpostAnimationBegin, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, AnimationFormatString.OSLogMessage, any CVarArg...)](os_signpost(_:dso:log:name:signpostid:_:_:)-nez5.md)
+- [func os_signpost(OSSignpostAnimationBegin, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, AnimationFormatString.OSLogMessage, any CVarArg...)](./os_signpost%28_,dso,log,name,signpostid,_,_%29-nez5.md)
   Logs the beginning of an animation as a point-of-interest in your code, and includes the specified message in the logs.
-- [enum OSSignpostAnimationBegin](ossignpostanimationbegin.md)
+- [enum OSSignpostAnimationBegin](./ossignpostanimationbegin.md)
   The signpost options to use when measuring animations.
-- [enum AnimationFormatString](animationformatstring.md)
+- [enum AnimationFormatString](./animationformatstring.md)
   A namespace for utilities specific to animation-related signposts.
-- [typealias os_signpost_id_t](os_signpost_id_t.md)
+- [typealias os_signpost_id_t](./os_signpost_id_t.md)
   An identifier you use to distinguish between signposts that have the same name and destination log.
 
 

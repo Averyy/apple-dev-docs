@@ -1,7 +1,8 @@
 # StateBookmarkIdentifier
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for bookmarks.
 
@@ -21,22 +22,23 @@ A bookmark identifier needs to be unique across all instances of the same tablet
 ## Topics
 
 ### Creating bookmark identifiers
-- [init(Int)](statebookmarkidentifier/init(_:).md)
+- [init(Int)](./statebookmarkidentifier/init%28_%29.md)
 ### Getting identifier values
-- [let rawValue: Int](statebookmarkidentifier/rawvalue.md)
+- [let rawValue: Int](./statebookmarkidentifier/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StateBookmark](statebookmark.md)
+### Bookmarks
+- [struct StateBookmark](./statebookmark.md)
   A snapshot of the game state at a point in time.
 
 

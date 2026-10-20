@@ -1,7 +1,8 @@
 # nationalIDCard(region:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A document of type national ID card for a given region.
 

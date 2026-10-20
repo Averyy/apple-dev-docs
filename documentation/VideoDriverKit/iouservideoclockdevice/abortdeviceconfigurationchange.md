@@ -1,7 +1,8 @@
 # AbortDeviceConfigurationChange
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The host calls this method to tell the driver not to perform a configuration change.
 
@@ -10,7 +11,7 @@ The host calls this method to tell the driver not to perform a configuration cha
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t AbortDeviceConfigurationChange(uint64_t change_action, OSObject *in_change_info);
 ```
 
@@ -27,7 +28,8 @@ Subclass and override this method to handle any aborted custom configuration cha
 
 ## See Also
 
-- [PerformDeviceConfigurationChange](iouservideoclockdevice/performdeviceconfigurationchange.md)
+### Supporting device configuration changes
+- [PerformDeviceConfigurationChange](./performdeviceconfigurationchange.md)
   The host calls this method to allow the clock device to perform a configuration change.
 
 

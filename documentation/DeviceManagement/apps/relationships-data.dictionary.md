@@ -1,7 +1,8 @@
 # Apps.Relationships
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for an apps resource.
 
@@ -10,23 +11,28 @@ The relationships for an apps resource.
 
 ## Declaration
 
-```swift
+```
 object Apps.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Apps.Relationships.AppsGenresRelationship](apps/relationships-data.dictionary/appsgenresrelationship.md)
+- [object Apps.Relationships.AppsGenresRelationship](./relationships-data.dictionary/appsgenresrelationship.md)
 
 ## Properties
 
-- `genres` (Apps.Relationships.AppsGenresRelationship): The genres for content. Fetch limits: - Default: 10
-- Max: 10
+- `genres` (Apps.Relationships.AppsGenresRelationship): The genres for content.
+
+  Fetch limits:
+
+  - Default: 10
+  - Max: 10
 
 ## See Also
 
-- [object Apps.Attributes](apps/attributes-data.dictionary.md)
+### Related Objects
+- [object Apps.Attributes](./attributes-data.dictionary.md)
   The attributes for an apps resource.
 
 

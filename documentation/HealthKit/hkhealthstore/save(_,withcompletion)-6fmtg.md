@@ -1,7 +1,8 @@
 # save(_:withCompletion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the provided object to the HealthKit store.
 
@@ -16,38 +17,49 @@ Saves the provided object to the HealthKit store.
 ## Declaration
 
 ```swift
+func save(_ object: HKObject, withCompletion completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func save(_ object: HKObject) async throws
+```
+
+```objc
+- (void) saveObject:(HKObject *) object withCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
 #### Discussion
 
 This method operates asynchronously. As soon as the save operation is finished, it calls the completion block on a background queue.
 
-If your app has not requested permission to share the object’s data type, the method fails with an [`HKError.Code.errorAuthorizationNotDetermined`](hkerror/code/errorauthorizationnotdetermined.md) error. If your app has been denied permission to save the object’s data type, it fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. Saving an object with the same unique identifier as an object already in the HealthKit store fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
+If your app has not requested permission to share the object’s data type, the method fails with an [`HKError.Code.errorAuthorizationNotDetermined`](../hkerror/code/errorauthorizationnotdetermined.md) error. If your app has been denied permission to save the object’s data type, it fails with an [`HKError.Code.errorAuthorizationDenied`](../hkerror/code/errorauthorizationdenied.md) error. Saving an object with the same unique identifier as an object already in the HealthKit store fails with an [`HKError.Code.errorInvalidArgument`](../hkerror/code/errorinvalidargument.md) error.
 
-In iOS 9.0 and later, saving an object to the HealthKit store sets the object’s [`sourceRevision`](hkobject/sourcerevision.md) property to a [`HKSourceRevision`](hksourcerevision.md) instance representing the saving app. On earlier versions of iOS, saving an object sets the [`source`](hkobject/source.md) property to a [`HKSource`](hksource.md) instance instead. In both cases, these values are available only after the object is retrieved from the HealthKit store. The original object is not changed.
+In iOS 9.0 and later, saving an object to the HealthKit store sets the object’s [`sourceRevision`](../hkobject/sourcerevision.md) property to a [`HKSourceRevision`](../hksourcerevision.md) instance representing the saving app. On earlier versions of iOS, saving an object sets the [`source`](../hkobject/source.md) property to a [`HKSource`](../hksource.md) instance instead. In both cases, these values are available only after the object is retrieved from the HealthKit store. The original object is not changed.
 
-All samples retrieved by iOS 9.0 and later are given a valid [`sourceRevision`](hkobject/sourcerevision.md) property. If the sample was saved using an earlier version of iOS, the source revision’s version is set to `nil`.
+All samples retrieved by iOS 9.0 and later are given a valid [`sourceRevision`](../hkobject/sourcerevision.md) property. If the sample was saved using an earlier version of iOS, the source revision’s version is set to `nil`.
 
 ## Parameters
 
-- `object`: The HealthKit object to be saved. This object can be any concrete subclass of the [`HKObject`](hkobject.md) class (any of the [`HKCategorySample`](hkcategorysample.md), [`HKQuantitySample`](hkquantitysample.md), [`HKCorrelation`](hkcorrelation.md), or [`HKWorkout`](hkworkout.md) classes).
-- `completion`: A block that this method calls as soon as the save operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the object was successfully saved to the HealthKit store; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
-- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
+- `object`: The HealthKit object to be saved. This object can be any concrete subclass of the [`HKObject`](../hkobject.md) class (any of the [`HKCategorySample`](../hkcategorysample.md), [`HKQuantitySample`](../hkquantitysample.md), [`HKCorrelation`](../hkcorrelation.md), or [`HKWorkout`](../hkworkout.md) classes).
+- `completion`: A block that this method calls as soon as the save operation is complete. This block is passed the following parameters:
+
+  - **success**: A Boolean value. This parameter contains [`true`](../../Swift/true.md) if the object was successfully saved to the HealthKit store; otherwise, [`false`](../../Swift/false.md).
+  - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 
-- [func delete(HKObject, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/delete(_:withcompletion:)-78l1m.md)
+### Working with HealthKit objects
+- [func delete(HKObject, withCompletion: (Bool, (any Error)?) -> Void)](./delete%28_,withcompletion%29-78l1m.md)
   Deletes the specified object from the HealthKit store.
-- [func delete([HKObject], withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/delete(_:withcompletion:)-17hzm.md)
+- [func delete([HKObject], withCompletion: (Bool, (any Error)?) -> Void)](./delete%28_,withcompletion%29-17hzm.md)
   Deletes the specified objects from the HealthKit store.
-- [func deleteObjects(of: HKObjectType, predicate: NSPredicate, withCompletion: (Bool, Int, (any Error)?) -> Void)](hkhealthstore/deleteobjects(of:predicate:withcompletion:).md)
+- [func deleteObjects(of: HKObjectType, predicate: NSPredicate, withCompletion: (Bool, Int, (any Error)?) -> Void)](./deleteobjects%28of,predicate,withcompletion%29.md)
   Deletes objects saved by this application that match the provided type and predicate.
-- [func save([HKObject], withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/save(_:withcompletion:)-47iwb.md)
+- [func save([HKObject], withCompletion: (Bool, (any Error)?) -> Void)](./save%28_,withcompletion%29-47iwb.md)
   Saves an array of objects to the HealthKit store.
 
 

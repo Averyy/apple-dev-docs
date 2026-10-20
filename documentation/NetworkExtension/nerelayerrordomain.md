@@ -1,7 +1,8 @@
 # NERelayErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors resulting from calls to the relay manager.
 
@@ -19,13 +20,18 @@ The domain for errors resulting from calls to the relay manager.
 let NERelayErrorDomain: String
 ```
 
+```c
+extern NSString * const NERelayErrorDomain;
+```
+
 #### Discussion
 
-Match this constant to the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) of an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) encountered when calling methods on [`NERelayManager`](nerelaymanager.md). The [`NERelayManagerError`](nerelaymanagererror.md) enumeration defines possible [`code`](https://developer.apple.com/documentation/foundation/nserror/code) values for these errors.
+Match this constant to the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) encountered when calling methods on [`NERelayManager`](./nerelaymanager.md). The [`NERelayManagerError`](./nerelaymanagererror.md) enumeration defines possible [`code`](../Foundation/nserror/code.md) values for these errors.
 
 ## See Also
 
-- [enum NERelayManagerError](nerelaymanagererror.md)
+### Handling errors
+- [enum NERelayManagerError](./nerelaymanagererror.md)
   Error codes specific to relay managers.
 
 

@@ -1,7 +1,8 @@
 # home(_:didAdd:to:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a home added a service to a service group.
 
@@ -19,6 +20,10 @@ Tells the delegate that a home added a service to a service group.
 optional func home(_ home: HMHome, didAdd service: HMService, to group: HMServiceGroup)
 ```
 
+```objc
+- (void) home:(HMHome *) home didAddService:(HMService *) service toServiceGroup:(HMServiceGroup *) group;
+```
+
 ## Parameters
 
 - `home`: The home.
@@ -27,13 +32,14 @@ optional func home(_ home: HMHome, didAdd service: HMService, to group: HMServic
 
 ## See Also
 
-- [func home(HMHome, didAdd: HMServiceGroup)](hmhomedelegate/home(_:didadd:)-3dymz.md)
+### Observing Service Configuration
+- [func home(HMHome, didAdd: HMServiceGroup)](./home%28_,didadd%29-3dymz.md)
   Tells the delegate that a home added a service group.
-- [func home(HMHome, didUpdateNameFor: HMServiceGroup)](hmhomedelegate/home(_:didupdatenamefor:)-4tam1.md)
+- [func home(HMHome, didUpdateNameFor: HMServiceGroup)](./home%28_,didupdatenamefor%29-4tam1.md)
   Tells the delegate that a home updated the name of a service group.
-- [func home(HMHome, didRemove: HMService, from: HMServiceGroup)](hmhomedelegate/home(_:didremove:from:)-9yzp0.md)
+- [func home(HMHome, didRemove: HMService, from: HMServiceGroup)](./home%28_,didremove,from%29-9yzp0.md)
   Tells the delegate that a home removed a service from a service group.
-- [func home(HMHome, didRemove: HMServiceGroup)](hmhomedelegate/home(_:didremove:)-6kqxo.md)
+- [func home(HMHome, didRemove: HMServiceGroup)](./home%28_,didremove%29-6kqxo.md)
   Tells the delegate that a home removed a service group.
 
 

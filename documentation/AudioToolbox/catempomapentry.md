@@ -1,10 +1,11 @@
 # CATempoMapEntry
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,28 +13,33 @@
 struct CATempoMapEntry
 ```
 
+```c
+struct CATempoMapEntry;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](catempomapentry/init.md)
-- [init(beats: CAClockBeats, tempoBPM: CAClockTempo)](catempomapentry/init(beats:tempobpm:).md)
+- [init()](./catempomapentry/init%28%29.md)
+- [init(beats: CAClockBeats, tempoBPM: CAClockTempo)](./catempomapentry/init%28beats,tempobpm%29.md)
 ### Instance Properties
-- [var beats: CAClockBeats](catempomapentry/beats.md)
-- [var tempoBPM: CAClockTempo](catempomapentry/tempobpm.md)
+- [var beats: CAClockBeats](./catempomapentry/beats.md)
+- [var tempoBPM: CAClockTempo](./catempomapentry/tempobpm.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func CAClockGetCurrentTempo(CAClockRef, UnsafeMutablePointer<CAClockTempo>, UnsafeMutablePointer<CAClockTime>?) -> OSStatus](caclockgetcurrenttempo(_:_:_:).md)
-- [func CAClockSetCurrentTempo(CAClockRef, CAClockTempo, UnsafePointer<CAClockTime>?) -> OSStatus](caclocksetcurrenttempo(_:_:_:).md)
-- [func CAClockGetPlayRate(CAClockRef, UnsafeMutablePointer<Float64>) -> OSStatus](caclockgetplayrate(_:_:).md)
-- [func CAClockSetPlayRate(CAClockRef, Float64) -> OSStatus](caclocksetplayrate(_:_:).md)
-- [typealias CAClockTempo](caclocktempo.md)
+### Accessing Tempo Information
+- [func CAClockGetCurrentTempo(CAClockRef, UnsafeMutablePointer<CAClockTempo>, UnsafeMutablePointer<CAClockTime>?) -> OSStatus](./caclockgetcurrenttempo%28_,_,_%29.md)
+- [func CAClockSetCurrentTempo(CAClockRef, CAClockTempo, UnsafePointer<CAClockTime>?) -> OSStatus](./caclocksetcurrenttempo%28_,_,_%29.md)
+- [func CAClockGetPlayRate(CAClockRef, UnsafeMutablePointer<Float64>) -> OSStatus](./caclockgetplayrate%28_,_%29.md)
+- [func CAClockSetPlayRate(CAClockRef, Float64) -> OSStatus](./caclocksetplayrate%28_,_%29.md)
+- [typealias CAClockTempo](./caclocktempo.md)
 
 
 ---

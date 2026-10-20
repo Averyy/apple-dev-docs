@@ -1,7 +1,8 @@
 # withMemoryRebound(to:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
 
@@ -19,6 +20,8 @@ Executes the given closure while temporarily binding the buffer slice to instanc
 ```swift
 func withMemoryRebound<T, E, Result>(to type: T.Type, _ body: (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, Result : ~Copyable
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # HMPresenceEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that triggers based on the presence of users in the home.
 
@@ -19,42 +20,47 @@ An event that triggers based on the presence of users in the home.
 class HMPresenceEvent
 ```
 
+```objc
+@interface HMPresenceEvent : HMEvent
+```
+
 ## Topics
 
 ### Creating a presence event
-- [init(presenceEventType: HMPresenceEventType, presenceUserType: HMPresenceEventUserType)](hmpresenceevent/init(presenceeventtype:presenceusertype:).md)
+- [init(presenceEventType: HMPresenceEventType, presenceUserType: HMPresenceEventUserType)](./hmpresenceevent/init%28presenceeventtype,presenceusertype%29.md)
   Creates a new presence event with the specified event and user presence types.
 ### Inspecting a presence event
-- [var presenceEventType: HMPresenceEventType](hmpresenceevent/presenceeventtype.md)
+- [var presenceEventType: HMPresenceEventType](./hmpresenceevent/presenceeventtype.md)
   The event type that triggers the presence event.
-- [var presenceUserType: HMPresenceEventUserType](hmpresenceevent/presenceusertype.md)
+- [var presenceUserType: HMPresenceEventUserType](./hmpresenceevent/presenceusertype.md)
   The user type whose presence triggers the event.
 
 ## Relationships
 
 ### Inherits From
-- [HMEvent](hmevent.md)
+- [HMEvent](./hmevent.md)
 ### Inherited By
-- [HMMutablePresenceEvent](hmmutablepresenceevent.md)
+- [HMMutablePresenceEvent](./hmmutablepresenceevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMMutablePresenceEvent](hmmutablepresenceevent.md)
+### User presence
+- [class HMMutablePresenceEvent](./hmmutablepresenceevent.md)
   A mutable event that triggers based on the presence of users in the home.
-- [enum HMPresenceEventType](hmpresenceeventtype.md)
+- [enum HMPresenceEventType](./hmpresenceeventtype.md)
   The user presence type that triggers a presence event.
-- [enum HMPresenceEventUserType](hmpresenceeventusertype.md)
+- [enum HMPresenceEventUserType](./hmpresenceeventusertype.md)
   The group of users that triggers a presence event.
 
 

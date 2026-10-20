@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -22,9 +23,10 @@ static var schemaMetadata: [Schema.PropertyMetadata] { get }
 
 ## See Also
 
-- [var persistentBackingData: any BackingData<Self>](persistentmodel/persistentbackingdata.md)
-- [var hasChanges: Bool](persistentmodel/haschanges.md)
-- [var isDeleted: Bool](persistentmodel/isdeleted.md)
+### Accessing supplementary information
+- [var persistentBackingData: any BackingData<Self>](./persistentbackingdata.md)
+- [var hasChanges: Bool](./haschanges.md)
+- [var isDeleted: Bool](./isdeleted.md)
 
 
 ---

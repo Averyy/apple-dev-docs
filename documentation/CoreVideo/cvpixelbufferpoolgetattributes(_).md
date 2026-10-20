@@ -1,7 +1,8 @@
 # CVPixelBufferPoolGetAttributes(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 The pool attributes dictionary for a pixel buffer pool.
 
@@ -20,9 +21,13 @@ The pool attributes dictionary for a pixel buffer pool.
 func CVPixelBufferPoolGetAttributes(_ pool: CVPixelBufferPool) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCVPixelBufferPoolGetAttributes(CVPixelBufferPoolRef pool);
+```
+
 #### Return Value
 
-A Core Foundation dictionary containing the pool attributes, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the function fails.
+A Core Foundation dictionary containing the pool attributes, or [`nil`](../ObjectiveC/nil-227m0.md) if the function fails.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ A Core Foundation dictionary containing the pool attributes, or [`nil`](https://
 
 ## See Also
 
-- [func CVPixelBufferPoolGetPixelBufferAttributes(CVPixelBufferPool) -> CFDictionary?](cvpixelbufferpoolgetpixelbufferattributes(_:).md)
+### Inspecting pools
+- [func CVPixelBufferPoolGetPixelBufferAttributes(CVPixelBufferPool) -> CFDictionary?](./cvpixelbufferpoolgetpixelbufferattributes%28_%29.md)
   The attributes of pixel buffers which the system creates using the pool you specify.
-- [func CVPixelBufferPoolGetTypeID() -> CFTypeID](cvpixelbufferpoolgettypeid().md)
+- [func CVPixelBufferPoolGetTypeID() -> CFTypeID](./cvpixelbufferpoolgettypeid%28%29.md)
   Returns the Core Foundation type identifier of the pixel buffer pool type.
 
 

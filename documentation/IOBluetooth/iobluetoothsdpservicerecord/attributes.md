@@ -1,17 +1,22 @@
 # attributes
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an NSDictionary containing the attributes for the service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var attributes: [AnyHashable : Any]! { get }
+```
+
+```objc
+@property (copy, readonly) NSDictionary * attributes;
 ```
 
 #### Return Value

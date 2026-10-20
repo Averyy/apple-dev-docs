@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues.UpdateActivity.Hdr
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Headers to include with requests to the update activity endpoint.
 
@@ -10,7 +11,7 @@ Headers to include with requests to the update activity endpoint.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues.UpdateActivity.Hdr
 ```
 
@@ -20,15 +21,16 @@ This is a dictionary of header names and values.
 
 ## See Also
 
-- [object ExtensionConfig.Hdr](extensionconfig/hdr-data.dictionary.md)
+### Specifying Request Headers
+- [object ExtensionConfig.Hdr](../../../hdr-data.dictionary.md)
   Headers to include with all requests to the media service.
-- [object ExtensionEndpointConfig.Hdr](extensionendpointconfig/hdr-data.dictionary.md)
+- [object ExtensionEndpointConfig.Hdr](../../../../extensionendpointconfig/hdr-data.dictionary.md)
   Headers to include with requests to intent endpoints.
-- [object ExtensionConfig.Intent.Hdr](extensionconfig/intent-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Intent.Hdr](../../../intent-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to intent endpoints.
-- [object ExtensionConfig.Media.Queues.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.Hdr](../hdr-data.dictionary.md)
   Headers to include with requests to media endpoints.
-- [object ExtensionConfig.Media.Queues.PlayMedia.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.PlayMedia.Hdr](../playmedia-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to media endpoints.
 
 

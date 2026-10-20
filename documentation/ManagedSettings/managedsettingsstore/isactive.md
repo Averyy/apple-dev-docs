@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Property that controls whether the store is active
 

@@ -1,7 +1,8 @@
 # HMActionSet
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of actions that you trigger as a group.
 
@@ -19,60 +20,65 @@ A collection of actions that you trigger as a group.
 class HMActionSet
 ```
 
+```objc
+@interface HMActionSet : NSObject
+```
+
 #### Overview
 
-Action sets can be executed as a result of evaluating a trigger (instances of [`HMTrigger`](hmtrigger.md)) or manually with [`executeActionSet(_:completionHandler:)`](hmhome/executeactionset(_:completionhandler:).md). Actions in an action set are performed in an unspecified order. You create new action sets using the [`addActionSet(withName:completionHandler:)`](hmhome/addactionset(withname:completionhandler:).md) method of [`HMHome`](hmhome.md).
+Action sets can be executed as a result of evaluating a trigger (instances of [`HMTrigger`](./hmtrigger.md)) or manually with [`executeActionSet(_:completionHandler:)`](./hmhome/executeactionset%28_,completionhandler%29.md). Actions in an action set are performed in an unspecified order. You create new action sets using the [`addActionSet(withName:completionHandler:)`](./hmhome/addactionset%28withname,completionhandler%29.md) method of [`HMHome`](./hmhome.md).
 
 ## Topics
 
 ### Identifiying an action set
-- [var uniqueIdentifier: UUID](hmactionset/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./hmactionset/uniqueidentifier.md)
   The action set’s unique identifier.
-- [var name: String](hmactionset/name.md)
+- [var name: String](./hmactionset/name.md)
   The name of the action set.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmactionset/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./hmactionset/updatename%28_,completionhandler%29.md)
   Updates the name of the action set.
 ### Specifying a type
-- [var actionSetType: String](hmactionset/actionsettype.md)
+- [var actionSetType: String](./hmactionset/actionsettype.md)
   The type of the action set, such as built-in or user-defined.
-- [Action Set Types](action-set-types.md)
+- [Action Set Types](./action-set-types.md)
   The types of action sets that you can define.
 ### Defining the associated actions
-- [var actions: Set<HMAction>](hmactionset/actions.md)
+- [var actions: Set<HMAction>](./hmactionset/actions.md)
   Set of actions in the action set.
-- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/addaction(_:completionhandler:).md)
+- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](./hmactionset/addaction%28_,completionhandler%29.md)
   Adds an action to the action set.
-- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](./hmactionset/removeaction%28_,completionhandler%29.md)
   Removes an action from the action set.
-- [class HMCharacteristicWriteAction](hmcharacteristicwriteaction.md)
+- [class HMCharacteristicWriteAction](./hmcharacteristicwriteaction.md)
   An action in an action set that writes a value to a characteristic.
-- [class HMAction](hmaction.md)
+- [class HMAction](./hmaction.md)
   An abstract base class for actions in HomeKit.
 ### Keeping track of execution
-- [var isExecuting: Bool](hmactionset/isexecuting.md)
+- [var isExecuting: Bool](./hmactionset/isexecuting.md)
   The execution status of the action set.
-- [var lastExecutionDate: Date?](hmactionset/lastexecutiondate.md)
+- [var lastExecutionDate: Date?](./hmactionset/lastexecutiondate.md)
   The last execution date of the action set.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMTimerTrigger](hmtimertrigger.md)
+### Action Sets
+- [class HMTimerTrigger](./hmtimertrigger.md)
   A trigger to activate an action set based on a periodic timer.
-- [class HMEventTrigger](hmeventtrigger.md)
+- [class HMEventTrigger](./hmeventtrigger.md)
   A trigger to activate an action set based on a set of events and optional conditions.
 
 

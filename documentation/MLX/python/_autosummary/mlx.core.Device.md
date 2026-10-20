@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.De
 
 # mlx.core.Device
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.Device.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.Device
-
- Table of contents 
-
-## Contents
-
-# mlx.core.Device
-
 **class Device(**args*, ***kwargs*)**
 : A device to run operations on.
 
@@ -46,5 +19,3 @@ Attributes
 
 `type`
 (self) -> mlx.core.DeviceType
-
-** Contents

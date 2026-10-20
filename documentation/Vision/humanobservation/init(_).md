@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a human observation.
 
@@ -21,7 +22,8 @@ init(_ observation: VNHumanObservation)
 
 ## See Also
 
-- [init(boundingBox: NormalizedRect, revision: DetectHumanRectanglesRequest.Revision?)](humanobservation/init(boundingbox:revision:).md)
+### Creating an observation
+- [init(boundingBox: NormalizedRect, revision: DetectHumanRectanglesRequest.Revision?)](./init%28boundingbox,revision%29.md)
 
 
 ---

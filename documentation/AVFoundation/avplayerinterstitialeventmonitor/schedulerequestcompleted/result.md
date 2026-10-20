@@ -1,7 +1,8 @@
 # result
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,7 +21,8 @@ let result: Result<Data, any Error>
 
 ## See Also
 
-- [let scheduleIdentifier: String](avplayerinterstitialeventmonitor/schedulerequestcompleted/scheduleidentifier.md)
+### Inspecting the completion
+- [let scheduleIdentifier: String](./scheduleidentifier.md)
 
 
 ---

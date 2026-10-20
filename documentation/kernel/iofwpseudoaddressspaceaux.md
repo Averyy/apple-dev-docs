@@ -1,48 +1,50 @@
 # IOFWPseudoAddressSpaceAux
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```cpp
 class IOFWPseudoAddressSpaceAux : IOFWAddressSpaceAux
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [setARxReqIntCompleteHandler](iofwpseudoaddressspaceaux/1812922-setarxreqintcompletehandler.md)
+- [setARxReqIntCompleteHandler](./iofwpseudoaddressspaceaux/api-1812922-setarxreqintcompletehandler.md)
   Installs a callback to receive notification, when FWIM has completed ARxReqInt processing and no incoming packets are left in the queue.
 ### Instance Methods
-- [- createMemberVariables](iofwpseudoaddressspaceaux/1584058-createmembervariables.md)
-- [- destroyMemberVariables](iofwpseudoaddressspaceaux/1584076-destroymembervariables.md)
-- [- free](iofwpseudoaddressspaceaux/1584080-free.md)
-- [- getMetaClass](iofwpseudoaddressspaceaux/1584065-getmetaclass.md)
-- [- handleARxReqIntComplete](iofwpseudoaddressspaceaux/1584071-handlearxreqintcomplete.md)
-- [- init](iofwpseudoaddressspaceaux/1584053-init.md)
-- [- intersects](iofwpseudoaddressspaceaux/1584078-intersects.md)
-- [- setARxReqIntCompleteHandler](iofwpseudoaddressspaceaux/1584069-setarxreqintcompletehandler.md)
+- [- createMemberVariables](./iofwpseudoaddressspaceaux/api-1584058-createmembervariables.md)
+- [- destroyMemberVariables](./iofwpseudoaddressspaceaux/api-1584076-destroymembervariables.md)
+- [- free](./iofwpseudoaddressspaceaux/api-1584080-free.md)
+- [- getMetaClass](./iofwpseudoaddressspaceaux/api-1584065-getmetaclass.md)
+- [- handleARxReqIntComplete](./iofwpseudoaddressspaceaux/api-1584071-handlearxreqintcomplete.md)
+- [- init](./iofwpseudoaddressspaceaux/api-1584053-init.md)
+- [- intersects](./iofwpseudoaddressspaceaux/api-1584078-intersects.md)
+- [- setARxReqIntCompleteHandler](./iofwpseudoaddressspaceaux/api-1584069-setarxreqintcompletehandler.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOFWAddressSpaceAux](iofwaddressspaceaux.md)
+- [IOFWAddressSpaceAux](./iofwaddressspaceaux.md)
 
 ## See Also
 
-- [IOFWAddressSpaceAux](iofwaddressspaceaux.md)
-- [IOFWPhysicalAddressSpaceAux](iofwphysicaladdressspaceaux.md)
-- [IOFWSimpleContiguousPhysicalAddressSpace](iofwsimplecontiguousphysicaladdressspace.md)
-- [IOFireWirePCRSpace](iofirewirepcrspace.md)
+### Address Spaces
+- [IOFWAddressSpaceAux](./iofwaddressspaceaux.md)
+- [IOFWPhysicalAddressSpaceAux](./iofwphysicaladdressspaceaux.md)
+- [IOFWSimpleContiguousPhysicalAddressSpace](./iofwsimplecontiguousphysicaladdressspace.md)
+- [IOFireWirePCRSpace](./iofirewirepcrspace.md)
   object to multiplex users of the PCR plug registers
-- [IOFWPseudoAddressSpace](iofwpseudoaddressspace.md)
-- [IOFWSimplePhysicalAddressSpace](iofwsimplephysicaladdressspace.md)
-- [IOFWPhysicalAddressSpace](iofwphysicaladdressspace.md)
-- [IOFWAddressSpace](iofwaddressspace.md)
+- [IOFWPseudoAddressSpace](./iofwpseudoaddressspace.md)
+- [IOFWSimplePhysicalAddressSpace](./iofwsimplephysicaladdressspace.md)
+- [IOFWPhysicalAddressSpace](./iofwphysicaladdressspace.md)
+- [IOFWAddressSpace](./iofwaddressspace.md)
 
 
 ---

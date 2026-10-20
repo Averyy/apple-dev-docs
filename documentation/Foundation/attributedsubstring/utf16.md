@@ -1,7 +1,8 @@
 # utf16
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view of the attributed substring’s contents as a collection of UTF-16 code units.
 

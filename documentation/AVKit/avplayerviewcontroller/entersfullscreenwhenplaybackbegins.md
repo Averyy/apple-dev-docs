@@ -1,7 +1,8 @@
 # entersFullScreenWhenPlaybackBegins
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the player automatically displays in full screen when someone taps the Play button.
 
@@ -17,13 +18,18 @@ A Boolean value that determines whether the player automatically displays in ful
 var entersFullScreenWhenPlaybackBegins: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL entersFullScreenWhenPlaybackBegins;
+```
+
 #### Discussion
 
 The default value is `false`.
 
 ## See Also
 
-- [var exitsFullScreenWhenPlaybackEnds: Bool](avplayerviewcontroller/exitsfullscreenwhenplaybackends.md)
+### Managing full-screen behavior
+- [var exitsFullScreenWhenPlaybackEnds: Bool](./exitsfullscreenwhenplaybackends.md)
   A Boolean value that indicates whether the player exits full-screen mode when playback ends.
 
 

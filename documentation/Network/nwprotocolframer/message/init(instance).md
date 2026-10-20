@@ -1,7 +1,8 @@
 # init(instance:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an empty message from within a framer implementation.
 
@@ -22,7 +23,8 @@ init(instance: NWProtocolFramer.Instance)
 
 ## See Also
 
-- [init(definition: NWProtocolFramer.Definition)](nwprotocolframer/message/init(definition:).md)
+### Creating Framer Messages
+- [init(definition: NWProtocolFramer.Definition)](./init%28definition%29.md)
   Initializes an empty message for a custom framer definition.
 
 

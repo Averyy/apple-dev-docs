@@ -1,7 +1,8 @@
 # tls_ciphersuite_t.AES_128_GCM_SHA256
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case AES_128_GCM_SHA256
+```
+
+```c
+tls_ciphersuite_AES_128_GCM_SHA256
 ```
 
 

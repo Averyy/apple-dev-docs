@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct thread_crash_exclaves_info {
     ...
 };
@@ -17,9 +17,9 @@ struct thread_crash_exclaves_info {
 ## Topics
 
 ### Instance Properties
-- [tcei_flags](thread_crash_exclaves_info/4320726-tcei_flags.md)
-- [tcei_scid](thread_crash_exclaves_info/4320727-tcei_scid.md)
-- [tcei_thread_id](thread_crash_exclaves_info/4320728-tcei_thread_id.md)
+- [tcei_flags](./thread_crash_exclaves_info/api-4320726-tcei_flags.md)
+- [tcei_scid](./thread_crash_exclaves_info/api-4320727-tcei_scid.md)
+- [tcei_thread_id](./thread_crash_exclaves_info/api-4320728-tcei_thread_id.md)
 
 
 ---

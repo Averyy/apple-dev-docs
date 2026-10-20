@@ -1,7 +1,8 @@
 # findInteraction(_:didEnd:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the interaction is about to dismiss the find panel.
 
@@ -17,6 +18,10 @@ Informs the delegate when the interaction is about to dismiss the find panel.
 optional func findInteraction(_ interaction: UIFindInteraction, didEnd session: UIFindSession)
 ```
 
+```objc
+- (void) findInteraction:(UIFindInteraction *) interaction didEndFindSession:(UIFindSession *) session;
+```
+
 #### Discussion
 
 Use this method to undo decoration on your view to indicate that a search operation is complete. For example, remove a dimming view from around the unhighlighted search results.
@@ -28,7 +33,8 @@ Use this method to undo decoration on your view to indicate that a search operat
 
 ## See Also
 
-- [func findInteraction(UIFindInteraction, didBegin: UIFindSession)](uifindinteractiondelegate/findinteraction(_:didbegin:).md)
+### Decorating the searched content
+- [func findInteraction(UIFindInteraction, didBegin: UIFindSession)](./findinteraction%28_,didbegin%29.md)
   Informs the delegate when the interaction is about to present the find panel.
 
 

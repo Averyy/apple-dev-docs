@@ -1,7 +1,8 @@
 # SetSampleRate
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the sample rate for the clock device.
 
@@ -10,13 +11,13 @@ Sets the sample rate for the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetSampleRate(double in_sample_rate);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -30,13 +31,14 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [GetSampleRate](iouseraudioclockdevice/getsamplerate.md)
+### Working with Sample Rates
+- [GetSampleRate](./getsamplerate.md)
   Gets the sample rate of the clock device.
-- [SetAvailableSampleRates](iouseraudioclockdevice/setavailablesamplerates.md)
+- [SetAvailableSampleRates](./setavailablesamplerates.md)
   Sets the available sample rates for the clock device.
-- [GetAvailableSampleRates](iouseraudioclockdevice/getavailablesamplerates.md)
+- [GetAvailableSampleRates](./getavailablesamplerates.md)
   Gets the available sample rates of the clock device.
-- [GetNumberAvailableSampleRates](iouseraudioclockdevice/getnumberavailablesamplerates.md)
+- [GetNumberAvailableSampleRates](./getnumberavailablesamplerates.md)
   Gets the number of available sample rates of the clock device.
 
 

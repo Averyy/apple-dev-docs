@@ -1,7 +1,8 @@
 # LowLevelRenderer.CameraArray
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mutable, fixed-capacity array of camera values.
 
@@ -19,34 +20,35 @@ struct CameraArray
 
 #### Overview
 
-Set `count` to the number of active cameras before calling [`render(using:_:)`](lowlevelrenderer/render(using:_:).md).
+Set `count` to the number of active cameras before calling [`render(using:_:)`](./render%28using,_%29.md).
 
 ## Topics
 
 ### Creating a camera array
-- [init(cameras: [LowLevelRenderer.Camera])](lowlevelrenderer/cameraarray/init(cameras:).md)
+- [init(cameras: [LowLevelRenderer.Camera])](./cameraarray/init%28cameras%29.md)
   Creates a camera array populated with the given cameras.
 ### Accessing the camera count
-- [var count: Int](lowlevelrenderer/cameraarray/count.md)
+- [var count: Int](./cameraarray/count.md)
   The number of active cameras.
-- [static let maxCount: Int](lowlevelrenderer/cameraarray/maxcount.md)
+- [static let maxCount: Int](./cameraarray/maxcount.md)
   The maximum number of cameras supported.
 ### Subscripts
-- [subscript(Int) -> LowLevelRenderer.Camera](lowlevelrenderer/cameraarray/subscript(_:).md)
+- [subscript(Int) -> LowLevelRenderer.Camera](./cameraarray/subscript%28_%29.md)
   Returns or sets the camera at the given index.
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var cameras: LowLevelRenderer.CameraArray](lowlevelrenderer/cameras.md)
+### Configuring cameras
+- [var cameras: LowLevelRenderer.CameraArray](./cameras.md)
   The array of active cameras.
-- [LowLevelRenderer.Camera](lowlevelrenderer/camera.md)
+- [LowLevelRenderer.Camera](./camera.md)
   The view and projection parameters for a single camera.
 
 

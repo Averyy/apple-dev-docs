@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared main menu system.
 
@@ -16,6 +17,10 @@ The shared main menu system.
 
 ```swift
 class var shared: UIMainMenuSystem { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIMainMenuSystem * sharedSystem;
 ```
 
 

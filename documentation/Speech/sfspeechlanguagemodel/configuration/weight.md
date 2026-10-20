@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relative weight of the language model customization. Value must be between 0.0 and 1.0 inclusive.
 
@@ -19,11 +20,16 @@ The relative weight of the language model customization. Value must be between 0
 var weight: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * weight;
+```
+
 ## See Also
 
-- [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
+### Inspecting a language model
+- [var languageModel: URL](./languagemodel.md)
   The location of a compiled language model file.
-- [var vocabulary: URL?](sfspeechlanguagemodel/configuration/vocabulary.md)
+- [var vocabulary: URL?](./vocabulary.md)
   The location of a compiled vocabulary file.
 
 

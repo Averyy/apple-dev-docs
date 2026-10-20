@@ -1,7 +1,8 @@
 # includeAddresses
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the search results include addresses.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the search results include addresses.
 
 ## Declaration
 
-```swift
+```
 get includeAddresses(): boolean;
 set includeAddresses(value: boolean);
 ```

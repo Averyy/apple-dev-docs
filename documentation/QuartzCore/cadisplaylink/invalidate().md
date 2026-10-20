@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the display link from all run loop modes.
 
@@ -19,6 +20,10 @@ Removes the display link from all run loop modes.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 When you remove the display link from all run loop mode, the system releases it. The display link also releases the target.
@@ -27,9 +32,10 @@ This method is thread safe, so you can call it from a thread separate to the one
 
 ## See Also
 
-- [func add(to: RunLoop, forMode: RunLoop.Mode)](cadisplaylink/add(to:formode:).md)
+### Scheduling a Display Link to Send Notifications
+- [func add(to: RunLoop, forMode: RunLoop.Mode)](./add%28to,formode%29.md)
   Registers the display link with a run loop.
-- [func remove(from: RunLoop, forMode: RunLoop.Mode)](cadisplaylink/remove(from:formode:).md)
+- [func remove(from: RunLoop, forMode: RunLoop.Mode)](./remove%28from,formode%29.md)
   Removes the display link from the run loop for the given mode.
 
 

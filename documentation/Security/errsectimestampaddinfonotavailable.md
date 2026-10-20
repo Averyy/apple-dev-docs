@@ -1,7 +1,8 @@
 # errSecTimestampAddInfoNotAvailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The additional information requested is not available.
 
@@ -18,6 +19,10 @@ The additional information requested is not available.
 
 ```swift
 var errSecTimestampAddInfoNotAvailable: OSStatus { get }
+```
+
+```c
+errSecTimestampAddInfoNotAvailable
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the input provides analog values.
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the input provides analog values.
 
 ```swift
 var isAnalog: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isAnalog) BOOL analog;
 ```
 
 

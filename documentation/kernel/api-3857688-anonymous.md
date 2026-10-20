@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [IOUSBHostCILinkData1TransferStructureAddress](3857688-anonymous/iousbhostcilinkdata1transferstructureaddress.md)
-- [IOUSBHostCILinkData1TransferStructureAddressPhase](3857688-anonymous/iousbhostcilinkdata1transferstructureaddressphase.md)
+- [IOUSBHostCILinkData1TransferStructureAddress](./api-3857688-anonymous/iousbhostcilinkdata1transferstructureaddress.md)
+- [IOUSBHostCILinkData1TransferStructureAddressPhase](./api-3857688-anonymous/iousbhostcilinkdata1transferstructureaddressphase.md)
 
 
 ---

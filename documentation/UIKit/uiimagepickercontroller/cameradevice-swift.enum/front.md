@@ -1,14 +1,15 @@
 # UIImagePickerController.CameraDevice.front
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the camera on the front of the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ Specifies the camera on the front of the device.
 case front
 ```
 
+```c
+UIImagePickerControllerCameraDeviceFront
+```
+
 ## See Also
 
-- [UIImagePickerController.CameraDevice.rear](uiimagepickercontroller/cameradevice-swift.enum/rear.md)
+### Constants
+- [UIImagePickerController.CameraDevice.rear](./rear.md)
   Specifies the camera on the rear of the device.
 
 

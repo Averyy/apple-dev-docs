@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [static let standardConfiguration: PredicateCodableConfiguration](predicatecodableconfiguration/standardconfiguration.md)
+### Creating a configuration
+- [static let standardConfiguration: PredicateCodableConfiguration](./standardconfiguration.md)
 
 
 ---

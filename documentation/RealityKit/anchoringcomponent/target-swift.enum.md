@@ -1,7 +1,8 @@
 # AnchoringComponent.Target
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the kinds of real world objects to which an anchor entity can be tethered.
 
@@ -11,7 +12,7 @@ Defines the kinds of real world objects to which an anchor entity can be tethere
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,69 +23,70 @@ enum Target
 ## Topics
 
 ### Basic anchor targets
-- [AnchoringComponent.Target.world(transform:)](anchoringcomponent/target-swift.enum/world(transform:).md)
+- [AnchoringComponent.Target.world(transform:)](./target-swift.enum/world%28transform%29.md)
   An anchor point attached to a fixed position in the scene.
-- [case plane(AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](anchoringcomponent/target-swift.enum/plane(_:classification:minimumbounds:).md)
+- [case plane(AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](./target-swift.enum/plane%28_,classification,minimumbounds%29.md)
   An anchor point attached to a real world surface.
-- [AnchoringComponent.Target.camera](anchoringcomponent/target-swift.enum/camera.md)
+- [AnchoringComponent.Target.camera](./target-swift.enum/camera.md)
   An anchor point attached to the device’s camera.
-- [AnchoringComponent.Target.anchor(identifier:)](anchoringcomponent/target-swift.enum/anchor(identifier:).md)
+- [AnchoringComponent.Target.anchor(identifier:)](./target-swift.enum/anchor%28identifier%29.md)
   An anchor point attached to the AR anchor with a given identifier.
 ### Human anchor targets
-- [AnchoringComponent.Target.face](anchoringcomponent/target-swift.enum/face.md)
+- [AnchoringComponent.Target.face](./target-swift.enum/face.md)
   An anchor point attached to the user’s face.
-- [AnchoringComponent.Target.body](anchoringcomponent/target-swift.enum/body.md)
+- [AnchoringComponent.Target.body](./target-swift.enum/body.md)
   An anchor point attached to a human body in motion within the scene.
-- [case hand(AnchoringComponent.Target.Chirality, location: AnchoringComponent.Target.HandLocation)](anchoringcomponent/target-swift.enum/hand(_:location:).md)
+- [case hand(AnchoringComponent.Target.Chirality, location: AnchoringComponent.Target.HandLocation)](./target-swift.enum/hand%28_,location%29.md)
   An anchor point attached to a specific location on the user’s hand.
-- [AnchoringComponent.Target.head](anchoringcomponent/target-swift.enum/head.md)
+- [AnchoringComponent.Target.head](./target-swift.enum/head.md)
   An anchor point attached to the user’s head.
 ### Image and object anchor targets
-- [AnchoringComponent.Target.image(group:name:)](anchoringcomponent/target-swift.enum/image(group:name:).md)
+- [AnchoringComponent.Target.image(group:name:)](./target-swift.enum/image%28group,name%29.md)
   An anchor point attached to the image specified by a group and a name in AR Resources.
-- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](anchoringcomponent/target-swift.enum/referenceimage(from:).md)
+- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](./target-swift.enum/referenceimage%28from%29.md)
   An anchor point attached to the image specified by an image anchoring source.
-- [AnchoringComponent.Target.object(group:name:)](anchoringcomponent/target-swift.enum/object(group:name:).md)
+- [AnchoringComponent.Target.object(group:name:)](./target-swift.enum/object%28group,name%29.md)
   An anchor point attached to the object specified by a group and a name in AR Resources.
-- [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](anchoringcomponent/target-swift.enum/referenceobject(from:).md)
+- [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](./target-swift.enum/referenceobject%28from%29.md)
   An anchor point attached to an object that matches the reference of an object anchor.
 ### Structures
-- [AnchoringComponent.Target.Alignment](anchoringcomponent/target-swift.enum/alignment.md)
+- [AnchoringComponent.Target.Alignment](./target-swift.enum/alignment.md)
   Defines the alignment of real-world surfaces to seek as targets.
-- [AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification.md)
+- [AnchoringComponent.Target.Classification](./target-swift.enum/classification.md)
   Defines types of real-world surfaces to seek as targets.
-- [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
+- [AnchoringComponent.Target.HandLocation](./target-swift.enum/handlocation.md)
   Defines the locations of tracked hands to look for.
 ### Operators
-- [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](anchoringcomponent/target-swift.enum/==(_:_:).md)
+- [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](./target-swift.enum/eqeq%28_,_%29.md)
   Indicates whether two targets are equal.
 ### Enumeration Cases
-- [case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocation)](anchoringcomponent/target-swift.enum/accessory(from:location:).md)
+- [case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocation)](./target-swift.enum/accessory%28from,location%29.md)
   An anchor point attached to a specific point on a tracked accessory.
 ### Instance Methods
-- [func hash(into: inout Hasher)](anchoringcomponent/target-swift.enum/hash(into:).md)
+- [func hash(into: inout Hasher)](./target-swift.enum/hash%28into%29.md)
   Hashes the essential components of the target by feeding them into the given hash function.
 ### Enumerations
-- [AnchoringComponent.Target.Chirality](anchoringcomponent/target-swift.enum/chirality.md)
+- [AnchoringComponent.Target.Chirality](./target-swift.enum/chirality.md)
   Defines the chirality of tracked hands to look for.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [struct AnchoringComponent](anchoringcomponent.md)
+### Anchoring components
+- [struct AnchoringComponent](../anchoringcomponent.md)
   A component that anchors virtual content to a real world target.
-- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
+- [AnchoringComponent.TrackingMode](./trackingmode-swift.struct.md)
   Options for how an entity tracks its target anchor.
-- [struct ARKitAnchorComponent](arkitanchorcomponent.md)
+- [struct ARKitAnchorComponent](../arkitanchorcomponent.md)
   A component that exposes the backing ARKit data of an anchored entity.
-- [class AnchorEntity](anchorentity.md)
+- [class AnchorEntity](../anchorentity.md)
   An anchor that tethers entities to a scene.
-- [protocol HasAnchoring](hasanchoring.md)
+- [protocol HasAnchoring](../hasanchoring.md)
   An interface that enables anchoring of virtual content to a real-world object in an AR scene.
 
 

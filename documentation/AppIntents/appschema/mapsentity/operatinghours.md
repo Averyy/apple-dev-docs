@@ -1,7 +1,8 @@
 # operatingHours
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An entity schema for an operating hours.
 
@@ -20,7 +21,7 @@ var operatingHours: some AppSchemaEntity { get }
 
 #### Discussion
 
-To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `maps` domain and its content matches the `operatingHours` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity( .maps.operatingHours)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](../../appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `maps` domain and its content matches the `operatingHours` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity( .maps.operatingHours)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an app entity that conforms to the `operatingHours` schema:
 
@@ -62,21 +63,22 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var currentLocation: some AppSchemaEntity](appschema/mapsentity/currentlocation.md)
+### Content and parameter types
+- [var currentLocation: some AppSchemaEntity](./currentlocation.md)
   An entity schema for a current location.
-- [var navigationSession: some AppSchemaEntity](appschema/mapsentity/navigationsession.md)
+- [var navigationSession: some AppSchemaEntity](./navigationsession.md)
   An entity schema for a navigation session.
-- [var operatingTimeRange: some AppSchemaEntity](appschema/mapsentity/operatingtimerange.md)
+- [var operatingTimeRange: some AppSchemaEntity](./operatingtimerange.md)
   An entity schema for an operating time range.
-- [var place: some AppSchemaEntity](appschema/mapsentity/place.md)
+- [var place: some AppSchemaEntity](./place.md)
   An entity schema for a place.
-- [var rating: some AppSchemaEntity](appschema/mapsentity/rating.md)
+- [var rating: some AppSchemaEntity](./rating.md)
   An entity schema for a rating.
-- [AppSchema.MapsEntity](appschema/mapsentity.md)
+- [AppSchema.MapsEntity](../mapsentity.md)
   Identifies entity schemas in the maps domain.
 
 

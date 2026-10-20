@@ -1,7 +1,8 @@
 # WebContentFilter.VendorConfig
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A custom dictionary for the filtering service plug-in.
 
@@ -14,7 +15,7 @@ A custom dictionary for the filtering service plug-in.
 
 ## Declaration
 
-```swift
+```
 object WebContentFilter.VendorConfig
 ```
 
@@ -24,11 +25,12 @@ object WebContentFilter.VendorConfig
 
 ## See Also
 
-- [object WebContentFilter.AllowListBookmarksItem](webcontentfilter/allowlistbookmarksitem.md)
+### Objects
+- [object WebContentFilter.AllowListBookmarksItem](./allowlistbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
-- [object WebContentFilter.URLFilterParameters](webcontentfilter/urlfilterparameters-data.dictionary.md)
+- [object WebContentFilter.URLFilterParameters](./urlfilterparameters-data.dictionary.md)
   A dictionary containing URL filter parameters.
-- [object WebContentFilter.WhitelistedBookmarksItem](webcontentfilter/whitelistedbookmarksitem.md)
+- [object WebContentFilter.WhitelistedBookmarksItem](./whitelistedbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
 
 

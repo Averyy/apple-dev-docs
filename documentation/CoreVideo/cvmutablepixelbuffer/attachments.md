@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access attachments of this pixel buffer.
 

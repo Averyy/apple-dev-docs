@@ -1,7 +1,8 @@
 # ManipulationComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that adds fluid and immersive interactive behaviors and effects.
 
@@ -20,72 +21,79 @@ struct ManipulationComponent
 
 ##### Interaction Features
 
-- **Gestures**: - Single-hand or trackpad gestures allow translation of the entity.
-- Rotating the hand changes the orientation of the object.
-- Two-hand gestures allow intuitive scaling and rotation.
-- The system supports handoff between hands for seamless manipulation.
-- **Audio Feedback**: - The system plays audio cues at key interaction moments (e.g., pinch, handoff, release).
-- To disable system audio or use custom sounds, set [`audioConfiguration`](manipulationcomponent/audioconfiguration-swift.property.md) to `.none`, and use component events to trigger your own audio responses.
-- **Component Events**: - `ManipulationComponent` publishes events through the entity’s `Scene` to notify you of key stages in the interaction lifecycle.
-- See [`ManipulationEvents`](manipulationevents.md) for details on available events.
+- **Gestures**:
+
+  - Single-hand or trackpad gestures allow translation of the entity.
+  - Rotating the hand changes the orientation of the object.
+  - Two-hand gestures allow intuitive scaling and rotation.
+  - The system supports handoff between hands for seamless manipulation.
+- **Audio Feedback**:
+
+  - The system plays audio cues at key interaction moments (e.g., pinch, handoff, release).
+  - To disable system audio or use custom sounds, set [`audioConfiguration`](./manipulationcomponent/audioconfiguration-swift.property.md) to `.none`, and use component events to trigger your own audio responses.
+- **Component Events**:
+
+  - `ManipulationComponent` publishes events through the entity’s `Scene` to notify you of key stages in the interaction lifecycle.
+  - See [`ManipulationEvents`](./manipulationevents.md) for details on available events.
 
 When you add this component to an entity, the system modifies the entity’s transform directly. If you need to apply your own transforms, consider applying them to a **subentity** instead, or listening to component events and responding accordingly.
 
 ##### Interaction Lifecycle
 
-During a typical interaction, the system transitions through several stages, each stage has a specific event in [`ManipulationEvents`](manipulationevents.md). You can subscribe to these events to implement custom behaviors, audio feedback, analytics, or visual responses:
+During a typical interaction, the system transitions through several stages, each stage has a specific event in [`ManipulationEvents`](./manipulationevents.md). You can subscribe to these events to implement custom behaviors, audio feedback, analytics, or visual responses:
 
-1. **Interaction Will Begin**: [`ManipulationEvents.WillBegin`](manipulationevents/willbegin.md)
-You can use this to add additional feedback, which lets someone know they have begun manipulating the entity.
-2. **Object Handed Off**: [`ManipulationEvents.DidHandOff`](manipulationevents/didhandoff.md)
-You can use this to provide visual or auditory confirmation of transfer.
-3. **Transform Updated**: [`ManipulationEvents.DidUpdateTransform`](manipulationevents/didupdatetransform.md)
-You can use this to drive effects like trails, dynamic shadows, or visual feedback.
-4. **Interaction Will Release**: [`ManipulationEvents.WillRelease`](manipulationevents/willrelease.md)
-You can use this to run a final visual cue that the person’s manipulation of the entity is about to end.
-5. **Interaction Will End**: [`ManipulationEvents.WillEnd`](manipulationevents/willend.md)
-You can use this event to remove visual cues to show that neither the person nor the app are actively manipulating the entity’s transform anymore.
+1. **Interaction Will Begin**: [`ManipulationEvents.WillBegin`](./manipulationevents/willbegin.md)
+   You can use this to add additional feedback, which lets someone know they have begun manipulating the entity.
+2. **Object Handed Off**: [`ManipulationEvents.DidHandOff`](./manipulationevents/didhandoff.md)
+   You can use this to provide visual or auditory confirmation of transfer.
+3. **Transform Updated**: [`ManipulationEvents.DidUpdateTransform`](./manipulationevents/didupdatetransform.md)
+   You can use this to drive effects like trails, dynamic shadows, or visual feedback.
+4. **Interaction Will Release**: [`ManipulationEvents.WillRelease`](./manipulationevents/willrelease.md)
+   You can use this to run a final visual cue that the person’s manipulation of the entity is about to end.
+5. **Interaction Will End**: [`ManipulationEvents.WillEnd`](./manipulationevents/willend.md)
+   You can use this event to remove visual cues to show that neither the person nor the app are actively manipulating the entity’s transform anymore.
 
 ## Topics
 
 ### Creating a manipulation component
-- [init()](manipulationcomponent/init.md)
+- [init()](./manipulationcomponent/init%28%29.md)
   Creates a manipulation component.
 ### Configuring the manipulation
-- [static func configureEntity(Entity, hoverEffect: HoverEffectComponent.HoverEffect?, allowedInputTypes: InputTargetComponent.InputType?, collisionShapes: [ShapeResource]?)](manipulationcomponent/configureentity(_:hovereffect:allowedinputtypes:collisionshapes:).md)
+- [static func configureEntity(Entity, hoverEffect: HoverEffectComponent.HoverEffect?, allowedInputTypes: InputTargetComponent.InputType?, collisionShapes: [ShapeResource]?)](./manipulationcomponent/configureentity%28_,hovereffect,allowedinputtypes,collisionshapes%29.md)
   Apply a default configuration to an entity to enable to it for use with manipulation component.
-- [var audioConfiguration: ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.property.md)
+- [var audioConfiguration: ManipulationComponent.AudioConfiguration](./manipulationcomponent/audioconfiguration-swift.property.md)
   The audio configuration to apply to the object over the course of the interaction.
-- [var dynamics: ManipulationComponent.Dynamics](manipulationcomponent/dynamics-swift.property.md)
+- [var dynamics: ManipulationComponent.Dynamics](./manipulationcomponent/dynamics-swift.property.md)
   The dynamics controlling the object’s movement and behaviors during the interaction.
-- [var releaseBehavior: ManipulationComponent.ReleaseBehavior](manipulationcomponent/releasebehavior-swift.property.md)
+- [var releaseBehavior: ManipulationComponent.ReleaseBehavior](./manipulationcomponent/releasebehavior-swift.property.md)
   The behavior to apply to the object’s transform when someone releases it.
 ### Structures
-- [ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.struct.md)
+- [ManipulationComponent.AudioConfiguration](./manipulationcomponent/audioconfiguration-swift.struct.md)
   A configuration for audio playback during an interaction.
-- [ManipulationComponent.Dynamics](manipulationcomponent/dynamics-swift.struct.md)
+- [ManipulationComponent.Dynamics](./manipulationcomponent/dynamics-swift.struct.md)
   Settings that allow customization of the interaction behavior per target.
-- [ManipulationComponent.HitTarget](manipulationcomponent/hittarget.md)
+- [ManipulationComponent.HitTarget](./manipulationcomponent/hittarget.md)
   A component that redirects input to a different entity with a `ManipulationComponent`.
-- [ManipulationComponent.InputDevice](manipulationcomponent/inputdevice.md)
+- [ManipulationComponent.InputDevice](./manipulationcomponent/inputdevice.md)
   Describes an input device like a hand or a trackpad.
-- [ManipulationComponent.ReleaseBehavior](manipulationcomponent/releasebehavior-swift.struct.md)
+- [ManipulationComponent.ReleaseBehavior](./manipulationcomponent/releasebehavior-swift.struct.md)
   A behavior describing the path the object takes when it’s released after an interaction.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+### Direct and indirect gestures
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [struct InputTargetComponent](inputtargetcomponent.md)
+- [struct InputTargetComponent](./inputtargetcomponent.md)
   A component that gives an entity the ability to receive system input.
-- [struct GestureComponent](gesturecomponent.md)
+- [struct GestureComponent](./gesturecomponent.md)
   A component attaching a UI gesture to an entity.
-- [struct EntityTargetValue](entitytargetvalue.md)
+- [struct EntityTargetValue](./entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 
 

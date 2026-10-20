@@ -1,17 +1,20 @@
 # paymentQueue(_:shouldAddStorePayment:for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer when a user initiates an Apple In-App Purchase from the App Store.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0
+- iPadOS 11.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 11.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use PurchaseIntent.intents.
 
 ## Declaration
 
@@ -19,10 +22,14 @@ Tells the observer when a user initiates an Apple In-App Purchase from the App S
 optional func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool
 ```
 
+```objc
+- (BOOL) paymentQueue:(SKPaymentQueue *) queue shouldAddStorePayment:(SKPayment *) payment forProduct:(SKProduct *) product;
+```
+
 ## Mentions
 
-- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md)
+- [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Return Value
 
@@ -32,7 +39,7 @@ Return `true` to continue the transaction in your app.
 
 Return `false` to defer or cancel the transaction.
 
-If you return `false`, you can continue the transaction later by manually adding the [`SKPayment`](skpayment.md) `payment` to the [`SKPaymentQueue`](skpaymentqueue.md) `queue`.
+If you return `false`, you can continue the transaction later by manually adding the [`SKPayment`](../skpayment.md) `payment` to the [`SKPaymentQueue`](../skpaymentqueue.md) `queue`.
 
 #### Discussion
 
@@ -40,9 +47,9 @@ The system calls this delegate method when the user starts an Apple In-App Purch
 
 If your app isn’t installed when the user starts the Apple In-App Purchase in the App Store, the user receives a notification when the app installation is complete. StoreKit calls this method when the user taps the notification. Otherwise, if the user opens the app manually, StoreKit calls this method only if they open the app soon after they initiate the purchase.
 
-> ❗ **Important**:  To enable promoted Apple In-App Purchases, your app needs to use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version).
+> ❗ **Important**:  To enable promoted Apple In-App Purchases, your app needs to use either [`PurchaseIntent`](../purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](./paymentqueue%28_,shouldaddstorepayment,for%29.md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [Running code on a specific platform or OS version](../../Xcode/running-code-on-a-specific-version.md).
 
-For more information, see [`Promoting Apple In-App Purchases`](promoting-in-app-purchases.md).
+For more information, see [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md).
 
 ## Parameters
 
@@ -52,7 +59,8 @@ For more information, see [`Promoting Apple In-App Purchases`](promoting-in-app-
 
 ## See Also
 
-- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
+### Handling promoted Apple In-App Purchases
+- [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md)
   Show promoted Apple In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
 
 

@@ -1,7 +1,8 @@
 # titleVisibility
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visibility of the title text rendered beneath the marker balloon.
 
@@ -19,11 +20,16 @@ The visibility of the title text rendered beneath the marker balloon.
 var titleVisibility: MKFeatureVisibility { get set }
 ```
 
+```objc
+@property (nonatomic) MKFeatureVisibility titleVisibility;
+```
+
 ## See Also
 
-- [var subtitleVisibility: MKFeatureVisibility](mkmarkerannotationview/subtitlevisibility.md)
+### Setting the Visibility
+- [var subtitleVisibility: MKFeatureVisibility](./subtitlevisibility.md)
   The visibility of the subtitle text rendered beneath the marker balloon.
-- [enum MKFeatureVisibility](mkfeaturevisibility.md)
+- [enum MKFeatureVisibility](../mkfeaturevisibility.md)
   Constants that indicate the visibility of different map features.
 
 

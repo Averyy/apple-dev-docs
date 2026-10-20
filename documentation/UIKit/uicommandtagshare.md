@@ -1,7 +1,8 @@
 # UICommandTagShare
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that identifies a command as a Share menu.
 
@@ -18,9 +19,13 @@ A value that identifies a command as a Share menu.
 let UICommandTagShare: String
 ```
 
+```c
+extern NSString * const UICommandTagShare;
+```
+
 #### Discussion
 
-To create a Share menu, add [`UICommandTagShare`](uicommandtagshare.md) to the `propertyList` of a [`UICommand`](uicommand.md) or [`UIKeyCommand`](uikeycommand.md) object.
+To create a Share menu, add [`UICommandTagShare`](./uicommandtagshare.md) to the `propertyList` of a [`UICommand`](./uicommand.md) or [`UIKeyCommand`](./uikeycommand.md) object.
 
 ```swift
 // Ensure that the builder is modifying the menu bar system.
@@ -38,7 +43,8 @@ builder.insertSibling(shareMenu, beforeMenu: .close)
 
 ## See Also
 
-- [var propertyList: Any?](uicommand/propertylist.md)
+### Associating data
+- [var propertyList: Any?](./uicommand/propertylist.md)
   An object that contains data to associate with the command.
 
 

@@ -1,7 +1,8 @@
 # originals
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var originals: any MDLObjectContainerComponent { get set }
+```
+
+```objc
+@property (nonatomic, retain) id<MDLObjectContainerComponent> originals;
 ```
 
 

@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type of the file.
 
@@ -20,13 +21,14 @@ If you don’t set this property, the framework infers a content type from the U
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/fileuploadrequest/cellularserviceid.md)
+### Accessing upload request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   The service identifier associated with this request.
-- [var fileURL: URL](rcsservice/fileuploadrequest/fileurl.md)
+- [var fileURL: URL](./fileurl.md)
   The URL of the file to upload.
-- [var thumbnailURL: URL?](rcsservice/fileuploadrequest/thumbnailurl.md)
+- [var thumbnailURL: URL?](./thumbnailurl.md)
   An optional file URL for a thumbnail image.
-- [var thumbnailContentType: UTType?](rcsservice/fileuploadrequest/thumbnailcontenttype.md)
+- [var thumbnailContentType: UTType?](./thumbnailcontenttype.md)
   The content type of the thumbnail.
 
 

@@ -1,7 +1,8 @@
 # init(named:in:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an AudioFileResource asynchronously.
 
@@ -26,7 +27,8 @@ Initializes an AudioFileResource asynchronously.
 
 ## See Also
 
-- [convenience init(named: String, from: String, in: Bundle?) async throws](audiofileresource/init(named:from:in:).md)
+### Loading audio from a bundle
+- [convenience init(named: String, from: String, in: Bundle?) async throws](./init%28named,from,in%29.md)
   Initializes a preconfigured AudioFileResource asynchronously from a Reality Composer Pro project with the given `name` as the the prim-path of the AudioFile, and the `scene` as the name of the USD file name.
 
 

@@ -1,7 +1,8 @@
 # IntentsSupported
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The names of the intents that an extension supports.
 
@@ -11,9 +12,10 @@ The names of the intents that an extension supports.
 - visionOS 1.0+
 - watchOS 3.2+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `IntentsSupported`
+- **Type**: array of string 
 
 
 ---

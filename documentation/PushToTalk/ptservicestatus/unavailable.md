@@ -1,7 +1,8 @@
 # PTServiceStatus.unavailable
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates the service is unavailable and needs to be re-established.
 
@@ -16,11 +17,16 @@ A type that indicates the service is unavailable and needs to be re-established.
 case unavailable
 ```
 
+```c
+PTServiceStatusUnavailable
+```
+
 ## See Also
 
-- [PTServiceStatus.ready](ptservicestatus/ready.md)
+### Statuses
+- [PTServiceStatus.ready](./ready.md)
   A type that indicates the service is available for use.
-- [PTServiceStatus.connecting](ptservicestatus/connecting.md)
+- [PTServiceStatus.connecting](./connecting.md)
   A type that indicates the service is attempting to establish a connection.
 
 

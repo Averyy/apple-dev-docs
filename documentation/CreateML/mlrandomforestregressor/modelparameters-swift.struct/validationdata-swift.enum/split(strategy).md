@@ -1,7 +1,8 @@
 # MLRandomForestRegressor.ModelParameters.ValidationData.split(strategy:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Generate validation data by splitting the training dataset. This is the default.
 
@@ -21,11 +22,12 @@ case split(strategy: MLSplitStrategy)
 
 ## See Also
 
-- [MLRandomForestRegressor.ModelParameters.ValidationData.table(_:)](mlrandomforestregressor/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+### Specifying validation data
+- [MLRandomForestRegressor.ModelParameters.ValidationData.table(_:)](./table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLRandomForestRegressor.ModelParameters.ValidationData.dataFrame(_:)](mlrandomforestregressor/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLRandomForestRegressor.ModelParameters.ValidationData.dataFrame(_:)](./dataframe%28_%29.md)
   Set validation data from the DataFrame provided.
-- [MLRandomForestRegressor.ModelParameters.ValidationData.none](mlrandomforestregressor/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLRandomForestRegressor.ModelParameters.ValidationData.none](./none.md)
   Do not set validation data.
 
 

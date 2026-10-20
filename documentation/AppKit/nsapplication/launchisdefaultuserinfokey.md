@@ -1,7 +1,8 @@
 # launchIsDefaultUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates if the app launch is a default launch.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates if the app launch is a default launch.
 class let launchIsDefaultUserInfoKey: String
 ```
 
+```c
+extern NSString * const NSApplicationLaunchIsDefaultLaunchKey;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing a Boolean value. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the app was launched to open or print a file, to perform a Service action, if the app had saved state that will be restored, or if the app launch was in some other sense not a default launch. Otherwise its value will be [`true`](https://developer.apple.com/documentation/swift/true).
+The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) containing a Boolean value. The value is [`false`](../../Swift/false.md) if the app was launched to open or print a file, to perform a Service action, if the app had saved state that will be restored, or if the app launch was in some other sense not a default launch. Otherwise its value will be [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [class let launchUserNotificationUserInfoKey: String](nsapplication/launchusernotificationuserinfokey.md)
+### Keys
+- [class let launchUserNotificationUserInfoKey: String](./launchusernotificationuserinfokey.md)
   A key that indicates your app was launched because a user activated a notification in the Notification Center.
 
 

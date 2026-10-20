@@ -1,7 +1,8 @@
 # scene(_:willConnectTo:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate about the addition of a scene to the app.
 
@@ -18,11 +19,15 @@ Tells the delegate about the addition of a scene to the app.
 optional func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)
 ```
 
+```objc
+- (void) scene:(UIScene *) scene willConnectToSession:(UISceneSession *) session options:(UISceneConnectionOptions *) connectionOptions;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
-- [About the app launch sequence](about-the-app-launch-sequence.md)
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
+- [About the app launch sequence](../about-the-app-launch-sequence.md)
+- [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Discussion
 
@@ -30,11 +35,11 @@ This method is called when your app creates or restores an instance of your user
 
 When the user or your app requests a new instance of your user interface, UIKit creates an appropriate scene object and connects it to your app. Use this method to respond to the addition of the new scene and to begin loading any data that the scene needs to display.
 
-When your app responds to scene activations requests, for example, by using [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](uiapplication/requestscenesessionactivation(_:useractivity:options:errorhandler:).md), the user activity is in the [`userActivities`](uiscene/connectionoptions/useractivities.md) set provided by options.
+When your app responds to scene activations requests, for example, by using [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](../uiapplication/requestscenesessionactivation%28_,useractivity,options,errorhandler%29.md), the user activity is in the [`userActivities`](../uiscene/connectionoptions/useractivities.md) set provided by options.
 
-When the user reactivates an instance of your user interface, UIKit creates a scene object and populates it with saved state, provided by  [`stateRestorationActivity(for:)`](uiscenedelegate/staterestorationactivity(for:).md). When your app restores state, the user activity is presented in the [`stateRestorationActivity`](uiscenesession/staterestorationactivity.md) property of session.
+When the user reactivates an instance of your user interface, UIKit creates a scene object and populates it with saved state, provided by  [`stateRestorationActivity(for:)`](./staterestorationactivity%28for%29.md). When your app restores state, the user activity is presented in the [`stateRestorationActivity`](../uiscenesession/staterestorationactivity.md) property of session.
 
-In addition to calling this method, UIKit also posts a [`willConnectNotification`](uiscene/willconnectnotification.md) notification.
+In addition to calling this method, UIKit also posts a [`willConnectNotification`](../uiscene/willconnectnotification.md) notification.
 
 ## Parameters
 
@@ -45,14 +50,15 @@ In addition to calling this method, UIKit also posts a [`willConnectNotification
 ## Topics
 
 ### Window Scenes
-- [Supporting multiple windows on iPad](supporting-multiple-windows-on-ipad.md)
+- [Supporting multiple windows on iPad](../supporting-multiple-windows-on-ipad.md)
   Support side-by-side instances of your app’s interface and create new windows.
 
 ## See Also
 
-- [func sceneDidDisconnect(UIScene)](uiscenedelegate/scenediddisconnect(_:).md)
+### Connecting and disconnecting the scene
+- [func sceneDidDisconnect(UIScene)](./scenediddisconnect%28_%29.md)
   Tells the delegate that UIKit removed a scene from your app.
-- [UIScene.ConnectionOptions](uiscene/connectionoptions.md)
+- [UIScene.ConnectionOptions](../uiscene/connectionoptions.md)
   A data object containing information about the reasons why UIKit created the scene.
 
 

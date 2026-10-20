@@ -1,7 +1,8 @@
 # init(radius:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a spherical obstacle with the specified radius.
 
@@ -17,6 +18,10 @@ Initializes a spherical obstacle with the specified radius.
 
 ```swift
 init(radius: Float)
+```
+
+```objc
+- (instancetype) initWithRadius:(float) radius;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # managingNavigationController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller that manages navigation for items in a sidebar.
 
@@ -18,11 +19,16 @@ The controller that manages navigation for items in a sidebar.
 var managingNavigationController: UINavigationController? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UINavigationController * managingNavigationController;
+```
+
 ## See Also
 
-- [var sidebarAppearance: UITabGroup.SidebarAppearance](uitabgroup/sidebarappearance-swift.property.md)
+### Configuring a tab group
+- [var sidebarAppearance: UITabGroup.SidebarAppearance](./sidebarappearance-swift.property.md)
   The appearance of a tab group’s section in a sidebar.
-- [UITabGroup.SidebarAppearance](uitabgroup/sidebarappearance-swift.enum.md)
+- [UITabGroup.SidebarAppearance](./sidebarappearance-swift.enum.md)
   The appearance of a section in a sidebar.
 
 

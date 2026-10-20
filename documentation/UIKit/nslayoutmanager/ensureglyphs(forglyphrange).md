@@ -1,7 +1,8 @@
 # ensureGlyphs(forGlyphRange:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces the layout manager to generate glyphs for the specified glyph range if it hasn’t already.
 
@@ -9,13 +10,17 @@ Forces the layout manager to generate glyphs for the specified glyph range if it
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func ensureGlyphs(forGlyphRange glyphRange: NSRange)
+```
+
+```objc
+- (void) ensureGlyphsForGlyphRange:(NSRange) glyphRange;
 ```
 
 #### Discussion
@@ -28,17 +33,18 @@ The layout manager reserves the right to perform glyph generation for larger ran
 
 ## See Also
 
-- [func ensureGlyphs(forCharacterRange: NSRange)](nslayoutmanager/ensureglyphs(forcharacterrange:).md)
+### Causing glyph generation and layout
+- [func ensureGlyphs(forCharacterRange: NSRange)](./ensureglyphs%28forcharacterrange%29.md)
   Forces the layout manager to generate glyphs for the specified character range if it hasn’t already.
-- [func ensureLayout(forBoundingRect: CGRect, in: NSTextContainer)](nslayoutmanager/ensurelayout(forboundingrect:in:).md)
+- [func ensureLayout(forBoundingRect: CGRect, in: NSTextContainer)](./ensurelayout%28forboundingrect,in%29.md)
   Forces the layout manager to perform layout for the specified area in the specified text container if it hasn’t already.
-- [func ensureLayout(forCharacterRange: NSRange)](nslayoutmanager/ensurelayout(forcharacterrange:).md)
+- [func ensureLayout(forCharacterRange: NSRange)](./ensurelayout%28forcharacterrange%29.md)
   Forces the layout manager to perform layout for the specified character range if it hasn’t already.
-- [func ensureLayout(forGlyphRange: NSRange)](nslayoutmanager/ensurelayout(forglyphrange:).md)
+- [func ensureLayout(forGlyphRange: NSRange)](./ensurelayout%28forglyphrange%29.md)
   Forces the layout manager to perform layout for the specified glyph range if it hasn’t already.
-- [func ensureLayout(for: NSTextContainer)](nslayoutmanager/ensurelayout(for:).md)
+- [func ensureLayout(for: NSTextContainer)](./ensurelayout%28for%29.md)
   Forces the layout manager to perform layout for the specified text container if it hasn’t already.
-- [var glyphGenerator: NSGlyphGenerator](../appkit/nslayoutmanager/glyphgenerator.md)
+- [var glyphGenerator: NSGlyphGenerator](../../AppKit/nslayoutmanager/glyphgenerator.md)
   The glyph generator that the layout manager uses.
 
 

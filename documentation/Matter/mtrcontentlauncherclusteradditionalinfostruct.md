@@ -1,7 +1,8 @@
 # MTRContentLauncherClusterAdditionalInfoStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,26 +19,30 @@
 class MTRContentLauncherClusterAdditionalInfoStruct
 ```
 
+```objc
+@interface MTRContentLauncherClusterAdditionalInfoStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var name: String](mtrcontentlauncherclusteradditionalinfostruct/name.md)
-- [var value: String](mtrcontentlauncherclusteradditionalinfostruct/value.md)
+- [var name: String](./mtrcontentlauncherclusteradditionalinfostruct/name.md)
+- [var value: String](./mtrcontentlauncherclusteradditionalinfostruct/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRContentLauncherClusterAdditionalInfo](mtrcontentlauncherclusteradditionalinfo.md)
+- [MTRContentLauncherClusterAdditionalInfo](./mtrcontentlauncherclusteradditionalinfo.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

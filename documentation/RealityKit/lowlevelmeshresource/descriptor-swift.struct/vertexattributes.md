@@ -1,7 +1,8 @@
 # vertexAttributes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertex input attributes.
 

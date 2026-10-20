@@ -1,14 +1,15 @@
 # gPlatformECID
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 uint8_t gPlatformECID[8];
 ```
 

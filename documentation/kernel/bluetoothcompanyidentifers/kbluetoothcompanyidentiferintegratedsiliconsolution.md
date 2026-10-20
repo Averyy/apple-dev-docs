@@ -1,14 +1,15 @@
 # kBluetoothCompanyIdentiferIntegratedSiliconSolution
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothCompanyIdentiferIntegratedSiliconSolution = 65
 ```
 

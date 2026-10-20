@@ -1,7 +1,8 @@
 # vertex(at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the point coordinates of the specified vertex.
 
@@ -19,23 +20,28 @@ Returns the point coordinates of the specified vertex.
 func vertex(at index: Int) -> vector_float2
 ```
 
+```objc
+- (vector_float2) vertexAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 The point coordinates of the specified vertex.
 
 #### Discussion
 
-Obstacles are immutable objects; to change the shape of an obstacle, remove it and create a new obstacle with a new list of vertices. Use this method along with the [`vertexCount`](gkpolygonobstacle/vertexcount.md) property to inspect an existing obstacle—for example, to draw a debugging overlay representing the obstacle in your game.
+Obstacles are immutable objects; to change the shape of an obstacle, remove it and create a new obstacle with a new list of vertices. Use this method along with the [`vertexCount`](./vertexcount.md) property to inspect an existing obstacle—for example, to draw a debugging overlay representing the obstacle in your game.
 
 The coordinate space you define obstacles in, whether used for pathfinding or with agents, is entirely arbitrary. However, it is often convenient to define pathfinding graphs and agent simulations in a coordinate space similar to the one your game uses for display—for example, in a SpriteKit game, define obstacles in the point coordinate system of your scene.
 
 ## Parameters
 
-- `index`: An index to the obstacle’s list of vertices, between zero and the value of the [`vertexCount`](gkpolygonobstacle/vertexcount.md) property.
+- `index`: An index to the obstacle’s list of vertices, between zero and the value of the [`vertexCount`](./vertexcount.md) property.
 
 ## See Also
 
-- [var vertexCount: Int](gkpolygonobstacle/vertexcount.md)
+### Inspecting Vertices
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices that define the polygon-shaped area of the obstacle.
 
 

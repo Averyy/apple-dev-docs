@@ -1,7 +1,8 @@
 # errSecInvalidOwnerEdit
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid attempt to change the owner of an item.
 
@@ -18,6 +19,10 @@ An invalid attempt to change the owner of an item.
 
 ```swift
 var errSecInvalidOwnerEdit: OSStatus { get }
+```
+
+```c
+errSecInvalidOwnerEdit
 ```
 
 

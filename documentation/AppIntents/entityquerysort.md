@@ -1,7 +1,8 @@
 # EntityQuerySort
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties to use to sort the results when the query runs.
 
@@ -11,7 +12,7 @@ The properties to use to sort the results when the query runs.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,16 +24,17 @@ struct EntityQuerySort<Entity> where Entity : AppEntity
 ## Topics
 
 ### Getting the property details
-- [let by: PartialKeyPath<Entity>](entityquerysort/by.md)
+- [let by: PartialKeyPath<Entity>](./entityquerysort/by.md)
 ### Getting the sort order
-- [let order: EntityQuerySort<Entity>.Ordering](entityquerysort/order.md)
-- [EntityQuerySort.Ordering](entityquerysort/ordering.md)
+- [let order: EntityQuerySort<Entity>.Ordering](./entityquerysort/order.md)
+- [EntityQuerySort.Ordering](./entityquerysort/ordering.md)
 
 ## See Also
 
-- [struct EntityQuerySortingOptions](entityquerysortingoptions.md)
+### Sort options
+- [struct EntityQuerySortingOptions](./entityquerysortingoptions.md)
   The potential properties you can use to sort the results of a query.
-- [struct EntityQuerySortableByProperty](entityquerysortablebyproperty.md)
+- [struct EntityQuerySortableByProperty](./entityquerysortablebyproperty.md)
   Details about a specific property you use to sort the query results.
 
 

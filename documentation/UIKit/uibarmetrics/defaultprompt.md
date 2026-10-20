@@ -1,16 +1,17 @@
 # UIBarMetrics.defaultPrompt
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Specifies default metrics for the device for bars with the prompt property, such as [`UINavigationBar`](uinavigationbar.md) and [`UISearchBar`](uisearchbar.md).
+Specifies default metrics for the device for bars with the prompt property, such as [`UINavigationBar`](../uinavigationbar.md) and [`UISearchBar`](../uisearchbar.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,18 +19,23 @@ Specifies default metrics for the device for bars with the prompt property, such
 case defaultPrompt
 ```
 
+```c
+UIBarMetricsDefaultPrompt
+```
+
 ## See Also
 
-- [UIBarMetrics.default](uibarmetrics/default.md)
+### Constants
+- [UIBarMetrics.default](./default.md)
   Specifies default metrics for the device.
-- [UIBarMetrics.compact](uibarmetrics/compact.md)
+- [UIBarMetrics.compact](./compact.md)
   Specifies metrics when using the phone idiom.
-- [UIBarMetrics.compactPrompt](uibarmetrics/compactprompt.md)
-  Specifies metrics for bars with the prompt property when using the phone idiom, such as [`UINavigationBar`](uinavigationbar.md) and [`UISearchBar`](uisearchbar.md).
-- [static var landscapePhone: UIBarMetrics](uibarmetrics/landscapephone.md)
+- [UIBarMetrics.compactPrompt](./compactprompt.md)
+  Specifies metrics for bars with the prompt property when using the phone idiom, such as [`UINavigationBar`](../uinavigationbar.md) and [`UISearchBar`](../uisearchbar.md).
+- [static var landscapePhone: UIBarMetrics](./landscapephone.md)
   Specifies metrics for landscape orientation using the phone idiom.
-- [static var landscapePhonePrompt: UIBarMetrics](uibarmetrics/landscapephoneprompt.md)
-  Specifies metrics for landscape orientation using the phone idiom for bars with the prompt property, such as [`UINavigationBar`](uinavigationbar.md) and [`UISearchBar`](uisearchbar.md).
+- [static var landscapePhonePrompt: UIBarMetrics](./landscapephoneprompt.md)
+  Specifies metrics for landscape orientation using the phone idiom for bars with the prompt property, such as [`UINavigationBar`](../uinavigationbar.md) and [`UISearchBar`](../uisearchbar.md).
 
 
 ---

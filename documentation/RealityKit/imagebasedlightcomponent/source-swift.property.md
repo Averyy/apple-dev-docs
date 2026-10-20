@@ -1,7 +1,8 @@
 # source
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Image(s) of the lighting environment
 

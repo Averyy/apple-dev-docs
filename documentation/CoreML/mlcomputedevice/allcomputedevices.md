@@ -1,7 +1,8 @@
 # allComputeDevices
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array that contains all of the compute devices that are accessible.
 

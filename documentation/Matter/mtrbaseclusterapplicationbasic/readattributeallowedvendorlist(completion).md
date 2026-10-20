@@ -1,7 +1,8 @@
 # readAttributeAllowedVendorList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAllowedVendorList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAllowedVendorList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeAllowedVendorListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

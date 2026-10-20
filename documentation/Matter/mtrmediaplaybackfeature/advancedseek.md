@@ -1,7 +1,8 @@
 # advancedSeek
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.2+
@@ -16,6 +17,10 @@
 
 ```swift
 static var advancedSeek: MTRMediaPlaybackFeature { get }
+```
+
+```c
+MTRMediaPlaybackFeatureAdvancedSeek
 ```
 
 

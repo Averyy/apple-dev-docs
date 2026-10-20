@@ -1,7 +1,8 @@
 # kIOUSB20BusCurrentMaxPowerUnits
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The maximum current power units.
 
@@ -10,7 +11,7 @@ The maximum current power units.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB20BusCurrentMaxPowerUnits = 2
 ```
 

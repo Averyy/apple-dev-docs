@@ -1,7 +1,8 @@
 # internalError
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+

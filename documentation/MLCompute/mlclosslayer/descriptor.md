@@ -1,16 +1,17 @@
 # descriptor
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration object you use to create the loss layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The configuration object you use to create the loss layer.
 var descriptor: MLCLossDescriptor { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) MLCLossDescriptor * descriptor;
+```
+
 ## See Also
 
-- [var weights: MLCTensor?](mlclosslayer/weights.md)
+### Inspecting Loss Layers
+- [var weights: MLCTensor?](./weights.md)
   The loss label weights tensor.
 
 

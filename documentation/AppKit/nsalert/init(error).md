@@ -1,17 +1,22 @@
 # init(error:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an alert initialized from information in an error object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(error: any Error)
+```
+
+```objc
++ (NSAlert *) alertWithError:(NSError *) error;
 ```
 
 #### Return Value

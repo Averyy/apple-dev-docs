@@ -1,7 +1,8 @@
 # element
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map’s DOM element.
 
@@ -10,7 +11,7 @@ The map’s DOM element.
 
 ## Declaration
 
-```swift
+```
 get element(): HTMLDivElement | null;
 set element(_: HTMLDivElement | null);
 ```

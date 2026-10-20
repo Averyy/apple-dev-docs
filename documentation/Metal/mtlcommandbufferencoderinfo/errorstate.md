@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The execution status of the command encoder.
@@ -20,13 +21,18 @@ The execution status of the command encoder.
 var errorState: MTLCommandEncoderErrorState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLCommandEncoderErrorState errorState;
+```
+
 ## See Also
 
-- [var label: String](mtlcommandbufferencoderinfo/label.md)
+### Inspecting execution information
+- [var label: String](./label.md)
   The name of the encoder that generates the error information.
-- [var debugSignposts: [String]](mtlcommandbufferencoderinfo/debugsignposts.md)
+- [var debugSignposts: [String]](./debugsignposts.md)
   An array of debug signposts that Metal records as the GPU executes the commands of the encoder’s pass.
-- [enum MTLCommandEncoderErrorState](mtlcommandencodererrorstate.md)
+- [enum MTLCommandEncoderErrorState](../mtlcommandencodererrorstate.md)
   Possible error conditions for the command encoder’s commands.
 
 

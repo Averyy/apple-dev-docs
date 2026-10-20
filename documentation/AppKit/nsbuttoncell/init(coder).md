@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(imageCell: NSImage?)](nsbuttoncell/init(imagecell:).md)
-- [init(textCell: String)](nsbuttoncell/init(textcell:).md)
+### Creating the Cell
+- [init(imageCell: NSImage?)](./init%28imagecell%29.md)
+- [init(textCell: String)](./init%28textcell%29.md)
 
 
 ---

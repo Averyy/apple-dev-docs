@@ -1,7 +1,8 @@
 # makeArgumentTable(descriptor:buffers:textures:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an argument table that binds the provided buffer slices and textures.
 
@@ -19,13 +20,13 @@ final func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffe
 
 #### Return Value
 
-A newly created [`LowLevelArgumentTable`](lowlevelargumenttable.md).
+A newly created [`LowLevelArgumentTable`](../lowlevelargumenttable.md).
 
 #### Discussion
 
 The `descriptor` must match the `argumentTableDescriptor` of the corresponding material function. The counts and sizes of `buffers` and `textures` must match the slots declared in the descriptor.
 
-> **Note**: An error if the counts or sizes of `buffers` or `textures` do not match the descriptor, or if the underlying GPU allocation fails.
+> **Throws**: An error if the counts or sizes of `buffers` or `textures` do not match the descriptor, or if the underlying GPU allocation fails.
 
 ## Parameters
 

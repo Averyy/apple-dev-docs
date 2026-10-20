@@ -1,7 +1,8 @@
 # isTemporary
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the identifier is temporary.
 
@@ -22,7 +23,7 @@ var isTemporary: Bool { get }
 
 #### Discussion
 
-A temporary identifier is assigned to a model when it is first initialized. Once you call [`save()`](modelcontext/save().md), the model receives a permanent identifier.
+A temporary identifier is assigned to a model when it is first initialized. Once you call [`save()`](../modelcontext/save%28%29.md), the model receives a permanent identifier.
 
 Temporary identifiers should not be persisted or used to create durable maps to a model. Temporary identifiers are only valid until an object is persisted, and must be remapped to the permanent identifier once a model is saved.
 

@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an expression within the builder.
 
@@ -21,13 +22,14 @@ static func buildExpression<Content>(_ content: Content) -> Content where Conten
 
 ## See Also
 
-- [static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F>](commandsbuilder/buildeither(first:).md)
+### Building conditionally
+- [static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F>](./buildeither%28first%29.md)
   Produces content for a conditional statement in a multi-statement closure when the condition is true.
-- [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](commandsbuilder/buildeither(second:).md)
+- [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](./buildeither%28second%29.md)
   Produces content for a conditional statement in a multi-statement closure when the condition is false.
-- [static func buildIf<C>(C?) -> C?](commandsbuilder/buildif(_:).md)
+- [static func buildIf<C>(C?) -> C?](./buildif%28_%29.md)
   Produces an optional widget for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
-- [static func buildLimitedAvailability(any Commands) -> some Commands](commandsbuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(any Commands) -> some Commands](./buildlimitedavailability%28_%29.md)
   Processes commands for a conditional compiler-control statement that performs an availability check.
 
 

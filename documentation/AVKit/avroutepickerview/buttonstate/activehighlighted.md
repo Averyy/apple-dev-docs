@@ -1,7 +1,8 @@
 # AVRoutePickerView.ButtonState.activeHighlighted
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The highlighted button state when AirPlay is active.
 
@@ -14,13 +15,18 @@ The highlighted button state when AirPlay is active.
 case activeHighlighted
 ```
 
+```c
+AVRoutePickerViewButtonStateActiveHighlighted
+```
+
 ## See Also
 
-- [AVRoutePickerView.ButtonState.normal](avroutepickerview/buttonstate/normal.md)
+### Button states
+- [AVRoutePickerView.ButtonState.normal](./normal.md)
   The normal, or default, button state.
-- [AVRoutePickerView.ButtonState.normalHighlighted](avroutepickerview/buttonstate/normalhighlighted.md)
+- [AVRoutePickerView.ButtonState.normalHighlighted](./normalhighlighted.md)
   The highlighted button state when a mouse-down event occurs inside the button.
-- [AVRoutePickerView.ButtonState.active](avroutepickerview/buttonstate/active.md)
+- [AVRoutePickerView.ButtonState.active](./active.md)
   The button state when AirPlay is active.
 
 

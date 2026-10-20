@@ -1,17 +1,24 @@
 # init(share:)
 
 **Framework**: GLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new texture loader object.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 init(share context: NSOpenGLContext)
+```
+
+```objc
+- (instancetype) initWithShareContext:(NSOpenGLContext *) context;
 ```
 
 #### Return Value
@@ -28,7 +35,8 @@ You only create a texture loader object when your app needs to load textures asy
 
 ## See Also
 
-- [init(sharegroup: EAGLSharegroup)](glktextureloader/init(sharegroup:).md)
+### Initialization
+- [init(sharegroup: EAGLSharegroup)](./init%28sharegroup%29.md)
   Initializes a new texture loader object.
 
 

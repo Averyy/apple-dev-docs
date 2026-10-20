@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingCustomizationStatus.systemDefault
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has not customized this setting.
 
@@ -16,6 +17,10 @@ The user has not customized this setting.
 
 ```swift
 case systemDefault
+```
+
+```c
+GCControllerHomeButtonSettingCustomizationDefault
 ```
 
 #### Discussion

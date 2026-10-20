@@ -1,7 +1,8 @@
 # UICollectionView.ReorderingCadence.fast
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items are reordered quickly, but with a short delay.
 
@@ -17,11 +18,16 @@ Items are reordered quickly, but with a short delay.
 case fast
 ```
 
+```c
+UICollectionViewReorderingCadenceFast
+```
+
 ## See Also
 
-- [UICollectionView.ReorderingCadence.immediate](uicollectionview/reorderingcadence-swift.enum/immediate.md)
+### Constants
+- [UICollectionView.ReorderingCadence.immediate](./immediate.md)
   Items are reordered into place immediately.
-- [UICollectionView.ReorderingCadence.slow](uicollectionview/reorderingcadence-swift.enum/slow.md)
+- [UICollectionView.ReorderingCadence.slow](./slow.md)
   Items are reordered after a delay.
 
 

@@ -1,7 +1,8 @@
 # majorVersion
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The major version of the document.
 
@@ -19,25 +20,30 @@ The major version of the document.
 var majorVersion: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger majorVersion;
+```
+
 #### Return Value
 
 The major version of the document.
 
 ## See Also
 
-- [var documentURL: URL?](pdfdocument/documenturl.md)
+### Accessing Document Information
+- [var documentURL: URL?](./documenturl.md)
   The URL for the document.
-- [var minorVersion: Int](pdfdocument/minorversion.md)
+- [var minorVersion: Int](./minorversion.md)
   The minor version of the document.
-- [var string: String?](pdfdocument/string.md)
+- [var string: String?](./string.md)
   A string representing the textual content for the entire document.
-- [func outlineItem(for: PDFSelection) -> PDFOutline?](pdfdocument/outlineitem(for:).md)
+- [func outlineItem(for: PDFSelection) -> PDFOutline?](./outlineitem%28for%29.md)
   Returns the most likely parent PDF outline object for the selection.
-- [var outlineRoot: PDFOutline?](pdfdocument/outlineroot.md)
+- [var outlineRoot: PDFOutline?](./outlineroot.md)
   The document’s root outline to a PDF outline object.
-- [var documentAttributes: [AnyHashable : Any]?](pdfdocument/documentattributes.md)
+- [var documentAttributes: [AnyHashable : Any]?](./documentattributes.md)
   A dictionary of document metadata.
-- [var documentRef: CGPDFDocument?](pdfdocument/documentref.md)
+- [var documentRef: CGPDFDocument?](./documentref.md)
   The `CGPDFDocument` associated with the `PDFDocument` object.
 
 

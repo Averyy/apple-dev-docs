@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the request, for example, because the user taps a cancel button.
 
@@ -18,9 +19,14 @@ Cancels the request, for example, because the user taps a cancel button.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 ## See Also
 
-- [func doNotHandle()](asauthorizationproviderextensionauthorizationrequest/donothandle.md)
+### Canceling a Request
+- [func doNotHandle()](./donothandle%28%29.md)
   Indicates the request wasn’t handled.
 
 

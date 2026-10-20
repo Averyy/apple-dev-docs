@@ -1,7 +1,8 @@
 # moveItem(at:inParent:to:inParent:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves an item at a given index in the given parent to a new index in a new parent.
 
@@ -14,13 +15,17 @@ Moves an item at a given index in the given parent to a new index in a new paren
 func moveItem(at fromIndex: Int, inParent oldParent: Any?, to toIndex: Int, inParent newParent: Any?)
 ```
 
+```objc
+- (void) moveItemAtIndex:(NSInteger) fromIndex inParent:(id) oldParent toIndex:(NSInteger) toIndex inParent:(id) newParent;
+```
+
 #### Discussion
 
-This method parallels the [`moveRow(at:to:)`](nstableview/moverow(at:to:).md) method of [`NSTableView`](nstableview.md). The `newParent` can be the same as `oldParent` to reorder an item within the same parent.
+This method parallels the [`moveRow(at:to:)`](../nstableview/moverow%28at,to%29.md) method of [`NSTableView`](../nstableview.md). The `newParent` can be the same as `oldParent` to reorder an item within the same parent.
 
-> **Note**:  [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
+> **Note**:  [`NSCell`](../nscell.md)-based outline views must first call [`beginUpdates()`](../nstableview/beginupdates%28%29.md) before calling this method.
 
-You can call this method multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md)/[`endUpdates()`](nstableview/endupdates().md) block. Moving from an invalid index, or to an invalid index, throws an exception.
+You can call this method multiple times within the same [`beginUpdates()`](../nstableview/beginupdates%28%29.md)/[`endUpdates()`](../nstableview/endupdates%28%29.md) block. Moving from an invalid index, or to an invalid index, throws an exception.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ You can call this method multiple times within the same [`beginUpdates()`](nstab
 
 ## See Also
 
-- [func insertItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](nsoutlineview/insertitems(at:inparent:withanimation:).md)
+### Manipulating Items
+- [func insertItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](./insertitems%28at,inparent,withanimation%29.md)
   Inserts new items at the given indexes in the given parent with the specified optional animations.
-- [func removeItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](nsoutlineview/removeitems(at:inparent:withanimation:).md)
+- [func removeItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](./removeitems%28at,inparent,withanimation%29.md)
   Removes items at the given indexes in the given parent with the specified optional animations.
 
 

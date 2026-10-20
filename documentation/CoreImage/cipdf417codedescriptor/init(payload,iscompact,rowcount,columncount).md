@@ -1,7 +1,8 @@
 # init(payload:isCompact:rowCount:columnCount:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an PDF417 code descriptor for the given payload and parameters.
 
@@ -19,9 +20,13 @@ Initializes an PDF417 code descriptor for the given payload and parameters.
 init?(payload errorCorrectedPayload: Data, isCompact: Bool, rowCount: Int, columnCount: Int)
 ```
 
+```objc
+- (instancetype) initWithPayload:(NSData *) errorCorrectedPayload isCompact:(BOOL) isCompact rowCount:(NSInteger) rowCount columnCount:(NSInteger) columnCount;
+```
+
 #### Return Value
 
- An initialized [`CIPDF417CodeDescriptor`](cipdf417codedescriptor.md) instance or `nil` if the parameters are invalid
+ An initialized [`CIPDF417CodeDescriptor`](../cipdf417codedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 

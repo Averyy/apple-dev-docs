@@ -1,7 +1,8 @@
 # Participants.all
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The set of all participants.
 
@@ -21,9 +22,10 @@ case all
 
 ## See Also
 
-- [case only(Set<Participant>)](participants/only(_:)-swift.enum.case.md)
+### Getting the set of participants
+- [case only(Set<Participant>)](./only%28_%29-swift.enum.case.md)
   A custom subset of participants.
-- [static func only(Participant) -> Participants](participants/only(_:)-swift.type.method.md)
+- [static func only(Participant) -> Participants](./only%28_%29-swift.type.method.md)
   Returns a set containing the specified participant.
 
 

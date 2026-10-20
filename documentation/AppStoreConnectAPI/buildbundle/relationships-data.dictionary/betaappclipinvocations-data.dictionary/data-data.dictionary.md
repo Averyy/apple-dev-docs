@@ -1,7 +1,8 @@
 # BuildBundle.Relationships.BetaAppClipInvocations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Beta App Clip Invocations resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Beta App Clip Invocations resource.
 
 ## Declaration
 
-```swift
+```
 object BuildBundle.Relationships.BetaAppClipInvocations.Data
 ```
 
@@ -18,6 +19,8 @@ object BuildBundle.Relationships.BetaAppClipInvocations.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Beta App Clip Invocations resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaAppClipInvocations`
 
 
 ---

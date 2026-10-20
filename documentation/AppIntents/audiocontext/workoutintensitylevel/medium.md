@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A medium-intensity workout such as cycling, hiking, or swimming.
 

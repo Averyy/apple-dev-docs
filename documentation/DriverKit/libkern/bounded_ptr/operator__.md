@@ -1,17 +1,18 @@
 # operator[]
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Method Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T_ = T> T_ & & operator[](ptrdiff_t n);
 ```
 

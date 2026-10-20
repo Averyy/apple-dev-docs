@@ -1,7 +1,8 @@
 # MLRecommender.SimilarityType.jaccard
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Jaccard similarity measure.
 
@@ -20,9 +21,10 @@ Use Jaccard similarity when the presence or absence of a user’s rating is more
 
 ## See Also
 
-- [MLRecommender.SimilarityType.cosine](mlrecommender/similaritytype/cosine.md)
+### Similarity types
+- [MLRecommender.SimilarityType.cosine](./cosine.md)
   The cosine similarity measure.
-- [MLRecommender.SimilarityType.pearson](mlrecommender/similaritytype/pearson.md)
+- [MLRecommender.SimilarityType.pearson](./pearson.md)
   The Pearson correlation similarity measure.
 
 

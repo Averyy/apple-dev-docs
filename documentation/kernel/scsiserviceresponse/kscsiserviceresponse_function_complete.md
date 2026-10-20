@@ -1,14 +1,15 @@
 # kSCSIServiceResponse_FUNCTION_COMPLETE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceResponse_FUNCTION_COMPLETE = 4
 ```
 

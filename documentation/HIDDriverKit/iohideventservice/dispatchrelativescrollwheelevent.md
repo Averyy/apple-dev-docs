@@ -1,23 +1,24 @@
 # dispatchRelativeScrollWheelEvent
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches a relative scroll wheel event to the system.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t dispatchRelativeScrollWheelEvent(uint64_t timeStamp, IOFixed dx, IOFixed dy, IOFixed dz, IOOptionBits options, bool accelerate);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -29,28 +30,29 @@ Call this method from your event service to dispatch a scroll-wheel event to the
 - `dx`: The delta X value.
 - `dy`: The delta Y value.
 - `dz`: The delta Z value.
-- `options`: Additional options for scrolling-related events. Specify `0` for no options. For a list of other values, see [`IOHIDScrollEventOptions`](iohidscrolleventoptions.md).
+- `options`: Additional options for scrolling-related events. Specify `0` for no options. For a list of other values, see [`IOHIDScrollEventOptions`](../iohidscrolleventoptions.md).
 - `accelerate`: Scroll events are subject to an acceleration algorithm. Pass in `false` if you don’t wish to have acceleration logic applied to the scroll event.
 
 ## See Also
 
-- [dispatchKeyboardEvent](iohideventservice/dispatchkeyboardevent.md)
+### Dispatching Events
+- [dispatchKeyboardEvent](./dispatchkeyboardevent.md)
   Dispatches a keyboard-related event to the system.
-- [dispatchRelativePointerEvent](iohideventservice/dispatchrelativepointerevent.md)
+- [dispatchRelativePointerEvent](./dispatchrelativepointerevent.md)
   Dispatches a relative pointer event to the system.
-- [dispatchAbsolutePointerEvent](iohideventservice/dispatchabsolutepointerevent.md)
+- [dispatchAbsolutePointerEvent](./dispatchabsolutepointerevent.md)
   Dispatches an absolute pointer event to the system.
-- [dispatchDigitizerStylusEvent](iohideventservice/dispatchdigitizerstylusevent.md)
+- [dispatchDigitizerStylusEvent](./dispatchdigitizerstylusevent.md)
   Dispatches a digitizer stylus event to the system.
-- [dispatchDigitizerTouchEvent](iohideventservice/dispatchdigitizertouchevent.md)
+- [dispatchDigitizerTouchEvent](./dispatchdigitizertouchevent.md)
   Dispatches a digitizer touch event to the system.
-- [dispatchEvent](iohideventservice/dispatchevent.md)
+- [dispatchEvent](./dispatchevent.md)
   Dispatches a HID event to the system.
-- [IOHIDKeyboardEventOptions](iohidkeyboardeventoptions.md)
+- [IOHIDKeyboardEventOptions](../iohidkeyboardeventoptions.md)
   Options that you use to dispatch keyboard events.
-- [IOHIDPointerEventOptions](iohidpointereventoptions.md)
+- [IOHIDPointerEventOptions](../iohidpointereventoptions.md)
   Options that you use to dispatch pointer-related events.
-- [IOHIDScrollEventOptions](iohidscrolleventoptions.md)
+- [IOHIDScrollEventOptions](../iohidscrolleventoptions.md)
   Options that you use to dispatch scrolling-related events.
 
 

@@ -1,7 +1,8 @@
 # outputDuration
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output duration of the sample buffer.
 
@@ -25,9 +26,9 @@ var outputDuration: CMTime { get }
 This is the duration of decoded, trimmed and stretched samples. It is calculated as: `(Duration - TrimDurationAtStart - TrimDurationAtEnd) / SpeedMultiplier`.
 
 - Duration is `duration` property of this sample buffer.
-- TrimDurationAtStart is the value of [`trimDurationAtStart`](cmsamplebuffer/attachmentkey/trimdurationatstart.md) attachment (default 0).
-- TrimDurationAtEnd is the value of [`trimDurationAtEnd`](cmsamplebuffer/attachmentkey/trimdurationatend.md) attachment (default 0).
-- SpeedMultiplier is the value of [`speedMultiplier`](cmsamplebuffer/attachmentkey/speedmultiplier.md) attachment (default 1).
+- TrimDurationAtStart is the value of [`trimDurationAtStart`](../cmsamplebuffer/attachmentkey/trimdurationatstart.md) attachment (default 0).
+- TrimDurationAtEnd is the value of [`trimDurationAtEnd`](../cmsamplebuffer/attachmentkey/trimdurationatend.md) attachment (default 0).
+- SpeedMultiplier is the value of [`speedMultiplier`](../cmsamplebuffer/attachmentkey/speedmultiplier.md) attachment (default 1).
 
 
 ---

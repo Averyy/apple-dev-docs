@@ -1,7 +1,8 @@
 # BadRequest
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status value that indicates the service returned a bad request response when initializing.
 
@@ -10,7 +11,7 @@ An error status value that indicates the service returned a bad request response
 
 ## Declaration
 
-```swift
+```
 readonly BadRequest: "Bad Request";
 ```
 

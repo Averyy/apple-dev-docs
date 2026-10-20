@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBFullSpeedMicrosecondsInFrame](1646388-anonymous/kusbfullspeedmicrosecondsinframe.md)
-- [kUSBHighSpeedMicrosecondsInFrame](1646388-anonymous/kusbhighspeedmicrosecondsinframe.md)
+- [kUSBFullSpeedMicrosecondsInFrame](./api-1646388-anonymous/kusbfullspeedmicrosecondsinframe.md)
+- [kUSBHighSpeedMicrosecondsInFrame](./api-1646388-anonymous/kusbhighspeedmicrosecondsinframe.md)
 
 
 ---

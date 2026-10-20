@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_interface_state {
     ...
 };
@@ -17,10 +17,10 @@ struct if_interface_state {
 ## Topics
 
 ### Instance Properties
-- [interface_availability](if_interface_state/3943887-interface_availability.md)
-- [lqm_state](if_interface_state/3943888-lqm_state.md)
-- [rrc_state](if_interface_state/3943889-rrc_state.md)
-- [valid_bitmask](if_interface_state/3943890-valid_bitmask.md)
+- [interface_availability](./if_interface_state/api-3943887-interface_availability.md)
+- [lqm_state](./if_interface_state/api-3943888-lqm_state.md)
+- [rrc_state](./if_interface_state/api-3943889-rrc_state.md)
+- [valid_bitmask](./if_interface_state/api-3943890-valid_bitmask.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # style
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the progress indicator (bar or spinning).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The style of the progress indicator (bar or spinning).
 var style: NSProgressIndicator.Style { get set }
 ```
 
+```objc
+@property NSProgressIndicatorStyle style;
+```
+
 #### Discussion
 
-See [`NSProgressIndicator.Style`](nsprogressindicator/style-swift.enum.md) for possible values.
+See [`NSProgressIndicator.Style`](./style-swift.enum.md) for possible values.
 
 ## See Also
 
-- [var controlSize: NSControl.ControlSize](nsprogressindicator/controlsize.md)
+### Setting the appearance
+- [var controlSize: NSControl.ControlSize](./controlsize.md)
   The size of the progress indicator.
-- [var isIndeterminate: Bool](nsprogressindicator/isindeterminate.md)
+- [var isIndeterminate: Bool](./isindeterminate.md)
   A Boolean that indicates whether the progress indicator is indeterminate.
-- [func sizeToFit()](nsprogressindicator/sizetofit.md)
-  This action method resizes the progress indicator to an appropriate size depending on the value of [`style`](nsprogressindicator/style-swift.property.md).
-- [var isDisplayedWhenStopped: Bool](nsprogressindicator/isdisplayedwhenstopped.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
+  This action method resizes the progress indicator to an appropriate size depending on the value of [`style`](./style-swift.property.md).
+- [var isDisplayedWhenStopped: Bool](./isdisplayedwhenstopped.md)
   A Boolean that indicates whether the progress indicator hides itself when it isn’t animating.
 
 

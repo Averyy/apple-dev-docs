@@ -1,7 +1,8 @@
 # stopCapture
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that stops a recording in progress.
 
@@ -20,7 +21,7 @@ var stopCapture: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `camera` domain and one of your app’s actions matches the `stopCapture` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .camera.stopCapture)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `camera` domain and one of your app’s actions matches the `stopCapture` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .camera.stopCapture)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `stopCapture` schema:
 
@@ -37,19 +38,20 @@ The schema supports the following system experiences:
 
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var openInCaptureMode: some AppSchemaIntent](appschema/cameraintent/openincapturemode.md)
+### Actions
+- [var openInCaptureMode: some AppSchemaIntent](./openincapturemode.md)
   An intent schema that opens the camera in the specified mode.
-- [var setDevice: some AppSchemaIntent](appschema/cameraintent/setdevice.md)
+- [var setDevice: some AppSchemaIntent](./setdevice.md)
   An intent schema that changes the camera to the specified position.
-- [var startCapture: some AppSchemaIntent](appschema/cameraintent/startcapture.md)
+- [var startCapture: some AppSchemaIntent](./startcapture.md)
   An intent schema that starts a capture or opens the camera in a specified mode with a timer setting.
-- [var switchDevice: some AppSchemaIntent](appschema/cameraintent/switchdevice.md)
+- [var switchDevice: some AppSchemaIntent](./switchdevice.md)
   An intent schema that toggles between front and back camera.
-- [AppSchema.CameraIntent](appschema/cameraintent.md)
+- [AppSchema.CameraIntent](../cameraintent.md)
   Identifies intent schemas in the camera domain.
 
 

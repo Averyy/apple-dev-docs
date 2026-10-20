@@ -1,7 +1,8 @@
 # decrementImage(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image used for the decrement glyph of the control.
 
@@ -17,6 +18,10 @@ Returns the image used for the decrement glyph of the control.
 func decrementImage(for state: UIControl.State) -> UIImage?
 ```
 
+```objc
+- (UIImage *) decrementImageForState:(UIControlState) state;
+```
+
 #### Return Value
 
 The image used for the decrement glyph of the control.
@@ -27,19 +32,20 @@ The image used for the decrement glyph of the control.
 
 ## See Also
 
-- [func backgroundImage(for: UIControl.State) -> UIImage?](uistepper/backgroundimage(for:).md)
+### Customizing appearance
+- [func backgroundImage(for: UIControl.State) -> UIImage?](./backgroundimage%28for%29.md)
   Returns the background image associated with the specified control state.
-- [func setBackgroundImage(UIImage?, for: UIControl.State)](uistepper/setbackgroundimage(_:for:).md)
+- [func setBackgroundImage(UIImage?, for: UIControl.State)](./setbackgroundimage%28_,for%29.md)
   Sets the background image for the control when it’s in the specified state.
-- [func setDecrementImage(UIImage?, for: UIControl.State)](uistepper/setdecrementimage(_:for:).md)
+- [func setDecrementImage(UIImage?, for: UIControl.State)](./setdecrementimage%28_,for%29.md)
   Sets the image to use for the decrement glyph of the control.
-- [func dividerImage(forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State) -> UIImage?](uistepper/dividerimage(forleftsegmentstate:rightsegmentstate:).md)
+- [func dividerImage(forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State) -> UIImage?](./dividerimage%28forleftsegmentstate,rightsegmentstate%29.md)
   Returns the divider image for the given combination of left and right states.
-- [func setDividerImage(UIImage?, forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State)](uistepper/setdividerimage(_:forleftsegmentstate:rightsegmentstate:).md)
+- [func setDividerImage(UIImage?, forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State)](./setdividerimage%28_,forleftsegmentstate,rightsegmentstate%29.md)
   Sets the image to use for the given combination of left and right states.
-- [func incrementImage(for: UIControl.State) -> UIImage?](uistepper/incrementimage(for:).md)
+- [func incrementImage(for: UIControl.State) -> UIImage?](./incrementimage%28for%29.md)
   Returns the image used for the increment glyph of the control.
-- [func setIncrementImage(UIImage?, for: UIControl.State)](uistepper/setincrementimage(_:for:).md)
+- [func setIncrementImage(UIImage?, for: UIControl.State)](./setincrementimage%28_,for%29.md)
   Sets the image to use for the increment glyph of the control.
 
 

@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image the button displays.
 
@@ -16,15 +17,20 @@ The image the button displays.
 var image: UIImage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIImage * image;
+```
+
 #### Discussion
 
 CarPlays doesn’t support animated images. If you provide an animated image, the button displays only the first image in the animation sequence. The maximum supported image size is 30 x 30 points.
 
 ## See Also
 
-- [var titleVariants: [String]](cpdashboardbutton/titlevariants.md)
+### Accessing the Button Configuration
+- [var titleVariants: [String]](./titlevariants.md)
   The array of title variants for the button.
-- [var subtitleVariants: [String]](cpdashboardbutton/subtitlevariants.md)
+- [var subtitleVariants: [String]](./subtitlevariants.md)
   The array of subtitle variants for the button.
 
 

@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.SecurityPolicy.wpa3
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows WPA3 authentication.
 

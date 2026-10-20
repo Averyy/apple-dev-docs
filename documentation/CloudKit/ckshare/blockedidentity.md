@@ -1,7 +1,8 @@
 # CKShare.BlockedIdentity
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -18,32 +19,36 @@
 class BlockedIdentity
 ```
 
+```objc
+@interface CKShareBlockedIdentity : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](ckshare/blockedidentity/init(coder:).md)
+- [init?(coder: NSCoder)](./blockedidentity/init%28coder%29.md)
 ### Instance Properties
-- [var contact: CNContact](ckshare/blockedidentity/contact.md)
+- [var contact: CNContact](./blockedidentity/contact.md)
   A displayable CNContact representing the blocked user.
-- [var userIdentity: CKUserIdentity](ckshare/blockedidentity/useridentity.md)
+- [var userIdentity: CKUserIdentity](./blockedidentity/useridentity.md)
   The identity of the user who has been blocked from requesting access to the share.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

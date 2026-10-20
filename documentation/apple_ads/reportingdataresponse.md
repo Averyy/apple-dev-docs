@@ -1,16 +1,19 @@
 # ReportingDataResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The total metrics for a report.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object ReportingDataResponse
 ```
 
@@ -21,35 +24,36 @@ object ReportingDataResponse
 
 ## See Also
 
-- [object ReportingRequest](reportingrequest.md)
+### Reports Request and Response Objects
+- [object ReportingRequest](./reportingrequest.md)
   The report request body.
-- [object ReportingResponseBody](reportingresponsebody.md)
+- [object ReportingResponseBody](./reportingresponsebody.md)
   The container object for the report response body.
-- [object ReportingResponse](reportingresponse.md)
+- [object ReportingResponse](./reportingresponse.md)
   The container object of report metrics.
-- [object GrandTotalsRow](grandtotalsrow.md)
+- [object GrandTotalsRow](./grandtotalsrow.md)
   The summary of cumulative metrics.
-- [object SpendRow](spendrow.md)
+- [object SpendRow](./spendrow.md)
   The reporting response metrics.
-- [object ExtendedSpendRow](extendedspendrow.md)
+- [object ExtendedSpendRow](./extendedspendrow.md)
   The descriptions of metrics with dates.
-- [object Row](row.md)
+- [object Row](./row.md)
   The report metrics by time granularity.
-- [object ReportingCampaign](reportingcampaign.md)
+- [object ReportingCampaign](./reportingcampaign.md)
   The response to a request to fetch campaign-level reports.
-- [object ReportingAdGroup](reportingadgroup.md)
+- [object ReportingAdGroup](./reportingadgroup.md)
   The response to a request to fetch ad group-level reports.
-- [object ReportingKeyword](reportingkeyword.md)
+- [object ReportingKeyword](./reportingkeyword.md)
   The response to a request to fetch keyword-level reports.
-- [object ReportingSearchTerm](reportingsearchterm.md)
+- [object ReportingSearchTerm](./reportingsearchterm.md)
   The response to a request to fetch search term-level reports.
-- [object ReportingAd](reportingad.md)
+- [object ReportingAd](./reportingad.md)
   The response to a request to fetch ad-level reports.
-- [object CampaignAppDetail](campaignappdetail.md)
+- [object CampaignAppDetail](./campaignappdetail.md)
   The app data to fetch from campaign-level reports.
-- [object InsightsObject](insightsobject.md)
+- [object InsightsObject](./insightsobject.md)
   The container object for bid recommendations.
-- [object KeywordInsights](keywordinsights.md)
+- [object KeywordInsights](./keywordinsights.md)
   The object that contains bid recommendations.
 
 

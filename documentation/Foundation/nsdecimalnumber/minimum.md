@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the smallest possible value of a decimal number.
 
@@ -21,13 +22,18 @@ Returns the smallest possible value of a decimal number.
 class var minimum: NSDecimalNumber { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSDecimalNumber * minimumDecimalNumber;
+```
+
 #### Return Value
 
 The smallest possible value of an `NSDecimalNumber` object.
 
 ## See Also
 
-- [class var maximum: NSDecimalNumber](nsdecimalnumber/maximum.md)
+### Getting Maximum and Minimum Possible Values
+- [class var maximum: NSDecimalNumber](./maximum.md)
   Returns the largest possible value of a decimal number.
 
 

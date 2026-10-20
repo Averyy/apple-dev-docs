@@ -1,7 +1,8 @@
 # init(newRegularExpressionFromPattern:flags:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a JavaScript regular expression value from the specified pattern.
 
@@ -17,6 +18,10 @@ Creates a JavaScript regular expression value from the specified pattern.
 
 ```swift
 init!(newRegularExpressionFromPattern pattern: String!, flags: String!, in context: JSContext!)
+```
+
+```objc
++ (JSValue *) valueWithNewRegularExpressionFromPattern:(NSString *) pattern flags:(NSString *) flags inContext:(JSContext *) context;
 ```
 
 #### Return Value
@@ -41,35 +46,36 @@ The `flags` parameter can include any of the following options:
 
 ## See Also
 
-- [init!(object: Any!, in: JSContext!)](jsvalue/init(object:in:).md)
+### Creating JavaScript Values
+- [init!(object: Any!, in: JSContext!)](./init%28object,in%29.md)
   Creates a JavaScript value by converting the specified native object.
-- [init!(bool: Bool, in: JSContext!)](jsvalue/init(bool:in:).md)
+- [init!(bool: Bool, in: JSContext!)](./init%28bool,in%29.md)
   Creates a JavaScript representation of the specified Boolean value.
-- [init!(double: Double, in: JSContext!)](jsvalue/init(double:in:).md)
+- [init!(double: Double, in: JSContext!)](./init%28double,in%29.md)
   Creates a JavaScript representation of the specified floating-point value.
-- [init!(int32: Int32, in: JSContext!)](jsvalue/init(int32:in:).md)
+- [init!(int32: Int32, in: JSContext!)](./init%28int32,in%29.md)
   Creates a JavaScript representation of the specified signed integer value.
-- [init!(uInt32: UInt32, in: JSContext!)](jsvalue/init(uint32:in:).md)
+- [init!(uInt32: UInt32, in: JSContext!)](./init%28uint32,in%29.md)
   Creates a JavaScript representation of the specified unsigned integer value.
-- [init!(newObjectIn: JSContext!)](jsvalue/init(newobjectin:).md)
+- [init!(newObjectIn: JSContext!)](./init%28newobjectin%29.md)
   Creates a new, empty JavaScript object value.
-- [init!(newArrayIn: JSContext!)](jsvalue/init(newarrayin:).md)
+- [init!(newArrayIn: JSContext!)](./init%28newarrayin%29.md)
   Creates a new, empty JavaScript array value.
-- [init!(newErrorFromMessage: String!, in: JSContext!)](jsvalue/init(newerrorfrommessage:in:).md)
+- [init!(newErrorFromMessage: String!, in: JSContext!)](./init%28newerrorfrommessage,in%29.md)
   Creates a JavaScript error value with the specified error message.
-- [init!(undefinedIn: JSContext!)](jsvalue/init(undefinedin:).md)
+- [init!(undefinedIn: JSContext!)](./init%28undefinedin%29.md)
   Creates a JavaScript `undefined` value.
-- [init!(nullIn: JSContext!)](jsvalue/init(nullin:).md)
+- [init!(nullIn: JSContext!)](./init%28nullin%29.md)
   Creates a JavaScript `null` value.
-- [init!(point: CGPoint, inContext: JSContext!)](jsvalue/init(point:incontext:).md)
+- [init!(point: CGPoint, inContext: JSContext!)](./init%28point,incontext%29.md)
   Creates a JavaScript representation of the specified point.
-- [init!(range: NSRange, inContext: JSContext!)](jsvalue/init(range:incontext:).md)
+- [init!(range: NSRange, inContext: JSContext!)](./init%28range,incontext%29.md)
   Creates a JavaScript representation of the specified range.
-- [init!(rect: CGRect, inContext: JSContext!)](jsvalue/init(rect:incontext:).md)
+- [init!(rect: CGRect, inContext: JSContext!)](./init%28rect,incontext%29.md)
   Creates a JavaScript representation of the specified rectangle.
-- [init!(size: CGSize, inContext: JSContext!)](jsvalue/init(size:incontext:).md)
+- [init!(size: CGSize, inContext: JSContext!)](./init%28size,incontext%29.md)
   Creates a JavaScript representation of the specified width and height.
-- [init!(newSymbolFromDescription: String!, in: JSContext!)](jsvalue/init(newsymbolfromdescription:in:).md)
+- [init!(newSymbolFromDescription: String!, in: JSContext!)](./init%28newsymbolfromdescription,in%29.md)
   Creates a unique symbol object.
 
 

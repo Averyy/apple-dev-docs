@@ -1,7 +1,8 @@
 # message
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The human-readable error message of the user location error for the developer.
 
@@ -10,7 +11,7 @@ The human-readable error message of the user location error for the developer.
 
 ## Declaration
 
-```swift
+```
 readonly message: string;
 ```
 

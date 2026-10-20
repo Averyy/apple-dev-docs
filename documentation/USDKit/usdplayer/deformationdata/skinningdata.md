@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData.SkinningData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Joint deformation data for a skinned mesh.
 
@@ -22,27 +23,27 @@ struct SkinningData
 ## Topics
 
 ### Structures
-- [USDPlayer.DeformationData.SkinningData.Update](usdplayer/deformationdata/skinningdata/update.md)
+- [USDPlayer.DeformationData.SkinningData.Update](./skinningdata/update.md)
   Delta update carrying only the skinning fields that changed since the last frame.
 ### Instance Properties
-- [let geometryBindTransform: float4x4](usdplayer/deformationdata/skinningdata/geometrybindtransform.md)
+- [let geometryBindTransform: float4x4](./skinningdata/geometrybindtransform.md)
   Transform from world space into bind space of the skinned mesh.
-- [let influenceJointIndices: [UInt32]](usdplayer/deformationdata/skinningdata/influencejointindices.md)
+- [let influenceJointIndices: [UInt32]](./skinningdata/influencejointindices.md)
   Joint indices for each vertex-influence slot, with `influencePerVertexCount` consecutive entries per vertex.
-- [let influencePerVertexCount: UInt8](usdplayer/deformationdata/skinningdata/influencepervertexcount.md)
+- [let influencePerVertexCount: UInt8](./skinningdata/influencepervertexcount.md)
   Number of joint influences per vertex.
-- [let influenceWeights: [Float]](usdplayer/deformationdata/skinningdata/influenceweights.md)
+- [let influenceWeights: [Float]](./skinningdata/influenceweights.md)
   Influence weights (0.0–1.0) corresponding 1:1 with `influenceJointIndices`.
-- [let inverseBindPoses: [float4x4]](usdplayer/deformationdata/skinningdata/inversebindposes.md)
+- [let inverseBindPoses: [float4x4]](./skinningdata/inversebindposes.md)
   Inverse bind-pose transformation matrix for each joint.
-- [let jointTransforms: [float4x4]](usdplayer/deformationdata/skinningdata/jointtransforms.md)
+- [let jointTransforms: [float4x4]](./skinningdata/jointtransforms.md)
   Current transformation matrices for each joint in the skeleton hierarchy, in joint order.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UnlitMaterial.Program.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that specifies all parameters necessary to initialize `UnlitMaterial` programs
 
@@ -22,20 +23,20 @@ struct Descriptor
 ## Topics
 
 ### Initializers
-- [init()](unlitmaterial/program-swift.class/descriptor-swift.struct/init.md)
+- [init()](./descriptor-swift.struct/init%28%29.md)
 ### Instance Properties
-- [var applyPostProcessToneMap: Bool](unlitmaterial/program-swift.class/descriptor-swift.struct/applypostprocesstonemap.md)
+- [var applyPostProcessToneMap: Bool](./descriptor-swift.struct/applypostprocesstonemap.md)
   A Boolean value that determines whether RealityKit will tonemap the output of this material.
-- [var blendMode: MaterialParameterTypes.BlendMode?](unlitmaterial/program-swift.class/descriptor-swift.struct/blendmode.md)
+- [var blendMode: MaterialParameterTypes.BlendMode?](./descriptor-swift.struct/blendmode.md)
   Modes that describe how materials using the created `UnlitMaterial.Program` will be blended with content behind them.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

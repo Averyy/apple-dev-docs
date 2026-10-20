@@ -1,11 +1,12 @@
 # HKAsyncQuery Implementations
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](hkanchoredobjectquerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 
 

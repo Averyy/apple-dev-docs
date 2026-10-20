@@ -1,7 +1,8 @@
 # displayIntent
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether the screen capture uses attributes of the local or canonical display.
 
@@ -13,6 +14,10 @@ Specifies whether the screen capture uses attributes of the local or canonical d
 
 ```swift
 var displayIntent: SCScreenshotConfiguration.DisplayIntent { get set }
+```
+
+```objc
+@property (nonatomic, assign) SCScreenshotDisplayIntent displayIntent;
 ```
 
 #### Discussion

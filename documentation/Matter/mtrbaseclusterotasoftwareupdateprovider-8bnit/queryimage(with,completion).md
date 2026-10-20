@@ -1,7 +1,8 @@
 # queryImage(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func queryImage(with params: MTROTASoftwareUpdateProviderClusterQueryImageParams, completion: @escaping @Sendable (MTROTASoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func queryImage(with params: MTROTASoftwareUpdateProviderClusterQueryImageParams) async throws -> MTROTASoftwareUpdateProviderClusterQueryImageResponseParams
+```
+
+```objc
+- (void) queryImageWithParams:(MTROTASoftwareUpdateProviderClusterQueryImageParams *) params completion:(void (^)(MTROTASoftwareUpdateProviderClusterQueryImageResponseParams *data, NSError *error)) completion;
 ```
 
 

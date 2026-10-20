@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let other: Other](publishers/prefixuntiloutput/other.md)
+### Inspecting publisher properties
+- [let other: Other](./other.md)
   Another publisher, whose first output causes this publisher to finish.
 
 

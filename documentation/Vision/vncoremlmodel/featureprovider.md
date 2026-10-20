@@ -1,7 +1,8 @@
 # featureProvider
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional object to support inputs outside Vision.
 
@@ -19,15 +20,20 @@ An optional object to support inputs outside Vision.
 var featureProvider: (any MLFeatureProvider)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) id<MLFeatureProvider> featureProvider;
+```
+
 #### Discussion
 
-This optional object conforms to the [`MLFeatureProvider`](https://developer.apple.com/documentation/coreml/mlfeatureprovider) protocol that the model uses to predict inputs that are not supplied by Vision. Vision provides the MLModel with the image for the [`inputImageFeatureName`](vncoremlmodel/inputimagefeaturename.md) via the `VNRequestHandler`.
+This optional object conforms to the [`MLFeatureProvider`](../../CoreML/mlfeatureprovider.md) protocol that the model uses to predict inputs that are not supplied by Vision. Vision provides the MLModel with the image for the [`inputImageFeatureName`](./inputimagefeaturename.md) via the `VNRequestHandler`.
 
 A feature provider is necessary for models that have more than one required input. Models with only one image input won’t use the feature provider.
 
 ## See Also
 
-- [var inputImageFeatureName: String](vncoremlmodel/inputimagefeaturename.md)
+### Providing Features
+- [var inputImageFeatureName: String](./inputimagefeaturename.md)
   The name of the feature value that Vision sets from the request handler.
 
 

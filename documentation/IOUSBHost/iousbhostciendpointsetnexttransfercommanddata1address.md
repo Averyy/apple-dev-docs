@@ -1,7 +1,8 @@
 # IOUSBHostCIEndpointSetNextTransferCommandData1Address
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var IOUSBHostCIEndpointSetNextTransferCommandData1Address: UInt { get }
 ```
 
+```c
+IOUSBHostCIEndpointSetNextTransferCommandData1Address
+```
+
 ## See Also
 
-- [var IOUSBHostCIEndpointSetNextTransferCommandData1AddressPhase: UInt](iousbhostciendpointsetnexttransfercommanddata1addressphase.md)
+### Constants
+- [var IOUSBHostCIEndpointSetNextTransferCommandData1AddressPhase: UInt](./iousbhostciendpointsetnexttransfercommanddata1addressphase.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # mergeByPropertyStoreTrump
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property-based merge policy that applies external changes.
 
@@ -20,21 +21,26 @@ A property-based merge policy that applies external changes.
 class var mergeByPropertyStoreTrump: NSMergePolicy { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSMergePolicy * mergeByPropertyStoreTrumpMergePolicy;
+```
+
 #### Discussion
 
 A policy that merges conflicts between the persistent store’s version of the object and the current in-memory version by individual property, with external changes trumping in-memory changes.
 
 ## See Also
 
-- [class var error: NSMergePolicy](nsmergepolicy/error.md)
+### Defining Merge Policies
+- [class var error: NSMergePolicy](./error.md)
   The default merge policy for all managed object contexts.
-- [class var mergeByPropertyObjectTrump: NSMergePolicy](nsmergepolicy/mergebypropertyobjecttrump.md)
+- [class var mergeByPropertyObjectTrump: NSMergePolicy](./mergebypropertyobjecttrump.md)
   A property-based merge policy that applies in-memory changes.
-- [class var overwrite: NSMergePolicy](nsmergepolicy/overwrite.md)
+- [class var overwrite: NSMergePolicy](./overwrite.md)
   A merge policy that overwrites the entire stored object.
-- [class var rollback: NSMergePolicy](nsmergepolicy/rollback.md)
+- [class var rollback: NSMergePolicy](./rollback.md)
   A merge policy that discards unsaved changes.
-- [Merge Policies](merge-policies.md)
+- [Merge Policies](../merge-policies.md)
   Define standard ways to handle conflicts during a save operation.
 
 

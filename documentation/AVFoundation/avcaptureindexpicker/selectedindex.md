@@ -1,7 +1,8 @@
 # selectedIndex
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected index.
 
@@ -18,15 +19,20 @@ The currently selected index.
 var selectedIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger selectedIndex;
+```
+
 #### Discussion
 
-The default value is `0`. You can only set a value that’s greater than or equal to `0` and less than [`numberOfIndexes`](avcaptureindexpicker/numberofindexes.md).
+The default value is `0`. You can only set a value that’s greater than or equal to `0` and less than [`numberOfIndexes`](./numberofindexes.md).
 
-> ❗ **Important**:  Only modify the selected index from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](avcaptureslider/setactionqueue:action:.md) method.
+> ❗ **Important**:  Only modify the selected index from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](../avcaptureslider/setactionqueue_action_.md) method.
 
 ## See Also
 
-- [var numberOfIndexes: Int](avcaptureindexpicker/numberofindexes.md)
+### Accessing the control value
+- [var numberOfIndexes: Int](./numberofindexes.md)
   The number of index values the control provides.
 
 

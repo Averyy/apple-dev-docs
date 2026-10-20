@@ -1,10 +1,11 @@
 # kAudioConverterPropertyDithering
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAudioConverterPropertyDithering: AudioConverterPropertyID { get }
 ```
 
+```c
+kAudioConverterPropertyDithering
+```
+
 ## See Also
 
-- [var kAudioConverterPropertyDitherBitDepth: AudioConverterPropertyID](kaudioconverterpropertyditherbitdepth.md)
+### Constants
+- [var kAudioConverterPropertyDitherBitDepth: AudioConverterPropertyID](./kaudioconverterpropertyditherbitdepth.md)
 
 
 ---

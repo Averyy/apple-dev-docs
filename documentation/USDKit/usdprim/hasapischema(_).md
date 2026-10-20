@@ -1,7 +1,8 @@
 # hasAPISchema(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if this prim has a particular API schema applied.
 

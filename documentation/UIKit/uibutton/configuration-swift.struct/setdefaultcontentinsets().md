@@ -1,7 +1,8 @@
 # setDefaultContentInsets()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores the default content insets.
 
@@ -10,7 +11,7 @@ Restores the default content insets.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ mutating func setDefaultContentInsets()
 
 ## See Also
 
-- [var buttonSize: UIButton.Configuration.Size](uibutton/configuration-swift.struct/buttonsize.md)
+### Configuring layout
+- [var buttonSize: UIButton.Configuration.Size](./buttonsize.md)
   A size that requests a preferred size for the button.
-- [UIButton.Configuration.Size](uibutton/configuration-swift.struct/size.md)
+- [UIButton.Configuration.Size](./size.md)
   A predefined size for button elements.
-- [var contentInsets: NSDirectionalEdgeInsets](uibutton/configuration-swift.struct/contentinsets.md)
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The distance from the button’s content area to its bounds.
 
 

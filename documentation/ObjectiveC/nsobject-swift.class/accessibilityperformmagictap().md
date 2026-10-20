@@ -1,7 +1,8 @@
 # accessibilityPerformMagicTap()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a salient action.
 
@@ -9,7 +10,7 @@ Performs a salient action.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Performs a salient action.
 func accessibilityPerformMagicTap() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformMagicTap;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the magic tap action succeeds; otherwise, [`NO`](no.md). By default, this method returns [`NO`](no.md).
+[`YES`](../yes.md) if the magic tap action succeeds; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
 #### Discussion
 
@@ -29,15 +34,16 @@ The exact action performed by this method depends your app, typically toggling t
 
 ## See Also
 
-- [func accessibilityActivate() -> Bool](nsobject-swift.class/accessibilityactivate.md)
+### Performing an action
+- [func accessibilityActivate() -> Bool](./accessibilityactivate%28%29.md)
   Tells the element to activate itself and report the success or failure of the operation.
-- [func accessibilityIncrement()](nsobject-swift.class/accessibilityincrement.md)
+- [func accessibilityIncrement()](./accessibilityincrement%28%29.md)
   Tells the accessibility element to increment the value of its content.
-- [func accessibilityDecrement()](nsobject-swift.class/accessibilitydecrement.md)
+- [func accessibilityDecrement()](./accessibilitydecrement%28%29.md)
   Tells the accessibility element to decrement the value of its content.
-- [func accessibilityScroll(UIAccessibilityScrollDirection) -> Bool](nsobject-swift.class/accessibilityscroll(_:).md)
+- [func accessibilityScroll(UIAccessibilityScrollDirection) -> Bool](./accessibilityscroll%28_%29.md)
   Scrolls screen content in an application-specific way and returns the success or failure of the action.
-- [func accessibilityPerformEscape() -> Bool](nsobject-swift.class/accessibilityperformescape.md)
+- [func accessibilityPerformEscape() -> Bool](./accessibilityperformescape%28%29.md)
   Dismisses a modal view and returns the success or failure of the action.
 
 

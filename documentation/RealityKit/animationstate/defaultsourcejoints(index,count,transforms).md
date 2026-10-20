@@ -1,7 +1,8 @@
 # defaultSourceJoints(index:count:transforms:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a subset of default source joints, and stores them in the output transform array.
 
@@ -19,9 +20,11 @@ Retrieves a subset of default source joints, and stores them in the output trans
 func defaultSourceJoints(index: Int, count: Int, transforms: inout [Transform]) -> Bool
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Discussion
 
-See [`defaultSource`](animationstateprotocol/defaultsource.md) for more about the default source value.
+See [`defaultSource`](../animationstateprotocol/defaultsource.md) for more about the default source value.
 
 
 ---

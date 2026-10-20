@@ -1,14 +1,15 @@
 # kBluetoothFeatureAFHClassificationMaster
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothFeatureAFHClassificationMaster = (1 << 4L)
 ```
 

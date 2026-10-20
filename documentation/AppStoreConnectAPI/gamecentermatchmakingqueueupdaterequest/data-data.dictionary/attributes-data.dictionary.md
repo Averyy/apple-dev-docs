@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a queue that you modify.
 
@@ -10,7 +11,7 @@ The attributes for a queue that you modify.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueUpdateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object GameCenterMatchmakingQueueUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The rule sets related to the queue.
 
 

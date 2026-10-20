@@ -1,7 +1,8 @@
 # InlinePresentationIntent
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines presentation intent for runs of characters for traits like emphasis, strikethrough, and code voice.
 
@@ -20,45 +21,49 @@ A type that defines presentation intent for runs of characters for traits like e
 struct InlinePresentationIntent
 ```
 
+```c
+enum NSInlinePresentationIntent : NSUInteger;
+```
+
 ## Topics
 
 ### Getting inline presentation types
-- [static var code: InlinePresentationIntent](inlinepresentationintent/code.md)
+- [static var code: InlinePresentationIntent](./inlinepresentationintent/code.md)
   An intent that represents a code voice presentation.
-- [static var emphasized: InlinePresentationIntent](inlinepresentationintent/emphasized.md)
+- [static var emphasized: InlinePresentationIntent](./inlinepresentationintent/emphasized.md)
   An intent that represents an emphasized presentation.
-- [static var lineBreak: InlinePresentationIntent](inlinepresentationintent/linebreak.md)
+- [static var lineBreak: InlinePresentationIntent](./inlinepresentationintent/linebreak.md)
   An intent that represents a line break.
-- [static var softBreak: InlinePresentationIntent](inlinepresentationintent/softbreak.md)
+- [static var softBreak: InlinePresentationIntent](./inlinepresentationintent/softbreak.md)
   An intent that represents a soft line break.
-- [static var strikethrough: InlinePresentationIntent](inlinepresentationintent/strikethrough.md)
+- [static var strikethrough: InlinePresentationIntent](./inlinepresentationintent/strikethrough.md)
   An intent that represents a strikethrough presentation.
-- [static var stronglyEmphasized: InlinePresentationIntent](inlinepresentationintent/stronglyemphasized.md)
+- [static var stronglyEmphasized: InlinePresentationIntent](./inlinepresentationintent/stronglyemphasized.md)
   An intent that represents a strongly emphasized presentation.
-- [static var inlineHTML: InlinePresentationIntent](inlinepresentationintent/inlinehtml.md)
+- [static var inlineHTML: InlinePresentationIntent](./inlinepresentationintent/inlinehtml.md)
   An intent that represents an inline HTML presentation.
-- [static var blockHTML: InlinePresentationIntent](inlinepresentationintent/blockhtml.md)
+- [static var blockHTML: InlinePresentationIntent](./inlinepresentationintent/blockhtml.md)
   An intent that represents a block HTML presentation.
 ### Initializers
-- [init(rawValue: UInt)](inlinepresentationintent/init(rawvalue:).md)
+- [init(rawValue: UInt)](./inlinepresentationintent/init%28rawvalue%29.md)
   Creates an inline presentation intent using the raw value you specify.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

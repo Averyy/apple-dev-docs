@@ -1,7 +1,8 @@
 # init(format:packetCapacity:maximumPacketSize:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a buffer that contains audio data in a compressed state.
 
@@ -20,13 +21,17 @@ Creates a buffer that contains audio data in a compressed state.
 init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSize: Int)
 ```
 
+```objc
+- (instancetype) initWithFormat:(AVAudioFormat *) format packetCapacity:(AVAudioPacketCount) packetCapacity maximumPacketSize:(NSInteger) maximumPacketSize;
+```
+
 #### Return Value
 
-A new [`AVAudioCompressedBuffer`](avaudiocompressedbuffer.md) instance.
+A new [`AVAudioCompressedBuffer`](../avaudiocompressedbuffer.md) instance.
 
 #### Discussion
 
-You can obtain the maximum packet size from the [`maximumOutputPacketSize`](avaudioconverter/maximumoutputpacketsize.md) property of an [`AVAudioConverter`](avaudioconverter.md) you configure for encoding this format.
+You can obtain the maximum packet size from the [`maximumOutputPacketSize`](../avaudioconverter/maximumoutputpacketsize.md) property of an [`AVAudioConverter`](../avaudioconverter.md) you configure for encoding this format.
 
 The method raises an exception if the format is PCM.
 
@@ -38,7 +43,8 @@ The method raises an exception if the format is PCM.
 
 ## See Also
 
-- [init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount)](avaudiocompressedbuffer/init(format:packetcapacity:).md)
+### Creating an audio buffer
+- [init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount)](./init%28format,packetcapacity%29.md)
   Creates a buffer that contains constant bytes per packet of audio data in a compressed state.
 
 

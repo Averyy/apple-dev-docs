@@ -1,7 +1,8 @@
 # attr
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the first keychain attribute in the array.
 
@@ -12,6 +13,10 @@ A pointer to the first keychain attribute in the array.
 
 ```swift
 var attr: UnsafeMutablePointer<SecKeychainAttribute>?
+```
+
+```c
+SecKeychainAttribute * attr;
 ```
 
 

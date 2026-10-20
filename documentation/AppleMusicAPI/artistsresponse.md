@@ -1,7 +1,8 @@
 # ArtistsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to an artists request.
 
@@ -10,21 +11,22 @@ The response to an artists request.
 
 ## Declaration
 
-```swift
+```
 object ArtistsResponse
 ```
 
 ## Properties
 
-- `data` ([Artists]) *(required)*: The [`Artists`](artists.md) included in the response for the request.
+- `data` ([Artists]) *(required)*: The [`Artists`](./artists.md) included in the response for the request.
 
 ## See Also
 
-- [object Artists](artists.md)
+### Handling the Response
+- [object Artists](./artists.md)
   A resource object that represents the artist of an album where an artist can be one or more people.
-- [object LibraryArtists](libraryartists.md)
+- [object LibraryArtists](./libraryartists.md)
   A resource object that represents an artist present in a user’s library.
-- [object LibraryArtistsResponse](libraryartistsresponse.md)
+- [object LibraryArtistsResponse](./libraryartistsresponse.md)
   The response to a library artists request.
 
 

@@ -1,7 +1,8 @@
 # setCompletionBlock(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the completion block object.
 
@@ -19,17 +20,24 @@ Sets the completion block object.
 class func setCompletionBlock(_ block: (() -> Void)?)
 ```
 
+```objc
++ (void) setCompletionBlock:(void (^)()) block;
+```
+
 #### Discussion
 
 The completion block object that is guaranteed to be called (on the main thread) as soon as all animations subsequently added by this transaction group have completed (or have been removed.) If no animations are added before the current transaction group is committed (or the completion block is set to a different value,) the block will be invoked immediately.
 
 ## Parameters
 
-- `block`: A block object called when animations for this transaction group are completed. The block object takes no parameters and returns no value.
+- `block`: A block object called when animations for this transaction group are completed.
+
+  The block object takes no parameters and returns no value.
 
 ## See Also
 
-- [class func completionBlock() -> (() -> Void)?](catransaction/completionblock.md)
+### Getting and Setting Completion Block Objects
+- [class func completionBlock() -> (() -> Void)?](./completionblock%28%29.md)
   Returns the completion block object.
 
 

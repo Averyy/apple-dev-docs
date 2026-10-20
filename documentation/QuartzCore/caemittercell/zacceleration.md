@@ -1,7 +1,8 @@
 # zAcceleration
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z component of an acceleration vector applied to cell.
 
@@ -19,27 +20,32 @@ The z component of an acceleration vector applied to cell.
 var zAcceleration: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat zAcceleration;
+```
+
 #### Discussion
 
 The default value of this property is `0.0`.
 
 ## See Also
 
-- [var lifetime: Float](caemittercell/lifetime.md)
+### Setting Emitter Cell Temporal Attributes
+- [var lifetime: Float](./lifetime.md)
   The lifetime of the cell, in seconds. Animatable.
-- [var lifetimeRange: Float](caemittercell/lifetimerange.md)
-  The mean value by which the [`lifetime`](caemittercell/lifetime.md) of the cell can vary. Animatable.
-- [var birthRate: Float](caemittercell/birthrate.md)
+- [var lifetimeRange: Float](./lifetimerange.md)
+  The mean value by which the [`lifetime`](./lifetime.md) of the cell can vary. Animatable.
+- [var birthRate: Float](./birthrate.md)
   The number of emitted objects created every second. Animatable.
-- [var scaleSpeed: CGFloat](caemittercell/scalespeed.md)
+- [var scaleSpeed: CGFloat](./scalespeed.md)
   The speed at which the scale changes over the lifetime of the cell. Animatable.
-- [var velocity: CGFloat](caemittercell/velocity.md)
+- [var velocity: CGFloat](./velocity.md)
   The initial velocity of the cell. Animatable.
-- [var velocityRange: CGFloat](caemittercell/velocityrange.md)
+- [var velocityRange: CGFloat](./velocityrange.md)
   The amount by which the velocity of the cell can vary. Animatable.
-- [var xAcceleration: CGFloat](caemittercell/xacceleration.md)
+- [var xAcceleration: CGFloat](./xacceleration.md)
   The x component of an acceleration vector applied to cell.
-- [var yAcceleration: CGFloat](caemittercell/yacceleration.md)
+- [var yAcceleration: CGFloat](./yacceleration.md)
   The y component of an acceleration vector applied to cell.
 
 

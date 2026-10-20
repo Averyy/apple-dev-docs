@@ -1,7 +1,8 @@
 # startUpFromMacOSRecovery
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the macOS guest should start in recovery mode.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the macOS guest should start in recovery 
 
 ```swift
 var startUpFromMacOSRecovery: Bool { get set }
+```
+
+```objc
+@property BOOL startUpFromMacOSRecovery;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecCSWeakResourceRules
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The resource envelope is obsolete (custom omit rules).
 
@@ -13,6 +14,10 @@ The resource envelope is obsolete (custom omit rules).
 
 ```swift
 var errSecCSWeakResourceRules: OSStatus { get }
+```
+
+```c
+errSecCSWeakResourceRules
 ```
 
 

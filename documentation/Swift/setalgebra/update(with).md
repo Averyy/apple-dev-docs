@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts the given element into the set unconditionally.
@@ -47,11 +48,18 @@ print(classDays.update(with: .monday))
 
 - `newMember`: An element to insert into the set.
 
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func update(with: Self.Element) -> Self.Element?](./update%28with%29-2oa9l.md)
+  Inserts the given element into the set.
+
 ## See Also
 
-- [func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)](setalgebra/insert(_:).md)
+### Adding and Removing Elements
+- [func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)](./insert%28_%29.md)
   Inserts the given element in the set if it is not already present.
-- [func remove(Self.Element) -> Self.Element?](setalgebra/remove(_:).md)
+- [func remove(Self.Element) -> Self.Element?](./remove%28_%29.md)
   Removes the given element and any elements subsumed by the given element.
 
 

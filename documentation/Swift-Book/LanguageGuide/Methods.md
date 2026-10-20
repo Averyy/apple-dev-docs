@@ -543,7 +543,7 @@ code that calls the `advance(to:)` method
 to ignore the return value,
 this function is marked with the `@discardableResult` attribute.
 For more information about this attribute,
-see [Attributes](Attributes.md).
+see [Attributes](../ReferenceManual/Attributes.md).
 
 The `LevelTracker` structure is used with the `Player` class, shown below,
 to track and update the progress of an individual player:

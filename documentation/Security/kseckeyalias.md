@@ -1,7 +1,8 @@
 # kSecKeyAlias
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type blob; currently unused.
 
@@ -12,6 +13,10 @@ Type blob; currently unused.
 
 ```swift
 var kSecKeyAlias: Int32 { get }
+```
+
+```c
+kSecKeyAlias
 ```
 
 

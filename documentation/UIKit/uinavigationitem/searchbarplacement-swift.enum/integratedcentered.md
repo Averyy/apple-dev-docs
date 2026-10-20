@@ -1,7 +1,8 @@
 # UINavigationItem.SearchBarPlacement.integratedCentered
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Placement is the same as Integrated, except that in regular width on iPad, the search bar is centered in the navigation bar. Only respected when used in a view controller that is a descendant of a tab bar controller or when using a navigation item style that requires a leading aligned title
 
@@ -14,6 +15,10 @@ Placement is the same as Integrated, except that in regular width on iPad, the s
 
 ```swift
 case integratedCentered
+```
+
+```c
+UINavigationItemSearchBarPlacementIntegratedCentered
 ```
 
 

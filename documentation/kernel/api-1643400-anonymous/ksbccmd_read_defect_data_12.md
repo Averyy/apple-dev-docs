@@ -1,14 +1,15 @@
 # kSBCCmd_READ_DEFECT_DATA_12
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSBCCmd_READ_DEFECT_DATA_12 = 0xB7
 ```
 

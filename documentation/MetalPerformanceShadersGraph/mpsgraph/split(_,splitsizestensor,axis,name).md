@@ -1,7 +1,8 @@
 # split(_:splitSizesTensor:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a split operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a split operation and returns the result tensor.
 
 ```swift
 func split(_ tensor: MPSGraphTensor, splitSizesTensor: MPSGraphTensor, axis: Int, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) splitTensor:(MPSGraphTensor *) tensor splitSizesTensor:(MPSGraphTensor *) splitSizesTensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

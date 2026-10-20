@@ -1,7 +1,8 @@
 # unprojectPoint(_:ontoPlane:viewRotationAngle:viewportSize:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unprojects a 2D point in image space onto a 3D plane in world space.
 

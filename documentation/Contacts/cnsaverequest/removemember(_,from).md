@@ -1,7 +1,8 @@
 # removeMember(_:from:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a contact as a member of a group.
 
@@ -18,6 +19,10 @@ Removes a contact as a member of a group.
 func removeMember(_ contact: CNContact, from group: CNGroup)
 ```
 
+```objc
+- (void) removeMember:(CNContact *) contact fromGroup:(CNGroup *) group;
+```
+
 #### Discussion
 
 This method removes the contact from the group, but does not delete it from the contact store. This method overrides any previously made add membership request on the contact to the group.
@@ -29,13 +34,14 @@ This method removes the contact from the group, but does not delete it from the 
 
 ## See Also
 
-- [func add(CNMutableGroup, toContainerWithIdentifier: String?)](cnsaverequest/add(_:tocontainerwithidentifier:)-4ikaa.md)
+### Saving group changes
+- [func add(CNMutableGroup, toContainerWithIdentifier: String?)](./add%28_,tocontainerwithidentifier%29-4ikaa.md)
   Adds a group to the contact store.
-- [func update(CNMutableGroup)](cnsaverequest/update(_:)-8h6f6.md)
+- [func update(CNMutableGroup)](./update%28_%29-8h6f6.md)
   Updates an existing group in the contact store.
-- [func delete(CNMutableGroup)](cnsaverequest/delete(_:)-29lsm.md)
+- [func delete(CNMutableGroup)](./delete%28_%29-29lsm.md)
   Deletes a group from the contact store.
-- [func addMember(CNContact, to: CNGroup)](cnsaverequest/addmember(_:to:).md)
+- [func addMember(CNContact, to: CNGroup)](./addmember%28_,to%29.md)
   Adds a contact as a member of a group.
 
 

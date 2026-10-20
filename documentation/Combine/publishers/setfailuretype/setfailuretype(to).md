@@ -1,7 +1,8 @@
 # setFailureType(to:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the failure type declared by the upstream publisher.
 
@@ -26,11 +27,11 @@ A publisher that appears to send the specified failure type.
 
 #### Discussion
 
-Use [`setFailureType(to:)`](publisher/setfailuretype(to:).md) when you need set the error type of a publisher that cannot fail.
+Use [`setFailureType(to:)`](../../publisher/setfailuretype%28to%29.md) when you need set the error type of a publisher that cannot fail.
 
-Conversely, if the upstream can fail, you would use [`mapError(_:)`](publisher/maperror(_:).md) to provide instructions on converting the error types to needed by the downstream publisher’s inputs.
+Conversely, if the upstream can fail, you would use [`mapError(_:)`](../../publisher/maperror%28_%29.md) to provide instructions on converting the error types to needed by the downstream publisher’s inputs.
 
-The following example has two publishers with mismatched error types: `pub1`’s error type is [`Never`](https://developer.apple.com/documentation/swift/never), and `pub2`’s error type is [`Error`](https://developer.apple.com/documentation/swift/error). Because of the mismatch, the [`combineLatest(_:)`](publisher/combinelatest(_:).md) operator requires that `pub1` use [`setFailureType(to:)`](publisher/setfailuretype(to:).md) to make it appear that `pub1` can produce the [`Error`](https://developer.apple.com/documentation/swift/error) type, like `pub2` can.
+The following example has two publishers with mismatched error types: `pub1`’s error type is [`Never`](../../../Swift/never.md), and `pub2`’s error type is [`Error`](../../../Swift/error.md). Because of the mismatch, the [`combineLatest(_:)`](../../publisher/combinelatest%28_%29.md) operator requires that `pub1` use [`setFailureType(to:)`](../../publisher/setfailuretype%28to%29.md) to make it appear that `pub1` can produce the [`Error`](../../../Swift/error.md) type, like `pub2` can.
 
 ```swift
 let pub1 = [0, 1, 2, 3, 4, 5].publisher

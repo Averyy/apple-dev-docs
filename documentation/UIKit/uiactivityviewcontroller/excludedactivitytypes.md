@@ -1,7 +1,8 @@
 # excludedActivityTypes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of services that should not be displayed.
 
@@ -17,9 +18,13 @@ The list of services that should not be displayed.
 var excludedActivityTypes: [UIActivity.ActivityType]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * excludedActivityTypes;
+```
+
 #### Discussion
 
-This property contains an array of strings, each of which corresponds to the value you would find in the [`activityType`](uiactivity/activitytype-swift.property.md) parameter of a [`UIActivity`](uiactivity.md) object. Each string you specify indicates a service that you do not want displayed to the user. You might exclude services that you feel are not suitable for the content you are providing. For example, you might not want to allow the user to print a specific image. If the value of this property is `nil`, no services are excluded.
+This property contains an array of strings, each of which corresponds to the value you would find in the [`activityType`](../uiactivity/activitytype-swift.property.md) parameter of a [`UIActivity`](../uiactivity.md) object. Each string you specify indicates a service that you do not want displayed to the user. You might exclude services that you feel are not suitable for the content you are providing. For example, you might not want to allow the user to print a specific image. If the value of this property is `nil`, no services are excluded.
 
 This value of this property is `nil` by default.
 

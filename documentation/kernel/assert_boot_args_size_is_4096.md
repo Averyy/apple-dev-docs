@@ -1,14 +1,15 @@
 # assert_boot_args_size_is_4096
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 char assert_boot_args_size_is_4096[1];
 ```
 

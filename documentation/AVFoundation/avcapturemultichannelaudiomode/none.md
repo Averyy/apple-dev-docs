@@ -1,7 +1,8 @@
 # AVCaptureMultichannelAudioMode.none
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that indicates there’s no multichannel audio.
 
@@ -18,11 +19,16 @@ A mode that indicates there’s no multichannel audio.
 case none
 ```
 
+```c
+AVCaptureMultichannelAudioModeNone
+```
+
 ## See Also
 
-- [AVCaptureMultichannelAudioMode.stereo](avcapturemultichannelaudiomode/stereo.md)
+### Modes
+- [AVCaptureMultichannelAudioMode.stereo](./stereo.md)
   A mode that indicates the recording uses stereo audio.
-- [AVCaptureMultichannelAudioMode.firstOrderAmbisonics](avcapturemultichannelaudiomode/firstorderambisonics.md)
+- [AVCaptureMultichannelAudioMode.firstOrderAmbisonics](./firstorderambisonics.md)
   An audio mode that indicates the recording uses first-order ambisonics.
 
 

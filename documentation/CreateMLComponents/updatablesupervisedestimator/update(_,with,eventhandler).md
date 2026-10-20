@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates a transformer with a new sequence of examples.
@@ -23,7 +24,7 @@ func update<InputSequence>(_ transformer: inout Self.Transformer, with input: In
 
 ## Mentions
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+- [Augmenting images to expand your training data](../augmenting-images-to-expand-your-training-data.md)
 
 ## Parameters
 
@@ -31,11 +32,18 @@ func update<InputSequence>(_ transformer: inout Self.Transformer, with input: In
 - `input`: A sequence of examples.
 - `eventHandler`: An event handler.
 
+## Default Implementations
+
+### UpdatableSupervisedEstimator Implementations
+- [func update<Input>(inout Self.Transformer, with: Input, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29-483v7.md)
+  Updates a transformer on an async sequence of examples.
+
 ## See Also
 
-- [func makeTransformer() -> Self.Transformer](updatablesupervisedestimator/maketransformer.md)
+### Transforming
+- [func makeTransformer() -> Self.Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout Self.Transformer, with: InputSequence) async throws](updatablesupervisedestimator/update(_:with:).md)
+- [func update<InputSequence>(inout Self.Transformer, with: InputSequence) async throws](./update%28_,with%29.md)
 
 
 ---

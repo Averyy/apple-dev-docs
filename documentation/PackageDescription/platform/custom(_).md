@@ -1,7 +1,8 @@
 # custom(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom platform.
 

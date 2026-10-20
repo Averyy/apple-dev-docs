@@ -1,7 +1,8 @@
 # default
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default document creation intent.
 
@@ -15,6 +16,10 @@ The default document creation intent.
 
 ```swift
 static let `default`: UIDocument.CreationIntent
+```
+
+```c
+extern UIDocumentCreationIntent const UIDocumentCreationIntentDefault;
 ```
 
 

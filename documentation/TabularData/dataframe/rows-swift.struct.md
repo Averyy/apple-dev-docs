@@ -1,7 +1,8 @@
 # DataFrame.Rows
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of rows in a data frame.
 
@@ -23,33 +24,34 @@ struct Rows
 ## Topics
 
 ### Inspecting a Row Collection
-- [var count: Int](dataframe/rows-swift.struct/count.md)
+- [var count: Int](./rows-swift.struct/count.md)
   The number of rows in the collection.
 ### Accessing Elements
-- [subscript(Int) -> DataFrame.Row](dataframe/rows-swift.struct/subscript(_:)-3f938.md)
+- [subscript(Int) -> DataFrame.Row](./rows-swift.struct/subscript%28_%29-3f938.md)
   Accesses a row at an index.
-- [subscript(Range<Int>) -> DataFrame.Rows](dataframe/rows-swift.struct/subscript(_:)-2qzx7.md)
+- [subscript(Range<Int>) -> DataFrame.Rows](./rows-swift.struct/subscript%28_%29-2qzx7.md)
   Returns a row collection from an index range.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var shape: (rows: Int, columns: Int)](dataframe/shape.md)
+### Inspecting a Data Frame
+- [var shape: (rows: Int, columns: Int)](./shape.md)
   The number of rows and columns in the data frame.
-- [var columns: [AnyColumn]](dataframe/columns.md)
+- [var columns: [AnyColumn]](./columns.md)
   The entire data frame as a collection of columns.
-- [var rows: DataFrame.Rows](dataframe/rows-swift.property.md)
+- [var rows: DataFrame.Rows](./rows-swift.property.md)
   The entire data frame as a collection of rows.
-- [var base: DataFrame](dataframe/base.md)
+- [var base: DataFrame](./base.md)
   The underlying data frame.
-- [func containsColumn<T>(String, T.Type) -> Bool](dataframe/containscolumn(_:_:).md)
+- [func containsColumn<T>(String, T.Type) -> Bool](./containscolumn%28_,_%29.md)
   Returns a Boolean value indicating whether the data frame contains a column.
 
 

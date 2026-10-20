@@ -1,7 +1,8 @@
 # init(httpResponse:httpBody:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an authorization with a HTTP response and body.
 
@@ -18,6 +19,10 @@ Initializes an authorization with a HTTP response and body.
 init(httpResponse: HTTPURLResponse, httpBody: Data?)
 ```
 
+```objc
+- (instancetype) initWithHTTPResponse:(NSHTTPURLResponse *) httpResponse httpBody:(NSData *) httpBody;
+```
+
 ## Parameters
 
 - `httpResponse`: The HTTP response.
@@ -25,7 +30,8 @@ init(httpResponse: HTTPURLResponse, httpBody: Data?)
 
 ## See Also
 
-- [init(httpAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationresult/init(httpauthorizationheaders:)-ywja.md)
+### Initializers
+- [init(httpAuthorizationHeaders: [String : String])](./init%28httpauthorizationheaders%29-ywja.md)
   Initializes an authorization with tokens stored in HTTP headers.
 
 

@@ -1,7 +1,8 @@
 # Weather
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A model representing the aggregate weather data the caller requests.
 
@@ -23,34 +24,35 @@ struct Weather
 ## Topics
 
 ### Getting the forecast
-- [var availability: WeatherAvailability](weather/availability.md)
+- [var availability: WeatherAvailability](./weather/availability.md)
   Flags containing information about data availability and attribution.
-- [var currentWeather: CurrentWeather](weather/currentweather.md)
+- [var currentWeather: CurrentWeather](./weather/currentweather.md)
   The current weather forecast.
-- [var dailyForecast: Forecast<DayWeather>](weather/dailyforecast.md)
+- [var dailyForecast: Forecast<DayWeather>](./weather/dailyforecast.md)
   The daily forecast.
-- [var hourlyForecast: Forecast<HourWeather>](weather/hourlyforecast.md)
+- [var hourlyForecast: Forecast<HourWeather>](./weather/hourlyforecast.md)
   The hourly forecast.
-- [var minuteForecast: Forecast<MinuteWeather>?](weather/minuteforecast.md)
+- [var minuteForecast: Forecast<MinuteWeather>?](./weather/minuteforecast.md)
   The minute-by-minute forecast.
 ### Getting weather alerts
-- [var weatherAlerts: [WeatherAlert]?](weather/weatheralerts.md)
+- [var weatherAlerts: [WeatherAlert]?](./weather/weatheralerts.md)
   A list of severe weather alerts.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class WeatherService](weatherservice.md)
+### Fundamentals
+- [class WeatherService](./weatherservice.md)
   Provides an interface for obtaining weather data.
 
 

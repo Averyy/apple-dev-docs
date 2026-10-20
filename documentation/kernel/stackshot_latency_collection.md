@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_latency_collection {
     ...
 };
@@ -17,10 +17,10 @@ struct stackshot_latency_collection {
 ## Topics
 
 ### Instance Properties
-- [latency_version](stackshot_latency_collection/3553445-latency_version.md)
-- [setup_latency](stackshot_latency_collection/3553446-setup_latency.md)
-- [total_task_iteration_latency](stackshot_latency_collection/3553447-total_task_iteration_latency.md)
-- [total_terminated_task_iteration_latency](stackshot_latency_collection/3553448-total_terminated_task_iteration_.md)
+- [latency_version](./stackshot_latency_collection/api-3553445-latency_version.md)
+- [setup_latency](./stackshot_latency_collection/api-3553446-setup_latency.md)
+- [total_task_iteration_latency](./stackshot_latency_collection/api-3553447-total_task_iteration_latency.md)
+- [total_terminated_task_iteration_latency](./stackshot_latency_collection/api-3553448-total_terminated_task_iteration_.md)
 
 
 ---

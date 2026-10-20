@@ -1,7 +1,8 @@
 # kCVPixelBufferPoolMinimumBufferCountKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key that sets the minimum number of pixel buffers in the pool.
 
@@ -20,15 +21,20 @@ The key that sets the minimum number of pixel buffers in the pool.
 let kCVPixelBufferPoolMinimumBufferCountKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVPixelBufferPoolMinimumBufferCountKey;
+```
+
 #### Discussion
 
-Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](cvpixelbufferpoolcreate(_:_:_:_:).md).
+Include this key in the pool attributes dictionary you pass to [`CVPixelBufferPoolCreate(_:_:_:_:)`](./cvpixelbufferpoolcreate%28_,_,_,_%29.md).
 
 ## See Also
 
-- [let kCVPixelBufferPoolMaximumBufferAgeKey: CFString](kcvpixelbufferpoolmaximumbufferagekey.md)
+### Constants
+- [let kCVPixelBufferPoolMaximumBufferAgeKey: CFString](./kcvpixelbufferpoolmaximumbufferagekey.md)
   The key that sets how long the pool keeps an unused buffer before it ages out.
-- [let kCVPixelBufferPoolAllocationThresholdKey: CFString](kcvpixelbufferpoolallocationthresholdkey.md)
+- [let kCVPixelBufferPoolAllocationThresholdKey: CFString](./kcvpixelbufferpoolallocationthresholdkey.md)
   The key that limits the number of pixel buffers the pool allocates.
 
 

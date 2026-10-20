@@ -1,7 +1,8 @@
 # send(atCommand:timeout:selector:target:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send an AT command to the Bluetooth audio gateway and performs a selector on completion or timeout.
 
@@ -14,6 +15,10 @@ Send an AT command to the Bluetooth audio gateway and performs a selector on com
 func send(atCommand: String!, timeout: Float, selector: Selector!, target: Any!)
 ```
 
+```objc
+- (void) sendATCommand:(NSString *) atCommand timeout:(float) timeout selector:(SEL) selector target:(id) target;
+```
+
 ## Parameters
 
 - `atCommand`: A string containing the AT command.
@@ -23,11 +28,12 @@ func send(atCommand: String!, timeout: Float, selector: Selector!, target: Any!)
 
 ## See Also
 
-- [func sendSMS(String!, message: String!)](iobluetoothhandsfreedevice/sendsms(_:message:).md)
+### Sending Messages and Commands
+- [func sendSMS(String!, message: String!)](./sendsms%28_,message%29.md)
   Sends a text message to a phone number.
-- [func sendDTMF(String!)](iobluetoothhandsfreedevice/senddtmf(_:).md)
+- [func sendDTMF(String!)](./senddtmf%28_%29.md)
   Sends the tone associated with a phone key to the hands-free Bluetooth device.
-- [func send(atCommand: String!)](iobluetoothhandsfreedevice/send(atcommand:).md)
+- [func send(atCommand: String!)](./send%28atcommand%29.md)
   Sends an AT command to the Bluetooth audio gateway.
 
 

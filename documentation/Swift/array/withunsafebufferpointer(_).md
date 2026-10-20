@@ -1,7 +1,8 @@
 # withUnsafeBufferPointer(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls a closure with a pointer to the array’s contiguous storage.
 
@@ -50,15 +51,16 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 ## See Also
 
-- [func withUnsafeMutableBufferPointer<R, E>((inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R](array/withunsafemutablebufferpointer(_:).md)
+### Accessing Underlying Storage
+- [func withUnsafeMutableBufferPointer<R, E>((inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R](./withunsafemutablebufferpointer%28_%29.md)
   Calls the given closure with a pointer to the array’s mutable contiguous storage.
-- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](array/withunsafebytes(_:).md)
+- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](./withunsafebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the array’s contiguous storage.
-- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](array/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](./withunsafemutablebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Element>) throws -> R) rethrows -> R?](array/withcontiguousstorageifavailable(_:).md)
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Element>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29.md)
   Executes a closure on the sequence’s contiguous storage.
-- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](array/withcontiguousmutablestorageifavailable(_:).md)
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](./withcontiguousmutablestorageifavailable%28_%29.md)
   Executes a closure on the collection’s contiguous storage.
 
 

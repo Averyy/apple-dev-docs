@@ -1,10 +1,13 @@
 # CWScanCacheDidUpdate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 10.10
+
+> **Deprecated**: Use -[CWWiFiClient startMonitoringEventWithType:error:] with the CWEventTypeScanCacheUpdated event type
 
 ## Declaration
 
@@ -18,13 +21,14 @@ Posted when new entries are added to the scan cache, or existing entries are upd
 
 ## See Also
 
-- [static let CWBSSIDDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwbssiddidchange.md)
-- [static let CWCountryCodeDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwcountrycodedidchange.md)
-- [static let CWLinkDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwlinkdidchange.md)
-- [static let CWLinkQualityDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwlinkqualitydidchange.md)
-- [static let CWModeDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwmodedidchange.md)
-- [static let CWPowerDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwpowerdidchange.md)
-- [static let CWSSIDDidChange: NSNotification.Name](nsnotification/name-swift.struct/cwssiddidchange.md)
+### Core WLAN
+- [static let CWBSSIDDidChange: NSNotification.Name](./cwbssiddidchange.md)
+- [static let CWCountryCodeDidChange: NSNotification.Name](./cwcountrycodedidchange.md)
+- [static let CWLinkDidChange: NSNotification.Name](./cwlinkdidchange.md)
+- [static let CWLinkQualityDidChange: NSNotification.Name](./cwlinkqualitydidchange.md)
+- [static let CWModeDidChange: NSNotification.Name](./cwmodedidchange.md)
+- [static let CWPowerDidChange: NSNotification.Name](./cwpowerdidchange.md)
+- [static let CWSSIDDidChange: NSNotification.Name](./cwssiddidchange.md)
 
 
 ---

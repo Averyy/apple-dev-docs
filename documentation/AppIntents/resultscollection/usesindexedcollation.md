@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 If set to true, presents the list of options with an alphabetical index on the right side of the screen (table view section index titles).
@@ -12,7 +13,7 @@ If set to true, presents the list of options with an alphabetical index on the r
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

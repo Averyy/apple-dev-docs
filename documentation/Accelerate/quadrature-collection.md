@@ -1,6 +1,7 @@
 # Quadrature
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Approximate the definite integral of a function over a finite or infinite interval.
 
@@ -12,7 +13,7 @@ Quadrature provides an approximation of the definite integral of a function, ove
 
 In modern terms this process is called *definite integration*. The Accelerate framework’s Quadrature functionality provides an approximation of the definite integral of a function, over a finite or infinite interval, performed by evaluating the function at a series of points within the interval.
 
-The Quadrature library provides a Swift-only API, based on the [`Quadrature`](quadrature.md) structure, and both Swift and Objective-C APIs. For the latter, the `quadrature_integrate()` function performs this calculation using any one of three algorithms described in the [`Integrators`](quadrature-collection#Integrators.md) section below.
+The Quadrature library provides a Swift-only API, based on the [`Quadrature`](./quadrature.md) structure, and both Swift and Objective-C APIs. For the latter, the `quadrature_integrate()` function performs this calculation using any one of three algorithms described in the [Integrators](./quadrature-collection.md#Integrators) section below.
 
 ##### The Integration Callback
 
@@ -48,21 +49,21 @@ The struct `f` can now be passed as the first argument to `quadrature_integrate(
 
 Options that control the logic of the integration are specified as fields of a struct of type `quadrature_integrate_options`, defined in `integration.h`. The fields are interpreted as follows:
 
-- `integrator`: A constant that identifies one of three available integration algorithms (see the [`Integrators`](quadrature-collection#Integrators.md) section below):
+- `integrator`: A constant that identifies one of three available integration algorithms (see the [Integrators](./quadrature-collection.md#Integrators) section below):
 - `QUADRATURE_INTEGRATE_QNG` selects the QNG algorithm.
 - `QUADRATURE_INTEGRATE_QAG` selects the QAG algorithm.
 - `QUADRATURE_INTEGRATE_QAGS` selects the QAGS algorithm.
 - `abs_tolerance`: A value of type `double`; requested absolute tolerance on the result.
 - `rel_tolerance`: A value of type `double`; requested relative tolerance on the result.
 - `qag_points_per_interval`: Number of points per subinterval. Used by the QAG integrator only; other integrators ignore this value. Can be 0, 15, 21, 31, 41, 51, 61. 0 maps to the default 21.
-- `max_intervals`: When you do not provide a workspace (see the [`Providing a Workspace`](quadrature-collection#Providing-a-Workspace.md) section below), this is the maximum number of subintervals in the subdivision used by QAG and QAGS integrators. `max_intervals` is ignored by QAG and QAGS if you provide a workspace, and always ignored by QNG.
+- `max_intervals`: When you do not provide a workspace (see the [Providing a Workspace](./quadrature-collection.md#Providing-a-Workspace) section below), this is the maximum number of subintervals in the subdivision used by QAG and QAGS integrators. `max_intervals` is ignored by QAG and QAGS if you provide a workspace, and always ignored by QNG.
 
 ##### Integrators
 
 Quadrature has three different integrators available to perform the integration, called QNG, QAG, and QAGS. Each integrator is a specific implementation of an algorithm of the same name. The algorithms are all variants of the well-known Gauss-Kronrod method, and their integrators are C ports of the corresponding routines in the QUADPACK library:
 
 - QNG is a simple nonadaptive automatic integrator using Gauss-Kronrod-Patterson quadrature coefficients. It evaluates 21, 43, or 87 points in the interval until the requested accuracy is reached.
-- QAG is globally adaptive – it divides the integration interval into a number of subintervals depending on the memory available and/or the `max_intervals` option (see the [`Providing a Workspace`](quadrature-collection#Providing-a-Workspace.md) section below). In each interval it uses 0, 15, 21, 31, 41, 51, or 61 points depending on the `qag_points_per_interval` option.
+- QAG is globally adaptive – it divides the integration interval into a number of subintervals depending on the memory available and/or the `max_intervals` option (see the [Providing a Workspace](./quadrature-collection.md#Providing-a-Workspace) section below). In each interval it uses 0, 15, 21, 31, 41, 51, or 61 points depending on the `qag_points_per_interval` option.
 - QAGS is globally adaptive and permits infinite bounds on the integration interval. Within each subinterval it uses 21 points if both bounds are finite, or 15 if one or both bounds are infinite. The algorithm is accelerated by Peter Wynn’s epsilon algorithm. If at least one of the interval bounds is infinite, this is equivalent to the QUADPACK QAGI routine. Otherwise, this is equivalent to the QUADPACK QAGS routine.
 
 To select an integrator for a particular integrand, the following decision tree is recommended:
@@ -96,11 +97,11 @@ The QAGS algorithm requires, for a given number of subintervals, at least that n
 ## Topics
 
 ### Quadrature
-- [struct Quadrature](quadrature.md)
+- [struct Quadrature](./quadrature.md)
   A structure that approximates the definite integral of a function over a finite interval.
-- [struct quadrature_integrator](quadrature_integrator.md)
+- [struct quadrature_integrator](./quadrature_integrator.md)
   Constants that specify integration algorithms.
-- [struct quadrature_status](quadrature_status.md)
+- [struct quadrature_status](./quadrature_status.md)
   Constants that indicate the status of a quadrature operation.
 
 

@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A playback speed for the node’s audio.
 
@@ -19,15 +20,20 @@ A playback speed for the node’s audio.
 var rate: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double rate;
+```
+
 #### Discussion
 
 The value clamps to the range `[0.25,` `4]`. The default value is `1`, which doesn’t change the source audio’s rate. Values higher than `1` speed up playback, and lower values slow it down.
 
 ## See Also
 
-- [var rateMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasegeneratornodedefinition/ratemetaparameterdefinition.md)
+### Controlling Audio Playback
+- [var rateMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./ratemetaparameterdefinition.md)
   A meta parameter that dynamically changes the audio’s rate.
-- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasegeneratornodedefinition/gainmetaparameterdefinition.md)
+- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./gainmetaparameterdefinition.md)
   A meta parameter that dynamically changes the audio’s loudness.
 
 

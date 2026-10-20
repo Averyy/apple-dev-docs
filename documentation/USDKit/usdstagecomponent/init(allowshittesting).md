@@ -1,7 +1,8 @@
 # init(allowsHitTesting:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a USDStageComponent in manual mode.
 
@@ -22,7 +23,7 @@ init(allowsHitTesting: Bool = true)
 
 #### Discussion
 
-In manual mode, you control when rendering occurs by calling [`render(_:to:at:)`](usdstagecomponent/render(_:to:at:).md).
+In manual mode, you control when rendering occurs by calling [`render(_:to:at:)`](./render%28_,to,at%29.md).
 
 ## Parameters
 
@@ -30,7 +31,8 @@ In manual mode, you control when rendering occurs by calling [`render(_:to:at:)`
 
 ## See Also
 
-- [init(USDStage, timeCode: USDStage.TimeCode, allowsHitTesting: Bool) async](usdstagecomponent/init(_:timecode:allowshittesting:).md)
+### Creating a stage component
+- [init(USDStage, timeCode: USDStage.TimeCode, allowsHitTesting: Bool) async](./init%28_,timecode,allowshittesting%29.md)
   Creates a USDStageComponent in automatic mode and waits for the first render to complete.
 
 

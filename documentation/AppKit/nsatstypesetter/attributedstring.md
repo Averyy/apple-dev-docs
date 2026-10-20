@@ -1,12 +1,13 @@
 # attributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The backing store that contains the text on which this typesetter operates.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The backing store that contains the text on which this typesetter operates.
 unowned(unsafe) var attributedString: NSAttributedString? { get set }
 ```
 
+```objc
+@property (assign, nullable) NSAttributedString * attributedString;
+```
+
 ## See Also
 
-- [func setParagraphGlyphRange(NSRange, separatorGlyphRange: NSRange)](nsatstypesetter/setparagraphglyphrange(_:separatorglyphrange:).md)
+### Accessing paragraph information
+- [func setParagraphGlyphRange(NSRange, separatorGlyphRange: NSRange)](./setparagraphglyphrange%28_,separatorglyphrange%29.md)
   Sets the glyph range being processed and the paragraph separator glyph range (the range of the paragraph separator character or characters).
-- [var paragraphGlyphRange: NSRange](nsatstypesetter/paragraphglyphrange.md)
+- [var paragraphGlyphRange: NSRange](./paragraphglyphrange.md)
   The current glyph range being processed.
-- [var paragraphSeparatorGlyphRange: NSRange](nsatstypesetter/paragraphseparatorglyphrange.md)
+- [var paragraphSeparatorGlyphRange: NSRange](./paragraphseparatorglyphrange.md)
   The current paragraph separator range that contains the current glyph range and extends from one paragraph separator character to the next.
 
 

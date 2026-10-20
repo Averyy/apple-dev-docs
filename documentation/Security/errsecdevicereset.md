@@ -1,7 +1,8 @@
 # errSecDeviceReset
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A device reset has occurred.
 
@@ -18,6 +19,10 @@ A device reset has occurred.
 
 ```swift
 var errSecDeviceReset: OSStatus { get }
+```
+
+```c
+errSecDeviceReset
 ```
 
 

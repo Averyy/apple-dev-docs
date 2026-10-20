@@ -1,7 +1,8 @@
 # TXTRecordGetCount(_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of keys stored in the TXT Record.
 
@@ -20,6 +21,10 @@ Returns the number of keys stored in the TXT Record.
 func TXTRecordGetCount(_ txtLen: UInt16, _ txtRecord: UnsafeRawPointer!) -> UInt16
 ```
 
+```c
+uint16_t TXTRecordGetCount(uint16_t txtLen, const void *txtRecord);
+```
+
 #### Return Value
 
 Returns the total number of keys in the TXT Record.
@@ -35,15 +40,16 @@ The count can be used with TXTRecordGetItemAtIndex() to iterate through the keys
 
 ## See Also
 
-- [DNSServiceCreateDelegateConnection](dnsservicecreatedelegateconnection.md)
+### TXT Record Parsing Functions
+- [DNSServiceCreateDelegateConnection](./dnsservicecreatedelegateconnection.md)
   Create a delegate connection to the daemon allowing efficient registration of multiple individual records.
-- [func DNSServiceSetDispatchQueue(DNSServiceRef!, dispatch_queue_t!) -> DNSServiceErrorType](dnsservicesetdispatchqueue(_:_:).md)
+- [func DNSServiceSetDispatchQueue(DNSServiceRef!, dispatch_queue_t!) -> DNSServiceErrorType](./dnsservicesetdispatchqueue%28_,_%29.md)
   Allows you to schedule a DNSServiceRef on a serial dispatch queue for receiving asynchronous callbacks.
-- [func TXTRecordContainsKey(UInt16, UnsafeRawPointer!, UnsafePointer<CChar>!) -> Int32](txtrecordcontainskey(_:_:_:).md)
+- [func TXTRecordContainsKey(UInt16, UnsafeRawPointer!, UnsafePointer<CChar>!) -> Int32](./txtrecordcontainskey%28_,_,_%29.md)
   Allows you to determine if a given TXT Record contains a specified key.
-- [func TXTRecordGetItemAtIndex(UInt16, UnsafeRawPointer!, UInt16, UInt16, UnsafeMutablePointer<CChar>!, UnsafeMutablePointer<UInt8>!, UnsafeMutablePointer<UnsafeRawPointer?>!) -> DNSServiceErrorType](txtrecordgetitematindex(_:_:_:_:_:_:_:).md)
+- [func TXTRecordGetItemAtIndex(UInt16, UnsafeRawPointer!, UInt16, UInt16, UnsafeMutablePointer<CChar>!, UnsafeMutablePointer<UInt8>!, UnsafeMutablePointer<UnsafeRawPointer?>!) -> DNSServiceErrorType](./txtrecordgetitematindex%28_,_,_,_,_,_,_%29.md)
   Allows you to retrieve a key name and value pointer, given an index into a TXT Record.
-- [func TXTRecordGetValuePtr(UInt16, UnsafeRawPointer!, UnsafePointer<CChar>!, UnsafeMutablePointer<UInt8>!) -> UnsafeRawPointer!](txtrecordgetvalueptr(_:_:_:_:).md)
+- [func TXTRecordGetValuePtr(UInt16, UnsafeRawPointer!, UnsafePointer<CChar>!, UnsafeMutablePointer<UInt8>!) -> UnsafeRawPointer!](./txtrecordgetvalueptr%28_,_,_,_%29.md)
   Allows you to retrieve the value for a given key from a TXT Record.
 
 

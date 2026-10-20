@@ -1,7 +1,8 @@
 # normalize
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var normalize: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL normalize;
 ```
 
 #### Discussion

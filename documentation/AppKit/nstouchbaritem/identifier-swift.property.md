@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for this item.
 
@@ -17,6 +18,10 @@ The identifier for this item.
 var identifier: NSTouchBarItem.Identifier { get }
 ```
 
+```objc
+@property (copy, readonly) NSTouchBarItemIdentifier identifier;
+```
+
 #### Discussion
 
 This read-only property returns the value the item was initialized with.
@@ -25,7 +30,8 @@ For all items other than spaces, this value must be globally unique.
 
 ## See Also
 
-- [NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct.md)
+### Identifying a bar item
+- [NSTouchBarItem.Identifier](./identifier-swift.struct.md)
   An identifier for an item in the Touch Bar.
 
 

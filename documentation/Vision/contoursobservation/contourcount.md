@@ -1,7 +1,8 @@
 # contourCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of detected contours.
 
@@ -22,13 +23,14 @@ var contourCount: Int { get }
 
 #### Discussion
 
-Use this value to determine the number of indices available for calling [`contourAtIndex(_:)`](contoursobservation/contouratindex(_:).md).
+Use this value to determine the number of indices available for calling [`contourAtIndex(_:)`](./contouratindex%28_%29.md).
 
 ## See Also
 
-- [var normalizedPath: CGPath](contoursobservation/normalizedpath.md)
+### Inspecting an observation
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
-- [var topLevelContours: [ContoursObservation.Contour]](contoursobservation/toplevelcontours.md)
+- [var topLevelContours: [ContoursObservation.Contour]](./toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
 
 

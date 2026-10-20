@@ -1,7 +1,8 @@
 # accessTime
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s last-accessed time.
 
@@ -14,17 +15,22 @@ The item’s last-accessed time.
 var accessTime: timespec { get set }
 ```
 
+```objc
+@property (nonatomic) struct timespec accessTime;
+```
+
 ## See Also
 
-- [var modifyTime: timespec](fsitem/attributes/modifytime.md)
+### Working with time attributes
+- [var modifyTime: timespec](./modifytime.md)
   The item’s last-modified time.
-- [var changeTime: timespec](fsitem/attributes/changetime.md)
+- [var changeTime: timespec](./changetime.md)
   The item’s last-changed time.
-- [var birthTime: timespec](fsitem/attributes/birthtime.md)
+- [var birthTime: timespec](./birthtime.md)
   The item’s creation time.
-- [var backupTime: timespec](fsitem/attributes/backuptime.md)
+- [var backupTime: timespec](./backuptime.md)
   The item’s last-backup time.
-- [var addedTime: timespec](fsitem/attributes/addedtime.md)
+- [var addedTime: timespec](./addedtime.md)
   The item’s added time.
 
 

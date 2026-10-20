@@ -1,7 +1,8 @@
 # MLRecommender.ModelAlgorithmType.itemSimilarity(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm that compares the similarity from item to item.
 
@@ -16,11 +17,12 @@ case itemSimilarity(MLRecommender.SimilarityType)
 
 #### Discussion
 
-The default value is [`MLRecommender.SimilarityType.jaccard`](mlrecommender/similaritytype/jaccard.md).
+The default value is [`MLRecommender.SimilarityType.jaccard`](../similaritytype/jaccard.md).
 
 ## See Also
 
-- [MLRecommender.SimilarityType](mlrecommender/similaritytype.md)
+### Recommender algorithms
+- [MLRecommender.SimilarityType](../similaritytype.md)
   The metric by which the recommender computes item similarity.
 
 

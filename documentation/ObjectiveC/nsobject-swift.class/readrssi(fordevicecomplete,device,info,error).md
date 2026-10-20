@@ -1,15 +1,20 @@
 # readRSSI(forDeviceComplete:device:info:error:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func readRSSI(forDeviceComplete controller: Any!, device: IOBluetoothDevice!, info: UnsafeMutablePointer<BluetoothHCIRSSIInfo>!, error: IOReturn)
+```
+
+```objc
+- (void) readRSSIForDeviceComplete:(id) controller device:(IOBluetoothDevice *) device info:(BluetoothHCIRSSIInfo *) info error:(IOReturn) error;
 ```
 
 #### Discussion

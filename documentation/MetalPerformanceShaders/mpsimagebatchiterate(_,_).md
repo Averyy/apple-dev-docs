@@ -1,7 +1,8 @@
 # MPSImageBatchIterate(_:_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Executes a callback block once for each unique image in a batch.
 
@@ -17,6 +18,10 @@ Executes a callback block once for each unique image in a batch.
 
 ```swift
 func MPSImageBatchIterate(_ batch: [MPSImage], _ iteratorBlock: @escaping (MPSImage, Int) -> Int) -> Int
+```
+
+```c
+NSInteger MPSImageBatchIterate(MPSImageBatch *batch, NSInteger (^iteratorBlock)(MPSImage *image, NSUInteger index));
 ```
 
 

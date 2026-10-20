@@ -1,24 +1,29 @@
 # currentDate()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current time of the item as a date.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 nonisolated
 func currentDate() -> Date?
+```
+
+```objc
+- (NSDate *) currentDate;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ The system calculates this value from the `EXT-X-PROGRAM-DATE-TIME` tag.
 
 ## See Also
 
-- [func currentTime() -> CMTime](avplayeritem/currenttime.md)
+### Accessing timing information
+- [func currentTime() -> CMTime](./currenttime%28%29.md)
   Returns the current time of the item.
-- [var duration: CMTime](avplayeritem/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of the item.
-- [var timebase: CMTimebase?](avplayeritem/timebase.md)
+- [var timebase: CMTimebase?](./timebase.md)
   The timebase information for the item.
 
 

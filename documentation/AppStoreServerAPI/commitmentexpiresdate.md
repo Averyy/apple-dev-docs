@@ -1,29 +1,31 @@
 # commitmentExpiresDate
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 **Availability**:
 - App Store Server API 1.21+
 
 ## Declaration
 
-```swift
+```
 timestamp commitmentExpiresDate
 ```
 
 ## See Also
 
-- [object TransactionCommitmentInfo](transactioncommitmentinfo.md)
-- [type billingPeriodNumber](billingperiodnumber.md)
-- [type commitmentPrice](commitmentprice.md)
-- [type totalBillingPeriods](totalbillingperiods.md)
-- [object RenewalCommitmentInfo](renewalcommitmentinfo.md)
-- [type commitmentAutoRenewProductId](commitmentautorenewproductid.md)
-- [type commitmentAutoRenewStatus](commitmentautorenewstatus.md)
-- [type commitmentRenewalBillingPlanType](commitmentrenewalbillingplantype.md)
-- [type commitmentRenewalDate](commitmentrenewaldate.md)
-- [type commitmentRenewalPrice](commitmentrenewalprice.md)
+### Monthly subscriptions with 12-month commitments
+- [object TransactionCommitmentInfo](./transactioncommitmentinfo.md)
+- [type billingPeriodNumber](./billingperiodnumber.md)
+- [type commitmentPrice](./commitmentprice.md)
+- [type totalBillingPeriods](./totalbillingperiods.md)
+- [object RenewalCommitmentInfo](./renewalcommitmentinfo.md)
+- [type commitmentAutoRenewProductId](./commitmentautorenewproductid.md)
+- [type commitmentAutoRenewStatus](./commitmentautorenewstatus.md)
+- [type commitmentRenewalBillingPlanType](./commitmentrenewalbillingplantype.md)
+- [type commitmentRenewalDate](./commitmentrenewaldate.md)
+- [type commitmentRenewalPrice](./commitmentrenewalprice.md)
 
 
 ---

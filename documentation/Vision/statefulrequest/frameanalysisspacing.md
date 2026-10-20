@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The reciprocal of the maximum rate to process buffers.
@@ -23,11 +24,12 @@ var frameAnalysisSpacing: CMTime { get }
 
 #### Discussion
 
-The request won’t process buffers that fall within the [`frameAnalysisSpacing`](statefulrequest/frameanalysisspacing.md) since the previously performed analysis. The analysis isn’t done by wall time but by analysis of the time stamps of the sample buffers the request processes.
+The request won’t process buffers that fall within the [`frameAnalysisSpacing`](./frameanalysisspacing.md) since the previously performed analysis. The analysis isn’t done by wall time but by analysis of the time stamps of the sample buffers the request processes.
 
 ## See Also
 
-- [var minimumLatencyFrameCount: Int](statefulrequest/minimumlatencyframecount.md)
+### Inspecting the request
+- [var minimumLatencyFrameCount: Int](./minimumlatencyframecount.md)
   The minimum number of frames that the request has to process before reporting any observations.
 
 

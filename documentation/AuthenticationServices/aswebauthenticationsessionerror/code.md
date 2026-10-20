@@ -1,7 +1,8 @@
 # ASWebAuthenticationSessionError.Code
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error code for a web authentication session error.
 
@@ -20,33 +21,38 @@ The error code for a web authentication session error.
 enum Code
 ```
 
+```c
+enum ASWebAuthenticationSessionErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Codes
-- [ASWebAuthenticationSessionError.Code.canceledLogin](aswebauthenticationsessionerror/code/canceledlogin.md)
+- [ASWebAuthenticationSessionError.Code.canceledLogin](./code/canceledlogin.md)
   The login has been canceled.
-- [ASWebAuthenticationSessionError.Code.presentationContextNotProvided](aswebauthenticationsessionerror/code/presentationcontextnotprovided.md)
+- [ASWebAuthenticationSessionError.Code.presentationContextNotProvided](./code/presentationcontextnotprovided.md)
   A context wasn’t provided.
-- [ASWebAuthenticationSessionError.Code.presentationContextInvalid](aswebauthenticationsessionerror/code/presentationcontextinvalid.md)
+- [ASWebAuthenticationSessionError.Code.presentationContextInvalid](./code/presentationcontextinvalid.md)
   The context was invalid.
 ### Initializers
-- [init?(rawValue: Int)](aswebauthenticationsessionerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ASWebAuthenticationSessionError](aswebauthenticationsessionerror.md)
+### Recognizing Errors
+- [struct ASWebAuthenticationSessionError](../aswebauthenticationsessionerror.md)
   Errors that a web authentication session can generate.
-- [let ASWebAuthenticationSessionErrorDomain: String](aswebauthenticationsessionerrordomain.md)
+- [let ASWebAuthenticationSessionErrorDomain: String](../aswebauthenticationsessionerrordomain.md)
   The error domain for a web authentication session.
 
 

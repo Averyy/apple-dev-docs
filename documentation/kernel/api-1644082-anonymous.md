@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOTrackingGetMappings](1644082-anonymous/kiotrackinggetmappings.md)
-- [kIOTrackingGetTracking](1644082-anonymous/kiotrackinggettracking.md)
-- [kIOTrackingInvalid](1644082-anonymous/kiotrackinginvalid.md)
-- [kIOTrackingLeaks](1644082-anonymous/kiotrackingleaks.md)
-- [kIOTrackingResetTracking](1644082-anonymous/kiotrackingresettracking.md)
-- [kIOTrackingSetMinCaptureSize](1644082-anonymous/kiotrackingsetmincapturesize.md)
-- [kIOTrackingStartCapture](1644082-anonymous/kiotrackingstartcapture.md)
-- [kIOTrackingStopCapture](1644082-anonymous/kiotrackingstopcapture.md)
+- [kIOTrackingGetMappings](./api-1644082-anonymous/kiotrackinggetmappings.md)
+- [kIOTrackingGetTracking](./api-1644082-anonymous/kiotrackinggettracking.md)
+- [kIOTrackingInvalid](./api-1644082-anonymous/kiotrackinginvalid.md)
+- [kIOTrackingLeaks](./api-1644082-anonymous/kiotrackingleaks.md)
+- [kIOTrackingResetTracking](./api-1644082-anonymous/kiotrackingresettracking.md)
+- [kIOTrackingSetMinCaptureSize](./api-1644082-anonymous/kiotrackingsetmincapturesize.md)
+- [kIOTrackingStartCapture](./api-1644082-anonymous/kiotrackingstartcapture.md)
+- [kIOTrackingStopCapture](./api-1644082-anonymous/kiotrackingstopcapture.md)
 
 
 ---

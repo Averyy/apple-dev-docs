@@ -1,7 +1,8 @@
 # xpc_get_type(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type of an object.
 
@@ -10,7 +11,7 @@ Returns the type of an object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the type of an object.
 
 ```swift
 func xpc_get_type(_ object: xpc_object_t) -> xpc_type_t
+```
+
+```c
+extern xpc_type_txpc_get_type(xpc_object_t object);
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ An opaque pointer describing the type of the object. This pointer is suitable fo
 
 ## See Also
 
-- [func xpc_type_get_name(xpc_type_t) -> UnsafePointer<CChar>](xpc_type_get_name(_:).md)
+### Identity
+- [func xpc_type_get_name(xpc_type_t) -> UnsafePointer<CChar>](./xpc_type_get_name%28_%29.md)
   Returns a string that describes an XPC object type.
-- [func xpc_hash(xpc_object_t) -> Int](xpc_hash(_:).md)
+- [func xpc_hash(xpc_object_t) -> Int](./xpc_hash%28_%29.md)
   Calculates a hash value for the specified object.
 
 

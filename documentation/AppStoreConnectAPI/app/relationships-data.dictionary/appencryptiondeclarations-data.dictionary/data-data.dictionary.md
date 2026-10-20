@@ -1,7 +1,8 @@
 # App.Relationships.AppEncryptionDeclarations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the App Encryption Declaration
 
@@ -10,14 +11,14 @@ The type and ID of the App Encryption Declaration
 
 ## Declaration
 
-```swift
+```
 object App.Relationships.AppEncryptionDeclarations.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appEncryptionDeclarations`
 
 
 ---

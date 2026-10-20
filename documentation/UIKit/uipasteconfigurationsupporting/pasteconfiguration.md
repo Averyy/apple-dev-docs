@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The paste configuration associated with the responder object.
@@ -17,6 +18,10 @@ The paste configuration associated with the responder object.
 ```swift
 @NSCopying
 var pasteConfiguration: UIPasteConfiguration? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIPasteConfiguration * pasteConfiguration;
 ```
 
 #### Discussion

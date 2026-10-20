@@ -1,7 +1,8 @@
 # kABMobileMeLabel
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 MobileMe instant messenger or email values.
 
@@ -14,13 +15,18 @@ MobileMe instant messenger or email values.
 let kABMobileMeLabel: String
 ```
 
+```c
+extern NSString * const kABMobileMeLabel;
+```
+
 ## See Also
 
-- [let kABWorkLabel: CFString!](kabworklabel.md)
+### Constants
+- [let kABWorkLabel: CFString!](./kabworklabel.md)
   All Work labels match this label.
-- [let kABHomeLabel: CFString!](kabhomelabel.md)
+- [let kABHomeLabel: CFString!](./kabhomelabel.md)
   All Home labels match this label.
-- [let kABOtherLabel: CFString!](kabotherlabel.md)
+- [let kABOtherLabel: CFString!](./kabotherlabel.md)
   All labels other than Home or Work labels match this label.
 
 

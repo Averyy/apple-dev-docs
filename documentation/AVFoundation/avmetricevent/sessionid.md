@@ -1,7 +1,8 @@
 # sessionID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,15 @@
 var sessionID: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * sessionID;
+```
+
 ## See Also
 
-- [var date: Date](avmetricevent/date.md)
-- [var mediaTime: CMTime](avmetricevent/mediatime.md)
+### Inspecting an event
+- [var date: Date](./date.md)
+- [var mediaTime: CMTime](./mediatime.md)
 
 
 ---

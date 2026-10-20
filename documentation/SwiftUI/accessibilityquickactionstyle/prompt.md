@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A presentation style that displays a prompt to the user when the accessibility quick action is active.
 
@@ -15,9 +16,11 @@ A presentation style that displays a prompt to the user when the accessibility q
 static var prompt: AccessibilityQuickActionPromptStyle { get }
 ```
 
+Available when `Self` is `AccessibilityQuickActionPromptStyle`.
+
 #### Discussion
 
-The following example shows how to add an [`accessibilityQuickAction(style:content:)`](view/accessibilityquickaction(style:content:).md) to pause and resume a workout.
+The following example shows how to add an [`accessibilityQuickAction(style:content:)`](../view/accessibilityquickaction%28style,content%29.md) to pause and resume a workout.
 
 ```swift
 @State private var isPaused = false
@@ -34,7 +37,8 @@ var body: some View {
 
 ## See Also
 
-- [static var outline: AccessibilityQuickActionOutlineStyle](accessibilityquickactionstyle/outline.md)
+### Getting built-in menu styles
+- [static var outline: AccessibilityQuickActionOutlineStyle](./outline.md)
   A presentation style that animates an outline around the view when the accessibility quick action is active.
 
 

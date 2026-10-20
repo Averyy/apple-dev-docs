@@ -1,7 +1,8 @@
 # GKFriendsAuthorizationStatus.denied
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Access to the player’s friends’ data denied.
 
@@ -20,9 +21,13 @@ Access to the player’s friends’ data denied.
 case denied
 ```
 
+```c
+GKFriendsAuthorizationStatusDenied
+```
+
 ## Mentions
 
-- [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
+- [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ The local player can deny access to the friends list by disabling friends in the
 
 ## See Also
 
-- [GKFriendsAuthorizationStatus.authorized](gkfriendsauthorizationstatus/authorized.md)
+### Authorization Statuses
+- [GKFriendsAuthorizationStatus.authorized](./authorized.md)
   The player authorized your game to access their list of friends.
-- [GKFriendsAuthorizationStatus.notDetermined](gkfriendsauthorizationstatus/notdetermined.md)
+- [GKFriendsAuthorizationStatus.notDetermined](./notdetermined.md)
   The player hasn’t choosen whether your game may access their friends list.
-- [GKFriendsAuthorizationStatus.restricted](gkfriendsauthorizationstatus/restricted.md)
+- [GKFriendsAuthorizationStatus.restricted](./restricted.md)
   Access to the player’s list of friends restricted.
 
 

@@ -1,7 +1,8 @@
 # createPostScriptSubset(subsetName:format:glyphs:count:encoding:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subset of the font in the specified PostScript format.
 
@@ -10,7 +11,7 @@ Creates a subset of the font in the specified PostScript format.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Creates a subset of the font in the specified PostScript format.
 func createPostScriptSubset(subsetName: CFString, format: CGFontPostScriptFormat, glyphs: UnsafePointer<CGGlyph>?, count: Int, encoding: UnsafePointer<CGGlyph>?) -> CFData?
 ```
 
+```c
+extern CFDataRefCGFontCreatePostScriptSubset(CGFontRef font, CFStringRef subsetName, CGFontPostScriptFormat format, const CGGlyph *glyphs, size_t count, const CGGlyph encoding[256]);
+```
+
 #### Return Value
 
 A subset of the font created from the supplied parameters.
 
 #### Discussion
 
-For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 
 ## Parameters
 
@@ -38,13 +43,14 @@ For more information on PostScript format, see *Adobe Type 1 Font Format*, which
 
 ## See Also
 
-- [var postScriptName: CFString?](cgfont/postscriptname.md)
+### Working with PostScript Fonts
+- [var postScriptName: CFString?](./postscriptname.md)
   Obtains the PostScript name of a font.
-- [func canCreatePostScriptSubset(CGFontPostScriptFormat) -> Bool](cgfont/cancreatepostscriptsubset(_:).md)
+- [func canCreatePostScriptSubset(CGFontPostScriptFormat) -> Bool](./cancreatepostscriptsubset%28_%29.md)
   Determines whether Core Graphics can create a subset of the font in PostScript format.
-- [enum CGFontPostScriptFormat](cgfontpostscriptformat.md)
+- [enum CGFontPostScriptFormat](../cgfontpostscriptformat.md)
   Possible formats for a PostScript font subset.
-- [func createPostScriptEncoding(encoding: UnsafePointer<CGGlyph>?) -> CFData?](cgfont/createpostscriptencoding(encoding:).md)
+- [func createPostScriptEncoding(encoding: UnsafePointer<CGGlyph>?) -> CFData?](./createpostscriptencoding%28encoding%29.md)
   Creates a PostScript encoding of a font.
 
 

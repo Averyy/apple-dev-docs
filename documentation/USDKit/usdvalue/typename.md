@@ -1,7 +1,8 @@
 # typeName
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the wrapped type.
 
@@ -21,9 +22,10 @@ var typeName: String { get }
 
 ## See Also
 
-- [var isEmpty: Bool](usdvalue/isempty.md)
+### Inspecting the value
+- [var isEmpty: Bool](./isempty.md)
   Whether this value is empty.
-- [USDValue.Vec3d](usdvalue/vec3d.md)
+- [USDValue.Vec3d](./vec3d.md)
   A 3-component double-precision vector.
 
 

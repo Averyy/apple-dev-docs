@@ -1,7 +1,8 @@
 # reLUGradient(withIncomingGradient:sourceTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the gradient of the ReLU  (rectified linear activation unit) function using the incoming gradient.
 
@@ -19,9 +20,13 @@ Computes the gradient of the ReLU  (rectified linear activation unit) function u
 func reLUGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTensor source: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) reLUGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object.
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
 ## Parameters
 

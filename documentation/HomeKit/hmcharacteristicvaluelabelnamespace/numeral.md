@@ -1,7 +1,8 @@
 # HMCharacteristicValueLabelNamespace.numeral
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The label index indicates the arabic numeral, like 1, 2, 3, and so on.
 
@@ -19,9 +20,14 @@ The label index indicates the arabic numeral, like 1, 2, 3, and so on.
 case numeral
 ```
 
+```c
+HMCharacteristicValueLabelNamespaceNumeral
+```
+
 ## See Also
 
-- [HMCharacteristicValueLabelNamespace.dot](hmcharacteristicvaluelabelnamespace/dot.md)
+### Namespaces
+- [HMCharacteristicValueLabelNamespace.dot](./dot.md)
   The label index indicates the number of dots, like `.`, `..`, `...`, and so on.
 
 

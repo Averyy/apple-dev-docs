@@ -1,14 +1,15 @@
 # a_pl_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 upl_offset_t a_pl_offset;
 ```
 

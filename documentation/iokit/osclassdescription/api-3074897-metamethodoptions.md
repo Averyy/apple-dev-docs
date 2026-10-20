@@ -1,7 +1,8 @@
 # metaMethodOptions
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var metaMethodOptions: ()
+```
+
+```c
+uint64_t metaMethodOptions[0];
 ```
 
 

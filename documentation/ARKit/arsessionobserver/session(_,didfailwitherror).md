@@ -1,7 +1,8 @@
 # session(_:didFailWithError:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session has stopped running due to an error.
 
@@ -15,6 +16,10 @@ Tells the delegate that the session has stopped running due to an error.
 optional func session(_ session: ARSession, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) session:(ARSession *) session didFailWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `session`: The session providing information.
@@ -22,7 +27,8 @@ optional func session(_ session: ARSession, didFailWithError error: any Error)
 
 ## See Also
 
-- [let ARErrorDomain: String](arerrordomain.md)
+### Handling Errors
+- [let ARErrorDomain: String](../arerrordomain.md)
   The domain for error objects produced by an AR session.
 
 

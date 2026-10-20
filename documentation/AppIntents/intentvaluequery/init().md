@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 **Availability**:

@@ -1,7 +1,8 @@
 # databaseScope
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of database (public, private, or shared).
 
@@ -10,15 +11,16 @@ The type of database (public, private, or shared).
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.DatabaseScope databaseScope;
 ```
 
 ## See Also
 
-- [fetchDatabaseChanges](cloudkit.database/fetchdatabasechanges.md)
+### Fetching Changes
+- [fetchDatabaseChanges](./fetchdatabasechanges.md)
   Fetch changed record zones in the database.
-- [fetchRecordZoneChanges](cloudkit.database/fetchrecordzonechanges.md)
+- [fetchRecordZoneChanges](./fetchrecordzonechanges.md)
   Fetch changes to the specified record zones in the database.
 
 

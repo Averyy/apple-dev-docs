@@ -96,14 +96,12 @@
       "hash": "34c2c51880b91637a1021dc7bb362de07c97bfa4ba38550a96b3e15bfcc13baa"
     },
     "https://developer.apple.com/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/!=(_:_:)": {
-      "etag": "W/\"6dea10a9985a25adad679f39900ea864\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/noteq(_,_).md",
-      "hash": "2c1aaf66765135ec56a5dfe9382e250614d2059199d7b8742a5c7f4d661da906"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/==(_:_:)": {
-      "etag": "W/\"1f01d50e7b2fbc062b106c919449e32a\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/eqeq(_,_).md",
-      "hash": "ee57ee08f68be6ef94d3c5ca67eb9637709771b741630c777cbca52a78de2a61"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/applicationnotfound": {
       "etag": "\"1432-65d560bb47522-df\"",
@@ -271,14 +269,12 @@
       "hash": "34c2c51880b91637a1021dc7bb362de07c97bfa4ba38550a96b3e15bfcc13baa"
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/!=(_:_:).json": {
-      "etag": "W/\"6dea10a9985a25adad679f39900ea864\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/noteq(_,_).md",
-      "hash": "2c1aaf66765135ec56a5dfe9382e250614d2059199d7b8742a5c7f4d661da906"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/==(_:_:).json": {
-      "etag": "W/\"1f01d50e7b2fbc062b106c919449e32a\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/eqeq(_,_).md",
-      "hash": "ee57ee08f68be6ef94d3c5ca67eb9637709771b741630c777cbca52a78de2a61"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/applicationnotfound.json": {
       "etag": "\"1432-65d560bb47522-df\"",
@@ -352,6 +348,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 70
   }
 }

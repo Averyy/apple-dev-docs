@@ -1,7 +1,8 @@
 # withoutUI
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that no UI should accompany the unmount operation.
 
@@ -14,15 +15,20 @@ Specifies that no UI should accompany the unmount operation.
 static var withoutUI: FileManager.UnmountOptions { get }
 ```
 
+```c
+NSFileManagerUnmountWithoutUI
+```
+
 #### Discussion
 
-If this option is not specified when calling [`unmountVolume(at:options:completionHandler:)`](filemanager/unmountvolume(at:options:completionhandler:).md), any needed UI will delay completion of the completion handler.
+If this option is not specified when calling [`unmountVolume(at:options:completionHandler:)`](../unmountvolume%28at,options,completionhandler%29.md), any needed UI will delay completion of the completion handler.
 
 ## See Also
 
-- [init(rawValue: UInt)](filemanager/unmountoptions/init(rawvalue:).md)
+### Unmount Behavior
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates an unmount option set from the given raw value.
-- [static var allPartitionsAndEjectDisk: FileManager.UnmountOptions](filemanager/unmountoptions/allpartitionsandejectdisk.md)
+- [static var allPartitionsAndEjectDisk: FileManager.UnmountOptions](./allpartitionsandejectdisk.md)
   Specifies that all partitions on an unmountable disk should be unmounted.
 
 

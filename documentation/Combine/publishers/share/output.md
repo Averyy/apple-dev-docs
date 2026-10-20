@@ -1,7 +1,8 @@
 # Publishers.Share.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.Share.Failure](publishers/share/failure.md)
+### Declaring supporting types
+- [Publishers.Share.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

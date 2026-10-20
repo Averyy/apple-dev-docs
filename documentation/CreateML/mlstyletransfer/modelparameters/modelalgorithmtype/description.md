@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the model parameters.
 
@@ -20,9 +21,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlstyletransfer/modelparameters/modelalgorithmtype/debugdescription.md)
+### Describing an algorithm type
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the model parameters that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlstyletransfer/modelparameters/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the model parameters shown in a playground.
 
 

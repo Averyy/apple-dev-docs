@@ -1,7 +1,8 @@
 # presentation
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the presentation domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the presentation domain.
 ```swift
 static var presentation: some AppSchema.PresentationIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

@@ -1,7 +1,8 @@
 # TableShapeType.unidentified
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An uncategorized table shape.
 
@@ -18,11 +19,12 @@ case unidentified
 
 ## See Also
 
-- [TableShapeType.rectangular](tableshapetype/rectangular.md)
+### Choosing a chair type
+- [TableShapeType.rectangular](./rectangular.md)
   A table shape that resembles a rectangle.
-- [TableShapeType.circularElliptic](tableshapetype/circularelliptic.md)
+- [TableShapeType.circularElliptic](./circularelliptic.md)
   A table shape that resembles an ellipse.
-- [TableShapeType.lShaped](tableshapetype/lshaped.md)
+- [TableShapeType.lShaped](./lshaped.md)
   A table shape that resembles the letter L.
 
 

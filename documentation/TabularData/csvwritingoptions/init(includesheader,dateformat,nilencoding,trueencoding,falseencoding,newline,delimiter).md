@@ -1,7 +1,8 @@
 # init(includesHeader:dateFormat:nilEncoding:trueEncoding:falseEncoding:newline:delimiter:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of options for writing a CSV file.
 
@@ -13,6 +14,8 @@ Creates a set of options for writing a CSV file.
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
+
+> **Deprecated**: Use dateFormatter instead or dateFormat.
 
 ## Declaration
 

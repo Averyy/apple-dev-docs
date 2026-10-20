@@ -1,7 +1,8 @@
 # init(cgRect:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Core Image vector object that is initialized with four values provided by a `CGRect` structure.
 
@@ -17,9 +18,13 @@ Create a Core Image vector object that is initialized with four values provided 
 convenience init(cgRect r: CGRect)
 ```
 
+```objc
++ (instancetype) vectorWithCGRect:(CGRect) r;
+```
+
 #### Return Value
 
- An autoreleased [`CIVector`](civector.md) object of length 4.
+ An autoreleased [`CIVector`](../civector.md) object of length 4.
 
 #### Discussion
 
@@ -31,9 +36,10 @@ The `CGRect` structure’s `x`, `y`, `height` and `width` values are stored in t
 
 ## See Also
 
-- [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:)-59e4k.md)
+### Creating a Vector
+- [convenience init(cgAffineTransform: CGAffineTransform)](./init%28cgaffinetransform%29-59e4k.md)
   Create a Core Image vector object that is initialized with six values provided by a `CGAffineTransform` structure.
-- [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:)-3mobm.md)
+- [convenience init(cgPoint: CGPoint)](./init%28cgpoint%29-3mobm.md)
   Create a Core Image vector object that is initialized with two values provided by a `CGPoint` structure.
 
 

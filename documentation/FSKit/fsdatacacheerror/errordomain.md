@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain of the data cache error.
 

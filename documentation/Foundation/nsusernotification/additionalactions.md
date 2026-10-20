@@ -1,12 +1,13 @@
 # additionalActions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actions that can be taken on a notification in addition to the default action.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
 
 ## Declaration
 
@@ -14,19 +15,25 @@ The actions that can be taken on a notification in addition to the default actio
 var additionalActions: [NSUserNotificationAction]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSUserNotificationAction *> * additionalActions;
+```
+
 #### Discussion
 
-This array contains `NSUserNotificationAction` objects that describe the different actions for a notification in addition to the default action described by [`actionButtonTitle`](nsusernotification/actionbuttontitle.md).
+This array contains `NSUserNotificationAction` objects that describe the different actions for a notification in addition to the default action described by [`actionButtonTitle`](./actionbuttontitle.md).
 
 ## See Also
 
-- [var otherButtonTitle: String](nsusernotification/otherbuttontitle.md)
+### Related Documentation
+- [var otherButtonTitle: String](./otherbuttontitle.md)
   Specifies a custom title for the close button in an alert-style notification.
-- [var actionButtonTitle: String](nsusernotification/actionbuttontitle.md)
+- [var actionButtonTitle: String](./actionbuttontitle.md)
   Specifies the title of the action button displayed in the notification.
-- [var activationType: NSUserNotification.ActivationType](nsusernotification/activationtype-swift.property.md)
+### User Notification Activation Method
+- [var activationType: NSUserNotification.ActivationType](./activationtype-swift.property.md)
   Specifies what caused a user notification to occur.
-- [var additionalActivationAction: NSUserNotificationAction?](nsusernotification/additionalactivationaction.md)
+- [var additionalActivationAction: NSUserNotificationAction?](./additionalactivationaction.md)
   An additional action selected by the user.
 
 

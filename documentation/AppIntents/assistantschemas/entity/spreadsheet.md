@@ -1,7 +1,8 @@
 # spreadsheet
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app entities that describe spreadsheet data.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app entities that describe spreadsheet data.
 ```swift
 static var spreadsheet: some AssistantSchemas.SpreadsheetEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

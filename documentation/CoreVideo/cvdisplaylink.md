@@ -1,7 +1,8 @@
 # CVDisplayLink
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a display link object.
 
@@ -15,15 +16,20 @@ A reference to a display link object.
 class CVDisplayLink
 ```
 
+```c
+typedef struct __CVDisplayLink * CVDisplayLinkRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias CVOptionFlags](cvoptionflags.md)
+### Data Types
+- [typealias CVOptionFlags](./cvoptionflags.md)
   The flags to be used for the display link output callback function.
 
 

@@ -1,7 +1,8 @@
 # toggle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a toggle has been pressed (touch down).
 
@@ -22,7 +23,7 @@ static let toggle: SensoryFeedback.PressFeedback
 
 #### Discussion
 
-Toggle controls should also play [`selection(_:)`](sensoryfeedback/selection(_:).md) with [`on`](sensoryfeedback/selectionfeedback/on.md) and [`off`](sensoryfeedback/selectionfeedback/off.md).
+Toggle controls should also play [`selection(_:)`](../selection%28_%29.md) with [`on`](../selectionfeedback/on.md) and [`off`](../selectionfeedback/off.md).
 
 Only plays feedback on visionOS.
 

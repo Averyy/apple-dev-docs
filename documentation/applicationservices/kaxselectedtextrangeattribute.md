@@ -1,7 +1,8 @@
 # kAXSelectedTextRangeAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates the range of characters (not bytes) that defines the currently selected text within this accessibility object. This attribute is required for all accessibility objects that represent editable text elements. 
 
@@ -12,6 +13,10 @@ Indicates the range of characters (not bytes) that defines the currently selecte
 
 ```swift
 var kAXSelectedTextRangeAttribute: String { get }
+```
+
+```c
+#define kAXSelectedTextRangeAttribute
 ```
 
 

@@ -1,7 +1,8 @@
 # DictionaryIndex
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,10 +21,11 @@ typealias DictionaryIndex<Key, Value> = Dictionary<Key, Value>.Index where Key :
 
 ## See Also
 
-- [typealias SetIndex](setindex.md)
-- [typealias CountableClosedRange](countableclosedrange.md)
-- [typealias CountablePartialRangeFrom](countablepartialrangefrom.md)
-- [typealias CountableRange](countablerange.md)
+### Deprecated
+- [typealias SetIndex](./setindex.md)
+- [typealias CountableClosedRange](./countableclosedrange.md)
+- [typealias CountablePartialRangeFrom](./countablepartialrangefrom.md)
+- [typealias CountableRange](./countablerange.md)
 
 
 ---

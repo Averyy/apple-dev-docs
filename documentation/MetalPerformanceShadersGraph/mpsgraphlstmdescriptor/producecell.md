@@ -1,7 +1,8 @@
 # produceCell
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that controls whether or not to return the output cell from the LSTM layer.
 
@@ -17,6 +18,10 @@ A parameter that controls whether or not to return the output cell from the LSTM
 
 ```swift
 var produceCell: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL produceCell;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # thumbnailImageData
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system field key for the share’s thumbnail image data.
 
@@ -11,7 +12,7 @@ The system field key for the share’s thumbnail image data.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,9 +24,10 @@ static let thumbnailImageData: CKRecord.FieldKey
 
 ## See Also
 
-- [static let shareType: CKRecord.FieldKey](ckshare/systemfieldkey/sharetype.md)
+### Constants
+- [static let shareType: CKRecord.FieldKey](./sharetype.md)
   The system field key for the share’s type.
-- [static let title: CKRecord.FieldKey](ckshare/systemfieldkey/title.md)
+- [static let title: CKRecord.FieldKey](./title.md)
   The system field key for the share’s title.
 
 

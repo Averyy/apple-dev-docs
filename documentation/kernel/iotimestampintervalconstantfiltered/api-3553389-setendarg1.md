@@ -1,14 +1,15 @@
 # setEndArg1
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void setEndArg1(uintptr_t arg);
 ```
 

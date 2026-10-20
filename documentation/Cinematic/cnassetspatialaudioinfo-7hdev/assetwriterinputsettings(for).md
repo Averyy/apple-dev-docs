@@ -1,14 +1,15 @@
 # assetWriterInputSettings(for:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary of settings that should be used to encode LPCM samples using `AVAssetWriterInput`
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 - tvOS 26.0+
 

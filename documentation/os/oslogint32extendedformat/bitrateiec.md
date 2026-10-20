@@ -1,7 +1,8 @@
 # OSLogInt32ExtendedFormat.bitrateIEC
 
 **Framework**: os  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A format that displays a 32-bit integer as an IEC bit rate.
 
@@ -11,7 +12,7 @@ A format that displays a 32-bit integer as an IEC bit rate.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -38,31 +39,32 @@ logger.info(".bitrateIEC output is \(value, format: .bitrateIEC)")
 
 And the system writes the following message to the log:
 
-```None
+```
 [Formatter Output] .bitrateIEC output is 100 Kibps
 ```
 
 ## See Also
 
-- [OSLogInt32ExtendedFormat.ipv4Address](oslogint32extendedformat/ipv4address.md)
+### Getting the Formats
+- [OSLogInt32ExtendedFormat.ipv4Address](./ipv4address.md)
   A format that displays a 32-bit integer as an IPv4 address.
-- [OSLogInt32ExtendedFormat.secondsSince1970](oslogint32extendedformat/secondssince1970.md)
+- [OSLogInt32ExtendedFormat.secondsSince1970](./secondssince1970.md)
   A format that displays a 32-bit integer as a date.
-- [OSLogInt32ExtendedFormat.darwinErrno](oslogint32extendedformat/darwinerrno.md)
+- [OSLogInt32ExtendedFormat.darwinErrno](./darwinerrno.md)
   A format that displays a 32-bit integer as a Darwin error number.
-- [OSLogInt32ExtendedFormat.darwinMode](oslogint32extendedformat/darwinmode.md)
+- [OSLogInt32ExtendedFormat.darwinMode](./darwinmode.md)
   A format that displays a 32-bit integer as a Darwin file mode.
-- [OSLogInt32ExtendedFormat.darwinSignal](oslogint32extendedformat/darwinsignal.md)
+- [OSLogInt32ExtendedFormat.darwinSignal](./darwinsignal.md)
   A format that displays a 32-bit integer as a Darwin signal.
-- [OSLogInt32ExtendedFormat.bitrate](oslogint32extendedformat/bitrate.md)
+- [OSLogInt32ExtendedFormat.bitrate](./bitrate.md)
   A format that displays a 32-bit integer as a bit rate.
-- [OSLogInt32ExtendedFormat.byteCount](oslogint32extendedformat/bytecount.md)
+- [OSLogInt32ExtendedFormat.byteCount](./bytecount.md)
   A format that displays a 32-bit integer as bytes.
-- [OSLogInt32ExtendedFormat.byteCountIEC](oslogint32extendedformat/bytecountiec.md)
+- [OSLogInt32ExtendedFormat.byteCountIEC](./bytecountiec.md)
   A format that displays a 32-bit integer as IEC bytes.
-- [OSLogInt32ExtendedFormat.truth](oslogint32extendedformat/truth.md)
+- [OSLogInt32ExtendedFormat.truth](./truth.md)
   A format that displays a 32-bit integer as true or false.
-- [OSLogInt32ExtendedFormat.answer](oslogint32extendedformat/answer.md)
+- [OSLogInt32ExtendedFormat.answer](./answer.md)
   A format that displays a 32-bit integer as yes or no.
 
 

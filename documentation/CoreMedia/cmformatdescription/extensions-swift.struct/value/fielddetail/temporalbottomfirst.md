@@ -1,7 +1,8 @@
 # temporalBottomFirst
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ static let temporalBottomFirst: CMFormatDescription.Extensions.Value.FieldDetail
 
 ## See Also
 
-- [static let spatialFirstLineEarly: CMFormatDescription.Extensions.Value.FieldDetail](cmformatdescription/extensions-swift.struct/value/fielddetail/spatialfirstlineearly.md)
-- [static let spatialFirstLineLate: CMFormatDescription.Extensions.Value.FieldDetail](cmformatdescription/extensions-swift.struct/value/fielddetail/spatialfirstlinelate.md)
-- [static let temporalTopFirst: CMFormatDescription.Extensions.Value.FieldDetail](cmformatdescription/extensions-swift.struct/value/fielddetail/temporaltopfirst.md)
+### Field Details
+- [static let spatialFirstLineEarly: CMFormatDescription.Extensions.Value.FieldDetail](./spatialfirstlineearly.md)
+- [static let spatialFirstLineLate: CMFormatDescription.Extensions.Value.FieldDetail](./spatialfirstlinelate.md)
+- [static let temporalTopFirst: CMFormatDescription.Extensions.Value.FieldDetail](./temporaltopfirst.md)
 
 
 ---

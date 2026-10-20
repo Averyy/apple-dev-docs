@@ -1,7 +1,8 @@
 # bufferIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer slot index within the argument table.
 

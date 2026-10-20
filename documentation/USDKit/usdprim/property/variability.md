@@ -1,7 +1,8 @@
 # USDPrim.Property.Variability
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Whether a property’s value can change over time.
 
@@ -22,21 +23,21 @@ enum Variability
 ## Topics
 
 ### Enumeration Cases
-- [USDPrim.Property.Variability.uniform](usdprim/property/variability/uniform.md)
+- [USDPrim.Property.Variability.uniform](./variability/uniform.md)
   Value must remain constant across all time samples.
-- [USDPrim.Property.Variability.varying](usdprim/property/variability/varying.md)
+- [USDPrim.Property.Variability.varying](./variability/varying.md)
   Property can have different values at different times (animatable).
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [USDValueProtocol](../../usdvalueprotocol.md)
 
 
 ---

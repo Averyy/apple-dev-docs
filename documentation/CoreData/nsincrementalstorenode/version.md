@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of data in the receiver.
 
@@ -10,7 +11,7 @@ The version of data in the receiver.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The version of data in the receiver.
 var version: UInt64 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) uint64_t version;
+```
+
 #### Discussion
 
 The version number is used by the persistent store coordinator to detect and handle merge conflicts. The version number should be stored with the record. The version number should (implicitly) start at zero (where zero indicates an unsaved object in memory) and be incremented by exactly one every time you save. In addition, you increment the version number when you or the Core Data framework have marked the associated managed object for optimistic locking.
 
 ## See Also
 
-- [var objectID: NSManagedObjectID](nsincrementalstorenode/objectid.md)
+### Managing Node Data
+- [var objectID: NSManagedObjectID](./objectid.md)
   The object ID that identifies the data stored by the receiver.
-- [func update(withValues: [String : Any], version: UInt64)](nsincrementalstorenode/update(withvalues:version:).md)
+- [func update(withValues: [String : Any], version: UInt64)](./update%28withvalues,version%29.md)
   Update the values and version to reflect new data being saved to or loaded from the external store.
-- [func value(for: NSPropertyDescription) -> Any?](nsincrementalstorenode/value(for:).md)
+- [func value(for: NSPropertyDescription) -> Any?](./value%28for%29.md)
   Returns the value for the given property.
 
 

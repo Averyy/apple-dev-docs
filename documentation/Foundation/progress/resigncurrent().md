@@ -1,7 +1,8 @@
 # resignCurrent()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores the previous progress object to become the current progress object on the thread.
 
@@ -20,19 +21,24 @@ Restores the previous progress object to become the current progress object on t
 func resignCurrent()
 ```
 
+```objc
+- (void) resignCurrent;
+```
+
 #### Discussion
 
-This method restores the current progress object to what it was before invoking [`becomeCurrent(withPendingUnitCount:)`](progress/becomecurrent(withpendingunitcount:).md).
+This method restores the current progress object to what it was before invoking [`becomeCurrent(withPendingUnitCount:)`](./becomecurrent%28withpendingunitcount%29.md).
 
-Use this method after building your tree of progress objects, as [`Reporting Progress for Multiple Operations`](progress#Reporting-Progress-for-Multiple-Operations.md) describes.
+Use this method after building your tree of progress objects, as [Reporting Progress for Multiple Operations](../progress.md#Reporting-Progress-for-Multiple-Operations) describes.
 
 ## See Also
 
-- [class func current() -> Progress?](progress/current.md)
+### Accessing the Current Progress Object
+- [class func current() -> Progress?](./current%28%29.md)
   Returns the progress instance, if any.
-- [func becomeCurrent(withPendingUnitCount: Int64)](progress/becomecurrent(withpendingunitcount:).md)
+- [func becomeCurrent(withPendingUnitCount: Int64)](./becomecurrent%28withpendingunitcount%29.md)
   Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform.
-- [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](progress/performascurrent(withpendingunitcount:using:).md)
+- [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](./performascurrent%28withpendingunitcount,using%29.md)
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 
 

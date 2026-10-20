@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The currently selected audio track.
@@ -20,7 +21,7 @@ var currentAudioOption: AVPlaybackUserInterfaceMediaSelectionOption? { get set }
 
 #### Discussion
 
-Should be one of the options in [`audioOptions`](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/audiooptions.md).
+Should be one of the options in [`audioOptions`](./audiooptions.md).
 
 
 ---

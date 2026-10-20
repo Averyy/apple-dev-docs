@@ -1,7 +1,8 @@
 # image
 
 **Framework**: Push to Talk  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel photo that the system presents in the user interface to represent the channel.
 
@@ -17,9 +18,14 @@ The channel photo that the system presents in the user interface to represent th
 var image: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * image;
+```
+
 ## See Also
 
-- [var name: String](ptchanneldescriptor/name.md)
+### Inspecting a channel descriptor
+- [var name: String](./name.md)
   The channel name that the system presents in the system user interface.
 
 

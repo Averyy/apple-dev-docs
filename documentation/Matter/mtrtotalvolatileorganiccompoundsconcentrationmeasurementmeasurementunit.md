@@ -1,7 +1,8 @@
 # MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 enum MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit
 ```
 
+```c
+enum MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.BQM3](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/bqm3.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.MGM3](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/mgm3.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.NGM3](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ngm3.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PM3](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/pm3.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PPB](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ppb.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PPM](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ppm.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PPT](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ppt.md)
-- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.UGM3](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ugm3.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.BQM3](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/bqm3.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.MGM3](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/mgm3.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.NGM3](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ngm3.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PM3](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/pm3.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PPB](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ppb.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PPM](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ppm.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.PPT](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ppt.md)
+- [MTRTotalVolatileOrganicCompoundsConcentrationMeasurementMeasurementUnit.UGM3](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/ugm3.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrtotalvolatileorganiccompoundsconcentrationmeasurementmeasurementunit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

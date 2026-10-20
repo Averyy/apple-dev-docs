@@ -1,7 +1,8 @@
 # init(label:description:actions:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 
@@ -29,9 +30,10 @@ init(@ContentBuilder label: () -> Label, @ContentBuilder description: () -> Desc
 
 ## See Also
 
-- [init(_:image:description:)](contentunavailableview/init(_:image:description:).md)
+### Creating an unavailable view
+- [init(_:image:description:)](./init%28_,image,description%29.md)
   Creates an interface, consisting of a title generated from a localized string resource, an image and additional content, that you display when the content of your app is unavailable to users.
-- [init(_:systemImage:description:)](contentunavailableview/init(_:systemimage:description:).md)
+- [init(_:systemImage:description:)](./init%28_,systemimage,description%29.md)
   Creates an interface, consisting of a title generated from a localized string resource, a system icon image and additional content, that you display when the content of your app is unavailable to users.
 
 

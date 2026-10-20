@@ -1,7 +1,8 @@
 # attributeType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type for the attribute, as declared in Metal shader source code.
 
@@ -10,7 +11,7 @@ The data type for the attribute, as declared in Metal shader source code.
 - iPadOS 8.3+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ The data type for the attribute, as declared in Metal shader source code.
 var attributeType: MTLDataType { get }
 ```
 
+```objc
+@property (readonly) MTLDataType attributeType;
+```
+
 ## See Also
 
-- [var name: String](mtlvertexattribute/name.md)
+### Describing the attribute
+- [var name: String](./name.md)
   The name of the attribute.
-- [var attributeIndex: Int](mtlvertexattribute/attributeindex.md)
+- [var attributeIndex: Int](./attributeindex.md)
   The index of the attribute, as declared in Metal shader source code.
-- [var isActive: Bool](mtlvertexattribute/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether this vertex attribute is active.
-- [var isPatchControlPointData: Bool](mtlvertexattribute/ispatchcontrolpointdata.md)
+- [var isPatchControlPointData: Bool](./ispatchcontrolpointdata.md)
   A Boolean value that indicates whether this vertex attribute represents control point data.
-- [var isPatchData: Bool](mtlvertexattribute/ispatchdata.md)
+- [var isPatchData: Bool](./ispatchdata.md)
   A Boolean value that indicates whether this vertex attribute represents patch data.
 
 

@@ -1,7 +1,8 @@
 # AVContentProposalAction.accept
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user accepted the content proposal.
 
@@ -14,11 +15,16 @@ The user accepted the content proposal.
 case accept
 ```
 
+```c
+AVContentProposalActionAccept
+```
+
 ## See Also
 
-- [AVContentProposalAction.reject](avcontentproposalaction/reject.md)
+### Actions
+- [AVContentProposalAction.reject](./reject.md)
   The user rejected the content proposal.
-- [AVContentProposalAction.defer](avcontentproposalaction/defer.md)
+- [AVContentProposalAction.defer](./defer.md)
   The user deferred the content proposal.
 
 

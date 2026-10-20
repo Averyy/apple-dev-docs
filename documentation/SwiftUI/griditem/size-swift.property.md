@@ -1,7 +1,8 @@
 # size
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the item, which is the width of a column item or the height of a row item.
 
@@ -22,11 +23,12 @@ var size: GridItem.Size
 
 ## See Also
 
-- [var alignment: Alignment?](griditem/alignment.md)
+### Inspecting grid item properties
+- [var alignment: Alignment?](./alignment.md)
   The alignment to use when placing each view.
-- [var spacing: CGFloat?](griditem/spacing.md)
+- [var spacing: CGFloat?](./spacing.md)
   The spacing to the next item.
-- [GridItem.Size](griditem/size-swift.enum.md)
+- [GridItem.Size](./size-swift.enum.md)
   The size in the minor axis of one or more rows or columns in a grid layout.
 
 

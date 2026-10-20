@@ -1,7 +1,8 @@
 # key
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key that the person presses.
 
@@ -15,6 +16,10 @@ The key that the person presses.
 
 ```swift
 var key: UIKey { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIKey * key;
 ```
 
 

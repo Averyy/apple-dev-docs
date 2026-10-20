@@ -1,22 +1,23 @@
 # tIOUSB40LinkStateTimeout
 
 **Framework**: USBDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 enum tIOUSB40LinkStateTimeout : unsigned int;
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [kKeepAliveTimeout](tiousb40linkstatetimeout/kkeepalivetimeout.md)
-- [kPortReadyTimeout](tiousb40linkstatetimeout/kportreadytimeout.md)
+- [kKeepAliveTimeout](./tiousb40linkstatetimeout/kkeepalivetimeout.md)
+- [kPortReadyTimeout](./tiousb40linkstatetimeout/kportreadytimeout.md)
 
 
 ---

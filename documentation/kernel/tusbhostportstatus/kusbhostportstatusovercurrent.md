@@ -1,7 +1,8 @@
 # kUSBHostPortStatusOvercurrent
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port status overcurrent.
 
@@ -10,7 +11,7 @@ The port status overcurrent.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusOvercurrent = kIOUSBHostPortStatusOvercurrent
 ```
 

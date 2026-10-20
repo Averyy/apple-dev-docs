@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Delegate that receives updates as the camera stream changes.
 
@@ -19,9 +20,14 @@ Delegate that receives updates as the camera stream changes.
 weak var delegate: (any HMCameraStreamControlDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<HMCameraStreamControlDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol HMCameraStreamControlDelegate](hmcamerastreamcontroldelegate.md)
+### Observing stream activity
+- [protocol HMCameraStreamControlDelegate](../hmcamerastreamcontroldelegate.md)
   A protocol that gives the delegate updates on the camera stream.
 
 

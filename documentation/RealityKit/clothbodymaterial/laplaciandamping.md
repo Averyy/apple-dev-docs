@@ -1,7 +1,8 @@
 # laplacianDamping
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Damping applied to the velocities of the particles, based on the velocities of their connecting particles.
 
@@ -24,11 +25,12 @@ The valid range is [0.0, 1.0], both included. Values outside the valid range are
 
 ## See Also
 
-- [var springStiffness: Float](clothbodymaterial/springstiffness.md)
+### Configuring stiffness and damping
+- [var springStiffness: Float](./springstiffness.md)
   The resistance to compressing and stretching between adjacent particles.
-- [var bendStiffness: Float](clothbodymaterial/bendstiffness.md)
+- [var bendStiffness: Float](./bendstiffness.md)
   The resistance to bending between adjacent triangles.
-- [var crossTetherStiffness: Float](clothbodymaterial/crosstetherstiffness.md)
+- [var crossTetherStiffness: Float](./crosstetherstiffness.md)
   The resistance to shearing between opposing vertices.
 
 

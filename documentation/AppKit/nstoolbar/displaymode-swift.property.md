@@ -1,7 +1,8 @@
 # displayMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
 
@@ -9,7 +10,7 @@ A value that indicates whether the toolbar displays items using a name, icon, or
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,19 +18,24 @@ A value that indicates whether the toolbar displays items using a name, icon, or
 var displayMode: NSToolbar.DisplayMode { get set }
 ```
 
+```objc
+@property NSToolbarDisplayMode displayMode;
+```
+
 #### Discussion
 
-The default value of this property is [`NSToolbar.DisplayMode.default`](nstoolbar/displaymode-swift.enum/default.md). For a list of possible values, see [`NSToolbar.DisplayMode`](nstoolbar/displaymode-swift.enum.md).
+The default value of this property is [`NSToolbar.DisplayMode.default`](./displaymode-swift.enum/default.md). For a list of possible values, see [`NSToolbar.DisplayMode`](./displaymode-swift.enum.md).
 
 ## See Also
 
-- [var isVisible: Bool](nstoolbar/isvisible.md)
+### Configuring the toolbar’s behavior
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the toolbar is visible.
-- [NSToolbar.DisplayMode](nstoolbar/displaymode-swift.enum.md)
+- [NSToolbar.DisplayMode](./displaymode-swift.enum.md)
   Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
-- [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
+- [var allowsUserCustomization: Bool](./allowsusercustomization.md)
   A Boolean value that indicates whether users can modify the contents of the toolbar.
-- [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
+- [var allowsExtensionItems: Bool](./allowsextensionitems.md)
   A Boolean value that indicates whether the toolbar can add items for Action extensions.
 
 

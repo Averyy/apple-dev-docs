@@ -1,7 +1,8 @@
 # ShowsConfigurationUI
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your extension presents a user interface when someone enables it in Passwords settings.
 
@@ -10,9 +11,12 @@ A Boolean value that indicates whether your extension presents a user interface 
 - iPadOS 17.0+
 - macOS 14.0+
 
+## Details
+
+- **Name**: `ShowsConfigurationUI`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 

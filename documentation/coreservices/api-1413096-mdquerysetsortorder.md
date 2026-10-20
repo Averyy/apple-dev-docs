@@ -1,7 +1,8 @@
 # MDQuerySetSortOrder(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDQuerySetSortOrder(_ query: MDQuery!, _ sortingAttrs: CFArray!) -> Bool
+```
+
+```c
+Boolean MDQuerySetSortOrder(MDQueryRef query, CFArrayRef sortingAttrs);
 ```
 
 

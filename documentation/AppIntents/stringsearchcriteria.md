@@ -1,7 +1,8 @@
 # StringSearchCriteria
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that tells your app to match its items against a provided string.
 
@@ -11,7 +12,7 @@ A type that tells your app to match its items against a provided string.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -22,40 +23,41 @@ struct StringSearchCriteria
 
 #### Overview
 
-Use this type in app intents that match your app’s content against a string-based value. When you define an app intent using the [`search`](appschema/systemintent/search.md) schema or the [`ShowInAppSearchResultsIntent`](showinappsearchresultsintent.md) protocol, apply this type to the [`criteria`](showinappsearchresultsintent/criteria-swift.property.md) property. When your app intent runs, the system sets that property to an instance of this structure and fills it with the search term. When you use this type in your app intent, use the accompanying [`StringSearchScope`](stringsearchscope.md) type for the [`searchScopes`](showinappsearchresultsintent/searchscopes.md) property.
+Use this type in app intents that match your app’s content against a string-based value. When you define an app intent using the [`search`](./appschema/systemintent/search.md) schema or the [`ShowInAppSearchResultsIntent`](./showinappsearchresultsintent.md) protocol, apply this type to the [`criteria`](./showinappsearchresultsintent/criteria-swift.property.md) property. When your app intent runs, the system sets that property to an instance of this structure and fills it with the search term. When you use this type in your app intent, use the accompanying [`StringSearchScope`](./stringsearchscope.md) type for the [`searchScopes`](./showinappsearchresultsintent/searchscopes.md) property.
 
 ## Topics
 
 ### Creating the search criteria
-- [init(term: String)](stringsearchcriteria/init(term:).md)
+- [init(term: String)](./stringsearchcriteria/init%28term%29.md)
   Initializes the type with the specified search term.
 ### Getting the search term
-- [var term: String](stringsearchcriteria/term.md)
+- [var term: String](./stringsearchcriteria/term.md)
   The string to use when matching items in your app.
 ### Getting related types
-- [static var defaultResolverSpecification: some ResolverSpecification](stringsearchcriteria/defaultresolverspecification.md)
-- [StringSearchCriteria.Specification](stringsearchcriteria/specification.md)
-- [StringSearchCriteria.UnwrappedType](stringsearchcriteria/unwrappedtype.md)
-- [StringSearchCriteria.ValueType](stringsearchcriteria/valuetype.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./stringsearchcriteria/defaultresolverspecification.md)
+- [StringSearchCriteria.Specification](./stringsearchcriteria/specification.md)
+- [StringSearchCriteria.UnwrappedType](./stringsearchcriteria/unwrappedtype.md)
+- [StringSearchCriteria.ValueType](./stringsearchcriteria/valuetype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [SearchCriteria](searchcriteria.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [SearchCriteria](./searchcriteria.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+### Search
+- [protocol ShowInAppSearchResultsIntent](./showinappsearchresultsintent.md)
   An app intent that displays a set of search results in the app’s interface.
-- [enum StringSearchScope](stringsearchscope.md)
+- [enum StringSearchScope](./stringsearchscope.md)
   Constants that describe the types of content your app includes in search results when the search criteria is a string.
 
 

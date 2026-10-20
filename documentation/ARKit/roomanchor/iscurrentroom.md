@@ -1,7 +1,8 @@
 # isCurrentRoom
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a room is a person’s current location.
 
@@ -16,15 +17,16 @@ var isCurrentRoom: Bool { get }
 
 ## See Also
 
-- [var geometry: MeshAnchor.Geometry](roomanchor/geometry.md)
+### Getting information about a room anchor
+- [var geometry: MeshAnchor.Geometry](./geometry.md)
   The geometry of the mesh in an anchor’s coordinate system.
-- [var id: UUID](roomanchor/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of this anchor.
-- [var meshAnchorIDs: [UUID]](roomanchor/meshanchorids.md)
+- [var meshAnchorIDs: [UUID]](./meshanchorids.md)
   An array of IDs of the mesh anchors associated with a room.
-- [var originFromAnchorTransform: simd_float4x4](roomanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The transform from the room anchor to the origin coordinate system.
-- [var planeAnchorIDs: [UUID]](roomanchor/planeanchorids.md)
+- [var planeAnchorIDs: [UUID]](./planeanchorids.md)
   An array of IDs of the plane anchors associated with a room.
 
 

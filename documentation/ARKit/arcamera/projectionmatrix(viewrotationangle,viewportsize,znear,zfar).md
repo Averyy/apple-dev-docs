@@ -1,7 +1,8 @@
 # projectionMatrix(viewRotationAngle:viewportSize:zNear:zFar:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a projection matrix for the camera given rendering parameters.
 
@@ -13,6 +14,10 @@ Creates a projection matrix for the camera given rendering parameters.
 
 ```swift
 func projectionMatrix(viewRotationAngle: CGFloat, viewportSize: CGSize, zNear: CGFloat, zFar: CGFloat) -> simd_float4x4
+```
+
+```objc
+- (simd_float4x4) projectionMatrixForViewRotationAngle:(CGFloat) viewRotationAngle viewportSize:(CGSize) viewportSize zNear:(CGFloat) zNear zFar:(CGFloat) zFar;
 ```
 
 #### Return Value

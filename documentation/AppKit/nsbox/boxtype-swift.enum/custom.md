@@ -1,7 +1,8 @@
 # NSBox.BoxType.custom
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.5+
@@ -12,16 +13,21 @@
 case custom
 ```
 
+```c
+NSBoxCustom
+```
+
 #### Discussion
 
 Specifies that the appearance of the box is determined entirely by the by box-configuration methods, without automatically applying Apple human interface guidelines. See Customizing for details.
 
 ## See Also
 
-- [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
-- [static var secondary: NSBox.BoxType](nsbox/boxtype-swift.enum/secondary.md)
-- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
+### Constants
+- [NSBox.BoxType.primary](./primary.md)
+- [NSBox.BoxType.separator](./separator.md)
+- [static var secondary: NSBox.BoxType](./secondary.md)
+- [static var oldStyle: NSBox.BoxType](./oldstyle.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name assigned to the route.
 
@@ -10,25 +11,26 @@ The name assigned to the route.
 
 ## Declaration
 
-```swift
+```
 name: string;
 ```
 
 #### Discussion
 
-Display [`name`](route/name.md) to the user so they can distinguish one route from another. MapKit JS localizes this string according to the [`Directions`](directions.md) object’s [`language`](directionsconstructoroptions/language.md) value.
+Display [`name`](./name.md) to the user so they can distinguish one route from another. MapKit JS localizes this string according to the [`Directions`](../directions.md) object’s [`language`](../directionsconstructoroptions/language.md) value.
 
 ## See Also
 
-- [steps](route/steps.md)
+### Route details
+- [steps](./steps.md)
   An array of steps that compose the overall route.
-- [distance](route/distance.md)
+- [distance](./distance.md)
   The route distance, in meters.
-- [expectedTravelTime](route/expectedtraveltime.md)
+- [expectedTravelTime](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [transportType](route/transporttype.md)
+- [transportType](./transporttype.md)
   The overall route transport type.
-- [hasTolls](route/hastolls.md)
+- [hasTolls](./hastolls.md)
   A Boolean value that indicates whether a route has tolls.
 
 

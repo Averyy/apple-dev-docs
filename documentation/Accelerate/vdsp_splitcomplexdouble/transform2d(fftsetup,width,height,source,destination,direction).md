@@ -1,7 +1,8 @@
 # transform2D(fftSetup:width:height:source:destination:direction:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs a 2D fast Fourier transform.
 
@@ -11,7 +12,7 @@ Performs a 2D fast Fourier transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

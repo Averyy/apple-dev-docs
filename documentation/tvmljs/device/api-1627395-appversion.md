@@ -1,7 +1,8 @@
 # appVersion
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The current app version.
 
@@ -10,21 +11,22 @@ The current app version.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String appVersion;
 ```
 
 ## See Also
 
-- [appIdentifier](device/1627339-appidentifier.md)
+### Retrieving Device Information
+- [appIdentifier](./api-1627339-appidentifier.md)
   The unique identifier for the app.
-- [model](device/1627347-model.md)
+- [model](./api-1627347-model.md)
   A string that identifies the device model.
-- [productType](device/1627386-producttype.md)
+- [productType](./api-1627386-producttype.md)
   The version of the product installed on the Apple TV.
-- [systemVersion](device/1627323-systemversion.md)
+- [systemVersion](./api-1627323-systemversion.md)
   The tvOS version.
-- [vendorIdentifier](device/1627383-vendoridentifier.md)
+- [vendorIdentifier](./api-1627383-vendoridentifier.md)
   The universally unique identifier (UUID) of the device.
 
 

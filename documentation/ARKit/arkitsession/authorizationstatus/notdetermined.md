@@ -1,7 +1,8 @@
 # ARKitSession.AuthorizationStatus.notDetermined
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user hasn’t yet granted or denied permission.
 
@@ -16,9 +17,10 @@ case notDetermined
 
 ## See Also
 
-- [ARKitSession.AuthorizationStatus.allowed](arkitsession/authorizationstatus/allowed.md)
+### Getting authorization states
+- [ARKitSession.AuthorizationStatus.allowed](./allowed.md)
   The user granted your app permission to use the associated kind of ARKit data.
-- [ARKitSession.AuthorizationStatus.denied](arkitsession/authorizationstatus/denied.md)
+- [ARKitSession.AuthorizationStatus.denied](./denied.md)
   The user denied your app permission to use the associated kind of ARKit data.
 
 

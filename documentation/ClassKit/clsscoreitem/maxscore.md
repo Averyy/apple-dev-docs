@@ -1,7 +1,8 @@
 # maxScore
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum possible score that the user can earn on a given task.
 
@@ -18,9 +19,14 @@ The maximum possible score that the user can earn on a given task.
 var maxScore: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double maxScore;
+```
+
 ## See Also
 
-- [var score: Double](clsscoreitem/score.md)
+### Managing the Score
+- [var score: Double](./score.md)
   The score earned by a user in completing the task.
 
 

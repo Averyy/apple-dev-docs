@@ -1,7 +1,8 @@
 # physicsMotion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physics motion component used by physics simulations of the model entity.
 
@@ -11,7 +12,7 @@ The physics motion component used by physics simulations of the model entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

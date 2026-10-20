@@ -1,7 +1,8 @@
 # CSSM_DL_PRIVATE_ERROR
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_DL_PRIVATE_ERROR: Int { get }
+```
+
+```c
+CSSM_DL_PRIVATE_ERROR
 ```
 
 

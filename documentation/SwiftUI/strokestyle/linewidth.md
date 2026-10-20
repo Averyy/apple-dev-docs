@@ -1,7 +1,8 @@
 # lineWidth
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the stroked path.
 
@@ -22,15 +23,16 @@ var lineWidth: CGFloat
 
 ## See Also
 
-- [var lineCap: CGLineCap](strokestyle/linecap.md)
+### Setting stroke style properties
+- [var lineCap: CGLineCap](./linecap.md)
   The endpoint style of a line.
-- [var lineJoin: CGLineJoin](strokestyle/linejoin.md)
+- [var lineJoin: CGLineJoin](./linejoin.md)
   The join type of a line.
-- [var miterLimit: CGFloat](strokestyle/miterlimit.md)
+- [var miterLimit: CGFloat](./miterlimit.md)
   A threshold used to determine whether to use a bevel instead of a miter at a join.
-- [var dash: [CGFloat]](strokestyle/dash.md)
+- [var dash: [CGFloat]](./dash.md)
   The lengths of painted and unpainted segments used to make a dashed line.
-- [var dashPhase: CGFloat](strokestyle/dashphase.md)
+- [var dashPhase: CGFloat](./dashphase.md)
   How far into the dash pattern the line starts.
 
 

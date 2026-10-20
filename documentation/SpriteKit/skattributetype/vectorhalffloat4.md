@@ -1,7 +1,8 @@
 # SKAttributeType.vectorHalfFloat4
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case vectorHalfFloat4
 ```
 
+```c
+SKAttributeTypeVectorHalfFloat4
+```
+
 ## See Also
 
-- [SKAttributeType.float](skattributetype/float.md)
-- [SKAttributeType.halfFloat](skattributetype/halffloat.md)
-- [SKAttributeType.none](skattributetype/none.md)
-- [SKAttributeType.vectorFloat2](skattributetype/vectorfloat2.md)
-- [SKAttributeType.vectorFloat3](skattributetype/vectorfloat3.md)
-- [SKAttributeType.vectorFloat4](skattributetype/vectorfloat4.md)
-- [SKAttributeType.vectorHalfFloat2](skattributetype/vectorhalffloat2.md)
-- [SKAttributeType.vectorHalfFloat3](skattributetype/vectorhalffloat3.md)
+### Enumeration Cases
+- [SKAttributeType.float](./float.md)
+- [SKAttributeType.halfFloat](./halffloat.md)
+- [SKAttributeType.none](./none.md)
+- [SKAttributeType.vectorFloat2](./vectorfloat2.md)
+- [SKAttributeType.vectorFloat3](./vectorfloat3.md)
+- [SKAttributeType.vectorFloat4](./vectorfloat4.md)
+- [SKAttributeType.vectorHalfFloat2](./vectorhalffloat2.md)
+- [SKAttributeType.vectorHalfFloat3](./vectorhalffloat3.md)
 
 
 ---

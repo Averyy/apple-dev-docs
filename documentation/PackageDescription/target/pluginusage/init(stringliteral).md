@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Specifies use of a plugin target in the same package.
 

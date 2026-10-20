@@ -1,7 +1,8 @@
 # init(currentSuggestion:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new query context object with an optional suggested search string.
 
@@ -18,9 +19,13 @@ Creates a new query context object with an optional suggested search string.
 init(currentSuggestion: CSSuggestion?)
 ```
 
+```objc
++ (CSUserQueryContext *) userQueryContextWithCurrentSuggestion:(CSSuggestion *) currentSuggestion;
+```
+
 #### Return Value
 
-An initialized user query context object. Configure the properties of the returned object and use it to construct a [`CSUserQuery`](csuserquery.md) object.
+An initialized user query context object. Configure the properties of the returned object and use it to construct a [`CSUserQuery`](../csuserquery.md) object.
 
 ## Parameters
 

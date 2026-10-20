@@ -1,7 +1,8 @@
 # canvasViewDidEndUsingTool(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user ended a drawing sequence with the tool they were using.
 
@@ -17,13 +18,18 @@ Tells the delegate that the user ended a drawing sequence with the tool they wer
 optional func canvasViewDidEndUsingTool(_ canvasView: PKCanvasView)
 ```
 
+```objc
+- (void) canvasViewDidEndUsingTool:(PKCanvasView *) canvasView;
+```
+
 ## Parameters
 
 - `canvasView`: The canvas view whose contents changed.
 
 ## See Also
 
-- [func canvasViewDidBeginUsingTool(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidbeginusingtool(_:).md)
+### Responding to new event sequences
+- [func canvasViewDidBeginUsingTool(PKCanvasView)](./canvasviewdidbeginusingtool%28_%29.md)
   Tells the delegate that the user started a new drawing sequence with the currently selected tool.
 
 

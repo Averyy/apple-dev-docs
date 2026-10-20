@@ -1,7 +1,8 @@
 # Observable
 
 **Framework**: Observation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that emits notifications to observers when underlying data changes.
 
@@ -22,15 +23,16 @@ protocol Observable
 
 ## Mentions
 
-- [Applying Macros](../swift/applying-macros.md)
+- [Applying Macros](../Swift/applying-macros.md)
 
 #### Overview
 
-Conforming to this protocol signals to other APIs that the type supports observation. However, applying the `Observable` protocol by itself to a type doesn’t add observation functionality to the type. Instead, always use the [`Observable()`](observable().md) macro when adding observation support to a type.
+Conforming to this protocol signals to other APIs that the type supports observation. However, applying the `Observable` protocol by itself to a type doesn’t add observation functionality to the type. Instead, always use the [`Observable()`](./observable%28%29.md) macro when adding observation support to a type.
 
 ## See Also
 
-- [macro Observable()](observable().md)
+### Observable conformance
+- [macro Observable()](./observable%28%29.md)
   Defines and implements conformance of the Observable protocol.
 
 

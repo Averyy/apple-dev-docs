@@ -1,7 +1,8 @@
 # standardLocalizedTagNames
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the localized standard system tags the audio units define.
 
@@ -19,9 +20,14 @@ An array of the localized standard system tags the audio units define.
 var standardLocalizedTagNames: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * standardLocalizedTagNames;
+```
+
 ## See Also
 
-- [var tagNames: [String]](avaudiounitcomponentmanager/tagnames.md)
+### Getting Audio Unit tags
+- [var tagNames: [String]](./tagnames.md)
   An array of all tags the audio unit associates with the current user, and the system tags the audio units define.
 
 

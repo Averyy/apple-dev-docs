@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the badge when it displays.
 
@@ -14,11 +15,16 @@ The string representation of the badge when it displays.
 var stringValue: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * stringValue;
+```
+
 ## See Also
 
-- [var itemCount: Int](nsmenuitembadge/itemcount.md)
+### Accessing menu item badge attributes
+- [var itemCount: Int](./itemcount.md)
   The number of items the badge displays.
-- [var type: NSMenuItemBadge.BadgeType](nsmenuitembadge/type.md)
+- [var type: NSMenuItemBadge.BadgeType](./type.md)
   The type of items the badge displays.
 
 

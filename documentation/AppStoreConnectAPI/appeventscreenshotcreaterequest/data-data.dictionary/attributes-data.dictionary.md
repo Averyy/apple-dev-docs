@@ -1,16 +1,19 @@
 # AppEventScreenshotCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app event screenshot create request resource.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryImageCreateRequest`](../../appassetlibraryimagecreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppEventScreenshotCreateRequest.Data.Attributes
 ```
 
@@ -22,7 +25,8 @@ object AppEventScreenshotCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppEventScreenshotCreateRequest.Data.Relationships](appeventscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppEventScreenshotCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

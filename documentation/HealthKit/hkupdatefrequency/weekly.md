@@ -1,7 +1,8 @@
 # HKUpdateFrequency.weekly
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system launches your app at most once per week in response to changes.
 
@@ -19,13 +20,18 @@ The system launches your app at most once per week in response to changes.
 case weekly
 ```
 
+```c
+HKUpdateFrequencyWeekly
+```
+
 ## See Also
 
-- [HKUpdateFrequency.immediate](hkupdatefrequency/immediate.md)
+### Constants
+- [HKUpdateFrequency.immediate](./immediate.md)
   The system launches your app every time it detects a change.
-- [HKUpdateFrequency.hourly](hkupdatefrequency/hourly.md)
+- [HKUpdateFrequency.hourly](./hourly.md)
   The system launches your app at most once an hour in response to changes.
-- [HKUpdateFrequency.daily](hkupdatefrequency/daily.md)
+- [HKUpdateFrequency.daily](./daily.md)
   The system launches your app at most once a day in response to changes.
 
 

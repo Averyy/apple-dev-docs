@@ -1,7 +1,8 @@
 # makeXPCSession()
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connect to the app extension process using an XPC session.
 
@@ -27,7 +28,8 @@ Call this method to create a connection between your host app and an app extensi
 
 ## See Also
 
-- [func makeXPCConnection() throws -> NSXPCConnection](appextensionprocess/makexpcconnection.md)
+### Connecting to the app extension
+- [func makeXPCConnection() throws -> NSXPCConnection](./makexpcconnection%28%29.md)
   Connect to the app extension process using the XPC types of the Foundation framework.
 
 

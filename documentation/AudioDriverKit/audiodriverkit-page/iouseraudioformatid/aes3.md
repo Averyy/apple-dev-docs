@@ -1,7 +1,8 @@
 # AES3
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The AES3-2003 format.
 
@@ -10,7 +11,7 @@ The AES3-2003 format.
 
 ## Declaration
 
-```swift
+```c
 AES3
 ```
 

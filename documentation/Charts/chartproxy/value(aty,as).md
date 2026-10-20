@@ -1,7 +1,8 @@
 # value(atY:as:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data value at the given y position, or `nil` if the position does not correspond to a valid Y value.
 

@@ -1,7 +1,8 @@
 # BetaAppClipInvocationLocalizationInlineCreate
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An inline object for specifying a localized title for a beta App Clip invocation within a parent create or update request.
 
@@ -10,16 +11,16 @@ An inline object for specifying a localized title for a beta App Clip invocation
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationLocalizationInlineCreate
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocationLocalizationInlineCreate.Attributes](betaappclipinvocationlocalizationinlinecreate/attributes-data.dictionary.md)
+- [object BetaAppClipInvocationLocalizationInlineCreate.Attributes](./betaappclipinvocationlocalizationinlinecreate/attributes-data.dictionary.md)
   The attributes that describe a Beta App Clip Invocation Localization Inline Creates resource.
-- [object BetaAppClipInvocationLocalizationInlineCreate.Relationships](betaappclipinvocationlocalizationinlinecreate/relationships-data.dictionary.md)
+- [object BetaAppClipInvocationLocalizationInlineCreate.Relationships](./betaappclipinvocationlocalizationinlinecreate/relationships-data.dictionary.md)
   The relationships to other resources that you can set when you create a new Beta App Clip Invocation Localization Inline Creates resource.
 
 ## Properties
@@ -29,9 +30,12 @@ object BetaAppClipInvocationLocalizationInlineCreate
 - `relationships` (BetaAppClipInvocationLocalizationInlineCreate.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `betaAppClipInvocationLocalizations`
+
 ## See Also
 
-- [object BetaAppClipInvocationCreateRequest.Data](betaappclipinvocationcreaterequest/data-data.dictionary.md)
+### Objects
+- [object BetaAppClipInvocationCreateRequest.Data](./betaappclipinvocationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 

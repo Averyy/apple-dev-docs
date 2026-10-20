@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The custom shape to draw for the stem of the selection handle.
@@ -19,11 +20,16 @@ The custom shape to draw for the stem of the selection handle.
 var customShape: UIBezierPath? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIBezierPath * customShape;
+```
+
 ## See Also
 
-- [var direction: NSDirectionalRectEdge](uitextselectionhandleview/direction.md)
+### Specifying the handle details
+- [var direction: NSDirectionalRectEdge](./direction.md)
   The orientation of the selection handle.
-- [var isVertical: Bool](uitextselectionhandleview/isvertical.md)
+- [var isVertical: Bool](./isvertical.md)
   Convenience accessor for @c direction calculations.
 
 

@@ -1,7 +1,8 @@
 # soundName
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the sound to play when the alarm triggers.
 
@@ -14,21 +15,26 @@ The name of the sound to play when the alarm triggers.
 var soundName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * soundName;
+```
+
 ## Mentions
 
-- [Setting an alarm](setting-an-alarm.md)
+- [Setting an alarm](../setting-an-alarm.md)
 
 #### Discussion
 
-The value of this property is the name of a system sound that can be used with the [`init(named:)`](https://developer.apple.com/documentation/appkit/nssound/init(named:)) class method to create an `NSSound` object. Assigning this property a value will set the [`emailAddress`](ekalarm/emailaddress.md) and [`url`](ekalarm/url.md) properties to `nil`.
+The value of this property is the name of a system sound that can be used with the [`init(named:)`](../../AppKit/nssound/init%28named%29.md) class method to create an `NSSound` object. Assigning this property a value will set the [`emailAddress`](./emailaddress.md) and [`url`](./url.md) properties to `nil`.
 
 ## See Also
 
-- [enum EKAlarmType](ekalarmtype.md)
+### Triggering Alarm Actions
+- [enum EKAlarmType](../ekalarmtype.md)
   A value that specifies what type of action occurs when the alarm triggers.
-- [var type: EKAlarmType](ekalarm/type.md)
+- [var type: EKAlarmType](./type.md)
   The type of action to trigger when the alarm fires.
-- [var emailAddress: String?](ekalarm/emailaddress.md)
+- [var emailAddress: String?](./emailaddress.md)
   The recipient of an email to send when the alarm triggers.
 
 

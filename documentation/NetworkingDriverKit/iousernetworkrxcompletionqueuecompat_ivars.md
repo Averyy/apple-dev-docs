@@ -1,22 +1,23 @@
 # IOUserNetworkRxCompletionQueueCompat_IVars
 
 **Framework**: NetworkingDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 struct IOUserNetworkRxCompletionQueueCompat_IVars;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dataQueue](iousernetworkrxcompletionqueuecompat_ivars/dataqueue.md)
-- [dsQueue](iousernetworkrxcompletionqueuecompat_ivars/dsqueue.md)
+- [dataQueue](./iousernetworkrxcompletionqueuecompat_ivars/dataqueue.md)
+- [dsQueue](./iousernetworkrxcompletionqueuecompat_ivars/dsqueue.md)
 
 
 ---

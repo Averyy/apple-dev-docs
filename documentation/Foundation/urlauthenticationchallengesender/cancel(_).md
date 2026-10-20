@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Cancels a given authentication challenge.
@@ -21,21 +22,27 @@ Cancels a given authentication challenge.
 func cancel(_ challenge: URLAuthenticationChallenge)
 ```
 
+```objc
+- (void) cancelAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
+```
+
 ## Parameters
 
 - `challenge`: The authentication challenge to cancel.
 
 ## See Also
 
-- [URL Loading System](url-loading-system.md)
+### Related Documentation
+- [URL Loading System](../url-loading-system.md)
   Interact with URLs and communicate with servers using standard Internet protocols.
-- [func continueWithoutCredential(for: URLAuthenticationChallenge)](urlauthenticationchallengesender/continuewithoutcredential(for:).md)
+### Protocol Methods
+- [func continueWithoutCredential(for: URLAuthenticationChallenge)](./continuewithoutcredential%28for%29.md)
   Attempt to continue downloading a request without providing a credential for a given challenge.
-- [func use(URLCredential, for: URLAuthenticationChallenge)](urlauthenticationchallengesender/use(_:for:).md)
+- [func use(URLCredential, for: URLAuthenticationChallenge)](./use%28_,for%29.md)
   Attempt to use a given credential for a given authentication challenge.
-- [func performDefaultHandling(for: URLAuthenticationChallenge)](urlauthenticationchallengesender/performdefaulthandling(for:).md)
+- [func performDefaultHandling(for: URLAuthenticationChallenge)](./performdefaulthandling%28for%29.md)
   Causes the system-provided default behavior to be used.
-- [func rejectProtectionSpaceAndContinue(with: URLAuthenticationChallenge)](urlauthenticationchallengesender/rejectprotectionspaceandcontinue(with:).md)
+- [func rejectProtectionSpaceAndContinue(with: URLAuthenticationChallenge)](./rejectprotectionspaceandcontinue%28with%29.md)
   Rejects the currently supplied protection space.
 
 

@@ -1,7 +1,8 @@
 # textViewportLayoutController(_:cacheRenderingSurface:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to cache a rendering surface for later retrieval.
 
@@ -18,6 +19,10 @@ Asks the delegate to cache a rendering surface for later retrieval.
 optional func textViewportLayoutController(_ textViewportLayoutController: NSTextViewportLayoutController, cacheRenderingSurface renderingSurface: any NSTextViewportRenderingSurface, for renderingSurfaceKey: any NSTextViewportRenderingSurfaceKey)
 ```
 
+```objc
+- (void) textViewportLayoutController:(NSTextViewportLayoutController *) textViewportLayoutController cacheRenderingSurface:(id<NSTextViewportRenderingSurface>) renderingSurface forKey:(id<NSTextViewportRenderingSurfaceKey>) renderingSurfaceKey;
+```
+
 ## Parameters
 
 - `textViewportLayoutController`: The viewport layout controller.
@@ -26,7 +31,8 @@ optional func textViewportLayoutController(_ textViewportLayoutController: NSTex
 
 ## See Also
 
-- [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:retrievecachedrenderingsurfacefor:).md)
+### Storing rendering surfaces
+- [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](./textviewportlayoutcontroller%28_,retrievecachedrenderingsurfacefor%29.md)
   Asks the delegate to return a previously cached rendering surface.
 
 

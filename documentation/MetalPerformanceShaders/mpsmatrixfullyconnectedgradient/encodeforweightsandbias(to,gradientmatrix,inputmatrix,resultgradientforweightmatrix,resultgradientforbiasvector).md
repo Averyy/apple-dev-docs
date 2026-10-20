@@ -1,7 +1,8 @@
 # encodeForWeightsAndBias(to:gradientMatrix:inputMatrix:resultGradientForWeightMatrix:resultGradientForBiasVector:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeForWeightsAndBias(to commandBuffer: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, resultGradientForWeightMatrix: MPSMatrix, resultGradientForBiasVector: MPSVector?)
+```
+
+```objc
+- (void) encodeGradientForWeightsAndBiasToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer gradientMatrix:(const MPSMatrix *) gradientMatrix inputMatrix:(const MPSMatrix *) inputMatrix resultGradientForWeightMatrix:(MPSMatrix *) resultGradientForWeightMatrix resultGradientForBiasVector:(MPSVector *) resultGradientForBiasVector;
 ```
 
 

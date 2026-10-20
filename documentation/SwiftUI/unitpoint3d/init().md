@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D unit point at the origin.
 
@@ -20,7 +21,8 @@ A view’s origin appears in the top-left-back corner in a left-to-right languag
 
 ## See Also
 
-- [init(x: CGFloat, y: CGFloat, z: CGFloat)](unitpoint3d/init(x:y:z:).md)
+### Creating a point
+- [init(x: CGFloat, y: CGFloat, z: CGFloat)](./init%28x,y,z%29.md)
   Creates a 3D unit point with the specified offsets.
 
 

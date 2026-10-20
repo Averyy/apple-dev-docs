@@ -1,7 +1,8 @@
 # refundPreferenceV1
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A value that indicates your preferred outcome for the refund request.
 
@@ -10,13 +11,20 @@ A value that indicates your preferred outcome for the refund request.
 
 ## Declaration
 
-```swift
+```
 int32 refundPreferenceV1
 ```
 
+## Possible Values
+
+- `0`: The refund preference is undeclared. Use this value to avoid providing information for this field.
+- `1`: You prefer that the App Store grants the refund.
+- `2`: You prefer that the App Store declines the refund.
+- `3`: You have no preference whether the App Store grants or declines the refund.
+
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
@@ -24,27 +32,28 @@ Your refund preference is one of a variety of factors that the App Store uses to
 
 ## See Also
 
-- [type accountTenure](accounttenure.md)
+### Consumption data types
+- [type accountTenure](./accounttenure.md)
   The age of the customer’s account.
-- [type appAccountToken](appaccounttoken.md)
+- [type appAccountToken](./appaccounttoken.md)
   The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
-- [type consumptionStatus](consumptionstatus.md)
+- [type consumptionStatus](./consumptionstatus.md)
   A value that indicates the extent to which the customer consumed the In-App Purchase.
-- [type customerConsented](customerconsented.md)
+- [type customerConsented](./customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
-- [type deliveryStatusV1](deliverystatusv1.md)
+- [type deliveryStatusV1](./deliverystatusv1.md)
   A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
-- [type lifetimeDollarsPurchased](lifetimedollarspurchased.md)
+- [type lifetimeDollarsPurchased](./lifetimedollarspurchased.md)
   A value that indicates the dollar amount of in-app purchases the customer has made in your app, since purchasing the app, across all platforms.
-- [type lifetimeDollarsRefunded](lifetimedollarsrefunded.md)
+- [type lifetimeDollarsRefunded](./lifetimedollarsrefunded.md)
   A value that indicates the dollar amount of refunds the customer has received in your app, since purchasing the app, across all platforms.
-- [type platform](platform.md)
+- [type platform](./platform.md)
   The platform on which the customer consumed the in-app purchase.
-- [type playTime](playtime.md)
+- [type playTime](./playtime.md)
   A value that indicates the amount of time that the customer used the app.
-- [type sampleContentProvided](samplecontentprovided.md)
+- [type sampleContentProvided](./samplecontentprovided.md)
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
-- [type userStatus](userstatus.md)
+- [type userStatus](./userstatus.md)
   The status of a customer’s account within your app.
 
 

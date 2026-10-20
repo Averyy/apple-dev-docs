@@ -1,6 +1,8 @@
 # Updating an app to use strict concurrency
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Sample Code  
+**Download**: [UpdatingAnAppToUseStrictConcurrency.zip](https://docs-assets.developer.apple.com/published/4dd408a8fcf3/UpdatingAnAppToUseStrictConcurrency.zip)
 
 Use this code to follow along with a guide to migrating your code to take advantage of the full concurrency protection that the Swift 6 language mode provides.
 
@@ -13,7 +15,7 @@ Use this code to follow along with a guide to migrating your code to take advant
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC24 session 10169: [`Migrate your app to Swift 6`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10169). It’s based on a similar session from WWDC21 showing how to adopt Swift concurrency in an app, [`Swift concurrency: Update a sample app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10194/).
+> **Note**: This sample code project is associated with WWDC24 session 10169: [Migrate your app to Swift 6](https://developer.apple.com/wwdc24/10169). It’s based on a similar session from WWDC21 showing how to adopt Swift concurrency in an app, [Swift concurrency: Update a sample app](https://developer.apple.com/videos/play/wwdc2021/10194/).
 
 This sample provides two separate versions of the app:
 
@@ -22,7 +24,7 @@ This sample provides two separate versions of the app:
 
 Watch the session to see the process step by step, and then compare the two projects to see the differences.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To add the complication to an active watch face, start by building and running the sample code project in the simulator, and follow these steps:
 
@@ -32,7 +34,7 @@ To add the complication to an active watch face, start by building and running t
 4. Scroll to the complication for the sample app, and then click the Digital Crown again to save your changes.
 5. Click the newly added complication to go to the app.
 
-For more information on setting up watch faces, see [`Change the watch face on your Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT205536).
+For more information on setting up watch faces, see [Change the watch face on your Apple Watch](https://support.apple.com/en-us/HT205536).
 
 After configuring and running the app, you can test the background updates. Make sure that the complication appears on the active watch face. Then build and run the app in Simulator, and follow these steps:
 
@@ -43,7 +45,7 @@ After configuring and running the app, you can test the background updates. Make
 5. Navigate back to the watch face.
 6. The complication will update within 15 minutes; however, the update may be delayed based on the system’s current state.
 
-##### Adopt Strict Concurrency Checking in Swift
+##### Adopt strict concurrency checking in Swift
 
 To see the issues highlighted in the original project, follow these steps:
 
@@ -56,9 +58,10 @@ Compare the original project to the updated project to see how it resolves the c
 
 ## See Also
 
-- [Code-along: Elevating an app with Swift concurrency](code-along-elevating-an-app-with-swift-concurrency.md)
+### Essentials
+- [Code-along: Elevating an app with Swift concurrency](./code-along-elevating-an-app-with-swift-concurrency.md)
   Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
-- [Updating an app to use Swift concurrency](updating-an-app-to-use-swift-concurrency.md)
+- [Updating an app to use Swift concurrency](./updating-an-app-to-use-swift-concurrency.md)
   Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 
 

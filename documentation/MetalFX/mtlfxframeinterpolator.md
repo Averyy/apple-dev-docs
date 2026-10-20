@@ -1,7 +1,8 @@
 # MTLFXFrameInterpolator
 
 **Framework**: MetalFX  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -16,17 +17,21 @@
 protocol MTLFXFrameInterpolator : MTLFXFrameInterpolatorBase
 ```
 
+```objc
+@protocol MTLFXFrameInterpolator <MTLFXFrameInterpolatorBase>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer)](mtlfxframeinterpolator/encode(commandbuffer:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer)](./mtlfxframeinterpolator/encode%28commandbuffer%29.md)
   Encode this frame interpolator’s work into a command buffer.
 
 ## Relationships
 
 ### Inherits From
-- [MTLFXFrameInterpolatorBase](mtlfxframeinterpolatorbase.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTLFXFrameInterpolatorBase](./mtlfxframeinterpolatorbase.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

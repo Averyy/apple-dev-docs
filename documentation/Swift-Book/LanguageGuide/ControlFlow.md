@@ -316,7 +316,7 @@ This example plays a simple game of *Snakes and Ladders*
 
 <!-- Apple Books screenshot begins here. -->
 
-![](snakesAndLadders)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/snakesAndLadders@2x.png)
 
 The rules of the game are as follows:
 
@@ -1217,7 +1217,7 @@ default:
   ```
 -->
 
-![](coordinateGraphSimple)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/coordinateGraphSimple@2x.png)
 
 The `switch` statement determines whether the point is
 at the origin (0, 0),
@@ -1274,7 +1274,7 @@ case let (x, y):
   ```
 -->
 
-![](coordinateGraphMedium)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/coordinateGraphMedium@2x.png)
 
 The `switch` statement determines whether the point is
 on the red x-axis,
@@ -1337,7 +1337,7 @@ case let (x, y):
   ```
 -->
 
-![](coordinateGraphComplex)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/coordinateGraphComplex@2x.png)
 
 The `switch` statement determines whether the point is
 on the green diagonal line where `x == y`,
@@ -1832,7 +1832,7 @@ you must roll again until you roll the exact number needed to land on square 25.
 
 The game board is the same as before.
 
-![](snakesAndLadders)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/snakesAndLadders@2x.png)
 
 The values of `finalSquare`, `board`, `square`, and `diceRoll`
 are initialized in the same way as before:
@@ -2256,7 +2256,7 @@ the body of the `if` executes on the minimum deployment target specified by your
 In its general form,
 the availability condition takes a list of platform names and versions.
 You use platform names such as `iOS`, `macOS`, `watchOS`, `tvOS`, and `visionOS` ---
-for the full list, see [Declaration Attributes](Attributes.md#Declaration-Attributes).
+for the full list, see [Declaration Attributes](../ReferenceManual/Attributes.md#Declaration-Attributes).
 In addition to specifying major version numbers like iOS 8 or macOS 10.10,
 you can specify minor versions numbers like iOS 11.2.6 and macOS 10.13.3.
 

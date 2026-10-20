@@ -1,7 +1,8 @@
 # destinationAddress
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination network address of the route.
 
@@ -19,15 +20,20 @@ The destination network address of the route.
 var destinationAddress: String { get }
 ```
 
+```objc
+@property (readonly) NSString * destinationAddress;
+```
+
 #### Discussion
 
 This string is combined with `destinationNetworkPrefixLength` to specify the destination network of the route.
 
 ## See Also
 
-- [var destinationNetworkPrefixLength: NSNumber](neipv6route/destinationnetworkprefixlength.md)
+### Accessing IPv6 Route Properties
+- [var destinationNetworkPrefixLength: NSNumber](./destinationnetworkprefixlength.md)
   The destination network prefix length of the route.
-- [var gatewayAddress: String?](neipv6route/gatewayaddress.md)
+- [var gatewayAddress: String?](./gatewayaddress.md)
   The address of the next-hop gateway of the route.
 
 

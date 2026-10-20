@@ -1,7 +1,8 @@
 # MDLVertexDescriptor
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of the structure, format, and layout for vertex data buffers associated with a mesh.
 
@@ -19,70 +20,75 @@ A description of the structure, format, and layout for vertex data buffers assoc
 class MDLVertexDescriptor
 ```
 
+```objc
+@interface MDLVertexDescriptor : NSObject
+```
+
 #### Overview
 
-A [`MDLMesh`](mdlmesh.md) object contains arrays of data for separate attributes of each vertex, such as position, color, surface normal vector, or texture coordinates. The vertex data for various attributes can be contained in one or more buffers and may be laid out in various contiguous or interleaved formats. You use a mesh’s [`vertexDescriptor`](mdlmesh/vertexdescriptor.md) property to determine the structure of vertex data for a mesh loaded from an asset file for use in rendering or processing a mesh. You also use vertex descriptors to describe the structure of existing vertex data when creating a new mesh.
+A [`MDLMesh`](./mdlmesh.md) object contains arrays of data for separate attributes of each vertex, such as position, color, surface normal vector, or texture coordinates. The vertex data for various attributes can be contained in one or more buffers and may be laid out in various contiguous or interleaved formats. You use a mesh’s [`vertexDescriptor`](./mdlmesh/vertexdescriptor.md) property to determine the structure of vertex data for a mesh loaded from an asset file for use in rendering or processing a mesh. You also use vertex descriptors to describe the structure of existing vertex data when creating a new mesh.
 
 ## Topics
 
 ### Working with Vertex Attributes
-- [var attributes: NSMutableArray](mdlvertexdescriptor/attributes.md)
+- [var attributes: NSMutableArray](./mdlvertexdescriptor/attributes.md)
   The list of vertex attributes described by the vertex descriptor.
-- [func attributeNamed(String) -> MDLVertexAttribute?](mdlvertexdescriptor/attributenamed(_:).md)
+- [func attributeNamed(String) -> MDLVertexAttribute?](./mdlvertexdescriptor/attributenamed%28_%29.md)
   Returns the vertex attribute with the specified name in the vertex descriptor.
-- [func addOrReplaceAttribute(MDLVertexAttribute)](mdlvertexdescriptor/addorreplaceattribute(_:).md)
+- [func addOrReplaceAttribute(MDLVertexAttribute)](./mdlvertexdescriptor/addorreplaceattribute%28_%29.md)
   Adds the specified vertex attribute to the vertex descriptor, replacing any existing attribute with the same name.
-- [func setPackedOffsets()](mdlvertexdescriptor/setpackedoffsets.md)
+- [func setPackedOffsets()](./mdlvertexdescriptor/setpackedoffsets%28%29.md)
   Sets the offset for each vertex attribute to the minimum value to pack vertex data together in a single buffer.
 ### Working with Vertex Buffer Layouts
-- [var layouts: NSMutableArray](mdlvertexdescriptor/layouts.md)
+- [var layouts: NSMutableArray](./mdlvertexdescriptor/layouts.md)
   The list of vertex buffer layouts described by the vertex descriptor.
-- [func setPackedStrides()](mdlvertexdescriptor/setpackedstrides.md)
+- [func setPackedStrides()](./mdlvertexdescriptor/setpackedstrides%28%29.md)
   Sets the stride for each vertex layout to the minimum value to pack vertex data together in a single buffer.
 ### Resetting a Vertex Descriptor
-- [func reset()](mdlvertexdescriptor/reset.md)
+- [func reset()](./mdlvertexdescriptor/reset%28%29.md)
   Resets a vertex descriptor to its default state.
 ### Copying a Vertex Descriptor
-- [init(vertexDescriptor: MDLVertexDescriptor)](mdlvertexdescriptor/init(vertexdescriptor:).md)
+- [init(vertexDescriptor: MDLVertexDescriptor)](./mdlvertexdescriptor/init%28vertexdescriptor%29.md)
   Creates a new vertex descriptor by performing a deep copy of the specified vertex descriptor.
 ### Instance Methods
-- [func removeAttributeNamed(String)](mdlvertexdescriptor/removeattributenamed(_:).md)
+- [func removeAttributeNamed(String)](./mdlvertexdescriptor/removeattributenamed%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MDLMeshBuffer](mdlmeshbuffer.md)
+### Managing Mesh Data
+- [protocol MDLMeshBuffer](./mdlmeshbuffer.md)
   The general interface for managing storage of vertex and index data used in loading, processing, and rendering meshes.
-- [protocol MDLMeshBufferAllocator](mdlmeshbufferallocator.md)
+- [protocol MDLMeshBufferAllocator](./mdlmeshbufferallocator.md)
   The general interface for managing allocation of data buffers to be used in loading, processing, and rendering meshes.
-- [class MDLMeshBufferData](mdlmeshbufferdata.md)
+- [class MDLMeshBufferData](./mdlmeshbufferdata.md)
   A memory buffer that stores vertex or index data for a Model I/O mesh.
-- [class MDLMeshBufferDataAllocator](mdlmeshbufferdataallocator.md)
+- [class MDLMeshBufferDataAllocator](./mdlmeshbufferdataallocator.md)
   A basic allocator implementation that allocates from main memory using data objects.
-- [class MDLMeshBufferMap](mdlmeshbuffermap.md)
+- [class MDLMeshBufferMap](./mdlmeshbuffermap.md)
   An object that manages access to a memory buffer used for the data storage of a Model I/O mesh.
-- [protocol MDLMeshBufferZone](mdlmeshbufferzone.md)
+- [protocol MDLMeshBufferZone](./mdlmeshbufferzone.md)
   The general interface for logical pools of memory used in allocation of related mesh data buffers.
-- [class MDLMeshBufferZoneDefault](mdlmeshbufferzonedefault.md)
-  A standard implementation of the [`MDLMeshBufferZone`](mdlmeshbufferzone.md) protocol.
-- [class MDLVertexAttribute](mdlvertexattribute.md)
+- [class MDLMeshBufferZoneDefault](./mdlmeshbufferzonedefault.md)
+  A standard implementation of the [`MDLMeshBufferZone`](./mdlmeshbufferzone.md) protocol.
+- [class MDLVertexAttribute](./mdlvertexattribute.md)
   A description of the format of per-vertex data for a single vertex attribute in a mesh object.
-- [class MDLVertexAttributeData](mdlvertexattributedata.md)
+- [class MDLVertexAttributeData](./mdlvertexattributedata.md)
   An object that provides convenience access to vertex data for a specific vertex attribute of a mesh.
-- [class MDLVertexBufferLayout](mdlvertexbufferlayout.md)
-  A [`MDLVertexBufferLayout`](mdlvertexbufferlayout.md) object describes layout information for a vertex buffer in a [`MDLMesh`](mdlmesh.md) object. A collection of vertex layer objects, vertex attribute objects, and additional information forms a [`MDLVertexDescriptor`](mdlvertexdescriptor.md) object, which completely describes the layout of vertex buffers for a mesh.
+- [class MDLVertexBufferLayout](./mdlvertexbufferlayout.md)
+  A [`MDLVertexBufferLayout`](./mdlvertexbufferlayout.md) object describes layout information for a vertex buffer in a [`MDLMesh`](./mdlmesh.md) object. A collection of vertex layer objects, vertex attribute objects, and additional information forms a [`MDLVertexDescriptor`](./mdlvertexdescriptor.md) object, which completely describes the layout of vertex buffers for a mesh.
 
 
 ---

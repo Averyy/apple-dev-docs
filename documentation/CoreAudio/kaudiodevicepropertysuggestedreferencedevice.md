@@ -1,7 +1,8 @@
 # kAudioDevicePropertySuggestedReferenceDevice
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kAudioDevicePropertySuggestedReferenceDevice: AudioObjectPropertySelector { get }
+```
+
+```c
+kAudioDevicePropertySuggestedReferenceDevice
 ```
 
 

@@ -1,7 +1,8 @@
 # serviceType
 
 **Framework**: Social  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the social-networking service.
 
@@ -16,13 +17,18 @@ Specifies the social-networking service.
 var serviceType: String! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * serviceType;
+```
+
 #### Discussion
 
-The value of this property is set when you initialize a social compose view controller in [`init(forServiceType:)`](slcomposeviewcontroller/init(forservicetype:).md). Each social view controller you present is connected to only one social service at a time. Use this property to check which service your social view controller has specified. For a list of possible values, see Service Type Constants.
+The value of this property is set when you initialize a social compose view controller in [`init(forServiceType:)`](./init%28forservicetype%29.md). Each social view controller you present is connected to only one social service at a time. Use this property to check which service your social view controller has specified. For a list of possible values, see Service Type Constants.
 
 ## See Also
 
-- [class func isAvailable(forServiceType: String!) -> Bool](slcomposeviewcontroller/isavailable(forservicetype:).md)
+### Checking the Social Service Type
+- [class func isAvailable(forServiceType: String!) -> Bool](./isavailable%28forservicetype%29.md)
   Returns A Boolean value that indicates whether you can send a request for a particular service type.
 
 

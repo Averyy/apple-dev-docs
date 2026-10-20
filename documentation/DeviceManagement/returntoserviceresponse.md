@@ -1,7 +1,8 @@
 # ReturnToServiceResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The return-to-service response details.
 
@@ -13,28 +14,33 @@ The return-to-service response details.
 
 ## Declaration
 
-```swift
+```
 object ReturnToServiceResponse
 ```
 
 ## Mentions
 
-- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+- [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
 ## Topics
 
 ### Objects
-- [object ReturnToServiceResponse.ReturnToService](returntoserviceresponse/returntoservice-data.dictionary.md)
+- [object ReturnToServiceResponse.ReturnToService](./returntoserviceresponse/returntoservice-data.dictionary.md)
   A dictionary containing the configuration for return to service.
 
 ## Properties
 
-- `PreserveDataPlan` (boolean): If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists. Available: iOS 26.4+ | iPadOS 26.4+
+- `PreserveDataPlan` (boolean): If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists.
+
+  Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `false`
 - `ReturnToService` (ReturnToServiceResponse.ReturnToService) *(required)*: A dictionary containing the configuration for return to service.
 
 ## See Also
 
-- [object ReturnToServiceRequest](returntoservicerequest.md)
+### Requests and responses
+- [object ReturnToServiceRequest](./returntoservicerequest.md)
   The return-to-service request details.
 
 

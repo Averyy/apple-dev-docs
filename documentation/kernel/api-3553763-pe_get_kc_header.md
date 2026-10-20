@@ -1,14 +1,15 @@
 # PE_get_kc_header
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void * PE_get_kc_header(kc_kind_t type);
 ```
 

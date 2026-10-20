@@ -1,13 +1,16 @@
 # hashValue
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ## Declaration
 
 ```swift
 var hashValue: Int { get }
 ```
+
+Available when `Self` conforms to `Hashable` and `RawValue` conforms to `Hashable`.
 
 
 ---

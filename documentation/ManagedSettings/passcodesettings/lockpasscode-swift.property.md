@@ -1,7 +1,8 @@
 # lockPasscode
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent changing the device passcode.
 
@@ -22,7 +23,8 @@ If your app doesn’t configure this setting, the value is `nil`.
 
 ## See Also
 
-- [static let lockPasscode: SettingMetadata<Bool>](passcodesettings/lockpasscode-swift.type.property.md)
+### Blocking passcode changes
+- [static let lockPasscode: SettingMetadata<Bool>](./lockpasscode-swift.type.property.md)
   The metadata for the setting that prevents the user from changing their passcode.
 
 

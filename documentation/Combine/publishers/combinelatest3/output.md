@@ -1,7 +1,8 @@
 # Publishers.CombineLatest3.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces three-element tuples of the upstream publishers’ outpu
 
 ## See Also
 
-- [Publishers.CombineLatest3.Failure](publishers/combinelatest3/failure.md)
+### Declaring supporting types
+- [Publishers.CombineLatest3.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

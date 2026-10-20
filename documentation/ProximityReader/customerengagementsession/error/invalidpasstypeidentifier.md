@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.invalidPassTypeIdentifier
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the passTypeIdentifier validation failed.
 

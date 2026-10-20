@@ -1,7 +1,8 @@
 # createSymbolicLink(atPath:withDestinationPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a symbolic link that points to the specified destination.
 
@@ -20,11 +21,17 @@ Creates a symbolic link that points to the specified destination.
 func createSymbolicLink(atPath path: String, withDestinationPath destPath: String) throws
 ```
 
+```objc
+- (BOOL) createSymbolicLinkAtPath:(NSString *) path withDestinationPath:(NSString *) destPath error:(NSError **) error;
+```
+
 #### Discussion
 
 This method does not traverse symbolic links contained in `destPath`, making it possible to create symbolic links to locations that do not yet exist. Also, if the final path component in `path` is a symbolic link, that link is not followed.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -33,15 +40,17 @@ This method does not traverse symbolic links contained in `destPath`, making it 
 
 ## See Also
 
-- [func removeItem(atPath: String) throws](filemanager/removeitem(atpath:).md)
+### Related Documentation
+- [func removeItem(atPath: String) throws](./removeitem%28atpath%29.md)
   Removes the file or directory at the specified path.
-- [func createSymbolicLink(at: URL, withDestinationURL: URL) throws](filemanager/createsymboliclink(at:withdestinationurl:).md)
+### Creating symbolic and hard links
+- [func createSymbolicLink(at: URL, withDestinationURL: URL) throws](./createsymboliclink%28at,withdestinationurl%29.md)
   Creates a symbolic link at the specified URL that points to an item at the given URL.
-- [func linkItem(at: URL, to: URL) throws](filemanager/linkitem(at:to:).md)
+- [func linkItem(at: URL, to: URL) throws](./linkitem%28at,to%29.md)
   Creates a hard link between the items at the specified URLs.
-- [func linkItem(atPath: String, toPath: String) throws](filemanager/linkitem(atpath:topath:).md)
+- [func linkItem(atPath: String, toPath: String) throws](./linkitem%28atpath,topath%29.md)
   Creates a hard link between the items at the specified paths.
-- [func destinationOfSymbolicLink(atPath: String) throws -> String](filemanager/destinationofsymboliclink(atpath:).md)
+- [func destinationOfSymbolicLink(atPath: String) throws -> String](./destinationofsymboliclink%28atpath%29.md)
   Returns the path of the item pointed to by a symbolic link.
 
 

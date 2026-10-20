@@ -1,7 +1,8 @@
 # MPSGraphResizeNearestRoundingMode.ceil
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds values toward +inf.
 
@@ -17,6 +18,10 @@ Rounds values toward +inf.
 
 ```swift
 case ceil
+```
+
+```c
+MPSGraphResizeNearestRoundingModeCeil
 ```
 
 

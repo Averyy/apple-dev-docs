@@ -1,12 +1,15 @@
 # WKExtensionDelegateAdaptor
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that you use to create a WatchKit extension delegate.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 9.2
+
+> **Deprecated**: Use WKApplicationDelegateAdaptor with a WKApplicationDelegate instead.
 
 ## Declaration
 
@@ -17,7 +20,7 @@ A property wrapper type that you use to create a WatchKit extension delegate.
 
 #### Overview
 
-To handle extension delegate callbacks in an extension that uses the SwiftUI life cycle, define a type that conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate) protocol, and implement the delegate methods that you need. For example, you can implement the [`didRegisterForRemoteNotifications(withDeviceToken:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didregisterforremotenotifications(withdevicetoken:)) method to handle remote notification registration:
+To handle extension delegate callbacks in an extension that uses the SwiftUI life cycle, define a type that conforms to the [`WKExtensionDelegate`](../WatchKit/wkextensiondelegate.md) protocol, and implement the delegate methods that you need. For example, you can implement the [`didRegisterForRemoteNotifications(withDeviceToken:)`](../WatchKit/wkextensiondelegate/didregisterforremotenotifications%28withdevicetoken%29.md) method to handle remote notification registration:
 
 ```swift
 class MyExtensionDelegate: NSObject, WKExtensionDelegate, ObservableObject {
@@ -27,7 +30,7 @@ class MyExtensionDelegate: NSObject, WKExtensionDelegate, ObservableObject {
 }
 ```
 
-Then use the `WKExtensionDelegateAdaptor` property wrapper inside your [`App`](app.md) declaration to tell SwiftUI about the delegate type:
+Then use the `WKExtensionDelegateAdaptor` property wrapper inside your [`App`](./app.md) declaration to tell SwiftUI about the delegate type:
 
 ```swift
 @main
@@ -38,39 +41,40 @@ struct MyApp: App {
 }
 ```
 
-SwiftUI instantiates the delegate and calls the delegate’s methods in response to life cycle events. Define the delegate adaptor only in your [`App`](app.md) declaration, and only once for a given extension. If you declare it more than once, SwiftUI generates a runtime error.
+SwiftUI instantiates the delegate and calls the delegate’s methods in response to life cycle events. Define the delegate adaptor only in your [`App`](./app.md) declaration, and only once for a given extension. If you declare it more than once, SwiftUI generates a runtime error.
 
-If your extension delegate conforms to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol, as in the example above, then SwiftUI puts the delegate it creates into the [`Environment`](environment.md). You can access the delegate from any scene or view in your extension using the [`EnvironmentObject`](environmentobject.md) property wrapper:
+If your extension delegate conforms to the [`ObservableObject`](../Combine/observableobject.md) protocol, as in the example above, then SwiftUI puts the delegate it creates into the [`Environment`](./environment.md). You can access the delegate from any scene or view in your extension using the [`EnvironmentObject`](./environmentobject.md) property wrapper:
 
 ```swift
 @EnvironmentObject private var extensionDelegate: MyExtensionDelegate
 ```
 
-This enables you to use the dollar sign (`$`) prefix to get a binding to published properties that you declare in the delegate. For more information, see [`projectedValue`](wkextensiondelegateadaptor/projectedvalue.md).
+This enables you to use the dollar sign (`$`) prefix to get a binding to published properties that you declare in the delegate. For more information, see [`projectedValue`](./wkextensiondelegateadaptor/projectedvalue.md).
 
-> ❗ **Important**: Manage an externsion’s life cycle events without using a delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()).
+> ❗ **Important**: Manage an externsion’s life cycle events without using a delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](./scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching()`](../WatchKit/wkextensiondelegate/applicationdidfinishlaunching%28%29.md).
 
 ## Topics
 
 ### Creating a delegate adaptor
-- [init(_:)](wkextensiondelegateadaptor/init(_:).md)
+- [init(_:)](./wkextensiondelegateadaptor/init%28_%29.md)
   Creates a WatchKit extension delegate adaptor using an observable delegate.
 ### Getting the delegate adaptor
-- [var projectedValue: ObservedObject<DelegateType>.Wrapper](wkextensiondelegateadaptor/projectedvalue.md)
+- [var projectedValue: ObservedObject<DelegateType>.Wrapper](./wkextensiondelegateadaptor/projectedvalue.md)
   A projection of the observed object that provides bindings to its properties.
-- [var wrappedValue: DelegateType](wkextensiondelegateadaptor/wrappedvalue.md)
+- [var wrappedValue: DelegateType](./wkextensiondelegateadaptor/wrappedvalue.md)
   The underlying delegate.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WKApplicationDelegateAdaptor](wkapplicationdelegateadaptor.md)
+### Targeting watchOS
+- [struct WKApplicationDelegateAdaptor](./wkapplicationdelegateadaptor.md)
   A property wrapper that is used in `App` to provide a delegate from WatchKit.
 
 

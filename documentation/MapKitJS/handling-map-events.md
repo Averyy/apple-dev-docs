@@ -1,6 +1,7 @@
 # Handling map events
 
-**Framework**: MapKit JS
+**Framework**: MapKit JS  
+**Role**: API Collection
 
 Register an event lister for events that a map object dispatches.
 
@@ -12,7 +13,7 @@ Events have a `target` property. The `target` of an event is the object dispatch
 
 Event listeners receive a single argument that is an event object. The event objects are similar to native event objects, though calls to `event.preventDefault()` or `event.stopPropagation()` don’t halt some actions that trigger these events. Scrolling, zooming, and panning, as well as zooming or rotating after a long press, provide methods to halt or prevent interaction.
 
-##### Respond to Map Display Events
+##### Respond to map display events
 
 MapKit JS dispatches the following events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
 
@@ -24,28 +25,28 @@ MapKit JS dispatches the following events that allow you to respond to changes i
 - **`scroll-end`**: The map finishes scrolling as a result of user interaction.
 - **`zoom-start`**: The map is about to zoom as a result of user interaction.
 - **`zoom-end`**: The map finishes zooming as a result of user interaction.
-- **`map-type-change`**: A program event or a user interaction causes the map’s `mapType` ([`MapType`](maptype.md)) to change.
+- **`map-type-change`**: A program event or a user interaction causes the map’s `mapType` ([`MapType`](./maptype.md)) to change.
 
-##### Respond to Annotation and Overlay Events
+##### Respond to annotation and overlay events
 
-MapKit JS sends [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md),[`MapOverlaySelectionEvent`](mapoverlayselectionevent.md), and [`MapAnnotationDragEvent`](mapannotationdragevent.md) events when a person interacts with the annotations and overlays you place on the map. Respond to these interactions by updating the map or providing more information about the overlay or annotation the person interacts with.
+MapKit JS sends [`MapAnnotationSelectionEvent`](./mapannotationselectionevent.md),[`MapOverlaySelectionEvent`](./mapoverlayselectionevent.md), and [`MapAnnotationDragEvent`](./mapannotationdragevent.md) events when a person interacts with the annotations and overlays you place on the map. Respond to these interactions by updating the map or providing more information about the overlay or annotation the person interacts with.
 
-- **`select`**: The framework sends a [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md) or [`MapOverlaySelectionEvent`](mapoverlayselectionevent.md)when someone selects an annotation or an overlay.
-- **`deselect`**: The framework sends a [`MapAnnotationSelectionEvent`](mapannotationselectionevent.md) or [`MapOverlaySelectionEvent`](mapoverlayselectionevent.md)when someone deselects an annotation or an overlay.
-- **`drag-start`**: The framework sends a [`MapAnnotationDragEvent`](mapannotationdragevent.md) when someone starts to drag an annotation.
-- **`dragging`**: The framework send a [`MapAnnotationDragEvent`](mapannotationdragevent.md) when someone drags an annotation. The event has two properties.
-- **`drag-end`**: The framework send a [`MapAnnotationDragEvent`](mapannotationdragevent.md) when someone finishes dragging an annotation.
+- **`select`**: The framework sends a [`MapAnnotationSelectionEvent`](./mapannotationselectionevent.md) or [`MapOverlaySelectionEvent`](./mapoverlayselectionevent.md)when someone selects an annotation or an overlay.
+- **`deselect`**: The framework sends a [`MapAnnotationSelectionEvent`](./mapannotationselectionevent.md) or [`MapOverlaySelectionEvent`](./mapoverlayselectionevent.md)when someone deselects an annotation or an overlay.
+- **`drag-start`**: The framework sends a [`MapAnnotationDragEvent`](./mapannotationdragevent.md) when someone starts to drag an annotation.
+- **`dragging`**: The framework send a [`MapAnnotationDragEvent`](./mapannotationdragevent.md) when someone drags an annotation. The event has two properties.
+- **`drag-end`**: The framework send a [`MapAnnotationDragEvent`](./mapannotationdragevent.md) when someone finishes dragging an annotation.
 
-##### Respond to User Location Events
+##### Respond to user location events
 
-MapKit JS sends [`MapUserLocationChangeEvent`](mapuserlocationchangeevent.md) or [`MapUserLocationErrorEvent`](mapuserlocationerrorevent.md) events to indicate changes in a person’s location. Use these events to adjust what the map displays or to trigger other responses in your app.
+MapKit JS sends [`MapUserLocationChangeEvent`](./mapuserlocationchangeevent.md) or [`MapUserLocationErrorEvent`](./mapuserlocationerrorevent.md) events to indicate changes in a person’s location. Use these events to adjust what the map displays or to trigger other responses in your app.
 
-- **`user-location-change`**: The framework sends a [`MapUserLocationChangeEvent`](mapuserlocationchangeevent.md) event when [`showsUserLocation`](map/showsuserlocation.md) is `true` and the map acquires the user’s location, or after an automatic update.
-- **`user-location-error`**: The framework sends a ([`MapUserLocationErrorEvent`](mapuserlocationerrorevent.md)) when MapKit JS is unable to acquire the user’s location.
+- **`user-location-change`**: The framework sends a [`MapUserLocationChangeEvent`](./mapuserlocationchangeevent.md) event when [`showsUserLocation`](./map/showsuserlocation.md) is `true` and the map acquires the user’s location, or after an automatic update.
+- **`user-location-error`**: The framework sends a ([`MapUserLocationErrorEvent`](./mapuserlocationerrorevent.md)) when MapKit JS is unable to acquire the user’s location.
 
-##### Respond to Map Interaction Events
+##### Respond to map interaction events
 
-MapKit JS sends [`MapEvent`](mapevent.md) events when someone taps or presses on the map view. Use these events to adjust the map view, respond to the deselecting of overlays, or drag or deselect annotations.
+MapKit JS sends [`MapEvent`](./mapevent.md) events when someone taps or presses on the map view. Use these events to adjust the map view, respond to the deselecting of overlays, or drag or deselect annotations.
 
 - **`single-tap`**: The framework sends an event when a single tap occurs on the map outside an annotation or an overlay. If an annotation or an overlay is in a selected state when a single tap occurs, MapKit JS deselects the annotation or the overlay and dispatches a single-tap event.
 - **`double-tap`**: The framework sends an event when a double tap occurs on the map without zooming the map.
@@ -54,17 +55,17 @@ MapKit JS sends [`MapEvent`](mapevent.md) events when someone taps or presses on
 ## Topics
 
 ### Map events
-- [class MapEvent](mapevent.md)
+- [class MapEvent](./mapevent.md)
   An object that represents a gesture the framework recognized on the map.
-- [class MapAnnotationDragEvent](mapannotationdragevent.md)
+- [class MapAnnotationDragEvent](./mapannotationdragevent.md)
   An event object that the map object dispatches when someone drags an annotation.
-- [class MapAnnotationSelectionEvent](mapannotationselectionevent.md)
+- [class MapAnnotationSelectionEvent](./mapannotationselectionevent.md)
   An event object that the map object dispatches when someone selects or deselects an annotation.
-- [class MapOverlaySelectionEvent](mapoverlayselectionevent.md)
+- [class MapOverlaySelectionEvent](./mapoverlayselectionevent.md)
   An event object that the map view dispatches when someone selects or deselects an overlay.
-- [class MapUserLocationChangeEvent](mapuserlocationchangeevent.md)
+- [class MapUserLocationChangeEvent](./mapuserlocationchangeevent.md)
   An event that represents a change in a person’s location.
-- [class MapUserLocationErrorEvent](mapuserlocationerrorevent.md)
+- [class MapUserLocationErrorEvent](./mapuserlocationerrorevent.md)
   An event that indicates that MapKit JS is unable to acquire a person’s location.
 
 

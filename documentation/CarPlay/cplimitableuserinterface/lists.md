@@ -1,7 +1,8 @@
 # lists
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the car is limiting the display of lists.
 
@@ -16,9 +17,14 @@ Indicates that the car is limiting the display of lists.
 static var lists: CPLimitableUserInterface { get }
 ```
 
+```c
+CPLimitableUserInterfaceLists
+```
+
 ## See Also
 
-- [static var keyboard: CPLimitableUserInterface](cplimitableuserinterface/keyboard.md)
+### User Interface Limits
+- [static var keyboard: CPLimitableUserInterface](./keyboard.md)
   Indicates that the car is limiting the keyboard display.
 
 

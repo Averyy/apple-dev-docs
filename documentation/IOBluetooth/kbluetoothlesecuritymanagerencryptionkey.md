@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerEncryptionKey
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothLESecurityManagerEncryptionKey: BluetoothLESecurityManagerKeyDistributionFormat { get }
 ```
 
+```c
+kBluetoothLESecurityManagerEncryptionKey
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerIDKey: BluetoothLESecurityManagerKeyDistributionFormat](kbluetoothlesecuritymanageridkey.md)
-- [var kBluetoothLESecurityManagerLinkKey: BluetoothLESecurityManagerKeyDistributionFormat](kbluetoothlesecuritymanagerlinkkey.md)
-- [var kBluetoothLESecurityManagerSignKey: BluetoothLESecurityManagerKeyDistributionFormat](kbluetoothlesecuritymanagersignkey.md)
+### Constants
+- [var kBluetoothLESecurityManagerIDKey: BluetoothLESecurityManagerKeyDistributionFormat](./kbluetoothlesecuritymanageridkey.md)
+- [var kBluetoothLESecurityManagerLinkKey: BluetoothLESecurityManagerKeyDistributionFormat](./kbluetoothlesecuritymanagerlinkkey.md)
+- [var kBluetoothLESecurityManagerSignKey: BluetoothLESecurityManagerKeyDistributionFormat](./kbluetoothlesecuritymanagersignkey.md)
 
 
 ---

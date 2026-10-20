@@ -1,7 +1,8 @@
 # primPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete path to this prim, or to the nearest prim that contains this object.
 
@@ -21,7 +22,7 @@ var primPath: USDLayer.Path { get }
 
 #### Discussion
 
-If this object is a [`USDPrim`](usdprim.md), `primPath` is the same as [`path`](usdstage/object/path.md). If this object is a [`USDPrim.Attribute`](usdprim/attribute.md) or a [`USDPrim.Relationship`](usdprim/relationship.md), `primPath` is the complete scene path of the object’s [`prim`](usdstage/object/prim.md).
+If this object is a [`USDPrim`](../../usdprim.md), `primPath` is the same as [`path`](./path.md). If this object is a [`USDPrim.Attribute`](../../usdprim/attribute.md) or a [`USDPrim.Relationship`](../../usdprim/relationship.md), `primPath` is the complete scene path of the object’s [`prim`](./prim.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # contentConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current content configuration of the cell.
 
@@ -10,7 +11,7 @@ The current content configuration of the cell.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,15 +24,16 @@ The current content configuration of the cell.
 
 Using a content configuration, you can set the cell’s content and styling for a variety of different cell states.
 
-Setting a content configuration replaces the existing [`contentView`](uicollectionviewcell/contentview.md) of the cell with a new content view instance from the configuration, or directly applies the configuration to the existing content view if the configuration is compatible with the existing content view type.
+Setting a content configuration replaces the existing [`contentView`](./contentview.md) of the cell with a new content view instance from the configuration, or directly applies the configuration to the existing content view if the configuration is compatible with the existing content view type.
 
 The default value is `nil`. After you set a content configuration to this property, setting this property back to `nil` replaces the current content view with a new, empty content view.
 
 ## See Also
 
-- [var automaticallyUpdatesContentConfiguration: Bool](uicollectionviewcell/automaticallyupdatescontentconfiguration.md)
+### Managing the content
+- [var automaticallyUpdatesContentConfiguration: Bool](./automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
-- [var contentView: UIView](uicollectionviewcell/contentview.md)
+- [var contentView: UIView](./contentview.md)
   The main view that you add your cell’s custom content to.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color transformer with the specified closure.
 
@@ -10,7 +11,7 @@ Creates a color transformer with the specified closure.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ init(_ transform: @escaping (UIColor) -> UIColor)
 
 ## See Also
 
-- [static let grayscale: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/grayscale.md)
+### Creating a color transformer
+- [static let grayscale: UIConfigurationColorTransformer](./grayscale.md)
   Creates a color transformer that generates a grayscale version of the color.
-- [static let preferredTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/preferredtint.md)
+- [static let preferredTint: UIConfigurationColorTransformer](./preferredtint.md)
   A color transformer that returns the preferred system accent color.
-- [static let monochromeTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/monochrometint.md)
+- [static let monochromeTint: UIConfigurationColorTransformer](./monochrometint.md)
   A color transformer that returns the color with a monochrome tint.
 
 

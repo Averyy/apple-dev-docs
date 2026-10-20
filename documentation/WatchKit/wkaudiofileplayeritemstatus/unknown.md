@@ -1,12 +1,13 @@
 # WKAudioFilePlayerItemStatus.unknown
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The item’s status is unknown.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The item’s status is unknown.
 case unknown
 ```
 
+```c
+WKAudioFilePlayerItemStatusUnknown
+```
+
 ## See Also
 
-- [WKAudioFilePlayerItemStatus.readyToPlay](wkaudiofileplayeritemstatus/readytoplay.md)
+### Statuses
+- [WKAudioFilePlayerItemStatus.readyToPlay](./readytoplay.md)
   The item is ready to play.
-- [WKAudioFilePlayerItemStatus.failed](wkaudiofileplayeritemstatus/failed.md)
+- [WKAudioFilePlayerItemStatus.failed](./failed.md)
   The item can’t be played.
 
 

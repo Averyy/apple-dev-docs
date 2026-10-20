@@ -1,7 +1,8 @@
 # PermissionResult.cancel
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user cancelled the flow.
 

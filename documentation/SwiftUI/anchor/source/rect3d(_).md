@@ -1,7 +1,8 @@
 # rect3D(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an anchor source rect defined by `r` in the current element.
 
@@ -13,6 +14,8 @@ Returns an anchor source rect defined by `r` in the current element.
 ```swift
 static func rect3D(_ r: Rect3D) -> Anchor<Value>.Source
 ```
+
+Available when `Value` is `Rect3D`.
 
 
 ---

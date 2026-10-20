@@ -1,7 +1,8 @@
 # permissionsStatus
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The permissions status of the PDF document.
 
@@ -19,15 +20,20 @@ The permissions status of the PDF document.
 var permissionsStatus: PDFDocumentPermissions { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PDFDocumentPermissions permissionsStatus;
+```
+
 ## See Also
 
-- [var isEncrypted: Bool](pdfdocument/isencrypted.md)
+### Managing Document Security
+- [var isEncrypted: Bool](./isencrypted.md)
   A Boolean value specifying whether the document is encrypted.
-- [var isLocked: Bool](pdfdocument/islocked.md)
+- [var isLocked: Bool](./islocked.md)
   A Boolean value indicating whether the document is locked.
-- [func unlock(withPassword: String) -> Bool](pdfdocument/unlock(withpassword:).md)
+- [func unlock(withPassword: String) -> Bool](./unlock%28withpassword%29.md)
   Attempts to unlock an encrypted document.
-- [Permission Properties](permission-properties.md)
+- [Permission Properties](../permission-properties.md)
   Properties that specify what functions are allowed for a PDF document.
 
 

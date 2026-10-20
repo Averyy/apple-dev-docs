@@ -1,7 +1,8 @@
 # compatibleAspectRatios
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The aspect ratios compatible with the current device.
 

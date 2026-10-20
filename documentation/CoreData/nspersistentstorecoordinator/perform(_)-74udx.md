@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the provided closure asynchronously on the coordinator’s queue and awaits the result.
 
@@ -11,7 +12,7 @@ Executes the provided closure asynchronously on the coordinator’s queue and aw
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -27,13 +28,14 @@ func perform<T>(_ block: @escaping @Sendable () throws -> T) async rethrows -> T
 
 ## See Also
 
-- [func performAndWait<T>(() throws -> T) rethrows -> T](nspersistentstorecoordinator/performandwait(_:)-15ude.md)
+### Performing tasks
+- [func performAndWait<T>(() throws -> T) rethrows -> T](./performandwait%28_%29-15ude.md)
   Executes the provided closure on the coordinator’s queue and waits for it to finish.
-- [func perform(() -> Void)](nspersistentstorecoordinator/perform(_:)-7jqb.md)
+- [func perform(() -> Void)](./perform%28_%29-7jqb.md)
   Executes the provided closure asynchronously on the coordinator’s queue.
-- [func performAndWait(() -> Void)](nspersistentstorecoordinator/performandwait(_:)-d3kq.md)
+- [func performAndWait(() -> Void)](./performandwait%28_%29-d3kq.md)
   Executes the provided closure on the coordinator’s queue and waits for it to finish.
-- [func execute(NSPersistentStoreRequest, with: NSManagedObjectContext) throws -> Any](nspersistentstorecoordinator/execute(_:with:).md)
+- [func execute(NSPersistentStoreRequest, with: NSManagedObjectContext) throws -> Any](./execute%28_,with%29.md)
   Executes the specified request on each of the coordinator’s persistent stores.
 
 

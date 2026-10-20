@@ -1,7 +1,8 @@
 # familyRevocation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction was revoked due to a family sharing revocation.
 

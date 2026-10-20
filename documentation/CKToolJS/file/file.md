@@ -1,14 +1,15 @@
 # File
 
 **Framework**: CKTool JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 new fileParts(
 	Array fileParts,
 	string fileName

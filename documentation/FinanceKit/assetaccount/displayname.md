@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name for the account given by a person.
 
@@ -17,15 +18,16 @@ let displayName: String
 
 ## See Also
 
-- [let accountDescription: String?](assetaccount/accountdescription.md)
+### Instance Properties
+- [let accountDescription: String?](./accountdescription.md)
   The description of the account.
-- [let currencyCode: String](assetaccount/currencycode.md)
+- [let currencyCode: String](./currencycode.md)
   ISO 4217 currency code that identifies the currency in which the account is held.
-- [let id: UUID](assetaccount/id.md)
+- [let id: UUID](./id.md)
   A unique account identifier.
-- [let institutionName: String](assetaccount/institutionname.md)
+- [let institutionName: String](./institutionname.md)
   The name of the institution that holds the account.
-- [let openingDate: Date?](assetaccount/openingdate.md)
+- [let openingDate: Date?](./openingdate.md)
   The date the account was opened, if known.
 
 

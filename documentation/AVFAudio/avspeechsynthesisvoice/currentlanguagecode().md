@@ -1,7 +1,8 @@
 # currentLanguageCode()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the language and locale code for the user’s current locale.
 
@@ -10,7 +11,7 @@ Returns the language and locale code for the user’s current locale.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the language and locale code for the user’s current locale.
 
 ```swift
 class func currentLanguageCode() -> String
+```
+
+```objc
++ (NSString *) currentLanguageCode;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ This code reflects the user’s language and region preferences in the Settings 
 
 ## See Also
 
-- [var language: String](avspeechsynthesisvoice/language.md)
+### Working with language codes
+- [var language: String](./language.md)
   A BCP 47 code that contains the voice’s language and locale.
 
 

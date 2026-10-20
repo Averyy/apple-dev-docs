@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in the range.
 
@@ -19,6 +20,8 @@ The position of the first element in the range.
 ```swift
 var startIndex: ClosedRange<Bound>.Index { get }
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 
 ---

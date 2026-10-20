@@ -1,18 +1,19 @@
 # CFCopyDescription(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a textual description of a Core Foundation object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a textual description of a Core Foundation object.
 func CFCopyDescription(_ cf: CFTypeRef!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFCopyDescription(CFTypeRef cf);
+```
+
 #### Return Value
 
-A string that contains a description of `cf`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A string that contains a description of `cf`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -32,15 +37,16 @@ You can use this function for debugging Core Foundation objects in your code. No
 
 ## Parameters
 
-- `cf`: The CFType object (a generic reference of type [`CFTypeRef`](cftyperef.md)) from which to derive a description.
+- `cf`: The CFType object (a generic reference of type [`CFTypeRef`](./cftyperef.md)) from which to derive a description.
 
 ## See Also
 
-- [func CFCopyTypeIDDescription(CFTypeID) -> CFString!](cfcopytypeiddescription(_:).md)
+### Miscellaneous Functions
+- [func CFCopyTypeIDDescription(CFTypeID) -> CFString!](./cfcopytypeiddescription%28_%29.md)
   Returns a textual description of a Core Foundation type, as identified by its type ID, which can be used when debugging.
-- [func CFGetTypeID(CFTypeRef!) -> CFTypeID](cfgettypeid(_:).md)
+- [func CFGetTypeID(CFTypeRef!) -> CFTypeID](./cfgettypeid%28_%29.md)
   Returns the unique identifier of an opaque type to which a Core Foundation object belongs.
-- [func CFShow(CFTypeRef!)](cfshow(_:).md)
+- [func CFShow(CFTypeRef!)](./cfshow%28_%29.md)
   Prints a description of a Core Foundation object to stderr.
 
 

@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the accessory.
 
@@ -17,9 +18,10 @@ var uuid: UUID
 
 ## See Also
 
-- [init(uuid: UUID, name: String)](hmhome/provisionalhometransferresult/transferredaccessory/init(uuid:name:).md)
+### Describing the transferred accessory
+- [init(uuid: UUID, name: String)](./init%28uuid,name%29.md)
   Creates a structure that represents an accessory that was successfully transferred from a temporary home to a person’s home hub.
-- [var name: String](hmhome/provisionalhometransferresult/transferredaccessory/name.md)
+- [var name: String](./name.md)
   The name of the accessory.
 
 

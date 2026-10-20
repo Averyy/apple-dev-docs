@@ -1,22 +1,24 @@
 # dmaCommandOperation
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn dmaCommandOperation(DMACommandOps op, void *vData, UInt dataSize);
 ```
 
 ## See Also
 
-- [performOperation](iomemorydescriptor/1812840-performoperation.md)
+### Operating on the Memory
+- [performOperation](./api-1812840-performoperation.md)
   Perform an operation on the memory descriptor's memory.
-- [- performOperation](iomemorydescriptor/1441761-performoperation.md)
+- [- performOperation](./api-1441761-performoperation.md)
   Perform an operation on the memory descriptor's memory.
 
 

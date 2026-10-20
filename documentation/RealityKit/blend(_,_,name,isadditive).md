@@ -1,7 +1,8 @@
 # blend(_:_:name:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Combines the animations that result from two blend-tree nodes into a single blend-tree node.
 
@@ -11,7 +12,7 @@ Combines the animations that result from two blend-tree nodes into a single blen
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ A blend-tree node that combines the given animations.
 
 ## See Also
 
-- [func blend(sources: [any BlendTreeNode], name: String, isAdditive: Bool) -> any BlendTreeNode](blend(sources:name:isadditive:).md)
+### Blending animations
+- [func blend(sources: [any BlendTreeNode], name: String, isAdditive: Bool) -> any BlendTreeNode](./blend%28sources,name,isadditive%29.md)
   Combines the animations that result from the individual blend-tree nodes of the given array to a single blend-tree node.
 
 

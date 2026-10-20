@@ -1,7 +1,8 @@
 # MTLPixelFormat.invalid
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default value of the pixel format for the `MTLRenderPipelineState`. You cannot create a texture with this value.
 
@@ -10,13 +11,17 @@ The default value of the pixel format for the `MTLRenderPipelineState`. You cann
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 case invalid
+```
+
+```c
+MTLPixelFormatInvalid
 ```
 
 

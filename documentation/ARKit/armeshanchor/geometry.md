@@ -1,7 +1,8 @@
 # geometry
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 3D information about the mesh such as its shape and classifications.
 
@@ -15,13 +16,18 @@
 var geometry: ARMeshGeometry { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ARMeshGeometry * geometry;
+```
+
 #### Discussion
 
 Contains the anchor’s portion of mesh data that, with any other mesh anchors in the AR session, collectively reconstruct the scene around the user. The mesh anchor records this data in it’s own coordinate system.
 
 ## See Also
 
-- [class ARMeshGeometry](armeshgeometry.md)
+### Accessing the Mesh
+- [class ARMeshGeometry](../armeshgeometry.md)
   Mesh information stored in an efficient, array-based format.
 
 

@@ -1,16 +1,19 @@
 # kAudioSessionCategory_LiveAudio
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For live performance of music, such as for an app that simulates a piano.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+
+> **Deprecated**: Equivalent to the [`kAudioSessionCategory_MediaPlayback`](./kaudiosessioncategory_mediaplayback.md) category, which you should use instead. The `kAudioSessionCategory_LiveAudio` category was deprecated in iOS 3.0.
 
 ## Declaration
 
@@ -18,9 +21,14 @@ For live performance of music, such as for an app that simulates a piano.
 var kAudioSessionCategory_LiveAudio: Int { get }
 ```
 
+```c
+kAudioSessionCategory_LiveAudio
+```
+
 ## See Also
 
-- [var kAudioSessionCategory_UserInterfaceSoundEffects: Int](kaudiosessioncategory_userinterfacesoundeffects.md)
+### Constants
+- [var kAudioSessionCategory_UserInterfaceSoundEffects: Int](./kaudiosessioncategory_userinterfacesoundeffects.md)
   For sound effects such as touch feedback, explosions, and so on.
 
 

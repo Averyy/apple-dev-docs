@@ -1,7 +1,8 @@
 # CiWorkflowCreateRequest.Data.Relationships.Repository
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship to the Repositories Versions resource you set with the request that creates a Workflows resource.
 
@@ -10,14 +11,14 @@ The relationship to the Repositories Versions resource you set with the request 
 
 ## Declaration
 
-```swift
+```
 object CiWorkflowCreateRequest.Data.Relationships.Repository
 ```
 
 ## Topics
 
 ### Objects
-- [object CiWorkflowCreateRequest.Data.Relationships.Repository.Data](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/repository-data.dictionary/data-data.dictionary.md)
+- [object CiWorkflowCreateRequest.Data.Relationships.Repository.Data](./repository-data.dictionary/data-data.dictionary.md)
   The type and ID of the Repositories resource that you’re relating with the Workflows resource you’re creating.
 
 ## Properties
@@ -26,11 +27,12 @@ object CiWorkflowCreateRequest.Data.Relationships.Repository
 
 ## See Also
 
-- [object CiWorkflowCreateRequest.Data.Relationships.MacOsVersion](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/macosversion-data.dictionary.md)
+### Objects
+- [object CiWorkflowCreateRequest.Data.Relationships.MacOsVersion](./macosversion-data.dictionary.md)
   The relationship to the macOS Versions resource you set with the request that creates a Workflows resource.
-- [object CiWorkflowCreateRequest.Data.Relationships.Product](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/product-data.dictionary.md)
+- [object CiWorkflowCreateRequest.Data.Relationships.Product](./product-data.dictionary.md)
   The relationship to the Products resource you set with the request that creates a Workflows resource.
-- [object CiWorkflowCreateRequest.Data.Relationships.XcodeVersion](ciworkflowcreaterequest/data-data.dictionary/relationships-data.dictionary/xcodeversion-data.dictionary.md)
+- [object CiWorkflowCreateRequest.Data.Relationships.XcodeVersion](./xcodeversion-data.dictionary.md)
   The relationship to the Xcode Versions resource you set with the request that creates a Workflows resource.
 
 

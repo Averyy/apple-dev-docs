@@ -1,7 +1,8 @@
 # quantity(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates the quantity of items the customer is purchasing.
 
@@ -22,7 +23,7 @@ static func quantity(_ quantity: Int) -> Product.PurchaseOption
 
 #### Return Value
 
-An instance of [`Product.PurchaseOption`](product/purchaseoption.md) to use in [`purchase(options:)`](product/purchase(options:).md).
+An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
 #### Discussion
 
@@ -30,17 +31,20 @@ The quantity applies to consumable Apple In-App Purchases and non-renewing subsc
 
 ## Parameters
 
-- `quantity`: The number of items the customer is purchasing. The default value is 1. The maximum value is 10.
+- `quantity`: The number of items the customer is purchasing.
+
+  The default value is 1. The maximum value is 10.
 
 ## See Also
 
-- [static func appAccountToken(UUID) -> Product.PurchaseOption](product/purchaseoption/appaccounttoken(_:).md)
+### Setting the purchase options
+- [static func appAccountToken(UUID) -> Product.PurchaseOption](./appaccounttoken%28_%29.md)
   Sets a UUID to associate the purchase with an account in your system.
-- [static func winBackOffer(Product.SubscriptionOffer) -> Product.PurchaseOption](product/purchaseoption/winbackoffer(_:).md)
+- [static func winBackOffer(Product.SubscriptionOffer) -> Product.PurchaseOption](./winbackoffer%28_%29.md)
   Sets a win-back offer to apply to the purchase.
-- [static func promotionalOffer(offerID: String, keyID: String, nonce: UUID, signature: Data, timestamp: Int) -> Product.PurchaseOption](product/purchaseoption/promotionaloffer(offerid:keyid:nonce:signature:timestamp:).md)
+- [static func promotionalOffer(offerID: String, keyID: String, nonce: UUID, signature: Data, timestamp: Int) -> Product.PurchaseOption](./promotionaloffer%28offerid,keyid,nonce,signature,timestamp%29.md)
   Applies a promotional offer for an auto-renewable subscription.
-- [static func promotionalOffer(offerID: String, signature: Product.SubscriptionOffer.Signature) -> Product.PurchaseOption](product/purchaseoption/promotionaloffer(offerid:signature:).md)
+- [static func promotionalOffer(offerID: String, signature: Product.SubscriptionOffer.Signature) -> Product.PurchaseOption](./promotionaloffer%28offerid,signature%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HMCharacteristicTypeFilterLifeLevel
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The amount of useful life remaining in a filter.
 
@@ -19,19 +20,24 @@ The amount of useful life remaining in a filter.
 let HMCharacteristicTypeFilterLifeLevel: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeFilterLifeLevel;
+```
+
 #### Discussion
 
 The corresponding value is the percentage of remaining life.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentAirPurifierState: String](hmcharacteristictypecurrentairpurifierstate.md)
+### Purifiers and filters
+- [let HMCharacteristicTypeCurrentAirPurifierState: String](./hmcharacteristictypecurrentairpurifierstate.md)
   The current air purifier state.
-- [let HMCharacteristicTypeTargetAirPurifierState: String](hmcharacteristictypetargetairpurifierstate.md)
+- [let HMCharacteristicTypeTargetAirPurifierState: String](./hmcharacteristictypetargetairpurifierstate.md)
   The target air purifier state.
-- [let HMCharacteristicTypeFilterChangeIndication: String](hmcharacteristictypefilterchangeindication.md)
+- [let HMCharacteristicTypeFilterChangeIndication: String](./hmcharacteristictypefilterchangeindication.md)
   A filter’s change indicator.
-- [let HMCharacteristicTypeFilterResetChangeIndication: String](hmcharacteristictypefilterresetchangeindication.md)
+- [let HMCharacteristicTypeFilterResetChangeIndication: String](./hmcharacteristictypefilterresetchangeindication.md)
   A reset control for a filter change notification.
 
 

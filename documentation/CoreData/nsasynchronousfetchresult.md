@@ -1,7 +1,8 @@
 # NSAsynchronousFetchResult
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A fetch result object that encompasses the response from an executed asynchronous fetch request.
 
@@ -10,7 +11,7 @@ A fetch result object that encompasses the response from an executed asynchronou
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,33 +21,38 @@ A fetch result object that encompasses the response from an executed asynchronou
 class NSAsynchronousFetchResult<ResultType> where ResultType : NSFetchRequestResult
 ```
 
+```objc
+@interface NSAsynchronousFetchResult : NSPersistentStoreAsynchronousResult
+```
+
 ## Topics
 
 ### Getting Information About a Result
-- [var fetchRequest: NSAsynchronousFetchRequest<ResultType>](nsasynchronousfetchresult/fetchrequest.md)
+- [var fetchRequest: NSAsynchronousFetchRequest<ResultType>](./nsasynchronousfetchresult/fetchrequest.md)
   The underlying fetch request that was executed.
-- [var finalResult: [ResultType]?](nsasynchronousfetchresult/finalresult.md)
+- [var finalResult: [ResultType]?](./nsasynchronousfetchresult/finalresult.md)
   The results that were received from the fetch request.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreAsynchronousResult](nspersistentstoreasynchronousresult.md)
+- [NSPersistentStoreAsynchronousResult](./nspersistentstoreasynchronousresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSFetchRequest](nsfetchrequest.md)
+### Fetch requests
+- [class NSFetchRequest](./nsfetchrequest.md)
   A description of search criteria used to retrieve data from a persistent store.
-- [class NSAsynchronousFetchRequest](nsasynchronousfetchrequest.md)
+- [class NSAsynchronousFetchRequest](./nsasynchronousfetchrequest.md)
   A fetch request that retrieves results asynchronously and supports progress notification.
-- [class NSFetchedResultsController](nsfetchedresultscontroller.md)
+- [class NSFetchedResultsController](./nsfetchedresultscontroller.md)
   A controller that you use to manage the results of a Core Data fetch request and to display data to the user.
 
 

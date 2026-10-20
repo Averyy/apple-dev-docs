@@ -1,7 +1,8 @@
 # init(allowedDestinations:hoverAlignment:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 26.0+
@@ -14,8 +15,9 @@ init(allowedDestinations: TabletopInteraction.AllowedDestinations, hoverAlignmen
 
 ## See Also
 
-- [init()](tabletopinteraction/configuration/init.md)
-- [init(allowedDestinations: TabletopInteraction.AllowedDestinations)](tabletopinteraction/configuration/init(alloweddestinations:).md)
+### Creating a configuration
+- [init()](./init%28%29.md)
+- [init(allowedDestinations: TabletopInteraction.AllowedDestinations)](./init%28alloweddestinations%29.md)
 
 
 ---

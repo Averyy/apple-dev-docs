@@ -1,7 +1,8 @@
 # init(systemName:tintColor:symbolConfiguration:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image object backed by the given SF Symbol name, with optional configuration options.
 
@@ -10,7 +11,7 @@ Creates an image object backed by the given SF Symbol name, with optional config
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

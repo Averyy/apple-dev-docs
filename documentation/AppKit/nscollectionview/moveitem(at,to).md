@@ -1,7 +1,8 @@
 # moveItem(at:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves an item from one location to another in the collection view.
 
@@ -14,11 +15,15 @@ Moves an item from one location to another in the collection view.
 func moveItem(at indexPath: IndexPath, to newIndexPath: IndexPath)
 ```
 
+```objc
+- (void) moveItemAtIndexPath:(NSIndexPath *) indexPath toIndexPath:(NSIndexPath *) newIndexPath;
+```
+
 #### Discussion
 
 After rearranging items in your data source object, use this method to synchronize those changes with the collection view. Calling this method lets the collection view know that it must update its internal data structures and possibly update its visual appearance. You can move the item to a different section or to a new location in the same section. The collection view updates the layout as needed to account for the move, animating cells into position in response.
 
-When inserting or deleting multiple sections and items, you can animate all of your changes at once using the [`performBatchUpdates(_:completionHandler:)`](nscollectionview/performbatchupdates(_:completionhandler:).md) method.
+When inserting or deleting multiple sections and items, you can animate all of your changes at once using the [`performBatchUpdates(_:completionHandler:)`](./performbatchupdates%28_,completionhandler%29.md) method.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ When inserting or deleting multiple sections and items, you can animate all of y
 
 ## See Also
 
-- [func insertItems(at: Set<IndexPath>)](nscollectionview/insertitems(at:).md)
+### Inserting, Moving, and Deleting Items
+- [func insertItems(at: Set<IndexPath>)](./insertitems%28at%29.md)
   Inserts new items into the collection view at the specified locations.
-- [func deleteItems(at: Set<IndexPath>)](nscollectionview/deleteitems(at:).md)
+- [func deleteItems(at: Set<IndexPath>)](./deleteitems%28at%29.md)
   Deletes the items at the specified index paths.
 
 

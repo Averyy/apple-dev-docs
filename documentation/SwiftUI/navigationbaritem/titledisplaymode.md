@@ -1,7 +1,8 @@
 # NavigationBarItem.TitleDisplayMode
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A style for displaying the title of a navigation bar.
 
@@ -21,25 +22,25 @@ enum TitleDisplayMode
 
 #### Overview
 
-Use one of these values with the [`navigationBarTitleDisplayMode(_:)`](view/navigationbartitledisplaymode(_:).md) view modifier to configure the title of a navigation bar.
+Use one of these values with the [`navigationBarTitleDisplayMode(_:)`](../view/navigationbartitledisplaymode%28_%29.md) view modifier to configure the title of a navigation bar.
 
 ## Topics
 
 ### Getting title display modes
-- [NavigationBarItem.TitleDisplayMode.automatic](navigationbaritem/titledisplaymode/automatic.md)
+- [NavigationBarItem.TitleDisplayMode.automatic](./titledisplaymode/automatic.md)
   Inherit the display mode from the previous navigation item.
-- [NavigationBarItem.TitleDisplayMode.inline](navigationbaritem/titledisplaymode/inline.md)
+- [NavigationBarItem.TitleDisplayMode.inline](./titledisplaymode/inline.md)
   Display the title within the standard bounds of the navigation bar.
-- [NavigationBarItem.TitleDisplayMode.large](navigationbaritem/titledisplaymode/large.md)
+- [NavigationBarItem.TitleDisplayMode.large](./titledisplaymode/large.md)
   Display a large title within an expanded navigation bar.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

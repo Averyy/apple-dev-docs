@@ -1,14 +1,15 @@
 # RESERVE_TRACK_V2
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 bool RESERVE_TRACK_V2(SCSITaskIdentifier request, SCSICmdField1Bit RMZ, SCSICmdField1Bit ARSV, SCSICmdField7Byte RESERVATION_PARAMETER, SCSICmdField1Byte CONTROL);
 ```
 

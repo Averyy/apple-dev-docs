@@ -1,7 +1,8 @@
 # kAXRTFForRangeParameterizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The RTF representation of the text associated with this accessibility object that is specified by the given range. 
 
@@ -12,6 +13,10 @@ The RTF representation of the text associated with this accessibility object tha
 
 ```swift
 var kAXRTFForRangeParameterizedAttribute: String { get }
+```
+
+```c
+#define kAXRTFForRangeParameterizedAttribute
 ```
 
 

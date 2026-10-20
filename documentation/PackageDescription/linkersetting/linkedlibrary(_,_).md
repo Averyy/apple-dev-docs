@@ -1,7 +1,8 @@
 # linkedLibrary(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Declares linkage to a system library.
 
@@ -18,7 +19,7 @@ static func linkedLibrary(_ library: String, _ condition: BuildSettingCondition?
 
 This setting is most useful when the library can’t be linked automatically, such as C++ based libraries and non-modular libraries.
 
-> **Note**: First available in PackageDescription 5.0.
+> **Since**: First available in PackageDescription 5.0.
 
 ## Parameters
 
@@ -27,9 +28,10 @@ This setting is most useful when the library can’t be linked automatically, su
 
 ## See Also
 
-- [static func linkedFramework(String, BuildSettingCondition?) -> LinkerSetting](linkersetting/linkedframework(_:_:).md)
+### Configuring Linker Settings
+- [static func linkedFramework(String, BuildSettingCondition?) -> LinkerSetting](./linkedframework%28_,_%29.md)
   Declares linkage to a system framework.
-- [static func unsafeFlags([String], BuildSettingCondition?) -> LinkerSetting](linkersetting/unsafeflags(_:_:).md)
+- [static func unsafeFlags([String], BuildSettingCondition?) -> LinkerSetting](./unsafeflags%28_,_%29.md)
   Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
 
 

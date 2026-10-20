@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components instance from a URL string.
 
@@ -30,11 +31,12 @@ If `string` represents a malformed URL, this initializer returns `nil`.
 
 ## See Also
 
-- [init()](urlcomponents/init.md)
+### Creating URL components
+- [init()](./init%28%29.md)
   Creates a URL components instance without defining any of the components.
-- [init?(string: String, encodingInvalidCharacters: Bool)](urlcomponents/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](urlcomponents/init(url:resolvingagainstbaseurl:).md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](./init%28url,resolvingagainstbaseurl%29.md)
   Creates a URL components instance from a URL string, optionally resolving against a base URL.
 
 

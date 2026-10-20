@@ -1,7 +1,8 @@
 # useEnDecryptKey
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key can be used to encrypt or decrypt (wrap or unwrap) a key.
 
@@ -13,6 +14,10 @@ The key can be used to encrypt or decrypt (wrap or unwrap) a key.
 
 ```swift
 static var useEnDecryptKey: SecTrustSettingsKeyUsage { get }
+```
+
+```c
+kSecTrustSettingsKeyUseEnDecryptKey
 ```
 
 #### Discussion

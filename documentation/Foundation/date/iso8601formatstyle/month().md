@@ -1,7 +1,8 @@
 # month()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the ISO 8601 date format style to include the month in the formatted output.
 
@@ -46,19 +47,20 @@ meetingDate.formatted(.iso8601
 
 If `month()` isn’t included in the format but `day()` is, the format represents the day as the ordinal date.
 
-The default [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) includes the month.
+The default [`Date.ISO8601FormatStyle`](../iso8601formatstyle.md) includes the month.
 
-For more information about formatting dates, see the [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see the [`Date.FormatStyle`](../formatstyle.md).
 
 ## See Also
 
-- [func dateSeparator(Date.ISO8601FormatStyle.DateSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/dateseparator(_:).md)
+### Modifying Dates in an ISO 8601 Format Style
+- [func dateSeparator(Date.ISO8601FormatStyle.DateSeparator) -> Date.ISO8601FormatStyle](./dateseparator%28_%29.md)
   Modifies the ISO 8601 date format style to use the specified date separator.
-- [func year() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/year.md)
+- [func year() -> Date.ISO8601FormatStyle](./year%28%29.md)
   Modifies the ISO 8601 date format style to include the year in the formatted output.
-- [func weekOfYear() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/weekofyear.md)
+- [func weekOfYear() -> Date.ISO8601FormatStyle](./weekofyear%28%29.md)
   Modifies the ISO 8601 date format style to include the week of the year in the formatted output.
-- [func day() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/day.md)
+- [func day() -> Date.ISO8601FormatStyle](./day%28%29.md)
   Modifies the ISO 8601 date format style to include the day in the formatted output.
 
 

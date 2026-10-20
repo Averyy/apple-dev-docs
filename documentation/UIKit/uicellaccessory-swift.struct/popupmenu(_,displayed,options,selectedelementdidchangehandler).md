@@ -1,7 +1,8 @@
 # popUpMenu(_:displayed:options:selectedElementDidChangeHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a popup menu system accessory with the specified menu, display state, configuration options, and optional selection handler.
 
@@ -9,7 +10,7 @@ Creates a popup menu system accessory with the specified menu, display state, co
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,15 +25,16 @@ A configured popup menu cell accessory that appears as a pair of chevrons that p
 ## Parameters
 
 - `menu`: The menu to display when a user taps the popup menu accessory.
-- `displayed`: The cell-editing states that the popup menu accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
-- `options`: Configuration options for the popup menu accessory. See [`UICellAccessory.PopUpMenuOptions`](uicellaccessory-swift.struct/popupmenuoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the popup menu accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](./displayedstate/always.md).
+- `options`: Configuration options for the popup menu accessory. See [`UICellAccessory.PopUpMenuOptions`](./popupmenuoptions.md) for possible configuration options.
 - `selectedElementDidChangeHandler`: An optional closure that the system calls when a user selects an element in the menu.
 
 ## See Also
 
-- [UICellAccessory.MenuSelectedElementDidChangeHandler](uicellaccessory-swift.struct/menuselectedelementdidchangehandler.md)
+### Creating a popup menu accessory
+- [UICellAccessory.MenuSelectedElementDidChangeHandler](./menuselectedelementdidchangehandler.md)
   A closure type that defines a handler to perform when a user selects an element in the menu.
-- [UICellAccessory.PopUpMenuOptions](uicellaccessory-swift.struct/popupmenuoptions.md)
+- [UICellAccessory.PopUpMenuOptions](./popupmenuoptions.md)
   Configuration options for a popup menu accessory.
 
 

@@ -1,7 +1,8 @@
 # accessibilityAssistiveTechnologyFocusedIdentifiers()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a set of identifier keys indicating which assistive app has focus on the accessibility element.
 
@@ -19,13 +20,18 @@ Returns a set of identifier keys indicating which assistive app has focus on the
 func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?
 ```
 
+```objc
+- (NSSet<NSString *> *) accessibilityAssistiveTechnologyFocusedIdentifiers;
+```
+
 ## See Also
 
-- [func accessibilityElementDidBecomeFocused()](nsobject-swift.class/accessibilityelementdidbecomefocused.md)
+### Getting focus information
+- [func accessibilityElementDidBecomeFocused()](./accessibilityelementdidbecomefocused%28%29.md)
   Sent after an assistive technology has set its virtual focus on the accessibility element.
-- [func accessibilityElementDidLoseFocus()](nsobject-swift.class/accessibilityelementdidlosefocus.md)
+- [func accessibilityElementDidLoseFocus()](./accessibilityelementdidlosefocus%28%29.md)
   Sent after an assistive technology has removed its virtual focus from an accessibility element.
-- [func accessibilityElementIsFocused() -> Bool](nsobject-swift.class/accessibilityelementisfocused.md)
+- [func accessibilityElementIsFocused() -> Bool](./accessibilityelementisfocused%28%29.md)
   Returns a Boolean value indicating whether an assistive technology is focused on the accessibility element.
 
 

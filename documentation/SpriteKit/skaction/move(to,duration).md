@@ -1,18 +1,19 @@
 # move(to:duration:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that moves a node to a new position.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an action that moves a node to a new position.
 class func move(to location: CGPoint, duration: TimeInterval) -> SKAction
 ```
 
+```objc
++ (SKAction *) moveTo:(CGPoint) location duration:(NSTimeInterval) duration;
+```
+
 ## Mentions
 
-- [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
+- [Detecting Changes at Each Step of an Animation](../detecting-changes-at-each-step-of-an-animation.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`position`](sknode/position.md) property animates from its current position to its new position.
+When the action executes, the node’s [`position`](../sknode/position.md) property animates from its current position to its new position.
 
 This action is not reversible; the reverse of this action has the same duration but does not move the node.
 
@@ -41,13 +46,14 @@ This action is not reversible; the reverse of this action has the same duration 
 
 ## See Also
 
-- [class func moveBy(x: CGFloat, y: CGFloat, duration: TimeInterval) -> SKAction](skaction/moveby(x:y:duration:).md)
+### Animating a Node’s Position in a Linear Path
+- [class func moveBy(x: CGFloat, y: CGFloat, duration: TimeInterval) -> SKAction](./moveby%28x,y,duration%29.md)
   Creates an action that moves a node relative to its current position.
-- [class func move(by: CGVector, duration: TimeInterval) -> SKAction](skaction/move(by:duration:).md)
+- [class func move(by: CGVector, duration: TimeInterval) -> SKAction](./move%28by,duration%29.md)
   Creates an action that moves a node relative to its current position.
-- [class func moveTo(x: CGFloat, duration: TimeInterval) -> SKAction](skaction/moveto(x:duration:).md)
+- [class func moveTo(x: CGFloat, duration: TimeInterval) -> SKAction](./moveto%28x,duration%29.md)
   Creates an action that moves a node horizontally.
-- [class func moveTo(y: CGFloat, duration: TimeInterval) -> SKAction](skaction/moveto(y:duration:).md)
+- [class func moveTo(y: CGFloat, duration: TimeInterval) -> SKAction](./moveto%28y,duration%29.md)
   Creates an action that moves a node vertically.
 
 

@@ -1,7 +1,8 @@
 # TabletopInteraction.HoverAlignmentBehavior.align(_:with:)
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 `align` indicates that the equipment should orient itself to align the closest `source` to the target. The equipment’s movement is also limited to prevent it from penetrating the target.
 
@@ -16,11 +17,12 @@ case align(TabletopInteraction.HoverAlignmentSource, with: TabletopInteraction.C
 
 ## See Also
 
-- [TabletopInteraction.HoverAlignmentBehavior.automatic(targets:)](tabletopinteraction/hoveralignmentbehavior/automatic(targets:).md)
+### Alignment Behaviors
+- [TabletopInteraction.HoverAlignmentBehavior.automatic(targets:)](./automatic%28targets%29.md)
   `automatic` picks a strategy based on the equipment size.
-- [TabletopInteraction.HoverAlignmentBehavior.disabled](tabletopinteraction/hoveralignmentbehavior/disabled.md)
+- [TabletopInteraction.HoverAlignmentBehavior.disabled](./disabled.md)
   Use this value to disable the behavior.
-- [TabletopInteraction.HoverAlignmentBehavior.stop(at:)](tabletopinteraction/hoveralignmentbehavior/stop(at:).md)
+- [TabletopInteraction.HoverAlignmentBehavior.stop(at:)](./stop%28at%29.md)
   `stop` indicates that the equipment movement should stop when pushed into the target, to avoid penetration. The orientation of the equipment is not affected.
 
 

@@ -1,7 +1,8 @@
 # device
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal device this context targets.
 

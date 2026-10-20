@@ -1,7 +1,8 @@
 # assignableDocument
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The assignable document that this work document is based on.
 
@@ -9,7 +10,7 @@ The assignable document that this work document is based on.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # AlternativeDistributionDomain.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution domain resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an alternative distribution domain resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionDomain.Attributes
 ```
 

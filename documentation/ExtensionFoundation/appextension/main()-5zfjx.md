@@ -1,7 +1,8 @@
 # main()
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The main entry point for an app extension that doesn’t present any UI.
 
@@ -23,11 +24,12 @@ The main entry point for an app extension that doesn’t present any UI.
 
 #### Discussion
 
-Don’t call this method directly. When the host launches your app extension in a new process, the system calls this method to create your custom [`AppExtension`](appextension.md) type and prepare your extension for requests from the host app.
+Don’t call this method directly. When the host launches your app extension in a new process, the system calls this method to create your custom [`AppExtension`](../appextension.md) type and prepare your extension for requests from the host app.
 
 ## See Also
 
-- [static func main() throws](appextension/main-w0u9.md)
+### Running the main event loop
+- [static func main() throws](./main%28%29-w0u9.md)
   The main entry point for an app extension that doesn’t present any UI.
 
 

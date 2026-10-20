@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, getStateWithReply reply: @escaping @Sendable (MTRDeviceState) -> Void)
+```
+
+```swift
 func deviceControllerGetState(_ controller: UUID, nodeID: NSNumber) async -> MTRDeviceState
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID getStateWithReply:(void (^)(MTRDeviceState state)) reply;
 ```
 
 

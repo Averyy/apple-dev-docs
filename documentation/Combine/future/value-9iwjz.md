@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The published value of the future, delivered asynchronously.
 
@@ -20,13 +21,16 @@ The published value of the future, delivered asynchronously.
 final var value: Output { get async }
 ```
 
+Available when `Failure` is `Never`.
+
 #### Discussion
 
 This property subscribes to the `Future` and delivers the value asynchronously when the `Future` publishes it. Use this property when you want to use the `async`-`await` syntax with a `Future`.
 
 ## See Also
 
-- [var value: Output](future/value-5iprp.md)
+### Accessing the value asynchronously
+- [var value: Output](./value-5iprp.md)
   The published value of the future or an error, delivered asynchronously.
 
 

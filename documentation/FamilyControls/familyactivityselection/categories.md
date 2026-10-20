@@ -1,7 +1,8 @@
 # categories
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of category instances selected by the user.
 
@@ -17,9 +18,10 @@ var categories: Set<ActivityCategory> { get }
 
 ## See Also
 
-- [var categoryTokens: Set<ActivityCategoryToken>](familyactivityselection/categorytokens.md)
+### Accessing selected categories
+- [var categoryTokens: Set<ActivityCategoryToken>](./categorytokens.md)
   Tokens that represent categories selected by the user.
-- [init(includeEntireCategory: Bool)](familyactivityselection/init(includeentirecategory:).md)
+- [init(includeEntireCategory: Bool)](./init%28includeentirecategory%29.md)
   Creates a new activity selection instance.
 
 

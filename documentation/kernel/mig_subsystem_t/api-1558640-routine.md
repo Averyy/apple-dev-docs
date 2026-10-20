@@ -1,14 +1,15 @@
 # routine
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 mig_routine_descriptor routine[1];
 ```
 

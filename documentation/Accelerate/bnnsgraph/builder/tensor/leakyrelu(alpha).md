@@ -1,7 +1,8 @@
 # leakyReLU(alpha:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Leaky Rectified Linear Unit (ReLU) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Leaky Rectified Linear Unit (ReLU) activation operation to the current gr
 ```swift
 func leakyReLU(alpha: Float = 0.01) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

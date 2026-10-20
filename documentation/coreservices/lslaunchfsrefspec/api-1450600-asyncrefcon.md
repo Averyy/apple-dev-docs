@@ -1,7 +1,8 @@
 # asyncRefCon
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A pointer to an arbitrary application-definedvalue, passed in the Carbon event notifying you of an application’slaunch or termination (if you have registered for such notification).The value of this field can be `NULL`.
 
@@ -12,6 +13,10 @@ A pointer to an arbitrary application-definedvalue, passed in the Carbon event n
 
 ```swift
 var asyncRefCon: UnsafeMutableRawPointer!
+```
+
+```c
+void *asyncRefCon;
 ```
 
 

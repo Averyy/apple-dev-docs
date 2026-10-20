@@ -1,7 +1,8 @@
 # physicalFeature
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A physical map feature.
 
@@ -11,7 +12,7 @@ A physical map feature.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ A physical feature on Earth, such as a mountain range, river, or ocean basin.
 
 ## See Also
 
-- [static var pointOfInterest: MapFeature.FeatureKind](mapfeature/featurekind/pointofinterest.md)
+### Kinds of features
+- [static var pointOfInterest: MapFeature.FeatureKind](./pointofinterest.md)
   A point of interest.
-- [static var territory: MapFeature.FeatureKind](mapfeature/featurekind/territory.md)
+- [static var territory: MapFeature.FeatureKind](./territory.md)
   A territory or political boundary.
 
 

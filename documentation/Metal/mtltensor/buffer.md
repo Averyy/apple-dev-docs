@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A buffer instance this tensor shares its storage with or `nil` if this tensor does not wrap an underlying buffer.
@@ -18,6 +19,10 @@ A buffer instance this tensor shares its storage with or `nil` if this tensor do
 
 ```swift
 var buffer: (any MTLBuffer)? { get }
+```
+
+```objc
+@property (readonly, nullable) id<MTLBuffer> buffer;
 ```
 
 

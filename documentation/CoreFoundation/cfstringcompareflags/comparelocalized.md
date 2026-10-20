@@ -1,18 +1,19 @@
 # compareLocalized
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the comparison should take into account differences related to locale, such as the thousands separator character.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ Specifies that the comparison should take into account differences related to lo
 static var compareLocalized: CFStringCompareFlags { get }
 ```
 
+```c
+kCFCompareLocalized
+```
+
 ## See Also
 
-- [static var compareCaseInsensitive: CFStringCompareFlags](cfstringcompareflags/comparecaseinsensitive.md)
+### Constants
+- [static var compareCaseInsensitive: CFStringCompareFlags](./comparecaseinsensitive.md)
   Specifies that the comparison should ignore differences in case between alphabetical characters.
-- [static var compareBackwards: CFStringCompareFlags](cfstringcompareflags/comparebackwards.md)
+- [static var compareBackwards: CFStringCompareFlags](./comparebackwards.md)
   Specifies that the comparison should start at the last elements of the entities being compared (for example, strings or arrays).
-- [static var compareAnchored: CFStringCompareFlags](cfstringcompareflags/compareanchored.md)
+- [static var compareAnchored: CFStringCompareFlags](./compareanchored.md)
   Performs searching only on characters at the beginning or end of the range.
-- [static var compareNonliteral: CFStringCompareFlags](cfstringcompareflags/comparenonliteral.md)
+- [static var compareNonliteral: CFStringCompareFlags](./comparenonliteral.md)
   Specifies that loose equivalence is acceptable, especially as pertains to diacritical marks.
-- [static var compareNumerically: CFStringCompareFlags](cfstringcompareflags/comparenumerically.md)
+- [static var compareNumerically: CFStringCompareFlags](./comparenumerically.md)
   Specifies that represented numeric values should be used as the basis for comparison and not the actual character values.
-- [static var compareDiacriticInsensitive: CFStringCompareFlags](cfstringcompareflags/comparediacriticinsensitive.md)
+- [static var compareDiacriticInsensitive: CFStringCompareFlags](./comparediacriticinsensitive.md)
   Specifies that the comparison should ignore diacritic markers.
-- [static var compareWidthInsensitive: CFStringCompareFlags](cfstringcompareflags/comparewidthinsensitive.md)
+- [static var compareWidthInsensitive: CFStringCompareFlags](./comparewidthinsensitive.md)
   Specifies that the comparison should ignore width differences.
-- [static var compareForcedOrdering: CFStringCompareFlags](cfstringcompareflags/compareforcedordering.md)
+- [static var compareForcedOrdering: CFStringCompareFlags](./compareforcedordering.md)
   Specifies that the comparison is forced to return either `kCFCompareLessThan` or `kCFCompareGreaterThan` if the strings are equivalent but not strictly equal.
 
 

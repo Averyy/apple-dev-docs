@@ -1,7 +1,8 @@
 # NWBrowser.State
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 States indicating whether a browser is able to discover services.
 
@@ -23,31 +24,32 @@ enum State
 ## Topics
 
 ### States
-- [NWBrowser.State.setup](nwbrowser/state-swift.enum/setup.md)
+- [NWBrowser.State.setup](./state-swift.enum/setup.md)
   The browser has been initialized but not started.
-- [NWBrowser.State.ready](nwbrowser/state-swift.enum/ready.md)
+- [NWBrowser.State.ready](./state-swift.enum/ready.md)
   The browser is registered for discovering services.
-- [NWBrowser.State.failed(_:)](nwbrowser/state-swift.enum/failed(_:).md)
+- [NWBrowser.State.failed(_:)](./state-swift.enum/failed%28_%29.md)
   The browser has encountered a fatal error.
-- [NWBrowser.State.cancelled](nwbrowser/state-swift.enum/cancelled.md)
+- [NWBrowser.State.cancelled](./state-swift.enum/cancelled.md)
   The browser has been canceled.
 ### Enumeration Cases
-- [NWBrowser.State.waiting(_:)](nwbrowser/state-swift.enum/waiting(_:).md)
+- [NWBrowser.State.waiting(_:)](./state-swift.enum/waiting%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var stateUpdateHandler: ((NWBrowser.State) -> Void)?](nwbrowser/stateupdatehandler.md)
+### Managing Browsers
+- [var stateUpdateHandler: ((NWBrowser.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives browser state updates.
-- [var state: NWBrowser.State](nwbrowser/state-swift.property.md)
+- [var state: NWBrowser.State](./state-swift.property.md)
   The current state of the browser.
-- [func cancel()](nwbrowser/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Stops browsing for services.
 
 

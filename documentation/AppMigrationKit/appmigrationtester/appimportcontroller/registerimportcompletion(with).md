@@ -1,7 +1,8 @@
 # registerImportCompletion(with:)
 
 **Framework**: AppMigrationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your app that import completed with a given status.
 

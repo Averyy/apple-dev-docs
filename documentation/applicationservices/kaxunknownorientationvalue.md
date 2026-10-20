@@ -1,7 +1,8 @@
 # kAXUnknownOrientationValue
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The orientation of this object is unknown.
 
@@ -12,6 +13,10 @@ The orientation of this object is unknown.
 
 ```swift
 var kAXUnknownOrientationValue: String { get }
+```
+
+```c
+#define kAXUnknownOrientationValue
 ```
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOAudioDevicePowerState currentPowerState;
 ```
 
@@ -15,19 +15,20 @@ Used to track the existing power state - can be fetched by calling getPowerState
 
 ## See Also
 
-- [workLoop](ioaudiodevice/workloop.md)
-- [timerEventSource](ioaudiodevice/timereventsource.md)
-- [timerEvents](ioaudiodevice/timerevents.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [timerEventSource](./timereventsource.md)
+- [timerEvents](./timerevents.md)
   The set of timer events in use by the device.
-- [pendingPowerState](ioaudiodevice/pendingpowerstate.md)
-- [numRunningAudioEngines](ioaudiodevice/numrunningaudioengines.md)
-- [minimumInterval](ioaudiodevice/minimuminterval.md)
-- [familyManagePower](ioaudiodevice/familymanagepower.md)
-- [duringStartup](ioaudiodevice/duringstartup.md)
-- [commandGate](ioaudiodevice/commandgate.md)
-- [audioPorts](ioaudiodevice/audioports.md)
-- [audioEngines](ioaudiodevice/audioengines.md)
-- [asyncPowerStateChangeInProgress](ioaudiodevice/asyncpowerstatechangeinprogress.md)
+- [pendingPowerState](./pendingpowerstate.md)
+- [numRunningAudioEngines](./numrunningaudioengines.md)
+- [minimumInterval](./minimuminterval.md)
+- [familyManagePower](./familymanagepower.md)
+- [duringStartup](./duringstartup.md)
+- [commandGate](./commandgate.md)
+- [audioPorts](./audioports.md)
+- [audioEngines](./audioengines.md)
+- [asyncPowerStateChangeInProgress](./asyncpowerstatechangeinprogress.md)
 
 
 ---

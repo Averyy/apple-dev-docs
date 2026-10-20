@@ -1,7 +1,8 @@
 # error
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that an error has occurred.
 
@@ -26,9 +27,10 @@ Only plays feedback on iOS and watchOS.
 
 ## See Also
 
-- [static let success: SensoryFeedback](sensoryfeedback/success.md)
+### Indicating the outcome of an operation
+- [static let success: SensoryFeedback](./success.md)
   Indicates that a task or action has completed.
-- [static let warning: SensoryFeedback](sensoryfeedback/warning.md)
+- [static let warning: SensoryFeedback](./warning.md)
   Indicates that a task or action has produced a warning of some kind.
 
 

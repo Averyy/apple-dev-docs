@@ -1,7 +1,8 @@
 # RosterClassLocationResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response that contains a list of locations.
 
@@ -10,7 +11,7 @@ The response that contains a list of locations.
 
 ## Declaration
 
-```swift
+```
 object RosterClassLocationResponse
 ```
 

@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the word tagger that’s suitable for output during debugging.
 
@@ -16,11 +17,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var model: MLModel](mlwordtagger/model.md)
+### Describing a word tagger
+- [var model: MLModel](./model.md)
   The underlying Core ML model of the word tagger.
-- [var description: String](mlwordtagger/description.md)
+- [var description: String](./description.md)
   A text representation of the word tagger.
-- [var playgroundDescription: Any](mlwordtagger/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the word tagger in a playground.
 
 

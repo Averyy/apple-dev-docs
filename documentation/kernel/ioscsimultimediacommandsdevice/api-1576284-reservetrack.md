@@ -1,14 +1,15 @@
 # ReserveTrack
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn ReserveTrack(UInt8 reservationType, UInt8 reservationFormat, UInt64 ReservationParameter);
 ```
 

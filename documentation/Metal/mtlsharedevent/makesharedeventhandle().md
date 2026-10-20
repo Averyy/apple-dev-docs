@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new shareable event handle.
@@ -18,6 +19,10 @@ Creates a new shareable event handle.
 
 ```swift
 func makeSharedEventHandle() -> MTLSharedEventHandle
+```
+
+```objc
+- (MTLSharedEventHandle *) newSharedEventHandle;
 ```
 
 

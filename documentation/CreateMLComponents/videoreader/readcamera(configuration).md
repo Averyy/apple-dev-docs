@@ -1,7 +1,8 @@
 # readCamera(configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reads an async sequence of video frames captured with a video camera.
 
@@ -28,15 +29,16 @@ An async sequence of camera video frames.
 
 ## See Also
 
-- [static read(_:)](videoreader/read(_:).md)
+### Reading
+- [static read(_:)](./read%28_%29.md)
   Reads a sequence of annotated files as an array of annotated async sequences of video frames.
-- [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](videoreader/read(contentsof:).md)
+- [static func read(contentsOf: URL) async throws -> VideoReader.AsyncFrames](./read%28contentsof%29.md)
   Reads a video file as an async sequence of video frames.
-- [VideoReader.AsyncFrames](videoreader/asyncframes.md)
+- [VideoReader.AsyncFrames](./asyncframes.md)
   An async sequence of video frames.
-- [VideoReader.CameraAsyncBuffers](videoreader/cameraasyncbuffers.md)
+- [VideoReader.CameraAsyncBuffers](./cameraasyncbuffers.md)
   An async sequence of video frames.
-- [VideoReader.CameraConfiguration](videoreader/cameraconfiguration.md)
+- [VideoReader.CameraConfiguration](./cameraconfiguration.md)
   The configuration of the camera to pass to the `readCamera` method.
 
 

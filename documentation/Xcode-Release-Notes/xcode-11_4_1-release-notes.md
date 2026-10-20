@@ -1,6 +1,7 @@
 # Xcode 11.4.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -18,17 +19,19 @@ Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, an
 
 ###### Known Issues
 
-- iOS apps with asset catalogs built with Xcode 11.4 may experience slower image loading performance in Dark Mode when deployed to devices running iOS 13.3 or earlier. (61200701) (FB7648891) **Workaround**: Add a symbol glyph to the app’s asset catalog.
+- iOS apps with asset catalogs built with Xcode 11.4 may experience slower image loading performance in Dark Mode when deployed to devices running iOS 13.3 or earlier. (61200701) (FB7648891)
+
+  **Workaround**: Add a symbol glyph to the app’s asset catalog.
 
 ##### Instruments
 
 ###### Resolved Issues
 
-- Fixed an issue where Instruments wouldn’t record [`os_log`](https://developer.apple.com/documentation/os/os_log) and `os_signpost` data when targeting Simulator devices. (60883664) (FB7639664)
+- Fixed an issue where Instruments wouldn’t record [`os_log`](../os/os_log.md) and `os_signpost` data when targeting Simulator devices. (60883664) (FB7639664)
 
 ##### Interface Builder
 
-- Fixed an issue that caused some [`UINavigationBar`](https://developer.apple.com/documentation/uikit/uinavigationbar) appearance properties set in storyboard and XIB documents to be ignored when building with Xcode 11.4. (60883063) (FB7639654)
+- Fixed an issue that caused some [`UINavigationBar`](../UIKit/uinavigationbar.md) appearance properties set in storyboard and XIB documents to be ignored when building with Xcode 11.4. (60883063) (FB7639654)
 
 ##### Linking
 
@@ -46,7 +49,9 @@ Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, an
 
 ###### Known Issues
 
-- Automatic signing may fail to make changes to app IDs that use a seed prefix and not a team ID prefix. (59672760) (FB7593038) **Workaround**: Adjust your app ID manually on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account) website, then return to Xcode to generate a provisioning profile.
+- Automatic signing may fail to make changes to app IDs that use a seed prefix and not a team ID prefix. (59672760) (FB7593038)
+
+  **Workaround**: Adjust your app ID manually on the [Apple Developer](https://developer.apple.com/account) website, then return to Xcode to generate a provisioning profile.
 
 ###### Resolved Issues
 
@@ -85,25 +90,26 @@ Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, an
 
 ## See Also
 
-- [Xcode 11.7 Release Notes](xcode-11_7-release-notes.md)
+### Xcode 11
+- [Xcode 11.7 Release Notes](./xcode-11_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.6 Release Notes](xcode-11_6-release-notes.md)
+- [Xcode 11.6 Release Notes](./xcode-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.5 Release Notes](xcode-11_5-release-notes.md)
+- [Xcode 11.5 Release Notes](./xcode-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4 Release Notes](xcode-11_4-release-notes.md)
+- [Xcode 11.4 Release Notes](./xcode-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.3.1 Release Notes](xcode-11_3_1-release-notes.md)
+- [Xcode 11.3.1 Release Notes](./xcode-11_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.3 Release Notes](xcode-11_3-release-notes.md)
+- [Xcode 11.3 Release Notes](./xcode-11_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.2.1 Release Notes](xcode-11_2_1-release-notes.md)
+- [Xcode 11.2.1 Release Notes](./xcode-11_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.2 Release Notes](xcode-11_2-release-notes.md)
+- [Xcode 11.2 Release Notes](./xcode-11_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.1 Release Notes](xcode-11_1-release-notes.md)
+- [Xcode 11.1 Release Notes](./xcode-11_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11 Release Notes](xcode-11-release-notes.md)
+- [Xcode 11 Release Notes](./xcode-11-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

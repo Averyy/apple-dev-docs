@@ -1,7 +1,8 @@
 # dateTime
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a date, time, or duration.
 
@@ -12,6 +13,10 @@ A property that defines the content in a text input area as a date, time, or dur
 
 ```swift
 static let dateTime: NSTextContentType
+```
+
+```c
+extern NSTextContentType const NSTextContentTypeDateTime;
 ```
 
 

@@ -1,7 +1,8 @@
 # isNested
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the axis values apply to a nested subpart or not
 

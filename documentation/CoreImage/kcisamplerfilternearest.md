@@ -1,7 +1,8 @@
 # kCISamplerFilterNearest
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Nearest neighbor sampling.
 
@@ -19,13 +20,18 @@ Nearest neighbor sampling.
 let kCISamplerFilterNearest: String
 ```
 
+```c
+extern NSString * const kCISamplerFilterNearest;
+```
+
 ## See Also
 
-- [let kCISamplerWrapBlack: String](kcisamplerwrapblack.md)
+### Constants
+- [let kCISamplerWrapBlack: String](./kcisamplerwrapblack.md)
   Pixels are transparent black.
-- [let kCISamplerWrapClamp: String](kcisamplerwrapclamp.md)
+- [let kCISamplerWrapClamp: String](./kcisamplerwrapclamp.md)
   Coordinates are clamped to the extent.
-- [let kCISamplerFilterLinear: String](kcisamplerfilterlinear.md)
+- [let kCISamplerFilterLinear: String](./kcisamplerfilterlinear.md)
   Bilinear interpolation.
 
 

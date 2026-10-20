@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.TemplateInsertableBuilder
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom parameter attribute that constructs custom language model data from closures.
 
@@ -27,20 +28,21 @@ Phrase counts can be generated manually by providing an exact phrase and weight 
 ## Topics
 
 ### Result builder methods
-- [static func buildArray([any TemplateInsertable]) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildarray(_:).md)
+- [static func buildArray([any TemplateInsertable]) -> any TemplateInsertable](./templateinsertablebuilder/buildarray%28_%29.md)
   Enables support for `for..in` loops.
-- [static func buildBlock(any TemplateInsertable...) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildblock(_:).md)
+- [static func buildBlock(any TemplateInsertable...) -> any TemplateInsertable](./templateinsertablebuilder/buildblock%28_%29.md)
   Combines statement blocks into a single product.
-- [static func buildEither(first: any TemplateInsertable) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(first:).md)
+- [static func buildEither(first: any TemplateInsertable) -> any TemplateInsertable](./templateinsertablebuilder/buildeither%28first%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildEither(second: any TemplateInsertable) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(second:).md)
+- [static func buildEither(second: any TemplateInsertable) -> any TemplateInsertable](./templateinsertablebuilder/buildeither%28second%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildOptional((any TemplateInsertable)?) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildoptional(_:).md)
+- [static func buildOptional((any TemplateInsertable)?) -> any TemplateInsertable](./templateinsertablebuilder/buildoptional%28_%29.md)
   Enables support for `if` statements that do not have an `else` clause.
 
 ## See Also
 
-- [SFCustomLanguageModelData.PhraseCountsFromTemplates](sfcustomlanguagemodeldata/phrasecountsfromtemplates.md)
+### Adding parameterized sample data within a result builder
+- [SFCustomLanguageModelData.PhraseCountsFromTemplates](./phrasecountsfromtemplates.md)
   A type that can be used to construct custom language model data by specifying a set of template classes and using the result builder DSL to specify templates.
 
 

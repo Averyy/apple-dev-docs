@@ -1,17 +1,24 @@
 # date
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date object containing the time value.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var date: Date { get set }
+```
+
+```objc
+@property (nonatomic, retain) NSDate * date;
 ```
 
 #### Discussion
@@ -20,11 +27,13 @@ You can make changes to this property until you hand off the timeline entry cont
 
 ## See Also
 
-- [convenience init(date: Date)](clktimetextprovider/init(date:).md)
+### Related Documentation
+- [convenience init(date: Date)](./init%28date%29.md)
   Creates and returns a text provider for displaying the specified time.
-- [convenience init(date: Date, timeZone: TimeZone?)](clktimetextprovider/init(date:timezone:).md)
+- [convenience init(date: Date, timeZone: TimeZone?)](./init%28date,timezone%29.md)
   Creates and returns a text provider for displaying the specified time.
-- [var timeZone: TimeZone?](clktimetextprovider/timezone.md)
+### Getting the Time Information
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone used to format time values.
 
 

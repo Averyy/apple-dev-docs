@@ -1,7 +1,8 @@
 # VTDecompressionOutputCallbackRecord
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -17,31 +18,36 @@
 struct VTDecompressionOutputCallbackRecord
 ```
 
+```c
+struct VTDecompressionOutputCallbackRecord;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](vtdecompressionoutputcallbackrecord/init.md)
-- [init(decompressionOutputCallback: VTDecompressionOutputCallback?, decompressionOutputRefCon: UnsafeMutableRawPointer?)](vtdecompressionoutputcallbackrecord/init(decompressionoutputcallback:decompressionoutputrefcon:).md)
+- [init()](./vtdecompressionoutputcallbackrecord/init%28%29.md)
+- [init(decompressionOutputCallback: VTDecompressionOutputCallback?, decompressionOutputRefCon: UnsafeMutableRawPointer?)](./vtdecompressionoutputcallbackrecord/init%28decompressionoutputcallback,decompressionoutputrefcon%29.md)
 ### Instance Properties
-- [var decompressionOutputCallback: VTDecompressionOutputCallback?](vtdecompressionoutputcallbackrecord/decompressionoutputcallback.md)
-- [var decompressionOutputRefCon: UnsafeMutableRawPointer?](vtdecompressionoutputcallbackrecord/decompressionoutputrefcon.md)
+- [var decompressionOutputCallback: VTDecompressionOutputCallback?](./vtdecompressionoutputcallbackrecord/decompressionoutputcallback.md)
+- [var decompressionOutputRefCon: UnsafeMutableRawPointer?](./vtdecompressionoutputcallbackrecord/decompressionoutputrefcon.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [class VTDecompressionSession](vtdecompressionsession.md)
+### Data Types
+- [class VTDecompressionSession](./vtdecompressionsession.md)
   A reference to a decompression session.
-- [struct VTDecodeFrameFlags](vtdecodeframeflags.md)
+- [struct VTDecodeFrameFlags](./vtdecodeframeflags.md)
   Flags to pass to a decompression session and the video decoder.
-- [struct VTDecodeInfoFlags](vtdecodeinfoflags.md)
+- [struct VTDecodeInfoFlags](./vtdecodeinfoflags.md)
   Flags that provide information about the status of a decode operation.
-- [typealias VTDecompressionOutputCallback](vtdecompressionoutputcallback.md)
+- [typealias VTDecompressionOutputCallback](./vtdecompressionoutputcallback.md)
   The prototype for the callback invoked when frame decompression is complete.
-- [typealias VTDecompressionOutputHandler](vtdecompressionoutputhandler.md)
+- [typealias VTDecompressionOutputHandler](./vtdecompressionoutputhandler.md)
   The prototype for the block invoked when frame decompression is complete.
 
 

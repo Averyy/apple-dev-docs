@@ -1,7 +1,8 @@
 # wantsExtendedDynamicRangeContent
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables extended dynamic range values onscreen.
 
@@ -18,15 +19,21 @@ Enables extended dynamic range values onscreen.
 var wantsExtendedDynamicRangeContent: Bool { get set }
 ```
 
+```objc
+@property BOOL wantsExtendedDynamicRangeContent;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If any onscreen layer has this property set to [`true`](https://developer.apple.com/documentation/swift/true), all rendered content is clamped to the screen’s [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/appkit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue) value rather than `1.0`.
+The default value is [`false`](../../Swift/false.md). If any onscreen layer has this property set to [`true`](../../Swift/true.md), all rendered content is clamped to the screen’s [`maximumExtendedDynamicRangeColorComponentValue`](../../AppKit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md) value rather than `1.0`.
 
 ## See Also
 
-- [var maximumExtendedDynamicRangeColorComponentValue: CGFloat](../appkit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md)
+### Related Documentation
+- [var maximumExtendedDynamicRangeColorComponentValue: CGFloat](../../AppKit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md)
   The current maximum color component value for the screen.
-- [var edrMetadata: CAEDRMetadata?](cametallayer/edrmetadata.md)
+### Configuring Extended Dynamic Range Behavior
+- [var edrMetadata: CAEDRMetadata?](./edrmetadata.md)
   Metadata describing the tone mapping to apply to the extended dynamic range (EDR) values in the layer.
 
 

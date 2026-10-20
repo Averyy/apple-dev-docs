@@ -1,7 +1,8 @@
 # OSMallocTag
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque type used to track memory allocations.
 
@@ -10,7 +11,7 @@ An opaque type used to track memory allocations.
 
 ## Declaration
 
-```swift
+```c
 typedef struct __OSMallocTag__ *OSMallocTag;
 ```
 

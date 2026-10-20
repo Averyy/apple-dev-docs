@@ -10,53 +10,54 @@ Apps rely on many types of assets to create a rich, dynamic, and visually engagi
 
 Xcode simplifies managing most types of assets with asset catalogs. Use *asset catalogs* to organize and manage resources such as images, colors, app icons, textures, stickers, and data.
 
-![Three icons that represent common types of resources in asset catalogs. From left-to-right, an image stack icon with the label images, a color picker icon with the label colors, and a CSV icon with the label data.](/images/com.apple.Xcode/asset-management-1@2x.png)
+![Three icons that represent common types of resources in asset catalogs. From left-to-right, an image stack icon with the label images, a color picker icon with the label colors, and a CSV icon with the label data.](https://developer.apple.com/tutorials/images/com.apple.Xcode/asset-management-1@2x.png)
 
 Xcode also provides interactive editors for certain types of assets, like particle effects, that let you experiment, make changes, and see the results immediately.
 
 ## Topics
 
 ### App icons and launch screen
-- [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
+- [Creating your app icon using Icon Composer](./creating-your-app-icon-using-icon-composer.md)
   Use Icon Composer to stylize your app icon for different platforms and appearances.
-- [Configuring your app to use alternate app icons](configuring-your-app-to-use-alternate-app-icons.md)
+- [Configuring your app to use alternate app icons](./configuring-your-app-to-use-alternate-app-icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
-- [Configuring your app icon using an asset catalog](configuring-your-app-icon.md)
+- [Configuring your app icon using an asset catalog](./configuring-your-app-icon.md)
   Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
-- [Specifying your app’s launch screen](specifying-your-apps-launch-screen.md)
+- [Specifying your app’s launch screen](./specifying-your-apps-launch-screen.md)
   Make your iOS app launch experience faster and more responsive by customizing a launch screen.
 ### Asset catalogs
-- [Managing assets with asset catalogs](managing-assets-with-asset-catalogs.md)
+- [Managing assets with asset catalogs](./managing-assets-with-asset-catalogs.md)
   Add, organize, and edit sets of assets in your Xcode project using asset catalogs.
 ### Images
-- [Adding images to your Xcode project](adding-images-to-your-xcode-project.md)
+- [Adding images to your Xcode project](./adding-images-to-your-xcode-project.md)
   Import images into your project, manage their appearances and variations, and load them at runtime.
-- [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md)
+- [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md)
   Design a symbol image with the same behavior as system-provided symbols.
 ### Colors
-- [Specifying your app’s color scheme](specifying-your-apps-color-scheme.md)
+- [Specifying your app’s color scheme](./specifying-your-apps-color-scheme.md)
   Set a global accent color for your app by using asset catalogs.
-- [Supporting Dark Mode in your interface](../uikit/supporting-dark-mode-in-your-interface.md)
+- [Supporting Dark Mode in your interface](../UIKit/supporting-dark-mode-in-your-interface.md)
   Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 ### Augmented reality assets
-- [Detecting Images in an AR Experience](../arkit/detecting-images-in-an-ar-experience.md)
+- [Detecting Images in an AR Experience](../ARKit/detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Scanning and Detecting 3D Objects](../arkit/scanning-and-detecting-3d-objects.md)
+- [Scanning and Detecting 3D Objects](../ARKit/scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
-- [Composing interactive 3D content with RealityKit and Reality Composer Pro](../realitykit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
+- [Composing interactive 3D content with RealityKit and Reality Composer Pro](../RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
   Build an interactive scene using an animation timeline.
 ### Machine learning models
-- [Create ML](../createml/createml.md)
+- [Create ML](../CreateML/CreateML.md)
   Create machine learning models for use in your app.
 ### Particle effects
-- [Creating a SpriteKit particle emitter in Xcode](creating-a-spritekit-particle-emitter-in-xcode.md)
+- [Creating a SpriteKit particle emitter in Xcode](./creating-a-spritekit-particle-emitter-in-xcode.md)
   Add particle effects to your app by creating repeatable particles.
 
 ## See Also
 
-- [Localization](localization.md)
+### Interface
+- [Localization](./localization.md)
   Expand the market for your app by supporting multiple languages and regions.
-- [Accessibility Inspector](../accessibility/accessibility-inspector.md)
+- [Accessibility Inspector](../Accessibility/accessibility-inspector.md)
   Reveal how your app represents itself to people using accessibility features.
 
 

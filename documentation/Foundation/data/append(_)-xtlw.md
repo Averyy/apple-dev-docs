@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Append a buffer of bytes to the data.
 
@@ -26,11 +27,12 @@ mutating func append<SourceType>(_ buffer: UnsafeBufferPointer<SourceType>)
 
 ## See Also
 
-- [func append(Data)](data/append(_:)-vjwy.md)
+### Adding Bytes
+- [func append(Data)](./append%28_%29-vjwy.md)
   Appends the specified data to the end of this data.
-- [func append(UnsafePointer<UInt8>, count: Int)](data/append(_:count:).md)
+- [func append(UnsafePointer<UInt8>, count: Int)](./append%28_,count%29.md)
   Appends the specified bytes from memory to the end of the data.
-- [func reserveCapacity(Int)](data/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./reservecapacity%28_%29.md)
   Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 
 

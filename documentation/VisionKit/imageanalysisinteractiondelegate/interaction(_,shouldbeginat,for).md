@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a Boolean value that indicates whether the interaction can begin at the given point.
@@ -32,6 +33,12 @@ The system calls this method once for each type of interaction. The default valu
 - `interaction`: The object for which interaction can begin.
 - `point`: The point where the interaction can begin.
 - `interactionType`: The type of interaction that can begin.
+
+## Default Implementations
+
+### ImageAnalysisInteractionDelegate Implementations
+- [func interaction(ImageAnalysisInteraction, shouldBeginAt: CGPoint, for: ImageAnalysisInteraction.InteractionTypes) -> Bool](./interaction%28_,shouldbeginat,for%29-9n9q4.md)
+  A default implementation that indicates that the interaction begins.
 
 
 ---

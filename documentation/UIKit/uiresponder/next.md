@@ -1,7 +1,8 @@
 # next
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the next responder in the responder chain, or `nil` if there’s no next responder.
 
@@ -9,7 +10,7 @@ Returns the next responder in the responder chain, or `nil` if there’s no next
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns the next responder in the responder chain, or `nil` if there’s no next
 var next: UIResponder? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIResponder * nextResponder;
+```
+
 ## Mentions
 
-- [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
+- [Using responders and the responder chain to handle events](../using-responders-and-the-responder-chain-to-handle-events.md)
 
 #### Return Value
 
@@ -28,19 +33,20 @@ The next object in the responder chain, or `nil` if this is the last object in t
 
 #### Discussion
 
-The [`UIResponder`](uiresponder.md) class doesn’t store or set the next responder automatically, so this method returns `nil` by default. Subclasses must override this method and return an appropriate next responder. For example, [`UIView`](uiview.md) implements this method and returns the [`UIViewController`](uiviewcontroller.md) object that manages it (if it has one) or its superview (if it doesn’t). [`UIViewController`](uiviewcontroller.md) similarly implements the method and returns its view’s superview. [`UIWindow`](uiwindow.md) returns the application object. The shared [`UIApplication`](uiapplication.md) object normally returns `nil`, but it returns its app delegate if that object is a subclass of [`UIResponder`](uiresponder.md) and hasn’t already been called to handle the event.
+The [`UIResponder`](../uiresponder.md) class doesn’t store or set the next responder automatically, so this method returns `nil` by default. Subclasses must override this method and return an appropriate next responder. For example, [`UIView`](../uiview.md) implements this method and returns the [`UIViewController`](../uiviewcontroller.md) object that manages it (if it has one) or its superview (if it doesn’t). [`UIViewController`](../uiviewcontroller.md) similarly implements the method and returns its view’s superview. [`UIWindow`](../uiwindow.md) returns the application object. The shared [`UIApplication`](../uiapplication.md) object normally returns `nil`, but it returns its app delegate if that object is a subclass of [`UIResponder`](../uiresponder.md) and hasn’t already been called to handle the event.
 
 ## See Also
 
-- [var isFirstResponder: Bool](uiresponder/isfirstresponder.md)
+### Managing the responder chain
+- [var isFirstResponder: Bool](./isfirstresponder.md)
   Returns a Boolean value indicating whether this object is the first responder.
-- [var canBecomeFirstResponder: Bool](uiresponder/canbecomefirstresponder.md)
+- [var canBecomeFirstResponder: Bool](./canbecomefirstresponder.md)
   Returns a Boolean value indicating whether this object can become the first responder.
-- [func becomeFirstResponder() -> Bool](uiresponder/becomefirstresponder.md)
+- [func becomeFirstResponder() -> Bool](./becomefirstresponder%28%29.md)
   Asks UIKit to make this object the first responder in its window.
-- [var canResignFirstResponder: Bool](uiresponder/canresignfirstresponder.md)
+- [var canResignFirstResponder: Bool](./canresignfirstresponder.md)
   Returns a Boolean value indicating whether the responder is willing to relinquish first-responder status.
-- [func resignFirstResponder() -> Bool](uiresponder/resignfirstresponder.md)
+- [func resignFirstResponder() -> Bool](./resignfirstresponder%28%29.md)
   Notifies this object that it has been asked to relinquish its status as first responder in its window.
 
 

@@ -1,7 +1,8 @@
 # world
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The namespace in which the JavaScript code executes.
 
@@ -18,15 +19,20 @@ The namespace in which the JavaScript code executes.
 var world: WKContentWorld { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKContentWorld * world;
+```
+
 #### Discussion
 
-For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
+For more information about content worlds, see [`WKContentWorld`](../wkcontentworld.md).
 
 ## See Also
 
-- [var frameInfo: WKFrameInfo](wkscriptmessage/frameinfo.md)
+### Getting Message-Related Information
+- [var frameInfo: WKFrameInfo](./frameinfo.md)
   The frame that sent the message.
-- [var webView: WKWebView?](wkscriptmessage/webview.md)
+- [var webView: WKWebView?](./webview.md)
   The web view that sent the message.
 
 

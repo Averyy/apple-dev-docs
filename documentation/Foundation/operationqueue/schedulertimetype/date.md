@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date this type represents.
 
@@ -22,11 +23,12 @@ var date: Date
 
 ## See Also
 
-- [func advanced(by: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType](operationqueue/schedulertimetype/advanced(by:).md)
+### Managing Scheduler Time Type Properties
+- [func advanced(by: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType](./advanced%28by%29.md)
   Calculates an operation queue scheduler time by advancing the scheduler time type’s date by the given interval.
-- [func distance(to: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride](operationqueue/schedulertimetype/distance(to:).md)
+- [func distance(to: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride](./distance%28to%29.md)
   The distance to another operation queue scheduler time.
-- [OperationQueue.SchedulerTimeType.Stride](operationqueue/schedulertimetype/stride.md)
+- [OperationQueue.SchedulerTimeType.Stride](./stride.md)
   The interval by which operation queue times advance.
 
 

@@ -1,7 +1,8 @@
 # poolAllocationFailed
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The allocation for the buffer pool failed. Most likely because of lack of resources. Check if your parameters are in range.
 

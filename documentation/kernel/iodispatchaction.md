@@ -1,7 +1,8 @@
 # IODispatchAction
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef kern_return_t (^IODispatchAction)(void);
 ```
 

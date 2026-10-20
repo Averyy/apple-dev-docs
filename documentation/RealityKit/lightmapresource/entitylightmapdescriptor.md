@@ -1,7 +1,8 @@
 # LightmapResource.EntityLightmapDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies a MeshPartLightmapDescriptor for each part of the entity’s model.
 
@@ -22,13 +23,13 @@ struct EntityLightmapDescriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(perPartData: [LightmapResource.MeshPartLightmapDescriptor]) throws](lightmapresource/entitylightmapdescriptor/init(perpartdata:).md)
+- [init(perPartData: [LightmapResource.MeshPartLightmapDescriptor]) throws](./entitylightmapdescriptor/init%28perpartdata%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

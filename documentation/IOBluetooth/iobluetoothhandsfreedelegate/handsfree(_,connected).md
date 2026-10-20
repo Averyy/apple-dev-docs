@@ -1,7 +1,8 @@
 # handsFree(_:connected:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func handsFree(_ device: IOBluetoothHandsFree!, connected status: NSNumber!)
+```
+
+```objc
+- (void) handsFree:(IOBluetoothHandsFree *) device connected:(NSNumber *) status;
 ```
 
 

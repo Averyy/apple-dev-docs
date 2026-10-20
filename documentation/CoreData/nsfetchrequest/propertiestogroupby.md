@@ -1,7 +1,8 @@
 # propertiesToGroupBy
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of objects that indicates how data should be grouped before a select statement is run in a SQL database.
 
@@ -10,7 +11,7 @@ An array of objects that indicates how data should be grouped before a select st
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ An array of objects that indicates how data should be grouped before a select st
 var propertiesToGroupBy: [Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray * propertiesToGroupBy;
+```
+
 #### Discussion
 
-An array of [`NSPropertyDescription`](nspropertydescription.md) or  [`NSExpressionDescription`](nsexpressiondescription.md) objects or key-path strings that indicate how data should be grouped before a select statement is run in an SQL database.
+An array of [`NSPropertyDescription`](../nspropertydescription.md) or  [`NSExpressionDescription`](../nsexpressiondescription.md) objects or key-path strings that indicate how data should be grouped before a select statement is run in an SQL database.
 
-If you use this setting, you must set the [`resultType`](nsfetchrequest/resulttype.md) to [`dictionaryResultType`](nsfetchrequestresulttype/dictionaryresulttype.md), and the SELECT values must be literals, aggregates, or columns specified in `propertiesToGroupBy`.
+If you use this setting, you must set the [`resultType`](./resulttype.md) to [`dictionaryResultType`](../nsfetchrequestresulttype/dictionaryresulttype.md), and the SELECT values must be literals, aggregates, or columns specified in `propertiesToGroupBy`.
 
 Aggregates will operate on the groups specified in `propertiesToGroupBy`
 
 rather than the whole table. If you set `propertiesToGroupBy`, you can also set a predicate to filter rows that are returned by `propertiesToGroupBy`.
 
-See [`havingPredicate`](nsfetchrequest/havingpredicate.md).
+See [`havingPredicate`](./havingpredicate.md).
 
 ## See Also
 
-- [var havingPredicate: NSPredicate?](nsfetchrequest/havingpredicate.md)
+### Grouping and Filtering Dictionary Results
+- [var havingPredicate: NSPredicate?](./havingpredicate.md)
   The predicate used to filter rows being returned by a query containing a GROUP BY directive.
 
 

@@ -1,7 +1,8 @@
 # addAttachment(to:name:contentType:url:metadata:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an attachment to the specified object.
 
@@ -10,7 +11,7 @@ Adds an attachment to the specified object.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -50,7 +51,7 @@ attachmentStore.addAttachment(to: prescription,
 }
 ```
 
-You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md), [`HKGlassesPrescription`](hkglassesprescription.md), and [`HKContactsPrescription`](hkcontactsprescription.md) samples. The attachment must be a static image or PDF (no videos or GIFs). HealthKit supports attaching Live Photos, however it automatically selects and attaches the key photo.
+You can only add attachments to [`HKVisionPrescription`](../hkvisionprescription.md), [`HKGlassesPrescription`](../hkglassesprescription.md), and [`HKContactsPrescription`](../hkcontactsprescription.md) samples. The attachment must be a static image or PDF (no videos or GIFs). HealthKit supports attaching Live Photos, however it automatically selects and attaches the key photo.
 
 ## Parameters
 
@@ -59,12 +60,15 @@ You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md
 - `contentType`: The type of data stored in the attachment.
 - `url`: The url for the attachment. This must be a local file url.
 - `metadata`: Additional data associated with the attachment.
-- `completion`: A completion handler that the system calls after adding the attachment. This handler takes the following parameters: - **attachment**: An object that represents the attachment. If an error occurred, the system sets this parameter to `nil`.
-- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
+- `completion`: A completion handler that the system calls after adding the attachment. This handler takes the following parameters:
+
+  - **attachment**: An object that represents the attachment. If an error occurred, the system sets this parameter to `nil`.
+  - **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 ## See Also
 
-- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any]) async throws -> HKAttachment](hkattachmentstore/addattachment(to:name:contenttype:url:metadata:).md)
+### Adding attachments
+- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any]) async throws -> HKAttachment](./addattachment%28to,name,contenttype,url,metadata%29.md)
   Asynchronously adds an attachment to the specified object.
 
 

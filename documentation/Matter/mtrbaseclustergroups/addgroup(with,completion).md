@@ -1,7 +1,8 @@
 # addGroup(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func addGroup(with params: MTRGroupsClusterAddGroupParams, completion: @escaping @Sendable (MTRGroupsClusterAddGroupResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func addGroup(with params: MTRGroupsClusterAddGroupParams) async throws -> MTRGroupsClusterAddGroupResponseParams
+```
+
+```objc
+- (void) addGroupWithParams:(MTRGroupsClusterAddGroupParams *) params completion:(void (^)(MTRGroupsClusterAddGroupResponseParams *data, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # matchOffset
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timecode in the reference recording that matches the start of the query, in seconds.
 
@@ -20,15 +21,28 @@ The timecode in the reference recording that matches the start of the query, in 
 var matchOffset: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval matchOffset;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) NSTimeInterval matchOffset;
+```
+
 #### Discussion
 
 The value can be negative if the query signature contains unrecognizable data before the data that corresponds to the start of the matched reference item.
 
 ## See Also
 
-- [var predictedCurrentMatchOffset: TimeInterval](shmatchedmediaitem/predictedcurrentmatchoffset.md)
+### Reading information about the match
+- [var predictedCurrentMatchOffset: TimeInterval](./predictedcurrentmatchoffset.md)
   The updated timecode in the reference recording that matches the current playback position of the query audio, in seconds.
-- [var frequencySkew: Float](shmatchedmediaitem/frequencyskew.md)
+- [var frequencySkew: Float](./frequencyskew.md)
   A multiple for the difference in frequency between the matched audio and the query audio.
 
 

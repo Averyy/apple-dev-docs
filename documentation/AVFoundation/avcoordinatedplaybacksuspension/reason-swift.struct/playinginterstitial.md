@@ -1,7 +1,8 @@
 # playingInterstitial
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A participant is playing content other than the primary content.
 
@@ -19,21 +20,26 @@ A participant is playing content other than the primary content.
 static let playingInterstitial: AVCoordinatedPlaybackSuspension.Reason
 ```
 
+```c
+extern AVCoordinatedPlaybackSuspensionReason const AVCoordinatedPlaybackSuspensionReasonPlayingInterstitial;
+```
+
 #### Discussion
 
 Interstitials are content a player presents that’s unrelated to the primary content, such as advertisements and legal warnings.
 
 ## See Also
 
-- [static let audioSessionInterrupted: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/audiosessioninterrupted.md)
+### Suspension reasons
+- [static let audioSessionInterrupted: AVCoordinatedPlaybackSuspension.Reason](./audiosessioninterrupted.md)
   The system interrupts a participant’s audio session.
-- [static let coordinatedPlaybackNotPossible: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/coordinatedplaybacknotpossible.md)
+- [static let coordinatedPlaybackNotPossible: AVCoordinatedPlaybackSuspension.Reason](./coordinatedplaybacknotpossible.md)
   It’s not possible for a participant to start or resume coordinated playback.
-- [static let stallRecovery: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/stallrecovery.md)
+- [static let stallRecovery: AVCoordinatedPlaybackSuspension.Reason](./stallrecovery.md)
   The player object is buffering media data after a stall.
-- [static let userActionRequired: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/useractionrequired.md)
+- [static let userActionRequired: AVCoordinatedPlaybackSuspension.Reason](./useractionrequired.md)
   A playback object requires user intervention to resume playback.
-- [static let userIsChangingCurrentTime: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct/userischangingcurrenttime.md)
+- [static let userIsChangingCurrentTime: AVCoordinatedPlaybackSuspension.Reason](./userischangingcurrenttime.md)
   A participant is actively changing the current time.
 
 

@@ -1,7 +1,8 @@
 # init(contentsOf:usedEncoding:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an @c NSString object initialized by reading data from a given URL and returns by reference the encoding used to interpret the data.
 
@@ -18,6 +19,10 @@ Returns an @c NSString object initialized by reading data from a given URL and r
 
 ```swift
 convenience init(contentsOf url: URL, usedEncoding enc: UnsafeMutablePointer<UInt>?) throws
+```
+
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url usedEncoding:(NSStringEncoding *) enc error:(NSError **) error;
 ```
 
 #### Return Value

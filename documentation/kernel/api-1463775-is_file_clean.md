@@ -1,14 +1,15 @@
 # is_file_clean
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 int is_file_clean(vnode_t, off_t);
 ```
 

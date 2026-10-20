@@ -1,7 +1,8 @@
 # NSPersonNameComponentFamilyName
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -18,17 +19,22 @@
 let NSPersonNameComponentFamilyName: String
 ```
 
+```c
+extern NSString * const NSPersonNameComponentFamilyName;
+```
+
 #### Discussion
 
 Identifies a family name component.
 
 ## See Also
 
-- [let NSPersonNameComponentGivenName: String](nspersonnamecomponentgivenname.md)
-- [let NSPersonNameComponentMiddleName: String](nspersonnamecomponentmiddlename.md)
-- [let NSPersonNameComponentPrefix: String](nspersonnamecomponentprefix.md)
-- [let NSPersonNameComponentSuffix: String](nspersonnamecomponentsuffix.md)
-- [let NSPersonNameComponentNickname: String](nspersonnamecomponentnickname.md)
+### Constants
+- [let NSPersonNameComponentGivenName: String](./nspersonnamecomponentgivenname.md)
+- [let NSPersonNameComponentMiddleName: String](./nspersonnamecomponentmiddlename.md)
+- [let NSPersonNameComponentPrefix: String](./nspersonnamecomponentprefix.md)
+- [let NSPersonNameComponentSuffix: String](./nspersonnamecomponentsuffix.md)
+- [let NSPersonNameComponentNickname: String](./nspersonnamecomponentnickname.md)
 
 
 ---

@@ -1,16 +1,21 @@
 # CGWindowBackingType.backingStoreNonretained
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case backingStoreNonretained
+```
+
+```c
+kCGBackingStoreNonretained
 ```
 
 #### Discussion
@@ -21,8 +26,9 @@ You should typically not use this mode. It exists primarily for use in the origi
 
 ## See Also
 
-- [CGWindowBackingType.backingStoreBuffered](cgwindowbackingtype/backingstorebuffered.md)
-- [CGWindowBackingType.backingStoreRetained](cgwindowbackingtype/backingstoreretained.md)
+### Constants
+- [CGWindowBackingType.backingStoreBuffered](./backingstorebuffered.md)
+- [CGWindowBackingType.backingStoreRetained](./backingstoreretained.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Letting players use their second-generation Siri Remote as a game controller
 
-**Framework**: Game Controller
+**Framework**: Game Controller  
+**Role**: Article
 
 Support the second-generation Siri Remote as a game controller in your Apple TV game.
 
@@ -8,17 +9,17 @@ Support the second-generation Siri Remote as a game controller in your Apple TV 
 
 To add support for the second-generation Siri Remote in your Apple TV game, you make a few changes to your Xcode project and code.
 
-##### Configure Your Project
+##### Configure your project
 
 First configure your Xcode project to handle directional gamepads and multiple micro gamepads.
 
-On the Signing & Capabilities tab in the project editor, add the Game Controllers capability to your project and check Directional Gamepad under Game Controllers. For more information, see [`Configuring game controllers`](https://developer.apple.com/documentation/xcode/configuring-game-controllers).
+On the Signing & Capabilities tab in the project editor, add the Game Controllers capability to your project and check Directional Gamepad under Game Controllers. For more information, see [Configuring game controllers](../Xcode/configuring-game-controllers.md).
 
-On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportsmultiplemicrogamepads) key and set the value to `YES`. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
+On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](../BundleResources/information-property-list/gcsupportsmultiplemicrogamepads.md) key and set the value to `YES`. For more information, see [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md).
 
-##### Handle Multiple Micro Gamepads
+##### Handle multiple micro gamepads
 
-In your code, handle multiple micro gamepad connections. When a game controller connects, check if the controller is a directional gamepad using the [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) method:
+In your code, handle multiple micro gamepad connections. When a game controller connects, check if the controller is a directional gamepad using the [`isKind(of:)`](../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) method:
 
 ```swift
 if controller.microGamepad isKind(of: GCDirectionalGamepad.class) {
@@ -26,7 +27,7 @@ if controller.microGamepad isKind(of: GCDirectionalGamepad.class) {
 }
 ```
 
-Check if the device category is second-generation Siri Remote using the [`productCategory`](gcdevice/productcategory.md) property:
+Check if the device category is second-generation Siri Remote using the [`productCategory`](./gcdevice/productcategory.md) property:
 
 ```swift
 if device.productCategory == GCProductCategorySiriRemote2ndGen {
@@ -36,21 +37,21 @@ if device.productCategory == GCProductCategorySiriRemote2ndGen {
 
 If these conditions are true, you can use the connected second-generation Siri Remote as a game controller.
 
-##### Access the Remote Buttons and Directional Pad
+##### Access the remote buttons and directional pad
 
-To access the center button of the second-generation Siri Remote, use the [`buttons`](gcdevicephysicalinputstate/buttons-3257g.md) property:
+To access the center button of the second-generation Siri Remote, use the [`buttons`](./gcdevicephysicalinputstate/buttons-3257g.md) property:
 
 ```swift
 controller.physicalInputProfile.buttons[GCInputDirectionalCenterButton]
 ```
 
-Then to access the directional pad, use the [`dpads`](gcdevicephysicalinputstate/dpads-5yr9x.md) property:
+Then to access the directional pad, use the [`dpads`](./gcdevicephysicalinputstate/dpads-5yr9x.md) property:
 
 ```swift
 controller.physicalInputProfile.dpads[GCInputDirectionalCardinalDpad]
 ```
 
-If your game requires an analog touch surface, check whether the directional pad is digital using the [`isAnalog`](gccontrollerelement/isanalog.md) property:
+If your game requires an analog touch surface, check whether the directional pad is digital using the [`isAnalog`](./gccontrollerelement/isanalog.md) property:
 
 ```swift
 if physicalInputProfile.dpads[GCInputDirectionalDpad].isAnalog == false
@@ -60,21 +61,22 @@ For example, the Universal Electronic remote that works with Apple TV is a direc
 
 ## See Also
 
-- [Supporting Game Controllers](supporting-game-controllers.md)
+### Game controllers
+- [Supporting Game Controllers](./supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
   Receive controller and stylus input to interact with content in your augmented reality app.
-- [protocol GCDevice](gcdevice.md)
+- [protocol GCDevice](./gcdevice.md)
   A protocol that defines a common interface for game input devices.
-- [class GCController](gccontroller.md)
+- [class GCController](./gccontroller.md)
   A representation of a real game controller, a virtual controller, or a snapshot of a controller.
-- [class GCRacingWheel](gcracingwheel.md)
+- [class GCRacingWheel](./gcracingwheel.md)
   An object that represents a physical racing wheel controller connected to a device.
-- [class GCKeyboard](gckeyboard.md)
+- [class GCKeyboard](./gckeyboard.md)
   An object that represents a physical keyboard connected to a device.
-- [class GCMouse](gcmouse.md)
+- [class GCMouse](./gcmouse.md)
   An object that represents a physical mouse connected to a device.
-- [class GCStylus](gcstylus.md)
+- [class GCStylus](./gcstylus.md)
   An object that represents a physical stylus connected to the device.
 
 

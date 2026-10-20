@@ -1,7 +1,8 @@
 # AVCaptureDevice.Format.AutoFocusSystem
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of auto focus systems.
 
@@ -18,31 +19,36 @@ An enumeration of auto focus systems.
 enum AutoFocusSystem
 ```
 
+```c
+enum AVCaptureAutoFocusSystem : NSInteger;
+```
+
 ## Topics
 
 ### Systems
-- [AVCaptureDevice.Format.AutoFocusSystem.none](avcapturedevice/format/autofocussystem-swift.enum/none.md)
+- [AVCaptureDevice.Format.AutoFocusSystem.none](./autofocussystem-swift.enum/none.md)
   Autofocus isn’t available.
-- [AVCaptureDevice.Format.AutoFocusSystem.contrastDetection](avcapturedevice/format/autofocussystem-swift.enum/contrastdetection.md)
+- [AVCaptureDevice.Format.AutoFocusSystem.contrastDetection](./autofocussystem-swift.enum/contrastdetection.md)
   A slower autofocus system based on differences in contrast.
-- [AVCaptureDevice.Format.AutoFocusSystem.phaseDetection](avcapturedevice/format/autofocussystem-swift.enum/phasedetection.md)
+- [AVCaptureDevice.Format.AutoFocusSystem.phaseDetection](./autofocussystem-swift.enum/phasedetection.md)
   A faster autofoscus system based on differences in light phase.
 ### Initializers
-- [init?(rawValue: Int)](avcapturedevice/format/autofocussystem-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./autofocussystem-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var autoFocusSystem: AVCaptureDevice.Format.AutoFocusSystem](avcapturedevice/format/autofocussystem-swift.property.md)
+### Determining the auto focus system
+- [var autoFocusSystem: AVCaptureDevice.Format.AutoFocusSystem](./autofocussystem-swift.property.md)
   The auto focus system the format uses.
 
 

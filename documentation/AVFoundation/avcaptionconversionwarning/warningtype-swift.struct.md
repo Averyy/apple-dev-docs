@@ -1,7 +1,8 @@
 # AVCaptionConversionWarning.WarningType
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of a caption conversion warning.
 
@@ -17,33 +18,38 @@ The type of a caption conversion warning.
 struct WarningType
 ```
 
+```c
+typedef NSString * AVCaptionConversionWarningType;
+```
+
 ## Topics
 
 ### Warning types
-- [static let excessMediaData: AVCaptionConversionWarning.WarningType](avcaptionconversionwarning/warningtype-swift.struct/excessmediadata.md)
+- [static let excessMediaData: AVCaptionConversionWarning.WarningType](./warningtype-swift.struct/excessmediadata.md)
   A type that indicates one or more captions exceed the media data capacity for media of the type and subtype that the conversion settings specify.
 ### Initializers
-- [init(rawValue: String)](avcaptionconversionwarning/warningtype-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./warningtype-swift.struct/init%28rawvalue%29.md)
   Creates a warning type with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var warningType: AVCaptionConversionWarning.WarningType](avcaptionconversionwarning/warningtype-swift.property.md)
+### Inspecting the warning
+- [var warningType: AVCaptionConversionWarning.WarningType](./warningtype-swift.property.md)
   A type that indicates the nature of the validation warning.
-- [var rangeOfCaptions: NSRange](avcaptionconversionwarning/rangeofcaptions.md)
+- [var rangeOfCaptions: NSRange](./rangeofcaptions.md)
   The range of the captions for which the system issued a warning.
-- [var adjustment: AVCaptionConversionAdjustment?](avcaptionconversionwarning/adjustment.md)
+- [var adjustment: AVCaptionConversionAdjustment?](./adjustment.md)
   A correction the converter makes when it converts a caption to a specific format.
-- [class AVCaptionConversionAdjustment](avcaptionconversionadjustment.md)
+- [class AVCaptionConversionAdjustment](../avcaptionconversionadjustment.md)
   An object that describes an adjustment to correct a problem found during validation of a caption conversion.
 
 

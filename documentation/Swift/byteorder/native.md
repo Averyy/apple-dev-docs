@@ -1,7 +1,8 @@
 # native
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The native byte ordering for the runtime target.
 

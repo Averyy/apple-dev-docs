@@ -1,7 +1,8 @@
 # secondaryAttributedText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed variant of the secondary text.
 
@@ -10,7 +11,7 @@ An attributed variant of the secondary text.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

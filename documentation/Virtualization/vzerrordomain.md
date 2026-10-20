@@ -1,7 +1,8 @@
 # VZErrorDomain
 
 **Framework**: Virtualization  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for the Virtualization framework.
 
@@ -14,9 +15,14 @@ The error domain for the Virtualization framework.
 let VZErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const VZErrorDomain;
+```
+
 ## See Also
 
-- [struct VZError](vzerror.md)
+### Errors
+- [struct VZError](./vzerror.md)
   Errors that you might encounter when configuring or using a VM.
 
 

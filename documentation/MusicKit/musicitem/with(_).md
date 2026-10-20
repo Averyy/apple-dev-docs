@@ -1,7 +1,8 @@
 # with(_:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a new instance of the music item that includes the specified properties.
 
@@ -19,6 +20,8 @@ Loads a new instance of the music item that includes the specified properties.
 ```swift
 func with(_ properties: [PartialMusicAsyncProperty<Self>]) async throws -> Self
 ```
+
+Available when `Self` conforms to `MusicPropertyContainer` and `Decodable`.
 
 #### Discussion
 

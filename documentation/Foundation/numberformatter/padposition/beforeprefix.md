@@ -1,7 +1,8 @@
 # NumberFormatter.PadPosition.beforePrefix
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the padding should occur before the prefix.
 
@@ -20,13 +21,18 @@ Specifies that the padding should occur before the prefix.
 case beforePrefix
 ```
 
+```c
+NSNumberFormatterPadBeforePrefix
+```
+
 ## See Also
 
-- [NumberFormatter.PadPosition.afterPrefix](numberformatter/padposition/afterprefix.md)
+### Constants
+- [NumberFormatter.PadPosition.afterPrefix](./afterprefix.md)
   Specifies that the padding should occur after the prefix.
-- [NumberFormatter.PadPosition.beforeSuffix](numberformatter/padposition/beforesuffix.md)
+- [NumberFormatter.PadPosition.beforeSuffix](./beforesuffix.md)
   Specifies that the padding should occur before the suffix.
-- [NumberFormatter.PadPosition.afterSuffix](numberformatter/padposition/aftersuffix.md)
+- [NumberFormatter.PadPosition.afterSuffix](./aftersuffix.md)
   Specifies that the padding should occur after the suffix.
 
 

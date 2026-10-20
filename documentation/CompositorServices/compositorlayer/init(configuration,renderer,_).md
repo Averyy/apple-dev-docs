@@ -1,10 +1,11 @@
 # init(configuration:renderer:_:)
 
 **Framework**: Compositor Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 

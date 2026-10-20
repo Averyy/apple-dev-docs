@@ -1,7 +1,8 @@
 # textureMapping
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Texture mapping that describes how each section of the video frame maps into the calibration.
 

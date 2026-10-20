@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The background tasks error domain as a string.
 
@@ -18,11 +19,16 @@ The background tasks error domain as a string.
 class let errorDomain: String
 ```
 
+```c
+extern NSErrorDomain const BGTaskSchedulerErrorDomain;
+```
+
 ## See Also
 
-- [BGTaskScheduler.Error](bgtaskscheduler/error.md)
+### Handling errors
+- [BGTaskScheduler.Error](./error.md)
   The Errors for the `BGTaskSchedulerError` domain.
-- [BGTaskScheduler.Error.Code](bgtaskscheduler/error/code.md)
+- [BGTaskScheduler.Error.Code](./error/code.md)
   An enumeration of the task scheduling errors.
 
 

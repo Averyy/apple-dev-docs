@@ -1,7 +1,8 @@
 # compositionTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time for which to compose the frame.
 
@@ -19,11 +20,16 @@ A time for which to compose the frame.
 var compositionTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime compositionTime;
+```
+
 ## See Also
 
-- [var renderContext: AVVideoCompositionRenderContext](avasynchronousvideocompositionrequest/rendercontext.md)
+### Inspecting the request
+- [var renderContext: AVVideoCompositionRenderContext](./rendercontext.md)
   The rendering context of the video composition.
-- [var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol](avasynchronousvideocompositionrequest/videocompositioninstruction.md)
+- [var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol](./videocompositioninstruction.md)
   A video composition instruction that indicates how to compose the frame.
 
 

@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of actions associated with this navigation alert.
 
@@ -14,6 +15,10 @@ The array of actions associated with this navigation alert.
 
 ```swift
 var actions: [CPAlertAction] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPAlertAction *> * actions;
 ```
 
 #### Discussion

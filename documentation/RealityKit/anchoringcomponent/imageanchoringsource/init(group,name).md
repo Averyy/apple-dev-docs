@@ -1,7 +1,8 @@
 # init(group:name:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the image anchoring source by group and name in AR Resources.
 

@@ -1,32 +1,34 @@
 # GetEntities
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSArray> GetEntities() const;
 ```
 
 ## See Also
 
-- [AbortDeviceConfigurationChange](iousermididevice/abortdeviceconfigurationchange.md)
-- [AddEntity](iousermididevice/addentity.md)
-- [GetBaseClassID](iousermididevice/getbaseclassid.md)
-- [GetClassID](iousermididevice/getclassid.md)
-- [GetDeviceIsRunning](iousermididevice/getdeviceisrunning.md)
-- [PerformDeviceConfigurationChange](iousermididevice/performdeviceconfigurationchange.md)
-- [RemoveEntity](iousermididevice/removeentity.md)
-- [RequestDeviceConfigurationChange](iousermididevice/requestdeviceconfigurationchange.md)
-- [SetProperties](iousermididevice/setproperties.md)
-- [StartIO](iousermididevice/startio.md)
-- [StopIO](iousermididevice/stopio.md)
-- [free](iousermididevice/free.md)
-- [init](iousermididevice/init.md)
+### Instance Methods
+- [AbortDeviceConfigurationChange](./abortdeviceconfigurationchange.md)
+- [AddEntity](./addentity.md)
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [GetDeviceIsRunning](./getdeviceisrunning.md)
+- [PerformDeviceConfigurationChange](./performdeviceconfigurationchange.md)
+- [RemoveEntity](./removeentity.md)
+- [RequestDeviceConfigurationChange](./requestdeviceconfigurationchange.md)
+- [SetProperties](./setproperties.md)
+- [StartIO](./startio.md)
+- [StopIO](./stopio.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

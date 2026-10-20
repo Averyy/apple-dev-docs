@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a mapping model initialized from a given URL.
 
@@ -10,7 +11,7 @@ Returns a mapping model initialized from a given URL.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a mapping model initialized from a given URL.
 
 ```swift
 init?(contentsOf url: URL?)
+```
+
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ A mapping model initialized from `url`.
 
 ## See Also
 
-- [init?(from: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](nsmappingmodel/init(from:forsourcemodel:destinationmodel:).md)
+### Creating a Mapping
+- [init?(from: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](./init%28from,forsourcemodel,destinationmodel%29.md)
   Returns the mapping model that will translate data from the source to the destination model.
-- [class func inferredMappingModel(forSourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel](nsmappingmodel/inferredmappingmodel(forsourcemodel:destinationmodel:).md)
+- [class func inferredMappingModel(forSourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel](./inferredmappingmodel%28forsourcemodel,destinationmodel%29.md)
   Returns a newly created mapping model that will migrate data from the source to the destination model.
 
 

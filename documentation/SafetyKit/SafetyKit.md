@@ -1,7 +1,8 @@
 # SafetyKit
 
 **Framework**: SafetyKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Detect and respond to car crash events in your app.
 
@@ -20,46 +21,46 @@ SafetyKit supports three crash scenarios. In each scenario, Apple is the first p
 
 The first scenario has first-party Emergency SOS turned off and third-party sharing turned on. When the device detects a crash, a critical alert occurs and the third party receives the crash information.
 
-![A timeline titled “first-party Emergency SOS turned off with third-party sharing” shows a sequence of events. When the device detects a crash, a critical alert occurs, and the third party receives the crash information.](/images/com.apple.safetykit/media-4257130@2x.png)
+![A timeline titled “first-party Emergency SOS turned off with third-party sharing” shows a sequence of events. When the device detects a crash, a critical alert occurs, and the third party receives the crash information.](https://developer.apple.com/tutorials/images/com.apple.safetykit/media-4257130@2x.png)
 
 In the second scenario, first-party Emergency SOS and third-party sharing are turned on. When the device detects a crash, the first-party Emergency SOS runs automatically. After the first party completes its procedures, a critical alert occurs and the third party receives the crash information.
 
-![A timeline titled “first-party Emergency SOS turned on with third-party sharing” shows a sequence of events. When the device detects a crash, the first-party SOS runs automatically. A critical alert occurs and the third party receives the crash information.](/images/com.apple.safetykit/media-4257129@2x.png)
+![A timeline titled “first-party Emergency SOS turned on with third-party sharing” shows a sequence of events. When the device detects a crash, the first-party SOS runs automatically. A critical alert occurs and the third party receives the crash information.](https://developer.apple.com/tutorials/images/com.apple.safetykit/media-4257129@2x.png)
 
 In the third scenario, first-party Emergency SOS is turned on and there’s no third-party sharing. When the device detects a crash, the first-party Emergency SOS runs automatically.
 
-![A timeline titled “first-party Emergency SOS only” shows a sequence of events. A device detects a crash, then the first-party SOS runs automatically.](/images/com.apple.safetykit/media-4257131@2x.png)
+![A timeline titled “first-party Emergency SOS only” shows a sequence of events. A device detects a crash, then the first-party SOS runs automatically.](https://developer.apple.com/tutorials/images/com.apple.safetykit/media-4257131@2x.png)
 
-> ❗ **Important**:  Crash Detection requires the [`com.apple.developer.severe-vehicular-crash-event`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.severe-vehicular-crash-event) entitlement. To apply for this entitlement, see [`Request Access to the Vehicular Crash Event Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).
+> ❗ **Important**:  Crash Detection requires the [`com.apple.developer.severe-vehicular-crash-event`](../BundleResources/entitlements/com.apple.developer.severe-vehicular-crash-event.md) entitlement. To apply for this entitlement, see [Request Access to the Vehicular Crash Event Entitlement](https://developer.apple.com/contact/request/vehicular-crash-events/).
 
-To support Crash Detection, use [`SACrashDetectionManager`](sacrashdetectionmanager.md) to determine whether it’s available and if so, ask permission to allow your app to receive crash events. Then set [`delegate`](sacrashdetectionmanager/delegate.md) to the object that receives the events. Only one app on the device can receive Crash Detection events.
+To support Crash Detection, use [`SACrashDetectionManager`](./sacrashdetectionmanager.md) to determine whether it’s available and if so, ask permission to allow your app to receive crash events. Then set [`delegate`](./sacrashdetectionmanager/delegate.md) to the object that receives the events. Only one app on the device can receive Crash Detection events.
 
-If your app receives a Crash Detection event, use [`SAEmergencyResponseManager`](saemergencyresponsemanager.md) to provide assistance.
+If your app receives a Crash Detection event, use [`SAEmergencyResponseManager`](./saemergencyresponsemanager.md) to provide assistance.
 
 ## Topics
 
 ### Detecting a crash
-- [class SACrashDetectionManager](sacrashdetectionmanager.md)
+- [class SACrashDetectionManager](./sacrashdetectionmanager.md)
   Provides registration and management of Crash Detection events.
-- [enum SAAuthorizationStatus](saauthorizationstatus.md)
+- [enum SAAuthorizationStatus](./saauthorizationstatus.md)
   An enumeration that represents the current Crash Detection event authorization state.
-- [class SACrashDetectionEvent](sacrashdetectionevent.md)
+- [class SACrashDetectionEvent](./sacrashdetectionevent.md)
   Describes the information about a vehicular crash.
-- [protocol SACrashDetectionDelegate](sacrashdetectiondelegate.md)
+- [protocol SACrashDetectionDelegate](./sacrashdetectiondelegate.md)
   The protocol that an object adopts to receive Crash Detection events and changes to the authorization status.
 ### Responding to a crash
-- [class SAEmergencyResponseManager](saemergencyresponsemanager.md)
+- [class SAEmergencyResponseManager](./saemergencyresponsemanager.md)
   Provides actions in response to a Crash Detection event.
-- [protocol SAEmergencyResponseDelegate](saemergencyresponsedelegate.md)
+- [protocol SAEmergencyResponseDelegate](./saemergencyresponsedelegate.md)
   The interface for receiving updates about a requested emergency response action.
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+- [SACrashDetectionEvent.Response](./sacrashdetectionevent/response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
 ### Handling errors
-- [let SAErrorDomain: String](saerrordomain.md)
+- [let SAErrorDomain: String](./saerrordomain.md)
   The domain for error objects that SafetyKit produces.
-- [SAError.Code](saerror/code.md)
+- [SAError.Code](./saerror/code.md)
   Codes for identifying errors in SafetyKit.
-- [struct SAError](saerror.md)
+- [struct SAError](./saerror.md)
   An error reported by SafetyKit.
 
 

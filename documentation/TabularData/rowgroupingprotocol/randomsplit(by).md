@@ -1,7 +1,8 @@
 # randomSplit(by:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates two row groupings by randomly splitting the original with a proportion.
 
@@ -26,7 +27,8 @@ A tuple of two row groupings.
 
 ## See Also
 
-- [func randomSplit(by: Double, seed: Int?) -> (Self, Self)](rowgroupingprotocol/randomsplit(by:seed:).md)
+### Splitting a Row Grouping
+- [func randomSplit(by: Double, seed: Int?) -> (Self, Self)](./randomsplit%28by,seed%29.md)
   Generates two row groupings by randomly splitting the original by a proportion.
 
 

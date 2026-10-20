@@ -1,7 +1,8 @@
 # destructive
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The action performs a destructive task.
 
@@ -19,9 +20,13 @@ The action performs a destructive task.
 static var destructive: UNNotificationActionOptions { get }
 ```
 
+```c
+UNNotificationActionOptionDestructive
+```
+
 ## Mentions
 
-- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
+- [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ Use this option for actions that delete user data or change the app irrevocably.
 
 ## See Also
 
-- [static var authenticationRequired: UNNotificationActionOptions](unnotificationactionoptions/authenticationrequired.md)
+### Constants
+- [static var authenticationRequired: UNNotificationActionOptions](./authenticationrequired.md)
   The action can be performed only on an unlocked device.
-- [static var foreground: UNNotificationActionOptions](unnotificationactionoptions/foreground.md)
+- [static var foreground: UNNotificationActionOptions](./foreground.md)
   The action causes the app to launch in the foreground.
 
 

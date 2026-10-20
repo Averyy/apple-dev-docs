@@ -1,7 +1,8 @@
 # |=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Stores the result of performing a bitwise OR operation on the two given values in the left-hand-side variable.
 

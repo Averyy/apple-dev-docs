@@ -1,7 +1,8 @@
 # performBatchUpdates(_:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Animates multiple insert, delete, reload, and move operations as a group.
 
@@ -9,7 +10,7 @@ Animates multiple insert, delete, reload, and move operations as a group.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,32 +19,37 @@ Animates multiple insert, delete, reload, and move operations as a group.
 func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 ```
 
+```objc
+- (void) performBatchUpdates:(void (^)()) updates completion:(void (^)(BOOL finished)) completion;
+```
+
 #### Discussion
 
 You can use this method in cases where you want to make multiple changes to the collection view in one single animated operation, as opposed to in several separate animations. You might use this method to insert, delete, reload, or move cells or use it to change the layout parameters associated with one or more cells. Use the block passed in the `updates` parameter to specify all of the operations you want to perform.
 
-If the collection view’s layout isn’t up to date before you call this method, a reload may occur. To avoid problems, you should update your data model inside the `updates` block or ensure the layout is updated before you call [`performBatchUpdates(_:completion:)`](uicollectionview/performbatchupdates(_:completion:).md).
+If the collection view’s layout isn’t up to date before you call this method, a reload may occur. To avoid problems, you should update your data model inside the `updates` block or ensure the layout is updated before you call [`performBatchUpdates(_:completion:)`](./performbatchupdates%28_,completion%29.md).
 
 Deletes are processed before inserts in batch operations. This means the indexes for the deletions are processed relative to the indexes of the collection view’s state before the batch operation, and the indexes for the insertions are processed relative to the indexes of the state after all the deletions in the batch operation.
 
 ## Parameters
 
 - `updates`: The block that performs the relevant insert, delete, reload, or move operations.
-- `completion`: A completion handler block to execute when all of the operations finish. This block takes a single Boolean parameter that contains the value [`true`](https://developer.apple.com/documentation/swift/true) if all of the related animations completed successfully or [`false`](https://developer.apple.com/documentation/swift/false) if they were interrupted. This parameter may be `nil`.
+- `completion`: A completion handler block to execute when all of the operations finish. This block takes a single Boolean parameter that contains the value [`true`](../../Swift/true.md) if all of the related animations completed successfully or [`false`](../../Swift/false.md) if they were interrupted. This parameter may be `nil`.
 
 ## See Also
 
-- [func deleteItems(at: [IndexPath])](uicollectionview/deleteitems(at:).md)
+### Related Documentation
+- [func deleteItems(at: [IndexPath])](./deleteitems%28at%29.md)
   Deletes the items at the specified index paths.
-- [func moveSection(Int, toSection: Int)](uicollectionview/movesection(_:tosection:).md)
+- [func moveSection(Int, toSection: Int)](./movesection%28_,tosection%29.md)
   Moves a section from one location to another in the collection view.
-- [func moveItem(at: IndexPath, to: IndexPath)](uicollectionview/moveitem(at:to:).md)
+- [func moveItem(at: IndexPath, to: IndexPath)](./moveitem%28at,to%29.md)
   Moves an item from one location to another in the collection view.
-- [func insertItems(at: [IndexPath])](uicollectionview/insertitems(at:).md)
+- [func insertItems(at: [IndexPath])](./insertitems%28at%29.md)
   Inserts new items at the specified index paths.
-- [func insertSections(IndexSet)](uicollectionview/insertsections(_:).md)
+- [func insertSections(IndexSet)](./insertsections%28_%29.md)
   Inserts new sections at the specified indexes.
-- [func deleteSections(IndexSet)](uicollectionview/deletesections(_:).md)
+- [func deleteSections(IndexSet)](./deletesections%28_%29.md)
   Deletes the sections at the specified indexes.
 
 

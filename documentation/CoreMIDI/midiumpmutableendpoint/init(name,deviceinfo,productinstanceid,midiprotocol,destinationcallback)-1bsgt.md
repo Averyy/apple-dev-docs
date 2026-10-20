@@ -1,7 +1,8 @@
 # init(name:deviceInfo:productInstanceID:midiProtocol:destinationCallback:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init?(name: String, deviceInfo: MIDI2DeviceInfo, productInstanceID: String, midiProtocol MIDIProtocol: MIDIProtocolID, destinationCallback: @escaping MIDIReceiveBlock)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name deviceInfo:(MIDI2DeviceInfo *) deviceInfo productInstanceID:(NSString *) productInstanceID MIDIProtocol:(MIDIProtocolID) MIDIProtocol destinationCallback:(MIDIReceiveBlock) destinationCallback;
 ```
 
 

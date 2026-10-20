@@ -1,7 +1,8 @@
 # deleteCredential(_:)
 
 **Framework**: SecureElementCredential  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a credential on the Secure Element.
 
@@ -17,11 +18,13 @@ func deleteCredential(_ credential: CredentialSession.Credential) async throws
 
 ## Mentions
 
-- [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
+- [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
 #### Discussion
 
-- The most common errors are: - [`CredentialSession.ErrorCode.invalidSessionState`](credentialsession/errorcode/invalidsessionstate.md): The session isn’t in the [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) state.
+- The most common errors are:
+
+  - [`CredentialSession.ErrorCode.invalidSessionState`](./errorcode/invalidsessionstate.md): The session isn’t in the [`CredentialSession.State.management`](./state-swift.enum/management.md) state.
 
 ## Parameters
 
@@ -29,7 +32,8 @@ func deleteCredential(_ credential: CredentialSession.Credential) async throws
 
 ## See Also
 
-- [func provisionCredential(configurationUUID: UUID, name: String) async throws -> CredentialSession.Credential](credentialsession/provisioncredential(configurationuuid:name:).md)
+### Managing a credential
+- [func provisionCredential(configurationUUID: UUID, name: String) async throws -> CredentialSession.Credential](./provisioncredential%28configurationuuid,name%29.md)
   Creates a credential in the Secure Element.
 
 

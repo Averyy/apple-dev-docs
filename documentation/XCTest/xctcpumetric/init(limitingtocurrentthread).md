@@ -1,7 +1,8 @@
 # init(limitingToCurrentThread:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a CPU metric that optionally records data only for the current thread.
 
@@ -19,6 +20,10 @@ Creates a CPU metric that optionally records data only for the current thread.
 init(limitingToCurrentThread limitToCurrentThread: Bool)
 ```
 
+```objc
+- (instancetype) initLimitingToCurrentThread:(BOOL) limitToCurrentThread;
+```
+
 #### Discussion
 
 If `limitToCurrentThread` is `true`, the returned metric only records data related to CPU use on the current thread. In a single-threaded context, a thread-limited metric provides lower variance and greater precision than a whole-process metric.
@@ -29,9 +34,10 @@ If `limitToCurrentThread` is `true`, the returned metric only records data relat
 
 ## See Also
 
-- [init()](xctcpumetric/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a CPU metric that records data for the current process.
-- [init(application: XCUIApplication)](xctcpumetric/init(application:).md)
+- [init(application: XCUIApplication)](./init%28application%29.md)
   Creates a CPU metric that records data for the requested app.
 
 

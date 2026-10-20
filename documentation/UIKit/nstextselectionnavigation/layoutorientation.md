@@ -1,7 +1,8 @@
 # NSTextSelectionNavigation.LayoutOrientation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the possible layout orientations.
 
@@ -18,33 +19,38 @@ Values that describe the possible layout orientations.
 enum LayoutOrientation
 ```
 
+```c
+enum NSTextSelectionNavigationLayoutOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Layout orientations
-- [NSTextSelectionNavigation.LayoutOrientation.horizontal](nstextselectionnavigation/layoutorientation/horizontal.md)
+- [NSTextSelectionNavigation.LayoutOrientation.horizontal](./layoutorientation/horizontal.md)
   The value that defines horizontal layout orientation.
-- [NSTextSelectionNavigation.LayoutOrientation.vertical](nstextselectionnavigation/layoutorientation/vertical.md)
+- [NSTextSelectionNavigation.LayoutOrientation.vertical](./layoutorientation/vertical.md)
   The value that defines vertical layout orientation.
 ### Initializers
-- [init?(rawValue: Int)](nstextselectionnavigation/layoutorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./layoutorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func baseWritingDirection(at: any NSTextLocation) -> NSTextSelectionNavigation.WritingDirection](nstextselectiondatasource/basewritingdirection(at:).md)
+### Changing the characteristics of the selection
+- [func baseWritingDirection(at: any NSTextLocation) -> NSTextSelectionNavigation.WritingDirection](../nstextselectiondatasource/basewritingdirection%28at%29.md)
   Returns the base writing direction at the location you specify.
-- [NSTextSelectionNavigation.WritingDirection](nstextselectionnavigation/writingdirection.md)
+- [NSTextSelectionNavigation.WritingDirection](./writingdirection.md)
   Values that describe the writing direction inside a text selection.
-- [func textLayoutOrientation(at: any NSTextLocation) -> NSTextSelectionNavigation.LayoutOrientation](nstextselectiondatasource/textlayoutorientation(at:).md)
+- [func textLayoutOrientation(at: any NSTextLocation) -> NSTextSelectionNavigation.LayoutOrientation](../nstextselectiondatasource/textlayoutorientation%28at%29.md)
   Returns the layout orientation at the location you specify.
 
 

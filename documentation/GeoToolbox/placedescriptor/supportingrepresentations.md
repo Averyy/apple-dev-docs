@@ -1,7 +1,8 @@
 # supportingRepresentations
 
 **Framework**: GeoToolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of proprietary or non-uniform representations of the place, such as representations you can use with other mapping services.
 
@@ -26,15 +27,16 @@ This is an array of possible mapping service providers you can use in place of, 
 
 ## See Also
 
-- [let commonName: String?](placedescriptor/commonname.md)
+### Getting the attributes of a place descriptor
+- [let commonName: String?](./commonname.md)
   Publicly known name of the area or place of interest.
-- [var address: String?](placedescriptor/address.md)
+- [var address: String?](./address.md)
   A full address, that one could use in postal or administrative scenarios.
-- [var coordinate: CLLocationCoordinate2D?](placedescriptor/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D?](./coordinate.md)
   The latitude and longitude for a place.
-- [let representations: [PlaceDescriptor.PlaceRepresentation]](placedescriptor/representations.md)
+- [let representations: [PlaceDescriptor.PlaceRepresentation]](./representations.md)
   An array of representations of the place using common mapping concepts.
-- [func serviceIdentifier(for: String) -> String?](placedescriptor/serviceidentifier(for:).md)
+- [func serviceIdentifier(for: String) -> String?](./serviceidentifier%28for%29.md)
   Retrieves the identifier for the specified service provider, if available.
 
 

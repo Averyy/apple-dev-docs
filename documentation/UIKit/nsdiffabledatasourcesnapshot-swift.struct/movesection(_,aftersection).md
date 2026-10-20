@@ -1,7 +1,8 @@
 # moveSection(_:afterSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the section from its current position in the snapshot to the position immediately after the specified section.
 
@@ -10,7 +11,7 @@ Moves the section from its current position in the snapshot to the position imme
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,11 +26,12 @@ mutating func moveSection(_ identifier: SectionIdentifierType, afterSection toId
 
 ## See Also
 
-- [func moveItem(ItemIdentifierType, afterItem: ItemIdentifierType)](nsdiffabledatasourcesnapshot-swift.struct/moveitem(_:afteritem:).md)
+### Reordering items and sections
+- [func moveItem(ItemIdentifierType, afterItem: ItemIdentifierType)](./moveitem%28_,afteritem%29.md)
   Moves the item from its current position in the snapshot to the position immediately after the specified item.
-- [func moveItem(ItemIdentifierType, beforeItem: ItemIdentifierType)](nsdiffabledatasourcesnapshot-swift.struct/moveitem(_:beforeitem:).md)
+- [func moveItem(ItemIdentifierType, beforeItem: ItemIdentifierType)](./moveitem%28_,beforeitem%29.md)
   Moves the item from its current position in the snapshot to the position immediately before the specified item.
-- [func moveSection(SectionIdentifierType, beforeSection: SectionIdentifierType)](nsdiffabledatasourcesnapshot-swift.struct/movesection(_:beforesection:).md)
+- [func moveSection(SectionIdentifierType, beforeSection: SectionIdentifierType)](./movesection%28_,beforesection%29.md)
   Moves the section from its current position in the snapshot to the position immediately before the specified section.
 
 

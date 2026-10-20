@@ -1,7 +1,8 @@
 # kSecSignatureAttributeName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The cryptographic signature associated with a transform.
 
@@ -13,6 +14,10 @@ The cryptographic signature associated with a transform.
 
 ```swift
 let kSecSignatureAttributeName: CFString
+```
+
+```c
+extern CFStringRef const kSecSignatureAttributeName;
 ```
 
 

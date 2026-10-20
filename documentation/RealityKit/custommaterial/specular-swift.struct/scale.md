@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specular value for the entire entity or a multiplier for values sampled from the material’s texture.
 
@@ -20,11 +21,12 @@ var scale: Float
 
 #### Discussion
 
-If [`texture`](custommaterial/specular-swift.struct/texture.md) is `nil`, RealityKit uses this value for the opacity of the entire material. If [`texture`](custommaterial/specular-swift.struct/texture.md) isn’t `nil`, RealityKit multiplies the value sampled from [`texture`](custommaterial/specular-swift.struct/texture.md) by this property to calculate the final opacity values.
+If [`texture`](./texture.md) is `nil`, RealityKit uses this value for the opacity of the entire material. If [`texture`](./texture.md) isn’t `nil`, RealityKit multiplies the value sampled from [`texture`](./texture.md) by this property to calculate the final opacity values.
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/specular-swift.struct/texture.md)
+### Accessing specular values
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The specular value as a UV-mapped image texture.
 
 

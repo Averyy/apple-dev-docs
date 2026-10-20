@@ -1,27 +1,29 @@
 # OSDataAppendBytes
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool OSDataAppendBytes(OSDataPtr data, const void *bytes, size_t length);
 ```
 
 ## See Also
 
-- [appendBytes](osdata/appendbytes-lbqa.md)
+### Appending Data to the Object
+- [appendBytes](./osdata/appendbytes-lbqa.md)
   Appends a buffer of bytes to the OSData object’s internal data buffer.
-- [appendBytes](osdata/appendbytes-38hs5.md)
+- [appendBytes](./osdata/appendbytes-38hs5.md)
   Appends a buffer of bytes to the OSData object’s internal data buffer.
-- [appendBytes](osdata/appendbytes-lbqa.md)
+- [appendBytes](./osdata/appendbytes-lbqa.md)
   Appends a buffer of bytes to the OSData object’s internal data buffer.
 
 

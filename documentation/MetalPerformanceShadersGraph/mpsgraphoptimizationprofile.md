@@ -1,7 +1,8 @@
 # MPSGraphOptimizationProfile
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The optimization profile used as a heuristic as the graph compiler optimizes the network.
 
@@ -19,25 +20,29 @@ The optimization profile used as a heuristic as the graph compiler optimizes the
 enum MPSGraphOptimizationProfile
 ```
 
+```c
+enum MPSGraphOptimizationProfile : uint64_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphOptimizationProfile.performance](mpsgraphoptimizationprofile/performance.md)
+- [MPSGraphOptimizationProfile.performance](./mpsgraphoptimizationprofile/performance.md)
   Default, graph optimized for performance.
-- [MPSGraphOptimizationProfile.powerEfficiency](mpsgraphoptimizationprofile/powerefficiency.md)
+- [MPSGraphOptimizationProfile.powerEfficiency](./mpsgraphoptimizationprofile/powerefficiency.md)
   Graph optimized for power efficiency.
 ### Initializers
-- [init?(rawValue: UInt64)](mpsgraphoptimizationprofile/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./mpsgraphoptimizationprofile/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

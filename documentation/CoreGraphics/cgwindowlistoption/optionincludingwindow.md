@@ -1,11 +1,12 @@
 # optionIncludingWindow
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,17 +14,22 @@
 static var optionIncludingWindow: CGWindowListOption { get }
 ```
 
+```c
+kCGWindowListOptionIncludingWindow
+```
+
 #### Discussion
 
-Include the specified window (from the `relativeToWindow` parameter) in the returned list. You must combine this option with the [`optionOnScreenAboveWindow`](cgwindowlistoption/optiononscreenabovewindow.md) or [`optionOnScreenBelowWindow`](cgwindowlistoption/optiononscreenbelowwindow.md) option to retrieve meaningful results.
+Include the specified window (from the `relativeToWindow` parameter) in the returned list. You must combine this option with the [`optionOnScreenAboveWindow`](./optiononscreenabovewindow.md) or [`optionOnScreenBelowWindow`](./optiononscreenbelowwindow.md) option to retrieve meaningful results.
 
 ## See Also
 
-- [static var excludeDesktopElements: CGWindowListOption](cgwindowlistoption/excludedesktopelements.md)
-- [static var optionAll: CGWindowListOption](cgwindowlistoption/optionall.md)
-- [static var optionOnScreenAboveWindow: CGWindowListOption](cgwindowlistoption/optiononscreenabovewindow.md)
-- [static var optionOnScreenBelowWindow: CGWindowListOption](cgwindowlistoption/optiononscreenbelowwindow.md)
-- [static var optionOnScreenOnly: CGWindowListOption](cgwindowlistoption/optiononscreenonly.md)
+### Type Properties
+- [static var excludeDesktopElements: CGWindowListOption](./excludedesktopelements.md)
+- [static var optionAll: CGWindowListOption](./optionall.md)
+- [static var optionOnScreenAboveWindow: CGWindowListOption](./optiononscreenabovewindow.md)
+- [static var optionOnScreenBelowWindow: CGWindowListOption](./optiononscreenbelowwindow.md)
+- [static var optionOnScreenOnly: CGWindowListOption](./optiononscreenonly.md)
 
 
 ---

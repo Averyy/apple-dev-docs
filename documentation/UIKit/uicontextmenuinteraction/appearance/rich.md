@@ -1,7 +1,8 @@
 # UIContextMenuInteraction.appearance.rich
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A modal menu with an optional preview.
 
@@ -18,11 +19,16 @@ A modal menu with an optional preview.
 case rich
 ```
 
+```c
+UIContextMenuInteractionAppearanceRich
+```
+
 ## See Also
 
-- [UIContextMenuInteraction.appearance.unknown](uicontextmenuinteraction/appearance/unknown.md)
+### Constants
+- [UIContextMenuInteraction.appearance.unknown](./unknown.md)
   No menu appearance.
-- [UIContextMenuInteraction.appearance.compact](uicontextmenuinteraction/appearance/compact.md)
+- [UIContextMenuInteraction.appearance.compact](./compact.md)
   A nonmodal, compact menu with no preview.
 
 

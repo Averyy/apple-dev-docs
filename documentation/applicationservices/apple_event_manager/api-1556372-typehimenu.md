@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var typeHIMenu: DescType](../coreservices/typehimenu.md)
-- [var typeHIWindow: DescType](../coreservices/typehiwindow.md)
+- [var typeHIMenu: DescType](../../coreservices/typehimenu.md)
+- [var typeHIWindow: DescType](../../coreservices/typehiwindow.md)
 
 
 ---

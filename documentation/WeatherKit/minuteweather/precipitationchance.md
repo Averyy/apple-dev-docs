@@ -1,7 +1,8 @@
 # precipitationChance
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The probability of precipitation in this minute.
 
@@ -26,9 +27,10 @@ The value is from `0` (no chance of precipitation) to `1` (100% chance of precip
 
 ## See Also
 
-- [var precipitation: Precipitation](minuteweather/precipitation.md)
+### Getting the precipitation
+- [var precipitation: Precipitation](./precipitation.md)
   A description of the precipitation for this minute.
-- [var precipitationIntensity: Measurement<UnitSpeed>](minuteweather/precipitationintensity.md)
+- [var precipitationIntensity: Measurement<UnitSpeed>](./precipitationintensity.md)
   The forecasted precipitation intensity.
 
 

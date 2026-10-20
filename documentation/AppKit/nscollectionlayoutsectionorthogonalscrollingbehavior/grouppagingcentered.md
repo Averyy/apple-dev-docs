@@ -1,7 +1,8 @@
 # NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The section allows users to page its content orthogonally one group at a time, centering each group.
 
@@ -14,17 +15,22 @@ The section allows users to page its content orthogonally one group at a time, c
 case groupPagingCentered
 ```
 
+```c
+NSCollectionLayoutSectionOrthogonalScrollingBehaviorGroupPagingCentered
+```
+
 ## See Also
 
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.none](nscollectionlayoutsectionorthogonalscrollingbehavior/none.md)
+### Enumeration Cases
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.none](./none.md)
   The section does not allow users to scroll its content orthogonally.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuous](nscollectionlayoutsectionorthogonalscrollingbehavior/continuous.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuous](./continuous.md)
   The section allows users to scroll its content orthogonally with continuous scrolling.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](nscollectionlayoutsectionorthogonalscrollingbehavior/continuousgroupleadingboundary.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](./continuousgroupleadingboundary.md)
   The section allows users to scroll its content orthogonally, coming to a natural stop at the leading boundary of the visible group.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.paging](nscollectionlayoutsectionorthogonalscrollingbehavior/paging.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.paging](./paging.md)
   The section allows users to page its content orthogonally.
-- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](nscollectionlayoutsectionorthogonalscrollingbehavior/grouppaging.md)
+- [NSCollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](./grouppaging.md)
   The section allows users to page its content orthogonally one group at a time.
 
 

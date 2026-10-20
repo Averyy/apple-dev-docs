@@ -1,7 +1,8 @@
 # appendSections(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the sections with the specified identifiers to the snapshot.
 
@@ -10,7 +11,7 @@ Adds the sections with the specified identifiers to the snapshot.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,9 +25,10 @@ mutating func appendSections(_ identifiers: [SectionIdentifierType])
 
 ## See Also
 
-- [init()](nsdiffabledatasourcesnapshot-swift.struct/init.md)
+### Creating a snapshot
+- [init()](./init%28%29.md)
   Creates an empty snapshot.
-- [func appendItems([ItemIdentifierType], toSection: SectionIdentifierType?)](nsdiffabledatasourcesnapshot-swift.struct/appenditems(_:tosection:).md)
+- [func appendItems([ItemIdentifierType], toSection: SectionIdentifierType?)](./appenditems%28_,tosection%29.md)
   Adds the items with the specified identifiers to the specified section of the snapshot.
 
 

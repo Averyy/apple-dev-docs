@@ -1,7 +1,8 @@
 # backgroundFetchIntervalMinimum
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The smallest fetch interval supported by the system.
 
@@ -18,9 +19,14 @@ The smallest fetch interval supported by the system.
 class let backgroundFetchIntervalMinimum: TimeInterval
 ```
 
+```c
+extern const NSTimeInterval UIApplicationBackgroundFetchIntervalMinimum;
+```
+
 ## See Also
 
-- [class let backgroundFetchIntervalNever: TimeInterval](uiapplication/backgroundfetchintervalnever.md)
+### Fetching content in the background
+- [class let backgroundFetchIntervalNever: TimeInterval](./backgroundfetchintervalnever.md)
   A fetch interval large enough to prevent fetch operations from occurring.
 
 

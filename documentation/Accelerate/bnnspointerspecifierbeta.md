@@ -1,7 +1,8 @@
 # BNNSPointerSpecifierBeta
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies the beta pointer.
 
@@ -20,9 +21,14 @@ A constant that specifies the beta pointer.
 var BNNSPointerSpecifierBeta: BNNSPointerSpecifier { get }
 ```
 
+```c
+BNNSPointerSpecifierBeta
+```
+
 ## See Also
 
-- [var BNNSPointerSpecifierAlpha: BNNSPointerSpecifier](bnnspointerspecifieralpha.md)
+### Pointer Specifier Constants
+- [var BNNSPointerSpecifierAlpha: BNNSPointerSpecifier](./bnnspointerspecifieralpha.md)
   A constant that specifies the alpha pointer.
 
 

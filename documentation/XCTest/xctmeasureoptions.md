@@ -1,7 +1,8 @@
 # XCTMeasureOptions
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Options to control the gathering of performance measurements during tests.
 
@@ -11,30 +12,34 @@ Options to control the gathering of performance measurements during tests.
 class XCTMeasureOptions
 ```
 
+```objc
+@interface XCTMeasureOptions : NSObject
+```
+
 ## Topics
 
 ### Getting Default Options
-- [class var `default`: XCTMeasureOptions](xctmeasureoptions/default.md)
+- [class var `default`: XCTMeasureOptions](./xctmeasureoptions/default.md)
   The default measurement options.
 ### Using Option Details
-- [var invocationOptions: XCTMeasureOptions.InvocationOptions](xctmeasureoptions/invocationoptions-swift.property.md)
+- [var invocationOptions: XCTMeasureOptions.InvocationOptions](./xctmeasureoptions/invocationoptions-swift.property.md)
   Options that define whether measurement is automatically or manually controlled.
-- [XCTMeasureOptions.InvocationOptions](xctmeasureoptions/invocationoptions-swift.struct.md)
+- [XCTMeasureOptions.InvocationOptions](./xctmeasureoptions/invocationoptions-swift.struct.md)
   Test measurement options that control how measurement starts and stops.
-- [var iterationCount: Int](xctmeasureoptions/iterationcount.md)
+- [var iterationCount: Int](./xctmeasureoptions/iterationcount.md)
   The number of times the performance test measures its block.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

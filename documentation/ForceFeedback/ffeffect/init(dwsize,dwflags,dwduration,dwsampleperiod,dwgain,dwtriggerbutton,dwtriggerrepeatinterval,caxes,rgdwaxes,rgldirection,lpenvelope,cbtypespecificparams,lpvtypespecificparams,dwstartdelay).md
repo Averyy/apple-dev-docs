@@ -1,7 +1,8 @@
 # init(dwSize:dwFlags:dwDuration:dwSamplePeriod:dwGain:dwTriggerButton:dwTriggerRepeatInterval:cAxes:rgdwAxes:rglDirection:lpEnvelope:cbTypeSpecificParams:lpvTypeSpecificParams:dwStartDelay:)
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init(dwSize: DWORD, dwFlags: DWORD, dwDuration: DWORD, dwSamplePeriod: DWORD, dw
 
 ## See Also
 
-- [init()](ffeffect/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

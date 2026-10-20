@@ -1,7 +1,8 @@
 # swing(twistAxis:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func swing(twistAxis: RotationAxis3DFloat) -> Rotation3DFloat
+```
+
+```c
+static SPRotation3DFloat SPRotation3DFloatSwing(SPRotation3DFloat rotation, SPRotationAxis3DFloat twistAxis);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # errorCorrectionLevel
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error correction level of the QR code symbol.
 
@@ -19,19 +20,24 @@ The error correction level of the QR code symbol.
 var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel { get }
 ```
 
+```objc
+@property (readonly) CIQRCodeErrorCorrectionLevel errorCorrectionLevel;
+```
+
 #### Discussion
 
 QR Codes support four levels of Reed-Solomon error correction.
 
-The possible error correction levels are enumerated in [`CIDataMatrixCodeDescriptor.ECCVersion`](cidatamatrixcodedescriptor/eccversion-swift.enum.md).
+The possible error correction levels are enumerated in [`CIDataMatrixCodeDescriptor.ECCVersion`](../cidatamatrixcodedescriptor/eccversion-swift.enum.md).
 
 ## See Also
 
-- [var errorCorrectedPayload: Data](ciqrcodedescriptor/errorcorrectedpayload-swift.property.md)
+### Examining a Descriptor
+- [var errorCorrectedPayload: Data](./errorcorrectedpayload-swift.property.md)
   The error-corrected codeword payload that comprises the QR code symbol.
-- [var symbolVersion: Int](ciqrcodedescriptor/symbolversion-swift.property.md)
+- [var symbolVersion: Int](./symbolversion-swift.property.md)
   The version of the QR code which corresponds to the size of the QR code symbol.
-- [var maskPattern: UInt8](ciqrcodedescriptor/maskpattern-swift.property.md)
+- [var maskPattern: UInt8](./maskpattern-swift.property.md)
   The data mask pattern for the QR code symbol.
 
 

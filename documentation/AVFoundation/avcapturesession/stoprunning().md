@@ -1,7 +1,8 @@
 # stopRunning()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the flow of data through the capture pipeline.
 
@@ -19,13 +20,18 @@ Stops the flow of data through the capture pipeline.
 func stopRunning()
 ```
 
+```objc
+- (void) stopRunning;
+```
+
 #### Discussion
 
 Call this method to stop the flow of data from the inputs to the outputs connected to the capture session. This method is synchronous and blocks until the session stops running completely.
 
 ## See Also
 
-- [func startRunning()](avcapturesession/startrunning.md)
+### Managing the session life cycle
+- [func startRunning()](./startrunning%28%29.md)
   Starts the flow of data through the capture pipeline.
 
 

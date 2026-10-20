@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The buffer’s element type.
@@ -12,7 +13,7 @@ The buffer’s element type.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

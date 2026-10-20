@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the group has any remaining tasks.
 
@@ -30,10 +31,11 @@ At the start of the body of a `withTaskGroup(of:returning:body:)` call, the task
 
 ## See Also
 
-- [func next() async -> ChildTaskResult?](taskgroup/next.md)
-- [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](taskgroup/next(isolation:).md)
+### Accessing Individual Results
+- [func next() async -> ChildTaskResult?](./next%28%29.md)
+- [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](./next%28isolation%29.md)
   Waits for the next child task to complete, and returns the value it returned.
-- [func waitForAll() async](taskgroup/waitforall.md)
+- [func waitForAll() async](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

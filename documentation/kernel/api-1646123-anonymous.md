@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,10 +18,10 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kBTHeaderNode](1646123-anonymous/kbtheadernode.md)
-- [kBTIndexNode](1646123-anonymous/kbtindexnode.md)
-- [kBTLeafNode](1646123-anonymous/kbtleafnode.md)
-- [kBTMapNode](1646123-anonymous/kbtmapnode.md)
+- [kBTHeaderNode](./api-1646123-anonymous/kbtheadernode.md)
+- [kBTIndexNode](./api-1646123-anonymous/kbtindexnode.md)
+- [kBTLeafNode](./api-1646123-anonymous/kbtleafnode.md)
+- [kBTMapNode](./api-1646123-anonymous/kbtmapnode.md)
 
 
 ---

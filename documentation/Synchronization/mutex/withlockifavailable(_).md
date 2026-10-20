@@ -1,7 +1,8 @@
 # withLockIfAvailable(_:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire the lock and then calls the given closure if successful.
 

@@ -1,7 +1,8 @@
 # thumbnail
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A thumbnail preview image.
 
@@ -17,9 +18,14 @@ A thumbnail preview image.
 static let thumbnail: UIActivityItemsConfigurationPreviewIntent
 ```
 
+```c
+extern UIActivityItemsConfigurationPreviewIntent const UIActivityItemsConfigurationPreviewIntentThumbnail;
+```
+
 ## See Also
 
-- [static let fullSize: UIActivityItemsConfigurationPreviewIntent](uiactivityitemsconfigurationpreviewintent/fullsize.md)
+### Constants
+- [static let fullSize: UIActivityItemsConfigurationPreviewIntent](./fullsize.md)
   A full-size preview image.
 
 

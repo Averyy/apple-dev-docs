@@ -1,19 +1,24 @@
 # popoverPresentationControllerDidDismissPopover(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the popover was dismissed.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 13.0
+- iPadOS 8.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
 ```swift
 optional func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController)
+```
+
+```objc
+- (void) popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *) popoverPresentationController;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ Use this method to incorporate any changes from the popover’s content view con
 
 ## See Also
 
-- [func prepareForPopoverPresentation(UIPopoverPresentationController)](uipopoverpresentationcontrollerdelegate/prepareforpopoverpresentation(_:).md)
+### Presenting and dismissing the popover
+- [func prepareForPopoverPresentation(UIPopoverPresentationController)](./prepareforpopoverpresentation%28_%29.md)
   Notifies the delegate that the popover is about to be presented.
-- [func popoverPresentationControllerShouldDismissPopover(UIPopoverPresentationController) -> Bool](uipopoverpresentationcontrollerdelegate/popoverpresentationcontrollershoulddismisspopover(_:).md)
+- [func popoverPresentationControllerShouldDismissPopover(UIPopoverPresentationController) -> Bool](./popoverpresentationcontrollershoulddismisspopover%28_%29.md)
   Asks the delegate if the popover should be dismissed.
 
 

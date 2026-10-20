@@ -1,7 +1,8 @@
 # UNNotificationInterruptionLevel.passive
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system adds the notification to the notification list without lighting up the screen or playing a sound.
 
@@ -20,13 +21,18 @@ The system adds the notification to the notification list without lighting up th
 case passive
 ```
 
+```c
+UNNotificationInterruptionLevelPassive
+```
+
 ## See Also
 
-- [UNNotificationInterruptionLevel.active](unnotificationinterruptionlevel/active.md)
+### Enumeration Cases
+- [UNNotificationInterruptionLevel.active](./active.md)
   The system presents the notification immediately, lights up the screen, and can play a sound.
-- [UNNotificationInterruptionLevel.critical](unnotificationinterruptionlevel/critical.md)
+- [UNNotificationInterruptionLevel.critical](./critical.md)
   The system presents the notification immediately, lights up the screen, and bypasses the mute switch to play a sound.
-- [UNNotificationInterruptionLevel.timeSensitive](unnotificationinterruptionlevel/timesensitive.md)
+- [UNNotificationInterruptionLevel.timeSensitive](./timesensitive.md)
   The system presents the notification immediately, lights up the screen, can play a sound, and breaks through system notification controls.
 
 

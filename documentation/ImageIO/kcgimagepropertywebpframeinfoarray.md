@@ -1,7 +1,8 @@
 # kCGImagePropertyWebPFrameInfoArray
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of dictionaries that contain timing information for the image sequence.
 
@@ -20,17 +21,22 @@ An array of dictionaries that contain timing information for the image sequence.
 let kCGImagePropertyWebPFrameInfoArray: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyWebPFrameInfoArray;
+```
+
 #### Discussion
 
-The value of this property is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) in the array contains timing information about an image in the sequence.
+The value of this property is a [`CFArray`](../CoreFoundation/cfarray.md). Each [`CFDictionary`](../CoreFoundation/cfdictionary.md) in the array contains timing information about an image in the sequence.
 
 ## See Also
 
-- [let kCGImagePropertyWebPDelayTime: CFString](kcgimagepropertywebpdelaytime.md)
+### Sequence Timing
+- [let kCGImagePropertyWebPDelayTime: CFString](./kcgimagepropertywebpdelaytime.md)
   The number of seconds to wait before displaying the next image in the sequence.
-- [let kCGImagePropertyWebPUnclampedDelayTime: CFString](kcgimagepropertywebpunclampeddelaytime.md)
+- [let kCGImagePropertyWebPUnclampedDelayTime: CFString](./kcgimagepropertywebpunclampeddelaytime.md)
   The unadjusted number of seconds to wait before displaying the next image in the sequence.
-- [let kCGImagePropertyWebPLoopCount: CFString](kcgimagepropertywebploopcount.md)
+- [let kCGImagePropertyWebPLoopCount: CFString](./kcgimagepropertywebploopcount.md)
   The number of times to play the sequence.
 
 

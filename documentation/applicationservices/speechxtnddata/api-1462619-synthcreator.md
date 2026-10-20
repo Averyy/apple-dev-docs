@@ -1,7 +1,8 @@
 # synthCreator
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The synthesizer’s creator ID, identical to the value stored in the `synthManufacturer` field of a speech version information structure. You should set this field to the appropriate value before calling `GetSpeechInfo` or `SetSpeechInfo`.
 
@@ -12,6 +13,10 @@ The synthesizer’s creator ID, identical to the value stored in the `synthManuf
 
 ```swift
 var synthCreator: OSType
+```
+
+```c
+OSType synthCreator;
 ```
 
 

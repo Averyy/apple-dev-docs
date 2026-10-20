@@ -1,7 +1,8 @@
 # UIAccessibilityCustomRotor.Direction.next
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The next search item.
 
@@ -18,9 +19,14 @@ The next search item.
 case next
 ```
 
+```c
+UIAccessibilityCustomRotorDirectionNext
+```
+
 ## See Also
 
-- [UIAccessibilityCustomRotor.Direction.previous](uiaccessibilitycustomrotor/direction/previous.md)
+### Constants
+- [UIAccessibilityCustomRotor.Direction.previous](./previous.md)
   The previous search item.
 
 

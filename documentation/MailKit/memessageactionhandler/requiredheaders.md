@@ -1,7 +1,8 @@
 # requiredHeaders
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional var requiredHeaders: [String] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSString *> * requiredHeaders;
 ```
 
 

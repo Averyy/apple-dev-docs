@@ -1,7 +1,8 @@
 # SVGTransformList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGTransformList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [numberOfItems](svgtransformlist/1630370-numberofitems.md)
+- [numberOfItems](./svgtransformlist/api-1630370-numberofitems.md)
 ### Instance Methods
-- [appendItem](svgtransformlist/1630290-appenditem.md)
-- [clear](svgtransformlist/1634374-clear.md)
-- [consolidate](svgtransformlist/1631482-consolidate.md)
-- [createSVGTransformFromMatrix](svgtransformlist/1632996-createsvgtransformfrommatrix.md)
-- [getItem](svgtransformlist/1629428-getitem.md)
-- [initialize](svgtransformlist/1633416-initialize.md)
-- [insertItemBefore](svgtransformlist/1629668-insertitembefore.md)
-- [removeItem](svgtransformlist/1633463-removeitem.md)
-- [replaceItem](svgtransformlist/1631444-replaceitem.md)
+- [appendItem](./svgtransformlist/api-1630290-appenditem.md)
+- [clear](./svgtransformlist/api-1634374-clear.md)
+- [consolidate](./svgtransformlist/api-1631482-consolidate.md)
+- [createSVGTransformFromMatrix](./svgtransformlist/api-1632996-createsvgtransformfrommatrix.md)
+- [getItem](./svgtransformlist/api-1629428-getitem.md)
+- [initialize](./svgtransformlist/api-1633416-initialize.md)
+- [insertItemBefore](./svgtransformlist/api-1629668-insertitembefore.md)
+- [removeItem](./svgtransformlist/api-1633463-removeitem.md)
+- [replaceItem](./svgtransformlist/api-1631444-replaceitem.md)
 
 
 ---

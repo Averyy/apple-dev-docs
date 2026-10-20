@@ -1,7 +1,8 @@
 # MTLIndirectCommandBufferDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration you create to customize an indirect command buffer.
 
@@ -19,79 +20,84 @@ A configuration you create to customize an indirect command buffer.
 class MTLIndirectCommandBufferDescriptor
 ```
 
+```objc
+@interface MTLIndirectCommandBufferDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Creating an indirect command buffer](creating-an-indirect-command-buffer.md)
+- [Creating an indirect command buffer](./creating-an-indirect-command-buffer.md)
 
 ## Topics
 
 ### Declaring command types to encode
-- [var commandTypes: MTLIndirectCommandType](mtlindirectcommandbufferdescriptor/commandtypes.md)
+- [var commandTypes: MTLIndirectCommandType](./mtlindirectcommandbufferdescriptor/commandtypes.md)
   The set of command types that you can encode into the indirect command buffer.
 ### Declaring command inheritance
-- [var inheritBuffers: Bool](mtlindirectcommandbufferdescriptor/inheritbuffers.md)
+- [var inheritBuffers: Bool](./mtlindirectcommandbufferdescriptor/inheritbuffers.md)
   A Boolean value that determines where commands in the indirect command buffer get their buffer arguments from when you execute them.
-- [var inheritPipelineState: Bool](mtlindirectcommandbufferdescriptor/inheritpipelinestate.md)
+- [var inheritPipelineState: Bool](./mtlindirectcommandbufferdescriptor/inheritpipelinestate.md)
   A Boolean value that determines where commands in the indirect command buffer get their pipeline state from when you execute them.
 ### Declaring the maximum number of argument buffers per command
-- [var maxVertexBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxvertexbufferbindcount.md)
+- [var maxVertexBufferBindCount: Int](./mtlindirectcommandbufferdescriptor/maxvertexbufferbindcount.md)
   The maximum number of buffers that you can set per command for the vertex stage.
-- [var maxFragmentBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxfragmentbufferbindcount.md)
+- [var maxFragmentBufferBindCount: Int](./mtlindirectcommandbufferdescriptor/maxfragmentbufferbindcount.md)
   The maximum number of buffers that you can set per command for the fragment stage.
-- [var maxKernelBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxkernelbufferbindcount.md)
+- [var maxKernelBufferBindCount: Int](./mtlindirectcommandbufferdescriptor/maxkernelbufferbindcount.md)
   The maximum number of buffers that you can set per command for the compute kernel.
 ### Instance Properties
-- [var inheritCullMode: Bool](mtlindirectcommandbufferdescriptor/inheritcullmode.md)
+- [var inheritCullMode: Bool](./mtlindirectcommandbufferdescriptor/inheritcullmode.md)
   Configures whether the indirect command buffer inherits the cull mode from the encoder.
-- [var inheritDepthBias: Bool](mtlindirectcommandbufferdescriptor/inheritdepthbias.md)
+- [var inheritDepthBias: Bool](./mtlindirectcommandbufferdescriptor/inheritdepthbias.md)
   Configures whether the indirect command buffer inherits the depth bias from the encoder.
-- [var inheritDepthClipMode: Bool](mtlindirectcommandbufferdescriptor/inheritdepthclipmode.md)
+- [var inheritDepthClipMode: Bool](./mtlindirectcommandbufferdescriptor/inheritdepthclipmode.md)
   Configures whether the indirect command buffer inherits the depth clip mode from the encoder.
-- [var inheritDepthStencilState: Bool](mtlindirectcommandbufferdescriptor/inheritdepthstencilstate.md)
+- [var inheritDepthStencilState: Bool](./mtlindirectcommandbufferdescriptor/inheritdepthstencilstate.md)
   Configures whether the indirect command buffer inherits the depth stencil state from the encoder.
-- [var inheritFrontFacingWinding: Bool](mtlindirectcommandbufferdescriptor/inheritfrontfacingwinding.md)
+- [var inheritFrontFacingWinding: Bool](./mtlindirectcommandbufferdescriptor/inheritfrontfacingwinding.md)
   Configures whether the indirect command buffer inherits the front facing winding from the encoder.
-- [var inheritTriangleFillMode: Bool](mtlindirectcommandbufferdescriptor/inherittrianglefillmode.md)
+- [var inheritTriangleFillMode: Bool](./mtlindirectcommandbufferdescriptor/inherittrianglefillmode.md)
   Configures whether the indirect command buffer inherits the triangle fill mode from the encoder.
-- [var maxKernelThreadgroupMemoryBindCount: Int](mtlindirectcommandbufferdescriptor/maxkernelthreadgroupmemorybindcount.md)
-- [var maxMeshBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxmeshbufferbindcount.md)
-- [var maxObjectBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxobjectbufferbindcount.md)
-- [var maxObjectThreadgroupMemoryBindCount: Int](mtlindirectcommandbufferdescriptor/maxobjectthreadgroupmemorybindcount.md)
-- [var supportColorAttachmentMapping: Bool](mtlindirectcommandbufferdescriptor/supportcolorattachmentmapping.md)
+- [var maxKernelThreadgroupMemoryBindCount: Int](./mtlindirectcommandbufferdescriptor/maxkernelthreadgroupmemorybindcount.md)
+- [var maxMeshBufferBindCount: Int](./mtlindirectcommandbufferdescriptor/maxmeshbufferbindcount.md)
+- [var maxObjectBufferBindCount: Int](./mtlindirectcommandbufferdescriptor/maxobjectbufferbindcount.md)
+- [var maxObjectThreadgroupMemoryBindCount: Int](./mtlindirectcommandbufferdescriptor/maxobjectthreadgroupmemorybindcount.md)
+- [var supportColorAttachmentMapping: Bool](./mtlindirectcommandbufferdescriptor/supportcolorattachmentmapping.md)
   Specifies if the indirect command buffer should support color attachment mapping.
-- [var supportDynamicAttributeStride: Bool](mtlindirectcommandbufferdescriptor/supportdynamicattributestride.md)
-- [var supportRayTracing: Bool](mtlindirectcommandbufferdescriptor/supportraytracing.md)
+- [var supportDynamicAttributeStride: Bool](./mtlindirectcommandbufferdescriptor/supportdynamicattributestride.md)
+- [var supportRayTracing: Bool](./mtlindirectcommandbufferdescriptor/supportraytracing.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating an indirect command buffer](creating-an-indirect-command-buffer.md)
+### Indirect command buffers
+- [Creating an indirect command buffer](./creating-an-indirect-command-buffer.md)
   Configure a descriptor to specify the properties of an indirect command buffer.
-- [Specifying drawing and dispatch arguments indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Specifying drawing and dispatch arguments indirectly](./specifying-drawing-and-dispatch-arguments-indirectly.md)
   Use indirect commands if you don’t know your draw or dispatch call arguments when you encode the command.
-- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](./encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Encoding indirect command buffers on the GPU](encoding-indirect-command-buffers-on-the-gpu.md)
+- [Encoding indirect command buffers on the GPU](./encoding-indirect-command-buffers-on-the-gpu.md)
   Maximize CPU to GPU parallelization by generating render commands on the GPU.
-- [protocol MTLIndirectCommandBuffer](mtlindirectcommandbuffer.md)
+- [protocol MTLIndirectCommandBuffer](./mtlindirectcommandbuffer.md)
   A command buffer containing reusable commands, encoded either on the CPU or GPU.
-- [struct MTLIndirectCommandType](mtlindirectcommandtype.md)
+- [struct MTLIndirectCommandType](./mtlindirectcommandtype.md)
   The types of commands that you can encode into the indirect command buffer.
-- [struct MTLIndirectCommandBufferExecutionRange](mtlindirectcommandbufferexecutionrange.md)
+- [struct MTLIndirectCommandBufferExecutionRange](./mtlindirectcommandbufferexecutionrange.md)
   A range of commands in an indirect command buffer.
-- [func MTLIndirectCommandBufferExecutionRangeMake(UInt32, UInt32) -> MTLIndirectCommandBufferExecutionRange](mtlindirectcommandbufferexecutionrangemake(_:_:).md)
+- [func MTLIndirectCommandBufferExecutionRangeMake(UInt32, UInt32) -> MTLIndirectCommandBufferExecutionRange](./mtlindirectcommandbufferexecutionrangemake%28_,_%29.md)
   Creates a command execution range.
 
 

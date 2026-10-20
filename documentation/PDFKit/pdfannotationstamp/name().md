@@ -1,17 +1,22 @@
 # name()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns name associated with the stamp annotation.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func name() -> String!
+```
+
+```objc
+- (NSString *) name;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Note that the name value of the stamp annotation is not necessarily identical to
 
 ## See Also
 
-- [func setName(String!)](pdfannotationstamp/setname(_:).md)
+### Accessing and setting the stamp annotation
+- [func setName(String!)](./setname%28_%29.md)
   Sets the name associated with the stamp annotation.
 
 

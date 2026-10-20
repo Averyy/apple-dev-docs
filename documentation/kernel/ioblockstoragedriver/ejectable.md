@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool _ejectable;
 ```
 
@@ -15,14 +15,15 @@ True if the media is ejectable under software control.
 
 ## See Also
 
-- [_writeProtected](ioblockstoragedriver/writeprotected.md)
-- [_removable](ioblockstoragedriver/removable.md)
-- [_mediaType](ioblockstoragedriver/mediatype.md)
-- [_mediaObject](ioblockstoragedriver/mediaobject.md)
-- [_mediaBlockSize](ioblockstoragedriver/mediablocksize.md)
-- [_maxWriteByteTransfer](ioblockstoragedriver/maxwritebytetransfer.md)
-- [_maxReadByteTransfer](ioblockstoragedriver/maxreadbytetransfer.md)
-- [_maxBlockNumber](ioblockstoragedriver/maxblocknumber.md)
+### Instance Variables
+- [_writeProtected](./writeprotected.md)
+- [_removable](./removable.md)
+- [_mediaType](./mediatype.md)
+- [_mediaObject](./mediaobject.md)
+- [_mediaBlockSize](./mediablocksize.md)
+- [_maxWriteByteTransfer](./maxwritebytetransfer.md)
+- [_maxReadByteTransfer](./maxreadbytetransfer.md)
+- [_maxBlockNumber](./maxblocknumber.md)
 
 
 ---

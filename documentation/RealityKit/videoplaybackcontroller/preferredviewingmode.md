@@ -1,7 +1,8 @@
 # preferredViewingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Do we want to play stereo video in mono or stereo? Default is to play in stereo.
 

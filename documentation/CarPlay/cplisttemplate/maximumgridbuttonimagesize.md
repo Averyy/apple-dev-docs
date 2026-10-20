@@ -1,7 +1,8 @@
 # maximumGridButtonImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The expected image size for your @c CPGridButton.
 
@@ -14,6 +15,10 @@ The expected image size for your @c CPGridButton.
 
 ```swift
 class var maximumGridButtonImageSize: CGSize { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CGSize maximumGridButtonImageSize;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # contentAppMessage(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ContentAppMessage
 
@@ -17,7 +18,15 @@ Command ContentAppMessage
 ## Declaration
 
 ```swift
+func contentAppMessage(with params: MTRContentAppObserverClusterContentAppMessageParams, completion: @escaping @Sendable (MTRContentAppObserverClusterContentAppMessageResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func contentAppMessage(with params: MTRContentAppObserverClusterContentAppMessageParams) async throws -> MTRContentAppObserverClusterContentAppMessageResponseParams
+```
+
+```objc
+- (void) contentAppMessageWithParams:(MTRContentAppObserverClusterContentAppMessageParams *) params completion:(void (^)(MTRContentAppObserverClusterContentAppMessageResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

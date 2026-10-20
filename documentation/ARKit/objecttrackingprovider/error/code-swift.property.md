@@ -1,7 +1,8 @@
 # code
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code.
 
@@ -16,11 +17,12 @@ var code: ObjectTrackingProvider.Error.Code { get }
 
 ## See Also
 
-- [ObjectTrackingProvider.Error.Code](objecttrackingprovider/error/code-swift.enum.md)
+### Describing an error
+- [ObjectTrackingProvider.Error.Code](./code-swift.enum.md)
   The enumeration of object-tracking provider error codes.
-- [var errorDescription: String?](objecttrackingprovider/error/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized message that describes an error.
-- [var failureReason: String?](objecttrackingprovider/error/failurereason.md)
+- [var failureReason: String?](./failurereason.md)
   A localized message that describes the reason for the failure.
 
 

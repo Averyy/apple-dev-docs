@@ -1,7 +1,8 @@
 # vDSP.DCTTransformType.II
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents a type-II discrete cosine transform.
 
@@ -11,7 +12,7 @@ A constant that represents a type-II discrete cosine transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -35,9 +36,10 @@ For 0 <= k < N
 
 ## See Also
 
-- [vDSP.DCTTransformType.III](vdsp/dcttransformtype/iii.md)
+### Discrete Cosine Transform Type Constants
+- [vDSP.DCTTransformType.III](./iii.md)
   A constant that represents a type-III discrete cosine transform.
-- [vDSP.DCTTransformType.IV](vdsp/dcttransformtype/iv.md)
+- [vDSP.DCTTransformType.IV](./iv.md)
   A constant that represents a type-IV discrete cosine transform.
 
 

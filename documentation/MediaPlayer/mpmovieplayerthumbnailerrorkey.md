@@ -1,13 +1,16 @@
 # MPMoviePlayerThumbnailErrorKey
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -15,14 +18,19 @@
 let MPMoviePlayerThumbnailErrorKey: String
 ```
 
+```c
+extern NSString * const MPMoviePlayerThumbnailErrorKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object identifying the error that occurred, if any.
+The value of this key is an [`NSError`](../Foundation/nserror.md) object identifying the error that occurred, if any.
 
 ## See Also
 
-- [let MPMoviePlayerThumbnailImageKey: String](mpmovieplayerthumbnailimagekey.md)
-- [let MPMoviePlayerThumbnailTimeKey: String](mpmovieplayerthumbnailtimekey.md)
+### Constants
+- [let MPMoviePlayerThumbnailImageKey: String](./mpmovieplayerthumbnailimagekey.md)
+- [let MPMoviePlayerThumbnailTimeKey: String](./mpmovieplayerthumbnailtimekey.md)
 
 
 ---

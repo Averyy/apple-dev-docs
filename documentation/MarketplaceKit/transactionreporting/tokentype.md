@@ -1,7 +1,8 @@
 # TransactionReporting.TokenType
 
 **Framework**: MarketplaceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of transaction reporting token.
 
@@ -18,15 +19,15 @@ struct TokenType
 ## Topics
 
 ### Reporting transactions
-- [static let coreTechnology: TransactionReporting.TokenType](transactionreporting/tokentype/coretechnology.md)
+- [static let coreTechnology: TransactionReporting.TokenType](./tokentype/coretechnology.md)
   A token type for potential purchases related to your app.
 
 ## Relationships
 
 ### Conforms To
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

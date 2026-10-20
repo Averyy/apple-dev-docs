@@ -1,7 +1,8 @@
 # init(targetSize:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an augmentation that crops an input image at a random location to the specified target size.
 
@@ -25,9 +26,10 @@ init(targetSize: CGSize)
 
 ## See Also
 
-- [init(scale: ClosedRange<Double>, aspectRatio: Double?)](randomimagecropper/init(scale:aspectratio:).md)
+### Creating an image cropper
+- [init(scale: ClosedRange<Double>, aspectRatio: Double?)](./init%28scale,aspectratio%29.md)
   Creates an augmentation that crops an input image at a random location with a scale that indicates the lower and upper bounds to randomly scale the height and width of the image. The range must be between 0 and 1.
-- [init(targetWidth: Double, targetHeight: Double)](randomimagecropper/init(targetwidth:targetheight:).md)
+- [init(targetWidth: Double, targetHeight: Double)](./init%28targetwidth,targetheight%29.md)
   Creates an augmentation that crops an input image at a random location to the specified target width and height.
 
 

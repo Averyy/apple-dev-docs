@@ -1,7 +1,8 @@
 # init(upstream:decoder:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that decodes elements received from an upstream publisher, using a given decoder.
 

@@ -1,21 +1,26 @@
 # vDSP_DFT_RealtoComplex.interleaved_ComplextoComplex
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case interleaved_ComplextoComplex
+```
+
+```c
+vDSP_DFT_Interleaved_ComplextoComplex
 ```
 
 

@@ -1,12 +1,13 @@
 # allowsScrolling
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the frame view should allow users to scroll.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean that indicates whether the frame view should allow users to scroll.
 var allowsScrolling: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsScrolling;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), scrolling is allowed; if [`false`](https://developer.apple.com/documentation/swift/false), it is not. If the frame contains a scrolling element, then that value is used as the default; otherwise, the default is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](../../Swift/true.md), scrolling is allowed; if [`false`](../../Swift/false.md), it is not. If the frame contains a scrolling element, then that value is used as the default; otherwise, the default is [`true`](../../Swift/true.md).
 
 
 ---

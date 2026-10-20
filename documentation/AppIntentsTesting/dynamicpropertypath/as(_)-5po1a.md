@@ -1,7 +1,8 @@
 # as(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Casts a property to the provided type.
 

@@ -1,15 +1,16 @@
 # IOPCIBARType
 
 **Framework**: PCIDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 enum IOPCIBARType : unsigned int;
 ```
 
@@ -20,18 +21,19 @@ BAR types for GetBARInfo
 ## Topics
 
 ### Enumeration Cases
-- [kPCIBARTypeIO](iopcibartype/kpcibartypeio.md)
-- [kPCIBARTypeM32](iopcibartype/kpcibartypem32.md)
-- [kPCIBARTypeM32PF](iopcibartype/kpcibartypem32pf.md)
-- [kPCIBARTypeM64](iopcibartype/kpcibartypem64.md)
-- [kPCIBARTypeM64PF](iopcibartype/kpcibartypem64pf.md)
+- [kPCIBARTypeIO](./iopcibartype/kpcibartypeio.md)
+- [kPCIBARTypeM32](./iopcibartype/kpcibartypem32.md)
+- [kPCIBARTypeM32PF](./iopcibartype/kpcibartypem32pf.md)
+- [kPCIBARTypeM64](./iopcibartype/kpcibartypem64.md)
+- [kPCIBARTypeM64PF](./iopcibartype/kpcibartypem64pf.md)
 
 ## See Also
 
-- [IOPCILinkSpeed](iopcilinkspeed.md)
-- [IOPCIMemoryRange](iopcimemoryrange.md)
-- [IOPCISaveDeviceStateOptions](iopcisavedevicestateoptions.md)
-- [tIOPCILinkControlASPMBits](tiopcilinkcontrolaspmbits.md)
+### Data Types
+- [IOPCILinkSpeed](./iopcilinkspeed.md)
+- [IOPCIMemoryRange](./iopcimemoryrange.md)
+- [IOPCISaveDeviceStateOptions](./iopcisavedevicestateoptions.md)
+- [tIOPCILinkControlASPMBits](./tiopcilinkcontrolaspmbits.md)
 
 
 ---

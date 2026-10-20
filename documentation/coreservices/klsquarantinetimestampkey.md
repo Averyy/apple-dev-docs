@@ -1,7 +1,8 @@
 # kLSQuarantineTimeStampKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The date and time of the item’s quarantine.
 
@@ -14,21 +15,26 @@ The date and time of the item’s quarantine.
 let kLSQuarantineTimeStampKey: CFString
 ```
 
+```c
+const CFStringRef kLSQuarantineTimeStampKey;
+```
+
 #### Discussion
 
 When setting quarantine properties, this property is set automatically to the current date and time if this key is not present in the caller’s dictionary.
 
 ## See Also
 
-- [let kLSQuarantineAgentBundleIdentifierKey: CFString](klsquarantineagentbundleidentifierkey.md)
+### Understanding the Quarantine Properties Dictionary
+- [let kLSQuarantineAgentBundleIdentifierKey: CFString](./klsquarantineagentbundleidentifierkey.md)
   The bundle identifier of the quarantining agent.
-- [let kLSQuarantineAgentNameKey: CFString](klsquarantineagentnamekey.md)
+- [let kLSQuarantineAgentNameKey: CFString](./klsquarantineagentnamekey.md)
   The app name of the quarantining agent.
-- [let kLSQuarantineTypeKey: CFString](klsquarantinetypekey.md)
+- [let kLSQuarantineTypeKey: CFString](./klsquarantinetypekey.md)
   A symbolic string identifying the reason for the quarantine.
-- [let kLSQuarantineDataURLKey: CFString](klsquarantinedataurlkey.md)
+- [let kLSQuarantineDataURLKey: CFString](./klsquarantinedataurlkey.md)
   The actual URL of the quarantined item.
-- [let kLSQuarantineOriginURLKey: CFString](klsquarantineoriginurlkey.md)
+- [let kLSQuarantineOriginURLKey: CFString](./klsquarantineoriginurlkey.md)
   The URL of the resource originally hosting the quarantined item.
 
 

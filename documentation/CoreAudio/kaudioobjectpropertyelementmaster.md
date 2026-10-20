@@ -1,13 +1,14 @@
 # kAudioObjectPropertyElementMaster
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 15.0 (renamed: kAudioObjectPropertyElementMain)
+- iPadOS 2.0+ - Deprecated in 15.0 (renamed: kAudioObjectPropertyElementMain)
+- Mac Catalyst 13.1+ - Deprecated in 15.0 (renamed: kAudioObjectPropertyElementMain)
+- macOS 10.0+ - Deprecated in 12.0 (renamed: kAudioObjectPropertyElementMain)
 
 ## Declaration
 
@@ -15,12 +16,17 @@
 var kAudioObjectPropertyElementMaster: AudioObjectPropertyScope { get }
 ```
 
+```c
+kAudioObjectPropertyElementMaster
+```
+
 ## See Also
 
-- [var kAudioObjectPropertyScopeGlobal: AudioObjectPropertyScope](kaudioobjectpropertyscopeglobal.md)
-- [var kAudioObjectPropertyScopeInput: AudioObjectPropertyScope](kaudioobjectpropertyscopeinput.md)
-- [var kAudioObjectPropertyScopeOutput: AudioObjectPropertyScope](kaudioobjectpropertyscopeoutput.md)
-- [var kAudioObjectPropertyScopePlayThrough: AudioObjectPropertyScope](kaudioobjectpropertyscopeplaythrough.md)
+### Constants
+- [var kAudioObjectPropertyScopeGlobal: AudioObjectPropertyScope](./kaudioobjectpropertyscopeglobal.md)
+- [var kAudioObjectPropertyScopeInput: AudioObjectPropertyScope](./kaudioobjectpropertyscopeinput.md)
+- [var kAudioObjectPropertyScopeOutput: AudioObjectPropertyScope](./kaudioobjectpropertyscopeoutput.md)
+- [var kAudioObjectPropertyScopePlayThrough: AudioObjectPropertyScope](./kaudioobjectpropertyscopeplaythrough.md)
 
 
 ---

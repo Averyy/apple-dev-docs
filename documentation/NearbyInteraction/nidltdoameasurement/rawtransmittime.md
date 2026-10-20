@@ -1,7 +1,8 @@
 # rawTransmitTime
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the raw transmission timestamp (in units of 15.65 picoseconds).
 
@@ -14,6 +15,10 @@ Indicates the raw transmission timestamp (in units of 15.65 picoseconds).
 
 ```swift
 var rawTransmitTime: UInt64 { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) uint64_t rawTransmitTime;
 ```
 
 

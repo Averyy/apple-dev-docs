@@ -1,7 +1,8 @@
 # HMAccessorySetupResult
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A result object describing information about a successful accessory setup request.
 
@@ -16,44 +17,49 @@ A result object describing information about a successful accessory setup reques
 class HMAccessorySetupResult
 ```
 
+```objc
+@interface HMAccessorySetupResult : NSObject
+```
+
 ## Topics
 
 ### Getting results
-- [var accessoryUniqueIdentifiers: [UUID]](hmaccessorysetupresult/accessoryuniqueidentifiers.md)
+- [var accessoryUniqueIdentifiers: [UUID]](./hmaccessorysetupresult/accessoryuniqueidentifiers.md)
   The values corresponding to accessories that are set up.
-- [var homeUniqueIdentifier: UUID](hmaccessorysetupresult/homeuniqueidentifier.md)
+- [var homeUniqueIdentifier: UUID](./hmaccessorysetupresult/homeuniqueidentifier.md)
   The home that accessories were added to.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMAccessorySetupManager](hmaccessorysetupmanager.md)
+### Accessories
+- [class HMAccessorySetupManager](./hmaccessorysetupmanager.md)
   An object that setups up new accessories.
-- [class HMAccessorySetupRequest](hmaccessorysetuprequest.md)
+- [class HMAccessorySetupRequest](./hmaccessorysetuprequest.md)
   An object that describes how to add and setup up new accessories.
-- [Interacting with a home automation network](interacting-with-a-home-automation-network.md)
+- [Interacting with a home automation network](./interacting-with-a-home-automation-network.md)
   Find all the automation accessories in the primary home and control their state.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](./hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
-- [class HMService](hmservice.md)
+- [class HMService](./hmservice.md)
   A controllable feature of an accessory, like a light attached to a garage door opener.
-- [class HMCharacteristic](hmcharacteristic.md)
+- [class HMCharacteristic](./hmcharacteristic.md)
   A specific characteristic of a service, like the brightness of a dimmable light or its color temperature.
-- [class HMMediaSourceDisplayOrderProfile](hmmediasourcedisplayorderprofile.md)
+- [class HMMediaSourceDisplayOrderProfile](./hmmediasourcedisplayorderprofile.md)
   An interface from which to read and, if allowed by the accessory, update the ordering of input sources.
 
 

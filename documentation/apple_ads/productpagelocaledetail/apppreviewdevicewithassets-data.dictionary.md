@@ -1,7 +1,8 @@
 # ProductPageLocaleDetail.AppPreviewDeviceWithAssets
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A map of app preview device assets.
 
@@ -10,19 +11,19 @@ A map of app preview device assets.
 
 ## Declaration
 
-```swift
+```
 object ProductPageLocaleDetail.AppPreviewDeviceWithAssets
 ```
 
 ## Topics
 
 ### Objects
-- [object ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key](productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.md)
+- [object ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key](./apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.md)
   The app preview device assets.
 
 ## Properties
 
-- `Any Key` (ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key): Maps to the [`ProductPageLocaleDetail.AppPreviewDeviceWithAssets`](productpagelocaledetail/apppreviewdevicewithassets-data.dictionary.md) class.
+- `Any Key` (ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key): Maps to the [`ProductPageLocaleDetail.AppPreviewDeviceWithAssets`](./apppreviewdevicewithassets-data.dictionary.md) class.
 
 
 ---

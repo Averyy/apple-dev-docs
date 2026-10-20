@@ -1,7 +1,8 @@
 # kIOUSBHostPipeBundlingMax
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The maximum number of elements to transfer in one bundled I/O call.
 
@@ -10,7 +11,7 @@ The maximum number of elements to transfer in one bundled I/O call.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPipeBundlingMax
 ```
 

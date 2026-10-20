@@ -1,7 +1,8 @@
 # KeyResult.Tonic.dSharp
 
 **Framework**: Music Understanding  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the song is in a D-sharp key.
 

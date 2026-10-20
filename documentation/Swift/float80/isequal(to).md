@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this instance is equal to the given value.
 
@@ -32,7 +33,7 @@ Double.nan.isEqual(to: .nan)
 // false
 ```
 
-The `isEqual(to:)` method implements the equality predicate defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `isEqual(to:)` method implements the equality predicate defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

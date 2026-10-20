@@ -1,7 +1,8 @@
 # lastSampleProcessedDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp of the most recent processed sample at the time of the update.
 
@@ -9,13 +10,17 @@ The timestamp of the most recent processed sample at the time of the update.
 - iOS 27.0+
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
-- macOS ?+
+- macOS
 - watchOS 27.0+
 
 ## Declaration
 
 ```swift
 var lastSampleProcessedDate: Date? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * lastSampleProcessedDate;
 ```
 
 

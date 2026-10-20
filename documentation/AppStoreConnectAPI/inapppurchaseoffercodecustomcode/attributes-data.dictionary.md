@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeCustomCode.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase offer code custom code resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase offer code custom code resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeCustomCode.Attributes
 ```
 
@@ -24,7 +25,8 @@ object InAppPurchaseOfferCodeCustomCode.Attributes
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeCustomCode.Relationships](inapppurchaseoffercodecustomcode/relationships-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeCustomCode.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

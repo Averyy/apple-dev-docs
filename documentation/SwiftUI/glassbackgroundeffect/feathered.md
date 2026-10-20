@@ -1,7 +1,8 @@
 # feathered
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A feathered background effect with default padding amount and default soft edge radial size.
 
@@ -13,6 +14,8 @@ A feathered background effect with default padding amount and default soft edge 
 ```swift
 static var feathered: FeatheredGlassBackgroundEffect { get }
 ```
+
+Available when `Self` is `FeatheredGlassBackgroundEffect`.
 
 
 ---

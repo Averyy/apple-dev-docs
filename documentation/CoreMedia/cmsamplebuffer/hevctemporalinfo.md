@@ -1,7 +1,8 @@
 # CMSampleBuffer.HEVCTemporalInfo
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The temporal layer information for all samples in a temporal layer.
 
@@ -27,22 +28,22 @@ The members of this struct represents the `tscl` sample group as defined in ISO/
 ## Topics
 
 ### Initializers
-- [init(temporalLayerID: Int, profileSpace: Int, tierFlag: Int, profileIndex: Int, profileCompatibilityFlags: Data?, constraintIndicatorFlags: Data?, levelIndex: Int)](cmsamplebuffer/hevctemporalinfo/init(temporallayerid:profilespace:tierflag:profileindex:profilecompatibilityflags:constraintindicatorflags:levelindex:).md)
+- [init(temporalLayerID: Int, profileSpace: Int, tierFlag: Int, profileIndex: Int, profileCompatibilityFlags: Data?, constraintIndicatorFlags: Data?, levelIndex: Int)](./hevctemporalinfo/init%28temporallayerid,profilespace,tierflag,profileindex,profilecompatibilityflags,constraintindicatorflags,levelindex%29.md)
 ### Instance Properties
-- [var constraintIndicatorFlags: Data?](cmsamplebuffer/hevctemporalinfo/constraintindicatorflags.md)
-- [var levelIndex: Int](cmsamplebuffer/hevctemporalinfo/levelindex.md)
-- [var profileCompatibilityFlags: Data?](cmsamplebuffer/hevctemporalinfo/profilecompatibilityflags.md)
-- [var profileIndex: Int](cmsamplebuffer/hevctemporalinfo/profileindex.md)
-- [var profileSpace: Int](cmsamplebuffer/hevctemporalinfo/profilespace.md)
-- [var temporalLayerID: Int](cmsamplebuffer/hevctemporalinfo/temporallayerid.md)
-- [var tierFlag: Int](cmsamplebuffer/hevctemporalinfo/tierflag.md)
+- [var constraintIndicatorFlags: Data?](./hevctemporalinfo/constraintindicatorflags.md)
+- [var levelIndex: Int](./hevctemporalinfo/levelindex.md)
+- [var profileCompatibilityFlags: Data?](./hevctemporalinfo/profilecompatibilityflags.md)
+- [var profileIndex: Int](./hevctemporalinfo/profileindex.md)
+- [var profileSpace: Int](./hevctemporalinfo/profilespace.md)
+- [var temporalLayerID: Int](./hevctemporalinfo/temporallayerid.md)
+- [var tierFlag: Int](./hevctemporalinfo/tierflag.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

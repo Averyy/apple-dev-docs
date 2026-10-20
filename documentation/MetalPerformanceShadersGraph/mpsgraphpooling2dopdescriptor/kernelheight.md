@@ -1,7 +1,8 @@
 # kernelHeight
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the pooling window size for the height dimension.
 
@@ -17,6 +18,10 @@ Defines the pooling window size for the height dimension.
 
 ```swift
 var kernelHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger kernelHeight;
 ```
 
 

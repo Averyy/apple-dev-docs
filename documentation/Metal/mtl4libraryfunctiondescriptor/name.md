@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns a name to the function.
 
@@ -17,6 +18,10 @@ Assigns a name to the function.
 
 ```swift
 var name: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * name;
 ```
 
 

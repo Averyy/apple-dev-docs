@@ -1,10 +1,11 @@
 # AXPrefersHeadAnchorAlternativeDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: AccessibilitySettings.prefersHeadAnchorAlternativeDidChangeNotification)
 
 ## Declaration
 

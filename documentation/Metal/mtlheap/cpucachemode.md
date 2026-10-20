@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The heap’s CPU cache mode.
@@ -20,21 +21,26 @@ The heap’s CPU cache mode.
 var cpuCacheMode: MTLCPUCacheMode { get }
 ```
 
+```objc
+@property (readonly) MTLCPUCacheMode cpuCacheMode;
+```
+
 #### Discussion
 
 Any resources you allocate on the heap have this CPU cache mode.
 
 ## See Also
 
-- [var device: any MTLDevice](mtlheap/device.md)
+### Checking a heap’s permanent configuration
+- [var device: any MTLDevice](./device.md)
   The device object that created the heap.
-- [var type: MTLHeapType](mtlheap/type.md)
+- [var type: MTLHeapType](./type.md)
   The heap’s type.
-- [var storageMode: MTLStorageMode](mtlheap/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The heap’s storage mode.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheap/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   The heap’s hazard tracking mode.
-- [var resourceOptions: MTLResourceOptions](mtlheap/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./resourceoptions.md)
   The options for resources created by the heap.
 
 

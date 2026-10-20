@@ -1,7 +1,8 @@
 # BetaAppReviewSubmissionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,20 +11,22 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewSubmissionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppReviewSubmissionCreateRequest.Data.Relationships](betaappreviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BetaAppReviewSubmissionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `relationships` (BetaAppReviewSubmissionCreateRequest.Data.Relationships) *(required)*: The types and IDs of the related data to update.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaAppReviewSubmissions`
 
 
 ---

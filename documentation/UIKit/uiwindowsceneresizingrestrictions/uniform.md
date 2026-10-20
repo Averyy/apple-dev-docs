@@ -1,7 +1,8 @@
 # UIWindowSceneResizingRestrictions.uniform
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User resizes are restricted to the current aspect ratio
 
@@ -12,6 +13,10 @@ User resizes are restricted to the current aspect ratio
 
 ```swift
 case uniform
+```
+
+```c
+UIWindowSceneResizingRestrictionsUniform
 ```
 
 

@@ -1,7 +1,8 @@
 # EntityGeometricPins.Iterator.Element
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An individual pin in the collection.
 

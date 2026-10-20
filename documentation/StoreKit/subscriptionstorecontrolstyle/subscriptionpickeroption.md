@@ -1,7 +1,8 @@
 # SubscriptionStoreControlStyle.SubscriptionPickerOption
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A subscription option within a subscription picker control.
 
@@ -21,19 +22,20 @@ typealias SubscriptionPickerOption = SubscriptionStorePickerOption
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](subscriptionstorecontrolstyle/makebody(configuration:).md)
+### Creating custom subscription store control styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a subscription store control.
-- [SubscriptionStoreControlStyle.Configuration](subscriptionstorecontrolstyle/configuration.md)
+- [SubscriptionStoreControlStyle.Configuration](./configuration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.
-- [SubscriptionStoreControlStyle.SubscribeButton](subscriptionstorecontrolstyle/subscribebutton.md)
+- [SubscriptionStoreControlStyle.SubscribeButton](./subscribebutton.md)
   A button for subscribing to an in-app subscription.
-- [SubscriptionStoreControlStyle.SubscriptionPicker](subscriptionstorecontrolstyle/subscriptionpicker.md)
+- [SubscriptionStoreControlStyle.SubscriptionPicker](./subscriptionpicker.md)
   A composite control for selecting a subscription option and confirming the subscription.
-- [struct SubscriptionStoreControlPlacementKey](subscriptionstorecontrolplacementkey.md)
+- [struct SubscriptionStoreControlPlacementKey](../subscriptionstorecontrolplacementkey.md)
   A placement for a subscription store control in a store view.
-- [associatedtype Placement : SubscriptionStoreControlPlacement = AutomaticSubscriptionStoreControlPlacement](subscriptionstorecontrolstyle/placement.md)
+- [associatedtype Placement : SubscriptionStoreControlPlacement = AutomaticSubscriptionStoreControlPlacement](./placement.md)
   The placement of subscription controls in a subscription store.
-- [associatedtype Body : View](subscriptionstorecontrolstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a subscription store control.
 
 

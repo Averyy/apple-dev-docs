@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data from the data associated with an image editing panel.
 
@@ -14,9 +15,14 @@ Reloads the data from the data associated with an image editing panel.
 func reloadData()
 ```
 
+```objc
+- (void) reloadData;
+```
+
 ## See Also
 
-- [var dataSource: (any IKImageEditPanelDataSource)!](ikimageeditpanel/datasource.md)
+### Getting, Setting, and Reloading Data
+- [var dataSource: (any IKImageEditPanelDataSource)!](./datasource.md)
   Specifies the edit panel’s dataSource.
 
 

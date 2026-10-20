@@ -1,7 +1,8 @@
 # kMIDIPropertyOffline
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the object is offline.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the object is offline.
 let kMIDIPropertyOffline: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyOffline;
+```
+
 #### Discussion
 
 A value of 1 indicates the device is temporarily absent and offline, and 0 indicates the object is present.
 
 ## See Also
 
-- [let kMIDIPropertyPrivate: CFString](kmidipropertyprivate.md)
+### Status
+- [let kMIDIPropertyPrivate: CFString](./kmidipropertyprivate.md)
   A Boolean value that indicates whether the system hides an endpoint from other clients.
 
 

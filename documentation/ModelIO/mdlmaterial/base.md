@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Another material object from which this material’s properties are derived.
 
@@ -19,11 +20,15 @@ Another material object from which this material’s properties are derived.
 var base: MDLMaterial? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLMaterial * baseMaterial;
+```
+
 #### Discussion
 
-When you use the [`property(with:)`](mdlmaterial/property(with:).md), [`propertyNamed(_:)`](mdlmaterial/propertynamed(_:).md), or [`subscript(_:)`](mdlmaterial/subscript(_:)-323j3.md) method to access material properties, the [`MDLMaterial`](mdlmaterial.md) class first checks whether the material itself has a material property with the specified name or semantic. If not, those methods forward to the corresponding method of the other [`MDLMaterial`](mdlmaterial.md) object specified by this property.
+When you use the [`property(with:)`](./property%28with%29.md), [`propertyNamed(_:)`](./propertynamed%28_%29.md), or [`subscript(_:)`](./subscript%28_%29-323j3.md) method to access material properties, the [`MDLMaterial`](../mdlmaterial.md) class first checks whether the material itself has a material property with the specified name or semantic. If not, those methods forward to the corresponding method of the other [`MDLMaterial`](../mdlmaterial.md) object specified by this property.
 
-Use this method to create sets of materials that share most of their material properties but differ in others. For example, you can have a set of objects in the same scene with the same general style of surface appearance (determined by the [`scatteringFunction`](mdlmaterial/scatteringfunction.md) property) but with different values for the [`baseColor`](mdlscatteringfunction/basecolor.md) material property.
+Use this method to create sets of materials that share most of their material properties but differ in others. For example, you can have a set of objects in the same scene with the same general style of surface appearance (determined by the [`scatteringFunction`](./scatteringfunction.md) property) but with different values for the [`baseColor`](../mdlscatteringfunction/basecolor.md) material property.
 
 
 ---

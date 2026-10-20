@@ -1,7 +1,8 @@
 # init(unicodeScalarLiteral:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized to the given value.
 
@@ -17,11 +18,12 @@ init(unicodeScalarLiteral value: String)
 
 ## See Also
 
-- [init(extendedGraphemeClusterLiteral: String)](languagetag/init(extendedgraphemeclusterliteral:).md)
+### Creating a Language Tag
+- [init(extendedGraphemeClusterLiteral: String)](./init%28extendedgraphemeclusterliteral%29.md)
   Creates an instance initialized to the given value.
-- [init(stringLiteral: String)](languagetag/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates an instance initialized to the given value.
-- [init?(rawValue: String)](languagetag/init(rawvalue:).md)
+- [init?(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 

@@ -1,7 +1,8 @@
 # AudioFileResource.LoadingStrategy
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A container for different strategies on how to handle resources’ data before and during playback.
 
@@ -11,7 +12,7 @@ A container for different strategies on how to handle resources’ data before a
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,27 +23,28 @@ enum LoadingStrategy
 ## Topics
 
 ### Specifying a loading strategy
-- [AudioFileResource.LoadingStrategy.preload](audiofileresource/loadingstrategy-swift.enum/preload.md)
+- [AudioFileResource.LoadingStrategy.preload](./loadingstrategy-swift.enum/preload.md)
   Load and decode all the data into memory before playback.
-- [AudioFileResource.LoadingStrategy.stream](audiofileresource/loadingstrategy-swift.enum/stream.md)
+- [AudioFileResource.LoadingStrategy.stream](./loadingstrategy-swift.enum/stream.md)
   Stream data from disk, decoding in real time.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AudioFileResource.Configuration](audiofileresource/configuration-swift.struct.md)
+### Supporting types
+- [AudioFileResource.Configuration](./configuration-swift.struct.md)
   A container for various settings for loading an audio file resource.
 
 

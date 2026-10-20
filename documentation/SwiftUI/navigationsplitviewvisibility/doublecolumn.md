@@ -1,7 +1,8 @@
 # doubleColumn
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Show the content column and detail area of a three-column navigation split view, or the sidebar column and detail area of a two-column navigation split view.
 
@@ -26,11 +27,12 @@ For a two-column navigation split view, `doubleColumn` is equivalent to `all`.
 
 ## See Also
 
-- [static var automatic: NavigationSplitViewVisibility](navigationsplitviewvisibility/automatic.md)
+### Getting visibilities
+- [static var automatic: NavigationSplitViewVisibility](./automatic.md)
   Use the default leading column visibility for the current device.
-- [static var all: NavigationSplitViewVisibility](navigationsplitviewvisibility/all.md)
+- [static var all: NavigationSplitViewVisibility](./all.md)
   Show all the columns of a three-column navigation split view.
-- [static var detailOnly: NavigationSplitViewVisibility](navigationsplitviewvisibility/detailonly.md)
+- [static var detailOnly: NavigationSplitViewVisibility](./detailonly.md)
   Hide the leading two columns of a three-column navigation split view, so that just the detail area shows.
 
 

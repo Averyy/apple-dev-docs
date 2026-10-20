@@ -1,18 +1,19 @@
 # options
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options for the method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The options for the method.
 var options: SparseIterativeMethod.__Unnamed_union_options
 ```
 
+```c
+union { ... } options;
+```
+
 ## See Also
 
-- [var method: Int32](sparseiterativemethod/method.md)
+### Instance Properties
+- [var method: Int32](./method.md)
   The iterative method this structure represents.
 
 

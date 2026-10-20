@@ -1,23 +1,25 @@
 # Format settings
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: API Collection
 
 The audio settings that apply to all audio formats that the audio player and recorder classes support.
 
 ## Topics
 
 ### General format keys
-- [let AVFormatIDKey: String](avformatidkey.md)
+- [let AVFormatIDKey: String](./avformatidkey.md)
   An integer value that represents the format of the audio data.
-- [let AVSampleRateKey: String](avsampleratekey.md)
+- [let AVSampleRateKey: String](./avsampleratekey.md)
   A floating point value that represents the sample rate, in hertz.
-- [let AVNumberOfChannelsKey: String](avnumberofchannelskey.md)
+- [let AVNumberOfChannelsKey: String](./avnumberofchannelskey.md)
   An integer value that represents the number of channels.
 
 ## See Also
 
-- [let AVChannelLayoutKey: String](avchannellayoutkey.md)
-- [Linear PCM format settings](linear-pcm-format-settings.md)
+### Format and layout keys
+- [let AVChannelLayoutKey: String](./avchannellayoutkey.md)
+- [Linear PCM format settings](./linear-pcm-format-settings.md)
   The audio settings that apply to linear PCM audio formats.
 
 

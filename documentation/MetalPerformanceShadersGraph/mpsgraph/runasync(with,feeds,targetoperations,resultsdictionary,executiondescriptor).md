@@ -1,7 +1,8 @@
 # runAsync(with:feeds:targetOperations:resultsDictionary:executionDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the graph for the given feeds to returns the target tensor values in the results dictionary provided by the user.
 
@@ -17,6 +18,10 @@ Encodes the graph for the given feeds to returns the target tensor values in the
 
 ```swift
 func runAsync(with commandQueue: any MTLCommandQueue, feeds: [MPSGraphTensor : MPSGraphTensorData], targetOperations: [MPSGraphOperation]?, resultsDictionary: [MPSGraphTensor : MPSGraphTensorData], executionDescriptor: MPSGraphExecutionDescriptor?)
+```
+
+```objc
+- (void) runAsyncWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue feeds:(MPSGraphTensorDataDictionary *) feeds targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations resultsDictionary:(MPSGraphTensorDataDictionary *) resultsDictionary executionDescriptor:(MPSGraphExecutionDescriptor *) executionDescriptor;
 ```
 
 #### Discussion

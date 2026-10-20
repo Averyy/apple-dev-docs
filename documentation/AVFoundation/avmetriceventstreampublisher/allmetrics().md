@@ -1,7 +1,8 @@
 # allMetrics()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ func allMetrics() -> AVMetrics<AVMetricEvent>
 
 ## See Also
 
-- [func metrics<MetricEvent>(forType: MetricEvent.Type) -> AVMetrics<MetricEvent>](avmetriceventstreampublisher/metrics(fortype:).md)
+### Getting the metrics
+- [func metrics<MetricEvent>(forType: MetricEvent.Type) -> AVMetrics<MetricEvent>](./metrics%28fortype%29.md)
 
 
 ---

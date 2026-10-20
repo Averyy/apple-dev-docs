@@ -1,7 +1,8 @@
 # IOUserVideoObjectPropertyScope
 
 **Framework**: VideoDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
@@ -10,7 +11,7 @@ A four character code which, along with the selector and element, identifies a s
 
 ## Declaration
 
-```swift
+```c
 enum IOUserVideoObjectPropertyScope : uint32_t;
 ```
 
@@ -21,24 +22,25 @@ The scope specifies the section of the object in which to look for the property,
 ## Topics
 
 ### Property scopes
-- [Global](videodriverkit/iouservideoobjectpropertyscope/global.md)
+- [Global](./iouservideoobjectpropertyscope/global.md)
   The scope for properties that apply to the object as a whole.
-- [Input](videodriverkit/iouservideoobjectpropertyscope/input.md)
+- [Input](./iouservideoobjectpropertyscope/input.md)
   The scope for properties that apply to the input side of an object.
-- [Output](videodriverkit/iouservideoobjectpropertyscope/output.md)
+- [Output](./iouservideoobjectpropertyscope/output.md)
   The scope for properties that apply to the output side of an object.
-- [PlayThrough](videodriverkit/iouservideoobjectpropertyscope/playthrough.md)
+- [PlayThrough](./iouservideoobjectpropertyscope/playthrough.md)
   The scope for properties that apply to the play-through side of an object.
 
 ## See Also
 
-- [Create](iouservideobooleancontrol/create.md)
+### Creating a Boolean control
+- [Create](../iouservideobooleancontrol/create.md)
   A static factory method that allocates and initializes a video Boolean control.
-- [init](iouservideobooleancontrol/init.md)
+- [init](../iouservideobooleancontrol/init.md)
   Initializes an IOUserVideoBooleanControl.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](./iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
 
 

@@ -1,7 +1,8 @@
 # querySubscriptionOptions
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that define the behavior of the subscription.
 
@@ -20,21 +21,26 @@ Options that define the behavior of the subscription.
 var querySubscriptionOptions: CKQuerySubscription.Options { get }
 ```
 
+```objc
+@property (assign, readonly) CKQuerySubscriptionOptions querySubscriptionOptions;
+```
+
 #### Discussion
 
 Set the value of this property at initialization time. When you configure a query-based subscription, use one of the following values:
 
-- [`firesOnRecordCreation`](ckquerysubscription/options/firesonrecordcreation.md)
-- [`firesOnRecordUpdate`](ckquerysubscription/options/firesonrecordupdate.md)
-- [`firesOnRecordDeletion`](ckquerysubscription/options/firesonrecorddeletion.md)
+- [`firesOnRecordCreation`](./options/firesonrecordcreation.md)
+- [`firesOnRecordUpdate`](./options/firesonrecordupdate.md)
+- [`firesOnRecordDeletion`](./options/firesonrecorddeletion.md)
 
-If you don’t set an option, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
+If you don’t set an option, the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 
-- [var predicate: NSPredicate](ckquerysubscription/predicate.md)
+### Accessing the Subscription Search Parameters
+- [var predicate: NSPredicate](./predicate.md)
   The matching criteria to apply to records.
-- [CKQuerySubscription.Options](ckquerysubscription/options.md)
+- [CKQuerySubscription.Options](./options.md)
   Configuration options for a query subscription.
 
 

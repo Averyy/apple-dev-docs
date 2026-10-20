@@ -1,7 +1,8 @@
 # init(first:second:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an assertion output structure with one or two keys.
 

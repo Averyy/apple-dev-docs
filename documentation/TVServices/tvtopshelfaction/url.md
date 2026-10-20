@@ -1,7 +1,8 @@
 # url
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the content you want to display.
 
@@ -12,6 +13,10 @@ The URL of the content you want to display.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * URL;
 ```
 
 #### Discussion

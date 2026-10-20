@@ -1,7 +1,8 @@
 # IODVDBlockStorageDevice
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 The IODVDBlockStorageDevice class is a generic DVD block storage device abstraction.
 
@@ -10,7 +11,7 @@ The IODVDBlockStorageDevice class is a generic DVD block storage device abstract
 
 ## Declaration
 
-```swift
+```cpp
 class IODVDBlockStorageDevice : IOCDBlockStorageDevice
 ```
 
@@ -25,26 +26,27 @@ A subclass implements relay methods that translate our requests into calls to a 
 ## Topics
 
 ### Instance Methods
-- [- getMetaClass](iodvdblockstoragedevice/1534834-getmetaclass.md)
-- [- init](iodvdblockstoragedevice/1534832-init.md)
-- [- readDVDStructure](iodvdblockstoragedevice/1534827-readdvdstructure.md)
-- [- reportKey](iodvdblockstoragedevice/4520032-reportkey.md)
-- [- reportKey](iodvdblockstoragedevice/4520033-reportkey.md)
-- [- sendKey](iodvdblockstoragedevice/1534829-sendkey.md)
+- [- getMetaClass](./iodvdblockstoragedevice/api-1534834-getmetaclass.md)
+- [- init](./iodvdblockstoragedevice/api-1534832-init.md)
+- [- readDVDStructure](./iodvdblockstoragedevice/api-1534827-readdvdstructure.md)
+- [- reportKey](./iodvdblockstoragedevice/api-4520032-reportkey.md)
+- [- reportKey](./iodvdblockstoragedevice/api-4520033-reportkey.md)
+- [- sendKey](./iodvdblockstoragedevice/api-1534829-sendkey.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOCDBlockStorageDevice](iocdblockstoragedevice.md)
+- [IOCDBlockStorageDevice](./iocdblockstoragedevice.md)
 
 ## See Also
 
-- [IODVDServices](iodvdservices.md)
-- [IOBDBlockStorageDevice](iobdblockstoragedevice.md)
+### Interfaces
+- [IODVDServices](./iodvdservices.md)
+- [IOBDBlockStorageDevice](./iobdblockstoragedevice.md)
   The IOBDBlockStorageDevice class is a generic BD block storage device abstraction.
-- [IOCompactDiscServices](iocompactdiscservices.md)
-- [IOBDMediaBSDClient](iobdmediabsdclient.md)
-- [IOMediaBSDClient](iomediabsdclient.md)
+- [IOCompactDiscServices](./iocompactdiscservices.md)
+- [IOBDMediaBSDClient](./iobdmediabsdclient.md)
+- [IOMediaBSDClient](./iomediabsdclient.md)
 
 
 ---

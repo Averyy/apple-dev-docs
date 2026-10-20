@@ -1,7 +1,8 @@
 # displaySize
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Nominal output display size (in square pixels) of a CVImageBuffer. For example, for an NTSC DV frame this would be 640x480
 

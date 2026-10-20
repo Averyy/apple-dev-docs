@@ -1,7 +1,8 @@
 # BEBrowserDataExportManager
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that handles exporting browsing data to other browsers.
 
@@ -15,53 +16,58 @@ A class that handles exporting browsing data to other browsers.
 class BEBrowserDataExportManager
 ```
 
+```objc
+@interface BEBrowserDataExportManager : NSObject
+```
+
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
 
 #### Overview
 
-This class coordinates the transfer of browsing data by presenting an *export sheet* when someone exports data through your app’s UI (see [`requestExport(for:token:completionHandler:)`](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md)). Call this class’s [`exportBrowserData:completionHandler:`](bebrowserdataexportmanager/exportbrowserdata:completionhandler:.md) to stream browsing data to the system. For more information and details about the export sheet, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
+This class coordinates the transfer of browsing data by presenting an *export sheet* when someone exports data through your app’s UI (see [`requestExport(for:token:completionHandler:)`](./bebrowserdataexportmanager/requestexport%28for,token,completionhandler%29.md)). Call this class’s [`exportBrowserData:completionHandler:`](./bebrowserdataexportmanager/exportbrowserdata_completionhandler_.md) to stream browsing data to the system. For more information and details about the export sheet, see [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md).
 
 ## Topics
 
 ### Creating an export manager
-- [init(scene: UIWindowScene)](bebrowserdataexportmanager/init(scene:).md)
+- [init(scene: UIWindowScene)](./bebrowserdataexportmanager/init%28scene%29.md)
   Initializes an export manager with your app’s window scene.
 ### Exporting browser data
-- [func exportBrowserData(AsyncStream<BEBrowserData>) async throws](bebrowserdataexportmanager/exportbrowserdata(_:).md)
+- [func exportBrowserData(AsyncStream<BEBrowserData>) async throws](./bebrowserdataexportmanager/exportbrowserdata%28_%29.md)
   Exports the given browser data.
-- [func requestExport(for: BEExportMetadata, token: UUID?, completionHandler: (BEExportOptions?, (any Error)?) -> Void)](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md)
+- [func requestExport(for: BEExportMetadata, token: UUID?, completionHandler: (BEExportOptions?, (any Error)?) -> Void)](./bebrowserdataexportmanager/requestexport%28for,token,completionhandler%29.md)
   Requests that the system display the browsing-data transfer sheet to export data to another browser.
 ### Managing export tokens
-- [static var exportTokenUserInfoKey: String](bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md)
+- [static var exportTokenUserInfoKey: String](./bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md)
   A key for accessing the data transfer token in the export launch activity’s info dictionary.
-- [class let exportTokenUserInfoKey: String](bebrowserdataexportmanager/exporttokenuserinfokey-7e56u.md)
+- [class let exportTokenUserInfoKey: String](./bebrowserdataexportmanager/exporttokenuserinfokey-7e56u.md)
   A key for accessing the data transfer token in the export launch activity’s info dictionary.
-- [static var userActivityType: String](bebrowserdataexportmanager/useractivitytype-4ar5j.md)
+- [static var userActivityType: String](./bebrowserdataexportmanager/useractivitytype-4ar5j.md)
   A constant that identifies the launch activity for data export requests.
-- [class let userActivityType: String](bebrowserdataexportmanager/useractivitytype-g862.md)
+- [class let userActivityType: String](./bebrowserdataexportmanager/useractivitytype-g862.md)
   A constant that identifies the launch activity for data export requests.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class BEExportOptions](beexportoptions.md)
+### Data export management
+- [class BEExportOptions](./beexportoptions.md)
   Options that identify data to export.
-- [class BEExportMetadata](beexportmetadata.md)
+- [class BEExportMetadata](./beexportmetadata.md)
   Metadata that describes available browser data for export.
 
 

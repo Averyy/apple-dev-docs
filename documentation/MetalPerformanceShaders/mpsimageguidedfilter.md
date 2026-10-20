@@ -1,7 +1,8 @@
 # MPSImageGuidedFilter
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that performs edge-aware filtering on an image.
 
@@ -19,36 +20,40 @@ A filter that performs edge-aware filtering on an image.
 class MPSImageGuidedFilter
 ```
 
+```objc
+@interface MPSImageGuidedFilter : MPSKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageguidedfilter/init(coder:device:).md)
-- [init(device: any MTLDevice, kernelDiameter: Int)](mpsimageguidedfilter/init(device:kerneldiameter:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimageguidedfilter/init%28coder,device%29.md)
+- [init(device: any MTLDevice, kernelDiameter: Int)](./mpsimageguidedfilter/init%28device,kerneldiameter%29.md)
 ### Instance Properties
-- [var epsilon: Float](mpsimageguidedfilter/epsilon.md)
-- [var kernelDiameter: Int](mpsimageguidedfilter/kerneldiameter.md)
-- [var reconstructOffset: Float](mpsimageguidedfilter/reconstructoffset.md)
-- [var reconstructScale: Float](mpsimageguidedfilter/reconstructscale.md)
+- [var epsilon: Float](./mpsimageguidedfilter/epsilon.md)
+- [var kernelDiameter: Int](./mpsimageguidedfilter/kerneldiameter.md)
+- [var reconstructOffset: Float](./mpsimageguidedfilter/reconstructoffset.md)
+- [var reconstructScale: Float](./mpsimageguidedfilter/reconstructscale.md)
 ### Instance Methods
-- [func encodeReconstruction(commandBuffer: any MTLCommandBuffer, guidance: any MTLTexture, coefficientsA: any MTLTexture, coefficientsB: any MTLTexture, destination: any MTLTexture)](mpsimageguidedfilter/encodereconstruction(commandbuffer:guidance:coefficientsa:coefficientsb:destination:).md)
-- [func encodeReconstruction(to: any MTLCommandBuffer, guidanceTexture: any MTLTexture, coefficientsTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsimageguidedfilter/encodereconstruction(to:guidancetexture:coefficientstexture:destinationtexture:).md)
-- [func encodeRegression(commandBuffer: any MTLCommandBuffer, source: any MTLTexture, guidance: any MTLTexture, weights: (any MTLTexture)?, destinationCoefficientsA: any MTLTexture, destinationCoefficientsB: any MTLTexture)](mpsimageguidedfilter/encoderegression(commandbuffer:source:guidance:weights:destinationcoefficientsa:destinationcoefficientsb:).md)
-- [func encodeRegression(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, guidanceTexture: any MTLTexture, weightsTexture: (any MTLTexture)?, destinationCoefficientsTexture: any MTLTexture)](mpsimageguidedfilter/encoderegression(to:sourcetexture:guidancetexture:weightstexture:destinationcoefficientstexture:).md)
+- [func encodeReconstruction(commandBuffer: any MTLCommandBuffer, guidance: any MTLTexture, coefficientsA: any MTLTexture, coefficientsB: any MTLTexture, destination: any MTLTexture)](./mpsimageguidedfilter/encodereconstruction%28commandbuffer,guidance,coefficientsa,coefficientsb,destination%29.md)
+- [func encodeReconstruction(to: any MTLCommandBuffer, guidanceTexture: any MTLTexture, coefficientsTexture: any MTLTexture, destinationTexture: any MTLTexture)](./mpsimageguidedfilter/encodereconstruction%28to,guidancetexture,coefficientstexture,destinationtexture%29.md)
+- [func encodeRegression(commandBuffer: any MTLCommandBuffer, source: any MTLTexture, guidance: any MTLTexture, weights: (any MTLTexture)?, destinationCoefficientsA: any MTLTexture, destinationCoefficientsB: any MTLTexture)](./mpsimageguidedfilter/encoderegression%28commandbuffer,source,guidance,weights,destinationcoefficientsa,destinationcoefficientsb%29.md)
+- [func encodeRegression(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, guidanceTexture: any MTLTexture, weightsTexture: (any MTLTexture)?, destinationCoefficientsTexture: any MTLTexture)](./mpsimageguidedfilter/encoderegression%28to,sourcetexture,guidancetexture,weightstexture,destinationcoefficientstexture%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

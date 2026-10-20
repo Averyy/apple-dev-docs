@@ -1,7 +1,8 @@
 # increment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stepper’s increment value.
 
@@ -17,17 +18,22 @@ The stepper’s increment value.
 var increment: Double { get set }
 ```
 
+```objc
+@property double increment;
+```
+
 #### Discussion
 
 The default value is `1.0`.
 
 ## See Also
 
-- [var value: Double](nssteppertouchbaritem/value.md)
+### Managing the stepper’s value
+- [var value: Double](./value.md)
   The current value of the stepper.
-- [var maxValue: Double](nssteppertouchbaritem/maxvalue.md)
+- [var maxValue: Double](./maxvalue.md)
   The stepper’s maximum value.
-- [var minValue: Double](nssteppertouchbaritem/minvalue.md)
+- [var minValue: Double](./minvalue.md)
   The stepper’s minimum value.
 
 

@@ -1,7 +1,8 @@
 # precipitation
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Description of precipitation for this hour.
 
@@ -22,7 +23,8 @@ var precipitation: Precipitation
 
 ## See Also
 
-- [var precipitationChance: Double](hourweather/precipitationchance.md)
+### Getting the precipitation
+- [var precipitationChance: Double](./precipitationchance.md)
   The probability of precipitation during the hour.
 
 

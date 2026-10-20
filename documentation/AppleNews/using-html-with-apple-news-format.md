@@ -1,6 +1,7 @@
 # Using HTML with Apple News Format
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Use HTML formatting for text components.
 
@@ -22,7 +23,7 @@ Apple News Format supports a subset of HTML tags. You can use HTML tags in these
 
 In addition to the components above, you can also use HTML tags to format text in [`CaptionDescriptor`](https://developer.apple.com/documentation/applenewsformat/captiondescriptor) and [`FormattedText`](https://developer.apple.com/documentation/applenewsformat/formattedtext) objects.
 
-To include an HTML table in your article, see [`Adding an HTML Table`](adding-an-html-table.md).
+To include an HTML table in your article, see [Adding an HTML Table](./adding-an-html-table.md).
 
 ##### Example
 
@@ -34,7 +35,7 @@ To include an HTML table in your article, see [`Adding an HTML Table`](adding-an
 }
 ```
 
-##### Supported Html Tags
+##### Supported HTML Tags
 
 This section describes how to use the HTML tags Apple News Format supports.
 
@@ -157,13 +158,13 @@ var occupations = [
 ]
 ```
 
-For information on displaying the contents of your `<pre>` tag using a monospaced font, see [`Text Styling`](using-html-with-apple-news-format#Text-Styling.md).
+For information on displaying the contents of your `<pre>` tag using a monospaced font, see [Text Styling](./using-html-with-apple-news-format.md#Text-Styling).
 
 **Code**
 
 To add text that represents code to your article, use the HTML `<code>` or `<samp>` tags around the text.
 
-For information on displaying the contents of your `<code>` or `<samp>` tag using a monospaced font, see [`Text Styling`](using-html-with-apple-news-format#Text-Styling.md).
+For information on displaying the contents of your `<code>` or `<samp>` tag using a monospaced font, see [Text Styling](./using-html-with-apple-news-format.md#Text-Styling).
 
 **Footer**
 
@@ -223,7 +224,7 @@ Apple News Format ignores most attributes on your HTML tags, but there are some 
 - The `href` attribute of the `<a>` tag
 - The `data-anf-textstyle` attribute on all supported tags
 
-##### Unsupported Html Tags
+##### Unsupported HTML Tags
 
 The following is a list of unsupported HTML tags. Apple News Format rejects articles that contain HTML formatting with these tags.
 
@@ -249,31 +250,32 @@ The following is a list of unsupported HTML tags. Apple News Format rejects arti
 
 ## See Also
 
-- [Using Markdown with Apple News Format](using-markdown-with-apple-news-format.md)
+### Text
+- [Using Markdown with Apple News Format](./using-markdown-with-apple-news-format.md)
   Use Markdown formatting for text components.
-- [object Body](../applenewsformat/body.md)
+- [object Body](https://developer.apple.com/documentation/applenewsformat/body)
   The component for adding body text.
-- [object Title](../applenewsformat/title.md)
+- [object Title](https://developer.apple.com/documentation/applenewsformat/title)
   The component for adding an article title.
-- [object Heading](../applenewsformat/heading.md)
+- [object Heading](https://developer.apple.com/documentation/applenewsformat/heading)
   The text component for adding a heading.
-- [object Intro](../applenewsformat/intro.md)
+- [object Intro](https://developer.apple.com/documentation/applenewsformat/intro)
   The component for adding introductory text.
-- [object Caption](../applenewsformat/caption.md)
+- [object Caption](https://developer.apple.com/documentation/applenewsformat/caption)
   The component for adding caption text.
-- [object Author](../applenewsformat/author.md)
+- [object Author](https://developer.apple.com/documentation/applenewsformat/author)
   The component for adding the name of the author.
-- [object Byline](../applenewsformat/byline.md)
+- [object Byline](https://developer.apple.com/documentation/applenewsformat/byline)
   The component for adding the publication date or contributor credits, especially for articles with multiple contributors.
-- [object Illustrator](../applenewsformat/illustrator.md)
+- [object Illustrator](https://developer.apple.com/documentation/applenewsformat/illustrator)
   The component for adding illustrator credit.
-- [object Photographer](../applenewsformat/photographer.md)
+- [object Photographer](https://developer.apple.com/documentation/applenewsformat/photographer)
   The component for adding a photographer credit.
-- [object Quote](../applenewsformat/quote.md)
+- [object Quote](https://developer.apple.com/documentation/applenewsformat/quote)
   The component for including a quote.
-- [object PullQuote](../applenewsformat/pullquote.md)
+- [object PullQuote](https://developer.apple.com/documentation/applenewsformat/pullquote)
   The component for including a pull quote.
-- [object Text](../applenewsformat/text.md)
+- [object Text](https://developer.apple.com/documentation/applenewsformat/text)
   Properties shared by all text component types.
 
 

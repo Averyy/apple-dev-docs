@@ -1,7 +1,8 @@
 # expectedCurrentItemIdentifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An item identifier the coordinator issues the command for.
 
@@ -19,9 +20,14 @@ An item identifier the coordinator issues the command for.
 var expectedCurrentItemIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * expectedCurrentItemIdentifier;
+```
+
 ## See Also
 
-- [var originator: AVCoordinatedPlaybackParticipant?](avdelegatingplaybackcoordinatorplaybackcontrolcommand/originator.md)
+### Accessing command details
+- [var originator: AVCoordinatedPlaybackParticipant?](./originator.md)
   The participant that causes the coordinator to issue the command.
 
 

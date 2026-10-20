@@ -1,7 +1,8 @@
 # NSViewCornerRadius
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a radius used to round a corner. It supports fixed and adaptive configurations.
 
@@ -15,35 +16,40 @@ Represents a radius used to round a corner. It supports fixed and adaptive confi
 class NSViewCornerRadius
 ```
 
+```objc
+@interface NSViewCornerRadius : NSObject
+```
+
 ## Topics
 
 ### Type Properties
-- [class var containerConcentric: NSViewCornerRadius](nsviewcornerradius/containerconcentric.md)
+- [class var containerConcentric: NSViewCornerRadius](./nsviewcornerradius/containerconcentric.md)
   A dynamic corner radius calculated based on the view’s container shape.
 ### Type Methods
-- [class func containerConcentric(CGFloat) -> NSViewCornerRadius](nsviewcornerradius/containerconcentric(_:).md)
+- [class func containerConcentric(CGFloat) -> NSViewCornerRadius](./nsviewcornerradius/containerconcentric%28_%29.md)
   A dynamic corner radius calculated based on the view’s container shape and limited to the provided minimum radius.
-- [class func fixed(CGFloat) -> NSViewCornerRadius](nsviewcornerradius/fixed(_:).md)
+- [class func fixed(CGFloat) -> NSViewCornerRadius](./nsviewcornerradius/fixed%28_%29.md)
   Shorthand initializer for a configuration where all four corners are using a fixed corner radius in points.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSViewCornerConfiguration](nsviewcornerconfiguration.md)
+### Corner configuration
+- [class NSViewCornerConfiguration](./nsviewcornerconfiguration.md)
   A configuration object that defines the corner styles of a view’s overall shape.
-- [class NSViewCornerRadii](nsviewcornerradii.md)
+- [class NSViewCornerRadii](./nsviewcornerradii.md)
   Provides a structured way to define custom corner radii for each corner of a view, along with a corner curve.
 
 

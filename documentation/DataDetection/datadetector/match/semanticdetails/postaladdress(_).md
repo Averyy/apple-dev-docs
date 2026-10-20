@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.postalAddress(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents a postal address.
 
@@ -22,7 +23,7 @@ case postalAddress(DataDetector.Match.SemanticDetails.PostalAddress)
 
 ## Parameters
 
-- `PostalAddress`: A [`DataDetector.Match.SemanticDetails.PostalAddress`](datadetector/match/semanticdetails/postaladdress.md) structure.
+- `PostalAddress`: A [`DataDetector.Match.SemanticDetails.PostalAddress`](./postaladdress.md) structure.
 
 
 ---

@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -18,13 +19,20 @@
 static func buildIf<Content>(_ content: Content?) -> Content? where Content : CustomizableToolbarContent
 ```
 
+**Other overloads**:
+
+```swift
+static func buildIf<Content>(_ content: Content?) -> Content? where Content : ToolbarContent
+```
+
 ## See Also
 
-- [static buildEither(first:)](toolbarcontentbuilder/buildeither(first:).md)
-- [static buildEither(second:)](toolbarcontentbuilder/buildeither(second:).md)
-- [static buildExpression(_:)](toolbarcontentbuilder/buildexpression(_:).md)
+### Building conditional toolbar content
+- [static buildEither(first:)](./buildeither%28first%29.md)
+- [static buildEither(second:)](./buildeither%28second%29.md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static buildLimitedAvailability(_:)](toolbarcontentbuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./buildlimitedavailability%28_%29.md)
 
 
 ---

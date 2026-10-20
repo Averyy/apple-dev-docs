@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this edge effect is hidden. Default: false
 
@@ -16,6 +17,10 @@ Whether this edge effect is hidden. Default: false
 
 ```swift
 var isHidden: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isHidden) BOOL hidden;
 ```
 
 

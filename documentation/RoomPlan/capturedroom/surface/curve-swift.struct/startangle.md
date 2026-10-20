@@ -1,7 +1,8 @@
 # startAngle
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An angle that begins the curve.
 
@@ -18,9 +19,10 @@ var startAngle: Measurement<UnitAngle> { get }
 
 ## See Also
 
-- [var endAngle: Measurement<UnitAngle>](capturedroom/surface/curve-swift.struct/endangle.md)
+### Measuring a curve
+- [var endAngle: Measurement<UnitAngle>](./endangle.md)
   The angle at the end of the curve.
-- [var radius: Float](capturedroom/surface/curve-swift.struct/radius.md)
+- [var radius: Float](./radius.md)
   The radius of the curve.
 
 

@@ -1,7 +1,8 @@
 # requestSharingOfWindow(usingPreview:title:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -9,7 +10,15 @@
 ## Declaration
 
 ```swift
+func requestSharingOfWindow(usingPreview image: NSImage, title: String, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func requestSharingOfWindow(usingPreview image: NSImage, title: String) async throws
+```
+
+```objc
+- (void) requestSharingOfWindowUsingPreview:(NSImage *) image title:(NSString *) title completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

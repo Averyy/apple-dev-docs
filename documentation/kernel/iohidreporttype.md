@@ -1,7 +1,8 @@
 # IOHIDReportType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Describes different type of HID reports.
 
@@ -10,7 +11,7 @@ Describes different type of HID reports.
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOHIDReportType IOHIDReportType;
 ```
 
@@ -21,18 +22,20 @@ Used by the IOHIDFamily to identify the type of report being processed.
 ## Topics
 
 ### Constants
-- [kIOHIDReportTypeInput](iohidreporttype/kiohidreporttypeinput.md)
-- [kIOHIDReportTypeOutput](iohidreporttype/kiohidreporttypeoutput.md)
-- [kIOHIDReportTypeFeature](iohidreporttype/kiohidreporttypefeature.md)
-- [kIOHIDReportTypeCount](iohidreporttype/kiohidreporttypecount.md)
+- [kIOHIDReportTypeInput](./iohidreporttype/kiohidreporttypeinput.md)
+- [kIOHIDReportTypeOutput](./iohidreporttype/kiohidreporttypeoutput.md)
+- [kIOHIDReportTypeFeature](./iohidreporttype/kiohidreporttypefeature.md)
+- [kIOHIDReportTypeCount](./iohidreporttype/kiohidreporttypecount.md)
 
 ## See Also
 
-- [HIDReportCommandType](hidreportcommandtype.md)
-- [IOHIDCompletion](iohidcompletion.md)
+### Reports
+- [HIDReportCommandType](./hidreportcommandtype.md)
+- [IOHIDCompletion](./iohidcompletion.md)
   Struct specifying action to perform when set/get report completes.
-- [IOHIDCompletionAction](iohidcompletionaction.md)
+- [IOHIDCompletionAction](./iohidcompletionaction.md)
   Function called when set/get report completes
+### Related Documentation
 - [IOHIDReportType](../iokit/iohidreporttype.md)
   Describes different type of HID reports.
 

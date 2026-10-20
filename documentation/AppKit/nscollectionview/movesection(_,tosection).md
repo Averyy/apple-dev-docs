@@ -1,7 +1,8 @@
 # moveSection(_:toSection:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves a section from its current location to a new location.
 
@@ -14,11 +15,15 @@ Moves a section from its current location to a new location.
 func moveSection(_ section: Int, toSection newSection: Int)
 ```
 
+```objc
+- (void) moveSection:(NSInteger) section toSection:(NSInteger) newSection;
+```
+
 #### Discussion
 
 Use this method to reorganize sections and their contained items. Always update your data source object before calling this method. Calling this method kicks off an update (and possible animations) to move the specified section to its new location. Specifically, the collection view asks the layout object for any updated layout attributes related to the new sections or any existing sections. If the layout attributes of any visible items changed, those changes are animated into place.
 
-When inserting or deleting multiple sections and items, you can animate all of your changes at once using the [`performBatchUpdates(_:completionHandler:)`](nscollectionview/performbatchupdates(_:completionhandler:).md) method.
+When inserting or deleting multiple sections and items, you can animate all of your changes at once using the [`performBatchUpdates(_:completionHandler:)`](./performbatchupdates%28_,completionhandler%29.md) method.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ When inserting or deleting multiple sections and items, you can animate all of y
 
 ## See Also
 
-- [func insertSections(IndexSet)](nscollectionview/insertsections(_:).md)
+### Inserting, Moving, Deleting, and Collapsing Sections
+- [func insertSections(IndexSet)](./insertsections%28_%29.md)
   Inserts new sections at the specified indexes.
-- [func deleteSections(IndexSet)](nscollectionview/deletesections(_:).md)
+- [func deleteSections(IndexSet)](./deletesections%28_%29.md)
   Deletes the specified sections and their contained items.
-- [func toggleSectionCollapse(Any)](nscollectionview/togglesectioncollapse(_:).md)
+- [func toggleSectionCollapse(Any)](./togglesectioncollapse%28_%29.md)
   Collapses the section in which the sender resides into a single horizontally scrollable row.
 
 

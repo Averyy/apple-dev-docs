@@ -1,7 +1,8 @@
 # AudioFileGetGlobalInfoSize(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the size of a global audio file property.
 
@@ -19,6 +20,10 @@ Gets the size of a global audio file property.
 func AudioFileGetGlobalInfoSize(_ inPropertyID: AudioFilePropertyID, _ inSpecifierSize: UInt32, _ inSpecifier: UnsafeMutableRawPointer?, _ outDataSize: UnsafeMutablePointer<UInt32>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileGetGlobalInfoSize(AudioFilePropertyID inPropertyID, UInt32 inSpecifierSize, void *inSpecifier, UInt32 *outDataSize);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -29,14 +34,15 @@ This function can be used to get information about the capabilities of Audio Fil
 
 ## Parameters
 
-- `inPropertyID`: The property whose data size you want to get. For possible values, see [`Audio File Global Info Properties`](1576495-audio-file-global-info-propertie.md).
+- `inPropertyID`: The property whose data size you want to get. For possible values, see [Audio File Global Info Properties](./api-1576495-audio-file-global-info-propertie.md).
 - `inSpecifierSize`: The size of the specifier data.
 - `inSpecifier`: A pointer to a *specifier* (a pointer to a buffer containing some data which is different for each property. The type of the data required is described in the description of each property.)
 - `outDataSize`: A pointer to the size in bytes of the current value of the property. To get the size of the property value,  you need a buffer of this size.
 
 ## See Also
 
-- [func AudioFileGetGlobalInfo(AudioFilePropertyID, UInt32, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilegetglobalinfo(_:_:_:_:_:).md)
+### Working with Global Information
+- [func AudioFileGetGlobalInfo(AudioFilePropertyID, UInt32, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilegetglobalinfo%28_,_,_,_,_%29.md)
   Copies the value of a global property into a buffer.
 
 

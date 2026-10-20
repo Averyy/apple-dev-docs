@@ -1,7 +1,8 @@
 # averageLowTemperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average observed low temperature for the day.
 

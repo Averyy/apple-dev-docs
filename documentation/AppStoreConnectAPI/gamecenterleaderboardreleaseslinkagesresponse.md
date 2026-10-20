@@ -1,21 +1,22 @@
 # GameCenterLeaderboardReleasesLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API - Deprecated
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardReleasesLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardReleasesLinkagesResponse.Data](gamecenterleaderboardreleaseslinkagesresponse/data-data.dictionary.md)
+- [object GameCenterLeaderboardReleasesLinkagesResponse.Data](./gamecenterleaderboardreleaseslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,13 +26,14 @@ object GameCenterLeaderboardReleasesLinkagesResponse
 
 ## See Also
 
-- [object GameCenterLeaderboardRelease](gamecenterleaderboardrelease.md)
+### Objects
+- [object GameCenterLeaderboardRelease](./gamecenterleaderboardrelease.md)
   A record indicating that a Game Center leaderboard has been released to players, making it visible in the game.
-- [object GameCenterLeaderboardReleaseCreateRequest](gamecenterleaderboardreleasecreaterequest.md)
+- [object GameCenterLeaderboardReleaseCreateRequest](./gamecenterleaderboardreleasecreaterequest.md)
   The request body you use to create a leaderboard release.
-- [object GameCenterLeaderboardReleaseResponse](gamecenterleaderboardreleaseresponse.md)
+- [object GameCenterLeaderboardReleaseResponse](./gamecenterleaderboardreleaseresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard release.
-- [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
+- [object GameCenterLeaderboardReleasesResponse](./gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
 
 

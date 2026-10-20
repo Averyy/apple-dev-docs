@@ -1,7 +1,8 @@
 # PKIdentityButton.Label.continue
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A label with the text continue with Apple Wallet.
 
@@ -17,13 +18,18 @@ A label with the text continue with Apple Wallet.
 case `continue`
 ```
 
+```c
+PKIdentityButtonLabelContinue
+```
+
 ## See Also
 
-- [PKIdentityButton.Label.verifyIdentity](pkidentitybutton/label/verifyidentity.md)
+### Labels
+- [PKIdentityButton.Label.verifyIdentity](./verifyidentity.md)
   A label with the text verify identity with Apple Wallet.
-- [PKIdentityButton.Label.verify](pkidentitybutton/label/verify.md)
+- [PKIdentityButton.Label.verify](./verify.md)
   A label with the text verify with Apple Wallet.
-- [PKIdentityButton.Label.verifyAge](pkidentitybutton/label/verifyage.md)
+- [PKIdentityButton.Label.verifyAge](./verifyage.md)
   A label with the text verify age with Apple Wallet.
 
 

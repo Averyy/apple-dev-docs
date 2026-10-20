@@ -1,7 +1,8 @@
 # green
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The magnitude of the green component
 
@@ -10,7 +11,7 @@ The magnitude of the green component
 
 ## Declaration
 
-```swift
+```c
 unsigned short green;
 ```
 

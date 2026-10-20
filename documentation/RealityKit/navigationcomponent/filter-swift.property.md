@@ -1,7 +1,8 @@
 # filter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter to use when pathfinding.
 
@@ -21,9 +22,10 @@ var filter: NavigationComponent.Filter? { get set }
 
 ## See Also
 
-- [var layer: NavigationMeshResource.Layer?](navigationcomponent/layer.md)
+### Configuring navigation
+- [var layer: NavigationMeshResource.Layer?](./layer.md)
   The layer to use when searching for a NavigationMeshResource in a Scene. If not set, the first available NavigationMeshResource will be used.
-- [NavigationComponent.Filter](navigationcomponent/filter-swift.struct.md)
+- [NavigationComponent.Filter](./filter-swift.struct.md)
   A struct that stores information about flags to ignore and include, and area costs for a pathfind.
 
 

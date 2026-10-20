@@ -1,14 +1,15 @@
 # cpuid_cpu_subtype
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 cpu_subtype_t cpuid_cpu_subtype;
 ```
 

@@ -1,7 +1,8 @@
 # InAppPurchasePriceScheduleResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single pricing schedule for an In-App Purchase.
 
@@ -10,27 +11,28 @@ A response containing a single pricing schedule for an In-App Purchase.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchasePriceScheduleResponse
 ```
 
 ## Properties
 
 - `data` (InAppPurchasePriceSchedule) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `InAppPurchasePrice`, `Territory`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)
+### Objects
+- [object InAppPurchasePriceSchedule](./inapppurchasepriceschedule.md)
   A time-based pricing schedule for an In-App Purchase, managing base prices and planned price changes.
-- [object InAppPurchasePriceScheduleCreateRequest](inapppurchasepriceschedulecreaterequest.md)
+- [object InAppPurchasePriceScheduleCreateRequest](./inapppurchasepriceschedulecreaterequest.md)
   The request body you use to create an In-App Purchase price schedule.
-- [object InAppPurchasePricesResponse](inapppurchasepricesresponse.md)
+- [object InAppPurchasePricesResponse](./inapppurchasepricesresponse.md)
   A response containing a list of configured prices for an In-App Purchase.
-- [object InAppPurchasePriceScheduleAutomaticPricesLinkagesResponse](inapppurchasepricescheduleautomaticpriceslinkagesresponse.md)
-- [object InAppPurchasePriceScheduleBaseTerritoryLinkageResponse](inapppurchasepriceschedulebaseterritorylinkageresponse.md)
-- [object InAppPurchasePriceScheduleManualPricesLinkagesResponse](inapppurchasepriceschedulemanualpriceslinkagesresponse.md)
+- [object InAppPurchasePriceScheduleAutomaticPricesLinkagesResponse](./inapppurchasepricescheduleautomaticpriceslinkagesresponse.md)
+- [object InAppPurchasePriceScheduleBaseTerritoryLinkageResponse](./inapppurchasepriceschedulebaseterritorylinkageresponse.md)
+- [object InAppPurchasePriceScheduleManualPricesLinkagesResponse](./inapppurchasepriceschedulemanualpriceslinkagesresponse.md)
 
 
 ---

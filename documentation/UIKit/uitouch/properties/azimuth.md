@@ -1,7 +1,8 @@
 # azimuth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A touch property, representing azimuth, in a bit mask.
 
@@ -18,15 +19,20 @@ A touch property, representing azimuth, in a bit mask.
 static var azimuth: UITouch.Properties { get }
 ```
 
+```c
+UITouchPropertyAzimuth
+```
+
 ## See Also
 
-- [static var force: UITouch.Properties](uitouch/properties/force.md)
+### Constants
+- [static var force: UITouch.Properties](./force.md)
   A touch property, representing force, in a bit mask.
-- [static var altitude: UITouch.Properties](uitouch/properties/altitude.md)
+- [static var altitude: UITouch.Properties](./altitude.md)
   A touch property, representing altitude, in a bit mask.
-- [static var location: UITouch.Properties](uitouch/properties/location.md)
+- [static var location: UITouch.Properties](./location.md)
   A touch property, representing location, in a bit mask.
-- [static var roll: UITouch.Properties](uitouch/properties/roll.md)
+- [static var roll: UITouch.Properties](./roll.md)
   A touch property, representing barrel-roll angle, in a bit mask.
 
 

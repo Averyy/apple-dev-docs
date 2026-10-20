@@ -1,7 +1,8 @@
 # RelationshipResponse.Meta
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Contextual data about the relationship.
 
@@ -10,7 +11,7 @@ Contextual data about the relationship.
 
 ## Declaration
 
-```swift
+```
 object RelationshipResponse.Meta
 ```
 

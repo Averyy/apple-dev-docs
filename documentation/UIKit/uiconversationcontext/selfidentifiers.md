@@ -1,7 +1,8 @@
 # selfIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of strings that identifies the active person in the conversation on the current device.
 
@@ -16,11 +17,16 @@ A set of strings that identifies the active person in the conversation on the cu
 var selfIdentifiers: Set<String> { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSSet<NSString *> * selfIdentifiers;
+```
+
 ## See Also
 
-- [var responsePrimaryRecipientIdentifiers: Set<String>](uiconversationcontext/responseprimaryrecipientidentifiers.md)
+### Getting conversation participants
+- [var responsePrimaryRecipientIdentifiers: Set<String>](./responseprimaryrecipientidentifiers.md)
   A dictionary that relates participant identifiers to participant names.
-- [var participantNameByIdentifier: [String : PersonNameComponents]](uiconversationcontext/participantnamebyidentifier.md)
+- [var participantNameByIdentifier: [String : PersonNameComponents]](./participantnamebyidentifier.md)
   A dictionary that relates participant identifiers to participant names.
 
 

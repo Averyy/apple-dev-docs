@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.stage(type:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Node represents an execution stage in the graph, for example ‘simulation’ or ‘emission’
 
@@ -12,7 +13,7 @@ Node represents an execution stage in the graph, for example ‘simulation’ or
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two values are equal.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether two values are equal.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,8 @@ static func == (lhs: Pose3D, rhs: Pose3D) -> Bool
 
 ## See Also
 
-- [func isApproximatelyEqual(to: Pose3D, tolerance: Double) -> Bool](pose3d/isapproximatelyequal(to:tolerance:).md)
+### Comparing values
+- [func isApproximatelyEqual(to: Pose3D, tolerance: Double) -> Bool](./isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two poses are equal within a specified tolerance.
 
 

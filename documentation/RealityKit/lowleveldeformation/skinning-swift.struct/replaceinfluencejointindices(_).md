@@ -1,7 +1,8 @@
 # replaceInfluenceJointIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the influence joint index buffer using the given closure.    /// After the closure returns, the framework validates every index. An out-of-range index causes a throw.
 
@@ -23,7 +24,7 @@ The value returned by `body`.
 
 #### Discussion
 
-> **Note**: If any index is outside `[0, skinning.jointTransformCount)`.
+> **Throws**: If any index is outside `[0, skinning.jointTransformCount)`.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ The value returned by `body`.
 
 ## See Also
 
-- [func setJointTransforms(any MTLBuffer, offset: Int) throws](lowleveldeformation/skinning-swift.struct/setjointtransforms(_:offset:).md)
+### Configuring skinning data
+- [func setJointTransforms(any MTLBuffer, offset: Int) throws](./setjointtransforms%28_,offset%29.md)
   Sets the buffer containing joint transform matrices.
-- [func setInfluenceWeights(any MTLBuffer, offset: Int) throws](lowleveldeformation/skinning-swift.struct/setinfluenceweights(_:offset:).md)
+- [func setInfluenceWeights(any MTLBuffer, offset: Int) throws](./setinfluenceweights%28_,offset%29.md)
   Sets the buffer containing per-vertex influence weights.
-- [func setInverseBindPoses(any MTLBuffer, offset: Int) throws](lowleveldeformation/skinning-swift.struct/setinversebindposes(_:offset:).md)
+- [func setInverseBindPoses(any MTLBuffer, offset: Int) throws](./setinversebindposes%28_,offset%29.md)
   Sets the buffer containing inverse bind-pose matrices.
 
 

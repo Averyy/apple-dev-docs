@@ -1,7 +1,8 @@
 # transition
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transition between items for the application music player.
 

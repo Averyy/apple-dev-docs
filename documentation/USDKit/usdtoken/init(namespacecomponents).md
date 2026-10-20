@@ -1,7 +1,8 @@
 # init(namespaceComponents:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a namespaced token by joining `components` with `:`.
 
@@ -25,8 +26,9 @@ init(namespaceComponents: [USDToken])
 
 ## See Also
 
-- [init()](usdtoken/init.md)
-- [init(String)](usdtoken/init(_:).md)
+### Creating a token
+- [init()](./init%28%29.md)
+- [init(String)](./init%28_%29.md)
 
 
 ---

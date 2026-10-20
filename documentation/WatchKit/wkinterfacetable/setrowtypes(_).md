@@ -1,7 +1,8 @@
 # setRowTypes(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the row controllers to use when populating the table with data.
 
@@ -14,11 +15,15 @@ Creates the row controllers to use when populating the table with data.
 func setRowTypes(_ rowTypes: [String])
 ```
 
+```objc
+- (void) setRowTypes:(NSArray<NSString *> *) rowTypes;
+```
+
 #### Discussion
 
-Use this method when you want to display more than one type of row in your table. This method removes any existing rows from the table and configures a new set of rows based on the information in the `rowTypes` parameter. For each row, the method also creates an instance of that row’s class and puts the resulting object in an internal array, which you access using the [`rowController(at:)`](wkinterfacetable/rowcontroller(at:).md) method. It is your responsibility to configure each new row controller with the data you want to display.
+Use this method when you want to display more than one type of row in your table. This method removes any existing rows from the table and configures a new set of rows based on the information in the `rowTypes` parameter. For each row, the method also creates an instance of that row’s class and puts the resulting object in an internal array, which you access using the [`rowController(at:)`](./rowcontroller%28at%29.md) method. It is your responsibility to configure each new row controller with the data you want to display.
 
-The order of the strings in the `rowTypes` parameter determines the order of the row controller objects you retrieve using the [`rowController(at:)`](wkinterfacetable/rowcontroller(at:).md) method, with the first row type used to create the row controller at index 0, the second row type used to create the row controller at index 1, and so on.
+The order of the strings in the `rowTypes` parameter determines the order of the row controller objects you retrieve using the [`rowController(at:)`](./rowcontroller%28at%29.md) method, with the first row type used to create the row controller at index 0, the second row type used to create the row controller at index 1, and so on.
 
 ## Parameters
 
@@ -26,8 +31,10 @@ The order of the strings in the `rowTypes` parameter determines the order of the
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setNumberOfRows(Int, withRowType: String)](wkinterfacetable/setnumberofrows(_:withrowtype:).md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Specifying the Row Types
+- [func setNumberOfRows(Int, withRowType: String)](./setnumberofrows%28_,withrowtype%29.md)
   Creates the specified number of row controllers (of the same type) to use in populating the table with data.
 
 

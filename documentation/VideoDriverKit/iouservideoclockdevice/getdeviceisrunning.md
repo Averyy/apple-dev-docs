@@ -1,7 +1,8 @@
 # GetDeviceIsRunning
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets bool value indicating if device is running.
 
@@ -10,7 +11,7 @@ Gets bool value indicating if device is running.
 
 ## Declaration
 
-```swift
+```c
 bool GetDeviceIsRunning();
 ```
 
@@ -20,13 +21,14 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetDeviceIsAlive](iouservideoclockdevice/setdeviceisalive.md)
+### Working with clock device state
+- [SetDeviceIsAlive](./setdeviceisalive.md)
   Sets a Boolean value to indicate the device is alive.
-- [GetDeviceIsAlive](iouservideoclockdevice/getdeviceisalive.md)
+- [GetDeviceIsAlive](./getdeviceisalive.md)
   Gets a Boolean value indicating if the device is alive.
-- [SetIsHidden](iouservideoclockdevice/setishidden.md)
+- [SetIsHidden](./setishidden.md)
   Sets a Boolean value indicating if the device is hidden.
-- [GetIsHidden](iouservideoclockdevice/getishidden.md)
+- [GetIsHidden](./getishidden.md)
   Gets a Boolean value indicating if the device is hidden.
 
 

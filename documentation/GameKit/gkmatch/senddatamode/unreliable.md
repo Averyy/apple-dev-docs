@@ -1,7 +1,8 @@
 # GKMatch.SendDataMode.unreliable
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sends data once even if an error occurs.
 
@@ -19,9 +20,13 @@ Sends data once even if an error occurs.
 case unreliable
 ```
 
+```c
+GKMatchSendDataUnreliable
+```
+
 ## Mentions
 
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](../../exchanging-data-between-players-in-real-time-games.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ Use this mode for small packets of data that must arrive quickly to be useful to
 
 ## See Also
 
-- [GKMatch.SendDataMode.reliable](gkmatch/senddatamode/reliable.md)
+### Modes
+- [GKMatch.SendDataMode.reliable](./reliable.md)
   Sends data continuously until the recipients successfully receive it or the connection times out.
 
 

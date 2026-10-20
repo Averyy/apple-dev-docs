@@ -1,7 +1,8 @@
 # AccountMailSMIME_SigningObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings for S/MIME signing.
 
@@ -13,7 +14,7 @@ Settings for S/MIME signing.
 
 ## Declaration
 
-```swift
+```
 object AccountMailSMIME_SigningObject
 ```
 
@@ -22,11 +23,16 @@ object AccountMailSMIME_SigningObject
 - `Enabled` (boolean) *(required)*: If `true`, the system enables S/MIME signing.
 - `IdentityAssetReference` (string): Specifies the identifier of an asset declaration containing the identity required for S/MIME signing of messages sent from this account.
 - `IdentityUserOverrideable` (boolean): If `true`, the user can select an S/MIME signing identity in Settings.
+
+  **Default**: `false`
 - `UserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object AccountMailSMIME_EncryptionObject](accountmailsmime_encryptionobject.md)
+### Objects
+- [object AccountMailSMIME_EncryptionObject](./accountmailsmime_encryptionobject.md)
   Settings for S/MIME encryption.
 
 

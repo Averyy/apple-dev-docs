@@ -1,6 +1,7 @@
 # Protecting user privacy in report data
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Understand measures that help protect user privacy.
 
@@ -17,7 +18,7 @@ These privacy measures maximize utility as the volume of data increases, while a
 
 > **Note**: For privacy information for reports not listed in this article, see the Privacy section in each report.
 
-#### Understand Standard and Detailed Report Types
+#### Understand standard and detailed report types
 
 In some reports, data might be more sensitive than it is in others. To help protect user privacy, the framework provides two types of reports:
 
@@ -41,27 +42,27 @@ Here is an example that shows noised and not noised installation and deletion da
 
 The following report groups have both standard and detailed reports:
 
-- [`App Clip Usage`](app-clip-usage.md)
-- [`App Sessions`](app-sessions.md)
-- [`App Store Discovery and Engagement`](app-store-discovery-and-engagement.md)
-- [`App Store Downloads`](app-download.md)
-- [`App Store Installations and Deletions`](app-installs.md)
-- [`App Store Pre-orders`](app-store-pre-order.md)
-- [`App Store Purchases`](app-store-purchase.md)
-- [`App Store Web Preview`](app-store-web-preview.md)
+- [App Clip Usage](./app-clip-usage.md)
+- [App Sessions](./app-sessions.md)
+- [App Store Discovery and Engagement](./app-store-discovery-and-engagement.md)
+- [App Store Downloads](./app-download.md)
+- [App Store Installations and Deletions](./app-installs.md)
+- [App Store Pre-orders](./app-store-pre-order.md)
+- [App Store Purchases](./app-store-purchase.md)
+- [App Store Web Preview](./app-store-web-preview.md)
 
-#### Understand App Usage Report Privacy Approach
+#### Understand App usage report privacy approach
 
 Users who opt in to share app usage data with Apple and developers do so with the understanding that they share their data in a non-personally identiﬁable way. To help ensure user privacy, the framework only generates both standard and detailed app usage reports when events exist from at least ﬁve users for the respective report. If fewer than ﬁve users contribute to a usage metric for a specific day, week, or month, then the relevant report does not generate. Additionally, for detailed reports, individual rows only populate if they have a value from 5 or more devices. These reports use this privacy approach:
 
-- [`App Clip Usage`](app-clip-usage.md)
-- [`App Crashes`](app-crashes.md)
-- [`App Sessions`](app-sessions.md)
-- [`App Store Installations and Deletions`](app-installs.md)
+- [App Clip Usage](./app-clip-usage.md)
+- [App Crashes](./app-crashes.md)
+- [App Sessions](./app-sessions.md)
+- [App Store Installations and Deletions](./app-installs.md)
 
-#### Understand App Store Purchases Detailed Report
+#### Understand App Store Purchases detailed report
 
-Because the [`App Store Purchases`](app-store-purchase.md) report contains several metrics that are highly relatable, for example, paying users, purchases, sales in USD, and proceeds in USD, the detailed report calculates noise once and applies it to all metrics. This approach ensures that the report has internal consistency across metrics, even with noise applied:
+Because the [App Store Purchases](./app-store-purchase.md) report contains several metrics that are highly relatable, for example, paying users, purchases, sales in USD, and proceeds in USD, the detailed report calculates noise once and applies it to all metrics. This approach ensures that the report has internal consistency across metrics, even with noise applied:
 
 - **Metrics**: Paying users, purchases, sales in USD, and proceeds in USD
 - **Noise**: Adds a small random number to paying users and purchases metric values then uses this number to calculate the noised sales and proceeds.
@@ -83,11 +84,11 @@ Here is an example showing true and noised data, where the amount of noise appli
 
 The following report has dollar-valued metrics:
 
-- [`App Store Purchases`](app-store-purchase.md)
+- [App Store Purchases](./app-store-purchase.md)
 
-#### Understand Session Duration in Specific Detailed Report Types
+#### Understand session duration in specific detailed report types
 
-In the [`App Sessions`](app-sessions.md) and [`App Clip Usage`](app-clip-usage.md) detailed reports, the total session duration metric can be more variable with user data when you compare it to other metrics such as unique devices. The framework calculates session duration noise accordingly while ensuring data usability. Other metrics in these reports are noised as previously described. The framework calculates a tailored level of noise for the session duration metric for each detailed report row. This approach reflects how different users use your app:
+In the [App Sessions](./app-sessions.md) and [App Clip Usage](./app-clip-usage.md) detailed reports, the total session duration metric can be more variable with user data when you compare it to other metrics such as unique devices. The framework calculates session duration noise accordingly while ensuring data usability. Other metrics in these reports are noised as previously described. The framework calculates a tailored level of noise for the session duration metric for each detailed report row. This approach reflects how different users use your app:
 
 - **Metrics**: Total session duration
 - **Noise**: Standard deviation calculated by dividing the average session duration for each detailed report row by 4
@@ -119,14 +120,15 @@ For the report row with 100,000 true total duration seconds, approximately:
 
 The following reports have a session duration metric:
 
-- [`App Clip Usage`](app-clip-usage.md)
-- [`App Crashes`](app-crashes.md)
-- [`App Installs Performance`](app-installs-performance.md)
-- [`App Sessions`](app-sessions.md)
+- [App Clip Usage](./app-clip-usage.md)
+- [App Crashes](./app-crashes.md)
+- [App Installs Performance](./app-installs-performance.md)
+- [App Sessions](./app-sessions.md)
 
 ## See Also
 
-- [Data Completeness and Corrections](data-completeness-corrections.md)
+### Essentials
+- [Data Completeness and Corrections](./data-completeness-corrections.md)
   Understand how the Analytics Reports API provides complete data sets.
 
 

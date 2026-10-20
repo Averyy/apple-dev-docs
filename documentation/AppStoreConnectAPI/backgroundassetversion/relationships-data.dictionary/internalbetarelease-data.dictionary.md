@@ -1,7 +1,8 @@
 # BackgroundAssetVersion.Relationships.InternalBetaRelease
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the Internal Beta Release related to a asset.
 
@@ -10,14 +11,14 @@ The data that describes the Internal Beta Release related to a asset.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersion.Relationships.InternalBetaRelease
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersion.Relationships.InternalBetaRelease.Data](backgroundassetversion/relationships-data.dictionary/internalbetarelease-data.dictionary/data-data.dictionary.md)
+- [object BackgroundAssetVersion.Relationships.InternalBetaRelease.Data](./internalbetarelease-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

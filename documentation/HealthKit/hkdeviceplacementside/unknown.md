@@ -1,7 +1,8 @@
 # HKDevicePlacementSide.unknown
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system couldn’t determine the device’s placement.
 
@@ -19,13 +20,18 @@ The system couldn’t determine the device’s placement.
 case unknown
 ```
 
+```c
+HKDevicePlacementSideUnknown
+```
+
 ## See Also
 
-- [HKDevicePlacementSide.central](hkdeviceplacementside/central.md)
+### Placements
+- [HKDevicePlacementSide.central](./central.md)
   A device predominately located near the center of the body.
-- [HKDevicePlacementSide.left](hkdeviceplacementside/left.md)
+- [HKDevicePlacementSide.left](./left.md)
   A device predominately located on the left side.
-- [HKDevicePlacementSide.right](hkdeviceplacementside/right.md)
+- [HKDevicePlacementSide.right](./right.md)
   A device predominately located on the right side.
 
 

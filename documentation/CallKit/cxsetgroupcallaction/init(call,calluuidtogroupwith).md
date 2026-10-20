@@ -1,7 +1,8 @@
 # init(call:callUUIDToGroupWith:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new action for a call identified by a given UUID, as well as a call to group with identified by another UUID.
 
@@ -18,18 +19,25 @@ Initializes a new action for a call identified by a given UUID, as well as a cal
 init(call callUUID: UUID, callUUIDToGroupWith: UUID?)
 ```
 
+```objc
+- (instancetype) initWithCallUUID:(NSUUID *) callUUID callUUIDToGroupWith:(NSUUID *) callUUIDToGroupWith;
+```
+
 #### Return Value
 
 A new action for the specified call UUID and call UUID to group with.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object of the action.
-- `callUUIDToGroupWith`: The unique identifier of a [`CXCall`](cxcall.md) object for the call associated with the action to group with. If `nil`, the the call associated with the receiver leaves any group it’s currently a member of.
+- `callUUID`: The unique identifier for the associated [`CXCall`](../cxcall.md) object of the action.
+- `callUUIDToGroupWith`: The unique identifier of a [`CXCall`](../cxcall.md) object for the call associated with the action to group with.
+
+  If `nil`, the the call associated with the receiver leaves any group it’s currently a member of.
 
 ## See Also
 
-- [init?(coder: NSCoder)](cxsetgroupcallaction/init(coder:).md)
+### Creating New Actions
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new action to group calls with data in an unarchiver.
 
 

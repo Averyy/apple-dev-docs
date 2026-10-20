@@ -7,7 +7,7 @@ Should never be used, obsolete. See IOCommandPool::withWorkLoop.
 
 ## Declaration
 
-```swift
+```c
 static IOCommandPool *commandPool(
  IOService *inOwner, 
  IOWorkLoop *inWorkLoop, 
@@ -16,17 +16,18 @@ static IOCommandPool *commandPool(
 
 ## See Also
 
-- [commandPool](iocommandpool/1811017-commandpool.md)
+### Miscellaneous
+- [commandPool](./api-1811017-commandpool.md)
   Should never be used, obsolete. See IOCommandPool::withWorkLoop.
-- [gatedGetCommand](iocommandpool/1811028-gatedgetcommand.md)
-- [gatedReturnCommand](iocommandpool/1811045-gatedreturncommand.md)
-- [getCommand](iocommandpool/1811062-getcommand.md)
-- [init](iocommandpool/1811075-init.md)
+- [gatedGetCommand](./api-1811028-gatedgetcommand.md)
+- [gatedReturnCommand](./api-1811045-gatedreturncommand.md)
+- [getCommand](./api-1811062-getcommand.md)
+- [init](./api-1811075-init.md)
   Should never be used, obsolete. See initWithWorkLoop.
-- [initWithWorkLoop](iocommandpool/1811086-initwithworkloop.md)
+- [initWithWorkLoop](./api-1811086-initwithworkloop.md)
   Primary initializer for an IOCommandPool object.
-- [returnCommand](iocommandpool/1811102-returncommand.md)
-- [withWorkLoop(IOWorkLoop *)](iocommandpool/1811136-withworkloop.md)
+- [returnCommand](./api-1811102-returncommand.md)
+- [withWorkLoop(IOWorkLoop *)](./api-1811136-withworkloop.md)
   Primary factory method for the IOCommandPool class
 
 

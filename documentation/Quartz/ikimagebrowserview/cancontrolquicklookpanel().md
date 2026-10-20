@@ -1,7 +1,8 @@
 # canControlQuickLookPanel()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the view can automatically take control of the QuickLook panel.
 
@@ -14,13 +15,18 @@ Returns whether the view can automatically take control of the QuickLook panel.
 func canControlQuickLookPanel() -> Bool
 ```
 
+```objc
+- (BOOL) canControlQuickLookPanel;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true), if the view can display the Quick Look panel, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md), if the view can display the Quick Look panel, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func setCanControlQuickLookPanel(Bool)](ikimagebrowserview/setcancontrolquicklookpanel(_:).md)
+### QuickLook Support
+- [func setCanControlQuickLookPanel(Bool)](./setcancontrolquicklookpanel%28_%29.md)
   Specifies whether the view can automatically take control of the QuickLook panel.
 
 

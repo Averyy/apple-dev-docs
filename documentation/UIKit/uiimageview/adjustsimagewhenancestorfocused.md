@@ -1,7 +1,8 @@
 # adjustsImageWhenAncestorFocused
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the image view responds when an ancestor gains focus.
 
@@ -14,17 +15,22 @@ A Boolean value that determines whether the image view responds when an ancestor
 var adjustsImageWhenAncestorFocused: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL adjustsImageWhenAncestorFocused;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and an ancestor of the image view becomes focused, the image view adjusts the frame of its image using the [`focusedFrameGuide`](uiimageview/focusedframeguide.md) property. On supported Apple TV devices, setting this property to true renders the image with a Liquid Glass effect when it gains focus.
+When the value of this property is [`true`](../../Swift/true.md) and an ancestor of the image view becomes focused, the image view adjusts the frame of its image using the [`focusedFrameGuide`](./focusedframeguide.md) property. On supported Apple TV devices, setting this property to true renders the image with a Liquid Glass effect when it gains focus.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var focusedFrameGuide: UILayoutGuide](uiimageview/focusedframeguide.md)
+### Managing focus-related behaviors
+- [var focusedFrameGuide: UILayoutGuide](./focusedframeguide.md)
   The layout guide to use when the image view is focused.
-- [var masksFocusEffectToContents: Bool](uiimageview/masksfocuseffecttocontents.md)
+- [var masksFocusEffectToContents: Bool](./masksfocuseffecttocontents.md)
   A Boolean value indicating whether the floating focused appearance uses the image’s alpha channel.
 
 

@@ -1,7 +1,8 @@
 # ungrouped()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame that contains all the rows from each group in the row grouping.
 

@@ -1,7 +1,8 @@
 # callAsFunction(value:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the immersive space that handles the type of the presented value.
 
@@ -18,13 +19,13 @@ Presents the immersive space that handles the type of the presented value.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`openImmersiveSpace`](environmentvalues/openimmersivespace.md) action with a value:
+Don’t call this method directly. SwiftUI calls it when you call the [`openImmersiveSpace`](../environmentvalues/openimmersivespace.md) action with a value:
 
 ```swift
 await openImmersiveSpace(value: planet.ID)
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction(id: String) async -> OpenImmersiveSpaceAction.Result](openimmersivespaceaction/callasfunction(id:).md)
+### Calling the action
+- [func callAsFunction(id: String) async -> OpenImmersiveSpaceAction.Result](./callasfunction%28id%29.md)
   Presents an immersive space for the scene with the specified identifier.
-- [func callAsFunction<D>(id: String, value: D) async -> OpenImmersiveSpaceAction.Result](openimmersivespaceaction/callasfunction(id:value:).md)
+- [func callAsFunction<D>(id: String, value: D) async -> OpenImmersiveSpaceAction.Result](./callasfunction%28id,value%29.md)
   Presents the immersive space that your app defines for the specified identifier and that handles the type of the presented value.
 
 

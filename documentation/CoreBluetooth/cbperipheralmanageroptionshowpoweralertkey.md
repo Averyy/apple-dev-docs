@@ -1,7 +1,8 @@
 # CBPeripheralManagerOptionShowPowerAlertKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value specifying whether the system should warn if Bluetooth is in the powered-off state when instantiating the peripheral manager.
 
@@ -20,13 +21,18 @@ A Boolean value specifying whether the system should warn if Bluetooth is in the
 let CBPeripheralManagerOptionShowPowerAlertKey: String
 ```
 
+```c
+extern NSString * const CBPeripheralManagerOptionShowPowerAlertKey;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). If the key isn’t specified, the default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value for this key is an [`NSNumber`](../Foundation/nsnumber.md). If the key isn’t specified, the default value is [`false`](../Swift/false.md).
 
 ## See Also
 
-- [let CBPeripheralManagerOptionRestoreIdentifierKey: String](cbperipheralmanageroptionrestoreidentifierkey.md)
+### Initialization Options
+- [let CBPeripheralManagerOptionRestoreIdentifierKey: String](./cbperipheralmanageroptionrestoreidentifierkey.md)
   A string containing a unique identifier (UID) for the peripheral manager to instantiate.
 
 

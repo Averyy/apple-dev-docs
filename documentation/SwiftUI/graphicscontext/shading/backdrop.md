@@ -1,7 +1,8 @@
 # backdrop
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shading instance that draws a copy of the current background.
 
@@ -22,7 +23,8 @@ static var backdrop: GraphicsContext.Shading { get }
 
 ## See Also
 
-- [static func palette([GraphicsContext.Shading]) -> GraphicsContext.Shading](graphicscontext/shading/palette(_:).md)
+### Composite shading types
+- [static func palette([GraphicsContext.Shading]) -> GraphicsContext.Shading](./palette%28_%29.md)
   Returns a multilevel shading instance constructed from an array of shading instances.
 
 

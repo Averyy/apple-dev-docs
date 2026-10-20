@@ -1,7 +1,8 @@
 # textViewDidChangeSelection(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the text selection changes in the specified text view.
 
@@ -9,7 +10,7 @@ Tells the delegate when the text selection changes in the specified text view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Tells the delegate when the text selection changes in the specified text view.
 optional func textViewDidChangeSelection(_ textView: UITextView)
 ```
 
+```objc
+- (void) textViewDidChangeSelection:(UITextView *) textView;
+```
+
 #### Discussion
 
-Implementation of this method is optional. You can use the [`selectedRange`](uitextview/selectedrange.md) property of the text view to get the new selection.
+Implementation of this method is optional. You can use the [`selectedRange`](../uitextview/selectedrange.md) property of the text view to get the new selection.
 
 ## Parameters
 

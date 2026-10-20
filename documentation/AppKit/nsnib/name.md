@@ -1,10 +1,11 @@
 # NSNib.Name
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 typealias Name = String
 ```
 
+```c
+typedef NSString * NSNibName;
+```
+
 ## See Also
 
-- [init?(nibNamed: NSNib.Name, bundle: Bundle?)](nsnib/init(nibnamed:bundle:).md)
+### Initializing a Nib
+- [init?(nibNamed: NSNib.Name, bundle: Bundle?)](./init%28nibnamed,bundle%29.md)
   Returns an `NSNib` object initialized to the nib file in the specified bundle.
-- [init(nibData: Data, bundle: Bundle?)](nsnib/init(nibdata:bundle:).md)
+- [init(nibData: Data, bundle: Bundle?)](./init%28nibdata,bundle%29.md)
   Initializes an instance with nib data and specified bundle for locating resources.
 
 

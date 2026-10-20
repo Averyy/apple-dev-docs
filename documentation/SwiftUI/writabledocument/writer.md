@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that implements writing to disk.
@@ -21,13 +22,14 @@ associatedtype Writer : DocumentWriter
 
 ## See Also
 
-- [static var writableContentTypes: [UTType]](writabledocument/writablecontenttypes.md)
+### Writing a document
+- [static var writableContentTypes: [UTType]](./writablecontenttypes.md)
   The content types this document can save or export to.
-- [WritableDocument.WriteConfiguration](writabledocument/writeconfiguration.md)
+- [WritableDocument.WriteConfiguration](./writeconfiguration.md)
   The configuration for writing document contents.
-- [func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer](writabledocument/writer(configuration:).md)
+- [func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer](./writer%28configuration%29.md)
   Creates a writer to save this document to disk.
-- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](writabledocument/snapshot(contenttype:).md)
+- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](./snapshot%28contenttype%29.md)
   Captures the document’s current state for saving.
 
 

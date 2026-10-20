@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the video processor.
 

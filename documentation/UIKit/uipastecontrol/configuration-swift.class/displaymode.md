@@ -1,7 +1,8 @@
 # displayMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that determines whether the paste button composes an icon, textual label, or both.
 
@@ -17,9 +18,14 @@ An option that determines whether the paste button composes an icon, textual lab
 var displayMode: UIPasteControl.DisplayMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIPasteControlDisplayMode displayMode;
+```
+
 ## See Also
 
-- [UIPasteControl.DisplayMode](uipastecontrol/displaymode.md)
+### Choosing control icon and text
+- [UIPasteControl.DisplayMode](../displaymode.md)
   Options that determine whether a paste button composes an icon, textual label, or both.
 
 

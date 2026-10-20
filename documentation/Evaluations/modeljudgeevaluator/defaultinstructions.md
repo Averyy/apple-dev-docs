@@ -1,7 +1,8 @@
 # defaultInstructions
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default system instructions the model uses when no custom instructions are provided.
 
@@ -22,7 +23,8 @@ static var defaultInstructions: String { get }
 
 ## See Also
 
-- [func judgePrompt(for: Input, output: Input.ExpectedValue) async throws -> Prompt](modeljudgeevaluator/judgeprompt(for:output:).md)
+### Configuring the judge prompt
+- [func judgePrompt(for: Input, output: Input.ExpectedValue) async throws -> Prompt](./judgeprompt%28for,output%29.md)
   Builds and returns the full judge prompt for inspection, debugging, or logging.
 
 

@@ -1,7 +1,8 @@
 # thresholdValue
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The threshold value used to initialize the threshold filter.
 
@@ -19,11 +20,16 @@ The threshold value used to initialize the threshold filter.
 var thresholdValue: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float thresholdValue;
+```
+
 ## See Also
 
-- [var maximumValue: Float](mpsimagethresholdbinary/maximumvalue.md)
+### Properties
+- [var maximumValue: Float](./maximumvalue.md)
   The maximum value used to initialize the threshold filter.
-- [var transform: UnsafePointer<Float>](mpsimagethresholdbinary/transform.md)
+- [var transform: UnsafePointer<Float>](./transform.md)
   The color transform used to initialize the threshold filter.
 
 

@@ -1,7 +1,8 @@
 # createRequest()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new Apple ID authorization request.
 
@@ -20,15 +21,20 @@ Creates a new Apple ID authorization request.
 func createRequest() -> ASAuthorizationAppleIDRequest
 ```
 
+```objc
+- (ASAuthorizationAppleIDRequest *) createRequest;
+```
+
 #### Return Value
 
 An Apple ID authorization request that you can configure and execute.
 
 ## See Also
 
-- [class ASAuthorizationAppleIDRequest](asauthorizationappleidrequest.md)
+### Creating Requests
+- [class ASAuthorizationAppleIDRequest](../asauthorizationappleidrequest.md)
   An OpenID authorization request that relies on the user’s Apple ID.
-- [class ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [class ASAuthorizationOpenIDRequest](../asauthorizationopenidrequest.md)
   An OpenID authorization request.
 
 

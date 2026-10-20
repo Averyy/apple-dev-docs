@@ -1,7 +1,8 @@
 # encode(into:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the configured deformation passes into the given command encoder.
 
@@ -21,7 +22,7 @@ final func encode(into encoder: any MTLComputeCommandEncoder) throws
 
 Call `input.setVertices(_:offset:semantic:)` and `output.setVertices(_:offset:semantic:)` before calling this method each frame.
 
-> **Note**: If any required buffer has not been set, or if `encoder` uses concurrent dispatch.
+> **Throws**: If any required buffer has not been set, or if `encoder` uses concurrent dispatch.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Call `input.setVertices(_:offset:semantic:)` and `output.setVertices(_:offset:se
 
 ## See Also
 
-- [LowLevelDeformation.Pipeline](lowleveldeformation/pipeline.md)
+### Encoding deformation work
+- [LowLevelDeformation.Pipeline](./pipeline.md)
   A compiled compute pipeline for a specific combination of mesh layouts and deformer stages.
-- [LowLevelDeformation.Error](lowleveldeformation/error.md)
+- [LowLevelDeformation.Error](./error.md)
   The error type thrown by every throwing method and initializer.
 
 

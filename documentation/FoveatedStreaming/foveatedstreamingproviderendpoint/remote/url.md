@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the remote streaming server.
 

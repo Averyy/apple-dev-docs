@@ -1,7 +1,8 @@
 # stateHash
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains combined state hash data for all available companion types. . Returns `nil` if no companion devices are paired.
 
@@ -17,11 +18,15 @@ Contains combined state hash data for all available companion types. . Returns `
 var stateHash: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * stateHash;
+```
+
 #### Discussion
 
 As long as database of paired companion devices doesn’t change, `stateHash` stays the same for the same set of `availableCompanions`.
 
-```None
+```
          If database of paired companion devices was modified, `stateHash`
          data will change. Nature of such database changes cannot be determined
          but comparing data of `stateHash` after different policy evaluation
@@ -31,7 +36,7 @@ As long as database of paired companion devices doesn’t change, `stateHash` st
          you can use `stateHashForCompanionType` method.
 ```
 
-```None
+```
      the list of paired companions has not changed.
 ```
 

@@ -1,7 +1,8 @@
 # BNNSL2Norm
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents the L2 norm.
 
@@ -20,13 +21,18 @@ A constant that represents the L2 norm.
 var BNNSL2Norm: BNNSNormType { get }
 ```
 
+```c
+BNNSL2Norm
+```
+
 ## See Also
 
-- [init(UInt32)](bnnsnormtype/init(_:).md)
+### Constants
+- [init(UInt32)](./bnnsnormtype/init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: UInt32)](bnnsnormtype/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsnormtype/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: UInt32](bnnsnormtype/rawvalue.md)
+- [var rawValue: UInt32](./bnnsnormtype/rawvalue.md)
   The corresponding value of the raw type.
 
 

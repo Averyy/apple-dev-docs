@@ -1,7 +1,8 @@
 # BetaTesterCreateRequest.Data.Relationships.BetaGroups
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BetaTesterCreateRequest.Data.Relationships.BetaGroups
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaTesterCreateRequest.Data.Relationships.BetaGroups.Data](betatestercreaterequest/data-data.dictionary/relationships-data.dictionary/betagroups-data.dictionary/data-data.dictionary.md)
+- [object BetaTesterCreateRequest.Data.Relationships.BetaGroups.Data](./betagroups-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaTesterCreateRequest.Data.Relationships.BetaGroups
 
 ## See Also
 
-- [object BetaTesterCreateRequest.Data.Relationships.Builds](betatestercreaterequest/data-data.dictionary/relationships-data.dictionary/builds-data.dictionary.md)
+### Objects
+- [object BetaTesterCreateRequest.Data.Relationships.Builds](./builds-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

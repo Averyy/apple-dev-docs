@@ -1,7 +1,8 @@
 # Data.Deallocator.free
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use `free`.
 
@@ -22,13 +23,14 @@ case free
 
 ## See Also
 
-- [case custom((UnsafeMutableRawPointer, Int) -> Void)](data/deallocator/custom(_:).md)
+### Enumeration Cases
+- [case custom((UnsafeMutableRawPointer, Int) -> Void)](./custom%28_%29.md)
   A custom deallocator.
-- [Data.Deallocator.none](data/deallocator/none.md)
+- [Data.Deallocator.none](./none.md)
   Do nothing upon deallocation.
-- [Data.Deallocator.unmap](data/deallocator/unmap.md)
+- [Data.Deallocator.unmap](./unmap.md)
   Use `munmap`.
-- [Data.Deallocator.virtualMemory](data/deallocator/virtualmemory.md)
+- [Data.Deallocator.virtualMemory](./virtualmemory.md)
 
 
 ---

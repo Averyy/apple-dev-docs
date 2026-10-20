@@ -1,7 +1,8 @@
 # GSS_C_PRF_KEY_PARTIAL
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 This value indicates using the sub-session key the initiator or the ticket’s session key.
 
@@ -18,9 +19,14 @@ This value indicates using the sub-session key the initiator or the ticket’s s
 var GSS_C_PRF_KEY_PARTIAL: Int32 { get }
 ```
 
+```c
+#define GSS_C_PRF_KEY_PARTIAL
+```
+
 ## See Also
 
-- [var GSS_C_PRF_KEY_FULL: Int32](gss_c_prf_key_full.md)
+### Pseudo Random Constants
+- [var GSS_C_PRF_KEY_FULL: Int32](./gss_c_prf_key_full.md)
   This value indicates using the sub-session key by acceptor, initiator, or the ticket’s session key.
 
 

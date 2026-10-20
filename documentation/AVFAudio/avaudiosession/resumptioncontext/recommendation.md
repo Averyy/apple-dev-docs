@@ -1,7 +1,8 @@
 # recommendation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system’s recommendation on whether to resume playback.
 
@@ -19,9 +20,13 @@ The system’s recommendation on whether to resume playback.
 var recommendation: AVAudioSession.ResumptionRecommendation { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioSessionResumptionRecommendation recommendation;
+```
+
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../../handling-audio-interruptions.md)
 
 
 ---

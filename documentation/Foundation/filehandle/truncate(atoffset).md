@@ -1,7 +1,8 @@
 # truncate(atOffset:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position.
 
@@ -20,6 +21,10 @@ Truncates or extends the file represented by the file handle to a specified offs
 func truncate(atOffset offset: UInt64) throws
 ```
 
+```objc
+- (BOOL) truncateAtOffset:(unsigned long long) offset error:(NSError **) error;
+```
+
 #### Discussion
 
 If the file is extended (if `offset` is beyond the current end of file), the added characters are null bytes.
@@ -30,9 +35,10 @@ If the file is extended (if `offset` is beyond the current end of file), the add
 
 ## See Also
 
-- [func close() throws](filehandle/close.md)
+### Operating on a file
+- [func close() throws](./close%28%29.md)
   Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing.
-- [func synchronize() throws](filehandle/synchronize.md)
+- [func synchronize() throws](./synchronize%28%29.md)
   Causes all in-memory data and attributes of the file represented by the file handle to write to permanent storage.
 
 

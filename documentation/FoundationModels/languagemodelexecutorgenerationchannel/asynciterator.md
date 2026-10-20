@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.AsyncIterator
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous iterator that produces the generation events sent on a channel.
 
@@ -22,7 +23,7 @@ struct AsyncIterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../Swift/asynciteratorprotocol.md)
 
 
 ---

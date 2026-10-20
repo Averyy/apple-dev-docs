@@ -1,7 +1,8 @@
 # setMeshInstance(_:index:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a mesh instance to the slot at the given index, or clears the slot if the instance is nil.
 
@@ -21,7 +22,7 @@ final func setMeshInstance(_ newElement: LowLevelMeshInstanceArray.Element, inde
 
 The `index` must be at least `0` and less than `count`.
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the render target descriptors of the array are not a subset of the render target descriptors of the mesh instance’s pipeline state.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if the render target descriptors of the array are not a subset of the render target descriptors of the mesh instance’s pipeline state.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ The `index` must be at least `0` and less than `count`.
 
 ## See Also
 
-- [var count: Int](lowlevelmeshinstancearray/count.md)
+### Setting mesh instances
+- [var count: Int](./count.md)
   The number of instance slots in this array.
 
 

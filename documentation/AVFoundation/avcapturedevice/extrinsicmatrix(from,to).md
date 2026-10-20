@@ -1,7 +1,8 @@
 # extrinsicMatrix(from:to:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the relative extrinsic matrix from one capture device to another.
 
@@ -17,9 +18,13 @@ Returns the relative extrinsic matrix from one capture device to another.
 class func extrinsicMatrix(from fromDevice: AVCaptureDevice, to toDevice: AVCaptureDevice) -> Data?
 ```
 
+```objc
++ (NSData *) extrinsicMatrixFromDevice:(AVCaptureDevice *) fromDevice toDevice:(AVCaptureDevice *) toDevice;
+```
+
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/foundation/data) containing a [`matrix_float4x3`](https://developer.apple.com/documentation/simd/matrix_float4x3) matrix, which is a column major with 3 rows and 4 columns.
+A [`Data`](../../Foundation/data.md) containing a [`matrix_float4x3`](https://developer.apple.com/documentation/simd/matrix_float4x3) matrix, which is a column major with 3 rows and 4 columns.
 
 #### Discussion
 
@@ -27,7 +32,7 @@ The extrinsic matrix consists of a unitless 3x3 rotation matrix (R) on the left 
 
 Only physical cameras for which factory calibrations exist provide an extrinsic matrix. Virtual device cameras return `nil`.
 
-> ❗ **Important**:  If you enable video stabilization by setting a [`preferredVideoStabilizationMode`](avcaptureconnection/preferredvideostabilizationmode.md) value, the pixels in stabilized video frames no longer match the relative extrinsic matrix from one device to another due to warping. Disable video stabilization if you’re using the extrinsic matrix and camera intrinsics.
+> ❗ **Important**:  If you enable video stabilization by setting a [`preferredVideoStabilizationMode`](../avcaptureconnection/preferredvideostabilizationmode.md) value, the pixels in stabilized video frames no longer match the relative extrinsic matrix from one device to another due to warping. Disable video stabilization if you’re using the extrinsic matrix and camera intrinsics.
 
 ## Parameters
 

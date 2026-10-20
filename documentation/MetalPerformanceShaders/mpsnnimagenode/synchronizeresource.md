@@ -1,7 +1,8 @@
 # synchronizeResource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -17,15 +18,20 @@
 var synchronizeResource: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL synchronizeResource;
+```
+
 ## See Also
 
-- [var exportFromGraph: Bool](mpsnnimagenode/exportfromgraph.md)
-- [var format: MPSImageFeatureChannelFormat](mpsnnimagenode/format.md)
-- [enum MPSImageFeatureChannelFormat](mpsimagefeaturechannelformat.md)
+### Instance Properties
+- [var exportFromGraph: Bool](./exportfromgraph.md)
+- [var format: MPSImageFeatureChannelFormat](./format.md)
+- [enum MPSImageFeatureChannelFormat](../mpsimagefeaturechannelformat.md)
   Encodes the representation of a single channel within an image.
-- [var handle: (any MPSHandle)?](mpsnnimagenode/handle.md)
-- [var imageAllocator: any MPSImageAllocator](mpsnnimagenode/imageallocator.md)
-- [var stopGradient: Bool](mpsnnimagenode/stopgradient.md)
+- [var handle: (any MPSHandle)?](./handle.md)
+- [var imageAllocator: any MPSImageAllocator](./imageallocator.md)
+- [var stopGradient: Bool](./stopgradient.md)
 
 
 ---

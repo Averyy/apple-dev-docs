@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the system supports external storage devices.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the system supports external storage devi
 
 ```swift
 class var isSupported: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isSupported) BOOL supported;
 ```
 
 

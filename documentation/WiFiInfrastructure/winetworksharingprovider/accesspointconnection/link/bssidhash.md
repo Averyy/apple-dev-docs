@@ -1,7 +1,8 @@
 # bssidHash
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hash of the Access Point’s BSSID, which can be used to find this access point link in the environment.
 

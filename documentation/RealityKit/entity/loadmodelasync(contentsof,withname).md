@@ -1,16 +1,17 @@
 # loadModelAsync(contentsOf:withName:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a load request that creates a model entity by asynchronously loading it from a file URL and flattening the model entity’s hierarchy.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0 (renamed: ModelEntity.init(contentsOf:withName:))
+- iPadOS 13.0+ - Deprecated in 18.0 (renamed: ModelEntity.init(contentsOf:withName:))
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: ModelEntity.init(contentsOf:withName:))
+- macOS 10.15+ - Deprecated in 15.0 (renamed: ModelEntity.init(contentsOf:withName:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: ModelEntity.init(contentsOf:withName:))
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Returns a load request that creates a model entity by asynchronously loading it 
 
 #### Discussion
 
-For more information on loading entities, see [`Loading entities from a file`](loading-entities-from-a-file.md).
+For more information on loading entities, see [Loading entities from a file](../loading-entities-from-a-file.md).
 
 ## Parameters
 
@@ -30,11 +31,12 @@ For more information on loading entities, see [`Loading entities from a file`](l
 
 ## See Also
 
-- [static func loadModel(named: String, in: Bundle?) throws -> ModelEntity](entity/loadmodel(named:in:).md)
+### Loading a flattened model entity
+- [static func loadModel(named: String, in: Bundle?) throws -> ModelEntity](./loadmodel%28named,in%29.md)
   Synchronously loads a model entity from a bundle.
-- [static func loadModel(contentsOf: URL, withName: String?) throws -> ModelEntity](entity/loadmodel(contentsof:withname:).md)
+- [static func loadModel(contentsOf: URL, withName: String?) throws -> ModelEntity](./loadmodel%28contentsof,withname%29.md)
   Synchronously loads a model entity from a file URL.
-- [static func loadModelAsync(named: String, in: Bundle?) -> LoadRequest<ModelEntity>](entity/loadmodelasync(named:in:).md)
+- [static func loadModelAsync(named: String, in: Bundle?) -> LoadRequest<ModelEntity>](./loadmodelasync%28named,in%29.md)
   Asynchronously loads a model entity from a bundle.
 
 

@@ -1,7 +1,8 @@
 # progressViewStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for progress views in this view.
 
@@ -36,15 +37,16 @@ ProgressView()
 
 ## See Also
 
-- [struct Gauge](gauge.md)
+### Indicating a value
+- [struct Gauge](../gauge.md)
   A view that shows a value within a range.
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+- [func gaugeStyle<S>(S) -> some View](./gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [struct ProgressView](progressview.md)
+- [struct ProgressView](../progressview.md)
   A view that shows the progress toward completion of a task.
-- [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
+- [struct DefaultDateProgressLabel](../defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
-- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+- [struct DefaultButtonLabel](../defaultbuttonlabel.md)
   The default label to use for a button.
 
 

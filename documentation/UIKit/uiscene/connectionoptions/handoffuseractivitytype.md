@@ -1,7 +1,8 @@
 # handoffUserActivityType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the pending Handoff activity.
 
@@ -18,9 +19,13 @@ The type of the pending Handoff activity.
 var handoffUserActivityType: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * handoffUserActivityType;
+```
+
 #### Discussion
 
-When a Handoff activity is pending at scene-connection time, UIKit puts the type of that activity in this property. Use this information at connection time to prepare your scene to receive the actual activity object. After your scene connects, UIKit calls the appropriate delegate methods to deliver the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object.
+When a Handoff activity is pending at scene-connection time, UIKit puts the type of that activity in this property. Use this information at connection time to prepare your scene to receive the actual activity object. After your scene connects, UIKit calls the appropriate delegate methods to deliver the [`NSUserActivity`](../../../Foundation/nsuseractivity.md) object.
 
 If the value of this property is `nil`, no Handoff activity is pending.
 

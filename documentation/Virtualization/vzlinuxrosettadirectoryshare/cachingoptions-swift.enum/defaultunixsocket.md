@@ -1,7 +1,8 @@
 # defaultUnixSocket
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The options to use for a default UNIX domain socket.
 
@@ -16,9 +17,10 @@ static var defaultUnixSocket: VZLinuxRosettaDirectoryShare.CachingOptions { get 
 
 ## See Also
 
-- [static var maximumNameLength: Int](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum/maximumnamelength.md)
+### Type properties
+- [static var maximumNameLength: Int](./maximumnamelength.md)
   The maximum length of the name of an abstract socket.
-- [static var maximumPathLength: Int](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum/maximumpathlength.md)
+- [static var maximumPathLength: Int](./maximumpathlength.md)
   The maximum length of the path to a UNIX domain socket.
 
 

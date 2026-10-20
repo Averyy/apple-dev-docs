@@ -1,7 +1,8 @@
 # decode(_:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a value of the given type for the given key.
 
@@ -26,11 +27,11 @@ A value of the requested type, if present for the given key and convertible to t
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
+> **Throws**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-> **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
+> **Throws**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 
-> **Note**: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
+> **Throws**: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
 
 ## Parameters
 

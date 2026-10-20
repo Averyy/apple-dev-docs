@@ -1,23 +1,30 @@
 # CFGregorianDateIsValid(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Checks the specified fields of a CFGregorianDate structure for valid values.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.4+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 8.0
+- iPadOS 2.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.4+ - Deprecated in 10.10
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use CFCalendar or NSCalendar API instead
 
 ## Declaration
 
 ```swift
 func CFGregorianDateIsValid(_ gdate: CFGregorianDate, _ unitFlags: CFOptionFlags) -> Bool
+```
+
+```c
+extern Boolean CFGregorianDateIsValid(CFGregorianDate gdate, CFOptionFlags unitFlags);
 ```
 
 #### Return Value
@@ -27,25 +34,26 @@ func CFGregorianDateIsValid(_ gdate: CFGregorianDate, _ unitFlags: CFOptionFlags
 ## Parameters
 
 - `gdate`: The CFGregorianDate structure whose fields to validate.
-- `unitFlags`: A mask that specifies which Gregorian unit fields to validate. See [`CFGregorianUnitFlags`](cfgregorianunitflags.md) for a list of values from which to construct the mask.
+- `unitFlags`: A mask that specifies which Gregorian unit fields to validate. See [`CFGregorianUnitFlags`](./cfgregorianunitflags.md) for a list of values from which to construct the mask.
 
 ## See Also
 
-- [func CFAbsoluteTimeAddGregorianUnits(CFAbsoluteTime, CFTimeZone!, CFGregorianUnits) -> CFAbsoluteTime](cfabsolutetimeaddgregorianunits(_:_:_:).md)
+### Core Foundation Time Utilities Miscellaneous Functions
+- [func CFAbsoluteTimeAddGregorianUnits(CFAbsoluteTime, CFTimeZone!, CFGregorianUnits) -> CFAbsoluteTime](./cfabsolutetimeaddgregorianunits%28_,_,_%29.md)
   Adds a time interval, expressed as Gregorian units, to a given absolute time.
-- [func CFAbsoluteTimeGetCurrent() -> CFAbsoluteTime](cfabsolutetimegetcurrent().md)
+- [func CFAbsoluteTimeGetCurrent() -> CFAbsoluteTime](./cfabsolutetimegetcurrent%28%29.md)
   Returns the current system absolute time.
-- [func CFAbsoluteTimeGetDayOfWeek(CFAbsoluteTime, CFTimeZone!) -> Int32](cfabsolutetimegetdayofweek(_:_:).md)
+- [func CFAbsoluteTimeGetDayOfWeek(CFAbsoluteTime, CFTimeZone!) -> Int32](./cfabsolutetimegetdayofweek%28_,_%29.md)
   Returns an integer representing the day of the week indicated by the specified absolute time.
-- [func CFAbsoluteTimeGetDayOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](cfabsolutetimegetdayofyear(_:_:).md)
+- [func CFAbsoluteTimeGetDayOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](./cfabsolutetimegetdayofyear%28_,_%29.md)
   Returns an integer representing the day of the year indicated by the specified absolute time.
-- [func CFAbsoluteTimeGetDifferenceAsGregorianUnits(CFAbsoluteTime, CFAbsoluteTime, CFTimeZone!, CFOptionFlags) -> CFGregorianUnits](cfabsolutetimegetdifferenceasgregorianunits(_:_:_:_:).md)
+- [func CFAbsoluteTimeGetDifferenceAsGregorianUnits(CFAbsoluteTime, CFAbsoluteTime, CFTimeZone!, CFOptionFlags) -> CFGregorianUnits](./cfabsolutetimegetdifferenceasgregorianunits%28_,_,_,_%29.md)
   Computes the time difference between two specified absolute times and returns the result as an interval in Gregorian units.
-- [func CFAbsoluteTimeGetGregorianDate(CFAbsoluteTime, CFTimeZone!) -> CFGregorianDate](cfabsolutetimegetgregoriandate(_:_:).md)
+- [func CFAbsoluteTimeGetGregorianDate(CFAbsoluteTime, CFTimeZone!) -> CFGregorianDate](./cfabsolutetimegetgregoriandate%28_,_%29.md)
   Converts an absolute time value into a Gregorian date.
-- [func CFAbsoluteTimeGetWeekOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](cfabsolutetimegetweekofyear(_:_:).md)
+- [func CFAbsoluteTimeGetWeekOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](./cfabsolutetimegetweekofyear%28_,_%29.md)
   Returns an integer representing the week of the year indicated by the specified absolute time.
-- [func CFGregorianDateGetAbsoluteTime(CFGregorianDate, CFTimeZone!) -> CFAbsoluteTime](cfgregoriandategetabsolutetime(_:_:).md)
+- [func CFGregorianDateGetAbsoluteTime(CFGregorianDate, CFTimeZone!) -> CFAbsoluteTime](./cfgregoriandategetabsolutetime%28_,_%29.md)
   Converts a Gregorian date value into an absolute time value.
 
 

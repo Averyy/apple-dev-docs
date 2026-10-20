@@ -1,7 +1,8 @@
 # revocationType
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of refund or revocation that applies to the transaction.
 
@@ -24,7 +25,7 @@ let revocationType: Transaction.RevocationType?
 
 This property indicates whether the transaction has a full refund, a prorated refund, or is revoked from Family Sharing. This property is `nil` for transactions that are not revoked.
 
-> **Note**: This property is not present for Advanced Commerce transactions, which use [`refunds`](transaction/advancedcommerceinfo-swift.struct/item/refunds.md) instead.
+> **Note**: This property is not present for Advanced Commerce transactions, which use [`refunds`](./advancedcommerceinfo-swift.struct/item/refunds.md) instead.
 
 
 ---

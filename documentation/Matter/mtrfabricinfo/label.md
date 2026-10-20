@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 var label: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * label;
 ```
 
 

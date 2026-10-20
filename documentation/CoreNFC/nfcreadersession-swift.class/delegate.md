@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the reader session.
 
@@ -16,9 +17,14 @@ The delegate of the reader session.
 weak var delegate: AnyObject? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) id delegate;
+```
+
 ## See Also
 
-- [var sessionQueue: dispatch_queue_t](nfcreadersession-swift.class/sessionqueue.md)
+### Working with a Session
+- [var sessionQueue: dispatch_queue_t](./sessionqueue.md)
   The queue on which the reader session delegate callbacks and completion block handlers are dispatched.
 
 

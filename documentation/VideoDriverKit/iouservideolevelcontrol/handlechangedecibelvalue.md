@@ -1,7 +1,8 @@
 # HandleChangeDecibelValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The system calls this virtual method when the control’s value changes.
 
@@ -10,7 +11,7 @@ The system calls this virtual method when the control’s value changes.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeDecibelValue(float in_decibel_value);
 ```
 
@@ -28,7 +29,8 @@ The default implementation calls SetDecibelValue() and returns `kIOReturnSuccess
 
 ## See Also
 
-- [HandleChangeScalarValue](iouservideolevelcontrol/handlechangescalarvalue.md)
+### Supporting value changes
+- [HandleChangeScalarValue](./handlechangescalarvalue.md)
   The system calls this virtual method when the control’s value changes.
 
 

@@ -1,7 +1,8 @@
 # AVSystemRoute.DataChannel
 
 **Framework**: AVSystemRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages bidirectional data communication with a remote application.
 
@@ -19,23 +20,24 @@ final class DataChannel
 ## Topics
 
 ### Instance Properties
-- [var dataDelegate: (any AVSystemRouteDataDelegate)?](avsystemroute-5s2um/datachannel/datadelegate.md)
+- [var dataDelegate: (any AVSystemRouteDataDelegate)?](./datachannel/datadelegate.md)
   The delegate that handles incoming data from a remote application.
 ### Instance Methods
-- [func send(Data) async throws](avsystemroute-5s2um/datachannel/send(_:).md)
+- [func send(Data) async throws](./datachannel/send%28_%29.md)
   Sends data to a remote application.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVSystemRouteMediaSession](avsystemroutemediasession-98ioq.md)
+### Playback and communication
+- [class AVSystemRouteMediaSession](../avsystemroutemediasession-98ioq.md)
   An object that provides playback controls and a data channel for a session running on a remote device.
-- [protocol AVSystemRouteDataDelegate](avsystemroutedatadelegate-7vt4b.md)
+- [protocol AVSystemRouteDataDelegate](../avsystemroutedatadelegate-7vt4b.md)
   A protocol for handling data from a remote application.
 
 

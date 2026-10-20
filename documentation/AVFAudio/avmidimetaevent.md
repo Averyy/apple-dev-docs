@@ -1,7 +1,8 @@
 # AVMIDIMetaEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents MIDI meta event messages.
 
@@ -19,40 +20,45 @@ An object that represents MIDI meta event messages.
 class AVMIDIMetaEvent
 ```
 
+```objc
+@interface AVMIDIMetaEvent : AVMusicEvent
+```
+
 #### Overview
 
 You can’t modify the size and contents of this event once you create it. This doesn’t verify that the content matches the MIDI specification.
 
-You can only add [`AVMIDIMetaEvent.EventType.tempo`](avmidimetaevent/eventtype/tempo.md), [`AVMIDIMetaEvent.EventType.smpteOffset`](avmidimetaevent/eventtype/smpteoffset.md), or [`AVMIDIMetaEvent.EventType.timeSignature`](avmidimetaevent/eventtype/timesignature.md) to a sequence’s tempo track.
+You can only add [`AVMIDIMetaEvent.EventType.tempo`](./avmidimetaevent/eventtype/tempo.md), [`AVMIDIMetaEvent.EventType.smpteOffset`](./avmidimetaevent/eventtype/smpteoffset.md), or [`AVMIDIMetaEvent.EventType.timeSignature`](./avmidimetaevent/eventtype/timesignature.md) to a sequence’s tempo track.
 
 ## Topics
 
 ### Creating a meta event
-- [init(type: AVMIDIMetaEvent.EventType, data: Data)](avmidimetaevent/init(type:data:).md)
+- [init(type: AVMIDIMetaEvent.EventType, data: Data)](./avmidimetaevent/init%28type,data%29.md)
   Creates an event with a MIDI meta event type and data.
 ### Getting the meta event type
-- [var type: AVMIDIMetaEvent.EventType](avmidimetaevent/type.md)
+- [var type: AVMIDIMetaEvent.EventType](./avmidimetaevent/type.md)
   The type of meta event.
-- [AVMIDIMetaEvent.EventType](avmidimetaevent/eventtype.md)
+- [AVMIDIMetaEvent.EventType](./avmidimetaevent/eventtype.md)
   Constants that represent the types of meta events.
 
 ## Relationships
 
 ### Inherits From
-- [AVMusicEvent](avmusicevent.md)
+- [AVMusicEvent](./avmusicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMIDINoteEvent](avmidinoteevent.md)
+### Handling MIDI events
+- [class AVMIDINoteEvent](./avmidinoteevent.md)
   An object that represents MIDI note on or off messages.
-- [class AVMIDISysexEvent](avmidisysexevent.md)
+- [class AVMIDISysexEvent](./avmidisysexevent.md)
   An object that represents a MIDI system exclusive message.
 
 

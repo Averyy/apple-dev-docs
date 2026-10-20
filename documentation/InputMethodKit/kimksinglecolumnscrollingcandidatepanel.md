@@ -1,7 +1,8 @@
 # kIMKSingleColumnScrollingCandidatePanel
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,14 +13,19 @@
 var kIMKSingleColumnScrollingCandidatePanel: Int { get }
 ```
 
+```c
+kIMKSingleColumnScrollingCandidatePanel
+```
+
 #### Discussion
 
 A window that displays one column and can scroll if necessary.
 
 ## See Also
 
-- [var kIMKScrollingGridCandidatePanel: Int](kimkscrollinggridcandidatepanel.md)
-- [var kIMKSingleRowSteppingCandidatePanel: Int](kimksinglerowsteppingcandidatepanel.md)
+### Constants
+- [var kIMKScrollingGridCandidatePanel: Int](./kimkscrollinggridcandidatepanel.md)
+- [var kIMKSingleRowSteppingCandidatePanel: Int](./kimksinglerowsteppingcandidatepanel.md)
 
 
 ---

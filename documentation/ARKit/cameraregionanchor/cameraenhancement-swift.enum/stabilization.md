@@ -1,7 +1,8 @@
 # CameraRegionAnchor.CameraEnhancement.stabilization
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Simple crop/zoom.
 

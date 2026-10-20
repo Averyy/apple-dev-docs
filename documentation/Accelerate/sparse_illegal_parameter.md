@@ -1,18 +1,19 @@
 # SPARSE_ILLEGAL_PARAMETER
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Operation was not completed because one or more of the arguments had an illegal value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Operation was not completed because one or more of the arguments had an illegal 
 var SPARSE_ILLEGAL_PARAMETER: sparse_status { get }
 ```
 
+```c
+SPARSE_ILLEGAL_PARAMETER
+```
+
 ## See Also
 
-- [var SPARSE_SUCCESS: sparse_status](sparse_success.md)
+### Constants
+- [var SPARSE_SUCCESS: sparse_status](./sparse_success.md)
   Operation was a success.
-- [var SPARSE_CANNOT_SET_PROPERTY: sparse_status](sparse_cannot_set_property.md)
+- [var SPARSE_CANNOT_SET_PROPERTY: sparse_status](./sparse_cannot_set_property.md)
   A property was set after values were inserted into the matrix.
-- [var SPARSE_SYSTEM_ERROR: sparse_status](sparse_system_error.md)
+- [var SPARSE_SYSTEM_ERROR: sparse_status](./sparse_system_error.md)
   An internal error has occured, such as non enough memory.
 
 

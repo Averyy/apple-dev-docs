@@ -1,7 +1,8 @@
 # instance(name:part:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Apply to instance by `name`, all parts if `part` is nil, otherwise only to the specific `part`.
 
@@ -21,7 +22,8 @@ static func instance(name: String, part: String? = nil) -> MeshScope
 
 ## See Also
 
-- [static func model(name: String, part: String?) -> MeshScope](meshscope/model(name:part:).md)
+### Creating a mesh scope
+- [static func model(name: String, part: String?) -> MeshScope](./model%28name,part%29.md)
   Apply to model by `name`, all parts if `part` is nil, otherwise only to the specific `part`.
 
 

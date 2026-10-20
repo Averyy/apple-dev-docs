@@ -1,7 +1,8 @@
 # EnhancedAC3
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Enhanced AC-3 format.
 
@@ -10,7 +11,7 @@ The Enhanced AC-3 format.
 
 ## Declaration
 
-```swift
+```c
 EnhancedAC3
 ```
 
@@ -20,9 +21,10 @@ This format uses no flags.
 
 ## See Also
 
-- [AC3](audiodriverkit/iouseraudioformatid/ac3.md)
+### AC-3 Formats
+- [AC3](./ac3.md)
   The AC-3 format.
-- [AC360958](audiodriverkit/iouseraudioformatid/ac360958.md)
+- [AC360958](./ac360958.md)
   The AC-3 format, packaged for transport over an IEC 60958-compliant digital audio interface.
 
 

@@ -1,7 +1,8 @@
 # ActionButton.ButtonImagePlacement
 
 **Framework**: MarketplaceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -16,19 +17,19 @@ enum ButtonImagePlacement
 ## Topics
 
 ### Enumeration Cases
-- [ActionButton.ButtonImagePlacement.bottom](actionbutton/buttonimageplacement/bottom.md)
-- [ActionButton.ButtonImagePlacement.leading](actionbutton/buttonimageplacement/leading.md)
-- [ActionButton.ButtonImagePlacement.top](actionbutton/buttonimageplacement/top.md)
-- [ActionButton.ButtonImagePlacement.trailing](actionbutton/buttonimageplacement/trailing.md)
+- [ActionButton.ButtonImagePlacement.bottom](./buttonimageplacement/bottom.md)
+- [ActionButton.ButtonImagePlacement.leading](./buttonimageplacement/leading.md)
+- [ActionButton.ButtonImagePlacement.top](./buttonimageplacement/top.md)
+- [ActionButton.ButtonImagePlacement.trailing](./buttonimageplacement/trailing.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

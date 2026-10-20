@@ -1,7 +1,8 @@
 # features(in:options:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for features in an image based on the specified image orientation.
 
@@ -10,7 +11,7 @@ Searches for features in an image based on the specified image orientation.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,18 +20,23 @@ Searches for features in an image based on the specified image orientation.
 func features(in image: CIImage, options: [String : Any]? = nil) -> [CIFeature]
 ```
 
+```objc
+- (NSArray<CIFeature *> *) featuresInImage:(CIImage *) image options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
-An array of [`CIFeature`](cifeature.md) objects. Each object represents a feature detected in the image.
+An array of [`CIFeature`](../cifeature.md) objects. Each object represents a feature detected in the image.
 
 ## Parameters
 
 - `image`: The image you want to examine.
-- `options`: A dictionary that specifies feature detection options. See [`Feature Detection Keys`](feature-detection-keys.md) for allowed keys and their possible values.
+- `options`: A dictionary that specifies feature detection options. See [Feature Detection Keys](../feature-detection-keys.md) for allowed keys and their possible values.
 
 ## See Also
 
-- [func features(in: CIImage) -> [CIFeature]](cidetector/features(in:).md)
+### Using a Detector Object to Find Features
+- [func features(in: CIImage) -> [CIFeature]](./features%28in%29.md)
   Searches for features in an image.
 
 

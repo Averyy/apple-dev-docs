@@ -1,7 +1,8 @@
 # externalStorageDevices
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of external storage devices the session updates as individual devices connect or disconnect from the system.
 
@@ -16,6 +17,10 @@ An array of external storage devices the session updates as individual devices c
 
 ```swift
 var externalStorageDevices: [AVExternalStorageDevice] { get }
+```
+
+```objc
+@property (readonly) NSArray<AVExternalStorageDevice *> * externalStorageDevices;
 ```
 
 #### Discussion

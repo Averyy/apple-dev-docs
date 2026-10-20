@@ -1,7 +1,8 @@
 # inputHome
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string representing the Home key.
 
@@ -19,21 +20,26 @@ nonisolated
 class let inputHome: String
 ```
 
+```c
+extern NSString * const UIKeyInputHome;
+```
+
 ## See Also
 
-- [class let inputUpArrow: String](uikeycommand/inputuparrow.md)
+### Navigation keys
+- [class let inputUpArrow: String](./inputuparrow.md)
   A string representing the Up Arrow key.
-- [class let inputDownArrow: String](uikeycommand/inputdownarrow.md)
+- [class let inputDownArrow: String](./inputdownarrow.md)
   A string representing the Down Arrow key.
-- [class let inputLeftArrow: String](uikeycommand/inputleftarrow.md)
+- [class let inputLeftArrow: String](./inputleftarrow.md)
   A string representing the Left Arrow key.
-- [class let inputRightArrow: String](uikeycommand/inputrightarrow.md)
+- [class let inputRightArrow: String](./inputrightarrow.md)
   A string representing the Right Arrow key.
-- [class let inputEnd: String](uikeycommand/inputend.md)
+- [class let inputEnd: String](./inputend.md)
   A string representing the End key.
-- [class let inputPageUp: String](uikeycommand/inputpageup.md)
+- [class let inputPageUp: String](./inputpageup.md)
   A string representing the Page Up key.
-- [class let inputPageDown: String](uikeycommand/inputpagedown.md)
+- [class let inputPageDown: String](./inputpagedown.md)
   A string representing the Page Down key.
 
 

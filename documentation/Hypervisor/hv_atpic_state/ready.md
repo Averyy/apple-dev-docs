@@ -1,15 +1,20 @@
 # ready
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var ready: Bool
+```
+
+```c
+bool ready;
 ```
 
 

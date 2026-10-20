@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized description of the error.
 

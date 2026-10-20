@@ -1,7 +1,8 @@
 # Get Users
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a set of users.
 
@@ -10,10 +11,10 @@ Get information about a set of users.
 
 ## Mentions
 
-- [Getting started with the management API](getting-started-with-the-management-api.md)
-- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
-- [Using paginated endpoints](using-paginated-endpoints.md)
-- [Managing users](managing-users.md)
+- [Getting started with the management API](./getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
+- [Using paginated endpoints](./using-paginated-endpoints.md)
+- [Managing users](./managing-users.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ Get information about a set of users.
 
 **Request**:
 
-```None
+```
 ?activeOnly=true
 ```
 
@@ -60,9 +61,9 @@ Get information about a set of users.
 ## Topics
 
 ### Response
-- [object GetUsersResponse](getusersresponse.md)
+- [object GetUsersResponse](./getusersresponse.md)
   The paginated response that contains the requested users.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 ## Endpoint
@@ -71,19 +72,29 @@ Get information about a set of users.
 
 ## Parameters
 
+### Query Parameters
+
 - `activeOnly` (boolean): The filter for only the active users.
 - `clientUserId` (string): The filter for the unique identifier of a user in your organization.
 - `pageIndex` (int32): The requested page index.
 - `retiredOnly` (boolean): The filters for only the retired users.
 - `sinceVersionId` (string): The filter for modified assignments since the specified version identifier.
 
+## Responses
+
+- `200` OK (`GetUsersResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
+
 ## See Also
 
-- [Create Users](create-users.md)
+### User management
+- [Create Users](./create-users.md)
   Create users to assign apps, books, and subscriptions to.
-- [Update Users](update-users.md)
+- [Update Users](./update-users.md)
   Update details for existing users.
-- [Retire Users](retire-users.md)
+- [Retire Users](./retire-users.md)
   Retire users by client user IDs.
 
 

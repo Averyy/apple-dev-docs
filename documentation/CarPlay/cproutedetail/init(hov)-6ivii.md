@@ -1,7 +1,8 @@
 # init(hov:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for High-Occupancy Vehicle (HOV) lane access.
 
@@ -14,6 +15,10 @@ Creates additional route information for High-Occupancy Vehicle (HOV) lane acces
 
 ```swift
 convenience init(hov hovInfo: String)
+```
+
+```objc
++ (instancetype) routeDetailWithHOV:(NSString *) hovInfo;
 ```
 
 #### Return Value

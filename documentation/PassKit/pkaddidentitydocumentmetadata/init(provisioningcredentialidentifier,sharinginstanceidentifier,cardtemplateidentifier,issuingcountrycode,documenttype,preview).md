@@ -1,7 +1,8 @@
 # init(provisioningCredentialIdentifier:sharingInstanceIdentifier:cardTemplateIdentifier:issuingCountryCode:documentType:preview:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the identity document metadata with parameters that the issuer’s server configures to indicate the specific product instance to provision.
 
@@ -9,13 +10,17 @@ Creates the identity document metadata with parameters that the issuer’s serve
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - visionOS 26.0+
 
 ## Declaration
 
 ```swift
 init(provisioningCredentialIdentifier credentialIdentifier: String, sharingInstanceIdentifier: String, cardTemplateIdentifier templateIdentifier: String, issuingCountryCode: String, documentType: PKAddIdentityDocumentType, preview: PKAddPassMetadataPreview)
+```
+
+```objc
+- (instancetype) initWithProvisioningCredentialIdentifier:(NSString *) credentialIdentifier sharingInstanceIdentifier:(NSString *) sharingInstanceIdentifier cardTemplateIdentifier:(NSString *) templateIdentifier issuingCountryCode:(NSString *) issuingCountryCode documentType:(PKAddIdentityDocumentType) documentType preview:(PKAddPassMetadataPreview *) preview;
 ```
 
 ## Parameters

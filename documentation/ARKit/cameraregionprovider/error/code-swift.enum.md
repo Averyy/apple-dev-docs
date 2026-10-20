@@ -1,7 +1,8 @@
 # CameraRegionProvider.Error.Code
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration of all possible camera region error codes.
 
@@ -17,22 +18,22 @@ enum Code
 ## Topics
 
 ### Enumeration Cases
-- [CameraRegionProvider.Error.Code.addAnchorFailed](cameraregionprovider/error/code-swift.enum/addanchorfailed.md)
+- [CameraRegionProvider.Error.Code.addAnchorFailed](./code-swift.enum/addanchorfailed.md)
   Adding a camera region anchor failed.
-- [CameraRegionProvider.Error.Code.anchorLimitReached](cameraregionprovider/error/code-swift.enum/anchorlimitreached.md)
+- [CameraRegionProvider.Error.Code.anchorLimitReached](./code-swift.enum/anchorlimitreached.md)
   Adding a camera region anchor failed - an upper limit was reached for this specific camera enhancement type.
-- [CameraRegionProvider.Error.Code.removeAnchorFailed](cameraregionprovider/error/code-swift.enum/removeanchorfailed.md)
+- [CameraRegionProvider.Error.Code.removeAnchorFailed](./code-swift.enum/removeanchorfailed.md)
   Removing a camera region anchor failed.
 ### Instance Properties
-- [var description: String](cameraregionprovider/error/code-swift.enum/description.md)
+- [var description: String](./code-swift.enum/description.md)
   A textual representation of the code.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

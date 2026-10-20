@@ -1,7 +1,8 @@
 # isPaused
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies whether to start or stop all audio or video streams for a conversation.
 

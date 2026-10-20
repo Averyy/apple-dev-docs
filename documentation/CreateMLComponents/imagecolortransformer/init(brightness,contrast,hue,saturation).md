@@ -1,7 +1,8 @@
 # init(brightness:contrast:hue:saturation:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image color transformer.
 

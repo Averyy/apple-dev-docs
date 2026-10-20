@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoCloseString
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A string was missing a closing quote.
 

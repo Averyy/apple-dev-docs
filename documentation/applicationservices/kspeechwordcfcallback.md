@@ -1,7 +1,8 @@
 # kSpeechWordCFCallBack
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Set the callback function to be called every time the Speech Synthesis Manager is about to generate a word on the speech channel.
 
@@ -14,11 +15,15 @@ Set the callback function to be called every time the Speech Synthesis Manager i
 let kSpeechWordCFCallBack: CFString
 ```
 
+```c
+const CFStringRef kSpeechWordCFCallBack;
+```
+
 #### Discussion
 
- The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined word callback function, whose syntax is described in [`SpeechWordCFProcPtr`](speechwordcfprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the word callback function.
+ The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined word callback function, whose syntax is described in [`SpeechWordCFProcPtr`](./speechwordcfprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the word callback function.
 
-This property works with the [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) function.
+This property works with the [`SetSpeechProperty(_:_:_:)`](./api-1459256-setspeechproperty.md) function.
 
 
 ---

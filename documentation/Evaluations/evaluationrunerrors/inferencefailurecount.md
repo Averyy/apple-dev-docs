@@ -1,7 +1,8 @@
 # inferenceFailureCount
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of samples whose subject failed to be produced.
 

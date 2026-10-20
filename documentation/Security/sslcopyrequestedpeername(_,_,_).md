@@ -1,15 +1,18 @@
 # SSLCopyRequestedPeerName(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines the buffer size needed for the peer domain name.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
+- iOS 9.0+ - Deprecated in 13.0
+- iPadOS 9.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.11+ - Deprecated in 10.15
+
+> **Deprecated**: No longer supported. Use Network.framework.
 
 ## Declaration
 
@@ -17,13 +20,17 @@ Determines the buffer size needed for the peer domain name.
 func SSLCopyRequestedPeerName(_ context: SSLContext, _ peerName: UnsafeMutablePointer<CChar>, _ peerNameLen: UnsafeMutablePointer<Int>) -> OSStatus
 ```
 
+```c
+OSStatus SSLCopyRequestedPeerName(SSLContextRef context, char *peerName, size_t *peerNameLen);
+```
+
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 #### Discussion
 
-Use the `peerNameLen` returned by this function when calling the [`SSLCopyRequestedPeerNameLength(_:_:)`](sslcopyrequestedpeernamelength(_:_:).md) function.
+Use the `peerNameLen` returned by this function when calling the [`SSLCopyRequestedPeerNameLength(_:_:)`](./sslcopyrequestedpeernamelength%28_,_%29.md) function.
 
 ## Parameters
 

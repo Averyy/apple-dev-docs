@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image classifier’s validation dataset.
 
@@ -20,15 +21,16 @@ var validation: MLImageClassifier.ModelParameters.ValidationData { get set }
 
 ## See Also
 
-- [var algorithm: MLImageClassifier.ModelParameters.ModelAlgorithmType](mlimageclassifier/modelparameters-swift.struct/algorithm.md)
+### Accessing the training parameters
+- [var algorithm: MLImageClassifier.ModelParameters.ModelAlgorithmType](./algorithm.md)
   Model algorithm to be used
-- [var featureExtractor: MLImageClassifier.FeatureExtractorType](mlimageclassifier/modelparameters-swift.struct/featureextractor.md)
+- [var featureExtractor: MLImageClassifier.FeatureExtractorType](./featureextractor.md)
   The underlying base model the training session uses to extract image features as it trains an image classifier.
-- [var maxIterations: Int](mlimageclassifier/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int](./maxiterations.md)
   The maximum number of iterations the training session can use.
-- [var augmentationOptions: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/modelparameters-swift.struct/augmentationoptions.md)
+- [var augmentationOptions: MLImageClassifier.ImageAugmentationOptions](./augmentationoptions.md)
   The variations the training session uses to generate more variety in the training dataset.
-- [var validationData: [String : [URL]]?](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+- [var validationData: [String : [URL]]?](./validationdata-swift.property.md)
   A set of images that the training process uses for validation.
 
 

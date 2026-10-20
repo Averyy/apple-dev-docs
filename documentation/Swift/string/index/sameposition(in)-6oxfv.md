@@ -1,7 +1,8 @@
 # samePosition(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position in the given string that corresponds exactly to this index.
 

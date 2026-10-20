@@ -1,7 +1,8 @@
 # SynchronizationComponent.OwnershipTransferCompletionResult.timedOut
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ownership transfer request timed out.
 
@@ -11,7 +12,7 @@ The ownership transfer request timed out.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ A timeout doesn’t necessarily mean that the request is denied. It might succee
 
 ## See Also
 
-- [SynchronizationComponent.OwnershipTransferCompletionResult.granted](synchronizationcomponent/ownershiptransfercompletionresult/granted.md)
+### Ownership transfer completion results
+- [SynchronizationComponent.OwnershipTransferCompletionResult.granted](./granted.md)
   The request is accepted and ownership is transferred.
 
 

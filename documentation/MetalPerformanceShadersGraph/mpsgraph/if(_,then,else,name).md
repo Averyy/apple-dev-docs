@@ -1,7 +1,8 @@
 # if(_:then:else:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an if-then-else operation to the graph.
 
@@ -17,6 +18,10 @@ Adds an if-then-else operation to the graph.
 
 ```swift
 func `if`(_ predicateTensor: MPSGraphTensor, then thenBlock: @escaping MPSGraphIfThenElseBlock, else elseBlock: MPSGraphIfThenElseBlock?, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) ifWithPredicateTensor:(MPSGraphTensor *) predicateTensor thenBlock:(MPSGraphIfThenElseBlock) thenBlock elseBlock:(MPSGraphIfThenElseBlock) elseBlock name:(NSString *) name;
 ```
 
 #### Return Value

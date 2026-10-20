@@ -1,7 +1,8 @@
 # CMDeviceMotion
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Encapsulated measurements of the attitude, rotation rate, and acceleration of a device.
 
@@ -19,70 +20,75 @@ Encapsulated measurements of the attitude, rotation rate, and acceleration of a 
 class CMDeviceMotion
 ```
 
+```objc
+@interface CMDeviceMotion : CMLogItem
+```
+
 #### Overview
 
-An application receives or samples `CMDeviceMotion` objects at regular intervals after calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md) method, the [`startDeviceMotionUpdates(using:)`](cmmotionmanager/startdevicemotionupdates(using:).md) method, or the [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md) method of the [`CMMotionManager`](cmmotionmanager.md) class.
+An application receives or samples `CMDeviceMotion` objects at regular intervals after calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28using,to,withhandler%29.md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28to,withhandler%29.md) method, the [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md) method, or the [`startDeviceMotionUpdates()`](./cmmotionmanager/startdevicemotionupdates%28%29.md) method of the [`CMMotionManager`](./cmmotionmanager.md) class.
 
-The accelerometer measures the sum of two acceleration vectors: gravity and user acceleration. User acceleration is the acceleration that the user imparts to the device. Because Core Motion is able to track a device’s attitude using both the gyroscope and the accelerometer, it can differentiate between gravity and user acceleration. A `CMDeviceMotion` object provides both measurements in the [`gravity`](cmdevicemotion/gravity.md) and [`userAcceleration`](cmdevicemotion/useracceleration.md) properties.
+The accelerometer measures the sum of two acceleration vectors: gravity and user acceleration. User acceleration is the acceleration that the user imparts to the device. Because Core Motion is able to track a device’s attitude using both the gyroscope and the accelerometer, it can differentiate between gravity and user acceleration. A `CMDeviceMotion` object provides both measurements in the [`gravity`](./cmdevicemotion/gravity.md) and [`userAcceleration`](./cmdevicemotion/useracceleration.md) properties.
 
 ## Topics
 
 ### Getting Attitude and Rotation Rate
-- [var attitude: CMAttitude](cmdevicemotion/attitude.md)
+- [var attitude: CMAttitude](./cmdevicemotion/attitude.md)
   The attitude of the device.
-- [var rotationRate: CMRotationRate](cmdevicemotion/rotationrate.md)
+- [var rotationRate: CMRotationRate](./cmdevicemotion/rotationrate.md)
   The rotation rate of the device.
 ### Getting Acceleration Data
-- [var gravity: CMAcceleration](cmdevicemotion/gravity.md)
+- [var gravity: CMAcceleration](./cmdevicemotion/gravity.md)
   The gravity acceleration vector expressed in the device’s reference frame.
-- [var userAcceleration: CMAcceleration](cmdevicemotion/useracceleration.md)
+- [var userAcceleration: CMAcceleration](./cmdevicemotion/useracceleration.md)
   The acceleration that the user is giving to the device.
 ### Getting the Calibrated Magnetic Field
-- [var magneticField: CMCalibratedMagneticField](cmdevicemotion/magneticfield.md)
+- [var magneticField: CMCalibratedMagneticField](./cmdevicemotion/magneticfield.md)
   Returns the magnetic field vector with respect to the device.
-- [struct CMCalibratedMagneticField](cmcalibratedmagneticfield.md)
+- [struct CMCalibratedMagneticField](./cmcalibratedmagneticfield.md)
   Calibrated magnetic field data and an estimate of the accuracy of the calibration.
-- [enum CMMagneticFieldCalibrationAccuracy](cmmagneticfieldcalibrationaccuracy.md)
+- [enum CMMagneticFieldCalibrationAccuracy](./cmmagneticfieldcalibrationaccuracy.md)
   Indicates the calibration accuracy of a magnetic field estimate
 ### Getting the Heading
-- [var heading: Double](cmdevicemotion/heading.md)
+- [var heading: Double](./cmdevicemotion/heading.md)
   The heading angle (measured in degrees) relative to the current reference frame.
 ### Getting the Sensor Location
-- [var sensorLocation: CMDeviceMotion.SensorLocation](cmdevicemotion/sensorlocation-swift.property.md)
+- [var sensorLocation: CMDeviceMotion.SensorLocation](./cmdevicemotion/sensorlocation-swift.property.md)
   The location of the sensors that compute the device-motion data.
-- [CMDeviceMotion.SensorLocation](cmdevicemotion/sensorlocation-swift.enum.md)
+- [CMDeviceMotion.SensorLocation](./cmdevicemotion/sensorlocation-swift.enum.md)
   Defines the device’s sensor locations.
 ### Instance Properties
-- [var headingAccuracy: Double](cmdevicemotion/headingaccuracy.md)
+- [var headingAccuracy: Double](./cmdevicemotion/headingaccuracy.md)
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Inherited By
-- [CMRecordedDeviceMotion](cmrecordeddevicemotion.md)
+- [CMRecordedDeviceMotion](./cmrecordeddevicemotion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+### Device motion
+- [Getting processed device-motion data](./getting-processed-device-motion-data.md)
   Retrieve motion data that the system processed to remove environmental bias, such as the effects of gravity.
-- [class CMAttitude](cmattitude.md)
+- [class CMAttitude](./cmattitude.md)
   The device’s orientation relative to a known frame of reference at a point in time.
-- [struct CMAttitudeReferenceFrame](cmattitudereferenceframe.md)
+- [struct CMAttitudeReferenceFrame](./cmattitudereferenceframe.md)
   Constants that indicate the frame of reference for attitude-related motion data.
-- [class CMHeadphoneMotionManager](cmheadphonemotionmanager.md)
+- [class CMHeadphoneMotionManager](./cmheadphonemotionmanager.md)
   An object that starts and manages headphone motion services.
-- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
+- [protocol CMBodyIdentifiable](./cmbodyidentifiable.md)
   A type that identifies a physical body or view for device-motion calculations.
 
 

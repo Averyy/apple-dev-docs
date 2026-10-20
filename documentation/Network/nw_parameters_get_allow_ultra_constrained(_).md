@@ -1,7 +1,8 @@
 # nw_parameters_get_allow_ultra_constrained(_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func nw_parameters_get_allow_ultra_constrained(_ parameters: nw_parameters_t) -> Bool
+```
+
+```c
+bool nw_parameters_get_allow_ultra_constrained(nw_parameters_t parameters);
 ```
 
 #### Return Value

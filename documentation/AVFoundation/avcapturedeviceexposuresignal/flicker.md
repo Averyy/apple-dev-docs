@@ -1,7 +1,8 @@
 # flicker
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 When enabled, auto exposure may adjust the aperture to help exposure duration avoid synchronization with artificial lighting frequencies.
 
@@ -17,15 +18,20 @@ When enabled, auto exposure may adjust the aperture to help exposure duration av
 static let flicker: AVCaptureDeviceExposureSignal
 ```
 
+```c
+extern AVCaptureDeviceExposureSignal const AVCaptureDeviceExposureSignalFlicker;
+```
+
 ## See Also
 
-- [static let document: AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal/document.md)
+### Exposure signals
+- [static let document: AVCaptureDeviceExposureSignal](./document.md)
   When enabled, auto exposure may close the aperture to improve sharpness of textual scenes.
-- [static let groupPhoto: AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal/groupphoto.md)
+- [static let groupPhoto: AVCaptureDeviceExposureSignal](./groupphoto.md)
   When enabled, auto exposure may close the aperture to increase depth of field when multiple faces are in the scene.
-- [static let starburst: AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal/starburst.md)
+- [static let starburst: AVCaptureDeviceExposureSignal](./starburst.md)
   When enabled, auto exposure may open the aperture to remove diffraction artifacts from point light sources.
-- [static let subjectMotion: AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal/subjectmotion.md)
+- [static let subjectMotion: AVCaptureDeviceExposureSignal](./subjectmotion.md)
   When enabled, auto exposure may close the aperture or decrease the exposure duration to reduce motion blur when there is a lot of motion in the scene.
 
 

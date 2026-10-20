@@ -1,7 +1,8 @@
 # ShieldConfiguration.Label
 
 **Framework**: Managed Settings UI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The appearance of text labels within a shield.
 
@@ -19,19 +20,20 @@ struct Label
 ## Topics
 
 ### Initializers
-- [init(text: String, color: UIColor)](shieldconfiguration/label/init(text:color:).md)
+- [init(text: String, color: UIColor)](./label/init%28text,color%29.md)
   Creates a shield label with the provided text and color.
 ### Instance Properties
-- [let color: UIColor](shieldconfiguration/label/color.md)
+- [let color: UIColor](./label/color.md)
   The color of the text on a shield.
-- [let text: String](shieldconfiguration/label/text.md)
+- [let text: String](./label/text.md)
   The text of the label on a shield.
 
 ## See Also
 
-- [let title: ShieldConfiguration.Label?](shieldconfiguration/title.md)
+### Configure the text content
+- [let title: ShieldConfiguration.Label?](./title.md)
   The title of the shield to display below the icon.
-- [let subtitle: ShieldConfiguration.Label?](shieldconfiguration/subtitle.md)
+- [let subtitle: ShieldConfiguration.Label?](./subtitle.md)
   The subtitle for a shield to display below the title.
 
 

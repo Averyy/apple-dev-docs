@@ -1,7 +1,8 @@
 # getValue(forKey:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,11 +22,12 @@ func getValue<Value>(forKey: KeyPath<Self, Value?>) -> Value? where Value : Pers
 
 ## See Also
 
-- [func getValue<Value, OtherModel>(forKey: KeyPath<Self, Value>) -> Value](persistentmodel/getvalue(forkey:)-299oe.md)
-- [func getValue<Value>(forKey: KeyPath<Self, Value>) -> Value](persistentmodel/getvalue(forkey:)-3o59k.md)
-- [func getValue<Value>(forKey: KeyPath<Self, Value>) -> Value](persistentmodel/getvalue(forkey:)-4cs0c.md)
-- [func getValue<Value, OtherModel>(forKey: KeyPath<Self, Value>) -> Value](persistentmodel/getvalue(forkey:)-5m792.md)
-- [func getTransformableValue<Value>(forKey: KeyPath<Self, Value>) -> Value](persistentmodel/gettransformablevalue(forkey:).md)
+### Accessing a value by key path
+- [func getValue<Value, OtherModel>(forKey: KeyPath<Self, Value>) -> Value](./getvalue%28forkey%29-299oe.md)
+- [func getValue<Value>(forKey: KeyPath<Self, Value>) -> Value](./getvalue%28forkey%29-3o59k.md)
+- [func getValue<Value>(forKey: KeyPath<Self, Value>) -> Value](./getvalue%28forkey%29-4cs0c.md)
+- [func getValue<Value, OtherModel>(forKey: KeyPath<Self, Value>) -> Value](./getvalue%28forkey%29-5m792.md)
+- [func getTransformableValue<Value>(forKey: KeyPath<Self, Value>) -> Value](./gettransformablevalue%28forkey%29.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # isRunning
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the main event loop is running.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,29 +15,35 @@ A Boolean value indicating whether the main event loop is running.
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRunning) BOOL running;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the main event loop is running or [`false`](https://developer.apple.com/documentation/swift/false) when it’s not. Calling the [`stop(_:)`](nsapplication/stop(_:).md) method sets the value to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the main event loop is running or [`false`](../../Swift/false.md) when it’s not. Calling the [`stop(_:)`](./stop%28_%29.md) method sets the value to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func terminate(Any?)](nsapplication/terminate(_:).md)
+### Related Documentation
+- [func terminate(Any?)](./terminate%28_%29.md)
   Terminates the receiver.
-- [func nextEvent(matching: NSEvent.EventTypeMask, until: Date?, inMode: RunLoop.Mode, dequeue: Bool) -> NSEvent?](nsapplication/nextevent(matching:until:inmode:dequeue:).md)
+### Managing the event loop
+- [func nextEvent(matching: NSEvent.EventTypeMask, until: Date?, inMode: RunLoop.Mode, dequeue: Bool) -> NSEvent?](./nextevent%28matching,until,inmode,dequeue%29.md)
   Returns the next event matching a given mask, or `nil` if no such event is found before a specified expiration date.
-- [func discardEvents(matching: NSEvent.EventTypeMask, before: NSEvent?)](nsapplication/discardevents(matching:before:).md)
+- [func discardEvents(matching: NSEvent.EventTypeMask, before: NSEvent?)](./discardevents%28matching,before%29.md)
   Removes all events matching the given mask and generated before the specified event.
-- [var currentEvent: NSEvent?](nsapplication/currentevent.md)
+- [var currentEvent: NSEvent?](./currentevent.md)
   The last event object that the app retrieved from the event queue.
-- [func run()](nsapplication/run.md)
+- [func run()](./run%28%29.md)
   Starts the main event loop.
-- [func finishLaunching()](nsapplication/finishlaunching.md)
+- [func finishLaunching()](./finishlaunching%28%29.md)
   Activates the app, opens any files specified by the `NSOpen` user default, and unhighlights the app’s icon.
-- [func stop(Any?)](nsapplication/stop(_:).md)
+- [func stop(Any?)](./stop%28_%29.md)
   Stops the main event loop.
-- [func sendEvent(NSEvent)](nsapplication/sendevent(_:).md)
+- [func sendEvent(NSEvent)](./sendevent%28_%29.md)
   Dispatches an event to other objects.
-- [func postEvent(NSEvent, atStart: Bool)](nsapplication/postevent(_:atstart:).md)
+- [func postEvent(NSEvent, atStart: Bool)](./postevent%28_,atstart%29.md)
   Adds a given event to the receiver’s event queue.
 
 

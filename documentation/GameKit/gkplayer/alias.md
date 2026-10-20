@@ -1,7 +1,8 @@
 # alias
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string the player chooses to identify themself to other players.
 
@@ -20,17 +21,30 @@ A string the player chooses to identify themself to other players.
 var alias: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nonnull) NSString * alias;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nonnull) NSString * alias;
+```
+
 #### Discussion
 
-GameKit uses the player’s alias when a player isn’t a friend of the local player. Typically, you never display the alias string directly in your user interface. Instead use the [`displayName`](gkplayer/displayname.md) property.
+GameKit uses the player’s alias when a player isn’t a friend of the local player. Typically, you never display the alias string directly in your user interface. Instead use the [`displayName`](./displayname.md) property.
 
 ## See Also
 
-- [var displayName: String](gkplayer/displayname.md)
+### Accessing player details
+- [var displayName: String](./displayname.md)
   A string to display for the player.
-- [var isInvitable: Bool](gkplayer/isinvitable.md)
+- [var isInvitable: Bool](./isinvitable.md)
   A Boolean value that indicates whether the local player can send an invitation to the player.
-- [var isFriend: Bool](gkplayer/isfriend.md)
+- [var isFriend: Bool](./isfriend.md)
   A Boolean value that indicates whether the player is a friend of the local player.
 
 

@@ -1,7 +1,8 @@
 # httpMethod
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP method used to submit the form; generally either @“GET” or @“POST”.
 

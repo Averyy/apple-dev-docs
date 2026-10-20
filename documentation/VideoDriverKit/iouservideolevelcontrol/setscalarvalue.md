@@ -1,7 +1,8 @@
 # SetScalarValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current scalar level value.
 
@@ -10,7 +11,7 @@ Sets the current scalar level value.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetScalarValue(float in_scalar);
 ```
 
@@ -24,11 +25,12 @@ Changing the scalar level value will send a notification to the host to update t
 
 ## See Also
 
-- [SetDecibelValue](iouservideolevelcontrol/setdecibelvalue.md)
+### Accessing the value
+- [SetDecibelValue](./setdecibelvalue.md)
   Sets the current decibel level value.
-- [GetScalarValue](iouservideolevelcontrol/getscalarvalue.md)
+- [GetScalarValue](./getscalarvalue.md)
   Gets the scalar level value for the control.
-- [GetDecibelValue](iouservideolevelcontrol/getdecibelvalue.md)
+- [GetDecibelValue](./getdecibelvalue.md)
   Gets the decibel level value for the control.
 
 

@@ -1,7 +1,8 @@
 # place
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The place that the place detail displays.
 
@@ -10,7 +11,7 @@ The place that the place detail displays.
 
 ## Declaration
 
-```swift
+```
 get place(): Place | null;
 set place(value: Place | null);
 ```
@@ -21,13 +22,14 @@ if this property is `null`, the place detail renders in a collapsed state and d
 
 ## See Also
 
-- [colorScheme](placedetail/colorscheme.md)
+### Working with place detail settings
+- [colorScheme](./colorscheme.md)
   The color scheme when displaying a place detail.
-- [displaysMap](placedetail/displaysmap.md)
+- [displaysMap](./displaysmap.md)
   A Boolean value that indicates whether to display the map in the place detail.
-- [element](placedetail/element.md)
+- [element](./element.md)
   The place detail’s DOM element.
-- [ColorSchemes](placedetail/colorschemes.md)
+- [ColorSchemes](./colorschemes.md)
   A static property that allows you to access the Look Around color scheme enumeration.
 
 

@@ -1,7 +1,8 @@
 # touchUp
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the element calls when the user finishes touching the touchpad.
 
@@ -19,17 +20,22 @@ The block that the element calls when the user finishes touching the touchpad.
 var touchUp: GCControllerTouchpadHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCControllerTouchpadHandler touchUp;
+```
+
 #### Discussion
 
 The element invokes this handler when the user removes their fingers from the touchpad.
 
 ## See Also
 
-- [var touchDown: GCControllerTouchpadHandler?](gccontrollertouchpad/touchdown.md)
+### Getting change information
+- [var touchDown: GCControllerTouchpadHandler?](./touchdown.md)
   The block that the element calls when the user begins touching the touchpad.
-- [var touchMoved: GCControllerTouchpadHandler?](gccontrollertouchpad/touchmoved.md)
+- [var touchMoved: GCControllerTouchpadHandler?](./touchmoved.md)
   The block that the element calls when the user continues touching the touchpad, not when the user begins or ends touching the touchpad.
-- [typealias GCControllerTouchpadHandler](gccontrollertouchpadhandler.md)
+- [typealias GCControllerTouchpadHandler](../gccontrollertouchpadhandler.md)
   The signature for the block that executes when the user interacts with the touchpad.
 
 

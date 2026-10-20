@@ -1,7 +1,8 @@
 # PlainTextFieldStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text field style with no decoration.
 
@@ -22,23 +23,24 @@ struct PlainTextFieldStyle
 
 #### Overview
 
-You can also use [`plain`](textfieldstyle/plain.md) to construct this style.
+You can also use [`plain`](./textfieldstyle/plain.md) to construct this style.
 
 ## Topics
 
 ### Creating the text field style
-- [init()](plaintextfieldstyle/init.md)
+- [init()](./plaintextfieldstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [TextFieldStyle](textfieldstyle.md)
+- [TextFieldStyle](./textfieldstyle.md)
 
 ## See Also
 
-- [struct BorderedTextFieldStyle](borderedtextfieldstyle.md)
+### Supporting types
+- [struct BorderedTextFieldStyle](./borderedtextfieldstyle.md)
   A text field style with a system-defined border.
-- [struct DefaultTextFieldStyle](defaulttextfieldstyle.md)
+- [struct DefaultTextFieldStyle](./defaulttextfieldstyle.md)
   The default text field style, based on the text field’s context.
 
 

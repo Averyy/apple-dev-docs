@@ -1,7 +1,8 @@
 # floatValue(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func floatValue(atTime time: TimeInterval) -> Float
+```
+
+```objc
+- (float) floatAtTime:(NSTimeInterval) time;
 ```
 
 

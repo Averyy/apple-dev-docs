@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds a sampler state to a sampler state binding slot.
@@ -20,14 +21,18 @@ Binds a sampler state to a sampler state binding slot.
 func setSamplerState(_ resourceID: MTLResourceID, index bindingIndex: Int)
 ```
 
+```objc
+- (void) setSamplerState:(MTLResourceID) resourceID atIndex:(NSUInteger) bindingIndex;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 ## Parameters
 
-- `resourceID`: The [`MTLResourceID`](mtlresourceid.md) of the [`MTLSamplerState`](mtlsamplerstate.md) instance to bind.
-- `bindingIndex`: A valid binding index in the sampler binding range. It is an error for this value to match or exceed the value of property [`maxSamplerStateBindCount`](mtl4argumenttabledescriptor/maxsamplerstatebindcount.md) on the descriptor from which you created this argument table.
+- `resourceID`: The [`MTLResourceID`](../mtlresourceid.md) of the [`MTLSamplerState`](../mtlsamplerstate.md) instance to bind.
+- `bindingIndex`: A valid binding index in the sampler binding range. It is an error for this value to match or exceed the value of property [`maxSamplerStateBindCount`](../mtl4argumenttabledescriptor/maxsamplerstatebindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

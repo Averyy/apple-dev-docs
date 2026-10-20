@@ -1,7 +1,8 @@
 # deviceVerificationNonce
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID for computing the device verification value.
 
@@ -20,29 +21,32 @@ The UUID for computing the device verification value.
 var deviceVerificationNonce: UUID { get }
 ```
 
+Available when `SignedType` is `Transaction`.
+
 #### Discussion
 
-Use the lowercased nonce when computing the [`deviceVerification`](verificationresult/deviceverification-69lvx.md) value.
+Use the lowercased nonce when computing the [`deviceVerification`](./deviceverification-69lvx.md) value.
 
-This value is identical to the [`deviceVerificationNonce`](transaction/deviceverificationnonce.md) value in [`Transaction`](transaction.md).
+This value is identical to the [`deviceVerificationNonce`](../transaction/deviceverificationnonce.md) value in [`Transaction`](../transaction.md).
 
 ## See Also
 
-- [var jwsRepresentation: String](verificationresult/jwsrepresentation-21vgo.md)
+### Getting properties for transactions
+- [var jwsRepresentation: String](./jwsrepresentation-21vgo.md)
   The transaction signed by the App Store, in JWS Compact Serialization format.
-- [var deviceVerification: Data](verificationresult/deviceverification-69lvx.md)
+- [var deviceVerification: Data](./deviceverification-69lvx.md)
   The device verification value to use to verify whether the transaction belongs to the device.
-- [var signedDate: Date](verificationresult/signeddate-8x9bg.md)
+- [var signedDate: Date](./signeddate-8x9bg.md)
   The date that the App Store signed the JWS transaction.
-- [var headerData: Data](verificationresult/headerdata-9egfp.md)
+- [var headerData: Data](./headerdata-9egfp.md)
   The header component of the JWS transaction.
-- [var payloadData: Data](verificationresult/payloaddata-uyle.md)
+- [var payloadData: Data](./payloaddata-uyle.md)
   The payload component of the JWS transaction.
-- [var signedData: Data](verificationresult/signeddata-56usp.md)
+- [var signedData: Data](./signeddata-56usp.md)
   The transaction data that the signature applies to.
-- [var signatureData: Data](verificationresult/signaturedata-4pyv8.md)
+- [var signatureData: Data](./signaturedata-4pyv8.md)
   The signature component of the JWS transaction.
-- [var signature: P256.Signing.ECDSASignature](verificationresult/signature-7t1ne.md)
+- [var signature: P256.Signing.ECDSASignature](./signature-7t1ne.md)
   The signature component of the JSON web signature.
 
 

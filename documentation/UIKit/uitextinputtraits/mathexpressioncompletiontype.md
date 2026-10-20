@@ -1,7 +1,8 @@
 # mathExpressionCompletionType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,9 +17,14 @@
 optional var mathExpressionCompletionType: UITextMathExpressionCompletionType { get set }
 ```
 
+```objc
+@property (nonatomic) UITextMathExpressionCompletionType mathExpressionCompletionType;
+```
+
 ## See Also
 
-- [enum UITextMathExpressionCompletionType](uitextmathexpressioncompletiontype.md)
+### Configuring math expression completion
+- [enum UITextMathExpressionCompletionType](../uitextmathexpressioncompletiontype.md)
 
 
 ---

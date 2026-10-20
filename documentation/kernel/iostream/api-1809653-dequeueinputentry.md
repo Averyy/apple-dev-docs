@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn dequeueInputEntry(
  IOStreamBufferQueueEntry *entry );
 ```
@@ -16,9 +16,10 @@ virtual IOReturn dequeueInputEntry(
 
 ## See Also
 
-- [enqueueOutputBuffer](iostream/1809665-enqueueoutputbuffer.md)
+### Queueing and dequeueing buffers
+- [enqueueOutputBuffer](./api-1809665-enqueueoutputbuffer.md)
   A convenience method for enqueueing a buffer.
-- [enqueueOutputEntry](iostream/1809670-enqueueoutputentry.md)
+- [enqueueOutputEntry](./api-1809670-enqueueoutputentry.md)
 
 
 ---

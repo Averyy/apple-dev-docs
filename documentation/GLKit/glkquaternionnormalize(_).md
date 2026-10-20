@@ -1,7 +1,8 @@
 # GLKQuaternionNormalize(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a normalized version of a quaternion.
 
@@ -17,6 +18,10 @@ Returns a normalized version of a quaternion.
 func GLKQuaternionNormalize(_ quaternion: GLKQuaternion) -> GLKQuaternion
 ```
 
+```c
+static GLKQuaternion GLKQuaternionNormalize(GLKQuaternion quaternion);
+```
+
 #### Return Value
 
 A new quaternion, normalized to have a length of `1.0`.
@@ -27,17 +32,18 @@ A new quaternion, normalized to have a length of `1.0`.
 
 ## See Also
 
-- [func GLKQuaternionInvert(GLKQuaternion) -> GLKQuaternion](glkquaternioninvert(_:).md)
+### Performing Mathematical Operations on Quaternions
+- [func GLKQuaternionInvert(GLKQuaternion) -> GLKQuaternion](./glkquaternioninvert%28_%29.md)
   Returns an inverse of a quaternion.
-- [func GLKQuaternionConjugate(GLKQuaternion) -> GLKQuaternion](glkquaternionconjugate(_:).md)
+- [func GLKQuaternionConjugate(GLKQuaternion) -> GLKQuaternion](./glkquaternionconjugate%28_%29.md)
   Returns the conjugate of a quaternion.
-- [func GLKQuaternionAdd(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](glkquaternionadd(_:_:).md)
+- [func GLKQuaternionAdd(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](./glkquaternionadd%28_,_%29.md)
   Returns the sum of two quaternions.
-- [func GLKQuaternionSubtract(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](glkquaternionsubtract(_:_:).md)
+- [func GLKQuaternionSubtract(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](./glkquaternionsubtract%28_,_%29.md)
   Returns the difference between two quaternions.
-- [func GLKQuaternionMultiply(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](glkquaternionmultiply(_:_:).md)
+- [func GLKQuaternionMultiply(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](./glkquaternionmultiply%28_,_%29.md)
   Returns the product of two quaternions.
-- [func GLKQuaternionSlerp(GLKQuaternion, GLKQuaternion, Float) -> GLKQuaternion](glkquaternionslerp(_:_:_:).md)
+- [func GLKQuaternionSlerp(GLKQuaternion, GLKQuaternion, Float) -> GLKQuaternion](./glkquaternionslerp%28_,_,_%29.md)
   Returns the spherical linear interpolation of two quaternions.
 
 

@@ -1,7 +1,8 @@
 # synchronize()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronizes the in-memory keys and values with the ones stored in iCloud.
 
@@ -18,6 +19,10 @@ Synchronizes the in-memory keys and values with the ones stored in iCloud.
 
 ```swift
 func synchronize() -> Bool
+```
+
+```objc
+- (BOOL) synchronize;
 ```
 
 #### Return Value

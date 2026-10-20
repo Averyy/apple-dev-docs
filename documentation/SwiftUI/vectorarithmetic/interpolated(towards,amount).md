@@ -1,7 +1,8 @@
 # interpolated(towards:amount:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns this value interpolated with `other` by the specified `amount`.
 
@@ -27,13 +28,14 @@ This result is equivalent to `self + (other - self) * amount`.
 
 ## See Also
 
-- [var magnitudeSquared: Double](vectorarithmetic/magnitudesquared.md)
+### Manipulating values
+- [var magnitudeSquared: Double](./magnitudesquared.md)
   Returns the dot-product of this vector arithmetic instance with itself.
-- [func scale(by: Double)](vectorarithmetic/scale(by:).md)
+- [func scale(by: Double)](./scale%28by%29.md)
   Multiplies each component of this value by the given value.
-- [func scaled(by: Double) -> Self](vectorarithmetic/scaled(by:).md)
+- [func scaled(by: Double) -> Self](./scaled%28by%29.md)
   Returns a value with each component of this value multiplied by the given value.
-- [func interpolate(towards: Self, amount: Double)](vectorarithmetic/interpolate(towards:amount:).md)
+- [func interpolate(towards: Self, amount: Double)](./interpolate%28towards,amount%29.md)
   Interpolates this value with `other` by the specified `amount`.
 
 

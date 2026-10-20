@@ -1,7 +1,8 @@
 # MTLFunctionType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of a top-level Metal Shading Language (MSL) function.
 
@@ -10,7 +11,7 @@ The type of a top-level Metal Shading Language (MSL) function.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,48 +20,53 @@ The type of a top-level Metal Shading Language (MSL) function.
 enum MTLFunctionType
 ```
 
+```c
+enum MTLFunctionType : NSUInteger;
+```
+
 ## Topics
 
 ### Function types
-- [MTLFunctionType.vertex](mtlfunctiontype/vertex.md)
+- [MTLFunctionType.vertex](./mtlfunctiontype/vertex.md)
   A vertex function you can use in a render pipeline state object.
-- [MTLFunctionType.fragment](mtlfunctiontype/fragment.md)
+- [MTLFunctionType.fragment](./mtlfunctiontype/fragment.md)
   A fragment function you can use in a render pipeline state object.
-- [MTLFunctionType.kernel](mtlfunctiontype/kernel.md)
+- [MTLFunctionType.kernel](./mtlfunctiontype/kernel.md)
   A kernel you can use in a compute pipeline state object.
-- [MTLFunctionType.intersection](mtlfunctiontype/intersection.md)
+- [MTLFunctionType.intersection](./mtlfunctiontype/intersection.md)
   A function you can use in an intersection function table.
-- [MTLFunctionType.visible](mtlfunctiontype/visible.md)
+- [MTLFunctionType.visible](./mtlfunctiontype/visible.md)
   A function you can use in a visible function table.
 ### Enumeration Cases
-- [MTLFunctionType.mesh](mtlfunctiontype/mesh.md)
-- [MTLFunctionType.object](mtlfunctiontype/object.md)
+- [MTLFunctionType.mesh](./mtlfunctiontype/mesh.md)
+- [MTLFunctionType.object](./mtlfunctiontype/object.md)
 ### Initializers
-- [init?(rawValue: UInt)](mtlfunctiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlfunctiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var device: any MTLDevice](mtlfunction/device.md)
+### Identifying shader functions
+- [var device: any MTLDevice](./mtlfunction/device.md)
   The device object that created the shader function.
-- [var label: String?](mtlfunction/label.md)
+- [var label: String?](./mtlfunction/label.md)
   A string that identifies the shader function.
-- [var functionType: MTLFunctionType](mtlfunction/functiontype.md)
+- [var functionType: MTLFunctionType](./mtlfunction/functiontype.md)
   The shader function’s type.
-- [var name: String](mtlfunction/name.md)
+- [var name: String](./mtlfunction/name.md)
   The function’s name.
-- [var options: MTLFunctionOptions](mtlfunction/options.md)
+- [var options: MTLFunctionOptions](./mtlfunction/options.md)
   The options that Metal used to compile this function.
-- [struct MTLFunctionOptions](mtlfunctionoptions.md)
+- [struct MTLFunctionOptions](./mtlfunctionoptions.md)
   Options that define how Metal compiles a GPU function.
 
 

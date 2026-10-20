@@ -1,7 +1,8 @@
 # maximumHeight
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum height available for the image.
 

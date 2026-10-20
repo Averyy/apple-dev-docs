@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Call when done writing the Composite

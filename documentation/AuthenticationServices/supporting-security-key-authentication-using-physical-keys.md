@@ -1,6 +1,7 @@
 # Supporting Security Key Authentication Using Physical Keys
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Allow users to authenticate using NFC, USB, and Lightning security keys in your app or service.
 
@@ -10,11 +11,11 @@ Security key authentication supports physical security devices for authenticatio
 
 Take special care when using physical devices for authentication. If the user loses the device or someone steals it, there is no way to perform authentication with associated services. Have a backup strategy in place for such events.
 
-> ❗ **Important**:  You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains) for more information.__
+> ❗ **Important**:  You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [Supporting associated domains](../Xcode/supporting-associated-domains.md) for more information.__
 
 ##### Register a New Account on a Service
 
-The following code sets up the process of registration. Create an instance of [`ASAuthorizationSecurityKeyPublicKeyCredentialProvider`](asauthorizationsecuritykeypublickeycredentialprovider.md) and pass it your relying party identifier, which is usually the service’s domain name.
+The following code sets up the process of registration. Create an instance of [`ASAuthorizationSecurityKeyPublicKeyCredentialProvider`](./asauthorizationsecuritykeypublickeycredentialprovider.md) and pass it your relying party identifier, which is usually the service’s domain name.
 
 ```swift
 var challenge : NSData? // Obtain this from the server.
@@ -28,9 +29,9 @@ authController.performRequests()
 
 ```
 
-You’re responsible for communicating with the server to obtain the challenge. Create a security key request by calling [`createCredentialRegistrationRequest(challenge:displayName:name:userID:)`](asauthorizationsecuritykeypublickeycredentialprovider/createcredentialregistrationrequest(challenge:displayname:name:userid:).md) and passing in the list of parameters.
+You’re responsible for communicating with the server to obtain the challenge. Create a security key request by calling [`createCredentialRegistrationRequest(challenge:displayName:name:userID:)`](./asauthorizationsecuritykeypublickeycredentialprovider/createcredentialregistrationrequest%28challenge,displayname,name,userid%29.md) and passing in the list of parameters.
 
-Then specify the parameters for the types of credentials that your server supports. Obtain an authorization controller by passing in an array that contains the security key request, and set the delegate and presentation context provider of the controller to a class that adopts [`ASAuthorizationControllerDelegate`](asauthorizationcontrollerdelegate.md). Finally, direct the controller to perform the request.
+Then specify the parameters for the types of credentials that your server supports. Obtain an authorization controller by passing in an array that contains the security key request, and set the delegate and presentation context provider of the controller to a class that adopts [`ASAuthorizationControllerDelegate`](./asauthorizationcontrollerdelegate.md). Finally, direct the controller to perform the request.
 
 Because this is a registration request, the device displays a sheet asking the user to create a new credential.
 
@@ -38,7 +39,7 @@ Because this is a registration request, the device displays a sheet asking the u
 
 After the user establishes an account with a service, they can connect and authenticate using the physical security device.
 
-Obtain the challenge from the server, then create an instance of [`ASAuthorizationSecurityKeyPublicKeyCredentialProvider`](asauthorizationsecuritykeypublickeycredentialprovider.md) and set its provider to the service URL. Set the challenge, and then create an [`ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest`](asauthorizationsecuritykeypublickeycredentialassertionrequest.md).
+Obtain the challenge from the server, then create an instance of [`ASAuthorizationSecurityKeyPublicKeyCredentialProvider`](./asauthorizationsecuritykeypublickeycredentialprovider.md) and set its provider to the service URL. Set the challenge, and then create an [`ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest`](./asauthorizationsecuritykeypublickeycredentialassertionrequest.md).
 
 Create the authorization controller with the platform key request, set the controller’s delegate and presentation context provider, and direct the authorization controller to perform the request.
 
@@ -59,7 +60,7 @@ The device displays a sheet instructing the user about how to use the physical s
 
 ##### Respond to the Request
 
-[`ASAuthorizationControllerDelegate`](asauthorizationcontrollerdelegate.md) provides information about the outcome of a registration or authentication request. Adopt this protocol to determine how to react to authorization success or errors. The following code defines [`authorizationController(controller:didCompleteWithAuthorization:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewithauthorization:).md) to handle registration and assertion, as well as [`authorizationController(controller:didCompleteWithError:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md) to handle any errors:
+[`ASAuthorizationControllerDelegate`](./asauthorizationcontrollerdelegate.md) provides information about the outcome of a registration or authentication request. Adopt this protocol to determine how to react to authorization success or errors. The following code defines [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md) to handle registration and assertion, as well as [`authorizationController(controller:didCompleteWithError:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) to handle any errors:
 
 ```swift
 func authorizationController(controller: controller, didCompleteWithAuthorization: authorization) {
@@ -76,15 +77,16 @@ func authorizationController(controller: controller, didCompleteWithError: error
 } 
 ```
 
-If the authorization succeeds, obtain the credential from the authoriziation controller and determine whether it’s an [`ASAuthorizationSecurityKeyPublicKeyCredentialRegistration`](asauthorizationsecuritykeypublickeycredentialregistration.md) or an ` ```ASAuthorizationSecurityKeyPublicKeyCredentialAssertion``, and take appropriate steps. If your app uses other authorization cases, such as Sign in with Apple, handle those in this delegate method, as well.
+If the authorization succeeds, obtain the credential from the authoriziation controller and determine whether it’s an [`ASAuthorizationSecurityKeyPublicKeyCredentialRegistration`](./asauthorizationsecuritykeypublickeycredentialregistration.md) or an ` ```ASAuthorizationSecurityKeyPublicKeyCredentialAssertion``, and take appropriate steps. If your app uses other authorization cases, such as Sign in with Apple, handle those in this delegate method, as well.
 
-If an error occurs during the authorization, the framework calls [`authorizationController(controller:didCompleteWithError:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md) and provides the specific error.
+If an error occurs during the authorization, the framework calls [`authorizationController(controller:didCompleteWithError:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) and provides the specific error.
 
 ## See Also
 
-- [Connecting to a service with passkeys](connecting-to-a-service-with-passkeys.md)
+### Fundamentals
+- [Connecting to a service with passkeys](./connecting-to-a-service-with-passkeys.md)
   Allow users to sign in to a service without typing a password.
-- [Supporting passkeys](supporting-passkeys.md)
+- [Supporting passkeys](./supporting-passkeys.md)
   Eliminate passwords for your users when they sign in to apps and websites.
 
 

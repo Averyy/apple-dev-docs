@@ -1,7 +1,8 @@
 # CKOperationGroup.TransferSize.kilobytes
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transfer size that represents 1 or more kilobytes.
 
@@ -20,21 +21,26 @@ A transfer size that represents 1 or more kilobytes.
 case kilobytes
 ```
 
+```c
+CKOperationGroupTransferSizeKilobytes
+```
+
 ## See Also
 
-- [CKOperationGroup.TransferSize.megabytes](ckoperationgroup/transfersize/megabytes.md)
+### Transfer Sizes
+- [CKOperationGroup.TransferSize.megabytes](./megabytes.md)
   A transfer size that represents 1 or more megabytes.
-- [CKOperationGroup.TransferSize.gigabytes](ckoperationgroup/transfersize/gigabytes.md)
+- [CKOperationGroup.TransferSize.gigabytes](./gigabytes.md)
   A transfer size that represents 1 or more gigabytes.
-- [CKOperationGroup.TransferSize.tensOfMegabytes](ckoperationgroup/transfersize/tensofmegabytes.md)
+- [CKOperationGroup.TransferSize.tensOfMegabytes](./tensofmegabytes.md)
   A transfer size that represents tens of megabytes.
-- [CKOperationGroup.TransferSize.tensOfGigabytes](ckoperationgroup/transfersize/tensofgigabytes.md)
+- [CKOperationGroup.TransferSize.tensOfGigabytes](./tensofgigabytes.md)
   A transfer size that represents tens of gigabytes.
-- [CKOperationGroup.TransferSize.hundredsOfMegabytes](ckoperationgroup/transfersize/hundredsofmegabytes.md)
+- [CKOperationGroup.TransferSize.hundredsOfMegabytes](./hundredsofmegabytes.md)
   A transfer size that represents hundreds of megabytes.
-- [CKOperationGroup.TransferSize.hundredsOfGigabytes](ckoperationgroup/transfersize/hundredsofgigabytes.md)
+- [CKOperationGroup.TransferSize.hundredsOfGigabytes](./hundredsofgigabytes.md)
   A transfer size that represents hundreds of gigabytes.
-- [CKOperationGroup.TransferSize.unknown](ckoperationgroup/transfersize/unknown.md)
+- [CKOperationGroup.TransferSize.unknown](./unknown.md)
   An unknown transfer size.
 
 

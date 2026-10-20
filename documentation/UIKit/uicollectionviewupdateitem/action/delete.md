@@ -1,19 +1,24 @@
 # UICollectionViewUpdateItem.Action.delete
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case delete
+```
+
+```c
+UICollectionUpdateActionDelete
 ```
 
 #### Discussion
@@ -22,10 +27,11 @@ Remove the item from the collection view.
 
 ## See Also
 
-- [UICollectionViewUpdateItem.Action.none](uicollectionviewupdateitem/action/none.md)
-- [UICollectionViewUpdateItem.Action.insert](uicollectionviewupdateitem/action/insert.md)
-- [UICollectionViewUpdateItem.Action.reload](uicollectionviewupdateitem/action/reload.md)
-- [UICollectionViewUpdateItem.Action.move](uicollectionviewupdateitem/action/move.md)
+### Constants
+- [UICollectionViewUpdateItem.Action.none](./none.md)
+- [UICollectionViewUpdateItem.Action.insert](./insert.md)
+- [UICollectionViewUpdateItem.Action.reload](./reload.md)
+- [UICollectionViewUpdateItem.Action.move](./move.md)
 
 
 ---

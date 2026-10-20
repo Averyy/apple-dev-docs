@@ -1,7 +1,8 @@
 # skipCurrentEvent()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the playback of the currently playing interstital event to be abandoned.
 
@@ -20,15 +21,20 @@ Causes the playback of the currently playing interstital event to be abandoned.
 func skipCurrentEvent()
 ```
 
+```objc
+- (void) skipCurrentEvent;
+```
+
 #### Discussion
 
 Note that coinciding events will NOT be skipped. This results in AVPlayerInterstitialEventMonitorCurrentEventSkippedNotification being posted. Has no effect while the currentEvent is nil.
 
 ## See Also
 
-- [var events: [AVPlayerInterstitialEvent]!](avplayerinterstitialeventcontroller/events.md)
+### Configuring the event schedule
+- [var events: [AVPlayerInterstitialEvent]!](./events.md)
   The current schedule of interstitial events.
-- [func cancelCurrentEvent(withResumptionOffset: CMTime)](avplayerinterstitialeventcontroller/cancelcurrentevent(withresumptionoffset:).md)
+- [func cancelCurrentEvent(withResumptionOffset: CMTime)](./cancelcurrentevent%28withresumptionoffset%29.md)
   Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.
 
 

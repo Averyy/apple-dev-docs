@@ -1,7 +1,8 @@
 # SubscriptionPricesLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a price within a subscription linkage response.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a price within a subscription linkage resp
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPricesLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionPrices`
 
 
 ---

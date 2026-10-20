@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataFormatBool
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the characteristic has Boolean values.
 
@@ -17,6 +18,10 @@ Indicates that the characteristic has Boolean values.
 
 ```swift
 let HMCharacteristicMetadataFormatBool: String
+```
+
+```c
+extern NSString * const HMCharacteristicMetadataFormatBool;
 ```
 
 

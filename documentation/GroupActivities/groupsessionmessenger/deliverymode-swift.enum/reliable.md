@@ -1,7 +1,8 @@
 # GroupSessionMessenger.DeliveryMode.reliable
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to ensure the delivery of messages to known participants.
 
@@ -21,15 +22,16 @@ case reliable
 
 ## Mentions
 
-- [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
+- [Synchronizing data during a SharePlay activity](../../synchronizing-data-during-a-shareplay-activity.md)
 
 #### Discussion
 
-Use this approach to send messages that are critical to the experience you create. The [`GroupSessionMessenger`](groupsessionmessenger.md) enqueues a message until it is successfully transmitted to all known participants.  The system doesn’t guarantee delivery to participants who join a group session after you send a message, or who leave the group prior to delivery.
+Use this approach to send messages that are critical to the experience you create. The [`GroupSessionMessenger`](../../groupsessionmessenger.md) enqueues a message until it is successfully transmitted to all known participants.  The system doesn’t guarantee delivery to participants who join a group session after you send a message, or who leave the group prior to delivery.
 
 ## See Also
 
-- [GroupSessionMessenger.DeliveryMode.unreliable](groupsessionmessenger/deliverymode-swift.enum/unreliable.md)
+### Getting the delivery mode options
+- [GroupSessionMessenger.DeliveryMode.unreliable](./unreliable.md)
   A best-effort attempt to deliver the message to known participants.
 
 

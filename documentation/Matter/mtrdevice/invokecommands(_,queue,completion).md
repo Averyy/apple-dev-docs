@@ -1,7 +1,8 @@
 # invokeCommands(_:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoke one or more groups of commands.
 
@@ -17,7 +18,15 @@ Invoke one or more groups of commands.
 ## Declaration
 
 ```swift
+func invokeCommands(_ commands: [[MTRCommandWithRequiredResponse]], queue: dispatch_queue_t, completion: @escaping @Sendable ([[String : Any]]?, (any Error)?) -> Void)
+```
+
+```swift
 func invokeCommands(_ commands: [[MTRCommandWithRequiredResponse]], queue: dispatch_queue_t) async throws -> [[String : Any]]
+```
+
+```objc
+- (void) invokeCommands:(NSArray<NSArray<MTRCommandWithRequiredResponse *> *> *) commands queue:(dispatch_queue_t) queue completion:(MTRDeviceResponseHandler) completion;
 ```
 
 #### Discussion

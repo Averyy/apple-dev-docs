@@ -1,7 +1,8 @@
 # GKGameActivity.State.active
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The game activity is active.
 
@@ -17,6 +18,10 @@ The game activity is active.
 
 ```swift
 case active
+```
+
+```c
+GKGameActivityStateActive
 ```
 
 

@@ -1,7 +1,8 @@
 # reportSpam(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports an MMS message as spam to the carrier and to partners.
 
@@ -16,8 +17,10 @@ final func reportSpam(_ message: MMSMessage) async throws
 
 #### Discussion
 
-> **Note**: - `TelephonyMessagingSession.SessionError.invalidSession` when session has been invalidated.
-- `MMSService.Error.notSupported` when spam reporting is not supported by carrier.
+> **Throws**:
+>
+> - `TelephonyMessagingSession.SessionError.invalidSession` when session has been invalidated.
+> - `MMSService.Error.notSupported` when spam reporting is not supported by carrier.
 
 ## Parameters
 

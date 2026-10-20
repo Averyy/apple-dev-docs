@@ -1,7 +1,8 @@
 # init(name:uri:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSXMLElement` object initialized with the specified name and URI.
 
@@ -15,13 +16,17 @@ Returns an `NSXMLElement` object initialized with the specified name and URI.
 init(name: String, uri URI: String?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name URI:(NSString *) URI;
+```
+
 #### Return Value
 
 The initialized `NSXMLElement` object or `nil` if initialization did not succeed.
 
 #### Discussion
 
-You can look up the namespace prefix for this element node based on its URI using [`resolvePrefix(forNamespaceURI:)`](xmlelement/resolveprefix(fornamespaceuri:).md).  This method is the primary initializer for the `NSXMLElement` class.
+You can look up the namespace prefix for this element node based on its URI using [`resolvePrefix(forNamespaceURI:)`](./resolveprefix%28fornamespaceuri%29.md).  This method is the primary initializer for the `NSXMLElement` class.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ You can look up the namespace prefix for this element node based on its URI usin
 
 ## See Also
 
-- [convenience init(name: String)](xmlelement/init(name:).md)
+### Initializing NSXMLElement Objects
+- [convenience init(name: String)](./init%28name%29.md)
   Returns an `NSXMLElement` object initialized with the specified name.
-- [convenience init(name: String, stringValue: String?)](xmlelement/init(name:stringvalue:).md)
+- [convenience init(name: String, stringValue: String?)](./init%28name,stringvalue%29.md)
   Returns an `NSXMLElement` object initialized with a specified name and a single text-node child containing a specified value.
-- [init(xmlString: String) throws](xmlelement/init(xmlstring:)-7vkg7.md)
+- [init(xmlString: String) throws](./init%28xmlstring%29-7vkg7.md)
   Returns an `NSXMLElement` object created from a specified string containing XML markup.
-- [convenience init(kind: XMLNode.Kind, options: XMLNode.Options)](xmlelement/init(kind:options:).md)
+- [convenience init(kind: XMLNode.Kind, options: XMLNode.Options)](./init%28kind,options%29.md)
 
 
 ---

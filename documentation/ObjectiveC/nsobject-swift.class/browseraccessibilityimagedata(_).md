@@ -1,12 +1,13 @@
 # browserAccessibilityImageData(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- macOS ?+
+- macOS
 - tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func browserAccessibilityImageData(_ attributes: [AnyHashable : Any]) -> CVPixelBuffer?
+```
+
+```objc
+- (CVPixelBufferRef) browserAccessibilityImageData:(NSDictionary *) attributes;
 ```
 
 #### Return Value

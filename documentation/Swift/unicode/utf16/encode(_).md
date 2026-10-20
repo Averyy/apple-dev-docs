@@ -1,7 +1,8 @@
 # encode(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts from encoding-independent to encoded representation, returning `nil` if the scalar can’t be represented in this encoding.
 

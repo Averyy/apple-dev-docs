@@ -1,14 +1,15 @@
 # deallocatePackets
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn deallocatePackets(IOUserNetworkPacket **packets, uint32_t packetsCount);
 ```
 

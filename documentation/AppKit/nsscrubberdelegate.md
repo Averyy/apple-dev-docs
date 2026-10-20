@@ -1,12 +1,13 @@
 # NSScrubberDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that a scrubber delegate implements to respond to user interactions.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,36 +15,41 @@ A set of methods that a scrubber delegate implements to respond to user interact
 protocol NSScrubberDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSScrubberDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling item selection and highlighting
-- [func scrubber(NSScrubber, didSelectItemAt: Int)](nsscrubberdelegate/scrubber(_:didselectitemat:).md)
+- [func scrubber(NSScrubber, didSelectItemAt: Int)](./nsscrubberdelegate/scrubber%28_,didselectitemat%29.md)
   Tells the delegate that the item at the specified index was selected.
-- [func scrubber(NSScrubber, didHighlightItemAt: Int)](nsscrubberdelegate/scrubber(_:didhighlightitemat:).md)
+- [func scrubber(NSScrubber, didHighlightItemAt: Int)](./nsscrubberdelegate/scrubber%28_,didhighlightitemat%29.md)
   Tells the delegate that the item at the specified index was highlighted.
 ### Handling scrubber scrolling
-- [func scrubber(NSScrubber, didChangeVisibleRange: NSRange)](nsscrubberdelegate/scrubber(_:didchangevisiblerange:).md)
+- [func scrubber(NSScrubber, didChangeVisibleRange: NSRange)](./nsscrubberdelegate/scrubber%28_,didchangevisiblerange%29.md)
   Tells the delegate that the range of items currently visible in the scrubber has changed.
 ### Tracking user interaction
-- [func didBeginInteracting(with: NSScrubber)](nsscrubberdelegate/didbegininteracting(with:).md)
+- [func didBeginInteracting(with: NSScrubber)](./nsscrubberdelegate/didbegininteracting%28with%29.md)
   Tells the delegate that the user is panning or scrolling the scrubber.
-- [func didFinishInteracting(with: NSScrubber)](nsscrubberdelegate/didfinishinteracting(with:).md)
+- [func didFinishInteracting(with: NSScrubber)](./nsscrubberdelegate/didfinishinteracting%28with%29.md)
   Tells the delegate that a pan or scroll interaction with the scrubber has ended.
-- [func didCancelInteracting(with: NSScrubber)](nsscrubberdelegate/didcancelinteracting(with:).md)
+- [func didCancelInteracting(with: NSScrubber)](./nsscrubberdelegate/didcancelinteracting%28with%29.md)
   Tells the delegate that a user interaction with the scrubber has been canceled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [NSScrubberFlowLayoutDelegate](nsscrubberflowlayoutdelegate.md)
+- [NSScrubberFlowLayoutDelegate](./nsscrubberflowlayoutdelegate.md)
 
 ## See Also
 
-- [class NSScrubber](nsscrubber.md)
+### Scrubbers
+- [class NSScrubber](./nsscrubber.md)
   A customizable item picker control for the Touch Bar.
-- [protocol NSScrubberDataSource](nsscrubberdatasource.md)
+- [protocol NSScrubberDataSource](./nsscrubberdatasource.md)
   A set of methods that a scrubber data source object implements to provide items to the scrubber from an associated data collection in your app.
 
 

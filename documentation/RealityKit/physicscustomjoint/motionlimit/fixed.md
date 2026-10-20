@@ -1,7 +1,8 @@
 # PhysicsCustomJoint.MotionLimit.fixed
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+

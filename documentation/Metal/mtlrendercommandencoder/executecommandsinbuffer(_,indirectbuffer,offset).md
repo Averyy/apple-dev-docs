@@ -1,7 +1,8 @@
 # executeCommandsInBuffer(_:indirectBuffer:offset:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that runs an indirect range of commands from an indirect command buffer (ICB).
 
@@ -11,7 +12,7 @@ Encodes a command that runs an indirect range of commands from an indirect comma
 - Mac Catalyst 13.0+
 - macOS 10.14+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,18 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, indirectBuf
 
 ## Parameters
 
-- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
-- `indirectRangeBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](mtlindirectcommandbufferexecutionrange.md) structure. When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) GPU family, the maximum value for the [`length`](mtlindirectcommandbufferexecutionrange/length.md) property of that structure is 0x4000 (16,384). Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](mtlgpufamily/apple10.md), don’t have this limitation.
-- `offset`: An integer that represents the location, in bytes, from the start of `indirectRangeBuffer` where the execution range structure begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `buffer`: An [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
+- `indirectRangeBuffer`: An [`MTLBuffer`](../mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](../mtlindirectcommandbufferexecutionrange.md) structure.
+
+  When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](../mtlgpufamily/mac2.md) GPU family, the maximum value for the [`length`](../mtlindirectcommandbufferexecutionrange/length.md) property of that structure is 0x4000 (16,384). Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](../mtlgpufamily/apple10.md), don’t have this limitation.
+- `offset`: An integer that represents the location, in bytes, from the start of `indirectRangeBuffer` where the execution range structure begins.
+
+  See the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
 
 ## See Also
 
-- [func executeCommandsInBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](mtlrendercommandencoder/executecommandsinbuffer(_:range:).md)
+### Running commands from indirect command buffers
+- [func executeCommandsInBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](./executecommandsinbuffer%28_,range%29.md)
   Encodes a command that runs a range of commands from an indirect command buffer (ICB).
 
 

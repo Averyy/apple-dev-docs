@@ -1,7 +1,8 @@
 # outputIsOpaque
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Override this class property if your processor’s output stores 1.0 into the alpha channel of all pixels within the output extent.
 
@@ -19,15 +20,20 @@ Override this class property if your processor’s output stores 1.0 into the al
 class var outputIsOpaque: Bool { get }
 ```
 
+```objc
+@property (class, readonly) bool outputIsOpaque;
+```
+
 #### Discussion
 
 If not overridden, false is returned.
 
 ## See Also
 
-- [class var outputFormat: CIFormat](ciimageprocessorkernel/outputformat.md)
+### Type Properties
+- [class var outputFormat: CIFormat](./outputformat.md)
   Override this class property if you want your processor’s output to be in a specific pixel format.
-- [class var synchronizeInputs: Bool](ciimageprocessorkernel/synchronizeinputs.md)
+- [class var synchronizeInputs: Bool](./synchronizeinputs.md)
   Override this class property to return false if you want your processor to be given input objects that have not been synchronized for CPU access.
 
 

@@ -1,12 +1,13 @@
 # NSDraggingItem.ImageComponentKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Keys that identify components of a dragging image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ Keys that identify components of a dragging image.
 struct ImageComponentKey
 ```
 
+```c
+typedef NSString * NSDraggingImageComponentKey;
+```
+
 ## Topics
 
 ### Initializing a component key
-- [init(String)](nsdraggingitem/imagecomponentkey/init(_:).md)
+- [init(String)](./imagecomponentkey/init%28_%29.md)
   Creates an image component key using the string you provide.
-- [init(rawValue: String)](nsdraggingitem/imagecomponentkey/init(rawvalue:).md)
+- [init(rawValue: String)](./imagecomponentkey/init%28rawvalue%29.md)
   Creates an image component key using the string you provide.
 ### Image component keys
-- [static let icon: NSDraggingItem.ImageComponentKey](nsdraggingitem/imagecomponentkey/icon.md)
+- [static let icon: NSDraggingItem.ImageComponentKey](./imagecomponentkey/icon.md)
   A key for a corresponding value that is a dragging item’s image.
-- [static let label: NSDraggingItem.ImageComponentKey](nsdraggingitem/imagecomponentkey/label.md)
+- [static let label: NSDraggingItem.ImageComponentKey](./imagecomponentkey/label.md)
   A key for a corresponding value that represents a textual label for a dragging item, for example, a file name.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var imageComponents: [NSDraggingImageComponent]?](nsdraggingitem/imagecomponents.md)
+### Drag image components
+- [var imageComponents: [NSDraggingImageComponent]?](./imagecomponents.md)
   An array of dragging image components to use to create the drag image.
-- [var imageComponentsProvider: (() -> [NSDraggingImageComponent])?](nsdraggingitem/imagecomponentsprovider.md)
+- [var imageComponentsProvider: (() -> [NSDraggingImageComponent])?](./imagecomponentsprovider.md)
   An array of blocks that provide the dragging image components.
-- [var item: Any](nsdraggingitem/item.md)
+- [var item: Any](./item.md)
   The pasteboard reader or writer object dependent on the context where you use the dragging item.
 
 

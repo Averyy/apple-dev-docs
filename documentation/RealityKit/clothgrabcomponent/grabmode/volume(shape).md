@@ -1,7 +1,8 @@
 # volume(shape:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Grabbing will be performed using a volume of the given shape.
 
@@ -26,7 +27,8 @@ A volume-based grab mode.
 
 ## See Also
 
-- [static var ray: ClothGrabComponent.GrabMode](clothgrabcomponent/grabmode/ray.md)
+### Creating a grab mode
+- [static var ray: ClothGrabComponent.GrabMode](./ray.md)
   Grabbing will be performed using a ray.
 
 

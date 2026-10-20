@@ -1,7 +1,8 @@
 # MTRMicrowaveOvenControlClusterSetCookingParametersParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,30 +19,34 @@
 class MTRMicrowaveOvenControlClusterSetCookingParametersParams
 ```
 
+```objc
+@interface MTRMicrowaveOvenControlClusterSetCookingParametersParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var cookMode: NSNumber?](mtrmicrowaveovencontrolclustersetcookingparametersparams/cookmode.md)
-- [var cookTime: NSNumber?](mtrmicrowaveovencontrolclustersetcookingparametersparams/cooktime.md)
-- [var powerSetting: NSNumber?](mtrmicrowaveovencontrolclustersetcookingparametersparams/powersetting.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrmicrowaveovencontrolclustersetcookingparametersparams/serversideprocessingtimeout.md)
+- [var cookMode: NSNumber?](./mtrmicrowaveovencontrolclustersetcookingparametersparams/cookmode.md)
+- [var cookTime: NSNumber?](./mtrmicrowaveovencontrolclustersetcookingparametersparams/cooktime.md)
+- [var powerSetting: NSNumber?](./mtrmicrowaveovencontrolclustersetcookingparametersparams/powersetting.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrmicrowaveovencontrolclustersetcookingparametersparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var startAfterSetting: NSNumber?](mtrmicrowaveovencontrolclustersetcookingparametersparams/startaftersetting.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrmicrowaveovencontrolclustersetcookingparametersparams/timedinvoketimeoutms.md)
+- [var startAfterSetting: NSNumber?](./mtrmicrowaveovencontrolclustersetcookingparametersparams/startaftersetting.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrmicrowaveovencontrolclustersetcookingparametersparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

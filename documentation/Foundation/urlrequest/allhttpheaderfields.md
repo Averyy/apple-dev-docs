@@ -1,7 +1,8 @@
 # allHTTPHeaderFields
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing all of the HTTP header fields for a request.
 
@@ -22,15 +23,16 @@ var allHTTPHeaderFields: [String : String]? { get set }
 
 #### Discussion
 
-Certain header fields are reserved (see [`Reserved HTTP headers`](nsurlrequest#Reserved-HTTP-headers.md)). Do not use this property to set such headers.
+Certain header fields are reserved (see [Reserved HTTP headers](../nsurlrequest.md#Reserved-HTTP-headers)). Do not use this property to set such headers.
 
 ## See Also
 
-- [func addValue(String, forHTTPHeaderField: String)](urlrequest/addvalue(_:forhttpheaderfield:).md)
+### Accessing header fields
+- [func addValue(String, forHTTPHeaderField: String)](./addvalue%28_,forhttpheaderfield%29.md)
   Adds a value to the header field.
-- [func setValue(String?, forHTTPHeaderField: String)](urlrequest/setvalue(_:forhttpheaderfield:).md)
+- [func setValue(String?, forHTTPHeaderField: String)](./setvalue%28_,forhttpheaderfield%29.md)
   Sets a value for the header field.
-- [func value(forHTTPHeaderField: String) -> String?](urlrequest/value(forhttpheaderfield:).md)
+- [func value(forHTTPHeaderField: String) -> String?](./value%28forhttpheaderfield%29.md)
   Retrieves a header value.
 
 

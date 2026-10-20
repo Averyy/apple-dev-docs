@@ -1,12 +1,13 @@
 # verticalScroller
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll view’s vertical scroller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The scroll view’s vertical scroller.
 var verticalScroller: NSScroller? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSScroller * verticalScroller;
+```
+
 #### Discussion
 
 The value of this property is `nil` if the scroll view has no vertical scroller.
 
-You can access the vertical scroller using this property even if the scroll view isn’t currently displaying it. To make sure the scroller is visible, set [`hasVerticalScroller`](nsscrollview/hasverticalscroller.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+You can access the vertical scroller using this property even if the scroll view isn’t currently displaying it. To make sure the scroller is visible, set [`hasVerticalScroller`](./hasverticalscroller.md) to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var horizontalScroller: NSScroller?](nsscrollview/horizontalscroller.md)
+### Managing Scrollers
+- [var horizontalScroller: NSScroller?](./horizontalscroller.md)
   The scroll view’s horizontal scroller.
-- [var hasHorizontalScroller: Bool](nsscrollview/hashorizontalscroller.md)
+- [var hasHorizontalScroller: Bool](./hashorizontalscroller.md)
   A Boolean that indicates whether the scroll view has a horizontal scroller.
-- [var hasVerticalScroller: Bool](nsscrollview/hasverticalscroller.md)
+- [var hasVerticalScroller: Bool](./hasverticalscroller.md)
   A Boolean that indicates whether the scroll view has a vertical scroller.
-- [var autohidesScrollers: Bool](nsscrollview/autohidesscrollers.md)
+- [var autohidesScrollers: Bool](./autohidesscrollers.md)
   A Boolean that indicates whether the scroll view automatically hides its scroll bars when they are not needed.
 
 

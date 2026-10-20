@@ -1,18 +1,19 @@
 # collisionBitMask
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that defines which categories of physics bodies can collide with this physics body.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,21 +21,26 @@ A mask that defines which categories of physics bodies can collide with this phy
 var collisionBitMask: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger collisionBitMask;
+```
+
 #### Discussion
 
 When two physics bodies contact each other, a collision may occur. SceneKit compares the body’s collision mask to the other body’s category mask by performing a bitwise AND operation. If the result is a nonzero value, then the body is affected by the collision. Each body independently chooses whether it wants to be affected by the other body. For example, you might choose to avoid collision calculations that would make negligible changes to a body’s velocity.
 
-The default value is [`all`](scnphysicscollisioncategory/all.md) (a bit mask whose every bit is enabled), specifying that the body will collide with bodies of all other categories.
+The default value is [`all`](../scnphysicscollisioncategory/all.md) (a bit mask whose every bit is enabled), specifying that the body will collide with bodies of all other categories.
 
 ## See Also
 
-- [var categoryBitMask: Int](scnphysicsbody/categorybitmask.md)
+### Working with Contacts and Collisions
+- [var categoryBitMask: Int](./categorybitmask.md)
   A mask that defines which categories this physics body belongs to.
-- [var contactTestBitMask: Int](scnphysicsbody/contacttestbitmask.md)
+- [var contactTestBitMask: Int](./contacttestbitmask.md)
   A mask that defines which categories of bodies cause intersection notifications with this physics body.
-- [struct SCNPhysicsCollisionCategory](scnphysicscollisioncategory.md)
-  Default values for a physics body’s [`categoryBitMask`](scnphysicsbody/categorybitmask.md) and [`collisionBitMask`](scnphysicsbody/collisionbitmask.md) properties.
-- [var continuousCollisionDetectionThreshold: CGFloat](scnphysicsbody/continuouscollisiondetectionthreshold.md)
+- [struct SCNPhysicsCollisionCategory](../scnphysicscollisioncategory.md)
+  Default values for a physics body’s [`categoryBitMask`](./categorybitmask.md) and [`collisionBitMask`](./collisionbitmask.md) properties.
+- [var continuousCollisionDetectionThreshold: CGFloat](./continuouscollisiondetectionthreshold.md)
   The minimum distance the body must travel for SceneKit to apply a more precise (but more costly) algorithm to detect contacts with other bodies.
 
 

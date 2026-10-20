@@ -1,7 +1,8 @@
 # init(id:stationName:programName:type:duration:artwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates radio station content.
 

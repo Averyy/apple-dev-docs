@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a given object at the end of the array.
 
@@ -20,21 +21,29 @@ Inserts a given object at the end of the array.
 func add(_ anObject: Any)
 ```
 
+```objc
+- (void) addObject:(ObjectType) anObject;
+```
+
 ## Parameters
 
-- `anObject`: The object to add to the end of the array’s content. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
+- `anObject`: The object to add to the end of the array’s content. This value must not be `nil`.
+
+  > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
 
 ## See Also
 
-- [func remove(Any)](nsmutablearray/remove(_:).md)
+### Related Documentation
+- [func remove(Any)](./remove%28_%29.md)
   Removes all occurrences in the array of a given object.
-- [func setArray([Any])](nsmutablearray/setarray(_:).md)
+- [func setArray([Any])](./setarray%28_%29.md)
   Sets the receiving array’s elements to those in another given array.
-- [func addObjects(from: [Any])](nsmutablearray/addobjects(from:).md)
+### Adding Objects
+- [func addObjects(from: [Any])](./addobjects%28from%29.md)
   Adds the objects contained in another given array to the end of the receiving array’s content.
-- [func insert(Any, at: Int)](nsmutablearray/insert(_:at:)-5dbx5.md)
+- [func insert(Any, at: Int)](./insert%28_,at%29-5dbx5.md)
   Inserts a given object into the array’s contents at a given index.
-- [func insert([Any], at: IndexSet)](nsmutablearray/insert(_:at:)-73pln.md)
+- [func insert([Any], at: IndexSet)](./insert%28_,at%29-73pln.md)
   Inserts the objects in the provided array into the receiving array at the specified indexes.
 
 

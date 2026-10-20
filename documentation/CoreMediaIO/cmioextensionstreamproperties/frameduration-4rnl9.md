@@ -1,7 +1,8 @@
 # frameDuration
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the frame.
 
@@ -19,13 +20,14 @@ var frameDuration: CMTime? { get set }
 
 #### Discussion
 
-The key for this property is [`streamFrameDuration`](cmioextensionproperty/streamframeduration.md).
+The key for this property is [`streamFrameDuration`](../cmioextensionproperty/streamframeduration.md).
 
 ## See Also
 
-- [var activeFormatIndex: Int?](cmioextensionstreamproperties/activeformatindex-83u7z.md)
+### Configuring Source Properties
+- [var activeFormatIndex: Int?](./activeformatindex-83u7z.md)
   The index of the active format.
-- [var maxFrameDuration: CMTime?](cmioextensionstreamproperties/maxframeduration-5qqg.md)
+- [var maxFrameDuration: CMTime?](./maxframeduration-5qqg.md)
   The maximum duration of a frame.
 
 

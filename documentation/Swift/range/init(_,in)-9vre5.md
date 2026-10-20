@@ -1,7 +1,8 @@
 # init(_:in:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 init?<S>(_ markdownSourcePosition: AttributedString.MarkdownSourcePosition, in target: S) where S : StringProtocol
 ```
+
+Available when `Bound` is `String.Index`.
 
 
 ---

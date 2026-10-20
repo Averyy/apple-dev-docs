@@ -1,7 +1,8 @@
 # fileType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The document type for interpreting the document.
 
@@ -16,13 +17,14 @@ static let fileType: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-The value of this attribute is an [`NSString`](nsstring.md) object indicating which document type was used to interpret the document, specified as a UTI; for reading, this is available along with [`documentType`](nsattributedstring/documentattributekey/documenttype.md), but for writing the two are mutually exclusive.
+The value of this attribute is an [`NSString`](../../nsstring.md) object indicating which document type was used to interpret the document, specified as a UTI; for reading, this is available along with [`documentType`](./documenttype.md), but for writing the two are mutually exclusive.
 
 ## See Also
 
-- [static let documentType: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/documenttype.md)
+### Getting document type keys
+- [static let documentType: NSAttributedString.DocumentAttributeKey](./documenttype.md)
   The document type.
-- [static let textEncodingName: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/textencodingname.md)
+- [static let textEncodingName: NSAttributedString.DocumentAttributeKey](./textencodingname.md)
   The name of the text encoding to use.
 
 

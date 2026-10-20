@@ -1,7 +1,8 @@
 # URLError.BackgroundTaskCancelledReason.userForceQuitApplication
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates the system canceled the background task because the user force-quit the application.
 
@@ -22,9 +23,10 @@ case userForceQuitApplication
 
 ## See Also
 
-- [URLError.BackgroundTaskCancelledReason.backgroundUpdatesDisabled](urlerror/backgroundtaskcancelledreason-swift.enum/backgroundupdatesdisabled.md)
+### Cancellation reasons
+- [URLError.BackgroundTaskCancelledReason.backgroundUpdatesDisabled](./backgroundupdatesdisabled.md)
   A reason that indicates the system canceled the background task because background tasks are disabled.
-- [URLError.BackgroundTaskCancelledReason.insufficientSystemResources](urlerror/backgroundtaskcancelledreason-swift.enum/insufficientsystemresources.md)
+- [URLError.BackgroundTaskCancelledReason.insufficientSystemResources](./insufficientsystemresources.md)
   A reason that indicates the system canceled the background task because it lacks sufficient resources to perform the task.
 
 

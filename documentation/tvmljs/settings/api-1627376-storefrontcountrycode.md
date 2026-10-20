@@ -1,7 +1,8 @@
 # storefrontCountryCode
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The country code used by the store on this device.
 
@@ -10,17 +11,18 @@ The country code used by the store on this device.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String storefrontCountryCode;
 ```
 
 ## See Also
 
-- [restrictions](settings/1627378-restrictions.md)
+### Retrieving Setting Information
+- [restrictions](./api-1627378-restrictions.md)
   Restriction information on the device.
-- [language](settings/1627439-language.md)
+- [language](./api-1627439-language.md)
   The language used to display information by the device.
-- [onRestrictionsChange](settings/1627370-onrestrictionschange.md)
+- [onRestrictionsChange](./api-1627370-onrestrictionschange.md)
   A callback function that is called when changes to a device’s restriction information changes.
 
 

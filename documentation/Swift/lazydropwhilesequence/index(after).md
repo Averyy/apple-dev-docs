@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately after the given index.
 
@@ -19,6 +20,8 @@ Returns the position immediately after the given index.
 ```swift
 func index(after i: LazyDropWhileSequence<Base>.Index) -> LazyDropWhileSequence<Base>.Index
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Return Value
 

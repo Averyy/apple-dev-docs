@@ -1,7 +1,8 @@
 # GlassBackgroundEffectConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration used to build a custom effect.
 
@@ -17,27 +18,28 @@ struct GlassBackgroundEffectConfiguration
 ## Topics
 
 ### Structures
-- [GlassBackgroundEffectConfiguration.Content](glassbackgroundeffectconfiguration/content-swift.struct.md)
+- [GlassBackgroundEffectConfiguration.Content](./glassbackgroundeffectconfiguration/content-swift.struct.md)
   A type-erased content of a glass background.
 ### Instance Properties
-- [let content: GlassBackgroundEffectConfiguration.Content](glassbackgroundeffectconfiguration/content-swift.property.md)
+- [let content: GlassBackgroundEffectConfiguration.Content](./glassbackgroundeffectconfiguration/content-swift.property.md)
   A view that requires a glass background.
 
 ## See Also
 
-- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(displaymode:).md)
+### Adding a glass background on views in visionOS
+- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](./view/glassbackgroundeffect%28displaymode%29.md)
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
-- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
+- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](./view/glassbackgroundeffect%28in,displaymode%29.md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
-- [enum GlassBackgroundDisplayMode](glassbackgrounddisplaymode.md)
+- [enum GlassBackgroundDisplayMode](./glassbackgrounddisplaymode.md)
   The display mode of a glass background.
-- [protocol GlassBackgroundEffect](glassbackgroundeffect.md)
+- [protocol GlassBackgroundEffect](./glassbackgroundeffect.md)
   A specification for the appearance of a glass background.
-- [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
+- [struct AutomaticGlassBackgroundEffect](./automaticglassbackgroundeffect.md)
   The automatic glass background effect.
-- [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+- [struct FeatheredGlassBackgroundEffect](./featheredglassbackgroundeffect.md)
   The feathered glass background effect.
-- [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
+- [struct PlateGlassBackgroundEffect](./plateglassbackgroundeffect.md)
   The plate glass background effect.
 
 

@@ -1,7 +1,8 @@
 # allHeaderFields
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All HTTP header fields of the response.
 
@@ -20,27 +21,32 @@ All HTTP header fields of the response.
 var allHeaderFields: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary * allHeaderFields;
+```
+
 #### Discussion
 
 The value of this property is a dictionary that contains all the HTTP header fields received as part of the server’s response. By examining this dictionary, clients can see the “raw” header information returned by the HTTP server.
 
-The keys in this dictionary are the header field names, as received from the server. See [`RFC 2616`](https://developer.apple.comhttp://www.ietf.org/rfc/rfc2616.txt) for a list of commonly used HTTP header fields.
+The keys in this dictionary are the header field names, as received from the server. See [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt) for a list of commonly used HTTP header fields.
 
 HTTP headers are case insensitive. To simplify your code, URL Loading System canonicalizes certain header field names into their standard form. For example, if the server sends a `content-length` header, it’s automatically adjusted to be `Content-Length`.
 
-When using Swift, this property is a standard dictionary, so its keys are case-sensitive. To perform a case-insensitive header lookup, use the [`value(forHTTPHeaderField:)`](httpurlresponse/value(forhttpheaderfield:).md) method instead.
+When using Swift, this property is a standard dictionary, so its keys are case-sensitive. To perform a case-insensitive header lookup, use the [`value(forHTTPHeaderField:)`](./value%28forhttpheaderfield%29.md) method instead.
 
 In Objective-C, the returned dictionary of headers is case-preserving during the set operation (unless the key already exists with a different case), and case-insensitive when looking up keys.
 
 For example, if you set the header `X-foo`, and then later set the header `X-Foo`, the dictionary’s key is be `X-foo`, but the value comes from the `X-Foo` header.
 
-##### Special Considerations
+##### Special considerations
 
 Prior to OS X v10.7 and iOS 5, canonicalization occurred for all header fields. The case-preserving dictionary was first introduced in OS X v10.7.2 and iOS 5.
 
 ## See Also
 
-- [func value(forHTTPHeaderField: String) -> String?](httpurlresponse/value(forhttpheaderfield:).md)
+### Getting HTTP response headers
+- [func value(forHTTPHeaderField: String) -> String?](./value%28forhttpheaderfield%29.md)
   Returns the value that corresponds to the given header field.
 
 

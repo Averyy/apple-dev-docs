@@ -1,7 +1,8 @@
 # latestApplicationVersion
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the app on the device at the end of the reporting period.
 
@@ -19,9 +20,10 @@ let latestApplicationVersion: String
 
 ## See Also
 
-- [let includesMultipleApplicationVersions: Bool](metricreport/environment-swift.struct/includesmultipleapplicationversions.md)
+### App information
+- [let includesMultipleApplicationVersions: Bool](./includesmultipleapplicationversions.md)
   A Boolean indicating if the version of the app changed at least once during the reporting period.
-- [let isTestFlightApp: Bool](metricreport/environment-swift.struct/istestflightapp.md)
+- [let isTestFlightApp: Bool](./istestflightapp.md)
   Indicates whether the app is registered with TestFlight.
 
 

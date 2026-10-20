@@ -1,7 +1,8 @@
 # ageAtLeast(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A Boolean value that indicates whether the photo ID holder’s age is at least the given age.
 

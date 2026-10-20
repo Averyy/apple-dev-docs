@@ -1,7 +1,8 @@
 # init(engine:mesh:materials:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object of a specific material that the given geometric data shapes.
 
@@ -19,9 +20,13 @@ Creates an object of a specific material that the given geometric data shapes.
 convenience init(engine: PHASEEngine, mesh: MDLMesh, materials: [PHASEMaterial])
 ```
 
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine mesh:(MDLMesh *) mesh materials:(NSArray<PHASEMaterial *> *) materials;
+```
+
 #### Discussion
 
-The framework assigns a material from the material array for every submesh in the mesh object. For example, PHASE infers that the first mesh is wooden if the first element of the material array is [`PHASEMaterialPreset.wood`](phasematerialpreset/wood.md).
+The framework assigns a material from the material array for every submesh in the mesh object. For example, PHASE infers that the first mesh is wooden if the first element of the material array is [`PHASEMaterialPreset.wood`](../phasematerialpreset/wood.md).
 
 If the number of submeshes within the mesh is less than or equal to the material array count, each material indexes the corresponding element. If the number of submeshes is greater than the material array count, each material indexes the element at the element index modulo the material count.
 
@@ -35,7 +40,8 @@ The framework generates an error for empty material arrays or `nil` array entrie
 
 ## See Also
 
-- [init(engine: PHASEEngine, mesh: MDLMesh)](phaseshape/init(engine:mesh:).md)
+### Creating a Shape
+- [init(engine: PHASEEngine, mesh: MDLMesh)](./init%28engine,mesh%29.md)
   Creates an object that the given geometric data shapes.
 
 

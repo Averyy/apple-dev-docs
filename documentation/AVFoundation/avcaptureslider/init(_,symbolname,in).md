@@ -1,7 +1,8 @@
 # init(_:symbolName:in:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a continuous slider control that selects a value from a bounded range.
 
@@ -31,9 +32,10 @@ Use continuous sliders when your use case supports selecting any value in the sp
 
 ## See Also
 
-- [convenience init(String, symbolName: String, in: ClosedRange<Float>, step: Float)](avcaptureslider/init(_:symbolname:in:step:).md)
+### Creating a slider
+- [convenience init(String, symbolName: String, in: ClosedRange<Float>, step: Float)](./init%28_,symbolname,in,step%29.md)
   Creates a discrete slider control that selects a stepped value from a bounded range.
-- [convenience init(String, symbolName: String, values: [Float])](avcaptureslider/init(_:symbolname:values:).md)
+- [convenience init(String, symbolName: String, values: [Float])](./init%28_,symbolname,values%29.md)
   Creates a discrete slider control that selects a value from a list.
 
 

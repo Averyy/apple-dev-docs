@@ -1,7 +1,8 @@
 # kernelOffsetY
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,14 +18,19 @@
 var kernelOffsetY: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSInteger kernelOffsetY;
+```
+
 ## See Also
 
-- [var groups: Int](mpscnnconvolutiontranspose/groups.md)
-- [var inputFeatureChannels: Int](mpscnnconvolutiontranspose/inputfeaturechannels.md)
-- [var kernelOffsetX: Int](mpscnnconvolutiontranspose/kerneloffsetx.md)
-- [var outputFeatureChannels: Int](mpscnnconvolutiontranspose/outputfeaturechannels.md)
-- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](mpscnnconvolutiontranspose/accumulatorprecisionoption.md)
-- [var dataSource: any MPSCNNConvolutionDataSource](mpscnnconvolutiontranspose/datasource.md)
+### Instance Properties
+- [var groups: Int](./groups.md)
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
+- [var kernelOffsetX: Int](./kerneloffsetx.md)
+- [var outputFeatureChannels: Int](./outputfeaturechannels.md)
+- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](./accumulatorprecisionoption.md)
+- [var dataSource: any MPSCNNConvolutionDataSource](./datasource.md)
 
 
 ---

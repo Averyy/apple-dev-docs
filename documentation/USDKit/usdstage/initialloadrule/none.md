@@ -1,7 +1,8 @@
 # USDStage.InitialLoadRule.none
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Load no loadable prims.
 

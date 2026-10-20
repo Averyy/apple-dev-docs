@@ -1,7 +1,8 @@
 # removeFirst()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the first element of the set.
 
@@ -21,6 +22,8 @@ Removes the first element of the set.
 mutating func removeFirst() -> Element
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 #### Return Value
 
 A member of the set.
@@ -29,18 +32,19 @@ A member of the set.
 
 Because a set is not an ordered collection, the “first” element may not be the first element that was added to the set. The set must not be empty.
 
-> **Note**: Amortized O(1) if the set does not wrap a bridged `NSSet`. If the set wraps a bridged `NSSet`, the performance is unspecified.
+> **Complexity**: Amortized O(1) if the set does not wrap a bridged `NSSet`. If the set wraps a bridged `NSSet`, the performance is unspecified.
 
 ## See Also
 
-- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
+### Removing Elements
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](./filter%28_%29.md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
-- [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
+- [func remove(Element) -> Element?](./remove%28_%29-8p2tv.md)
   Removes the specified element from the set.
-- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](set/remove(_:)-4d3i1.md)
-- [func remove(at: Set<Element>.Index) -> Element](set/remove(at:).md)
+- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](./remove%28_%29-4d3i1.md)
+- [func remove(at: Set<Element>.Index) -> Element](./remove%28at%29.md)
   Removes the element at the given index of the set.
-- [func removeAll(keepingCapacity: Bool)](set/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./removeall%28keepingcapacity%29.md)
   Removes all members from the set.
 
 

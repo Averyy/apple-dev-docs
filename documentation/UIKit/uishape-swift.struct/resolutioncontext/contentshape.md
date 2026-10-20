@@ -1,7 +1,8 @@
 # contentShape
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resolved shape of the content to which this shape can apply.
 
@@ -19,7 +20,7 @@ var contentShape: UIShape.Resolved
 
 #### Discussion
 
-For example, if this shape applies an effect to a button, the [`contentShape`](uishape-swift.struct/resolutioncontext/contentshape.md) might represent the bounding shape of that button’s background. You typically size a dynamic shape relative to the bounding rectangle of the [`contentShape`](uishape-swift.struct/resolutioncontext/contentshape.md).
+For example, if this shape applies an effect to a button, the [`contentShape`](./contentshape.md) might represent the bounding shape of that button’s background. You typically size a dynamic shape relative to the bounding rectangle of the [`contentShape`](./contentshape.md).
 
 
 ---

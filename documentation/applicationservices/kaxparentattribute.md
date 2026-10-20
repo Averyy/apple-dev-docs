@@ -1,7 +1,8 @@
 # kAXParentAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This accessibility object’s parent object in the accessibility hierarchy. This attribute is required for all accessibility objects except the application-level accessibility object.
 
@@ -12,6 +13,10 @@ This accessibility object’s parent object in the accessibility hierarchy. This
 
 ```swift
 var kAXParentAttribute: String { get }
+```
+
+```c
+#define kAXParentAttribute
 ```
 
 

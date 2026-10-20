@@ -1,32 +1,34 @@
 # IOUserMIDIProtocolID
 
 **Framework**: MIDIDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 enum IOUserMIDIProtocolID : uint32_t;
 ```
 
 ## Topics
 
 ### Constants
-- [MIDIProtocol_1_0](mididriverkit/iousermidiprotocolid/midiprotocol_1_0.md)
-- [MIDIProtocol_2_0](mididriverkit/iousermidiprotocolid/midiprotocol_2_0.md)
+- [MIDIProtocol_1_0](./iousermidiprotocolid/midiprotocol_1_0.md)
+- [MIDIProtocol_2_0](./iousermidiprotocolid/midiprotocol_2_0.md)
 
 ## See Also
 
-- [IOUserMIDIClassID](mididriverkit/iousermidiclassid.md)
-- [IOUserMIDIObjectID](mididriverkit/iousermidiobjectid.md)
-- [IOUserMIDIProperty](mididriverkit/iousermidiproperty.md)
-- [IOUserMIDIPropertySelector](mididriverkit/iousermidipropertyselector.md)
-- [IOUserMIDIPropertyType](mididriverkit/iousermidipropertytype.md)
-- [IOUserMIDIUMPWord](mididriverkit/iousermidiumpword.md)
-- [MIDIIOBlock](mididriverkit/midiioblock.md)
+### Data Types
+- [IOUserMIDIClassID](./iousermidiclassid.md)
+- [IOUserMIDIObjectID](./iousermidiobjectid.md)
+- [IOUserMIDIProperty](./iousermidiproperty.md)
+- [IOUserMIDIPropertySelector](./iousermidipropertyselector.md)
+- [IOUserMIDIPropertyType](./iousermidipropertytype.md)
+- [IOUserMIDIUMPWord](./iousermidiumpword.md)
+- [MIDIIOBlock](./midiioblock.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # animationMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How the effect timeline is played.
 

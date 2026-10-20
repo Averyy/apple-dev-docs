@@ -1,7 +1,8 @@
 # hidden
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Hide the scroll indicators.
 
@@ -22,15 +23,16 @@ static var hidden: ScrollIndicatorVisibility { get }
 
 #### Discussion
 
-By default, scroll views in macOS show indicators when a mouse is connected. Use [`never`](scrollindicatorvisibility/never.md) to indicate a stronger preference that can override this behavior.
+By default, scroll views in macOS show indicators when a mouse is connected. Use [`never`](./never.md) to indicate a stronger preference that can override this behavior.
 
 ## See Also
 
-- [static var automatic: ScrollIndicatorVisibility](scrollindicatorvisibility/automatic.md)
+### Getting visibilties
+- [static var automatic: ScrollIndicatorVisibility](./automatic.md)
   Scroll indicator visibility depends on the policies of the component accepting the visibility configuration.
-- [static var never: ScrollIndicatorVisibility](scrollindicatorvisibility/never.md)
+- [static var never: ScrollIndicatorVisibility](./never.md)
   Scroll indicators should never be visible.
-- [static var visible: ScrollIndicatorVisibility](scrollindicatorvisibility/visible.md)
+- [static var visible: ScrollIndicatorVisibility](./visible.md)
   Show the scroll indicators.
 
 

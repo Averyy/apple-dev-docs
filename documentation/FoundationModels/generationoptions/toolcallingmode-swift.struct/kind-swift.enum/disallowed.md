@@ -1,7 +1,8 @@
 # GenerationOptions.ToolCallingMode.Kind.disallowed
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The model can’t call any tools.
 
@@ -21,9 +22,10 @@ case disallowed
 
 ## See Also
 
-- [GenerationOptions.ToolCallingMode.Kind.allowed](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/allowed.md)
+### Tool calling mode cases
+- [GenerationOptions.ToolCallingMode.Kind.allowed](./allowed.md)
   The model may call tools.
-- [GenerationOptions.ToolCallingMode.Kind.required](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/required.md)
+- [GenerationOptions.ToolCallingMode.Kind.required](./required.md)
   The model must call one or more tools.
 
 

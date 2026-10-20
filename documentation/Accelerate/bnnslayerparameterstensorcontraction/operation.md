@@ -1,18 +1,21 @@
 # operation
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that describes the operation.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,17 +23,22 @@ The string that describes the operation.
 var operation: UnsafePointer<CChar>
 ```
 
+```c
+const char * operation;
+```
+
 ## See Also
 
-- [var alpha: Float](bnnslayerparameterstensorcontraction/alpha.md)
+### Instance Properties
+- [var alpha: Float](./alpha.md)
   Scaling that the operation applies to the result.
-- [var beta: Float](bnnslayerparameterstensorcontraction/beta.md)
+- [var beta: Float](./beta.md)
   A value, that must be either 0.0 or 1.0, you use to scale the existing output before the operation adds it to the result.
-- [var iA_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/ia_desc.md)
+- [var iA_desc: BNNSNDArrayDescriptor](./ia_desc.md)
   The descriptor of input matrix *A*.
-- [var iB_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/ib_desc.md)
+- [var iB_desc: BNNSNDArrayDescriptor](./ib_desc.md)
   The descriptor of input matrix *B*.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./o_desc.md)
   The descriptor of the output.
 
 

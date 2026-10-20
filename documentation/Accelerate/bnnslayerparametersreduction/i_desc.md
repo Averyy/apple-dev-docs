@@ -1,18 +1,19 @@
 # i_desc
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the input.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The descriptor of the input.
 var i_desc: BNNSNDArrayDescriptor
 ```
 
+```c
+BNNSNDArrayDescriptor i_desc;
+```
+
 ## See Also
 
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersreduction/o_desc.md)
+### Instance Properties
+- [var o_desc: BNNSNDArrayDescriptor](./o_desc.md)
   The descriptor of the output.
-- [var w_desc: BNNSNDArrayDescriptor](bnnslayerparametersreduction/w_desc.md)
+- [var w_desc: BNNSNDArrayDescriptor](./w_desc.md)
   The descriptor of the weights.
-- [var reduce_func: BNNSReduceFunction](bnnslayerparametersreduction/reduce_func.md)
+- [var reduce_func: BNNSReduceFunction](./reduce_func.md)
   The variable that specifies the reduction function.
-- [var epsilon: Float](bnnslayerparametersreduction/epsilon.md)
+- [var epsilon: Float](./epsilon.md)
   A value that the operation adds to each element when computing the sum of logarithms.
 
 

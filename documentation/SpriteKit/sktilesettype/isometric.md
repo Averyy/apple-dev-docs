@@ -1,7 +1,8 @@
 # SKTileSetType.isometric
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,11 +19,16 @@
 case isometric
 ```
 
+```c
+SKTileSetTypeIsometric
+```
+
 ## See Also
 
-- [SKTileSetType.grid](sktilesettype/grid.md)
-- [SKTileSetType.hexagonalFlat](sktilesettype/hexagonalflat.md)
-- [SKTileSetType.hexagonalPointy](sktilesettype/hexagonalpointy.md)
+### Enumeration Cases
+- [SKTileSetType.grid](./grid.md)
+- [SKTileSetType.hexagonalFlat](./hexagonalflat.md)
+- [SKTileSetType.hexagonalPointy](./hexagonalpointy.md)
 
 
 ---

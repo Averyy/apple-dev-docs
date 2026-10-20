@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name for the counter sample buffer you create with the descriptor.
 
@@ -19,13 +20,18 @@ The name for the counter sample buffer you create with the descriptor.
 var label: String { get set }
 ```
 
+```objc
+@property (copy, readwrite) NSString * label;
+```
+
 ## See Also
 
-- [var counterSet: (any MTLCounterSet)?](mtlcountersamplebufferdescriptor/counterset.md)
+### Configuring a descriptor for a counter sample buffer
+- [var counterSet: (any MTLCounterSet)?](./counterset.md)
   A GPU device’s counter set instance that you want to sample.
-- [var sampleCount: Int](mtlcountersamplebufferdescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of instances of a counter set’s data that a counter sample buffer can store.
-- [var storageMode: MTLStorageMode](mtlcountersamplebufferdescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The memory storage mode for the counter sample buffers you create with the descriptor.
 
 

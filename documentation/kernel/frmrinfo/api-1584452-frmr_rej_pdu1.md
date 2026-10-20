@@ -1,14 +1,15 @@
 # frmr_rej_pdu1
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 u_int8_t frmr_rej_pdu1;
 ```
 

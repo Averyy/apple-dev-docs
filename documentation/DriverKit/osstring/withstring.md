@@ -1,19 +1,20 @@
 # withString
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates an OSString object with a copy of an OString object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSStringPtr withString(const OSString *aString);
 ```
 
@@ -31,14 +32,15 @@ Allocates an OSString object with a copy of an OString object.
 
 ## See Also
 
-- [withCString](osstring/withcstring-4wsql.md)
+### Creating a String
+- [withCString](./withcstring-4wsql.md)
   Allocates an OSString object with a copy of a c-string.
-- [withCString](osstring/withcstring-721oh.md)
+- [withCString](./withcstring-721oh.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [withCStringNoCopy](osstring/withcstringnocopy.md)
+- [withCStringNoCopy](./withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [OSStringCreate](osstringcreate.md)
-- [free](osstring/free.md)
+- [OSStringCreate](../osstringcreate.md)
+- [free](./free.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # isSeparatorItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the menu item is a separator item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isSeparatorItem: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSeparatorItem) BOOL separatorItem;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This menu item is disabled. The default separator item is blank space.
 
 ## See Also
 
-- [class func separator() -> NSMenuItem](nsmenuitem/separator.md)
+### Managing the separator item
+- [class func separator() -> NSMenuItem](./separator%28%29.md)
   Returns a menu item that is used to separate logical groups of menu commands.
 
 

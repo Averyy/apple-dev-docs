@@ -1,7 +1,8 @@
 # configurationItems()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns configuration items to display in the compose view.
 
@@ -16,9 +17,13 @@ Returns configuration items to display in the compose view.
 func configurationItems() -> [Any]!
 ```
 
+```objc
+- (NSArray *) configurationItems;
+```
+
 #### Return Value
 
-An array of [`SLComposeSheetConfigurationItem`](slcomposesheetconfigurationitem.md) objects, or `nil` if no configuration items need to be displayed.
+An array of [`SLComposeSheetConfigurationItem`](../slcomposesheetconfigurationitem.md) objects, or `nil` if no configuration items need to be displayed.
 
 #### Discussion
 
@@ -26,9 +31,10 @@ Implement this method if you need to display configuration items, such as an acc
 
 ## See Also
 
-- [class SLComposeSheetConfigurationItem](slcomposesheetconfigurationitem.md)
+### Configuring the Post Details
+- [class SLComposeSheetConfigurationItem](../slcomposesheetconfigurationitem.md)
   An object that provides additional configuration details to use when configuring a composition interface.
-- [func reloadConfigurationItems()](slcomposeserviceviewcontroller/reloadconfigurationitems.md)
+- [func reloadConfigurationItems()](./reloadconfigurationitems%28%29.md)
   Reloads the list of configuration items.
 
 

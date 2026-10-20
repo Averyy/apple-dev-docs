@@ -1,7 +1,8 @@
 # init(color:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color of emitted light in macOS.
 
@@ -12,6 +13,12 @@ Creates a color of emitted light in macOS.
 
 ```swift
 init(color: NSColor = .black, texture: CustomMaterial.Texture? = nil)
+```
+
+**Other overloads**:
+
+```swift
+init(color: UIColor = .black, texture: CustomMaterial.Texture? = nil)
 ```
 
 ## Parameters

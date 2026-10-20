@@ -1,7 +1,8 @@
 # dropDestination(for:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the insert action for the dynamic view.
 
@@ -60,11 +61,12 @@ var body: some View {
 
 ## See Also
 
-- [func onDelete(perform: Optional<(IndexSet) -> Void>) -> some DynamicViewContent](dynamicviewcontent/ondelete(perform:).md)
-  Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](list.md).
-- [func onInsert(of:perform:)](dynamicviewcontent/oninsert(of:perform:).md)
+### Responding to updates
+- [func onDelete(perform: Optional<(IndexSet) -> Void>) -> some DynamicViewContent](./ondelete%28perform%29.md)
+  Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](../list.md).
+- [func onInsert(of:perform:)](./oninsert%28of,perform%29.md)
   Sets the insert action for the dynamic view.
-- [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](dynamicviewcontent/onmove(perform:).md)
+- [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](./onmove%28perform%29.md)
   Sets the move action for the dynamic view.
 
 

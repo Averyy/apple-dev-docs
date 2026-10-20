@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvent.cameraZoom(factor:)
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A camera zoom event.
 

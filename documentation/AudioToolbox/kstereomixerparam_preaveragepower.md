@@ -1,10 +1,11 @@
 # kStereoMixerParam_PreAveragePower
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kStereoMixerParam_PreAveragePower: AudioUnitParameterID { get }
 ```
 
+```c
+kStereoMixerParam_PreAveragePower
+```
+
 ## See Also
 
-- [var kStereoMixerParam_Pan: AudioUnitParameterID](kstereomixerparam_pan.md)
-- [var kStereoMixerParam_PostAveragePower: AudioUnitParameterID](kstereomixerparam_postaveragepower.md)
-- [var kStereoMixerParam_PostPeakHoldLevel: AudioUnitParameterID](kstereomixerparam_postpeakholdlevel.md)
-- [var kStereoMixerParam_PrePeakHoldLevel: AudioUnitParameterID](kstereomixerparam_prepeakholdlevel.md)
-- [var kStereoMixerParam_Volume: AudioUnitParameterID](kstereomixerparam_volume.md)
+### Constants
+- [var kStereoMixerParam_Pan: AudioUnitParameterID](./kstereomixerparam_pan.md)
+- [var kStereoMixerParam_PostAveragePower: AudioUnitParameterID](./kstereomixerparam_postaveragepower.md)
+- [var kStereoMixerParam_PostPeakHoldLevel: AudioUnitParameterID](./kstereomixerparam_postpeakholdlevel.md)
+- [var kStereoMixerParam_PrePeakHoldLevel: AudioUnitParameterID](./kstereomixerparam_prepeakholdlevel.md)
+- [var kStereoMixerParam_Volume: AudioUnitParameterID](./kstereomixerparam_volume.md)
 
 
 ---

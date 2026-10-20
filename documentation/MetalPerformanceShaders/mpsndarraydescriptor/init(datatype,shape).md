@@ -1,7 +1,8 @@
 # init(dataType:shape:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(dataType: MPSDataType, shape: [NSNumber])
+```
+
+```objc
++ (instancetype) descriptorWithDataType:(MPSDataType) dataType shape:(NSArray<NSNumber *> *) shape;
 ```
 
 

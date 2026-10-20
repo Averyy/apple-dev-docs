@@ -1,7 +1,8 @@
 # foreground(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a foreground mode with a specified behavior.
 
@@ -26,7 +27,7 @@ A set of options that describes the foreground behavior.
 
 ## Parameters
 
-- `foregroundMode`: The foreground behavior to apply to the app intent. For example, specify [`immediate`](intentmodes/foregroundmode/immediate.md) to bring the app to the foreground before running the app intent.
+- `foregroundMode`: The foreground behavior to apply to the app intent. For example, specify [`immediate`](./foregroundmode/immediate.md) to bring the app to the foreground before running the app intent.
 
 
 ---

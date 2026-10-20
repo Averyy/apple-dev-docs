@@ -1,7 +1,8 @@
 # Get a Library Music Video's Relationship Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a library music video’s relationship by using its identifier.
 
@@ -12,13 +13,13 @@ Fetch a library music video’s relationship by using its identifier.
 
 If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/library/music-videos/i.V7B9dQLsZ8DZKe/catalog
 ```
 
@@ -87,22 +88,42 @@ https://api.music.apple.com/v1/me/library/music-videos/i.V7B9dQLsZ8DZKe/catalog
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the library music video.
+- `relationship` (string) *(required)*: The name of the relationship you want to fetch for this resource.
+
+  **Allowed Values**: `albums`, `artists`, `catalog`
+
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+
+  **Default**: `25`; **Maximum**: `100`
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
+## Responses
+
+- `200` OK (`RelationshipResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object LibraryMusicVideos](librarymusicvideos.md)
+### Related Documentation
+- [object LibraryMusicVideos](./librarymusicvideos.md)
   A resource object that represents a library music video.
-- [object LibraryMusicVideosResponse](librarymusicvideosresponse.md)
+- [object LibraryMusicVideosResponse](./librarymusicvideosresponse.md)
   The response to a library music videos request.
-- [Get a Library Music Video](get-a-library-music-video.md)
+### Requesting a Library Music Video
+- [Get a Library Music Video](./get-a-library-music-video.md)
   Fetch a library music video by using its identifier.
-- [Get Multiple Library Music Videos](get-multiple-library-music-videos.md)
+- [Get Multiple Library Music Videos](./get-multiple-library-music-videos.md)
   Fetch one or more library music videos by using their identifiers.
-- [Get All Library Music Videos](get-all-library-music-videos.md)
+- [Get All Library Music Videos](./get-all-library-music-videos.md)
   Fetch all the library music videos in alphabetical order.
 
 

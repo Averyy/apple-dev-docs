@@ -1,7 +1,8 @@
 # scroll(to:at:animated:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the specified object to the given position onscreen.
 
@@ -14,6 +15,10 @@ Scrolls the specified object to the given position onscreen.
 func scroll(to object: WKInterfaceObject, at scrollPosition: WKInterfaceScrollPosition, animated: Bool)
 ```
 
+```objc
+- (void) scrollToObject:(WKInterfaceObject *) object atScrollPosition:(WKInterfaceScrollPosition) scrollPosition animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `object`: The interface object to scroll to.
@@ -22,15 +27,16 @@ func scroll(to object: WKInterfaceObject, at scrollPosition: WKInterfaceScrollPo
 
 ## See Also
 
-- [enum WKInterfaceScrollPosition](wkinterfacescrollposition.md)
+### Managing Scrolling
+- [enum WKInterfaceScrollPosition](../wkinterfacescrollposition.md)
   Onscreen scroll positions.
-- [func interfaceDidScrollToTop()](wkinterfacecontroller/interfacedidscrolltotop.md)
+- [func interfaceDidScrollToTop()](./interfacedidscrolltotop%28%29.md)
   Tells the interface controller that the user has performed a scroll-to-top gesture (for example, tapping the status bar) and that the scrolling animation has finished.
-- [func interfaceOffsetDidScrollToTop()](wkinterfacecontroller/interfaceoffsetdidscrolltotop.md)
+- [func interfaceOffsetDidScrollToTop()](./interfaceoffsetdidscrolltotop%28%29.md)
   Tells the interface controller that the user has scrolled to the top of the interface and that the scrolling animation has finished.
-- [func interfaceOffsetDidScrollToBottom()](wkinterfacecontroller/interfaceoffsetdidscrolltobottom.md)
+- [func interfaceOffsetDidScrollToBottom()](./interfaceoffsetdidscrolltobottom%28%29.md)
   Tells the interface controller that the user has scrolled to the bottom of the interface and that the scrolling animation has finished.
-- [var isTableScrollingHapticFeedbackEnabled: Bool](wkinterfacecontroller/istablescrollinghapticfeedbackenabled.md)
+- [var isTableScrollingHapticFeedbackEnabled: Bool](./istablescrollinghapticfeedbackenabled.md)
   A Boolean value that determines whether haptic feedback coordinates with the appearance of new rows as the user scrolls through a table.
 
 

@@ -1,7 +1,8 @@
 # MTLDataType.rgba16Unorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ordinary pixel with four components, each of which is a 16-bit, normalized, unsigned integer value.
 
@@ -19,13 +20,18 @@ An ordinary pixel with four components, each of which is a 16-bit, normalized, u
 case rgba16Unorm
 ```
 
+```c
+MTLDataTypeRGBA16Unorm
+```
+
 #### Discussion
 
 The color components are in RGBA order, which stands for red, green, blue, and alpha.
 
 ## See Also
 
-- [MTLDataType.rgba16Snorm](mtldatatype/rgba16snorm.md)
+### 64-bit color integer types
+- [MTLDataType.rgba16Snorm](./rgba16snorm.md)
   An ordinary pixel with four components, each of which is a 16-bit, normalized, signed integer value.
 
 

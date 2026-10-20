@@ -1,7 +1,8 @@
 # appendingStrokes(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the current drawing with the strokes you provide appended.
 
@@ -18,6 +19,10 @@ Returns a copy of the current drawing with the strokes you provide appended.
 func appendingStrokes(_ strokes: [PKStroke]) -> PKDrawing
 ```
 
+```objc
+- (PKDrawing *) drawingByAppendingStrokes:(NSArray<PKStroke *> *) strokes;
+```
+
 #### Return Value
 
 A new drawing created by appending the provided strokes to the current drawing.
@@ -28,9 +33,10 @@ A new drawing created by appending the provided strokes to the current drawing.
 
 ## See Also
 
-- [func applying(CGAffineTransform) -> PKDrawing](pkdrawingreference/applying(_:).md)
+### Modifying the drawing
+- [func applying(CGAffineTransform) -> PKDrawing](./applying%28_%29.md)
   Returns a new drawing object by applying the specified transform to a copy of the current object’s contents.
-- [func appending(PKDrawing) -> PKDrawing](pkdrawingreference/appending(_:).md)
+- [func appending(PKDrawing) -> PKDrawing](./appending%28_%29.md)
   Returns a new drawing created by appending the current drawing with another drawing you provide.
 
 

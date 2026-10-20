@@ -1,7 +1,8 @@
 # materials
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The materials that define the model’s visual appearance.
 
@@ -11,7 +12,7 @@ The materials that define the model’s visual appearance.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ var materials: [any Material]
 
 #### Discussion
 
-Each [`MeshResource`](meshresource.md) requires a set of materials. An entity that has no materials renders using a magenta striped material. To determine the number of materials a mesh requires, use [`expectedMaterialCount`](meshresource/expectedmaterialcount.md).
+Each [`MeshResource`](../meshresource.md) requires a set of materials. An entity that has no materials renders using a magenta striped material. To determine the number of materials a mesh requires, use [`expectedMaterialCount`](../meshresource/expectedmaterialcount.md).
 
 
 ---

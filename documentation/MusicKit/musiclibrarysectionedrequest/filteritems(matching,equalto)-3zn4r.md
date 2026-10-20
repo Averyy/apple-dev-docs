@@ -1,7 +1,8 @@
 # filterItems(matching:equalTo:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters items by a given property that matches a specific value.
 

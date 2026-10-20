@@ -1,7 +1,8 @@
 # init(_:encoding:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an SSID from a text string using the specified encoding.
 
@@ -31,7 +32,8 @@ Use this initializer to create SSIDs from human-readable network names. The meth
 
 ## See Also
 
-- [func stringRepresentation(encoding: String.Encoding) -> String?](wissid/stringrepresentation(encoding:).md)
+### Working with SSIDs as a string
+- [func stringRepresentation(encoding: String.Encoding) -> String?](./stringrepresentation%28encoding%29.md)
   Converts the SSID’s raw data to a string representation using the specified encoding.
 
 

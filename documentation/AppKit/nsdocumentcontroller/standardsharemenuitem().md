@@ -1,7 +1,8 @@
 # standardShareMenuItem()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a menu item that your app uses for sharing the current document.
 
@@ -14,17 +15,22 @@ Returns a menu item that your app uses for sharing the current document.
 func standardShareMenuItem() -> NSMenuItem
 ```
 
+```objc
+- (NSMenuItem *) standardShareMenuItem;
+```
+
 #### Return Value
 
-An [`NSMenuItem`](nsmenuitem.md) for the Share menu.
+An [`NSMenuItem`](../nsmenuitem.md) for the Share menu.
 
 #### Discussion
 
-Use this method to perform custom placement of the Share menu if your [`NSDocument`](nsdocument.md) subclass returns `false` for [`allowsAutomaticShareMenu`](nsdocumentcontroller/allowsautomaticsharemenu.md).
+Use this method to perform custom placement of the Share menu if your [`NSDocument`](../nsdocument.md) subclass returns `false` for [`allowsAutomaticShareMenu`](./allowsautomaticsharemenu.md).
 
 ## See Also
 
-- [var allowsAutomaticShareMenu: Bool](nsdocumentcontroller/allowsautomaticsharemenu.md)
+### Sharing
+- [var allowsAutomaticShareMenu: Bool](./allowsautomaticsharemenu.md)
   A Boolean value that the system uses to insert a Share menu in the File menu.
 
 

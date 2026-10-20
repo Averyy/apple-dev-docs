@@ -2,6 +2,7 @@
 
 **Framework**: Quick Look  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the preview item that the controller displays for the specified index.
@@ -18,9 +19,13 @@ Returns the preview item that the controller displays for the specified index.
 func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> any QLPreviewItem
 ```
 
+```objc
+- (id<QLPreviewItem>) previewController:(QLPreviewController *) controller previewItemAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
-The preview item to display. The item must be an `NSURL` object, or a custom object that conforms to the [`QLPreviewItem`](qlpreviewitem.md) protocol.
+The preview item to display. The item must be an `NSURL` object, or a custom object that conforms to the [`QLPreviewItem`](../qlpreviewitem.md) protocol.
 
 #### Discussion
 
@@ -33,7 +38,8 @@ The system invokes this method when the preview controller needs the preview ite
 
 ## See Also
 
-- [func numberOfPreviewItems(in: QLPreviewController) -> Int](qlpreviewcontrollerdatasource/numberofpreviewitems(in:).md)
+### Providing data to a preview controller
+- [func numberOfPreviewItems(in: QLPreviewController) -> Int](./numberofpreviewitems%28in%29.md)
   Returns the number of preview items to include in the preview navigation list.
 
 

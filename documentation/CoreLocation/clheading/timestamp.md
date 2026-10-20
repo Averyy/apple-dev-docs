@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which this heading was determined.
 
@@ -16,6 +17,10 @@ The time at which this heading was determined.
 
 ```swift
 var timestamp: Date { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDate * timestamp;
 ```
 
 

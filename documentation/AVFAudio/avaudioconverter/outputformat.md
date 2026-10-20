@@ -1,7 +1,8 @@
 # outputFormat
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the output audio stream.
 
@@ -20,19 +21,24 @@ The format of the output audio stream.
 var outputFormat: AVAudioFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioFormat * outputFormat;
+```
+
 ## See Also
 
-- [var channelMap: [NSNumber]](avaudioconverter/channelmap.md)
+### Getting audio converter properties
+- [var channelMap: [NSNumber]](./channelmap.md)
   An array of integers that indicates which input to derive each output from.
-- [var dither: Bool](avaudioconverter/dither.md)
+- [var dither: Bool](./dither.md)
   A Boolean value that indicates whether dither is on.
-- [var downmix: Bool](avaudioconverter/downmix.md)
+- [var downmix: Bool](./downmix.md)
   A Boolean value that indicates whether the framework mixes the channels instead of remapping.
-- [var inputFormat: AVAudioFormat](avaudioconverter/inputformat.md)
+- [var inputFormat: AVAudioFormat](./inputformat.md)
   The format of the input audio stream.
-- [var magicCookie: Data?](avaudioconverter/magiccookie.md)
+- [var magicCookie: Data?](./magiccookie.md)
   An object that contains metadata for encoders and decoders.
-- [var maximumOutputPacketSize: Int](avaudioconverter/maximumoutputpacketsize.md)
+- [var maximumOutputPacketSize: Int](./maximumoutputpacketsize.md)
   The maximum size of an output packet, in bytes.
 
 

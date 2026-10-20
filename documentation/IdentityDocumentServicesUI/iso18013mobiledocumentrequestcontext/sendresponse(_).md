@@ -1,14 +1,15 @@
 # sendResponse(_:)
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds and sends an ISO 18013 mobile document response.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

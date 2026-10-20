@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current time, in UNIX epoch.
 
@@ -19,11 +20,12 @@ let timestamp: TimeInterval
 
 ## See Also
 
-- [let angularPositions: Vector3D](dockaccessory/motionstate/angularpositions.md)
+### Getting properties
+- [let angularPositions: Vector3D](./angularpositions.md)
   The angles of the axes, in radians.
-- [let angularVelocities: Vector3D](dockaccessory/motionstate/angularvelocities.md)
+- [let angularVelocities: Vector3D](./angularvelocities.md)
   The angular velocity of each axis of rotation in radians.
-- [let error: (any Error)?](dockaccessory/motionstate/error.md)
+- [let error: (any Error)?](./error.md)
   The error, if any.
 
 

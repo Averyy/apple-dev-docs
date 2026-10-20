@@ -1,6 +1,7 @@
 # Passing messages between Safari app extensions and injected scripts
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Communicate between your Safari app extension and injected scripts.
 
@@ -12,7 +13,7 @@ The solution is to pass messages between the injected script and the app extensi
 
 The complete workflow appears below:
 
-![A diagram showing a message passing from a Safari app extension to an injected script in a webpage and back to the app extension. ](/images/com.apple.safariservices/media-3027374@2x.png)
+![A diagram showing a message passing from a Safari app extension to an injected script in a webpage and back to the app extension. ](https://developer.apple.com/tutorials/images/com.apple.safariservices/media-3027374@2x.png)
 
 Within the scripting environment, you have access to the `window` and `document` objects for the browser content, as well as a `safari` object. The `safari` object is an instance of the `SafariAppExtensionNamespace` class. It provides details about your app extension and support for passing messages between your injected script and the app extension.
 
@@ -23,7 +24,7 @@ This table describes your app extension’s key properties:
 | `extension` | A proxy for the app extension. Use it to retrieve information about your app extension and to pass messages to it. |
 | `self` | A proxy for your injected script. Use it to install event listeners to respond to messages from your app extension. |
 
-##### Send Messages to the App Extension
+##### Send messages to the app extension
 
 Call `safari.extension.dispatchMessage.`
 
@@ -32,7 +33,7 @@ safari.extension.dispatchMessage("Hello World");
 
 ```
 
-The parameter for [`dispatchMessage(withName:toExtensionWithIdentifier:userInfo:completionHandler:)`](sfsafariapplication/dispatchmessage(withname:toextensionwithidentifier:userinfo:completionhandler:).md) is a string that identifies the message you want to send. You create your own message names and decide what those messages mean for your app extension.
+The parameter for [`dispatchMessage(withName:toExtensionWithIdentifier:userInfo:completionHandler:)`](./sfsafariapplication/dispatchmessage%28withname,toextensionwithidentifier,userinfo,completionhandler%29.md) is a string that identifies the message you want to send. You create your own message names and decide what those messages mean for your app extension.
 
 You can optionally send additional user data to accompany the message.
 
@@ -49,7 +50,7 @@ var myArray = ["a", "b", "c"];
 safari.extension.dispatchMessage("passArray", { "key": myArray });
 ```
 
-When the app extension receives the message, the system calls the extension handler’s [`messageReceived(withName:from:userInfo:)`](sfsafariextensionhandling/messagereceived(withname:from:userinfo:).md) method. This method’s parameters include the message name, the page that sends the message, and, if part of the message, a user dictionary:
+When the app extension receives the message, the system calls the extension handler’s [`messageReceived(withName:from:userInfo:)`](./sfsafariextensionhandling/messagereceived%28withname,from,userinfo%29.md) method. This method’s parameters include the message name, the page that sends the message, and, if part of the message, a user dictionary:
 
 **Swift**:
 
@@ -71,7 +72,7 @@ override func messageReceived(withName messageName: String, from page: SFSafariP
 }
 ```
 
-In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling/beginrequest(with:)) method.
+In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](../Foundation/nsextensionrequesthandling/beginrequest%28with%29.md) method.
 
 ```swift
 - (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {
@@ -87,11 +88,11 @@ In Safari 17 and later, check whether the user is browsing with a profile if you
 }
 ```
 
-Then, get the profile identifier from the `context.inputItems` dictionary using [`SFExtensionProfileKey`](sfextensionprofilekey.md) as the key. Use the profile identifier for any profile-specific logic.
+Then, get the profile identifier from the `context.inputItems` dictionary using [`SFExtensionProfileKey`](./sfextensionprofilekey.md) as the key. Use the profile identifier for any profile-specific logic.
 
-##### Send Messages to the Injected Script
+##### Send messages to the injected script
 
-When the app extension needs to send a message to an injected script, it calls the [`dispatchMessageToScript(withName:userInfo:)`](sfsafaripage/dispatchmessagetoscript(withname:userinfo:).md) method on the target page.
+When the app extension needs to send a message to an injected script, it calls the [`dispatchMessageToScript(withName:userInfo:)`](./sfsafaripage/dispatchmessagetoscript%28withname,userinfo%29.md) method on the target page.
 
 **Swift**:
 
@@ -129,23 +130,24 @@ function handleMessage(event) {
 
 ## See Also
 
-- [Using injected style sheets and scripts](using-injected-style-sheets-and-scripts.md)
+### Injected style sheets and scripts
+- [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md)
   Learn how you can affect the appearance or behavior of a webpage by using injected style sheets and scripts.
-- [Injecting a script into a webpage](injecting-a-script-into-a-webpage.md)
+- [Injecting a script into a webpage](./injecting-a-script-into-a-webpage.md)
   Inject a script that you write for a Safari app extension into a webpage.
-- [Injecting CSS style sheets into a webpage](injecting-css-style-sheets-into-a-webpage.md)
+- [Injecting CSS style sheets into a webpage](./injecting-css-style-sheets-into-a-webpage.md)
   Add to or override styles by injecting CSS style sheets into webpages.
-- [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
+- [class SFSafariExtensionHandler](./sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
-- [class SFSafariExtensionManager](sfsafariextensionmanager.md)
+- [class SFSafariExtensionManager](./sfsafariextensionmanager.md)
   A class that your app uses to find out the current state of a Safari extension.
-- [class SFSafariExtensionState](sfsafariextensionstate.md)
+- [class SFSafariExtensionState](./sfsafariextensionstate.md)
   The state of a Safari extension.
-- [class SFSafariPageProperties](sfsafaripageproperties.md)
+- [class SFSafariPageProperties](./sfsafaripageproperties.md)
   An object that captures information about a webpage.
-- [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)
+- [protocol SFSafariExtensionHandling](./sfsafariextensionhandling.md)
   A protocol for implementing event handling in a Safari app extension.
-- [let SFExtensionProfileKey: String](sfextensionprofilekey.md)
+- [let SFExtensionProfileKey: String](./sfextensionprofilekey.md)
   A string the system uses as a key in a user info dictionary to identify a profile identifier.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the layout’s cache when something changes.
@@ -23,18 +24,25 @@ func updateCache(_ cache: inout Self.Cache, subviews: Self.Subviews)
 
 #### Discussion
 
-If your custom layout container creates a cache by implementing the [`makeCache(subviews:)`](layout/makecache(subviews:).md) method, SwiftUI calls the update method when your layout or its subviews change, giving you an opportunity to modify or invalidate the contents of the cache. The method’s default implementation recreates the cache by calling the [`makeCache(subviews:)`](layout/makecache(subviews:).md) method, but you can provide your own implementation to take an incremental approach, if appropriate.
+If your custom layout container creates a cache by implementing the [`makeCache(subviews:)`](./makecache%28subviews%29.md) method, SwiftUI calls the update method when your layout or its subviews change, giving you an opportunity to modify or invalidate the contents of the cache. The method’s default implementation recreates the cache by calling the [`makeCache(subviews:)`](./makecache%28subviews%29.md) method, but you can provide your own implementation to take an incremental approach, if appropriate.
 
 ## Parameters
 
 - `cache`: Storage for calculated data that you share among the methods of your custom layout container.
 - `subviews`: A collection of proxy instances that represent the views arranged by the container. You can use the proxies in the collection to get information about the subviews as you calculate values to store in the cache.
 
+## Default Implementations
+
+### Layout Implementations
+- [func updateCache(inout Self.Cache, subviews: Self.Subviews)](./updatecache%28_,subviews%29-75zac.md)
+  Reinitializes a cache to a new value.
+
 ## See Also
 
-- [func makeCache(subviews: Self.Subviews) -> Self.Cache](layout/makecache(subviews:).md)
+### Managing a cache
+- [func makeCache(subviews: Self.Subviews) -> Self.Cache](./makecache%28subviews%29.md)
   Creates and initializes a cache for a layout instance.
-- [associatedtype Cache = Void](layout/cache.md)
+- [associatedtype Cache = Void](./cache.md)
   Cached values associated with the layout instance.
 
 

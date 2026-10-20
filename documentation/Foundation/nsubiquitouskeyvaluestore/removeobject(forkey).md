@@ -1,7 +1,8 @@
 # removeObject(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the value for the specified key from the iCloud key-value store.
 
@@ -18,6 +19,10 @@ Removes the value for the specified key from the iCloud key-value store.
 
 ```swift
 func removeObject(forKey aKey: String)
+```
+
+```objc
+- (void) removeObjectForKey:(NSString *) aKey;
 ```
 
 #### Discussion

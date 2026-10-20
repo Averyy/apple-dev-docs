@@ -1,7 +1,8 @@
 # init(using:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Framer protocol for use in a protocol stack.
 

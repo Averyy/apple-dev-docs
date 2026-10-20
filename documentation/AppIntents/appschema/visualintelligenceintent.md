@@ -1,7 +1,8 @@
 # AppSchema.VisualIntelligenceIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the visual intelligence domain.
 
@@ -20,19 +21,20 @@ protocol VisualIntelligenceIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var semanticContentSearch: some AppSchemaIntent](appschema/visualintelligenceintent/semanticcontentsearch.md)
+- [var semanticContentSearch: some AppSchemaIntent](./visualintelligenceintent/semanticcontentsearch.md)
   An intent schema that shows more and richer visual search results in the app.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var semanticContentSearch: some AppSchemaIntent](appschema/visualintelligenceintent/semanticcontentsearch.md)
+### Actions
+- [var semanticContentSearch: some AppSchemaIntent](./visualintelligenceintent/semanticcontentsearch.md)
   An intent schema that shows more and richer visual search results in the app.
 
 

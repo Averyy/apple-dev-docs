@@ -1,7 +1,8 @@
 # SubscriptionVersionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a SubscriptionVersion.
 
@@ -10,19 +11,19 @@ The request body you use to create a SubscriptionVersion.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionVersionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionVersionCreateRequest.Data.Relationships](subscriptionversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object SubscriptionVersionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionVersions`
 - `relationships` (SubscriptionVersionCreateRequest.Data.Relationships) *(required)*
 
 

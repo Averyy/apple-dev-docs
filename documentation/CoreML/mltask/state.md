@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the machine learning task.
 
@@ -20,11 +21,16 @@ The current state of the machine learning task.
 var state: MLTaskState { get }
 ```
 
+```objc
+@property (atomic, assign, readonly) MLTaskState state;
+```
+
 ## See Also
 
-- [enum MLTaskState](mltaskstate.md)
+### Checking the state of a task
+- [enum MLTaskState](../mltaskstate.md)
   The state of a machine learning task.
-- [var error: (any Error)?](mltask/error.md)
+- [var error: (any Error)?](./error.md)
   The underlying error if the task is in a failed state.
 
 

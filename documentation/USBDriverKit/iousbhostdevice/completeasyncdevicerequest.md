@@ -1,7 +1,8 @@
 # CompleteAsyncDeviceRequest
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The type definition for an asynchronous device request completion routine.
 
@@ -10,13 +11,13 @@ The type definition for an asynchronous device request completion routine.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteAsyncDeviceRequest(OSAction *action, IOReturn status, uint32_t bytesTransferred);
 ```
 
 #### Discussion
 
-Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 
 ## Parameters
 
@@ -26,11 +27,12 @@ Implement a custom version of this method and use the [`TYPE`](https://developer
 
 ## See Also
 
-- [DeviceRequest](iousbhostdevice/devicerequest.md)
+### Requesting Information from the Device
+- [DeviceRequest](./devicerequest.md)
   Sends a synchronous request to the device on the default control endpoint.
-- [AsyncDeviceRequest](iousbhostdevice/asyncdevicerequest.md)
+- [AsyncDeviceRequest](./asyncdevicerequest.md)
   Enqueues a request on the default control endpoint of the device.
-- [AbortDeviceRequests](iousbhostdevice/abortdevicerequests.md)
+- [AbortDeviceRequests](./abortdevicerequests.md)
   Aborts device requests that you made previously from the current device client.
 
 

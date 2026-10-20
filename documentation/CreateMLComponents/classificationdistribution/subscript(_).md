@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML Components  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous range of elements.
 
@@ -18,6 +19,16 @@ Accesses a contiguous range of elements.
 
 ```swift
 subscript(bounds: Range<Int>) -> Slice<ClassificationDistribution<Label>> { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript(index: Int) -> Classification<Label> { get }
+```
+
+```swift
+subscript(label: Label) -> Float? { get }
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # init(origin:direction:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ray with the specified origin and the specified direction from single-precision vectors.
 
@@ -11,7 +12,7 @@ Creates a ray with the specified origin and the specified direction from single-
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,11 +28,12 @@ init(origin: simd_float3 = .zero, direction: simd_float3)
 
 ## See Also
 
-- [init()](ray3d/init.md)
+### Creating a 3D ray structure
+- [init()](./init%28%29.md)
   Creates a ray structure.
-- [init(origin: Point3D, direction: Vector3D)](ray3d/init(origin:direction:)-5sxkl.md)
+- [init(origin: Point3D, direction: Vector3D)](./init%28origin,direction%29-5sxkl.md)
   Creates a ray with the specified origin and the specified direction from Spatial primitives.
-- [init(origin: simd_double3, direction: simd_double3)](ray3d/init(origin:direction:)-47w1c.md)
+- [init(origin: simd_double3, direction: simd_double3)](./init%28origin,direction%29-47w1c.md)
   Creates a ray with the specified origin and the specified direction from double-precision vectors.
 
 

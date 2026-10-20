@@ -1,7 +1,8 @@
 # kMDItemExposureProgram
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The class of the exposure program used by the camera to set exposure when the image is taken. Possible values include: Manual, Normal, and Aperture priority. A CFString.
 
@@ -12,6 +13,10 @@ The class of the exposure program used by the camera to set exposure when the im
 
 ```swift
 let kMDItemExposureProgram: CFString!
+```
+
+```c
+const CFStringRef kMDItemExposureProgram;
 ```
 
 

@@ -1,14 +1,15 @@
 # IOPacketBufferConstraints
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOPacketBufferConstraints {
     ...
 } IOPacketBufferConstraints;
@@ -21,17 +22,18 @@ Constraint parameters, specified by a driver, for the data buffer in a packet mb
 ## Topics
 
 ### Instance Properties
-- [alignLength](iopacketbufferconstraints/1393417-alignlength.md)
-- [alignStart](iopacketbufferconstraints/1393367-alignstart.md)
-- [reserved](iopacketbufferconstraints/1393469-reserved.md)
+- [alignLength](./iopacketbufferconstraints/api-1393417-alignlength.md)
+- [alignStart](./iopacketbufferconstraints/api-1393367-alignstart.md)
+- [reserved](./iopacketbufferconstraints/api-1393469-reserved.md)
 
 ## See Also
 
-- [IONetworkData](ionetworkdata.md)
+### Network Data
+- [IONetworkData](./ionetworkdata.md)
   An object that manages a fixed-size named buffer.
-- [IONetworkMedium](ionetworkmedium.md)
+- [IONetworkMedium](./ionetworkmedium.md)
   An object that encapsulates information about a network medium (i.e. 10Base-T, or 100Base-T Full Duplex).
-- [IOPacketQueue](iopacketqueue.md)
+- [IOPacketQueue](./iopacketqueue.md)
   Implements a bounded FIFO queue of mbuf packets.
 
 

@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute.AnnouncementPriority.high
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Announcements will interrupt other speech and cannot be interrupted once started.
 

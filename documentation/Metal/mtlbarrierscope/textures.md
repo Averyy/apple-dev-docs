@@ -1,7 +1,8 @@
 # textures
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The barrier affects textures.
 
@@ -17,6 +18,10 @@ The barrier affects textures.
 
 ```swift
 static var textures: MTLBarrierScope { get }
+```
+
+```c
+MTLBarrierScopeTextures
 ```
 
 

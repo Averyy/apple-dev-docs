@@ -1,7 +1,8 @@
 # MTLReadWriteTextureTier.tierNone
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the system doesn’t support read-write textures.
 
@@ -19,11 +20,16 @@ Indicates the system doesn’t support read-write textures.
 case tierNone
 ```
 
+```c
+MTLReadWriteTextureTierNone
+```
+
 ## See Also
 
-- [MTLReadWriteTextureTier.tier1](mtlreadwritetexturetier/tier1.md)
+### Enumeration cases
+- [MTLReadWriteTextureTier.tier1](./tier1.md)
   Indicates the system supports tier 1 read-write textures.
-- [MTLReadWriteTextureTier.tier2](mtlreadwritetexturetier/tier2.md)
+- [MTLReadWriteTextureTier.tier2](./tier2.md)
   Indicates the system supports tier 2 read-write textures.
 
 

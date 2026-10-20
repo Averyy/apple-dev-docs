@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: TVUIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - tvOS 12.0+

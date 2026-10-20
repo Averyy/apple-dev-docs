@@ -1,7 +1,8 @@
 # IntentModes.ForegroundMode
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the available foreground behaviors for an app intent.
 
@@ -27,20 +28,20 @@ Use this type to specify the foreground behaviors you want to apply to your app 
 ## Topics
 
 ### Type Properties
-- [static var deferred: IntentModes.ForegroundMode](intentmodes/foregroundmode/deferred.md)
+- [static var deferred: IntentModes.ForegroundMode](./foregroundmode/deferred.md)
   An option to bring the app to the foreground while running the intent’s action or shortly before the action completes.
-- [static var dynamic: IntentModes.ForegroundMode](intentmodes/foregroundmode/dynamic.md)
+- [static var dynamic: IntentModes.ForegroundMode](./foregroundmode/dynamic.md)
   An option to bring the app to the foreground if conditions permit it.
-- [static var immediate: IntentModes.ForegroundMode](intentmodes/foregroundmode/immediate.md)
+- [static var immediate: IntentModes.ForegroundMode](./foregroundmode/immediate.md)
   An option to bring the app to the foreground immediately after the system resolves the intent’s parameters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

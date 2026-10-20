@@ -1,7 +1,8 @@
 # MusicCatalogSearchable
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for music items that your app can fetch by using a catalog search request.
 
@@ -23,25 +24,26 @@ protocol MusicCatalogSearchable : MusicItem
 ## Relationships
 
 ### Inherits From
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Album](album.md)
-- [Artist](artist.md)
-- [Curator](curator.md)
-- [MusicVideo](musicvideo.md)
-- [Playlist](playlist.md)
-- [RadioShow](radioshow.md)
-- [RecordLabel](recordlabel.md)
-- [Song](song.md)
-- [Station](station.md)
+- [Album](./album.md)
+- [Artist](./artist.md)
+- [Curator](./curator.md)
+- [MusicVideo](./musicvideo.md)
+- [Playlist](./playlist.md)
+- [RadioShow](./radioshow.md)
+- [RecordLabel](./recordlabel.md)
+- [Song](./song.md)
+- [Station](./station.md)
 
 ## See Also
 
-- [struct MusicCatalogSearchRequest](musiccatalogsearchrequest.md)
+### Catalog Search
+- [struct MusicCatalogSearchRequest](./musiccatalogsearchrequest.md)
   A request that your app uses to fetch items from the Apple Music catalog using a search term.
-- [struct MusicCatalogSearchResponse](musiccatalogsearchresponse.md)
+- [struct MusicCatalogSearchResponse](./musiccatalogsearchresponse.md)
   An object that contains results for a catalog search request.
 
 

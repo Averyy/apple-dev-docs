@@ -1,7 +1,8 @@
 # HVGLPartLoader
 
 **Framework**: hvf  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Special loader object for an HVGL table in memory, which must be Double-aligned Typically this is from a memory-mapped font
 
@@ -23,14 +24,14 @@ class HVGLPartLoader
 ## Topics
 
 ### Initializers
-- [init?(hvglTable: UnsafeRawBufferPointer, hvpmTable: UnsafeRawBufferPointer?)](hvglpartloader/init(hvgltable:hvpmtable:).md)
+- [init?(hvglTable: UnsafeRawBufferPointer, hvpmTable: UnsafeRawBufferPointer?)](./hvglpartloader/init%28hvgltable,hvpmtable%29.md)
   Returns nil if the data is malformed or missing
 ### Instance Properties
-- [var glyphCount: Int](hvglpartloader/glyphcount.md)
+- [var glyphCount: Int](./hvglpartloader/glyphcount.md)
   The number of glyphs (externally visible parts) in the hvgl table
-- [var partCount: Int](hvglpartloader/partcount.md)
+- [var partCount: Int](./hvglpartloader/partcount.md)
   The number of parts (all parts) in the hvgl table
-- [var tableVersion: (major: Int, minor: Int)](hvglpartloader/tableversion.md)
+- [var tableVersion: (major: Int, minor: Int)](./hvglpartloader/tableversion.md)
   The version of the hvgl table this loader supports
 
 

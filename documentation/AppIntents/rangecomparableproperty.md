@@ -1,7 +1,8 @@
 # RangeComparableProperty
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,12 +22,13 @@ protocol RangeComparableProperty : _IntentValue, Comparable
 ## Relationships
 
 ### Inherits From
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
+- [Comparable](../Swift/comparable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [protocol RangeCheckingResolver](rangecheckingresolver.md)
+### Range validation
+- [protocol RangeCheckingResolver](./rangecheckingresolver.md)
   An interface for validating that a value is within a parameter’s defined inclusive range.
 
 

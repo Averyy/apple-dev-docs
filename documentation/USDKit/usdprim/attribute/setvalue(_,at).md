@@ -1,7 +1,8 @@
 # setValue(_:at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets this attribute’s value at the given time.
 

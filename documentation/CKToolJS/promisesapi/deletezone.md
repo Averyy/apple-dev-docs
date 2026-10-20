@@ -1,7 +1,8 @@
 # deleteZone
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a zone.
 
@@ -10,7 +11,7 @@ Deletes a zone.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise deleteZone(
 	DeleteZoneParams params
 );
@@ -59,11 +60,12 @@ If the operation completes successfully, the server returns a success response.
 
 ## See Also
 
-- [createZone](promisesapi/createzone.md)
+### Zone Management
+- [createZone](./createzone.md)
   Creates a new zone.
-- [getZone](promisesapi/getzone.md)
+- [getZone](./getzone.md)
   Returns details for a zone.
-- [getZones](promisesapi/getzones.md)
+- [getZones](./getzones.md)
   Returns a collection of zones.
 
 

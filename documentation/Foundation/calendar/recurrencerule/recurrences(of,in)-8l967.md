@@ -1,7 +1,8 @@
 # recurrences(of:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Find recurrences of the given date
 

@@ -1,7 +1,8 @@
 # reflect(over:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reflects a floating-point 16-bit-per-channel, two-channel interleaved pixel buffer over a horizontal or vertical axis.
 
@@ -11,7 +12,7 @@ Reflects a floating-point 16-bit-per-channel, two-channel interleaved pixel buff
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,6 +21,8 @@ Reflects a floating-point 16-bit-per-channel, two-channel interleaved pixel buff
 func reflect(over axis: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)
 ```
 
+Available when `Format` is `vImage.Interleaved16Fx2`.
+
 ## Parameters
 
 - `axis`: The reflection axis.
@@ -27,23 +30,25 @@ func reflect(over axis: vImage.ReflectionAxis, destination: vImage.PixelBuffer<F
 
 ## See Also
 
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+### Related Documentation
+- [Applying geometric transforms to images](../../applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-9ezqm.md)
+### Reflecting images
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-9ezqm.md)
   Reflects an 8-bit planar pixel buffer over a horizontal or vertical axis.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-529j0.md)
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-529j0.md)
   Reflects a floating-point 16-bit planar pixel buffer over a horizontal or vertical axis.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-4i4vi.md)
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-4i4vi.md)
   Reflects a 32-bit planar pixel buffer over a horizontal or vertical axis.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-7o9tt.md)
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-7o9tt.md)
   Reflects an 8-bit-per-channel, four-channel interleaved pixel buffer over a horizontal or vertical axis.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-fg4a.md)
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-fg4a.md)
   Reflects an unsigned 16-bit-per-channel, four-channel interleaved pixel buffer over a horizontal or vertical axis.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-97wi9.md)
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-97wi9.md)
   Reflects a floating-point 16-bit-per-channel, four-channel interleaved pixel buffer over a horizontal or vertical axis.
-- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/reflect(over:destination:)-7b1md.md)
+- [func reflect(over: vImage.ReflectionAxis, destination: vImage.PixelBuffer<Format>)](./reflect%28over,destination%29-7b1md.md)
   Reflects a 32-bit-per-channel, four-channel interleaved pixel buffer over a horizontal or vertical axis.
-- [vImage.ReflectionAxis](vimage/reflectionaxis.md)
+- [vImage.ReflectionAxis](../reflectionaxis.md)
   The axis to reflect an image.
 
 

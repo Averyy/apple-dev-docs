@@ -1,7 +1,8 @@
 # ndArray
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Waits for any pending write access on the underlying ndArray to complete, then returns it.
 
@@ -26,9 +27,10 @@ Returns `nil` if `kind` is not `.ndArray`.
 
 ## See Also
 
-- [var kind: InferenceValue.Kind](inferencefunction/asyncvalue/kind.md)
+### Accessing an async value
+- [var kind: InferenceValue.Kind](./kind.md)
   The kind of inference value held by this async value.
-- [var pixelBuffer: CVReadOnlyPixelBuffer?](inferencefunction/asyncvalue/pixelbuffer.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer?](./pixelbuffer.md)
   Waits for any pending write access on the underlying pixel buffer to complete, then returns it.
 
 

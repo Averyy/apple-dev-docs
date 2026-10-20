@@ -1,7 +1,8 @@
 # candidateListTouchBarItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12.2+
@@ -12,11 +13,16 @@
 var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSCandidateListTouchBarItem * candidateListTouchBarItem;
+```
+
 ## See Also
 
-- [var allowedTouchTypes: NSTouch.TouchTypeMask](nsview/allowedtouchtypes.md)
+### Handling Touch Events
+- [var allowedTouchTypes: NSTouch.TouchTypeMask](./allowedtouchtypes.md)
   The types of touch interactions the view allows.
-- [var wantsRestingTouches: Bool](nsview/wantsrestingtouches.md)
+- [var wantsRestingTouches: Bool](./wantsrestingtouches.md)
   A Boolean value indicating whether the view wants resting touches.
 
 

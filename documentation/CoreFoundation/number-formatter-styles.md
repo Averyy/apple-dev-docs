@@ -1,6 +1,7 @@
 # Number Formatter Styles
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Predefined number format styles.
 
@@ -11,28 +12,29 @@ The format for these number styles is not exact because they depend on the local
 ## Topics
 
 ### Constants
-- [CFNumberFormatterStyle.noStyle](cfnumberformatterstyle/nostyle.md)
+- [CFNumberFormatterStyle.noStyle](./cfnumberformatterstyle/nostyle.md)
   Specifies no style.
-- [CFNumberFormatterStyle.decimalStyle](cfnumberformatterstyle/decimalstyle.md)
+- [CFNumberFormatterStyle.decimalStyle](./cfnumberformatterstyle/decimalstyle.md)
   Specifies a decimal style format.
-- [CFNumberFormatterStyle.currencyStyle](cfnumberformatterstyle/currencystyle.md)
+- [CFNumberFormatterStyle.currencyStyle](./cfnumberformatterstyle/currencystyle.md)
   Specifies a currency style format.
-- [CFNumberFormatterStyle.percentStyle](cfnumberformatterstyle/percentstyle.md)
+- [CFNumberFormatterStyle.percentStyle](./cfnumberformatterstyle/percentstyle.md)
   Specifies a percent style format.
-- [CFNumberFormatterStyle.scientificStyle](cfnumberformatterstyle/scientificstyle.md)
+- [CFNumberFormatterStyle.scientificStyle](./cfnumberformatterstyle/scientificstyle.md)
   Specifies a scientific style format.
-- [CFNumberFormatterStyle.spellOutStyle](cfnumberformatterstyle/spelloutstyle.md)
+- [CFNumberFormatterStyle.spellOutStyle](./cfnumberformatterstyle/spelloutstyle.md)
   Specifies a spelled out format.
 
 ## See Also
 
-- [Number Formatter Property Keys](number-formatter-property-keys.md)
+### Constants
+- [Number Formatter Property Keys](./number-formatter-property-keys.md)
   The keys used in key-value pairs to specify the value of number formatter properties.
-- [Number Format Options](number_format_options.md)
+- [Number Format Options](./number_format_options.md)
   These constants are used to specify how numbers should be parsed.
-- [enum CFNumberFormatterRoundingMode](cfnumberformatterroundingmode.md)
+- [enum CFNumberFormatterRoundingMode](./cfnumberformatterroundingmode.md)
   These constants are used to specify how numbers should be rounded.
-- [Padding Positions](padding-positions.md)
+- [Padding Positions](./padding-positions.md)
   These constants are used to specify how numbers should be padded.
 
 

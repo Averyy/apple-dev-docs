@@ -1,7 +1,8 @@
 # point(for:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the point in the overlay renderer’s drawing area corresponding to the specified point on the map.
 
@@ -19,25 +20,30 @@ Returns the point in the overlay renderer’s drawing area corresponding to the 
 func point(for mapPoint: MKMapPoint) -> CGPoint
 ```
 
+```objc
+- (CGPoint) pointForMapPoint:(MKMapPoint) mapPoint;
+```
+
 #### Return Value
 
 The point in the overlay’s drawing area that corresponds to the map point.
 
 #### Discussion
 
-You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](mkoverlayrenderer/draw(_:zoomscale:in:).md) method.
+You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](./draw%28_,zoomscale,in%29.md) method.
 
 ## Parameters
 
-- `mapPoint`: A point on the two-dimensional map projection. If you have a coordinate value (latitude and longitude), you can use the [`init(_:)`](mkmappoint/init(_:).md) function to convert that coordinate to a map point.
+- `mapPoint`: A point on the two-dimensional map projection. If you have a coordinate value (latitude and longitude), you can use the [`init(_:)`](../mkmappoint/init%28_%29.md) function to convert that coordinate to a map point.
 
 ## See Also
 
-- [func mapPoint(for: CGPoint) -> MKMapPoint](mkoverlayrenderer/mappoint(for:).md)
+### Converting points on the map
+- [func mapPoint(for: CGPoint) -> MKMapPoint](./mappoint%28for%29.md)
   Returns the point on the map that corresponds to the specified point in the overlay renderer’s drawing area.
-- [func rect(for: MKMapRect) -> CGRect](mkoverlayrenderer/rect(for:).md)
+- [func rect(for: MKMapRect) -> CGRect](./rect%28for%29.md)
   Returns the rectangle in the overlay renderer’s drawing area corresponding to the specified rectangle on the map.
-- [func mapRect(for: CGRect) -> MKMapRect](mkoverlayrenderer/maprect(for:).md)
+- [func mapRect(for: CGRect) -> MKMapRect](./maprect%28for%29.md)
   Returns the rectangle on the map that corresponds to the specified rectangle in the overlay renderer’s drawing area.
 
 

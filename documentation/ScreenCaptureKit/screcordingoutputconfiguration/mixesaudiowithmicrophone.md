@@ -1,7 +1,8 @@
 # mixesAudioWithMicrophone
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var mixesAudioWithMicrophone: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL mixesAudioWithMicrophone;
 ```
 
 #### Discussion

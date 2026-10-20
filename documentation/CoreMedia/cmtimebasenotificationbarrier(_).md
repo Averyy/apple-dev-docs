@@ -1,7 +1,8 @@
 # CMTimebaseNotificationBarrier(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Requests that the timebase wait until it isn’t posting notifications.
 
@@ -18,6 +19,10 @@ Requests that the timebase wait until it isn’t posting notifications.
 
 ```swift
 func CMTimebaseNotificationBarrier(_ timebase: CMTimebase) -> OSStatus
+```
+
+```c
+extern OSStatus CMTimebaseNotificationBarrier(CMTimebaseRef timebase);
 ```
 
 

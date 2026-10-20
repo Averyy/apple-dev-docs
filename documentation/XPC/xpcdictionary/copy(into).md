@@ -1,7 +1,8 @@
 # copy(into:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the keys and values of the dictionary to a different dictionary.
 
@@ -11,7 +12,7 @@ Copies the keys and values of the dictionary to a different dictionary.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ func copy(into destination: XPCDictionary)
 
 ## See Also
 
-- [init()](xpcdictionary/init.md)
+### Creating a dictionary
+- [init()](./init%28%29.md)
   Creates an empty dictionary.
-- [init(xpc_object_t)](xpcdictionary/init(_:).md)
+- [init(xpc_object_t)](./init%28_%29.md)
   Creates a dictionary using the keys and values in the specified object parameter.
 
 

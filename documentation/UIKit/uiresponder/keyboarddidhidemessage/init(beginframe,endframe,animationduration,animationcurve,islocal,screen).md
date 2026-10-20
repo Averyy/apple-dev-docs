@@ -1,7 +1,8 @@
 # init(beginFrame:endFrame:animationDuration:animationCurve:isLocal:screen:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

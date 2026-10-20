@@ -1,7 +1,8 @@
 # PlayToneAction.Tone.single
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person entered a digit.
 
@@ -20,9 +21,10 @@ case single
 
 ## See Also
 
-- [PlayToneAction.Tone.hardPause](playtoneaction/tone-swift.enum/hardpause.md)
+### Keypad tones
+- [PlayToneAction.Tone.hardPause](./hardpause.md)
   A person entered a hard pause.
-- [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
+- [PlayToneAction.Tone.softPause](./softpause.md)
   A person entered a soft pause.
 
 

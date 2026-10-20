@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var perceptual: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) bool perceptual;
+```
+
 ## See Also
 
-- [var count: Int](cikmeans/count.md)
-- [var inputMeans: CIImage?](cikmeans/inputmeans.md)
-- [var passes: Float](cikmeans/passes.md)
+### Instance Properties
+- [var count: Int](./count.md)
+- [var inputMeans: CIImage?](./inputmeans.md)
+- [var passes: Float](./passes.md)
 
 
 ---

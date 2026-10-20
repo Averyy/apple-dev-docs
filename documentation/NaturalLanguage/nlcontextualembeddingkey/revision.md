@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies the version number the contextual embedding uses.
 
@@ -20,11 +21,16 @@ A key that identifies the version number the contextual embedding uses.
 static let revision: NLContextualEmbeddingKey
 ```
 
+```c
+extern NLContextualEmbeddingKey const NLContextualEmbeddingKeyRevision;
+```
+
 ## See Also
 
-- [static let languages: NLContextualEmbeddingKey](nlcontextualembeddingkey/languages.md)
+### Getting embedding keys
+- [static let languages: NLContextualEmbeddingKey](./languages.md)
   A key that identifies the supported languages in a contextual embedding.
-- [static let scripts: NLContextualEmbeddingKey](nlcontextualembeddingkey/scripts.md)
+- [static let scripts: NLContextualEmbeddingKey](./scripts.md)
   A key that identifies the writing system that the language uses in a contextual embedding.
 
 

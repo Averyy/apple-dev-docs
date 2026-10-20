@@ -1,7 +1,8 @@
 # rainfall
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of rainfall for the period.
 

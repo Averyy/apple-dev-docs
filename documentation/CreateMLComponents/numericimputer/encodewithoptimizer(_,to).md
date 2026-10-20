@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the transformer to an encoder.
 
@@ -19,6 +20,8 @@ Encodes the transformer to an encoder.
 ```swift
 func encodeWithOptimizer(_ transformer: NumericImputer<Element>.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
+
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
 
 ## Parameters
 

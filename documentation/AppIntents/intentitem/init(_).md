@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an `IntentItem` and use `displayRepresentation` from `value`
 
@@ -11,7 +12,7 @@ Initialize an `IntentItem` and use `displayRepresentation` from `value`
 - Mac Catalyst 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 - watchOS 9.4+
 
 ## Declaration

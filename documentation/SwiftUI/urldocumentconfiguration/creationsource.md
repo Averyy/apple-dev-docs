@@ -1,7 +1,8 @@
 # creationSource
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source associated with the button that created this document.
 
@@ -20,7 +21,7 @@ final var creationSource: DocumentCreationSource? { get }
 
 #### Discussion
 
-On iOS, you can specify the source using a [`NewDocumentButton`](newdocumentbutton.md) in [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md):
+On iOS, you can specify the source using a [`NewDocumentButton`](../newdocumentbutton.md) in [`DocumentGroupLaunchScene`](../documentgrouplaunchscene.md):
 
 ```swift
 extension DocumentCreationSource {
@@ -37,13 +38,14 @@ DocumentGroupLaunchScene("Documents") {
 }
 ```
 
-Use this property to determine which [`NewDocumentButton`](newdocumentbutton.md) triggered the creation of the current document, allowing you to customize the UI accordingly.
+Use this property to determine which [`NewDocumentButton`](../newdocumentbutton.md) triggered the creation of the current document, allowing you to customize the UI accordingly.
 
 ## See Also
 
-- [var fileURL: URL?](urldocumentconfiguration/fileurl.md)
+### Accessing document properties
+- [var fileURL: URL?](./fileurl.md)
   A URL of the open document if it is saved to disk.
-- [var lastContentModificationDate: Date?](urldocumentconfiguration/lastcontentmodificationdate.md)
+- [var lastContentModificationDate: Date?](./lastcontentmodificationdate.md)
   The date on which the contents of the document were last modified, if available.
 
 

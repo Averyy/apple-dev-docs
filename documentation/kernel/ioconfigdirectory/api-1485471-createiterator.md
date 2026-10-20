@@ -1,14 +1,15 @@
 # createIterator
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn createIterator(UInt32 testVal, UInt32 testMask, OSIterator *& iterator);
 ```
 

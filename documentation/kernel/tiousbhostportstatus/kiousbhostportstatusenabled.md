@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusEnabled
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port status enabled value.
 
@@ -10,7 +11,7 @@ The port status enabled value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusEnabled = IOUSBHostFamilyBit(12)
 ```
 

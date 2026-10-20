@@ -1,7 +1,8 @@
 # focusable(_:interactions:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies if the view is focusable, and if so, what focus-driven interactions it supports.
 
@@ -43,9 +44,10 @@ MyTapGestureView(...)
 
 ## See Also
 
-- [func focusable(Bool) -> some View](view/focusable(_:).md)
+### Indicating that a view can receive focus
+- [func focusable(Bool) -> some View](./focusable%28_%29.md)
   Specifies if the view is focusable.
-- [struct FocusInteractions](focusinteractions.md)
+- [struct FocusInteractions](../focusinteractions.md)
   Values describe different focus interactions that a view can support.
 
 

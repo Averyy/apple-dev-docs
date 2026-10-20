@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately after the given index.
 
@@ -19,6 +20,8 @@ Returns the position immediately after the given index.
 ```swift
 func index(after i: FlattenSequence<Base>.Index) -> FlattenSequence<Base>.Index
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
 #### Return Value
 

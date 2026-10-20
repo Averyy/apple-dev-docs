@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale of the metadata item.
 
@@ -20,13 +21,18 @@ The locale of the metadata item.
 var locale: Locale? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSLocale * locale;
+```
+
 #### Discussion
 
 The locale may be `nil` if no locale information is available for the metadata item.
 
 ## See Also
 
-- [var extendedLanguageTag: String?](avmetadataitem/extendedlanguagetag.md)
+### Accessing language support
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The IETF BCP 47 (RFC 4646) language identifier of the metadata item.
 
 

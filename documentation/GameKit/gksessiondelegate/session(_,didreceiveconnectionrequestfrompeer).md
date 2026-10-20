@@ -1,17 +1,18 @@
 # session(_:didReceiveConnectionRequestFromPeer:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Received by the delegate when a remote peer wants to create a connection to the session.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- macOS 10.8+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -19,11 +20,15 @@ Received by the delegate when a remote peer wants to create a connection to the 
 optional func session(_ session: GKSession, didReceiveConnectionRequestFromPeer peerID: String)
 ```
 
+```objc
+- (void) session:(GKSession *) session didReceiveConnectionRequestFromPeer:(NSString *) peerID;
+```
+
 #### Discussion
 
-The delegate should call the session’s [`acceptConnection(fromPeer:)`](gksession/acceptconnection(frompeer:).md) method if it wants to accept the connection or the [`denyConnection(fromPeer:)`](gksession/denyconnection(frompeer:).md) method if it wants to refuse the connection.
+The delegate should call the session’s [`acceptConnection(fromPeer:)`](../gksession/acceptconnection%28frompeer%29.md) method if it wants to accept the connection or the [`denyConnection(fromPeer:)`](../gksession/denyconnection%28frompeer%29.md) method if it wants to refuse the connection.
 
-> ❗ **Important**:  If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles this message automatically. Your delegate can ignore it if the peer picker dialog is in use. If your application is not using a [`GKPeerPickerController`](gkpeerpickercontroller.md) object to configure the session, your delegate must implement this method as described above.
+> ❗ **Important**:  If a [`GKPeerPickerController`](../gkpeerpickercontroller.md) object is being used to configure the session, the controller handles this message automatically. Your delegate can ignore it if the peer picker dialog is in use. If your application is not using a [`GKPeerPickerController`](../gkpeerpickercontroller.md) object to configure the session, your delegate must implement this method as described above.
 
 ## Parameters
 

@@ -1,18 +1,19 @@
 # getBytes
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A pointer to a function that copies data from the provider. For more information, see [`CGDataProviderGetBytesCallback`](cgdataprovidergetbytescallback.md).
+A pointer to a function that copies data from the provider. For more information, see [`CGDataProviderGetBytesCallback`](../cgdataprovidergetbytescallback.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A pointer to a function that copies data from the provider. For more information
 var getBytes: CGDataProviderGetBytesCallback?
 ```
 
+```c
+CGDataProviderGetBytesCallback getBytes;
+```
+
 ## See Also
 
-- [var releaseInfo: CGDataProviderReleaseInfoCallback?](cgdataprovidersequentialcallbacks/releaseinfo.md)
-  A pointer to a function that handles clean-up for the data provider, or `NULL`. For more information, see [`CGDataProviderReleaseInfoCallback`](cgdataproviderreleaseinfocallback.md).
-- [var rewind: CGDataProviderRewindCallback?](cgdataprovidersequentialcallbacks/rewind.md)
-  A pointer to a function Core Graphics calls to return the provider to the beginning of the data stream. For more information, see [`CGDataProviderRewindCallback`](cgdataproviderrewindcallback.md).
-- [var skipForward: CGDataProviderSkipForwardCallback?](cgdataprovidersequentialcallbacks/skipforward.md)
+### Instance Properties
+- [var releaseInfo: CGDataProviderReleaseInfoCallback?](./releaseinfo.md)
+  A pointer to a function that handles clean-up for the data provider, or `NULL`. For more information, see [`CGDataProviderReleaseInfoCallback`](../cgdataproviderreleaseinfocallback.md).
+- [var rewind: CGDataProviderRewindCallback?](./rewind.md)
+  A pointer to a function Core Graphics calls to return the provider to the beginning of the data stream. For more information, see [`CGDataProviderRewindCallback`](../cgdataproviderrewindcallback.md).
+- [var skipForward: CGDataProviderSkipForwardCallback?](./skipforward.md)
   A pointer to a function that Core Graphics calls to advance the stream of data supplied by the provider.
-- [var version: UInt32](cgdataprovidersequentialcallbacks/version.md)
+- [var version: UInt32](./version.md)
   The version of this structure. It should be set to 0.
 
 

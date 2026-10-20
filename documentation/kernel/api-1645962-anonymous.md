@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : long {
     ...
 };
@@ -17,15 +18,15 @@ enum : long {
 ## Topics
 
 ### Constants
-- [kFWAddressBusID](1645962-anonymous/kfwaddressbusid.md)
-- [kFWAddressBusIDPhase](1645962-anonymous/kfwaddressbusidphase.md)
-- [kFWAddressNodeID](1645962-anonymous/kfwaddressnodeid.md)
-- [kFWAddressNodeIDPhase](1645962-anonymous/kfwaddressnodeidphase.md)
-- [kFWBadNodeID](1645962-anonymous/kfwbadnodeid.md)
-- [kFWBroadcastAddress](1645962-anonymous/kfwbroadcastaddress.md)
-- [kFWBroadcastNodeID](1645962-anonymous/kfwbroadcastnodeid.md)
-- [kFWLocalBusAddress](1645962-anonymous/kfwlocalbusaddress.md)
-- [kFWLocalBusID](1645962-anonymous/kfwlocalbusid.md)
+- [kFWAddressBusID](./api-1645962-anonymous/kfwaddressbusid.md)
+- [kFWAddressBusIDPhase](./api-1645962-anonymous/kfwaddressbusidphase.md)
+- [kFWAddressNodeID](./api-1645962-anonymous/kfwaddressnodeid.md)
+- [kFWAddressNodeIDPhase](./api-1645962-anonymous/kfwaddressnodeidphase.md)
+- [kFWBadNodeID](./api-1645962-anonymous/kfwbadnodeid.md)
+- [kFWBroadcastAddress](./api-1645962-anonymous/kfwbroadcastaddress.md)
+- [kFWBroadcastNodeID](./api-1645962-anonymous/kfwbroadcastnodeid.md)
+- [kFWLocalBusAddress](./api-1645962-anonymous/kfwlocalbusaddress.md)
+- [kFWLocalBusID](./api-1645962-anonymous/kfwlocalbusid.md)
 
 
 ---

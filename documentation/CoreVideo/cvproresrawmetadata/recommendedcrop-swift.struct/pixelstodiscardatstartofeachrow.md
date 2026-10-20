@@ -1,7 +1,8 @@
 # pixelsToDiscardAtStartOfEachRow
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixels to discard from the start (left) of each row of the image.
 

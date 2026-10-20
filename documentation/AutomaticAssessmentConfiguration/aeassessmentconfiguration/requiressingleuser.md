@@ -1,7 +1,8 @@
 # requiresSingleUser
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether only a single user account must be logged in to start an assessment.
 
@@ -13,6 +14,10 @@ A Boolean value that indicates whether only a single user account must be logged
 
 ```swift
 var requiresSingleUser: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL requiresSingleUser;
 ```
 
 #### Discussion

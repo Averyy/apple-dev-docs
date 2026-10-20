@@ -1,7 +1,8 @@
 # NSAccessorySetupBluetoothNames
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An array of strings that represent the Bluetooth device names or substrings for accessories that your app configures.
 
@@ -9,9 +10,10 @@ An array of strings that represent the Bluetooth device names or substrings for 
 - iOS 18.0+
 - iPadOS 18.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `NSAccessorySetupBluetoothNames` (AccessorySetupKit - Bluetooth Names)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -19,11 +21,12 @@ Each entry is a full or partial name which the accessory advertises and helps Ac
 
 ## See Also
 
-- [NSAccessorySetupKitSupports](information-property-list/nsaccessorysetupkitsupports.md)
+### Accessories
+- [NSAccessorySetupKitSupports](./nsaccessorysetupkitsupports.md)
   An array of strings that indicates the wireless technologies AccessorySetupKit uses when discovering and configuring accessories.
-- [NSAccessorySetupBluetoothCompanyIdentifiers](information-property-list/nsaccessorysetupbluetoothcompanyidentifiers.md)
+- [NSAccessorySetupBluetoothCompanyIdentifiers](./nsaccessorysetupbluetoothcompanyidentifiers.md)
   An array of strings that represent the Bluetooth company identifiers for accessories that your app configures.
-- [NSAccessorySetupBluetoothServices](information-property-list/nsaccessorysetupbluetoothservices.md)
+- [NSAccessorySetupBluetoothServices](./nsaccessorysetupbluetoothservices.md)
   An array of strings that represent the hexadecimal values of Bluetooth SIG-defined services or custom services for accessories your app configures.
 
 

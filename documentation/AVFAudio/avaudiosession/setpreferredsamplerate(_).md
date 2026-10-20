@@ -1,7 +1,8 @@
 # setPreferredSampleRate(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred sample rate for audio input and output.
 
@@ -18,9 +19,13 @@ Sets the preferred sample rate for audio input and output.
 func setPreferredSampleRate(_ sampleRate: Double) throws
 ```
 
+```objc
+- (BOOL) setPreferredSampleRate:(double) sampleRate error:(NSError **) outError;
+```
+
 #### Discussion
 
-This method requests a change to the input and output audio sample rate. To see the effect of this change, use the [`sampleRate`](avaudiosession/samplerate.md) property.
+This method requests a change to the input and output audio sample rate. To see the effect of this change, use the [`sampleRate`](./samplerate.md) property.
 
 You can set a preferred sample rate before or after activating the audio session.
 
@@ -30,9 +35,10 @@ You can set a preferred sample rate before or after activating the audio session
 
 ## See Also
 
-- [var sampleRate: Double](avaudiosession/samplerate.md)
+### Configuring sample rate
+- [var sampleRate: Double](./samplerate.md)
   The current audio sample rate, in hertz.
-- [var preferredSampleRate: Double](avaudiosession/preferredsamplerate.md)
+- [var preferredSampleRate: Double](./preferredsamplerate.md)
   The preferred sample rate, in hertz.
 
 

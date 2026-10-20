@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of content representing the body of this table row content.
@@ -21,7 +22,8 @@ associatedtype TableRowBody : TableRowContent
 
 ## See Also
 
-- [var tableRowBody: Self.TableRowBody](tablerowcontent/tablerowbody-swift.property.md)
+### Getting the row body
+- [var tableRowBody: Self.TableRowBody](./tablerowbody-swift.property.md)
   The composition of content that comprise the table row content.
 
 

@@ -1,7 +1,8 @@
 # GameCenterChallengeImageCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for uploading an image asset for a Game Center challenge.
 
@@ -10,14 +11,14 @@ The request body for uploading an image asset for a Game Center challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImageCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeImageCreateRequest.Data](gamecenterchallengeimagecreaterequest/data-data.dictionary.md)
+- [object GameCenterChallengeImageCreateRequest.Data](./gamecenterchallengeimagecreaterequest/data-data.dictionary.md)
   The request body you use to create a Game Center challenge image.
 
 ## Properties
@@ -26,14 +27,15 @@ object GameCenterChallengeImageCreateRequest
 
 ## See Also
 
-- [object GameCenterChallengeImage](gamecenterchallengeimage.md)
+### Objects
+- [object GameCenterChallengeImage](./gamecenterchallengeimage.md)
   An image asset used to represent a Game Center challenge in the player interface.
-- [object GameCenterChallengeImageResponse](gamecenterchallengeimageresponse.md)
+- [object GameCenterChallengeImageResponse](./gamecenterchallengeimageresponse.md)
   A response containing a single image asset for a Game Center challenge.
-- [object GameCenterChallengeImageUpdateRequest](gamecenterchallengeimageupdaterequest.md)
+- [object GameCenterChallengeImageUpdateRequest](./gamecenterchallengeimageupdaterequest.md)
   The request body you use to update a challenge.
-- [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
-- [object GameCenterChallengeVersionDefaultImageLinkageResponse](gamecenterchallengeversiondefaultimagelinkageresponse.md)
+- [object GameCenterChallengeLocalizationImageLinkageResponse](./gamecenterchallengelocalizationimagelinkageresponse.md)
+- [object GameCenterChallengeVersionDefaultImageLinkageResponse](./gamecenterchallengeversiondefaultimagelinkageresponse.md)
 
 
 ---

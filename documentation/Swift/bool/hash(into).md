@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -26,11 +27,12 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [var customMirror: Mirror](bool/custommirror.md)
+### Inspecting a Boolean
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Bool` instance.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](bool/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the `Bool` instance.
-- [var hashValue: Int](bool/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

@@ -1,7 +1,8 @@
 # DeviceActivityData.Error.missingData
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the requested data does not exist.
 
@@ -21,9 +22,10 @@ If fetching cached data returns this error, fetching live data may resolve the i
 
 ## See Also
 
-- [DeviceActivityData.Error.unavailable](deviceactivitydata/error/unavailable.md)
+### Representing errors
+- [DeviceActivityData.Error.unavailable](./unavailable.md)
   An error indicating data access is unavailable.
-- [DeviceActivityData.Error.unauthorized](deviceactivitydata/error/unauthorized.md)
+- [DeviceActivityData.Error.unauthorized](./unauthorized.md)
   An error indicating the app isn’t authorized to provide parental controls and access data.
 
 

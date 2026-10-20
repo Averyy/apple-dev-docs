@@ -1,7 +1,8 @@
 # isLoaded
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if this context is loaded in an extension controller.
 
@@ -16,6 +17,10 @@ A Boolean value indicating if this context is loaded in an extension controller.
 
 ```swift
 var isLoaded: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isLoaded) BOOL loaded;
 ```
 
 

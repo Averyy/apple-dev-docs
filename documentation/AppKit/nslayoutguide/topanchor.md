@@ -1,7 +1,8 @@
 # topAnchor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A layout anchor representing the top edge of the layout guide’s frame.
 
@@ -14,29 +15,34 @@ A layout anchor representing the top edge of the layout guide’s frame.
 var topAnchor: NSLayoutYAxisAnchor { get }
 ```
 
+```objc
+@property (strong, readonly) NSLayoutYAxisAnchor * topAnchor;
+```
+
 #### Discussion
 
-Use this anchor to create constraints with the layout guide’s top edge. You can combine this anchor only with other [`NSLayoutYAxisAnchor`](https://developer.apple.com/documentation/uikit/nslayoutyaxisanchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
+Use this anchor to create constraints with the layout guide’s top edge. You can combine this anchor only with other [`NSLayoutYAxisAnchor`](../../UIKit/nslayoutyaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 
 ## See Also
 
-- [var bottomAnchor: NSLayoutYAxisAnchor](nslayoutguide/bottomanchor.md)
+### Creating Constraints Using Layout Anchors
+- [var bottomAnchor: NSLayoutYAxisAnchor](./bottomanchor.md)
   A layout anchor representing the bottom edge of the layout guide’s frame.
-- [var centerXAnchor: NSLayoutXAxisAnchor](nslayoutguide/centerxanchor.md)
+- [var centerXAnchor: NSLayoutXAxisAnchor](./centerxanchor.md)
   A layout anchor representing the horizontal center of the layout guide’s frame.
-- [var centerYAnchor: NSLayoutYAxisAnchor](nslayoutguide/centeryanchor.md)
+- [var centerYAnchor: NSLayoutYAxisAnchor](./centeryanchor.md)
   A layout anchor representing the vertical center of the layout guide’s frame.
-- [var heightAnchor: NSLayoutDimension](nslayoutguide/heightanchor.md)
+- [var heightAnchor: NSLayoutDimension](./heightanchor.md)
   A layout anchor representing the height of the layout guide’s frame.
-- [var leadingAnchor: NSLayoutXAxisAnchor](nslayoutguide/leadinganchor.md)
+- [var leadingAnchor: NSLayoutXAxisAnchor](./leadinganchor.md)
   A layout anchor representing the leading edge of the layout guide’s frame.
-- [var leftAnchor: NSLayoutXAxisAnchor](nslayoutguide/leftanchor.md)
+- [var leftAnchor: NSLayoutXAxisAnchor](./leftanchor.md)
   A layout anchor representing the left edge of the layout guide’s frame.
-- [var rightAnchor: NSLayoutXAxisAnchor](nslayoutguide/rightanchor.md)
+- [var rightAnchor: NSLayoutXAxisAnchor](./rightanchor.md)
   A layout anchor representing the right edge of the layout guide’s frame.
-- [var trailingAnchor: NSLayoutXAxisAnchor](nslayoutguide/trailinganchor.md)
+- [var trailingAnchor: NSLayoutXAxisAnchor](./trailinganchor.md)
   A layout anchor representing the trailing edge of the layout guide’s frame.
-- [var widthAnchor: NSLayoutDimension](nslayoutguide/widthanchor.md)
+- [var widthAnchor: NSLayoutDimension](./widthanchor.md)
   A layout anchor representing the width of the layout guide’s frame.
 
 

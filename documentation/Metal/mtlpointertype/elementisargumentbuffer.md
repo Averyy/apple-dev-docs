@@ -1,7 +1,8 @@
 # elementIsArgumentBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the element is an argument buffer.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the element is an argument buffer.
 var elementIsArgumentBuffer: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL elementIsArgumentBuffer;
+```
+
 ## See Also
 
-- [var alignment: Int](mtlpointertype/alignment.md)
+### Describing the pointer elements
+- [var alignment: Int](./alignment.md)
   The required byte alignment in memory for the element data.
-- [var dataSize: Int](mtlpointertype/datasize.md)
+- [var dataSize: Int](./datasize.md)
   The size, in bytes, of the element data.
-- [var elementType: MTLDataType](mtlpointertype/elementtype.md)
+- [var elementType: MTLDataType](./elementtype.md)
   The data type of the element data.
-- [var access: MTLBindingAccess](mtlpointertype/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The function’s read/write access to the element data.
 
 

@@ -1,7 +1,8 @@
 # noAutoRename
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the network service should not rename itself in the event of a name collision.
 
@@ -19,9 +20,14 @@ Specifies that the network service should not rename itself in the event of a na
 static var noAutoRename: NetService.Options { get }
 ```
 
+```c
+NSNetServiceNoAutoRename
+```
+
 ## See Also
 
-- [static var listenForConnections: NetService.Options](netservice/options/listenforconnections.md)
+### Constants
+- [static var listenForConnections: NetService.Options](./listenforconnections.md)
 
 
 ---

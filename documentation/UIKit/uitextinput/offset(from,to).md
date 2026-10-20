@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the number of UTF-16 characters between one text position and another text position.
@@ -10,13 +11,17 @@ Returns the number of UTF-16 characters between one text position and another te
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func offset(from: UITextPosition, to toPosition: UITextPosition) -> Int
+```
+
+```objc
+- (NSInteger) offsetFromPosition:(UITextPosition *) from toPosition:(UITextPosition *) toPosition;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The number of UTF-16 characters between `fromPosition` and `toPosition`.
 
 ## See Also
 
-- [func compare(UITextPosition, to: UITextPosition) -> ComparisonResult](uitextinput/compare(_:to:).md)
+### Evaluating text positions
+- [func compare(UITextPosition, to: UITextPosition) -> ComparisonResult](./compare%28_,to%29.md)
   Returns how one text position compares to another text position.
 
 

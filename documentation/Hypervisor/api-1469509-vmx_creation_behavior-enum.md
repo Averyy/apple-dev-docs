@@ -1,20 +1,22 @@
 # VMX Creation Behavior
 
-**Framework**: Hypervisor
+**Framework**: Hypervisor  
+**Role**: API Collection
 
 An enumeration that describes VMX creation behavior options.
 
 ## Topics
 
 ### Behavior
-- [var VMX_BASIC_TRUE_CTLS: UInt](vmx_basic_true_ctls.md)
+- [var VMX_BASIC_TRUE_CTLS: UInt](./vmx_basic_true_ctls.md)
   This bit field, in the value returned by the IA32_VMX_BASIC model specific register, determines if it’s possible to disable any VMX controls.
 
 ## See Also
 
-- [VMX Exit Reasons](1469470-vmx-exit-reasons.md)
+### Shared types
+- [VMX Exit Reasons](./api-1469470-vmx-exit-reasons.md)
   An enumertion that describes the VMX exit reasons.
-- [Interrupt request (IRQ) codes](1469442-interrupt_request_irq_codes-enum.md)
+- [Interrupt request (IRQ) codes](./api-1469442-interrupt_request_irq_codes-enum.md)
   An enumeration that describes available interrupt codes.
 
 

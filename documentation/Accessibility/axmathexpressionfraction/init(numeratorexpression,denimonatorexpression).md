@@ -1,7 +1,8 @@
 # init(numeratorExpression:denimonatorExpression:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 init(numeratorExpression: AXMathExpression, denimonatorExpression: AXMathExpression)
+```
+
+```objc
+- (instancetype) initWithNumeratorExpression:(AXMathExpression *) numeratorExpression denimonatorExpression:(AXMathExpression *) denimonatorExpression;
 ```
 
 

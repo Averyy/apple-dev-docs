@@ -1,6 +1,7 @@
 # Managing Location Groups
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Organize business locations into named groups that define which locations an ad group’s targeting applies to in Apple Maps campaigns.
 
@@ -28,12 +29,12 @@ The following terms explain how location groups fit into your targeting strategy
 
 Use location groups to build a targeted geographic strategy for an Apple Maps campaign:
 
-1. **Discover locations.** Call [`Query for Locations`](query-locations.md) with a `brandId` filter to retrieve locations for your brand. Note the `id` values of the locations you want to group.
-2. **Create the group.** Call [`Create Location Group`](create-location-group.md) with a `name`, the `brandId`, and an array of `locationIds`. The `STATIC` groups (built from an explicit `locationIds` list) are `VALID` immediately. The `DYNAMIC` groups (built from `rules`) start in `PENDING` state while the system evaluates membership. Wait for `systemStatus: VALID` before using a `DYNAMIC` group in targeting.
-3. **Verify the group.** Call [`Get Location Group`](get-location-group-by-id.md) to confirm the group was created correctly and all location IDs are present.
+1. **Discover locations.** Call [`Query for Locations`](./query-locations.md) with a `brandId` filter to retrieve locations for your brand. Note the `id` values of the locations you want to group.
+2. **Create the group.** Call [`Create Location Group`](./create-location-group.md) with a `name`, the `brandId`, and an array of `locationIds`. The `STATIC` groups (built from an explicit `locationIds` list) are `VALID` immediately. The `DYNAMIC` groups (built from `rules`) start in `PENDING` state while the system evaluates membership. Wait for `systemStatus: VALID` before using a `DYNAMIC` group in targeting.
+3. **Verify the group.** Call [`Get Location Group`](./get-location-group-by-id.md) to confirm the group was created correctly and all location IDs are present.
 4. **Target the group.** Reference the location group ID in the targeting parameters of an ad group. That restricts delivery for the ad group to the locations in the group.
-5. **Maintain the group.** As brand footprint changes (new store openings, closures, seasonal popups), update the group using [`Update Location Group`](update-location-group.md) to add or remove location IDs without rebuilding your campaign structure. For `DYNAMIC` groups, the system automatically adds new locations that satisfy the group’s rules, so they don’t require a manual update.
-6. **Remove unused groups.** When a group is no longer needed, call [`Delete Location Group`](delete-location-group.md) to clean up. Deletion is permanent. Ad groups targeting a deleted group lose that targeting constraint immediately and continue to serve only if they also target other location groups.
+5. **Maintain the group.** As brand footprint changes (new store openings, closures, seasonal popups), update the group using [`Update Location Group`](./update-location-group.md) to add or remove location IDs without rebuilding your campaign structure. For `DYNAMIC` groups, the system automatically adds new locations that satisfy the group’s rules, so they don’t require a manual update.
+6. **Remove unused groups.** When a group is no longer needed, call [`Delete Location Group`](./delete-location-group.md) to clean up. Deletion is permanent. Ad groups targeting a deleted group lose that targeting constraint immediately and continue to serve only if they also target other location groups.
 
 #### Review Location Group Fields
 
@@ -67,26 +68,27 @@ Location groups enforce the following limits on size and structure:
 
 ## Topics
 
-- [Create Location Group](create-location-group.md)
+- [Create Location Group](./create-location-group.md)
   Create a named group of locations for geographic targeting.
-- [Query Location Groups](query-location-groups.md)
+- [Query Location Groups](./query-location-groups.md)
   Retrieve a paginated list of location groups using filters and sorting.
-- [Get Location Group](get-location-group-by-id.md)
+- [Get Location Group](./get-location-group-by-id.md)
   Retrieve a single location group by its unique identifier.
-- [Update Location Group](update-location-group.md)
+- [Update Location Group](./update-location-group.md)
   Update an existing location group’s name, rules, or location membership.
-- [Delete Location Group](delete-location-group.md)
+- [Delete Location Group](./delete-location-group.md)
   Delete a location group by its unique identifier.
 
 ## See Also
 
-- [Ads on Apple Maps Endpoints](brands-endpoints.md)
+### Ads on Apple Maps
+- [Ads on Apple Maps Endpoints](./brands-endpoints.md)
   Query and retrieve brands, business categories, and creative rejection reasons.
-- [Understanding Locations](locations-overview.md)
+- [Understanding Locations](./locations-overview.md)
   Query and inspect the business locations associated with your brand for use in Apple Maps campaigns.
-- [Brands Data Objects](brands-data-objects.md)
+- [Brands Data Objects](./brands-data-objects.md)
   Reference the request and response objects for brand, location, and location group endpoints.
-- [Brands Data Types](brands-data-types.md)
+- [Brands Data Types](./brands-data-types.md)
   Look up the enumerations and metric types used in Apple Maps campaigns.
 
 

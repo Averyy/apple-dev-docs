@@ -1,17 +1,22 @@
 # managedObjectModel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed object model of the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var managedObjectModel: NSManagedObjectModel? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSManagedObjectModel * managedObjectModel;
 ```
 
 #### Discussion
@@ -31,11 +36,12 @@ In applications built in OS X v10.4, by default the Core Data framework creates 
 
 ## See Also
 
-- [var managedObjectContext: NSManagedObjectContext?](nspersistentdocument/managedobjectcontext.md)
+### Managing the Persistence Objects
+- [var managedObjectContext: NSManagedObjectContext?](./managedobjectcontext.md)
   The managed object context for the document.
-- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md)
+- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](./configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md)
   Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
-- [func persistentStoreType(forFileType: String) -> String](nspersistentdocument/persistentstoretype(forfiletype:).md)
+- [func persistentStoreType(forFileType: String) -> String](./persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
 
 

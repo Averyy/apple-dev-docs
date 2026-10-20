@@ -1,7 +1,8 @@
 # positionOfToken(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a token index into a text position.
 
@@ -17,15 +18,19 @@ Converts a token index into a text position.
 func positionOfToken(at tokenIndex: Int) -> UITextPosition
 ```
 
+```objc
+- (UITextPosition *) positionOfTokenAtIndex:(NSInteger) tokenIndex;
+```
+
 #### Return Value
 
 The text position of the token.
 
 #### Discussion
 
-Use this method to convert a token’s index in the [`tokens`](uisearchtextfield/tokens.md) array into the token’s [`UITextPosition`](uitextposition.md) in the overall contents of the text field. Many [`UITextInput`](uitextinput.md) methods for interacting with text take a [`UITextPosition`](uitextposition.md) or [`UITextRange`](uitextrange.md) (constructed from two text positions) as a parameter.
+Use this method to convert a token’s index in the [`tokens`](./tokens.md) array into the token’s [`UITextPosition`](../uitextposition.md) in the overall contents of the text field. Many [`UITextInput`](../uitextinput.md) methods for interacting with text take a [`UITextPosition`](../uitextposition.md) or [`UITextRange`](../uitextrange.md) (constructed from two text positions) as a parameter.
 
-To select a search token, assign a [`UITextRange`](uitextrange.md) that contains the token’s position to the [`selectedTextRange`](uitextinput/selectedtextrange.md) property.
+To select a search token, assign a [`UITextRange`](../uitextrange.md) that contains the token’s position to the [`selectedTextRange`](../uitextinput/selectedtextrange.md) property.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ To select a search token, assign a [`UITextRange`](uitextrange.md) that contains
 
 ## See Also
 
-- [var tokenBackgroundColor: UIColor!](uisearchtextfield/tokenbackgroundcolor.md)
+### Customizing token behavior
+- [var tokenBackgroundColor: UIColor!](./tokenbackgroundcolor.md)
   The background color for all tokens in the search text field.
-- [func tokens(in: UITextRange) -> [UISearchToken]](uisearchtextfield/tokens(in:).md)
+- [func tokens(in: UITextRange) -> [UISearchToken]](./tokens%28in%29.md)
   Returns the search field’s tokens that are within a given range.
 
 

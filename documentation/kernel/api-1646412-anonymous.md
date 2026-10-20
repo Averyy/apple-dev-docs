@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [TELEPHONY_DOWN_LINE_PHONE](1646412-anonymous/telephony_down_line_phone.md)
-- [TELEPHONY_PHONE_LINE](1646412-anonymous/telephony_phone_line.md)
-- [TELEPHONY_TELEPHONE](1646412-anonymous/telephony_telephone.md)
-- [TELEPHONY_UNDEFINED](1646412-anonymous/telephony_undefined.md)
+- [TELEPHONY_DOWN_LINE_PHONE](./api-1646412-anonymous/telephony_down_line_phone.md)
+- [TELEPHONY_PHONE_LINE](./api-1646412-anonymous/telephony_phone_line.md)
+- [TELEPHONY_TELEPHONE](./api-1646412-anonymous/telephony_telephone.md)
+- [TELEPHONY_UNDEFINED](./api-1646412-anonymous/telephony_undefined.md)
 
 
 ---

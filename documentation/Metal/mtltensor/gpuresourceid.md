@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A handle that represents the GPU resource, which you can store in an argument buffer.
@@ -18,6 +19,10 @@ A handle that represents the GPU resource, which you can store in an argument bu
 
 ```swift
 var gpuResourceID: MTLResourceID { get }
+```
+
+```objc
+@property (readonly) MTLResourceID gpuResourceID;
 ```
 
 

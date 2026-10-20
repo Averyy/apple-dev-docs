@@ -1,7 +1,8 @@
 # stageToken
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque value you use to identify the pipeline stage that generated the reply.
 
@@ -20,7 +21,7 @@ let stageToken: SpotlightSearchTool.SearchReply.StageToken
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 #### Discussion
 
@@ -28,11 +29,12 @@ The Spotlight search tool provides several ways to search content, and implement
 
 ## See Also
 
-- [let queryToken: SpotlightSearchTool.SearchReply.QueryToken](spotlightsearchtool/searchreply/querytoken-swift.property.md)
+### Getting the tokens
+- [let queryToken: SpotlightSearchTool.SearchReply.QueryToken](./querytoken-swift.property.md)
   An opaque value you use to identify the query that generated the reply.
-- [SpotlightSearchTool.SearchReply.QueryToken](spotlightsearchtool/searchreply/querytoken-swift.struct.md)
+- [SpotlightSearchTool.SearchReply.QueryToken](./querytoken-swift.struct.md)
   An opaque type you use to identify a single call to the Spotlight search tool.
-- [SpotlightSearchTool.SearchReply.StageToken](spotlightsearchtool/searchreply/stagetoken-swift.struct.md)
+- [SpotlightSearchTool.SearchReply.StageToken](./stagetoken-swift.struct.md)
   An opaque type you use to identify a single pipeline stage within the Spotlight search tool.
 
 

@@ -1,7 +1,8 @@
 # ActivityCategory
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An activity’s category, such as Entertainment or Social.
 
@@ -19,23 +20,24 @@ struct ActivityCategory
 ## Topics
 
 ### Creating a category
-- [init(token: ActivityCategoryToken)](activitycategory/init(token:).md)
+- [init(token: ActivityCategoryToken)](./activitycategory/init%28token%29.md)
   Initializes the representation with the provided token.
 ### Accessing category identifiers
-- [let localizedDisplayName: String?](activitycategory/localizeddisplayname.md)
+- [let localizedDisplayName: String?](./activitycategory/localizeddisplayname.md)
   A localized display name for the category.
-- [let token: ActivityCategoryToken?](activitycategory/token.md)
+- [let token: ActivityCategoryToken?](./activitycategory/token.md)
   An opaque representation of a category of activities.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias ActivityCategoryToken](activitycategorytoken.md)
+### Categories
+- [typealias ActivityCategoryToken](./activitycategorytoken.md)
   A token that represents a category of app or website activity.
 
 

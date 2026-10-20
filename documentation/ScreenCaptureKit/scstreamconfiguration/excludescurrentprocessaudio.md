@@ -1,7 +1,8 @@
 # excludesCurrentProcessAudio
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to exclude audio from your app during capture.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether to exclude audio from your app during cap
 var excludesCurrentProcessAudio: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL excludesCurrentProcessAudio;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you include your app process in the stream output, you can set this value to [`true`](https://developer.apple.com/documentation/swift/true) to exclude its audio.
+The default value is [`false`](../../Swift/false.md). If you include your app process in the stream output, you can set this value to [`true`](../../Swift/true.md) to exclude its audio.
 
 ## See Also
 
-- [var capturesAudio: Bool](scstreamconfiguration/capturesaudio.md)
+### Configuring audio
+- [var capturesAudio: Bool](./capturesaudio.md)
   A Boolean value that indicates whether to capture audio.
-- [var sampleRate: Int](scstreamconfiguration/samplerate.md)
+- [var sampleRate: Int](./samplerate.md)
   The sample rate for audio capture.
-- [var channelCount: Int](scstreamconfiguration/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   The number of audio channels to capture.
 
 

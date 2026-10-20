@@ -1,7 +1,8 @@
 # ssidMatch
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 SSIDs that identify a network.
 
@@ -19,20 +20,25 @@ SSIDs that identify a network.
 var ssidMatch: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * SSIDMatch;
+```
+
 #### Discussion
 
-An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. If the Service Set Identifier (SSID) of the current primary connected network matches one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the current primary connected network SSID does not factor into the rule match.
+An array of [`NSString`](../../Foundation/nsstring.md) objects. If the Service Set Identifier (SSID) of the current primary connected network matches one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the current primary connected network SSID does not factor into the rule match.
 
 ## See Also
 
-- [var dnsSearchDomainMatch: [String]?](neondemandrule/dnssearchdomainmatch.md)
+### Accessing match parameters
+- [var dnsSearchDomainMatch: [String]?](./dnssearchdomainmatch.md)
   DNS search domains that identify a network.
-- [var dnsServerAddressMatch: [String]?](neondemandrule/dnsserveraddressmatch.md)
+- [var dnsServerAddressMatch: [String]?](./dnsserveraddressmatch.md)
   DNS server addresses that identify a network.
-- [var interfaceTypeMatch: NEOnDemandRuleInterfaceType](neondemandrule/interfacetypematch.md)
+- [var interfaceTypeMatch: NEOnDemandRuleInterfaceType](./interfacetypematch.md)
   An interface type to identify a network.
-- [enum NEOnDemandRuleInterfaceType](neondemandruleinterfacetype.md)
-- [var probeURL: URL?](neondemandrule/probeurl.md)
+- [enum NEOnDemandRuleInterfaceType](../neondemandruleinterfacetype.md)
+- [var probeURL: URL?](./probeurl.md)
   A URL to probe when all other network identifiers match to validate that an expected resource is available.
 
 

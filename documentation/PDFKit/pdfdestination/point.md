@@ -1,7 +1,8 @@
 # point
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the point, in page space, that the destination refers to.
 
@@ -15,8 +16,28 @@ Returns the point, in page space, that the destination refers to.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var point: CGPoint { get }
+```
+
+*macOS*
+
 ```swift
 var point: NSPoint { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) CGPoint point;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSPoint point;
 ```
 
 #### Return Value
@@ -29,9 +50,10 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [var page: PDFPage?](pdfdestination/page.md)
+### Getting Pages and Points
+- [var page: PDFPage?](./page.md)
   Returns the page that the destination refers to.
-- [let kPDFDestinationUnspecifiedValue: CGFloat](kpdfdestinationunspecifiedvalue.md)
+- [let kPDFDestinationUnspecifiedValue: CGFloat](../kpdfdestinationunspecifiedvalue.md)
 
 
 ---

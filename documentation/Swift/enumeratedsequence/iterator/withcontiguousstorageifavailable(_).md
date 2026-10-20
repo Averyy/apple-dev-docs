@@ -1,7 +1,8 @@
 # withContiguousStorageIfAvailable(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a closure on the sequence’s contiguous storage.
 

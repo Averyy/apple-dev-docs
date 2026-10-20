@@ -1,7 +1,8 @@
 # coalescesCompositeSymbologies
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request coalesces multiple codes into one.
 
@@ -26,11 +27,12 @@ The default value for this property is `false`.
 
 ## See Also
 
-- [var symbologies: [BarcodeSymbology]](detectbarcodesrequest/symbologies.md)
+### Configuring a request
+- [var symbologies: [BarcodeSymbology]](./symbologies.md)
   The barcode symbologies that the request detects in an image.
-- [var supportedSymbologies: [BarcodeSymbology]](detectbarcodesrequest/supportedsymbologies.md)
+- [var supportedSymbologies: [BarcodeSymbology]](./supportedsymbologies.md)
   The collection of barcode symbologies that the request can recognize.
-- [enum BarcodeSymbology](barcodesymbology.md)
+- [enum BarcodeSymbology](../barcodesymbology.md)
   The barcode symbologies that the framework detects.
 
 

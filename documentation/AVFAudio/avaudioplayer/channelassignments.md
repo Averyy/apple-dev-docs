@@ -1,7 +1,8 @@
 # channelAssignments
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of channel descriptions for the audio player.
 
@@ -19,17 +20,22 @@ An array of channel descriptions for the audio player.
 var channelAssignments: [AVAudioSessionChannelDescription]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<AVAudioSessionChannelDescription *> * channelAssignments;
+```
+
 ## Mentions
 
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](../routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
 #### Discussion
 
-The default value for this property is `nil`. When the value is non-`nil`, this array must have the same number of channels the [`numberOfChannels`](avaudioplayer/numberofchannels.md) property returns. You can use this property to assign output to play to different channels.
+The default value for this property is `nil`. When the value is non-`nil`, this array must have the same number of channels the [`numberOfChannels`](./numberofchannels.md) property returns. You can use this property to assign output to play to different channels.
 
 ## See Also
 
-- [var numberOfChannels: Int](avaudioplayer/numberofchannels.md)
+### Managing audio channels
+- [var numberOfChannels: Int](./numberofchannels.md)
   The number of audio channels in the player’s audio.
 
 

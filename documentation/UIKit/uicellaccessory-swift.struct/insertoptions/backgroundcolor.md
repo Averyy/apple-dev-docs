@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color to apply to the accessory.
 
@@ -10,7 +11,7 @@ The background color to apply to the accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,11 +25,12 @@ The default value of this property is `nil`, which uses the system default.
 
 ## See Also
 
-- [var isHidden: Bool](uicellaccessory-swift.struct/insertoptions/ishidden.md)
+### Accessing configuration options
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/insertoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/insertoptions/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the accessory.
 
 

@@ -1,7 +1,8 @@
 # setEDRTargetHeadroom(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,15 @@
 func setEDRTargetHeadroom(_ headroom: Float) -> Bool
 ```
 
+```c
+extern bool CGContextSetEDRTargetHeadroom(CGContextRef c, float headroom);
+```
+
 ## See Also
 
-- [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](cgcontext/draw(_:in:by:options:).md)
-- [func resetClip()](cgcontext/resetclip.md)
+### Instance Methods
+- [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](./draw%28_,in,by,options%29.md)
+- [func resetClip()](./resetclip%28%29.md)
 
 
 ---

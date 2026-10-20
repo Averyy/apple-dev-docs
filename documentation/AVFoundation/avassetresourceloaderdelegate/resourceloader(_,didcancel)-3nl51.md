@@ -1,7 +1,8 @@
 # resourceLoader(_:didCancel:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that a prior loading request has been cancelled.
 
@@ -19,6 +20,10 @@ Informs the delegate that a prior loading request has been cancelled.
 optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, didCancel loadingRequest: AVAssetResourceLoadingRequest)
 ```
 
+```objc
+- (void) resourceLoader:(AVAssetResourceLoader *) resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *) loadingRequest;
+```
+
 #### Discussion
 
 Previously issued loading requests can be cancelled when data from the resource is no longer required or when a loading request is superseded by new requests for data from the same resource.
@@ -32,9 +37,10 @@ For example, if to complete a seek operation it becomes necessary to load a rang
 
 ## See Also
 
-- [func resourceLoader(AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource: AVAssetResourceLoadingRequest) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md)
+### Processing resource requests
+- [func resourceLoader(AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource: AVAssetResourceLoadingRequest) -> Bool](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md)
   Asks the delegate if it wants to load the requested resource.
-- [func resourceLoader(AVAssetResourceLoader, shouldWaitForRenewalOfRequestedResource: AVAssetResourceRenewalRequest) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforrenewalofrequestedresource:).md)
+- [func resourceLoader(AVAssetResourceLoader, shouldWaitForRenewalOfRequestedResource: AVAssetResourceRenewalRequest) -> Bool](./resourceloader%28_,shouldwaitforrenewalofrequestedresource%29.md)
   Tells the delegate when assistance is required of the application to renew a resource.
 
 

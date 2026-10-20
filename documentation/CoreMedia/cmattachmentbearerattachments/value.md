@@ -1,7 +1,8 @@
 # CMAttachmentBearerAttachments.Value
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of attachment values.
 
@@ -23,21 +24,22 @@ enum Value
 ## Topics
 
 ### Cases
-- [CMAttachmentBearerAttachments.Value.shouldPropagate(_:)](cmattachmentbearerattachments/value/shouldpropagate(_:).md)
+- [CMAttachmentBearerAttachments.Value.shouldPropagate(_:)](./value/shouldpropagate%28_%29.md)
   A case that indicates to propagate a value.
-- [CMAttachmentBearerAttachments.Value.shouldNotPropagate(_:)](cmattachmentbearerattachments/value/shouldnotpropagate(_:).md)
+- [CMAttachmentBearerAttachments.Value.shouldNotPropagate(_:)](./value/shouldnotpropagate%28_%29.md)
   A case that indicates to not propagate a value.
 ### Properties
-- [var value: Any](cmattachmentbearerattachments/value/value.md)
+- [var value: Any](./value/value.md)
   An attachment value.
-- [var mode: CMAttachmentBearerAttachments.Mode](cmattachmentbearerattachments/value/mode.md)
+- [var mode: CMAttachmentBearerAttachments.Mode](./value/mode.md)
   An attachment mode.
 
 ## See Also
 
-- [subscript(String) -> CMAttachmentBearerAttachments.Value?](cmattachmentbearerattachments/subscript(_:)-8uau0.md)
+### Accessing Attachments
+- [subscript(String) -> CMAttachmentBearerAttachments.Value?](./subscript%28_%29-8uau0.md)
   Gets the value associated with the specified attachment.
-- [subscript(CMSampleBuffer.AttachmentKey) -> CMAttachmentBearerAttachments.Value?](cmattachmentbearerattachments/subscript(_:)-74jgw.md)
+- [subscript(CMSampleBuffer.AttachmentKey) -> CMAttachmentBearerAttachments.Value?](./subscript%28_%29-74jgw.md)
   Gets the value associated with the specified attachment key.
 
 

@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center achievement localization.
 
@@ -10,14 +11,14 @@ The request body you use to create a Game Center achievement localization.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievements`
 
 
 ---

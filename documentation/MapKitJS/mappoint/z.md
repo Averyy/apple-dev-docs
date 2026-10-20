@@ -1,7 +1,8 @@
 # z
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z component of a map point.
 
@@ -10,7 +11,7 @@ The z component of a map point.
 
 ## Declaration
 
-```swift
+```
 z: number;
 ```
 
@@ -20,11 +21,12 @@ The value is always `1`.
 
 ## See Also
 
-- [x](mappoint/x.md)
+### Defining a map point
+- [x](./x.md)
   The location of the map point along the map’s x-axis.
-- [y](mappoint/y.md)
+- [y](./y.md)
   The location of the map point along the map’s y-axis.
-- [w](mappoint/w.md)
+- [w](./w.md)
   The w component of a map point.
 
 

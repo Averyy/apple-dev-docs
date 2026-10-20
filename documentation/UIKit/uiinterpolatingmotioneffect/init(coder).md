@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a motion effect from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a motion effect from data in an unarchiver.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Creates a motion effect from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(keyPath: String, type: UIInterpolatingMotionEffect.EffectType)](uiinterpolatingmotioneffect/init(keypath:type:).md)
+### Initializing a motion effect
+- [init(keyPath: String, type: UIInterpolatingMotionEffect.EffectType)](./init%28keypath,type%29.md)
   Initializes and returns an interpolating motion effect object configured for the specific tilt direction.
 
 

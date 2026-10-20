@@ -1,14 +1,15 @@
 # kINQUIRY_Byte56_Offset
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_Byte56_Offset = 56
 ```
 

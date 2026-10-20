@@ -1,7 +1,8 @@
 # velocity(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Interprets the velocity of the pan gesture in the coordinate system of the specified view.
 
@@ -9,13 +10,17 @@ Interprets the velocity of the pan gesture in the coordinate system of the speci
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func velocity(in view: UIView?) -> CGPoint
+```
+
+```objc
+- (CGPoint) velocityInView:(UIView *) view;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ The velocity of the pan gesture, which is expressed in points per second. The ve
 
 ## See Also
 
-- [func translation(in: UIView?) -> CGPoint](uipangesturerecognizer/translation(in:).md)
+### Tracking the location and velocity of the gesture
+- [func translation(in: UIView?) -> CGPoint](./translation%28in%29.md)
   Interprets the pan gesture in the coordinate system of the specified view.
-- [func setTranslation(CGPoint, in: UIView?)](uipangesturerecognizer/settranslation(_:in:).md)
+- [func setTranslation(CGPoint, in: UIView?)](./settranslation%28_,in%29.md)
   Sets the translation value in the coordinate system of the specified view.
 
 

@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the localized description of the renewal state.
 

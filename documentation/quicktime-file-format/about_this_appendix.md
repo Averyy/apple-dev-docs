@@ -1,6 +1,7 @@
 # About this appendix
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 #### Overview
 
@@ -12,9 +13,10 @@ The feature’s Reader Responsibilities section explains how reading software sh
 
 ## See Also
 
-- [Profile atom ('prfl')](profile_atom.md)
+### Building a profile atom
+- [Profile atom ('prfl')](./profile_atom.md)
   An atom that expresses profiles or feature codes for features that occur in the movie.
-- [Universal features](universal_features.md)
+- [Universal features](./universal_features.md)
   Features that you include in any file that includes a profile atom.
 
 

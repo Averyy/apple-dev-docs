@@ -1,7 +1,8 @@
 # SetPreferredInputChannelLayout
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the input channel layout with IOUserVideoChannelLabel values
 
@@ -10,7 +11,7 @@ Sets the input channel layout with IOUserVideoChannelLabel values
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetPreferredInputChannelLayout(IOUserVideoChannelLabel *in_channel_labels, size_t in_num_channels);
 ```
 
@@ -21,13 +22,14 @@ kern_return_t SetPreferredInputChannelLayout(IOUserVideoChannelLabel *in_channel
 
 ## See Also
 
-- [SetPreferredChannelsForStereo](iouservideodevice/setpreferredchannelsforstereo.md)
+### Working with channel layouts
+- [SetPreferredChannelsForStereo](./setpreferredchannelsforstereo.md)
   Sets the channel indices for the preferred stereo pair
-- [GetPreferredChannelsForStereo](iouservideodevice/getpreferredchannelsforstereo.md)
+- [GetPreferredChannelsForStereo](./getpreferredchannelsforstereo.md)
   Gets the channel indices for the preferred stereo pair.
-- [SetPreferredOutputChannelLayout](iouservideodevice/setpreferredoutputchannellayout.md)
+- [SetPreferredOutputChannelLayout](./setpreferredoutputchannellayout.md)
   Sets the output channel layout.
-- [IOUserVideoChannelLabel](videodriverkit/iouservideochannellabel.md)
+- [IOUserVideoChannelLabel](../videodriverkit-page/iouservideochannellabel.md)
   These constants are to set the preferred channel layout on video device.
 
 

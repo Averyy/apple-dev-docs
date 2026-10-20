@@ -1,27 +1,29 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the data-queue dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [Create](iodataqueuedispatchsource/create.md)
+### Configuring the Dispatch Source
+- [Create](./create.md)
   Creates a dispatch source that you use as a shared-memory data queue.
-- [init](iodataqueuedispatchsource/init.md)
+- [init](./init.md)
   Handles the basic initialization of the dispatch source.
 
 

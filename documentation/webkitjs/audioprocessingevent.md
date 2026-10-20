@@ -1,7 +1,8 @@
 # AudioProcessingEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioProcessingEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [inputBuffer](audioprocessingevent/1631121-inputbuffer.md)
-- [outputBuffer](audioprocessingevent/1630068-outputbuffer.md)
-- [playbackTime](audioprocessingevent/1632226-playbacktime.md)
+- [inputBuffer](./audioprocessingevent/api-1631121-inputbuffer.md)
+- [outputBuffer](./audioprocessingevent/api-1630068-outputbuffer.md)
+- [playbackTime](./audioprocessingevent/api-1632226-playbacktime.md)
 
 ## Relationships
 

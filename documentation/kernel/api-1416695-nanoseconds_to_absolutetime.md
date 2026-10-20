@@ -1,14 +1,15 @@
 # nanoseconds_to_absolutetime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void nanoseconds_to_absolutetime(uint64_t nanoseconds, uint64_t *result);
 ```
 

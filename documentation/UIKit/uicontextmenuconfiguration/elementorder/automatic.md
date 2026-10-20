@@ -1,7 +1,8 @@
 # UIContextMenuConfiguration.ElementOrder.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that allows the system to choose an ordering strategy according to the current context.
 
@@ -18,11 +19,16 @@ A constant that allows the system to choose an ordering strategy according to th
 case automatic
 ```
 
+```c
+UIContextMenuConfigurationElementOrderAutomatic
+```
+
 ## See Also
 
-- [UIContextMenuConfiguration.ElementOrder.priority](uicontextmenuconfiguration/elementorder/priority.md)
+### Constants
+- [UIContextMenuConfiguration.ElementOrder.priority](./priority.md)
   A constant that displays menu elements according to their priority.
-- [UIContextMenuConfiguration.ElementOrder.fixed](uicontextmenuconfiguration/elementorder/fixed.md)
+- [UIContextMenuConfiguration.ElementOrder.fixed](./fixed.md)
   A constant that displays menu elements in a fixed order.
 
 

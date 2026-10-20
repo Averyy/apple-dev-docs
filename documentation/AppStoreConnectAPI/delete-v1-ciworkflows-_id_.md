@@ -1,7 +1,8 @@
 # Delete a workflow
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete an Xcode Cloud workflow and all of its associated data.
 
@@ -18,7 +19,7 @@ https://api.appstoreconnect.apple.com/v1/ciWorkflows/9ad354b0-f380-40d3-b94f-dd5
 
 App Store Connect confirms the deletion by responding with the `HTTP/1.1 204 No Content` HTTP status code.
 
-> ❗ **Important**:  Deleting an Xcode Cloud workflow permanently deletes its build history and artifacts. Only delete an Xcode Cloud workflow when you’re confident that you no longer need it and its build history or artifacts. Instead of deleting a workflow, deactivate it to preserve its build history and artifacts. To deactivate a workflow, use the [`Update an xcode cloud workflow`](patch-v1-ciworkflows-_id_.md) endpoint to set the workflow’s `isEnabled` attribute to `false` or deactivate it in the Xcode or App Store Connect. For more information about deactivating a workflow using Xcode or App Store Connect, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/xcode/developing-a-workflow-strategy-for-xcode-cloud).
+> ❗ **Important**:  Deleting an Xcode Cloud workflow permanently deletes its build history and artifacts. Only delete an Xcode Cloud workflow when you’re confident that you no longer need it and its build history or artifacts. Instead of deleting a workflow, deactivate it to preserve its build history and artifacts. To deactivate a workflow, use the [`Update an xcode cloud workflow`](./patch-v1-ciworkflows-_id_.md) endpoint to set the workflow’s `isEnabled` attribute to `false` or deactivate it in the Xcode or App Store Connect. For more information about deactivating a workflow using Xcode or App Store Connect, see [Developing a workflow strategy for Xcode Cloud](../Xcode/developing-a-workflow-strategy-for-xcode-cloud.md).
 
 ## Endpoint
 
@@ -26,13 +27,25 @@ App Store Connect confirms the deletion by responding with the `HTTP/1.1 204 No 
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Workflows resource.
+
+## Responses
+
+- `204` No Content: The request completed successfully and the specific Workflows resource was deleted.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a workflow](post-v1-ciworkflows.md)
+### Managing Xcode Cloud Workflows
+- [Create a workflow](./post-v1-ciworkflows.md)
   Create a new Xcode Cloud workflow for an Xcode Cloud product.
-- [Update an xcode cloud workflow](patch-v1-ciworkflows-_id_.md)
+- [Update an xcode cloud workflow](./patch-v1-ciworkflows-_id_.md)
   Make changes to an Xcode Cloud workflow.
 
 

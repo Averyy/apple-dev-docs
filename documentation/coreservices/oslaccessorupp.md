@@ -1,7 +1,8 @@
 # OSLAccessorUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLAccessorProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLAccessorProc
 typealias OSLAccessorUPP = OSLAccessorProcPtr
 ```
 
+```c
+typedef OSLAccessorProcPtr OSLAccessorUPP;
+```
+
 #### Discussion
 
-For a description of an object accessor callback function, see [`OSLAccessorProcPtr`](oslaccessorprocptr.md). 
+For a description of an object accessor callback function, see [`OSLAccessorProcPtr`](./oslaccessorprocptr.md). 
 
 
 ---

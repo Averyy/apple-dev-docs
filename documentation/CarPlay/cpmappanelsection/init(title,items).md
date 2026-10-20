@@ -1,7 +1,8 @@
 # init(title:items:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the section with the specified title and items.
 
@@ -14,6 +15,10 @@ Initializes the section with the specified title and items.
 
 ```swift
 init(title: String?, items: [CPMapPanelItem])
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title items:(NSArray<CPMapPanelItem *> *) items;
 ```
 
 #### Return Value

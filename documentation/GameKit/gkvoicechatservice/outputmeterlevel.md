@@ -1,16 +1,19 @@
 # outputMeterLevel
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume, in decibels (db), being received from all other participants.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use SharePlay instead
 
 ## Declaration
 
@@ -18,19 +21,24 @@ The volume, in decibels (db), being received from all other participants.
 var outputMeterLevel: Float { get }
 ```
 
+```objc
+@property (readonly) float outputMeterLevel;
+```
+
 #### Discussion
 
-The value of this property is undefined if [`isOutputMeteringEnabled`](gkvoicechatservice/isoutputmeteringenabled.md) is set to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is undefined if [`isOutputMeteringEnabled`](./isoutputmeteringenabled.md) is set to [`false`](../../Swift/false.md).
 
-The volume level is the aggregate volume of all remote participants, modified by the [`remoteParticipantVolume`](gkvoicechatservice/remoteparticipantvolume.md) property.
+The volume level is the aggregate volume of all remote participants, modified by the [`remoteParticipantVolume`](./remoteparticipantvolume.md) property.
 
 ## See Also
 
-- [var isInputMeteringEnabled: Bool](gkvoicechatservice/isinputmeteringenabled.md)
+### Monitoring the Audio Level
+- [var isInputMeteringEnabled: Bool](./isinputmeteringenabled.md)
   A Boolean value that indicates whether the microphone’s sound level is being monitored.
-- [var inputMeterLevel: Float](gkvoicechatservice/inputmeterlevel.md)
+- [var inputMeterLevel: Float](./inputmeterlevel.md)
   The volume, in decibels (db), being received by the microphone.
-- [var isOutputMeteringEnabled: Bool](gkvoicechatservice/isoutputmeteringenabled.md)
+- [var isOutputMeteringEnabled: Bool](./isoutputmeteringenabled.md)
   A Boolean value that indicates whether the voice level of remote participants is monitored.
 
 

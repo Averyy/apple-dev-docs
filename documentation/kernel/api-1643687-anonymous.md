@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHubPortIndicatorAmber](1643687-anonymous/khubportindicatoramber.md)
-- [kHubPortIndicatorAutomatic](1643687-anonymous/khubportindicatorautomatic.md)
-- [kHubPortIndicatorGreen](1643687-anonymous/khubportindicatorgreen.md)
-- [kHubPortIndicatorOff](1643687-anonymous/khubportindicatoroff.md)
+- [kHubPortIndicatorAmber](./api-1643687-anonymous/khubportindicatoramber.md)
+- [kHubPortIndicatorAutomatic](./api-1643687-anonymous/khubportindicatorautomatic.md)
+- [kHubPortIndicatorGreen](./api-1643687-anonymous/khubportindicatorgreen.md)
+- [kHubPortIndicatorOff](./api-1643687-anonymous/khubportindicatoroff.md)
 
 
 ---

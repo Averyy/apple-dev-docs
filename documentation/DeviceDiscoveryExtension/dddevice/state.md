@@ -1,7 +1,8 @@
 # state
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A state that represents the level of user interaction with the device.
 
@@ -9,7 +10,7 @@ A state that represents the level of user interaction with the device.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A state that represents the level of user interaction with the device.
 var state: DDDeviceState { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) DDDeviceState state;
+```
+
 ## See Also
 
-- [var txtRecord: NWTXTRecord?](dddevice/txtrecord.md)
+### Setting the device state
+- [var txtRecord: NWTXTRecord?](./txtrecord.md)
   A dictionary of metadata for the device that the extension communicates with over the local network.
-- [var url: URL](dddevice/url.md)
+- [var url: URL](./url.md)
   A resource locator for the simple service discovery protocol.
-- [var supportsGrouping: Bool](dddevice/supportsgrouping.md)
+- [var supportsGrouping: Bool](./supportsgrouping.md)
   A Boolean value that indicates whether to group the device with others in the AirPlay UI.
 
 

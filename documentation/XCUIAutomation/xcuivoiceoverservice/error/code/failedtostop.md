@@ -1,24 +1,29 @@
 # XCUIVoiceOverService.Error.Code.failedToStop
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 VoiceOver daemon did not stop within the timeout after @c disable().
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 case failedToStop
+```
+
+```c
+XCUIVoiceOverServiceErrorFailedToStop
 ```
 
 

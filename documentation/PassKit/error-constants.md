@@ -1,37 +1,39 @@
 # Error constants
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: PassKit (Apple Pay and Wallet)  
+**Role**: API Collection
 
 Error code constants for identity operations.
 
 ## Topics
 
 ### Constants
-- [static var cancelled: PKIdentityError.Code](pkidentityerror-swift.struct/cancelled.md)
+- [static var cancelled: PKIdentityError.Code](./pkidentityerror-swift.struct/cancelled.md)
   An error that indicates the user cancels the presented sheet.
-- [static var invalidElement: PKIdentityError.Code](pkidentityerror-swift.struct/invalidelement.md)
+- [static var invalidElement: PKIdentityError.Code](./pkidentityerror-swift.struct/invalidelement.md)
   An error that indicates an element the app requests isn’t valid.
-- [static var invalidNonce: PKIdentityError.Code](pkidentityerror-swift.struct/invalidnonce.md)
+- [static var invalidNonce: PKIdentityError.Code](./pkidentityerror-swift.struct/invalidnonce.md)
   An error that indicates the number is too large or unsuitable.
-- [static var notSupported: PKIdentityError.Code](pkidentityerror-swift.struct/notsupported.md)
+- [static var notSupported: PKIdentityError.Code](./pkidentityerror-swift.struct/notsupported.md)
   An error that indicates the request originates from a device the framework doesn’t support.
-- [static var networkUnavailable: PKIdentityError.Code](pkidentityerror-swift.struct/networkunavailable.md)
+- [static var networkUnavailable: PKIdentityError.Code](./pkidentityerror-swift.struct/networkunavailable.md)
   An error that indicates a network isn’t available.
-- [static var noElementsRequested: PKIdentityError.Code](pkidentityerror-swift.struct/noelementsrequested.md)
+- [static var noElementsRequested: PKIdentityError.Code](./pkidentityerror-swift.struct/noelementsrequested.md)
   An error that indicates the elements aren’t supported.
-- [static var requestAlreadyInProgress: PKIdentityError.Code](pkidentityerror-swift.struct/requestalreadyinprogress.md)
+- [static var requestAlreadyInProgress: PKIdentityError.Code](./pkidentityerror-swift.struct/requestalreadyinprogress.md)
   An error that indicates a request is already in progress.
-- [static var unknown: PKIdentityError.Code](pkidentityerror-swift.struct/unknown.md)
+- [static var unknown: PKIdentityError.Code](./pkidentityerror-swift.struct/unknown.md)
   An error that indicates an unknown error.
 
 ## See Also
 
-- [static var errorDomain: String](pkidentityerror-swift.struct/errordomain.md)
-- [PKIdentityError.Code](pkidentityerror-swift.struct/code.md)
+### Inspecting an error
+- [static var errorDomain: String](./pkidentityerror-swift.struct/errordomain.md)
+- [PKIdentityError.Code](./pkidentityerror-swift.struct/code.md)
   Error codes for identity operations.
-- [var errorCode: Int](../foundation/customnserror/errorcode-2opgi.md)
+- [var errorCode: Int](../Foundation/customnserror/errorcode-2opgi.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo-1aas5.md)
+- [var errorUserInfo: [String : Any]](../Foundation/customnserror/erroruserinfo-1aas5.md)
   The default user-info dictionary.
 
 

@@ -1,7 +1,8 @@
 # playerViewController
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player view controller that presents a content proposal.
 
@@ -12,6 +13,10 @@ The player view controller that presents a content proposal.
 
 ```swift
 weak var playerViewController: AVPlayerViewController? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) AVPlayerViewController * playerViewController;
 ```
 
 #### Discussion

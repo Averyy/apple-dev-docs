@@ -1,18 +1,19 @@
 # uptimeNanoseconds
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of nanoseconds since boot, excluding any time the system spent asleep.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ var uptimeNanoseconds: UInt64 { get }
 
 ## See Also
 
-- [let rawValue: dispatch_time_t](dispatchtime/rawvalue.md)
+### Getting the Time
+- [let rawValue: dispatch_time_t](./rawvalue.md)
   Returns the underlying time value.
 
 

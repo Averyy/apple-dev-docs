@@ -1,7 +1,8 @@
 # RecordLabelsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request for record labels.
 
@@ -10,7 +11,7 @@ The response to a request for record labels.
 
 ## Declaration
 
-```swift
+```
 object RecordLabelsResponse
 ```
 
@@ -20,7 +21,8 @@ object RecordLabelsResponse
 
 ## See Also
 
-- [object RecordLabels](recordlabels.md)
+### Handling the Response
+- [object RecordLabels](./recordlabels.md)
   A resource object that represents a record label.
 
 

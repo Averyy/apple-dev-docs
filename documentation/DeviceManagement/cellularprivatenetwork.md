@@ -1,7 +1,8 @@
 # CellularPrivateNetwork
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
 
@@ -12,7 +13,7 @@ The payload that provides device info on private network deployments, including 
 
 ## Declaration
 
-```swift
+```
 object CellularPrivateNetwork
 ```
 
@@ -20,7 +21,7 @@ object CellularPrivateNetwork
 
 Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, Shared iPad |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -92,38 +93,51 @@ Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 ## Topics
 
 ### Objects
-- [object CellularPrivateNetwork.GeofenceItem](cellularprivatenetwork/geofenceitem.md)
+- [object CellularPrivateNetwork.GeofenceItem](./cellularprivatenetwork/geofenceitem.md)
   A geofence for a private network.
 
 ## Properties
 
 - `CellularDataPreferred` (boolean): Set to `true` to prefer this private network over Wi-Fi.
-- `CsgNetworkIdentifier` (string): A string using the 3GPP “CSG_ID” format (defined in 3GPP 23.003, Section 4.7). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device. Available: iOS 18+ | iPadOS 18+
+
+  **Default**: `false`
+- `CsgNetworkIdentifier` (string): A string using the 3GPP “CSG_ID” format (defined in 3GPP 23.003, Section 4.7). The device uses this value to match a SIM present on the device.
+
+  All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device.
+
+  Available: iOS 18+ | iPadOS 18+
 - `DataSetName` (string) *(required)*: The name of the private network configuration data set.
 - `EnableNRStandalone` (boolean): Set to `true` if this private network is NR Standalone.
+
+  **Default**: `false`
 - `Geofences` ([CellularPrivateNetwork.GeofenceItem]): A list of up to 1000 geofences for private networks. Geofencing is only used on iPhone.
-- `NetworkIdentifier` (string): A string using the 3GPP “Coordinated NID” (option 1 or option 2) format (defined in 3GPP 31.102, Section 12.7.1). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device. Available: iOS 18+ | iPadOS 18+
+- `NetworkIdentifier` (string): A string using the 3GPP “Coordinated NID” (option 1 or option 2) format (defined in 3GPP 31.102, Section 12.7.1). The device uses this value to match a SIM present on the device.
+
+  All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device.
+
+  Available: iOS 18+ | iPadOS 18+
 - `VersionNumber` (string) *(required)*: The version number of this dataset that the system uses to track updates.
 
 ## See Also
 
-- [object Cellular](cellular.md)
+### Networking
+- [object Cellular](./cellular.md)
   The payload that configures cellular settings.
-- [object ContentCachingService](contentcachingservice.md)
+- [object ContentCachingService](./contentcachingservice.md)
   The payload that configures the Content Caching service.
-- [object DNSSettings](dnssettings.md)
+- [object DNSSettings](./dnssettings.md)
   The payload that configures encrypted DNS settings.
-- [object Domains](domains.md)
+- [object Domains](./domains.md)
   The payload that configures the domains under an organization’s management.
-- [object Firewall](firewall.md)
+- [object Firewall](./firewall.md)
   The payload that configures the firewall.
-- [object NetworkUsageRules](networkusagerules.md)
+- [object NetworkUsageRules](./networkusagerules.md)
   The payload that configures network-usage rules.
-- [object Relay](relay.md)
+- [object Relay](./relay.md)
   The payload that configures relay settings.
-- [object WiFi](wifi.md)
+- [object WiFi](./wifi.md)
   The payload that configures Wi-Fi settings.
-- [object WiFiManagedSettings](wifimanagedsettings.md)
+- [object WiFiManagedSettings](./wifimanagedsettings.md)
   The payload that configures managed Wi-Fi settings.
 
 

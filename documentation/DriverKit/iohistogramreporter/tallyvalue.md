@@ -1,25 +1,27 @@
 # tallyValue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 int tallyValue(int64_t value);
 ```
 
 ## See Also
 
-- [addChannel](iohistogramreporter/addchannel.md)
-- [initWith](iohistogramreporter/initwith.md)
-- [overrideBucketValues](iohistogramreporter/overridebucketvalues.md)
+### Instance Methods
+- [addChannel](./addchannel.md)
+- [initWith](./initwith.md)
+- [overrideBucketValues](./overridebucketvalues.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # select(predicate:trueTensor:falseTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects values from either the true or false predicate tensor, depending on the values in the first input.
 
@@ -17,6 +18,10 @@ Selects values from either the true or false predicate tensor, depending on the 
 
 ```swift
 func select(predicate predicateTensor: MPSGraphTensor, trueTensor truePredicateTensor: MPSGraphTensor, falseTensor falseSelectTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) selectWithPredicateTensor:(MPSGraphTensor *) predicateTensor truePredicateTensor:(MPSGraphTensor *) truePredicateTensor falsePredicateTensor:(MPSGraphTensor *) falseSelectTensor name:(NSString *) name;
 ```
 
 #### Return Value

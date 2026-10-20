@@ -1,7 +1,8 @@
 # PHASEPullStreamNode
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,10 @@
 class PHASEPullStreamNode
 ```
 
+```objc
+@interface PHASEPullStreamNode : PHASEStreamNode
+```
+
 #### Overview
 
 ---
@@ -26,19 +31,19 @@ An object for addessing an instance of a stream in an executing sound event
 ## Topics
 
 ### Instance Properties
-- [var renderHandler: PHASEPullStreamRenderHandler](phasepullstreamnode/renderhandler.md)
+- [var renderHandler: PHASEPullStreamRenderHandler](./phasepullstreamnode/renderhandler.md)
 
 ## Relationships
 
 ### Inherits From
-- [PHASEStreamNode](phasestreamnode.md)
+- [PHASEStreamNode](./phasestreamnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

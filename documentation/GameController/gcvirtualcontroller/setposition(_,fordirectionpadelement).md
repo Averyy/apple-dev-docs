@@ -1,7 +1,8 @@
 # setPosition(_:forDirectionPadElement:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the value of a directional pad element in the virtual controller.
 
@@ -16,9 +17,13 @@ Changes the value of a directional pad element in the virtual controller.
 func setPosition(_ position: CGPoint, forDirectionPadElement element: String)
 ```
 
+```objc
+- (void) setPosition:(CGPoint) position forDirectionPadElement:(NSString *) element;
+```
+
 #### Discussion
 
-Use this method to update the value of a directional pad in the virtual controller when you set the [`isHidden`](gcvirtualcontroller/configuration/ishidden.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and present your own virtual controller interface.
+Use this method to update the value of a directional pad in the virtual controller when you set the [`isHidden`](./configuration/ishidden.md) property to [`true`](../../Swift/true.md) and present your own virtual controller interface.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ Use this method to update the value of a directional pad in the virtual controll
 
 ## See Also
 
-- [func setValue(CGFloat, forButtonElement: String)](gcvirtualcontroller/setvalue(_:forbuttonelement:).md)
+### Presenting a custom interface
+- [func setValue(CGFloat, forButtonElement: String)](./setvalue%28_,forbuttonelement%29.md)
   Changes the value of a button element in the virtual controller.
 
 

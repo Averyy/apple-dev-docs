@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 **Availability**:

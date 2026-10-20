@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the primitive to the intersection of itself and the specified primitive.
@@ -24,6 +25,12 @@ mutating func formIntersection(_ other: Self)
 ## Parameters
 
 - `other`: The second primitive.
+
+## Default Implementations
+
+### VolumetricProtocol Implementations
+- [func formIntersection(Self)](./formintersection%28_%29-4kg4w.md)
+  Sets the primitive to the intersection of itself and the specified primitive.
 
 
 ---

@@ -1,6 +1,8 @@
 # Updating collection views using diffable data sources
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [UpdatingCollectionViewsUsingDiffableDataSources.zip](https://docs-assets.developer.apple.com/published/70021f020614/UpdatingCollectionViewsUsingDiffableDataSources.zip)
 
 Streamline the display and update of data in a collection view using a diffable data source that contains identifiers.
 
@@ -14,19 +16,19 @@ Streamline the display and update of data in a collection view using a diffable 
 
 A *collection view* presents data in the form of sections and items, and an app that displays data in a collection view inserts those sections and items into the view. The app may also need to handle deleting or moving sections and items. For instance, the sample app in this project displays recipes in a collection view, and people using the app can add and delete recipes, and mark recipes as favorites. To support these actions, the sample app handles inserting, deleting, moving, and updating data within a collection view.
 
-When populating a collection view in an app, you can create a custom data source that adopts the [`UICollectionViewDataSource`](uicollectionviewdatasource.md) protocol. To keep the information in the collection view current, you determine what data changed and perform a batch update based on those changes, a process that requires careful coordination of inserts, deletes, and moves.
+When populating a collection view in an app, you can create a custom data source that adopts the [`UICollectionViewDataSource`](./uicollectionviewdatasource.md) protocol. To keep the information in the collection view current, you determine what data changed and perform a batch update based on those changes, a process that requires careful coordination of inserts, deletes, and moves.
 
-To avoid the complexity of that process, the sample app uses a [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) object. A *diffable data source* stores a list of section and item *identifiers*, which represents the identity of each section and item contained in a collection view. These identifiers are stable, meaning they don’t change. In contrast, a custom data source that conforms to [`UICollectionViewDataSource`](uicollectionviewdatasource.md) uses *indices* and *index paths*, which aren’t stable. They represent the location of sections and items, which can change as the data source adds, removes, and rearranges the contents of a collection view. However, with identifiers a diffable data source can refer to a section or item without knowledge of its location within a collection view.
+To avoid the complexity of that process, the sample app uses a [`UICollectionViewDiffableDataSource`](./uicollectionviewdiffabledatasource-9tqpa.md) object. A *diffable data source* stores a list of section and item *identifiers*, which represents the identity of each section and item contained in a collection view. These identifiers are stable, meaning they don’t change. In contrast, a custom data source that conforms to [`UICollectionViewDataSource`](./uicollectionviewdatasource.md) uses *indices* and *index paths*, which aren’t stable. They represent the location of sections and items, which can change as the data source adds, removes, and rearranges the contents of a collection view. However, with identifiers a diffable data source can refer to a section or item without knowledge of its location within a collection view.
 
-> **Note**: This sample uses collection views to display data, but the concepts covered in this sample apply to table views as well. For more information about using a diffable data source with a table view, see [`UITableViewDiffableDataSource`](uitableviewdiffabledatasource-2euir.md).
+> **Note**: This sample uses collection views to display data, but the concepts covered in this sample apply to table views as well. For more information about using a diffable data source with a table view, see [`UITableViewDiffableDataSource`](./uitableviewdiffabledatasource-2euir.md).
 
-To use a value as an identifier, its data type must conform to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol. Hashing allows data collections such as [`Set`](https://developer.apple.com/documentation/swift/set), [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary), and snapshots — instances of [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md) and [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md) — to use values as keys, providing quick and efficient lookups. Hashable types also conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol, so your identifiers must properly implement equality. For more information, see [`Equatable`](https://developer.apple.com/documentation/swift/equatable)`.`
+To use a value as an identifier, its data type must conform to the [`Hashable`](../Swift/hashable.md) protocol. Hashing allows data collections such as [`Set`](../Swift/set.md), [`Dictionary`](../Swift/dictionary.md), and snapshots — instances of [`NSDiffableDataSourceSnapshot`](./nsdiffabledatasourcesnapshot-swift.struct.md) and [`NSDiffableDataSourceSectionSnapshot`](./nsdiffabledatasourcesectionsnapshot-swift.struct.md) — to use values as keys, providing quick and efficient lookups. Hashable types also conform to the [`Equatable`](../Swift/equatable.md) protocol, so your identifiers must properly implement equality. For more information, see [`Equatable`](../Swift/equatable.md)`.`
 
 Because identifiers are hashable and equatable, a diffable data source can determine the differences between its current snapshot and another snapshot. Then it can insert, delete, and move sections and items within a collection view for you based on those differences, eliminating the need for custom code that performs batch updates.
 
 > ❗ **Important**: Two identifiers that are equal must always have the same hash value. However, the converse isn’t true; two values with the same hash value aren’t required to be equal. This situation is called a *hash collision*. To increase efficiency, try to ensure that unequal identifiers have different hash values. The occasional hash collision is okay when it’s unavoidable, but keep the number of collisions to a minimum. Otherwise, the performance of lookups in the data collection may suffer.
 
-##### Define the Diffable Data Source
+##### Define the diffable data source
 
 In this sample project, `RecipeListViewController` displays a list of recipes in a collection view. Before the controller can display the recipes, it defines an instance variable to store a diffable data source.
 
@@ -36,7 +38,7 @@ private var recipeListDataSource: UICollectionViewDiffableDataSource<RecipeListS
 
 `RecipeListViewController` declares `recipeListDataSource` with `RecipeListSection` as the section identifier type, and `Recipe.ID` as the item identifier type. These identifier types tell the data source the type of values it contains.
 
-For the section identifier type, `recipeListDataSource` uses `RecipeListSection`, an enumeration with a raw value of type [`Int`](https://developer.apple.com/documentation/swift/int) (in Swift, `Int` is hashable). Each enumeration case identifies a section of the collection view. In the sample, there’s only one section, `main`, which displays a list of recipes.
+For the section identifier type, `recipeListDataSource` uses `RecipeListSection`, an enumeration with a raw value of type [`Int`](../Swift/int.md) (in Swift, `Int` is hashable). Each enumeration case identifies a section of the collection view. In the sample, there’s only one section, `main`, which displays a list of recipes.
 
 ```swift
 private enum RecipeListSection: Int {
@@ -62,23 +64,23 @@ struct Recipe: Identifiable, Codable {
 }
 ```
 
-This structure conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, which requires the structure to include an [`id`](https://developer.apple.com/documentation/swift/identifiable/id-8t2ws) property. By conforming to `Identifiable`, the `Recipe` structure automatically exposes the associated type [`ID`](https://developer.apple.com/documentation/swift/identifiable/id-swift.associatedtype), which is a type determined based on the declaration of the `id` property in the structure. And because this type must be hashable, the sample app can use `Recipe.ID` as the item identifier type.
+This structure conforms to the [`Identifiable`](../Swift/identifiable.md) protocol, which requires the structure to include an [`id`](../Swift/identifiable/id-8t2ws.md) property. By conforming to `Identifiable`, the `Recipe` structure automatically exposes the associated type [`ID`](../Swift/identifiable/id-swift.associatedtype.md), which is a type determined based on the declaration of the `id` property in the structure. And because this type must be hashable, the sample app can use `Recipe.ID` as the item identifier type.
 
 > **Note**: The `Recipe` structure doesn’t conform to the `Hashable` protocol. The structure doesn’t have to be hashable because the items stored in the diffable data source and the snapshots are recipe *identifiers* (`Recipe.ID` values the backing data store provides for each recipe), not complete recipe structures.
 
 Using the `Recipe.ID` as the item identifier type for the `recipeListDataSource` means that the data source, and any snapshots applied to it, contains only `Recipe.ID` values and not the complete recipe data. This approach optimizes the diffable data source for peak performance when displaying recipes in a collection view because the identifier type is a simple, hashable type.
 
-##### Configure the Diffable Data Source
+##### Configure the diffable data source
 
-Before populating a collection view with data from a diffable data source, the sample app configures the data source. The app creates an instance of [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) and sets its *cell provider*, a closure that configures and returns a cell for the collection view.
+Before populating a collection view with data from a diffable data source, the sample app configures the data source. The app creates an instance of [`UICollectionViewDiffableDataSource`](./uicollectionviewdiffabledatasource-9tqpa.md) and sets its *cell provider*, a closure that configures and returns a cell for the collection view.
 
-`RecipeListViewController` configures `recipeListDataSource` in a helper method named `configureDataSource()`. The view controller calls this method in its [`viewDidLoad()`](uiviewcontroller/viewdidload().md) method.
+`RecipeListViewController` configures `recipeListDataSource` in a helper method named `configureDataSource()`. The view controller calls this method in its [`viewDidLoad()`](./uiviewcontroller/viewdidload%28%29.md) method.
 
 The `configureDataSource()` method creates a cell registration and provides a handler closure that configures each cell with data from a recipe. The closure receives an instance of `Recipe`, which it uses to configure the cell.
 
 > **Note**: The item type for a cell registration doesn’t have to match the item identifier type that the diffable data source uses.
 
-Next, `configureDataSource()` creates an instance of [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) and defines the cell provider closure. The closure receives the identifier of a recipe. It then retrieves the recipe from the backing data store (using the identifier) and passes the recipe structure to the cell registration’s handler closure.
+Next, `configureDataSource()` creates an instance of [`UICollectionViewDiffableDataSource`](./uicollectionviewdiffabledatasource-9tqpa.md) and defines the cell provider closure. The closure receives the identifier of a recipe. It then retrieves the recipe from the backing data store (using the identifier) and passes the recipe structure to the cell registration’s handler closure.
 
 ```swift
 private func configureDataSource() {
@@ -115,9 +117,9 @@ private func configureDataSource() {
 }
 ```
 
-##### Load the Diffable Data Source with Identifiers
+##### Load the diffable data source with identifiers
 
-With the diffable data source configured, `RecipeListViewController` calls its helper method `loadRecipeData()` to perform an initial load of data into the data source, which in turn populates a collection view with recipes. This method retrieves a list of recipe identifiers and creates an instance of  [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md). Then it adds the `main` section and recipe identifiers to the snapshot. Lastly, the method calls [`applySnapshotUsingReloadData(_:)`](uicollectionviewdiffabledatasource-9tqpa/applysnapshotusingreloaddata(_:).md) to apply the snapshot to the data source, resetting the collection view to reflect the state of the data in the snapshot without computing a diff or animating the changes.
+With the diffable data source configured, `RecipeListViewController` calls its helper method `loadRecipeData()` to perform an initial load of data into the data source, which in turn populates a collection view with recipes. This method retrieves a list of recipe identifiers and creates an instance of  [`NSDiffableDataSourceSnapshot`](./nsdiffabledatasourcesnapshot-swift.struct.md). Then it adds the `main` section and recipe identifiers to the snapshot. Lastly, the method calls [`applySnapshotUsingReloadData(_:)`](./uicollectionviewdiffabledatasource-9tqpa/applysnapshotusingreloaddata%28_%29.md) to apply the snapshot to the data source, resetting the collection view to reflect the state of the data in the snapshot without computing a diff or animating the changes.
 
 ```swift
 private func loadRecipeData() {
@@ -137,7 +139,7 @@ private func loadRecipeData() {
 
 > ❗ **Important**: Each item identifier must be unique within a snapshot. As a result, an item identifier can’t appear in multiple locations within a snapshot. The same is true of section identifiers; they must be unique and can’t exist in multiple places within a snapshot.
 
-##### Insert Delete and Move Items
+##### Insert, delete, and move items
 
 People using the sample app can make two types of changes to the recipe data:
 
@@ -148,7 +150,7 @@ To handle changes to a data collection, the app creates a new snapshot that repr
 
 While a diffable data source can determine the changes between its current snapshot and a new one, it doesn’t monitor the data collection for changes. Instead, it’s the responsibility of the app to detect data changes and tell the diffable data source about those changes, by applying a new snapshot.
 
-> **Note**: An app can use different mechanisms, such as [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) and [`Combine`](https://developer.apple.com/documentation/combine), to report data changes to other parts of the app. This sample uses `NotificationCenter`.
+> **Note**: An app can use different mechanisms, such as [`NotificationCenter`](../Foundation/notificationcenter.md) and [Combine](../Combine/Combine.md), to report data changes to other parts of the app. This sample uses `NotificationCenter`.
 
 To inform other parts of the app that the list of recipes changed — for instance, after someone adds or removes a recipe — the sample uses a notification center to send a `selectedRecipesDidChange` notification. To receive the notification, `RecipeListViewController` adds a notification observer with `selectedRecipesDidChange(_:)` as its selector.
 
@@ -161,7 +163,7 @@ NotificationCenter.default.addObserver(
 )
 ```
 
-`selectedRecipesDidChange(_:)` is similar to `loadRecipeData()` but it uses [`apply(_:animatingDifferences:)`](uicollectionviewdiffabledatasource-9tqpa/apply(_:animatingdifferences:).md) to apply the list of selected recipe identifiers that the notification provides instead of using [`applySnapshotUsingReloadData(_:)`](uicollectionviewdiffabledatasource-9tqpa/applysnapshotusingreloaddata(_:).md). The [`apply(_:animatingDifferences:)`](uicollectionviewdiffabledatasource-9tqpa/apply(_:animatingdifferences:).md) method performs incremental updates to the collection view instead of entirely resetting the data displayed. And because `animatingDifferences` is `true`, the collection view animates the changes as they appear.
+`selectedRecipesDidChange(_:)` is similar to `loadRecipeData()` but it uses [`apply(_:animatingDifferences:)`](./uicollectionviewdiffabledatasource-9tqpa/apply%28_,animatingdifferences%29.md) to apply the list of selected recipe identifiers that the notification provides instead of using [`applySnapshotUsingReloadData(_:)`](./uicollectionviewdiffabledatasource-9tqpa/applysnapshotusingreloaddata%28_%29.md). The [`apply(_:animatingDifferences:)`](./uicollectionviewdiffabledatasource-9tqpa/apply%28_,animatingdifferences%29.md) method performs incremental updates to the collection view instead of entirely resetting the data displayed. And because `animatingDifferences` is `true`, the collection view animates the changes as they appear.
 
 ```swift
 @objc
@@ -191,9 +193,9 @@ private func selectedRecipesDidChange(_ notification: Notification) {
 }
 ```
 
-##### Update Existing Items
+##### Update existing items
 
-To handle changes to the properties of an existing item, an app retrieves the current snapshot from the diffable data source and calls either [`reconfigureItems(_:)`](nsdiffabledatasourcesnapshot-swift.struct/reconfigureitems(_:).md) or [`reloadItems(_:)`](nsdiffabledatasourcesnapshot-swift.struct/reloaditems(_:).md) on the snapshot. Then it applies the snapshot to the diffable data source, which updates the display of the specified items.
+To handle changes to the properties of an existing item, an app retrieves the current snapshot from the diffable data source and calls either [`reconfigureItems(_:)`](./nsdiffabledatasourcesnapshot-swift.struct/reconfigureitems%28_%29.md) or [`reloadItems(_:)`](./nsdiffabledatasourcesnapshot-swift.struct/reloaditems%28_%29.md) on the snapshot. Then it applies the snapshot to the diffable data source, which updates the display of the specified items.
 
 Again, the app, not the diffable data source, detects the data changes.
 
@@ -210,7 +212,7 @@ NotificationCenter.default.addObserver(
 
 The `recipeDidChange` notification indicates that data for a single recipe changed. Because only one recipe changed, there’s no need to update the entire list of recipes shown in the collection view. Instead, the sample only updates the cell that displays the recipe that changed. For instance, when a person marks a recipe as a favorite, an icon of a heart appears beside that recipe. And when the person unmarks the recipe as a favorite, the heart disappears.
 
-To update the cell with the latest recipe data, the `recipeDidChange(_:)` method confirms that the diffable data source contains the recipe identifier that the notification provides. Then the method retrieves the current snapshot from the data source and calls [`reconfigureItems(_:)`](nsdiffabledatasourcesnapshot-swift.struct/reconfigureitems(_:).md), passing in the recipe identifier. This call tells the data source to update the data displayed in the cell identified by the recipe identifier. Finally, `recipeDidChange(_:)` applies the updated snapshot to the data source.
+To update the cell with the latest recipe data, the `recipeDidChange(_:)` method confirms that the diffable data source contains the recipe identifier that the notification provides. Then the method retrieves the current snapshot from the data source and calls [`reconfigureItems(_:)`](./nsdiffabledatasourcesnapshot-swift.struct/reconfigureitems%28_%29.md), passing in the recipe identifier. This call tells the data source to update the data displayed in the cell identified by the recipe identifier. Finally, `recipeDidChange(_:)` applies the updated snapshot to the data source.
 
 ```swift
 @objc
@@ -233,9 +235,9 @@ private func recipeDidChange(_ notification: Notification) {
 
 The diffable data source compares the updated snapshot to its current snapshot and applies the difference — in this instance, a request to reconfigure the item that displays the recipe that changed. To fulfill the request, the data source invokes its cell provider closure, which retrieves the updated recipe and configures the cell with the latest recipe data. And because `animatingDifferences` is `true` when applying the snapshot, the collection view animates the visual change of the cell by showing or hiding the heart icon.
 
-##### Populate Snapshots with Lightweight Data Structures
+##### Populate snapshots with lightweight data structures
 
-An alternative approach to storing identifiers involves populating diffable data sources and snapshots with lightweight data structures. While the data structure approach is convenient and can be a good fit in some circumstances — like for quick prototyping, or displaying a collection of static items with properties that don’t change — it carries significant limitations and tradeoffs. For instance, the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) and [`Equatable`](https://developer.apple.com/documentation/swift/equatable) implementations must incorporate all properties of the structure that can change. Any changes to the data in the structure cause it to no longer be equal to the previous version, which the diffable data source uses to determine what changed when applying a new snapshot.
+An alternative approach to storing identifiers involves populating diffable data sources and snapshots with lightweight data structures. While the data structure approach is convenient and can be a good fit in some circumstances — like for quick prototyping, or displaying a collection of static items with properties that don’t change — it carries significant limitations and tradeoffs. For instance, the [`Hashable`](../Swift/hashable.md) and [`Equatable`](../Swift/equatable.md) implementations must incorporate all properties of the structure that can change. Any changes to the data in the structure cause it to no longer be equal to the previous version, which the diffable data source uses to determine what changed when applying a new snapshot.
 
 The sample uses this approach to show items in a sidebar. In `SidebarViewController`, the custom structure `SidebarItem` defines the properties of a sidebar item, which are `title` and `type`.
 
@@ -267,27 +269,28 @@ The downside of this approach is that the diffable data source can no longer tra
 
 Also, if `animatingDifferences` is `true` when applying the snapshot, every change requires the process of animating out the old cell and animating in a new cell, which can be detrimental to performance and cause loss of UI state, including animations, within the cell.
 
-Additionally, this strategy precludes using the [`reconfigureItems(_:)`](nsdiffabledatasourcesnapshot-swift.struct/reconfigureitems(_:).md) or [`reloadItems(_:)`](nsdiffabledatasourcesnapshot-swift.struct/reloaditems(_:).md) methods when populating a snapshot with data structures, because those methods require the use of proper identifiers. The only mechanism to update the data for existing items is to apply a new snapshot containing the new data structures, which causes the diffable data source to perform a delete and an insert for each changed item.
+Additionally, this strategy precludes using the [`reconfigureItems(_:)`](./nsdiffabledatasourcesnapshot-swift.struct/reconfigureitems%28_%29.md) or [`reloadItems(_:)`](./nsdiffabledatasourcesnapshot-swift.struct/reloaditems%28_%29.md) methods when populating a snapshot with data structures, because those methods require the use of proper identifiers. The only mechanism to update the data for existing items is to apply a new snapshot containing the new data structures, which causes the diffable data source to perform a delete and an insert for each changed item.
 
 Storing data structures directly into diffable data sources and snapshots isn’t a robust solution for many real-world use cases because the data source loses the ability to track identity. Only use this approach for simple use cases in which items don’t change, like the sidebar items in this sample, or when the identity of an item isn’t important. For all other use cases, or when in doubt as to which approach to use, populate diffable data sources and snapshots with proper identifiers.
 
 ## See Also
 
-- [Implementing modern collection views](implementing-modern-collection-views.md)
+### Data
+- [Implementing modern collection views](./implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
-- [Building high-performance lists and collection views](building-high-performance-lists-and-collection-views.md)
+- [Building high-performance lists and collection views](./building-high-performance-lists-and-collection-views.md)
   Improve the performance of lists and collections in your app with prefetching and image preparation.
-- [class UICollectionViewDiffableDataSource](uicollectionviewdiffabledatasource-9tqpa.md)
+- [class UICollectionViewDiffableDataSource](./uicollectionviewdiffabledatasource-9tqpa.md)
   The object you use to manage data and provide cells for a collection view.
-- [protocol UICollectionViewDataSource](uicollectionviewdatasource.md)
+- [protocol UICollectionViewDataSource](./uicollectionviewdatasource.md)
   The methods adopted by the object you use to manage data and provide cells for a collection view.
-- [protocol UICollectionViewDataSourcePrefetching](uicollectionviewdatasourceprefetching.md)
+- [protocol UICollectionViewDataSourcePrefetching](./uicollectionviewdatasourceprefetching.md)
   A protocol that provides advance warning of the data requirements for a collection view, allowing the triggering of asynchronous data load operations.
-- [struct NSDiffableDataSourceSnapshot](nsdiffabledatasourcesnapshot-swift.struct.md)
+- [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
-- [struct NSDiffableDataSourceSectionSnapshot](nsdiffabledatasourcesectionsnapshot-swift.struct.md)
+- [struct NSDiffableDataSourceSectionSnapshot](./nsdiffabledatasourcesectionsnapshot-swift.struct.md)
   A representation of the state of the data in a layout section at a specific point in time.
-- [class UIRefreshControl](uirefreshcontrol.md)
+- [class UIRefreshControl](./uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
 
 

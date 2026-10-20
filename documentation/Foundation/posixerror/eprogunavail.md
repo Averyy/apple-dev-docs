@@ -1,7 +1,8 @@
 # EPROGUNAVAIL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 RPC prog. not avail.
 

@@ -1,7 +1,8 @@
 # init(integrityCheckedRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a private key from an integrity-checked data representation.
 
@@ -26,9 +27,10 @@ init<D>(integrityCheckedRepresentation: D) throws where D : DataProtocol
 
 ## See Also
 
-- [init() throws](mldsa87/privatekey/init.md)
+### Creating a private key
+- [init() throws](./init%28%29.md)
   Creates a random MLDSA87 private key.
-- [init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws](mldsa87/privatekey/init(seedrepresentation:publickey:).md)
+- [init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws](./init%28seedrepresentation,publickey%29.md)
   Initializes a private key from the seed representation.
 
 

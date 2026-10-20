@@ -1,7 +1,8 @@
 # SVGAltGlyphElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAltGlyphElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [format](svgaltglyphelement/1629793-format.md)
-- [glyphRef](svgaltglyphelement/1630847-glyphref.md)
+- [format](./svgaltglyphelement/api-1629793-format.md)
+- [glyphRef](./svgaltglyphelement/api-1630847-glyphref.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGTextPositioningElement](svgtextpositioningelement.md)
+- [SVGTextPositioningElement](./svgtextpositioningelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # FSRemoveItemResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a remove-item call.
 
@@ -14,55 +15,60 @@ The result of a remove-item call.
 class FSRemoveItemResult
 ```
 
+```objc
+@interface FSRemoveItemResult : FSVolumeHandlerResult
+```
+
 #### Overview
 
-Use this type in your implementation of[`removeItem(_:named:from:context:replyHandler:)`](fsvolume/handler/removeitem(_:named:from:context:replyhandler:).md).
+Use this type in your implementation of[`removeItem(_:named:from:context:replyHandler:)`](./fsvolume/handler/removeitem%28_,named,from,context,replyhandler%29.md).
 
 ## Topics
 
 ### Creating a remove-item result
-- [init?(itemAttributes: FSItem.Attributes, directoryAttributes: FSItem.Attributes, freeSpace: FSFreeSpace?)](fsremoveitemresult/init(itemattributes:directoryattributes:freespace:).md)
+- [init?(itemAttributes: FSItem.Attributes, directoryAttributes: FSItem.Attributes, freeSpace: FSFreeSpace?)](./fsremoveitemresult/init%28itemattributes,directoryattributes,freespace%29.md)
   Creates a result for an item-removal operation.
-- [FSItem.Attributes](fsitem/attributes.md)
+- [FSItem.Attributes](./fsitem/attributes.md)
   Attributes of an item, such as size, creation and modification times, and user and group identifiers.
-- [class FSFreeSpace](fsfreespace.md)
+- [class FSFreeSpace](./fsfreespace.md)
   A free space object that pairs free space values with atomic sequence numbers.
 
 ## Relationships
 
 ### Inherits From
-- [FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [FSVolumeHandlerResult](./fsvolumehandlerresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func createItem(named: FSFileName, type: FSItem.ItemType, in: FSItem, attributes: FSItem.SetAttributesRequest, context: FSContext, replyHandler: (FSCreateItemResult?, (any Error)?) -> Void)](fsvolume/handler/createitem(named:type:in:attributes:context:replyhandler:).md)
+### Working with items
+- [func createItem(named: FSFileName, type: FSItem.ItemType, in: FSItem, attributes: FSItem.SetAttributesRequest, context: FSContext, replyHandler: (FSCreateItemResult?, (any Error)?) -> Void)](./fsvolume/handler/createitem%28named,type,in,attributes,context,replyhandler%29.md)
   Creates a new file or directory item.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
-- [FSItem.ItemType](fsitem/itemtype.md)
+- [FSItem.ItemType](./fsitem/itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](./fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [class FSCreateItemResult](fscreateitemresult.md)
+- [class FSCreateItemResult](./fscreateitemresult.md)
   The result of a create-item call.
-- [func lookupItem(named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSLookupItemResult?, (any Error)?) -> Void)](fsvolume/handler/lookupitem(named:in:context:replyhandler:).md)
+- [func lookupItem(named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSLookupItemResult?, (any Error)?) -> Void)](./fsvolume/handler/lookupitem%28named,in,context,replyhandler%29.md)
   Looks up an item within a directory.
-- [class FSLookupItemResult](fslookupitemresult.md)
+- [class FSLookupItemResult](./fslookupitemresult.md)
   The result of an item lookup call.
-- [func removeItem(FSItem, named: FSFileName, from: FSItem, context: FSContext, replyHandler: (FSRemoveItemResult?, (any Error)?) -> Void)](fsvolume/handler/removeitem(_:named:from:context:replyhandler:).md)
+- [func removeItem(FSItem, named: FSFileName, from: FSItem, context: FSContext, replyHandler: (FSRemoveItemResult?, (any Error)?) -> Void)](./fsvolume/handler/removeitem%28_,named,from,context,replyhandler%29.md)
   Removes an existing item from a given directory.
-- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, context: FSContext, replyHandler: (FSRenameItemResult?, (any Error)?) -> Void)](fsvolume/handler/renameitem(_:indirectory:named:to:indirectory:overitem:context:replyhandler:).md)
+- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, context: FSContext, replyHandler: (FSRenameItemResult?, (any Error)?) -> Void)](./fsvolume/handler/renameitem%28_,indirectory,named,to,indirectory,overitem,context,replyhandler%29.md)
   Renames an item from one path in the file system to another.
-- [class FSRenameItemResult](fsrenameitemresult.md)
+- [class FSRenameItemResult](./fsrenameitemresult.md)
   The result of a rename-item call.
-- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/reclaimitem(_:replyhandler:).md)
+- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](./fsvolume/handler/reclaimitem%28_,replyhandler%29.md)
 
 
 ---

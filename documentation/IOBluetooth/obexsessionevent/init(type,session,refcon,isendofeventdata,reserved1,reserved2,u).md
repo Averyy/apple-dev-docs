@@ -1,10 +1,11 @@
 # init(type:session:refCon:isEndOfEventData:reserved1:reserved2:u:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

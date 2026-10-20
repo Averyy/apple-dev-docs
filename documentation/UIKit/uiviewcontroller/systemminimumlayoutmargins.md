@@ -1,7 +1,8 @@
 # systemMinimumLayoutMargins
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum layout margins for the view controller’s root view.
 
@@ -18,23 +19,28 @@ The minimum layout margins for the view controller’s root view.
 var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDirectionalEdgeInsets systemMinimumLayoutMargins;
+```
+
 ## Mentions
 
-- [Positioning content within layout margins](positioning-content-within-layout-margins.md)
+- [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
 
 #### Discussion
 
-This property contains the minimum layout margins expected by the system for the view controller’s root view. Do not override this property. To stop considering the system’s minimum layout margins for the root view, set the [`viewRespectsSystemMinimumLayoutMargins`](uiviewcontroller/viewrespectssystemminimumlayoutmargins.md) property to [`false`](https://developer.apple.com/documentation/swift/false). This property does not affect the margins associated with subviews of the root view.
+This property contains the minimum layout margins expected by the system for the view controller’s root view. Do not override this property. To stop considering the system’s minimum layout margins for the root view, set the [`viewRespectsSystemMinimumLayoutMargins`](./viewrespectssystemminimumlayoutmargins.md) property to [`false`](../../Swift/false.md). This property does not affect the margins associated with subviews of the root view.
 
-If you assign a custom value to the [`directionalLayoutMargins`](uiview/directionallayoutmargins.md) property of the view controller’s root view, the root view’s actual margins are set to either your custom values or the minimum values defined by this property, whichever values are greater. For example, if the value for one system minimum margin is `20` points and you specify a value of `10` for the same margin on the view, the view uses the value `20` for the margin.
+If you assign a custom value to the [`directionalLayoutMargins`](../uiview/directionallayoutmargins.md) property of the view controller’s root view, the root view’s actual margins are set to either your custom values or the minimum values defined by this property, whichever values are greater. For example, if the value for one system minimum margin is `20` points and you specify a value of `10` for the same margin on the view, the view uses the value `20` for the margin.
 
 ## See Also
 
-- [Positioning content within layout margins](positioning-content-within-layout-margins.md)
+### Managing the view’s margins
+- [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
   Position views so that they aren’t crowded by other content.
-- [var viewRespectsSystemMinimumLayoutMargins: Bool](uiviewcontroller/viewrespectssystemminimumlayoutmargins.md)
+- [var viewRespectsSystemMinimumLayoutMargins: Bool](./viewrespectssystemminimumlayoutmargins.md)
   A Boolean value indicating whether the view controller’s view uses the system-defined minimum layout margins.
-- [func viewLayoutMarginsDidChange()](uiviewcontroller/viewlayoutmarginsdidchange.md)
+- [func viewLayoutMarginsDidChange()](./viewlayoutmarginsdidchange%28%29.md)
   Called to notify the view controller that the layout margins of its root view changed.
 
 

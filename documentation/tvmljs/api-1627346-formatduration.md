@@ -1,7 +1,8 @@
 # formatDuration
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Formats the given duration into the standard tvOS format.
 
@@ -10,13 +11,13 @@ Formats the given duration into the standard tvOS format.
 
 ## Declaration
 
-```swift
+```
 String formatDuration(
     in int duration
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A string containing the formatted duration.
 
@@ -30,9 +31,10 @@ This function changes a number of seconds into the standard hour:minute:second f
 
 ## See Also
 
-- [formatDate](1627445-formatdate.md)
+### Formatting Information
+- [formatDate](./api-1627445-formatdate.md)
   Formats the given date into the given format.
-- [formatNumber](1627348-formatnumber.md)
+- [formatNumber](./api-1627348-formatnumber.md)
   Formats the specified number into the given format.
 
 

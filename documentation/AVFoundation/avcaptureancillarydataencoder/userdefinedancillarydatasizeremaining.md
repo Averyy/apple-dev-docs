@@ -1,7 +1,8 @@
 # userDefinedAncillaryDataSizeRemaining
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows users to track how much data in bytes can be added to the userDefinedAncillaryData.
 
@@ -16,6 +17,10 @@ Allows users to track how much data in bytes can be added to the userDefinedAnci
 
 ```swift
 var userDefinedAncillaryDataSizeRemaining: Int16 { get }
+```
+
+```objc
+@property (nonatomic, readonly) int16_t userDefinedAncillaryDataSizeRemaining;
 ```
 
 #### Discussion

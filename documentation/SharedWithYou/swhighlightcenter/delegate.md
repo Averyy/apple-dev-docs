@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the highlight center.
 
@@ -19,9 +20,14 @@ The delegate object for the highlight center.
 weak var delegate: (any SWHighlightCenterDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, readwrite, nullable) id<SWHighlightCenterDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol SWHighlightCenterDelegate](swhighlightcenterdelegate.md)
+### Setting the delegate
+- [protocol SWHighlightCenterDelegate](../swhighlightcenterdelegate.md)
   The protocol you use to notify the delegate when the list or rank order of surfaced highlights changes.
 
 

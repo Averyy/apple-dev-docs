@@ -1,7 +1,8 @@
 # Get Recently Added Resources
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch the resources recently added to the library.
 
@@ -10,15 +11,15 @@ Fetch the resources recently added to the library.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains an array of [`Resource`](resource.md) objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains an array of [`Resource`](./resource.md) objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/library/recently-added
 ```
 
@@ -290,19 +291,30 @@ https://api.music.apple.com/v1/me/library/recently-added
 
 ## Parameters
 
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
+## Responses
+
+- `200` OK (`ResourceCollectionResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object Resource](resource.md)
+### Related Documentation
+- [object Resource](./resource.md)
   A resource—such as an album, song, or playlist.
-- [Get Heavy Rotation Content](get-heavy-rotation-content.md)
+### Requesting Historical Information
+- [Get Heavy Rotation Content](./get-heavy-rotation-content.md)
   Fetch the resources in heavy rotation for the user.
-- [Get Recently Played Resources](get-recently-played-resources.md)
+- [Get Recently Played Resources](./get-recently-played-resources.md)
   Fetch the recently played resources for the user.
-- [Get Recently Played Tracks](get-v1-me-recent-played-tracks.md)
+- [Get Recently Played Tracks](./get-v1-me-recent-played-tracks.md)
   Fetch the recently played tracks for the user.
-- [Get Recently Played Stations](get-recently-played-stations.md)
+- [Get Recently Played Stations](./get-recently-played-stations.md)
   Fetch recently played radio stations for the user.
 
 

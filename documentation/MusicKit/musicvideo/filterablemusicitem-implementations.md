@@ -1,11 +1,12 @@
 # FilterableMusicItem Implementations
 
-**Framework**: MusicKit
+**Framework**: MusicKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [MusicVideo.FilterType](musicvideo/filtertype.md)
+- [MusicVideo.FilterType](./filtertype.md)
   The associated type that contains the set of music video properties your app uses as a filter for a catalog resource request.
 
 

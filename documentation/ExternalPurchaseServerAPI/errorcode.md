@@ -1,7 +1,8 @@
 # errorCode
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An integer value that represents an error in the External Purchase Server API.
 
@@ -10,15 +11,16 @@ An integer value that represents an error in the External Purchase Server API.
 
 ## Declaration
 
-```swift
+```
 int64 errorCode
 ```
 
 ## See Also
 
-- [type errorMessage](errormessage.md)
+### Error types
+- [type errorMessage](./errormessage.md)
   A string that describes an error.
-- [type fieldName](fieldname.md)
+- [type fieldName](./fieldname.md)
   A string that names a field of a line item.
 
 

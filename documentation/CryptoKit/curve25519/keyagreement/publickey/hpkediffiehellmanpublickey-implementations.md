@@ -1,11 +1,12 @@
 # HPKEDiffieHellmanPublicKey Implementations
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [Curve25519.KeyAgreement.PublicKey.EphemeralPrivateKey](curve25519/keyagreement/publickey/ephemeralprivatekey.md)
+- [Curve25519.KeyAgreement.PublicKey.EphemeralPrivateKey](./ephemeralprivatekey.md)
   The type of the ephemeral private key associated with this public key.
 
 

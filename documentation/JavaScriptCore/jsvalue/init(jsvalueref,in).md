@@ -1,7 +1,8 @@
 # init(jsValueRef:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init!(jsValueRef value: JSValueRef!, in context: JSContext!)
+```
+
+```objc
++ (JSValue *) valueWithJSValueRef:(JSValueRef) value inContext:(JSContext *) context;
 ```
 
 #### Return Value

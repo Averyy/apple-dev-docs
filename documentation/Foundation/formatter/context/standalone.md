@@ -1,7 +1,8 @@
 # Formatter.Context.standalone
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The formatting context for stand-alone usage.
 
@@ -20,21 +21,26 @@ The formatting context for stand-alone usage.
 case standalone
 ```
 
+```c
+NSFormattingContextStandalone
+```
+
 #### Discussion
 
 Use this context for dates or date symbols in standalone usage, such as an isolated name on a calendar page.
 
 ## See Also
 
-- [Formatter.Context.unknown](formatter/context/unknown.md)
+### Constants
+- [Formatter.Context.unknown](./unknown.md)
   An unknown formatting context.
-- [Formatter.Context.dynamic](formatter/context/dynamic.md)
+- [Formatter.Context.dynamic](./dynamic.md)
   A formatting context determined automatically at runtime.
-- [Formatter.Context.listItem](formatter/context/listitem.md)
+- [Formatter.Context.listItem](./listitem.md)
   The formatting context for a list or menu item.
-- [Formatter.Context.beginningOfSentence](formatter/context/beginningofsentence.md)
+- [Formatter.Context.beginningOfSentence](./beginningofsentence.md)
   The formatting context for the beginning of a sentence.
-- [Formatter.Context.middleOfSentence](formatter/context/middleofsentence.md)
+- [Formatter.Context.middleOfSentence](./middleofsentence.md)
   The formatting context for the middle of a sentence.
 
 

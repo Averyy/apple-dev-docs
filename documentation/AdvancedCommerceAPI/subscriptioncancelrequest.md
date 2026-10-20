@@ -1,7 +1,8 @@
 # SubscriptionCancelRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for turning off automatic renewal of a subscription.
 
@@ -10,7 +11,7 @@ The request body for turning off automatic renewal of a subscription.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionCancelRequest
 ```
 
@@ -21,9 +22,10 @@ object SubscriptionCancelRequest
 
 ## See Also
 
-- [Cancel a Subscription](cancel-a-subscription.md)
+### Subscription cancellation from the server
+- [Cancel a Subscription](./cancel-a-subscription.md)
   Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
-- [object SubscriptionCancelResponse](subscriptioncancelresponse.md)
+- [object SubscriptionCancelResponse](./subscriptioncancelresponse.md)
   The response body for a successful subscription cancellation.
 
 

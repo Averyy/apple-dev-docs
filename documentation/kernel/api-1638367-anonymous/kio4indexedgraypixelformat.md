@@ -1,14 +1,15 @@
 # kIO4IndexedGrayPixelFormat
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIO4IndexedGrayPixelFormat = 0x00000024
 ```
 

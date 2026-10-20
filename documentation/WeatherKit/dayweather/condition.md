@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the weather condition on this day.
 
@@ -22,7 +23,8 @@ var condition: WeatherCondition
 
 ## See Also
 
-- [var uvIndex: UVIndex](dayweather/uvindex.md)
+### Getting condition and UV index
+- [var uvIndex: UVIndex](./uvindex.md)
   The expected intensity of ultraviolet radiation from the sun.
 
 

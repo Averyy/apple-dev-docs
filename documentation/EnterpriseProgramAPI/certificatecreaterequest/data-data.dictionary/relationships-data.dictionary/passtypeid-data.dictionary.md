@@ -1,18 +1,19 @@
 # CertificateCreateRequest.Data.Relationships.PassTypeId
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object CertificateCreateRequest.Data.Relationships.PassTypeId
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CertificateCreateRequest.Data.Relationships.PassTypeId.Data](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md)
+- [object CertificateCreateRequest.Data.Relationships.PassTypeId.Data](./passtypeid-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

@@ -1,14 +1,15 @@
 # Create
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserMIDIDestination> Create(IOUserMIDIDriver *driver, OSString *name, IOUserMIDIProtocolID protocol);
 ```
 

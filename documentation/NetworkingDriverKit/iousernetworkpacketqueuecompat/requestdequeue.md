@@ -1,14 +1,15 @@
 # requestDequeue
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn requestDequeue(void *refCon, IOOptionBits options);
 ```
 

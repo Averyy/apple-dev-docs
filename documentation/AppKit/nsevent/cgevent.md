@@ -1,7 +1,8 @@
 # cgEvent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics event object corresponding to this event.
 
@@ -14,27 +15,33 @@ The Core Graphics event object corresponding to this event.
 var cgEvent: CGEvent? { get }
 ```
 
+```objc
+@property (readonly, nullable) CGEventRef CGEvent;
+```
+
 #### Discussion
 
-The [`CGEvent`](https://developer.apple.com/documentation/coregraphics/cgevent) opaque type returned is autoreleased. If no `CGEventRef` object corresponding to the `NSEvent` object can be created, this method returns `NULL`.
+The [`CGEvent`](../../CoreGraphics/cgevent.md) opaque type returned is autoreleased. If no `CGEventRef` object corresponding to the `NSEvent` object can be created, this method returns `NULL`.
 
 ## See Also
 
-- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:)-4igjn.md)
+### Related Documentation
+- [init?(cgEvent: CGEvent)](./init%28cgevent%29-4igjn.md)
   Creates and returns an event object for a Core Graphics event.
-- [var locationInWindow: NSPoint](nsevent/locationinwindow.md)
+### Getting general event information
+- [var locationInWindow: NSPoint](./locationinwindow.md)
   The event location in the base coordinate system of the associated window.
-- [var timestamp: TimeInterval](nsevent/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the event occurred in seconds since system startup.
-- [var window: NSWindow?](nsevent/window.md)
+- [var window: NSWindow?](./window.md)
   The window object associated with the event.
-- [var windowNumber: Int](nsevent/windownumber.md)
+- [var windowNumber: Int](./windownumber.md)
   The identifier for the window device associated with the event.
-- [var eventRef: UnsafeRawPointer?](nsevent/eventref.md)
+- [var eventRef: UnsafeRawPointer?](./eventref.md)
   An opaque Carbon type associated with this event.
-- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](./foreverduration.md)
   The longest time duration possible.
-- [var context: NSGraphicsContext?](nsevent/context.md)
+- [var context: NSGraphicsContext?](./context.md)
   The display graphics context for this event.
 
 

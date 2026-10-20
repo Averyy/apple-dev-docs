@@ -1,7 +1,8 @@
 # showsUserLocation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to show the user’s location on the map.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether to show the user’s location on the map
 
 ## Declaration
 
-```swift
+```
 get showsUserLocation(): boolean;
 set showsUserLocation(value: boolean);
 ```
@@ -25,9 +26,10 @@ Set this property to `false` to remove the user location annotation and to stop 
 
 ## See Also
 
-- [tracksUserLocation](map/tracksuserlocation.md)
+### Displaying the user’s location
+- [tracksUserLocation](./tracksuserlocation.md)
   A Boolean value that determines whether to center the map on the user’s location.
-- [userLocationAnnotation](map/userlocationannotation.md)
+- [userLocationAnnotation](./userlocationannotation.md)
   An annotation that indicates the user’s location on the map.
 
 

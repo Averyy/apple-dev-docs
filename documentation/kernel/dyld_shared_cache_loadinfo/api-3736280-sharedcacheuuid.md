@@ -1,14 +1,15 @@
 # sharedCacheUUID
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 uuid_t sharedCacheUUID;
 ```
 

@@ -1,7 +1,8 @@
 # init(completionHandler:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new 3D body pose request with a completion handler.
 
@@ -19,13 +20,18 @@ Creates a new 3D body pose request with a completion handler.
 init(completionHandler: VNRequestCompletionHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithCompletionHandler:(VNRequestCompletionHandler) completionHandler;
+```
+
 ## Parameters
 
 - `completionHandler`: The block to invoke after the request finishes processing.
 
 ## See Also
 
-- [init()](vndetecthumanbodypose3drequest/init.md)
+### Initializing a Request
+- [init()](./init%28%29.md)
   Creates a new request with no completion handler.
 
 

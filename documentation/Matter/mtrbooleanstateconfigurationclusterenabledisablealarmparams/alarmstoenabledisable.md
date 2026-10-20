@@ -1,7 +1,8 @@
 # alarmsToEnableDisable
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var alarmsToEnableDisable: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * alarmsToEnableDisable;
 ```
 
 

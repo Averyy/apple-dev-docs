@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized view controller with the nib file in the specified bundle.
 
@@ -9,13 +10,17 @@ Returns an initialized view controller with the nib file in the specified bundle
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+```
+
+```objc
+- (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
 ```
 
 ## Parameters
@@ -25,9 +30,10 @@ init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 
 ## See Also
 
-- [init(searchResultsController: UIViewController?)](uisearchcontroller/init(searchresultscontroller:).md)
+### Creating a search controller
+- [init(searchResultsController: UIViewController?)](./init%28searchresultscontroller%29.md)
   Creates and returns a search controller with the specified view controller for displaying the results.
-- [init?(coder: NSCoder)](uisearchcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns an initialized search controller from data in the specified unarchiver.
 
 

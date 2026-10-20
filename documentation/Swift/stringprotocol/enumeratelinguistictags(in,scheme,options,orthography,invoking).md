@@ -1,7 +1,8 @@
 # enumerateLinguisticTags(in:scheme:options:orthography:invoking:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs linguistic analysis on the specified string by enumerating the specific range of the string, providing the Block with the located tags.
 

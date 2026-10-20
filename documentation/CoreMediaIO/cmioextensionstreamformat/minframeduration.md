@@ -1,7 +1,8 @@
 # minFrameDuration
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum frame duration a stream supports.
 
@@ -15,11 +16,16 @@ The minimum frame duration a stream supports.
 var minFrameDuration: CMTime { get }
 ```
 
+```objc
+@property (atomic, readonly) CMTime minFrameDuration;
+```
+
 ## See Also
 
-- [var maxFrameDuration: CMTime](cmioextensionstreamformat/maxframeduration.md)
+### Configuring Frame Durations
+- [var maxFrameDuration: CMTime](./maxframeduration.md)
   The maximum duration a stream supports.
-- [var validFrameDurations: [CMTime]?](cmioextensionstreamformat/validframedurations-707st.md)
+- [var validFrameDurations: [CMTime]?](./validframedurations-707st.md)
   An array of frame durations the stream supports.
 
 

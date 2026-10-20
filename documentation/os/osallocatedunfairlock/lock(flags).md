@@ -1,7 +1,8 @@
 # lock(flags:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 func lock(flags: OSAllocatedUnfairLockFlags)
 ```
+
+Available when `State` is `()`.
 
 
 ---

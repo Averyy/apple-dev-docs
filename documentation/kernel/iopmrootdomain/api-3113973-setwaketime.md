@@ -1,14 +1,15 @@
 # setWakeTime
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 IOReturn setWakeTime(uint64_t wakeContinuousTime);
 ```
 

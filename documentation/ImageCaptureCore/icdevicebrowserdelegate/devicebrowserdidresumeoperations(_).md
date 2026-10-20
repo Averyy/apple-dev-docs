@@ -1,7 +1,8 @@
 # deviceBrowserDidResumeOperations(_:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -13,6 +14,10 @@
 
 ```swift
 optional func deviceBrowserDidResumeOperations(_ browser: ICDeviceBrowser)
+```
+
+```objc
+- (void) deviceBrowserDidResumeOperations:(ICDeviceBrowser *) browser;
 ```
 
 

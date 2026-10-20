@@ -1,7 +1,8 @@
 # resetAfter
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that chooses between two variants for the reset gate computation.
 
@@ -17,6 +18,10 @@ A parameter that chooses between two variants for the reset gate computation.
 
 ```swift
 var resetAfter: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL resetAfter;
 ```
 
 #### Discussion

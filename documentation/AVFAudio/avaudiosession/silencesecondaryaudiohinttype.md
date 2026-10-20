@@ -1,17 +1,18 @@
 # AVAudioSession.SilenceSecondaryAudioHintType
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate whether optional secondary audio muting should begin or end.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,25 +20,29 @@ Constants that indicate whether optional secondary audio muting should begin or 
 enum SilenceSecondaryAudioHintType
 ```
 
+```c
+enum AVAudioSessionSilenceSecondaryAudioHintType : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a hint type
-- [init?(rawValue: UInt)](avaudiosession/silencesecondaryaudiohinttype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./silencesecondaryaudiohinttype/init%28rawvalue%29.md)
 ### Identifying hint types
-- [AVAudioSession.SilenceSecondaryAudioHintType.begin](avaudiosession/silencesecondaryaudiohinttype/begin.md)
+- [AVAudioSession.SilenceSecondaryAudioHintType.begin](./silencesecondaryaudiohinttype/begin.md)
   A value that indicates that another application’s primary audio has started.
-- [AVAudioSession.SilenceSecondaryAudioHintType.end](avaudiosession/silencesecondaryaudiohinttype/end.md)
+- [AVAudioSession.SilenceSecondaryAudioHintType.end](./silencesecondaryaudiohinttype/end.md)
   A value that indicates that another application’s primary audio has stopped.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

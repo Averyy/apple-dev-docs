@@ -1,7 +1,8 @@
 # kSecAttrProtocolLDAPS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 LDAP over TLS/SSL.
 
@@ -18,6 +19,10 @@ LDAP over TLS/SSL.
 
 ```swift
 let kSecAttrProtocolLDAPS: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolLDAPS;
 ```
 
 

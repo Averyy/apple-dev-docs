@@ -1,7 +1,8 @@
 # AudioQueueDeviceTranslateTime(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts the time for an audio queue’s associated audio hardware device from one time base representation to another.
 
@@ -19,13 +20,17 @@ Converts the time for an audio queue’s associated audio hardware device from o
 func AudioQueueDeviceTranslateTime(_ inAQ: AudioQueueRef, _ inTime: UnsafePointer<AudioTimeStamp>, _ outTime: UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueDeviceTranslateTime(AudioQueueRef inAQ, const AudioTimeStamp *inTime, AudioTimeStamp *outTime);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
 
 #### Discussion
 
-The device must be running for this function to provide a result. For an explanation of the various time base representations for an audio hardware device, see [`AudioTimeStamp`](https://developer.apple.com/documentation/coreaudiotypes/audiotimestamp) in [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types).
+The device must be running for this function to provide a result. For an explanation of the various time base representations for an audio hardware device, see [`AudioTimeStamp`](../CoreAudioTypes/audiotimestamp.md) in [Core Audio Data Types](../CoreAudio/core-audio-data-types.md).
 
 ## Parameters
 
@@ -35,17 +40,18 @@ The device must be running for this function to provide a result. For an explana
 
 ## See Also
 
-- [func AudioQueueCreateTimeline(AudioQueueRef, UnsafeMutablePointer<AudioQueueTimelineRef?>) -> OSStatus](audioqueuecreatetimeline(_:_:).md)
+### Managing the Timeline
+- [func AudioQueueCreateTimeline(AudioQueueRef, UnsafeMutablePointer<AudioQueueTimelineRef?>) -> OSStatus](./audioqueuecreatetimeline%28_,_%29.md)
   Creates a timeline object for an audio queue.
-- [func AudioQueueDisposeTimeline(AudioQueueRef, AudioQueueTimelineRef) -> OSStatus](audioqueuedisposetimeline(_:_:).md)
+- [func AudioQueueDisposeTimeline(AudioQueueRef, AudioQueueTimelineRef) -> OSStatus](./audioqueuedisposetimeline%28_,_%29.md)
   Disposes of an audio queue’s timeline object.
-- [func AudioQueueDeviceGetCurrentTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](audioqueuedevicegetcurrenttime(_:_:).md)
+- [func AudioQueueDeviceGetCurrentTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](./audioqueuedevicegetcurrenttime%28_,_%29.md)
   Gets the current time of the audio hardware device associated with an audio queue.
-- [func AudioQueueDeviceGetNearestStartTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>, UInt32) -> OSStatus](audioqueuedevicegetneareststarttime(_:_:_:).md)
+- [func AudioQueueDeviceGetNearestStartTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>, UInt32) -> OSStatus](./audioqueuedevicegetneareststarttime%28_,_,_%29.md)
   Gets the start time, for an audio hardware device, that is closest to a requested start time.
-- [func AudioQueueGetCurrentTime(AudioQueueRef, AudioQueueTimelineRef?, UnsafeMutablePointer<AudioTimeStamp>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](audioqueuegetcurrenttime(_:_:_:_:).md)
+- [func AudioQueueGetCurrentTime(AudioQueueRef, AudioQueueTimelineRef?, UnsafeMutablePointer<AudioTimeStamp>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./audioqueuegetcurrenttime%28_,_,_,_%29.md)
   Gets the current audio queue time.
-- [typealias AudioQueueTimelineRef](audioqueuetimelineref.md)
+- [typealias AudioQueueTimelineRef](./audioqueuetimelineref.md)
   Defines an opaque data type that represents an audio queue timeline object.
 
 

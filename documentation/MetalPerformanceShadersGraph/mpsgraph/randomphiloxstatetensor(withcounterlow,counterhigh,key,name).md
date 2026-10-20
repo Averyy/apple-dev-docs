@@ -1,7 +1,8 @@
 # randomPhiloxStateTensor(withCounterLow:counterHigh:key:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a tensor representing state using the Philox algorithm with given counter and key values.
 
@@ -17,6 +18,10 @@ Creates a tensor representing state using the Philox algorithm with given counte
 
 ```swift
 func randomPhiloxStateTensor(withCounterLow counterLow: Int, counterHigh: Int, key: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) randomPhiloxStateTensorWithCounterLow:(NSUInteger) counterLow counterHigh:(NSUInteger) counterHigh key:(NSUInteger) key name:(NSString *) name;
 ```
 
 #### Return Value

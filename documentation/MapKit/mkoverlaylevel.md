@@ -1,7 +1,8 @@
 # MKOverlayLevel
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the position of overlays relative to other content.
 
@@ -20,35 +21,40 @@ Constants that indicate the position of overlays relative to other content.
 enum MKOverlayLevel
 ```
 
+```c
+enum MKOverlayLevel : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKOverlayLevel.aboveRoads](mkoverlaylevel/aboveroads.md)
+- [MKOverlayLevel.aboveRoads](./mkoverlaylevel/aboveroads.md)
   Place the overlay above roadways but below map labels, shields, or point-of-interest icons.
-- [MKOverlayLevel.aboveLabels](mkoverlaylevel/abovelabels.md)
+- [MKOverlayLevel.aboveLabels](./mkoverlaylevel/abovelabels.md)
   Place the overlay above map labels, shields, or point-of-interest icons but below annotations and 3D projections of buildings.
 ### Initializers
-- [init?(rawValue: Int)](mkoverlaylevel/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mkoverlaylevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var overlays: [any MKOverlay]](mkmapview/overlays.md)
+### Accessing overlays
+- [var overlays: [any MKOverlay]](./mkmapview/overlays.md)
   The overlay objects associated with the map view.
-- [func overlays(in: MKOverlayLevel) -> [any MKOverlay]](mkmapview/overlays(in:).md)
+- [func overlays(in: MKOverlayLevel) -> [any MKOverlay]](./mkmapview/overlays%28in%29.md)
   Returns overlay objects in the specified level of the map.
-- [func renderer(for: any MKOverlay) -> MKOverlayRenderer?](mkmapview/renderer(for:).md)
+- [func renderer(for: any MKOverlay) -> MKOverlayRenderer?](./mkmapview/renderer%28for%29.md)
   Returns the renderer object for drawing the contents of the specified overlay object.
-- [func view(for: any MKOverlay) -> MKOverlayView](mkmapview/view(for:)-38z60.md)
+- [func view(for: any MKOverlay) -> MKOverlayView](./mkmapview/view%28for%29-38z60.md)
   Returns the view associated with the overlay object, if any.
 
 

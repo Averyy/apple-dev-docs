@@ -1,7 +1,8 @@
 # SceneReconstructionProvider.Mode
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The additional kinds of information you can request about a person’s surroundings.
 
@@ -17,28 +18,29 @@ enum Mode
 ## Topics
 
 ### Scene reconstruction modes
-- [SceneReconstructionProvider.Mode.classification](scenereconstructionprovider/mode/classification.md)
+- [SceneReconstructionProvider.Mode.classification](./mode/classification.md)
   The reconstruction mode that classifies each face of a mesh anchor.
 ### Instance Properties
-- [var description: String](scenereconstructionprovider/mode/description.md)
+- [var description: String](./mode/description.md)
   A textual representation of SceneReconstructionProvider.Mode
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(modes: [SceneReconstructionProvider.Mode])](scenereconstructionprovider/init(modes:).md)
+### Creating a scene reconstruction provider
+- [init(modes: [SceneReconstructionProvider.Mode])](./init%28modes%29.md)
   Creates a provider that reconstructs a person’s surroundings.
-- [let modes: [SceneReconstructionProvider.Mode]](scenereconstructionprovider/modes.md)
+- [let modes: [SceneReconstructionProvider.Mode]](./modes.md)
   The modes of scene reconstruction a provider supplies.
-- [static var isSupported: Bool](scenereconstructionprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports scene reconstruction providers.
 
 

@@ -1,7 +1,8 @@
 # badge
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A badge used to provide additional quantitative information specific to the menu item, such as the number of available updates.
 
@@ -13,6 +14,10 @@ A badge used to provide additional quantitative information specific to the menu
 ```swift
 @NSCopying
 var badge: NSMenuItemBadge? { get set }
+```
+
+```objc
+@property (copy, nullable) NSMenuItemBadge * badge;
 ```
 
 #### Discussion

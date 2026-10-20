@@ -1,7 +1,8 @@
 # systemRotorType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of content that the rotor searches.
 
@@ -18,9 +19,14 @@ The type of content that the rotor searches.
 var systemRotorType: UIAccessibilityCustomRotor.SystemRotorType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIAccessibilityCustomSystemRotorType systemRotorType;
+```
+
 ## See Also
 
-- [UIAccessibilityCustomRotor.SystemRotorType](uiaccessibilitycustomrotor/systemrotortype-swift.enum.md)
+### Getting the rotor type
+- [UIAccessibilityCustomRotor.SystemRotorType](./systemrotortype-swift.enum.md)
   Constants that indicate the type of content that the rotor represents.
 
 

@@ -1,18 +1,19 @@
 # CGFunctionCallbacks
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains callbacks needed by a `CGFunctionRef` object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,30 +21,35 @@ A structure that contains callbacks needed by a `CGFunctionRef` object.
 struct CGFunctionCallbacks
 ```
 
+```c
+struct CGFunctionCallbacks;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cgfunctioncallbacks/init.md)
-- [init(version: UInt32, evaluate: CGFunctionEvaluateCallback?, releaseInfo: CGFunctionReleaseInfoCallback?)](cgfunctioncallbacks/init(version:evaluate:releaseinfo:).md)
+- [init()](./cgfunctioncallbacks/init%28%29.md)
+- [init(version: UInt32, evaluate: CGFunctionEvaluateCallback?, releaseInfo: CGFunctionReleaseInfoCallback?)](./cgfunctioncallbacks/init%28version,evaluate,releaseinfo%29.md)
 ### Instance Properties
-- [var evaluate: CGFunctionEvaluateCallback?](cgfunctioncallbacks/evaluate.md)
+- [var evaluate: CGFunctionEvaluateCallback?](./cgfunctioncallbacks/evaluate.md)
   The callback that evaluates the function.
-- [var releaseInfo: CGFunctionReleaseInfoCallback?](cgfunctioncallbacks/releaseinfo.md)
-  If non-`NULL`,the callback used to release the `info` parameterpassed to [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md).
-- [var version: UInt32](cgfunctioncallbacks/version.md)
+- [var releaseInfo: CGFunctionReleaseInfoCallback?](./cgfunctioncallbacks/releaseinfo.md)
+  If non-`NULL`,the callback used to release the `info` parameterpassed to [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](./cgfunction/init%28info,domaindimension,domain,rangedimension,range,callbacks%29.md).
+- [var version: UInt32](./cgfunctioncallbacks/version.md)
   The structure version number. For this structure,the version should be `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias CGFunctionEvaluateCallback](cgfunctionevaluatecallback.md)
+### Callbacks
+- [typealias CGFunctionEvaluateCallback](./cgfunctionevaluatecallback.md)
   Performs custom operations on the supplied input data to produce output data.
-- [typealias CGFunctionReleaseInfoCallback](cgfunctionreleaseinfocallback.md)
+- [typealias CGFunctionReleaseInfoCallback](./cgfunctionreleaseinfocallback.md)
   Performs custom clean-up tasks when Core Graphics deallocates a `CGFunctionRef` object.
 
 

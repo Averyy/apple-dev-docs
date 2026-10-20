@@ -1,7 +1,8 @@
 # init(lookingAtCenterCoordinate:fromDistance:pitch:heading:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+

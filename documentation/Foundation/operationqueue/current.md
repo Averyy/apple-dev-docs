@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the operation queue that launched the current operation.
 
@@ -20,6 +21,10 @@ Returns the operation queue that launched the current operation.
 class var current: OperationQueue? { get }
 ```
 
+```objc
+@property (class, strong, readonly, nullable) NSOperationQueue * currentQueue;
+```
+
 #### Return Value
 
 The operation queue that started the operation or `nil` if the queue could not be determined.
@@ -30,8 +35,10 @@ You can use this method from within a running operation object to get a referenc
 
 ## See Also
 
-- [Concurrency Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091)
-- [class var main: OperationQueue](operationqueue/main.md)
+### Related Documentation
+- [Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091)
+### Accessing Specific Operation Queues
+- [class var main: OperationQueue](./main.md)
   Returns the operation queue associated with the main thread.
 
 

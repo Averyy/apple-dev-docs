@@ -1,7 +1,8 @@
 # deactivate()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reverts settings for the preset’s groups.
 
@@ -19,13 +20,18 @@ Reverts settings for the preset’s groups.
 func deactivate()
 ```
 
+```objc
+- (void) deactivate;
+```
+
 #### Discussion
 
-When you call this function, the framework restores the group’s default state by removing the preset’s settings. The settings fade over the [`timeToReset`](phasegrouppreset/timetoreset.md) duration, and the engine removes the preset from [`activeGroupPreset`](phaseengine/activegrouppreset.md).
+When you call this function, the framework restores the group’s default state by removing the preset’s settings. The settings fade over the [`timeToReset`](./timetoreset.md) duration, and the engine removes the preset from [`activeGroupPreset`](../phaseengine/activegrouppreset.md).
 
 ## See Also
 
-- [func deactivate(timeToResetOverride: Double)](phasegrouppreset/deactivate(timetoresetoverride:).md)
+### Deactivating a Group Preset
+- [func deactivate(timeToResetOverride: Double)](./deactivate%28timetoresetoverride%29.md)
   Reverts settings for the preset’s groups using a timed adjustment.
 
 

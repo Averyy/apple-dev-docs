@@ -1,7 +1,8 @@
 # init(scanRequest:results:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an accessory scan response.
 

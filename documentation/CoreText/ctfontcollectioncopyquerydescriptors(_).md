@@ -1,7 +1,8 @@
 # CTFontCollectionCopyQueryDescriptors(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the array of descriptors for font matching.
 
@@ -14,9 +15,13 @@ Retrieves the array of descriptors for font matching.
 func CTFontCollectionCopyQueryDescriptors(_ collection: CTFontCollection) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCollectionCopyQueryDescriptors(CTFontCollectionRef collection);
+```
+
 #### Return Value
 
-A retained reference to the array of descriptors for querying (matching) the system font database. The return value is undefined if you create the collection with [`CTFontCollectionCreateFromAvailableFonts(_:)`](ctfontcollectioncreatefromavailablefonts(_:).md).
+A retained reference to the array of descriptors for querying (matching) the system font database. The return value is undefined if you create the collection with [`CTFontCollectionCreateFromAvailableFonts(_:)`](./ctfontcollectioncreatefromavailablefonts%28_%29.md).
 
 ## Parameters
 
@@ -24,11 +29,12 @@ A retained reference to the array of descriptors for querying (matching) the sys
 
 ## See Also
 
-- [func CTFontCollectionCopyExclusionDescriptors(CTFontCollection) -> CFArray?](ctfontcollectioncopyexclusiondescriptors(_:).md)
+### Excluding and Including Font Descriptors
+- [func CTFontCollectionCopyExclusionDescriptors(CTFontCollection) -> CFArray?](./ctfontcollectioncopyexclusiondescriptors%28_%29.md)
   Retrieves the array of descriptors to exclude from the match.
-- [func CTFontCollectionSetExclusionDescriptors(CTMutableFontCollection, CFArray?)](ctfontcollectionsetexclusiondescriptors(_:_:).md)
+- [func CTFontCollectionSetExclusionDescriptors(CTMutableFontCollection, CFArray?)](./ctfontcollectionsetexclusiondescriptors%28_,_%29.md)
   Replaces the array of descriptors to exclude from the match.
-- [func CTFontCollectionSetQueryDescriptors(CTMutableFontCollection, CFArray?)](ctfontcollectionsetquerydescriptors(_:_:).md)
+- [func CTFontCollectionSetQueryDescriptors(CTMutableFontCollection, CFArray?)](./ctfontcollectionsetquerydescriptors%28_,_%29.md)
   Replaces the array of descriptors for font matching.
 
 

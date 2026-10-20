@@ -1,7 +1,8 @@
 # NumberFormatStyleConfiguration.Notation
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that an integer format style uses to configure notation.
 
@@ -23,35 +24,36 @@ struct Notation
 ## Topics
 
 ### Notations
-- [static var automatic: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/automatic.md)
+- [static var automatic: NumberFormatStyleConfiguration.Notation](./notation/automatic.md)
   A notation that automatically provides locale-appropriate behavior.
-- [static var compactName: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/compactname.md)
+- [static var compactName: NumberFormatStyleConfiguration.Notation](./notation/compactname.md)
   A locale-appropriate compact name notation.
-- [static var scientific: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/scientific.md)
+- [static var scientific: NumberFormatStyleConfiguration.Notation](./notation/scientific.md)
   A notation constant that formats values with scientific notation.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](numberformatstyleconfiguration/decimalseparatordisplaystrategy.md)
+### Specifying Configuration
+- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./decimalseparatordisplaystrategy.md)
   A structure that an integer format style uses to configure a decimal separator display strategy.
-- [NumberFormatStyleConfiguration.Grouping](numberformatstyleconfiguration/grouping.md)
+- [NumberFormatStyleConfiguration.Grouping](./grouping.md)
   A structure that an integer format style uses to configure grouping.
-- [NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision.md)
+- [NumberFormatStyleConfiguration.Precision](./precision.md)
   A structure that an integer format style uses to configure precision.
-- [NumberFormatStyleConfiguration.RoundingRule](numberformatstyleconfiguration/roundingrule.md)
+- [NumberFormatStyleConfiguration.RoundingRule](./roundingrule.md)
   The type used for rounding rule values.
-- [NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy.md)
+- [NumberFormatStyleConfiguration.SignDisplayStrategy](./signdisplaystrategy.md)
   A structure that an integer format style uses to configure a sign display strategy.
 
 

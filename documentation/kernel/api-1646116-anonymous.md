@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSUnusedNodesFixDate](1646116-anonymous/khfsunusednodesfixdate.md)
-- [kHFSUnusedNodesFixExpandedDate](1646116-anonymous/khfsunusednodesfixexpandeddate.md)
+- [kHFSUnusedNodesFixDate](./api-1646116-anonymous/khfsunusednodesfixdate.md)
+- [kHFSUnusedNodesFixExpandedDate](./api-1646116-anonymous/khfsunusednodesfixexpandeddate.md)
 
 
 ---

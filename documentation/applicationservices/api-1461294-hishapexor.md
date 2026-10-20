@@ -1,7 +1,8 @@
 # HIShapeXor(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeXor(_ inShape1: HIShape!, _ inShape2: HIShape!, _ outResult: HIMutableShape!) -> OSStatus
+```
+
+```c
+OSStatus HIShapeXor(HIShapeRef inShape1, HIShapeRef inShape2, HIMutableShapeRef outResult);
 ```
 
 

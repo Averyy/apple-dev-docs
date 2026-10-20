@@ -1,7 +1,8 @@
 # milliwattHours
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 1 mWh = 3.6 J
 

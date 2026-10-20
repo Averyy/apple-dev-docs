@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an IPv4 address with data.
 
@@ -26,7 +27,8 @@ The provided data is expected to be an IPv4 address of 4 bytes.
 
 ## See Also
 
-- [init?(String)](ipv4address/init(_:).md)
+### Creating Addresses
+- [init?(String)](./init%28_%29.md)
   Initializes an IPv4 address with a string.
 
 

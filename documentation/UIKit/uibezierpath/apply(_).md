@@ -1,7 +1,8 @@
 # apply(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms all points in the path using the specified affine transform matrix.
 
@@ -9,7 +10,7 @@ Transforms all points in the path using the specified affine transform matrix.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Transforms all points in the path using the specified affine transform matrix.
 
 ```swift
 func apply(_ transform: CGAffineTransform)
+```
+
+```objc
+- (void) applyTransform:(CGAffineTransform) transform;
 ```
 
 #### Discussion

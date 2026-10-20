@@ -1,7 +1,8 @@
 # contextMenuInteractionDelegate
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the context menu interaction associated with this text interaction.
 
@@ -16,17 +17,22 @@ The delegate for the context menu interaction associated with this text interact
 weak var contextMenuInteractionDelegate: (any UIContextMenuInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<UIContextMenuInteractionDelegate> contextMenuInteractionDelegate;
+```
+
 #### Discussion
 
-Set this object to receive delegate callbacks from the [`contextMenuInteraction`](betextinteraction/contextmenuinteraction.md).
+Set this object to receive delegate callbacks from the [`contextMenuInteraction`](./contextmenuinteraction.md).
 
 ## See Also
 
-- [func presentEditMenuForSelection()](betextinteraction/presenteditmenuforselection.md)
+### Menus
+- [func presentEditMenuForSelection()](./presenteditmenuforselection%28%29.md)
   Presents an edit menu for the current text selection.
-- [func dismissEditMenuForSelection()](betextinteraction/dismisseditmenuforselection.md)
+- [func dismissEditMenuForSelection()](./dismisseditmenuforselection%28%29.md)
   Dismisses the edit menu for the current text selection.
-- [var contextMenuInteraction: UIContextMenuInteraction](betextinteraction/contextmenuinteraction.md)
+- [var contextMenuInteraction: UIContextMenuInteraction](./contextmenuinteraction.md)
   An interaction you use to work with the text view’s context menu.
 
 

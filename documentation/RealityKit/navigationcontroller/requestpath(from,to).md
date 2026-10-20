@@ -1,7 +1,8 @@
 # requestPath(from:to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a pathfind from a given position to the target position.
 
@@ -21,9 +22,10 @@ func requestPath(from startPosition: SIMD3<Float>, to targetPosition: SIMD3<Floa
 
 ## See Also
 
-- [func requestPath(to: SIMD3<Float>)](navigationcontroller/requestpath(to:).md)
+### Requesting pathfinding
+- [func requestPath(to: SIMD3<Float>)](./requestpath%28to%29.md)
   Requests a pathfind from the owning entity’s position to the target position.
-- [func stopPathfind()](navigationcontroller/stoppathfind.md)
+- [func stopPathfind()](./stoppathfind%28%29.md)
   Cancels any in-progress pathfinds.
 
 

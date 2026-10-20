@@ -1,7 +1,8 @@
 # scrollerInsets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance the scrollers are inset from the edge of the scroll view.
 
@@ -14,11 +15,16 @@ The distance the scrollers are inset from the edge of the scroll view.
 var scrollerInsets: NSEdgeInsets { get set }
 ```
 
+```objc
+@property NSEdgeInsets scrollerInsets;
+```
+
 ## See Also
 
-- [var automaticallyAdjustsContentInsets: Bool](nsscrollview/automaticallyadjustscontentinsets.md)
+### Managing Insets
+- [var automaticallyAdjustsContentInsets: Bool](./automaticallyadjustscontentinsets.md)
   A Boolean that indicates whether the scroll view automatically adjusts its content insets.
-- [var contentInsets: NSEdgeInsets](nsscrollview/contentinsets.md)
+- [var contentInsets: NSEdgeInsets](./contentinsets.md)
   The distance that the scroll view’s subviews are inset from the enclosing scroll view during tiling.
 
 

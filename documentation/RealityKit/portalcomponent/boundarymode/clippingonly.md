@@ -1,7 +1,8 @@
 # PortalComponent.BoundaryMode.clippingOnly
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The portal clips its content to the boundary.
 
@@ -21,7 +22,7 @@ case clippingOnly
 
 #### Discussion
 
-Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) don’t cross the portal.
+Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) don’t cross the portal.
 
 
 ---

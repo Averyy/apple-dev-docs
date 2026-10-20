@@ -1,7 +1,8 @@
 # displayOrderIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the identifiers of subitems in their display order.
 
@@ -18,15 +19,20 @@ An array that contains the identifiers of subitems in their display order.
 var displayOrderIdentifiers: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * displayOrderIdentifiers;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 ## See Also
 
-- [var allowsReordering: Bool](uitabgroup/allowsreordering.md)
+### Managing customization
+- [var allowsReordering: Bool](./allowsreordering.md)
   A Boolean value that indicates people can reorder subitems in the sidebar.
-- [var displayOrder: [UITab]](uitabgroup/displayorder.md)
+- [var displayOrder: [UITab]](./displayorder.md)
   An array that contains instances of subitems in their display order.
 
 

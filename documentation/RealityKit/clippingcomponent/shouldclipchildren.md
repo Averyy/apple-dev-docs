@@ -1,7 +1,8 @@
 # shouldClipChildren
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether child entities are clipped by this component’s bounds.
 
@@ -27,7 +28,8 @@ When `false`, only the entity with this component is affected (if `shouldClipSel
 
 ## See Also
 
-- [var shouldClipSelf: Bool](clippingcomponent/shouldclipself.md)
+### Configuring clipping behavior
+- [var shouldClipSelf: Bool](./shouldclipself.md)
   Controls whether the entity itself is clipped by this component’s bounds.
 
 

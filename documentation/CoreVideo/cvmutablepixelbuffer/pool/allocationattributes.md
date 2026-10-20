@@ -1,7 +1,8 @@
 # CVMutablePixelBuffer.Pool.AllocationAttributes
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Controls how new pixel buffers are allocated when `CVMutablePixelBuffer/Pool/mutablePixelBuffer(with:)` is called.
 
@@ -23,17 +24,17 @@ struct AllocationAttributes
 ## Topics
 
 ### Initializers
-- [init(allocationThreshold: Int?)](cvmutablepixelbuffer/pool/allocationattributes/init(allocationthreshold:).md)
+- [init(allocationThreshold: Int?)](./allocationattributes/init%28allocationthreshold%29.md)
 ### Instance Properties
-- [var allocationThreshold: Int?](cvmutablepixelbuffer/pool/allocationattributes/allocationthreshold.md)
-  A new pixel buffer will not be allocated if the pool already has this many or more pixel buffers allocated. This does not prevent already-allocated buffers from being recycled. If this causes allocation failure, then `CVMutablePixelBuffer/Pool/mutablePixelBuffer(allocationThreshold:)` throws [`wouldExceedAllocationThreshold`](cverror/wouldexceedallocationthreshold.md).
+- [var allocationThreshold: Int?](./allocationattributes/allocationthreshold.md)
+  A new pixel buffer will not be allocated if the pool already has this many or more pixel buffers allocated. This does not prevent already-allocated buffers from being recycled. If this causes allocation failure, then `CVMutablePixelBuffer/Pool/mutablePixelBuffer(allocationThreshold:)` throws [`wouldExceedAllocationThreshold`](../../cverror/wouldexceedallocationthreshold.md).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

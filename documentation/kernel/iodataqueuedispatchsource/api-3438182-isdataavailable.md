@@ -1,7 +1,8 @@
 # IsDataAvailable
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Checks whether the data queue contains data to process.
 
@@ -11,29 +12,30 @@ Checks whether the data queue contains data to process.
 
 ## Declaration
 
-```swift
+```c
 bool IsDataAvailable(void);
 ```
 
-#### Return_value
+#### Return Value
 
 `true` if the queue contains data to process, or `false` if it is empty. 
 
 ## See Also
 
-- [- SetDataAvailableHandler](../driverkit/iodataqueuedispatchsource/setdataavailablehandler.md)
+### Removing Work from the Queue
+- [- SetDataAvailableHandler](../../DriverKit/iodataqueuedispatchsource/setdataavailablehandler.md)
   Sets the handler block to run when another object adds data to the queue.
-- [- DataAvailable](../driverkit/iodataqueuedispatchsource/dataavailable.md)
+- [- DataAvailable](../../DriverKit/iodataqueuedispatchsource/dataavailable.md)
   Responds to the addition of new data to the queue. 
-- [- Peek](iodataqueuedispatchsource/3438183-peek.md)
+- [- Peek](./api-3438183-peek.md)
   Returns the next queue entry without removing it from the queue.
-- [- Dequeue](iodataqueuedispatchsource/3438178-dequeue.md)
+- [- Dequeue](./api-3438178-dequeue.md)
   Removes the next entry from the queue.
-- [- DequeueWithCoalesce](iodataqueuedispatchsource/3438179-dequeuewithcoalesce.md)
+- [- DequeueWithCoalesce](./api-3438179-dequeuewithcoalesce.md)
   Removes the next queue entry, but doesn't automatically send notifications.
-- [- SendDataServiced](iodataqueuedispatchsource/3438185-senddataserviced.md)
+- [- SendDataServiced](./api-3438185-senddataserviced.md)
   Notifies interested parties that you removed data from the queue. 
-- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
+- [IODataQueueClientDequeueEntryBlock](../../DriverKit/iodataqueueclientdequeueentryblock.md)
   The handler block you use to remove data from a queue. 
 
 

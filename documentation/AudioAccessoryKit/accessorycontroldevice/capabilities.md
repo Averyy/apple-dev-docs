@@ -1,7 +1,8 @@
 # AccessoryControlDevice.Capabilities
 
 **Framework**: AudioAccessoryKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of capabilities that an audio accessory supports.
 
@@ -16,37 +17,38 @@ struct Capabilities
 
 #### Overview
 
-The [`AccessoryControlDevice`](accessorycontroldevice.md) class’s initializer takes an argument of this type. Use this structure to specify which features your accessory supports when initializing an audio accessory configuration.
+The [`AccessoryControlDevice`](../accessorycontroldevice.md) class’s initializer takes an argument of this type. Use this structure to specify which features your accessory supports when initializing an audio accessory configuration.
 
 ## Topics
 
 ### Capability options
-- [static let audioSwitching: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/audioswitching.md)
+- [static let audioSwitching: AccessoryControlDevice.Capabilities](./capabilities/audioswitching.md)
   A capability indicating the device supports automatic audio switching.
-- [static let placement: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/placement.md)
+- [static let placement: AccessoryControlDevice.Capabilities](./capabilities/placement.md)
   A capability indicating the device supports placement detection.
 ### Type Properties
-- [static let audioSpatialization: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/audiospatialization.md)
+- [static let audioSpatialization: AccessoryControlDevice.Capabilities](./capabilities/audiospatialization.md)
   Device supports audio spatialization
-- [static let headTracking: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/headtracking.md)
+- [static let headTracking: AccessoryControlDevice.Capabilities](./capabilities/headtracking.md)
   Device supports head tracking for audio spatialization
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [AccessoryControlDevice.Placement](accessorycontroldevice/placement.md)
+### Device characteristics
+- [AccessoryControlDevice.Placement](./placement.md)
   The physical placement of an audio accessory.
-- [AccessoryControlDevice.Configuration](accessorycontroldevice/configuration-swift.struct.md)
+- [AccessoryControlDevice.Configuration](./configuration-swift.struct.md)
   The configuration for an accessory.
 
 

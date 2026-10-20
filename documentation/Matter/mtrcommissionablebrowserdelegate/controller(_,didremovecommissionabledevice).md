@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func controller(_ controller: MTRDeviceController, didRemoveCommissionableDevice device: MTRCommissionableBrowserResult)
+```
+
+```objc
+- (void) controller:(MTRDeviceController *) controller didRemoveCommissionableDevice:(MTRCommissionableBrowserResult *) device;
 ```
 
 

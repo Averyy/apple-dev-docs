@@ -1,7 +1,8 @@
 # init(bufferIndex:bufferOffset:bufferStride:stepFunction:stepRate:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

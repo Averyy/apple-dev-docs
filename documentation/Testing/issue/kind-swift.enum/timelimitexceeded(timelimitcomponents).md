@@ -1,18 +1,19 @@
 # Issue.Kind.timeLimitExceeded(timeLimitComponents:)
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An issue due to a test reaching its time limit and timing out.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,7 +25,7 @@ indirect case timeLimitExceeded(timeLimitComponents: (seconds: Int64, attosecond
 
 ## Mentions
 
-- [Limiting the running time of tests](limitingexecutiontime.md)
+- [Limiting the running time of tests](../../limitingexecutiontime.md)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the components of this value using the specified hasher.
 
@@ -22,7 +23,8 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [static func == (DataScannerViewController.RecognizedDataType, DataScannerViewController.RecognizedDataType) -> Bool](datascannerviewcontroller/recognizeddatatype/==(_:_:).md)
+### Hashing and comparing
+- [static func == (DataScannerViewController.RecognizedDataType, DataScannerViewController.RecognizedDataType) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two sets have equal elements.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionGroupSubscriptionsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a subscription within a subscription group.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a subscription within a subscription group
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupSubscriptionsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptions`
 
 
 ---

@@ -1,7 +1,8 @@
 # invert
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A highlight mode that inverts the content of the annotation.
 
@@ -19,13 +20,18 @@ A highlight mode that inverts the content of the annotation.
 static let invert: PDFAnnotationHighlightingMode
 ```
 
+```c
+extern PDFAnnotationHighlightingMode PDFAnnotationHighlightingModeInvert;
+```
+
 ## See Also
 
-- [static let none: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/none.md)
+### Choosing a Highlight Mode
+- [static let none: PDFAnnotationHighlightingMode](./none.md)
   A highlight mode that doesn’t change the appearance of the annotation.
-- [static let outline: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/outline.md)
+- [static let outline: PDFAnnotationHighlightingMode](./outline.md)
   A highlight mode that inverts the annotation’s border.
-- [static let push: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/push.md)
+- [static let push: PDFAnnotationHighlightingMode](./push.md)
   A highlight mode that renders a pressed appearance for the annotation.
 
 

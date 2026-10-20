@@ -1,101 +1,102 @@
 # Collection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](substring/unicodescalarview/count.md)
+- [var count: Int](./count.md)
   The number of elements in the collection.
-- [var endIndex: Substring.UnicodeScalarView.Index](substring/unicodescalarview/endindex.md)
+- [var endIndex: Substring.UnicodeScalarView.Index](./endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var first: Self.Element?](substring/unicodescalarview/first.md)
+- [var first: Self.Element?](./first.md)
   The first element of the collection.
-- [var indices: Substring.UnicodeScalarView.Indices](substring/unicodescalarview/indices-swift.property.md)
+- [var indices: Substring.UnicodeScalarView.Indices](./indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var isEmpty: Bool](substring/unicodescalarview/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var startIndex: Substring.UnicodeScalarView.Index](substring/unicodescalarview/startindex.md)
+- [var startIndex: Substring.UnicodeScalarView.Index](./startindex.md)
   The position of the first element in a nonempty collection.
-- [var underestimatedCount: Int](substring/unicodescalarview/underestimatedcount.md)
+- [var underestimatedCount: Int](./underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Instance Methods
-- [func distance(from: Substring.UnicodeScalarView.Index, to: Substring.UnicodeScalarView.Index) -> Int](substring/unicodescalarview/distance(from:to:).md)
+- [func distance(from: Substring.UnicodeScalarView.Index, to: Substring.UnicodeScalarView.Index) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](substring/unicodescalarview/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
-- [func dropFirst(Int) -> Self.SubSequence](substring/unicodescalarview/dropfirst(_:).md)
+- [func dropFirst(Int) -> Self.SubSequence](./dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func firstIndex(of: Self.Element) -> Self.Index?](substring/unicodescalarview/firstindex(of:).md)
+- [func firstIndex(of: Self.Element) -> Self.Index?](./firstindex%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](substring/unicodescalarview/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func formIndex(inout Self.Index, offsetBy: Int)](substring/unicodescalarview/formindex(_:offsetby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](substring/unicodescalarview/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func formIndex(after: inout Substring.UnicodeScalarView.Index)](substring/unicodescalarview/formindex(after:).md)
+- [func formIndex(after: inout Substring.UnicodeScalarView.Index)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(Substring.UnicodeScalarView.Index, offsetBy: Int) -> Substring.UnicodeScalarView.Index](substring/unicodescalarview/index(_:offsetby:).md)
+- [func index(Substring.UnicodeScalarView.Index, offsetBy: Int) -> Substring.UnicodeScalarView.Index](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Substring.UnicodeScalarView.Index, offsetBy: Int, limitedBy: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Index?](substring/unicodescalarview/index(_:offsetby:limitedby:).md)
+- [func index(Substring.UnicodeScalarView.Index, offsetBy: Int, limitedBy: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Index?](./index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(after: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Index](substring/unicodescalarview/index(after:).md)
+- [func index(after: Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(of: Self.Element) -> Self.Index?](substring/unicodescalarview/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func indices(of: Self.Element) -> RangeSet<Self.Index>](substring/unicodescalarview/indices(of:).md)
+- [func indices(of: Self.Element) -> RangeSet<Self.Index>](./indices%28of%29.md)
   Returns the indices of all the elements that are equal to the given element.
-- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](substring/unicodescalarview/indices(where:).md)
+- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](./indices%28where%29.md)
   Returns the indices of all the elements that match the given predicate.
-- [func makeIterator() -> IndexingIterator<Self>](substring/unicodescalarview/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<Self>](./makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](substring/unicodescalarview/map(_:)-3wgri.md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./map%28_%29-3wgri.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func popFirst() -> Self.Element?](substring/unicodescalarview/popfirst.md)
+- [func popFirst() -> Self.Element?](./popfirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func prefix(Int) -> Self.SubSequence](substring/unicodescalarview/prefix(_:).md)
+- [func prefix(Int) -> Self.SubSequence](./prefix%28_%29.md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
-- [func prefix(through: Self.Index) -> Self.SubSequence](substring/unicodescalarview/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(upTo: Self.Index) -> Self.SubSequence](substring/unicodescalarview/prefix(upto:).md)
+- [func prefix(upTo: Self.Index) -> Self.SubSequence](./prefix%28upto%29.md)
   Returns a subsequence from the start of the collection up to, but not including, the specified position.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](substring/unicodescalarview/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./prefix%28while%29.md)
   Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
-- [func randomElement() -> Self.Element?](substring/unicodescalarview/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](substring/unicodescalarview/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
-- [func removeFirst() -> Self.Element](substring/unicodescalarview/removefirst-2wary.md)
+- [func removeFirst() -> Self.Element](./removefirst%28%29-2wary.md)
   Removes and returns the first element of the collection.
-- [func removeFirst(Int)](substring/unicodescalarview/removefirst(_:)-2iv78.md)
+- [func removeFirst(Int)](./removefirst%28_%29-2iv78.md)
   Removes the specified number of elements from the beginning of the collection.
-- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/unicodescalarview/removingsubranges(_:).md)
+- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./removingsubranges%28_%29.md)
   Returns a collection of the elements in this collection that are not represented by the given range set.
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](substring/unicodescalarview/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
+- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](./split%28maxsplits,omittingemptysubsequences,whereseparator%29.md)
   Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](substring/unicodescalarview/split(separator:maxsplits:omittingemptysubsequences:).md)
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./split%28separator,maxsplits,omittingemptysubsequences%29.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func suffix(from: Self.Index) -> Self.SubSequence](substring/unicodescalarview/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
-- [subscript(Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Element](substring/unicodescalarview/subscript(_:)-57h51.md)
+- [subscript(Substring.UnicodeScalarView.Index) -> Substring.UnicodeScalarView.Element](./subscript%28_%29-57h51.md)
   Accesses the element at the specified position.
-- [subscript<R>(R) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-7ylky.md)
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-7ylky.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript(UnboundedRange) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-9p7x7.md)
-- [subscript(Range<Substring.UnicodeScalarView.Index>) -> Substring.UnicodeScalarView](substring/unicodescalarview/subscript(_:)-ua5x.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-9p7x7.md)
+- [subscript(Range<Substring.UnicodeScalarView.Index>) -> Substring.UnicodeScalarView](./subscript%28_%29-ua5x.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/unicodescalarview/subscript(_:)-zsz3.md)
+- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./subscript%28_%29-zsz3.md)
   Accesses a view of this collection with the elements at the given indices.
 ### Type Aliases
-- [Substring.UnicodeScalarView.Index](substring/unicodescalarview/index.md)
+- [Substring.UnicodeScalarView.Index](./index.md)
   A type that represents a position in the collection.
-- [Substring.UnicodeScalarView.Indices](substring/unicodescalarview/indices-swift.typealias.md)
+- [Substring.UnicodeScalarView.Indices](./indices-swift.typealias.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Substring.UnicodeScalarView.Iterator](substring/unicodescalarview/iterator.md)
+- [Substring.UnicodeScalarView.Iterator](./iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [Substring.UnicodeScalarView.SubSequence](substring/unicodescalarview/subsequence.md)
+- [Substring.UnicodeScalarView.SubSequence](./subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
 

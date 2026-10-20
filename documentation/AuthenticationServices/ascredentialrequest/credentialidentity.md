@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The credential identity the user selected for authentication.
@@ -17,6 +18,10 @@ The credential identity the user selected for authentication.
 
 ```swift
 var credentialIdentity: any ASCredentialIdentity { get }
+```
+
+```objc
+@property (nonatomic, readonly) id<ASCredentialIdentity> credentialIdentity;
 ```
 
 

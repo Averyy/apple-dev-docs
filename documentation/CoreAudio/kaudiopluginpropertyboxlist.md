@@ -1,11 +1,12 @@
 # kAudioPlugInPropertyBoxList
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,14 +14,19 @@
 var kAudioPlugInPropertyBoxList: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioPlugInPropertyBoxList
+```
+
 ## See Also
 
-- [var kAudioPlugInPropertyBundleID: AudioObjectPropertySelector](kaudiopluginpropertybundleid.md)
-- [var kAudioPlugInPropertyDeviceList: AudioObjectPropertySelector](kaudiopluginpropertydevicelist.md)
-- [var kAudioPlugInPropertyTranslateUIDToBox: AudioObjectPropertySelector](kaudiopluginpropertytranslateuidtobox.md)
-- [var kAudioPlugInPropertyTranslateUIDToDevice: AudioObjectPropertySelector](kaudiopluginpropertytranslateuidtodevice.md)
-- [var kAudioPlugInPropertyClockDeviceList: AudioObjectPropertySelector](kaudiopluginpropertyclockdevicelist.md)
-- [var kAudioPlugInPropertyTranslateUIDToClockDevice: AudioObjectPropertySelector](kaudiopluginpropertytranslateuidtoclockdevice.md)
+### Constants
+- [var kAudioPlugInPropertyBundleID: AudioObjectPropertySelector](./kaudiopluginpropertybundleid.md)
+- [var kAudioPlugInPropertyDeviceList: AudioObjectPropertySelector](./kaudiopluginpropertydevicelist.md)
+- [var kAudioPlugInPropertyTranslateUIDToBox: AudioObjectPropertySelector](./kaudiopluginpropertytranslateuidtobox.md)
+- [var kAudioPlugInPropertyTranslateUIDToDevice: AudioObjectPropertySelector](./kaudiopluginpropertytranslateuidtodevice.md)
+- [var kAudioPlugInPropertyClockDeviceList: AudioObjectPropertySelector](./kaudiopluginpropertyclockdevicelist.md)
+- [var kAudioPlugInPropertyTranslateUIDToClockDevice: AudioObjectPropertySelector](./kaudiopluginpropertytranslateuidtoclockdevice.md)
 
 
 ---

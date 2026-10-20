@@ -1,10 +1,11 @@
 # kHCIRetransmissionEffortTypeNone
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kHCIRetransmissionEffortTypeNone: BluetoothHCIRetransmissionEffortTypes { get }
 ```
 
+```c
+kHCIRetransmissionEffortTypeNone
+```
+
 ## See Also
 
-- [var kHCIRetransmissionEffortTypeAtLeastOneAndOptimizeForPower: BluetoothHCIRetransmissionEffortTypes](khciretransmissionefforttypeatleastoneandoptimizeforpower.md)
-- [var kHCIRetransmissionEffortTypeAtLeastOneAndOptimizeLinkQuality: BluetoothHCIRetransmissionEffortTypes](khciretransmissionefforttypeatleastoneandoptimizelinkquality.md)
-- [var kHCIRetransmissionEffortTypeDontCare: BluetoothHCIRetransmissionEffortTypes](khciretransmissionefforttypedontcare.md)
+### Constants
+- [var kHCIRetransmissionEffortTypeAtLeastOneAndOptimizeForPower: BluetoothHCIRetransmissionEffortTypes](./khciretransmissionefforttypeatleastoneandoptimizeforpower.md)
+- [var kHCIRetransmissionEffortTypeAtLeastOneAndOptimizeLinkQuality: BluetoothHCIRetransmissionEffortTypes](./khciretransmissionefforttypeatleastoneandoptimizelinkquality.md)
+- [var kHCIRetransmissionEffortTypeDontCare: BluetoothHCIRetransmissionEffortTypes](./khciretransmissionefforttypedontcare.md)
 
 
 ---

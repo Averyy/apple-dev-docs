@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The altitude measured in meters.
 
@@ -10,7 +11,7 @@ The altitude measured in meters.
 
 ## Declaration
 
-```swift
+```
 attribute Double? altitude;
 ```
 

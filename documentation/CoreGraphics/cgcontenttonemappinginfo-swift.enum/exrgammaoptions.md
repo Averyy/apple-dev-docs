@@ -1,7 +1,8 @@
 # CGContentToneMappingInfo.EXRGammaOptions
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,19 +22,19 @@ struct EXRGammaOptions
 ## Topics
 
 ### Initializers
-- [init()](cgcontenttonemappinginfo-swift.enum/exrgammaoptions/init.md)
-- [init(defog: Float, exposure: Float, kneeHigh: Float, kneeLow: Float)](cgcontenttonemappinginfo-swift.enum/exrgammaoptions/init(defog:exposure:kneehigh:kneelow:).md)
+- [init()](./exrgammaoptions/init%28%29.md)
+- [init(defog: Float, exposure: Float, kneeHigh: Float, kneeLow: Float)](./exrgammaoptions/init%28defog,exposure,kneehigh,kneelow%29.md)
 ### Instance Properties
-- [var defog: Float](cgcontenttonemappinginfo-swift.enum/exrgammaoptions/defog.md)
-- [var exposure: Float](cgcontenttonemappinginfo-swift.enum/exrgammaoptions/exposure.md)
-- [var kneeHigh: Float](cgcontenttonemappinginfo-swift.enum/exrgammaoptions/kneehigh.md)
-- [var kneeLow: Float](cgcontenttonemappinginfo-swift.enum/exrgammaoptions/kneelow.md)
+- [var defog: Float](./exrgammaoptions/defog.md)
+- [var exposure: Float](./exrgammaoptions/exposure.md)
+- [var kneeHigh: Float](./exrgammaoptions/kneehigh.md)
+- [var kneeLow: Float](./exrgammaoptions/kneelow.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

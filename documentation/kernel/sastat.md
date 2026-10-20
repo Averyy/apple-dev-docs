@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sastat {
     ...
 };
@@ -17,9 +17,9 @@ struct sastat {
 ## Topics
 
 ### Instance Properties
-- [created](sastat/1588227-created.md)
-- [lft_c](sastat/1588186-lft_c.md)
-- [spi](sastat/1588131-spi.md)
+- [created](./sastat/api-1588227-created.md)
+- [lft_c](./sastat/api-1588186-lft_c.md)
+- [spi](./sastat/api-1588131-spi.md)
 
 
 ---

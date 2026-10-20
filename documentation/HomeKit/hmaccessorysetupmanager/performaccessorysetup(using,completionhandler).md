@@ -1,7 +1,8 @@
 # performAccessorySetup(using:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the process of setting up accessories with Apple Home.
 
@@ -13,7 +14,15 @@ Performs the process of setting up accessories with Apple Home.
 ## Declaration
 
 ```swift
+func performAccessorySetup(using request: HMAccessorySetupRequest, completionHandler completion: @escaping @Sendable (HMAccessorySetupResult?, (any Error)?) -> Void)
+```
+
+```swift
 func performAccessorySetup(using request: HMAccessorySetupRequest) async throws -> HMAccessorySetupResult
+```
+
+```objc
+- (void) performAccessorySetupUsingRequest:(HMAccessorySetupRequest *) request completionHandler:(void (^)(HMAccessorySetupResult *result, NSError *error)) completion;
 ```
 
 #### Discussion

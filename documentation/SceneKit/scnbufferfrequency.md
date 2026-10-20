@@ -1,18 +1,19 @@
 # SCNBufferFrequency
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for how often SceneKit should execute the binding handler you provide with the [`handleBinding(ofBufferNamed:frequency:handler:)`](scnprogram/handlebinding(ofbuffernamed:frequency:handler:).md) method.
+Options for how often SceneKit should execute the binding handler you provide with the [`handleBinding(ofBufferNamed:frequency:handler:)`](./scnprogram/handlebinding%28ofbuffernamed,frequency,handler%29.md) method.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,34 +21,39 @@ Options for how often SceneKit should execute the binding handler you provide wi
 enum SCNBufferFrequency
 ```
 
+```c
+enum SCNBufferFrequency : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SCNBufferFrequency.perFrame](scnbufferfrequency/perframe.md)
+- [SCNBufferFrequency.perFrame](./scnbufferfrequency/perframe.md)
   Execute the binding handler once for each frame to be rendered using the shader.
-- [SCNBufferFrequency.perNode](scnbufferfrequency/pernode.md)
+- [SCNBufferFrequency.perNode](./scnbufferfrequency/pernode.md)
   Execute the binding handler once for each frame, for each node to be rendered using the shader.
-- [SCNBufferFrequency.perShadable](scnbufferfrequency/pershadable.md)
+- [SCNBufferFrequency.perShadable](./scnbufferfrequency/pershadable.md)
   Execute the binding handler once for each frame, for each node, for each material or geometry to be rendered using the shader.
 ### Initializers
-- [init?(rawValue: Int)](scnbufferfrequency/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnbufferfrequency/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func handleBinding(ofBufferNamed: String, frequency: SCNBufferFrequency, handler: SCNBufferBindingBlock)](scnprogram/handlebinding(ofbuffernamed:frequency:handler:).md)
+### Providing Input for Metal Shaders
+- [func handleBinding(ofBufferNamed: String, frequency: SCNBufferFrequency, handler: SCNBufferBindingBlock)](./scnprogram/handlebinding%28ofbuffernamed,frequency,handler%29.md)
   Registers a block for SceneKit to call at render time for binding a Metal buffer to the shader program.
-- [typealias SCNBufferBindingBlock](scnbufferbindingblock.md)
-  A block SceneKit calls at render time for working with buffers in a Metal shader, used by the [`handleBinding(ofBufferNamed:frequency:handler:)`](scnprogram/handlebinding(ofbuffernamed:frequency:handler:).md) method.
+- [typealias SCNBufferBindingBlock](./scnbufferbindingblock.md)
+  A block SceneKit calls at render time for working with buffers in a Metal shader, used by the [`handleBinding(ofBufferNamed:frequency:handler:)`](./scnprogram/handlebinding%28ofbuffernamed,frequency,handler%29.md) method.
 
 
 ---

@@ -1,6 +1,8 @@
 # Displaying an entity that follows a person’s view
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [DisplayingA3DObjectThatMovesToStayInAPersonsView.zip](https://docs-assets.developer.apple.com/published/55e1c3199fc3/DisplayingA3DObjectThatMovesToStayInAPersonsView.zip)
 
 Create an entity that tracks and follows head movement in an immersive scene.
 
@@ -10,9 +12,11 @@ Create an entity that tracks and follows head movement in an immersive scene.
 
 #### Overview
 
-This sample uses world-tracking data from [`ARKit`](https://developer.apple.com/documentation/arkit) in visionOS to create and display a 3D entity that dynamically moves in front of a person’s view. As the following video shows, the floating sphere’s position updates based on the person’s head movement, to ensure the object stays visible and smoothly follows their view:
+This sample uses world-tracking data from [ARKit](../ARKit/ARKit.md) in visionOS to create and display a 3D entity that dynamically moves in front of a person’s view. As the following video shows, the floating sphere’s position updates based on the person’s head movement, to ensure the object stays visible and smoothly follows their view:
 
-##### Extend the Floats to Enable Calculations
+[Video: A video of a visionOS app in Simulator, displaying a translucent window and a cyan sphere that moves to stay in view as the person moves their head.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-head-tracking-2-main-view.mp4)
+
+##### Extend the floats to enable calculations
 
 The sample adds functionality to existing class types by extending `SIMD3<Float>`, `SIMD4<Float>`, and `simd_float4x4`:
 
@@ -116,7 +120,7 @@ extension Float4x4 {
 }
 ```
 
-##### Update the Entities Over Time
+##### Update the entities over time
 
 The sample sets up a custom system and component to handle updates in real time:
 
@@ -137,7 +141,7 @@ struct ClosureComponent: Component {
 
 The component contains the `closure` variable to track the time. On initialization, it registers `ClosureSystem` into the reality view.
 
-The `ClosureSystem` constructs a query using the [`EntityQuery`](https://developer.apple.com/documentation/realitykit/entityquery) to retrieve all entities with the `ClosureComponent` from the scene. Then it passes the delta time, which is the elapsed time since the last update, to the `closure` variable for each entity:
+The `ClosureSystem` constructs a query using the [`EntityQuery`](../RealityKit/entityquery.md) to retrieve all entities with the `ClosureComponent` from the scene. Then it passes the delta time, which is the elapsed time since the last update, to the `closure` variable for each entity:
 
 ```swift
 import SwiftUI
@@ -159,9 +163,9 @@ struct ClosureSystem: System {
 }
 ```
 
-##### Implement Head Tracking
+##### Implement head tracking
 
-visionOS supports [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) from ARKit to get live data about a device’s position. World tracking requires an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) and a device that supports world tracking. The sample uses the `HeadPositionTracker` to initialize the ARKit session and the [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider):
+visionOS supports [`WorldTrackingProvider`](../ARKit/worldtrackingprovider.md) from ARKit to get live data about a device’s position. World tracking requires an [`ARKitSession`](../ARKit/arkitsession.md) and a device that supports world tracking. The sample uses the `HeadPositionTracker` to initialize the ARKit session and the [`WorldTrackingProvider`](../ARKit/worldtrackingprovider.md):
 
 ```swift
 import SwiftUI
@@ -210,7 +214,7 @@ func originFromDeviceTransform() -> simd_float4x4? {
 }
 ```
 
-##### Display the Sphere That Follows the View
+##### Display the sphere that follows the view
 
 Device tracking is accessible within immersive spaces. The sample creates a custom view that uses a reality view to place a 3D sphere in front of the device’s forward direction at a set distance.
 
@@ -291,15 +295,16 @@ The `setPosition()` method moves the sphere to the new position over a set rate 
 
 ## See Also
 
-- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+### Integrating ARKit
+- [Animating hand models in visionOS](./animating-hand-models-in-visionos.md)
   Substitute a person’s hands with custom models in a fully immersive space.
-- [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](./creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](./tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Applying mesh to real-world surroundings](applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](./applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [Obscuring virtual items in a scene behind real-world items](obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](./obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 
 

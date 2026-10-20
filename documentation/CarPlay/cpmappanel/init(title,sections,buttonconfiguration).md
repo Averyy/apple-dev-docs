@@ -1,7 +1,8 @@
 # init(title:sections:buttonConfiguration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and configures a new map panel for display over your navigation app’s map template.
 
@@ -16,6 +17,10 @@ Creates and configures a new map panel for display over your navigation app’s 
 init(title: String?, sections: [CPMapPanelSection], buttonConfiguration: CPMapPanelButtonConfiguration?)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title sections:(NSArray<CPMapPanelSection *> *) sections buttonConfiguration:(CPMapPanelButtonConfiguration *) buttonConfiguration;
+```
+
 #### Return Value
 
 A new map panel instance.
@@ -23,7 +28,7 @@ A new map panel instance.
 ## Parameters
 
 - `title`: The title of the map panel. This title appears at the top of the panel display. The panel stores a copy of the string you provide.
-- `sections`: The information to display in the panel. Use this parameter to specify route options, charging stations, or other relevant content. If the number of items in this array exceeds the value in the [`maximumPanelItemsCount`](cppanel/maximumpanelitemscount.md) property, the map panel ignores any array items past the maximum. The system stores a copy of the array you provide.
+- `sections`: The information to display in the panel. Use this parameter to specify route options, charging stations, or other relevant content. If the number of items in this array exceeds the value in the [`maximumPanelItemsCount`](../cppanel/maximumpanelitemscount.md) property, the map panel ignores any array items past the maximum. The system stores a copy of the array you provide.
 - `buttonConfiguration`: Optional buttons and travel estimate data to display at the bottom of the panel. Specify `nil` if you don’t want to include any buttons in the panel.
 
 

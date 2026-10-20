@@ -1,7 +1,8 @@
 # FSVolume.AccessCheckHandler
 
 **Framework**: FSKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods and properties implemented by volumes that want to enforce access check operations.
 
@@ -14,47 +15,52 @@ Methods and properties implemented by volumes that want to enforce access check 
 protocol AccessCheckHandler : NSObjectProtocol
 ```
 
+```objc
+@protocol FSVolumeAccessCheckHandler <NSObject>
+```
+
 #### Overview
 
-> ❗ **Important**: This protocol replaces the [`FSVolume.AccessCheckOperations`](fsvolume/accesscheckoperations.md) protocol. It exposes the same functionality, while using the [`FSCheckAccessResult`](fscheckaccessresult.md) object, to align with all other `Handler` protocols.
+> ❗ **Important**: This protocol replaces the [`FSVolume.AccessCheckOperations`](./accesscheckoperations.md) protocol. It exposes the same functionality, while using the [`FSCheckAccessResult`](../fscheckaccessresult.md) object, to align with all other `Handler` protocols.
 
 ## Topics
 
 ### Checking access
-- [func checkAccess(to: FSItem, requestedAccess: FSVolume.AccessMask, context: FSContext, replyHandler: (FSCheckAccessResult?, (any Error)?) -> Void)](fsvolume/accesscheckhandler/checkaccess(to:requestedaccess:context:replyhandler:).md)
+- [func checkAccess(to: FSItem, requestedAccess: FSVolume.AccessMask, context: FSContext, replyHandler: (FSCheckAccessResult?, (any Error)?) -> Void)](./accesscheckhandler/checkaccess%28to,requestedaccess,context,replyhandler%29.md)
   Checks whether the file system allows access to the given item.
-- [FSVolume.AccessMask](fsvolume/accessmask.md)
+- [FSVolume.AccessMask](./accessmask.md)
   A bitmask of access rights.
-- [class FSCheckAccessResult](fscheckaccessresult.md)
+- [class FSCheckAccessResult](../fscheckaccessresult.md)
   The result of a check-access call.
 ### Inspecting volume properties
-- [var isAccessCheckInhibited: Bool](fsvolume/accesscheckhandler/isaccesscheckinhibited.md)
+- [var isAccessCheckInhibited: Bool](./accesscheckhandler/isaccesscheckinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [FSVolume.OpenCloseHandler](fsvolume/openclosehandler.md)
+### Implementing optional handlers
+- [FSVolume.OpenCloseHandler](./openclosehandler.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
-- [FSVolume.ReadWriteHandler](fsvolume/readwritehandler.md)
+- [FSVolume.ReadWriteHandler](./readwritehandler.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
-- [FSVolume.RenameHandler](fsvolume/renamehandler.md)
+- [FSVolume.RenameHandler](./renamehandler.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [FSVolume.PreallocateHandler](fsvolume/preallocatehandler.md)
+- [FSVolume.PreallocateHandler](./preallocatehandler.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
-- [FSVolume.XattrHandler](fsvolume/xattrhandler.md)
+- [FSVolume.XattrHandler](./xattrhandler.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
-- [FSVolume.ItemDeactivationHandler](fsvolume/itemdeactivationhandler.md)
+- [FSVolume.ItemDeactivationHandler](./itemdeactivationhandler.md)
   Methods and properties implemented by volumes that support deactivating items.
-- [FSVolume.KernelOffloadedIOHandler](fsvolume/kerneloffloadediohandler.md)
+- [FSVolume.KernelOffloadedIOHandler](./kerneloffloadediohandler.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
-- [FSVolume.DataCacheHandler](fsvolume/datacachehandler.md)
+- [FSVolume.DataCacheHandler](./datacachehandler.md)
   Methods and properties implemented by volumes that coordinate kernel-level data caching.
-- [FSVolume.SeekRegionHandler](fsvolume/seekregionhandler.md)
+- [FSVolume.SeekRegionHandler](./seekregionhandler.md)
   Methods and properties implemented by volumes that support seek operations
 
 

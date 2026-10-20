@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the destination associated with the action.
 
@@ -17,6 +18,10 @@ Returns the destination associated with the action.
 
 ```swift
 var destination: PDFDestination { get set }
+```
+
+```objc
+@property (nonatomic, strong) PDFDestination * destination;
 ```
 
 #### Return Value

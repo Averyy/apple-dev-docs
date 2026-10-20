@@ -1,7 +1,8 @@
 # uzCard
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let uzCard: PKPaymentNetwork
+```
+
+```c
+extern PKPaymentNetwork const PKPaymentNetworkUzCard;
 ```
 
 

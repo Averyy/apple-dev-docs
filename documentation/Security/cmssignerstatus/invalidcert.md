@@ -1,7 +1,8 @@
 # CMSSignerStatus.invalidCert
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message was signed but the signer’s certificate could not be verified.
 
@@ -13,6 +14,10 @@ The message was signed but the signer’s certificate could not be verified.
 
 ```swift
 case invalidCert
+```
+
+```c
+kCMSSignerInvalidCert
 ```
 
 

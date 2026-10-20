@@ -1,7 +1,8 @@
 # arrayView(withDimensionCount:dimensionSizes:strides:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func arrayView(withDimensionCount numberOfDimensions: Int, dimensionSizes: UnsafePointer<Int>, strides dimStrides: UnsafePointer<Int>) -> MPSNDArray?
+```
+
+```objc
+- (MPSNDArray *) arrayViewWithDimensionCount:(NSUInteger) numberOfDimensions dimensionSizes:(const NSUInteger *) dimensionSizes strides:(const NSUInteger *) dimStrides;
 ```
 
 

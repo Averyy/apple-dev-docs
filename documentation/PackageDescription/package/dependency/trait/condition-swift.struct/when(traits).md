@@ -1,7 +1,8 @@
 # when(traits:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a package dependency trait condition.
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSTimeStamp
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The time in UTC (Coordinated Universal Time).
 
@@ -20,9 +21,14 @@ The time in UTC (Coordinated Universal Time).
 let kCGImagePropertyGPSTimeStamp: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGPSTimeStamp;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGPSDateStamp: CFString](kcgimagepropertygpsdatestamp.md)
+### Timestamp Information
+- [let kCGImagePropertyGPSDateStamp: CFString](./kcgimagepropertygpsdatestamp.md)
   The date and time information relative to Coordinated Universal Time (UTC).
 
 

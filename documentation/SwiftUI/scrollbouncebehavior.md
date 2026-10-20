@@ -1,7 +1,8 @@
 # ScrollBounceBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The ways that a scrollable view can bounce when it reaches the end of its content.
 
@@ -22,33 +23,34 @@ struct ScrollBounceBehavior
 
 #### Overview
 
-Use the [`scrollBounceBehavior(_:axes:)`](view/scrollbouncebehavior(_:axes:).md) view modifier to set a value of this type for a scrollable view, like a [`ScrollView`](scrollview.md) or a [`List`](list.md). The value configures the bounce behavior when people scroll to the end of the view’s content.
+Use the [`scrollBounceBehavior(_:axes:)`](./view/scrollbouncebehavior%28_,axes%29.md) view modifier to set a value of this type for a scrollable view, like a [`ScrollView`](./scrollview.md) or a [`List`](./list.md). The value configures the bounce behavior when people scroll to the end of the view’s content.
 
 You can configure each scrollable axis to use a different bounce mode.
 
 ## Topics
 
 ### Bounce behaviors
-- [static var automatic: ScrollBounceBehavior](scrollbouncebehavior/automatic.md)
+- [static var automatic: ScrollBounceBehavior](./scrollbouncebehavior/automatic.md)
   The automatic behavior.
-- [static var always: ScrollBounceBehavior](scrollbouncebehavior/always.md)
+- [static var always: ScrollBounceBehavior](./scrollbouncebehavior/always.md)
   The scrollable view always bounces.
-- [static var basedOnSize: ScrollBounceBehavior](scrollbouncebehavior/basedonsize.md)
+- [static var basedOnSize: ScrollBounceBehavior](./scrollbouncebehavior/basedonsize.md)
   The scrollable view bounces when its content is large enough to require scrolling.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollBounceBehavior(ScrollBounceBehavior, axes: Axis.Set) -> some View](view/scrollbouncebehavior(_:axes:).md)
+### Configuring scroll bounce behavior
+- [func scrollBounceBehavior(ScrollBounceBehavior, axes: Axis.Set) -> some View](./view/scrollbouncebehavior%28_,axes%29.md)
   Configures the bounce behavior of scrollable views along the specified axis.
-- [var horizontalScrollBounceBehavior: ScrollBounceBehavior](environmentvalues/horizontalscrollbouncebehavior.md)
+- [var horizontalScrollBounceBehavior: ScrollBounceBehavior](./environmentvalues/horizontalscrollbouncebehavior.md)
   The scroll bounce mode for the horizontal axis of scrollable views.
-- [var verticalScrollBounceBehavior: ScrollBounceBehavior](environmentvalues/verticalscrollbouncebehavior.md)
+- [var verticalScrollBounceBehavior: ScrollBounceBehavior](./environmentvalues/verticalscrollbouncebehavior.md)
   The scroll bounce mode for the vertical axis of scrollable views.
 
 

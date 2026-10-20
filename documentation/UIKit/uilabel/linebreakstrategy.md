@@ -1,7 +1,8 @@
 # lineBreakStrategy
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy that the system uses to break lines when laying out multiple lines of text.
 
@@ -18,31 +19,36 @@ The strategy that the system uses to break lines when laying out multiple lines 
 var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get set }
 ```
 
+```objc
+@property (nonatomic) NSLineBreakStrategy lineBreakStrategy;
+```
+
 #### Discussion
 
-The default value is [`standard`](nsparagraphstyle/linebreakstrategy-swift.struct/standard.md).
+The default value is [`standard`](../nsparagraphstyle/linebreakstrategy-swift.struct/standard.md).
 
-> **Note**:  When the label has an attributed string value, the system ignores the [`textColor`](uilabel/textcolor.md), [`font`](uilabel/font.md), [`textAlignment`](uilabel/textalignment.md), [`lineBreakMode`](uilabel/linebreakmode.md), and [`lineBreakStrategy`](uilabel/linebreakstrategy.md) properties. Set the [`NSForegroundColorAttributeName`](nsforegroundcolorattributename.md), [`NSFontAttributeName`](nsfontattributename.md), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
+> **Note**:  When the label has an attributed string value, the system ignores the [`textColor`](./textcolor.md), [`font`](./font.md), [`textAlignment`](./textalignment.md), [`lineBreakMode`](./linebreakmode.md), and [`lineBreakStrategy`](./linebreakstrategy.md) properties. Set the [`NSForegroundColorAttributeName`](../nsforegroundcolorattributename.md), [`NSFontAttributeName`](../nsfontattributename.md), [`alignment`](../nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](../nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](../nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
 
 ## See Also
 
-- [var text: String?](uilabel/text.md)
+### Accessing the text attributes
+- [var text: String?](./text.md)
   The text that the label displays.
-- [var attributedText: NSAttributedString?](uilabel/attributedtext.md)
+- [var attributedText: NSAttributedString?](./attributedtext.md)
   The styled text that the label displays.
-- [var font: UIFont!](uilabel/font.md)
+- [var font: UIFont!](./font.md)
   The font of the text.
-- [var textColor: UIColor!](uilabel/textcolor.md)
+- [var textColor: UIColor!](./textcolor.md)
   The color of the text.
-- [var textAlignment: NSTextAlignment](uilabel/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The technique for aligning the text.
-- [var lineBreakMode: NSLineBreakMode](uilabel/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The technique for wrapping and truncating the label’s text.
-- [var isEnabled: Bool](uilabel/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the label draws its text in an enabled state.
-- [var enablesMarqueeWhenAncestorFocused: Bool](uilabel/enablesmarqueewhenancestorfocused.md)
+- [var enablesMarqueeWhenAncestorFocused: Bool](./enablesmarqueewhenancestorfocused.md)
   A Boolean value that determines whether the label scrolls its text while one of its containing views has focus.
-- [var showsExpansionTextWhenTruncated: Bool](uilabel/showsexpansiontextwhentruncated.md)
+- [var showsExpansionTextWhenTruncated: Bool](./showsexpansiontextwhentruncated.md)
   A Boolean value that determines whether the full text of the label displays when the pointer hovers over the truncated text.
 
 

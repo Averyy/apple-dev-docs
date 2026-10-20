@@ -1,17 +1,22 @@
 # start()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Kicks off the pairing with the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func start() -> IOReturn
+```
+
+```objc
+- (IOReturn) start;
 ```
 
 #### Return Value

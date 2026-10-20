@@ -1,7 +1,8 @@
 # restoreTrainingSession(sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an asynchronous training session for an image classifier by restoring an existing training session’s state from its parameters.
 
@@ -20,7 +21,7 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 #### Return Value
 
-An [`MLTrainingSession`](mltrainingsession.md) that represents the image classifier training session.
+An [`MLTrainingSession`](../mltrainingsession.md) that represents the image classifier training session.
 
 ## Parameters
 
@@ -28,11 +29,12 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the image classif
 
 ## See Also
 
-- [static func makeTrainingSession(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLImageClassifier>](mlimageclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+### Training an image classifier asynchronously
+- [static func makeTrainingSession(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLImageClassifier>](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func train(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLImageClassifier>](mlimageclassifier/train(trainingdata:parameters:sessionparameters:).md)
+- [static func train(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLImageClassifier>](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous image classifier training session with a training dataset represented by a data source.
-- [static func resume(MLTrainingSession<MLImageClassifier>) throws -> MLJob<MLImageClassifier>](mlimageclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLImageClassifier>) throws -> MLJob<MLImageClassifier>](./resume%28_%29.md)
   Begins or continues an asynchronous image classifier training session.
 
 

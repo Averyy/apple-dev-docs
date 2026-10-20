@@ -1,14 +1,15 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- tvOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.1
+- iPadOS 26.0+ - Deprecated in 26.1
+- Mac Catalyst 26.0+ - Deprecated in 26.1
+- tvOS 26.0+ - Deprecated in 26.1
+- visionOS 26.0+ - Deprecated in 26.1
 
 ## Declaration
 

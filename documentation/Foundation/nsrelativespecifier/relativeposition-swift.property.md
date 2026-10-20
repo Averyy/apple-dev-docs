@@ -1,7 +1,8 @@
 # relativePosition
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the relative position encapsulated by the receiver.
 
@@ -15,13 +16,18 @@ Sets the relative position encapsulated by the receiver.
 var relativePosition: NSRelativeSpecifier.RelativePosition { get set }
 ```
 
+```objc
+@property NSRelativePosition relativePosition;
+```
+
 ## Parameters
 
 - `relPos`: The relative position encapsulated by the receiver.
 
 ## See Also
 
-- [var baseSpecifier: NSScriptObjectSpecifier?](nsrelativespecifier/basespecifier.md)
+### Accessing a relative specifier
+- [var baseSpecifier: NSScriptObjectSpecifier?](./basespecifier.md)
   Sets the specifier for the base object.
 
 

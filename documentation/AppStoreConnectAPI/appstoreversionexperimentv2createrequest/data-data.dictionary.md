@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Store version experiment.
 
@@ -10,23 +11,23 @@ The request body you use to create an App Store version experiment.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentV2CreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentV2CreateRequest.Data.Attributes](appstoreversionexperimentv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppStoreVersionExperimentV2CreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an App Store version experiment create request resource.
-- [object AppStoreVersionExperimentV2CreateRequest.Data.Relationships](appstoreversionexperimentv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppStoreVersionExperimentV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (AppStoreVersionExperimentV2CreateRequest.Data.Attributes) *(required)*
 - `relationships` (AppStoreVersionExperimentV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperiments`
 
 
 ---

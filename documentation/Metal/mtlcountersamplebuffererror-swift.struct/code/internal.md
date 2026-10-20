@@ -1,7 +1,8 @@
 # MTLCounterSampleBufferError.Code.internal
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the Metal framework has an internal problem.
 
@@ -19,19 +20,24 @@ An error code that indicates the Metal framework has an internal problem.
 case `internal`
 ```
 
+```c
+MTLCounterSampleBufferErrorInternal
+```
+
 #### Discussion
 
-The local description contains the underlying error code. You can report the scenario that generated this error code with [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com).
+The local description contains the underlying error code. You can report the scenario that generated this error code with [Feedback Assistant](https://feedbackassistant.apple.com).
 
 ## See Also
 
-- [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
+### Error codes
+- [MTLCounterSampleBufferError.Code.outOfMemory](./outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [MTLCounterSampleBufferError.Code.invalid](mtlcountersamplebuffererror-swift.struct/code/invalid.md)
+- [MTLCounterSampleBufferError.Code.invalid](./invalid.md)
   An error code that indicates when a counter-sample buffer descriptor has at least one invalid property.
-- [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
+- [MTLCounterSampleBufferError.Code.outOfMemory](./outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [MTLCounterSampleBufferError.Code.invalid](mtlcountersamplebuffererror-swift.struct/code/invalid.md)
+- [MTLCounterSampleBufferError.Code.invalid](./invalid.md)
   An error code that indicates when a counter-sample buffer descriptor has at least one invalid property.
 
 

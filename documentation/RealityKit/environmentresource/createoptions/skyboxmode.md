@@ -1,7 +1,8 @@
 # skyboxMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Skybox’s preservation in the environment resource.
 

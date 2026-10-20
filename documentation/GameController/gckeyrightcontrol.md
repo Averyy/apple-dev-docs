@@ -1,7 +1,8 @@
 # GCKeyRightControl
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard code for the Control key on the right side of the keyboard.
 
@@ -19,21 +20,26 @@ The keyboard code for the Control key on the right side of the keyboard.
 let GCKeyRightControl: String
 ```
 
+```c
+extern NSString * const GCKeyRightControl;
+```
+
 ## See Also
 
-- [let GCKeyLeftControl: String](gckeyleftcontrol.md)
+### Left- and Right-Side Keys
+- [let GCKeyLeftControl: String](./gckeyleftcontrol.md)
   The keyboard code for the Control key on the left side of the keyboard.
-- [let GCKeyLeftShift: String](gckeyleftshift.md)
+- [let GCKeyLeftShift: String](./gckeyleftshift.md)
   The keyboard code for the Shift key on the left side of the keyboard.
-- [let GCKeyLeftAlt: String](gckeyleftalt.md)
+- [let GCKeyLeftAlt: String](./gckeyleftalt.md)
   The keyboard code for the Option or Alt key on the left side of the keyboard.
-- [let GCKeyLeftGUI: String](gckeyleftgui.md)
+- [let GCKeyLeftGUI: String](./gckeyleftgui.md)
   The keyboard code for the Command key on the left side of the keyboard.
-- [let GCKeyRightShift: String](gckeyrightshift.md)
+- [let GCKeyRightShift: String](./gckeyrightshift.md)
   The keyboard code for the Shift key on the right side of the keyboard.
-- [let GCKeyRightAlt: String](gckeyrightalt.md)
+- [let GCKeyRightAlt: String](./gckeyrightalt.md)
   The keyboard code for the Option or Alt key on the right side of the keyboard.
-- [let GCKeyRightGUI: String](gckeyrightgui.md)
+- [let GCKeyRightGUI: String](./gckeyrightgui.md)
   The keyboard code for the Command key on the right side of the keyboard.
 
 

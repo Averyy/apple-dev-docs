@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that uses the Digital Negative (DNG) archival format.
 
@@ -20,9 +21,13 @@ A dictionary of key-value pairs for an image that uses the Digital Negative (DNG
 let kCGImagePropertyDNGDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGDictionary;
+```
+
 #### Discussion
 
-For more information about the available metadata keys, see [`DNG Image Properties`](dng-image-properties.md).
+For more information about the available metadata keys, see [DNG Image Properties](./dng-image-properties.md).
 
 
 ---

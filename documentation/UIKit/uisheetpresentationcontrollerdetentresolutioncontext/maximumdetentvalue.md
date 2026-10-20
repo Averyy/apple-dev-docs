@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum value of a detent.
@@ -17,9 +18,14 @@ The maximum value of a detent.
 var maximumDetentValue: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat maximumDetentValue;
+```
+
 ## See Also
 
-- [var containerTraitCollection: UITraitCollection](uisheetpresentationcontrollerdetentresolutioncontext/containertraitcollection.md)
+### Accessing the properties of the context
+- [var containerTraitCollection: UITraitCollection](./containertraitcollection.md)
   The trait collection of the sheet’s container view.
 
 

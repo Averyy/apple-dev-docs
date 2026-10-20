@@ -1,7 +1,8 @@
 # reverb
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of reverb in the scene.
 
@@ -20,7 +21,8 @@ var reverb: ARView.Environment.Reverb
 
 ## See Also
 
-- [ARView.Environment.Reverb](arview/environment-swift.struct/reverb-swift.enum.md)
+### Defining acoustic properties
+- [ARView.Environment.Reverb](./reverb-swift.enum.md)
   Reverb characteristics of an environment.
 
 

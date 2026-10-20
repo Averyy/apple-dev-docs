@@ -1,14 +1,15 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,12 @@ init()
 
 ## See Also
 
-- [init(minimum: CGFloat, maximum: CGFloat)](uifloatrange/init(minimum:maximum:)-8dzgq.md)
+### Creating a float range
+- [init(minimum: CGFloat, maximum: CGFloat)](./init%28minimum,maximum%29-8dzgq.md)
   Returns a new float range structure from the given components.
-- [static let infinite: UIFloatRange](uifloatrange/infinite.md)
+- [static let infinite: UIFloatRange](./infinite.md)
   A range whose range is minus infinity to infinity.
-- [static let zero: UIFloatRange](uifloatrange/zero.md)
+- [static let zero: UIFloatRange](./zero.md)
   A range whose minimum and maximum are both `0.0`.
 
 

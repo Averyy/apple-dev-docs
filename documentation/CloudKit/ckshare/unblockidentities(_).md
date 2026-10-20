@@ -1,7 +1,8 @@
 # unblockIdentities(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unblocks previously blocked users, allowing them to request access again.
 
@@ -20,9 +21,13 @@ Unblocks previously blocked users, allowing them to request access again.
 func unblockIdentities(_ blockedIdentities: [CKShare.BlockedIdentity])
 ```
 
+```objc
+- (void) unblockIdentities:(NSArray<CKShareBlockedIdentity *> *) blockedIdentities;
+```
+
 #### Discussion
 
-Use this method to remove specified identities from the [`blockedIdentities`](ckshare/blockedidentities.md) array. Unblocked identities can request access again if the [`allowsAccessRequests`](ckshare/allowsaccessrequests.md) is enabled.
+Use this method to remove specified identities from the [`blockedIdentities`](./blockedidentities.md) array. Unblocked identities can request access again if the [`allowsAccessRequests`](./allowsaccessrequests.md) is enabled.
 
 To persist this change, save the share to the server after calling this method.
 
@@ -30,7 +35,7 @@ Only the share owner or an administrator can invoke this method. Attempts by oth
 
 ## Parameters
 
-- `blockedIdentities`: An array of [`CKShare.BlockedIdentity`](ckshare/blockedidentity.md) objects to unblock.
+- `blockedIdentities`: An array of [`CKShare.BlockedIdentity`](./blockedidentity.md) objects to unblock.
 
 
 ---

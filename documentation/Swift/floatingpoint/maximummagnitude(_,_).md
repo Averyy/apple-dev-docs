@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Returns the value with greater magnitude.
@@ -40,12 +41,18 @@ Double.maximumMagnitude(.nan, .nan)
 // nan
 ```
 
-The `maximumMagnitude` method implements the `maxNumMag` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `maximumMagnitude` method implements the `maxNumMag` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
 - `x`: A floating-point value.
 - `y`: Another floating-point value.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [static func maximumMagnitude(Self, Self) -> Self](./maximummagnitude%28_,_%29-1e1x7.md)
+  Returns the value with greater magnitude.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(userActivity:options:preview:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activation configuration.
 
@@ -9,7 +10,7 @@ Creates an activation configuration.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.openPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An opening punctuation mark of a pair.
 
@@ -22,7 +23,7 @@ case openPunctuation
 
 #### Discussion
 
-This value corresponds to the category `Open_Punctuation` (abbreviated `Ps`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Open_Punctuation` (abbreviated `Ps`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

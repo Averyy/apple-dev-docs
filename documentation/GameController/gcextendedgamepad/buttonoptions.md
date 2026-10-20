@@ -1,7 +1,8 @@
 # buttonOptions
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s secondary menu button element.
 
@@ -19,23 +20,28 @@ The controller’s secondary menu button element.
 var buttonOptions: GCControllerButtonInput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GCControllerButtonInput * buttonOptions;
+```
+
 #### Discussion
 
 You can use the secondary menu to configure graphics and sound, and to pause the game.
 
 ## See Also
 
-- [var buttonMenu: GCControllerButtonInput](gcextendedgamepad/buttonmenu.md)
+### Getting face button inputs
+- [var buttonMenu: GCControllerButtonInput](./buttonmenu.md)
   The primary menu button element that players use to enter the main menu and pause the game.
-- [var buttonHome: GCControllerButtonInput?](gcextendedgamepad/buttonhome.md)
+- [var buttonHome: GCControllerButtonInput?](./buttonhome.md)
   The main menu button element that players use to enter the secondary menu and pause the game.
-- [var buttonA: GCControllerButtonInput](gcextendedgamepad/buttona.md)
+- [var buttonA: GCControllerButtonInput](./buttona.md)
   The bottom face button that uses *A* or another indicator as its label.
-- [var buttonB: GCControllerButtonInput](gcextendedgamepad/buttonb.md)
+- [var buttonB: GCControllerButtonInput](./buttonb.md)
   The right face button that uses *B* or another indicator as its label.
-- [var buttonX: GCControllerButtonInput](gcextendedgamepad/buttonx.md)
+- [var buttonX: GCControllerButtonInput](./buttonx.md)
   The left face button that uses *X* or another indicator as its label.
-- [var buttonY: GCControllerButtonInput](gcextendedgamepad/buttony.md)
+- [var buttonY: GCControllerButtonInput](./buttony.md)
   The top face button that uses *Y* or another indicator as its label.
 
 

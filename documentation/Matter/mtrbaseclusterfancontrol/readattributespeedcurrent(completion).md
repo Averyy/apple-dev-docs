@@ -1,7 +1,8 @@
 # readAttributeSpeedCurrent(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSpeedCurrent(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSpeedCurrent() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSpeedCurrentWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,14 +1,15 @@
 # kBluetoothHCICommandSetEventFilter
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandSetEventFilter = 0x0005
 ```
 

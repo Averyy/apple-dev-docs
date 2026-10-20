@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWResponseAddressError](1645955-anonymous/kfwresponseaddresserror.md)
-- [kFWResponseBusResetError](1645955-anonymous/kfwresponsebusreseterror.md)
-- [kFWResponseComplete](1645955-anonymous/kfwresponsecomplete.md)
-- [kFWResponseConflictError](1645955-anonymous/kfwresponseconflicterror.md)
-- [kFWResponseDataError](1645955-anonymous/kfwresponsedataerror.md)
-- [kFWResponsePending](1645955-anonymous/kfwresponsepending.md)
-- [kFWResponseTypeError](1645955-anonymous/kfwresponsetypeerror.md)
+- [kFWResponseAddressError](./api-1645955-anonymous/kfwresponseaddresserror.md)
+- [kFWResponseBusResetError](./api-1645955-anonymous/kfwresponsebusreseterror.md)
+- [kFWResponseComplete](./api-1645955-anonymous/kfwresponsecomplete.md)
+- [kFWResponseConflictError](./api-1645955-anonymous/kfwresponseconflicterror.md)
+- [kFWResponseDataError](./api-1645955-anonymous/kfwresponsedataerror.md)
+- [kFWResponsePending](./api-1645955-anonymous/kfwresponsepending.md)
+- [kFWResponseTypeError](./api-1645955-anonymous/kfwresponsetypeerror.md)
 
 
 ---

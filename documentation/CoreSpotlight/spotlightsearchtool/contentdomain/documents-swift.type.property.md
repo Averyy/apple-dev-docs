@@ -1,7 +1,8 @@
 # documents
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Documents, notes, and text-heavy content.
 
@@ -20,9 +21,10 @@ static var documents: SpotlightSearchTool.ContentDomain { get }
 
 ## See Also
 
-- [static func documents(SpotlightSearchTool.ContentDomain.Documents) -> SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/documents(_:).md)
+### Getting the documents domain
+- [static func documents(SpotlightSearchTool.ContentDomain.Documents) -> SpotlightSearchTool.ContentDomain](./documents%28_%29.md)
   Documents, notes, and text-heavy content with custom attribute mapping.
-- [SpotlightSearchTool.ContentDomain.Documents](spotlightsearchtool/contentdomain/documents-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.Documents](./documents-swift.struct.md)
   Attribute mapping for the documents domain.
 
 

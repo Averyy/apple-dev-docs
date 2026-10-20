@@ -1,7 +1,8 @@
 # deviceController(_:getNodesWithStoredDataWithReply:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+optional func deviceController(_ controller: UUID, getNodesWithStoredDataWithReply reply: @escaping @Sendable ([NSNumber]) -> Void)
+```
+
+```swift
 optional func deviceControllerGetNodesWithStoredData(_ controller: UUID) async -> [NSNumber]
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller getNodesWithStoredDataWithReply:(void (^)(NSArray<NSNumber *> *)) reply;
 ```
 
 

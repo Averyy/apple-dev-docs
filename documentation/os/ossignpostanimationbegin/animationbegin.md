@@ -1,7 +1,8 @@
 # OSSignpostAnimationBegin.animationBegin
 
 **Framework**: os  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A signpost that marks the start of an animation.
 
@@ -11,7 +12,7 @@ A signpost that marks the start of an animation.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

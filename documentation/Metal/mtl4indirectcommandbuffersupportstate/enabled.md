@@ -1,7 +1,8 @@
 # MTL4IndirectCommandBufferSupportState.enabled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enables support for indirect command buffers.
 
@@ -17,6 +18,10 @@ Enables support for indirect command buffers.
 
 ```swift
 case enabled
+```
+
+```c
+MTL4IndirectCommandBufferSupportStateEnabled
 ```
 
 

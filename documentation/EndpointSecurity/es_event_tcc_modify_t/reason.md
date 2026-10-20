@@ -1,18 +1,23 @@
 # reason
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ess_tcc_authorization_reason_t
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var reason: es_tcc_authorization_reason_t
+```
+
+```c
+es_tcc_authorization_reason_t reason;
 ```
 
 #### Discussion

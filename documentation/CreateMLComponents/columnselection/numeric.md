@@ -1,7 +1,8 @@
 # ColumnSelection.numeric
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Select all numeric columns in the data frame.
 
@@ -26,11 +27,12 @@ Numeric columns are columns with elements of type `Int`, `UInt8`, `Float`, `Doub
 
 ## See Also
 
-- [ColumnSelection.all](columnselection/all.md)
+### Column selection types
+- [ColumnSelection.all](./all.md)
   Select all columns in the data frame.
-- [ColumnSelection.exclude(columnNames:)](columnselection/exclude(columnnames:).md)
+- [ColumnSelection.exclude(columnNames:)](./exclude%28columnnames%29.md)
   Selects all columns except the specified columns.
-- [ColumnSelection.include(columnNames:)](columnselection/include(columnnames:).md)
+- [ColumnSelection.include(columnNames:)](./include%28columnnames%29.md)
   Selects only the specified columns.
 
 

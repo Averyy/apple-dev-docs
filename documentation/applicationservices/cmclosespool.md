@@ -1,7 +1,8 @@
 # cmCloseSpool
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Directs the function to complete the data transfer.
 

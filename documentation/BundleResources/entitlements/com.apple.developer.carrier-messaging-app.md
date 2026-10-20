@@ -1,7 +1,8 @@
 # Default Carrier Messaging App
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.
 
@@ -9,9 +10,10 @@ A Boolean value that indicates whether the app can use the TelephonyMessagingKit
 - iOS 26.0+
 - iPadOS 26.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.carrier-messaging-app`
+- **Type**: boolean
 
 #### Discussion
 

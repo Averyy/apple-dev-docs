@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum ataSocketType : unsigned int {
     ...
 };
@@ -17,24 +17,25 @@ enum ataSocketType : unsigned int {
 ## Topics
 
 ### Constants
-- [kInternalATASocket](atasockettype/kinternalatasocket.md)
-- [kInternalSATA](atasockettype/kinternalsata.md)
-- [kInternalSATA2](atasockettype/kinternalsata2.md)
-- [kMediaBaySocket](atasockettype/kmediabaysocket.md)
-- [kPCCardSocket](atasockettype/kpccardsocket.md)
-- [kSATA2Bay](atasockettype/ksata2bay.md)
-- [kSATABay](atasockettype/ksatabay.md)
-- [kUnknownSocket](atasockettype/kunknownsocket.md)
+- [kInternalATASocket](./atasockettype/kinternalatasocket.md)
+- [kInternalSATA](./atasockettype/kinternalsata.md)
+- [kInternalSATA2](./atasockettype/kinternalsata2.md)
+- [kMediaBaySocket](./atasockettype/kmediabaysocket.md)
+- [kPCCardSocket](./atasockettype/kpccardsocket.md)
+- [kSATA2Bay](./atasockettype/ksata2bay.md)
+- [kSATABay](./atasockettype/ksatabay.md)
+- [kUnknownSocket](./atasockettype/kunknownsocket.md)
 
 ## See Also
 
-- [ataDeviceType](atadevicetype.md)
-- [ataEventCode](ataeventcode.md)
-- [ataFlags](ataflags.md)
-- [ataOpcode](ataopcode.md)
-- [ataRegMask](ataregmask.md)
-- [ataUnitID](ataunitid.md)
-- [atapiConfig](atapiconfig.md)
+### Additional Types
+- [ataDeviceType](./atadevicetype.md)
+- [ataEventCode](./ataeventcode.md)
+- [ataFlags](./ataflags.md)
+- [ataOpcode](./ataopcode.md)
+- [ataRegMask](./ataregmask.md)
+- [ataUnitID](./ataunitid.md)
+- [atapiConfig](./atapiconfig.md)
 
 
 ---

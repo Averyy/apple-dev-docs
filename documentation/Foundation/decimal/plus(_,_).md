@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds two decimal numbers.
 
@@ -26,7 +27,7 @@ The result of adding `lhs` and `rhs`.
 
 #### Discussion
 
-If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalAdd(_:_:_:_:)`](nsdecimaladd(_:_:_:_:).md) function instead.
+If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](../nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalAdd(_:_:_:_:)`](../nsdecimaladd%28_,_,_,_%29.md) function instead.
 
 ## Parameters
 

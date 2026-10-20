@@ -1,7 +1,8 @@
 # HMError.Code.maximumAccessoriesOfTypeInHome
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The home already has the maximum number of accessories of the given type.
 
@@ -19,11 +20,16 @@ The home already has the maximum number of accessories of the given type.
 case maximumAccessoriesOfTypeInHome
 ```
 
+```c
+HMErrorCodeMaximumAccessoriesOfTypeInHome
+```
+
 ## See Also
 
-- [HMError.Code.roomForHomeCannotBeInZone](hmerror/code/roomforhomecannotbeinzone.md)
+### Home and room errors
+- [HMError.Code.roomForHomeCannotBeInZone](./roomforhomecannotbeinzone.md)
   An attempt to add the room that represents the entire home to a zone.
-- [HMError.Code.roomForHomeCannotBeUpdated](hmerror/code/roomforhomecannotbeupdated.md)
+- [HMError.Code.roomForHomeCannotBeUpdated](./roomforhomecannotbeupdated.md)
   An attempt to change the room that represents the entire home.
 
 

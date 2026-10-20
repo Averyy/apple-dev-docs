@@ -1,7 +1,8 @@
 # summary
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the key takeaways or features of the chart.
 
@@ -18,6 +19,10 @@ A description of the key takeaways or features of the chart.
 
 ```swift
 var summary: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * summary;
 ```
 
 #### Discussion

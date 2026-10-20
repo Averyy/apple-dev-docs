@@ -1,7 +1,8 @@
 # UITextView.TextDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct TextDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(textView: UITextView)](uitextview/textdidchangemessage/init(textview:).md)
+- [init(textView: UITextView)](./textdidchangemessage/init%28textview%29.md)
 ### Instance Properties
-- [var textView: UITextView](uitextview/textdidchangemessage/textview.md)
+- [var textView: UITextView](./textdidchangemessage/textview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

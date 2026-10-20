@@ -1,7 +1,8 @@
 # SectorPlot
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents a collection of data using a sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
@@ -22,7 +23,7 @@ struct SectorPlot<Content>
 
 #### Overview
 
-Use `SectorPlot` when you want to visualize data in the same way as with [`SectorMark`](sectormark.md), but you want to visualize an entire data collection with a single plot.
+Use `SectorPlot` when you want to visualize data in the same way as with [`SectorMark`](./sectormark.md), but you want to visualize an entire data collection with a single plot.
 
 You can initialize and style the plot with simple values or key paths. Add modifiers with `KeyPath` before adding modifiers with simple values.
 
@@ -39,39 +40,40 @@ SectorPlot(
 ## Topics
 
 ### Plotting sectors from a collection
-- [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: CGFloat?)](sectorplot/init(_:angle:innerradius:outerradius:angularinset:)-1ed01.md)
-- [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: KeyPath<SectorPlot<Content>.DataElement, CGFloat>)](sectorplot/init(_:angle:innerradius:outerradius:angularinset:)-9pmo7.md)
+- [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: CGFloat?)](./sectorplot/init%28_,angle,innerradius,outerradius,angularinset%29-1ed01.md)
+- [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: KeyPath<SectorPlot<Content>.DataElement, CGFloat>)](./sectorplot/init%28_,angle,innerradius,outerradius,angularinset%29-9pmo7.md)
 ### Supporting types
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [struct VectorizedSectorPlotContent](vectorizedsectorplotcontent.md)
+- [struct VectorizedSectorPlotContent](./vectorizedsectorplotcontent.md)
   An opaque vectorized chart content type.
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [VectorizedChartContent](vectorizedchartcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [VectorizedChartContent](./vectorizedchartcontent.md)
 
 ## See Also
 
-- [Creating a data visualization dashboard with Swift Charts](creating-a-data-visualization-dashboard-with-swift-charts.md)
+### Vectorized plots
+- [Creating a data visualization dashboard with Swift Charts](./creating-a-data-visualization-dashboard-with-swift-charts.md)
   Visualize an entire data collection efficiently by instantiating a single vectorized plot in Swift Charts.
-- [struct AreaPlot](areaplot.md)
+- [struct AreaPlot](./areaplot.md)
   Chart content that represents a function or a collection of data using the area of one or more regions.
-- [struct LinePlot](lineplot.md)
+- [struct LinePlot](./lineplot.md)
   Chart content that represents a function or a collection of data using a sequence of connected line segments.
-- [struct PointPlot](pointplot.md)
+- [struct PointPlot](./pointplot.md)
   Chart content that represents a collection of data using points.
-- [struct RectanglePlot](rectangleplot.md)
+- [struct RectanglePlot](./rectangleplot.md)
   Chart content that represents a collection of data using rectangles.
-- [struct RulePlot](ruleplot.md)
+- [struct RulePlot](./ruleplot.md)
   Chart content that represents a collection of data using a single horizontal or vertical rule.
-- [struct BarPlot](barplot.md)
+- [struct BarPlot](./barplot.md)
   Chart content that represents a collection of data using bars.
-- [protocol VectorizedChartContent](vectorizedchartcontent.md)
+- [protocol VectorizedChartContent](./vectorizedchartcontent.md)
   A generic type that represents content conveyed via a chart.
 
 

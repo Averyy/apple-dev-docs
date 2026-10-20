@@ -1,7 +1,8 @@
 # removeAll(keepCapacity:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all anchors from the collection.
 
@@ -11,7 +12,7 @@ Removes all anchors from the collection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,11 +27,12 @@ Removes all anchors from the collection.
 
 ## See Also
 
-- [func remove(any HasAnchoring)](scene/anchorcollection/remove(_:).md)
+### Removing anchors
+- [func remove(any HasAnchoring)](./remove%28_%29.md)
   Removes the anchor at the specified position.
-- [func remove(at: Int)](scene/anchorcollection/remove(at:).md)
+- [func remove(at: Int)](./remove%28at%29.md)
   Removes and returns the anchor at the specified position.
-- [func removeAll()](scene/anchorcollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Removes all anchors from the collection.
 
 

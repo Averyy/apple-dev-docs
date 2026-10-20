@@ -1,7 +1,8 @@
 # kMDItemFocalLength
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The actual focal length of the lens, in millimeters.  A CFNumber.
 
@@ -12,6 +13,10 @@ The actual focal length of the lens, in millimeters.  A CFNumber.
 
 ```swift
 let kMDItemFocalLength: CFString!
+```
+
+```c
+const CFStringRef kMDItemFocalLength;
 ```
 
 

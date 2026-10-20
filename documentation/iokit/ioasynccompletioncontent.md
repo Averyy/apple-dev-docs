@@ -1,7 +1,8 @@
 # IOAsyncCompletionContent
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,12 +14,18 @@
 struct IOAsyncCompletionContent
 ```
 
+```c
+typedef struct IOAsyncCompletionContent {
+    ...
+} IOAsyncCompletionContent;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](ioasynccompletioncontent/1514427-init.md)
+- [init()](./ioasynccompletioncontent/api-1514427-init.md)
 ### Instance Properties
-- [var result: IOReturn](ioasynccompletioncontent/1455594-result.md)
+- [var result: IOReturn](./ioasynccompletioncontent/api-1455594-result.md)
 
 
 ---

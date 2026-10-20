@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mobile identity document holder’s height on record with the issuer.
 

@@ -12,25 +12,25 @@ When users tap or click a universal link, the system redirects the link directly
 
 When someone installs your app, the system checks a file stored on your web server to verify that your website allows your app to open URLs on its behalf. Only you can store this file on your server, securing the association of your website and your app.
 
-##### Support Universal Links
+##### Support universal links
 
 Take the following steps to support universal links:
 
-1. Create a two-way association between your app and your website and specify the URLs that your app handles, as described in [`Supporting associated domains`](supporting-associated-domains.md).
-2. Update your app delegate to respond to the user activity object the system provides when a universal link routes to your app, as described in [`Supporting universal links in your app`](supporting-universal-links-in-your-app.md).
+1. Create a two-way association between your app and your website and specify the URLs that your app handles, as described in [Supporting associated domains](./supporting-associated-domains.md).
+2. Update your app delegate to respond to the user activity object the system provides when a universal link routes to your app, as described in [Supporting universal links in your app](./supporting-universal-links-in-your-app.md).
 
-With universal links, users open your app when they click links to your website within their browser app and [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), and when they click links that result in a call to:
+With universal links, users open your app when they click links to your website within their browser app and [`WKWebView`](../WebKit/wkwebview.md), and when they click links that result in a call to:
 
-- [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) in iOS and tvOS
-- [`openSystemURL(_:)`](https://developer.apple.com/documentation/watchkit/wkextension/opensystemurl(_:)) in watchOS
-- [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/open(_:withapplicationat:configuration:completionhandler:)) in macOS
-- [`openURL`](https://developer.apple.com/documentation/swiftui/environmentvalues/openurl) in SwiftUI
+- [`open(_:options:completionHandler:)`](../UIKit/uiapplication/open%28_,options,completionhandler%29.md) in iOS and tvOS
+- [`openSystemURL(_:)`](../WatchKit/wkextension/opensystemurl%28_%29.md) in watchOS
+- [`open(_:withApplicationAt:configuration:completionHandler:)`](../AppKit/nsworkspace/open%28_,withapplicationat,configuration,completionhandler%29.md) in macOS
+- [`openURL`](../SwiftUI/environmentvalues/openurl.md) in SwiftUI
 
 > **Note**: If your app uses one of the above methods to open a universal link to your website, the link won’t open in your app.
 
 When a user browses your website in Safari and taps a universal link in the same domain, the system opens that link in Safari, respecting the user’s most likely intent to continue within the browser. If the user taps a universal link in a different domain, the system opens the link in your app.
 
-##### Communicate with Other Apps
+##### Communicate with other apps
 
 Apps can communicate through universal links. Supporting universal links allows other apps to send small amounts of data directly to your app without using a third-party server. 
 
@@ -43,10 +43,10 @@ https://myphotoapp.example.com/albums?albumname=wedding&index=17
 
 Other apps craft URLs based on your domain, path, and parameters and ask your app to open them by calling:
 
-- The [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) in iOS and tvOS
-- The [`openSystemURL(_:)`](https://developer.apple.com/documentation/watchkit/wkextension/opensystemurl(_:)) method of [`WKExtension`](https://developer.apple.com/documentation/watchkit/wkextension) in watchOS
-- The [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/open(_:withapplicationat:configuration:completionhandler:)) method of [`NSWorkspace`](https://developer.apple.com/documentation/appkit/nsworkspace) in macOS
-- The [`openURL`](https://developer.apple.com/documentation/swiftui/environmentvalues/openurl) environment value in SwiftUI
+- The [`open(_:options:completionHandler:)`](../UIKit/uiapplication/open%28_,options,completionhandler%29.md) method of [`UIApplication`](../UIKit/uiapplication.md) in iOS and tvOS
+- The [`openSystemURL(_:)`](../WatchKit/wkextension/opensystemurl%28_%29.md) method of [`WKExtension`](../WatchKit/wkextension.md) in watchOS
+- The [`open(_:withApplicationAt:configuration:completionHandler:)`](../AppKit/nsworkspace/open%28_,withapplicationat,configuration,completionhandler%29.md) method of [`NSWorkspace`](../AppKit/nsworkspace.md) in macOS
+- The [`openURL`](../SwiftUI/environmentvalues/openurl.md) environment value in SwiftUI
 
 The calling app can ask the system to inform it when your app opens the URL.
 
@@ -93,21 +93,21 @@ if let appURL = URL(string: "https://myphotoapp.example.com/albums?albumname=vac
 }
 ```
 
-For more information on handling links within your app, see [`Supporting universal links in your app`](supporting-universal-links-in-your-app.md).
+For more information on handling links within your app, see [Supporting universal links in your app](./supporting-universal-links-in-your-app.md).
 
 ## Topics
 
 ### Universal links
-- [Supporting universal links in your app](supporting-universal-links-in-your-app.md)
+- [Supporting universal links in your app](./supporting-universal-links-in-your-app.md)
   Prepare your app to respond to an incoming universal link.
 ### Associated domains
-- [Supporting associated domains](supporting-associated-domains.md)
+- [Supporting associated domains](./supporting-associated-domains.md)
   Connect your app and a website to provide both a native app and a browser experience.
 ### Custom URLs
-- [Defining a custom URL scheme for your app](defining-a-custom-url-scheme-for-your-app.md)
+- [Defining a custom URL scheme for your app](./defining-a-custom-url-scheme-for-your-app.md)
   Use specially formatted URLs to link to content within your app.
 ### Default apps
-- [Preparing your app to be the default web browser](preparing-your-app-to-be-the-default-browser.md)
+- [Preparing your app to be the default web browser](./preparing-your-app-to-be-the-default-browser.md)
   Configure your browser app so users can set it as the default on their device instead of Safari.
 
 

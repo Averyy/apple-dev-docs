@@ -1,7 +1,8 @@
 # GL_TIMEOUT_EXPIRED
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_TIMEOUT_EXPIRED: Int32 { get }
+```
+
+```c
+#define GL_TIMEOUT_EXPIRED
 ```
 
 

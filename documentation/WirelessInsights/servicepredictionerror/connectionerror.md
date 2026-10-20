@@ -1,7 +1,8 @@
 # ServicePredictionError.connectionError
 
 **Framework**: WirelessInsights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unexpected error occurred while setting up the event stream.
 

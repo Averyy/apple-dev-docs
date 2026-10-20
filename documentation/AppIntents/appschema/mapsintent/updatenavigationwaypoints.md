@@ -1,7 +1,8 @@
 # updateNavigationWaypoints
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that updates the list of waypoints for a navigation session.
 
@@ -20,7 +21,7 @@ var updateNavigationWaypoints: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `maps` domain and one of your app’s actions matches the `updateNavigationWaypoints` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .maps.updateNavigationWaypoints)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `maps` domain and one of your app’s actions matches the `updateNavigationWaypoints` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .maps.updateNavigationWaypoints)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `updateNavigationWaypoints` schema:
 
@@ -53,21 +54,22 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
+### Actions
+- [var reportIncident: some AppSchemaIntent](./reportincident.md)
   An intent schema that reports a traffic incident on the route.
-- [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)
+- [var shareETA: some AppSchemaIntent](./shareeta.md)
   An intent schema that shares ETA to a contact while navigating.
-- [var startNavigation: some AppSchemaIntent](appschema/mapsintent/startnavigation.md)
+- [var startNavigation: some AppSchemaIntent](./startnavigation.md)
   An intent schema that starts navigation.
-- [var stopNavigation: some AppSchemaIntent](appschema/mapsintent/stopnavigation.md)
+- [var stopNavigation: some AppSchemaIntent](./stopnavigation.md)
   An intent schema that ends navigation.
-- [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
+- [var stopShareETA: some AppSchemaIntent](./stopshareeta.md)
   An intent schema that stops sharing ETA.
-- [AppSchema.MapsIntent](appschema/mapsintent.md)
+- [AppSchema.MapsIntent](../mapsintent.md)
   Identifies intent schemas in the maps domain.
 
 

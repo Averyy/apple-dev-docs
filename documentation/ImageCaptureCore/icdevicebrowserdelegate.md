@@ -1,16 +1,17 @@
 # ICDeviceBrowserDelegate
 
 **Framework**: ImageCaptureCore  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for managing the addition and removal of devices and responding to device changes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,36 +19,41 @@ Methods for managing the addition and removal of devices and responding to devic
 protocol ICDeviceBrowserDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol ICDeviceBrowserDelegate <NSObject>
+```
+
 ## Topics
 
 ### Adding and Removing Devices
-- [func deviceBrowser(ICDeviceBrowser, didAdd: ICDevice, moreComing: Bool)](icdevicebrowserdelegate/devicebrowser(_:didadd:morecoming:).md)
+- [func deviceBrowser(ICDeviceBrowser, didAdd: ICDevice, moreComing: Bool)](./icdevicebrowserdelegate/devicebrowser%28_,didadd,morecoming%29.md)
   Tells the delegate that a device has been added.
-- [func deviceBrowser(ICDeviceBrowser, didRemove: ICDevice, moreGoing: Bool)](icdevicebrowserdelegate/devicebrowser(_:didremove:moregoing:).md)
+- [func deviceBrowser(ICDeviceBrowser, didRemove: ICDevice, moreGoing: Bool)](./icdevicebrowserdelegate/devicebrowser%28_,didremove,moregoing%29.md)
   Tells the delegate that a device has been removed.
-- [func deviceBrowserDidEnumerateLocalDevices(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserdidenumeratelocaldevices(_:).md)
-  Tells the delegate that the device browser has completed sending [`deviceBrowser(_:didAdd:moreComing:)`](icdevicebrowserdelegate/devicebrowser(_:didadd:morecoming:).md) for all local devices.
+- [func deviceBrowserDidEnumerateLocalDevices(ICDeviceBrowser)](./icdevicebrowserdelegate/devicebrowserdidenumeratelocaldevices%28_%29.md)
+  Tells the delegate that the device browser has completed sending [`deviceBrowser(_:didAdd:moreComing:)`](./icdevicebrowserdelegate/devicebrowser%28_,didadd,morecoming%29.md) for all local devices.
 ### Responding to Device Changes
-- [func deviceBrowser(ICDeviceBrowser, requestsSelect: ICDevice)](icdevicebrowserdelegate/devicebrowser(_:requestsselect:).md)
+- [func deviceBrowser(ICDeviceBrowser, requestsSelect: ICDevice)](./icdevicebrowserdelegate/devicebrowser%28_,requestsselect%29.md)
   Tells the delegate when an event occurs on the device that may be of interest to the client application.
-- [func deviceBrowser(ICDeviceBrowser, deviceDidChangeName: ICDevice)](icdevicebrowserdelegate/devicebrowser(_:devicedidchangename:).md)
+- [func deviceBrowser(ICDeviceBrowser, deviceDidChangeName: ICDevice)](./icdevicebrowserdelegate/devicebrowser%28_,devicedidchangename%29.md)
   Tells the delegate when the name of a device changes.
-- [func deviceBrowser(ICDeviceBrowser, deviceDidChangeSharingState: ICDevice)](icdevicebrowserdelegate/devicebrowser(_:devicedidchangesharingstate:).md)
+- [func deviceBrowser(ICDeviceBrowser, deviceDidChangeSharingState: ICDevice)](./icdevicebrowserdelegate/devicebrowser%28_,devicedidchangesharingstate%29.md)
   Tells the delegate when the sharing state of a device changes.
 ### Instance Methods
-- [func deviceBrowserDidCancelSuspendOperations(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserdidcancelsuspendoperations(_:).md)
-- [func deviceBrowserDidResumeOperations(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserdidresumeoperations(_:).md)
-- [func deviceBrowserDidSuspendOperations(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserdidsuspendoperations(_:).md)
-- [func deviceBrowserWillSuspendOperations(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserwillsuspendoperations(_:).md)
+- [func deviceBrowserDidCancelSuspendOperations(ICDeviceBrowser)](./icdevicebrowserdelegate/devicebrowserdidcancelsuspendoperations%28_%29.md)
+- [func deviceBrowserDidResumeOperations(ICDeviceBrowser)](./icdevicebrowserdelegate/devicebrowserdidresumeoperations%28_%29.md)
+- [func deviceBrowserDidSuspendOperations(ICDeviceBrowser)](./icdevicebrowserdelegate/devicebrowserdidsuspendoperations%28_%29.md)
+- [func deviceBrowserWillSuspendOperations(ICDeviceBrowser)](./icdevicebrowserdelegate/devicebrowserwillsuspendoperations%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any ICDeviceBrowserDelegate)?](icdevicebrowser/delegate.md)
+### Managing Device Browsing
+- [var delegate: (any ICDeviceBrowserDelegate)?](./icdevicebrowser/delegate.md)
   The object that acts as the delegate of the device browser.
 
 

@@ -1,14 +1,15 @@
 # in_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef unsigned int (*in_func)(void *, unsigned char **);
 ```
 

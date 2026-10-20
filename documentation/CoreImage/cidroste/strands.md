@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@
 var strands: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float strands;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cidroste/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var insetPoint0: CGPoint](cidroste/insetpoint0.md)
-- [var insetPoint1: CGPoint](cidroste/insetpoint1.md)
-- [var periodicity: Float](cidroste/periodicity.md)
-- [var rotation: Float](cidroste/rotation.md)
-- [var zoom: Float](cidroste/zoom.md)
+- [var insetPoint0: CGPoint](./insetpoint0.md)
+- [var insetPoint1: CGPoint](./insetpoint1.md)
+- [var periodicity: Float](./periodicity.md)
+- [var rotation: Float](./rotation.md)
+- [var zoom: Float](./zoom.md)
 
 
 ---

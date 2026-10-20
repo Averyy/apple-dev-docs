@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An offset, in bytes, into the buffer instance this tensor shares its storage with, or zero if this tensor does not wrap an underlying buffer.
@@ -18,6 +19,10 @@ An offset, in bytes, into the buffer instance this tensor shares its storage wit
 
 ```swift
 var bufferOffset: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger bufferOffset;
 ```
 
 

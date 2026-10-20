@@ -1,7 +1,8 @@
 # immediatelyAvailableMetadataOnly
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specify this constant if you want to read an item’s metadata without triggering a download.
 
@@ -20,6 +21,10 @@ Specify this constant if you want to read an item’s metadata without triggerin
 static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions { get }
 ```
 
+```c
+NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly
+```
+
 #### Discussion
 
 Specifying this option grants the coordinated read immediately (barring any conflicts with other readers, writers or file presenters on the same system), instead of waiting for the system to download the file’s contents and any additional metadata (for example, conflicting versions or thumbnails).
@@ -28,9 +33,10 @@ Attempting to actually read the item’s contents during this coordinated read m
 
 ## See Also
 
-- [static var withoutChanges: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/withoutchanges.md)
-- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/resolvessymboliclink.md)
-- [static var forUploading: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/foruploading.md)
+### Constants
+- [static var withoutChanges: NSFileCoordinator.ReadingOptions](./withoutchanges.md)
+- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](./resolvessymboliclink.md)
+- [static var forUploading: NSFileCoordinator.ReadingOptions](./foruploading.md)
   Specify this content when reading an item for the purpose of uploading its contents.
 
 

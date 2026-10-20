@@ -1,7 +1,8 @@
 # .<=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a vector mask with the result of a pointwise less than or equal comparison.
 
@@ -19,6 +20,8 @@ Returns a vector mask with the result of a pointwise less than or equal comparis
 ```swift
 static func .<= (a: Self, b: Self.Scalar) -> SIMDMask<Self.MaskStorage>
 ```
+
+Available when `Scalar` conforms to `Comparable`.
 
 
 ---

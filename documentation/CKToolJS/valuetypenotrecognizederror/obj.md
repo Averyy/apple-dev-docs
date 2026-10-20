@@ -1,7 +1,8 @@
 # obj
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that failed validation.
 
@@ -10,7 +11,7 @@ The object that failed validation.
 
 ## Declaration
 
-```swift
+```
 attribute dictionary obj;
 ```
 

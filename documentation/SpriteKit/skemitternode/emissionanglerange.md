@@ -1,23 +1,28 @@
 # emissionAngleRange
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of allowed random values for a particle’s initial direction, expressed as an angle in radians.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var emissionAngleRange: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat emissionAngleRange;
 ```
 
 #### Discussion
@@ -26,17 +31,18 @@ The default value is `0.0`. If non-zero, the emission angle of each particle is 
 
 ## See Also
 
-- [var particleSpeed: CGFloat](skemitternode/particlespeed.md)
+### Controlling Particle Velocity and Acceleration
+- [var particleSpeed: CGFloat](./particlespeed.md)
   The average initial speed of a new particle, in points per second.
-- [var particleSpeedRange: CGFloat](skemitternode/particlespeedrange.md)
+- [var particleSpeedRange: CGFloat](./particlespeedrange.md)
   The range of allowed random values for a particle’s initial speed.
-- [var emissionAngle: CGFloat](skemitternode/emissionangle.md)
+- [var emissionAngle: CGFloat](./emissionangle.md)
   The average initial direction of a particle, expressed as an angle in radians.
-- [var xAcceleration: CGFloat](skemitternode/xacceleration.md)
+- [var xAcceleration: CGFloat](./xacceleration.md)
   The acceleration to apply to a particle’s horizontal velocity.
-- [var yAcceleration: CGFloat](skemitternode/yacceleration.md)
+- [var yAcceleration: CGFloat](./yacceleration.md)
   The acceleration to apply to a particle’s vertical velocity.
-- [var particleZPositionSpeed: CGFloat](skemitternode/particlezpositionspeed.md)
+- [var particleZPositionSpeed: CGFloat](./particlezpositionspeed.md)
   The speed at which the particle’s depth changes.
 
 

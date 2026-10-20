@@ -1,7 +1,8 @@
 # replacing(name:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new path with the leaf name replaced.
 

@@ -1,7 +1,8 @@
 # audioPlayerDidFinishPlaying(_:successfully:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the audio finishes playing.
 
@@ -18,6 +19,10 @@ Tells the delegate when the audio finishes playing.
 
 ```swift
 optional func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool)
+```
+
+```objc
+- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *) player successfully:(BOOL) flag;
 ```
 
 #### Discussion

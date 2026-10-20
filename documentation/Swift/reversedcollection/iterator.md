@@ -1,7 +1,8 @@
 # ReversedCollection.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
@@ -21,21 +22,23 @@ A type that provides the sequence’s iteration interface and encapsulates its i
 struct Iterator
 ```
 
+Available when `Base` conforms to `BidirectionalCollection`.
+
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](reversedcollection/iterator/iteratorprotocol-implementations.md)
-- [Sequence Implementations](reversedcollection/iterator/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iterator/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

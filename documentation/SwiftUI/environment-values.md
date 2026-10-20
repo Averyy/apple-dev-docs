@@ -1,53 +1,55 @@
 # Environment values
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Share data throughout a view hierarchy using the environment.
 
 #### Overview
 
-Views in SwiftUI can react to configuration information that they read from the environment using an [`Environment`](environment.md) property wrapper.
+Views in SwiftUI can react to configuration information that they read from the environment using an [`Environment`](./environment.md) property wrapper.
 
-![None](/images/com.apple.SwiftUI/environment-values-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/environment-values-hero@2x.png)
 
-A view inherits its environment from its container view, subject to explicit changes from an [`environment(_:_:)`](view/environment(_:_:).md) view modifier, or by implicit changes from one of the many modifiers that operate on environment values. As a result, you can configure a entire hierarchy of views by modifying the environment of the group’s container.
+A view inherits its environment from its container view, subject to explicit changes from an [`environment(_:_:)`](./view/environment%28_,_%29.md) view modifier, or by implicit changes from one of the many modifiers that operate on environment values. As a result, you can configure a entire hierarchy of views by modifying the environment of the group’s container.
 
-You can find many built-in environment values in the [`EnvironmentValues`](environmentvalues.md) structure. You can also create a custom [`EnvironmentValues`](environmentvalues.md) property by defining a new property in an extension to the environment values structure and applying the [`Entry()`](entry().md) macro to the variable declaration.
+You can find many built-in environment values in the [`EnvironmentValues`](./environmentvalues.md) structure. You can also create a custom [`EnvironmentValues`](./environmentvalues.md) property by defining a new property in an extension to the environment values structure and applying the [`Entry()`](./entry%28%29.md) macro to the variable declaration.
 
 ## Topics
 
 ### Accessing environment values
-- [struct Environment](environment.md)
+- [struct Environment](./environment.md)
   A property wrapper that reads a value from a view’s environment.
-- [struct EnvironmentValues](environmentvalues.md)
+- [struct EnvironmentValues](./environmentvalues.md)
   A collection of environment values propagated through a view hierarchy.
 ### Creating custom environment values
-- [macro Entry()](entry().md)
+- [macro Entry()](./entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
-- [protocol EnvironmentKey](environmentkey.md)
+- [protocol EnvironmentKey](./environmentkey.md)
   A key for accessing values in the environment.
 ### Modifying the environment of a view
-- [func environment<T>(T?) -> some View](view/environment(_:).md)
+- [func environment<T>(T?) -> some View](./view/environment%28_%29.md)
   Places an observable object in the view’s environment.
-- [func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some View](view/environment(_:_:).md)
+- [func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some View](./view/environment%28_,_%29.md)
   Sets the environment value of the specified key path to the given value.
-- [func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some View](view/transformenvironment(_:transform:).md)
+- [func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some View](./view/transformenvironment%28_,transform%29.md)
   Transforms the environment value of the specified key path with the given function.
 ### Modifying the environment of a scene
-- [func environment<T>(T?) -> some Scene](scene/environment(_:).md)
+- [func environment<T>(T?) -> some Scene](./scene/environment%28_%29.md)
   Places an observable object in the scene’s environment.
-- [func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some Scene](scene/environment(_:_:).md)
+- [func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some Scene](./scene/environment%28_,_%29.md)
   Sets the environment value of the specified key path to the given value.
-- [func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some Scene](scene/transformenvironment(_:transform:).md)
+- [func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some Scene](./scene/transformenvironment%28_,transform%29.md)
   Transforms the environment value of the specified key path with the given function.
 
 ## See Also
 
-- [Model data](model-data.md)
+### Data and storage
+- [Model data](./model-data.md)
   Manage the data that your app uses to drive its interface.
-- [Preferences](preferences.md)
+- [Preferences](./preferences.md)
   Indicate configuration preferences from views to their container views.
-- [Persistent storage](persistent-storage.md)
+- [Persistent storage](./persistent-storage.md)
   Store data for use across sessions of your app.
 
 

@@ -1,14 +1,15 @@
 # ru_isrss
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 user32_long_t ru_isrss;
 ```
 

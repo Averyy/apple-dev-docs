@@ -1,7 +1,8 @@
 # CXPlayDTMFCallAction.ActionType.hardPause
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the user included digits after a hard pause in their dial string. A hard pause is indicated by a semicolon (`;`) and waits for further user interaction before dialing the additional digits.
 
@@ -18,11 +19,16 @@ Indicates that the user included digits after a hard pause in their dial string.
 case hardPause
 ```
 
+```c
+CXPlayDTMFCallActionTypeHardPause
+```
+
 ## See Also
 
-- [CXPlayDTMFCallAction.ActionType.singleTone](cxplaydtmfcallaction/actiontype/singletone.md)
+### Constants
+- [CXPlayDTMFCallAction.ActionType.singleTone](./singletone.md)
   Indicates that the user tapped a digit on the in-call keypad.
-- [CXPlayDTMFCallAction.ActionType.softPause](cxplaydtmfcallaction/actiontype/softpause.md)
+- [CXPlayDTMFCallAction.ActionType.softPause](./softpause.md)
   Indicates that the user included digits after a soft pause in their dial string. A soft pause is indicated by a comma (`,`) and waits a few seconds before dialing the additional digits.
 
 

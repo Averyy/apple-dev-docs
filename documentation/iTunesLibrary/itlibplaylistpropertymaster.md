@@ -1,13 +1,16 @@
 # ITLibPlaylistPropertyMaster
 
 **Framework**: iTunes Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the playlist represents the entire iTunes library.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 27.2 (renamed: ITLibPlaylistPropertyPrimary)
+
+> **Deprecated**: Use [`ITLibPlaylistPropertyPrimary`](./itlibplaylistpropertyprimary.md) instead.
 
 ## Declaration
 
@@ -15,11 +18,16 @@ A Boolean value that indicates whether the playlist represents the entire iTunes
 let ITLibPlaylistPropertyMaster: String
 ```
 
+```c
+extern NSString * const ITLibPlaylistPropertyMaster;
+```
+
 ## See Also
 
-- [var isAllItemsPlaylist: Bool](itlibplaylist/isallitemsplaylist.md)
+### Deprecated
+- [var isAllItemsPlaylist: Bool](./itlibplaylist/isallitemsplaylist.md)
   Indicates whether the API exposes every item in the playlist.
-- [var isMaster: Bool](itlibplaylist/ismaster.md)
+- [var isMaster: Bool](./itlibplaylist/ismaster.md)
   A Boolean value that indicates whether the playlist represents the entire iTunes library.
 
 

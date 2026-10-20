@@ -1,7 +1,8 @@
 # kAXLinkTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An `AXUIElementRef` value used to access the object to which the specified range of text links.
 
@@ -12,6 +13,10 @@ An `AXUIElementRef` value used to access the object to which the specified range
 
 ```swift
 var kAXLinkTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXLinkTextAttribute;
 ```
 
 #### Discussion

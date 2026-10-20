@@ -1,7 +1,8 @@
 # yValue
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the y-axis for the data point.
 
@@ -21,13 +22,18 @@ The value of the y-axis for the data point.
 var yValue: AXDataPointValue? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AXDataPointValue * yValue;
+```
+
 ## See Also
 
-- [var xValue: AXDataPointValue](axdatapoint/xvalue.md)
+### Specifying the data value
+- [var xValue: AXDataPointValue](./xvalue.md)
   The value of the x-axis for the data point.
-- [class AXDataPointValue](axdatapointvalue.md)
+- [class AXDataPointValue](../axdatapointvalue.md)
   A single data value.
-- [AXDataPoint.Value](axdatapoint/value.md)
+- [AXDataPoint.Value](./value.md)
   Constants that describe types of data values.
 
 

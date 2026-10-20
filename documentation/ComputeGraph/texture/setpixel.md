@@ -1,13 +1,14 @@
 # texture::setPixel
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 In the context of a texture stage, sets the current pixels’ value.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void texture::setPixel(float4 value)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/texture__setPixel.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/texture__setPixel.svg)
 
 ## Parameters
 

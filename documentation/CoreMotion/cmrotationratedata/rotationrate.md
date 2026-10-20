@@ -1,7 +1,8 @@
 # rotationRate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation rate measured by the gyroscope.
 
@@ -17,6 +18,10 @@ The rotation rate measured by the gyroscope.
 
 ```swift
 var rotationRate: CMRotationRate { get }
+```
+
+```objc
+@property (nonatomic, readonly) CMRotationRate rotationRate;
 ```
 
 

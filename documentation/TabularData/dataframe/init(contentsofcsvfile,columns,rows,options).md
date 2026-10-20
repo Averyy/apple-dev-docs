@@ -1,7 +1,8 @@
 # init(contentsOfCSVFile:columns:rows:options:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data frame from a CSV file.
 

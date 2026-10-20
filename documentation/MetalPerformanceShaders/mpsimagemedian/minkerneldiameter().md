@@ -1,7 +1,8 @@
 # minKernelDiameter()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Queries the minimum diameter, in pixels, of the filter window supported by the median filter.
 
@@ -19,15 +20,20 @@ Queries the minimum diameter, in pixels, of the filter window supported by the m
 class func minKernelDiameter() -> Int
 ```
 
+```objc
++ (NSUInteger) minKernelDiameter;
+```
+
 #### Return Value
 
 Returns the minimum diameter, in pixels, of the filter window supported by the median filter.
 
 ## See Also
 
-- [init(device: any MTLDevice, kernelDiameter: Int)](mpsimagemedian/init(device:kerneldiameter:).md)
+### Methods
+- [init(device: any MTLDevice, kernelDiameter: Int)](./init%28device,kerneldiameter%29.md)
   Initializes a filter for a particular kernel size and device.
-- [class func maxKernelDiameter() -> Int](mpsimagemedian/maxkerneldiameter.md)
+- [class func maxKernelDiameter() -> Int](./maxkerneldiameter%28%29.md)
   Queries the maximum diameter, in pixels, of the filter window supported by the median filter.
 
 

@@ -1,7 +1,8 @@
 # readinessCoordinator(_:captureReadinessDidChange:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the capture readiness state of a photo output changed.
 
@@ -16,6 +17,10 @@ Tells the delegate that the capture readiness state of a photo output changed.
 
 ```swift
 optional func readinessCoordinator(_ coordinator: AVCapturePhotoOutputReadinessCoordinator, captureReadinessDidChange captureReadiness: AVCapturePhotoOutput.CaptureReadiness)
+```
+
+```objc
+- (void) readinessCoordinator:(AVCapturePhotoOutputReadinessCoordinator *) coordinator captureReadinessDidChange:(AVCapturePhotoOutputCaptureReadiness) captureReadiness;
 ```
 
 #### Discussion

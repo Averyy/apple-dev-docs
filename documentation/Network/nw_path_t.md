@@ -1,7 +1,8 @@
 # nw_path_t
 
 **Framework**: Network  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An object that contains information about the properties of the network that a connection uses, or that are available to your app.
 
@@ -20,42 +21,46 @@ An object that contains information about the properties of the network that a c
 typealias nw_path_t = any OS_nw_path
 ```
 
+```c
+typedef NSObject<OS_nw_path> * nw_path_t;
+```
+
 ## Topics
 
 ### Checking Path Availability
-- [func nw_path_get_status(nw_path_t) -> nw_path_status_t](nw_path_get_status(_:).md)
+- [func nw_path_get_status(nw_path_t) -> nw_path_status_t](./nw_path_get_status%28_%29.md)
   Checks whether a path can be used by connections.
-- [struct nw_path_status_t](nw_path_status_t.md)
+- [struct nw_path_status_t](./nw_path_status_t.md)
   Status values indicating whether a path can be used by connections.
 ### Inspecting Interfaces
-- [func nw_path_uses_interface_type(nw_path_t, nw_interface_type_t) -> Bool](nw_path_uses_interface_type(_:_:).md)
+- [func nw_path_uses_interface_type(nw_path_t, nw_interface_type_t) -> Bool](./nw_path_uses_interface_type%28_,_%29.md)
   Checks if connections using the path may send traffic over a specific interface type.
-- [func nw_path_enumerate_interfaces(nw_path_t, (nw_interface_t) -> Bool)](nw_path_enumerate_interfaces(_:_:).md)
+- [func nw_path_enumerate_interfaces(nw_path_t, (nw_interface_t) -> Bool)](./nw_path_enumerate_interfaces%28_,_%29.md)
   Enumerates the list of all interfaces available to the path, in order of preference.
-- [typealias nw_path_enumerate_interfaces_block_t](nw_path_enumerate_interfaces_block_t.md)
+- [typealias nw_path_enumerate_interfaces_block_t](./nw_path_enumerate_interfaces_block_t.md)
   A block that enumerates the interfaces available to a path.
-- [func nw_path_enumerate_gateways(nw_path_t, (nw_endpoint_t) -> Bool)](nw_path_enumerate_gateways(_:_:).md)
+- [func nw_path_enumerate_gateways(nw_path_t, (nw_endpoint_t) -> Bool)](./nw_path_enumerate_gateways%28_,_%29.md)
   Enumerates the list of gateways configured on the interfaces available to a path.
-- [typealias nw_path_enumerate_gateways_block_t](nw_path_enumerate_gateways_block_t.md)
+- [typealias nw_path_enumerate_gateways_block_t](./nw_path_enumerate_gateways_block_t.md)
   A block that enumerates the gateways configured on the interfaces available to a path.
 ### Checking Path Capabilities
-- [func nw_path_has_ipv4(nw_path_t) -> Bool](nw_path_has_ipv4(_:).md)
+- [func nw_path_has_ipv4(nw_path_t) -> Bool](./nw_path_has_ipv4%28_%29.md)
   Checks whether the path can route IPv4 traffic.
-- [func nw_path_has_ipv6(nw_path_t) -> Bool](nw_path_has_ipv6(_:).md)
+- [func nw_path_has_ipv6(nw_path_t) -> Bool](./nw_path_has_ipv6%28_%29.md)
   Checks whether the path can route IPv6 traffic.
-- [func nw_path_has_dns(nw_path_t) -> Bool](nw_path_has_dns(_:).md)
+- [func nw_path_has_dns(nw_path_t) -> Bool](./nw_path_has_dns%28_%29.md)
   Checks whether the path has a DNS server configured.
-- [func nw_path_is_constrained(nw_path_t) -> Bool](nw_path_is_constrained(_:).md)
+- [func nw_path_is_constrained(nw_path_t) -> Bool](./nw_path_is_constrained%28_%29.md)
   Checks whether the path uses an interface in Low Data Mode.
-- [func nw_path_is_expensive(nw_path_t) -> Bool](nw_path_is_expensive(_:).md)
+- [func nw_path_is_expensive(nw_path_t) -> Bool](./nw_path_is_expensive%28_%29.md)
   Checks whether the path uses an interface that is considered expensive, such as Cellular or a Personal Hotspot.
 ### Comparing Paths
-- [func nw_path_is_equal(nw_path_t, nw_path_t) -> Bool](nw_path_is_equal(_:_:).md)
+- [func nw_path_is_equal(nw_path_t, nw_path_t) -> Bool](./nw_path_is_equal%28_,_%29.md)
   Compares if two paths are identical.
 ### Inspecting Connected Paths
-- [func nw_path_copy_effective_local_endpoint(nw_path_t) -> nw_endpoint_t?](nw_path_copy_effective_local_endpoint(_:).md)
+- [func nw_path_copy_effective_local_endpoint(nw_path_t) -> nw_endpoint_t?](./nw_path_copy_effective_local_endpoint%28_%29.md)
   Accesses the local endpoint in use by a connection’s network path.
-- [func nw_path_copy_effective_remote_endpoint(nw_path_t) -> nw_endpoint_t?](nw_path_copy_effective_remote_endpoint(_:).md)
+- [func nw_path_copy_effective_remote_endpoint(nw_path_t) -> nw_endpoint_t?](./nw_path_copy_effective_remote_endpoint%28_%29.md)
   Accesses the remote endpoint in use by a connection’s network path.
 
 

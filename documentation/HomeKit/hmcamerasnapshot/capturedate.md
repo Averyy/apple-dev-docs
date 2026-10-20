@@ -1,7 +1,8 @@
 # captureDate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Date and time at which the snapshot was requested.
 
@@ -17,6 +18,10 @@ Date and time at which the snapshot was requested.
 
 ```swift
 var captureDate: Date { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDate * captureDate;
 ```
 
 

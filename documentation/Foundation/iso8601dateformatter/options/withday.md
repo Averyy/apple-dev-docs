@@ -1,7 +1,8 @@
 # withDay
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,28 +19,33 @@
 static var withDay: ISO8601DateFormatter.Options { get }
 ```
 
+```c
+NSISO8601DateFormatWithDay
+```
+
 #### Discussion
 
 The date representation includes the day. The format for day is inferred based on provided options:
 
-- If [`withMonth`](iso8601dateformatter/options/withmonth.md) is specified, `dd` is used.
-- If [`withWeekOfYear`](iso8601dateformatter/options/withweekofyear.md) is specified, `ee` is used.
+- If [`withMonth`](./withmonth.md) is specified, `dd` is used.
+- If [`withWeekOfYear`](./withweekofyear.md) is specified, `ee` is used.
 - Otherwise, `DDD` is used.
 
 ## See Also
 
-- [static var withYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withyear.md)
-- [static var withMonth: ISO8601DateFormatter.Options](iso8601dateformatter/options/withmonth.md)
-- [static var withWeekOfYear: ISO8601DateFormatter.Options](iso8601dateformatter/options/withweekofyear.md)
-- [static var withTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withtime.md)
-- [static var withTimeZone: ISO8601DateFormatter.Options](iso8601dateformatter/options/withtimezone.md)
-- [static var withSpaceBetweenDateAndTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withspacebetweendateandtime.md)
-- [static var withDashSeparatorInDate: ISO8601DateFormatter.Options](iso8601dateformatter/options/withdashseparatorindate.md)
-- [static var withColonSeparatorInTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withcolonseparatorintime.md)
-- [static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options](iso8601dateformatter/options/withcolonseparatorintimezone.md)
-- [static var withFullDate: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulldate.md)
-- [static var withFullTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfulltime.md)
-- [static var withInternetDateTime: ISO8601DateFormatter.Options](iso8601dateformatter/options/withinternetdatetime.md)
+### Constants
+- [static var withYear: ISO8601DateFormatter.Options](./withyear.md)
+- [static var withMonth: ISO8601DateFormatter.Options](./withmonth.md)
+- [static var withWeekOfYear: ISO8601DateFormatter.Options](./withweekofyear.md)
+- [static var withTime: ISO8601DateFormatter.Options](./withtime.md)
+- [static var withTimeZone: ISO8601DateFormatter.Options](./withtimezone.md)
+- [static var withSpaceBetweenDateAndTime: ISO8601DateFormatter.Options](./withspacebetweendateandtime.md)
+- [static var withDashSeparatorInDate: ISO8601DateFormatter.Options](./withdashseparatorindate.md)
+- [static var withColonSeparatorInTime: ISO8601DateFormatter.Options](./withcolonseparatorintime.md)
+- [static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options](./withcolonseparatorintimezone.md)
+- [static var withFullDate: ISO8601DateFormatter.Options](./withfulldate.md)
+- [static var withFullTime: ISO8601DateFormatter.Options](./withfulltime.md)
+- [static var withInternetDateTime: ISO8601DateFormatter.Options](./withinternetdatetime.md)
 
 
 ---

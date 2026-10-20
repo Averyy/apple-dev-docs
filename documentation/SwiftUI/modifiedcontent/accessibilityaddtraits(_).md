@@ -1,7 +1,8 @@
 # accessibilityAddTraits(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the given traits to the view.
 
@@ -20,6 +21,8 @@ Adds the given traits to the view.
 nonisolated
 func accessibilityAddTraits(_ traits: AccessibilityTraits) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 
 ---

@@ -1,7 +1,8 @@
 # transformAnchorPreference(key:value:transform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a value for the specified preference key, the value is a function of the key’s current value and a geometry value tied to the current coordinate space, allowing readers of the value to convert the geometry to their local coordinates.
 
@@ -33,7 +34,8 @@ A new version of the view that writes the preference.
 
 ## See Also
 
-- [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](view/anchorpreference(key:value:transform:).md)
+### Setting preferences based on geometry
+- [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](./anchorpreference%28key,value,transform%29.md)
   Sets a value for the specified preference key, the value is a function of a geometry value tied to the current coordinate space, allowing readers of the value to convert the geometry to their local coordinates.
 
 

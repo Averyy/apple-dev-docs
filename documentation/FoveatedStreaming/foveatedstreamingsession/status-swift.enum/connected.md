@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.Status.connected
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is connected and streaming from a streaming endpoint.
 

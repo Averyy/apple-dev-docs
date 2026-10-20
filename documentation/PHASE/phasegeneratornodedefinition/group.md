@@ -1,7 +1,8 @@
 # group
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A group this node conforms to for gain and rate control.
 
@@ -17,6 +18,10 @@ A group this node conforms to for gain and rate control.
 
 ```swift
 weak var group: PHASEGroup? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) PHASEGroup * group;
 ```
 
 #### Discussion

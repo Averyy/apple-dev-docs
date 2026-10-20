@@ -1,7 +1,8 @@
 # ClothSimulationComponent.FrictionOverridesCollection.Value
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The combined frictions that override the frictions used between a pair of materials.
 
@@ -19,23 +20,24 @@ struct Value
 ## Topics
 
 ### Creating a friction value
-- [init(kineticFriction: Float, staticFriction: Float)](clothsimulationcomponent/frictionoverridescollection/value/init(kineticfriction:staticfriction:).md)
+- [init(kineticFriction: Float, staticFriction: Float)](./value/init%28kineticfriction,staticfriction%29.md)
   Creates a friction override value with the given friction coefficients.
 ### Accessing friction values
-- [var staticFriction: Float](clothsimulationcomponent/frictionoverridescollection/value/staticfriction.md)
+- [var staticFriction: Float](./value/staticfriction.md)
   The static friction to use between the material pair.
-- [var kineticFriction: Float](clothsimulationcomponent/frictionoverridescollection/value/kineticfriction.md)
+- [var kineticFriction: Float](./value/kineticfriction.md)
   The kinetic friction to use between the material pair.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ClothSimulationComponent.FrictionOverridesCollection.Key](clothsimulationcomponent/frictionoverridescollection/key.md)
+### Identifying overrides
+- [ClothSimulationComponent.FrictionOverridesCollection.Key](./key.md)
   The pair of materials whose combined frictions are overridden.
 
 

@@ -1,17 +1,20 @@
 # serviceInfo
 
 **Framework**: ReplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information updated by the service during a broadcast.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 27.0
+- iPadOS 10.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,21 +22,26 @@ Information updated by the service during a broadcast.
 var serviceInfo: [String : any NSCoding & NSObjectProtocol]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *,NSObject<NSCoding> *> * serviceInfo;
+```
+
 #### Discussion
 
-The keys and values for the dictionary are defined by the broadcast service and updated through the [`updateServiceInfo(_:)`](rpbroadcasthandler/updateserviceinfo(_:).md) function. This property is KVO observable.
+The keys and values for the dictionary are defined by the broadcast service and updated through the [`updateServiceInfo(_:)`](../rpbroadcasthandler/updateserviceinfo%28_%29.md) function. This property is KVO observable.
 
 ## See Also
 
-- [var broadcastURL: URL](rpbroadcastcontroller/broadcasturl.md)
+### Controlling the Broadcast
+- [var broadcastURL: URL](./broadcasturl.md)
   A URL that redirects users to an ongoing or completed broadcast.
-- [func startBroadcast(handler: ((any Error)?) -> Void)](rpbroadcastcontroller/startbroadcast(handler:).md)
+- [func startBroadcast(handler: ((any Error)?) -> Void)](./startbroadcast%28handler%29.md)
   Starts a broadcast.
-- [func pauseBroadcast()](rpbroadcastcontroller/pausebroadcast.md)
+- [func pauseBroadcast()](./pausebroadcast%28%29.md)
   Pauses the current broadcast.
-- [func resumeBroadcast()](rpbroadcastcontroller/resumebroadcast.md)
+- [func resumeBroadcast()](./resumebroadcast%28%29.md)
   Resumes a paused broadcast.
-- [func finishBroadcast(handler: ((any Error)?) -> Void)](rpbroadcastcontroller/finishbroadcast(handler:).md)
+- [func finishBroadcast(handler: ((any Error)?) -> Void)](./finishbroadcast%28handler%29.md)
   Stops the current broadcast.
 
 

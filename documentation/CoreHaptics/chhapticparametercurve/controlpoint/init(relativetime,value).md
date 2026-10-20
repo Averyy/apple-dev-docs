@@ -1,7 +1,8 @@
 # init(relativeTime:value:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control point from its time and value.
 
@@ -17,6 +18,10 @@ Creates a control point from its time and value.
 
 ```swift
 init(relativeTime time: TimeInterval, value: Float)
+```
+
+```objc
+- (instancetype) initWithRelativeTime:(NSTimeInterval) time value:(float) value;
 ```
 
 ## Parameters

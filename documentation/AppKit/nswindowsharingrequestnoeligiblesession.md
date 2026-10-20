@@ -1,7 +1,8 @@
 # NSWindowSharingRequestNoEligibleSession
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 13.3+
@@ -12,22 +13,27 @@
 var NSWindowSharingRequestNoEligibleSession: Int { get }
 ```
 
+```c
+NSWindowSharingRequestNoEligibleSession
+```
+
 ## See Also
 
-- [var NSWorkspaceAuthorizationInvalidError: Int](nsworkspaceauthorizationinvaliderror.md)
+### Error Codes
+- [var NSWorkspaceAuthorizationInvalidError: Int](./nsworkspaceauthorizationinvaliderror.md)
   The provided workspace authorization credentials expired or are invalid.
-- [var NSWorkspaceErrorMaximum: Int](nsworkspaceerrormaximum.md)
-- [var NSWorkspaceErrorMinimum: Int](nsworkspaceerrorminimum.md)
-- [var NSWindowSharingErrorMaximum: Int](nswindowsharingerrormaximum.md)
-- [var NSWindowSharingErrorMinimum: Int](nswindowsharingerrorminimum.md)
-- [var NSWindowSharingRequestAlreadyRequested: Int](nswindowsharingrequestalreadyrequested.md)
-- [var NSWindowSharingRequestUnspecifiedError: Int](nswindowsharingrequestunspecifiederror.md)
-- [var NSPasteboardMiscellaneousError: Int](nspasteboardmiscellaneouserror.md)
-- [var NSPasteboardCommunicationError: Int](nspasteboardcommunicationerror.md)
-- [var NSPasteboardInvalidArgumentError: Int](nspasteboardinvalidargumenterror.md)
-- [var NSPasteboardContentsNotAvailableError: Int](nspasteboardcontentsnotavailableerror.md)
-- [var NSPasteboardErrorMinimum: Int](nspasteboarderrorminimum.md)
-- [var NSPasteboardErrorMaximum: Int](nspasteboarderrormaximum.md)
+- [var NSWorkspaceErrorMaximum: Int](./nsworkspaceerrormaximum.md)
+- [var NSWorkspaceErrorMinimum: Int](./nsworkspaceerrorminimum.md)
+- [var NSWindowSharingErrorMaximum: Int](./nswindowsharingerrormaximum.md)
+- [var NSWindowSharingErrorMinimum: Int](./nswindowsharingerrorminimum.md)
+- [var NSWindowSharingRequestAlreadyRequested: Int](./nswindowsharingrequestalreadyrequested.md)
+- [var NSWindowSharingRequestUnspecifiedError: Int](./nswindowsharingrequestunspecifiederror.md)
+- [var NSPasteboardMiscellaneousError: Int](./nspasteboardmiscellaneouserror.md)
+- [var NSPasteboardCommunicationError: Int](./nspasteboardcommunicationerror.md)
+- [var NSPasteboardInvalidArgumentError: Int](./nspasteboardinvalidargumenterror.md)
+- [var NSPasteboardContentsNotAvailableError: Int](./nspasteboardcontentsnotavailableerror.md)
+- [var NSPasteboardErrorMinimum: Int](./nspasteboarderrorminimum.md)
+- [var NSPasteboardErrorMaximum: Int](./nspasteboarderrormaximum.md)
 
 
 ---

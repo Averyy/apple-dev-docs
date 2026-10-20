@@ -1,7 +1,8 @@
 # kIOClassKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIOClassKey: String { get }
+```
+
+```c
+#define kIOClassKey
 ```
 
 

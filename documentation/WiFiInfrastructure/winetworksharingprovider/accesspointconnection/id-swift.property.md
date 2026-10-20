@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable per-access point ID that can be used to uniquely identify this access point. ID will be stable for the lifetime of a given App launch.
 

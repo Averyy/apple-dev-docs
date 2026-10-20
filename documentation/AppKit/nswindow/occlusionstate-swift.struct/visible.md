@@ -1,7 +1,8 @@
 # visible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If set, at least part of the window is visible; if not set, the entire window is occluded. A window that has a nonrectangular shape can be entirely occluded onscreen, but if its bounding box falls into a visible region, the window is considered to be visible. Note that a completely transparent window may also be considered visible.
 
@@ -12,6 +13,10 @@ If set, at least part of the window is visible; if not set, the entire window is
 
 ```swift
 static var visible: NSWindow.OcclusionState { get }
+```
+
+```c
+NSWindowOcclusionStateVisible
 ```
 
 

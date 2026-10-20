@@ -1,7 +1,8 @@
 # escapeCharacter
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character that precedes other characters, such as quotation marks, so that the parser interprets them as literal characters instead of special ones.
 

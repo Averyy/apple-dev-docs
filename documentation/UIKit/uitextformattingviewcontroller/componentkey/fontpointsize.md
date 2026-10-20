@@ -1,7 +1,8 @@
 # fontPointSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,23 +16,28 @@
 static let fontPointSize: UITextFormattingViewController.ComponentKey
 ```
 
+```c
+extern UITextFormattingViewControllerComponentKey const UITextFormattingViewControllerFontPointSizeComponentKey;
+```
+
 ## See Also
 
-- [static let fontAttributes: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/fontattributes.md)
-- [static let fontPicker: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/fontpicker.md)
-- [static let fontSize: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/fontsize.md)
-- [static let formattingStyles: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/formattingstyles.md)
-- [static let highlight: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/highlight.md)
-- [static let highlightPicker: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/highlightpicker.md)
-- [static let lineHeight: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/lineheight.md)
-- [static let listStyles: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/liststyles.md)
-- [static let textAlignment: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/textalignment.md)
-- [static let textAlignmentAndJustification: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/textalignmentandjustification.md)
-- [static let textColor: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/textcolor.md)
-- [static let textIndentation: UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey/textindentation.md)
-- [static let blue: UITextFormattingViewController.Highlight](uitextformattingviewcontroller/highlight/blue.md)
-- [static let `default`: UITextFormattingViewController.Highlight](uitextformattingviewcontroller/highlight/default.md)
-- [static let mint: UITextFormattingViewController.Highlight](uitextformattingviewcontroller/highlight/mint.md)
+### Global variables
+- [static let fontAttributes: UITextFormattingViewController.ComponentKey](./fontattributes.md)
+- [static let fontPicker: UITextFormattingViewController.ComponentKey](./fontpicker.md)
+- [static let fontSize: UITextFormattingViewController.ComponentKey](./fontsize.md)
+- [static let formattingStyles: UITextFormattingViewController.ComponentKey](./formattingstyles.md)
+- [static let highlight: UITextFormattingViewController.ComponentKey](./highlight.md)
+- [static let highlightPicker: UITextFormattingViewController.ComponentKey](./highlightpicker.md)
+- [static let lineHeight: UITextFormattingViewController.ComponentKey](./lineheight.md)
+- [static let listStyles: UITextFormattingViewController.ComponentKey](./liststyles.md)
+- [static let textAlignment: UITextFormattingViewController.ComponentKey](./textalignment.md)
+- [static let textAlignmentAndJustification: UITextFormattingViewController.ComponentKey](./textalignmentandjustification.md)
+- [static let textColor: UITextFormattingViewController.ComponentKey](./textcolor.md)
+- [static let textIndentation: UITextFormattingViewController.ComponentKey](./textindentation.md)
+- [static let blue: UITextFormattingViewController.Highlight](../highlight/blue.md)
+- [static let `default`: UITextFormattingViewController.Highlight](../highlight/default.md)
+- [static let mint: UITextFormattingViewController.Highlight](../highlight/mint.md)
 
 
 ---

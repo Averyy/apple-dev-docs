@@ -1,7 +1,8 @@
 # availableMediaCharacteristicsWithMediaSelectionOptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of media characteristics for which a media selection option is available.
 
@@ -22,9 +23,10 @@ var availableMediaCharacteristicsWithMediaSelectionOptions: [AVMediaCharacterist
 
 ## See Also
 
-- [var allMediaSelections: [AVMediaSelection]](avcomposition/allmediaselections.md)
+### Accessing media selections
+- [var allMediaSelections: [AVMediaSelection]](./allmediaselections.md)
   The array of available media selections for this asset.
-- [func mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristic) -> AVMediaSelectionGroup?](avcomposition/mediaselectiongroup(formediacharacteristic:).md)
+- [func mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristic) -> AVMediaSelectionGroup?](./mediaselectiongroup%28formediacharacteristic%29.md)
   Returns a media selection group that contains one or more options with the specified media characteristic.
 
 

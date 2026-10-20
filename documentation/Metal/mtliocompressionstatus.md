@@ -1,7 +1,8 @@
 # MTLIOCompressionStatus
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the final state of a compression context.
 
@@ -19,43 +20,48 @@ Represents the final state of a compression context.
 enum MTLIOCompressionStatus
 ```
 
+```c
+enum MTLIOCompressionStatus : NSInteger;
+```
+
 #### Overview
 
-The [`MTLIOFlushAndDestroyCompressionContext(_:)`](mtlioflushanddestroycompressioncontext(_:).md) returns an [`MTLIOCompressionStatus`](mtliocompressionstatus.md) instance to reflect the final state of a compression context.
+The [`MTLIOFlushAndDestroyCompressionContext(_:)`](./mtlioflushanddestroycompressioncontext%28_%29.md) returns an [`MTLIOCompressionStatus`](./mtliocompressionstatus.md) instance to reflect the final state of a compression context.
 
 ## Topics
 
 ### Compression result states
-- [MTLIOCompressionStatus.complete](mtliocompressionstatus/complete.md)
+- [MTLIOCompressionStatus.complete](./mtliocompressionstatus/complete.md)
   Indicates the compression API successfully flushed and destroyed a compression context.
-- [MTLIOCompressionStatus.error](mtliocompressionstatus/error.md)
+- [MTLIOCompressionStatus.error](./mtliocompressionstatus/error.md)
   Indicates the compression API had an error while flushing and destroying a compression context.
 ### Initializers
-- [init?(rawValue: Int)](mtliocompressionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtliocompressionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func MTLIOCreateCompressionContext(String, MTLIOCompressionMethod, Int) -> MTLIOCompressionContext?](mtliocreatecompressioncontext(_:_:_:).md)
+### Asset compression
+- [func MTLIOCreateCompressionContext(String, MTLIOCompressionMethod, Int) -> MTLIOCompressionContext?](./mtliocreatecompressioncontext%28_,_,_%29.md)
   Creates a compression context that you use to compress data into a single file.
-- [enum MTLIOCompressionMethod](mtliocompressionmethod.md)
+- [enum MTLIOCompressionMethod](./mtliocompressionmethod.md)
   The compression codecs that Metal supports for input/output handles.
-- [func MTLIOCompressionContextDefaultChunkSize() -> Int](mtliocompressioncontextdefaultchunksize().md)
+- [func MTLIOCompressionContextDefaultChunkSize() -> Int](./mtliocompressioncontextdefaultchunksize%28%29.md)
   Returns a compression chunk size you can use as a default for creating a compression context.
-- [typealias MTLIOCompressionContext](mtliocompressioncontext.md)
+- [typealias MTLIOCompressionContext](./mtliocompressioncontext.md)
   A pointer that represents the state of a file compression session in progress.
-- [func MTLIOCompressionContextAppendData(MTLIOCompressionContext, UnsafeRawPointer, Int)](mtliocompressioncontextappenddata(_:_:_:).md)
+- [func MTLIOCompressionContextAppendData(MTLIOCompressionContext, UnsafeRawPointer, Int)](./mtliocompressioncontextappenddata%28_,_,_%29.md)
   Adds data to a compression context.
-- [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](mtlioflushanddestroycompressioncontext(_:).md)
+- [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](./mtlioflushanddestroycompressioncontext%28_%29.md)
   Finishes compressing and saves the file that a compression context represents.
 
 

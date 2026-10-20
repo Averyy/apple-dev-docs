@@ -1,7 +1,8 @@
 # removeGraph(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a pathfinding graph from the list of graphs managed by the scene.
 
@@ -19,9 +20,14 @@ Removes a pathfinding graph from the list of graphs managed by the scene.
 func removeGraph(_ name: String)
 ```
 
+```objc
+- (void) removeGraph:(NSString *) name;
+```
+
 ## See Also
 
-- [var graphs: [String : GKGraph]](gkscene/graphs.md)
+### Managing Pathfinding Graphs
+- [var graphs: [String : GKGraph]](./graphs.md)
   The list of pathfinding graph objects managed by the scene.
 
 

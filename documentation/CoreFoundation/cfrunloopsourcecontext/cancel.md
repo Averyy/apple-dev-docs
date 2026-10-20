@@ -1,21 +1,26 @@
 # cancel
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var cancel: ((UnsafeMutableRawPointer?, CFRunLoop?, CFRunLoopMode?) -> Void)!
+```
+
+```c
+void (*)(void *, struct __CFRunLoop *, const struct __CFString *) cancel;
 ```
 
 #### Discussion
@@ -24,19 +29,20 @@ A cancel callback for the run loop source. This callback is called when the sour
 
 ## Parameters
 
-- `info`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext`](../cfrunloopsourcecontext.md) structure that was used when creating the run loop source.
 - `rl`: The run loop from which the run loop source is being removed.
 - `mode`: The run loop mode from which the run loop source is being removed.
 
 ## See Also
 
-- [var equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!](cfrunloopsourcecontext/equal.md)
+### Callbacks
+- [var equal: ((UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinBoolean)!](./equal.md)
   An equality test callback for your program-defined `info` pointer. Can be `NULL`.
-- [var hash: ((UnsafeRawPointer?) -> CFHashCode)!](cfrunloopsourcecontext/hash.md)
+- [var hash: ((UnsafeRawPointer?) -> CFHashCode)!](./hash.md)
   A hash calculation callback for your program-defined `info` pointer. Can be `NULL`.
-- [var perform: ((UnsafeMutableRawPointer?) -> Void)!](cfrunloopsourcecontext/perform.md)
+- [var perform: ((UnsafeMutableRawPointer?) -> Void)!](./perform.md)
   A perform callback for the run loop source. This callback is called when the source has fired.
-- [var schedule: ((UnsafeMutableRawPointer?, CFRunLoop?, CFRunLoopMode?) -> Void)!](cfrunloopsourcecontext/schedule.md)
+- [var schedule: ((UnsafeMutableRawPointer?, CFRunLoop?, CFRunLoopMode?) -> Void)!](./schedule.md)
   A scheduling callback for the run loop source. This callback is called when the source is added to a run loop mode. Can be `NULL`.
 
 

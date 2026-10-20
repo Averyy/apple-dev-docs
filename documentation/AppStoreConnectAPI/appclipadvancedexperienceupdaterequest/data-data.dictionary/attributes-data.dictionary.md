@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the Advanced App Clip Experiences resource.
 
@@ -10,20 +11,22 @@ The attributes you set that describe the Advanced App Clip Experiences resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceUpdateRequest.Data.Attributes
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place](./attributes-data.dictionary/place-data.dictionary.md)
   The place information of an advanced App Clip experience you create with this request.
 
 ## Properties
 
 - `action` (AppClipAction): The call-to-action verb that appears on the App Clip card.
 - `businessCategory` (string): The business category of an advanced App Clip experience; for example, `PARKING`
+
+  **Allowed Values**: `AUTOMOTIVE`, `BEAUTY`, `BIKES`, `BOOKS`, `CASINO`, `EDUCATION`, `EDUCATION_JAPAN`, `ENTERTAINMENT`, `EV_CHARGER`, `FINANCIAL_USD`, `FINANCIAL_CNY`, `FINANCIAL_GBP`, `FINANCIAL_JPY`, `FINANCIAL_EUR`, `FITNESS`, `FOOD_AND_DRINK`, `GAS`, `GROCERY`, `HEALTH_AND_MEDICAL`, `HOTEL_AND_TRAVEL`, `MUSIC`, `PARKING`, `PET_SERVICES`, `PROFESSIONAL_SERVICES`, `SHOPPING`, `TICKETING`, `TRANSIT`
 - `defaultLanguage` (AppClipAdvancedExperienceLanguage): The default language for the advanced App Clip experience.
 - `isPoweredBy` (boolean): A Boolean value that indicates whether the advanced App Clip experience was submitted by a platform provider that serves multiple businesses.
 - `place` (AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place): The physical location you associate with the advanced App Clip experience. If you associate an advanced App Clip experience with a place, users can launch your App Clip from location-based suggestions from Siri Suggestions and the Maps app.
@@ -31,7 +34,8 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

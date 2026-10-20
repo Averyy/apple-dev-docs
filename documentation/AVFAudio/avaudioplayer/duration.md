@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration, in seconds, of the player’s audio.
 
@@ -20,9 +21,14 @@ The total duration, in seconds, of the player’s audio.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var currentTime: TimeInterval](avaudioplayer/currenttime.md)
+### Accessing player timing
+- [var currentTime: TimeInterval](./currenttime.md)
   The current playback time, in seconds, within the audio timeline.
 
 

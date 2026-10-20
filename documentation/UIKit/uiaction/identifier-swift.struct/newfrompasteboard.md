@@ -1,7 +1,8 @@
 # newFromPasteboard
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,15 +17,20 @@
 static let newFromPasteboard: UIAction.Identifier
 ```
 
+```c
+extern UIActionIdentifier const UIActionNewFromPasteboard;
+```
+
 ## See Also
 
-- [static let paste: UIAction.Identifier](uiaction/identifier-swift.struct/paste.md)
+### Constants
+- [static let paste: UIAction.Identifier](./paste.md)
   Identifies the action that pastes the current contents of the pasteboard into your app’s interface.
-- [static let pasteAndGo: UIAction.Identifier](uiaction/identifier-swift.struct/pasteandgo.md)
+- [static let pasteAndGo: UIAction.Identifier](./pasteandgo.md)
   Identifies the action that pastes the current contents of the pasteboard into your app’s interface and navigates to the entity it references.
-- [static let pasteAndMatchStyle: UIAction.Identifier](uiaction/identifier-swift.struct/pasteandmatchstyle.md)
+- [static let pasteAndMatchStyle: UIAction.Identifier](./pasteandmatchstyle.md)
   Identifies the action that pastes the current contents of the pasteboard into your app’s interface using the text style of the target.
-- [static let pasteAndSearch: UIAction.Identifier](uiaction/identifier-swift.struct/pasteandsearch.md)
+- [static let pasteAndSearch: UIAction.Identifier](./pasteandsearch.md)
   Identifies the action that pastes the current contents of the pasteboard into your app’s interface and performs a search.
 
 

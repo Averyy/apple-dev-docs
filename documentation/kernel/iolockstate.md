@@ -1,14 +1,15 @@
 # IOLockState
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOLockState : unsigned int {
     ...
 } IOLockState;
@@ -17,8 +18,8 @@ typedef enum IOLockState : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOLockStateLocked](iolockstate/kiolockstatelocked.md)
-- [kIOLockStateUnlocked](iolockstate/kiolockstateunlocked.md)
+- [kIOLockStateLocked](./iolockstate/kiolockstatelocked.md)
+- [kIOLockStateUnlocked](./iolockstate/kiolockstateunlocked.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # completionDate
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,11 +19,12 @@ static let completionDate: SearchableItemAttribute
 
 ## See Also
 
-- [static let allDay: SearchableItemAttribute](searchableitemattribute/allday.md)
-- [static let dueDate: SearchableItemAttribute](searchableitemattribute/duedate.md)
-- [static let endDate: SearchableItemAttribute](searchableitemattribute/enddate.md)
-- [static let importantDates: SearchableItemAttribute](searchableitemattribute/importantdates.md)
-- [static let startDate: SearchableItemAttribute](searchableitemattribute/startdate.md)
+### Describing events
+- [static let allDay: SearchableItemAttribute](./allday.md)
+- [static let dueDate: SearchableItemAttribute](./duedate.md)
+- [static let endDate: SearchableItemAttribute](./enddate.md)
+- [static let importantDates: SearchableItemAttribute](./importantdates.md)
+- [static let startDate: SearchableItemAttribute](./startdate.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # a2Valid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 UInt8 a2Valid:1;
 ```
 

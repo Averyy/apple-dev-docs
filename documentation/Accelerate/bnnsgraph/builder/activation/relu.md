@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Activation.relu
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Clamped Rectified Linear Unit (ReLU) activation.
 

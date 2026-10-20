@@ -1,7 +1,8 @@
 # contactType
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enum identifying the contact type.
 
@@ -19,9 +20,21 @@ An enum identifying the contact type.
 var contactType: CNContactType { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic) CNContactType contactType;
+```
+
+*macOS*
+
+```objc
+@property (atomic) CNContactType contactType;
+```
+
 #### Discussion
 
-For a list of predefined contact types, see [`CNMutableContact`](cnmutablecontact.md).
+For a list of predefined contact types, see [`CNMutableContact`](../cnmutablecontact.md).
 
 
 ---

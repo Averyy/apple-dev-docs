@@ -1,7 +1,8 @@
 # additionalActivityItems
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of activity items associated with an activity.
 
@@ -18,13 +19,18 @@ The list of activity items associated with an activity.
 var additionalActivityItems: [CLSActivityItem] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<__kindof CLSActivityItem *> * additionalActivityItems;
+```
+
 ## See Also
 
-- [func addAdditionalActivityItem(CLSActivityItem)](clsactivity/addadditionalactivityitem(_:).md)
+### Managing activity items
+- [func addAdditionalActivityItem(CLSActivityItem)](./addadditionalactivityitem%28_%29.md)
   Adds an activity item to an activity.
-- [var primaryActivityItem: CLSActivityItem?](clsactivity/primaryactivityitem.md)
+- [var primaryActivityItem: CLSActivityItem?](./primaryactivityitem.md)
   Adds an activity item to an activity and sets it as the primary activity item.
-- [func removeAllActivityItems()](clsactivity/removeallactivityitems.md)
+- [func removeAllActivityItems()](./removeallactivityitems%28%29.md)
   Deletes all activity items associated with the current activity.
 
 

@@ -1,7 +1,8 @@
 # CNSpatialAudioContentType
 
 **Framework**: Cinematic  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 enum CNSpatialAudioContentType
 ```
 
+```c
+enum CNSpatialAudioContentType : NSInteger;
+```
+
 #### Overview
 
 Enum used to generate settings dictionary for export using AssetReader and AssetWriter with Spatial Audio effects burned in
@@ -23,22 +28,22 @@ Enum used to generate settings dictionary for export using AssetReader and Asset
 ## Topics
 
 ### Enumeration Cases
-- [CNSpatialAudioContentType.spatial](cnspatialaudiocontenttype/spatial.md)
+- [CNSpatialAudioContentType.spatial](./cnspatialaudiocontenttype/spatial.md)
   Export settings to generate an asset with spatial audio and effect burned in
-- [CNSpatialAudioContentType.stereo](cnspatialaudiocontenttype/stereo.md)
+- [CNSpatialAudioContentType.stereo](./cnspatialaudiocontenttype/stereo.md)
   Export settings to generate an asset with stereo audio and effect burned in
 ### Initializers
-- [init?(rawValue: Int)](cnspatialaudiocontenttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cnspatialaudiocontenttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

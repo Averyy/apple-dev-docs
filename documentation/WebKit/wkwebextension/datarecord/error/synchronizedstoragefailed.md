@@ -1,7 +1,8 @@
 # synchronizedStorageFailed
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a failure occurred when either deleting or calculating synchronized storage.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
@@ -46,6 +47,14 @@ If the bit width of the shifted integer type is a power of two, masking is perfo
 
 - `lhs`: The value to shift.
 - `rhs`: The number of bits to shift `lhs` to the right. If `rhs` is outside the range `0..<lhs.bitWidth`, it is masked to produce a value within that range.
+
+## Default Implementations
+
+### FixedWidthInteger Implementations
+- [static func &>> (Self, Self) -> Self](./ampopop%28_,_%29-6o5at.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
+- [static func &>> <Other>(Self, Other) -> Self](./ampopop%28_,_%29-9b5yu.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
 
 
 ---

@@ -1,7 +1,8 @@
 # externalMacro(module:type:)
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Specifies the module and type name for a macro’s implementation.
 

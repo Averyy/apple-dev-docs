@@ -1,7 +1,8 @@
 # saveRecordZones
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates one or more zones in the database.
 
@@ -10,7 +11,7 @@ Creates one or more zones in the database.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> saveRecordZones(
 	CloudKit.ZoneID|CloudKit.ZoneID[]|String|String[] zones
 );
@@ -18,28 +19,31 @@ Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> saveRecordZones(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](../cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
-See [`Modifying Zones (zones/modify)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/ModifyZones.html#//apple_ref/doc/uid/TP40015240-CH10) in [`CloudKit Web Services Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
+See [Modifying Zones (zones/modify)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/ModifyZones.html#//apple_ref/doc/uid/TP40015240-CH10) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
 
 ## Parameters
 
-- `zones`: Possible values are: | Type | Description |
-| --- | --- |
-| [`CloudKit.ZoneID`](cloudkit.zoneid.md) | A zone in the database to save. |
-| `CloudKit.ZoneID[]` | An array of zones to save. |
-| `String` | The name of a zone to save. |
-| `String[]` | An array of names of zones to save. |
+- `zones`: Possible values are:
+
+  | Type | Description |
+  | --- | --- |
+  | [`CloudKit.ZoneID`](../cloudkit.zoneid.md) | A zone in the database to save. |
+  | `CloudKit.ZoneID[]` | An array of zones to save. |
+  | `String` | The name of a zone to save. |
+  | `String[]` | An array of names of zones to save. |
 
 ## See Also
 
-- [fetchRecordZones](cloudkit.database/fetchrecordzones.md)
+### Accessing Record Zones
+- [fetchRecordZones](./fetchrecordzones.md)
   Fetches one or more zones.
-- [fetchAllRecordZones](cloudkit.database/fetchallrecordzones.md)
+- [fetchAllRecordZones](./fetchallrecordzones.md)
   Fetches all zones in the database.
-- [deleteRecordZones](cloudkit.database/deleterecordzones.md)
+- [deleteRecordZones](./deleterecordzones.md)
   Deletes the specified zones.
 
 

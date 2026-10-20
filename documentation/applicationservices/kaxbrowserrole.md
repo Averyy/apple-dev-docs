@@ -1,7 +1,8 @@
 # kAXBrowserRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An accessibility object that displays column-based, hierarchically structured data, such as the column view in a Finder window.
 
@@ -12,6 +13,10 @@ An accessibility object that displays column-based, hierarchically structured da
 
 ```swift
 var kAXBrowserRole: String { get }
+```
+
+```c
+#define kAXBrowserRole
 ```
 
 

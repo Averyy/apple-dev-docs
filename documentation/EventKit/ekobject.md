@@ -1,7 +1,8 @@
 # EKObject
 
 **Framework**: EventKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for all EventKit classes that have persistent instances.
 
@@ -19,6 +20,10 @@ An abstract superclass for all EventKit classes that have persistent instances.
 class EKObject
 ```
 
+```objc
+@interface EKObject : NSObject
+```
+
 #### Overview
 
 `EKObject` provides fine control when saving and restoring property settings. For example, you can find out if a persistent object was modified locally and whether it needs to be saved. If the object has changed in the event store since it was fetched, you can refresh the local copy by keeping local changes or by removing local changes. You can also roll back the object to the state when it was first fetched.
@@ -26,42 +31,43 @@ class EKObject
 ## Topics
 
 ### Saving and Restoring State
-- [var hasChanges: Bool](ekobject/haschanges.md)
+- [var hasChanges: Bool](./ekobject/haschanges.md)
   Returns whether this object or any of the objects it contains has uncommitted changes.
-- [var isNew: Bool](ekobject/isnew.md)
+- [var isNew: Bool](./ekobject/isnew.md)
   A Boolean value that indicates whether this object has ever been saved.
-- [func refresh() -> Bool](ekobject/refresh.md)
+- [func refresh() -> Bool](./ekobject/refresh%28%29.md)
   Merges changes to this object with the latest saved values.
-- [func reset()](ekobject/reset.md)
+- [func reset()](./ekobject/reset%28%29.md)
   Returns this object to its saved state.
-- [func rollback()](ekobject/rollback.md)
+- [func rollback()](./ekobject/rollback%28%29.md)
   Rolls back the property values of this object to its original state when it was first fetched.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [EKAlarm](ekalarm.md)
-- [EKCalendar](ekcalendar.md)
-- [EKCalendarItem](ekcalendaritem.md)
-- [EKParticipant](ekparticipant.md)
-- [EKRecurrenceRule](ekrecurrencerule.md)
-- [EKSource](eksource.md)
-- [EKStructuredLocation](ekstructuredlocation.md)
+- [EKAlarm](./ekalarm.md)
+- [EKCalendar](./ekcalendar.md)
+- [EKCalendarItem](./ekcalendaritem.md)
+- [EKParticipant](./ekparticipant.md)
+- [EKRecurrenceRule](./ekrecurrencerule.md)
+- [EKSource](./eksource.md)
+- [EKStructuredLocation](./ekstructuredlocation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class EKCalendarItem](ekcalendaritem.md)
+### Common objects
+- [class EKCalendarItem](./ekcalendaritem.md)
   An abstract superclass for calendar events and reminders.
-- [class EKSource](eksource.md)
+- [class EKSource](./eksource.md)
   An abstract superclass that represents the account a calendar belongs to.
 
 

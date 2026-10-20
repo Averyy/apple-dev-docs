@@ -1,7 +1,8 @@
 # kSecKeyPrivate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key is protected by a user login, a password, or both.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key is protected by a user login, a password
 
 ```swift
 var kSecKeyPrivate: Int32 { get }
+```
+
+```c
+kSecKeyPrivate
 ```
 
 

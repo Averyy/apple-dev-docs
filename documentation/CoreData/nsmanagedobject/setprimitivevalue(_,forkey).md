@@ -1,7 +1,8 @@
 # setPrimitiveValue(_:forKey:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of a given property in the managed object’s private internal storage.
 
@@ -10,7 +11,7 @@ Sets the value of a given property in the managed object’s private internal st
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,15 @@ Sets the value of a given property in the managed object’s private internal st
 func setPrimitiveValue(_ value: Any?, forKey key: String)
 ```
 
+```objc
+- (void) setPrimitiveValue:(id) value forKey:(NSString *) key;
+```
+
 #### Discussion
 
 Sets in the receiver’s private internal storage the value of the property specified by `key` to `value`. If `key` identifies a to-one relationship, relates the object specified by `value` to the receiver, unrelating the previously related object if there was one. Given a collection object and a key that identifies a to-many relationship, relates the objects contained in the collection to the receiver, unrelating previously related objects if there were any.
 
-This method does not invoke the change notification methods ([`willChangeValue(forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/willchangevalue(forkey:)) and [`didChangeValue(forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/didchangevalue(forkey:))). It is typically used by subclasses that implement custom accessor methods that need direct access to the receiver’s private internal storage. It is also used by the Core Data framework to initialize the receiver with values from a persistent store or to restore a value from a snapshot.
+This method does not invoke the change notification methods ([`willChangeValue(forKey:)`](../../ObjectiveC/nsobject-swift.class/willchangevalue%28forkey%29.md) and [`didChangeValue(forKey:)`](../../ObjectiveC/nsobject-swift.class/didchangevalue%28forkey%29.md)). It is typically used by subclasses that implement custom accessor methods that need direct access to the receiver’s private internal storage. It is also used by the Core Data framework to initialize the receiver with values from a persistent store or to restore a value from a snapshot.
 
 ##### Special Considerations
 
@@ -44,7 +49,7 @@ If the relationship is bi-directional (that is, if an inverse relationship is sp
 
 The following points also apply:
 
-- Primitive accessor methods are only supported on *modeled* properties. If you invoke a primitive accessor on an unmodeled property, it will instead operate upon a random modeled property. (The debug libraries and frameworks from (available from the [`Apple Developer Website`](https://developer.apple.comhttp://developer.apple.com/)) have assertions to test for passing unmodeled keys to these methods.)
+- Primitive accessor methods are only supported on *modeled* properties. If you invoke a primitive accessor on an unmodeled property, it will instead operate upon a random modeled property. (The debug libraries and frameworks from (available from the [Apple Developer Website](http://developer.apple.com/)) have assertions to test for passing unmodeled keys to these methods.)
 - You are strongly encouraged to use the dynamically-generated accessors rather than using this method directly (for example, `setPrimitiveName:` instead of `setPrimitiveValue:newName forKey:@"name"`). The dynamic accessors are much more efficient, and allow for compile-time checking.
 
 ## Parameters
@@ -54,15 +59,17 @@ The following points also apply:
 
 ## See Also
 
-- [func awakeFromFetch()](nsmanagedobject/awakefromfetch.md)
+### Related Documentation
+- [func awakeFromFetch()](./awakefromfetch%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object when fufilling it from a fault.
-- [func value(forKey: String) -> Any?](nsmanagedobject/value(forkey:).md)
+### Supporting Key-Value Coding
+- [func value(forKey: String) -> Any?](./value%28forkey%29.md)
   Returns the value for the property specified by `key`.
-- [func setValue(Any?, forKey: String)](nsmanagedobject/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Sets the specified property of the managed object to the specified value.
-- [func primitiveValue(forKey: String) -> Any?](nsmanagedobject/primitivevalue(forkey:).md)
+- [func primitiveValue(forKey: String) -> Any?](./primitivevalue%28forkey%29.md)
   Returns the value for the specified property from the managed object’s private internal storage .
-- [func objectIDs(forRelationshipNamed: String) -> [NSManagedObjectID]](nsmanagedobject/objectids(forrelationshipnamed:).md)
+- [func objectIDs(forRelationshipNamed: String) -> [NSManagedObjectID]](./objectids%28forrelationshipnamed%29.md)
   Returns the object IDs for all of the managed objects that are in the named relationship.
 
 

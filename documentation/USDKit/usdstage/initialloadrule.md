@@ -1,7 +1,8 @@
 # USDStage.InitialLoadRule
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the rule used when opening a stage to determine if referenced payloads are loaded.
 
@@ -22,28 +23,29 @@ enum InitialLoadRule
 ## Topics
 
 ### Enumeration Cases
-- [USDStage.InitialLoadRule.all](usdstage/initialloadrule/all.md)
+- [USDStage.InitialLoadRule.all](./initialloadrule/all.md)
   Load all loadable prims.
-- [USDStage.InitialLoadRule.none](usdstage/initialloadrule/none.md)
+- [USDStage.InitialLoadRule.none](./initialloadrule/none.md)
   Load no loadable prims.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func open(rootLayer: USDLayer, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(rootlayer:sessionlayer:options:).md)
+### Opening a stage
+- [static func open(rootLayer: USDLayer, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](./open%28rootlayer,sessionlayer,options%29.md)
   Opens a stage rooted at a given layer.
-- [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(_:sessionlayer:options:).md)
+- [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](./open%28_,sessionlayer,options%29.md)
   Opens a stage using a file as the root layer.
-- [static func open(URL, loadingPayloads: USDStage.InitialLoadRule) throws -> USDStage](usdstage/open(_:loadingpayloads:).md)
+- [static func open(URL, loadingPayloads: USDStage.InitialLoadRule) throws -> USDStage](./open%28_,loadingpayloads%29.md)
   Opens a stage using the file at a URL as its root layer.
-- [USDStage.OpenOptions](usdstage/openoptions.md)
+- [USDStage.OpenOptions](./openoptions.md)
   Options that specify behavior related to opening a stage.
 
 

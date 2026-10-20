@@ -1,21 +1,22 @@
 # CertificateCreateRequest.Data.Relationships.MerchantId
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object CertificateCreateRequest.Data.Relationships.MerchantId
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CertificateCreateRequest.Data.Relationships.MerchantId.Data](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/merchantid-data.dictionary/data-data.dictionary.md)
+- [object CertificateCreateRequest.Data.Relationships.MerchantId.Data](./merchantid-data.dictionary/data-data.dictionary.md)
   The request body you use to create a certificate.
 
 ## Properties

@@ -1,7 +1,8 @@
 # init(fire:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a calendar event which fires based on the value of the supplied date components.
 
@@ -17,6 +18,10 @@ Creates a calendar event which fires based on the value of the supplied date com
 
 ```swift
 init(fire fireDateComponents: DateComponents)
+```
+
+```objc
+- (instancetype) initWithFireDateComponents:(NSDateComponents *) fireDateComponents;
 ```
 
 #### Return Value

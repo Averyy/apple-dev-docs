@@ -1,7 +1,8 @@
 # DragSession.Phase.initial
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drag session is about to begin
 

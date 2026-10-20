@@ -1,7 +1,8 @@
 # GCDualSenseAdaptiveTrigger.Status
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of an adaptive trigger.
 
@@ -19,47 +20,52 @@ The possible states of an adaptive trigger.
 enum Status
 ```
 
+```c
+enum GCDualSenseAdaptiveTriggerStatus : NSInteger;
+```
+
 ## Topics
 
 ### Statuses
-- [GCDualSenseAdaptiveTrigger.Status.unknown](gcdualsenseadaptivetrigger/status-swift.enum/unknown.md)
+- [GCDualSenseAdaptiveTrigger.Status.unknown](./status-swift.enum/unknown.md)
   The trigger status is unknown.
-- [GCDualSenseAdaptiveTrigger.Status.feedbackNoLoad](gcdualsenseadaptivetrigger/status-swift.enum/feedbacknoload.md)
+- [GCDualSenseAdaptiveTrigger.Status.feedbackNoLoad](./status-swift.enum/feedbacknoload.md)
   The trigger is in feedback mode, but isn’t applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.feedbackLoadApplied](gcdualsenseadaptivetrigger/status-swift.enum/feedbackloadapplied.md)
+- [GCDualSenseAdaptiveTrigger.Status.feedbackLoadApplied](./status-swift.enum/feedbackloadapplied.md)
   The trigger is in feedback mode and is applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.weaponReady](gcdualsenseadaptivetrigger/status-swift.enum/weaponready.md)
+- [GCDualSenseAdaptiveTrigger.Status.weaponReady](./status-swift.enum/weaponready.md)
   The trigger is in weapon mode and ready to fire, but isn’t applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.weaponFiring](gcdualsenseadaptivetrigger/status-swift.enum/weaponfiring.md)
+- [GCDualSenseAdaptiveTrigger.Status.weaponFiring](./status-swift.enum/weaponfiring.md)
   The trigger is in weapon mode, firing, and is applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.weaponFired](gcdualsenseadaptivetrigger/status-swift.enum/weaponfired.md)
+- [GCDualSenseAdaptiveTrigger.Status.weaponFired](./status-swift.enum/weaponfired.md)
   The trigger is in weapon mode, has fired, and has stopped applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.vibrationNotVibrating](gcdualsenseadaptivetrigger/status-swift.enum/vibrationnotvibrating.md)
+- [GCDualSenseAdaptiveTrigger.Status.vibrationNotVibrating](./status-swift.enum/vibrationnotvibrating.md)
   The trigger is in vibration mode, but isn’t vibrating.
-- [GCDualSenseAdaptiveTrigger.Status.vibrationIsVibrating](gcdualsenseadaptivetrigger/status-swift.enum/vibrationisvibrating.md)
+- [GCDualSenseAdaptiveTrigger.Status.vibrationIsVibrating](./status-swift.enum/vibrationisvibrating.md)
   The trigger is in vibration mode and is vibrating.
-- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackReady](gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackready.md)
+- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackReady](./status-swift.enum/slopefeedbackready.md)
   The trigger is in slope mode, but isn’t applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackApplyingLoad](gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackapplyingload.md)
+- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackApplyingLoad](./status-swift.enum/slopefeedbackapplyingload.md)
   The trigger is in slope mode, and is applying the resistive load.
-- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackFinished](gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackfinished.md)
+- [GCDualSenseAdaptiveTrigger.Status.slopeFeedbackFinished](./status-swift.enum/slopefeedbackfinished.md)
   The trigger is in slope mode, and stopped applying the resistive load.
 ### Initializers
-- [init?(rawValue: Int)](gcdualsenseadaptivetrigger/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var status: GCDualSenseAdaptiveTrigger.Status](gcdualsenseadaptivetrigger/status-swift.property.md)
+### Checking the status
+- [var status: GCDualSenseAdaptiveTrigger.Status](./status-swift.property.md)
   The current status of the adaptive trigger and whether it’s applying effects.
 
 

@@ -1,7 +1,8 @@
 # source
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start point of the route.
 
@@ -20,14 +21,20 @@ The start point of the route.
 var source: MKMapItem { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKMapItem * source;
+```
+
 #### Discussion
 
-This item in this property may contain additional details that aren’t in the original item you use to create the [`MKDirections.Request`](mkdirections/request.md) object.
+This item in this property may contain additional details that aren’t in the original item you use to create the [`MKDirections.Request`](../request.md) object.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [var destination: MKMapItem](mkdirections/etaresponse/destination.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Getting the end points
+- [var destination: MKMapItem](./destination.md)
   The end point of the route.
 
 

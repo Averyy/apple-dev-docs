@@ -1,7 +1,8 @@
 # access
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The access permissions of the argument.
 
@@ -19,17 +20,22 @@ The access permissions of the argument.
 var access: MTLBindingAccess { get set }
 ```
 
+```objc
+@property (nonatomic) MTLBindingAccess access;
+```
+
 ## See Also
 
-- [var dataType: MTLDataType](mtlargumentdescriptor/datatype.md)
+### Setting the descriptor’s properties
+- [var dataType: MTLDataType](./datatype.md)
   The data type of the argument.
-- [var index: Int](mtlargumentdescriptor/index.md)
+- [var index: Int](./index.md)
   The index ID of the argument.
-- [var arrayLength: Int](mtlargumentdescriptor/arraylength.md)
+- [var arrayLength: Int](./arraylength.md)
   The length of an array argument.
-- [var constantBlockAlignment: Int](mtlargumentdescriptor/constantblockalignment.md)
+- [var constantBlockAlignment: Int](./constantblockalignment.md)
   The alignment of the constant block.
-- [var textureType: MTLTextureType](mtlargumentdescriptor/texturetype.md)
+- [var textureType: MTLTextureType](./texturetype.md)
   The texture type of a texture argument.
 
 

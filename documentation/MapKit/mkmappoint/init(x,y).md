@@ -1,18 +1,19 @@
 # init(x:y:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map point structure from the specified values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -31,9 +32,10 @@ A map point with the specified values.
 
 ## See Also
 
-- [init()](mkmappoint/init.md)
+### Creating a map point
+- [init()](./init%28%29.md)
   Creates a map point at an unspecified point.
-- [init(CLLocationCoordinate2D)](mkmappoint/init(_:).md)
+- [init(CLLocationCoordinate2D)](./init%28_%29.md)
   Creates the map point data structure that corresponds to the specified coordinate.
 
 

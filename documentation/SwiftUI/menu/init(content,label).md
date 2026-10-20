@@ -1,7 +1,8 @@
 # init(content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu with a custom label.
 
@@ -20,6 +21,8 @@ nonisolated
 init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `content`: A group of menu items.
@@ -27,11 +30,12 @@ init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 
 ## See Also
 
-- [init(_:content:)](menu/init(_:content:).md)
+### Creating a menu from content
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a menu that generates its label from a localized string resource.
-- [init(_:image:content:)](menu/init(_:image:content:).md)
+- [init(_:image:content:)](./init%28_,image,content%29.md)
   Creates a menu that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:content:)](menu/init(_:systemimage:content:).md)
+- [init(_:systemImage:content:)](./init%28_,systemimage,content%29.md)
   Creates a menu that generates its label from a localized string key and system image.
 
 

@@ -1,28 +1,29 @@
 # UserMapHBAData
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Maps any host bus adapter (HBA)-specific task data in response to a call from the framework.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserMapHBAData(uint32_t *uniqueTaskID);
 ```
 
 #### Return Value
 
-A value that indicates the result of memory-mapping the data. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of memory-mapping the data. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
 The framework calls this method for every `SCSIParallelTask` immediately after creating the task in the kernel. The driver extension class should override this function to memory-map and prepare any host bus adapter (HBA)-specific task data for direct memory access (DMA), and set a unique task ID. The framework uses this ID to uniquely identify the corresponding `SCSIParallelTask` in the kernel.
 
-The following listing shows an example of implementing [`UserMapHBAData`](iouserscsiparallelinterfacecontroller/usermaphbadata.md). It starts by creating an [`IOBufferMemoryDescriptor`](https://developer.apple.com/documentation/driverkit/iobuffermemorydescriptor) for the controller’s specific data structure. It also maps memory to the dext’s memory space. Then the example adds the task to its own task data list, and sets the `uniqueTaskID` in-out variable to a newly incremented unique ID. This allows the kernel to associate this task with its corresponding [`SCSIParallelTaskIdentifier`](https://developer.apple.com/documentation/kernel/scsiparalleltaskidentifier).
+The following listing shows an example of implementing [`UserMapHBAData`](./usermaphbadata.md). It starts by creating an [`IOBufferMemoryDescriptor`](../../DriverKit/iobuffermemorydescriptor.md) for the controller’s specific data structure. It also maps memory to the dext’s memory space. Then the example adds the task to its own task data list, and sets the `uniqueTaskID` in-out variable to a newly incremented unique ID. This allows the kernel to associate this task with its corresponding [`SCSIParallelTaskIdentifier`](../../kernel/scsiparalleltaskidentifier.md).
 
 ```objc
 kern_return_t
@@ -45,9 +46,9 @@ IMPL ( ExampleSCSIDext, UserMapHBAData )
 }
 ```
 
-It’s important to perform preprocessing like memory mapping early — before serving I/O — because doing so on the I/O path can affect performance. For example, calling an API like [`CreateMapping`](https://developer.apple.com/documentation/driverkit/iomemorydescriptor/createmapping) in the I/O path can cause additional RPC overhead.
+It’s important to perform preprocessing like memory mapping early — before serving I/O — because doing so on the I/O path can affect performance. For example, calling an API like [`CreateMapping`](../../DriverKit/iomemorydescriptor/createmapping.md) in the I/O path can cause additional RPC overhead.
 
-The framework uses `taskID` to uniquely identify the corresponding `SCSIParallelTask` in the kernel. The `taskID`  also appears in the [`SCSIUserParallelTask`](scsiuserparalleltask.md) and the [`fControllerTaskIdentifier`](scsiuserparallelresponse/fcontrollertaskidentifier.md) member of the [`SCSIUserParallelResponse`](scsiuserparallelresponse.md) structure while interfacing with the dext class.
+The framework uses `taskID` to uniquely identify the corresponding `SCSIParallelTask` in the kernel. The `taskID`  also appears in the [`SCSIUserParallelTask`](../scsiuserparalleltask.md) and the [`fControllerTaskIdentifier`](../scsiuserparallelresponse/fcontrollertaskidentifier.md) member of the [`SCSIUserParallelResponse`](../scsiuserparallelresponse.md) structure while interfacing with the dext class.
 
 > **Note**: The framework reserves the `taskID` value `0` for its own use; don’t use it in your dext.
 
@@ -57,29 +58,30 @@ The framework uses `taskID` to uniquely identify the corresponding `SCSIParallel
 
 ## See Also
 
-- [UserReportInitiatorIdentifier](iouserscsiparallelinterfacecontroller/userreportinitiatoridentifier.md)
+### Managing host bus adapters
+- [UserReportInitiatorIdentifier](./userreportinitiatoridentifier.md)
   Gets the SCSI device identifier for the host bus adapter (HBA) in response to a call from the framework.
-- [UserReportHighestSupportedDeviceID](iouserscsiparallelinterfacecontroller/userreporthighestsupporteddeviceid.md)
+- [UserReportHighestSupportedDeviceID](./userreporthighestsupporteddeviceid.md)
   Gets the highest supported SCSI device identifier in response to a call from the framework.
-- [UserReportMaximumTaskCount](iouserscsiparallelinterfacecontroller/userreportmaximumtaskcount.md)
+- [UserReportMaximumTaskCount](./userreportmaximumtaskcount.md)
   Gets the maximum number of outstanding tasks the HBA can process in response to a call from the framework.
-- [UserDoesHBAPerformDeviceManagement](iouserscsiparallelinterfacecontroller/userdoeshbaperformdevicemanagement.md)
+- [UserDoesHBAPerformDeviceManagement](./userdoeshbaperformdevicemanagement.md)
   Determines if the host bus adapter (HBA) manages devices in response to a call from the framework.
-- [UserReportHBAHighestLogicalUnitNumber](iouserscsiparallelinterfacecontroller/userreporthbahighestlogicalunitnumber.md)
+- [UserReportHBAHighestLogicalUnitNumber](./userreporthbahighestlogicalunitnumber.md)
   Gets the highest logical unit number (LUN) in response to a call from the framework.
-- [UserDoesHBAPerformAutoSense](iouserscsiparallelinterfacecontroller/userdoeshbaperformautosense.md)
+- [UserDoesHBAPerformAutoSense](./userdoeshbaperformautosense.md)
   Determines if the driver extension class automatically performs autosense and provides autosense data for each I/O in response to a call from the framework.
-- [UserDoesHBASupportMultiPathing](iouserscsiparallelinterfacecontroller/userdoeshbasupportmultipathing.md)
+- [UserDoesHBASupportMultiPathing](./userdoeshbasupportmultipathing.md)
   Queries the HBA child class to determine if it supports multipathing in response to a call from the framework.
-- [UserDoesHBASupportSCSIParallelFeature](iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.md)
+- [UserDoesHBASupportSCSIParallelFeature](./userdoeshbasupportscsiparallelfeature.md)
   Determines whether the driver extension class supports a specific feature in response to a call from the framework.
-- [SCSIParallelFeature](scsiparallelfeature.md)
+- [SCSIParallelFeature](../scsiparallelfeature.md)
   A feature that the driver extension supports.
-- [UserSetHBAProperties](iouserscsiparallelinterfacecontroller/usersethbaproperties.md)
+- [UserSetHBAProperties](./usersethbaproperties.md)
   Sets multiple properties for a host bus adapter.
-- [UserRemoveHBAProperties](iouserscsiparallelinterfacecontroller/userremovehbaproperties.md)
+- [UserRemoveHBAProperties](./userremovehbaproperties.md)
   Removes properties from a host bus adapter in response to a call from the framework.
-- [UserReportHBAConstraints](iouserscsiparallelinterfacecontroller/userreporthbaconstraints.md)
+- [UserReportHBAConstraints](./userreporthbaconstraints.md)
   Reports the I/O constraints for this controller.
 
 

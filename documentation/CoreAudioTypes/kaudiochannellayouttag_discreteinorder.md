@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_DiscreteInOrder
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A tag used to map input channels to output channels without changing the channel order.
 
@@ -20,13 +21,18 @@ A tag used to map input channels to output channels without changing the channel
 var kAudioChannelLayoutTag_DiscreteInOrder: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_DiscreteInOrder
+```
+
 #### Discussion
 
 This tag needs to be `OR`ed with the actual number of channels.
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_Unknown: AudioChannelLayoutTag](kaudiochannellayouttag_unknown.md)
+### General Information Tags
+- [var kAudioChannelLayoutTag_Unknown: AudioChannelLayoutTag](./kaudiochannellayouttag_unknown.md)
   The channel layout is unknown.
 
 

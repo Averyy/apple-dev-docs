@@ -1,7 +1,8 @@
 # kCMDeviceRegisteredNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kCMDeviceRegisteredNotification: String { get }
+```
+
+```c
+#define kCMDeviceRegisteredNotification
 ```
 
 

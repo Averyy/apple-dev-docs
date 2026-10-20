@@ -1,7 +1,8 @@
 # extensionPointIdentifier
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension point of your host app that the app extension supports.
 
@@ -26,9 +27,10 @@ This property contains the identifier for one of the host app’s extension poin
 
 ## See Also
 
-- [var bundleIdentifier: String](appextensionidentity/bundleidentifier.md)
+### Identifying the process
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app extension.
-- [var localizedName: String](appextensionidentity/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized, human-readable name of the app extension.
 
 

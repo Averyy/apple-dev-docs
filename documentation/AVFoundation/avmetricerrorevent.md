@@ -1,7 +1,8 @@
 # AVMetricErrorEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a metric event when an error occurs.
 
@@ -20,43 +21,48 @@ An object that represents a metric event when an error occurs.
 class AVMetricErrorEvent
 ```
 
+```objc
+@interface AVMetricErrorEvent : AVMetricEvent
+```
+
 ## Topics
 
 ### Getting the error
-- [var error: any Error](avmetricerrorevent/error.md)
+- [var error: any Error](./avmetricerrorevent/error.md)
   Returns the error event.
-- [var didRecover: Bool](avmetricerrorevent/didrecover.md)
+- [var didRecover: Bool](./avmetricerrorevent/didrecover.md)
   A Boolean value that indicates whether the error was recoverable.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVMetrics](avmetrics.md)
+### Metrics
+- [struct AVMetrics](./avmetrics.md)
   An asynchronous stream of metric information.
-- [struct AVMergedMetrics](avmergedmetrics.md)
+- [struct AVMergedMetrics](./avmergedmetrics.md)
   An asynchronous stream of metric information from different publishers.
-- [class AVVideoPerformanceMetrics](avvideoperformancemetrics.md)
+- [class AVVideoPerformanceMetrics](./avvideoperformancemetrics.md)
   An object that provides metrics related to video playback quality.
-- [protocol AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
+- [protocol AVMetricEventStreamPublisher](./avmetriceventstreampublisher.md)
   A type for objects that publish metric events to the event stream.
-- [class AVMetricEvent](avmetricevent.md)
+- [class AVMetricEvent](./avmetricevent.md)
   A base class that represents a metric event.
-- [Metric event types](metric-event-types.md)
+- [Metric event types](./metric-event-types.md)
 
 
 ---

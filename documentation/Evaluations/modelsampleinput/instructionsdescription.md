@@ -1,7 +1,8 @@
 # instructionsDescription
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the instructions, synthesized from instruction segments.
 

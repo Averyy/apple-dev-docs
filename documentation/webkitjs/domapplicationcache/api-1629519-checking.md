@@ -11,7 +11,7 @@ The update has started but the resources are not downloaded yet—for example, t
 
 ## Declaration
 
-```swift
+```
 const unsigned short CHECKING;
 ```
 

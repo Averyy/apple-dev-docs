@@ -1,6 +1,8 @@
 # Build Mail App Extensions
 
-**Framework**: MailKit
+**Framework**: MailKit  
+**Role**: Sample Code  
+**Download**: [BuildMailAppExtensions.zip](https://docs-assets.developer.apple.com/published/968e72841118/BuildMailAppExtensions.zip)
 
 Create app extensions that block content, perform message and composing actions, and help message security.
 
@@ -10,11 +12,12 @@ Create app extensions that block content, perform message and composing actions,
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10168: Build Mail App Extensions`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10168/).
+> **Note**: This sample code project is associated with WWDC21 session [10168: Build Mail App Extensions](https://developer.apple.com/wwdc21/10168/).
 
 ## See Also
 
-- [protocol MEExtension](meextension.md)
+### Essentials
+- [protocol MEExtension](./meextension.md)
   A type that provides objects for manipulating email messages, such as performing actions on messages or blocking content when users view messages.
 
 

@@ -1,14 +1,15 @@
 # ECC_NUM_VERSIONS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.2+
 
 ## Declaration
 
-```swift
+```c
 ECC_NUM_VERSIONS
 ```
 

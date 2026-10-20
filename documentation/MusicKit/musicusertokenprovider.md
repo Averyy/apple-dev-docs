@@ -1,7 +1,8 @@
 # MusicUserTokenProvider
 
 **Framework**: MusicKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that music requests use to fetch user tokens your app requires to access Apple Music API.
 
@@ -23,28 +24,29 @@ class MusicUserTokenProvider
 ## Topics
 
 ### Initializers
-- [init()](musicusertokenprovider/init.md)
+- [init()](./musicusertokenprovider/init%28%29.md)
   Creates a user token provider.
 ### Instance Methods
-- [func userToken(for: String, options: MusicTokenRequestOptions) async throws -> String](musicusertokenprovider/usertoken(for:options:).md)
+- [func userToken(for: String, options: MusicTokenRequestOptions) async throws -> String](./musicusertokenprovider/usertoken%28for,options%29.md)
   Fetches and returns a user token for Apple Music API.
 
 ## Relationships
 
 ### Inherited By
-- [DefaultMusicTokenProvider](defaultmusictokenprovider.md)
+- [DefaultMusicTokenProvider](./defaultmusictokenprovider.md)
 
 ## See Also
 
-- [typealias MusicTokenProvider](musictokenprovider.md)
+### Token management
+- [typealias MusicTokenProvider](./musictokenprovider.md)
   An object that music requests use to access Apple Music API.
-- [protocol MusicDeveloperTokenProvider](musicdevelopertokenprovider.md)
+- [protocol MusicDeveloperTokenProvider](./musicdevelopertokenprovider.md)
   A set of methods that music requests use to access Apple Music API.
-- [struct MusicTokenRequestOptions](musictokenrequestoptions.md)
+- [struct MusicTokenRequestOptions](./musictokenrequestoptions.md)
   Options that music requests pass into token provider methods to fetch a required token for accessing Apple Music API.
-- [enum MusicTokenRequestError](musictokenrequesterror.md)
+- [enum MusicTokenRequestError](./musictokenrequesterror.md)
   An error that the token provider or music requests can throw upon requesting any token necessary for accessing Apple Music API.
-- [class DefaultMusicTokenProvider](defaultmusictokenprovider.md)
+- [class DefaultMusicTokenProvider](./defaultmusictokenprovider.md)
   The default token provider that music requests use to access Apple Music API.
 
 

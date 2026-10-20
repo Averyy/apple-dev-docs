@@ -1,7 +1,8 @@
 # layerPointConverted(fromCaptureDevicePoint:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point from the coordinate space of the capture device to the coordinate space of the layer.
 
@@ -18,15 +19,19 @@ Converts a point from the coordinate space of the capture device to the coordina
 func layerPointConverted(fromCaptureDevicePoint captureDevicePointOfInterest: CGPoint) -> CGPoint
 ```
 
+```objc
+- (CGPoint) pointForCaptureDevicePointOfInterest:(CGPoint) captureDevicePointOfInterest;
+```
+
 #### Return Value
 
 A point in layer coordinates.
 
 #### Discussion
 
-A capture device’s [`focusPointOfInterest`](avcapturedevice/focuspointofinterest.md) and [`exposurePointOfInterest`](avcapturedevice/exposurepointofinterest.md) properties provide a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) value where `{0,0}` represents the top-left and `{1,1}` represents the bottom-right of the unrotated image.
+A capture device’s [`focusPointOfInterest`](../avcapturedevice/focuspointofinterest.md) and [`exposurePointOfInterest`](../avcapturedevice/exposurepointofinterest.md) properties provide a [`CGPoint`](../../CoreFoundation/cgpoint.md) value where `{0,0}` represents the top-left and `{1,1}` represents the bottom-right of the unrotated image.
 
-The system takes the layer’s frame size and its [`videoGravity`](avcapturevideopreviewlayer/videogravity.md) into consideration when making the conversion.
+The system takes the layer’s frame size and its [`videoGravity`](./videogravity.md) into consideration when making the conversion.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ The system takes the layer’s frame size and its [`videoGravity`](avcapturevide
 
 ## See Also
 
-- [func captureDevicePointConverted(fromLayerPoint: CGPoint) -> CGPoint](avcapturevideopreviewlayer/capturedevicepointconverted(fromlayerpoint:).md)
+### Converting between coordinate spaces
+- [func captureDevicePointConverted(fromLayerPoint: CGPoint) -> CGPoint](./capturedevicepointconverted%28fromlayerpoint%29.md)
   Converts a point from layer coordinates to the coordinate space of the capture device.
-- [func layerRectConverted(fromMetadataOutputRect: CGRect) -> CGRect](avcapturevideopreviewlayer/layerrectconverted(frommetadataoutputrect:).md)
+- [func layerRectConverted(fromMetadataOutputRect: CGRect) -> CGRect](./layerrectconverted%28frommetadataoutputrect%29.md)
   Converts a rectangle from metadata output coordinates to the coordinate space of the layer.
-- [func metadataOutputRectConverted(fromLayerRect: CGRect) -> CGRect](avcapturevideopreviewlayer/metadataoutputrectconverted(fromlayerrect:).md)
+- [func metadataOutputRectConverted(fromLayerRect: CGRect) -> CGRect](./metadataoutputrectconverted%28fromlayerrect%29.md)
   Converts a rectangle from layer coordinates to the coordinate space of the metadata output.
-- [func transformedMetadataObject(for: AVMetadataObject) -> AVMetadataObject?](avcapturevideopreviewlayer/transformedmetadataobject(for:).md)
+- [func transformedMetadataObject(for: AVMetadataObject) -> AVMetadataObject?](./transformedmetadataobject%28for%29.md)
   Converts a metadata object’s visual properties to layer coordinates.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new set from a finite sequence of items.
@@ -34,6 +35,12 @@ print(validIndices)
 ## Parameters
 
 - `sequence`: The elements to use as members of the new set.
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [init<S>(S)](./init%28_%29-5ink1.md)
+  Creates a new set from a finite sequence of items.
 
 
 ---

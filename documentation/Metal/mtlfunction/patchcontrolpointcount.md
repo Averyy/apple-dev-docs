@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of patch control points in the post-tessellation vertex function.
@@ -20,15 +21,20 @@ The number of patch control points in the post-tessellation vertex function.
 var patchControlPointCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger patchControlPointCount;
+```
+
 #### Discussion
 
 This value is `-1` if the number of patch control points wasn’t specified or if the function isn’t a post-tessellation vertex function.
 
 ## See Also
 
-- [var patchType: MTLPatchType](mtlfunction/patchtype.md)
+### Identifying the tessellation patch
+- [var patchType: MTLPatchType](./patchtype.md)
   The tessellation patch type of a post-tessellation vertex function.
-- [enum MTLPatchType](mtlpatchtype.md)
+- [enum MTLPatchType](../mtlpatchtype.md)
   Types of tessellation patches that can be inputs of a post-tessellation vertex function.
 
 

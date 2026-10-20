@@ -1,7 +1,8 @@
 # +=(_:_:)
 
 **Framework**: MusicKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Appends contents of a collection representing a next batch, in the right hand side, to the existing collection on the left hand side.
 
@@ -24,7 +25,7 @@ static func += (collection: inout MusicItemCollection<MusicItemType>, nextBatchC
 
 In addition to appending the underlying items of the collection to the existing collection on the left hand side, this will also transfer to the collection on the left hand side any information about a next batch from the collection on the right hand side, or lack thereof.
 
-This appending operator is particularly useful for aggregating subsequent batches from a given collection into a local variable (for example, to use a [`MusicItemCollection`](musicitemcollection.md) to drive a SwiftUI [`List`](https://developer.apple.com/documentation/swiftui/list) or [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach)).
+This appending operator is particularly useful for aggregating subsequent batches from a given collection into a local variable (for example, to use a [`MusicItemCollection`](../musicitemcollection.md) to drive a SwiftUI [`List`](../../SwiftUI/list.md) or [`ForEach`](../../SwiftUI/foreach.md)).
 
 
 ---

@@ -5,17 +5,17 @@
 ## Topics
 
 ### Constants
-- [var cmDeviceAlreadyRegistered: Int](cmdevicealreadyregistered.md)
+- [var cmDeviceAlreadyRegistered: Int](../cmdevicealreadyregistered.md)
   Device already registered; returned by a CM device integration routine.
-- [var cmDeviceDBNotFoundErr: Int](cmdevicedbnotfounderr.md)
+- [var cmDeviceDBNotFoundErr: Int](../cmdevicedbnotfounderr.md)
   Preferences not found or loaded; returned by a CM device integration routine.
-- [var cmDeviceNotRegistered: Int](cmdevicenotregistered.md)
+- [var cmDeviceNotRegistered: Int](../cmdevicenotregistered.md)
   Device not found; returned by a CM device integration routine.
-- [var cmDeviceProfilesNotFound: Int](cmdeviceprofilesnotfound.md)
+- [var cmDeviceProfilesNotFound: Int](../cmdeviceprofilesnotfound.md)
   Profiles not found; returned by a CM device integration routine.
-- [var cmInternalCFErr: Int](cminternalcferr.md)
+- [var cmInternalCFErr: Int](../cminternalcferr.md)
   CoreFoundation failure; returned by a CM device integration routine.
-- [var cmPrefsSynchError: Int](cmprefssyncherror.md)
+- [var cmPrefsSynchError: Int](../cmprefssyncherror.md)
 
 
 ---

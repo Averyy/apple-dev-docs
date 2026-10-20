@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kPMCoverPageAfter: Int](kpmcoverpageafter.md)
-- [var kPMCoverPageBefore: Int](kpmcoverpagebefore.md)
-- [var kPMCoverPageNone: Int](kpmcoverpagenone.md)
+- [var kPMCoverPageAfter: Int](../kpmcoverpageafter.md)
+- [var kPMCoverPageBefore: Int](../kpmcoverpagebefore.md)
+- [var kPMCoverPageNone: Int](../kpmcoverpagenone.md)
 
 
 ---

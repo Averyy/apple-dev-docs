@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indicator of whether the current query is complete or still in progress.
 
@@ -20,17 +21,18 @@ let status: SpotlightSearchTool.SearchReply.Status
 
 #### Discussion
 
-The of this property is [`SpotlightSearchTool.SearchReply.Status.partial`](spotlightsearchtool/searchreply/status-swift.enum/partial.md) when the system has more replies to deliver for the same [`queryToken`](spotlightsearchtool/searchreply/querytoken-swift.property.md) value. When delivering the last reply for a query, the tool sets this value to [`SpotlightSearchTool.SearchReply.Status.complete`](spotlightsearchtool/searchreply/status-swift.enum/complete.md). Use this value to track changes to the current query. For example, you might choose to partition data for each query and display them separately in your interface.
+The of this property is [`SpotlightSearchTool.SearchReply.Status.partial`](./status-swift.enum/partial.md) when the system has more replies to deliver for the same [`queryToken`](./querytoken-swift.property.md) value. When delivering the last reply for a query, the tool sets this value to [`SpotlightSearchTool.SearchReply.Status.complete`](./status-swift.enum/complete.md). Use this value to track changes to the current query. For example, you might choose to partition data for each query and display them separately in your interface.
 
 ## See Also
 
-- [let content: SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.property.md)
+### Getting the reply details
+- [let content: SpotlightSearchTool.SearchReply.Content](./content-swift.property.md)
   The result content — determines what to display and how.
-- [let label: String?](spotlightsearchtool/searchreply/label.md)
+- [let label: String?](./label.md)
   A short, LLM-generated description of what the result represents.
-- [SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Content](./content-swift.enum.md)
   What this set of results represents — determines display strategy.
-- [SpotlightSearchTool.SearchReply.Status](spotlightsearchtool/searchreply/status-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Status](./status-swift.enum.md)
 
 
 ---

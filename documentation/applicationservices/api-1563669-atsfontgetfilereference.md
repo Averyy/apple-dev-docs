@@ -1,7 +1,8 @@
 # ATSFontGetFileReference(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontGetFileReference(_ iFont: ATSFontRef, _ oFile: UnsafeMutablePointer<FSRef>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontGetFileReference(ATSFontRef iFont, FSRef *oFile);
 ```
 
 

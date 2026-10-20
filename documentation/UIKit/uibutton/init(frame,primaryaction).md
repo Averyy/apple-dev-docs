@@ -1,7 +1,8 @@
 # init(frame:primaryAction:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new button with the specified frame, registers the primary action event, and sets the title and image to the action’s title and image.
 
@@ -18,16 +19,21 @@ Creates a new button with the specified frame, registers the primary action even
 convenience init(frame: CGRect, primaryAction: UIAction?)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame primaryAction:(UIAction *) primaryAction;
+```
+
 ## Parameters
 
 - `frame`: The frame rectangle for the view, measured in points.
-- `primaryAction`: The action to perform when the button is selected. The button registers this action for the [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control event and sets the title and image properties to the action’s title and image.
+- `primaryAction`: The action to perform when the button is selected. The button registers this action for the [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control event and sets the title and image properties to the action’s title and image.
 
 ## See Also
 
-- [init(frame: CGRect)](uibutton/init(frame:).md)
+### Creating buttons
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a new button with the specified frame.
-- [init?(coder: NSCoder)](uibutton/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new button with data in an unarchiver.
 
 

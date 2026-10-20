@@ -1,7 +1,8 @@
 # addReferenceSignature(_:representing:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a reference signature and its associated metadata to a catalog.
 
@@ -18,6 +19,10 @@ Adds a reference signature and its associated metadata to a catalog.
 
 ```swift
 func addReferenceSignature(_ signature: SHSignature, representing mediaItems: [SHMediaItem]) throws
+```
+
+```objc
+- (BOOL) addReferenceSignature:(SHSignature *) signature representingMediaItems:(NSArray<SHMediaItem *> *) mediaItems error:(NSError **) error;
 ```
 
 #### Discussion

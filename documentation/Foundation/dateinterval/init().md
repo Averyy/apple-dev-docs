@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an interval with start and end dates set to the current date and the duration set to `0`.
 
@@ -22,9 +23,10 @@ init()
 
 ## See Also
 
-- [init(start: Date, duration: TimeInterval)](dateinterval/init(start:duration:).md)
+### Creating a Date Interval
+- [init(start: Date, duration: TimeInterval)](./init%28start,duration%29.md)
   Initializes an interval with the specified start date and duration.
-- [init(start: Date, end: Date)](dateinterval/init(start:end:).md)
+- [init(start: Date, end: Date)](./init%28start,end%29.md)
   Initializes an interval with the specified start and end date.
 
 

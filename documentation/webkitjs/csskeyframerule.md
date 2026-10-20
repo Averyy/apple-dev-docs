@@ -1,7 +1,8 @@
 # CSSKeyframeRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSKeyframeRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [keyText](csskeyframerule/1631986-keytext.md)
-- [style](csskeyframerule/1631468-style.md)
+- [keyText](./csskeyframerule/api-1631986-keytext.md)
+- [style](./csskeyframerule/api-1631468-style.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

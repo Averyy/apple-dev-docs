@@ -1,7 +1,8 @@
 # BetaTester.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a beta tester resource.
 
@@ -10,19 +11,19 @@ Attributes that describe a beta tester resource.
 
 ## Declaration
 
-```swift
+```
 object BetaTester.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
-- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+- [App Store Connect API 3.5 release notes](../app-store-connect-api-3-5-release-notes.md)
+- [App Store Connect API 4.2 release notes](../app-store-connect-api-4-2-release-notes.md)
 
 ## Topics
 
 ### Dictionaries
-- [object BetaTester.Attributes.AppDevices](betatester/attributes-data.dictionary/appdevices-data.dictionary.md)
+- [object BetaTester.Attributes.AppDevices](./attributes-data.dictionary/appdevices-data.dictionary.md)
   Information about devices used by the beta tester.
 
 ## Properties
@@ -36,19 +37,21 @@ object BetaTester.Attributes
 
 ## See Also
 
-- [Beta Testers](beta-testers.md)
+### Related Documentation
+- [Beta Testers](../beta-testers.md)
   People who can install and test prerelease builds.
-- [type BetaInviteType](betainvitetype.md)
+- [type BetaInviteType](../betainvitetype.md)
   String that indicates how you offer a beta invitation.
-- [type BetaTesterState](betatesterstate.md)
+- [type BetaTesterState](../betatesterstate.md)
   String that describes the state of a beta tester.
-- [object BetaTester.Relationships](betatester/relationships-data.dictionary.md)
+- [object BetaTester.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
-- [type BetaInviteType](betainvitetype.md)
+### Attributes and Relationships
+- [type BetaInviteType](../betainvitetype.md)
   String that indicates how you offer a beta invitation.
-- [type BetaTesterState](betatesterstate.md)
+- [type BetaTesterState](../betatesterstate.md)
   String that describes the state of a beta tester.
-- [object BetaTester.Relationships](betatester/relationships-data.dictionary.md)
+- [object BetaTester.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

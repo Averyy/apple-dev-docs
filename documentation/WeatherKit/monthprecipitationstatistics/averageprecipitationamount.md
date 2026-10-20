@@ -1,7 +1,8 @@
 # averagePrecipitationAmount
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average amount of liquid precipitation for the month.
 

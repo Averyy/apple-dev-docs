@@ -1,32 +1,34 @@
 # ProfilesResponse
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains a list of Profiles resources.
 
 ## Declaration
 
-```swift
+```
 object ProfilesResponse
 ```
 
 ## Properties
 
 - `data` ([Profile]) *(required)*: The resource data.
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `BundleId`, `Device`, `Certificate`
 - `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
 - `meta` (PagingInformation): Paging information.
 
 ## See Also
 
-- [object Profile](profile.md)
+### Objects
+- [object Profile](./profile.md)
   The data structure that represents a Profiles  resource.
-- [object ProfileCreateRequest](profilecreaterequest.md)
+- [object ProfileCreateRequest](./profilecreaterequest.md)
   The request body you use to create a Profile.
-- [object ProfileResponse](profileresponse.md)
+- [object ProfileResponse](./profileresponse.md)
   A response that contains a single Profiles resource.
-- [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfilesWithoutIncludesResponse](./profileswithoutincludesresponse.md)
 
 
 ---

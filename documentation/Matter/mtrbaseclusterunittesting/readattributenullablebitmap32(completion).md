@@ -1,7 +1,8 @@
 # readAttributeNullableBitmap32(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableBitmap32(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableBitmap32() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNullableBitmap32WithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

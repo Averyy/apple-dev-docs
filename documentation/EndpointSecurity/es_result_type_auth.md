@@ -1,13 +1,14 @@
 # ES_RESULT_TYPE_AUTH
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authorization result type.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The authorization result type.
 var ES_RESULT_TYPE_AUTH: es_result_type_t { get }
 ```
 
+```c
+ES_RESULT_TYPE_AUTH
+```
+
 ## See Also
 
-- [var ES_RESULT_TYPE_FLAGS: es_result_type_t](es_result_type_flags.md)
+### Result Types
+- [var ES_RESULT_TYPE_FLAGS: es_result_type_t](./es_result_type_flags.md)
   The flags result type.
 
 

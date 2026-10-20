@@ -1,7 +1,8 @@
 # CustomerEngagement.Token
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A token that authenticates access to a customer engagement session.
 
@@ -19,14 +20,14 @@ struct Token
 ## Topics
 
 ### Creating a token
-- [init(using: PaymentCardReader.Token)](customerengagement/token/init(using:).md)
+- [init(using: PaymentCardReader.Token)](./token/init%28using%29.md)
   Creates a customer engagement token.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

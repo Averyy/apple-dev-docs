@@ -1,7 +1,8 @@
 # firstMatch(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first match for the regex within this collection, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Returns the first match for the regex within this collection, where the regex is
 ```swift
 func firstMatch<Output>(@RegexComponentBuilder of content: () -> some RegexComponent) -> Regex<Output>.Match?
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # supportsNavigation
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the item contains information sufficient to provide navigation to the location it represents.
 
@@ -18,23 +19,28 @@ A value that indicates whether the item contains information sufficient to provi
 var supportsNavigation: NSNumber? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSNumber * supportsNavigation;
+```
+
 ## Mentions
 
-- [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
+- [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
 #### Discussion
 
-When an item includes [`latitude`](cssearchableitemattributeset/latitude.md) and [`longitude`](cssearchableitemattributeset/longitude.md) properties, these properties can be used for navigation to the location represented by the item. For example, it makes sense to set [`supportsNavigation`](cssearchableitemattributeset/supportsnavigation.md) to `1` for an item that represents review for a specific restaurant, but not for an item that represents a photo of a person.
+When an item includes [`latitude`](./latitude.md) and [`longitude`](./longitude.md) properties, these properties can be used for navigation to the location represented by the item. For example, it makes sense to set [`supportsNavigation`](./supportsnavigation.md) to `1` for an item that represents review for a specific restaurant, but not for an item that represents a photo of a person.
 
 ## See Also
 
-- [var actionIdentifiers: [String]](cssearchableitemattributeset/actionidentifiers.md)
+### Describing supporting actions
+- [var actionIdentifiers: [String]](./actionidentifiers.md)
   The identifiers that specify custom actions the app supports for the item.
-- [var supportsPhoneCall: NSNumber?](cssearchableitemattributeset/supportsphonecall.md)
+- [var supportsPhoneCall: NSNumber?](./supportsphonecall.md)
   A value that indicates whether the item contains information sufficient to allow a phone call to a number associated with the item.
-- [var sharedItemContentType: UTType?](cssearchableitemattributeset/shareditemcontenttype.md)
+- [var sharedItemContentType: UTType?](./shareditemcontenttype.md)
   The file type of the item to enable the user to share items from Spotlight.
-- [let CSActionIdentifier: String](csactionidentifier.md)
+- [let CSActionIdentifier: String](../csactionidentifier.md)
   A key that specifies the action’s identifier in a user activity.
 
 

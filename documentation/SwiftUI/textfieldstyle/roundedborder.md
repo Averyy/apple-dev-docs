@@ -1,16 +1,19 @@
 # roundedBorder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A text field style with a system-defined rounded border.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
 - visionOS 1.0+
+
+> **Deprecated**: Use `textFieldStyle(.bordered)` with `textInputBorderShape(.roundedRectangle)`
 
 ## Declaration
 
@@ -19,17 +22,20 @@ A text field style with a system-defined rounded border.
 static var roundedBorder: RoundedBorderTextFieldStyle { get }
 ```
 
+Available when `Self` is `RoundedBorderTextFieldStyle`.
+
 #### Discussion
 
-Use [`textFieldStyle(_:)`](view/textfieldstyle(_:).md) to apply the [`bordered`](textfieldstyle/bordered.md) style with [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) to apply the [`roundedRectangle`](textinputbordershape/roundedrectangle.md) shape instead.
+Use [`textFieldStyle(_:)`](../view/textfieldstyle%28_%29.md) to apply the [`bordered`](./bordered.md) style with [`textInputBorderShape(_:)`](../view/textinputbordershape%28_%29.md) to apply the [`roundedRectangle`](../textinputbordershape/roundedrectangle.md) shape instead.
 
 ## See Also
 
-- [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
+### Deprecated
+- [static var squareBorder: SquareBorderTextFieldStyle](./squareborder.md)
   A text field style with a system-defined square border.
-- [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
+- [struct RoundedBorderTextFieldStyle](../roundedbordertextfieldstyle.md)
   A text field style with a system-defined rounded border.
-- [struct SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)
+- [struct SquareBorderTextFieldStyle](../squarebordertextfieldstyle.md)
   A text field style with a system-defined square border.
 
 

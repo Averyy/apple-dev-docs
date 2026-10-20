@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a leaderboard resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a leaderboard resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

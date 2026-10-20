@@ -1,16 +1,17 @@
 # canceled
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Item thumbnail request has been canceled.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ static var canceled: ICReturnThumbnailError.Code { get }
 
 ## See Also
 
-- [static var alreadyFetching: ICReturnThumbnailError.Code](icreturnthumbnailerror/alreadyfetching.md)
+### Error Codes
+- [static var alreadyFetching: ICReturnThumbnailError.Code](./alreadyfetching.md)
   Item thumbnail request is being serviced.
-- [static var invalid: ICReturnThumbnailError.Code](icreturnthumbnailerror/invalid.md)
+- [static var invalid: ICReturnThumbnailError.Code](./invalid.md)
   Item thumbnail request completed with invalid result.
-- [static var notAvailable: ICReturnThumbnailError.Code](icreturnthumbnailerror/notavailable.md)
+- [static var notAvailable: ICReturnThumbnailError.Code](./notavailable.md)
   Item does not have thumbnail available.
-- [ICReturnThumbnailError.Code](icreturnthumbnailerror/code.md)
+- [ICReturnThumbnailError.Code](./code.md)
 
 
 ---

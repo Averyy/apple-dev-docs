@@ -1,7 +1,8 @@
 # fitted(to:validateOn:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -20,13 +21,14 @@ func fitted<Input, Validation>(to input: Input, validateOn validation: Validatio
 
 ## See Also
 
-- [func adaptedAsTemporal() -> SupervisedEstimatorToTemporalAdaptor<Self>](supervisedestimator/adaptedastemporal.md)
+### Adapting and fitting
+- [func adaptedAsTemporal() -> SupervisedEstimatorToTemporalAdaptor<Self>](./adaptedastemporal%28%29.md)
   Exposes this supervised estimator as a temporal supervised estimator.
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> Self.Transformer](supervisedestimator/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> Self.Transformer](supervisedestimator/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a sequence of examples while validating with a validation sequence.
-- [func fitted<Input>(to: Input) async throws -> Self.Transformer](supervisedestimator/fitted(to:).md)
+- [func fitted<Input>(to: Input) async throws -> Self.Transformer](./fitted%28to%29.md)
 
 
 ---

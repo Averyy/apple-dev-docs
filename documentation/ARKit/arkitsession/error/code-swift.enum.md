@@ -1,7 +1,8 @@
 # ARKitSession.Error.Code
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for ARKit sessions.
 
@@ -18,30 +19,31 @@ enum Code
 ## Topics
 
 ### Determining the cause of session errors
-- [ARKitSession.Error.Code.dataProviderFailedToRun](arkitsession/error/code-swift.enum/dataproviderfailedtorun.md)
+- [ARKitSession.Error.Code.dataProviderFailedToRun](./code-swift.enum/dataproviderfailedtorun.md)
   The error code for when a data provider fails to run.
-- [ARKitSession.Error.Code.dataProviderNotAuthorized](arkitsession/error/code-swift.enum/dataprovidernotauthorized.md)
+- [ARKitSession.Error.Code.dataProviderNotAuthorized](./code-swift.enum/dataprovidernotauthorized.md)
   The error code for when a data provider is missing at least one authorization it needs to run.
 ### Instance Properties
-- [var description: String](arkitsession/error/code-swift.enum/description.md)
+- [var description: String](./code-swift.enum/description.md)
   A textual representation of the code.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let dataProvider: (any DataProvider)?](arkitsession/error/dataprovider.md)
+### Inspecting ARKit errors
+- [let dataProvider: (any DataProvider)?](./dataprovider.md)
   The data provider that causes an error in a session, if any.
-- [let code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
+- [let code: ARKitSession.Error.Code](./code-swift.property.md)
   The error code for an ARKit session error.
-- [let errorDescription: String?](arkitsession/error/errordescription.md)
+- [let errorDescription: String?](./errordescription.md)
   A localized message that describes the error that occurred.
 
 

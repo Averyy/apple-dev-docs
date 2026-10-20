@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key name for the joint
 

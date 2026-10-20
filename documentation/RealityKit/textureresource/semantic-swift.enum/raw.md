@@ -1,7 +1,8 @@
 # TextureResource.Semantic.raw
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the texture unmodified.
 
@@ -11,7 +12,7 @@ Use the texture unmodified.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ For texture properties that use the `raw` semantic, the number of channels and v
 
 ## See Also
 
-- [TextureResource.Semantic.color](textureresource/semantic-swift.enum/color.md)
+### Specifying intended use
+- [TextureResource.Semantic.color](./color.md)
   Use the texture to store colors data.
-- [TextureResource.Semantic.hdrColor](textureresource/semantic-swift.enum/hdrcolor.md)
+- [TextureResource.Semantic.hdrColor](./hdrcolor.md)
   Use the texture to store a high-dynamic range image.
-- [TextureResource.Semantic.normal](textureresource/semantic-swift.enum/normal.md)
+- [TextureResource.Semantic.normal](./normal.md)
   Use the texture to store surface normals.
-- [TextureResource.Semantic.scalar](textureresource/semantic-swift.enum/scalar.md)
+- [TextureResource.Semantic.scalar](./scalar.md)
   Use the texture to store a single value in each pixel.
 
 

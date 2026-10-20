@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Configuration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration options for the session which are passed into the `start(imagesDirectory:configuration:)` call.
 
@@ -18,11 +19,11 @@ struct Configuration
 ## Topics
 
 ### Initializers
-- [init()](objectcapturesession/configuration-swift.struct/init.md)
+- [init()](./configuration-swift.struct/init%28%29.md)
 ### Instance Properties
-- [var checkpointDirectory: URL?](objectcapturesession/configuration-swift.struct/checkpointdirectory.md)
+- [var checkpointDirectory: URL?](./configuration-swift.struct/checkpointdirectory.md)
   An optional directory to store data about session progress which may be used to speed up on-device reconstruction by passing into the `PhotogrammetrySession.Configuration`. If you provide a value for `checkpointDirectory`, it also needs to point to an empty, writable directory. If the directory is not writable or already contains data, the session moves to the `.failed(Error)` state.
-- [var isOverCaptureEnabled: Bool](objectcapturesession/configuration-swift.struct/isovercaptureenabled.md)
+- [var isOverCaptureEnabled: Bool](./configuration-swift.struct/isovercaptureenabled.md)
   Enables the session to continue capturing even after the number of captured images exceeds `maximumNumberOfInputImages`.  This setting is meant for use when the images are intended to be transferred to macOS for model reconstruction.
 
 

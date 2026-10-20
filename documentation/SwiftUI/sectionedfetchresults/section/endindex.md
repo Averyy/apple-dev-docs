@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index that’s one greater than that of the last entity in the section.
 
@@ -23,7 +24,8 @@ var endIndex: Int { get }
 
 ## See Also
 
-- [var startIndex: Int](sectionedfetchresults/section/startindex.md)
+### Getting indices
+- [var startIndex: Int](./startindex.md)
   The index of the first entity in the section.
 
 

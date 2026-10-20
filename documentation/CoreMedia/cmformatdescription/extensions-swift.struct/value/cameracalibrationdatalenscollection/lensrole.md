@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the particular use of the lens in the camera system (e.g., left or right for a stereo system).
 
@@ -23,18 +24,18 @@ enum LensRole
 ## Topics
 
 ### Enumeration Cases
-- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole.left](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/lensrole/left.md)
-- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole.mono](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/lensrole/mono.md)
-- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole.right](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/lensrole/right.md)
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole.left](./lensrole/left.md)
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole.mono](./lensrole/mono.md)
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensRole.right](./lensrole/right.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

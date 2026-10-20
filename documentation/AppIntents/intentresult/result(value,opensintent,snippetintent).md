@@ -1,7 +1,8 @@
 # result(value:opensIntent:snippetIntent:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates that a completed app intent displays an interactive snippet and returns a value and another intent to open the originating app.
 

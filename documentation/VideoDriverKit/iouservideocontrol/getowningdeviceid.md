@@ -1,7 +1,8 @@
 # GetOwningDeviceID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the video object identifier of the control’s owning device.
 
@@ -10,7 +11,7 @@ Returns the video object identifier of the control’s owning device.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoObjectID GetOwningDeviceID();
 ```
 

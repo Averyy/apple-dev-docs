@@ -1,17 +1,20 @@
 # init(value:in:step:onEditingChanged:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to select a value from a given range, subject to a step increment, which displays the provided label.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:step:label:onEditingChanged:))
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:step:label:onEditingChanged:))
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: Slider(value:in:step:label:onEditingChanged:))
+- macOS 10.15+ - Deprecated in 27.2 (renamed: Slider(value:in:step:label:onEditingChanged:))
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: Slider(value:in:step:label:onEditingChanged:))
+- watchOS 6.0+ - Deprecated in 27.2 (renamed: Slider(value:in:step:label:onEditingChanged:))
+
+> **Deprecated**: Use [`init(value:in:step:label:onEditingChanged:)`](./init%28value,in,step,label,oneditingchanged%29.md) instead.
 
 ## Declaration
 
@@ -19,6 +22,8 @@ Creates a slider to select a value from a given range, subject to a step increme
 nonisolated
 init<V>(value: Binding<V>, in bounds: ClosedRange<V>, step: V.Stride = 1, onEditingChanged: @escaping (Bool) -> Void = { _ in }, @ContentBuilder label: () -> Label) where V : BinaryFloatingPoint, V.Stride : BinaryFloatingPoint
 ```
+
+Available when `Label` conforms to `View` and `ValueLabel` is `EmptyView`.
 
 #### Discussion
 
@@ -36,11 +41,12 @@ The slider calls `onEditingChanged` when editing begins and ends. For example, o
 
 ## See Also
 
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, label: () -> Label)](slider/init(value:in:oneditingchanged:label:).md)
+### Deprecated
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, label: () -> Label)](./init%28value,in,oneditingchanged,label%29.md)
   Creates a slider to select a value from a given range, which displays the provided label.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](slider/init(value:in:oneditingchanged:minimumvaluelabel:maximumvaluelabel:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](./init%28value,in,oneditingchanged,minimumvaluelabel,maximumvaluelabel,label%29.md)
   Creates a slider to select a value from a given range, which displays the provided labels.
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](slider/init(value:in:step:oneditingchanged:minimumvaluelabel:maximumvaluelabel:label:).md)
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, onEditingChanged: (Bool) -> Void, minimumValueLabel: ValueLabel, maximumValueLabel: ValueLabel, label: () -> Label)](./init%28value,in,step,oneditingchanged,minimumvaluelabel,maximumvaluelabel,label%29.md)
   Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels.
 
 

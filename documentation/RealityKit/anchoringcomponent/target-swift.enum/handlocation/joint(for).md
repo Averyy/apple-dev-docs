@@ -1,7 +1,8 @@
 # joint(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The function that returns the `HandLocation` based on `HandJoint`.
 

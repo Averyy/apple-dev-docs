@@ -1,14 +1,17 @@
 # events
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The events in the movie error log.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The events in the movie error log.
 var events: [Any]! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray * events;
+```
+
 #### Discussion
 
-An ordered collection of [`MPMovieErrorLogEvent`](mpmovieerrorlogevent.md) instances that represent the chronological sequence of events in the movie error log.
+An ordered collection of [`MPMovieErrorLogEvent`](../mpmovieerrorlogevent.md) instances that represent the chronological sequence of events in the movie error log.
 
 ## See Also
 
-- [var extendedLogData: Data!](mpmovieerrorlog/extendedlogdata.md)
+### Movie error log properties
+- [var extendedLogData: Data!](./extendedlogdata.md)
   A textual version of the web server error log.
-- [var extendedLogDataStringEncoding: UInt](mpmovieerrorlog/extendedlogdatastringencoding.md)
+- [var extendedLogDataStringEncoding: UInt](./extendedlogdatastringencoding.md)
   The string encoding for the extended log data property.
 
 

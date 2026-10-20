@@ -1,7 +1,8 @@
 # kCMTimeCodeFormatDescriptionExtension_SourceReferenceName
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An extension that describes the source reference name.
 
@@ -20,11 +21,16 @@ An extension that describes the source reference name.
 let kCMTimeCodeFormatDescriptionExtension_SourceReferenceName: CFString
 ```
 
+```c
+extern CFStringRef const kCMTimeCodeFormatDescriptionExtension_SourceReferenceName;
+```
+
 ## See Also
 
-- [let kCMTimeCodeFormatDescriptionKey_LangCode: CFString](kcmtimecodeformatdescriptionkey_langcode.md)
+### Constants
+- [let kCMTimeCodeFormatDescriptionKey_LangCode: CFString](./kcmtimecodeformatdescriptionkey_langcode.md)
   A key that describes the language code.
-- [let kCMTimeCodeFormatDescriptionKey_Value: CFString](kcmtimecodeformatdescriptionkey_value.md)
+- [let kCMTimeCodeFormatDescriptionKey_Value: CFString](./kcmtimecodeformatdescriptionkey_value.md)
   A key that describes the value.
 
 

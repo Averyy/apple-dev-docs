@@ -1,12 +1,13 @@
 # Operator Declarations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Work with prefix, postfix, and infix operators.
 
 #### Overview
 
-The tables below list the operators declared by the Swift standard library. For more information about operation declarations, see [`Operator Declaration`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Operator-Declaration) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+The tables below list the operators declared by the Swift standard library. For more information about operation declarations, see [Operator Declaration](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Operator-Declaration) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
 The prefix operators are as follows:
 
@@ -145,21 +146,22 @@ The `AssignmentPrecedence` group, which is right associative, contain the follow
 
 ## See Also
 
-- [Input and Output](input-and-output.md)
+### Programming Tasks
+- [Input and Output](./input-and-output.md)
   Print values to the console, read from and write to text streams, and use command line arguments.
-- [Debugging and Reflection](debugging-and-reflection.md)
+- [Debugging and Reflection](./debugging-and-reflection.md)
   Fortify your code with runtime checks, and examine your values’ runtime representation.
-- [Macros](macros.md)
+- [Macros](./macros.md)
   Generate boilerplate code and perform other compile-time operations.
-- [Concurrency](concurrency.md)
+- [Concurrency](./concurrency.md)
   Perform asynchronous and parallel operations.
-- [Key-Path Expressions](key-path-expressions.md)
+- [Key-Path Expressions](./key-path-expressions.md)
   Use key-path expressions to access properties dynamically.
-- [Manual Memory Management](manual-memory-management.md)
+- [Manual Memory Management](./manual-memory-management.md)
   Allocate and manage memory manually.
-- [Type Casting and Existential Types](type-casting-and-existential-types.md)
+- [Type Casting and Existential Types](./type-casting-and-existential-types.md)
   Perform casts between types or represent values of any type.
-- [C Interoperability](c-interoperability.md)
+- [C Interoperability](./c-interoperability.md)
   Use imported C types or call C variadic functions.
 
 

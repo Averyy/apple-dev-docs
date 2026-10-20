@@ -1,7 +1,8 @@
 # EnvironmentResource.CreateOptions.SamplingQuality.high
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Computes the environment textures with high sampling rates, reducing texture noise in high-frequency areas.
 
@@ -20,11 +21,12 @@ case high
 
 ## See Also
 
-- [EnvironmentResource.CreateOptions.SamplingQuality.fast](environmentresource/createoptions/samplingquality-swift.enum/fast.md)
+### Sampling qualities
+- [EnvironmentResource.CreateOptions.SamplingQuality.fast](./fast.md)
   Computes the environment textures with small sampling rates.
-- [EnvironmentResource.CreateOptions.SamplingQuality.normal](environmentresource/createoptions/samplingquality-swift.enum/normal.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality.normal](./normal.md)
   Computes the environment textures with regular sampling rates.
-- [EnvironmentResource.CreateOptions.SamplingQuality.veryHigh](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality.veryHigh](./veryhigh.md)
   Computes the environment textures with very high sampling rates.
 
 

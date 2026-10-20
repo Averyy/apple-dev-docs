@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a private key generator.

@@ -1,7 +1,8 @@
 # nextBatch(limit:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the next batch of items asynchronously.
 
@@ -19,6 +20,8 @@ Fetches the next batch of items asynchronously.
 ```swift
 func nextBatch(limit: Int? = nil) async throws -> MusicItemCollection<MusicItemType>? where MusicItemType : Decodable
 ```
+
+Available when `MusicItemType` conforms to `MusicItem`.
 
 #### Discussion
 

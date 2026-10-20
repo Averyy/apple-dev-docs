@@ -1,7 +1,8 @@
 # VSAccountMetadataRequest
 
 **Framework**: Video Subscriber Account  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies what subscriber account information your app retrieves.
 
@@ -9,7 +10,7 @@ An object that specifies what subscriber account information your app retrieves.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,6 +20,10 @@ An object that specifies what subscriber account information your app retrieves.
 class VSAccountMetadataRequest
 ```
 
+```objc
+@interface VSAccountMetadataRequest : NSObject
+```
+
 #### Overview
 
 Use a `VSAccountMetadataRequest` object to indicate the specific information your app will obtain about a subscriber from their subscription provider. Also, use this object to provide information to the subscription provider that it needs to perform the request, such as a verification token, the authentication schemes your app supports, or your app’s identifier.
@@ -26,59 +31,60 @@ Use a `VSAccountMetadataRequest` object to indicate the specific information you
 ## Topics
 
 ### Requesting TV Provider Info
-- [var includeAccountProviderIdentifier: Bool](vsaccountmetadatarequest/includeaccountprovideridentifier.md)
+- [var includeAccountProviderIdentifier: Bool](./vsaccountmetadatarequest/includeaccountprovideridentifier.md)
   A Boolean value that indicates whether your app requests the identifier of the account provider.
-- [var includeAuthenticationExpirationDate: Bool](vsaccountmetadatarequest/includeauthenticationexpirationdate.md)
+- [var includeAuthenticationExpirationDate: Bool](./vsaccountmetadatarequest/includeauthenticationexpirationdate.md)
   A Boolean value that indicates whether your app requests the expiration date of the user’s current authentication session.
 ### Requesting App-Level Authentication
-- [var attributeNames: [String]](vsaccountmetadatarequest/attributenames.md)
+- [var attributeNames: [String]](./vsaccountmetadatarequest/attributenames.md)
   The SAML attributes that your app sends to the account provider.
-- [var channelIdentifier: String?](vsaccountmetadatarequest/channelidentifier.md)
+- [var channelIdentifier: String?](./vsaccountmetadatarequest/channelidentifier.md)
   The channel identifier for the request.
-- [var supportedAccountProviderIdentifiers: [String]](vsaccountmetadatarequest/supportedaccountprovideridentifiers.md)
+- [var supportedAccountProviderIdentifiers: [String]](./vsaccountmetadatarequest/supportedaccountprovideridentifiers.md)
   A list of identifiers for TV providers that your app supports.
-- [var supportedAuthenticationSchemes: [VSAccountProviderAuthenticationScheme]](vsaccountmetadatarequest/supportedauthenticationschemes.md)
+- [var supportedAuthenticationSchemes: [VSAccountProviderAuthenticationScheme]](./vsaccountmetadatarequest/supportedauthenticationschemes.md)
   A collection of authentication schemes your app supports for this request.
-- [var verificationToken: String?](vsaccountmetadatarequest/verificationtoken.md)
+- [var verificationToken: String?](./vsaccountmetadatarequest/verificationtoken.md)
   A token that your app sends to an account provider to identify itself.
 ### Specifying Additional Options
-- [var isInterruptionAllowed: Bool](vsaccountmetadatarequest/isinterruptionallowed.md)
+- [var isInterruptionAllowed: Bool](./vsaccountmetadatarequest/isinterruptionallowed.md)
   A Boolean value that indicates whether your app can prompt the user to authenticate to complete the request.
-- [var featuredAccountProviderIdentifiers: [String]](vsaccountmetadatarequest/featuredaccountprovideridentifiers.md)
+- [var featuredAccountProviderIdentifiers: [String]](./vsaccountmetadatarequest/featuredaccountprovideridentifiers.md)
   The providers your app lists prominently during authentication.
-- [var forceAuthentication: Bool](vsaccountmetadatarequest/forceauthentication.md)
+- [var forceAuthentication: Bool](./vsaccountmetadatarequest/forceauthentication.md)
   A Boolean value that indicates whether the app ignores cached credentials.
-- [var localizedVideoTitle: String?](vsaccountmetadatarequest/localizedvideotitle.md)
+- [var localizedVideoTitle: String?](./vsaccountmetadatarequest/localizedvideotitle.md)
   A short, user-presentable name for the video that the user wants to play.
-- [var applicationAccountProviders: [VSAccountApplicationProvider]?](vsaccountmetadatarequest/applicationaccountproviders.md)
+- [var applicationAccountProviders: [VSAccountApplicationProvider]?](./vsaccountmetadatarequest/applicationaccountproviders.md)
   An array of application-specific providers to add to the list of account providers.
 ### Supporting Authentication Share
-- [var accountProviderAuthenticationToken: String?](vsaccountmetadatarequest/accountproviderauthenticationtoken.md)
+- [var accountProviderAuthenticationToken: String?](./vsaccountmetadatarequest/accountproviderauthenticationtoken.md)
   An authentication session token that your app sends to the account provider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func enqueue(VSAccountMetadataRequest, completionHandler: (VSAccountMetadata?, (any Error)?) -> Void) -> VSAccountManagerResult](vsaccountmanager/enqueue(_:completionhandler:).md)
+### Enqueuing requests
+- [func enqueue(VSAccountMetadataRequest, completionHandler: (VSAccountMetadata?, (any Error)?) -> Void) -> VSAccountManagerResult](./vsaccountmanager/enqueue%28_,completionhandler%29.md)
   Submits a request for subscriber account information.
-- [class VSAccountMetadata](vsaccountmetadata.md)
+- [class VSAccountMetadata](./vsaccountmetadata.md)
   A collection of information for a subscriber’s account.
-- [class VSAccountManagerResult](vsaccountmanagerresult.md)
+- [class VSAccountManagerResult](./vsaccountmanagerresult.md)
   An object that represents a request made for subscriber account information.
-- [class VSAccountProviderResponse](vsaccountproviderresponse.md)
+- [class VSAccountProviderResponse](./vsaccountproviderresponse.md)
   An object that contains the response from the account provider.
-- [struct VSAccountProviderAuthenticationScheme](vsaccountproviderauthenticationscheme.md)
+- [struct VSAccountProviderAuthenticationScheme](./vsaccountproviderauthenticationscheme.md)
   Authentication schemes for account provider requests and responses.
 
 

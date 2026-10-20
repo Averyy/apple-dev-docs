@@ -1,7 +1,8 @@
 # replaceAll(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the existing anchor collection with a provided sequence.
 
@@ -11,7 +12,7 @@ Replaces the existing anchor collection with a provided sequence.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,21 @@ Replaces the existing anchor collection with a provided sequence.
 @preconcurrency func replaceAll<S>(_ entities: S) where S : Sequence, S.Element : HasAnchoring
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func replaceAll(_ entities: [any HasAnchoring])
+```
+
 ## Parameters
 
 - `entities`: A sequence of anchors to replace the existing collection.
 
 ## See Also
 
-- [func replaceAll([any HasAnchoring])](scene/anchorcollection/replaceall(_:)-tris.md)
+### Replacing anchors
+- [func replaceAll([any HasAnchoring])](./replaceall%28_%29-tris.md)
   Replaces the existing anchor collection with a provided collection.
 
 

@@ -1,7 +1,8 @@
 # readAttributeConnectMaxTimeSeconds(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeConnectMaxTimeSeconds(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeConnectMaxTimeSeconds() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeConnectMaxTimeSecondsWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # AVMIDIMetaEvent.EventType
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the types of meta events.
 
@@ -19,57 +20,62 @@ Constants that represent the types of meta events.
 enum EventType
 ```
 
+```c
+enum AVMIDIMetaEventType : NSInteger;
+```
+
 ## Topics
 
 ### Creating an event type
-- [init?(rawValue: Int)](avmidimetaevent/eventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./eventtype/init%28rawvalue%29.md)
 ### Identifying meta event types
-- [AVMIDIMetaEvent.EventType.copyright](avmidimetaevent/eventtype/copyright.md)
+- [AVMIDIMetaEvent.EventType.copyright](./eventtype/copyright.md)
   An event type that represents a copyright.
-- [AVMIDIMetaEvent.EventType.cuePoint](avmidimetaevent/eventtype/cuepoint.md)
+- [AVMIDIMetaEvent.EventType.cuePoint](./eventtype/cuepoint.md)
   An event type that represents a cue point.
-- [AVMIDIMetaEvent.EventType.endOfTrack](avmidimetaevent/eventtype/endoftrack.md)
+- [AVMIDIMetaEvent.EventType.endOfTrack](./eventtype/endoftrack.md)
   An event type that represents the end of the track.
-- [AVMIDIMetaEvent.EventType.instrument](avmidimetaevent/eventtype/instrument.md)
+- [AVMIDIMetaEvent.EventType.instrument](./eventtype/instrument.md)
   An event type that represents an instrument.
-- [AVMIDIMetaEvent.EventType.keySignature](avmidimetaevent/eventtype/keysignature.md)
+- [AVMIDIMetaEvent.EventType.keySignature](./eventtype/keysignature.md)
   An event type that represents a key signature.
-- [AVMIDIMetaEvent.EventType.lyric](avmidimetaevent/eventtype/lyric.md)
+- [AVMIDIMetaEvent.EventType.lyric](./eventtype/lyric.md)
   An event type that represents a lyric.
-- [AVMIDIMetaEvent.EventType.marker](avmidimetaevent/eventtype/marker.md)
+- [AVMIDIMetaEvent.EventType.marker](./eventtype/marker.md)
   An event type that represents a marker.
-- [AVMIDIMetaEvent.EventType.midiChannel](avmidimetaevent/eventtype/midichannel.md)
+- [AVMIDIMetaEvent.EventType.midiChannel](./eventtype/midichannel.md)
   An event type that represents a MIDI channel.
-- [AVMIDIMetaEvent.EventType.midiPort](avmidimetaevent/eventtype/midiport.md)
+- [AVMIDIMetaEvent.EventType.midiPort](./eventtype/midiport.md)
   An event type that represents a MIDI port.
-- [AVMIDIMetaEvent.EventType.proprietaryEvent](avmidimetaevent/eventtype/proprietaryevent.md)
+- [AVMIDIMetaEvent.EventType.proprietaryEvent](./eventtype/proprietaryevent.md)
   An event type that represents a proprietary event.
-- [AVMIDIMetaEvent.EventType.sequenceNumber](avmidimetaevent/eventtype/sequencenumber.md)
+- [AVMIDIMetaEvent.EventType.sequenceNumber](./eventtype/sequencenumber.md)
   An event type that represents a sequence number.
-- [AVMIDIMetaEvent.EventType.smpteOffset](avmidimetaevent/eventtype/smpteoffset.md)
+- [AVMIDIMetaEvent.EventType.smpteOffset](./eventtype/smpteoffset.md)
   An event type that represents a SMPTE time offset.
-- [AVMIDIMetaEvent.EventType.tempo](avmidimetaevent/eventtype/tempo.md)
+- [AVMIDIMetaEvent.EventType.tempo](./eventtype/tempo.md)
   An event type that represents a tempo.
-- [AVMIDIMetaEvent.EventType.text](avmidimetaevent/eventtype/text.md)
+- [AVMIDIMetaEvent.EventType.text](./eventtype/text.md)
   An event type that represents text.
-- [AVMIDIMetaEvent.EventType.timeSignature](avmidimetaevent/eventtype/timesignature.md)
+- [AVMIDIMetaEvent.EventType.timeSignature](./eventtype/timesignature.md)
   An event type that represents a time signature.
-- [AVMIDIMetaEvent.EventType.trackName](avmidimetaevent/eventtype/trackname.md)
+- [AVMIDIMetaEvent.EventType.trackName](./eventtype/trackname.md)
   An event type that represents a track name.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: AVMIDIMetaEvent.EventType](avmidimetaevent/type.md)
+### Getting the meta event type
+- [var type: AVMIDIMetaEvent.EventType](./type.md)
   The type of meta event.
 
 

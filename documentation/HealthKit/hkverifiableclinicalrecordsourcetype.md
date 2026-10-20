@@ -1,7 +1,8 @@
 # HKVerifiableClinicalRecordSourceType
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The source type for the verifiable clinical record.
 
@@ -19,35 +20,40 @@ The source type for the verifiable clinical record.
 struct HKVerifiableClinicalRecordSourceType
 ```
 
+```c
+typedef NSString * HKVerifiableClinicalRecordSourceType;
+```
+
 ## Topics
 
 ### Identifying Source Types
-- [static let euDigitalCOVIDCertificate: HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype/eudigitalcovidcertificate.md)
+- [static let euDigitalCOVIDCertificate: HKVerifiableClinicalRecordSourceType](./hkverifiableclinicalrecordsourcetype/eudigitalcovidcertificate.md)
   A value indicating EU Digital COVID Certificates.
-- [static let smartHealthCard: HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype/smarthealthcard.md)
+- [static let smartHealthCard: HKVerifiableClinicalRecordSourceType](./hkverifiableclinicalrecordsourcetype/smarthealthcard.md)
   A value indicating SMART health cards.
 ### Creating Source Types
-- [init(rawValue: String)](hkverifiableclinicalrecordsourcetype/init(rawvalue:).md)
+- [init(rawValue: String)](./hkverifiableclinicalrecordsourcetype/init%28rawvalue%29.md)
   Creates a source type based on the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKVerifiableClinicalRecordQueryDescriptor](hkverifiableclinicalrecordquerydescriptor.md)
+### Clinical record queries
+- [struct HKVerifiableClinicalRecordQueryDescriptor](./hkverifiableclinicalrecordquerydescriptor.md)
   A query interface that provides one-time access to a SMART Health Card or EU Digital COVID Certificate using Swift concurrency.
-- [class HKVerifiableClinicalRecordQuery](hkverifiableclinicalrecordquery.md)
+- [class HKVerifiableClinicalRecordQuery](./hkverifiableclinicalrecordquery.md)
   A query for one-time access to a SMART Health Card or EU Digital COVID Certificate.
-- [struct HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype.md)
+- [struct HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype.md)
   The type of record returned by a verifiable clinical record query.
-- [class HKDocumentQuery](hkdocumentquery.md)
+- [class HKDocumentQuery](./hkdocumentquery.md)
   A query that returns a snapshot of all matching documents currently saved in the HealthKit store.
 
 

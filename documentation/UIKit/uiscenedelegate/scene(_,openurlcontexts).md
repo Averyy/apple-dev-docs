@@ -1,7 +1,8 @@
 # scene(_:openURLContexts:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to open one or more URLs.
 
@@ -18,14 +19,18 @@ Asks the delegate to open one or more URLs.
 optional func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 ```
 
+```objc
+- (void) scene:(UIScene *) scene openURLContexts:(NSSet<UIOpenURLContext *> *) URLContexts;
+```
+
 ## Mentions
 
-- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+- [Collaborating and sharing copies of your data](../collaborating-and-sharing-copies-of-your-data.md)
 
 ## Parameters
 
 - `scene`: The scene that UIKit asks to open the URL.
-- `URLContexts`: One or more [`UIOpenURLContext`](uiopenurlcontext.md) objects. Each object contains one URL to open and any additional information needed to open that URL.
+- `URLContexts`: One or more [`UIOpenURLContext`](../uiopenurlcontext.md) objects. Each object contains one URL to open and any additional information needed to open that URL.
 
 
 ---

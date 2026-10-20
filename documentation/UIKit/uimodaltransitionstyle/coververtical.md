@@ -1,19 +1,24 @@
 # UIModalTransitionStyle.coverVertical
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case coverVertical
+```
+
+```c
+UIModalTransitionStyleCoverVertical
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ When the view controller is presented, its view slides up from the bottom of the
 
 ## See Also
 
-- [UIModalTransitionStyle.flipHorizontal](uimodaltransitionstyle/fliphorizontal.md)
-- [UIModalTransitionStyle.crossDissolve](uimodaltransitionstyle/crossdissolve.md)
-- [UIModalTransitionStyle.partialCurl](uimodaltransitionstyle/partialcurl.md)
+### Constants
+- [UIModalTransitionStyle.flipHorizontal](./fliphorizontal.md)
+- [UIModalTransitionStyle.crossDissolve](./crossdissolve.md)
+- [UIModalTransitionStyle.partialCurl](./partialcurl.md)
 
 
 ---

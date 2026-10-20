@@ -1,7 +1,8 @@
 # hv_gic_set_state(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the state of a generic interrupt controller (GIC) device.
 
@@ -14,13 +15,17 @@ Sets the state of a generic interrupt controller (GIC) device.
 func hv_gic_set_state(_ gic_state_data: UnsafeRawPointer, _ gic_state_size: Int) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_gic_set_state(const void *gic_state_data, size_t gic_state_size);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) on success; otherwise, an error code.
+[`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
 #### Discussion
 
-Use this method to restore the state of a GIC. You can only restore a GIC’s state after creating a GIC device and vCPUs and before the vCPUs are running. Restore the rest of the virtual machine including GIC CPU registers with values that are compatible with the [`hv_gic_state_t`](hv_gic_state_t.md).
+Use this method to restore the state of a GIC. You can only restore a GIC’s state after creating a GIC device and vCPUs and before the vCPUs are running. Restore the rest of the virtual machine including GIC CPU registers with values that are compatible with the [`hv_gic_state_t`](./hv_gic_state_t.md).
 
 In some cases this method can fail if a software update has changed the host in a way that would be incompatible with the previous format.
 
@@ -31,15 +36,16 @@ In some cases this method can fail if a software update has changed the host in 
 
 ## See Also
 
-- [func hv_gic_state_create() -> hv_gic_state_t](hv_gic_state_create().md)
+### Getting and setting the GIC’s state
+- [func hv_gic_state_create() -> hv_gic_state_t](./hv_gic_state_create%28%29.md)
   Create a generic interrupt controller (GIC) state object.
-- [func hv_gic_state_get_size(hv_gic_state_t, UnsafeMutablePointer<Int>) -> hv_return_t](hv_gic_state_get_size(_:_:).md)
+- [func hv_gic_state_get_size(hv_gic_state_t, UnsafeMutablePointer<Int>) -> hv_return_t](./hv_gic_state_get_size%28_,_%29.md)
   Gets the size of the buffer required for generic interrupt controller (GIC) state.
-- [func hv_gic_state_get_data(hv_gic_state_t, UnsafeMutableRawPointer) -> hv_return_t](hv_gic_state_get_data(_:_:).md)
+- [func hv_gic_state_get_data(hv_gic_state_t, UnsafeMutableRawPointer) -> hv_return_t](./hv_gic_state_get_data%28_,_%29.md)
   Gets the state data for generic interrupt controller (GIC).
-- [typealias hv_gic_state_t](hv_gic_state_t.md)
+- [typealias hv_gic_state_t](./hv_gic_state_t.md)
   An alias for this value type’s equivalent Hypervisor generic interrupt controller (GIC) state’s reference type.
-- [protocol OS_hv_gic_state](os_hv_gic_state.md)
+- [protocol OS_hv_gic_state](./os_hv_gic_state.md)
   Methods that provide information on the hypervisor state.
 
 

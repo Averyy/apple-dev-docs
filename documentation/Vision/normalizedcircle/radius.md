@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The circle’s radius.
 
@@ -22,7 +23,8 @@ let radius: CGFloat
 
 ## See Also
 
-- [let center: NormalizedPoint](normalizedcircle/center.md)
+### Inspecting a normalized circle
+- [let center: NormalizedPoint](./center.md)
   The circle’s center point.
 
 

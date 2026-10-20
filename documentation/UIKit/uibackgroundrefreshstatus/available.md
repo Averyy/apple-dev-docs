@@ -1,7 +1,8 @@
 # UIBackgroundRefreshStatus.available
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Background updates are available for the app.
 
@@ -18,11 +19,16 @@ Background updates are available for the app.
 case available
 ```
 
+```c
+UIBackgroundRefreshStatusAvailable
+```
+
 ## See Also
 
-- [UIBackgroundRefreshStatus.restricted](uibackgroundrefreshstatus/restricted.md)
+### Constants
+- [UIBackgroundRefreshStatus.restricted](./restricted.md)
   Background updates are unavailable and the user cannot enable them again.
-- [UIBackgroundRefreshStatus.denied](uibackgroundrefreshstatus/denied.md)
+- [UIBackgroundRefreshStatus.denied](./denied.md)
   The user explicitly disabled background behavior for this app or for the whole system.
 
 

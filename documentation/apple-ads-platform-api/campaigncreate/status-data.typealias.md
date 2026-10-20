@@ -1,7 +1,8 @@
 # CampaignCreate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable run state for a campaign.
 
@@ -10,9 +11,14 @@ Advertiser-configurable run state for a campaign.
 
 ## Declaration
 
-```swift
+```
 string CampaignCreate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
+- `PAUSED`: The advertiser paused the campaign. No ads serve until the status changes to `ENABLED`.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ Include `status` in the create request to determine whether the new campaign beg
 }
 ```
 
-See [`CampaignStatus`](campaignstatus.md) for additional context.
+See [`CampaignStatus`](../campaignstatus.md) for additional context.
 
 
 ---

@@ -1,7 +1,8 @@
 # totalOutgoingCalls
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of calls the user makes.
 
@@ -16,15 +17,20 @@ The number of calls the user makes.
 var totalOutgoingCalls: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger totalOutgoingCalls;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srphoneusagereport/duration.md)
+### Analyzing Phone Use
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var totalIncomingCalls: Int](srphoneusagereport/totalincomingcalls.md)
+- [var totalIncomingCalls: Int](./totalincomingcalls.md)
   The number of calls the user receives.
-- [var totalPhoneCallDuration: TimeInterval](srphoneusagereport/totalphonecallduration.md)
+- [var totalPhoneCallDuration: TimeInterval](./totalphonecallduration.md)
   The total duration of all calls.
-- [var totalUniqueContacts: Int](srphoneusagereport/totaluniquecontacts.md)
+- [var totalUniqueContacts: Int](./totaluniquecontacts.md)
   The user’s number of contacts.
 
 

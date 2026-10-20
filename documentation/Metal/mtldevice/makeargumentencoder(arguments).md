@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new argument encoder for an array of arguments.
@@ -20,17 +21,22 @@ Creates a new argument encoder for an array of arguments.
 func makeArgumentEncoder(arguments: [MTLArgumentDescriptor]) -> (any MTLArgumentEncoder)?
 ```
 
+```objc
+- (id<MTLArgumentEncoder>) newArgumentEncoderWithArguments:(NSArray<MTLArgumentDescriptor *> *) arguments;
+```
+
 ## Parameters
 
-- `arguments`: An array of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances that you need to sort by their [`index`](mtlargumentdescriptor/index.md) properties in monotonically increasing order.
+- `arguments`: An array of [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instances that you need to sort by their [`index`](../mtlargumentdescriptor/index.md) properties in monotonically increasing order.
 
 ## See Also
 
-- [var argumentBuffersSupport: MTLArgumentBuffersTier](mtldevice/argumentbufferssupport.md)
+### Creating argument buffer encoders
+- [var argumentBuffersSupport: MTLArgumentBuffersTier](./argumentbufferssupport.md)
   Returns the GPU device’s support tier for argument buffers.
-- [var maxArgumentBufferSamplerCount: Int](mtldevice/maxargumentbuffersamplercount.md)
+- [var maxArgumentBufferSamplerCount: Int](./maxargumentbuffersamplercount.md)
   The maximum number of unique argument buffer samplers per app.
-- [func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgumentEncoder](mtldevice/makeargumentencoder(bufferbinding:).md)
+- [func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgumentEncoder](./makeargumentencoder%28bufferbinding%29.md)
   Creates a new argument encoder for a buffer binding.
 
 

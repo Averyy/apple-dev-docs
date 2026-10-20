@@ -1,7 +1,8 @@
 # withoutActuallyEscaping(_:do:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allows a nonescaping closure to temporarily be used as if it were allowed to escape.
 

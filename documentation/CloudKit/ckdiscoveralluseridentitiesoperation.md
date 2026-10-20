@@ -1,17 +1,20 @@
 # CKDiscoverAllUserIdentitiesOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation that uses the device’s contacts to search for discoverable iCloud users.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 17.0
+- iPadOS 10.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- macOS 10.12+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 10.0
+
+> **Deprecated**: No longer supported. Please see Sharing CloudKit Data with Other iCloud Users.
 
 ## Declaration
 
@@ -19,23 +22,27 @@ An operation that uses the device’s contacts to search for discoverable iCloud
 class CKDiscoverAllUserIdentitiesOperation
 ```
 
+```objc
+@interface CKDiscoverAllUserIdentitiesOperation : CKOperation
+```
+
 #### Overview
 
 Use this operation to discover iCloud users that match entries in the device’s Contacts database. CloudKit uses the email addresses and phone numbers in each Contact record to search for a matching iCloud account.
 
-Although your app doesn’t need authorization to use the Contacts database to execute this operation, if it has authorization, you can use the [`contactIdentifiers`](ckuseridentity/contactidentifiers.md) property on any returned user identity to fetch the corresponding Contact record from the database.
+Although your app doesn’t need authorization to use the Contacts database to execute this operation, if it has authorization, you can use the [`contactIdentifiers`](./ckuseridentity/contactidentifiers.md) property on any returned user identity to fetch the corresponding Contact record from the database.
 
 > **Note**: This operation scales linearly with the number of email addresses and phone numbers in the device’s Contacts database, and may take some time to complete.
 
-Before CloudKit can return a user’s identity, you must ask for their permission by calling [`requestApplicationPermission(_:completionHandler:)`](ckcontainer/requestapplicationpermission(_:completionhandler:).md). Do this as part of any onboarding where you can highlight the benefits of being discoverable within the context of your app.
+Before CloudKit can return a user’s identity, you must ask for their permission by calling [`requestApplicationPermission(_:completionHandler:)`](./ckcontainer/requestapplicationpermission%28_,completionhandler%29.md). Do this as part of any onboarding where you can highlight the benefits of being discoverable within the context of your app.
 
 The operation executes the handlers you provide on an internal queue it manages. You must provide handlers capable of executing on a background queue. Tasks that need access to the main queue must redirect as appropriate.
 
-The operation calls [`discoverAllUserIdentitiesCompletionBlock`](ckdiscoveralluseridentitiesoperation/discoveralluseridentitiescompletionblock.md) after it executes and returns results. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
+The operation calls [`discoverAllUserIdentitiesCompletionBlock`](./ckdiscoveralluseridentitiesoperation/discoveralluseridentitiescompletionblock.md) after it executes and returns results. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
 
-> **Note**: Because this class inherits from [`Operation`](https://developer.apple.com/documentation/foundation/operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/completionblock) property. The operation calls both completion handlers if they’re both set.
+> **Note**: Because this class inherits from [`Operation`](../Foundation/operation.md), you can also set the [`completionBlock`](../Foundation/operation/completionblock.md) property. The operation calls both completion handlers if they’re both set.
 
-CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/foundation/qualityofservice/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/qualityofservice) property to set a more appropriate QoS for the operation.
+CloudKit operations have a default QoS of [`QualityOfService.default`](../Foundation/qualityofservice/default.md). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](../Foundation/operation/qualityofservice.md) property to set a more appropriate QoS for the operation.
 
 The following example shows how to create the operation, configure its callbacks, and execute it using the default container’s queue:
 
@@ -75,36 +82,37 @@ func fetchUserIdentities(
 ## Topics
 
 ### Creating an Operation
-- [init()](ckdiscoveralluseridentitiesoperation/init.md)
+- [init()](./ckdiscoveralluseridentitiesoperation/init%28%29.md)
   Creates an operation for searching the device’s contacts.
 ### Processing the Operation Results
-- [var userIdentityDiscoveredBlock: ((CKUserIdentity) -> Void)?](ckdiscoveralluseridentitiesoperation/useridentitydiscoveredblock.md)
+- [var userIdentityDiscoveredBlock: ((CKUserIdentity) -> Void)?](./ckdiscoveralluseridentitiesoperation/useridentitydiscoveredblock.md)
   The closure to execute for each user identity.
-- [var discoverAllUserIdentitiesCompletionBlock: (((any Error)?) -> Void)?](ckdiscoveralluseridentitiesoperation/discoveralluseridentitiescompletionblock.md)
+- [var discoverAllUserIdentitiesCompletionBlock: (((any Error)?) -> Void)?](./ckdiscoveralluseridentitiesoperation/discoveralluseridentitiescompletionblock.md)
   The closure to execute when the operation finishes.
 ### Instance Properties
-- [var discoverAllUserIdentitiesResultBlock: ((Result<Void, any Error>) -> Void)?](ckdiscoveralluseridentitiesoperation/discoveralluseridentitiesresultblock.md)
+- [var discoverAllUserIdentitiesResultBlock: ((Result<Void, any Error>) -> Void)?](./ckdiscoveralluseridentitiesoperation/discoveralluseridentitiesresultblock.md)
   The closure to execute when the operation finishes.
 
 ## Relationships
 
 ### Inherits From
-- [CKOperation](ckoperation.md)
+- [CKOperation](./ckoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKDiscoverUserIdentitiesOperation](ckdiscoveruseridentitiesoperation.md)
+### Deprecated classes
+- [class CKDiscoverUserIdentitiesOperation](./ckdiscoveruseridentitiesoperation.md)
   An operation that uses the provided criteria to search for discoverable iCloud users.
-- [class CKFetchRecordChangesOperation](ckfetchrecordchangesoperation.md)
+- [class CKFetchRecordChangesOperation](./ckfetchrecordchangesoperation.md)
   An operation that reports on the changed and deleted records in the specified record zone.
 
 

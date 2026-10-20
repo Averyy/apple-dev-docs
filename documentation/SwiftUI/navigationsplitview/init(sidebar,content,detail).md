@@ -1,7 +1,8 @@
 # init(sidebar:content:detail:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a three-column navigation split view.
 
@@ -23,7 +24,7 @@ init(@ContentBuilder sidebar: () -> Sidebar, @ContentBuilder content: () -> Cont
 
 ## Mentions
 
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+- [Migrating to new navigation types](../migrating-to-new-navigation-types.md)
 
 ## Parameters
 
@@ -33,7 +34,8 @@ init(@ContentBuilder sidebar: () -> Sidebar, @ContentBuilder content: () -> Cont
 
 ## See Also
 
-- [init(sidebar: () -> Sidebar, detail: () -> Detail)](navigationsplitview/init(sidebar:detail:).md)
+### Creating a navigation split view
+- [init(sidebar: () -> Sidebar, detail: () -> Detail)](./init%28sidebar,detail%29.md)
   Creates a two-column navigation split view.
 
 

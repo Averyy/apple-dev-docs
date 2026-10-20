@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the rounded rectangle’s corners.
 

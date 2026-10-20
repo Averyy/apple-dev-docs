@@ -1,7 +1,8 @@
 # init(device:histogramInfo:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a histogram with specific information.
 
@@ -19,6 +20,10 @@ Initializes a histogram with specific information.
 init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device histogramInfo:(const MPSImageHistogramInfo *) histogramInfo;
+```
+
 #### Return Value
 
 An initialized histogram object.
@@ -30,7 +35,8 @@ An initialized histogram object.
 
 ## See Also
 
-- [func encodeTransform(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](mpsimagehistogramequalization/encodetransform(to:sourcetexture:histogram:histogramoffset:).md)
+### Methods
+- [func encodeTransform(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](./encodetransform%28to,sourcetexture,histogram,histogramoffset%29.md)
   Encodes the transform function to a command buffer using a compute command encoder. The transform function computes the equalization lookup table.
 
 

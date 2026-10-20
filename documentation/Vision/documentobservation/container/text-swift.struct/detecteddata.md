@@ -1,7 +1,8 @@
 # detectedData
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Detected content in the document matched to a specific type of data, such as emails, phone numbers, addresses, and so on.
 
@@ -25,11 +26,12 @@ This is a computed property that may be computationally expensive for large text
 
 ## See Also
 
-- [var lines: [RecognizedTextObservation]](documentobservation/container/text-swift.struct/lines.md)
+### Accessing the text
+- [var lines: [RecognizedTextObservation]](./lines.md)
   The text grouped by line.
-- [var transcript: String](documentobservation/container/text-swift.struct/transcript.md)
+- [var transcript: String](./transcript.md)
   The complete text as a string.
-- [var words: [RecognizedTextObservation]?](documentobservation/container/text-swift.struct/words.md)
+- [var words: [RecognizedTextObservation]?](./words.md)
   An instance property that returns individual words in a text container.
 
 

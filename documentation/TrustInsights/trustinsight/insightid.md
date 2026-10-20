@@ -2,6 +2,7 @@
 
 **Framework**: Trust Insights  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The insight ID.
@@ -18,13 +19,14 @@ var insightID: String { get }
 
 ## See Also
 
-- [var isUsingCurrentModel: Bool](trustinsight/isusingcurrentmodel.md)
+### Instance Properties - generated
+- [var isUsingCurrentModel: Bool](./isusingcurrentmodel.md)
   A Boolean value that indicates whether the framework created the insight with the newest available model version.
-- [var modelVersion: String?](trustinsight/modelversion.md)
+- [var modelVersion: String?](./modelversion.md)
   The model version the framework used for this insight.
-- [var newestModelVersion: String?](trustinsight/newestmodelversion.md)
+- [var newestModelVersion: String?](./newestmodelversion.md)
   The newest model that’s available to request.
-- [var outcome: Result<Self.Value, InsightError>](trustinsight/outcome.md)
+- [var outcome: Result<Self.Value, InsightError>](./outcome.md)
   The result value from a request for this insight.
 
 

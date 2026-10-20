@@ -1,7 +1,8 @@
 # init(sharedKeySet:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable dictionary which is optimized for dealing with a known set of keys.
 
@@ -20,6 +21,10 @@ Creates a mutable dictionary which is optimized for dealing with a known set of 
 init(sharedKeySet keyset: Any)
 ```
 
+```objc
++ (NSMutableDictionary<id,id> *) dictionaryWithSharedKeySet:(id) keyset;
+```
+
 #### Return Value
 
 A new mutable dictionary optimized for a known set of keys.
@@ -30,13 +35,16 @@ Keys that are not in the key set can still be set in the dictionary, but that us
 
 ## Parameters
 
-- `keyset`: The `keyset`, created by the [`NSDictionary`](nsdictionary.md) class method [`sharedKeySet(forKeys:)`](nsdictionary/sharedkeyset(forkeys:).md). > ❗ **Important**:  If `keyset` is `nil`, an exception is raised. If `keyset` is not an object returned by [`sharedKeySet(forKeys:)`](nsdictionary/sharedkeyset(forkeys:).md), an exception is raised.
+- `keyset`: The `keyset`, created by the [`NSDictionary`](../nsdictionary.md) class method [`sharedKeySet(forKeys:)`](../nsdictionary/sharedkeyset%28forkeys%29.md).
+
+  > ❗ **Important**:  If `keyset` is `nil`, an exception is raised. If `keyset` is not an object returned by [`sharedKeySet(forKeys:)`](../nsdictionary/sharedkeyset%28forkeys%29.md), an exception is raised.
 
 ## See Also
 
-- [init(capacity: Int)](nsmutabledictionary/init(capacity:).md)
+### Creating and Initializing a Mutable Dictionary
+- [init(capacity: Int)](./init%28capacity%29.md)
   Initializes a newly allocated mutable dictionary, allocating enough memory to hold `numItems` entries.
-- [init()](nsmutabledictionary/init.md)
+- [init()](./init%28%29.md)
   Initializes a newly allocated mutable dictionary.
 
 

@@ -1,7 +1,8 @@
 # NWParameters.ProtocolStack
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An ordered set of protocol options that define the protocols that connections and listeners use.
 
@@ -23,25 +24,26 @@ class ProtocolStack
 ## Topics
 
 ### Adding Application Protocols
-- [var applicationProtocols: [NWProtocolOptions]](nwparameters/protocolstack/applicationprotocols.md)
+- [var applicationProtocols: [NWProtocolOptions]](./protocolstack/applicationprotocols.md)
   The array of application protocol options used by connections and listeners.
 ### Configuring Lower Protocols
-- [var transportProtocol: NWProtocolOptions?](nwparameters/protocolstack/transportprotocol.md)
+- [var transportProtocol: NWProtocolOptions?](./protocolstack/transportprotocol.md)
   The transport protocol options used by connections and listeners.
-- [var internetProtocol: NWProtocolOptions?](nwparameters/protocolstack/internetprotocol.md)
+- [var internetProtocol: NWProtocolOptions?](./protocolstack/internetprotocol.md)
   The Internet Protocol options used by connections and listeners.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var defaultProtocolStack: NWParameters.ProtocolStack](nwparameters/defaultprotocolstack.md)
+### Modifying Protocol Stacks
+- [var defaultProtocolStack: NWParameters.ProtocolStack](./defaultprotocolstack.md)
   The protocol stack used by connections and listeners.
-- [class NWProtocol](nwprotocol.md)
+- [class NWProtocol](../nwprotocol.md)
   The abstract superclass used by Network framework protocols and by custom network protocols that you define.
 
 

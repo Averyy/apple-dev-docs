@@ -1,7 +1,8 @@
 # setBorderLeftWidth(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBorderLeftWidth(_ borderLeftWidth: String!)
+```
+
+```objc
+- (void) setBorderLeftWidth:(NSString *) borderLeftWidth;
 ```
 
 

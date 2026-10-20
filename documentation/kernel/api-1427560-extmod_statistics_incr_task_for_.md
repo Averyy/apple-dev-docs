@@ -1,21 +1,23 @@
 # extmod_statistics_incr_task_for_pid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 void extmod_statistics_incr_task_for_pid(task_t target);
 ```
 
 ## See Also
 
-- [extmod_statistics_incr_thread_create](1427562-extmod_statistics_incr_thread_cr.md)
-- [extmod_statistics_incr_thread_set_state](1427558-extmod_statistics_incr_thread_se.md)
+### extmod
+- [extmod_statistics_incr_thread_create](./api-1427562-extmod_statistics_incr_thread_cr.md)
+- [extmod_statistics_incr_thread_set_state](./api-1427558-extmod_statistics_incr_thread_se.md)
 
 
 ---

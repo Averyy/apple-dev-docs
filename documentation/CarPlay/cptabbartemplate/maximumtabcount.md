@@ -1,7 +1,8 @@
 # maximumTabCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of tabs that the template can display.
 
@@ -16,15 +17,20 @@ The maximum number of tabs that the template can display.
 class var maximumTabCount: Int { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSInteger maximumTabCount;
+```
+
 #### Discussion
 
 This property’s value depends on the app’s entitlements. At runtime, use this value to determine the maximum number of tabs that your tab bar can display.
 
 ## See Also
 
-- [var templates: [CPTemplate]](cptabbartemplate/templates.md)
+### Managing the Templates
+- [var templates: [CPTemplate]](./templates.md)
   The tab bar’s templates.
-- [func updateTemplates([CPTemplate])](cptabbartemplate/updatetemplates(_:).md)
+- [func updateTemplates([CPTemplate])](./updatetemplates%28_%29.md)
   Adds, removes, reorders, or updates the tab bar’s templates.
 
 

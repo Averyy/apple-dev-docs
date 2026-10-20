@@ -1,7 +1,8 @@
 # MediaCommand.ShuffleMode.collections
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player shuffles collections during playback (for example, albums).
 

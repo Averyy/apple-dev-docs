@@ -23,29 +23,30 @@ The `rules` element contains a set of `specialize` elements that are used to mod
 </rules>
 ```
 
-##### Subelements of Rules
+##### Subelements of rules
 
-- [`specialize`](specialize.md)
+- [specialize](./specialize.md)
 
-##### Elements That Use Rules
+##### Elements that Use rules
 
 The `rules` element can used by any other element.
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [prototypes](prototypes.md)
+### Binding Elements
+- [prototypes](./prototypes.md)
   Defines a group of elements that can be reused through binding.
-- [specialize](specialize.md)
+- [specialize](./specialize.md)
   Implements queries used for data binding.
 
 

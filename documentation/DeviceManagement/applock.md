@@ -1,7 +1,8 @@
 # AppLock
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a device to run a single app.
 
@@ -13,7 +14,7 @@ The payload that configures a device to run a single app.
 
 ## Declaration
 
-```swift
+```
 object AppLock
 ```
 
@@ -25,7 +26,7 @@ With an app lock profile, the device locks to the specified app until removal of
 
 Only use an app lock payload after installing the target app.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ Only use an app lock payload after installing the target app.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +80,7 @@ Only use an app lock payload after installing the target app.
 ## Topics
 
 ### Objects
-- [object AppLock.App](applock/app-data.dictionary.md)
+- [object AppLock.App](./applock/app-data.dictionary.md)
   The only app available for use on the iOS device.
 
 ## Properties
@@ -88,11 +89,12 @@ Only use an app lock payload after installing the target app.
 
 ## See Also
 
-- [object AssociatedDomains](associateddomains.md)
+### App management
+- [object AssociatedDomains](./associateddomains.md)
   The payload that configures associated domains.
-- [object AutonomousSingleAppMode](autonomoussingleappmode.md)
+- [object AutonomousSingleAppMode](./autonomoussingleappmode.md)
   The payload that configures Autonomous Single App mode.
-- [object NSExtensionManagement](nsextensionmanagement.md)
+- [object NSExtensionManagement](./nsextensionmanagement.md)
   The payload that configures the extensions that the system allows or disallows to run on the device.
 
 

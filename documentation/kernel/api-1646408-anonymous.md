@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,19 +18,19 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioDeviceTransportTypeAVB](1646408-anonymous/kioaudiodevicetransporttypeavb.md)
-- [kIOAudioDeviceTransportTypeBluetooth](1646408-anonymous/kioaudiodevicetransporttypebluetooth.md)
-- [kIOAudioDeviceTransportTypeBuiltIn](1646408-anonymous/kioaudiodevicetransporttypebuiltin.md)
-- [kIOAudioDeviceTransportTypeDisplayPort](1646408-anonymous/kioaudiodevicetransporttypedisplayport.md)
-- [kIOAudioDeviceTransportTypeFireWire](1646408-anonymous/kioaudiodevicetransporttypefirewire.md)
-- [kIOAudioDeviceTransportTypeHdmi](1646408-anonymous/kioaudiodevicetransporttypehdmi.md)
-- [kIOAudioDeviceTransportTypeNetwork](1646408-anonymous/kioaudiodevicetransporttypenetwork.md)
-- [kIOAudioDeviceTransportTypeOther](1646408-anonymous/kioaudiodevicetransporttypeother.md)
-- [kIOAudioDeviceTransportTypePCI](1646408-anonymous/kioaudiodevicetransporttypepci.md)
-- [kIOAudioDeviceTransportTypeThunderbolt](1646408-anonymous/kioaudiodevicetransporttypethunderbolt.md)
-- [kIOAudioDeviceTransportTypeUSB](1646408-anonymous/kioaudiodevicetransporttypeusb.md)
-- [kIOAudioDeviceTransportTypeVirtual](1646408-anonymous/kioaudiodevicetransporttypevirtual.md)
-- [kIOAudioDeviceTransportTypeWireless](1646408-anonymous/kioaudiodevicetransporttypewireless.md)
+- [kIOAudioDeviceTransportTypeAVB](./api-1646408-anonymous/kioaudiodevicetransporttypeavb.md)
+- [kIOAudioDeviceTransportTypeBluetooth](./api-1646408-anonymous/kioaudiodevicetransporttypebluetooth.md)
+- [kIOAudioDeviceTransportTypeBuiltIn](./api-1646408-anonymous/kioaudiodevicetransporttypebuiltin.md)
+- [kIOAudioDeviceTransportTypeDisplayPort](./api-1646408-anonymous/kioaudiodevicetransporttypedisplayport.md)
+- [kIOAudioDeviceTransportTypeFireWire](./api-1646408-anonymous/kioaudiodevicetransporttypefirewire.md)
+- [kIOAudioDeviceTransportTypeHdmi](./api-1646408-anonymous/kioaudiodevicetransporttypehdmi.md)
+- [kIOAudioDeviceTransportTypeNetwork](./api-1646408-anonymous/kioaudiodevicetransporttypenetwork.md)
+- [kIOAudioDeviceTransportTypeOther](./api-1646408-anonymous/kioaudiodevicetransporttypeother.md)
+- [kIOAudioDeviceTransportTypePCI](./api-1646408-anonymous/kioaudiodevicetransporttypepci.md)
+- [kIOAudioDeviceTransportTypeThunderbolt](./api-1646408-anonymous/kioaudiodevicetransporttypethunderbolt.md)
+- [kIOAudioDeviceTransportTypeUSB](./api-1646408-anonymous/kioaudiodevicetransporttypeusb.md)
+- [kIOAudioDeviceTransportTypeVirtual](./api-1646408-anonymous/kioaudiodevicetransporttypevirtual.md)
+- [kIOAudioDeviceTransportTypeWireless](./api-1646408-anonymous/kioaudiodevicetransporttypewireless.md)
 
 
 ---

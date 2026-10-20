@@ -1,7 +1,8 @@
 # inherits
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inherit composition arcs on this prim.
 

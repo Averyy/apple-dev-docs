@@ -1,7 +1,8 @@
 # CombineIdentifier
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for identifying publisher streams.
 
@@ -22,7 +23,7 @@ struct CombineIdentifier
 
 #### Overview
 
-To conform to [`CustomCombineIdentifierConvertible`](customcombineidentifierconvertible.md) in a [`Subscription`](subscription.md) or [`Subject`](subject.md) that you implement as a structure, create an instance of [`CombineIdentifier`](combineidentifier.md) as follows:
+To conform to [`CustomCombineIdentifierConvertible`](./customcombineidentifierconvertible.md) in a [`Subscription`](./subscription.md) or [`Subject`](./subject.md) that you implement as a structure, create an instance of [`CombineIdentifier`](./combineidentifier.md) as follows:
 
 ```swift
 let combineIdentifier = CombineIdentifier()
@@ -31,24 +32,25 @@ let combineIdentifier = CombineIdentifier()
 ## Topics
 
 ### Creating a Combine identifier
-- [init()](combineidentifier/init.md)
+- [init()](./combineidentifier/init%28%29.md)
   Creates a unique Combine identifier.
-- [init(AnyObject)](combineidentifier/init(_:).md)
+- [init(AnyObject)](./combineidentifier/init%28_%29.md)
   Creates a Combine identifier, using the bit pattern of the provided object.
 ### Providing a description
-- [var description: String](combineidentifier/description.md)
+- [var description: String](./combineidentifier/description.md)
   A textual representation of this instance.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol CustomCombineIdentifierConvertible](customcombineidentifierconvertible.md)
+### Debugging Identifiers
+- [protocol CustomCombineIdentifierConvertible](./customcombineidentifierconvertible.md)
   A protocol for uniquely identifying publisher streams.
 
 

@@ -1,7 +1,8 @@
 # disableStorageBehaviorOptimization
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If disableStorageBehaviorOptimization is set to YES, then all the waiting mechanism as described above is disabled.
 
@@ -18,6 +19,10 @@ If disableStorageBehaviorOptimization is set to YES, then all the waiting mechan
 
 ```swift
 var disableStorageBehaviorOptimization: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL disableStorageBehaviorOptimization;
 ```
 
 

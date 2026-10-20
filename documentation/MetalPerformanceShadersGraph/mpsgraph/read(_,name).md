@@ -1,7 +1,8 @@
 # read(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a read op which reads at this point of execution of the graph and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a read op which reads at this point of execution of the graph and return
 
 ```swift
 func read(_ variable: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) readVariable:(MPSGraphTensor *) variable name:(NSString *) name;
 ```
 
 #### Return Value

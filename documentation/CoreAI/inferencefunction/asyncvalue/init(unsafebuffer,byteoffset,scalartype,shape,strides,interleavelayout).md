@@ -1,7 +1,8 @@
 # init(unsafeBuffer:byteOffset:scalarType:shape:strides:interleaveLayout:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an async ndArray value that directly references the provided metal buffer, interpreted as the specified scalar type and shape.
 
@@ -28,15 +29,16 @@ Initializing an async value this way requires that you manually ensure the provi
 - scalarType: The type of scalars in the provided buffer.
 - shape: The shape of the resulting value.
 - strides: The strides of the resulting value. If left empty, they will be computed as contiguous row-major.
-- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](../../ndarray/interleavelayout-swift.struct.md).
 
 ## See Also
 
-- [init(CVReadOnlyPixelBuffer)](inferencefunction/asyncvalue/init(_:)-5qtut.md)
+### Creating an async value
+- [init(CVReadOnlyPixelBuffer)](./init%28_%29-5qtut.md)
   Initialize the `AsyncValue` holding the provided pixel buffer.
-- [init(consuming InferenceFunction.AsyncMutableValue)](inferencefunction/asyncvalue/init(_:)-90hbj.md)
+- [init(consuming InferenceFunction.AsyncMutableValue)](./init%28_%29-90hbj.md)
   Initialize an async value from an existing mutable async value.
-- [init(consuming NDArray)](inferencefunction/asyncvalue/init(_:)-9wk3.md)
+- [init(consuming NDArray)](./init%28_%29-9wk3.md)
   Initialize the `AsyncValue` holding the provided ndArray.
 
 

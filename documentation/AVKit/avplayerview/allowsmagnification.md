@@ -1,7 +1,8 @@
 # allowsMagnification
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the magnify gesture changes the video’s view magnification.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the magnify gesture changes the video’s
 var allowsMagnification: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, setter=setAllowsMagnification:) BOOL allowsMagnification;
+```
+
 #### Discussion
 
-The default value is `false`. This property only affects whether the magnify gesture triggers magnification. Your app can still programmatically change magnification even when the value of this is `false`, which matches the behavior of [`NSScrollView`](https://developer.apple.com/documentation/appkit/nsscrollview).
+The default value is `false`. This property only affects whether the magnify gesture triggers magnification. Your app can still programmatically change magnification even when the value of this is `false`, which matches the behavior of [`NSScrollView`](../../AppKit/nsscrollview.md).
 
 ## See Also
 
-- [var magnification: CGFloat](avplayerview/magnification.md)
+### Magnifying video
+- [var magnification: CGFloat](./magnification.md)
   The factor by which the video’s view is currently scaled.
-- [func setMagnification(CGFloat, centeredAt: CGPoint)](avplayerview/setmagnification(_:centeredat:).md)
+- [func setMagnification(CGFloat, centeredAt: CGPoint)](./setmagnification%28_,centeredat%29.md)
   Scales the video’s view by a specified factor, and centers the result on a specified point.
 
 

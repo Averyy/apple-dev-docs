@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceContentArtwork
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Base class representing artwork or cover art for media content.
 
@@ -16,47 +17,52 @@ Base class representing artwork or cover art for media content.
 class AVPlaybackUserInterfaceContentArtwork
 ```
 
+```objc
+@interface AVPlaybackUserInterfaceContentArtwork : NSObject
+```
+
 #### Overview
 
-Use a concrete subclass such as [`AVPlaybackUserInterfaceContentURLArtwork`](avplaybackuserinterfacecontenturlartwork.md) to create artwork instances.
+Use a concrete subclass such as [`AVPlaybackUserInterfaceContentURLArtwork`](./avplaybackuserinterfacecontenturlartwork.md) to create artwork instances.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](avplaybackuserinterfacecontentartwork/init(coder:).md)
+- [init?(coder: NSCoder)](./avplaybackuserinterfacecontentartwork/init%28coder%29.md)
 ### Instance Properties
-- [var size: CGSize](avplaybackuserinterfacecontentartwork/size.md)
+- [var size: CGSize](./avplaybackuserinterfacecontentartwork/size.md)
   The pixel dimensions of the artwork image.
 ### Type Methods
-- [class func artwork(url: URL, contentType: UTType, size: CGSize) -> AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontentartwork/artwork(url:contenttype:size:).md)
+- [class func artwork(url: URL, contentType: UTType, size: CGSize) -> AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontentartwork/artwork%28url,contenttype,size%29.md)
   Creates an artwork instance that references an image at the given URL.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+- [AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontenturlartwork.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
+### Content metadata
+- [protocol AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-814y4.md)
   Provides metadata information about media content including title, artwork, and content type.
-- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
+- [struct AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacecontentmetadata-swift.struct.md)
   A Swift-friendly structure representing media metadata.
-- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+- [class AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontenturlartwork.md)
   An artwork subclass that references artwork via a URL and content type.
 
 

@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.star(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A star shape with alternating inner and outer points.
 

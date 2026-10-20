@@ -1,7 +1,8 @@
 # errSSLPeerNoRenegotiation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No renegotiation is allowed.
 
@@ -18,6 +19,10 @@ No renegotiation is allowed.
 
 ```swift
 var errSSLPeerNoRenegotiation: OSStatus { get }
+```
+
+```c
+errSSLPeerNoRenegotiation
 ```
 
 

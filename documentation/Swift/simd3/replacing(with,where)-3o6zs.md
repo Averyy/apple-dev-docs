@@ -1,7 +1,8 @@
 # replacing(with:where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of this vector, with elements `other` in the lanes where `mask` is `true`.
 

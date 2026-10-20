@@ -5,14 +5,15 @@
 ## Topics
 
 ### Enumerations
-- [Versatile bayer patterns](versatile-bayer-patterns.md)
-- [Lossless Pixel Formats](lossless-pixel-formats.md)
-- [Lossy Pixel Formats](lossy-pixel-formats.md)
+- [Versatile bayer patterns](./versatile-bayer-patterns.md)
+- [Lossless Pixel Formats](./lossless-pixel-formats.md)
+- [Lossy Pixel Formats](./lossy-pixel-formats.md)
 
 ## See Also
 
-- [Core Video Constants](core-video-constants.md)
-- [Core Video Functions](core-video-functions.md)
+### Reference
+- [Core Video Constants](./core-video-constants.md)
+- [Core Video Functions](./core-video-functions.md)
 
 
 ---

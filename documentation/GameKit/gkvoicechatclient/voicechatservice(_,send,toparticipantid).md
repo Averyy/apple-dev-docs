@@ -2,16 +2,17 @@
 
 **Framework**: GameKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A request for the client to send data to a participant.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A request for the client to send data to a participant.
 func voiceChatService(_ voiceChatService: GKVoiceChatService, send data: Data, toParticipantID participantID: String)
 ```
 
+```objc
+- (void) voiceChatService:(GKVoiceChatService *) voiceChatService sendData:(NSData *) data toParticipantID:(NSString *) participantID;
+```
+
 #### Discussion
 
-An implementation of this method must reliably transmit the data to the participant identified by `participantID`. When the client on the other end receives the data, it should forward it to the voice chat service by calling the service’s [`receivedData(_:fromParticipantID:)`](gkvoicechatservice/receiveddata(_:fromparticipantid:).md) method.
+An implementation of this method must reliably transmit the data to the participant identified by `participantID`. When the client on the other end receives the data, it should forward it to the voice chat service by calling the service’s [`receivedData(_:fromParticipantID:)`](../gkvoicechatservice/receiveddata%28_,fromparticipantid%29.md) method.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ An implementation of this method must reliably transmit the data to the particip
 
 ## See Also
 
-- [func voiceChatService(GKVoiceChatService, sendRealTime: Data, toParticipantID: String)](gkvoicechatclient/voicechatservice(_:sendrealtime:toparticipantid:).md)
+### Sending data to other participants
+- [func voiceChatService(GKVoiceChatService, sendRealTime: Data, toParticipantID: String)](./voicechatservice%28_,sendrealtime,toparticipantid%29.md)
   Asks the client to send data to a participant that must get there quickly.
 
 

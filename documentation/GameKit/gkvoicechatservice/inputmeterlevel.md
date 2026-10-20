@@ -1,16 +1,19 @@
 # inputMeterLevel
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume, in decibels (db), being received by the microphone.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use SharePlay instead
 
 ## Declaration
 
@@ -18,17 +21,22 @@ The volume, in decibels (db), being received by the microphone.
 var inputMeterLevel: Float { get }
 ```
 
+```objc
+@property (readonly) float inputMeterLevel;
+```
+
 #### Discussion
 
-The value of this property is undefined if [`isInputMeteringEnabled`](gkvoicechatservice/isinputmeteringenabled.md) is set to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is undefined if [`isInputMeteringEnabled`](./isinputmeteringenabled.md) is set to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isInputMeteringEnabled: Bool](gkvoicechatservice/isinputmeteringenabled.md)
+### Monitoring the Audio Level
+- [var isInputMeteringEnabled: Bool](./isinputmeteringenabled.md)
   A Boolean value that indicates whether the microphone’s sound level is being monitored.
-- [var isOutputMeteringEnabled: Bool](gkvoicechatservice/isoutputmeteringenabled.md)
+- [var isOutputMeteringEnabled: Bool](./isoutputmeteringenabled.md)
   A Boolean value that indicates whether the voice level of remote participants is monitored.
-- [var outputMeterLevel: Float](gkvoicechatservice/outputmeterlevel.md)
+- [var outputMeterLevel: Float](./outputmeterlevel.md)
   The volume, in decibels (db), being received from all other participants.
 
 

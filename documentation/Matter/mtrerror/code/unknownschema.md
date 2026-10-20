@@ -1,7 +1,8 @@
 # MTRError.Code.unknownSchema
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case unknownSchema
+```
+
+```c
+MTRErrorCodeUnknownSchema
 ```
 
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueSizesV1MetricResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure in a response body for queue sizes.
 
@@ -10,20 +11,22 @@ The data structure in a response body for queue sizes.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueSizesV1MetricResponse.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints](gamecentermatchmakingqueuesizesv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+- [object GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints](./data-data.dictionary/datapoints-data.dictionary.md)
   The key properties of the data in the response.
 
 ## Properties
 
 - `dataPoints` ([GameCenterMatchmakingQueueSizesV1MetricResponse.Data.DataPoints])
 - `granularity` (string): The granularity of the data using the ISO 8601 format for durations.
+
+  **Allowed Values**: `P1D`, `PT1H`, `PT15M`
 
 
 ---

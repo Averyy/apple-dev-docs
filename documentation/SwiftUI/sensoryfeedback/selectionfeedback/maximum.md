@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a control’s maximum value has been reached, such as when a slider’s thumb is dragged to the slider’s maximum value.
 

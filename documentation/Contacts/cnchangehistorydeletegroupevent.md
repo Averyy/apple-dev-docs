@@ -1,7 +1,8 @@
 # CNChangeHistoryDeleteGroupEvent
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a user deleting a group.
 
@@ -19,54 +20,59 @@ An object that represents a user deleting a group.
 class CNChangeHistoryDeleteGroupEvent
 ```
 
+```objc
+@interface CNChangeHistoryDeleteGroupEvent : CNChangeHistoryEvent
+```
+
 ## Topics
 
 ### Getting event details
-- [var groupIdentifier: String](cnchangehistorydeletegroupevent/groupidentifier.md)
+- [var groupIdentifier: String](./cnchangehistorydeletegroupevent/groupidentifier.md)
   A string that uniquely identifies the group that the user deleted.
 
 ## Relationships
 
 ### Inherits From
-- [CNChangeHistoryEvent](cnchangehistoryevent.md)
+- [CNChangeHistoryEvent](./cnchangehistoryevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CNChangeHistoryAddContactEvent](cnchangehistoryaddcontactevent.md)
+### Change history data
+- [class CNChangeHistoryAddContactEvent](./cnchangehistoryaddcontactevent.md)
   An object that represents a user adding a contact.
-- [class CNChangeHistoryAddGroupEvent](cnchangehistoryaddgroupevent.md)
+- [class CNChangeHistoryAddGroupEvent](./cnchangehistoryaddgroupevent.md)
   An object that represents a user adding a group.
-- [class CNChangeHistoryAddMemberToGroupEvent](cnchangehistoryaddmembertogroupevent.md)
+- [class CNChangeHistoryAddMemberToGroupEvent](./cnchangehistoryaddmembertogroupevent.md)
   An object that represents a user adding a contact to a group.
-- [class CNChangeHistoryAddSubgroupToGroupEvent](cnchangehistoryaddsubgrouptogroupevent.md)
+- [class CNChangeHistoryAddSubgroupToGroupEvent](./cnchangehistoryaddsubgrouptogroupevent.md)
   An object that represents a user adding a subgroup to a group.
-- [class CNChangeHistoryDeleteContactEvent](cnchangehistorydeletecontactevent.md)
+- [class CNChangeHistoryDeleteContactEvent](./cnchangehistorydeletecontactevent.md)
   An object that represents a user deleting a contact.
-- [class CNChangeHistoryDropEverythingEvent](cnchangehistorydropeverythingevent.md)
+- [class CNChangeHistoryDropEverythingEvent](./cnchangehistorydropeverythingevent.md)
   An object that indicates the delegate should drop all contacts and groups before handling change events.
-- [class CNChangeHistoryEvent](cnchangehistoryevent.md)
+- [class CNChangeHistoryEvent](./cnchangehistoryevent.md)
   An object that represents the user adding, updating, or deleting a contact or group.
-- [class CNChangeHistoryFetchRequest](cnchangehistoryfetchrequest.md)
+- [class CNChangeHistoryFetchRequest](./cnchangehistoryfetchrequest.md)
   An object that specifies the criteria for fetching change history.
-- [class CNChangeHistoryRemoveMemberFromGroupEvent](cnchangehistoryremovememberfromgroupevent.md)
+- [class CNChangeHistoryRemoveMemberFromGroupEvent](./cnchangehistoryremovememberfromgroupevent.md)
   An object that represents a user removing a contact from a group.
-- [class CNChangeHistoryRemoveSubgroupFromGroupEvent](cnchangehistoryremovesubgroupfromgroupevent.md)
+- [class CNChangeHistoryRemoveSubgroupFromGroupEvent](./cnchangehistoryremovesubgroupfromgroupevent.md)
   An object that represents a user removing a subgroup from a group.
-- [class CNChangeHistoryUpdateContactEvent](cnchangehistoryupdatecontactevent.md)
+- [class CNChangeHistoryUpdateContactEvent](./cnchangehistoryupdatecontactevent.md)
   An object that represents a user updating a contact.
-- [class CNChangeHistoryUpdateGroupEvent](cnchangehistoryupdategroupevent.md)
+- [class CNChangeHistoryUpdateGroupEvent](./cnchangehistoryupdategroupevent.md)
   An object that represents an updated group event.
-- [protocol CNChangeHistoryEventVisitor](cnchangehistoryeventvisitor.md)
+- [protocol CNChangeHistoryEventVisitor](./cnchangehistoryeventvisitor.md)
   An interface for receiving notice of changes to contacts and groups.
 
 

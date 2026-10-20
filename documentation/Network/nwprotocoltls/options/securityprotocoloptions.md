@@ -1,7 +1,8 @@
 # securityProtocolOptions
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handshake security options TLS uses.
 
@@ -22,9 +23,11 @@ var securityProtocolOptions: sec_protocol_options_t { get }
 
 ## See Also
 
-- [Security Options](security-options.md)
+### Related Documentation
+- [Security Options](../../security-options.md)
   Configure security options for TLS handshakes.
-- [init()](nwprotocoltls/options/init.md)
+### Customizing TLS Connections
+- [init()](./init%28%29.md)
   Initializes a default set of TLS connection options.
 
 

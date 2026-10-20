@@ -1,7 +1,8 @@
 # toolDefinitions
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of tools made available to the model.
 
@@ -21,7 +22,8 @@ var toolDefinitions: [Transcript.ToolDefinition]
 
 ## See Also
 
-- [var segments: [Transcript.Segment]](transcript/instructions/segments.md)
+### Inspecting instructions
+- [var segments: [Transcript.Segment]](./segments.md)
   The content of the instructions, in natural language.
 
 

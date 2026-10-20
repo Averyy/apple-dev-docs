@@ -1,17 +1,18 @@
 # issuingPlayer
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player who issues the challenge.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.10+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The player who issues the challenge.
 var issuingPlayer: GKPlayer? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) GKPlayer * issuingPlayer;
+```
+
 ## See Also
 
-- [var receivingPlayer: GKPlayer?](gkchallenge/receivingplayer.md)
+### Examining Details about a Challenge
+- [var receivingPlayer: GKPlayer?](./receivingplayer.md)
   The player who receives the challenge.
-- [var message: String?](gkchallenge/message.md)
+- [var message: String?](./message.md)
   A text message that describes the challenge.
-- [var state: GKChallengeState](gkchallenge/state.md)
+- [var state: GKChallengeState](./state.md)
   The current state of the challenge.
-- [enum GKChallengeState](gkchallengestate.md)
+- [enum GKChallengeState](../gkchallengestate.md)
   The state of a challenge.
-- [var issueDate: Date](gkchallenge/issuedate.md)
+- [var issueDate: Date](./issuedate.md)
   The date the player issued the challenge.
-- [var completionDate: Date?](gkchallenge/completiondate.md)
+- [var completionDate: Date?](./completiondate.md)
   The date the challenged player completed the challenge.
 
 

@@ -1,7 +1,8 @@
 # FSEventStreamSetDispatchQueue(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Schedules the stream on the specified dispatch queue.
 
@@ -15,15 +16,19 @@ Schedules the stream on the specified dispatch queue.
 func FSEventStreamSetDispatchQueue(_ streamRef: FSEventStreamRef, _ q: dispatch_queue_t?)
 ```
 
+```c
+void FSEventStreamSetDispatchQueue(FSEventStreamRef streamRef, dispatch_queue_t q);
+```
+
 #### Discussion
 
 The caller is responsible for ensuring that the stream is scheduled on a dispatch queue and that the queue is started.
 
 If there’s a problem scheduling the stream on the queue, an error will be returned when you try to start the stream.
 
-To start receiving events on the stream, call [`FSEventStreamStart(_:)`](1448000-fseventstreamstart.md).
+To start receiving events on the stream, call [`FSEventStreamStart(_:)`](./api-1448000-fseventstreamstart.md).
 
-To remove the stream from the queue on which it was scheduled, call [`FSEventStreamSetDispatchQueue(_:_:)`](1444164-fseventstreamsetdispatchqueue.md) with a `NULL` queue parameter or call [`FSEventStreamInvalidate(_:)`](1446990-fseventstreaminvalidate.md) which does the same thing. You must eventually call [`FSEventStreamInvalidate(_:)`](1446990-fseventstreaminvalidate.md) and it’s an error to call [`FSEventStreamInvalidate(_:)`](1446990-fseventstreaminvalidate.md) without having the stream either scheduled on a runloop or a dispatch queue, so don’t set the dispatch queue to `NULL` before calling [`FSEventStreamInvalidate(_:)`](1446990-fseventstreaminvalidate.md).
+To remove the stream from the queue on which it was scheduled, call [`FSEventStreamSetDispatchQueue(_:_:)`](./api-1444164-fseventstreamsetdispatchqueue.md) with a `NULL` queue parameter or call [`FSEventStreamInvalidate(_:)`](./api-1446990-fseventstreaminvalidate.md) which does the same thing. You must eventually call [`FSEventStreamInvalidate(_:)`](./api-1446990-fseventstreaminvalidate.md) and it’s an error to call [`FSEventStreamInvalidate(_:)`](./api-1446990-fseventstreaminvalidate.md) without having the stream either scheduled on a runloop or a dispatch queue, so don’t set the dispatch queue to `NULL` before calling [`FSEventStreamInvalidate(_:)`](./api-1446990-fseventstreaminvalidate.md).
 
 ## Parameters
 

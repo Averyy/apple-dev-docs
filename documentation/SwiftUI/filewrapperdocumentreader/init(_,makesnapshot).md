@@ -1,7 +1,8 @@
 # init(_:makeSnapshot:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reader that converts a `FileWrapper` into a snapshot.
 
@@ -20,12 +21,13 @@ init(_ configuration: sending FileWrapperDocumentReader<Snapshot>.ReadConfigurat
 
 ## Parameters
 
-- `configuration`: The read configuration passed to [`reader(configuration:)`](readabledocument/reader(configuration:).md).
+- `configuration`: The read configuration passed to [`reader(configuration:)`](../readabledocument/reader%28configuration%29.md).
 - `makeSnapshot`: A closure that deserializes the `FileWrapper` into a snapshot. For flat files, read `regularFileContents`. For packages, navigate `fileWrappers` to find children. Throw an error if the data is malformed.
 
 ## See Also
 
-- [FileWrapperDocumentReader.ReadConfiguration](filewrapperdocumentreader/readconfiguration.md)
+### Creating a reader
+- [FileWrapperDocumentReader.ReadConfiguration](./readconfiguration.md)
 
 
 ---

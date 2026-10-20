@@ -1,7 +1,8 @@
 # MusicLibrarySearchRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch items from user’s library using a search term.
 
@@ -23,28 +24,28 @@ struct MusicLibrarySearchRequest
 ## Topics
 
 ### Initializers
-- [init(term: String, types: [any MusicLibrarySearchable.Type])](musiclibrarysearchrequest/init(term:types:).md)
+- [init(term: String, types: [any MusicLibrarySearchable.Type])](./musiclibrarysearchrequest/init%28term,types%29.md)
   Creates a library search request for a specified search term and list of library searchable types.
 ### Instance Properties
-- [var includeTopResults: Bool](musiclibrarysearchrequest/includetopresults.md)
+- [var includeTopResults: Bool](./musiclibrarysearchrequest/includetopresults.md)
   A Boolean value that indicates whether to request top search results.
-- [var limit: Int](musiclibrarysearchrequest/limit.md)
+- [var limit: Int](./musiclibrarysearchrequest/limit.md)
   A limit for the number of items to return in the library search response.
-- [let term: String](musiclibrarysearchrequest/term.md)
+- [let term: String](./musiclibrarysearchrequest/term.md)
   The search term for the request.
-- [var types: [any MusicLibrarySearchable.Type]](musiclibrarysearchrequest/types.md)
+- [var types: [any MusicLibrarySearchable.Type]](./musiclibrarysearchrequest/types.md)
   The list of requested library searchable types.
 ### Instance Methods
-- [func response() async throws -> MusicLibrarySearchResponse](musiclibrarysearchrequest/response.md)
+- [func response() async throws -> MusicLibrarySearchResponse](./musiclibrarysearchrequest/response%28%29.md)
   Fetches items of the requested library searchable types that match the search term of the request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # records
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of records for the message.
 
@@ -14,6 +15,10 @@ An array of records for the message.
 
 ```swift
 var records: [NFCNDEFPayload] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<NFCNDEFPayload *> * records;
 ```
 
 

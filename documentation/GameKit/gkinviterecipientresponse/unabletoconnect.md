@@ -1,7 +1,8 @@
 # GKInviteRecipientResponse.unableToConnect
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A response when the system can’t contact the player.
 
@@ -20,17 +21,22 @@ A response when the system can’t contact the player.
 case unableToConnect
 ```
 
+```c
+GKInviteRecipientResponseUnableToConnect
+```
+
 ## See Also
 
-- [GKInviteRecipientResponse.accepted](gkinviterecipientresponse/accepted.md)
+### Responses
+- [GKInviteRecipientResponse.accepted](./accepted.md)
   A response when the player accepts the invitation.
-- [GKInviteRecipientResponse.declined](gkinviterecipientresponse/declined.md)
+- [GKInviteRecipientResponse.declined](./declined.md)
   A response when the player rejects the invitation.
-- [GKInviteRecipientResponse.failed](gkinviterecipientresponse/failed.md)
+- [GKInviteRecipientResponse.failed](./failed.md)
   A response when the system fails to deliver the invitation to the player.
-- [GKInviteRecipientResponse.incompatible](gkinviterecipientresponse/incompatible.md)
+- [GKInviteRecipientResponse.incompatible](./incompatible.md)
   A response when the player isn’t running a compatible version of the game.
-- [GKInviteRecipientResponse.noAnswer](gkinviterecipientresponse/noanswer.md)
+- [GKInviteRecipientResponse.noAnswer](./noanswer.md)
   A response when the invitation times out because the player doesn’t answer it.
 
 

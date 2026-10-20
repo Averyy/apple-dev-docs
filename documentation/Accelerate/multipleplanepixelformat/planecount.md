@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,7 +22,8 @@ static var planeCount: Int { get }
 
 ## See Also
 
-- [static var bitCountPerPlanarPixel: Int](multipleplanepixelformat/bitcountperplanarpixel.md)
+### Type Properties
+- [static var bitCountPerPlanarPixel: Int](./bitcountperplanarpixel.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kCGImagePropertyExifFlashEnergy
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The strobe energy when the image was captured, in beam candle power seconds.
 
@@ -20,9 +21,14 @@ The strobe energy when the image was captured, in beam candle power seconds.
 let kCGImagePropertyExifFlashEnergy: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifFlashEnergy;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifFlashPixVersion: CFString](kcgimagepropertyexifflashpixversion.md)
+### Flash Information
+- [let kCGImagePropertyExifFlashPixVersion: CFString](./kcgimagepropertyexifflashpixversion.md)
   The FlashPix version supported by an FPXR file.
 
 

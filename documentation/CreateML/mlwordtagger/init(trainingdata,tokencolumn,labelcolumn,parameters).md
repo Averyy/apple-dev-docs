@@ -1,7 +1,8 @@
 # init(trainingData:tokenColumn:labelColumn:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a word tagger.
 
@@ -14,6 +15,12 @@ Creates a word tagger.
 init(trainingData: DataFrame, tokenColumn: String, labelColumn: String, parameters: MLWordTagger.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, tokenColumn: String, labelColumn: String, parameters: MLWordTagger.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: A data frame specifying training data.
@@ -23,13 +30,14 @@ init(trainingData: DataFrame, tokenColumn: String, labelColumn: String, paramete
 
 ## See Also
 
-- [init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameters: MLWordTagger.ModelParameters) throws](mlwordtagger/init(trainingdata:parameters:).md)
+### Creating and training a word tagger
+- [init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameters: MLWordTagger.ModelParameters) throws](./init%28trainingdata,parameters%29.md)
   Creates a word tagger.
-- [MLWordTagger.Token](mlwordtagger/token.md)
+- [MLWordTagger.Token](./token.md)
   The token type of a word tagger, which is a string.
-- [MLWordTagger.ModelParameters](mlwordtagger/modelparameters-swift.struct.md)
+- [MLWordTagger.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that specify model training parameters and validation data.
-- [let modelParameters: MLWordTagger.ModelParameters](mlwordtagger/modelparameters-swift.property.md)
+- [let modelParameters: MLWordTagger.ModelParameters](./modelparameters-swift.property.md)
   The configuration parameters that the word tagger used for training during initialization.
 
 

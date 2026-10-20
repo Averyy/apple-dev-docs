@@ -1,7 +1,8 @@
 # instanceCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of instances the buffer holds.
 
@@ -19,7 +20,8 @@ final var instanceCapacity: Int { get }
 
 ## See Also
 
-- [var instanceCount: Int](lowlevelinstancetransformresource/instancecount.md)
+### Inspecting instance counts
+- [var instanceCount: Int](./instancecount.md)
   The number of active instances to draw.
 
 

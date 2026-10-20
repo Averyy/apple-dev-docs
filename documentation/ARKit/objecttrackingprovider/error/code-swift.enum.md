@@ -1,7 +1,8 @@
 # ObjectTrackingProvider.Error.Code
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The enumeration of object-tracking provider error codes.
 
@@ -17,26 +18,27 @@ enum Code
 ## Topics
 
 ### Error codes
-- [ObjectTrackingProvider.Error.Code.referenceObjectLoadingFailed](objecttrackingprovider/error/code-swift.enum/referenceobjectloadingfailed.md)
+- [ObjectTrackingProvider.Error.Code.referenceObjectLoadingFailed](./code-swift.enum/referenceobjectloadingfailed.md)
   Values that indicate loading a reference object model failed.
 ### Instance Properties
-- [var description: String](objecttrackingprovider/error/code-swift.enum/description.md)
+- [var description: String](./code-swift.enum/description.md)
   A textual representation of the code.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var code: ObjectTrackingProvider.Error.Code](objecttrackingprovider/error/code-swift.property.md)
+### Describing an error
+- [var code: ObjectTrackingProvider.Error.Code](./code-swift.property.md)
   The error code.
-- [var errorDescription: String?](objecttrackingprovider/error/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized message that describes an error.
-- [var failureReason: String?](objecttrackingprovider/error/failurereason.md)
+- [var failureReason: String?](./failurereason.md)
   A localized message that describes the reason for the failure.
 
 

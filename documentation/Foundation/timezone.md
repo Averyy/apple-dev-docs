@@ -1,7 +1,8 @@
 # TimeZone
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about standard time conventions associated with a specific geopolitical region.
 
@@ -33,75 +34,76 @@ Cocoa does not provide any API to change the time zone of the computer, or of ot
 ## Topics
 
 ### Getting the Current Time Zone
-- [static var autoupdatingCurrent: TimeZone](timezone/autoupdatingcurrent.md)
+- [static var autoupdatingCurrent: TimeZone](./timezone/autoupdatingcurrent.md)
   The time zone currently used by the system, automatically updating to the user’s current preference.
-- [static var current: TimeZone](timezone/current.md)
+- [static var current: TimeZone](./timezone/current.md)
   The time zone currently used by the system.
 ### Creating a Time Zone
-- [init?(secondsFromGMT: Int)](timezone/init(secondsfromgmt:).md)
+- [init?(secondsFromGMT: Int)](./timezone/init%28secondsfromgmt%29.md)
   Returns a time zone initialized with a specific number of seconds from GMT.
-- [static var knownTimeZoneIdentifiers: [String]](timezone/knowntimezoneidentifiers.md)
+- [static var knownTimeZoneIdentifiers: [String]](./timezone/knowntimezoneidentifiers.md)
   Returns an array of strings listing the identifier of all the time zones known to the system.
-- [static var abbreviationDictionary: [String : String]](timezone/abbreviationdictionary.md)
+- [static var abbreviationDictionary: [String : String]](./timezone/abbreviationdictionary.md)
   Returns the mapping of abbreviations to time zone identifiers.
 ### Getting Time Zone Information
-- [var identifier: String](timezone/identifier.md)
+- [var identifier: String](./timezone/identifier.md)
   The geopolitical region identifier that identifies the time zone.
-- [func abbreviation(for: Date) -> String?](timezone/abbreviation(for:).md)
+- [func abbreviation(for: Date) -> String?](./timezone/abbreviation%28for%29.md)
   Returns the abbreviation for the time zone at a given date.
-- [func secondsFromGMT(for: Date) -> Int](timezone/secondsfromgmt(for:).md)
+- [func secondsFromGMT(for: Date) -> Int](./timezone/secondsfromgmt%28for%29.md)
   The current difference in seconds between the time zone and Greenwich Mean Time.
-- [static var timeZoneDataVersion: String](timezone/timezonedataversion.md)
+- [static var timeZoneDataVersion: String](./timezone/timezonedataversion.md)
   Returns the time zone data version.
 ### Working with Daylight Savings
-- [func isDaylightSavingTime(for: Date) -> Bool](timezone/isdaylightsavingtime(for:).md)
+- [func isDaylightSavingTime(for: Date) -> Bool](./timezone/isdaylightsavingtime%28for%29.md)
   Returns a Boolean value that indicates whether the receiver uses daylight saving time at a given date.
-- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](timezone/daylightsavingtimeoffset(for:).md)
+- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](./timezone/daylightsavingtimeoffset%28for%29.md)
   Returns the daylight saving time offset for a given date.
-- [var nextDaylightSavingTimeTransition: Date?](timezone/nextdaylightsavingtimetransition.md)
+- [var nextDaylightSavingTimeTransition: Date?](./timezone/nextdaylightsavingtimetransition.md)
   The date of the next (after the current instant) daylight saving time transition for the time zone.
-- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](timezone/nextdaylightsavingtimetransition(after:).md)
+- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](./timezone/nextdaylightsavingtimetransition%28after%29.md)
   Returns the next daylight saving time transition after a given date.
 ### Describing Time Zones
-- [func localizedName(for: TimeZone.NameStyle, locale: Locale?) -> String?](timezone/localizedname(for:locale:).md)
+- [func localizedName(for: TimeZone.NameStyle, locale: Locale?) -> String?](./timezone/localizedname%28for,locale%29.md)
   Returns the name of the receiver localized for a given locale.
 ### Working with notification messages
-- [TimeZone.SystemTimeZoneDidChangeMessage](timezone/systemtimezonedidchangemessage.md)
+- [TimeZone.SystemTimeZoneDidChangeMessage](./timezone/systemtimezonedidchangemessage.md)
   A message the system sends when the system time zone changes.
 ### Using Reference Types
-- [class NSTimeZone](nstimezone.md)
+- [class NSTimeZone](./nstimezone.md)
   Information about standard time conventions associated with a specific geopolitical region.
 ### Initializers
-- [init?(abbreviation: String)](timezone/init(abbreviation:).md)
+- [init?(abbreviation: String)](./timezone/init%28abbreviation%29.md)
   Returns a time zone identified by a given abbreviation.
-- [init?(identifier: String)](timezone/init(identifier:).md)
+- [init?(identifier: String)](./timezone/init%28identifier%29.md)
   Returns a time zone initialized with a given identifier.
 ### Type Aliases
-- [typealias NameStyle](timezone/namestyle.md)
+- [typealias NameStyle](./timezone/namestyle.md)
 ### Type Properties
-- [static var gmt: TimeZone](timezone/gmt.md)
+- [static var gmt: TimeZone](./timezone/gmt.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DateComponents](datecomponents.md)
+### Calendrical Calculations
+- [struct DateComponents](./datecomponents.md)
   A date or time specified in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone.
-- [struct Calendar](calendar.md)
+- [struct Calendar](./calendar.md)
   A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
 
 

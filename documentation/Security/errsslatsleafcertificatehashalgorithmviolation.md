@@ -1,7 +1,8 @@
 # errSSLATSLeafCertificateHashAlgorithmViolation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The peer leaf certificate hash algorithm isn’t App Transport Security compliant.
 
@@ -20,9 +21,13 @@ The peer leaf certificate hash algorithm isn’t App Transport Security complian
 var errSSLATSLeafCertificateHashAlgorithmViolation: OSStatus { get }
 ```
 
+```c
+errSSLATSLeafCertificateHashAlgorithmViolation
+```
+
 #### Overview
 
-For more information about App Transport Security (ATS) compliance, see [`Preventing Insecure Network Connections`](preventing-insecure-network-connections.md).
+For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 
 
 ---

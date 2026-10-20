@@ -1,7 +1,8 @@
 # w
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fourth element of the vector.
 

@@ -1,7 +1,8 @@
 # es_new_client(_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new client instance and connects it to the Endpoint Security system.
 
@@ -14,6 +15,10 @@ Creates a new client instance and connects it to the Endpoint Security system.
 func es_new_client(_ client: UnsafeMutablePointer<OpaquePointer?>, _ handler: @escaping es_handler_block_t) -> es_new_client_result_t
 ```
 
+```c
+extern es_new_client_result_t es_new_client(es_client_t **client, es_handler_block_t handler);
+```
+
 #### Return Value
 
 A result value indicating that indicates either success or the reason why client initialization failed.
@@ -22,11 +27,11 @@ A result value indicating that indicates either success or the reason why client
 
 The handler block receives messages serially, and in the order the system delivers them. Returning control from the handler causes Endpoint Security to dequeue the next available message.
 
-You can respond to a message out of order by returning control before calling one of the `es_respond`-prefixed functions. For out-of-order responding, your handler must copy the message with [`es_copy_message(_:)`](es_copy_message(_:).md).
+You can respond to a message out of order by returning control before calling one of the `es_respond`-prefixed functions. For out-of-order responding, your handler must copy the message with [`es_copy_message(_:)`](./es_copy_message%28_%29.md).
 
 To create a client, your app must have the `com.apple.developer.endpoint-security.client` entitlement. The user also needs to approve your app with Transparency, Consent, and Control (TCC) mechanisms. The user does this in the Security and Privacy pane of System Preferences, by adding the app to Full Disk Access.
 
-When you no longer need to receive Endpoint Security messages, destroy the client with [`es_delete_client(_:)`](es_delete_client(_:).md) to free resources.
+When you no longer need to receive Endpoint Security messages, destroy the client with [`es_delete_client(_:)`](./es_delete_client%28_%29.md) to free resources.
 
 ## Parameters
 
@@ -35,11 +40,13 @@ When you no longer need to receive Endpoint Security messages, destroy the clien
 
 ## See Also
 
-- [com.apple.developer.endpoint-security.client](../bundleresources/entitlements/com.apple.developer.endpoint-security.client.md)
+### Related Documentation
+- [com.apple.developer.endpoint-security.client](../BundleResources/entitlements/com.apple.developer.endpoint-security.client.md)
   The entitlement required to monitor system events for potentially malicious activity.
-- [typealias es_handler_block_t](es_handler_block_t.md)
+### Creating a Client
+- [typealias es_handler_block_t](./es_handler_block_t.md)
   A block that handles a message received from Endpoint Security.
-- [struct es_new_client_result_t](es_new_client_result_t.md)
+- [struct es_new_client_result_t](./es_new_client_result_t.md)
   The result of an attempt to create a new client.
 
 

@@ -1,7 +1,8 @@
 # isToneMappingEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies if tone mapping is enabled.
 

@@ -1,7 +1,8 @@
 # PasteboardGetItemFlavorFlags(_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardGetItemFlavorFlags(_ inPasteboard: Pasteboard, _ inItem: PasteboardItemID, _ inFlavorType: CFString, _ outFlags: UnsafeMutablePointer<PasteboardFlavorFlags>) -> OSStatus
+```
+
+```c
+OSStatus PasteboardGetItemFlavorFlags(PasteboardRef inPasteboard, PasteboardItemID inItem, CFStringRef inFlavorType, PasteboardFlavorFlags *outFlags);
 ```
 
 

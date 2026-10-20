@@ -1,7 +1,8 @@
 # preferringMulticolor()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration that specifies that the symbol should prefer its multicolor variant if one exists.
 
@@ -12,6 +13,10 @@ Creates a configuration that specifies that the symbol should prefer its multico
 
 ```swift
 class func preferringMulticolor() -> Self
+```
+
+```objc
++ (instancetype) configurationPreferringMulticolor;
 ```
 
 #### Return Value
@@ -26,9 +31,10 @@ If the symbol supports neither, the symbol uses the monochrome (templated) symbo
 
 ## See Also
 
-- [convenience init(paletteColors: [NSColor])](nsimage/symbolconfiguration-swift.class/init(palettecolors:).md)
+### Creating a Color Configuration
+- [convenience init(paletteColors: [NSColor])](./init%28palettecolors%29.md)
   Creates a color configuration by specifying a palette of colors.
-- [convenience init(hierarchicalColor: NSColor)](nsimage/symbolconfiguration-swift.class/init(hierarchicalcolor:).md)
+- [convenience init(hierarchicalColor: NSColor)](./init%28hierarchicalcolor%29.md)
   Creates a hierarchical color configuration using the color you specify.
 
 

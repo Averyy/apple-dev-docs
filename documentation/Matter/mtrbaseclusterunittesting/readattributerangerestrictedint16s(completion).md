@@ -1,7 +1,8 @@
 # readAttributeRangeRestrictedInt16s(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRangeRestrictedInt16s(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRangeRestrictedInt16s() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRangeRestrictedInt16sWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

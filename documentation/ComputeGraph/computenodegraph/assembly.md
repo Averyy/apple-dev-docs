@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Assembly
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Fully assembled configuration of compute graph nodes.
 
@@ -12,7 +13,7 @@ Fully assembled configuration of compute graph nodes.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -24,52 +25,53 @@ struct Assembly
 
 You can create an assembly from a ComputeNodeGraph to obtain the layout of all buffers and uniforms needed by the graph.
 
-Unless you need the layout before or without compiling the shaders, you can compile [`ComputeNodeGraph.Pipelines`](computenodegraph/pipelines.md) directly from a [`ComputeNodeGraph`](computenodegraph.md).
+Unless you need the layout before or without compiling the shaders, you can compile [`ComputeNodeGraph.Pipelines`](./pipelines.md) directly from a [`ComputeNodeGraph`](../computenodegraph.md).
 
 ## Topics
 
 ### Structures
-- [ComputeNodeGraph.Assembly.BufferBinding](computenodegraph/assembly/bufferbinding.md)
+- [ComputeNodeGraph.Assembly.BufferBinding](./assembly/bufferbinding.md)
   Describes how a Metal buffer is bound to a compute pipeline stage.
-- [ComputeNodeGraph.Assembly.TextureBinding](computenodegraph/assembly/texturebinding.md)
+- [ComputeNodeGraph.Assembly.TextureBinding](./assembly/texturebinding.md)
   Describes how a Metal texture is bound to a compute pipeline stage.
-- [ComputeNodeGraph.Assembly.UniformBinding](computenodegraph/assembly/uniformbinding.md)
+- [ComputeNodeGraph.Assembly.UniformBinding](./assembly/uniformbinding.md)
   Describes how a uniform value is located within the graph’s uniform buffer.
 ### Initializers
-- [init(ComputeNodeGraph) throws](computenodegraph/assembly/init(_:).md)
+- [init(ComputeNodeGraph) throws](./assembly/init%28_%29.md)
 ### Instance Properties
-- [var constantBuffers: [ComputeNodeGraph.Assembly.BufferBinding]](computenodegraph/assembly/constantbuffers.md)
-- [var deviceBuffers: [ComputeNodeGraph.Assembly.BufferBinding]](computenodegraph/assembly/devicebuffers.md)
-- [var namedUniforms: [String : ComputeNodeGraph.Assembly.UniformBinding]](computenodegraph/assembly/nameduniforms.md)
+- [var constantBuffers: [ComputeNodeGraph.Assembly.BufferBinding]](./assembly/constantbuffers.md)
+- [var deviceBuffers: [ComputeNodeGraph.Assembly.BufferBinding]](./assembly/devicebuffers.md)
+- [var namedUniforms: [String : ComputeNodeGraph.Assembly.UniformBinding]](./assembly/nameduniforms.md)
   Uniforms that are named and exposed as parameters of this graph, keyed by name.
-- [var sharedUniforms: [String : ComputeNodeGraph.Assembly.UniformBinding]](computenodegraph/assembly/shareduniforms.md)
+- [var sharedUniforms: [String : ComputeNodeGraph.Assembly.UniformBinding]](./assembly/shareduniforms.md)
   Uniforms that are shared across multiple graphs, keyed by typeName.
-- [var textures: [ComputeNodeGraph.Assembly.TextureBinding]](computenodegraph/assembly/textures.md)
-- [var uniformBufferSize: Int](computenodegraph/assembly/uniformbuffersize.md)
-- [var uniforms: [ComputeNodeGraph.Port.Address : ComputeNodeGraph.Assembly.Location]](computenodegraph/assembly/uniforms.md)
+- [var textures: [ComputeNodeGraph.Assembly.TextureBinding]](./assembly/textures.md)
+- [var uniformBufferSize: Int](./assembly/uniformbuffersize.md)
+- [var uniforms: [ComputeNodeGraph.Port.Address : ComputeNodeGraph.Assembly.Location]](./assembly/uniforms.md)
 ### Enumerations
-- [ComputeNodeGraph.Assembly.Attachment](computenodegraph/assembly/attachment.md)
+- [ComputeNodeGraph.Assembly.Attachment](./assembly/attachment.md)
   Identifies where a resource is attached in the compute graph.
-- [ComputeNodeGraph.Assembly.Location](computenodegraph/assembly/location.md)
+- [ComputeNodeGraph.Assembly.Location](./assembly/location.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ComputeNodeGraph](computenodegraph.md)
-- [ComputeNodeGraph.Pipelines](computenodegraph/pipelines.md)
+### Graph definition and assembly
+- [struct ComputeNodeGraph](../computenodegraph.md)
+- [ComputeNodeGraph.Pipelines](./pipelines.md)
   Fully-compiled shaders for a compute graph.
-- [ComputeNodeGraph.PipelinesDescriptor](computenodegraph/pipelinesdescriptor.md)
+- [ComputeNodeGraph.PipelinesDescriptor](./pipelinesdescriptor.md)
   Specifies the configuration used to compile a set of compute pipelines for a compute graph effect.
-- [ComputeNodeGraph.NodeDefinition](computenodegraph/nodedefinition.md)
-- [ComputeNodeGraph.Library](computenodegraph/library.md)
+- [ComputeNodeGraph.NodeDefinition](./nodedefinition.md)
+- [ComputeNodeGraph.Library](./library.md)
   A class defining a library of node definitions that can be added to a ComputeNodeGraph
-- [ComputeNodeGraph.LibraryReference](computenodegraph/libraryreference.md)
+- [ComputeNodeGraph.LibraryReference](./libraryreference.md)
   A Metal library and an optional bundle identifier that locates shader functions.
 
 

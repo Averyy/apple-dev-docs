@@ -1,7 +1,8 @@
 # AccessoryNotification.DisplayDate.hideDate
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates the accessory doesn’t display a date.
 
@@ -16,11 +17,12 @@ case hideDate
 
 ## See Also
 
-- [AccessoryNotification.DisplayDate.allDayDate(_:)](accessorynotification/displaydate-swift.enum/alldaydate(_:).md)
+### Identifying date display options
+- [AccessoryNotification.DisplayDate.allDayDate(_:)](./alldaydate%28_%29.md)
   An option to display a date for all-day events.
-- [AccessoryNotification.DisplayDate.contentDate(_:)](accessorynotification/displaydate-swift.enum/contentdate(_:).md)
+- [AccessoryNotification.DisplayDate.contentDate(_:)](./contentdate%28_%29.md)
   An option to display a date that includes a specific moment to which the notification refers.
-- [AccessoryNotification.DisplayDate.deliveryDate](accessorynotification/displaydate-swift.enum/deliverydate.md)
+- [AccessoryNotification.DisplayDate.deliveryDate](./deliverydate.md)
   An option to display a date that uses the notification’s delivery timestamp.
 
 

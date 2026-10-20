@@ -1,7 +1,8 @@
 # instantiate(with:options:completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an instance of an audio unit component asynchronously and wraps it in an audio unit class.
 
@@ -16,20 +17,28 @@ Creates an instance of an audio unit component asynchronously and wraps it in an
 ## Declaration
 
 ```swift
+class func instantiate(with audioComponentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions = [], completionHandler: @escaping @Sendable (AVAudioUnit?, (any Error)?) -> Void)
+```
+
+```swift
 class func instantiate(with audioComponentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions = []) async throws -> AVAudioUnit
+```
+
+```objc
++ (void) instantiateWithComponentDescription:(AudioComponentDescription) audioComponentDescription options:(AudioComponentInstantiationOptions) options completionHandler:(void (^)(AVAudioUnit *audioUnit, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-You must create components with flags that include [`requiresAsyncInstantiation`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentflags/requiresasyncinstantiation) asynchronously through this method if they’re for use with [`AVAudioEngine`](avaudioengine.md).
+You must create components with flags that include [`requiresAsyncInstantiation`](../../AudioToolbox/audiocomponentflags/requiresasyncinstantiation.md) asynchronously through this method if they’re for use with [`AVAudioEngine`](../avaudioengine.md).
 
-The [`AVAudioUnit`](avaudiounit.md) instance is usually a subclass that the method selects according to the components type. For example, [`AVAudioUnitEffect`](avaudiouniteffect.md), [`AVAudioUnitGenerator`](avaudiounitgenerator.md), [`AVAudioUnitMIDIInstrument`](avaudiounitmidiinstrument.md), or [`AVAudioUnitTimeEffect`](avaudiounittimeeffect.md).
+The [`AVAudioUnit`](../avaudiounit.md) instance is usually a subclass that the method selects according to the components type. For example, [`AVAudioUnitEffect`](../avaudiouniteffect.md), [`AVAudioUnitGenerator`](../avaudiounitgenerator.md), [`AVAudioUnitMIDIInstrument`](../avaudiounitmidiinstrument.md), or [`AVAudioUnitTimeEffect`](../avaudiounittimeeffect.md).
 
 ## Parameters
 
 - `audioComponentDescription`: The component to create.
 - `options`: The options the method uses to create the component.
-- `completionHandler`: A handler the framework calls in an arbitrary thread context when creation completes. Retain the [`AVAudioUnit`](avaudiounit.md) this handler provides.
+- `completionHandler`: A handler the framework calls in an arbitrary thread context when creation completes. Retain the [`AVAudioUnit`](../avaudiounit.md) this handler provides.
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Dispatches a machine learning network using the current pipeline state and argument table.
@@ -20,9 +21,13 @@ Dispatches a machine learning network using the current pipeline state and argum
 func dispatchNetwork(intermediatesHeap heap: any MTLHeap)
 ```
 
+```objc
+- (void) dispatchNetworkWithIntermediatesHeap:(id<MTLHeap>) heap;
+```
+
 #### Discussion
 
-This method takes a parameter consisting of a `MTLHeap` that Metal can use to allocate intermediate tensors. You can query the minimum size Metal requires for this heap by calling [`intermediatesHeapSize`](mtl4machinelearningpipelinestate/intermediatesheapsize.md).
+This method takes a parameter consisting of a `MTLHeap` that Metal can use to allocate intermediate tensors. You can query the minimum size Metal requires for this heap by calling [`intermediatesHeapSize`](../mtl4machinelearningpipelinestate/intermediatesheapsize.md).
 
 ## Parameters
 

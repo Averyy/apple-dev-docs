@@ -1,15 +1,18 @@
 # position
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the light in world coordinates.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,19 +20,24 @@ The position of the light in world coordinates.
 var position: GLKVector4 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GLKVector4 position;
+```
+
 #### Discussion
 
 If the `w` component of the position is `0.0`, the light is calculated using the directional light formula. The `x`, `y`, and `z` components of the vector specify the direction the light shines. The light is assumed to be infinitely far away; attenuation and spotlight properties are ignored.
 
-If the `w` component of the position is a non-zero value, the coordinates specify the position of the light in homogenous coordinates, and the light is either calculated as a point light or a spotlight, depending on the value of the [`spotCutoff`](glkeffectpropertylight/spotcutoff.md) property.
+If the `w` component of the position is a non-zero value, the coordinates specify the position of the light in homogenous coordinates, and the light is either calculated as a point light or a spotlight, depending on the value of the [`spotCutoff`](./spotcutoff.md) property.
 
 The default value is `[0.0, 0.0, 1.0, 0.0]`.
 
 ## See Also
 
-- [var enabled: GLboolean](glkeffectpropertylight/enabled.md)
+### Configuring Common Lighting Properties
+- [var enabled: GLboolean](./enabled.md)
   A Boolean value that indicates whether calculations should be performed on this light.
-- [var transform: GLKEffectPropertyTransform](glkeffectpropertylight/transform.md)
+- [var transform: GLKEffectPropertyTransform](./transform.md)
   A transform applied to the light’s position and direction before calculating the contribution of the light.
 
 

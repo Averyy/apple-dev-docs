@@ -1,29 +1,34 @@
 # Passcode.CustomRegex
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The regex defining the passcode policy.
 
 **Availability**:
-- macOS 14.0+
+- macOS 14.0+ - Deprecated in 27.0
 
 ## Declaration
 
-```swift
+```
 object Passcode.CustomRegex
 ```
 
 ## Topics
 
 ### Objects
-- [object Passcode.CustomRegex.PasswordContentDescription](passcode/customregex-data.dictionary/passwordcontentdescription-data.dictionary.md)
+- [object Passcode.CustomRegex.PasswordContentDescription](./customregex-data.dictionary/passwordcontentdescription-data.dictionary.md)
   Descriptions of the policy, localized to supported locales.
 
 ## Properties
 
-- `passwordContentDescription` (Passcode.CustomRegex.PasswordContentDescription): Contains a dictionary of keys for supported OS language IDs (for example, “en-US”), and whose values represent a localized description of the policy enforced by the regular expression. Use the special `default` key can for languages that aren’t contained in the dictionary. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
-- `passwordContentRegex` (string) *(required)*: A regular expression string that the system matches against the password to determine whether it complies with a policy. The regular expression uses the ICU syntax ([`https://unicode-org.github.io/icu/userguide/strings/regexp.html`](https://developer.apple.comhttps://unicode-org.github.io/icu/userguide/strings/regexp.html)). The string must not exceed 2048 characters in length. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+- `passwordContentDescription` (Passcode.CustomRegex.PasswordContentDescription) *(deprecated)*: Contains a dictionary of keys for supported OS language IDs (for example, “en-US”), and whose values represent a localized description of the policy enforced by the regular expression. Use the special `default` key can for languages that aren’t contained in the dictionary.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+- `passwordContentRegex` (string) *(required)* *(deprecated)*: A regular expression string that the system matches against the password to determine whether it complies with a policy. The regular expression uses the ICU syntax ([https://unicode-org.github.io/icu/userguide/strings/regexp.html](https://unicode-org.github.io/icu/userguide/strings/regexp.html)). The string must not exceed 2048 characters in length.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 
 ---

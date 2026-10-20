@@ -1,7 +1,8 @@
 # enable
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether reverberation is in an enabled state.
 
@@ -20,9 +21,13 @@ A Boolean value that indicates whether reverberation is in an enabled state.
 var enable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL enable;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 
 ---

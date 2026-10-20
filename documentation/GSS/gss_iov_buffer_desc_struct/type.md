@@ -1,7 +1,8 @@
 # type
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer type.
 
@@ -18,9 +19,14 @@ The buffer type.
 var type: OM_uint32
 ```
 
+```c
+OM_uint32 type;
+```
+
 ## See Also
 
-- [var buffer: gss_buffer_desc](gss_iov_buffer_desc_struct/buffer.md)
+### Vectored I/O
+- [var buffer: gss_buffer_desc](./buffer.md)
   The buffer length and contents.
 
 

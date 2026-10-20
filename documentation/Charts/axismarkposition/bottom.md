@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A markers at the bottom of the chart
 

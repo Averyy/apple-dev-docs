@@ -1,7 +1,8 @@
 # hasActiveChallenges(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates if this definition has active challenges associated with it.
 
@@ -17,7 +18,15 @@ Indicates if this definition has active challenges associated with it.
 ## Declaration
 
 ```swift
+func hasActiveChallenges(completionHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 var hasActiveChallenges: Bool { get async throws }
+```
+
+```objc
+- (void) hasActiveChallengesWithCompletionHandler:(void (^)(BOOL hasActiveChallenges, NSError *error)) completionHandler;
 ```
 
 

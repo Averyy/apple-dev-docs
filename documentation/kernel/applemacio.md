@@ -1,41 +1,43 @@
 # AppleMacIO
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class AppleMacIO : IOService
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- compareNubName](applemacio/1518479-comparenubname.md)
-- [- createNub](applemacio/1518466-createnub.md)
-- [- deleteList](applemacio/1518480-deletelist.md)
-- [- excludeList](applemacio/1518482-excludelist.md)
-- [- getMetaClass](applemacio/1518477-getmetaclass.md)
-- [- getNubResources](applemacio/1518471-getnubresources.md)
-- [- processNub](applemacio/1518475-processnub.md)
-- [- publishBelow](applemacio/1518467-publishbelow.md)
-- [- selfTest](applemacio/1518474-selftest.md)
-- [- start](applemacio/1518469-start.md)
+- [- compareNubName](./applemacio/api-1518479-comparenubname.md)
+- [- createNub](./applemacio/api-1518466-createnub.md)
+- [- deleteList](./applemacio/api-1518480-deletelist.md)
+- [- excludeList](./applemacio/api-1518482-excludelist.md)
+- [- getMetaClass](./applemacio/api-1518477-getmetaclass.md)
+- [- getNubResources](./applemacio/api-1518471-getnubresources.md)
+- [- processNub](./applemacio/api-1518475-processnub.md)
+- [- publishBelow](./applemacio/api-1518467-publishbelow.md)
+- [- selfTest](./applemacio/api-1518474-selftest.md)
+- [- start](./applemacio/api-1518469-start.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IODTNVRAM](iodtnvram.md)
-- [AppleMacIODevice](applemaciodevice.md)
-- [AppleNMI](applenmi.md)
+### Apple Drivers
+- [IODTNVRAM](./iodtnvram.md)
+- [AppleMacIODevice](./applemaciodevice.md)
+- [AppleNMI](./applenmi.md)
 
 
 ---

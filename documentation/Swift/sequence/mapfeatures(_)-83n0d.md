@@ -1,7 +1,8 @@
 # mapFeatures(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the results of mapping the given async closure over the sequence’s features.
 

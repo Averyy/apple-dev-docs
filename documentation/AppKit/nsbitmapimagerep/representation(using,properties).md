@@ -1,12 +1,13 @@
 # representation(using:properties:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the bitmap representation’s image data using the specified storage type and properties and returns it in a data object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,38 @@ Formats the bitmap representation’s image data using the specified storage typ
 func representation(using storageType: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?
 ```
 
+```objc
+- (NSData *) representationUsingType:(NSBitmapImageFileType) storageType properties:(NSDictionary<NSString *,id> *) properties;
+```
+
 #### Return Value
 
-A data object containing the receiver’s image data in the specified format. You can write this data to a file or use it to create a new [`NSBitmapImageRep`](nsbitmapimagerep.md) object.
+A data object containing the receiver’s image data in the specified format. You can write this data to a file or use it to create a new [`NSBitmapImageRep`](../nsbitmapimagerep.md) object.
 
 ## Parameters
 
-- `storageType`: A constant that specifies a file type for bitmap images. It can be [`NSBMPFileType`](nsbmpfiletype.md), [`NSGIFFileType`](nsgiffiletype.md), [`NSJPEGFileType`](nsjpegfiletype.md), [`NSPNGFileType`](nspngfiletype.md), or [`NSTIFFFileType`](nstifffiletype.md).
-- `properties`: A dictionary that contains key-value pairs specifying image properties. These string constants used as keys and the valid values are described in [`NSBitmapImageRep.PropertyKey`](nsbitmapimagerep/propertykey.md).
+- `storageType`: A constant that specifies a file type for bitmap images. It can be [`NSBMPFileType`](../nsbmpfiletype.md), [`NSGIFFileType`](../nsgiffiletype.md), [`NSJPEGFileType`](../nsjpegfiletype.md), [`NSPNGFileType`](../nspngfiletype.md), or [`NSTIFFFileType`](../nstifffiletype.md).
+- `properties`: A dictionary that contains key-value pairs specifying image properties. These string constants used as keys and the valid values are described in [`NSBitmapImageRep.PropertyKey`](./propertykey.md).
 
 ## See Also
 
-- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](nsimage/tiffrepresentation(using:factor:).md)
+### Related Documentation
+- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](../nsimage/tiffrepresentation%28using,factor%29.md)
   Returns a data object that contains TIFF data with the specified compression settings for all of the image representations in the image.
-- [var tiffRepresentation: Data?](nsimage/tiffrepresentation.md)
+- [var tiffRepresentation: Data?](../nsimage/tiffrepresentation.md)
   A data object containing TIFF data for all of the image representations in the image.
-- [class func tiffRepresentationOfImageReps(in: [NSImageRep]) -> Data?](nsbitmapimagerep/tiffrepresentationofimagereps(in:).md)
+### Producing Other Representations of Images
+- [class func tiffRepresentationOfImageReps(in: [NSImageRep]) -> Data?](./tiffrepresentationofimagereps%28in%29.md)
   Returns a TIFF representation of the specified images.
-- [class func tiffRepresentationOfImageReps(in: [NSImageRep], using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](nsbitmapimagerep/tiffrepresentationofimagereps(in:using:factor:).md)
+- [class func tiffRepresentationOfImageReps(in: [NSImageRep], using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](./tiffrepresentationofimagereps%28in,using,factor%29.md)
   Returns a TIFF representation of the specified images using the specified compression scheme and factor.
-- [var tiffRepresentation: Data?](nsbitmapimagerep/tiffrepresentation.md)
+- [var tiffRepresentation: Data?](./tiffrepresentation.md)
   A TIFF representation of the bitmap image data.
-- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](nsbitmapimagerep/tiffrepresentation(using:factor:).md)
+- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](./tiffrepresentation%28using,factor%29.md)
   Returns a TIFF representation of the image using the specified compression.
-- [class func representationOfImageReps(in: [NSImageRep], using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](nsbitmapimagerep/representationofimagereps(in:using:properties:).md)
+- [class func representationOfImageReps(in: [NSImageRep], using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](./representationofimagereps%28in,using,properties%29.md)
   Formats the specified bitmap images using the specified storage type and properties and returns them in a data object.
-- [func NSDrawBitmap(NSRect, Int, Int, Int, Int, Int, Int, Bool, Bool, NSColorSpaceName, UnsafePointer<UnsafePointer<UInt8>?>)](nsdrawbitmap(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func NSDrawBitmap(NSRect, Int, Int, Int, Int, Int, Int, Bool, Bool, NSColorSpaceName, UnsafePointer<UnsafePointer<UInt8>?>)](../nsdrawbitmap%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Draws a bitmap image.
 
 

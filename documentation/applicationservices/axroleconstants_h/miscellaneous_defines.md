@@ -1,47 +1,48 @@
 # Miscellaneous Defines
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kAXApplicationRole: String](kaxapplicationrole.md)
+- [var kAXApplicationRole: String](../kaxapplicationrole.md)
   An application.
-- [var kAXBrowserRole: String](kaxbrowserrole.md)
+- [var kAXBrowserRole: String](../kaxbrowserrole.md)
   An accessibility object that displays column-based, hierarchically structured data, such as the column view in a Finder window.
-- [var kAXButtonRole: String](kaxbuttonrole.md)
+- [var kAXButtonRole: String](../kaxbuttonrole.md)
   A button.
-- [var kAXCheckBoxRole: String](kaxcheckboxrole.md)
+- [var kAXCheckBoxRole: String](../kaxcheckboxrole.md)
   A check box.
-- [var kAXColumnRole: String](kaxcolumnrole.md)
+- [var kAXColumnRole: String](../kaxcolumnrole.md)
   A column.
-- [var kAXDrawerRole: String](kaxdrawerrole.md)
+- [var kAXDrawerRole: String](../kaxdrawerrole.md)
   A drawer.
-- [var kAXGrowAreaRole: String](kaxgrowarearole.md)
+- [var kAXGrowAreaRole: String](../kaxgrowarearole.md)
   A grow control.
-- [var kAXImageRole: String](kaximagerole.md)
+- [var kAXImageRole: String](../kaximagerole.md)
   An image.
-- [var kAXMenuButtonRole: String](kaxmenubuttonrole.md)
+- [var kAXMenuButtonRole: String](../kaxmenubuttonrole.md)
   A menu button.
-- [var kAXOutlineRole: String](kaxoutlinerole.md)
+- [var kAXOutlineRole: String](../kaxoutlinerole.md)
   An accessibility object that displays row-based, hierarchically structured data, such as the list view in a Finder window.
-- [var kAXPopUpButtonRole: String](kaxpopupbuttonrole.md)
+- [var kAXPopUpButtonRole: String](../kaxpopupbuttonrole.md)
   A pop-up button.
-- [var kAXRadioButtonRole: String](kaxradiobuttonrole.md)
+- [var kAXRadioButtonRole: String](../kaxradiobuttonrole.md)
   A radio button.
-- [var kAXRowRole: String](kaxrowrole.md)
+- [var kAXRowRole: String](../kaxrowrole.md)
   A row.
-- [var kAXSheetRole: String](kaxsheetrole.md)
+- [var kAXSheetRole: String](../kaxsheetrole.md)
   A sheet.
-- [var kAXSystemWideRole: String](kaxsystemwiderole.md)
+- [var kAXSystemWideRole: String](../kaxsystemwiderole.md)
   The system-wide accessibility object.
-- [var kAXTabGroupRole: String](kaxtabgrouprole.md)
+- [var kAXTabGroupRole: String](../kaxtabgrouprole.md)
   A tab view.
-- [var kAXTableRole: String](kaxtablerole.md)
+- [var kAXTableRole: String](../kaxtablerole.md)
   A table.
-- [var kAXUnknownRole: String](kaxunknownrole.md)
+- [var kAXUnknownRole: String](../kaxunknownrole.md)
   Generic role value for an unknown accessibility object.
-- [var kAXWindowRole: String](kaxwindowrole.md)
+- [var kAXWindowRole: String](../kaxwindowrole.md)
   A window.
 
 

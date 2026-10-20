@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends a Stay Quiet command (0x02 command code), as defined in the ISO 15693-3 specification, to the tag.
@@ -14,7 +15,15 @@ Sends a Stay Quiet command (0x02 command code), as defined in the ISO 15693-3 sp
 ## Declaration
 
 ```swift
+func stayQuiet(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stayQuiet() async throws
+```
+
+```objc
+- (void) stayQuietWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 

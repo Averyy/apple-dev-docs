@@ -7,11 +7,11 @@ Returns a memory descriptor covering the IODataQueueMemory region.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOMemoryDescriptor *getMemoryDescriptor();
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a newly allocated IOMemoryDescriptor for the IODataQueueMemory region. Returns zero on failure.
 
@@ -21,15 +21,16 @@ The IOMemoryDescriptor instance returned by this method is intended to be mapped
 
 ## See Also
 
-- [dequeue](ioshareddataqueue/1810190-dequeue.md)
+### Miscellaneous
+- [dequeue](./api-1810190-dequeue.md)
   Dequeues the next available entry on the queue and copies it into the given data pointer.
-- [initWithCapacity](ioshareddataqueue/1810293-initwithcapacity.md)
+- [initWithCapacity](./api-1810293-initwithcapacity.md)
   Initializes an IOSharedDataQueue instance with the capacity specified in the size parameter.
-- [peek](ioshareddataqueue/1810347-peek.md)
+- [peek](./api-1810347-peek.md)
   Used to peek at the next entry on the queue.
-- [withCapacity](ioshareddataqueue/1810400-withcapacity.md)
+- [withCapacity](./api-1810400-withcapacity.md)
   Static method that creates a new IOSharedDataQueue instance with the capacity specified in the size parameter.
-- [withEntries](ioshareddataqueue/1810447-withentries.md)
+- [withEntries](./api-1810447-withentries.md)
   Static method that creates a new IOSharedDataQueue instance with the specified number of entries of the given size.
 
 

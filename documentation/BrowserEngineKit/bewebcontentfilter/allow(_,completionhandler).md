@@ -1,7 +1,8 @@
 # allow(_:completionHandler:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a previously blocked URL to the web content filter’s allow list.
 
@@ -12,7 +13,15 @@ Adds a previously blocked URL to the web content filter’s allow list.
 ## Declaration
 
 ```swift
+func allow(_ url: URL, completionHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func allow(_ url: URL) async throws -> Bool
+```
+
+```objc
+- (void) allowURL:(NSURL *) url completionHandler:(void (^)(BOOL didAllow, NSError *error)) completionHandler;
 ```
 
 ## Parameters

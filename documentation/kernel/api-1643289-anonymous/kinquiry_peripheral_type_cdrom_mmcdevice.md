@@ -1,14 +1,15 @@
 # kINQUIRY_PERIPHERAL_TYPE_CDROM_MMCDevice
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PERIPHERAL_TYPE_CDROM_MMCDevice = 0x05
 ```
 

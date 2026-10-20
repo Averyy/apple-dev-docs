@@ -1,7 +1,8 @@
 # accessBehavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current pasteboard access behavior. The user can customize this behavior per-app in System Settings for any app that has triggered a pasteboard access alert in the past.
 
@@ -14,11 +15,16 @@ The current pasteboard access behavior. The user can customize this behavior per
 var accessBehavior: NSPasteboard.AccessBehavior { get }
 ```
 
+```objc
+@property (assign, readonly) NSPasteboardAccessBehavior accessBehavior;
+```
+
 ## See Also
 
-- [var accessBehavior: NSPasteboard.AccessBehavior](nspasteboard/accessbehavior-9k4t4.md)
+### Determining pasteboard access
+- [var accessBehavior: NSPasteboard.AccessBehavior](./accessbehavior-9k4t4.md)
   The current pasteboard access behavior. The user can customize this behavior per-app in System Settings for any app that has triggered a pasteboard access alert in the past.
-- [NSPasteboard.AccessBehavior](nspasteboard/accessbehavior-swift.enum.md)
+- [NSPasteboard.AccessBehavior](./accessbehavior-swift.enum.md)
   A value indicating pasteboard access behavior.
 
 

@@ -1,7 +1,8 @@
 # multipleParticipantsNotSupported
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.5+

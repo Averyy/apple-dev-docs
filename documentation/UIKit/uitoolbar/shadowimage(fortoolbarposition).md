@@ -1,7 +1,8 @@
 # shadowImage(forToolbarPosition:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image to use for the toolbar shadow in a given position.
 
@@ -15,6 +16,10 @@ Returns the image to use for the toolbar shadow in a given position.
 
 ```swift
 func shadowImage(forToolbarPosition topOrBottom: UIBarPosition) -> UIImage?
+```
+
+```objc
+- (UIImage *) shadowImageForToolbarPosition:(UIBarPosition) topOrBottom;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ The default value is `nil`, which corresponds to the default shadow image being 
 
 ## See Also
 
-- [func setShadowImage(UIImage?, forToolbarPosition: UIBarPosition)](uitoolbar/setshadowimage(_:fortoolbarposition:).md)
+### Adding a shadow
+- [func setShadowImage(UIImage?, forToolbarPosition: UIBarPosition)](./setshadowimage%28_,fortoolbarposition%29.md)
   Sets the image to use for the toolbar shadow in a given position.
 
 

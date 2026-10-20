@@ -1,12 +1,13 @@
 # kODSessionProxyPassword
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The password to connect with via proxy. The value is of type `CFString`.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,15 +16,20 @@ The password to connect with via proxy. The value is of type `CFString`.
 let kODSessionProxyPassword: CFString!
 ```
 
+```c
+extern CFStringRef const kODSessionProxyPassword;
+```
+
 ## See Also
 
-- [var kODSessionDefault: Unmanaged<ODSessionRef>!](kodsessiondefault.md)
+### Constants
+- [var kODSessionDefault: Unmanaged<ODSessionRef>!](./kodsessiondefault.md)
   The default session. Used if there is no need to create a specific reference.
-- [let kODSessionProxyAddress: CFString!](kodsessionproxyaddress.md)
+- [let kODSessionProxyAddress: CFString!](./kodsessionproxyaddress.md)
   The address to connect to via proxy. The value is of type `CFString`.
-- [let kODSessionProxyPort: CFString!](kodsessionproxyport.md)
+- [let kODSessionProxyPort: CFString!](./kodsessionproxyport.md)
   The port to connect to via proxy. The value is of type `CFNumber`.
-- [let kODSessionProxyUsername: CFString!](kodsessionproxyusername.md)
+- [let kODSessionProxyUsername: CFString!](./kodsessionproxyusername.md)
   The username to connect with via proxy. The value is of type `CFString`.
 
 

@@ -1,7 +1,8 @@
 # transferProvisionalHome(connectionDetails:targetHomeUniqueIdentifier:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transfers a temporary, provisional home to a person’s home hub.
 
@@ -21,9 +22,9 @@ Transfer results for each accessory, allowing you to identify a partially succes
 
 #### Overview
 
-When you transfer a temporary home to a person’s home hub, HomeKit encodes a snapshot of all paired accessories, creates a secure channel with the connection details’ [`transferToken`](hmhome/provisionalhomeconnectiondetails/transfertoken.md), and uses the channel to send the snapshot to the home hub.
+When you transfer a temporary home to a person’s home hub, HomeKit encodes a snapshot of all paired accessories, creates a secure channel with the connection details’ [`transferToken`](./provisionalhomeconnectiondetails/transfertoken.md), and uses the channel to send the snapshot to the home hub.
 
-> **Note**: Error information for failures that occur when transferring a temporary, provisional home to a person’s home hub.
+> **Throws**: Error information for failures that occur when transferring a temporary, provisional home to a person’s home hub.
 
 ## Parameters
 
@@ -32,15 +33,16 @@ When you transfer a temporary home to a person’s home hub, HomeKit encodes a s
 
 ## See Also
 
-- [var isProvisionalHome: Bool](hmhome/isprovisionalhome.md)
+### Providing installation services
+- [var isProvisionalHome: Bool](./isprovisionalhome.md)
   A property that indicates if the home is a temporary, provisional home for use by installation services.
-- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](hmhome/isprovisionalhome(forpairingidentifier:).md)
+- [func isProvisionalHome(forPairingIdentifier: String) async throws -> Bool](./isprovisionalhome%28forpairingidentifier%29.md)
   Checks whether the home is a temporary, provisional home for use by installation services.
-- [HMHome.ProvisionalHomeConnectionDetails](hmhome/provisionalhomeconnectiondetails.md)
+- [HMHome.ProvisionalHomeConnectionDetails](./provisionalhomeconnectiondetails.md)
   A structure that contains the token to transfer a temporary, provisional home to a person’s home hub.
-- [HMHome.ProvisionalHomeTransferResult](hmhome/provisionalhometransferresult.md)
+- [HMHome.ProvisionalHomeTransferResult](./provisionalhometransferresult.md)
   The outcome of transferring a temporary home to a home hub.
-- [HMHome.ProvisionalHomeTransferError](hmhome/provisionalhometransfererror.md)
+- [HMHome.ProvisionalHomeTransferError](./provisionalhometransfererror.md)
   Errors that occur when transferring a temporary home to a person’s home hub.
 
 

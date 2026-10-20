@@ -1,7 +1,8 @@
 # kSecKeySensitive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key cannot be wrapped with `CSSM_ALGID_NONE`.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key cannot be wrapped with `CSSM_ALGID_NONE`
 
 ```swift
 var kSecKeySensitive: Int32 { get }
+```
+
+```c
+kSecKeySensitive
 ```
 
 

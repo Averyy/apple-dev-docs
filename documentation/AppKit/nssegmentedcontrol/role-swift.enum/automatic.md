@@ -1,7 +1,8 @@
 # NSSegmentedControl.Role.automatic
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 27.0+
@@ -12,10 +13,15 @@
 case automatic
 ```
 
+```c
+NSSegmentedControlRoleAutomatic
+```
+
 ## See Also
 
-- [NSSegmentedControl.Role.tabs](nssegmentedcontrol/role-swift.enum/tabs.md)
-- [NSSegmentedControl.Role.valueSelection](nssegmentedcontrol/role-swift.enum/valueselection.md)
+### Getting role values
+- [NSSegmentedControl.Role.tabs](./tabs.md)
+- [NSSegmentedControl.Role.valueSelection](./valueselection.md)
 
 
 ---

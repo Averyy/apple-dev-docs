@@ -1,7 +1,8 @@
 # AppCustomProductPageVersionInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app custom product page version inline create resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app custom product page version inline create resour
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageVersionInlineCreate.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppCustomProductPageVersionInlineCreate.Attributes
 
 ## See Also
 
-- [object AppCustomProductPageVersionInlineCreate.Relationships](appcustomproductpageversioninlinecreate/relationships-data.dictionary.md)
+### Objects
+- [object AppCustomProductPageVersionInlineCreate.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

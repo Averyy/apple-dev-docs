@@ -1,7 +1,8 @@
 # CNSpatialAudioRenderingStyle.studio
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Isolates background and foreground in separate stems. Adds a proximity effect to foreground sounds.
 
@@ -16,6 +17,10 @@ Isolates background and foreground in separate stems. Adds a proximity effect to
 
 ```swift
 case studio
+```
+
+```c
+CNSpatialAudioRenderingStyleStudio
 ```
 
 

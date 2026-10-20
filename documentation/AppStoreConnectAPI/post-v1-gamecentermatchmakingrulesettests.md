@@ -1,7 +1,8 @@
 # Test a Rule Set
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Apply the given rule set to the given sample match requests.
 
@@ -14,7 +15,7 @@ Apply the given rule set to the given sample match requests.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSetTests
 {
     “data”: {
@@ -229,6 +230,21 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSetTests
 ## Endpoint
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSetTests`
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterMatchmakingRuleSetTestCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterMatchmakingRuleSetTestResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

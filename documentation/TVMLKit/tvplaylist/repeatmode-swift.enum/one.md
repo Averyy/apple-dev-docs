@@ -1,12 +1,15 @@
 # TVPlaylist.RepeatMode.one
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Replay the currently playing media item.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ Replay the currently playing media item.
 case one
 ```
 
+```c
+TVPlaylistRepeatModeOne
+```
+
 ## See Also
 
-- [TVPlaylist.RepeatMode.all](tvplaylist/repeatmode-swift.enum/all.md)
+### Replay Modes
+- [TVPlaylist.RepeatMode.all](./all.md)
   Replay all of the media items in the playlist.
-- [TVPlaylist.RepeatMode.none](tvplaylist/repeatmode-swift.enum/none.md)
+- [TVPlaylist.RepeatMode.none](./none.md)
   Replay none of the media items in the playlist.
 
 

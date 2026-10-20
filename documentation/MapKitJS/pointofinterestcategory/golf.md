@@ -1,7 +1,8 @@
 # Golf
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for golf courses.
 
@@ -10,7 +11,7 @@ The point-of-interest category for golf courses.
 
 ## Declaration
 
-```swift
+```
 readonly Golf: "Golf";
 ```
 

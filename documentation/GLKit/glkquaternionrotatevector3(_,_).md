@@ -1,7 +1,8 @@
 # GLKQuaternionRotateVector3(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new vector that is calculated by applying a quaternion rotation to a vector.
 
@@ -17,6 +18,10 @@ Returns a new vector that is calculated by applying a quaternion rotation to a v
 func GLKQuaternionRotateVector3(_ quaternion: GLKQuaternion, _ vector: GLKVector3) -> GLKVector3
 ```
 
+```c
+static GLKVector3 GLKQuaternionRotateVector3(GLKQuaternion quaternion, GLKVector3 vector);
+```
+
 #### Return Value
 
 A new vector.
@@ -28,11 +33,12 @@ A new vector.
 
 ## See Also
 
-- [func GLKQuaternionRotateVector3Array(GLKQuaternion, UnsafeMutablePointer<GLKVector3>, Int)](glkquaternionrotatevector3array(_:_:_:).md)
+### Applying Quaternions to Vectors
+- [func GLKQuaternionRotateVector3Array(GLKQuaternion, UnsafeMutablePointer<GLKVector3>, Int)](./glkquaternionrotatevector3array%28_,_,_%29.md)
   Applies a quaternion rotation to an array of vectors.
-- [func GLKQuaternionRotateVector4(GLKQuaternion, GLKVector4) -> GLKVector4](glkquaternionrotatevector4(_:_:).md)
+- [func GLKQuaternionRotateVector4(GLKQuaternion, GLKVector4) -> GLKVector4](./glkquaternionrotatevector4%28_,_%29.md)
   Returns a new vector calculated by applying a quaternion rotation to a vector.
-- [func GLKQuaternionRotateVector4Array(GLKQuaternion, UnsafeMutablePointer<GLKVector4>, Int)](glkquaternionrotatevector4array(_:_:_:).md)
+- [func GLKQuaternionRotateVector4Array(GLKQuaternion, UnsafeMutablePointer<GLKVector4>, Int)](./glkquaternionrotatevector4array%28_,_,_%29.md)
   Applies a quaternion rotation to an array of vectors.
 
 

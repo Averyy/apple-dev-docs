@@ -1,7 +1,8 @@
 # NSItemProviderPreferredImageSizeKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key provided to the options dictionary to indicate a preferred image size.
 
@@ -20,9 +21,13 @@ A key provided to the options dictionary to indicate a preferred image size.
 let NSItemProviderPreferredImageSizeKey: String
 ```
 
+```c
+extern NSString * const NSItemProviderPreferredImageSizeKey;
+```
+
 #### Discussion
 
-Use this key only with the [`NSItemProvider`](nsitemprovider.md) type coercion policy. Ensure the value is an [`NSValue`](nsvalue.md) object that contains a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) struct specifying the requested size, in points.
+Use this key only with the [`NSItemProvider`](./nsitemprovider.md) type coercion policy. Ensure the value is an [`NSValue`](./nsvalue.md) object that contains a [`CGSize`](../CoreFoundation/cgsize.md) struct specifying the requested size, in points.
 
 
 ---

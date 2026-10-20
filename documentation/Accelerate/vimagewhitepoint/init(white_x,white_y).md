@@ -1,18 +1,19 @@
 # init(white_x:white_y:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that represents a white point according to the CIE 1931 color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ A new white point structure.
 
 ## See Also
 
-- [init()](vimagewhitepoint/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates an empty structure that represents a white point.
 
 

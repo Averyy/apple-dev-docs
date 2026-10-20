@@ -1,7 +1,8 @@
 # registerObject(_:visibility:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds representations of a specified object to an item provider, based on the object’s implementation of the item provider writing protocol, and adhering to a visibility specification.
 
@@ -20,17 +21,22 @@ Adds representations of a specified object to an item provider, based on the obj
 func registerObject(_ object: any NSItemProviderWriting, visibility: NSItemProviderRepresentationVisibility)
 ```
 
+```objc
+- (void) registerObject:(id<NSItemProviderWriting>) object visibility:(NSItemProviderRepresentationVisibility) visibility;
+```
+
 #### Discussion
 
 If a representation for a given UTI is already registered, it is preserved (specifically, duplicate representations are ignored).
 
 ## See Also
 
-- [func registerObject(ofClass: any NSItemProviderWriting.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: (((any NSItemProviderWriting)?, (any Error)?) -> Void) -> Progress?)](nsitemprovider/registerobject(ofclass:visibility:loadhandler:)-9sndn.md)
+### Registering objects
+- [func registerObject(ofClass: any NSItemProviderWriting.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: (((any NSItemProviderWriting)?, (any Error)?) -> Void) -> Progress?)](./registerobject%28ofclass,visibility,loadhandler%29-9sndn.md)
   Lazily adds representations of a specified object class to an item provider, based on the object’s implementation of the item provider writing protocol, and adhering to a visibility specification.
-- [func registerObject<T>(ofClass: T.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: ((T?, (any Error)?) -> Void) -> Progress?)](nsitemprovider/registerobject(ofclass:visibility:loadhandler:)-133rx.md)
+- [func registerObject<T>(ofClass: T.Type, visibility: NSItemProviderRepresentationVisibility, loadHandler: ((T?, (any Error)?) -> Void) -> Progress?)](./registerobject%28ofclass,visibility,loadhandler%29-133rx.md)
   Lazily adds representations of a specified object type to an item provider, based on the object’s implementation of the item provider writing protocol, and adhering to a visibility specification.
-- [func register<T>(@autoclosure () -> T)](nsitemprovider/register(_:).md)
+- [func register<T>(@autoclosure () -> T)](./register%28_%29.md)
   Adds representations of a specified transferable type to an item provider.
 
 

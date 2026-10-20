@@ -1,7 +1,8 @@
 # ScmRepository.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships of the Repositories resource you included in the request and those on which you can operate.
 
@@ -10,20 +11,20 @@ The relationships of the Repositories resource you included in the request and t
 
 ## Declaration
 
-```swift
+```
 object ScmRepository.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ScmRepository.Relationships.DefaultBranch](scmrepository/relationships-data.dictionary/defaultbranch-data.dictionary.md)
+- [object ScmRepository.Relationships.DefaultBranch](./relationships-data.dictionary/defaultbranch-data.dictionary.md)
   The data and links that describe the relationship between the Repositories resource and the Git References resource that represents the default branch.
-- [object ScmRepository.Relationships.ScmProvider](scmrepository/relationships-data.dictionary/scmprovider-data.dictionary.md)
+- [object ScmRepository.Relationships.ScmProvider](./relationships-data.dictionary/scmprovider-data.dictionary.md)
   The data and links that describe the relationship between the Repositories and the Source Code Management Provider resources.
 ### Dictionaries
-- [object ScmRepository.Relationships.GitReferences](scmrepository/relationships-data.dictionary/gitreferences-data.dictionary.md)
-- [object ScmRepository.Relationships.PullRequests](scmrepository/relationships-data.dictionary/pullrequests-data.dictionary.md)
+- [object ScmRepository.Relationships.GitReferences](./relationships-data.dictionary/gitreferences-data.dictionary.md)
+- [object ScmRepository.Relationships.PullRequests](./relationships-data.dictionary/pullrequests-data.dictionary.md)
 
 ## Properties
 
@@ -34,7 +35,8 @@ object ScmRepository.Relationships
 
 ## See Also
 
-- [object ScmRepository.Attributes](scmrepository/attributes-data.dictionary.md)
+### Objects
+- [object ScmRepository.Attributes](./attributes-data.dictionary.md)
   The attributes that describe a Repositories resource.
 
 

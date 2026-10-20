@@ -1,7 +1,8 @@
 # Create Ad Accounts
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a new ad account under a specified organization.
 
@@ -17,7 +18,7 @@ This endpoint creates a new ad account under a specified organization.
 - The `X-AP-Context` header isn’t required for this endpoint.
 - To enable App Store advertising, include a `CONTENT_PROVIDER` delegation with the CPID as `resourceId`.
 - To enable Maps advertising, include a `BUSINESS_BRAND` delegation with the Brand ID as `resourceId`.
-- See [`ProductFeatures`](productfeatures.md) for delegation requirements by App Store or Apple Maps.
+- See [`ProductFeatures`](./productfeatures.md) for delegation requirements by App Store or Apple Maps.
 
 #### Payload Examples
 
@@ -131,15 +132,32 @@ POST /v1/ad-accounts
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string)
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AdAccountCreate`
+
+## Responses
+
+- `200` OK (`AdAccountResponse`, `application/json`): Successful operation. Returns [`AdAccountResponse`](./adaccountresponse.md) (`result`: [`AdAccount`](./adaccount.md)).
+- `400` Bad Request (`ErrorResponse`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`ErrorResponse`, `application/json`): Unauthorized.
+- `403` Forbidden (`ErrorResponse`, `application/json`): Forbidden.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`ErrorResponse`, `application/json`): Rate Limit Exceeded. See [Applying Rate Limits](./rate-limits.md).
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Get Ad Account by ID](get-ad-accounts-_id_.md)
+- [Get Ad Account by ID](./get-ad-accounts-_id_.md)
   Retrieve the full details of a specific ad account by its ID.
-- [Update Ad Accounts](put-ad-accounts-_id_.md)
+- [Update Ad Accounts](./put-ad-accounts-_id_.md)
   Update an ad account’s name or delegations.
-- [Get Advertiser Resources](get-advertiser-resources.md)
+- [Get Advertiser Resources](./get-advertiser-resources.md)
   Retrieve the advertiser resources available to your organization, filtered by resource type.
 
 

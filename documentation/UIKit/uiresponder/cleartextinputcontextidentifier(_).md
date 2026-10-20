@@ -1,7 +1,8 @@
 # clearTextInputContextIdentifier(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Clears text input mode information from the app’s user defaults.
 
@@ -9,7 +10,7 @@ Clears text input mode information from the app’s user defaults.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ Clears text input mode information from the app’s user defaults.
 class func clearTextInputContextIdentifier(_ identifier: String)
 ```
 
+```objc
++ (void) clearTextInputContextIdentifier:(NSString *) identifier;
+```
+
 #### Discussion
 
 Calling this method removes any text input mode information associated with the specified identifier from the app’s user defaults. Removing this information causes the responder to use the default text input mode again.
 
 ## Parameters
 
-- `identifier`: An identifier assigned to the [`textInputContextIdentifier`](uiresponder/textinputcontextidentifier.md) property of one of your responders.
+- `identifier`: An identifier assigned to the [`textInputContextIdentifier`](./textinputcontextidentifier.md) property of one of your responders.
 
 ## See Also
 
-- [var textInputMode: UITextInputMode?](uiresponder/textinputmode.md)
+### Managing the text input mode
+- [var textInputMode: UITextInputMode?](./textinputmode.md)
   The text input mode for this responder object.
-- [var textInputContextIdentifier: String?](uiresponder/textinputcontextidentifier.md)
+- [var textInputContextIdentifier: String?](./textinputcontextidentifier.md)
   An identifier signifying that the responder should preserve its text input mode information.
-- [var inputAssistantItem: UITextInputAssistantItem](uiresponder/inputassistantitem.md)
+- [var inputAssistantItem: UITextInputAssistantItem](./inputassistantitem.md)
   The input assistant to use when configuring the keyboard’s shortcuts bar.
 
 

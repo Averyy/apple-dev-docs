@@ -1,7 +1,8 @@
 # AVMutableCaptionRegion
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable caption region subclass that you use to create new caption regions.
 
@@ -17,44 +18,49 @@ A mutable caption region subclass that you use to create new caption regions.
 class AVMutableCaptionRegion
 ```
 
+```objc
+@interface AVMutableCaptionRegion : AVCaptionRegion
+```
+
 ## Topics
 
 ### Creating a caption region
-- [init()](avmutablecaptionregion/init.md)
+- [init()](./avmutablecaptionregion/init%28%29.md)
   Creates a caption region.
-- [init(identifier: String)](avmutablecaptionregion/init(identifier:).md)
+- [init(identifier: String)](./avmutablecaptionregion/init%28identifier%29.md)
   Creates a caption region that has an identifier.
 ### Configuring the region
-- [var origin: AVCaptionPoint](avmutablecaptionregion/origin.md)
+- [var origin: AVCaptionPoint](./avmutablecaptionregion/origin.md)
   The region’s top-left position.
-- [var size: AVCaptionSize](avmutablecaptionregion/size.md)
+- [var size: AVCaptionSize](./avmutablecaptionregion/size.md)
   The height and width of the region.
-- [var displayAlignment: AVCaptionRegion.DisplayAlignment](avmutablecaptionregion/displayalignment.md)
+- [var displayAlignment: AVCaptionRegion.DisplayAlignment](./avmutablecaptionregion/displayalignment.md)
   The alignment of lines for the region.
-- [var scroll: AVCaptionRegion.Scroll](avmutablecaptionregion/scroll.md)
+- [var scroll: AVCaptionRegion.Scroll](./avmutablecaptionregion/scroll.md)
   The scroll mode of the region.
-- [var writingMode: AVCaptionRegion.WritingMode](avmutablecaptionregion/writingmode.md)
+- [var writingMode: AVCaptionRegion.WritingMode](./avmutablecaptionregion/writingmode.md)
   The block and inline progression direction of the region.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptionRegion](avcaptionregion.md)
+- [AVCaptionRegion](./avcaptionregion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class AVCaptionRegion](avcaptionregion.md)
+### Regions
+- [class AVCaptionRegion](./avcaptionregion.md)
   An object that represents the region in which the system presents a caption.
 
 

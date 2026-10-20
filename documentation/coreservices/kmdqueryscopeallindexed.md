@@ -1,7 +1,8 @@
 # kMDQueryScopeAllIndexed
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the search should be restricted to indexed, locally mounted volumes and indexed user mounted remote volumes, plus the user's home directory.
 
@@ -12,6 +13,10 @@ Specifies that the search should be restricted to indexed, locally mounted volum
 
 ```swift
 let kMDQueryScopeAllIndexed: CFString!
+```
+
+```c
+const CFStringRef kMDQueryScopeAllIndexed;
 ```
 
 

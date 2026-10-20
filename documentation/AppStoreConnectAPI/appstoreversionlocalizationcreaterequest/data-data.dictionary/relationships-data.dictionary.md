@@ -1,7 +1,8 @@
 # AppStoreVersionLocalizationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,17 +11,17 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalizationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersion](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 ### Dictionaries
-- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary.md)
+- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements](./relationships-data.dictionary/placements-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object AppStoreVersionLocalizationCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppStoreVersionLocalizationCreateRequest.Data.Attributes](appstoreversionlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionLocalizationCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

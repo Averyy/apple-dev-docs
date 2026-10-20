@@ -1,31 +1,32 @@
 # updateAllReports
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Calls `updateReport()` on multiple IOReporter objects.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOReturn updateAllReports(OSCollection *reporters, OSData *channels, IOReportConfigureAction action, uint32_t *outElementCount, uint64_t offset, uint64_t capacity, IOMemoryDescriptor *buffer);
 ```
 
 #### Return Value
 
-`kIOReturnSuccess` if all objects successfully complete [`updateReport`](ioreporter/updatereport.md).
+`kIOReturnSuccess` if all objects successfully complete [`updateReport`](./updatereport.md).
 
 #### Discussion
 
-The OSSet must only contain [`IOReporter`](ioreporter.md) instances.  The presence of non-`IOReporter` instances will cause this function to return [`kIOReturnBadArgument`](kioreturnbadargument.md).  If any reporter returns an error, the function will immediately return that error.
+The OSSet must only contain [`IOReporter`](../ioreporter.md) instances.  The presence of non-`IOReporter` instances will cause this function to return [`kIOReturnBadArgument`](../kioreturnbadargument.md).  If any reporter returns an error, the function will immediately return that error.
 
-Per the [`configureReport`](ioreporter/configurereport.md) documentation, each reporter will search channelList for channels it is reporting and provide a partial response.
+Per the [`configureReport`](./configurereport.md) documentation, each reporter will search channelList for channels it is reporting and provide a partial response.
 
 ## Parameters
 
@@ -39,7 +40,8 @@ Per the [`configureReport`](ioreporter/configurereport.md) documentation, each r
 
 ## See Also
 
-- [configureAllReports](ioreporter/configureallreports.md)
+### Type Methods
+- [configureAllReports](./configureallreports.md)
   Calls `configureReport()` on multiple `IOReporter` objects
 
 

@@ -1,7 +1,8 @@
 # FSItem.Attribute
 
 **Framework**: FSKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that indicates a set of item attributes to get or set.
 
@@ -14,6 +15,10 @@ A value that indicates a set of item attributes to get or set.
 struct Attribute
 ```
 
+```c
+enum FSItemAttribute : NSInteger;
+```
+
 #### Overview
 
 This type is an option set in Swift. In Objective-C, you use the cases of this enumeration to create a bit field.
@@ -21,64 +26,65 @@ This type is an option set in Swift. In Objective-C, you use the cases of this e
 ## Topics
 
 ### Working with identifier attributes
-- [static var fileID: FSItem.Attribute](fsitem/attribute/fileid.md)
+- [static var fileID: FSItem.Attribute](./attribute/fileid.md)
   The file ID attribute.
-- [static var parentID: FSItem.Attribute](fsitem/attribute/parentid.md)
+- [static var parentID: FSItem.Attribute](./attribute/parentid.md)
   The parent ID attribute.
 ### Working with metadata attributes
-- [static var type: FSItem.Attribute](fsitem/attribute/type.md)
+- [static var type: FSItem.Attribute](./attribute/type.md)
   The type attribute.
-- [static var mode: FSItem.Attribute](fsitem/attribute/mode.md)
+- [static var mode: FSItem.Attribute](./attribute/mode.md)
   The mode attribute.
-- [static var linkCount: FSItem.Attribute](fsitem/attribute/linkcount.md)
+- [static var linkCount: FSItem.Attribute](./attribute/linkcount.md)
   The link count attribute.
-- [static var uid: FSItem.Attribute](fsitem/attribute/uid.md)
+- [static var uid: FSItem.Attribute](./attribute/uid.md)
   The user ID (uid) attribute.
-- [static var gid: FSItem.Attribute](fsitem/attribute/gid.md)
+- [static var gid: FSItem.Attribute](./attribute/gid.md)
   The group ID (gid) attribute.
-- [static var flags: FSItem.Attribute](fsitem/attribute/flags.md)
+- [static var flags: FSItem.Attribute](./attribute/flags.md)
   The flags attribute.
-- [static var size: FSItem.Attribute](fsitem/attribute/size.md)
+- [static var size: FSItem.Attribute](./attribute/size.md)
   The size attribute.
-- [static var allocSize: FSItem.Attribute](fsitem/attribute/allocsize.md)
+- [static var allocSize: FSItem.Attribute](./attribute/allocsize.md)
   The allocated size attribute.
-- [static var supportsLimitedXAttrs: FSItem.Attribute](fsitem/attribute/supportslimitedxattrs.md)
+- [static var supportsLimitedXAttrs: FSItem.Attribute](./attribute/supportslimitedxattrs.md)
   The supports limited extended attributes attribute.
-- [static var inhibitKernelOffloadedIO: FSItem.Attribute](fsitem/attribute/inhibitkerneloffloadedio.md)
+- [static var inhibitKernelOffloadedIO: FSItem.Attribute](./attribute/inhibitkerneloffloadedio.md)
   The inhibit kernel offloaded I/O attribute.
 ### Working with time attributes
-- [static var accessTime: FSItem.Attribute](fsitem/attribute/accesstime.md)
+- [static var accessTime: FSItem.Attribute](./attribute/accesstime.md)
   The last-accessed time attribute.
-- [static var modifyTime: FSItem.Attribute](fsitem/attribute/modifytime.md)
+- [static var modifyTime: FSItem.Attribute](./attribute/modifytime.md)
   The last-modified time attribute.
-- [static var changeTime: FSItem.Attribute](fsitem/attribute/changetime.md)
+- [static var changeTime: FSItem.Attribute](./attribute/changetime.md)
   The last-changed time attribute.
-- [static var birthTime: FSItem.Attribute](fsitem/attribute/birthtime.md)
+- [static var birthTime: FSItem.Attribute](./attribute/birthtime.md)
   The creation time attribute.
-- [static var backupTime: FSItem.Attribute](fsitem/attribute/backuptime.md)
+- [static var backupTime: FSItem.Attribute](./attribute/backuptime.md)
   The backup time attribute.
-- [static var addedTime: FSItem.Attribute](fsitem/attribute/addedtime.md)
+- [static var addedTime: FSItem.Attribute](./attribute/addedtime.md)
   The time added attribute.
 ### Working with raw values
-- [init(rawValue: Int)](fsitem/attribute/init(rawvalue:).md)
+- [init(rawValue: Int)](./attribute/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var wantedAttributes: FSItem.Attribute](fsitem/getattributesrequest/wantedattributes.md)
+### Inspecting requested attributes
+- [var wantedAttributes: FSItem.Attribute](./getattributesrequest/wantedattributes.md)
   The attributes requested by the request.
-- [func isAttributeWanted(FSItem.Attribute) -> Bool](fsitem/getattributesrequest/isattributewanted(_:).md)
+- [func isAttributeWanted(FSItem.Attribute) -> Bool](./getattributesrequest/isattributewanted%28_%29.md)
   A method that indicates whether the request wants given attribute.
 
 

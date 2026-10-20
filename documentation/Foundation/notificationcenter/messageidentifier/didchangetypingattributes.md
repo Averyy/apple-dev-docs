@@ -1,7 +1,8 @@
 # didChangeTypingAttributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeTypingAttributes: NotificationCenter.BaseMessageIdentifier<NSTextView.DidChangeTypingAttributesMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSTextView.DidChangeTypingAttributesMessage>`.
 
 
 ---

@@ -1,7 +1,8 @@
 # argmax()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the element with the highest value, ignoring missing elements.
 
@@ -20,17 +21,20 @@ Returns the index of the element with the highest value, ignoring missing elemen
 func argmax() -> Int?
 ```
 
+Available when `WrappedElement` conforms to `Comparable`.
+
 ## See Also
 
-- [var name: String](discontiguouscolumnslice/name.md)
+### Inspecting a Column Slice
+- [var name: String](./name.md)
   The name of the slice’s parent column.
-- [var count: Int](discontiguouscolumnslice/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column slice.
-- [var wrappedElementType: any Any.Type](discontiguouscolumnslice/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
-- [func argmin() -> Int?](discontiguouscolumnslice/argmin.md)
+- [func argmin() -> Int?](./argmin%28%29.md)
   Returns the index of the element with the lowest value, ignoring missing elements.
-- [func isNil(at: Int) -> Bool](discontiguouscolumnslice/isnil(at:).md)
+- [func isNil(at: Int) -> Bool](./isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at the index is missing.
 
 

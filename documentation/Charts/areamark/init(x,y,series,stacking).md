@@ -1,7 +1,8 @@
 # init(x:y:series:stacking:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an area mark and associates it with the specified series.
 
@@ -23,18 +24,19 @@ init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue
 
 #### Discussion
 
-The initializer behaves like [`init(x:y:stacking:)`](areamark/init(x:y:stacking:).md), except that you can indicate which region each data point belongs to by providing a value for the `series` input. This enables you to plot more than one region on a single chart.
+The initializer behaves like [`init(x:y:stacking:)`](./init%28x,y,stacking%29.md), except that you can indicate which region each data point belongs to by providing a value for the `series` input. This enables you to plot more than one region on a single chart.
 
 ## Parameters
 
 - `x`: The horizontal position for the mark.
 - `y`: The vertical position for the mark.
 - `series`: A series to associate the mark with.
-- `stacking`: The way in which the chart stacks area regions. The default is [`standard`](markstackingmethod/standard.md).
+- `stacking`: The way in which the chart stacks area regions. The default is [`standard`](../markstackingmethod/standard.md).
 
 ## See Also
 
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, stacking: MarkStackingMethod)](areamark/init(x:y:stacking:).md)
+### Creating an area mark
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, stacking: MarkStackingMethod)](./init%28x,y,stacking%29.md)
   Creates an area mark using the specified horizontal and vertical positions.
 
 

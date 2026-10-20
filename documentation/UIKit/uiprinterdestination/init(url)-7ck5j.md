@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a printer destination with the specified address.
 
@@ -15,6 +16,10 @@ Creates a printer destination with the specified address.
 
 ```swift
 init(url: URL)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
 ```
 
 #### Return Value

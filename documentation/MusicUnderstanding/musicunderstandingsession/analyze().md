@@ -1,7 +1,8 @@
 # analyze()
 
 **Framework**: Music Understanding  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs all available analyses on the session’s audio source.
 
@@ -27,7 +28,7 @@ The aggregated session result containing all analyses.
 
 #### Discussion
 
-> **Note**:  If analysis is already running on this session.
+> **Throws**:  If analysis is already running on this session.
 
 > **Note**:  This method can only be called once per session instance. Create a new session to run additional analyses.
 
@@ -40,7 +41,8 @@ let result = try await session.analyze()
 
 ## See Also
 
-- [func analyze(for: Set<AnalysisType>) async throws -> MusicUnderstandingSession.SessionResult](musicunderstandingsession/analyze(for:).md)
+### Performing an analysis
+- [func analyze(for: Set<AnalysisType>) async throws -> MusicUnderstandingSession.SessionResult](./analyze%28for%29.md)
   Performs the specified analyses on the session’s audio source.
 
 

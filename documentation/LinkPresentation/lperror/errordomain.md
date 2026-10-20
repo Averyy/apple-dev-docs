@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain for the error.
 
@@ -22,7 +23,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let LPErrorDomain: String](lperrordomain.md)
+### Error domain
+- [let LPErrorDomain: String](../lperrordomain.md)
   The domain for Link Presentation errors.
 
 

@@ -1,7 +1,8 @@
 # device
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device object the view uses to create its Metal objects.
 
@@ -19,13 +20,18 @@ The device object the view uses to create its Metal objects.
 var device: (any MTLDevice)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLDevice> device;
+```
+
 #### Discussion
 
 The default value is `nil`. You must explicitly set the device object.
 
 ## See Also
 
-- [var preferredDevice: (any MTLDevice)?](mtkview/preferreddevice.md)
+### Configuring the Metal Device
+- [var preferredDevice: (any MTLDevice)?](./preferreddevice.md)
   The device object that the system recommends using for this view.
 
 

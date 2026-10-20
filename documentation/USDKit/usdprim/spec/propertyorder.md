@@ -1,7 +1,8 @@
 # propertyOrder
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored override for property ordering, or `nil` if no order is authored.
 

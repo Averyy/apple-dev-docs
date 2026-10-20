@@ -1,7 +1,8 @@
 # initialize(repeating:count:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes this pointer’s memory with the specified number of consecutive copies of the given value.
 

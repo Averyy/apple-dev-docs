@@ -1,7 +1,8 @@
 # kMDItemAperture
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The aperture setting used to acquire the document contents. This unit is the APEX value. A CFNumber.
 
@@ -12,6 +13,10 @@ The aperture setting used to acquire the document contents. This unit is the APE
 
 ```swift
 let kMDItemAperture: CFString!
+```
+
+```c
+const CFStringRef kMDItemAperture;
 ```
 
 

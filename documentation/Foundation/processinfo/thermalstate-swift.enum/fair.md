@@ -1,7 +1,8 @@
 # ProcessInfo.ThermalState.fair
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The thermal state is slightly elevated.
 
@@ -20,6 +21,10 @@ The thermal state is slightly elevated.
 case fair
 ```
 
+```c
+NSProcessInfoThermalStateFair
+```
+
 #### Discussion
 
 The system takes steps to reduce thermal state, like running fans and stopping background services that aren’t doing work immediately needed by the user.
@@ -28,11 +33,12 @@ Reduce or defer background work, like prefetching content over the network or up
 
 ## See Also
 
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
+### Constants
+- [ProcessInfo.ThermalState.nominal](./nominal.md)
   The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
+- [ProcessInfo.ThermalState.serious](./serious.md)
   The thermal state is high.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
+- [ProcessInfo.ThermalState.critical](./critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
 

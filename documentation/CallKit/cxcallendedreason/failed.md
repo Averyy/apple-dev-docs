@@ -1,7 +1,8 @@
 # CXCallEndedReason.failed
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred while attempting to service the call.
 
@@ -18,15 +19,20 @@ An error occurred while attempting to service the call.
 case failed
 ```
 
+```c
+CXCallEndedReasonFailed
+```
+
 ## See Also
 
-- [CXCallEndedReason.remoteEnded](cxcallendedreason/remoteended.md)
+### Constants
+- [CXCallEndedReason.remoteEnded](./remoteended.md)
   The remote party explicitly ended the call.
-- [CXCallEndedReason.unanswered](cxcallendedreason/unanswered.md)
+- [CXCallEndedReason.unanswered](./unanswered.md)
   The call never started connecting and was never explicitly ended, such as when an outgoing or incoming call times out.
-- [CXCallEndedReason.answeredElsewhere](cxcallendedreason/answeredelsewhere.md)
+- [CXCallEndedReason.answeredElsewhere](./answeredelsewhere.md)
   Another device answered the call.
-- [CXCallEndedReason.declinedElsewhere](cxcallendedreason/declinedelsewhere.md)
+- [CXCallEndedReason.declinedElsewhere](./declinedelsewhere.md)
   Another device declined the call.
 
 

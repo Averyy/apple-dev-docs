@@ -1,7 +1,8 @@
 # motionVectorSize
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +20,10 @@ final var motionVectorSize: VTMotionEstimationSession.BlockSize { get throws }
 
 ## See Also
 
-- [var label: String?](vtmotionestimationsession/label.md)
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionestimationsession/sourcepixelbufferattributes.md)
-- [var useMultiPassSearch: Bool](vtmotionestimationsession/usemultipasssearch.md)
+### Inspecting the session
+- [var label: String?](./label.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
+- [var useMultiPassSearch: Bool](./usemultipasssearch.md)
 
 
 ---

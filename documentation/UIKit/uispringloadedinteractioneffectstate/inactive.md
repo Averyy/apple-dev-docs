@@ -1,7 +1,8 @@
 # UISpringLoadedInteractionEffectState.inactive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interaction state that indicates that spring loading is not engaged.
 
@@ -17,17 +18,22 @@ An interaction state that indicates that spring loading is not engaged.
 case inactive
 ```
 
+```c
+UISpringLoadedInteractionEffectStateInactive
+```
+
 #### Discussion
 
 This state has no effect on the styling of the interaction view. It remains in its original style.
 
 ## See Also
 
-- [UISpringLoadedInteractionEffectState.activated](uispringloadedinteractioneffectstate/activated.md)
+### States
+- [UISpringLoadedInteractionEffectState.activated](./activated.md)
   An interaction state that indicates that the view was spring loaded.
-- [UISpringLoadedInteractionEffectState.activating](uispringloadedinteractioneffectstate/activating.md)
+- [UISpringLoadedInteractionEffectState.activating](./activating.md)
   An interaction state that indicates that spring loading is about to start.
-- [UISpringLoadedInteractionEffectState.possible](uispringloadedinteractioneffectstate/possible.md)
+- [UISpringLoadedInteractionEffectState.possible](./possible.md)
   An interaction state that indicates that spring loading is available.
 
 

@@ -1,7 +1,8 @@
 # CompleteAsyncIOBundled
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the completion of an asynchronous bundled transfer.
 
@@ -10,19 +11,19 @@ Handles the completion of an asynchronous bundled transfer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteAsyncIOBundled(OSAction *action, uint32_t ioCompletionIndex, uint32_t ioCompletionCount, const uint32_t actualByteCountArray[16], int actualByteCountArrayCount, const kern_return_t statusArray[16], int statusArrayCount);
 ```
 
 #### Discussion
 
-Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 
-When a call to [`AsyncIOBundled`](iousbhostpipe/asynciobundled.md) finishes, the system calls your completion method to report the number of successful transfers. The `ioCompletionCount` parameter contains the number of successful transfers, starting at position `ioCompletionIndex` in the pipe’s memory descriptor ring.  The completion count is at least 1, and no more than the value of [`kIOUSBHostPipeBundlingMax`](kiousbhostpipebundlingmax.md). The `actualByteCountArray` and `statusArray` parameters contain the length of each buffer and the status of each request.
+When a call to [`AsyncIOBundled`](./asynciobundled.md) finishes, the system calls your completion method to report the number of successful transfers. The `ioCompletionCount` parameter contains the number of successful transfers, starting at position `ioCompletionIndex` in the pipe’s memory descriptor ring.  The completion count is at least 1, and no more than the value of [`kIOUSBHostPipeBundlingMax`](../kiousbhostpipebundlingmax.md). The `actualByteCountArray` and `statusArray` parameters contain the length of each buffer and the status of each request.
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the request.
+- `action`: A pointer to the [`OSAction`](../../DriverKit/osaction.md) object of the request.
 - `ioCompletionIndex`: The index of the first ring element that the system transferred.
 - `ioCompletionCount`: The number of successfully transferred elements.
 - `actualByteCountArray`: An array of integers, each of which contains the amount of data that the method transferred for an element. The first integer in the array contains the length of the buffer for the element at the index `ioCompletionIndex`. The next integer contains the length of the buffer for the next element in the ring, and so on.
@@ -32,11 +33,12 @@ When a call to [`AsyncIOBundled`](iousbhostpipe/asynciobundled.md) finishes, the
 
 ## See Also
 
-- [CreateMemoryDescriptorRing](iousbhostpipe/creatememorydescriptorring.md)
-- [SetMemoryDescriptor](iousbhostpipe/setmemorydescriptor.md)
-- [AsyncIOBundled](iousbhostpipe/asynciobundled.md)
+### Interacting with Descriptor Rings
+- [CreateMemoryDescriptorRing](./creatememorydescriptorring.md)
+- [SetMemoryDescriptor](./setmemorydescriptor.md)
+- [AsyncIOBundled](./asynciobundled.md)
   Enqueues a contiguous group of requests from the descriptor ring.
-- [Bundling Constants](bundling_constants-enum.md)
+- [Bundling Constants](../bundling_constants-enum.md)
   Constants associated with bulk I/O transfers.
 
 

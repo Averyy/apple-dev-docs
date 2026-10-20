@@ -1,7 +1,8 @@
 # init(source:transformProvider:outputSize:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(source sourceNode: MPSNNImageNode, transformProvider: (any MPSImageTransformProvider)?, outputSize size: MTLSize)
+```
+
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) sourceNode transformProvider:(id<MPSImageTransformProvider>) transformProvider outputSize:(MTLSize) size;
 ```
 
 

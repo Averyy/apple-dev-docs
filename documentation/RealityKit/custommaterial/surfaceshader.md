@@ -1,7 +1,8 @@
 # CustomMaterial.SurfaceShader
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The custom material’s surface shader function.
 
@@ -20,9 +21,9 @@ struct SurfaceShader
 
 #### Overview
 
-Custom materials work together with a surface shader function to render entities. The [`CustomMaterial`](custommaterial.md) properties related to rendering, such as [`baseColor`](custommaterial/basecolor-swift.property.md) and [`normal`](custommaterial/normal-swift.property.md), are available in the surface shader function, but RealityKit doesn’t use them directly.
+Custom materials work together with a surface shader function to render entities. The [`CustomMaterial`](../custommaterial.md) properties related to rendering, such as [`baseColor`](./basecolor-swift.property.md) and [`normal`](./normal-swift.property.md), are available in the surface shader function, but RealityKit doesn’t use them directly.
 
-Instead, the material’s surface shader function allows you to calculate or specify all the material parameters that RealityKit uses to render your entity, such as [`baseColor`](custommaterial/basecolor-swift.property.md), [`normal`](custommaterial/normal-swift.property.md), and [`roughness`](custommaterial/roughness-swift.property.md). RealityKit’s fragment shader calls your surface shader function once for each pixel it renders.
+Instead, the material’s surface shader function allows you to calculate or specify all the material parameters that RealityKit uses to render your entity, such as [`baseColor`](./basecolor-swift.property.md), [`normal`](./normal-swift.property.md), and [`roughness`](./roughness-swift.property.md). RealityKit’s fragment shader calls your surface shader function once for each pixel it renders.
 
 Here’s a simple example of a surface shader that sets the entity’s base color:
 
@@ -41,56 +42,57 @@ using namespace metal;
 }
 ```
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## Topics
 
 ### Creating surface shader objects
-- [init(named: String, in: any MTLLibrary)](custommaterial/surfaceshader/init(named:in:).md)
+- [init(named: String, in: any MTLLibrary)](./surfaceshader/init%28named,in%29.md)
   Creates a surface shader object from a named function in a Metal library.
 ### Accessing surface shader properties
-- [var name: String](custommaterial/surfaceshader/name.md)
+- [var name: String](./surfaceshader/name.md)
   The name of the surface shader function.
-- [var library: any MTLLibrary](custommaterial/surfaceshader/library.md)
+- [var library: any MTLLibrary](./surfaceshader/library.md)
   The Metal library that contains this surface shader function.
 ### Initializers
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](custommaterial/surfaceshader/init(named:in:constantvalues:).md)
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](./surfaceshader/init%28named,in,constantvalues%29.md)
   Creates a surface shader with the specified function constant values.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MaterialFunction](materialfunction.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [MaterialFunction](../materialfunction.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
+### Shaders
+- [Implementing adjustable material](../../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [struct ShaderGraphMaterial](shadergraphmaterial.md)
+- [struct ShaderGraphMaterial](../shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
-- [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
+- [ShaderGraphMaterial.FaceCulling](../shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
+- [ShaderGraphMaterial.TriangleFillMode](../shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [Modifying RealityKit rendering using custom materials](modifying-realitykit-rendering-using-custom-materials.md)
+- [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
   Write Metal shader functions to implement custom rendering effects.
-- [struct CustomMaterial](custommaterial.md)
+- [struct CustomMaterial](../custommaterial.md)
   A material that works with custom Metal shader functions.
-- [CustomMaterial.GeometryModifier](custommaterial/geometrymodifier.md)
+- [CustomMaterial.GeometryModifier](./geometrymodifier.md)
   The custom material’s optional shader function that can manipulate an entity’s vertex data.
-- [protocol MaterialFunction](materialfunction.md)
+- [protocol MaterialFunction](../materialfunction.md)
   The abstract superclass for objects representing compute functions for RealityKit custom materials .
-- [CustomMaterial.Program](custommaterial/program-swift.class.md)
+- [CustomMaterial.Program](./program-swift.class.md)
   An object that represents the backing shader compilation required for custom materials.
-- [CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.struct.md)
+- [CustomMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
-- [enum CustomShaderStage](customshaderstage.md)
+- [enum CustomShaderStage](../customshaderstage.md)
 
 
 ---

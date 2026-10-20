@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Creates a new instance of a class using the given data and UTI string.
@@ -19,6 +20,10 @@ Creates a new instance of a class using the given data and UTI string.
 
 ```swift
 static func object(withItemProviderData data: Data, typeIdentifier: String) throws -> Self
+```
+
+```objc
++ (instancetype) objectWithItemProviderData:(NSData *) data typeIdentifier:(NSString *) typeIdentifier error:(NSError **) outError;
 ```
 
 #### Return Value

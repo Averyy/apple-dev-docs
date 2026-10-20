@@ -1,7 +1,8 @@
 # IntentValuePropertiesCallable
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A callable wrapper that creates app intent instances from keyword arguments.
 
@@ -23,27 +24,28 @@ struct IntentValuePropertiesCallable<T>
 
 #### Overview
 
-The `IntentValuePropertiesCallable` wrapper uses the `@dynamicCallable` attribute to provide a natural function-call syntax for setting properties on type-erased app intents instances. Don’t create instances of this type directly. Instead, use [`makeIntent`](appintentdefinition/makeintent.md) or [`makeEntity`](transientappentitydefinition/makeentity.md).
+The `IntentValuePropertiesCallable` wrapper uses the `@dynamicCallable` attribute to provide a natural function-call syntax for setting properties on type-erased app intents instances. Don’t create instances of this type directly. Instead, use [`makeIntent`](./appintentdefinition/makeintent.md) or [`makeEntity`](./transientappentitydefinition/makeentity.md).
 
 ## Topics
 
 ### Instance Methods
-- [func dynamicallyCall(withKeywordArguments: KeyValuePairs<String, (any IntentValueExpressing)?>) -> T](intentvaluepropertiescallable/dynamicallycall(withkeywordarguments:).md)
+- [func dynamicallyCall(withKeywordArguments: KeyValuePairs<String, (any IntentValueExpressing)?>) -> T](./intentvaluepropertiescallable/dynamicallycall%28withkeywordarguments%29.md)
   Returns an instance of `T` by applying the provided argument values to the properties.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AppIntentTypeDefinition](appintenttypedefinition.md)
+### Supporting types
+- [protocol AppIntentTypeDefinition](./appintenttypedefinition.md)
   A protocol that associates a definition type with its corresponding instance type.
-- [struct DynamicPropertyPath](dynamicpropertypath.md)
+- [struct DynamicPropertyPath](./dynamicpropertypath.md)
   A type-safe, dynamic path to access nested intent values.
-- [struct DynamicPropertyPathCollection](dynamicpropertypathcollection.md)
+- [struct DynamicPropertyPathCollection](./dynamicpropertypathcollection.md)
   Indexed result items from an intent value query.
 
 

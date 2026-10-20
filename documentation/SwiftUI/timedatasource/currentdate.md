@@ -1,7 +1,8 @@
 # currentDate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A time data source that produces `Date.now`.
 

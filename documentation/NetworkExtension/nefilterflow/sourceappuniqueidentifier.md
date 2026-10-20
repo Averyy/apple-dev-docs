@@ -1,7 +1,8 @@
 # sourceAppUniqueIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A byte string that uniquely identifies the binary for each build of the app that is the source of the flow.
 
@@ -17,15 +18,20 @@ A byte string that uniquely identifies the binary for each build of the app that
 var sourceAppUniqueIdentifier: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * sourceAppUniqueIdentifier;
+```
+
 ## See Also
 
-- [var sourceAppIdentifier: String?](nefilterflow/sourceappidentifier.md)
+### Source app identification
+- [var sourceAppIdentifier: String?](./sourceappidentifier.md)
   A string containing the identifier of the source app of the flow.
-- [var sourceAppVersion: String?](nefilterflow/sourceappversion.md)
+- [var sourceAppVersion: String?](./sourceappversion.md)
   The short version string of the app that is the source of the flow.
-- [var sourceAppAuditToken: Data?](nefilterflow/sourceappaudittoken.md)
+- [var sourceAppAuditToken: Data?](./sourceappaudittoken.md)
   The audit token of the source application of the flow.
-- [var sourceProcessAuditToken: Data?](nefilterflow/sourceprocessaudittoken.md)
+- [var sourceProcessAuditToken: Data?](./sourceprocessaudittoken.md)
   The audit token of the process that created the flow.
 
 

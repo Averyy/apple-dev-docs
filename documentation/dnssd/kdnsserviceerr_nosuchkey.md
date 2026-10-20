@@ -1,7 +1,8 @@
 # kDNSServiceErr_NoSuchKey
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceErr_NoSuchKey: Int { get }
+```
+
+```c
+kDNSServiceErr_NoSuchKey
 ```
 
 #### Discussion

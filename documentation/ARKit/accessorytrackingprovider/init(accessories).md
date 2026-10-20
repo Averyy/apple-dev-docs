@@ -1,7 +1,8 @@
 # init(accessories:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an accessory tracking provider.
 

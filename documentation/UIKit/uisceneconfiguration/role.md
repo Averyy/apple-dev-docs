@@ -1,7 +1,8 @@
 # role
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The role assigned to the scene configuration.
 
@@ -18,15 +19,20 @@ The role assigned to the scene configuration.
 var role: UISceneSession.Role { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UISceneSessionRole role;
+```
+
 #### Discussion
 
 UIKit populates this property with an appropriate role value based on the contents of your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
 
 ## See Also
 
-- [var name: String?](uisceneconfiguration/name.md)
+### Getting the configuration attributes
+- [var name: String?](./name.md)
   The app-specific name assigned to the scene configuration.
-- [UISceneSession.Role](uiscenesession/role-swift.struct.md)
+- [UISceneSession.Role](../uiscenesession/role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
 
 

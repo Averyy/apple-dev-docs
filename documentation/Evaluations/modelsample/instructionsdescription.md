@@ -1,7 +1,8 @@
 # instructionsDescription
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the instructions, synthesized from their segments.
 
@@ -20,15 +21,18 @@ A text representation of the instructions, synthesized from their segments.
 var instructionsDescription: String? { get }
 ```
 
+Available when `ExpectedValue` conforms to `Decodable`, `Encodable`, and `Sendable`.
+
 ## See Also
 
-- [var prompt: Prompt](modelsample/prompt.md)
+### Specifying the query
+- [var prompt: Prompt](./prompt.md)
   The user’s prompt for this sample.
-- [var promptDescription: String](modelsample/promptdescription.md)
+- [var promptDescription: String](./promptdescription.md)
   A text representation of the prompt, synthesized from its segments.
-- [var instructions: Instructions?](modelsample/instructions.md)
+- [var instructions: Instructions?](./instructions.md)
   Optional instructions providing context to the model for this sample.
-- [var input: ModelSampleInput](modelsample/input.md)
+- [var input: ModelSampleInput](./input.md)
   The bundled language model input (prompt, instructions, schema).
 
 

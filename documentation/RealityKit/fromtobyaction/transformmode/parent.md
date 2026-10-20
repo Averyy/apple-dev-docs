@@ -1,7 +1,8 @@
 # FromToByAction.TransformMode.parent
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided transforms are relative to the bound entities parent transform.
 

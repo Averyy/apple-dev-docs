@@ -7,16 +7,17 @@ Creates a local AVC Unit directory if it doesn't already exist
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn publishAVCUnitDirectory(
  void);
 ```
 
 ## See Also
 
-- [getAVCTargetSpace](iofirewireavctargetspace/1813826-getavctargetspace.md)
+### Miscellaneous
+- [getAVCTargetSpace](./api-1813826-getavctargetspace.md)
   returns the IOFireWireAVCTargetSpace object for the given FireWire bus
-- [init](iofirewireavctargetspace/1813830-init.md)
+- [init](./api-1813830-init.md)
   initializes the IOFireWireAVCTargetSpace object
 
 

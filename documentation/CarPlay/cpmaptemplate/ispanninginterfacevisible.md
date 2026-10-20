@@ -1,7 +1,8 @@
 # isPanningInterfaceVisible
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map template is displaying the panning interface.
 
@@ -16,11 +17,16 @@ A Boolean value that indicates whether the map template is displaying the pannin
 var isPanningInterfaceVisible: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPanningInterfaceVisible) BOOL panningInterfaceVisible;
+```
+
 ## See Also
 
-- [func showPanningInterface(animated: Bool)](cpmaptemplate/showpanninginterface(animated:).md)
+### Panning the Map
+- [func showPanningInterface(animated: Bool)](./showpanninginterface%28animated%29.md)
   Shows the panning interface on the map.
-- [func dismissPanningInterface(animated: Bool)](cpmaptemplate/dismisspanninginterface(animated:).md)
+- [func dismissPanningInterface(animated: Bool)](./dismisspanninginterface%28animated%29.md)
   Dismisses the panning interface.
 
 

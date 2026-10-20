@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval that represents when the last frame displayed.
 
@@ -19,27 +20,32 @@ The time interval that represents when the last frame displayed.
 var timestamp: CFTimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CFTimeInterval timestamp;
+```
+
 ## Mentions
 
-- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
 #### Discussion
 
-If you need to calculate what to display next, use [`targetTimestamp`](cadisplaylink/targettimestamp.md) instead.
+If you need to calculate what to display next, use [`targetTimestamp`](./targettimestamp.md) instead.
 
 ## See Also
 
-- [var duration: CFTimeInterval](cadisplaylink/duration.md)
+### Configuring a Display Link
+- [var duration: CFTimeInterval](./duration.md)
   The time interval between screen refresh updates.
-- [var preferredFrameRateRange: CAFrameRateRange](cadisplaylink/preferredframeraterange.md)
+- [var preferredFrameRateRange: CAFrameRateRange](./preferredframeraterange.md)
   A range of frequencies your app allows for frame updates, affecting how often the system invokes your delegate’s callback.
-- [var preferredFramesPerSecond: Int](cadisplaylink/preferredframespersecond.md)
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   A frequency your app prefers for frame updates, affecting how often the system invokes your delegate’s callback.
-- [var isPaused: Bool](cadisplaylink/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the system suspends the display link’s notifications to the target.
-- [var targetTimestamp: CFTimeInterval](cadisplaylink/targettimestamp.md)
+- [var targetTimestamp: CFTimeInterval](./targettimestamp.md)
   The time interval that represents when the next frame displays.
-- [var frameInterval: Int](cadisplaylink/frameinterval.md)
+- [var frameInterval: Int](./frameinterval.md)
   The number of frames that must pass before the display link notifies the target again.
 
 

@@ -1,7 +1,8 @@
 # attribution
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that initiates the network request.
 
@@ -20,15 +21,20 @@ The entity that initiates the network request.
 var attribution: NSURLRequest.Attribution { get set }
 ```
 
+```objc
+@property NSURLRequestAttribution attribution;
+```
+
 #### Discussion
 
-If you don’t set this value, the system assumes a value of [`NSURLRequest.Attribution.developer`](nsurlrequest/attribution-swift.enum/developer.md). Use this default value for any network request that your app makes that isn’t explicitly from the user. This includes requests that you make to your own server, even when you load user data. It also includes links that the user selects, but that you modify in any way — including by adding HTTP headers — before loading the content.
+If you don’t set this value, the system assumes a value of [`NSURLRequest.Attribution.developer`](../nsurlrequest/attribution-swift.enum/developer.md). Use this default value for any network request that your app makes that isn’t explicitly from the user. This includes requests that you make to your own server, even when you load user data. It also includes links that the user selects, but that you modify in any way — including by adding HTTP headers — before loading the content.
 
-Set this value to [`NSURLRequest.Attribution.user`](nsurlrequest/attribution-swift.enum/user.md) only for requests that the user explicitly makes, like when the user enters a URL or taps or clicks a URL that they can read, and only if your app loads and displays the data without altering the request.
+Set this value to [`NSURLRequest.Attribution.user`](../nsurlrequest/attribution-swift.enum/user.md) only for requests that the user explicitly makes, like when the user enters a URL or taps or clicks a URL that they can read, and only if your app loads and displays the data without altering the request.
 
 ## See Also
 
-- [NSURLRequest.Attribution](nsurlrequest/attribution-swift.enum.md)
+### Indicating the source of the request
+- [NSURLRequest.Attribution](../nsurlrequest/attribution-swift.enum.md)
   The entities that can make a network request.
 
 

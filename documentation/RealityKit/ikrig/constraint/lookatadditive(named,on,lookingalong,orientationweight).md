@@ -1,7 +1,8 @@
 # lookAtAdditive(named:on:lookingAlong:orientationWeight:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint with only an orientational demand in additive look-at mode.
 
@@ -21,7 +22,7 @@ static func lookAtAdditive(named name: String, on jointName: String, lookingAlon
 
 #### Discussion
 
-> **Note**: `IKOrientationDemand.Mode.additiveLookAt`
+> **See Also**: `IKOrientationDemand.Mode.additiveLookAt`
 
 ## Parameters
 

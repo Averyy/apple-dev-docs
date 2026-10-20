@@ -1,7 +1,8 @@
 # maximumAlertImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum image size for the alert image that a @c CPNavigationAlert can display.
 
@@ -14,6 +15,10 @@ The maximum image size for the alert image that a @c CPNavigationAlert can displ
 
 ```swift
 class var maximumAlertImageSize: CGSize { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CGSize maximumAlertImageSize;
 ```
 
 

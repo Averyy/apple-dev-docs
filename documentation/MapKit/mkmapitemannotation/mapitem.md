@@ -1,7 +1,8 @@
 # mapItem
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map item represented by this annotation
 
@@ -17,6 +18,10 @@ The map item represented by this annotation
 
 ```swift
 var mapItem: MKMapItem { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) MKMapItem * mapItem;
 ```
 
 

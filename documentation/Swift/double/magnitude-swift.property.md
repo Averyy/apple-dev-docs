@@ -1,7 +1,8 @@
 # magnitude
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The magnitude of this value.
 
@@ -33,9 +34,10 @@ The global `abs(_:)` function provides more familiar syntax when you need to fin
 
 ## See Also
 
-- [var sign: FloatingPointSign](double/sign.md)
+### Finding the Sign and Magnitude
+- [var sign: FloatingPointSign](./sign.md)
   The sign of the floating-point value.
-- [typealias Magnitude](double/magnitude-swift.typealias.md)
+- [typealias Magnitude](./magnitude-swift.typealias.md)
   A type that can represent the absolute value of any possible value of the conforming type.
 
 

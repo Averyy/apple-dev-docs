@@ -1,7 +1,8 @@
 # rotationMatrix
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a rotation matrix representing the device’s attitude.
 
@@ -19,15 +20,21 @@ Returns a rotation matrix representing the device’s attitude.
 var rotationMatrix: CMRotationMatrix { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMRotationMatrix rotationMatrix;
+```
+
 #### Discussion
 
 A rotation matrix in linear algebra describes the rotation of a body in three-dimensional Euclidean space.
 
 ## See Also
 
-- [var quaternion: CMQuaternion](cmattitude/quaternion.md)
+### Related Documentation
+- [var quaternion: CMQuaternion](./quaternion.md)
   Returns a quaternion representing the device’s attitude.
-- [struct CMRotationMatrix](cmrotationmatrix.md)
+### Getting a Mathematical Representation of Attitude as a Rotation Matrix
+- [struct CMRotationMatrix](../cmrotationmatrix.md)
   The type of a structure representing a rotation matrix.
 
 

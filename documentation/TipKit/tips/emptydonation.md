@@ -1,7 +1,8 @@
 # EmptyDonation
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An empty event donation.
 
@@ -23,18 +24,19 @@ struct EmptyDonation
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Event](tips/event.md)
+### Events
+- [struct Event](./event.md)
   A repeatable user-defined action.
-- [struct DonationTimeRange](tips/donationtimerange.md)
+- [struct DonationTimeRange](./donationtimerange.md)
   A duration of time for filtering event donations.
-- [struct DonationLimit](tips/donationlimit.md)
+- [struct DonationLimit](./donationlimit.md)
   Specify the maximum number of donations for an event.
 
 

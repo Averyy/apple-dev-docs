@@ -1,7 +1,8 @@
 # kAXHelpTagRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A help tag.
 
@@ -12,6 +13,10 @@ A help tag.
 
 ```swift
 var kAXHelpTagRole: String { get }
+```
+
+```c
+#define kAXHelpTagRole
 ```
 
 

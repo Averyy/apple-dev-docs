@@ -1,7 +1,8 @@
 # maxBufferBindCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the number of buffer-binding slots for the argument table.
 
@@ -19,9 +20,13 @@ Determines the number of buffer-binding slots for the argument table.
 var maxBufferBindCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxBufferBindCount;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Discussion
 

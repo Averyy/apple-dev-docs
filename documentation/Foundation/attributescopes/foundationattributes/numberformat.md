@@ -1,7 +1,8 @@
 # numberFormat
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a number format attribute.
 
@@ -22,7 +23,8 @@ let numberFormat: AttributeScopes.FoundationAttributes.NumberFormatAttributes
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
+### Using number formatting attributes
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes](./numberformatattributes.md)
   A type for using a number format as an attribute.
 
 

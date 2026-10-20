@@ -1,7 +1,8 @@
 # MPSCNNDropoutGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gradient dropout filter.
 
@@ -19,36 +20,41 @@ A gradient dropout filter.
 class MPSCNNDropoutGradient
 ```
 
+```objc
+@interface MPSCNNDropoutGradient : MPSCNNGradientKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnndropoutgradient/init(coder:device:).md)
-- [init(device: any MTLDevice, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropoutgradient/init(device:keepprobability:seed:maskstrideinpixels:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnndropoutgradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](./mpscnndropoutgradient/init%28device,keepprobability,seed,maskstrideinpixels%29.md)
 ### Instance Properties
-- [var keepProbability: Float](mpscnndropoutgradient/keepprobability.md)
-- [var maskStrideInPixels: MTLSize](mpscnndropoutgradient/maskstrideinpixels.md)
-- [var seed: Int](mpscnndropoutgradient/seed.md)
+- [var keepProbability: Float](./mpscnndropoutgradient/keepprobability.md)
+- [var maskStrideInPixels: MTLSize](./mpscnndropoutgradient/maskstrideinpixels.md)
+- [var seed: Int](./mpscnndropoutgradient/seed.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNGradientKernel](mpscnngradientkernel.md)
+- [MPSCNNGradientKernel](./mpscnngradientkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNDropout](mpscnndropout.md)
+### Dropout Layers
+- [class MPSCNNDropout](./mpscnndropout.md)
   A dropout filter.
-- [class MPSCNNDropoutGradientState](mpscnndropoutgradientstate.md)
+- [class MPSCNNDropoutGradientState](./mpscnndropoutgradientstate.md)
   A class that stores the mask used by dropout and gradient dropout filters.
 
 

@@ -1,7 +1,8 @@
 # fieldBitMask
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that defines which categories of physics fields can exert forces on this physics body.
 
@@ -20,15 +21,20 @@ A mask that defines which categories of physics fields can exert forces on this 
 var fieldBitMask: UInt32 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) uint32_t fieldBitMask;
+```
+
 #### Discussion
 
-When a physics body is inside the region of an [`SKFieldNode`](skfieldnode.md) object, that field node’s [`categoryBitMask`](skfieldnode/categorybitmask.md) property is compared to this physics body’s [`fieldBitMask`](skphysicsbody/fieldbitmask.md) property by performing a logical AND operation. If the result is a nonzero value, the field node’s effect is applied to the physics body.
+When a physics body is inside the region of an [`SKFieldNode`](../skfieldnode.md) object, that field node’s [`categoryBitMask`](../skfieldnode/categorybitmask.md) property is compared to this physics body’s [`fieldBitMask`](./fieldbitmask.md) property by performing a logical AND operation. If the result is a nonzero value, the field node’s effect is applied to the physics body.
 
 The default value is `0xFFFFFFFF` (all bits set).
 
 ## See Also
 
-- [var charge: CGFloat](skphysicsbody/charge.md)
+### Interacting with Physics Fields
+- [var charge: CGFloat](./charge.md)
   The electrical charge of the physics body.
 
 

@@ -1,7 +1,8 @@
 # init(position:collectionID:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the destination value with the provided position and collectionID.
 

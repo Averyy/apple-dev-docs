@@ -1,12 +1,13 @@
 # photo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Output contains photographic data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Output contains photographic data.
 static let photo: NSPrintPanel.JobStyleHint
 ```
 
+```c
+extern NSPrintPanelJobStyleHint const NSPrintPhotoJobStyleHint;
+```
+
 ## See Also
 
-- [static let allPresets: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/allpresets.md)
+### Constants
+- [static let allPresets: NSPrintPanel.JobStyleHint](./allpresets.md)
   Output appropriate to all graphics types.
-- [static let noPresets: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/nopresets.md)
+- [static let noPresets: NSPrintPanel.JobStyleHint](./nopresets.md)
   Output excludes all graphics printing.
 
 

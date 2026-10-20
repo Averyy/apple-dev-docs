@@ -1,7 +1,8 @@
 # WAAccessCategory.interactiveVoice
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quality-of-service (QoS) type that provides very low-latency for low-throughput flows.
 
@@ -24,15 +25,16 @@ Use this Wi-Fi access category for packets transmitted by a `NetworkConnection` 
 
 > ❗ **Important**: This QoS type doesn’t support high throughput.
 
-For more information, refer to [`NWParameters.ServiceClass.interactiveVoice`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.enum/interactivevoice)
+For more information, refer to [NWParameters.ServiceClass.interactiveVoice](../../Network/nwparameters/serviceclass-swift.enum/interactivevoice.md)
 
 ## See Also
 
-- [WAAccessCategory.bestEffort](waaccesscategory/besteffort.md)
+### Providing throughput
+- [WAAccessCategory.bestEffort](./besteffort.md)
   A default quality-of-service (QoS) type that provides high throughput for data transfers of any size.
-- [WAAccessCategory.background](waaccesscategory/background.md)
+- [WAAccessCategory.background](./background.md)
   A quality-of-service (QoS) type that provides high throughput for delay-tolerant, noninteractive data transfers of any size.
-- [WAAccessCategory.interactiveVideo](waaccesscategory/interactivevideo.md)
+- [WAAccessCategory.interactiveVideo](./interactivevideo.md)
   A quality-of-service (QoS) type that provides low-latency for moderate throughput flows.
 
 

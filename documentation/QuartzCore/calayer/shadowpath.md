@@ -1,7 +1,8 @@
 # shadowPath
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the layer’s shadow. Animatable.
 
@@ -19,11 +20,15 @@ The shape of the layer’s shadow. Animatable.
 var shadowPath: CGPath? { get set }
 ```
 
+```objc
+@property (nullable) CGPathRef shadowPath;
+```
+
 #### Discussion
 
 The default value of this property is `nil`, which causes the layer to use a standard shadow shape. If you specify a value for this property, the layer creates its shadow using the specified path instead of the layer’s composited alpha channel. The path you provide defines the outline of the shadow. It is filled using the non-zero winding rule and the current shadow color, opacity, and blur radius.
 
-Unlike most animatable properties, this property (as with all `CGPathRef` animatable properties) does not support implicit animation. However, the path object may be animated using any of the concrete subclasses of [`CAPropertyAnimation`](capropertyanimation.md). Paths will interpolate as a linear blend of the “on-line” points; “off-line” points may be interpolated non-linearly (to preserve continuity of the curve’s derivative). If the two paths have a different number of control points or segments, the results are undefined. If the path extends outside the layer bounds it will not automatically be clipped to the layer, only if the normal layer masking rules cause that.
+Unlike most animatable properties, this property (as with all `CGPathRef` animatable properties) does not support implicit animation. However, the path object may be animated using any of the concrete subclasses of [`CAPropertyAnimation`](../capropertyanimation.md). Paths will interpolate as a linear blend of the “on-line” points; “off-line” points may be interpolated non-linearly (to preserve continuity of the curve’s derivative). If the two paths have a different number of control points or segments, the results are undefined. If the path extends outside the layer bounds it will not automatically be clipped to the layer, only if the normal layer masking rules cause that.
 
 Specifying an explicit path usually improves rendering performance.
 
@@ -31,7 +36,7 @@ The value of this property is retained using the Core Foundation retain/release 
 
 ##### Using Shadow Path for Special Effects
 
-You can use a layer’s shadow path to create special effects such as simulating the shadows available in [`Pages`](https://developer.apple.comhttp://www.apple.com/pages/).
+You can use a layer’s shadow path to create special effects such as simulating the shadows available in [Pages](http://www.apple.com/pages/).
 
 The following code shows the code required to add an elliptical shadow to the bottom of a layer to simulate the Pages *Contact Shadow* effect.
 
@@ -54,11 +59,11 @@ let shadowPath = CGPath(ellipseIn: CGRect(x: -contactShadowSize,
 layer.shadowPath = shadowPath
 ```
 
-![Layer with contact shadow effect](/images/com.apple.quartzcore/media-2851604@2x.png)
+![Layer with contact shadow effect](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851604@2x.png)
 
 The following code shows how to create a path to simulate the Pages *Curved Shadow*. The left, top and right sides of the path are straight lines, and the bottom is a concave curve as illustrated in the following figure.
 
-![Shadow path for curved shadow effect](/images/com.apple.quartzcore/media-2851608@2x.png)
+![Shadow path for curved shadow effect](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851608@2x.png)
 
 ```swift
 let layer = CALayer()
@@ -88,37 +93,38 @@ shadowPath.addQuadCurve(to: CGPoint(x: layer.shadowRadius,
 layer.shadowPath = shadowPath
 ```
 
-![Layer with curved shadow effect](/images/com.apple.quartzcore/media-2851607@2x.png)
+![Layer with curved shadow effect](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851607@2x.png)
 
 ## See Also
 
-- [var contentsGravity: CALayerContentsGravity](calayer/contentsgravity.md)
+### Modifying the layer’s appearance
+- [var contentsGravity: CALayerContentsGravity](./contentsgravity.md)
   A constant that specifies how the layer’s contents are positioned or scaled within its bounds.
-- [Contents Gravity Values](contents-gravity-values.md)
-  The contents gravity constants specify the position of the content object when the layer bounds is larger than the bounds of the content object. They are used by the [`contentsGravity`](calayer/contentsgravity.md) property.
-- [var opacity: Float](calayer/opacity.md)
+- [Contents Gravity Values](../contents-gravity-values.md)
+  The contents gravity constants specify the position of the content object when the layer bounds is larger than the bounds of the content object. They are used by the [`contentsGravity`](./contentsgravity.md) property.
+- [var opacity: Float](./opacity.md)
   The opacity of the receiver. Animatable.
-- [var isHidden: Bool](calayer/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean indicating whether the layer is displayed. Animatable.
-- [var masksToBounds: Bool](calayer/maskstobounds.md)
+- [var masksToBounds: Bool](./maskstobounds.md)
   A Boolean indicating whether sublayers are clipped to the layer’s bounds. Animatable.
-- [var mask: CALayer?](calayer/mask.md)
+- [var mask: CALayer?](./mask.md)
   An optional layer whose alpha channel is used to mask the layer’s content.
-- [var isDoubleSided: Bool](calayer/isdoublesided.md)
+- [var isDoubleSided: Bool](./isdoublesided.md)
   A Boolean indicating whether the layer displays its content when facing away from the viewer. Animatable.
-- [var cornerRadius: CGFloat](calayer/cornerradius.md)
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius to use when drawing rounded corners for the layer’s background. Animatable.
-- [var maskedCorners: CACornerMask](calayer/maskedcorners.md)
-- [struct CACornerMask](cacornermask.md)
-- [var borderWidth: CGFloat](calayer/borderwidth.md)
+- [var maskedCorners: CACornerMask](./maskedcorners.md)
+- [struct CACornerMask](../cacornermask.md)
+- [var borderWidth: CGFloat](./borderwidth.md)
   The width of the layer’s border. Animatable.
-- [var borderColor: CGColor?](calayer/bordercolor.md)
+- [var borderColor: CGColor?](./bordercolor.md)
   The color of the layer’s border. Animatable.
-- [var backgroundColor: CGColor?](calayer/backgroundcolor.md)
+- [var backgroundColor: CGColor?](./backgroundcolor.md)
   The background color of the receiver. Animatable.
-- [var shadowOpacity: Float](calayer/shadowopacity.md)
+- [var shadowOpacity: Float](./shadowopacity.md)
   The opacity of the layer’s shadow. Animatable.
-- [var shadowRadius: CGFloat](calayer/shadowradius.md)
+- [var shadowRadius: CGFloat](./shadowradius.md)
   The blur radius (in points) used to render the layer’s shadow. Animatable.
 
 

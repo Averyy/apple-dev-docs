@@ -1,14 +1,15 @@
 # setAttributeForConnection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setAttributeForConnection(SInt32 connectIndex, UInt32 attribute, uintptr_t value);
 ```
 

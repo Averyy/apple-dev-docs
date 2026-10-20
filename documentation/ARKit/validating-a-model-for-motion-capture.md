@@ -1,14 +1,15 @@
 # Validating a Model for Motion Capture
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Article
 
 Verify that your character model matches ARKit’s Motion Capture requirements.
 
 #### Overview
 
-[`ARKit`](ARKit.md)‘s body-tracking functionality requires models to be in a specific format. Models that don’t match the expected format may work incorrectly, or not work at all. Use the detailed information in this article to verify that your character’s scene coordinate system and orientation match [`ARKit`](ARKit.md)’s expectations, and ensure that your skeleton matches [`ARKit`](ARKit.md)’s expected joint names and hierarchy for Motion Capture.
+[ARKit](./ARKit.md)‘s body-tracking functionality requires models to be in a specific format. Models that don’t match the expected format may work incorrectly, or not work at all. Use the detailed information in this article to verify that your character’s scene coordinate system and orientation match [ARKit](./ARKit.md)’s expectations, and ensure that your skeleton matches [ARKit](./ARKit.md)’s expected joint names and hierarchy for Motion Capture.
 
-Additionally, you can verify models that you’ve rigged according to [`Rigging a Model for Motion Capture`](rigging-a-model-for-motion-capture.md), and use the information to modify your existing rigged humanoid models to match the expected format.
+Additionally, you can verify models that you’ve rigged according to [Rigging a Model for Motion Capture](./rigging-a-model-for-motion-capture.md), and use the information to modify your existing rigged humanoid models to match the expected format.
 
 ##### Confirm Scene and Model Coordinate Systems
 
@@ -16,13 +17,13 @@ Your exported model must use a scene coordinate system that uses +Y for up, +Z f
 
 If your 3D software package doesn’t use this coordinate system by default, you may be able to reconfigure your scene settings or transform the coordinate system as part of the export process.
 
-##### Validate Joint Names Relationships and Orientation
+##### Validate Joint Names, Relationships, and Orientation
 
-The joints that make up your model’s skeleton must exactly match [`ARKit`](ARKit.md)’s required joint names. Additionally, the relationship between joints must also match [`ARKit`](ARKit.md)’s layout.
+The joints that make up your model’s skeleton must exactly match [ARKit](./ARKit.md)’s required joint names. Additionally, the relationship between joints must also match [ARKit](./ARKit.md)’s layout.
 
 Although your skeleton must contain all the expected joints in the correct hierarchy, you don’t have to bind vertices to every bone. If your character doesn’t need moving eyes, for example, its skeleton must still have the bones that control the eyes, but you can simply bind no part of your model to those bones so they have no affect on your model.
 
-Make sure to match the orientation of every joint in your model in its bind post to match the values in the [`model biped skeleton`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/Biped-Robot.zip).
+Make sure to match the orientation of every joint in your model in its bind post to match the values in the [model biped skeleton](https://developer.apple.com/sample-code/ar/Biped-Robot.zip).
 
 > **Note**:  Joints in a skeletal model represent any potential point of articulation. While many of the joints correspond to anatomical joints, others simply represent a portion of the model that can be moved or deformed in some way.
 
@@ -34,7 +35,7 @@ Your characters should be rigged in a standard T-pose. Although some software pa
 
 The torso of a puppeteering skeleton should contain eight joints: the hip joint, which is the root of the joint hierarchy, and seven spine joints. The hip joint and first spine joint overlap when the character is in the T-pose position.
 
-![Illustration showing a humanoid figure with the names of the joints and relationships for the torso.](/images/com.apple.arkit/ARKit-body-motion-capture-spine@2x.png)
+![Illustration showing a humanoid figure with the names of the joints and relationships for the torso.](https://developer.apple.com/tutorials/images/com.apple.arkit/ARKit-body-motion-capture-spine@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -51,7 +52,7 @@ The torso of a puppeteering skeleton should contain eight joints: the hip joint,
 
 The head contains four neck joints extending from the spine, as well as joints for controlling the specific parts of the head, including the eyes and eyelids, nose, chin, and jaw.
 
-![Illustration showing just the head and neck portion of the humanoid character, with the joint names labeled.](/images/com.apple.arkit/ARKit-body-motion-capture-head-neck@2x.png)
+![Illustration showing just the head and neck portion of the humanoid character, with the joint names labeled.](https://developer.apple.com/tutorials/images/com.apple.arkit/ARKit-body-motion-capture-head-neck@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -76,7 +77,7 @@ The head contains four neck joints extending from the spine, as well as joints f
 
 Both arms descend from the seventh spine joint and are comprised of three joints, representing the shoulder, elbow, and wrist.
 
-![Illustration showing a humanoid with the joint names in the arms labeled.](/images/com.apple.arkit/ARKit-body-motion-capture-arms@2x.png)
+![Illustration showing a humanoid with the joint names in the arms labeled.](https://developer.apple.com/tutorials/images/com.apple.arkit/ARKit-body-motion-capture-arms@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -91,7 +92,7 @@ Both arms descend from the seventh spine joint and are comprised of three joints
 
 The leg and foot joints of the model descend from the hips, with joints for moving the upper legs, lower legs, feet, and toes.
 
-![Illustration of a humanoid figure with the leg joints highlighted and labeled.](/images/com.apple.arkit/ARKit-body-motion-capture-legs-feet@2x.png)
+![Illustration of a humanoid figure with the leg joints highlighted and labeled.](https://developer.apple.com/tutorials/images/com.apple.arkit/ARKit-body-motion-capture-legs-feet@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -106,11 +107,11 @@ The leg and foot joints of the model descend from the hips, with joints for movi
 | `right_toes_joint` | `right_foot_joint` |
 | `right_toesEnd_joint` | `right_toes_joint` |
 
-##### Review Right Hand Joints
+##### Review Right-Hand Joints
 
 The hands contain many joints, with each of the four fingers comprised of five joints descending from the hand. The thumb has only four joints, but also descends from the hand joint.
 
-![Illustration showing the right hand of the humanoid figure highlighted, with some of the joints named.](/images/com.apple.arkit/ARKit-right-hand-joints@2x.png)
+![Illustration showing the right hand of the humanoid figure highlighted, with some of the joints named.](https://developer.apple.com/tutorials/images/com.apple.arkit/ARKit-right-hand-joints@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -140,11 +141,11 @@ The hands contain many joints, with each of the four fingers comprised of five j
 | `right_handThumb_2_joint` | `right_handThumb_1_joint` |
 | `right_handThumbEnd_joint` | `right_handThumb_2_joint` |
 
-##### Review Left Hand Joints
+##### Review Left-Hand Joints
 
 The structure and naming convention of the joints of the left hand are similar to those of the right.
 
-![Illustration showing the left hand of the humanoid figure highlighted, with some of the joints named.](/images/com.apple.arkit/ARKit-left-hand-joints@2x.png)
+![Illustration showing the left hand of the humanoid figure highlighted, with some of the joints named.](https://developer.apple.com/tutorials/images/com.apple.arkit/ARKit-left-hand-joints@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -176,11 +177,12 @@ The structure and naming convention of the joints of the left hand are similar t
 
 ## See Also
 
-- [Capturing Body Motion in 3D](capturing-body-motion-in-3d.md)
+### Body Position Tracking
+- [Capturing Body Motion in 3D](./capturing-body-motion-in-3d.md)
   Track a person in the physical environment and visualize their motion by applying the same body movements to a virtual character.
-- [Rigging a Model for Motion Capture](rigging-a-model-for-motion-capture.md)
+- [Rigging a Model for Motion Capture](./rigging-a-model-for-motion-capture.md)
   Configure custom 3D models so ARKit’s human body-tracking feature can control them.
-- [class ARBodyAnchor](arbodyanchor.md)
+- [class ARBodyAnchor](./arbodyanchor.md)
   An anchor that tracks the position and movement of a human body in the rear-facing camera.
 
 

@@ -1,7 +1,8 @@
 # GCVirtualController.ElementConfiguration
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The properties of a virtual controller’s element that you can customize.
 
@@ -16,31 +17,36 @@ The properties of a virtual controller’s element that you can customize.
 class ElementConfiguration
 ```
 
+```objc
+@interface GCVirtualControllerElementConfiguration : NSObject
+```
+
 ## Topics
 
 ### Configuring elements
-- [var path: UIBezierPath?](gcvirtualcontroller/elementconfiguration/path.md)
+- [var path: UIBezierPath?](./elementconfiguration/path.md)
   The Bezier path for the shape of an element.
-- [var isHidden: Bool](gcvirtualcontroller/elementconfiguration/ishidden.md)
+- [var isHidden: Bool](./elementconfiguration/ishidden.md)
   A Boolean value that determines whether the virtual controller hides the element.
-- [var actsAsTouchpad: Bool](gcvirtualcontroller/elementconfiguration/actsastouchpad.md)
+- [var actsAsTouchpad: Bool](./elementconfiguration/actsastouchpad.md)
   A Boolean value that determines whether the thumbstick element behaves as a touchpad.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func updateConfiguration(forElement: String, configuration: (GCVirtualController.ElementConfiguration) -> GCVirtualController.ElementConfiguration)](gcvirtualcontroller/updateconfiguration(forelement:configuration:).md)
+### Customizing the elements
+- [func updateConfiguration(forElement: String, configuration: (GCVirtualController.ElementConfiguration) -> GCVirtualController.ElementConfiguration)](./updateconfiguration%28forelement,configuration%29.md)
   Changes the configuration for one of the virtual controller’s input elements.
 
 

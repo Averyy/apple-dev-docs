@@ -1,7 +1,8 @@
 # measure(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Measure the elapsed time to execute an asynchronous closure.
 

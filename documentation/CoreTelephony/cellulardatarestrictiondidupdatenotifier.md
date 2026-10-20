@@ -1,7 +1,8 @@
 # CellularDataRestrictionDidUpdateNotifier
 
 **Framework**: Core Telephony  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to provide updates on the app’s cellular data restriction state.
 
@@ -17,9 +18,14 @@ A block to provide updates on the app’s cellular data restriction state.
 typealias CellularDataRestrictionDidUpdateNotifier = (CTCellularDataRestrictedState) -> Void
 ```
 
+```c
+typedef void (^)(enum CTCellularDataRestrictedState) CellularDataRestrictionDidUpdateNotifier;
+```
+
 ## See Also
 
-- [var cellularDataRestrictionDidUpdateNotifier: CellularDataRestrictionDidUpdateNotifier?](ctcellulardata/cellulardatarestrictiondidupdatenotifier.md)
+### Handling Policy Changes
+- [var cellularDataRestrictionDidUpdateNotifier: CellularDataRestrictionDidUpdateNotifier?](./ctcellulardata/cellulardatarestrictiondidupdatenotifier.md)
   A block that handles cellular data restriction state changes.
 
 

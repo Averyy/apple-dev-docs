@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance initialized to the given value.
@@ -24,6 +25,11 @@ init(extendedGraphemeClusterLiteral value: Self.ExtendedGraphemeClusterLiteralTy
 ## Parameters
 
 - `value`: The value of the new instance.
+
+## Default Implementations
+
+### ExpressibleByExtendedGraphemeClusterLiteral Implementations
+- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](./init%28extendedgraphemeclusterliteral%29-6bx13.md)
 
 
 ---

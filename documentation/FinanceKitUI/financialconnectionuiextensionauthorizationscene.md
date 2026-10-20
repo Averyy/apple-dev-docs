@@ -1,7 +1,8 @@
 # FinancialConnectionUIExtensionAuthorizationScene
 
 **Framework**: FinanceKitUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Implement this scene to authorize your app’s Financial Connection
 
@@ -24,15 +25,15 @@ Your scene will be provided a `FinancialConnectionExtensionAuthorizationRequest`
 ## Topics
 
 ### Initializers
-- [init(content: () -> Content)](financialconnectionuiextensionauthorizationscene/init(content:).md)
+- [init(content: () -> Content)](./financialconnectionuiextensionauthorizationscene/init%28content%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
-- [FinancialConnectionUIExtensionScene](financialconnectionuiextensionscene.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
+- [FinancialConnectionUIExtensionScene](./financialconnectionuiextensionscene.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

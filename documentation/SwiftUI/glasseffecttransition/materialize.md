@@ -1,7 +1,8 @@
 # materialize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The materialize glass effect transition which will fade in content and animate in or out the glass material but will not attempt to match the geometry of any other glass effects.
 
@@ -21,7 +22,7 @@ static var materialize: GlassEffectTransition { get }
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
 
 ---

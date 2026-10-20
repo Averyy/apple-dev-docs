@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Requests that the object provide data for the data type to the pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func pasteboard(_ sender: NSPasteboard, provideDataForType type: NSPasteboard.PasteboardType)
+```
+
+```objc
+- (void) pasteboard:(NSPasteboard *) sender provideDataForType:(NSPasteboardType) type;
 ```
 
 ## Parameters

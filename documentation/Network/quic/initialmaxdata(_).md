@@ -1,7 +1,8 @@
 # initialMaxData(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the initial_max_data transport parameter on a QUIC connection.
 

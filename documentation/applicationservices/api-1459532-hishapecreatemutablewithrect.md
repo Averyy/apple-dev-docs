@@ -1,7 +1,8 @@
 # HIShapeCreateMutableWithRect(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateMutableWithRect(_ inRect: UnsafePointer<CGRect>!) -> Unmanaged<HIMutableShape>!
+```
+
+```c
+HIMutableShapeRef HIShapeCreateMutableWithRect(const CGRect *inRect);
 ```
 
 

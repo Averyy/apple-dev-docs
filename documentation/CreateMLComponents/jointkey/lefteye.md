@@ -1,7 +1,8 @@
 # leftEye
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with left eye joint in a body pose.
 
@@ -21,13 +22,14 @@ static let leftEye: JointKey
 
 ## See Also
 
-- [static let rightEye: JointKey](jointkey/righteye.md)
+### Getting head properties
+- [static let rightEye: JointKey](./righteye.md)
   A key associated with right eye joint in a body pose.
-- [static let leftEar: JointKey](jointkey/leftear.md)
+- [static let leftEar: JointKey](./leftear.md)
   A key associated with left ear joint in a body pose.
-- [static let rightEar: JointKey](jointkey/rightear.md)
+- [static let rightEar: JointKey](./rightear.md)
   A key associated with right ear joint in a body pose.
-- [static let nose: JointKey](jointkey/nose.md)
+- [static let nose: JointKey](./nose.md)
   A key associated with nose joint in a body pose.
 
 

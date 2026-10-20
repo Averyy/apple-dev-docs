@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of the requested large binary object operation.
 
@@ -20,7 +21,8 @@ var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.Operation
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult.md)
+### Inspecting the result
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](./operationresult.md)
   A type that represents the result of the requested binary large object operation.
 
 

@@ -1,7 +1,8 @@
 # init(entries:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transcript.
 

@@ -1,7 +1,8 @@
 # masking(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a bitmap image from an existing image and an image mask.
 
@@ -10,7 +11,7 @@ Creates a bitmap image from an existing image and an image mask.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a bitmap image from an existing image and an image mask.
 func masking(_ mask: CGImage) -> CGImage?
 ```
 
+```c
+extern CGImageRefCGImageCreateWithMask(CGImageRef image, CGImageRef mask);
+```
+
 #### Return Value
 
-An image created by masking `image` with `mask`. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](cgimagerelease.md).
+An image created by masking `image` with `mask`. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 
 #### Discussion
 
@@ -36,9 +41,10 @@ If the `mask` parameter is an image, then it serves as an alpha mask for blendin
 
 ## See Also
 
-- [func cropping(to: CGRect) -> CGImage?](cgimage/cropping(to:).md)
+### Creating images by modifying an image
+- [func cropping(to: CGRect) -> CGImage?](./cropping%28to%29.md)
   Creates a bitmap image using the data contained within a subregion of an existing bitmap image.
-- [func copy(maskingColorComponents: [CGFloat]) -> CGImage?](cgimage/copy(maskingcolorcomponents:).md)
+- [func copy(maskingColorComponents: [CGFloat]) -> CGImage?](./copy%28maskingcolorcomponents%29.md)
 
 
 ---

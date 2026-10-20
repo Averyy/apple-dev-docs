@@ -1,17 +1,22 @@
 # init(named:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Searches the available color lists array and returns the color list with the specified name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(named name: NSColorList.Name)
+```
+
+```objc
++ (NSColorList *) colorListNamed:(NSColorListName) name;
 ```
 
 #### Return Value
@@ -24,9 +29,11 @@ The color list with the specified name or `nil` if no such color list exists.
 
 ## See Also
 
-- [var name: NSColorList.Name?](nscolorlist/name-swift.property.md)
+### Related Documentation
+- [var name: NSColorList.Name?](./name-swift.property.md)
   The name of the color list.
-- [class var availableColorLists: [NSColorList]](nscolorlist/availablecolorlists.md)
+### Getting Lists of Colors
+- [class var availableColorLists: [NSColorList]](./availablecolorlists.md)
   Returns an array of all color lists found in the standard color list directories.
 
 

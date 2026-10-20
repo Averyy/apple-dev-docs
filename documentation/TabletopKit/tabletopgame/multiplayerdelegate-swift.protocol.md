@@ -1,7 +1,8 @@
 # TabletopGame.MultiplayerDelegate
 
 **Framework**: TabletopKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that handles players joining multiplayer games.
 
@@ -17,21 +18,22 @@ protocol MultiplayerDelegate : AnyObject
 ## Topics
 
 ### Joining games
-- [func joinAccepted()](tabletopgame/multiplayerdelegate-swift.protocol/joinaccepted.md)
+- [func joinAccepted()](./multiplayerdelegate-swift.protocol/joinaccepted%28%29.md)
   We tried to join a game and got accepted
-- [func playerJoined(PlayerIdentifier)](tabletopgame/multiplayerdelegate-swift.protocol/playerjoined(_:).md)
+- [func playerJoined(PlayerIdentifier)](./multiplayerdelegate-swift.protocol/playerjoined%28_%29.md)
   A player joined our multiplayer session
 ### Handling errors
-- [func didRejectPlayer(PlayerIdentifier, reason: any Error)](tabletopgame/multiplayerdelegate-swift.protocol/didrejectplayer(_:reason:).md)
+- [func didRejectPlayer(PlayerIdentifier, reason: any Error)](./multiplayerdelegate-swift.protocol/didrejectplayer%28_,reason%29.md)
   A player that tried to join was rejected or a player that previously joined our game was ejected.
-- [func multiplayerSessionFailed(reason: any Error)](tabletopgame/multiplayerdelegate-swift.protocol/multiplayersessionfailed(reason:).md)
+- [func multiplayerSessionFailed(reason: any Error)](./multiplayerdelegate-swift.protocol/multiplayersessionfailed%28reason%29.md)
   We failed to start or join a new multiplayer session or had to terminate a previously started multiplayer session.
 
 ## See Also
 
-- [func attachNetworkCoordinator(some TabletopNetworkSessionCoordinator)](tabletopgame/attachnetworkcoordinator(_:).md)
-- [func detachNetworkCoordinator()](tabletopgame/detachnetworkcoordinator.md)
-- [var multiplayerDelegate: (any TabletopGame.MultiplayerDelegate)?](tabletopgame/multiplayerdelegate-swift.property.md)
+### Supporting multiple players
+- [func attachNetworkCoordinator(some TabletopNetworkSessionCoordinator)](./attachnetworkcoordinator%28_%29.md)
+- [func detachNetworkCoordinator()](./detachnetworkcoordinator%28%29.md)
+- [var multiplayerDelegate: (any TabletopGame.MultiplayerDelegate)?](./multiplayerdelegate-swift.property.md)
 
 
 ---

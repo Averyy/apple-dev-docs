@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, from the beginning of the buffer.
 
@@ -15,15 +16,20 @@ The offset, in bytes, from the beginning of the buffer.
 var offset: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger offset;
+```
+
 ## See Also
 
-- [var componentsPerVector: Int](argeometrysource/componentspervector.md)
+### Getting Geometry Information
+- [var componentsPerVector: Int](./componentspervector.md)
   The number of scalar components in each vector.
-- [var count: Int](argeometrysource/count.md)
+- [var count: Int](./count.md)
   The number of vectors in the buffer.
-- [var format: MTLVertexFormat](argeometrysource/format.md)
+- [var format: MTLVertexFormat](./format.md)
   The type of vector data in the buffer.
-- [var stride: Int](argeometrysource/stride.md)
+- [var stride: Int](./stride.md)
   The length, in bytes, of the start of one vector in the buffer to the start of the next vector.
 
 

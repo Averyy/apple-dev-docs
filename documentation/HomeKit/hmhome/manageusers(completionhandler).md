@@ -1,7 +1,8 @@
 # manageUsers(completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a view controller to manage users of the home.
 
@@ -14,22 +15,33 @@ Presents a view controller to manage users of the home.
 ## Declaration
 
 ```swift
+func manageUsers(completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func manageUsers() async throws
+```
+
+```objc
+- (void) manageUsersWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
 
-Only users that have administrator access to the home can call this method. Otherwise, the completion handler returns the error [`HMError.Code.insufficientPrivileges`](hmerror/code/insufficientprivileges.md).
+Only users that have administrator access to the home can call this method. Otherwise, the completion handler returns the error [`HMError.Code.insufficientPrivileges`](../hmerror/code/insufficientprivileges.md).
 
 ## Parameters
 
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var currentUser: HMUser](hmhome/currentuser.md)
+### Managing users
+- [var currentUser: HMUser](./currentuser.md)
   The current HomeKit user.
-- [class HMUser](hmuser.md)
+- [class HMUser](../hmuser.md)
   A person in the home who may have access to control accessories and services in the home.
 
 

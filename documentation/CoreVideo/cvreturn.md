@@ -1,7 +1,8 @@
 # CVReturn
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A Core Video error type return value.
 
@@ -18,6 +19,10 @@ A Core Video error type return value.
 
 ```swift
 typealias CVReturn = Int32
+```
+
+```c
+typedef int32_t CVReturn;
 ```
 
 

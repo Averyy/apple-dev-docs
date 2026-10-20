@@ -1,7 +1,8 @@
 # dynamicTypeSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current Dynamic Type size.
 
@@ -24,27 +25,28 @@ var dynamicTypeSize: DynamicTypeSize { get set }
 
 This value changes as the user’s chosen Dynamic Type size changes. The default value is device-dependent.
 
-When limiting the Dynamic Type size, consider if adding a large content view with [`accessibilityShowsLargeContentViewer()`](view/accessibilityshowslargecontentviewer().md) would be appropriate.
+When limiting the Dynamic Type size, consider if adding a large content view with [`accessibilityShowsLargeContentViewer()`](../view/accessibilityshowslargecontentviewer%28%29.md) would be appropriate.
 
 On macOS, this value cannot be changed by users and does not affect the text size.
 
 ## See Also
 
-- [func textScale(Text.Scale, isEnabled: Bool) -> some View](view/textscale(_:isenabled:).md)
+### Adjusting text size
+- [func textScale(Text.Scale, isEnabled: Bool) -> some View](../view/textscale%28_,isenabled%29.md)
   Applies a text scale to text in the view.
-- [func dynamicTypeSize(_:)](view/dynamictypesize(_:).md)
+- [func dynamicTypeSize(_:)](../view/dynamictypesize%28_%29.md)
   Sets the Dynamic Type size within the view to the given value.
-- [enum DynamicTypeSize](dynamictypesize.md)
+- [enum DynamicTypeSize](../dynamictypesize.md)
   A Dynamic Type size, which specifies how large scalable content should be.
-- [struct ScaledMetric](scaledmetric.md)
+- [struct ScaledMetric](../scaledmetric.md)
   A dynamic property that scales a numeric value.
-- [protocol TextVariantPreference](textvariantpreference.md)
+- [protocol TextVariantPreference](../textvariantpreference.md)
   A protocol for controlling the size variant of text views.
-- [struct FixedTextVariant](fixedtextvariant.md)
+- [struct FixedTextVariant](../fixedtextvariant.md)
   The default text variant preference that chooses the largest available variant.
-- [struct SizeDependentTextVariant](sizedependenttextvariant.md)
+- [struct SizeDependentTextVariant](../sizedependenttextvariant.md)
   The size dependent variant preference allows the text to take the available space into account when choosing the variant to display.
-- [enum ContentSizeCategory](contentsizecategory.md)
+- [enum ContentSizeCategory](../contentsizecategory.md)
   The sizes that you can specify for content.
 
 

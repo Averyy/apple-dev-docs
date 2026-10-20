@@ -1,7 +1,8 @@
 # testSimpleArgumentRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testSimpleArgumentRequest(with params: MTRUnitTestingClusterTestSimpleArgumentRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterTestSimpleArgumentResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testSimpleArgumentRequest(with params: MTRUnitTestingClusterTestSimpleArgumentRequestParams) async throws -> MTRUnitTestingClusterTestSimpleArgumentResponseParams
+```
+
+```objc
+- (void) testSimpleArgumentRequestWithParams:(MTRUnitTestingClusterTestSimpleArgumentRequestParams *) params completion:(void (^)(MTRUnitTestingClusterTestSimpleArgumentResponseParams *data, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # session(_:didUpdateDLTDOA:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides device ranging estimates for a Downlink Time-Difference-of-Arrival session.
 
@@ -16,9 +17,13 @@ Provides device ranging estimates for a Downlink Time-Difference-of-Arrival sess
 optional func session(_ session: NISession, didUpdateDLTDOA measurements: [NIDLTDOAMeasurement])
 ```
 
+```objc
+- (void) session:(NISession *) session didUpdateDLTDOAMeasurements:(NSArray<__kindof NIDLTDOAMeasurement *> *) measurements;
+```
+
 #### Discussion
 
-The framework invokes this callback to provide measurements for sessions that run [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md).
+The framework invokes this callback to provide measurements for sessions that run [`NIDLTDOAConfiguration`](../nidltdoaconfiguration.md).
 
 ## Parameters
 

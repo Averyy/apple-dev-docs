@@ -1,7 +1,8 @@
 # runDrawingActions(_:completionActions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs drawing actions on a Core Graphics context that the renderer prepares.
 
@@ -18,20 +19,25 @@ Performs drawing actions on a Core Graphics context that the renderer prepares.
 func runDrawingActions(_ drawingActions: (UIGraphicsRendererContext) -> Void, completionActions: ((UIGraphicsRendererContext) -> Void)? = nil) throws
 ```
 
+```objc
+- (BOOL) runDrawingActions:(UIGraphicsDrawingActions) drawingActions completionActions:(UIGraphicsDrawingActions) completionActions error:(NSError **) error;
+```
+
 #### Discussion
 
-This method invokes the `drawingActions` block in a Core Graphics context. This context was created by the [`context(with:)`](uigraphicsrenderer/context(with:).md) method, captured in an instance of the class returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) method, and prepared by the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method.
+This method invokes the `drawingActions` block in a Core Graphics context. This context was created by the [`context(with:)`](./context%28with%29.md) method, captured in an instance of the class returned by the [`rendererContextClass()`](./renderercontextclass%28%29.md) method, and prepared by the [`prepare(_:with:)`](./prepare%28_,with%29.md) method.
 
-Do not override this method. Instead, consider invoking it from a utility method in your subclass, as the [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) and [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md) classes do.
+Do not override this method. Instead, consider invoking it from a utility method in your subclass, as the [`UIGraphicsImageRenderer`](../uigraphicsimagerenderer.md) and [`UIGraphicsPDFRenderer`](../uigraphicspdfrenderer.md) classes do.
 
 ## Parameters
 
-- `drawingActions`: A [`UIGraphicsDrawingActions`](uigraphicsdrawingactions.md) block that represents a set of drawing instructions that the renderer applies to the Core Graphics context.
-- `completionActions`: A [`UIGraphicsDrawingActions`](uigraphicsdrawingactions.md) block that the renderer calls after executing the `drawingActions` block.
+- `drawingActions`: A [`UIGraphicsDrawingActions`](../uigraphicsdrawingactions.md) block that represents a set of drawing instructions that the renderer applies to the Core Graphics context.
+- `completionActions`: A [`UIGraphicsDrawingActions`](../uigraphicsdrawingactions.md) block that the renderer calls after executing the `drawingActions` block.
 
 ## See Also
 
-- [typealias UIGraphicsDrawingActions](uigraphicsdrawingactions.md)
+### Running the drawing actions
+- [typealias UIGraphicsDrawingActions](../uigraphicsdrawingactions.md)
   A closure that executes a set of drawing instructions that the renderer applies to the Core Graphics context.
 
 

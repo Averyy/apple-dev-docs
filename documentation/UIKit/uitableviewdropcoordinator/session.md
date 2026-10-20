@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drop session containing information about the transaction.
@@ -18,9 +19,14 @@ The drop session containing information about the transaction.
 var session: any UIDropSession { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<UIDropSession> session;
+```
+
 ## See Also
 
-- [var proposal: UITableViewDropProposal](uitableviewdropcoordinator/proposal.md)
+### Getting the session information
+- [var proposal: UITableViewDropProposal](./proposal.md)
   The proposal for how to incorporate the dropped items.
 
 

@@ -1,7 +1,8 @@
 # errSecTimestampMissing
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A timestamp is expected but is not found.
 
@@ -18,6 +19,10 @@ A timestamp is expected but is not found.
 
 ```swift
 var errSecTimestampMissing: OSStatus { get }
+```
+
+```c
+errSecTimestampMissing
 ```
 
 

@@ -1,7 +1,8 @@
 # UISplitViewController.PrimaryEdge
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the side on which the primary view controller sits.
 
@@ -18,29 +19,34 @@ Constants that indicate the side on which the primary view controller sits.
 enum PrimaryEdge
 ```
 
+```c
+enum UISplitViewControllerPrimaryEdge : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UISplitViewController.PrimaryEdge.leading](uisplitviewcontroller/primaryedge-swift.enum/leading.md)
+- [UISplitViewController.PrimaryEdge.leading](./primaryedge-swift.enum/leading.md)
   Place the primary view controller on the leading edge of the interface.
-- [UISplitViewController.PrimaryEdge.trailing](uisplitviewcontroller/primaryedge-swift.enum/trailing.md)
+- [UISplitViewController.PrimaryEdge.trailing](./primaryedge-swift.enum/trailing.md)
   Place the primary view controller on the trailing edge of the interface.
 ### Initializers
-- [init?(rawValue: Int)](uisplitviewcontroller/primaryedge-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./primaryedge-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var primaryEdge: UISplitViewController.PrimaryEdge](uisplitviewcontroller/primaryedge-swift.property.md)
+### Positioning the primary view controller
+- [var primaryEdge: UISplitViewController.PrimaryEdge](./primaryedge-swift.property.md)
   The side on which the primary view controller sits.
 
 

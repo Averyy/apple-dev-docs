@@ -1,7 +1,8 @@
 # NWConnection.EstablishmentReport.Resolution.DNSProtocol
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of transport protocols connections use for DNS resolution.
 
@@ -23,34 +24,35 @@ enum DNSProtocol
 ## Topics
 
 ### Resolution Transports
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.unknown](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/unknown.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.unknown](./dnsprotocol-swift.enum/unknown.md)
   The DNS response protocol is unknown or not applicable.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.udp](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/udp.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.udp](./dnsprotocol-swift.enum/udp.md)
   The connection used cleartext UDP for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tcp](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/tcp.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tcp](./dnsprotocol-swift.enum/tcp.md)
   The connection used cleartext TCP for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tls](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/tls.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tls](./dnsprotocol-swift.enum/tls.md)
   The connection used TLS for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.https](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/https.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.https](./dnsprotocol-swift.enum/https.md)
   The connection used HTTPS for DNS resolution.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let duration: TimeInterval](nwconnection/establishmentreport/resolution/duration.md)
+### Measuring Performance
+- [let duration: TimeInterval](./duration.md)
   The duration of this resolution step, from when the query was issued to when the response was complete.
-- [let source: NWConnection.EstablishmentReport.Resolution.Source](nwconnection/establishmentreport/resolution/source-swift.property.md)
+- [let source: NWConnection.EstablishmentReport.Resolution.Source](./source-swift.property.md)
   The source of the DNS response.
-- [NWConnection.EstablishmentReport.Resolution.Source](nwconnection/establishmentreport/resolution/source-swift.enum.md)
+- [NWConnection.EstablishmentReport.Resolution.Source](./source-swift.enum.md)
   Sources that may provide DNS responses.
-- [var dnsProtocol: NWConnection.EstablishmentReport.Resolution.DNSProtocol](nwconnection/establishmentreport/resolution/dnsprotocol-swift.property.md)
+- [var dnsProtocol: NWConnection.EstablishmentReport.Resolution.DNSProtocol](./dnsprotocol-swift.property.md)
   The transport protocol your connection used for DNS resolution.
 
 

@@ -1,10 +1,11 @@
 # kBluetoothDontAllowRoleSwitch
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothDontAllowRoleSwitch: Int { get }
 ```
 
+```c
+kBluetoothDontAllowRoleSwitch
+```
+
 ## See Also
 
-- [var kBluetoothAllowRoleSwitch: Int](kbluetoothallowroleswitch.md)
+### Constants
+- [var kBluetoothAllowRoleSwitch: Int](./kbluetoothallowroleswitch.md)
 
 
 ---

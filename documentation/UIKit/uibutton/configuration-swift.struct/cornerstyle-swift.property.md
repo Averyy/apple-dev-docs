@@ -1,7 +1,8 @@
 # cornerStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button style that controls the display behavior of the background corner radius.
 
@@ -10,7 +11,7 @@ The button style that controls the display behavior of the background corner rad
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var cornerStyle: UIButton.Configuration.CornerStyle { get set }
 
 #### Discussion
 
-This property controls the behavior of the [`cornerRadius`](uibackgroundconfiguration-swift.struct/cornerradius.md) you set on the configuration background. The default corner style is [`UIButton.Configuration.CornerStyle.dynamic`](uibutton/configuration-swift.struct/cornerstyle-swift.enum/dynamic.md).
+This property controls the behavior of the [`cornerRadius`](../../uibackgroundconfiguration-swift.struct/cornerradius.md) you set on the configuration background. The default corner style is [`UIButton.Configuration.CornerStyle.dynamic`](./cornerstyle-swift.enum/dynamic.md).
 
 ## See Also
 
-- [var background: UIBackgroundConfiguration](uibutton/configuration-swift.struct/background.md)
+### Configuring the button background
+- [var background: UIBackgroundConfiguration](./background.md)
   The configuration to customize the button background.
-- [UIButton.Configuration.CornerStyle](uibutton/configuration-swift.struct/cornerstyle-swift.enum.md)
+- [UIButton.Configuration.CornerStyle](./cornerstyle-swift.enum.md)
   Settings that determine the appearance of the background corner radius.
 
 

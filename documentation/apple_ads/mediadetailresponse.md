@@ -1,26 +1,28 @@
 # MediaDetailResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object MediaDetailResponse
 ```
 
 ## Relationships
 
 ### Inherits From
-- [MediaDetail](mediadetail.md)
+- [MediaDetail](./mediadetail.md)
 
 ## See Also
 
-- [object MediaDetail](mediadetail.md)
+### Response Objects
+- [object MediaDetail](./mediadetail.md)
   The media detail object.
-- [object MediaLocaleDetail](medialocaledetail.md)
+- [object MediaLocaleDetail](./medialocaledetail.md)
   The media locale detail object.
-- [object MediaLocaleDetailResponse](medialocaledetailresponse.md)
+- [object MediaLocaleDetailResponse](./medialocaledetailresponse.md)
 
 
 ---

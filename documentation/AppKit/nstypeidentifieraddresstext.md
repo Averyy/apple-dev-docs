@@ -1,7 +1,8 @@
 # NSTypeIdentifierAddressText
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -15,15 +16,20 @@
 let NSTypeIdentifierAddressText: String
 ```
 
+```c
+extern NSString * const NSTypeIdentifierAddressText;
+```
+
 #### Discussion
 
-UTI subtype for [`addressCheckingResult(range:components:)`](https://developer.apple.com/documentation/foundation/nstextcheckingresult/addresscheckingresult(range:components:)), `com.apple.structured-text.address`.
+UTI subtype for [`addressCheckingResult(range:components:)`](../Foundation/nstextcheckingresult/addresscheckingresult%28range,components%29.md), `com.apple.structured-text.address`.
 
 ## See Also
 
-- [let NSTypeIdentifierDateText: String](nstypeidentifierdatetext.md)
-- [let NSTypeIdentifierPhoneNumberText: String](nstypeidentifierphonenumbertext.md)
-- [let NSTypeIdentifierTransitInformationText: String](nstypeidentifiertransitinformationtext.md)
+### UTI Subtypes for Data Detector Types
+- [let NSTypeIdentifierDateText: String](./nstypeidentifierdatetext.md)
+- [let NSTypeIdentifierPhoneNumberText: String](./nstypeidentifierphonenumbertext.md)
+- [let NSTypeIdentifierTransitInformationText: String](./nstypeidentifiertransitinformationtext.md)
 
 
 ---

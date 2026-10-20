@@ -1,7 +1,8 @@
 # label
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text displayed alongside the slider.
 
@@ -17,15 +18,20 @@ The text displayed alongside the slider.
 var label: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * label;
+```
+
 #### Discussion
 
 Set this property to `nil` to hide the label.
 
 ## See Also
 
-- [var slider: NSSlider](nsslidertouchbaritem/slider.md)
+### Configuring the slider
+- [var slider: NSSlider](./slider.md)
   The slider displayed by the bar item.
-- [var view: any NSView & NSUserInterfaceCompression](nsslidertouchbaritem/view.md)
+- [var view: any NSView & NSUserInterfaceCompression](./view.md)
 
 
 ---

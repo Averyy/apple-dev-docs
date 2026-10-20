@@ -1,7 +1,8 @@
 # init(min:max:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bounding box with the given settings.
 
@@ -11,7 +12,7 @@ Creates a bounding box with the given settings.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ init(min: SIMD3<Float>, max: SIMD3<Float>)
 
 ## See Also
 
-- [init()](boundingbox/init.md)
+### Creating a bounding box
+- [init()](./init%28%29.md)
   Creates an empty bounding box.
 
 

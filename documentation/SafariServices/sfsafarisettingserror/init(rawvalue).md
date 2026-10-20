@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 27.0+

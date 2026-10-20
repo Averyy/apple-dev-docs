@@ -1,7 +1,8 @@
 # center
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center point of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
 
@@ -15,15 +16,20 @@ The center point of the world map’s space-mapping data, relative to the world 
 var center: simd_float3 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_float3 center;
+```
+
 #### Discussion
 
-The [`extent`](arworldmap/extent.md) and [`center`](arworldmap/center.md) properties together define a bounding box for the data recorded in the world map.
+The [`extent`](./extent.md) and [`center`](./center.md) properties together define a bounding box for the data recorded in the world map.
 
 ## See Also
 
-- [var anchors: [ARAnchor]](arworldmap/anchors.md)
+### Examining a World Map
+- [var anchors: [ARAnchor]](./anchors.md)
   The set of anchors recorded in the world map.
-- [var extent: simd_float3](arworldmap/extent.md)
+- [var extent: simd_float3](./extent.md)
   The size of the world map’s space-mapping data, relative to the world coordinate origin of the session the map was recorded in.
 
 

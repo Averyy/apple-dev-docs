@@ -1,7 +1,8 @@
 # init(rect:identifier:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pointer region with the specified rectangle and optional identifier.
 
@@ -9,7 +10,7 @@ Creates a pointer region with the specified rectangle and optional identifier.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

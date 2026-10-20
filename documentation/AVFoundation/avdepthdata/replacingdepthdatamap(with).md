@@ -1,7 +1,8 @@
 # replacingDepthDataMap(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a derivative depth data object by replacing the depth data map.
 
@@ -19,15 +20,19 @@ Returns a derivative depth data object by replacing the depth data map.
 func replacingDepthDataMap(with pixelBuffer: CVPixelBuffer) throws -> Self
 ```
 
+```objc
+- (instancetype) depthDataByReplacingDepthDataMapWithPixelBuffer:(CVPixelBufferRef) pixelBuffer error:(NSError **) outError;
+```
+
 #### Return Value
 
 A new depth data object containing the pixel buffer.
 
 #### Discussion
 
-If you apply simple transforms to media containing depth data, you can use the [`applyingExifOrientation(_:)`](avdepthdata/applyingexiforientation(_:).md) method to apply parallel transforms to the corresponding depth data. More complex transforms and edits require creating a derivative depth map reflecting whatever edits you make to the corresponding image. In such cases, use this [`replacingDepthDataMap(with:)`](avdepthdata/replacingdepthdatamap(with:).md) method to create a derivative depth data object.
+If you apply simple transforms to media containing depth data, you can use the [`applyingExifOrientation(_:)`](./applyingexiforientation%28_%29.md) method to apply parallel transforms to the corresponding depth data. More complex transforms and edits require creating a derivative depth map reflecting whatever edits you make to the corresponding image. In such cases, use this [`replacingDepthDataMap(with:)`](./replacingdepthdatamap%28with%29.md) method to create a derivative depth data object.
 
-> **Note**:  This method cannot ensure correspondence between an arbitrarily edited depth map and the camera parameters that generated the initial depth map, so the new depth data object’s [`cameraCalibrationData`](avdepthdata/cameracalibrationdata.md) property is always `nil`.
+> **Note**:  This method cannot ensure correspondence between an arbitrarily edited depth map and the camera parameters that generated the initial depth map, so the new depth data object’s [`cameraCalibrationData`](./cameracalibrationdata.md) property is always `nil`.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ If you apply simple transforms to media containing depth data, you can use the [
 
 ## See Also
 
-- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avdepthdata/applyingexiforientation(_:).md)
+### Transforming and processing
+- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](./applyingexiforientation%28_%29.md)
   Returns a derivative depth data object by mirroring or rotating it to the specified orientation.
-- [func converting(toDepthDataType: OSType) -> Self](avdepthdata/converting(todepthdatatype:).md)
+- [func converting(toDepthDataType: OSType) -> Self](./converting%28todepthdatatype%29.md)
   Returns a derivative depth data object by converting the depth data map to the specified data type.
-- [var availableDepthDataTypes: [OSType]](avdepthdata/availabledepthdatatypes-3ifx1.md)
+- [var availableDepthDataTypes: [OSType]](./availabledepthdatatypes-3ifx1.md)
   The list of depth data formats to which you can convert this depth data.
 
 

@@ -1,7 +1,8 @@
 # SHError
 
 **Framework**: ShazamKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error type that you create, or the system creates, to indicate problems with a catalog, match attempt, or signature, or when saving to a user’s Shazam library.
 
@@ -23,22 +24,22 @@ struct SHError
 ## Topics
 
 ### Inspecting an error
-- [SHError.Code](sherror/code.md)
+- [SHError.Code](./sherror/code.md)
   Codes for the errors that Shazam produces.
-- [Error Constants](error-constants.md)
+- [Error Constants](./error-constants.md)
   Error code constants for framework operations.
 ### Type Properties
-- [static var errorDomain: String](sherror/errordomain.md)
+- [static var errorDomain: String](./sherror/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

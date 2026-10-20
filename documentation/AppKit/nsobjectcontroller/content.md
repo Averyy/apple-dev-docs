@@ -1,12 +1,13 @@
 # content
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s content object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The receiver’s content object.
 var content: Any? { get set }
 ```
 
+```objc
+@property (strong, nullable) id content;
+```
+
 ## See Also
 
-- [var automaticallyPreparesContent: Bool](nsobjectcontroller/automaticallypreparescontent.md)
+### Managing content
+- [var automaticallyPreparesContent: Bool](./automaticallypreparescontent.md)
   A Boolean that shows whether the receiver automatically creates and inserts new content objects automatically when loading from a nib file.
-- [func prepareContent()](nsobjectcontroller/preparecontent.md)
+- [func prepareContent()](./preparecontent%28%29.md)
   Typically overridden by subclasses that require additional control over the creation of new objects.
 
 

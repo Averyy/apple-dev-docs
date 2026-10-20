@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This property provides a readable representation suitable for logging and debugging.
 

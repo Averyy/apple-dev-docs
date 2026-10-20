@@ -1,7 +1,8 @@
 # excludedBundleIDs
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of bundle IDs to exclude from the sharing picker.
 
@@ -17,13 +18,15 @@ var excludedBundleIDs: Array<String>
 
 ## See Also
 
-- [Bundle IDs](../appstoreconnectapi/bundle-ids.md)
+### Related Documentation
+- [Bundle IDs](../../AppStoreConnectAPI/bundle-ids.md)
   Manage the bundle IDs that uniquely identify your apps.
-- [var allowedPickerModes: SCContentSharingPickerMode](sccontentsharingpickerconfiguration-swift.struct/allowedpickermodes.md)
+### Control streaming selections
+- [var allowedPickerModes: SCContentSharingPickerMode](./allowedpickermodes.md)
   The content-selection modes supported by the picker.
-- [var allowsChangingSelectedContent: Bool](sccontentsharingpickerconfiguration-swift.struct/allowschangingselectedcontent.md)
+- [var allowsChangingSelectedContent: Bool](./allowschangingselectedcontent.md)
   A Boolean value that indicates if the present stream can change to a different source.
-- [var excludedWindowIDs: Array<Int>](sccontentsharingpickerconfiguration-swift.struct/excludedwindowids.md)
+- [var excludedWindowIDs: Array<Int>](./excludedwindowids.md)
   A list of window IDs to exclude from the sharing picker.
 
 

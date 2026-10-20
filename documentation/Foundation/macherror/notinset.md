@@ -1,7 +1,8 @@
 # notInSet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receive right is not a member of a port set.
 

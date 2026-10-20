@@ -1,14 +1,15 @@
 # debug_cpu_performance_degradation_factor
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 int debug_cpu_performance_degradation_factor;
 ```
 

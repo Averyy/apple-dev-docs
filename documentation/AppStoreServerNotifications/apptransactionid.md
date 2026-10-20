@@ -1,7 +1,8 @@
 # appTransactionId
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unique identifier of the app download transaction.
 
@@ -10,17 +11,17 @@ The unique identifier of the app download transaction.
 
 ## Declaration
 
-```swift
+```
 string appTransactionId
 ```
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 #### Discussion
 
-For more information, see [`appTransactionID`](https://developer.apple.com/documentation/storekit/apptransaction/apptransactionid).
+For more information, see [`appTransactionID`](../StoreKit/apptransaction/apptransactionid.md).
 
 
 ---

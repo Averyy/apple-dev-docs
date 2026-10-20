@@ -1,13 +1,14 @@
 # USDPreviewSession.OptimizationSteps
 
 **Framework**: Spatial Preview  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of optimization steps to apply to a USD stage before previewing on a device.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,21 +19,21 @@ struct OptimizationSteps
 ## Topics
 
 ### Type Properties
-- [static let compressed: USDPreviewSession.OptimizationSteps](usdpreviewsession/optimizationsteps/compressed.md)
+- [static let compressed: USDPreviewSession.OptimizationSteps](./optimizationsteps/compressed.md)
   Allows the USD stage’s textures and meshes to be compressed before previewing on a device. Reduces the transmission file size of the USD stage by compressing textures and meshes to minimize the data sent, and is only applied when the stage exceeds the compression threshold. Can be combined with `.optimized` — compression runs after the `.optimized` optimization step on the resulting stage.
-- [static let optimized: USDPreviewSession.OptimizationSteps](usdpreviewsession/optimizationsteps/optimized.md)
+- [static let optimized: USDPreviewSession.OptimizationSteps](./optimizationsteps/optimized.md)
   Allows the USD stage to be analyzed and potentially simplified or replaced with a proxy before previewing on a device. The USD analysis decides at runtime whether the stage can be passed as-is, simplified in place, or swapped for a lower-fidelity proxy based on scene complexity and session capabilities.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

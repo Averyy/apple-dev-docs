@@ -1,7 +1,8 @@
 # canStepForward
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item supports stepping forward.
 
@@ -21,15 +22,20 @@ nonisolated
 var canStepForward: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canStepForward;
+```
+
 #### Discussion
 
 Once the item becomes ready to play, the value of this property does not change. This behavior applies even when boundary conditions, such as when the item’s current time is equal to its end time, have been reached.
 
 ## See Also
 
-- [var canStepBackward: Bool](avplayeritem/canstepbackward.md)
+### Stepping through media
+- [var canStepBackward: Bool](./canstepbackward.md)
   A Boolean value that indicates whether the item supports stepping backward.
-- [func step(byCount: Int)](avplayeritem/step(bycount:).md)
+- [func step(byCount: Int)](./step%28bycount%29.md)
   Moves the player item’s current time forward or backward by a specified number of steps.
 
 

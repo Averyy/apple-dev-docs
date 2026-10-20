@@ -1,7 +1,8 @@
 # azimuthUnitVector
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the azimuth unit vector of Apple Pencil in the specified view.
 
@@ -17,17 +18,22 @@ A value that represents the azimuth unit vector of Apple Pencil in the specified
 var azimuthUnitVector: CGVector { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CGVector azimuthUnitVector;
+```
+
 ## See Also
 
-- [var location: CGPoint](uipencilhoverpose/location.md)
+### Getting the hover characteristics
+- [var location: CGPoint](./location.md)
   The location of an Apple Pencil above the view’s bounds, in view’s coordinate space.
-- [var altitudeAngle: CGFloat](uipencilhoverpose/altitudeangle.md)
+- [var altitudeAngle: CGFloat](./altitudeangle.md)
   A value that represents the altitude angle of Apple Pencil.
-- [var azimuthAngle: CGFloat](uipencilhoverpose/azimuthangle.md)
+- [var azimuthAngle: CGFloat](./azimuthangle.md)
   A value that represents the azimuth angle of Apple Pencil.
-- [var rollAngle: CGFloat](uipencilhoverpose/rollangle.md)
+- [var rollAngle: CGFloat](./rollangle.md)
   A value that represents the barrel-roll angle of Apple Pencil.
-- [var zOffset: CGFloat](uipencilhoverpose/zoffset.md)
+- [var zOffset: CGFloat](./zoffset.md)
   A value that represents the normalized distance between the screen and Apple Pencil.
 
 

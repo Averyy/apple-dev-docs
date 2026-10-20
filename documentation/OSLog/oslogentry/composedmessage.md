@@ -1,7 +1,8 @@
 # composedMessage
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fully formatted message for the entry.
 
@@ -20,9 +21,14 @@ The fully formatted message for the entry.
 var composedMessage: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * composedMessage;
+```
+
 ## See Also
 
-- [var date: Date](oslogentry/date.md)
+### Accessing Log Entry Data
+- [var date: Date](./date.md)
   The timestamp of the entry.
 
 

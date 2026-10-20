@@ -1,7 +1,8 @@
 # MPRemoteCommandHandlerStatus.commandFailed
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested command failed to execute.
 
@@ -10,7 +11,7 @@ The requested command failed to execute.
 - iPadOS 7.1+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,15 +21,20 @@ The requested command failed to execute.
 case commandFailed
 ```
 
+```c
+MPRemoteCommandHandlerStatusCommandFailed
+```
+
 ## See Also
 
-- [MPRemoteCommandHandlerStatus.success](mpremotecommandhandlerstatus/success.md)
+### Constants
+- [MPRemoteCommandHandlerStatus.success](./success.md)
   The requested command executed successfully.
-- [MPRemoteCommandHandlerStatus.noSuchContent](mpremotecommandhandlerstatus/nosuchcontent.md)
+- [MPRemoteCommandHandlerStatus.noSuchContent](./nosuchcontent.md)
   The requested command couldn’t execute because its required content isn’t available.
-- [MPRemoteCommandHandlerStatus.noActionableNowPlayingItem](mpremotecommandhandlerstatus/noactionablenowplayingitem.md)
+- [MPRemoteCommandHandlerStatus.noActionableNowPlayingItem](./noactionablenowplayingitem.md)
   The requested command couldn’t execute because no Now Playing item is available.
-- [MPRemoteCommandHandlerStatus.deviceNotFound](mpremotecommandhandlerstatus/devicenotfound.md)
+- [MPRemoteCommandHandlerStatus.deviceNotFound](./devicenotfound.md)
   The requested command couldn’t execute because a required device isn’t available.
 
 

@@ -1,7 +1,8 @@
 # draggedItemIndex
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the dragged item under the cursor.
 

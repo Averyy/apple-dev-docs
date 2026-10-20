@@ -1,7 +1,8 @@
 # buildDefaultDistributedRemoteActorExecutor(_:)
 
 **Framework**: Distributed  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtain the unowned `SerialExecutor` that is used by by remote distributed actor references. The executor is shared between all remote default executor remote distributed actors, and it will crash if any job is enqueued on it.
 
@@ -11,7 +12,7 @@ Obtain the unowned `SerialExecutor` that is used by by remote distributed actor 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -28,11 +29,12 @@ If one intends to use a distributed actor’s executor to schedule work on it, o
 
 ## See Also
 
-- [protocol DistributedActor](distributedactor.md)
+### Distributed Actors
+- [protocol DistributedActor](./distributedactor.md)
   Common protocol to which all distributed actors conform implicitly.
-- [protocol DistributedActorSystem](distributedactorsystem.md)
+- [protocol DistributedActorSystem](./distributedactorsystem.md)
   A distributed actor system underpins and implements all functionality of distributed actors.
-- [macro Resolvable()](resolvable().md)
+- [macro Resolvable()](./resolvable%28%29.md)
   Enables the attached to protocol to be resolved as remote distributed actor reference.
 
 

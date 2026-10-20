@@ -1,7 +1,8 @@
 # configurations
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configurations that describe how to manage the persisted data for specific groups of models.
 
@@ -25,13 +26,14 @@ var configurations: Set<ModelConfiguration> { get set }
 
 Use this property to access or update the configurations that the container uses to manage model data. The default value is the set of configurations you specified when calling one of the container’s initializers.
 
-> ❗ **Important**: A container must have at least one configuration. If you don’t specify any at initialization, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
+> ❗ **Important**: A container must have at least one configuration. If you don’t specify any at initialization, the framework creates an instance of [`ModelConfiguration`](../modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 
 ## See Also
 
-- [let schema: Schema](modelcontainer/schema.md)
+### Managing schema and configuration details
+- [let schema: Schema](./schema.md)
   The schema that maps your app’s model classes to the associated data in the app’s persistent storage.
-- [let migrationPlan: (any SchemaMigrationPlan.Type)?](modelcontainer/migrationplan.md)
+- [let migrationPlan: (any SchemaMigrationPlan.Type)?](./migrationplan.md)
   The plan that describes the evolution of your app’s schema and how to migrate between specific versions.
 
 

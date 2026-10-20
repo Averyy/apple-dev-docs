@@ -1,6 +1,8 @@
 # Analyzing a selfie and visualizing its content
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [AnalyzingASelfieAndVisualizingItsContent.zip](https://docs-assets.developer.apple.com/published/747e6482a879/AnalyzingASelfieAndVisualizingItsContent.zip)
 
 Calculate face-capture quality and visualize facial features for a collection of images using the Vision framework.
 
@@ -12,22 +14,22 @@ Calculate face-capture quality and visualize facial features for a collection of
 
 #### Overview
 
-Use the `Vision` framework to detect faces and facial features in a photo. This framework can analyze a photo to retrieve metrics such as face-capture quality and visual information like facial landmarks and face rectangles. This sample demonstrates how to locate all the faces in a selfie through the [`DetectFaceRectanglesRequest`](detectfacerectanglesrequest.md). The sample then uses [`DetectFaceCaptureQualityRequest`](detectfacecapturequalityrequest.md) to obtain capture-quality scores, and ``DetectFaceLandmarksRequest` to display outlines around each facial landmark, like the eyes or nose.
+Use the `Vision` framework to detect faces and facial features in a photo. This framework can analyze a photo to retrieve metrics such as face-capture quality and visual information like facial landmarks and face rectangles. This sample demonstrates how to locate all the faces in a selfie through the [`DetectFaceRectanglesRequest`](./detectfacerectanglesrequest.md). The sample then uses [`DetectFaceCaptureQualityRequest`](./detectfacecapturequalityrequest.md) to obtain capture-quality scores, and ``DetectFaceLandmarksRequest` to display outlines around each facial landmark, like the eyes or nose.
 
-![An illustration of a person’s face, and a box around the face depicting it being detected.](/images/Vision/face-detection-box@2x.png)
+![An illustration of a person’s face, and a box around the face depicting it being detected.](https://developer.apple.com/tutorials/images/Vision/face-detection-box@2x.png)
 
 Face-capture quality is a holistic measure that considers scene lighting, blur, occlusion, expression, pose, focus, and more. It provides a score that the app uses to sort the collection of selfies from best to worst. The pretrained machine-learning model scores a capture lower if, for example, the image contains low light or bad focus, or if the person has a negative expression. These scores are floating-point values between 0.0 and 1.0.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample app, you need the following:
 
 - Xcode 16 or later
 - iPhone with iOS 18 or later
 
-##### Selecting the Selfies
+##### Selecting the selfies
 
-The sample uses [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [`Bringing Photos picker to your SwiftUI app`](https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app):
+The sample uses [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md):
 
 ```swift
 PhotosPicker(selection: $selectedPhotos, maxSelectionCount: 5, matching: .images) {
@@ -45,9 +47,9 @@ for photo in selectedPhotos {
 }
 ```
 
-##### Perform the Requests and Analyze the Selfies
+##### Perform the requests and analyze the selfies
 
-To analyze a selfie, the sample first instantiates the three `Vision` requests. The sample then performs `DetectFaceRectanglesRequest` to locate the faces in the photo, and uses the returned `FaceObservation` objects as the objects the other two requests process. The app sets this functionality through the [`inputFaceObservations`](detectfacelandmarksrequest/inputfaceobservations.md) property.
+To analyze a selfie, the sample first instantiates the three `Vision` requests. The sample then performs `DetectFaceRectanglesRequest` to locate the faces in the photo, and uses the returned `FaceObservation` objects as the objects the other two requests process. The app sets this functionality through the [`inputFaceObservations`](./detectfacelandmarksrequest/inputfaceobservations.md) property.
 
 By default, `DetectFaceLandmarksRequest` and `DetectFaceCaptureQualityRequest` need to locate the faces first before performing the rest of the request. Setting the `inputFaceObservations` property prevents the sample from performing `DetectFaceRectanglesRequest` more than once (which is unnecessary).
 
@@ -87,7 +89,7 @@ func processSelfie(photo: Data) async throws -> Selfie {
 }
 ```
 
-Analyzing a large collection of selfies with `Vision` requests can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](https://developer.apple.com/documentation/swift/taskgroup), the app processes the images in parallel. When the `processSelfie` method returns a new `Selfie` object, the app adds it to the `selfies` array. After the app processes all the images, it sorts the `selfies` array by capture-quality score. The function returns the new array of `Selfie` objects:
+Analyzing a large collection of selfies with `Vision` requests can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](../Swift/taskgroup.md), the app processes the images in parallel. When the `processSelfie` method returns a new `Selfie` object, the app adds it to the `selfies` array. After the app processes all the images, it sorts the `selfies` array by capture-quality score. The function returns the new array of `Selfie` objects:
 
 ```swift
 func processAllSelfies(photos: [Data]) async throws -> [Selfie] {
@@ -113,9 +115,9 @@ func processAllSelfies(photos: [Data]) async throws -> [Selfie] {
 }
 ```
 
-##### Display Face Rectangles
+##### Display face rectangles
 
-The sample provides custom `Shape` implementations to draw a rectangle around each face, and the face landmarks. For face rectangles, the app uses the [`boundingBox`](boundingboxproviding/boundingbox.md) property on a `FaceObservation`. The `boundingBox` property contains the location and dimensions of the box in the form of a [`NormalizedRect`](normalizedrect.md). The sample converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect), and returns a [`Path`](https://developer.apple.com/documentation/swiftui/path) to draw the rectangle:
+The sample provides custom `Shape` implementations to draw a rectangle around each face, and the face landmarks. For face rectangles, the app uses the [`boundingBox`](./boundingboxproviding/boundingbox.md) property on a `FaceObservation`. The `boundingBox` property contains the location and dimensions of the box in the form of a [`NormalizedRect`](./normalizedrect.md). The sample converts the `NormalizedRect` to a [`CGRect`](../CoreFoundation/cgrect.md), and returns a [`Path`](../SwiftUI/path.md) to draw the rectangle:
 
 ```swift
 struct BoundingBox: Shape {
@@ -143,11 +145,11 @@ The sample creates a `BoundingBox` object for each face in the photo, and overla
 }
 ```
 
-##### Display Face Landmarks
+##### Display face landmarks
 
 To create and display face landmarks on the image, the sample uses the custom `FaceLandmark` structure. Each `FaceObservation` from the `DetectFaceLandmarksRequest` contains a collection of landmarks as regions. A region contains all the points the sample needs to draw the outline. The possible regions are `faceContour`, `innerLips`, `leftEye`, `leftEyebrow`, `leftPupil`, `medianLine`, `nose`, `noseCrest`, `outerLips`, `rightEye`, `rightEyebrow`, and `rightPupil`.
 
-The sample converts a region’s [`NormalizedPoint`](normalizedpoint.md) collection to a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) collection, and draws a path from one point to the next. When it reaches the last point, the sample closes the path:
+The sample converts a region’s [`NormalizedPoint`](./normalizedpoint.md) collection to a [`CGPoint`](../CoreFoundation/cgpoint.md) collection, and draws a path from one point to the next. When it reaches the last point, the sample closes the path:
 
 ```swift
 struct FaceLandmark: Shape {
@@ -187,11 +189,12 @@ For each face `Vision` detects in an image, the sample creates `FaceLandmark` ob
 
 ## See Also
 
-- [struct DetectFaceCaptureQualityRequest](detectfacecapturequalityrequest.md)
+### Facial analysis
+- [struct DetectFaceCaptureQualityRequest](./detectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
-- [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
+- [struct DetectFaceLandmarksRequest](./detectfacelandmarksrequest.md)
   An image analysis request that finds facial features like eyes and mouth in an image.
-- [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
+- [struct DetectFaceRectanglesRequest](./detectfacerectanglesrequest.md)
   A request that finds faces within an image.
 
 

@@ -1,7 +1,8 @@
 # Locale.LanguageCode.IdentifierType.alpha2
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Two-letter alpha-2 code, e.g. “en” for English
 

@@ -1,7 +1,8 @@
 # singles
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier of the association property that returns a collection of the artist’s albums in the *singles* category.
 
@@ -19,6 +20,8 @@ An identifier of the association property that returns a collection of the artis
 ```swift
 static let singles: MusicRelationshipProperty<Artist, Album>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

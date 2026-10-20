@@ -1,23 +1,25 @@
 # wTransferSize
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wTransferSize;
 ```
 
 ## See Also
 
-- [bLength](iousbdfudescriptor/blength.md)
-- [bDescriptorType](iousbdfudescriptor/bdescriptortype.md)
-- [bmAttributes](iousbdfudescriptor/bmattributes.md)
-- [wDetachTimeout](iousbdfudescriptor/wdetachtimeout.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bmAttributes](./bmattributes.md)
+- [wDetachTimeout](./wdetachtimeout.md)
 
 
 ---

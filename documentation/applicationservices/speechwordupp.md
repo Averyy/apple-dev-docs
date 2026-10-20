@@ -1,7 +1,8 @@
 # SpeechWordUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer (UPP) to a word callback function.
 
@@ -14,9 +15,13 @@ Defines a universal procedure pointer (UPP) to a word callback function.
 typealias SpeechWordUPP = SpeechWordProcPtr
 ```
 
+```c
+typedef SpeechWordProcPtr SpeechWordUPP;
+```
+
 #### Discussion
 
-For more information, see the description of the [`SpeechWordProcPtr`](speechwordprocptr.md) callback function.
+For more information, see the description of the [`SpeechWordProcPtr`](./speechwordprocptr.md) callback function.
 
 
 ---

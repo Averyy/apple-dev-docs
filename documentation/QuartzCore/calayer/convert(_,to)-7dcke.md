@@ -1,7 +1,8 @@
 # convert(_:to:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the point from the receiver’s coordinate system to the specified layer’s coordinate system.
 
@@ -17,6 +18,10 @@ Converts the point from the receiver’s coordinate system to the specified laye
 
 ```swift
 func convert(_ p: CGPoint, to l: CALayer?) -> CGPoint
+```
+
+```objc
+- (CGPoint) convertPoint:(CGPoint) p toLayer:(CALayer *) l;
 ```
 
 #### Return Value
@@ -44,7 +49,7 @@ yellowLayer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
 
 The following figure shows the two layers and an overlaid point (rendered as a blue cross) with a position of `(50.0, 50.0)` in the red layer’s coordinate system.
 
-![Layers with different coordinate systems](/images/com.apple.quartzcore/media-2850332@2x.png)
+![Layers with different coordinate systems](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2850332@2x.png)
 
 The following code shows how you can find the coordinates of that point in the yellow layer’s coordinate system.
 
@@ -60,15 +65,16 @@ print(redLayer.convert(position, to: yellowLayer))
 
 ## See Also
 
-- [func convert(CGPoint, from: CALayer?) -> CGPoint](calayer/convert(_:from:)-8kl76.md)
+### Mapping between coordinate and time spaces
+- [func convert(CGPoint, from: CALayer?) -> CGPoint](./convert%28_,from%29-8kl76.md)
   Converts the point from the specified layer’s coordinate system to the receiver’s coordinate system.
-- [func convert(CGRect, from: CALayer?) -> CGRect](calayer/convert(_:from:)-4kx9l.md)
+- [func convert(CGRect, from: CALayer?) -> CGRect](./convert%28_,from%29-4kx9l.md)
   Converts the rectangle from the specified layer’s coordinate system to the receiver’s coordinate system.
-- [func convert(CGRect, to: CALayer?) -> CGRect](calayer/convert(_:to:)-tly5.md)
+- [func convert(CGRect, to: CALayer?) -> CGRect](./convert%28_,to%29-tly5.md)
   Converts the rectangle from the receiver’s coordinate system to the specified layer’s coordinate system.
-- [func convertTime(CFTimeInterval, from: CALayer?) -> CFTimeInterval](calayer/converttime(_:from:).md)
+- [func convertTime(CFTimeInterval, from: CALayer?) -> CFTimeInterval](./converttime%28_,from%29.md)
   Converts the time interval from the specified layer’s time space to the receiver’s time space.
-- [func convertTime(CFTimeInterval, to: CALayer?) -> CFTimeInterval](calayer/converttime(_:to:).md)
+- [func convertTime(CFTimeInterval, to: CALayer?) -> CFTimeInterval](./converttime%28_,to%29.md)
   Converts the time interval from the receiver’s time space to the specified layer’s time space
 
 

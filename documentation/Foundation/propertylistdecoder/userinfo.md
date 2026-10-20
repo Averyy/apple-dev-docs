@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary you use to customize decoding by providing contextual information.
 
@@ -23,7 +24,8 @@ var userInfo: [CodingUserInfoKey : any Sendable] { get set }
 
 ## See Also
 
-- [func decode<T>(T.Type, from: Data, format: inout PropertyListDecoder.PropertyListFormat) throws -> T](propertylistdecoder/decode(_:from:format:).md)
+### Customizing Decoding
+- [func decode<T>(T.Type, from: Data, format: inout PropertyListDecoder.PropertyListFormat) throws -> T](./decode%28_,from,format%29.md)
   Returns a value of the specified type by decoding a property list using the supplied format.
 
 

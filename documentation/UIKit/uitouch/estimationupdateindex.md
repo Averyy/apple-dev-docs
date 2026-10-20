@@ -1,7 +1,8 @@
 # estimationUpdateIndex
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index number that lets you correlate an updated touch with the original touch.
 
@@ -18,6 +19,10 @@ An index number that lets you correlate an updated touch with the original touch
 var estimationUpdateIndex: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSNumber * estimationUpdateIndex;
+```
+
 #### Discussion
 
 This property contains a unique marker for the current touch data. When the touch contains estimated properties, save this index along with the rest of the touch data to your app’s data structures. When the system reports the actual touch values later, use this index to locate the original data in your app’s data structures and replace the estimated values you stored previously. For example, when a touch contains estimated properties, you might use this property as a key in a dictionary whose value is the object you use to store the touch data.
@@ -26,11 +31,12 @@ The value of this property increases monotonically for each touch that contains 
 
 ## See Also
 
-- [var estimatedProperties: UITouch.Properties](uitouch/estimatedproperties.md)
+### Managing estimated touch attributes
+- [var estimatedProperties: UITouch.Properties](./estimatedproperties.md)
   A set of touch properties whose values contain only estimates.
-- [var estimatedPropertiesExpectingUpdates: UITouch.Properties](uitouch/estimatedpropertiesexpectingupdates.md)
+- [var estimatedPropertiesExpectingUpdates: UITouch.Properties](./estimatedpropertiesexpectingupdates.md)
   The set of touch properties for which updated values are expected in the future.
-- [UITouch.Properties](uitouch/properties.md)
+- [UITouch.Properties](./properties.md)
   A bit mask of touch properties that may get updated.
 
 

@@ -1,14 +1,15 @@
 # smr_node_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct smr_node {
     ...
 } smr_node_t;
@@ -17,8 +18,8 @@ typedef struct smr_node {
 ## Topics
 
 ### Instance Properties
-- [smrn_cb](smr_node_t/4168413-smrn_cb.md)
-- [smrn_next](smr_node_t/4168414-smrn_next.md)
+- [smrn_cb](./smr_node_t/api-4168413-smrn_cb.md)
+- [smrn_next](./smr_node_t/api-4168414-smrn_next.md)
 
 
 ---

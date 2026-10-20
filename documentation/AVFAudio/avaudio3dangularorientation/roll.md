@@ -1,23 +1,28 @@
 # roll
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tilt of the listener’s head.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var roll: Float
+```
+
+```c
+float roll;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The roll axis describes the tilt of the listener’s head, and is perpendicular 
 
 ## See Also
 
-- [var yaw: Float](avaudio3dangularorientation/yaw.md)
+### Getting angular orientation properties
+- [var yaw: Float](./yaw.md)
   The side-to-side movement of the listener’s head.
-- [var pitch: Float](avaudio3dangularorientation/pitch.md)
+- [var pitch: Float](./pitch.md)
   The up-and-down movement of the listener’s head.
 
 

@@ -1,12 +1,15 @@
 # collectionView(_:writeItemsAt:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked after it has been determined that a drag should begin, but before the drag has been started.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.15
+
+> **Deprecated**: Use -collectionView:pasteboardWriterForItemAtIndexPath: instead
 
 ## Declaration
 
@@ -14,15 +17,19 @@ Invoked after it has been determined that a drag should begin, but before the dr
 optional func collectionView(_ collectionView: NSCollectionView, writeItemsAt indexes: IndexSet, to pasteboard: NSPasteboard) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(NSCollectionView *) collectionView writeItemsAtIndexes:(NSIndexSet *) indexes toPasteboard:(NSPasteboard *) pasteboard;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to begin the drag, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) to begin the drag, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-To start the drag, you must first declare the pasteboard types that are supported by sending `pasteboard` a [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) method. You then place the data for the items at the specified indexes on `pasteboard`, and return [`true`](https://developer.apple.com/documentation/swift/true) from the method.
+To start the drag, you must first declare the pasteboard types that are supported by sending `pasteboard` a [`declareTypes(_:owner:)`](../nspasteboard/declaretypes%28_,owner%29.md) method. You then place the data for the items at the specified indexes on `pasteboard`, and return [`true`](../../Swift/true.md) from the method.
 
-The drag image and other drag related information will be set up and provided by the view once this call returns [`true`](https://developer.apple.com/documentation/swift/true).
+The drag image and other drag related information will be set up and provided by the view once this call returns [`true`](../../Swift/true.md).
 
 You need to implement this method for your collection view to be a drag source.
 
@@ -34,19 +41,20 @@ You need to implement this method for your collection view to be a drag source.
 
 ## See Also
 
-- [func collectionView(NSCollectionView, canDragItemsAt: IndexSet, with: NSEvent) -> Bool](nscollectionviewdelegate/collectionview(_:candragitemsat:with:)-39rjh.md)
+### Legacy Collection View Support
+- [func collectionView(NSCollectionView, canDragItemsAt: IndexSet, with: NSEvent) -> Bool](./collectionview%28_,candragitemsat,with%29-39rjh.md)
   Returns a Boolean indicating whether the collection view can begin dragging the specified items.
-- [func collectionView(NSCollectionView, pasteboardWriterForItemAt: Int) -> (any NSPasteboardWriting)?](nscollectionviewdelegate/collectionview(_:pasteboardwriterforitemat:)-7ldvs.md)
+- [func collectionView(NSCollectionView, pasteboardWriterForItemAt: Int) -> (any NSPasteboardWriting)?](./collectionview%28_,pasteboardwriterforitemat%29-7ldvs.md)
   Provides the pasteboard writer for the item at the specified index
-- [func collectionView(NSCollectionView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItemsAt: IndexSet) -> [String]](nscollectionviewdelegate/collectionview(_:namesofpromisedfilesdroppedatdestination:fordraggeditemsat:)-wwec.md)
+- [func collectionView(NSCollectionView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItemsAt: IndexSet) -> [String]](./collectionview%28_,namesofpromisedfilesdroppedatdestination,fordraggeditemsat%29-wwec.md)
   Invoked to return an array of filenames that the receiver promises to create.
-- [func collectionView(NSCollectionView, draggingImageForItemsAt: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](nscollectionviewdelegate/collectionview(_:draggingimageforitemsat:with:offset:)-4yvk5.md)
+- [func collectionView(NSCollectionView, draggingImageForItemsAt: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](./collectionview%28_,draggingimageforitemsat,with,offset%29-4yvk5.md)
   Creates and returns a drag image to represent the specified items during a drag.
-- [func collectionView(NSCollectionView, draggingSession: NSDraggingSession, willBeginAt: NSPoint, forItemsAt: IndexSet)](nscollectionviewdelegate/collectionview(_:draggingsession:willbeginat:foritemsat:)-cpuq.md)
+- [func collectionView(NSCollectionView, draggingSession: NSDraggingSession, willBeginAt: NSPoint, forItemsAt: IndexSet)](./collectionview%28_,draggingsession,willbeginat,foritemsat%29-cpuq.md)
   Notifies your delegate that a drag session is about to begin.
-- [func collectionView(NSCollectionView, validateDrop: any NSDraggingInfo, proposedIndex: UnsafeMutablePointer<Int>, dropOperation: UnsafeMutablePointer<NSCollectionView.DropOperation>) -> NSDragOperation](nscollectionviewdelegate/collectionview(_:validatedrop:proposedindex:dropoperation:).md)
+- [func collectionView(NSCollectionView, validateDrop: any NSDraggingInfo, proposedIndex: UnsafeMutablePointer<Int>, dropOperation: UnsafeMutablePointer<NSCollectionView.DropOperation>) -> NSDragOperation](./collectionview%28_,validatedrop,proposedindex,dropoperation%29.md)
   Validates the specified location to see if it is a valid drop target.
-- [func collectionView(NSCollectionView, acceptDrop: any NSDraggingInfo, index: Int, dropOperation: NSCollectionView.DropOperation) -> Bool](nscollectionviewdelegate/collectionview(_:acceptdrop:index:dropoperation:).md)
+- [func collectionView(NSCollectionView, acceptDrop: any NSDraggingInfo, index: Int, dropOperation: NSCollectionView.DropOperation) -> Bool](./collectionview%28_,acceptdrop,index,dropoperation%29.md)
   Invoked when the mouse is released over a collection view that previously allowed a drop.
 
 

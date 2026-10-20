@@ -1,7 +1,8 @@
 # SWAttributionView.BackgroundStyle
 
 **Framework**: Shared with You  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The background styling of the attribution view’s contents.
 
@@ -19,33 +20,38 @@ The background styling of the attribution view’s contents.
 enum BackgroundStyle
 ```
 
+```c
+enum SWAttributionViewBackgroundStyle : NSInteger;
+```
+
 ## Topics
 
 ### Background styles
-- [SWAttributionView.BackgroundStyle.default](swattributionview/backgroundstyle-swift.enum/default.md)
+- [SWAttributionView.BackgroundStyle.default](./backgroundstyle-swift.enum/default.md)
   The default background style the system chooses.
-- [SWAttributionView.BackgroundStyle.color](swattributionview/backgroundstyle-swift.enum/color.md)
+- [SWAttributionView.BackgroundStyle.color](./backgroundstyle-swift.enum/color.md)
   A non-material background color for the view’s contents, best when placed over monochrome backgrounds.
-- [SWAttributionView.BackgroundStyle.material](swattributionview/backgroundstyle-swift.enum/material.md)
+- [SWAttributionView.BackgroundStyle.material](./backgroundstyle-swift.enum/material.md)
   A material background blur for the view’s contents, best when placed over multicolored backgrounds.
 ### Initializers
-- [init?(rawValue: Int)](swattributionview/backgroundstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./backgroundstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SWAttributionView.DisplayContext](swattributionview/displaycontext-swift.enum.md)
+### Customizing the view
+- [SWAttributionView.DisplayContext](./displaycontext-swift.enum.md)
   The context for the content that influences the ranking of this view’s highlight.
-- [SWAttributionView.HorizontalAlignment](swattributionview/horizontalalignment-swift.enum.md)
+- [SWAttributionView.HorizontalAlignment](./horizontalalignment-swift.enum.md)
   The horizontal alignment of attribution view’s contents.
 
 

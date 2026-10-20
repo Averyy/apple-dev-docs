@@ -1,7 +1,8 @@
 # performRequests(_:customMethods:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an authorization request from the provided array using a custom authorization method.
 
@@ -17,30 +18,31 @@ func performRequests(_ requests: [ASAuthorizationRequest], customMethods: [ASAut
 
 #### Return Value
 
-The request’s outcome. For more information, see [`ASAuthorizationResult`](asauthorizationresult.md).
+The request’s outcome. For more information, see [`ASAuthorizationResult`](../asauthorizationresult.md).
 
 #### Discussion
 
 The framework checks each authorization request in the array against the credentials available on the person’s device; the more credential types your app supports, the more options a person can choose from.
 
-If the return value is [`ASAuthorizationResult.customMethod(_:)`](asauthorizationresult/custommethod(_:).md), use the case’s associated value to access the chosen authorization method.
+If the return value is [`ASAuthorizationResult.customMethod(_:)`](../asauthorizationresult/custommethod%28_%29.md), use the case’s associated value to access the chosen authorization method.
 
 ## Parameters
 
 - `requests`: An array of supported authorization requests.
-- `customMethods`: An array of custom authorization methods to display in the system authorization UI. For more information, see [`ASAuthorizationCustomMethod`](asauthorizationcustommethod.md).
+- `customMethods`: An array of custom authorization methods to display in the system authorization UI. For more information, see [`ASAuthorizationCustomMethod`](../asauthorizationcustommethod.md).
 
 ## See Also
 
-- [func performRequest(ASAuthorizationRequest) async throws -> ASAuthorizationResult](authorizationcontroller/performrequest(_:).md)
+### Performing requests
+- [func performRequest(ASAuthorizationRequest) async throws -> ASAuthorizationResult](./performrequest%28_%29.md)
   Performs the specified authorization request.
-- [func performRequests([ASAuthorizationRequest]) async throws -> ASAuthorizationResult](authorizationcontroller/performrequests(_:).md)
+- [func performRequests([ASAuthorizationRequest]) async throws -> ASAuthorizationResult](./performrequests%28_%29.md)
   Performs an authorization request from the provided array.
-- [func performRequest(ASAuthorizationRequest, options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](authorizationcontroller/performrequest(_:options:).md)
+- [func performRequest(ASAuthorizationRequest, options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](./performrequest%28_,options%29.md)
   Performs the specified authorization request with explicit options.
-- [func performRequests([ASAuthorizationRequest], options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](authorizationcontroller/performrequests(_:options:).md)
+- [func performRequests([ASAuthorizationRequest], options: ASAuthorizationController.RequestOptions) async throws -> ASAuthorizationResult](./performrequests%28_,options%29.md)
   Performs an authorization request, with explicit options, from the provided array.
-- [func performRequest(ASAuthorizationRequest, customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult](authorizationcontroller/performrequest(_:custommethods:).md)
+- [func performRequest(ASAuthorizationRequest, customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult](./performrequest%28_,custommethods%29.md)
   Performs the authorization request using a custom authorization method.
 
 

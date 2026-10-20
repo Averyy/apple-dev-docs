@@ -1,7 +1,8 @@
 # authorizationController(controller:didCompleteWithAuthorization:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when authorization completes successfully.
 
@@ -20,10 +21,14 @@ Tells the delegate when authorization completes successfully.
 optional func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization)
 ```
 
+```objc
+- (void) authorizationController:(ASAuthorizationController *) controller didCompleteWithAuthorization:(ASAuthorization *) authorization;
+```
+
 ## Mentions
 
-- [Supporting passkeys](supporting-passkeys.md)
-- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
+- [Supporting passkeys](../supporting-passkeys.md)
+- [Supporting Security Key Authentication Using Physical Keys](../supporting-security-key-authentication-using-physical-keys.md)
 
 ## Parameters
 
@@ -32,9 +37,10 @@ optional func authorizationController(controller: ASAuthorizationController, did
 
 ## See Also
 
-- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](asauthorizationcontrollerdelegate/authorizationcontroller(_:didcompletewithcustommethod:).md)
+### Handling Successful Authorization
+- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](./authorizationcontroller%28_,didcompletewithcustommethod%29.md)
   Informs the delegate when authorization completes, and specifies the custom method the user selected.
-- [class ASAuthorization](asauthorization.md)
+- [class ASAuthorization](../asauthorization.md)
   The encapsulation of a successful authorization by a controller.
 
 

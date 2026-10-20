@@ -1,7 +1,8 @@
 # Campaign.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable run state for a campaign.
 
@@ -10,13 +11,18 @@ Advertiser-configurable run state for a campaign.
 
 ## Declaration
 
-```swift
+```
 string Campaign.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
+- `PAUSED`: The advertiser paused the campaign. No ads serve until the status changes to `ENABLED`.
+
 #### Discussion
 
-This field directly controls auction eligibility for the campaign, independent of the system-computed [`Campaign.SystemStatus`](campaign/systemstatus-data.typealias.md).
+This field directly controls auction eligibility for the campaign, independent of the system-computed [`Campaign.SystemStatus`](./systemstatus-data.typealias.md).
 
 ##### Example
 
@@ -26,7 +32,7 @@ This field directly controls auction eligibility for the campaign, independent o
 }
 ```
 
-See [`CampaignStatus`](campaignstatus.md) for additional context.
+See [`CampaignStatus`](../campaignstatus.md) for additional context.
 
 
 ---

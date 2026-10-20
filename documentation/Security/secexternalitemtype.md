@@ -1,7 +1,8 @@
 # SecExternalItemType
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The import item type.
 
@@ -14,33 +15,37 @@ The import item type.
 enum SecExternalItemType
 ```
 
+```c
+enum SecExternalItemType : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [SecExternalItemType.itemTypeUnknown](secexternalitemtype/itemtypeunknown.md)
+- [SecExternalItemType.itemTypeUnknown](./secexternalitemtype/itemtypeunknown.md)
   Indicates that the caller does not know the type of information being imported or exported.
-- [SecExternalItemType.itemTypePrivateKey](secexternalitemtype/itemtypeprivatekey.md)
+- [SecExternalItemType.itemTypePrivateKey](./secexternalitemtype/itemtypeprivatekey.md)
   Indicates a private key.
-- [SecExternalItemType.itemTypePublicKey](secexternalitemtype/itemtypepublickey.md)
+- [SecExternalItemType.itemTypePublicKey](./secexternalitemtype/itemtypepublickey.md)
   Indicates a public key.
-- [SecExternalItemType.itemTypeSessionKey](secexternalitemtype/itemtypesessionkey.md)
+- [SecExternalItemType.itemTypeSessionKey](./secexternalitemtype/itemtypesessionkey.md)
   Indicates a session key.
-- [SecExternalItemType.itemTypeCertificate](secexternalitemtype/itemtypecertificate.md)
+- [SecExternalItemType.itemTypeCertificate](./secexternalitemtype/itemtypecertificate.md)
   Indicates a certificate.
-- [SecExternalItemType.itemTypeAggregate](secexternalitemtype/itemtypeaggregate.md)
+- [SecExternalItemType.itemTypeAggregate](./secexternalitemtype/itemtypeaggregate.md)
   Indicates a set of certificates or certificates and private keys.
 ### Initializers
-- [init?(rawValue: UInt32)](secexternalitemtype/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./secexternalitemtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

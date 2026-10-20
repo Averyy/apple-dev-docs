@@ -1,7 +1,8 @@
 # NSEvent.EventSubtype.touch
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A touch event occurred.
 
@@ -14,13 +15,18 @@ A touch event occurred.
 case touch
 ```
 
+```c
+NSEventSubtypeTouch
+```
+
 ## See Also
 
-- [static var mouseEvent: NSEvent.EventSubtype](nsevent/eventsubtype/mouseevent.md)
+### Getting Other Subtypes
+- [static var mouseEvent: NSEvent.EventSubtype](./mouseevent.md)
   A mouse event occurred.
-- [static var tabletPoint: NSEvent.EventSubtype](nsevent/eventsubtype/tabletpoint.md)
+- [static var tabletPoint: NSEvent.EventSubtype](./tabletpoint.md)
   A tablet-pointer event occurred.
-- [static var tabletProximity: NSEvent.EventSubtype](nsevent/eventsubtype/tabletproximity.md)
+- [static var tabletProximity: NSEvent.EventSubtype](./tabletproximity.md)
   A tablet-proximity event occurred.
 
 

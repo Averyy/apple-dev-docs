@@ -1,7 +1,8 @@
 # readAttributeUserActiveModeTriggerHint(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeUserActiveModeTriggerHint(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeUserActiveModeTriggerHint() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeUserActiveModeTriggerHintWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

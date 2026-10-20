@@ -1,7 +1,8 @@
 # GameCenterActivityLocalizationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for creating a localization for a Game Center activity.
 
@@ -10,14 +11,14 @@ The request body for creating a localization for a Game Center activity.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityLocalizationCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityLocalizationCreateRequest.Data](gamecenteractivitylocalizationcreaterequest/data-data.dictionary.md)
+- [object GameCenterActivityLocalizationCreateRequest.Data](./gamecenteractivitylocalizationcreaterequest/data-data.dictionary.md)
   The request body you use to create a Game Center activity localization.
 
 ## Properties
@@ -26,15 +27,16 @@ object GameCenterActivityLocalizationCreateRequest
 
 ## See Also
 
-- [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)
+### Objects
+- [object GameCenterActivityLocalization](./gamecenteractivitylocalization.md)
   The localized name, description, and image for a Game Center activity in a specific language.
-- [object GameCenterActivityLocalizationResponse](gamecenteractivitylocalizationresponse.md)
+- [object GameCenterActivityLocalizationResponse](./gamecenteractivitylocalizationresponse.md)
   A response containing a single localization for a Game Center activity.
-- [object GameCenterActivityLocalizationUpdateRequest](gamecenteractivitylocalizationupdaterequest.md)
+- [object GameCenterActivityLocalizationUpdateRequest](./gamecenteractivitylocalizationupdaterequest.md)
   The request body you use to update an activity localization.
-- [object GameCenterActivityLocalizationsResponse](gamecenteractivitylocalizationsresponse.md)
+- [object GameCenterActivityLocalizationsResponse](./gamecenteractivitylocalizationsresponse.md)
   A response containing a list of localizations for a Game Center activity.
-- [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)
+- [object GameCenterActivityLocalizationImageLinkageResponse](./gamecenteractivitylocalizationimagelinkageresponse.md)
 
 
 ---

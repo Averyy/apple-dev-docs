@@ -1,7 +1,8 @@
 # inputAttributes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertex attributes for the input mesh.
 
@@ -19,7 +20,8 @@ var inputAttributes: [LowLevelDeformation.VertexAttribute]
 
 ## See Also
 
-- [var outputAttributes: [LowLevelDeformation.VertexAttribute]](lowleveldeformation/pipeline/descriptor/outputattributes.md)
+### Specifying vertex attributes
+- [var outputAttributes: [LowLevelDeformation.VertexAttribute]](./outputattributes.md)
   The vertex attributes for the output mesh.
 
 

@@ -1,7 +1,8 @@
 # split
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrangement that places the primary and secondary views side by side along one or more axes.
 
@@ -18,13 +19,16 @@ An arrangement that places the primary and secondary views side by side along on
 static var split: UISplitArrangement { get }
 ```
 
+Available when `Self` is `UISplitArrangement`.
+
 #### Discussion
 
-For more information about an overlay arrangement, see [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+For more information about an overlay arrangement, see [`UISplitArrangement`](../../uisplitarrangement-swift.struct.md).
 
 ## See Also
 
-- [static var overlay: UIOverlayArrangement](uiarrangementviewcontroller/arrangement/overlay.md)
+### Getting arrangements
+- [static var overlay: UIOverlayArrangement](./overlay.md)
   An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
 
 

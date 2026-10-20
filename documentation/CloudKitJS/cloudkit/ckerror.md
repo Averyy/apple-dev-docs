@@ -10,29 +10,30 @@ Property to access the error codes.
 
 ## Declaration
 
-```swift
+```
 const CloudKit.CKError CKError;
 ```
 
 ## See Also
 
-- [DatabaseScope](cloudkit/databasescope.md)
+### Properties
+- [DatabaseScope](./databasescope.md)
   Property to access the enumeration.
-- [Promise](cloudkit/promise.md)
+- [Promise](./promise.md)
   Represents an operation that hasn’t completed yet, but is expected in the future.
-- [QueryFilterComparator](cloudkit/queryfiltercomparator.md)
+- [QueryFilterComparator](./queryfiltercomparator.md)
   Property to access the enumeration.
-- [ReferenceAction](cloudkit/referenceaction.md)
+- [ReferenceAction](./referenceaction.md)
   Property to access the enumeration.
-- [ShareParticipantAcceptanceStatus](cloudkit/shareparticipantacceptancestatus.md)
+- [ShareParticipantAcceptanceStatus](./shareparticipantacceptancestatus.md)
   Property to access the enumeration.
-- [ShareParticipantPermission](cloudkit/shareparticipantpermission.md)
+- [ShareParticipantPermission](./shareparticipantpermission.md)
   Property to access the enumeration.
-- [ShareParticipantType](cloudkit/shareparticipanttype.md)
+- [ShareParticipantType](./shareparticipanttype.md)
   Property to access the enumeration.
-- [ShareRecordType](cloudkit/sharerecordtype.md)
+- [ShareRecordType](./sharerecordtype.md)
   Property to access the class instance.
-- [SubscriptionType](cloudkit/subscriptiontype.md)
+- [SubscriptionType](./subscriptiontype.md)
   Property to access the enumeration.
 
 

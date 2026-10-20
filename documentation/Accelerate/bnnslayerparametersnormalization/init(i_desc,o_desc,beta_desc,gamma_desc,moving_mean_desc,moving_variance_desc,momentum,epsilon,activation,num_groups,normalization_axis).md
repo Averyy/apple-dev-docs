@@ -1,18 +1,21 @@
 # init(i_desc:o_desc:beta_desc:gamma_desc:moving_mean_desc:moving_variance_desc:momentum:epsilon:activation:num_groups:normalization_axis:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new normalization layer parameters structure from the specified parameters.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -22,9 +25,9 @@ init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, beta_desc: BN
 
 #### Discussion
 
-[`moving_mean_desc`](bnnslayerparametersnormalization/moving_mean_desc.md) and [`moving_variance_desc`](bnnslayerparametersnormalization/moving_variance_desc.md) are only applicable to batch- and instance-normalization.
+[`moving_mean_desc`](./moving_mean_desc.md) and [`moving_variance_desc`](./moving_variance_desc.md) are only applicable to batch- and instance-normalization.
 
-> ❗ **Important**:  The gamma and beta descriptors must match the shape of input up to the normalizaton axis. The input and output descriptors must have a layout of [`BNNS.DataLayout.imageCHW`](bnns/datalayout/imagechw.md). The gamma, beta, moving mean, and moving variance descriptors must have a `size[0]` that’s the same as the number of input channels. All arrays must have a data type of `float`.
+> ❗ **Important**:  The gamma and beta descriptors must match the shape of input up to the normalizaton axis. The input and output descriptors must have a layout of [`BNNS.DataLayout.imageCHW`](../bnns/datalayout/imagechw.md). The gamma, beta, moving mean, and moving variance descriptors must have a `size[0]` that’s the same as the number of input channels. All arrays must have a data type of `float`.
 
 ## Parameters
 
@@ -42,7 +45,8 @@ init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, beta_desc: BN
 
 ## See Also
 
-- [init()](bnnslayerparametersnormalization/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new normalization layer parameters structure.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this object tracking provider.
 
@@ -16,13 +17,14 @@ final var description: String { get }
 
 ## See Also
 
-- [var state: DataProviderState](objecttrackingprovider/state.md)
+### Inspecting an object-tracking provider
+- [var state: DataProviderState](./state.md)
   The state of an object-tracking provider.
-- [var allAnchors: [ObjectAnchor]](objecttrackingprovider/allanchors.md)
+- [var allAnchors: [ObjectAnchor]](./allanchors.md)
   An array of all the object anchors the object-tracking provider is tracking.
-- [var anchorUpdates: AnchorUpdateSequence<ObjectAnchor>](objecttrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<ObjectAnchor>](./anchorupdates.md)
   An asynchronous sequence of anchors the framework updates.
-- [ObjectTrackingProvider.Error](objecttrackingprovider/error.md)
+- [ObjectTrackingProvider.Error](./error.md)
   Values that represent an object-tracking error.
 
 

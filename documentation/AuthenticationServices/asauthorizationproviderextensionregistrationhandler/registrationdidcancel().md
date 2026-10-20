@@ -1,7 +1,8 @@
 # registrationDidCancel()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,10 +13,15 @@
 optional func registrationDidCancel()
 ```
 
+```objc
+- (void) registrationDidCancel;
+```
+
 ## See Also
 
-- [func protocolVersion() -> ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](asauthorizationproviderextensionregistrationhandler/protocolversion.md)
-- [func supportedGrantTypes() -> ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionregistrationhandler/supportedgranttypes.md)
+### Instance Methods
+- [func protocolVersion() -> ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](./protocolversion%28%29.md)
+- [func supportedGrantTypes() -> ASAuthorizationProviderExtensionSupportedGrantTypes](./supportedgranttypes%28%29.md)
 
 
 ---

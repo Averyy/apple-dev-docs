@@ -1,7 +1,8 @@
 # kMDItemGPSDOP
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemGPSDOP: CFString!
+```
+
+```c
+const CFStringRef kMDItemGPSDOP;
 ```
 
 

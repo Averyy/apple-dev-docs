@@ -1,7 +1,8 @@
 # SCDisplay
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance that represents a display device.
 
@@ -15,48 +16,53 @@ An instance that represents a display device.
 class SCDisplay
 ```
 
+```objc
+@interface SCDisplay : NSObject
+```
+
 #### Overview
 
 A display object represents a physical display connected to a Mac. Query the display to retrieve its unique identifier and onscreen coordinates.
 
-Retrieve the available displays from an instance of [`SCShareableContent`](scshareablecontent.md). Select a display to capture and use it to create an instance of [`SCContentFilter`](sccontentfilter.md). Apply the filter to an instance of [`SCStream`](scstream.md) to limit its output to content matching your criteria.
+Retrieve the available displays from an instance of [`SCShareableContent`](./scshareablecontent.md). Select a display to capture and use it to create an instance of [`SCContentFilter`](./sccontentfilter.md). Apply the filter to an instance of [`SCStream`](./scstream.md) to limit its output to content matching your criteria.
 
 ## Topics
 
 ### Identifying displays
-- [var displayID: CGDirectDisplayID](scdisplay/displayid.md)
+- [var displayID: CGDirectDisplayID](./scdisplay/displayid.md)
   The Core Graphics display identifier.
 ### Accessing dimensions
-- [var frame: CGRect](scdisplay/frame.md)
+- [var frame: CGRect](./scdisplay/frame.md)
   The frame of the display.
-- [var width: Int](scdisplay/width.md)
+- [var width: Int](./scdisplay/width.md)
   The width of the display in points.
-- [var height: Int](scdisplay/height.md)
+- [var height: Int](./scdisplay/height.md)
   The height of the display in points.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCShareableContent](scshareablecontent.md)
+### Shareable content
+- [class SCShareableContent](./scshareablecontent.md)
   An instance that represents a set of displays, apps, and windows that your app can capture.
-- [class SCShareableContentInfo](scshareablecontentinfo.md)
+- [class SCShareableContentInfo](./scshareablecontentinfo.md)
   An instance that provides information for the content in a given stream.
-- [enum SCShareableContentStyle](scshareablecontentstyle.md)
+- [enum SCShareableContentStyle](./scshareablecontentstyle.md)
   The style of content presented in a stream.
-- [class SCRunningApplication](scrunningapplication.md)
+- [class SCRunningApplication](./scrunningapplication.md)
   An instance that represents an app running on a device.
-- [class SCWindow](scwindow.md)
+- [class SCWindow](./scwindow.md)
   An instance that represents an onscreen window.
 
 

@@ -1,7 +1,8 @@
 # didConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a game controller accessory connects to the device.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a game controller accessory conne
 ```swift
 static var didConnect: NotificationCenter.BaseMessageIdentifier<GCController.DidConnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCController.DidConnectMessage>`.
 
 
 ---

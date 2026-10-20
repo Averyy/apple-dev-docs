@@ -1,7 +1,8 @@
 # isSystemRequest
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request came from a system process.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the request came from a system process.
 var isSystemRequest: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isSystemRequest;
+```
+
 #### Discussion
 
 System requests occur, for example, when the system needs to update a file after receiving a push notification about a change from the remote storage.
 
 ## See Also
 
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileproviderrequest/domainversion.md)
+### Accessing Application Information
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The version of the domain for the request.
-- [var requestingExecutable: URL?](nsfileproviderrequest/requestingexecutable.md)
+- [var requestingExecutable: URL?](./requestingexecutable.md)
   The URL of the requesting executable.
-- [var isFileViewerRequest: Bool](nsfileproviderrequest/isfileviewerrequest.md)
+- [var isFileViewerRequest: Bool](./isfileviewerrequest.md)
   A Boolean value that indicates whether the request came from Finder or related system file browsers.
 
 

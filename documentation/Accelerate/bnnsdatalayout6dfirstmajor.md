@@ -1,7 +1,8 @@
 # BNNSDataLayout6DFirstMajor
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 6D first-major tensor.
 
@@ -18,6 +19,10 @@ A constant that represents a 6D first-major tensor.
 
 ```swift
 var BNNSDataLayout6DFirstMajor: BNNSDataLayout { get }
+```
+
+```c
+BNNSDataLayout6DFirstMajor
 ```
 
 #### Discussion
@@ -37,7 +42,8 @@ The value `(i, j, k, l, m, n)` is at index:
 
 ## See Also
 
-- [var BNNSDataLayout6DLastMajor: BNNSDataLayout](bnnsdatalayout6dlastmajor.md)
+### 6D Data Layouts
+- [var BNNSDataLayout6DLastMajor: BNNSDataLayout](./bnnsdatalayout6dlastmajor.md)
   A constant that represents a 6D last-major tensor.
 
 

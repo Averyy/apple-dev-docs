@@ -1,7 +1,8 @@
 # draw(withExpansionFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the receiver to draw in an expansion frame.
 
@@ -14,9 +15,13 @@ Instructs the receiver to draw in an expansion frame.
 func draw(withExpansionFrame cellFrame: NSRect, in view: NSView)
 ```
 
+```objc
+- (void) drawWithExpansionFrame:(NSRect) cellFrame inView:(NSView *) view;
+```
+
 #### Discussion
 
-This method allows the cell to perform custom expansion tool tip drawing. By default, `NSCell` simply calls [`draw(withFrame:in:)`](nscell/draw(withframe:in:).md).
+This method allows the cell to perform custom expansion tool tip drawing. By default, `NSCell` simply calls [`draw(withFrame:in:)`](./draw%28withframe,in%29.md).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ This method allows the cell to perform custom expansion tool tip drawing. By def
 
 ## See Also
 
-- [func expansionFrame(withFrame: NSRect, in: NSView) -> NSRect](nscell/expansionframe(withframe:in:).md)
+### Managing Expansion Frames
+- [func expansionFrame(withFrame: NSRect, in: NSView) -> NSRect](./expansionframe%28withframe,in%29.md)
   Returns the expansion cell frame for the receiver.
 
 

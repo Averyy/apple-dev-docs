@@ -1,7 +1,8 @@
 # init(edgeInsets:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value object containing the specified edge insets structure.
 
@@ -15,6 +16,10 @@ Creates a new value object containing the specified edge insets structure.
 
 ```swift
 init(edgeInsets insets: NSEdgeInsets)
+```
+
+```objc
++ (NSValue *) valueWithEdgeInsets:(NSEdgeInsets) insets;
 ```
 
 

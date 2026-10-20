@@ -1,7 +1,8 @@
 # bodyEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity of the body that intersected the volume.
 
@@ -18,9 +19,10 @@ let bodyEntity: Entity
 
 ## See Also
 
-- [var bodyComponent: ClothBodyComponent?](clothqueryvolumeevents/newbodyintersections/intersection/bodycomponent.md)
-  The [`ClothBodyComponent`](clothbodycomponent.md) of the intersecting body, if still present on the entity.
-- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/intersection/withparticleindices(_:).md)
+### Inspecting the intersection
+- [var bodyComponent: ClothBodyComponent?](./bodycomponent.md)
+  The [`ClothBodyComponent`](../../../clothbodycomponent.md) of the intersecting body, if still present on the entity.
+- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](./withparticleindices%28_%29.md)
   Provides access to the indices of particles that intersected the volume.
 
 

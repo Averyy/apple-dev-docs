@@ -1,7 +1,8 @@
 # UnsafeMutableRawPointer
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A raw pointer for accessing and manipulating untyped data.
 
@@ -23,7 +24,7 @@ struct UnsafeMutableRawPointer
 
 ## Mentions
 
-- [Using Imported C Functions in Swift](using-imported-c-functions-in-swift.md)
+- [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
 #### Overview
 
@@ -31,11 +32,11 @@ The `UnsafeMutableRawPointer` type provides no automated memory management, no t
 
 Memory that you manually manage can be either *untyped* or *bound* to a specific type. You use the `UnsafeMutableRawPointer` type to access and manage raw bytes in memory, whether or not that memory has been bound to a specific type.
 
-### Understanding a Pointers Memory State
+### Understanding a Pointer’s Memory State
 
 The memory referenced by an `UnsafeMutableRawPointer` instance can be in one of several states. Many pointer operations must only be applied to pointers with memory in a specific state—you must keep track of the state of the memory you are working with and understand the changes to that state that different operations perform. Memory can be untyped and uninitialized, bound to a type and uninitialized, or bound to a type and initialized to a value. Finally, memory that was allocated previously may have been deallocated, leaving existing pointers referencing unallocated memory.
 
-#### Raw Uninitialized Memory
+#### Raw, Uninitialized Memory
 
 Raw memory that has just been allocated is in an *uninitialized, untyped* state. Uninitialized memory must be initialized with values of a type before it can be used with any typed operations.
 
@@ -121,111 +122,114 @@ print(address: &numbers, as: Int.self)
 // Prints "5"
 ```
 
-> ❗ **Important**: The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeMutableRawPointer` initializer. ```swift
-var number = 5
-let numberPointer = UnsafeMutableRawPointer(&number)
-// Accessing 'numberPointer' is undefined behavior.
-```
+> ❗ **Important**: The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeMutableRawPointer` initializer.
+>
+> ```swift
+> var number = 5
+> let numberPointer = UnsafeMutableRawPointer(&number)
+> // Accessing 'numberPointer' is undefined behavior.
+> ```
 
 ## Topics
 
 ### Initializers
-- [init<T>(AutoreleasingUnsafeMutablePointer<T>)](unsafemutablerawpointer/init(_:)-4sdp3.md)
+- [init<T>(AutoreleasingUnsafeMutablePointer<T>)](./unsafemutablerawpointer/init%28_%29-4sdp3.md)
   Creates a new raw pointer from an `AutoreleasingUnsafeMutablePointer` instance.
-- [init?<T>(UnsafeMutablePointer<T>?)](unsafemutablerawpointer/init(_:)-5r9za.md)
+- [init?<T>(UnsafeMutablePointer<T>?)](./unsafemutablerawpointer/init%28_%29-5r9za.md)
   Creates a new raw pointer from the given typed pointer.
-- [init<T>(UnsafeMutablePointer<T>)](unsafemutablerawpointer/init(_:)-7oubm.md)
+- [init<T>(UnsafeMutablePointer<T>)](./unsafemutablerawpointer/init%28_%29-7oubm.md)
   Creates a new raw pointer from the given typed pointer.
-- [init?<T>(AutoreleasingUnsafeMutablePointer<T>?)](unsafemutablerawpointer/init(_:)-7xubw.md)
+- [init?<T>(AutoreleasingUnsafeMutablePointer<T>?)](./unsafemutablerawpointer/init%28_%29-7xubw.md)
   Creates a new raw pointer from an `AutoreleasingUnsafeMutablePointer` instance.
-- [init?(mutating: UnsafeRawPointer?)](unsafemutablerawpointer/init(mutating:)-3ws4f.md)
+- [init?(mutating: UnsafeRawPointer?)](./unsafemutablerawpointer/init%28mutating%29-3ws4f.md)
   Creates a new mutable raw pointer from the given immutable raw pointer.
-- [init(mutating: UnsafeRawPointer)](unsafemutablerawpointer/init(mutating:)-7kfot.md)
+- [init(mutating: UnsafeRawPointer)](./unsafemutablerawpointer/init%28mutating%29-7kfot.md)
   Creates a new mutable raw pointer from the given immutable raw pointer.
 ### Instance Properties
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](unsafemutablerawpointer/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./unsafemutablerawpointer/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
-- [var hashValue: Int](unsafemutablerawpointer/hashvalue.md)
+- [var hashValue: Int](./unsafemutablerawpointer/hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func alignedDown<T>(for: T.Type) -> UnsafeMutableRawPointer](unsafemutablerawpointer/aligneddown(for:).md)
+- [func alignedDown<T>(for: T.Type) -> UnsafeMutableRawPointer](./unsafemutablerawpointer/aligneddown%28for%29.md)
   Obtain the preceding pointer properly aligned to store a value of type `T`.
-- [func alignedDown(toMultipleOf: Int) -> UnsafeMutableRawPointer](unsafemutablerawpointer/aligneddown(tomultipleof:).md)
+- [func alignedDown(toMultipleOf: Int) -> UnsafeMutableRawPointer](./unsafemutablerawpointer/aligneddown%28tomultipleof%29.md)
   Obtain the preceding pointer whose bit pattern is a multiple of `alignment`.
-- [func alignedUp<T>(for: T.Type) -> UnsafeMutableRawPointer](unsafemutablerawpointer/alignedup(for:).md)
+- [func alignedUp<T>(for: T.Type) -> UnsafeMutableRawPointer](./unsafemutablerawpointer/alignedup%28for%29.md)
   Obtain the next pointer properly aligned to store a value of type `T`.
-- [func alignedUp(toMultipleOf: Int) -> UnsafeMutableRawPointer](unsafemutablerawpointer/alignedup(tomultipleof:).md)
+- [func alignedUp(toMultipleOf: Int) -> UnsafeMutableRawPointer](./unsafemutablerawpointer/alignedup%28tomultipleof%29.md)
   Obtain the next pointer whose bit pattern is a multiple of `alignment`.
-- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/assumingmemorybound(to:).md)
+- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/assumingmemorybound%28to%29.md)
   Returns a typed pointer to the memory referenced by this pointer, assuming that the memory is already bound to the specified type.
-- [func bindMemory<T>(to: T.Type, capacity: Int) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/bindmemory(to:capacity:).md)
+- [func bindMemory<T>(to: T.Type, capacity: Int) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/bindmemory%28to,capacity%29.md)
   Binds the memory to the specified type and returns a typed pointer to the bound memory.
-- [func copyBytes(from: UnsafeRawPointer, count: Int)](unsafemutablerawpointer/copybytes(from:count:).md)
-- [func copyMemory(from: UnsafeRawPointer, byteCount: Int)](unsafemutablerawpointer/copymemory(from:bytecount:).md)
+- [func copyBytes(from: UnsafeRawPointer, count: Int)](./unsafemutablerawpointer/copybytes%28from,count%29.md)
+- [func copyMemory(from: UnsafeRawPointer, byteCount: Int)](./unsafemutablerawpointer/copymemory%28from,bytecount%29.md)
   Copies the specified number of bytes from the given raw pointer’s memory into this pointer’s memory.
-- [func deallocate()](unsafemutablerawpointer/deallocate.md)
+- [func deallocate()](./unsafemutablerawpointer/deallocate%28%29.md)
   Deallocates the previously allocated memory block referenced by this pointer.
-- [func deallocate(bytes: Int, alignedTo: Int)](unsafemutablerawpointer/deallocate(bytes:alignedto:).md)
-- [func initializeMemory<T>(as: T.Type, at: Int, count: Int, to: T) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/initializememory(as:at:count:to:).md)
-- [func initializeMemory<C>(as: C.Element.Type, from: C) -> UnsafeMutablePointer<C.Element>](unsafemutablerawpointer/initializememory(as:from:).md)
-- [func initializeMemory<T>(as: T.Type, from: UnsafePointer<T>, count: Int) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/initializememory(as:from:count:).md)
+- [func deallocate(bytes: Int, alignedTo: Int)](./unsafemutablerawpointer/deallocate%28bytes,alignedto%29.md)
+- [func initializeMemory<T>(as: T.Type, at: Int, count: Int, to: T) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/initializememory%28as,at,count,to%29.md)
+- [func initializeMemory<C>(as: C.Element.Type, from: C) -> UnsafeMutablePointer<C.Element>](./unsafemutablerawpointer/initializememory%28as,from%29.md)
+- [func initializeMemory<T>(as: T.Type, from: UnsafePointer<T>, count: Int) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/initializememory%28as,from,count%29.md)
   Initializes the memory referenced by this pointer with the values starting at the given pointer, binds the memory to the values’ type, and returns a typed pointer to the initialized memory.
-- [func initializeMemory<T>(as: T.Type, repeating: T, count: Int) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/initializememory(as:repeating:count:).md)
+- [func initializeMemory<T>(as: T.Type, repeating: T, count: Int) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/initializememory%28as,repeating,count%29.md)
   Initializes the memory referenced by this pointer with the given value, binds the memory to the value’s type, and returns a typed pointer to the initialized memory.
-- [func initializeMemory<T>(as: T.Type, to: consuming T) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/initializememory(as:to:).md)
+- [func initializeMemory<T>(as: T.Type, to: consuming T) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/initializememory%28as,to%29.md)
   Initializes the memory referenced by this pointer with the given value, binds the memory to the value’s type, and returns a typed pointer to the initialized memory.
-- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/load(frombyteoffset:as:).md)
+- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](./unsafemutablerawpointer/load%28frombyteoffset,as%29.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/loadunaligned(frombyteoffset:as:)-3v1mk.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./unsafemutablerawpointer/loadunaligned%28frombyteoffset,as%29-3v1mk.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/loadunaligned(frombyteoffset:as:)-4br03.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./unsafemutablerawpointer/loadunaligned%28frombyteoffset,as%29-4br03.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func moveInitializeMemory<T>(as: T.Type, from: UnsafeMutablePointer<T>, count: Int) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/moveinitializememory(as:from:count:).md)
+- [func moveInitializeMemory<T>(as: T.Type, from: UnsafeMutablePointer<T>, count: Int) -> UnsafeMutablePointer<T>](./unsafemutablerawpointer/moveinitializememory%28as,from,count%29.md)
   Initializes the memory referenced by this pointer with the values starting at the given pointer, binds the memory to the values’ type, deinitializes the source memory, and returns a typed pointer to the newly initialized memory.
-- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawpointer/storebytes(of:tobyteoffset:as:)-9j7bo.md)
+- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](./unsafemutablerawpointer/storebytes%28of,tobyteoffset,as%29-9j7bo.md)
   Stores the given value’s bytes into raw memory at the specified offset.
-- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawpointer/storebytes(of:tobyteoffset:as:)-9mpot.md)
+- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](./unsafemutablerawpointer/storebytes%28of,tobyteoffset,as%29-9mpot.md)
   Stores the given value’s bytes into raw memory at the specified offset.
-- [func withMemoryRebound<T, E, Result>(to: T.Type, capacity: Int, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](unsafemutablerawpointer/withmemoryrebound(to:capacity:_:).md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, capacity: Int, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](./unsafemutablerawpointer/withmemoryrebound%28to,capacity,_%29.md)
   Executes the given closure while temporarily binding memory to the specified number of instances of type `T`.
 ### Type Aliases
-- [UnsafeMutableRawPointer.Pointee](unsafemutablerawpointer/pointee.md)
+- [UnsafeMutableRawPointer.Pointee](./unsafemutablerawpointer/pointee.md)
 ### Type Methods
-- [static func allocate(byteCount: Int, alignment: Int) -> UnsafeMutableRawPointer](unsafemutablerawpointer/allocate(bytecount:alignment:).md)
+- [static func allocate(byteCount: Int, alignment: Int) -> UnsafeMutableRawPointer](./unsafemutablerawpointer/allocate%28bytecount,alignment%29.md)
   Allocates uninitialized memory with the specified size and alignment.
-- [static func allocate(bytes: Int, alignedTo: Int) -> UnsafeMutableRawPointer](unsafemutablerawpointer/allocate(bytes:alignedto:).md)
+- [static func allocate(bytes: Int, alignedTo: Int) -> UnsafeMutableRawPointer](./unsafemutablerawpointer/allocate%28bytes,alignedto%29.md)
 ### Default Implementations
-- [AtomicOptionalRepresentable Implementations](unsafemutablerawpointer/atomicoptionalrepresentable-implementations.md)
-- [AtomicRepresentable Implementations](unsafemutablerawpointer/atomicrepresentable-implementations.md)
-- [Comparable Implementations](unsafemutablerawpointer/comparable-implementations.md)
-- [CustomReflectable Implementations](unsafemutablerawpointer/customreflectable-implementations.md)
-- [Equatable Implementations](unsafemutablerawpointer/equatable-implementations.md)
-- [Hashable Implementations](unsafemutablerawpointer/hashable-implementations.md)
-- [Strideable Implementations](unsafemutablerawpointer/strideable-implementations.md)
+- [AtomicOptionalRepresentable Implementations](./unsafemutablerawpointer/atomicoptionalrepresentable-implementations.md)
+- [AtomicRepresentable Implementations](./unsafemutablerawpointer/atomicrepresentable-implementations.md)
+- [Comparable Implementations](./unsafemutablerawpointer/comparable-implementations.md)
+- [CustomReflectable Implementations](./unsafemutablerawpointer/customreflectable-implementations.md)
+- [Equatable Implementations](./unsafemutablerawpointer/equatable-implementations.md)
+- [Hashable Implementations](./unsafemutablerawpointer/hashable-implementations.md)
+- [Strideable Implementations](./unsafemutablerawpointer/strideable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AtomicOptionalRepresentable](../synchronization/atomicoptionalrepresentable.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Comparable](comparable.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Strideable](strideable.md)
+- [AtomicOptionalRepresentable](../Synchronization/atomicoptionalrepresentable.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Comparable](./comparable.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [Strideable](./strideable.md)
 
 ## See Also
 
-- [struct UnsafeRawPointer](unsaferawpointer.md)
+### Raw Pointers
+- [struct UnsafeRawPointer](./unsaferawpointer.md)
   A raw pointer for accessing untyped data.
-- [struct UnsafeRawBufferPointer](unsaferawbufferpointer.md)
+- [struct UnsafeRawBufferPointer](./unsaferawbufferpointer.md)
   A  nonowning collection interface to the bytes in a region of memory.
-- [struct UnsafeMutableRawBufferPointer](unsafemutablerawbufferpointer.md)
+- [struct UnsafeMutableRawBufferPointer](./unsafemutablerawbufferpointer.md)
   A mutable nonowning collection interface to the bytes in a region of memory.
 
 

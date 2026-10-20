@@ -1,7 +1,8 @@
 # email
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s email address.
 
@@ -20,11 +21,16 @@ The user’s email address.
 var email: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * email;
+```
+
 ## See Also
 
-- [var authorizedScopes: [ASAuthorization.Scope]](asauthorizationappleidcredential/authorizedscopes.md)
+### Getting Contact Information
+- [var authorizedScopes: [ASAuthorization.Scope]](./authorizedscopes.md)
   The contact information the user authorized your app to access.
-- [var fullName: PersonNameComponents?](asauthorizationappleidcredential/fullname.md)
+- [var fullName: PersonNameComponents?](./fullname.md)
   The user’s full name from their Apple ID or a user-submitted value provided from the Sign in with Apple UI.
 
 

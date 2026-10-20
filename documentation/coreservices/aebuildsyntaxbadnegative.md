@@ -1,7 +1,8 @@
 # aeBuildSyntaxBadNegative
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A minus sign “-” was not followed by digits.
 

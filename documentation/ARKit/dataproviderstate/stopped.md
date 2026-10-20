@@ -1,7 +1,8 @@
 # DataProviderState.stopped
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data provider is stopped.
 
@@ -17,11 +18,12 @@ case stopped
 
 ## See Also
 
-- [DataProviderState.initialized](dataproviderstate/initialized.md)
+### Getting the state of a data provider
+- [DataProviderState.initialized](./initialized.md)
   The data provider has been created.
-- [DataProviderState.running](dataproviderstate/running.md)
+- [DataProviderState.running](./running.md)
   The data provider is running.
-- [DataProviderState.paused](dataproviderstate/paused.md)
+- [DataProviderState.paused](./paused.md)
   The data provider is paused.
 
 

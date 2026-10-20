@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.hebrew
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Hebrew in the HID specification.
 

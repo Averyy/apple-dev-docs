@@ -1,7 +1,8 @@
 # HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason.unsupportedAccessoryType
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A kind of accessory for which the home hub doesn’t support transfer.
 
@@ -17,7 +18,8 @@ case unsupportedAccessoryType
 
 ## See Also
 
-- [HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason.unknown](hmhome/provisionalhometransferresult/failedaccessory/reason-swift.enum/unknown.md)
+### Failure reasons
+- [HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason.unknown](./unknown.md)
   An unspecified error prevented the transfer of the accessory to the home hub.
 
 

@@ -1,7 +1,8 @@
 # abbreviation(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the abbreviation for the time zone at a given date.
 
@@ -30,11 +31,12 @@ Note that the abbreviation may be different at different dates. For example, dur
 
 ## See Also
 
-- [var identifier: String](timezone/identifier.md)
+### Getting Time Zone Information
+- [var identifier: String](./identifier.md)
   The geopolitical region identifier that identifies the time zone.
-- [func secondsFromGMT(for: Date) -> Int](timezone/secondsfromgmt(for:).md)
+- [func secondsFromGMT(for: Date) -> Int](./secondsfromgmt%28for%29.md)
   The current difference in seconds between the time zone and Greenwich Mean Time.
-- [static var timeZoneDataVersion: String](timezone/timezonedataversion.md)
+- [static var timeZoneDataVersion: String](./timezonedataversion.md)
   Returns the time zone data version.
 
 

@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this optional value into the given encoder.
 
@@ -20,6 +21,8 @@ Encodes this optional value into the given encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Wrapped` conforms to `Encodable`.
+
 #### Discussion
 
 This function throws an error if any values are invalid for the given encoder’s format.
@@ -30,7 +33,8 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](optional/init(from:).md)
+### Encoding and Decoding
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

@@ -1,7 +1,8 @@
 # audioVolume
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The volume of an audio event.
 
@@ -19,17 +20,22 @@ The volume of an audio event.
 static let audioVolume: CHHapticEvent.ParameterID
 ```
 
+```c
+extern CHHapticEventParameterID CHHapticEventParameterIDAudioVolume;
+```
+
 #### Discussion
 
 This parameter value ranges from 0.0 (silent) to 1.0 (maximum volume).
 
 ## See Also
 
-- [static let audioPan: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopan.md)
+### Audio Event Parameter IDs
+- [static let audioPan: CHHapticEvent.ParameterID](./audiopan.md)
   The stereo panning of an audio event.
-- [static let audioPitch: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopitch.md)
+- [static let audioPitch: CHHapticEvent.ParameterID](./audiopitch.md)
   The pitch of an audio event.
-- [static let audioBrightness: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiobrightness.md)
+- [static let audioBrightness: CHHapticEvent.ParameterID](./audiobrightness.md)
   The high-frequency content of an audio event.
 
 

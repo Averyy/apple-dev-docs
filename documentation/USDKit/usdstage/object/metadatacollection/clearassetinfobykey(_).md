@@ -1,7 +1,8 @@
 # clearAssetInfoByKey(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the authored asset information value at the given key path.
 

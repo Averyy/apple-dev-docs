@@ -1,7 +1,8 @@
 # loopCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the object played the media.
 
@@ -19,6 +20,10 @@ The number of times the object played the media.
 var loopCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger loopCount;
+```
+
 #### Discussion
 
 This value starts at 0 and increments as the player continues to loop the replica player items.
@@ -27,9 +32,10 @@ This property is key-value observable.
 
 ## See Also
 
-- [var status: AVPlayerLooper.Status](avplayerlooper/status-swift.property.md)
+### Observing looping state
+- [var status: AVPlayerLooper.Status](./status-swift.property.md)
   A status that indicates the object’s ability to loop playback.
-- [AVPlayerLooper.Status](avplayerlooper/status-swift.enum.md)
+- [AVPlayerLooper.Status](./status-swift.enum.md)
   Status constants that indicate whether a looper can successfully perform looping playback.
 
 

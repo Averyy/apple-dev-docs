@@ -1,7 +1,8 @@
 # kCVMetalTextureUsage
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The set of options that define how you can use a texture on the GPU.
 
@@ -19,13 +20,18 @@ The set of options that define how you can use a texture on the GPU.
 let kCVMetalTextureUsage: CFString
 ```
 
+```c
+extern CFStringRef const kCVMetalTextureUsage;
+```
+
 #### Discussion
 
-The default value is [`unknown`](https://developer.apple.com/documentation/metal/mtltextureusage/unknown). Use only values which are valid for [`MTLTextureUsage`](https://developer.apple.com/documentation/metal/mtltextureusage).
+The default value is [`unknown`](../Metal/mtltextureusage/unknown.md). Use only values which are valid for [`MTLTextureUsage`](../Metal/mtltextureusage.md).
 
 ## See Also
 
-- [let kCVMetalTextureCacheMaximumTextureAgeKey: CFString](kcvmetaltexturecachemaximumtextureagekey.md)
+### Constants
+- [let kCVMetalTextureCacheMaximumTextureAgeKey: CFString](./kcvmetaltexturecachemaximumtextureagekey.md)
   The length of time, in seconds, before the cache is automatically evicted.
 
 

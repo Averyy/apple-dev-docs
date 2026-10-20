@@ -1,16 +1,19 @@
 # ParentalControlsApplicationRestrictions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures parental controls for apps.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 27.0
+
+> **Deprecated**: Use the declarative management `com.apple.configuration.app.settings` configuration.
 
 ## Declaration
 
-```swift
+```
 object ParentalControlsApplicationRestrictions
 ```
 
@@ -26,7 +29,7 @@ To determine if an app can be launched, the app is evaluated with these rules:
 - If the path to the binary being launched matches or is a subdirectory of a path in the allow list, the binary is allowed to launch.
 - The binary is denied permission to launch.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +41,7 @@ To determine if an app can be launched, the app is evaluated with these rules:
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -100,31 +103,46 @@ To determine if an app can be launched, the app is evaluated with these rules:
 ## Topics
 
 ### Objects
-- [object ParentalControlsApplicationRestrictions.ApplicationItem](parentalcontrolsapplicationrestrictions/applicationitem.md)
+- [object ParentalControlsApplicationRestrictions.ApplicationItem](./parentalcontrolsapplicationrestrictions/applicationitem.md)
   A dictionary defining an app for parental control.
 
 ## Properties
 
-- `allowList` ([ParentalControlsApplicationRestrictions.ApplicationItem]): The allow list of app item dictionaries. Available: macOS 10.15+
-Deprecated: macOS 27+
-- `familyControlsEnabled` (boolean) *(required)*: If `true`, enables app access restrictions. Deprecated: macOS 27+
-- `pathAllowList` ([string]): The paths to apps in the allow list. Available: macOS 10.15+
-Deprecated: macOS 27+
-- `pathBlackList` ([string]): The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later - use `pathDenyList` instead. Deprecated: macOS 10.15+
-- `pathDenyList` ([string]): The paths to apps in the deny list. Available: macOS 10.15+
-Deprecated: macOS 27+
-- `pathWhiteList` ([string]): The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later - use `pathAllowList` instead. Deprecated: macOS 10.15+
-- `whiteList` ([ParentalControlsApplicationRestrictions.ApplicationItem]): The allow list of app item dictionaries. This property is deprecated in macOS 10.15 and later - use `allowList` instead. Deprecated: macOS 10.15+
+- `allowList` ([ParentalControlsApplicationRestrictions.ApplicationItem]) *(deprecated)*: The allow list of app item dictionaries.
+
+  Available: macOS 10.15+
+  Deprecated: macOS 27+
+- `familyControlsEnabled` (boolean) *(required)* *(deprecated)*: If `true`, enables app access restrictions.
+
+  Deprecated: macOS 27+
+- `pathAllowList` ([string]) *(deprecated)*: The paths to apps in the allow list.
+
+  Available: macOS 10.15+
+  Deprecated: macOS 27+
+- `pathBlackList` ([string]) *(deprecated)*: The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later - use `pathDenyList` instead.
+
+  Deprecated: macOS 10.15+
+- `pathDenyList` ([string]) *(deprecated)*: The paths to apps in the deny list.
+
+  Available: macOS 10.15+
+  Deprecated: macOS 27+
+- `pathWhiteList` ([string]) *(deprecated)*: The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later - use `pathAllowList` instead.
+
+  Deprecated: macOS 10.15+
+- `whiteList` ([ParentalControlsApplicationRestrictions.ApplicationItem]) *(deprecated)*: The allow list of app item dictionaries. This property is deprecated in macOS 10.15 and later - use `allowList` instead.
+
+  Deprecated: macOS 10.15+
 
 ## See Also
 
-- [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)
+### Parental controls
+- [object ParentalControlsContentFilter](./parentalcontrolscontentfilter.md)
   The payload that configures the parental control web content filters.
-- [object ParentalControlsDictionary](parentalcontrolsdictionary.md)
+- [object ParentalControlsDictionary](./parentalcontrolsdictionary.md)
   The payload that configures parental control dictionary restrictions.
-- [object ParentalControlsGameCenter](parentalcontrolsgamecenter.md)
+- [object ParentalControlsGameCenter](./parentalcontrolsgamecenter.md)
   The payload that configures Game Center parental controls.
-- [object ParentalControlsTimeLimits](parentalcontrolstimelimits.md)
+- [object ParentalControlsTimeLimits](./parentalcontrolstimelimits.md)
   The payload that configures parental control time limits.
 
 

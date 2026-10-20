@@ -1,7 +1,8 @@
 # stopUpdatingLocation()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the generation of location updates.
 
@@ -20,25 +21,30 @@ Stops the generation of location updates.
 func stopUpdatingLocation()
 ```
 
+```objc
+- (void) stopUpdatingLocation;
+```
+
 #### Discussion
 
-Call this method whenever your code no longer needs to receive location-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need location data. You can always restart the generation of location updates by calling the [`startUpdatingLocation()`](cllocationmanager/startupdatinglocation().md) method again.
+Call this method whenever your code no longer needs to receive location-related events. Disabling event delivery gives the receiver the option of disabling the appropriate hardware (and thereby saving power) when no clients need location data. You can always restart the generation of location updates by calling the [`startUpdatingLocation()`](./startupdatinglocation%28%29.md) method again.
 
 ## See Also
 
-- [func startUpdatingLocation()](cllocationmanager/startupdatinglocation.md)
+### Running the standard location service
+- [func startUpdatingLocation()](./startupdatinglocation%28%29.md)
   Starts the generation of updates that report the user’s current location.
-- [func requestLocation()](cllocationmanager/requestlocation.md)
+- [func requestLocation()](./requestlocation%28%29.md)
   Requests the one-time delivery of the user’s current location.
-- [var pausesLocationUpdatesAutomatically: Bool](cllocationmanager/pauseslocationupdatesautomatically.md)
+- [var pausesLocationUpdatesAutomatically: Bool](./pauseslocationupdatesautomatically.md)
   A Boolean value that indicates whether the location-manager object may pause location updates.
-- [var allowsBackgroundLocationUpdates: Bool](cllocationmanager/allowsbackgroundlocationupdates.md)
+- [var allowsBackgroundLocationUpdates: Bool](./allowsbackgroundlocationupdates.md)
   A Boolean value that indicates whether the app receives location updates when running in the background.
-- [var showsBackgroundLocationIndicator: Bool](cllocationmanager/showsbackgroundlocationindicator.md)
+- [var showsBackgroundLocationIndicator: Bool](./showsbackgroundlocationindicator.md)
   A Boolean value that indicates whether the status bar changes its appearance when an app uses location services in the background.
-- [var activityType: CLActivityType](cllocationmanager/activitytype.md)
+- [var activityType: CLActivityType](./activitytype.md)
   The type of activity the app expects the user to typically perform while in the app’s location session.
-- [enum CLActivityType](clactivitytype.md)
+- [enum CLActivityType](../clactivitytype.md)
   Constants that indicate the type of activity associated with location updates.
 
 

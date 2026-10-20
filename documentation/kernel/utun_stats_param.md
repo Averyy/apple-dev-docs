@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct utun_stats_param {
     ...
 };
@@ -17,9 +17,9 @@ struct utun_stats_param {
 ## Topics
 
 ### Instance Properties
-- [utsp_bytes](utun_stats_param/1506577-utsp_bytes.md)
-- [utsp_errors](utun_stats_param/1506583-utsp_errors.md)
-- [utsp_packets](utun_stats_param/1506574-utsp_packets.md)
+- [utsp_bytes](./utun_stats_param/api-1506577-utsp_bytes.md)
+- [utsp_errors](./utun_stats_param/api-1506583-utsp_errors.md)
+- [utsp_packets](./utun_stats_param/api-1506574-utsp_packets.md)
 
 
 ---

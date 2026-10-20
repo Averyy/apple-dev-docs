@@ -1,7 +1,8 @@
 # makePixelBufferAndCGImageFormat(cgImage:pixelFormat:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new pixel buffer and Core Graphics image format structure from a Core Graphics image.
 
@@ -11,7 +12,7 @@ Returns a new pixel buffer and Core Graphics image format structure from a Core 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,15 @@ Returns a new pixel buffer and Core Graphics image format structure from a Core 
 static func makePixelBufferAndCGImageFormat(cgImage: CGImage, pixelFormat: Format.Type = Format.self) throws -> (pixelBuffer: vImage.PixelBuffer<Format>, cgImageFormat: vImage_CGImageFormat)
 ```
 
+Available when `Format` conforms to `InitializableFromCGImage` and `StaticPixelFormat`.
+
 #### Return Value
 
-A new pixel buffer of type [`vImage.DynamicPixelFormat`](vimage/dynamicpixelformat.md) and a [`vImage_CGImageFormat`](vimage_cgimageformat.md) that describes the ordering and number of the color channels, the size and type of the data in the color channels, and whether or not the data is premultiplied by alpha.
+A new pixel buffer of type [`vImage.DynamicPixelFormat`](../dynamicpixelformat.md) and a [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) that describes the ordering and number of the color channels, the size and type of the data in the color channels, and whether or not the data is premultiplied by alpha.
 
 #### Discussion
 
-Use this function where you know the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. These must match those of the buffer’s `pixelFormat`, otherwise this function returns `nil`.
+Use this function where you know the bits per component and bits per pixel of the [`CGImage`](../../../CoreGraphics/cgimage.md) instance. These must match those of the buffer’s `pixelFormat`, otherwise this function returns `nil`.
 
 ## Parameters
 
@@ -35,7 +38,8 @@ Use this function where you know the bits per component and bits per pixel of th
 
 ## See Also
 
-- [static func makeDynamicPixelBufferAndCGImageFormat(cgImage: CGImage) throws -> (pixelBuffer: vImage.PixelBuffer<vImage.DynamicPixelFormat>, cgImageFormat: vImage_CGImageFormat)](vimage/pixelbuffer/makedynamicpixelbufferandcgimageformat(cgimage:).md)
+### Creating a pixel buffer and image format
+- [static func makeDynamicPixelBufferAndCGImageFormat(cgImage: CGImage) throws -> (pixelBuffer: vImage.PixelBuffer<vImage.DynamicPixelFormat>, cgImageFormat: vImage_CGImageFormat)](./makedynamicpixelbufferandcgimageformat%28cgimage%29.md)
   Returns a new dynamic pixel format pixel buffer and Core Graphics image format structure from a Core Graphics image.
 
 

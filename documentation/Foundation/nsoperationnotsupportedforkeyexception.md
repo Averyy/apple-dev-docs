@@ -1,7 +1,8 @@
 # NSOperationNotSupportedForKeyException
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,35 +14,40 @@
 let NSOperationNotSupportedForKeyException: String
 ```
 
+```c
+extern NSString * const NSOperationNotSupportedForKeyException;
+```
+
 ## See Also
 
-- [static let averageKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/averagekeyvalueoperator.md)
+### Constants
+- [static let averageKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/averagekeyvalueoperator.md)
   The @avg array operator.
-- [static let countKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/countkeyvalueoperator.md)
+- [static let countKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/countkeyvalueoperator.md)
   The @count array operator.
-- [static let distinctUnionOfArraysKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/distinctunionofarrayskeyvalueoperator.md)
+- [static let distinctUnionOfArraysKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/distinctunionofarrayskeyvalueoperator.md)
   The @distinctUnionOfArrays array operator.
-- [static let distinctUnionOfObjectsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/distinctunionofobjectskeyvalueoperator.md)
+- [static let distinctUnionOfObjectsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/distinctunionofobjectskeyvalueoperator.md)
   The @distinctUnionOfObjects array operator.
-- [static let distinctUnionOfSetsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/distinctunionofsetskeyvalueoperator.md)
+- [static let distinctUnionOfSetsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/distinctunionofsetskeyvalueoperator.md)
   The @distinctUnionOfSets array operator.
-- [static let completeWhenUserInactive: FileProtectionType](fileprotectiontype/completewhenuserinactive.md)
-- [static let inflectionConceptsKey: NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey/inflectionconceptskey.md)
+- [static let completeWhenUserInactive: FileProtectionType](./fileprotectiontype/completewhenuserinactive.md)
+- [static let inflectionConceptsKey: NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey/inflectionconceptskey.md)
   A key for the inflection concepts in the formatting context dictionary.
-- [static let maximumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/maximumkeyvalueoperator.md)
+- [static let maximumKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/maximumkeyvalueoperator.md)
   The @max array operator.
-- [static let minimumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/minimumkeyvalueoperator.md)
+- [static let minimumKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/minimumkeyvalueoperator.md)
   The @min array operator.
-- [static let duplicating: Progress.FileOperationKind](progress/fileoperationkind-swift.struct/duplicating.md)
-- [static let sumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/sumkeyvalueoperator.md)
+- [static let duplicating: Progress.FileOperationKind](./progress/fileoperationkind-swift.struct/duplicating.md)
+- [static let sumKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/sumkeyvalueoperator.md)
   The @sum array operator.
-- [static let unionOfArraysKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofarrayskeyvalueoperator.md)
+- [static let unionOfArraysKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/unionofarrayskeyvalueoperator.md)
   The @unionOfArrays array operator.
-- [static let unionOfObjectsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofobjectskeyvalueoperator.md)
+- [static let unionOfObjectsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/unionofobjectskeyvalueoperator.md)
   The @unionOfObjects array operator.
-- [static let unionOfSetsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofsetskeyvalueoperator.md)
+- [static let unionOfSetsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/unionofsetskeyvalueoperator.md)
   The @unionOfSets array operator.
-- [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+- [let NSURLSessionUploadTaskResumeData: String](./nsurlsessionuploadtaskresumedata.md)
   Key in the userInfo dictionary of an NSError received during a failed upload.
 
 

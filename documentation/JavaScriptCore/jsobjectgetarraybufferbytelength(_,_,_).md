@@ -1,7 +1,8 @@
 # JSObjectGetArrayBufferByteLength(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of bytes in a JavaScript data object.
 
@@ -19,6 +20,10 @@ Returns the number of bytes in a JavaScript data object.
 func JSObjectGetArrayBufferByteLength(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ exception: UnsafeMutablePointer<JSValueRef?>!) -> Int
 ```
 
+```c
+size_t JSObjectGetArrayBufferByteLength(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
+```
+
 #### Return Value
 
 The number of bytes in the data object.
@@ -27,13 +32,14 @@ The number of bytes in the data object.
 
 - `ctx`: The execution context to use.
 - `object`: The JavaScript array buffer object with the length in bytes to return.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 
-- [func JSObjectMakeArrayBufferWithBytesNoCopy(JSContextRef!, UnsafeMutableRawPointer!, Int, JSTypedArrayBytesDeallocator!, UnsafeMutableRawPointer!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmakearraybufferwithbytesnocopy(_:_:_:_:_:_:).md)
+### Working with Array Buffers
+- [func JSObjectMakeArrayBufferWithBytesNoCopy(JSContextRef!, UnsafeMutableRawPointer!, Int, JSTypedArrayBytesDeallocator!, UnsafeMutableRawPointer!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmakearraybufferwithbytesnocopy%28_,_,_,_,_,_%29.md)
   Creates a JavaScript array buffer object from an existing pointer.
-- [func JSObjectGetArrayBufferBytesPtr(JSContextRef!, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> UnsafeMutableRawPointer!](jsobjectgetarraybufferbytesptr(_:_:_:).md)
+- [func JSObjectGetArrayBufferBytesPtr(JSContextRef!, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> UnsafeMutableRawPointer!](./jsobjectgetarraybufferbytesptr%28_,_,_%29.md)
   Returns a pointer to the data buffer that serves as the backing store for a JavaScript typed array object.
 
 

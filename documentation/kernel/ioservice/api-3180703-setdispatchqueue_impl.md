@@ -1,14 +1,15 @@
 # SetDispatchQueue_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetDispatchQueue_Impl(const char *name, IODispatchQueue *queue);
 ```
 

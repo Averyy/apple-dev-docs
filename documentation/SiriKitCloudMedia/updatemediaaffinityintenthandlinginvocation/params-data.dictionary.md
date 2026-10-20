@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentHandlingInvocation.Params
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The parameters of an update media affinity intent request.
 
@@ -10,7 +11,7 @@ The parameters of an update media affinity intent request.
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntentHandlingInvocation.Params
 ```
 

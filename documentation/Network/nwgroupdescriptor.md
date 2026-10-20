@@ -1,7 +1,8 @@
 # NWGroupDescriptor
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines a group of endpoints with which you can communicate, such as a multicast group.
 
@@ -23,25 +24,26 @@ protocol NWGroupDescriptor : AnyObject, Sendable
 ## Topics
 
 ### Inspecting Groups
-- [var members: [NWEndpoint]](nwgroupdescriptor/members.md)
+- [var members: [NWEndpoint]](./nwgroupdescriptor/members.md)
   The set of endpoints that define the connection group.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [NWMulticastGroup](nwmulticastgroup.md)
-- [NWMultiplexGroup](nwmultiplexgroup.md)
+- [NWMulticastGroup](./nwmulticastgroup.md)
+- [NWMultiplexGroup](./nwmultiplexgroup.md)
 
 ## See Also
 
-- [init(with: any NWGroupDescriptor, using: NWParameters)](nwconnectiongroup/init(with:using:).md)
+### Establishing Group Connectivity
+- [init(with: any NWGroupDescriptor, using: NWParameters)](./nwconnectiongroup/init%28with,using%29.md)
   Initializes a new connection group with a group identifier.
-- [class NWMulticastGroup](nwmulticastgroup.md)
+- [class NWMulticastGroup](./nwmulticastgroup.md)
   A descriptor for a group you use to join an IP multicast group on a local network.
-- [func start(queue: DispatchQueue)](nwconnectiongroup/start(queue:).md)
+- [func start(queue: DispatchQueue)](./nwconnectiongroup/start%28queue%29.md)
   Joins the group, registers to receive messages, and sets the queue on you handle group events.
 
 

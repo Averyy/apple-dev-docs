@@ -1,7 +1,8 @@
 # unspecified
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A symbol configuration object that contains unspecified values for all attributes.
 
@@ -17,6 +18,10 @@ A symbol configuration object that contains unspecified values for all attribute
 
 ```swift
 class var unspecified: UIImage.SymbolConfiguration { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIImageSymbolConfiguration * unspecifiedConfiguration;
 ```
 
 

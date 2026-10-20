@@ -1,7 +1,8 @@
 # meshGradient(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shading instance that fills with a mesh gradient.
 

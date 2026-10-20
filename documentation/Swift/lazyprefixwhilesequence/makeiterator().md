@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of this sequence.
 
@@ -19,6 +20,8 @@ Returns an iterator over the elements of this sequence.
 ```swift
 func makeIterator() -> LazyPrefixWhileSequence<Base>.Iterator
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 
 ---

@@ -1,7 +1,8 @@
 # entryID
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the entry.
 

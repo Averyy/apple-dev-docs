@@ -1,14 +1,15 @@
 # kBluetoothL2CAPInformationFCSOption
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPInformationFCSOption = 0x00000020
 ```
 

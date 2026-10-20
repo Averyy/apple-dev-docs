@@ -1,20 +1,27 @@
 # startStepCountingUpdates(to:updateOn:withHandler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the delivery of current step-counting data to your app.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use CMPedometer instead
 
 ## Declaration
 
 ```swift
 func startStepCountingUpdates(to queue: OperationQueue, updateOn stepCounts: Int, withHandler handler: @escaping CMStepUpdateHandler)
+```
+
+```objc
+- (void) startStepCountingUpdatesToQueue:(NSOperationQueue *) queue updateOn:(NSInteger) stepCounts withHandler:(CMStepUpdateHandler) handler;
 ```
 
 #### Discussion
@@ -23,19 +30,20 @@ This method initiates tracking of the user’s steps and calls the provided bloc
 
 The `handler` block is executed on a best effort basis each time the step count threshold is exceeded. If your app is suspended when the threshold is exceeded, the block is not executed. When your app resumes, the block is not executed until the threshold is exceeded again.
 
-To stop the delivery of step-counting updates, call the [`stopStepCountingUpdates()`](cmstepcounter/stopstepcountingupdates().md) method. Updates also stop when the step counter object itself is deallocated.
+To stop the delivery of step-counting updates, call the [`stopStepCountingUpdates()`](./stopstepcountingupdates%28%29.md) method. Updates also stop when the step counter object itself is deallocated.
 
 ## Parameters
 
 - `queue`: The operation queue on which to execute the specified `handler` block. You can specify a custom queue or use the operation queue associated with your app’s main thread. This parameter must not be `nil`.
 - `stepCounts`: The number of steps to record before executing the `handler` block. The number of steps must be greater than 0.
-- `handler`: The block to execute when the number of steps has been reached or exceeded. For information about the parameters of this block, see [`CMStepUpdateHandler`](cmstepupdatehandler.md). This property must not be `nil`.
+- `handler`: The block to execute when the number of steps has been reached or exceeded. For information about the parameters of this block, see [`CMStepUpdateHandler`](../cmstepupdatehandler.md). This property must not be `nil`.
 
 ## See Also
 
-- [func stopStepCountingUpdates()](cmstepcounter/stopstepcountingupdates.md)
+### Starting and Stopping Step Counting Updates
+- [func stopStepCountingUpdates()](./stopstepcountingupdates%28%29.md)
   Stops the delivery of step-counting updates to your app.
-- [typealias CMStepUpdateHandler](cmstepupdatehandler.md)
+- [typealias CMStepUpdateHandler](../cmstepupdatehandler.md)
   A block that reports the number of steps recorded since updates began.
 
 

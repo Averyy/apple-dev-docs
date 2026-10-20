@@ -1,7 +1,8 @@
 # xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a requirement that the executable for the peer process has a valid code signature that contains an entitlement with a specific value.
 
@@ -20,13 +21,17 @@ Sets a requirement that the executable for the peer process has a valid code sig
 func xpc_connection_set_peer_entitlement_matches_value_requirement(_ connection: xpc_connection_t, _ entitlement: UnsafePointer<CChar>, _ value: xpc_object_t) -> Int32
 ```
 
+```c
+extern int xpc_connection_set_peer_entitlement_matches_value_requirement(xpc_connection_t connection, const char *entitlement, xpc_object_t value);
+```
+
 #### Return Value
 
-On success, `0`. Otherwise, a value from [`Errors`](xpc-connections#Errors.md).
+On success, `0`. Otherwise, a value from [Errors](./xpc-connections.md#Errors).
 
 #### Discussion
 
-When you set this requirement on a connection, the operating system checks that peer process satisfies the requirement every time it sends a message to your process. If the peer process initiated the connection and its executable doesn’t have the requested entitlement, or it has the entitlement with a different value, then you don’t receive a message and the operating system doesn’t call your event handler. If your process sent a message to its peer expecting a reply, and its executable doesn’t have the requested entitlement, then you don’t receive a reply and the operating system delivers [`XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT`](xpc_error_peer_code_signing_requirement-c.macro.md) instead.
+When you set this requirement on a connection, the operating system checks that peer process satisfies the requirement every time it sends a message to your process. If the peer process initiated the connection and its executable doesn’t have the requested entitlement, or it has the entitlement with a different value, then you don’t receive a message and the operating system doesn’t call your event handler. If your process sent a message to its peer expecting a reply, and its executable doesn’t have the requested entitlement, then you don’t receive a reply and the operating system delivers [`XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT`](./xpc_error_peer_code_signing_requirement-c.macro.md) instead.
 
 > ❗ **Important**:  It’s an error to call this function multiple times for the same connection, or to call multiple functions that set code-signing requirements on the same connection. If you do, then the operating system terminates your process.
 
@@ -38,25 +43,26 @@ When you set this requirement on a connection, the operating system checks that 
 
 ## See Also
 
-- [func xpc_connection_get_name(xpc_connection_t) -> UnsafePointer<CChar>?](xpc_connection_get_name(_:).md)
+### Remote peer information
+- [func xpc_connection_get_name(xpc_connection_t) -> UnsafePointer<CChar>?](./xpc_connection_get_name%28_%29.md)
   Returns the name of the remote service that creates the connection.
-- [func xpc_connection_get_euid(xpc_connection_t) -> uid_t](xpc_connection_get_euid(_:).md)
+- [func xpc_connection_get_euid(xpc_connection_t) -> uid_t](./xpc_connection_get_euid%28_%29.md)
   Returns the EUID of the remote peer.
-- [func xpc_connection_get_egid(xpc_connection_t) -> gid_t](xpc_connection_get_egid(_:).md)
+- [func xpc_connection_get_egid(xpc_connection_t) -> gid_t](./xpc_connection_get_egid%28_%29.md)
   Returns the EGID of the remote peer.
-- [func xpc_connection_get_pid(xpc_connection_t) -> pid_t](xpc_connection_get_pid(_:).md)
+- [func xpc_connection_get_pid(xpc_connection_t) -> pid_t](./xpc_connection_get_pid%28_%29.md)
   Returns the PID of the remote peer.
-- [func xpc_connection_get_asid(xpc_connection_t) -> au_asid_t](xpc_connection_get_asid(_:).md)
+- [func xpc_connection_get_asid(xpc_connection_t) -> au_asid_t](./xpc_connection_get_asid%28_%29.md)
   Returns the audit session identifier of the remote peer.
-- [func xpc_connection_set_peer_entitlement_exists_requirement(xpc_connection_t, UnsafePointer<CChar>) -> Int32](xpc_connection_set_peer_entitlement_exists_requirement(_:_:).md)
+- [func xpc_connection_set_peer_entitlement_exists_requirement(xpc_connection_t, UnsafePointer<CChar>) -> Int32](./xpc_connection_set_peer_entitlement_exists_requirement%28_,_%29.md)
   Sets a requirement that the executable for the peer process has a valid code signature that contains an entitlement.
-- [func xpc_connection_set_peer_lightweight_code_requirement(xpc_connection_t, xpc_object_t) -> Int32](xpc_connection_set_peer_lightweight_code_requirement(_:_:).md)
+- [func xpc_connection_set_peer_lightweight_code_requirement(xpc_connection_t, xpc_object_t) -> Int32](./xpc_connection_set_peer_lightweight_code_requirement%28_,_%29.md)
   Sets a requirement that the executable for the peer process has a valid code signature that matches the lightweight code requirement.
-- [func xpc_connection_set_peer_platform_identity_requirement(xpc_connection_t, UnsafePointer<CChar>?) -> Int32](xpc_connection_set_peer_platform_identity_requirement(_:_:).md)
+- [func xpc_connection_set_peer_platform_identity_requirement(xpc_connection_t, UnsafePointer<CChar>?) -> Int32](./xpc_connection_set_peer_platform_identity_requirement%28_,_%29.md)
   Sets a requirement that the executable for the peer process has a valid code signature that identifies it as an Apple-signed binary with the given signing identifier.
-- [func xpc_connection_set_peer_team_identity_requirement(xpc_connection_t, UnsafePointer<CChar>?) -> Int32](xpc_connection_set_peer_team_identity_requirement(_:_:).md)
+- [func xpc_connection_set_peer_team_identity_requirement(xpc_connection_t, UnsafePointer<CChar>?) -> Int32](./xpc_connection_set_peer_team_identity_requirement%28_,_%29.md)
   Sets a requirement that the executable for the peer process has a valid code signature and is signed by the same team identifier as the calling process.
-- [func xpc_connection_set_peer_code_signing_requirement(xpc_connection_t, UnsafePointer<CChar>) -> Int32](xpc_connection_set_peer_code_signing_requirement(_:_:).md)
+- [func xpc_connection_set_peer_code_signing_requirement(xpc_connection_t, UnsafePointer<CChar>) -> Int32](./xpc_connection_set_peer_code_signing_requirement%28_,_%29.md)
 
 
 ---

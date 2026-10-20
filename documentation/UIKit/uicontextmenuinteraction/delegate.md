@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the preview and contextual menu for your content and responds to interaction-related events.
 
@@ -18,9 +19,14 @@ The object that provides the preview and contextual menu for your content and re
 weak var delegate: (any UIContextMenuInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) id<UIContextMenuInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
+### Previewing and managing the content
+- [protocol UIContextMenuInteractionDelegate](../uicontextmenuinteractiondelegate.md)
   The methods for providing the set of actions to perform on your content, and for customizing the preview of that content.
 
 

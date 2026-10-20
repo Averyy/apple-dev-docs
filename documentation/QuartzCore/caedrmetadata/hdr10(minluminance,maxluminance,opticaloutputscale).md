@@ -1,7 +1,8 @@
 # hdr10(minLuminance:maxLuminance:opticalOutputScale:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates EDR metadata for HDR10 content based on the luminance characteristics of a mastering display.
 
@@ -16,6 +17,10 @@ Creates EDR metadata for HDR10 content based on the luminance characteristics of
 
 ```swift
 class func hdr10(minLuminance minNits: Float, maxLuminance maxNits: Float, opticalOutputScale scale: Float) -> CAEDRMetadata
+```
+
+```objc
++ (CAEDRMetadata *) HDR10MetadataWithMinLuminance:(float) minNits maxLuminance:(float) maxNits opticalOutputScale:(float) scale;
 ```
 
 #### Return Value
@@ -38,7 +43,8 @@ If the content is in a normalized pixel format, set `opticalOutputScale` to 1000
 
 ## See Also
 
-- [class func hdr10(displayInfo: Data?, contentInfo: Data?, opticalOutputScale: Float) -> CAEDRMetadata](caedrmetadata/hdr10(displayinfo:contentinfo:opticaloutputscale:).md)
+### Retrieving HDR10 Metadata
+- [class func hdr10(displayInfo: Data?, contentInfo: Data?, opticalOutputScale: Float) -> CAEDRMetadata](./hdr10%28displayinfo,contentinfo,opticaloutputscale%29.md)
   Creates EDR metadata for HDR10 content based on mastering display color information and content light levels.
 
 

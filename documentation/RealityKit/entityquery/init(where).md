@@ -1,7 +1,8 @@
 # init(where:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query that returns all entities in a scene that match specific criteria.
 
@@ -11,7 +12,7 @@ Creates a query that returns all entities in a scene that match specific criteri
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(where predicate: QueryPredicate<Entity>)
 
 ## See Also
 
-- [init()](entityquery/init.md)
+### Creating an entity query
+- [init()](./init%28%29.md)
   Creates a query that returns all entities in a scene.
 
 

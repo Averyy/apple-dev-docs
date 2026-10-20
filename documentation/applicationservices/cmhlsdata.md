@@ -1,7 +1,8 @@
 # cmHLSData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The HLS data color space.
 

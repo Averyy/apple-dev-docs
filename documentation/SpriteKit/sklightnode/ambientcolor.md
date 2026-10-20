@@ -1,7 +1,8 @@
 # ambientColor
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ambient color of the light.
 
@@ -16,21 +17,42 @@ The ambient color of the light.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var ambientColor: UIColor { get set }
+```
+
+*macOS*
+
 ```swift
 var ambientColor: NSColor { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic) UIColor * ambientColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSColor * ambientColor;
+```
+
 #### Discussion
 
-The alpha value of the color is ignored. The default color is black, meaning that the light does not have an ambient component. The ambient component of the light is not affected by the light’s [`falloff`](sklightnode/falloff.md) property, nor is it affected by any normal map ([`normalTexture`](skspritenode/normaltexture.md)) on the sprite node.
+The alpha value of the color is ignored. The default color is black, meaning that the light does not have an ambient component. The ambient component of the light is not affected by the light’s [`falloff`](./falloff.md) property, nor is it affected by any normal map ([`normalTexture`](../skspritenode/normaltexture.md)) on the sprite node.
 
 ## See Also
 
-- [var lightColor: UIColor](sklightnode/lightcolor.md)
+### Configuring the Lighting Properties
+- [var lightColor: UIColor](./lightcolor.md)
   The diffuse and specular color of the light source.
-- [var shadowColor: UIColor](sklightnode/shadowcolor.md)
+- [var shadowColor: UIColor](./shadowcolor.md)
   The color of any shadow cast by a sprite.
-- [var falloff: CGFloat](sklightnode/falloff.md)
+- [var falloff: CGFloat](./falloff.md)
   The exponent for the rate of decay of the light source.
 
 

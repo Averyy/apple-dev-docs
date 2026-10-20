@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Size with zero width and height
 

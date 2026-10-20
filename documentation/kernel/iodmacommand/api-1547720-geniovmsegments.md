@@ -1,7 +1,8 @@
 # genIOVMSegments
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Generates a physical scatter/gather for the current DMA command
 
@@ -10,11 +11,11 @@ Generates a physical scatter/gather for the current DMA command
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn genIOVMSegments(UInt64 *offset, void *segments, UInt32 *numSegments);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnSuccess on success, kIOReturnOverrun if the memory descriptor is exhausted, kIOReturnMessageTooLarge if the output segment function's address bits has insufficient resolution for a segment, kIOReturnNotReady if the DMA command has not be prepared, kIOReturnBadArgument if the DMA command doesn't have a memory descriptor yet or some of the parameters are NULL and kIOReturnNotReady if the DMA command is not prepared.
 
@@ -30,32 +31,33 @@ Generates a list of physical segments from the given memory descriptor, relative
 
 ## See Also
 
-- [setMemoryDescriptor](iodmacommand/1811308-setmemorydescriptor.md)
+### Configuring the Memory Descriptor
+- [setMemoryDescriptor](./api-1811308-setmemorydescriptor.md)
   Sets and resets the DMACommand's current memory descriptor
-- [- setMemoryDescriptor](iodmacommand/1547727-setmemorydescriptor.md)
+- [- setMemoryDescriptor](./api-1547727-setmemorydescriptor.md)
   Sets and resets the DMACommand's current memory descriptor
-- [clearMemoryDescriptor](iodmacommand/1811032-clearmemorydescriptor.md)
+- [clearMemoryDescriptor](./api-1811032-clearmemorydescriptor.md)
   Clears the DMACommand's current memory descriptor
-- [- clearMemoryDescriptor](iodmacommand/1547715-clearmemorydescriptor.md)
+- [- clearMemoryDescriptor](./api-1547715-clearmemorydescriptor.md)
   Clears the DMACommand's current memory descriptor
-- [getMemoryDescriptor](iodmacommand/1811175-getmemorydescriptor.md)
+- [getMemoryDescriptor](./api-1811175-getmemorydescriptor.md)
   Get the current memory descriptor
-- [- getMemoryDescriptor](iodmacommand/1547753-getmemorydescriptor.md)
+- [- getMemoryDescriptor](./api-1547753-getmemorydescriptor.md)
   Get the current memory descriptor
-- [- getIOMemoryDescriptor](iodmacommand/1547736-getiomemorydescriptor.md)
-- [getPreparedOffsetAndLength](iodmacommand/1811194-getpreparedoffsetandlength.md)
+- [- getIOMemoryDescriptor](./api-1547736-getiomemorydescriptor.md)
+- [getPreparedOffsetAndLength](./api-1811194-getpreparedoffsetandlength.md)
   Returns the offset and length into the target IOMemoryDescriptor of a prepared IODDMACommand.
-- [- getPreparedOffsetAndLength](iodmacommand/1547765-getpreparedoffsetandlength.md)
+- [- getPreparedOffsetAndLength](./api-1547765-getpreparedoffsetandlength.md)
   Returns the offset and length into the target IOMemoryDescriptor of a prepared IODDMACommand.
-- [genIOVMSegments](iodmacommand/1811150-geniovmsegments.md)
+- [genIOVMSegments](./api-1811150-geniovmsegments.md)
   Generates a physical scatter/gather for the current DMA command
-- [gen32IOVMSegments](iodmacommand/1811104-gen32iovmsegments.md)
+- [gen32IOVMSegments](./api-1811104-gen32iovmsegments.md)
   Helper function for a type checked call to genIOVMSegments(qv), for use with an IODMACommand set up with the output function kIODMACommandOutputHost32, kIODMACommandOutputBig32, or kIODMACommandOutputLittle32. If the output function of the IODMACommand is not a 32 bit function, results will be incorrect.
-- [- gen32IOVMSegments](iodmacommand/1547749-gen32iovmsegments.md)
-- [gen64IOVMSegments](iodmacommand/1811126-gen64iovmsegments.md)
+- [- gen32IOVMSegments](./api-1547749-gen32iovmsegments.md)
+- [gen64IOVMSegments](./api-1811126-gen64iovmsegments.md)
   Helper function for a type checked call to genIOVMSegments(qv), for use with an IODMACommand set up with the output function kIODMACommandOutputHost64, kIODMACommandOutputBig64, or kIODMACommandOutputLittle64. If the output function of the IODMACommand is not a 64 bit function, results will be incorrect.
-- [- gen64IOVMSegments](iodmacommand/1547722-gen64iovmsegments.md)
-- [- createCopyBuffer](iodmacommand/1547729-createcopybuffer.md)
+- [- gen64IOVMSegments](./api-1547722-gen64iovmsegments.md)
+- [- createCopyBuffer](./api-1547729-createcopybuffer.md)
 
 
 ---

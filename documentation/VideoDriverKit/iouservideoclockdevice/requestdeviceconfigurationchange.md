@@ -1,7 +1,8 @@
 # RequestDeviceConfigurationChange
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the host to initiate a configuration change operation.
 
@@ -10,7 +11,7 @@ Tells the host to initiate a configuration change operation.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RequestDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 

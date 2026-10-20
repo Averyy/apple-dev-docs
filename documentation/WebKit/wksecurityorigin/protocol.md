@@ -1,7 +1,8 @@
 # protocol
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The security origin’s protocol.
 
@@ -16,6 +17,10 @@ The security origin’s protocol.
 
 ```swift
 var `protocol`: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * protocol;
 ```
 
 

@@ -1,7 +1,8 @@
 # interfaceOrientations
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred interface orientations for the scene.
 
@@ -9,7 +10,7 @@ The preferred interface orientations for the scene.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

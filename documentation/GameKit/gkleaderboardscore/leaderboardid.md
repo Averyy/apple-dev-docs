@@ -1,7 +1,8 @@
 # leaderboardID
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID that Game Center uses for the leaderboard.
 
@@ -20,13 +21,18 @@ The ID that Game Center uses for the leaderboard.
 var leaderboardID: String { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSString * leaderboardID;
+```
+
 ## See Also
 
-- [var context: Int](gkleaderboardscore/context.md)
+### Accessing Properties
+- [var context: Int](./context.md)
   An integer value that your game uses.
-- [var player: GKPlayer](gkleaderboardscore/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earns the score.
-- [var value: Int](gkleaderboardscore/value.md)
+- [var value: Int](./value.md)
   The score that the player earns.
 
 

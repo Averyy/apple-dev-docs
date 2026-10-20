@@ -1,7 +1,8 @@
 # extracting(first:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a span containing the initial elements of this span, up to the specified maximum length.
 
@@ -30,7 +31,7 @@ If the maximum length exceeds the length of this span, the result contains all t
 
 The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

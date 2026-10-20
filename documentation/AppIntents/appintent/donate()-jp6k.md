@@ -1,7 +1,8 @@
 # donate()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Donates the app intent to the system.
 
@@ -11,7 +12,7 @@ Donates the app intent to the system.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ func donate() -> IntentDonationIdentifier
 
 #### Return Value
 
-An opaque identifier you can use to manage the donation later using an [`IntentDonationManager`](intentdonationmanager.md) type.
+An opaque identifier you can use to manage the donation later using an [`IntentDonationManager`](../intentdonationmanager.md) type.
 
 #### Discussion
 
@@ -33,15 +34,16 @@ Call this method to donate the intent synchronously, which you might do if you�
 
 ## See Also
 
-- [func donate() async throws -> IntentDonationIdentifier](appintent/donate-1e60c.md)
+### Donating the intent to the system
+- [func donate() async throws -> IntentDonationIdentifier](./donate%28%29-1e60c.md)
   Donates the app intent to the system asynchronously.
-- [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](appintent/donate(result:)-36cia.md)
+- [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](./donate%28result%29-36cia.md)
   Donates the app intent and a result to the system asynchronously.
-- [func donate(result: some IntentResult) -> IntentDonationIdentifier](appintent/donate(result:)-9b25i.md)
+- [func donate(result: some IntentResult) -> IntentDonationIdentifier](./donate%28result%29-9b25i.md)
   Donates the app intent and a result to the system asynchronously.
-- [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](appintent/callasfunction(donate:)-3qvbt.md)
+- [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](./callasfunction%28donate%29-3qvbt.md)
   Runs the intent’s action after resolving any parameters, returns the resulting value, and optionally donates the intent to the system.
-- [func callAsFunction(donate: Bool) async throws](appintent/callasfunction(donate:)-7v1om.md)
+- [func callAsFunction(donate: Bool) async throws](./callasfunction%28donate%29-7v1om.md)
   Runs the intent’s action after resolving any parameters, and optionally donates the intent to the system.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -22,7 +23,8 @@ static var schemas: [any VersionedSchema.Type] { get }
 
 ## See Also
 
-- [protocol VersionedSchema](versionedschema.md)
+### Managing versioned schemas
+- [protocol VersionedSchema](../versionedschema.md)
   An interface for describing a specific version of a schema, including the models it contains.
 
 

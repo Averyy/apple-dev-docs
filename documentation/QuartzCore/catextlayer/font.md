@@ -1,7 +1,8 @@
 # font
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font used to render the receiver’s text.
 
@@ -19,21 +20,26 @@ The font used to render the receiver’s text.
 var font: CFTypeRef? { get set }
 ```
 
+```objc
+@property (nullable) CFTypeRef font;
+```
+
 #### Discussion
 
-May be either a [`CTFont`](https://developer.apple.com/documentation/coretext/ctfont), a [`CGFont`](https://developer.apple.com/documentation/coregraphics/cgfont), an instance of `NSFont` (macOS only), or a string naming the font. In iOS, you cannot assign a [`UIFont`](https://developer.apple.com/documentation/uikit/uifont) object to this property. Defaults to Helvetica.
+May be either a [`CTFont`](../../CoreText/ctfont.md), a [`CGFont`](../../CoreGraphics/cgfont.md), an instance of `NSFont` (macOS only), or a string naming the font. In iOS, you cannot assign a [`UIFont`](../../UIKit/uifont.md) object to this property. Defaults to Helvetica.
 
-The `font` property is only used when the [`string`](catextlayer/string.md) property is not an `NSAttributedString`.
+The `font` property is only used when the [`string`](./string.md) property is not an `NSAttributedString`.
 
 > **Note**:  If the font property is a `CTFontRef`, a `CGFontRef`, or an instance of `NSFont`, the font size of the property is ignored.
 
 ## See Also
 
-- [var fontSize: CGFloat](catextlayer/fontsize.md)
+### Text Visual Properties
+- [var fontSize: CGFloat](./fontsize.md)
   The font size used to render the receiver’s text. Animatable.
-- [var foregroundColor: CGColor?](catextlayer/foregroundcolor.md)
+- [var foregroundColor: CGColor?](./foregroundcolor.md)
   The color used to render the receiver’s text. Animatable.
-- [var allowsFontSubpixelQuantization: Bool](catextlayer/allowsfontsubpixelquantization.md)
+- [var allowsFontSubpixelQuantization: Bool](./allowsfontsubpixelquantization.md)
   Determines whether to allow subpixel quantization for the graphics context used for text rendering.
 
 

@@ -1,7 +1,8 @@
 # List game center details for a group
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Read Game Center detail information for a specific group.
 
@@ -14,69 +15,85 @@ Read Game Center detail information for a specific group.
 
 ## Parameters
 
-- `fields[apps]` ([string])
-- `fields[gameCenterAchievementReleases]` ([string])
-- `fields[gameCenterAchievements]` ([string])
-- `fields[gameCenterAppVersions]` ([string])
-- `fields[gameCenterDetails]` ([string])
-- `fields[gameCenterGroups]` ([string])
-- `fields[gameCenterLeaderboardReleases]` ([string])
-- `fields[gameCenterLeaderboardSetReleases]` ([string])
-- `fields[gameCenterLeaderboardSets]` ([string])
-- `fields[gameCenterLeaderboards]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[apps]` ([string]): **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
+- `fields[gameCenterAchievementReleases]` ([string]): **Allowed Values**: `live`, `gameCenterDetail`, `gameCenterAchievement`
+- `fields[gameCenterAchievements]` ([string]): **Allowed Values**: `referenceName`, `vendorIdentifier`, `points`, `showBeforeEarned`, `repeatable`, `archived`, `activityProperties`, `gameCenterDetail`, `gameCenterGroup`, `groupAchievement`, `localizations`, `releases`, `activity`, `versions`
+- `fields[gameCenterAppVersions]` ([string]): **Allowed Values**: `enabled`, `compatibilityVersions`, `appStoreVersion`
+- `fields[gameCenterDetails]` ([string]): **Allowed Values**: `arcadeEnabled`, `challengeEnabled`, `app`, `gameCenterAppVersions`, `gameCenterGroup`, `gameCenterLeaderboards`, `gameCenterLeaderboardsV2`, `gameCenterLeaderboardSets`, `gameCenterLeaderboardSetsV2`, `gameCenterAchievements`, `gameCenterAchievementsV2`, `gameCenterActivities`, `gameCenterChallenges`, `defaultLeaderboard`, `defaultLeaderboardV2`, `defaultGroupLeaderboard`, `defaultGroupLeaderboardV2`, `achievementReleases`, `activityReleases`, `challengeReleases`, `leaderboardReleases`, `leaderboardSetReleases`, `blockedPlayers`, `challengesMinimumPlatformVersions`
+- `fields[gameCenterGroups]` ([string]): **Allowed Values**: `referenceName`, `gameCenterDetails`, `gameCenterLeaderboards`, `gameCenterLeaderboardsV2`, `gameCenterLeaderboardSets`, `gameCenterLeaderboardSetsV2`, `gameCenterAchievements`, `gameCenterAchievementsV2`, `gameCenterActivities`, `gameCenterChallenges`
+- `fields[gameCenterLeaderboardReleases]` ([string]): **Allowed Values**: `live`, `gameCenterDetail`, `gameCenterLeaderboard`
+- `fields[gameCenterLeaderboardSetReleases]` ([string]): **Allowed Values**: `live`, `gameCenterDetail`, `gameCenterLeaderboardSet`
+- `fields[gameCenterLeaderboardSets]` ([string]): **Allowed Values**: `referenceName`, `vendorIdentifier`, `gameCenterDetail`, `gameCenterGroup`, `groupLeaderboardSet`, `localizations`, `gameCenterLeaderboards`, `releases`, `versions`
+- `fields[gameCenterLeaderboards]` ([string]): **Allowed Values**: `defaultFormatter`, `referenceName`, `vendorIdentifier`, `submissionType`, `scoreSortType`, `scoreRangeStart`, `scoreRangeEnd`, `recurrenceStartDate`, `recurrenceDuration`, `recurrenceRule`, `archived`, `activityProperties`, `visibility`, `gameCenterDetail`, `gameCenterGroup`, `groupLeaderboard`, `gameCenterLeaderboardSets`, `localizations`, `releases`, `activity`, `challenge`, `gameCenterScoreModerations`, `versions`
 - `filter[gameCenterAppVersions.enabled]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[achievementReleases]` (integer)
-- `limit[gameCenterAchievements]` (integer)
-- `limit[gameCenterAppVersions]` (integer)
-- `limit[gameCenterLeaderboardSets]` (integer)
-- `limit[gameCenterLeaderboards]` (integer)
-- `limit[leaderboardReleases]` (integer)
-- `limit[leaderboardSetReleases]` (integer)
-- `fields[appStoreVersions]` ([string])
-- `fields[gameCenterActivities]` ([string])
-- `fields[gameCenterActivityVersionReleases]` ([string])
-- `fields[gameCenterChallengeVersionReleases]` ([string])
-- `fields[gameCenterChallenges]` ([string])
-- `limit[activityReleases]` (integer)
-- `limit[challengeReleases]` (integer)
-- `limit[challengesMinimumPlatformVersions]` (integer)
-- `limit[gameCenterAchievementsV2]` (integer)
-- `limit[gameCenterActivities]` (integer)
-- `limit[gameCenterChallenges]` (integer)
-- `limit[gameCenterLeaderboardSetsV2]` (integer)
-- `limit[gameCenterLeaderboardsV2]` (integer)
+- `include` ([string]): **Allowed Values**: `app`, `gameCenterAppVersions`, `gameCenterGroup`, `gameCenterLeaderboards`, `gameCenterLeaderboardsV2`, `gameCenterLeaderboardSets`, `gameCenterLeaderboardSetsV2`, `gameCenterAchievements`, `gameCenterAchievementsV2`, `gameCenterActivities`, `gameCenterChallenges`, `defaultLeaderboard`, `defaultLeaderboardV2`, `defaultGroupLeaderboard`, `defaultGroupLeaderboardV2`, `achievementReleases`, `activityReleases`, `challengeReleases`, `leaderboardReleases`, `leaderboardSetReleases`, `challengesMinimumPlatformVersions`
+- `limit` (integer): **Maximum**: `200`
+- `limit[achievementReleases]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[gameCenterAchievements]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[gameCenterAppVersions]` (integer): **Maximum**: `50`
+- `limit[gameCenterLeaderboardSets]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[gameCenterLeaderboards]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[leaderboardReleases]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[leaderboardSetReleases]` (integer) *(deprecated)*: **Maximum**: `50`
+- `fields[appStoreVersions]` ([string]): **Allowed Values**: `platform`, `versionString`, `appStoreState`, `appVersionState`, `copyright`, `reviewType`, `releaseType`, `earliestReleaseDate`, `usesIdfa`, `downloadable`, `createdDate`, `app`, `appStoreVersionLocalizations`, `build`, `appStoreVersionPhasedRelease`, `gameCenterAppVersion`, `routingAppCoverage`, `appStoreReviewDetail`, `appStoreVersionSubmission`, `appClipDefaultExperience`, `appStoreVersionExperiments`, `appStoreVersionExperimentsV2`, `customerReviews`, `alternativeDistributionPackage`
+- `fields[gameCenterActivities]` ([string]): **Allowed Values**: `referenceName`, `vendorIdentifier`, `playStyle`, `minimumPlayersCount`, `maximumPlayersCount`, `supportsPartyCode`, `archived`, `properties`, `gameCenterDetail`, `gameCenterGroup`, `achievements`, `achievementsV2`, `leaderboards`, `leaderboardsV2`, `versions`
+- `fields[gameCenterActivityVersionReleases]` ([string]): **Allowed Values**: `version`
+- `fields[gameCenterChallengeVersionReleases]` ([string]): **Allowed Values**: `version`
+- `fields[gameCenterChallenges]` ([string]): **Allowed Values**: `referenceName`, `vendorIdentifier`, `archived`, `challengeType`, `repeatable`, `gameCenterDetail`, `gameCenterGroup`, `versions`, `leaderboard`, `leaderboardV2`
+- `limit[activityReleases]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[challengeReleases]` (integer) *(deprecated)*: **Maximum**: `50`
+- `limit[challengesMinimumPlatformVersions]` (integer): **Maximum**: `50`
+- `limit[gameCenterAchievementsV2]` (integer): **Maximum**: `50`
+- `limit[gameCenterActivities]` (integer): **Maximum**: `50`
+- `limit[gameCenterChallenges]` (integer): **Maximum**: `50`
+- `limit[gameCenterLeaderboardSetsV2]` (integer): **Maximum**: `50`
+- `limit[gameCenterLeaderboardsV2]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`GameCenterDetailsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Group Information](get-v1-gamecentergroups.md)
+### Managing groups
+- [Read Group Information](./get-v1-gamecentergroups.md)
   List information for all groups.
-- [Read information for a specific group](get-v1-gamecentergroups-_id_.md)
+- [Read information for a specific group](./get-v1-gamecentergroups-_id_.md)
   Read information for a specific Game Center group.
-- [Create a Group](post-v1-gamecentergroups.md)
+- [Create a Group](./post-v1-gamecentergroups.md)
   Add a new group.
-- [Modify a Group](patch-v1-gamecentergroups-_id_.md)
+- [Modify a Group](./patch-v1-gamecentergroups-_id_.md)
   Edit the reference name for a group.
-- [Delete a Group](delete-v1-gamecentergroups-_id_.md)
+- [Delete a Group](./delete-v1-gamecentergroups-_id_.md)
   Remove a group.
-- [List All Game Center Achievements for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterachievementsv2.md)
+- [List All Game Center Achievements for a Game Center Group](./get-v1-gamecentergroups-_id_-gamecenterachievementsv2.md)
   Get a list of achievements for a specific Game Center group.
-- [List All Game Center Leaderboard Sets for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsetsv2.md)
+- [List All Game Center Leaderboard Sets for a Game Center Group](./get-v1-gamecentergroups-_id_-gamecenterleaderboardsetsv2.md)
   Get a list of leaderboard sets for a specific Game Center group.
-- [List All Game Center Leaderboards for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsv2.md)
+- [List All Game Center Leaderboards for a Game Center Group](./get-v1-gamecentergroups-_id_-gamecenterleaderboardsv2.md)
   Get a list of leaderboards for a specific Game Center group.
-- [List the Achievements in a Group](get-v1-gamecentergroups-_id_-gamecenterachievements.md)
+- [List the Achievements in a Group](./get-v1-gamecentergroups-_id_-gamecenterachievements.md)
   List achievements information for a specific group.
-- [List Game Center detail IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterdetails.md)
-- [List Game Center detail IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterdetails.md)
-- [List game center leaderboard sets in a group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsets.md)
+- [List Game Center detail IDs for a Game Center group](./get-v1-gamecentergroups-_id_-relationships-gamecenterdetails.md)
+- [List Game Center detail IDs for a Game Center group](./get-v1-gamecentergroups-_id_-relationships-gamecenterdetails.md)
+- [List game center leaderboard sets in a group](./get-v1-gamecentergroups-_id_-gamecenterleaderboardsets.md)
   Read Game Center leaderboard sets information for a specific group.
-- [List game center leaderboards for a group](get-v1-gamecentergroups-_id_-gamecenterleaderboards.md)
+- [List game center leaderboards for a group](./get-v1-gamecentergroups-_id_-gamecenterleaderboards.md)
   Read Game Center leaderboard information for a specific group.
-- [List all activities for a game center group](get-v1-gamecentergroups-_id_-gamecenteractivities.md)
+- [List all activities for a game center group](./get-v1-gamecentergroups-_id_-gamecenteractivities.md)
   Get a list of all activities for a Game Center group.
-- [List activity IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
+- [List activity IDs for a Game Center group](./get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
   Get a list of activity IDs for a specific Game Center group.
 
 

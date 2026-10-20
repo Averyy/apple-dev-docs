@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A human-readable string for the default device protocol.
 
@@ -9,7 +10,7 @@ A human-readable string for the default device protocol.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ A human-readable string for the default device protocol.
 static let invalid: DDDeviceProtocolString
 ```
 
+```c
+extern DDDeviceProtocolString const DDDeviceProtocolStringInvalid;
+```
+
 ## See Also
 
-- [static let dial: DDDeviceProtocolString](dddeviceprotocolstring/dial.md)
+### Specifying a device protocol string
+- [static let dial: DDDeviceProtocolString](./dial.md)
   A human-readable string for the Discovery and Launch protocol.
 
 

@@ -1,7 +1,8 @@
 # toggled(trigger:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Immediately transition to the opposite of an effect’s current phase.
 

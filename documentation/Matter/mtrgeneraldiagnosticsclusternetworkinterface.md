@@ -1,7 +1,8 @@
 # MTRGeneralDiagnosticsClusterNetworkInterface
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,32 +19,36 @@
 class MTRGeneralDiagnosticsClusterNetworkInterface
 ```
 
+```objc
+@interface MTRGeneralDiagnosticsClusterNetworkInterface : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var hardwareAddress: Data](mtrgeneraldiagnosticsclusternetworkinterface/hardwareaddress.md)
-- [var iPv4Addresses: [Any]](mtrgeneraldiagnosticsclusternetworkinterface/ipv4addresses.md)
-- [var iPv6Addresses: [Any]](mtrgeneraldiagnosticsclusternetworkinterface/ipv6addresses.md)
-- [var isOperational: NSNumber](mtrgeneraldiagnosticsclusternetworkinterface/isoperational.md)
-- [var name: String](mtrgeneraldiagnosticsclusternetworkinterface/name.md)
-- [var offPremiseServicesReachableIPv4: NSNumber?](mtrgeneraldiagnosticsclusternetworkinterface/offpremiseservicesreachableipv4.md)
-- [var offPremiseServicesReachableIPv6: NSNumber?](mtrgeneraldiagnosticsclusternetworkinterface/offpremiseservicesreachableipv6.md)
-- [var type: NSNumber](mtrgeneraldiagnosticsclusternetworkinterface/type.md)
+- [var hardwareAddress: Data](./mtrgeneraldiagnosticsclusternetworkinterface/hardwareaddress.md)
+- [var iPv4Addresses: [Any]](./mtrgeneraldiagnosticsclusternetworkinterface/ipv4addresses.md)
+- [var iPv6Addresses: [Any]](./mtrgeneraldiagnosticsclusternetworkinterface/ipv6addresses.md)
+- [var isOperational: NSNumber](./mtrgeneraldiagnosticsclusternetworkinterface/isoperational.md)
+- [var name: String](./mtrgeneraldiagnosticsclusternetworkinterface/name.md)
+- [var offPremiseServicesReachableIPv4: NSNumber?](./mtrgeneraldiagnosticsclusternetworkinterface/offpremiseservicesreachableipv4.md)
+- [var offPremiseServicesReachableIPv6: NSNumber?](./mtrgeneraldiagnosticsclusternetworkinterface/offpremiseservicesreachableipv6.md)
+- [var type: NSNumber](./mtrgeneraldiagnosticsclusternetworkinterface/type.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRGeneralDiagnosticsClusterNetworkInterfaceType](mtrgeneraldiagnosticsclusternetworkinterfacetype.md)
+- [MTRGeneralDiagnosticsClusterNetworkInterfaceType](./mtrgeneraldiagnosticsclusternetworkinterfacetype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

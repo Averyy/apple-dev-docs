@@ -1,7 +1,8 @@
 # MPSRectNoClip
 
 **Framework**: Metal Performance Shaders  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let MPSRectNoClip: MTLRegion
+```
+
+```c
+extern const MTLRegion MPSRectNoClip;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # isLoading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the snapshotter is generating an image.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the snapshotter is generating an image.
 var isLoading: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLoading) BOOL loading;
+```
+
 ## See Also
 
-- [func start(completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](mkmapsnapshotter/start(completionhandler:).md)
+### Generating a snapshot
+- [func start(completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](./start%28completionhandler%29.md)
   Submits the request to create a snapshot and delivers the results to the specified block.
-- [func start(with: dispatch_queue_t, completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](mkmapsnapshotter/start(with:completionhandler:).md)
+- [func start(with: dispatch_queue_t, completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](./start%28with,completionhandler%29.md)
   Submits the request to create a snapshot and executes the resulting block on the specified queue.
-- [MKMapSnapshotter.CompletionHandler](mkmapsnapshotter/completionhandler.md)
+- [MKMapSnapshotter.CompletionHandler](./completionhandler.md)
   A block that processes the results of a snapshot request.
-- [func cancel()](mkmapsnapshotter/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the request to create a snapshot.
 
 

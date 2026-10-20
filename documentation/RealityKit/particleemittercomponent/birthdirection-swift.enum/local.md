@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthDirection.local
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Emit direction is relative to the orientation of the emitter entity’s transform.
 

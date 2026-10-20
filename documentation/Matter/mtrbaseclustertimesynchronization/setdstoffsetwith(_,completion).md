@@ -1,7 +1,8 @@
 # setDSTOffsetWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetDSTOffset
 
@@ -17,7 +18,15 @@ Command SetDSTOffset
 ## Declaration
 
 ```swift
+func setDSTOffsetWith(_ params: MTRTimeSynchronizationClusterSetDSTOffsetParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setDSTOffsetWith(_ params: MTRTimeSynchronizationClusterSetDSTOffsetParams) async throws
+```
+
+```objc
+- (void) setDSTOffsetWithParams:(MTRTimeSynchronizationClusterSetDSTOffsetParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

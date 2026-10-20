@@ -1,7 +1,8 @@
 # extract(inputKeyMaterial:salt:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates cryptographically strong key material from a main key or passcode that you specify.
 
@@ -26,7 +27,7 @@ A pseudorandom, cryptographically strong key in the form of a hashed authenticat
 
 #### Discussion
 
-Generate a derived symmetric key from the cryptographically strong key material this function creates by calling [`expand(pseudoRandomKey:info:outputByteCount:)`](hkdf/expand(pseudorandomkey:info:outputbytecount:).md).
+Generate a derived symmetric key from the cryptographically strong key material this function creates by calling [`expand(pseudoRandomKey:info:outputByteCount:)`](./expand%28pseudorandomkey,info,outputbytecount%29.md).
 
 ## Parameters
 

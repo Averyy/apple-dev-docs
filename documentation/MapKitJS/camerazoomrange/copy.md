@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the camera zoom region.
 
@@ -10,13 +11,13 @@ Returns a copy of the camera zoom region.
 
 ## Declaration
 
-```swift
+```
 copy(): CameraZoomRange;
 ```
 
 #### Return Value
 
-A [`CameraZoomRange`](camerazoomrange.md) object that is a copy of the original.
+A [`CameraZoomRange`](../camerazoomrange.md) object that is a copy of the original.
 
 
 ---

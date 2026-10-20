@@ -1,7 +1,8 @@
 # IOUSBBOSDescriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for storing a binary object store (BOS) descriptor.
 
@@ -10,7 +11,7 @@ The structure for storing a binary object store (BOS) descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBBOSDescriptor IOUSBBOSDescriptor;
 ```
 
@@ -21,19 +22,21 @@ For more information about this descriptor type, see USB 3.2, 9.6.2.
 ## Topics
 
 ### Getting the Properties
-- [bLength](iousbbosdescriptor/1545985-blength.md)
+- [bLength](./iousbbosdescriptor/api-1545985-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbbosdescriptor/1546245-bdescriptortype.md)
+- [bDescriptorType](./iousbbosdescriptor/api-1546245-bdescriptortype.md)
   The type of the descriptor.
-- [wTotalLength](iousbbosdescriptor/1546141-wtotallength.md)
+- [wTotalLength](./iousbbosdescriptor/api-1546141-wtotallength.md)
   The length of this descriptor and all of its subdescriptors.
-- [bNumDeviceCaps](iousbbosdescriptor/1546040-bnumdevicecaps.md)
+- [bNumDeviceCaps](./iousbbosdescriptor/api-1546040-bnumdevicecaps.md)
   The number of separate device capability descriptors in the binary object store.
 
 ## See Also
 
-- [IOUSBBOSDescriptorPtr](iousbbosdescriptorptr.md)
+### BOS Descriptors
+- [IOUSBBOSDescriptorPtr](./iousbbosdescriptorptr.md)
   A pointer to a structure for storing a binary object store (BOS) descriptor.
+### Related Documentation
 - [IOUSBBOSDescriptor](../iokit/usb_h_user-space/iousbbosdescriptor.md)
 
 

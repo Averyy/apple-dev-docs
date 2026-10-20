@@ -1,7 +1,8 @@
 # workoutSessionMirroringStartHandler
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block that the system calls when it starts a mirrored workout session.
 
@@ -9,7 +10,7 @@ A block that the system calls when it starts a mirrored workout session.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 10.0+
 
@@ -17,6 +18,10 @@ A block that the system calls when it starts a mirrored workout session.
 
 ```swift
 var workoutSessionMirroringStartHandler: (@Sendable (HKWorkoutSession) -> Void)? { get set }
+```
+
+```objc
+@property (copy, nullable) void (^)(HKWorkoutSession *) workoutSessionMirroringStartHandler;
 ```
 
 #### Discussion
@@ -37,17 +42,18 @@ store.workoutSessionMirroringStartHandler = { mirroredSession in
 
 To ensure that your app can always catch incoming mirrored workout sessions, assign this property as soon as your app launches.
 
-> ❗ **Important**:  Your app may receive multiple calls to [`workoutSessionMirroringStartHandler`](hkhealthstore/workoutsessionmirroringstarthandler.md). If iPhone and Apple Watch lose their connection in the middle of a workout session, Apple Watch automatically tries to reconnect. Each call has its own [`HKWorkoutSession`](hkworkoutsession.md) instance.
+> ❗ **Important**:  Your app may receive multiple calls to [`workoutSessionMirroringStartHandler`](./workoutsessionmirroringstarthandler.md). If iPhone and Apple Watch lose their connection in the middle of a workout session, Apple Watch automatically tries to reconnect. Each call has its own [`HKWorkoutSession`](../hkworkoutsession.md) instance.
 
 The system calls this block from an arbitrary background queue.
 
 ## See Also
 
-- [func startWatchApp(with: HKWorkoutConfiguration, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/startwatchapp(with:completion:).md)
+### Managing workout sessions
+- [func startWatchApp(with: HKWorkoutConfiguration, completion: (Bool, (any Error)?) -> Void)](./startwatchapp%28with,completion%29.md)
   Launches or wakes the companion watchOS app to create a new workout session.
-- [func pause(HKWorkoutSession)](hkhealthstore/pause(_:).md)
+- [func pause(HKWorkoutSession)](./pause%28_%29.md)
   Pauses the provided workout session.
-- [func resumeWorkoutSession(HKWorkoutSession)](hkhealthstore/resumeworkoutsession(_:).md)
+- [func resumeWorkoutSession(HKWorkoutSession)](./resumeworkoutsession%28_%29.md)
   Resumes the provided workout session.
 
 

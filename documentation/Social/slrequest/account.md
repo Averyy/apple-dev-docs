@@ -1,7 +1,8 @@
 # account
 
 **Framework**: Social  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Account information used to authenticate the request.
 
@@ -15,6 +16,10 @@ Account information used to authenticate the request.
 
 ```swift
 var account: ACAccount! { get set }
+```
+
+```objc
+@property (nonatomic, retain) ACAccount * account;
 ```
 
 #### Discussion

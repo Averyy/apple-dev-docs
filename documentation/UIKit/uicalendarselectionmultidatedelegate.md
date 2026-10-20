@@ -1,7 +1,8 @@
 # UICalendarSelectionMultiDateDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods you implement to provide selectable dates and handle changes to the selection of multiple dates.
 
@@ -18,27 +19,32 @@ A set of methods you implement to provide selectable dates and handle changes to
 protocol UICalendarSelectionMultiDateDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UICalendarSelectionMultiDateDelegate <NSObject>
+```
+
 ## Topics
 
 ### Getting selectable dates
-- [func multiDateSelection(UICalendarSelectionMultiDate, canSelectDate: DateComponents) -> Bool](uicalendarselectionmultidatedelegate/multidateselection(_:canselectdate:).md)
+- [func multiDateSelection(UICalendarSelectionMultiDate, canSelectDate: DateComponents) -> Bool](./uicalendarselectionmultidatedelegate/multidateselection%28_,canselectdate%29.md)
   Returns whether a user can select a date represented by date components in the calendar view.
-- [func multiDateSelection(UICalendarSelectionMultiDate, canDeselectDate: DateComponents) -> Bool](uicalendarselectionmultidatedelegate/multidateselection(_:candeselectdate:).md)
+- [func multiDateSelection(UICalendarSelectionMultiDate, canDeselectDate: DateComponents) -> Bool](./uicalendarselectionmultidatedelegate/multidateselection%28_,candeselectdate%29.md)
   Returns whether a user can deselect a date represented by date components in the calendar view.
 ### Changing selected dates
-- [func multiDateSelection(UICalendarSelectionMultiDate, didSelectDate: DateComponents)](uicalendarselectionmultidatedelegate/multidateselection(_:didselectdate:).md)
+- [func multiDateSelection(UICalendarSelectionMultiDate, didSelectDate: DateComponents)](./uicalendarselectionmultidatedelegate/multidateselection%28_,didselectdate%29.md)
   Informs the delegate that a user selected a date represented by date components.
-- [func multiDateSelection(UICalendarSelectionMultiDate, didDeselectDate: DateComponents)](uicalendarselectionmultidatedelegate/multidateselection(_:diddeselectdate:).md)
+- [func multiDateSelection(UICalendarSelectionMultiDate, didDeselectDate: DateComponents)](./uicalendarselectionmultidatedelegate/multidateselection%28_,diddeselectdate%29.md)
   Informs the delegate that a user deselected a date represented by date components.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any UICalendarSelectionMultiDateDelegate)?](uicalendarselectionmultidate/delegate.md)
+### Setting the selection delegate
+- [var delegate: (any UICalendarSelectionMultiDateDelegate)?](./uicalendarselectionmultidate/delegate.md)
   A delegate object that a calendar view asks for selectable dates and informs of changes to the selection of multiple dates.
 
 

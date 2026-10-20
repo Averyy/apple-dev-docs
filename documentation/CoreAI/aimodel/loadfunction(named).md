@@ -1,7 +1,8 @@
 # loadFunction(named:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -18,13 +19,14 @@ func loadFunction(named functionName: String) throws -> InferenceFunction?
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 ## See Also
 
-- [func functionDescriptor(for: String) -> InferenceFunctionDescriptor?](aimodel/functiondescriptor(for:).md)
+### Loading inference functions
+- [func functionDescriptor(for: String) -> InferenceFunctionDescriptor?](./functiondescriptor%28for%29.md)
   Returns a descriptor for the specified function.
-- [var functionNames: [String]](aimodel/functionnames.md)
+- [var functionNames: [String]](./functionnames.md)
   The names of the inference functions in this model.
 
 

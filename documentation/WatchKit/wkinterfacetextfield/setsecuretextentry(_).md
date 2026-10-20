@@ -1,7 +1,8 @@
 # setSecureTextEntry(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the text field hides the text entered by the user.
 
@@ -14,13 +15,18 @@ Determines whether the text field hides the text entered by the user.
 func setSecureTextEntry(_ secureTextEntry: Bool)
 ```
 
+```objc
+- (void) setSecureTextEntry:(BOOL) secureTextEntry;
+```
+
 #### Discussion
 
-Pass [`true`](https://developer.apple.com/documentation/swift/true) to help keep passwords and other secure data private. When you enable secure text entry, the system displays a series of dots instead of the text entered by the user.
+Pass [`true`](../../Swift/true.md) to help keep passwords and other secure data private. When you enable secure text entry, the system displays a series of dots instead of the text entered by the user.
 
 ## See Also
 
-- [func setEnabled(Bool)](wkinterfacetextfield/setenabled(_:).md)
+### Configuring the Control
+- [func setEnabled(Bool)](./setenabled%28_%29.md)
   Enables or disables the text field.
 
 

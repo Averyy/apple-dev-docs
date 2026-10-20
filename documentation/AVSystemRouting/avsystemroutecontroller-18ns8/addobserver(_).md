@@ -1,7 +1,8 @@
 # addObserver(_:)
 
 **Framework**: AVSystemRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an observer to receive notifications about system routing events.
 
@@ -22,13 +23,13 @@ final func addObserver(_ observer: any AVSystemRouteControllerObserver) -> Bool
 
 #### Discussion
 
-Use this function to register an observer that receives callbacks when people interact with system routes in the route picker. The observer must conform to the [`AVSystemRouteControllerObserver`](avsystemroutecontrollerobserver-5syvg.md) protocol and implement the required protocol function to handle routing events such as route activation and deactivation.
+Use this function to register an observer that receives callbacks when people interact with system routes in the route picker. The observer must conform to the [`AVSystemRouteControllerObserver`](../avsystemroutecontrollerobserver-5syvg.md) protocol and implement the required protocol function to handle routing events such as route activation and deactivation.
 
 Important: Your app must declare support for extensions with the `MDESupportsUniversalURLPlayback` key and/or for specific protocols in the `MDESupportedProtocols` key of  the app’s `Info.plist`.  This observer will only be called back when a user selects a route that has been provided by an extension that matches one of your app’s specified supported protocols.
 
 ## Parameters
 
-- `observer`: An object that conforms to [`AVSystemRouteControllerObserver`](avsystemroutecontrollerobserver-5syvg.md) to receive routing event notifications.
+- `observer`: An object that conforms to [`AVSystemRouteControllerObserver`](../avsystemroutecontrollerobserver-5syvg.md) to receive routing event notifications.
 
 
 ---

@@ -1,15 +1,20 @@
 # otherValue
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var otherValue: Float32
+```
+
+```c
+Float32 otherValue;
 ```
 
 

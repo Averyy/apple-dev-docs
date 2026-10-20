@@ -1,7 +1,8 @@
 # TimeSeriesForecasterBatches.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A time-series forecaster batch sequence iterator.
 
@@ -20,12 +21,14 @@ A time-series forecaster batch sequence iterator.
 struct Iterator
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`.
+
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

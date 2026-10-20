@@ -1,7 +1,8 @@
 # calloutShouldAnimateForAnnotation(annotation)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Interface Method
 
 Determines whether the callout animates.
 
@@ -10,7 +11,7 @@ Determines whether the callout animates.
 
 ## Declaration
 
-```swift
+```
 calloutShouldAnimateForAnnotation?(annotation: Annotation): boolean;
 ```
 
@@ -28,11 +29,12 @@ This method determines whether an appearance annotation should run. The animatio
 
 ## See Also
 
-- [calloutAnchorOffsetForAnnotation(annotation, size)](annotationcalloutdelegate/calloutanchoroffsetforannotation.md)
+### Customizing callout appearance
+- [calloutAnchorOffsetForAnnotation(annotation, size)](./calloutanchoroffsetforannotation.md)
   Returns a point determining the callout’s anchor offset.
-- [calloutShouldAppearForAnnotation(annotation)](annotationcalloutdelegate/calloutshouldappearforannotation.md)
+- [calloutShouldAppearForAnnotation(annotation)](./calloutshouldappearforannotation.md)
   Determines whether the callout appears for an annotation.
-- [calloutAppearanceAnimationForAnnotation(annotation)](annotationcalloutdelegate/calloutappearanceanimationforannotation.md)
+- [calloutAppearanceAnimationForAnnotation(annotation)](./calloutappearanceanimationforannotation.md)
   Returns a CSS animation to use when the callout appears.
 
 

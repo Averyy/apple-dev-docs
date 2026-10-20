@@ -1,7 +1,8 @@
 # AudioContext
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the type of audio activity to associate with a suggested entity, allowing the system to surface relevant suggestions at the right moment.
 
@@ -23,32 +24,33 @@ struct AudioContext
 ## Topics
 
 ### Structures
-- [AudioContext.WorkoutIntensityLevel](audiocontext/workoutintensitylevel.md)
+- [AudioContext.WorkoutIntensityLevel](./audiocontext/workoutintensitylevel.md)
   The intensity level of a workout session.
 ### Type Properties
-- [static var nowPlaying: AudioContext](audiocontext/nowplaying.md)
+- [static var nowPlaying: AudioContext](./audiocontext/nowplaying.md)
   The Now Playing control or complication.
-- [static var workout: AudioContext](audiocontext/workout.md)
+- [static var workout: AudioContext](./audiocontext/workout.md)
   A workout session of any type.
 ### Type Methods
-- [static func workout(activityType: HKWorkoutActivityType) -> AudioContext](audiocontext/workout(activitytype:).md)
+- [static func workout(activityType: HKWorkoutActivityType) -> AudioContext](./audiocontext/workout%28activitytype%29.md)
   A workout session of the given activity type.
-- [static func workout(intensityLevel: AudioContext.WorkoutIntensityLevel) -> AudioContext](audiocontext/workout(intensitylevel:).md)
+- [static func workout(intensityLevel: AudioContext.WorkoutIntensityLevel) -> AudioContext](./audiocontext/workout%28intensitylevel%29.md)
   A workout session of the given intensity level.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct RelevantEntities](relevantentities.md)
+### Entity relevance
+- [struct RelevantEntities](./relevantentities.md)
   A type you use to donate your app’s songs, albums, artists, and other media items to play during workouts.
-- [struct AppEntityContext](appentitycontext.md)
+- [struct AppEntityContext](./appentitycontext.md)
   The context used to scope suggested entity donations to a specific domain.
 
 

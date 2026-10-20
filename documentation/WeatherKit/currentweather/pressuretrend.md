@@ -1,7 +1,8 @@
 # pressureTrend
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of change of the sea level air pressure.
 
@@ -22,9 +23,10 @@ var pressureTrend: PressureTrend
 
 ## See Also
 
-- [var pressure: Measurement<UnitPressure>](currentweather/pressure.md)
+### Getting wind and pressure
+- [var pressure: Measurement<UnitPressure>](./pressure.md)
   The sea level air pressure in millibars.
-- [var wind: Wind](currentweather/wind.md)
+- [var wind: Wind](./wind.md)
   The wind speed, direction, and gust.
 
 

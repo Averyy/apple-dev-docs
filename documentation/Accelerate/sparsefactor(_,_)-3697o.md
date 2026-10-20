@@ -1,7 +1,8 @@
 # SparseFactor(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a symbolic factorization of the requested type for a specified sparsity structure.
 
@@ -20,9 +21,13 @@ Returns a symbolic factorization of the requested type for a specified sparsity 
 func SparseFactor(_ type: SparseFactorization_t, _ Matrix: SparseMatrixStructure) -> SparseOpaqueSymbolicFactorization
 ```
 
+```c
+static SparseOpaqueSymbolicFactorization SparseFactor(SparseFactorization_t type, SparseMatrixStructure Matrix);
+```
+
 #### Return Value
 
-A [`SparseOpaqueSymbolicFactorization`](sparseopaquesymbolicfactorization.md) structure that represents the symbolic factorization.
+A [`SparseOpaqueSymbolicFactorization`](./sparseopaquesymbolicfactorization.md) structure that represents the symbolic factorization.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ Use this function to calculate the symbolic factorization of a sparse matrix’s
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703904@2x.png)
+![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703904@2x.png)
 
 The following code solves these two systems by creating a symbolic factorization that’s common to both coefficient matrices. Note that the two coefficient matrices contain different numeric values with different precisions:
 
@@ -157,7 +162,8 @@ On return, `b0Values` contains the values `[1.0, 2.0, 3.0]`, and `b1Values` cont
 
 ## See Also
 
-- [func SparseFactor(SparseFactorization_t, SparseMatrixStructure, SparseSymbolicFactorOptions) -> SparseOpaqueSymbolicFactorization](sparsefactor(_:_:_:)-45gsz.md)
+### Matrix symbolic factorization functions
+- [func SparseFactor(SparseFactorization_t, SparseMatrixStructure, SparseSymbolicFactorOptions) -> SparseOpaqueSymbolicFactorization](./sparsefactor%28_,_,_%29-45gsz.md)
   Returns a symbolic factorization of the requested type for a single-precision matrix with the specified structure.
 
 

@@ -1,7 +1,8 @@
 # flipped(along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the scaled pose flipped along the specified axis.
 

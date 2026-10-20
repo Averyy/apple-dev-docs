@@ -1,7 +1,8 @@
 # init(task:cachedResponse:client:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL protocol instance to handle the task.
 
@@ -20,6 +21,10 @@ Creates a URL protocol instance to handle the task.
 convenience init(task: URLSessionTask, cachedResponse: CachedURLResponse?, client: (any URLProtocolClient)?)
 ```
 
+```objc
+- (instancetype) initWithTask:(NSURLSessionTask *) task cachedResponse:(NSCachedURLResponse *) cachedResponse client:(id<NSURLProtocolClient>) client;
+```
+
 #### Return Value
 
 The initialized protocol object.
@@ -28,17 +33,18 @@ The initialized protocol object.
 
 Subclasses should override this method to do any custom initialization. Don’t call this method explicitly. When you register your custom protocol class, the system will initialize instances of your protocol as needed.
 
-This initializer calls through to [`init(request:cachedResponse:client:)`](urlprotocol/init(request:cachedresponse:client:).md).
+This initializer calls through to [`init(request:cachedResponse:client:)`](./init%28request,cachedresponse,client%29.md).
 
 ## Parameters
 
 - `task`: A task containing a URL request to be performed by the protocol.
 - `cachedResponse`: A cached response for the task; may be `nil` if there is no existing cached response for the task.
-- `client`: An object that provides an implementation of the [`URLProtocolClient`](urlprotocolclient.md) protocol that this instance uses to communicate with the URL loading system. This client object is retained.
+- `client`: An object that provides an implementation of the [`URLProtocolClient`](../urlprotocolclient.md) protocol that this instance uses to communicate with the URL loading system. This client object is retained.
 
 ## See Also
 
-- [init(request: URLRequest, cachedResponse: CachedURLResponse?, client: (any URLProtocolClient)?)](urlprotocol/init(request:cachedresponse:client:).md)
+### Creating protocol objects
+- [init(request: URLRequest, cachedResponse: CachedURLResponse?, client: (any URLProtocolClient)?)](./init%28request,cachedresponse,client%29.md)
   Creates a URL protocol instance to handle the request.
 
 

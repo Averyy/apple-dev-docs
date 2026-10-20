@@ -1,7 +1,8 @@
 # init(vm_pkt_size:vm_pkt_iov:vm_pkt_iovcnt:vm_flags:)
 
 **Framework**: vmnet  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+

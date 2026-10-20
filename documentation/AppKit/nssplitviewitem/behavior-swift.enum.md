@@ -1,7 +1,8 @@
 # NSSplitViewItem.Behavior
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the behavior of the split view item.
 
@@ -14,33 +15,38 @@ Constants that describe the behavior of the split view item.
 enum Behavior
 ```
 
+```c
+enum NSSplitViewItemBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Item Behaviors
-- [NSSplitViewItem.Behavior.default](nssplitviewitem/behavior-swift.enum/default.md)
+- [NSSplitViewItem.Behavior.default](./behavior-swift.enum/default.md)
   The default split view item behavior.
-- [NSSplitViewItem.Behavior.sidebar](nssplitviewitem/behavior-swift.enum/sidebar.md)
+- [NSSplitViewItem.Behavior.sidebar](./behavior-swift.enum/sidebar.md)
   The sidebar behavior.
-- [NSSplitViewItem.Behavior.contentList](nssplitviewitem/behavior-swift.enum/contentlist.md)
+- [NSSplitViewItem.Behavior.contentList](./behavior-swift.enum/contentlist.md)
   The content list behavior.
-- [NSSplitViewItem.Behavior.inspector](nssplitviewitem/behavior-swift.enum/inspector.md)
+- [NSSplitViewItem.Behavior.inspector](./behavior-swift.enum/inspector.md)
   The inspector behavior.
 ### Initializers
-- [init?(rawValue: Int)](nssplitviewitem/behavior-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./behavior-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var behavior: NSSplitViewItem.Behavior](nssplitviewitem/behavior-swift.property.md)
+### Getting the item behavior
+- [var behavior: NSSplitViewItem.Behavior](./behavior-swift.property.md)
   The standard behavior type of the split view item.
 
 

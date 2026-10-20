@@ -1,7 +1,8 @@
 # makeSampleBuffer(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a sample buffer, and attempts to load its data asynchronously if requested.
 
@@ -20,15 +21,19 @@ Creates a sample buffer, and attempts to load its data asynchronously if request
 func makeSampleBuffer(for request: AVSampleBufferRequest) throws -> sending CMSampleBuffer
 ```
 
+```objc
+- (CMSampleBufferRef) createSampleBufferForRequest:(AVSampleBufferRequest *) request error:(NSError **) outError;
+```
+
 #### Return Value
 
 A sample buffer object.
 
 #### Discussion
 
-If you created the generator with a `nil` timebase, any associated [`AVSampleBufferRequest`](avsamplebufferrequest.md) objects default to using a request mode of [`AVSampleBufferRequest.Mode.immediate`](avsamplebufferrequest/mode-swift.enum/immediate.md).
+If you created the generator with a `nil` timebase, any associated [`AVSampleBufferRequest`](../avsamplebufferrequest.md) objects default to using a request mode of [`AVSampleBufferRequest.Mode.immediate`](../avsamplebufferrequest/mode-swift.enum/immediate.md).
 
-Call the [`notifyOfDataReady(for:completionHandler:)`](avsamplebuffergenerator/notifyofdataready(for:completionhandler:).md) class method to have the system notify you when sample buffer data is available.
+Call the [`notifyOfDataReady(for:completionHandler:)`](./notifyofdataready%28for,completionhandler%29.md) class method to have the system notify you when sample buffer data is available.
 
 The request may fail based on generator configuration or file format.
 
@@ -38,11 +43,12 @@ The request may fail based on generator configuration or file format.
 
 ## See Also
 
-- [func makeBatch() -> AVSampleBufferGeneratorBatch](avsamplebuffergenerator/makebatch.md)
+### Creating a sample buffer
+- [func makeBatch() -> AVSampleBufferGeneratorBatch](./makebatch%28%29.md)
   Creates a batch object to handle generating multiple sample buffers.
-- [func makeSampleBuffer(for: AVSampleBufferRequest, addTo: AVSampleBufferGeneratorBatch) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:addto:).md)
+- [func makeSampleBuffer(for: AVSampleBufferRequest, addTo: AVSampleBufferGeneratorBatch) throws -> CMSampleBuffer](./makesamplebuffer%28for,addto%29.md)
   Creates a sample buffer and attempts to defer I/O for its data.
-- [func createSampleBuffer(for: AVSampleBufferRequest) -> CMSampleBuffer?](avsamplebuffergenerator/createsamplebuffer(for:).md)
+- [func createSampleBuffer(for: AVSampleBufferRequest) -> CMSampleBuffer?](./createsamplebuffer%28for%29.md)
   Creates a new sample buffer reference for the specified buffer request.
 
 

@@ -1,7 +1,8 @@
 # predicateForElectrocardiograms(classification:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that matches electrocardiogram samples with the specified classification.
 
@@ -17,6 +18,10 @@ Returns a predicate that matches electrocardiogram samples with the specified cl
 
 ```swift
 class func predicateForElectrocardiograms(classification: HKElectrocardiogram.Classification) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForElectrocardiogramsWithClassification:(HKElectrocardiogramClassification) classification;
 ```
 
 #### Return Value
@@ -41,11 +46,13 @@ let explicitForClassification = NSPredicate(format: "%K == %d", HKPredicateKeyPa
 
 ## See Also
 
-- [let HKPredicateKeyPathECGClassification: String](hkpredicatekeypathecgclassification.md)
+### Related Documentation
+- [let HKPredicateKeyPathECGClassification: String](../hkpredicatekeypathecgclassification.md)
   The key path for the sample’s classification.
-- [class func predicateForElectrocardiograms(symptomsStatus: HKElectrocardiogram.SymptomsStatus) -> NSPredicate](hkquery/predicateforelectrocardiograms(symptomsstatus:).md)
+### Creating electrocardiogram predicates
+- [class func predicateForElectrocardiograms(symptomsStatus: HKElectrocardiogram.SymptomsStatus) -> NSPredicate](./predicateforelectrocardiograms%28symptomsstatus%29.md)
   Returns a predicate that matches electrocardiogram samples with the specified symptom status.
-- [class func predicateForObjectsAssociated(electrocardiogram: HKElectrocardiogram) -> NSPredicate](hkquery/predicateforobjectsassociated(electrocardiogram:).md)
+- [class func predicateForObjectsAssociated(electrocardiogram: HKElectrocardiogram) -> NSPredicate](./predicateforobjectsassociated%28electrocardiogram%29.md)
   Returns a predicate that matches symptom samples associated with the specified electrocardiogram.
 
 

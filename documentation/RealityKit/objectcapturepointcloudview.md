@@ -1,7 +1,8 @@
 # ObjectCapturePointCloudView
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Renders the current state of the point cloud from an object capture session.
 
@@ -23,40 +24,41 @@ This view renders a 3D visualization of the current session’s point cloud. It 
 ## Topics
 
 ### Initializers
-- [init(session: ObjectCaptureSession)](objectcapturepointcloudview/init(session:).md)
+- [init(session: ObjectCaptureSession)](./objectcapturepointcloudview/init%28session%29.md)
   Creates an object capture view from an existing session using the current segment’s point cloud.
 ### Instance Methods
-- [func showShotLocations(Bool) -> ObjectCapturePointCloudView](objectcapturepointcloudview/showshotlocations(_:).md)
+- [func showShotLocations(Bool) -> ObjectCapturePointCloudView](./objectcapturepointcloudview/showshotlocations%28_%29.md)
   Shows the locations where shots have been taken. Example: ObjectCapturePointCloudView(session: mySession) .showShotLocations()
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Capturing photographs for RealityKit Object Capture](capturing-photographs-for-realitykit-object-capture.md)
+### Model creation
+- [Capturing photographs for RealityKit Object Capture](./capturing-photographs-for-realitykit-object-capture.md)
   Take high-quality images of objects to generate 3D models.
-- [Creating 3D objects from photographs](creating-3d-objects-from-photographs.md)
+- [Creating 3D objects from photographs](./creating-3d-objects-from-photographs.md)
   Construct virtual objects to use in your AR experiences.
-- [Scanning objects using Object Capture](scanning-objects-using-object-capture.md)
+- [Scanning objects using Object Capture](./scanning-objects-using-object-capture.md)
   Implement a full scanning workflow for capturing objects on iOS devices.
-- [Building an object reconstruction app](building-an-object-reconstruction-app.md)
+- [Building an object reconstruction app](./building-an-object-reconstruction-app.md)
   Reconstruct objects from user-selected input images by using photogrammetry.
-- [Creating a photogrammetry command-line app](creating-a-photogrammetry-command-line-app.md)
+- [Creating a photogrammetry command-line app](./creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
-- [Using object capture assets in RealityKit](using-object-capture-assets-in-realitykit.md)
+- [Using object capture assets in RealityKit](./using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
-- [class PhotogrammetrySession](photogrammetrysession.md)
+- [class PhotogrammetrySession](./photogrammetrysession.md)
   Manages the creation of a 3D model from a set of images.
-- [struct PhotogrammetrySample](photogrammetrysample.md)
+- [struct PhotogrammetrySample](./photogrammetrysample.md)
   An object that represents one image and its corresponding metadata.
-- [struct ObjectCaptureView](objectcaptureview.md)
+- [struct ObjectCaptureView](./objectcaptureview.md)
   A view that guides a user through capturing images for object capture.
-- [class ObjectCaptureSession](objectcapturesession.md)
+- [class ObjectCaptureSession](./objectcapturesession.md)
   A session object that monitors and controls image capture for photogrammetry.
 
 

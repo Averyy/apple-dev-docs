@@ -1,7 +1,8 @@
 # overlaps(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this range and the given range contain an element in common.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether this range and the given range contai
 ```swift
 func overlaps(_ other: Range<Bound>) -> Bool
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 
@@ -48,11 +51,12 @@ print(x.overlaps(y))
 
 ## See Also
 
-- [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](closedrange/==(_:_:).md)
+### Comparing Ranges
+- [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two ranges are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](closedrange/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func overlaps(ClosedRange<Bound>) -> Bool](closedrange/overlaps(_:)-7dfep.md)
+- [func overlaps(ClosedRange<Bound>) -> Bool](./overlaps%28_%29-7dfep.md)
   Returns a Boolean value indicating whether this range and the given closed range contain an element in common.
 
 

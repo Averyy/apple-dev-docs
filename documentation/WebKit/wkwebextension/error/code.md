@@ -1,9 +1,10 @@
 # WKWebExtension.Error.Code
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants that indicate errors in the [`WKWebExtension`](wkwebextension.md) domain.
+Constants that indicate errors in the [`WKWebExtension`](../../wkwebextension.md) domain.
 
 **Availability**:
 - iOS 18.4+
@@ -18,55 +19,60 @@ Constants that indicate errors in the [`WKWebExtension`](wkwebextension.md) doma
 enum Code
 ```
 
+```c
+enum WKWebExtensionError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKWebExtension.Error.Code.invalidArchive](wkwebextension/error/code/invalidarchive.md)
+- [WKWebExtension.Error.Code.invalidArchive](./code/invalidarchive.md)
   Indicates that the archive file is invalid or corrupt.
-- [WKWebExtension.Error.Code.invalidBackgroundPersistence](wkwebextension/error/code/invalidbackgroundpersistence.md)
+- [WKWebExtension.Error.Code.invalidBackgroundPersistence](./code/invalidbackgroundpersistence.md)
   Indicates that the extension specified background persistence that was not compatible with the platform or features requested.
-- [WKWebExtension.Error.Code.invalidDeclarativeNetRequestEntry](wkwebextension/error/code/invaliddeclarativenetrequestentry.md)
+- [WKWebExtension.Error.Code.invalidDeclarativeNetRequestEntry](./code/invaliddeclarativenetrequestentry.md)
   Indicates that an invalid declarative net request entry was encountered.
-- [WKWebExtension.Error.Code.invalidManifest](wkwebextension/error/code/invalidmanifest.md)
+- [WKWebExtension.Error.Code.invalidManifest](./code/invalidmanifest.md)
   Indicates that an invalid `manifest.json` was encountered.
-- [WKWebExtension.Error.Code.invalidManifestEntry](wkwebextension/error/code/invalidmanifestentry.md)
+- [WKWebExtension.Error.Code.invalidManifestEntry](./code/invalidmanifestentry.md)
   Indicates that an invalid manifest entry was encountered.
-- [WKWebExtension.Error.Code.invalidResourceCodeSignature](wkwebextension/error/code/invalidresourcecodesignature.md)
+- [WKWebExtension.Error.Code.invalidResourceCodeSignature](./code/invalidresourcecodesignature.md)
   Indicates that a resource failed the bundle’s code signature checks.
-- [WKWebExtension.Error.Code.resourceNotFound](wkwebextension/error/code/resourcenotfound.md)
+- [WKWebExtension.Error.Code.resourceNotFound](./code/resourcenotfound.md)
   Indicates that a specified resource was not found on disk.
-- [WKWebExtension.Error.Code.unknown](wkwebextension/error/code/unknown.md)
+- [WKWebExtension.Error.Code.unknown](./code/unknown.md)
   Indicates that an unknown error occurred.
-- [WKWebExtension.Error.Code.unsupportedManifestVersion](wkwebextension/error/code/unsupportedmanifestversion.md)
+- [WKWebExtension.Error.Code.unsupportedManifestVersion](./code/unsupportedmanifestversion.md)
   Indicates that the manifest version is not supported.
 ### Initializers
-- [init?(rawValue: Int)](wkwebextension/error/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
   Creates an error code from a raw value you provide.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/code.md)
-  Constants that indicate errors in the [`WKWebExtensionContext`](wkwebextensioncontext.md) domain.
-- [WKWebExtension.DataRecord.Error.Code](wkwebextension/datarecord/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
-- [WKWebExtension.DataRecord.Error](wkwebextension/datarecord/error.md)
-  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
-- [WKWebExtension.MatchPattern.Error.Code](wkwebextension/matchpattern/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
-- [WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
-- [WKWebExtension.MessagePort.Error](wkwebextension/messageport/error.md)
-  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+### Web extension errors
+- [WKWebExtensionContext.Error.Code](../../wkwebextensioncontext/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](../../wkwebextensioncontext.md) domain.
+- [WKWebExtension.DataRecord.Error.Code](../datarecord/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](../datarecord.md) domain.
+- [WKWebExtension.DataRecord.Error](../datarecord/error.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](../datarecord.md) domain.
+- [WKWebExtension.MatchPattern.Error.Code](../matchpattern/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](../matchpattern.md) domain.
+- [WKWebExtension.MessagePort.Error.Code](../messageport/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](../messageport.md) domain.
+- [WKWebExtension.MessagePort.Error](../messageport/error.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](../messageport.md) domain.
 
 
 ---

@@ -1,7 +1,8 @@
 # vDSP_hamm_windowD
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a double-precision Hamming window.
 
@@ -10,19 +11,19 @@ Creates a double-precision Hamming window.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
 ## Declaration
 
-```swift
+```c
 extern void vDSP_hamm_windowD(double *__C, vDSP_Length __N, int __Flag);
 ```
 
 #### Discussion
 
-The [`vDSP_hamm_window`](vdsp_hamm_window.md) and [`vDSP_hamm_windowD`](vdsp_hamm_windowd.md) functions create a Hamming window vector using the following operation:
+The [`vDSP_hamm_window`](./vdsp_hamm_window.md) and [`vDSP_hamm_windowD`](./vdsp_hamm_windowd.md) functions create a Hamming window vector using the following operation:
 
 ```objc
 for (n=0; n < N; ++n)
@@ -46,7 +47,7 @@ vDSP_hamm_window(&c,
 
 The following illustrates the values of the output vector, `c`:
 
-![Visualization of a Hamming window.](/images/com.apple.accelerate/media-3233507@2x.png)
+![Visualization of a Hamming window.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3233507@2x.png)
 
 The following code shows an example of using this function:
 
@@ -78,27 +79,28 @@ printf("[%g, %g, %g, %g, %g]\n", window[0], window[1], window[2], window[3], win
 
 - `__C`: The output vector.
 - `__N`: The number of elements in the output vector.
-- `__Flag`: A value that specifies whether the function creates a half window or a full window. Pass the [`vDSP_HALF_WINDOW`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_half_window) flag to create only the first `(N+1)/2` points; pass `0` to create a full-size window.
+- `__Flag`: A value that specifies whether the function creates a half window or a full window. Pass the [`vDSP_HALF_WINDOW`](../kernel/api-1645052-anonymous/vdsp_half_window.md) flag to create only the first `(N+1)/2` points; pass `0` to create a full-size window.
 
 ## See Also
 
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+### Vector generation with window functions
+- [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [vDSP_blkman_window](vdsp_blkman_window.md)
+- [vDSP_blkman_window](./vdsp_blkman_window.md)
   Creates a single-precision Blackman window.
-- [vDSP_blkman_windowD](vdsp_blkman_windowd.md)
+- [vDSP_blkman_windowD](./vdsp_blkman_windowd.md)
   Creates a double-precision Blackman window.
-- [vDSP_hamm_window](vdsp_hamm_window.md)
+- [vDSP_hamm_window](./vdsp_hamm_window.md)
   Creates a single-precision Hamming window.
-- [vDSP_hann_window](vdsp_hann_window.md)
+- [vDSP_hann_window](./vdsp_hann_window.md)
   Creates a single-precision Hann window.
-- [vDSP_hann_windowD](vdsp_hann_windowd.md)
+- [vDSP_hann_windowD](./vdsp_hann_windowd.md)
   Creates a double-precision Hann window.
-- [var vDSP_HALF_WINDOW: Int](vdsp_half_window.md)
+- [var vDSP_HALF_WINDOW: Int](./vdsp_half_window.md)
   Specifies that the window should only contain the bottom half of the values (`0` to `(N+1)/2`).
-- [var vDSP_HANN_DENORM: Int](vdsp_hann_denorm.md)
+- [var vDSP_HANN_DENORM: Int](./vdsp_hann_denorm.md)
   Specifies a denormalized Hann window.
-- [var vDSP_HANN_NORM: Int](vdsp_hann_norm.md)
+- [var vDSP_HANN_NORM: Int](./vdsp_hann_norm.md)
   Specifies a normalized Hann window
 
 

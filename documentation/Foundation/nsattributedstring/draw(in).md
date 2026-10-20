@@ -1,7 +1,8 @@
 # draw(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the attributed string inside the specified bounding rectangle in the current graphics context.
 
@@ -20,6 +21,10 @@ Draws the attributed string inside the specified bounding rectangle in the curre
 func draw(in rect: CGRect)
 ```
 
+```objc
+- (void) drawInRect:(CGRect) rect;
+```
+
 #### Discussion
 
 This method draws as much of the string as it can inside the specified rectangle, wrapping the string text as needed to make it fit. If the string is too long to fit inside the rectangle, the method renders as much as possible and clips the rest. It is possible for a portion of a glyph to appear outside the area of `rect` if the image bounding box of the particular glyph exceeds its typographic bounding box. Text is drawn according to its line sweep direction; for example, Arabic text begins at the right edge and is potentially clipped on the left.
@@ -36,11 +41,13 @@ There must be either a focused view or an active graphics context when you call 
 
 ## See Also
 
-- [func lockFocus()](../appkit/nsview/lockfocus.md)
+### Related Documentation
+- [func lockFocus()](../../AppKit/nsview/lockfocus%28%29.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
-- [func draw(at: CGPoint)](nsattributedstring/draw(at:).md)
+### Drawing the attributed string
+- [func draw(at: CGPoint)](./draw%28at%29.md)
   Draws the attributed string starting at the specified point in the current graphics context.
-- [func draw(with: CGRect, options: NSStringDrawingOptions, context: NSStringDrawingContext?)](nsattributedstring/draw(with:options:context:).md)
+- [func draw(with: CGRect, options: NSStringDrawingOptions, context: NSStringDrawingContext?)](./draw%28with,options,context%29.md)
   Draws the attributed string in the specified bounding rectangle using the provided options.
 
 

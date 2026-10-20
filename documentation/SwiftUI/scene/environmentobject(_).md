@@ -1,7 +1,8 @@
 # environmentObject(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Supplies an `ObservableObject` to a view subhierarchy.
 
@@ -39,7 +40,7 @@ struct MyApp: App {
 }
 ```
 
-You then read the object inside `ContentView` or one of its descendants using the [`EnvironmentObject`](environmentobject.md) property wrapper:
+You then read the object inside `ContentView` or one of its descendants using the [`EnvironmentObject`](../environmentobject.md) property wrapper:
 
 ```swift
 struct ContentView: View {
@@ -55,9 +56,10 @@ struct ContentView: View {
 
 ## See Also
 
-- [func environmentObject<T>(T) -> some View](view/environmentobject(_:).md)
+### Distributing model data throughout your app
+- [func environmentObject<T>(T) -> some View](../view/environmentobject%28_%29.md)
   Supplies an observable object to a view’s hierarchy.
-- [struct EnvironmentObject](environmentobject.md)
+- [struct EnvironmentObject](../environmentobject.md)
   A property wrapper type for an observable object that a parent or ancestor view supplies.
 
 

@@ -1,6 +1,7 @@
 # App Crashes Expanded
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze the rate at which your app crashes.
 
@@ -9,13 +10,17 @@ Analyze the rate at which your app crashes.
 The data in this report contains details on how often your application crashes. This differs from the App Crashes report in that it contains data from all crashes on device as opposed to only those crashes which generate crash logs.
 
 - Territories: Worldwide
-- Platforms: iOS, iPadOS.  For more information about iOS and iPadOS, see the Platforms section in [`Data Completeness and Corrections`](data-completeness-corrections.md).
-- Availability: - Daily: Every day.
+- Platforms: iOS, iPadOS.  For more information about iOS and iPadOS, see the Platforms section in [Data Completeness and Corrections](./data-completeness-corrections.md).
+- Availability:
+
+  - Daily: Every day.
 - History: On request, data is available beginning with iOS 17.4 and iPadOS 17.4.
 - Completeness: Data from devices that contribute to this report can arrive as late as 8 days after the date it generates on device. You can download recent data daily, but it might be incomplete, and data updates incrementally daily, until all late-arriving events are available.
-- Privacy: - Includes data from users who have opted to share their data with Apple and developers.
-- Individual rows will only appear if they have a value of 5 or more.
-- Data Context: You can analyze your data with additional context by comparing it with the data in the [`App Sessions Context`](app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
+- Privacy:
+
+  - Includes data from users who have opted to share their data with Apple and developers.
+  - Individual rows will only appear if they have a value of 5 or more.
+- Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
 #### Report Fields
 
@@ -34,35 +39,36 @@ The data in this report contains details on how often your application crashes. 
 
 ## See Also
 
-- [AirPlay Errors](airplay-errors.md)
+### Performance
+- [AirPlay Errors](./airplay-errors.md)
   Analyze AirPlay errors in your apps.
-- [AirPlay Performance](airplay-performance.md)
+- [AirPlay Performance](./airplay-performance.md)
   Review AirPlay performance in your apps.
-- [App Installs Performance](app-installs-performance.md)
+- [App Installs Performance](./app-installs-performance.md)
   Analyze details about installation success and failure rates for your apps.
-- [App Neural Footprint](app-neural-footprint.md)
+- [App Neural Footprint](./app-neural-footprint.md)
   Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
-- [App Storage Reads and Writes](app-storage-reads-and-writes.md)
+- [App Storage Reads and Writes](./app-storage-reads-and-writes.md)
   Analyze how often your app uses disk reads and writes.
-- [Audio Overloads](audio-overloads.md)
+- [Audio Overloads](./audio-overloads.md)
   Analyze how many audio glitches people experience in your app.
-- [Bluetooth LE Session Duration](bluetooth-le-session-duration.md)
+- [Bluetooth LE Session Duration](./bluetooth-le-session-duration.md)
   Analyze how long your app uses Bluetooth Low Energy (LE) connections.
-- [Bluetooth System Wakes](bluetooth-system-wakes.md)
+- [Bluetooth System Wakes](./bluetooth-system-wakes.md)
   Analyze details about bluetooth system wakes that your app causes.
-- [CAMetalLayer Performance](cametallayer-performance.md)
+- [CAMetalLayer Performance](./cametallayer-performance.md)
   Review CAMetalLayer metadata and performance in your app.
-- [Cellular Plan Provisioning](cellular-plan-provisioning.md)
+- [Cellular Plan Provisioning](./cellular-plan-provisioning.md)
   Analyze how often people use your app for eSim install and the success rate.
-- [Custom Language Model Builds Failed](custom-language-model-builds-failed.md)
+- [Custom Language Model Builds Failed](./custom-language-model-builds-failed.md)
   Analyze how often your app-triggered rebuild of a custom language model failed.
-- [Display Power Information](display-power-information.md)
+- [Display Power Information](./display-power-information.md)
   Review your app’s impact on display pixel attributes.
-- [Embedding Generation](embedding-generation.md)
+- [Embedding Generation](./embedding-generation.md)
   Analyze details about embedding generation throughput in your app.
-- [HTTP Live Streaming Playback Errors](http-live-streaming-playback-errors.md)
+- [HTTP Live Streaming Playback Errors](./http-live-streaming-playback-errors.md)
   Analyze playback errors that your app receives.
-- [Launch Image Over Memory Limit](launch-image-over-memory-limit.md)
+- [Launch Image Over Memory Limit](./launch-image-over-memory-limit.md)
   Analyze how often your app fails to load because it’s over the memory limit.
 
 

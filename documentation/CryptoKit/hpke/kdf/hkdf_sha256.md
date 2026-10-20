@@ -1,7 +1,8 @@
 # HPKE.KDF.HKDF_SHA256
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An HMAC-based key derivation function that uses SHA-2 hashing with a 256-bit digest.
 

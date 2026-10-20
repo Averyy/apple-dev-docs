@@ -1,7 +1,8 @@
 # propagatesDeletesAtEndOfEvent
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the context propagates deletes at the end of the event in which a change was made.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the context propagates deletes at the end
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ A Boolean value that indicates whether the context propagates deletes at the end
 var propagatesDeletesAtEndOfEvent: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL propagatesDeletesAtEndOfEvent;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver propagates deletes at the end of the event in which a change was made, [`false`](https://developer.apple.com/documentation/swift/false) if it propagates deletes only during a save operation. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the receiver propagates deletes at the end of the event in which a change was made, [`false`](../../Swift/false.md) if it propagates deletes only during a save operation. The default is [`true`](../../Swift/true.md).
 
 
 ---

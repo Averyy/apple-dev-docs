@@ -1,7 +1,8 @@
 # isNaN(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the input tensor elements are `NaN` or not.
 
@@ -17,6 +18,10 @@ Checks if the input tensor elements are `NaN` or not.
 
 ```swift
 func isNaN(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) isNaNWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # encodeXPCObject(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes an object to send over an XPC connection.
 
@@ -20,6 +21,10 @@ Encodes an object to send over an XPC connection.
 func encodeXPCObject(_ xpcObject: xpc_object_t, forKey key: String)
 ```
 
+```objc
+- (void) encodeXPCObject:(xpc_object_t) xpcObject forKey:(NSString *) key;
+```
+
 ## Parameters
 
 - `xpcObject`: An object that XPC can encode.
@@ -27,7 +32,8 @@ func encodeXPCObject(_ xpcObject: xpc_object_t, forKey key: String)
 
 ## See Also
 
-- [func decodeXPCObject(ofType: xpc_type_t, forKey: String) -> xpc_object_t?](nsxpccoder/decodexpcobject(oftype:forkey:).md)
+### Encoding and Decoding
+- [func decodeXPCObject(ofType: xpc_type_t, forKey: String) -> xpc_object_t?](./decodexpcobject%28oftype,forkey%29.md)
   Decodes an object and validates that its type matches the type a service provides over XPC.
 
 

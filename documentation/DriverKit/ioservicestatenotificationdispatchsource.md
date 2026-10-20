@@ -1,47 +1,49 @@
 # IOServiceStateNotificationDispatchSource
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOServiceStateNotificationDispatchSource;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [Cancel](ioservicestatenotificationdispatchsource/cancel.md)
-- [SetEnableWithCompletion](ioservicestatenotificationdispatchsource/setenablewithcompletion.md)
-- [SetHandler](ioservicestatenotificationdispatchsource/sethandler.md)
-- [StateNotificationBegin](ioservicestatenotificationdispatchsource/statenotificationbegin.md)
-- [StateNotificationReady](ioservicestatenotificationdispatchsource/statenotificationready.md)
-- [free](ioservicestatenotificationdispatchsource/free.md)
-- [init](ioservicestatenotificationdispatchsource/init.md)
+- [Cancel](./ioservicestatenotificationdispatchsource/cancel.md)
+- [SetEnableWithCompletion](./ioservicestatenotificationdispatchsource/setenablewithcompletion.md)
+- [SetHandler](./ioservicestatenotificationdispatchsource/sethandler.md)
+- [StateNotificationBegin](./ioservicestatenotificationdispatchsource/statenotificationbegin.md)
+- [StateNotificationReady](./ioservicestatenotificationdispatchsource/statenotificationready.md)
+- [free](./ioservicestatenotificationdispatchsource/free.md)
+- [init](./ioservicestatenotificationdispatchsource/init.md)
 ### Type Methods
-- [Create](ioservicestatenotificationdispatchsource/create.md)
+- [Create](./ioservicestatenotificationdispatchsource/create.md)
 
 ## Relationships
 
 ### Inherits From
-- [IODispatchSource](iodispatchsource.md)
+- [IODispatchSource](./iodispatchsource.md)
 
 ## See Also
 
-- [IOHistogramReporter](iohistogramreporter.md)
-- [IOReportLegend](ioreportlegend.md)
-- [IOReporter](ioreporter.md)
-- [IOSimpleReporter](iosimplereporter.md)
-- [IOStateReporter](iostatereporter.md)
-- [OSBundle](osbundle.md)
-- [OSMappedFile](osmappedfile.md)
+### Classes
+- [IOHistogramReporter](./iohistogramreporter.md)
+- [IOReportLegend](./ioreportlegend.md)
+- [IOReporter](./ioreporter.md)
+- [IOSimpleReporter](./iosimplereporter.md)
+- [IOStateReporter](./iostatereporter.md)
+- [OSBundle](./osbundle.md)
+- [OSMappedFile](./osmappedfile.md)
 
 
 ---

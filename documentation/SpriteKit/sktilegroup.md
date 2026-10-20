@@ -1,7 +1,8 @@
 # SKTileGroup
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of tiles that collectively define one type of terrain.
 
@@ -20,9 +21,13 @@ A set of tiles that collectively define one type of terrain.
 class SKTileGroup
 ```
 
+```objc
+@interface SKTileGroup : NSObject
+```
+
 #### Overview
 
-An `SKTileGroup` object contains either the definition of a single tile or an array of [`SKTileGroupRule`](sktilegrouprule.md) objects that define adjacency rules.
+An `SKTileGroup` object contains either the definition of a single tile or an array of [`SKTileGroupRule`](./sktilegrouprule.md) objects that define adjacency rules.
 
 You supply a tile group with either:
 
@@ -34,47 +39,48 @@ The preferred method to create tile groups is to use the editor tools in Xcode. 
 ## Topics
 
 ### Creating Tile Groups
-- [Creating Tile Groups Programmatically](creating-tile-groups-programmatically.md)
+- [Creating Tile Groups Programmatically](./creating-tile-groups-programmatically.md)
   Paint tiles on a map by putting tile definitions in a group that you create in code.
-- [init(tileDefinition: SKTileDefinition)](sktilegroup/init(tiledefinition:).md)
+- [init(tileDefinition: SKTileDefinition)](./sktilegroup/init%28tiledefinition%29.md)
   Creates and initializes a simple tile group with a single tile definition.
-- [init(rules: [SKTileGroupRule])](sktilegroup/init(rules:).md)
+- [init(rules: [SKTileGroupRule])](./sktilegroup/init%28rules%29.md)
   Creates and initializes a tile group with the specified tile group rules.
 ### Accessing or Setting a Tile Group’s Properties
-- [var name: String?](sktilegroup/name.md)
+- [var name: String?](./sktilegroup/name.md)
   The receiver’s name.
-- [var rules: [SKTileGroupRule]](sktilegroup/rules.md)
-  An array of [`SKTileGroupRule`](sktilegrouprule.md) objects that the tile group uses to determine tile placement.
+- [var rules: [SKTileGroupRule]](./sktilegroup/rules.md)
+  An array of [`SKTileGroupRule`](./sktilegrouprule.md) objects that the tile group uses to determine tile placement.
 ### Creating an Empty Tile Group
-- [class func empty() -> Self](sktilegroup/empty.md)
+- [class func empty() -> Self](./sktilegroup/empty%28%29.md)
   Creates an empty tile that erases the existing tile at that location on a tile map.
 ### Initializers
-- [init?(coder: NSCoder)](sktilegroup/init(coder:).md)
+- [init?(coder: NSCoder)](./sktilegroup/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKTileMapNode](sktilemapnode.md)
+### Tiling
+- [class SKTileMapNode](./sktilemapnode.md)
   A two-dimensional array of images.
-- [class SKTileDefinition](sktiledefinition.md)
+- [class SKTileDefinition](./sktiledefinition.md)
   A single tile that can be repeated in a tile map.
-- [class SKTileGroupRule](sktilegrouprule.md)
+- [class SKTileGroupRule](./sktilegrouprule.md)
   Rules that describe how various tiles should be placed in a map.
-- [class SKTileSet](sktileset.md)
+- [class SKTileSet](./sktileset.md)
   A container for related tile groups.
 
 

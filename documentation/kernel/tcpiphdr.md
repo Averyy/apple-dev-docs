@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct tcpiphdr {
     ...
 };
@@ -17,8 +17,8 @@ struct tcpiphdr {
 ## Topics
 
 ### Instance Properties
-- [ti_i](tcpiphdr/3755088-ti_i.md)
-- [ti_t](tcpiphdr/3755089-ti_t.md)
+- [ti_i](./tcpiphdr/api-3755088-ti_i.md)
+- [ti_t](./tcpiphdr/api-3755089-ti_t.md)
 
 
 ---

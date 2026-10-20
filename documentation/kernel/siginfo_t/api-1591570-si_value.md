@@ -1,14 +1,15 @@
 # si_value
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 union sigval si_value;
 ```
 

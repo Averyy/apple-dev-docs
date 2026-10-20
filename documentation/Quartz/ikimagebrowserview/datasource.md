@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the data source of the receiver.
 
@@ -13,6 +14,10 @@ Returns the data source of the receiver.
 ```swift
 @IBOutlet
 unowned(unsafe) var dataSource: AnyObject! { get set }
+```
+
+```objc
+@property (assign) id dataSource;
 ```
 
 #### Return Value

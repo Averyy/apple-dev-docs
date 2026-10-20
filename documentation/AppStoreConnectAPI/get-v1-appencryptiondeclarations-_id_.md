@@ -1,7 +1,8 @@
 # Read app encryption declaration information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific app encryption declaration.
 
@@ -14,7 +15,7 @@ Get information about a specific app encryption declaration.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarations/69ab60b8-2f7a-91d4-e053-5b8c7c110c82
 ```
 
@@ -68,32 +69,58 @@ https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarations/69ab60b8-2f7a
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app encryption declaration resource ID from the [`List app encryption declarations`](./get-v1-appencryptiondeclarations.md) response.
+
+### Query Parameters
+
 - `fields[appEncryptionDeclarations]` ([string]): Additional fields to include for each app encryption declaration resource returned by the response.
-- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+
+  **Allowed Values**: `appDescription`, `createdDate`, `usesEncryption`, `exempt`, `containsProprietaryCryptography`, `containsThirdPartyCryptography`, `availableOnFrenchStore`, `platform`, `uploadedDate`, `documentUrl`, `documentName`, `documentType`, `appEncryptionDeclarationState`, `codeValue`, `app`, `builds`, `appEncryptionDeclarationDocument`
+- `fields[apps]` ([string]) *(deprecated)*: Additional fields to include for each app resource returned by the response.
+
+  **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `app`, `builds`, `appEncryptionDeclarationDocument`
 - `fields[appEncryptionDeclarationDocuments]` ([string]): Additional fields to include for each app encryption declaration document resource returned by the response.
+
+  **Allowed Values**: `fileSize`, `fileName`, `assetToken`, `downloadUrl`, `sourceFileChecksum`, `uploadOperations`, `assetDeliveryState`
 - `limit[builds]` (integer): The maximum number of related builds resources to return.
-- `fields[builds]` ([string])
+
+  **Maximum**: `50`
+- `fields[builds]` ([string]) *(deprecated)*: **Allowed Values**: `version`, `uploadedDate`, `expirationDate`, `expired`, `minOsVersion`, `lsMinimumSystemVersion`, `computedMinMacOsVersion`, `computedMinVisionOsVersion`, `iconAssetToken`, `processingState`, `buildAudienceType`, `usesNonExemptEncryption`, `preReleaseVersion`, `individualTesters`, `betaGroups`, `betaBuildLocalizations`, `appEncryptionDeclaration`, `betaAppReviewSubmission`, `app`, `buildBetaDetail`, `appStoreVersion`, `icons`, `buildBundles`, `buildUpload`, `perfPowerMetrics`, `diagnosticSignatures`
+
+## Responses
+
+- `200` OK (`AppEncryptionDeclarationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List app encryption declarations](get-v1-appencryptiondeclarations.md)
+### Getting App Encryption Declarations
+- [List app encryption declarations](./get-v1-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](./get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](./get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
-- [Read the app information of an app encryption declaration](get-v1-appencryptiondeclarations-_id_-app.md)
+- [Read the app information of an app encryption declaration](./get-v1-appencryptiondeclarations-_id_-app.md)
   Get the app information from a specific app encryption declaration.
-- [Read the App ID of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
+- [Read the App ID of an App Encryption Declaration](./get-v1-appencryptiondeclarations-_id_-relationships-app.md)
   Get the app id from a specific app encryption declaration.
-- [Read a specific app encryption declaration document](get-v1-appencryptiondeclarationdocuments-_id_.md)
+- [Read a specific app encryption declaration document](./get-v1-appencryptiondeclarationdocuments-_id_.md)
   Get detailed information about a specified App Encryption Declaration document.
-- [Read the declaration document for an app encryption declaration](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
+- [Read the declaration document for an app encryption declaration](./get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
   Read the associated document for a specific App Encryption Declaration.
-- [Read the App ID of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
+- [Read the App ID of an App Encryption Declaration](./get-v1-appencryptiondeclarations-_id_-relationships-app.md)
   Get the app id from a specific app encryption declaration.
-- [Read the ID of the Document for an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
+- [Read the ID of the Document for an App Encryption Declaration](./get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
   Get the document id associated with a specific app encryption declaration.
 
 

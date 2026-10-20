@@ -1,7 +1,8 @@
 # XMLParser
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event driven parser of XML documents (including DTD declarations).
 
@@ -20,77 +21,82 @@ An event driven parser of XML documents (including DTD declarations).
 class XMLParser
 ```
 
+```objc
+@interface NSXMLParser : NSObject
+```
+
 #### Overview
 
-An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, attributes, CDATA blocks, comments, and so on) that it encounters as it processes an XML document. It does not itself do anything with those parsed items except report them. It also reports parsing errors. For convenience, an [`XMLParser`](xmlparser.md) object in the following descriptions is sometimes referred to as a parser object. Unless used in a callback, the [`XMLParser`](xmlparser.md) is a thread-safe class as long as any given instance is only used in one thread.
+An [`XMLParser`](./xmlparser.md) notifies its delegate about the items (elements, attributes, CDATA blocks, comments, and so on) that it encounters as it processes an XML document. It does not itself do anything with those parsed items except report them. It also reports parsing errors. For convenience, an [`XMLParser`](./xmlparser.md) object in the following descriptions is sometimes referred to as a parser object. Unless used in a callback, the [`XMLParser`](./xmlparser.md) is a thread-safe class as long as any given instance is only used in one thread.
 
-> **Note**:  Namespace support was implemented in [`XMLParser`](xmlparser.md) starting in macOS 10.4. Namespace-related methods of [`XMLParser`](xmlparser.md) prior to this version have no effect.
+> **Note**:  Namespace support was implemented in [`XMLParser`](./xmlparser.md) starting in macOS 10.4. Namespace-related methods of [`XMLParser`](./xmlparser.md) prior to this version have no effect.
 
 ## Topics
 
 ### Initializing a Parser Object
-- [convenience init?(contentsOf: URL)](xmlparser/init(contentsof:).md)
+- [convenience init?(contentsOf: URL)](./xmlparser/init%28contentsof%29.md)
   Initializes a parser with the XML content referenced by the given URL.
-- [init(data: Data)](xmlparser/init(data:).md)
+- [init(data: Data)](./xmlparser/init%28data%29.md)
   Initializes a parser with the XML contents encapsulated in a given data object.
-- [convenience init(stream: InputStream)](xmlparser/init(stream:).md)
+- [convenience init(stream: InputStream)](./xmlparser/init%28stream%29.md)
   Initializes a parser with the XML contents from the specified stream and parses it.
 ### Managing Delegates
-- [var delegate: (any XMLParserDelegate)?](xmlparser/delegate.md)
+- [var delegate: (any XMLParserDelegate)?](./xmlparser/delegate.md)
   A delegate object that receives messages about the parsing process.
 ### Managing Parser Behavior
-- [var shouldProcessNamespaces: Bool](xmlparser/shouldprocessnamespaces.md)
+- [var shouldProcessNamespaces: Bool](./xmlparser/shouldprocessnamespaces.md)
   A Boolean value that determines whether the parser reports the namespaces and qualified names of elements.
-- [var shouldReportNamespacePrefixes: Bool](xmlparser/shouldreportnamespaceprefixes.md)
+- [var shouldReportNamespacePrefixes: Bool](./xmlparser/shouldreportnamespaceprefixes.md)
   A Boolean value that determines whether the parser reports the prefixes indicating the scope of namespace declarations.
-- [var shouldResolveExternalEntities: Bool](xmlparser/shouldresolveexternalentities.md)
+- [var shouldResolveExternalEntities: Bool](./xmlparser/shouldresolveexternalentities.md)
   A Boolean value that determines whether the parser reports declarations of external entities.
 ### Parsing
-- [func parse() -> Bool](xmlparser/parse.md)
+- [func parse() -> Bool](./xmlparser/parse%28%29.md)
   Starts the event-driven parsing operation.
-- [func abortParsing()](xmlparser/abortparsing.md)
+- [func abortParsing()](./xmlparser/abortparsing%28%29.md)
   Stops the parser object.
-- [var parserError: (any Error)?](xmlparser/parsererror.md)
-  An [`NSError`](nserror.md) object from which you can obtain information about a parsing error.
+- [var parserError: (any Error)?](./xmlparser/parsererror.md)
+  An [`NSError`](./nserror.md) object from which you can obtain information about a parsing error.
 ### Obtaining Parser State
-- [var columnNumber: Int](xmlparser/columnnumber.md)
+- [var columnNumber: Int](./xmlparser/columnnumber.md)
   The column number of the XML document being processed by the parser.
-- [var lineNumber: Int](xmlparser/linenumber.md)
+- [var lineNumber: Int](./xmlparser/linenumber.md)
   The line number of the XML document being processed by the parser.
-- [var publicID: String?](xmlparser/publicid.md)
+- [var publicID: String?](./xmlparser/publicid.md)
   The public identifier of the external entity referenced in the XML document.
-- [var systemID: String?](xmlparser/systemid.md)
+- [var systemID: String?](./xmlparser/systemid.md)
   The system identifier of the external entity referenced in the XML document.
 ### Constants
-- [XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.enum.md)
+- [XMLParser.ExternalEntityResolvingPolicy](./xmlparser/externalentityresolvingpolicy-swift.enum.md)
   Defines the external entity resolving policy used by an `NSXMLParser` instance.
-- [class let errorDomain: String](xmlparser/errordomain.md)
+- [class let errorDomain: String](./xmlparser/errordomain.md)
   Indicates an error in XML parsing.
-- [XMLParser.ErrorCode](xmlparser/errorcode.md)
+- [XMLParser.ErrorCode](./xmlparser/errorcode.md)
   The following error codes are defined by `NSXMLParser`. For error codes not listed here, see the `<libxml/xmlerror.h>` header file.
 ### Initializers
-- [convenience init?(contentsOfURL: URL)](xmlparser/init(contentsofurl:).md)
+- [convenience init?(contentsOfURL: URL)](./xmlparser/init%28contentsofurl%29.md)
 ### Instance Properties
-- [var allowedExternalEntityURLs: Set<URL>?](xmlparser/allowedexternalentityurls.md)
+- [var allowedExternalEntityURLs: Set<URL>?](./xmlparser/allowedexternalentityurls.md)
   The set of external entity URLs that the parser is allowed to load.
-- [var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.property.md)
+- [var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy](./xmlparser/externalentityresolvingpolicy-swift.property.md)
   The external entity resolving policy for the parser.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol XMLParserDelegate](xmlparserdelegate.md)
+### Event-Based Processing
+- [protocol XMLParserDelegate](./xmlparserdelegate.md)
   The interface an XML parser uses to inform its delegate about the content of the parsed document.
 
 

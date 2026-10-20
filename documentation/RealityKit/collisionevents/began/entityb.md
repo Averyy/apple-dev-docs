@@ -1,7 +1,8 @@
 # entityB
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The second entity involved in the collision.
 
@@ -11,7 +12,7 @@ The second entity involved in the collision.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let entityB: Entity
 
 ## See Also
 
-- [let entityA: Entity](collisionevents/began/entitya.md)
+### Getting the involved entities
+- [let entityA: Entity](./entitya.md)
   The first entity involved in the collision.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a menu.
@@ -23,7 +24,7 @@ Creates a view that represents the body of a menu.
 
 #### Discussion
 
-The system calls this method for each [`Menu`](menu.md) instance in a view hierarchy where this style is the current menu style.
+The system calls this method for each [`Menu`](../menu.md) instance in a view hierarchy where this style is the current menu style.
 
 ## Parameters
 
@@ -31,9 +32,10 @@ The system calls this method for each [`Menu`](menu.md) instance in a view hiera
 
 ## See Also
 
-- [MenuStyle.Configuration](menustyle/configuration.md)
+### Creating custom menu styles
+- [MenuStyle.Configuration](./configuration.md)
   The properties of a menu.
-- [associatedtype Body : View](menustyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a menu.
 
 

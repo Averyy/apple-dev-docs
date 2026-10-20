@@ -1,7 +1,8 @@
 # initialPage
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A static value the system uses to indicate the start of a new content enumeration.
 
@@ -17,9 +18,10 @@ static let initialPage: ContactItemPage
 
 ## See Also
 
-- [var generationMarker: Data](contactitempage/generationmarker.md)
+### Supporting paging
+- [var generationMarker: Data](./generationmarker.md)
   A value specific to your data source identifying the database generation when enumeration of content started.
-- [var offset: Int](contactitempage/offset.md)
+- [var offset: Int](./offset.md)
   An offset from the page’s generation marker.
 
 

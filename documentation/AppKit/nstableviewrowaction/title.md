@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the action button.
 
@@ -14,11 +15,16 @@ The title of the action button.
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var style: NSTableViewRowAction.Style](nstableviewrowaction/style-swift.property.md)
+### Configuring the Action’s Appearance
+- [var style: NSTableViewRowAction.Style](./style-swift.property.md)
   The style applied to the action button.
-- [var backgroundColor: NSColor!](nstableviewrowaction/backgroundcolor.md)
+- [var backgroundColor: NSColor!](./backgroundcolor.md)
   The background color of the action button.
 
 

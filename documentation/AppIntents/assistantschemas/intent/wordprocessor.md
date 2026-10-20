@@ -1,7 +1,8 @@
 # wordProcessor
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer word processing functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer word processing function
 ```swift
 static var wordProcessor: some AssistantSchemas.WordProcessorIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

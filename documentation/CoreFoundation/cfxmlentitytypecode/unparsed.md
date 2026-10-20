@@ -1,12 +1,13 @@
 # CFXMLEntityTypeCode.unparsed
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an unparsed entity.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Indicates an unparsed entity.
 case unparsed
 ```
 
+```c
+kCFXMLEntityTypeUnparsed
+```
+
 ## See Also
 
-- [CFXMLEntityTypeCode.parameter](cfxmlentitytypecode/parameter.md)
+### Constants
+- [CFXMLEntityTypeCode.parameter](./parameter.md)
   Implies a parsed, internal entity.
-- [CFXMLEntityTypeCode.parsedInternal](cfxmlentitytypecode/parsedinternal.md)
+- [CFXMLEntityTypeCode.parsedInternal](./parsedinternal.md)
   Indicates a parsed, internal entity.
-- [CFXMLEntityTypeCode.parsedExternal](cfxmlentitytypecode/parsedexternal.md)
+- [CFXMLEntityTypeCode.parsedExternal](./parsedexternal.md)
   Indicates a parsed, external entity.
-- [CFXMLEntityTypeCode.character](cfxmlentitytypecode/character.md)
+- [CFXMLEntityTypeCode.character](./character.md)
   Indicates a character entity type.
 
 

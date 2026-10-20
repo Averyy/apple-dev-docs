@@ -1,7 +1,8 @@
 # serif
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The serif variant of the default typeface.
 
@@ -19,17 +20,22 @@ The serif variant of the default typeface.
 static let serif: UIFontDescriptor.SystemDesign
 ```
 
+```c
+extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignSerif;
+```
+
 #### Discussion
 
-Using this constant with [`withDesign(_:)`](uifontdescriptor/withdesign(_:).md) returns [`New York`](https://developer.apple.comhttps://developer.apple.com/fonts/).
+Using this constant with [`withDesign(_:)`](../withdesign%28_%29.md) returns [New York](https://developer.apple.com/fonts/).
 
 ## See Also
 
-- [static let `default`: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/default.md)
+### Typeface designs
+- [static let `default`: UIFontDescriptor.SystemDesign](./default.md)
   The default typeface for an app’s user interface.
-- [static let rounded: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/rounded.md)
+- [static let rounded: UIFontDescriptor.SystemDesign](./rounded.md)
   The rounded variant of the default typeface.
-- [static let monospaced: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/monospaced.md)
+- [static let monospaced: UIFontDescriptor.SystemDesign](./monospaced.md)
   The monospace variant of the default typeface.
 
 

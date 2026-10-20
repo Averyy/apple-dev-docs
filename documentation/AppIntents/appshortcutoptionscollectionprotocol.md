@@ -1,7 +1,8 @@
 # AppShortcutOptionsCollectionProtocol
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,23 +22,24 @@ protocol AppShortcutOptionsCollectionProtocol
 ## Topics
 
 ### Associated Types
-- [associatedtype Provider : DynamicOptionsProvider](appshortcutoptionscollectionprotocol/provider.md)
+- [associatedtype Provider : DynamicOptionsProvider](./appshortcutoptionscollectionprotocol/provider.md)
 ### Instance Properties
-- [var dynamicOptionsProvider: Self.Provider](appshortcutoptionscollectionprotocol/dynamicoptionsprovider.md)
-- [var systemImageName: String?](appshortcutoptionscollectionprotocol/systemimagename.md)
-- [var title: LocalizedStringResource](appshortcutoptionscollectionprotocol/title.md)
+- [var dynamicOptionsProvider: Self.Provider](./appshortcutoptionscollectionprotocol/dynamicoptionsprovider.md)
+- [var systemImageName: String?](./appshortcutoptionscollectionprotocol/systemimagename.md)
+- [var title: LocalizedStringResource](./appshortcutoptionscollectionprotocol/title.md)
 
 ## Relationships
 
 ### Conforming Types
-- [AppShortcutOptionsCollection](appshortcutoptionscollection.md)
+- [AppShortcutOptionsCollection](./appshortcutoptionscollection.md)
 
 ## See Also
 
-- [struct AppShortcutOptionsCollection](appshortcutoptionscollection.md)
+### App Shortcut options
+- [struct AppShortcutOptionsCollection](./appshortcutoptionscollection.md)
   Represents a collection of options for parameters of an App Shortcut.
-- [protocol AppShortcutOptionsCollectionSpecification](appshortcutoptionscollectionspecification.md)
-- [enum AppShortcutOptionsCollectionSpecificationBuilder](appshortcutoptionscollectionspecificationbuilder.md)
+- [protocol AppShortcutOptionsCollectionSpecification](./appshortcutoptionscollectionspecification.md)
+- [enum AppShortcutOptionsCollectionSpecificationBuilder](./appshortcutoptionscollectionspecificationbuilder.md)
 
 
 ---

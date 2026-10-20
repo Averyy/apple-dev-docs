@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The most recent amount of change in values that the profile records.
@@ -20,13 +21,18 @@ The most recent amount of change in values that the profile records.
 var delta: Float { get }
 ```
 
+```objc
+@property (readonly) float delta;
+```
+
 ## See Also
 
-- [var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)?](gcrelativeinput/deltadidchangehandler.md)
+### Getting the delta value and timestamp
+- [var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)?](./deltadidchangehandler.md)
   The block that the profile calls when the element’s input changes.
-- [var lastDeltaTimestamp: TimeInterval](gcrelativeinput/lastdeltatimestamp.md)
+- [var lastDeltaTimestamp: TimeInterval](./lastdeltatimestamp.md)
   A timestamp for when the profile reports the delta value.
-- [var lastDeltaLatency: TimeInterval](gcrelativeinput/lastdeltalatency.md)
+- [var lastDeltaLatency: TimeInterval](./lastdeltalatency.md)
   The time in seconds between the current and the previous delta values.
 
 

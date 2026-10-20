@@ -1,18 +1,19 @@
 # CFSetApplierFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Prototype of a callback function that may be applied to every value in a set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Prototype of a callback function that may be applied to every value in a set.
 typealias CFSetApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const void *, void *) CFSetApplierFunction;
+```
+
 #### Discussion
 
-This callback is passed to the [`CFSetApplyFunction(_:_:_:)`](cfsetapplyfunction(_:_:_:).md) function which iterates over the values in a set and applies the behavior defined in the applier function to each value in a set.
+This callback is passed to the [`CFSetApplyFunction(_:_:_:)`](./cfsetapplyfunction%28_,_,_%29.md) function which iterates over the values in a set and applies the behavior defined in the applier function to each value in a set.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ This callback is passed to the [`CFSetApplyFunction(_:_:_:)`](cfsetapplyfunction
 
 ## See Also
 
-- [typealias CFSetCopyDescriptionCallBack](cfsetcopydescriptioncallback.md)
+### Callbacks
+- [typealias CFSetCopyDescriptionCallBack](./cfsetcopydescriptioncallback.md)
   Prototype of a callback function used to get a description of a value in a set.
-- [typealias CFSetEqualCallBack](cfsetequalcallback.md)
+- [typealias CFSetEqualCallBack](./cfsetequalcallback.md)
   Prototype of a callback function used to determine if two values in a set are equal.
-- [typealias CFSetHashCallBack](cfsethashcallback.md)
+- [typealias CFSetHashCallBack](./cfsethashcallback.md)
   Prototype of a callback function called to compute a hash code for a value. Hash codes are used when values are accessed, added, or removed from a collection.
-- [typealias CFSetReleaseCallBack](cfsetreleasecallback.md)
+- [typealias CFSetReleaseCallBack](./cfsetreleasecallback.md)
   Prototype of a callback function used to release a value before it’s removed from a set.
-- [typealias CFSetRetainCallBack](cfsetretaincallback.md)
+- [typealias CFSetRetainCallBack](./cfsetretaincallback.md)
   Prototype of a callback function used to retain a value being added to a set.
 
 

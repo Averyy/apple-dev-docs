@@ -1,12 +1,15 @@
 # TVElementResettableProperty.autoHighlightIdentifier
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The [`autoHighlightIdentifier`](tvviewelement/autohighlightidentifier.md) property is reset to `nil`.
+The [`autoHighlightIdentifier`](../tvviewelement/autohighlightidentifier.md) property is reset to `nil`.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,10 +17,15 @@ The [`autoHighlightIdentifier`](tvviewelement/autohighlightidentifier.md) proper
 case autoHighlightIdentifier
 ```
 
+```c
+TVElementResettablePropertyAutoHighlightIdentifier
+```
+
 ## See Also
 
-- [TVElementResettableProperty.updateType](tvelementresettableproperty/updatetype.md)
-  The [`updateType`](tvviewelement/updatetype.md) property is reset to [`TVElementUpdateType.none`](tvelementupdatetype/none.md).
+### Constants
+- [TVElementResettableProperty.updateType](./updatetype.md)
+  The [`updateType`](../tvviewelement/updatetype.md) property is reset to [`TVElementUpdateType.none`](../tvelementupdatetype/none.md).
 
 
 ---

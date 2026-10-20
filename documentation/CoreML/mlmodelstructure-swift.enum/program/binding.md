@@ -1,7 +1,8 @@
 # MLModelStructure.Program.Binding
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum representing a binding.
 
@@ -27,32 +28,33 @@ A Binding  is either a previously defined name of a variable or a constant value
 ## Topics
 
 ### Bindings
-- [MLModelStructure.Program.Binding.name(_:)](mlmodelstructure-swift.enum/program/binding/name(_:).md)
+- [MLModelStructure.Program.Binding.name(_:)](./binding/name%28_%29.md)
   The name of the previously defined variable in the Program.
-- [MLModelStructure.Program.Binding.value(_:)](mlmodelstructure-swift.enum/program/binding/value(_:).md)
+- [MLModelStructure.Program.Binding.value(_:)](./binding/value%28_%29.md)
   A constant value in the Program.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLModelStructure.Program.Argument](mlmodelstructure-swift.enum/program/argument.md)
+### Getting the program types
+- [MLModelStructure.Program.Argument](./argument.md)
   A struct representing an argument in the Program.
-- [MLModelStructure.Program.Block](mlmodelstructure-swift.enum/program/block.md)
+- [MLModelStructure.Program.Block](./block.md)
   A struct representing a block in the Program.
-- [MLModelStructure.Program.Function](mlmodelstructure-swift.enum/program/function.md)
+- [MLModelStructure.Program.Function](./function.md)
   A struct representing a function in the Program.
-- [MLModelStructure.Program.NamedValueType](mlmodelstructure-swift.enum/program/namedvaluetype.md)
+- [MLModelStructure.Program.NamedValueType](./namedvaluetype.md)
   A struct representing a named type in a Program.
-- [MLModelStructure.Program.Operation](mlmodelstructure-swift.enum/program/operation.md)
+- [MLModelStructure.Program.Operation](./operation.md)
   A struct representing an Operation in the Program.
-- [MLModelStructure.Program.Value](mlmodelstructure-swift.enum/program/value.md)
+- [MLModelStructure.Program.Value](./value.md)
   A struct representing the value of a variable in the Program.
-- [MLModelStructure.Program.ValueType](mlmodelstructure-swift.enum/program/valuetype.md)
+- [MLModelStructure.Program.ValueType](./valuetype.md)
   A struct representing the type of a variable in the Program.
 
 

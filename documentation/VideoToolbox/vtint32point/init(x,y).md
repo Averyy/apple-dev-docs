@@ -1,7 +1,8 @@
 # init(x:y:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point with coordinates specified as integer values.
 
@@ -26,7 +27,8 @@ init(x: Int32, y: Int32)
 
 ## See Also
 
-- [init()](vtint32point/init.md)
+### Creating a Point
+- [init()](./init%28%29.md)
   Creates a size with coordinates equal to zero.
 
 

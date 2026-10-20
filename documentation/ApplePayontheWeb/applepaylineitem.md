@@ -1,7 +1,8 @@
 # ApplePayLineItem
 
 **Framework**: Apple Pay on the Web  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A line item in a payment request—for example, total, tax, discount, or grand total.
 
@@ -11,7 +12,7 @@ A line item in a payment request—for example, total, tax, discount, or grand t
 
 ## Declaration
 
-```swift
+```
 dictionary ApplePayLineItem {
 	ApplePayLineItemType type;
 	DOMString label;
@@ -57,49 +58,50 @@ The following code is an example of a line item for a deferred charge of $50 on 
 }
 ```
 
-For examples of line items within an [`ApplePayPaymentRequest`](applepaypaymentrequest.md), see [`lineItems`](applepaypaymentrequest/lineitems.md) and [`total`](applepaypaymentrequest/total.md).
+For examples of line items within an [`ApplePayPaymentRequest`](./applepaypaymentrequest.md), see [`lineItems`](./applepaypaymentrequest/lineitems.md) and [`total`](./applepaypaymentrequest/total.md).
 
 ## Topics
 
 ### Setting line item properties
-- [label](applepaylineitem/label.md)
+- [label](./applepaylineitem/label.md)
   A required value that’s a short, localized description of the line item.
-- [amount](applepaylineitem/amount.md)
+- [amount](./applepaylineitem/amount.md)
   A required value that’s the monetary amount of the line item.
-- [type](applepaylineitem/type.md)
+- [type](./applepaylineitem/type.md)
   A value that indicates whether the line item is final or pending.
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](./applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 ### Configuring payment timing
-- [paymentTiming](applepaylineitem/paymenttiming.md)
+- [paymentTiming](./applepaylineitem/paymenttiming.md)
   The time that the payment occurs as part of a successful transaction.
-- [ApplePayPaymentTiming](applepaypaymenttiming.md)
+- [ApplePayPaymentTiming](./applepaypaymenttiming.md)
   A type that indicates the time a payment occurs in a transaction.
 ### Configuring recurring payments
-- [recurringPaymentStartDate](applepaylineitem/recurringpaymentstartdate.md)
+- [recurringPaymentStartDate](./applepaylineitem/recurringpaymentstartdate.md)
   The date of the first payment.
-- [recurringPaymentEndDate](applepaylineitem/recurringpaymentenddate.md)
+- [recurringPaymentEndDate](./applepaylineitem/recurringpaymentenddate.md)
   The date of the final payment.
-- [recurringPaymentIntervalUnit](applepaylineitem/recurringpaymentintervalunit.md)
+- [recurringPaymentIntervalUnit](./applepaylineitem/recurringpaymentintervalunit.md)
   The amount of time — in calendar units, such as day, month, or year — that represents a fraction of the total payment interval.
-- [recurringPaymentIntervalCount](applepaylineitem/recurringpaymentintervalcount.md)
+- [recurringPaymentIntervalCount](./applepaylineitem/recurringpaymentintervalcount.md)
   The number of interval units that make up the total payment interval.
-- [ApplePayRecurringPaymentDateUnit](applepayrecurringpaymentdateunit.md)
+- [ApplePayRecurringPaymentDateUnit](./applepayrecurringpaymentdateunit.md)
   A type that indicates calendrical units, such as year, month, day, and hour.
 ### Configuring deferred payments
-- [deferredPaymentDate](applepaylineitem/deferredpaymentdate.md)
+- [deferredPaymentDate](./applepaylineitem/deferredpaymentdate.md)
   The date, in the future, of the payment.
 ### Configuring automatic reload payments
-- [automaticReloadPaymentThresholdAmount](applepaylineitem/automaticreloadpaymentthresholdamount.md)
+- [automaticReloadPaymentThresholdAmount](./applepaylineitem/automaticreloadpaymentthresholdamount.md)
   The balance an account reaches before the merchant applies the automatic reload amount.
 
 ## See Also
 
-- [total](applepaypaymentrequest/total.md)
+### Setting the total and summary line items
+- [total](./applepaypaymentrequest/total.md)
   A line item that represents the total for the payment.
-- [lineItems](applepaypaymentrequest/lineitems.md)
+- [lineItems](./applepaypaymentrequest/lineitems.md)
   A set of line items that explain recurring payments and additional charges and discounts.
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](./applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 
 

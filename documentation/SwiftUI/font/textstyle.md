@@ -1,7 +1,8 @@
 # Font.TextStyle
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A dynamic text style to use for fonts.
 
@@ -23,59 +24,60 @@ enum TextStyle
 ## Topics
 
 ### Getting font text styles
-- [Font.TextStyle.extraLargeTitle2](font/textstyle/extralargetitle2.md)
+- [Font.TextStyle.extraLargeTitle2](./textstyle/extralargetitle2.md)
   The font used for second level extra large titles.
-- [Font.TextStyle.extraLargeTitle](font/textstyle/extralargetitle.md)
+- [Font.TextStyle.extraLargeTitle](./textstyle/extralargetitle.md)
   The font used for extra large titles.
-- [Font.TextStyle.largeTitle](font/textstyle/largetitle.md)
+- [Font.TextStyle.largeTitle](./textstyle/largetitle.md)
   The font style for large titles.
-- [Font.TextStyle.title](font/textstyle/title.md)
+- [Font.TextStyle.title](./textstyle/title.md)
   The font used for first level hierarchical headings.
-- [Font.TextStyle.title2](font/textstyle/title2.md)
+- [Font.TextStyle.title2](./textstyle/title2.md)
   The font used for second level hierarchical headings.
-- [Font.TextStyle.title3](font/textstyle/title3.md)
+- [Font.TextStyle.title3](./textstyle/title3.md)
   The font used for third level hierarchical headings.
-- [Font.TextStyle.headline](font/textstyle/headline.md)
+- [Font.TextStyle.headline](./textstyle/headline.md)
   The font used for headings.
-- [Font.TextStyle.subheadline](font/textstyle/subheadline.md)
+- [Font.TextStyle.subheadline](./textstyle/subheadline.md)
   The font used for subheadings.
-- [Font.TextStyle.body](font/textstyle/body.md)
+- [Font.TextStyle.body](./textstyle/body.md)
   The font used for body text.
-- [Font.TextStyle.callout](font/textstyle/callout.md)
+- [Font.TextStyle.callout](./textstyle/callout.md)
   The font used for callouts.
-- [Font.TextStyle.caption](font/textstyle/caption.md)
+- [Font.TextStyle.caption](./textstyle/caption.md)
   The font used for standard captions.
-- [Font.TextStyle.caption2](font/textstyle/caption2.md)
+- [Font.TextStyle.caption2](./textstyle/caption2.md)
   The font used for alternate captions.
-- [Font.TextStyle.footnote](font/textstyle/footnote.md)
+- [Font.TextStyle.footnote](./textstyle/footnote.md)
   The font used in footnotes.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](font/system(_:design:weight:).md)
+### Getting system fonts
+- [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](./system%28_,design,weight%29.md)
   Gets a system font that uses the specified style, design, and weight.
-- [Font.Design](font/design.md)
+- [Font.Design](./design.md)
   A design to use for fonts.
-- [struct Weight](font/weight.md)
+- [struct Weight](./weight.md)
   A weight to use for fonts.
-- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](font/system(size:weight:design:)-697b2.md)
+- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](./system%28size,weight,design%29-697b2.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
-- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
+- [static func system(Font.TextStyle, design: Font.Design) -> Font](./system%28_,design%29.md)
   Gets a system font with the given text style and design.
-- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
+- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](./system%28size,weight,design%29-73a88.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 
 

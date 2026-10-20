@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Version.version13
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Version 13 of the WebSocket protocol.
 

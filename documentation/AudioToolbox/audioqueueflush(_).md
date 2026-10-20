@@ -1,7 +1,8 @@
 # AudioQueueFlush(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resets an audio queue’s decoder state.
 
@@ -19,15 +20,19 @@ Resets an audio queue’s decoder state.
 func AudioQueueFlush(_ inAQ: AudioQueueRef) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueFlush(AudioQueueRef inAQ);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
 
 #### Discussion
 
-Call [`AudioQueueFlush(_:)`](audioqueueflush(_:).md) after enqueuing the last audio queue buffer to ensure that all buffered data, as well as all audio data in the midst of processing, gets recorded or played. If you do not call this function, stale data in the audio queue’s decoder may interfere with playback or recording of the next set of buffers.
+Call [`AudioQueueFlush(_:)`](./audioqueueflush%28_%29.md) after enqueuing the last audio queue buffer to ensure that all buffered data, as well as all audio data in the midst of processing, gets recorded or played. If you do not call this function, stale data in the audio queue’s decoder may interfere with playback or recording of the next set of buffers.
 
-Call this function before calling [`AudioQueueStop(_:_:)`](audioqueuestop(_:_:).md) if you want to ensure that all enqueued data reaches the destination. If you call [`AudioQueueStop(_:_:)`](audioqueuestop(_:_:).md) with the `inImmediate` parameter set to `false`, calling this function does nothing; under those conditions, [`AudioQueueStop(_:_:)`](audioqueuestop(_:_:).md) calls this function.
+Call this function before calling [`AudioQueueStop(_:_:)`](./audioqueuestop%28_,_%29.md) if you want to ensure that all enqueued data reaches the destination. If you call [`AudioQueueStop(_:_:)`](./audioqueuestop%28_,_%29.md) with the `inImmediate` parameter set to `false`, calling this function does nothing; under those conditions, [`AudioQueueStop(_:_:)`](./audioqueuestop%28_,_%29.md) calls this function.
 
 ## Parameters
 
@@ -35,17 +40,19 @@ Call this function before calling [`AudioQueueStop(_:_:)`](audioqueuestop(_:_:).
 
 ## See Also
 
-- [func AudioQueueDispose(AudioQueueRef, Bool) -> OSStatus](audioqueuedispose(_:_:).md)
+### Related Documentation
+- [func AudioQueueDispose(AudioQueueRef, Bool) -> OSStatus](./audioqueuedispose%28_,_%29.md)
   Disposes of an audio queue.
-- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](audioqueuestart(_:_:).md)
+### Controlling Audio Queues
+- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](./audioqueuestart%28_,_%29.md)
   Begins playing or recording audio.
-- [func AudioQueuePrime(AudioQueueRef, UInt32, UnsafeMutablePointer<UInt32>?) -> OSStatus](audioqueueprime(_:_:_:).md)
+- [func AudioQueuePrime(AudioQueueRef, UInt32, UnsafeMutablePointer<UInt32>?) -> OSStatus](./audioqueueprime%28_,_,_%29.md)
   Decodes enqueued buffers in preparation for playback.
-- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](audioqueuestop(_:_:).md)
+- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](./audioqueuestop%28_,_%29.md)
   Stops playing or recording audio.
-- [func AudioQueuePause(AudioQueueRef) -> OSStatus](audioqueuepause(_:).md)
+- [func AudioQueuePause(AudioQueueRef) -> OSStatus](./audioqueuepause%28_%29.md)
   Pauses audio playback or recording.
-- [func AudioQueueReset(AudioQueueRef) -> OSStatus](audioqueuereset(_:).md)
+- [func AudioQueueReset(AudioQueueRef) -> OSStatus](./audioqueuereset%28_%29.md)
   Resets an audio queue.
 
 

@@ -1,12 +1,13 @@
 # NSAccessibility.Role
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe types of objects that accessibility elements represent.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,173 +15,178 @@ Values that describe types of objects that accessibility elements represent.
 struct Role
 ```
 
+```c
+typedef NSString * NSAccessibilityRole;
+```
+
 ## Topics
 
 ### Roles
-- [static let application: NSAccessibility.Role](nsaccessibility-swift.struct/role/application.md)
+- [static let application: NSAccessibility.Role](./role/application.md)
   The app role.
-- [static let browser: NSAccessibility.Role](nsaccessibility-swift.struct/role/browser.md)
+- [static let browser: NSAccessibility.Role](./role/browser.md)
   The browser role.
-- [static let busyIndicator: NSAccessibility.Role](nsaccessibility-swift.struct/role/busyindicator.md)
+- [static let busyIndicator: NSAccessibility.Role](./role/busyindicator.md)
   The busy indicator role.
-- [static let button: NSAccessibility.Role](nsaccessibility-swift.struct/role/button.md)
+- [static let button: NSAccessibility.Role](./role/button.md)
   The button role.
-- [static let cell: NSAccessibility.Role](nsaccessibility-swift.struct/role/cell.md)
+- [static let cell: NSAccessibility.Role](./role/cell.md)
   The cell role in a table or matrix.
-- [static let checkBox: NSAccessibility.Role](nsaccessibility-swift.struct/role/checkbox.md)
+- [static let checkBox: NSAccessibility.Role](./role/checkbox.md)
   The checkbox role.
-- [static let colorWell: NSAccessibility.Role](nsaccessibility-swift.struct/role/colorwell.md)
+- [static let colorWell: NSAccessibility.Role](./role/colorwell.md)
   The color well role.
-- [static let column: NSAccessibility.Role](nsaccessibility-swift.struct/role/column.md)
+- [static let column: NSAccessibility.Role](./role/column.md)
   The column role.
-- [static let comboBox: NSAccessibility.Role](nsaccessibility-swift.struct/role/combobox.md)
+- [static let comboBox: NSAccessibility.Role](./role/combobox.md)
   The combo box role.
-- [static let dateTimeAreaRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/datetimearearole.md)
-- [static let disclosureTriangle: NSAccessibility.Role](nsaccessibility-swift.struct/role/disclosuretriangle.md)
+- [static let dateTimeAreaRole: NSAccessibility.Role](./role/datetimearearole.md)
+- [static let disclosureTriangle: NSAccessibility.Role](./role/disclosuretriangle.md)
   The disclosure triangle role.
-- [static let drawer: NSAccessibility.Role](nsaccessibility-swift.struct/role/drawer.md)
+- [static let drawer: NSAccessibility.Role](./role/drawer.md)
   The drawer role.
-- [static let grid: NSAccessibility.Role](nsaccessibility-swift.struct/role/grid.md)
+- [static let grid: NSAccessibility.Role](./role/grid.md)
   The grid role.
-- [static let group: NSAccessibility.Role](nsaccessibility-swift.struct/role/group.md)
+- [static let group: NSAccessibility.Role](./role/group.md)
   The group role.
-- [static let growArea: NSAccessibility.Role](nsaccessibility-swift.struct/role/growarea.md)
+- [static let growArea: NSAccessibility.Role](./role/growarea.md)
   The grow (resize) area role in a window.
-- [static let handle: NSAccessibility.Role](nsaccessibility-swift.struct/role/handle.md)
+- [static let handle: NSAccessibility.Role](./role/handle.md)
   The drag handle role.
-- [static let headingRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/headingrole.md)
-- [static let helpTag: NSAccessibility.Role](nsaccessibility-swift.struct/role/helptag.md)
+- [static let headingRole: NSAccessibility.Role](./role/headingrole.md)
+- [static let helpTag: NSAccessibility.Role](./role/helptag.md)
   The help tag role.
-- [static let image: NSAccessibility.Role](nsaccessibility-swift.struct/role/image.md)
+- [static let image: NSAccessibility.Role](./role/image.md)
   The image role.
-- [static let incrementor: NSAccessibility.Role](nsaccessibility-swift.struct/role/incrementor.md)
+- [static let incrementor: NSAccessibility.Role](./role/incrementor.md)
   The stepper role.
-- [static let layoutArea: NSAccessibility.Role](nsaccessibility-swift.struct/role/layoutarea.md)
+- [static let layoutArea: NSAccessibility.Role](./role/layoutarea.md)
   The layout area role (a view, such as a graphic view, that contains visual elements that may not have any accessibility representation).
-- [static let layoutItem: NSAccessibility.Role](nsaccessibility-swift.struct/role/layoutitem.md)
+- [static let layoutItem: NSAccessibility.Role](./role/layoutitem.md)
   The role for an item in a layout area.
-- [static let levelIndicator: NSAccessibility.Role](nsaccessibility-swift.struct/role/levelindicator.md)
+- [static let levelIndicator: NSAccessibility.Role](./role/levelindicator.md)
   The level indicator role.
-- [static let link: NSAccessibility.Role](nsaccessibility-swift.struct/role/link.md)
+- [static let link: NSAccessibility.Role](./role/link.md)
   The link role.
-- [static let list: NSAccessibility.Role](nsaccessibility-swift.struct/role/list.md)
+- [static let list: NSAccessibility.Role](./role/list.md)
   The list role.
-- [static let listMarkerRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/listmarkerrole.md)
-- [static let matte: NSAccessibility.Role](nsaccessibility-swift.struct/role/matte.md)
+- [static let listMarkerRole: NSAccessibility.Role](./role/listmarkerrole.md)
+- [static let matte: NSAccessibility.Role](./role/matte.md)
   The matte role.
-- [static let menu: NSAccessibility.Role](nsaccessibility-swift.struct/role/menu.md)
+- [static let menu: NSAccessibility.Role](./role/menu.md)
   The menu role.
-- [static let menuBar: NSAccessibility.Role](nsaccessibility-swift.struct/role/menubar.md)
+- [static let menuBar: NSAccessibility.Role](./role/menubar.md)
   The menu bar role.
-- [static let menuBarItem: NSAccessibility.Role](nsaccessibility-swift.struct/role/menubaritem.md)
+- [static let menuBarItem: NSAccessibility.Role](./role/menubaritem.md)
   The menu bar item role.
-- [static let menuButton: NSAccessibility.Role](nsaccessibility-swift.struct/role/menubutton.md)
+- [static let menuButton: NSAccessibility.Role](./role/menubutton.md)
   The menu button role.
-- [static let menuItem: NSAccessibility.Role](nsaccessibility-swift.struct/role/menuitem.md)
+- [static let menuItem: NSAccessibility.Role](./role/menuitem.md)
   The menu item role.
-- [static let outline: NSAccessibility.Role](nsaccessibility-swift.struct/role/outline.md)
+- [static let outline: NSAccessibility.Role](./role/outline.md)
   The outline role.
-- [static let pageRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/pagerole.md)
+- [static let pageRole: NSAccessibility.Role](./role/pagerole.md)
   The page role.
-- [static let popUpButton: NSAccessibility.Role](nsaccessibility-swift.struct/role/popupbutton.md)
+- [static let popUpButton: NSAccessibility.Role](./role/popupbutton.md)
   The pop-up button role.
-- [static let popover: NSAccessibility.Role](nsaccessibility-swift.struct/role/popover.md)
+- [static let popover: NSAccessibility.Role](./role/popover.md)
   The popover role.
-- [static let progressIndicator: NSAccessibility.Role](nsaccessibility-swift.struct/role/progressindicator.md)
+- [static let progressIndicator: NSAccessibility.Role](./role/progressindicator.md)
   The progress indicator role.
-- [static let radioButton: NSAccessibility.Role](nsaccessibility-swift.struct/role/radiobutton.md)
+- [static let radioButton: NSAccessibility.Role](./role/radiobutton.md)
   The radio button role.
-- [static let radioGroup: NSAccessibility.Role](nsaccessibility-swift.struct/role/radiogroup.md)
+- [static let radioGroup: NSAccessibility.Role](./role/radiogroup.md)
   The radio button group role.
-- [static let relevanceIndicator: NSAccessibility.Role](nsaccessibility-swift.struct/role/relevanceindicator.md)
+- [static let relevanceIndicator: NSAccessibility.Role](./role/relevanceindicator.md)
   The relevance indicator role.
-- [static let row: NSAccessibility.Role](nsaccessibility-swift.struct/role/row.md)
+- [static let row: NSAccessibility.Role](./role/row.md)
   The row role.
-- [static let ruler: NSAccessibility.Role](nsaccessibility-swift.struct/role/ruler.md)
+- [static let ruler: NSAccessibility.Role](./role/ruler.md)
   The ruler role.
-- [static let rulerMarker: NSAccessibility.Role](nsaccessibility-swift.struct/role/rulermarker.md)
+- [static let rulerMarker: NSAccessibility.Role](./role/rulermarker.md)
   The ruler marker role.
-- [static let scrollArea: NSAccessibility.Role](nsaccessibility-swift.struct/role/scrollarea.md)
+- [static let scrollArea: NSAccessibility.Role](./role/scrollarea.md)
   The scroll view role.
-- [static let scrollBar: NSAccessibility.Role](nsaccessibility-swift.struct/role/scrollbar.md)
+- [static let scrollBar: NSAccessibility.Role](./role/scrollbar.md)
   The scroll bar role.
-- [static let sheet: NSAccessibility.Role](nsaccessibility-swift.struct/role/sheet.md)
+- [static let sheet: NSAccessibility.Role](./role/sheet.md)
   The sheet role.
-- [static let slider: NSAccessibility.Role](nsaccessibility-swift.struct/role/slider.md)
+- [static let slider: NSAccessibility.Role](./role/slider.md)
   The slider role.
-- [static let splitGroup: NSAccessibility.Role](nsaccessibility-swift.struct/role/splitgroup.md)
+- [static let splitGroup: NSAccessibility.Role](./role/splitgroup.md)
   The split view role.
-- [static let splitter: NSAccessibility.Role](nsaccessibility-swift.struct/role/splitter.md)
+- [static let splitter: NSAccessibility.Role](./role/splitter.md)
   The splitter bar role for a split view.
-- [static let staticText: NSAccessibility.Role](nsaccessibility-swift.struct/role/statictext.md)
+- [static let staticText: NSAccessibility.Role](./role/statictext.md)
   The uneditable text role.
-- [static let systemWide: NSAccessibility.Role](nsaccessibility-swift.struct/role/systemwide.md)
+- [static let systemWide: NSAccessibility.Role](./role/systemwide.md)
   The systemwide accessibility object role.
-- [static let tabGroup: NSAccessibility.Role](nsaccessibility-swift.struct/role/tabgroup.md)
+- [static let tabGroup: NSAccessibility.Role](./role/tabgroup.md)
   The tab group role.
-- [static let table: NSAccessibility.Role](nsaccessibility-swift.struct/role/table.md)
+- [static let table: NSAccessibility.Role](./role/table.md)
   The table role.
-- [static let textArea: NSAccessibility.Role](nsaccessibility-swift.struct/role/textarea.md)
+- [static let textArea: NSAccessibility.Role](./role/textarea.md)
   The text view role.
-- [static let textField: NSAccessibility.Role](nsaccessibility-swift.struct/role/textfield.md)
+- [static let textField: NSAccessibility.Role](./role/textfield.md)
   The text field role.
-- [static let toolbar: NSAccessibility.Role](nsaccessibility-swift.struct/role/toolbar.md)
+- [static let toolbar: NSAccessibility.Role](./role/toolbar.md)
   The toolbar role.
-- [static let valueIndicator: NSAccessibility.Role](nsaccessibility-swift.struct/role/valueindicator.md)
+- [static let valueIndicator: NSAccessibility.Role](./role/valueindicator.md)
   The value indicator role.
-- [static let webAreaRole: NSAccessibility.Role](nsaccessibility-swift.struct/role/webarearole.md)
-- [static let window: NSAccessibility.Role](nsaccessibility-swift.struct/role/window.md)
+- [static let webAreaRole: NSAccessibility.Role](./role/webarearole.md)
+- [static let window: NSAccessibility.Role](./role/window.md)
   The window role.
-- [static let unknown: NSAccessibility.Role](nsaccessibility-swift.struct/role/unknown.md)
+- [static let unknown: NSAccessibility.Role](./role/unknown.md)
   An object with an unknown role.
 ### Descriptions
-- [func description(with: NSAccessibility.Subrole?) -> String?](nsaccessibility-swift.struct/role/description(with:).md)
+- [func description(with: NSAccessibility.Subrole?) -> String?](./role/description%28with%29.md)
   Returns a standard description for a role and subrole.
-- [static func description(for: Any) -> String?](nsaccessibility-swift.struct/role/description(for:).md)
+- [static func description(for: Any) -> String?](./role/description%28for%29.md)
   Returns a standard role description for a user interface element.
 ### Initializers
-- [init(rawValue: String)](nsaccessibility-swift.struct/role/init(rawvalue:).md)
+- [init(rawValue: String)](./role/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAccessibility.Action](nsaccessibility-swift.struct/action.md)
+### Accessibility Types
+- [NSAccessibility.Action](./action.md)
   Constants that describe types of actions.
-- [NSAccessibility.AnnotationAttributeKey](nsaccessibility-swift.struct/annotationattributekey.md)
+- [NSAccessibility.AnnotationAttributeKey](./annotationattributekey.md)
   Keys for annotation attributes.
-- [enum NSAccessibilityAnnotationPosition](nsaccessibilityannotationposition.md)
+- [enum NSAccessibilityAnnotationPosition](../nsaccessibilityannotationposition.md)
   Constants that specify the position where the annotation applies.
-- [NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute.md)
+- [NSAccessibility.Attribute](./attribute.md)
   Constants that describe attributes.
-- [NSAccessibility.FontAttributeKey](nsaccessibility-swift.struct/fontattributekey.md)
+- [NSAccessibility.FontAttributeKey](./fontattributekey.md)
   Keys for font attributes.
-- [enum NSAccessibilityOrientation](nsaccessibilityorientation.md)
+- [enum NSAccessibilityOrientation](../nsaccessibilityorientation.md)
   Values that indicate the orientation of accessibility elements, such as scroll bars and split views.
-- [NSAccessibility.OrientationValue](nsaccessibility-swift.struct/orientationvalue.md)
+- [NSAccessibility.OrientationValue](./orientationvalue.md)
   Values that indicate the orientation of user interface elements, such as scroll bars and split views.
-- [NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute.md)
+- [NSAccessibility.ParameterizedAttribute](./parameterizedattribute.md)
   Values that describe parameterized attributes.
-- [enum NSAccessibilityRulerMarkerType](nsaccessibilityrulermarkertype.md)
+- [enum NSAccessibilityRulerMarkerType](../nsaccessibilityrulermarkertype.md)
   Values that indicate the marker type of an accessibility element.
-- [NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue.md)
+- [NSAccessibility.RulerMarkerTypeValue](./rulermarkertypevalue.md)
   Values that describe ruler marker types.
-- [NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue.md)
+- [NSAccessibility.RulerUnitValue](./rulerunitvalue.md)
   Values that indicate the unit values of a ruler or layout area.
-- [NSAccessibility.SortDirectionValue](nsaccessibility-swift.struct/sortdirectionvalue.md)
+- [NSAccessibility.SortDirectionValue](./sortdirectionvalue.md)
   Values that indicate the sort direction of a column.
-- [enum NSAccessibilitySortDirection](nsaccessibilitysortdirection.md)
+- [enum NSAccessibilitySortDirection](../nsaccessibilitysortdirection.md)
   Values that indicate the sort direction of a column.
-- [NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole.md)
+- [NSAccessibility.Subrole](./subrole.md)
   Values that describe specialized object subtypes that accessibility elements represent.
-- [enum NSAccessibilityUnits](nsaccessibilityunits.md)
+- [enum NSAccessibilityUnits](../nsaccessibilityunits.md)
   Values that indicate the unit values of a ruler or layout area.
 
 

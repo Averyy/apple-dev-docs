@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Casts an object handle to a prim handle.
 
@@ -25,7 +26,8 @@ Returns `nil` if the object is not a prim.
 
 ## See Also
 
-- [init()](usdprim/init.md)
+### Creating a prim
+- [init()](./init%28%29.md)
   An invalid prim handle.
 
 

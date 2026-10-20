@@ -1,7 +1,8 @@
 # decimalNumberOverflowException
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The exception raised on overflow.
 
@@ -20,13 +21,18 @@ The exception raised on overflow.
 static let decimalNumberOverflowException: NSExceptionName
 ```
 
+```c
+extern NSExceptionName const NSDecimalNumberOverflowException;
+```
+
 ## See Also
 
-- [static let decimalNumberExactnessException: NSExceptionName](nsexceptionname/decimalnumberexactnessexception.md)
+### Recognizing Exceptions
+- [static let decimalNumberExactnessException: NSExceptionName](./decimalnumberexactnessexception.md)
   The exception raised if there is an exactness error.
-- [static let decimalNumberUnderflowException: NSExceptionName](nsexceptionname/decimalnumberunderflowexception.md)
+- [static let decimalNumberUnderflowException: NSExceptionName](./decimalnumberunderflowexception.md)
   The exception raised on underflow.
-- [static let decimalNumberDivideByZeroException: NSExceptionName](nsexceptionname/decimalnumberdividebyzeroexception.md)
+- [static let decimalNumberDivideByZeroException: NSExceptionName](./decimalnumberdividebyzeroexception.md)
   The exception raised on divide by zero.
 
 

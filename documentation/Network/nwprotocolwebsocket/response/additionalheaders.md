@@ -1,7 +1,8 @@
 # additionalHeaders
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Any additional HTTP headers in a WebSocket server response.
 
@@ -22,13 +23,14 @@ let additionalHeaders: [(name: String, value: String)]?
 
 ## See Also
 
-- [init(status: NWProtocolWebSocket.Response.Status, subprotocol: String?, additionalHeaders: [(name: String, value: String)]?)](nwprotocolwebsocket/response/init(status:subprotocol:additionalheaders:).md)
+### Sending Handshake Responses
+- [init(status: NWProtocolWebSocket.Response.Status, subprotocol: String?, additionalHeaders: [(name: String, value: String)]?)](./init%28status,subprotocol,additionalheaders%29.md)
   Initializes a WebSocket server response with a status, selected subprotocol, and additional HTTP headers.
-- [NWProtocolWebSocket.Response.Status](nwprotocolwebsocket/response/status-swift.enum.md)
+- [NWProtocolWebSocket.Response.Status](./status-swift.enum.md)
   Status values that are sent with a WebSocket server response.
-- [let status: NWProtocolWebSocket.Response.Status](nwprotocolwebsocket/response/status-swift.property.md)
+- [let status: NWProtocolWebSocket.Response.Status](./status-swift.property.md)
   The status of a WebSocket server response.
-- [let subprotocol: String?](nwprotocolwebsocket/response/subprotocol.md)
+- [let subprotocol: String?](./subprotocol.md)
   The selected subprotocol in a WebSocket server response.
 
 

@@ -1,7 +1,8 @@
 # ShortcutsLink
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button that brings users to the current app’s App Shortcuts page in the Shortcuts app.
 
@@ -9,7 +10,7 @@ A button that brings users to the current app’s App Shortcuts page in the Shor
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,21 +31,22 @@ ShortcutsLink(action: handleTap)
 ## Topics
 
 ### Initializers
-- [init(action: () -> Void)](shortcutslink/init(action:).md)
+- [init(action: () -> Void)](./shortcutslink/init%28action%29.md)
   Creates a link that launches Shortcuts and then executes the specified closure.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class ShortcutsUIButton](shortcutsuibutton.md)
+### Buttons
+- [class ShortcutsUIButton](./shortcutsuibutton.md)
   A button that opens the current app’s page in the Shortcuts app.
-- [struct ShortcutsLinkStyle](shortcutslinkstyle.md)
+- [struct ShortcutsLinkStyle](./shortcutslinkstyle.md)
   The styles to apply to buttons you use to open your app’s page in the Shortcuts app.
 
 

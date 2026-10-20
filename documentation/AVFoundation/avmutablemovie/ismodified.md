@@ -1,7 +1,8 @@
 # isModified
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the movie is in a modified state.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the movie is in a modified state.
 var isModified: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isModified) BOOL modified;
+```
+
 #### Discussion
 
 The value is true if you’ve modified the movie since you created it, saved it, or had its modified state cleared.
 
 ## See Also
 
-- [var timescale: CMTimeScale](avmutablemovie/timescale.md)
+### Configuring a movie
+- [var timescale: CMTimeScale](./timescale.md)
   The time scale of the movie.
-- [var interleavingPeriod: CMTime](avmutablemovie/interleavingperiod.md)
+- [var interleavingPeriod: CMTime](./interleavingperiod.md)
   A time period indicating the duration for interleaving runs of samples for each track.
-- [var defaultMediaDataStorage: AVMediaDataStorage?](avmutablemovie/defaultmediadatastorage.md)
+- [var defaultMediaDataStorage: AVMediaDataStorage?](./defaultmediadatastorage.md)
   The default storage container for media data that you add to a movie.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Data_Environmental_WindDirection
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Data_Environmental_WindDirection = 0x0435
 ```
 

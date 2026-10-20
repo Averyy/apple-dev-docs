@@ -1,7 +1,8 @@
 # vDSP_HANN_NORM
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 Specifies a normalized Hann window
 
@@ -10,7 +11,7 @@ Specifies a normalized Hann window
 
 ## Declaration
 
-```swift
+```c
 vDSP_HANN_NORM = 2
 ```
 

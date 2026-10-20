@@ -1,7 +1,8 @@
 # era
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An era or count of eras.
 
@@ -26,15 +27,16 @@ var era: Int? { get set }
 
 ## See Also
 
-- [var year: Int?](datecomponents/year.md)
+### Accessing Months and Years
+- [var year: Int?](./year.md)
   A year or count of years.
-- [var yearForWeekOfYear: Int?](datecomponents/yearforweekofyear.md)
+- [var yearForWeekOfYear: Int?](./yearforweekofyear.md)
   The year corresponding to a week-counting week.
-- [var quarter: Int?](datecomponents/quarter.md)
+- [var quarter: Int?](./quarter.md)
   A quarter or count of quarters.
-- [var month: Int?](datecomponents/month.md)
+- [var month: Int?](./month.md)
   A month or count of months.
-- [var isLeapMonth: Bool?](datecomponents/isleapmonth.md)
+- [var isLeapMonth: Bool?](./isleapmonth.md)
   Set to true if these components represent a leap month.
 
 

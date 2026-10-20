@@ -1,7 +1,8 @@
 # SetHasMIDI
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value indicating the box’s MIDI support
 
@@ -10,7 +11,7 @@ Sets the value indicating the box’s MIDI support
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetHasMIDI(bool in_has_midi);
 ```
 
@@ -24,15 +25,16 @@ The object sends a notification to the host to update the object state on succes
 
 ## See Also
 
-- [SetHasAudio](iouservideobox/sethasaudio.md)
+### Determining media support
+- [SetHasAudio](./sethasaudio.md)
   Sets the value indicating the box’s audio support.
-- [HasAudio](iouservideobox/hasaudio.md)
+- [HasAudio](./hasaudio.md)
   A Boolean value indicating if box has audio capabilities.
-- [SetHasVideo](iouservideobox/sethasvideo.md)
+- [SetHasVideo](./sethasvideo.md)
   Sets the value indicating the box’s video support.
-- [HasVideo](iouservideobox/hasvideo.md)
+- [HasVideo](./hasvideo.md)
   A Boolean value indicating if box has video capabilities.
-- [HasMIDI](iouservideobox/hasmidi.md)
+- [HasMIDI](./hasmidi.md)
   A Boolean value indicating if box has MIDI capabilities.
 
 

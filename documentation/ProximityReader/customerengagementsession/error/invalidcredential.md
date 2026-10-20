@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.invalidCredential
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credential used to create the session is not valid.
 

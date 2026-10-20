@@ -1,14 +1,15 @@
 # hv_support_available
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 int hv_support_available;
 ```
 

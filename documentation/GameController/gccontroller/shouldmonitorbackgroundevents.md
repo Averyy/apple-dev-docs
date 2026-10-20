@@ -1,7 +1,8 @@
 # shouldMonitorBackgroundEvents
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the app needs to respond to controller events when it isn’t the frontmost app.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the app needs to respond to controller ev
 class var shouldMonitorBackgroundEvents: Bool { get set }
 ```
 
+```objc
+@property (class, nonatomic, readwrite) BOOL shouldMonitorBackgroundEvents;
+```
+
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), and the app isn’t in the foreground, the framework doesn’t forward any input from the game controller until the app becomes the frontmost.
+If [`false`](../../Swift/false.md), and the app isn’t in the foreground, the framework doesn’t forward any input from the game controller until the app becomes the frontmost.
 
-> **Note**:  In macOS 11.3 and later, the default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). Prior to macOS 11.3, the default value is [`true`](https://developer.apple.com/documentation/swift/true). In iOS and tvOS, the framework ignores this property.
+> **Note**:  In macOS 11.3 and later, the default value for this property is [`false`](../../Swift/false.md). Prior to macOS 11.3, the default value is [`true`](../../Swift/true.md). In iOS and tvOS, the framework ignores this property.
 
 ## See Also
 
-- [var isAttachedToDevice: Bool](gccontroller/isattachedtodevice.md)
+### Inspecting a controller
+- [var isAttachedToDevice: Bool](./isattachedtodevice.md)
   A Boolean value that indicates whether the controller closely integrates with the device.
-- [class func supportsHIDDevice(IOHIDDevice) -> Bool](gccontroller/supportshiddevice(_:).md)
+- [class func supportsHIDDevice(IOHIDDevice) -> Bool](./supportshiddevice%28_%29.md)
   Returns a Boolean value that indicates whether the framework supports the specified human interface device.
 
 

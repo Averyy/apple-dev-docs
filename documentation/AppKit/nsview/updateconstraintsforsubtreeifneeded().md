@@ -1,7 +1,8 @@
 # updateConstraintsForSubtreeIfNeeded()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the constraints for the receiving view and its subviews.
 
@@ -14,6 +15,10 @@ Updates the constraints for the receiving view and its subviews.
 func updateConstraintsForSubtreeIfNeeded()
 ```
 
+```objc
+- (void) updateConstraintsForSubtreeIfNeeded;
+```
+
 #### Discussion
 
 Whenever a new layout pass is triggered for a view, the system invokes this method to ensure that any constraints for the view and its subviews are updated with information from the current view hierarchy and its constraints. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date constraints.
@@ -22,15 +27,16 @@ Subclasses should not override this method.
 
 ## See Also
 
-- [var needsLayout: Bool](nsview/needslayout.md)
+### Triggering Auto Layout
+- [var needsLayout: Bool](./needslayout.md)
   A Boolean value indicating whether the view needs a layout pass before it can be drawn.
-- [func layout()](nsview/layout.md)
+- [func layout()](./layout%28%29.md)
   Perform layout in concert with the constraint-based layout system.
-- [func layoutSubtreeIfNeeded()](nsview/layoutsubtreeifneeded.md)
+- [func layoutSubtreeIfNeeded()](./layoutsubtreeifneeded%28%29.md)
   Updates the layout of the receiving view and its subviews based on the current views and constraints.
-- [var needsUpdateConstraints: Bool](nsview/needsupdateconstraints.md)
+- [var needsUpdateConstraints: Bool](./needsupdateconstraints.md)
   A Boolean value indicating whether the view’s constraints need to be updated.
-- [func updateConstraints()](nsview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Update constraints for the view.
 
 

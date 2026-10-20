@@ -1,7 +1,8 @@
 # BLAS_THREADING_MULTI_THREADED
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies that the Accelerate framework decides whether BLAS and LAPACK execute on single or multiple threads.
 
@@ -20,17 +21,22 @@ A constant that specifies that the Accelerate framework decides whether BLAS and
 var BLAS_THREADING_MULTI_THREADED: BLAS_THREADING { get }
 ```
 
+```c
+BLAS_THREADING_MULTI_THREADED
+```
+
 ## See Also
 
-- [init(UInt32)](blas_threading/init(_:).md)
+### Specifying a threading model
+- [init(UInt32)](./blas_threading/init%28_%29.md)
   Creates a threading model constant.
-- [init(rawValue: UInt32)](blas_threading/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./blas_threading/init%28rawvalue%29.md)
   Creates a threading model constant with an unsigned-integer value.
-- [var rawValue: UInt32](blas_threading/rawvalue.md)
+- [var rawValue: UInt32](./blas_threading/rawvalue.md)
   The raw value that represents the threading model.
-- [var BLAS_THREADING_SINGLE_THREADED: BLAS_THREADING](blas_threading_single_threaded.md)
+- [var BLAS_THREADING_SINGLE_THREADED: BLAS_THREADING](./blas_threading_single_threaded.md)
   A constant that specifies BLAS and LAPACK execute on a single thread only.
-- [var BLAS_THREADING_MAX_OPTIONS: BLAS_THREADING](blas_threading_max_options.md)
+- [var BLAS_THREADING_MAX_OPTIONS: BLAS_THREADING](./blas_threading_max_options.md)
 
 
 ---

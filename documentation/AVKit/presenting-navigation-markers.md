@@ -1,6 +1,7 @@
 # Presenting navigation markers
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: Article
 
 Present navigation markers in the Chapters panel to help users quickly navigate your content.
 
@@ -8,17 +9,17 @@ Present navigation markers in the Chapters panel to help users quickly navigate 
 
 To help users navigate your content, the Chapters panel presents navigation markers that represent points of interest within the media’s timeline. Users can skip to desired content by selecting a marker with the Siri Remote.
 
-![An image of Apple TV Chapters panel that shows a horizontal list of chapter markers.](/images/com.apple.avkit/media-3905733@2x.png)
+![An image of Apple TV Chapters panel that shows a horizontal list of chapter markers.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3905733@2x.png)
 
-#### Set the Navigation Markers
+#### Set the navigation markers
 
-In tvOS, a [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) contains a [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property you use to supply chapter information. Set this property to an array of [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) objects to define the navigation markers for the current media.
+In tvOS, a [`AVPlayerItem`](../AVFoundation/avplayeritem.md) contains a [`navigationMarkerGroups`](../AVFoundation/avplayeritem/navigationmarkergroups.md) property you use to supply chapter information. Set this property to an array of [`AVNavigationMarkersGroup`](./avnavigationmarkersgroup.md) objects to define the navigation markers for the current media.
 
-> **Note**:  Although the player item defines the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property as an array, the system only supports the first group in the array.
+> **Note**:  Although the player item defines the [`navigationMarkerGroups`](../AVFoundation/avplayeritem/navigationmarkergroups.md) property as an array, the system only supports the first group in the array.
 
-An [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) contains one or more [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup) objects, each representing an individual marker presented in the player’s Info panel. Each [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup) stores a time range in the asset’s timeline to which this marker applies, an array of [`AVMetadataItem`](https://developer.apple.com/documentation/avfoundation/avmetadataitem) objects to define the marker’s title, and, optionally, its thumbnail artwork.
+An [`AVNavigationMarkersGroup`](./avnavigationmarkersgroup.md) contains one or more [`AVTimedMetadataGroup`](../AVFoundation/avtimedmetadatagroup.md) objects, each representing an individual marker presented in the player’s Info panel. Each [`AVTimedMetadataGroup`](../AVFoundation/avtimedmetadatagroup.md) stores a time range in the asset’s timeline to which this marker applies, an array of [`AVMetadataItem`](../AVFoundation/avmetadataitem.md) objects to define the marker’s title, and, optionally, its thumbnail artwork.
 
-![A top-down component diagram showing a player item containing navigation markers groups at the top. The middle component shows a navigation markers group containing timed metadata groups. The bottom component shows a timed metadata group containing multiple metadata items.](/images/com.apple.avkit/media-3905734@2x.png)
+![A top-down component diagram showing a player item containing navigation markers groups at the top. The middle component shows a navigation markers group containing timed metadata groups. The bottom component shows a timed metadata group containing multiple metadata items.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3905734@2x.png)
 
 The following code shows how you can present a chapter list for your media:
 
@@ -92,11 +93,12 @@ private func makeMetadataItem(_ identifier: AVMetadataIdentifier, value: Any) ->
 
 ## See Also
 
-- [Working with interstitial content](working-with-interstitial-content.md)
+### Interstitials and markers
+- [Working with interstitial content](./working-with-interstitial-content.md)
   Present additional content alongside your main media presentation using HTTP Live Streaming support.
-- [class AVInterstitialTimeRange](avinterstitialtimerange.md)
+- [class AVInterstitialTimeRange](./avinterstitialtimerange.md)
   A time range in an audiovisual presentation for content with an interstitial designation, such as advertisements or legal notices.
-- [class AVNavigationMarkersGroup](avnavigationmarkersgroup.md)
+- [class AVNavigationMarkersGroup](./avnavigationmarkersgroup.md)
   A set of markers for navigating playback of an audiovisual presentation.
 
 

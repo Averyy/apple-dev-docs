@@ -1,7 +1,8 @@
 # HourWeather
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the weather conditions for the hour.
 
@@ -23,75 +24,76 @@ struct HourWeather
 ## Topics
 
 ### Getting temperature and humidity
-- [var apparentTemperature: Measurement<UnitTemperature>](hourweather/apparenttemperature.md)
+- [var apparentTemperature: Measurement<UnitTemperature>](./hourweather/apparenttemperature.md)
   The apparent, or “feels like” temperature during the hour.
-- [var humidity: Double](hourweather/humidity.md)
+- [var humidity: Double](./hourweather/humidity.md)
   The humidity for the hour.
-- [var temperature: Measurement<UnitTemperature>](hourweather/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./hourweather/temperature.md)
   The temperature during the hour.
-- [var dewPoint: Measurement<UnitTemperature>](hourweather/dewpoint.md)
+- [var dewPoint: Measurement<UnitTemperature>](./hourweather/dewpoint.md)
   The amount of moisture in the air.
 ### Getting pressure
-- [var pressure: Measurement<UnitPressure>](hourweather/pressure.md)
+- [var pressure: Measurement<UnitPressure>](./hourweather/pressure.md)
   The atmospheric pressure at sea level at a given location.
-- [var pressureTrend: PressureTrend](hourweather/pressuretrend.md)
+- [var pressureTrend: PressureTrend](./hourweather/pressuretrend.md)
   The kind and amount of atmospheric pressure change over time.
 ### Getting conditions
-- [var cloudCover: Double](hourweather/cloudcover.md)
+- [var cloudCover: Double](./hourweather/cloudcover.md)
   The percentage of the sky covered with clouds.
-- [var condition: WeatherCondition](hourweather/condition.md)
+- [var condition: WeatherCondition](./hourweather/condition.md)
   A description of the weather condition for this hour.
-- [var isDaylight: Bool](hourweather/isdaylight.md)
+- [var isDaylight: Bool](./hourweather/isdaylight.md)
   The presence or absence of daylight at the requested location and hour.
-- [var visibility: Measurement<UnitLength>](hourweather/visibility.md)
+- [var visibility: Measurement<UnitLength>](./hourweather/visibility.md)
   The distance at which an object can be clearly seen.
 ### Getting the UV index
-- [var uvIndex: UVIndex](hourweather/uvindex.md)
+- [var uvIndex: UVIndex](./hourweather/uvindex.md)
   The expected intensity of ultraviolet radiation from the sun.
 ### Getting the wind
-- [var wind: Wind](hourweather/wind.md)
+- [var wind: Wind](./hourweather/wind.md)
   Wind data describing the wind speed, direction, and gust.
 ### Getting the date
-- [var date: Date](hourweather/date.md)
+- [var date: Date](./hourweather/date.md)
   The start time of the hour weather.
 ### Getting the precipitation
-- [var precipitation: Precipitation](hourweather/precipitation.md)
+- [var precipitation: Precipitation](./hourweather/precipitation.md)
   Description of precipitation for this hour.
-- [var precipitationChance: Double](hourweather/precipitationchance.md)
+- [var precipitationChance: Double](./hourweather/precipitationchance.md)
   The probability of precipitation during the hour.
 ### Getting the weather symbol
-- [var symbolName: String](hourweather/symbolname.md)
+- [var symbolName: String](./hourweather/symbolname.md)
   The SF Symbol icon that represents the hour weather condition and whether it’s daylight on the hour.
 ### Instance Properties
-- [var cloudCoverByAltitude: CloudCoverByAltitude](hourweather/cloudcoverbyaltitude.md)
+- [var cloudCoverByAltitude: CloudCoverByAltitude](./hourweather/cloudcoverbyaltitude.md)
   The percentage of the sky covered with low altitude, middle altitude and high altitude clouds during the period.
-- [var precipitationAmount: Measurement<UnitLength>](hourweather/precipitationamount.md)
+- [var precipitationAmount: Measurement<UnitLength>](./hourweather/precipitationamount.md)
   The amount of precipitation for the hour.
-- [var snowfallAmount: Measurement<UnitLength>](hourweather/snowfallamount.md)
+- [var snowfallAmount: Measurement<UnitLength>](./hourweather/snowfallamount.md)
   The amount of snowfall for the hour.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherAlert](weatheralert.md)
+### Alerts and forecasts
+- [struct WeatherAlert](./weatheralert.md)
   A weather alert issued for the requested  location by a governmental authority.
-- [struct WeatherAvailability](weatheravailability.md)
+- [struct WeatherAvailability](./weatheravailability.md)
   A structure that indicates the availability of data at the requested location.
-- [struct Forecast](forecast.md)
+- [struct Forecast](./forecast.md)
   A forecast collection for minute, hourly, and daily forecasts.
-- [struct MinuteWeather](minuteweather.md)
+- [struct MinuteWeather](./minuteweather.md)
   A structure that represents the next hour minute forecasts.
-- [struct DayWeather](dayweather.md)
+- [struct DayWeather](./dayweather.md)
   A structure that represents the weather conditions for the day.
 
 

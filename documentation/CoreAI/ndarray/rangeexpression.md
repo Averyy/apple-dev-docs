@@ -1,7 +1,8 @@
 # NDArray.RangeExpression
 
 **Framework**: Core AI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 27.0+
@@ -19,17 +20,17 @@ protocol RangeExpression : Sendable
 ## Topics
 
 ### Selecting an entire dimension
-- [static var all: _AllRange](ndarray/rangeexpression/all.md)
+- [static var all: _AllRange](./rangeexpression/all.md)
   A range expression that selects the entire dimension.
 ### Resolving a range
-- [func relative(to: Range<Int>) -> Range<Int>](ndarray/rangeexpression/relative(to:).md)
+- [func relative(to: Range<Int>) -> Range<Int>](./rangeexpression/relative%28to%29.md)
   Returns Range for the dimension.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

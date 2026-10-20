@@ -1,7 +1,8 @@
 # compose(stronger:for:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Composes a stronger operation into this one for the given slot.
 

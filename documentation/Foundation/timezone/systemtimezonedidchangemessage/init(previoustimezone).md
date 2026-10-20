@@ -1,7 +1,8 @@
 # init(previousTimeZone:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message for a change in the system time zone.
 

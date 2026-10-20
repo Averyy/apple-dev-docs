@@ -1,7 +1,8 @@
 # annotations
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original annotations.
 
@@ -22,15 +23,16 @@ let annotations: MLShapedArray<Scalar>
 
 ## See Also
 
-- [let features: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/features.md)
+### Inspecting a time series forecaster annotated window
+- [let features: MLShapedArray<Scalar>](./features.md)
   The original features.
-- [let forecastWindowSize: Int](timeseriesforecasterannotatedwindows/forecastwindowsize.md)
+- [let forecastWindowSize: Int](./forecastwindowsize.md)
   The prediction sample count.
-- [let inputWindowSize: Int](timeseriesforecasterannotatedwindows/inputwindowsize.md)
+- [let inputWindowSize: Int](./inputwindowsize.md)
   The input sample count.
-- [var shufflesElements: Bool](timeseriesforecasterannotatedwindows/shuffleselements.md)
+- [var shufflesElements: Bool](./shuffleselements.md)
   A Boolean value indicating whether to shuffle the elements.
-- [var stride: Int](timeseriesforecasterannotatedwindows/stride.md)
+- [var stride: Int](./stride.md)
   The number of samples between windows.
 
 

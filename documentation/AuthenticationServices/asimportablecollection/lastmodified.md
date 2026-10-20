@@ -1,7 +1,8 @@
 # lastModified
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time when the collection was last modified.
 

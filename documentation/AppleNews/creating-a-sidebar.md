@@ -1,6 +1,7 @@
 # Creating a Sidebar
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Create a box with an HTML bulleted list in the margin.
 
@@ -10,18 +11,18 @@ Placing supplemental or reference information in the margin of your article can 
 
 **On this page, you’ll learn how to create a sidebar that contains some HTML formatting.**
 
-![Screenshot of an Apple News article with an anchored sidebar on iPad.](/images/com.apple.applenews/media-3624926@2x.png)
+![Screenshot of an Apple News article with an anchored sidebar on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624926@2x.png)
 
 ##### Create Component Layout Objects for the Sidebar
 
 The `ComponentLayout` object called `sidebarLayout` specifies that the sidebar will begin in column 7 of the article layout and span three columns. The other `ComponentLayout` object makes a minor adjustment.
 
-1. Copy the example code [`Sidebar Layout Objects: Copy This Code`](creating-a-sidebar#Sidebar-Layout-Objects-Copy-This-Code.md).
+1. Copy the example code [Sidebar Layout Objects: Copy This Code](./creating-a-sidebar.md#Sidebar-Layout-Objects-Copy-This-Code).
 2. Paste the code between the closing brace (`}`) of the last `ComponentLayout` object and the closing brace for the whole `componentLayouts` property.
 
-Your code should look like the example code [`Sidebar Layout Objects: Result`](creating-a-sidebar#Sidebar-Layout-Objects-Result.md).
+Your code should look like the example code [Sidebar Layout Objects: Result](./creating-a-sidebar.md#Sidebar-Layout-Objects-Result).
 
-###### Sidebar Layout Objects Copy This Code
+###### Sidebar Layout Objects: Copy This Code
 
 ```json
 ,
@@ -43,7 +44,7 @@ Your code should look like the example code [`Sidebar Layout Objects: Result`](c
     }
 ```
 
-###### Sidebar Layout Objects Result
+###### Sidebar Layout Objects: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -77,12 +78,12 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 Before you can apply a background color to the sidebar, you must define  a new `ComponentStyle` object for the sidebar background color.
 
-1. Copy the example code [`sidebarBackgroundStyle: Copy This Code`](creating-a-sidebar#sidebarBackgroundStyle-Copy-This-Code.md).
+1. Copy the example code [sidebarBackgroundStyle: Copy This Code](./creating-a-sidebar.md#sidebarBackgroundStyle-Copy-This-Code).
 2. Paste the code between the closing brace (`}`) of the last `ComponentStyle` object and the closing brace for the whole `componentStyles` property.
 
-Your code should look like the example code [`sidebarBackgroundStyle: Result`](creating-a-sidebar#sidebarBackgroundStyle-Result.md).
+Your code should look like the example code [sidebarBackgroundStyle: Result](./creating-a-sidebar.md#sidebarBackgroundStyle-Result).
 
-###### Sidebarbackgroundstyle Copy This Code
+###### sidebarBackgroundStyle: Copy This Code
 
 ```json
 ,
@@ -91,7 +92,7 @@ Your code should look like the example code [`sidebarBackgroundStyle: Result`](c
     }
 ```
 
-###### Sidebarbackgroundstyle Result
+###### sidebarBackgroundStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -112,12 +113,12 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 In your working `article.json` file, update the `body` component that follows the `podcast` component.
 
-1. Copy the example code [`Body: Copy This Code`](creating-a-sidebar#Body-Copy-This-Code.md).
+1. Copy the example code [Body: Copy This Code](./creating-a-sidebar.md#Body-Copy-This-Code).
 2. Paste the copied code, replacing the `body` component that follows the `podcast` component.
 
-Your code should look like the example code [`Body: Result`](creating-a-sidebar#Body-Result.md)
+Your code should look like the example code [Body: Result](./creating-a-sidebar.md#Body-Result)
 
-###### Body Copy This Code
+###### Body: Copy This Code
 
 ```json
 {
@@ -129,7 +130,7 @@ Your code should look like the example code [`Body: Result`](creating-a-sidebar#
 },
 ```
 
-###### Body Result
+###### Body: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -169,12 +170,12 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 In your working `article.json` file, the `body` component that follows the `podcast` component should now have an `identifier` property with the value `body2`.
 
-1. Copy the example code [`Container: Copy This Code`](creating-a-sidebar#Container-Copy-This-Code.md).
+1. Copy the example code [Container: Copy This Code](./creating-a-sidebar.md#Container-Copy-This-Code).
 2. Paste the code after the closing brace and comma at the end of the body component that contains an identifier property with the value `body2`.
 
-Your code should look like the example code [`Container: Result`](creating-a-sidebar#Container-Result.md).
+Your code should look like the example code [Container: Result](./creating-a-sidebar.md#Container-Result).
 
-###### Container Copy This Code
+###### Container: Copy This Code
 
 ```json
 {
@@ -215,7 +216,7 @@ Your code should look like the example code [`Container: Result`](creating-a-sid
 },
 ```
 
-###### Container Result
+###### Container: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -283,35 +284,37 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ##### Previous
 
-[`Adding a Video`](adding-a-video.md)
+[Adding a Video](./adding-a-video.md)
 
 ##### Next
 
-[`Adding a Fixed Image Fill`](adding-a-fixed-image-fill.md)
+[Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
 
 ## See Also
 
-- [Planning the Layout for Your Article](planning-the-layout-for-your-article.md)
+### Related Documentation
+- [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md)
   Define a layout that supports the look you want for your article.
-- [Positioning the Content in Your Article](positioning-the-content-in-your-article.md)
+- [Positioning the Content in Your Article](./positioning-the-content-in-your-article.md)
   Align article components with columns in your layout.
-- [Wrapping Text Around a Component](wrapping-text-around-a-component.md)
+- [Wrapping Text Around a Component](./wrapping-text-around-a-component.md)
   Define the layout of a text component to wrap around another component.
-- [Nesting Components in an Article](nesting-components-in-an-article.md)
+- [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [object Anchor](../applenewsformat/anchor.md)
+- [object Anchor](https://developer.apple.com/documentation/applenewsformat/anchor)
   The object for anchoring one component to another component in your article’s layout.
-- [Using HTML with Apple News Format](using-html-with-apple-news-format.md)
+- [Using HTML with Apple News Format](./using-html-with-apple-news-format.md)
   Use HTML formatting for text components.
-- [Giving the Article a Dark Color Scheme](giving-the-article-a-dark-color-scheme.md)
+### Advanced Design Tutorial 3: More Ideas
+- [Giving the Article a Dark Color Scheme](./giving-the-article-a-dark-color-scheme.md)
   Apply a new color scheme to your article.
-- [Adding a Video](adding-a-video.md)
+- [Adding a Video](./adding-a-video.md)
   Add a video component inside the header component.
-- [Adding a Fixed Image Fill](adding-a-fixed-image-fill.md)
+- [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
   Add an image that remains stationary when the user scrolls.
-- [Creating a Newsletter Sign-Up Element](creating-a-newsletter-sign-up-element.md)
+- [Creating a Newsletter Sign-Up Element](./creating-a-newsletter-sign-up-element.md)
   Add a newsletter sign-up element in your article.
-- [Viewing the Finished Article for Advanced Design Tutorial 3](viewing-the-finished-article-for-advanced-design-tutorial-3.md)
+- [Viewing the Finished Article for Advanced Design Tutorial 3](./viewing-the-finished-article-for-advanced-design-tutorial-3.md)
   See the full JSON code from this tutorial.
 
 

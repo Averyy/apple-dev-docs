@@ -1,7 +1,8 @@
 # setARSession(_:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the framework with an existing AR session to use for Camera Assistance.
 
@@ -16,18 +17,25 @@ Provides the framework with an existing AR session to use for Camera Assistance.
 func setARSession(_ session: ARSession)
 ```
 
+```objc
+- (void) setARSession:(ARSession *) session;
+```
+
 #### Discussion
 
-Set the [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md) flag to `true` before calling this function. If you enable the flag and run a nearby-interaction session without calling [`setARSession(_:)`](nisession/setarsession(_:).md), the framework creates an internal [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) instance to which the app has no access.
+Set the [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) flag to `true` before calling this function. If you enable the flag and run a nearby-interaction session without calling [`setARSession(_:)`](./setarsession%28_%29.md), the framework creates an internal [`ARSession`](../../ARKit/arsession.md) instance to which the app has no access.
 
 ## Parameters
 
-- `session`: An existing AR session configured as follows: - A world-tracking configuration ([`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration)) with [`worldAlignment`](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.property) `=` [`ARConfiguration.WorldAlignment.gravity`](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.enum/gravity), [`isCollaborationEnabled`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/iscollaborationenabled) `=` `false`, [`userFaceTrackingEnabled`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/userfacetrackingenabled) `=` `false`, and [`initialWorldMap`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/initialworldmap) `=` `nil`.
-- A delegate that returns `false` for [`sessionShouldAttemptRelocalization(_:)`](https://developer.apple.com/documentation/arkit/arsessionobserver/sessionshouldattemptrelocalization(_:)).
+- `session`: An existing AR session configured as follows:
+
+  - A world-tracking configuration ([`ARWorldTrackingConfiguration`](../../ARKit/arworldtrackingconfiguration.md)) with [`worldAlignment`](../../ARKit/arconfiguration/worldalignment-swift.property.md) `=` [`ARConfiguration.WorldAlignment.gravity`](../../ARKit/arconfiguration/worldalignment-swift.enum/gravity.md), [`isCollaborationEnabled`](../../ARKit/arworldtrackingconfiguration/iscollaborationenabled.md) `=` `false`, [`userFaceTrackingEnabled`](../../ARKit/arworldtrackingconfiguration/userfacetrackingenabled.md) `=` `false`, and [`initialWorldMap`](../../ARKit/arworldtrackingconfiguration/initialworldmap.md) `=` `nil`.
+  - A delegate that returns `false` for [`sessionShouldAttemptRelocalization(_:)`](../../ARKit/arsessionobserver/sessionshouldattemptrelocalization%28_%29.md).
 
 ## See Also
 
-- [func worldTransform(for: NINearbyObject) -> simd_float4x4?](nisession/worldtransform(for:).md)
+### Utilizing Camera Assistance
+- [func worldTransform(for: NINearbyObject) -> simd_float4x4?](./worldtransform%28for%29.md)
   Returns a world transform to integrate a nearby object in an AR experience.
 
 

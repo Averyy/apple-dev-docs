@@ -1,7 +1,8 @@
 # ubiquitousItemIsSyncPaused
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if the sync of the item has been paused.
 

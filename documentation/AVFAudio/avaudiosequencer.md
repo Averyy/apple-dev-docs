@@ -1,7 +1,8 @@
 # AVAudioSequencer
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that plays audio from a collection of MIDI events the system organizes into music tracks.
 
@@ -19,134 +20,139 @@ An object that plays audio from a collection of MIDI events the system organizes
 class AVAudioSequencer
 ```
 
+```objc
+@interface AVAudioSequencer : NSObject
+```
+
 ## Topics
 
 ### Creating an audio sequencer
-- [init()](avaudiosequencer/init.md)
+- [init()](./avaudiosequencer/init%28%29.md)
   Creates an audio sequencer object.
-- [init(audioEngine: AVAudioEngine)](avaudiosequencer/init(audioengine:).md)
+- [init(audioEngine: AVAudioEngine)](./avaudiosequencer/init%28audioengine%29.md)
   Creates an audio sequencer that the framework attaches to an audio engine instance.
 ### Writing to a MIDI file
-- [func write(to: URL, smpteResolution: Int, replaceExisting: Bool) throws](avaudiosequencer/write(to:smpteresolution:replaceexisting:).md)
+- [func write(to: URL, smpteResolution: Int, replaceExisting: Bool) throws](./avaudiosequencer/write%28to,smpteresolution,replaceexisting%29.md)
   Creates and writes a MIDI file from the events in the sequence.
 ### Handling music tracks
-- [class AVMusicTrack](avmusictrack.md)
+- [class AVMusicTrack](./avmusictrack.md)
   A collection of music events that you can offset, set to a muted state, modify independently from other track events, and send to a specified destination.
-- [func createAndAppendTrack() -> AVMusicTrack](avaudiosequencer/createandappendtrack.md)
+- [func createAndAppendTrack() -> AVMusicTrack](./avaudiosequencer/createandappendtrack%28%29.md)
   Creates a new music track and appends it to the sequencer’s list.
-- [func reverseEvents()](avaudiosequencer/reverseevents.md)
+- [func reverseEvents()](./avaudiosequencer/reverseevents%28%29.md)
   Reverses the order of all events in all music tracks, including the tempo track.
-- [func removeTrack(AVMusicTrack) -> Bool](avaudiosequencer/removetrack(_:).md)
+- [func removeTrack(AVMusicTrack) -> Bool](./avaudiosequencer/removetrack%28_%29.md)
   Removes the music track from the sequencer.
-- [enum AVMusicTrackLoopCount](avmusictrackloopcount.md)
+- [enum AVMusicTrackLoopCount](./avmusictrackloopcount.md)
   Options that define the number of times a track loops.
 ### Handling music events
-- [class AVMusicEvent](avmusicevent.md)
+- [class AVMusicEvent](./avmusicevent.md)
   A base class for the events you associate with a music track.
-- [class AVMusicUserEvent](avmusicuserevent.md)
+- [class AVMusicUserEvent](./avmusicuserevent.md)
   An object that represents a custom user message.
-- [class AVParameterEvent](avparameterevent.md)
+- [class AVParameterEvent](./avparameterevent.md)
   An object that represents a parameter event on a music track’s destination.
-- [class AVAUPresetEvent](avaupresetevent.md)
+- [class AVAUPresetEvent](./avaupresetevent.md)
   An object that represents a preset load and change on the music track’s destination audio unit.
-- [class AVExtendedTempoEvent](avextendedtempoevent.md)
+- [class AVExtendedTempoEvent](./avextendedtempoevent.md)
   An object that represents a tempo change to a specific beats-per-minute value.
-- [class AVExtendedNoteOnEvent](avextendednoteonevent.md)
+- [class AVExtendedNoteOnEvent](./avextendednoteonevent.md)
   An object that represents a custom extension of a MIDI note on event.
 ### Handling MIDI events
-- [class AVMIDINoteEvent](avmidinoteevent.md)
+- [class AVMIDINoteEvent](./avmidinoteevent.md)
   An object that represents MIDI note on or off messages.
-- [class AVMIDIMetaEvent](avmidimetaevent.md)
+- [class AVMIDIMetaEvent](./avmidimetaevent.md)
   An object that represents MIDI meta event messages.
-- [class AVMIDISysexEvent](avmidisysexevent.md)
+- [class AVMIDISysexEvent](./avmidisysexevent.md)
   An object that represents a MIDI system exclusive message.
 ### Handling MIDI channel events
-- [class AVMIDIChannelEvent](avmidichannelevent.md)
+- [class AVMIDIChannelEvent](./avmidichannelevent.md)
   A base class for all MIDI messages that operate on a single MIDI channel.
-- [class AVMIDIChannelPressureEvent](avmidichannelpressureevent.md)
+- [class AVMIDIChannelPressureEvent](./avmidichannelpressureevent.md)
   An object that represents a MIDI channel pressure message.
-- [class AVMIDIProgramChangeEvent](avmidiprogramchangeevent.md)
+- [class AVMIDIProgramChangeEvent](./avmidiprogramchangeevent.md)
   An object that represents a MIDI program or patch change message.
-- [class AVMIDIPolyPressureEvent](avmidipolypressureevent.md)
+- [class AVMIDIPolyPressureEvent](./avmidipolypressureevent.md)
   An object that represents a MIDI poly or key pressure event.
-- [class AVMIDIPitchBendEvent](avmidipitchbendevent.md)
+- [class AVMIDIPitchBendEvent](./avmidipitchbendevent.md)
   An object that represents a MIDI pitch bend message.
-- [class AVMIDIControlChangeEvent](avmidicontrolchangeevent.md)
+- [class AVMIDIControlChangeEvent](./avmidicontrolchangeevent.md)
   An object that represents a MIDI control change message.
 ### Managing sequence load options
-- [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-8o58w.md)
+- [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](./avaudiosequencer/load%28from,options%29-8o58w.md)
   Parses the data and adds its events to the sequence.
-- [func load(from: URL, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-9kb6m.md)
+- [func load(from: URL, options: AVMusicSequenceLoadOptions) throws](./avaudiosequencer/load%28from,options%29-9kb6m.md)
   Loads the file the URL references and adds the events to the sequence.
-- [struct AVMusicSequenceLoadOptions](avmusicsequenceloadoptions.md)
+- [struct AVMusicSequenceLoadOptions](./avmusicsequenceloadoptions.md)
   A structure that defines whether data on different MIDI channels map to multiple tracks, or whether the framework preserves the tracks as they are.
 ### Operating an audio sequencer
-- [func prepareToPlay()](avaudiosequencer/preparetoplay.md)
+- [func prepareToPlay()](./avaudiosequencer/preparetoplay%28%29.md)
   Gets ready to play the sequence by prerolling all events.
-- [func start() throws](avaudiosequencer/start.md)
+- [func start() throws](./avaudiosequencer/start%28%29.md)
   Starts the sequencer’s player.
-- [func stop()](avaudiosequencer/stop.md)
+- [func stop()](./avaudiosequencer/stop%28%29.md)
   Stops the sequencer’s player.
 ### Managing time stamps
-- [typealias AVMusicTimeStamp](avmusictimestamp.md)
+- [typealias AVMusicTimeStamp](./avmusictimestamp.md)
   A fractional number of beats.
-- [func hostTime(forBeats: AVMusicTimeStamp, error: NSErrorPointer) -> UInt64](avaudiosequencer/hosttime(forbeats:error:).md)
+- [func hostTime(forBeats: AVMusicTimeStamp, error: NSErrorPointer) -> UInt64](./avaudiosequencer/hosttime%28forbeats,error%29.md)
   Gets the host time the sequence plays at the specified position.
-- [func seconds(forBeats: AVMusicTimeStamp) -> TimeInterval](avaudiosequencer/seconds(forbeats:).md)
+- [func seconds(forBeats: AVMusicTimeStamp) -> TimeInterval](./avaudiosequencer/seconds%28forbeats%29.md)
   Gets the time for the specified beat position (timestamp) in the track, in seconds.
 ### Handling beat range
-- [func beats(forHostTime: UInt64, error: NSErrorPointer) -> AVMusicTimeStamp](avaudiosequencer/beats(forhosttime:error:).md)
+- [func beats(forHostTime: UInt64, error: NSErrorPointer) -> AVMusicTimeStamp](./avaudiosequencer/beats%28forhosttime,error%29.md)
   Gets the beat the system plays at the specified host time.
-- [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](avaudiosequencer/beats(forseconds:).md)
+- [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](./avaudiosequencer/beats%28forseconds%29.md)
   Gets the beat position (timestamp) for the specified time in the track.
-- [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
+- [var AVMusicTimeStampEndOfTrack: Double](./avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
-- [typealias AVBeatRange](avbeatrange-swift.typealias.md)
+- [typealias AVBeatRange](./avbeatrange-swift.typealias.md)
   A specific time range within a music track.
 ### Setting the user callback
-- [func setUserCallback(AVAudioSequencerUserCallback?)](avaudiosequencer/setusercallback(_:).md)
+- [func setUserCallback(AVAudioSequencerUserCallback?)](./avaudiosequencer/setusercallback%28_%29.md)
   Adds a callback that the sequencer calls each time it encounters a user event during playback.
-- [typealias AVAudioSequencerUserCallback](avaudiosequencerusercallback.md)
+- [typealias AVAudioSequencerUserCallback](./avaudiosequencerusercallback.md)
   A callback the sequencer calls asynchronously during playback when it encounters a user event.
 ### Getting sequence properties
-- [var isPlaying: Bool](avaudiosequencer/isplaying.md)
+- [var isPlaying: Bool](./avaudiosequencer/isplaying.md)
   A Boolean value that indicates whether the sequencer’s player is in a playing state.
-- [var rate: Float](avaudiosequencer/rate.md)
+- [var rate: Float](./avaudiosequencer/rate.md)
   The playback rate of the sequencer’s player.
-- [var tracks: [AVMusicTrack]](avaudiosequencer/tracks.md)
+- [var tracks: [AVMusicTrack]](./avaudiosequencer/tracks.md)
   An array that contains all the tracks in the sequence.
-- [var currentPositionInBeats: TimeInterval](avaudiosequencer/currentpositioninbeats.md)
+- [var currentPositionInBeats: TimeInterval](./avaudiosequencer/currentpositioninbeats.md)
   The current playback position, in beats.
-- [var currentPositionInSeconds: TimeInterval](avaudiosequencer/currentpositioninseconds.md)
+- [var currentPositionInSeconds: TimeInterval](./avaudiosequencer/currentpositioninseconds.md)
   The current playback position, in seconds.
-- [var tempoTrack: AVMusicTrack](avaudiosequencer/tempotrack.md)
+- [var tempoTrack: AVMusicTrack](./avaudiosequencer/tempotrack.md)
   The track that contains tempo information about the sequence.
-- [var userInfo: [String : Any]](avaudiosequencer/userinfo.md)
+- [var userInfo: [String : Any]](./avaudiosequencer/userinfo.md)
   A dictionary that contains metadata from a sequence.
-- [AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey.md)
+- [AVAudioSequencer.InfoDictionaryKey](./avaudiosequencer/infodictionarykey.md)
   Constants that defines metadata keys for a sequencer.
-- [func data(withSMPTEResolution: Int, error: NSErrorPointer) -> Data](avaudiosequencer/data(withsmpteresolution:error:).md)
+- [func data(withSMPTEResolution: Int, error: NSErrorPointer) -> Data](./avaudiosequencer/data%28withsmpteresolution,error%29.md)
   Gets a data object that contains the events from the sequence.
-- [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
+- [var AVMusicTimeStampEndOfTrack: Double](./avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAudioUnitSampler](avaudiounitsampler.md)
+### MIDI sequencing and instruments
+- [class AVAudioUnitSampler](./avaudiounitsampler.md)
   An object that you configure with one or more instrument samples, based on Apple’s Sampler audio unit.
-- [typealias AVMIDIEventListBlock](avmidieventlistblock.md)
+- [typealias AVMIDIEventListBlock](./avmidieventlistblock.md)
 
 
 ---

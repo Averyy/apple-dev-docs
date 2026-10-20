@@ -1,7 +1,8 @@
 # kMMCCmd_SET_STREAMING
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kMMCCmd_SET_STREAMING = 0xB6
 ```
 

@@ -1,7 +1,8 @@
 # setUniformValue(_:named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of a named uniform to a `BitwiseCopyable` typed value.
 

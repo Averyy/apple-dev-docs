@@ -1,16 +1,21 @@
 # rule_class
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var rule_class: es_authorization_rule_class_t
+```
+
+```c
+es_authorization_rule_class_t rule_class;
 ```
 
 

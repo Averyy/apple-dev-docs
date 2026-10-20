@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the image URL attribute.
 
@@ -22,7 +23,8 @@ static let name: String
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.ImageURLAttribute.Value](attributescopes/foundationattributes/imageurlattribute/value.md)
+### Accessing the Attribute Name and Value
+- [AttributeScopes.FoundationAttributes.ImageURLAttribute.Value](./value.md)
   The type of the image URL attribute.
 
 

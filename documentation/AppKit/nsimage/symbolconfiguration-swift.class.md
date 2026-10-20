@@ -1,7 +1,8 @@
 # NSImage.SymbolConfiguration
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the specific font, style, and weight attributes to apply to a symbol image.
 
@@ -12,6 +13,10 @@ An object that contains the specific font, style, and weight attributes to apply
 
 ```swift
 class SymbolConfiguration
+```
+
+```objc
+@interface NSImageSymbolConfiguration : NSObject
 ```
 
 #### Overview
@@ -29,69 +34,70 @@ if let image = NSImage(systemSymbolName: "multiply.circle.fill",
 }
 ```
 
-[`NSImage.SymbolConfiguration`](nsimage/symbolconfiguration-swift.class.md) objects are immutable after you create them. If you use the [`applying(_:)`](nsimage/symbolconfiguration-swift.class/applying(_:).md) method on the object, the new image attributes replace any previous attributes you supplied. After creating a symbol configuration object, assign it to the [`symbolConfiguration`](nsimageview/symbolconfiguration.md) property of the [`NSImageView`](nsimageview.md) object you use to display the image. If you draw the image directly, use the [`withSymbolConfiguration(_:)`](nsimage/withsymbolconfiguration(_:).md) method to create a new image that contains the new attributes.
+[`NSImage.SymbolConfiguration`](./symbolconfiguration-swift.class.md) objects are immutable after you create them. If you use the [`applying(_:)`](./symbolconfiguration-swift.class/applying%28_%29.md) method on the object, the new image attributes replace any previous attributes you supplied. After creating a symbol configuration object, assign it to the [`symbolConfiguration`](../nsimageview/symbolconfiguration.md) property of the [`NSImageView`](../nsimageview.md) object you use to display the image. If you draw the image directly, use the [`withSymbolConfiguration(_:)`](./withsymbolconfiguration%28_%29.md) method to create a new image that contains the new attributes.
 
-For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
+For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
 
 ## Topics
 
 ### Creating a Symbol Configuration
-- [convenience init(pointSize: CGFloat, weight: NSFont.Weight)](nsimage/symbolconfiguration-swift.class/init(pointsize:weight:).md)
+- [convenience init(pointSize: CGFloat, weight: NSFont.Weight)](./symbolconfiguration-swift.class/init%28pointsize,weight%29.md)
   Creates a symbol configuration with the specified point size and font weight.
-- [convenience init(pointSize: CGFloat, weight: NSFont.Weight, scale: NSImage.SymbolScale)](nsimage/symbolconfiguration-swift.class/init(pointsize:weight:scale:).md)
+- [convenience init(pointSize: CGFloat, weight: NSFont.Weight, scale: NSImage.SymbolScale)](./symbolconfiguration-swift.class/init%28pointsize,weight,scale%29.md)
   Creates a symbol configuration with the specified point size, font weight, and symbol scale.
-- [convenience init(textStyle: NSFont.TextStyle)](nsimage/symbolconfiguration-swift.class/init(textstyle:).md)
+- [convenience init(textStyle: NSFont.TextStyle)](./symbolconfiguration-swift.class/init%28textstyle%29.md)
   Creates a symbol configuration with the specified text style.
-- [convenience init(textStyle: NSFont.TextStyle, scale: NSImage.SymbolScale)](nsimage/symbolconfiguration-swift.class/init(textstyle:scale:).md)
+- [convenience init(textStyle: NSFont.TextStyle, scale: NSImage.SymbolScale)](./symbolconfiguration-swift.class/init%28textstyle,scale%29.md)
   Creates a symbol configuration with the specified text style and symbol scale.
-- [convenience init(scale: NSImage.SymbolScale)](nsimage/symbolconfiguration-swift.class/init(scale:).md)
+- [convenience init(scale: NSImage.SymbolScale)](./symbolconfiguration-swift.class/init%28scale%29.md)
   Creates a symbol configuration using the scale you specify.
-- [convenience init(colorRenderingMode: NSImage.SymbolColorRenderingMode)](nsimage/symbolconfiguration-swift.class/init(colorrenderingmode:).md)
+- [convenience init(colorRenderingMode: NSImage.SymbolColorRenderingMode)](./symbolconfiguration-swift.class/init%28colorrenderingmode%29.md)
   Create a configuration with a specific color rendering mode.
-- [convenience init(variableValueMode: NSImage.SymbolVariableValueMode)](nsimage/symbolconfiguration-swift.class/init(variablevaluemode:).md)
+- [convenience init(variableValueMode: NSImage.SymbolVariableValueMode)](./symbolconfiguration-swift.class/init%28variablevaluemode%29.md)
   Create a configuration with a specified variable value mode.
-- [NSFont.TextStyle](nsfont/textstyle.md)
+- [NSFont.TextStyle](../nsfont/textstyle.md)
   Constants that specify the preferred text styles you use with fonts.
-- [NSImage.SymbolScale](nsimage/symbolscale.md)
+- [NSImage.SymbolScale](./symbolscale.md)
   Constants that specify which scale variant of a symbol image to use.
-- [NSImage.SymbolColorRenderingMode](nsimage/symbolcolorrenderingmode.md)
-- [NSImage.SymbolVariableValueMode](nsimage/symbolvariablevaluemode.md)
+- [NSImage.SymbolColorRenderingMode](./symbolcolorrenderingmode.md)
+- [NSImage.SymbolVariableValueMode](./symbolvariablevaluemode.md)
 ### Applying a Configuration
-- [func applying(NSImage.SymbolConfiguration) -> Self](nsimage/symbolconfiguration-swift.class/applying(_:).md)
+- [func applying(NSImage.SymbolConfiguration) -> Self](./symbolconfiguration-swift.class/applying%28_%29.md)
   Creates a configuration object by applying the values from the configuration you specify.
 ### Creating a Color Configuration
-- [convenience init(paletteColors: [NSColor])](nsimage/symbolconfiguration-swift.class/init(palettecolors:).md)
+- [convenience init(paletteColors: [NSColor])](./symbolconfiguration-swift.class/init%28palettecolors%29.md)
   Creates a color configuration by specifying a palette of colors.
-- [convenience init(hierarchicalColor: NSColor)](nsimage/symbolconfiguration-swift.class/init(hierarchicalcolor:).md)
+- [convenience init(hierarchicalColor: NSColor)](./symbolconfiguration-swift.class/init%28hierarchicalcolor%29.md)
   Creates a hierarchical color configuration using the color you specify.
-- [class func preferringMulticolor() -> Self](nsimage/symbolconfiguration-swift.class/preferringmulticolor.md)
+- [class func preferringMulticolor() -> Self](./symbolconfiguration-swift.class/preferringmulticolor%28%29.md)
   Creates a configuration that specifies that the symbol should prefer its multicolor variant if one exists.
 ### Type Methods
-- [class func preferringHierarchical() -> Self](nsimage/symbolconfiguration-swift.class/preferringhierarchical.md)
+- [class func preferringHierarchical() -> Self](./symbolconfiguration-swift.class/preferringhierarchical%28%29.md)
   Creates a configuration that specifies that the symbol should prefer its hierarchical variant, if one exists.
-- [class func preferringMonochrome() -> Self](nsimage/symbolconfiguration-swift.class/preferringmonochrome.md)
+- [class func preferringMonochrome() -> Self](./symbolconfiguration-swift.class/preferringmonochrome%28%29.md)
   Creates a configuration that specifies that the symbol should prefer its monochrome variant.
 ### Initializers
-- [init?(coder: NSCoder)](nsimage/symbolconfiguration-swift.class/init(coder:).md)
+- [init?(coder: NSCoder)](./symbolconfiguration-swift.class/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func withSymbolConfiguration(NSImage.SymbolConfiguration) -> NSImage?](nsimage/withsymbolconfiguration(_:).md)
+### Creating Symbol Images
+- [func withSymbolConfiguration(NSImage.SymbolConfiguration) -> NSImage?](./withsymbolconfiguration%28_%29.md)
   Creates a new symbol image with the specified configuration.
 
 

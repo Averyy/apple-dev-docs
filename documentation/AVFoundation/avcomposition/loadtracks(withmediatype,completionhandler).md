@@ -1,7 +1,8 @@
 # loadTracks(withMediaType:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads tracks that contain media of a specified type.
 
@@ -17,22 +18,33 @@ Loads tracks that contain media of a specified type.
 ## Declaration
 
 ```swift
+func loadTracks(withMediaType mediaType: AVMediaType, completionHandler: @escaping @Sendable ([AVCompositionTrack]?, (any Error)?) -> Void)
+```
+
+```swift
 func loadTracks(withMediaType mediaType: AVMediaType) async throws -> [AVCompositionTrack]
+```
+
+```objc
+- (void) loadTracksWithMediaType:(AVMediaType) mediaType completionHandler:(void (^)(NSArray<AVCompositionTrack *> *, NSError *)) completionHandler;
 ```
 
 ## Parameters
 
 - `mediaType`: The media type of the tracks to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading operation. It passes the completion handler the following parameters: - **tracks**: An array of tracks, which may be empty if no tracks with the specified media type exist. The value is `nil` if an error occurs.
-- **error**: An error object if the request fails; otherwise, `nil`.
+- `completionHandler`: A callback that the system invokes after it finishes the loading operation. It passes the completion handler the following parameters:
+
+  - **tracks**: An array of tracks, which may be empty if no tracks with the specified media type exist. The value is `nil` if an error occurs.
+  - **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 
-- [static var tracks: AVAsyncProperty<Root, [AVCompositionTrack]>](avpartialasyncproperty/tracks-9eows.md)
+### Loading tracks
+- [static var tracks: AVAsyncProperty<Root, [AVCompositionTrack]>](../avpartialasyncproperty/tracks-9eows.md)
   The tracks that a composition contains.
-- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVCompositionTrack?, (any Error)?) -> Void)](avcomposition/loadtrack(withtrackid:completionhandler:).md)
+- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVCompositionTrack?, (any Error)?) -> Void)](./loadtrack%28withtrackid,completionhandler%29.md)
   Loads a track that contains the specified identifier.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](avcomposition/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](./loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
 
 

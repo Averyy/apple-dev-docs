@@ -1,7 +1,8 @@
 # wrist
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The wrist.
 
@@ -17,6 +18,10 @@ The wrist.
 
 ```swift
 static let wrist: VNHumanHandPoseObservation.JointName
+```
+
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameWrist;
 ```
 
 

@@ -1,7 +1,8 @@
 # isLocked
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pointer is locked.
 
@@ -17,11 +18,15 @@ A Boolean value that indicates whether the pointer is locked.
 var isLocked: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLocked) BOOL locked;
+```
+
 #### Discussion
 
 This value reflects the status of the pointer lock for the scene, as determined by the system. A view controller specifies its preferred pointer lock value, but the system may not honor the request.
 
-This property is key-value observable. The [`didChangeNotification`](uipointerlockstate/didchangenotification.md) is posted when it changes.
+This property is key-value observable. The [`didChangeNotification`](./didchangenotification.md) is posted when it changes.
 
 
 ---

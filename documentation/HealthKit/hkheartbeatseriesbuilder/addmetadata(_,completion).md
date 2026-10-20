@@ -1,7 +1,8 @@
 # addMetadata(_:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds metadata to the sample.
 
@@ -16,22 +17,35 @@ Adds metadata to the sample.
 ## Declaration
 
 ```swift
+func addMetadata(_ metadata: [String : Any], completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func addMetadata(_ metadata: [String : Any]) async throws
+```
+
+```objc
+- (void) addMetadata:(NSDictionary<NSString *,id> *) metadata completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
 
-The builder adds the metadata to the resulting series sample. It incorporates new data using [`addEntries(from:)`](https://developer.apple.com/documentation/foundation/nsmutabledictionary/addentries(from:)).
+The builder adds the metadata to the resulting series sample. It incorporates new data using [`addEntries(from:)`](../../Foundation/nsmutabledictionary/addentries%28from%29.md).
 
 ## Parameters
 
-- `metadata`: The metadata dictionary contains extra information describing all the samples created by the builder. The dictionary’s keys are all strings. The values may be strings, numbers, or date objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
-- `completion`: The completion handler called by the builder after it attempts to add the metadata to the series. The completion handler takes the following parameters: - **`success`**: A Boolean value that indicates whether the builder successfully added the heartbeat.
-- **`error`**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/foundation/nsexpression/false), this contains an object that describes the error; otherwise, `nil`.
+- `metadata`: The metadata dictionary contains extra information describing all the samples created by the builder. The dictionary’s keys are all strings. The values may be strings, numbers, or date objects. For a complete list of predefined metadata keys, see [Metadata Keys](../metadata-keys.md).
+
+  Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
+- `completion`: The completion handler called by the builder after it attempts to add the metadata to the series. The completion handler takes the following parameters:
+
+  - **`success`**: A Boolean value that indicates whether the builder successfully added the heartbeat.
+  - **`error`**: If the `success` parameter is [`false`](../../Foundation/nsexpression/false.md), this contains an object that describes the error; otherwise, `nil`.
 
 ## See Also
 
-- [func addHeartbeatWithTimeInterval(sinceSeriesStartDate: TimeInterval, precededByGap: Bool, completion: (Bool, (any Error)?) -> Void)](hkheartbeatseriesbuilder/addheartbeatwithtimeinterval(sinceseriesstartdate:precededbygap:completion:).md)
+### Adding Data
+- [func addHeartbeatWithTimeInterval(sinceSeriesStartDate: TimeInterval, precededByGap: Bool, completion: (Bool, (any Error)?) -> Void)](./addheartbeatwithtimeinterval%28sinceseriesstartdate,precededbygap,completion%29.md)
   Adds a heartbeat to the series.
 
 

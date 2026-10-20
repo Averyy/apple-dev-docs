@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.MultiOptimizer
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.MultiOptimizer.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.MultiOptimizer
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.MultiOptimizer
-
 **class MultiOptimizer(*optimizers*, *filters: list = []*)**
 : Wraps a list of optimizers with corresponding weight predicates/filters
 to make it easy to use different optimizers for different weights.
@@ -43,8 +16,8 @@ given for it.
 
 Parameters:
 
-**optimizers** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*[*[Optimizer](../optimizer.html#mlx.optimizers.Optimizer)*]*) – A list of optimizers to delegate to
-**filters** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*[**Callable**[**[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[array](../../_autosummary/mlx.core.array.html#mlx.core.array)*]**, *[bool](https://docs.python.org/3/builtins/functions.html#bool)*]**]*) – A list of predicates that
+**optimizers** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*[*[Optimizer](../optimizer.md#mlx.optimizers.Optimizer)*]*) – A list of optimizers to delegate to
+**filters** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*[**Callable**[**[*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[array](../../_autosummary/mlx.core.array.md#mlx.core.array)*]**, *[bool](https://docs.python.org/3/builtins/functions.html#bool)*]**]*) – A list of predicates that
 should be one less than the provided optimizers.
 
 Methods
@@ -56,5 +29,3 @@ Apply the gradients to the parameters and return the updated parameters.
 
 `init`(parameters)
 Initialize the optimizer's state
-
-** Contents

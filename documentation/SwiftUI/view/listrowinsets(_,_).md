@@ -1,7 +1,8 @@
 # listRowInsets(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the insets of rows in a list on the specified edges.
 
@@ -29,7 +30,7 @@ A view in which the margins of list sections are set to the specified amount
 
 Use this modifier to change the default insets of list rows on the specified edges.
 
-In the example below, the `Flavor` enumeration provides content for list items. The SwiftUI [`ForEach`](foreach.md) structure computes views for each element of the `Flavor` enumeration and extracts the raw value of each of its elements using the resulting text to create each list row item. The `listRowInsets(_:_:)` modifier then changes the leading inset of each row of the list and leaves the default insets on the other edges untouched:
+In the example below, the `Flavor` enumeration provides content for list items. The SwiftUI [`ForEach`](../foreach.md) structure computes views for each element of the `Flavor` enumeration and extracts the raw value of each of its elements using the resulting text to create each list row item. The `listRowInsets(_:_:)` modifier then changes the leading inset of each row of the list and leaves the default insets on the other edges untouched:
 
 ```swift
 struct ContentView: View {
@@ -49,7 +50,7 @@ struct ContentView: View {
 }
 ```
 
-![A screenshot showing a list with leading 25 point inset on each](/images/com.apple.SwiftUI/SwiftUI-View-ListRowInsets@2x.png)
+![A screenshot showing a list with leading 25 point inset on each](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-ListRowInsets@2x.png)
 
 When applying multiple `listRowInsets` modifiers, modifiers with the same edges will override modifiers higher up in the view hierarchy.
 
@@ -62,19 +63,20 @@ When applying multiple `listRowInsets` modifiers, modifiers with the same edges 
 
 ## See Also
 
-- [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
+### Configuring a list’s layout
+- [func listRowInsets(EdgeInsets?) -> some View](./listrowinsets%28_%29.md)
   Applies an inset to the rows in a list.
-- [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
+- [var defaultMinListRowHeight: CGFloat](../environmentvalues/defaultminlistrowheight.md)
   The default minimum height of rows in a list.
-- [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
+- [var defaultMinListHeaderHeight: CGFloat?](../environmentvalues/defaultminlistheaderheight.md)
   The default minimum height of a header in a list.
-- [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)
+- [func listRowSpacing(CGFloat?) -> some View](./listrowspacing%28_%29.md)
   Sets the vertical spacing between two adjacent rows in a List.
-- [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
-  Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
-- [struct ListSectionSpacing](listsectionspacing.md)
+- [func listSectionSpacing(_:)](./listsectionspacing%28_%29.md)
+  Sets the spacing between adjacent sections in a [`List`](../list.md) to a custom value.
+- [struct ListSectionSpacing](../listsectionspacing.md)
   The spacing options between two adjacent sections in a list.
-- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](./listsectionmargins%28_,_%29.md)
   Set the section margins for the specific edges.
 
 

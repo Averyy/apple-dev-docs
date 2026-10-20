@@ -1,7 +1,8 @@
 # associatedTracks(ofType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of associated tracks that have the specified association type.
 
@@ -19,15 +20,19 @@ Returns an array of associated tracks that have the specified association type.
 func associatedTracks(ofType trackAssociationType: AVAssetTrack.AssociationType) -> [AVAssetTrack]
 ```
 
+```objc
+- (NSArray<AVAssetTrack *> *) associatedTracksOfType:(AVTrackAssociationType) trackAssociationType;
+```
+
 #### Return Value
 
 An array of tracks matching the specified track association type, or an empty array if none are found.
 
 #### Discussion
 
-Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load associated tracks asynchronously using [`loadAssociatedTracks(ofType:completionHandler:)`](avassettrack/loadassociatedtracks(oftype:completionhandler:).md) instead.
+Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load associated tracks asynchronously using [`loadAssociatedTracks(ofType:completionHandler:)`](../avassettrack/loadassociatedtracks%28oftype,completionhandler%29.md) instead.
 
-You can call this method without blocking the current thread after you’ve loaded the [`availableTrackAssociationTypes`](avassettrack/availabletrackassociationtypes.md) property.
+You can call this method without blocking the current thread after you’ve loaded the [`availableTrackAssociationTypes`](../avassettrack/availabletrackassociationtypes.md) property.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ You can call this method without blocking the current thread after you’ve load
 
 ## See Also
 
-- [var availableTrackAssociationTypes: [AVAssetTrack.AssociationType]](avmutablemovietrack/availabletrackassociationtypes.md)
+### Managing track associations
+- [var availableTrackAssociationTypes: [AVAssetTrack.AssociationType]](./availabletrackassociationtypes.md)
   An array of association types that the track uses to associate with other tracks.
-- [func addTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](avmutablemovietrack/addtrackassociation(to:type:).md)
+- [func addTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](./addtrackassociation%28to,type%29.md)
   Creates a specific type of track association between two tracks.
-- [func removeTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](avmutablemovietrack/removetrackassociation(to:type:).md)
+- [func removeTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](./removetrackassociation%28to,type%29.md)
   Removes a specific type of track association between two tracks.
 
 

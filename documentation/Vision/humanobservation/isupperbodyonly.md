@@ -1,7 +1,8 @@
 # isUpperBodyOnly
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the observation represents an upper-body or full-body rectangle.
 
@@ -22,7 +23,8 @@ let isUpperBodyOnly: Bool
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
 
 

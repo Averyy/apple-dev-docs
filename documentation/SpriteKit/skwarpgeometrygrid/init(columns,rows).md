@@ -1,7 +1,8 @@
 # init(columns:rows:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a warp geometry grid of a specified size.
 
@@ -20,9 +21,13 @@ Creates a warp geometry grid of a specified size.
 convenience init(columns cols: Int, rows: Int)
 ```
 
+```objc
++ (instancetype) gridWithColumns:(NSInteger) cols rows:(NSInteger) rows;
+```
+
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Animate the Warping of a Sprite](../animate-the-warping-of-a-sprite.md)
 
 #### Return Value
 
@@ -44,9 +49,10 @@ Creating a warp geometry grid without explicit source and destination positions 
 
 ## See Also
 
-- [convenience init(columns: Int, rows: Int, sourcePositions: [SIMD2<Float>], destinationPositions: [SIMD2<Float>])](skwarpgeometrygrid/init(columns:rows:sourcepositions:destinationpositions:).md)
+### Creating a Warp Geometry Grid
+- [convenience init(columns: Int, rows: Int, sourcePositions: [SIMD2<Float>], destinationPositions: [SIMD2<Float>])](./init%28columns,rows,sourcepositions,destinationpositions%29.md)
   Creates a warp geometry grid of a specific size and warp translation, in point arrays.
-- [init?(coder: NSCoder)](skwarpgeometrygrid/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to intialize a grid that was loaded from an archive.
 
 

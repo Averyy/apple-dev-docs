@@ -1,7 +1,8 @@
 # distanceRemaining
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remaining distance for the travel estimate.
 
@@ -16,11 +17,16 @@ The remaining distance for the travel estimate.
 var distanceRemaining: Measurement<UnitLength> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSMeasurement<NSUnitLength *> * distanceRemaining;
+```
+
 ## See Also
 
-- [var distanceRemainingToDisplay: Measurement<UnitLength>](cptravelestimates/distanceremainingtodisplay.md)
+### Getting Travel Estimates
+- [var distanceRemainingToDisplay: Measurement<UnitLength>](./distanceremainingtodisplay.md)
   The distance remaining that the framework displays to a person, in the default units of measurement.
-- [var timeRemaining: TimeInterval](cptravelestimates/timeremaining.md)
+- [var timeRemaining: TimeInterval](./timeremaining.md)
   The remaining time for the travel estimate.
 
 

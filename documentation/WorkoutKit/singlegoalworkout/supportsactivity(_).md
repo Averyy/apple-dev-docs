@@ -1,7 +1,8 @@
 # supportsActivity(_:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the system supports the provided workout activity.
 
@@ -24,9 +25,10 @@ static func supportsActivity(_ activity: HKWorkoutActivityType) -> Bool
 
 ## See Also
 
-- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, swimmingLocation: HKWorkoutSwimmingLocationType, goal: WorkoutGoal)](singlegoalworkout/init(activity:location:swimminglocation:goal:).md)
+### Creating single goal workouts
+- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, swimmingLocation: HKWorkoutSwimmingLocationType, goal: WorkoutGoal)](./init%28activity,location,swimminglocation,goal%29.md)
   Creates a new workout with a single goal.
-- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](singlegoalworkout/supportsgoal(_:activity:location:).md)
+- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./supportsgoal%28_,activity,location%29.md)
   Returns a Boolean value that determines whether the system supports the provided goal.
 
 

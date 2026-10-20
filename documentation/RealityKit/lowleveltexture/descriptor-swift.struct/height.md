@@ -1,7 +1,8 @@
 # height
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the texture image for the base level mipmap, in pixels.
 

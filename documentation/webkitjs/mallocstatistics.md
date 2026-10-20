@@ -1,7 +1,8 @@
 # MallocStatistics
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface MallocStatistics
 ```
 
 ## Topics
 
 ### Instance Properties
-- [committedVMBytes](mallocstatistics/1630953-committedvmbytes.md)
-- [freeListBytes](mallocstatistics/1629503-freelistbytes.md)
-- [reservedVMBytes](mallocstatistics/1632400-reservedvmbytes.md)
+- [committedVMBytes](./mallocstatistics/api-1630953-committedvmbytes.md)
+- [freeListBytes](./mallocstatistics/api-1629503-freelistbytes.md)
+- [reservedVMBytes](./mallocstatistics/api-1632400-reservedvmbytes.md)
 
 
 ---

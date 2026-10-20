@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs Metal that the residency set’s allocations no longer need to be resident, and that it can reuse the memory for other allocations.
@@ -20,9 +21,13 @@ Informs Metal that the residency set’s allocations no longer need to be reside
 func endResidency()
 ```
 
+```objc
+- (void) endResidency;
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
 
 ---

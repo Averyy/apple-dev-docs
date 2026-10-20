@@ -1,7 +1,8 @@
 # sports
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An app category for sports.
 
@@ -16,37 +17,42 @@ An app category for sports.
 static let sports: SRDeviceUsageReport.CategoryKey
 ```
 
+```c
+extern SRDeviceUsageCategoryKey const SRDeviceUsageCategorySports;
+```
+
 ## See Also
 
-- [static let books: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/books.md)
+### Categories
+- [static let books: SRDeviceUsageReport.CategoryKey](./books.md)
   An app category for reading books.
-- [static let business: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/business.md)
+- [static let business: SRDeviceUsageReport.CategoryKey](./business.md)
   An app category for doing business.
-- [static let catalogs: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/catalogs.md)
+- [static let catalogs: SRDeviceUsageReport.CategoryKey](./catalogs.md)
   An app category for reading catalogs.
-- [static let developerTools: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/developertools.md)
+- [static let developerTools: SRDeviceUsageReport.CategoryKey](./developertools.md)
   An app category for creating apps.
-- [static let education: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/education.md)
+- [static let education: SRDeviceUsageReport.CategoryKey](./education.md)
   An app category for learning.
-- [static let entertainment: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/entertainment.md)
+- [static let entertainment: SRDeviceUsageReport.CategoryKey](./entertainment.md)
   An app category for entertainment.
-- [static let finance: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/finance.md)
+- [static let finance: SRDeviceUsageReport.CategoryKey](./finance.md)
   An app category for finance.
-- [static let foodAndDrink: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/foodanddrink.md)
+- [static let foodAndDrink: SRDeviceUsageReport.CategoryKey](./foodanddrink.md)
   An app category for dining.
-- [static let games: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/games.md)
+- [static let games: SRDeviceUsageReport.CategoryKey](./games.md)
   An app category for gaming.
-- [static let graphicsAndDesign: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/graphicsanddesign.md)
+- [static let graphicsAndDesign: SRDeviceUsageReport.CategoryKey](./graphicsanddesign.md)
   An app category for graphic design.
-- [static let healthAndFitness: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/healthandfitness.md)
+- [static let healthAndFitness: SRDeviceUsageReport.CategoryKey](./healthandfitness.md)
   An app category for health and fitness.
-- [static let kids: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/kids.md)
+- [static let kids: SRDeviceUsageReport.CategoryKey](./kids.md)
   An app category for children.
-- [static let lifestyle: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/lifestyle.md)
+- [static let lifestyle: SRDeviceUsageReport.CategoryKey](./lifestyle.md)
   An app category for lifestyle.
-- [static let medical: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/medical.md)
+- [static let medical: SRDeviceUsageReport.CategoryKey](./medical.md)
   An app category for healthcare.
-- [static let miscellaneous: SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey/miscellaneous.md)
+- [static let miscellaneous: SRDeviceUsageReport.CategoryKey](./miscellaneous.md)
   An app category for miscellaneous apps.
 
 

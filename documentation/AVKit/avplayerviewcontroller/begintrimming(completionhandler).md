@@ -1,7 +1,8 @@
 # beginTrimming(completionHandler:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the system trimming interface controls inside the player view.
 
@@ -11,18 +12,26 @@ Presents the system trimming interface controls inside the player view.
 ## Declaration
 
 ```swift
+func beginTrimming(completionHandler handler: ((Bool) -> Void)? = nil)
+```
+
+```swift
 func beginTrimming() async -> Bool
+```
+
+```objc
+- (void) beginTrimmingWithCompletionHandler:(void (^)(BOOL success)) handler;
 ```
 
 ## Mentions
 
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
+- [Trimming and exporting media in visionOS](../trimming-and-exporting-media-in-visionos.md)
 
 #### Discussion
 
-After trimming is complete, you can access the trimmed range by querying the [`forwardPlaybackEndTime`](https://developer.apple.com/documentation/avfoundation/avplayeritem/forwardplaybackendtime) and [`reversePlaybackEndTime`](https://developer.apple.com/documentation/avfoundation/avplayeritem/reverseplaybackendtime) properties on the [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem).
+After trimming is complete, you can access the trimmed range by querying the [`forwardPlaybackEndTime`](../../AVFoundation/avplayeritem/forwardplaybackendtime.md) and [`reversePlaybackEndTime`](../../AVFoundation/avplayeritem/reverseplaybackendtime.md) properties on the [`AVPlayerItem`](../../AVFoundation/avplayeritem.md).
 
-For more information on supporting trimming in your app, see [`Trimming and exporting media in visionOS`](trimming-and-exporting-media-in-visionos.md).
+For more information on supporting trimming in your app, see [Trimming and exporting media in visionOS](../trimming-and-exporting-media-in-visionos.md).
 
 ## Parameters
 
@@ -30,7 +39,8 @@ For more information on supporting trimming in your app, see [`Trimming and expo
 
 ## See Also
 
-- [var canBeginTrimming: Bool](avplayerviewcontroller/canbegintrimming.md)
+### Presenting the visionOS trimming UI
+- [var canBeginTrimming: Bool](./canbegintrimming.md)
   A Boolean value that indicates whether the current media supports trimming.
 
 

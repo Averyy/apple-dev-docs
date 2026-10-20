@@ -1,7 +1,8 @@
 # qtParamErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Bad input parameter (out of range, for example). 
 

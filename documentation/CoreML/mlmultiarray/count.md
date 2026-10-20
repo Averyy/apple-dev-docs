@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of elements in the multiarray.
 
@@ -20,13 +21,18 @@ The total number of elements in the multiarray.
 var count: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger count;
+```
+
 ## See Also
 
-- [var dataType: MLMultiArrayDataType](mlmultiarray/datatype.md)
+### Inspecting a multiarray
+- [var dataType: MLMultiArrayDataType](./datatype.md)
   The underlying type of the multiarray.
-- [var shape: [NSNumber]](mlmultiarray/shape.md)
+- [var shape: [NSNumber]](./shape.md)
   The multiarray’s multidimensional shape as a number array in which each element’s value is the size of the corresponding dimension.
-- [var strides: [NSNumber]](mlmultiarray/strides.md)
+- [var strides: [NSNumber]](./strides.md)
   A number array in which each element is the number of memory locations that span the length of the corresponding dimension.
 
 

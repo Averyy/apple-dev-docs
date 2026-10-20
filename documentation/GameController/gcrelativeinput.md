@@ -1,7 +1,8 @@
 # GCRelativeInput
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common properties of inputs that provide positions along an axis that are relative to the previous position.
 
@@ -19,34 +20,39 @@ The common properties of inputs that provide positions along an axis that are re
 protocol GCRelativeInput : NSObjectProtocol
 ```
 
+```objc
+@protocol GCRelativeInput <NSObject>
+```
+
 ## Topics
 
 ### Getting the characteristics
-- [var isAnalog: Bool](gcrelativeinput/isanalog.md)
+- [var isAnalog: Bool](./gcrelativeinput/isanalog.md)
   A Boolean value that indicates whether the input provides analog values.
 ### Getting the delta value and timestamp
-- [var delta: Float](gcrelativeinput/delta.md)
+- [var delta: Float](./gcrelativeinput/delta.md)
   The most recent amount of change in values that the profile records.
-- [var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)?](gcrelativeinput/deltadidchangehandler.md)
+- [var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)?](./gcrelativeinput/deltadidchangehandler.md)
   The block that the profile calls when the element’s input changes.
-- [var lastDeltaTimestamp: TimeInterval](gcrelativeinput/lastdeltatimestamp.md)
+- [var lastDeltaTimestamp: TimeInterval](./gcrelativeinput/lastdeltatimestamp.md)
   A timestamp for when the profile reports the delta value.
-- [var lastDeltaLatency: TimeInterval](gcrelativeinput/lastdeltalatency.md)
+- [var lastDeltaLatency: TimeInterval](./gcrelativeinput/lastdeltalatency.md)
   The time in seconds between the current and the previous delta values.
 ### Getting user actions
-- [var sources: Set<AnyHashable>](gcrelativeinput/sources.md)
+- [var sources: Set<AnyHashable>](./gcrelativeinput/sources.md)
   One or more physical actions the user performs to manipulate the input.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol GCAxisInput](gcaxisinput.md)
+### Gear shifter elements
+- [protocol GCAxisInput](./gcaxisinput.md)
   The common properties of inputs that provide absolute values along an axis with a fixed origin.
-- [class GCGearShifterElement](gcgearshifterelement.md)
+- [class GCGearShifterElement](./gcgearshifterelement.md)
   An element that represents either a pattern or a sequential gear shift.
 
 

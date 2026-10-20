@@ -1,17 +1,22 @@
 # isIncoming()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns TRUE if the channel is an incoming channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isIncoming() -> Bool
+```
+
+```objc
+- (BOOL) isIncoming;
 ```
 
 #### Return Value

@@ -1,9 +1,10 @@
 # GKGameModelMinScore
 
 **Framework**: GameplayKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The minimum return value allowed for the [`score(for:)`](gkgamemodel/score(for:).md) method.
+The minimum return value allowed for the [`score(for:)`](./gkgamemodel/score%28for%29.md) method.
 
 **Availability**:
 - iOS 9.0+
@@ -19,10 +20,15 @@ The minimum return value allowed for the [`score(for:)`](gkgamemodel/score(for:)
 var GKGameModelMinScore: Int { get }
 ```
 
+```c
+static const NSInteger GKGameModelMinScore;
+```
+
 ## See Also
 
-- [var GKGameModelMaxScore: Int](gkgamemodelmaxscore.md)
-  The maximum return value allowed for the [`score(for:)`](gkgamemodel/score(for:).md) method.
+### Constants
+- [var GKGameModelMaxScore: Int](./gkgamemodelmaxscore.md)
+  The maximum return value allowed for the [`score(for:)`](./gkgamemodel/score%28for%29.md) method.
 
 
 ---

@@ -1,7 +1,8 @@
 # EnumURLRepresentation
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type that provides the URL for an app enum.
 
@@ -22,7 +23,7 @@ struct EnumURLRepresentation<Enum> where Enum : AppEnum
 
 #### Overview
 
-If you adopt the [`URLRepresentableEnum`](urlrepresentableenum.md) protocol in an app enum, use this type to build the URL for your type. Construct the type as a Swift string that contains characters suitable for use in a URL. To adjust the URL dynamically for your content, include a reference to your app enum value as part of the content. The following example shows an app enum type that includes the enum’s current value in the final URL:
+If you adopt the [`URLRepresentableEnum`](./urlrepresentableenum.md) protocol in an app enum, use this type to build the URL for your type. Construct the type as a Swift string that contains characters suitable for use in a URL. To adjust the URL dynamically for your content, include a reference to your app enum value as part of the content. The following example shows an app enum type that includes the enum’s current value in the final URL:
 
 ```swift
 enum Destination: String, AppEnum, URLRepresentableEnum {
@@ -47,31 +48,32 @@ enum Destination: String, AppEnum, URLRepresentableEnum {
 }
 ```
 
-Make sure you define your app enum type using a URL-friendly value. The system automatically converts values of type [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), and [`URL`](https://developer.apple.com/documentation/foundation/url) to values suitable for inclusion in a URL.
+Make sure you define your app enum type using a URL-friendly value. The system automatically converts values of type [`String`](../Swift/string.md), [`Int`](../Swift/int.md), and [`URL`](../Foundation/url.md) to values suitable for inclusion in a URL.
 
 ## Topics
 
 ### Structures
-- [EnumURLRepresentation.EnumSingleURLRepresentation](enumurlrepresentation/enumsingleurlrepresentation.md)
+- [EnumURLRepresentation.EnumSingleURLRepresentation](./enumurlrepresentation/enumsingleurlrepresentation.md)
 ### Initializers
-- [init([Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])](enumurlrepresentation/init(_:)-1odm.md)
+- [init([Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])](./enumurlrepresentation/init%28_%29-1odm.md)
   Creates a URL representation for an app enum using the provided dictionary.
-- [init(String)](enumurlrepresentation/init(_:)-6p999.md)
+- [init(String)](./enumurlrepresentation/init%28_%29-6p999.md)
   Creates a URL representation for an app enum using the provided Swift string.
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../Swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 
-- [protocol URLRepresentableEnum](urlrepresentableenum.md)
+### Universal link navigation
+- [protocol URLRepresentableEnum](./urlrepresentableenum.md)
   An interface you apply to an app enum type so the system can handle it like a universal link.
-- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+- [protocol CustomURLRepresentationParameterConvertible](./customurlrepresentationparameterconvertible.md)
   An interface that allows a type to express its contents in a URL representation.
 
 

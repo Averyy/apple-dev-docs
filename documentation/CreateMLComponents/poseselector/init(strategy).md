@@ -1,7 +1,8 @@
 # init(strategy:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose selector.
 
@@ -25,9 +26,10 @@ init(strategy: PoseSelectionStrategy)
 
 ## See Also
 
-- [init()](poseselector/init.md)
+### Creating a selector
+- [init()](./init%28%29.md)
   Creates a pose selector.
-- [init(strategy: PoseSelectionStrategy, confidenceThreshold: Float)](poseselector/init(strategy:confidencethreshold:).md)
+- [init(strategy: PoseSelectionStrategy, confidenceThreshold: Float)](./init%28strategy,confidencethreshold%29.md)
   Creates a pose selector.
 
 

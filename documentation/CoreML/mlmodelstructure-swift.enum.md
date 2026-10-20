@@ -1,7 +1,8 @@
 # MLModelStructure
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum representing the structure of a model.
 
@@ -22,7 +23,7 @@ enum MLModelStructure
 
 #### Overview
 
-```None
+```
 // Load the model structure.
 let modelStructure = await try MLModelStructure.load(contentsOf: modelURL)
 switch modelStructure {
@@ -40,41 +41,42 @@ default:
 ## Topics
 
 ### Model structures
-- [case neuralNetwork(MLModelStructure.NeuralNetwork)](mlmodelstructure-swift.enum/neuralnetwork(_:).md)
+- [case neuralNetwork(MLModelStructure.NeuralNetwork)](./mlmodelstructure-swift.enum/neuralnetwork%28_%29.md)
   Represents a NeuralNetwork model, the associated value is the structure of the NeuralNetwork.
-- [MLModelStructure.NeuralNetwork](mlmodelstructure-swift.enum/neuralnetwork.md)
+- [MLModelStructure.NeuralNetwork](./mlmodelstructure-swift.enum/neuralnetwork.md)
   A struct representing the structure of a NeuralNetwork model..
-- [case pipeline(MLModelStructure.Pipeline)](mlmodelstructure-swift.enum/pipeline(_:).md)
+- [case pipeline(MLModelStructure.Pipeline)](./mlmodelstructure-swift.enum/pipeline%28_%29.md)
   Represents a Pipeline model, the associated value is the structure of the Pipeline.
-- [MLModelStructure.Pipeline](mlmodelstructure-swift.enum/pipeline.md)
+- [MLModelStructure.Pipeline](./mlmodelstructure-swift.enum/pipeline.md)
   A struct representing the structure of a Pipeline model..
-- [case program(MLModelStructure.Program)](mlmodelstructure-swift.enum/program(_:).md)
+- [case program(MLModelStructure.Program)](./mlmodelstructure-swift.enum/program%28_%29.md)
   Represents a MLProgram model. the associated value is the structure of the Program.
-- [MLModelStructure.Program](mlmodelstructure-swift.enum/program.md)
+- [MLModelStructure.Program](./mlmodelstructure-swift.enum/program.md)
   A struct representing the structure of an ML Program model.
-- [MLModelStructure.unsupported](mlmodelstructure-swift.enum/unsupported.md)
+- [MLModelStructure.unsupported](./mlmodelstructure-swift.enum/unsupported.md)
   Represents an unsupported model.
 ### Loading a model structure
-- [static func load(asset: MLModelAsset) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(asset:).md)
+- [static func load(asset: MLModelAsset) async throws -> MLModelStructure](./mlmodelstructure-swift.enum/load%28asset%29.md)
   Load the model structure asynchronously from the model asset.
-- [static func load(contentsOf: URL) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(contentsof:).md)
+- [static func load(contentsOf: URL) async throws -> MLModelStructure](./mlmodelstructure-swift.enum/load%28contentsof%29.md)
   Load the model structure asynchronously given the location of its on-disk representation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MLComputePlan](mlcomputeplan-1w21n.md)
+### Compute plan
+- [class MLComputePlan](./mlcomputeplan-1w21n.md)
   A class representing the compute plan of a model.
-- [struct MLComputePolicy](mlcomputepolicy.md)
+- [struct MLComputePolicy](./mlcomputepolicy.md)
   The compute policy determining what compute device, or compute devices, to execute ML workloads on.
-- [func withMLTensorComputePolicy<R>(MLComputePolicy, () async throws -> R) async rethrows -> R](withmltensorcomputepolicy(_:_:)-8stx9.md)
+- [func withMLTensorComputePolicy<R>(MLComputePolicy, () async throws -> R) async rethrows -> R](./withmltensorcomputepolicy%28_,_%29-8stx9.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
-- [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](withmltensorcomputepolicy(_:_:)-6z33x.md)
+- [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](./withmltensorcomputepolicy%28_,_%29-6z33x.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
 

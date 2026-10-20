@@ -1,7 +1,8 @@
 # keyLayoutDataVersion
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the version of the data in the resource, in binary code decimal format. For example, 0x0100 would equal version 1.0.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the version of the data in the resource, 
 
 ```swift
 var keyLayoutDataVersion: UInt16
+```
+
+```c
+UInt16 keyLayoutDataVersion;
 ```
 
 

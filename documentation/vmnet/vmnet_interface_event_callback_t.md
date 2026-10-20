@@ -1,7 +1,8 @@
 # vmnet_interface_event_callback_t
 
 **Framework**: vmnet  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,12 +14,17 @@
 typealias vmnet_interface_event_callback_t = (interface_event_t, xpc_object_t) -> Void
 ```
 
+```c
+typedef void (^)(enum interface_event_t, NSObject<OS_xpc_object> *) vmnet_interface_event_callback_t;
+```
+
 ## See Also
 
-- [typealias vmnet_interface_completion_handler_t](vmnet_interface_completion_handler_t.md)
-- [typealias vmnet_interface_get_ip_port_forwarding_rules_handler_t](vmnet_interface_get_ip_port_forwarding_rules_handler_t.md)
-- [typealias vmnet_interface_get_port_forwarding_rules_handler_t](vmnet_interface_get_port_forwarding_rules_handler_t.md)
-- [typealias vmnet_start_interface_completion_handler_t](vmnet_start_interface_completion_handler_t.md)
+### Data types
+- [typealias vmnet_interface_completion_handler_t](./vmnet_interface_completion_handler_t.md)
+- [typealias vmnet_interface_get_ip_port_forwarding_rules_handler_t](./vmnet_interface_get_ip_port_forwarding_rules_handler_t.md)
+- [typealias vmnet_interface_get_port_forwarding_rules_handler_t](./vmnet_interface_get_port_forwarding_rules_handler_t.md)
+- [typealias vmnet_start_interface_completion_handler_t](./vmnet_start_interface_completion_handler_t.md)
   The type of the block provided in the call to vmnet_start_interface
 
 

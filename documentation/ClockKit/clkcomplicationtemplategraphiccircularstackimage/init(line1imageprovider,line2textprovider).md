@@ -1,17 +1,22 @@
 # init(line1ImageProvider:line2TextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a template that has an image and a small amount of text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(line1ImageProvider: CLKFullColorImageProvider, line2TextProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithLine1ImageProvider:(CLKFullColorImageProvider *) line1ImageProvider line2TextProvider:(CLKTextProvider *) line2TextProvider;
 ```
 
 ## Parameters

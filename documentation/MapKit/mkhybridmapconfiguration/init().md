@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new hybrid map configuration.
 
@@ -19,11 +20,16 @@ Creates a new hybrid map configuration.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](mkhybridmapconfiguration/init(elevationstyle:).md)
+### Creating a hybrid map configuration
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](./init%28elevationstyle%29.md)
   Creates a new hybrid map configuration with the specified elevation style.
-- [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
+- [MKMapConfiguration.ElevationStyle](../mkmapconfiguration/elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
 
 

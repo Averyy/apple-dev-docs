@@ -1,7 +1,8 @@
 # quarterSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quarter symbols for the receiver.
 
@@ -20,13 +21,18 @@ The quarter symbols for the receiver.
 var quarterSymbols: [String]! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSArray<NSString *> * quarterSymbols;
+```
+
 ## See Also
 
-- [var shortQuarterSymbols: [String]!](dateformatter/shortquartersymbols.md)
+### Managing Quarter Symbols
+- [var shortQuarterSymbols: [String]!](./shortquartersymbols.md)
   The short quarter symbols for the receiver.
-- [var standaloneQuarterSymbols: [String]!](dateformatter/standalonequartersymbols.md)
+- [var standaloneQuarterSymbols: [String]!](./standalonequartersymbols.md)
   The standalone quarter symbols for the receiver.
-- [var shortStandaloneQuarterSymbols: [String]!](dateformatter/shortstandalonequartersymbols.md)
+- [var shortStandaloneQuarterSymbols: [String]!](./shortstandalonequartersymbols.md)
   The short standalone quarter symbols for the receiver.
 
 

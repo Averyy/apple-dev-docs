@@ -1,7 +1,8 @@
 # knownFabrics
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var knownFabrics: [MTRFabricInfo]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<MTRFabricInfo *> * knownFabrics;
 ```
 
 

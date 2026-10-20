@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The domain version when the system last refreshed the pending set.
@@ -19,13 +20,18 @@ The domain version when the system last refreshed the pending set.
 var domainVersion: NSFileProviderDomainVersion? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSFileProviderDomainVersion * domainVersion;
+```
+
 #### Discussion
 
 The system sets this property when you call the enumerator’s methods. The value is initially `nil`.
 
 ## See Also
 
-- [var refreshInterval: TimeInterval](nsfileproviderpendingsetenumerator/refreshinterval.md)
+### Accessing Refresh Data
+- [var refreshInterval: TimeInterval](./refreshinterval.md)
   The amount of time, in seconds, between updates to the pending set.
 
 

@@ -1,7 +1,8 @@
 # count
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items in the collection.
 

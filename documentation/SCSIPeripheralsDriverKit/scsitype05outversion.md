@@ -1,7 +1,8 @@
 # SCSIType05OutVersion
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent versions of the Type05 outbound interface.
 
@@ -10,25 +11,26 @@ Constants that represent versions of the Type05 outbound interface.
 
 ## Declaration
 
-```swift
+```c
 typedef enum SCSIType05OutVersion : unsigned int { ... } SCSIType05OutVersion;
 ```
 
 ## Topics
 
 ### Versions
-- [kScsiType05OutCurrentVersion1](scsitype05outversion/kscsitype05outcurrentversion1.md)
+- [kScsiType05OutCurrentVersion1](./scsitype05outversion/kscsitype05outcurrentversion1.md)
   Version 1 of the Type05 outbound interface.
 
 ## See Also
 
-- [UserSendCDB](iouserscsiperipheraldevicetype05/usersendcdb.md)
+### Sending commands to the device
+- [UserSendCDB](./iouserscsiperipheraldevicetype05/usersendcdb.md)
   Sends a vendor-specific Command Descriptor Block (CDB) to the device.
-- [SCSIType05OutParameters](scsitype05outparameters.md)
+- [SCSIType05OutParameters](./scsitype05outparameters.md)
   Parameters for commands to send to the external SCSI device.
-- [SCSIType05InParameters](scsitype05inparameters.md)
+- [SCSIType05InParameters](./scsitype05inparameters.md)
   Parameters for responses from the external SCSI device.
-- [SCSIType05InVersion](scsitype05inversion.md)
+- [SCSIType05InVersion](./scsitype05inversion.md)
   Constants that represent versions of the Type05 inbound interface.
 
 

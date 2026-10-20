@@ -1,7 +1,8 @@
 # zIndex
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element’s position on the z axis.
 
@@ -14,6 +15,10 @@ The element’s position on the z axis.
 var zIndex: Int { get set }
 ```
 
+```objc
+@property NSInteger zIndex;
+```
+
 #### Discussion
 
 Use this property to specify the front-to-back ordering of items during layout. Items with higher index values appear on top of those with lower values. Items with the same value have an undetermined order.
@@ -22,13 +27,14 @@ The default value of this property is `0`.
 
 ## See Also
 
-- [var frame: NSRect](nscollectionviewlayoutattributes/frame.md)
+### Accessing the Layout Attributes
+- [var frame: NSRect](./frame.md)
   The frame rectangle of the element.
-- [var size: NSSize](nscollectionviewlayoutattributes/size.md)
+- [var size: NSSize](./size.md)
   The size of the element.
-- [var alpha: CGFloat](nscollectionviewlayoutattributes/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   The transparency of the element.
-- [var isHidden: Bool](nscollectionviewlayoutattributes/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value indicating whether the element is hidden.
 
 

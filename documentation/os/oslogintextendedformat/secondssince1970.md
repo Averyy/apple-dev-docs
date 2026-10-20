@@ -1,7 +1,8 @@
 # OSLogIntExtendedFormat.secondsSince1970
 
 **Framework**: os  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

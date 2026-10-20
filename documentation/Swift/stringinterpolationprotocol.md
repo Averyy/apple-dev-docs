@@ -1,7 +1,8 @@
 # StringInterpolationProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Represents the contents of a string literal with interpolations while it’s being built up.
 
@@ -72,31 +73,32 @@ let myString = "The user typed '\(validating: userInput)'." as MyString
 ## Topics
 
 ### Associated Types
-- [associatedtype StringLiteralType : _ExpressibleByBuiltinStringLiteral](stringinterpolationprotocol/stringliteraltype.md)
+- [associatedtype StringLiteralType : _ExpressibleByBuiltinStringLiteral](./stringinterpolationprotocol/stringliteraltype.md)
   The type that should be used for literal segments.
 ### Initializers
-- [init(literalCapacity: Int, interpolationCount: Int)](stringinterpolationprotocol/init(literalcapacity:interpolationcount:).md)
+- [init(literalCapacity: Int, interpolationCount: Int)](./stringinterpolationprotocol/init%28literalcapacity,interpolationcount%29.md)
   Creates an empty instance ready to be filled with string literal content.
 ### Instance Methods
-- [func appendLiteral(Self.StringLiteralType)](stringinterpolationprotocol/appendliteral(_:).md)
+- [func appendLiteral(Self.StringLiteralType)](./stringinterpolationprotocol/appendliteral%28_%29.md)
   Appends a literal segment to the interpolation.
 
 ## Relationships
 
 ### Conforming Types
-- [DefaultStringInterpolation](defaultstringinterpolation.md)
+- [DefaultStringInterpolation](./defaultstringinterpolation.md)
 
 ## See Also
 
-- [protocol ExpressibleByStringLiteral](expressiblebystringliteral.md)
+### String Literals
+- [protocol ExpressibleByStringLiteral](./expressiblebystringliteral.md)
   A type that can be initialized with a string literal.
-- [protocol ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
+- [protocol ExpressibleByExtendedGraphemeClusterLiteral](./expressiblebyextendedgraphemeclusterliteral.md)
   A type that can be initialized with a string literal containing a single extended grapheme cluster.
-- [protocol ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
+- [protocol ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
   A type that can be initialized with a string literal containing a single Unicode scalar value.
-- [protocol ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
+- [protocol ExpressibleByStringInterpolation](./expressiblebystringinterpolation.md)
   A type that can be initialized by string interpolation with a string literal that includes expressions.
-- [struct DefaultStringInterpolation](defaultstringinterpolation.md)
+- [struct DefaultStringInterpolation](./defaultstringinterpolation.md)
   Represents a string literal with interpolations while it’s being built up.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueStatusFault
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the fault status of an accessory.
 
@@ -19,25 +20,29 @@ Possible values for the fault status of an accessory.
 enum HMCharacteristicValueStatusFault
 ```
 
+```c
+enum HMCharacteristicValueStatusFault : NSInteger;
+```
+
 ## Topics
 
 ### Fault Status
-- [HMCharacteristicValueStatusFault.noFault](hmcharacteristicvaluestatusfault/nofault.md)
+- [HMCharacteristicValueStatusFault.noFault](./hmcharacteristicvaluestatusfault/nofault.md)
   The accessory has not experienced a fault.
-- [HMCharacteristicValueStatusFault.generalFault](hmcharacteristicvaluestatusfault/generalfault.md)
+- [HMCharacteristicValueStatusFault.generalFault](./hmcharacteristicvaluestatusfault/generalfault.md)
   The accessory experienced a general fault.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluestatusfault/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluestatusfault/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

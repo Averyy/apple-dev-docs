@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: StateReporting  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

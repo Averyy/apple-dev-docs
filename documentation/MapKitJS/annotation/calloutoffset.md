@@ -1,7 +1,8 @@
 # calloutOffset
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An offset that changes the annotation callout’s default placement.
 
@@ -10,7 +11,7 @@ An offset that changes the annotation callout’s default placement.
 
 ## Declaration
 
-```swift
+```
 get calloutOffset(): DOMPoint;
 set calloutOffset(value: DOMPoint);
 ```
@@ -23,9 +24,10 @@ To choose a different placement, provide an offset point where positive x-values
 
 ## See Also
 
-- [callout](annotation/callout.md)
+### Managing callouts
+- [callout](./callout.md)
   A delegate that enables you to customize the annotation’s callout.
-- [calloutEnabled](annotation/calloutenabled.md)
+- [calloutEnabled](./calloutenabled.md)
   A Boolean value that determines whether the map shows an annotation’s callout.
 
 

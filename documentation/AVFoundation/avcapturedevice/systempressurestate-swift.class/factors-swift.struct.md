@@ -1,7 +1,8 @@
 # AVCaptureDevice.SystemPressureState.Factors
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the factors affecting capture system performance.
 
@@ -18,39 +19,44 @@ A structure that defines the factors affecting capture system performance.
 struct Factors
 ```
 
+```c
+enum AVCaptureSystemPressureFactors : NSUInteger;
+```
+
 ## Topics
 
 ### System pressure factors
-- [static var systemTemperature: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/systemtemperature.md)
+- [static var systemTemperature: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.struct/systemtemperature.md)
   The entire system is under elevated thermal load.
-- [static var peakPower: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/peakpower.md)
+- [static var peakPower: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.struct/peakpower.md)
   The system’s peak power requirements exceed the battery’s current capacity.
-- [static var depthModuleTemperature: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/depthmoduletemperature.md)
+- [static var depthModuleTemperature: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.struct/depthmoduletemperature.md)
   The module capturing depth information is operating at an elevated temperature.
-- [static var cameraTemperature: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/cameratemperature.md)
+- [static var cameraTemperature: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.struct/cameratemperature.md)
   The camera module is operating at an elevated temperature.
 ### Initializers
-- [init(rawValue: UInt)](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./factors-swift.struct/init%28rawvalue%29.md)
   Creates a system pressure factor from its raw string value.
 ### Type Properties
-- [static var batteryStress: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/batterystress.md)
+- [static var batteryStress: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.struct/batterystress.md)
   Indicates that under the current battery conditions, the device will shut down within 30 seconds if system load is not reduced.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var factors: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.property.md)
+### Contributing factors
+- [var factors: AVCaptureDevice.SystemPressureState.Factors](./factors-swift.property.md)
   The set of underlying causes for the system pressure level.
 
 

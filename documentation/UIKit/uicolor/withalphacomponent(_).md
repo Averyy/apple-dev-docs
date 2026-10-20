@@ -1,7 +1,8 @@
 # withAlphaComponent(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component.
 
@@ -9,7 +10,7 @@ Creates a color object that has the same color space and component values as the
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Creates a color object that has the same color space and component values as the
 
 ```swift
 func withAlphaComponent(_ alpha: CGFloat) -> UIColor
+```
+
+```objc
+- (UIColor *) colorWithAlphaComponent:(CGFloat) alpha;
 ```
 
 #### Return Value
@@ -33,11 +38,12 @@ A subclass with explicit opacity components should override this method to retur
 
 ## See Also
 
-- [convenience init(Color)](uicolor/init(_:).md)
+### Creating a color from another color object
+- [convenience init(Color)](./init%28_%29.md)
   Creates a color object that encapsulates a SwiftUI color.
-- [init(ciColor: CIColor)](uicolor/init(cicolor:)-2z057.md)
+- [init(ciColor: CIColor)](./init%28cicolor%29-2z057.md)
   Creates a color object that encapsulates a Core Image color.
-- [init(cgColor: CGColor)](uicolor/init(cgcolor:)-27r9g.md)
+- [init(cgColor: CGColor)](./init%28cgcolor%29-27r9g.md)
   Creates a color object using the specified Quartz color reference.
 
 

@@ -1,7 +1,8 @@
 # sessionHasGraphicAccess
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A bit that indicates a graphic subsystem is available.
 
@@ -13,6 +14,10 @@ A bit that indicates a graphic subsystem is available.
 
 ```swift
 static var sessionHasGraphicAccess: SessionAttributeBits { get }
+```
+
+```c
+sessionHasGraphicAccess
 ```
 
 

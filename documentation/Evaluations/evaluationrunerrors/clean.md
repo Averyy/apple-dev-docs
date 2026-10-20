@@ -1,7 +1,8 @@
 # clean
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Used as the default when loading a file that carries no `runErrors`.
 

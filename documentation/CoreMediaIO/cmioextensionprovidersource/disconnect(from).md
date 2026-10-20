@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Disconnects a client from a source’s provider.
@@ -16,13 +17,18 @@ Disconnects a client from a source’s provider.
 func disconnect(from client: CMIOExtensionClient)
 ```
 
+```objc
+- (void) disconnectClient:(CMIOExtensionClient *) client;
+```
+
 ## Parameters
 
 - `client`: A client to disconnect to the source’s provider.
 
 ## See Also
 
-- [func connect(to: CMIOExtensionClient) throws](cmioextensionprovidersource/connect(to:).md)
+### Managing Connections
+- [func connect(to: CMIOExtensionClient) throws](./connect%28to%29.md)
   Connects a client to a source’s provider.
 
 

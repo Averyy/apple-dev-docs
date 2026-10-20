@@ -1,9 +1,10 @@
 # takeMeshUpdate(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.MeshData.Update`](usdplayer/meshdata/update.md) for the given mesh delta update.
+Consumes and returns the [`USDPlayer.MeshData.Update`](../meshdata/update.md) for the given mesh delta update.
 
 **Availability**:
 - iOS 27.0+

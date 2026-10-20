@@ -1,7 +1,8 @@
 # EKEventEditViewAction.canceled
 
 **Framework**: EventKit UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user canceled changes made to the event.
 
@@ -17,13 +18,18 @@ The user canceled changes made to the event.
 case canceled
 ```
 
+```c
+EKEventEditViewActionCanceled
+```
+
 ## See Also
 
-- [EKEventEditViewAction.saved](ekeventeditviewaction/saved.md)
+### Constants
+- [EKEventEditViewAction.saved](./saved.md)
   The user saved changes made to the event.
-- [EKEventEditViewAction.deleted](ekeventeditviewaction/deleted.md)
+- [EKEventEditViewAction.deleted](./deleted.md)
   The user deleted the event.
-- [static var cancelled: EKEventEditViewAction](ekeventeditviewaction/cancelled.md)
+- [static var cancelled: EKEventEditViewAction](./cancelled.md)
   A static variable used to cancel changes made to the event.
 
 

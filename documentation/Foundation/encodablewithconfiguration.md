@@ -1,7 +1,8 @@
 # EncodableWithConfiguration
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types that support encoding when supplied with an additional configuration type.
 
@@ -23,31 +24,32 @@ protocol EncodableWithConfiguration
 ## Topics
 
 ### Encoding
-- [func encode(to: any Encoder, configuration: Self.EncodingConfiguration) throws](encodablewithconfiguration/encode(to:configuration:).md)
+- [func encode(to: any Encoder, configuration: Self.EncodingConfiguration) throws](./encodablewithconfiguration/encode%28to,configuration%29.md)
   Encodes the value into the specified encoder with help from the provided configuration.
 ### Supporting Types
-- [associatedtype EncodingConfiguration](encodablewithconfiguration/encodingconfiguration.md)
+- [associatedtype EncodingConfiguration](./encodablewithconfiguration/encodingconfiguration.md)
   The type of the encoding configuration.
 
 ## Relationships
 
 ### Conforming Types
-- [AttributeContainer](attributecontainer.md)
-- [AttributedString](attributedstring.md)
-- [Expression](expression.md)
-- [Predicate](predicate.md)
+- [AttributeContainer](./attributecontainer.md)
+- [AttributedString](./attributedstring.md)
+- [Expression](./expression.md)
+- [Predicate](./predicate.md)
 
 ## See Also
 
-- [typealias CodableWithConfiguration](codablewithconfiguration.md)
+### Serializing Arbitrary Payloads
+- [typealias CodableWithConfiguration](./codablewithconfiguration.md)
   A type that can convert itself into and out of an external representation with the help of a configuration that handles encoding contained types.
-- [struct CodableConfiguration](codableconfiguration.md)
+- [struct CodableConfiguration](./codableconfiguration.md)
   A property wrapper that makes a type codable, by supplying a configuration that provides additional information for serialization.
-- [protocol DecodableWithConfiguration](decodablewithconfiguration.md)
+- [protocol DecodableWithConfiguration](./decodablewithconfiguration.md)
   A protocol for types that support decoding when supplied with an additional configuration type.
-- [protocol DecodingConfigurationProviding](decodingconfigurationproviding.md)
+- [protocol DecodingConfigurationProviding](./decodingconfigurationproviding.md)
   A protocol whose conformers provide a configuration instance to help decode types that don’t support encoding by themselves.
-- [protocol EncodingConfigurationProviding](encodingconfigurationproviding.md)
+- [protocol EncodingConfigurationProviding](./encodingconfigurationproviding.md)
   A protocol whose conformers provide a configuration instance to help encode types that don’t support encoding by themselves.
 
 

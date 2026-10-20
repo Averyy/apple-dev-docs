@@ -1,7 +1,8 @@
 # toDouble
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a number or numeric string to a `Double`.
 
@@ -10,7 +11,7 @@ Converts a number or numeric string to a `Double`.
 
 ## Declaration
 
-```swift
+```
 static Double toDouble();
 ```
 

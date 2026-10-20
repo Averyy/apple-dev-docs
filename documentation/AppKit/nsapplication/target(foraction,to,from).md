@@ -1,17 +1,22 @@
 # target(forAction:to:from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for an object that can receive the message specified by the given selector.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func target(forAction action: Selector, to target: Any?, from sender: Any?) -> Any?
+```
+
+```objc
+- (id) targetForAction:(SEL) action to:(id) target from:(id) sender;
 ```
 
 #### Return Value
@@ -34,11 +39,12 @@ If the provided target is `nil`, the search begins with the first responder of t
 
 ## See Also
 
-- [func tryToPerform(Selector, with: Any?) -> Bool](nsapplication/trytoperform(_:with:).md)
+### Posting actions
+- [func tryToPerform(Selector, with: Any?) -> Bool](./trytoperform%28_,with%29.md)
   Dispatches an action message to the specified target.
-- [func sendAction(Selector, to: Any?, from: Any?) -> Bool](nsapplication/sendaction(_:to:from:).md)
+- [func sendAction(Selector, to: Any?, from: Any?) -> Bool](./sendaction%28_,to,from%29.md)
   Sends the given action message to the given target.
-- [func target(forAction: Selector) -> Any?](nsapplication/target(foraction:).md)
+- [func target(forAction: Selector) -> Any?](./target%28foraction%29.md)
   Returns the object that receives the action message specified by the given selector.
 
 

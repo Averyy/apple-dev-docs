@@ -1,7 +1,8 @@
 # MusicSummaries.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the music summaries resource type.
 
@@ -10,7 +11,7 @@ The attributes for the music summaries resource type.
 
 ## Declaration
 
-```swift
+```
 object MusicSummaries.Attributes
 ```
 

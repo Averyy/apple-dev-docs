@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device instance that creates the pipeline state.
@@ -11,7 +12,7 @@ The device instance that creates the pipeline state.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The device instance that creates the pipeline state.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 #### Discussion
 
 You can only use the pipeline state object with this device object.
 
 ## See Also
 
-- [var label: String?](mtlrenderpipelinestate/label.md)
+### Identifying a pipeline state
+- [var label: String?](./label.md)
   A string that helps you identify the render pipeline state during debugging.
-- [var gpuResourceID: MTLResourceID](mtlrenderpipelinestate/gpuresourceid.md)
+- [var gpuResourceID: MTLResourceID](./gpuresourceid.md)
   An unique identifier that represents the pipeline state, which you can add to an argument buffer.
 
 

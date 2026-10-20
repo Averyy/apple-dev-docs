@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set of actions in the action set.
 
@@ -19,15 +20,20 @@ Set of actions in the action set.
 var actions: Set<HMAction> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<HMAction *> * actions;
+```
+
 ## See Also
 
-- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/addaction(_:completionhandler:).md)
+### Defining the associated actions
+- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](./addaction%28_,completionhandler%29.md)
   Adds an action to the action set.
-- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](./removeaction%28_,completionhandler%29.md)
   Removes an action from the action set.
-- [class HMCharacteristicWriteAction](hmcharacteristicwriteaction.md)
+- [class HMCharacteristicWriteAction](../hmcharacteristicwriteaction.md)
   An action in an action set that writes a value to a characteristic.
-- [class HMAction](hmaction.md)
+- [class HMAction](../hmaction.md)
   An abstract base class for actions in HomeKit.
 
 

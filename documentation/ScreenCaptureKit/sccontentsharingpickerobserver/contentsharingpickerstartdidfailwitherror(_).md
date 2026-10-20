@@ -2,6 +2,7 @@
 
 **Framework**: ScreenCaptureKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the observer that a sharing picker was unable to start.
@@ -18,6 +19,10 @@ Tells the observer that a sharing picker was unable to start.
 
 ```swift
 func contentSharingPickerStartDidFailWithError(_ error: any Error)
+```
+
+```objc
+- (void) contentSharingPickerStartDidFailWithError:(NSError *) error;
 ```
 
 ## Parameters

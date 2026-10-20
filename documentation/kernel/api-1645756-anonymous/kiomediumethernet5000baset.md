@@ -1,14 +1,15 @@
 # kIOMediumEthernet5000BaseT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMediumEthernet5000BaseT = ( IFM_5000_T  | IFM_ETHER )
 ```
 

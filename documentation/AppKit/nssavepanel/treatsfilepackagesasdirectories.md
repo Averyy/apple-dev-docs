@@ -1,12 +1,13 @@
 # treatsFilePackagesAsDirectories
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the panel displays file packages as directories.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the panel displays file packages as direc
 var treatsFilePackagesAsDirectories: Bool { get set }
 ```
 
+```objc
+@property BOOL treatsFilePackagesAsDirectories;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the panel displays file packages as directories; if [`false`](https://developer.apple.com/documentation/swift/false), it will not.
+When the value of this property is [`true`](../../Swift/true.md), the panel displays file packages as directories; if [`false`](../../Swift/false.md), it will not.
 
 ## See Also
 
-- [var allowedContentTypes: [UTType]](nssavepanel/allowedcontenttypes.md)
+### Configuring the File Types
+- [var allowedContentTypes: [UTType]](./allowedcontenttypes.md)
   An array of types that specify the files types to which you can save.
-- [var allowsOtherFileTypes: Bool](nssavepanel/allowsotherfiletypes.md)
+- [var allowsOtherFileTypes: Bool](./allowsotherfiletypes.md)
   A Boolean value that indicates whether the panel allows the user to save files with a filename extension that’s not in the list of allowed types.
 
 

@@ -1,7 +1,8 @@
 # kIOUserVideoDriverUserClientType
 
 **Framework**: VideoDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 User client type required for connection to the Host.
 
@@ -10,13 +11,13 @@ User client type required for connection to the Host.
 
 ## Declaration
 
-```swift
+```c
 #define kIOUserVideoDriverUserClientType
 ```
 
 #### Overview
 
-Passed as an argument to [`NewUserClient`](https://developer.apple.com/documentation/driverkit/ioservice/newuserclient) when Core Video Host is creating a new user client.
+Passed as an argument to [`NewUserClient`](../DriverKit/ioservice/newuserclient.md) when Core Video Host is creating a new user client.
 
 
 ---

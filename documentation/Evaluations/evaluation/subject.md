@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of subject the system under test produces.
@@ -23,13 +24,14 @@ associatedtype Subject : EvaluationSubject
 
 ## See Also
 
-- [func subject(from: Self.Sample) async throws -> Self.Subject](evaluation/subject(from:).md)
+### Testing an intelligent feature
+- [func subject(from: Self.Sample) async throws -> Self.Subject](./subject%28from%29.md)
   Produces the subject of evaluation from a given sample.
-- [protocol EvaluationSubject](evaluationsubject.md)
+- [protocol EvaluationSubject](../evaluationsubject.md)
   A type that represents the output the system under test produces.
-- [struct ModelSubject](modelsubject.md)
+- [struct ModelSubject](../modelsubject.md)
   The subject type for language model evaluations.
-- [var name: String](evaluation/name.md)
+- [var name: String](./name.md)
   The evaluation’s name in results. Defaults to the type name; override for a custom one.
 
 

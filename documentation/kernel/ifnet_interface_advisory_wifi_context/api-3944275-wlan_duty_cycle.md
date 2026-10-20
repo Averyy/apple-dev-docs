@@ -1,14 +1,15 @@
 # wlan_duty_cycle
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wlan_duty_cycle;
 ```
 

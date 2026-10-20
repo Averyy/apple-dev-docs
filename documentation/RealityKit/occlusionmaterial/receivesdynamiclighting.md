@@ -1,7 +1,8 @@
 # receivesDynamicLighting
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the occlusion material receives dynamic lighting.
 

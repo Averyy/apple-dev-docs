@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive name for the scattering function.
 
@@ -17,6 +18,10 @@ A descriptive name for the scattering function.
 
 ```swift
 var name: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * name;
 ```
 
 #### Discussion

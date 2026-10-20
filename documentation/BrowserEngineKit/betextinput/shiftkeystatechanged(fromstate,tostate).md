@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates a transition in the state of the Shift key.
@@ -18,9 +19,13 @@ Indicates a transition in the state of the Shift key.
 func shiftKeyStateChanged(fromState oldState: BEKeyModifierFlags, toState newState: BEKeyModifierFlags)
 ```
 
+```objc
+- (void) shiftKeyStateChangedFromState:(BEKeyModifierFlags) oldState toState:(BEKeyModifierFlags) newState;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 

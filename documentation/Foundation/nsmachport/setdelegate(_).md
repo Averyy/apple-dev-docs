@@ -1,7 +1,8 @@
 # setDelegate(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver’s delegate to a given object.
 
@@ -20,13 +21,18 @@ Sets the receiver’s delegate to a given object.
 func setDelegate(_ anObject: (any NSMachPortDelegate)?)
 ```
 
+```objc
+- (void) setDelegate:(id<NSMachPortDelegate>) anObject;
+```
+
 ## Parameters
 
 - `anObject`: The delegate for the receiver.
 
 ## See Also
 
-- [func delegate() -> (any NSMachPortDelegate)?](nsmachport/delegate.md)
+### Getting and Setting the Delegate
+- [func delegate() -> (any NSMachPortDelegate)?](./delegate%28%29.md)
   Returns the receiver’s delegate.
 
 

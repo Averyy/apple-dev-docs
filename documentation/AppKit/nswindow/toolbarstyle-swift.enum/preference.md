@@ -1,7 +1,8 @@
 # NSWindow.ToolbarStyle.preference
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style indicating that the toolbar appears below the window title with toolbar items centered in the toolbar.
 
@@ -14,15 +15,20 @@ A style indicating that the toolbar appears below the window title with toolbar 
 case preference
 ```
 
+```c
+NSWindowToolbarStylePreference
+```
+
 ## See Also
 
-- [NSWindow.ToolbarStyle.automatic](nswindow/toolbarstyle-swift.enum/automatic.md)
+### Styles
+- [NSWindow.ToolbarStyle.automatic](./automatic.md)
   A style indicating that the system determines the toolbar’s appearance and location.
-- [NSWindow.ToolbarStyle.expanded](nswindow/toolbarstyle-swift.enum/expanded.md)
+- [NSWindow.ToolbarStyle.expanded](./expanded.md)
   A style indicating that the toolbar appears below the window title.
-- [NSWindow.ToolbarStyle.unified](nswindow/toolbarstyle-swift.enum/unified.md)
+- [NSWindow.ToolbarStyle.unified](./unified.md)
   A style indicating that the toolbar appears next to the window title.
-- [NSWindow.ToolbarStyle.unifiedCompact](nswindow/toolbarstyle-swift.enum/unifiedcompact.md)
+- [NSWindow.ToolbarStyle.unifiedCompact](./unifiedcompact.md)
   A style indicating that the toolbar appears next to the window title and with reduced margins to allow more focus on the window’s contents.
 
 

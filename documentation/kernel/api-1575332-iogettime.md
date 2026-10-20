@@ -1,25 +1,27 @@
 # IOGetTime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.6
 
 ## Declaration
 
-```swift
+```c
 void IOGetTime(mach_timespec_t *clock_time);
 ```
 
 ## See Also
 
-- [IOTimerEventSource](iotimereventsource.md)
+### Timers
+- [IOTimerEventSource](./iotimereventsource.md)
   Time based event source mechanism.
-- [IOWatchDogTimer](iowatchdogtimer.md)
-- [IOTimeStampConstant](1535203-iotimestampconstant.md)
-- [IOTimeStampEndConstant](1535232-iotimestampendconstant.md)
-- [IOTimeStampStartConstant](1535234-iotimestampstartconstant.md)
+- [IOWatchDogTimer](./iowatchdogtimer.md)
+- [IOTimeStampConstant](./api-1535203-iotimestampconstant.md)
+- [IOTimeStampEndConstant](./api-1535232-iotimestampendconstant.md)
+- [IOTimeStampStartConstant](./api-1535234-iotimestampstartconstant.md)
 
 
 ---

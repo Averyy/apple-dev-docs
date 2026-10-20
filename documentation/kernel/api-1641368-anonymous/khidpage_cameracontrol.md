@@ -1,14 +1,15 @@
 # kHIDPage_CameraControl
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDPage_CameraControl = 0x90
 ```
 

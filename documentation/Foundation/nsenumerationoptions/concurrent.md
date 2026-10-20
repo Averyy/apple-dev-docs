@@ -1,7 +1,8 @@
 # concurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the Block enumeration should be concurrent.
 
@@ -20,13 +21,18 @@ Specifies that the Block enumeration should be concurrent.
 static var concurrent: NSEnumerationOptions { get }
 ```
 
+```c
+NSEnumerationConcurrent
+```
+
 #### Discussion
 
 The order of invocation is nondeterministic and undefined; this flag is a hint and may be ignored by the implementation under some circumstances; the code of the Block must be safe against concurrent invocation.
 
 ## See Also
 
-- [static var reverse: NSEnumerationOptions](nsenumerationoptions/reverse.md)
+### Constants
+- [static var reverse: NSEnumerationOptions](./reverse.md)
   Specifies that the enumeration should be performed in reverse.
 
 

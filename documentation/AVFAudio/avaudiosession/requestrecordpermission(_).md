@@ -1,21 +1,28 @@
 # requestRecordPermission(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the user’s permission to record audio.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 7.0+ - Deprecated in 17.0
+- iPadOS 7.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 4.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use [`requestRecordPermission(completionHandler:)`](../avaudioapplication/requestrecordpermission%28completionhandler%29.md) on [`AVAudioApplication`](../avaudioapplication.md) instead.
 
 ## Declaration
 
 ```swift
 func requestRecordPermission(_ response: @escaping (Bool) -> Void)
+```
+
+```objc
+- (void) requestRecordPermission:(void (^)(BOOL granted)) response;
 ```
 
 #### Discussion
@@ -39,15 +46,20 @@ AVAudioSession.sharedInstance().requestRecordPermission { granted in
 }
 ```
 
-> ❗ **Important**:  Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert. If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
+> ❗ **Important**:  Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert.
+>
+> If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
 
 ## Parameters
 
-- `response`: A block, of type `PermissionBlock`, whose sole parameter contains a Boolean value indicating whether the user granted or denied permission to record. When you call this method, if the user previously granted or denied recording permission, the block executes immediately without displaying a recording permission alert. If the user hasn’t yet granted or denied permission when you call this method, the system displays a recording permission alert and executes the block after the user responds to it.
+- `response`: A block, of type `PermissionBlock`, whose sole parameter contains a Boolean value indicating whether the user granted or denied permission to record.
+
+  When you call this method, if the user previously granted or denied recording permission, the block executes immediately without displaying a recording permission alert. If the user hasn’t yet granted or denied permission when you call this method, the system displays a recording permission alert and executes the block after the user responds to it.
 
 ## See Also
 
-- [var recordPermission: AVAudioSession.RecordPermission](avaudiosession/recordpermission-swift.property.md)
+### Requesting permission to record
+- [var recordPermission: AVAudioSession.RecordPermission](./recordpermission-swift.property.md)
   The current recording permission status.
 
 

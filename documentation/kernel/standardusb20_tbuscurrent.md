@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 enum StandardUSB20::tBusCurrent : unsigned int {
     ...
 };
@@ -17,9 +17,9 @@ enum StandardUSB20::tBusCurrent : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB20::kBusCurrentDefault](standardusb20_tbuscurrent/standardusb20_kbuscurrentdefault.md)
-- [StandardUSB20::kBusCurrentMaxPowerUnits](standardusb20_tbuscurrent/standardusb20_kbuscurrentmaxpowerunits.md)
-- [StandardUSB20::kBusCurrentMinimum](standardusb20_tbuscurrent/standardusb20_kbuscurrentminimum.md)
+- [StandardUSB20::kBusCurrentDefault](./standardusb20_tbuscurrent/standardusb20_kbuscurrentdefault.md)
+- [StandardUSB20::kBusCurrentMaxPowerUnits](./standardusb20_tbuscurrent/standardusb20_kbuscurrentmaxpowerunits.md)
+- [StandardUSB20::kBusCurrentMinimum](./standardusb20_tbuscurrent/standardusb20_kbuscurrentminimum.md)
 
 
 ---

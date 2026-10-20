@@ -1,14 +1,15 @@
 # tstoabstime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11.2+
 
 ## Declaration
 
-```swift
+```c
 uint64_t tstoabstime(struct timespec *);
 ```
 

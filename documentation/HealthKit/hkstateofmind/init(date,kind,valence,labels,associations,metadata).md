@@ -1,7 +1,8 @@
 # init(date:kind:valence:labels:associations:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

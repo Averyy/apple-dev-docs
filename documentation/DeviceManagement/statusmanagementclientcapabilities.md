@@ -1,7 +1,8 @@
 # StatusManagementClientCapabilities
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the devices’s protocol capabilities.
 
@@ -16,17 +17,17 @@ The status item that reports the devices’s protocol capabilities.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementClientCapabilities
 ```
 
 ## Mentions
 
-- [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
+- [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ object StatusManagementClientCapabilities
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -170,7 +171,7 @@ object StatusManagementClientCapabilities
 ## Topics
 
 ### Objects
-- [object StatusManagementClientCapabilitiesCapabilitiesObject](statusmanagementclientcapabilitiescapabilitiesobject.md)
+- [object StatusManagementClientCapabilitiesCapabilitiesObject](./statusmanagementclientcapabilitiescapabilitiesobject.md)
   An object that contains the client’s protocol capabilities. These typically only change when the device upgrades its software. An implicit status subscription for this status item is always present, so the client always reports changes to the server.
 
 ## Properties
@@ -179,7 +180,8 @@ object StatusManagementClientCapabilities
 
 ## See Also
 
-- [object StatusManagementDeclarations](statusmanagementdeclarations.md)
+### Management items
+- [object StatusManagementDeclarations](./statusmanagementdeclarations.md)
   The status item that reports the device’s processed declarations.
 
 

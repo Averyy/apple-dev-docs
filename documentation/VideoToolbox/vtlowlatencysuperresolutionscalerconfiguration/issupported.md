@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reports whether the system supports this processor on the current configuration.
 
@@ -19,9 +20,14 @@ Reports whether the system supports this processor on the current configuration.
 class var isSupported: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
+```
+
 ## See Also
 
-- [class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]](vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors(framewidth:frameheight:).md)
+### Determining processor availability
+- [class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]](./supportedscalefactors%28framewidth,frameheight%29.md)
 
 
 ---

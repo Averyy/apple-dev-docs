@@ -1,7 +1,8 @@
 # CVAttachmentKeyDefinitions
 
 **Framework**: Core Video  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Marks a type as a collection of attachment keys for an attachment bearer.
 
@@ -22,7 +23,7 @@ protocol CVAttachmentKeyDefinitions
 
 #### Overview
 
-The static properties of a type which implements this protocol provide definitions for the attachment keys. The static properties which have one of [`CVAttachmentKeyDefinitions.Key`](cvattachmentkeydefinitions/key.md), [`CVAttachmentKeyDefinitions.KeyWithDefault`](cvattachmentkeydefinitions/keywithdefault.md) or [`CVAttachmentKeyDefinitions.CompositeKey`](cvattachmentkeydefinitions/compositekey.md) type are used by an attachment access provider to get and set attachment values.
+The static properties of a type which implements this protocol provide definitions for the attachment keys. The static properties which have one of [`CVAttachmentKeyDefinitions.Key`](./cvattachmentkeydefinitions/key.md), [`CVAttachmentKeyDefinitions.KeyWithDefault`](./cvattachmentkeydefinitions/keywithdefault.md) or [`CVAttachmentKeyDefinitions.CompositeKey`](./cvattachmentkeydefinitions/compositekey.md) type are used by an attachment access provider to get and set attachment values.
 
 For example, a custom attachment key for pixel buffers can be defined as:
 
@@ -49,26 +50,27 @@ extension CustomAttachmentValue: CVAttachmentValueRepresentable {
 ## Topics
 
 ### Type Aliases
-- [CVAttachmentKeyDefinitions.CompositeKey](cvattachmentkeydefinitions/compositekey.md)
-- [CVAttachmentKeyDefinitions.Key](cvattachmentkeydefinitions/key.md)
-- [CVAttachmentKeyDefinitions.KeyWithDefault](cvattachmentkeydefinitions/keywithdefault.md)
-- [CVAttachmentKeyDefinitions.ShouldNotPropagate](cvattachmentkeydefinitions/shouldnotpropagate.md)
-- [CVAttachmentKeyDefinitions.ShouldPropagate](cvattachmentkeydefinitions/shouldpropagate.md)
+- [CVAttachmentKeyDefinitions.CompositeKey](./cvattachmentkeydefinitions/compositekey.md)
+- [CVAttachmentKeyDefinitions.Key](./cvattachmentkeydefinitions/key.md)
+- [CVAttachmentKeyDefinitions.KeyWithDefault](./cvattachmentkeydefinitions/keywithdefault.md)
+- [CVAttachmentKeyDefinitions.ShouldNotPropagate](./cvattachmentkeydefinitions/shouldnotpropagate.md)
+- [CVAttachmentKeyDefinitions.ShouldPropagate](./cvattachmentkeydefinitions/shouldpropagate.md)
 
 ## Relationships
 
 ### Inherited By
-- [CVImageBufferAttachmentKeyDefinitions](cvimagebufferattachmentkeydefinitions.md)
+- [CVImageBufferAttachmentKeyDefinitions](./cvimagebufferattachmentkeydefinitions.md)
 ### Conforming Types
-- [CVPixelBufferAttachmentKeyDefinitions](cvpixelbufferattachmentkeydefinitions.md)
+- [CVPixelBufferAttachmentKeyDefinitions](./cvpixelbufferattachmentkeydefinitions.md)
 
 ## See Also
 
-- [protocol CVBufferRepresentable](cvbufferrepresentable.md)
+### Protocols
+- [protocol CVBufferRepresentable](./cvbufferrepresentable.md)
   CVBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVBuffer type.
-- [protocol CVAttachmentModePreference](cvattachmentmodepreference.md)
+- [protocol CVAttachmentModePreference](./cvattachmentmodepreference.md)
   Defines preferred mode for an attachment key.
-- [protocol CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
+- [protocol CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
   Allows Swift types to be used as buffer attachment value.
 
 

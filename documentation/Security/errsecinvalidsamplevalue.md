@@ -1,7 +1,8 @@
 # errSecInvalidSampleValue
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid sample value was detected.
 
@@ -18,6 +19,10 @@ An invalid sample value was detected.
 
 ```swift
 var errSecInvalidSampleValue: OSStatus { get }
+```
+
+```c
+errSecInvalidSampleValue
 ```
 
 

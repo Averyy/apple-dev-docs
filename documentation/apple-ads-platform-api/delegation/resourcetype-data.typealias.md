@@ -1,7 +1,8 @@
 # Delegation.ResourceType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The type of the linked resource: `CONTENT_PROVIDER` or `BUSINESS_BRAND`.
 
@@ -10,9 +11,14 @@ The type of the linked resource: `CONTENT_PROVIDER` or `BUSINESS_BRAND`.
 
 ## Declaration
 
-```swift
+```
 string Delegation.ResourceType
 ```
+
+## Possible Values
+
+- `CONTENT_PROVIDER`: A content provider resource associated with the ad account. Its `resourceId` is the Content Provider ID (CPID).
+- `BUSINESS_BRAND`: A Brand resource delegated from an organization. Its `resourceId` is the Brand ID.
 
 #### Discussion
 

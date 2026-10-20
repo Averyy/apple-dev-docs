@@ -1,7 +1,8 @@
 # Transaction.RevocationType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -21,23 +22,23 @@ struct RevocationType
 ## Topics
 
 ### Type Properties
-- [static var assignmentRevocation: Transaction.RevocationType](transaction/revocationtype-swift.struct/assignmentrevocation.md)
+- [static var assignmentRevocation: Transaction.RevocationType](./revocationtype-swift.struct/assignmentrevocation.md)
   The transaction was revoked by the organization administrator.
-- [static let familyRevocation: Transaction.RevocationType](transaction/revocationtype-swift.struct/familyrevocation.md)
+- [static let familyRevocation: Transaction.RevocationType](./revocationtype-swift.struct/familyrevocation.md)
   The transaction was revoked due to a family sharing revocation.
-- [static let fullRefund: Transaction.RevocationType](transaction/revocationtype-swift.struct/fullrefund.md)
+- [static let fullRefund: Transaction.RevocationType](./revocationtype-swift.struct/fullrefund.md)
   The transaction was fully refunded.
-- [static let proratedRefund: Transaction.RevocationType](transaction/revocationtype-swift.struct/proratedrefund.md)
+- [static let proratedRefund: Transaction.RevocationType](./revocationtype-swift.struct/proratedrefund.md)
   The transaction was partially refunded based on consumption.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

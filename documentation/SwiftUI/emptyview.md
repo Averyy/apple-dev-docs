@@ -1,7 +1,8 @@
 # EmptyView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that doesn’t contain any content.
 
@@ -27,7 +28,7 @@ You will rarely, if ever, need to create an `EmptyView` directly. Instead, `Empt
 
 SwiftUI uses `EmptyView` in situations where a SwiftUI view type defines one or more child views with generic parameters, and allows the child views to be absent. When absent, the child view’s type in the generic type parameter is `EmptyView`.
 
-The following example creates an indeterminate [`ProgressView`](progressview.md) without a label. The [`ProgressView`](progressview.md) type declares two generic parameters, `Label` and `CurrentValueLabel`, for the types used by its subviews. When both subviews are absent, like they are here, the resulting type is `ProgressView<EmptyView, EmptyView>`, as indicated by the example’s output:
+The following example creates an indeterminate [`ProgressView`](./progressview.md) without a label. The [`ProgressView`](./progressview.md) type declares two generic parameters, `Label` and `CurrentValueLabel`, for the types used by its subviews. When both subviews are absent, like they are here, the resulting type is `ProgressView<EmptyView, EmptyView>`, as indicated by the example’s output:
 
 ```swift
 let progressView = ProgressView()
@@ -38,33 +39,34 @@ print("\(type(of:progressView))")
 ## Topics
 
 ### Creating an empty view
-- [init()](emptyview/init.md)
+- [init()](./emptyview/init%28%29.md)
   Creates an empty view.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [ChartContent](../charts/chartcontent.md)
-- [Commands](commands.md)
-- [Copyable](../swift/copyable.md)
-- [CustomizableToolbarContent](customizabletoolbarcontent.md)
-- [Escapable](../swift/escapable.md)
-- [SceneAccessoryContent](sceneaccessorycontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ToolbarContent](toolbarcontent.md)
-- [View](view.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [ChartContent](../Charts/chartcontent.md)
+- [Commands](./commands.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomizableToolbarContent](./customizabletoolbarcontent.md)
+- [Escapable](../Swift/escapable.md)
+- [SceneAccessoryContent](./sceneaccessorycontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ToolbarContent](./toolbarcontent.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct AnyView](anyview.md)
+### Supporting view types
+- [struct AnyView](./anyview.md)
   A type-erased view.
-- [struct EquatableView](equatableview.md)
+- [struct EquatableView](./equatableview.md)
   A view type that compares itself against its previous value and prevents its child updating if its new value is the same as its old value.
-- [struct SubscriptionView](subscriptionview.md)
+- [struct SubscriptionView](./subscriptionview.md)
   A view that subscribes to a publisher with an action.
-- [struct TupleView](tupleview.md)
+- [struct TupleView](./tupleview.md)
   A View created from a swift tuple of View values.
 
 

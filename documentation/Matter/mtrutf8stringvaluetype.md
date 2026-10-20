@@ -1,7 +1,8 @@
 # MTRUTF8StringValueType
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRUTF8StringValueType: String
+```
+
+```c
+extern NSString * const MTRUTF8StringValueType;
 ```
 
 

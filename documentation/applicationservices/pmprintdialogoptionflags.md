@@ -1,7 +1,8 @@
 # PMPrintDialogOptionFlags
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias PMPrintDialogOptionFlags = OptionBits
+```
+
+```c
+typedef OptionBits PMPrintDialogOptionFlags;
 ```
 
 

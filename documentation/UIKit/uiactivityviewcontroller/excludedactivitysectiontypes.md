@@ -1,7 +1,8 @@
 # excludedActivitySectionTypes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Hides some sections of the activity view controller. Default is none
 
@@ -17,13 +18,18 @@ Hides some sections of the activity view controller. Default is none
 var excludedActivitySectionTypes: UIActivitySectionTypes { get set }
 ```
 
+```objc
+@property (nonatomic) UIActivitySectionTypes excludedActivitySectionTypes;
+```
+
 ## Mentions
 
-- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+- [Collaborating and sharing copies of your data](../collaborating-and-sharing-copies-of-your-data.md)
 
 ## See Also
 
-- [struct UIActivitySectionTypes](uiactivitysectiontypes.md)
+### Excluding specific sections
+- [struct UIActivitySectionTypes](../uiactivitysectiontypes.md)
 
 
 ---

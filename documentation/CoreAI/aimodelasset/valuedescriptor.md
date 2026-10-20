@@ -1,7 +1,8 @@
 # AIModelAsset.ValueDescriptor
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of a function’s input or output value.
 
@@ -21,26 +22,27 @@ struct ValueDescriptor
 ## Topics
 
 ### Inspecting value details
-- [var name: String](aimodelasset/valuedescriptor/name.md)
+- [var name: String](./valuedescriptor/name.md)
   The value’s name.
-- [var typeName: String](aimodelasset/valuedescriptor/typename.md)
+- [var typeName: String](./valuedescriptor/typename.md)
   The value’s type name.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AIModelAsset.FunctionDescriptor](aimodelasset/functiondescriptor.md)
+### Supporting types
+- [AIModelAsset.FunctionDescriptor](./functiondescriptor.md)
   A description of a function in the model’s program.
-- [AIModelAsset.Metadata](aimodelasset/metadata-swift.struct.md)
+- [AIModelAsset.Metadata](./metadata-swift.struct.md)
   The metadata for a model asset, including author, license, and custom key-value pairs.
-- [AIModelAsset.Summary](aimodelasset/summary.md)
+- [AIModelAsset.Summary](./summary.md)
   A summary of a model’s structure and statistics.
 
 

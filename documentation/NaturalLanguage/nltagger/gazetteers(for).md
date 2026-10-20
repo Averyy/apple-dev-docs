@@ -1,7 +1,8 @@
 # gazetteers(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the gazetteers attached to a tag scheme.
 
@@ -20,9 +21,13 @@ Retrieves the gazetteers attached to a tag scheme.
 func gazetteers(for tagScheme: NLTagScheme) -> [NLGazetteer]
 ```
 
+```objc
+- (NSArray<NLGazetteer *> *) gazetteersForTagScheme:(NLTagScheme) tagScheme;
+```
+
 #### Return Value
 
-An array of [`NLGazetteer`](nlgazetteer.md).
+An array of [`NLGazetteer`](../nlgazetteer.md).
 
 ## Parameters
 
@@ -30,9 +35,10 @@ An array of [`NLGazetteer`](nlgazetteer.md).
 
 ## See Also
 
-- [func setGazetteers([NLGazetteer], for: NLTagScheme)](nltagger/setgazetteers(_:for:).md)
+### Using gazetteers with a tagger
+- [func setGazetteers([NLGazetteer], for: NLTagScheme)](./setgazetteers%28_,for%29.md)
   Attaches gazetteers to a tag scheme, typically one gazetteer per language or one language-independent gazetteer.
-- [class NLGazetteer](nlgazetteer.md)
+- [class NLGazetteer](../nlgazetteer.md)
   A collection of terms and their labels, which take precedence over a word tagger.
 
 

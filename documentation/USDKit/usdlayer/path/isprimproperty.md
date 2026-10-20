@@ -1,7 +1,8 @@
 # isPrimProperty
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the path is a property on a prim, as opposed to one on a relationship target.
 

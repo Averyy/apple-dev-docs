@@ -1,7 +1,8 @@
 # options
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,13 +14,18 @@
 var options: IOUSBHostIsochronousTransactionOptions
 ```
 
+```c
+IOUSBHostIsochronousTransactionOptions options;
+```
+
 ## See Also
 
-- [var completeCount: UInt32](iousbhostisochronoustransaction/completecount.md)
-- [var offset: UInt32](iousbhostisochronoustransaction/offset.md)
-- [var requestCount: UInt32](iousbhostisochronoustransaction/requestcount.md)
-- [var status: IOReturn](iousbhostisochronoustransaction/status.md)
-- [var timeStamp: IOUSBHostTime](iousbhostisochronoustransaction/timestamp.md)
+### Instance Properties
+- [var completeCount: UInt32](./completecount.md)
+- [var offset: UInt32](./offset.md)
+- [var requestCount: UInt32](./requestcount.md)
+- [var status: IOReturn](./status.md)
+- [var timeStamp: IOUSBHostTime](./timestamp.md)
 
 
 ---

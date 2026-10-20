@@ -1,7 +1,8 @@
 # eventRef
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque Carbon type associated with this event.
 
@@ -14,6 +15,10 @@ An opaque Carbon type associated with this event.
 var eventRef: UnsafeRawPointer? { get }
 ```
 
+```objc
+@property (readonly, nullable) const void * eventRef;
+```
+
 #### Discussion
 
 This method is valid for all types of events. The `EventRef` object is retained by the receiver, so it is valid as long as the `NSEvent` object is valid, and is released when the `NSEvent` object is freed. You can use `RetainEvent(_:)` to extend the lifetime of the `EventRef` object, with a corresponding `ReleaseEvent(_:)` when you are done with it.
@@ -22,21 +27,23 @@ The system typically creates user-input events with an associated `EventRef`. Ot
 
 ## See Also
 
-- [init?(eventRef: UnsafeRawPointer)](nsevent/init(eventref:).md)
+### Related Documentation
+- [init?(eventRef: UnsafeRawPointer)](./init%28eventref%29.md)
   Creates and returns a new event object for a Carbon event.
-- [var locationInWindow: NSPoint](nsevent/locationinwindow.md)
+### Getting general event information
+- [var locationInWindow: NSPoint](./locationinwindow.md)
   The event location in the base coordinate system of the associated window.
-- [var timestamp: TimeInterval](nsevent/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the event occurred in seconds since system startup.
-- [var window: NSWindow?](nsevent/window.md)
+- [var window: NSWindow?](./window.md)
   The window object associated with the event.
-- [var windowNumber: Int](nsevent/windownumber.md)
+- [var windowNumber: Int](./windownumber.md)
   The identifier for the window device associated with the event.
-- [var cgEvent: CGEvent?](nsevent/cgevent.md)
+- [var cgEvent: CGEvent?](./cgevent.md)
   The Core Graphics event object corresponding to this event.
-- [class var foreverDuration: TimeInterval](nsevent/foreverduration.md)
+- [class var foreverDuration: TimeInterval](./foreverduration.md)
   The longest time duration possible.
-- [var context: NSGraphicsContext?](nsevent/context.md)
+- [var context: NSGraphicsContext?](./context.md)
   The display graphics context for this event.
 
 

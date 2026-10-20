@@ -6,7 +6,7 @@ Defines profile location kinds.
 
 #### Overview
 
-Your application specifies the location for a profile using a profile location structure of type [`CMProfileLocation`](cmprofilelocation.md). A ColorSync profile that you open or create is typically stored in one of the following locations:
+Your application specifies the location for a profile using a profile location structure of type [`CMProfileLocation`](../cmprofilelocation.md). A ColorSync profile that you open or create is typically stored in one of the following locations:
 
 -  In a disk file. The `u` field (a union) of the profile location data structure contains a file specification for a profile that is disk-file based. This is the most common way to store a ColorSync profile. 
 -  In relocatable memory. The `u` field of the profile location data structure contains a handle specification for a profile that is stored in a handle. 
@@ -26,10 +26,10 @@ Your application identifies the type of data the `CMProfileLocation ``u` field h
 ## Topics
 
 ### Constants
-- [var cmNoProfileBase: Int](cmnoprofilebase.md)
+- [var cmNoProfileBase: Int](../cmnoprofilebase.md)
   The profile is temporary. It will not persist in memory after its use for a color session. You can specify this type of profile location with the `CMNewProfile` and the `CMCopyProfile` functions.
-- [var cmPathBasedProfile: Int](cmpathbasedprofile.md)
-- [var cmBufferBasedProfile: Int](cmbufferbasedprofile.md)
+- [var cmPathBasedProfile: Int](../cmpathbasedprofile.md)
+- [var cmBufferBasedProfile: Int](../cmbufferbasedprofile.md)
 
 
 ---

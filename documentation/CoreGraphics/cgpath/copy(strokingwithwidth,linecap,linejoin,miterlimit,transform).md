@@ -1,7 +1,8 @@
 # copy(strokingWithWidth:lineCap:lineJoin:miterLimit:transform:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new path equivalent to the results of drawing the path with a solid stroke.
 
@@ -31,22 +32,23 @@ The new path is created so that filling the new path draws the same pixels as st
 ## Parameters
 
 - `lineWidth`: The line width to use, in user space units. The value must be greater than `0`.
-- `lineCap`: The line cap style to render. (For equivalent [`CGContext`](cgcontext.md) drawing methods, the default style is [`CGLineCap.butt`](cglinecap/butt.md).)
-- `lineJoin`: The line join style to render. (For equivalent [`CGContext`](cgcontext.md) drawing methods, the default style is [`CGLineJoin.miter`](cglinejoin/miter.md).)
-- `miterLimit`: A value that limits how sharp individual corners in the path can be when using the [`CGLineJoin.miter`](cglinejoin/miter.md) line join style. When the ratio of a the length required for a mitered corner to the line width exceeds this value, that corner uses the [`CGLineJoin.bevel`](cglinejoin/bevel.md) style instead.
-- `transform`: An affine transform to apply to the path before dashing. Defaults to the [`CGAffineTransformIdentity`](cgaffinetransformidentity.md) transform if not specified.
+- `lineCap`: The line cap style to render. (For equivalent [`CGContext`](../cgcontext.md) drawing methods, the default style is [`CGLineCap.butt`](../cglinecap/butt.md).)
+- `lineJoin`: The line join style to render. (For equivalent [`CGContext`](../cgcontext.md) drawing methods, the default style is [`CGLineJoin.miter`](../cglinejoin/miter.md).)
+- `miterLimit`: A value that limits how sharp individual corners in the path can be when using the [`CGLineJoin.miter`](../cglinejoin/miter.md) line join style. When the ratio of a the length required for a mitered corner to the line width exceeds this value, that corner uses the [`CGLineJoin.bevel`](../cglinejoin/bevel.md) style instead.
+- `transform`: An affine transform to apply to the path before dashing. Defaults to the [`CGAffineTransformIdentity`](../cgaffinetransformidentity.md) transform if not specified.
 
 ## See Also
 
-- [func copy() -> CGPath?](cgpath/copy.md)
+### Copying a Graphics Path
+- [func copy() -> CGPath?](./copy%28%29.md)
   Creates an immutable copy of a graphics path.
-- [func copy(using: UnsafePointer<CGAffineTransform>?) -> CGPath?](cgpath/copy(using:).md)
+- [func copy(using: UnsafePointer<CGAffineTransform>?) -> CGPath?](./copy%28using%29.md)
   Creates an immutable copy of a graphics path transformed by a transformation matrix.
-- [func copy(dashingWithPhase: CGFloat, lengths: [CGFloat], transform: CGAffineTransform) -> CGPath](cgpath/copy(dashingwithphase:lengths:transform:).md)
+- [func copy(dashingWithPhase: CGFloat, lengths: [CGFloat], transform: CGAffineTransform) -> CGPath](./copy%28dashingwithphase,lengths,transform%29.md)
   Returns a new path equivalent to the results of drawing the path with a dashed stroke.
-- [func mutableCopy() -> CGMutablePath?](cgpath/mutablecopy.md)
+- [func mutableCopy() -> CGMutablePath?](./mutablecopy%28%29.md)
   Creates a mutable copy of an existing graphics path.
-- [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](cgpath/mutablecopy(using:).md)
+- [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](./mutablecopy%28using%29.md)
   Creates a mutable copy of a graphics path transformed by a transformation matrix.
 
 

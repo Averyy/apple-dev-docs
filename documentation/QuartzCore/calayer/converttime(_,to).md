@@ -1,7 +1,8 @@
 # convertTime(_:to:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the time interval from the receiver’s time space to the specified layer’s time space
 
@@ -19,13 +20,17 @@ Converts the time interval from the receiver’s time space to the specified lay
 func convertTime(_ t: CFTimeInterval, to l: CALayer?) -> CFTimeInterval
 ```
 
+```objc
+- (CFTimeInterval) convertTime:(CFTimeInterval) t toLayer:(CALayer *) l;
+```
+
 #### Return Value
 
 The time interval converted to the time space of `layer`.
 
 #### Discussion
 
-The following code shows the creation of two layers, `layer` and `offsetSlowMoLayer`. `offsetSlowMoLayer` has an offset time of 1 second and its [`speed`](camediatiming/speed.md) is set to `0.5`.  The last line converts and prints a time interval of 0.5 seconds converted from the time space of `layer` to the time space of `offsetSlowMoLayer`.
+The following code shows the creation of two layers, `layer` and `offsetSlowMoLayer`. `offsetSlowMoLayer` has an offset time of 1 second and its [`speed`](../camediatiming/speed.md) is set to `0.5`.  The last line converts and prints a time interval of 0.5 seconds converted from the time space of `layer` to the time space of `offsetSlowMoLayer`.
 
 ```swift
 let layer = CALayer()
@@ -44,15 +49,16 @@ print(layer.convertTime(CFTimeInterval(0.5), to: offsetSlowMoLayer)) // prints 1
 
 ## See Also
 
-- [func convert(CGPoint, from: CALayer?) -> CGPoint](calayer/convert(_:from:)-8kl76.md)
+### Mapping between coordinate and time spaces
+- [func convert(CGPoint, from: CALayer?) -> CGPoint](./convert%28_,from%29-8kl76.md)
   Converts the point from the specified layer’s coordinate system to the receiver’s coordinate system.
-- [func convert(CGPoint, to: CALayer?) -> CGPoint](calayer/convert(_:to:)-7dcke.md)
+- [func convert(CGPoint, to: CALayer?) -> CGPoint](./convert%28_,to%29-7dcke.md)
   Converts the point from the receiver’s coordinate system to the specified layer’s coordinate system.
-- [func convert(CGRect, from: CALayer?) -> CGRect](calayer/convert(_:from:)-4kx9l.md)
+- [func convert(CGRect, from: CALayer?) -> CGRect](./convert%28_,from%29-4kx9l.md)
   Converts the rectangle from the specified layer’s coordinate system to the receiver’s coordinate system.
-- [func convert(CGRect, to: CALayer?) -> CGRect](calayer/convert(_:to:)-tly5.md)
+- [func convert(CGRect, to: CALayer?) -> CGRect](./convert%28_,to%29-tly5.md)
   Converts the rectangle from the receiver’s coordinate system to the specified layer’s coordinate system.
-- [func convertTime(CFTimeInterval, from: CALayer?) -> CFTimeInterval](calayer/converttime(_:from:).md)
+- [func convertTime(CFTimeInterval, from: CALayer?) -> CFTimeInterval](./converttime%28_,from%29.md)
   Converts the time interval from the specified layer’s time space to the receiver’s time space.
 
 

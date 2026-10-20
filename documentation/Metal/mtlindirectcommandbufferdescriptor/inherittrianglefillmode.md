@@ -1,7 +1,8 @@
 # inheritTriangleFillMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures whether the indirect command buffer inherits the triangle fill mode from the encoder.
 
@@ -19,9 +20,13 @@ Configures whether the indirect command buffer inherits the triangle fill mode f
 var inheritTriangleFillMode: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL inheritTriangleFillMode;
+```
+
 #### Discussion
 
-The property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The property’s default value is [`true`](../../Swift/true.md).
 
 
 ---

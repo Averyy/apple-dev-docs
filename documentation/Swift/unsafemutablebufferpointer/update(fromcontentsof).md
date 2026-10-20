@@ -1,7 +1,8 @@
 # update(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the buffer’s initialized memory with every element of the source.
 
@@ -32,7 +33,7 @@ The returned index is one past the index of the last element updated. If `source
 
 > **Note**: The memory regions referenced by `source` and this buffer may overlap.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 ## Parameters
 

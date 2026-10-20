@@ -1,20 +1,27 @@
 # endAccessing(identifier:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Terminates access to a model collection.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- visionOS 1.0+ - Deprecated in 1.1
+
+> **Deprecated**: Use [Background Assets](../../BackgroundAssets/BackgroundAssets.md) or [`URLSession`](../../Foundation/urlsession.md) instead.
 
 ## Declaration
 
 ```swift
 class func endAccessing(identifier: String) async throws -> Bool
+```
+
+```objc
++ (void) endAccessingModelCollectionWithIdentifier:(NSString *) identifier completionHandler:(void (^)(BOOL success, NSError *error)) completionHandler;
 ```
 
 #### Discussion

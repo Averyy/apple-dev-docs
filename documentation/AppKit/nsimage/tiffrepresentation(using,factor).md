@@ -1,17 +1,22 @@
 # tiffRepresentation(using:factor:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a data object that contains TIFF data with the specified compression settings for all of the image representations in the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func tiffRepresentation(using comp: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?
+```
+
+```objc
+- (NSData *) TIFFRepresentationUsingCompression:(NSTIFFCompression) comp factor:(float) factor;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ You can use the returned data object to write the TIFF data to a file. If the sp
 
 If one of the receiver’s image representations does not support the creation of TIFF data natively (PDF and EPS images, for example), this method creates the TIFF data from that representation’s cached content.
 
-Additional image formats can be saved by using the `NSBitmapImageRep` method [`representation(using:properties:)`](nsbitmapimagerep/representation(using:properties:).md).
+Additional image formats can be saved by using the `NSBitmapImageRep` method [`representation(using:properties:)`](../nsbitmapimagerep/representation%28using,properties%29.md).
 
 ## Parameters
 
@@ -33,13 +38,15 @@ Additional image formats can be saved by using the `NSBitmapImageRep` method [`r
 
 ## See Also
 
-- [func representation(using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](nsbitmapimagerep/representation(using:properties:).md)
+### Related Documentation
+- [func representation(using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](../nsbitmapimagerep/representation%28using,properties%29.md)
   Formats the bitmap representation’s image data using the specified storage type and properties and returns it in a data object.
-- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](nsbitmapimagerep/tiffrepresentation(using:factor:).md)
+- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](../nsbitmapimagerep/tiffrepresentation%28using,factor%29.md)
   Returns a TIFF representation of the image using the specified compression.
-- [var tiffRepresentation: Data?](nsbitmapimagerep/tiffrepresentation.md)
+- [var tiffRepresentation: Data?](../nsbitmapimagerep/tiffrepresentation.md)
   A TIFF representation of the bitmap image data.
-- [var tiffRepresentation: Data?](nsimage/tiffrepresentation.md)
+### Producing TIFF Data for Images
+- [var tiffRepresentation: Data?](./tiffrepresentation.md)
   A data object containing TIFF data for all of the image representations in the image.
 
 

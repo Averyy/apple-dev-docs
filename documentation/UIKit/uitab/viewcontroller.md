@@ -1,7 +1,8 @@
 # viewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that the system presents when someone selects a tab.
 
@@ -18,17 +19,22 @@ The view controller that the system presents when someone selects a tab.
 var viewController: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIViewController * viewController;
+```
+
 ## See Also
 
-- [var title: String](uitab/title.md)
+### Accessing a tab’s appearance
+- [var title: String](./title.md)
   A tab’s title.
-- [var subtitle: String?](uitab/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A tab’s subtitle.
-- [var identifier: String](uitab/identifier.md)
+- [var identifier: String](./identifier.md)
   A string identifier for a tab.
-- [var image: UIImage?](uitab/image.md)
+- [var image: UIImage?](./image.md)
   A tab’s image.
-- [var badgeValue: String?](uitab/badgevalue.md)
+- [var badgeValue: String?](./badgevalue.md)
   A tab’s badge value.
 
 

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Speech  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 17.0+

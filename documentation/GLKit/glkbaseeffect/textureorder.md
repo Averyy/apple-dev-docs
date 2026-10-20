@@ -1,15 +1,18 @@
 # textureOrder
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which textures are applied to rendered primitives.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,9 +20,13 @@ The order in which textures are applied to rendered primitives.
 var textureOrder: [GLKEffectPropertyTexture]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<GLKEffectPropertyTexture *> * textureOrder;
+```
+
 #### Discussion
 
-The value of this property should be an array whose contents are all [`GLKEffectPropertyTexture`](glkeffectpropertytexture.md) objects provided by the effect. The order of these objects in the array determines the order in which the textures are applied in the shader. For example, to reverse the order that the textures are applied to a scene, your application would use the following code:
+The value of this property should be an array whose contents are all [`GLKEffectPropertyTexture`](../glkeffectpropertytexture.md) objects provided by the effect. The order of these objects in the array determines the order in which the textures are applied in the shader. For example, to reverse the order that the textures are applied to a scene, your application would use the following code:
 
 ```objc
 baseEffect.textureOrder = [NSArray arrayWithObjects: baseEffect.texture2d1, baseEffect.texture2d0, nil];
@@ -29,9 +36,10 @@ The default value is an array that executes the texture stages in increasing ord
 
 ## See Also
 
-- [var texture2d0: GLKEffectPropertyTexture](glkbaseeffect/texture2d0.md)
+### Configuring Textures
+- [var texture2d0: GLKEffectPropertyTexture](./texture2d0.md)
   The properties for the first texture.
-- [var texture2d1: GLKEffectPropertyTexture](glkbaseeffect/texture2d1.md)
+- [var texture2d1: GLKEffectPropertyTexture](./texture2d1.md)
   The properties for the second texture.
 
 

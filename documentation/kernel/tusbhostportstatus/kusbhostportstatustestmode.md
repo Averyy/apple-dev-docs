@@ -1,7 +1,8 @@
 # kUSBHostPortStatusTestMode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The test mode port status.
 
@@ -10,7 +11,7 @@ The test mode port status.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusTestMode = kIOUSBHostPortStatusTestMode
 ```
 

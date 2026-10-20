@@ -1,7 +1,8 @@
 # ScrollPosition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the semantic position of where a scroll view is scrolled within its content.
 
@@ -22,7 +23,7 @@ struct ScrollPosition
 
 #### Overview
 
-Use this type along with the [`scrollPosition(_:anchor:)`](view/scrollposition(_:anchor:).md) modifier to control where a scroll view is positioned. You can use this type to scroll in a variety of ways:
+Use this type along with the [`scrollPosition(_:anchor:)`](./view/scrollposition%28_,anchor%29.md) modifier to control where a scroll view is positioned. You can use this type to scroll in a variety of ways:
 
 - scroll to a view with a provided identity
 - scroll to a concrete offset
@@ -34,7 +35,7 @@ You can create a scroll position with a specified view identity type
 @State private var position = ScrollPosition(idType: MyItem.ID.self)
 ```
 
-SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](scrollposition/viewid.md) property as the user scrolls. Use the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to configure which layout contains your scroll targets.
+SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](./scrollposition/viewid.md) property as the user scrolls. Use the [`scrollTargetLayout(isEnabled:)`](./view/scrolltargetlayout%28isenabled%29.md) modifier to configure which layout contains your scroll targets.
 
 When scrolling to a view with an identifier, SwiftUI will update the position with the value of the top-most view scrolled within the visible region of the scroll view.
 
@@ -56,7 +57,7 @@ ScrollView {
 .scrollPosition($position)
 ```
 
-You can then query the currently scrolled id by using the [`viewID(type:)`](scrollposition/viewid(type:).md).
+You can then query the currently scrolled id by using the [`viewID(type:)`](./scrollposition/viewid%28type%29.md).
 
 ```swift
 let viewID: MyItem.ID = position.viewID(type: MyItem.ID.self)
@@ -97,74 +98,75 @@ ScrollView {
 .scrollPosition($position, anchor: .bottom)
 ```
 
-For example, providing a value of [`bottom`](unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
+For example, providing a value of [`bottom`](./unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
 
 If no anchor has been provided, SwiftUI will scroll the minimal amount when using the scroll position to programmatically scroll to a view.
 
 ## Topics
 
 ### Initializers
-- [init(id: some Hashable & Sendable, anchor: UnitPoint?)](scrollposition/init(id:anchor:).md)
+- [init(id: some Hashable & Sendable, anchor: UnitPoint?)](./scrollposition/init%28id,anchor%29.md)
   Creates a new scroll position to a view with a provided identity value.
-- [init(idType: (some Hashable & Sendable).Type)](scrollposition/init(idtype:).md)
+- [init(idType: (some Hashable & Sendable).Type)](./scrollposition/init%28idtype%29.md)
   Creates a new automatic scroll position.
-- [init(idType: (some Hashable & Sendable).Type, edge: Edge)](scrollposition/init(idtype:edge:).md)
+- [init(idType: (some Hashable & Sendable).Type, edge: Edge)](./scrollposition/init%28idtype,edge%29.md)
   Creates a new scroll position to be scrolled to the provided edge.
-- [init(idType: (some Hashable & Sendable).Type, point: CGPoint)](scrollposition/init(idtype:point:).md)
+- [init(idType: (some Hashable & Sendable).Type, point: CGPoint)](./scrollposition/init%28idtype,point%29.md)
   Creates a new scroll position to be scrolled to the provided point.
-- [init(idType: (some Hashable & Sendable).Type, x: CGFloat)](scrollposition/init(idtype:x:).md)
+- [init(idType: (some Hashable & Sendable).Type, x: CGFloat)](./scrollposition/init%28idtype,x%29.md)
   Creates a new scroll position to be scrolled to the provided y value.
-- [init(idType: (some Hashable & Sendable).Type, x: CGFloat, y: CGFloat)](scrollposition/init(idtype:x:y:).md)
+- [init(idType: (some Hashable & Sendable).Type, x: CGFloat, y: CGFloat)](./scrollposition/init%28idtype,x,y%29.md)
   Creates a new scroll position to be scrolled to the provided x value.
-- [init(idType: (some Hashable & Sendable).Type, y: CGFloat)](scrollposition/init(idtype:y:).md)
+- [init(idType: (some Hashable & Sendable).Type, y: CGFloat)](./scrollposition/init%28idtype,y%29.md)
   Creates a new scroll position to be scrolled to the provided y value.
 ### Instance Properties
-- [var edge: Edge?](scrollposition/edge.md)
+- [var edge: Edge?](./scrollposition/edge.md)
   The positioned edge of the scroll view if configured to be in that position.
-- [var isPositionedByUser: Bool](scrollposition/ispositionedbyuser.md)
+- [var isPositionedByUser: Bool](./scrollposition/ispositionedbyuser.md)
   Whether the scroll view has been positioned by the user.
-- [var point: CGPoint?](scrollposition/point.md)
+- [var point: CGPoint?](./scrollposition/point.md)
   The positioned point of the scroll view if configured to be in that position.
-- [var viewID: (any Hashable & Sendable)?](scrollposition/viewid.md)
+- [var viewID: (any Hashable & Sendable)?](./scrollposition/viewid.md)
   The type-erased id of the view positioned in the scroll view if configured to be in that position or the user has scrolled past a view with an id of matching type.
-- [var x: CGFloat?](scrollposition/x.md)
+- [var x: CGFloat?](./scrollposition/x.md)
   The positioned x value of the scroll view if configured to be in that position.
-- [var y: CGFloat?](scrollposition/y.md)
+- [var y: CGFloat?](./scrollposition/y.md)
   The positioned y value of the scroll view if configured to be in that position.
 ### Instance Methods
-- [func scrollTo(edge: Edge)](scrollposition/scrollto(edge:).md)
+- [func scrollTo(edge: Edge)](./scrollposition/scrollto%28edge%29.md)
   Scrolls the position of the scroll view to the edge you provide.
-- [func scrollTo(id: some Hashable & Sendable, anchor: UnitPoint?)](scrollposition/scrollto(id:anchor:).md)
+- [func scrollTo(id: some Hashable & Sendable, anchor: UnitPoint?)](./scrollposition/scrollto%28id,anchor%29.md)
   Scrolls the position of the scroll view to a view with a identity value and anchor you provide.
-- [func scrollTo(point: CGPoint)](scrollposition/scrollto(point:).md)
+- [func scrollTo(point: CGPoint)](./scrollposition/scrollto%28point%29.md)
   Scrolls the position of the scroll view to the point you provide.
-- [func scrollTo(x: CGFloat)](scrollposition/scrollto(x:).md)
+- [func scrollTo(x: CGFloat)](./scrollposition/scrollto%28x%29.md)
   Scrolls the position of the scroll view to the x value you provide.
-- [func scrollTo(x: CGFloat, y: CGFloat)](scrollposition/scrollto(x:y:).md)
+- [func scrollTo(x: CGFloat, y: CGFloat)](./scrollposition/scrollto%28x,y%29.md)
   Scrolls the position of the scroll view to the x and y value you provide.
-- [func scrollTo(y: CGFloat)](scrollposition/scrollto(y:).md)
+- [func scrollTo(y: CGFloat)](./scrollposition/scrollto%28y%29.md)
   Scrolls the position of the scroll view to the y value you provide.
-- [func viewID<T>(type: T.Type) -> T?](scrollposition/viewid(type:).md)
+- [func viewID<T>(type: T.Type) -> T?](./scrollposition/viewid%28type%29.md)
   The id of the view positioned in the scroll view if configured to be in that position or the user has scrolled past a view with an id of matching type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](view/scrollposition(_:anchor:).md)
+### Managing scroll position
+- [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](./view/scrollposition%28_,anchor%29.md)
   Associates a binding to a scroll position with a scroll view within this view.
-- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](view/scrollposition(id:anchor:).md)
+- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](./view/scrollposition%28id,anchor%29.md)
   Associates a binding to be updated when a scroll view within this view scrolls.
-- [func defaultScrollAnchor(UnitPoint?) -> some View](view/defaultscrollanchor(_:).md)
+- [func defaultScrollAnchor(UnitPoint?) -> some View](./view/defaultscrollanchor%28_%29.md)
   Associates an anchor to control which part of the scroll view’s content should be rendered by default.
-- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](view/defaultscrollanchor(_:for:).md)
+- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](./view/defaultscrollanchor%28_,for%29.md)
   Associates an anchor to control the position of a scroll view in a particular circumstance.
-- [struct ScrollAnchorRole](scrollanchorrole.md)
+- [struct ScrollAnchorRole](./scrollanchorrole.md)
   A type defining the role of a scroll anchor.
 
 

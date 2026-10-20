@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inverse of the pose’s underlying matrix.
 

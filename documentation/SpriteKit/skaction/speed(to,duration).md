@@ -1,23 +1,28 @@
 # speed(to:duration:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that changes how fast the node executes actions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func speed(to speed: CGFloat, duration: TimeInterval) -> SKAction
+```
+
+```objc
++ (SKAction *) speedTo:(CGFloat) speed duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`speed`](sknode/speed.md) property animates to the new value.
+When the action executes, the node’s [`speed`](../sknode/speed.md) property animates to the new value.
 
 This action is not reversible; the reverse of this action has the same duration but does not change anything.
 
@@ -37,7 +42,8 @@ This action is not reversible; the reverse of this action has the same duration 
 
 ## See Also
 
-- [class func speed(by: CGFloat, duration: TimeInterval) -> SKAction](skaction/speed(by:duration:).md)
+### Controlling the Action’s Speed
+- [class func speed(by: CGFloat, duration: TimeInterval) -> SKAction](./speed%28by,duration%29.md)
   Creates an action that changes how fast the node executes actions by a relative value.
 
 

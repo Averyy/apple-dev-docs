@@ -1,7 +1,8 @@
 # UITab.Placement.optional
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The item doesn’t appear in the tab bar, but people can add it and move it.
 
@@ -18,19 +19,24 @@ The item doesn’t appear in the tab bar, but people can add it and move it.
 case optional
 ```
 
+```c
+UITabPlacementOptional
+```
+
 ## See Also
 
-- [UITab.Placement.automatic](uitab/placement/automatic.md)
+### Placement values
+- [UITab.Placement.automatic](./automatic.md)
   The system adds only top-level items to the tab bar, but people can add, remove, or move this item.
-- [UITab.Placement.default](uitab/placement/default.md)
+- [UITab.Placement.default](./default.md)
   The item appears in the tab bar, but people can move or remove it.
-- [UITab.Placement.fixed](uitab/placement/fixed.md)
+- [UITab.Placement.fixed](./fixed.md)
   The item appears in the tab bar’s leading edge, and people can’t move or remove it.
-- [UITab.Placement.movable](uitab/placement/movable.md)
+- [UITab.Placement.movable](./movable.md)
   The item appears in the tab bar, people can move it but can’t remove it.
-- [UITab.Placement.pinned](uitab/placement/pinned.md)
+- [UITab.Placement.pinned](./pinned.md)
   The item appears as a pinned tab, on the trailing edge of the tab bar.
-- [UITab.Placement.sidebarOnly](uitab/placement/sidebaronly.md)
+- [UITab.Placement.sidebarOnly](./sidebaronly.md)
   The item only appears in the sidebar.
 
 

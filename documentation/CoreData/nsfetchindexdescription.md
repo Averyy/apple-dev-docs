@@ -1,7 +1,8 @@
 # NSFetchIndexDescription
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The description of the index.
 
@@ -20,42 +21,47 @@ The description of the index.
 class NSFetchIndexDescription
 ```
 
+```objc
+@interface NSFetchIndexDescription : NSObject
+```
+
 ## Topics
 
 ### Creating an Index Description
-- [init(name: String, elements: [NSFetchIndexElementDescription]?)](nsfetchindexdescription/init(name:elements:).md)
+- [init(name: String, elements: [NSFetchIndexElementDescription]?)](./nsfetchindexdescription/init%28name,elements%29.md)
   Creates a fetch index description using the specified name and element descriptions.
 ### Inspecting an Index Description
-- [var elements: [NSFetchIndexElementDescription]](nsfetchindexdescription/elements.md)
+- [var elements: [NSFetchIndexElementDescription]](./nsfetchindexdescription/elements.md)
   An array of fetch index element descriptions.
-- [var entity: NSEntityDescription?](nsfetchindexdescription/entity.md)
+- [var entity: NSEntityDescription?](./nsfetchindexdescription/entity.md)
   The entity description for the fetch index description.
-- [var name: String](nsfetchindexdescription/name.md)
+- [var name: String](./nsfetchindexdescription/name.md)
   The name of the fetch index description.
-- [var partialIndexPredicate: NSPredicate?](nsfetchindexdescription/partialindexpredicate.md)
+- [var partialIndexPredicate: NSPredicate?](./nsfetchindexdescription/partialindexpredicate.md)
   A predicate that selects rows for indexing, if the index is a partial index.
 ### Initializers
-- [init?(coder: NSCoder)](nsfetchindexdescription/init(coder:).md)
+- [init?(coder: NSCoder)](./nsfetchindexdescription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum NSFetchIndexElementType](nsfetchindexelementtype.md)
+### Working with indexes
+- [enum NSFetchIndexElementType](./nsfetchindexelementtype.md)
   Defines the possible types of index elements.
-- [class NSFetchIndexElementDescription](nsfetchindexelementdescription.md)
+- [class NSFetchIndexElementDescription](./nsfetchindexelementdescription.md)
   Description of an Index Element
 
 

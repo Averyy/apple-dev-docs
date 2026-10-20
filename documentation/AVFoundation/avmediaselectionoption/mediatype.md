@@ -1,7 +1,8 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type of the media data.
 
@@ -20,15 +21,20 @@ The media type of the media data.
 var mediaType: AVMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVMediaType mediaType;
+```
+
 #### Discussion
 
-The value of the property might be, for example, [`audio`](avmediatype/audio.md) or [`subtitle`](avmediatype/subtitle.md).
+The value of the property might be, for example, [`audio`](../avmediatype/audio.md) or [`subtitle`](../avmediatype/subtitle.md).
 
 ## See Also
 
-- [var mediaSubTypes: [NSNumber]](avmediaselectionoption/mediasubtypes.md)
+### Accessing media information
+- [var mediaSubTypes: [NSNumber]](./mediasubtypes.md)
   The media sub-types of the media data associated with the option.
-- [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](avmediaselectionoption/hasmediacharacteristic(_:).md)
+- [func hasMediaCharacteristic(AVMediaCharacteristic) -> Bool](./hasmediacharacteristic%28_%29.md)
   Returns a Boolean value that indicates whether the receiver has media with the given media characteristic.
 
 

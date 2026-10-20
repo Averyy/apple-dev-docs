@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Field.phoneNumber
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A field for the customer’s phone number.
 

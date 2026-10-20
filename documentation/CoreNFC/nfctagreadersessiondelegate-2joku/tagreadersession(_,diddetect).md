@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the session detected NFC tags.
@@ -19,7 +20,7 @@ func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag])
 
 #### Discussion
 
-The polling options specified when creating an [`NFCTagReaderSession`](nfctagreadersession.md) object determine the types of tags that the session can detect.
+The polling options specified when creating an [`NFCTagReaderSession`](../nfctagreadersession.md) object determine the types of tags that the session can detect.
 
 ## Parameters
 

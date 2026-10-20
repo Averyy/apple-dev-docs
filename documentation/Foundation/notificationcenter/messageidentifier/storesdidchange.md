@@ -1,7 +1,8 @@
 # storesDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static var storesDidChange: NotificationCenter.BaseMessageIdentifier<NSPersistentStoreCoordinator.StoresDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSPersistentStoreCoordinator.StoresDidChangeMessage>`.
 
 
 ---

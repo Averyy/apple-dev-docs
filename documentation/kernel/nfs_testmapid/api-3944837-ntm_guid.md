@@ -1,14 +1,15 @@
 # ntm_guid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 guid_t ntm_guid;
 ```
 

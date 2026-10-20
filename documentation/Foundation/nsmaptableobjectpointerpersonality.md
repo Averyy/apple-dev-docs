@@ -1,9 +1,10 @@
 # NSMapTableObjectPointerPersonality
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
+Equivalent to [`objectPointerPersonality`](./nspointerfunctions/options/objectpointerpersonality.md).
 
 **Availability**:
 - iOS 6.0+
@@ -20,20 +21,25 @@ Equivalent to [`objectPointerPersonality`](nspointerfunctions/options/objectpoin
 var NSMapTableObjectPointerPersonality: NSPointerFunctions.Options { get }
 ```
 
+```c
+static const NSPointerFunctionsOptions NSMapTableObjectPointerPersonality;
+```
+
 ## See Also
 
-- [static var cStringPersonality: NSPointerFunctions.Options](nspointerfunctions/options/cstringpersonality.md)
+### Personality Options
+- [static var cStringPersonality: NSPointerFunctions.Options](./nspointerfunctions/options/cstringpersonality.md)
   Use a string hash and `strcmp`; C-string ‘`%s`’ style description.
-- [static var integerPersonality: NSPointerFunctions.Options](nspointerfunctions/options/integerpersonality.md)
+- [static var integerPersonality: NSPointerFunctions.Options](./nspointerfunctions/options/integerpersonality.md)
   Use unshifted value as hash and equality.
-- [static var objectPersonality: NSPointerFunctions.Options](nspointerfunctions/options/objectpersonality.md)
+- [static var objectPersonality: NSPointerFunctions.Options](./nspointerfunctions/options/objectpersonality.md)
   Use `hash` and `isEqual` methods for hashing and equality comparisons, use the `description` method for a description.
-- [static var objectPointerPersonality: NSPointerFunctions.Options](nspointerfunctions/options/objectpointerpersonality.md)
+- [static var objectPointerPersonality: NSPointerFunctions.Options](./nspointerfunctions/options/objectpointerpersonality.md)
   Use shifted pointer for the hash value and direct comparison to determine equality; use the `description` method for a description.
-- [static var opaquePersonality: NSPointerFunctions.Options](nspointerfunctions/options/opaquepersonality.md)
+- [static var opaquePersonality: NSPointerFunctions.Options](./nspointerfunctions/options/opaquepersonality.md)
   Use shifted pointer for the hash value and direct comparison to determine equality.
-- [static var structPersonality: NSPointerFunctions.Options](nspointerfunctions/options/structpersonality.md)
-  Use a memory hash and `memcmp` (using a size function that you must set—see [`sizeFunction`](nspointerfunctions/sizefunction.md)).
+- [static var structPersonality: NSPointerFunctions.Options](./nspointerfunctions/options/structpersonality.md)
+  Use a memory hash and `memcmp` (using a size function that you must set—see [`sizeFunction`](./nspointerfunctions/sizefunction.md)).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(significantAppUpdateTopic:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a permission question that asks parents or guardians for permission to continue using your app after a significant update.
 
@@ -18,17 +19,20 @@ Creates a permission question that asks parents or guardians for permission to c
 convenience init(significantAppUpdateTopic: Topic)
 ```
 
+Available when `Topic` is `SignificantAppUpdateTopic`.
+
 ## Parameters
 
 - `significantAppUpdateTopic`: The topic describing the significant update that requires permission.
 
 ## See Also
 
-- [convenience init(handle: CommunicationHandle)](permissionquestion/init(handle:).md)
+### Creating permission requests
+- [convenience init(handle: CommunicationHandle)](./init%28handle%29.md)
   Creates a permission question that asks parents or guardians for permission to communicate with a person.
-- [convenience init(handles: [CommunicationHandle])](permissionquestion/init(handles:).md)
+- [convenience init(handles: [CommunicationHandle])](./init%28handles%29.md)
   Creates a permission question that asks parents or guardians for permission to communicate with multiple people.
-- [convenience init(communicationTopic: Topic)](permissionquestion/init(communicationtopic:).md)
+- [convenience init(communicationTopic: Topic)](./init%28communicationtopic%29.md)
   Creates a permission question that asks parents or guardians for communication permission.
 
 

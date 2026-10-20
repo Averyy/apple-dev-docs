@@ -1,7 +1,8 @@
 # verticalBorderTop
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of lines in top vertical border.
 
@@ -10,7 +11,7 @@ Number of lines in top vertical border.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalBorderTop;
 ```
 

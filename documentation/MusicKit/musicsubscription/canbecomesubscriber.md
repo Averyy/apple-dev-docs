@@ -1,7 +1,8 @@
 # canBecomeSubscriber
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A capability that allows your app to present subscription offers for Apple Music.
 

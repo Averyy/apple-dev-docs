@@ -1,7 +1,8 @@
 # init(name:handler:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom action object with the specified name and handler.
 
@@ -14,9 +15,14 @@ Creates a custom action object with the specified name and handler.
 init(name: String, handler: (() -> Bool)? = nil)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name handler:(BOOL (^)()) handler;
+```
+
 ## See Also
 
-- [init(name: String, target: any NSObjectProtocol, selector: Selector)](nsaccessibilitycustomaction/init(name:target:selector:).md)
+### Creating a Custom Action
+- [init(name: String, target: any NSObjectProtocol, selector: Selector)](./init%28name,target,selector%29.md)
   Creates a custom action object with the specified name, target, and selector.
 
 

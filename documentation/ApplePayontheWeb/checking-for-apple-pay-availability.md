@@ -1,6 +1,7 @@
 # Checking for Apple Pay availability
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Use the Apple Pay JS API to check whether Apple Pay is available, to check whether a device has a payment credential provisioned in Wallet, and to determine when to display an Apple Pay button.
 
@@ -14,16 +15,16 @@ if (window.ApplePaySession) {
 }
 ```
 
-Next, check whether payments are possible. Call either the [`canMakePayments`](applepaysession/canmakepayments.md) or [`applePayCapabilities`](applepaysession/applepaycapabilities.md) methods, as follows:
+Next, check whether payments are possible. Call either the [`canMakePayments`](./applepaysession/canmakepayments.md) or [`applePayCapabilities`](./applepaysession/applepaycapabilities.md) methods, as follows:
 
-- **[`canMakePayments`](applepaysession/canmakepayments.md)**: This method verifies that the device is capable of making Apple Pay payments; it doesn’t verify that the person has a provisioned card for use with Apple Pay on the device. You can call this method at any time.
-- **[`applePayCapabilities`](applepaysession/applepaycapabilities.md)**: This method verifies both that the device is capable of making Apple Pay payments, and that the person has at least one provisioned card. This method asynchronously contacts the Apple Pay servers as part of the verification process. You can only call this method if you want to default to Apple Pay during your checkout flow, or if you want to add an Apple Pay button to your product detail page.
+- **[`canMakePayments`](./applepaysession/canmakepayments.md)**: This method verifies that the device is capable of making Apple Pay payments; it doesn’t verify that the person has a provisioned card for use with Apple Pay on the device. You can call this method at any time.
+- **[`applePayCapabilities`](./applepaysession/applepaycapabilities.md)**: This method verifies both that the device is capable of making Apple Pay payments, and that the person has at least one provisioned card. This method asynchronously contacts the Apple Pay servers as part of the verification process. You can only call this method if you want to default to Apple Pay during your checkout flow, or if you want to add an Apple Pay button to your product detail page.
 
-##### Verify Whether the Device Supports Apple Pay
+##### Verify whether the device supports Apple Pay
 
-According to the [`Apple Pay on the Web Acceptable Use Guidelines`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the [`applePayCapabilities`](applepaysession/applepaycapabilities.md) API and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](applepaysession/canmakepayments.md) instead.
+According to the [Apple Pay on the Web Acceptable Use Guidelines](https://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the [`applePayCapabilities`](./applepaysession/applepaycapabilities.md) API and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](./applepaysession/canmakepayments.md) instead.
 
-The [`applePayCapabilities`](applepaysession/applepaycapabilities.md) method asynchronously contacts Apple Pay servers as part of the verification process and returns the [`paymentCredentialStatus`](paymentcredentialstatusresponse/paymentcredentialstatus.md) of the device. This verifies on Safari and third-party browsers that the device is capable of making Apple Pay payments. It also verifies on Safari browsers that the device has at least one payment credential provisioned in Wallet. Depending on the response, you can determine if the device supports Apple Pay and whether to display an Apple Pay button.
+The [`applePayCapabilities`](./applepaysession/applepaycapabilities.md) method asynchronously contacts Apple Pay servers as part of the verification process and returns the [`paymentCredentialStatus`](./paymentcredentialstatusresponse/paymentcredentialstatus.md) of the device. This verifies on Safari and third-party browsers that the device is capable of making Apple Pay payments. It also verifies on Safari browsers that the device has at least one payment credential provisioned in Wallet. Depending on the response, you can determine if the device supports Apple Pay and whether to display an Apple Pay button.
 
 The following are possible return values:
 
@@ -55,7 +56,7 @@ The following code shows how to check that a payment method is available before 
   }
 ```
 
-##### Verify Apple Pay Availability in China
+##### Verify Apple Pay availability in China
 
 To provide Apple Pay on the web for customers in China, you must first verify compatibility by checking the browser’s `userAgent` string. This string provides information about the customer’s device and operating system.
 
@@ -70,21 +71,22 @@ For example, the following shows a user agent string received from Safari on an 
 Mozilla/5.0 (iPhone; CPU iPhone OS 11_2 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko)CriOS/64.0.3282.112 Mobile/15C202 Safari/604.1
 ```
 
-After verifying the person’s device type and iOS version, call [`canMakePayments`](applepaysession/canmakepayments.md) or [`applePayCapabilities`](applepaysession/applepaycapabilities.md) as shown earlier, and display the Apple Pay button if the call returns `paymentCredentialsAvailable`.
+After verifying the person’s device type and iOS version, call [`canMakePayments`](./applepaysession/canmakepayments.md) or [`applePayCapabilities`](./applepaysession/applepaycapabilities.md) as shown earlier, and display the Apple Pay button if the call returns `paymentCredentialsAvailable`.
 
-> **Note**:  Don’t display the Apple Pay button if the device is a Mac, if the iOS version is earlier than 11.2, or if the call to [`canMakePayments`](applepaysession/canmakepayments.md) returns `false`.
+> **Note**:  Don’t display the Apple Pay button if the device is a Mac, if the iOS version is earlier than 11.2, or if the call to [`canMakePayments`](./applepaysession/canmakepayments.md) returns `false`.
 
 ## See Also
 
-- [canMakePayments](applepaysession/canmakepayments.md)
+### Apple Pay availability
+- [canMakePayments](./applepaysession/canmakepayments.md)
   Indicates whether the device supports Apple Pay.
-- [applePayCapabilities](applepaysession/applepaycapabilities.md)
+- [applePayCapabilities](./applepaysession/applepaycapabilities.md)
   Indicates whether the device supports Apple Pay and whether the person has an active card in Wallet that qualifies for web payments.
-- [canMakePaymentsWithActiveCard](applepaysession/canmakepaymentswithactivecard.md)
+- [canMakePaymentsWithActiveCard](./applepaysession/canmakepaymentswithactivecard.md)
   Indicates whether the device supports Apple Pay and whether the user has an active card in Wallet.
-- [PaymentCredentialStatus](paymentcredentialstatus.md)
+- [PaymentCredentialStatus](./paymentcredentialstatus.md)
   Information about whether the device supports Apple Pay and the possible payment credentials the person has provisioned in Wallet.
-- [PaymentCredentialStatusResponse](paymentcredentialstatusresponse.md)
+- [PaymentCredentialStatusResponse](./paymentcredentialstatusresponse.md)
   The response for information about the device’s support for Apple Pay and the payment credential status.
 
 

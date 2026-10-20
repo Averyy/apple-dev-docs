@@ -1,7 +1,8 @@
 # SNError
 
 **Framework**: Sound Analysis  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error from the Sound Analysis framework.
 
@@ -23,40 +24,41 @@ struct SNError
 ## Topics
 
 ### Error Codes
-- [static var invalidModel: SNError.Code](snerror/invalidmodel.md)
+- [static var invalidModel: SNError.Code](./snerror/invalidmodel.md)
   An error that indicates the sound classifier’s underlying Core ML model is an invalid model type.
-- [static var invalidFormat: SNError.Code](snerror/invalidformat.md)
+- [static var invalidFormat: SNError.Code](./snerror/invalidformat.md)
   An error that indicates the audio data’s format isn’t valid.
-- [static var invalidFile: SNError.Code](snerror/invalidfile.md)
+- [static var invalidFile: SNError.Code](./snerror/invalidfile.md)
   An error that indicates an audio file is invalid.
-- [static var operationFailed: SNError.Code](snerror/operationfailed.md)
+- [static var operationFailed: SNError.Code](./snerror/operationfailed.md)
   An error that occurs when the framework fails to analyze audio.
-- [static var unknownError: SNError.Code](snerror/unknownerror.md)
+- [static var unknownError: SNError.Code](./snerror/unknownerror.md)
   An error that represents a failure that no other error handles.
 ### Error Information
-- [SNError.Code](snerror/code.md)
+- [SNError.Code](./snerror/code.md)
   The enumerated error codes that the Sound Analysis framework produces.
 ### Error Domain
-- [let SNErrorDomain: String](snerrordomain.md)
+- [let SNErrorDomain: String](./snerrordomain.md)
   A string that identifies the Sound Analysis error domain.
-- [static var errorDomain: String](snerror/errordomain.md)
+- [static var errorDomain: String](./snerror/errordomain.md)
   A statically accessible string that identifies the Sound Analysis error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SNError.Code](snerror/code.md)
+### Errors
+- [SNError.Code](./snerror/code.md)
   The enumerated error codes that the Sound Analysis framework produces.
-- [let SNErrorDomain: String](snerrordomain.md)
+- [let SNErrorDomain: String](./snerrordomain.md)
   A string that identifies the Sound Analysis error domain.
 
 

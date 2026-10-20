@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a roughness object from a custom material’s roughness property.
 
@@ -24,9 +25,10 @@ init(_ value: CustomMaterial.Roughness)
 
 ## See Also
 
-- [init(floatLiteral: Float)](physicallybasedmaterial/roughness-swift.struct/init(floatliteral:).md)
+### Creating a roughness object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an object from a single value.
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/roughness-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a roughness object from a color or texture.
 
 

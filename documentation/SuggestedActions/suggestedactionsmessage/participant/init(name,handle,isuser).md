@@ -1,7 +1,8 @@
 # init(name:handle:isUser:)
 
 **Framework**: Suggested Actions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a participant in a conversation.
 

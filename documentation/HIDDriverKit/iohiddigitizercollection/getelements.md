@@ -1,22 +1,24 @@
 # getElements
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSArray * getElements();
 ```
 
 ## See Also
 
-- [getParentCollection](iohiddigitizercollection/getparentcollection.md)
-- [addElement](iohiddigitizercollection/addelement.md)
+### Managing the Collection Elements
+- [getParentCollection](./getparentcollection.md)
+- [addElement](./addelement.md)
 
 
 ---

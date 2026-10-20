@@ -1,7 +1,8 @@
 # SecAuthenticationType.default
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the default authentication type.
 
@@ -13,6 +14,10 @@ Specifies the default authentication type.
 
 ```swift
 case `default`
+```
+
+```c
+kSecAuthenticationTypeDefault
 ```
 
 

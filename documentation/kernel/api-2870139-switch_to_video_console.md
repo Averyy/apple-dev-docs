@@ -1,14 +1,15 @@
 # switch_to_video_console
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 int switch_to_video_console(void);
 ```
 

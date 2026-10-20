@@ -1,7 +1,8 @@
 # vmsize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Indicates the number of bytes of virtual memory occupied by this segment. See also the description of `filesize`, below.
 
@@ -10,7 +11,7 @@ Indicates the number of bytes of virtual memory occupied by this segment. See al
 
 ## Declaration
 
-```swift
+```c
 uint64_t vmsize;
 ```
 

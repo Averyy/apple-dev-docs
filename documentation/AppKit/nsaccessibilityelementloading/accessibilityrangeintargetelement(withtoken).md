@@ -1,7 +1,8 @@
 # accessibilityRangeInTargetElement(withToken:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range that specifies the area of interest in text-based accessibility elements with the specified load token.
 
@@ -14,11 +15,16 @@ Returns the range that specifies the area of interest in text-based accessibilit
 optional func accessibilityRangeInTargetElement(withToken token: NSAccessibilityLoadingToken) -> NSRange
 ```
 
+```objc
+- (NSRange) accessibilityRangeInTargetElementWithToken:(NSAccessibilityLoadingToken) token;
+```
+
 ## See Also
 
-- [func accessibilityElement(withToken: NSAccessibilityLoadingToken) -> (any NSAccessibilityElementProtocol)?](nsaccessibilityelementloading/accessibilityelement(withtoken:).md)
+### Supporting Accessibility
+- [func accessibilityElement(withToken: NSAccessibilityLoadingToken) -> (any NSAccessibilityElementProtocol)?](./accessibilityelement%28withtoken%29.md)
   Loads the target accessibility element with the specified load token.
-- [typealias NSAccessibilityLoadingToken](nsaccessibilityloadingtoken.md)
+- [typealias NSAccessibilityLoadingToken](../nsaccessibilityloadingtoken.md)
   A token type for loading accessibility elements.
 
 

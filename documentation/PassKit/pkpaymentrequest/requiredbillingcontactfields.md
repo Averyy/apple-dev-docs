@@ -1,7 +1,8 @@
 # requiredBillingContactFields
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of fields that you need for a billing contact to process the transaction.
 
@@ -19,15 +20,20 @@ A list of fields that you need for a billing contact to process the transaction.
 var requiredBillingContactFields: Set<PKContactField> { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSSet<NSString *> * requiredBillingContactFields;
+```
+
 #### Discussion
 
-See [`PKContactField`](pkcontactfield.md) for the list of possible contact fields.
+See [`PKContactField`](../pkcontactfield.md) for the list of possible contact fields.
 
 ## See Also
 
-- [var requiredShippingContactFields: Set<PKContactField>](pkpaymentrequest/requiredshippingcontactfields.md)
+### Requesting billing and shipping contact fields
+- [var requiredShippingContactFields: Set<PKContactField>](./requiredshippingcontactfields.md)
   A list of fields that you need for a shipping contact to process the transaction.
-- [struct PKContactField](pkcontactfield.md)
+- [struct PKContactField](../pkcontactfield.md)
   The fields that describe a contact.
 
 

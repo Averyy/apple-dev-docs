@@ -1,7 +1,8 @@
 # metadataItem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata item to request a value for.
 
@@ -20,11 +21,16 @@ The metadata item to request a value for.
 weak var metadataItem: AVMetadataItem? { get }
 ```
 
+```objc
+@property (weak, readonly) AVMetadataItem * metadataItem;
+```
+
 ## See Also
 
-- [func respond(value: any NSCopying & NSObjectProtocol)](avmetadataitemvaluerequest/respond(value:).md)
+### Handling the response
+- [func respond(value: any NSCopying & NSObjectProtocol)](./respond%28value%29.md)
   Returns the metadata item’s value.
-- [func respond(error: any Error)](avmetadataitemvaluerequest/respond(error:).md)
+- [func respond(error: any Error)](./respond%28error%29.md)
   Returns an error when the system fails to load the value.
 
 

@@ -1,20 +1,23 @@
 # SMAuthorizedClients
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The Service Management clients authorized to add and remove tools.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `SMAuthorizedClients` (Clients allowed to add and remove tool)
+- **Type**: array of string 
 
 ## See Also
 
-- [SMPrivilegedExecutables](information-property-list/smprivilegedexecutables.md)
+### Service management
+- [SMPrivilegedExecutables](./smprivilegedexecutables.md)
   The Service Management tools owned by the app.
 
 

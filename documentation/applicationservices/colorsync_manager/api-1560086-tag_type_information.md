@@ -7,7 +7,7 @@ Defines a constant for 2.0 tag type information.
 ## Topics
 
 ### Constants
-- [var cmNumHeaderElements: Int](cmnumheaderelements.md)
+- [var cmNumHeaderElements: Int](../cmnumheaderelements.md)
 
 
 ---

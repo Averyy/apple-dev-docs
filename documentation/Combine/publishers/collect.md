@@ -1,7 +1,8 @@
 # Publishers.Collect
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that buffers items.
 
@@ -23,41 +24,42 @@ struct Collect<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a collect publisher
-- [init(upstream: Upstream)](publishers/collect/init(upstream:).md)
+- [init(upstream: Upstream)](./collect/init%28upstream%29.md)
   Creates a publisher that buffers items.
 ### Declaring supporting types
-- [Publishers.Collect.Output](publishers/collect/output.md)
+- [Publishers.Collect.Output](./collect/output.md)
   The kind of values published by this publisher.
-- [Publishers.Collect.Failure](publishers/collect/failure.md)
+- [Publishers.Collect.Failure](./collect/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/collect/upstream.md)
+- [let upstream: Upstream](./collect/upstream.md)
   The publisher that this publisher receives elements from.
 ### Comparing publishers
-- [static func == (Publishers.Collect<Upstream>, Publishers.Collect<Upstream>) -> Bool](publishers/collect/==(_:_:).md)
+- [static func == (Publishers.Collect<Upstream>, Publishers.Collect<Upstream>) -> Bool](./collect/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](publishers/collect/equatable-implementations.md)
+- [Equatable Implementations](./collect/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.CollectByCount](publishers/collectbycount.md)
+### Reducing elements
+- [Publishers.CollectByCount](./collectbycount.md)
   A publisher that buffers a maximum number of items.
-- [Publishers.CollectByTime](publishers/collectbytime.md)
+- [Publishers.CollectByTime](./collectbytime.md)
   A publisher that buffers and periodically publishes its items.
-- [Publishers.TimeGroupingStrategy](publishers/timegroupingstrategy.md)
+- [Publishers.TimeGroupingStrategy](./timegroupingstrategy.md)
   A strategy for collecting received elements.
-- [Publishers.IgnoreOutput](publishers/ignoreoutput.md)
+- [Publishers.IgnoreOutput](./ignoreoutput.md)
   A publisher that ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).
-- [Publishers.Reduce](publishers/reduce.md)
+- [Publishers.Reduce](./reduce.md)
   A publisher that applies a closure to all received elements and produces an accumulated value when the upstream publisher finishes.
-- [Publishers.TryReduce](publishers/tryreduce.md)
+- [Publishers.TryReduce](./tryreduce.md)
   A publisher that applies an error-throwing closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 
 

@@ -1,7 +1,8 @@
 # Font.Design
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A design to use for fonts.
 
@@ -23,32 +24,33 @@ enum Design
 ## Topics
 
 ### Getting font designs
-- [Font.Design.default](font/design/default.md)
-- [Font.Design.monospaced](font/design/monospaced.md)
-- [Font.Design.rounded](font/design/rounded.md)
-- [Font.Design.serif](font/design/serif.md)
+- [Font.Design.default](./design/default.md)
+- [Font.Design.monospaced](./design/monospaced.md)
+- [Font.Design.rounded](./design/rounded.md)
+- [Font.Design.serif](./design/serif.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](font/system(_:design:weight:).md)
+### Getting system fonts
+- [static func system(Font.TextStyle, design: Font.Design?, weight: Font.Weight?) -> Font](./system%28_,design,weight%29.md)
   Gets a system font that uses the specified style, design, and weight.
-- [Font.TextStyle](font/textstyle.md)
+- [Font.TextStyle](./textstyle.md)
   A dynamic text style to use for fonts.
-- [struct Weight](font/weight.md)
+- [struct Weight](./weight.md)
   A weight to use for fonts.
-- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](font/system(size:weight:design:)-697b2.md)
+- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](./system%28size,weight,design%29-697b2.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
-- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
+- [static func system(Font.TextStyle, design: Font.Design) -> Font](./system%28_,design%29.md)
   Gets a system font with the given text style and design.
-- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
+- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](./system%28size,weight,design%29-73a88.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 
 

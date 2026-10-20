@@ -1,7 +1,8 @@
 # Crypto
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface Crypto
 ```
 
 ## Topics
 
 ### Instance Properties
-- [subtle](crypto/2871327-subtle.md)
-- [webkitSubtle](crypto/1632149-webkitsubtle.md)
+- [subtle](./crypto/api-2871327-subtle.md)
+- [webkitSubtle](./crypto/api-1632149-webkitsubtle.md)
 ### Instance Methods
-- [getRandomValues](crypto/1633646-getrandomvalues.md)
+- [getRandomValues](./crypto/api-1633646-getrandomvalues.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # readAttributeMinLevel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMinLevel(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMinLevel() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMinLevelWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

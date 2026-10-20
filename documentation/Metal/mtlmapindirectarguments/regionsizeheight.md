@@ -1,17 +1,18 @@
 # regionSizeHeight
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the region, measured in tile coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The height of the region, measured in tile coordinates.
 var regionSizeHeight: UInt32
 ```
 
+```c
+uint32_t regionSizeHeight;
+```
+
 ## See Also
 
-- [var regionSizeWidth: UInt32](mtlmapindirectarguments/regionsizewidth.md)
+### Specifying region dimensions
+- [var regionSizeWidth: UInt32](./regionsizewidth.md)
   The width of the region, measured in tile coordinates.
-- [var regionSizeDepth: UInt32](mtlmapindirectarguments/regionsizedepth.md)
+- [var regionSizeDepth: UInt32](./regionsizedepth.md)
   The depth of the region, measured in tile coordinates.
 
 

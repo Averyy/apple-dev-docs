@@ -1,12 +1,13 @@
 # menu(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overridden by subclasses to return a context-sensitive pop-up menu for a given mouse-down event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Overridden by subclasses to return a context-sensitive pop-up menu for a given m
 func menu(for event: NSEvent) -> NSMenu?
 ```
 
+```objc
+- (NSMenu *) menuForEvent:(NSEvent *) event;
+```
+
 ## Mentions
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
+- [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
 
 #### Discussion
 
@@ -30,13 +35,15 @@ The default implementation returns the view’s normal menu.
 
 ## See Also
 
-- [var menu: NSMenu?](nsresponder/menu.md)
+### Related Documentation
+- [var menu: NSMenu?](../nsresponder/menu.md)
   Returns the responder’s menu.
-- [class var defaultMenu: NSMenu?](nsview/defaultmenu.md)
+### Managing Contextual Menus
+- [class var defaultMenu: NSMenu?](./defaultmenu.md)
   Overridden by subclasses to return the default pop-up menu for instances of the receiving class.
-- [func willOpenMenu(NSMenu, with: NSEvent)](nsview/willopenmenu(_:with:).md)
+- [func willOpenMenu(NSMenu, with: NSEvent)](./willopenmenu%28_,with%29.md)
   Called just before a contextual menu for a view is opened on screen.
-- [func didCloseMenu(NSMenu, with: NSEvent?)](nsview/didclosemenu(_:with:).md)
+- [func didCloseMenu(NSMenu, with: NSEvent?)](./didclosemenu%28_,with%29.md)
   Called after a contextual menu that was displayed from the receiving view has been closed.
 
 

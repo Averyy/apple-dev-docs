@@ -1,10 +1,11 @@
 # kBluetoothL2CAPFlushTimeoutUseExisting
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothL2CAPFlushTimeoutUseExisting: Int { get }
 ```
 
+```c
+kBluetoothL2CAPFlushTimeoutUseExisting
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPFlushTimeoutEnd: Int](kbluetoothl2capflushtimeoutend.md)
-- [var kBluetoothL2CAPFlushTimeoutForever: Int](kbluetoothl2capflushtimeoutforever.md)
-- [var kBluetoothL2CAPFlushTimeoutImmediate: Int](kbluetoothl2capflushtimeoutimmediate.md)
+### Constants
+- [var kBluetoothL2CAPFlushTimeoutEnd: Int](./kbluetoothl2capflushtimeoutend.md)
+- [var kBluetoothL2CAPFlushTimeoutForever: Int](./kbluetoothl2capflushtimeoutforever.md)
+- [var kBluetoothL2CAPFlushTimeoutImmediate: Int](./kbluetoothl2capflushtimeoutimmediate.md)
 
 
 ---

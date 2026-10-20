@@ -1,7 +1,8 @@
 # MaterialParameters.Texture
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,21 +21,21 @@ struct Texture
 ## Topics
 
 ### Structures
-- [MaterialParameters.Texture.Sampler](materialparameters/texture/sampler-swift.struct.md)
+- [MaterialParameters.Texture.Sampler](./texture/sampler-swift.struct.md)
 ### Initializers
-- [init(TextureResource)](materialparameters/texture/init(_:).md)
-- [init(TextureResource, sampler: MaterialParameters.Texture.Sampler)](materialparameters/texture/init(_:sampler:).md)
+- [init(TextureResource)](./texture/init%28_%29.md)
+- [init(TextureResource, sampler: MaterialParameters.Texture.Sampler)](./texture/init%28_,sampler%29.md)
 ### Instance Properties
-- [var resource: TextureResource](materialparameters/texture/resource.md)
-- [var sampler: MaterialParameters.Texture.Sampler](materialparameters/texture/sampler-swift.property.md)
-- [var swizzle: MTLTextureSwizzleChannels](materialparameters/texture/swizzle.md)
+- [var resource: TextureResource](./texture/resource.md)
+- [var sampler: MaterialParameters.Texture.Sampler](./texture/sampler-swift.property.md)
+- [var swizzle: MTLTextureSwizzleChannels](./texture/swizzle.md)
   Channel swizzle to use when RealityKit reads or samples from the texture.
-- [var uvIndex: Int](materialparameters/texture/uvindex.md)
+- [var uvIndex: Int](./texture/uvindex.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

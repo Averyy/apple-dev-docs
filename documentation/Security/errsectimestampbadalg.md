@@ -1,7 +1,8 @@
 # errSecTimestampBadAlg
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Found an unrecognized or unsupported algorithm identifier (AI) in timestamp.
 
@@ -18,6 +19,10 @@ Found an unrecognized or unsupported algorithm identifier (AI) in timestamp.
 
 ```swift
 var errSecTimestampBadAlg: OSStatus { get }
+```
+
+```c
+errSecTimestampBadAlg
 ```
 
 

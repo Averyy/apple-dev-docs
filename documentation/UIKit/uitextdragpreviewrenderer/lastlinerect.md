@@ -1,7 +1,8 @@
 # lastLineRect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding rectangle of the last line of text in the drag preview.
 
@@ -17,17 +18,22 @@ The bounding rectangle of the last line of text in the drag preview.
 var lastLineRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect lastLineRect;
+```
+
 #### Discussion
 
 The last line rectangle contains the last line of text in the drag preview that may be a partial line. This property can be a zero rectangle. The initial value is also not calculated until the first time it’s used.
 
 ## See Also
 
-- [var bodyRect: CGRect](uitextdragpreviewrenderer/bodyrect.md)
+### Getting and setting bounding rectangles
+- [var bodyRect: CGRect](./bodyrect.md)
   The bounding rectangle of the text in the middle of the drag preview.
-- [var firstLineRect: CGRect](uitextdragpreviewrenderer/firstlinerect.md)
+- [var firstLineRect: CGRect](./firstlinerect.md)
   The bounding rectangle of the first line of text in the drag preview.
-- [func adjust(firstLineRect: UnsafeMutablePointer<CGRect>, bodyRect: UnsafeMutablePointer<CGRect>, lastLineRect: UnsafeMutablePointer<CGRect>, textOrigin: CGPoint)](uitextdragpreviewrenderer/adjust(firstlinerect:bodyrect:lastlinerect:textorigin:).md)
+- [func adjust(firstLineRect: UnsafeMutablePointer<CGRect>, bodyRect: UnsafeMutablePointer<CGRect>, lastLineRect: UnsafeMutablePointer<CGRect>, textOrigin: CGPoint)](./adjust%28firstlinerect,bodyrect,lastlinerect,textorigin%29.md)
   Adjusts the size and origin of the bounding rectangles during a text drag operation.
 
 

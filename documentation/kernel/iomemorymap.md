@@ -1,7 +1,8 @@
 # IOMemoryMap
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A class defining common methods for describing a memory mapping.
 
@@ -10,7 +11,7 @@ A class defining common methods for describing a memory mapping.
 
 ## Declaration
 
-```swift
+```cpp
 class IOMemoryMap : OSObject
 ```
 
@@ -21,82 +22,83 @@ The IOMemoryMap object represents a mapped range of memory, described by a IOMem
 ## Topics
 
 ### Miscellaneous
-- [getAddress()](iomemorymap/1812407-getaddress.md)
+- [getAddress()](./iomemorymap/api-1812407-getaddress.md)
   Accessor to the length of the mapping.
-- [getAddressTask](iomemorymap/1812414-getaddresstask.md)
+- [getAddressTask](./iomemorymap/api-1812414-getaddresstask.md)
   Accessor to the task of the mapping.
-- [getLength](iomemorymap/1812419-getlength.md)
+- [getLength](./iomemorymap/api-1812419-getlength.md)
   Accessor to the length of the mapping.
-- [getMapOptions](iomemorymap/1812423-getmapoptions.md)
+- [getMapOptions](./iomemorymap/api-1812423-getmapoptions.md)
   Accessor to the options the mapping was created with.
-- [getMemoryDescriptor](iomemorymap/1812429-getmemorydescriptor.md)
+- [getMemoryDescriptor](./iomemorymap/api-1812429-getmemorydescriptor.md)
   Accessor to the IOMemoryDescriptor the mapping was created from.
-- [getPhysicalAddress](iomemorymap/1812435-getphysicaladdress.md)
+- [getPhysicalAddress](./iomemorymap/api-1812435-getphysicaladdress.md)
   Return the physical address of the first byte in the mapping.
-- [getPhysicalSegment](iomemorymap/1812443-getphysicalsegment.md)
+- [getPhysicalSegment](./iomemorymap/api-1812443-getphysicalsegment.md)
   Break a mapping into its physically contiguous segments.
-- [getSize()](iomemorymap/1812448-getsize.md)
+- [getSize()](./iomemorymap/api-1812448-getsize.md)
   Accessor to the length of the mapping.
-- [getVirtualAddress](iomemorymap/1812459-getvirtualaddress.md)
+- [getVirtualAddress](./iomemorymap/api-1812459-getvirtualaddress.md)
   Accessor to the virtual address of the first byte in the mapping.
-- [redirect](iomemorymap/1812465-redirect.md)
+- [redirect](./iomemorymap/api-1812465-redirect.md)
   Replace the memory mapped in a process with new backing memory.
-- [unmap](iomemorymap/1812474-unmap.md)
+- [unmap](./iomemorymap/api-1812474-unmap.md)
   Force the IOMemoryMap to unmap, without destroying the object.
 ### Instance Methods
-- [- getAddress](1441813-getaddress.md)
-- [- getSize](1441811-getsize.md)
-- [- Dispatch](iomemorymap/3180655-dispatch.md)
-- [- GetAddress](iomemorymap/3180656-getaddress.md)
+- [- getAddress](./api-1441813-getaddress.md)
+- [- getSize](./api-1441811-getsize.md)
+- [- Dispatch](./iomemorymap/api-3180655-dispatch.md)
+- [- GetAddress](./iomemorymap/api-3180656-getaddress.md)
   Returns the address of the memory block.
-- [- GetLength](iomemorymap/3180657-getlength.md)
+- [- GetLength](./iomemorymap/api-3180657-getlength.md)
   Returns the length of the memory block in bytes.
-- [- GetOffset](iomemorymap/3438204-getoffset.md)
+- [- GetOffset](./iomemorymap/api-3438204-getoffset.md)
   Returns the offset from the original start of the memory block.
-- [- free](iomemorymap/3180658-free.md)
+- [- free](./iomemorymap/api-3180658-free.md)
   Performs any final cleanup for the memory map object.
-- [- getAddressTask](iomemorymap/1441809-getaddresstask.md)
-- [- getLength](iomemorymap/1441789-getlength.md)
-- [- getMapOptions](iomemorymap/1441764-getmapoptions.md)
-- [- getMemoryDescriptor](iomemorymap/1441766-getmemorydescriptor.md)
-- [- getMetaClass](iomemorymap/1441792-getmetaclass.md)
-- [- getPhysicalAddress](iomemorymap/1441758-getphysicaladdress.md)
-- [- getPhysicalSegment](iomemorymap/1441817-getphysicalsegment.md)
-- [- getVirtualAddress](iomemorymap/1441843-getvirtualaddress.md)
-- [- redirect](iomemorymap/1442054-redirect.md)
-- [- taggedRelease](iomemorymap/1442001-taggedrelease.md)
-- [- taskDied](iomemorymap/1442092-taskdied.md)
-- [- unmap](iomemorymap/1441805-unmap.md)
-- [- wireRange](iomemorymap/1442050-wirerange.md)
+- [- getAddressTask](./iomemorymap/api-1441809-getaddresstask.md)
+- [- getLength](./iomemorymap/api-1441789-getlength.md)
+- [- getMapOptions](./iomemorymap/api-1441764-getmapoptions.md)
+- [- getMemoryDescriptor](./iomemorymap/api-1441766-getmemorydescriptor.md)
+- [- getMetaClass](./iomemorymap/api-1441792-getmetaclass.md)
+- [- getPhysicalAddress](./iomemorymap/api-1441758-getphysicaladdress.md)
+- [- getPhysicalSegment](./iomemorymap/api-1441817-getphysicalsegment.md)
+- [- getVirtualAddress](./iomemorymap/api-1441843-getvirtualaddress.md)
+- [- redirect](./iomemorymap/api-1442054-redirect.md)
+- [- taggedRelease](./iomemorymap/api-1442001-taggedrelease.md)
+- [- taskDied](./iomemorymap/api-1442092-taskdied.md)
+- [- unmap](./iomemorymap/api-1441805-unmap.md)
+- [- wireRange](./iomemorymap/api-1442050-wirerange.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOMapper](iomapper.md)
-- [IOMappedRead16](1575322-iomappedread16.md)
+### Mapped Memory
+- [IOMapper](./iomapper.md)
+- [IOMappedRead16](./api-1575322-iomappedread16.md)
   Read two bytes from the desired "Physical" IOSpace address.
-- [IOMappedRead32](1575311-iomappedread32.md)
+- [IOMappedRead32](./api-1575311-iomappedread32.md)
   Read four bytes from the desired "Physical" IOSpace address.
-- [IOMappedRead64](1575301-iomappedread64.md)
+- [IOMappedRead64](./api-1575301-iomappedread64.md)
   Read eight bytes from the desired "Physical" IOSpace address.
-- [IOMappedRead8](1575317-iomappedread8.md)
+- [IOMappedRead8](./api-1575317-iomappedread8.md)
   Read one byte from the desired "Physical" IOSpace address.
-- [IOMappedWrite16](1575315-iomappedwrite16.md)
+- [IOMappedWrite16](./api-1575315-iomappedwrite16.md)
   Write two bytes to the desired "Physical" IOSpace address.
-- [IOMappedWrite32](1575310-iomappedwrite32.md)
+- [IOMappedWrite32](./api-1575310-iomappedwrite32.md)
   Write four bytes to the desired "Physical" IOSpace address.
-- [IOMappedWrite64](1575313-iomappedwrite64.md)
+- [IOMappedWrite64](./api-1575313-iomappedwrite64.md)
   Write eight bytes to the desired "Physical" IOSpace address.
-- [IOMappedWrite8](1575318-iomappedwrite8.md)
+- [IOMappedWrite8](./api-1575318-iomappedwrite8.md)
   Write one byte to the desired "Physical" IOSpace address.
-- [IOMapperIOVMAlloc](1532986-iomapperiovmalloc.md)
-- [IOMapperIOVMFree](1532978-iomapperiovmfree.md)
-- [IOMapperInsertPage](1532970-iomapperinsertpage.md)
-- [IOFlushProcessorCache](1575308-ioflushprocessorcache.md)
+- [IOMapperIOVMAlloc](./api-1532986-iomapperiovmalloc.md)
+- [IOMapperIOVMFree](./api-1532978-iomapperiovmfree.md)
+- [IOMapperInsertPage](./api-1532970-iomapperinsertpage.md)
+- [IOFlushProcessorCache](./api-1575308-ioflushprocessorcache.md)
   Flushes the processor cache for mapped memory.
 
 

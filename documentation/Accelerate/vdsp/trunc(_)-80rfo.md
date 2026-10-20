@@ -1,7 +1,8 @@
 # trunc(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a double-precision array containing each element in the supplied vector truncated to a fraction.
 
@@ -11,7 +12,7 @@ Returns a double-precision array containing each element in the supplied vector 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static func trunc<U>(_ vector: U) -> [Double] where U : AccelerateBuffer, U.Elem
 
 ## See Also
 
-- [static func trunc<U>(U) -> [Float]](vdsp/trunc(_:)-1npgt.md)
+### Single-Vector Fractional Part Extraction
+- [static func trunc<U>(U) -> [Float]](./trunc%28_%29-1npgt.md)
   Returns a single-precision array containing each element in the supplied vector truncated to a fraction.
-- [static func trunc<U, V>(U, result: inout V)](vdsp/trunc(_:result:)-4t63c.md)
+- [static func trunc<U, V>(U, result: inout V)](./trunc%28_,result%29-4t63c.md)
   Calculates each element in the supplied double-precision vector truncated to a fraction.
-- [static func trunc<U, V>(U, result: inout V)](vdsp/trunc(_:result:)-fabn.md)
+- [static func trunc<U, V>(U, result: inout V)](./trunc%28_,result%29-fabn.md)
   Calculates each element in the supplied single-precision vector truncated to a fraction.
 
 

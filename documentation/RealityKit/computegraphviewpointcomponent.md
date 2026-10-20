@@ -1,7 +1,8 @@
 # ComputeGraphViewpointComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transient component that provides camera viewpoint information to the particle simulation.
 
@@ -27,18 +28,18 @@ Both properties are optional. When `nil`, the simulation falls back to its defau
 ## Topics
 
 ### Initializers
-- [init()](computegraphviewpointcomponent/init.md)
+- [init()](./computegraphviewpointcomponent/init%28%29.md)
 ### Instance Properties
-- [var viewDirection: SIMD3<Float>?](computegraphviewpointcomponent/viewdirection.md)
+- [var viewDirection: SIMD3<Float>?](./computegraphviewpointcomponent/viewdirection.md)
   The direction the observer is facing, in world space.
-- [var viewPosition: SIMD3<Float>?](computegraphviewpointcomponent/viewposition.md)
+- [var viewPosition: SIMD3<Float>?](./computegraphviewpointcomponent/viewposition.md)
   The position of the observer, in world space.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [TransientComponent](transientcomponent.md)
+- [Component](./component.md)
+- [TransientComponent](./transientcomponent.md)
 
 
 ---

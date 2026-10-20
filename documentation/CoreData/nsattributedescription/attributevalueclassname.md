@@ -1,7 +1,8 @@
 # attributeValueClassName
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The class name that represents the attribute’s value.
 
@@ -10,7 +11,7 @@ The class name that represents the attribute’s value.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The class name that represents the attribute’s value.
 var attributeValueClassName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * attributeValueClassName;
+```
+
 ## See Also
 
-- [var type: NSAttributeDescription.AttributeType](nsattributedescription/type.md)
+### Managing the type
+- [var type: NSAttributeDescription.AttributeType](./type.md)
   The attribute’s type.
-- [NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct.md)
+- [NSAttributeDescription.AttributeType](./attributetype-swift.struct.md)
   The types of attributes that Core Data supports.
-- [var attributeType: NSAttributeType](nsattributedescription/attributetype-swift.property.md)
+- [var attributeType: NSAttributeType](./attributetype-swift.property.md)
   The attribute’s type.
-- [enum NSAttributeType](nsattributetype.md)
+- [enum NSAttributeType](../nsattributetype.md)
   The types of attribute that Core Data supports.
 
 

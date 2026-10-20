@@ -1,7 +1,8 @@
 # transitBalanceCurrencyCode
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency code associated with the balance on the pass.
 
@@ -9,7 +10,7 @@ The currency code associated with the balance on the pass.
 - iOS 10.1+
 - iPadOS 10.1+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 3.1+
 
@@ -19,17 +20,22 @@ The currency code associated with the balance on the pass.
 var transitBalanceCurrencyCode: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * transitBalanceCurrencyCode;
+```
+
 #### Discussion
 
-Represent the currency code associated with [`transitBalance`](pksuicapassproperties/transitbalance.md) as a three-letter ISO 4217 alphabetic code. For example, US Dollars is `USD` and Japanese Yen is `JPY`.
+Represent the currency code associated with [`transitBalance`](./transitbalance.md) as a three-letter ISO 4217 alphabetic code. For example, US Dollars is `USD` and Japanese Yen is `JPY`.
 
 ## See Also
 
-- [var transitBalance: NSDecimalNumber](pksuicapassproperties/transitbalance.md)
+### Getting suica balance information
+- [var transitBalance: NSDecimalNumber](./transitbalance.md)
   The current usable stored value on the transit card.
-- [var isBalanceAllowedForCommute: Bool](pksuicapassproperties/isbalanceallowedforcommute.md)
+- [var isBalanceAllowedForCommute: Bool](./isbalanceallowedforcommute.md)
   A Boolean value that indicates how the balance can be used.
-- [var isLowBalanceGateNotificationEnabled: Bool](pksuicapassproperties/islowbalancegatenotificationenabled.md)
+- [var isLowBalanceGateNotificationEnabled: Bool](./islowbalancegatenotificationenabled.md)
   A Boolean value that determines whether the terminal provides feedback if the balance is low after a deduction.
 
 

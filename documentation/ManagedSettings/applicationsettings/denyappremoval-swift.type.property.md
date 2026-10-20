@@ -1,7 +1,8 @@
 # denyAppRemoval
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the setting to prevent app removal.
 
@@ -18,15 +19,16 @@ static let denyAppRemoval: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyAppRemoval` to access metadata about [`denyAppRemoval`](applicationsettings/denyappremoval-swift.property.md). The default value is `false`.
+Use `denyAppRemoval` to access metadata about [`denyAppRemoval`](./denyappremoval-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyAppInstallation: Bool?](applicationsettings/denyappinstallation-swift.property.md)
+### Preventing app installation and removal
+- [var denyAppInstallation: Bool?](./denyappinstallation-swift.property.md)
   A Boolean value that indicates whether to prevent the user from installing applications.
-- [static let denyAppInstallation: SettingMetadata<Bool>](applicationsettings/denyappinstallation-swift.type.property.md)
+- [static let denyAppInstallation: SettingMetadata<Bool>](./denyappinstallation-swift.type.property.md)
   The metadata for the setting to prevent app installation.
-- [var denyAppRemoval: Bool?](applicationsettings/denyappremoval-swift.property.md)
+- [var denyAppRemoval: Bool?](./denyappremoval-swift.property.md)
   A Boolean value that indicates whether to prevent the user from removing applications.
 
 

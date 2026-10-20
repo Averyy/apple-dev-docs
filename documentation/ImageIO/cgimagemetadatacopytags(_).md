@@ -1,7 +1,8 @@
 # CGImageMetadataCopyTags(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of root-level metadata tags from the specified metadata object.
 
@@ -20,9 +21,13 @@ Returns an array of root-level metadata tags from the specified metadata object.
 func CGImageMetadataCopyTags(_ metadata: CGImageMetadata) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCGImageMetadataCopyTags(CGImageMetadataRef metadata);
+```
+
 #### Return Value
 
-An array that contains a shallow copy of all root-level [`CGImageMetadataTag`](cgimagemetadatatag.md) objects. This array contains only the root-level tags. It doesn’t contain any nested tags.
+An array that contains a shallow copy of all root-level [`CGImageMetadataTag`](./cgimagemetadatatag.md) objects. This array contains only the root-level tags. It doesn’t contain any nested tags.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ An array that contains a shallow copy of all root-level [`CGImageMetadataTag`](c
 
 ## See Also
 
-- [func CGImageMetadataCopyTagWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CGImageMetadataTag?](cgimagemetadatacopytagwithpath(_:_:_:).md)
+### Getting the Metadata Tags
+- [func CGImageMetadataCopyTagWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CGImageMetadataTag?](./cgimagemetadatacopytagwithpath%28_,_,_%29.md)
   Searches for a specific metadata tag within a metadata collection.
-- [func CGImageMetadataCopyTagMatchingImageProperty(CGImageMetadata, CFString, CFString) -> CGImageMetadataTag?](cgimagemetadatacopytagmatchingimageproperty(_:_:_:).md)
+- [func CGImageMetadataCopyTagMatchingImageProperty(CGImageMetadata, CFString, CFString) -> CGImageMetadataTag?](./cgimagemetadatacopytagmatchingimageproperty%28_,_,_%29.md)
   Searches for the specified image property and, if found, returns the corresponding tag object.
-- [func CGImageMetadataCopyStringValueWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CFString?](cgimagemetadatacopystringvaluewithpath(_:_:_:).md)
+- [func CGImageMetadataCopyStringValueWithPath(CGImageMetadata, CGImageMetadataTag?, CFString) -> CFString?](./cgimagemetadatacopystringvaluewithpath%28_,_,_%29.md)
   Searches the metadata for the specified tag, and returns its string value if it exists.
 
 

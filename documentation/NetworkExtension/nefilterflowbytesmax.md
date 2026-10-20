@@ -1,23 +1,28 @@
 # NEFilterFlowBytesMax
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of bytes to pass or peek for a flow.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var NEFilterFlowBytesMax: UInt64 { get }
+```
+
+```c
+#define NEFilterFlowBytesMax
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ When used as a pass value, this value directs to flow to pass all upcoming bytes
 
 ## See Also
 
-- [var url: URL?](nefilterflow/url.md)
+### Inspecting flow properties
+- [var url: URL?](./nefilterflow/url.md)
   The flow’s HTTP URL.
-- [var identifier: UUID](nefilterflow/identifier.md)
+- [var identifier: UUID](./nefilterflow/identifier.md)
   The unique identifier of the flow.
-- [var direction: NETrafficDirection](nefilterflow/direction.md)
+- [var direction: NETrafficDirection](./nefilterflow/direction.md)
   The initial direction of the flow: incoming or outgoing.
-- [enum NETrafficDirection](netrafficdirection.md)
+- [enum NETrafficDirection](./netrafficdirection.md)
   A type to represent the direction of network traffic.
 
 

@@ -1,7 +1,8 @@
 # maximumPayloadSize
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+

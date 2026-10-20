@@ -1,12 +1,13 @@
 # NSDatePicker.Mode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define whether the picker provides a single date, or a range of dates.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,33 +15,38 @@ Constants that define whether the picker provides a single date, or a range of d
 enum Mode
 ```
 
+```c
+enum NSDatePickerMode : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSDatePicker.Mode.range](nsdatepicker/mode/range.md)
-- [NSDatePicker.Mode.single](nsdatepicker/mode/single.md)
+- [NSDatePicker.Mode.range](./mode/range.md)
+- [NSDatePicker.Mode.single](./mode/single.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsdatepicker/mode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var calendar: Calendar?](nsdatepicker/calendar.md)
+### Controlling Date Picker Range and Mode
+- [var calendar: Calendar?](./calendar.md)
   The calendar used by the date picker.
-- [var locale: Locale?](nsdatepicker/locale.md)
+- [var locale: Locale?](./locale.md)
   The date picker’s locale.
-- [var datePickerMode: NSDatePicker.Mode](nsdatepicker/datepickermode.md)
+- [var datePickerMode: NSDatePicker.Mode](./datepickermode.md)
   The date picker’s mode.
-- [var timeZone: TimeZone?](nsdatepicker/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone for the date picker.
 
 

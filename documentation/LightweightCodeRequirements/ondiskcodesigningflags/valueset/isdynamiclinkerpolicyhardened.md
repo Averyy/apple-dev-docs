@@ -1,7 +1,8 @@
 # isDynamicLinkerPolicyHardened
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the process should get hardened dynamic linker policies.
 

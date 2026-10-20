@@ -1,12 +1,13 @@
 # NSSelectionGranularity
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants specify how much the text view extends the selection when the user drags the mouse. They’re used by [`selectionGranularity`](nstextview/selectiongranularity.md), and [`selectionRange(forProposedRange:granularity:)`](nstextview/selectionrange(forproposedrange:granularity:).md):
+These constants specify how much the text view extends the selection when the user drags the mouse. They’re used by [`selectionGranularity`](./nstextview/selectiongranularity.md), and [`selectionRange(forProposedRange:granularity:)`](./nstextview/selectionrange%28forproposedrange,granularity%29.md):
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,39 +15,44 @@ These constants specify how much the text view extends the selection when the us
 enum NSSelectionGranularity
 ```
 
+```c
+enum NSSelectionGranularity : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSSelectionGranularity.selectByCharacter](nsselectiongranularity/selectbycharacter.md)
+- [NSSelectionGranularity.selectByCharacter](./nsselectiongranularity/selectbycharacter.md)
   Extends the selection character by character.
-- [NSSelectionGranularity.selectByWord](nsselectiongranularity/selectbyword.md)
+- [NSSelectionGranularity.selectByWord](./nsselectiongranularity/selectbyword.md)
   Extends the selection word by word.
-- [NSSelectionGranularity.selectByParagraph](nsselectiongranularity/selectbyparagraph.md)
+- [NSSelectionGranularity.selectByParagraph](./nsselectiongranularity/selectbyparagraph.md)
   Extends the selection paragraph by paragraph.
 ### Initializers
-- [init?(rawValue: UInt)](nsselectiongranularity/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsselectiongranularity/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NSSelectionAffinity](nsselectionaffinity.md)
-  These constants specify the preferred direction of selection. They’re used by [`selectionAffinity`](nstextview/selectionaffinity.md) and [`setSelectedRange(_:affinity:stillSelecting:)`](nstextview/setselectedrange(_:affinity:stillselecting:).md).
-- [enum NSFindPanelAction](nsfindpanelaction.md)
-  These constants define the tags for [`performFindPanelAction(_:)`](nstextview/performfindpanelaction(_:).md).
-- [Input Sources Locale Identifiers](input-sources-locale-identifiers.md)
+### Constants
+- [enum NSSelectionAffinity](./nsselectionaffinity.md)
+  These constants specify the preferred direction of selection. They’re used by [`selectionAffinity`](./nstextview/selectionaffinity.md) and [`setSelectedRange(_:affinity:stillSelecting:)`](./nstextview/setselectedrange%28_,affinity,stillselecting%29.md).
+- [enum NSFindPanelAction](./nsfindpanelaction.md)
+  These constants define the tags for [`performFindPanelAction(_:)`](./nstextview/performfindpanelaction%28_%29.md).
+- [Input Sources Locale Identifiers](./input-sources-locale-identifiers.md)
   Locale identifiers represent the input sources available.
-- [Find Panel Search Metadata](find-panel-search-metadata.md)
-  In addition to communicating search strings via the find pasteboard, the standard Find panel for `NSTextView` also communicates search option metadata, including case sensitivity and substring matching options. This metadata is stored in a property list as the [`findPanelSearchOptions`](nspasteboard/pasteboardtype/findpanelsearchoptions.md) value on the global find pasteboard. As such, third party applications may store additional keys in this property list to communicate additional metadata as desired to support the various search options common to many third-party applications’ Find panels.
-- [enum NSFindPanelSubstringMatchType](nsfindpanelsubstringmatchtype.md)
+- [Find Panel Search Metadata](./find-panel-search-metadata.md)
+  In addition to communicating search strings via the find pasteboard, the standard Find panel for `NSTextView` also communicates search option metadata, including case sensitivity and substring matching options. This metadata is stored in a property list as the [`findPanelSearchOptions`](./nspasteboard/pasteboardtype/findpanelsearchoptions.md) value on the global find pasteboard. As such, third party applications may store additional keys in this property list to communicate additional metadata as desired to support the various search options common to many third-party applications’ Find panels.
+- [enum NSFindPanelSubstringMatchType](./nsfindpanelsubstringmatchtype.md)
   The type of substring matching used by the Find panel.
 
 

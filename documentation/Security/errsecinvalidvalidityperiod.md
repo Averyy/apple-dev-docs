@@ -1,7 +1,8 @@
 # errSecInvalidValidityPeriod
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The validity period is not valid.
 
@@ -18,6 +19,10 @@ The validity period is not valid.
 
 ```swift
 var errSecInvalidValidityPeriod: OSStatus { get }
+```
+
+```c
+errSecInvalidValidityPeriod
 ```
 
 

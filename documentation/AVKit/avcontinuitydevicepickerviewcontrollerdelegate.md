@@ -1,7 +1,8 @@
 # AVContinuityDevicePickerViewControllerDelegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that responds to events from a continuity device picker view controller.
 
@@ -14,36 +15,41 @@ An interface that responds to events from a continuity device picker view contro
 protocol AVContinuityDevicePickerViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVContinuityDevicePickerViewControllerDelegate <NSObject>
+```
+
 #### Overview
 
-Your app can respond to the various outcome events from an [`AVContinuityDevicePickerViewController`](avcontinuitydevicepickerviewcontroller.md) instance with the following steps:
+Your app can respond to the various outcome events from an [`AVContinuityDevicePickerViewController`](./avcontinuitydevicepickerviewcontroller.md) instance with the following steps:
 
-1. Adopt the [`AVContinuityDevicePickerViewControllerDelegate`](avcontinuitydevicepickerviewcontrollerdelegate.md) protocol with one of the app’s classes.
+1. Adopt the [`AVContinuityDevicePickerViewControllerDelegate`](./avcontinuitydevicepickerviewcontrollerdelegate.md) protocol with one of the app’s classes.
 2. Create an instance of that class.
-3. Assign that instance to the view controller’s [`delegate`](avcontinuitydevicepickerviewcontroller/delegate.md) property.
+3. Assign that instance to the view controller’s [`delegate`](./avcontinuitydevicepickerviewcontroller/delegate.md) property.
 
 ## Topics
 
 ### Responding to continuity device events
-- [func continuityDevicePickerWillBeginPresenting(AVContinuityDevicePickerViewController)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerwillbeginpresenting(_:).md)
+- [func continuityDevicePickerWillBeginPresenting(AVContinuityDevicePickerViewController)](./avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerwillbeginpresenting%28_%29.md)
   Informs the delegate that a continuity device picker is about to present its UI so that a person can select and connect a continuity device.
-- [func continuityDevicePickerDidCancel(AVContinuityDevicePickerViewController)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerdidcancel(_:).md)
+- [func continuityDevicePickerDidCancel(AVContinuityDevicePickerViewController)](./avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerdidcancel%28_%29.md)
   Informs the delegate when a person declines to select a continuity device by dismissing an app’s continuity device picker.
-- [func continuityDevicePicker(AVContinuityDevicePickerViewController, didConnect: AVContinuityDevice)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepicker(_:didconnect:).md)
+- [func continuityDevicePicker(AVContinuityDevicePickerViewController, didConnect: AVContinuityDevice)](./avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepicker%28_,didconnect%29.md)
   Informs the delegate when a person selects and connects a continuity device to the system with a continuity device picker.
-- [func continuityDevicePickerDidEndPresenting(AVContinuityDevicePickerViewController)](avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerdidendpresenting(_:).md)
+- [func continuityDevicePickerDidEndPresenting(AVContinuityDevicePickerViewController)](./avcontinuitydevicepickerviewcontrollerdelegate/continuitydevicepickerdidendpresenting%28_%29.md)
   Informs the delegate that a continuity device picker is no longer presenting its UI to a person.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting Continuity Camera in your tvOS app](supporting-continuity-camera-in-your-tvos-app.md)
+### Continuity Camera
+- [Supporting Continuity Camera in your tvOS app](./supporting-continuity-camera-in-your-tvos-app.md)
   Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
-- [class AVContinuityDevicePickerViewController](avcontinuitydevicepickerviewcontroller.md)
+- [class AVContinuityDevicePickerViewController](./avcontinuitydevicepickerviewcontroller.md)
   A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
 
 

@@ -1,7 +1,8 @@
 # customVirtioDevice(_:didReceiveNotificationFor:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when the device receives a virtqueue (Virtio queue) notification from the guest.
 
@@ -12,6 +13,10 @@ The method the framework calls when the device receives a virtqueue (Virtio queu
 
 ```swift
 optional func customVirtioDevice(_ device: VZCustomVirtioDevice, didReceiveNotificationFor queue: VZVirtioQueue)
+```
+
+```objc
+- (void) customVirtioDevice:(VZCustomVirtioDevice *) device didReceiveNotificationForQueue:(VZVirtioQueue *) queue;
 ```
 
 ## Parameters

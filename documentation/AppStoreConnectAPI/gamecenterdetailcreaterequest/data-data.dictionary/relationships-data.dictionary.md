@@ -1,7 +1,8 @@
 # GameCenterDetailCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterDetailCreateRequest.Data.Relationships.App](gamecenterdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object GameCenterDetailCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object GameCenterDetailCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterDetailCreateRequest.Data.Attributes](gamecenterdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterDetailCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a detail resource.
 
 

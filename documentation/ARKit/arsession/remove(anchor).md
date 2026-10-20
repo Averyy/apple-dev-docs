@@ -1,7 +1,8 @@
 # remove(anchor:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified anchor from tracking by the session.
 
@@ -15,6 +16,10 @@ Removes the specified anchor from tracking by the session.
 func remove(anchor: ARAnchor)
 ```
 
+```objc
+- (void) removeAnchor:(ARAnchor *) anchor;
+```
+
 #### Discussion
 
 Changes to anchor tracking take effect when the next frame is captured.
@@ -25,7 +30,8 @@ Changes to anchor tracking take effect when the next frame is captured.
 
 ## See Also
 
-- [func add(anchor: ARAnchor)](arsession/add(anchor:).md)
+### Managing anchors
+- [func add(anchor: ARAnchor)](./add%28anchor%29.md)
   Adds the specified anchor to be tracked by the session.
 
 

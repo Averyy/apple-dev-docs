@@ -1,7 +1,8 @@
 # PKLassoTool
 
 **Framework**: PencilKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool for selecting stroked lines and shapes in a canvas view.
 
@@ -20,40 +21,41 @@ struct PKLassoTool
 
 #### Overview
 
-A [`PKLassoTool`](pklassotool-swift.struct.md) object supports the selection of content on a [`PKCanvasView`](pkcanvasview.md). When active, the canvas uses incoming touch events to determine what content to add to the selection.
+A [`PKLassoTool`](./pklassotool-swift.struct.md) object supports the selection of content on a [`PKCanvasView`](./pkcanvasview.md). When active, the canvas uses incoming touch events to determine what content to add to the selection.
 
-Create a lasso tool programmatically or display a [`PKToolPicker`](pktoolpicker.md) object from which the user selects the tool. Assign the resulting object to the [`tool`](pkcanvasview/tool-6str6.md) property of your [`PKCanvasView`](pkcanvasview.md) object. The canvas uses any subsequent touch sequences to select content on the canvas.
+Create a lasso tool programmatically or display a [`PKToolPicker`](./pktoolpicker.md) object from which the user selects the tool. Assign the resulting object to the [`tool`](./pkcanvasview/tool-6str6.md) property of your [`PKCanvasView`](./pkcanvasview.md) object. The canvas uses any subsequent touch sequences to select content on the canvas.
 
 ## Topics
 
 ### Creating a lasso tool
-- [init()](pklassotool-swift.struct/init.md)
+- [init()](./pklassotool-swift.struct/init%28%29.md)
   Creates a lasso tool for selecting content on a canvas view.
 ### Using reference types
-- [class PKLassoToolReference](pklassotoolreference.md)
+- [class PKLassoToolReference](./pklassotoolreference.md)
   A tool for selecting stroked lines and shapes in a canvas view.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [PKTool](pktool-swift.protocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [PKTool](./pktool-swift.protocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Configuring the PencilKit tool picker](configuring-the-pencilkit-tool-picker.md)
+### Tools
+- [Configuring the PencilKit tool picker](./configuring-the-pencilkit-tool-picker.md)
   Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
-- [class PKToolPicker](pktoolpicker.md)
+- [class PKToolPicker](./pktoolpicker.md)
   A tool palette that displays a selection of drawing tools and colors for tools that a person can choose from.
-- [struct PKInkingTool](pkinkingtool-swift.struct.md)
+- [struct PKInkingTool](./pkinkingtool-swift.struct.md)
   A structure that defines the drawing characteristics (width, color, pen style) to use when drawing lines on a canvas view.
-- [struct PKEraserTool](pkerasertool-swift.struct.md)
+- [struct PKEraserTool](./pkerasertool-swift.struct.md)
   A tool for erasing previously drawn content in a canvas view.
-- [protocol PKTool](pktool-swift.protocol.md)
+- [protocol PKTool](./pktool-swift.protocol.md)
   An interface adopted by drawing and writing tools used by a canvas view.
 
 

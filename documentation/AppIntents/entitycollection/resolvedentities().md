@@ -1,7 +1,8 @@
 # resolvedEntities()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves and returns the entity instances for each identifier in the collection.
 
@@ -20,15 +21,17 @@ Retrieves and returns the entity instances for each identifier in the collection
 func resolvedEntities() async throws -> [Entity]
 ```
 
+Available when `Entity` conforms to `AppEntity`.
+
 #### Return Value
 
 An array of resolved entities.
 
 #### Discussion
 
-> **Note**: An error if the entities cannot be resolved.
+> **Throws**: An error if the entities cannot be resolved.
 
-Use this method to retrieve the [`AppEntity`](appentity.md) instances for each identifier in the collection. You might use this method in your [`perform()`](appintent/perform().md) method when you need additional data from each entity. If the collection already has a cached set of entity instances, the method returns them. If there are no cached values, the method uses entity queries to request them from your app.
+Use this method to retrieve the [`AppEntity`](../appentity.md) instances for each identifier in the collection. You might use this method in your [`perform()`](../appintent/perform%28%29.md) method when you need additional data from each entity. If the collection already has a cached set of entity instances, the method returns them. If there are no cached values, the method uses entity queries to request them from your app.
 
 
 ---

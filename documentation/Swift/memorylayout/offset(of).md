@@ -1,7 +1,8 @@
 # offset(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the offset of an inline stored property within a type’s in-memory representation.
 

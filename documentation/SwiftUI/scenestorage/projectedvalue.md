@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A binding to the state value.
 
@@ -24,11 +25,12 @@ var projectedValue: Binding<Value> { get }
 
 This works identically to `State.projectedValue`.
 
-> **Note**: State.projectedValue
+> **See Also**: State.projectedValue
 
 ## See Also
 
-- [var wrappedValue: Value](scenestorage/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: Value](./wrappedvalue.md)
   The underlying value referenced by the state variable.
 
 

@@ -1,7 +1,8 @@
 # tableView(_:performPrimaryActionForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to perform the primary action for the row at the specified index path.
 
@@ -18,13 +19,17 @@ Tells the delegate to perform the primary action for the row at the specified in
 optional func tableView(_ tableView: UITableView, performPrimaryActionForRowAt indexPath: IndexPath)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView performPrimaryActionForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Discussion
 
 Primary actions allow you to distinguish between a distinct user action and a change in selection (like a focus change or other indirect selection change). A primary action occurs when a person selects a single row without extending an existing selection.
 
-UIKit calls this method after [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectrowat:).md) and [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md), regardless of whether the row selection state changes. Use [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md) to update the state of the current view controller (like its buttons, title, and so on), and use [`tableView(_:performPrimaryActionForRowAt:)`](uitableviewdelegate/tableview(_:performprimaryactionforrowat:).md) for actions like navigation or showing another split view column.
+UIKit calls this method after [`tableView(_:willSelectRowAt:)`](./tableview%28_,willselectrowat%29.md) and [`tableView(_:didSelectRowAt:)`](./tableview%28_,didselectrowat%29.md), regardless of whether the row selection state changes. Use [`tableView(_:didSelectRowAt:)`](./tableview%28_,didselectrowat%29.md) to update the state of the current view controller (like its buttons, title, and so on), and use [`tableView(_:performPrimaryActionForRowAt:)`](./tableview%28_,performprimaryactionforrowat%29.md) for actions like navigation or showing another split view column.
 
-If [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectrowat:).md) returns an index path to allow selection for the row, only that row has selection when the system calls this method. If [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectrowat:).md) returns `nil`, the system preserves the existing row selection in the table view. You can use this behavior to perform primary actions on nonselectable, button-style rows without changing the selection.
+If [`tableView(_:willSelectRowAt:)`](./tableview%28_,willselectrowat%29.md) returns an index path to allow selection for the row, only that row has selection when the system calls this method. If [`tableView(_:willSelectRowAt:)`](./tableview%28_,willselectrowat%29.md) returns `nil`, the system preserves the existing row selection in the table view. You can use this behavior to perform primary actions on nonselectable, button-style rows without changing the selection.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ If [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectr
 
 ## See Also
 
-- [func tableView(UITableView, canPerformPrimaryActionForRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:canperformprimaryactionforrowat:).md)
+### Performing primary actions
+- [func tableView(UITableView, canPerformPrimaryActionForRowAt: IndexPath) -> Bool](./tableview%28_,canperformprimaryactionforrowat%29.md)
   Asks the delegate whether to perform a primary action for the row at the specified index path.
 
 

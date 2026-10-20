@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the specified completion block to the animator.
@@ -18,9 +19,14 @@ Adds the specified completion block to the animator.
 func addCompletion(_ completion: @escaping (Bool) -> Void)
 ```
 
+```objc
+- (void) addCompletion:(void (^)(BOOL finished)) completion;
+```
+
 ## See Also
 
-- [func addAnimations(() -> Void)](uipointerinteractionanimating/addanimations(_:).md)
+### Managing animations
+- [func addAnimations(() -> Void)](./addanimations%28_%29.md)
   Adds the specified animation block to the animator.
 
 

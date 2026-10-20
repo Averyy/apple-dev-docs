@@ -1,21 +1,23 @@
 # Enable WebDriver on macOS
 
-**Framework**: Safari Developer Features
+**Framework**: Safari Developer Features  
+**Role**: Article
 
 Enable WebDriver to automate testing of Safari on macOS.
 
-#### Enabling Webdriver Via Safari
+#### Enabling WebDriver via Safari
 
-1. From the [`Develop menu`](develop-menu.md) choose **Developer Settings…**
+1. From the [Develop menu](./develop-menu.md) choose **Developer Settings…**
 2. Check the **Allow remote automation** checkbox.
 
-#### Enabling Webdriver Via Terminal
+#### Enabling WebDriver via Terminal
 
 Run `safaridriver --enable`. (If you are upgrading from a previous version of macOS you may need to use `sudo`.)
 
 ## See Also
 
-- [Enable WebDriver on iOS and iPadOS](ios-enabling-webdriver.md)
+### Enabling WebDriver
+- [Enable WebDriver on iOS and iPadOS](./ios-enabling-webdriver.md)
   Enable WebDriver to automate testing of Safari on iOS and iPadOS using a connected Mac.
 
 

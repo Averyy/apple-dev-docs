@@ -1,7 +1,8 @@
 # bookmarkName
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the name of a bookmark.
 
@@ -20,17 +21,22 @@ A string that represents the name of a bookmark.
 var bookmarkName: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * bookmarkName;
+```
+
 ## See Also
 
-- [var mark: AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.property.md)
+### Inspecting a marker
+- [var mark: AVSpeechSynthesisMarker.Mark](./mark-swift.property.md)
   The type that describes the text.
-- [var phoneme: String](avspeechsynthesismarker/phoneme.md)
+- [var phoneme: String](./phoneme.md)
   A string that represents a distinct sound.
-- [var textRange: NSRange](avspeechsynthesismarker/textrange.md)
+- [var textRange: NSRange](./textrange.md)
   The location and length of the request’s text.
-- [var byteSampleOffset: Int](avspeechsynthesismarker/bytesampleoffset.md)
+- [var byteSampleOffset: Int](./bytesampleoffset.md)
   The byte offset into the audio buffer.
-- [AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.enum.md)
+- [AVSpeechSynthesisMarker.Mark](./mark-swift.enum.md)
   Constants that describe the type of text.
 
 

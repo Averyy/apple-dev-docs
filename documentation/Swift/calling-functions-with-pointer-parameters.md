@@ -1,6 +1,7 @@
 # Calling Functions With Pointer Parameters
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use implicit pointer casting or bridging when calling functions that takes pointers as parameters.
 
@@ -8,7 +9,7 @@ Use implicit pointer casting or bridging when calling functions that takes point
 
 When calling a function that takes a pointer as a parameter, you can use implicit casting to pass a compatible pointer type or implicit bridging to pass a pointer to a variable or the contents of an array.
 
-##### Pass a Constant Pointer As a Parameter
+##### Pass a Constant Pointer as a Parameter
 
 When you call a function that is declared as taking an `UnsafePointer<Type>` argument, you can pass any of the following:
 
@@ -49,7 +50,7 @@ takesARawPointer(intArray)
 takesARawPointer("How are you today?")
 ```
 
-##### Pass a Mutable Pointer As a Parameter
+##### Pass a Mutable Pointer as a Parameter
 
 When you call a function that is declared as taking an `UnsafeMutablePointer<Type>` argument, you can pass any of the following:
 
@@ -87,7 +88,7 @@ takesAMutableRawPointer(&a)
 takesAMutableRawPointer(&b)
 ```
 
-##### Pass an Autoreleasing Pointer As a Parameter
+##### Pass an Autoreleasing Pointer as a Parameter
 
 When you call a function that is declared as taking an `AutoreleasingUnsafeMutablePointer<Type>`, you can pass any of the following:
 
@@ -96,7 +97,7 @@ When you call a function that is declared as taking an `AutoreleasingUnsafeMutab
 
 Unlike with other pointer types, you can’t use an array as an implicitly bridged parameter.
 
-##### Pass a Function Pointer As a Parameter
+##### Pass a Function Pointer as a Parameter
 
 When calling a function that takes a C function pointer argument, you can pass a top-level Swift function, a closure literal, a closure declared with the `@convention(c)` attribute, or `nil`. You can also pass a closure property of a generic type or a generic method as long as no generic type parameters are referenced in the closure’s argument list or body.
 

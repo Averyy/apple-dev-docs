@@ -1,7 +1,8 @@
 # setIdentity()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets all factors of the transform to those of the identity transformation.
 
@@ -19,19 +20,24 @@ Sets all factors of the transform to those of the identity transformation.
 func setIdentity()
 ```
 
+```objc
+- (void) setIdentity;
+```
+
 #### Discussion
 
 The identity transform is equivalent to the lack of a transformation, so an object affected by the transform uses the same coordinate space as its parent. Calling this method also erases any time-sampled data, creating a static transform.
 
 ## See Also
 
-- [var translation: vector_float3](mdltransform/translation.md)
+### Using Factors of a Static Transform
+- [var translation: vector_float3](./translation.md)
   The x-, y-, and z-axis offsets of the transform relative to its parent coordinate space.
-- [var rotation: vector_float3](mdltransform/rotation.md)
+- [var rotation: vector_float3](./rotation.md)
   The orientation, as a vector of Euler angles in radians, of the transform relative to its parent coordinate space.
-- [var scale: vector_float3](mdltransform/scale.md)
+- [var scale: vector_float3](./scale.md)
   The x-, y-, and z-axis scale factors of the transform relative to its parent coordinate space.
-- [var shear: vector_float3](mdltransform/shear.md)
+- [var shear: vector_float3](./shear.md)
   The x-, y-, and z-axis shear factors of the transform relative to its parent coordinate space.
 
 

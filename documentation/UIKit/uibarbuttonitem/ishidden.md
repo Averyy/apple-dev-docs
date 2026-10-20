@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that determines the visibility of the item.
 
@@ -17,23 +18,28 @@ A Boolean that determines the visibility of the item.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite, getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to hide the item, or [`false`](https://developer.apple.com/documentation/swift/false) to display the item.
+Set this property to [`true`](../../Swift/true.md) to hide the item, or [`false`](../../Swift/false.md) to display the item.
 
 ## See Also
 
-- [var style: UIBarButtonItem.Style](uibarbuttonitem/style-swift.property.md)
+### Customizing item appearance
+- [var style: UIBarButtonItem.Style](./style-swift.property.md)
   The style of the item.
-- [UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum.md)
+- [UIBarButtonItem.Style](./style-swift.enum.md)
   Constants that specify the style of an item.
-- [var tintColor: UIColor?](uibarbuttonitem/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the button item.
-- [var isSelected: Bool](uibarbuttonitem/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the button is in a selected state.
-- [var width: CGFloat](uibarbuttonitem/width.md)
+- [var width: CGFloat](./width.md)
   The width of the item.
-- [var possibleTitles: Set<String>?](uibarbuttonitem/possibletitles.md)
+- [var possibleTitles: Set<String>?](./possibletitles.md)
   The set of possible titles to display on the bar button.
 
 

@@ -1,7 +1,8 @@
 # oneTime
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A payment mode for a consumable, non-consumable, or non-renewing subscription offer that indicates a one-time purchase.
 
@@ -23,11 +24,12 @@ static var oneTime: Transaction.Offer.PaymentMode { get }
 
 ## See Also
 
-- [static let freeTrial: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/freetrial.md)
+### Getting payment modes
+- [static let freeTrial: Transaction.Offer.PaymentMode](./freetrial.md)
   A payment mode of a product discount that indicates a free trial.
-- [static let payAsYouGo: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payasyougo.md)
+- [static let payAsYouGo: Transaction.Offer.PaymentMode](./payasyougo.md)
   A payment mode of a product discount that applies over a single billing period or multiple billing periods.
-- [static let payUpFront: Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)
+- [static let payUpFront: Transaction.Offer.PaymentMode](./payupfront.md)
   A payment mode of a product discount that applies the discount up front.
 
 

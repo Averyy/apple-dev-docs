@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The set of valid feature names.
@@ -21,9 +22,14 @@ The set of valid feature names.
 var featureNames: Set<String> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSSet<NSString *> * featureNames;
+```
+
 ## See Also
 
-- [func featureValue(for: String) -> MLFeatureValue?](mlfeatureprovider/featurevalue(for:).md)
+### Accessing values
+- [func featureValue(for: String) -> MLFeatureValue?](./featurevalue%28for%29.md)
   Accesses the feature value given the feature’s name.
 
 

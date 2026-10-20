@@ -1,7 +1,8 @@
 # ServicesAccountLinking
 
 **Framework**: ServicesAccountLinking  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Link reseller accounts with Apple Media & Purchases accounts.
 
@@ -20,21 +21,21 @@ To use this framework:
 - You have obtained partner credentials for generating tokens or identifiers.
 - Your project targets iOS 16.4 or later.
 
-If your application isn’t registered as an authorized partner, registration fails with a [`notEligible`](registrationerror/noteligible.md) error.  Contact the Apple channel partnership program to become an authorized partner.
+If your application isn’t registered as an authorized partner, registration fails with a [`notEligible`](./registrationerror/noteligible.md) error.  Contact the Apple channel partnership program to become an authorized partner.
 
 ## Topics
 
 ### Registration
-- [struct ResellerAccount](reselleraccount.md)
+- [struct ResellerAccount](./reselleraccount.md)
   Reseller account type for linking with Apple Media & Purchases accounts.
 ### Error handling
-- [struct RegistrationError](registrationerror.md)
+- [struct RegistrationError](./registrationerror.md)
   Registration error codes.
-- [let RegistrationErrorDomain: String](registrationerrordomain.md)
+- [let RegistrationErrorDomain: String](./registrationerrordomain.md)
   Error domain for account registration failures.
 ### Variables
-- [let RegistrationErrorRetryAfterKey: String](registrationerrorretryafterkey.md)
-  `userInfo` key whose value is an `NSNumber` containing the server-provided retry interval in seconds. Present on [`rateLimited`](registrationerror/ratelimited.md) errors.
+- [let RegistrationErrorRetryAfterKey: String](./registrationerrorretryafterkey.md)
+  `userInfo` key whose value is an `NSNumber` containing the server-provided retry interval in seconds. Present on [`rateLimited`](./registrationerror/ratelimited.md) errors.
 
 
 ---

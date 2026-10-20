@@ -1,7 +1,8 @@
 # annotations
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array containing the page’s annotations.
 
@@ -19,19 +20,24 @@ Returns an array containing the page’s annotations.
 var annotations: [PDFAnnotation] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<PDFAnnotation *> * annotations;
+```
+
 #### Discussion
 
-The elements of the array will most likely be typed to subclasses of the [`PDFAnnotation`](pdfannotation.md) class.
+The elements of the array will most likely be typed to subclasses of the [`PDFAnnotation`](../pdfannotation.md) class.
 
 ## See Also
 
-- [var displaysAnnotations: Bool](pdfpage/displaysannotations.md)
+### Working with Annotations
+- [var displaysAnnotations: Bool](./displaysannotations.md)
   Returns a Boolean value indicating whether annotations are displayed for the page.
-- [func addAnnotation(PDFAnnotation)](pdfpage/addannotation(_:).md)
+- [func addAnnotation(PDFAnnotation)](./addannotation%28_%29.md)
   Adds the specified annotation object to the page.
-- [func removeAnnotation(PDFAnnotation)](pdfpage/removeannotation(_:).md)
+- [func removeAnnotation(PDFAnnotation)](./removeannotation%28_%29.md)
   Removes the specified annotation from the page.
-- [func annotation(at: CGPoint) -> PDFAnnotation?](pdfpage/annotation(at:).md)
+- [func annotation(at: CGPoint) -> PDFAnnotation?](./annotation%28at%29.md)
   Returns the annotation, if there is one, at the specified point.
 
 

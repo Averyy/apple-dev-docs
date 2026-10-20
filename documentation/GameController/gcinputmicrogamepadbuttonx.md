@@ -1,7 +1,8 @@
 # GCInputMicroGamepadButtonX
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the micro gamepad’s secondary button.
 
@@ -19,17 +20,23 @@ The name of the micro gamepad’s secondary button.
 let GCInputMicroGamepadButtonX: String
 ```
 
+```c
+extern NSString * const GCInputMicroGamepadButtonX;
+```
+
 #### Discussion
 
 For the first-generation and second-generation Siri Remote and later, this represents the play and pause button.
 
 ## See Also
 
-- [var buttonX: GCControllerButtonInput](gcmicrogamepad/buttonx.md)
+### Related Documentation
+- [var buttonX: GCControllerButtonInput](./gcmicrogamepad/buttonx.md)
   The second face button element.
-- [let GCInputMicroGamepadButtonA: String](gcinputmicrogamepadbuttona.md)
+### Micro gamepad button names
+- [let GCInputMicroGamepadButtonA: String](./gcinputmicrogamepadbuttona.md)
   The name of the micro gamepad’s primary button.
-- [let GCInputMicroGamepadButtonMenu: String](gcinputmicrogamepadbuttonmenu.md)
+- [let GCInputMicroGamepadButtonMenu: String](./gcinputmicrogamepadbuttonmenu.md)
   The name of the micro gamepad’s menu button.
 
 

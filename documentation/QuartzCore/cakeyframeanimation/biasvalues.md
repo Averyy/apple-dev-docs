@@ -1,7 +1,8 @@
 # biasValues
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of numbers that define the position of the curve relative to a control point.
 
@@ -19,15 +20,20 @@ An array of numbers that define the position of the curve relative to a control 
 var biasValues: [NSNumber]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSNumber *> * biasValues;
+```
+
 #### Discussion
 
-This property is an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects, used only for the cubic calculation modes. Positive values move the curve before the control point while negative values move it after the control point. The first value defines the behavior of the tangent to the first control point, the second value controls the second point’s tangents, and so on. If you do not specify a value for a given control point, the value `0` is used.
+This property is an array of [`NSNumber`](../../Foundation/nsnumber.md) objects, used only for the cubic calculation modes. Positive values move the curve before the control point while negative values move it after the control point. The first value defines the behavior of the tangent to the first control point, the second value controls the second point’s tangents, and so on. If you do not specify a value for a given control point, the value `0` is used.
 
 ## See Also
 
-- [var tensionValues: [NSNumber]?](cakeyframeanimation/tensionvalues.md)
+### Cubic Mode Attributes
+- [var tensionValues: [NSNumber]?](./tensionvalues.md)
   An array of numbers that define the tightness of the curve.
-- [var continuityValues: [NSNumber]?](cakeyframeanimation/continuityvalues.md)
+- [var continuityValues: [NSNumber]?](./continuityvalues.md)
   An array of numbers that define the sharpness of the timing curve’s corners.
 
 

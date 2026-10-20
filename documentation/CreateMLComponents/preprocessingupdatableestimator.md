@@ -1,7 +1,8 @@
 # PreprocessingUpdatableEstimator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An updatable estimator that composes a preprocessing transformer and an updatable estimator.
 
@@ -23,63 +24,64 @@ struct PreprocessingUpdatableEstimator<Preprocessor, Estimator> where Preprocess
 ## Topics
 
 ### Creating an estimator
-- [init(Preprocessor, Estimator)](preprocessingupdatableestimator/init(_:_:).md)
+- [init(Preprocessor, Estimator)](./preprocessingupdatableestimator/init%28_,_%29.md)
   Creates a composed updatable estimator from a preprocessing transformer and an estimator.
 ### Getting the properties
-- [var estimator: Estimator](preprocessingupdatableestimator/estimator.md)
+- [var estimator: Estimator](./preprocessingupdatableestimator/estimator.md)
   The estimator.
-- [var preprocessor: Preprocessor](preprocessingupdatableestimator/preprocessor.md)
+- [var preprocessor: Preprocessor](./preprocessingupdatableestimator/preprocessor.md)
   The preprocessing transformer.
 ### Encoding and decoding
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatableestimator/decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer.
-- [func encodeWithOptimizer(PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](preprocessingupdatableestimator/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, to: inout any EstimatorEncoder) throws](./preprocessingupdatableestimator/encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
 ### Preprocesing and fitting
-- [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](preprocessingupdatableestimator/preprocessed(from:eventhandler:).md)
+- [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](./preprocessingupdatableestimator/preprocessed%28from,eventhandler%29.md)
   Preprocesses a sequence of examples.
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatableestimator/fitted%28to,eventhandler%29.md)
   Fits a composed transformer to a sequence of examples.
-- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/fitted(topreprocessed:eventhandler:).md)
+- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatableestimator/fitted%28topreprocessed,eventhandler%29.md)
   Fits a transformer to a sequence of preprocessed features.
-- [func makeTransformer() -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatableestimator/maketransformer.md)
+- [func makeTransformer() -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer](./preprocessingupdatableestimator/maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](preprocessingupdatableestimator/update(_:with:eventhandler:).md)
+- [func update<InputSequence>(inout PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./preprocessingupdatableestimator/update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
-- [func update<InputSequence>(inout PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, withPreprocessed: InputSequence, eventHandler: EventHandler?) async throws](preprocessingupdatableestimator/update(_:withpreprocessed:eventhandler:).md)
+- [func update<InputSequence>(inout PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer, withPreprocessed: InputSequence, eventHandler: EventHandler?) async throws](./preprocessingupdatableestimator/update%28_,withpreprocessed,eventhandler%29.md)
   Updates a transformer with a new sequence of preprocessed features.
-- [PreprocessingUpdatableEstimator.Input](preprocessingupdatableestimator/input.md)
+- [PreprocessingUpdatableEstimator.Input](./preprocessingupdatableestimator/input.md)
   The input type.
-- [PreprocessingUpdatableEstimator.Intermediate](preprocessingupdatableestimator/intermediate.md)
+- [PreprocessingUpdatableEstimator.Intermediate](./preprocessingupdatableestimator/intermediate.md)
   The intermediate type.
-- [PreprocessingUpdatableEstimator.Output](preprocessingupdatableestimator/output.md)
+- [PreprocessingUpdatableEstimator.Output](./preprocessingupdatableestimator/output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UpdatableEstimator](updatableestimator.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UpdatableEstimator](./updatableestimator.md)
 
 ## See Also
 
-- [struct PreprocessingEstimator](preprocessingestimator.md)
+### Composition with preprocessing
+- [struct PreprocessingEstimator](./preprocessingestimator.md)
   An estimator that composes a preprocessing transformer and an estimator.
-- [struct PreprocessingTemporalEstimator](preprocessingtemporalestimator.md)
+- [struct PreprocessingTemporalEstimator](./preprocessingtemporalestimator.md)
   A temporal estimator that composes a preprocessing transformer and a temporal estimator.
-- [struct PreprocessingSupervisedEstimator](preprocessingsupervisedestimator.md)
+- [struct PreprocessingSupervisedEstimator](./preprocessingsupervisedestimator.md)
   A supervised estimator that composes a preprocessing transformer and a supervised estimator.
-- [struct PreprocessingSupervisedTemporalEstimator](preprocessingsupervisedtemporalestimator.md)
+- [struct PreprocessingSupervisedTemporalEstimator](./preprocessingsupervisedtemporalestimator.md)
   A supervised temporal estimator that composes a preprocessing transformer and a supervised temporal estimator.
-- [struct PreprocessingUpdatableTemporalEstimator](preprocessingupdatabletemporalestimator.md)
+- [struct PreprocessingUpdatableTemporalEstimator](./preprocessingupdatabletemporalestimator.md)
   An updatable temporal estimator that composes a preprocessing transformer and an updatable temporal estimator.
-- [struct PreprocessingUpdatableSupervisedEstimator](preprocessingupdatablesupervisedestimator.md)
+- [struct PreprocessingUpdatableSupervisedEstimator](./preprocessingupdatablesupervisedestimator.md)
   An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
-- [struct PreprocessingUpdatableSupervisedTemporalEstimator](preprocessingupdatablesupervisedtemporalestimator.md)
+- [struct PreprocessingUpdatableSupervisedTemporalEstimator](./preprocessingupdatablesupervisedtemporalestimator.md)
   An updatable supervised temporal estimator that composes a preprocessing transformer and an updatable supervised temporal estimator.
 
 

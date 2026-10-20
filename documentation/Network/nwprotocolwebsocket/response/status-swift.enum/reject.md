@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Response.Status.reject
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The client request is being rejected.
 
@@ -22,7 +23,8 @@ case reject
 
 ## See Also
 
-- [NWProtocolWebSocket.Response.Status.accept](nwprotocolwebsocket/response/status-swift.enum/accept.md)
+### Handshake Status Values
+- [NWProtocolWebSocket.Response.Status.accept](./accept.md)
   The client request is being accepted.
 
 

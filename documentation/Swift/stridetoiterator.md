@@ -1,7 +1,8 @@
 # StrideToIterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for a `StrideTo` instance.
 
@@ -24,26 +25,27 @@ struct StrideToIterator<Element> where Element : Strideable
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](stridetoiterator/iteratorprotocol-implementations.md)
+- [IteratorProtocol Implementations](./stridetoiterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [IteratorProtocol](./iteratorprotocol.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct IteratorSequence](iteratorsequence.md)
+### Indices and Iterators
+- [struct IteratorSequence](./iteratorsequence.md)
   A sequence built around an iterator of type `Base`.
-- [struct IndexingIterator](indexingiterator.md)
+- [struct IndexingIterator](./indexingiterator.md)
   A type that iterates over a collection using its indices.
-- [typealias EnumeratedIterator](enumeratediterator.md)
-- [typealias SetIterator](setiterator.md)
-- [struct StrideThroughIterator](stridethroughiterator.md)
+- [typealias EnumeratedIterator](./enumeratediterator.md)
+- [typealias SetIterator](./setiterator.md)
+- [struct StrideThroughIterator](./stridethroughiterator.md)
   An iterator for a `StrideThrough` instance.
 
 

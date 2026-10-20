@@ -1,7 +1,8 @@
 # outlineView(_:shouldReorderColumn:toColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to allow or prohibit the specified column to be dragged to a new location.
 
@@ -15,15 +16,19 @@ Sent to the delegate to allow or prohibit the specified column to be dragged to 
 optional func outlineView(_ outlineView: NSOutlineView, shouldReorderColumn columnIndex: Int, toColumn newColumnIndex: Int) -> Bool
 ```
 
+```objc
+- (BOOL) outlineView:(NSOutlineView *) outlineView shouldReorderColumn:(NSInteger) columnIndex toColumn:(NSInteger) newColumnIndex;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the column reordering should be allowed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the column reordering should be allowed, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-When a column is initially dragged by the user, the delegate is first called with a `newColumnIndex` value of `-1`. Returning [`false`](https://developer.apple.com/documentation/swift/false) will disallow that column from being reordered at all. Returning [`true`](https://developer.apple.com/documentation/swift/true) allows it to be reordered, and the delegate will be called again when the column reaches a new location.
+When a column is initially dragged by the user, the delegate is first called with a `newColumnIndex` value of `-1`. Returning [`false`](../../Swift/false.md) will disallow that column from being reordered at all. Returning [`true`](../../Swift/true.md) allows it to be reordered, and the delegate will be called again when the column reaches a new location.
 
-The actual `NSTableColumn` instance can be retrieved from the [`tableColumns`](nstableview/tablecolumns.md) array.
+The actual `NSTableColumn` instance can be retrieved from the [`tableColumns`](../nstableview/tablecolumns.md) array.
 
 If this method is not implemented, all columns are considered reorderable.
 

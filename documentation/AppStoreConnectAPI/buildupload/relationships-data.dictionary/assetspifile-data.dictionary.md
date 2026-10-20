@@ -1,7 +1,8 @@
 # BuildUpload.Relationships.AssetSpiFile
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the asset spi file related to a upload.
 
@@ -10,14 +11,14 @@ The data that describes the asset spi file related to a upload.
 
 ## Declaration
 
-```swift
+```
 object BuildUpload.Relationships.AssetSpiFile
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BuildUpload.Relationships.AssetSpiFile.Data](buildupload/relationships-data.dictionary/assetspifile-data.dictionary/data-data.dictionary.md)
+- [object BuildUpload.Relationships.AssetSpiFile.Data](./assetspifile-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

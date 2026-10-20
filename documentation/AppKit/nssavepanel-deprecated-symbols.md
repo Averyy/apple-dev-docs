@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,7 +12,7 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [var allowedFileTypes: [String]?](nssavepanel/allowedfiletypes.md)
+- [var allowedFileTypes: [String]?](./nssavepanel/allowedfiletypes.md)
   An array of filename extensions or UTIs that represent the allowed file types for the panel.
 
 

@@ -1,16 +1,18 @@
 # NSJavaRoot
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The root directory for the app’s Java class files.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSJavaRoot` (Java root directory)
+- **Type**: string
 
 
 ---

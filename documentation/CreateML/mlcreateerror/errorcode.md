@@ -1,7 +1,8 @@
 # errorCode
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric code of this error.
 
@@ -21,11 +22,12 @@ var errorCode: Int { get }
 
 ## See Also
 
-- [var errorUserInfo: [String : Any]](mlcreateerror/erroruserinfo.md)
+### Describing errors in a user interface
+- [var errorUserInfo: [String : Any]](./erroruserinfo.md)
   A dictionary that provides additional information about the error.
-- [var errorDescription: String?](mlcreateerror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized, human-readable description of the error and why it occurred, if applicable.
-- [var failureReason: String?](mlcreateerror/failurereason.md)
+- [var failureReason: String?](./failurereason.md)
   A localized, human-readable reason behind the failure, if applicable.
 
 

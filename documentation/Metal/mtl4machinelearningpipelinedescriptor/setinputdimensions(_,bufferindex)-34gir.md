@@ -1,7 +1,8 @@
 # setInputDimensions(_:bufferIndex:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the dimension of an input tensor at a buffer index.
 
@@ -17,6 +18,10 @@ Sets the dimension of an input tensor at a buffer index.
 
 ```swift
 func setInputDimensions(_ dimensions: MTLTensorExtents?, bufferIndex: Int)
+```
+
+```objc
+- (void) setInputDimensions:(MTLTensorExtents *) dimensions atBufferIndex:(NSInteger) bufferIndex;
 ```
 
 #### Discussion

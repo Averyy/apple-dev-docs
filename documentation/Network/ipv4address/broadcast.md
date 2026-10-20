@@ -1,7 +1,8 @@
 # broadcast
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The local broadcast address (255.255.255.255).
 
@@ -22,17 +23,18 @@ static let broadcast: IPv4Address
 
 ## See Also
 
-- [static let any: IPv4Address](ipv4address/any.md)
+### Setting Well-Known Addresses
+- [static let any: IPv4Address](./any.md)
   The unspecified address (0.0.0.0).
-- [static let loopback: IPv4Address](ipv4address/loopback.md)
+- [static let loopback: IPv4Address](./loopback.md)
   The device’s loopback address (127.0.0.1).
-- [static let allHostsGroup: IPv4Address](ipv4address/allhostsgroup.md)
+- [static let allHostsGroup: IPv4Address](./allhostsgroup.md)
   The multicast group for all hosts on the network segment (224.0.0.1).
-- [static let allRoutersGroup: IPv4Address](ipv4address/allroutersgroup.md)
+- [static let allRoutersGroup: IPv4Address](./allroutersgroup.md)
   The multicast group for all routers on the network segment (224.0.0.2).
-- [static let allReportsGroup: IPv4Address](ipv4address/allreportsgroup.md)
+- [static let allReportsGroup: IPv4Address](./allreportsgroup.md)
   The multicast group for all IGMPv3 reports (224.0.0.22).
-- [static let mdnsGroup: IPv4Address](ipv4address/mdnsgroup.md)
+- [static let mdnsGroup: IPv4Address](./mdnsgroup.md)
   The multicast group for multicast DNS (224.0.0.251).
 
 

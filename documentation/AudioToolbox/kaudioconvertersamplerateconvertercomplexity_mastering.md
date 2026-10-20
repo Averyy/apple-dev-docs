@@ -1,17 +1,18 @@
 # kAudioConverterSampleRateConverterComplexity_Mastering
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a mastering-quality sample rate conversion algorithm. This provides the highest quality and is, computationally, the most expensive option.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ Specifies a mastering-quality sample rate conversion algorithm. This provides th
 var kAudioConverterSampleRateConverterComplexity_Mastering: UInt32 { get }
 ```
 
+```c
+kAudioConverterSampleRateConverterComplexity_Mastering
+```
+
 ## See Also
 
-- [var kAudioConverterSampleRateConverterComplexity_Linear: UInt32](kaudioconvertersamplerateconvertercomplexity_linear.md)
+### Constants
+- [var kAudioConverterSampleRateConverterComplexity_Linear: UInt32](./kaudioconvertersamplerateconvertercomplexity_linear.md)
   Specifies linear interpolation for sample rate conversion. This provides the lowest quality and is, computationally, the least expensive option.
-- [var kAudioConverterSampleRateConverterComplexity_Normal: UInt32](kaudioconvertersamplerateconvertercomplexity_normal.md)
+- [var kAudioConverterSampleRateConverterComplexity_Normal: UInt32](./kaudioconvertersamplerateconvertercomplexity_normal.md)
   Specifies the normal-complexity sample rate conversion algorithm. This is the default value.
-- [var kAudioConverterSampleRateConverterComplexity_MinimumPhase: UInt32](kaudioconvertersamplerateconvertercomplexity_minimumphase.md)
+- [var kAudioConverterSampleRateConverterComplexity_MinimumPhase: UInt32](./kaudioconvertersamplerateconvertercomplexity_minimumphase.md)
 
 
 ---

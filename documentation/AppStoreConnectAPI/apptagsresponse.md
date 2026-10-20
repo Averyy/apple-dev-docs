@@ -1,7 +1,8 @@
 # AppTagsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of tags associated with apps.
 
@@ -10,7 +11,7 @@ A response containing a list of tags associated with apps.
 
 ## Declaration
 
-```swift
+```
 object AppTagsResponse
 ```
 
@@ -23,15 +24,16 @@ object AppTagsResponse
 
 ## See Also
 
-- [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)
+### Objects
+- [object AppAppTagsLinkagesResponse](./appapptagslinkagesresponse.md)
   A response containing the resource identifiers of tags associated with an app.
-- [object AppTag](apptag.md)
+- [object AppTag](./apptag.md)
   A label used to categorize an app for internal organization or to control which App Store territories feature it.
-- [object AppTagResponse](apptagresponse.md)
+- [object AppTagResponse](./apptagresponse.md)
   A response containing a single app tag.
-- [object AppTagTerritoriesLinkagesResponse](apptagterritorieslinkagesresponse.md)
+- [object AppTagTerritoriesLinkagesResponse](./apptagterritorieslinkagesresponse.md)
   A response containing the resource identifiers of territories associated with an app tag.
-- [object AppTagUpdateRequest](apptagupdaterequest.md)
+- [object AppTagUpdateRequest](./apptagupdaterequest.md)
   The request body you use to update an app tag update request.
 
 

@@ -1,7 +1,8 @@
 # networkName
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var networkName: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * networkName;
 ```
 
 

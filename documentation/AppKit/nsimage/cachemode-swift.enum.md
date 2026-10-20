@@ -1,12 +1,13 @@
 # NSImage.CacheMode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the caching policy on a per-image basis.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Constants that specify the caching policy on a per-image basis.
 enum CacheMode
 ```
 
+```c
+enum NSImageCacheMode : NSUInteger;
+```
+
 #### Overview
 
-Set the caching policy using the [`cacheMode`](nsimage/cachemode-swift.property.md) property.
+Set the caching policy using the [`cacheMode`](./cachemode-swift.property.md) property.
 
 The following table specifies the default caching policy for the various types of image representation.
 
@@ -32,32 +37,33 @@ The following table specifies the default caching policy for the various types o
 ## Topics
 
 ### Cache Options
-- [NSImage.CacheMode.default](nsimage/cachemode-swift.enum/default.md)
+- [NSImage.CacheMode.default](./cachemode-swift.enum/default.md)
   Caching is unspecified.
-- [NSImage.CacheMode.always](nsimage/cachemode-swift.enum/always.md)
+- [NSImage.CacheMode.always](./cachemode-swift.enum/always.md)
   Always generate a cache when drawing.
-- [NSImage.CacheMode.bySize](nsimage/cachemode-swift.enum/bysize.md)
+- [NSImage.CacheMode.bySize](./cachemode-swift.enum/bysize.md)
   Cache if the cache size is smaller than the original data.
-- [NSImage.CacheMode.never](nsimage/cachemode-swift.enum/never.md)
+- [NSImage.CacheMode.never](./cachemode-swift.enum/never.md)
   Never cache; always draw direct.
 ### Initializers
-- [init?(rawValue: UInt)](nsimage/cachemode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./cachemode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cacheMode: NSImage.CacheMode](nsimage/cachemode-swift.property.md)
+### Managing Caching Options
+- [var cacheMode: NSImage.CacheMode](./cachemode-swift.property.md)
   The image’s caching mode.
-- [func recache()](nsimage/recache.md)
+- [func recache()](./recache%28%29.md)
   Invalidates and frees offscreen caches of all image representations.
 
 

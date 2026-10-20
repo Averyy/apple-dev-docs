@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An implementation-defined identifier used to correlate this subscriber with information vended by other APIs.
 
@@ -14,6 +15,10 @@ An implementation-defined identifier used to correlate this subscriber with info
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * identifier;
 ```
 
 #### Discussion

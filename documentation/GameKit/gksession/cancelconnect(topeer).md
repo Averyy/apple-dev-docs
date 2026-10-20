@@ -1,17 +1,18 @@
 # cancelConnect(toPeer:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a pending request to connect to another iOS device.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- macOS 10.8+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -19,11 +20,15 @@ Cancels a pending request to connect to another iOS device.
 func cancelConnect(toPeer peerID: String!)
 ```
 
+```objc
+- (void) cancelConnectToPeer:(NSString *) peerID;
+```
+
 #### Discussion
 
-Your application previously called [`connect(toPeer:withTimeout:)`](gksession/connect(topeer:withtimeout:).md) to create a connection to another iOS device. When your application cancels the connection attempt, both delegates’ [`session(_:connectionWithPeerFailed:withError:)`](gksessiondelegate/session(_:connectionwithpeerfailed:witherror:).md) methods are called.
+Your application previously called [`connect(toPeer:withTimeout:)`](./connect%28topeer,withtimeout%29.md) to create a connection to another iOS device. When your application cancels the connection attempt, both delegates’ [`session(_:connectionWithPeerFailed:withError:)`](../gksessiondelegate/session%28_,connectionwithpeerfailed,witherror%29.md) methods are called.
 
-If your application already connected to the peer, your application should call [`disconnectFromAllPeers()`](gksession/disconnectfromallpeers().md) instead.
+If your application already connected to the peer, your application should call [`disconnectFromAllPeers()`](./disconnectfromallpeers%28%29.md) instead.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ If your application already connected to the peer, your application should call 
 
 ## See Also
 
-- [func connect(toPeer: String!, withTimeout: TimeInterval)](gksession/connect(topeer:withtimeout:).md)
+### Connecting to a Remote Peer
+- [func connect(toPeer: String!, withTimeout: TimeInterval)](./connect%28topeer,withtimeout%29.md)
   Creates a connection to another iOS device.
 
 

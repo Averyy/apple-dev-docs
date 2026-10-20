@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-palettization-pe
 
 # Performance
 
-**
-
-- [.md](../_sources/source/opt-palettization-perf.md)
-- **
-
-.pdf
-
-**
-
-# Performance
-
- Table of contents 
-
-## Contents
-
-# Performance
-
 Since palettization reduces the size of each weight value, the amount of data to be moved is reduced during prediction.
 This can lead to benefits in memory-bottlenecked models. Note that this latency advantage is available only when
 palettized weights are loaded and are decompressed “just in time” for computation. Starting with `iOS17/macOS14`, this is
@@ -53,35 +36,33 @@ The latency numbers were captured using the Xcode **Performance** tab, using the
 
 | Model Name | Task | Pre-trained Weights | Dataset | Accuracy Metric |
 | --- | --- | --- | --- | --- |
-| MobileNetv2-1.0 | Image Classification | Torchvision | ImageNet | Top-1 Accuracy (%) |
-| MobileNetv3-small | Image Classification | Torchvision | ImageNet | Top-1 Accuracy (%) |
-| ResNet50 | Image Classification | Torchvision | ImageNet | Top-1 Accuracy (%) |
-| MobileViTv2-1.0 | Image Classification | cvnets | ImageNet | Top-1 Accuracy (%) |
-| CenterNet (ResNet34 backbone) | Object Detection | Torchvisionbackbone | MS-COCO | mAP |
+| MobileNetv2-1.0 | Image Classification | [Torchvision](https://download.pytorch.org/models/mobilenet_v2-b0353104.pth) | [ImageNet](https://pytorch.org/vision/main/generated/torchvision.datasets.ImageNet.html) | Top-1 Accuracy (%) |
+| MobileNetv3-small | Image Classification | [Torchvision](https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth) | [ImageNet](https://pytorch.org/vision/main/generated/torchvision.datasets.ImageNet.html) | Top-1 Accuracy (%) |
+| ResNet50 | Image Classification | [Torchvision](https://download.pytorch.org/models/resnet50-0676ba61.pth) | [ImageNet](https://pytorch.org/vision/main/generated/torchvision.datasets.ImageNet.html) | Top-1 Accuracy (%) |
+| MobileViTv2-1.0 | Image Classification | cvnets | [ImageNet](https://pytorch.org/vision/main/generated/torchvision.datasets.ImageNet.html) | Top-1 Accuracy (%) |
+| CenterNet (ResNet34 backbone) | Object Detection | Torchvision [backbone](https://download.pytorch.org/models/resnet34-b627a593.pth) | [MS-COCO](https://pytorch.org/vision/main/generated/torchvision.datasets.CocoDetection.html#torchvision.datasets.CocoDetection) | mAP |
 
 ### Results
 
 | Model Name | Config | Optimization Algorithm | Compression Ratio | Latency in ms (per batch) |
 | --- | --- | --- | --- | --- |
-| MobileNetv2-1.0 | Float16 | n/a | 1.0 | 0.48 |
-| MobileNetv2-1.0 | 2 bit | Differentiable K-Means | 5.92 | 0.47 |
-| MobileNetv2-1.0 | 4 bit | Differentiable K-Means | 3.38 | 0.45 |
-| MobileNetv2-1.0 | 6 bit | K-Means | 2.54 | 0.48 |
-| MobileNetv2-1.0 | 8 bit | K-Means | 1.97 | 0.45 |
-| MobileNetv3-small | Float16 | n/a | 1.0 | 0.13 |
-| MobileNetv3-small | 2 bit | Differentiable K-Means | 5.82 | 0.13 |
-| MobileNetv3-small | 4 bit | Differentiable K-Means | 3.47 | 0.13 |
-| MobileNetv3-small | 6 bit | K-Means | 2.6 | 0.13 |
-| MobileNetv3-small | 8 bit | K-Means | 1.93 | 0.13 |
-| ResNet50 | Float16 | n/a | 1.0 | 1.52 |
-| ResNet50 | 2 bit | Differentiable K-Means | 7.63 | 1.43 |
-| ResNet50 | 4 bit | Differentiable K-Means | 3.9 | 1.41 |
-| ResNet50 | 6 bit | K-Means | 2.65 | 1.37 |
-| ResNet50 | 8 bit | K-Means | 1.99 | 1.4 |
-| CenterNet (ResNet34 backbone) | Float16 | n/a | 1.0 | 6.85 |
-| CenterNet (ResNet34 backbone) | 2 bit | Differentiable K-Means | 7.71 | 6.37 |
-| CenterNet (ResNet34 backbone) | 4 bit | Differentiable K-Means | 3.94 | 6.67 |
-| CenterNet (ResNet34 backbone) | 6 bit | K-Means | 2.65 | 6.71 |
-| CenterNet (ResNet34 backbone) | 8 bit | K-Means | 2.0 | 6.85 |
-
-** Contents
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/MobileNetV2Alpha1.mlpackage.zip) | Float16 | n/a | 1.0 | 0.48 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV2Alpha1ScalarPalettization2Bit.mlpackage.zip) | [2 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV2Alpha1ScalarPalettization2Bit.yaml) | Differentiable K-Means | 5.92 | 0.47 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV2Alpha1ScalarPalettization4Bit.mlpackage.zip) | [4 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV2Alpha1ScalarPalettization4Bit.yaml) | Differentiable K-Means | 3.38 | 0.45 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/MobileNetV2Alpha1ScalarPalettization6Bit.mlpackage.zip) | 6 bit | K-Means | 2.54 | 0.48 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/MobileNetV2Alpha1ScalarPalettization8Bit.mlpackage.zip) | 8 bit | K-Means | 1.97 | 0.45 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/MobileNetV3Small.mlpackage.zip) | Float16 | n/a | 1.0 | 0.13 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV3SmallScalarPalettization2Bit.mlpackage.zip) | [2 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV3SmallScalarPalettization2Bit.yaml) | Differentiable K-Means | 5.82 | 0.13 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV3SmallScalarPalettization4Bit.mlpackage.zip) | [4 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/MobileNetV3SmallScalarPalettization4Bit.yaml) | Differentiable K-Means | 3.47 | 0.13 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/MobileNetV3SmallScalarPalettization6Bit.mlpackage.zip) | 6 bit | K-Means | 2.6 | 0.13 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/MobileNetV3SmallScalarPalettization8Bit.mlpackage.zip) | 8 bit | K-Means | 1.93 | 0.13 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/ResNet50.mlpackage.zip) | Float16 | n/a | 1.0 | 1.52 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/ResNet50ScalarPalettization2Bit.mlpackage.zip) | [2 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/ResNet50ScalarPalettization2Bit.yaml) | Differentiable K-Means | 7.63 | 1.43 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/ResNet50ScalarPalettization4Bit.mlpackage.zip) | [4 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/ResNet50ScalarPalettization4Bit.yaml) | Differentiable K-Means | 3.9 | 1.41 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/ResNet50ScalarPalettization6Bit.mlpackage.zip) | 6 bit | K-Means | 2.65 | 1.37 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/ResNet50ScalarPalettization8Bit.mlpackage.zip) | 8 bit | K-Means | 1.99 | 1.4 |
+| [CenterNet (ResNet34 backbone)](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/CenterNetResNet34.mlpackage.zip) | Float16 | n/a | 1.0 | 6.85 |
+| [CenterNet (ResNet34 backbone)](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/CenterNetResNet34ScalarPalettization2Bit.mlpackage.zip) | [2 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/CenterNetResNet34ScalarPalettization2Bit.yaml) | Differentiable K-Means | 7.71 | 6.37 |
+| [CenterNet (ResNet34 backbone)](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/CenterNetResNet34ScalarPalettization4Bit.mlpackage.zip) | [4 bit](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/palettized/CenterNetResNet34ScalarPalettization4Bit.yaml) | Differentiable K-Means | 3.94 | 6.67 |
+| [CenterNet (ResNet34 backbone)](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/CenterNetResNet34ScalarPalettization6Bit.mlpackage.zip) | 6 bit | K-Means | 2.65 | 6.71 |
+| [CenterNet (ResNet34 backbone)](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/palettized/CenterNetResNet34ScalarPalettization8Bit.mlpackage.zip) | 8 bit | K-Means | 2.0 | 6.85 |

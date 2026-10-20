@@ -1,12 +1,13 @@
 # NSAnimationDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-A set of optional methods implemented by delegates of [`NSAnimation`](nsanimation.md) objects.
+A set of optional methods implemented by delegates of [`NSAnimation`](./nsanimation.md) objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,31 +15,36 @@ A set of optional methods implemented by delegates of [`NSAnimation`](nsanimatio
 protocol NSAnimationDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSAnimationDelegate <NSObject>
+```
+
 ## Topics
 
 ### Controlling and Monitoring an Animation
-- [func animationDidEnd(NSAnimation)](nsanimationdelegate/animationdidend(_:).md)
+- [func animationDidEnd(NSAnimation)](./nsanimationdelegate/animationdidend%28_%29.md)
   Sent to the delegate when the specified animation completes its run.
-- [func animationDidStop(NSAnimation)](nsanimationdelegate/animationdidstop(_:).md)
+- [func animationDidStop(NSAnimation)](./nsanimationdelegate/animationdidstop%28_%29.md)
   Sent to the delegate when the specified animation is stopped before it completes its run.
-- [func animationShouldStart(NSAnimation) -> Bool](nsanimationdelegate/animationshouldstart(_:).md)
+- [func animationShouldStart(NSAnimation) -> Bool](./nsanimationdelegate/animationshouldstart%28_%29.md)
   Sent to the delegate just after an animation is started.
-- [func animation(NSAnimation, valueForProgress: NSAnimation.Progress) -> Float](nsanimationdelegate/animation(_:valueforprogress:).md)
+- [func animation(NSAnimation, valueForProgress: NSAnimation.Progress) -> Float](./nsanimationdelegate/animation%28_,valueforprogress%29.md)
   Requests a custom curve value for the current progress value.
 ### Managing Progress Marks
-- [func animation(NSAnimation, didReachProgressMark: NSAnimation.Progress)](nsanimationdelegate/animation(_:didreachprogressmark:).md)
+- [func animation(NSAnimation, didReachProgressMark: NSAnimation.Progress)](./nsanimationdelegate/animation%28_,didreachprogressmark%29.md)
   Sent to the delegate when an animation reaches a specific progress mark.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSTitlebarAccessoryViewController](nstitlebaraccessoryviewcontroller.md)
+- [NSTitlebarAccessoryViewController](./nstitlebaraccessoryviewcontroller.md)
 
 ## See Also
 
-- [class NSAnimation](nsanimation.md)
+### Custom Animations
+- [class NSAnimation](./nsanimation.md)
   An object that manages the timing and progress of animations in the user interface.
 
 

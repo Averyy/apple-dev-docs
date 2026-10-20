@@ -1,7 +1,8 @@
 # merchantIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the merchant that makes the request.
 
@@ -17,19 +18,24 @@ A value that represents the merchant that makes the request.
 var merchantIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * merchantIdentifier;
+```
+
 #### Discussion
 
-This property identifies the merchant making the request, and must match one of the merchant identifiers in the app’s entitlement. For information about configuring the entitlement, see [`com.apple.developer.in-app-identity-presentment.merchant-identifiers`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers).
+This property identifies the merchant making the request, and must match one of the merchant identifiers in the app’s entitlement. For information about configuring the entitlement, see [`com.apple.developer.in-app-identity-presentment.merchant-identifiers`](../../BundleResources/entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers.md).
 
-Set this property before you invoke [`requestDocument(_:completion:)`](pkidentityauthorizationcontroller/requestdocument(_:completion:).md).
+Set this property before you invoke [`requestDocument(_:completion:)`](../pkidentityauthorizationcontroller/requestdocument%28_,completion%29.md).
 
 ## See Also
 
-- [var descriptor: (any PKIdentityDocumentDescriptor)?](pkidentityrequest/descriptor.md)
+### Configuring an identity request
+- [var descriptor: (any PKIdentityDocumentDescriptor)?](./descriptor.md)
   The description of the document the app requests.
-- [var nonce: Data?](pkidentityrequest/nonce.md)
+- [var nonce: Data?](./nonce.md)
   An arbitrary number that the signed response playload includes.
-- [var usageDescriptionKey: String?](pkidentityrequest/usagedescriptionkey.md)
+- [var usageDescriptionKey: String?](./usagedescriptionkey.md)
   The key in your app’s information property list that describes the reason for an identity request.
 
 

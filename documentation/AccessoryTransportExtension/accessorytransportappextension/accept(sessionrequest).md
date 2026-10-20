@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Transport Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles a new session request for the accessory.
@@ -21,11 +22,12 @@ Implement this callback and respond to its invocations by the framework.
 
 ## Parameters
 
-- `sessionRequest`: An [`AccessoryTransportSession.Request`](accessorytransportsession/request.md) instance you use to accept or reject the session.
+- `sessionRequest`: An [`AccessoryTransportSession.Request`](../accessorytransportsession/request.md) instance you use to accept or reject the session.
 
 ## See Also
 
-- [AccessoryTransportSession.Request.Decision](accessorytransportsession/request/decision.md)
+### Accepting session requests
+- [AccessoryTransportSession.Request.Decision](../accessorytransportsession/request/decision.md)
   An opaque type returned from the incoming session handler of an event listener.
 
 

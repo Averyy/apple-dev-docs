@@ -1,7 +1,8 @@
 # MTLTensorDataType.int32
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 32-bit signed integer data type.
 
@@ -17,6 +18,10 @@ A 32-bit signed integer data type.
 
 ```swift
 case int32
+```
+
+```c
+MTLTensorDataTypeInt32
 ```
 
 

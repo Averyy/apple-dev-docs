@@ -1,23 +1,28 @@
 # fetchRecordChangesCompletionBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to execute when the system finishes processing all changes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 10.0 (renamed: CKFetchRecordZoneChangesOperation)
+- iPadOS 8.0+ - Deprecated in 10.0 (renamed: CKFetchRecordZoneChangesOperation)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: CKFetchRecordZoneChangesOperation)
+- macOS 10.10+ - Deprecated in 10.12 (renamed: CKFetchRecordZoneChangesOperation)
+- tvOS 9.0+ - Deprecated in 10.0 (renamed: CKFetchRecordZoneChangesOperation)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: CKFetchRecordZoneChangesOperation)
+- watchOS 3.0+ - Deprecated in 3.0 (renamed: CKFetchRecordZoneChangesOperation)
 
 ## Declaration
 
 ```swift
 var fetchRecordChangesCompletionBlock: ((CKServerChangeToken?, Data?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^fetchRecordChangesCompletionBlock)(CKServerChangeToken *serverChangeToken, NSData *clientChangeTokenData, NSError *operationError);
 ```
 
 #### Discussion
@@ -28,7 +33,7 @@ The block returns no value and takes the following parameters:
 - **`clientChangeToken`**: The most recent client change token from the device. If the change token isn’t the most recent change token you provided, the server might not have received the associated changes.
 - **`operationError`**: An error object that contains information about a problem, or `nil` if the system successfully retrieves the changes.
 
-When implementing this block, check the [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property of the operation object to verify that the server was able to deliver all results. If that property is [`true`](https://developer.apple.com/documentation/swift/true), you must create another operation object using the value in the `serverChangeToken` parameter to fetch any remaining changes.
+When implementing this block, check the [`moreComing`](./morecoming.md) property of the operation object to verify that the server was able to deliver all results. If that property is [`true`](../../Swift/true.md), you must create another operation object using the value in the `serverChangeToken` parameter to fetch any remaining changes.
 
 The operation object executes this block only once at the conclusion of the operation. It executes after all individual change blocks, but before the operation’s completion block. The block executes serially with respect to the other progress blocks of the operation.
 
@@ -36,9 +41,10 @@ If you intend to use this block to process results, set it before executing the 
 
 ## See Also
 
-- [var recordChangedBlock: ((CKRecord) -> Void)?](ckfetchrecordchangesoperation/recordchangedblock.md)
+### Processing the Fetch Record Changes Results
+- [var recordChangedBlock: ((CKRecord) -> Void)?](./recordchangedblock.md)
   The block to execute with the contents of a changed record.
-- [var recordWithIDWasDeletedBlock: ((CKRecord.ID) -> Void)?](ckfetchrecordchangesoperation/recordwithidwasdeletedblock.md)
+- [var recordWithIDWasDeletedBlock: ((CKRecord.ID) -> Void)?](./recordwithidwasdeletedblock.md)
   The block to execute with the ID of a deleted record.
 
 

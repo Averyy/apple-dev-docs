@@ -1,7 +1,8 @@
 # init(mapRect:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the largest possible circle centered within the given map rectangle.
 
@@ -11,7 +12,7 @@ Creates the largest possible circle centered within the given map rectangle.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ init(mapRect: MKMapRect)
 
 ## See Also
 
-- [init(MKCircle)](mapcircle/init(_:).md)
+### Creating a map circle
+- [init(MKCircle)](./init%28_%29.md)
   Creates a circle overlay from an existing map circle object.
-- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](mapcircle/init(center:radius:).md)
+- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](./init%28center,radius%29.md)
   Creates a circle with the center coordinate and radius you specify.
 
 

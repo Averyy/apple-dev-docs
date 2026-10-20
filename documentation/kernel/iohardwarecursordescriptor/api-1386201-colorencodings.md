@@ -1,7 +1,8 @@
 # colorEncodings
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An array pointer specifying the pixel values corresponding to the indices into the color table, for indexed pixel types.
 
@@ -10,7 +11,7 @@ An array pointer specifying the pixel values corresponding to the indices into t
 
 ## Declaration
 
-```swift
+```c
 UInt32 *colorEncodings;
 ```
 

@@ -1,14 +1,15 @@
 # KUNCExecute
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.6
 
 ## Declaration
 
-```swift
+```c
 kern_return_t KUNCExecute(char *executionPath, int openAsUser, int pathExecutionType);
 ```
 

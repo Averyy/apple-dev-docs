@@ -1,7 +1,8 @@
 # vortexDirection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Direction vector of the vortex axis. Defaults to (0, 1, 0).
 

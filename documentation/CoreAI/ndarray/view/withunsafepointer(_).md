@@ -1,7 +1,8 @@
 # withUnsafePointer(_:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the provided closure with the backing data and memory layout of this view.
 
@@ -18,6 +19,8 @@ Invokes the provided closure with the backing data and memory layout of this vie
 func withUnsafePointer<R, E>(_ body: (UnsafePointer<Element>, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Return Value
 
 The value returned by the closure.
@@ -26,7 +29,7 @@ The value returned by the closure.
 
 - body: The closure to be invoked with a pointer to the first element, as well as shape and strides of the view.
 
-> **Note**: This function is intended for situations where you may not be working with contiguous layouts, and as such cannot use `contiguousElements`. You are responsible for reading the `strides` passed in when indexing the backing data. If the view has an [`interleaveLayout`](ndarray/view/interleavelayout.md), the strides for that dimension are block strides and must be interpreted accordingly — see [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+> **Note**: This function is intended for situations where you may not be working with contiguous layouts, and as such cannot use `contiguousElements`. You are responsible for reading the `strides` passed in when indexing the backing data. If the view has an [`interleaveLayout`](./interleavelayout.md), the strides for that dimension are block strides and must be interpreted accordingly — see [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md).
 
 
 ---

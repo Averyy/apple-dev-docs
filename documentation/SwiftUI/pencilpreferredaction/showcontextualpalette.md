@@ -1,7 +1,8 @@
 # showContextualPalette
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that toggles the display of the contextual palette, or the undo/redo panel if contextual palette is not available.
 
@@ -20,17 +21,18 @@ static let showContextualPalette: PencilPreferredAction
 
 ## See Also
 
-- [static let ignore: PencilPreferredAction](pencilpreferredaction/ignore.md)
+### Getting the preferred actions
+- [static let ignore: PencilPreferredAction](./ignore.md)
   An action that does nothing.
-- [static let runSystemShortcut: PencilPreferredAction](pencilpreferredaction/runsystemshortcut.md)
+- [static let runSystemShortcut: PencilPreferredAction](./runsystemshortcut.md)
   An action that runs a system shortcut.
-- [static let showColorPalette: PencilPreferredAction](pencilpreferredaction/showcolorpalette.md)
+- [static let showColorPalette: PencilPreferredAction](./showcolorpalette.md)
   An action that toggles the display of the color palette.
-- [static let showInkAttributes: PencilPreferredAction](pencilpreferredaction/showinkattributes.md)
+- [static let showInkAttributes: PencilPreferredAction](./showinkattributes.md)
   An action that toggles the display of the current tool’s ink attributes.
-- [static let switchEraser: PencilPreferredAction](pencilpreferredaction/switcheraser.md)
+- [static let switchEraser: PencilPreferredAction](./switcheraser.md)
   An action that switches between the current tool and the eraser.
-- [static let switchPrevious: PencilPreferredAction](pencilpreferredaction/switchprevious.md)
+- [static let switchPrevious: PencilPreferredAction](./switchprevious.md)
   An action that switches between the current tool and the last used tool.
 
 

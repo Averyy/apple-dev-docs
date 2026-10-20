@@ -1,6 +1,8 @@
 # Capturing stereo audio from built-In microphones
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Sample Code  
+**Download**: [CapturingStereoAudioFromBuiltInMicrophones.zip](https://docs-assets.developer.apple.com/published/210be7e44cf2/CapturingStereoAudioFromBuiltInMicrophones.zip)
 
 Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
 
@@ -21,11 +23,11 @@ Because a user can hold an iOS device in a variety of ways, you need to specify 
 
 This sample app shows how to configure your app to record stereo audio, and helps you visualize changes to the input orientation and data-source selection.
 
-> **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](avaudiosessiondatasourcedescription/supportedpolarpatterns.md) array contains the [`stereo`](avaudiosession/polarpattern/stereo.md) polar pattern.
+> **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](./avaudiosessiondatasourcedescription/supportedpolarpatterns.md) array contains the [`stereo`](./avaudiosession/polarpattern/stereo.md) polar pattern.
 
-##### Configure the Audio Session Category
+##### Configure the audio session category
 
-Recording stereo audio requires the app’s audio session to use either the [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) category. The sample uses the `playAndRecord` category so it can do both. It also passes the `defaultToSpeaker` and `allowBluetooth` options to route the audio to the speaker instead of the receiver, and to Bluetooth headphones.
+Recording stereo audio requires the app’s audio session to use either the [`record`](./avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](./avaudiosession/category-swift.struct/playandrecord.md) category. The sample uses the `playAndRecord` category so it can do both. It also passes the `defaultToSpeaker` and `allowBluetooth` options to route the audio to the speaker instead of the receiver, and to Bluetooth headphones.
 
 ```swift
 func setupAudioSession() {
@@ -39,7 +41,7 @@ func setupAudioSession() {
 }
 ```
 
-##### Select and Configure a Built in Microphone
+##### Select and configure a built-In microphone
 
 An iOS device’s built-in microphone input consists of an array of physical microphones and beamformers, each represented as an instance of `AVAudioSessionDataSourceDescription`. The sample app finds the built-in microphone input by querying the available inputs for the one where the port type equals the built-in microphone, and sets it as the preferred input.
 
@@ -64,7 +66,7 @@ private func enableBuiltInMic() {
 }
 ```
 
-##### Configure the Microphone Inputs Directionality
+##### Configure the microphone input’s directionality
 
 To configure the microphone input’s directionality, the sample sets its data source’s preferred polar pattern and the session’s input orientation. It performs this configuration in its `selectRecordingOption(_:orientation)`  method, which it calls whenever the user rotates the device or changes the recording option selection.
 
@@ -112,19 +114,20 @@ This method finds the data source with the selected name, sets its preferred pol
 
 ## See Also
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+### System audio
+- [Handling audio interruptions](./handling-audio-interruptions.md)
   Observe audio session notifications to ensure that your app responds appropriately to interruptions.
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](./responding-to-audio-route-changes.md)
   Observe audio session notifications to ensure that your app responds appropriately to route changes.
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](./routing-audio-to-specific-devices-in-multidevice-sessions.md)
   Map audio channels to specific devices in multiroute sessions for recording and playback.
-- [Adding synthesized speech to calls](adding-synthesized-speech-to-calls.md)
+- [Adding synthesized speech to calls](./adding-synthesized-speech-to-calls.md)
   Provide a more accessible experience by adding your app’s audio to a call.
-- [class AVAudioSession](avaudiosession.md)
+- [class AVAudioSession](./avaudiosession.md)
   An object that communicates to the system how you intend to use audio in your app.
-- [class AVAudioApplication](avaudioapplication.md)
+- [class AVAudioApplication](./avaudioapplication.md)
   An object that manages one or more audio sessions that belong to an app.
-- [class AVAudioRoutingArbiter](avaudioroutingarbiter.md)
+- [class AVAudioRoutingArbiter](./avaudioroutingarbiter.md)
   An object for configuring macOS apps to participate in AirPods Automatic Switching.
 
 

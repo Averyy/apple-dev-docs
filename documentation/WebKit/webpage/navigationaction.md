@@ -1,7 +1,8 @@
 # WebPage.NavigationAction
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains information about an action that causes navigation to occur.
 
@@ -26,48 +27,49 @@ A `NavigationAction` value is intended to be used to make policy decisions about
 ## Topics
 
 ### Instance Properties
-- [var buttonNumber: Int](webpage/navigationaction/buttonnumber-29qsu.md)
+- [var buttonNumber: Int](./navigationaction/buttonnumber-29qsu.md)
   The number of the mouse button that caused the navigation request.
-- [var buttonNumber: UIEvent.ButtonMask](webpage/navigationaction/buttonnumber-4sg9k.md)
+- [var buttonNumber: UIEvent.ButtonMask](./navigationaction/buttonnumber-4sg9k.md)
   The number of the mouse button that caused the navigation request.
-- [var isContentRuleListRedirect: Bool](webpage/navigationaction/iscontentrulelistredirect.md)
+- [var isContentRuleListRedirect: Bool](./navigationaction/iscontentrulelistredirect.md)
   Whether or not the navigation is a redirect from a content rule list.
-- [var modifierFlags: EventModifiers](webpage/navigationaction/modifierflags.md)
+- [var modifierFlags: EventModifiers](./navigationaction/modifierflags.md)
   The modifier keys that were pressed at the time of the navigation request.
-- [var navigationType: WKNavigationType](webpage/navigationaction/navigationtype.md)
+- [var navigationType: WKNavigationType](./navigationaction/navigationtype.md)
   The type of action that triggered the navigation.
-- [var request: URLRequest](webpage/navigationaction/request.md)
+- [var request: URLRequest](./navigationaction/request.md)
   The URL request object associated with the navigation action.
-- [var shouldPerformDownload: Bool](webpage/navigationaction/shouldperformdownload.md)
+- [var shouldPerformDownload: Bool](./navigationaction/shouldperformdownload.md)
   Indicates whether the web content provided an attribute that indicates a download.
-- [var source: WebPage.FrameInfo](webpage/navigationaction/source.md)
+- [var source: WebPage.FrameInfo](./navigationaction/source.md)
   The frame that requested the navigation.
-- [var target: WebPage.FrameInfo?](webpage/navigationaction/target.md)
+- [var target: WebPage.FrameInfo?](./navigationaction/target.md)
   The frame in which to display the new content.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NavigationDeciding](webpage/navigationdeciding.md)
+### Managing navigation between webpages
+- [protocol NavigationDeciding](./navigationdeciding.md)
   Allows providing custom behavior to handle navigation changes and to coordinate these changes for the web page’s main page.
-- [WebPage.NavigationResponse](webpage/navigationresponse.md)
+- [WebPage.NavigationResponse](./navigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
-- [WebPage.NavigationPreferences](webpage/navigationpreferences.md)
+- [WebPage.NavigationPreferences](./navigationpreferences.md)
   A type that specifies the behaviors to use when loading and rendering page content.
-- [WebPage.FrameInfo](webpage/frameinfo.md)
+- [WebPage.FrameInfo](./frameinfo.md)
   A type that contains information about a frame on a webpage.
-- [WebPage.NavigationPreferences.ContentMode](webpage/navigationpreferences/contentmode.md)
+- [WebPage.NavigationPreferences.ContentMode](./navigationpreferences/contentmode.md)
   Options to indicate how to render web view content.
-- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/upgradetohttpspolicy.md)
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](./navigationpreferences/upgradetohttpspolicy.md)
   Preference for loading a webpage with HTTPS, and how failures should be handled.
-- [WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.enum.md)
+- [WebPage.NavigationPreferences.SecurityRestrictionMode](./navigationpreferences/securityrestrictionmode-swift.enum.md)
   Security restriction modes for WebView content.
-- [WebPage.FormInfo](webpage/forminfo.md)
+- [WebPage.FormInfo](./forminfo.md)
   A type that contains information about a form submission from a webpage.
 
 

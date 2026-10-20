@@ -1,12 +1,13 @@
 # NSPopUpButton.ArrowPosition.noArrow
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Does not display any arrow in the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,12 +15,17 @@ Does not display any arrow in the control.
 case noArrow
 ```
 
+```c
+NSPopUpNoArrow
+```
+
 ## See Also
 
-- [NSPopUpButton.ArrowPosition.arrowAtCenter](nspopupbutton/arrowposition/arrowatcenter.md)
-  Arrow is centered vertically, pointing toward the [`preferredEdge`](nspopupbuttoncell/preferrededge.md).
-- [NSPopUpButton.ArrowPosition.arrowAtBottom](nspopupbutton/arrowposition/arrowatbottom.md)
-  Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](nspopupbuttoncell/preferrededge.md).
+### Constants
+- [NSPopUpButton.ArrowPosition.arrowAtCenter](./arrowatcenter.md)
+  Arrow is centered vertically, pointing toward the [`preferredEdge`](../../nspopupbuttoncell/preferrededge.md).
+- [NSPopUpButton.ArrowPosition.arrowAtBottom](./arrowatbottom.md)
+  Arrow is drawn at the edge of the button, pointing toward the [`preferredEdge`](../../nspopupbuttoncell/preferrededge.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object with a preference.
 
@@ -25,7 +26,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](asauthorizationpublickeycredentialuserverificationpreference/init(rawvalue:).md)
+### Creating the preference
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates the object with a preference.
 
 

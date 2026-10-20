@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing a description of the filter configuration.
 
@@ -18,16 +19,21 @@ A string containing a description of the filter configuration.
 var localizedDescription: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * localizedDescription;
+```
+
 #### Discussion
 
 If this property is set to nil at the time that the configuration is created, it will be automatically set to the display name of the calling app.
 
 ## See Also
 
-- [var isEnabled: Bool](nefiltermanager/isenabled.md)
+### Accessing filter configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean used to toggle the enabled state of the filter.
-- [var providerConfiguration: NEFilterProviderConfiguration?](nefiltermanager/providerconfiguration.md)
-  A [`NEFilterProviderConfiguration`](nefilterproviderconfiguration.md) object containing the filter configuration settings.
+- [var providerConfiguration: NEFilterProviderConfiguration?](./providerconfiguration.md)
+  A [`NEFilterProviderConfiguration`](../nefilterproviderconfiguration.md) object containing the filter configuration settings.
 
 
 ---

@@ -1,7 +1,8 @@
 # exportedContentTypes(visibility:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The types that the instance of a `Transferable` is able to provide a representation for.
 

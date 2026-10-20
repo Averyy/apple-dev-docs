@@ -1,7 +1,8 @@
 # deinterleave(planarDestinationBuffers:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deinterleaves the 8-bit-per-channel, four-channel interleaved buffer and writes the result to an array that contains four planar buffers.
 
@@ -11,7 +12,7 @@ Deinterleaves the 8-bit-per-channel, four-channel interleaved buffer and writes 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Deinterleaves the 8-bit-per-channel, four-channel interleaved buffer and writes 
 ```swift
 func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar8>])
 ```
+
+Available when `Format` is `vImage.Interleaved8x4`.
 
 #### Discussion
 
@@ -30,23 +33,24 @@ Use this function to deinterleave a buffer and overwrite planar buffers with cop
 
 ## See Also
 
-- [func deinterleave(destination: vImage.PixelBuffer<vImage.Planar8x3>)](vimage/pixelbuffer/deinterleave(destination:)-hrhz.md)
+### Deinterleaving pixel buffers
+- [func deinterleave(destination: vImage.PixelBuffer<vImage.Planar8x3>)](./deinterleave%28destination%29-hrhz.md)
   Deinterleaves the 8-bit-per-channel, three-channel interleaved buffer and writes the result to a multiple-plane pixel buffer.
-- [func deinterleave(destination: vImage.PixelBuffer<vImage.Planar8x4>)](vimage/pixelbuffer/deinterleave(destination:)-4bj4f.md)
+- [func deinterleave(destination: vImage.PixelBuffer<vImage.Planar8x4>)](./deinterleave%28destination%29-4bj4f.md)
   Deinterleaves the 8-bit-per-channel, four-channel interleaved buffer and writes the result to a multiple-plane pixel buffer.
-- [func deinterleave(destination: vImage.PixelBuffer<vImage.PlanarFx3>)](vimage/pixelbuffer/deinterleave(destination:)-9gkke.md)
+- [func deinterleave(destination: vImage.PixelBuffer<vImage.PlanarFx3>)](./deinterleave%28destination%29-9gkke.md)
   Deinterleaves the 32-bit-per-channel, three-channel interleaved buffer and writes the result to a multiple-plane pixel buffer.
-- [func deinterleave(destination: vImage.PixelBuffer<vImage.PlanarFx4>)](vimage/pixelbuffer/deinterleave(destination:)-7hep3.md)
+- [func deinterleave(destination: vImage.PixelBuffer<vImage.PlanarFx4>)](./deinterleave%28destination%29-7hep3.md)
   Deinterleaves the 32-bit-per-channel, four-channel interleaved buffer and writes the result to a multiple-plane pixel buffer.
-- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar8>])](vimage/pixelbuffer/deinterleave(planardestinationbuffers:)-72108.md)
+- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar8>])](./deinterleave%28planardestinationbuffers%29-72108.md)
   Deinterleaves the 8-bit-per-channel, three-channel interleaved buffer and writes the result to an array that contains three planar buffers.
-- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar16F>])](vimage/pixelbuffer/deinterleave(planardestinationbuffers:)-75uki.md)
+- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar16F>])](./deinterleave%28planardestinationbuffers%29-75uki.md)
   Deinterleaves the 16-bit-per-channel, four-channel interleaved buffer and writes the result to an array that contains four planar buffers.
-- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar16U>])](vimage/pixelbuffer/deinterleave(planardestinationbuffers:)-3irjf.md)
+- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.Planar16U>])](./deinterleave%28planardestinationbuffers%29-3irjf.md)
   Deinterleaves the unsigned 16-bit-per-channel, four-channel interleaved buffer and writes the result to an array that contains four planar buffers.
-- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](vimage/pixelbuffer/deinterleave(planardestinationbuffers:)-2gt2g.md)
+- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](./deinterleave%28planardestinationbuffers%29-2gt2g.md)
   Deinterleaves the 32-bit-per-channel, three-channel interleaved buffer and writes the result to an array that contains three planar buffers.
-- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](vimage/pixelbuffer/deinterleave(planardestinationbuffers:)-iag8.md)
+- [func deinterleave(planarDestinationBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](./deinterleave%28planardestinationbuffers%29-iag8.md)
   Deinterleaves the 32-bit-per-channel, four-channel interleaved buffer and writes the result to an array that contains four planar buffers.
 
 

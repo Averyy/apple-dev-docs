@@ -1,7 +1,8 @@
 # minute(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the date format style to use the specified minute format style.
 
@@ -26,9 +27,9 @@ A date format style modified to include the specified minute style.
 
 #### Discussion
 
-Values of [`Date.FormatStyle.Symbol.Minute`](date/formatstyle/symbol/minute.md) are [`defaultDigits`](date/formatstyle/symbol/minute/defaultdigits.md) and [`twoDigits`](date/formatstyle/symbol/minute/twodigits.md).
+Values of [`Date.FormatStyle.Symbol.Minute`](./symbol/minute.md) are [`defaultDigits`](./symbol/minute/defaultdigits.md) and [`twoDigits`](./symbol/minute/twodigits.md).
 
-This example shows a variety of [`Date.FormatStyle.Symbol.Minute`](date/formatstyle/symbol/minute.md) format styles applied to a date:
+This example shows a variety of [`Date.FormatStyle.Symbol.Minute`](./symbol/minute.md) format styles applied to a date:
 
 ```swift
 let meetingDate = Date() // Feb 9, 2021 at 3:05 PM
@@ -37,9 +38,9 @@ meetingDate.formatted(Date.FormatStyle().minute(.twoDigits)) // 05
 meetingDate.formatted(Date.FormatStyle().minute()) // 5
 ```
 
-If you don’t provide a format, the [`defaultDigits`](date/formatstyle/symbol/minute/defaultdigits.md) static variable is the default format.
+If you don’t provide a format, the [`defaultDigits`](./symbol/minute/defaultdigits.md) static variable is the default format.
 
-For more information about formatting dates, see [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see [`Date.FormatStyle`](../formatstyle.md).
 
 ## Parameters
 
@@ -47,15 +48,16 @@ For more information about formatting dates, see [`Date.FormatStyle`](date/forma
 
 ## See Also
 
-- [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle](date/formatstyle/hour(_:).md)
+### Specifying the Time Format
+- [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle](./hour%28_%29.md)
   Modifies the date format style to use the specified hour format style.
-- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](date/formatstyle/second(_:).md)
+- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](./second%28_%29.md)
   Modifies the date format style to use the specified second format style.
-- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](date/formatstyle/secondfraction(_:).md)
+- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](./secondfraction%28_%29.md)
   Modifies the date format style to use the specified second fraction format style.
-- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](date/formatstyle/timezone(_:).md)
+- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](./timezone%28_%29.md)
   Modifies the date format style to use the specified time zone format style.
-- [Date.FormatStyle.TimeStyle](date/formatstyle/timestyle.md)
+- [Date.FormatStyle.TimeStyle](./timestyle.md)
   Type that defines time styles varied in length or components included.
 
 

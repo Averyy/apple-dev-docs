@@ -1,7 +1,8 @@
 # hasBackgroundContent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the extension has background content that can run when needed.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the extension has background content that can
 
 ```swift
 var hasBackgroundContent: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL hasBackgroundContent;
 ```
 
 #### Discussion

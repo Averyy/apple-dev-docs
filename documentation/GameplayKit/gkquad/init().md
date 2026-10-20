@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(quadMin: vector_float2, quadMax: vector_float2)](gkquad/init(quadmin:quadmax:).md)
+### Initializers
+- [init(quadMin: vector_float2, quadMax: vector_float2)](./init%28quadmin,quadmax%29.md)
 
 
 ---

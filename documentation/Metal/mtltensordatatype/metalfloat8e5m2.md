@@ -1,7 +1,8 @@
 # MTLTensorDataType.metalFloat8e5m2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit floating point data type with 5 exponent bits, 2 mantissa bits, and 1 sign bit.
 
@@ -17,6 +18,10 @@ An 8-bit floating point data type with 5 exponent bits, 2 mantissa bits, and 1 s
 
 ```swift
 case metalFloat8e5m2
+```
+
+```c
+MTLTensorDataTypeMetalFloat8E5M2
 ```
 
 

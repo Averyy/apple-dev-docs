@@ -1,7 +1,8 @@
 # InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase App Store review screenshot.
 
@@ -10,23 +11,23 @@ The request body you use to create an In-App Purchase App Store review screensho
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase App Store review screenshot create request resource.
-- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes) *(required)*
 - `relationships` (InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseAppStoreReviewScreenshots`
 
 
 ---

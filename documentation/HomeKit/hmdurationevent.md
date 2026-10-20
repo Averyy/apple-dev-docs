@@ -1,7 +1,8 @@
 # HMDurationEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that ends after the specified time duration.
 
@@ -19,6 +20,10 @@ An event that ends after the specified time duration.
 class HMDurationEvent
 ```
 
+```objc
+@interface HMDurationEvent : HMTimeEvent
+```
+
 #### Overview
 
 Use a duration event to specify that a different event should end after a period of time.
@@ -26,33 +31,34 @@ Use a duration event to specify that a different event should end after a period
 ## Topics
 
 ### Creating a duration event
-- [init(duration: TimeInterval)](hmdurationevent/init(duration:).md)
+- [init(duration: TimeInterval)](./hmdurationevent/init%28duration%29.md)
   Creates a duration event with the specified time duration.
 ### Inspecting a duration event
-- [var duration: TimeInterval](hmdurationevent/duration.md)
+- [var duration: TimeInterval](./hmdurationevent/duration.md)
   The event’s duration, in seconds.
 
 ## Relationships
 
 ### Inherits From
-- [HMTimeEvent](hmtimeevent.md)
+- [HMTimeEvent](./hmtimeevent.md)
 ### Inherited By
-- [HMMutableDurationEvent](hmmutabledurationevent.md)
+- [HMMutableDurationEvent](./hmmutabledurationevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMMutableDurationEvent](hmmutabledurationevent.md)
+### Durations
+- [class HMMutableDurationEvent](./hmmutabledurationevent.md)
   A mutable event that fires after the specified time duration.
 
 

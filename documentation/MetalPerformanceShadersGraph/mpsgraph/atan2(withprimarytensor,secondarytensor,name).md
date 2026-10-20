@@ -1,7 +1,8 @@
 # atan2(withPrimaryTensor:secondaryTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elementwise two-argument arctangent of the input tensors.
 
@@ -17,6 +18,10 @@ Returns the elementwise two-argument arctangent of the input tensors.
 
 ```swift
 func atan2(withPrimaryTensor primaryTensor: MPSGraphTensor, secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) atan2WithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

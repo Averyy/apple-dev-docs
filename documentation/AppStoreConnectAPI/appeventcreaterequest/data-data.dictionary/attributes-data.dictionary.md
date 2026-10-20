@@ -1,7 +1,8 @@
 # AppEventCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app event create request resource.
 
@@ -10,30 +11,31 @@ Attributes that describe an app event create request resource.
 
 ## Declaration
 
-```swift
+```
 object AppEventCreateRequest.Data.Attributes
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventCreateRequest.Data.Attributes.TerritorySchedules](appeventcreaterequest/data-data.dictionary/attributes-data.dictionary/territoryschedules-data.dictionary.md)
+- [object AppEventCreateRequest.Data.Attributes.TerritorySchedules](./attributes-data.dictionary/territoryschedules-data.dictionary.md)
   The per-territory schedule attributes within an app event create request, specifying the start, end, publish dates, and targeted territories.
 
 ## Properties
 
-- `badge` (string)
+- `badge` (string): **Allowed Values**: `LIVE_EVENT`, `PREMIERE`, `CHALLENGE`, `COMPETITION`, `NEW_SEASON`, `MAJOR_UPDATE`, `SPECIAL_EVENT`
 - `deepLink` (uri)
 - `primaryLocale` (string)
-- `priority` (string)
+- `priority` (string): **Allowed Values**: `HIGH`, `NORMAL`
 - `purchaseRequirement` (string)
-- `purpose` (string)
+- `purpose` (string): **Allowed Values**: `APPROPRIATE_FOR_ALL_USERS`, `ATTRACT_NEW_USERS`, `KEEP_ACTIVE_USERS_INFORMED`, `BRING_BACK_LAPSED_USERS`
 - `referenceName` (string) *(required)*
 - `territorySchedules` ([AppEventCreateRequest.Data.Attributes.TerritorySchedules])
 
 ## See Also
 
-- [object AppEventCreateRequest.Data.Relationships](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppEventCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

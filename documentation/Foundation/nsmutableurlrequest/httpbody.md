@@ -1,7 +1,8 @@
 # httpBody
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request body.
 
@@ -20,19 +21,24 @@ The request body.
 var httpBody: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * HTTPBody;
+```
+
 #### Discussion
 
-The request body is sent as the message body of the request, as in an HTTP `POST` request. Setting the HTTP body data clears any input stream in [`httpBodyStream`](nsmutableurlrequest/httpbodystream.md). These values are mutually exclusive.
+The request body is sent as the message body of the request, as in an HTTP `POST` request. Setting the HTTP body data clears any input stream in [`httpBodyStream`](./httpbodystream.md). These values are mutually exclusive.
 
 ## See Also
 
-- [var httpMethod: String](nsmutableurlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String](./httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsmutableurlrequest/url.md)
+- [var url: URL?](./url.md)
   The URL being requested.
-- [var httpBodyStream: InputStream?](nsmutableurlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The request body as an input stream.
-- [var mainDocumentURL: URL?](nsmutableurlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL.
 
 

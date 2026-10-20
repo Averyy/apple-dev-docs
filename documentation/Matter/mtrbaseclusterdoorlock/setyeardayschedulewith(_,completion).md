@@ -1,7 +1,8 @@
 # setYearDayScheduleWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setYearDayScheduleWith(_ params: MTRDoorLockClusterSetYearDayScheduleParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setYearDayScheduleWith(_ params: MTRDoorLockClusterSetYearDayScheduleParams) async throws
+```
+
+```objc
+- (void) setYearDayScheduleWithParams:(MTRDoorLockClusterSetYearDayScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

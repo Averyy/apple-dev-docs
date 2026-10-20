@@ -1,7 +1,8 @@
 # informativeText()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the (optional) informative text currently displayed in the panel.
 
@@ -14,9 +15,14 @@ Returns the (optional) informative text currently displayed in the panel.
 func informativeText() -> String!
 ```
 
+```objc
+- (NSString *) informativeText;
+```
+
 ## See Also
 
-- [func setInformativeText(String!)](sfcertificatetrustpanel/setinformativetext(_:).md)
+### Controlling the Appearance of a Certificate Trust Panel
+- [func setInformativeText(String!)](./setinformativetext%28_%29.md)
   Sets the (optional) informative text displayed in the panel.
 
 

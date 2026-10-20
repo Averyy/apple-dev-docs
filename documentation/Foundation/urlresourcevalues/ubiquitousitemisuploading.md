@@ -1,7 +1,8 @@
 # ubiquitousItemIsUploading
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system is uploading the item.
 
@@ -22,35 +23,36 @@ var ubiquitousItemIsUploading: Bool? { get }
 
 ## See Also
 
-- [var isUbiquitousItem: Bool?](urlresourcevalues/isubiquitousitem.md)
+### Ubiquitous values
+- [var isUbiquitousItem: Bool?](./isubiquitousitem.md)
   A Boolean value that indicates whether the item is in the iCloud storage.
-- [var ubiquitousItemIsShared: Bool?](urlresourcevalues/ubiquitousitemisshared.md)
+- [var ubiquitousItemIsShared: Bool?](./ubiquitousitemisshared.md)
   A Boolean value that indicates a shared item.
-- [var ubiquitousItemIsExcludedFromSync: Bool?](urlresourcevalues/ubiquitousitemisexcludedfromsync.md)
+- [var ubiquitousItemIsExcludedFromSync: Bool?](./ubiquitousitemisexcludedfromsync.md)
   A Boolean value that indicates the system excludes the item from syncing.
-- [var ubiquitousSharedItemCurrentUserPermissions: URLUbiquitousSharedItemPermissions?](urlresourcevalues/ubiquitousshareditemcurrentuserpermissions.md)
+- [var ubiquitousSharedItemCurrentUserPermissions: URLUbiquitousSharedItemPermissions?](./ubiquitousshareditemcurrentuserpermissions.md)
   The current user’s permissions for the shared item.
-- [var ubiquitousSharedItemCurrentUserRole: URLUbiquitousSharedItemRole?](urlresourcevalues/ubiquitousshareditemcurrentuserrole.md)
+- [var ubiquitousSharedItemCurrentUserRole: URLUbiquitousSharedItemRole?](./ubiquitousshareditemcurrentuserrole.md)
   The current user’s role for the shared item.
-- [var ubiquitousSharedItemMostRecentEditorNameComponents: PersonNameComponents?](urlresourcevalues/ubiquitousshareditemmostrecenteditornamecomponents.md)
+- [var ubiquitousSharedItemMostRecentEditorNameComponents: PersonNameComponents?](./ubiquitousshareditemmostrecenteditornamecomponents.md)
   The name components of the most recent editor of the shared item.
-- [var ubiquitousSharedItemOwnerNameComponents: PersonNameComponents?](urlresourcevalues/ubiquitousshareditemownernamecomponents.md)
+- [var ubiquitousSharedItemOwnerNameComponents: PersonNameComponents?](./ubiquitousshareditemownernamecomponents.md)
   The name components of the owner of the shared item.
-- [var ubiquitousItemContainerDisplayName: String?](urlresourcevalues/ubiquitousitemcontainerdisplayname.md)
+- [var ubiquitousItemContainerDisplayName: String?](./ubiquitousitemcontainerdisplayname.md)
   The name of the item’s container as the system displays it to users.
-- [var ubiquitousItemDownloadRequested: Bool?](urlresourcevalues/ubiquitousitemdownloadrequested.md)
+- [var ubiquitousItemDownloadRequested: Bool?](./ubiquitousitemdownloadrequested.md)
   A Boolean value that indicates whether the user or the system requests a download of the item.
-- [var ubiquitousItemDownloadingError: NSError?](urlresourcevalues/ubiquitousitemdownloadingerror.md)
+- [var ubiquitousItemDownloadingError: NSError?](./ubiquitousitemdownloadingerror.md)
   The error when downloading the item from iCloud fails.
-- [var ubiquitousItemDownloadingStatus: URLUbiquitousItemDownloadingStatus?](urlresourcevalues/ubiquitousitemdownloadingstatus.md)
+- [var ubiquitousItemDownloadingStatus: URLUbiquitousItemDownloadingStatus?](./ubiquitousitemdownloadingstatus.md)
   The download status of the item.
-- [var ubiquitousItemHasUnresolvedConflicts: Bool?](urlresourcevalues/ubiquitousitemhasunresolvedconflicts.md)
+- [var ubiquitousItemHasUnresolvedConflicts: Bool?](./ubiquitousitemhasunresolvedconflicts.md)
   A Boolean value that indicates whether the item has outstanding conflicts.
-- [var ubiquitousItemIsDownloading: Bool?](urlresourcevalues/ubiquitousitemisdownloading.md)
+- [var ubiquitousItemIsDownloading: Bool?](./ubiquitousitemisdownloading.md)
   A Boolean value that indicates whether the system is downloading the item.
-- [var ubiquitousItemIsUploaded: Bool?](urlresourcevalues/ubiquitousitemisuploaded.md)
+- [var ubiquitousItemIsUploaded: Bool?](./ubiquitousitemisuploaded.md)
   A Boolean value that indicates whether data is present in the cloud for the item.
-- [var ubiquitousItemUploadingError: NSError?](urlresourcevalues/ubiquitousitemuploadingerror.md)
+- [var ubiquitousItemUploadingError: NSError?](./ubiquitousitemuploadingerror.md)
   The error when uploading the item to iCloud fails.
 
 

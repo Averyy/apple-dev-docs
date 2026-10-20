@@ -1,7 +1,8 @@
 # SecurityInfoCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get security-related information about a device.
 
@@ -16,19 +17,19 @@ The command to get security-related information about a device.
 
 ## Declaration
 
-```swift
+```
 object SecurityInfoCommand
 ```
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
-- [Managing passcodes](managing-passcodes.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
+- [Managing passcodes](./managing-passcodes.md)
 
 ## Topics
 
 ### Objects
-- [object SecurityInfoCommand.Command](securityinfocommand/command-data.dictionary.md)
+- [object SecurityInfoCommand.Command](./securityinfocommand/command-data.dictionary.md)
   The command to get security-related information about a device.
 
 ## Properties
@@ -38,7 +39,8 @@ object SecurityInfoCommand
 
 ## See Also
 
-- [object SecurityInfoResponse](securityinforesponse.md)
+### Commands and responses
+- [object SecurityInfoResponse](./securityinforesponse.md)
   A response from the device after it processes the command to get security-related information about a device.
 
 

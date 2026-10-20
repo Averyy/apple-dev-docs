@@ -1,7 +1,8 @@
 # AudioSessionID
 
 **Framework**: Core Audio Types  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A unique identifier of an audio session.
 
@@ -20,21 +21,26 @@ A unique identifier of an audio session.
 typealias AudioSessionID = UInt32
 ```
 
+```c
+typedef uint32_t AudioSessionID;
+```
+
 ## See Also
 
-- [typealias AVAudioInteger](avaudiointeger.md)
+### Common Types
+- [typealias AVAudioInteger](./avaudiointeger.md)
   An integer type for audio operations.
-- [typealias AVAudioUInteger](avaudiouinteger.md)
+- [typealias AVAudioUInteger](./avaudiouinteger.md)
   An unsigned integer type for audio operations.
-- [var kAudioUnitSampleFractionBits: Int32](kaudiounitsamplefractionbits.md)
+- [var kAudioUnitSampleFractionBits: Int32](./kaudiounitsamplefractionbits.md)
   The number of fractional bits in fixed-point samples.
-- [var COREAUDIOTYPES_VERSION: Int32](coreaudiotypes_version.md)
+- [var COREAUDIOTYPES_VERSION: Int32](./coreaudiotypes_version.md)
   A value that represents the Core Audio Types version.
-- [typealias AudioSampleType](audiosampletype.md)
+- [typealias AudioSampleType](./audiosampletype.md)
   The canonical audio data sample type for input and output.
-- [typealias AudioUnitSampleType](audiounitsampletype.md)
+- [typealias AudioUnitSampleType](./audiounitsampletype.md)
   The canonical audio data sample type for audio processing.
-- [struct AudioFormatListItem](audioformatlistitem.md)
+- [struct AudioFormatListItem](./audioformatlistitem.md)
 
 
 ---

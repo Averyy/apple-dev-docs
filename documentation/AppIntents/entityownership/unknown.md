@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A state that indicates that entity ownership or sharing status is unknown or unspecified.
 
@@ -22,9 +23,10 @@ static let unknown: EntityOwnership
 
 ## See Also
 
-- [static let `public`: EntityOwnership](entityownership/public.md)
+### Scoping entity ownership and sharing
+- [static let `public`: EntityOwnership](./public.md)
   A state that indicates the entity represents data a person shares publicly.
-- [static let shared: EntityOwnership](entityownership/shared.md)
+- [static let shared: EntityOwnership](./shared.md)
   A state that indicates a person shares the entity with specific collaborators.
 
 

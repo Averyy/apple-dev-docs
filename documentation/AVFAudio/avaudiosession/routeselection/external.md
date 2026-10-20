@@ -1,7 +1,8 @@
 # AVAudioSession.RouteSelection.external
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An external device is selected.
 
@@ -19,9 +20,10 @@ case external
 
 ## See Also
 
-- [AVAudioSession.RouteSelection.none](avaudiosession/routeselection/none.md)
+### Identifying the selected route
+- [AVAudioSession.RouteSelection.none](./none.md)
   No route is selected.
-- [AVAudioSession.RouteSelection.local](avaudiosession/routeselection/local.md)
+- [AVAudioSession.RouteSelection.local](./local.md)
   The local device is selected.
 
 

@@ -1,7 +1,8 @@
 # HighlightHoverEffect
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A hover effect that highlights views using a light source to indicate position.
 
@@ -20,26 +21,27 @@ struct HighlightHoverEffect
 
 #### Overview
 
-You can also use [`highlight`](customhovereffect/highlight.md) to construct this hover effect.
+You can also use [`highlight`](./customhovereffect/highlight.md) to construct this hover effect.
 
 ## Topics
 
 ### Initializers
-- [init()](highlighthovereffect/init.md)
+- [init()](./highlighthovereffect/init%28%29.md)
   Creates a highlight hover effect.
 
 ## Relationships
 
 ### Conforms To
-- [CustomHoverEffect](customhovereffect.md)
+- [CustomHoverEffect](./customhovereffect.md)
 
 ## See Also
 
-- [struct AutomaticHoverEffect](automatichovereffect.md)
+### Supporting types
+- [struct AutomaticHoverEffect](./automatichovereffect.md)
   The default hover effect based on the surrounding context.
-- [struct EmptyHoverEffect](emptyhovereffect.md)
+- [struct EmptyHoverEffect](./emptyhovereffect.md)
   A base hover effect used to build additional effects.
-- [struct LiftHoverEffect](lifthovereffect.md)
+- [struct LiftHoverEffect](./lifthovereffect.md)
   A hover effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
 

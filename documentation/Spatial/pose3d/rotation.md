@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pose’s rotation.
 
@@ -20,13 +21,18 @@ The pose’s rotation.
 var rotation: Rotation3D
 ```
 
+```c
+SPRotation3D rotation;
+```
+
 ## See Also
 
-- [var matrix: simd_double4x4](pose3d/matrix.md)
+### Inspecting a 3D pose’s properties
+- [var matrix: simd_double4x4](./matrix.md)
   The pose’s underlying matrix.
-- [var position: Point3D](pose3d/position.md)
+- [var position: Point3D](./position.md)
   The pose’s position.
-- [var inverse: Pose3D](pose3d/inverse.md)
+- [var inverse: Pose3D](./inverse.md)
   The pose’s inverse.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [CS_LINKAGE_APPLICATION_INVALID](3943464-anonymous/cs_linkage_application_invalid.md)
-- [CS_LINKAGE_APPLICATION_OOPJIT](3943464-anonymous/cs_linkage_application_oopjit.md)
-- [CS_LINKAGE_APPLICATION_ROSETTA](3943464-anonymous/cs_linkage_application_rosetta.md)
-- [CS_LINKAGE_APPLICATION_XOJIT](3943464-anonymous/cs_linkage_application_xojit.md)
+- [CS_LINKAGE_APPLICATION_INVALID](./api-3943464-anonymous/cs_linkage_application_invalid.md)
+- [CS_LINKAGE_APPLICATION_OOPJIT](./api-3943464-anonymous/cs_linkage_application_oopjit.md)
+- [CS_LINKAGE_APPLICATION_ROSETTA](./api-3943464-anonymous/cs_linkage_application_rosetta.md)
+- [CS_LINKAGE_APPLICATION_XOJIT](./api-3943464-anonymous/cs_linkage_application_xojit.md)
 
 
 ---

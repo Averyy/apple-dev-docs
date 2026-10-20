@@ -1,7 +1,8 @@
 # NSExtensionActivationSupportsAttachmentsWithMinCount
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The minimum number of attachments that the app extension supports.
 
@@ -11,13 +12,15 @@ The minimum number of attachments that the app extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: integer
+- **Name**: `NSExtensionActivationSupportsAttachmentsWithMinCount`
+- **Type**: integer
 
 ## See Also
 
-- [NSExtensionActivationSupportsAttachmentsWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportsattachmentswithmaxcount.md)
+### Attachments
+- [NSExtensionActivationSupportsAttachmentsWithMaxCount](./nsextensionactivationsupportsattachmentswithmaxcount.md)
   The maximum number of attachments that the app extension supports.
 
 

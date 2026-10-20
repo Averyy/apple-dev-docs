@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata associated with the discovered service, such as the TXT record.
 
@@ -22,13 +23,14 @@ let metadata: NWBrowser.Result.Metadata
 
 ## See Also
 
-- [let endpoint: NWEndpoint](nwbrowser/result/endpoint.md)
+### Evaluating Browser Results
+- [let endpoint: NWEndpoint](./endpoint.md)
   The discovered service endpoint.
-- [let interfaces: [NWInterface]](nwbrowser/result/interfaces.md)
+- [let interfaces: [NWInterface]](./interfaces.md)
   The list of interfaces on which the service was discovered.
-- [NWBrowser.Result.Metadata](nwbrowser/result/metadata-swift.enum.md)
+- [NWBrowser.Result.Metadata](./metadata-swift.enum.md)
   Values associated with discovered services, such as TXT records.
-- [struct NWTXTRecord](nwtxtrecord.md)
+- [struct NWTXTRecord](../../nwtxtrecord.md)
   A dictionary representing a TXT record in a DNS packet.
 
 

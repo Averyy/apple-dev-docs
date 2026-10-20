@@ -1,7 +1,8 @@
 # recessed
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Mounting style where a widget is displayed within a recessed portal
 

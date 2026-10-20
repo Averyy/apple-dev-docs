@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the observer that all of the changes have been enumerated up to the specified sync anchor.
@@ -19,6 +20,10 @@ Tells the observer that all of the changes have been enumerated up to the specif
 func finishEnumeratingChanges(upTo anchor: NSFileProviderSyncAnchor, moreComing: Bool)
 ```
 
+```objc
+- (void) finishEnumeratingChangesUpToSyncAnchor:(NSFileProviderSyncAnchor) anchor moreComing:(BOOL) moreComing;
+```
+
 ## Parameters
 
 - `anchor`: An object used to identify the end of the current batch of changes.
@@ -26,13 +31,14 @@ func finishEnumeratingChanges(upTo anchor: NSFileProviderSyncAnchor, moreComing:
 
 ## See Also
 
-- [func didDeleteItems(withIdentifiers: [NSFileProviderItemIdentifier])](nsfileproviderchangeobserver/diddeleteitems(withidentifiers:).md)
+### Observing Changes
+- [func didDeleteItems(withIdentifiers: [NSFileProviderItemIdentifier])](./diddeleteitems%28withidentifiers%29.md)
   Tells the observer that the specified items have been deleted.
-- [func didUpdate([any NSFileProviderItemProtocol])](nsfileproviderchangeobserver/didupdate(_:).md)
+- [func didUpdate([any NSFileProviderItemProtocol])](./didupdate%28_%29.md)
   Tells the observer that the specified items have been updated.
-- [func finishEnumeratingWithError(any Error)](nsfileproviderchangeobserver/finishenumeratingwitherror(_:).md)
+- [func finishEnumeratingWithError(any Error)](./finishenumeratingwitherror%28_%29.md)
   Tells the observer that an error occurred during change notification.
-- [var suggestedBatchSize: Int](nsfileproviderchangeobserver/suggestedbatchsize.md)
+- [var suggestedBatchSize: Int](./suggestedbatchsize.md)
   The batch size that the system recommends.
 
 

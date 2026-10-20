@@ -1,7 +1,8 @@
 # AVEncoderBitDepthHintKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.0+
@@ -18,17 +19,22 @@
 let AVEncoderBitDepthHintKey: String
 ```
 
+```c
+extern NSString * const AVEncoderBitDepthHintKey;
+```
+
 ## See Also
 
-- [let AVEncoderASPFrequencyKey: String](avencoderaspfrequencykey.md)
-- [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
+### Encoder setting keys
+- [let AVEncoderASPFrequencyKey: String](./avencoderaspfrequencykey.md)
+- [let AVEncoderAudioQualityKey: String](./avencoderaudioqualitykey.md)
   A constant that represents an integer from the audio quality enumeration.
-- [let AVEncoderBitRateKey: String](avencoderbitratekey.md)
-- [let AVEncoderBitRatePerChannelKey: String](avencoderbitrateperchannelkey.md)
-- [let AVEncoderBitRateStrategyKey: String](avencoderbitratestrategykey.md)
+- [let AVEncoderBitRateKey: String](./avencoderbitratekey.md)
+- [let AVEncoderBitRatePerChannelKey: String](./avencoderbitrateperchannelkey.md)
+- [let AVEncoderBitRateStrategyKey: String](./avencoderbitratestrategykey.md)
   A constant that represents the bit rate strategy for the encoder to use.
-- [let AVEncoderContentSourceKey: String](avencodercontentsourcekey.md)
-- [let AVEncoderDynamicRangeControlConfigurationKey: String](avencoderdynamicrangecontrolconfigurationkey.md)
+- [let AVEncoderContentSourceKey: String](./avencodercontentsourcekey.md)
+- [let AVEncoderDynamicRangeControlConfigurationKey: String](./avencoderdynamicrangecontrolconfigurationkey.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKPositionDemand.Mode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the acting modes of positional demands.
 
@@ -21,21 +22,21 @@ enum Mode
 
 #### Overview
 
-See [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) for the actual target compute logic.
+See [`animationOverrideWeight`](../../../ikcomponent/constraint/animationoverrideweight.md) for the actual target compute logic.
 
 ## Topics
 
 ### Enumeration Cases
-- [IKRig.Constraint.IKPositionDemand.Mode.poleVector](ikrig/constraint/ikpositiondemand/mode-swift.enum/polevector.md)
+- [IKRig.Constraint.IKPositionDemand.Mode.poleVector](./mode-swift.enum/polevector.md)
   A mode which pulls the joint in the direction of the set position target.
-- [IKRig.Constraint.IKPositionDemand.Mode.reach](ikrig/constraint/ikpositiondemand/mode-swift.enum/reach.md)
+- [IKRig.Constraint.IKPositionDemand.Mode.reach](./mode-swift.enum/reach.md)
   A mode which uses the set position target.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
 
 
 ---

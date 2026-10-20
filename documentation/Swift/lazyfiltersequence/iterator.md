@@ -1,7 +1,8 @@
 # LazyFilterSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the elements traversed by some base iterator that also satisfy a given predicate.
 
@@ -21,6 +22,8 @@ An iterator over the elements traversed by some base iterator that also satisfy 
 struct Iterator
 ```
 
+Available when `Base` conforms to `Sequence`.
+
 #### Overview
 
 > **Note**: This is the associated `Iterator` of `LazyFilterSequence` and `LazyFilterCollection`.
@@ -28,19 +31,19 @@ struct Iterator
 ## Topics
 
 ### Instance Properties
-- [var base: Base.Iterator](lazyfiltersequence/iterator/base.md)
+- [var base: Base.Iterator](./iterator/base.md)
   The underlying iterator whose elements are being filtered.
 ### Default Implementations
-- [IteratorProtocol Implementations](lazyfiltersequence/iterator/iteratorprotocol-implementations.md)
-- [Sequence Implementations](lazyfiltersequence/iterator/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iterator/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sequence](sequence.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sequence](../sequence.md)
 
 
 ---

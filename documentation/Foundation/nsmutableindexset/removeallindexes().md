@@ -1,7 +1,8 @@
 # removeAllIndexes()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the receiver’s indexes.
 
@@ -20,13 +21,18 @@ Removes the receiver’s indexes.
 func removeAllIndexes()
 ```
 
+```objc
+- (void) removeAllIndexes;
+```
+
 ## See Also
 
-- [func remove(Int)](nsmutableindexset/remove(_:)-5li0r.md)
+### Removing Indexes
+- [func remove(Int)](./remove%28_%29-5li0r.md)
   Removes an index from the receiver.
-- [func remove(IndexSet)](nsmutableindexset/remove(_:)-196u2.md)
+- [func remove(IndexSet)](./remove%28_%29-196u2.md)
   Removes the indexes in an index set from the receiver.
-- [func remove(in: NSRange)](nsmutableindexset/remove(in:).md)
+- [func remove(in: NSRange)](./remove%28in%29.md)
   Removes the indexes in an index range from the receiver.
 
 

@@ -1,7 +1,8 @@
 # presentAuthorizationViewController(completion:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the authorization service to show the extension’s view controller to the user.
 
@@ -15,7 +16,15 @@ Asks the authorization service to show the extension’s view controller to the 
 ## Declaration
 
 ```swift
+func presentAuthorizationViewController(completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func presentAuthorizationViewController() async throws
+```
+
+```objc
+- (void) presentAuthorizationViewControllerWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
@@ -28,7 +37,8 @@ This is only valid during authentication requests. If the system can’t show th
 
 ## See Also
 
-- [var isUserInterfaceEnabled: Bool](asauthorizationproviderextensionauthorizationrequest/isuserinterfaceenabled.md)
+### Interacting with the User
+- [var isUserInterfaceEnabled: Bool](./isuserinterfaceenabled.md)
   Determines if user interface is available for the current request.
 
 

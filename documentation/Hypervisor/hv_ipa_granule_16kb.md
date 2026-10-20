@@ -1,15 +1,20 @@
 # HV_IPA_GRANULE_16KB
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var HV_IPA_GRANULE_16KB: hv_ipa_granule_t { get }
+```
+
+```c
+HV_IPA_GRANULE_16KB
 ```
 
 #### Discussion

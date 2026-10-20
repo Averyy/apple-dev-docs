@@ -1,27 +1,29 @@
 # OSDataGetBytesPtr
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const void *OSDataGetBytesPtr(OSDataPtr obj, size_t offset, size_t length);
 ```
 
 ## See Also
 
-- [getBytesNoCopy](osdata/getbytesnocopy-91vcg.md)
+### Getting Bytes
+- [getBytesNoCopy](./osdata/getbytesnocopy-91vcg.md)
   Returns a pointer to the OSData object’s internal data buffer.
-- [getBytesNoCopy](osdata/getbytesnocopy-53puz.md)
+- [getBytesNoCopy](./osdata/getbytesnocopy-53puz.md)
   Returns a pointer to the OSData object’s internal data buffer.
-- [OSDataGetBytes](osdatagetbytes.md)
+- [OSDataGetBytes](./osdatagetbytes.md)
 
 
 ---

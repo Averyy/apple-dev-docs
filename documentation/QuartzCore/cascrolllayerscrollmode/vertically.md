@@ -1,7 +1,8 @@
 # vertically
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receiver is able to scroll vertically.
 
@@ -19,13 +20,18 @@ The receiver is able to scroll vertically.
 static let vertically: CAScrollLayerScrollMode
 ```
 
+```c
+extern CAScrollLayerScrollMode const kCAScrollVertically;
+```
+
 ## See Also
 
-- [static let none: CAScrollLayerScrollMode](cascrolllayerscrollmode/none.md)
+### Constants
+- [static let none: CAScrollLayerScrollMode](./none.md)
   The receiver is unable to scroll.
-- [static let horizontally: CAScrollLayerScrollMode](cascrolllayerscrollmode/horizontally.md)
+- [static let horizontally: CAScrollLayerScrollMode](./horizontally.md)
   The receiver is able to scroll horizontally.
-- [static let both: CAScrollLayerScrollMode](cascrolllayerscrollmode/both.md)
+- [static let both: CAScrollLayerScrollMode](./both.md)
   The receiver is able to scroll both horizontally and vertically.
 
 

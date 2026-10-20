@@ -1,7 +1,8 @@
 # WAPublishableService.ID
 
 **Framework**: Wi-Fi Aware  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of value that uniquely identifies the service.
 
@@ -18,9 +19,10 @@ typealias ID = String
 
 ## See Also
 
-- [var id: WAPublishableService.ID](wapublishableservice/id-swift.property.md)
+### Checking a service name and ID
+- [var id: WAPublishableService.ID](./id-swift.property.md)
   A stable ID that can be used to identify this publishable service.
-- [let name: String](wapublishableservice/name.md)
+- [let name: String](./name.md)
   The full name of the service, as sent over the air.
 
 

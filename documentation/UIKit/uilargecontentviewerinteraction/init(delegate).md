@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interaction object with the specified delegate.
 
@@ -17,13 +18,17 @@ Creates an interaction object with the specified delegate.
 init(delegate: (any UILargeContentViewerInteractionDelegate)?)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<UILargeContentViewerInteractionDelegate>) delegate;
+```
+
 #### Discussion
 
-To add the interaction to a view, use [`addInteraction(_:)`](uiview/addinteraction(_:).md).
+To add the interaction to a view, use [`addInteraction(_:)`](../uiview/addinteraction%28_%29.md).
 
 ## Parameters
 
-- `delegate`: An object that implements the [`UILargeContentViewerInteractionDelegate`](uilargecontentviewerinteractiondelegate.md) protocol.
+- `delegate`: An object that implements the [`UILargeContentViewerInteractionDelegate`](../uilargecontentviewerinteractiondelegate.md) protocol.
 
 
 ---

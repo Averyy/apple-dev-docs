@@ -1,7 +1,8 @@
 # MediaIntelligenceVideoAsset.Kind
 
 **Framework**: Media Intelligence  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that describes the source of a video asset’s data.
 
@@ -21,29 +22,30 @@ enum Kind
 
 ## Mentions
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+- [Finding the best moments in a video](../finding-the-best-moments-in-a-video.md)
 
 #### Overview
 
-[`MediaIntelligenceVideoAsset.Kind`](mediaintelligencevideoasset/kind-swift.enum.md) describes how the framework reads a video.
+[`MediaIntelligenceVideoAsset.Kind`](./kind-swift.enum.md) describes how the framework reads a video.
 
 ## Topics
 
 ### Kinds
-- [MediaIntelligenceVideoAsset.Kind.url(_:)](mediaintelligencevideoasset/kind-swift.enum/url(_:).md)
+- [MediaIntelligenceVideoAsset.Kind.url(_:)](./kind-swift.enum/url%28_%29.md)
   A video located at the specified URL.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(id: MediaIntelligenceVideoAsset.ID, kind: MediaIntelligenceVideoAsset.Kind)](mediaintelligencevideoasset/init(id:kind:).md)
+### Creating an asset
+- [init(id: MediaIntelligenceVideoAsset.ID, kind: MediaIntelligenceVideoAsset.Kind)](./init%28id,kind%29.md)
   Creates a video asset with the specified identifier and kind.
-- [MediaIntelligenceVideoAsset.ID](mediaintelligencevideoasset/id-swift.struct.md)
+- [MediaIntelligenceVideoAsset.ID](./id-swift.struct.md)
   A unique identifier for a video asset.
 
 

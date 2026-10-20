@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value of the part ID.
 
@@ -9,7 +10,7 @@ The underlying value of the part ID.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # iOS(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configures the minimum deployment target version for the iOS platform using a custom version string.
 
@@ -19,7 +20,7 @@ A `SupportedPlatform` instance.
 
 The version string must be a series of two or three dot-separated integers, such as `8.0` or `8.0.1`.
 
-> **Note**: First available in PackageDescription 5.0
+> **Since**: First available in PackageDescription 5.0
 
 ## Parameters
 
@@ -27,11 +28,12 @@ The version string must be a series of two or three dot-separated integers, such
 
 ## See Also
 
-- [static func iOS(SupportedPlatform.IOSVersion) -> SupportedPlatform](supportedplatform/ios(_:)-5pvv5.md)
+### Supporting iOS
+- [static func iOS(SupportedPlatform.IOSVersion) -> SupportedPlatform](./ios%28_%29-5pvv5.md)
   Configures the minimum deployment target version for the iOS platform.
-- [static let iOS: Platform](platform/ios.md)
+- [static let iOS: Platform](../platform/ios.md)
   The iOS platform.
-- [SupportedPlatform.IOSVersion](supportedplatform/iosversion.md)
+- [SupportedPlatform.IOSVersion](./iosversion.md)
   The supported iOS version.
 
 

@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standalone render context, asynchronously preparing required resources.
 
@@ -20,9 +21,9 @@ nonisolated
 
 #### Discussion
 
-Prefer this overload when creating a single render context. If you need to share prepared resources across multiple contexts, create a [`LowLevelRenderContextStandalone.Resources`](lowlevelrendercontextstandalone/resources.md) value first and use [`init(configuration:resources:)`](lowlevelrendercontextstandalone/init(configuration:resources:).md) instead.
+Prefer this overload when creating a single render context. If you need to share prepared resources across multiple contexts, create a [`LowLevelRenderContextStandalone.Resources`](./resources.md) value first and use [`init(configuration:resources:)`](./init%28configuration,resources%29.md) instead.
 
-> **Note**: An error if resource preparation or context creation fails.
+> **Throws**: An error if resource preparation or context creation fails.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ Prefer this overload when creating a single render context. If you need to share
 
 ## See Also
 
-- [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
+### Creating a render context
+- [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](./init%28configuration,resources%29.md)
   Creates a standalone render context using resources prepared ahead of time.
-- [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
+- [LowLevelRenderContextStandalone.Configuration](./configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
-- [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
+- [LowLevelRenderContextStandalone.Resources](./resources.md)
   Resources needed for a render context
 
 

@@ -1,7 +1,8 @@
 # HPKE.KDF
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The key derivation functions to use in HPKE.
 
@@ -23,31 +24,32 @@ enum KDF
 ## Topics
 
 ### Enumeration Cases
-- [HPKE.KDF.HKDF_SHA256](hpke/kdf/hkdf_sha256.md)
+- [HPKE.KDF.HKDF_SHA256](./kdf/hkdf_sha256.md)
   An HMAC-based key derivation function that uses SHA-2 hashing with a 256-bit digest.
-- [HPKE.KDF.HKDF_SHA384](hpke/kdf/hkdf_sha384.md)
+- [HPKE.KDF.HKDF_SHA384](./kdf/hkdf_sha384.md)
   An HMAC-based key derivation function that uses SHA-2 hashing with a 384-bit digest.
-- [HPKE.KDF.HKDF_SHA512](hpke/kdf/hkdf_sha512.md)
+- [HPKE.KDF.HKDF_SHA512](./kdf/hkdf_sha512.md)
   An HMAC-based key derivation function that uses SHA-2 hashing with a 512-bit digest.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Ciphersuite](hpke/ciphersuite.md)
+### Choosing cryptographic algorithms
+- [struct Ciphersuite](./ciphersuite.md)
   Cipher suites to use in hybrid public key encryption (HPKE).
-- [HPKE.AEAD](hpke/aead.md)
+- [HPKE.AEAD](./aead.md)
   The authenticated encryption with associated data (AEAD) algorithms to use in HPKE.
-- [HPKE.KEM](hpke/kem.md)
+- [HPKE.KEM](./kem.md)
   The key encapsulation mechanisms to use in HPKE.
-- [HPKE.DHKEM](hpke/dhkem.md)
+- [HPKE.DHKEM](./dhkem.md)
   A container for Diffie-Hellman key encapsulation mechanisms (KEMs).
 
 

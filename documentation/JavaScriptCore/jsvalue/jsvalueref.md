@@ -1,7 +1,8 @@
 # jsValueRef
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the C representation of the JavaScript value.
 
@@ -19,13 +20,18 @@ Returns the C representation of the JavaScript value.
 var jsValueRef: JSValueRef! { get }
 ```
 
+```objc
+@property (readonly) JSValueRef JSValueRef;
+```
+
 #### Discussion
 
 See `JSValueRef` for the C JavaScriptCore API.
 
 ## See Also
 
-- [init!(JSValueRef: JSValueRef!, inContext: JSContext!)](jsvalue/init(jsvalueref:incontext:).md)
+### Working with the C JavaScriptCore API
+- [init!(JSValueRef: JSValueRef!, inContext: JSContext!)](./init%28jsvalueref,incontext%29.md)
   Creates a JavaScript value object from the equivalent C representation.
 
 

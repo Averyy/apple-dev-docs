@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothHCITransportUSBClassCode](1639915-anonymous/kbluetoothhcitransportusbclasscode.md)
-- [kBluetoothHCITransportUSBProtocolCode](1639915-anonymous/kbluetoothhcitransportusbprotocolcode.md)
-- [kBluetoothHCITransportUSBSubClassCode](1639915-anonymous/kbluetoothhcitransportusbsubclasscode.md)
+- [kBluetoothHCITransportUSBClassCode](./api-1639915-anonymous/kbluetoothhcitransportusbclasscode.md)
+- [kBluetoothHCITransportUSBProtocolCode](./api-1639915-anonymous/kbluetoothhcitransportusbprotocolcode.md)
+- [kBluetoothHCITransportUSBSubClassCode](./api-1639915-anonymous/kbluetoothhcitransportusbsubclasscode.md)
 
 
 ---

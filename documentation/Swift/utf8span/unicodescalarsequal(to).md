@@ -1,7 +1,8 @@
 # unicodeScalarsEqual(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Whether this span has the same `Unicode.Scalar`s as `other`.
 
@@ -22,7 +23,7 @@ func unicodeScalarsEqual(to other: some Sequence<Unicode.Scalar>) -> Bool
 
 #### Discussion
 
-> **Note**: O(n)
+> **Complexity**: O(n)
 
 
 ---

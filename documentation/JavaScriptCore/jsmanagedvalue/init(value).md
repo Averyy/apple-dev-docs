@@ -1,7 +1,8 @@
 # init(value:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a managed value with the specified JavaScript value.
 
@@ -19,13 +20,17 @@ Initializes a managed value with the specified JavaScript value.
 init!(value: JSValue!)
 ```
 
+```objc
+- (instancetype) initWithValue:(JSValue *) value;
+```
+
 #### Return Value
 
 A new managed value.
 
 #### Discussion
 
-To ensure that the underlying JavaScript value is retained as long as the managed value remains in use in the Objective-C or Swift runtime, report the managed value’s owner to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method.
+To ensure that the underlying JavaScript value is retained as long as the managed value remains in use in the Objective-C or Swift runtime, report the managed value’s owner to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](../jsvirtualmachine/addmanagedreference%28_,withowner%29.md) method.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ To ensure that the underlying JavaScript value is retained as long as the manage
 
 ## See Also
 
-- [init!(value: JSValue!, andOwner: Any!)](jsmanagedvalue/init(value:andowner:).md)
+### Creating a Managed Value
+- [init!(value: JSValue!, andOwner: Any!)](./init%28value,andowner%29.md)
   Creates a managed value and associates it with an owner.
 
 

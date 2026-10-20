@@ -1,7 +1,8 @@
 # clusterGroupsCommandRemoveGroupResponseID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterGroupsCommandRemoveGroupResponseID: MTRCommandIDType { get }
+```
+
+```c
+MTRCommandIDTypeClusterGroupsCommandRemoveGroupResponseID
 ```
 
 

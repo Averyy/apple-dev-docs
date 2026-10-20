@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index location of the change.
 
@@ -20,14 +21,19 @@ The index location of the change.
 var index: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger index;
+```
+
 ## See Also
 
-- [var changeType: NSCollectionChangeType](nsorderedcollectionchange/changetype.md)
+### Accessing the Change
+- [var changeType: NSCollectionChangeType](./changetype.md)
   The type of change.
-- [var object: Any?](nsorderedcollectionchange/object.md)
+- [var object: Any?](./object.md)
   An object the change inserts or removes.
-- [var associatedIndex: Int](nsorderedcollectionchange/associatedindex.md)
-  When this property is set to a value other than [`NSNotFound`](nsnotfound-9t5v2.md), the receiver is one half of a move, and this value is the index of the change’s counterpart of the opposite type in the diff.
+- [var associatedIndex: Int](./associatedindex.md)
+  When this property is set to a value other than [`NSNotFound`](../nsnotfound-9t5v2.md), the receiver is one half of a move, and this value is the index of the change’s counterpart of the opposite type in the diff.
 
 
 ---

@@ -1,7 +1,8 @@
 # noSuchProcess
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No such process.
 
@@ -22,7 +23,7 @@ static var noSuchProcess: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,15 +33,16 @@ The corresponding C error is `ESRCH`.
 
 ## See Also
 
-- [static var argListTooLong: Errno](errno/arglisttoolong.md)
+### Process Errors
+- [static var argListTooLong: Errno](./arglisttoolong.md)
   The argument list is too long.
-- [static var identifierRemoved: Errno](errno/identifierremoved.md)
+- [static var identifierRemoved: Errno](./identifierremoved.md)
   Identifier removed.
-- [static var noChildProcess: Errno](errno/nochildprocess.md)
+- [static var noChildProcess: Errno](./nochildprocess.md)
   No child processes.
-- [static var previousOwnerDied: Errno](errno/previousownerdied.md)
+- [static var previousOwnerDied: Errno](./previousownerdied.md)
   Previous pthread mutex owner died.
-- [static var tooManyProcesses: Errno](errno/toomanyprocesses.md)
+- [static var tooManyProcesses: Errno](./toomanyprocesses.md)
   Too many processes.
 
 

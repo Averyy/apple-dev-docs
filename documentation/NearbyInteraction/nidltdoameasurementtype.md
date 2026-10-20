@@ -1,7 +1,8 @@
 # NIDLTDOAMeasurementType
 
 **Framework**: Nearby Interaction  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible phases of downlink positioning signals.
 
@@ -16,38 +17,43 @@ The possible phases of downlink positioning signals.
 enum NIDLTDOAMeasurementType
 ```
 
+```c
+enum NIDLTDOAMeasurementType : NSInteger;
+```
+
 #### Overview
 
-The [`NIDLTDOAMeasurement`](nidltdoameasurement.md) class [`measurementType`](nidltdoameasurement/measurementtype.md) property is of this type.
+The [`NIDLTDOAMeasurement`](./nidltdoameasurement.md) class [`measurementType`](./nidltdoameasurement/measurementtype.md) property is of this type.
 
 ## Topics
 
 ### Identifying the measurement type
-- [NIDLTDOAMeasurementType.poll](nidltdoameasurementtype/poll.md)
+- [NIDLTDOAMeasurementType.poll](./nidltdoameasurementtype/poll.md)
   A type that indicates the measurement derives from an initiating anchor’s first message.
-- [NIDLTDOAMeasurementType.response](nidltdoameasurementtype/response.md)
+- [NIDLTDOAMeasurementType.response](./nidltdoameasurementtype/response.md)
   A type that indicates the measurement derives from responder anchors’ messages.
-- [NIDLTDOAMeasurementType.final](nidltdoameasurementtype/final.md)
+- [NIDLTDOAMeasurementType.final](./nidltdoameasurementtype/final.md)
   A type that indicates the measurement derives from an initial anchor’s last message.
 ### Creating a measurement type
-- [init?(rawValue: Int)](nidltdoameasurementtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nidltdoameasurementtype/init%28rawvalue%29.md)
   Creates a measurement type from the given underlying value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NIDLTDOAMeasurement](nidltdoameasurement.md)
+### Measurements
+- [class NIDLTDOAMeasurement](./nidltdoameasurement.md)
   Information from a Downlink Time-Difference-of-Arrival anchor that you use to derive a range estimate.
-- [enum NIDLTDOACoordinatesType](nidltdoacoordinatestype.md)
+- [enum NIDLTDOACoordinatesType](./nidltdoacoordinatestype.md)
   The possible coordinate types for Downlink Time-Difference-of-Arrival measurement updates.
 
 

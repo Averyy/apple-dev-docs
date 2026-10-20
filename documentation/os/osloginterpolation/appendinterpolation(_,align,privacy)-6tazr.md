@@ -1,7 +1,8 @@
 # appendInterpolation(_:align:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated string.
 
@@ -11,7 +12,7 @@ Appends an interpolated string.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -32,7 +33,8 @@ Don’t call this function directly. The system calls it automatically when inte
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> String, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:align:privacy:attributes:)-7g68v.md)
+### Appending Strings
+- [func appendInterpolation(@autoclosure () -> String, align: OSLogStringAlignment, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,align,privacy,attributes%29-7g68v.md)
   Appends an interpolated string with the specified attributes.
 
 

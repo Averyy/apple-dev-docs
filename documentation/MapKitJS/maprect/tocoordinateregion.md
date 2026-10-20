@@ -1,7 +1,8 @@
 # toCoordinateRegion()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the region that corresponds to a map rectangle.
 
@@ -10,19 +11,19 @@ Returns the region that corresponds to a map rectangle.
 
 ## Declaration
 
-```swift
+```
 toCoordinateRegion(): CoordinateRegion;
 ```
 
 #### Return Value
 
-A [`CoordinateRegion`](coordinateregion.md) object that corresponds to a map rectangle.
+A [`CoordinateRegion`](../coordinateregion.md) object that corresponds to a map rectangle.
 
 #### Discussion
 
-It’s often easier to work with a map rectangle than a [`CoordinateRegion`](coordinateregion.md).
+It’s often easier to work with a map rectangle than a [`CoordinateRegion`](../coordinateregion.md).
 
-The following example demonstrates how to convert a [`MapRect`](maprect.md) instance to a [`CoordinateRegion`](coordinateregion.md) and back again:
+The following example demonstrates how to convert a [`MapRect`](../maprect.md) instance to a [`CoordinateRegion`](../coordinateregion.md) and back again:
 
 ```javascript
 const mapRect = new mapkit.MapRect(0.1, 0.2, 0.3, 0.4);
@@ -36,11 +37,12 @@ const newMapRect = coordinateRegion.toMapRect();
 
 ## See Also
 
-- [copy()](maprect/copy.md)
+### Working with map rectangles
+- [copy()](./copy.md)
   Returns a copy of a map rectangle.
-- [equals(anotherRect)](maprect/equals.md)
+- [equals(anotherRect)](./equals.md)
   Compares whether two map rectangles are equal.
-- [scale(scaleFactor, scaleCenter)](maprect/scale.md)
+- [scale(scaleFactor, scaleCenter)](./scale.md)
   Returns a scaled map rectangle for a map location.
 
 

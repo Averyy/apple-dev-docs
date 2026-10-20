@@ -1,7 +1,8 @@
 # playerGroup
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player group for the match.
 
@@ -19,19 +20,32 @@ The player group for the match.
 var playerGroup: Int { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) NSUInteger playerGroup;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSUInteger playerGroup;
+```
+
 #### Discussion
 
-The value of this property matches the [`playerGroup`](gkmatchrequest/playergroup.md) property of the match request that the other player uses to create the match.
+The value of this property matches the [`playerGroup`](../gkmatchrequest/playergroup.md) property of the match request that the other player uses to create the match.
 
 ## See Also
 
-- [var sender: GKPlayer](gkinvite/sender.md)
+### Getting Properties
+- [var sender: GKPlayer](./sender.md)
   The player who sends the invitation.
-- [var playerAttributes: UInt32](gkinvite/playerattributes.md)
+- [var playerAttributes: UInt32](./playerattributes.md)
   The player attributes for the match.
-- [var isHosted: Bool](gkinvite/ishosted.md)
+- [var isHosted: Bool](./ishosted.md)
   A Boolean value that indicates whether you host the game on your own servers.
-- [var inviter: String](gkinvite/inviter.md)
+- [var inviter: String](./inviter.md)
   The identifier for the player who sends the invitation.
 
 

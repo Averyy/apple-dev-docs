@@ -1,7 +1,8 @@
 # init(degrees:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ init(degrees: Double)
 
 ## See Also
 
-- [init()](angle/init.md)
-- [init(radians: Double)](angle/init(radians:).md)
-- [init(Angle2D)](angle/init(_:).md)
+### Creating an angle
+- [init()](./init%28%29.md)
+- [init(radians: Double)](./init%28radians%29.md)
+- [init(Angle2D)](./init%28_%29.md)
 
 
 ---

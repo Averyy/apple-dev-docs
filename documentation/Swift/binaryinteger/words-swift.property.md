@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A collection containing the words of this value’s binary representation, in order from the least significant to most significant.
@@ -27,11 +28,12 @@ Negative values are returned in two’s complement representation, regardless of
 
 ## See Also
 
-- [var bitWidth: Int](binaryinteger/bitwidth.md)
+### Working with Binary Representation
+- [var bitWidth: Int](./bitwidth.md)
   The number of bits in the current binary representation of this value.
-- [var trailingZeroBitCount: Int](binaryinteger/trailingzerobitcount.md)
+- [var trailingZeroBitCount: Int](./trailingzerobitcount.md)
   The number of trailing zeros in this value’s binary representation.
-- [associatedtype Words : RandomAccessCollection](binaryinteger/words-swift.associatedtype.md)
+- [associatedtype Words : RandomAccessCollection](./words-swift.associatedtype.md)
   A type that represents the words of a binary integer.
 
 

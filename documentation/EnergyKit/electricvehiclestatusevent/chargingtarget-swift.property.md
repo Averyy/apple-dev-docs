@@ -1,14 +1,15 @@
 # chargingTarget
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired target when charging an electric vehicle.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ let chargingTarget: ElectricVehicleStatusEvent.ChargingTarget?
 
 ## See Also
 
-- [ElectricVehicleStatusEvent.ChargingTarget](electricvehiclestatusevent/chargingtarget-swift.struct.md)
+### Getting charging targets
+- [ElectricVehicleStatusEvent.ChargingTarget](./chargingtarget-swift.struct.md)
   The desired target when charging an electric vehicle.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Copies data directly to the GPU to populate an entry in the buffer argument table.
@@ -11,7 +12,7 @@ Copies data directly to the GPU to populate an entry in the buffer argument tabl
 - iPadOS 8.3+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,13 @@ Copies data directly to the GPU to populate an entry in the buffer argument tabl
 func setBytes(_ bytes: UnsafeRawPointer, length: Int, index: Int)
 ```
 
+```objc
+- (void) setBytes:(const void *) bytes length:(NSUInteger) length atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
-> ❗ **Important**:  This method only works for data smaller than 4 kilobytes that doesn’t persist. Create an [`MTLBuffer`](mtlbuffer.md) instance if your data exceeds 4 KB, needs to persist on the GPU, or you access results on the CPU.
+> ❗ **Important**:  This method only works for data smaller than 4 kilobytes that doesn’t persist. Create an [`MTLBuffer`](../mtlbuffer.md) instance if your data exceeds 4 KB, needs to persist on the GPU, or you access results on the CPU.
 
 This method allows Metal to copy data efficiently onto the GPU without the need for your own buffer. Binding data directly can improve performance, especially when making many small allocations.
 
@@ -34,7 +39,8 @@ This method allows Metal to copy data efficiently onto the GPU without the need 
 
 ## See Also
 
-- [func setBytes(UnsafeRawPointer, length: Int, attributeStride: Int, index: Int)](mtlcomputecommandencoder/setbytes(_:length:attributestride:index:).md)
+### Binding raw bytes
+- [func setBytes(UnsafeRawPointer, length: Int, attributeStride: Int, index: Int)](./setbytes%28_,length,attributestride,index%29.md)
   Copies data with a given stride directly to the GPU to populate an entry in the buffer argument table.
 
 

@@ -1,7 +1,8 @@
 # number
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting 16-bit unsigned integers.
 
@@ -20,31 +21,34 @@ A style for formatting 16-bit unsigned integers.
 static var number: IntegerFormatStyle<UInt16> { get }
 ```
 
+Available when `Self` is `IntegerFormatStyle<UInt16>`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
+Use this type property when the call point allows the use of [`IntegerFormatStyle`](../integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md).
 
 ## See Also
 
-- [static var number: IntegerFormatStyle<Int>](formatstyle/number-7fxvo.md)
+### Applying numeric styles for integers
+- [static var number: IntegerFormatStyle<Int>](./number-7fxvo.md)
   A style for formatting the Swift default integer type.
-- [static var number: IntegerFormatStyle<UInt>](formatstyle/number-4ttgp.md)
+- [static var number: IntegerFormatStyle<UInt>](./number-4ttgp.md)
   A style for formatting the Swift unsigned integer type.
-- [static var number: IntegerFormatStyle<Int8>](formatstyle/number-5hzgj.md)
+- [static var number: IntegerFormatStyle<Int8>](./number-5hzgj.md)
   A style for formatting 8-bit signed integers.
-- [static var number: IntegerFormatStyle<Int16>](formatstyle/number-1o8fx.md)
+- [static var number: IntegerFormatStyle<Int16>](./number-1o8fx.md)
   A style for formatting 16-bit signed integers.
-- [static var number: IntegerFormatStyle<Int32>](formatstyle/number-4cj49.md)
+- [static var number: IntegerFormatStyle<Int32>](./number-4cj49.md)
   A style for formatting 32-bit signed integers.
-- [static var number: IntegerFormatStyle<Int64>](formatstyle/number-3925i.md)
+- [static var number: IntegerFormatStyle<Int64>](./number-3925i.md)
   A style for formatting 64-bit signed integers.
-- [static var number: IntegerFormatStyle<UInt8>](formatstyle/number-8fms6.md)
+- [static var number: IntegerFormatStyle<UInt8>](./number-8fms6.md)
   A style for formatting 8-bit unsigned integers.
-- [static var number: IntegerFormatStyle<UInt32>](formatstyle/number-13mra.md)
+- [static var number: IntegerFormatStyle<UInt32>](./number-13mra.md)
   A style for formatting 32-bit unsigned integers.
-- [static var number: IntegerFormatStyle<UInt64>](formatstyle/number-iyry.md)
+- [static var number: IntegerFormatStyle<UInt64>](./number-iyry.md)
   A style for formatting 64-bit unsigned integers.
-- [struct IntegerFormatStyle](integerformatstyle.md)
+- [struct IntegerFormatStyle](../integerformatstyle.md)
   A structure that converts between integer values and their textual representations.
 
 

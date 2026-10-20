@@ -1,7 +1,8 @@
 # transformSpace(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a modified version of the coordinate space.
 

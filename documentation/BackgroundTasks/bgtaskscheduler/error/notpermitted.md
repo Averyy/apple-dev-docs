@@ -1,7 +1,8 @@
 # notPermitted
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A task scheduling error that indicates the app isn’t permitted to launch the task.
 
@@ -22,16 +23,17 @@ static var notPermitted: BGTaskScheduler.Error.Code { get }
 
 There are two causes for this error:
 
-- The app didn’t set the appropriate mode in the [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes) array.
-- The task identifier of the submitted task wasn’t in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/bgtaskschedulerpermittedidentifiers) array in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
+- The app didn’t set the appropriate mode in the [`UIBackgroundModes`](../../../BundleResources/information-property-list/uibackgroundmodes.md) array.
+- The task identifier of the submitted task wasn’t in the [`BGTaskSchedulerPermittedIdentifiers`](../../../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) array in [The Info.plist File](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
 
 ## See Also
 
-- [BGTaskScheduler.Error.Code](bgtaskscheduler/error/code.md)
+### Getting the error codes
+- [BGTaskScheduler.Error.Code](./code.md)
   An enumeration of the task scheduling errors.
-- [static var tooManyPendingTaskRequests: BGTaskScheduler.Error.Code](bgtaskscheduler/error/toomanypendingtaskrequests.md)
+- [static var tooManyPendingTaskRequests: BGTaskScheduler.Error.Code](./toomanypendingtaskrequests.md)
   A task scheduling error that indicates there are too many pending tasks of the type requested.
-- [static var unavailable: BGTaskScheduler.Error.Code](bgtaskscheduler/error/unavailable.md)
+- [static var unavailable: BGTaskScheduler.Error.Code](./unavailable.md)
   A task scheduling error that indicates the app or extension can’t schedule background work.
 
 

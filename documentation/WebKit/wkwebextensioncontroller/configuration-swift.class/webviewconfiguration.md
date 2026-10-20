@@ -1,7 +1,8 @@
 # webViewConfiguration
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web view configuration to be used as a basis for configuring web views in extension contexts.
 
@@ -17,6 +18,10 @@ The web view configuration to be used as a basis for configuring web views in ex
 ```swift
 @NSCopying
 var webViewConfiguration: WKWebViewConfiguration! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) WKWebViewConfiguration * webViewConfiguration;
 ```
 
 

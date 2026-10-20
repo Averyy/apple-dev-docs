@@ -1,7 +1,8 @@
 # ReviewSubmissionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for a review submission create request, containing the resource type and app relationship.
 
@@ -10,23 +11,23 @@ The data wrapper for a review submission create request, containing the resource
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionCreateRequest.Data.Attributes](reviewsubmissioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object ReviewSubmissionCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a review submission create request resource.
-- [object ReviewSubmissionCreateRequest.Data.Relationships](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object ReviewSubmissionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (ReviewSubmissionCreateRequest.Data.Attributes)
 - `relationships` (ReviewSubmissionCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `reviewSubmissions`
 
 
 ---

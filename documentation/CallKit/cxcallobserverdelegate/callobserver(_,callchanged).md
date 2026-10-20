@@ -2,6 +2,7 @@
 
 **Framework**: CallKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when a call is changed.
@@ -17,6 +18,10 @@ Called when a call is changed.
 
 ```swift
 func callObserver(_ callObserver: CXCallObserver, callChanged call: CXCall)
+```
+
+```objc
+- (void) callObserver:(CXCallObserver *) callObserver callChanged:(CXCall *) call;
 ```
 
 ## Parameters

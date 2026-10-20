@@ -1,7 +1,8 @@
 # clipToLayer(opacity:options:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a clip shape that you define in a new layer to the context’s array of clip shapes.
 
@@ -27,16 +28,17 @@ Call this method to add a shape to the array of clip shapes that the context use
 ## Parameters
 
 - `opacity`: A value that SwiftUI uses to multiply the alpha channel of the rasterized layer that you define in the `content` closure. The alpha values that result define the clip shape.
-- `options`: A set of options that tell SwiftUI how to interpret the clip shape. For example, you can invert the clip shape by setting the [`inverse`](graphicscontext/clipoptions/inverse.md) option.
-- `content`: A closure that receives as input a new [`GraphicsContext`](graphicscontext.md), which represents a new transparency layer. The alpha channel of content that you draw into this context, multiplied by the `opacity` parameter, defines the clip shape.
+- `options`: A set of options that tell SwiftUI how to interpret the clip shape. For example, you can invert the clip shape by setting the [`inverse`](./clipoptions/inverse.md) option.
+- `content`: A closure that receives as input a new [`GraphicsContext`](../graphicscontext.md), which represents a new transparency layer. The alpha channel of content that you draw into this context, multiplied by the `opacity` parameter, defines the clip shape.
 
 ## See Also
 
-- [func clip(to: Path, style: FillStyle, options: GraphicsContext.ClipOptions)](graphicscontext/clip(to:style:options:).md)
+### Masking
+- [func clip(to: Path, style: FillStyle, options: GraphicsContext.ClipOptions)](./clip%28to,style,options%29.md)
   Adds a path to the context’s array of clip shapes.
-- [var clipBoundingRect: CGRect](graphicscontext/clipboundingrect.md)
+- [var clipBoundingRect: CGRect](./clipboundingrect.md)
   The bounding rectangle of the intersection of all current clip shapes in the current user space.
-- [GraphicsContext.ClipOptions](graphicscontext/clipoptions.md)
+- [GraphicsContext.ClipOptions](./clipoptions.md)
   Options that affect the use of clip shapes.
 
 

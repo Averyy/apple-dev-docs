@@ -1,7 +1,8 @@
 # downloadResources(timeout:completionHandler:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func downloadResources(timeout: TimeInterval, completionHandler: @escaping ((any Error)?) -> Void) -> Progress
+```
+
+```objc
+- (NSProgress *) downloadResourcesWithTimeout:(NSTimeInterval) timeout completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 

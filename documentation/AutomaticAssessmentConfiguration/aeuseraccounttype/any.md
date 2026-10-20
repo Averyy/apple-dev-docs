@@ -1,7 +1,8 @@
 # AEUserAccountType.any
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No specific account type is required.
 
@@ -13,6 +14,10 @@ No specific account type is required.
 
 ```swift
 case any
+```
+
+```c
+AEUserAccountTypeAny
 ```
 
 

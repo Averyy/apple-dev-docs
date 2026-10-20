@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time and date when the system recorded the measurements.
 
@@ -18,17 +19,22 @@ The time and date when the system recorded the measurements.
 var date: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * date;
+```
+
 ## See Also
 
-- [var depth: Measurement<UnitLength>?](cmwatersubmersionmeasurement/depth.md)
+### Accessing the data
+- [var depth: Measurement<UnitLength>?](./depth.md)
   The depth under water.
-- [var pressure: Measurement<UnitPressure>?](cmwatersubmersionmeasurement/pressure.md)
+- [var pressure: Measurement<UnitPressure>?](./pressure.md)
   The water pressure.
-- [var surfacePressure: Measurement<UnitPressure>](cmwatersubmersionmeasurement/surfacepressure.md)
+- [var surfacePressure: Measurement<UnitPressure>](./surfacepressure.md)
   The surface air pressure.
-- [var submersionState: CMWaterSubmersionMeasurement.DepthState](cmwatersubmersionmeasurement/submersionstate.md)
+- [var submersionState: CMWaterSubmersionMeasurement.DepthState](./submersionstate.md)
   The depth state.
-- [CMWaterSubmersionMeasurement.DepthState](cmwatersubmersionmeasurement/depthstate.md)
+- [CMWaterSubmersionMeasurement.DepthState](./depthstate.md)
   A state based on the device’s depth under water.
 
 

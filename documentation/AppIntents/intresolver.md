@@ -1,7 +1,8 @@
 # IntResolver
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A resolver that validates an integer is within the parameter’s inclusive range.
 
@@ -11,7 +12,7 @@ A resolver that validates an integer is within the parameter’s inclusive range
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,18 +24,19 @@ struct IntResolver
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RangeCheckingResolver](rangecheckingresolver.md)
-- [Resolver](resolver.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RangeCheckingResolver](./rangecheckingresolver.md)
+- [Resolver](./resolver.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IntFromDoubleResolver](intfromdoubleresolver.md)
+### Integer resolution
+- [struct IntFromDoubleResolver](./intfromdoubleresolver.md)
   A resolver that converts a double into an integer using the specified rounding rule and validates the result is within the parameter’s inclusive range.
-- [struct IntFromStringResolver](intfromstringresolver.md)
+- [struct IntFromStringResolver](./intfromstringresolver.md)
   A resolver that converts a string into an integer in the specified base and validates the result is within the parameter’s inclusive range.
 
 

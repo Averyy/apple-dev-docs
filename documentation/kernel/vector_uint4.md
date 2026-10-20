@@ -1,14 +1,15 @@
 # vector_uint4
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t __attribute__((ext_vector_type(4))) vector_uint4;
 ```
 

@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate of a person’s location.
 
@@ -10,7 +11,7 @@ The coordinate of a person’s location.
 
 ## Declaration
 
-```swift
+```
 readonly coordinate: Coordinate;
 ```
 

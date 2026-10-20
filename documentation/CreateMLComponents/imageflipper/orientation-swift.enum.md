@@ -1,7 +1,8 @@
 # ImageFlipper.Orientation
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The orientation to flip the image.
 
@@ -22,22 +23,23 @@ enum Orientation
 ## Topics
 
 ### Image orientations
-- [ImageFlipper.Orientation.horizontal](imageflipper/orientation-swift.enum/horizontal.md)
+- [ImageFlipper.Orientation.horizontal](./orientation-swift.enum/horizontal.md)
   Flip the image horizontally.
-- [ImageFlipper.Orientation.vertical](imageflipper/orientation-swift.enum/vertical.md)
+- [ImageFlipper.Orientation.vertical](./orientation-swift.enum/vertical.md)
   Flip the image vertically.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(orientation: ImageFlipper.Orientation)](imageflipper/init(orientation:).md)
+### Creating a transformer
+- [init(orientation: ImageFlipper.Orientation)](./init%28orientation%29.md)
   Creates an image flipper.
 
 

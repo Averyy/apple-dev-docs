@@ -1,7 +1,8 @@
 # TextSelection
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a selection of text.
 
@@ -50,7 +51,7 @@ struct SuggestionTextEditor: View {
 struct SuggestionsView: View { ... }
 ```
 
-You can also use the [`textSelectionAffinity(_:)`](view/textselectionaffinity(_:).md) modifier to specify a selection affinity on the given hierarchy:
+You can also use the [`textSelectionAffinity(_:)`](./view/textselectionaffinity%28_%29.md) modifier to specify a selection affinity on the given hierarchy:
 
 ```swift
 struct SuggestionTextEditor: View {
@@ -80,42 +81,43 @@ struct SuggestionsView: View { ... }
 ## Topics
 
 ### Initializers
-- [init(insertionPoint: String.Index)](textselection/init(insertionpoint:).md)
+- [init(insertionPoint: String.Index)](./textselection/init%28insertionpoint%29.md)
   Create a selection at a given insertion point.
-- [init(range: Range<String.Index>)](textselection/init(range:).md)
+- [init(range: Range<String.Index>)](./textselection/init%28range%29.md)
   Create a single selection with a given range.
-- [init(ranges: RangeSet<String.Index>)](textselection/init(ranges:).md)
+- [init(ranges: RangeSet<String.Index>)](./textselection/init%28ranges%29.md)
   Create multiple selections with a given range-set.
 ### Instance Properties
-- [var affinity: TextSelectionAffinity](textselection/affinity.md)
+- [var affinity: TextSelectionAffinity](./textselection/affinity.md)
   Return the selection affinity of the selection.
-- [var indices: TextSelection.Indices](textselection/indices-swift.property.md)
+- [var indices: TextSelection.Indices](./textselection/indices-swift.property.md)
   Return the current text selection indices.
-- [var isInsertion: Bool](textselection/isinsertion.md)
+- [var isInsertion: Bool](./textselection/isinsertion.md)
   Return `true` if the selection is an insertion point.
 ### Enumerations
-- [TextSelection.Indices](textselection/indices-swift.enum.md)
+- [TextSelection.Indices](./textselection/indices-swift.enum.md)
   The indices of the current selection.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [func textSelection<S>(S) -> some View](view/textselection(_:).md)
+### Selecting text
+- [func textSelection<S>(S) -> some View](./view/textselection%28_%29.md)
   Controls whether people can select text within this view.
-- [protocol TextSelectability](textselectability.md)
+- [protocol TextSelectability](./textselectability.md)
   A type that describes the ability to select text.
-- [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
+- [func textSelectionAffinity(TextSelectionAffinity) -> some View](./view/textselectionaffinity%28_%29.md)
   Sets the direction of a selection or cursor relative to a text character.
-- [var textSelectionAffinity: TextSelectionAffinity](environmentvalues/textselectionaffinity.md)
+- [var textSelectionAffinity: TextSelectionAffinity](./environmentvalues/textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [enum TextSelectionAffinity](textselectionaffinity.md)
+- [enum TextSelectionAffinity](./textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [struct AttributedTextSelection](attributedtextselection.md)
+- [struct AttributedTextSelection](./attributedtextselection.md)
   Represents a selection of attributed text.
 
 

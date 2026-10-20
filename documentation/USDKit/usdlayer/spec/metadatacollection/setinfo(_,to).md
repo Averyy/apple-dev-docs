@@ -1,7 +1,8 @@
 # setInfo(_:to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets `key` to `value`.
 

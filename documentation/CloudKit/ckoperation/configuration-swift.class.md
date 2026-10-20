@@ -1,7 +1,8 @@
 # CKOperation.Configuration
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes how a CloudKit operation behaves.
 
@@ -20,9 +21,13 @@ An object that describes how a CloudKit operation behaves.
 class Configuration
 ```
 
+```objc
+@interface CKOperationConfiguration : NSObject
+```
+
 #### Overview
 
-All of the properties in `CKOperationConfiguration` have a default value. When determining which properties to apply to a CloudKit operation, consult the operation’s configuration property, as well as the [`defaultConfiguration`](ckoperationgroup/defaultconfiguration.md) property of the group that the operation belongs to. These properties combine through the following rules:
+All of the properties in `CKOperationConfiguration` have a default value. When determining which properties to apply to a CloudKit operation, consult the operation’s configuration property, as well as the [`defaultConfiguration`](../ckoperationgroup/defaultconfiguration.md) property of the group that the operation belongs to. These properties combine through the following rules:
 
 | Group default configuration value | Operation configuration value | Value applied to operation |
 | --- | --- | --- |
@@ -34,40 +39,41 @@ All of the properties in `CKOperationConfiguration` have a default value. When d
 ## Topics
 
 ### Preparing a Configuration
-- [var allowsCellularAccess: Bool](ckoperation/configuration-swift.class/allowscellularaccess.md)
+- [var allowsCellularAccess: Bool](./configuration-swift.class/allowscellularaccess.md)
   A Boolean value that indicates whether operations that use this configuration can send data over the cellular network.
-- [var container: CKContainer?](ckoperation/configuration-swift.class/container.md)
+- [var container: CKContainer?](./configuration-swift.class/container.md)
   The configuration’s container.
-- [var isLongLived: Bool](ckoperation/configuration-swift.class/islonglived.md)
+- [var isLongLived: Bool](./configuration-swift.class/islonglived.md)
   A Boolean value that indicates whether the operations that use this configuration are long-lived.
-- [var qualityOfService: QualityOfService](ckoperation/configuration-swift.class/qualityofservice.md)
+- [var qualityOfService: QualityOfService](./configuration-swift.class/qualityofservice.md)
   The priority that the system uses when it allocates resources to the operations that use this configuration.
-- [var timeoutIntervalForRequest: TimeInterval](ckoperation/configuration-swift.class/timeoutintervalforrequest.md)
+- [var timeoutIntervalForRequest: TimeInterval](./configuration-swift.class/timeoutintervalforrequest.md)
   The maximum amount of time that a request can take.
-- [var timeoutIntervalForResource: TimeInterval](ckoperation/configuration-swift.class/timeoutintervalforresource.md)
+- [var timeoutIntervalForResource: TimeInterval](./configuration-swift.class/timeoutintervalforresource.md)
   The maximum amount of time that a resource request can take.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var configuration: CKOperation.Configuration!](ckoperation/configuration-swift.property.md)
+### Managing the Operation’s Configuration
+- [var configuration: CKOperation.Configuration!](./configuration-swift.property.md)
   The operation’s configuration.
-- [var group: CKOperationGroup?](ckoperation/group.md)
+- [var group: CKOperationGroup?](./group.md)
   The operation’s group.
-- [var longLivedOperationWasPersistedBlock: (() -> Void)?](ckoperation/longlivedoperationwaspersistedblock.md)
+- [var longLivedOperationWasPersistedBlock: (() -> Void)?](./longlivedoperationwaspersistedblock.md)
   The closure to execute when the server begins to store callbacks for the long-lived operation.
 
 

@@ -1,7 +1,8 @@
 # target
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Target pin with an offset relative to the target entity
 

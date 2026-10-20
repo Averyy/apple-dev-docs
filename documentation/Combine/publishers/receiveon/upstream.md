@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,9 +23,10 @@ let upstream: Upstream
 
 ## See Also
 
-- [let scheduler: Context](publishers/receiveon/scheduler.md)
+### Inspecting publisher properties
+- [let scheduler: Context](./scheduler.md)
   The scheduler the publisher uses to deliver elements.
-- [let options: Context.SchedulerOptions?](publishers/receiveon/options.md)
+- [let options: Context.SchedulerOptions?](./options.md)
   Scheduler options used to customize element delivery.
 
 

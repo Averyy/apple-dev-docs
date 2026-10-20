@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new WebView with the specified URL.
 
@@ -48,7 +49,8 @@ struct URLView: View {
 
 ## See Also
 
-- [init(WebPage)](webview-swift.struct/init(_:).md)
+### Creating web views
+- [init(WebPage)](./init%28_%29.md)
   Create a new WebView.
 
 

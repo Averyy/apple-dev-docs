@@ -1,17 +1,22 @@
 # getArrayValue()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the data element is represented by an array object, it returns the value as an NSArray.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getArrayValue() -> [Any]!
+```
+
+```objc
+- (NSArray *) getArrayValue;
 ```
 
 #### Return Value

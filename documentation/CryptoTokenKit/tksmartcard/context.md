@@ -1,7 +1,8 @@
 # context
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 User-specified information. This property is automatically set to `nil` if the Smart Card is removed or another `TKSmartCard` object begins a session.
 
@@ -20,14 +21,19 @@ User-specified information. This property is automatically set to `nil` if the S
 var context: Any? { get set }
 ```
 
+```objc
+@property (nullable) id context;
+```
+
 ## See Also
 
-- [var slot: TKSmartCardSlot](tksmartcard/slot.md)
+### Configuring the Smart Card
+- [var slot: TKSmartCardSlot](./slot.md)
   The slot in which the Smart Card is inserted.
-- [var isValid: Bool](tksmartcard/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   Whether the Smart Card is valid and accessible from its slot.
-- [var isSensitive: Bool](tksmartcard/issensitive.md)
-  Whether sessions established for the Smart Card should be considered sensitive. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- [var isSensitive: Bool](./issensitive.md)
+  Whether sessions established for the Smart Card should be considered sensitive. [`false`](../../Swift/false.md) by default.
 
 
 ---

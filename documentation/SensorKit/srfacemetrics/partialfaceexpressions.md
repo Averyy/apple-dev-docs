@@ -1,7 +1,8 @@
 # partialFaceExpressions
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The partial face expressions that the algorithm detects.
 
@@ -16,13 +17,18 @@ The partial face expressions that the algorithm detects.
 var partialFaceExpressions: [SRFaceMetricsExpression] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<SRFaceMetricsExpression *> * partialFaceExpressions;
+```
+
 ## See Also
 
-- [var faceAnchor: ARFaceAnchor](srfacemetrics/faceanchor.md)
+### Getting face analytics
+- [var faceAnchor: ARFaceAnchor](./faceanchor.md)
   The anchor for the face that the sensor detects in front of the camera.
-- [var wholeFaceExpressions: [SRFaceMetricsExpression]](srfacemetrics/wholefaceexpressions.md)
+- [var wholeFaceExpressions: [SRFaceMetricsExpression]](./wholefaceexpressions.md)
   The whole face expressions that the algorithm detects.
-- [class SRFaceMetricsExpression](srfacemetricsexpression.md)
+- [class SRFaceMetricsExpression](../srfacemetricsexpression.md)
   An object that represents a facial expression.
 
 

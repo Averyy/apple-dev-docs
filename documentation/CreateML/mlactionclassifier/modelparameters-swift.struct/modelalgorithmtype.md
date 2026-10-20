@@ -1,7 +1,8 @@
 # MLActionClassifier.ModelParameters.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The action classifier training algorithm options.
 
@@ -17,22 +18,23 @@ enum ModelAlgorithmType
 ## Topics
 
 ### Designating an algorithm
-- [MLActionClassifier.ModelParameters.ModelAlgorithmType.stgcn](mlactionclassifier/modelparameters-swift.struct/modelalgorithmtype/stgcn.md)
+- [MLActionClassifier.ModelParameters.ModelAlgorithmType.stgcn](./modelalgorithmtype/stgcn.md)
   The spatial-temporal graph convolution neural-network algorithm.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLActionClassifier.ModelParameters.ValidationData](mlactionclassifier/modelparameters-swift.struct/validationdata.md)
+### Supporting types
+- [MLActionClassifier.ModelParameters.ValidationData](./validationdata.md)
   The source of a validation dataset for an action classifier.
-- [MLActionClassifier.VideoAugmentationOptions](mlactionclassifier/videoaugmentationoptions.md)
+- [MLActionClassifier.VideoAugmentationOptions](../videoaugmentationoptions.md)
   The video augmentations for an action classifier training session.
 
 

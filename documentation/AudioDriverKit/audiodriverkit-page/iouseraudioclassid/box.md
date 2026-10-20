@@ -1,7 +1,8 @@
 # Box
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio box class.
 
@@ -10,7 +11,7 @@ The identifier for the audio box class.
 
 ## Declaration
 
-```swift
+```c
 Box
 ```
 

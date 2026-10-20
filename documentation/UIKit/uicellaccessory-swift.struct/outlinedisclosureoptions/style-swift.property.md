@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the outline disclosure accessory.
 
@@ -9,7 +10,7 @@ The style of the outline disclosure accessory.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,18 @@ var style: UICellAccessory.OutlineDisclosureOptions.Style
 
 #### Discussion
 
-The default value of this property is [`UICellAccessory.OutlineDisclosureOptions.Style.automatic`](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/automatic.md).
+The default value of this property is [`UICellAccessory.OutlineDisclosureOptions.Style.automatic`](./style-swift.enum/automatic.md).
 
 ## See Also
 
-- [var isHidden: Bool](uicellaccessory-swift.struct/outlinedisclosureoptions/ishidden.md)
+### Accessing configuration options
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/outlinedisclosureoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/outlinedisclosureoptions/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the accessory.
-- [UICellAccessory.OutlineDisclosureOptions.Style](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum.md)
+- [UICellAccessory.OutlineDisclosureOptions.Style](./style-swift.enum.md)
   Constants that describe the style of the outline disclosure accessory.
 
 

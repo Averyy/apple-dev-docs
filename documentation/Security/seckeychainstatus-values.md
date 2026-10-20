@@ -1,6 +1,7 @@
 # SecKeychainStatus Values
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Valid values for the keychain status type.
 
@@ -11,11 +12,11 @@ Valid values for the keychain status type.
 ## Topics
 
 ### Constants
-- [var kSecUnlockStateStatus: UInt32](ksecunlockstatestatus.md)
+- [var kSecUnlockStateStatus: UInt32](./ksecunlockstatestatus.md)
   Indicates the keychain is unlocked.
-- [var kSecReadPermStatus: UInt32](ksecreadpermstatus.md)
+- [var kSecReadPermStatus: UInt32](./ksecreadpermstatus.md)
   Indicates the keychain is readable.
-- [var kSecWritePermStatus: UInt32](ksecwritepermstatus.md)
+- [var kSecWritePermStatus: UInt32](./ksecwritepermstatus.md)
   Indicates the keychain is writable.
 
 

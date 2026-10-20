@@ -1,7 +1,8 @@
 # HMCharacteristicValueRouterStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for the state of the router.
 
@@ -19,25 +20,29 @@ Values for the state of the router.
 enum HMCharacteristicValueRouterStatus
 ```
 
+```c
+enum HMCharacteristicValueRouterStatus : NSInteger;
+```
+
 ## Topics
 
 ### Router states
-- [HMCharacteristicValueRouterStatus.notReady](hmcharacteristicvaluerouterstatus/notready.md)
+- [HMCharacteristicValueRouterStatus.notReady](./hmcharacteristicvaluerouterstatus/notready.md)
   The router isn’t ready.
-- [HMCharacteristicValueRouterStatus.ready](hmcharacteristicvaluerouterstatus/ready.md)
+- [HMCharacteristicValueRouterStatus.ready](./hmcharacteristicvaluerouterstatus/ready.md)
   The router is ready.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluerouterstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluerouterstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

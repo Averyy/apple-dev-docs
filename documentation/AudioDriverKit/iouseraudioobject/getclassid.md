@@ -1,7 +1,8 @@
 # GetClassID
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the audio class identifier of the object.
 
@@ -10,7 +11,7 @@ Gets the audio class identifier of the object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOUserAudioClassID GetClassID();
 ```
 
@@ -20,15 +21,16 @@ The audio class identifier of the object.
 
 ## See Also
 
-- [GetBaseClassID](iouseraudioobject/getbaseclassid.md)
+### Getting Information About the Class
+- [GetBaseClassID](./getbaseclassid.md)
   Gets the audio class identifier of the base class object.
-- [IOUserAudioClassID](audiodriverkit/iouseraudioclassid.md)
+- [IOUserAudioClassID](../audiodriverkit-page/iouseraudioclassid.md)
   An identifier for the type of audio object.
-- [GetObjectID](iouseraudioobject/getobjectid.md)
+- [GetObjectID](./getobjectid.md)
   Gets the object’s identifier.
-- [IOUserAudioObjectID](audiodriverkit/iouseraudioobjectid.md)
+- [IOUserAudioObjectID](../audiodriverkit-page/iouseraudioobjectid.md)
   An identifier that provides a handle on a specific audio object.
-- [GetWorkQueue](iouseraudioobject/getworkqueue.md)
+- [GetWorkQueue](./getworkqueue.md)
   Gets the work queue created by the audio object, as a pointer to a dispatch queue.
 
 

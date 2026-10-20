@@ -1,7 +1,8 @@
 # connectedReceiverNames
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array with the names of all receives currently receiving data from this instance. When a receiver goes offline, this array will be automatically updated.
 

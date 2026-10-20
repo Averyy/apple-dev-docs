@@ -1,7 +1,8 @@
 # updateDrawing(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the drawing the recognizer analyzes.
 
@@ -20,7 +21,7 @@ final func updateDrawing(_ drawing: PKDrawing) async
 
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 #### Discussion
 
@@ -32,7 +33,8 @@ Recognition expects handwriting and strokes scaled as if written on standard pap
 
 ## See Also
 
-- [var drawing: PKDrawing](pkstrokerecognizer/drawing.md)
+### Providing drawing content
+- [var drawing: PKDrawing](./drawing.md)
   The drawing the recognizer analyzes.
 
 

@@ -1,7 +1,8 @@
 # bDevCapabilityType
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The capability type.
 
@@ -10,17 +11,18 @@ The capability type.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDevCapabilityType;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilityusb2extension/1546509-blength.md)
+### Getting the Properties
+- [bLength](./api-1546509-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicecapabilityusb2extension/1546574-bdescriptortype.md)
+- [bDescriptorType](./api-1546574-bdescriptortype.md)
   The type of the descriptor.
-- [bmAttributes](iousbdevicecapabilityusb2extension/1546149-bmattributes.md)
+- [bmAttributes](./api-1546149-bmattributes.md)
   A bitmap encoding of supported device-level features.
 
 

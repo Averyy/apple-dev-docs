@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines whether the searchable object allows replacement of the text range you provide.
@@ -10,7 +11,7 @@ Determines whether the searchable object allows replacement of the text range yo
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,13 +33,19 @@ Returning `NO` from this method disables the “replace” button in the find pa
 - `document`: A string that uniquely identifies the document containing the text range.
 - `withText`: The string to replace the text with.
 
+## Default Implementations
+
+### UITextSearching Implementations
+- [func shouldReplace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String) -> Bool](./shouldreplace%28foundtextrange,document,withtext%29-58mw8.md)
+
 ## See Also
 
-- [var supportsTextReplacement: Bool](uitextsearching-3wkjv/supportstextreplacement.md)
+### Handling replacements
+- [var supportsTextReplacement: Bool](./supportstextreplacement.md)
   A Boolean value that indicates whether the searchable object supports replacing text.
-- [func replace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String)](uitextsearching-3wkjv/replace(foundtextrange:document:withtext:).md)
+- [func replace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String)](./replace%28foundtextrange,document,withtext%29.md)
   Informs the searchable object to replace the text range for the highlighted search result.
-- [func replaceAll(queryString: String, options: UITextSearchOptions, withText: String)](uitextsearching-3wkjv/replaceall(querystring:options:withtext:).md)
+- [func replaceAll(queryString: String, options: UITextSearchOptions, withText: String)](./replaceall%28querystring,options,withtext%29.md)
   Informs the searchable object to replace all matching text across all searchable documents.
 
 

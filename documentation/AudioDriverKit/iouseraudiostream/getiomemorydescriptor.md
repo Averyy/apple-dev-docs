@@ -1,7 +1,8 @@
 # GetIOMemoryDescriptor
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the memory descriptor the stream uses for I/O.
 
@@ -10,17 +11,18 @@ Gets the memory descriptor the stream uses for I/O.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<IOMemoryDescriptor> GetIOMemoryDescriptor();
 ```
 
 #### Discussion
 
-This is the value provided to the stream’s initializer, or updated later by a call to [`SetIOMemoryDescriptor`](iouseraudiostream/setiomemorydescriptor.md).
+This is the value provided to the stream’s initializer, or updated later by a call to [`SetIOMemoryDescriptor`](./setiomemorydescriptor.md).
 
 ## See Also
 
-- [SetIOMemoryDescriptor](iouseraudiostream/setiomemorydescriptor.md)
+### Working with Memory Descriptors
+- [SetIOMemoryDescriptor](./setiomemorydescriptor.md)
   Sets the memory descriptor the stream uses for I/O.
 
 

@@ -1,7 +1,8 @@
 # ProcessInfo.ThermalState.nominal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The thermal state is within normal limits.
 
@@ -20,13 +21,18 @@ The thermal state is within normal limits.
 case nominal
 ```
 
+```c
+NSProcessInfoThermalStateNominal
+```
+
 ## See Also
 
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
+### Constants
+- [ProcessInfo.ThermalState.fair](./fair.md)
   The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
+- [ProcessInfo.ThermalState.serious](./serious.md)
   The thermal state is high.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
+- [ProcessInfo.ThermalState.critical](./critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
 

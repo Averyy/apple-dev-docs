@@ -1,7 +1,8 @@
 # items
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items in the collection.
 
@@ -12,6 +13,10 @@ The items in the collection.
 
 ```swift
 var items: [Item] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<TVTopShelfItem *> * items;
 ```
 
 

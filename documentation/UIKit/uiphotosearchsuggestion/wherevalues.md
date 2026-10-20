@@ -1,7 +1,8 @@
 # whereValues
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Locations mentioned in the text that can be used to filter photos.
 
@@ -14,6 +15,10 @@ Locations mentioned in the text that can be used to filter photos.
 
 ```swift
 var whereValues: [String] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * whereValues;
 ```
 
 #### Discussion

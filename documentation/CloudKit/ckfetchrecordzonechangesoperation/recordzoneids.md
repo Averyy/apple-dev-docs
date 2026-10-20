@@ -1,7 +1,8 @@
 # recordZoneIDs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IDs of the record zones that contain the records to fetch.
 
@@ -20,17 +21,22 @@ The IDs of the record zones that contain the records to fetch.
 var recordZoneIDs: [CKRecordZone.ID]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<CKRecordZoneID *> * recordZoneIDs;
+```
+
 #### Discussion
 
 Typically, you set the value of this property when you create the operation. If you intend to change the record zone IDs, update the value before you execute the operation or submit it to a queue.
 
 ## See Also
 
-- [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](ckfetchrecordzonechangesoperation/configurationsbyrecordzoneid.md)
+### Configuring the Zone Change Operation
+- [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](./configurationsbyrecordzoneid.md)
   A dictionary of configurations for fetching change operations by zone identifier.
-- [CKFetchRecordZoneChangesOperation.ZoneConfiguration](ckfetchrecordzonechangesoperation/zoneconfiguration.md)
+- [CKFetchRecordZoneChangesOperation.ZoneConfiguration](./zoneconfiguration.md)
   A configuration object that describes the information to fetch from a record zone.
-- [var fetchAllChanges: Bool](ckfetchrecordzonechangesoperation/fetchallchanges.md)
+- [var fetchAllChanges: Bool](./fetchallchanges.md)
   A Boolean value that indicates whether to send repeated requests to the server.
 
 

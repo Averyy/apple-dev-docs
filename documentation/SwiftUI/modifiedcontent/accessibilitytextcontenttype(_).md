@@ -1,7 +1,8 @@
 # accessibilityTextContentType(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an accessibility text content type.
 
@@ -21,15 +22,17 @@ nonisolated
 func accessibilityTextContentType(_ textContentType: AccessibilityTextContentType) -> ModifiedContent<Content, Modifier>
 ```
 
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
 #### Discussion
 
 Use this modifier to set the content type of this accessibility element. Assistive technologies can use this property to choose an appropriate way to output the text. For example, when encountering a source coding context, VoiceOver could choose to speak all punctuation.
 
-The default content type [`plain`](accessibilitytextcontenttype/plain.md).
+The default content type [`plain`](../accessibilitytextcontenttype/plain.md).
 
 ## Parameters
 
-- `textContentType`: The accessibility content type from the available [`AccessibilityTextContentType`](accessibilitytextcontenttype.md) options.
+- `textContentType`: The accessibility content type from the available [`AccessibilityTextContentType`](../accessibilitytextcontenttype.md) options.
 
 
 ---

@@ -1,7 +1,8 @@
 # UICollectionViewCompositionalLayoutConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines scroll direction, section spacing, and headers or footers for the layout.
 
@@ -19,11 +20,15 @@ An object that defines scroll direction, section spacing, and headers or footers
 class UICollectionViewCompositionalLayoutConfiguration
 ```
 
+```objc
+@interface UICollectionViewCompositionalLayoutConfiguration : NSObject
+```
+
 #### Overview
 
 You use a layout configuration to modify a collection view layout’s default scroll direction, add extra spacing between each section of the layout, and add headers or footers to the entire layout.
 
-You can pass in this configuration when creating a [`UICollectionViewCompositionalLayout`](uicollectionviewcompositionallayout.md), or you can set the [`configuration`](uicollectionviewcompositionallayout/configuration.md) property on an existing layout. If you modify the configuration on an existing layout, the system invalidates the layout so that it will be updated with the new configuration.
+You can pass in this configuration when creating a [`UICollectionViewCompositionalLayout`](./uicollectionviewcompositionallayout.md), or you can set the [`configuration`](./uicollectionviewcompositionallayout/configuration.md) property on an existing layout. If you modify the configuration on an existing layout, the system invalidates the layout so that it will be updated with the new configuration.
 
 **Swift**:
 
@@ -62,38 +67,39 @@ UICollectionViewCompositionalLayoutConfiguration *config = [[UICollectionViewCom
 ## Topics
 
 ### Specifying scroll direction
-- [var scrollDirection: UICollectionView.ScrollDirection](uicollectionviewcompositionallayoutconfiguration/scrolldirection.md)
+- [var scrollDirection: UICollectionView.ScrollDirection](./uicollectionviewcompositionallayoutconfiguration/scrolldirection.md)
   The axis that the content in the collection view layout scrolls along.
 ### Configuring spacing
-- [var interSectionSpacing: CGFloat](uicollectionviewcompositionallayoutconfiguration/intersectionspacing.md)
+- [var interSectionSpacing: CGFloat](./uicollectionviewcompositionallayoutconfiguration/intersectionspacing.md)
   The amount of space between the sections in the layout.
-- [var contentInsetsReference: UIContentInsetsReference](uicollectionviewcompositionallayoutconfiguration/contentinsetsreference.md)
+- [var contentInsetsReference: UIContentInsetsReference](./uicollectionviewcompositionallayoutconfiguration/contentinsetsreference.md)
   The boundary to reference when defining content insets.
-- [enum UIContentInsetsReference](uicontentinsetsreference.md)
+- [enum UIContentInsetsReference](./uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
 ### Configuring additional views
-- [var boundarySupplementaryItems: [NSCollectionLayoutBoundarySupplementaryItem]](uicollectionviewcompositionallayoutconfiguration/boundarysupplementaryitems.md)
+- [var boundarySupplementaryItems: [NSCollectionLayoutBoundarySupplementaryItem]](./uicollectionviewcompositionallayoutconfiguration/boundarysupplementaryitems.md)
   An array of the supplementary items that are associated with the boundary edges of the entire layout, such as global headers and footers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias UICollectionViewCompositionalLayoutSectionProvider](uicollectionviewcompositionallayoutsectionprovider.md)
+### Configuration
+- [typealias UICollectionViewCompositionalLayoutSectionProvider](./uicollectionviewcompositionallayoutsectionprovider.md)
   A closure that creates and returns each of the layout’s sections.
-- [protocol NSCollectionLayoutEnvironment](nscollectionlayoutenvironment.md)
+- [protocol NSCollectionLayoutEnvironment](./nscollectionlayoutenvironment.md)
   A protocol used to provide information about the layout’s container and environment traits, such as size classes and display scale factor.
 
 

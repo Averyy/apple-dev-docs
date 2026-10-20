@@ -1,7 +1,8 @@
 # CreativeEligibility.BlockedGroups
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The supply sources and placements where this ad creative is not eligible to serve.
 
@@ -10,7 +11,7 @@ The supply sources and placements where this ad creative is not eligible to serv
 
 ## Declaration
 
-```swift
+```
 object CreativeEligibility.BlockedGroups
 ```
 
@@ -18,7 +19,7 @@ object CreativeEligibility.BlockedGroups
 
 Each entry pairs a set of supply placements with the country or region codes where the ad creative is blocked, along with the reason for the block.
 
-See [`CreativeEligibility`](creativeeligibility.md) for the full field reference.
+See [`CreativeEligibility`](../creativeeligibility.md) for the full field reference.
 
 
 ---

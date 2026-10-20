@@ -1,7 +1,8 @@
 # customScheme(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a callback object that matches against URLs with the given custom scheme.
 
@@ -18,6 +19,10 @@ Creates a callback object that matches against URLs with the given custom scheme
 
 ```swift
 class func customScheme(_ customScheme: String) -> Self
+```
+
+```objc
++ (instancetype) callbackWithCustomScheme:(NSString *) customScheme;
 ```
 
 #### Discussion
@@ -39,7 +44,8 @@ let session = ASWebAuthenticationSession(
 
 ## See Also
 
-- [class func https(host: String, path: String) -> Self](aswebauthenticationsession/callback/https(host:path:).md)
+### Creating callbacks
+- [class func https(host: String, path: String) -> Self](./https%28host,path%29.md)
   Creates a callback object that matches against HTTPS URLs with the given host and path.
 
 

@@ -1,14 +1,15 @@
 # kauth_filesec_free
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void kauth_filesec_free(kauth_filesec_t fsp);
 ```
 

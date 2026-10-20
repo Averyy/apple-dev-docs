@@ -1,7 +1,8 @@
 # lastContentModificationDate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date on which the contents of the document were last modified, if available.
 
@@ -21,9 +22,10 @@ final var lastContentModificationDate: Date? { get set }
 
 ## See Also
 
-- [var fileURL: URL?](urldocumentconfiguration/fileurl.md)
+### Accessing document properties
+- [var fileURL: URL?](./fileurl.md)
   A URL of the open document if it is saved to disk.
-- [var creationSource: DocumentCreationSource?](urldocumentconfiguration/creationsource.md)
+- [var creationSource: DocumentCreationSource?](./creationsource.md)
   The source associated with the button that created this document.
 
 

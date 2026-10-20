@@ -1,7 +1,8 @@
 # WebhookEvent.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a webhook event resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a webhook event resource.
 
 ## Declaration
 
-```swift
+```
 object WebhookEvent.Attributes
 ```
 

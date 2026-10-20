@@ -1,7 +1,8 @@
 # init(background:lighting:reverb:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new environment description with the given elements.
 

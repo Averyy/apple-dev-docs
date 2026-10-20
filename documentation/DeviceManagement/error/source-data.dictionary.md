@@ -1,7 +1,8 @@
 # Error.Source
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the source of an error.
 
@@ -10,7 +11,7 @@ An object that represents the source of an error.
 
 ## Declaration
 
-```swift
+```
 object Error.Source
 ```
 

@@ -1,7 +1,8 @@
 # timeToReset
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A duration in which the framework restores the group’s original state.
 
@@ -19,13 +20,18 @@ A duration in which the framework restores the group’s original state.
 var timeToReset: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double timeToReset;
+```
+
 #### Discussion
 
-This property determines the speed of deactivation when the app calls [`deactivate()`](phasegrouppreset/deactivate().md). The framework scales the value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
+This property determines the speed of deactivation when the app calls [`deactivate()`](./deactivate%28%29.md). The framework scales the value by [`unitsPerSecond`](../phaseengine/unitspersecond.md).
 
 ## See Also
 
-- [var timeToTarget: Double](phasegrouppreset/timetotarget.md)
+### Fading Between Settings
+- [var timeToTarget: Double](./timetotarget.md)
   A duration in which the engine fades the settings from their original value to their new value.
 
 

@@ -1,16 +1,20 @@
 # NSViewGestureRecognizerIsExclusive
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that controls whether only one view’s gesture recognizers can be active at a time.
 
 **Availability**:
 - macOS 27.0+
 
+## Details
+
+- **Name**: `NSViewGestureRecognizerIsExclusive` (View gesture recognizer is exclusive)
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `YES`
 
@@ -20,7 +24,7 @@ Set this key to `NO` to allow gesture recognizers in multiple views to activate 
 
 By default, AppKit allows only one view to process a gesture at a time. Once a gesture recognizer in one view becomes active, touches in other views won’t activate their gesture recognizers until the first gesture completes. This prevents multiple simultaneous gestures from conflicting with each other.
 
-For finer-grained control, use the [`exclusiveGestureBehavior`](https://developer.apple.com/documentation/appkit/nsview/exclusivegesturebehavior-swift.property) property instead of this key to configure exclusivity on individual views and their subviews, rather than applying a single setting to the entire app.
+For finer-grained control, use the [`exclusiveGestureBehavior`](../../AppKit/nsview/exclusivegesturebehavior-swift.property.md) property instead of this key to configure exclusivity on individual views and their subviews, rather than applying a single setting to the entire app.
 
 The default value is `YES`.
 

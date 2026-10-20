@@ -1,7 +1,8 @@
 # PredicateExpressions.ForcedUnwrap
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,22 @@ struct ForcedUnwrap<Inner, Wrapped> where Inner : PredicateExpression, Inner.Out
 ## Topics
 
 ### Initializers
-- [init(Inner)](predicateexpressions/forcedunwrap/init(_:).md)
+- [init(Inner)](./forcedunwrap/init%28_%29.md)
 ### Instance Properties
-- [let inner: Inner](predicateexpressions/forcedunwrap/inner.md)
+- [let inner: Inner](./forcedunwrap/inner.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

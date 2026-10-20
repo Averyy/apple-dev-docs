@@ -1,7 +1,8 @@
 # audio
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the audio domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the audio domain.
 ```swift
 static var audio: some AppSchema.AudioEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

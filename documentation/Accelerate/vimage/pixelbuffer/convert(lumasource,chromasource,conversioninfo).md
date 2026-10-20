@@ -1,7 +1,8 @@
 # convert(lumaSource:chromaSource:conversionInfo:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Populates the pixel buffer with ARGB data from the given luminance and chrominance pixel buffers.
 
@@ -11,7 +12,7 @@ Populates the pixel buffer with ARGB data from the given luminance and chrominan
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Populates the pixel buffer with ARGB data from the given luminance and chrominan
 ```swift
 func convert(lumaSource: vImage.PixelBuffer<vImage.Planar8>, chromaSource: vImage.PixelBuffer<vImage.Interleaved8x2>, conversionInfo: vImage_YpCbCrToARGB)
 ```
+
+Available when `Format` is `vImage.Interleaved8x4`.
 
 ## Parameters
 

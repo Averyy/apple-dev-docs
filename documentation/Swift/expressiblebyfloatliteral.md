@@ -1,7 +1,8 @@
 # ExpressibleByFloatLiteral
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized with a floating-point literal.
 
@@ -32,38 +33,39 @@ let threshold = 6.0
 let measurements = [2.2, 4.1, 3.65, 4.2, 9.1]
 ```
 
-### Conforming to Expressiblebyfloatliteral
+### Conforming to ExpressibleByFloatLiteral
 
 To add `ExpressibleByFloatLiteral` conformance to your custom type, implement the required initializer.
 
 ## Topics
 
 ### Associated Types
-- [associatedtype FloatLiteralType : _ExpressibleByBuiltinFloatLiteral](expressiblebyfloatliteral/floatliteraltype.md)
+- [associatedtype FloatLiteralType : _ExpressibleByBuiltinFloatLiteral](./expressiblebyfloatliteral/floatliteraltype.md)
   A type that represents a floating-point literal.
 ### Initializers
-- [init(floatLiteral: Self.FloatLiteralType)](expressiblebyfloatliteral/init(floatliteral:).md)
+- [init(floatLiteral: Self.FloatLiteralType)](./expressiblebyfloatliteral/init%28floatliteral%29.md)
   Creates an instance initialized to the specified floating-point value.
 
 ## Relationships
 
 ### Inherited By
-- [BinaryFloatingPoint](binaryfloatingpoint.md)
+- [BinaryFloatingPoint](./binaryfloatingpoint.md)
 ### Conforming Types
-- [Double](double.md)
-- [Float](float.md)
-- [Float16](float16.md)
-- [Float80](float80.md)
+- [Double](./double.md)
+- [Float](./float.md)
+- [Float16](./float16.md)
+- [Float80](./float80.md)
 
 ## See Also
 
-- [protocol ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
+### Value Literals
+- [protocol ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
   A type that can be initialized with an integer literal.
-- [protocol ExpressibleByBooleanLiteral](expressiblebybooleanliteral.md)
+- [protocol ExpressibleByBooleanLiteral](./expressiblebybooleanliteral.md)
   A type that can be initialized with the Boolean literals `true` and `false`.
-- [protocol ExpressibleByNilLiteral](expressiblebynilliteral.md)
+- [protocol ExpressibleByNilLiteral](./expressiblebynilliteral.md)
   A type that can be initialized using the nil literal, `nil`.
-- [struct StaticBigInt](staticbigint.md)
+- [struct StaticBigInt](./staticbigint.md)
   An immutable arbitrary-precision signed integer.
 
 

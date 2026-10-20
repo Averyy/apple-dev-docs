@@ -1,7 +1,8 @@
 # Shearable3D
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the interface to shear Spatial entities.
 
@@ -11,7 +12,7 @@ A set of methods that defines the interface to shear Spatial entities.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ protocol Shearable3D
 ## Topics
 
 ### Instance methods
-- [func shear(AxisWithFactors)](shearable3d/shear(_:).md)
+- [func shear(AxisWithFactors)](./shearable3d/shear%28_%29.md)
   Shears the entity by the specified axis and shear factors.
-- [func sheared(AxisWithFactors) -> Self](shearable3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Self](./shearable3d/sheared%28_%29.md)
   Returns the entity that results from shearing with the specified axis and shear factors.
 
 ## Relationships
 
 ### Conforming Types
-- [AffineTransform3D](affinetransform3d.md)
-- [ProjectiveTransform3D](projectivetransform3d.md)
-- [Rect3D](rect3d.md)
-- [Size3D](size3d.md)
-- [Vector3D](vector3d.md)
+- [AffineTransform3D](./affinetransform3d.md)
+- [ProjectiveTransform3D](./projectivetransform3d.md)
+- [Rect3D](./rect3d.md)
+- [Size3D](./size3d.md)
+- [Vector3D](./vector3d.md)
 
 ## See Also
 
-- [protocol Primitive3D](primitive3d.md)
+### Protocols
+- [protocol Primitive3D](./primitive3d.md)
   A set of methods common to Spatial primitives.
-- [protocol Rotatable3D](rotatable3d.md)
+- [protocol Rotatable3D](./rotatable3d.md)
   A set of methods that defines the interface to rotate Spatial entities.
-- [protocol Scalable3D](scalable3d.md)
+- [protocol Scalable3D](./scalable3d.md)
   A set of methods that defines the interface to scale Spatial entities.
-- [protocol Translatable3D](translatable3d.md)
+- [protocol Translatable3D](./translatable3d.md)
   A set of methods that defines the interface to translate Spatial entities.
-- [protocol Volumetric](volumetric.md)
+- [protocol Volumetric](./volumetric.md)
   A set of methods for working with Spatial primitives with volume.
-- [protocol ClampableWithinRectProtocol](clampablewithinrectprotocol.md)
+- [protocol ClampableWithinRectProtocol](./clampablewithinrectprotocol.md)
   A set of methods that defines the interface for Spatial entities that can be clamped to a volume.
 
 

@@ -1,18 +1,21 @@
 # inviteeResponseNoAnswer
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The invitation timed out without an answer.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 6.0+ - Deprecated in 18.4
+- iPadOS 6.0+ - Deprecated in 18.4
+- Mac Catalyst 13.1+ - Deprecated in 18.4
+- macOS 10.8+ - Deprecated in 15.4
+- tvOS 9.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 2.4
+- watchOS 3.0+ - Deprecated in 11.4
+
+> **Deprecated**: Deprecated in iOS 8. Use [`GKInviteRecipientResponse`](../gkinviterecipientresponse.md) enum instead.
 
 ## Declaration
 
@@ -20,17 +23,22 @@ The invitation timed out without an answer.
 static var inviteeResponseNoAnswer: GKInviteRecipientResponse { get }
 ```
 
+```c
+GKInviteeResponseNoAnswer
+```
+
 ## See Also
 
-- [static var inviteeResponseAccepted: GKInviteRecipientResponse](gkinviterecipientresponse/inviteeresponseaccepted.md)
+### Deprecated Properties
+- [static var inviteeResponseAccepted: GKInviteRecipientResponse](./inviteeresponseaccepted.md)
   The player accepted the invitation.
-- [static var inviteeResponseDeclined: GKInviteRecipientResponse](gkinviterecipientresponse/inviteeresponsedeclined.md)
+- [static var inviteeResponseDeclined: GKInviteRecipientResponse](./inviteeresponsedeclined.md)
   The player rejected the invitation.
-- [static var inviteeResponseFailed: GKInviteRecipientResponse](gkinviterecipientresponse/inviteeresponsefailed.md)
+- [static var inviteeResponseFailed: GKInviteRecipientResponse](./inviteeresponsefailed.md)
   The invitation was unable to be delivered.
-- [static var inviteeResponseIncompatible: GKInviteRecipientResponse](gkinviterecipientresponse/inviteeresponseincompatible.md)
+- [static var inviteeResponseIncompatible: GKInviteRecipientResponse](./inviteeresponseincompatible.md)
   The invitee isn’t running a compatible version of your game.
-- [static var inviteeResponseUnableToConnect: GKInviteRecipientResponse](gkinviterecipientresponse/inviteeresponseunabletoconnect.md)
+- [static var inviteeResponseUnableToConnect: GKInviteRecipientResponse](./inviteeresponseunabletoconnect.md)
   The invitee couldn’t be contacted.
 
 

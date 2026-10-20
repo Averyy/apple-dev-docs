@@ -1,7 +1,8 @@
 # requestParameters
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var requestParameters: Data { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * requestParameters;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(style:allowedUnits:spellsOutZero:includesActualByteCount:locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a byte count format style.
 
@@ -22,7 +23,7 @@ init(style: ByteCountFormatStyle.Style = .file, allowedUnits: ByteCountFormatSty
 
 #### Discussion
 
-In situations that can infer the [`ByteCountFormatStyle`](bytecountformatstyle.md) type, you can call [`byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)`](formatstyle/bytecount(style:allowedunits:spellsoutzero:includesactualbytecount:)-59ep0.md) instead of explicitly using this initializer. This is the case when you call [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73) on a [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
+In situations that can infer the [`ByteCountFormatStyle`](../bytecountformatstyle.md) type, you can call [`byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)`](../formatstyle/bytecount%28style,allowedunits,spellsoutzero,includesactualbytecount%29-59ep0.md) instead of explicitly using this initializer. This is the case when you call [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md) on a [`BinaryInteger`](../../Swift/binaryinteger.md).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ In situations that can infer the [`ByteCountFormatStyle`](bytecountformatstyle.m
 
 ## See Also
 
-- [ByteCountFormatStyle.Units](bytecountformatstyle/units.md)
+### Creating a byte count style
+- [ByteCountFormatStyle.Units](./units.md)
   The units to use when formatting a byte count, such as kilobytes or gigabytes.
 
 

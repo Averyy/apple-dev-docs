@@ -1,7 +1,8 @@
 # WebContentSettings.FilterPolicy.auto(_:except:)
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system blocks adult content.
 
@@ -22,11 +23,12 @@ The system also blocks websites you provide in `domains`. The system allows webs
 
 ## See Also
 
-- [WebContentSettings.FilterPolicy.all(except:)](webcontentsettings/filterpolicy/all(except:).md)
+### Providing filters and exceptions
+- [WebContentSettings.FilterPolicy.all(except:)](./all%28except%29.md)
   The system blocks all websites except the ones you specify.
-- [WebContentSettings.FilterPolicy.none](webcontentsettings/filterpolicy/none.md)
+- [WebContentSettings.FilterPolicy.none](./none.md)
   The policy doesn’t affect any domains.
-- [WebContentSettings.FilterPolicy.specific(_:)](webcontentsettings/filterpolicy/specific(_:).md)
+- [WebContentSettings.FilterPolicy.specific(_:)](./specific%28_%29.md)
   The policy blocks the specified domains.
 
 

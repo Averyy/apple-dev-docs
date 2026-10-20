@@ -1,7 +1,8 @@
 # companion
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains companion domain state.
 
@@ -15,6 +16,10 @@ Contains companion domain state.
 
 ```swift
 var companion: LADomainStateCompanion { get }
+```
+
+```objc
+@property (nonatomic, readonly) LADomainStateCompanion * companion;
 ```
 
 

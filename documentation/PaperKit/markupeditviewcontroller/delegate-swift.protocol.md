@@ -1,7 +1,8 @@
 # MarkupEditViewController.Delegate
 
 **Framework**: PaperKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -18,19 +19,19 @@ protocol Delegate : AnyObject
 ## Topics
 
 ### Inserting content
-- [func markupEditViewController(MarkupEditViewController, insertNewShape: ShapeConfiguration.Shape)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewshape:).md)
+- [func markupEditViewController(MarkupEditViewController, insertNewShape: ShapeConfiguration.Shape)](./delegate-swift.protocol/markupeditviewcontroller%28_,insertnewshape%29.md)
   Add a new shape on top of the paper.
-- [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox(_:).md)
+- [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](./delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox%28_%29.md)
   Add a new textbox on top of the paper.
-- [func markupEditViewController(MarkupEditViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+- [func markupEditViewController(MarkupEditViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](./delegate-swift.protocol/markupeditviewcontroller%28_,insertnewlinewithstartmarker,endmarker%29.md)
   Add a new line on top of the paper.
-- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewcontents:).md)
+- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](./delegate-swift.protocol/markupeditviewcontroller%28_,insertnewcontents%29.md)
   Add new content on top of the paper.
 
 ## Relationships
 
 ### Conforming Types
-- [PaperMarkupViewController](papermarkupviewcontroller.md)
+- [PaperMarkupViewController](../papermarkupviewcontroller.md)
 
 
 ---

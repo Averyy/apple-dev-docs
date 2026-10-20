@@ -1,14 +1,15 @@
 # LOOP
 
 **Framework**: LivePhotosKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - LivePhotosKit JS 1.5+
 
 ## Declaration
 
-```swift
+```
 const EffectTypeLiteral LOOP;
 ```
 

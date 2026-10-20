@@ -1,7 +1,8 @@
 # init(uuid:qualifierData:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entity identifier with the given UUID and qualifier data.
 
@@ -12,6 +13,10 @@ Creates an entity identifier with the given UUID and qualifier data.
 
 ```swift
 init?(uuid: UUID, qualifierData: Data)
+```
+
+```objc
+- (instancetype) initWithUUID:(NSUUID *) uuid qualifierData:(NSData *) qualifierData;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # modelDisplayName
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human readable name of a model for display purposes.
 
@@ -20,13 +21,18 @@ A human readable name of a model for display purposes.
 var modelDisplayName: String? { get set }
 ```
 
+```objc
+@property (copy, readwrite, nullable) NSString * modelDisplayName;
+```
+
 ## See Also
 
-- [var functionName: String?](mlmodelconfiguration/functionname.md)
+### Configuring model parameters
+- [var functionName: String?](./functionname.md)
   Function name that `MLModel` will use.
-- [var parameters: [MLParameterKey : Any]?](mlmodelconfiguration/parameters.md)
+- [var parameters: [MLParameterKey : Any]?](./parameters.md)
   A dictionary of configuration settings your app can override when loading a model.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

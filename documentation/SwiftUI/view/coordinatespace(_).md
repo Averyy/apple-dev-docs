@@ -1,7 +1,8 @@
 # coordinateSpace(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 
@@ -54,11 +55,11 @@ struct ContentView: View {
 }
 ```
 
-Here, the [`VStack`](vstack.md) in the `ContentView` named “stack” is composed of a red frame with a custom [`Circle`](circle.md) view [`overlay(_:alignment:)`](view/overlay(_:alignment:).md) at its center.
+Here, the [`VStack`](../vstack.md) in the `ContentView` named “stack” is composed of a red frame with a custom [`Circle`](../circle.md) view [`overlay(_:alignment:)`](./overlay%28_,alignment%29.md) at its center.
 
-The `circle` view has an attached [`DragGesture`](draggesture.md) that targets the enclosing VStack’s coordinate space. As the gesture recognizer’s closure registers events inside `circle` it stores them in the shared `location` state variable and the [`VStack`](vstack.md) displays the coordinates in a [`Text`](text.md) view.
+The `circle` view has an attached [`DragGesture`](../draggesture.md) that targets the enclosing VStack’s coordinate space. As the gesture recognizer’s closure registers events inside `circle` it stores them in the shared `location` state variable and the [`VStack`](../vstack.md) displays the coordinates in a [`Text`](../text.md) view.
 
-![A screenshot showing an example of finding a named view and tracking](/images/com.apple.SwiftUI/SwiftUI-View-coordinateSpace@2x.png)
+![A screenshot showing an example of finding a named view and tracking](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-coordinateSpace@2x.png)
 
 ## Parameters
 
@@ -66,25 +67,26 @@ The `circle` view has an attached [`DragGesture`](draggesture.md) that targets t
 
 ## See Also
 
-- [struct GeometryReader](geometryreader.md)
+### Measuring a view
+- [struct GeometryReader](../geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryReader3D](geometryreader3d.md)
+- [struct GeometryReader3D](../geometryreader3d.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryProxy](geometryproxy.md)
+- [struct GeometryProxy](../geometryproxy.md)
   A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](../reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [struct GeometryProxy3D](geometryproxy3d.md)
+- [struct GeometryProxy3D](../geometryproxy3d.md)
   A proxy for access to the size and coordinate space of the container view.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](../coordinatespace.md)
   A resolved coordinate space created by the coordinate space protocol.
-- [protocol CoordinateSpaceProtocol](coordinatespaceprotocol.md)
+- [protocol CoordinateSpaceProtocol](../coordinatespaceprotocol.md)
   A frame of reference within the layout system.
-- [struct PhysicalMetric](physicalmetric.md)
+- [struct PhysicalMetric](../physicalmetric.md)
   Provides access to a value in points that corresponds to the specified physical measurement.
-- [struct PhysicalMetricsConverter](physicalmetricsconverter.md)
+- [struct PhysicalMetricsConverter](../physicalmetricsconverter.md)
   A physical metrics converter provides conversion between point values and their extent in 3D space, in the form of physical length measurements.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A range that represents the position of the marked text.
@@ -18,6 +19,10 @@ A range that represents the position of the marked text.
 var markedTextRange: UITextRange? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UITextRange * markedTextRange;
+```
+
 #### Discussion
 
 Return `nil` if no marked text exists.
@@ -28,11 +33,12 @@ When you commit marked text to the document, replace any existing marked text. I
 
 ## See Also
 
-- [var hasMarkedText: Bool](betextinput/hasmarkedtext.md)
+### Managing marked text
+- [var hasMarkedText: Bool](./hasmarkedtext.md)
   A Boolean value that indicates if marked text exists for an active input session.
-- [func unmarkText()](betextinput/unmarktext.md)
+- [func unmarkText()](./unmarktext%28%29.md)
   Unmarks the currently marked text.
-- [func isPointNearMarkedText(CGPoint) -> Bool](betextinput/ispointnearmarkedtext(_:).md)
+- [func isPointNearMarkedText(CGPoint) -> Bool](./ispointnearmarkedtext%28_%29.md)
   Provides a Boolean value that indicates if a point is near marked text.
 
 

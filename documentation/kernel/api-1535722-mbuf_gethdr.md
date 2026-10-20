@@ -1,18 +1,19 @@
 # mbuf_gethdr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_gethdr(mbuf_how_t how, mbuf_type_t type, mbuf_t *mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success, errno error on failure.
 

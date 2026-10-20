@@ -1,7 +1,8 @@
 # region
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region to localize the amounts in the shopping cart.
 

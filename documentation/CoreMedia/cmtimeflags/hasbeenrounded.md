@@ -1,7 +1,8 @@
 # hasBeenRounded
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates a previous time calculation rounded the result.
 
@@ -20,17 +21,22 @@ A flag that indicates a previous time calculation rounded the result.
 static var hasBeenRounded: CMTimeFlags { get }
 ```
 
+```c
+kCMTimeFlags_HasBeenRounded
+```
+
 ## See Also
 
-- [static var valid: CMTimeFlags](cmtimeflags/valid.md)
+### Properties
+- [static var valid: CMTimeFlags](./valid.md)
   A flag that indicates a time is valid.
-- [static var positiveInfinity: CMTimeFlags](cmtimeflags/positiveinfinity.md)
+- [static var positiveInfinity: CMTimeFlags](./positiveinfinity.md)
   A flag that indicates the time is positive infinity.
-- [static var negativeInfinity: CMTimeFlags](cmtimeflags/negativeinfinity.md)
+- [static var negativeInfinity: CMTimeFlags](./negativeinfinity.md)
   A flag that indicates the time is negative infinity.
-- [static var indefinite: CMTimeFlags](cmtimeflags/indefinite.md)
+- [static var indefinite: CMTimeFlags](./indefinite.md)
   A flag that indicates the time is indefinite.
-- [static var impliedValueFlagsMask: CMTimeFlags](cmtimeflags/impliedvalueflagsmask.md)
+- [static var impliedValueFlagsMask: CMTimeFlags](./impliedvalueflagsmask.md)
   A flag that indicates the time is positive or negative infinity, or indefinite.
 
 

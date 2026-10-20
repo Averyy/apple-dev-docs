@@ -1,7 +1,8 @@
 # HTMLOListElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLOListElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compact](htmlolistelement/1632120-compact.md)
-- [reversed](htmlolistelement/1634282-reversed.md)
-- [start](htmlolistelement/1634434-start.md)
-- [type](htmlolistelement/1631784-type.md)
+- [compact](./htmlolistelement/api-1632120-compact.md)
+- [reversed](./htmlolistelement/api-1634282-reversed.md)
+- [start](./htmlolistelement/api-1634434-start.md)
+- [type](./htmlolistelement/api-1631784-type.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

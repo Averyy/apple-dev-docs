@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a new element into the collection at the specified position.
 
@@ -35,7 +36,7 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
+> **Complexity**: O(*n*), where *n* is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
 ## Parameters
 

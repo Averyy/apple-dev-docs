@@ -1,6 +1,7 @@
 # Onboarding a Matter device
 
-**Framework**: Matter
+**Framework**: Matter  
+**Role**: Article
 
 Prepare your app to discover and control a Matter device.
 
@@ -8,17 +9,17 @@ Prepare your app to discover and control a Matter device.
 
 If you want your app to interact with a Matter device, you need to commission it. *Commissioning* a Matter device makes it a part of your *fabric*, which is a collection of Matter devices that communicate with each other.
 
-You can securely commission a Matter device using certificates. Generate your own certificates using [`MTRCertificates`](mtrcertificates.md) or another process. Alternatively, you can provide a root [`MTRKeypair`](mtrkeypair.md), and the Matter framework generates certificates for you.
+You can securely commission a Matter device using certificates. Generate your own certificates using [`MTRCertificates`](./mtrcertificates.md) or another process. Alternatively, you can provide a root [`MTRKeypair`](./mtrkeypair.md), and the Matter framework generates certificates for you.
 
-##### Obtain the Onboarding Payload
+##### Obtain the onboarding payload
 
-The [`MatterSupport`](https://developer.apple.com/documentation/mattersupport) framework provides an onboarding payload that you use to discover a device. Implement [`commissionDevice(in:onboardingPayload:commissioningID:)`](https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/commissiondevice(in:onboardingpayload:commissioningid:)) to obtain the onboarding payload, then securely commission a Matter device using [`MTRDeviceController`](mtrdevicecontroller.md). For more information, see [`Adding Matter support to your ecosystem`](https://developer.apple.com/documentation/mattersupport/adding-matter-support-to-your-ecosystem).
+The [MatterSupport](../MatterSupport/MatterSupport.md) framework provides an onboarding payload that you use to discover a device. Implement [`commissionDevice(in:onboardingPayload:commissioningID:)`](../MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice%28in,onboardingpayload,commissioningid%29.md) to obtain the onboarding payload, then securely commission a Matter device using [`MTRDeviceController`](./mtrdevicecontroller.md). For more information, see [Adding Matter support to your ecosystem](../MatterSupport/adding-matter-support-to-your-ecosystem.md).
 
-##### Provide Persistent Storage
+##### Provide persistent storage
 
-Implement [`MTRStorage`](mtrstorage.md) so that the Matter framework can store and retrieve persistent data, then create an instance of that object and pass it to an instance of [`MTRDeviceControllerFactoryParams`](mtrdevicecontrollerfactoryparams.md). Set the factory parameter object’s [`productAttestationAuthorityCertificates`](mtrdevicecontrollerfactoryparams/productattestationauthoritycertificates.md) to an array of trusted Matter certificates.
+Implement [`MTRStorage`](./mtrstorage.md) so that the Matter framework can store and retrieve persistent data, then create an instance of that object and pass it to an instance of [`MTRDeviceControllerFactoryParams`](./mtrdevicecontrollerfactoryparams.md). Set the factory parameter object’s [`productAttestationAuthorityCertificates`](./mtrdevicecontrollerfactoryparams/productattestationauthoritycertificates.md) to an array of trusted Matter certificates.
 
-Obtain a [`MTRDeviceControllerFactory`](mtrdevicecontrollerfactory.md) shared instance, then call [`start(_:)`](mtrdevicecontrollerfactory/start(_:).md) and handle any errors that may occur.
+Obtain a [`MTRDeviceControllerFactory`](./mtrdevicecontrollerfactory.md) shared instance, then call [`start(_:)`](./mtrdevicecontrollerfactory/start%28_%29.md) and handle any errors that may occur.
 
 ```swift
 class MyStorage : NSObject, MTRStorage {
@@ -54,7 +55,7 @@ do {
 }
 ```
 
-##### Set Up Security for the Commissioning
+##### Set up security for the commissioning
 
 Create an Identity Protection Key (IPK) and save it to iCloud Keychain. You need this IPK every time you start the controller for this fabric.
 
@@ -72,7 +73,7 @@ if status != errSecSuccess {
 }
 ```
 
-Next, create [`MTRDeviceControllerStartupParams`](mtrdevicecontrollerstartupparams.md). If you’re providing your own operational, intermediate, and root certificates, implement [`MTROperationalCertificateIssuer`](mtroperationalcertificateissuer.md) and provide it to the controller so you can issue certificates to devices you commission.
+Next, create [`MTRDeviceControllerStartupParams`](./mtrdevicecontrollerstartupparams.md). If you’re providing your own operational, intermediate, and root certificates, implement [`MTROperationalCertificateIssuer`](./mtroperationalcertificateissuer.md) and provide it to the controller so you can issue certificates to devices you commission.
 
 ```swift
 class MyCertificateIssuer : NSObject, MTROperationalCertificateIssuer
@@ -89,7 +90,7 @@ params.operationalCertificateIssuer = MyCertificateIssuer()
 params.operationalCertificateIssuerQueue = DispatchQueue(label: "Certificate issuer queue")
 ```
 
-Otherwise, pass in the IPK, a fabric identifier of your choosing, and the root [`MTRKeypair`](mtrkeypair.md) you created earlier. In this case, the Matter framework creates the certificates.
+Otherwise, pass in the IPK, a fabric identifier of your choosing, and the root [`MTRKeypair`](./mtrkeypair.md) you created earlier. In this case, the Matter framework creates the certificates.
 
 ```swift
 let params = MTRDeviceControllerStartupParams(ipk: ipk, 
@@ -100,9 +101,9 @@ fabricID: fabricID, nocSigner: myRootKeypair)
 
 In either case, set `params.vendorID` to your Connectivity Standards Alliance-assigned vendor identifier.
 
-##### Commission the Matter Device
+##### Commission the Matter device
 
-Before you start commissioning, create a controller. If you’re creating a controller for this fabric for the first time, call [`createController(onNewFabric:)`](mtrdevicecontrollerfactory/createcontroller(onnewfabric:).md); otherwise, call [`createController(onExistingFabric:)`](mtrdevicecontrollerfactory/createcontroller(onexistingfabric:).md).
+Before you start commissioning, create a controller. If you’re creating a controller for this fabric for the first time, call [`createController(onNewFabric:)`](./mtrdevicecontrollerfactory/createcontroller%28onnewfabric%29.md); otherwise, call [`createController(onExistingFabric:)`](./mtrdevicecontrollerfactory/createcontroller%28onexistingfabric%29.md).
 
 ```swift
 let controller: MTRDeviceController
@@ -117,11 +118,11 @@ do {
 }
 ```
 
-Implement the delegate methods to receive callbacks as the commissioning progresses, then call [`setDeviceControllerDelegate(_:queue:)`](mtrdevicecontroller/setdevicecontrollerdelegate(_:queue:).md) to register the delegate.
+Implement the delegate methods to receive callbacks as the commissioning progresses, then call [`setDeviceControllerDelegate(_:queue:)`](./mtrdevicecontroller/setdevicecontrollerdelegate%28_,queue%29.md) to register the delegate.
 
-Create an [`MTRSetupPayload`](mtrsetuppayload.md) with [`init(onboardingPayload:)`](mtrsetuppayload/init(onboardingpayload:).md), then call [`setupCommissioningSession(with:newNodeID:)`](mtrdevicecontroller/setupcommissioningsession(with:newnodeid:).md) with the [`MTRSetupPayload`](mtrsetuppayload.md) object and the node ID to assign to the device. When the commissioning session is set up, the framework calls [`controller(_:commissioningSessionEstablishmentDone:)`](mtrdevicecontrollerdelegate/controller(_:commissioningsessionestablishmentdone:).md).
+Create an [`MTRSetupPayload`](./mtrsetuppayload.md) with [`init(onboardingPayload:)`](./mtrsetuppayload/init%28onboardingpayload%29.md), then call [`setupCommissioningSession(with:newNodeID:)`](./mtrdevicecontroller/setupcommissioningsession%28with,newnodeid%29.md) with the [`MTRSetupPayload`](./mtrsetuppayload.md) object and the node ID to assign to the device. When the commissioning session is set up, the framework calls [`controller(_:commissioningSessionEstablishmentDone:)`](./mtrdevicecontrollerdelegate/controller%28_,commissioningsessionestablishmentdone%29.md).
 
-Call [`commissionNode(withID:commissioningParams:)`](mtrdevicecontroller/commissionnode(withid:commissioningparams:).md) with the node ID and commissioning parameters. When commissioning completes, the framework notifies your delegate with [`onCommissioningComplete(_:)`](mtrdevicepairingdelegate/oncommissioningcomplete(_:).md).
+Call [`commissionNode(withID:commissioningParams:)`](./mtrdevicecontroller/commissionnode%28withid,commissioningparams%29.md) with the node ID and commissioning parameters. When commissioning completes, the framework notifies your delegate with [`onCommissioningComplete(_:)`](./mtrdevicepairingdelegate/oncommissioningcomplete%28_%29.md).
 
 ```swift
 let nodeID = 1

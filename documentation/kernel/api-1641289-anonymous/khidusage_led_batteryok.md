@@ -1,14 +1,15 @@
 # kHIDUsage_LED_BatteryOK
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_LED_BatteryOK = 0x1C
 ```
 

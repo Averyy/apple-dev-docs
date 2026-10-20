@@ -1,7 +1,8 @@
 # SessionAttributeBits
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The attributes of a security session.
 
@@ -15,32 +16,36 @@ The attributes of a security session.
 struct SessionAttributeBits
 ```
 
+```c
+enum SessionAttributeBits : UInt32;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](sessionattributebits/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./sessionattributebits/init%28rawvalue%29.md)
   Initializes a session attribute bits structure.
 ### Bits
-- [static var sessionIsRoot: SessionAttributeBits](sessionattributebits/sessionisroot.md)
+- [static var sessionIsRoot: SessionAttributeBits](./sessionattributebits/sessionisroot.md)
   A bit that indicates the session is the root session.
-- [static var sessionHasGraphicAccess: SessionAttributeBits](sessionattributebits/sessionhasgraphicaccess.md)
+- [static var sessionHasGraphicAccess: SessionAttributeBits](./sessionattributebits/sessionhasgraphicaccess.md)
   A bit that indicates a graphic subsystem is available.
-- [static var sessionHasTTY: SessionAttributeBits](sessionattributebits/sessionhastty.md)
+- [static var sessionHasTTY: SessionAttributeBits](./sessionattributebits/sessionhastty.md)
   A bit that indicates `/dev/tty` is available.
-- [static var sessionIsRemote: SessionAttributeBits](sessionattributebits/sessionisremote.md)
+- [static var sessionIsRemote: SessionAttributeBits](./sessionattributebits/sessionisremote.md)
   A bit that indicates the session was initiated over the network.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

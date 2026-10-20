@@ -1,45 +1,47 @@
 # SCSICmd_INQUIRY_PageCx_Header
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct SCSICmd_INQUIRY_PageCx_Header;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [PAGE_CODE](scsicmd_inquiry_pagecx_header-c.struct/page_code.md)
-- [PAGE_LENGTH](scsicmd_inquiry_pagecx_header-c.struct/page_length.md)
-- [PERIPHERAL_DEVICE_TYPE](scsicmd_inquiry_pagecx_header-c.struct/peripheral_device_type.md)
-- [RESERVED](scsicmd_inquiry_pagecx_header-c.struct/reserved.md)
+- [PAGE_CODE](./scsicmd_inquiry_pagecx_header-c.struct/page_code.md)
+- [PAGE_LENGTH](./scsicmd_inquiry_pagecx_header-c.struct/page_length.md)
+- [PERIPHERAL_DEVICE_TYPE](./scsicmd_inquiry_pagecx_header-c.struct/peripheral_device_type.md)
+- [RESERVED](./scsicmd_inquiry_pagecx_header-c.struct/reserved.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

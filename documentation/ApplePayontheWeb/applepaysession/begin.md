@@ -1,7 +1,8 @@
 # begin
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins the merchant validation process.
 
@@ -11,13 +12,13 @@ Begins the merchant validation process.
 
 ## Declaration
 
-```swift
+```
 undefined begin();
 ```
 
 ## Mentions
 
-- [Creating an Apple Pay Session](creating-an-apple-pay-session.md)
+- [Creating an Apple Pay Session](../creating-an-apple-pay-session.md)
 
 #### Discussion
 
@@ -25,11 +26,12 @@ When this method is called, the payment sheet is presented and the merchant vali
 
 ## See Also
 
-- [onvalidatemerchant](applepaysession/onvalidatemerchant.md)
+### Getting merchant validation
+- [onvalidatemerchant](./onvalidatemerchant.md)
   An event handler the system calls when it displays the payment sheet.
-- [completeMerchantValidation](applepaysession/completemerchantvalidation.md)
+- [completeMerchantValidation](./completemerchantvalidation.md)
   Completes the validation for a merchant session.
-- [ApplePayValidateMerchantEvent](applepayvalidatemerchantevent.md)
+- [ApplePayValidateMerchantEvent](../applepayvalidatemerchantevent.md)
   An event object that contains the validation URL.
 
 

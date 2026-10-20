@@ -1,7 +1,8 @@
 # SVGStyleElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGStyleElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [disabled](svgstyleelement/1630958-disabled.md)
-- [media](svgstyleelement/1629648-media.md)
-- [title](svgstyleelement/1628860-title.md)
-- [type](svgstyleelement/1633649-type.md)
+- [disabled](./svgstyleelement/api-1630958-disabled.md)
+- [media](./svgstyleelement/api-1629648-media.md)
+- [title](./svgstyleelement/api-1628860-title.md)
+- [type](./svgstyleelement/api-1633649-type.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

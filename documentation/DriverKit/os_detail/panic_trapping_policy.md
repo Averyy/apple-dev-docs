@@ -1,24 +1,25 @@
 # panic_trapping_policy
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct panic_trapping_policy;
 ```
 
 ## Topics
 
 ### Type Methods
-- [trap](os_detail/panic_trapping_policy/trap.md)
+- [trap](./panic_trapping_policy/trap.md)
 
 
 ---

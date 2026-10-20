@@ -1,7 +1,8 @@
 # matrix
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column-major 4×4 matrix that transforms from view space to clip space.
 

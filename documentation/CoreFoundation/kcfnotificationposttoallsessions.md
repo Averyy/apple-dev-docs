@@ -1,18 +1,19 @@
 # kCFNotificationPostToAllSessions
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Delivers the notification to all sessions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Delivers the notification to all sessions.
 var kCFNotificationPostToAllSessions: CFOptionFlags { get }
 ```
 
+```c
+kCFNotificationPostToAllSessions
+```
+
 ## See Also
 
-- [var kCFNotificationDeliverImmediately: CFOptionFlags](kcfnotificationdeliverimmediately.md)
+### Constants
+- [var kCFNotificationDeliverImmediately: CFOptionFlags](./kcfnotificationdeliverimmediately.md)
   Delivers the notification immediately.
 
 

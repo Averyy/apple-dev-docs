@@ -1,7 +1,8 @@
 # CGBitmapParameters
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -22,10 +23,10 @@ struct CGBitmapParameters
 ## Topics
 
 ### Instance Properties
-- [var colorSpace: CGColorSpace](cgbitmapparameters-4v8wo/colorspace.md)
+- [var colorSpace: CGColorSpace](./cgbitmapparameters-4v8wo/colorspace.md)
 ### Subscripts
-- [subscript<T>(dynamicMember _: WritableKeyPath<__CGBitmapParameters, T>) -> T](cgbitmapparameters-4v8wo/subscript(dynamicmember:)-9hrsu.md)
-- [subscript<T>(dynamicMember _: KeyPath<__CGBitmapParameters, T>) -> T](cgbitmapparameters-4v8wo/subscript(dynamicmember:)-psx7.md)
+- [subscript<T>(dynamicMember _: WritableKeyPath<__CGBitmapParameters, T>) -> T](./cgbitmapparameters-4v8wo/subscript%28dynamicmember%29-9hrsu.md)
+- [subscript<T>(dynamicMember _: KeyPath<__CGBitmapParameters, T>) -> T](./cgbitmapparameters-4v8wo/subscript%28dynamicmember%29-psx7.md)
 
 
 ---

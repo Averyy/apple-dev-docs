@@ -1,7 +1,8 @@
 # simultaneousGesture(_:name:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches a gesture to the view to process simultaneously with gestures defined by the view.
 
@@ -23,11 +24,11 @@ func simultaneousGesture<T>(_ gesture: T, name: String, isEnabled: Bool = true) 
 
 #### Discussion
 
-Use this method when you need to define and process  a view specific gesture simultaneously with the same priority as the view’s existing gestures. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](vstack.md). Inside the [`VStack`](vstack.md) is a red heart [`Image`](image.md) defines its own [`TapGesture`](tapgesture.md) handler that also prints a message to the console and a blue rectangle with no custom gesture handlers.
+Use this method when you need to define and process  a view specific gesture simultaneously with the same priority as the view’s existing gestures. The example below defines a custom gesture that prints a message to the console and attaches it to the view’s [`VStack`](../vstack.md). Inside the [`VStack`](../vstack.md) is a red heart [`Image`](../image.md) defines its own [`TapGesture`](../tapgesture.md) handler that also prints a message to the console and a blue rectangle with no custom gesture handlers.
 
 You can also use the `isEnabled` parameter to conditionally disable the gesture.
 
-Tapping or clicking the “heart” image sends two messages to the console: one for the image’s tap gesture handler, and the other from a custom gesture handler attached to the enclosing vertical stack. Tapping or clicking on the blue rectangle results only in the single message to the console from the tap recognizer attached to the [`VStack`](vstack.md):
+Tapping or clicking the “heart” image sends two messages to the console: one for the image’s tap gesture handler, and the other from a custom gesture handler attached to the enclosing vertical stack. Tapping or clicking on the blue rectangle results only in the single message to the console from the tap recognizer attached to the [`VStack`](../vstack.md):
 
 ```swift
 struct SimultaneousGestureExample: View {
@@ -66,17 +67,18 @@ struct SimultaneousGestureExample: View {
 
 ## See Also
 
-- [Composing SwiftUI gestures](composing-swiftui-gestures.md)
+### Combining gestures
+- [Composing SwiftUI gestures](../composing-swiftui-gestures.md)
   Combine gestures to create complex interactions.
-- [func simultaneousGesture<T>(T, including: GestureMask) -> some View](view/simultaneousgesture(_:including:).md)
+- [func simultaneousGesture<T>(T, including: GestureMask) -> some View](./simultaneousgesture%28_,including%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](view/simultaneousgesture(_:isenabled:).md)
+- [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](./simultaneousgesture%28_,isenabled%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [struct SequenceGesture](sequencegesture.md)
+- [struct SequenceGesture](../sequencegesture.md)
   A gesture that’s a sequence of two gestures.
-- [struct SimultaneousGesture](simultaneousgesture.md)
+- [struct SimultaneousGesture](../simultaneousgesture.md)
   A gesture containing two gestures that can happen at the same time with neither of them preceding the other.
-- [struct ExclusiveGesture](exclusivegesture.md)
+- [struct ExclusiveGesture](../exclusivegesture.md)
   A gesture that consists of two gestures where only one of them can succeed.
 
 

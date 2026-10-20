@@ -1,7 +1,8 @@
 # ComputeNodeGraph.StateType
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The shape of a value stored in a compute graph’s state.
 
@@ -12,7 +13,7 @@ The shape of a value stored in a compute graph’s state.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -27,25 +28,25 @@ enum StateType
 ## Topics
 
 ### Enumeration Cases
-- [case array(definition: ComputeNodeGraph.ArrayDefinition)](computenodegraph/statetype/array(definition:).md)
+- [case array(definition: ComputeNodeGraph.ArrayDefinition)](./statetype/array%28definition%29.md)
   Value is an array with the provided definition
-- [ComputeNodeGraph.StateType.data(length:)](computenodegraph/statetype/data(length:).md)
+- [ComputeNodeGraph.StateType.data(length:)](./statetype/data%28length%29.md)
   Value is a fixed number of untyped bytes
-- [ComputeNodeGraph.StateType.dataType(type:)](computenodegraph/statetype/datatype(type:).md)
+- [ComputeNodeGraph.StateType.dataType(type:)](./statetype/datatype%28type%29.md)
   Legacy. Do not construct in new code.
-- [case primitive(type: ComputeNodeGraph.DataType)](computenodegraph/statetype/primitive(type:).md)
+- [case primitive(type: ComputeNodeGraph.DataType)](./statetype/primitive%28type%29.md)
   Value is a primitive with the given type
-- [case structure(definition: ComputeNodeGraph.StructureDefinition)](computenodegraph/statetype/structure(definition:).md)
+- [case structure(definition: ComputeNodeGraph.StructureDefinition)](./statetype/structure%28definition%29.md)
   Value is a structure with the given layout
 ### Instance Methods
-- [func loadBuffer(from: Data) throws -> (data: Data, elementCount: Int)](computenodegraph/statetype/loadbuffer(from:).md)
+- [func loadBuffer(from: Data) throws -> (data: Data, elementCount: Int)](./statetype/loadbuffer%28from%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

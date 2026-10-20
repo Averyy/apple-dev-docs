@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Feedback.movingTooFast
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is moving too quickly for clear images and the capturing may be paused to ensure quality.
 

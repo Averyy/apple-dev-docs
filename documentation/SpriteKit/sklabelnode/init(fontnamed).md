@@ -1,23 +1,28 @@
 # init(fontNamed:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new label object with a specified font.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 init(fontNamed fontName: String?)
+```
+
+```objc
+- (instancetype) initWithFontNamed:(NSString *) fontName;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ An initialized label object.
 
 ## See Also
 
-- [convenience init(text: String?)](sklabelnode/init(text:).md)
+### Creating a Label
+- [convenience init(text: String?)](./init%28text%29.md)
   Initializes a new label object with a text string.
-- [convenience init(attributedText: NSAttributedString?)](sklabelnode/init(attributedtext:).md)
+- [convenience init(attributedText: NSAttributedString?)](./init%28attributedtext%29.md)
   Initializes a new label object with an attributed text string.
 
 

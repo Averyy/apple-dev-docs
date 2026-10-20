@@ -1,18 +1,23 @@
 # ODSessionCopyNodeNames(_:_:_:)
 
 **Framework**: Open Directory  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the names of nodes registered in a given session.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
 
 ```swift
 func ODSessionCopyNodeNames(_ allocator: CFAllocator!, _ session: ODSessionRef!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFArray>!
+```
+
+```c
+extern CFArrayRefODSessionCopyNodeNames(CFAllocatorRef allocator, ODSessionRef session, CFErrorRef*error);
 ```
 
 #### Return Value
@@ -27,9 +32,10 @@ An array of valid node names in the given session.
 
 ## See Also
 
-- [func ODSessionCreate(CFAllocator!, CFDictionary!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<ODSessionRef>!](odsessioncreate(_:_:_:).md)
+### Working with Sessions
+- [func ODSessionCreate(CFAllocator!, CFDictionary!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<ODSessionRef>!](./odsessioncreate%28_,_,_%29.md)
   Creates a session to be passed to node functions.
-- [func ODSessionGetTypeID() -> CFTypeID](odsessiongettypeid().md)
+- [func ODSessionGetTypeID() -> CFTypeID](./odsessiongettypeid%28%29.md)
   Returns the type ID for a session.
 
 

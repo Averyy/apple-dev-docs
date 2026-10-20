@@ -1,7 +1,8 @@
 # squeezeAxis
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Squeeze the tensor at the specified dimension.
 
@@ -20,6 +21,8 @@ Squeeze the tensor at the specified dimension.
 static var squeezeAxis: any MLTensorRangeExpression { get }
 ```
 
+Available when `Self` is `_MLTensorRange`.
+
 #### Discussion
 
 For example:
@@ -32,9 +35,10 @@ y.shape // is [3, 28, 28]
 
 ## See Also
 
-- [static var newAxis: any MLTensorRangeExpression](mltensorrangeexpression/newaxis.md)
+### Expanding and squeezing the tensor
+- [static var newAxis: any MLTensorRangeExpression](./newaxis.md)
   Expand the tensor at the specified dimension.
-- [static var fillAll: any MLTensorRangeExpression](mltensorrangeexpression/fillall.md)
+- [static var fillAll: any MLTensorRangeExpression](./fillall.md)
   The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
 
 

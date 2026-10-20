@@ -1,7 +1,8 @@
 # pointerStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the pointer style to display when the pointer is over the view.
 
@@ -22,9 +23,9 @@ A view that changes the style of the pointer when hovered.
 
 #### Discussion
 
-Refer to [`PointerStyle`](pointerstyle.md) for a list of available pointer styles.
+Refer to [`PointerStyle`](../pointerstyle.md) for a list of available pointer styles.
 
-For guidance on choosing an appropriate pointer style, refer to [`Pointing devices`](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
+For guidance on choosing an appropriate pointer style, refer to [Pointing devices](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
 
 In this example, the pointer style indicates rectangular selection is possible while the Option modifier key is pressed:
 
@@ -58,9 +59,10 @@ struct ImageEditorView: View {
 
 ## See Also
 
-- [struct PointerStyle](pointerstyle.md)
+### Modifying pointer appearance
+- [struct PointerStyle](../pointerstyle.md)
   A style describing the appearance of the pointer (also called a cursor) when it’s hovered over a view.
-- [func pointerVisibility(Visibility) -> some View](view/pointervisibility(_:).md)
+- [func pointerVisibility(Visibility) -> some View](./pointervisibility%28_%29.md)
   Sets the visibility of the pointer when it’s over the view.
 
 

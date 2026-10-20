@@ -1,7 +1,8 @@
 # NWProtocolFramer
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A customizable network protocol for defining application message parsers.
 
@@ -23,46 +24,47 @@ class NWProtocolFramer
 ## Topics
 
 ### Implementing Framer Protocols
-- [protocol NWProtocolFramerImplementation](nwprotocolframerimplementation.md)
+- [protocol NWProtocolFramerImplementation](./nwprotocolframerimplementation.md)
   A protocol to which your classes can conform in order to implement a custom framing protocol.
-- [NWProtocolFramer.Instance](nwprotocolframer/instance.md)
+- [NWProtocolFramer.Instance](./nwprotocolframer/instance.md)
   An object that represents a single instance of your custom protocol running in a connection.
 ### Using Framers with Connections
-- [NWProtocolFramer.Definition](nwprotocolframer/definition.md)
+- [NWProtocolFramer.Definition](./nwprotocolframer/definition.md)
   A custom protocol definition you use to associate messages with protocol options.
-- [NWProtocolFramer.Options](nwprotocolframer/options.md)
+- [NWProtocolFramer.Options](./nwprotocolframer/options.md)
   A container you use to add your custom protocol to a connection’s protocol stack.
-- [NWProtocolFramer.Message](nwprotocolframer/message.md)
+- [NWProtocolFramer.Message](./nwprotocolframer/message.md)
   A message for a custom protocol, in which you can store arbitrary key-value pairs.
 ### Enumerations
-- [NWProtocolFramer.StartResult](nwprotocolframer/startresult.md)
+- [NWProtocolFramer.StartResult](./nwprotocolframer/startresult.md)
   Results that you send to indicate the disposition of your protocol after receiving the call to start.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocol](nwprotocol.md)
+- [NWProtocol](./nwprotocol.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
+### Network Protocols
+- [Building a custom peer-to-peer protocol](./building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
-- [Connecting iPadOS and visionOS apps over the local network](../visionos/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
   Build an iPadOS companion app to control your visionOS app.
-- [class NWProtocolTCP](nwprotocoltcp.md)
+- [class NWProtocolTCP](./nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.
-- [class NWProtocolTLS](nwprotocoltls.md)
+- [class NWProtocolTLS](./nwprotocoltls.md)
   A network protocol for connections that use Transport Layer Security.
-- [class NWProtocolQUIC](nwprotocolquic.md)
+- [class NWProtocolQUIC](./nwprotocolquic.md)
   A network protocol for connections that use the QUIC transport protocol.
-- [class NWProtocolUDP](nwprotocoludp.md)
+- [class NWProtocolUDP](./nwprotocoludp.md)
   A network protocol for connections that use the User Datagram Protocol.
-- [class NWProtocolIP](nwprotocolip.md)
+- [class NWProtocolIP](./nwprotocolip.md)
   A network protocol for configuring the Internet Protocol on connections.
-- [class NWProtocolWebSocket](nwprotocolwebsocket.md)
+- [class NWProtocolWebSocket](./nwprotocolwebsocket.md)
   A network protocol for connections that use WebSocket.
 
 

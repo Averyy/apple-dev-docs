@@ -1,7 +1,8 @@
 # willConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,13 +17,16 @@
 static var willConnect: NotificationCenter.BaseMessageIdentifier<UIScene.WillConnectMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIScene.WillConnectMessage>`.
+
 ## See Also
 
-- [static var systemProtectionDidChange: NotificationCenter.BaseMessageIdentifier<UIScene.SystemProtectionDidChangeMessage>](notificationcenter/messageidentifier/systemprotectiondidchange.md)
-- [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<UIScene.WillEnterForegroundMessage>](notificationcenter/messageidentifier/willenterforeground-992xq.md)
-- [static var didActivate: NotificationCenter.BaseMessageIdentifier<UIScene.DidActivateMessage>](notificationcenter/messageidentifier/didactivate.md)
-- [static var willDeactivate: NotificationCenter.BaseMessageIdentifier<UIScene.WillDeactivateMessage>](notificationcenter/messageidentifier/willdeactivate.md)
-- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<UIScene.DidEnterBackgroundMessage>](notificationcenter/messageidentifier/didenterbackground-5fqw0.md)
+### Identifying UIKit scene messages
+- [static var systemProtectionDidChange: NotificationCenter.BaseMessageIdentifier<UIScene.SystemProtectionDidChangeMessage>](./systemprotectiondidchange.md)
+- [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<UIScene.WillEnterForegroundMessage>](./willenterforeground-992xq.md)
+- [static var didActivate: NotificationCenter.BaseMessageIdentifier<UIScene.DidActivateMessage>](./didactivate.md)
+- [static var willDeactivate: NotificationCenter.BaseMessageIdentifier<UIScene.WillDeactivateMessage>](./willdeactivate.md)
+- [static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<UIScene.DidEnterBackgroundMessage>](./didenterbackground-5fqw0.md)
 
 
 ---

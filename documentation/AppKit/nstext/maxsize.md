@@ -1,12 +1,13 @@
 # maxSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s maximum size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The receiver’s maximum size.
 var maxSize: NSSize { get set }
 ```
 
+```objc
+@property NSSize maxSize;
+```
+
 ## See Also
 
-- [var minSize: NSSize](nstext/minsize.md)
+### Constraining size
+- [var minSize: NSSize](./minsize.md)
   The receiver’s minimum size.
-- [var isVerticallyResizable: Bool](nstext/isverticallyresizable.md)
+- [var isVerticallyResizable: Bool](./isverticallyresizable.md)
   A Boolean that controls whether the receiver changes its height to fit the height of its text.
-- [var isHorizontallyResizable: Bool](nstext/ishorizontallyresizable.md)
+- [var isHorizontallyResizable: Bool](./ishorizontallyresizable.md)
   A Boolean that controls whether the receiver changes its width to fit the width of its text.
-- [func sizeToFit()](nstext/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the receiver to fit its text.
 
 

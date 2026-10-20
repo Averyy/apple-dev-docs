@@ -1,7 +1,8 @@
 # AlarmManager.AlarmUpdates.Element
 
 **Framework**: AlarmKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the sequence’s elements.
 
@@ -18,9 +19,10 @@ typealias Element = [Alarm]
 
 ## See Also
 
-- [AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/iterator.md)
+### Creating an iterator
+- [AlarmManager.AlarmUpdates.Iterator](./iterator.md)
   A nested type that iterates over the elements of this sequence.
-- [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](./makeasynciterator%28%29.md)
   Returns an async iterator over the elements of this sequence.
 
 

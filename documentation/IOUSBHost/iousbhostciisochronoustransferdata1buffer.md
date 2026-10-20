@@ -1,7 +1,8 @@
 # IOUSBHostCIIsochronousTransferData1Buffer
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,14 +14,19 @@
 var IOUSBHostCIIsochronousTransferData1Buffer: UInt { get }
 ```
 
+```c
+IOUSBHostCIIsochronousTransferData1Buffer
+```
+
 ## See Also
 
-- [var IOUSBHostCIIsochronousTransferControlASAP: Int](iousbhostciisochronoustransfercontrolasap.md)
-- [var IOUSBHostCIIsochronousTransferControlFrameNumber: Int](iousbhostciisochronoustransfercontrolframenumber.md)
-- [var IOUSBHostCIIsochronousTransferControlFrameNumberPhase: Int](iousbhostciisochronoustransfercontrolframenumberphase.md)
-- [var IOUSBHostCIIsochronousTransferData0Length: Int](iousbhostciisochronoustransferdata0length.md)
-- [var IOUSBHostCIIsochronousTransferData0LengthPhase: Int](iousbhostciisochronoustransferdata0lengthphase.md)
-- [var IOUSBHostCIIsochronousTransferData1BufferPhase: UInt](iousbhostciisochronoustransferdata1bufferphase.md)
+### Constants
+- [var IOUSBHostCIIsochronousTransferControlASAP: Int](./iousbhostciisochronoustransfercontrolasap.md)
+- [var IOUSBHostCIIsochronousTransferControlFrameNumber: Int](./iousbhostciisochronoustransfercontrolframenumber.md)
+- [var IOUSBHostCIIsochronousTransferControlFrameNumberPhase: Int](./iousbhostciisochronoustransfercontrolframenumberphase.md)
+- [var IOUSBHostCIIsochronousTransferData0Length: Int](./iousbhostciisochronoustransferdata0length.md)
+- [var IOUSBHostCIIsochronousTransferData0LengthPhase: Int](./iousbhostciisochronoustransferdata0lengthphase.md)
+- [var IOUSBHostCIIsochronousTransferData1BufferPhase: UInt](./iousbhostciisochronoustransferdata1bufferphase.md)
 
 
 ---

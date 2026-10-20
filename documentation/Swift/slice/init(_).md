@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance of a collection containing the elements of a sequence.
 
@@ -19,6 +20,8 @@ Creates a new instance of a collection containing the elements of a sequence.
 ```swift
 init<S>(_ elements: S) where S : Sequence, Base.Element == S.Element
 ```
+
+Available when `Base` conforms to `RangeReplaceableCollection`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # validationWarnings
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error strings associated with the receiver’s validation predicates.
 
@@ -10,7 +11,7 @@ The error strings associated with the receiver’s validation predicates.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The error strings associated with the receiver’s validation predicates.
 var validationWarnings: [Any] { get }
 ```
 
+```objc
+@property (strong, readonly) NSArray * validationWarnings;
+```
+
 ## See Also
 
-- [var validationPredicates: [NSPredicate]](nspropertydescription/validationpredicates.md)
+### Supporting Validation
+- [var validationPredicates: [NSPredicate]](./validationpredicates.md)
   The validation predicates of the receiver.
-- [func setValidationPredicates([NSPredicate]?, withValidationWarnings: [String]?)](nspropertydescription/setvalidationpredicates(_:withvalidationwarnings:).md)
+- [func setValidationPredicates([NSPredicate]?, withValidationWarnings: [String]?)](./setvalidationpredicates%28_,withvalidationwarnings%29.md)
   Sets the validation predicates and warnings of the receiver.
 
 

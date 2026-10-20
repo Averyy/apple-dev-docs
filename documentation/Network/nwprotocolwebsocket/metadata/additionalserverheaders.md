@@ -1,7 +1,8 @@
 # additionalServerHeaders
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional HTTP headers sent by the server during the WebSocket handshake.
 
@@ -22,7 +23,8 @@ var additionalServerHeaders: [(String, String)]? { get }
 
 ## See Also
 
-- [var selectedSubprotocol: String?](nwprotocolwebsocket/metadata/selectedsubprotocol.md)
+### Inspecting Handshake Results
+- [var selectedSubprotocol: String?](./selectedsubprotocol.md)
   The subprotocol selected by the server during the WebSocket handshake.
 
 

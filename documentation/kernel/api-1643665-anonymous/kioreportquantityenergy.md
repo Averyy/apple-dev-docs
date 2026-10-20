@@ -1,7 +1,8 @@
 # kIOReportQuantityEnergy
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIOReportQuantityEnergy = 3
 ```
 

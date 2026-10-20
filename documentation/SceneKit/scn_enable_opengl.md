@@ -1,16 +1,17 @@
 # SCN_ENABLE_OPENGL
 
 **Framework**: SceneKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 var SCN_ENABLE_OPENGL: Int32 { get }
 ```
 
+```c
+#define SCN_ENABLE_OPENGL
+```
+
 ## See Also
 
-- [var SCN_ENABLE_METAL: Int32](scn_enable_metal.md)
+### Macros
+- [var SCN_ENABLE_METAL: Int32](./scn_enable_metal.md)
 
 
 ---

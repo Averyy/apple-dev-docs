@@ -1,27 +1,28 @@
 # BundleIdCapabilityUpdateRequest.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapabilityUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BundleIdCapabilityUpdateRequest.Data.Attributes](bundleidcapabilityupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BundleIdCapabilityUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 ## Properties
 
 - `attributes` (BundleIdCapabilityUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `bundleIdCapabilities`
 
 
 ---

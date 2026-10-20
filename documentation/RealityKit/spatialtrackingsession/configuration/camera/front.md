@@ -1,7 +1,8 @@
 # SpatialTrackingSession.Configuration.Camera.front
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The camera on the front of the device.
 

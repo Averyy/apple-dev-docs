@@ -1,7 +1,8 @@
 # init(entityVersionHashes:inBundle:versionChecksum:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

@@ -1,6 +1,7 @@
 # Macros
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: API Collection
 
 
 ---

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the type with a raw value.
 
@@ -10,9 +11,9 @@ Initializes the type with a raw value.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init?(rawValue: qos_class_t)
 
 ## See Also
 
-- [var rawValue: qos_class_t](dispatchqos/qosclass-swift.enum/rawvalue.md)
+### Initializing the Type
+- [var rawValue: qos_class_t](./rawvalue.md)
   The value of the raw type.
 
 

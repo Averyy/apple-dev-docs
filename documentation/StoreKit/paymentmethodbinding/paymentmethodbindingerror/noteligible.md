@@ -1,7 +1,8 @@
 # PaymentMethodBinding.PaymentMethodBindingError.notEligible
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user isn’t eligible.
 
@@ -19,9 +20,10 @@ case notEligible
 
 ## See Also
 
-- [PaymentMethodBinding.PaymentMethodBindingError.failed](paymentmethodbinding/paymentmethodbindingerror/failed.md)
+### Getting error codes
+- [PaymentMethodBinding.PaymentMethodBindingError.failed](./failed.md)
   The initialization or binding operation failed.
-- [PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID](paymentmethodbinding/paymentmethodbindingerror/invalidpinningid.md)
+- [PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID](./invalidpinningid.md)
   The in-app binding identifier is invalid or expired.
 
 

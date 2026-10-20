@@ -1,7 +1,8 @@
 # FileDialogBrowserOptions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The way that file dialogs present the file system.
 
@@ -20,42 +21,43 @@ struct FileDialogBrowserOptions
 
 #### Overview
 
-Apply the options using the [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md) modifier.
+Apply the options using the [`fileDialogBrowserOptions(_:)`](./view/filedialogbrowseroptions%28_%29.md) modifier.
 
 ## Topics
 
 ### Getting browser options
-- [static let displayFileExtensions: FileDialogBrowserOptions](filedialogbrowseroptions/displayfileextensions.md)
+- [static let displayFileExtensions: FileDialogBrowserOptions](./filedialogbrowseroptions/displayfileextensions.md)
   On iOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to show or hide file extensions. Default behavior is to hide them. On macOS, this option has no effect.
-- [static let enumeratePackages: FileDialogBrowserOptions](filedialogbrowseroptions/enumeratepackages.md)
+- [static let enumeratePackages: FileDialogBrowserOptions](./filedialogbrowseroptions/enumeratepackages.md)
   Allows enumerating packages contents in contrast to the default behavior when packages are represented flatly, similar to files.
-- [static let includeHiddenFiles: FileDialogBrowserOptions](filedialogbrowseroptions/includehiddenfiles.md)
+- [static let includeHiddenFiles: FileDialogBrowserOptions](./filedialogbrowseroptions/includehiddenfiles.md)
   Displays the files that are hidden by default.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](view/filedialogbrowseroptions(_:).md)
+### Configuring a file dialog
+- [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](./view/filedialogbrowseroptions%28_%29.md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
-- [func fileDialogConfirmationLabel(_:)](view/filedialogconfirmationlabel(_:).md)
+- [func fileDialogConfirmationLabel(_:)](./view/filedialogconfirmationlabel%28_%29.md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
-- [func fileDialogCustomizationID(String) -> some View](view/filedialogcustomizationid(_:).md)
+- [func fileDialogCustomizationID(String) -> some View](./view/filedialogcustomizationid%28_%29.md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to persist and restore the file dialog configuration.
-- [func fileDialogDefaultDirectory(URL?) -> some View](view/filedialogdefaultdirectory(_:).md)
+- [func fileDialogDefaultDirectory(URL?) -> some View](./view/filedialogdefaultdirectory%28_%29.md)
   Configures the `fileExporter`, `fileImporter`, or `fileMover` to open with the specified default directory.
-- [func fileDialogImportsUnresolvedAliases(Bool) -> some View](view/filedialogimportsunresolvedaliases(_:).md)
+- [func fileDialogImportsUnresolvedAliases(Bool) -> some View](./view/filedialogimportsunresolvedaliases%28_%29.md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` behavior when a user chooses an alias.
-- [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
+- [func fileDialogMessage(_:)](./view/filedialogmessage%28_%29.md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
-- [func fileDialogURLEnabled(Predicate<URL>) -> some View](view/filedialogurlenabled(_:).md)
+- [func fileDialogURLEnabled(Predicate<URL>) -> some View](./view/filedialogurlenabled%28_%29.md)
   On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 
 

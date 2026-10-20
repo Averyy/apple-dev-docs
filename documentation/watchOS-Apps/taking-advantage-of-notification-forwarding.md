@@ -1,6 +1,7 @@
 # Taking advantage of notification forwarding
 
-**Framework**: watchOS apps
+**Framework**: watchOS apps  
+**Role**: Article
 
 Deliver notifications to the user’s iPhone or Apple Watch.
 
@@ -8,7 +9,7 @@ Deliver notifications to the user’s iPhone or Apple Watch.
 
 Apple Watch and iPhone work together to deliver notifications. Instead of appearing on both devices, notifications appear only on the device that’s most likely to have the user’s current focus.
 
-##### Forward Notifications
+##### Forward notifications
 
 The system decides which device receives the notification based on the notification’s type, the process that created the notification, and the currently active device.
 
@@ -31,11 +32,12 @@ Also, if the user has more than one Apple Watch, local notifications only appear
 
 ## See Also
 
-- [Customizing your long-look interface](customizing-your-long-look-interface.md)
+### Customizing the user experience
+- [Customizing your long-look interface](./customizing-your-long-look-interface.md)
   Create custom interfaces for your watchOS app’s notifications.
-- [Adding actions to notifications on watchOS](adding-actions-to-notifications-on-watchos.md)
+- [Adding actions to notifications on watchOS](./adding-actions-to-notifications-on-watchos.md)
   Provide a set of responses to a notification.
-- [Grouping notifications](grouping-notifications.md)
+- [Grouping notifications](./grouping-notifications.md)
   Organize notifications into threads.
 
 

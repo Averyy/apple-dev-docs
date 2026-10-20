@@ -1,17 +1,22 @@
 # openRFCOMMChannelAsync(_:withChannelID:delegate:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a new RFCOMM channel to the target device. Returns immediately.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openRFCOMMChannelAsync(_ rfcommChannel: AutoreleasingUnsafeMutablePointer<IOBluetoothRFCOMMChannel?>!, withChannelID channelID: BluetoothRFCOMMChannelID, delegate channelDelegate: Any!) -> IOReturn
+```
+
+```objc
+- (IOReturn) openRFCOMMChannelAsync:(IOBluetoothRFCOMMChannel **) rfcommChannel withChannelID:(BluetoothRFCOMMChannelID) channelID delegate:(id) channelDelegate;
 ```
 
 #### Return Value

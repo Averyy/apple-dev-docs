@@ -1,7 +1,8 @@
 # ReviewSubmissionItem.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a review submission item resource.
 
@@ -10,17 +11,18 @@ Attributes that describe a review submission item resource.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItem.Attributes
 ```
 
 ## Properties
 
-- `state` (string)
+- `state` (string): **Allowed Values**: `READY_FOR_REVIEW`, `ACCEPTED`, `APPROVED`, `REJECTED`, `REMOVED`
 
 ## See Also
 
-- [object ReviewSubmissionItem.Relationships](reviewsubmissionitem/relationships-data.dictionary.md)
+### Objects
+- [object ReviewSubmissionItem.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

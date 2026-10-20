@@ -1,7 +1,8 @@
 # st_mtim
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time of last modification, given as a C `timespec` since the Epoch.
 

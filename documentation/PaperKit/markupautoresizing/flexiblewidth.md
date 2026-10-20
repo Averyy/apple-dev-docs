@@ -1,7 +1,8 @@
 # flexibleWidth
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Automatically adjust width to fit content changes.
 
@@ -20,7 +21,8 @@ static let flexibleWidth: MarkupAutoresizing
 
 ## See Also
 
-- [static let flexibleHeight: MarkupAutoresizing](markupautoresizing/flexibleheight.md)
+### Resizing options
+- [static let flexibleHeight: MarkupAutoresizing](./flexibleheight.md)
   Automatically adjust height to fit content changes.
 
 

@@ -1,12 +1,15 @@
 # NSSpeechSynthesizer.Boundary
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants are used to indicate where speech should be stopped and paused. See [`pauseSpeaking(at:)`](nsspeechsynthesizer/pausespeaking(at:).md) and [`stopSpeaking(at:)`](nsspeechsynthesizer/stopspeaking(at:).md).
+These constants are used to indicate where speech should be stopped and paused. See [`pauseSpeaking(at:)`](./pausespeaking%28at%29.md) and [`stopSpeaking(at:)`](./stopspeaking%28at%29.md).
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
@@ -14,43 +17,48 @@ These constants are used to indicate where speech should be stopped and paused. 
 enum Boundary
 ```
 
+```c
+enum NSSpeechBoundary : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSSpeechSynthesizer.Boundary.immediateBoundary](nsspeechsynthesizer/boundary/immediateboundary.md)
+- [NSSpeechSynthesizer.Boundary.immediateBoundary](./boundary/immediateboundary.md)
   Speech should be paused or stopped immediately.
-- [NSSpeechSynthesizer.Boundary.wordBoundary](nsspeechsynthesizer/boundary/wordboundary.md)
+- [NSSpeechSynthesizer.Boundary.wordBoundary](./boundary/wordboundary.md)
   Speech should be paused or stopped at the end of the word.
-- [NSSpeechSynthesizer.Boundary.sentenceBoundary](nsspeechsynthesizer/boundary/sentenceboundary.md)
+- [NSSpeechSynthesizer.Boundary.sentenceBoundary](./boundary/sentenceboundary.md)
   Speech should be paused or stopped at the end of the sentence.
 ### Initializers
-- [init?(rawValue: UInt)](nsspeechsynthesizer/boundary/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./boundary/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isSpeaking: Bool](nsspeechsynthesizer/isspeaking.md)
+### Synthesizing Speech
+- [var isSpeaking: Bool](./isspeaking.md)
   Indicates whether the receiver is currently generating synthesized speech.
-- [func startSpeaking(String) -> Bool](nsspeechsynthesizer/startspeaking(_:).md)
+- [func startSpeaking(String) -> Bool](./startspeaking%28_%29.md)
   Begins speaking synthesized text through the system’s default sound output device.
-- [func startSpeaking(String, to: URL) -> Bool](nsspeechsynthesizer/startspeaking(_:to:).md)
+- [func startSpeaking(String, to: URL) -> Bool](./startspeaking%28_,to%29.md)
   Begins synthesizing text into a sound (AIFF) file.
-- [func pauseSpeaking(at: NSSpeechSynthesizer.Boundary)](nsspeechsynthesizer/pausespeaking(at:).md)
+- [func pauseSpeaking(at: NSSpeechSynthesizer.Boundary)](./pausespeaking%28at%29.md)
   Pauses synthesis in progress at a given boundary.
-- [func continueSpeaking()](nsspeechsynthesizer/continuespeaking.md)
+- [func continueSpeaking()](./continuespeaking%28%29.md)
   Resumes synthesis.
-- [func stopSpeaking()](nsspeechsynthesizer/stopspeaking.md)
+- [func stopSpeaking()](./stopspeaking%28%29.md)
   Stops synthesis in progress.
-- [func stopSpeaking(at: NSSpeechSynthesizer.Boundary)](nsspeechsynthesizer/stopspeaking(at:).md)
+- [func stopSpeaking(at: NSSpeechSynthesizer.Boundary)](./stopspeaking%28at%29.md)
   Stops synthesis in progress at a given boundary.
 
 

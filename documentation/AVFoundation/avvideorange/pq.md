@@ -1,7 +1,8 @@
 # pq
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates Perceptual Quantizer (PQ) high-dynamic-range video.
 
@@ -20,11 +21,16 @@ Indicates Perceptual Quantizer (PQ) high-dynamic-range video.
 static let pq: AVVideoRange
 ```
 
+```c
+extern AVVideoRange const AVVideoRangePQ;
+```
+
 ## See Also
 
-- [static let hlg: AVVideoRange](avvideorange/hlg.md)
+### Video ranges
+- [static let hlg: AVVideoRange](./hlg.md)
   Indicates Hybrid-Log Gamma (HLG) high-dynamic-range video.
-- [static let sdr: AVVideoRange](avvideorange/sdr.md)
+- [static let sdr: AVVideoRange](./sdr.md)
   Indicates standard-dynamic-range (SDR) video.
 
 

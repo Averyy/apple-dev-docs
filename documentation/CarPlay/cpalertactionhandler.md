@@ -1,7 +1,8 @@
 # CPAlertActionHandler
 
 **Framework**: CarPlay  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The declaration for an alert action handler.
 
@@ -16,13 +17,18 @@ The declaration for an alert action handler.
 typealias CPAlertActionHandler = (CPAlertAction) -> Void
 ```
 
+```c
+typedef void (^)(CPAlertAction *) CPAlertActionHandler;
+```
+
 ## Parameters
 
 - `action`: The alert action that invoked the block.
 
 ## See Also
 
-- [var handler: CPAlertActionHandler](cpalertaction/handler.md)
+### Getting the Action Handler
+- [var handler: CPAlertActionHandler](./cpalertaction/handler.md)
   The closure that CarPlay invokes after the user taps the action button.
 
 

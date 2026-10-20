@@ -1,14 +1,15 @@
 # arm_debug_read_dscr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t arm_debug_read_dscr(void);
 ```
 

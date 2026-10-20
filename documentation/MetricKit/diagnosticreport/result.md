@@ -1,7 +1,8 @@
 # result
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diagnostic result for this report.
 

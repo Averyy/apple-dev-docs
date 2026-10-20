@@ -1,7 +1,8 @@
 # role
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The role to request.
 
@@ -10,7 +11,7 @@ The role to request.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,16 @@ var role: UISceneSession.Role { get }
 
 #### Discussion
 
-If you created the request using [`init(session:userActivity:options:)`](uiscenesessionactivationrequest-swift.struct/init(session:useractivity:options:).md), this property reflects the role of the `session`.
+If you created the request using [`init(session:userActivity:options:)`](./init%28session,useractivity,options%29.md), this property reflects the role of the `session`.
 
 ## See Also
 
-- [var options: UIScene.ActivationRequestOptions?](uiscenesessionactivationrequest-swift.struct/options.md)
+### Managing request details
+- [var options: UIScene.ActivationRequestOptions?](./options.md)
   Activation request options to further customize the request.
-- [var session: UISceneSession?](uiscenesessionactivationrequest-swift.struct/session.md)
+- [var session: UISceneSession?](./session.md)
   The specific scene session to activate.
-- [var userActivity: NSUserActivity?](uiscenesessionactivationrequest-swift.struct/useractivity.md)
+- [var userActivity: NSUserActivity?](./useractivity.md)
   A user activity to send to the newly activated scene.
 
 

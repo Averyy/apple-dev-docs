@@ -1,6 +1,7 @@
 # Generating developer tokens
 
-**Framework**: Apple TV Feed
+**Framework**: Apple TV Feed  
+**Role**: Article
 
 Create a JSON Web Token to authorize your requests to the Apple Media Feed API.
 
@@ -8,13 +9,13 @@ Create a JSON Web Token to authorize your requests to the Apple Media Feed API.
 
 The header of each Apple Media Feed API request requires authorization in the form of a developer token. A developer token is a signed token that authenticates you as a trusted developer and member of the Apple Developer Program.
 
-The Apple Media Feed API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [`JWT specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
+The Apple Media Feed API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [JWT specification](https://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
 
 The Apple Media Feed API limits the number of requests you can make using a developer token within a specific period of time. If you exceed this limit, you temporarily receive `429 Too Many Requests` error responses for requests that use the token. This error resolves itself shortly after the request rate decreases.
 
-#### Create Your Developer Token
+#### Create your developer token
 
-Use the following information supplied by Apple through the [`Performance Partner Portal`](https://developer.apple.comhttps://partners.marketingtools.apple.com) to create a signed JWT:
+Use the following information supplied by Apple through the [Performance Partner Portal](https://partners.marketingtools.apple.com) to create a signed JWT:
 
 - Team ID
 - Key ID
@@ -36,7 +37,7 @@ In the claims payload of the token, include the following:
 
 A decoded developer token has the following format:
 
-```None
+```
 {
     "alg": "ES256",
     "kid": "ABC123DEFG"
@@ -51,21 +52,22 @@ A decoded developer token has the following format:
 
 After you create the token, sign it with your private key using the ES256 algorithm.
 
-> **Note**: ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
+> **Note**: ES256 is the [JSON Web Algorithms (JWA)](https://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
-#### Authorize Requests
+#### Authorize requests
 
 If you manage request authorization directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
 
-```None
+```
 curl -v -H 'Authorization: Bearer [developer token]' "https://api-feeds.tv.apple.com/v1/test"
 ```
 
 ## See Also
 
-- [Requesting a feed export](requesting-a-feed-export.md)
+### Essentials
+- [Requesting a feed export](./requesting-a-feed-export.md)
   Create requests for Apple TV Catalog metadata.
-- [Interpreting responses](interpreting-responses.md)
+- [Interpreting responses](./interpreting-responses.md)
   Learn about responses from the Apple Media Feed API to your Apple TV Feed requests.
 
 

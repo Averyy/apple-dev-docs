@@ -1,7 +1,8 @@
 # NEFilterManager.Grade.inspector
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A grade for filters that act as inspectors of network traffic.
 
@@ -14,13 +15,18 @@ A grade for filters that act as inspectors of network traffic.
 case inspector
 ```
 
+```c
+NEFilterManagerGradeInspector
+```
+
 #### Discussion
 
 Inspector grade filters see network traffic after firewall grade filters.
 
 ## See Also
 
-- [NEFilterManager.Grade.firewall](nefiltermanager/grade-swift.enum/firewall.md)
+### Grades
+- [NEFilterManager.Grade.firewall](./firewall.md)
   A grade for filters that act as firewalls, blocking some network traffic.
 
 

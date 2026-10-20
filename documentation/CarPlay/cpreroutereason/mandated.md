@@ -1,7 +1,8 @@
 # CPRerouteReason.mandated
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reroute was required due to external circumstances, such as a road closure.
 
@@ -14,6 +15,10 @@ A reroute was required due to external circumstances, such as a road closure.
 
 ```swift
 case mandated
+```
+
+```c
+CPRerouteReasonMandated
 ```
 
 

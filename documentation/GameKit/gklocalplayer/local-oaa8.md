@@ -1,7 +1,8 @@
 # local
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of the local player.
 
@@ -18,6 +19,10 @@ The shared instance of the local player.
 
 ```swift
 class var local: GKLocalPlayer { get }
+```
+
+```objc
+@property (class, readonly, nonnull) GKLocalPlayer * localPlayer;
 ```
 
 #### Return Value

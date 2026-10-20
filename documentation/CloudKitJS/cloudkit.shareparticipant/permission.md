@@ -1,7 +1,8 @@
 # permission
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant’s read and write permissions.
 
@@ -10,7 +11,7 @@ The participant’s read and write permissions.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ShareParticipantPermission permission;
 ```
 

@@ -1,7 +1,8 @@
 # removeEntry(key:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an entry from a TXT record dictionary.
 
@@ -23,11 +24,12 @@ mutating func removeEntry(key: String) -> Bool
 
 ## See Also
 
-- [init([String : String])](nwtxtrecord/init(_:)-566pd.md)
+### Creating TXT Records
+- [init([String : String])](./init%28_%29-566pd.md)
   Initializes a TXT record with a dictionary of strings.
-- [func setEntry(NWTXTRecord.Entry, for: String) -> Bool](nwtxtrecord/setentry(_:for:).md)
+- [func setEntry(NWTXTRecord.Entry, for: String) -> Bool](./setentry%28_,for%29.md)
   Sets an entry in a TXT record dictionary.
-- [NWTXTRecord.Entry](nwtxtrecord/entry.md)
+- [NWTXTRecord.Entry](./entry.md)
   A type of entry in a TXT record dictionary.
 
 

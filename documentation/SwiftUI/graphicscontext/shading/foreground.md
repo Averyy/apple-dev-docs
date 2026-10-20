@@ -1,7 +1,8 @@
 # foreground
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shading instance that fills with the foreground style from the graphics context’s environment.
 
@@ -22,7 +23,8 @@ static var foreground: GraphicsContext.Shading { get }
 
 ## See Also
 
-- [static func style<S>(S) -> GraphicsContext.Shading](graphicscontext/shading/style(_:).md)
+### Other shape styles
+- [static func style<S>(S) -> GraphicsContext.Shading](./style%28_%29.md)
   Returns a shading instance that fills with the given shape style.
 
 

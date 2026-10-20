@@ -1,7 +1,8 @@
 # billingAgreement
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized billing agreement the framework displays to the user prior to payment authorization.
 
@@ -11,7 +12,7 @@ The localized billing agreement the framework displays to the user prior to paym
 
 ## Declaration
 
-```swift
+```
 DOMString billingAgreement;
 ```
 
@@ -21,11 +22,12 @@ This may include additional details about the cancellation period or penalties f
 
 ## See Also
 
-- [paymentDescription](applepaydeferredpaymentrequest/paymentdescription.md)
+### Describing a deferred payment
+- [paymentDescription](./paymentdescription.md)
   A description of the deferred payment.
-- [freeCancellationDate](applepaydeferredpaymentrequest/freecancellationdate.md)
+- [freeCancellationDate](./freecancellationdate.md)
   The time zone at the destination location of the payment.
-- [freeCancellationDateTimeZone](applepaydeferredpaymentrequest/freecancellationdatetimezone.md)
+- [freeCancellationDateTimeZone](./freecancellationdatetimezone.md)
   The time zone at the destination location of the payment.
 
 

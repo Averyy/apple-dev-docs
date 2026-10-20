@@ -1,7 +1,8 @@
 # nextStartDate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time the next recurring leaderboard occurrence starts accepting scores.
 
@@ -20,15 +21,20 @@ The date and time the next recurring leaderboard occurrence starts accepting sco
 var nextStartDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSDate * nextStartDate;
+```
+
 ## Mentions
 
-- [Creating recurring leaderboards](creating-recurring-leaderboards.md)
+- [Creating recurring leaderboards](../creating-recurring-leaderboards.md)
 
 ## See Also
 
-- [var startDate: Date?](gkleaderboard/startdate.md)
+### Accessing Recurring Leaderboard Properties
+- [var startDate: Date?](./startdate.md)
   The date and time a recurring leaderboard occurrence starts accepting scores.
-- [var duration: TimeInterval](gkleaderboard/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration from the start date that a recurring leaderboard occurrence accepts scores.
 
 

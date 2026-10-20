@@ -1,7 +1,8 @@
 # deviceAttestationCompleted(for:opaqueDeviceHandle:attestationDeviceInfo:error:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func deviceAttestationCompleted(for controller: MTRDeviceController, opaqueDeviceHandle: UnsafeMutableRawPointer, attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?)
+```
+
+```objc
+- (void) deviceAttestationCompletedForController:(MTRDeviceController *) controller opaqueDeviceHandle:(void *) opaqueDeviceHandle attestationDeviceInfo:(MTRDeviceAttestationDeviceInfo *) attestationDeviceInfo error:(NSError *) error;
 ```
 
 

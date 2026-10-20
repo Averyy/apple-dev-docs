@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_latencies {
     ...
 };
@@ -17,8 +17,8 @@ struct if_latencies {
 ## Topics
 
 ### Instance Properties
-- [eff_lt](if_latencies/3943895-eff_lt.md)
-- [max_lt](if_latencies/3943896-max_lt.md)
+- [eff_lt](./if_latencies/api-3943895-eff_lt.md)
+- [max_lt](./if_latencies/api-3943896-max_lt.md)
 
 
 ---

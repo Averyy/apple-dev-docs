@@ -1,7 +1,8 @@
 # alignmentMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how individual lines of text are horizontally aligned within the receiver’s bounds.
 
@@ -19,15 +20,20 @@ Determines how individual lines of text are horizontally aligned within the rece
 var alignmentMode: CATextLayerAlignmentMode { get set }
 ```
 
+```objc
+@property (copy) CATextLayerAlignmentMode alignmentMode;
+```
+
 #### Discussion
 
-The possible values are described in [`Horizontal alignment modes`](horizontal-alignment-modes.md). Defaults to [`natural`](catextlayeralignmentmode/natural.md).
+The possible values are described in [Horizontal alignment modes](../horizontal-alignment-modes.md). Defaults to [`natural`](../catextlayeralignmentmode/natural.md).
 
 ## See Also
 
-- [var isWrapped: Bool](catextlayer/iswrapped.md)
+### Text Alignment and Truncation
+- [var isWrapped: Bool](./iswrapped.md)
   Determines whether the text is wrapped to fit within the receiver’s bounds.
-- [var truncationMode: CATextLayerTruncationMode](catextlayer/truncationmode.md)
+- [var truncationMode: CATextLayerTruncationMode](./truncationmode.md)
   Determines how the text is truncated to fit within the receiver’s bounds.
 
 

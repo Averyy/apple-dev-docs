@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the device supports data scanning.
 
@@ -19,21 +20,22 @@ class var isSupported: Bool { get }
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 #### Discussion
 
 For this property to be `true`, the device must have the A12 Bionic chip or later. This property is `false` for apps running in visionOS.
 
-> ❗ **Important**: If your app requires data scanning for its core functionality, you can make your app available only on devices that support data scanning. Add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) key to your app’s information property list and include the `iphone-ipad-minimum-performance-a12` subkey in the array of device capabilities.
+> ❗ **Important**: If your app requires data scanning for its core functionality, you can make your app available only on devices that support data scanning. Add the [`UIRequiredDeviceCapabilities`](../../BundleResources/information-property-list/uirequireddevicecapabilities.md) key to your app’s information property list and include the `iphone-ipad-minimum-performance-a12` subkey in the array of device capabilities.
 
 ## See Also
 
-- [class var isAvailable: Bool](datascannerviewcontroller/isavailable.md)
+### Handling availability
+- [class var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether a person grants your app access to the camera and doesn’t have any restrictions to using the camera.
-- [class var supportedTextRecognitionLanguages: [String]](datascannerviewcontroller/supportedtextrecognitionlanguages.md)
+- [class var supportedTextRecognitionLanguages: [String]](./supportedtextrecognitionlanguages.md)
   The identifiers for the languages that the data scanner recognizes.
-- [DataScannerViewController.ScanningUnavailable](datascannerviewcontroller/scanningunavailable.md)
+- [DataScannerViewController.ScanningUnavailable](./scanningunavailable.md)
   The possible reasons the data scanner is unavailable.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the view that contains the image.
@@ -28,9 +29,16 @@ The default value is `nil`.
 
 - `overlayView`: The associated overlay view for the content view.
 
+## Default Implementations
+
+### ImageAnalysisOverlayViewDelegate Implementations
+- [func contentView(for: ImageAnalysisOverlayView) -> NSView?](./contentview%28for%29-khdt.md)
+  A default implementation that returns a `nil` reference.
+
 ## See Also
 
-- [func contentsRect(for: ImageAnalysisOverlayView) -> CGRect](imageanalysisoverlayviewdelegate/contentsrect(for:).md)
+### Providing interface details
+- [func contentsRect(for: ImageAnalysisOverlayView) -> CGRect](./contentsrect%28for%29.md)
   Returns the rectangle, in unit coordinate space, that contains the image within the view.
 
 

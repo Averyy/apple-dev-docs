@@ -1,7 +1,8 @@
 # videoFieldOfView(for:geometricDistortionCorrected:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the horizontal field of view for an aspect ratio, either uncorrected or corrected for geometric distortion.
 
@@ -16,13 +17,18 @@ Indicates the horizontal field of view for an aspect ratio, either uncorrected o
 func videoFieldOfView(for aspectRatio: AVCaptureDevice.AspectRatio, geometricDistortionCorrected: Bool) -> Float
 ```
 
+```objc
+- (float) videoFieldOfViewForAspectRatio:(AVCaptureAspectRatio) aspectRatio geometricDistortionCorrected:(BOOL) geometricDistortionCorrected;
+```
+
 #### Discussion
 
-A float indicating the field of view for the corresponding [`AVCaptureDevice.AspectRatio`](avcapturedevice/aspectratio.md). Set `AVCaptureDevice/geometricDistortionCorrected` to `true` to receive the field of view corrected for geometric distortion. If this device format does not support dynamic aspect ratio, this function returns `0`.
+A float indicating the field of view for the corresponding [`AVCaptureDevice.AspectRatio`](../aspectratio.md). Set `AVCaptureDevice/geometricDistortionCorrected` to `true` to receive the field of view corrected for geometric distortion. If this device format does not support dynamic aspect ratio, this function returns `0`.
 
 ## See Also
 
-- [var supportedDynamicAspectRatios: [AVCaptureDevice.AspectRatio]](avcapturedevice/format/supporteddynamicaspectratios.md)
+### Determining dynamic aspect ratio support
+- [var supportedDynamicAspectRatios: [AVCaptureDevice.AspectRatio]](./supporteddynamicaspectratios.md)
   Indicates the supported aspect ratios for the device format.
 
 

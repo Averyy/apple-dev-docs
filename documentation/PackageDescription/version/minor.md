@@ -1,7 +1,8 @@
 # minor
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minor version according to the semantic versioning standard.
 
@@ -13,13 +14,14 @@ let minor: Int
 
 ## See Also
 
-- [let major: Int](version/major.md)
+### Inspecting a version
+- [let major: Int](./major.md)
   The major version according to the semantic versioning standard.
-- [let patch: Int](version/patch.md)
+- [let patch: Int](./patch.md)
   The patch version according to the semantic versioning standard.
-- [let prereleaseIdentifiers: [String]](version/prereleaseidentifiers.md)
+- [let prereleaseIdentifiers: [String]](./prereleaseidentifiers.md)
   The pre-release identifier according to the semantic versioning standard, such as `-beta.1`.
-- [let buildMetadataIdentifiers: [String]](version/buildmetadataidentifiers.md)
+- [let buildMetadataIdentifiers: [String]](./buildmetadataidentifiers.md)
   The build metadata of this version according to the semantic versioning standard, such as a commit hash.
 
 

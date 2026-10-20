@@ -1,7 +1,8 @@
 # preferredSymbolConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration values to use when rendering the image.
 
@@ -18,9 +19,13 @@ The configuration values to use when rendering the image.
 var preferredSymbolConfiguration: UIImage.SymbolConfiguration? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImageSymbolConfiguration * preferredSymbolConfiguration;
+```
+
 ## Mentions
 
-- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ Use this property to configure the point size, text style, weight, or scale of a
 
 ## See Also
 
-- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
+### Configuring the appearance of symbol images
+- [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 
 

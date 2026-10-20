@@ -1,7 +1,8 @@
 # AEArrayDataPointer
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a union of type `AEArrayData`.
 
@@ -15,9 +16,13 @@ A pointer to a union of type `AEArrayData`.
 typealias AEArrayDataPointer = UnsafeMutablePointer<AEArrayData>
 ```
 
+```c
+typedef AEArrayData *AEArrayDataPointer;
+```
+
 #### Discussion
 
-This data type merely defines a pointer to an [`AEArrayData`](aearraydata.md) union.
+This data type merely defines a pointer to an [`AEArrayData`](./aearraydata.md) union.
 
 
 ---

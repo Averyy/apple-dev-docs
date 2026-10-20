@@ -1,7 +1,8 @@
 # BetaFeedbackScreenshotSubmission.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a `BetaFeedbackScreenshotSubmission` resource.
 
@@ -10,14 +11,14 @@ Attributes that describe a `BetaFeedbackScreenshotSubmission` resource.
 
 ## Declaration
 
-```swift
+```
 object BetaFeedbackScreenshotSubmission.Attributes
 ```
 
 ## Properties
 
 - `appPlatform` (Platform)
-- `appUptimeInMilliseconds` (int64)
+- `appUptimeInMilliseconds` (int64): **Minimum**: `0`; **Maximum**: `9007199254740991`
 - `architecture` (string)
 - `batteryPercentage` (integer)
 - `buildBundleId` (string)
@@ -27,8 +28,8 @@ object BetaFeedbackScreenshotSubmission.Attributes
 - `deviceFamily` (DeviceFamily)
 - `deviceModel` (string)
 - `devicePlatform` (Platform)
-- `diskBytesAvailable` (int64)
-- `diskBytesTotal` (int64)
+- `diskBytesAvailable` (int64): **Minimum**: `0`; **Maximum**: `9007199254740991`
+- `diskBytesTotal` (int64): **Minimum**: `0`; **Maximum**: `9007199254740991`
 - `email` (string)
 - `locale` (string)
 - `osVersion` (string)

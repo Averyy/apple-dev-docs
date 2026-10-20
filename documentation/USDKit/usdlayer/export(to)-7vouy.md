@@ -1,7 +1,8 @@
 # export(to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the layer’s contents to a file at the given URL.
 
@@ -21,7 +22,7 @@ func export(to url: URL) throws
 
 #### Discussion
 
-> **Note**: An error if the layer cannot be written.
+> **Throws**: An error if the layer cannot be written.
 
 ## Parameters
 
@@ -29,11 +30,12 @@ func export(to url: URL) throws
 
 ## See Also
 
-- [func export(to: FilePath) throws](usdlayer/export(to:)-5hboj.md)
+### Exporting and importing
+- [func export(to: FilePath) throws](./export%28to%29-5hboj.md)
   Writes the layer’s contents to a file at the given path.
-- [func importContents(from: FilePath) throws](usdlayer/importcontents(from:)-2ipug.md)
+- [func importContents(from: FilePath) throws](./importcontents%28from%29-2ipug.md)
   Replaces the layer’s contents with the layer file at the given path.
-- [func importContents(from: String) throws](usdlayer/importcontents(from:)-99hnf.md)
+- [func importContents(from: String) throws](./importcontents%28from%29-99hnf.md)
   Replaces the layer’s contents with the USDA string.
 
 

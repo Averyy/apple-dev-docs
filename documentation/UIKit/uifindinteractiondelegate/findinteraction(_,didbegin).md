@@ -1,7 +1,8 @@
 # findInteraction(_:didBegin:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the interaction is about to present the find panel.
 
@@ -17,6 +18,10 @@ Informs the delegate when the interaction is about to present the find panel.
 optional func findInteraction(_ interaction: UIFindInteraction, didBegin session: UIFindSession)
 ```
 
+```objc
+- (void) findInteraction:(UIFindInteraction *) interaction didBeginFindSession:(UIFindSession *) session;
+```
+
 #### Discussion
 
 Use this method to decorate your view to indicate that a search operation is about to occur. For example, apply a dimming view around the unhighlighted search results.
@@ -28,7 +33,8 @@ Use this method to decorate your view to indicate that a search operation is abo
 
 ## See Also
 
-- [func findInteraction(UIFindInteraction, didEnd: UIFindSession)](uifindinteractiondelegate/findinteraction(_:didend:).md)
+### Decorating the searched content
+- [func findInteraction(UIFindInteraction, didEnd: UIFindSession)](./findinteraction%28_,didend%29.md)
   Informs the delegate when the interaction is about to dismiss the find panel.
 
 

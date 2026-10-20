@@ -1,7 +1,8 @@
 # z
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normalized distance from the origin to the point in the depth dimension.
 
@@ -16,9 +17,10 @@ var z: CGFloat
 
 ## See Also
 
-- [var x: CGFloat](unitpoint3d/x.md)
+### Getting the point’s coordinates
+- [var x: CGFloat](./x.md)
   The normalized distance from the origin to the point in the horizontal direction.
-- [var y: CGFloat](unitpoint3d/y.md)
+- [var y: CGFloat](./y.md)
   The normalized distance from the origin to the point in the vertical dimension.
 
 

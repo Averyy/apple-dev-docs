@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s name.
 
@@ -18,13 +19,18 @@ The item’s name.
 var name: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var uti: String?](iccameraitem/uti.md)
+### Inspecting an Item’s Name and Type
+- [var uti: String?](./uti.md)
   The item’s uniform type identifier (UTI) string.
-- [var ptpObjectHandle: UInt32](iccameraitem/ptpobjecthandle.md)
+- [var ptpObjectHandle: UInt32](./ptpobjecthandle.md)
   The item’s `PTP` object handle value, if the camera uses the `PTP` protocol.
-- [var isRaw: Bool](iccameraitem/israw.md)
+- [var isRaw: Bool](./israw.md)
   A Boolean value indicating whether the item is a raw image file.
 
 

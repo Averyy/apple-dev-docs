@@ -1,7 +1,8 @@
 # kDADiskMountOptionDefault
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var kDADiskMountOptionDefault: Int { get }
 ```
 
+```c
+kDADiskMountOptionDefault
+```
+
 ## See Also
 
-- [var kDADiskMountOptionWhole: Int](kdadiskmountoptionwhole.md)
+### Constants
+- [var kDADiskMountOptionWhole: Int](./kdadiskmountoptionwhole.md)
   Mount the volumes tied to the whole disk object.
 
 

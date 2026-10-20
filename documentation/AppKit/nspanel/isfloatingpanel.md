@@ -1,12 +1,13 @@
 # isFloatingPanel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is a floating panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the receiver is a floating panel.
 var isFloatingPanel: Bool { get set }
 ```
 
+```objc
+@property (getter=isFloatingPanel) BOOL floatingPanel;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the receiver is a floating panel, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](../../Swift/true.md) when the receiver is a floating panel, [`false`](../../Swift/false.md) otherwise.
 
 By default, panels do not float above other windows. It’s appropriate for a panel to float above other windows only if all of the following conditions are true:
 
@@ -27,12 +32,14 @@ By default, panels do not float above other windows. It’s appropriate for a pa
 
 ## See Also
 
-- [var level: NSWindow.Level](nswindow/level-swift.property.md)
+### Related Documentation
+- [var level: NSWindow.Level](../nswindow/level-swift.property.md)
   The window level of the window.
-- [Window Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031i)
-- [var becomesKeyOnlyIfNeeded: Bool](nspanel/becomeskeyonlyifneeded.md)
+- [Window Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031i)
+### Configuring Panels
+- [var becomesKeyOnlyIfNeeded: Bool](./becomeskeyonlyifneeded.md)
   A Boolean value that indicates whether the receiver becomes the key window only when needed.
-- [var worksWhenModal: Bool](nspanel/workswhenmodal.md)
+- [var worksWhenModal: Bool](./workswhenmodal.md)
   A Boolean value that indicates whether the panel receives keyboard and mouse events even when some other window is being run modally.
 
 

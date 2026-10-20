@@ -1,6 +1,7 @@
 # Working with Foundation Types
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use bridged Foundation types in your Swift codebase to work with dates, times, and other values.
 
@@ -8,7 +9,7 @@ Use bridged Foundation types in your Swift codebase to work with dates, times, a
 
 When importing the Foundation framework, the Swift overlay provides value types for many bridged reference types. Many other types are renamed or nested to clarify relationships.
 
-##### Prefer Swift Value Types to Bridged Objective C Reference Types
+##### Prefer Swift Value Types to Bridged Objective-C Reference Types
 
 The value types in the table below have the same functionality as their corresponding reference types. Class clusters that include immutable and mutable subclasses, like `NSArray` and `NSMutableArray`, are bridged to a single value type.
 
@@ -60,7 +61,8 @@ Foundation classes often declare enumeration or constant types. When importing t
 
 ## See Also
 
-- [Working with Core Foundation Types](working-with-core-foundation-types.md)
+### Cocoa Frameworks
+- [Working with Core Foundation Types](./working-with-core-foundation-types.md)
   Work directly with memory-managed Core Foundation types in your Swift code, and manually handle retains as needed.
 
 

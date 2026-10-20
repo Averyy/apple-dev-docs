@@ -1,21 +1,26 @@
 # UITableViewDiffableDataSourceReferenceCellProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a cell for a table view from its diffable data source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias UITableViewDiffableDataSourceReferenceCellProvider = (UITableView, IndexPath, Any) -> UITableViewCell?
+```
+
+```c
+typedef UITableViewCell *(^)(UITableView *, NSIndexPath *, id) UITableViewDiffableDataSourceCellProvider;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A non-`nil` configured cell object. The cell provider must return a valid cell o
 
 ## See Also
 
-- [init(tableView: UITableView, cellProvider: UITableViewDiffableDataSourceReferenceCellProvider)](uitableviewdiffabledatasourcereference/init(tableview:cellprovider:).md)
+### Creating a diffable data source
+- [init(tableView: UITableView, cellProvider: UITableViewDiffableDataSourceReferenceCellProvider)](./uitableviewdiffabledatasourcereference/init%28tableview,cellprovider%29.md)
   Creates a diffable data source with the specified cell provider, and connects it to the specified table view.
 
 

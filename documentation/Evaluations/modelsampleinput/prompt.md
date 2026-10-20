@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The FoundationModels prompt for this input.
 

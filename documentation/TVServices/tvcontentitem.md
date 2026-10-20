@@ -1,12 +1,15 @@
 # TVContentItem
 
 **Framework**: TV Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes either a piece of content or a container for other content items.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVContentItem has been replaced by TVTopShelfItem
 
 ## Declaration
 
@@ -14,81 +17,86 @@ An object that describes either a piece of content or a container for other cont
 class TVContentItem
 ```
 
+```objc
+@interface TVContentItem : NSObject
+```
+
 #### Overview
 
 The exact details of what a content item is are dependent on your app. For example, a content item might be a piece of media or it might provide access to news or other content available to your app.
 
-To create a description of a piece of content, create a content identifier object and then use this object to initialize a new [`TVContentItem`](tvcontentitem.md) object. Then, set any other properties that are appropriate for the object you are creating. Most of the properties are optional, and many properties apply only to certain kinds of content. Inspect an existing [`TVContentItem`](tvcontentitem.md) object to retrieve the media and playback properties, such as the duration of the content or when the content was last played.
+To create a description of a piece of content, create a content identifier object and then use this object to initialize a new [`TVContentItem`](./tvcontentitem.md) object. Then, set any other properties that are appropriate for the object you are creating. Most of the properties are optional, and many properties apply only to certain kinds of content. Inspect an existing [`TVContentItem`](./tvcontentitem.md) object to retrieve the media and playback properties, such as the duration of the content or when the content was last played.
 
 ## Topics
 
 ### Initializing a Content Item
-- [init(contentIdentifier: TVContentIdentifier)](tvcontentitem/init(contentidentifier:).md)
+- [init(contentIdentifier: TVContentIdentifier)](./tvcontentitem/init%28contentidentifier%29.md)
   Initializes a new content item.
-- [init?(coder: NSCoder)](tvcontentitem/init(coder:).md)
+- [init?(coder: NSCoder)](./tvcontentitem/init%28coder%29.md)
   Returns an object initialized from data in a given unarchiver.
 ### Reading a Content Item’s Identifier
-- [var contentIdentifier: TVContentIdentifier](tvcontentitem/contentidentifier.md)
+- [var contentIdentifier: TVContentIdentifier](./tvcontentitem/contentidentifier.md)
   The content identifier that uniquely identifies this item.
 ### Inspecting the General Display Properties
-- [var badgeCount: NSNumber?](tvcontentitem/badgecount.md)
+- [var badgeCount: NSNumber?](./tvcontentitem/badgecount.md)
   A badging integer for this item.
-- [var title: String?](tvcontentitem/title.md)
+- [var title: String?](./tvcontentitem/title.md)
   The localized string title of the item.
-- [var topShelfItems: [TVContentItem]?](tvcontentitem/topshelfitems.md)
+- [var topShelfItems: [TVContentItem]?](./tvcontentitem/topshelfitems.md)
   An array of content items that are the items of a section.
 ### Accessing Image Resources
-- [var imageURL: URL?](tvcontentitem/imageurl.md)
+- [var imageURL: URL?](./tvcontentitem/imageurl.md)
   A URL giving the location of the image to be displayed for this content item.
-- [func imageURL(forTraits: TVContentItemImageTrait) -> URL?](tvcontentitem/imageurl(fortraits:).md)
+- [func imageURL(forTraits: TVContentItemImageTrait) -> URL?](./tvcontentitem/imageurl%28fortraits%29.md)
   Retrieve the URL for the image that best matches the specified traits.
-- [func setImageURL(URL?, forTraits: TVContentItemImageTrait)](tvcontentitem/setimageurl(_:fortraits:).md)
-- [struct TVContentItemImageTrait](tvcontentitemimagetrait.md)
+- [func setImageURL(URL?, forTraits: TVContentItemImageTrait)](./tvcontentitem/setimageurl%28_,fortraits%29.md)
+- [struct TVContentItemImageTrait](./tvcontentitemimagetrait.md)
   Traits describing the type of image you want.
 ### Inspecting the Content Properties
-- [var creationDate: Date?](tvcontentitem/creationdate.md)
+- [var creationDate: Date?](./tvcontentitem/creationdate.md)
   The date when the content item was created, or the date when it was first broadcast, or some other kind of origination date.
-- [var duration: NSNumber?](tvcontentitem/duration.md)
+- [var duration: NSNumber?](./tvcontentitem/duration.md)
   The amount of time required to play the media to completion.
-- [var expirationDate: Date?](tvcontentitem/expirationdate.md)
+- [var expirationDate: Date?](./tvcontentitem/expirationdate.md)
   The date when the user will no longer be able to access the item.
-- [var imageShape: TVContentItemImageShape](tvcontentitem/imageshape.md)
+- [var imageShape: TVContentItemImageShape](./tvcontentitem/imageshape.md)
   The intended aspect ratio or shape of the content image.
-- [enum TVContentItemImageShape](tvcontentitemimageshape.md)
+- [enum TVContentItemImageShape](./tvcontentitemimageshape.md)
   An enumerated type that identifies the shape in which the content item should be displayed.
 ### Inspecting the Playback Properties
-- [var currentPosition: NSNumber?](tvcontentitem/currentposition.md)
+- [var currentPosition: NSNumber?](./tvcontentitem/currentposition.md)
   The index location, measured in seconds, at which the user last played this item.
-- [var hasPlayedToEnd: NSNumber?](tvcontentitem/hasplayedtoend.md)
+- [var hasPlayedToEnd: NSNumber?](./tvcontentitem/hasplayedtoend.md)
   A Boolean value indicating whether the user can be considered to have finished this item.
-- [var lastAccessedDate: Date?](tvcontentitem/lastaccesseddate.md)
+- [var lastAccessedDate: Date?](./tvcontentitem/lastaccesseddate.md)
   The date when the user last accessed this item.
 ### Inspecting the Application Launch Properties
-- [var displayURL: URL?](tvcontentitem/displayurl.md)
+- [var displayURL: URL?](./tvcontentitem/displayurl.md)
   A URL that causes the app which created this content item to display a description screen for the item.
-- [var playURL: URL?](tvcontentitem/playurl.md)
+- [var playURL: URL?](./tvcontentitem/playurl.md)
   A URL that causes the app which created this content item to begin playing the item at the user’s current position.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class TVContentIdentifier](tvcontentidentifier.md)
+### Content
+- [class TVContentIdentifier](./tvcontentidentifier.md)
   An object that uniquely identifies media content in either a single piece or a collection.
-- [func TVTopShelfImageSize(shape: TVContentItemImageShape, style: TVTopShelfContentStyle) -> CGSize](tvtopshelfimagesize(shape:style:).md)
+- [func TVTopShelfImageSize(shape: TVContentItemImageShape, style: TVTopShelfContentStyle) -> CGSize](./tvtopshelfimagesize%28shape,style%29.md)
   Returns the ideal size for an image, according to its particular shape and style.
 
 

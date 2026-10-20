@@ -2,6 +2,7 @@
 
 **Framework**: Synchronization  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.

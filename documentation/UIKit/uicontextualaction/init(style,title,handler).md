@@ -1,7 +1,8 @@
 # init(style:title:handler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new contextual action with the specified title and handler.
 
@@ -15,6 +16,10 @@ Creates a new contextual action with the specified title and handler.
 
 ```swift
 convenience init(style: UIContextualAction.Style, title: String?, handler: @escaping UIContextualAction.Handler)
+```
+
+```objc
++ (instancetype) contextualActionWithStyle:(UIContextualActionStyle) style title:(NSString *) title handler:(UIContextualActionHandler) handler;
 ```
 
 #### Return Value

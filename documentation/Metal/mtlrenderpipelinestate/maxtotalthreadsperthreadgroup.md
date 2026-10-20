@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The largest number of threads the pipeline state can have in a single tile shader threadgroup.
@@ -20,13 +21,18 @@ The largest number of threads the pipeline state can have in a single tile shade
 var maxTotalThreadsPerThreadgroup: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger maxTotalThreadsPerThreadgroup;
+```
+
 ## See Also
 
-- [var threadgroupSizeMatchesTileSize: Bool](mtlrenderpipelinestate/threadgroupsizematchestilesize.md)
+### Checking tile shader memory requirements
+- [var threadgroupSizeMatchesTileSize: Bool](./threadgroupsizematchestilesize.md)
   A Boolean value that indicates whether the pipeline state needs a threadgroup’s size to equal a tile’s size.
-- [var imageblockSampleLength: Int](mtlrenderpipelinestate/imageblocksamplelength.md)
+- [var imageblockSampleLength: Int](./imageblocksamplelength.md)
   The memory size, in byes, of the render pipeline’s imageblock for a single sample.
-- [func imageblockMemoryLength(forDimensions: MTLSize) -> Int](mtlrenderpipelinestate/imageblockmemorylength(fordimensions:).md)
+- [func imageblockMemoryLength(forDimensions: MTLSize) -> Int](./imageblockmemorylength%28fordimensions%29.md)
   Returns the length of an imageblock’s memory for the specified imageblock dimensions.
 
 

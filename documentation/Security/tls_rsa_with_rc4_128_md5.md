@@ -1,7 +1,8 @@
 # TLS_RSA_WITH_RC4_128_MD5
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var TLS_RSA_WITH_RC4_128_MD5: SSLCipherSuite { get }
+```
+
+```c
+TLS_RSA_WITH_RC4_128_MD5
 ```
 
 

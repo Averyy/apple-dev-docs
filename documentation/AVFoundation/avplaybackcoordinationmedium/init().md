@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an AVPlaybackCoordinationMedium
 
@@ -17,6 +18,10 @@ Initializes an AVPlaybackCoordinationMedium
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

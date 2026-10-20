@@ -1,7 +1,8 @@
 # scheduleSegment(_:startingFrame:frameCount:at:completionCallbackType:completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the playing of an audio file segment with a callback option you specify.
 
@@ -17,7 +18,15 @@ Schedules the playing of an audio file segment with a callback option you specif
 ## Declaration
 
 ```swift
+func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFramePosition, frameCount numberFrames: AVAudioFrameCount, at when: AVAudioTime?, completionCallbackType callbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (@Sendable (AVAudioPlayerNodeCompletionCallbackType) -> Void)? = nil)
+```
+
+```swift
 func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFramePosition, frameCount numberFrames: AVAudioFrameCount, at when: AVAudioTime?, completionCallbackType callbackType: AVAudioPlayerNodeCompletionCallbackType) async -> AVAudioPlayerNodeCompletionCallbackType
+```
+
+```objc
+- (void) scheduleSegment:(AVAudioFile *) file startingFrame:(AVAudioFramePosition) startFrame frameCount:(AVAudioFrameCount) numberFrames atTime:(AVAudioTime *) when completionCallbackType:(AVAudioPlayerNodeCompletionCallbackType) callbackType completionHandler:(AVAudioPlayerNodeCompletionHandler) completionHandler;
 ```
 
 #### Discussion
@@ -33,17 +42,18 @@ func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFrame
 
 ## See Also
 
-- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](avaudioplayernode/schedulefile(_:at:completionhandler:).md)
+### Scheduling files and segments
+- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](./schedulefile%28_,at,completionhandler%29.md)
   Schedules the playing of an entire audio file.
-- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulefile(_:at:completioncallbacktype:completionhandler:).md)
+- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](./schedulefile%28_,at,completioncallbacktype,completionhandler%29.md)
   Schedules the playing of an entire audio file with a callback option you specify.
-- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionHandler: (() -> Void)?)](avaudioplayernode/schedulesegment(_:startingframe:framecount:at:completionhandler:).md)
+- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionHandler: (() -> Void)?)](./schedulesegment%28_,startingframe,framecount,at,completionhandler%29.md)
   Schedules the playing of an audio file segment.
-- [enum AVAudioPlayerNodeCompletionCallbackType](avaudioplayernodecompletioncallbacktype.md)
+- [enum AVAudioPlayerNodeCompletionCallbackType](../avaudioplayernodecompletioncallbacktype.md)
   Constants that specify when the framework must invoke the completion handler.
-- [typealias AVAudioPlayerNodeCompletionHandler](avaudioplayernodecompletionhandler.md)
+- [typealias AVAudioPlayerNodeCompletionHandler](../avaudioplayernodecompletionhandler.md)
   The callback handler for buffer or file completion.
-- [typealias AVAudioNodeCompletionHandler](avaudionodecompletionhandler.md)
+- [typealias AVAudioNodeCompletionHandler](../avaudionodecompletionhandler.md)
   A general callback handler for an audio node.
 
 

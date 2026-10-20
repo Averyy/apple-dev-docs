@@ -1,7 +1,8 @@
 # applied(to:generator:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies each transformer randomly in order with a probability.
 

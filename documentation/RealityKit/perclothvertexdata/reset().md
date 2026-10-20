@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the per-vertex data of each vertex to the default position constraint.
 
@@ -11,6 +12,18 @@ Resets the per-vertex data of each vertex to the default position constraint.
 - visionOS 27.0+
 
 ## Declaration
+
+```swift
+mutating func reset()
+```
+
+Available when `ElementType` is `ClothBodyComponent.TargetShape.PositionConstraint`.
+
+**Other overloads**:
+
+```swift
+mutating func reset()
+```
 
 ```swift
 mutating func reset()

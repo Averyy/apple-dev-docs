@@ -1,7 +1,8 @@
 # ICScannerPixelDataType
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The pixel data types.
 
@@ -14,6 +15,10 @@ The pixel data types.
 enum ICScannerPixelDataType
 ```
 
+```c
+enum ICScannerPixelDataType : NSUInteger;
+```
+
 #### Overview
 
 The values correspond to the `ICAP_PIXELTYPE` types as defined in the `TWAIN` Specification.
@@ -21,27 +26,27 @@ The values correspond to the `ICAP_PIXELTYPE` types as defined in the `TWAIN` Sp
 ## Topics
 
 ### Constants
-- [ICScannerPixelDataType.BW](icscannerpixeldatatype/bw.md)
-- [ICScannerPixelDataType.CIEXYZ](icscannerpixeldatatype/ciexyz.md)
-- [ICScannerPixelDataType.CMY](icscannerpixeldatatype/cmy.md)
-- [ICScannerPixelDataType.CMYK](icscannerpixeldatatype/cmyk.md)
-- [ICScannerPixelDataType.gray](icscannerpixeldatatype/gray.md)
-- [ICScannerPixelDataType.palette](icscannerpixeldatatype/palette.md)
-- [ICScannerPixelDataType.RGB](icscannerpixeldatatype/rgb.md)
-- [ICScannerPixelDataType.YUV](icscannerpixeldatatype/yuv.md)
-- [ICScannerPixelDataType.YUVK](icscannerpixeldatatype/yuvk.md)
+- [ICScannerPixelDataType.BW](./icscannerpixeldatatype/bw.md)
+- [ICScannerPixelDataType.CIEXYZ](./icscannerpixeldatatype/ciexyz.md)
+- [ICScannerPixelDataType.CMY](./icscannerpixeldatatype/cmy.md)
+- [ICScannerPixelDataType.CMYK](./icscannerpixeldatatype/cmyk.md)
+- [ICScannerPixelDataType.gray](./icscannerpixeldatatype/gray.md)
+- [ICScannerPixelDataType.palette](./icscannerpixeldatatype/palette.md)
+- [ICScannerPixelDataType.RGB](./icscannerpixeldatatype/rgb.md)
+- [ICScannerPixelDataType.YUV](./icscannerpixeldatatype/yuv.md)
+- [ICScannerPixelDataType.YUVK](./icscannerpixeldatatype/yuvk.md)
 ### Initializers
-- [init?(rawValue: UInt)](icscannerpixeldatatype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./icscannerpixeldatatype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # showsQuadCount
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view displays the number of rectangles used to render the scene.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the view displays the number of rectangle
 var showsQuadCount: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsQuadCount;
+```
+
 #### Discussion
 
 SpriteKit converts the node tree into one or more rendering passes. Each rendering pass is rendered using a series of textured rectangles (quads). The showsQuadCount property allows you to see the total number of quads that were used to render the scene’s contents. Use this as another piece of data when you profile your game’s performance. In most cases, fewer quads is better.
 
 ## See Also
 
-- [var showsNodeCount: Bool](skrenderer/showsnodecount.md)
+### Enabling Visual Statistics for Debugging
+- [var showsNodeCount: Bool](./showsnodecount.md)
   A Boolean value that indicates whether the view displays an overlay that shows physics bodies that are visible in the scene.
-- [var showsDrawCount: Bool](skrenderer/showsdrawcount.md)
+- [var showsDrawCount: Bool](./showsdrawcount.md)
   A Boolean value that indicates whether the view displays the number of drawing passes it needed to render the view.
-- [var showsPhysics: Bool](skrenderer/showsphysics.md)
+- [var showsPhysics: Bool](./showsphysics.md)
   A Boolean value that indicates whether the view displays physics-related debugging information.
-- [var showsFields: Bool](skrenderer/showsfields.md)
+- [var showsFields: Bool](./showsfields.md)
   A Boolean value that indicates whether the view displays information about physics fields in the scene.
 
 

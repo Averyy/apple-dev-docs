@@ -1,7 +1,8 @@
 # SVGPathSegMovetoRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegMovetoRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathsegmovetorel/1633901-x.md)
-- [y](svgpathsegmovetorel/1631419-y.md)
+- [x](./svgpathsegmovetorel/api-1633901-x.md)
+- [y](./svgpathsegmovetorel/api-1631419-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

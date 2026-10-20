@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Core ML model stored in memory.
 
@@ -16,11 +17,12 @@ var model: MLModel { get }
 
 ## See Also
 
-- [var description: String](mlclassifier/description.md)
+### Describing a model
+- [var description: String](./description.md)
   A text representation of the classifier.
-- [var debugDescription: String](mlclassifier/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the classifier shown in a playground.
 
 

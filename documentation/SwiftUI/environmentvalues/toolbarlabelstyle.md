@@ -1,7 +1,8 @@
 # toolbarLabelStyle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label style to apply to controls within a toolbar.
 
@@ -26,19 +27,20 @@ The default is `nil` for items outside the window toolbar.
 
 ## See Also
 
-- [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](view/toolbarcolorscheme(_:for:).md)
+### Styling a toolbar
+- [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](../view/toolbarcolorscheme%28_,for%29.md)
   Specifies the preferred color scheme of a bar managed by SwiftUI.
-- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](view/toolbarforegroundstyle(_:for:).md)
+- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](../view/toolbarforegroundstyle%28_,for%29.md)
   Specifies the preferred foreground style of bars managed by SwiftUI.
-- [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)
+- [func windowToolbarStyle<S>(S) -> some Scene](../scene/windowtoolbarstyle%28_%29.md)
   Sets the style for the toolbar defined within this scene.
-- [protocol WindowToolbarStyle](windowtoolbarstyle.md)
+- [protocol WindowToolbarStyle](../windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
-- [struct ToolbarLabelStyle](toolbarlabelstyle.md)
+- [struct ToolbarLabelStyle](../toolbarlabelstyle.md)
   The label style of a toolbar.
-- [struct SpacerSizing](spacersizing.md)
+- [struct SpacerSizing](../spacersizing.md)
   A type which defines how spacers should size themselves.
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+- [func toolbarBackground(_:for:)](../view/toolbarbackground%28_,for%29.md)
   Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 
 

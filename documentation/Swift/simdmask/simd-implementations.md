@@ -1,50 +1,51 @@
 # SIMD Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func .!= (Self.Scalar, Self) -> SIMDMask<Self.MaskStorage>](simdmask/'.!=(_:_:)-4o6ac.md)
+- [static func .!= (Self.Scalar, Self) -> SIMDMask<Self.MaskStorage>](./dotnoteq%28_,_%29-4o6ac.md)
   Returns a vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (Self, Self) -> SIMDMask<Self.MaskStorage>](simdmask/'.!=(_:_:)-5cnom.md)
+- [static func .!= (Self, Self) -> SIMDMask<Self.MaskStorage>](./dotnoteq%28_,_%29-5cnom.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (Self, Self.Scalar) -> SIMDMask<Self.MaskStorage>](simdmask/'.!=(_:_:)-94n12.md)
+- [static func .!= (Self, Self.Scalar) -> SIMDMask<Self.MaskStorage>](./dotnoteq%28_,_%29-94n12.md)
   Returns a vector mask with the result of a pointwise inequality comparison.
-- [static func .== (Self.Scalar, Self) -> SIMDMask<Self.MaskStorage>](simdmask/'.==(_:_:)-4l749.md)
+- [static func .== (Self.Scalar, Self) -> SIMDMask<Self.MaskStorage>](./doteqeq%28_,_%29-4l749.md)
   Returns a vector mask with the result of a pointwise equality comparison.
-- [static func .== (Self, Self.Scalar) -> SIMDMask<Self.MaskStorage>](simdmask/'.==(_:_:)-6aq3z.md)
+- [static func .== (Self, Self.Scalar) -> SIMDMask<Self.MaskStorage>](./doteqeq%28_,_%29-6aq3z.md)
   Returns a vector mask with the result of a pointwise equality comparison.
-- [static func .== (Self, Self) -> SIMDMask<Self.MaskStorage>](simdmask/'.==(_:_:)-8vdyh.md)
+- [static func .== (Self, Self) -> SIMDMask<Self.MaskStorage>](./doteqeq%28_,_%29-8vdyh.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func == (Self, Self) -> Bool](simdmask/==(_:_:).md)
+- [static func == (Self, Self) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two vectors are equal.
 ### Initializers
-- [init<S>(S)](simdmask/init(_:).md)
+- [init<S>(S)](./init%28_%29.md)
   Creates a vector from the given sequence.
-- [init(arrayLiteral: Self.Scalar...)](simdmask/init(arrayliteral:).md)
+- [init(arrayLiteral: Self.Scalar...)](./init%28arrayliteral%29.md)
   Creates a vector from the specified elements.
-- [init(from: any Decoder) throws](simdmask/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new vector by decoding scalars from the given decoder.
-- [init(repeating: Self.Scalar)](simdmask/init(repeating:)-5pwub.md)
+- [init(repeating: Self.Scalar)](./init%28repeating%29-5pwub.md)
   A vector with the specified scalar in all lanes.
 ### Instance Properties
-- [var description: String](simdmask/description.md)
+- [var description: String](./description.md)
   A textual description of the vector.
-- [var indices: Range<Int>](simdmask/indices.md)
+- [var indices: Range<Int>](./indices.md)
   The valid indices for subscripting the vector.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](simdmask/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the scalars of this vector into the given encoder in an unkeyed container.
-- [func hash(into: inout Hasher)](simdmask/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the elements of the vector using the given hasher.
-- [func replace(with: Self.Scalar, where: SIMDMask<Self.MaskStorage>)](simdmask/replace(with:where:)-6wonx.md)
+- [func replace(with: Self.Scalar, where: SIMDMask<Self.MaskStorage>)](./replace%28with,where%29-6wonx.md)
   Replaces elements of this vector with `other` in the lanes where `mask` is `true`.
-- [func replace(with: Self, where: SIMDMask<Self.MaskStorage>)](simdmask/replace(with:where:)-7bhx.md)
+- [func replace(with: Self, where: SIMDMask<Self.MaskStorage>)](./replace%28with,where%29-7bhx.md)
   Replaces elements of this vector with elements of `other` in the lanes where `mask` is `true`.
-- [func replacing(with: Self, where: SIMDMask<Self.MaskStorage>) -> Self](simdmask/replacing(with:where:)-2gka4.md)
+- [func replacing(with: Self, where: SIMDMask<Self.MaskStorage>) -> Self](./replacing%28with,where%29-2gka4.md)
   Returns a copy of this vector, with elements replaced by elements of `other` in the lanes where `mask` is `true`.
-- [func replacing(with: Self.Scalar, where: SIMDMask<Self.MaskStorage>) -> Self](simdmask/replacing(with:where:)-3lyjl.md)
+- [func replacing(with: Self.Scalar, where: SIMDMask<Self.MaskStorage>) -> Self](./replacing%28with,where%29-3lyjl.md)
   Returns a copy of this vector, with elements `other` in the lanes where `mask` is `true`.
 
 

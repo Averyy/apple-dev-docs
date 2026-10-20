@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of SMPTE time type.
 
@@ -20,23 +21,28 @@ The kind of SMPTE time type.
 var type: UInt32
 ```
 
+```c
+UInt32 type;
+```
+
 ## See Also
 
-- [var counter: UInt32](cvsmptetime/counter.md)
+### Properties
+- [var counter: UInt32](./counter.md)
   The total number of messages received.
-- [var flags: UInt32](cvsmptetime/flags.md)
+- [var flags: UInt32](./flags.md)
   A set of flags that indicate the SMPTE state.
-- [var frames: Int16](cvsmptetime/frames.md)
+- [var frames: Int16](./frames.md)
   The number of frames in the full message.
-- [var hours: Int16](cvsmptetime/hours.md)
+- [var hours: Int16](./hours.md)
   The number of hours in the full message.
-- [var minutes: Int16](cvsmptetime/minutes.md)
+- [var minutes: Int16](./minutes.md)
   The number of minutes in the full message.
-- [var seconds: Int16](cvsmptetime/seconds.md)
+- [var seconds: Int16](./seconds.md)
   The number of seconds in the full message.
-- [var subframeDivisor: Int16](cvsmptetime/subframedivisor.md)
+- [var subframeDivisor: Int16](./subframedivisor.md)
   The number of subframes per frame (typically, 80).
-- [var subframes: Int16](cvsmptetime/subframes.md)
+- [var subframes: Int16](./subframes.md)
   The number of subframes in the full message.
 
 

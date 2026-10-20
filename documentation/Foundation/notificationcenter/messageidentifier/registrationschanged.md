@@ -1,7 +1,8 @@
 # registrationsChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,8 @@
 ```swift
 static var registrationsChanged: NotificationCenter.BaseMessageIdentifier<AVAudioUnitComponentManager.RegistrationsChangedMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<AVAudioUnitComponentManager.RegistrationsChangedMessage>`.
 
 
 ---

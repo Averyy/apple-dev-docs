@@ -1,7 +1,8 @@
 # symbolName
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SF Symbol icon that represents the moon phase.
 
@@ -22,9 +23,10 @@ var symbolName: String { get }
 
 ## See Also
 
-- [var accessibilityDescription: String](moonphase/accessibilitydescription.md)
+### Describing the moon phase
+- [var accessibilityDescription: String](./accessibilitydescription.md)
   A localized accessibility description describing the moon phase.
-- [var description: String](moonphase/description.md)
+- [var description: String](./description.md)
   A localized string describing the moon phase.
 
 

@@ -1,7 +1,8 @@
 # StripOrientation.deriveFromZAxis
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Derive the strip’s orientation from neighboring points and `axisZ` float3 parameter
 
@@ -12,7 +13,7 @@ Derive the strip’s orientation from neighboring points and `axisZ` float3 para
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

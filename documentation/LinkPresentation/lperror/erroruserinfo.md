@@ -1,7 +1,8 @@
 # errorUserInfo
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -20,7 +21,8 @@ var errorUserInfo: [String : Any] { get }
 
 ## See Also
 
-- [var errorCode: Int](lperror/errorcode.md)
+### Error details
+- [var errorCode: Int](./errorcode.md)
   A code for the error.
 
 

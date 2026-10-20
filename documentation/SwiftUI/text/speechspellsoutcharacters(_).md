@@ -1,7 +1,8 @@
 # speechSpellsOutCharacters(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether VoiceOver should speak the contents of the text view character by character.
 
@@ -33,11 +34,12 @@ Use this modifier when you want VoiceOver to speak text as individual letters, c
 
 ## See Also
 
-- [func speechAdjustedPitch(Double) -> Text](text/speechadjustedpitch(_:).md)
+### Configuring voiceover
+- [func speechAdjustedPitch(Double) -> Text](./speechadjustedpitch%28_%29.md)
   Raises or lowers the pitch of spoken text.
-- [func speechAlwaysIncludesPunctuation(Bool) -> Text](text/speechalwaysincludespunctuation(_:).md)
+- [func speechAlwaysIncludesPunctuation(Bool) -> Text](./speechalwaysincludespunctuation%28_%29.md)
   Sets whether VoiceOver should always speak all punctuation in the text view.
-- [func speechAnnouncementsQueued(Bool) -> Text](text/speechannouncementsqueued(_:).md)
+- [func speechAnnouncementsQueued(Bool) -> Text](./speechannouncementsqueued%28_%29.md)
   Controls whether to queue pending announcements behind existing speech rather than interrupting speech in progress.
 
 

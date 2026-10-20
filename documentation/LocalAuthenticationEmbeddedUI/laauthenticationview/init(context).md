@@ -1,7 +1,8 @@
 # init(context:)
 
 **Framework**: Local Authentication Embedded UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new authentication icon that reflects the current authentication state.
 
@@ -14,9 +15,13 @@ Creates a new authentication icon that reflects the current authentication state
 init(context: LAContext)
 ```
 
+```objc
+- (instancetype) initWithContext:(LAContext *) context;
+```
+
 #### Discussion
 
-Use this initializer to create a local authentication view and connect it to a particular local authentication context. You typically do this in the [`loadView()`](https://developer.apple.com/documentation/appkit/nsviewcontroller/loadview()) method of an [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) subclass. You then add this view as a subview — along with any text, imagery, and interactive elements that you need — to create a custom authentication interface. When your interface appears, call the [`LAContext`](https://developer.apple.com/documentation/localauthentication/lacontext) instance’s [`evaluatePolicy(_:localizedReason:reply:)`](https://developer.apple.com/documentation/localauthentication/lacontext/evaluatepolicy(_:localizedreason:reply:)) method to begin the authentication process.
+Use this initializer to create a local authentication view and connect it to a particular local authentication context. You typically do this in the [`loadView()`](../../AppKit/nsviewcontroller/loadview%28%29.md) method of an [`NSViewController`](../../AppKit/nsviewcontroller.md) subclass. You then add this view as a subview — along with any text, imagery, and interactive elements that you need — to create a custom authentication interface. When your interface appears, call the [`LAContext`](../../LocalAuthentication/lacontext.md) instance’s [`evaluatePolicy(_:localizedReason:reply:)`](../../LocalAuthentication/lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to begin the authentication process.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ Use this initializer to create a local authentication view and connect it to a p
 
 ## See Also
 
-- [var context: LAContext](laauthenticationview/context.md)
+### Creating a local authentication view
+- [var context: LAContext](./context.md)
   The local authentication context associated with the authentication view.
 
 

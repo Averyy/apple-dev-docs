@@ -1,7 +1,8 @@
 # TextureResource.Compression.ASTCBlockSize.block6x5
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,19 +20,20 @@ case block6x5
 
 ## See Also
 
-- [TextureResource.Compression.ASTCBlockSize.block4x4](textureresource/compression/astcblocksize/block4x4.md)
-- [TextureResource.Compression.ASTCBlockSize.block5x4](textureresource/compression/astcblocksize/block5x4.md)
-- [TextureResource.Compression.ASTCBlockSize.block5x5](textureresource/compression/astcblocksize/block5x5.md)
-- [TextureResource.Compression.ASTCBlockSize.block6x6](textureresource/compression/astcblocksize/block6x6.md)
-- [TextureResource.Compression.ASTCBlockSize.block8x5](textureresource/compression/astcblocksize/block8x5.md)
-- [TextureResource.Compression.ASTCBlockSize.block8x6](textureresource/compression/astcblocksize/block8x6.md)
-- [TextureResource.Compression.ASTCBlockSize.block8x8](textureresource/compression/astcblocksize/block8x8.md)
-- [TextureResource.Compression.ASTCBlockSize.block10x10](textureresource/compression/astcblocksize/block10x10.md)
-- [TextureResource.Compression.ASTCBlockSize.block10x5](textureresource/compression/astcblocksize/block10x5.md)
-- [TextureResource.Compression.ASTCBlockSize.block10x6](textureresource/compression/astcblocksize/block10x6.md)
-- [TextureResource.Compression.ASTCBlockSize.block10x8](textureresource/compression/astcblocksize/block10x8.md)
-- [TextureResource.Compression.ASTCBlockSize.block12x10](textureresource/compression/astcblocksize/block12x10.md)
-- [TextureResource.Compression.ASTCBlockSize.block12x12](textureresource/compression/astcblocksize/block12x12.md)
+### Compression block sizes
+- [TextureResource.Compression.ASTCBlockSize.block4x4](./block4x4.md)
+- [TextureResource.Compression.ASTCBlockSize.block5x4](./block5x4.md)
+- [TextureResource.Compression.ASTCBlockSize.block5x5](./block5x5.md)
+- [TextureResource.Compression.ASTCBlockSize.block6x6](./block6x6.md)
+- [TextureResource.Compression.ASTCBlockSize.block8x5](./block8x5.md)
+- [TextureResource.Compression.ASTCBlockSize.block8x6](./block8x6.md)
+- [TextureResource.Compression.ASTCBlockSize.block8x8](./block8x8.md)
+- [TextureResource.Compression.ASTCBlockSize.block10x10](./block10x10.md)
+- [TextureResource.Compression.ASTCBlockSize.block10x5](./block10x5.md)
+- [TextureResource.Compression.ASTCBlockSize.block10x6](./block10x6.md)
+- [TextureResource.Compression.ASTCBlockSize.block10x8](./block10x8.md)
+- [TextureResource.Compression.ASTCBlockSize.block12x10](./block12x10.md)
+- [TextureResource.Compression.ASTCBlockSize.block12x12](./block12x12.md)
 
 
 ---

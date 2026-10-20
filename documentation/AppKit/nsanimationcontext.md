@@ -1,7 +1,8 @@
 # NSAnimationContext
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An animation context, which contains information about environment and state.
 
@@ -14,11 +15,15 @@ An animation context, which contains information about environment and state.
 class NSAnimationContext
 ```
 
+```objc
+@interface NSAnimationContext : NSObject
+```
+
 #### Overview
 
-[`NSAnimationContext`](nsanimationcontext.md) is analogous to [`CATransaction`](https://developer.apple.com/documentation/quartzcore/catransaction) and is similar in overall concept to [`NSGraphicsContext`](nsgraphicscontext.md). Each thread maintains its own stack of nestable [`NSAnimationContext`](nsanimationcontext.md) instances, with each new instance initialized as a copy of the instance below (so, inheriting its current properties).
+[`NSAnimationContext`](./nsanimationcontext.md) is analogous to [`CATransaction`](../QuartzCore/catransaction.md) and is similar in overall concept to [`NSGraphicsContext`](./nsgraphicscontext.md). Each thread maintains its own stack of nestable [`NSAnimationContext`](./nsanimationcontext.md) instances, with each new instance initialized as a copy of the instance below (so, inheriting its current properties).
 
-Multiple [`NSAnimationContext`](nsanimationcontext.md) instances can be nested, allowing a given block of code to initiate animations using its own specified duration without affecting animations initiated by surrounding code.
+Multiple [`NSAnimationContext`](./nsanimationcontext.md) instances can be nested, allowing a given block of code to initiate animations using its own specified duration without affecting animations initiated by surrounding code.
 
 ```objc
 [NSAnimationContext beginGrouping];
@@ -41,52 +46,53 @@ Multiple [`NSAnimationContext`](nsanimationcontext.md) instances can be nested, 
 ## Topics
 
 ### Grouping Transactions
-- [class func beginGrouping()](nsanimationcontext/begingrouping.md)
+- [class func beginGrouping()](./nsanimationcontext/begingrouping%28%29.md)
   Creates a new animation grouping.
-- [class func endGrouping()](nsanimationcontext/endgrouping.md)
+- [class func endGrouping()](./nsanimationcontext/endgrouping%28%29.md)
   Ends the current animation grouping.
 ### Getting the Current Animation Context
-- [class var current: NSAnimationContext](nsanimationcontext/current.md)
+- [class var current: NSAnimationContext](./nsanimationcontext/current.md)
   Returns the current animation context.
 ### Animation Completion Handlers
-- [var completionHandler: (() -> Void)?](nsanimationcontext/completionhandler.md)
+- [var completionHandler: (() -> Void)?](./nsanimationcontext/completionhandler.md)
   A completion Block that is called when the animations in the grouping are completed.
-- [class func runAnimationGroup((NSAnimationContext) -> Void, completionHandler: (() -> Void)?)](nsanimationcontext/runanimationgroup(_:completionhandler:).md)
+- [class func runAnimationGroup((NSAnimationContext) -> Void, completionHandler: (() -> Void)?)](./nsanimationcontext/runanimationgroup%28_,completionhandler%29.md)
   Allows you to specify a completion block body after the set of animation actions whose completion will trigger the completion block.
 ### Modifying the Animation Duration
-- [var duration: TimeInterval](nsanimationcontext/duration.md)
+- [var duration: TimeInterval](./nsanimationcontext/duration.md)
   The duration used by animations created as a result of setting new values for an animatable property.
-- [var timingFunction: CAMediaTimingFunction?](nsanimationcontext/timingfunction.md)
+- [var timingFunction: CAMediaTimingFunction?](./nsanimationcontext/timingfunction.md)
   The timing function used for all animations within this animation proxy group.
 ### Implicit Animation
-- [var allowsImplicitAnimation: Bool](nsanimationcontext/allowsimplicitanimation.md)
+- [var allowsImplicitAnimation: Bool](./nsanimationcontext/allowsimplicitanimation.md)
   Determine if animations are enabled or not for animations that occur as a result of another property change.
 ### Type Methods
-- [class func runAnimationGroup((NSAnimationContext) -> Void)](nsanimationcontext/runanimationgroup(_:).md)
-- [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](nsanimationcontext/animate(_:changes:completion:).md)
+- [class func runAnimationGroup((NSAnimationContext) -> Void)](./nsanimationcontext/runanimationgroup%28_%29.md)
+- [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](./nsanimationcontext/animate%28_,changes,completion%29.md)
   Animate changes to one or more views using the specified SwiftUI animation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSViewAnimation](nsviewanimation.md)
+### View-Based Animations
+- [class NSViewAnimation](./nsviewanimation.md)
   An animation of an app’s views, limited to changes in frame location and size, and to fade-in and fade-out effects.
-- [protocol NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
+- [protocol NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
   A set of methods that defines a way to add animation to an existing class with a minimum of API impact.
-- [NSAnimation.Progress](nsanimation/progress.md)
+- [NSAnimation.Progress](./nsanimation/progress.md)
   The animation progress, as a floating-point number between `0.0` and `1.0`.
-- [enum NSAnimationEffect](nsanimationeffect.md)
+- [enum NSAnimationEffect](./nsanimationeffect.md)
   The type for standard system animation effects, which include both display and sound.
 
 

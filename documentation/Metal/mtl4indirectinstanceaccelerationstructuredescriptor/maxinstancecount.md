@@ -1,7 +1,8 @@
 # maxInstanceCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the maximum number of instance descriptors the instance descriptor buffer can reference.
 
@@ -19,9 +20,13 @@ Controls the maximum number of instance descriptors the instance descriptor buff
 var maxInstanceCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger maxInstanceCount;
+```
+
 #### Discussion
 
-You are responsible for ensuring that the final number of instances at build time, which you provide indirectly via a buffer reference in [`instanceCountBuffer`](mtl4indirectinstanceaccelerationstructuredescriptor/instancecountbuffer.md), is less than or equal to this number.
+You are responsible for ensuring that the final number of instances at build time, which you provide indirectly via a buffer reference in [`instanceCountBuffer`](./instancecountbuffer.md), is less than or equal to this number.
 
 
 ---

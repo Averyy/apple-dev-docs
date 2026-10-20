@@ -1,15 +1,20 @@
 # beats
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var beats: CAClockBeats
+```
+
+```c
+CAClockBeats beats;
 ```
 
 

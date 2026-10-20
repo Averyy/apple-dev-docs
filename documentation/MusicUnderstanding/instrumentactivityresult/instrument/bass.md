@@ -1,7 +1,8 @@
 # bass
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to use to obtain bass activity from an instrument activity result.
 

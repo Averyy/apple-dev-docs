@@ -1,18 +1,19 @@
 # init(a:b:c:d:tx:ty:vx:vy:v:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a projective-transformation structure from the specified single-precision values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -34,9 +35,10 @@ init(a: Float, b: Float, c: Float, d: Float, tx: Float, ty: Float, vx: Float, vy
 
 ## See Also
 
-- [init()](vimage_perpsectivetransform/init.md)
+### Creating a projective-transformation structure
+- [init()](./init%28%29.md)
   Creates a projective-transformation structure.
-- [init?(source: vImage_PerpsectiveTransform.QuadrilateralPoints, destination: vImage_PerpsectiveTransform.QuadrilateralPoints)](vimage_perpsectivetransform/init(source:destination:).md)
+- [init?(source: vImage_PerpsectiveTransform.QuadrilateralPoints, destination: vImage_PerpsectiveTransform.QuadrilateralPoints)](./init%28source,destination%29.md)
   Returns a projective-transformation structure that defines the mapping between a source quadrilateral and a destination quadrilateral.
 
 

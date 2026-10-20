@@ -1,7 +1,8 @@
 # CMSDecoderCreate(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a CMSDecoder reference.
 
@@ -14,9 +15,13 @@ Creates a CMSDecoder reference.
 func CMSDecoderCreate(_ cmsDecoderOut: UnsafeMutablePointer<CMSDecoder?>) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderCreate(CMSDecoderRef*cmsDecoderOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -28,7 +33,8 @@ This is the first function in a sequence of decoder functions that you call to g
 
 ## See Also
 
-- [func CMSDecoderUpdateMessage(CMSDecoder, UnsafeRawPointer, Int) -> OSStatus](cmsdecoderupdatemessage(_:_:_:).md)
+### Related Documentation
+- [func CMSDecoderUpdateMessage(CMSDecoder, UnsafeRawPointer, Int) -> OSStatus](./cmsdecoderupdatemessage%28_,_,_%29.md)
   Feeds raw bytes of the message to be decoded into the decoder.
 
 

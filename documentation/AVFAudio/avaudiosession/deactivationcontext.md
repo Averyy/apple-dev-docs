@@ -1,7 +1,8 @@
 # AVAudioSession.DeactivationContext
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes why and how the audio session deactivated.
 
@@ -19,41 +20,46 @@ An object that describes why and how the audio session deactivated.
 class DeactivationContext
 ```
 
+```objc
+@interface AVAudioSessionDeactivationContext : NSObject
+```
+
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../handling-audio-interruptions.md)
 
 ## Topics
 
 ### Getting the deactivation details
-- [var source: AVAudioSession.DeactivationSource](avaudiosession/deactivationcontext/source.md)
+- [var source: AVAudioSession.DeactivationSource](./deactivationcontext/source.md)
   The source of the audio session deactivation.
-- [var interruptionContext: AVAudioSession.InterruptionContext?](avaudiosession/deactivationcontext/interruptioncontext.md)
+- [var interruptionContext: AVAudioSession.InterruptionContext?](./deactivationcontext/interruptioncontext.md)
   Context about the interruption that caused deactivation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVAudioSession.DeactivationSource](avaudiosession/deactivationsource.md)
+### Getting activation context details
+- [AVAudioSession.DeactivationSource](./deactivationsource.md)
   The source of the audio session deactivation.
-- [AVAudioSession.InterruptionContext](avaudiosession/interruptioncontext.md)
+- [AVAudioSession.InterruptionContext](./interruptioncontext.md)
   An object that provides context about an audio session interruption.
-- [AVAudioSession.ResumptionContext](avaudiosession/resumptioncontext.md)
+- [AVAudioSession.ResumptionContext](./resumptioncontext.md)
   An object that provides context when resumption becomes available.
-- [AVAudioSession.ResumptionRecommendation](avaudiosession/resumptionrecommendation.md)
+- [AVAudioSession.ResumptionRecommendation](./resumptionrecommendation.md)
   The system’s recommendation on whether to resume playback.
 
 

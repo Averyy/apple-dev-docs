@@ -1,7 +1,8 @@
 # init(accessControl:authenticationContext:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +20,10 @@ init(accessControl: SecAccessControl = SecAccessControlCreateWithFlags(nil, kSec
 
 ## See Also
 
-- [static func generate() throws -> SecureEnclave.MLKEM1024.PrivateKey](secureenclave/mlkem1024/privatekey/generate.md)
+### Creating a private key
+- [static func generate() throws -> SecureEnclave.MLKEM1024.PrivateKey](./generate%28%29.md)
   Generates a new random private key.
-- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](secureenclave/mlkem1024/privatekey/init(datarepresentation:authenticationcontext:).md)
+- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](./init%28datarepresentation,authenticationcontext%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAXSortDirectionAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The sort direction of this accessibility object’s contents. For example, a list view’s contents may be sorted in ascending or descending order.
 
@@ -12,6 +13,10 @@ The sort direction of this accessibility object’s contents. For example, a lis
 
 ```swift
 var kAXSortDirectionAttribute: String { get }
+```
+
+```c
+#define kAXSortDirectionAttribute
 ```
 
 

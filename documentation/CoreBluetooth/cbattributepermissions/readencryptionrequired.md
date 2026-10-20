@@ -1,7 +1,8 @@
 # readEncryptionRequired
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A permission that indicates only trusted devices can read the attribute’s value.
 
@@ -20,13 +21,18 @@ A permission that indicates only trusted devices can read the attribute’s valu
 static var readEncryptionRequired: CBAttributePermissions { get }
 ```
 
+```c
+CBAttributePermissionsReadEncryptionRequired
+```
+
 ## See Also
 
-- [static var readable: CBAttributePermissions](cbattributepermissions/readable.md)
+### Permissions
+- [static var readable: CBAttributePermissions](./readable.md)
   A permission that indicates a peripheral can read the attribute’s value.
-- [static var writeable: CBAttributePermissions](cbattributepermissions/writeable.md)
+- [static var writeable: CBAttributePermissions](./writeable.md)
   A permission that indicates a peripheral can write the attribute’s value.
-- [static var writeEncryptionRequired: CBAttributePermissions](cbattributepermissions/writeencryptionrequired.md)
+- [static var writeEncryptionRequired: CBAttributePermissions](./writeencryptionrequired.md)
   A permission that indicates only trusted devices can write the attribute’s value.
 
 

@@ -1,7 +1,8 @@
 # CGImageDestinationAddImage(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds an image to an image destination.
 
@@ -20,6 +21,10 @@ Adds an image to an image destination.
 func CGImageDestinationAddImage(_ idst: CGImageDestination, _ image: CGImage, _ properties: CFDictionary?)
 ```
 
+```c
+extern void CGImageDestinationAddImage(CGImageDestinationRef idst, CGImageRef image, CFDictionaryRef properties);
+```
+
 #### Discussion
 
 The function logs an error if you add more images than what you specified when you created the image destination.
@@ -28,11 +33,12 @@ The function logs an error if you add more images than what you specified when y
 
 - `idst`: The image destination to modify.
 - `image`: The image to add.
-- `properties`: An optional dictionary that specifies the properties of the added image. Specify `NULL` to omit any additional properties. For a list of possible values, see [`Image Properties`](image-properties.md) and doc:CGImageDestination/Configuring-the-Image-Behaviors.
+- `properties`: An optional dictionary that specifies the properties of the added image. Specify `NULL` to omit any additional properties. For a list of possible values, see [Image Properties](./image-properties.md) and doc:CGImageDestination/Configuring-the-Image-Behaviors.
 
 ## See Also
 
-- [func CGImageDestinationAddImageFromSource(CGImageDestination, CGImageSource, Int, CFDictionary?)](cgimagedestinationaddimagefromsource(_:_:_:_:).md)
+### Adding Images to the Destination
+- [func CGImageDestinationAddImageFromSource(CGImageDestination, CGImageSource, Int, CFDictionary?)](./cgimagedestinationaddimagefromsource%28_,_,_,_%29.md)
   Adds an image from an image source to an image destination.
 
 

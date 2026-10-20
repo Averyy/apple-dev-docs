@@ -1,7 +1,8 @@
 # materializedItemsDidChange(completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the file provider that the set of materialized items changed.
 
@@ -15,18 +16,30 @@ Tells the file provider that the set of materialized items changed.
 ## Declaration
 
 ```swift
+optional func materializedItemsDidChange(completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 optional func materializedItemsDidChange() async
+```
+
+```objc
+- (void) materializedItemsDidChangeWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
+- [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-optional func materializedItemsDidChange() async
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> optional func materializedItemsDidChange() async
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 The system calls this method when the set of materialized items changes, such as when the system downloads the content of a dataless item, or deletes the contents of a materialized item.
 
@@ -34,7 +47,7 @@ The system calls this method when the set of materialized items changes, such as
 
 Keep track of the items in the working set—the set of items that the system has downloaded and is managing on disk—to optimize updates. Your file provider must let the system know about any changes to the working set. If you don’t track the working set, then you need to let the system know about any changes to any items in the remote storage.
 
-For more information, see [`Synchronizing the File Provider Extension`](synchronizing-the-file-provider-extension.md).
+For more information, see [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md).
 
 ## Parameters
 

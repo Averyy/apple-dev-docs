@@ -1,7 +1,8 @@
 # switchedOnContents
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents for the switch when it is switched on.
 
@@ -16,17 +17,22 @@ The contents for the switch when it is switched on.
 var switchedOnContents: TCControlContents? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TCControlContents * switchedOnContents;
+```
+
 #### Discussion
 
 This value can be `nil`.
 
 ## See Also
 
-- [var contents: TCControlContents?](tcswitch/contents.md)
+### Inspecting the switch
+- [var contents: TCControlContents?](./contents.md)
   The contents for the switch in its normal state.
-- [var highlightDuration: TimeInterval](tcswitch/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var isSwitchedOn: Bool](tcswitch/isswitchedon.md)
+- [var isSwitchedOn: Bool](./isswitchedon.md)
   A Boolean value that indicates whether the switch is currently switched on.
 
 

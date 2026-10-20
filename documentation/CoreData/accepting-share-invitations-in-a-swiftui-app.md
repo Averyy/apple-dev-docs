@@ -1,6 +1,7 @@
 # Accepting Share Invitations in a SwiftUI App
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Article
 
 Adapt your app to use UIKit’s application and scene delegates so it can process CloudKit share invitations.
 
@@ -8,15 +9,15 @@ Adapt your app to use UIKit’s application and scene delegates so it can proces
 
 When the user accepts an invitation to participate in a CloudKit share, the system passes that share’s metadata to your app’s scene delegate for processing. To receive this metadata in a SwiftUI app:
 
-1. Add a scene delegate — an object that conforms to [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate) — that’s responsible for passing the accepted share metadata to your app’s persistent container.
-2. Add an application delegate — an object that conforms to [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) — that configures new scenes to use your custom scene delegate class.
-3. Modify your app’s [`App`](https://developer.apple.com/documentation/swiftui/app) structure to use [`UIApplicationDelegateAdaptor`](https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor) to initialize and manage an application delegate at runtime.
+1. Add a scene delegate — an object that conforms to [`UIWindowSceneDelegate`](../UIKit/uiwindowscenedelegate.md) — that’s responsible for passing the accepted share metadata to your app’s persistent container.
+2. Add an application delegate — an object that conforms to [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) — that configures new scenes to use your custom scene delegate class.
+3. Modify your app’s [`App`](../SwiftUI/app.md) structure to use [`UIApplicationDelegateAdaptor`](../SwiftUI/uiapplicationdelegateadaptor.md) to initialize and manage an application delegate at runtime.
 
 ##### Add a Scene Delegate to Process Share Invitations
 
-In response to the user accepting a CloudKit share invitation, the system routes that action, for processing, to the delegate of the app’s active scene. SwiftUI apps don’t contain a scene delegate by default, but you can add one, and use it to implement the [`windowScene(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/windowscene(_:userdidacceptcloudkitsharewith:)) method. Your implementation is responsible for passing the provided share metadata to your app’s persistent container for processing.
+In response to the user accepting a CloudKit share invitation, the system routes that action, for processing, to the delegate of the app’s active scene. SwiftUI apps don’t contain a scene delegate by default, but you can add one, and use it to implement the [`windowScene(_:userDidAcceptCloudKitShareWith:)`](../UIKit/uiwindowscenedelegate/windowscene%28_,userdidacceptcloudkitsharewith%29.md) method. Your implementation is responsible for passing the provided share metadata to your app’s persistent container for processing.
 
-To create the scene delegate, right-click your project in Xcode’s Project navigator and select New File. Choose the Swift File template and name the file `SceneDelegate.swift`. Open the new file in Xcode’s source editor and define the `SceneDelegate` class as a subclass of [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) that adopts the [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate) protocol. Within this class, add your implementation of [`windowScene(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/windowscene(_:userdidacceptcloudkitsharewith:)), as shown in the following example.
+To create the scene delegate, right-click your project in Xcode’s Project navigator and select New File. Choose the Swift File template and name the file `SceneDelegate.swift`. Open the new file in Xcode’s source editor and define the `SceneDelegate` class as a subclass of [`UIResponder`](../UIKit/uiresponder.md) that adopts the [`UIWindowSceneDelegate`](../UIKit/uiwindowscenedelegate.md) protocol. Within this class, add your implementation of [`windowScene(_:userDidAcceptCloudKitShareWith:)`](../UIKit/uiwindowscenedelegate/windowscene%28_,userdidacceptcloudkitsharewith%29.md), as shown in the following example.
 
 ```swift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -39,7 +40,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-The example above uses a `CoreDataStack` object that manages the initialization of the persistent container, and the private and shared persistent stores. For a reference implementation, see the sample code project [`Synchronizing a local store to the cloud`](synchronizing-a-local-store-to-the-cloud.md).
+The example above uses a `CoreDataStack` object that manages the initialization of the persistent container, and the private and shared persistent stores. For a reference implementation, see the sample code project [Synchronizing a local store to the cloud](./synchronizing-a-local-store-to-the-cloud.md).
 
 ##### Add an Application Delegate to Configure New Scenes
 
@@ -68,11 +69,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-For more information on scene configuration, see [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)).
+For more information on scene configuration, see [`application(_:configurationForConnecting:options:)`](../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md).
 
 ##### Modify Your App to Utilize the Application Delegate
 
-After you add the scene and application delegates to your app’s target, use the [`UIApplicationDelegateAdaptor`](https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor) property wrapper to instruct your app’s top-level object — the structure that adopts SwiftUI’s [`App`](https://developer.apple.com/documentation/swiftui/app) protocol — to initialize and manage an instance of the application delegate at runtime, as shown in the following example.
+After you add the scene and application delegates to your app’s target, use the [`UIApplicationDelegateAdaptor`](../SwiftUI/uiapplicationdelegateadaptor.md) property wrapper to instruct your app’s top-level object — the structure that adopts SwiftUI’s [`App`](../SwiftUI/app.md) protocol — to initialize and manage an instance of the application delegate at runtime, as shown in the following example.
 
 ```swift
 @main

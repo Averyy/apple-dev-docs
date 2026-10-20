@@ -1,7 +1,8 @@
 # UIAccessibilityContainerType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the type of content in a data-based container.
 
@@ -19,40 +20,45 @@ Constants that indicate the type of content in a data-based container.
 enum UIAccessibilityContainerType
 ```
 
+```c
+enum UIAccessibilityContainerType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIAccessibilityContainerType.none](uiaccessibilitycontainertype/none.md)
+- [UIAccessibilityContainerType.none](./uiaccessibilitycontainertype/none.md)
   No additional data.
-- [UIAccessibilityContainerType.dataTable](uiaccessibilitycontainertype/datatable.md)
+- [UIAccessibilityContainerType.dataTable](./uiaccessibilitycontainertype/datatable.md)
   A table that contains structured data.
-- [UIAccessibilityContainerType.list](uiaccessibilitycontainertype/list.md)
+- [UIAccessibilityContainerType.list](./uiaccessibilitycontainertype/list.md)
   A list of data.
-- [UIAccessibilityContainerType.landmark](uiaccessibilitycontainertype/landmark.md)
+- [UIAccessibilityContainerType.landmark](./uiaccessibilitycontainertype/landmark.md)
   Landmark data.
-- [UIAccessibilityContainerType.semanticGroup](uiaccessibilitycontainertype/semanticgroup.md)
+- [UIAccessibilityContainerType.semanticGroup](./uiaccessibilitycontainertype/semanticgroup.md)
   A semantic group of data.
 ### Useful links
-- [Accessibility design for Mac Catalyst](../accessibility/accessibility_design_for_mac_catalyst.md)
+- [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
 ### Initializers
-- [init?(rawValue: Int)](uiaccessibilitycontainertype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiaccessibilitycontainertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol UIAccessibilityContainerDataTable](uiaccessibilitycontainerdatatable.md)
+### Containers
+- [protocol UIAccessibilityContainerDataTable](./uiaccessibilitycontainerdatatable.md)
   Methods that convey information about the contents of a table.
-- [protocol UIAccessibilityContainerDataTableCell](uiaccessibilitycontainerdatatablecell.md)
+- [protocol UIAccessibilityContainerDataTableCell](./uiaccessibilitycontainerdatatablecell.md)
   Methods that provide the location of a cell in a table.
 
 

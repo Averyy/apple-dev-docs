@@ -1,7 +1,8 @@
 # dropFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func dropFirst(_ k: Int) -> DropFirstSequence<Base>
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 
 ---

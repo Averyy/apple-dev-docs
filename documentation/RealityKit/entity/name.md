@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the entity.
 
@@ -11,7 +12,7 @@ The name of the entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ The name of the entity.
 
 #### Discussion
 
-You can find an entity by name in a scene by calling the scene’s [`findEntity(named:)`](scene/findentity(named:).md) method. Or you can recursively search among the children of a given entity by calling the entity’s [`findEntity(named:)`](entity/findentity(named:).md) method.
+You can find an entity by name in a scene by calling the scene’s [`findEntity(named:)`](../scene/findentity%28named%29.md) method. Or you can recursively search among the children of a given entity by calling the entity’s [`findEntity(named:)`](./findentity%28named%29.md) method.
 
 Entity names are not guaranteed to be unique. When you search by name, these methods return the first entity encountered with the given name.
 
 ## See Also
 
-- [var scene: Scene?](entity/scene.md)
+### Inspecting an entity
+- [var scene: Scene?](./scene.md)
   The scene that owns the entity.
-- [func findEntity(named: String) -> Entity?](entity/findentity(named:).md)
+- [func findEntity(named: String) -> Entity?](./findentity%28named%29.md)
   Recursively searches all descendant entities for one with the given name.
-- [var debugDescription: String](entity/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A human readable description of the entity.
 
 

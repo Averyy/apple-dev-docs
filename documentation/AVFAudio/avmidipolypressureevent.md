@@ -1,7 +1,8 @@
 # AVMIDIPolyPressureEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a MIDI poly or key pressure event.
 
@@ -19,40 +20,45 @@ An object that represents a MIDI poly or key pressure event.
 class AVMIDIPolyPressureEvent
 ```
 
+```objc
+@interface AVMIDIPolyPressureEvent : AVMIDIChannelEvent
+```
+
 ## Topics
 
 ### Creating a poly pressure event
-- [init(channel: UInt32, key: UInt32, pressure: UInt32)](avmidipolypressureevent/init(channel:key:pressure:).md)
+- [init(channel: UInt32, key: UInt32, pressure: UInt32)](./avmidipolypressureevent/init%28channel,key,pressure%29.md)
   Creates an event with a channel, MIDI key number, and a key pressure value.
 ### Configuring a poly pressure event
-- [var key: UInt32](avmidipolypressureevent/key.md)
+- [var key: UInt32](./avmidipolypressureevent/key.md)
   The MIDI key number.
-- [var pressure: UInt32](avmidipolypressureevent/pressure.md)
+- [var pressure: UInt32](./avmidipolypressureevent/pressure.md)
   The poly pressure value for the requested key.
 
 ## Relationships
 
 ### Inherits From
-- [AVMIDIChannelEvent](avmidichannelevent.md)
+- [AVMIDIChannelEvent](./avmidichannelevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMIDIChannelEvent](avmidichannelevent.md)
+### Handling MIDI channel events
+- [class AVMIDIChannelEvent](./avmidichannelevent.md)
   A base class for all MIDI messages that operate on a single MIDI channel.
-- [class AVMIDIChannelPressureEvent](avmidichannelpressureevent.md)
+- [class AVMIDIChannelPressureEvent](./avmidichannelpressureevent.md)
   An object that represents a MIDI channel pressure message.
-- [class AVMIDIProgramChangeEvent](avmidiprogramchangeevent.md)
+- [class AVMIDIProgramChangeEvent](./avmidiprogramchangeevent.md)
   An object that represents a MIDI program or patch change message.
-- [class AVMIDIPitchBendEvent](avmidipitchbendevent.md)
+- [class AVMIDIPitchBendEvent](./avmidipitchbendevent.md)
   An object that represents a MIDI pitch bend message.
-- [class AVMIDIControlChangeEvent](avmidicontrolchangeevent.md)
+- [class AVMIDIControlChangeEvent](./avmidicontrolchangeevent.md)
   An object that represents a MIDI control change message.
 
 

@@ -1,12 +1,13 @@
 # ABRemoveRecordsError
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The records could not be removed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The records could not be removed.
 var ABRemoveRecordsError: Int { get }
 ```
 
+```c
+ABRemoveRecordsError
+```
+
 ## See Also
 
-- [var ABAddRecordsError: Int](abaddrecordserror.md)
+### Constants
+- [var ABAddRecordsError: Int](./abaddrecordserror.md)
   The records could not be added.
-- [var ABPropertyValueValidationError: Int](abpropertyvaluevalidationerror.md)
+- [var ABPropertyValueValidationError: Int](./abpropertyvaluevalidationerror.md)
   The property value is not valid.
-- [var ABPropertyUnsupportedBySourceError: Int](abpropertyunsupportedbysourceerror.md)
+- [var ABPropertyUnsupportedBySourceError: Int](./abpropertyunsupportedbysourceerror.md)
   The property is not supported by the source.
-- [var ABPropertyReadOnlyError: Int](abpropertyreadonlyerror.md)
+- [var ABPropertyReadOnlyError: Int](./abpropertyreadonlyerror.md)
   The property is read-only.
 
 

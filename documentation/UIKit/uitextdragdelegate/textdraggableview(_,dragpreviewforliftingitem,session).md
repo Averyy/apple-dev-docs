@@ -1,7 +1,8 @@
 # textDraggableView(_:dragPreviewForLiftingItem:session:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the preview to show during the lift animation that happens when a user begins to drag an item from a text view.
 
@@ -17,6 +18,10 @@ Asks the delegate for the preview to show during the lift animation that happens
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, dragPreviewForLiftingItem item: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?
 ```
 
+```objc
+- (UITargetedDragPreview *) textDraggableView:(UIView<UITextDraggable> *) textDraggableView dragPreviewForLiftingItem:(UIDragItem *) item session:(id<UIDragSession>) session;
+```
+
 #### Return Value
 
 A targeted drag preview to show during the lift animation, or `nil` to show the default preview.
@@ -25,7 +30,7 @@ A targeted drag preview to show during the lift animation, or `nil` to show the 
 
 You implement this method when you want to show a nondefault preview during the lift animation. If you return `nil`, the system shows default preview.
 
-> **Note**:  This method is not called when the [`suggestedItems`](uitextdragrequest/suggesteditems.md) array for the text drag request contains the drag item.
+> **Note**:  This method is not called when the [`suggestedItems`](../uitextdragrequest/suggesteditems.md) array for the text drag request contains the drag item.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # CGPDFOperatorTableSetCallback(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a callback function for a PDF operator.
 
@@ -10,7 +11,7 @@ Sets a callback function for a PDF operator.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Sets a callback function for a PDF operator.
 func CGPDFOperatorTableSetCallback(_ table: CGPDFOperatorTableRef, _ name: UnsafePointer<CChar>, _ callback: CGPDFOperatorCallback)
 ```
 
+```c
+extern void CGPDFOperatorTableSetCallback(CGPDFOperatorTableRef table, const char *name, CGPDFOperatorCallback callback);
+```
+
 #### Discussion
 
-You call the function [`CGPDFOperatorTableSetCallback(_:_:_:)`](cgpdfoperatortablesetcallback(_:_:_:).md) for each PDF operator for which you want to provide a callback. See Appendix A in the *PDF Reference, Second Edition*, version 1.3, Adobe Systems Incorporated for a summary of PDF operators.
+You call the function [`CGPDFOperatorTableSetCallback(_:_:_:)`](./cgpdfoperatortablesetcallback%28_,_,_%29.md) for each PDF operator for which you want to provide a callback. See Appendix A in the *PDF Reference, Second Edition*, version 1.3, Adobe Systems Incorporated for a summary of PDF operators.
 
 ## Parameters
 

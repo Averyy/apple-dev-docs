@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new encryption context from the specified encrypted stream.
 
@@ -11,7 +12,7 @@ Returns a new encryption context from the specified encrypted stream.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -24,9 +25,9 @@ init?(from stream: ArchiveByteStream)
 
 Use this function to either reopen an encrypted stream for writing or open an encrypted stream for reading. After you open the encryption context, query the archive properties and insert the credentials necessary to unlock and sign the stream.
 
-In the case of a signed stream, if you’ve set a private signing key with [`AEAContextSetSigningPrivateKey`](aeacontextsetsigningprivatekey.md) the context signs the stream on close.
+In the case of a signed stream, if you’ve set a private signing key with [`AEAContextSetSigningPrivateKey`](../aeacontextsetsigningprivatekey.md) the context signs the stream on close.
 
-If you haven’t set a private key, the context still requires a public key, as it’s tied to the stream. After you close the encryption stream, you can pass the private signing key to the context by calling the stream-signing function [`AEAStreamSign`](aeastreamsign.md).
+If you haven’t set a private key, the context still requires a public key, as it’s tied to the stream. After you close the encryption stream, you can pass the private signing key to the context by calling the stream-signing function [`AEAStreamSign`](../aeastreamsign.md).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ If you haven’t set a private key, the context still requires a public key, as 
 
 ## See Also
 
-- [init(profile: ArchiveEncryptionContext.Profile, compressionAlgorithm: ArchiveCompression, compressionBlockSize: Int)](archiveencryptioncontext/init(profile:compressionalgorithm:compressionblocksize:).md)
+### Creating an archive encryption context
+- [init(profile: ArchiveEncryptionContext.Profile, compressionAlgorithm: ArchiveCompression, compressionBlockSize: Int)](./init%28profile,compressionalgorithm,compressionblocksize%29.md)
   Returns a new encryption context from the specified profile, compression algorithm, and block size.
 
 

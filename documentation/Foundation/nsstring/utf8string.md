@@ -1,7 +1,8 @@
 # utf8String
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A null-terminated UTF8 representation of the string.
 
@@ -20,15 +21,20 @@ A null-terminated UTF8 representation of the string.
 var utf8String: UnsafePointer<CChar>? { get }
 ```
 
+```objc
+@property (readonly, nullable) const char * UTF8String;
+```
+
 #### Discussion
 
 This C string is a pointer to a structure inside the string object, which may have a lifetime shorter than the string object and will certainly not have a longer lifetime. Therefore, you should copy the C string if it needs to be stored outside of the memory context in which you use this property.
 
 ## See Also
 
-- [func cString(using: UInt) -> UnsafePointer<CChar>?](nsstring/cstring(using:).md)
+### Getting C Strings
+- [func cString(using: UInt) -> UnsafePointer<CChar>?](./cstring%28using%29.md)
   Returns a representation of the string as a C string using a given encoding.
-- [func getCString(UnsafeMutablePointer<CChar>, maxLength: Int, encoding: UInt) -> Bool](nsstring/getcstring(_:maxlength:encoding:).md)
+- [func getCString(UnsafeMutablePointer<CChar>, maxLength: Int, encoding: UInt) -> Bool](./getcstring%28_,maxlength,encoding%29.md)
   Converts the string to a given encoding and stores it in a buffer.
 
 

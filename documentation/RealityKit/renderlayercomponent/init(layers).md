@@ -1,7 +1,8 @@
 # init(layers:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer component with the specified layers.
 
@@ -25,7 +26,8 @@ init(layers: RenderLayer.Set)
 
 ## See Also
 
-- [init(layer: RenderLayer)](renderlayercomponent/init(layer:).md)
+### Creating a component
+- [init(layer: RenderLayer)](./init%28layer%29.md)
   Creates a layer component with a single layer.
 
 

@@ -1,14 +1,15 @@
 # DEVICE_SPECIFIC_PARAMETER
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt8 DEVICE_SPECIFIC_PARAMETER;
 ```
 

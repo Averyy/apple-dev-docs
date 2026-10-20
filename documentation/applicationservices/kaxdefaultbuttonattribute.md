@@ -1,7 +1,8 @@
 # kAXDefaultButtonAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXDefaultButtonAttribute: String { get }
+```
+
+```c
+#define kAXDefaultButtonAttribute
 ```
 
 #### Discussion

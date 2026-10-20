@@ -1,7 +1,8 @@
 # errSSLInappropriateFallback
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Inappropriate fallback.
 
@@ -18,6 +19,10 @@ Inappropriate fallback.
 
 ```swift
 var errSSLInappropriateFallback: OSStatus { get }
+```
+
+```c
+errSSLInappropriateFallback
 ```
 
 

@@ -1,7 +1,8 @@
 # reducedAccuracy
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total time spent tracking the current location at reduced accuracy.
 

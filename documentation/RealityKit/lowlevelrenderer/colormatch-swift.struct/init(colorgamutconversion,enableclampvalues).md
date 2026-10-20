@@ -1,7 +1,8 @@
 # init(colorGamutConversion:enableClampValues:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color match using an explicit gamut conversion matrix.
 
@@ -24,7 +25,8 @@ init(colorGamutConversion: simd_half3x3 = matrix_identity_half3x3, enableClampVa
 
 ## See Also
 
-- [init(workingColorSpace: CGColorSpace, targetColorSpace: CGColorSpace) throws(LowLevelRendererError)](lowlevelrenderer/colormatch-swift.struct/init(workingcolorspace:targetcolorspace:).md)
+### Creating a color match
+- [init(workingColorSpace: CGColorSpace, targetColorSpace: CGColorSpace) throws(LowLevelRendererError)](./init%28workingcolorspace,targetcolorspace%29.md)
   Creates a color match from a working color space and a target display color space.
 
 

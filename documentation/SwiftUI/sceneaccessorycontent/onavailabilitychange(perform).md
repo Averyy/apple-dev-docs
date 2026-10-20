@@ -1,7 +1,8 @@
 # onAvailabilityChange(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a callback for observing the availability of `self`.
 

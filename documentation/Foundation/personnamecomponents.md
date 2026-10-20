@@ -1,7 +1,8 @@
 # PersonNameComponents
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The separate parts of a person’s name, allowing locale-aware formatting.
 
@@ -23,74 +24,75 @@ struct PersonNameComponents
 ## Topics
 
 ### Creating Person Name Components
-- [init()](personnamecomponents/init.md)
+- [init()](./personnamecomponents/init%28%29.md)
   Initializes a new person name components structure.
 ### Accessing Person Name Components
-- [var namePrefix: String?](personnamecomponents/nameprefix.md)
+- [var namePrefix: String?](./personnamecomponents/nameprefix.md)
   The portion of a name’s full form of address that precedes the name itself.
-- [var givenName: String?](personnamecomponents/givenname.md)
+- [var givenName: String?](./personnamecomponents/givenname.md)
   Name bestowed upon an individual to differentiate them from other members of a group that share a family name.
-- [var middleName: String?](personnamecomponents/middlename.md)
+- [var middleName: String?](./personnamecomponents/middlename.md)
   Secondary name bestowed upon an individual to differentiate them from others that have the same given name.
-- [var familyName: String?](personnamecomponents/familyname.md)
+- [var familyName: String?](./personnamecomponents/familyname.md)
   Name bestowed upon an individual to denote membership in a group or family.
-- [var nameSuffix: String?](personnamecomponents/namesuffix.md)
+- [var nameSuffix: String?](./personnamecomponents/namesuffix.md)
   The portion of a name’s full form of address that follows the name itself.
-- [var nickname: String?](personnamecomponents/nickname.md)
+- [var nickname: String?](./personnamecomponents/nickname.md)
   Name substituted for the purposes of familiarity.
-- [var phoneticRepresentation: PersonNameComponents?](personnamecomponents/phoneticrepresentation.md)
+- [var phoneticRepresentation: PersonNameComponents?](./personnamecomponents/phoneticrepresentation.md)
   The phonetic representation name components of the receiver.
 ### Formatting Person Name Components
-- [func formatted() -> String](personnamecomponents/formatted.md)
+- [func formatted() -> String](./personnamecomponents/formatted%28%29.md)
   Generates a locale-aware string representation of an instance of person name components using the default format style.
-- [func formatted<S>(S) -> S.FormatOutput](personnamecomponents/formatted(_:).md)
+- [func formatted<S>(S) -> S.FormatOutput](./personnamecomponents/formatted%28_%29.md)
   Generates a locale-aware string representation of an instance of person name components using the provided format style.
-- [PersonNameComponents.FormatStyle](personnamecomponents/formatstyle.md)
+- [PersonNameComponents.FormatStyle](./personnamecomponents/formatstyle.md)
   A type used to format a person’s name with a style appropriate for the given locale.
 ### Using Reference Types
-- [class NSPersonNameComponents](nspersonnamecomponents.md)
+- [class NSPersonNameComponents](./nspersonnamecomponents.md)
   An object that manages the separate parts of a person’s name to allow locale-aware formatting.
 ### Structures
-- [PersonNameComponents.AttributedStyle](personnamecomponents/attributedstyle.md)
-- [PersonNameComponents.ParseStrategy](personnamecomponents/parsestrategy.md)
+- [PersonNameComponents.AttributedStyle](./personnamecomponents/attributedstyle.md)
+- [PersonNameComponents.ParseStrategy](./personnamecomponents/parsestrategy.md)
 ### Initializers
-- [init(String) throws](personnamecomponents/init(_:).md)
+- [init(String) throws](./personnamecomponents/init%28_%29.md)
   Creates a person name components object from a given string.
-- [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
+- [init<S>(S.ParseInput, strategy: S) throws](./personnamecomponents/init%28_,strategy%29.md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
-- [init(namePrefix: String?, givenName: String?, middleName: String?, familyName: String?, nameSuffix: String?, nickname: String?, phoneticRepresentation: PersonNameComponents?)](personnamecomponents/init(nameprefix:givenname:middlename:familyname:namesuffix:nickname:phoneticrepresentation:).md)
+- [init(namePrefix: String?, givenName: String?, middleName: String?, familyName: String?, nameSuffix: String?, nickname: String?, phoneticRepresentation: PersonNameComponents?)](./personnamecomponents/init%28nameprefix,givenname,middlename,familyname,namesuffix,nickname,phoneticrepresentation%29.md)
 ### Type Aliases
-- [PersonNameComponents.Specification](personnamecomponents/specification.md)
-- [PersonNameComponents.UnwrappedType](personnamecomponents/unwrappedtype.md)
-- [PersonNameComponents.ValueType](personnamecomponents/valuetype.md)
+- [PersonNameComponents.Specification](./personnamecomponents/specification.md)
+- [PersonNameComponents.UnwrappedType](./personnamecomponents/unwrappedtype.md)
+- [PersonNameComponents.ValueType](./personnamecomponents/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](personnamecomponents/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./personnamecomponents/defaultresolverspecification.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomLocalizedStringResourceConvertible](customlocalizedstringresourceconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [DisplayRepresentable](../appintents/displayrepresentable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [InstanceDisplayRepresentable](../appintents/instancedisplayrepresentable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](../appintents/typedisplayrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomLocalizedStringResourceConvertible](./customlocalizedstringresourceconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [DisplayRepresentable](../AppIntents/displayrepresentable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [InstanceDisplayRepresentable](../AppIntents/instancedisplayrepresentable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](../AppIntents/typedisplayrepresentable.md)
 
 ## See Also
 
-- [class PersonNameComponentsFormatter](personnamecomponentsformatter.md)
+### Names
+- [class PersonNameComponentsFormatter](./personnamecomponentsformatter.md)
   A formatter that provides localized representations of the components of a person’s name.
 
 

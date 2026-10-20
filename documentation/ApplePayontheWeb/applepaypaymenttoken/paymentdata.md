@@ -1,7 +1,8 @@
 # paymentData
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object containing the encrypted payment data.
 
@@ -11,7 +12,7 @@ An object containing the encrypted payment data.
 
 ## Declaration
 
-```swift
+```
 JSON paymentData;
 ```
 
@@ -19,13 +20,14 @@ JSON paymentData;
 
 This data is used by your e-commerce back-end system, which decrypts it and submits it to your payment processor.
 
-For the format of the payment data, see [`Payment token format reference`](https://developer.apple.com/documentation/passkit/payment-token-format-reference).
+For the format of the payment data, see [Payment token format reference](../../PassKit/payment-token-format-reference.md).
 
 ## See Also
 
-- [paymentMethod](applepaypaymenttoken/paymentmethod.md)
+### Payment Token Properties
+- [paymentMethod](./paymentmethod.md)
   Information about the card used in the transaction.
-- [transactionIdentifier](applepaypaymenttoken/transactionidentifier.md)
+- [transactionIdentifier](./transactionidentifier.md)
   A unique identifier for this payment.
 
 

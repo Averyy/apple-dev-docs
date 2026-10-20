@@ -1,7 +1,8 @@
 # dci_P3
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,12 +21,13 @@ static let dci_P3: CMFormatDescription.Extensions.Value.ColorPrimaries
 
 ## See Also
 
-- [static let ebu_3213: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/ebu_3213.md)
-- [static let itu_R_2020: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/itu_r_2020.md)
-- [static let itu_R_709_2: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/itu_r_709_2.md)
-- [static let p22: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/p22.md)
-- [static let p3_D65: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/p3_d65.md)
-- [static let smpte_C: CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries/smpte_c.md)
+### Color Primaries
+- [static let ebu_3213: CMFormatDescription.Extensions.Value.ColorPrimaries](./ebu_3213.md)
+- [static let itu_R_2020: CMFormatDescription.Extensions.Value.ColorPrimaries](./itu_r_2020.md)
+- [static let itu_R_709_2: CMFormatDescription.Extensions.Value.ColorPrimaries](./itu_r_709_2.md)
+- [static let p22: CMFormatDescription.Extensions.Value.ColorPrimaries](./p22.md)
+- [static let p3_D65: CMFormatDescription.Extensions.Value.ColorPrimaries](./p3_d65.md)
+- [static let smpte_C: CMFormatDescription.Extensions.Value.ColorPrimaries](./smpte_c.md)
 
 
 ---

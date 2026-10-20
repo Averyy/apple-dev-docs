@@ -1,7 +1,8 @@
 # NetworkVPNIPSecOnDemandObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about how the system controls on-demand VPN.
 
@@ -14,30 +15,33 @@ Specifies details about how the system controls on-demand VPN.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSecOnDemandObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNIPSecRulesElementObject](networkvpnipsecruleselementobject.md)
+- [object NetworkVPNIPSecRulesElementObject](./networkvpnipsecruleselementobject.md)
   An array of dictionaries defining On Demand Rules.
 
 ## Properties
 
 - `Enabled` (boolean): If `true`, enables VPN On Demand.
+
+  **Default**: `false`
 - `Rules` ([NetworkVPNIPSecRulesElementObject]): An array of dictionaries defining On Demand Rules.
 
 ## See Also
 
-- [object NetworkVPNIPSecAuthenticationObject](networkvpnipsecauthenticationobject.md)
+### Objects
+- [object NetworkVPNIPSecAuthenticationObject](./networkvpnipsecauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIPSecDNSObject](networkvpnipsecdnsobject.md)
+- [object NetworkVPNIPSecDNSObject](./networkvpnipsecdnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIPSecIdleObject](networkvpnipsecidleobject.md)
+- [object NetworkVPNIPSecIdleObject](./networkvpnipsecidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIPSecProxiesObject](networkvpnipsecproxiesobject.md)
+- [object NetworkVPNIPSecProxiesObject](./networkvpnipsecproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
 
 

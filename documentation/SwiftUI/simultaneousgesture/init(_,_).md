@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gesture with two gestures that can receive updates or succeed independently of each other.
 
@@ -28,9 +29,10 @@ init(_ first: First, _ second: Second)
 
 ## See Also
 
-- [var first: First](simultaneousgesture/first.md)
+### Creating the gesture
+- [var first: First](./first.md)
   The first of two gestures that can happen simultaneously.
-- [var second: Second](simultaneousgesture/second.md)
+- [var second: Second](./second.md)
   The second of two gestures that can happen simultaneously.
 
 

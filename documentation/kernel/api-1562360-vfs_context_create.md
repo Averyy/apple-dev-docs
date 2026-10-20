@@ -1,7 +1,8 @@
 # vfs_context_create
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Create a new vfs_context_t with appropriate references held.
 
@@ -10,11 +11,11 @@ Create a new vfs_context_t with appropriate references held.
 
 ## Declaration
 
-```swift
+```c
 vfs_context_t vfs_context_create(vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 The new context, or NULL in the event of failure.
 

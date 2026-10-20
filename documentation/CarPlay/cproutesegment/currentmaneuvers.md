@@ -1,7 +1,8 @@
 # currentManeuvers
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 currentManeuvers is an array of CPManeuver objects, describing the current maneuvers.
 
@@ -14,6 +15,10 @@ currentManeuvers is an array of CPManeuver objects, describing the current maneu
 
 ```swift
 var currentManeuvers: [CPManeuver] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPManeuver *> * currentManeuvers;
 ```
 
 

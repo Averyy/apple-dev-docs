@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](mlshapedarray/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a shaped array from a decoder.
 
 

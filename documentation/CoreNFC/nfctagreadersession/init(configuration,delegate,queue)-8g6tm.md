@@ -1,7 +1,8 @@
 # init(configuration:delegate:queue:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 init(configuration: NFCTagReaderSessionConfiguration, delegate: any __NFCTagReaderSessionDelegate, queue: dispatch_queue_t)
+```
+
+```objc
+- (instancetype) initWithConfiguration:(NFCTagReaderSessionConfiguration *) configuration delegate:(id<NFCTagReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
 #### Return Value

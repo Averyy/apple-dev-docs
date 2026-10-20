@@ -1,7 +1,8 @@
 # HKMetadataKeyDigitalSignature
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A digital signature that can be used to validate the origin of the HealthKit object.
 
@@ -19,9 +20,13 @@ A digital signature that can be used to validate the origin of the HealthKit obj
 let HKMetadataKeyDigitalSignature: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyDigitalSignature;
+```
+
 ## Mentions
 
-- [Adding Digital Signatures](adding-digital-signatures.md)
+- [Adding Digital Signatures](./adding-digital-signatures.md)
 
 #### Discussion
 
@@ -29,21 +34,22 @@ The digital signature is intended to provide data integrity for sample data prod
 
 ## See Also
 
-- [let HKMetadataKeyDeviceSerialNumber: String](hkmetadatakeydeviceserialnumber.md)
+### Device Information Keys
+- [let HKMetadataKeyDeviceSerialNumber: String](./hkmetadatakeydeviceserialnumber.md)
   The key for the serial number of the device that generated the data.
-- [let HKMetadataKeyUDIDeviceIdentifier: String](hkmetadatakeyudideviceidentifier.md)
+- [let HKMetadataKeyUDIDeviceIdentifier: String](./hkmetadatakeyudideviceidentifier.md)
   The device identifier portion of a device’s UDI (unique device identifier).
-- [let HKMetadataKeyUDIProductionIdentifier: String](hkmetadatakeyudiproductionidentifier.md)
+- [let HKMetadataKeyUDIProductionIdentifier: String](./hkmetadatakeyudiproductionidentifier.md)
   The production identifier portion of a device’s UDI (unique device identifier).
-- [let HKMetadataKeyDeviceName: String](hkmetadatakeydevicename.md)
+- [let HKMetadataKeyDeviceName: String](./hkmetadatakeydevicename.md)
   The name of the device that took this reading.
-- [let HKMetadataKeyDeviceManufacturerName: String](hkmetadatakeydevicemanufacturername.md)
+- [let HKMetadataKeyDeviceManufacturerName: String](./hkmetadatakeydevicemanufacturername.md)
   The name of the manufacturer of the device that took this reading.
-- [let HKMetadataKeyDevicePlacementSide: String](hkmetadatakeydeviceplacementside.md)
+- [let HKMetadataKeyDevicePlacementSide: String](./hkmetadatakeydeviceplacementside.md)
   The key for metadata indicating the placement of the device that measured a sample.
-- [enum HKDevicePlacementSide](hkdeviceplacementside.md)
+- [enum HKDevicePlacementSide](./hkdeviceplacementside.md)
   Values that indicate the placement of the device that measured a sample.
-- [let HKMetadataKeyAppleDeviceCalibrated: String](hkmetadatakeyappledevicecalibrated.md)
+- [let HKMetadataKeyAppleDeviceCalibrated: String](./hkmetadatakeyappledevicecalibrated.md)
   The key for metadata indicating whether the system had data from a sufficient amount of calibrated sensors when recording the sample.
 
 

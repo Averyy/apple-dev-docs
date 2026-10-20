@@ -1,18 +1,19 @@
 # CTFrame
 
 **Framework**: Core Text  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A frame.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,80 +21,85 @@ A frame.
 class CTFrame
 ```
 
+```c
+typedef const struct __CTFrame * CTFrameRef;
+```
+
 #### Overview
 
-A frame contains multiple lines of text. The frame object is the output resulting from the text-framing process performed by a [`CTFramesetter`](ctframesetter.md) object.
+A frame contains multiple lines of text. The frame object is the output resulting from the text-framing process performed by a [`CTFramesetter`](./ctframesetter.md) object.
 
 You can draw the entire text frame directly into the current graphic context. The frame object contains an array of line objects that can be retrieved for individual rendering or to get glyph information.
 
 ## Topics
 
 ### Getting Frame Data
-- [func CTFrameGetStringRange(CTFrame) -> CFRange](ctframegetstringrange(_:).md)
+- [func CTFrameGetStringRange(CTFrame) -> CFRange](./ctframegetstringrange%28_%29.md)
   Returns the range of characters originally requested to fill the frame.
-- [func CTFrameGetVisibleStringRange(CTFrame) -> CFRange](ctframegetvisiblestringrange(_:).md)
+- [func CTFrameGetVisibleStringRange(CTFrame) -> CFRange](./ctframegetvisiblestringrange%28_%29.md)
   Returns the range of characters that actually fit in the frame.
-- [func CTFrameGetPath(CTFrame) -> CGPath](ctframegetpath(_:).md)
+- [func CTFrameGetPath(CTFrame) -> CGPath](./ctframegetpath%28_%29.md)
   Returns the path used to create the frame.
-- [func CTFrameGetFrameAttributes(CTFrame) -> CFDictionary?](ctframegetframeattributes(_:).md)
+- [func CTFrameGetFrameAttributes(CTFrame) -> CFDictionary?](./ctframegetframeattributes%28_%29.md)
   Returns the frame attributes used to create the frame.
 ### Getting Lines
-- [func CTFrameGetLines(CTFrame) -> CFArray](ctframegetlines(_:).md)
+- [func CTFrameGetLines(CTFrame) -> CFArray](./ctframegetlines%28_%29.md)
   Returns an array of lines stored in the frame.
-- [func CTFrameGetLineOrigins(CTFrame, CFRange, UnsafeMutablePointer<CGPoint>)](ctframegetlineorigins(_:_:_:).md)
+- [func CTFrameGetLineOrigins(CTFrame, CFRange, UnsafeMutablePointer<CGPoint>)](./ctframegetlineorigins%28_,_,_%29.md)
   Copies a range of line origins for a frame.
 ### Drawing the Frame
-- [func CTFrameDraw(CTFrame, CGContext)](ctframedraw(_:_:).md)
+- [func CTFrameDraw(CTFrame, CGContext)](./ctframedraw%28_,_%29.md)
   Draws an entire frame into a context.
 ### Getting the Type Identifier
-- [func CTFrameGetTypeID() -> CFTypeID](ctframegettypeid().md)
+- [func CTFrameGetTypeID() -> CFTypeID](./ctframegettypeid%28%29.md)
   Returns the type identifier for the CTFrame opaque type.
 ### Data Types
-- [enum CTFramePathFillRule](ctframepathfillrule.md)
+- [enum CTFramePathFillRule](./ctframepathfillrule.md)
   These constants specify the fill rule used by a frame
 ### Constants
-- [enum CTFrameProgression](ctframeprogression.md)
+- [enum CTFrameProgression](./ctframeprogression.md)
   Constants that specify frame progression types.
-- [let kCTFrameProgressionAttributeName: CFString](kctframeprogressionattributename.md)
+- [let kCTFrameProgressionAttributeName: CFString](./kctframeprogressionattributename.md)
   Specifies progression for a frame.
-- [let kCTFramePathFillRuleAttributeName: CFString](kctframepathfillruleattributename.md)
+- [let kCTFramePathFillRuleAttributeName: CFString](./kctframepathfillruleattributename.md)
   The key used to specify the fill rule for a frame.
-- [let kCTFramePathWidthAttributeName: CFString](kctframepathwidthattributename.md)
+- [let kCTFramePathWidthAttributeName: CFString](./kctframepathwidthattributename.md)
   The key used to specify the frame width.
-- [let kCTFrameClippingPathsAttributeName: CFString](kctframeclippingpathsattributename.md)
+- [let kCTFrameClippingPathsAttributeName: CFString](./kctframeclippingpathsattributename.md)
   Specifies array of paths to clip frame.
-- [let kCTFramePathClippingPathAttributeName: CFString](kctframepathclippingpathattributename.md)
+- [let kCTFramePathClippingPathAttributeName: CFString](./kctframepathclippingpathattributename.md)
   Specifies clipping path.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class CTFont](ctfont.md)
+### Opaque Types
+- [class CTFont](./ctfont.md)
   A font object.
-- [class CTFontCollection](ctfontcollection.md)
+- [class CTFontCollection](./ctfontcollection.md)
   A font collection.
-- [class CTFontDescriptor](ctfontdescriptor.md)
+- [class CTFontDescriptor](./ctfontdescriptor.md)
   A font descriptor.
-- [class CTFramesetter](ctframesetter.md)
+- [class CTFramesetter](./ctframesetter.md)
   Generate text frames.
-- [class CTGlyphInfo](ctglyphinfo.md)
+- [class CTGlyphInfo](./ctglyphinfo.md)
   Override a font’s specified mapping from Unicode to the glyph ID.
-- [class CTLine](ctline.md)
+- [class CTLine](./ctline.md)
   A line of text.
-- [class CTParagraphStyle](ctparagraphstyle.md)
+- [class CTParagraphStyle](./ctparagraphstyle.md)
   Paragraph or ruler attributes in an attributed string.
-- [class CTRun](ctrun.md)
+- [class CTRun](./ctrun.md)
   A glyph run.
-- [class CTRunDelegate](ctrundelegate.md)
+- [class CTRunDelegate](./ctrundelegate.md)
   A run delegate.
-- [class CTTextTab](cttexttab.md)
+- [class CTTextTab](./cttexttab.md)
   A tab in a paragraph style, storing an alignment type and location.
-- [class CTTypesetter](cttypesetter.md)
+- [class CTTypesetter](./cttypesetter.md)
   A typesetter which performs line layout.
 
 

@@ -1,7 +1,8 @@
 # ephemeral
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A session configuration that uses no persistent storage for caches, cookies, or credentials.
 
@@ -20,13 +21,17 @@ A session configuration that uses no persistent storage for caches, cookies, or 
 class var ephemeral: URLSessionConfiguration { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSURLSessionConfiguration * ephemeralSessionConfiguration;
+```
+
 #### Discussion
 
-An ephemeral session configuration object is similar to a default session configuration (see [`default`](urlsessionconfiguration/default.md)), except that the corresponding session object doesn’t store caches, credential stores, or any session-related data to disk. Instead, session-related data is stored in RAM. The only time an ephemeral session writes data to disk is when you tell it to write the contents of a URL to a file.
+An ephemeral session configuration object is similar to a default session configuration (see [`default`](./default.md)), except that the corresponding session object doesn’t store caches, credential stores, or any session-related data to disk. Instead, session-related data is stored in RAM. The only time an ephemeral session writes data to disk is when you tell it to write the contents of a URL to a file.
 
 > **Note**:  It is possible to customize a default session configuration object to obtain the same behavior (or any portion thereof) provided by an ephemeral session configuration object, but the use of this method is more convenient.
 
-##### Privacy and Performance Considerations
+##### Privacy and performance considerations
 
 The main advantage to using ephemeral sessions is privacy. By not writing potentially sensitive data to disk, you make it less likely that the data will be intercepted and used later. For this reason, ephemeral sessions are ideal for private browsing modes in web browsers and other similar situations.
 
@@ -36,15 +41,17 @@ When your app invalidates the session, all ephemeral session data is purged auto
 
 ## See Also
 
-- [var isDiscretionary: Bool](urlsessionconfiguration/isdiscretionary.md)
+### Related Documentation
+- [var isDiscretionary: Bool](./isdiscretionary.md)
   A Boolean value that determines whether background tasks can be scheduled at the discretion of the system for optimal performance.
-- [class var `default`: URLSessionConfiguration](urlsessionconfiguration/default.md)
+### Creating a session configuration object
+- [class var `default`: URLSessionConfiguration](./default.md)
   A default session configuration object.
-- [class func background(withIdentifier: String) -> URLSessionConfiguration](urlsessionconfiguration/background(withidentifier:).md)
+- [class func background(withIdentifier: String) -> URLSessionConfiguration](./background%28withidentifier%29.md)
   Creates a session configuration object that allows HTTP and HTTPS uploads or downloads to be performed in the background.
-- [init()](urlsessionconfiguration/init.md)
+- [init()](./init%28%29.md)
   Creates an empty session configuration.
-- [class func new() -> Self](urlsessionconfiguration/new.md)
+- [class func new() -> Self](./new%28%29.md)
   Creates an empty session configuration.
 
 

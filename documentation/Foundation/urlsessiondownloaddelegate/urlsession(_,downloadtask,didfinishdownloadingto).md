@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a download task has finished downloading.
@@ -21,16 +22,22 @@ Tells the delegate that a download task has finished downloading.
 func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session downloadTask:(NSURLSessionDownloadTask *) downloadTask didFinishDownloadingToURL:(NSURL *) location;
+```
+
 ## Mentions
 
-- [Downloading files from websites](downloading-files-from-websites.md)
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files from websites](../downloading-files-from-websites.md)
+- [Downloading files in the background](../downloading-files-in-the-background.md)
 
 ## Parameters
 
 - `session`: The session containing the download task that finished.
 - `downloadTask`: The download task that finished.
-- `location`: A file URL for the temporary file. Because the file is temporary, you must either open the file for reading or move it to a permanent location in your app’s sandbox container directory before returning from this delegate method. If you choose to open the file for reading, you should do the actual reading in another thread to avoid blocking the delegate queue.
+- `location`: A file URL for the temporary file. Because the file is temporary, you must either open the file for reading or move it to a permanent location in your app’s sandbox container directory before returning from this delegate method.
+
+  If you choose to open the file for reading, you should do the actual reading in another thread to avoid blocking the delegate queue.
 
 
 ---

@@ -1,7 +1,8 @@
 # middlePIP
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The middle finger’s proximal interphalangeal (PIP) joint.
 
@@ -19,13 +20,18 @@ The middle finger’s proximal interphalangeal (PIP) joint.
 static let middlePIP: VNHumanHandPoseObservation.JointName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameMiddlePIP;
+```
+
 ## See Also
 
-- [static let middleTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middletip.md)
+### Middle
+- [static let middleTip: VNHumanHandPoseObservation.JointName](./middletip.md)
   The tip of the middle finger.
-- [static let middleDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middledip.md)
+- [static let middleDIP: VNHumanHandPoseObservation.JointName](./middledip.md)
   The middle finger’s distal interphalangeal (DIP) joint.
-- [static let middleMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middlemcp.md)
+- [static let middleMCP: VNHumanHandPoseObservation.JointName](./middlemcp.md)
   The middle finger’s metacarpophalangeal (MCP) joint.
 
 

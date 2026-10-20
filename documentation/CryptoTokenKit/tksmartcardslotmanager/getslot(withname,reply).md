@@ -1,7 +1,8 @@
 # getSlot(withName:reply:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously calls a block with a Smart Card reader slot for a specified name.
 
@@ -17,19 +18,30 @@ Asynchronously calls a block with a Smart Card reader slot for a specified name.
 ## Declaration
 
 ```swift
+func getSlot(withName name: String, reply: @escaping @Sendable (TKSmartCardSlot?) -> Void)
+```
+
+```swift
 func getSlot(withName name: String) async -> TKSmartCardSlot?
+```
+
+```objc
+- (void) getSlotWithName:(NSString *) name reply:(void (^)(TKSmartCardSlot *slot)) reply;
 ```
 
 ## Parameters
 
 - `name`: The name of the Smart Card reader slot.
-- `reply`: - **slot**: The Smart Card reader slot corresponding to the specified name. If no slot exists with that name, this argument is `nil`.
+- `reply`:
+
+  - **slot**: The Smart Card reader slot corresponding to the specified name. If no slot exists with that name, this argument is `nil`.
 
 ## See Also
 
-- [var slotNames: [String]](tksmartcardslotmanager/slotnames.md)
+### Accessing Smart Card Slots
+- [var slotNames: [String]](./slotnames.md)
   A list of identifiers for all the Smart Card reader slots available to the system.
-- [func slotNamed(String) -> TKSmartCardSlot?](tksmartcardslotmanager/slotnamed(_:).md)
+- [func slotNamed(String) -> TKSmartCardSlot?](./slotnamed%28_%29.md)
   Returns the Smart Card slot with a given name.
 
 

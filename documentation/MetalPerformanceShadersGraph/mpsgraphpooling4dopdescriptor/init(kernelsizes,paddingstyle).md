@@ -1,7 +1,8 @@
 # init(kernelSizes:paddingStyle:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 4D pooling descriptor with default values.
 
@@ -17,6 +18,10 @@ Creates a 4D pooling descriptor with default values.
 
 ```swift
 convenience init?(kernelSizes: [NSNumber], paddingStyle: MPSGraphPaddingStyle)
+```
+
+```objc
++ (instancetype) descriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes paddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
 #### Return Value

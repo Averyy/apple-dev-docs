@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer from the given floating-point value, rounding toward zero.
 
@@ -44,14 +45,15 @@ let z = UInt(-21.5)
 
 ## See Also
 
-- [init<T>(T)](int/init(_:)-6gt9z.md)
-- [init(Double)](int/init(_:)-8vbwo.md)
+### Converting Floating-Point Values
+- [init<T>(T)](./init%28_%29-6gt9z.md)
+- [init(Double)](./init%28_%29-8vbwo.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(Float16)](int/init(_:)-3huv0.md)
+- [init(Float16)](./init%28_%29-3huv0.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(Float80)](int/init(_:)-66i0w.md)
+- [init(Float80)](./init%28_%29-66i0w.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(CGFloat)](int/init(_:)-5q6q5.md)
+- [init(CGFloat)](./init%28_%29-5q6q5.md)
 
 
 ---

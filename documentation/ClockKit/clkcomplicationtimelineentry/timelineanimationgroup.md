@@ -1,17 +1,24 @@
 # timelineAnimationGroup
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation group to which the entry belongs.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var timelineAnimationGroup: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * timelineAnimationGroup;
 ```
 
 #### Discussion
@@ -22,9 +29,10 @@ The group identifier is used only to determine whether transition animations sho
 
 ## See Also
 
-- [var date: Date](clkcomplicationtimelineentry/date.md)
+### Setting the Entry Values
+- [var date: Date](./date.md)
   The time at which to display the entry.
-- [var complicationTemplate: CLKComplicationTemplate](clkcomplicationtimelineentry/complicationtemplate.md)
+- [var complicationTemplate: CLKComplicationTemplate](./complicationtemplate.md)
   The template containing the data to display in your complication.
 
 

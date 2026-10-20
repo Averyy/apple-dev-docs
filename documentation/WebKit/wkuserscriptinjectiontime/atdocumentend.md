@@ -1,7 +1,8 @@
 # WKUserScriptInjectionTime.atDocumentEnd
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant to inject the script after the document finishes loading, but before loading any other subresources.
 
@@ -18,9 +19,14 @@ A constant to inject the script after the document finishes loading, but before 
 case atDocumentEnd
 ```
 
+```c
+WKUserScriptInjectionTimeAtDocumentEnd
+```
+
 ## See Also
 
-- [WKUserScriptInjectionTime.atDocumentStart](wkuserscriptinjectiontime/atdocumentstart.md)
+### Script-Injection Times
+- [WKUserScriptInjectionTime.atDocumentStart](./atdocumentstart.md)
   A constant to inject the script after the creation of the webpage’s document element, but before loading any other content.
 
 

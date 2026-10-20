@@ -1,7 +1,8 @@
 # WeatherChange
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that informs how certain measurable weather aspects are expected to change relative to before.
 
@@ -23,30 +24,30 @@ struct WeatherChange
 ## Topics
 
 ### Instance Properties
-- [var date: Date](weatherchange/date.md)
+- [var date: Date](./weatherchange/date.md)
   The date at which this change record becomes effective.
-- [var dayPrecipitationAmount: WeatherChange.Direction](weatherchange/dayprecipitationamount.md)
+- [var dayPrecipitationAmount: WeatherChange.Direction](./weatherchange/dayprecipitationamount.md)
   How the forecasted precipitation amount for this day, during daylight hours, compares to that of before.
-- [var highTemperature: WeatherChange.Direction](weatherchange/hightemperature.md)
+- [var highTemperature: WeatherChange.Direction](./weatherchange/hightemperature.md)
   How the high temperature for this day compares to that of before.
-- [var lowTemperature: WeatherChange.Direction](weatherchange/lowtemperature.md)
+- [var lowTemperature: WeatherChange.Direction](./weatherchange/lowtemperature.md)
   How the low temperature for this day compares to that of before.
-- [var nightPrecipitationAmount: WeatherChange.Direction](weatherchange/nightprecipitationamount.md)
+- [var nightPrecipitationAmount: WeatherChange.Direction](./weatherchange/nightprecipitationamount.md)
   How the forecasted precipitation amount, during the night of this day, compares to that of before.
 ### Enumerations
-- [WeatherChange.Direction](weatherchange/direction.md)
+- [WeatherChange.Direction](./weatherchange/direction.md)
   An enum that specifies the direction in which a measurable aspect of the weather is expected to change.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

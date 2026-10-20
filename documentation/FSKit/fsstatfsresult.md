@@ -1,7 +1,8 @@
 # FSStatFSResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type used to report a volume’s statistics.
 
@@ -14,70 +15,75 @@ A type used to report a volume’s statistics.
 class FSStatFSResult
 ```
 
+```objc
+@interface FSStatFSResult : NSObject
+```
+
 #### Overview
 
 The names of this type’s properties match those in the `statfs` structure in `statfs(2)`, which reports these values for an FSKit file system. All numeric properties default to `0`. Override these values, unless a given property has no meaningful value to provide.
 
-> **Note**: Available space, free space, total space, and used space have properties to express their values either as a number of blocks or a number of bytes. Your module may supply both of these values by setting both the relevant block or byte property. Alternatively, a module may set only one of the two properties. When you do this, FSKit calculates the matching value based on [`blockSize`](fsstatfsresult/blocksize.md).
+> **Note**: Available space, free space, total space, and used space have properties to express their values either as a number of blocks or a number of bytes. Your module may supply both of these values by setting both the relevant block or byte property. Alternatively, a module may set only one of the two properties. When you do this, FSKit calculates the matching value based on [`blockSize`](./fsstatfsresult/blocksize.md).
 
-For the read-only [`fileSystemTypeName`](fsstatfsresult/filesystemtypename.md), set this value with the designated initializer.
+For the read-only [`fileSystemTypeName`](./fsstatfsresult/filesystemtypename.md), set this value with the designated initializer.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](fsstatfsresult/init(coder:).md)
-- [init(fileSystemTypeName: String)](fsstatfsresult/init(filesystemtypename:).md)
+- [init?(coder: NSCoder)](./fsstatfsresult/init%28coder%29.md)
+- [init(fileSystemTypeName: String)](./fsstatfsresult/init%28filesystemtypename%29.md)
   Creates an statistics result instance, using the given file system type name.
 ### Instance Properties
-- [var availableBlocks: UInt64](fsstatfsresult/availableblocks.md)
+- [var availableBlocks: UInt64](./fsstatfsresult/availableblocks.md)
   A property for the number of free blocks available to a non-superuser on the volume.
-- [var availableBytes: UInt64](fsstatfsresult/availablebytes.md)
+- [var availableBytes: UInt64](./fsstatfsresult/availablebytes.md)
   A property for the amount of space available to users, in bytes, in the volume.
-- [var blockSize: Int](fsstatfsresult/blocksize.md)
+- [var blockSize: Int](./fsstatfsresult/blocksize.md)
   A property for the volume’s block size, in bytes.
-- [var fileSystemSubType: Int](fsstatfsresult/filesystemsubtype.md)
+- [var fileSystemSubType: Int](./fsstatfsresult/filesystemsubtype.md)
   A property for the file system’s subtype or flavor.
-- [var fileSystemTypeName: String](fsstatfsresult/filesystemtypename.md)
+- [var fileSystemTypeName: String](./fsstatfsresult/filesystemtypename.md)
   A property for the file system type name.
-- [var freeBlocks: UInt64](fsstatfsresult/freeblocks.md)
+- [var freeBlocks: UInt64](./fsstatfsresult/freeblocks.md)
   A property for the number of free blocks in the volume.
-- [var freeBytes: UInt64](fsstatfsresult/freebytes.md)
+- [var freeBytes: UInt64](./fsstatfsresult/freebytes.md)
   A property for the amount of free space, in bytes, in the volume.
-- [var freeFiles: UInt64](fsstatfsresult/freefiles.md)
+- [var freeFiles: UInt64](./fsstatfsresult/freefiles.md)
   A property for the total number of free file slots in the volume.
-- [var ioSize: Int](fsstatfsresult/iosize.md)
+- [var ioSize: Int](./fsstatfsresult/iosize.md)
   A property for the optimal block size with which to perform I/O.
-- [var totalBlocks: UInt64](fsstatfsresult/totalblocks.md)
+- [var totalBlocks: UInt64](./fsstatfsresult/totalblocks.md)
   A property for the volume’s total data block count.
-- [var totalBytes: UInt64](fsstatfsresult/totalbytes.md)
+- [var totalBytes: UInt64](./fsstatfsresult/totalbytes.md)
   A property for the total size, in bytes, of the volume.
-- [var totalFiles: UInt64](fsstatfsresult/totalfiles.md)
+- [var totalFiles: UInt64](./fsstatfsresult/totalfiles.md)
   A property for the total number of file slots in the volume,
-- [var usedBlocks: UInt64](fsstatfsresult/usedblocks.md)
+- [var usedBlocks: UInt64](./fsstatfsresult/usedblocks.md)
   A property for the number of used blocks in the volume.
-- [var usedBytes: UInt64](fsstatfsresult/usedbytes.md)
+- [var usedBytes: UInt64](./fsstatfsresult/usedbytes.md)
   A property for the amount of used space, in bytes, in the volume.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/handler/supportedvolumecapabilities.md)
-- [FSVolume.SupportedCapabilities](fsvolume/supportedcapabilities.md)
+### Inspecting required volume properties
+- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](./fsvolume/handler/supportedvolumecapabilities.md)
+- [FSVolume.SupportedCapabilities](./fsvolume/supportedcapabilities.md)
   A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
-- [var volumeStatistics: FSStatFSResult](fsvolume/handler/volumestatistics.md)
+- [var volumeStatistics: FSStatFSResult](./fsvolume/handler/volumestatistics.md)
   A property that provides up-to-date statistics of the volume.
 
 

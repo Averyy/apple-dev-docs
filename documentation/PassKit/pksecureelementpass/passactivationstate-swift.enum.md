@@ -1,7 +1,8 @@
 # PKSecureElementPass.PassActivationState
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The activation states of a Secure Element pass.
 
@@ -19,35 +20,40 @@ The activation states of a Secure Element pass.
 enum PassActivationState
 ```
 
+```c
+enum PKSecureElementPassActivationState : NSInteger;
+```
+
 ## Topics
 
 ### Activation states
-- [PKSecureElementPass.PassActivationState.requiresActivation](pksecureelementpass/passactivationstate-swift.enum/requiresactivation.md)
+- [PKSecureElementPass.PassActivationState.requiresActivation](./passactivationstate-swift.enum/requiresactivation.md)
   The pass requires activation by the issuer.
-- [PKSecureElementPass.PassActivationState.activating](pksecureelementpass/passactivationstate-swift.enum/activating.md)
+- [PKSecureElementPass.PassActivationState.activating](./passactivationstate-swift.enum/activating.md)
   The pass isn’t ready to use, but activation is in progress
-- [PKSecureElementPass.PassActivationState.activated](pksecureelementpass/passactivationstate-swift.enum/activated.md)
+- [PKSecureElementPass.PassActivationState.activated](./passactivationstate-swift.enum/activated.md)
   The pass is active and ready to use.
-- [PKSecureElementPass.PassActivationState.suspended](pksecureelementpass/passactivationstate-swift.enum/suspended.md)
+- [PKSecureElementPass.PassActivationState.suspended](./passactivationstate-swift.enum/suspended.md)
   The user or the issuer has suspended the pass and it isn’t available to use.
-- [PKSecureElementPass.PassActivationState.deactivated](pksecureelementpass/passactivationstate-swift.enum/deactivated.md)
+- [PKSecureElementPass.PassActivationState.deactivated](./passactivationstate-swift.enum/deactivated.md)
   The issuer has deactivated the pass.
 ### Initializers
-- [init?(rawValue: Int)](pksecureelementpass/passactivationstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./passactivationstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var passActivationState: PKSecureElementPass.PassActivationState](pksecureelementpass/passactivationstate-swift.property.md)
+### Getting the activation state
+- [var passActivationState: PKSecureElementPass.PassActivationState](./passactivationstate-swift.property.md)
   The activation state of the pass.
 
 

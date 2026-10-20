@@ -1,12 +1,13 @@
 # ABPropertyUnsupportedBySourceError
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The property is not supported by the source.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The property is not supported by the source.
 var ABPropertyUnsupportedBySourceError: Int { get }
 ```
 
+```c
+ABPropertyUnsupportedBySourceError
+```
+
 ## See Also
 
-- [var ABAddRecordsError: Int](abaddrecordserror.md)
+### Constants
+- [var ABAddRecordsError: Int](./abaddrecordserror.md)
   The records could not be added.
-- [var ABRemoveRecordsError: Int](abremoverecordserror.md)
+- [var ABRemoveRecordsError: Int](./abremoverecordserror.md)
   The records could not be removed.
-- [var ABPropertyValueValidationError: Int](abpropertyvaluevalidationerror.md)
+- [var ABPropertyValueValidationError: Int](./abpropertyvaluevalidationerror.md)
   The property value is not valid.
-- [var ABPropertyReadOnlyError: Int](abpropertyreadonlyerror.md)
+- [var ABPropertyReadOnlyError: Int](./abpropertyreadonlyerror.md)
   The property is read-only.
 
 

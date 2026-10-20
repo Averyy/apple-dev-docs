@@ -1,7 +1,8 @@
 # value
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 var value: Int32
+```
+
+```c
+int value;
 ```
 
 

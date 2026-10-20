@@ -1,7 +1,8 @@
 # source
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame that requested the navigation.
 

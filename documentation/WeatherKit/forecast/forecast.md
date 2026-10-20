@@ -1,7 +1,8 @@
 # forecast
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The forecast collection.
 
@@ -22,13 +23,14 @@ var forecast: [Element]
 
 ## See Also
 
-- [var endIndex: Forecast<Element>.Index](forecast/endindex.md)
+### Getting the properties
+- [var endIndex: Forecast<Element>.Index](./endindex.md)
   The forecast end index.
-- [var metadata: WeatherMetadata](forecast/metadata.md)
+- [var metadata: WeatherMetadata](./metadata.md)
   Descriptive information about the forecast data.
-- [var startIndex: Forecast<Element>.Index](forecast/startindex.md)
+- [var startIndex: Forecast<Element>.Index](./startindex.md)
   The forecast start index.
-- [var summary: String](forecast/summary.md)
+- [var summary: String](./summary.md)
   A convenient localized description of the minute forecast.
 
 

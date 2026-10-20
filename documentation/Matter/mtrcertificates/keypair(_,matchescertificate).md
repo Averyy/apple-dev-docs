@@ -1,7 +1,8 @@
 # keypair(_:matchesCertificate:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 class func keypair(_ keypair: any MTRKeypair, matchesCertificate certificate: Data) -> Bool
+```
+
+```objc
++ (BOOL) keypair:(id<MTRKeypair>) keypair matchesCertificate:(NSData *) certificate;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.

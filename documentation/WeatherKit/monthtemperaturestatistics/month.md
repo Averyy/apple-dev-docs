@@ -1,7 +1,8 @@
 # month
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The month of the year, in UTC.
 

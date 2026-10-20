@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attributes that were read from the commissionee.  This will contain the following, if they are available:
 
@@ -18,6 +19,10 @@ Attributes that were read from the commissionee.  This will contain the followin
 
 ```swift
 var attributes: [MTRAttributePath : [String : Any]]? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDictionary<MTRAttributePath *,NSDictionary<NSString *,id> *> * attributes;
 ```
 
 #### Discussion

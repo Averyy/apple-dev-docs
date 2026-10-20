@@ -1,7 +1,8 @@
 # MDLTransformOp
 
 **Framework**: Model I/O  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 11.0+
@@ -17,26 +18,30 @@
 protocol MDLTransformOp
 ```
 
+```objc
+@protocol MDLTransformOp
+```
+
 ## Topics
 
 ### Instance Properties
-- [var name: String](mdltransformop/name.md)
+- [var name: String](./mdltransformop/name.md)
 ### Instance Methods
-- [func double4x4(atTime: TimeInterval) -> matrix_double4x4](mdltransformop/double4x4(attime:).md)
-- [func float4x4(atTime: TimeInterval) -> matrix_float4x4](mdltransformop/float4x4(attime:).md)
-- [func isInverseOp() -> Bool](mdltransformop/isinverseop.md)
+- [func double4x4(atTime: TimeInterval) -> matrix_double4x4](./mdltransformop/double4x4%28attime%29.md)
+- [func float4x4(atTime: TimeInterval) -> matrix_float4x4](./mdltransformop/float4x4%28attime%29.md)
+- [func isInverseOp() -> Bool](./mdltransformop/isinverseop%28%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [MDLTransformMatrixOp](mdltransformmatrixop.md)
-- [MDLTransformOrientOp](mdltransformorientop.md)
-- [MDLTransformRotateOp](mdltransformrotateop.md)
-- [MDLTransformRotateXOp](mdltransformrotatexop.md)
-- [MDLTransformRotateYOp](mdltransformrotateyop.md)
-- [MDLTransformRotateZOp](mdltransformrotatezop.md)
-- [MDLTransformScaleOp](mdltransformscaleop.md)
-- [MDLTransformTranslateOp](mdltransformtranslateop.md)
+- [MDLTransformMatrixOp](./mdltransformmatrixop.md)
+- [MDLTransformOrientOp](./mdltransformorientop.md)
+- [MDLTransformRotateOp](./mdltransformrotateop.md)
+- [MDLTransformRotateXOp](./mdltransformrotatexop.md)
+- [MDLTransformRotateYOp](./mdltransformrotateyop.md)
+- [MDLTransformRotateZOp](./mdltransformrotatezop.md)
+- [MDLTransformScaleOp](./mdltransformscaleop.md)
+- [MDLTransformTranslateOp](./mdltransformtranslateop.md)
 
 
 ---

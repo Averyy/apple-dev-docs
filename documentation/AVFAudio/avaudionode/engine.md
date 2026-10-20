@@ -1,7 +1,8 @@
 # engine
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio engine that manages the node, if any.
 
@@ -18,6 +19,10 @@ The audio engine that manages the node, if any.
 
 ```swift
 var engine: AVAudioEngine? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) AVAudioEngine * engine;
 ```
 
 

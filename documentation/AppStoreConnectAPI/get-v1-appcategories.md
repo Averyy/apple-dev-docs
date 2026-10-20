@@ -1,7 +1,8 @@
 # List app categories
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List all categories on the App Store, including the category and subcategory hierarchy.
 
@@ -10,7 +11,7 @@ List all categories on the App Store, including the category and subcategory hie
 
 #### Discussion
 
-Use this endpoint to retrieve the list of available App Store categories and subcategories. Associate an app with categories using the [`Modify an app info`](patch-v1-appinfos-_id_.md) endpoint.
+Use this endpoint to retrieve the list of available App Store categories and subcategories. Associate an app with categories using the [`Modify an app info`](./patch-v1-appinfos-_id_.md) endpoint.
 
 The first example retrieves the full category and subcategory hierarchy in one request. The second example retrieves just the top-level categories for macOS apps.
 
@@ -18,7 +19,7 @@ The first example retrieves the full category and subcategory hierarchy in one r
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/appCategories?include=parent&limit=100
 ```
 
@@ -1547,11 +1548,11 @@ GET https://api.appstoreconnect.apple.com/v1/appCategories?include=parent&limit=
 }
 ```
 
-##### Get All Top Level Categories That Apply to Macos Apps
+##### Get All Top-Level Categories that Apply to macOS Apps
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appCategories?exists[parent]=false&filter[platforms]=MAC_OS
 ```
 
@@ -2176,18 +2177,39 @@ https://api.appstoreconnect.apple.com/v1/appCategories?exists[parent]=false&filt
 
 ## Parameters
 
+### Query Parameters
+
 - `exists[parent]` (boolean): Filter the returned app categories to include only those that have a parent category (true) or are top-level categories (false).
 - `fields[appCategories]` ([string]): Additional fields to include for each App Categories resource returned by the response.
+
+  **Allowed Values**: `platforms`, `subcategories`, `parent`
 - `filter[platforms]` ([string]): Filter the returned app categories by platform.
+
+  **Allowed Values**: `IOS`, `MAC_OS`, `TV_OS`, `VISION_OS`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `subcategories`, `parent`
 - `limit` (integer): The maximum number of app category resources to return.
+
+  **Maximum**: `200`
 - `limit[subcategories]` (integer): The maximum number of related subcategory resources to return.
+
+  **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`AppCategoriesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all subcategories for an app category](get-v1-appcategories-_id_-subcategories.md)
+### Listing Categories and Subcategories
+- [List all subcategories for an app category](./get-v1-appcategories-_id_-subcategories.md)
   List all App Store subcategories that belong to a specific category.
-- [List subcategory IDs for an app category](get-v1-appcategories-_id_-relationships-subcategories.md)
+- [List subcategory IDs for an app category](./get-v1-appcategories-_id_-relationships-subcategories.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # XCUIScreenshot
 
 **Framework**: XCUIAutomation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A captured image of a screen, app, or UI element state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,9 +23,13 @@ A captured image of a screen, app, or UI element state.
 class XCUIScreenshot
 ```
 
+```objc
+@interface XCUIScreenshot : NSObject
+```
+
 #### Overview
 
-Screenshots capture the current UI state of classes that conform to the [`XCUIScreenshotProviding`](xcuiscreenshotproviding.md) protocol, such as [`XCUIScreen`](xcuiscreen.md) and [`XCUIElement`](xcuielement.md). Each screenshot contains an image representation of the captured UI at the point the screenshot was taken.
+Screenshots capture the current UI state of classes that conform to the [`XCUIScreenshotProviding`](./xcuiscreenshotproviding.md) protocol, such as [`XCUIScreen`](./xcuiscreen.md) and [`XCUIElement`](./xcuielement.md). Each screenshot contains an image representation of the captured UI at the point the screenshot was taken.
 
 The following code demonstrates taking screenshots of a screen and a UI element:
 
@@ -42,34 +47,35 @@ func testTakeScreenshots() {
 }
 ```
 
-If you use [`XCTest`](https://developer.apple.com/documentation/xctest) for your UI automation tests, you can attach a screenshot of your app’s UI to a test or activity to store it for later analysis. Create an attachment for a screenshot by calling the [`XCTAttachment`](https://developer.apple.com/documentation/xctest/xctattachment) initializer [`init(screenshot:)`](https://developer.apple.com/documentation/xctest/xctattachment/init(screenshot:)) or [`init(screenshot:quality:)`](https://developer.apple.com/documentation/xctest/xctattachment/init(screenshot:quality:)). Add the attachment to a test or activity by calling the [`XCTActivity`](https://developer.apple.com/documentation/xctest/xctactivity) method [`add(_:)`](https://developer.apple.com/documentation/xctest/xctactivity/add(_:)). For more information, see [`Adding Attachments to Tests, Activities, and Issues`](https://developer.apple.com/documentation/xctest/adding-attachments-to-tests-activities-and-issues).
+If you use [XCTest](../XCTest/XCTest.md) for your UI automation tests, you can attach a screenshot of your app’s UI to a test or activity to store it for later analysis. Create an attachment for a screenshot by calling the [`XCTAttachment`](../XCTest/xctattachment.md) initializer [`init(screenshot:)`](../XCTest/xctattachment/init%28screenshot%29.md) or [`init(screenshot:quality:)`](../XCTest/xctattachment/init%28screenshot,quality%29.md). Add the attachment to a test or activity by calling the [`XCTActivity`](../XCTest/xctactivity.md) method [`add(_:)`](../XCTest/xctactivity/add%28_%29.md). For more information, see [Adding Attachments to Tests, Activities, and Issues](../XCTest/adding-attachments-to-tests-activities-and-issues.md).
 
 ## Topics
 
 ### Screenshot representations
-- [var image: UIImage](xcuiscreenshot/image.md)
+- [var image: UIImage](./xcuiscreenshot/image.md)
   A representation of the screenshot as a platform-native image object.
-- [var pngRepresentation: Data](xcuiscreenshot/pngrepresentation.md)
+- [var pngRepresentation: Data](./xcuiscreenshot/pngrepresentation.md)
   A representation of the screenshot as PNG image data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class XCUIScreen](xcuiscreen.md)
+### Screenshots
+- [class XCUIScreen](./xcuiscreen.md)
   A physical screen attached to a device.
-- [protocol XCUIScreenshotProviding](xcuiscreenshotproviding.md)
+- [protocol XCUIScreenshotProviding](./xcuiscreenshotproviding.md)
   A type that can provide a screenshot of its current UI state.
 
 

@@ -1,7 +1,8 @@
 # allowsUserScriptExecution
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow user script execution during an assessment.
 
@@ -15,9 +16,13 @@ A Boolean value that indicates whether to allow user script execution during an 
 var allowsUserScriptExecution: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsUserScriptExecution;
+```
+
 #### Discussion
 
-User scripts, such as AppleScripts or Automator workflows, can automate tasks on the system. An assessment session disables user script execution by default, but you can allow it by setting [`allowsUserScriptExecution`](aeassessmentconfiguration/allowsuserscriptexecution.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+User scripts, such as AppleScripts or Automator workflows, can automate tasks on the system. An assessment session disables user script execution by default, but you can allow it by setting [`allowsUserScriptExecution`](./allowsuserscriptexecution.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 
 ---

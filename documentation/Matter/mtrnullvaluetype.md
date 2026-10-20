@@ -1,7 +1,8 @@
 # MTRNullValueType
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRNullValueType: String
+```
+
+```c
+extern NSString * const MTRNullValueType;
 ```
 
 

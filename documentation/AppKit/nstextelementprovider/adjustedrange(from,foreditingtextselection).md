@@ -1,7 +1,8 @@
 # adjustedRange(from:forEditingTextSelection:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method you implement if the location backing store requires manual adjustment after editing.
 
@@ -14,18 +15,23 @@ A method you implement if the location backing store requires manual adjustment 
 optional func adjustedRange(from textRange: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?
 ```
 
+```objc
+- (NSTextRange *) adjustedRangeFromRange:(NSTextRange *) textRange forEditingTextSelection:(BOOL) forEditingTextSelection;
+```
+
 #### Return Value
 
 When `textRange` is intersecting or following the current edited range, the method returns the range adjusted for the modification in the editing session. Returns `nil`, when no adjustment necessary.
 
 ## Parameters
 
-- `textRange`: An [`NSTextRange`](nstextrange.md) that the method adjusts.
+- `textRange`: An [`NSTextRange`](../nstextrange.md) that the method adjusts.
 - `forEditingTextSelection`: A Boolean value that indicates if `textRange` is for the text selection associated with the edit session.
 
 ## See Also
 
-- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](nstextelementprovider/offset(from:to:).md)
+### Adjusting the range of the text element
+- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](./offset%28from,to%29.md)
   Returns the offset between the two specified locations.
 
 

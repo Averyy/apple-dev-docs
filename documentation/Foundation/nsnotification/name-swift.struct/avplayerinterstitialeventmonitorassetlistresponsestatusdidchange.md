@@ -1,16 +1,17 @@
 # AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 16.4+
-- iPadOS 16.4+
-- Mac Catalyst 16.4+
-- macOS 13.3+
-- tvOS 16.4+
-- visionOS 1.0+
-- watchOS 9.4+
+- iOS 16.4+ - Deprecated in 17.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
+- iPadOS 16.4+ - Deprecated in 17.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
+- Mac Catalyst 16.4+ - Deprecated in 17.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
+- macOS 13.3+ - Deprecated in 14.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
+- tvOS 16.4+ - Deprecated in 17.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
+- watchOS 9.4+ - Deprecated in 10.0 (renamed: AVPlayerInterstitialEventMonitor.assetListResponseStatusDidChangeNotification)
 
 ## Declaration
 

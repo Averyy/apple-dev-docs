@@ -1,7 +1,8 @@
 # ampereHours
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The ampere hours unit of electric charge.
 
@@ -21,17 +22,22 @@ The ampere hours unit of electric charge.
 class var ampereHours: UnitElectricCharge { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitElectricCharge * ampereHours;
+```
+
 ## See Also
 
-- [class var coulombs: UnitElectricCharge](unitelectriccharge/coulombs.md)
+### Accessing Predefined Units
+- [class var coulombs: UnitElectricCharge](./coulombs.md)
   The coulombs unit of electric charge.
-- [class var megaampereHours: UnitElectricCharge](unitelectriccharge/megaamperehours.md)
+- [class var megaampereHours: UnitElectricCharge](./megaamperehours.md)
   The megaampere hours unit of electric charge.
-- [class var kiloampereHours: UnitElectricCharge](unitelectriccharge/kiloamperehours.md)
+- [class var kiloampereHours: UnitElectricCharge](./kiloamperehours.md)
   The kiloampere hours unit of electric charge.
-- [class var milliampereHours: UnitElectricCharge](unitelectriccharge/milliamperehours.md)
+- [class var milliampereHours: UnitElectricCharge](./milliamperehours.md)
   The milliampere hours unit of electric charge.
-- [class var microampereHours: UnitElectricCharge](unitelectriccharge/microamperehours.md)
+- [class var microampereHours: UnitElectricCharge](./microamperehours.md)
   The microampere hours unit of electric charge.
 
 

@@ -1,7 +1,8 @@
 # init(referenceObjects:trackingConfiguration:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object-tracking provider.
 

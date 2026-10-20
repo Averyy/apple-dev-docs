@@ -1,7 +1,8 @@
 # allowedMenuBarItems
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of menu bar items that should remain visible during an assessment.
 
@@ -15,11 +16,15 @@ The set of menu bar items that should remain visible during an assessment.
 var allowedMenuBarItems: Set<AEMenuBarItem>? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSSet<NSString *> * allowedMenuBarItems;
+```
+
 #### Discussion
 
-When [`allowsMenuBar`](aeassessmentconfiguration/allowsmenubar.md) is `true`, the menu bar is restricted to only the items specified in this set. If this property is `nil`, all menu bar items are allowed (unrestricted menu bar).
+When [`allowsMenuBar`](./allowsmenubar.md) is `true`, the menu bar is restricted to only the items specified in this set. If this property is `nil`, all menu bar items are allowed (unrestricted menu bar).
 
-> **Note**: This property only takes effect when [`allowsMenuBar`](aeassessmentconfiguration/allowsmenubar.md) is `true`.
+> **Note**: This property only takes effect when [`allowsMenuBar`](./allowsmenubar.md) is `true`.
 
 
 ---

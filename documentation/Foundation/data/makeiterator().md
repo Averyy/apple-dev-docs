@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the contents of the data.
 
@@ -26,9 +27,10 @@ The iterator will increment byte-by-byte.
 
 ## See Also
 
-- [struct Iterator](data/iterator.md)
+### Iterating Over Bytes
+- [struct Iterator](./iterator.md)
   An iterator that operates over the contents of data.
-- [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](data/enumeratebytes(_:).md)
+- [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](./enumeratebytes%28_%29.md)
   Enumerates the contents of the data’s buffer.
 
 

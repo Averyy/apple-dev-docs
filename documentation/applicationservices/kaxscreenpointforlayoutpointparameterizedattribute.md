@@ -1,7 +1,8 @@
 # kAXScreenPointForLayoutPointParameterizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXScreenPointForLayoutPointParameterizedAttribute: String { get }
+```
+
+```c
+#define kAXScreenPointForLayoutPointParameterizedAttribute
 ```
 
 

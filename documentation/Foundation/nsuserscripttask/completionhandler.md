@@ -1,9 +1,10 @@
 # NSUserScriptTask.CompletionHandler
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Implement this block to retrieve the error of the script executed by [`execute(completionHandler:)`](nsuserscripttask/execute(completionhandler:).md).
+Implement this block to retrieve the error of the script executed by [`execute(completionHandler:)`](./execute%28completionhandler%29.md).
 
 **Availability**:
 - macOS 10.0+
@@ -12,6 +13,10 @@ Implement this block to retrieve the error of the script executed by [`execute(c
 
 ```swift
 typealias CompletionHandler = @Sendable ((any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSError *) NSUserScriptTaskCompletionHandler;
 ```
 
 

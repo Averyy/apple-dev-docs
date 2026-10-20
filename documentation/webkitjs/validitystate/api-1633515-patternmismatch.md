@@ -1,7 +1,8 @@
 # patternMismatch
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 5.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 readonly attribute boolean patternMismatch;
 ```
 

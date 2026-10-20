@@ -1,17 +1,22 @@
 # nextKeyView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view object that follows the current view in the key view loop.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var nextKeyView: NSView? { get set }
+```
+
+```objc
+@property (assign, nullable) NSView * nextKeyView;
 ```
 
 #### Discussion
@@ -20,23 +25,25 @@ The value in this property is `nil` if there is no next view in the key view loo
 
 ## See Also
 
-- [func selectKeyView(following: NSView)](nswindow/selectkeyview(following:).md)
+### Related Documentation
+- [func selectKeyView(following: NSView)](../nswindow/selectkeyview%28following%29.md)
   Gives key view status to the view that follows the given view.
-- [func selectNextKeyView(Any?)](nswindow/selectnextkeyview(_:).md)
+- [func selectNextKeyView(Any?)](../nswindow/selectnextkeyview%28_%29.md)
   Searches for a candidate next key view and, if it finds one, tries to make it the first responder.
-- [func selectPreviousKeyView(Any?)](nswindow/selectpreviouskeyview(_:).md)
+- [func selectPreviousKeyView(Any?)](../nswindow/selectpreviouskeyview%28_%29.md)
   Searches for a candidate previous key view and, if it finds one, tries to make it the first responder.
-- [func selectKeyView(preceding: NSView)](nswindow/selectkeyview(preceding:).md)
+- [func selectKeyView(preceding: NSView)](../nswindow/selectkeyview%28preceding%29.md)
   Gives key view status to the view that precedes the given view.
-- [var canBecomeKeyView: Bool](nsview/canbecomekeyview.md)
+### Managing the Key-View Loop
+- [var canBecomeKeyView: Bool](./canbecomekeyview.md)
   A Boolean value indicating whether the view can become key view.
-- [var needsPanelToBecomeKey: Bool](nsview/needspaneltobecomekey.md)
+- [var needsPanelToBecomeKey: Bool](./needspaneltobecomekey.md)
   A Boolean value indicating whether the view needs its panel to become the key window before it can handle keyboard input and navigation.
-- [var nextValidKeyView: NSView?](nsview/nextvalidkeyview.md)
+- [var nextValidKeyView: NSView?](./nextvalidkeyview.md)
   The closest view object in the key view loop that follows the current view in the key view loop and accepts first responder status.
-- [var previousKeyView: NSView?](nsview/previouskeyview.md)
+- [var previousKeyView: NSView?](./previouskeyview.md)
   The view object preceding the current view in the key view loop.
-- [var previousValidKeyView: NSView?](nsview/previousvalidkeyview.md)
+- [var previousValidKeyView: NSView?](./previousvalidkeyview.md)
   The closest view object in the key view loop that precedes the current view and accepts first responder status.
 
 

@@ -1,12 +1,15 @@
 # init()
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty text provider.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use initializers that take parameters.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ Creates an empty text provider.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [class func new() -> Self](clktextprovider/new.md)
+### Creating Empty Text Providers
+- [class func new() -> Self](./new%28%29.md)
   Creates an empty text provider.
 
 

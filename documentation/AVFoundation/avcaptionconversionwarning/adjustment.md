@@ -1,7 +1,8 @@
 # adjustment
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A correction the converter makes when it converts a caption to a specific format.
 
@@ -17,19 +18,24 @@ A correction the converter makes when it converts a caption to a specific format
 var adjustment: AVCaptionConversionAdjustment? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVCaptionConversionAdjustment * adjustment;
+```
+
 #### Discussion
 
 If this value is `nil` and you perform the conversion without correcting the problem, the system doesn’t include captions that you indicate in the output media data.
 
 ## See Also
 
-- [var warningType: AVCaptionConversionWarning.WarningType](avcaptionconversionwarning/warningtype-swift.property.md)
+### Inspecting the warning
+- [var warningType: AVCaptionConversionWarning.WarningType](./warningtype-swift.property.md)
   A type that indicates the nature of the validation warning.
-- [var rangeOfCaptions: NSRange](avcaptionconversionwarning/rangeofcaptions.md)
+- [var rangeOfCaptions: NSRange](./rangeofcaptions.md)
   The range of the captions for which the system issued a warning.
-- [class AVCaptionConversionAdjustment](avcaptionconversionadjustment.md)
+- [class AVCaptionConversionAdjustment](../avcaptionconversionadjustment.md)
   An object that describes an adjustment to correct a problem found during validation of a caption conversion.
-- [AVCaptionConversionWarning.WarningType](avcaptionconversionwarning/warningtype-swift.struct.md)
+- [AVCaptionConversionWarning.WarningType](./warningtype-swift.struct.md)
   The type of a caption conversion warning.
 
 

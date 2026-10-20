@@ -1,7 +1,8 @@
 # exposureDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exposure duration for the still image.
 
@@ -17,9 +18,14 @@ The exposure duration for the still image.
 var exposureDuration: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime exposureDuration;
+```
+
 ## See Also
 
-- [var iso: Float](avcapturemanualexposurebracketedstillimagesettings/iso.md)
+### Getting manual exposure setting values
+- [var iso: Float](./iso.md)
   The ISO for the still image.
 
 

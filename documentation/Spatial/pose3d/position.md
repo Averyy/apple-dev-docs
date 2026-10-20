@@ -1,7 +1,8 @@
 # position
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pose’s position.
 
@@ -20,13 +21,18 @@ The pose’s position.
 var position: Point3D
 ```
 
+```c
+SPPoint3D position;
+```
+
 ## See Also
 
-- [var matrix: simd_double4x4](pose3d/matrix.md)
+### Inspecting a 3D pose’s properties
+- [var matrix: simd_double4x4](./matrix.md)
   The pose’s underlying matrix.
-- [var rotation: Rotation3D](pose3d/rotation.md)
+- [var rotation: Rotation3D](./rotation.md)
   The pose’s rotation.
-- [var inverse: Pose3D](pose3d/inverse.md)
+- [var inverse: Pose3D](./inverse.md)
   The pose’s inverse.
 
 

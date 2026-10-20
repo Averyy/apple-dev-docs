@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_NumberOfPendingFrames
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of pending frames in the compression session.
 
@@ -19,15 +20,20 @@ The number of pending frames in the compression session.
 let kVTCompressionPropertyKey_NumberOfPendingFrames: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_NumberOfPendingFrames;
+```
+
 #### Discussion
 
 This number may decrease asynchronously.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_PixelBufferPoolIsShared: CFString](kvtcompressionpropertykey_pixelbufferpoolisshared.md)
+### Buffers
+- [let kVTCompressionPropertyKey_PixelBufferPoolIsShared: CFString](./kvtcompressionpropertykey_pixelbufferpoolisshared.md)
   A Boolean value indicating whether the common pixel buffer pool is shared between the video encoder and the session client.
-- [let kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes: CFString](kvtcompressionpropertykey_videoencoderpixelbufferattributes.md)
+- [let kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes: CFString](./kvtcompressionpropertykey_videoencoderpixelbufferattributes.md)
   The video encoder’s pixel buffer attributes for the compression session.
 
 

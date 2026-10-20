@@ -1,14 +1,17 @@
 # NCWidgetDisplayMode.compact
 
 **Framework**: Notification Center  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current height of the widget is compact.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
+- iOS 10.0+ - Deprecated in 14.0
+- iPadOS 10.0+ - Deprecated in 14.0
+- Mac Catalyst 10.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -16,9 +19,14 @@ The current height of the widget is compact.
 case compact
 ```
 
+```c
+NCWidgetDisplayModeCompact
+```
+
 ## See Also
 
-- [NCWidgetDisplayMode.expanded](ncwidgetdisplaymode/expanded.md)
+### Constants
+- [NCWidgetDisplayMode.expanded](./expanded.md)
   The current height of the widget is expanded.
 
 

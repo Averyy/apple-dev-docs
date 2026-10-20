@@ -1,7 +1,8 @@
 # allowsWritingTools
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.2+
@@ -12,9 +13,14 @@
 var allowsWritingTools: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsWritingTools;
+```
+
 ## See Also
 
-- [var allowsWritingToolsAffordance: Bool](nstextfield/allowswritingtoolsaffordance.md)
+### Supporting Writing Tools
+- [var allowsWritingToolsAffordance: Bool](./allowswritingtoolsaffordance.md)
 
 
 ---

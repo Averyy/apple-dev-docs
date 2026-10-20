@@ -1,21 +1,26 @@
 # UIUserInterfaceIdiom.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified idiom.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case unspecified
+```
+
+```c
+UIUserInterfaceIdiomUnspecified
 ```
 
 #### Discussion
@@ -24,17 +29,18 @@ Used when an object has a trait collection, but it isn’t in an environment yet
 
 ## See Also
 
-- [UIUserInterfaceIdiom.phone](uiuserinterfaceidiom/phone.md)
+### Idioms
+- [UIUserInterfaceIdiom.phone](./phone.md)
   An interface designed for iPhone and iPod touch.
-- [UIUserInterfaceIdiom.pad](uiuserinterfaceidiom/pad.md)
+- [UIUserInterfaceIdiom.pad](./pad.md)
   An interface designed for iPad.
-- [UIUserInterfaceIdiom.tv](uiuserinterfaceidiom/tv.md)
+- [UIUserInterfaceIdiom.tv](./tv.md)
   An interface designed for tvOS and Apple TV.
-- [UIUserInterfaceIdiom.carPlay](uiuserinterfaceidiom/carplay.md)
+- [UIUserInterfaceIdiom.carPlay](./carplay.md)
   An interface designed for an in-car experience.
-- [UIUserInterfaceIdiom.mac](uiuserinterfaceidiom/mac.md)
+- [UIUserInterfaceIdiom.mac](./mac.md)
   An interface designed for the Mac.
-- [UIUserInterfaceIdiom.vision](uiuserinterfaceidiom/vision.md)
+- [UIUserInterfaceIdiom.vision](./vision.md)
   An interface designed for visionOS and Apple Vision Pro.
 
 

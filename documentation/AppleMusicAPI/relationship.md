@@ -1,7 +1,8 @@
 # Relationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A to-one or to-many relationship from one resource object to others.
 
@@ -10,7 +11,7 @@ A to-one or to-many relationship from one resource object to others.
 
 ## Declaration
 
-```swift
+```
 object Relationship
 ```
 
@@ -26,7 +27,7 @@ The rules that apply to the members of this object are:
 ## Topics
 
 ### Related Objects
-- [object Relationship.Meta](relationship/meta-data.dictionary.md)
+- [object Relationship.Meta](./relationship/meta-data.dictionary.md)
   Information about the request or response.
 
 ## Properties
@@ -38,7 +39,8 @@ The rules that apply to the members of this object are:
 
 ## See Also
 
-- [object Resource](resource.md)
+### Getting Resource and Relationship Information
+- [object Resource](./resource.md)
   A resource—such as an album, song, or playlist.
 
 

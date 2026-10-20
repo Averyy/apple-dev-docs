@@ -1,7 +1,8 @@
 # anyOrder(_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a group of expectations that must all be satisfied at the same sequential position, but can occur in any relative order.
 
@@ -22,11 +23,11 @@ static func anyOrder(_ expectations: [ToolExpectation]) -> ToolExpectation
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
 #### Discussion
 
-You can only use this method within the `ordered` array of a [`TrajectoryExpectation`](trajectoryexpectation.md).
+You can only use this method within the `ordered` array of a [`TrajectoryExpectation`](../trajectoryexpectation.md).
 
 ## Parameters
 

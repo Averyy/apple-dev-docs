@@ -1,7 +1,8 @@
 # executionBlocks
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blocks associated with the receiver.
 
@@ -20,15 +21,20 @@ The blocks associated with the receiver.
 var executionBlocks: [@Sendable () -> Void] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<void (^)(void)> * executionBlocks;
+```
+
 #### Discussion
 
-The blocks in this array are copies of those originally added using the [`addExecutionBlock(_:)`](blockoperation/addexecutionblock(_:).md) method.
+The blocks in this array are copies of those originally added using the [`addExecutionBlock(_:)`](./addexecutionblock%28_%29.md) method.
 
 ## See Also
 
-- [convenience init(block: () -> Void)](blockoperation/init(block:).md)
+### Managing the Blocks in the Operation
+- [convenience init(block: () -> Void)](./init%28block%29.md)
   Creates and returns an `NSBlockOperation` object and adds the specified block to it.
-- [func addExecutionBlock(() -> Void)](blockoperation/addexecutionblock(_:).md)
+- [func addExecutionBlock(() -> Void)](./addexecutionblock%28_%29.md)
   Adds the specified block to the receiver’s list of blocks to perform.
 
 

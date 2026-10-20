@@ -1,7 +1,8 @@
 # readEndpointInformation
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Read device type information from all endpoints during commissioning. Defaults to NO.
 
@@ -18,6 +19,10 @@ Read device type information from all endpoints during commissioning. Defaults t
 
 ```swift
 var readEndpointInformation: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL readEndpointInformation;
 ```
 
 

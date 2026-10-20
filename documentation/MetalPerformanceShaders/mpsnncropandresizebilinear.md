@@ -1,7 +1,8 @@
 # MPSNNCropAndResizeBilinear
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A cropping and bilinear resizing filter.
 
@@ -19,31 +20,35 @@ A cropping and bilinear resizing filter.
 class MPSNNCropAndResizeBilinear
 ```
 
+```objc
+@interface MPSNNCropAndResizeBilinear : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnncropandresizebilinear/init(coder:device:).md)
-- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, numberOfRegions: Int, regions: UnsafePointer<MPSRegion>)](mpsnncropandresizebilinear/init(device:resizewidth:resizeheight:numberofregions:regions:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnncropandresizebilinear/init%28coder,device%29.md)
+- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, numberOfRegions: Int, regions: UnsafePointer<MPSRegion>)](./mpsnncropandresizebilinear/init%28device,resizewidth,resizeheight,numberofregions,regions%29.md)
 ### Instance Properties
-- [var numberOfRegions: Int](mpsnncropandresizebilinear/numberofregions.md)
-- [var regions: UnsafePointer<MPSRegion>](mpsnncropandresizebilinear/regions.md)
-- [var resizeHeight: Int](mpsnncropandresizebilinear/resizeheight.md)
-- [var resizeWidth: Int](mpsnncropandresizebilinear/resizewidth.md)
+- [var numberOfRegions: Int](./mpsnncropandresizebilinear/numberofregions.md)
+- [var regions: UnsafePointer<MPSRegion>](./mpsnncropandresizebilinear/regions.md)
+- [var resizeHeight: Int](./mpsnncropandresizebilinear/resizeheight.md)
+- [var resizeWidth: Int](./mpsnncropandresizebilinear/resizewidth.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

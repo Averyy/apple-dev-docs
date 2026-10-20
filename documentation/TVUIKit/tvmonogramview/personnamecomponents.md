@@ -1,12 +1,13 @@
 # personNameComponents
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names used to create a monogram image.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 27.2 (renamed: __TVMonogramContentConfiguration)
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The names used to create a monogram image.
 var personNameComponents: PersonNameComponents? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSPersonNameComponents * personNameComponents;
+```
+
 #### Discussion
 
-If no image is provided, the monogram object creates an image using the first initial of the [`givenName`](https://developer.apple.com/documentation/foundation/nspersonnamecomponents/givenname) and [`familyName`](https://developer.apple.com/documentation/foundation/personnamecomponents/familyname) attributes contained in this property. The person’s name appears below the monogram image.
+If no image is provided, the monogram object creates an image using the first initial of the [`givenName`](../../Foundation/nspersonnamecomponents/givenname.md) and [`familyName`](../../Foundation/personnamecomponents/familyname.md) attributes contained in this property. The person’s name appears below the monogram image.
 
 ## See Also
 
-- [var image: UIImage?](tvmonogramview/image.md)
+### Configuring a Monogram
+- [var image: UIImage?](./image.md)
   The custom image for the monogram.
-- [var title: String?](tvmonogramview/title.md)
+- [var title: String?](./title.md)
   The title for the monogram.
-- [var subtitle: String?](tvmonogramview/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle for the monogram.
 
 

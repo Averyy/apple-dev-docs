@@ -1,7 +1,8 @@
 # PlaygroundBluetoothConnectionView.State.noConnection
 
 **Framework**: Playground Bluetooth  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 The connection to a peripheral has been lost.
 
@@ -25,9 +26,10 @@ The connection view title corresponding to this state should be in the following
 
 ## See Also
 
-- [PlaygroundBluetoothConnectionView.State.connecting](playgroundbluetoothconnectionview/state/connecting.md)
+### Waiting for Connections
+- [PlaygroundBluetoothConnectionView.State.connecting](./connecting.md)
   The peripheral is in the process of connecting to a connection view’s central manager.
-- [PlaygroundBluetoothConnectionView.State.searchingForPeripherals](playgroundbluetoothconnectionview/state/searchingforperipherals.md)
+- [PlaygroundBluetoothConnectionView.State.searchingForPeripherals](./searchingforperipherals.md)
   A connection view’s central manager is scanning for nearby peripherals.
 
 

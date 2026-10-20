@@ -1,7 +1,8 @@
 # supportsDocumentID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the volume supports document IDs for document revisions.
 
@@ -14,15 +15,20 @@ A Boolean property that indicates whether the volume supports document IDs for d
 var supportsDocumentID: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsDocumentID;
+```
+
 #### Discussion
 
 A document ID is an identifier that persists across object ID changes.
 
 ## See Also
 
-- [var supportsPersistentObjectIDs: Bool](fsvolume/supportedcapabilities/supportspersistentobjectids.md)
+### Declaring identifier capabilities
+- [var supportsPersistentObjectIDs: Bool](./supportspersistentobjectids.md)
   A Boolean property that indicates whether the volume supports persistent object identifiers and can look up file system objects by their IDs.
-- [var supports64BitObjectIDs: Bool](fsvolume/supportedcapabilities/supports64bitobjectids.md)
+- [var supports64BitObjectIDs: Bool](./supports64bitobjectids.md)
   A Boolean property that indicates whether the volume supports 64-bit object IDs.
 
 

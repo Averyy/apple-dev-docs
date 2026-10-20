@@ -1,7 +1,8 @@
 # ShaderGraph.Value.cgColor3(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

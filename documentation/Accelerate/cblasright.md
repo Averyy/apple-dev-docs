@@ -1,16 +1,17 @@
 # CblasRight
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@
 var CblasRight: CBLAS_SIDE { get }
 ```
 
+```c
+CblasRight
+```
+
 ## See Also
 
-- [var CblasColMajor: CBLAS_ORDER](cblascolmajor.md)
-- [var CblasConjTrans: CBLAS_TRANSPOSE](cblasconjtrans.md)
-- [var CblasLeft: CBLAS_SIDE](cblasleft.md)
-- [var CblasLower: CBLAS_UPLO](cblaslower.md)
-- [var CblasNoTrans: CBLAS_TRANSPOSE](cblasnotrans.md)
-- [var CblasNonUnit: CBLAS_DIAG](cblasnonunit.md)
-- [var CblasRowMajor: CBLAS_ORDER](cblasrowmajor.md)
-- [var CblasTrans: CBLAS_TRANSPOSE](cblastrans.md)
-- [var CblasUnit: CBLAS_DIAG](cblasunit.md)
-- [var CblasUpper: CBLAS_UPLO](cblasupper.md)
-- [var AtlasConj: CBLAS_TRANSPOSE](atlasconj.md)
+### Variables
+- [var CblasColMajor: CBLAS_ORDER](./cblascolmajor.md)
+- [var CblasConjTrans: CBLAS_TRANSPOSE](./cblasconjtrans.md)
+- [var CblasLeft: CBLAS_SIDE](./cblasleft.md)
+- [var CblasLower: CBLAS_UPLO](./cblaslower.md)
+- [var CblasNoTrans: CBLAS_TRANSPOSE](./cblasnotrans.md)
+- [var CblasNonUnit: CBLAS_DIAG](./cblasnonunit.md)
+- [var CblasRowMajor: CBLAS_ORDER](./cblasrowmajor.md)
+- [var CblasTrans: CBLAS_TRANSPOSE](./cblastrans.md)
+- [var CblasUnit: CBLAS_DIAG](./cblasunit.md)
+- [var CblasUpper: CBLAS_UPLO](./cblasupper.md)
+- [var AtlasConj: CBLAS_TRANSPOSE](./atlasconj.md)
 
 
 ---

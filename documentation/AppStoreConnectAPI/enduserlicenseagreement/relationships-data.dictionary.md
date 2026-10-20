@@ -1,7 +1,8 @@
 # EndUserLicenseAgreement.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreement.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object EndUserLicenseAgreement.Relationships.App](enduserlicenseagreement/relationships-data.dictionary/app-data.dictionary.md)
+- [object EndUserLicenseAgreement.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object EndUserLicenseAgreement.Relationships.Territories](enduserlicenseagreement/relationships-data.dictionary/territories-data.dictionary.md)
+- [object EndUserLicenseAgreement.Relationships.Territories](./relationships-data.dictionary/territories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -29,7 +30,8 @@ object EndUserLicenseAgreement.Relationships
 
 ## See Also
 
-- [object EndUserLicenseAgreement.Attributes](enduserlicenseagreement/attributes-data.dictionary.md)
+### Objects
+- [object EndUserLicenseAgreement.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an End User License Agreements resource.
 
 

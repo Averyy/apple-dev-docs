@@ -1,7 +1,8 @@
 # disallowKeyPath(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -20,7 +21,8 @@ mutating func disallowKeyPath(_ keyPath: any AnyKeyPath & Sendable)
 
 ## See Also
 
-- [func allowKeyPath(any AnyKeyPath & Sendable, identifier: String)](predicatecodableconfiguration/allowkeypath(_:identifier:).md)
+### Instance Methods
+- [func allowKeyPath(any AnyKeyPath & Sendable, identifier: String)](./allowkeypath%28_,identifier%29.md)
 
 
 ---

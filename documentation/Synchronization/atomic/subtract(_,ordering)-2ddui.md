@@ -1,7 +1,8 @@
 # subtract(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic subtract operation and return the old and new value, applying the specified memory ordering.
 
@@ -21,13 +22,17 @@ Perform an atomic subtract operation and return the old and new value, applying 
 func subtract(_ operand: Int128, ordering: AtomicUpdateOrdering) -> (oldValue: Int128, newValue: Int128)
 ```
 
+Available when `Value` is `Int128`.
+
 #### Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
 #### Discussion
 
-> **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed. The need to check for overflow means that this operation is typically compiled into a compare-exchange loop. For use cases that require a direct atomic subtraction, see the `wrappingSubtract` operation: it avoids the loop, but in exchange it allows silent wraps on overflow.
+> **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
+>
+> The need to check for overflow means that this operation is typically compiled into a compare-exchange loop. For use cases that require a direct atomic subtraction, see the `wrappingSubtract` operation: it avoids the loop, but in exchange it allows silent wraps on overflow.
 
 ## Parameters
 

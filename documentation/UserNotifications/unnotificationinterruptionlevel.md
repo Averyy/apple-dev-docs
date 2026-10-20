@@ -1,7 +1,8 @@
 # UNNotificationInterruptionLevel
 
 **Framework**: User Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the importance and delivery timing of a notification.
 
@@ -20,43 +21,48 @@ Constants that indicate the importance and delivery timing of a notification.
 enum UNNotificationInterruptionLevel
 ```
 
+```c
+enum UNNotificationInterruptionLevel : NSUInteger;
+```
+
 ## Mentions
 
-- [Generating a remote notification](generating-a-remote-notification.md)
+- [Generating a remote notification](./generating-a-remote-notification.md)
 
 ## Topics
 
 ### Enumeration Cases
-- [UNNotificationInterruptionLevel.active](unnotificationinterruptionlevel/active.md)
+- [UNNotificationInterruptionLevel.active](./unnotificationinterruptionlevel/active.md)
   The system presents the notification immediately, lights up the screen, and can play a sound.
-- [UNNotificationInterruptionLevel.critical](unnotificationinterruptionlevel/critical.md)
+- [UNNotificationInterruptionLevel.critical](./unnotificationinterruptionlevel/critical.md)
   The system presents the notification immediately, lights up the screen, and bypasses the mute switch to play a sound.
-- [UNNotificationInterruptionLevel.passive](unnotificationinterruptionlevel/passive.md)
+- [UNNotificationInterruptionLevel.passive](./unnotificationinterruptionlevel/passive.md)
   The system adds the notification to the notification list without lighting up the screen or playing a sound.
-- [UNNotificationInterruptionLevel.timeSensitive](unnotificationinterruptionlevel/timesensitive.md)
+- [UNNotificationInterruptionLevel.timeSensitive](./unnotificationinterruptionlevel/timesensitive.md)
   The system presents the notification immediately, lights up the screen, can play a sound, and breaks through system notification controls.
 ### Initializers
-- [init?(rawValue: UInt)](unnotificationinterruptionlevel/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./unnotificationinterruptionlevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sound: UNNotificationSound?](unmutablenotificationcontent/sound.md)
+### Integrating with the system
+- [var sound: UNNotificationSound?](./unmutablenotificationcontent/sound.md)
   The sound that plays when the system delivers the notification.
-- [var interruptionLevel: UNNotificationInterruptionLevel](unmutablenotificationcontent/interruptionlevel.md)
+- [var interruptionLevel: UNNotificationInterruptionLevel](./unmutablenotificationcontent/interruptionlevel.md)
   The notification’s importance and required delivery timing.
-- [var relevanceScore: Double](unmutablenotificationcontent/relevancescore.md)
+- [var relevanceScore: Double](./unmutablenotificationcontent/relevancescore.md)
   The score the system uses to determine if the notification is the summary’s featured notification.
-- [var filterCriteria: String?](unmutablenotificationcontent/filtercriteria.md)
+- [var filterCriteria: String?](./unmutablenotificationcontent/filtercriteria.md)
   The criteria the system evaluates to determine if it displays the notification in the current Focus.
 
 

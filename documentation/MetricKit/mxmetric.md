@@ -1,16 +1,19 @@
 # MXMetric
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract data class for a metric.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](./metricresult.md) instead.
 
 ## Declaration
 
@@ -18,73 +21,78 @@ An abstract data class for a metric.
 class MXMetric
 ```
 
+```objc
+@interface MXMetric : NSObject
+```
+
 ## Topics
 
 ### Generate a report
-- [func dictionaryRepresentation() -> [AnyHashable : Any]](mxmetric/dictionaryrepresentation.md)
+- [func dictionaryRepresentation() -> [AnyHashable : Any]](./mxmetric/dictionaryrepresentation%28%29.md)
   Returns the contents of a metric as a dictionary.
-- [func jsonRepresentation() -> Data](mxmetric/jsonrepresentation.md)
+- [func jsonRepresentation() -> Data](./mxmetric/jsonrepresentation%28%29.md)
   Returns the contents of the metric in JSON format.
 ### Initializers
-- [init?(coder: NSCoder)](mxmetric/init(coder:).md)
+- [init?(coder: NSCoder)](./mxmetric/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MXAnimationMetric](mxanimationmetric.md)
-- [MXAppExitMetric](mxappexitmetric.md)
-- [MXAppLaunchMetric](mxapplaunchmetric.md)
-- [MXAppResponsivenessMetric](mxappresponsivenessmetric.md)
-- [MXAppRunTimeMetric](mxappruntimemetric.md)
-- [MXCPUMetric](mxcpumetric.md)
-- [MXCellularConditionMetric](mxcellularconditionmetric.md)
-- [MXDiskIOMetric](mxdiskiometric.md)
-- [MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
-- [MXDisplayMetric](mxdisplaymetric.md)
-- [MXGPUMetric](mxgpumetric.md)
-- [MXLocationActivityMetric](mxlocationactivitymetric.md)
-- [MXMemoryMetric](mxmemorymetric.md)
-- [MXNetworkTransferMetric](mxnetworktransfermetric.md)
-- [MXSignpostMetric](mxsignpostmetric.md)
+- [MXAnimationMetric](./mxanimationmetric.md)
+- [MXAppExitMetric](./mxappexitmetric.md)
+- [MXAppLaunchMetric](./mxapplaunchmetric.md)
+- [MXAppResponsivenessMetric](./mxappresponsivenessmetric.md)
+- [MXAppRunTimeMetric](./mxappruntimemetric.md)
+- [MXCPUMetric](./mxcpumetric.md)
+- [MXCellularConditionMetric](./mxcellularconditionmetric.md)
+- [MXDiskIOMetric](./mxdiskiometric.md)
+- [MXDiskSpaceUsageMetric](./mxdiskspaceusagemetric.md)
+- [MXDisplayMetric](./mxdisplaymetric.md)
+- [MXGPUMetric](./mxgpumetric.md)
+- [MXLocationActivityMetric](./mxlocationactivitymetric.md)
+- [MXMemoryMetric](./mxmemorymetric.md)
+- [MXNetworkTransferMetric](./mxnetworktransfermetric.md)
+- [MXSignpostMetric](./mxsignpostmetric.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXCallStackTree](mxcallstacktree.md)
+### Supporting types
+- [class MXCallStackTree](./mxcallstacktree.md)
   An object representing the call stack for an exception.
-- [class MXMetaData](mxmetadata.md)
+- [class MXMetaData](./mxmetadata.md)
   An object containing system-level information about the device.
-- [class MXAverage](mxaverage.md)
+- [class MXAverage](./mxaverage.md)
   A unit of measure for an average.
-- [class MXHistogram](mxhistogram.md)
+- [class MXHistogram](./mxhistogram.md)
   An object representing a histogram of data values of the same type of unit.
-- [class MXHistogramBucket](mxhistogrambucket.md)
+- [class MXHistogramBucket](./mxhistogrambucket.md)
   An object representing a bucket of data in a histogram.
-- [class MXDiagnostic](mxdiagnostic.md)
+- [class MXDiagnostic](./mxdiagnostic.md)
   An abstract data class for a diagnostic.
-- [struct MXError](mxerror.md)
+- [struct MXError](./mxerror.md)
   Error domain for error handling of app metrics.
-- [MXError.Code](mxerror/code.md)
+- [MXError.Code](./mxerror/code.md)
   Error codes for error values from app metrics.
-- [let MXErrorDomain: String](mxerrordomain.md)
+- [let MXErrorDomain: String](./mxerrordomain.md)
   Error domain for error values from app metrics.
-- [class MXCrashDiagnosticObjectiveCExceptionReason](mxcrashdiagnosticobjectivecexceptionreason.md)
+- [class MXCrashDiagnosticObjectiveCExceptionReason](./mxcrashdiagnosticobjectivecexceptionreason.md)
   An object that represents the exception reason for an uncaught ObjC exception.
-- [class MXSignpostRecord](mxsignpostrecord.md)
+- [class MXSignpostRecord](./mxsignpostrecord.md)
   An object representing the record for a signpost interval or event.
-- [class MXUnitAveragePixelLuminance](mxunitaveragepixelluminance.md)
+- [class MXUnitAveragePixelLuminance](./mxunitaveragepixelluminance.md)
   A unit of measure of pixel luminosity on an OLED display.
-- [class MXUnitSignalBars](mxunitsignalbars.md)
+- [class MXUnitSignalBars](./mxunitsignalbars.md)
   A unit of measure for the number of bars of cellular network connectivity.
 
 

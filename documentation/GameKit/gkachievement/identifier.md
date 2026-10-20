@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the achievement that you enter in App Store Connect.
 
@@ -20,15 +21,28 @@ The identifier for the achievement that you enter in App Store Connect.
 var identifier: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSString * identifier;
+```
+
 ## See Also
 
-- [var player: GKPlayer](gkachievement/player.md)
+### Accessing Achievement Properties
+- [var player: GKPlayer](./player.md)
   The player who earned the achievement.
-- [var percentComplete: Double](gkachievement/percentcomplete.md)
+- [var percentComplete: Double](./percentcomplete.md)
   A percentage value that states how far the player has progressed on the achievement.
-- [var isCompleted: Bool](gkachievement/iscompleted.md)
+- [var isCompleted: Bool](./iscompleted.md)
   A Boolean value that states whether the player has completed the achievement.
-- [var lastReportedDate: Date](gkachievement/lastreporteddate.md)
+- [var lastReportedDate: Date](./lastreporteddate.md)
   The last time your game reported progress on the achievement for the player.
 
 

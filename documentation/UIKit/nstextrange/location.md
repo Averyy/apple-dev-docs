@@ -1,7 +1,8 @@
 # location
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting location of the text range.
 
@@ -19,11 +20,16 @@ The starting location of the text range.
 var location: any NSTextLocation { get }
 ```
 
+```objc
+@property (strong, readonly) id<NSTextLocation> location;
+```
+
 ## See Also
 
-- [var endLocation: any NSTextLocation](nstextrange/endlocation.md)
+### Characteristics of the text range
+- [var endLocation: any NSTextLocation](./endlocation.md)
   The ending location of the text range.
-- [var isEmpty: Bool](nstextrange/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   Returns whether the text range is empty.
 
 

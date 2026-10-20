@@ -1,20 +1,21 @@
 # Getting app and book information (Legacy)
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Use a web service to find details about apps and books to show to your users.
 
 #### Overview
 
-To provide users with metadata for the apps and books that they’re managing, such as artwork, the `contentMetadataLookup` URL in the [`Service Config`](service-config.md) response allows a device management service to query the store for app and book metadata.
+To provide users with metadata for the apps and books that they’re managing, such as artwork, the `contentMetadataLookup` URL in the [`Service Config`](./service-config.md) response allows a device management service to query the store for app and book metadata.
 
-#### Perform a Lookup
+#### Perform a lookup
 
 The URL query string tells the content metadata lookup service which app or book to look up. You need to use an HTTP `GET` method for this request.
 
 The platform filters the content, and the useful values for the `platform` query parameter are:
 
-```None
+```
 - term `enterprisestore`: For apps in the enterprise store
 - term `volumestore`: For apps in the educational store
 ```
@@ -339,13 +340,13 @@ When the `results` set is empty, a typical response looks like the following:
 }
 ```
 
-#### Identify Universal Apps
+#### Identify universal apps
 
 When you query the store for an app, you may need to determine whether the app is universal so it can assess what devices it can assign the app to.
 
 To make this determination, evaluate the following two fields:
 
-```None
+```
 - term `deviceFamilies`: Supported device families.
 - term `kind`: Type of content.
 ```
@@ -391,9 +392,10 @@ The following is an example of a typical response from an app designed for iPad 
 
 ## See Also
 
-- [Managing apps and books through web services (Legacy)](managing-apps-and-books-through-web-services-legacy.md)
+### Essentials
+- [Managing apps and books through web services (Legacy)](./managing-apps-and-books-through-web-services-legacy.md)
   Associate volume purchases with users or devices using endpoints provided by the Volume Purchase Program (VPP).
-- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
+- [Upgrading to Apple School Manager and Apple Business](./upgrading-to-apple-school-manager-and-apple-business.md)
   Manage devices and content across an organization’s user base with a single destination.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CFNetwork  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an object that contains user-defined data and callbacks for a network host.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: CFAllocatorRetainCallBack?, release: CFAllocatorReleaseCallBack?, copyDescription: CFAllocatorCopyDescriptionCallBack?)](cfhostclientcontext/init(version:info:retain:release:copydescription:).md)
+### Initializers
+- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: CFAllocatorRetainCallBack?, release: CFAllocatorReleaseCallBack?, copyDescription: CFAllocatorCopyDescriptionCallBack?)](./init%28version,info,retain,release,copydescription%29.md)
   Initializes an object that contains user-defined data and callbacks for a network host using the specified values.
 
 

@@ -1,7 +1,8 @@
 # init(identifier:content:trigger:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a notification request object that you use to schedule a notification.
 
@@ -20,13 +21,17 @@ Creates a notification request object that you use to schedule a notification.
 convenience init(identifier: String, content: UNNotificationContent, trigger: UNNotificationTrigger?)
 ```
 
+```objc
++ (instancetype) requestWithIdentifier:(NSString *) identifier content:(UNNotificationContent *) content trigger:(UNNotificationTrigger *) trigger;
+```
+
 #### Return Value
 
 A new notification request object.
 
 #### Discussion
 
-Use this method when you want to schedule the delivery of a local notification. This method creates the request object that you subsequently pass to the [`add(_:withCompletionHandler:)`](unusernotificationcenter/add(_:withcompletionhandler:).md) method.
+Use this method when you want to schedule the delivery of a local notification. This method creates the request object that you subsequently pass to the [`add(_:withCompletionHandler:)`](../unusernotificationcenter/add%28_,withcompletionhandler%29.md) method.
 
 The system uses the `identifier` parameter to determine how to handle the request:
 
@@ -36,7 +41,7 @@ The system uses the `identifier` parameter to determine how to handle the reques
 
 ## Parameters
 
-- `identifier`: An identifier for the request; this parameter must not be `nil`. You can use this identifier to cancel the request if it’s still pending (see the [`removePendingNotificationRequests(withIdentifiers:)`](unusernotificationcenter/removependingnotificationrequests(withidentifiers:).md) method).
+- `identifier`: An identifier for the request; this parameter must not be `nil`. You can use this identifier to cancel the request if it’s still pending (see the [`removePendingNotificationRequests(withIdentifiers:)`](../unusernotificationcenter/removependingnotificationrequests%28withidentifiers%29.md) method).
 - `content`: The content of the notification. This parameter must not be `nil`.
 - `trigger`: The condition that causes the system to deliver the notification. Specify `nil` to deliver the notification right away.
 

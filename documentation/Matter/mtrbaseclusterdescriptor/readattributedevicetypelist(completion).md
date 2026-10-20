@@ -1,7 +1,8 @@
 # readAttributeDeviceTypeList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeDeviceTypeList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeDeviceTypeList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeDeviceTypeListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,12 +1,13 @@
 # browserWillScroll(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the browser will scroll.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Notifies the delegate when the browser will scroll.
 optional func browserWillScroll(_ sender: NSBrowser)
 ```
 
+```objc
+- (void) browserWillScroll:(NSBrowser *) sender;
+```
+
 ## Parameters
 
 - `sender`: The browser sending the message.
 
 ## See Also
 
-- [func browserDidScroll(NSBrowser)](nsbrowserdelegate/browserdidscroll(_:).md)
+### Scrolling
+- [func browserDidScroll(NSBrowser)](./browserdidscroll%28_%29.md)
   Notifies the delegate when the browser has scrolled.
 
 

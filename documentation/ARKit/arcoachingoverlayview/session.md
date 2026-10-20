@@ -1,7 +1,8 @@
 # session
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session this view uses to provide coaching.
 
@@ -15,13 +16,18 @@ The session this view uses to provide coaching.
 var session: ARSession? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) ARSession * session;
+```
+
 #### Discussion
 
-The coaching overlay monitors your app’s [`ARSession`](arsession.md) and reacts according to its tracking status. You don’t need to set this property if you set [`sessionProvider`](arcoachingoverlayview/sessionprovider.md) instead.
+The coaching overlay monitors your app’s [`ARSession`](../arsession.md) and reacts according to its tracking status. You don’t need to set this property if you set [`sessionProvider`](./sessionprovider.md) instead.
 
 ## See Also
 
-- [var sessionProvider: (any ARSessionProviding)?](arcoachingoverlayview/sessionprovider.md)
+### Providing the Session
+- [var sessionProvider: (any ARSessionProviding)?](./sessionprovider.md)
   An object you designate that provides the current session.
 
 

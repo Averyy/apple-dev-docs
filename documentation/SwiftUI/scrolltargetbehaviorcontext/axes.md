@@ -1,7 +1,8 @@
 # axes
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axes in which the scrollable view is scrollable.
 
@@ -22,13 +23,14 @@ var axes: Axis.Set { get }
 
 ## See Also
 
-- [var containerSize: CGSize](scrolltargetbehaviorcontext/containersize.md)
+### Getting the scroll target behavior context
+- [var containerSize: CGSize](./containersize.md)
   The size of the container of the scrollable view.
-- [var contentSize: CGSize](scrolltargetbehaviorcontext/contentsize.md)
+- [var contentSize: CGSize](./contentsize.md)
   The size of the content of the scrollable view.
-- [var originalTarget: ScrollTarget](scrolltargetbehaviorcontext/originaltarget.md)
+- [var originalTarget: ScrollTarget](./originaltarget.md)
   The original target when the scroll gesture began.
-- [var velocity: CGVector](scrolltargetbehaviorcontext/velocity.md)
+- [var velocity: CGVector](./velocity.md)
   The current velocity of the scrollable view’s scroll gesture.
 
 

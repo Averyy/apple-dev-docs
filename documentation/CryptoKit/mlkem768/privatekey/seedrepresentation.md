@@ -1,7 +1,8 @@
 # seedRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The private key’s seed representation.
 
@@ -26,9 +27,10 @@ The seed is `d||z`, as specified in the algorithm `ML-KEM.KeyGen_internal(d,z)` 
 
 ## See Also
 
-- [var integrityCheckedRepresentation: Data](mlkem768/privatekey/integritycheckedrepresentation.md)
+### Inspecting a private key’s properties
+- [var integrityCheckedRepresentation: Data](./integritycheckedrepresentation.md)
   An integrity-checked representation of the private key.
-- [var publicKey: MLKEM768.PublicKey](mlkem768/privatekey/publickey.md)
+- [var publicKey: MLKEM768.PublicKey](./publickey.md)
   The corresponding public key.
 
 

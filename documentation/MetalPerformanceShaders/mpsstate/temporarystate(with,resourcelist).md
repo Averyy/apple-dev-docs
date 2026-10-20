@@ -1,7 +1,8 @@
 # temporaryState(with:resourceList:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 class func temporaryState(with commandBuffer: any MTLCommandBuffer, resourceList: MPSStateResourceList) -> Self
+```
+
+```objc
++ (instancetype) temporaryStateWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer resourceList:(MPSStateResourceList *) resourceList;
 ```
 
 

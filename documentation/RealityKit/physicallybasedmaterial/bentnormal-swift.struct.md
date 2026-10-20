@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.BentNormal
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The bent normal map for the entity.
 
@@ -26,19 +27,20 @@ struct BentNormal
 ## Topics
 
 ### Accessing the texture key
-- [static let textureKey: String](physicallybasedmaterial/bentnormal-swift.struct/texturekey.md)
+- [static let textureKey: String](./bentnormal-swift.struct/texturekey.md)
 ### Initializers
-- [init(texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/bentnormal-swift.struct/init(texture:).md)
+- [init(texture: PhysicallyBasedMaterial.Texture?)](./bentnormal-swift.struct/init%28texture%29.md)
 ### Instance Properties
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/bentnormal-swift.struct/texture.md)
+- [var texture: PhysicallyBasedMaterial.Texture?](./bentnormal-swift.struct/texture.md)
 ### Type Properties
-- [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/bentnormal-swift.struct/texturesemantic.md)
+- [static let textureSemantic: TextureResource.Semantic](./bentnormal-swift.struct/texturesemantic.md)
 
 ## See Also
 
-- [var bentNormal: PhysicallyBasedMaterial.BentNormal](physicallybasedmaterial/bentnormal-swift.property.md)
+### Configuring occlusion shading
+- [var bentNormal: PhysicallyBasedMaterial.BentNormal](./bentnormal-swift.property.md)
   The bent normal map for the entity.
-- [var enableSpecularOcclusion: Bool](physicallybasedmaterial/enablespecularocclusion.md)
+- [var enableSpecularOcclusion: Bool](./enablespecularocclusion.md)
   Enables specular occlusion computations.
 
 

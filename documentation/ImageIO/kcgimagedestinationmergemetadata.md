@@ -1,7 +1,8 @@
 # kCGImageDestinationMergeMetadata
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether to merge new metadata with the image’s existing metadata.
 
@@ -20,35 +21,40 @@ A Boolean value that indicates whether to merge new metadata with the image’s 
 let kCGImageDestinationMergeMetadata: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageDestinationMergeMetadata;
+```
+
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
+The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md).
 
-If you set this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the image destination merges the information in the [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md) key with the image’s existing metadata. Specifically, if a tag doesn’t exist in the source, the destination adds it. If the tag exists in the source, the destination updates its value. To remove a tag, set the value of the appropriate key to [`kCFNull`](https://developer.apple.com/documentation/corefoundation/kcfnull).
+If you set this key to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), the image destination merges the information in the [`kCGImageDestinationMetadata`](./kcgimagedestinationmetadata.md) key with the image’s existing metadata. Specifically, if a tag doesn’t exist in the source, the destination adds it. If the tag exists in the source, the destination updates its value. To remove a tag, set the value of the appropriate key to [`kCFNull`](../CoreFoundation/kcfnull.md).
 
 ## See Also
 
-- [let kCGImageDestinationLossyCompressionQuality: CFString](kcgimagedestinationlossycompressionquality.md)
+### Configuring the Image Behaviors
+- [let kCGImageDestinationLossyCompressionQuality: CFString](./kcgimagedestinationlossycompressionquality.md)
   The desired compression quality to use when writing the image data.
-- [let kCGImageDestinationBackgroundColor: CFString](kcgimagedestinationbackgroundcolor.md)
+- [let kCGImageDestinationBackgroundColor: CFString](./kcgimagedestinationbackgroundcolor.md)
   The background color to use when the image has an alpha component, but the destination format doesn’t support alpha.
-- [let kCGImageDestinationDateTime: CFString](kcgimagedestinationdatetime.md)
+- [let kCGImageDestinationDateTime: CFString](./kcgimagedestinationdatetime.md)
   The date and time information to associate with the image.
-- [let kCGImageDestinationEmbedThumbnail: CFString](kcgimagedestinationembedthumbnail.md)
+- [let kCGImageDestinationEmbedThumbnail: CFString](./kcgimagedestinationembedthumbnail.md)
   A Boolean value that indicates whether to embed a thumbnail for JPEG and HEIF images.
-- [let kCGImageDestinationImageMaxPixelSize: CFString](kcgimagedestinationimagemaxpixelsize.md)
+- [let kCGImageDestinationImageMaxPixelSize: CFString](./kcgimagedestinationimagemaxpixelsize.md)
   The maximum width and height of the image, in pixels.
-- [let kCGImageDestinationMetadata: CFString](kcgimagedestinationmetadata.md)
+- [let kCGImageDestinationMetadata: CFString](./kcgimagedestinationmetadata.md)
   The metadata tags to include with the image.
-- [let kCGImageDestinationOptimizeColorForSharing: CFString](kcgimagedestinationoptimizecolorforsharing.md)
+- [let kCGImageDestinationOptimizeColorForSharing: CFString](./kcgimagedestinationoptimizecolorforsharing.md)
   A Boolean value that indicates whether to create the image using a colorspace.
-- [let kCGImageDestinationOrientation: CFString](kcgimagedestinationorientation.md)
+- [let kCGImageDestinationOrientation: CFString](./kcgimagedestinationorientation.md)
   The orientation of the image, specified as an EXIF value in the range 1 to 8.
-- [let kCGImageDestinationPreserveGainMap: CFString](kcgimagedestinationpreservegainmap.md)
+- [let kCGImageDestinationPreserveGainMap: CFString](./kcgimagedestinationpreservegainmap.md)
   A Boolean value that indicates whether to include a HEIF-embedded gain map in the image data.
-- [let kCGImageMetadataShouldExcludeGPS: CFString](kcgimagemetadatashouldexcludegps.md)
+- [let kCGImageMetadataShouldExcludeGPS: CFString](./kcgimagemetadatashouldexcludegps.md)
   A Boolean value that indicates whether to exclude GPS metadata from EXIF data or the corresponding XMP tags.
-- [let kCGImageMetadataShouldExcludeXMP: CFString](kcgimagemetadatashouldexcludexmp.md)
+- [let kCGImageMetadataShouldExcludeXMP: CFString](./kcgimagemetadatashouldexcludexmp.md)
   A Boolean value that indicates whether to exclude XMP data from the destination.
 
 

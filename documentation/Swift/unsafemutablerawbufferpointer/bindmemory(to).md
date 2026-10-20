@@ -1,7 +1,8 @@
 # bindMemory(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds this buffer’s memory to the specified type and returns a typed buffer of the bound memory.
 

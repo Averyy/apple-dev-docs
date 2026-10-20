@@ -1,7 +1,8 @@
 # PFFCONSTANTFORCE
 
 **Framework**: Force Feedback  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,22 +14,27 @@
 typealias PFFCONSTANTFORCE = UnsafeMutablePointer<FFCONSTANTFORCE>
 ```
 
+```c
+typedef FFCONSTANTFORCE * PFFCONSTANTFORCE;
+```
+
 ## See Also
 
-- [typealias DWORD](dword.md)
-- [typealias FFDeviceObjectReference](ffdeviceobjectreference.md)
-- [typealias FFEffectObjectReference](ffeffectobjectreference.md)
-- [typealias LONG](long.md)
-- [typealias LPDWORD](lpdword.md)
-- [typealias LPLONG](lplong.md)
-- [typealias PFFCAPABILITIES](pffcapabilities.md)
-- [typealias PFFCONDITION](pffcondition.md)
-- [typealias PFFCUSTOMFORCE](pffcustomforce.md)
-- [typealias PFFEFFECT](pffeffect.md)
-- [typealias PFFEFFESCAPE](pffeffescape.md)
-- [typealias PFFENVELOPE](pffenvelope.md)
-- [typealias PFFPERIODIC](pffperiodic.md)
-- [typealias PFFRAMPFORCE](pfframpforce.md)
+### Data Types
+- [typealias DWORD](./dword.md)
+- [typealias FFDeviceObjectReference](./ffdeviceobjectreference.md)
+- [typealias FFEffectObjectReference](./ffeffectobjectreference.md)
+- [typealias LONG](./long.md)
+- [typealias LPDWORD](./lpdword.md)
+- [typealias LPLONG](./lplong.md)
+- [typealias PFFCAPABILITIES](./pffcapabilities.md)
+- [typealias PFFCONDITION](./pffcondition.md)
+- [typealias PFFCUSTOMFORCE](./pffcustomforce.md)
+- [typealias PFFEFFECT](./pffeffect.md)
+- [typealias PFFEFFESCAPE](./pffeffescape.md)
+- [typealias PFFENVELOPE](./pffenvelope.md)
+- [typealias PFFPERIODIC](./pffperiodic.md)
+- [typealias PFFRAMPFORCE](./pfframpforce.md)
 
 
 ---

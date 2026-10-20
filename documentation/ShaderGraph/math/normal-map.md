@@ -1,7 +1,8 @@
 # Normal Map
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Transforms a normal vector from object or tangent space into world space.
 
@@ -15,7 +16,35 @@ Transforms a normal vector from object or tangent space into world space.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Normal Map**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3f |
+| `Space` | String |
+| `Scale` | Float |
+| `Normal` | Vector3f |
+| `Tangent` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Normal Map (vector2f Scale)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3f |
+| `Space` | String |
+| `Scale` | Vector2f |
+| `Normal` | Vector3f |
+| `Tangent` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+#### Parameter descriptions
 
 - **`In`**: The input vector to be transformed; the default is `(0.5, 0.5, 1.0)`.
 - **`Space`**: The space from which the node transforms the normal vector. The value can either be `object` or `tangent`. The default value is `tangent`.
@@ -25,35 +54,36 @@ Transforms a normal vector from object or tangent space into world space.
 
 ## See Also
 
-- [Add](math/add.md)
+### Nodes
+- [Add](./add.md)
   Adds two values.
-- [Subtract](math/subtract.md)
+- [Subtract](./subtract.md)
   Subtracts two values.
-- [Multiply](math/multiply.md)
+- [Multiply](./multiply.md)
   Multiplies two values.
-- [Divide](math/divide.md)
+- [Divide](./divide.md)
   Divides two values.
-- [Modulo](math/modulo.md)
+- [Modulo](./modulo.md)
   Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
-- [Abs](math/abs.md)
+- [Abs](./abs.md)
   Outputs the per-channel absolute value of the input.
-- [Floor](math/floor.md)
+- [Floor](./floor.md)
   Outputs the nearest integer value, per-channel, less than or equal to the incoming values.
-- [Ceiling](math/ceiling.md)
+- [Ceiling](./ceiling.md)
   Outputs the nearest integer value, per-channel, greater than or equal to the incoming values.
-- [Power](math/power.md)
+- [Power](./power.md)
   Raises the incoming value to an exponent.
-- [Sin](math/sin.md)
+- [Sin](./sin.md)
   The sine of the incoming value in radians.
-- [Cos](math/cos.md)
+- [Cos](./cos.md)
   The cosine of the incoming value in radians.
-- [Tan](math/tan.md)
+- [Tan](./tan.md)
   The tangent of the incoming value in radians.
-- [Asin](math/asin.md)
+- [Asin](./asin.md)
   The arcsine of the incoming value in radians.
-- [Acos](math/acos.md)
+- [Acos](./acos.md)
   The arccosine of the incoming value in radians.
-- [Atan2](math/atan2.md)
+- [Atan2](./atan2.md)
   The arctangent of the expression (iny/inx) in radians.
 
 

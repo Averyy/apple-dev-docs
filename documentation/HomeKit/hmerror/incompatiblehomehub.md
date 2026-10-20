@@ -1,16 +1,19 @@
 # incompatibleHomeHub
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No compatible home hub found.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- tvOS 11.0+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 11.0 (renamed: HMError.noCompatibleHomeHub)
+- iPadOS 11.0+ - Deprecated in 11.0 (renamed: HMError.noCompatibleHomeHub)
+- tvOS 11.0+ - Deprecated in 11.0 (renamed: HMError.noCompatibleHomeHub)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: HMError.noCompatibleHomeHub)
+- watchOS 4.0+ - Deprecated in 4.0 (renamed: HMError.noCompatibleHomeHub)
+
+> **Deprecated**: Use [`noCompatibleHomeHub`](./nocompatiblehomehub.md) instead.
 
 ## Declaration
 
@@ -20,25 +23,26 @@ static var incompatibleHomeHub: HMError.Code { get }
 
 ## See Also
 
-- [static var alreadyExists: HMError.Code](hmerror/alreadyexists.md)
+### Detecting general errors
+- [static var alreadyExists: HMError.Code](./alreadyexists.md)
   An error indicating the container already contains the object you are trying to add.
-- [static var genericError: HMError.Code](hmerror/genericerror.md)
+- [static var genericError: HMError.Code](./genericerror.md)
   An error that does not have a more specific error code.
-- [static var invalidClass: HMError.Code](hmerror/invalidclass.md)
+- [static var invalidClass: HMError.Code](./invalidclass.md)
   An attempt to use an abstract base class in an operation instead of a concrete subclass.
-- [static var notFound: HMError.Code](hmerror/notfound.md)
+- [static var notFound: HMError.Code](./notfound.md)
   An error indicating the object was not found in the container.
-- [static var notificationAlreadyEnabled: HMError.Code](hmerror/notificationalreadyenabled.md)
+- [static var notificationAlreadyEnabled: HMError.Code](./notificationalreadyenabled.md)
   An error indicating the notification is already enabled.
-- [static var notificationNotSupported: HMError.Code](hmerror/notificationnotsupported.md)
+- [static var notificationNotSupported: HMError.Code](./notificationnotsupported.md)
   An attempt to register for notifications from an accessory that does not support notifications.
-- [static var operationNotSupported: HMError.Code](hmerror/operationnotsupported.md)
+- [static var operationNotSupported: HMError.Code](./operationnotsupported.md)
   An attempt to use an unsupported operation.
-- [static var unexpectedError: HMError.Code](hmerror/unexpectederror.md)
+- [static var unexpectedError: HMError.Code](./unexpectederror.md)
   An unexpected error.
-- [static var missingEntitlement: HMError.Code](hmerror/missingentitlement.md)
+- [static var missingEntitlement: HMError.Code](./missingentitlement.md)
   An error indicating a required entitlement is not available.
-- [static var referToUserManual: HMError.Code](hmerror/refertousermanual.md)
+- [static var referToUserManual: HMError.Code](./refertousermanual.md)
   An error described in the device’s user manual.
 
 

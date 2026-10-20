@@ -1,7 +1,8 @@
 # endDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result’s end time and date.
 
@@ -17,13 +18,18 @@ The result’s end time and date.
 var endDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * endDate;
+```
+
 #### Discussion
 
-The result’s `endDate` is always one minute or less after the [`startDate`](cmdyskineticsymptomresult/startdate.md).
+The result’s `endDate` is always one minute or less after the [`startDate`](./startdate.md).
 
 ## See Also
 
-- [var startDate: Date](cmdyskineticsymptomresult/startdate.md)
+### Reading the Time Interval
+- [var startDate: Date](./startdate.md)
   The result’s start time and date.
 
 

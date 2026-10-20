@@ -1,12 +1,15 @@
 # setFocusedColumn(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the currently focused column to the specified index.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.10
+
+> **Deprecated**: Use a view-based table view and make a particular view the first responder to focus it.
 
 ## Declaration
 
@@ -14,15 +17,19 @@ Sets the currently focused column to the specified index.
 func setFocusedColumn(_ focusedColumn: Int)
 ```
 
+```objc
+- (void) setFocusedColumn:(NSInteger) focusedColumn;
+```
+
 #### Discussion
 
 This method will redisplay the previously focused column and (if required) the new `focusedColumn`.
 
-The focused column has a focus ring drawn around the [`selectedRow`](nstableview/selectedrow.md) that intersects with `focusedColumn`.
+The focused column has a focus ring drawn around the [`selectedRow`](./selectedrow.md) that intersects with `focusedColumn`.
 
 You should not override this method.
 
-> **Note**:  This method is not applicable for [`NSView`](nsview.md)-based table views.
+> **Note**:  This method is not applicable for [`NSView`](../nsview.md)-based table views.
 
 ## Parameters
 
@@ -30,13 +37,14 @@ You should not override this method.
 
 ## See Also
 
-- [func focusedColumn() -> Int](nstableview/focusedcolumn.md)
+### Deprecated methods
+- [func focusedColumn() -> Int](./focusedcolumn%28%29.md)
   Returns the currently focused column.
-- [func shouldFocusCell(NSCell, atColumn: Int, row: Int) -> Bool](nstableview/shouldfocuscell(_:atcolumn:row:).md)
+- [func shouldFocusCell(NSCell, atColumn: Int, row: Int) -> Bool](./shouldfocuscell%28_,atcolumn,row%29.md)
   Returns whether the fully prepared cell at the specified row and column can be made the focused cell.
-- [func performClickOnCell(atColumn: Int, row: Int)](nstableview/performclickoncell(atcolumn:row:).md)
+- [func performClickOnCell(atColumn: Int, row: Int)](./performclickoncell%28atcolumn,row%29.md)
   Performs a click action on the cell at the specified row and column.
-- [func preparedCell(atColumn: Int, row: Int) -> NSCell?](nstableview/preparedcell(atcolumn:row:).md)
+- [func preparedCell(atColumn: Int, row: Int) -> NSCell?](./preparedcell%28atcolumn,row%29.md)
   Returns the fully prepared cell that the table view will use for drawing or processing of the specified row and column.
 
 

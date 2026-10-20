@@ -1,7 +1,8 @@
 # fire()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the timer’s message to be sent to its target.
 
@@ -20,13 +21,18 @@ Causes the timer’s message to be sent to its target.
 func fire()
 ```
 
+```objc
+- (void) fire;
+```
+
 #### Discussion
 
 You can use this method to fire a repeating timer without interrupting its regular firing schedule. If the timer is non-repeating, it is automatically invalidated after firing, even if its scheduled fire date has not arrived.
 
 ## See Also
 
-- [func invalidate()](timer/invalidate.md)
+### Related Documentation
+- [func invalidate()](./invalidate%28%29.md)
   Stops the timer from ever firing again and requests its removal from its run loop.
 
 

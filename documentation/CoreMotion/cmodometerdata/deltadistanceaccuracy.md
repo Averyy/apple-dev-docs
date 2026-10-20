@@ -1,7 +1,8 @@
 # deltaDistanceAccuracy
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accuracy of the change in distance value.
 
@@ -19,15 +20,20 @@ The accuracy of the change in distance value.
 var deltaDistanceAccuracy: CLLocationAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationAccuracy deltaDistanceAccuracy;
+```
+
 #### Discussion
 
-This property measures the accuracy of the [`deltaDistance`](cmodometerdata/deltadistance.md) property.
+This property measures the accuracy of the [`deltaDistance`](./deltadistance.md) property.
 
 ## See Also
 
-- [var speedAccuracy: CLLocationSpeedAccuracy](cmodometerdata/speedaccuracy.md)
+### Getting the location accuracy
+- [var speedAccuracy: CLLocationSpeedAccuracy](./speedaccuracy.md)
   The accuracy of the speed value.
-- [var verticalAccuracy: CLLocationAccuracy](cmodometerdata/verticalaccuracy.md)
+- [var verticalAccuracy: CLLocationAccuracy](./verticalaccuracy.md)
   The validity of the altitude values and their estimated uncertainty, measured in meters.
 
 

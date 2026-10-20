@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mymsg {
     ...
 };
@@ -17,8 +17,8 @@ struct mymsg {
 ## Topics
 
 ### Instance Properties
-- [mtext](mymsg/1529596-mtext.md)
-- [mtype](mymsg/1529625-mtype.md)
+- [mtext](./mymsg/api-1529596-mtext.md)
+- [mtype](./mymsg/api-1529625-mtype.md)
 
 
 ---

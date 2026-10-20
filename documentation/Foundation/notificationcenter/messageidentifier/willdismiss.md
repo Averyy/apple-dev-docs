@@ -1,7 +1,8 @@
 # willDismiss
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willDismiss: NotificationCenter.BaseMessageIdentifier<NSComboBox.WillDismissMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSComboBox.WillDismissMessage>`.
 
 
 ---

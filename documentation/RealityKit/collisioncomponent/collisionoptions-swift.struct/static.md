@@ -1,7 +1,8 @@
 # static
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Omits reporting collisions with static collision objects.
 

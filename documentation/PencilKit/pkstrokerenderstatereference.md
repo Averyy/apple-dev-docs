@@ -1,7 +1,8 @@
 # PKStrokeRenderStateReference
 
 **Framework**: PencilKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that captures the render-time state of a stroke, such as grain texture position.
 
@@ -18,37 +19,41 @@ An object that captures the render-time state of a stroke, such as grain texture
 class PKStrokeRenderStateReference
 ```
 
+```objc
+@interface PKStrokeRenderState : NSObject
+```
+
 #### Overview
 
-`PKStrokeRenderState` is the Objective-C representation of a stroke’s rendering context. It conforms to `NSCopying` and `NSSecureCoding` for archiving. In Swift, use the equivalent value type [`PKStroke.RenderState`](pkstroke-swift.struct/renderstate-swift.struct.md) instead.
+`PKStrokeRenderState` is the Objective-C representation of a stroke’s rendering context. It conforms to `NSCopying` and `NSSecureCoding` for archiving. In Swift, use the equivalent value type [`PKStroke.RenderState`](./pkstroke-swift.struct/renderstate-swift.struct.md) instead.
 
 ## Topics
 
 ### Getting the render state
-- [var grainOffset: CGPoint](pkstrokerenderstatereference/grainoffset.md)
+- [var grainOffset: CGPoint](./pkstrokerenderstatereference/grainoffset.md)
   The pre-transform position of the grain texture for strokes with a backing grain texture such as crayon.
 ### Using Swift types
-- [PKStroke.RenderState](pkstroke-swift.struct/renderstate-swift.struct.md)
+- [PKStroke.RenderState](./pkstroke-swift.struct/renderstate-swift.struct.md)
   A value that captures the render-time state of a stroke, such as grain texture position.
 ### Initializers
-- [convenience init(PKStroke.RenderState)](pkstrokerenderstatereference/init(_:).md)
+- [convenience init(PKStroke.RenderState)](./pkstrokerenderstatereference/init%28_%29.md)
   Creates a `PKStrokeRenderStateReference` from its Swift counterpart `PKStroke.RenderState`.
-- [init?(coder: NSCoder)](pkstrokerenderstatereference/init(coder:).md)
+- [init?(coder: NSCoder)](./pkstrokerenderstatereference/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

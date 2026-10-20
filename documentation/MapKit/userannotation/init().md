@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotation that displays the person’s current location.
 
@@ -11,7 +12,7 @@ Creates an annotation that displays the person’s current location.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,11 +24,12 @@ Creates an annotation that displays the person’s current location.
 
 ## See Also
 
-- [init(anchor: UnitPoint)](userannotation/init(anchor:).md)
+### Creating a user annotation
+- [init(anchor: UnitPoint)](./init%28anchor%29.md)
   Creates an annotation that displays the person’s current location using the system styled user location indicator with the specified anchor point.
-- [init(anchor: UnitPoint, content: (UserLocation) -> Content)](userannotation/init(anchor:content:)-8u3r4.md)
+- [init(anchor: UnitPoint, content: (UserLocation) -> Content)](./init%28anchor,content%29-8u3r4.md)
   Creates an annotation that displays a person’s current location using the system styled user location indicator with the specified anchor point using a custom view.
-- [init(anchor: UnitPoint, content: () -> Content)](userannotation/init(anchor:content:)-3e78j.md)
+- [init(anchor: UnitPoint, content: () -> Content)](./init%28anchor,content%29-3e78j.md)
   Create an annotation that displays the person’s current location of the user using a custom view.
 
 

@@ -1,14 +1,15 @@
 # impl_routine
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mig_impl_routine_t impl_routine;
 ```
 

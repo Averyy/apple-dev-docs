@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to information pertaining to the name field.
 
@@ -15,9 +16,13 @@ A pointer to information pertaining to the name field.
 var value: UnsafeMutableRawPointer?
 ```
 
+```c
+void * value;
+```
+
 #### Discussion
 
-If the `name` field is set to the value represented by the constant [`kAuthorizationRightExecute`](kauthorizationrightexecute.md), then set the `value` field to the full POSIX pathname of the tool you want to execute. In most other cases, set this field to `NULL`.
+If the `name` field is set to the value represented by the constant [`kAuthorizationRightExecute`](../kauthorizationrightexecute.md), then set the `value` field to the full POSIX pathname of the tool you want to execute. In most other cases, set this field to `NULL`.
 
 
 ---

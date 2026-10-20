@@ -1,7 +1,8 @@
 # HasCollision
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface used for ray casting and collision detection.
 
@@ -11,7 +12,7 @@ An interface used for ray casting and collision detection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,19 +24,19 @@ An interface used for ray casting and collision detection.
 ## Topics
 
 ### Getting the component
-- [var collision: CollisionComponent?](hascollision/collision.md)
+- [var collision: CollisionComponent?](./hascollision/collision.md)
   The collision component that gives the entity the ability to participate in collision simulations.
 
 ## Relationships
 
 ### Inherits From
-- [HasTransform](hastransform.md)
+- [HasTransform](./hastransform.md)
 ### Inherited By
-- [HasPhysics](hasphysics.md)
-- [HasPhysicsBody](hasphysicsbody.md)
+- [HasPhysics](./hasphysics.md)
+- [HasPhysicsBody](./hasphysicsbody.md)
 ### Conforming Types
-- [ModelEntity](modelentity.md)
-- [TriggerVolume](triggervolume.md)
+- [ModelEntity](./modelentity.md)
+- [TriggerVolume](./triggervolume.md)
 
 
 ---

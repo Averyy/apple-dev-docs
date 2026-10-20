@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to modify a Game Center leaderboard update request.
 
@@ -10,7 +11,7 @@ The request body you use to modify a Game Center leaderboard update request.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2UpdateRequest.Data.Attributes
 ```
 
@@ -40,9 +41,9 @@ object GameCenterLeaderboardV2UpdateRequest.Data.Attributes
 - `referenceName` (string)
 - `scoreRangeEnd` (number)
 - `scoreRangeStart` (number)
-- `scoreSortType` (string)
-- `submissionType` (string)
-- `visibility` (string)
+- `scoreSortType` (string): **Allowed Values**: `ASC`, `DESC`
+- `submissionType` (string): **Allowed Values**: `BEST_SCORE`, `MOST_RECENT_SCORE`
+- `visibility` (string): **Allowed Values**: `SHOW_FOR_ALL`, `HIDE_FOR_ALL`
 
 
 ---

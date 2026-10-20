@@ -1,7 +1,8 @@
 # maskRectangle
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rectangular display area within the image.
 

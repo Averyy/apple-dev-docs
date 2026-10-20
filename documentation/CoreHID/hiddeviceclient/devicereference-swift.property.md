@@ -1,7 +1,8 @@
 # deviceReference
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reference to the HID device used to create the  HID client device.
 
@@ -17,13 +18,14 @@ final let deviceReference: HIDDeviceClient.DeviceReference
 
 #### Discussion
 
-For more details, see [`HIDDeviceClient.DeviceReference`](hiddeviceclient/devicereference-swift.struct.md).
+For more details, see [`HIDDeviceClient.DeviceReference`](./devicereference-swift.struct.md).
 
 ## See Also
 
-- [init?(deviceReference: HIDDeviceClient.DeviceReference)](hiddeviceclient/init(devicereference:).md)
+### Create a device client
+- [init?(deviceReference: HIDDeviceClient.DeviceReference)](./init%28devicereference%29.md)
   Creates a client for a HID device.
-- [HIDDeviceClient.DeviceReference](hiddeviceclient/devicereference-swift.struct.md)
+- [HIDDeviceClient.DeviceReference](./devicereference-swift.struct.md)
   A reference to a HID device on the system.
 
 

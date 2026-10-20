@@ -1,7 +1,8 @@
 # NSDateComponentUndefined
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a date component without a value.
 
@@ -20,9 +21,14 @@ Specifies a date component without a value.
 var NSDateComponentUndefined: Int { get }
 ```
 
+```c
+NSDateComponentUndefined
+```
+
 ## See Also
 
-- [var NSUndefinedDateComponent: Int](nsundefineddatecomponent.md)
+### Constants
+- [var NSUndefinedDateComponent: Int](./nsundefineddatecomponent.md)
   Specifies a date component without a value.
 
 

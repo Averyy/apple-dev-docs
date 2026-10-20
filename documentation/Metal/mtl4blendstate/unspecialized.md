@@ -1,7 +1,8 @@
 # MTL4BlendState.unspecialized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defers determining the blending stage.
 
@@ -19,9 +20,13 @@ Defers determining the blending stage.
 case unspecialized
 ```
 
+```c
+MTL4BlendStateUnspecialized
+```
+
 #### Discussion
 
-Behaves as [`MTL4BlendState.disabled`](mtl4blendstate/disabled.md) until you specialize this pipeline value.
+Behaves as [`MTL4BlendState.disabled`](./disabled.md) until you specialize this pipeline value.
 
 
 ---

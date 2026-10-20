@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the delegate object.
 
@@ -14,9 +15,14 @@ Specifies the delegate object.
 unowned(unsafe) var delegate: AnyObject! { get set }
 ```
 
+```objc
+@property (nonatomic, assign) id delegate;
+```
+
 ## See Also
 
-- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../objectivec/nsobject-swift.class/saveoptions(_:shouldshowuttype:).md)
+### Related Documentation
+- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../../ObjectiveC/nsobject-swift.class/saveoptions%28_,shouldshowuttype%29.md)
   Called to determine if the specified uniform type identifier should be shown in the save panel.
 
 

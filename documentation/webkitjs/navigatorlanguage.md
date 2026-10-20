@@ -1,7 +1,8 @@
 # NavigatorLanguage
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface NavigatorLanguage
 ```
 
 ## Topics
 
 ### Instance Properties
-- [language](navigatorlanguage/2528135-language.md)
-- [languages](navigatorlanguage/2871106-languages.md)
+- [language](./navigatorlanguage/api-2528135-language.md)
+- [languages](./navigatorlanguage/api-2871106-languages.md)
 
 
 ---

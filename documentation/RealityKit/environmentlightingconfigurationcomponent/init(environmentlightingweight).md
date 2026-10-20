@@ -1,7 +1,8 @@
 # init(environmentLightingWeight:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an environment-lighting configuration component.
 

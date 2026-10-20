@@ -1,12 +1,15 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the observed object that provides bindings to its properties.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 9.2
+
+> **Deprecated**: Use WKApplicationDelegateAdaptor with a WKApplicationDelegate instead.
 
 ## Declaration
 
@@ -14,6 +17,8 @@ A projection of the observed object that provides bindings to its properties.
 @MainActor
 @preconcurrency var projectedValue: ObservedObject<DelegateType>.Wrapper { get }
 ```
+
+Available when `DelegateType` inherits `NSObject`, `DelegateType` conforms to `ObservableObject`, and `DelegateType` conforms to `WKExtensionDelegate`.
 
 #### Discussion
 
@@ -27,7 +32,7 @@ class MyExtensionDelegate: NSObject, WKExtensionDelegate, ObservableObject {
 }
 ```
 
-If you declare the delegate in your [`App`](app.md) using the [`WKExtensionDelegateAdaptor`](wkextensiondelegateadaptor.md) property wrapper, you can get the delegate that SwiftUI instantiates from the environment and access a binding to its published values from any view in your extension:
+If you declare the delegate in your [`App`](../app.md) using the [`WKExtensionDelegateAdaptor`](../wkextensiondelegateadaptor.md) property wrapper, you can get the delegate that SwiftUI instantiates from the environment and access a binding to its published values from any view in your extension:
 
 ```swift
 struct MyView: View {
@@ -41,7 +46,8 @@ struct MyView: View {
 
 ## See Also
 
-- [var wrappedValue: DelegateType](wkextensiondelegateadaptor/wrappedvalue.md)
+### Getting the delegate adaptor
+- [var wrappedValue: DelegateType](./wrappedvalue.md)
   The underlying delegate.
 
 

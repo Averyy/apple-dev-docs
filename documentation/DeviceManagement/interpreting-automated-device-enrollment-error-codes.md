@@ -1,6 +1,7 @@
 # Interpreting Automated Device Enrollment error codes
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Interpret the error codes you might encounter or that can happen during authentication.
 
@@ -29,7 +30,8 @@ An `HTTP 403 Forbidden` error indicates one of the following:
 
 ## See Also
 
-- [Examining server tokens](examining-server-tokens.md)
+### Examples and error codes
+- [Examining server tokens](./examining-server-tokens.md)
   View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
 
 

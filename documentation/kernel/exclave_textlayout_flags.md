@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum exclave_textlayout_flags : uint64_t {
     ...
 };
@@ -17,8 +17,8 @@ enum exclave_textlayout_flags : uint64_t {
 ## Topics
 
 ### Constants
-- [kExclaveTextLayoutLoadAddressesSynthetic](exclave_textlayout_flags/kexclavetextlayoutloadaddressessynthetic.md)
-- [kExclaveTextLayoutLoadAddressesUnslid](exclave_textlayout_flags/kexclavetextlayoutloadaddressesunslid.md)
+- [kExclaveTextLayoutLoadAddressesSynthetic](./exclave_textlayout_flags/kexclavetextlayoutloadaddressessynthetic.md)
+- [kExclaveTextLayoutLoadAddressesUnslid](./exclave_textlayout_flags/kexclavetextlayoutloadaddressesunslid.md)
 
 
 ---

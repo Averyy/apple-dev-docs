@@ -1,23 +1,30 @@
 # cancelGeocode()
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a pending geocoding request.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 26.0
+- iPadOS 5.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 2.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use MKGeocodingRequest
 
 ## Declaration
 
 ```swift
 func cancelGeocode()
+```
+
+```objc
+- (void) cancelGeocode;
 ```
 
 #### Discussion
@@ -28,7 +35,8 @@ If the request is not pending, because it has already returned or has not yet be
 
 ## See Also
 
-- [var isGeocoding: Bool](clgeocoder/isgeocoding.md)
+### Managing geocoding requests
+- [var isGeocoding: Bool](./isgeocoding.md)
   A Boolean value indicating whether the receiver is in the middle of geocoding its value.
 
 

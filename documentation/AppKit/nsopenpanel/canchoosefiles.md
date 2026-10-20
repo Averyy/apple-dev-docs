@@ -1,12 +1,13 @@
 # canChooseFiles
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the user can choose files in the panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A Boolean that indicates whether the user can choose files in the panel.
 var canChooseFiles: Bool { get set }
 ```
 
+```objc
+@property BOOL canChooseFiles;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), users can choose files in the panel.
+When the value of this property is [`true`](../../Swift/true.md), users can choose files in the panel.
 
 ## See Also
 
-- [var canChooseDirectories: Bool](nsopenpanel/canchoosedirectories.md)
+### Configuring the Open Panel
+- [var canChooseDirectories: Bool](./canchoosedirectories.md)
   A Boolean that indicates whether the user can choose directories in the panel.
-- [var resolvesAliases: Bool](nsopenpanel/resolvesaliases.md)
+- [var resolvesAliases: Bool](./resolvesaliases.md)
   A Boolean that indicates whether the panel resolves aliases.
-- [var allowsMultipleSelection: Bool](nsopenpanel/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean that indicates whether the user may select multiple files and directories.
-- [var isAccessoryViewDisclosed: Bool](nsopenpanel/isaccessoryviewdisclosed.md)
+- [var isAccessoryViewDisclosed: Bool](./isaccessoryviewdisclosed.md)
   A Boolean value that indicates whether the panel’s accessory view is visible.
 
 

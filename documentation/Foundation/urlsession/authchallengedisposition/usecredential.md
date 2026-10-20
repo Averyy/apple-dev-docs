@@ -1,7 +1,8 @@
 # URLSession.AuthChallengeDisposition.useCredential
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the specified credential, which may be `nil`.
 
@@ -20,17 +21,22 @@ Use the specified credential, which may be `nil`.
 case useCredential
 ```
 
+```c
+NSURLSessionAuthChallengeUseCredential
+```
+
 ## Mentions
 
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
+- [Performing manual server trust authentication](../../performing-manual-server-trust-authentication.md)
 
 ## See Also
 
-- [URLSession.AuthChallengeDisposition.performDefaultHandling](urlsession/authchallengedisposition/performdefaulthandling.md)
+### Constants
+- [URLSession.AuthChallengeDisposition.performDefaultHandling](./performdefaulthandling.md)
   Use the default handling for the challenge as though this delegate method were not implemented. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](urlsession/authchallengedisposition/cancelauthenticationchallenge.md)
+- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](./cancelauthenticationchallenge.md)
   Cancel the entire request. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.rejectProtectionSpace](urlsession/authchallengedisposition/rejectprotectionspace.md)
+- [URLSession.AuthChallengeDisposition.rejectProtectionSpace](./rejectprotectionspace.md)
   Reject this challenge, and call the authentication delegate method again with the next authentication protection space. The provided credential parameter is ignored.
 
 

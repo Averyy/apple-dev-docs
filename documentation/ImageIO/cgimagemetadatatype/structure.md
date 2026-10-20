@@ -1,7 +1,8 @@
 # CGImageMetadataType.structure
 
 **Framework**: Image I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A collection of keys and values.
 
@@ -20,25 +21,30 @@ A collection of keys and values.
 case structure
 ```
 
+```c
+kCGImageMetadataTypeStructure
+```
+
 #### Discussion
 
 Unlike array elements, fields of a structure may belong to different namespaces.
 
 ## See Also
 
-- [CGImageMetadataType.invalid](cgimagemetadatatype/invalid.md)
+### Metadata Types
+- [CGImageMetadataType.invalid](./invalid.md)
   An invalid metadata type.
-- [CGImageMetadataType.default](cgimagemetadatatype/default.md)
+- [CGImageMetadataType.default](./default.md)
   The default type for new tags.
-- [CGImageMetadataType.string](cgimagemetadatatype/string.md)
+- [CGImageMetadataType.string](./string.md)
   A string value.
-- [CGImageMetadataType.arrayUnordered](cgimagemetadatatype/arrayunordered.md)
+- [CGImageMetadataType.arrayUnordered](./arrayunordered.md)
   An array that doesn’t preserve the order of items.
-- [CGImageMetadataType.arrayOrdered](cgimagemetadatatype/arrayordered.md)
+- [CGImageMetadataType.arrayOrdered](./arrayordered.md)
   An array that preserves the order of items.
-- [CGImageMetadataType.alternateArray](cgimagemetadatatype/alternatearray.md)
+- [CGImageMetadataType.alternateArray](./alternatearray.md)
   An ordered array, in which all elements are alternates for the same value.
-- [CGImageMetadataType.alternateText](cgimagemetadatatype/alternatetext.md)
+- [CGImageMetadataType.alternateText](./alternatetext.md)
   An alternate array, in which all elements are localized strings for the same value.
 
 

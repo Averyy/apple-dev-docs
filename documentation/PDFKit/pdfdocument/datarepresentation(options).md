@@ -1,7 +1,8 @@
 # dataRepresentation(options:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the document as an `NSData` object with additional options applied, such as filters.
 
@@ -19,9 +20,14 @@ Returns a representation of the document as an `NSData` object with additional o
 func dataRepresentation(options: [AnyHashable : Any] = [:]) -> Data?
 ```
 
+```objc
+- (NSData *) dataRepresentationWithOptions:(NSDictionary *) options;
+```
+
 ## See Also
 
-- [func dataRepresentation() -> Data?](pdfdocument/datarepresentation.md)
+### Creating Data Representations
+- [func dataRepresentation() -> Data?](./datarepresentation%28%29.md)
   Returns a representation of the document as an `NSData` object.
 
 

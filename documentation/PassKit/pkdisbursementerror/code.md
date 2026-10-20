@@ -1,7 +1,8 @@
 # PKDisbursementError.Code
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe errors that can occur while processing the disbursement.
 
@@ -18,43 +19,48 @@ Values that describe errors that can occur while processing the disbursement.
 enum Code
 ```
 
+```c
+enum PKDisbursementErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [PKDisbursementError.Code.recipientContactInvalidError](pkdisbursementerror/code/recipientcontactinvaliderror.md)
+- [PKDisbursementError.Code.recipientContactInvalidError](./code/recipientcontactinvaliderror.md)
   The recipient’s contact information wasn’t valid.
-- [PKDisbursementError.Code.unsupportedCardError](pkdisbursementerror/code/unsupportedcarderror.md)
+- [PKDisbursementError.Code.unsupportedCardError](./code/unsupportedcarderror.md)
   The framework doesn’t support the card the individual presented.
-- [PKDisbursementError.Code.unknownError](pkdisbursementerror/code/unknownerror.md)
+- [PKDisbursementError.Code.unknownError](./code/unknownerror.md)
   An unknown error occurred.
 ### Initializers
-- [init?(rawValue: Int)](pkdisbursementerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PKDisbursementError](pkdisbursementerror.md)
+### Errors
+- [struct PKDisbursementError](../pkdisbursementerror.md)
   A structure that describes errors that can occur while processing the disbursement.
-- [struct PKDisbursementErrorKey](pkdisbursementerrorkey.md)
+- [struct PKDisbursementErrorKey](../pkdisbursementerrorkey.md)
   Values that describe errors that can occur when processing disbursements.
-- [struct PKPaymentError](pkpaymenterror.md)
+- [struct PKPaymentError](../pkpaymenterror.md)
   An error type that you create to indicate problems with address or contact information on an Apple Pay sheet.
-- [PKPaymentError.Code](pkpaymenterror/code.md)
+- [PKPaymentError.Code](../pkpaymenterror/code.md)
   An error code that you provide to indicate problems with address or contact information on an Apple Pay sheet.
-- [struct PKPaymentErrorKey](pkpaymenterrorkey.md)
+- [struct PKPaymentErrorKey](../pkpaymenterrorkey.md)
   Additional details about an error on the Apple Pay sheet.
-- [let PKPaymentErrorDomain: String](pkpaymenterrordomain.md)
+- [let PKPaymentErrorDomain: String](../pkpaymenterrordomain.md)
   The error domain for specific errors associated with Apple Pay in-app or web payments.
-- [let PKDisbursementErrorDomain: String](pkdisbursementerrordomain.md)
+- [let PKDisbursementErrorDomain: String](../pkdisbursementerrordomain.md)
   The error domain to use for errors with in-app disbursements.
 
 

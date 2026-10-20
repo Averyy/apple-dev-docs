@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new vector from a Spatial size.
 
@@ -19,6 +20,8 @@ Returns a new vector from a Spatial size.
 ```swift
 init(_ size: Size3DFloat)
 ```
+
+Available when `Scalar` is `Double`.
 
 #### Discussion
 

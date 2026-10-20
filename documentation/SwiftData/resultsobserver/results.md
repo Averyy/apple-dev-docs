@@ -1,7 +1,8 @@
 # results
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current collection of fetched models matching the fetch criteria.
 
@@ -26,9 +27,10 @@ This property is updated automatically when relevant changes occur in the model 
 
 ## See Also
 
-- [func element(at: IndexPath) -> Element?](resultsobserver/element(at:).md)
+### Accessing observer results
+- [func element(at: IndexPath) -> Element?](./element%28at%29.md)
   Returns the element at the given index path in the sectioned results.
-- [func indexPath(for: Element) -> IndexPath?](resultsobserver/indexpath(for:).md)
+- [func indexPath(for: Element) -> IndexPath?](./indexpath%28for%29.md)
   Returns the index path of the given element within the sectioned results.
 
 

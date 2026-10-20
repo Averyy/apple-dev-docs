@@ -1,21 +1,26 @@
 # CTLineBreakMode.byWordWrapping
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case byWordWrapping
+```
+
+```c
+kCTLineBreakByWordWrapping
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ Wrapping occurs at word boundaries unless the word itself doesn’t fit on a sin
 
 ## See Also
 
-- [CTLineBreakMode.byCharWrapping](ctlinebreakmode/bycharwrapping.md)
-- [CTLineBreakMode.byClipping](ctlinebreakmode/byclipping.md)
-- [CTLineBreakMode.byTruncatingHead](ctlinebreakmode/bytruncatinghead.md)
-- [CTLineBreakMode.byTruncatingTail](ctlinebreakmode/bytruncatingtail.md)
-- [CTLineBreakMode.byTruncatingMiddle](ctlinebreakmode/bytruncatingmiddle.md)
+### Constants
+- [CTLineBreakMode.byCharWrapping](./bycharwrapping.md)
+- [CTLineBreakMode.byClipping](./byclipping.md)
+- [CTLineBreakMode.byTruncatingHead](./bytruncatinghead.md)
+- [CTLineBreakMode.byTruncatingTail](./bytruncatingtail.md)
+- [CTLineBreakMode.byTruncatingMiddle](./bytruncatingmiddle.md)
 
 
 ---

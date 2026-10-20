@@ -1,7 +1,8 @@
 # table(_:didSelectRowAt:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to let you know that the user selected a row in the table.
 
@@ -12,6 +13,10 @@ Called to let you know that the user selected a row in the table.
 
 ```swift
 func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int)
+```
+
+```objc
+- (void) table:(WKInterfaceTable *) table didSelectRowAtIndex:(NSInteger) rowIndex;
 ```
 
 #### Discussion

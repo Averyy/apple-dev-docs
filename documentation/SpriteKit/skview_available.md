@@ -1,16 +1,17 @@
 # SKVIEW_AVAILABLE
 
 **Framework**: SpriteKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 var SKVIEW_AVAILABLE: Int32 { get }
 ```
 
+```c
+#define SKVIEW_AVAILABLE
+```
+
 ## See Also
 
-- [var SK_VERSION: Int32](sk_version.md)
+### Global variables
+- [var SK_VERSION: Int32](./sk_version.md)
 
 
 ---

@@ -1,16 +1,17 @@
 # init(_:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](bnnsoptimizersgdmomentumvariant/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsoptimizersgdmomentumvariant/rawvalue.md)
-- [var BNNSSGDMomentumVariant0: BNNSOptimizerSGDMomentumVariant](bnnssgdmomentumvariant0.md)
+### Momentum Variants
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
+- [var rawValue: UInt32](./rawvalue.md)
+- [var BNNSSGDMomentumVariant0: BNNSOptimizerSGDMomentumVariant](../bnnssgdmomentumvariant0.md)
   A constant that indicates SGD momentum variant 0.
-- [var BNNSSGDMomentumVariant1: BNNSOptimizerSGDMomentumVariant](bnnssgdmomentumvariant1.md)
+- [var BNNSSGDMomentumVariant1: BNNSOptimizerSGDMomentumVariant](../bnnssgdmomentumvariant1.md)
   A constant that indicates SGD momentum variant 1.
-- [var BNNSSGDMomentumVariant2: BNNSOptimizerSGDMomentumVariant](bnnssgdmomentumvariant2.md)
+- [var BNNSSGDMomentumVariant2: BNNSOptimizerSGDMomentumVariant](../bnnssgdmomentumvariant2.md)
   A constant that indicates SGD momentum variant 2.
 
 

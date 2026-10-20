@@ -1,7 +1,8 @@
 # init(parameterID:controlPoints:relativeTime:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a parameter curve from its parameter ID, control points, and start time.
 
@@ -9,7 +10,7 @@ Creates a parameter curve from its parameter ID, control points, and start time.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -17,6 +18,10 @@ Creates a parameter curve from its parameter ID, control points, and start time.
 
 ```swift
 init(parameterID: CHHapticDynamicParameter.ID, controlPoints: [CHHapticParameterCurve.ControlPoint], relativeTime: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithParameterID:(CHHapticDynamicParameterID) parameterID controlPoints:(NSArray<CHHapticParameterCurveControlPoint *> *) controlPoints relativeTime:(NSTimeInterval) relativeTime;
 ```
 
 ## Parameters
@@ -27,7 +32,8 @@ init(parameterID: CHHapticDynamicParameter.ID, controlPoints: [CHHapticParameter
 
 ## See Also
 
-- [CHHapticParameterCurve.ControlPoint](chhapticparametercurve/controlpoint.md)
+### Creating a Curve
+- [CHHapticParameterCurve.ControlPoint](./controlpoint.md)
   A single control point in a parameter curve.
 
 

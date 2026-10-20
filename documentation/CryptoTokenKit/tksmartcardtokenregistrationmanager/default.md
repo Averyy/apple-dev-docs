@@ -1,7 +1,8 @@
 # default
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Default instance of registration manager
 
@@ -15,6 +16,10 @@ Default instance of registration manager
 
 ```swift
 class var `default`: TKSmartCardTokenRegistrationManager { get }
+```
+
+```objc
+@property (class, readonly) TKSmartCardTokenRegistrationManager * defaultManager;
 ```
 
 

@@ -1,7 +1,8 @@
 # addSubtree(_:switchValue:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child node with the given switch value.
 
@@ -19,6 +20,10 @@ Adds a child node with the given switch value.
 func addSubtree(_ subtree: PHASESoundEventNodeDefinition, switchValue: String)
 ```
 
+```objc
+- (void) addSubtree:(PHASESoundEventNodeDefinition *) subtree switchValue:(NSString *) switchValue;
+```
+
 ## Parameters
 
 - `subtree`: The child node, which itself can contain a hierarchical tree of descendent nodes.
@@ -26,7 +31,8 @@ func addSubtree(_ subtree: PHASESoundEventNodeDefinition, switchValue: String)
 
 ## See Also
 
-- [var switchMetaParameterDefinition: PHASEStringMetaParameterDefinition](phaseswitchnodedefinition/switchmetaparameterdefinition.md)
+### Managing Child Nodes
+- [var switchMetaParameterDefinition: PHASEStringMetaParameterDefinition](./switchmetaparameterdefinition.md)
   The meta parameter that holds the name of the child node to invoke.
 
 

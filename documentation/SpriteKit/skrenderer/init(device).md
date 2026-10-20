@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes with a specific GPU to render into.
 
@@ -19,13 +20,17 @@ Initializes with a specific GPU to render into.
 init(device: any MTLDevice)
 ```
 
+```objc
++ (SKRenderer *) rendererWithDevice:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
 A new renderer object.
 
 #### Discussion
 
-Pass in the same Metal device that is associated to the Metal command buffer passed into [`render(withViewport:commandBuffer:renderPassDescriptor:)`](skrenderer/render(withviewport:commandbuffer:renderpassdescriptor:).md).
+Pass in the same Metal device that is associated to the Metal command buffer passed into [`render(withViewport:commandBuffer:renderPassDescriptor:)`](./render%28withviewport,commandbuffer,renderpassdescriptor%29.md).
 
 ## Parameters
 
@@ -33,7 +38,8 @@ Pass in the same Metal device that is associated to the Metal command buffer pas
 
 ## See Also
 
-- [var scene: SKScene?](skrenderer/scene.md)
+### First Steps
+- [var scene: SKScene?](./scene.md)
   The scene this renderer will draw into the Metal command buffer.
 
 

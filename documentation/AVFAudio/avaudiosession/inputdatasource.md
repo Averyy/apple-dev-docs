@@ -1,7 +1,8 @@
 # inputDataSource
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected input data source.
 
@@ -19,25 +20,30 @@ The currently selected input data source.
 var inputDataSource: AVAudioSessionDataSourceDescription? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAudioSessionDataSourceDescription * inputDataSource;
+```
+
 #### Discussion
 
-The value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if switching between multiple input sources isn’t currently possible. Only certain devices and peripherals, such as an iPhone equipped with both front- and rear-facing microphones, support this feature.
+The value of this property is [`nil`](../../ObjectiveC/nil-227m0.md) if switching between multiple input sources isn’t currently possible. Only certain devices and peripherals, such as an iPhone equipped with both front- and rear-facing microphones, support this feature.
 
 ## See Also
 
-- [var isInputAvailable: Bool](avaudiosession/isinputavailable.md)
+### Configuring inputs
+- [var isInputAvailable: Bool](./isinputavailable.md)
   A Boolean value that indicates whether an audio input path is available.
-- [var availableInputs: [AVAudioSessionPortDescription]?](avaudiosession/availableinputs.md)
+- [var availableInputs: [AVAudioSessionPortDescription]?](./availableinputs.md)
   An array of input ports available for audio routing.
-- [var preferredInput: AVAudioSessionPortDescription?](avaudiosession/preferredinput.md)
+- [var preferredInput: AVAudioSessionPortDescription?](./preferredinput.md)
   The preferred input port for audio routing.
-- [func setPreferredInput(AVAudioSessionPortDescription?) throws](avaudiosession/setpreferredinput(_:).md)
+- [func setPreferredInput(AVAudioSessionPortDescription?) throws](./setpreferredinput%28_%29.md)
   Sets the preferred input port for audio routing.
-- [var inputDataSources: [AVAudioSessionDataSourceDescription]?](avaudiosession/inputdatasources.md)
+- [var inputDataSources: [AVAudioSessionDataSourceDescription]?](./inputdatasources.md)
   An array of available data sources for the audio session’s current input port.
-- [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setinputdatasource(_:).md)
+- [func setInputDataSource(AVAudioSessionDataSourceDescription?) throws](./setinputdatasource%28_%29.md)
   Selects a data source for the audio session’s current input port.
-- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
+- [class let availableInputsChangeNotification: NSNotification.Name](./availableinputschangenotification.md)
 
 
 ---

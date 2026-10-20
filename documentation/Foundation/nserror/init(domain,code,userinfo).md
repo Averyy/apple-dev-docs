@@ -1,7 +1,8 @@
 # init(domain:code:userInfo:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSError` object initialized for a given domain and code with a given `userInfo` dictionary.
 
@@ -18,6 +19,10 @@ Returns an `NSError` object initialized for a given domain and code with a given
 
 ```swift
 init(domain: String, code: Int, userInfo dict: [String : Any]? = nil)
+```
+
+```objc
+- (instancetype) initWithDomain:(NSErrorDomain) domain code:(NSInteger) code userInfo:(NSDictionary<NSString *,id> *) dict;
 ```
 
 #### Return Value

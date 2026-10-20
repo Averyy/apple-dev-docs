@@ -1,7 +1,8 @@
 # didChangeAutomaticTextReplacementNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the spell checker changed text using automatic text replacement.  This notification is posted to the app’s default notification center.
 
@@ -14,13 +15,18 @@ Posted when the spell checker changed text using automatic text replacement.  Th
 class let didChangeAutomaticTextReplacementNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSSpellCheckerDidChangeAutomaticTextReplacementNotification;
+```
+
 #### Discussion
 
-To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticTextReplacementMessage`](nsspellchecker/didchangeautomatictextreplacementmessage.md).
+To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticTextReplacementMessage`](./didchangeautomatictextreplacementmessage.md).
 
 ## See Also
 
-- [class let didChangeAutomaticSpellingCorrectionNotification: NSNotification.Name](nsspellchecker/didchangeautomaticspellingcorrectionnotification.md)
+### Notifications
+- [class let didChangeAutomaticSpellingCorrectionNotification: NSNotification.Name](./didchangeautomaticspellingcorrectionnotification.md)
   This notification is posted when the spell checker did change text using automatic spell checking correction. The are posted to the application’s default notification center.
 
 

@@ -1,7 +1,8 @@
 # init(userHandle:relyingParty:signature:clientDataHash:authenticatorData:credentialID:extensionOutput:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a passkey assertion credential object, optionally specifying an extension output.
 
@@ -30,7 +31,8 @@ convenience init(userHandle: Data, relyingParty: String, signature: Data, client
 
 ## See Also
 
-- [init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data)](aspasskeyassertioncredential/init(userhandle:relyingparty:signature:clientdatahash:authenticatordata:credentialid:).md)
+### Creating a passkey assertion credential
+- [init(userHandle: Data, relyingParty: String, signature: Data, clientDataHash: Data, authenticatorData: Data, credentialID: Data)](./init%28userhandle,relyingparty,signature,clientdatahash,authenticatordata,credentialid%29.md)
   Initializes a passkey assertion credential object.
 
 

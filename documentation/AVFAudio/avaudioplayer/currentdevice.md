@@ -1,7 +1,8 @@
 # currentDevice
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the current audio player.
 
@@ -14,9 +15,14 @@ The unique identifier of the current audio player.
 var currentDevice: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * currentDevice;
+```
+
 ## See Also
 
-- [var deviceCurrentTime: TimeInterval](avaudioplayer/devicecurrenttime.md)
+### Accessing device information
+- [var deviceCurrentTime: TimeInterval](./devicecurrenttime.md)
   The time value, in seconds, of the audio output device’s clock.
 
 

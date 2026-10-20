@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeRC2
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 RC2 algorithm.
 
@@ -12,6 +13,10 @@ RC2 algorithm.
 
 ```swift
 let kSecAttrKeyTypeRC2: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeRC2;
 ```
 
 

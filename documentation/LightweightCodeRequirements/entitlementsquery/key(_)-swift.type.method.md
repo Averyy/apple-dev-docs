@@ -1,7 +1,8 @@
 # key(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Match against the specified key name at the root of the entitlements dictionary.
 

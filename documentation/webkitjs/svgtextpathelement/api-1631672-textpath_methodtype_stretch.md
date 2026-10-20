@@ -9,17 +9,18 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short TEXTPATH_METHODTYPE_STRETCH;
 ```
 
 ## See Also
 
-- [TEXTPATH_METHODTYPE_ALIGN](svgtextpathelement/1631089-textpath_methodtype_align.md)
-- [TEXTPATH_METHODTYPE_UNKNOWN](svgtextpathelement/1629475-textpath_methodtype_unknown.md)
-- [TEXTPATH_SPACINGTYPE_AUTO](svgtextpathelement/1632554-textpath_spacingtype_auto.md)
-- [TEXTPATH_SPACINGTYPE_EXACT](svgtextpathelement/1632224-textpath_spacingtype_exact.md)
-- [TEXTPATH_SPACINGTYPE_UNKNOWN](svgtextpathelement/1629616-textpath_spacingtype_unknown.md)
+### Miscellaneous
+- [TEXTPATH_METHODTYPE_ALIGN](./api-1631089-textpath_methodtype_align.md)
+- [TEXTPATH_METHODTYPE_UNKNOWN](./api-1629475-textpath_methodtype_unknown.md)
+- [TEXTPATH_SPACINGTYPE_AUTO](./api-1632554-textpath_spacingtype_auto.md)
+- [TEXTPATH_SPACINGTYPE_EXACT](./api-1632224-textpath_spacingtype_exact.md)
+- [TEXTPATH_SPACINGTYPE_UNKNOWN](./api-1629616-textpath_spacingtype_unknown.md)
 
 
 ---

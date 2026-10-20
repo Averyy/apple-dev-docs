@@ -1,7 +1,8 @@
 # Edge.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of edges.
 
@@ -24,29 +25,29 @@ struct Set
 ## Topics
 
 ### Getting edge sets
-- [static let all: Edge.Set](edge/set/all.md)
-- [static let top: Edge.Set](edge/set/top.md)
-- [static let bottom: Edge.Set](edge/set/bottom.md)
-- [static let leading: Edge.Set](edge/set/leading.md)
-- [static let trailing: Edge.Set](edge/set/trailing.md)
-- [static let horizontal: Edge.Set](edge/set/horizontal.md)
-- [static let vertical: Edge.Set](edge/set/vertical.md)
+- [static let all: Edge.Set](./set/all.md)
+- [static let top: Edge.Set](./set/top.md)
+- [static let bottom: Edge.Set](./set/bottom.md)
+- [static let leading: Edge.Set](./set/leading.md)
+- [static let trailing: Edge.Set](./set/trailing.md)
+- [static let horizontal: Edge.Set](./set/horizontal.md)
+- [static let vertical: Edge.Set](./set/vertical.md)
 ### Creating an edge set
-- [init(Edge)](edge/set/init(_:).md)
+- [init(Edge)](./set/init%28_%29.md)
   Creates set of edges containing only the specified edge.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

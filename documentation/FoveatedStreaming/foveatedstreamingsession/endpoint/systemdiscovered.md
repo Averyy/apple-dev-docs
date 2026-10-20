@@ -1,7 +1,8 @@
 # systemDiscovered
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Connects to an endpoint the person selects from a list of endpoints the system discovers and presents.
 

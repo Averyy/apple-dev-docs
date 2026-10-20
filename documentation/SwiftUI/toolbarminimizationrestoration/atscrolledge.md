@@ -1,7 +1,8 @@
 # atScrollEdge
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The toolbar restores only when the scroll view’s content reaches the scroll edge.
 
@@ -18,11 +19,12 @@ static let atScrollEdge: ToolbarMinimizationRestoration
 
 #### Discussion
 
-Mid-scroll reversals do not restore the toolbar. Currently this is only honored alongside [`onScrollDown`](toolbarminimizationbehavior/onscrolldown.md) and only for [`navigationBar`](toolbarplacement/navigationbar.md).
+Mid-scroll reversals do not restore the toolbar. Currently this is only honored alongside [`onScrollDown`](../toolbarminimizationbehavior/onscrolldown.md) and only for [`navigationBar`](../toolbarplacement/navigationbar.md).
 
 ## See Also
 
-- [static let automatic: ToolbarMinimizationRestoration](toolbarminimizationrestoration/automatic.md)
+### Getting restoration options
+- [static let automatic: ToolbarMinimizationRestoration](./automatic.md)
   The system determines the restoration behavior.
 
 

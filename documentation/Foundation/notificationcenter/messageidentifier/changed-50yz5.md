@@ -1,7 +1,8 @@
 # changed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification posted when changes are made to the Calendar or Reminders database.
 
@@ -18,6 +19,8 @@ A notification posted when changes are made to the Calendar or Reminders databas
 ```swift
 static var changed: NotificationCenter.BaseMessageIdentifier<EKEventStore.EventStoreChanged> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<EKEventStore.EventStoreChanged>`.
 
 
 ---

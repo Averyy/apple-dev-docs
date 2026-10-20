@@ -1,7 +1,8 @@
 # UIMessageConversationContext.MessageEntry.DataKind.attachment
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message contains an attachment, such as an image or file.
 
@@ -16,11 +17,16 @@ The message contains an attachment, such as an image or file.
 case attachment
 ```
 
+```c
+UIMessageConversationEntryDataKindAttachment
+```
+
 ## See Also
 
-- [UIMessageConversationContext.MessageEntry.DataKind.other](uimessageconversationcontext/messageentry/datakind-swift.enum/other.md)
+### Kinds of data in a message
+- [UIMessageConversationContext.MessageEntry.DataKind.other](./other.md)
   The message contains other data, such as data that represents a sticker or a payment.
-- [UIMessageConversationContext.MessageEntry.DataKind.text](uimessageconversationcontext/messageentry/datakind-swift.enum/text.md)
+- [UIMessageConversationContext.MessageEntry.DataKind.text](./text.md)
   The message contains text.
 
 

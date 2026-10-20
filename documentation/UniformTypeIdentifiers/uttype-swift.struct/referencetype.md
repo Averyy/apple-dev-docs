@@ -1,7 +1,8 @@
 # UTType.ReferenceType
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the associated reference type.
 
@@ -22,7 +23,8 @@ typealias ReferenceType = UTTypeReference
 
 ## See Also
 
-- [var identifier: String](uttype-swift.struct/identifier.md)
+### Identifying a type
+- [var identifier: String](./identifier.md)
   The string that represents the type.
 
 

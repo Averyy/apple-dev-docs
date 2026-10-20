@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the machine learning key.
 
@@ -20,9 +21,14 @@ The name of the machine learning key.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var scope: String?](mlkey/scope.md)
+### Retrieving a key’s information
+- [var scope: String?](./scope.md)
   The applicable scope of the machine learning key.
 
 

@@ -1,7 +1,8 @@
 # isAbstract
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 True if the prim or any of its ancestors are a class.
 

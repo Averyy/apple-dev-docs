@@ -1,7 +1,8 @@
 # pairedRawImage
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sidecar file containing the logical `RAW` compliment of a `JPG` or other two-format image.
 
@@ -18,13 +19,18 @@ A sidecar file containing the logical `RAW` compliment of a `JPG` or other two-f
 var pairedRawImage: ICCameraFile? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) ICCameraFile * pairedRawImage;
+```
+
 #### Discussion
 
-This value contains a single-item subset of the [`sidecarFiles`](iccamerafile/sidecarfiles.md) array.
+This value contains a single-item subset of the [`sidecarFiles`](./sidecarfiles.md) array.
 
 ## See Also
 
-- [var sidecarFiles: [ICCameraItem]?](iccamerafile/sidecarfiles.md)
+### Identifying Related Files
+- [var sidecarFiles: [ICCameraItem]?](./sidecarfiles.md)
   An array of two camera files associated with this file.
 
 

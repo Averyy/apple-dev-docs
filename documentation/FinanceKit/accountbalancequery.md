@@ -1,7 +1,8 @@
 # AccountBalanceQuery
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines an account balance query.
 
@@ -22,33 +23,34 @@ Use an `AccountBalanceQuery` to find and filter specific balances in a person’
 ## Topics
 
 ### Initializers
-- [init(sortDescriptors: [SortDescriptor<AccountBalance>], predicate: Predicate<AccountBalance>?, limit: Int?, offset: Int?)](accountbalancequery/init(sortdescriptors:predicate:limit:offset:).md)
+- [init(sortDescriptors: [SortDescriptor<AccountBalance>], predicate: Predicate<AccountBalance>?, limit: Int?, offset: Int?)](./accountbalancequery/init%28sortdescriptors,predicate,limit,offset%29.md)
   Creates a new account balance query structure with the provided sort descriptors.
 ### Type Methods
-- [static func predicate(availableSince: Date, until: Date?) -> Predicate<AccountBalance>](accountbalancequery/predicate(availablesince:until:).md)
+- [static func predicate(availableSince: Date, until: Date?) -> Predicate<AccountBalance>](./accountbalancequery/predicate%28availablesince,until%29.md)
   A predicate that returns available account balances since a specified date, and, optionally, until another date.
-- [static func predicate(bookedSince: Date, until: Date?) -> Predicate<AccountBalance>](accountbalancequery/predicate(bookedsince:until:).md)
+- [static func predicate(bookedSince: Date, until: Date?) -> Predicate<AccountBalance>](./accountbalancequery/predicate%28bookedsince,until%29.md)
   A predicate that returns booked account balances since a specified date until another date.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance]](financestore/accountbalances(query:).md)
+### Balances
+- [func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance]](./financestore/accountbalances%28query%29.md)
   Returns a list of balances that meet the criteria in the provided account query.
-- [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](financestore/accountbalancehistory(foraccountid:since:ismonitoring:).md)
+- [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](./financestore/accountbalancehistory%28foraccountid,since,ismonitoring%29.md)
   Returns the account balance history since a time specified by the provided financial history token.
-- [struct AccountBalance](accountbalance.md)
+- [struct AccountBalance](./accountbalance.md)
   A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
-- [struct Balance](balance.md)
+- [struct Balance](./balance.md)
   A structure that describes an account balance.
-- [enum CreditDebitIndicator](creditdebitindicator.md)
+- [enum CreditDebitIndicator](./creditdebitindicator.md)
   Values that the framework uses to describe transactions as credits or debits.
-- [enum CurrentBalance](currentbalance.md)
+- [enum CurrentBalance](./currentbalance.md)
   Values that describe the state of an account’s credit balance.
 
 

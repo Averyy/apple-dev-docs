@@ -1,7 +1,8 @@
 # scrollsToTop
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the scroll-to-top gesture is enabled.
 
@@ -28,9 +29,10 @@ Default is `true`.
 
 ## See Also
 
-- [var isScrollEnabled: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/isscrollenabled.md)
+### Configuring scroll state
+- [var isScrollEnabled: Bool](./isscrollenabled.md)
   A Boolean value that determines whether scrolling is enabled.
-- [var isDirectionalLockEnabled: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/isdirectionallockenabled.md)
+- [var isDirectionalLockEnabled: Bool](./isdirectionallockenabled.md)
   A Boolean value that determines whether scrolling is disabled in a particular direction.
 
 

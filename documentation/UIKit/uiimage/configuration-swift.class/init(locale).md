@@ -1,7 +1,8 @@
 # init(locale:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(locale: Locale?)
+```
+
+```objc
++ (instancetype) configurationWithLocale:(NSLocale *) locale;
 ```
 
 

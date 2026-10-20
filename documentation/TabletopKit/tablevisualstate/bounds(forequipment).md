@@ -1,10 +1,11 @@
 # bounds(forEquipment:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 26.0 (renamed: bounds(for:))
 
 ## Declaration
 
@@ -14,14 +15,15 @@ func bounds(forEquipment equipment: some Equipment) -> TableVisualState.Oriented
 
 ## See Also
 
-- [TableVisualState.OrientedRect3D](tablevisualstate/orientedrect3d.md)
+### Representing 3D states
+- [TableVisualState.OrientedRect3D](./orientedrect3d.md)
   An object that represents the position and orientation of a 3D rectangle.
-- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(for:).md)
+- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](./bounds%28for%29.md)
   Returns the current pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
-- [func bounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(matching:).md)
-- [func goalBounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(forequipment:).md)
-- [func goalBounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(matching:).md)
-- [var tableBounds: TableVisualState.OrientedRect3D?](tablevisualstate/tablebounds.md)
+- [func bounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](./bounds%28matching%29.md)
+- [func goalBounds(forEquipment: some Equipment) -> TableVisualState.OrientedRect3D?](./goalbounds%28forequipment%29.md)
+- [func goalBounds(matching: EquipmentIdentifier) -> TableVisualState.OrientedRect3D?](./goalbounds%28matching%29.md)
+- [var tableBounds: TableVisualState.OrientedRect3D?](./tablebounds.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # containerFrame
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size in points of the frame where the text is laid out.
 

@@ -1,7 +1,8 @@
 # productType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the device used to save a sample.
 
@@ -19,6 +20,10 @@ A string that identifies the device used to save a sample.
 var productType: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * productType;
+```
+
 #### Discussion
 
 For samples saved on Apple Watch Series 2, HealthKit sets the product type property to `watch2,4`.
@@ -28,16 +33,17 @@ For samples saved on Apple Watch Series 2, HealthKit sets the product type prope
 ## Topics
 
 ### Constants
-- [let HKSourceRevisionAnyProductType: String](hksourcerevisionanyproducttype.md)
+- [let HKSourceRevisionAnyProductType: String](../hksourcerevisionanyproducttype.md)
   A constant that matches any product type.
 
 ## See Also
 
-- [var source: HKSource](hksourcerevision/source.md)
+### Accessing Source and Version Information
+- [var source: HKSource](./source.md)
   The source for a sample.
-- [var version: String?](hksourcerevision/version.md)
+- [var version: String?](./version.md)
   A string that identifies a particular version of the source.
-- [var operatingSystemVersion: OperatingSystemVersion](hksourcerevision/operatingsystemversion.md)
+- [var operatingSystemVersion: OperatingSystemVersion](./operatingsystemversion.md)
   A string that identifies the operating system used to save a sample.
 
 

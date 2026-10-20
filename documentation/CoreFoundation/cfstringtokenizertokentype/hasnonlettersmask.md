@@ -1,23 +1,28 @@
 # hasNonLettersMask
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Contains punctuation, symbols, and so on.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static var hasNonLettersMask: CFStringTokenizerTokenType { get }
+```
+
+```c
+kCFStringTokenizerTokenHasNonLettersMask
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ Given the way Unicode word break works, this means it is a standalone punctuatio
 
 ## See Also
 
-- [static var normal: CFStringTokenizerTokenType](cfstringtokenizertokentype/normal.md)
+### Constants
+- [static var normal: CFStringTokenizerTokenType](./normal.md)
   Has a normal token.
-- [static var hasSubTokensMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/hassubtokensmask.md)
+- [static var hasSubTokensMask: CFStringTokenizerTokenType](./hassubtokensmask.md)
   Compound token which may contain subtokens but with no derived subtokens.
-- [static var hasDerivedSubTokensMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/hasderivedsubtokensmask.md)
+- [static var hasDerivedSubTokensMask: CFStringTokenizerTokenType](./hasderivedsubtokensmask.md)
   Compound token which may contain derived subtokens.
-- [static var hasHasNumbersMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/hashasnumbersmask.md)
+- [static var hasHasNumbersMask: CFStringTokenizerTokenType](./hashasnumbersmask.md)
   Appears to contain a number.
-- [static var isCJWordMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/iscjwordmask.md)
+- [static var isCJWordMask: CFStringTokenizerTokenType](./iscjwordmask.md)
   Contains kana and/or ideographs.
 
 

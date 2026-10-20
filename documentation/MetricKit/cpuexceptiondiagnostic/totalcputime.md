@@ -1,7 +1,8 @@
 # totalCPUTime
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total CPU time consumed in the scope of this CPU exception.
 
@@ -20,7 +21,8 @@ let totalCPUTime: Measurement<UnitDuration>
 
 ## See Also
 
-- [let totalSampledTime: Measurement<UnitDuration>](cpuexceptiondiagnostic/totalsampledtime.md)
+### CPU exception details
+- [let totalSampledTime: Measurement<UnitDuration>](./totalsampledtime.md)
   Total time that the application was sampled for during the CPU exception.
 
 

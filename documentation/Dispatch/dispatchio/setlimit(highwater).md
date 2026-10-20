@@ -1,7 +1,8 @@
 # setLimit(highWater:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the maximum number of bytes to process before enqueueing a handler block.
 
@@ -10,7 +11,7 @@ Sets the maximum number of bytes to process before enqueueing a handler block.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sets the maximum number of bytes to process before enqueueing a handler block.
 
 ```swift
 func setLimit(highWater high_water: Int)
+```
+
+```c
+extern void dispatch_io_set_high_water(dispatch_io_t channel, size_t high_water);
 ```
 
 #### Discussion
@@ -32,13 +37,14 @@ The default high-water mark for channels is set to `SIZE_MAX`.
 
 ## See Also
 
-- [var fileDescriptor: Int32](dispatchio/filedescriptor.md)
+### Managing the File Descriptor
+- [var fileDescriptor: Int32](./filedescriptor.md)
   Returns the file descriptor associated with the specified channel.
-- [func setLimit(lowWater: Int)](dispatchio/setlimit(lowwater:).md)
+- [func setLimit(lowWater: Int)](./setlimit%28lowwater%29.md)
   Sets the minimum number of bytes to process before enqueueing a handler block.
-- [func setInterval(interval: DispatchTimeInterval, flags: DispatchIO.IntervalFlags)](dispatchio/setinterval(interval:flags:).md)
+- [func setInterval(interval: DispatchTimeInterval, flags: DispatchIO.IntervalFlags)](./setinterval%28interval,flags%29.md)
   Sets the interval, in nanoseconds, at which to invoke the I/O handlers for the channel.
-- [DispatchIO.IntervalFlags](dispatchio/intervalflags.md)
+- [DispatchIO.IntervalFlags](./intervalflags.md)
   The desired delivery behavior for interval events.
 
 

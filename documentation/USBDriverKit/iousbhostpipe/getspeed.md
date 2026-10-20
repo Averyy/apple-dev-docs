@@ -1,7 +1,8 @@
 # GetSpeed
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the device’s operational speed.
 
@@ -10,23 +11,24 @@ Retrieves the device’s operational speed.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetSpeed(uint8_t *speed) const;
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
-- `speed`: A pointer to a variable. On output, the variable contains the operational speed of the device. For a list of possible values, see [`tIOUSBHostConnectionSpeed`](tiousbhostconnectionspeed.md).
+- `speed`: A pointer to a variable. On output, the variable contains the operational speed of the device. For a list of possible values, see [`tIOUSBHostConnectionSpeed`](../tiousbhostconnectionspeed.md).
 
 ## See Also
 
-- [GetDeviceAddress](iousbhostpipe/getdeviceaddress.md)
+### Getting the Device Attributes
+- [GetDeviceAddress](./getdeviceaddress.md)
   Retrieves the address of the device.
-- [tIOUSBHostConnectionSpeed](tiousbhostconnectionspeed.md)
+- [tIOUSBHostConnectionSpeed](../tiousbhostconnectionspeed.md)
   Constants indicating the connection speed of the device.
 
 

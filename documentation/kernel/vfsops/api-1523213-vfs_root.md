@@ -1,14 +1,15 @@
 # vfs_root
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int (*vfs_root)(struct mount *mp, struct vnode **vpp, vfs_context_t context);
 ```
 

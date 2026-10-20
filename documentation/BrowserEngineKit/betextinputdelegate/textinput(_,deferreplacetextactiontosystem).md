@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Defers a replace text action to the ssytem.
@@ -9,7 +10,7 @@ Defers a replace text action to the ssytem.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -17,6 +18,10 @@ Defers a replace text action to the ssytem.
 
 ```swift
 func textInput(_ textInput: any BETextInput, deferReplaceTextActionToSystem sender: Any)
+```
+
+```objc
+- (void) textInput:(id<BETextInput>) textInput deferReplaceTextActionToSystem:(id) sender;
 ```
 
 #### Discussion
@@ -27,7 +32,8 @@ For example, a replacement could be deferred after it is selected from the autoc
 
 ## See Also
 
-- [func shouldDeferEventHandlingToSystem(for: any BETextInput, context: BEKeyEntryContext) -> Bool](betextinputdelegate/shoulddefereventhandlingtosystem(for:context:).md)
+### Deferring actions to the text system
+- [func shouldDeferEventHandlingToSystem(for: any BETextInput, context: BEKeyEntryContext) -> Bool](./shoulddefereventhandlingtosystem%28for,context%29.md)
   Notify the text system that your web browser’s custom text view isn’t handling key events.
 
 

@@ -1,7 +1,8 @@
 # pointee
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieve or set the `Pointee` instance referenced by `self`.
 
@@ -24,11 +25,12 @@ var pointee: Pointee { get nonmutating set }
 
 `AutoreleasingUnsafeMutablePointer` is assumed to reference a value with `__autoreleasing` ownership semantics, like `NSFoo **` declarations in ARC. Setting the pointee autoreleases the new value before trivially storing it in the referenced memory.
 
-> **Note**: The pointee has been initialized with an instance of type `Pointee`.
+> **Precondition**: The pointee has been initialized with an instance of type `Pointee`.
 
 ## See Also
 
-- [subscript(Int) -> Pointee](autoreleasingunsafemutablepointer/subscript(_:).md)
+### Accessing a Pointer’s Memory
+- [subscript(Int) -> Pointee](./subscript%28_%29.md)
   Access the `i`th element of the raw array pointed to by `self`.
 
 

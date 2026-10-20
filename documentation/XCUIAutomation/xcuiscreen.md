@@ -1,18 +1,19 @@
 # XCUIScreen
 
 **Framework**: XCUIAutomation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A physical screen attached to a device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,9 +23,13 @@ A physical screen attached to a device.
 class XCUIScreen
 ```
 
+```objc
+@interface XCUIScreen : NSObject
+```
+
 #### Overview
 
-Call the [`screenshot()`](xcuiscreenshotproviding/screenshot().md) method on an [`XCUIScreen`](xcuiscreen.md) instance to capture a screenshot of its current UI state. The [`XCUIScreenshotProviding`](xcuiscreenshotproviding.md) protocol adds this method to [`XCUIScreen`](xcuiscreen.md).
+Call the [`screenshot()`](./xcuiscreenshotproviding/screenshot%28%29.md) method on an [`XCUIScreen`](./xcuiscreen.md) instance to capture a screenshot of its current UI state. The [`XCUIScreenshotProviding`](./xcuiscreenshotproviding.md) protocol adds this method to [`XCUIScreen`](./xcuiscreen.md).
 
 You can take a screenshot of the current device’s main screen using the following code:
 
@@ -43,30 +48,31 @@ let allScreenshots = XCUIScreen.screens.map { screen in
 ## Topics
 
 ### Device screens
-- [class var main: XCUIScreen](xcuiscreen/main.md)
+- [class var main: XCUIScreen](./xcuiscreen/main.md)
   The current device’s main screen.
-- [class var screens: [XCUIScreen]](xcuiscreen/screens.md)
+- [class var screens: [XCUIScreen]](./xcuiscreen/screens.md)
   The current device’s active screens.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [XCUIScreenshotProviding](xcuiscreenshotproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [XCUIScreenshotProviding](./xcuiscreenshotproviding.md)
 
 ## See Also
 
-- [class XCUIScreenshot](xcuiscreenshot.md)
+### Screenshots
+- [class XCUIScreenshot](./xcuiscreenshot.md)
   A captured image of a screen, app, or UI element state.
-- [protocol XCUIScreenshotProviding](xcuiscreenshotproviding.md)
+- [protocol XCUIScreenshotProviding](./xcuiscreenshotproviding.md)
   A type that can provide a screenshot of its current UI state.
 
 

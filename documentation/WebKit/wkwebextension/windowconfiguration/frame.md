@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the frame where the window should be positioned on the main screen.
 
@@ -16,6 +17,10 @@ Indicates the frame where the window should be positioned on the main screen.
 
 ```swift
 var frame: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect frame;
 ```
 
 #### Discussion

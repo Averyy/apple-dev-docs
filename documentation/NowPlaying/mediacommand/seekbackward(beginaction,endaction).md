@@ -1,7 +1,8 @@
 # seekBackward(beginAction:endAction:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a command that rewinds through the media.
 
@@ -31,9 +32,10 @@ The system calls `beginAction` when the user starts rewinding (for example, by p
 
 ## See Also
 
-- [static func seekToPosition((TimeInterval) async throws -> Void) -> MediaCommand](mediacommand/seektoposition(_:).md)
+### Seeking
+- [static func seekToPosition((TimeInterval) async throws -> Void) -> MediaCommand](./seektoposition%28_%29.md)
   Creates a command that seeks to a specific position in the media.
-- [static func seekForward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](mediacommand/seekforward(beginaction:endaction:).md)
+- [static func seekForward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](./seekforward%28beginaction,endaction%29.md)
   Creates a command that fast-forwards through the media.
 
 

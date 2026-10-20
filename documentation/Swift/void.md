@@ -1,7 +1,8 @@
 # Void
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The return type of functions that don’t explicitly specify a return type, that is, an empty tuple `()`.
 

@@ -1,7 +1,8 @@
 # toolbar(_:itemForItemIdentifier:willBeInsertedIntoToolbar:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the toolbar item associated with the specified identifier.
 
@@ -9,7 +10,7 @@ Asks the delegate for the toolbar item associated with the specified identifier.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -18,13 +19,17 @@ Asks the delegate for the toolbar item associated with the specified identifier.
 optional func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem?
 ```
 
+```objc
+- (NSToolbarItem *) toolbar:(NSToolbar *) toolbar itemForItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier willBeInsertedIntoToolbar:(BOOL) flag;
+```
+
 #### Return Value
 
-A new [`NSToolbarItem`](nstoolbaritem.md) object, or `nil` if no toolbar item is available for the specified identifier.
+A new [`NSToolbarItem`](../nstoolbaritem.md) object, or `nil` if no toolbar item is available for the specified identifier.
 
 #### Discussion
 
-Use this method to create new [`NSToolbarItem`](nstoolbaritem.md) objects when the toolbar asks for them. If your toolbar item uses a custom view, make sure that view is fully configured before you return the item. The toolbar becomes the owner of the returned item, but can display the item either in the toolbar or the customization palette.
+Use this method to create new [`NSToolbarItem`](../nstoolbaritem.md) objects when the toolbar asks for them. If your toolbar item uses a custom view, make sure that view is fully configured before you return the item. The toolbar becomes the owner of the returned item, but can display the item either in the toolbar or the customization palette.
 
 Don’t recycle toolbar items; always provide a new instance, even if the toolbar previously asked for an item with the same identifier.
 
@@ -34,17 +39,19 @@ Don’t recycle toolbar items; always provide a new instance, even if the toolba
 
 - `toolbar`: The toolbar for which the item is being requested.
 - `itemIdentifier`: The identifier for the requested item.
-- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the toolbar will insert the item immediately. If this parameter is [`false`](https://developer.apple.com/documentation/swift/false), provide a canonical representation for the item. For example, provide a version of the item suitable for display in the toolbar customization sheet.
+- `flag`: [`true`](../../Swift/true.md) if the toolbar will insert the item immediately. If this parameter is [`false`](../../Swift/false.md), provide a canonical representation for the item. For example, provide a version of the item suitable for display in the toolbar customization sheet.
 
 ## See Also
 
-- [Integrating a Toolbar and Touch Bar into Your App](integrating-a-toolbar-and-touch-bar-into-your-app.md)
+### Related Documentation
+- [Integrating a Toolbar and Touch Bar into Your App](../integrating-a-toolbar-and-touch-bar-into-your-app.md)
   Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
-- [func toolbarWillAddItem(Notification)](nstoolbardelegate/toolbarwilladditem(_:).md)
+### Adding and removing items
+- [func toolbarWillAddItem(Notification)](./toolbarwilladditem%28_%29.md)
   Tells the delegate that the toolbar is about to add the specified item.
-- [func toolbarDidRemoveItem(Notification)](nstoolbardelegate/toolbardidremoveitem(_:).md)
+- [func toolbarDidRemoveItem(Notification)](./toolbardidremoveitem%28_%29.md)
   Tells the delegate that the toolbar removed the specified item.
-- [NSToolbar.Identifier](nstoolbar/identifier-swift.typealias.md)
+- [NSToolbar.Identifier](../nstoolbar/identifier-swift.typealias.md)
   A string value that you use to differentiate your app’s toolbars.
 
 

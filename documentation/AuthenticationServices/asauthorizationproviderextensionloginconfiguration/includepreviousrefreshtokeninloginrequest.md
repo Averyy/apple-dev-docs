@@ -1,7 +1,8 @@
 # includePreviousRefreshTokenInLoginRequest
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to include the previous refresh token in the authentation request.
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether to include the previous refresh token in 
 var includePreviousRefreshTokenInLoginRequest: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL includePreviousRefreshTokenInLoginRequest;
+```
+
 ## Mentions
 
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
+- [Creating and validating a login request](../creating-and-validating-a-login-request.md)
 
 #### Discussion
 
@@ -24,7 +29,8 @@ If the value is `true` and there’s a `refresh_token` for the user in the SSO t
 
 ## See Also
 
-- [var previousRefreshTokenClaimName: String](asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md)
+### Configuring the previous refresh token
+- [var previousRefreshTokenClaimName: String](./previousrefreshtokenclaimname.md)
   The claim name for the previous single sign-on token value in the authentication request.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifkpi {
     ...
 };
@@ -17,9 +17,9 @@ struct ifkpi {
 ## Topics
 
 ### Instance Properties
-- [ifk_data](ifkpi/1564065-ifk_data.md)
-- [ifk_module_id](ifkpi/1563997-ifk_module_id.md)
-- [ifk_type](ifkpi/1564066-ifk_type.md)
+- [ifk_data](./ifkpi/api-1564065-ifk_data.md)
+- [ifk_module_id](./ifkpi/api-1563997-ifk_module_id.md)
+- [ifk_type](./ifkpi/api-1564066-ifk_type.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # EKEntityType.reminder
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents a reminder.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ Represents a reminder.
 case reminder
 ```
 
+```c
+EKEntityTypeReminder
+```
+
 ## See Also
 
-- [EKEntityType.event](ekentitytype/event.md)
+### Constants
+- [EKEntityType.event](./event.md)
   Represents an event.
 
 

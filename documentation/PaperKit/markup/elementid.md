@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The element identifier for use in a markup ordered set.

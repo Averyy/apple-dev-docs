@@ -1,7 +1,8 @@
 # BNNSOptimizerFunctionAdamAMSGrad
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An optimizer function that updates parameters according to the AMSGrad variant of the Adam algorithm.
 
@@ -20,13 +21,18 @@ An optimizer function that updates parameters according to the AMSGrad variant o
 var BNNSOptimizerFunctionAdamAMSGrad: BNNSOptimizerFunction { get }
 ```
 
+```c
+BNNSOptimizerFunctionAdamAMSGrad
+```
+
 ## See Also
 
-- [var BNNSOptimizerFunctionAdam: BNNSOptimizerFunction](bnnsoptimizerfunctionadam.md)
+### Adam Optimizer Functions
+- [var BNNSOptimizerFunctionAdam: BNNSOptimizerFunction](./bnnsoptimizerfunctionadam.md)
   An optimizer function that updates parameters according to the Adam algorithm.
-- [var BNNSOptimizerFunctionAdamWithClipping: BNNSOptimizerFunction](bnnsoptimizerfunctionadamwithclipping.md)
+- [var BNNSOptimizerFunctionAdamWithClipping: BNNSOptimizerFunction](./bnnsoptimizerfunctionadamwithclipping.md)
   An optimizer function that updates parameters according to the Adam algorithm and optionally clips the gradient by value or by norm.
-- [var BNNSOptimizerFunctionAdamAMSGradWithClipping: BNNSOptimizerFunction](bnnsoptimizerfunctionadamamsgradwithclipping.md)
+- [var BNNSOptimizerFunctionAdamAMSGradWithClipping: BNNSOptimizerFunction](./bnnsoptimizerfunctionadamamsgradwithclipping.md)
   An optimizer function that updates parameters according to the AMSGrad variant of the Adam algorithm and optionally clips the gradient by value or by norm.
 
 

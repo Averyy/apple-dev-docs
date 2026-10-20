@@ -1,27 +1,28 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeThrough<Self>](unsafepointer/'...(_:)-4mm4r.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-4mm4r.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self) -> PartialRangeFrom<Self>](unsafepointer/'...(_:)-6ct5j.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-6ct5j.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](unsafepointer/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](unsafepointer/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](unsafepointer/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (borrowing Self, borrowing Self) -> Bool](unsafepointer/_(_:_:)-3izr0.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-3izr0.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func < (Self, Self) -> Bool](unsafepointer/_(_:_:)-fe61.md)
+- [static func < (Self, Self) -> Bool](./op%28_,_%29-fe61.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](unsafepointer/_=(_:_:)-5i1qx.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-5i1qx.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](unsafepointer/_=(_:_:)-5nvy9.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-5nvy9.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

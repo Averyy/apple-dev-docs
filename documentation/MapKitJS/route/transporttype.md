@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall route transport type.
 
@@ -10,7 +11,7 @@ The overall route transport type.
 
 ## Declaration
 
-```swift
+```
 transportType: TransportType | null;
 ```
 
@@ -20,15 +21,16 @@ This property reflects the primary transport type used for the route. Individual
 
 ## See Also
 
-- [steps](route/steps.md)
+### Route details
+- [steps](./steps.md)
   An array of steps that compose the overall route.
-- [name](route/name.md)
+- [name](./name.md)
   The name assigned to the route.
-- [distance](route/distance.md)
+- [distance](./distance.md)
   The route distance, in meters.
-- [expectedTravelTime](route/expectedtraveltime.md)
+- [expectedTravelTime](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [hasTolls](route/hastolls.md)
+- [hasTolls](./hastolls.md)
   A Boolean value that indicates whether a route has tolls.
 
 

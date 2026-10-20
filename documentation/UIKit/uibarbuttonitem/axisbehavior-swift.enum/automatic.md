@@ -1,7 +1,8 @@
 # UIBarButtonItem.AxisBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The automatic behavior. The system infers the supported axes based on the contents of the item.
 
@@ -18,11 +19,16 @@ The automatic behavior. The system infers the supported axes based on the conten
 case automatic
 ```
 
+```c
+UIBarButtonItemAxisBehaviorAutomatic
+```
+
 ## See Also
 
-- [UIBarButtonItem.AxisBehavior.horizontalOnly](uibarbuttonitem/axisbehavior-swift.enum/horizontalonly.md)
+### Choosing an orientation behavior
+- [UIBarButtonItem.AxisBehavior.horizontalOnly](./horizontalonly.md)
   The item only supports horizontal bars. If an item only supports horizontal bars and no horizontal bars are present, the item is not shown.
-- [UIBarButtonItem.AxisBehavior.verticalPreferred](uibarbuttonitem/axisbehavior-swift.enum/verticalpreferred.md)
+- [UIBarButtonItem.AxisBehavior.verticalPreferred](./verticalpreferred.md)
   The item supports both horizontal and vertical bars, and prefers a vertical placement when both horizontal and vertical bars are present
 
 

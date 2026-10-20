@@ -1,7 +1,8 @@
 # SetIdlePolicy
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the desired idle suspend timeout for the interface.
 
@@ -10,21 +11,21 @@ Sets the desired idle suspend timeout for the interface.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetIdlePolicy(uint32_t deviceIdleTimeout);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-An idle device defers electrical suspension for the specified duration. By default, [`IOUSBHostInterface`](iousbhostinterface.md) doesn’t enable an idle policy, letting the device remain in the active state as long as the host machine is awake. Call this method to enable an idle policy for your device.
+An idle device defers electrical suspension for the specified duration. By default, [`IOUSBHostInterface`](../iousbhostinterface.md) doesn’t enable an idle policy, letting the device remain in the active state as long as the host machine is awake. Call this method to enable an idle policy for your device.
 
 When you enable an idle policy and no I/O requests are pending, the system waits for the specified amount of time before electrically suspending the device. For a device with multiple interfaces, the system uses the largest timeout value from among all the open interfaces. A new I/O request during the wait period, or after suspension occurs, cancels the suspension and resumes I/O operations.
 
-If the parent [`IOUSBHostDevice`](iousbhostdevice.md) object does not allow low-power mode for the device, the system disables idle suspension altogether.
+If the parent [`IOUSBHostDevice`](../iousbhostdevice.md) object does not allow low-power mode for the device, the system disables idle suspension altogether.
 
 ## Parameters
 
@@ -32,15 +33,16 @@ If the parent [`IOUSBHostDevice`](iousbhostdevice.md) object does not allow low-
 
 ## See Also
 
-- [GetFrameNumber](iousbhostinterface/getframenumber.md)
+### Configuring the Interface
+- [GetFrameNumber](./getframenumber.md)
   Gets the current frame number of the USB controller.
-- [GetPortStatus](iousbhostinterface/getportstatus.md)
+- [GetPortStatus](./getportstatus.md)
   Gets the current port status.
-- [SelectAlternateSetting](iousbhostinterface/selectalternatesetting.md)
+- [SelectAlternateSetting](./selectalternatesetting.md)
   Selects an alternative setting for this interface.
-- [GetIdlePolicy](iousbhostinterface/getidlepolicy.md)
+- [GetIdlePolicy](./getidlepolicy.md)
   Gets the current idle suspend timeout for the interface.
-- [tIOUSBHostPortStatus](tiousbhostportstatus.md)
+- [tIOUSBHostPortStatus](../tiousbhostportstatus.md)
   Constants indicating the state of a port.
 
 

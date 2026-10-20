@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,24 +11,24 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.Image](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary/image-data.dictionary.md)
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.Image](./relationships-data.dictionary/image-data.dictionary.md)
   The image asset to associate with the new app asset library placement.
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.Video](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary/video-data.dictionary.md)
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.Video](./relationships-data.dictionary/video-data.dictionary.md)
   The video asset to associate with the new app asset library placement.
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppEventLocalization](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary/appeventlocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppEventLocalization](./relationships-data.dictionary/appeventlocalization-data.dictionary.md)
   The in-app event localization to associate with the new app asset library placement.
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionLocalization](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionLocalization](./relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
   The App Store version localization to associate with the new app asset library placement.
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppCustomProductPageLocalization](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppCustomProductPageLocalization](./relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
   The custom product page localization to associate with the new app asset library placement.
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](./relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
   The App Store version experiment treatment localization to associate with the new app asset library placement.
 
 ## Properties
@@ -41,7 +42,8 @@ object AppAssetLibraryPlacementCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppAssetLibraryPlacementCreateRequest.Data.Attributes](appassetlibraryplacementcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryPlacementCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the new app asset library placement resource.
 
 

@@ -1,7 +1,8 @@
 # readAttributeNumberOfTotalUsersSupported(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfTotalUsersSupported(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfTotalUsersSupported() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfTotalUsersSupportedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

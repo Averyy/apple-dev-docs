@@ -1,14 +1,15 @@
 # kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReservedPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReservedPhase = IOUSBBitRangePhase(5, 7)
 ```
 

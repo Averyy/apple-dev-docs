@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the configuration for the content capture picker for all streams, providing allowed selection modes and content excluded from selection.
 
@@ -21,11 +22,12 @@ var configuration: SCContentSharingPickerConfiguration? { get set }
 
 ## See Also
 
-- [func setConfiguration(SCContentSharingPickerConfiguration?, for: SCStream)](sccontentsharingpicker/setconfiguration(_:for:).md)
+### Stream configuration
+- [func setConfiguration(SCContentSharingPickerConfiguration?, for: SCStream)](./setconfiguration%28_,for%29.md)
   Sets the configuration for the content capture picker for a capture stream, providing allowed selection modes and content excluded from selection.
-- [var defaultConfiguration: SCContentSharingPickerConfiguration](sccontentsharingpicker/defaultconfiguration-94q2b.md)
+- [var defaultConfiguration: SCContentSharingPickerConfiguration](./defaultconfiguration-94q2b.md)
   The default configuration to use for the content capture picker.
-- [var maximumStreamCount: Int?](sccontentsharingpicker/maximumstreamcount-2kuaa.md)
+- [var maximumStreamCount: Int?](./maximumstreamcount-2kuaa.md)
   The maximum number of streams the content capture picker allows.
 
 

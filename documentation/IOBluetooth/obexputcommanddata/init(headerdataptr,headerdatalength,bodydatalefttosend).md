@@ -1,10 +1,11 @@
 # init(headerDataPtr:headerDataLength:bodyDataLeftToSend:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

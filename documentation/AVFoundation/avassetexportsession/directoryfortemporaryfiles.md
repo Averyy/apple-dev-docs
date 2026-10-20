@@ -1,7 +1,8 @@
 # directoryForTemporaryFiles
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A directory suitable to store temporary files that the export process generates.
 
@@ -19,19 +20,24 @@ A directory suitable to store temporary files that the export process generates.
 var directoryForTemporaryFiles: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * directoryForTemporaryFiles;
+```
+
 ## See Also
 
-- [var supportedFileTypes: [AVFileType]](avassetexportsession/supportedfiletypes.md)
+### Configuring output
+- [var supportedFileTypes: [AVFileType]](./supportedfiletypes.md)
   An array containing the types of files the session can write.
-- [var allowsParallelizedExport: Bool](avassetexportsession/allowsparallelizedexport.md)
+- [var allowsParallelizedExport: Bool](./allowsparallelizedexport.md)
   A Boolean value that indicates whether the session can parallelize its export operation.
-- [var shouldOptimizeForNetworkUse: Bool](avassetexportsession/shouldoptimizefornetworkuse.md)
+- [var shouldOptimizeForNetworkUse: Bool](./shouldoptimizefornetworkuse.md)
   A Boolean value that indicates whether to optimize the movie for network use.
-- [var canPerformMultiplePassesOverSourceMediaData: Bool](avassetexportsession/canperformmultiplepassesoversourcemediadata.md)
+- [var canPerformMultiplePassesOverSourceMediaData: Bool](./canperformmultiplepassesoversourcemediadata.md)
   A Boolean value that indicates whether the export session can perform multiple passes over the source media to achieve better results.
-- [var timeRange: CMTimeRange](avassetexportsession/timerange.md)
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the source asset to export.
-- [var fileLengthLimit: Int64](avassetexportsession/filelengthlimit.md)
+- [var fileLengthLimit: Int64](./filelengthlimit.md)
   The file length that the output of the session must not exceed.
 
 

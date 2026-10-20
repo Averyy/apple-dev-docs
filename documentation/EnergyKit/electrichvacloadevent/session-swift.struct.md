@@ -1,14 +1,15 @@
 # ElectricHVACLoadEvent.Session
 
 **Framework**: EnergyKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A session that tracks the event.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -23,36 +24,37 @@ A session starts when a device transitions from idle to consuming electricity. I
 ## Topics
 
 ### Creating a session
-- [init(id: UUID, state: ElectricHVACLoadEvent.Session.State, guidanceState: ElectricHVACLoadEvent.Session.GuidanceState)](electrichvacloadevent/session-swift.struct/init(id:state:guidancestate:).md)
+- [init(id: UUID, state: ElectricHVACLoadEvent.Session.State, guidanceState: ElectricHVACLoadEvent.Session.GuidanceState)](./session-swift.struct/init%28id,state,guidancestate%29.md)
   Creates an electrical load event session.
 ### Getting the session information
-- [let id: UUID](electrichvacloadevent/session-swift.struct/id.md)
+- [let id: UUID](./session-swift.struct/id.md)
   The unique identifier for the session.
-- [let state: ElectricHVACLoadEvent.Session.State](electrichvacloadevent/session-swift.struct/state-swift.property.md)
+- [let state: ElectricHVACLoadEvent.Session.State](./session-swift.struct/state-swift.property.md)
   The state of the session.
-- [ElectricHVACLoadEvent.Session.State](electrichvacloadevent/session-swift.struct/state-swift.enum.md)
+- [ElectricHVACLoadEvent.Session.State](./session-swift.struct/state-swift.enum.md)
   The state of the session.
 ### Identifying the guidance state
-- [ElectricHVACLoadEvent.Session.GuidanceState](electrichvacloadevent/session-swift.struct/guidancestate-swift.struct.md)
+- [ElectricHVACLoadEvent.Session.GuidanceState](./session-swift.struct/guidancestate-swift.struct.md)
   Identifies the provided guidance and its usability by the load device
-- [let guidanceState: ElectricHVACLoadEvent.Session.GuidanceState](electrichvacloadevent/session-swift.struct/guidancestate-swift.property.md)
+- [let guidanceState: ElectricHVACLoadEvent.Session.GuidanceState](./session-swift.struct/guidancestate-swift.property.md)
   Identifies the provided guidance and its usability by the load device
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let id: UUID](electrichvacloadevent/id.md)
+### Getting load event information
+- [let id: UUID](./id.md)
   The unique identifier of the electrical load event.
-- [let timestamp: Date](electrichvacloadevent/timestamp.md)
+- [let timestamp: Date](./timestamp.md)
   The timestamp for when the event occurred.
-- [let session: ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.property.md)
+- [let session: ElectricHVACLoadEvent.Session](./session-swift.property.md)
   The session information.
 
 

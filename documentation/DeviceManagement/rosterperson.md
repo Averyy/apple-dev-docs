@@ -1,7 +1,8 @@
 # RosterPerson
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A person’s properties and their values.
 
@@ -10,7 +11,7 @@ A person’s properties and their values.
 
 ## Declaration
 
-```swift
+```
 object RosterPerson
 ```
 
@@ -29,15 +30,18 @@ object RosterPerson
 - `person_id` (string): The `personid` of the person that Apple School Manager displays. Available in X-Protocol version 4 and later.
 - `sis_username` (string): The SIS `username` of the person that Apple School Manager displays. Available in X-Protocol version 5 and later.
 - `source` (string): The creation data source of the class.
+
+  **Allowed Values**: `LDAP`, `SIS`, `CSV`, `MANUAL`, `SYSTEM`, `ENROLLMENT`, `DEP`, `FORMULA_GENERATED`, `SFTP`
 - `source_system_identifier` (string): The identifier that the organization configures for the person. Maximum length is 256 UTF-8 characters.
 - `status` (string): The status of the person. Possible values are `Active,` `InActive,` `FailedPasswordLocked`, and `AtoLocked`. `AtoLocked` indicates that the system detects account take over and temporarily locks the person until an authentic user claims it. Available in X-Protocol version 3 and later.
 - `unique_identifier` (string): The unique identifier for the person. Maximum length 256 UTF-8 characters.
 
 ## See Also
 
-- [Get the List of People](fetch-person-roster.md)
+### People management
+- [Get the List of People](./fetch-person-roster.md)
   Obtain a list of people the server manages, across the organization.
-- [Sync the List of People](fetch-person-roster-sync.md)
+- [Sync the List of People](./fetch-person-roster-sync.md)
   Get updates about the list of people the server manages.
 
 

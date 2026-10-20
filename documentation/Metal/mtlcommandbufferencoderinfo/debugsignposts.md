@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of debug signposts that Metal records as the GPU executes the commands of the encoder’s pass.
@@ -20,13 +21,18 @@ An array of debug signposts that Metal records as the GPU executes the commands 
 var debugSignposts: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * debugSignposts;
+```
+
 ## See Also
 
-- [var label: String](mtlcommandbufferencoderinfo/label.md)
+### Inspecting execution information
+- [var label: String](./label.md)
   The name of the encoder that generates the error information.
-- [var errorState: MTLCommandEncoderErrorState](mtlcommandbufferencoderinfo/errorstate.md)
+- [var errorState: MTLCommandEncoderErrorState](./errorstate.md)
   The execution status of the command encoder.
-- [enum MTLCommandEncoderErrorState](mtlcommandencodererrorstate.md)
+- [enum MTLCommandEncoderErrorState](../mtlcommandencodererrorstate.md)
   Possible error conditions for the command encoder’s commands.
 
 

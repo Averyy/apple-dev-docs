@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceCreateRequest.Data.Relationships.Localizations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the Advanced App Clips Experience Localizations resource that you’re relating with the Advanced App Clip Experiences resource you’re creating.
 
@@ -10,7 +11,7 @@ The type and ID of the Advanced App Clips Experience Localizations resource that
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceCreateRequest.Data.Relationships.Localizations.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipAdvancedExperienceCreateRequest.Data.Relationships.Localizations.D
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Advanced App Clip Experience Localizations resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipAdvancedExperienceLocalizations`
 
 
 ---

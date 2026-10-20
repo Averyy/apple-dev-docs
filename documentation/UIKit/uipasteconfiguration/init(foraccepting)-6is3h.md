@@ -1,7 +1,8 @@
 # init(forAccepting:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new paste configuration with the UTIs declared as supported by a specified class.
 
@@ -17,25 +18,30 @@ Initializes a new paste configuration with the UTIs declared as supported by a s
 convenience init(forAccepting aClass: any NSItemProviderReading.Type)
 ```
 
+```objc
+- (instancetype) initWithTypeIdentifiersForAcceptingClass:(Class<NSItemProviderReading> *) aClass;
+```
+
 #### Return Value
 
 A paste configuration initialized with acceptable uniform type identifiers (UTIs) supported by the specified class.
 
 #### Discussion
 
-When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/readabletypeidentifiersforitemprovider), implemented on `aClass`, is used to determine the acceptable UTIs.
+When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](../../Foundation/nsitemproviderreading/readabletypeidentifiersforitemprovider.md), implemented on `aClass`, is used to determine the acceptable UTIs.
 
 ## Parameters
 
-- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) protocol.
+- `aClass`: A class conforming to the [`NSItemProviderReading`](../../Foundation/nsitemproviderreading.md) protocol.
 
 ## See Also
 
-- [init()](uipasteconfiguration/init.md)
+### Initializing a paste configuration
+- [init()](./init%28%29.md)
   Initializes a new paste configuration.
-- [convenience init(acceptableTypeIdentifiers: [String])](uipasteconfiguration/init(acceptabletypeidentifiers:).md)
+- [convenience init(acceptableTypeIdentifiers: [String])](./init%28acceptabletypeidentifiers%29.md)
   Initializes a new paste configuration with a specified array of acceptable UTIs.
-- [convenience init<T>(forAccepting: T.Type)](uipasteconfiguration/init(foraccepting:)-84r2r.md)
+- [convenience init<T>(forAccepting: T.Type)](./init%28foraccepting%29-84r2r.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # addingProduct(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func addingProduct(_ a: Self, _ b: Self.Scalar) -> Self
 ```
+
+Available when `Scalar` conforms to `FloatingPoint`.
 
 
 ---

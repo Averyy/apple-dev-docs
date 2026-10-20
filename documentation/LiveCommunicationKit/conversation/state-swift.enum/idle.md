@@ -1,7 +1,8 @@
 # Conversation.State.idle
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The conversation was registered with the system, but it’s not active yet.
 
@@ -20,15 +21,16 @@ case idle
 
 ## See Also
 
-- [Conversation.State.joined](conversation/state-swift.enum/joined.md)
+### States
+- [Conversation.State.joined](./joined.md)
   Audio and video streams are active and the local participant is able to engage with remote participants.
-- [Conversation.State.joining](conversation/state-swift.enum/joining.md)
+- [Conversation.State.joining](./joining.md)
   The setup process of the conversation in progress; for example, establishing audio and video streams.
-- [Conversation.State.leaving](conversation/state-swift.enum/leaving.md)
+- [Conversation.State.leaving](./leaving.md)
   Participants left the conversation and it’s in the process of ending.
-- [Conversation.State.left](conversation/state-swift.enum/left.md)
+- [Conversation.State.left](./left.md)
   The conversation is no longer active and all audio and video sessions have ended.
-- [Conversation.State.paused](conversation/state-swift.enum/paused.md)
+- [Conversation.State.paused](./paused.md)
   Audio and video streams are paused, but may resume.
 
 

@@ -1,7 +1,8 @@
 # MIDIRestart()
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Stops and restarts MIDI I/O.
 
@@ -18,6 +19,10 @@ Stops and restarts MIDI I/O.
 func MIDIRestart() -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIRestart();
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -28,13 +33,14 @@ Call this function to force Core MIDI to ask its drivers to rescan for hardware.
 
 ## See Also
 
-- [struct MIDISysexSendRequest](midisysexsendrequest.md)
+### I/O management
+- [struct MIDISysexSendRequest](./midisysexsendrequest.md)
   A request to asynchronously send a single system-exclusive (SysEx) event to a destination.
-- [struct MIDISysexSendRequestUMP](midisysexsendrequestump.md)
+- [struct MIDISysexSendRequestUMP](./midisysexsendrequestump.md)
   A request to asynchronously send a single universal MIDI packet (UMP) system-exclusive (SysEx) event to a destination.
-- [func MIDIFlushOutput(MIDIEndpointRef) -> OSStatus](midiflushoutput(_:).md)
+- [func MIDIFlushOutput(MIDIEndpointRef) -> OSStatus](./midiflushoutput%28_%29.md)
   Cancels all pending events that were previously scheduled to send.
-- [struct MIDIIOErrorNotification](midiioerrornotification.md)
+- [struct MIDIIOErrorNotification](./midiioerrornotification.md)
   A general I/O error notification.
 
 

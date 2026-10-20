@@ -1,7 +1,8 @@
 # kAXMenuBarRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A menu bar.
 
@@ -12,6 +13,10 @@ A menu bar.
 
 ```swift
 var kAXMenuBarRole: String { get }
+```
+
+```c
+#define kAXMenuBarRole
 ```
 
 

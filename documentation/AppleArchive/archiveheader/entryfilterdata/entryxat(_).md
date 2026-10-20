@@ -1,7 +1,8 @@
 # ArchiveHeader.EntryFilterData.entryXAT(_:)
 
 **Framework**: Apple Archive  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An enumeration that represents extended attributes.
 
@@ -11,7 +12,7 @@ An enumeration that represents extended attributes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case entryXAT(ArchiveHeader.EntryXATBlob)
 
 ## See Also
 
-- [case entryAttributes(ArchiveHeader.EntryAttributes)](archiveheader/entryfilterdata/entryattributes(_:).md)
+### Enumeration Cases
+- [case entryAttributes(ArchiveHeader.EntryAttributes)](./entryattributes%28_%29.md)
   An enumeration that represents entry attributes.
-- [ArchiveHeader.EntryFilterData.header(_:)](archiveheader/entryfilterdata/header(_:).md)
+- [ArchiveHeader.EntryFilterData.header(_:)](./header%28_%29.md)
   An enumeration that represents an archive header.
 
 

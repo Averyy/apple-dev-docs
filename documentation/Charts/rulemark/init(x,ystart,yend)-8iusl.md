@@ -1,7 +1,8 @@
 # init(x:yStart:yEnd:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vertical rule mark with a fixed x position and y interval encoding.
 
@@ -34,9 +35,9 @@ Chart(data) {
 }
 ```
 
-![Vertical rule chart with y-axis showing the month in the year 2020 starting with January and ending with December, and with x-axis showing a pollen source: Trees. There are 2 rules. 1 starting in January and going until the end of September and 1 spanning December.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkVerticalSingleLineSegmentChart@2x.png)
+![Vertical rule chart with y-axis showing the month in the year 2020 starting with January and ending with December, and with x-axis showing a pollen source: Trees. There are 2 rules. 1 starting in January and going until the end of September and 1 spanning December.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkVerticalSingleLineSegmentChart@2x.png)
 
-See [`RuleMark`](rulemark.md) for the setup of the structure containing the `startDate`, `endDate`, and `source` properties.
+See [`RuleMark`](../rulemark.md) for the setup of the structure containing the `startDate`, `endDate`, and `source` properties.
 
 ## Parameters
 

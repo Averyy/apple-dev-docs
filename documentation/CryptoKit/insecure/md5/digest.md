@@ -1,7 +1,8 @@
 # Insecure.MD5.Digest
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The digest type for a MD5 hash function.
 
@@ -22,7 +23,8 @@ typealias Digest = Insecure.MD5Digest
 
 ## See Also
 
-- [Insecure.MD5Digest](insecure/md5digest.md)
+### Specifying the output type
+- [Insecure.MD5Digest](../md5digest.md)
   The output of a MD5 hash.
 
 

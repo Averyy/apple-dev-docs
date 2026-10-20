@@ -1,17 +1,22 @@
 # getRef()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an IOBluetoothSDPDataElementRef representation of the target IOBluetoothSDPDataElement object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getRef() -> Unmanaged<IOBluetoothSDPDataElementRef>!
+```
+
+```objc
+- (IOBluetoothSDPDataElementRef) getSDPDataElementRef;
 ```
 
 #### Return Value

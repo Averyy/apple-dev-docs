@@ -1,7 +1,8 @@
 # Query Ad Creatives
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve ad creatives that match structured filter, sort, and pagination criteria.
 
@@ -10,11 +11,11 @@ Retrieve ad creatives that match structured filter, sort, and pagination criteri
 
 #### Discussion
 
-This endpoint queries ad creatives using the standard `QueryRequest` structure. The endpoint supports field filtering, multi-field sorting, and offset-based pagination. The system automatically scopes results to the ad accounts accessible to the authenticated caller. You can’t query by `adAccountId`. See [`Creatives Endpoints`](creatives-endpoints.md) for the fields you can filter on.
+This endpoint queries ad creatives using the standard `QueryRequest` structure. The endpoint supports field filtering, multi-field sorting, and offset-based pagination. The system automatically scopes results to the ad accounts accessible to the authenticated caller. You can’t query by `adAccountId`. See [Creatives Endpoints](./creatives-endpoints.md) for the fields you can filter on.
 
 By default, results exclude deleted ad creatives. To include deleted records, add an explicit filter on `"field": "deleted", "operator": "EQUALS", "value": true`.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -23,11 +24,11 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `id` | integer | `EQUALS`, `IN` | Yes (default) | Primary identifier of the ad creative. |
 | `adAccountId` | integer | `EQUALS` |  | Reference to the ad account. |
 | `name` | string | `EQUALS`, `STARTS_WITH` |  | Name of the ad creative. |
-| `creativeType` | string (enum) | `EQUALS`, `IN` |  | Type of ad creative. See [`CreativeType`](creativetype.md). |
+| `creativeType` | string (enum) | `EQUALS`, `IN` |  | Type of ad creative. See [`CreativeType`](./creativetype.md). |
 | `systemStatus` | string (enum) | `EQUALS`, `IN` |  | System validation status. |
 | `deleted` | boolean | `EQUALS` |  | Whether the ad creative has been deleted. Excluded by default unless explicitly filtered to `true`. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -114,17 +115,34 @@ The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilte
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`CreativeQueryResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad Creative](post-creatives.md)
+- [Create an Ad Creative](./post-creatives.md)
   Add a new ad creative that defines the visual presentation and tap destination for an ad.
-- [Get an Ad Creative](get-creatives-_id_.md)
+- [Get an Ad Creative](./get-creatives-_id_.md)
   Fetch a single ad creative by its unique identifier.
-- [Update an Ad Creative](put-creatives-_id_.md)
+- [Update an Ad Creative](./put-creatives-_id_.md)
   Change an ad creative’s name or creative spec by its unique identifier.
-- [Delete an Ad Creative](delete-creatives-_id_.md)
+- [Delete an Ad Creative](./delete-creatives-_id_.md)
   Remove an ad creative by its unique identifier.
 
 

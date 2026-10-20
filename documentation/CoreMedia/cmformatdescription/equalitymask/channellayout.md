@@ -1,7 +1,8 @@
 # channelLayout
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,10 +21,11 @@ static let channelLayout: CMFormatDescription.EqualityMask
 
 ## See Also
 
-- [static let all: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/all.md)
-- [static let extensions: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/extensions.md)
-- [static let magicCookie: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/magiccookie.md)
-- [static let streamBasicDescription: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/streambasicdescription.md)
+### Equality Masks
+- [static let all: CMFormatDescription.EqualityMask](./all.md)
+- [static let extensions: CMFormatDescription.EqualityMask](./extensions.md)
+- [static let magicCookie: CMFormatDescription.EqualityMask](./magiccookie.md)
+- [static let streamBasicDescription: CMFormatDescription.EqualityMask](./streambasicdescription.md)
 
 
 ---

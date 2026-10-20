@@ -1,7 +1,8 @@
 # didBecomeCurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a game controller becomes the most recently used controller.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a game controller becomes the mos
 ```swift
 static var didBecomeCurrent: NotificationCenter.BaseMessageIdentifier<GCController.DidBecomeCurrentMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCController.DidBecomeCurrentMessage>`.
 
 
 ---

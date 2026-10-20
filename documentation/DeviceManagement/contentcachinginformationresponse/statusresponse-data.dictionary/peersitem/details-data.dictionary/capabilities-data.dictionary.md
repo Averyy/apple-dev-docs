@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Capabilities
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The capabilities of the peer content cache.
 
@@ -10,22 +11,35 @@ The capabilities of the peer content cache.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Capabilities
 ```
 
 ## Properties
 
 - `im` (boolean): If `true`, the peer content cache is capable of imports and uploads.
+
+  **Default**: `false`
 - `ns` (boolean): If `true`, the peer content cache is capable of handling namespaces, which is an aspect of personal caching.
+
+  **Default**: `false`
 - `pc` (boolean): If `true`, the peer content cache is capable of caching personal iCloud content.
+
+  **Default**: `false`
 - `query-parameters` (boolean): If `true`, the peer content cache is capable of handling query parameters in URLs.
+
+  **Default**: `false`
 - `sc` (boolean): If `true`, the peer content cache is capable of caching shared non-iCloud content.
+
+  **Default**: `false`
 - `ur` (boolean): If `true`, the peer content cache is capable of prioritizing imports and uploads.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-network](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary/local-network-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-network](./local-network-data.dictionary.md)
   The network details about the peer cache.
 
 

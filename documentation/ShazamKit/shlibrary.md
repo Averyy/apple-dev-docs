@@ -1,7 +1,8 @@
 # SHLibrary
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a user’s synced Shazam library.
 
@@ -23,27 +24,28 @@ final class SHLibrary
 ## Topics
 
 ### Managing the items in the library
-- [static let `default`: SHLibrary](shlibrary/default.md)
+- [static let `default`: SHLibrary](./shlibrary/default.md)
   An instance of the default Shazam library.
-- [func addItems([SHMediaItem]) async throws](shlibrary/additems(_:).md)
+- [func addItems([SHMediaItem]) async throws](./shlibrary/additems%28_%29.md)
   Adds an array of media items to the user’s Shazam library.
-- [func removeItems([SHMediaItem]) async throws](shlibrary/removeitems(_:).md)
+- [func removeItems([SHMediaItem]) async throws](./shlibrary/removeitems%28_%29.md)
   Removes an array of media items from the user’s Shazam library.
-- [var items: [SHMediaItem]](shlibrary/items.md)
+- [var items: [SHMediaItem]](./shlibrary/items.md)
   The list of synced items in the Media Library.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SHMediaLibrary](shmedialibrary.md)
+### Update the user’s Shazam library
+- [class SHMediaLibrary](./shmedialibrary.md)
   An object that represents the user’s Shazam library.
 
 

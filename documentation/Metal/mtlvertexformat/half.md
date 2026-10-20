@@ -1,7 +1,8 @@
 # MTLVertexFormat.half
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit floating-point value.
 
@@ -19,13 +20,18 @@ A 16-bit floating-point value.
 case half
 ```
 
+```c
+MTLVertexFormatHalf
+```
+
 ## See Also
 
-- [MTLVertexFormat.half2](mtlvertexformat/half2.md)
+### 16-bit floating-point formats
+- [MTLVertexFormat.half2](./half2.md)
   A two-component vector with 16-bit floating-point values.
-- [MTLVertexFormat.half3](mtlvertexformat/half3.md)
+- [MTLVertexFormat.half3](./half3.md)
   A three-component vector with 16-bit floating-point values.
-- [MTLVertexFormat.half4](mtlvertexformat/half4.md)
+- [MTLVertexFormat.half4](./half4.md)
   A four-component vector with 16-bit floating-point values.
 
 

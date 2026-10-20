@@ -1,7 +1,8 @@
 # MTRTransportType.NFC
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case NFC
+```
+
+```c
+MTRTransportTypeNFC
 ```
 
 

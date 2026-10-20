@@ -1,7 +1,8 @@
 # minor
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minor value that the observed beacon transmitted.
 
@@ -18,17 +19,22 @@ The minor value that the observed beacon transmitted.
 var minor: NSNumber { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSNumber * minor;
+```
+
 ## Mentions
 
-- [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
+- [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
 ## See Also
 
-- [var uuid: UUID](clbeacon/uuid.md)
+### Getting the beacon identity
+- [var uuid: UUID](./uuid.md)
   The UUID that the observed beacon transmitted.
-- [var major: NSNumber](clbeacon/major.md)
+- [var major: NSNumber](./major.md)
   The major value that the observed beacon transmitted.
-- [var proximityUUID: UUID](clbeacon/proximityuuid.md)
+- [var proximityUUID: UUID](./proximityuuid.md)
   The proximity ID of the beacon.
 
 

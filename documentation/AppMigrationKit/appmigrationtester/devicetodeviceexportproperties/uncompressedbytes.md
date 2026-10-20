@@ -1,7 +1,8 @@
 # uncompressedBytes
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of uncompressed bytes written to the exporter.
 
@@ -17,9 +18,10 @@ let uncompressedBytes: Int
 
 ## See Also
 
-- [let compressedBytes: Int?](appmigrationtester/devicetodeviceexportproperties/compressedbytes.md)
+### Inspecting data size properties
+- [let compressedBytes: Int?](./compressedbytes.md)
   The number of compressed bytes written to the migration infrastructure, if the extension uses compression.
-- [let sizeEstimate: Int](appmigrationtester/devicetodeviceexportproperties/sizeestimate.md)
+- [let sizeEstimate: Int](./sizeestimate.md)
   The size estimate provided by the app extension.
 
 

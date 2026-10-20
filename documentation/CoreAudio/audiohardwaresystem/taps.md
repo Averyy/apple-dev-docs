@@ -1,7 +1,8 @@
 # taps
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of AudioHardwareTaps that represent all the tap objects on the system.
 

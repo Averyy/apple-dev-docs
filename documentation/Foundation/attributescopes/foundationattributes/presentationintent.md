@@ -1,7 +1,8 @@
 # presentationIntent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a presentation intent attribute.
 
@@ -22,15 +23,16 @@ let presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentA
 
 ## See Also
 
-- [let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](attributescopes/foundationattributes/inlinepresentationintent.md)
+### Using presentation intent attributes
+- [let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./inlinepresentationintent.md)
   A property for accessing an inline presentation intent attribute.
-- [AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](attributescopes/foundationattributes/inlinepresentationintentattribute.md)
+- [AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./inlinepresentationintentattribute.md)
   A type for using an inline presentation intent as an attribute.
-- [struct InlinePresentationIntent](inlinepresentationintent.md)
+- [struct InlinePresentationIntent](../../inlinepresentationintent.md)
   A type that defines presentation intent for runs of characters for traits like emphasis, strikethrough, and code voice.
-- [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](attributescopes/foundationattributes/presentationintentattribute.md)
+- [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./presentationintentattribute.md)
   A type for using a presentation intent as an attribute.
-- [struct PresentationIntent](presentationintent.md)
+- [struct PresentationIntent](../../presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
 

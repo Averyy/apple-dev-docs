@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of opacity specified as a single value.
 
@@ -20,11 +21,12 @@ var scale: Float
 
 #### Discussion
 
-If [`texture`](custommaterial/opacity/texture.md) is `nil`, RealityKit uses this value for the opacity of the entire material. If [`texture`](custommaterial/opacity/texture.md) isn’t `nil`, RealityKit multiplies the value sampled from [`texture`](custommaterial/opacity/texture.md) by this property to calculate the final opacity values.
+If [`texture`](./texture.md) is `nil`, RealityKit uses this value for the opacity of the entire material. If [`texture`](./texture.md) isn’t `nil`, RealityKit multiplies the value sampled from [`texture`](./texture.md) by this property to calculate the final opacity values.
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/opacity/texture.md)
+### Accessing opacity data
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The amount of opacity specified using a UV-mapped image.
 
 

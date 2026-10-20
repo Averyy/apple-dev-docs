@@ -1,7 +1,8 @@
 # current
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current App Store storefront for product purchases.
 
@@ -22,13 +23,14 @@ static var current: Storefront? { get async }
 
 #### Discussion
 
-Use [`current`](storefront/current.md) to determine a customer’s current storefront region and offer in-app products suitable for that region. You maintain your own list of product identifiers and the storefronts in which you make them available.
+Use [`current`](./current.md) to determine a customer’s current storefront region and offer in-app products suitable for that region. You maintain your own list of product identifiers and the storefronts in which you make them available.
 
 ## See Also
 
-- [struct Storefront](storefront.md)
+### Storefront information
+- [struct Storefront](../storefront.md)
   The region and unique identifier of the App Store storefront for the device.
-- [static var updates: Storefront.Storefronts](storefront/updates.md)
+- [static var updates: Storefront.Storefronts](./updates.md)
   The asynchronous sequence that emits storefront information when the system updates the storefront.
 
 

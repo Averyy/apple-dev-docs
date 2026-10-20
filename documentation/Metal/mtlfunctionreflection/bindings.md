@@ -1,7 +1,8 @@
 # bindings
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides a list of inputs and outputs of the function.
 
@@ -17,6 +18,10 @@ Provides a list of inputs and outputs of the function.
 
 ```swift
 var bindings: [any MTLBinding] { get }
+```
+
+```objc
+@property (readonly, nonnull) NSArray<id<MTLBinding>> * bindings;
 ```
 
 

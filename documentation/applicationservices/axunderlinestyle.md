@@ -1,9 +1,10 @@
 # AXUnderlineStyle
 
 **Framework**: Application Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Values that describe the style of underlining (used with the [`kAXUnderlineTextAttribute`](kaxunderlinetextattribute.md) attribute).
+Values that describe the style of underlining (used with the [`kAXUnderlineTextAttribute`](./kaxunderlinetextattribute.md) attribute).
 
 **Availability**:
 - macOS 10.4+
@@ -14,22 +15,29 @@ Values that describe the style of underlining (used with the [`kAXUnderlineTextA
 enum AXUnderlineStyle : UInt32, @unchecked Sendable
 ```
 
+```c
+typedef enum AXUnderlineStyle : UInt32 {
+    ...
+} AXUnderlineStyle;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AXUnderlineStyle.double](axunderlinestyle/double.md)
-- [AXUnderlineStyle.none](axunderlinestyle/none.md)
-- [AXUnderlineStyle.single](axunderlinestyle/single.md)
-- [AXUnderlineStyle.thick](axunderlinestyle/thick.md)
+- [AXUnderlineStyle.double](./axunderlinestyle/double.md)
+- [AXUnderlineStyle.none](./axunderlinestyle/none.md)
+- [AXUnderlineStyle.single](./axunderlinestyle/single.md)
+- [AXUnderlineStyle.thick](./axunderlinestyle/thick.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [enum AXUnderlineStyle](axunderlinestyle.md)
+### Related Documentation
+- [enum AXUnderlineStyle](./axunderlinestyle.md)
   Values that describe the style of underlining (used with the  attribute).
 
 

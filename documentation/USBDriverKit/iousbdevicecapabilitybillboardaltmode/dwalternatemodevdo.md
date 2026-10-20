@@ -1,23 +1,25 @@
 # dwAlternateModeVdo
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t dwAlternateModeVdo;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitybillboardaltmode/blength.md)
-- [bDescriptorType](iousbdevicecapabilitybillboardaltmode/bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilitybillboardaltmode/bdevcapabilitytype.md)
-- [bIndex](iousbdevicecapabilitybillboardaltmode/bindex.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [bIndex](./bindex.md)
 
 
 ---

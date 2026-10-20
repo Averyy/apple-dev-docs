@@ -1,14 +1,15 @@
 # areIsochResourcesAllocated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual Boolean areIsochResourcesAllocated(UInt8 *pAllocatedIsochChannel, UInt32 *pAllocatedBandwidthUnits);
 ```
 

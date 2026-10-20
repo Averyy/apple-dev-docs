@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio sequencer object.
 
@@ -18,13 +19,18 @@ Creates an audio sequencer object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 Use this initializer to create a sequencer with tracks that only send events to external MIDI endpoints.
 
 ## See Also
 
-- [init(audioEngine: AVAudioEngine)](avaudiosequencer/init(audioengine:).md)
+### Creating an audio sequencer
+- [init(audioEngine: AVAudioEngine)](./init%28audioengine%29.md)
   Creates an audio sequencer that the framework attaches to an audio engine instance.
 
 

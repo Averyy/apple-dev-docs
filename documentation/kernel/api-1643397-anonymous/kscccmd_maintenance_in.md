@@ -1,7 +1,8 @@
 # kSCCCmd_MAINTENANCE_IN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCCCmd_MAINTENANCE_IN = 0xA3
 ```
 

@@ -1,17 +1,22 @@
 # NSImage.CacheMode.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Caching is unspecified.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case `default`
+```
+
+```c
+NSImageCacheDefault
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Use the image rep’s default.
 
 ## See Also
 
-- [NSImage.CacheMode.always](nsimage/cachemode-swift.enum/always.md)
+### Cache Options
+- [NSImage.CacheMode.always](./always.md)
   Always generate a cache when drawing.
-- [NSImage.CacheMode.bySize](nsimage/cachemode-swift.enum/bysize.md)
+- [NSImage.CacheMode.bySize](./bysize.md)
   Cache if the cache size is smaller than the original data.
-- [NSImage.CacheMode.never](nsimage/cachemode-swift.enum/never.md)
+- [NSImage.CacheMode.never](./never.md)
   Never cache; always draw direct.
 
 

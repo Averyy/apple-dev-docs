@@ -1,7 +1,8 @@
 # trailingImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration’s image.
 
@@ -16,11 +17,15 @@ The configuration’s image.
 var trailingImage: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIImage * trailingImage;
+```
+
 #### Discussion
 
-Configurations are immutable. To change or remove the image that the message list item’s trailing region shows, create a new configuration and update the list item’s [`trailingConfiguration`](cpmessagelistitem/trailingconfiguration.md) property.
+Configurations are immutable. To change or remove the image that the message list item’s trailing region shows, create a new configuration and update the list item’s [`trailingConfiguration`](../cpmessagelistitem/trailingconfiguration.md) property.
 
-A configuration’s image can’t be larger than [`CPMaximumMessageItemImageSize`](cpmaximummessageitemimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
+A configuration’s image can’t be larger than [`CPMaximumMessageItemImageSize`](../cpmaximummessageitemimagesize.md). If you use an animated image, this property returns the first image in the animation sequence.
 
 
 ---

@@ -1,7 +1,8 @@
 # addOrientOp(_:inverse:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addOrientOp(_ animatedValueName: String, inverse: Bool) -> MDLTransformOrientOp
+```
+
+```objc
+- (MDLTransformOrientOp *) addOrientOp:(NSString *) animatedValueName inverse:(bool) inverse;
 ```
 
 

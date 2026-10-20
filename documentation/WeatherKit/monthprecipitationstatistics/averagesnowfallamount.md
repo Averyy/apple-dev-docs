@@ -1,7 +1,8 @@
 # averageSnowfallAmount
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average amount of snowfall as depth of snow crystals for the month.
 

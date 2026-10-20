@@ -1,7 +1,8 @@
 # HIDDeviceError.exclusiveAccess
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Another client posesses exclusive access to this device.
 

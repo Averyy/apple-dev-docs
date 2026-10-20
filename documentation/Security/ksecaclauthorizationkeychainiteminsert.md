@@ -1,7 +1,8 @@
 # kSecACLAuthorizationKeychainItemInsert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Insert an item into a keychain.
 
@@ -12,6 +13,10 @@ Insert an item into a keychain.
 
 ```swift
 let kSecACLAuthorizationKeychainItemInsert: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationKeychainItemInsert;
 ```
 
 

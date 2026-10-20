@@ -1,7 +1,8 @@
 # AudioConverterFillComplexBufferRealtimeSafe(_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func AudioConverterFillComplexBufferRealtimeSafe(_ inAudioConverter: AudioConverterRef, _ inInputDataProc: AudioConverterComplexInputDataProcRealtimeSafe, _ inInputDataProcUserData: UnsafeMutableRawPointer?, _ ioOutputDataPacketSize: UnsafeMutablePointer<UInt32>, _ outOutputData: UnsafeMutablePointer<AudioBufferList>, _ outPacketDescription: UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus
+```
+
+```c
+extern OSStatus AudioConverterFillComplexBufferRealtimeSafe(AudioConverterRef inAudioConverter, AudioConverterComplexInputDataProcRealtimeSafe inInputDataProc, void *inInputDataProcUserData, UInt32 *ioOutputDataPacketSize, AudioBufferList *outOutputData, AudioStreamPacketDescription *outPacketDescription);
 ```
 
 #### Discussion

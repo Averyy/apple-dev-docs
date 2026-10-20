@@ -1,7 +1,8 @@
 # NSFileProviderItemIdentifier
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for an item managed by the File Provider extension.
 
@@ -18,39 +19,44 @@ A unique identifier for an item managed by the File Provider extension.
 struct NSFileProviderItemIdentifier
 ```
 
+```c
+typedef NSString * NSFileProviderItemIdentifier;
+```
+
 ## Topics
 
 ### Constants
-- [static let rootContainer: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/rootcontainer.md)
+- [static let rootContainer: NSFileProviderItemIdentifier](./nsfileprovideritemidentifier/rootcontainer.md)
   The persistent identifier for the root directory of the file provider’s shared file hierarchy.
-- [static let workingSet: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/workingset.md)
+- [static let workingSet: NSFileProviderItemIdentifier](./nsfileprovideritemidentifier/workingset.md)
   The persistent identifier representing the working set of documents and directories.
-- [static let trashContainer: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/trashcontainer.md)
+- [static let trashContainer: NSFileProviderItemIdentifier](./nsfileprovideritemidentifier/trashcontainer.md)
   The persistent identifier for the parent of all trashed items.
 ### Initializers
-- [init(String)](nsfileprovideritemidentifier/init(_:).md)
+- [init(String)](./nsfileprovideritemidentifier/init%28_%29.md)
   Returns a newly instantiated persistent identifier.
-- [init(rawValue: String)](nsfileprovideritemidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./nsfileprovideritemidentifier/init%28rawvalue%29.md)
   Returns a newly instantiated persistent identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias NSFileProviderItem](nsfileprovideritem-swift.typealias.md)
+### Provided items
+- [typealias NSFileProviderItem](./nsfileprovideritem-swift.typealias.md)
   An item the File Provider extension manages.
-- [protocol NSFileProviderItemProtocol](nsfileprovideritemprotocol.md)
+- [protocol NSFileProviderItemProtocol](./nsfileprovideritemprotocol.md)
   A protocol that defines the properties of an item managed by the File Provider extension.
-- [struct NSFileProviderItemCapabilities](nsfileprovideritemcapabilities.md)
+- [struct NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities.md)
   An item’s capabilities, which define the actions that the user can perform in the document browser.
-- [struct NSFileProviderTypeAndCreator](nsfileprovidertypeandcreator.md)
+- [struct NSFileProviderTypeAndCreator](./nsfileprovidertypeandcreator.md)
   A structure that contains the file type and file creator codes for an item.
 
 

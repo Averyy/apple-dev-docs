@@ -1,7 +1,8 @@
 # NFCPresentmentIntentAssertion.Error
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error type that indicates problems with the presentment intent assertion.
 
@@ -19,23 +20,24 @@ enum Error
 ## Topics
 
 ### Presentment intent assertion errors
-- [NFCPresentmentIntentAssertion.Error.systemEligibilityFailed](nfcpresentmentintentassertion/error/systemeligibilityfailed.md)
+- [NFCPresentmentIntentAssertion.Error.systemEligibilityFailed](./error/systemeligibilityfailed.md)
   The current system isn’t eligible to use this service.
-- [NFCPresentmentIntentAssertion.Error.systemNotAvailable](nfcpresentmentintentassertion/error/systemnotavailable.md)
+- [NFCPresentmentIntentAssertion.Error.systemNotAvailable](./error/systemnotavailable.md)
   The system is unavailable because it’s in the cool-down period.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isValid: Bool](nfcpresentmentintentassertion/isvalid.md)
+### Testing presentment intention validity
+- [var isValid: Bool](./isvalid.md)
   A Boolean property that indicates whether the presentment intent assertion instance is still valid.
 
 

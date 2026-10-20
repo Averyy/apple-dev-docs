@@ -1,7 +1,8 @@
 # sec_identity_create_with_certificates(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_identity_create_with_certificates(_ identity: SecIdentity, _ certificates: CFArray) -> sec_identity_t?
+```
+
+```c
+sec_identity_tsec_identity_create_with_certificates(SecIdentityRef identity, CFArrayRef certificates);
 ```
 
 #### Return Value

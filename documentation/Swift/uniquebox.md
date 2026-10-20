@@ -1,7 +1,8 @@
 # UniqueBox
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A smart pointer type that uniquely owns an instance of `Value` on the heap.
 
@@ -24,30 +25,31 @@ struct UniqueBox<Value> where Value : ~Copyable
 ## Topics
 
 ### Initializers
-- [init(consuming Value)](uniquebox/init(_:).md)
+- [init(consuming Value)](./uniquebox/init%28_%29.md)
   Initializes a value of this unqiue box with the given initial value.
 ### Instance Properties
-- [var mutableSpan: MutableSpan<Value>](uniquebox/mutablespan.md)
+- [var mutableSpan: MutableSpan<Value>](./uniquebox/mutablespan.md)
   A mutable span over the single element stored in this box.
-- [var span: Span<Value>](uniquebox/span.md)
+- [var span: Span<Value>](./uniquebox/span.md)
   A span over the single element stored in this box.
-- [var value: Value](uniquebox/value.md)
+- [var value: Value](./uniquebox/value.md)
   Dereferences the unique box allowing for in-place reads and writes to the stored `Value`.
 ### Instance Methods
-- [func clone() -> UniqueBox<Value>](uniquebox/clone.md)
+- [func clone() -> UniqueBox<Value>](./uniquebox/clone%28%29.md)
   Copies the value within the unqiue box and returns it in a new unique instance.
-- [func consume() -> Value](uniquebox/consume.md)
+- [func consume() -> Value](./uniquebox/consume%28%29.md)
   Consumes the unique box and returns the instance of `Value` that was within the box.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct UniqueArray](uniquearray.md)
+### Heap Storage
+- [struct UniqueArray](./uniquearray.md)
   A dynamically self-resizing, heap allocated, noncopyable array of potentially noncopyable elements.
 
 

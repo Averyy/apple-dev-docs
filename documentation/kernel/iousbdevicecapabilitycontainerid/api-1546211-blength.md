@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the descriptor.
 
@@ -10,19 +11,20 @@ The size of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdevicecapabilitycontainerid/1546207-bdescriptortype.md)
+### Getting the Properties
+- [bDescriptorType](./api-1546207-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilitycontainerid/1546363-bdevcapabilitytype.md)
+- [bDevCapabilityType](./api-1546363-bdevcapabilitytype.md)
   The device capability type.
-- [bReservedID](iousbdevicecapabilitycontainerid/1546323-breservedid.md)
+- [bReservedID](./api-1546323-breservedid.md)
   Reserved for future use.
-- [containerID](iousbdevicecapabilitycontainerid/1545924-containerid.md)
+- [containerID](./api-1545924-containerid.md)
   A number that uniquely identifies the device instance across all modes of operation.
 
 

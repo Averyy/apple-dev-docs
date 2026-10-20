@@ -1,16 +1,17 @@
 # version
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var version: UInt32
 ```
 
+```c
+uint32_t version;
+```
+
 ## See Also
 
-- [var bitmapInfo: CGBitmapInfo](cgcolorbufferformat/bitmapinfo.md)
-- [var bitsPerComponent: Int](cgcolorbufferformat/bitspercomponent.md)
-- [var bitsPerPixel: Int](cgcolorbufferformat/bitsperpixel.md)
-- [var bytesPerRow: Int](cgcolorbufferformat/bytesperrow.md)
+### Instance Properties
+- [var bitmapInfo: CGBitmapInfo](./bitmapinfo.md)
+- [var bitsPerComponent: Int](./bitspercomponent.md)
+- [var bitsPerPixel: Int](./bitsperpixel.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
 
 
 ---

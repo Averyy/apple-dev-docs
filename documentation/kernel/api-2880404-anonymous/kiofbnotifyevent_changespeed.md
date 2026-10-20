@@ -1,14 +1,15 @@
 # kIOFBNotifyEvent_ChangeSpeed
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNotifyEvent_ChangeSpeed = (1ULL << 3)
 ```
 

@@ -1,7 +1,8 @@
 # init(subsystem:category:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signposter that uses the specified subsystem and system-defined log category.
 
@@ -11,7 +12,7 @@ Creates a signposter that uses the specified subsystem and system-defined log ca
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,20 +23,21 @@ init(subsystem: String, category: OSLog.Category)
 
 ## Parameters
 
-- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s *bundle ID*. For more information, see [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
-- `category`: The system-defined category, which the system uses to categorize emitted signposts. For possible values, see [`OSLog.Category`](oslog/category.md).
+- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s *bundle ID*. For more information, see [`CFBundleIdentifier`](../../BundleResources/information-property-list/cfbundleidentifier.md).
+- `category`: The system-defined category, which the system uses to categorize emitted signposts. For possible values, see [`OSLog.Category`](../oslog/category.md).
 
 ## See Also
 
-- [init()](ossignposter/init.md)
+### Creating a Signposter
+- [init()](./init%28%29.md)
   Creates a signposter that uses the default subsystem.
-- [init(subsystem: String, category: String)](ossignposter/init(subsystem:category:)-94xpb.md)
+- [init(subsystem: String, category: String)](./init%28subsystem,category%29-94xpb.md)
   Creates a signposter that uses the specified subsystem and category.
-- [init(logger: Logger)](ossignposter/init(logger:).md)
+- [init(logger: Logger)](./init%28logger%29.md)
   Creates a signposter that uses the subsystem and category of an existing logger.
-- [init(logHandle: OSLog)](ossignposter/init(loghandle:).md)
+- [init(logHandle: OSLog)](./init%28loghandle%29.md)
   Creates a signposter that uses the subsystem and category of an existing log.
-- [static var disabled: OSSignposter](ossignposter/disabled.md)
+- [static var disabled: OSSignposter](./disabled.md)
   A shared signposter that doesn’t emit signposts at runtime.
 
 

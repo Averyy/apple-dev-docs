@@ -1,6 +1,7 @@
 # Creating a chart using Swift Charts
 
-**Framework**: Swift Charts
+**Framework**: Swift Charts  
+**Role**: Article
 
 Make a chart by combining chart building blocks in SwiftUI.
 
@@ -8,7 +9,7 @@ Make a chart by combining chart building blocks in SwiftUI.
 
 Help people understand complex data by focusing on what you want to communicate and who you’re communicating to. For example, suppose that you have a collection of colorful toy shapes:
 
-![A collection of cubes, spheres, and pyramids that appear in pink, yellow, purple, and green, all lying on a plane.](/images/com.apple.Charts/CreatingYourFirstChart-1@2x.png)
+![A collection of cubes, spheres, and pyramids that appear in pink, yellow, purple, and green, all lying on a plane.](https://developer.apple.com/tutorials/images/com.apple.Charts/CreatingYourFirstChart-1@2x.png)
 
 You can formulate questions about this data that you’d like to answer, like which toy shape appears the most, or how many toys are green? One way to represent your data is to collect it into a table. A table organizes the data into columns and rows so it can be easily inspected. For example, you can record how many shapes of each color you have:
 
@@ -20,9 +21,9 @@ You can formulate questions about this data that you’d like to answer, like wh
 | **Green** | 2 | 0 | 1 | 3 |
 | **Total** | 5 | 4 | 4 | 13 |
 
-However, in many cases, a more effective data representation is a chart. A chart allows you to communicate large amounts of information all at once. The kind of chart that you create and the way you configure the chart depend on what you want to show. To create a chart with Swift Charts, define your data and initialize a [`Chart`](chart.md) view with marks and data properties. Then use modifiers to customize different components of the chart, like the legend, axes, and scale.
+However, in many cases, a more effective data representation is a chart. A chart allows you to communicate large amounts of information all at once. The kind of chart that you create and the way you configure the chart depend on what you want to show. To create a chart with Swift Charts, define your data and initialize a [`Chart`](./chart.md) view with marks and data properties. Then use modifiers to customize different components of the chart, like the legend, axes, and scale.
 
-##### Define the Data Source
+##### Define the data source
 
 Think about a chart as an answer to your questions. Suppose you want to know which toy shape appears the most. Start by visualizing how many of each shape you have. To display this information with a chart, create a `ToyShape` structure that represents the information that you want to visualize:
 
@@ -46,9 +47,9 @@ var data: [ToyShape] = [
 
 In a real app, you might download this data from a network connection, or load it from a file.
 
-##### Initialize a Chart View and Create Marks
+##### Initialize a chart view and create marks
 
-Create a [`Chart`](chart.md) view that serves as a container for the data series that you want to draw:
+Create a [`Chart`](./chart.md) view that serves as a container for the data series that you want to draw:
 
 ```swift
 import SwiftUI
@@ -63,7 +64,7 @@ struct BarChart: View {
 }
 ```
 
-Inside the chart, specify the graphical marks that represent the data. You can populate it with a variety of kinds of marks, like [`BarMark`](barmark.md), [`PointMark`](pointmark.md) or [`LineMark`](linemark.md), that plot your data. The kind of mark that you choose depends on how you want to visualize the data. For example, you can use [`LineMark`](linemark.md) to create a line chart or [`PointMark`](pointmark.md) to produce a scatter plot. In this case, creating a bar chart is a good way to convey the number of each type of toy shape, so you use [`BarMark`](barmark.md):
+Inside the chart, specify the graphical marks that represent the data. You can populate it with a variety of kinds of marks, like [`BarMark`](./barmark.md), [`PointMark`](./pointmark.md) or [`LineMark`](./linemark.md), that plot your data. The kind of mark that you choose depends on how you want to visualize the data. For example, you can use [`LineMark`](./linemark.md) to create a line chart or [`PointMark`](./pointmark.md) to produce a scatter plot. In this case, creating a bar chart is a good way to convey the number of each type of toy shape, so you use [`BarMark`](./barmark.md):
 
 ```swift
 Chart {
@@ -84,11 +85,11 @@ Chart {
 
 The resulting chart clearly communicates that the cube toy shape appears the most:
 
-![A bar chart with three bars. The first bar has a height of five and has the label Cube below the bar. The second bar has a height of four and has the label Sphere below the bar. The third bar has a height of 4 and has the label Pyramid below the bar. The first bar has a call out that identifies it as a type of Mark, specifically a BarMark. The bar chart also has labels on the x-axis and the y-axis. The number scale appears on the right side of the chart where the number 4 has a call out that marks it as an Axis Label. The scale has a minimum of zero and a maximum of six.](/images/com.apple.Charts/CreatingYourFirstChart-2@2x.png)
+![A bar chart with three bars. The first bar has a height of five and has the label Cube below the bar. The second bar has a height of four and has the label Sphere below the bar. The third bar has a height of 4 and has the label Pyramid below the bar. The first bar has a call out that identifies it as a type of Mark, specifically a BarMark. The bar chart also has labels on the x-axis and the y-axis. The number scale appears on the right side of the chart where the number 4 has a call out that marks it as an Axis Label. The scale has a minimum of zero and a maximum of six.](https://developer.apple.com/tutorials/images/com.apple.Charts/CreatingYourFirstChart-2@2x.png)
 
 Scale determines the position, height, and color of each `BarMark`. As you plot data on the y-dimension, the framework automatically generates axis labels for the y-axis to map the data values. The scale for the y-dimension is adjusted to match the range of totals for the shape’s group.
 
-The above code lists each [`BarMark`](barmark.md) individually. However, for regular, repetitive data, you can use a [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) structure to represent the same chart more concisely:
+The above code lists each [`BarMark`](./barmark.md) individually. However, for regular, repetitive data, you can use a [`ForEach`](../SwiftUI/foreach.md) structure to represent the same chart more concisely:
 
 ```swift
 Chart {
@@ -101,7 +102,7 @@ Chart {
 }
 ```
 
-##### Explore Additional Data Properties
+##### Explore additional data properties
 
 The above bar chart shows how much of each type of toy shape there are, but the earlier table separates each toy shape by color as well. A stacked bar chart can visualize not only the amount of each toy shape type, but also the distribution of colors among the shapes. Before you can plot this new information, you need to represent color in your data structure:
 
@@ -133,7 +134,7 @@ var stackedBarData: [ToyShape] = [
 ]
 ```
 
-To represent this additional dimension of information, add the [`foregroundStyle(by:)`](chartcontent/foregroundstyle(by:).md) method to the [`BarMark`](barmark.md), and indicate the data’s color property as the plottable value:
+To represent this additional dimension of information, add the [`foregroundStyle(by:)`](./chartcontent/foregroundstyle%28by%29.md) method to the [`BarMark`](./barmark.md), and indicate the data’s color property as the plottable value:
 
 ```swift
 Chart {
@@ -149,13 +150,13 @@ Chart {
 
 The chart now splits the bars into different parts that represent the number of colors for each shape:
 
-![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The colors used by the chart to create the marks don’t match the shape colors that they represent. For example, the color that represents green shapes is pink.](/images/com.apple.Charts/CreatingYourFirstChart-3@2x.png)
+![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The colors used by the chart to create the marks don’t match the shape colors that they represent. For example, the color that represents green shapes is pink.](https://developer.apple.com/tutorials/images/com.apple.Charts/CreatingYourFirstChart-3@2x.png)
 
 The stacked bar chart chooses colors to represent the new data, and adds a legend to indicate which color represents which kind of data.
 
-##### Customize Your Chart
+##### Customize your chart
 
-For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the [`chartForegroundStyleScale(_:)`](https://developer.apple.com/documentation/swiftui/view/chartforegroundstylescale(_:)) chart modifier:
+For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the [`chartForegroundStyleScale(_:)`](../SwiftUI/view/chartforegroundstylescale%28_%29.md) chart modifier:
 
 ```swift
 Chart {
@@ -174,21 +175,22 @@ Chart {
 
 Now the names of the colors match the colors used in the chart, making the chart easier to understand:
 
-![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The legend shows that the color of bar marks match the shape colors that they represent. For example, the color green is labeled Green, indicating that green marks in the chart represent green shapes.](/images/com.apple.Charts/CreatingYourFirstChart-4@2x.png)
+![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The legend shows that the color of bar marks match the shape colors that they represent. For example, the color green is labeled Green, indicating that green marks in the chart represent green shapes.](https://developer.apple.com/tutorials/images/com.apple.Charts/CreatingYourFirstChart-4@2x.png)
 
 This chart makes the relationship between shape counts and colors clear. You can customize charts in many other ways. For example, you can set the bar width, choose different legend symbols, and control the axes.
 
 ## See Also
 
-- [Visualizing your app’s data](visualizing-your-app-s-data.md)
+### Charts
+- [Visualizing your app’s data](./visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
-- [struct Chart](chart.md)
+- [struct Chart](./chart.md)
   A SwiftUI view that displays a chart.
-- [protocol ChartContent](chartcontent.md)
+- [protocol ChartContent](./chartcontent.md)
   A type that represents the content that you draw on a chart.
-- [struct ChartContentBuilder](chartcontentbuilder.md)
+- [struct ChartContentBuilder](./chartcontentbuilder.md)
   A result builder that you use to compose the contents of a chart.
-- [struct Plot](plot.md)
+- [struct Plot](./plot.md)
   A mechanism for grouping chart contents into a single entity.
 
 

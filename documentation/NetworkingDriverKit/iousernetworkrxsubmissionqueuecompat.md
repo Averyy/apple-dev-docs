@@ -1,31 +1,32 @@
 # IOUserNetworkRxSubmissionQueueCompat
 
 **Framework**: NetworkingDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserNetworkRxSubmissionQueueCompat;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [free](iousernetworkrxsubmissionqueuecompat/free.md)
-- [init](iousernetworkrxsubmissionqueuecompat/init.md)
-- [initWithPool](iousernetworkrxsubmissionqueuecompat/initwithpool.md)
+- [free](./iousernetworkrxsubmissionqueuecompat/free.md)
+- [init](./iousernetworkrxsubmissionqueuecompat/init.md)
+- [initWithPool](./iousernetworkrxsubmissionqueuecompat/initwithpool.md)
 ### Type Methods
-- [Create](iousernetworkrxsubmissionqueuecompat/create.md)
-- [withPool](iousernetworkrxsubmissionqueuecompat/withpool.md)
+- [Create](./iousernetworkrxsubmissionqueuecompat/create.md)
+- [withPool](./iousernetworkrxsubmissionqueuecompat/withpool.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOUserNetworkPacketQueueCompat](iousernetworkpacketqueuecompat.md)
+- [IOUserNetworkPacketQueueCompat](./iousernetworkpacketqueuecompat.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # add(from:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a saved custom catalog from a file.
 
@@ -20,13 +21,18 @@ Loads a saved custom catalog from a file.
 func add(from customCatalogURL: URL) throws
 ```
 
+```objc
+- (BOOL) addCustomCatalogFromURL:(NSURL *) customCatalogURL error:(NSError **) error;
+```
+
 ## Parameters
 
 - `customCatalogURL`: The file URL for a custom catalog.
 
 ## See Also
 
-- [func write(to: URL) throws](shcustomcatalog/write(to:).md)
+### Loading and saving a custom catalog
+- [func write(to: URL) throws](./write%28to%29.md)
   Saves the custom catalog to a local file.
 
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create or modify a rule.
 
@@ -10,7 +11,7 @@ The response body for endpoints that create or modify a rule.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleResponse
 ```
 
@@ -21,11 +22,12 @@ object GameCenterMatchmakingRuleResponse
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleCreateRequest](gamecentermatchmakingrulecreaterequest.md)
+### Objects
+- [object GameCenterMatchmakingRuleCreateRequest](./gamecentermatchmakingrulecreaterequest.md)
   The request body you use to create a rule.
-- [object GameCenterMatchmakingRuleUpdateRequest](gamecentermatchmakingruleupdaterequest.md)
+- [object GameCenterMatchmakingRuleUpdateRequest](./gamecentermatchmakingruleupdaterequest.md)
   The request body you use to modify a rule.
-- [object GameCenterMatchmakingRule](gamecentermatchmakingrule.md)
+- [object GameCenterMatchmakingRule](./gamecentermatchmakingrule.md)
   A JavaScript expression evaluated during Game Center matchmaking to determine player compatibility.
 
 

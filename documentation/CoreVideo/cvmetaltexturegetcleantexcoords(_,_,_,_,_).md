@@ -1,7 +1,8 @@
 # CVMetalTextureGetCleanTexCoords(_:_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns convenient normalized texture coordinates for the part of the image that should be displayed.
 
@@ -19,6 +20,10 @@ Returns convenient normalized texture coordinates for the part of the image that
 func CVMetalTextureGetCleanTexCoords(_ image: CVMetalTexture, _ lowerLeft: UnsafeMutablePointer<Float>, _ lowerRight: UnsafeMutablePointer<Float>, _ upperRight: UnsafeMutablePointer<Float>, _ upperLeft: UnsafeMutablePointer<Float>)
 ```
 
+```c
+extern void CVMetalTextureGetCleanTexCoords(CVMetalTextureRef image, float lowerLeft[2], float lowerRight[2], float upperRight[2], float upperLeft[2]);
+```
+
 #### Discussion
 
 This function automatically takes into account whether or not the texture is flipped.
@@ -33,11 +38,12 @@ This function automatically takes into account whether or not the texture is fli
 
 ## See Also
 
-- [func CVMetalTextureGetTexture(CVMetalTexture) -> (any MTLTexture)?](cvmetaltexturegettexture(_:).md)
+### Inspecting Textures
+- [func CVMetalTextureGetTexture(CVMetalTexture) -> (any MTLTexture)?](./cvmetaltexturegettexture%28_%29.md)
   Returns the Metal texture object for the image buffer.
-- [func CVMetalTextureIsFlipped(CVMetalTexture) -> Bool](cvmetaltextureisflipped(_:).md)
+- [func CVMetalTextureIsFlipped(CVMetalTexture) -> Bool](./cvmetaltextureisflipped%28_%29.md)
   Returns a Boolean value indicating whether the texture image is vertically flipped.
-- [func CVMetalTextureGetTypeID() -> CFTypeID](cvmetaltexturegettypeid().md)
+- [func CVMetalTextureGetTypeID() -> CFTypeID](./cvmetaltexturegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a CoreVideo Metal texture-based image buffer.
 
 

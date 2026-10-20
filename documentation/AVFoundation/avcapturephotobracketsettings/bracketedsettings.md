@@ -1,7 +1,8 @@
 # bracketedSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array describing the number of and settings for images to produce in a bracketed capture.
 
@@ -17,13 +18,18 @@ An array describing the number of and settings for images to produce in a bracke
 var bracketedSettings: [AVCaptureBracketedStillImageSettings] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<__kindof AVCaptureBracketedStillImageSettings *> * bracketedSettings;
+```
+
 #### Discussion
 
 This array is read-only. You provide this array of bracket settings when creating a settings object with the `init(format:rawPixelFormatType:bracketedSettings:)` initializer.
 
 ## See Also
 
-- [var isLensStabilizationEnabled: Bool](avcapturephotobracketsettings/islensstabilizationenabled.md)
+### Working with bracketed settings
+- [var isLensStabilizationEnabled: Bool](./islensstabilizationenabled.md)
   A Boolean value that specifies whether to stabilize the lens for the duration of the bracketed capture.
 
 

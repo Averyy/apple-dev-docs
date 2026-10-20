@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a descriptor at the specified (one-based) position in the receiving descriptor list, replacing the existing descriptor, if any, at that position.
 
@@ -15,6 +16,10 @@ Inserts a descriptor at the specified (one-based) position in the receiving desc
 func insert(_ descriptor: NSAppleEventDescriptor, at index: Int)
 ```
 
+```objc
+- (void) insertDescriptor:(NSAppleEventDescriptor *) descriptor atIndex:(NSInteger) index;
+```
+
 #### Discussion
 
 Because it actually replaces the descriptor, if any, at the specified position, this method might better be called `replaceDescriptor:atIndex:`. The receiver must be a list descriptor. The indices are one-based. Currently provides no indication if an error occurs.
@@ -26,9 +31,10 @@ Because it actually replaces the descriptor, if any, at the specified position, 
 
 ## See Also
 
-- [func atIndex(Int) -> NSAppleEventDescriptor?](nsappleeventdescriptor/atindex(_:).md)
+### Working With List Descriptors
+- [func atIndex(Int) -> NSAppleEventDescriptor?](./atindex%28_%29.md)
   Returns the descriptor at the specified (one-based) position in the receiving descriptor list.
-- [func remove(at: Int)](nsappleeventdescriptor/remove(at:).md)
+- [func remove(at: Int)](./remove%28at%29.md)
   Removes the descriptor at the specified (one-based) position in the receiving descriptor list.
 
 

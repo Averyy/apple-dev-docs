@@ -1,7 +1,8 @@
 # aimeData
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Property holding the complete static metadata needed for the immersive media playback.
 
@@ -16,7 +17,8 @@ final var aimeData: Data? { get throws }
 
 ## See Also
 
-- [func save(to: URL) throws](venuedescriptor/save(to:).md)
+### Saving a venue descriptor data
+- [func save(to: URL) throws](./save%28to%29.md)
   Generates an AIME file at the specified location.
 
 

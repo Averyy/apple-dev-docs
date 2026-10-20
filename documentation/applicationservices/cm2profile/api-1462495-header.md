@@ -1,7 +1,8 @@
 # header
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var header: CM2Header
+```
+
+```c
+CM2Header header;
 ```
 
 

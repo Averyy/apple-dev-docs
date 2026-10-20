@@ -1,7 +1,8 @@
 # draggable(_:preview:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates this view as the source of a drag and drop operation.
 
@@ -21,7 +22,7 @@ func draggable<V, T>(_ payload: @autoclosure @escaping () -> T, @ContentBuilder 
 
 ## Mentions
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
 #### Return Value
 
@@ -42,28 +43,29 @@ Color.pink
 }
 ```
 
-To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`dragPreview`](contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
+To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](./contentshape%28_,_,eofill%29.md) with a [`dragPreview`](../contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
 
 > ❗ **Important**: Don’t perform work on the main actor while exporting the item. Doing so isn’t supported and might cause a hang. Make sure `T`‘s exporting closure doesn’t dispatch to the main actor.
 
 ## Parameters
 
 - `payload`: A closure that returns a single class instance or a value conforming to `Transferable` that represents the draggable data from this view.
-- `preview`: A [`View`](view.md) to use as the source for the dragging preview, once the drag operation has begun. The preview is centered over the source view.
+- `preview`: A [`View`](../view.md) to use as the source for the dragging preview, once the drag operation has begun. The preview is centered over the source view.
 
 ## See Also
 
-- [func draggable<T>(@autoclosure () -> T) -> some View](view/draggable(_:).md)
+### Moving transferable items
+- [func draggable<T>(@autoclosure () -> T) -> some View](./draggable%28_%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func draggable<Item>(Item.Type, containerNamespace: Namespace.ID?, () -> Item?) -> some View](view/draggable(_:containernamespace:_:).md)
+- [func draggable<Item>(Item.Type, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,containernamespace,_%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
-- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](view/draggable(_:id:containernamespace:_:).md)
+- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](./draggable%28_,id,containernamespace,_%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
-- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](view/draggable(_:id:item:containernamespace:).md)
+- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](./draggable%28_,id,item,containernamespace%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
-- [func draggable<Item>(Item.Type, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](view/draggable(_:item:containernamespace:).md)
+- [func draggable<Item>(Item.Type, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](./draggable%28_,item,containernamespace%29.md)
   Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
-- [func draggable<ItemID>(containerItemID: ItemID, containerNamespace: Namespace.ID?) -> some View](view/draggable(containeritemid:containernamespace:).md)
+- [func draggable<ItemID>(containerItemID: ItemID, containerNamespace: Namespace.ID?) -> some View](./draggable%28containeritemid,containernamespace%29.md)
   Inside a drag container, activates this view as the source of a drag and drop operation. Supports lazy drag containers.
 
 

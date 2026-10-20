@@ -1,7 +1,8 @@
 # SSLContext
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that represents an SSL session context object.
 
@@ -15,6 +16,10 @@ An opaque type that represents an SSL session context object.
 class SSLContext
 ```
 
+```c
+typedef struct SSLContext * SSLContextRef;
+```
+
 #### Overview
 
 The SSL session context object references the state associated with a session. You can’t reuse an SSL session context in multiple sessions.
@@ -22,8 +27,8 @@ The SSL session context object references the state associated with a session. Y
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

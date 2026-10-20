@@ -1,7 +1,8 @@
 # UIGlassContainerEffect
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `UIGlassContainerEffect` renders multiple glass elements into a combined effect.
 
@@ -18,6 +19,10 @@ A `UIGlassContainerEffect` renders multiple glass elements into a combined effec
 class UIGlassContainerEffect
 ```
 
+```objc
+@interface UIGlassContainerEffect : UIVisualEffect
+```
+
 #### Overview
 
 When using `UIGlassContainerEffect` with a `UIVisualEffectView` you can add individual glass elements to the visual effect view’s contentView by nesting `UIVisualEffectView`‘s configured with `UIGlassEffect`. In that configuration, the glass container will render all glass elements in one combined view, behind the visual effect view’s `contentView`.
@@ -25,29 +30,30 @@ When using `UIGlassContainerEffect` with a `UIVisualEffectView` you can add indi
 ## Topics
 
 ### Instance Properties
-- [var spacing: CGFloat](uiglasscontainereffect/spacing.md)
+- [var spacing: CGFloat](./uiglasscontainereffect/spacing.md)
   The spacing specifies the distance between elements at which they begin to merge.
 
 ## Relationships
 
 ### Inherits From
-- [UIVisualEffect](uivisualeffect.md)
+- [UIVisualEffect](./uivisualeffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIGlassEffect](uiglasseffect.md)
+### Liquid Glass effects
+- [class UIGlassEffect](./uiglasseffect.md)
   A visual effect that renders a glass material.
 
 

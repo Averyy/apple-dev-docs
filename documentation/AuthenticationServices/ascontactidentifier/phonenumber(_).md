@@ -1,7 +1,8 @@
 # ASContactIdentifier.phoneNumber(_:)
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A phone number identifier.
 

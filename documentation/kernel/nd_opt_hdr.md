@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nd_opt_hdr {
     ...
 };
@@ -17,8 +17,8 @@ struct nd_opt_hdr {
 ## Topics
 
 ### Instance Properties
-- [nd_opt_len](nd_opt_hdr/3754123-nd_opt_len.md)
-- [nd_opt_type](nd_opt_hdr/3754124-nd_opt_type.md)
+- [nd_opt_len](./nd_opt_hdr/api-3754123-nd_opt_len.md)
+- [nd_opt_type](./nd_opt_hdr/api-3754124-nd_opt_type.md)
 
 
 ---

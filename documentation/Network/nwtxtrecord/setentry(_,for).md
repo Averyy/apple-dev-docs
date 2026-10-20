@@ -1,7 +1,8 @@
 # setEntry(_:for:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an entry in a TXT record dictionary.
 
@@ -23,11 +24,12 @@ mutating func setEntry(_ entry: NWTXTRecord.Entry, for key: String) -> Bool
 
 ## See Also
 
-- [init([String : String])](nwtxtrecord/init(_:)-566pd.md)
+### Creating TXT Records
+- [init([String : String])](./init%28_%29-566pd.md)
   Initializes a TXT record with a dictionary of strings.
-- [func removeEntry(key: String) -> Bool](nwtxtrecord/removeentry(key:).md)
+- [func removeEntry(key: String) -> Bool](./removeentry%28key%29.md)
   Removes an entry from a TXT record dictionary.
-- [NWTXTRecord.Entry](nwtxtrecord/entry.md)
+- [NWTXTRecord.Entry](./entry.md)
   A type of entry in a TXT record dictionary.
 
 

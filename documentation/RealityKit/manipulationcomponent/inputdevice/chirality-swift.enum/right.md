@@ -1,7 +1,8 @@
 # ManipulationComponent.InputDevice.Chirality.right
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The right-handed chirality.
 

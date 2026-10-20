@@ -1,7 +1,8 @@
 # setSupplementaryInterfaceHidden(_:animated:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides or shows supplementary interface objects, such as the Live Action button and Quick Actions, depending on the item type.
 
@@ -25,11 +26,12 @@ final func setSupplementaryInterfaceHidden(_ hidden: Bool, animated: Bool)
 
 ## See Also
 
-- [var allowLongPressForDataDetectorsInTextMode: Bool](imageanalysisinteraction/allowlongpressfordatadetectorsintextmode.md)
+### Customizing the interface
+- [var allowLongPressForDataDetectorsInTextMode: Bool](./allowlongpressfordatadetectorsintextmode.md)
   A Boolean value that indicates whether people can press and hold text to activate data detectors.
-- [var supplementaryInterfaceContentInsets: UIEdgeInsets](imageanalysisinteraction/supplementaryinterfacecontentinsets.md)
+- [var supplementaryInterfaceContentInsets: UIEdgeInsets](./supplementaryinterfacecontentinsets.md)
   The distances the edges of content are inset from the supplementary interface.
-- [var supplementaryInterfaceFont: UIFont?](imageanalysisinteraction/supplementaryinterfacefont.md)
+- [var supplementaryInterfaceFont: UIFont?](./supplementaryinterfacefont.md)
   The font to use for the supplementary interface.
 
 

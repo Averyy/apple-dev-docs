@@ -1,18 +1,19 @@
 # NSDeleteRule
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that determine what happens when you delete a relationship’s owning managed object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ Constants that determine what happens when you delete a relationship’s owning 
 enum NSDeleteRule
 ```
 
+```c
+enum NSDeleteRule : NSUInteger;
+```
+
 ## Topics
 
 ### Delete Rules
-- [NSDeleteRule.noActionDeleteRule](nsdeleterule/noactiondeleterule.md)
+- [NSDeleteRule.noActionDeleteRule](./nsdeleterule/noactiondeleterule.md)
   A rule that prevents modification of the referenced managed objects.
-- [NSDeleteRule.nullifyDeleteRule](nsdeleterule/nullifydeleterule.md)
+- [NSDeleteRule.nullifyDeleteRule](./nsdeleterule/nullifydeleterule.md)
   A rule that nullifies the inverse relationship of the referenced managed objects.
-- [NSDeleteRule.cascadeDeleteRule](nsdeleterule/cascadedeleterule.md)
+- [NSDeleteRule.cascadeDeleteRule](./nsdeleterule/cascadedeleterule.md)
   A rule that deletes the referenced managed objects.
-- [NSDeleteRule.denyDeleteRule](nsdeleterule/denydeleterule.md)
+- [NSDeleteRule.denyDeleteRule](./nsdeleterule/denydeleterule.md)
   A rule that prevents the deletion of the owning managed object if the relationship has references to other objects.
 ### Initializers
-- [init?(rawValue: UInt)](nsdeleterule/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsdeleterule/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var deleteRule: NSDeleteRule](nsrelationshipdescription/deleterule.md)
+### Configuring Delete Behavior
+- [var deleteRule: NSDeleteRule](./nsrelationshipdescription/deleterule.md)
   The rule to apply when you delete the relationship’s owning managed object.
 
 

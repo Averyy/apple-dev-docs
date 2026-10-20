@@ -1,7 +1,8 @@
 # AppExtensionPoint.Bind
 
 **Framework**: ExtensionFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper that binds an app extension to an extension point of a host app.
 
@@ -23,15 +24,15 @@ struct Bind
 
 ## Mentions
 
-- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+- [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
 #### Overview
 
-Apply this property wrapper to a variable that contains an [`AppExtensionPoint`](appextensionpoint.md) type. Use the variable to define the extension point that your app extension supports. An app extension can bind to only one extension point in a host app.
+Apply this property wrapper to a variable that contains an [`AppExtensionPoint`](../appextensionpoint.md) type. Use the variable to define the extension point that your app extension supports. An app extension can bind to only one extension point in a host app.
 
-When configuring the [`AppExtensionPoint`](appextensionpoint.md) type for your variable, specify the host app and extension point details using an [`AppExtensionPoint.Identifier`](appextensionpoint/identifier.md) type. The following example shows how to create the variable in your app extension, specify the extension point you want, and create the binding:
+When configuring the [`AppExtensionPoint`](../appextensionpoint.md) type for your variable, specify the host app and extension point details using an [`AppExtensionPoint.Identifier`](./identifier.md) type. The following example shows how to create the variable in your app extension, specify the extension point you want, and create the binding:
 
-```None
+```
 struct MyAppExtension: AppExtension {
     @AppExtensionPoint.Bind
     var extensionPoint: AppExtensionPoint {
@@ -45,14 +46,15 @@ To ensure the system discovers your app extension’s bindings, add a user-defin
 ## Topics
 
 ### Annotating a binding
-- [static func buildBlock(AppExtensionPoint.Identifier) -> AppExtensionPoint](appextensionpoint/bind/buildblock(_:).md)
+- [static func buildBlock(AppExtensionPoint.Identifier) -> AppExtensionPoint](./bind/buildblock%28_%29.md)
   Passes an identifier to the extension point type.
 ### Type Methods
-- [static func buildBlock(AppExtensionPoint.Identifier, AppExtensionPoint.Capabilities) -> AppExtensionPoint](appextensionpoint/bind/buildblock(_:_:).md)
+- [static func buildBlock(AppExtensionPoint.Identifier, AppExtensionPoint.Capabilities) -> AppExtensionPoint](./bind/buildblock%28_,_%29.md)
 
 ## See Also
 
-- [AppExtensionPoint.Identifier](appextensionpoint/identifier.md)
+### Binding to an extension point
+- [AppExtensionPoint.Identifier](./identifier.md)
   The details of an extension point that your app extension supports.
 
 

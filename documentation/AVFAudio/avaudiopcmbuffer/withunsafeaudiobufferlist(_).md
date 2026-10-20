@@ -1,7 +1,8 @@
 # withUnsafeAudioBufferList(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides scoped read-only access to the audio buffer list.
 
@@ -30,23 +31,24 @@ The value returned by the closure.
 
 ## See Also
 
-- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata(_:).md)
+### Accessing PCM buffer data
+- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](./channeldata%28_%29.md)
   Returns read-only access to a specific channel’s data.
-- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata(_:).md)
+- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](./mutablechanneldata%28_%29.md)
   Returns mutable access to a specific channel’s data.
-- [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](avaudiopcmbuffer/floatchanneldata.md)
+- [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](./floatchanneldata.md)
   The buffer’s audio samples as floating point values.
-- [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
+- [var frameCapacity: AVAudioFrameCount](./framecapacity.md)
   The buffer’s capacity, in audio sample frames.
-- [var int16ChannelData: UnsafePointer<UnsafeMutablePointer<Int16>>?](avaudiopcmbuffer/int16channeldata.md)
+- [var int16ChannelData: UnsafePointer<UnsafeMutablePointer<Int16>>?](./int16channeldata.md)
   The buffer’s 16-bit integer audio samples.
-- [var int32ChannelData: UnsafePointer<UnsafeMutablePointer<Int32>>?](avaudiopcmbuffer/int32channeldata.md)
+- [var int32ChannelData: UnsafePointer<UnsafeMutablePointer<Int32>>?](./int32channeldata.md)
   The buffer’s 32-bit integer audio samples.
-- [var stride: Int](avaudiopcmbuffer/stride.md)
+- [var stride: Int](./stride.md)
   The buffer’s number of interleaved channels.
-- [AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata.md)
+- [AVAudioPCMBuffer.ChannelData](./channeldata.md)
   Represents read-only channel data.
-- [AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata.md)
+- [AVAudioPCMBuffer.MutableChannelData](./mutablechanneldata.md)
   Represents mutable channel data.
 
 

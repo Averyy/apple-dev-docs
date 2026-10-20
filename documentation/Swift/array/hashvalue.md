@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -20,6 +21,8 @@ The hash value.
 var hashValue: Int { get }
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 #### Discussion
 
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
@@ -28,7 +31,8 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [init(arrayLiteral: Element...)](array/init(arrayliteral:).md)
+### Infrequently Used Functionality
+- [init(arrayLiteral: Element...)](./init%28arrayliteral%29.md)
   Creates an array from the given array literal.
 
 

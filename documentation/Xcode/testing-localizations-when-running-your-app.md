@@ -1,6 +1,7 @@
 # Testing localizations when running your app
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Run your app in each language and region you support to thoroughly test your app.
 
@@ -8,7 +9,7 @@ Run your app in each language and region you support to thoroughly test your app
 
 After you translate strings and adapt resources for the different cultures and regions, test each localization in your app by choosing the language and region in the Run scheme.
 
-##### Select a Language and Region in the Scheme
+##### Select a language and region in the scheme
 
 To test your app in a specific language and region:
 
@@ -24,7 +25,8 @@ To use the Language & Region settings on the device, choose System Language and 
 
 ## See Also
 
-- [Previewing localizations](previewing-localizations.md)
+### Testing
+- [Previewing localizations](./previewing-localizations.md)
   Test localizations in the SwiftUI preview or the Interface Builder preview.
 
 

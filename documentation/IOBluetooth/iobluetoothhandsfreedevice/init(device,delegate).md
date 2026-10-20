@@ -1,7 +1,8 @@
 # init(device:delegate:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object to manage phone calls on a hands-free Bluetooth device.
 
@@ -14,10 +15,14 @@ Creates an object to manage phone calls on a hands-free Bluetooth device.
 init!(device: IOBluetoothDevice!, delegate: Any!)
 ```
 
+```objc
+- (instancetype) initWithDevice:(IOBluetoothDevice *) device delegate:(id) delegate;
+```
+
 ## Parameters
 
 - `device`: A Bluetooth device.
-- `delegate`: A delegate that conforms to the [`IOBluetoothHandsFreeDeviceDelegate`](iobluetoothhandsfreedevicedelegate.md) protocol.
+- `delegate`: A delegate that conforms to the [`IOBluetoothHandsFreeDeviceDelegate`](../iobluetoothhandsfreedevicedelegate.md) protocol.
 
 
 ---

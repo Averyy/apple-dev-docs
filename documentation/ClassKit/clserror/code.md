@@ -1,7 +1,8 @@
 # CLSError.Code
 
 **Framework**: ClassKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that ClassKit issues.
 
@@ -18,50 +19,55 @@ Error codes that ClassKit issues.
 enum Code
 ```
 
+```c
+enum CLSErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [CLSError.Code.none](clserror/code/none.md)
+- [CLSError.Code.none](./code/none.md)
   No error.
-- [CLSError.Code.authorizationDenied](clserror/code/authorizationdenied.md)
+- [CLSError.Code.authorizationDenied](./code/authorizationdenied.md)
   The app isn’t authorized to perform the requested operation.
-- [CLSError.Code.classKitUnavailable](clserror/code/classkitunavailable.md)
+- [CLSError.Code.classKitUnavailable](./code/classkitunavailable.md)
   ClassKit isn’t available on this device.
-- [CLSError.Code.databaseInaccessible](clserror/code/databaseinaccessible.md)
+- [CLSError.Code.databaseInaccessible](./code/databaseinaccessible.md)
   ClassKit isn’t accessible because the device is locked.
-- [CLSError.Code.invalidAccountCredentials](clserror/code/invalidaccountcredentials.md)
-- [CLSError.Code.invalidArgument](clserror/code/invalidargument.md)
+- [CLSError.Code.invalidAccountCredentials](./code/invalidaccountcredentials.md)
+- [CLSError.Code.invalidArgument](./code/invalidargument.md)
   An invalid argument was provided to the API.
-- [CLSError.Code.invalidCreate](clserror/code/invalidcreate.md)
+- [CLSError.Code.invalidCreate](./code/invalidcreate.md)
   An attempt to save a new object that already exists in the data store failed.
-- [CLSError.Code.invalidModification](clserror/code/invalidmodification.md)
+- [CLSError.Code.invalidModification](./code/invalidmodification.md)
   An attempt to modify a read-only object failed.
-- [CLSError.Code.invalidUpdate](clserror/code/invalidupdate.md)
+- [CLSError.Code.invalidUpdate](./code/invalidupdate.md)
   ClassKit failed to save an updated object in the data store.
-- [CLSError.Code.limits](clserror/code/limits.md)
+- [CLSError.Code.limits](./code/limits.md)
   A limit has been exceeded.
-- [CLSError.Code.partialFailure](clserror/code/partialfailure.md)
+- [CLSError.Code.partialFailure](./code/partialfailure.md)
   ClassKit encountered more than one error.
 ### Initializers
-- [init?(rawValue: Int)](clserror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CLSError](clserror.md)
+### Errors
+- [struct CLSError](../clserror.md)
   Errors issued by ClassKit.
-- [let CLSErrorCodeDomain: String](clserrorcodedomain.md)
+- [let CLSErrorCodeDomain: String](../clserrorcodedomain.md)
   The error domain that ClassKit uses when issuing errors.
-- [struct CLSErrorUserInfoKey](clserroruserinfokey.md)
+- [struct CLSErrorUserInfoKey](../clserroruserinfokey.md)
   Keys that appear in the user info dictionary in errors that ClassKit creates.
 
 

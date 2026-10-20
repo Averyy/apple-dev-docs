@@ -1,7 +1,8 @@
 # isProvisioningAvailable
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether provisioning is available for this pass.
 
@@ -17,6 +18,10 @@ A Boolean value indicating whether provisioning is available for this pass.
 
 ```swift
 var isProvisioningAvailable: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isProvisioningAvailable) BOOL provisioningAvailable;
 ```
 
 #### Discussion

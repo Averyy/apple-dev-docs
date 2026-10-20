@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kAESocksHostAttr: Int](kaesockshostattr.md)
-- [var kAESocksPasswordAttr: Int](kaesockspasswordattr.md)
-- [var kAESocksPortAttr: Int](kaesocksportattr.md)
-- [var kAESocksProxyAttr: Int](kaesocksproxyattr.md)
-- [var kAESocksUserAttr: Int](kaesocksuserattr.md)
-- [var kAEUseSocksAttr: Int](kaeusesocksattr.md)
+- [var kAESocksHostAttr: Int](../kaesockshostattr.md)
+- [var kAESocksPasswordAttr: Int](../kaesockspasswordattr.md)
+- [var kAESocksPortAttr: Int](../kaesocksportattr.md)
+- [var kAESocksProxyAttr: Int](../kaesocksproxyattr.md)
+- [var kAESocksUserAttr: Int](../kaesocksuserattr.md)
+- [var kAEUseSocksAttr: Int](../kaeusesocksattr.md)
 
 
 ---

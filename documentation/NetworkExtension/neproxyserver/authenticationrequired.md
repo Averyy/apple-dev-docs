@@ -1,7 +1,8 @@
 # authenticationRequired
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating if the server requires authentication credentials.
 
@@ -19,15 +20,20 @@ A Boolean indicating if the server requires authentication credentials.
 var authenticationRequired: Bool { get set }
 ```
 
+```objc
+@property BOOL authenticationRequired;
+```
+
 ## See Also
 
-- [var address: String](neproxyserver/address.md)
+### Accessing Proxy Server Properties
+- [var address: String](./address.md)
   The address of the proxy server.
-- [var port: Int](neproxyserver/port.md)
+- [var port: Int](./port.md)
   The TCP port on which the proxy server is listening for connections.
-- [var username: String?](neproxyserver/username.md)
+- [var username: String?](./username.md)
   The username portion of the authentication credential to be used to authenticate with the proxy server.
-- [var password: String?](neproxyserver/password.md)
+- [var password: String?](./password.md)
   The password portion of the authentication credential to be used to authenticate with the proxy server.
 
 

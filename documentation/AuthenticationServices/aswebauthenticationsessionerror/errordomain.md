@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.0+
@@ -20,7 +21,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let ASWebAuthenticationSessionErrorDomain: String](aswebauthenticationsessionerrordomain.md)
+### Error Domain
+- [let ASWebAuthenticationSessionErrorDomain: String](../aswebauthenticationsessionerrordomain.md)
   The error domain for a web authentication session.
 
 

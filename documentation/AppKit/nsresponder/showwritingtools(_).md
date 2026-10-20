@@ -1,7 +1,8 @@
 # showWritingTools(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.2+
@@ -11,6 +12,10 @@
 ```swift
 @IBAction
 func showWritingTools(_ sender: Any?)
+```
+
+```objc
+- (void) showWritingTools:(id) sender;
 ```
 
 

@@ -1,7 +1,8 @@
 # posesBySample
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Mapping from the sample ID to the 6DOF algorithmically estimated pose of that sample.  Each `Pose` will have a world translation and rotation representing that shot’s estimated pose (position and orientation in space) with respect to the estimated coordinate system.
 

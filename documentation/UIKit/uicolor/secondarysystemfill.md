@@ -1,7 +1,8 @@
 # secondarySystemFill
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An overlay fill color for medium-size shapes.
 
@@ -17,6 +18,10 @@ An overlay fill color for medium-size shapes.
 class var secondarySystemFill: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * secondarySystemFillColor;
+```
+
 #### Discussion
 
 Use system fill colors for items situated on top of an existing background color. System fill colors incorporate transparency to allow the background color to show through.
@@ -25,11 +30,12 @@ Use this color to fill medium-size shapes, such as the background of a switch.
 
 ## See Also
 
-- [class var systemFill: UIColor](uicolor/systemfill.md)
+### Fill colors
+- [class var systemFill: UIColor](./systemfill.md)
   An overlay fill color for thin and small shapes.
-- [class var tertiarySystemFill: UIColor](uicolor/tertiarysystemfill.md)
+- [class var tertiarySystemFill: UIColor](./tertiarysystemfill.md)
   An overlay fill color for large shapes.
-- [class var quaternarySystemFill: UIColor](uicolor/quaternarysystemfill.md)
+- [class var quaternarySystemFill: UIColor](./quaternarysystemfill.md)
   An overlay fill color for large areas that contain complex content.
 
 

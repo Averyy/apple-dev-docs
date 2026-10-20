@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementForecastUpdateReason
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,24 +19,28 @@
 enum MTRDeviceEnergyManagementForecastUpdateReason
 ```
 
+```c
+enum MTRDeviceEnergyManagementForecastUpdateReason : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDeviceEnergyManagementForecastUpdateReason.gridOptimization](mtrdeviceenergymanagementforecastupdatereason/gridoptimization.md)
-- [MTRDeviceEnergyManagementForecastUpdateReason.internalOptimization](mtrdeviceenergymanagementforecastupdatereason/internaloptimization.md)
-- [MTRDeviceEnergyManagementForecastUpdateReason.localOptimization](mtrdeviceenergymanagementforecastupdatereason/localoptimization.md)
+- [MTRDeviceEnergyManagementForecastUpdateReason.gridOptimization](./mtrdeviceenergymanagementforecastupdatereason/gridoptimization.md)
+- [MTRDeviceEnergyManagementForecastUpdateReason.internalOptimization](./mtrdeviceenergymanagementforecastupdatereason/internaloptimization.md)
+- [MTRDeviceEnergyManagementForecastUpdateReason.localOptimization](./mtrdeviceenergymanagementforecastupdatereason/localoptimization.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdeviceenergymanagementforecastupdatereason/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdeviceenergymanagementforecastupdatereason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

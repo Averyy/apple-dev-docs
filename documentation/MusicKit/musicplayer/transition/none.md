@@ -1,7 +1,8 @@
 # MusicPlayer.Transition.none
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No transition.
 

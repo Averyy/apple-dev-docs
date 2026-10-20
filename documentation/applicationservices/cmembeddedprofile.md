@@ -1,7 +1,8 @@
 # cmEmbeddedProfile
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 0 is not embedded profile, 1 is embedded profile
 

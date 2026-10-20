@@ -1,10 +1,11 @@
 # kBluetoothAMPManagerGetInfoResponseSuccess
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothAMPManagerGetInfoResponseSuccess: BluetoothAMPGetInfoResponseStatus { get }
 ```
 
+```c
+kBluetoothAMPManagerGetInfoResponseSuccess
+```
+
 ## See Also
 
-- [var kBluetoothAMPManagerGetInfoResponseInvalidControllerID: BluetoothAMPGetInfoResponseStatus](kbluetoothampmanagergetinforesponseinvalidcontrollerid.md)
+### Constants
+- [var kBluetoothAMPManagerGetInfoResponseInvalidControllerID: BluetoothAMPGetInfoResponseStatus](./kbluetoothampmanagergetinforesponseinvalidcontrollerid.md)
 
 
 ---

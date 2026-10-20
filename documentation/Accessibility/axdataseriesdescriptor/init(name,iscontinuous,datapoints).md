@@ -1,7 +1,8 @@
 # init(name:isContinuous:dataPoints:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data series with the specified name, a Boolean value that indicates whether the series is continuous, and data points.
 
@@ -20,9 +21,14 @@ Creates a data series with the specified name, a Boolean value that indicates wh
 init(name: String, isContinuous: Bool, dataPoints: [AXDataPoint])
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name isContinuous:(BOOL) isContinuous dataPoints:(NSArray<AXDataPoint *> *) dataPoints;
+```
+
 ## See Also
 
-- [init(attributedName: NSAttributedString, isContinuous: Bool, dataPoints: [AXDataPoint])](axdataseriesdescriptor/init(attributedname:iscontinuous:datapoints:).md)
+### Creating a data series
+- [init(attributedName: NSAttributedString, isContinuous: Bool, dataPoints: [AXDataPoint])](./init%28attributedname,iscontinuous,datapoints%29.md)
   Creates a data series with the specified attributed name, a Boolean value that indicates whether the series is continuous, and data points.
 
 

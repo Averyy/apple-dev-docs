@@ -1,7 +1,8 @@
 # leftBackKnee
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the back of the left knee.
 
@@ -19,29 +20,34 @@ A joint name that represents the back of the left knee.
 static let leftBackKnee: VNAnimalBodyPoseObservation.JointName
 ```
 
+```c
+extern VNAnimalBodyPoseObservationJointName const VNAnimalBodyPoseObservationJointNameLeftBackKnee;
+```
+
 ## See Also
 
-- [static let leftBackElbow: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/leftbackelbow.md)
+### Getting the Leg Joint Names
+- [static let leftBackElbow: VNAnimalBodyPoseObservation.JointName](./leftbackelbow.md)
   A joint name that represents the back of the left elbow.
-- [static let leftFrontElbow: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/leftfrontelbow.md)
+- [static let leftFrontElbow: VNAnimalBodyPoseObservation.JointName](./leftfrontelbow.md)
   A joint name that represents the front of the left elbow.
-- [static let rightFrontElbow: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightfrontelbow.md)
+- [static let rightFrontElbow: VNAnimalBodyPoseObservation.JointName](./rightfrontelbow.md)
   A joint name that represents the front of the right elbow.
-- [static let rightBackElbow: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightbackelbow.md)
+- [static let rightBackElbow: VNAnimalBodyPoseObservation.JointName](./rightbackelbow.md)
   A joint name that represents the back of the right elbow.
-- [static let leftFrontKnee: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/leftfrontknee.md)
+- [static let leftFrontKnee: VNAnimalBodyPoseObservation.JointName](./leftfrontknee.md)
   A joint name that represents the front of the left knee.
-- [static let rightBackKnee: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightbackknee.md)
+- [static let rightBackKnee: VNAnimalBodyPoseObservation.JointName](./rightbackknee.md)
   A joint name that represents the back of the right knee.
-- [static let rightFrontKnee: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightfrontknee.md)
+- [static let rightFrontKnee: VNAnimalBodyPoseObservation.JointName](./rightfrontknee.md)
   A joint name that represents the front of the right knee.
-- [static let leftBackPaw: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/leftbackpaw.md)
+- [static let leftBackPaw: VNAnimalBodyPoseObservation.JointName](./leftbackpaw.md)
   A joint name that represents the back of the left paw.
-- [static let leftFrontPaw: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/leftfrontpaw.md)
+- [static let leftFrontPaw: VNAnimalBodyPoseObservation.JointName](./leftfrontpaw.md)
   A joint name that represents the front of the left paw.
-- [static let rightBackPaw: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightbackpaw.md)
+- [static let rightBackPaw: VNAnimalBodyPoseObservation.JointName](./rightbackpaw.md)
   A joint name that represents the back of the right paw.
-- [static let rightFrontPaw: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/rightfrontpaw.md)
+- [static let rightFrontPaw: VNAnimalBodyPoseObservation.JointName](./rightfrontpaw.md)
   A joint name that represents the front of the right paw.
 
 

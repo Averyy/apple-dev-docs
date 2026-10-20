@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Live Activities  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Delivers a message from the paired accessory to your data provider extension.

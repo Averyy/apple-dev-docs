@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display mode for a tab bar.
 
@@ -18,25 +19,30 @@ The display mode for a tab bar.
 var mode: UITabBarController.Mode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UITabBarControllerMode mode;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 #### Discussion
 
-On iPad, the display mode determines whether the system can display the tab bar as a sidebar. For more information, see [`Elevating your iPad app with a tab bar and sidebar`](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
+On iPad, the display mode determines whether the system can display the tab bar as a sidebar. For more information, see [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 
 ## See Also
 
-- [UITabBarController.Mode](uitabbarcontroller/mode-swift.enum.md)
+### Supporting the sidebar
+- [UITabBarController.Mode](./mode-swift.enum.md)
   A tab bar’s display mode.
-- [var sidebar: UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.property.md)
+- [var sidebar: UITabBarController.Sidebar](./sidebar-swift.property.md)
   A tab bar’s corresponding sidebar.
-- [UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.class.md)
+- [UITabBarController.Sidebar](./sidebar-swift.class.md)
   An object for managing and configuring the sidebar.
-- [class UITabSidebarItem](uitabsidebaritem.md)
-- [UITabSidebarItem.Request](uitabsidebaritem/request.md)
-- [UITabBarController.Sidebar.Animating](uitabbarcontroller/sidebar-swift.class/animating.md)
+- [class UITabSidebarItem](../uitabsidebaritem.md)
+- [UITabSidebarItem.Request](../uitabsidebaritem/request.md)
+- [UITabBarController.Sidebar.Animating](./sidebar-swift.class/animating.md)
 
 
 ---

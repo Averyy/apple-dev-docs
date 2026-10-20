@@ -1,7 +1,8 @@
 # AppDetails
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Application details and metadata.
 
@@ -10,13 +11,13 @@ Application details and metadata.
 
 ## Declaration
 
-```swift
+```
 object AppDetails
 ```
 
 #### Discussion
 
-The `AppDetails` object represents the App Store metadata for an app retrieved via [`Get App Details by Adam ID`](get-app-details-by-adam-id.md). The `id` field is the Adam ID, which is the same value used as `promotedObjectId` when targeting this app.
+The `AppDetails` object represents the App Store metadata for an app retrieved via [`Get App Details by Adam ID`](./get-app-details-by-adam-id.md). The `id` field is the Adam ID, which is the same value used as `promotedObjectId` when targeting this app.
 
 Use `deviceClasses` to verify that your campaign’s device-class targeting is compatible with the app before launching. Targeting an App Store country or region not in `availableStorefronts` will result in no impressions for that market.
 
@@ -55,21 +56,23 @@ Use `deviceClasses` to verify that your campaign’s device-class targeting is c
 - `primaryGenre` (string): The primary App Store genre category (for example, `">Mobile Software Applications>Music"`).
 - `secondaryGenre` (string): The secondary App Store genre category, if assigned.
 - `deviceClasses` ([string]): Device families supported by the app.
+
+  **Allowed Values**: `IPHONE`, `IPAD`
 - `iconPictureUrl` (uri): URL of the app’s icon image.
 - `isPreorder` (boolean): Whether the app is currently available as a pre-order.
 - `availableStorefronts` ([string]): List of ISO 3166-1 alpha-2 country codes where the app is available.
 
 ## See Also
 
-- [object EligibilityQueryRequest](eligibilityqueryrequest.md)
+- [object EligibilityQueryRequest](./eligibilityqueryrequest.md)
   The request body for querying app eligibility.
-- [object EligibilityQueryResponse](eligibilityqueryresponse.md)
+- [object EligibilityQueryResponse](./eligibilityqueryresponse.md)
   The paginated response object for an app eligibility query.
-- [object RejectionReasonResponse](rejectionreasonresponse.md)
+- [object RejectionReasonResponse](./rejectionreasonresponse.md)
   The response object for a rejection reason operation.
-- [object AppDetailsResponse](appdetailsresponse.md)
+- [object AppDetailsResponse](./appdetailsresponse.md)
   The response object for a get app details operation.
-- [object EligibilityResponse](eligibilityresponse.md)
+- [object EligibilityResponse](./eligibilityresponse.md)
   The response object describing an app’s eligibility for a specific supply placement, supply source, country or region, and device class.
 
 

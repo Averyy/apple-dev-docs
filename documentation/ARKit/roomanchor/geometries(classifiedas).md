@@ -1,7 +1,8 @@
 # geometries(classifiedAs:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get disjoint mesh geometries of a given surface classification.
 

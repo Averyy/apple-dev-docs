@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Direction
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The direction of a recurrent operation.
 
@@ -23,18 +24,18 @@ enum Direction
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.Direction.forward](bnnsgraph/builder/direction/forward.md)
+- [BNNSGraph.Builder.Direction.forward](./direction/forward.md)
   Forward direction.
-- [BNNSGraph.Builder.Direction.reverse](bnnsgraph/builder/direction/reverse.md)
+- [BNNSGraph.Builder.Direction.reverse](./direction/reverse.md)
   Reverse direction.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

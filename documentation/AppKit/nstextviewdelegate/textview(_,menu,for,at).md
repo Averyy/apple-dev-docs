@@ -1,7 +1,8 @@
 # textView(_:menu:for:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows delegate to control the context menu returned by the text view.
 
@@ -15,13 +16,17 @@ Allows delegate to control the context menu returned by the text view.
 optional func textView(_ view: NSTextView, menu: NSMenu, for event: NSEvent, at charIndex: Int) -> NSMenu?
 ```
 
+```objc
+- (NSMenu *) textView:(NSTextView *) view menu:(NSMenu *) menu forEvent:(NSEvent *) event atIndex:(NSUInteger) charIndex;
+```
+
 #### Return Value
 
 A menu to use as the contextual menu. You can return `menu` unaltered, or you can return a customized menu.
 
 #### Discussion
 
-This method allows the delegate to control the context menu returned by [`menu(for:)`](nsview/menu(for:).md).
+This method allows the delegate to control the context menu returned by [`menu(for:)`](../nsview/menu%28for%29.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # MusicAuthorization.Status.denied
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user denied permission for the current app to use MusicKit.
 
@@ -22,7 +23,7 @@ case denied
 
 #### Discussion
 
-On iOS, applications may attempt to recover from this situation by suggesting to their users that they can grant access to their Apple Music data again by linking to [`openSettingsURLString`](https://developer.apple.com/documentation/uikit/uiapplication/opensettingsurlstring).
+On iOS, applications may attempt to recover from this situation by suggesting to their users that they can grant access to their Apple Music data again by linking to [`openSettingsURLString`](../../../UIKit/uiapplication/opensettingsurlstring.md).
 
 
 ---

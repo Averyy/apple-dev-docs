@@ -1,7 +1,8 @@
 # CSSM_DB_DATASTORES_UNKNOWN
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_DB_DATASTORES_UNKNOWN: UInt32 { get }
+```
+
+```c
+CSSM_DB_DATASTORES_UNKNOWN
 ```
 
 

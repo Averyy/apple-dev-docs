@@ -1,7 +1,8 @@
 # bitWidth
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the minimal number of bits in this value’s binary representation, including the sign bit, and excluding the sign extension.
 

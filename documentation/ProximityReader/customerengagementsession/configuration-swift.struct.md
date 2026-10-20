@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Configuration
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of configuration options for a customer engagement session.
 
@@ -19,38 +20,39 @@ struct Configuration
 ## Topics
 
 ### Initializers
-- [init(currency: Locale.Currency, region: Locale.Region, privacyPolicyURL: URL, websiteURL: URL?, storeName: String?, deviceName: String?, passTypeIdentifiers: [String])](customerengagementsession/configuration-swift.struct/init(currency:region:privacypolicyurl:websiteurl:storename:devicename:passtypeidentifiers:).md)
+- [init(currency: Locale.Currency, region: Locale.Region, privacyPolicyURL: URL, websiteURL: URL?, storeName: String?, deviceName: String?, passTypeIdentifiers: [String])](./configuration-swift.struct/init%28currency,region,privacypolicyurl,websiteurl,storename,devicename,passtypeidentifiers%29.md)
 ### Instance Properties
-- [var currency: Locale.Currency](customerengagementsession/configuration-swift.struct/currency.md)
+- [var currency: Locale.Currency](./configuration-swift.struct/currency.md)
   The currency to localize the amounts in the shopping cart.
-- [var deviceName: String?](customerengagementsession/configuration-swift.struct/devicename.md)
+- [var deviceName: String?](./configuration-swift.struct/devicename.md)
   The device name or sales staff name to identify the merchant device.
-- [var passTypeIdentifiers: [String]](customerengagementsession/configuration-swift.struct/passtypeidentifiers.md)
+- [var passTypeIdentifiers: [String]](./configuration-swift.struct/passtypeidentifiers.md)
   An array of pass type identifiers for the your passes.
-- [var privacyPolicyURL: URL](customerengagementsession/configuration-swift.struct/privacypolicyurl.md)
+- [var privacyPolicyURL: URL](./configuration-swift.struct/privacypolicyurl.md)
   A URL for your privacy policy.
-- [var region: Locale.Region](customerengagementsession/configuration-swift.struct/region.md)
+- [var region: Locale.Region](./configuration-swift.struct/region.md)
   The region to localize the amounts in the shopping cart.
-- [var storeName: String?](customerengagementsession/configuration-swift.struct/storename.md)
+- [var storeName: String?](./configuration-swift.struct/storename.md)
   The store name or location to identify the specific store.
-- [var websiteURL: URL?](customerengagementsession/configuration-swift.struct/websiteurl.md)
+- [var websiteURL: URL?](./configuration-swift.struct/websiteurl.md)
   The merchant website URL.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let configuration: CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.property.md)
+### Configuring a session
+- [let configuration: CustomerEngagementSession.Configuration](./configuration-swift.property.md)
   Configuration for this session.
-- [func open(using: CustomerEngagement.Token?) async throws](customerengagementsession/open(using:).md)
+- [func open(using: CustomerEngagement.Token?) async throws](./open%28using%29.md)
   Opens the engagement session.
-- [func close() async throws](customerengagementsession/close.md)
+- [func close() async throws](./close%28%29.md)
   Closes the engagement session.
-- [CustomerEngagementSession.Token](customerengagementsession/token-swift.struct.md)
+- [CustomerEngagementSession.Token](./token-swift.struct.md)
   A session token.
 
 

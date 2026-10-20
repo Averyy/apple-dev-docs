@@ -1,7 +1,8 @@
 # errSecDatabaseLocked
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The database is locked.
 
@@ -18,6 +19,10 @@ The database is locked.
 
 ```swift
 var errSecDatabaseLocked: OSStatus { get }
+```
+
+```c
+errSecDatabaseLocked
 ```
 
 

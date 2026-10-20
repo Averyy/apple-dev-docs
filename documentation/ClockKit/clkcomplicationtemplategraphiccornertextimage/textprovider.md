@@ -1,12 +1,15 @@
 # textProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display in the complication.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,13 +18,18 @@ The text to display in the complication.
 var textProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * textProvider;
+```
+
 #### Discussion
 
 This property supports multicolor text.
 
 ## See Also
 
-- [var imageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphiccornertextimage/imageprovider.md)
+### Setting the Complication Data
+- [var imageProvider: CLKFullColorImageProvider](./imageprovider.md)
   The image to display.
 
 

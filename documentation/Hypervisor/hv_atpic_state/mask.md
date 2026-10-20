@@ -1,15 +1,20 @@
 # mask
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var mask: UInt8
+```
+
+```c
+uint8_t mask;
 ```
 
 

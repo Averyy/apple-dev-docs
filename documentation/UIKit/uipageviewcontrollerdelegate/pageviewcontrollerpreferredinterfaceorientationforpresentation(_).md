@@ -1,7 +1,8 @@
 # pageViewControllerPreferredInterfaceOrientationForPresentation(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the preferred orientation for presentation of the page view controller, as determined by the delegate.
 
@@ -17,6 +18,10 @@ Returns the preferred orientation for presentation of the page view controller, 
 optional func pageViewControllerPreferredInterfaceOrientationForPresentation(_ pageViewController: UIPageViewController) -> UIInterfaceOrientation
 ```
 
+```objc
+- (UIInterfaceOrientation) pageViewControllerPreferredInterfaceOrientationForPresentation:(UIPageViewController *) pageViewController;
+```
+
 #### Return Value
 
 The preferred orientation for presenting the page view controller.
@@ -27,9 +32,11 @@ The preferred orientation for presenting the page view controller.
 
 ## See Also
 
-- [var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation](uiviewcontroller/preferredinterfaceorientationforpresentation.md)
+### Related Documentation
+- [var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation](../uiviewcontroller/preferredinterfaceorientationforpresentation.md)
   The interface orientation to use when presenting the view controller.
-- [func pageViewControllerSupportedInterfaceOrientations(UIPageViewController) -> UIInterfaceOrientationMask](uipageviewcontrollerdelegate/pageviewcontrollersupportedinterfaceorientations(_:).md)
+### Overriding View Rotation Settings
+- [func pageViewControllerSupportedInterfaceOrientations(UIPageViewController) -> UIInterfaceOrientationMask](./pageviewcontrollersupportedinterfaceorientations%28_%29.md)
   Returns the complete set of supported interface orientations for the page view controller, as determined by the delegate.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: TranslationUIProvider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the UI provider extensions’s interface.

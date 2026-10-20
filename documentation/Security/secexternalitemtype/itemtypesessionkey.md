@@ -1,7 +1,8 @@
 # SecExternalItemType.itemTypeSessionKey
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a session key.
 
@@ -12,6 +13,10 @@ Indicates a session key.
 
 ```swift
 case itemTypeSessionKey
+```
+
+```c
+kSecItemTypeSessionKey
 ```
 
 

@@ -1,7 +1,8 @@
 # kColorSyncProfileRepositoryChangeNotification
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A notification that ColorSync posts when the profile repository changes.
 
@@ -15,11 +16,16 @@ A notification that ColorSync posts when the profile repository changes.
 var kColorSyncProfileRepositoryChangeNotification: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncProfileRepositoryChangeNotification;
+```
+
 ## See Also
 
-- [var kColorSyncProfileCacheSeed: Unmanaged<CFString>!](kcolorsyncprofilecacheseed.md)
-  The current profile-cache seed (uint32_t), sent with [`kColorSyncProfileRepositoryChangeNotification`](kcolorsyncprofilerepositorychangenotification.md).
-- [var kColorSyncWaitForCacheReply: Unmanaged<CFString>!](kcolorsyncwaitforcachereply.md)
+### Tracking changes and cache
+- [var kColorSyncProfileCacheSeed: Unmanaged<CFString>!](./kcolorsyncprofilecacheseed.md)
+  The current profile-cache seed (uint32_t), sent with [`kColorSyncProfileRepositoryChangeNotification`](./kcolorsyncprofilerepositorychangenotification.md).
+- [var kColorSyncWaitForCacheReply: Unmanaged<CFString>!](./kcolorsyncwaitforcachereply.md)
   An iteration option that waits for the profile cache to finish updating before returning.
 
 

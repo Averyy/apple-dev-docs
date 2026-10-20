@@ -1,7 +1,8 @@
 # RestrictionsResponse.ProfileRestrictions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains restrictions from each profile.
 
@@ -15,14 +16,14 @@ A dictionary that contains restrictions from each profile.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.ProfileRestrictions
 ```
 
 ## Topics
 
 ### Objects
-- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary.md)
+- [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier](./profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary.md)
   A dictionary that contains profile restrictions in effect.
 
 ## Properties
@@ -31,9 +32,10 @@ object RestrictionsResponse.ProfileRestrictions
 
 ## See Also
 
-- [object RestrictionsResponse.ErrorChainItem](restrictionsresponse/errorchainitem.md)
+### Objects
+- [object RestrictionsResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
-- [object RestrictionsResponse.GlobalRestrictions](restrictionsresponse/globalrestrictions-data.dictionary.md)
+- [object RestrictionsResponse.GlobalRestrictions](./globalrestrictions-data.dictionary.md)
   A dictionary that contains the global restrictions in effect.
 
 

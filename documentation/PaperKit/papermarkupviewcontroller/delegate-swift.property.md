@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for responding to a person’s actions.
 
@@ -21,9 +22,10 @@ The delegate for responding to a person’s actions.
 
 ## See Also
 
-- [PaperMarkupViewController.Delegate](papermarkupviewcontroller/delegate-swift.protocol.md)
+### Responding to changes
+- [PaperMarkupViewController.Delegate](./delegate-swift.protocol.md)
   The interface for responding to interactions in a markup view controller.
-- [var undoManager: UndoManager?](papermarkupviewcontroller/undomanager.md)
+- [var undoManager: UndoManager?](./undomanager.md)
 
 
 ---

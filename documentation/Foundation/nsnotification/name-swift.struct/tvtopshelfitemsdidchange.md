@@ -1,12 +1,15 @@
 # TVTopShelfItemsDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification to post when your app’s Top Shelf content has changed.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVTopShelfItemsDidChangeNotification has been replaced by [TVTopShelfContentProvider topShelfContentDidChange]
 
 ## Declaration
 

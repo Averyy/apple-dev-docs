@@ -1,7 +1,8 @@
 # addColumn(_:named:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an untyped column to the table.
 
@@ -17,6 +18,12 @@ Adds an untyped column to the table.
 
 ```swift
 mutating func addColumn(_ newColumn: MLUntypedColumn, named: String)
+```
+
+**Other overloads**:
+
+```swift
+mutating func addColumn<Element>(_ newColumn: MLDataColumn<Element>, named: String) where Element : MLDataValueConvertible
 ```
 
 #### Discussion
@@ -37,7 +44,7 @@ let data: [String: MLDataValueConvertible] = [
 var bookTable = try MLDataTable(dictionary: data)
 ```
 
-Then use [`addColumn(_:named:)`](mldatatable/addcolumn(_:named:)-9cb24.md) to add a column to the table.
+Then use [`addColumn(_:named:)`](./addcolumn%28_,named%29-9cb24.md) to add a column to the table.
 
 ```swift
 let pagesColumn = MLUntypedColumn([124, 98, 280, 94])
@@ -51,9 +58,10 @@ bookTable.addColumn(pagesColumn, named: "Pages")
 
 ## See Also
 
-- [struct MLDataColumn](mldatacolumn.md)
+### Adding columns
+- [struct MLDataColumn](../mldatacolumn.md)
   A column of typed values in a data table.
-- [struct MLUntypedColumn](mluntypedcolumn.md)
+- [struct MLUntypedColumn](../mluntypedcolumn.md)
   A column of untyped values in a data table.
 
 

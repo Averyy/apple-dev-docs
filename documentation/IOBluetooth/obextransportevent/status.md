@@ -1,15 +1,20 @@
 # status
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var status: OBEXError
+```
+
+```c
+OBEXError status;
 ```
 
 

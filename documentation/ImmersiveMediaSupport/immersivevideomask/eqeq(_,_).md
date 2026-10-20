@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Immersive Media Support  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compares two masks.
 

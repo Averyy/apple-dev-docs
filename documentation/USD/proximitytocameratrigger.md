@@ -17,24 +17,25 @@ class Preliminary_Trigger "ProximityToCameraTrigger"
 ## Topics
 
 ### Properties
-- [info:id](info-id.md)
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [distance](distance.md)
+- [distance](./distance.md)
   A threshold that measures the user’s proximity to one or more prims.
 
 ## See Also
 
-- [Preliminary_Trigger](preliminary-trigger.md)
+### Triggers
+- [Preliminary_Trigger](./preliminary-trigger.md)
   A condition that, when met, performs an action.
-- [CollideTrigger](collidetrigger.md)
+- [CollideTrigger](./collidetrigger.md)
   A trigger that activates when specified objects collide.
-- [SceneTransitionTrigger](scenetransitiontrigger.md)
+- [SceneTransitionTrigger](./scenetransitiontrigger.md)
   A trigger that fires during scene transitions.
-- [TapGestureTrigger](tapgesturetrigger.md)
+- [TapGestureTrigger](./tapgesturetrigger.md)
   A trigger that fires when the user taps.
-- [NotificationTrigger](notificationtrigger.md)
+- [NotificationTrigger](./notificationtrigger.md)
   A trigger that fires when an app posts a notification.
 
 

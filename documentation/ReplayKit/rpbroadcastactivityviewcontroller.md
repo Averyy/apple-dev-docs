@@ -1,21 +1,28 @@
 # RPBroadcastActivityViewController
 
 **Framework**: ReplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that displays a user interface where users choose a broadcast service.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 27.0
+- iPadOS 10.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
 ```swift
 class RPBroadcastActivityViewController
+```
+
+```objc
+@interface RPBroadcastActivityViewController : UIViewController
 ```
 
 #### Overview
@@ -25,52 +32,53 @@ The view controller displays the broadcast services currently installed on the d
 ## Topics
 
 ### Presenting the Broadcast Activity UI
-- [class func load(handler: (RPBroadcastActivityViewController?, (any Error)?) -> Void)](rpbroadcastactivityviewcontroller/load(handler:).md)
+- [class func load(handler: (RPBroadcastActivityViewController?, (any Error)?) -> Void)](./rpbroadcastactivityviewcontroller/load%28handler%29.md)
   Loads a broadcast activity view controller.
-- [class func load(withPreferredExtension: String?, handler: (RPBroadcastActivityViewController?, (any Error)?) -> Void)](rpbroadcastactivityviewcontroller/load(withpreferredextension:handler:).md)
+- [class func load(withPreferredExtension: String?, handler: (RPBroadcastActivityViewController?, (any Error)?) -> Void)](./rpbroadcastactivityviewcontroller/load%28withpreferredextension,handler%29.md)
   Loads a broadcast activity view controller with a preferred extension.
 ### Getting the Delegate
-- [var delegate: (any RPBroadcastActivityViewControllerDelegate)?](rpbroadcastactivityviewcontroller/delegate.md)
+- [var delegate: (any RPBroadcastActivityViewControllerDelegate)?](./rpbroadcastactivityviewcontroller/delegate.md)
   The delegate for the broadcast activity view controller.
-- [protocol RPBroadcastActivityViewControllerDelegate](rpbroadcastactivityviewcontrollerdelegate.md)
+- [protocol RPBroadcastActivityViewControllerDelegate](./rpbroadcastactivityviewcontrollerdelegate.md)
   The protocol you implement to respond to changes to a broadcast activity user interface.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class RPSystemBroadcastPickerView](rpsystembroadcastpickerview.md)
+### Live Broadcast Implementation
+- [class RPSystemBroadcastPickerView](./rpsystembroadcastpickerview.md)
   A view displaying a broadcast button that, when tapped, shows a broadcast picker.
-- [class RPBroadcastActivityController](rpbroadcastactivitycontroller.md)
+- [class RPBroadcastActivityController](./rpbroadcastactivitycontroller.md)
   A controller object that presents the macOS broadcast picker.
-- [protocol RPBroadcastActivityControllerDelegate](rpbroadcastactivitycontrollerdelegate.md)
+- [protocol RPBroadcastActivityControllerDelegate](./rpbroadcastactivitycontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to selection events from a broadcast activity controller.
-- [class RPBroadcastConfiguration](rpbroadcastconfiguration.md)
+- [class RPBroadcastConfiguration](./rpbroadcastconfiguration.md)
   An object used to configure the movie clips produced during a live broadcast.
 
 

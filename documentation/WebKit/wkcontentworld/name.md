@@ -1,7 +1,8 @@
 # name
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of a custom content world.
 
@@ -18,13 +19,18 @@ The name of a custom content world.
 var name: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * name;
+```
+
 #### Discussion
 
-This property contains a valid string only for content worlds you retrieve using the [`world(name:)`](wkcontentworld/world(name:).md) function. The value of this property is `nil` for the content worlds in the [`defaultClient`](wkcontentworld/defaultclient.md) and [`page`](wkcontentworld/page.md) properties.
+This property contains a valid string only for content worlds you retrieve using the [`world(name:)`](./world%28name%29.md) function. The value of this property is `nil` for the content worlds in the [`defaultClient`](./defaultclient.md) and [`page`](./page.md) properties.
 
 ## See Also
 
-- [class func world(name: String) -> WKContentWorld](wkcontentworld/world(name:).md)
+### Retrieving a Custom Content World
+- [class func world(name: String) -> WKContentWorld](./world%28name%29.md)
   Returns the custom content world with the specified name.
 
 

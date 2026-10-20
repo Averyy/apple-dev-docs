@@ -1,7 +1,8 @@
 # NWProtocolQUIC.Metadata.KeepAliveBehavior.seconds(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Keepalives are enabled with a custom timeout, in seconds.
 
@@ -22,9 +23,10 @@ case seconds(Int)
 
 ## See Also
 
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior.on](nwprotocolquic/metadata/keepalivebehavior/on.md)
+### Keepalive Behaviors
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior.on](./on.md)
   Keepalives are enabled with the default timeout.
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior.off](nwprotocolquic/metadata/keepalivebehavior/off.md)
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior.off](./off.md)
   Keepalives are disabled.
 
 

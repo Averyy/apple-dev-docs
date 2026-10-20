@@ -1,7 +1,8 @@
 # label
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual name for the section.
 
@@ -18,7 +19,8 @@ var label: CapturedRoom.Section.Label { get }
 
 ## See Also
 
-- [CapturedRoom.Section.Label](capturedroom/section/label-swift.enum.md)
+### Describing a section
+- [CapturedRoom.Section.Label](./label-swift.enum.md)
   Textual names for one part of a larger structure.
 
 

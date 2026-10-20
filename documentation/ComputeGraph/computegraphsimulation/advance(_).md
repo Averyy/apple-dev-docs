@@ -1,7 +1,8 @@
 # advance(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the simulation by one time step, encoding all simulation stage dispatches into the command buffer and encoder provided by `params`.
 
@@ -12,7 +13,7 @@ Advances the simulation by one time step, encoding all simulation stage dispatch
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ final func advance(_ params: ComputeGraphSimulation.AdvanceParams)
 
 #### Discussion
 
-Call this once per frame from your render loop. The simulation reads [`deltaTime`](computegraphsimulation/advanceparams/deltatime.md) to determine how much simulated time to consume, subject to [`simulationRate`](computegraphsimulation/simulationrate-swift.property.md). Spatial transforms and optional viewer information in `params` are forwarded to the simulation graph.
+Call this once per frame from your render loop. The simulation reads [`deltaTime`](./advanceparams/deltatime.md) to determine how much simulated time to consume, subject to [`simulationRate`](./simulationrate-swift.property.md). Spatial transforms and optional viewer information in `params` are forwarded to the simulation graph.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # hv_vm_sync_tsc(_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Synchronizes guest timestamp counters (TSC) across all vCPUs.
 
@@ -14,9 +15,13 @@ Synchronizes guest timestamp counters (TSC) across all vCPUs.
 func hv_vm_sync_tsc(_ tsc: UInt64) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vm_sync_tsc(uint64_t tsc);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 ## Parameters
 

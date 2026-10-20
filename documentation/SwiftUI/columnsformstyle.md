@@ -1,7 +1,8 @@
 # ColumnsFormStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
 
@@ -23,7 +24,7 @@ struct ColumnsFormStyle
 
 #### Overview
 
-Use the [`columns`](formstyle/columns.md) static variable to create this style:
+Use the [`columns`](./formstyle/columns.md) static variable to create this style:
 
 ```swift
 Form {
@@ -35,19 +36,20 @@ Form {
 ## Topics
 
 ### Creating the form style
-- [init()](columnsformstyle/init.md)
+- [init()](./columnsformstyle/init%28%29.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
 
 ## Relationships
 
 ### Conforms To
-- [FormStyle](formstyle.md)
+- [FormStyle](./formstyle.md)
 
 ## See Also
 
-- [struct AutomaticFormStyle](automaticformstyle.md)
+### Supporting types
+- [struct AutomaticFormStyle](./automaticformstyle.md)
   The default form style.
-- [struct GroupedFormStyle](groupedformstyle.md)
+- [struct GroupedFormStyle](./groupedformstyle.md)
   A form style with grouped rows.
 
 

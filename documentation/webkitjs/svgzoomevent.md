@@ -1,7 +1,8 @@
 # SVGZoomEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGZoomEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [newScale](svgzoomevent/1630699-newscale.md)
-- [newTranslate](svgzoomevent/1629003-newtranslate.md)
-- [previousScale](svgzoomevent/1632318-previousscale.md)
-- [previousTranslate](svgzoomevent/1629838-previoustranslate.md)
-- [zoomRectScreen](svgzoomevent/1629739-zoomrectscreen.md)
+- [newScale](./svgzoomevent/api-1630699-newscale.md)
+- [newTranslate](./svgzoomevent/api-1629003-newtranslate.md)
+- [previousScale](./svgzoomevent/api-1632318-previousscale.md)
+- [previousTranslate](./svgzoomevent/api-1629838-previoustranslate.md)
+- [zoomRectScreen](./svgzoomevent/api-1629739-zoomrectscreen.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIEvent](uievent.md)
+- [UIEvent](./uievent.md)
 
 
 ---

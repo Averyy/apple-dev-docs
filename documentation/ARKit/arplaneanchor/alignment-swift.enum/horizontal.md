@@ -1,7 +1,8 @@
 # ARPlaneAnchor.Alignment.horizontal
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plane is perpendicular to gravity.
 
@@ -15,13 +16,18 @@ The plane is perpendicular to gravity.
 case horizontal
 ```
 
+```c
+ARPlaneAnchorAlignmentHorizontal
+```
+
 #### Discussion
 
-The [`transform`](aranchor/transform.md) property for a horizontal plane anchor includes no rotation about the x- or z-axis. Thus, using this anchor’s transform to place a 3D model asset in your scene results in the model appearing “right side up”.
+The [`transform`](../../aranchor/transform.md) property for a horizontal plane anchor includes no rotation about the x- or z-axis. Thus, using this anchor’s transform to place a 3D model asset in your scene results in the model appearing “right side up”.
 
 ## See Also
 
-- [ARPlaneAnchor.Alignment.vertical](arplaneanchor/alignment-swift.enum/vertical.md)
+### Alignment Values
+- [ARPlaneAnchor.Alignment.vertical](./vertical.md)
   The plane is parallel to gravity.
 
 

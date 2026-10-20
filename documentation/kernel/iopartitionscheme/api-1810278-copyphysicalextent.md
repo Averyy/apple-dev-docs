@@ -5,14 +5,14 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOStorage * copyPhysicalExtent(
  IOService *client, 
  UInt64 *byteStart, 
  UInt64 *byteCount);
 ```
 
-#### Return_value
+#### Return Value
 
 A reference to the physical storage object, which should be released by the caller, or a null on error.
 
@@ -28,15 +28,16 @@ Convert the specified byte offset into a physical byte offset, relative to a phy
 
 ## See Also
 
-- [handleClose](iopartitionscheme/1810310-handleclose.md)
-- [handleIsOpen](iopartitionscheme/1810337-handleisopen.md)
-- [handleOpen](iopartitionscheme/1810366-handleopen.md)
-- [lockPhysicalExtents](iopartitionscheme/1810387-lockphysicalextents.md)
-- [read](iopartitionscheme/1810409-read.md)
-- [synchronizeCache](iopartitionscheme/1810446-synchronizecache.md)
-- [unlockPhysicalExtents](iopartitionscheme/1810496-unlockphysicalextents.md)
-- [unmap](iopartitionscheme/1810548-unmap.md)
-- [write](iopartitionscheme/1810601-write.md)
+### Miscellaneous
+- [handleClose](./api-1810310-handleclose.md)
+- [handleIsOpen](./api-1810337-handleisopen.md)
+- [handleOpen](./api-1810366-handleopen.md)
+- [lockPhysicalExtents](./api-1810387-lockphysicalextents.md)
+- [read](./api-1810409-read.md)
+- [synchronizeCache](./api-1810446-synchronizecache.md)
+- [unlockPhysicalExtents](./api-1810496-unlockphysicalextents.md)
+- [unmap](./api-1810548-unmap.md)
+- [write](./api-1810601-write.md)
 
 
 ---

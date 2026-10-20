@@ -1,14 +1,15 @@
 # Close
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Close(IOService *forClient, IOOptionBits options, OSDispatchMethod supermethod);
 ```
 

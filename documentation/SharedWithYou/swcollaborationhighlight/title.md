@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the collaboration highlight.
 
@@ -18,17 +19,22 @@ The title of the collaboration highlight.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
 #### Discussion
 
 The app that hosts the collaboration provides this title.
 
 ## See Also
 
-- [var collaborationIdentifier: String](swcollaborationhighlight/collaborationidentifier.md)
+### Accessing collaboration attributes
+- [var collaborationIdentifier: String](./collaborationidentifier.md)
   A unique identifier that the app hosting the collaboration provides.
-- [var contentType: UTType](swcollaborationhighlight/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The UTI type for this collaboration highlight.
-- [var creationDate: Date](swcollaborationhighlight/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date the system creates this file.
 
 

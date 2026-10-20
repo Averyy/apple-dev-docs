@@ -1,7 +1,8 @@
 # ARCoachingOverlayView.Goal.verticalPlane
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A goal that specifies your app requires a vertical plane.
 
@@ -15,19 +16,24 @@ A goal that specifies your app requires a vertical plane.
 case verticalPlane
 ```
 
+```c
+ARCoachingGoalVerticalPlane
+```
+
 #### Discussion
 
 When you use this goal, coaching overlay won’t hide until the user has moved their device in a way that facilitates ARKit finding at least one vertical surface.
 
 ## See Also
 
-- [ARCoachingOverlayView.Goal.anyPlane](arcoachingoverlayview/goal-swift.enum/anyplane.md)
+### Defining a Goal
+- [ARCoachingOverlayView.Goal.anyPlane](./anyplane.md)
   A goal that specifies your app requires a plane of any type.
-- [ARCoachingOverlayView.Goal.horizontalPlane](arcoachingoverlayview/goal-swift.enum/horizontalplane.md)
+- [ARCoachingOverlayView.Goal.horizontalPlane](./horizontalplane.md)
   A goal that specifies your app requires a horizontal plane.
-- [ARCoachingOverlayView.Goal.tracking](arcoachingoverlayview/goal-swift.enum/tracking.md)
+- [ARCoachingOverlayView.Goal.tracking](./tracking.md)
   A goal that specifies your app requires basic world tracking.
-- [ARCoachingOverlayView.Goal.geoTracking](arcoachingoverlayview/goal-swift.enum/geotracking.md)
+- [ARCoachingOverlayView.Goal.geoTracking](./geotracking.md)
   A goal that specifies your app requires a precise geographic location.
 
 

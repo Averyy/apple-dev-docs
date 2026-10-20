@@ -1,7 +1,8 @@
 # AXDataPointValue
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single data value.
 
@@ -20,30 +21,35 @@ A single data value.
 class AXDataPointValue
 ```
 
+```objc
+@interface AXDataPointValue : NSObject
+```
+
 #### Overview
 
-An [`AXDataPointValue`](axdatapointvalue.md) can be either numeric or categorical. Data points in a numeric axis use the [`number`](axdatapointvalue/number.md) property, and data points in a categorical axis use the [`category`](axdatapointvalue/category.md) property.
+An [`AXDataPointValue`](./axdatapointvalue.md) can be either numeric or categorical. Data points in a numeric axis use the [`number`](./axdatapointvalue/number.md) property, and data points in a categorical axis use the [`category`](./axdatapointvalue/category.md) property.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var xValue: AXDataPointValue](axdatapoint/xvalue.md)
+### Specifying the data value
+- [var xValue: AXDataPointValue](./axdatapoint/xvalue.md)
   The value of the x-axis for the data point.
-- [var yValue: AXDataPointValue?](axdatapoint/yvalue.md)
+- [var yValue: AXDataPointValue?](./axdatapoint/yvalue.md)
   The value of the y-axis for the data point.
-- [AXDataPoint.Value](axdatapoint/value.md)
+- [AXDataPoint.Value](./axdatapoint/value.md)
   Constants that describe types of data values.
 
 

@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to a layer hierarchy in another process.
 
@@ -13,6 +14,10 @@ A reference to a layer hierarchy in another process.
 
 ```swift
 var handle: LayerHierarchyHandle? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) BELayerHierarchyHandle * handle;
 ```
 
 

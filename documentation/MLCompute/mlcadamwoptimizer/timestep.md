@@ -1,16 +1,17 @@
 # timeStep
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial timestep for the update.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,15 +19,20 @@ The initial timestep for the update.
 var timeStep: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger timeStep;
+```
+
 ## See Also
 
-- [var beta1: Float](mlcadamwoptimizer/beta1.md)
+### Inspecting an AdamW Optimizer
+- [var beta1: Float](./beta1.md)
   The coefficent for computing running averages of gradient.
-- [var beta2: Float](mlcadamwoptimizer/beta2.md)
+- [var beta2: Float](./beta2.md)
   The coefficent for computing running averages of square of gradient.
-- [var epsilon: Float](mlcadamwoptimizer/epsilon.md)
+- [var epsilon: Float](./epsilon.md)
   The epsilon value for improving numerical stability.
-- [var usesAMSGrad: Bool](mlcadamwoptimizer/usesamsgrad.md)
+- [var usesAMSGrad: Bool](./usesamsgrad.md)
   A Boolean value that indicates whether to use a variant of the algorithm.
 
 

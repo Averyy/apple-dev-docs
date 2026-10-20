@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](dictionary/init(from:)-6e6js.md)
+- [init(from: any Decoder) throws](./init%28from%29-6e6js.md)
   Creates a new dictionary by decoding from the given decoder.
 
 

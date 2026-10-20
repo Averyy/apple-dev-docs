@@ -1,7 +1,8 @@
 # specialDeviceID
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Device ID (if special file)
 

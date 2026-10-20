@@ -1,7 +1,8 @@
 # SpatialTapGesture.Value
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The attributes of a tap gesture.
 
@@ -22,17 +23,17 @@ struct Value
 ## Topics
 
 ### Getting the tap location
-- [var location: CGPoint](spatialtapgesture/value/location.md)
+- [var location: CGPoint](./value/location.md)
   The location of the tap gesture’s current event.
-- [var location3D: Point3D](spatialtapgesture/value/location3d.md)
+- [var location3D: Point3D](./value/location3d.md)
   The 3D location of the tap.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # element(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces a guide on the elements within the array.
 

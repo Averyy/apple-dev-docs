@@ -1,16 +1,17 @@
 # MTLDepthStencilDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-An instance that configures new [`MTLDepthStencilState`](mtldepthstencilstate.md) instances.
+An instance that configures new [`MTLDepthStencilState`](./mtldepthstencilstate.md) instances.
 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,52 +20,57 @@ An instance that configures new [`MTLDepthStencilState`](mtldepthstencilstate.md
 class MTLDepthStencilDescriptor
 ```
 
+```objc
+@interface MTLDepthStencilDescriptor : NSObject
+```
+
 #### Overview
 
-An [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance is used to define a specific configuration of the depth and stencil stages of a rendering pipeline. To create an [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance, use standard allocation and initialization techniques.
+An [`MTLDepthStencilDescriptor`](./mtldepthstencildescriptor.md) instance is used to define a specific configuration of the depth and stencil stages of a rendering pipeline. To create an [`MTLDepthStencilDescriptor`](./mtldepthstencildescriptor.md) instance, use standard allocation and initialization techniques.
 
-To enable writing the depth value to a depth attachment, set the depthWriteEnabled property to [`true`](https://developer.apple.com/documentation/swift/true).
+To enable writing the depth value to a depth attachment, set the depthWriteEnabled property to [`true`](../Swift/true.md).
 
-The depthCompareFunction property specifies how the depth test is performed. If a fragment’s depth value fails the depth test, the fragment is discarded. [`MTLCompareFunction.less`](mtlcomparefunction/less.md) is a commonly used value for [`depthCompareFunction`](mtldepthstencildescriptor/depthcomparefunction.md), because fragment values that are farther away from the viewer than the pixel depth value (a previously written fragment) fail the depth test and are considered occluded by the earlier depth value.
+The depthCompareFunction property specifies how the depth test is performed. If a fragment’s depth value fails the depth test, the fragment is discarded. [`MTLCompareFunction.less`](./mtlcomparefunction/less.md) is a commonly used value for [`depthCompareFunction`](./mtldepthstencildescriptor/depthcomparefunction.md), because fragment values that are farther away from the viewer than the pixel depth value (a previously written fragment) fail the depth test and are considered occluded by the earlier depth value.
 
-The [`frontFaceStencil`](mtldepthstencildescriptor/frontfacestencil.md) and [`backFaceStencil`](mtldepthstencildescriptor/backfacestencil.md) properties define two independent stencil descriptors: one for front-facing primitives and the other for back-facing primitives, respectively. Both properties can be set to the same MTLStencilDescriptor instance.
+The [`frontFaceStencil`](./mtldepthstencildescriptor/frontfacestencil.md) and [`backFaceStencil`](./mtldepthstencildescriptor/backfacestencil.md) properties define two independent stencil descriptors: one for front-facing primitives and the other for back-facing primitives, respectively. Both properties can be set to the same MTLStencilDescriptor instance.
 
 ## Topics
 
 ### Specifying depth operations
-- [var depthCompareFunction: MTLCompareFunction](mtldepthstencildescriptor/depthcomparefunction.md)
+- [var depthCompareFunction: MTLCompareFunction](./mtldepthstencildescriptor/depthcomparefunction.md)
   The comparison that is performed between a fragment’s depth value and the depth value in the attachment, which determines whether to discard the fragment.
-- [var isDepthWriteEnabled: Bool](mtldepthstencildescriptor/isdepthwriteenabled.md)
+- [var isDepthWriteEnabled: Bool](./mtldepthstencildescriptor/isdepthwriteenabled.md)
   A Boolean value that indicates whether depth values can be written to the depth attachment.
 ### Specifying stencil descriptors for primitives
-- [var backFaceStencil: MTLStencilDescriptor!](mtldepthstencildescriptor/backfacestencil.md)
+- [var backFaceStencil: MTLStencilDescriptor!](./mtldepthstencildescriptor/backfacestencil.md)
   The stencil descriptor for back-facing primitives.
-- [var frontFaceStencil: MTLStencilDescriptor!](mtldepthstencildescriptor/frontfacestencil.md)
+- [var frontFaceStencil: MTLStencilDescriptor!](./mtldepthstencildescriptor/frontfacestencil.md)
   The stencil descriptor for front-facing primitives.
 ### Identifying properties
-- [var label: String?](mtldepthstencildescriptor/label.md)
+- [var label: String?](./mtldepthstencildescriptor/label.md)
   A string that identifies this object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
+### Depth testing
+- [Calculating primitive visibility using depth testing](./calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [protocol MTLDepthStencilState](mtldepthstencilstate.md)
+- [protocol MTLDepthStencilState](./mtldepthstencilstate.md)
   A depth and stencil state instance that specifies the depth and stencil configuration and operations used in a render pass.
-- [class MTLStencilDescriptor](mtlstencildescriptor.md)
+- [class MTLStencilDescriptor](./mtlstencildescriptor.md)
   An object that defines the front-facing or back-facing stencil operations of a depth and stencil state object.
 
 

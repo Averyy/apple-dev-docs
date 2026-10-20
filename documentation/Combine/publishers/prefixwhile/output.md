@@ -1,7 +1,8 @@
 # Publishers.PrefixWhile.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.PrefixWhile.Failure](publishers/prefixwhile/failure.md)
+### Declaring supporting types
+- [Publishers.PrefixWhile.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

@@ -1,7 +1,8 @@
 # hostTimeClock
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton clock that the system identifies as host time.
 

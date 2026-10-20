@@ -1,7 +1,8 @@
 # startOfDay(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first moment of a given Date, as a Date.
 
@@ -34,13 +35,14 @@ For example, pass in `Date()`, if you want the start of today. If there were two
 
 ## See Also
 
-- [func enumerateDates(startingAfter: Date, matching: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection, using: (Date?, Bool, inout Bool) -> Void)](calendar/enumeratedates(startingafter:matching:matchingpolicy:repeatedtimepolicy:direction:using:).md)
+### Scanning Dates
+- [func enumerateDates(startingAfter: Date, matching: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection, using: (Date?, Bool, inout Bool) -> Void)](./enumeratedates%28startingafter,matching,matchingpolicy,repeatedtimepolicy,direction,using%29.md)
   Computes the dates which match (or most closely match) a given set of components, and calls the closure once for each of them, until the enumeration is stopped.
-- [func nextDate(after: Date, matching: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection) -> Date?](calendar/nextdate(after:matching:matchingpolicy:repeatedtimepolicy:direction:).md)
+- [func nextDate(after: Date, matching: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy, direction: Calendar.SearchDirection) -> Date?](./nextdate%28after,matching,matchingpolicy,repeatedtimepolicy,direction%29.md)
   Computes the next date which matches (or most closely matches) a given set of components.
-- [Calendar.MatchingPolicy](calendar/matchingpolicy.md)
+- [Calendar.MatchingPolicy](./matchingpolicy.md)
   A hint to the search algorithm to control the method used for searching for dates.
-- [Calendar.RepeatedTimePolicy](calendar/repeatedtimepolicy.md)
+- [Calendar.RepeatedTimePolicy](./repeatedtimepolicy.md)
   Determines which result to use when a time is repeated on a day in a calendar (for example, during a daylight saving transition when the times between 2:00am and 3:00am may happen twice).
 
 

@@ -1,7 +1,8 @@
 # AXMFiHearingDevice.Ear
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that represent a hearing device ear.
 
@@ -18,36 +19,41 @@ Constants that represent a hearing device ear.
 struct Ear
 ```
 
+```c
+enum AXHearingDeviceEar : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var both: AXMFiHearingDevice.Ear](axmfihearingdevice/ear/both.md)
+- [static var both: AXMFiHearingDevice.Ear](./ear/both.md)
   A constant that represents both ears.
-- [static var left: AXMFiHearingDevice.Ear](axmfihearingdevice/ear/left.md)
+- [static var left: AXMFiHearingDevice.Ear](./ear/left.md)
   A constant that represents the left ear.
-- [static var right: AXMFiHearingDevice.Ear](axmfihearingdevice/ear/right.md)
+- [static var right: AXMFiHearingDevice.Ear](./ear/right.md)
   A constant that represents the right ear.
 ### Initializer
-- [init(rawValue: UInt)](axmfihearingdevice/ear/init(rawvalue:).md)
+- [init(rawValue: UInt)](./ear/init%28rawvalue%29.md)
   Creates a structure that represents a hearing device ear with the raw value you specify.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [static func streamingEar() -> AXMFiHearingDevice.Ear](axmfihearingdevice/streamingear.md)
+### Streaming status
+- [static func streamingEar() -> AXMFiHearingDevice.Ear](./streamingear%28%29.md)
   Returns which ears enable streaming.
-- [static let streamingEarDidChangeNotification: NSNotification.Name](axmfihearingdevice/streamingeardidchangenotification.md)
+- [static let streamingEarDidChangeNotification: NSNotification.Name](./streamingeardidchangenotification.md)
   A notification that the system posts when there’s a change to which ears enable streaming.
 
 

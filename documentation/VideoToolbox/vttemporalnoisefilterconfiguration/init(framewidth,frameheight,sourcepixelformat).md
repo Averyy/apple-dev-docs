@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:sourcePixelFormat:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new temporal noise-processor configuration.
 
@@ -15,6 +16,10 @@ Creates a new temporal noise-processor configuration.
 
 ```swift
 init?(frameWidth: Int, frameHeight: Int, sourcePixelFormat: OSType)
+```
+
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight sourcePixelFormat:(OSType) sourcePixelFormat;
 ```
 
 #### Discussion

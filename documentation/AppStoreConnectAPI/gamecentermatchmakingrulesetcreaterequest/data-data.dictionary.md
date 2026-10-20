@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to create a rule set.
 
@@ -10,20 +11,20 @@ The data structure of the request body you use to create a rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes](gamecentermatchmakingrulesetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes for a rule set that you create.
 
 ## Properties
 
 - `attributes` (GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterMatchmakingRuleSets`
 
 
 ---

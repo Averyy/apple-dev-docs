@@ -1,7 +1,8 @@
 # MDLMaterialTextureFilterMode.linear
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sampling at texture coordinates between texels should linearly interpolate between texel values.
 
@@ -19,9 +20,14 @@ Sampling at texture coordinates between texels should linearly interpolate betwe
 case linear
 ```
 
+```c
+MDLMaterialTextureFilterModeLinear
+```
+
 ## See Also
 
-- [MDLMaterialTextureFilterMode.nearest](mdlmaterialtexturefiltermode/nearest.md)
+### Constants
+- [MDLMaterialTextureFilterMode.nearest](./nearest.md)
   Sampling at texture coordinates between texels should return the value of the nearest texel.
 
 

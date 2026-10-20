@@ -1,7 +1,8 @@
 # ChairArmType.existing
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type of chair that has arms.
 
@@ -18,7 +19,8 @@ case existing
 
 ## See Also
 
-- [ChairArmType.missing](chairarmtype/missing.md)
+### Choosing a chair arm type
+- [ChairArmType.missing](./missing.md)
   A type of chair with no arms.
 
 

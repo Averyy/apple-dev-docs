@@ -1,7 +1,8 @@
 # makeSendOnceRight()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a send-once right for a given receive right.
 
@@ -19,6 +20,8 @@ Create a send-once right for a given receive right.
 ```swift
 func makeSendOnceRight() -> Mach.Port<Mach.SendOnceRight>
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

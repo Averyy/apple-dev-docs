@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kClearHubFeature](1643676-anonymous/kclearhubfeature.md)
-- [kClearPortFeature](1643676-anonymous/kclearportfeature.md)
-- [kGetHub3Descriptor](1643676-anonymous/kgethub3descriptor.md)
-- [kGetHubDescriptor](1643676-anonymous/kgethubdescriptor.md)
-- [kGetHubStatus](1643676-anonymous/kgethubstatus.md)
-- [kGetPortState](1643676-anonymous/kgetportstate.md)
-- [kGetPortStatus](1643676-anonymous/kgetportstatus.md)
-- [kSetHubDescriptor](1643676-anonymous/ksethubdescriptor.md)
-- [kSetHubFeature](1643676-anonymous/ksethubfeature.md)
-- [kSetPortFeature](1643676-anonymous/ksetportfeature.md)
+- [kClearHubFeature](./api-1643676-anonymous/kclearhubfeature.md)
+- [kClearPortFeature](./api-1643676-anonymous/kclearportfeature.md)
+- [kGetHub3Descriptor](./api-1643676-anonymous/kgethub3descriptor.md)
+- [kGetHubDescriptor](./api-1643676-anonymous/kgethubdescriptor.md)
+- [kGetHubStatus](./api-1643676-anonymous/kgethubstatus.md)
+- [kGetPortState](./api-1643676-anonymous/kgetportstate.md)
+- [kGetPortStatus](./api-1643676-anonymous/kgetportstatus.md)
+- [kSetHubDescriptor](./api-1643676-anonymous/ksethubdescriptor.md)
+- [kSetHubFeature](./api-1643676-anonymous/ksethubfeature.md)
+- [kSetPortFeature](./api-1643676-anonymous/ksetportfeature.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Creating TVML Elements
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: Article
 
 Avoid rewriting complex and often used elements by creating a simplified custom element.
 
@@ -10,7 +11,7 @@ The TVML template elements ensure structure and consistency between documents. H
 
 ##### Create Your Customization Class
 
-Your element customization class is where you register any new elements and add the customization code. To start, create a new class that conforms to the [`TVInterfaceCreating`](tvinterfacecreating.md) protocol and import the UIKit and TVMLKit frameworks:
+Your element customization class is where you register any new elements and add the customization code. To start, create a new class that conforms to the [`TVInterfaceCreating`](./tvinterfacecreating.md) protocol and import the UIKit and TVMLKit frameworks:
 
 ```swift
 import UIKit
@@ -23,7 +24,7 @@ class CustomElements: NSObject, TVInterfaceCreating {
 
 ##### Register Your New Element
 
-Before you can use a new element in your TVML code, register the element using the [`registerViewElementClass(_:elementName:)`](tvelementfactory/registerviewelementclass(_:elementname:).md) function. Call the [`registerViewElementClass(_:elementName:)`](tvelementfactory/registerviewelementclass(_:elementname:).md) in your class’s `init` function and assign a name to the new element. The JavaScript environment can now recognize the registered element. The following code creates the new TVML element, `<copyright/>`:
+Before you can use a new element in your TVML code, register the element using the [`registerViewElementClass(_:elementName:)`](./tvelementfactory/registerviewelementclass%28_,elementname%29.md) function. Call the [`registerViewElementClass(_:elementName:)`](./tvelementfactory/registerviewelementclass%28_,elementname%29.md) in your class’s `init` function and assign a name to the new element. The JavaScript environment can now recognize the registered element. The following code creates the new TVML element, `<copyright/>`:
 
 ```swift
 override init() {
@@ -32,11 +33,11 @@ override init() {
 }
 ```
 
-> ❗ **Important**:  You must register all elements before initializing the [`TVApplicationController`](tvapplicationcontroller.md) object.
+> ❗ **Important**:  You must register all elements before initializing the [`TVApplicationController`](./tvapplicationcontroller.md) object.
 
 ##### Customize Your New Element
 
-After registering the new element name, you need to customize the element. Implement the [`makeView(element:existingView:)`](tvinterfacecreating/makeview(element:existingview:).md) function in your custom class. The system automatically calls the [`makeView(element:existingView:)`](tvinterfacecreating/makeview(element:existingview:).md) function for every element in your TVML document. Check for the new element’s name and add the customization code. If the current element is not your new element, you must return `nil`.
+After registering the new element name, you need to customize the element. Implement the [`makeView(element:existingView:)`](./tvinterfacecreating/makeview%28element,existingview%29.md) function in your custom class. The system automatically calls the [`makeView(element:existingView:)`](./tvinterfacecreating/makeview%28element,existingview%29.md) function for every element in your TVML document. Check for the new element’s name and add the customization code. If the current element is not your new element, you must return `nil`.
 
 ```swift
 func makeView(element: TVViewElement, existingView: UIView?) -> UIView? {
@@ -54,7 +55,7 @@ func makeView(element: TVViewElement, existingView: UIView?) -> UIView? {
 
 ##### Access the Shared Interface
 
-To enable your class to communicate with your JavaScript code, associate the class with the [`shared()`](tvinterfacefactory/shared().md) interface. Before setting the application controller, set the [`extendedInterfaceCreator`](tvinterfacefactory/extendedinterfacecreator.md) property to an instance of the class inside of the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) function:
+To enable your class to communicate with your JavaScript code, associate the class with the [`shared()`](./tvinterfacefactory/shared%28%29.md) interface. Before setting the application controller, set the [`extendedInterfaceCreator`](./tvinterfacefactory/extendedinterfacecreator.md) property to an instance of the class inside of the [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) function:
 
 ```swift
 TVInterfaceFactory.shared().extendedInterfaceCreator = CustomElements()
@@ -64,11 +65,12 @@ When complete, use the new element in your TVML code like any other element; for
 
 ## See Also
 
-- [class TVElementFactory](tvelementfactory.md)
+### Custom Elements
+- [class TVElementFactory](./tvelementfactory.md)
   An object used to register new elements to extend the Apple TV Markup Language (TVML).
-- [class TVImageElement](tvimageelement.md)
+- [class TVImageElement](./tvimageelement.md)
   A representation of a read-only DOM node containing the attributes that describe an image element.
-- [class TVTextElement](tvtextelement.md)
+- [class TVTextElement](./tvtextelement.md)
   The textual content for the DOM element.
 
 

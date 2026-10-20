@@ -1,7 +1,8 @@
 # jointTransforms
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relative joint transforms of the model entity.
 
@@ -11,7 +12,7 @@ The relative joint transforms of the model entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ Call `RealityKit/BodyTrackedEntity/jointNames` to determine the name and order o
 
 ## See Also
 
-- [var jointNames: [String]](hasmodel/jointnames.md)
+### Managing joints
+- [var jointNames: [String]](./jointnames.md)
   The names of all the joints in the model entity.
 
 

@@ -1,7 +1,8 @@
 # loadAchievements(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads the achievements that you previously reported the player making progress toward.
 
@@ -17,23 +18,36 @@ Loads the achievements that you previously reported the player making progress t
 ## Declaration
 
 ```swift
+class func loadAchievements(completionHandler: (@Sendable ([GKAchievement]?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func loadAchievements() async throws -> [GKAchievement]
+```
+
+```objc
++ (void) loadAchievementsWithCompletionHandler:(void (^)(NSArray<GKAchievement *> *achievements, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Rewarding players with achievements](rewarding-players-with-achievements.md)
+- [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
 ## Parameters
 
-- `completionHandler`: A block that GameKit calls when this method loads the achievements. The block receives the following parameters: - **`achievements`**: The achievements that you previously reported progress for the local player.
-- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: A block that GameKit calls when this method loads the achievements.
+
+  The block receives the following parameters:
+
+  - **`achievements`**: The achievements that you previously reported progress for the local player.
+  - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [init(identifier: String)](gkachievement/init(identifier:).md)
+### Loading and Initializing Achievements
+- [init(identifier: String)](./init%28identifier%29.md)
   Initializes an achievement for the local player.
-- [init(identifier: String, player: GKPlayer)](gkachievement/init(identifier:player:).md)
+- [init(identifier: String, player: GKPlayer)](./init%28identifier,player%29.md)
   Initializes an achievement for a player.
 
 

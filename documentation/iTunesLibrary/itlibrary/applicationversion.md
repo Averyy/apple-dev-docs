@@ -1,7 +1,8 @@
 # applicationVersion
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of iTunes that created or modified the iTunes library you’re accessing.
 
@@ -15,19 +16,24 @@ The version of iTunes that created or modified the iTunes library you’re acces
 var applicationVersion: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * applicationVersion;
+```
+
 ## See Also
 
-- [var allMediaItems: [ITLibMediaItem]](itlibrary/allmediaitems.md)
+### Getting iTunes Library Info
+- [var allMediaItems: [ITLibMediaItem]](./allmediaitems.md)
   All the media items (tracks) in the iTunes library.
-- [var allPlaylists: [ITLibPlaylist]](itlibrary/allplaylists.md)
+- [var allPlaylists: [ITLibPlaylist]](./allplaylists.md)
   All the playlists in the iTunes library.
-- [var apiMajorVersion: Int](itlibrary/apimajorversion.md)
+- [var apiMajorVersion: Int](./apimajorversion.md)
   The major version number of the API the iTunesLibrary framework exposes.
-- [var apiMinorVersion: Int](itlibrary/apiminorversion.md)
+- [var apiMinorVersion: Int](./apiminorversion.md)
   The minor version number of the API the iTunesLibrary framework exposes.
-- [var mediaFolderLocation: URL?](itlibrary/mediafolderlocation.md)
+- [var mediaFolderLocation: URL?](./mediafolderlocation.md)
   The location of the iTunes music folder.
-- [var shouldShowContentRating: Bool](itlibrary/shouldshowcontentrating.md)
+- [var shouldShowContentRating: Bool](./shouldshowcontentrating.md)
   A Boolean value indicating whether to show content rating labels.
 
 

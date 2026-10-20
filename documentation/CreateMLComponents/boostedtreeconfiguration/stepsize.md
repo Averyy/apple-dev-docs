@@ -1,16 +1,17 @@
 # stepSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The step size shrinking.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
+- iOS 16.0+ - Deprecated in 17.0 (renamed: learningRate)
+- iPadOS 16.0+ - Deprecated in 17.0 (renamed: learningRate)
+- Mac Catalyst 16.0+ - Deprecated in 17.0 (renamed: learningRate)
+- macOS 13.0+ - Deprecated in 14.0 (renamed: learningRate)
+- tvOS 16.0+ - Deprecated in 17.0 (renamed: learningRate)
 - visionOS 1.0+
 - watchOS 11.0+
 
@@ -22,25 +23,26 @@ var stepSize: Double { get set }
 
 ## See Also
 
-- [var columnSubsample: Double](boostedtreeconfiguration/columnsubsample.md)
+### Inspecting the configuration
+- [var columnSubsample: Double](./columnsubsample.md)
   Subsample ratio of the columns in each iteration of tree construction.
-- [var earlyStoppingIterationCount: Int?](boostedtreeconfiguration/earlystoppingiterationcount.md)
+- [var earlyStoppingIterationCount: Int?](./earlystoppingiterationcount.md)
   Stops training after this number of iterations where the validation metric does not improve.
-- [var learningRate: Double](boostedtreeconfiguration/learningrate.md)
+- [var learningRate: Double](./learningrate.md)
   The learning rate.
-- [var maximumDepth: Int](boostedtreeconfiguration/maximumdepth.md)
+- [var maximumDepth: Int](./maximumdepth.md)
   Maximum tree depth.
-- [var maximumIterations: Int](boostedtreeconfiguration/maximumiterations.md)
+- [var maximumIterations: Int](./maximumiterations.md)
   Maximum number of iterations.
-- [var minimumChildWeight: Double](boostedtreeconfiguration/minimumchildweight.md)
+- [var minimumChildWeight: Double](./minimumchildweight.md)
   The minimum weight of each leaf node.
-- [var minimumLossReduction: Double](boostedtreeconfiguration/minimumlossreduction.md)
+- [var minimumLossReduction: Double](./minimumlossreduction.md)
   Minimum loss reduction required to further split a node during the tree learning phase.
-- [var parallelTreeCount: Int](boostedtreeconfiguration/paralleltreecount.md)
+- [var parallelTreeCount: Int](./paralleltreecount.md)
   The number of parallel trees constructed during each iteration.
-- [var randomSeed: Int](boostedtreeconfiguration/randomseed.md)
+- [var randomSeed: Int](./randomseed.md)
   A seed to generate reproducible results from random operations such as column and row subsampling.
-- [var rowSubsample: Double](boostedtreeconfiguration/rowsubsample.md)
+- [var rowSubsample: Double](./rowsubsample.md)
   Subsample ratio of the training set in each iteration of tree construction.
 
 

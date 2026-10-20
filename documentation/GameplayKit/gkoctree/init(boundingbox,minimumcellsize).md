@@ -1,7 +1,8 @@
 # init(boundingBox:minimumCellSize:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an octree with the specified dimensions.
 
@@ -19,6 +20,10 @@ Initializes an octree with the specified dimensions.
 init(boundingBox box: GKBox, minimumCellSize minCellSize: Float)
 ```
 
+```objc
+- (instancetype) initWithBoundingBox:(GKBox) box minimumCellSize:(float) minCellSize;
+```
+
 #### Return Value
 
 A new octree object.
@@ -27,7 +32,7 @@ A new octree object.
 
 The `minCellSize` parameter controls the memory usage and performance of the tree. A lower value causes the tree to make more spatial divisions when adding elements; a higher value causes the tree to create fewer such divisions, but store more elements in each node. Which direction leads to better performance depends on the number and spatial arrangement of the elements you add to the tree—for best results, profile with different values to find one best suited to your app or game.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

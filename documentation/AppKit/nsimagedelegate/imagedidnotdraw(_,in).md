@@ -1,18 +1,23 @@
 # imageDidNotDraw(_:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the image object is unable, for whatever reason, to lock focus on its image or draw in the specified rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 nonisolated
 optional func imageDidNotDraw(_ sender: NSImage, in rect: NSRect) -> NSImage?
+```
+
+```objc
+- (NSImage *) imageDidNotDraw:(NSImage *) sender inRect:(NSRect) rect;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ The delegate can do one of the following:
 
 ## See Also
 
-- [class NSImage](nsimage.md)
+### Related Documentation
+- [class NSImage](../nsimage.md)
   A high-level interface for manipulating image data.
 
 

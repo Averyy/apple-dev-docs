@@ -1,7 +1,8 @@
 # kJSTypeObject
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An object value.
 
@@ -19,23 +20,28 @@ An object value.
 var kJSTypeObject: JSType { get }
 ```
 
+```c
+kJSTypeObject
+```
+
 #### Discussion
 
-This [`JSValueRef`](jsvalueref.md) represents a [`JSObjectRef`](jsobjectref.md).
+This [`JSValueRef`](./jsvalueref.md) represents a [`JSObjectRef`](./jsobjectref.md).
 
 ## See Also
 
-- [var kJSTypeUndefined: JSType](kjstypeundefined.md)
+### Constants
+- [var kJSTypeUndefined: JSType](./kjstypeundefined.md)
   The unique undefined value.
-- [var kJSTypeNull: JSType](kjstypenull.md)
+- [var kJSTypeNull: JSType](./kjstypenull.md)
   The unique null value.
-- [var kJSTypeBoolean: JSType](kjstypeboolean.md)
+- [var kJSTypeBoolean: JSType](./kjstypeboolean.md)
   A primitive Boolean value.
-- [var kJSTypeNumber: JSType](kjstypenumber.md)
+- [var kJSTypeNumber: JSType](./kjstypenumber.md)
   A primitive number value.
-- [var kJSTypeString: JSType](kjstypestring.md)
+- [var kJSTypeString: JSType](./kjstypestring.md)
   A primitive string value.
-- [var kJSTypeSymbol: JSType](kjstypesymbol.md)
+- [var kJSTypeSymbol: JSType](./kjstypesymbol.md)
   A primitive symbol value.
 
 

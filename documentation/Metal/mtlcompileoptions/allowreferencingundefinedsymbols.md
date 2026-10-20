@@ -1,7 +1,8 @@
 # allowReferencingUndefinedSymbols
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var allowReferencingUndefinedSymbols: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL allowReferencingUndefinedSymbols;
 ```
 
 

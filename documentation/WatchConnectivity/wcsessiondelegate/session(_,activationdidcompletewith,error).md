@@ -2,6 +2,7 @@
 
 **Framework**: Watch Connectivity  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the session has finished activating.
@@ -19,21 +20,26 @@ Tells the delegate that the session has finished activating.
 func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?)
 ```
 
+```objc
+- (void) session:(WCSession *) session activationDidCompleteWithState:(WCSessionActivationState) activationState error:(NSError *) error;
+```
+
 #### Discussion
 
-You must implement this method to support asynchronous activation and quick watch switching. Your implementation should check the value of the `activationState` parameter to see if communication with the counterpart app is possible. When the state is [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md), you may communicate normally with the other app.
+You must implement this method to support asynchronous activation and quick watch switching. Your implementation should check the value of the `activationState` parameter to see if communication with the counterpart app is possible. When the state is [`WCSessionActivationState.activated`](../wcsessionactivationstate/activated.md), you may communicate normally with the other app.
 
 ## Parameters
 
 - `session`: The session object whose activation completed.
-- `activationState`: The state of the session. Sessions normally move to the [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md) state upon success or the [`WCSessionActivationState.notActivated`](wcsessionactivationstate/notactivated.md) state when there is an error. On iOS, the session may also move to the [`WCSessionActivationState.inactive`](wcsessionactivationstate/inactive.md) state if there is data waiting to be delivered from a previous session.
-- `error`: An error object indicating that a problem occurred or `nil` if activation completed successfully. When the `activationState` parameter contains the value [`WCSessionActivationState.notActivated`](wcsessionactivationstate/notactivated.md), this parameter contains the error object describing the reason for the failure.
+- `activationState`: The state of the session. Sessions normally move to the [`WCSessionActivationState.activated`](../wcsessionactivationstate/activated.md) state upon success or the [`WCSessionActivationState.notActivated`](../wcsessionactivationstate/notactivated.md) state when there is an error. On iOS, the session may also move to the [`WCSessionActivationState.inactive`](../wcsessionactivationstate/inactive.md) state if there is data waiting to be delivered from a previous session.
+- `error`: An error object indicating that a problem occurred or `nil` if activation completed successfully. When the `activationState` parameter contains the value [`WCSessionActivationState.notActivated`](../wcsessionactivationstate/notactivated.md), this parameter contains the error object describing the reason for the failure.
 
 ## See Also
 
-- [func sessionDidBecomeInactive(WCSession)](wcsessiondelegate/sessiondidbecomeinactive(_:).md)
+### Managing Session Activation
+- [func sessionDidBecomeInactive(WCSession)](./sessiondidbecomeinactive%28_%29.md)
   Tells the delegate that the session will stop communicating with the current Apple Watch.
-- [func sessionDidDeactivate(WCSession)](wcsessiondelegate/sessiondiddeactivate(_:).md)
+- [func sessionDidDeactivate(WCSession)](./sessiondiddeactivate%28_%29.md)
   Tells the delegate that the session has delivered all the data from the previous session, and that communication with the Apple Watch has ended.
 
 

@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which channel events will be delivered.
 
@@ -16,9 +17,10 @@ final var queue: DispatchQueue? { get }
 
 ## See Also
 
-- [let etherType: UInt16](nwethernetchannel/ethertype.md)
+### Inspecting Ethernet Channels
+- [let etherType: UInt16](./ethertype.md)
   The custom Ethernet type with which the channel was initialized.
-- [let interface: NWInterface](nwethernetchannel/interface.md)
+- [let interface: NWInterface](./interface.md)
   The interface with which the channel was initialized.
 
 

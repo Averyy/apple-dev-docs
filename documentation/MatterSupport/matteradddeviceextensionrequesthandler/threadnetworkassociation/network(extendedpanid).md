@@ -1,7 +1,8 @@
 # network(extendedPANID:)
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Obtains the Thread network extended PAN identifier.
 
@@ -10,7 +11,7 @@ Obtains the Thread network extended PAN identifier.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,11 +25,12 @@ The Thread network extended PAN identifier.
 
 #### Discussion
 
-The system retrieves the network parameters from [`retrieveCredentials(forExtendedPANID:completion:)`](https://developer.apple.com/documentation/threadnetwork/thclient/retrievecredentials(forextendedpanid:completion:)) using the provided parameter. The credentials must be present in the store or else association and pairing fails.
+The system retrieves the network parameters from [`retrieveCredentials(forExtendedPANID:completion:)`](../../../ThreadNetwork/thclient/retrievecredentials%28forextendedpanid,completion%29.md) using the provided parameter. The credentials must be present in the store or else association and pairing fails.
 
 ## See Also
 
-- [static var defaultSystemNetwork: MatterAddDeviceExtensionRequestHandler.ThreadNetworkAssociation](matteradddeviceextensionrequesthandler/threadnetworkassociation/defaultsystemnetwork.md)
+### Getting network information
+- [static var defaultSystemNetwork: MatterAddDeviceExtensionRequestHandler.ThreadNetworkAssociation](./defaultsystemnetwork.md)
   A sentinel value to represent the system’s default Thread network.
 
 

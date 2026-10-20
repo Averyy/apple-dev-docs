@@ -1,7 +1,8 @@
 # valueChanged
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event where dragging or otherwise manipulating a control causes it to emit a series of different values.
 
@@ -14,11 +15,16 @@ An event where dragging or otherwise manipulating a control causes it to emit a 
 static var valueChanged: NSControl.Events { get }
 ```
 
+```c
+NSControlEventValueChanged
+```
+
 ## See Also
 
-- [static var primaryActionTriggered: NSControl.Events](nscontrol/events/primaryactiontriggered.md)
+### Semantic events
+- [static var primaryActionTriggered: NSControl.Events](./primaryactiontriggered.md)
   A semantic action triggered by buttons.
-- [static var menuActionTriggered: NSControl.Events](nscontrol/events/menuactiontriggered.md)
+- [static var menuActionTriggered: NSControl.Events](./menuactiontriggered.md)
   A menu action has triggered prior to the menu being presented.
 
 

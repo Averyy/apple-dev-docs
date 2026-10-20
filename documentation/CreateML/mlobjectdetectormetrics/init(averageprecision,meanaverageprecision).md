@@ -1,7 +1,8 @@
 # init(averagePrecision:meanAveragePrecision:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates metrics for an object detector given an average precision and a mean average precision.
 

@@ -1,7 +1,8 @@
 # commissionNode(withID:commissioningParams:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -18,9 +19,13 @@
 func commissionNode(withID nodeID: NSNumber, commissioningParams: MTRCommissioningParameters) throws
 ```
 
+```objc
+- (BOOL) commissionNodeWithID:(NSNumber *) nodeID commissioningParams:(MTRCommissioningParameters *) commissioningParams error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

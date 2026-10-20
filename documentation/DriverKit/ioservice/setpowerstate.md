@@ -1,25 +1,26 @@
 # SetPowerState
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the service in response to power-related changes for a provider.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetPowerState(uint32_t powerFlags);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -27,13 +28,14 @@ DriverKit calls this method to notify your service when the power state of its p
 
 ## Parameters
 
-- `powerFlags`: The new power state for the service’s provider object. Configure your driver appropriately for the new state. For a list of possible values, see [`Service Power Capabilities`](3325571-service_power_capabilities.md).
+- `powerFlags`: The new power state for the service’s provider object. Configure your driver appropriately for the new state. For a list of possible values, see [Service Power Capabilities](../api-3325571-service_power_capabilities.md).
 
 ## See Also
 
-- [ChangePowerState](ioservice/changepowerstate.md)
+### Responding to Power-Level Changes
+- [ChangePowerState](./changepowerstate.md)
   Changes the device’s power state to the specified level.
-- [Service Power Capabilities](3325571-service_power_capabilities.md)
+- [Service Power Capabilities](../api-3325571-service_power_capabilities.md)
   Constants that indicate the power state of a device.
 
 

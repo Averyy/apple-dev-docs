@@ -1,7 +1,8 @@
 # setData
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Stores the data for a given key.
 
@@ -10,7 +11,7 @@ Stores the data for a given key.
 
 ## Declaration
 
-```swift
+```
 void setData(
     in String key, 
     in String data
@@ -28,9 +29,10 @@ You can set the `data` parameter to `null` to remove the data associated with th
 
 ## See Also
 
-- [getData](userdefaults/1682084-getdata.md)
+### Modifying User Defaults
+- [getData](./api-1682084-getdata.md)
   Returns the data associated with a particular key.
-- [removeData](userdefaults/1682085-removedata.md)
+- [removeData](./api-1682085-removedata.md)
   Removes the data associated with a particular key.
 
 

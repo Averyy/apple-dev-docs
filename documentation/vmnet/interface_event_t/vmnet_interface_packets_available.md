@@ -1,7 +1,8 @@
 # VMNET_INTERFACE_PACKETS_AVAILABLE
 
 **Framework**: vmnet  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,15 @@
 static var VMNET_INTERFACE_PACKETS_AVAILABLE: interface_event_t { get }
 ```
 
+```c
+VMNET_INTERFACE_PACKETS_AVAILABLE
+```
+
 #### Discussion
 
 Event indicating packets are available to be read on the interface.
 
-The `event` dictionary passed in the callback returns the estimated number of packets available to be read using the [`vmnet_estimated_packets_available_key`](vmnet_estimated_packets_available_key.md) key.
+The `event` dictionary passed in the callback returns the estimated number of packets available to be read using the [`vmnet_estimated_packets_available_key`](../vmnet_estimated_packets_available_key.md) key.
 
 
 ---

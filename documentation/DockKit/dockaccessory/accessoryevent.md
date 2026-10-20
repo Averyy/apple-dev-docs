@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvent
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents an accessory event.
 
@@ -24,22 +25,22 @@ This event propagates input from the dock accessory. Example events are button p
 ## Topics
 
 ### Enumeration Cases
-- [DockAccessory.AccessoryEvent.button(id:pressed:)](dockaccessory/accessoryevent/button(id:pressed:).md)
+- [DockAccessory.AccessoryEvent.button(id:pressed:)](./accessoryevent/button%28id,pressed%29.md)
   A button press event on the dock accessory.
-- [DockAccessory.AccessoryEvent.cameraFlip](dockaccessory/accessoryevent/cameraflip.md)
+- [DockAccessory.AccessoryEvent.cameraFlip](./accessoryevent/cameraflip.md)
   A camera flip event that indicates a request to switch between back and front cameras.
-- [DockAccessory.AccessoryEvent.cameraShutter](dockaccessory/accessoryevent/camerashutter.md)
+- [DockAccessory.AccessoryEvent.cameraShutter](./accessoryevent/camerashutter.md)
   A camera shutter toggle event.
-- [DockAccessory.AccessoryEvent.cameraZoom(factor:)](dockaccessory/accessoryevent/camerazoom(factor:).md)
+- [DockAccessory.AccessoryEvent.cameraZoom(factor:)](./accessoryevent/camerazoom%28factor%29.md)
   A camera zoom event.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

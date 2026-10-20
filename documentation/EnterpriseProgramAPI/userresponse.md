@@ -1,13 +1,14 @@
 # UserResponse
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains a single Users resource.
 
 ## Declaration
 
-```swift
+```
 object UserResponse
 ```
 
@@ -18,13 +19,14 @@ object UserResponse
 
 ## See Also
 
-- [object User](user.md)
+### Objects and Data Types
+- [object User](./user.md)
   The data structure that represents a Users resource.
-- [object UserUpdateRequest](userupdaterequest.md)
+- [object UserUpdateRequest](./userupdaterequest.md)
   The request body you use to update a User.
-- [object UsersResponse](usersresponse.md)
+- [object UsersResponse](./usersresponse.md)
   A response that contains a list of Users resources.
-- [type UserRole](userrole.md)
+- [type UserRole](./userrole.md)
   Strings that represent user roles and permissions in the Apple Developer website.
 
 

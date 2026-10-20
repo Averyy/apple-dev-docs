@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the identifiers for multiple entities to the collection.
 
@@ -20,9 +21,13 @@ Adds the identifiers for multiple entities to the collection.
 mutating func append(contentsOf entities: [Entity])
 ```
 
+Available when `Entity` conforms to `AppEntity`.
+
 #### Discussion
 
-- Parameter: - entities: An array of entities. This method adds the identifier for each entity to the collection.
+- Parameter:
+
+  - entities: An array of entities. This method adds the identifier for each entity to the collection.
 
 This method adds the identifier for each entity to the collection, but doesn’t keep a reference to the actual entities.
 

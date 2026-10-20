@@ -1,7 +1,8 @@
 # backgroundColor()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func backgroundColor() -> String!
+```
+
+```objc
+- (NSString *) backgroundColor;
 ```
 
 

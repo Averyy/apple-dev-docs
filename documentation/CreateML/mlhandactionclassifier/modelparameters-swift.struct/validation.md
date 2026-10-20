@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dataset the hand action classifier task uses to evaluate the model that’s distinct from the training dataset.
 
@@ -20,21 +21,22 @@ var validation: MLHandActionClassifier.ModelParameters.ValidationData
 
 #### Discussion
 
-The task produces [`validationMetrics`](mlhandactionclassifier/validationmetrics.md) by evaluating the model with the [`validation`](mlhandactionclassifier/modelparameters-swift.struct/validation.md) dataset.
+The task produces [`validationMetrics`](../validationmetrics.md) by evaluating the model with the [`validation`](./validation.md) dataset.
 
 ## See Also
 
-- [var maximumIterations: Int](mlhandactionclassifier/modelparameters-swift.struct/maximumiterations.md)
+### Accessing hand action training parameters
+- [var maximumIterations: Int](./maximumiterations.md)
   The largest number of training iterations you allow the training session to use.
-- [var batchSize: Int](mlhandactionclassifier/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int](./batchsize.md)
   The number of videos the model training session uses for each training iteration.
-- [var targetFrameRate: Double](mlhandactionclassifier/modelparameters-swift.struct/targetframerate.md)
+- [var targetFrameRate: Double](./targetframerate.md)
   The number of video frames per second the hand action classifier model expects as its input at runtime.
-- [var predictionWindowSize: Int](mlhandactionclassifier/modelparameters-swift.struct/predictionwindowsize.md)
+- [var predictionWindowSize: Int](./predictionwindowsize.md)
   The number of video frames the model training session uses to train a hand action classifier.
-- [var algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType](mlhandactionclassifier/modelparameters-swift.struct/algorithm.md)
+- [var algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType](./algorithm.md)
   The algorithm the training session uses to create the hand action classifier.
-- [var augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/modelparameters-swift.struct/augmentationoptions.md)
+- [var augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions](./augmentationoptions.md)
   The variations the training session uses to add more variety to its training dataset.
 
 

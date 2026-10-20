@@ -1,7 +1,8 @@
 # share
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the shared object for this record.
 
@@ -10,7 +11,7 @@ A reference to the shared object for this record.
 
 ## Declaration
 
-```swift
+```
 attribute CKReference share;
 ```
 

@@ -1,7 +1,8 @@
 # NavigationPath
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased list of data representing the content of a navigation stack.
 
@@ -22,18 +23,18 @@ struct NavigationPath
 
 ## Mentions
 
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
+- [Understanding the navigation stack](./understanding-the-navigation-stack.md)
 
 #### Overview
 
-You can manage the state of a [`NavigationStack`](navigationstack.md) by initializing the stack with a binding to a collection of data. The stack stores data items in the collection for each view on the stack. You also can read and write the collection to observe and alter the stack’s state.
+You can manage the state of a [`NavigationStack`](./navigationstack.md) by initializing the stack with a binding to a collection of data. The stack stores data items in the collection for each view on the stack. You also can read and write the collection to observe and alter the stack’s state.
 
 When a stack displays views that rely on only one kind of data, you can use a standard collection, like an array, to hold the data. If you need to present different kinds of data in a single stack, use a navigation path instead. The path uses type erasure so you can manage a collection of heterogeneous elements. The path also provides the usual collection controls for adding, counting, and removing data elements.
 
-##### Serialize the Path
+##### Serialize the path
 
-When the values you present on the navigation stack conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, you can use the path’s [`codable`](navigationpath/codable.md) property to get a serializable representation of the path. Use that representation to save and restore the contents of the stack. For example, you can define an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) that handles serializing and deserializing the path:
+When the values you present on the navigation stack conform to the [`Codable`](../Swift/codable.md) protocol, you can use the path’s [`codable`](./navigationpath/codable.md) property to get a serializable representation of the path. Use that representation to save and restore the contents of the stack. For example, you can define an [`ObservableObject`](../Combine/observableobject.md) that handles serializing and deserializing the path:
 
 ```swift
 class MyModelObject: ObservableObject {
@@ -75,7 +76,7 @@ class MyModelObject: ObservableObject {
 }
 ```
 
-Then, using that object in your view, you can save the state of the navigation path when the [`Scene`](scene.md) enters the [`ScenePhase.background`](scenephase/background.md) state:
+Then, using that object in your view, you can save the state of the navigation path when the [`Scene`](./scene.md) enters the [`ScenePhase.background`](./scenephase/background.md) state:
 
 ```swift
 @StateObject private var pathState = MyModelObject()
@@ -96,39 +97,40 @@ var body: some View {
 ## Topics
 
 ### Creating a navigation path
-- [init()](navigationpath/init.md)
+- [init()](./navigationpath/init%28%29.md)
   Creates a new, empty navigation path.
-- [init(_:)](navigationpath/init(_:).md)
+- [init(_:)](./navigationpath/init%28_%29.md)
   Creates a new navigation path from a serializable version.
 ### Managing path contents
-- [var isEmpty: Bool](navigationpath/isempty.md)
+- [var isEmpty: Bool](./navigationpath/isempty.md)
   A Boolean that indicates whether this path is empty.
-- [var count: Int](navigationpath/count.md)
+- [var count: Int](./navigationpath/count.md)
   The number of elements in this path.
-- [func append(_:)](navigationpath/append(_:).md)
+- [func append(_:)](./navigationpath/append%28_%29.md)
   Appends a new codable value to the end of this path.
-- [func removeLast(Int)](navigationpath/removelast(_:).md)
+- [func removeLast(Int)](./navigationpath/removelast%28_%29.md)
   Removes values from the end of this path.
 ### Encoding a path
-- [var codable: NavigationPath.CodableRepresentation?](navigationpath/codable.md)
+- [var codable: NavigationPath.CodableRepresentation?](./navigationpath/codable.md)
   A value that describes the contents of this path in a serializable format.
-- [NavigationPath.CodableRepresentation](navigationpath/codablerepresentation.md)
+- [NavigationPath.CodableRepresentation](./navigationpath/codablerepresentation.md)
   A serializable representation of a navigation path.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct NavigationStack](navigationstack.md)
+### Stacking views in one column
+- [struct NavigationStack](./navigationstack.md)
   A view that displays a root view and enables you to present additional views over the root view.
-- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](view/navigationdestination(for:destination:).md)
+- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](./view/navigationdestination%28for,destination%29.md)
   Associates a destination view with a presented data type for use within a navigation stack.
-- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](view/navigationdestination(ispresented:destination:).md)
-  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](navigationstack.md).
-- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](view/navigationdestination(item:destination:).md)
+- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](./view/navigationdestination%28ispresented,destination%29.md)
+  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](./navigationstack.md).
+- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](./view/navigationdestination%28item,destination%29.md)
   Associates a destination view with a bound value for use within a navigation stack or navigation split view
 
 

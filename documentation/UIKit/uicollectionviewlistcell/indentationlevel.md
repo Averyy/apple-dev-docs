@@ -1,7 +1,8 @@
 # indentationLevel
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of indentation for the cell.
 
@@ -18,17 +19,22 @@ The level of indentation for the cell.
 var indentationLevel: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger indentationLevel;
+```
+
 #### Discussion
 
-The indentation level sets automatically when you use a hierarchical data source, such as an [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md).
+The indentation level sets automatically when you use a hierarchical data source, such as an [`NSDiffableDataSourceSectionSnapshot`](../nsdiffabledatasourcesectionsnapshot-swift.struct.md).
 
 ## See Also
 
-- [var indentationWidth: CGFloat](uicollectionviewlistcell/indentationwidth.md)
+### Customizing layout
+- [var indentationWidth: CGFloat](./indentationwidth.md)
   The width of an indentation level.
-- [var indentsAccessories: Bool](uicollectionviewlistcell/indentsaccessories.md)
+- [var indentsAccessories: Bool](./indentsaccessories.md)
   A Boolean value that detemines whether the cell indents accessories on the leading side.
-- [var separatorLayoutGuide: UILayoutGuide](uicollectionviewlistcell/separatorlayoutguide.md)
+- [var separatorLayoutGuide: UILayoutGuide](./separatorlayoutguide.md)
   A guide for laying out separators in relation to the primary content in the cell.
 
 

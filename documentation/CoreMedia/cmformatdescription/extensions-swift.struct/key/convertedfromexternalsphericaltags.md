@@ -1,7 +1,8 @@
 # convertedFromExternalSphericalTags
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the image description contains projected media data converted from an external format.
 

@@ -1,7 +1,8 @@
 # exportData(with:to:destinationDataType:offset:rowStrides:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func exportData(with cmdBuf: any MTLCommandBuffer, to buffer: any MTLBuffer, destinationDataType: MPSDataType, offset: Int, rowStrides: UnsafeMutablePointer<Int>?)
+```
+
+```objc
+- (void) exportDataWithCommandBuffer:(id<MTLCommandBuffer>) cmdBuf toBuffer:(id<MTLBuffer>) buffer destinationDataType:(MPSDataType) destinationDataType offset:(NSUInteger) offset rowStrides:(NSInteger *) rowStrides;
 ```
 
 

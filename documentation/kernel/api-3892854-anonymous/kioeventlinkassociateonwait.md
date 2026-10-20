@@ -1,14 +1,15 @@
 # kIOEventLinkAssociateOnWait
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```c
 kIOEventLinkAssociateOnWait = 0x00000001
 ```
 

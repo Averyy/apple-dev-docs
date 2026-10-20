@@ -1,7 +1,8 @@
 # new Annotation(location, factory, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a new annotation given its location and initialization options.
 
@@ -10,7 +11,7 @@ Creates a new annotation given its location and initialization options.
 
 ## Declaration
 
-```swift
+```
 constructor(
     location: CoordinateData | Place | SearchAutocompleteResult,
     factory: (
@@ -23,14 +24,14 @@ constructor(
 
 #### Return Value
 
-A [`Annotation`](annotation.md) instance.
+A [`Annotation`](../annotation.md) instance.
 
 #### Discussion
 
 The `factory` function returns a DOM element to represent the annotation. It can be a single element or a containing element with subelements. MapKit JS calls this function with the following two arguments:
 
-- `coordinate` ([`Coordinate`](coordinate.md)) — The annotation’s coordinate.
-- `options` ([`AnnotationConstructorOptions`](annotationconstructoroptions.md)) — You can use options you pass to the annotation constructor to add context to the custom annotation.
+- `coordinate` ([`Coordinate`](../coordinate.md)) — The annotation’s coordinate.
+- `options` ([`AnnotationConstructorOptions`](../annotationconstructoroptions.md)) — You can use options you pass to the annotation constructor to add context to the custom annotation.
 
 The `options` include `title` and `subtitle`, which appear in a callout if they’re present.
 
@@ -42,7 +43,8 @@ The `options` include `title` and `subtitle`, which appear in a callout if they�
 
 ## See Also
 
-- [interface AnnotationConstructorOptions](annotationconstructoroptions.md)
+### Creating an annotation
+- [interface AnnotationConstructorOptions](../annotationconstructoroptions.md)
   An object that contains options for creating annotation features.
 
 

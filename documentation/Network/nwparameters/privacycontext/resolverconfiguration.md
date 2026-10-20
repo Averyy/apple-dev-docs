@@ -1,7 +1,8 @@
 # NWParameters.PrivacyContext.ResolverConfiguration
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A DNS server configuration that uses TLS or HTTPS.
 
@@ -23,21 +24,22 @@ enum ResolverConfiguration
 ## Topics
 
 ### Resolver Types
-- [NWParameters.PrivacyContext.ResolverConfiguration.https(_:serverAddresses:)](nwparameters/privacycontext/resolverconfiguration/https(_:serveraddresses:).md)
+- [NWParameters.PrivacyContext.ResolverConfiguration.https(_:serverAddresses:)](./resolverconfiguration/https%28_,serveraddresses%29.md)
   A DNS-over-HTTPS resolver configuration.
-- [NWParameters.PrivacyContext.ResolverConfiguration.tls(_:serverAddresses:)](nwparameters/privacycontext/resolverconfiguration/tls(_:serveraddresses:).md)
+- [NWParameters.PrivacyContext.ResolverConfiguration.tls(_:serverAddresses:)](./resolverconfiguration/tls%28_,serveraddresses%29.md)
   A DNS-over-TLS resolver configuration.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requireEncryptedNameResolution(Bool, fallbackResolver: NWParameters.PrivacyContext.ResolverConfiguration?)](nwparameters/privacycontext/requireencryptednameresolution(_:fallbackresolver:).md)
+### Requiring Encrypted DNS
+- [func requireEncryptedNameResolution(Bool, fallbackResolver: NWParameters.PrivacyContext.ResolverConfiguration?)](./requireencryptednameresolution%28_,fallbackresolver%29.md)
   Requires that any DNS name resolution for connections associated with this context use encrypted transports, such as TLS or HTTPS.
 
 

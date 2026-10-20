@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the system address of the buffer’s storage allocation.
@@ -11,7 +12,7 @@ Gets the system address of the buffer’s storage allocation.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,13 @@ Gets the system address of the buffer’s storage allocation.
 func contents() -> UnsafeMutableRawPointer
 ```
 
+```objc
+- (void *) contents;
+```
+
 #### Return Value
 
-A pointer to the shared copy of the buffer data, or `NULL` for buffers allocated with a private resource storage mode ([`MTLStorageMode.private`](mtlstoragemode/private.md)).
+A pointer to the shared copy of the buffer data, or `NULL` for buffers allocated with a private resource storage mode ([`MTLStorageMode.private`](../mtlstoragemode/private.md)).
 
 #### Discussion
 

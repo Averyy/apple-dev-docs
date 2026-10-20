@@ -1,7 +1,8 @@
 # productId
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A unique identifier for a product, which you create in App Store Connect.
 
@@ -10,13 +11,14 @@ A unique identifier for a product, which you create in App Store Connect.
 
 ## Declaration
 
-```swift
+```
 string productId
 ```
 
 ## See Also
 
-- [type locale](locale.md)
+### Default message configuration
+- [type locale](./locale.md)
   A string that represents a locale short code.
 
 

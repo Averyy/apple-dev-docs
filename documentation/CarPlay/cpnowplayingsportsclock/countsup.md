@@ -1,7 +1,8 @@
 # countsUp
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If true, the timer is counting UP, so as to indicate an amount of time elapsed so far in this event.
 
@@ -14,6 +15,10 @@ If true, the timer is counting UP, so as to indicate an amount of time elapsed s
 
 ```swift
 var countsUp: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL countsUp;
 ```
 
 #### Discussion

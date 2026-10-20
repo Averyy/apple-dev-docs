@@ -1,7 +1,8 @@
 # scalerFeatures
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Mask of scaling features. 
 
@@ -10,7 +11,7 @@ Mask of scaling features.
 
 ## Declaration
 
-```swift
+```c
 IOOptionBits scalerFeatures;
 ```
 

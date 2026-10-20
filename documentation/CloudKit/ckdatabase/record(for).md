@@ -1,7 +1,8 @@
 # record(for:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches a specific record.
 
@@ -11,7 +12,7 @@ Fetches a specific record.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,7 +29,7 @@ The requested record.
 
 This method throws an error if the record cannot be found or if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 
-For information on a more convenient way to fetch specific records, see [`records(for:desiredKeys:)`](ckdatabase/records(for:desiredkeys:).md).
+For information on a more convenient way to fetch specific records, see [`records(for:desiredKeys:)`](./records%28for,desiredkeys%29.md).
 
 ## Parameters
 

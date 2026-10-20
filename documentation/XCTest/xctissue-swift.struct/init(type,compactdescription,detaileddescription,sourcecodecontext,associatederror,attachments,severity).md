@@ -1,7 +1,8 @@
 # init(type:compactDescription:detailedDescription:sourceCodeContext:associatedError:attachments:severity:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 ## Declaration
 

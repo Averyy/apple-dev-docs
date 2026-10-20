@@ -1,7 +1,8 @@
 # SubscriptionLocalizationV2CreateRequest.Data.Relationships.Version.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the version associated with this request.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the version associated with this request.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationV2CreateRequest.Data.Relationships.Version.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionVersions`
 
 
 ---

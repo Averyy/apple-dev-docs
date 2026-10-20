@@ -1,9 +1,10 @@
 # subGroupParameters
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The array of [`MERAWProcessingParameter`](merawprocessingparameter.md) objects in the sub group.
+The array of [`MERAWProcessingParameter`](../../merawprocessingparameter.md) objects in the sub group.
 
 **Availability**:
 - macOS 15.0+
@@ -12,6 +13,10 @@ The array of [`MERAWProcessingParameter`](merawprocessingparameter.md) objects i
 
 ```swift
 var subGroupParameters: [MERAWProcessingParameter] { get }
+```
+
+```objc
+@property (readonly) NSArray<MERAWProcessingParameter *> * subGroupParameters;
 ```
 
 

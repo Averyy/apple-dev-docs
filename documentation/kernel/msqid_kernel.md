@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct msqid_kernel {
     ...
 };
@@ -17,8 +17,8 @@ struct msqid_kernel {
 ## Topics
 
 ### Instance Properties
-- [label](msqid_kernel/1529571-label.md)
-- [u](msqid_kernel/1529545-u.md)
+- [label](./msqid_kernel/api-1529571-label.md)
+- [u](./msqid_kernel/api-1529545-u.md)
 
 
 ---

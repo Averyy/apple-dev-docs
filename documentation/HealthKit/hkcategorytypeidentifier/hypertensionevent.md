@@ -1,7 +1,8 @@
 # hypertensionEvent
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.2+
@@ -17,11 +18,16 @@
 static let hypertensionEvent: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHypertensionEvent;
+```
+
 ## See Also
 
-- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingaftermenopause.md)
+### Type Properties - generated
+- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](./bleedingaftermenopause.md)
   An identifier for samples that record bleeding after menopause.
-- [static let menopausalState: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menopausalstate.md)
+- [static let menopausalState: HKCategoryTypeIdentifier](./menopausalstate.md)
   An identifier for samples that record a person’s menopausal state.
 
 

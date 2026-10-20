@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for the `Double` instance.
 
@@ -14,6 +15,8 @@ A custom playground Quick Look for the `Double` instance.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: Double.customPlaygroundQuickLook will be removed in a future Swift version
+
 ## Declaration
 
 ```swift
@@ -22,7 +25,8 @@ var customPlaygroundQuickLook: _PlaygroundQuickLook { get }
 
 ## See Also
 
-- [init(NSNumber)](double/init(_:)-8kme5.md)
+### Deprecated
+- [init(NSNumber)](./init%28_%29-8kme5.md)
 
 
 ---

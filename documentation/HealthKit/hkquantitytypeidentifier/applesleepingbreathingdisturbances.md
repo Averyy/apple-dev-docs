@@ -1,7 +1,8 @@
 # appleSleepingBreathingDisturbances
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -17,9 +18,14 @@
 static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleSleepingBreathingDisturbances;
+```
+
 ## See Also
 
-- [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingwristtemperature.md)
+### Mindfulness and Sleep
+- [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](./applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
 
 

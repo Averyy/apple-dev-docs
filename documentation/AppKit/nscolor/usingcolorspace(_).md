@@ -1,17 +1,22 @@
 # usingColorSpace(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new color object representing the color of the current color object in the specified color space.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func usingColorSpace(_ space: NSColorSpace) -> NSColor?
+```
+
+```objc
+- (NSColor *) colorUsingColorSpace:(NSColorSpace *) space;
 ```
 
 #### Return Value
@@ -28,15 +33,17 @@ If the receiver’s color space is the same as that specified in `space`, this m
 
 ## See Also
 
-- [init(colorSpace: NSColorSpace, components: UnsafePointer<CGFloat>, count: Int)](nscolor/init(colorspace:components:count:).md)
+### Related Documentation
+- [init(colorSpace: NSColorSpace, components: UnsafePointer<CGFloat>, count: Int)](./init%28colorspace,components,count%29.md)
   Creates a color object from the specified components of the given color space.
-- [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](nscolor/blended(withfraction:of:).md)
+### Transforming existing color objects
+- [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](./blended%28withfraction,of%29.md)
   Creates a new color object whose component values are a weighted sum of the current color object and the specified color object’s.
-- [func withAlphaComponent(CGFloat) -> NSColor](nscolor/withalphacomponent(_:).md)
+- [func withAlphaComponent(CGFloat) -> NSColor](./withalphacomponent%28_%29.md)
   Creates a new color object that has the same color space and component values as the current color object, but the specified alpha component.
-- [func highlight(withLevel: CGFloat) -> NSColor?](nscolor/highlight(withlevel:).md)
+- [func highlight(withLevel: CGFloat) -> NSColor?](./highlight%28withlevel%29.md)
   Creates a new color object that represents a blend between the current color and the highlight color.
-- [func shadow(withLevel: CGFloat) -> NSColor?](nscolor/shadow(withlevel:).md)
+- [func shadow(withLevel: CGFloat) -> NSColor?](./shadow%28withlevel%29.md)
   Creates a new color object that represents a blend between the current color and the shadow color.
 
 

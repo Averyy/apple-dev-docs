@@ -1,7 +1,8 @@
 # initWithPhysicalMask
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a memory buffer with memory descriptor for that buffer.
 
@@ -10,11 +11,11 @@ Creates a memory buffer with memory descriptor for that buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithPhysicalMask(task_t inTask, IOOptionBits options, mach_vm_size_t capacity, mach_vm_address_t alignment, mach_vm_address_t physicalMask);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns an instance of class IOBufferMemoryDescriptor to be released by the caller, which will free the memory desriptor and associated buffer.
 
@@ -25,32 +26,47 @@ Added in OS X 10.5, this method allocates a memory buffer with a given size and 
 ## Parameters
 
 - `inTask`: The task the buffer will be mapped in. Pass NULL to create memory unmapped in any task (eg. for use as a DMA buffer).
-- `options`: Options for the allocation: kIODirectionOut, kIODirectionIn - set the direction of the I/O transfer. kIOMemoryPhysicallyContiguous - pass to request memory be physically contiguous. This option is heavily discouraged. The request may fail if memory is fragmented, may cause large amounts of paging activity, and may take a very long time to execute. kIOMemoryKernelUserShared - pass to request memory that will be mapped into both the kernel and client applications. kIOMapInhibitCache - allocate memory with inhibited cache setting. kIOMapWriteThruCache - allocate memory with writethru cache setting. kIOMapCopybackCache - allocate memory with copyback cache setting. kIOMapWriteCombineCache - allocate memory with writecombined cache setting.
+- `options`: Options for the allocation:
+
+  kIODirectionOut, kIODirectionIn - set the direction of the I/O transfer.
+
+  kIOMemoryPhysicallyContiguous - pass to request memory be physically contiguous. This option is heavily discouraged. The request may fail if memory is fragmented, may cause large amounts of paging activity, and may take a very long time to execute.
+
+  kIOMemoryKernelUserShared - pass to request memory that will be mapped into both the kernel and client applications.
+
+  kIOMapInhibitCache - allocate memory with inhibited cache setting.
+
+  kIOMapWriteThruCache - allocate memory with writethru cache setting.
+
+  kIOMapCopybackCache - allocate memory with copyback cache setting.
+
+  kIOMapWriteCombineCache - allocate memory with writecombined cache setting.
 - `capacity`: The number of bytes to allocate.
 - `alignment`: 
 - `physicalMask`: The buffer will be allocated with pages such that physical addresses will only have bits set present in physicalMask. For example, pass 0x00000000FFFFFFFFULL for a buffer to be accessed by hardware that has 32 address bits.
 
 ## See Also
 
-- [inTaskWithOptions](iobuffermemorydescriptor/1813824-intaskwithoptions.md)
+### Creating a Memory Buffer Descriptor
+- [inTaskWithOptions](./api-1813824-intaskwithoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ inTaskWithOptions](iobuffermemorydescriptor/1574847-intaskwithoptions.md)
+- [+ inTaskWithOptions](./api-1574847-intaskwithoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ inTaskWithOptions](iobuffermemorydescriptor/3516446-intaskwithoptions.md)
+- [+ inTaskWithOptions](./api-3516446-intaskwithoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [inTaskWithPhysicalMask](iobuffermemorydescriptor/1813825-intaskwithphysicalmask.md)
+- [inTaskWithPhysicalMask](./api-1813825-intaskwithphysicalmask.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ inTaskWithPhysicalMask](iobuffermemorydescriptor/1574843-intaskwithphysicalmask.md)
+- [+ inTaskWithPhysicalMask](./api-1574843-intaskwithphysicalmask.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ withOptions](iobuffermemorydescriptor/1574835-withoptions.md)
+- [+ withOptions](./api-1574835-withoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ withBytes](iobuffermemorydescriptor/1574834-withbytes.md)
+- [+ withBytes](./api-1574834-withbytes.md)
   Creates a buffer memory descriptor and fills it with the specified bytes.
-- [+ withCapacity](iobuffermemorydescriptor/1574841-withcapacity.md)
+- [+ withCapacity](./api-1574841-withcapacity.md)
   Creates a buffer memory descriptor and allocates enough bytes to meet the specified capacity.
-- [+ withCopy](iobuffermemorydescriptor/3074961-withcopy.md)
+- [+ withCopy](./api-3074961-withcopy.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- free](iobuffermemorydescriptor/3180456-free.md)
+- [- free](./api-3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

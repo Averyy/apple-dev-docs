@@ -1,7 +1,8 @@
 # termsAndConditionsURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 URL for business’ terms and conditions.
 

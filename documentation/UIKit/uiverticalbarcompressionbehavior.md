@@ -1,7 +1,8 @@
 # UIVerticalBarCompressionBehavior
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 How bars compress when different types of bars are hosted together and space is constrained.
 
@@ -18,31 +19,36 @@ How bars compress when different types of bars are hosted together and space is 
 enum UIVerticalBarCompressionBehavior
 ```
 
+```c
+enum UIVerticalBarCompressionBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Specifying a compression behavior
-- [UIVerticalBarCompressionBehavior.automatic](uiverticalbarcompressionbehavior/automatic.md)
+- [UIVerticalBarCompressionBehavior.automatic](./uiverticalbarcompressionbehavior/automatic.md)
   The automatic compression behavior.
-- [UIVerticalBarCompressionBehavior.prefersBarItems](uiverticalbarcompressionbehavior/prefersbaritems.md)
+- [UIVerticalBarCompressionBehavior.prefersBarItems](./uiverticalbarcompressionbehavior/prefersbaritems.md)
   A compression behavior that prefers keeping bar items visible.
-- [UIVerticalBarCompressionBehavior.prefersTabBar](uiverticalbarcompressionbehavior/preferstabbar.md)
+- [UIVerticalBarCompressionBehavior.prefersTabBar](./uiverticalbarcompressionbehavior/preferstabbar.md)
   A compression behavior that prefers keeping the tab bar visible.
 ### Initializers
-- [init?(rawValue: Int)](uiverticalbarcompressionbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiverticalbarcompressionbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum UIVerticalBarBehavior](uiverticalbarbehavior.md)
+### Configuring bars on the vertical axis
+- [enum UIVerticalBarBehavior](./uiverticalbarbehavior.md)
   A behavior that determines whether the vertical bar is used.
 
 

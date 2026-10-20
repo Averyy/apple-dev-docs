@@ -1,7 +1,8 @@
 # CXError.Code.invalidArgument
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The argument is invalid.
 
@@ -18,11 +19,16 @@ The argument is invalid.
 case invalidArgument
 ```
 
+```c
+CXErrorCodeInvalidArgument
+```
+
 ## See Also
 
-- [CXError.Code.unentitled](cxerror/code/unentitled.md)
+### Constants
+- [CXError.Code.unentitled](./unentitled.md)
   The caller doesn’t have the correct entitlement.
-- [CXError.Code.unknownError](cxerror/code/unknownerror.md)
+- [CXError.Code.unknownError](./unknownerror.md)
   An unknown error occurred.
 
 

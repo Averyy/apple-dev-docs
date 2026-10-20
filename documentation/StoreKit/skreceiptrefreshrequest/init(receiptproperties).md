@@ -1,18 +1,21 @@
 # init(receiptProperties:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a receipt refresh request with optional properties.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 7.0+ - Deprecated in 18.0
+- iPadOS 7.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.9+ - Deprecated in 15.0
+- tvOS - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Transaction.all and AppTransaction.shared.
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Creates a receipt refresh request with optional properties.
 init(receiptProperties properties: [String : Any]?)
 ```
 
+```objc
+- (instancetype) initWithReceiptProperties:(NSDictionary<NSString *,id> *) properties;
+```
+
 ## Mentions
 
-- [Restoring purchased products](restoring-purchased-products.md)
+- [Restoring purchased products](../restoring-purchased-products.md)
 
 #### Return Value
 
@@ -34,7 +41,9 @@ In the sandbox environment, you can initialize a receipt with any combination of
 
 ## Parameters
 
-- `properties`: In the test environment, the properties that the new receipt is to have. For keys, see Receipt Properties and Keys. In the production environment, set this parameter to `nil`.
+- `properties`: In the test environment, the properties that the new receipt is to have. For keys, see Receipt Properties and Keys.
+
+  In the production environment, set this parameter to `nil`.
 
 
 ---

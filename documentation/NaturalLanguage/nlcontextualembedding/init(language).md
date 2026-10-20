@@ -1,7 +1,8 @@
 # init(language:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contextual embedding from a language.
 
@@ -20,6 +21,10 @@ Creates a contextual embedding from a language.
 init?(language: NLLanguage)
 ```
 
+```objc
++ (NLContextualEmbedding *) contextualEmbeddingWithLanguage:(NLLanguage) language;
+```
+
 #### Discussion
 
 The language the framework uses to find the most recent embedding suitable for the value you specify.
@@ -30,9 +35,10 @@ The language the framework uses to find the most recent embedding suitable for t
 
 ## See Also
 
-- [convenience init?(modelIdentifier: String)](nlcontextualembedding/init(modelidentifier:).md)
+### Creating a contextual embedding
+- [convenience init?(modelIdentifier: String)](./init%28modelidentifier%29.md)
   Creates a contextual embedding from a model identifier.
-- [init?(script: NLScript)](nlcontextualembedding/init(script:).md)
+- [init?(script: NLScript)](./init%28script%29.md)
   Creates a contextual embedding from a script.
 
 

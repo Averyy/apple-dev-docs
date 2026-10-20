@@ -1,7 +1,8 @@
 # addComponent(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a component to the entity.
 
@@ -19,19 +20,24 @@ Adds a component to the entity.
 func addComponent(_ component: GKComponent)
 ```
 
+```objc
+- (void) addComponent:(GKComponent *) component;
+```
+
 #### Discussion
 
-You create components by subclassing [`GKEntity`](gkentity.md) to implement reusable behavior. Then, use this method to incorporate the behavior of a component class into that entity.
+You create components by subclassing [`GKEntity`](../gkentity.md) to implement reusable behavior. Then, use this method to incorporate the behavior of a component class into that entity.
 
-An entity’s [`components`](gkentity/components.md) list never has more than one instance of any component class—if the entity already contains a component of the same class as the `component` parameter, calling this method will replace that component.
+An entity’s [`components`](./components.md) list never has more than one instance of any component class—if the entity already contains a component of the same class as the `component` parameter, calling this method will replace that component.
 
 ## Parameters
 
-- `component`: An instance of a [`GKComponent`](gkcomponent.md) subclass.
+- `component`: An instance of a [`GKComponent`](../gkcomponent.md) subclass.
 
 ## See Also
 
-- [var components: [GKComponent]](gkentity/components.md)
+### Managing an Entity’s List of Components
+- [var components: [GKComponent]](./components.md)
   The entity’s list of components.
 
 

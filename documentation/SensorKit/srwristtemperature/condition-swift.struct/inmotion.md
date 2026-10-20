@@ -1,7 +1,8 @@
 # inMotion
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The watch being in motion impacts the accuracy.
 
@@ -16,11 +17,16 @@ The watch being in motion impacts the accuracy.
 static var inMotion: SRWristTemperature.Condition { get }
 ```
 
+```c
+SRWristTemperatureConditionInMotion
+```
+
 ## See Also
 
-- [static var offWrist: SRWristTemperature.Condition](srwristtemperature/condition-swift.struct/offwrist.md)
+### Conditions
+- [static var offWrist: SRWristTemperature.Condition](./offwrist.md)
   The watch being off the wrist impacts the accuracy.
-- [static var onCharger: SRWristTemperature.Condition](srwristtemperature/condition-swift.struct/oncharger.md)
+- [static var onCharger: SRWristTemperature.Condition](./oncharger.md)
   The watch being on the charger impacts the accuracy.
 
 

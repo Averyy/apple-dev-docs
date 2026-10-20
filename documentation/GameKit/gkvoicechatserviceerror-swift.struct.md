@@ -1,14 +1,17 @@
 # GKVoiceChatServiceError
 
 **Framework**: GameKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,42 +22,43 @@ struct GKVoiceChatServiceError
 ## Topics
 
 ### Type Properties
-- [static var audioUnavailableError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/audiounavailableerror.md)
-- [static var clientMissingRequiredMethodsError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/clientmissingrequiredmethodserror.md)
-- [static var errorDomain: String](gkvoicechatserviceerror-swift.struct/errordomain.md)
-- [static var internalError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/internalerror.md)
-- [static var invalidCallIDError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/invalidcalliderror.md)
-- [static var invalidParameterError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/invalidparametererror.md)
-- [static var methodCurrentlyInvalidError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/methodcurrentlyinvaliderror.md)
-- [static var networkConfigurationError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/networkconfigurationerror.md)
-- [static var noRemotePacketsError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/noremotepacketserror.md)
-- [static var outOfMemoryError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/outofmemoryerror.md)
-- [static var remoteParticipantBusyError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipantbusyerror.md)
-- [static var remoteParticipantCancelledError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipantcancellederror.md)
-- [static var remoteParticipantDeclinedInviteError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipantdeclinedinviteerror.md)
-- [static var remoteParticipantHangupError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipanthanguperror.md)
-- [static var remoteParticipantResponseInvalidError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipantresponseinvaliderror.md)
-- [static var unableToConnectError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/unabletoconnecterror.md)
-- [static var uninitializedClientError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/uninitializedclienterror.md)
-- [static var unsupportedRemoteVersionError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/unsupportedremoteversionerror.md)
+- [static var audioUnavailableError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/audiounavailableerror.md)
+- [static var clientMissingRequiredMethodsError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/clientmissingrequiredmethodserror.md)
+- [static var errorDomain: String](./gkvoicechatserviceerror-swift.struct/errordomain.md)
+- [static var internalError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/internalerror.md)
+- [static var invalidCallIDError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/invalidcalliderror.md)
+- [static var invalidParameterError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/invalidparametererror.md)
+- [static var methodCurrentlyInvalidError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/methodcurrentlyinvaliderror.md)
+- [static var networkConfigurationError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/networkconfigurationerror.md)
+- [static var noRemotePacketsError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/noremotepacketserror.md)
+- [static var outOfMemoryError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/outofmemoryerror.md)
+- [static var remoteParticipantBusyError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/remoteparticipantbusyerror.md)
+- [static var remoteParticipantCancelledError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/remoteparticipantcancellederror.md)
+- [static var remoteParticipantDeclinedInviteError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/remoteparticipantdeclinedinviteerror.md)
+- [static var remoteParticipantHangupError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/remoteparticipanthanguperror.md)
+- [static var remoteParticipantResponseInvalidError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/remoteparticipantresponseinvaliderror.md)
+- [static var unableToConnectError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/unabletoconnecterror.md)
+- [static var uninitializedClientError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/uninitializedclienterror.md)
+- [static var unsupportedRemoteVersionError: GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/unsupportedremoteversionerror.md)
 ### Enumerations
-- [GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/code.md)
+- [GKVoiceChatServiceError.Code](./gkvoicechatserviceerror-swift.struct/code.md)
   Error codes for the voice chat service error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GKSessionError](gksessionerror-swift.struct.md)
-- [struct GKGameSessionError](gkgamesessionerror.md)
+### Deprecated structures
+- [struct GKSessionError](./gksessionerror-swift.struct.md)
+- [struct GKGameSessionError](./gkgamesessionerror.md)
   Error codes for the game session domain.
 
 

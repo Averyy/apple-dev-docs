@@ -1,7 +1,8 @@
 # mutableCopy()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a mutable copy of an existing graphics path.
 
@@ -10,7 +11,7 @@ Creates a mutable copy of an existing graphics path.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Creates a mutable copy of an existing graphics path.
 func mutableCopy() -> CGMutablePath?
 ```
 
+```c
+extern CGMutablePathRefCGPathCreateMutableCopy(CGPathRef path);
+```
+
 #### Return Value
 
 A new, mutable, copy of the specified path. You are responsible for releasing this object.
 
 #### Discussion
 
-You can modify a mutable graphics path by calling the various path geometry functions, such as [`CGPathAddArc`](cgpathaddarc.md), [`CGPathAddLineToPoint`](cgpathaddlinetopoint.md), and [`CGPathMoveToPoint`](cgpathmovetopoint.md).
+You can modify a mutable graphics path by calling the various path geometry functions, such as [`CGPathAddArc`](../cgpathaddarc.md), [`CGPathAddLineToPoint`](../cgpathaddlinetopoint.md), and [`CGPathMoveToPoint`](../cgpathmovetopoint.md).
 
 ## See Also
 
-- [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](cgpath/mutablecopy(using:).md)
+### Copying a Graphics Path
+- [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](./mutablecopy%28using%29.md)
   Creates a mutable copy of a graphics path transformed by a transformation matrix.
 
 

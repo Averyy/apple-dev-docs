@@ -1,7 +1,8 @@
 # init(conversionSettings:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new object with format conversion settings.
 
@@ -15,6 +16,10 @@ Creates a new object with format conversion settings.
 
 ```swift
 init(conversionSettings: [AVCaptionSettingsKey : Any])
+```
+
+```objc
+- (instancetype) initWithConversionSettings:(NSDictionary<NSString *,id> *) conversionSettings;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # callStackTree
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The application call stack tree associated with this crash.
 
@@ -20,7 +21,7 @@ let callStackTree: CallStackTree
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UnitElectricResistance
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for electric resistance.
 
@@ -20,65 +21,70 @@ A unit of measure for electric resistance.
 class UnitElectricResistance
 ```
 
+```objc
+@interface NSUnitElectricResistance : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitElectricResistance`](unitelectricresistance.md) to represent specific quantities of electric resistance using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitElectricResistance`](./unitelectricresistance.md) to represent specific quantities of electric resistance using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Electric Resistance
 
 Electric resistance is the difficulty of passing an electric current through a conductor. The SI unit for electric resistance is the ohm (Ω), which is derived as the electric resistance that produces one ampere of current between two points in conductor with one volt of electric potential difference (1Ω = 1V/1A).
 
-The [`UnitElectricResistance`](unitelectricresistance.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`ohms`](unitelectricresistance/ohms.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitElectricResistance`](./unitelectricresistance.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`ohms`](./unitelectricresistance/ohms.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Megaohms | [`megaohms`](unitelectricresistance/megaohms.md) | MΩ | `1000000.0` |
-| Kiloohms | [`kiloohms`](unitelectricresistance/kiloohms.md) | kΩ | `1000.0` |
-| Ohms | [`ohms`](unitelectricresistance/ohms.md) | Ω | `1.0` |
-| Milliohms | [`milliohms`](unitelectricresistance/milliohms.md) | mΩ | `0.001` |
-| Microohms | [`microohms`](unitelectricresistance/microohms.md) | µΩ | `0.000001` |
+| Megaohms | [`megaohms`](./unitelectricresistance/megaohms.md) | MΩ | `1000000.0` |
+| Kiloohms | [`kiloohms`](./unitelectricresistance/kiloohms.md) | kΩ | `1000.0` |
+| Ohms | [`ohms`](./unitelectricresistance/ohms.md) | Ω | `1.0` |
+| Milliohms | [`milliohms`](./unitelectricresistance/milliohms.md) | mΩ | `0.001` |
+| Microohms | [`microohms`](./unitelectricresistance/microohms.md) | µΩ | `0.000001` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var megaohms: UnitElectricResistance](unitelectricresistance/megaohms.md)
+- [class var megaohms: UnitElectricResistance](./unitelectricresistance/megaohms.md)
   The megaohms unit of electric resistance.
-- [class var kiloohms: UnitElectricResistance](unitelectricresistance/kiloohms.md)
+- [class var kiloohms: UnitElectricResistance](./unitelectricresistance/kiloohms.md)
   The kiloohms unit of electric resistance.
-- [class var ohms: UnitElectricResistance](unitelectricresistance/ohms.md)
+- [class var ohms: UnitElectricResistance](./unitelectricresistance/ohms.md)
   The ohms unit of electric resistance.
-- [class var milliohms: UnitElectricResistance](unitelectricresistance/milliohms.md)
+- [class var milliohms: UnitElectricResistance](./unitelectricresistance/milliohms.md)
   The milliohms unit of electric resistance.
-- [class var microohms: UnitElectricResistance](unitelectricresistance/microohms.md)
+- [class var microohms: UnitElectricResistance](./unitelectricresistance/microohms.md)
   The microohms unit of electric resistance.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitElectricCharge](unitelectriccharge.md)
+### Electricity
+- [class UnitElectricCharge](./unitelectriccharge.md)
   A unit of measure for electric charge.
-- [class UnitElectricCurrent](unitelectriccurrent.md)
+- [class UnitElectricCurrent](./unitelectriccurrent.md)
   A unit of measure for electric current.
-- [class UnitElectricPotentialDifference](unitelectricpotentialdifference.md)
+- [class UnitElectricPotentialDifference](./unitelectricpotentialdifference.md)
   A unit of measure for electric potential difference.
 
 

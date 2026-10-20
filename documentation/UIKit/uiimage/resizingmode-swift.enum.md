@@ -1,16 +1,17 @@
 # UIImage.ResizingMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the possible resizing modes for an image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -19,43 +20,48 @@ Constants that specify the possible resizing modes for an image.
 enum ResizingMode
 ```
 
+```c
+enum UIImageResizingMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIImage.ResizingMode.tile](uiimage/resizingmode-swift.enum/tile.md)
+- [UIImage.ResizingMode.tile](./resizingmode-swift.enum/tile.md)
   The image is tiled when it is resized. In other words, the interior region of the original image will be repeated to fill in the interior region of the newly resized image.
-- [UIImage.ResizingMode.stretch](uiimage/resizingmode-swift.enum/stretch.md)
+- [UIImage.ResizingMode.stretch](./resizingmode-swift.enum/stretch.md)
   The image is stretched when it is resized. In other words, the interior region of the original image will be scaled to fill in the interior region of the newly resized imaged.
 ### Initializers
-- [init?(rawValue: Int)](uiimage/resizingmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./resizingmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var imageOrientation: UIImage.Orientation](uiimage/imageorientation.md)
+### Accessing image attributes
+- [var imageOrientation: UIImage.Orientation](./imageorientation.md)
   The orientation of the receiver’s image.
-- [UIImage.Orientation](uiimage/orientation.md)
+- [UIImage.Orientation](./orientation.md)
   Constants that specify the intended display orientation for an image.
-- [var flipsForRightToLeftLayoutDirection: Bool](uiimage/flipsforrighttoleftlayoutdirection.md)
+- [var flipsForRightToLeftLayoutDirection: Bool](./flipsforrighttoleftlayoutdirection.md)
   A Boolean value that indicates whether the image flips in a right-to-left layout.
-- [var resizingMode: UIImage.ResizingMode](uiimage/resizingmode-swift.property.md)
+- [var resizingMode: UIImage.ResizingMode](./resizingmode-swift.property.md)
   The resizing mode of the image.
-- [var duration: TimeInterval](uiimage/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The time interval for displaying an animated image.
-- [var capInsets: UIEdgeInsets](uiimage/capinsets.md)
+- [var capInsets: UIEdgeInsets](./capinsets.md)
   The end-cap insets.
-- [var alignmentRectInsets: UIEdgeInsets](uiimage/alignmentrectinsets.md)
+- [var alignmentRectInsets: UIEdgeInsets](./alignmentrectinsets.md)
   The alignment metadata for positioning the image during layout.
-- [var isSymbolImage: Bool](uiimage/issymbolimage.md)
+- [var isSymbolImage: Bool](./issymbolimage.md)
   A Boolean value that indicates whether the image is a symbol.
 
 

@@ -1,18 +1,23 @@
 # CGPSConverterMessageCallback
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Passes messages generated during a PostScript conversion process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 typealias CGPSConverterMessageCallback = (UnsafeMutableRawPointer?, CFString) -> Void
+```
+
+```c
+typedef void (*)(void *, const struct __CFString *) CGPSConverterMessageCallback;
 ```
 
 #### Discussion
@@ -21,7 +26,7 @@ There are several kinds of message that might be sent during a conversion proces
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](./cgpsconverter/init%28info,callbacks,options%29.md).
 - `message`: A string containing the message from the PostScript conversion process.
 
 

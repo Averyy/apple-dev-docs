@@ -1,7 +1,8 @@
 # AnchoringComponent.ImageAnchoringSource
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines the source of image anchoring target based on how it is created.
 
@@ -22,20 +23,21 @@ struct ImageAnchoringSource
 ## Topics
 
 ### Initializers
-- [init(URL, physicalSize: SIMD2<Float>)](anchoringcomponent/imageanchoringsource/init(_:physicalsize:).md)
+- [init(URL, physicalSize: SIMD2<Float>)](./imageanchoringsource/init%28_,physicalsize%29.md)
   Creates the image anchoring source from image file URL.
-- [init(group: String, name: String)](anchoringcomponent/imageanchoringsource/init(group:name:).md)
+- [init(group: String, name: String)](./imageanchoringsource/init%28group,name%29.md)
   Creates the image anchoring source by group and name in AR Resources.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
+### Image and object tracking
+- [AnchoringComponent.ObjectAnchoringSource](./objectanchoringsource.md)
   Defines the source of object anchoring target based on how it is created.
 
 

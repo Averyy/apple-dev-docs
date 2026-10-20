@@ -1,7 +1,8 @@
 # doubleValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measurement value, represented as a double-precision floating-point number.
 
@@ -20,9 +21,14 @@ The measurement value, represented as a double-precision floating-point number.
 var doubleValue: Double { get }
 ```
 
+```objc
+@property (readonly) double doubleValue;
+```
+
 ## See Also
 
-- [var unit: Unit](nsmeasurement/unit.md)
+### Accessing Unit and Value
+- [var unit: Unit](./unit.md)
   The unit of measure.
 
 

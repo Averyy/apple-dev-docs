@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pose of this input device, or `nil` if this input device has no pose.
 

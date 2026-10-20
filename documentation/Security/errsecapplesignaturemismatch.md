@@ -1,7 +1,8 @@
 # errSecAppleSignatureMismatch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A signature mismatch has occurred.
 
@@ -18,6 +19,10 @@ A signature mismatch has occurred.
 
 ```swift
 var errSecAppleSignatureMismatch: OSStatus { get }
+```
+
+```c
+errSecAppleSignatureMismatch
 ```
 
 

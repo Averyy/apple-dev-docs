@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The options that Metal used to compile this function.
@@ -20,19 +21,24 @@ The options that Metal used to compile this function.
 var options: MTLFunctionOptions { get }
 ```
 
+```objc
+@property (readonly) MTLFunctionOptions options;
+```
+
 ## See Also
 
-- [var device: any MTLDevice](mtlfunction/device.md)
+### Identifying shader functions
+- [var device: any MTLDevice](./device.md)
   The device object that created the shader function.
-- [var label: String?](mtlfunction/label.md)
+- [var label: String?](./label.md)
   A string that identifies the shader function.
-- [var functionType: MTLFunctionType](mtlfunction/functiontype.md)
+- [var functionType: MTLFunctionType](./functiontype.md)
   The shader function’s type.
-- [var name: String](mtlfunction/name.md)
+- [var name: String](./name.md)
   The function’s name.
-- [enum MTLFunctionType](mtlfunctiontype.md)
+- [enum MTLFunctionType](../mtlfunctiontype.md)
   The type of a top-level Metal Shading Language (MSL) function.
-- [struct MTLFunctionOptions](mtlfunctionoptions.md)
+- [struct MTLFunctionOptions](../mtlfunctionoptions.md)
   Options that define how Metal compiles a GPU function.
 
 

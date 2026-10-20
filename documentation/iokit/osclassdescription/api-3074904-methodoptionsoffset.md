@@ -1,7 +1,8 @@
 # methodOptionsOffset
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var methodOptionsOffset: UInt32
+```
+
+```c
+uint32_t methodOptionsOffset;
 ```
 
 

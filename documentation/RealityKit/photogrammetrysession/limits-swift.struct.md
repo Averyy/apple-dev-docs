@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Limits
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Data structure to observe hardware limits for reconstruction.  Note that these are specific to the device on which the `PhotogrammetrySession` is run.
 
@@ -20,16 +21,16 @@ struct Limits
 ## Topics
 
 ### Instance Properties
-- [var maximumInputImageDimension: Int](photogrammetrysession/limits-swift.struct/maximuminputimagedimension.md)
+- [var maximumInputImageDimension: Int](./limits-swift.struct/maximuminputimagedimension.md)
   The maximum allowed dimension (either height or width) of input images that can be ingested by the reconstruction session. If images larger than this are provided, they will be ignored and an `.invalidSample` message will be output.
-- [var maximumNumberOfInputImages: Int](photogrammetrysession/limits-swift.struct/maximumnumberofinputimages.md)
+- [var maximumNumberOfInputImages: Int](./limits-swift.struct/maximumnumberofinputimages.md)
   Returns the maximum number of input images or samples that the session can use for reconstruction. If more than this number are provided, any in excess of the limit will be ignored and an `.invalidSample` message for the sample will be output.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

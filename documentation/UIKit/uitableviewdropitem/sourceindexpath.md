@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The index path of the item in the table view, if any.
@@ -18,13 +19,18 @@ The index path of the item in the table view, if any.
 var sourceIndexPath: IndexPath? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSIndexPath * sourceIndexPath;
+```
+
 #### Discussion
 
 If the item originated from the table view, this property contains the item’s original index path.
 
 ## See Also
 
-- [var previewSize: CGSize](uitableviewdropitem/previewsize.md)
+### Getting the item information
+- [var previewSize: CGSize](./previewsize.md)
   The size of the drag item’s preview.
 
 

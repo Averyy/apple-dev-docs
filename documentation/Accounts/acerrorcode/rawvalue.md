@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Accounts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw integer value of the error code.
 

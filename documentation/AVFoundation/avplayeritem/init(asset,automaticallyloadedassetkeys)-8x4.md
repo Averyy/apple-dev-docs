@@ -1,7 +1,8 @@
 # init(asset:automaticallyLoadedAssetKeys:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player item with the specified asset and the asset keys to automatically load.
 
@@ -20,29 +21,34 @@ Creates a player item with the specified asset and the asset keys to automatical
 init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)
 ```
 
+```objc
+- (instancetype) initWithAsset:(AVAsset *) asset automaticallyLoadedAssetKeys:(NSArray<NSString *> *) automaticallyLoadedAssetKeys;
+```
+
 #### Return Value
 
 An initialized instance of `AVPlayerItem`.
 
 #### Discussion
 
-The value of each key in `automaticallyLoadedAssetKeys` will automatically be loaded by the underlying [`AVAsset`](avasset.md) before the player item achieves the status [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md); i.e. when the item is ready to play, the value returned by invoking the [`asset`](avplayeritem/asset.md) property’s [`statusOfValue(forKey:error:)`](avasynchronouskeyvalueloading/statusofvalue(forkey:error:).md) method will be one of the terminal status values, either [`AVKeyValueStatus.loaded`](avkeyvaluestatus/loaded.md), [`AVKeyValueStatus.failed`](avkeyvaluestatus/failed.md), or [`AVKeyValueStatus.cancelled`](avkeyvaluestatus/cancelled.md).
+The value of each key in `automaticallyLoadedAssetKeys` will automatically be loaded by the underlying [`AVAsset`](../avasset.md) before the player item achieves the status [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md); i.e. when the item is ready to play, the value returned by invoking the [`asset`](./asset.md) property’s [`statusOfValue(forKey:error:)`](../avasynchronouskeyvalueloading/statusofvalue%28forkey,error%29.md) method will be one of the terminal status values, either [`AVKeyValueStatus.loaded`](../avkeyvaluestatus/loaded.md), [`AVKeyValueStatus.failed`](../avkeyvaluestatus/failed.md), or [`AVKeyValueStatus.cancelled`](../avkeyvaluestatus/cancelled.md).
 
 ## Parameters
 
-- `asset`: An instance of [`AVAsset`](avasset.md).
-- `automaticallyLoadedAssetKeys`: An array of strings, each representing a property defined by [`AVAsset`](avasset.md).
+- `asset`: An instance of [`AVAsset`](../avasset.md).
+- `automaticallyLoadedAssetKeys`: An array of strings, each representing a property defined by [`AVAsset`](../avasset.md).
 
 ## See Also
 
-- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
+### Creating a player item
+- [convenience init(url: URL)](./init%28url%29-1xrtk.md)
   Creates a player item with a specified URL.
-- [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
+- [convenience init(asset: AVAsset)](./init%28asset%29-87rjl.md)
   Creates a player item for a specified asset.
-- [convenience init(asset: any AVAsset & Sendable)](avplayeritem/init(asset:)-1nme9.md)
-- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md)
+- [convenience init(asset: any AVAsset & Sendable)](./init%28asset%29-1nme9.md)
+- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-5czjh.md)
   Creates a player item for the asset, and automatically loads values for the specified properties.
-- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-85hal.md)
+- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-85hal.md)
 
 
 ---

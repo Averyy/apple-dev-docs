@@ -1,7 +1,8 @@
 # EAWiFiUnconfiguredAccessoryBrowserState.searching
 
 **Framework**: External Accessory  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The browser is actively searching for unconfigured accessory.
 
@@ -19,13 +20,18 @@ The browser is actively searching for unconfigured accessory.
 case searching
 ```
 
+```c
+EAWiFiUnconfiguredAccessoryBrowserStateSearching
+```
+
 ## See Also
 
-- [EAWiFiUnconfiguredAccessoryBrowserState.wiFiUnavailable](eawifiunconfiguredaccessorybrowserstate/wifiunavailable.md)
+### States
+- [EAWiFiUnconfiguredAccessoryBrowserState.wiFiUnavailable](./wifiunavailable.md)
   Wi-Fi is unavailable, typically because the user has placed the device in Airplane Mode or explicitly turned off Wi-Fi.
-- [EAWiFiUnconfiguredAccessoryBrowserState.stopped](eawifiunconfiguredaccessorybrowserstate/stopped.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.stopped](./stopped.md)
   The browser is not actively searching for unconfigured accessories.
-- [EAWiFiUnconfiguredAccessoryBrowserState.configuring](eawifiunconfiguredaccessorybrowserstate/configuring.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.configuring](./configuring.md)
   The browser is actively configuring an accessory.
 
 

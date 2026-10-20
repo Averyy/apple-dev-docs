@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the object detector model was able to calculate metrics.
 
@@ -20,7 +21,8 @@ Your metrics may be invalid if you attempt to perform evaluation on images with 
 
 ## See Also
 
-- [var error: (any Error)?](mlobjectdetectormetrics/error.md)
+### Handling errors
+- [var error: (any Error)?](./error.md)
   The underlying error present when the metrics are invalid.
 
 

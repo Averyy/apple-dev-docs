@@ -1,7 +1,8 @@
 # startPage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first page that the print formatter lays out.
 
@@ -17,13 +18,18 @@ The index of the first page that the print formatter lays out.
 var startPage: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger startPage;
+```
+
 #### Discussion
 
-The value is a zero-based index. You can set the starting page of a print formatter by assigning an index to this property or by passing one as the second argument of the [`addPrintFormatter(_:startingAtPageAt:)`](uiprintpagerenderer/addprintformatter(_:startingatpageat:).md) method of [`UIPrintPageRenderer`](uiprintpagerenderer.md).
+The value is a zero-based index. You can set the starting page of a print formatter by assigning an index to this property or by passing one as the second argument of the [`addPrintFormatter(_:startingAtPageAt:)`](../uiprintpagerenderer/addprintformatter%28_,startingatpageat%29.md) method of [`UIPrintPageRenderer`](../uiprintpagerenderer.md).
 
 ## See Also
 
-- [var pageCount: Int](uiprintformatter/pagecount.md)
+### Managing pagination
+- [var pageCount: Int](./pagecount.md)
   The number of pages to print.
 
 

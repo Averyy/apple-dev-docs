@@ -1,15 +1,17 @@
 # Push to Talk Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.push-to-talk` (Push to Talk)
+- **Type**: boolean
 
 
 ---

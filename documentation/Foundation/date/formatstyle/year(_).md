@@ -1,7 +1,8 @@
 # year(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the date format style to use the specified year format style.
 
@@ -26,9 +27,9 @@ A date format style modified to include the specified year format style.
 
 #### Discussion
 
-Possible values of [`Date.FormatStyle.Symbol.Year`](date/formatstyle/symbol/year.md) include [`twoDigits`](date/formatstyle/symbol/year/twodigits.md), [`padded(_:)`](date/formatstyle/symbol/year/padded(_:).md), [`relatedGregorian(minimumLength:)`](date/formatstyle/symbol/year/relatedgregorian(minimumlength:).md), and [`extended(minimumLength:)`](date/formatstyle/symbol/year/extended(minimumlength:).md).
+Possible values of [`Date.FormatStyle.Symbol.Year`](./symbol/year.md) include [`twoDigits`](./symbol/year/twodigits.md), [`padded(_:)`](./symbol/year/padded%28_%29.md), [`relatedGregorian(minimumLength:)`](./symbol/year/relatedgregorian%28minimumlength%29.md), and [`extended(minimumLength:)`](./symbol/year/extended%28minimumlength%29.md).
 
-This example shows a variety of [`Date.FormatStyle.Symbol.Year`](date/formatstyle/symbol/year.md) formats applied to a date:
+This example shows a variety of [`Date.FormatStyle.Symbol.Year`](./symbol/year.md) formats applied to a date:
 
 ```swift
 let meetingDate = Date() // Feb 9, 2021 at 3:00 PM
@@ -37,9 +38,9 @@ meetingDate.formatted(Date.FormatStyle().year(.twoDigits)) // 21
 meetingDate.formatted(Date.FormatStyle().year(.padded(6))) // 002021
 ```
 
-If you don’t provide a format, the [`defaultDigits`](date/formatstyle/symbol/day/defaultdigits.md) static variable is the default format.
+If you don’t provide a format, the [`defaultDigits`](./symbol/day/defaultdigits.md) static variable is the default format.
 
-For more information about formatting dates, see [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see [`Date.FormatStyle`](../formatstyle.md).
 
 ## Parameters
 
@@ -47,21 +48,22 @@ For more information about formatting dates, see [`Date.FormatStyle`](date/forma
 
 ## See Also
 
-- [func day(Date.FormatStyle.Symbol.Day) -> Date.FormatStyle](date/formatstyle/day(_:).md)
+### Specifying the Date Format
+- [func day(Date.FormatStyle.Symbol.Day) -> Date.FormatStyle](./day%28_%29.md)
   Modifies the date format style to use the specified day format style.
-- [func dayOfYear(Date.FormatStyle.Symbol.DayOfYear) -> Date.FormatStyle](date/formatstyle/dayofyear(_:).md)
+- [func dayOfYear(Date.FormatStyle.Symbol.DayOfYear) -> Date.FormatStyle](./dayofyear%28_%29.md)
   Modifies the date format style to use the specified day of the year format style.
-- [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle](date/formatstyle/era(_:).md)
+- [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle](./era%28_%29.md)
   Modifies the date format style to use the specified era format style.
-- [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle](date/formatstyle/month(_:).md)
+- [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle](./month%28_%29.md)
   Modifies the date format style to use the specified month format style.
-- [func quarter(Date.FormatStyle.Symbol.Quarter) -> Date.FormatStyle](date/formatstyle/quarter(_:).md)
+- [func quarter(Date.FormatStyle.Symbol.Quarter) -> Date.FormatStyle](./quarter%28_%29.md)
   Modifies the date format style to use the specified quarter format style.
-- [func week(Date.FormatStyle.Symbol.Week) -> Date.FormatStyle](date/formatstyle/week(_:).md)
+- [func week(Date.FormatStyle.Symbol.Week) -> Date.FormatStyle](./week%28_%29.md)
   Modifies the date format style to use the specified week format style.
-- [func weekday(Date.FormatStyle.Symbol.Weekday) -> Date.FormatStyle](date/formatstyle/weekday(_:).md)
+- [func weekday(Date.FormatStyle.Symbol.Weekday) -> Date.FormatStyle](./weekday%28_%29.md)
   Modifies the date format style to use the specified weekday format style.
-- [Date.FormatStyle.DateStyle](date/formatstyle/datestyle.md)
+- [Date.FormatStyle.DateStyle](./datestyle.md)
   Type that defines date styles varied in length or components included.
 
 

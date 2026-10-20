@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Translation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to stop all ongoing work for the translation session.
 

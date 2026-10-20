@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 This method gets called by the session when deferred start has finished running.
@@ -19,13 +20,18 @@ This method gets called by the session when deferred start has finished running.
 func sessionDidRunDeferredStart(_ session: AVCaptureSession)
 ```
 
+```objc
+- (void) sessionDidRunDeferredStart:(AVCaptureSession *) session;
+```
+
 ## Parameters
 
-- `session`: The [`AVCaptureSession`](avcapturesession.md) instance that runs the deferred start.
+- `session`: The [`AVCaptureSession`](../avcapturesession.md) instance that runs the deferred start.
 
 ## See Also
 
-- [func sessionWillRunDeferredStart(AVCaptureSession)](avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart(_:).md)
+### Responding to deferred start events
+- [func sessionWillRunDeferredStart(AVCaptureSession)](./sessionwillrundeferredstart%28_%29.md)
   This method gets called by the session when deferred start is about to run.
 
 

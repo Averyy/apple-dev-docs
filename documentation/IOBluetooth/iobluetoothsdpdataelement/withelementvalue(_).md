@@ -1,17 +1,22 @@
 # withElementValue(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new IOBluetoothSDPDataElement with the given value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withElementValue(_ element: NSObject!) -> Self!
+```
+
+```objc
++ (instancetype) withElementValue:(NSObject *) element;
 ```
 
 #### Return Value

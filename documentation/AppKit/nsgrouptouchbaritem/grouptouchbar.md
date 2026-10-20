@@ -1,7 +1,8 @@
 # groupTouchBar
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bar that holds this group’s items.
 
@@ -17,6 +18,10 @@ A bar that holds this group’s items.
 var groupTouchBar: NSTouchBar { get set }
 ```
 
+```objc
+@property (strong) NSTouchBar * groupTouchBar;
+```
+
 #### Discussion
 
 This bar can be configured in the same way as all other bars.
@@ -25,7 +30,8 @@ By default, this bar is empty.
 
 ## See Also
 
-- [var groupUserInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](nsgrouptouchbaritem/groupuserinterfacelayoutdirection.md)
+### Configuring groups
+- [var groupUserInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](./groupuserinterfacelayoutdirection.md)
   The user interface direction that controls the layout order of the items.
 
 

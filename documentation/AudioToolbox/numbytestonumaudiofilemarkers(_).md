@@ -1,22 +1,27 @@
 # NumBytesToNumAudioFileMarkers(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 A macro that returns the number of audio file markers represented by a specified number of bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func NumBytesToNumAudioFileMarkers(_ inNumBytes: Int) -> Int
+```
+
+```c
+static size_t NumBytesToNumAudioFileMarkers(size_t inNumBytes);
 ```
 
 #### Return Value
@@ -25,7 +30,7 @@ The number of audio file markers that can be contained in the specified number o
 
 #### Discussion
 
-Use this convenience macro when you call the [`AudioFileGetProperty(_:_:_:_:)`](audiofilegetproperty(_:_:_:_:).md) function with the [`kAudioFilePropertyMarkerList`](kaudiofilepropertymarkerlist.md) property to calculate the number of markers that will be returned.
+Use this convenience macro when you call the [`AudioFileGetProperty(_:_:_:_:)`](./audiofilegetproperty%28_,_,_,_%29.md) function with the [`kAudioFilePropertyMarkerList`](./kaudiofilepropertymarkerlist.md) property to calculate the number of markers that will be returned.
 
 ## Parameters
 
@@ -33,11 +38,13 @@ Use this convenience macro when you call the [`AudioFileGetProperty(_:_:_:_:)`](
 
 ## See Also
 
-- [func AudioFileGetProperty(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilegetproperty(_:_:_:_:).md)
+### Related Documentation
+- [func AudioFileGetProperty(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilegetproperty%28_,_,_,_%29.md)
   Gets the value of an audio file property.
-- [func NextAudioFileRegion(UnsafePointer<AudioFileRegion>) -> UnsafeMutablePointer<AudioFileRegion>](nextaudiofileregion(_:).md)
+### Parsing Audio File Content
+- [func NextAudioFileRegion(UnsafePointer<AudioFileRegion>) -> UnsafeMutablePointer<AudioFileRegion>](./nextaudiofileregion%28_%29.md)
   Finds the next audio file region in a region list.
-- [func NumAudioFileMarkersToNumBytes(Int) -> Int](numaudiofilemarkerstonumbytes(_:).md)
+- [func NumAudioFileMarkersToNumBytes(Int) -> Int](./numaudiofilemarkerstonumbytes%28_%29.md)
   Returns the number of bytes corresponding to a specified number of audio file markers.
 
 

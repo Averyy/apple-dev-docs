@@ -1,7 +1,8 @@
 # fillExtendedPixels()
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the extended pixels of the pixel buffer. This method replicates the edge pixels to fill the entire extended region of the image.
 

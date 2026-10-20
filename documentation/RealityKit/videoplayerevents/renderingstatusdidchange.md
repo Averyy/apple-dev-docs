@@ -1,7 +1,8 @@
 # VideoPlayerEvents.RenderingStatusDidChange
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,17 +21,17 @@ struct RenderingStatusDidChange
 ## Topics
 
 ### Instance Properties
-- [let currentStatus: VideoPlayerComponent.RenderingStatus](videoplayerevents/renderingstatusdidchange/currentstatus.md)
+- [let currentStatus: VideoPlayerComponent.RenderingStatus](./renderingstatusdidchange/currentstatus.md)
   Current rendering status
-- [let previousStatus: VideoPlayerComponent.RenderingStatus](videoplayerevents/renderingstatusdidchange/previousstatus.md)
+- [let previousStatus: VideoPlayerComponent.RenderingStatus](./renderingstatusdidchange/previousstatus.md)
   Previous rendering status
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

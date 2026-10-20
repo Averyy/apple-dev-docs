@@ -1,7 +1,8 @@
 # sceneAccessoryUserInfo
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional user info object, provided when creating the `UISceneAccessory` for this scene accessory.
 
@@ -16,9 +17,13 @@ An optional user info object, provided when creating the `UISceneAccessory` for 
 var sceneAccessoryUserInfo: Any? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) id sceneAccessoryUserInfo;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../../presenting-content-on-a-connected-display.md)
 
 #### Discussion
 

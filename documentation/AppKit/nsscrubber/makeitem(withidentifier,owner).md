@@ -1,7 +1,8 @@
 # makeItem(withIdentifier:owner:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates or returns a reusable item object with the specified identifier.
 
@@ -14,9 +15,13 @@ Creates or returns a reusable item object with the specified identifier.
 func makeItem(withIdentifier itemIdentifier: NSUserInterfaceItemIdentifier, owner: Any?) -> NSScrubberItemView?
 ```
 
+```objc
+- (NSScrubberItemView *) makeItemWithIdentifier:(NSUserInterfaceItemIdentifier) itemIdentifier owner:(id) owner;
+```
+
 #### Return Value
 
-A valid [`NSScrubberItemView`](nsscrubberitemview.md) object.
+A valid [`NSScrubberItemView`](../nsscrubberitemview.md) object.
 
 ## Parameters
 
@@ -25,9 +30,10 @@ A valid [`NSScrubberItemView`](nsscrubberitemview.md) object.
 
 ## See Also
 
-- [func register(AnyClass?, forItemIdentifier: NSUserInterfaceItemIdentifier)](nsscrubber/register(_:foritemidentifier:)-2rb69.md)
+### Creating scrubber items
+- [func register(AnyClass?, forItemIdentifier: NSUserInterfaceItemIdentifier)](./register%28_,foritemidentifier%29-2rb69.md)
   Registers a class for the scrubber to use when it creates new items.
-- [func register(NSNib?, forItemIdentifier: NSUserInterfaceItemIdentifier)](nsscrubber/register(_:foritemidentifier:)-6jye0.md)
+- [func register(NSNib?, forItemIdentifier: NSUserInterfaceItemIdentifier)](./register%28_,foritemidentifier%29-6jye0.md)
   Registers a nib file for the scrubber to use when it creates new items in the scrubber.
 
 

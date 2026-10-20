@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of errors that may have occurred when either calculating or deleting storage.
 
@@ -16,6 +17,10 @@ An array of errors that may have occurred when either calculating or deleting st
 
 ```swift
 var errors: [any Error] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSError *> * errors;
 ```
 
 

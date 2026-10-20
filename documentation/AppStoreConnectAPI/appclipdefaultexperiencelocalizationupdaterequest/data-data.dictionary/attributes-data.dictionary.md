@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceLocalizationUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the Default App Clip Experience Localizations resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the Default App Clip Experience Localizatio
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceLocalizationUpdateRequest.Data.Attributes
 ```
 

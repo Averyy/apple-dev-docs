@@ -1,7 +1,8 @@
 # maxCount
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of managed objects the relationship can reference.
 
@@ -10,7 +11,7 @@ The maximum number of managed objects the relationship can reference.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The maximum number of managed objects the relationship can reference.
 var maxCount: Int { get set }
 ```
 
+```objc
+@property NSUInteger maxCount;
+```
+
 #### Discussion
 
-If you declare a relationship attribute as optional when defining your entities, the framework only enforces [`minCount`](nsrelationshipdescription/mincount.md) and [`maxCount`](nsrelationshipdescription/maxcount.md) when that attribute is not `nil`.
+If you declare a relationship attribute as optional when defining your entities, the framework only enforces [`minCount`](./mincount.md) and [`maxCount`](./maxcount.md) when that attribute is not `nil`.
 
 The default value is `0`.
 
 ## See Also
 
-- [var isToMany: Bool](nsrelationshipdescription/istomany.md)
+### Configuring Cardinality
+- [var isToMany: Bool](./istomany.md)
   Returns a Boolean value that indicates whether the relationship can contain many managed objects.
-- [var minCount: Int](nsrelationshipdescription/mincount.md)
+- [var minCount: Int](./mincount.md)
   The minimum number of managed objects the relationship can reference.
 
 

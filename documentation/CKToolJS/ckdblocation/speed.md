@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instantaneous speed of the device in meters per second.
 
@@ -10,7 +11,7 @@ The instantaneous speed of the device in meters per second.
 
 ## Declaration
 
-```swift
+```
 attribute Double? speed;
 ```
 

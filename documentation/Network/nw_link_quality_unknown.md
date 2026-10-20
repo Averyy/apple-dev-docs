@@ -1,7 +1,8 @@
 # nw_link_quality_unknown
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var nw_link_quality_unknown: nw_link_quality_t { get }
+```
+
+```c
+nw_link_quality_unknown
 ```
 
 

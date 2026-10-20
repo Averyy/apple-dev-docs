@@ -1,17 +1,22 @@
 # mainWindow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s main window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var mainWindow: NSWindow? { get }
+```
+
+```objc
+@property (weak, readonly, nullable) NSWindow * mainWindow;
 ```
 
 #### Discussion
@@ -20,19 +25,21 @@ The value in this property is `nil` when the app’s storyboard or nib file has 
 
 ## See Also
 
-- [var isMainWindow: Bool](nswindow/ismainwindow.md)
+### Related Documentation
+- [var isMainWindow: Bool](../nswindow/ismainwindow.md)
   A Boolean value that indicates whether the window is the application’s main window.
-- [var keyWindow: NSWindow?](nsapplication/keywindow.md)
+### Managing App Windows
+- [var keyWindow: NSWindow?](./keywindow.md)
   The window that currently receives keyboard events.
-- [func window(withWindowNumber: Int) -> NSWindow?](nsapplication/window(withwindownumber:).md)
+- [func window(withWindowNumber: Int) -> NSWindow?](./window%28withwindownumber%29.md)
   Returns the window corresponding to the specified window number.
-- [var windows: [NSWindow]](nsapplication/windows.md)
+- [var windows: [NSWindow]](./windows.md)
   An array of the app’s window objects.
-- [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](nsapplication/enumeratewindows(options:using:).md)
+- [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratewindows%28options,using%29.md)
   Executes a block for each of the app’s windows.
-- [NSApplication.WindowListOptions](nsapplication/windowlistoptions.md)
+- [NSApplication.WindowListOptions](./windowlistoptions.md)
   This constant indicates a window ordering.
-- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
+- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](./makewindowsperform%28_,inorder%29.md)
   Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 
 

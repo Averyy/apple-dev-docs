@@ -1,7 +1,8 @@
 # init(name:bundleIdentifier:)
 
 **Framework**: InputMethodKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a server object from property list information contained in the provided bundle.
 
@@ -14,13 +15,17 @@ Creates and returns a server object from property list information contained in 
 init!(name: String!, bundleIdentifier: String!)
 ```
 
+```objc
+- (id) initWithName:(NSString *) name bundleIdentifier:(NSString *) bundleIdentifier;
+```
+
 #### Return Value
 
 An initialized server object.
 
 #### Discussion
 
-This method examines the `Info.plist` file  for the entries shown in the table below. The class names are loaded, but no classes are instantiated. Additionally, an [`NSConnection`](https://developer.apple.com/documentation/foundation/nsconnection) object is allocated and registered using the input method connection name supplied in the `Info.plist` file.
+This method examines the `Info.plist` file  for the entries shown in the table below. The class names are loaded, but no classes are instantiated. Additionally, an [`NSConnection`](../../Foundation/nsconnection.md) object is allocated and registered using the input method connection name supplied in the `Info.plist` file.
 
 | Key | Value |
 | --- | --- |
@@ -37,7 +42,8 @@ This method examines the `Info.plist` file  for the entries shown in the table b
 
 ## See Also
 
-- [init!(name: String!, controllerClass: AnyClass!, delegateClass: AnyClass!)](imkserver/init(name:controllerclass:delegateclass:).md)
+### Initializing a Server Object
+- [init!(name: String!, controllerClass: AnyClass!, delegateClass: AnyClass!)](./init%28name,controllerclass,delegateclass%29.md)
   Creates and returns a server object initialized with the provided parameters.
 
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates an error in XML parsing.
 
@@ -20,15 +21,20 @@ Indicates an error in XML parsing.
 class let errorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NSXMLParserErrorDomain;
+```
+
 #### Discussion
 
 Used by `NSError`.
 
 ## See Also
 
-- [XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.enum.md)
+### Constants
+- [XMLParser.ExternalEntityResolvingPolicy](./externalentityresolvingpolicy-swift.enum.md)
   Defines the external entity resolving policy used by an `NSXMLParser` instance.
-- [XMLParser.ErrorCode](xmlparser/errorcode.md)
+- [XMLParser.ErrorCode](./errorcode.md)
   The following error codes are defined by `NSXMLParser`. For error codes not listed here, see the `<libxml/xmlerror.h>` header file.
 
 

@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A required IP version that disables all other versions for a connection.
 
@@ -22,7 +23,8 @@ var version: NWProtocolIP.Options.Version { get set }
 
 ## See Also
 
-- [NWProtocolIP.Options.Version](nwprotocolip/options/version-swift.enum.md)
+### Selecting an IP Version
+- [NWProtocolIP.Options.Version](./version-swift.enum.md)
   IP versions to require on connections and listeners.
 
 

@@ -1,7 +1,8 @@
 # kSecPropertyTypeURL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a key whose value is a URL.
 
@@ -12,6 +13,10 @@ Specifies a key whose value is a URL.
 
 ```swift
 let kSecPropertyTypeURL: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeURL;
 ```
 
 

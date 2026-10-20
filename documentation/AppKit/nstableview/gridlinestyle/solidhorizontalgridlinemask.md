@@ -1,12 +1,13 @@
 # solidHorizontalGridLineMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that horizontal grid lines should be displayed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Specifies that horizontal grid lines should be displayed.
 static var solidHorizontalGridLineMask: NSTableView.GridLineStyle { get }
 ```
 
+```c
+NSTableViewSolidHorizontalGridLineMask
+```
+
 ## See Also
 
-- [static var solidVerticalGridLineMask: NSTableView.GridLineStyle](nstableview/gridlinestyle/solidverticalgridlinemask.md)
+### Constants
+- [static var solidVerticalGridLineMask: NSTableView.GridLineStyle](./solidverticalgridlinemask.md)
   Specifies that vertical grid lines should be displayed.
-- [static var dashedHorizontalGridLineMask: NSTableView.GridLineStyle](nstableview/gridlinestyle/dashedhorizontalgridlinemask.md)
+- [static var dashedHorizontalGridLineMask: NSTableView.GridLineStyle](./dashedhorizontalgridlinemask.md)
   Specifies that the horizontal grid lines should be drawn dashed.
 
 

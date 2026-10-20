@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate for the add payment view controller.
 
@@ -17,9 +18,14 @@ The object that acts as the delegate for the add payment view controller.
 weak var delegate: (any PKAddPaymentPassViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PKAddPaymentPassViewControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol PKAddPaymentPassViewControllerDelegate](pkaddpaymentpassviewcontrollerdelegate.md)
+### Working with add payment view controllers
+- [protocol PKAddPaymentPassViewControllerDelegate](../pkaddpaymentpassviewcontrollerdelegate.md)
   Methods that let the system prompt you for an add payment request, and inform you when a request has succeeded or failed.
 
 

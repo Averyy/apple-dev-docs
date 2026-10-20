@@ -1,7 +1,8 @@
 # date
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time the crash occurred.
 
@@ -18,13 +19,18 @@ The date and time the crash occurred.
 var date: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * date;
+```
+
 ## See Also
 
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+### Determining the event type
+- [SACrashDetectionEvent.Response](./response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
-- [var location: CLLocation?](sacrashdetectionevent/location.md)
+- [var location: CLLocation?](./location.md)
   The longitude and latitude where the crash detection occurred.
-- [var response: SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.property.md)
+- [var response: SACrashDetectionEvent.Response](./response-swift.property.md)
   An indication of whether the system attempted to call an Emergency SOS provider.
 
 

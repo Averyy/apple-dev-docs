@@ -1,7 +1,8 @@
 # isIndeterminate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of initialization of `totalCount`. If `totalCount` is `nil`, the value will be `true`.
 

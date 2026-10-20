@@ -1,7 +1,8 @@
 # MDQueryGetTypeID()
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier of all MDQuery instances
 
@@ -12,6 +13,10 @@ Returns the type identifier of all MDQuery instances
 
 ```swift
 func MDQueryGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID MDQueryGetTypeID(void);
 ```
 
 

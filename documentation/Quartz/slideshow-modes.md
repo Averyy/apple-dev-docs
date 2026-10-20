@@ -1,24 +1,26 @@
 # Slideshow Modes
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 The kind of items in the slideshow.
 
 ## Topics
 
 ### Constants
-- [let IKSlideshowModeImages: String](ikslideshowmodeimages.md)
+- [let IKSlideshowModeImages: String](./ikslideshowmodeimages.md)
   All items in the slideshow are images.
-- [let IKSlideshowModePDF: String](ikslideshowmodepdf.md)
+- [let IKSlideshowModePDF: String](./ikslideshowmodepdf.md)
   All items in the slideshow are PDF documents.
-- [let IKSlideshowModeOther: String](ikslideshowmodeother.md)
+- [let IKSlideshowModeOther: String](./ikslideshowmodeother.md)
   There are a mixture of items in the slideshow (image, PDF, text, HTML, and so on).
 
 ## See Also
 
-- [Bundle Identifiers](bundle-identifiers.md)
+### Constants
+- [Bundle Identifiers](./bundle-identifiers.md)
   Identifiers for exporting slideshow items to an application.
-- [Slideshow Option Keys](slideshow-option-keys.md)
+- [Slideshow Option Keys](./slideshow-option-keys.md)
   Keys for slideshow options.
 
 

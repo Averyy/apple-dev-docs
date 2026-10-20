@@ -1,7 +1,8 @@
 # users
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The users to include in a report.
 

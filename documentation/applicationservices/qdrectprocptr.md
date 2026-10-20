@@ -1,7 +1,8 @@
 # QDRectProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDRectProcPtr = (GrafVerb, UnsafePointer<Rect>?) -> Void
+```
+
+```c
+typedef void (*QDRectProcPtr)(GrafVerb verb, const Rect *r);
 ```
 
 

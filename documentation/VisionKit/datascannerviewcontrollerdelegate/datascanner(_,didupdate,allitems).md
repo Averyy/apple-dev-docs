@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Responds when the data scanner updates the geometry of an item it recognizes.
@@ -20,7 +21,7 @@ func dataScanner(_ dataScanner: DataScannerViewController, didUpdate updatedItem
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 #### Discussion
 
@@ -32,11 +33,18 @@ To identify an item in the `updatedItems` and `allItems` parameters, use the ite
 - `updatedItems`: The items with geometry that the data scanner changes.
 - `allItems`: The current items that the data scanner tracks. Text items appear in the reading order of the language and region.
 
+## Default Implementations
+
+### DataScannerViewControllerDelegate Implementations
+- [func dataScanner(DataScannerViewController, didUpdate: [RecognizedItem], allItems: [RecognizedItem])](./datascanner%28_,didupdate,allitems%29-9qhkj.md)
+  A default, blank implementation for when the data scanner updates the geometry of an item it recognizes.
+
 ## See Also
 
-- [func dataScanner(DataScannerViewController, didAdd: [RecognizedItem], allItems: [RecognizedItem])](datascannerviewcontrollerdelegate/datascanner(_:didadd:allitems:).md)
+### Customizing highlighting
+- [func dataScanner(DataScannerViewController, didAdd: [RecognizedItem], allItems: [RecognizedItem])](./datascanner%28_,didadd,allitems%29.md)
   Responds when the data scanner starts recognizing an item.
-- [func dataScanner(DataScannerViewController, didRemove: [RecognizedItem], allItems: [RecognizedItem])](datascannerviewcontrollerdelegate/datascanner(_:didremove:allitems:).md)
+- [func dataScanner(DataScannerViewController, didRemove: [RecognizedItem], allItems: [RecognizedItem])](./datascanner%28_,didremove,allitems%29.md)
   Responds when the data scanner stops recognizing an item.
 
 

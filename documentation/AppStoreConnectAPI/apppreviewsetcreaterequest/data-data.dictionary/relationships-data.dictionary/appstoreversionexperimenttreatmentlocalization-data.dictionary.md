@@ -1,21 +1,24 @@
 # AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryPlacementCreateRequest`](../../../appassetlibraryplacementcreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary/data-data.dictionary.md)
+- [object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data](./appstoreversionexperimenttreatmentlocalization-data.dictionary/data-data.dictionary.md)
   The request body you use to create an app preview set.
 
 ## Properties
@@ -24,9 +27,10 @@ object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTr
 
 ## See Also
 
-- [object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionLocalization](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
+### Objects
+- [object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionLocalization](./appstoreversionlocalization-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary.md)
+- [object AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization](./appcustomproductpagelocalization-data.dictionary.md)
 
 
 ---

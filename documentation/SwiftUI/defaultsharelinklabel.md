@@ -1,7 +1,8 @@
 # DefaultShareLinkLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default label used for a share link.
 
@@ -22,12 +23,12 @@ struct DefaultShareLinkLabel
 
 #### Overview
 
-You don’t use this type directly. Instead, [`ShareLink`](sharelink.md) uses it automatically depending on how you create a share link.
+You don’t use this type directly. Instead, [`ShareLink`](./sharelink.md) uses it automatically depending on how you create a share link.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

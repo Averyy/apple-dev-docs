@@ -1,7 +1,8 @@
 # allowsKeyedCoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver supports keyed coding of objects.
 
@@ -20,18 +21,24 @@ A Boolean value that indicates whether the receiver supports keyed coding of obj
 var allowsKeyedCoding: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL allowsKeyedCoding;
+```
+
 #### Discussion
 
-[`false`](https://developer.apple.com/documentation/swift/false) by default. Concrete subclasses that support keyed coding, such as `NSKeyedArchiver`, need to override this property to return [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](../../Swift/false.md) by default. Concrete subclasses that support keyed coding, such as `NSKeyedArchiver`, need to override this property to return [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [Archives and Serializations Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
-- [func containsValue(forKey: String) -> Bool](nscoder/containsvalue(forkey:).md)
+### Related Documentation
+- [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
+### Inspecting a Coder
+- [func containsValue(forKey: String) -> Bool](./containsvalue%28forkey%29.md)
   Returns a Boolean value that indicates whether an encoded value is available for a string.
-- [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](nscoder/decodingfailurepolicy-swift.property.md)
+- [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy-swift.property.md)
   The action the coder should take when decoding fails.
-- [NSCoder.DecodingFailurePolicy](nscoder/decodingfailurepolicy-swift.enum.md)
+- [NSCoder.DecodingFailurePolicy](./decodingfailurepolicy-swift.enum.md)
   Policies describing the action the coder should take when encountering decode failures.
 
 

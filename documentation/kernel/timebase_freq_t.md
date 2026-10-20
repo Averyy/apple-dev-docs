@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct timebase_freq_t {
     ...
 };
@@ -17,8 +17,8 @@ struct timebase_freq_t {
 ## Topics
 
 ### Instance Properties
-- [timebase_den](timebase_freq_t/1553701-timebase_den.md)
-- [timebase_num](timebase_freq_t/1553639-timebase_num.md)
+- [timebase_den](./timebase_freq_t/api-1553701-timebase_den.md)
+- [timebase_num](./timebase_freq_t/api-1553639-timebase_num.md)
 
 
 ---

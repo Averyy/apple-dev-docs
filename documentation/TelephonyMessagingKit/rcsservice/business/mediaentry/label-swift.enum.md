@@ -1,7 +1,8 @@
 # RCSService.Business.MediaEntry.Label
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing the label for media.
 
@@ -17,30 +18,31 @@ enum Label
 ## Topics
 
 ### Determining label type
-- [RCSService.Business.MediaEntry.Label.icon](rcsservice/business/mediaentry/label-swift.enum/icon.md)
+- [RCSService.Business.MediaEntry.Label.icon](./label-swift.enum/icon.md)
   Icon label.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let label: RCSService.Business.MediaEntry.Label](rcsservice/business/mediaentry/label-swift.property.md)
+### Accessing media properties
+- [let label: RCSService.Business.MediaEntry.Label](./label-swift.property.md)
   Label for media.
-- [let media: RCSService.Business.Media](rcsservice/business/mediaentry/media.md)
+- [let media: RCSService.Business.Media](./media.md)
   The media contained in this entry.
-- [RCSService.Business.Media](rcsservice/business/media.md)
+- [RCSService.Business.Media](../media.md)
   Structure containing media information provided by a business.
-- [let contentType: RCSService.Business.MediaEntry.ContentType](rcsservice/business/mediaentry/contenttype-swift.property.md)
+- [let contentType: RCSService.Business.MediaEntry.ContentType](./contenttype-swift.property.md)
   Content type for media.
-- [RCSService.Business.MediaEntry.ContentType](rcsservice/business/mediaentry/contenttype-swift.enum.md)
+- [RCSService.Business.MediaEntry.ContentType](./contenttype-swift.enum.md)
   Content type for media.
 
 

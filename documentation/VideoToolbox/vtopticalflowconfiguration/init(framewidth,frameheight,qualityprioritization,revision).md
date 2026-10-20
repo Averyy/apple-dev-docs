@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:qualityPrioritization:revision:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init?(frameWidth: Int, frameHeight: Int, qualityPrioritization: VTOpticalFlowConfiguration.QualityPrioritization, revision: VTOpticalFlowConfiguration.Revision)
+```
+
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight qualityPrioritization:(VTOpticalFlowConfigurationQualityPrioritization) qualityPrioritization revision:(VTOpticalFlowConfigurationRevision) revision;
 ```
 
 ## Parameters

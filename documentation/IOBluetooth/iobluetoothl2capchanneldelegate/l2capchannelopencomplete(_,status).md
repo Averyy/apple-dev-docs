@@ -1,15 +1,20 @@
 # l2capChannelOpenComplete(_:status:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func l2capChannelOpenComplete(_ l2capChannel: IOBluetoothL2CAPChannel!, status error: IOReturn)
+```
+
+```objc
+- (void) l2capChannelOpenComplete:(IOBluetoothL2CAPChannel *) l2capChannel status:(IOReturn) error;
 ```
 
 

@@ -1,23 +1,28 @@
 # MIDITimeStamp
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The time on the host clock when the event occurred.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias MIDITimeStamp = UInt64
+```
+
+```c
+typedef UInt64 MIDITimeStamp;
 ```
 
 #### Discussion
@@ -26,14 +31,15 @@ The system determines the timestamp using `mach_absolute_time()`.
 
 ## See Also
 
-- [func MIDIPacketNext(UnsafePointer<MIDIPacket>) -> UnsafeMutablePointer<MIDIPacket>](midipacketnext(_:).md)
+### Packet list management
+- [func MIDIPacketNext(UnsafePointer<MIDIPacket>) -> UnsafeMutablePointer<MIDIPacket>](./midipacketnext%28_%29.md)
   Advances a MIDI packet pointer to the next packet in a package list.
-- [struct MIDIPacket](midipacket.md)
+- [struct MIDIPacket](./midipacket.md)
   A collection of simultaneous MIDI events.
-- [struct MIDIPacketList](midipacketlist.md)
+- [struct MIDIPacketList](./midipacketlist.md)
   A list of MIDI events the system sends to or receives from an endpoint.
-- [struct UnsafeMutableMIDIPacketListPointer](unsafemutablemidipacketlistpointer.md)
-- [struct UnsafeMutableMIDIPacketPointer](unsafemutablemidipacketpointer.md)
+- [struct UnsafeMutableMIDIPacketListPointer](./unsafemutablemidipacketlistpointer.md)
+- [struct UnsafeMutableMIDIPacketPointer](./unsafemutablemidipacketpointer.md)
 
 
 ---

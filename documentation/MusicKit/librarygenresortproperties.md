@@ -1,7 +1,8 @@
 # LibraryGenreSortProperties
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Genre properties your app uses to sort results for a library request.
 
@@ -23,9 +24,9 @@ protocol LibraryGenreSortProperties
 ## Topics
 
 ### Instance Properties
-- [var libraryAddedDate: Date?](librarygenresortproperties/libraryaddeddate.md)
+- [var libraryAddedDate: Date?](./librarygenresortproperties/libraryaddeddate.md)
   The date when the user added the genre to the library.
-- [var name: String](librarygenresortproperties/name.md)
+- [var name: String](./librarygenresortproperties/name.md)
   The localized name of the genre.
 
 

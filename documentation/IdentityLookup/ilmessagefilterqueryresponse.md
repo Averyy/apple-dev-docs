@@ -1,7 +1,8 @@
 # ILMessageFilterQueryResponse
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A response to a message filter query request.
 
@@ -17,35 +18,40 @@ A response to a message filter query request.
 class ILMessageFilterQueryResponse
 ```
 
+```objc
+@interface ILMessageFilterQueryResponse : NSObject
+```
+
 ## Topics
 
 ### Specifying the Action
-- [var action: ILMessageFilterAction](ilmessagefilterqueryresponse/action.md)
+- [var action: ILMessageFilterAction](./ilmessagefilterqueryresponse/action.md)
   The action the Message Filter app extension recommends that the system perform on the queried message.
-- [var subAction: ILMessageFilterSubAction](ilmessagefilterqueryresponse/subaction.md)
+- [var subAction: ILMessageFilterSubAction](./ilmessagefilterqueryresponse/subaction.md)
   The subaction the Message Filter app extension recommends that the system perform on the queried message.
 ### Initializers
-- [init?(coder: NSCoder)](ilmessagefilterqueryresponse/init(coder:).md)
+- [init?(coder: NSCoder)](./ilmessagefilterqueryresponse/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class ILNetworkResponse](ilnetworkresponse.md)
+### Responses
+- [class ILNetworkResponse](./ilnetworkresponse.md)
   A response to an HTTPS network request performed on behalf of a Message Filter app extension.
-- [enum ILMessageFilterAction](ilmessagefilteraction.md)
+- [enum ILMessageFilterAction](./ilmessagefilteraction.md)
   Responds to a received message with a filter action.
 
 

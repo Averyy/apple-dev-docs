@@ -1,7 +1,8 @@
 # hasItemsConforming(to:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether at least one item conforms to at least one of the specified uniform type identifiers.
 
@@ -16,6 +17,12 @@ Indicates whether at least one item conforms to at least one of the specified un
 
 ```swift
 func hasItemsConforming(to contentTypes: [UTType]) -> Bool
+```
+
+**Other overloads**:
+
+```swift
+func hasItemsConforming(to types: [String]) -> Bool
 ```
 
 #### Return Value

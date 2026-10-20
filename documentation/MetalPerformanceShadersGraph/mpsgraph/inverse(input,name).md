@@ -1,7 +1,8 @@
 # inverse(input:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the inverse of an input tensor.
 
@@ -19,9 +20,13 @@ Computes the inverse of an input tensor.
 func inverse(input inputTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) inverseOfTensor:(MPSGraphTensor *) inputTensor name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object containing the inverse of the input tensor.
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object containing the inverse of the input tensor.
 
 #### Discussion
 

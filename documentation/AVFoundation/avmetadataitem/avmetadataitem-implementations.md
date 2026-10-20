@@ -1,11 +1,12 @@
 # AVMetadataItem Implementations
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(propertiesOfMetadataItem: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](avmetadataitem/init(propertiesofmetadataitem:valueloadinghandler:).md)
+- [init(propertiesOfMetadataItem: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](./init%28propertiesofmetadataitem,valueloadinghandler%29.md)
   Creates a metadata item whose value loads on an on-demand basis only.
 
 

@@ -1,7 +1,8 @@
 # mpsndarray()
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return an mpsndarray object will copy contents if the contents are not stored in an MPS ndarray.
 
@@ -17,6 +18,10 @@ Return an mpsndarray object will copy contents if the contents are not stored in
 
 ```swift
 func mpsndarray() -> MPSNDArray
+```
+
+```objc
+- (MPSNDArray *) mpsndarray;
 ```
 
 #### Return Value

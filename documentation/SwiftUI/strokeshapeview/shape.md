@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape that this type draws and provides for other drawing operations.
 
@@ -23,13 +24,14 @@ nonisolated var shape: Content { get set }
 
 ## See Also
 
-- [var background: Background](strokeshapeview/background.md)
+### Getting shape view properties
+- [var background: Background](./background.md)
   The background shown beneath this view.
-- [var isAntialiased: Bool](strokeshapeview/isantialiased.md)
+- [var isAntialiased: Bool](./isantialiased.md)
   Whether this shape should be drawn antialiased.
-- [var strokeStyle: StrokeStyle](strokeshapeview/strokestyle.md)
+- [var strokeStyle: StrokeStyle](./strokestyle.md)
   The stroke style used when stroking this view’s shape.
-- [var style: Style](strokeshapeview/style.md)
+- [var style: Style](./style.md)
   The style that strokes this view’s shape.
 
 

@@ -1,7 +1,8 @@
 # l2Norm(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Euclidean-norm reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Euclidean-norm reduction operation along the given axis operation to the 
 ```swift
 func l2Norm(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

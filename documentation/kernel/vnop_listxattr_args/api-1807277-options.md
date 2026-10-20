@@ -7,11 +7,12 @@ XATTR_NOSECURITY: bypass security-checking.
 
 ## See Also
 
-- [vp](vnop_listxattr_args/1807275-vp.md)
+### Fields
+- [vp](./api-1807275-vp.md)
   The vnode from which to remove extended attributes.
-- [name](vnop_listxattr_args/1807276-name.md)
+- [name](./api-1807276-name.md)
   Which attribute to delete.
-- [ctx](vnop_listxattr_args/1807280-ctx.md)
+- [ctx](./api-1807280-ctx.md)
   Context to authenticate for attribute delete request.
 
 

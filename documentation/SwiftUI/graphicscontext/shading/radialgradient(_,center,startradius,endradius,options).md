@@ -1,7 +1,8 @@
 # radialGradient(_:center:startRadius:endRadius:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shading instance that fills a radial gradient.
 
@@ -20,13 +21,19 @@ Returns a shading instance that fills a radial gradient.
 static func radialGradient(_ gradient: AnyGradient, center: CGPoint, startRadius: CGFloat, endRadius: CGFloat, options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
 ```
 
+**Other overloads**:
+
+```swift
+static func radialGradient(_ gradient: Gradient, center: CGPoint, startRadius: CGFloat, endRadius: CGFloat, options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
+```
+
 #### Return Value
 
 A shading instance filled with a radial gradient.
 
 ## Parameters
 
-- `gradient`: An [`AnyGradient`](anygradient.md) instance that defines the colors of the gradient.
+- `gradient`: An [`AnyGradient`](../../anygradient.md) instance that defines the colors of the gradient.
 - `center`: The point in the current user space on which SwiftUI centers the gradient.
 - `startRadius`: The distance from the center where the gradient starts.
 - `endRadius`: The distance from the center where the gradient ends.
@@ -34,9 +41,10 @@ A shading instance filled with a radial gradient.
 
 ## See Also
 
-- [static linearGradient(_:startPoint:endPoint:options:)](graphicscontext/shading/lineargradient(_:startpoint:endpoint:options:).md)
+### Gradients
+- [static linearGradient(_:startPoint:endPoint:options:)](./lineargradient%28_,startpoint,endpoint,options%29.md)
   Returns a shading instance that fills a linear (axial) gradient.
-- [static conicGradient(_:center:angle:options:)](graphicscontext/shading/conicgradient(_:center:angle:options:).md)
+- [static conicGradient(_:center:angle:options:)](./conicgradient%28_,center,angle,options%29.md)
   Returns a shading instance that fills a conic (angular) gradient.
 
 

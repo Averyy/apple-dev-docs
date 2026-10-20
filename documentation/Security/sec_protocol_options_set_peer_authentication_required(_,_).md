@@ -1,7 +1,8 @@
 # sec_protocol_options_set_peer_authentication_required(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_set_peer_authentication_required(_ options: sec_protocol_options_t, _ peer_authentication_required: Bool)
+```
+
+```c
+void sec_protocol_options_set_peer_authentication_required(sec_protocol_options_t options, bool peer_authentication_required);
 ```
 
 #### Discussion

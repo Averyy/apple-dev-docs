@@ -1,7 +1,8 @@
 # PassTypeIdUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for a pass type ID update request.
 
@@ -10,21 +11,21 @@ The data wrapper for a pass type ID update request.
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PassTypeIdUpdateRequest.Data.Attributes](passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object PassTypeIdUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The updateable attributes of a pass type identifier.
 
 ## Properties
 
 - `attributes` (PassTypeIdUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `passTypeIds`
 
 
 ---

@@ -1,7 +1,8 @@
 # captureSession
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying capture session.
 
@@ -21,13 +22,14 @@ final var captureSession: AVCaptureSession { get }
 
 #### Discussion
 
-This property’s value is the new capture session created by [`providerWithSession(from:compatibleWith:priority:)`](captureinputsequenceprovider/providerwithsession(from:compatiblewith:priority:).md) or the existing capture session passed to [`provider(from:in:compatibleWith:priority:)`](captureinputsequenceprovider/provider(from:in:compatiblewith:priority:).md) or the initializer.
+This property’s value is the new capture session created by [`providerWithSession(from:compatibleWith:priority:)`](./providerwithsession%28from,compatiblewith,priority%29.md) or the existing capture session passed to [`provider(from:in:compatibleWith:priority:)`](./provider%28from,in,compatiblewith,priority%29.md) or the initializer.
 
 Use the methods of `AVCaptureSession` to start, stop, or manage the capture session.
 
 ## See Also
 
-- [var captureAudioDataOutput: AVCaptureAudioDataOutput](captureinputsequenceprovider/captureaudiodataoutput.md)
+### Working with a capture session
+- [var captureAudioDataOutput: AVCaptureAudioDataOutput](./captureaudiodataoutput.md)
   An audio data output that routes and converts captured audio buffers to async sequences.
 
 

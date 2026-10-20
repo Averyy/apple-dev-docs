@@ -1,7 +1,8 @@
 # accessibilityAttributedString(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the attributed substring for the specified range of characters.
 
@@ -14,6 +15,10 @@ Returns the attributed substring for the specified range of characters.
 optional func accessibilityAttributedString(for range: NSRange) -> NSAttributedString?
 ```
 
+```objc
+- (NSAttributedString *) accessibilityAttributedStringForRange:(NSRange) range;
+```
+
 #### Return Value
 
 An attributed string representing the specified characters.
@@ -24,9 +29,10 @@ An attributed string representing the specified characters.
 
 ## See Also
 
-- [func accessibilityValue() -> String?](nsaccessibilitystatictext/accessibilityvalue.md)
+### Supporting Accessibility
+- [func accessibilityValue() -> String?](./accessibilityvalue%28%29.md)
   Returns the text that the accessibility element displays.
-- [func accessibilityVisibleCharacterRange() -> NSRange](nsaccessibilitystatictext/accessibilityvisiblecharacterrange.md)
+- [func accessibilityVisibleCharacterRange() -> NSRange](./accessibilityvisiblecharacterrange%28%29.md)
   Returns the range of visible characters in the document.
 
 

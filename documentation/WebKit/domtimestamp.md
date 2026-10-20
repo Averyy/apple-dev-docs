@@ -1,10 +1,11 @@
 # DOMTimeStamp
 
 **Framework**: WebKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 typealias DOMTimeStamp = UInt64
 ```
 
+```c
+typedef unsigned long long DOMTimeStamp;
+```
+
 ## See Also
 
-- [struct DOMEventExceptionCode](domeventexceptioncode.md)
-- [struct DOMExceptionCode](domexceptioncode.md)
-- [struct DOMRangeExceptionCode](domrangeexceptioncode.md)
-- [struct DOMXPathExceptionCode](domxpathexceptioncode.md)
+### Data Types
+- [struct DOMEventExceptionCode](./domeventexceptioncode.md)
+- [struct DOMExceptionCode](./domexceptioncode.md)
+- [struct DOMRangeExceptionCode](./domrangeexceptioncode.md)
+- [struct DOMXPathExceptionCode](./domxpathexceptioncode.md)
 
 
 ---

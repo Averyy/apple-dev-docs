@@ -1,7 +1,8 @@
 # remove(id:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a part by id.
 
@@ -11,7 +12,7 @@ Remove a part by id.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ mutating func remove(id: String) -> MeshResource.Part?
 
 ## See Also
 
-- [func insert(MeshResource.Part) -> Bool](meshpartcollection/insert(_:).md)
+### Using the collection
+- [func insert(MeshResource.Part) -> Bool](./insert%28_%29.md)
   Add a new part to the container. Returns true if added. Returns false if it already exists.
-- [func removeAll()](meshpartcollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Remove all the parts.
-- [func update(MeshResource.Part) -> MeshResource.Part?](meshpartcollection/update(_:).md)
+- [func update(MeshResource.Part) -> MeshResource.Part?](./update%28_%29.md)
   Update an existing part. The old part is returned.
 
 

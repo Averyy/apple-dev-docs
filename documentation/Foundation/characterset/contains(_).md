@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Test for membership of a particular `Unicode.Scalar` in the `CharacterSet`.
 

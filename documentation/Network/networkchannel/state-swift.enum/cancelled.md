@@ -1,7 +1,8 @@
 # NetworkChannel.State.cancelled
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancelled connections have been invalidated by the client and will send no more events
 

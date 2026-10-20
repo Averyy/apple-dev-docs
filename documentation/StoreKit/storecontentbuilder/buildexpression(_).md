@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,12 +21,13 @@ static func buildExpression<Content>(_ content: Content) -> some StoreContent wh
 
 ## See Also
 
-- [static func buildBlock<each Content>(repeat each Content) -> TupleStoreContent<repeat each Content>](storecontentbuilder/buildblock(_:).md)
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](storecontentbuilder/buildeither(first:).md)
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](storecontentbuilder/buildeither(second:).md)
-- [static func buildIf<Content>(Content?) -> Content?](storecontentbuilder/buildif(_:).md)
-- [static func buildLimitedAvailability(any StoreContent) -> some StoreContent](storecontentbuilder/buildlimitedavailability(_:).md)
-- [struct TupleStoreContent](tuplestorecontent.md)
+### Building store content
+- [static func buildBlock<each Content>(repeat each Content) -> TupleStoreContent<repeat each Content>](./buildblock%28_%29.md)
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](./buildeither%28first%29.md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](./buildeither%28second%29.md)
+- [static func buildIf<Content>(Content?) -> Content?](./buildif%28_%29.md)
+- [static func buildLimitedAvailability(any StoreContent) -> some StoreContent](./buildlimitedavailability%28_%29.md)
+- [struct TupleStoreContent](../tuplestorecontent.md)
 
 
 ---

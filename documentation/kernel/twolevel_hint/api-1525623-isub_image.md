@@ -1,7 +1,8 @@
 # isub_image
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The subimage in which the symbol is defined. It is an index into the list of images that make up the umbrella image. If this field is 0, the symbol is in the umbrella image itself. If the image is not an umbrella framework or library, this field is 0.
 
@@ -10,7 +11,7 @@ The subimage in which the symbol is defined. It is an index into the list of ima
 
 ## Declaration
 
-```swift
+```c
 uint32_t isub_image:8;
 ```
 

@@ -1,7 +1,8 @@
 # List all diagnostic signatures for a build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List the aggregate backtrace signatures captured for a specific build.
 
@@ -10,8 +11,8 @@ List the aggregate backtrace signatures captured for a specific build.
 
 ## Mentions
 
-- [App Store Connect API 3.5 release notes](app-store-connect-api-3-5-release-notes.md)
-- [App Store Connect API 2.0 release notes](app-store-connect-api-2-0-release-notes.md)
+- [App Store Connect API 3.5 release notes](./app-store-connect-api-3-5-release-notes.md)
+- [App Store Connect API 2.0 release notes](./app-store-connect-api-2-0-release-notes.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ The example below requests the top two weighted disk write diagnostic signatures
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/builds/1a254ec1-8e3d-48e7-bbd6-6b9a30072b29/diagnosticSignatures?filter[diagnosticType]=DISK_WRITES&limit=2
 ```
 
@@ -88,19 +89,41 @@ GET https://api.appstoreconnect.apple.com/v1/builds/1a254ec1-8e3d-48e7-bbd6-6b9a
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The resource ID that uniquely identifies the build to return metrics data for. Obtain the build resource ID from the [`List builds`](./get-v1-builds.md) response.
+
+### Query Parameters
+
 - `fields[diagnosticSignatures]` ([string]): Fields to return for diagnostic signatures.
+
+  **Allowed Values**: `diagnosticType`, `signature`, `weight`, `insight`, `logs`
 - `filter[diagnosticType]` ([string]): The diagnostic types by which to filter.
+
+  **Allowed Values**: `DISK_WRITES`, `HANGS`, `LAUNCHES`
 - `limit` (integer): Number of resources to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`DiagnosticSignaturesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Retrieve Power and Performance Metrics and Log Insights](retrieve-power-and-performance-metrics-and-log-insights.md)
+### Getting Metrics and Diagnostic Logs
+- [Retrieve Power and Performance Metrics and Log Insights](./retrieve-power-and-performance-metrics-and-log-insights.md)
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
-- [Get power and performance metrics for an app](get-v1-apps-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for an app](./get-v1-apps-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for the most recent version of an app.
-- [Get power and performance metrics for a build](get-v1-builds-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for a build](./get-v1-builds-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for a specific build.
-- [Download logs for a diagnostic signature](get-v1-diagnosticsignatures-_id_-logs.md)
+- [Download logs for a diagnostic signature](./get-v1-diagnosticsignatures-_id_-logs.md)
   Get the anonymized backtrace logs associated with a specific diagnostic signature.
 
 

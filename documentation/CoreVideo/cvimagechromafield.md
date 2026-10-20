@@ -1,7 +1,8 @@
 # CVImageChromaField
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about chroma field in the 2VUY format image data.
 
@@ -23,39 +24,40 @@ struct CVImageChromaField
 ## Topics
 
 ### Initializers
-- [init(fieldLocation: CVImageChromaField.FieldLocation, subsampling: CVImageChromaField.ChromaSubsampling)](cvimagechromafield/init(fieldlocation:subsampling:).md)
+- [init(fieldLocation: CVImageChromaField.FieldLocation, subsampling: CVImageChromaField.ChromaSubsampling)](./cvimagechromafield/init%28fieldlocation,subsampling%29.md)
 ### Instance Properties
-- [var fieldLocation: CVImageChromaField.FieldLocation](cvimagechromafield/fieldlocation-swift.property.md)
-- [var subsampling: CVImageChromaField.ChromaSubsampling](cvimagechromafield/subsampling.md)
+- [var fieldLocation: CVImageChromaField.FieldLocation](./cvimagechromafield/fieldlocation-swift.property.md)
+- [var subsampling: CVImageChromaField.ChromaSubsampling](./cvimagechromafield/subsampling.md)
 ### Enumerations
-- [CVImageChromaField.ChromaSubsampling](cvimagechromafield/chromasubsampling.md)
+- [CVImageChromaField.ChromaSubsampling](./cvimagechromafield/chromasubsampling.md)
   Original format of subsampled data in the image buffer before conversion to 422/2vuy format.
-- [CVImageChromaField.FieldLocation](cvimagechromafield/fieldlocation-swift.enum.md)
+- [CVImageChromaField.FieldLocation](./cvimagechromafield/fieldlocation-swift.enum.md)
   Indicates chroma sample location for progressive-scan & interlaced image data.
-- [CVImageChromaField.SampleLocation](cvimagechromafield/samplelocation.md)
+- [CVImageChromaField.SampleLocation](./cvimagechromafield/samplelocation.md)
   Indicates the locations of the chroma sample in the image buffer.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CVImageBuffer](cvimagebuffer.md)
+### Data types
+- [typealias CVImageBuffer](./cvimagebuffer.md)
   A reference to a Core Video image buffer.
-- [struct CVImageSize](cvimagesize.md)
+- [struct CVImageSize](./cvimagesize.md)
   Size of image buffer expressed as pixel count.
-- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
-- [struct CVImageCleanAperture](cvimagecleanaperture.md)
+- [enum CVImageBufferOriginPosition](./cvimagebufferoriginposition.md)
+- [struct CVImageCleanAperture](./cvimagecleanaperture.md)
   An image’s clean aperture is a region of video to display.
-- [struct CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
+- [struct CVImagePixelAspectRatio](./cvimagepixelaspectratio.md)
   Aspect ratio of each pixel in the image buffer.
-- [struct CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
+- [struct CVImageDisplayMaskRectangle](./cvimagedisplaymaskrectangle.md)
   Specifies the rectangular display area within the image.
-- [struct CVImageStereoDisplayMaskRectangle](cvimagestereodisplaymaskrectangle.md)
+- [struct CVImageStereoDisplayMaskRectangle](./cvimagestereodisplaymaskrectangle.md)
   Specifies the rectangular display area within a view of stereo image.
 
 

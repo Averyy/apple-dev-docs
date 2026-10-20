@@ -1,7 +1,8 @@
 # systemOverlays
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A `HoverEffectGroup` that becomes active when system overlays are visible.
 

@@ -1,7 +1,8 @@
 # preservesGroup
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Preserves the current phase of the group.
 

@@ -1,7 +1,8 @@
 # getState(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the state of the credential identity store.
 
@@ -15,12 +16,20 @@ Gets the state of the credential identity store.
 ## Declaration
 
 ```swift
+func getState(_ completion: @escaping @Sendable (ASCredentialIdentityStoreState) -> Void)
+```
+
+```swift
 func state() async -> ASCredentialIdentityStoreState
+```
+
+```objc
+- (void) getCredentialIdentityStoreStateWithCompletion:(void (^)(ASCredentialIdentityStoreState *state)) completion;
 ```
 
 #### Discussion
 
-Call this method to find out the current state of the store before attempting to call other store methods. Examine the [`ASCredentialIdentityStoreState`](ascredentialidentitystorestate.md) value passed to your completion handler to find out whether the store is enabled and whether it supports incremental updates.
+Call this method to find out the current state of the store before attempting to call other store methods. Examine the [`ASCredentialIdentityStoreState`](../ascredentialidentitystorestate.md) value passed to your completion handler to find out whether the store is enabled and whether it supports incremental updates.
 
 ## Parameters
 
@@ -28,7 +37,8 @@ Call this method to find out the current state of the store before attempting to
 
 ## See Also
 
-- [class ASCredentialIdentityStoreState](ascredentialidentitystorestate.md)
+### Checking the state of the store
+- [class ASCredentialIdentityStoreState](../ascredentialidentitystorestate.md)
   A representation of the state of a credential identity store.
 
 

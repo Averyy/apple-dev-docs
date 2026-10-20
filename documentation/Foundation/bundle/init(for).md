@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the `NSBundle` object with which the specified class is associated.
 
@@ -20,6 +21,10 @@ Returns the `NSBundle` object with which the specified class is associated.
 init(for aClass: AnyClass)
 ```
 
+```objc
++ (NSBundle *) bundleForClass:(Class) aClass;
+```
+
 #### Return Value
 
 The `NSBundle` object that dynamically loaded `aClass` (a loadable bundle), the `NSBundle` object for the framework in which `aClass` is defined, or the main bundle object if `aClass` was not dynamically loaded or is not defined in a framework. This method creates and returns a new `NSBundle` object if there is no existing bundle associated with `aClass`. Otherwise, the existing instance is returned.
@@ -30,13 +35,15 @@ The `NSBundle` object that dynamically loaded `aClass` (a loadable bundle), the 
 
 ## See Also
 
-- [class var main: Bundle](bundle/main.md)
+### Related Documentation
+- [class var main: Bundle](./main.md)
   Returns the bundle object that contains the current executable.
-- [convenience init?(url: URL)](bundle/init(url:)-a2t0.md)
+### Creating and initializing a bundle
+- [convenience init?(url: URL)](./init%28url%29-a2t0.md)
   Returns an `NSBundle` object that corresponds to the specified file URL.
-- [init?(identifier: String)](bundle/init(identifier:).md)
+- [init?(identifier: String)](./init%28identifier%29.md)
   Returns the `NSBundle` instance that has the specified bundle identifier.
-- [init?(path: String)](bundle/init(path:).md)
+- [init?(path: String)](./init%28path%29.md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.
 
 

@@ -1,7 +1,8 @@
 # contentDirection
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the content in the chart.
 
@@ -20,11 +21,16 @@ The direction of the content in the chart.
 var contentDirection: AXChartDescriptor.ContentDirection { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AXChartDescriptorContentDirection contentDirection;
+```
+
 ## See Also
 
-- [var contentFrame: CGRect](axchartdescriptor/contentframe.md)
+### Specifying the content layout
+- [var contentFrame: CGRect](./contentframe.md)
   The bounds of the view, in screen coordinates, for visually rendering data values.
-- [AXChartDescriptor.ContentDirection](axchartdescriptor/contentdirection-swift.enum.md)
+- [AXChartDescriptor.ContentDirection](./contentdirection-swift.enum.md)
   A constant that describes the content direction of the chart.
 
 

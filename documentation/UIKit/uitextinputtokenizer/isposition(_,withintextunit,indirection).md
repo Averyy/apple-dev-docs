@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Return whether a text position is within a text unit of a specified granularity in a specified direction.
@@ -10,7 +11,7 @@ Return whether a text position is within a text unit of a specified granularity 
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Return whether a text position is within a text unit of a specified granularity 
 func isPosition(_ position: UITextPosition, withinTextUnit granularity: UITextGranularity, inDirection direction: UITextDirection) -> Bool
 ```
 
+```objc
+- (BOOL) isPosition:(UITextPosition *) position withinTextUnit:(UITextGranularity) granularity inDirection:(UITextDirection) direction;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text position is within a text unit of the specified granularity in the specified direction; otherwise, return [`false`](https://developer.apple.com/documentation/swift/false). If the text position is *at* a boundary, return [`true`](https://developer.apple.com/documentation/swift/true) only if the boundary is part of the text unit in the given direction.
+[`true`](../../Swift/true.md) if the text position is within a text unit of the specified granularity in the specified direction; otherwise, return [`false`](../../Swift/false.md). If the text position is *at* a boundary, return [`true`](../../Swift/true.md) only if the boundary is part of the text unit in the given direction.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ func isPosition(_ position: UITextPosition, withinTextUnit granularity: UITextGr
 
 ## See Also
 
-- [func isPosition(UITextPosition, atBoundary: UITextGranularity, inDirection: UITextDirection) -> Bool](uitextinputtokenizer/isposition(_:atboundary:indirection:).md)
+### Determining text positions relative to unit boundaries
+- [func isPosition(UITextPosition, atBoundary: UITextGranularity, inDirection: UITextDirection) -> Bool](./isposition%28_,atboundary,indirection%29.md)
   Return whether a text position is at a boundary of a text unit of a specified granularity in a specified direction.
 
 

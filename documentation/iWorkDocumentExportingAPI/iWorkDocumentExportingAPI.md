@@ -1,7 +1,8 @@
 # iWork Document Exporting API
 
 **Framework**: iWork Document Exporting API  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Convert iWork documents to Portable Document Format (PDF) files using a web API.
 
@@ -23,13 +24,13 @@ The conversion service supports files that meet the following criteria:
 
 To convert iWork documents to PDF files using the iWork document-exporting service, sign up by generating the keys and service identifier the service requires. This process consists of several steps that you need to perform in the order described below.
 
-##### Log in to the Developer Portal
+##### Log in to the developer portal
 
-Log into the developer portal by accessing [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com) using your Apple Developer ID. After logging in, click on the Identifiers item in the Certificates, IDs & Profiles section.
+Log into the developer portal by accessing [developer.apple.com](https://developer.apple.com) using your Apple Developer ID. After logging in, click on the Identifiers item in the Certificates, IDs & Profiles section.
 
 Make note of your developer team ID, located under your account name in the upper-right corner of the window; the service requires this value when making calls to the service API.
 
-##### Create a New Identifier
+##### Create a new identifier
 
 To create a new identifier, perform these steps:
 
@@ -40,7 +41,7 @@ To create a new identifier, perform these steps:
 5. Click on the newly created identifier.
 6. Enable iWork Document Export, click Continue, and then click Save.
 
-##### Create and Download a New Key
+##### Create and download a new key
 
 To create a new key, perform these steps:
 
@@ -55,7 +56,7 @@ To create a new key, perform these steps:
 ## Topics
 
 ### Endpoints
-- [Export a PDF document from an iWork file](create-an-export-job-(v2).md)
+- [Export a PDF document from an iWork file](./create-an-export-job-%28v2%29.md)
   Create a PDF preview of an iWork document using JSON Web Token (JWT) authorization.
 
 

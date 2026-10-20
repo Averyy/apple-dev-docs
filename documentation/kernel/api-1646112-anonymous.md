@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBTBadCloseMask](1646112-anonymous/kbtbadclosemask.md)
-- [kBTBigKeysMask](1646112-anonymous/kbtbigkeysmask.md)
-- [kBTVariableIndexKeysMask](1646112-anonymous/kbtvariableindexkeysmask.md)
+- [kBTBadCloseMask](./api-1646112-anonymous/kbtbadclosemask.md)
+- [kBTBigKeysMask](./api-1646112-anonymous/kbtbigkeysmask.md)
+- [kBTVariableIndexKeysMask](./api-1646112-anonymous/kbtvariableindexkeysmask.md)
 
 
 ---

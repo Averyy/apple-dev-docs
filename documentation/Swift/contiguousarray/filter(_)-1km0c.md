@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 
@@ -36,7 +37,7 @@ print(shortNames)
 // Prints "["Kim", "Karl"]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # bMaxBurst
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of packets the endpoint can send or receive in one burst.
 
@@ -10,19 +11,20 @@ The maximum number of packets the endpoint can send or receive in one burst.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bMaxBurst;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedendpointcompaniondescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The length of this descriptor in bytes.
-- [bDescriptorType](iousbsuperspeedendpointcompaniondescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bmAttributes](iousbsuperspeedendpointcompaniondescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   The attributes associated with the endpoint.
-- [wBytesPerInterval](iousbsuperspeedendpointcompaniondescriptor/wbytesperinterval.md)
+- [wBytesPerInterval](./wbytesperinterval.md)
   The total number of bytes this endpoint transfers during each service interval.
 
 

@@ -1,7 +1,8 @@
 # MPSNNResizeBilinear
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A bilinear resizing filter.
 
@@ -19,30 +20,34 @@ A bilinear resizing filter.
 class MPSNNResizeBilinear
 ```
 
+```objc
+@interface MPSNNResizeBilinear : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnresizebilinear/init(coder:device:).md)
-- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, alignCorners: Bool)](mpsnnresizebilinear/init(device:resizewidth:resizeheight:aligncorners:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnresizebilinear/init%28coder,device%29.md)
+- [init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, alignCorners: Bool)](./mpsnnresizebilinear/init%28device,resizewidth,resizeheight,aligncorners%29.md)
 ### Instance Properties
-- [var alignCorners: Bool](mpsnnresizebilinear/aligncorners.md)
-- [var resizeHeight: Int](mpsnnresizebilinear/resizeheight.md)
-- [var resizeWidth: Int](mpsnnresizebilinear/resizewidth.md)
+- [var alignCorners: Bool](./mpsnnresizebilinear/aligncorners.md)
+- [var resizeHeight: Int](./mpsnnresizebilinear/resizeheight.md)
+- [var resizeWidth: Int](./mpsnnresizebilinear/resizewidth.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

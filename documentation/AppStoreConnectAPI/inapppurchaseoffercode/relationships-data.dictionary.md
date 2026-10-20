@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCode.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,18 +11,18 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCode.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCode.Relationships.CustomCodes](inapppurchaseoffercode/relationships-data.dictionary/customcodes-data.dictionary.md)
+- [object InAppPurchaseOfferCode.Relationships.CustomCodes](./relationships-data.dictionary/customcodes-data.dictionary.md)
   The data and links that describe the custom codes of the In-App Purchase offer code.
-- [object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes](inapppurchaseoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary.md)
+- [object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes](./relationships-data.dictionary/onetimeusecodes-data.dictionary.md)
   The data and links that describe the one-time use codes of the In-App Purchase offer code.
-- [object InAppPurchaseOfferCode.Relationships.Prices](inapppurchaseoffercode/relationships-data.dictionary/prices-data.dictionary.md)
+- [object InAppPurchaseOfferCode.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
   The data and links that describe the prices of the In-App Purchase offer code.
 
 ## Properties
@@ -32,7 +33,8 @@ object InAppPurchaseOfferCode.Relationships
 
 ## See Also
 
-- [object InAppPurchaseOfferCode.Attributes](inapppurchaseoffercode/attributes-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCode.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase offer code resource.
 
 

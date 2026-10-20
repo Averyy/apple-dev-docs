@@ -1,7 +1,8 @@
 # init(frame:stickerSize:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new sticker browser containing stickers of the specified size.
 
@@ -16,18 +17,23 @@ Creates a new sticker browser containing stickers of the specified size.
 init(frame: CGRect, stickerSize: MSStickerSize)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame stickerSize:(MSStickerSize) stickerSize;
+```
+
 #### Return Value
 
 A newly initialized sticker browser view.
 
 ## Parameters
 
-- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s [`center`](https://developer.apple.com/documentation/uikit/uiview/center) and [`bounds`](https://developer.apple.com/documentation/uikit/uiview/bounds) properties.
-- `stickerSize`: The size of the stickers. For a list of possible values, see [`MSStickerSize`](msstickersize.md).
+- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s [`center`](../../UIKit/uiview/center.md) and [`bounds`](../../UIKit/uiview/bounds.md) properties.
+- `stickerSize`: The size of the stickers. For a list of possible values, see [`MSStickerSize`](../msstickersize.md).
 
 ## See Also
 
-- [init(frame: CGRect)](msstickerbrowserview/init(frame:).md)
+### Creating Sticker Browser Views
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a new sticker browser containing medium-sized stickers.
 
 

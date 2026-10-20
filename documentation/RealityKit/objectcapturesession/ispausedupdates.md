@@ -1,7 +1,8 @@
 # isPausedUpdates
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `Updates` `AsyncSequence` for the `isPaused` property.
 

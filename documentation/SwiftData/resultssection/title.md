@@ -1,7 +1,8 @@
 # title
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the section.
 

@@ -1,7 +1,8 @@
 # searchController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search controller the search container view controller manages.
 
@@ -16,6 +17,10 @@ The search controller the search container view controller manages.
 
 ```swift
 var searchController: UISearchController { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) UISearchController * searchController;
 ```
 
 

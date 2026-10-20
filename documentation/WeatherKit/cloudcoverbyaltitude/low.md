@@ -1,7 +1,8 @@
 # low
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the sky covered with low-altitude clouds. Low-level Cloud Cover (LCC) corresponds to levels between 0m and 1800m above the model’s earth surface.
 

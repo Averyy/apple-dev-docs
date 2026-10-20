@@ -1,7 +1,8 @@
 # nationalIDCard(region:_:options:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request that displays national ID card elements onscreen.
 
@@ -16,9 +17,12 @@ A request that displays national ID card elements onscreen.
 static func nationalIDCard(region: Locale.Region, _ elements: [MobileNationalIDCardDisplayRequest.Element], options: MobileNationalIDCardDisplayRequest.Options = .init()) -> Self
 ```
 
+Available when `Self` is `MobileNationalIDCardDisplayRequest`.
+
 ## See Also
 
-- [struct MobileNationalIDCardDisplayRequest](mobilenationalidcarddisplayrequest.md)
+### National ID card display request
+- [struct MobileNationalIDCardDisplayRequest](../mobilenationalidcarddisplayrequest.md)
   A mobile national ID card request that retrieves elements from the holder and displays the results onscreen for visual inspection.
 
 

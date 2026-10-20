@@ -1,15 +1,16 @@
 # AudioQueueProcessingTapCallback
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,23 +18,28 @@
 typealias AudioQueueProcessingTapCallback = (UnsafeMutableRawPointer, AudioQueueProcessingTapRef, UInt32, UnsafeMutablePointer<AudioTimeStamp>, UnsafeMutablePointer<AudioQueueProcessingTapFlags>, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>) -> Void
 ```
 
+```c
+typedef void (*)(void *, struct OpaqueAudioQueueProcessingTap *, unsigned int, struct AudioTimeStamp *, enum AudioQueueProcessingTapFlags *, unsigned int *, struct AudioBufferList *) AudioQueueProcessingTapCallback;
+```
+
 ## See Also
 
-- [struct AudioQueueChannelAssignment](audioqueuechannelassignment.md)
-- [struct AudioQueueProcessingTapFlags](audioqueueprocessingtapflags.md)
-- [struct AudioQueueBuffer](audioqueuebuffer.md)
+### Data Types
+- [struct AudioQueueChannelAssignment](./audioqueuechannelassignment.md)
+- [struct AudioQueueProcessingTapFlags](./audioqueueprocessingtapflags.md)
+- [struct AudioQueueBuffer](./audioqueuebuffer.md)
   Defines an audio queue buffer.
-- [typealias AudioQueueBufferRef](audioqueuebufferref.md)
+- [typealias AudioQueueBufferRef](./audioqueuebufferref.md)
   A pointer to an audio queue buffer.
-- [struct AudioQueueLevelMeterState](audioqueuelevelmeterstate.md)
+- [struct AudioQueueLevelMeterState](./audioqueuelevelmeterstate.md)
   Specifies the current level metering information for one channel of an audio queue.
-- [struct AudioQueueParameterEvent](audioqueueparameterevent.md)
+- [struct AudioQueueParameterEvent](./audioqueueparameterevent.md)
   Specifies an audio queue parameter and associated value.
-- [typealias AudioQueueParameterID](audioqueueparameterid.md)
+- [typealias AudioQueueParameterID](./audioqueueparameterid.md)
   A `UInt32` value that uniquely identifies an audio queue parameter.
-- [typealias AudioQueueParameterValue](audioqueueparametervalue.md)
+- [typealias AudioQueueParameterValue](./audioqueueparametervalue.md)
   A `Float32` value for an audio queue parameter.
-- [typealias AudioQueueProcessingTapRef](audioqueueprocessingtapref.md)
+- [typealias AudioQueueProcessingTapRef](./audioqueueprocessingtapref.md)
 
 
 ---

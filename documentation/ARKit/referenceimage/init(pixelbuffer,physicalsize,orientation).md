@@ -1,7 +1,8 @@
 # init(pixelBuffer:physicalSize:orientation:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference image from a pixel buffer.
 
@@ -22,9 +23,10 @@ init(pixelBuffer: CVPixelBuffer, physicalSize: CGSize, orientation: CGImagePrope
 
 ## See Also
 
-- [init(cgimage: CGImage, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](referenceimage/init(cgimage:physicalsize:orientation:).md)
+### Creating a reference image
+- [init(cgimage: CGImage, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](./init%28cgimage,physicalsize,orientation%29.md)
   Creates a reference image from a Core Graphics image.
-- [static func loadReferenceImages(inGroupNamed: String, bundle: Bundle?) -> [ReferenceImage]](referenceimage/loadreferenceimages(ingroupnamed:bundle:).md)
+- [static func loadReferenceImages(inGroupNamed: String, bundle: Bundle?) -> [ReferenceImage]](./loadreferenceimages%28ingroupnamed,bundle%29.md)
   Creates multiple reference images based on their group name in an asset catalog.
 
 

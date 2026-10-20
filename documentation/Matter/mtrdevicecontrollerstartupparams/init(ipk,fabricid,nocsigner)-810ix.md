@@ -1,7 +1,8 @@
 # init(ipk:fabricID:nocSigner:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(ipk: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)
+```
+
+```objc
+- (instancetype) initWithIPK:(NSData *) ipk fabricID:(NSNumber *) fabricID nocSigner:(id<MTRKeypair>) nocSigner;
 ```
 
 

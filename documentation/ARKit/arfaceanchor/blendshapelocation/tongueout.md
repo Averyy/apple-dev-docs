@@ -1,7 +1,8 @@
 # tongueOut
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The coefficient describing extension of the tongue.
 
@@ -13,6 +14,10 @@ The coefficient describing extension of the tongue.
 
 ```swift
 static let tongueOut: ARFaceAnchor.BlendShapeLocation
+```
+
+```c
+extern ARBlendShapeLocation const ARBlendShapeLocationTongueOut;
 ```
 
 #### Discussion

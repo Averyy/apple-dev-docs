@@ -1,7 +1,8 @@
 # try()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire the receiver and immediately returns a Boolean value that indicates whether the attempt was successful.
 
@@ -15,9 +16,13 @@ Attempts to acquire the receiver and immediately returns a Boolean value that in
 func `try`() -> Bool
 ```
 
+```objc
+- (BOOL) tryLock;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attempt to acquire the receiver was successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the attempt to acquire the receiver was successful, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -25,7 +30,8 @@ Raises `NSGenericException` if a file-system error occurs.
 
 ## See Also
 
-- [func unlock()](nsdistributedlock/unlock.md)
+### Related Documentation
+- [func unlock()](./unlock%28%29.md)
   Relinquishes the receiver.
 
 

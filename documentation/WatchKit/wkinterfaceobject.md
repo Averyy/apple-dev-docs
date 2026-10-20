@@ -1,7 +1,8 @@
 # WKInterfaceObject
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information that is common to all interface objects in your watchOS app.
 
@@ -14,9 +15,13 @@ An object that provides information that is common to all interface objects in y
 class WKInterfaceObject
 ```
 
+```objc
+@interface WKInterfaceObject : NSObject
+```
+
 ## Mentions
 
-- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md)
+- [Connecting Your User Interface to Your Code](./connecting-your-user-interface-to-your-code.md)
 
 #### Overview
 
@@ -47,7 +52,7 @@ Xcode lets you configure information about your group interface object in your s
 | Attribute | Description |
 | --- | --- |
 | Alpha | The opacity of the object. A value of `1.0` represents fully opaque and a value of `0.0` represents fully transparent. |
-| Hidden | A checkbox indicating whether the item is hidden initially. You can change the visibility of the item programmatically by calling the [`setHidden(_:)`](wkinterfaceobject/sethidden(_:).md) method. |
+| Hidden | A checkbox indicating whether the item is hidden initially. You can change the visibility of the item programmatically by calling the [`setHidden(_:)`](./wkinterfaceobject/sethidden%28_%29.md) method. |
 | Installed | A checkbox indicating whether the item is installed for the current device. |
 | Horizontal | The horizontal alignment of the item. Use this attribute to configure the horizontal position of the item relative to its immediate parent. |
 | Vertical | The vertical alignment of the item. Use this attribute to configure the vertical position of the item relative to its immediate parent. |
@@ -57,103 +62,104 @@ Xcode lets you configure information about your group interface object in your s
 ## Topics
 
 ### Hiding and Showing an Object
-- [func setHidden(Bool)](wkinterfaceobject/sethidden(_:).md)
+- [func setHidden(Bool)](./wkinterfaceobject/sethidden%28_%29.md)
   Hides or shows the interface object in your user interface.
-- [func setAlpha(CGFloat)](wkinterfaceobject/setalpha(_:).md)
+- [func setAlpha(CGFloat)](./wkinterfaceobject/setalpha%28_%29.md)
   Sets the opacity of the interface object.
 ### Getting the Property Name
-- [var interfaceProperty: String](wkinterfaceobject/interfaceproperty.md)
+- [var interfaceProperty: String](./wkinterfaceobject/interfaceproperty.md)
   The name of the outlet in your interface controller to which the object is bound.
 ### Changing an Object’s Size
-- [func setWidth(CGFloat)](wkinterfaceobject/setwidth(_:).md)
+- [func setWidth(CGFloat)](./wkinterfaceobject/setwidth%28_%29.md)
   Sets the absolute width (in points) of the object.
-- [func setHeight(CGFloat)](wkinterfaceobject/setheight(_:).md)
+- [func setHeight(CGFloat)](./wkinterfaceobject/setheight%28_%29.md)
   Sets the absolute height (in points) of the object.
-- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](wkinterfaceobject/setrelativewidth(_:withadjustment:).md)
+- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](./wkinterfaceobject/setrelativewidth%28_,withadjustment%29.md)
   Sets the width of the object relative to its container.
-- [func setRelativeHeight(CGFloat, withAdjustment: CGFloat)](wkinterfaceobject/setrelativeheight(_:withadjustment:).md)
+- [func setRelativeHeight(CGFloat, withAdjustment: CGFloat)](./wkinterfaceobject/setrelativeheight%28_,withadjustment%29.md)
   Sets the height of the object relative to its container.
-- [func sizeToFitWidth()](wkinterfaceobject/sizetofitwidth.md)
+- [func sizeToFitWidth()](./wkinterfaceobject/sizetofitwidth%28%29.md)
   Sets the width of the object to fit its current content.
-- [func sizeToFitHeight()](wkinterfaceobject/sizetofitheight.md)
+- [func sizeToFitHeight()](./wkinterfaceobject/sizetofitheight%28%29.md)
   Sets the height of the object so that it fills the available vertical space.
 ### Setting an Object’s Alignment
-- [func setHorizontalAlignment(WKInterfaceObjectHorizontalAlignment)](wkinterfaceobject/sethorizontalalignment(_:).md)
+- [func setHorizontalAlignment(WKInterfaceObjectHorizontalAlignment)](./wkinterfaceobject/sethorizontalalignment%28_%29.md)
   Sets the horizontal alignment of an object relative to its container’s bounds.
-- [func setVerticalAlignment(WKInterfaceObjectVerticalAlignment)](wkinterfaceobject/setverticalalignment(_:).md)
+- [func setVerticalAlignment(WKInterfaceObjectVerticalAlignment)](./wkinterfaceobject/setverticalalignment%28_%29.md)
   Sets the vertical alignment of an object relative to its container’s bounds.
 ### Configuring the Accessibility Attributes
-- [func setAccessibilityIdentifier(String?)](wkinterfaceobject/setaccessibilityidentifier(_:).md)
+- [func setAccessibilityIdentifier(String?)](./wkinterfaceobject/setaccessibilityidentifier%28_%29.md)
   Sets the unique identifier string for the interface object.
-- [func setAccessibilityLabel(String?)](wkinterfaceobject/setaccessibilitylabel(_:).md)
+- [func setAccessibilityLabel(String?)](./wkinterfaceobject/setaccessibilitylabel%28_%29.md)
   Sets a succinct label on the object that identifies the accessibility element.
-- [func setAccessibilityHint(String?)](wkinterfaceobject/setaccessibilityhint(_:).md)
+- [func setAccessibilityHint(String?)](./wkinterfaceobject/setaccessibilityhint%28_%29.md)
   Sets the description of what happens when performing an action on the accessibility element.
-- [func setAccessibilityValue(String?)](wkinterfaceobject/setaccessibilityvalue(_:).md)
+- [func setAccessibilityValue(String?)](./wkinterfaceobject/setaccessibilityvalue%28_%29.md)
   Sets the value of the accessibility element.
-- [func setIsAccessibilityElement(Bool)](wkinterfaceobject/setisaccessibilityelement(_:).md)
+- [func setIsAccessibilityElement(Bool)](./wkinterfaceobject/setisaccessibilityelement%28_%29.md)
   Sets whether the object is an accessibility element that an assistive app can access.
-- [func setAccessibilityTraits(UIAccessibilityTraits)](wkinterfaceobject/setaccessibilitytraits(_:).md)
+- [func setAccessibilityTraits(UIAccessibilityTraits)](./wkinterfaceobject/setaccessibilitytraits%28_%29.md)
   Sets the combination of accessibility traits that best characterize the accessibility element.
-- [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](wkinterfaceobject/setaccessibilityimageregions(_:).md)
+- [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](./wkinterfaceobject/setaccessibilityimageregions%28_%29.md)
   Marks portions of an image as separate accessible elements.
 ### Setting the Layout Direction
-- [func setSemanticContentAttribute(WKInterfaceSemanticContentAttribute)](wkinterfaceobject/setsemanticcontentattribute(_:).md)
+- [func setSemanticContentAttribute(WKInterfaceSemanticContentAttribute)](./wkinterfaceobject/setsemanticcontentattribute%28_%29.md)
   Sets the semantic description of the object’s contents, used to determine whether its content should be flipped when switching between left-to-right and right-to-left layouts.
 ### Constants
-- [enum WKInterfaceObjectHorizontalAlignment](wkinterfaceobjecthorizontalalignment.md)
+- [enum WKInterfaceObjectHorizontalAlignment](./wkinterfaceobjecthorizontalalignment.md)
   Constants for horizontally aligning objects in their container.
-- [enum WKInterfaceObjectVerticalAlignment](wkinterfaceobjectverticalalignment.md)
+- [enum WKInterfaceObjectVerticalAlignment](./wkinterfaceobjectverticalalignment.md)
   Constants for vertically aligning objects in their container.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [WKInterfaceActivityRing](wkinterfaceactivityring.md)
-- [WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
-- [WKInterfaceButton](wkinterfacebutton.md)
-- [WKInterfaceDate](wkinterfacedate.md)
-- [WKInterfaceGroup](wkinterfacegroup.md)
-- [WKInterfaceHMCamera](wkinterfacehmcamera.md)
-- [WKInterfaceImage](wkinterfaceimage.md)
-- [WKInterfaceInlineMovie](wkinterfaceinlinemovie.md)
-- [WKInterfaceLabel](wkinterfacelabel.md)
-- [WKInterfaceMap](wkinterfacemap.md)
-- [WKInterfaceMovie](wkinterfacemovie.md)
-- [WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
-- [WKInterfacePicker](wkinterfacepicker.md)
-- [WKInterfaceSCNScene](wkinterfacescnscene.md)
-- [WKInterfaceSKScene](wkinterfaceskscene.md)
-- [WKInterfaceSeparator](wkinterfaceseparator.md)
-- [WKInterfaceSlider](wkinterfaceslider.md)
-- [WKInterfaceSwitch](wkinterfaceswitch.md)
-- [WKInterfaceTable](wkinterfacetable.md)
-- [WKInterfaceTextField](wkinterfacetextfield.md)
-- [WKInterfaceTimer](wkinterfacetimer.md)
-- [WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
+- [WKInterfaceActivityRing](./wkinterfaceactivityring.md)
+- [WKInterfaceAuthorizationAppleIDButton](./wkinterfaceauthorizationappleidbutton.md)
+- [WKInterfaceButton](./wkinterfacebutton.md)
+- [WKInterfaceDate](./wkinterfacedate.md)
+- [WKInterfaceGroup](./wkinterfacegroup.md)
+- [WKInterfaceHMCamera](./wkinterfacehmcamera.md)
+- [WKInterfaceImage](./wkinterfaceimage.md)
+- [WKInterfaceInlineMovie](./wkinterfaceinlinemovie.md)
+- [WKInterfaceLabel](./wkinterfacelabel.md)
+- [WKInterfaceMap](./wkinterfacemap.md)
+- [WKInterfaceMovie](./wkinterfacemovie.md)
+- [WKInterfacePaymentButton](./wkinterfacepaymentbutton.md)
+- [WKInterfacePicker](./wkinterfacepicker.md)
+- [WKInterfaceSCNScene](./wkinterfacescnscene.md)
+- [WKInterfaceSKScene](./wkinterfaceskscene.md)
+- [WKInterfaceSeparator](./wkinterfaceseparator.md)
+- [WKInterfaceSlider](./wkinterfaceslider.md)
+- [WKInterfaceSwitch](./wkinterfaceswitch.md)
+- [WKInterfaceTable](./wkinterfacetable.md)
+- [WKInterfaceTextField](./wkinterfacetextfield.md)
+- [WKInterfaceTimer](./wkinterfacetimer.md)
+- [WKInterfaceVolumeControl](./wkinterfacevolumecontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Building watchOS app Interfaces Using the Storyboard](building-watchos-app-interfaces-using-the-storyboard.md)
+### User interface basics
+- [Building watchOS app Interfaces Using the Storyboard](./building-watchos-app-interfaces-using-the-storyboard.md)
   Create the user interface for your watchOS app by nesting stacks.
-- [class WKInterfaceController](wkinterfacecontroller.md)
+- [class WKInterfaceController](./wkinterfacecontroller.md)
   A class that provides the infrastructure for managing the interface in a watchOS app.
-- [class WKAlertAction](wkalertaction.md)
+- [class WKAlertAction](./wkalertaction.md)
   An object that encapsulates information about a button displayed in an alert or action sheet.
-- [class WKAccessibilityImageRegion](wkaccessibilityimageregion.md)
+- [class WKAccessibilityImageRegion](./wkaccessibilityimageregion.md)
   An object that defines a portion of an image that you want to call out separately to an assistive app.
-- [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md)
+- [func WKAccessibilityIsVoiceOverRunning() -> Bool](./wkaccessibilityisvoiceoverrunning%28%29.md)
   Returns a Boolean value indicating whether VoiceOver is running.
-- [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md)
+- [func WKAccessibilityIsReduceMotionEnabled() -> Bool](./wkaccessibilityisreducemotionenabled%28%29.md)
   Returns a Boolean value indicating whether reduced motion is enabled.
 
 

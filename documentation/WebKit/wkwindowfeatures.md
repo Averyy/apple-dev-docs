@@ -1,7 +1,8 @@
 # WKWindowFeatures
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Display-related attributes that a webpage requests for its window.
 
@@ -19,61 +20,66 @@ Display-related attributes that a webpage requests for its window.
 class WKWindowFeatures
 ```
 
+```objc
+@interface WKWindowFeatures : NSObject
+```
+
 #### Overview
 
-A [`WKWindowFeatures`](wkwindowfeatures.md) object contains the attributes that a webpage requests from its containing web view. You don’t create a [`WKWindowFeatures`](wkwindowfeatures.md) object directly. When a navigation action results in the display of a new web view, [`WKWebView`](wkwebview.md) creates this object and passes it to the [`webView(_:createWebViewWith:for:windowFeatures:)`](wkuidelegate/webview(_:createwebviewwith:for:windowfeatures:).md) method of its UI delegate object. The delegate uses the information in this object to configure and return the new web view.
+A [`WKWindowFeatures`](./wkwindowfeatures.md) object contains the attributes that a webpage requests from its containing web view. You don’t create a [`WKWindowFeatures`](./wkwindowfeatures.md) object directly. When a navigation action results in the display of a new web view, [`WKWebView`](./wkwebview.md) creates this object and passes it to the [`webView(_:createWebViewWith:for:windowFeatures:)`](./wkuidelegate/webview%28_,createwebviewwith,for,windowfeatures%29.md) method of its UI delegate object. The delegate uses the information in this object to configure and return the new web view.
 
 ## Topics
 
 ### Inspecting Window Position and Dimensions
-- [var allowsResizing: NSNumber?](wkwindowfeatures/allowsresizing.md)
+- [var allowsResizing: NSNumber?](./wkwindowfeatures/allowsresizing.md)
   A Boolean value that indicates whether to make the containing window window resizable.
-- [var height: NSNumber?](wkwindowfeatures/height.md)
+- [var height: NSNumber?](./wkwindowfeatures/height.md)
   The requested height of the containing window.
-- [var width: NSNumber?](wkwindowfeatures/width.md)
+- [var width: NSNumber?](./wkwindowfeatures/width.md)
   The requested width of the containing window.
-- [var x: NSNumber?](wkwindowfeatures/x.md)
+- [var x: NSNumber?](./wkwindowfeatures/x.md)
   The requested x-coordinate of the containing window.
-- [var y: NSNumber?](wkwindowfeatures/y.md)
+- [var y: NSNumber?](./wkwindowfeatures/y.md)
   The requested y-coordinate of the containing window.
 ### Inspecting Visibility Properties
-- [var menuBarVisibility: NSNumber?](wkwindowfeatures/menubarvisibility.md)
+- [var menuBarVisibility: NSNumber?](./wkwindowfeatures/menubarvisibility.md)
   A Boolean value that indicates whether the webpage requests a visible menu bar.
-- [var statusBarVisibility: NSNumber?](wkwindowfeatures/statusbarvisibility.md)
+- [var statusBarVisibility: NSNumber?](./wkwindowfeatures/statusbarvisibility.md)
   A Boolean value that indicates whether the webpage requested a visible status bar.
-- [var toolbarsVisibility: NSNumber?](wkwindowfeatures/toolbarsvisibility.md)
+- [var toolbarsVisibility: NSNumber?](./wkwindowfeatures/toolbarsvisibility.md)
   A Boolean value that indicates whether the webpage requested a visible toolbar.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebViewConfiguration](wkwebviewconfiguration.md)
+### Web view configuration
+- [class WKWebViewConfiguration](./wkwebviewconfiguration.md)
   A collection of properties that you use to initialize a web view.
-- [class WKProcessPool](wkprocesspool.md)
+- [class WKProcessPool](./wkprocesspool.md)
   An opaque token that you use to run multiple web views in a single process.
-- [class WKPreferences](wkpreferences.md)
+- [class WKPreferences](./wkpreferences.md)
   An object that encapsulates the standard behaviors to apply to websites.
-- [class WKWebpagePreferences](wkwebpagepreferences.md)
+- [class WKWebpagePreferences](./wkwebpagepreferences.md)
   An object that specifies the behaviors to use when loading and rendering page content.
-- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+- [WKWebpagePreferences.ContentMode](./wkwebpagepreferences/contentmode.md)
   Constants that indicate how to render web view content.
-- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
-- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
-- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](./wkwebpagepreferences/upgradetohttpspolicy.md)
+- [enum WKSecurityRestrictionMode](./wksecurityrestrictionmode.md)
+- [WKPreferences.InactiveSchedulingPolicy](./wkpreferences/inactiveschedulingpolicy-swift.enum.md)
   An enumeration that lists policies for how a web view that’s not in a window handles tasks.
-- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
+- [WKWebView.FullscreenState](./wkwebview/fullscreenstate-swift.enum.md)
 
 
 ---

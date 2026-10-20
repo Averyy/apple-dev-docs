@@ -1,7 +1,8 @@
 # playerID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the player who occupies the seat.
 
@@ -16,7 +17,8 @@ var playerID: Player.ID?
 
 ## See Also
 
-- [var pose: TableVisualState.Pose2D](tableseatstate/pose.md)
+### Setting the data that syncs
+- [var pose: TableVisualState.Pose2D](./pose.md)
   The position and orientation of the seat around the table.
 
 

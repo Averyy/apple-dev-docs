@@ -1,7 +1,8 @@
 # MPSImageConversion
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that performs a conversion of color space, alpha, or pixel format.
 
@@ -19,11 +20,15 @@ A filter that performs a conversion of color space, alpha, or pixel format.
 class MPSImageConversion
 ```
 
+```objc
+@interface MPSImageConversion : MPSUnaryImageKernel
+```
+
 #### Overview
 
-An [`MPSImageConversion`](mpsimageconversion.md) filter allows you to change the alpha encoding or color space of an image. For example, you can convert an image with a premultiplied alpha to non-premultiplied, or change the color space from one variant to another.
+An [`MPSImageConversion`](./mpsimageconversion.md) filter allows you to change the alpha encoding or color space of an image. For example, you can convert an image with a premultiplied alpha to non-premultiplied, or change the color space from one variant to another.
 
-As with all Metal Performance Shaders filters, the conversion filter allows for source and destination textures with different pixel formats and, in that case, will convert the source texture’s format to the destination texture’s format. See [`Supported Pixel Formats for Image Kernels`](image-filters#Supported-Pixel-Formats-for-Image-Kernels.md) for a list of supported pixel formats.
+As with all Metal Performance Shaders filters, the conversion filter allows for source and destination textures with different pixel formats and, in that case, will convert the source texture’s format to the destination texture’s format. See [Supported Pixel Formats for Image Kernels](./image-filters.md#Supported-Pixel-Formats-for-Image-Kernels) for a list of supported pixel formats.
 
 The following listing shows how you can create an image conversion filter to map the color intensity from the sRGB color space to a linear gamma curve.
 
@@ -49,40 +54,41 @@ let conversion = MPSImageConversion(device: device,
 ## Topics
 
 ### Methods
-- [init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)](mpsimageconversion/init(device:srcalpha:destalpha:backgroundcolor:conversioninfo:).md)
+- [init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)](./mpsimageconversion/init%28device,srcalpha,destalpha,backgroundcolor,conversioninfo%29.md)
   Initializes a filter that can convert texture color space, alpha, and pixel format.
-- [enum MPSAlphaType](mpsalphatype.md)
+- [enum MPSAlphaType](./mpsalphatype.md)
   Premultiplication description for the color channels of an image.
 ### Properties
-- [var sourceAlpha: MPSAlphaType](mpsimageconversion/sourcealpha.md)
+- [var sourceAlpha: MPSAlphaType](./mpsimageconversion/sourcealpha.md)
   Premultiplication description for the source texture.
-- [var destinationAlpha: MPSAlphaType](mpsimageconversion/destinationalpha.md)
+- [var destinationAlpha: MPSAlphaType](./mpsimageconversion/destinationalpha.md)
   Premultiplication description for the destination texture.
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageScale](mpsimagescale.md)
+### Image Manipulation Filters
+- [class MPSImageScale](./mpsimagescale.md)
   A filter that resizes and changes the aspect ratio of an image.
-- [class MPSImageLanczosScale](mpsimagelanczosscale.md)
+- [class MPSImageLanczosScale](./mpsimagelanczosscale.md)
   A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
-- [class MPSImageBilinearScale](mpsimagebilinearscale.md)
+- [class MPSImageBilinearScale](./mpsimagebilinearscale.md)
   A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
-- [class MPSImageTranspose](mpsimagetranspose.md)
+- [class MPSImageTranspose](./mpsimagetranspose.md)
   A filter that transposes an image.
 
 

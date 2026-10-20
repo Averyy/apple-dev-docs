@@ -5,12 +5,12 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool handleIsOpen(
  const IOService *client) const;
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if the client was (or clients were) open, false otherwise.
 
@@ -26,15 +26,16 @@ This implementation replaces the IOService definition of handleIsOpen().
 
 ## See Also
 
-- [copyPhysicalExtent](iofilterscheme/1811149-copyphysicalextent.md)
-- [handleClose](iofilterscheme/1811170-handleclose.md)
-- [handleOpen](iofilterscheme/1811211-handleopen.md)
-- [lockPhysicalExtents](iofilterscheme/1811226-lockphysicalextents.md)
-- [read](iofilterscheme/1811238-read.md)
-- [synchronizeCache](iofilterscheme/1811248-synchronizecache.md)
-- [unlockPhysicalExtents](iofilterscheme/1811258-unlockphysicalextents.md)
-- [unmap](iofilterscheme/1811266-unmap.md)
-- [write](iofilterscheme/1811274-write.md)
+### Miscellaneous
+- [copyPhysicalExtent](./api-1811149-copyphysicalextent.md)
+- [handleClose](./api-1811170-handleclose.md)
+- [handleOpen](./api-1811211-handleopen.md)
+- [lockPhysicalExtents](./api-1811226-lockphysicalextents.md)
+- [read](./api-1811238-read.md)
+- [synchronizeCache](./api-1811248-synchronizecache.md)
+- [unlockPhysicalExtents](./api-1811258-unlockphysicalextents.md)
+- [unmap](./api-1811266-unmap.md)
+- [write](./api-1811274-write.md)
 
 
 ---

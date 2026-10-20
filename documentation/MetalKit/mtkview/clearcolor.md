@@ -1,7 +1,8 @@
 # clearColor
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color to use to clear the color target when creating a render pass descriptor.
 
@@ -19,23 +20,28 @@ The color to use to clear the color target when creating a render pass descripto
 var clearColor: MTLClearColor { get set }
 ```
 
+```objc
+@property (nonatomic) MTLClearColor clearColor;
+```
+
 #### Discussion
 
-When the view creates a render pass, it sets the load action for the color render target to [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and uses this color as the clear color. The default value is `(0.0, 0.0, 0.0, 1.0)`.
+When the view creates a render pass, it sets the load action for the color render target to [`MTLLoadAction.clear`](../../Metal/mtlloadaction/clear.md) and uses this color as the clear color. The default value is `(0.0, 0.0, 0.0, 1.0)`.
 
 ## See Also
 
-- [var colorPixelFormat: MTLPixelFormat](mtkview/colorpixelformat.md)
+### Configuring the Color Render Target
+- [var colorPixelFormat: MTLPixelFormat](./colorpixelformat.md)
   The color pixel format for the current drawable’s texture.
-- [var colorspace: CGColorSpace?](mtkview/colorspace.md)
+- [var colorspace: CGColorSpace?](./colorspace.md)
   The color space of the rendered content.
-- [var framebufferOnly: Bool](mtkview/framebufferonly.md)
+- [var framebufferOnly: Bool](./framebufferonly.md)
   A Boolean value that determines whether the drawable’s textures are used only for rendering.
-- [var drawableSize: CGSize](mtkview/drawablesize.md)
+- [var drawableSize: CGSize](./drawablesize.md)
   The current size of drawable textures.
-- [var preferredDrawableSize: CGSize](mtkview/preferreddrawablesize.md)
+- [var preferredDrawableSize: CGSize](./preferreddrawablesize.md)
   The recommended dimensions of the drawable.
-- [var autoResizeDrawable: Bool](mtkview/autoresizedrawable.md)
+- [var autoResizeDrawable: Bool](./autoresizedrawable.md)
   A Boolean value that controls whether to resize the drawable as the view changes size.
 
 

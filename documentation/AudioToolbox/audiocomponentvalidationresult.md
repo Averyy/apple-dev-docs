@@ -1,15 +1,16 @@
 # AudioComponentValidationResult
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,32 +18,37 @@
 enum AudioComponentValidationResult
 ```
 
+```c
+enum AudioComponentValidationResult : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [AudioComponentValidationResult.failed](audiocomponentvalidationresult/failed.md)
-- [AudioComponentValidationResult.passed](audiocomponentvalidationresult/passed.md)
-- [AudioComponentValidationResult.timedOut](audiocomponentvalidationresult/timedout.md)
-- [AudioComponentValidationResult.unauthorizedError_Init](audiocomponentvalidationresult/unauthorizederror_init.md)
-- [AudioComponentValidationResult.unauthorizedError_Open](audiocomponentvalidationresult/unauthorizederror_open.md)
-- [AudioComponentValidationResult.unknown](audiocomponentvalidationresult/unknown.md)
+- [AudioComponentValidationResult.failed](./audiocomponentvalidationresult/failed.md)
+- [AudioComponentValidationResult.passed](./audiocomponentvalidationresult/passed.md)
+- [AudioComponentValidationResult.timedOut](./audiocomponentvalidationresult/timedout.md)
+- [AudioComponentValidationResult.unauthorizedError_Init](./audiocomponentvalidationresult/unauthorizederror_init.md)
+- [AudioComponentValidationResult.unauthorizedError_Open](./audiocomponentvalidationresult/unauthorizederror_open.md)
+- [AudioComponentValidationResult.unknown](./audiocomponentvalidationresult/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt32)](audiocomponentvalidationresult/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./audiocomponentvalidationresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func AudioComponentValidate(AudioComponent, CFDictionary?, UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus](audiocomponentvalidate(_:_:_:).md)
-- [var kAudioComponentValidationParameter_LoadOutOfProcess: String](kaudiocomponentvalidationparameter_loadoutofprocess.md)
+### Validating an Audio Component
+- [func AudioComponentValidate(AudioComponent, CFDictionary?, UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus](./audiocomponentvalidate%28_,_,_%29.md)
+- [var kAudioComponentValidationParameter_LoadOutOfProcess: String](./kaudiocomponentvalidationparameter_loadoutofprocess.md)
 
 
 ---

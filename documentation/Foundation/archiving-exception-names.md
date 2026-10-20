@@ -1,14 +1,15 @@
 # Archiving Exception Names
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 Raised by `NSArchiver` if there are problems initializing or encoding.
 
 ## Topics
 
 ### Constants
-- [static let inconsistentArchiveException: NSExceptionName](nsexceptionname/inconsistentarchiveexception.md)
-  The name of an exception raised by [`NSArchiver`](nsarchiver.md) if there are problems initializing or encoding.
+- [static let inconsistentArchiveException: NSExceptionName](./nsexceptionname/inconsistentarchiveexception.md)
+  The name of an exception raised by [`NSArchiver`](./nsarchiver.md) if there are problems initializing or encoding.
 
 
 ---

@@ -1,17 +1,22 @@
 # getLinkType()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the link type for the baseband connection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getLinkType() -> BluetoothLinkType
+```
+
+```objc
+- (BluetoothLinkType) getLinkType;
 ```
 
 #### Return Value

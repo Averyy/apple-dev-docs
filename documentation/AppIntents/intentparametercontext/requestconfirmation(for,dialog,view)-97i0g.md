@@ -1,7 +1,8 @@
 # requestConfirmation(for:dialog:view:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Use `requestConfirmation` when you need to the ask user to confirm the parameter value.
 
@@ -11,7 +12,7 @@ Use `requestConfirmation` when you need to the ask user to confirm the parameter
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Use `requestConfirmation` when you need to the ask user to confirm the parameter
 ```swift
 func requestConfirmation<ViewType>(for itemToConfirm: Value.ValueType, dialog: IntentDialog? = nil, @ViewBuilder view: () -> ViewType) async throws -> Bool where ViewType : View
 ```
+
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 ## Parameters
 

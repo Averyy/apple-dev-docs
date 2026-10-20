@@ -1,6 +1,8 @@
 # Communicating with a Modem on a Serial Port
 
-**Framework**: IOKit
+**Framework**: IOKit  
+**Role**: Sample Code  
+**Download**: [CommunicatingWithAModemOnASerialPort.zip](https://docs-assets.developer.apple.com/published/e3fdf67f42/CommunicatingWithAModemOnASerialPort.zip)
 
 Find and connect to a modem attached to a serial port using IOKit.
 
@@ -12,7 +14,7 @@ Find and connect to a modem attached to a serial port using IOKit.
 
 This sample project creates a command-line program that uses IOKit to discover a modem on a serial port and to send and receive data. Run the program within Xcode and use the console to monitor the progress of the communication.
 
-##### 3527926
+##### Discover Attached Modems
 
 IOKit provides a matching service for various types of I/O devices, including serial ports and modems. The sample code’s `findModems()` function uses `kIOSerialBSDServiceValue` to locate a serial device. Once located, the code identifies the type of serial device as a modem with `kIOSerialBSDModemType`.
 
@@ -36,7 +38,7 @@ The `findModems()` function returns an IOKit iterator that `getModemPath()` uses
 
 If the function fails to find a modem or can’t obtain the device, the program prematurely quits.
 
-##### 3527927
+##### Open the Serial Port and Initialize the Modem
 
 After the `findModems` function finds the modem, `openSerialPort()` uses the low-level `open()` call to connect to the BSD file path discovered earlier. This function also captures the state of the serial port and saves it for later restoration.
 
@@ -53,7 +55,7 @@ This code allows the function to set up communication parameters such as baud ra
 
 If the call succeeds, it returns a BSD file descriptor. The `initalizeModem()` function then takes the file descriptor and sends the attention (`AT`) command to the modem using the low-level `write()` function. It then calls the `read()` function to obtain a response that confirms the modem is present.
 
-##### 3527928
+##### Close the Serial Port
 
 The `closeSerialPort()` function takes the passed file descriptor and waits for all output to flush, then restores the serial port to its original state and closes the file descriptor.
 

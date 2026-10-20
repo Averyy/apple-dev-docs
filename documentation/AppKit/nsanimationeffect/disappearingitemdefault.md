@@ -1,12 +1,15 @@
 # NSAnimationEffect.disappearingItemDefault
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default effect.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use +[NSCursor disappearingItemCursor] instead
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The default effect.
 case disappearingItemDefault
 ```
 
+```c
+NSAnimationEffectDisappearingItemDefault
+```
+
 ## See Also
 
-- [NSAnimationEffect.poof](nsanimationeffect/poof.md)
+### Constants
+- [NSAnimationEffect.poof](./poof.md)
   An effect showing a puff of smoke.
 
 

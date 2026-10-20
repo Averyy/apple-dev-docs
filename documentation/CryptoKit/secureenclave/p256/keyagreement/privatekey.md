@@ -1,7 +1,8 @@
 # SecureEnclave.P256.KeyAgreement.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A P-256 private key used for key agreement.
 
@@ -23,38 +24,38 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init(dataRepresentation: Data, authenticationContext: LAContext?) throws](secureenclave/p256/keyagreement/privatekey/init(datarepresentation:authenticationcontext:).md)
+- [init(dataRepresentation: Data, authenticationContext: LAContext?) throws](./privatekey/init%28datarepresentation,authenticationcontext%29.md)
   Creates a P-256 private key for key agreement from a data representation of the key with the given authentication context.
-- [init(compactRepresentable: Bool, accessControl: SecAccessControl, authenticationContext: LAContext?) throws](secureenclave/p256/keyagreement/privatekey/init(compactrepresentable:accesscontrol:authenticationcontext:).md)
+- [init(compactRepresentable: Bool, accessControl: SecAccessControl, authenticationContext: LAContext?) throws](./privatekey/init%28compactrepresentable,accesscontrol,authenticationcontext%29.md)
   Creates a P-256 private key for key agreement with the specified access control.
 ### Representing the key
-- [let dataRepresentation: Data](secureenclave/p256/keyagreement/privatekey/datarepresentation.md)
+- [let dataRepresentation: Data](./privatekey/datarepresentation.md)
   A data representation of the private key.
 ### Finding the public key
-- [let publicKey: P256.KeyAgreement.PublicKey](secureenclave/p256/keyagreement/privatekey/publickey.md)
+- [let publicKey: P256.KeyAgreement.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Creating a shared secret
-- [func sharedSecretFromKeyAgreement(with: P256.KeyAgreement.PublicKey) throws -> SharedSecret](secureenclave/p256/keyagreement/privatekey/sharedsecretfromkeyagreement(with:).md)
+- [func sharedSecretFromKeyAgreement(with: P256.KeyAgreement.PublicKey) throws -> SharedSecret](./privatekey/sharedsecretfromkeyagreement%28with%29.md)
   Computes a shared secret with the provided public key from another party.
-- [struct SharedSecret](sharedsecret.md)
+- [struct SharedSecret](../../../sharedsecret.md)
   A key agreement result from which you can derive a symmetric cryptographic key.
 ### Initializers
-- [init(compactRepresentable: Bool, accessControl: SecAccessControl) throws](secureenclave/p256/keyagreement/privatekey/init(compactrepresentable:accesscontrol:).md)
+- [init(compactRepresentable: Bool, accessControl: SecAccessControl) throws](./privatekey/init%28compactrepresentable,accesscontrol%29.md)
   Creates a P-256 private key for key agreement with the specified access control.
-- [init(dataRepresentation: Data) throws](secureenclave/p256/keyagreement/privatekey/init(datarepresentation:).md)
+- [init(dataRepresentation: Data) throws](./privatekey/init%28datarepresentation%29.md)
   Creates a P-256 private key for key agreement from the specified data representation.
 ### Default Implementations
-- [DiffieHellmanKeyAgreement Implementations](secureenclave/p256/keyagreement/privatekey/diffiehellmankeyagreement-implementations.md)
+- [DiffieHellmanKeyAgreement Implementations](./privatekey/diffiehellmankeyagreement-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
-- [Escapable](../swift/escapable.md)
-- [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [DiffieHellmanKeyAgreement](../../../diffiehellmankeyagreement.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [HPKEDiffieHellmanPrivateKey](../../../hpkediffiehellmanprivatekey.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

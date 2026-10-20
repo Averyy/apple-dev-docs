@@ -1,7 +1,8 @@
 # select(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func select(_ filter: QuartzFilter!) -> Bool
+```
+
+```objc
+- (BOOL) selectFilter:(QuartzFilter *) filter;
 ```
 
 

@@ -1,7 +1,8 @@
 # HKActivitySummaryQueryDescriptor.Results
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits updates from an activity summary query.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that emits updates from an activity summary query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,19 +23,20 @@ struct Results
 ## Topics
 
 ### Creating an Iterator
-- [HKActivitySummaryQueryDescriptor.Results.Iterator](hkactivitysummaryquerydescriptor/results/iterator.md)
+- [HKActivitySummaryQueryDescriptor.Results.Iterator](./results/iterator.md)
   An iterator for accessing active summary results.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func result(for: HKHealthStore) async throws -> [HKActivitySummary]](hkactivitysummaryquerydescriptor/result(for:).md)
+### Running queries
+- [func result(for: HKHealthStore) async throws -> [HKActivitySummary]](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
-- [func results(for: HKHealthStore) -> HKActivitySummaryQueryDescriptor.Results](hkactivitysummaryquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKActivitySummaryQueryDescriptor.Results](./results%28for%29.md)
   Initiates a long-running query that returns its results using an asynchronous sequence.
 
 

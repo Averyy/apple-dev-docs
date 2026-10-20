@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration for authentication that uses EAP-TTLS.
 
@@ -19,21 +20,21 @@ struct TTLSConfiguration
 ## Topics
 
 ### Instance Properties
-- [let innerAuthentication: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct/innerauthentication-swift.property.md)
+- [let innerAuthentication: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication?](./ttlsconfiguration-swift.struct/innerauthentication-swift.property.md)
   The inner authentication type to use for the Tunneled Transport Layer Security (TTLS) configuration.
 ### Enumerations
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct/innerauthentication-swift.enum.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication](./ttlsconfiguration-swift.struct/innerauthentication-swift.enum.md)
   Values that represent inner authentication types.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

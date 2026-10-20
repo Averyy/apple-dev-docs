@@ -1,7 +1,8 @@
 # kAXExtrasMenuBarAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.8+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXExtrasMenuBarAttribute: String { get }
+```
+
+```c
+#define kAXExtrasMenuBarAttribute
 ```
 
 

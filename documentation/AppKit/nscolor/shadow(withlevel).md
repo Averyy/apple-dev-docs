@@ -1,17 +1,22 @@
 # shadow(withLevel:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new color object that represents a blend between the current color and the shadow color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func shadow(withLevel val: CGFloat) -> NSColor?
+```
+
+```objc
+- (NSColor *) shadowWithLevel:(CGFloat) val;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The new `NSColor` object. Returns `nil` if the colors can’t be converted.
 
 #### Discussion
 
-The shadow color is provided by the [`shadowColor`](nscolor/shadowcolor.md) property. Call this method when you want to darken the current color for use in shadows.
+The shadow color is provided by the [`shadowColor`](./shadowcolor.md) property. Call this method when you want to darken the current color for use in shadows.
 
 ## Parameters
 
@@ -28,13 +33,14 @@ The shadow color is provided by the [`shadowColor`](nscolor/shadowcolor.md) prop
 
 ## See Also
 
-- [func usingColorSpace(NSColorSpace) -> NSColor?](nscolor/usingcolorspace(_:).md)
+### Transforming existing color objects
+- [func usingColorSpace(NSColorSpace) -> NSColor?](./usingcolorspace%28_%29.md)
   Creates a new color object representing the color of the current color object in the specified color space.
-- [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](nscolor/blended(withfraction:of:).md)
+- [func blended(withFraction: CGFloat, of: NSColor) -> NSColor?](./blended%28withfraction,of%29.md)
   Creates a new color object whose component values are a weighted sum of the current color object and the specified color object’s.
-- [func withAlphaComponent(CGFloat) -> NSColor](nscolor/withalphacomponent(_:).md)
+- [func withAlphaComponent(CGFloat) -> NSColor](./withalphacomponent%28_%29.md)
   Creates a new color object that has the same color space and component values as the current color object, but the specified alpha component.
-- [func highlight(withLevel: CGFloat) -> NSColor?](nscolor/highlight(withlevel:).md)
+- [func highlight(withLevel: CGFloat) -> NSColor?](./highlight%28withlevel%29.md)
   Creates a new color object that represents a blend between the current color and the highlight color.
 
 

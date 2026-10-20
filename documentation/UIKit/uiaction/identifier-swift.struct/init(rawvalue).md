@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action identifier from the specified string.
 
@@ -24,7 +25,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](uiaction/identifier-swift.struct/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates an action identifier from the specified string.
 
 

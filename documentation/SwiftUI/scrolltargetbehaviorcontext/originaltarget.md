@@ -1,7 +1,8 @@
 # originalTarget
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original target when the scroll gesture began.
 
@@ -22,13 +23,14 @@ var originalTarget: ScrollTarget { get }
 
 ## See Also
 
-- [var axes: Axis.Set](scrolltargetbehaviorcontext/axes.md)
+### Getting the scroll target behavior context
+- [var axes: Axis.Set](./axes.md)
   The axes in which the scrollable view is scrollable.
-- [var containerSize: CGSize](scrolltargetbehaviorcontext/containersize.md)
+- [var containerSize: CGSize](./containersize.md)
   The size of the container of the scrollable view.
-- [var contentSize: CGSize](scrolltargetbehaviorcontext/contentsize.md)
+- [var contentSize: CGSize](./contentsize.md)
   The size of the content of the scrollable view.
-- [var velocity: CGVector](scrolltargetbehaviorcontext/velocity.md)
+- [var velocity: CGVector](./velocity.md)
   The current velocity of the scrollable view’s scroll gesture.
 
 

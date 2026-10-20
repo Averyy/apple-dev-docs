@@ -1,7 +1,8 @@
 # directionPad
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the direction pad on a directional pad element.
 
@@ -11,7 +12,7 @@ The name of the direction pad on a directional pad element.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ static let directionPad: GCDirectionPadElementName
 
 ## See Also
 
-- [static let leftThumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/leftthumbstick.md)
+### Getting the directional pad component names
+- [static let leftThumbstick: GCDirectionPadElementName](./leftthumbstick.md)
   The name of the left thumbstick on a directional pad element.
-- [static let rightThumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/rightthumbstick.md)
+- [static let rightThumbstick: GCDirectionPadElementName](./rightthumbstick.md)
   The name of the right thumbstick on a directional pad element.
 
 

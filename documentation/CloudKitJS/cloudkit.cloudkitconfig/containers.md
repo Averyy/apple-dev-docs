@@ -1,16 +1,17 @@
 # containers
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An array of dictionaries used to configure each container of type [`CloudKit.ContainerConfig`](cloudkit.containerconfig.md).
+An array of dictionaries used to configure each container of type [`CloudKit.ContainerConfig`](../cloudkit.containerconfig.md).
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ContainerConfig[] containers;
 ```
 

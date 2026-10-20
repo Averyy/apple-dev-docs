@@ -1,7 +1,8 @@
 # date
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delivery date of the notification.
 
@@ -20,13 +21,26 @@ The delivery date of the notification.
 var date: Date { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSDate * date;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSDate * date;
+```
+
 #### Discussion
 
 The system displays this date to the user in Notification Center.
 
 ## See Also
 
-- [var request: UNNotificationRequest](unnotification/request.md)
+### Getting the Notification Details
+- [var request: UNNotificationRequest](./request.md)
   The notification request containing the payload and trigger condition for the notification.
 
 

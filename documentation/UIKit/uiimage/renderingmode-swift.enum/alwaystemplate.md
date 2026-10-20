@@ -1,7 +1,8 @@
 # UIImage.RenderingMode.alwaysTemplate
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Always draw the image as a template image, ignoring its color information.
 
@@ -9,7 +10,7 @@ Always draw the image as a template image, ignoring its color information.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,11 +20,16 @@ Always draw the image as a template image, ignoring its color information.
 case alwaysTemplate
 ```
 
+```c
+UIImageRenderingModeAlwaysTemplate
+```
+
 ## See Also
 
-- [UIImage.RenderingMode.automatic](uiimage/renderingmode-swift.enum/automatic.md)
+### Rendering modes
+- [UIImage.RenderingMode.automatic](./automatic.md)
   Draw the image using the context’s default rendering mode.
-- [UIImage.RenderingMode.alwaysOriginal](uiimage/renderingmode-swift.enum/alwaysoriginal.md)
+- [UIImage.RenderingMode.alwaysOriginal](./alwaysoriginal.md)
   Always draw the original image, without treating it as a template.
 
 

@@ -1,7 +1,8 @@
 # OSLogEntryLog.Level.undefined
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The log level was never specified.
 
@@ -20,21 +21,26 @@ The log level was never specified.
 case undefined
 ```
 
+```c
+OSLogEntryLogLevelUndefined
+```
+
 #### Discussion
 
 You should never encounter an undefined log level.
 
 ## See Also
 
-- [OSLogEntryLog.Level.debug](oslogentrylog/level-swift.enum/debug.md)
+### Log Levels
+- [OSLogEntryLog.Level.debug](./debug.md)
   A log level that captures diagnostic information.
-- [OSLogEntryLog.Level.info](oslogentrylog/level-swift.enum/info.md)
+- [OSLogEntryLog.Level.info](./info.md)
   The log level that captures additional information.
-- [OSLogEntryLog.Level.notice](oslogentrylog/level-swift.enum/notice.md)
+- [OSLogEntryLog.Level.notice](./notice.md)
   The log level that captures notifications.
-- [OSLogEntryLog.Level.error](oslogentrylog/level-swift.enum/error.md)
+- [OSLogEntryLog.Level.error](./error.md)
   The log level that captures errors.
-- [OSLogEntryLog.Level.fault](oslogentrylog/level-swift.enum/fault.md)
+- [OSLogEntryLog.Level.fault](./fault.md)
   The log level that captures fault information.
 
 

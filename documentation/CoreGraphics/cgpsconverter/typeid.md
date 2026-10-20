@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the Core Foundation type identifier for PostScript converters.
 
@@ -13,6 +14,10 @@ Returns the Core Foundation type identifier for PostScript converters.
 
 ```swift
 class var typeID: CFTypeID { get }
+```
+
+```c
+extern CFTypeID CGPSConverterGetTypeID();
 ```
 
 

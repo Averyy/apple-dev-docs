@@ -1,7 +1,8 @@
 # white
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The white color in the Generic gray color space.
 
@@ -16,9 +17,10 @@ class var white: CGColor { get }
 
 ## See Also
 
-- [class var black: CGColor](cgcolor/black.md)
+### Getting System Colors
+- [class var black: CGColor](./black.md)
   The black color in the Generic gray color space.
-- [class var clear: CGColor](cgcolor/clear.md)
+- [class var clear: CGColor](./clear.md)
   The clear color in the Generic gray color space.
 
 

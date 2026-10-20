@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a scrubber selection style when included from a nib or Storyboard.
 
@@ -14,15 +15,20 @@ Initializes a scrubber selection style when included from a nib or Storyboard.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 #### Return Value
 
 A properly initialized scrubber selection style object.
 
 ## See Also
 
-- [init()](nsscrubberselectionstyle/init.md)
+### Creating a selection style
+- [init()](./init%28%29.md)
   Initializes a new scrubber selection style.
-- [func makeSelectionView() -> NSScrubberSelectionView?](nsscrubberselectionstyle/makeselectionview.md)
+- [func makeSelectionView() -> NSScrubberSelectionView?](./makeselectionview%28%29.md)
   Provides an opportunity to create a customized scrubber selection style.
 
 

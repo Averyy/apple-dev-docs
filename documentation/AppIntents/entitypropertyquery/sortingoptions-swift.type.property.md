@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The set of sorting orders supported by this query.
@@ -12,7 +13,7 @@ The set of sorting orders supported by this query.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,8 +24,9 @@ static var sortingOptions: Self.SortingOptions { get }
 
 ## See Also
 
-- [EntityPropertyQuery.SortingOptions](entitypropertyquery/sortingoptions-swift.typealias.md)
-- [EntityPropertyQuery.SortableBy](entitypropertyquery/sortableby.md)
+### Sorting the results
+- [EntityPropertyQuery.SortingOptions](./sortingoptions-swift.typealias.md)
+- [EntityPropertyQuery.SortableBy](./sortableby.md)
 
 
 ---

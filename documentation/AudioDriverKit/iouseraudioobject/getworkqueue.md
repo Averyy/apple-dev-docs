@@ -1,7 +1,8 @@
 # GetWorkQueue
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the work queue created by the audio object, as a pointer to a dispatch queue.
 
@@ -10,7 +11,7 @@ Gets the work queue created by the audio object, as a pointer to a dispatch queu
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<IODispatchQueue> GetWorkQueue();
 ```
 
@@ -24,15 +25,16 @@ The work queue synchronizes access to the driver’s state. Setters and getters 
 
 ## See Also
 
-- [GetClassID](iouseraudioobject/getclassid.md)
+### Getting Information About the Class
+- [GetClassID](./getclassid.md)
   Gets the audio class identifier of the object.
-- [GetBaseClassID](iouseraudioobject/getbaseclassid.md)
+- [GetBaseClassID](./getbaseclassid.md)
   Gets the audio class identifier of the base class object.
-- [IOUserAudioClassID](audiodriverkit/iouseraudioclassid.md)
+- [IOUserAudioClassID](../audiodriverkit-page/iouseraudioclassid.md)
   An identifier for the type of audio object.
-- [GetObjectID](iouseraudioobject/getobjectid.md)
+- [GetObjectID](./getobjectid.md)
   Gets the object’s identifier.
-- [IOUserAudioObjectID](audiodriverkit/iouseraudioobjectid.md)
+- [IOUserAudioObjectID](../audiodriverkit-page/iouseraudioobjectid.md)
   An identifier that provides a handle on a specific audio object.
 
 

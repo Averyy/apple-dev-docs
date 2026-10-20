@@ -1,7 +1,8 @@
 # fetchErrorLog(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously retrieves the error log without blocking the calling thread.
 
@@ -18,7 +19,16 @@ Asynchronously retrieves the error log without blocking the calling thread.
 
 ```swift
 nonisolated
+func fetchErrorLog(completionHandler: @escaping @Sendable (sending AVPlayerItemErrorLog?) -> Void)
+```
+
+```swift
+nonisolated
 var errorLog: AVPlayerItemErrorLog? { get async }
+```
+
+```objc
+- (void) fetchErrorLogWithCompletionHandler:(void (^)(AVPlayerItemErrorLog *errorLog)) completionHandler;
 ```
 
 #### Discussion

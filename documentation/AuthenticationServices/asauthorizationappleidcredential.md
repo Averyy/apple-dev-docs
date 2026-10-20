@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDCredential
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A credential that results from a successful Apple ID authentication.
 
@@ -20,63 +21,68 @@ A credential that results from a successful Apple ID authentication.
 class ASAuthorizationAppleIDCredential
 ```
 
+```objc
+@interface ASAuthorizationAppleIDCredential : NSObject
+```
+
 ## Topics
 
 ### Identifying a User
-- [var identityToken: Data?](asauthorizationappleidcredential/identitytoken.md)
+- [var identityToken: Data?](./asauthorizationappleidcredential/identitytoken.md)
   A JSON Web Token (JWT) that securely communicates information about the user to the app.
-- [var authorizationCode: Data?](asauthorizationappleidcredential/authorizationcode.md)
+- [var authorizationCode: Data?](./asauthorizationappleidcredential/authorizationcode.md)
   A token that the app uses to interact with the server.
-- [var state: String?](asauthorizationappleidcredential/state.md)
+- [var state: String?](./asauthorizationappleidcredential/state.md)
   An arbitrary string that your app provides to the request that generates the credential.
-- [var user: String](asauthorizationappleidcredential/user.md)
+- [var user: String](./asauthorizationappleidcredential/user.md)
   An identifier for the authenticated user.
 ### Getting Contact Information
-- [var authorizedScopes: [ASAuthorization.Scope]](asauthorizationappleidcredential/authorizedscopes.md)
+- [var authorizedScopes: [ASAuthorization.Scope]](./asauthorizationappleidcredential/authorizedscopes.md)
   The contact information the user authorized your app to access.
-- [var fullName: PersonNameComponents?](asauthorizationappleidcredential/fullname.md)
+- [var fullName: PersonNameComponents?](./asauthorizationappleidcredential/fullname.md)
   The user’s full name from their Apple ID or a user-submitted value provided from the Sign in with Apple UI.
-- [var email: String?](asauthorizationappleidcredential/email.md)
+- [var email: String?](./asauthorizationappleidcredential/email.md)
   The user’s email address.
 ### Detecting User Characteristics
-- [var realUserStatus: ASUserDetectionStatus](asauthorizationappleidcredential/realuserstatus.md)
+- [var realUserStatus: ASUserDetectionStatus](./asauthorizationappleidcredential/realuserstatus.md)
   A value that indicates whether the user appears to be a real person.
-- [enum ASUserDetectionStatus](asuserdetectionstatus.md)
+- [enum ASUserDetectionStatus](./asuserdetectionstatus.md)
   Possible values for the real user indicator.
 ### Instance Properties
-- [var userAgeRange: ASUserAgeRange](asauthorizationappleidcredential/useragerange.md)
+- [var userAgeRange: ASUserAgeRange](./asauthorizationappleidcredential/useragerange.md)
 ### Initializers
-- [init?(coder: NSCoder)](asauthorizationappleidcredential/init(coder:).md)
+- [init?(coder: NSCoder)](./asauthorizationappleidcredential/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASAuthorizationCredential](asauthorizationcredential.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationCredential](./asauthorizationcredential.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing User Authentication with Sign in with Apple](implementing-user-authentication-with-sign-in-with-apple.md)
+### Sign In with Apple
+- [Implementing User Authentication with Sign in with Apple](./implementing-user-authentication-with-sign-in-with-apple.md)
   Provide a way for users of your app to set up an account and start using your services.
-- [Simplifying User Authentication in a tvOS App](simplifying-user-authentication-in-a-tvos-app.md)
+- [Simplifying User Authentication in a tvOS App](./simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
-- [struct SignInWithAppleButton](signinwithapplebutton.md)
+- [struct SignInWithAppleButton](./signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
-- [Sign in with Apple Entitlement](../bundleresources/entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](../BundleResources/entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
-- [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
+- [class ASAuthorizationAppleIDProvider](./asauthorizationappleidprovider.md)
   A mechanism for generating requests to authenticate users based on their Apple ID.
 
 

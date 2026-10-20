@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes the given element and any elements subsumed by the given element.
@@ -32,11 +33,18 @@ For sets where the set type and element type are the same, like `OptionSet` type
 
 - `member`: The element of the set to remove.
 
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func remove(Self.Element) -> Self.Element?](./remove%28_%29-1pj2m.md)
+  Removes the given element and all elements subsumed by it.
+
 ## See Also
 
-- [func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)](setalgebra/insert(_:).md)
+### Adding and Removing Elements
+- [func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)](./insert%28_%29.md)
   Inserts the given element in the set if it is not already present.
-- [func update(with: Self.Element) -> Self.Element?](setalgebra/update(with:).md)
+- [func update(with: Self.Element) -> Self.Element?](./update%28with%29.md)
   Inserts the given element into the set unconditionally.
 
 

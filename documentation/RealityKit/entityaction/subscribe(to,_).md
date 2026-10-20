@@ -1,7 +1,8 @@
 # subscribe(to:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Subscribes to an action event.
 
@@ -14,6 +15,13 @@ Subscribes to an action event.
 - visionOS 2.0+
 
 ## Declaration
+
+```swift
+@MainActor
+@preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> Void)
+```
+
+**Other overloads**:
 
 ```swift
 @MainActor

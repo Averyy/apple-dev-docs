@@ -1,7 +1,8 @@
 # read
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that enables reading from the resource.
 
@@ -17,6 +18,10 @@ An option that enables reading from the resource.
 
 ```swift
 static var read: MTLResourceUsage { get }
+```
+
+```c
+MTLResourceUsageRead
 ```
 
 

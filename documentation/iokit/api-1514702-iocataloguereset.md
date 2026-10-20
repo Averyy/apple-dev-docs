@@ -1,7 +1,8 @@
 # IOCatalogueReset(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func IOCatalogueReset(_ mainPort: mach_port_t, _ flag: UInt32) -> kern_return_t
+```
+
+```c
+kern_return_t IOCatalogueReset(mach_port_t mainPort, uint32_t flag);
 ```
 
 

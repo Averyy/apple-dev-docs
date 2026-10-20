@@ -27,42 +27,43 @@ The `carousel` element displays images in a row that the user can navigate by sw
 </carousel>
 ```
 
-##### Subelements of Carousel
+##### Subelements of carousel
 
-- [`section`](section.md)
+- [section](./section.md)
 
-##### Elements That Use Carousel
+##### Elements that Use carousel
 
-- [`collectionList`](collectionlist.md)
-- [`showcaseTemplate`](showcasetemplate.md)
+- [collectionList](./collectionlist.md)
+- [showcaseTemplate](./showcasetemplate.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [grid](grid.md)
+### Container Elements
+- [grid](./grid.md)
   Arranges elements in a grid pattern.
-- [imgDeck](imgdeck.md)
+- [imgDeck](./imgdeck.md)
   Contains several images to be displayed at a later time.
-- [infoTable](infotable.md)
+- [infoTable](./infotable.md)
   Displays contained element information in a vertical format, with each successive element directly below the previous element.
-- [organizer](organizer.md)
+- [organizer](./organizer.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [row](row.md)
+- [row](./row.md)
   Displays elements horizontally.
-- [section](section.md)
+- [section](./section.md)
   Combines elements and acts as a single element.
-- [stack](stack.md)
+- [stack](./stack.md)
   Groups and lays out elements vertically.
-- [shelf](shelf.md)
+- [shelf](./shelf.md)
   Displays elements horizontally and adds the ability to scroll to offscreen elements.
 
 

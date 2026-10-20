@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the shared memory region.
 
@@ -12,6 +13,10 @@ The size of the shared memory region.
 
 ```swift
 var size: UInt64 { get }
+```
+
+```objc
+@property (readonly) uint64_t size;
 ```
 
 

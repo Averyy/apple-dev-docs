@@ -1,7 +1,8 @@
 # BAErrorCode.downloadInvalid
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -17,23 +18,28 @@
 case downloadInvalid
 ```
 
+```c
+BAErrorCodeDownloadInvalid
+```
+
 ## See Also
 
-- [BAErrorCode.callFromExtensionNotAllowed](baerrorcode/callfromextensionnotallowed.md)
-- [BAErrorCode.callFromInactiveProcessNotAllowed](baerrorcode/callfrominactiveprocessnotallowed.md)
-- [BAErrorCode.callerConnectionInvalid](baerrorcode/callerconnectioninvalid.md)
-- [BAErrorCode.callerConnectionNotAccepted](baerrorcode/callerconnectionnotaccepted.md)
-- [BAErrorCode.downloadAlreadyFailed](baerrorcode/downloadalreadyfailed.md)
-- [BAErrorCode.downloadAlreadyScheduled](baerrorcode/downloadalreadyscheduled.md)
-- [BAErrorCode.downloadBackgroundActivityProhibited](baerrorcode/downloadbackgroundactivityprohibited.md)
-- [BAErrorCode.downloadEssentialDownloadNotPermitted](baerrorcode/downloadessentialdownloadnotpermitted.md)
-- [BAErrorCode.downloadFailedToStart](baerrorcode/downloadfailedtostart.md)
-- [BAErrorCode.downloadNotScheduled](baerrorcode/downloadnotscheduled.md)
-- [BAErrorCode.downloadWouldExceedAllowance](baerrorcode/downloadwouldexceedallowance.md)
-- [BAErrorCode.sessionDownloadAllowanceExceeded](baerrorcode/sessiondownloadallowanceexceeded.md)
-- [BAErrorCode.sessionDownloadDisallowedByAllowance](baerrorcode/sessiondownloaddisallowedbyallowance.md)
-- [BAErrorCode.sessionDownloadDisallowedByDomain](baerrorcode/sessiondownloaddisallowedbydomain.md)
-- [BAErrorCode.sessionDownloadNotPermittedBeforeAppLaunch](baerrorcode/sessiondownloadnotpermittedbeforeapplaunch.md)
+### Error codes
+- [BAErrorCode.callFromExtensionNotAllowed](./callfromextensionnotallowed.md)
+- [BAErrorCode.callFromInactiveProcessNotAllowed](./callfrominactiveprocessnotallowed.md)
+- [BAErrorCode.callerConnectionInvalid](./callerconnectioninvalid.md)
+- [BAErrorCode.callerConnectionNotAccepted](./callerconnectionnotaccepted.md)
+- [BAErrorCode.downloadAlreadyFailed](./downloadalreadyfailed.md)
+- [BAErrorCode.downloadAlreadyScheduled](./downloadalreadyscheduled.md)
+- [BAErrorCode.downloadBackgroundActivityProhibited](./downloadbackgroundactivityprohibited.md)
+- [BAErrorCode.downloadEssentialDownloadNotPermitted](./downloadessentialdownloadnotpermitted.md)
+- [BAErrorCode.downloadFailedToStart](./downloadfailedtostart.md)
+- [BAErrorCode.downloadNotScheduled](./downloadnotscheduled.md)
+- [BAErrorCode.downloadWouldExceedAllowance](./downloadwouldexceedallowance.md)
+- [BAErrorCode.sessionDownloadAllowanceExceeded](./sessiondownloadallowanceexceeded.md)
+- [BAErrorCode.sessionDownloadDisallowedByAllowance](./sessiondownloaddisallowedbyallowance.md)
+- [BAErrorCode.sessionDownloadDisallowedByDomain](./sessiondownloaddisallowedbydomain.md)
+- [BAErrorCode.sessionDownloadNotPermittedBeforeAppLaunch](./sessiondownloadnotpermittedbeforeapplaunch.md)
 
 
 ---

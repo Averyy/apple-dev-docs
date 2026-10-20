@@ -1,7 +1,8 @@
 # init(browseDescriptor:parameters:)
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view controller that displays the available devices on your local network.
 
@@ -21,11 +22,12 @@ Creates a view controller that displays the available devices on your local netw
 ## Parameters
 
 - `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call `NWBrowser.Descriptor.applicationService(name:options:)` and provide a name for the service.
-- `parameters`: Parameters for your network connection. Use [`applicationService`](https://developer.apple.com/documentation/network/nwparameters/applicationservice) to create a default set of parameters that create an encrypted connection with the other devices. You can also add `a` [`NWProtocolFramer`](https://developer.apple.com/documentation/network/nwprotocolframer) to provide an application-level messaging protocol.
+- `parameters`: Parameters for your network connection. Use [`applicationService`](../../Network/nwparameters/applicationservice.md) to create a default set of parameters that create an encrypted connection with the other devices. You can also add `a` [`NWProtocolFramer`](../../Network/nwprotocolframer.md) to provide an application-level messaging protocol.
 
 ## See Also
 
-- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).md)
+### Creating device picker view controllers
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](./init%28browsedescriptor,parameters,access%29.md)
   Creates a view controller with the parameters and access level you specify that displays the available devices on network.
 
 

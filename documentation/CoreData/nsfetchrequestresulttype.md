@@ -1,18 +1,19 @@
 # NSFetchRequestResultType
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the possible result types a fetch request can return.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,48 +21,53 @@ Constants that specify the possible result types a fetch request can return.
 struct NSFetchRequestResultType
 ```
 
+```c
+enum NSFetchRequestResultType : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by [`resultType`](nsfetchrequest/resulttype.md).
+These constants are used by [`resultType`](./nsfetchrequest/resulttype.md).
 
 ## Topics
 
 ### Result Types
-- [static var managedObjectResultType: NSFetchRequestResultType](nsfetchrequestresulttype/managedobjectresulttype.md)
+- [static var managedObjectResultType: NSFetchRequestResultType](./nsfetchrequestresulttype/managedobjectresulttype.md)
   The request returns managed objects.
-- [static var managedObjectIDResultType: NSFetchRequestResultType](nsfetchrequestresulttype/managedobjectidresulttype.md)
+- [static var managedObjectIDResultType: NSFetchRequestResultType](./nsfetchrequestresulttype/managedobjectidresulttype.md)
   The request returns managed object IDs.
-- [static var dictionaryResultType: NSFetchRequestResultType](nsfetchrequestresulttype/dictionaryresulttype.md)
+- [static var dictionaryResultType: NSFetchRequestResultType](./nsfetchrequestresulttype/dictionaryresulttype.md)
   The request returns dictionaries.
-- [static var countResultType: NSFetchRequestResultType](nsfetchrequestresulttype/countresulttype.md)
+- [static var countResultType: NSFetchRequestResultType](./nsfetchrequestresulttype/countresulttype.md)
   The request returns the count of the objects that match the request.
 ### Initializers
-- [init(rawValue: UInt)](nsfetchrequestresulttype/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsfetchrequestresulttype/init%28rawvalue%29.md)
   Creates a fetch request result type using the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+### Managing the Fetch Request’s Entity
+- [convenience init(entityName: String)](./nsfetchrequest/init%28entityname%29-5anoo.md)
   Returns a fetch request configured with a given entity name.
-- [init()](nsfetchrequest/init.md)
+- [init()](./nsfetchrequest/init%28%29.md)
   Creates a new fetch request.
-- [var entityName: String?](nsfetchrequest/entityname.md)
+- [var entityName: String?](./nsfetchrequest/entityname.md)
   The name of the entity the request is configured to fetch.
-- [var entity: NSEntityDescription?](nsfetchrequest/entity.md)
+- [var entity: NSEntityDescription?](./nsfetchrequest/entity.md)
   The entity specified for the fetch request.
-- [var includesSubentities: Bool](nsfetchrequest/includessubentities.md)
+- [var includesSubentities: Bool](./nsfetchrequest/includessubentities.md)
   A Boolean value that indicates whether the fetch request includes subentities in the results.
 
 

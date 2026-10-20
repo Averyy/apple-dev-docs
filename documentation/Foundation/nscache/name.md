@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the cache.
 
@@ -18,6 +19,10 @@ The name of the cache.
 
 ```swift
 var name: String { get set }
+```
+
+```objc
+@property (copy) NSString * name;
 ```
 
 #### Discussion

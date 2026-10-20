@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
 

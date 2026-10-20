@@ -1,7 +1,8 @@
 # CPLaneStatus.good
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lane status is good.
 
@@ -16,11 +17,16 @@ The lane status is good.
 case good
 ```
 
+```c
+CPLaneStatusGood
+```
+
 ## See Also
 
-- [CPLaneStatus.notGood](cplanestatus/notgood.md)
+### Lane statuses
+- [CPLaneStatus.notGood](./notgood.md)
   The lane status is not good.
-- [CPLaneStatus.preferred](cplanestatus/preferred.md)
+- [CPLaneStatus.preferred](./preferred.md)
   The lane status is preferred.
 
 

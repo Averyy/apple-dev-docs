@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata the builder saves with the workout.
 
@@ -9,7 +10,7 @@ The metadata the builder saves with the workout.
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -19,9 +20,14 @@ The metadata the builder saves with the workout.
 var metadata: [String : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,id> * metadata;
+```
+
 ## See Also
 
-- [func addMetadata([String : Any], completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/addmetadata(_:completion:).md)
+### Adding metadata to the workout
+- [func addMetadata([String : Any], completion: (Bool, (any Error)?) -> Void)](./addmetadata%28_,completion%29.md)
   Adds metadata to be saved with the workout.
 
 

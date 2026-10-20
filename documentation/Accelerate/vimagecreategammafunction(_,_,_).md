@@ -1,7 +1,8 @@
 # vImageCreateGammaFunction(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a gamma function object.
 
@@ -20,37 +21,42 @@ Returns a gamma function object.
 func vImageCreateGammaFunction(_ gamma: Float, _ gamma_type: Int32, _ flags: vImage_Flags) -> GammaFunction!
 ```
 
+```c
+GammaFunctionvImageCreateGammaFunction(float gamma, int gamma_type, vImage_Flags flags);
+```
+
 #### Return Value
 
 A gamma function object that encapsulates a gamma value, a gamma function type, and option flags.
 
 #### Discussion
 
-Use this function to create a gamma function object that you pass to [`vImageGamma_Planar8toPlanarF(_:_:_:_:)`](vimagegamma_planar8toplanarf(_:_:_:_:).md), [`vImageGamma_PlanarFtoPlanar8(_:_:_:_:)`](vimagegamma_planarftoplanar8(_:_:_:_:).md), or [`vImageGamma_PlanarF(_:_:_:_:)`](vimagegamma_planarf(_:_:_:_:).md).
+Use this function to create a gamma function object that you pass to [`vImageGamma_Planar8toPlanarF(_:_:_:_:)`](./vimagegamma_planar8toplanarf%28_,_,_,_%29.md), [`vImageGamma_PlanarFtoPlanar8(_:_:_:_:)`](./vimagegamma_planarftoplanar8%28_,_,_,_%29.md), or [`vImageGamma_PlanarF(_:_:_:_:)`](./vimagegamma_planarf%28_,_,_,_%29.md).
 
-The vImage library provides a user-defined half-precision gamma type and constant half-precision gamma types, such as [`kvImageGamma_sRGB_forward_half_precision`](kvimagegamma_srgb_forward_half_precision.md). Use a half-precision gamma type when creating a gamma function for image data that’s intended for conversion to 8-bit. The half-precision gamma types work with floating-point values in the range `0...1` and provide a precision of ±1 / 4,096.
+The vImage library provides a user-defined half-precision gamma type and constant half-precision gamma types, such as [`kvImageGamma_sRGB_forward_half_precision`](./kvimagegamma_srgb_forward_half_precision.md). Use a half-precision gamma type when creating a gamma function for image data that’s intended for conversion to 8-bit. The half-precision gamma types work with floating-point values in the range `0...1` and provide a precision of ±1 / 4,096.
 
-The gamma correction functions that use a [`GammaFunction`](gammafunction.md) object are symmetric around zero. That is, they treat negative values as if they’re positive, and restore the sign after applying the exponent.
+The gamma correction functions that use a [`GammaFunction`](./gammafunction.md) object are symmetric around zero. That is, they treat negative values as if they’re positive, and restore the sign after applying the exponent.
 
 ## Parameters
 
-- `gamma`: The gamma value when `gamma_type` is [`kvImageGamma_UseGammaValue`](kvimagegamma_usegammavalue.md) or [`kvImageGamma_UseGammaValue_half_precision`](kvimagegamma_usegammavalue_half_precision.md).
-- `gamma_type`: A constant that specifies the gamma type. See [`Gamma function types`](1584480-gamma-function-types.md).
-- `flags`: Reserved for future use. Pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `gamma`: The gamma value when `gamma_type` is [`kvImageGamma_UseGammaValue`](./kvimagegamma_usegammavalue.md) or [`kvImageGamma_UseGammaValue_half_precision`](./kvimagegamma_usegammavalue_half_precision.md).
+- `gamma_type`: A constant that specifies the gamma type. See [Gamma function types](./api-1584480-gamma-function-types.md).
+- `flags`: Reserved for future use. Pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Gamma function types](1584480-gamma-function-types.md)
+### Applying a gamma function
+- [Gamma function types](./api-1584480-gamma-function-types.md)
   Types of full- or half-precision gamma functions.
-- [func vImageGamma_Planar8toPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](vimagegamma_planar8toplanarf(_:_:_:_:).md)
+- [func vImageGamma_Planar8toPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](./vimagegamma_planar8toplanarf%28_,_,_,_%29.md)
   Applies a gamma function to an 8-bit planar image to produce a 32-bit planar image.
-- [func vImageGamma_PlanarFtoPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](vimagegamma_planarftoplanar8(_:_:_:_:).md)
+- [func vImageGamma_PlanarFtoPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](./vimagegamma_planarftoplanar8%28_,_,_,_%29.md)
   Applies a gamma function to a 32-bit planar image to produce an 8-bit planar image.
-- [func vImageGamma_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](vimagegamma_planarf(_:_:_:_:).md)
+- [func vImageGamma_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](./vimagegamma_planarf%28_,_,_,_%29.md)
   Applies a gamma function to a PlanarF image.
-- [func vImageDestroyGammaFunction(GammaFunction!)](vimagedestroygammafunction(_:).md)
+- [func vImageDestroyGammaFunction(GammaFunction!)](./vimagedestroygammafunction%28_%29.md)
   Destroys a gamma function object.
-- [Adjusting saturation and applying tone mapping](adjusting-saturation-and-applying-tone-mapping.md)
+- [Adjusting saturation and applying tone mapping](./adjusting-saturation-and-applying-tone-mapping.md)
   Convert an RGB image to discrete luminance and chrominance channels, and apply color and contrast treatments.
 
 

@@ -1,7 +1,8 @@
 # init(_:frameAnalysisSpacing:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a person-segmentation request.
 

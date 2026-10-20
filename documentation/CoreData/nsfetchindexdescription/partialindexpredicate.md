@@ -1,7 +1,8 @@
 # partialIndexPredicate
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate that selects rows for indexing, if the index is a partial index.
 
@@ -21,13 +22,18 @@ A predicate that selects rows for indexing, if the index is a partial index.
 var partialIndexPredicate: NSPredicate? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSPredicate * partialIndexPredicate;
+```
+
 ## See Also
 
-- [var elements: [NSFetchIndexElementDescription]](nsfetchindexdescription/elements.md)
+### Inspecting an Index Description
+- [var elements: [NSFetchIndexElementDescription]](./elements.md)
   An array of fetch index element descriptions.
-- [var entity: NSEntityDescription?](nsfetchindexdescription/entity.md)
+- [var entity: NSEntityDescription?](./entity.md)
   The entity description for the fetch index description.
-- [var name: String](nsfetchindexdescription/name.md)
+- [var name: String](./name.md)
   The name of the fetch index description.
 
 

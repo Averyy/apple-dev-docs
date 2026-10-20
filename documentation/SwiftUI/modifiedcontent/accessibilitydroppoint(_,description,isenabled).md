@@ -1,7 +1,8 @@
 # accessibilityDropPoint(_:description:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The point an assistive technology should use to end a drag interaction.
 
@@ -17,6 +18,25 @@ The point an assistive technology should use to end a drag interaction.
 ```swift
 @export(implementation)
 nonisolated func accessibilityDropPoint(_ point: UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityDropPoint(_ point: UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityDropPoint(_ point: UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityDropPoint<S>(_ point: UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
 #### Discussion

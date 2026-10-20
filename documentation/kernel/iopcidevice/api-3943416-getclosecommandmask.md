@@ -1,14 +1,15 @@
 # getCloseCommandMask
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 13.0+ - Deprecated in 13.0
 
 ## Declaration
 
-```swift
+```c
 static uint16_t getCloseCommandMask(uint32_t vendorDevice);
 ```
 

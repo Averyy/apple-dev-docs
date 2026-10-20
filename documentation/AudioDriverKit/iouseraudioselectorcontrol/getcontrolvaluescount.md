@@ -1,7 +1,8 @@
 # GetControlValuesCount
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the number of available selector values.
 
@@ -10,7 +11,7 @@ Gets the number of available selector values.
 
 ## Declaration
 
-```swift
+```c
 size_t GetControlValuesCount();
 ```
 
@@ -24,19 +25,20 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetCurrentSelectedValues](iouseraudioselectorcontrol/setcurrentselectedvalues.md)
+### Accessing the Selected Values
+- [SetCurrentSelectedValues](./setcurrentselectedvalues.md)
   Sets the current selections of the selector.
-- [GetCurrentSelectedValues](iouseraudioselectorcontrol/getcurrentselectedvalues.md)
+- [GetCurrentSelectedValues](./getcurrentselectedvalues.md)
   Gets the current selections of the selector.
-- [IOUserAudioSelectorValue](iouseraudioselectorvalue.md)
+- [IOUserAudioSelectorValue](../iouseraudioselectorvalue.md)
   The type of values managed by a selector control.
-- [AddControlValueDescriptions](iouseraudioselectorcontrol/addcontrolvaluedescriptions.md)
+- [AddControlValueDescriptions](./addcontrolvaluedescriptions.md)
   Add value descriptions to the selector control.
-- [RemoveControlValueDescriptions](iouseraudioselectorcontrol/removecontrolvaluedescriptions.md)
+- [RemoveControlValueDescriptions](./removecontrolvaluedescriptions.md)
   Removes value descriptions from the selector control.
-- [GetControlValueDescriptions](iouseraudioselectorcontrol/getcontrolvaluedescriptions.md)
+- [GetControlValueDescriptions](./getcontrolvaluedescriptions.md)
   Gets value descriptions used by the selector control.
-- [IOUserAudioSelectorValueDescription](iouseraudioselectorvaluedescription.md)
+- [IOUserAudioSelectorValueDescription](../iouseraudioselectorvaluedescription.md)
   A type that describes a value in a selection control.
 
 

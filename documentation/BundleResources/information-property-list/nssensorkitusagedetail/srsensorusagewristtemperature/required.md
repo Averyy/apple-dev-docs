@@ -1,7 +1,8 @@
 # Required
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your app’s study relies on this sensor.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether your app’s study relies on this sensor.
 - iOS 17.0+
 - iPadOS 17.0+
 
+## Details
+
+- **Name**: `Required`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -21,7 +25,8 @@ The system checks the value for this property when the user declines the access 
 
 ## See Also
 
-- [Description](information-property-list/nssensorkitusagedetail/srsensorusagewristtemperature/description.md)
+### Sensor usage keys
+- [Description](./description.md)
   An explanatory string that details the manner in which your study uses the sensor’s data.
 
 

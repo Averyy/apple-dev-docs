@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.pattern(argumentName:regex:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated pattern argument matcher.
 

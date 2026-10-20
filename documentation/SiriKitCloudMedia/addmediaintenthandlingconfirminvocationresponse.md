@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingConfirmInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The service’s response to a request to confirm an add media intent.
 
@@ -10,14 +11,14 @@ The service’s response to a request to confirm an add media intent.
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingConfirmInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying the Result
-- [object AddMediaIntentHandlingConfirmInvocationResponse.Result](addmediaintenthandlingconfirminvocationresponse/result-data.dictionary.md)
+- [object AddMediaIntentHandlingConfirmInvocationResponse.Result](./addmediaintenthandlingconfirminvocationresponse/result-data.dictionary.md)
   The result of receiving the user’s confirmation that they want to add the media items to the destination.
 
 ## Properties
@@ -25,18 +26,21 @@ object AddMediaIntentHandlingConfirmInvocationResponse
 - `result` (AddMediaIntentHandlingConfirmInvocationResponse.Result) *(required)*: The results of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `AddMediaIntentHandling.confirm`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object AddMediaIntentResponse](addmediaintentresponse.md)
+### Confirming and Handling an Add Media Intent
+- [object AddMediaIntentResponse](./addmediaintentresponse.md)
   A structure that contains a response code indicating your service’s progress in handling an add media intent.
-- [type AddMediaIntentResponseCode](addmediaintentresponsecode.md)
+- [type AddMediaIntentResponseCode](./addmediaintentresponsecode.md)
   Codes your service can return when confirming or handling an add media intent.
-- [object AddMediaIntentHandlingHandleInvocationResponse](addmediaintenthandlinghandleinvocationresponse.md)
+- [object AddMediaIntentHandlingHandleInvocationResponse](./addmediaintenthandlinghandleinvocationresponse.md)
   Your service’s response to a request to handle a fully resolved add media intent.
 
 

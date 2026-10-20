@@ -1,7 +1,8 @@
 # Play on open
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An 8-bit Boolean value that indicates whether the movie plays when opened.
 
@@ -11,11 +12,12 @@ The value is normally `1`, indicating that the movie plays when opened. Since th
 
 ## See Also
 
-- [Display size](print_to_video_atom/display_size.md)
+### Data fields
+- [Display size](./display_size.md)
   A 16-bit little-endian integer indicating the display size for the movie.
-- [Reserved](print_to_video_atom/reserved1.md)
+- [Reserved](./reserved1.md)
   A 16-bit integer.
-- [Reserved](print_to_video_atom/reserved2.md)
+- [Reserved](./reserved2.md)
   A 16-bit integer.
 
 

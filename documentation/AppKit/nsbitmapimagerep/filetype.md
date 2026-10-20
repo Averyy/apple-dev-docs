@@ -1,12 +1,13 @@
 # NSBitmapImageRep.FileType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify bitmap file types.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,36 +15,40 @@ Constants that specify bitmap file types.
 enum FileType
 ```
 
+```c
+enum NSBitmapImageFileType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSBitmapImageRep.FileType.tiff](nsbitmapimagerep/filetype/tiff.md)
+- [NSBitmapImageRep.FileType.tiff](./filetype/tiff.md)
   Tagged Image File Format (TIFF).
-- [NSBitmapImageRep.FileType.bmp](nsbitmapimagerep/filetype/bmp.md)
+- [NSBitmapImageRep.FileType.bmp](./filetype/bmp.md)
   Windows bitmap image (BMP) format.
-- [NSBitmapImageRep.FileType.gif](nsbitmapimagerep/filetype/gif.md)
+- [NSBitmapImageRep.FileType.gif](./filetype/gif.md)
   Graphics Image Format (GIF), originally created by CompuServe for online downloads.
-- [NSBitmapImageRep.FileType.jpeg](nsbitmapimagerep/filetype/jpeg.md)
+- [NSBitmapImageRep.FileType.jpeg](./filetype/jpeg.md)
   JPEG format.
-- [NSBitmapImageRep.FileType.png](nsbitmapimagerep/filetype/png.md)
+- [NSBitmapImageRep.FileType.png](./filetype/png.md)
   Portable Network Graphics (PNG) format.
-- [NSBitmapImageRep.FileType.jpeg2000](nsbitmapimagerep/filetype/jpeg2000.md)
+- [NSBitmapImageRep.FileType.jpeg2000](./filetype/jpeg2000.md)
   JPEG 2000 file format.
 ### Deprecated
-- [Deprecated symbols](filetype-deprecated-symbols.md)
+- [Deprecated symbols](../filetype-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [init?(rawValue: UInt)](nsbitmapimagerep/filetype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./filetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

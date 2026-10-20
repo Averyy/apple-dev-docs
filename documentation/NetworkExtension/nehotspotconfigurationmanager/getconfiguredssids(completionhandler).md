@@ -1,7 +1,8 @@
 # getConfiguredSSIDs(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Submits a completion handler the configuration manager calls to send your app the names of the SSIDs or Wi-Fi hotspot domains in the configuration.
 
@@ -15,7 +16,15 @@ Submits a completion handler the configuration manager calls to send your app th
 ## Declaration
 
 ```swift
+func getConfiguredSSIDs(completionHandler: @escaping @Sendable ([String]) -> Void)
+```
+
+```swift
 func configuredSSIDs() async -> [String]
+```
+
+```objc
+- (void) getConfiguredSSIDsWithCompletionHandler:(void (^)(NSArray<NSString *> *)) completionHandler;
 ```
 
 #### Discussion

@@ -1,16 +1,19 @@
 # init(splitSectionLengths:dimension:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a split layer with the lengths of each split section and dimension you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -25,7 +28,8 @@ convenience init(splitSectionLengths: [Int], dimension: Int)
 
 ## See Also
 
-- [convenience init(splitCount: Int, dimension: Int)](mlcsplitlayer/init(splitcount:dimension:).md)
+### Creating Split Layers
+- [convenience init(splitCount: Int, dimension: Int)](./init%28splitcount,dimension%29.md)
   Creates a split layer with the number of splits and dimension you specify.
 
 

@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.ActiveReason.scheduledStart
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates charging starts at a scheduled time.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case scheduledStart
 
 ## See Also
 
-- [ElectricVehicleChargingReason.ActiveReason.scheduledResume](electricvehiclechargingreason/activereason/scheduledresume.md)
+### Scheduled charging
+- [ElectricVehicleChargingReason.ActiveReason.scheduledResume](./scheduledresume.md)
   A reason that indicates charging resumes at a scheduled time after pausing.
 
 

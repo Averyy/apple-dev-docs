@@ -1,11 +1,12 @@
 # BinaryFloatingPoint Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init<S>(S.ParseInput, strategy: S) throws](binaryfloatingpoint/init(_:strategy:)-15mod.md)
+- [init<S>(S.ParseInput, strategy: S) throws](./init%28_,strategy%29-15mod.md)
   Initialize an instance by parsing `value` with the given `strategy`.
 
 

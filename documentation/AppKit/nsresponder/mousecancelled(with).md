@@ -1,7 +1,8 @@
 # mouseCancelled(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func mouseCancelled(with event: NSEvent)
+```
+
+```objc
+- (void) mouseCancelled:(NSEvent *) event;
 ```
 
 

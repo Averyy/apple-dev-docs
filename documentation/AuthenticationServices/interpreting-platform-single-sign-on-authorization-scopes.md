@@ -1,6 +1,7 @@
 # Interpreting Platform Single Sign-on authorization scopes
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Use authorization scopes to apply authentication policies.
 
@@ -8,15 +9,15 @@ Use authorization scopes to apply authentication policies.
 
 When Platform Single Sign-on (Platform SSO) requests tokens from your identity provider, it can include the authorization scope in the request. The scope tells you why the user is authenticating, so you can apply the correct policy. For example, you can require multifactor authentication at login but not at screen unlock.
 
-#### Request Authorization Scopes
+#### Request authorization scopes
 
-To receive authorization scopes when Platform SSO sends a login or key request, set [`includePlatformSSOAuthorizationScopes`](asauthorizationproviderextensionloginconfiguration/includeplatformssoauthorizationscopes.md) to `true` in your [`ASAuthorizationProviderExtensionLoginConfiguration`](asauthorizationproviderextensionloginconfiguration.md).
+To receive authorization scopes when Platform SSO sends a login or key request, set [`includePlatformSSOAuthorizationScopes`](./asauthorizationproviderextensionloginconfiguration/includeplatformssoauthorizationscopes.md) to `true` in your [`ASAuthorizationProviderExtensionLoginConfiguration`](./asauthorizationproviderextensionloginconfiguration.md).
 
-Platform SSO sends those scopes to your [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) and [`tokenEndpointURL`](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md).
+Platform SSO sends those scopes to your [`keyEndpointURL`](./asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) and [`tokenEndpointURL`](./asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md).
 
-For web-based authentication, Platform SSO sends the scopes to the [`authorizationURL`](asauthorizationproviderextensionloginconfiguration/authorizationurl.md) when you use a static OAuth URL. When you use a dynamic OAuth URL, Platform SSO sends the scopes to the `authorizationURL` that a pre-authentication request returns. For more information on the login request and web-based authentication, see [`Creating and validating a login request`](creating-and-validating-a-login-request.md) and [`Implementing web-based authentication with Platform Single Sign-on`](implementing-web-based-authentication.md).
+For web-based authentication, Platform SSO sends the scopes to the [`authorizationURL`](./asauthorizationproviderextensionloginconfiguration/authorizationurl.md) when you use a static OAuth URL. When you use a dynamic OAuth URL, Platform SSO sends the scopes to the `authorizationURL` that a pre-authentication request returns. For more information on the login request and web-based authentication, see [Creating and validating a login request](./creating-and-validating-a-login-request.md) and [Implementing web-based authentication with Platform Single Sign-on](./implementing-web-based-authentication.md).
 
-#### Receive Authorization Scopes
+#### Receive authorization scopes
 
 All authorization scopes that Platform SSO provides use the prefix `urn:apple:platformsso:auth:`:
 
@@ -54,11 +55,12 @@ A few scopes fall outside the session-type mapping:
 
 ## See Also
 
-- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
+### Configuration
+- [Configuring authentication with the identity provider (IdP)](./configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
-- [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
+- [class ASAuthorizationProviderExtensionLoginConfiguration](./asauthorizationproviderextensionloginconfiguration.md)
   An interface for configuring platform single sign-on.
-- [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)
+- [class ASAuthorizationProviderExtensionLoginManager](./asauthorizationproviderextensionloginmanager.md)
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
 
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current dynamic library error domain.
 
@@ -21,7 +22,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let MTLDynamicLibraryDomain: String](mtldynamiclibrarydomain.md)
+### Error domain
+- [let MTLDynamicLibraryDomain: String](../mtldynamiclibrarydomain.md)
   The domain for Metal dynamic library errors.
 
 

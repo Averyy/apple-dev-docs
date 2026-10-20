@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a `MLDataColumn` containing only the elements for which the corresponding mask has a nonzero or non-default value.
 
@@ -19,6 +20,26 @@ Returns a `MLDataColumn` containing only the elements for which the correspondin
 subscript(mask: MLUntypedColumn) -> MLDataColumn<Element> { get }
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
+**Other overloads**:
+
+```swift
+subscript(index: Int) -> Element { get }
+```
+
+```swift
+subscript(mask: MLDataColumn<Bool>) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript<R>(slice: R) -> MLDataColumn<Element> where R : RangeExpression, R.Bound == Int { get }
+```
+
 #### Return Value
 
 A MLUntypedColumn containing the subsequence of this MLUntypedColumn’s elements indicated by the mask MLUntypedColumn.
@@ -29,7 +50,8 @@ A MLUntypedColumn containing the subsequence of this MLUntypedColumn’s element
 
 ## See Also
 
-- [subscript(MLDataColumn<Bool>) -> MLDataColumn<Element>](mldatacolumn/subscript(_:)-78irf.md)
+### Masking elements to generate a column
+- [subscript(MLDataColumn<Bool>) -> MLDataColumn<Element>](./subscript%28_%29-78irf.md)
   Creates a subset of the column by masking its elements with a column of Booleans.
 
 

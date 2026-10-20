@@ -1,7 +1,8 @@
 # present()
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the input picker.
 
@@ -16,11 +17,16 @@ Presents the input picker.
 func present()
 ```
 
+```objc
+- (void) present;
+```
+
 ## See Also
 
-- [var isPresented: Bool](avinputpickerinteraction/ispresented.md)
+### Managing presentation
+- [var isPresented: Bool](./ispresented.md)
   A Boolean value that indicates whether the picker is currently visible.
-- [func dismiss()](avinputpickerinteraction/dismiss.md)
+- [func dismiss()](./dismiss%28%29.md)
   Dismisses the input picker.
 
 

@@ -1,6 +1,7 @@
 # Changelog
 
-**Framework**: AdServices
+**Framework**: AdServices  
+**Role**: Article
 
 A log of Ad Services framework updates.
 

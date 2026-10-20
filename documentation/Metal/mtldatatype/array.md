@@ -1,7 +1,8 @@
 # MTLDataType.array
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An array instance.
 
@@ -10,7 +11,7 @@ An array instance.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ An array instance.
 case array
 ```
 
+```c
+MTLDataTypeArray
+```
+
 ## See Also
 
-- [MTLDataType.struct](mtldatatype/struct.md)
+### Collection types
+- [MTLDataType.struct](./struct.md)
   A structure instance.
-- [MTLDataType.pointer](mtldatatype/pointer.md)
+- [MTLDataType.pointer](./pointer.md)
   A pointer.
 
 

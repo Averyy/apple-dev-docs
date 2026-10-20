@@ -1,7 +1,8 @@
 # accessibilityIgnoresInvertColors
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the image inverts its colors with the Invert Colors accessibility feature enabled.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the image inverts its colors with the In
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

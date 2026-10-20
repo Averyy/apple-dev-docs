@@ -1,7 +1,8 @@
 # PointOfInterestCategories
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure you use to define points of interest to include or exclude on a map.
 
@@ -11,7 +12,7 @@ A structure you use to define points of interest to include or exclude on a map.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,32 +24,32 @@ struct PointOfInterestCategories
 ## Topics
 
 ### Creating point of interest categories
-- [init(arrayLiteral: Self.ArrayLiteralElement...)](../swift/expressiblebyarrayliteral/init(arrayliteral:).md)
+- [init(arrayLiteral: Self.ArrayLiteralElement...)](../Swift/expressiblebyarrayliteral/init%28arrayliteral%29.md)
   Creates an instance initialized with the given elements.
 ### Categories to include or exclude
-- [static var all: PointOfInterestCategories](pointofinterestcategories/all.md)
+- [static var all: PointOfInterestCategories](./pointofinterestcategories/all.md)
   A list of all points of interest categories, both included and excluded.
-- [static var excludingAll: PointOfInterestCategories](pointofinterestcategories/excludingall.md)
+- [static var excludingAll: PointOfInterestCategories](./pointofinterestcategories/excludingall.md)
   A list of point of interest categories to exclude from display on the map.
 ### Modifying the categories to include or exclude
-- [static func excluding([MKPointOfInterestCategory]) -> PointOfInterestCategories](pointofinterestcategories/excluding(_:)-16bp0.md)
+- [static func excluding([MKPointOfInterestCategory]) -> PointOfInterestCategories](./pointofinterestcategories/excluding%28_%29-16bp0.md)
   Show all points of interest except those belonging to certain categories using the array you provide.
-- [static func excluding(MKPointOfInterestCategory...) -> PointOfInterestCategories](pointofinterestcategories/excluding(_:)-4jo9h.md)
+- [static func excluding(MKPointOfInterestCategory...) -> PointOfInterestCategories](./pointofinterestcategories/excluding%28_%29-4jo9h.md)
   Show all points of interest except those belonging to certain categories using the list you provide.
-- [static func including([MKPointOfInterestCategory]) -> PointOfInterestCategories](pointofinterestcategories/including(_:)-22f7x.md)
+- [static func including([MKPointOfInterestCategory]) -> PointOfInterestCategories](./pointofinterestcategories/including%28_%29-22f7x.md)
   Show only points of interest belonging to certain categories from the provided array.
-- [static func including(MKPointOfInterestCategory...) -> PointOfInterestCategories](pointofinterestcategories/including(_:)-6flda.md)
+- [static func including(MKPointOfInterestCategory...) -> PointOfInterestCategories](./pointofinterestcategories/including%28_%29-6flda.md)
   Show only points of interest belonging to certain categories from the provided list.
 ### Type aliases
-- [associatedtype ArrayLiteralElement](../swift/expressiblebyarrayliteral/arrayliteralelement.md)
+- [associatedtype ArrayLiteralElement](../Swift/expressiblebyarrayliteral/arrayliteralelement.md)
   The type of the elements of an array literal.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
 
 
 ---

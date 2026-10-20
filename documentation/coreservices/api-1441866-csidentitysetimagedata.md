@@ -1,7 +1,8 @@
 # CSIdentitySetImageData(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentitySetImageData(_ identity: CSIdentity!, _ imageData: CFData!, _ imageDataType: CFString!)
+```
+
+```c
+void CSIdentitySetImageData(CSIdentityRef identity, CFDataRef imageData, CFStringRef imageDataType);
 ```
 
 

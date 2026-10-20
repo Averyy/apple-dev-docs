@@ -1,14 +1,15 @@
 # waitToBecomeTerminateThread
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```c
 static void waitToBecomeTerminateThread(void);
 ```
 

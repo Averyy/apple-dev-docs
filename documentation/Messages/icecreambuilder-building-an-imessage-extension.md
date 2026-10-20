@@ -1,6 +1,8 @@
 # IceCreamBuilder: Building an iMessage Extension
 
-**Framework**: Messages
+**Framework**: Messages  
+**Role**: Sample Code  
+**Download**: [IceCreamBuilderBuildingAnIMessageExtension.zip](https://docs-assets.developer.apple.com/published/653791dcf16d/IceCreamBuilderBuildingAnIMessageExtension.zip)
 
 Allow users to collaborate on the design of ice cream sundae stickers.
 
@@ -19,17 +21,17 @@ The Xcode project consists of two targets:
 - An iOS application that in this sample has no functionality, but would usually contain your main application.
 - An iMessage Extension target that contains all logic for building and displaying the stickers.
 
-The iMessage Extension target uses a [`MSMessagesAppViewController`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesappviewcontroller) subclass that presents child view controllers to either show the history of previously created ice cream sundaes or the collaboration interface to build a new sticker.
+The iMessage Extension target uses a [MSMessagesAppViewController](./msmessagesappviewcontroller.md) subclass that presents child view controllers to either show the history of previously created ice cream sundaes or the collaboration interface to build a new sticker.
 
-When the iMessage Extension target is first initialized, the [`willBecomeActive(with:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willbecomeactive(with:)) method of the `MessagesViewController` configures and displays the appropriate child view controller.
+When the iMessage Extension target is first initialized, the [willBecomeActive(with:)](./msmessagesappviewcontroller/willbecomeactive%28with%29.md) method of the `MessagesViewController` configures and displays the appropriate child view controller.
 
 ##### Use Presentation Styles
 
-iMessage Extensions can be required to display in [`several different presentation styles`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesapppresentationstyle). This sample code demonstrates the [`compact`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/compact) and [`expanded`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/expanded) styles.
+iMessage Extensions can be required to display in [several different presentation styles](./msmessagesapppresentationstyle.md). This sample code demonstrates the [compact](./msmessagesapppresentationstyle/compact.md) and [expanded](./msmessagesapppresentationstyle/expanded.md) styles.
 
-When the Ice Cream Builder app icon is tapped from the Messages app drawer, the extension initially opens in [`compact`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/compact) mode where the initial view controller replaces the system keyboard. In this case, the `MessagesViewController` adds the `IceCreamsViewController` as a child view controller to display the history of previously created ice cream sundaes, along with an “Add” button to start creating a new one.
+When the Ice Cream Builder app icon is tapped from the Messages app drawer, the extension initially opens in [`compact`](./msmessagesapppresentationstyle/compact.md) mode where the initial view controller replaces the system keyboard. In this case, the `MessagesViewController` adds the `IceCreamsViewController` as a child view controller to display the history of previously created ice cream sundaes, along with an “Add” button to start creating a new one.
 
-The UI for creating a new ice cream sundae sticker benefits from a larger view controller so when the user taps the “Add” button the app requests the [`expanded`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/expanded) presentation style by calling [`requestPresentationStyle(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesappviewcontroller/requestpresentationstyle(_:)). The system then calls [`willTransition(to:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willtransition(to:)) on the `MessagesViewController` where the sample code instantiates a view controller to either continue building the sundae, or to display the completed sundae.
+The UI for creating a new ice cream sundae sticker benefits from a larger view controller so when the user taps the “Add” button the app requests the [`expanded`](./msmessagesapppresentationstyle/expanded.md) presentation style by calling [requestPresentationStyle(_:)](./msmessagesappviewcontroller/requestpresentationstyle%28_%29.md). The system then calls [willTransition(to:)](./msmessagesappviewcontroller/willtransition%28to%29.md) on the `MessagesViewController` where the sample code instantiates a view controller to either continue building the sundae, or to display the completed sundae.
 
 ```swift
 let controller: UIViewController
@@ -51,11 +53,11 @@ if presentationStyle == .compact {
 
 ##### Attach Stickers to Messages
 
-The `IceCreamsViewController` uses a collection view to display all previously created ice cream sundae stickers. Each cell uses a [`MSStickerView`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msstickerview) object that displays a [`MSSticker`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/mssticker) and also implements the standard functionality of dragging and dropping stickers to attach them to messages in the transcript, or sending the sticker as an image.
+The `IceCreamsViewController` uses a collection view to display all previously created ice cream sundae stickers. Each cell uses a [MSStickerView](./msstickerview.md) object that displays a [MSSticker](./mssticker.md) and also implements the standard functionality of dragging and dropping stickers to attach them to messages in the transcript, or sending the sticker as an image.
 
 ##### Pass Data with Messages
 
-All data passed between users in a conversation needs to be encoded in a URL; you should use [`URLComponents`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/urlcomponents) to build and parse these URLs.
+All data passed between users in a conversation needs to be encoded in a URL; you should use [URLComponents](../Foundation/urlcomponents.md) to build and parse these URLs.
 
 ```swift
 var queryItems: [URLQueryItem] {
@@ -75,9 +77,9 @@ var queryItems: [URLQueryItem] {
 }
 ```
 
-The current state of the ice cream sundae also needs to be represented visually in the Messages transcript using an instance of [`MSMessageTemplateLayout`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagetemplatelayout). In this sample, the image property contains a rendering of the current state of the ice cream sundae.
+The current state of the ice cream sundae also needs to be represented visually in the Messages transcript using an instance of [MSMessageTemplateLayout](./msmessagetemplatelayout.md). In this sample, the image property contains a rendering of the current state of the ice cream sundae.
 
-Once the message is ready to be sent, create an [`MSMessage`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessage) encapsulating the message data and layout.
+Once the message is ready to be sent, create an [MSMessage](./msmessage.md) encapsulating the message data and layout.
 
 ```swift
 fileprivate func composeMessage(with iceCream: IceCream, caption: String, session: MSSession? = nil) -> MSMessage {
@@ -96,7 +98,7 @@ fileprivate func composeMessage(with iceCream: IceCream, caption: String, sessio
 }
 ```
 
-Once a message has been composed, it can be sent by accessing the [`activeConversation`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesappviewcontroller/activeconversation) property of the [`MSMessagesAppViewController`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msmessagesappviewcontroller).
+Once a message has been composed, it can be sent by accessing the [activeConversation](./msmessagesappviewcontroller/activeconversation.md) property of the [`MSMessagesAppViewController`](./msmessagesappviewcontroller.md).
 
 ```swift
 // Add the message to the conversation.
@@ -107,17 +109,18 @@ conversation.insert(message) { error in
 }
 ```
 
-The [`insert(_:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-3g248) method used in this code will place the composed message into the conversation field, but will *not* send it immediately, requiring the user to still tap the send button. If you prefer to send the message immediately then use the [`send(_:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-9krz) method instead. This method is available on iOS 11 and above.
+The [insert(_:completionHandler:)](./msconversation/insert%28_,completionhandler%29-3g248.md) method used in this code will place the composed message into the conversation field, but will *not* send it immediately, requiring the user to still tap the send button. If you prefer to send the message immediately then use the [send(_:completionHandler:)](./msconversation/send%28_,completionhandler%29-9krz.md) method instead. This method is available on iOS 11 and above.
 
 ## See Also
 
-- [Creating a Sticker App with a Custom Layout](creating-a-sticker-app-with-a-custom-layout.md)
+### Custom iMessage app interface
+- [Creating a Sticker App with a Custom Layout](./creating-a-sticker-app-with-a-custom-layout.md)
   Expand on the Messages sticker app template to create an app with a customized user interface.
-- [class MSMessagesAppViewController](msmessagesappviewcontroller.md)
+- [class MSMessagesAppViewController](./msmessagesappviewcontroller.md)
   The principal view controller for iMessage apps.
-- [protocol MSMessagesAppTranscriptPresentation](msmessagesapptranscriptpresentation.md)
+- [protocol MSMessagesAppTranscriptPresentation](./msmessagesapptranscriptpresentation.md)
   A protocol that provides support for displaying live messages in the transcript of the Messages app.
-- [enum MSMessagesAppPresentationStyle](msmessagesapppresentationstyle.md)
+- [enum MSMessagesAppPresentationStyle](./msmessagesapppresentationstyle.md)
   Presentation styles that describe your iMessage app’s appearance.
 
 

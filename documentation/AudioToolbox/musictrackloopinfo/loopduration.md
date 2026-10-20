@@ -1,22 +1,27 @@
 # loopDuration
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point in a music track, measured in beats from the end of the music track, at which to begin playback during looped playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var loopDuration: MusicTimeStamp
+```
+
+```c
+MusicTimeStamp loopDuration;
 ```
 
 #### Discussion

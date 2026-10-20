@@ -1,6 +1,7 @@
 # Event playlist construction
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Learn about the basic composition of an event session playlist.
 
@@ -78,11 +79,12 @@ Event playlists are typically used when you want to allow the user to seek to an
 
 ## See Also
 
-- [Video on Demand playlist construction](video-on-demand-playlist-construction.md)
+### Basic playlists
+- [Video on Demand playlist construction](./video-on-demand-playlist-construction.md)
   Understand the basic composition for a Video on Demand playlist.
-- [Live Playlist (sliding window) construction](live-playlist-sliding-window-construction.md)
+- [Live Playlist (sliding window) construction](./live-playlist-sliding-window-construction.md)
   Understand the basic composition for a live session playlist.
-- [Creating a Multivariant Playlist](creating-a-multivariant-playlist.md)
+- [Creating a Multivariant Playlist](./creating-a-multivariant-playlist.md)
   Offer multiple playlist files to provide different encodings of the same content.
 
 

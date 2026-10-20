@@ -1,7 +1,8 @@
 # timeout
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The amount of time, in milliseconds, before causing a request to time out.
 
@@ -12,7 +13,15 @@ The amount of time, in milliseconds, before causing a request to time out.
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+attribute int timeout;
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 attribute unsigned long timeout;
 ```
 
@@ -22,13 +31,14 @@ This attribute only takes effect if the request is asynchronous. When set to `0`
 
 ## See Also
 
-- [abort](xmlhttprequest/1627356-abort.md)
+### Initializing and Sending a Request
+- [abort](./api-1627356-abort.md)
   Cancels any network activity.
-- [open](xmlhttprequest/1627318-open.md)
+- [open](./api-1627318-open.md)
   Sets the method, URL, and synchronous flag for a request.
-- [send](xmlhttprequest/1627309-send.md)
+- [send](./api-1627309-send.md)
   Sends the request.
-- [XMLHttpRequest](xmlhttprequest/1627350-xmlhttprequest.md)
+- [XMLHttpRequest](./api-1627350-xmlhttprequest.md)
   Creates a new XMLHttpRequest.
 
 

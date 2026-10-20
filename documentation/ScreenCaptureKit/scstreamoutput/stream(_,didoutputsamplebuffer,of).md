@@ -1,7 +1,8 @@
 # stream(_:didOutputSampleBuffer:of:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a capture stream produced a frame.
 
@@ -17,6 +18,10 @@ Tells the delegate that a capture stream produced a frame.
 
 ```swift
 optional func stream(_ stream: SCStream, didOutputSampleBuffer sampleBuffer: CMSampleBuffer, of type: SCStreamOutputType)
+```
+
+```objc
+- (void) stream:(SCStream *) stream didOutputSampleBuffer:(CMSampleBufferRef) sampleBuffer ofType:(SCStreamOutputType) type;
 ```
 
 ## Parameters

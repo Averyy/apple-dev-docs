@@ -1,7 +1,8 @@
 # cmCreateNewAccess
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Create a new data stream for the profile.
 

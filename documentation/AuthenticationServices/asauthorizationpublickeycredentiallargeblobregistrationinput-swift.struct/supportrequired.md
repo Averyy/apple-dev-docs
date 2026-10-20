@@ -1,7 +1,8 @@
 # supportRequired
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the app requires large binary object support.
 
@@ -20,7 +21,8 @@ static var supportRequired: ASAuthorizationPublicKeyCredentialLargeBlobRegistrat
 
 ## See Also
 
-- [static var supportPreferred: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportpreferred.md)
+### Using defined support values
+- [static var supportPreferred: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](./supportpreferred.md)
   A value that indicates the app needs binary large object support.
 
 

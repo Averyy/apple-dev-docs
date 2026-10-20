@@ -1,7 +1,8 @@
 # verticalAccuracy
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validity of the altitude values and their estimated uncertainty measured in meters.
 
@@ -10,7 +11,7 @@ The validity of the altitude values and their estimated uncertainty measured in 
 
 ## Declaration
 
-```swift
+```
 attribute Double? verticalAccuracy;
 ```
 

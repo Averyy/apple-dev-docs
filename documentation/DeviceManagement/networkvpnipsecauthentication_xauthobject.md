@@ -1,7 +1,8 @@
 # NetworkVPNIPSecAuthentication_XAuthObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings that control XAuth.
 
@@ -14,7 +15,7 @@ Settings that control XAuth.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSecAuthentication_XAuthObject
 ```
 
@@ -23,6 +24,8 @@ object NetworkVPNIPSecAuthentication_XAuthObject
 - `CredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials (user name and password) required for XAuth. Required when `Enabled` key is set to `true`.
 - `Enabled` (boolean) *(required)*: If `true`, enables Xauth for Cisco IPSec VPNs.
 - `PasswordEncryption` (string): A string that either has the value `Prompt` or isn’t present.
+
+  **Allowed Values**: `Prompt`
 
 
 ---

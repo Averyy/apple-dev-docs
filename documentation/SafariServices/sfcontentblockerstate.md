@@ -1,7 +1,8 @@
 # SFContentBlockerState
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The state of a content blocker extension.
 
@@ -18,29 +19,34 @@ The state of a content blocker extension.
 class SFContentBlockerState
 ```
 
+```objc
+@interface SFContentBlockerState : NSObject
+```
+
 ## Topics
 
 ### Identifying the Content Blocker’s State
-- [var isEnabled: Bool](sfcontentblockerstate/isenabled.md)
+- [var isEnabled: Bool](./sfcontentblockerstate/isenabled.md)
   A Boolean value that indicates whether the content blocker is enabled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating a content blocker](creating-a-content-blocker.md)
+### Content blockers
+- [Creating a content blocker](./creating-a-content-blocker.md)
   Create a content blocker for Safari in Xcode.
-- [class SFContentBlockerManager](sfcontentblockermanager.md)
+- [class SFContentBlockerManager](./sfcontentblockermanager.md)
   A class that your app uses to interact with a content blocker extension.
 
 

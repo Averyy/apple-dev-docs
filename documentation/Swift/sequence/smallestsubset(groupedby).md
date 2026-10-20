@@ -1,7 +1,8 @@
 # smallestSubset(groupedBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the smallest group of donations when grouped by the specified key path.
 

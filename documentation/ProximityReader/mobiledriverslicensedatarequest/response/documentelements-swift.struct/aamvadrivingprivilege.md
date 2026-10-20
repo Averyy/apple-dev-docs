@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the mobile driver’s license holder’s AAMVA driving privileges.
 
@@ -19,27 +20,27 @@ struct AAMVADrivingPrivilege
 ## Topics
 
 ### Structures
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleClass](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleclass-swift.struct.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleClass](./aamvadrivingprivilege/vehicleclass-swift.struct.md)
   An object that represents the driving privilege vehicle class.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleEndorsement](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleendorsement.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleEndorsement](./aamvadrivingprivilege/vehicleendorsement.md)
   An object that represents an endorsement on a driving privilege.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleRestriction](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehiclerestriction.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleRestriction](./aamvadrivingprivilege/vehiclerestriction.md)
   An object that represents a restriction on a driving privilege.
 ### Instance Properties
-- [let vehicleClass: MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleClass?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleclass-swift.property.md)
+- [let vehicleClass: MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleClass?](./aamvadrivingprivilege/vehicleclass-swift.property.md)
   The driving privilege vehicle class.
-- [let vehicleEndorsements: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleEndorsement]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleendorsements.md)
+- [let vehicleEndorsements: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleEndorsement]](./aamvadrivingprivilege/vehicleendorsements.md)
   The endorsements on the driving privilege.
-- [let vehicleRestrictions: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleRestriction]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehiclerestrictions.md)
+- [let vehicleRestrictions: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleRestriction]](./aamvadrivingprivilege/vehiclerestrictions.md)
   The restrictions on the driving privilege.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle of the feature.
 
@@ -10,7 +11,7 @@ The subtitle of the feature.
 
 ## Declaration
 
-```swift
+```
 get subtitle(): string | null;
 ```
 

@@ -1,7 +1,8 @@
 # BLE
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var BLE: MTRDiscoveryCapabilities { get }
+```
+
+```c
+MTRDiscoveryCapabilitiesBLE
 ```
 
 

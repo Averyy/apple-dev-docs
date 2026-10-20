@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the GPU can sample a texture with a specific number of sample points.
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the GPU can sample a texture with
 func supportsTextureSampleCount(_ sampleCount: Int) -> Bool
 ```
 
+```objc
+- (BOOL) supportsTextureSampleCount:(NSUInteger) sampleCount;
+```
+
 ## Mentions
 
-- [Positioning samples programmatically](positioning-samples-programmatically.md)
+- [Positioning samples programmatically](../positioning-samples-programmatically.md)
 
 #### Discussion
 
@@ -31,17 +36,17 @@ The number of points the GPU can sample a texture varies by device:
 | Sample count | Devices |
 | --- | --- |
 | 1 | All devices |
-| 2 | All iOS devices ![None](/images/com.apple.metal/spacer.png) All tvOS devices ![None](/images/com.apple.metal/spacer.png) Some macOS devices |
+| 2 | All iOS devices ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) All tvOS devices ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) Some macOS devices |
 | 4 | All devices |
 | 8 | Some macOS devices |
 
-Consider a GPU device’s limitations for sample count by checking [`MTLTexture`](mtltexture.md)`.`[`sampleCount`](mtltexture/samplecount.md) when configuring these properties:
+Consider a GPU device’s limitations for sample count by checking [`MTLTexture`](../mtltexture.md)`.`[`sampleCount`](../mtltexture/samplecount.md) when configuring these properties:
 
-- [`MTLTextureDescriptor`](mtltexturedescriptor.md)`.`[`sampleCount`](mtltexturedescriptor/samplecount.md)
-- [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtlrenderpipelinedescriptor/rastersamplecount.md)
-- [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtltilerenderpipelinedescriptor/rastersamplecount.md)
-- [`MTLMeshRenderPipelineDescriptor`](mtlmeshrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtlmeshrenderpipelinedescriptor/rastersamplecount.md)
-- [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview)`.`[`sampleCount`](https://developer.apple.com/documentation/metalkit/mtkview/samplecount)
+- [`MTLTextureDescriptor`](../mtltexturedescriptor.md)`.`[`sampleCount`](../mtltexturedescriptor/samplecount.md)
+- [`MTLRenderPipelineDescriptor`](../mtlrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](../mtlrenderpipelinedescriptor/rastersamplecount.md)
+- [`MTLTileRenderPipelineDescriptor`](../mtltilerenderpipelinedescriptor.md)`.`[`rasterSampleCount`](../mtltilerenderpipelinedescriptor/rastersamplecount.md)
+- [`MTLMeshRenderPipelineDescriptor`](../mtlmeshrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](../mtlmeshrenderpipelinedescriptor/rastersamplecount.md)
+- [`MTKView`](../../MetalKit/mtkview.md)`.`[`sampleCount`](../../MetalKit/mtkview/samplecount.md)
 
 ## Parameters
 
@@ -49,9 +54,10 @@ Consider a GPU device’s limitations for sample count by checking [`MTLTexture`
 
 ## See Also
 
-- [func makeSamplerState(descriptor: MTLSamplerDescriptor) -> (any MTLSamplerState)?](mtldevice/makesamplerstate(descriptor:).md)
+### Creating samplers
+- [func makeSamplerState(descriptor: MTLSamplerDescriptor) -> (any MTLSamplerState)?](./makesamplerstate%28descriptor%29.md)
   Creates a sampler state instance.
-- [func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]](mtldevice/getdefaultsamplepositions(samplecount:).md)
+- [func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]](./getdefaultsamplepositions%28samplecount%29.md)
   Returns the default sample locations based on the number of samples.
 
 

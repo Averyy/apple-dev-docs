@@ -1,7 +1,8 @@
 # pdfViewWillChangeScaleFactor(_:toScale:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides changes to the scale factor.
 
@@ -12,6 +13,10 @@ Overrides changes to the scale factor.
 
 ```swift
 optional func pdfViewWillChangeScaleFactor(_ sender: PDFView, toScale scaler: CGFloat) -> CGFloat
+```
+
+```objc
+- (CGFloat) PDFViewWillChangeScaleFactor:(PDFView *) sender toScale:(CGFloat) scaler;
 ```
 
 

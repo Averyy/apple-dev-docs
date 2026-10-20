@@ -1,7 +1,8 @@
 # RCSService.Business.SuggestedAction.Action.composeRecording(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Compose recording action.
 
@@ -16,11 +17,12 @@ case composeRecording(RCSService.Business.ComposeRecordingAction)
 
 ## See Also
 
-- [RCSService.Business.SuggestedAction.Action.composeText(_:)](rcsservice/business/suggestedaction/action-swift.enum/composetext(_:).md)
+### Handling composition actions
+- [RCSService.Business.SuggestedAction.Action.composeText(_:)](./composetext%28_%29.md)
   Compose text action.
-- [RCSService.Business.ComposeTextAction](rcsservice/business/composetextaction.md)
+- [RCSService.Business.ComposeTextAction](../../composetextaction.md)
   Compose a draft text message.
-- [RCSService.Business.ComposeRecordingAction](rcsservice/business/composerecordingaction.md)
+- [RCSService.Business.ComposeRecordingAction](../../composerecordingaction.md)
   Compose a draft message with a media recording.
 
 

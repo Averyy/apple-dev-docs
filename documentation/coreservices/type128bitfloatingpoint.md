@@ -1,7 +1,8 @@
 # type128BitFloatingPoint
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 128-bit floating point value.
 

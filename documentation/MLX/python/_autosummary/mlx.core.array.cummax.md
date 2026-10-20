@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.cummax
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.cummax.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.cummax
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.cummax
-
-**array.cummax(*self*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: See [cummax()](mlx.core.cummax.html#mlx.core.cummax).
-
-** Contents
+**array.cummax(*self*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: See [cummax()](mlx.core.cummax.md#mlx.core.cummax).

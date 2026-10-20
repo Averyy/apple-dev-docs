@@ -1,7 +1,8 @@
 # CPMessageTrailingItem
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The accessories that a message list item can display in its trailing region.
 
@@ -16,33 +17,38 @@ The accessories that a message list item can display in its trailing region.
 enum CPMessageTrailingItem
 ```
 
+```c
+enum CPMessageTrailingItem : NSInteger;
+```
+
 #### Overview
 
-Use these constants when creating instances of [`CPMessageListItemTrailingConfiguration`](cpmessagelistitemtrailingconfiguration.md). A trailing item can provide additional context for a list item’s contents, or help communicate its behavior.
+Use these constants when creating instances of [`CPMessageListItemTrailingConfiguration`](./cpmessagelistitemtrailingconfiguration.md). A trailing item can provide additional context for a list item’s contents, or help communicate its behavior.
 
 ## Topics
 
 ### Trailing Items
-- [CPMessageTrailingItem.none](cpmessagetrailingitem/none.md)
+- [CPMessageTrailingItem.none](./cpmessagetrailingitem/none.md)
   Don’t show a trailing item.
-- [CPMessageTrailingItem.mute](cpmessagetrailingitem/mute.md)
+- [CPMessageTrailingItem.mute](./cpmessagetrailingitem/mute.md)
   Show a muted speaker icon.
 ### Initializers
-- [init?(rawValue: Int)](cpmessagetrailingitem/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cpmessagetrailingitem/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var trailingItem: CPMessageTrailingItem](cpmessagelistitemtrailingconfiguration/trailingitem.md)
+### Getting the Trailing Item
+- [var trailingItem: CPMessageTrailingItem](./cpmessagelistitemtrailingconfiguration/trailingitem.md)
   The configuration’s item.
 
 

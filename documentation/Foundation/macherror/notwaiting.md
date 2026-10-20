@@ -1,7 +1,8 @@
 # notWaiting
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A signalled thread was not actually waiting.
 

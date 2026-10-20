@@ -1,7 +1,8 @@
 # slideshowDidChangeCurrentIndex(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom tasks when the slideshow changes to the item at the specified index.
 
@@ -14,6 +15,10 @@ Performs custom tasks when the slideshow changes to the item at the specified in
 optional func slideshowDidChangeCurrentIndex(_ newIndex: Int)
 ```
 
+```objc
+- (void) slideshowDidChangeCurrentIndex:(NSUInteger) newIndex;
+```
+
 #### Discussion
 
 Image Kit invokes this method when the slideshow changes to the specified item. Implement this method to perform custom tasks at that time.
@@ -24,9 +29,10 @@ Image Kit invokes this method when the slideshow changes to the specified item. 
 
 ## See Also
 
-- [func slideshowWillStart()](ikslideshowdatasource/slideshowwillstart.md)
+### Performing Custom Tasks
+- [func slideshowWillStart()](./slideshowwillstart%28%29.md)
   Performs custom tasks when the slideshow is about to start.
-- [func slideshowDidStop()](ikslideshowdatasource/slideshowdidstop.md)
+- [func slideshowDidStop()](./slideshowdidstop%28%29.md)
   Performs custom tasks when the slideshow stops.
 
 

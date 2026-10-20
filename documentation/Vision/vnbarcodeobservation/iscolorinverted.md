@@ -1,7 +1,8 @@
 # isColorInverted
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the barcode is color inverted.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether the barcode is color inverted.
 
 ```swift
 var isColorInverted: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isColorInverted;
 ```
 
 

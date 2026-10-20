@@ -1,7 +1,8 @@
 # NEAppProxyTCPFlow
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for reading and writing data to and from a TCP connection being proxied by the provider.
 
@@ -18,9 +19,13 @@ An object for reading and writing data to and from a TCP connection being proxie
 class NEAppProxyTCPFlow
 ```
 
+```objc
+@interface NEAppProxyTCPFlow : NEAppProxyFlow
+```
+
 ## Mentions
 
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](./handling-flow-copying.md)
 
 #### Overview
 
@@ -29,39 +34,40 @@ App Proxy Providers receive TCP connections to be proxied in the form of `NEAppP
 ## Topics
 
 ### Handling flow data
-- [func write(Data, withCompletionHandler: ((any Error)?) -> Void)](neappproxytcpflow/write(_:withcompletionhandler:).md)
+- [func write(Data, withCompletionHandler: ((any Error)?) -> Void)](./neappproxytcpflow/write%28_,withcompletionhandler%29.md)
   Write data to the flow.
-- [func readData(completionHandler: (Data?, (any Error)?) -> Void)](neappproxytcpflow/readdata(completionhandler:).md)
+- [func readData(completionHandler: (Data?, (any Error)?) -> Void)](./neappproxytcpflow/readdata%28completionhandler%29.md)
   Read data from the flow.
 ### Getting flow information
-- [var remoteEndpoint: NWEndpoint](neappproxytcpflow/remoteendpoint.md)
-  An [`NWEndpoint`](nwendpoint.md) object containing information about the intended remote endpoint of the flow.
+- [var remoteEndpoint: NWEndpoint](./neappproxytcpflow/remoteendpoint.md)
+  An [`NWEndpoint`](./nwendpoint.md) object containing information about the intended remote endpoint of the flow.
 ### Instance Properties
-- [var remoteFlowEndpoint: NWEndpoint](neappproxytcpflow/remoteflowendpoint-4r7v1.md)
+- [var remoteFlowEndpoint: NWEndpoint](./neappproxytcpflow/remoteflowendpoint-4r7v1.md)
 
 ## Relationships
 
 ### Inherits From
-- [NEAppProxyFlow](neappproxyflow.md)
+- [NEAppProxyFlow](./neappproxyflow.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEAppProxyUDPFlow](neappproxyudpflow.md)
+### Flow handling
+- [class NEAppProxyUDPFlow](./neappproxyudpflow.md)
   An object for reading and writing data to and from a UDP conversation being proxied by the provider.
-- [class NEAppProxyFlow](neappproxyflow.md)
+- [class NEAppProxyFlow](./neappproxyflow.md)
   An abstract base class shared by NEAppProxyTCPFlow and NEAppProxyUDPFlow.
-- [class NEFlowMetaData](neflowmetadata.md)
+- [class NEFlowMetaData](./neflowmetadata.md)
   Additional information about data flowing through a per-app VPN provider.
-- [In-Provider Networking](in-provider-networking.md)
+- [In-Provider Networking](./in-provider-networking.md)
   Network APIs for use by all types of NetworkExtension providers and by hotspot helpers.
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](./handling-flow-copying.md)
   Exchange data streams by using proxy-provider classes.
 
 

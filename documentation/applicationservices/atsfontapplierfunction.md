@@ -1,7 +1,8 @@
 # ATSFontApplierFunction
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias ATSFontApplierFunction = (ATSFontRef, UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef OSStatus (*ATSFontApplierFunction)(ATSFontRef iFont, void *iRefCon);
 ```
 
 

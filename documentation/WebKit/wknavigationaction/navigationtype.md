@@ -1,7 +1,8 @@
 # navigationType
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of action that triggered the navigation.
 
@@ -18,13 +19,18 @@ The type of action that triggered the navigation.
 var navigationType: WKNavigationType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKNavigationType navigationType;
+```
+
 #### Discussion
 
-The value is one of the constants of the enumerated type [`WKNavigationType`](wknavigationtype.md).
+The value is one of the constants of the enumerated type [`WKNavigationType`](../wknavigationtype.md).
 
 ## See Also
 
-- [enum WKNavigationType](wknavigationtype.md)
+### Getting the navigation type
+- [enum WKNavigationType](../wknavigationtype.md)
   The type of action that triggered the navigation.
 
 

@@ -1,7 +1,8 @@
 # deviceBecameActive(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func deviceBecameActive(_ device: MTRDevice)
+```
+
+```objc
+- (void) deviceBecameActive:(MTRDevice *) device;
 ```
 
 

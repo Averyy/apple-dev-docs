@@ -1,7 +1,8 @@
 # persistentReference
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a persistent reference to store a reference to an identity.
 
@@ -12,6 +13,10 @@ Returns a persistent reference to store a reference to an identity.
 
 ```swift
 var persistentReference: Data? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSData * persistentReference;
 ```
 
 #### Return Value

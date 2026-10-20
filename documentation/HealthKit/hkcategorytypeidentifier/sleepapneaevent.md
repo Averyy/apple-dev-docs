@@ -1,7 +1,8 @@
 # sleepApneaEvent
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -17,35 +18,40 @@
 static let sleepApneaEvent: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSleepApneaEvent;
+```
+
 ## See Also
 
-- [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
+### Variables
+- [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](./bleedingafterpregnancy.md)
   A category type that records bleeding after pregnancy as a symptom.
-- [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
+- [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](./bleedingduringpregnancy.md)
   A category type that records bleeding during pregnancy as a symptom.
-- [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
+- [let HKDevicePropertyKeyFirmwareVersion: String](../hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.
-- [let HKDevicePropertyKeyHardwareVersion: String](hkdevicepropertykeyhardwareversion.md)
+- [let HKDevicePropertyKeyHardwareVersion: String](../hkdevicepropertykeyhardwareversion.md)
   The device’s hardware version.
-- [let HKDevicePropertyKeyLocalIdentifier: String](hkdevicepropertykeylocalidentifier.md)
-  A unique identifier for the device on the hardware running the app. For more information, see [`localIdentifier`](hkdevice/localidentifier.md).
-- [let HKDevicePropertyKeyManufacturer: String](hkdevicepropertykeymanufacturer.md)
+- [let HKDevicePropertyKeyLocalIdentifier: String](../hkdevicepropertykeylocalidentifier.md)
+  A unique identifier for the device on the hardware running the app. For more information, see [`localIdentifier`](../hkdevice/localidentifier.md).
+- [let HKDevicePropertyKeyManufacturer: String](../hkdevicepropertykeymanufacturer.md)
   The device’s manufacturer.
-- [let HKDevicePropertyKeyModel: String](hkdevicepropertykeymodel.md)
+- [let HKDevicePropertyKeyModel: String](../hkdevicepropertykeymodel.md)
   The device’s model.
-- [let HKDevicePropertyKeyName: String](hkdevicepropertykeyname.md)
+- [let HKDevicePropertyKeyName: String](../hkdevicepropertykeyname.md)
   The device’s name.
-- [let HKDevicePropertyKeySoftwareVersion: String](hkdevicepropertykeysoftwareversion.md)
+- [let HKDevicePropertyKeySoftwareVersion: String](../hkdevicepropertykeysoftwareversion.md)
   The device’s software version.
-- [let HKDevicePropertyKeyUDIDeviceIdentifier: String](hkdevicepropertykeyudideviceidentifier.md)
+- [let HKDevicePropertyKeyUDIDeviceIdentifier: String](../hkdevicepropertykeyudideviceidentifier.md)
   The device’s UDI Device Identifier.
-- [let HKPredicateKeyPathCount: String](hkpredicatekeypathcount.md)
+- [let HKPredicateKeyPathCount: String](../hkpredicatekeypathcount.md)
   A key path for the sample’s count.
-- [static let GAD7: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/gad7.md)
-- [static let PHQ9: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/phq9.md)
-- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](hksourcerevisionanyoperatingsystem.md)
+- [static let GAD7: HKScoredAssessmentTypeIdentifier](../hkscoredassessmenttypeidentifier/gad7.md)
+- [static let PHQ9: HKScoredAssessmentTypeIdentifier](../hkscoredassessmenttypeidentifier/phq9.md)
+- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](../hksourcerevisionanyoperatingsystem.md)
   A constant that matches any operating system.
-- [let HKSourceRevisionAnyProductType: String](hksourcerevisionanyproducttype.md)
+- [let HKSourceRevisionAnyProductType: String](../hksourcerevisionanyproducttype.md)
   A constant that matches any product type.
 
 

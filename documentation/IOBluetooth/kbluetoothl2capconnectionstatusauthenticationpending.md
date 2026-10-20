@@ -1,10 +1,11 @@
 # kBluetoothL2CAPConnectionStatusAuthenticationPending
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothL2CAPConnectionStatusAuthenticationPending: BluetoothL2CAPConnectionStatus { get }
 ```
 
+```c
+kBluetoothL2CAPConnectionStatusAuthenticationPending
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPConnectionStatusAuthorizationPending: BluetoothL2CAPConnectionStatus](kbluetoothl2capconnectionstatusauthorizationpending.md)
-- [var kBluetoothL2CAPConnectionStatusNoInfoAvailable: BluetoothL2CAPConnectionStatus](kbluetoothl2capconnectionstatusnoinfoavailable.md)
+### Constants
+- [var kBluetoothL2CAPConnectionStatusAuthorizationPending: BluetoothL2CAPConnectionStatus](./kbluetoothl2capconnectionstatusauthorizationpending.md)
+- [var kBluetoothL2CAPConnectionStatusNoInfoAvailable: BluetoothL2CAPConnectionStatus](./kbluetoothl2capconnectionstatusnoinfoavailable.md)
 
 
 ---

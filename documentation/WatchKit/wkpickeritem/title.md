@@ -1,7 +1,8 @@
 # title
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display for the item.
 
@@ -14,17 +15,22 @@ The text to display for the item.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 #### Discussion
 
 This string contains the item’s content and is displayed when the item is selected. Titles are used for pickers configured to display a list. They are not shown for stack and image sequence styles.
 
 ## See Also
 
-- [var contentImage: WKImage?](wkpickeritem/contentimage.md)
+### Setting the Picker Item’s Content
+- [var contentImage: WKImage?](./contentimage.md)
   The image to display for the item.
-- [var accessoryImage: WKImage?](wkpickeritem/accessoryimage.md)
+- [var accessoryImage: WKImage?](./accessoryimage.md)
   A small image to display next to the title string.
-- [var caption: String?](wkpickeritem/caption.md)
+- [var caption: String?](./caption.md)
   A caption for the item’s content.
 
 

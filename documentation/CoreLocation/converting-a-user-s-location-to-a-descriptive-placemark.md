@@ -1,6 +1,7 @@
 # Converting a user’s location to a descriptive placemark
 
-**Framework**: Core Location
+**Framework**: Core Location  
+**Role**: Article
 
 Transform the user’s location that displays on a map into an informative textual description by reverse geocoding.
 
@@ -8,13 +9,13 @@ Transform the user’s location that displays on a map into an informative textu
 
 You can show a user’s location on a map in order to orient them to elements of your app that use map content. For instance, a user’s current location can be a point of reference for retrieving search results or calculating directions. Additionally, you can display location information outside of the map, such as a search field pre-filled with the user’s current city or street address. To provide this information in your app, configure your map view to display the user’s location, and then translate the location to informative, user-friendly data.
 
-##### Display the User Location Annotation
+##### Display the user location annotation
 
-To provide user-friendly place information, configure your map view to display the user’s current location by enabling [`showsUserLocation`](https://developer.apple.com/documentation/mapkit/mkmapview/showsuserlocation). After enabling this property, the map delegate begins receiving updates to the user’s location, represented with a [`MKUserLocation`](https://developer.apple.com/documentation/mapkit/mkuserlocation) object, through [`mapView(_:didUpdate:)`](https://developer.apple.com/documentation/mapkit/mkmapviewdelegate/mapview(_:didupdate:)).
+To provide user-friendly place information, configure your map view to display the user’s current location by enabling [`showsUserLocation`](../MapKit/mkmapview/showsuserlocation.md). After enabling this property, the map delegate begins receiving updates to the user’s location, represented with a [`MKUserLocation`](../MapKit/mkuserlocation.md) object, through [`mapView(_:didUpdate:)`](../MapKit/mkmapviewdelegate/mapview%28_,didupdate%29.md).
 
-##### Geocode the User Location Annotation
+##### Geocode the user location annotation
 
-[`CLPlacemark`](clplacemark.md) objects represent user place names, and include properties for street name, city name, country or region name, and many other location identifiers. When [`mapView(_:didUpdate:)`](https://developer.apple.com/documentation/mapkit/mkmapviewdelegate/mapview(_:didupdate:)) receives updates on the user’s location, convert the [`MKUserLocation`](https://developer.apple.com/documentation/mapkit/mkuserlocation) object to a [`CLPlacemark`](clplacemark.md) by reverse geocoding the [`location`](https://developer.apple.com/documentation/mapkit/mkuserlocation/location) property with a [`CLGeocoder`](clgeocoder.md). Readable descriptions of the user’s location are available as properties on the placemark, such as the city information stored in the [`locality`](clplacemark/locality.md) property.
+[`CLPlacemark`](./clplacemark.md) objects represent user place names, and include properties for street name, city name, country or region name, and many other location identifiers. When [`mapView(_:didUpdate:)`](../MapKit/mkmapviewdelegate/mapview%28_,didupdate%29.md) receives updates on the user’s location, convert the [`MKUserLocation`](../MapKit/mkuserlocation.md) object to a [`CLPlacemark`](./clplacemark.md) by reverse geocoding the [`location`](../MapKit/mkuserlocation/location.md) property with a [`CLGeocoder`](./clgeocoder.md). Readable descriptions of the user’s location are available as properties on the placemark, such as the city information stored in the [`locality`](./clplacemark/locality.md) property.
 
 > ❗ **Important**:  Geocoding requests are rate-limited for each app. Issue new geocoding requests only when the user has moved a significant distance and after a reasonable amount of time has passed.
 
@@ -55,11 +56,12 @@ func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
 
 ## See Also
 
-- [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
+### Geocoding
+- [Converting between coordinates and user-friendly place names](./converting-between-coordinates-and-user-friendly-place-names.md)
   Convert between a latitude and longitude pair and a more user-friendly description of that location.
-- [class CLGeocoder](clgeocoder.md)
+- [class CLGeocoder](./clgeocoder.md)
   An interface for converting between geographic coordinates and place names.
-- [class CLPlacemark](clplacemark.md)
+- [class CLPlacemark](./clplacemark.md)
   A user-friendly description of a geographic coordinate, often containing the name of the place, its address, and other relevant information.
 
 

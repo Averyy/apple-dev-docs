@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the item at the given index.
 
@@ -22,7 +23,8 @@ subscript(index: IndexSet.RangeView.Index) -> Range<IndexSet.Element> { get }
 
 ## See Also
 
-- [subscript(Range<IndexSet.RangeView.Index>) -> Slice<IndexSet.RangeView>](indexset/rangeview-swift.struct/subscript(_:)-5r66q.md)
+### Accessing Indexes
+- [subscript(Range<IndexSet.RangeView.Index>) -> Slice<IndexSet.RangeView>](./subscript%28_%29-5r66q.md)
   Accesses the items at the given range of indexes.
 
 

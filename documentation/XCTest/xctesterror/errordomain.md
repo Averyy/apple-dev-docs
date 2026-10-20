@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain for errors that can occur while the test is waiting to fulfill expectations.
 

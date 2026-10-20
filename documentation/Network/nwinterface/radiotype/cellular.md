@@ -1,7 +1,8 @@
 # NWInterface.RadioType.Cellular
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,21 +22,21 @@ enum Cellular
 ## Topics
 
 ### Enumeration Cases
-- [NWInterface.RadioType.Cellular.cdma](nwinterface/radiotype/cellular/cdma.md)
-- [case dualConnectivity5G(NWInterface.RadioType.Cellular.NewRadio5GVariant)](nwinterface/radiotype/cellular/dualconnectivity5g(_:).md)
-- [NWInterface.RadioType.Cellular.evdo](nwinterface/radiotype/cellular/evdo.md)
-- [NWInterface.RadioType.Cellular.gsm](nwinterface/radiotype/cellular/gsm.md)
-- [NWInterface.RadioType.Cellular.lte](nwinterface/radiotype/cellular/lte.md)
-- [case standalone5G(NWInterface.RadioType.Cellular.NewRadio5GVariant)](nwinterface/radiotype/cellular/standalone5g(_:).md)
-- [NWInterface.RadioType.Cellular.wcdma](nwinterface/radiotype/cellular/wcdma.md)
+- [NWInterface.RadioType.Cellular.cdma](./cellular/cdma.md)
+- [case dualConnectivity5G(NWInterface.RadioType.Cellular.NewRadio5GVariant)](./cellular/dualconnectivity5g%28_%29.md)
+- [NWInterface.RadioType.Cellular.evdo](./cellular/evdo.md)
+- [NWInterface.RadioType.Cellular.gsm](./cellular/gsm.md)
+- [NWInterface.RadioType.Cellular.lte](./cellular/lte.md)
+- [case standalone5G(NWInterface.RadioType.Cellular.NewRadio5GVariant)](./cellular/standalone5g%28_%29.md)
+- [NWInterface.RadioType.Cellular.wcdma](./cellular/wcdma.md)
 ### Enumerations
-- [NWInterface.RadioType.Cellular.NewRadio5GVariant](nwinterface/radiotype/cellular/newradio5gvariant.md)
+- [NWInterface.RadioType.Cellular.NewRadio5GVariant](./cellular/newradio5gvariant.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

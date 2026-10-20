@@ -1,7 +1,8 @@
 # IOMappedWrite8
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Write one byte to the desired "Physical" IOSpace address.
 
@@ -10,7 +11,7 @@ Write one byte to the desired "Physical" IOSpace address.
 
 ## Declaration
 
-```swift
+```c
 void IOMappedWrite8(IOPhysicalAddress address, UInt8 value);
 ```
 
@@ -25,27 +26,28 @@ Write one byte to the desired "Physical" IOSpace address. This function allows t
 
 ## See Also
 
-- [IOMapper](iomapper.md)
-- [IOMemoryMap](iomemorymap.md)
+### Mapped Memory
+- [IOMapper](./iomapper.md)
+- [IOMemoryMap](./iomemorymap.md)
   A class defining common methods for describing a memory mapping.
-- [IOMappedRead16](1575322-iomappedread16.md)
+- [IOMappedRead16](./api-1575322-iomappedread16.md)
   Read two bytes from the desired "Physical" IOSpace address.
-- [IOMappedRead32](1575311-iomappedread32.md)
+- [IOMappedRead32](./api-1575311-iomappedread32.md)
   Read four bytes from the desired "Physical" IOSpace address.
-- [IOMappedRead64](1575301-iomappedread64.md)
+- [IOMappedRead64](./api-1575301-iomappedread64.md)
   Read eight bytes from the desired "Physical" IOSpace address.
-- [IOMappedRead8](1575317-iomappedread8.md)
+- [IOMappedRead8](./api-1575317-iomappedread8.md)
   Read one byte from the desired "Physical" IOSpace address.
-- [IOMappedWrite16](1575315-iomappedwrite16.md)
+- [IOMappedWrite16](./api-1575315-iomappedwrite16.md)
   Write two bytes to the desired "Physical" IOSpace address.
-- [IOMappedWrite32](1575310-iomappedwrite32.md)
+- [IOMappedWrite32](./api-1575310-iomappedwrite32.md)
   Write four bytes to the desired "Physical" IOSpace address.
-- [IOMappedWrite64](1575313-iomappedwrite64.md)
+- [IOMappedWrite64](./api-1575313-iomappedwrite64.md)
   Write eight bytes to the desired "Physical" IOSpace address.
-- [IOMapperIOVMAlloc](1532986-iomapperiovmalloc.md)
-- [IOMapperIOVMFree](1532978-iomapperiovmfree.md)
-- [IOMapperInsertPage](1532970-iomapperinsertpage.md)
-- [IOFlushProcessorCache](1575308-ioflushprocessorcache.md)
+- [IOMapperIOVMAlloc](./api-1532986-iomapperiovmalloc.md)
+- [IOMapperIOVMFree](./api-1532978-iomapperiovmfree.md)
+- [IOMapperInsertPage](./api-1532970-iomapperinsertpage.md)
+- [IOFlushProcessorCache](./api-1575308-ioflushprocessorcache.md)
   Flushes the processor cache for mapped memory.
 
 

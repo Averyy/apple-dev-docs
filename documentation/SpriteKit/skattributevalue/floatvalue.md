@@ -1,7 +1,8 @@
 # floatValue
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s floating point value.
 
@@ -20,17 +21,22 @@ The receiver’s floating point value.
 var floatValue: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float floatValue;
+```
+
 #### Discussion
 
-If the receiver’s original value is a vector, [`floatValue`](skattributevalue/floatvalue.md) is the first element of the vector.
+If the receiver’s original value is a vector, [`floatValue`](./floatvalue.md) is the first element of the vector.
 
 ## See Also
 
-- [var vectorFloat2Value: vector_float2](skattributevalue/vectorfloat2value.md)
+### Instance Properties
+- [var vectorFloat2Value: vector_float2](./vectorfloat2value.md)
   The receiver’s value as a vector of two floating-point numbers.
-- [var vectorFloat3Value: vector_float3](skattributevalue/vectorfloat3value.md)
+- [var vectorFloat3Value: vector_float3](./vectorfloat3value.md)
   The receiver’s value as a vector of three floating point numbers.
-- [var vectorFloat4Value: vector_float4](skattributevalue/vectorfloat4value.md)
+- [var vectorFloat4Value: vector_float4](./vectorfloat4value.md)
   The receiver’s value as a vector of four floating point numbers.
 
 

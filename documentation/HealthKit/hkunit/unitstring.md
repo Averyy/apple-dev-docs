@@ -1,7 +1,8 @@
 # unitString
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of the unit object.
 
@@ -19,23 +20,29 @@ A string representation of the unit object.
 var unitString: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * unitString;
+```
+
 #### Discussion
 
-This property contains a string using the format required by [`init(from:)`](hkunit/init(from:)-9qont.md).
+This property contains a string using the format required by [`init(from:)`](./init%28from%29-9qont.md).
 
 ## See Also
 
-- [func reciprocal() -> HKUnit](hkunit/reciprocal.md)
+### Related Documentation
+- [func reciprocal() -> HKUnit](./reciprocal%28%29.md)
   Returns a complex unit representing the unit’s reciprocal.
-- [func unitMultiplied(by: HKUnit) -> HKUnit](hkunit/unitmultiplied(by:).md)
+- [func unitMultiplied(by: HKUnit) -> HKUnit](./unitmultiplied%28by%29.md)
   Creates a complex unit by multiplying the receiving unit with another unit.
-- [func unitRaised(toPower: Int) -> HKUnit](hkunit/unitraised(topower:).md)
+- [func unitRaised(toPower: Int) -> HKUnit](./unitraised%28topower%29.md)
   Creates a complex unit by raising the unit to the given power.
-- [func unitDivided(by: HKUnit) -> HKUnit](hkunit/unitdivided(by:).md)
+- [func unitDivided(by: HKUnit) -> HKUnit](./unitdivided%28by%29.md)
   Creates a complex unit by dividing the receiving unit by another unit.
-- [convenience init(from: String)](hkunit/init(from:)-9qont.md)
+### Working with units
+- [convenience init(from: String)](./init%28from%29-9qont.md)
   Returns the unit instance described by the provided string.
-- [func isNull() -> Bool](hkunit/isnull.md)
+- [func isNull() -> Bool](./isnull%28%29.md)
   Returns a Boolean value indicating whether the unit is null.
 
 

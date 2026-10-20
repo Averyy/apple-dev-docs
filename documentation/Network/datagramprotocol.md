@@ -1,7 +1,8 @@
 # DatagramProtocol
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that conform to DatagramProtocol send and receive messages with minimal or no metadata, usually constrained to a fixed maximum size.
 
@@ -23,13 +24,13 @@ protocol DatagramProtocol : MessageProtocol
 ## Relationships
 
 ### Inherits From
-- [MessageProtocol](messageprotocol.md)
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [MessageProtocol](./messageprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 ### Conforming Types
-- [DTLS](dtls.md)
-- [QUICDatagram](quicdatagram.md)
-- [UDP](udp.md)
+- [DTLS](./dtls.md)
+- [QUICDatagram](./quicdatagram.md)
+- [UDP](./udp.md)
 
 
 ---

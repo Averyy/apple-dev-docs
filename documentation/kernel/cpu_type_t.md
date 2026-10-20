@@ -1,14 +1,15 @@
 # cpu_type_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef integer_t cpu_type_t;
 ```
 

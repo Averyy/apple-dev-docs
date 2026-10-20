@@ -1,7 +1,8 @@
 # init(_:content:animation:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Cycles through a sequence of phases continuously, animating updates to a view on each phase change.
 
@@ -33,7 +34,8 @@ When the phase animator first appears, this initializer renders the `content` cl
 
 ## See Also
 
-- [init(some Sequence<Phase>, trigger: some Equatable, content: (Phase) -> Content, animation: (Phase) -> Animation?)](phaseanimator/init(_:trigger:content:animation:).md)
+### Creating a phase animator
+- [init(some Sequence<Phase>, trigger: some Equatable, content: (Phase) -> Content, animation: (Phase) -> Animation?)](./init%28_,trigger,content,animation%29.md)
   Cycles through a sequence of phases in response to changes in a specified value, animating updates to a view on each phase change.
 
 

@@ -1,7 +1,8 @@
 # Wind.CompassDirection.eastSoutheast
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+

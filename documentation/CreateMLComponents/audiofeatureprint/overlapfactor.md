@@ -1,7 +1,8 @@
 # overlapFactor
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overlap factor of the extractor.
 
@@ -25,7 +26,8 @@ The overlap should be greater than or equal to zero and less than one.
 
 ## See Also
 
-- [let windowDuration: TimeInterval](audiofeatureprint/windowduration.md)
+### Getting the properties
+- [let windowDuration: TimeInterval](./windowduration.md)
   The window duration of the extractor.
 
 

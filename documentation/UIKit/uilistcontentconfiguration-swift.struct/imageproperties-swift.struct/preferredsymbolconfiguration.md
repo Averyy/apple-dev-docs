@@ -1,7 +1,8 @@
 # preferredSymbolConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbol configuration to use.
 
@@ -10,7 +11,7 @@ The symbol configuration to use.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,21 +21,22 @@ var preferredSymbolConfiguration: UIImage.SymbolConfiguration? { get set }
 
 ## See Also
 
-- [var tintColor: UIColor?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolor.md)
+### Configuring image properties
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the image view.
-- [var tintColorTransformer: UIConfigurationColorTransformer?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolortransformer.md)
+- [var tintColorTransformer: UIConfigurationColorTransformer?](./tintcolortransformer.md)
   The color transformer for resolving the tint color.
-- [func resolvedTintColor(for: UIColor) -> UIColor](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/resolvedtintcolor(for:).md)
+- [func resolvedTintColor(for: UIColor) -> UIColor](./resolvedtintcolor%28for%29.md)
   Generates the resolved tint color for the specified tint color, using the tint color and color transformer.
-- [var cornerRadius: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/cornerradius.md)
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The preferred corner radius, using a continuous corner curve, for the image.
-- [var maximumSize: CGSize](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md)
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum size for the image.
-- [var reservedLayoutSize: CGSize](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/reservedlayoutsize.md)
+- [var reservedLayoutSize: CGSize](./reservedlayoutsize.md)
   The layout size that the system reserves for the image, and then centers the image within.
-- [static let standardDimension: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/standarddimension.md)
+- [static let standardDimension: CGFloat](./standarddimension.md)
   The system standard layout dimension for reserved layout size.
-- [var accessibilityIgnoresInvertColors: Bool](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/accessibilityignoresinvertcolors.md)
+- [var accessibilityIgnoresInvertColors: Bool](./accessibilityignoresinvertcolors.md)
   A Boolean value that determines whether the image inverts its colors when the user turns on the Invert Colors accessibility setting.
 
 

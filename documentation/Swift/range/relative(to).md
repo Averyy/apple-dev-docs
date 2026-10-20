@@ -1,7 +1,8 @@
 # relative(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of indices described by this range expression within the given collection.
 
@@ -20,6 +21,8 @@ Returns the range of indices described by this range expression within the given
 func relative<C>(to collection: C) -> Range<Bound> where Bound == C.Index, C : Collection
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Return Value
 
 A range suitable for slicing `collection`. The returned range is *not* guaranteed to be inside the bounds of `collection`. Callers should apply the same preconditions to the return value as they would to a range provided directly by the user.
@@ -30,8 +33,9 @@ A range suitable for slicing `collection`. The returned range is *not* guarantee
 
 ## See Also
 
-- [init?(NSRange, in: String)](range/init(_:in:)-5cclx.md)
-- [init?<S>(NSRange, in: S)](range/init(_:in:)-5qfor.md)
+### Converting Ranges
+- [init?(NSRange, in: String)](./init%28_,in%29-5cclx.md)
+- [init?<S>(NSRange, in: S)](./init%28_,in%29-5qfor.md)
 
 
 ---

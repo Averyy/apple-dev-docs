@@ -1,7 +1,8 @@
 # extendedDynamicRangeOutput
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specify whether the target Metal layer has been configured for EDR output.
 
@@ -20,9 +21,9 @@ var extendedDynamicRangeOutput: Bool { get set }
 
 #### Discussion
 
-If the Metal layer that this [`RealityRenderer`](realityrenderer.md) will be rendering into has been configured to output extended dynamic range content (i.e. the property `QuartzCore/CAMetalLayer/wantsExtendedDynamicRangeContent` on the target `QuartzCore/CAMetalLayer` has been set to `true` and a pixel format that supports EDR content has been set), this property should be set to `true` so that [`RealityRenderer`](realityrenderer.md) adjusts its tone mapping accordingly.
+If the Metal layer that this [`RealityRenderer`](../realityrenderer.md) will be rendering into has been configured to output extended dynamic range content (i.e. the property `QuartzCore/CAMetalLayer/wantsExtendedDynamicRangeContent` on the target `QuartzCore/CAMetalLayer` has been set to `true` and a pixel format that supports EDR content has been set), this property should be set to `true` so that [`RealityRenderer`](../realityrenderer.md) adjusts its tone mapping accordingly.
 
-To control the amount of headroom available for extended dynamic range content, see [`extendedDynamicRangeHeadroom`](realityrenderer/extendeddynamicrangeheadroom.md).
+To control the amount of headroom available for extended dynamic range content, see [`extendedDynamicRangeHeadroom`](./extendeddynamicrangeheadroom.md).
 
 The default value is `false`.
 

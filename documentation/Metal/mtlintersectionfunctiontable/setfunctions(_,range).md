@@ -1,7 +1,8 @@
 # setFunctions(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a range of entries in the table.
 
@@ -11,7 +12,7 @@ Sets a range of entries in the table.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ func setFunctions(_ functions: [(any MTLFunctionHandle)?], range: Range<Int>)
 
 ## See Also
 
-- [func setFunction((any MTLFunctionHandle)?, index: Int)](mtlintersectionfunctiontable/setfunction(_:index:).md)
+### Setting a table entry
+- [func setFunction((any MTLFunctionHandle)?, index: Int)](./setfunction%28_,index%29.md)
   Sets an entry in the table.
 
 

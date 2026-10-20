@@ -1,17 +1,22 @@
 # getHandle(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the discovery of the service record handle assigned to the service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getHandle(_ outServiceRecordHandle: UnsafeMutablePointer<BluetoothSDPServiceRecordHandle>!) -> IOReturn
+```
+
+```objc
+- (IOReturn) getServiceRecordHandle:(BluetoothSDPServiceRecordHandle *) outServiceRecordHandle;
 ```
 
 #### Return Value

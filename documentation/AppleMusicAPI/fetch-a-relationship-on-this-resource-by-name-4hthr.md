@@ -1,7 +1,8 @@
 # Get a Catalog Album's Relationship Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch an album’s relationship by using its identifier.
 
@@ -10,13 +11,13 @@ Fetch an album’s relationship by using its identifier.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/albums/1616728060/tracks
 ```
 
@@ -674,26 +675,45 @@ https://api.music.apple.com/v1/catalog/us/albums/1616728060/tracks
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the album.
+- `relationship` (string) *(required)*: The name of the relationship you want to fetch for this resource.
+
+  **Allowed Values**: `artists`, `genres`, `library`, `record-labels`, `tracks`
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`RelationshipResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Albums](albums.md)
+### Related Documentation
+- [object Albums](./albums.md)
   A resource object that represents an album.
-- [object AlbumsResponse](albumsresponse.md)
+- [object AlbumsResponse](./albumsresponse.md)
   The response to an albums request.
-- [Get a Catalog Album](get-a-catalog-album.md)
+### Requesting Catalog Albums
+- [Get a Catalog Album](./get-a-catalog-album.md)
   Fetch an album by using its identifier.
-- [Get a Catalog Album’s Relationship View Directly by Name](fetch-a-view-on-this-resource-by-name-2we6l.md)
+- [Get a Catalog Album’s Relationship View Directly by Name](./fetch-a-view-on-this-resource-by-name-2we6l.md)
   Fetch related resources for a single album’s relationship view.
-- [Get Multiple Catalog Albums](get-multiple-catalog-albums.md)
+- [Get Multiple Catalog Albums](./get-multiple-catalog-albums.md)
   Fetch one or more albums by using their identifiers.
-- [Get Multiple Catalog Albums by UPC](get-multiple-catalog-albums-by-upc.md)
+- [Get Multiple Catalog Albums by UPC](./get-multiple-catalog-albums-by-upc.md)
   Fetch one or more albums by using their UPC values.
-- [Get Equivalent Catalog Albums by ID](get-equivalent-ids-for-the-albums-8aky3.md)
+- [Get Equivalent Catalog Albums by ID](./get-equivalent-ids-for-the-albums-8aky3.md)
   Fetch the equivalent, available content in the storefront for the provided albums’ identifiers.
 
 

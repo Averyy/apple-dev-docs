@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the device type (32-bit unsigned integer).
 
@@ -19,6 +20,10 @@ The identifier of the device type (32-bit unsigned integer).
 ```swift
 @NSCopying
 var id: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSNumber * id;
 ```
 
 

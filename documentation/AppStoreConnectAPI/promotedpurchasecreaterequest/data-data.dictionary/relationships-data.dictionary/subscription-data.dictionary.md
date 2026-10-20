@@ -1,21 +1,22 @@
 # PromotedPurchaseCreateRequest.Data.Relationships.Subscription
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object PromotedPurchaseCreateRequest.Data.Relationships.Subscription
 ```
 
 ## Topics
 
 ### Objects
-- [object PromotedPurchaseCreateRequest.Data.Relationships.Subscription.Data](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+- [object PromotedPurchaseCreateRequest.Data.Relationships.Subscription.Data](./subscription-data.dictionary/data-data.dictionary.md)
   The request body you use to create a promoted purchase.
 
 ## Properties
@@ -24,8 +25,9 @@ object PromotedPurchaseCreateRequest.Data.Relationships.Subscription
 
 ## See Also
 
-- [object PromotedPurchaseCreateRequest.Data.Relationships.App](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
-- [object PromotedPurchaseCreateRequest.Data.Relationships.InAppPurchaseV2](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
+### Objects
+- [object PromotedPurchaseCreateRequest.Data.Relationships.App](./app-data.dictionary.md)
+- [object PromotedPurchaseCreateRequest.Data.Relationships.InAppPurchaseV2](./inapppurchasev2-data.dictionary.md)
 
 
 ---

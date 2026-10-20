@@ -1,7 +1,8 @@
 # CGToneMapping.referenceWhiteBased
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -18,13 +19,18 @@
 case referenceWhiteBased
 ```
 
+```c
+kCGToneMappingReferenceWhiteBased
+```
+
 ## See Also
 
-- [CGToneMapping.default](cgtonemapping/default.md)
-- [CGToneMapping.exrGamma](cgtonemapping/exrgamma.md)
-- [CGToneMapping.imageSpecificLumaScaling](cgtonemapping/imagespecificlumascaling.md)
-- [CGToneMapping.ituRecommended](cgtonemapping/iturecommended.md)
-- [CGToneMapping.none](cgtonemapping/none.md)
+### Enumeration Cases
+- [CGToneMapping.default](./default.md)
+- [CGToneMapping.exrGamma](./exrgamma.md)
+- [CGToneMapping.imageSpecificLumaScaling](./imagespecificlumascaling.md)
+- [CGToneMapping.ituRecommended](./iturecommended.md)
+- [CGToneMapping.none](./none.md)
 
 
 ---

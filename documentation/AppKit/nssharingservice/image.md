@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary image representing the sharing service.
 
@@ -14,13 +15,18 @@ The primary image representing the sharing service.
 var image: NSImage { get }
 ```
 
+```objc
+@property (strong, readonly) NSImage * image;
+```
+
 ## See Also
 
-- [var accountName: String?](nssharingservice/accountname.md)
+### Getting the Service’s Details
+- [var accountName: String?](./accountname.md)
   The account name used for posting on Twitter or Sina Weibo.
-- [var alternateImage: NSImage?](nssharingservice/alternateimage.md)
+- [var alternateImage: NSImage?](./alternateimage.md)
   The alternate image representing the sharing service.
-- [var title: String](nssharingservice/title.md)
+- [var title: String](./title.md)
   The title of the sharing service.
 
 

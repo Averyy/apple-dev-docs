@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all inherit arcs with the specified list.
 
@@ -21,7 +22,7 @@ func set(_ primPaths: [USDLayer.Path]) throws
 
 #### Discussion
 
-> **Note**: An error if the inherits cannot be set.
+> **Throws**: An error if the inherits cannot be set.
 
 ## Parameters
 

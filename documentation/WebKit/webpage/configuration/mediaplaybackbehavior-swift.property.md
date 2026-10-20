@@ -1,7 +1,8 @@
 # mediaPlaybackBehavior
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether HTML5 videos play inline or use the native full-screen controller.
 

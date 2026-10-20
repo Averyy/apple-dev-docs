@@ -1,7 +1,8 @@
 # replaceAll(searchQuery:replacementString:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all matching instances of the query string with the replacement string you provide.
 
@@ -17,6 +18,10 @@ Replaces all matching instances of the query string with the replacement string 
 func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)
 ```
 
+```objc
+- (void) replaceAllInstancesOfSearchQuery:(NSString *) searchQuery withReplacementString:(NSString *) replacementString options:(UITextSearchOptions *) options;
+```
+
 ## Parameters
 
 - `searchQuery`: The string to search for and replace, the user provides through the search text field of the system find panel.
@@ -25,13 +30,14 @@ func replaceAll(searchQuery: String, replacementString: String, options: UITextS
 
 ## See Also
 
-- [func performSearch(query: String, options: UITextSearchOptions?)](uifindsession/performsearch(query:options:).md)
+### Managing session interactions
+- [func performSearch(query: String, options: UITextSearchOptions?)](./performsearch%28query,options%29.md)
   Initiates a search for the query string you provide.
-- [func performSingleReplacement(query: String, replacementString: String, options: UITextSearchOptions?)](uifindsession/performsinglereplacement(query:replacementstring:options:).md)
+- [func performSingleReplacement(query: String, replacementString: String, options: UITextSearchOptions?)](./performsinglereplacement%28query,replacementstring,options%29.md)
   Replaces a single instance of the query string with the replacement string you provide.
-- [func highlightNextResult(in: UITextStorageDirection)](uifindsession/highlightnextresult(in:).md)
+- [func highlightNextResult(in: UITextStorageDirection)](./highlightnextresult%28in%29.md)
   Updates the highlighted result to the next or previous match.
-- [func invalidateFoundResults()](uifindsession/invalidatefoundresults.md)
+- [func invalidateFoundResults()](./invalidatefoundresults%28%29.md)
   Invalidates the found ranges and updates the system find panel.
 
 

@@ -1,7 +1,8 @@
 # audioBrightness
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The high-frequency content of an audio event.
 
@@ -19,17 +20,22 @@ The high-frequency content of an audio event.
 static let audioBrightness: CHHapticEvent.ParameterID
 ```
 
+```c
+extern CHHapticEventParameterID CHHapticEventParameterIDAudioBrightness;
+```
+
 #### Discussion
 
 This parameter value ranges from 0.0 (maximum high-frequency reduction) to 1.0 (no high-frequency reduction). The default value is 1.0.
 
 ## See Also
 
-- [static let audioVolume: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiovolume.md)
+### Audio Event Parameter IDs
+- [static let audioVolume: CHHapticEvent.ParameterID](./audiovolume.md)
   The volume of an audio event.
-- [static let audioPan: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopan.md)
+- [static let audioPan: CHHapticEvent.ParameterID](./audiopan.md)
   The stereo panning of an audio event.
-- [static let audioPitch: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopitch.md)
+- [static let audioPitch: CHHapticEvent.ParameterID](./audiopitch.md)
   The pitch of an audio event.
 
 

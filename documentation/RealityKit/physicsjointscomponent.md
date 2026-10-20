@@ -1,7 +1,8 @@
 # PhysicsJointsComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that stores physics joints which RealityKit simulates.
 
@@ -21,38 +22,39 @@ struct PhysicsJointsComponent
 
 #### Overview
 
-Add this component to an entity, or any child of an entity, that has a [`PhysicsSimulationComponent`](physicssimulationcomponent.md). All joints in the `PhysicsJointsComponent` need to reference entities under the same [`PhysicsSimulationComponent`](physicssimulationcomponent.md) tree.
+Add this component to an entity, or any child of an entity, that has a [`PhysicsSimulationComponent`](./physicssimulationcomponent.md). All joints in the `PhysicsJointsComponent` need to reference entities under the same [`PhysicsSimulationComponent`](./physicssimulationcomponent.md) tree.
 
 Add a joint to the correct `PhysicsJointsComponent` instance by calling its `PhysicsJoint/addToSimulation()-886c4` method.
 
 ## Topics
 
 ### Initializers
-- [init()](physicsjointscomponent/init.md)
+- [init()](./physicsjointscomponent/init%28%29.md)
   Creates a new physics joints component.
 ### Instance Properties
-- [var joints: PhysicsJoints](physicsjointscomponent/joints.md)
+- [var joints: PhysicsJoints](./physicsjointscomponent/joints.md)
   The set of joints the physics joints component stores.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Simulating physics joints in your RealityKit app](simulating-physics-joints-in-your-realitykit-app.md)
+### Pin and joint components
+- [Simulating physics joints in your RealityKit app](./simulating-physics-joints-in-your-realitykit-app.md)
   Create realistic, connected motion using physics joints.
-- [struct GeometricPin](geometricpin.md)
+- [struct GeometricPin](./geometricpin.md)
   A structure that identifies a local transform relative to an entity or entity’s animating skeletal joint.
-- [struct GeometricPinsComponent](geometricpinscomponent.md)
+- [struct GeometricPinsComponent](./geometricpinscomponent.md)
   A component that stores a sequence of geometric pins.
-- [protocol PhysicsJoint](physicsjoint.md)
+- [protocol PhysicsJoint](./physicsjoint.md)
   A type that describes physics joints.
-- [struct EntityGeometricPins](entitygeometricpins.md)
+- [struct EntityGeometricPins](./entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
-- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+- [struct AttachedTransformComponent](./attachedtransformcomponent.md)
   A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 

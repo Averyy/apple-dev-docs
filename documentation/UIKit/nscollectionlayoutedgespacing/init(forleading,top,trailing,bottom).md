@@ -1,7 +1,8 @@
 # init(forLeading:top:trailing:bottom:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

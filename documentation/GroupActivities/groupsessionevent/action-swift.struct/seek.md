@@ -1,7 +1,8 @@
 # seek
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event that indicates a change to the current playback location.
 
@@ -21,11 +22,12 @@ static let seek: GroupSessionEvent.Action
 
 ## See Also
 
-- [static let play: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/play.md)
+### Getting playback-related actions
+- [static let play: GroupSessionEvent.Action](./play.md)
   An action that indicates the start of playback.
-- [static let pause: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/pause.md)
+- [static let pause: GroupSessionEvent.Action](./pause.md)
   An action that indicates an end to playback.
-- [static func skip(item: String) -> GroupSessionEvent.Action](groupsessionevent/action-swift.struct/skip(item:).md)
+- [static func skip(item: String) -> GroupSessionEvent.Action](./skip%28item%29.md)
   Returns an event that indicates a skipped track or playback item.
 
 

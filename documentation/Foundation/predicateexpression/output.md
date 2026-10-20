@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -21,7 +22,8 @@ associatedtype Output
 
 ## See Also
 
-- [func evaluate(PredicateBindings) throws -> Self.Output](predicateexpression/evaluate(_:).md)
+### Evaluating a predicate expression
+- [func evaluate(PredicateBindings) throws -> Self.Output](./evaluate%28_%29.md)
 
 
 ---

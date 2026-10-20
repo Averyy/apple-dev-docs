@@ -1,12 +1,15 @@
 # textStyle
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style applied to the text of the element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The style applied to the text of the element.
 var textStyle: TVTextElementStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TVTextElementStyle textStyle;
+```
+
 #### Discussion
 
-This property will contain a [`TVTextElementStyle`](tvtextelementstyle.md) value.
+This property will contain a [`TVTextElementStyle`](../tvtextelementstyle.md) value.
 
 ## See Also
 
-- [var attributedString: NSAttributedString?](tvtextelement/attributedstring.md)
+### Inspecting Text Elements
+- [var attributedString: NSAttributedString?](./attributedstring.md)
   The text for an element.
-- [enum TVTextElementStyle](tvtextelementstyle.md)
+- [enum TVTextElementStyle](../tvtextelementstyle.md)
   The style applied to the text inside of an element.
 
 

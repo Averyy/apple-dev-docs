@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serializes a subject with the given hasher.
 

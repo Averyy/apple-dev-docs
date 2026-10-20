@@ -1,7 +1,8 @@
 # captionSceneChanges(in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determine render time ranges within an enclosing time range to account for visual changes among captions.
 
@@ -17,6 +18,10 @@ Determine render time ranges within an enclosing time range to account for visua
 func captionSceneChanges(in consideredTimeRange: CMTimeRange) -> [AVCaptionRenderer.Scene]
 ```
 
+```objc
+- (NSArray<AVCaptionRendererScene *> *) captionSceneChangesInRange:(CMTimeRange) consideredTimeRange;
+```
+
 #### Return Value
 
 An array of render scenes for the time range, or an empty array if there are none.
@@ -27,7 +32,8 @@ An array of render scenes for the time range, or an empty array if there are non
 
 ## See Also
 
-- [AVCaptionRenderer.Scene](avcaptionrenderer/scene.md)
+### Determining scene changes
+- [AVCaptionRenderer.Scene](./scene.md)
   An object that holds a time range and an associated state which indicates when the renderer draws output.
 
 

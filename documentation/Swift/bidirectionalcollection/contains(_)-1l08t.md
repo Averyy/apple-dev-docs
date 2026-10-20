@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the collection contains the given regex.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the collection contains the given reg
 ```swift
 func contains(_ regex: some RegexComponent) -> Bool
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

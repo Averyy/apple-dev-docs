@@ -1,7 +1,8 @@
 # withFractionalSeconds
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var withFractionalSeconds: CFISO8601DateFormatOptions { get }
+```
+
+```c
+kCFISO8601DateFormatWithFractionalSeconds
 ```
 
 

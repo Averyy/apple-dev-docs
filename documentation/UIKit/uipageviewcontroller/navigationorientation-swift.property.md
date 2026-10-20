@@ -1,7 +1,8 @@
 # navigationOrientation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction along which navigation occurs.
 
@@ -9,7 +10,7 @@ The direction along which navigation occurs.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The direction along which navigation occurs.
 var navigationOrientation: UIPageViewController.NavigationOrientation { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPageViewControllerNavigationOrientation navigationOrientation;
+```
+
 ## See Also
 
-- [UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.enum.md)
+### Display Options
+- [UIPageViewController.NavigationOrientation](./navigationorientation-swift.enum.md)
   Orientations for page-turn transitions.
-- [var spineLocation: UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.property.md)
+- [var spineLocation: UIPageViewController.SpineLocation](./spinelocation-swift.property.md)
   The location of the spine.
-- [UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.enum.md)
+- [UIPageViewController.SpineLocation](./spinelocation-swift.enum.md)
   Locations for the spine.
-- [var transitionStyle: UIPageViewController.TransitionStyle](uipageviewcontroller/transitionstyle-swift.property.md)
+- [var transitionStyle: UIPageViewController.TransitionStyle](./transitionstyle-swift.property.md)
   The style used to transition between view controllers.
-- [UIPageViewController.TransitionStyle](uipageviewcontroller/transitionstyle-swift.enum.md)
+- [UIPageViewController.TransitionStyle](./transitionstyle-swift.enum.md)
   Styles for the page-turn transition.
-- [var isDoubleSided: Bool](uipageviewcontroller/isdoublesided.md)
+- [var isDoubleSided: Bool](./isdoublesided.md)
   A Boolean value that indicates whether content appears on the back of pages.
 
 

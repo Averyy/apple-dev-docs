@@ -1,7 +1,8 @@
 # preferredTransform
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred transform of the visual media.
 
@@ -20,17 +21,22 @@ The preferred transform of the visual media.
 var preferredTransform: CGAffineTransform { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGAffineTransform preferredTransform;
+```
+
 #### Discussion
 
-The system retrieves the transform from the [`AVAssetTrack`](avassettrack.md) that provides the media data. If the source track doesn’t specify a transform, the value of this property is [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
+The system retrieves the transform from the [`AVAssetTrack`](../../avassettrack.md) that provides the media data. If the source track doesn’t specify a transform, the value of this property is [`CGAffineTransformIdentity`](../../../CoreGraphics/cgaffinetransformidentity.md).
 
 ## See Also
 
-- [var sourcePlayerItem: AVPlayerItem?](avplayervideooutput/configuration/sourceplayeritem.md)
+### Inspecting the configuration
+- [var sourcePlayerItem: AVPlayerItem?](./sourceplayeritem.md)
   The player item that’s the source of this configuration.
-- [var dataChannelDescription: [[CMTag]]](avplayervideooutput/configuration/datachanneldescription.md)
+- [var dataChannelDescription: [[CMTag]]](./datachanneldescription.md)
   An array of data channels selected for this configuration.
-- [var activationTime: CMTime](avplayervideooutput/configuration/activationtime.md)
+- [var activationTime: CMTime](./activationtime.md)
   The host time this configuration became active on its associated player object.
 
 

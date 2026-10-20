@@ -1,7 +1,8 @@
 # CNInstantMessageServiceSkype
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Instant message service for Skype.
 
@@ -19,31 +20,36 @@ Instant message service for Skype.
 let CNInstantMessageServiceSkype: String
 ```
 
+```c
+extern NSString * const CNInstantMessageServiceSkype;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [class func localizedString(forService: String) -> String](cninstantmessageaddress/localizedstring(forservice:).md)
+### Getting Localized Service Names
+- [class func localizedString(forService: String) -> String](./cninstantmessageaddress/localizedstring%28forservice%29.md)
   Returns a string containing the localized name of the specified service.
-- [let CNInstantMessageServiceAIM: String](cninstantmessageserviceaim.md)
+- [let CNInstantMessageServiceAIM: String](./cninstantmessageserviceaim.md)
   Instant message service for AIM.
-- [let CNInstantMessageServiceFacebook: String](cninstantmessageservicefacebook.md)
+- [let CNInstantMessageServiceFacebook: String](./cninstantmessageservicefacebook.md)
   Instant message service for Facebook.
-- [let CNInstantMessageServiceGaduGadu: String](cninstantmessageservicegadugadu.md)
+- [let CNInstantMessageServiceGaduGadu: String](./cninstantmessageservicegadugadu.md)
   Instant message service for Gadu Gadu.
-- [let CNInstantMessageServiceGoogleTalk: String](cninstantmessageservicegoogletalk.md)
+- [let CNInstantMessageServiceGoogleTalk: String](./cninstantmessageservicegoogletalk.md)
   Instant message service for Google Talk.
-- [let CNInstantMessageServiceICQ: String](cninstantmessageserviceicq.md)
+- [let CNInstantMessageServiceICQ: String](./cninstantmessageserviceicq.md)
   Instant message service for ICQ.
-- [let CNInstantMessageServiceJabber: String](cninstantmessageservicejabber.md)
+- [let CNInstantMessageServiceJabber: String](./cninstantmessageservicejabber.md)
   Instant message service for Jabber.
-- [let CNInstantMessageServiceMSN: String](cninstantmessageservicemsn.md)
+- [let CNInstantMessageServiceMSN: String](./cninstantmessageservicemsn.md)
   Instant message service for MSN.
-- [let CNInstantMessageServiceQQ: String](cninstantmessageserviceqq.md)
+- [let CNInstantMessageServiceQQ: String](./cninstantmessageserviceqq.md)
   Instant message service for QQ.
-- [let CNInstantMessageServiceYahoo: String](cninstantmessageserviceyahoo.md)
+- [let CNInstantMessageServiceYahoo: String](./cninstantmessageserviceyahoo.md)
   Instant message service for Yahoo.
 
 

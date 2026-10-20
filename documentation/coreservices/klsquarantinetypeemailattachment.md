@@ -1,7 +1,8 @@
 # kLSQuarantineTypeEmailAttachment
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The type when the data is an attachment from an email message.
 
@@ -14,17 +15,22 @@ The type when the data is an attachment from an email message.
 let kLSQuarantineTypeEmailAttachment: CFString
 ```
 
+```c
+const CFStringRef kLSQuarantineTypeEmailAttachment;
+```
+
 ## See Also
 
-- [let kLSQuarantineTypeCalendarEventAttachment: CFString](klsquarantinetypecalendareventattachment.md)
+### Identifying the Quarantine Type
+- [let kLSQuarantineTypeCalendarEventAttachment: CFString](./klsquarantinetypecalendareventattachment.md)
   The type when the data is an attachment from a calendar event.
-- [let kLSQuarantineTypeInstantMessageAttachment: CFString](klsquarantinetypeinstantmessageattachment.md)
+- [let kLSQuarantineTypeInstantMessageAttachment: CFString](./klsquarantinetypeinstantmessageattachment.md)
   The type when the data is an attachment from a message.
-- [let kLSQuarantineTypeOtherAttachment: CFString](klsquarantinetypeotherattachment.md)
+- [let kLSQuarantineTypeOtherAttachment: CFString](./klsquarantinetypeotherattachment.md)
   The type when the data is an attachment from a generic source.
-- [let kLSQuarantineTypeOtherDownload: CFString](klsquarantinetypeotherdownload.md)
+- [let kLSQuarantineTypeOtherDownload: CFString](./klsquarantinetypeotherdownload.md)
   The type when the data is from a download.
-- [let kLSQuarantineTypeWebDownload: CFString](klsquarantinetypewebdownload.md)
+- [let kLSQuarantineTypeWebDownload: CFString](./klsquarantinetypewebdownload.md)
   The type when the data is from a website download.
 
 

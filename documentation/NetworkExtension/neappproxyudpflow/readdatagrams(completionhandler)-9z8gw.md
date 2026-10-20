@@ -1,16 +1,17 @@
 # readDatagrams(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Read datagrams from the flow.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -18,13 +19,20 @@ Read datagrams from the flow.
 func readDatagrams(completionHandler: @escaping ([Data]?, [NWEndpoint]?, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) readDatagramsWithCompletionHandler:(void (^)(NSArray<NSData *> *datagrams, NSArray<NWEndpoint *> *remoteEndpoints, NSError *error)) completionHandler;
+```
+
 ## Parameters
 
-- `completionHandler`: A block that will be executed by the system on an internal system thread when datagrams have been read from the flow. The block takes the datagrams that were read, the destination endpoints of the datagrams, and an [`NSError`](https://developer.apple.com/documentation/foundation/nserror). If an error occurred while reading then `error` will be non-nil. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](neappproxyflow.md) for a list of possible error codes. If the `datagrams` and `remoteEndpoints` arrays are non-nil but are empty, then no more datagrams can be subsequently read from the flow. > **Note**:  The completion handler is only called for the single read operation that was initiated by calling this method. If the caller wants to read more datagrams then it should call this method again to schedule another read operation and another execution of the completion handler block.
+- `completionHandler`: A block that will be executed by the system on an internal system thread when datagrams have been read from the flow. The block takes the datagrams that were read, the destination endpoints of the datagrams, and an [`NSError`](../../Foundation/nserror.md). If an error occurred while reading then `error` will be non-nil. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](../neappproxyflow.md) for a list of possible error codes. If the `datagrams` and `remoteEndpoints` arrays are non-nil but are empty, then no more datagrams can be subsequently read from the flow.
+
+  > **Note**:  The completion handler is only called for the single read operation that was initiated by calling this method. If the caller wants to read more datagrams then it should call this method again to schedule another read operation and another execution of the completion handler block.
 
 ## See Also
 
-- [func writeDatagrams([Data], sentBy: [NWEndpoint], completionHandler: ((any Error)?) -> Void)](neappproxyudpflow/writedatagrams(_:sentby:completionhandler:).md)
+### Handling flow data
+- [func writeDatagrams([Data], sentBy: [NWEndpoint], completionHandler: ((any Error)?) -> Void)](./writedatagrams%28_,sentby,completionhandler%29.md)
   Write datagrams to the flow.
 
 

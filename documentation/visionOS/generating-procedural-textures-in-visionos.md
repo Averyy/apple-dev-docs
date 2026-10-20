@@ -1,6 +1,8 @@
 # Generating procedural textures
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [GeneratingProceduralTexturesInVisionOS.zip](https://docs-assets.developer.apple.com/published/d92ea601a132/GeneratingProceduralTexturesInVisionOS.zip)
 
 Display a 3D model that generates procedural textures in a reality view.
 
@@ -10,16 +12,18 @@ Display a 3D model that generates procedural textures in a reality view.
 
 #### Overview
 
-This sample demonstrates how to create and display a 3D torus model that dynamically regenerates a [`Metal`](https://developer.apple.com/documentation/metal) texture at each render frame within a visionOS app.
+This sample demonstrates how to create and display a 3D torus model that dynamically regenerates a [Metal](../Metal/Metal.md) texture at each render frame within a visionOS app.
 
 At launch, the app starts a window group that contains:
 
 - A 3D torus model with a generated texture
 - A button displaying the text “generate”
 
-##### Generate the Texture of the Model
+[Video: A video of a visionOS app displaying a translucent window with a 3D torus model on the left and a button on the right.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-drawable-1-main-view.mp4)
 
-The sample constructs the `ProceduralTextureGenerator` structure, which contains the `generate()` method to generate and return a [`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource) to apply to the torus model. The app uses  [`GKARC4RandomSource`](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource) to generate a number using the ARC4 algorithm, and assigns the `seed` to the generator to determine the random source’s behavior:
+##### Generate the texture of the model
+
+The sample constructs the `ProceduralTextureGenerator` structure, which contains the `generate()` method to generate and return a [`TextureResource`](../RealityKit/textureresource.md) to apply to the torus model. The app uses  [`GKARC4RandomSource`](../GameplayKit/gkarc4randomsource.md) to generate a number using the ARC4 algorithm, and assigns the `seed` to the generator to determine the random source’s behavior:
 
 ```swift
 import SwiftUI
@@ -46,7 +50,7 @@ struct ProceduralTextureGenerator {
 }
 ```
 
-After creating the generator, the app creates a [`CGDataProvider`](https://developer.apple.com/documentation/coregraphics/cgdataprovider) with pixels that the generator randomly assigns. Then it creates the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) for the procedural texture:
+After creating the generator, the app creates a [`CGDataProvider`](../CoreGraphics/cgdataprovider.md) with pixels that the generator randomly assigns. Then it creates the [`CGImage`](../CoreGraphics/cgimage.md) for the procedural texture:
 
 ```swift
 import SwiftUI
@@ -86,9 +90,9 @@ struct ProceduralTextureGenerator {
 }
 ```
 
-The app attempts to create and return a [`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource) with the generated `image`.
+The app attempts to create and return a [`TextureResource`](../RealityKit/textureresource.md) with the generated `image`.
 
-##### Update the Texture in Real Time
+##### Update the texture in real time
 
 The sample defines the custom system `DrawableQueueSystem` to update the model’s texture in real time:
 
@@ -114,7 +118,7 @@ struct DrawableQueueSystem: System {
 
 The `update()` method iterates through all matching entities during the rendering phase and updates each entity’s `DrawableQueueComponent` by passing the time difference between frames, allowing for smooth real-time updates in the scene.
 
-The initializer registers the `DrawableQueueSystem` within the component, establishing a Metal texture descriptor and a Metal texture. The app attempts to copy the input [`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource) texture data into the Metal texture:
+The initializer registers the `DrawableQueueSystem` within the component, establishing a Metal texture descriptor and a Metal texture. The app attempts to copy the input [`TextureResource`](../RealityKit/textureresource.md) texture data into the Metal texture:
 
 ```swift
 import SwiftUI
@@ -147,7 +151,7 @@ struct DrawableQueueComponent: Component {
 }
 ```
 
-A [`TextureResource.DrawableQueue`](https://developer.apple.com/documentation/realitykit/textureresource/drawablequeue-swift.class) makes it possible to update a texture resource dynamically. The app creates a descriptor and inserts it into the drawable queue to dynamically replace the texture:
+A [`TextureResource.DrawableQueue`](../RealityKit/textureresource/drawablequeue-swift.class.md) makes it possible to update a texture resource dynamically. The app creates a descriptor and inserts it into the drawable queue to dynamically replace the texture:
 
 ```swift
 import SwiftUI
@@ -227,7 +231,7 @@ struct DrawableQueueComponent: Component {
 
 The method sets up the encoder, then commits to the command buffer to submit the command buffer to run on the GPU. Lastly, it presents the updated texture to the renderer with the `present()` method.
 
-##### Set Up the Torus Model
+##### Set up the torus model
 
 The `EntityView` attempts to create the torus model by calling the `makeEntity()` method:
 
@@ -261,7 +265,7 @@ struct EntityView: View {
 
 The `update` closure loops through all the entities in the reality view, and attempts to update the entity in scene updates.
 
-The `makeEntity()` method marks the [`MainActor`](https://developer.apple.com/documentation/swift/mainactor) to execute in the main dispatch queue:
+The `makeEntity()` method marks the [`MainActor`](../Swift/mainactor.md) to execute in the main dispatch queue:
 
 ```swift
 @MainActor
@@ -288,9 +292,9 @@ func makeEntity() throws -> ModelEntity {
 }
 ```
 
-The [`loadModel(named:in:)`](https://developer.apple.com/documentation/realitykit/entity/loadmodel(named:in:)) method synchronously loads a 3D torus model, scales it to the proper size, and applies the `updateEntity()` method.
+The [`loadModel(named:in:)`](../RealityKit/entity/loadmodel%28named,in%29.md) method synchronously loads a 3D torus model, scales it to the proper size, and applies the `updateEntity()` method.
 
-The `updateEntity()` method generates a new texture by passing the seed value into the `generate()` method, and creates a material sampler for the [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial):
+The `updateEntity()` method generates a new texture by passing the seed value into the `generate()` method, and creates a material sampler for the [`PhysicallyBasedMaterial`](../RealityKit/physicallybasedmaterial.md):
 
 ```swift
 @MainActor
@@ -323,9 +327,9 @@ func updateEntity(_ entity: ModelEntity) throws {
 
 The method applies the material to the model of the entity, and attempts to set the `DrawableQueueComponent` to initalize the texture.
 
-##### Set Up the Parent Window
+##### Set up the parent window
 
-The `DrawableView` creates a [`State`](https://developer.apple.com/documentation/swiftui/state) `seed` property to control the randomization of the texture generator:
+The `DrawableView` creates a [`State`](../SwiftUI/state.md) `seed` property to control the randomization of the texture generator:
 
 ```swift
 import SwiftUI
@@ -345,13 +349,14 @@ struct DrawableView: View {
 }
 ```
 
-Using the [`HStack`](https://developer.apple.com/documentation/swiftui/hstack) makes it possible to call the `EntityView` that accepts `seed` and a button that increases the value of `seed` on each press.
+Using the [`HStack`](../SwiftUI/hstack.md) makes it possible to call the `EntityView` that accepts `seed` and a button that increases the value of `seed` on each press.
 
 ## See Also
 
-- [Implementing adjustable material](implementing-adjustable-material-in-visionos.md)
+### Building materials
+- [Implementing adjustable material](./implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](./displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 
 

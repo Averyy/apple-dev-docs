@@ -1,7 +1,8 @@
 # loadLeaderboards(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads all associated leaderboards that have defined deep links to this game activity definition.
 
@@ -16,7 +17,15 @@ Loads all associated leaderboards that have defined deep links to this game acti
 ## Declaration
 
 ```swift
+func loadLeaderboards(completionHandler: @escaping @Sendable ([GKLeaderboard]?, (any Error)?) -> Void)
+```
+
+```swift
 var leaderboards: [GKLeaderboard] { get async throws }
+```
+
+```objc
+- (void) loadLeaderboardsWithCompletionHandler:(void (^)(NSArray<GKLeaderboard *> *leaderboards, NSError *error)) completionHandler;
 ```
 
 

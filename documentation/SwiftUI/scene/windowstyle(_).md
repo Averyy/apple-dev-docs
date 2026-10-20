@@ -1,7 +1,8 @@
 # windowStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for windows created by this scene.
 
@@ -18,13 +19,14 @@ func windowStyle<S>(_ style: S) -> some Scene where S : WindowStyle
 
 ## See Also
 
-- [struct WindowGroup](windowgroup.md)
+### Creating windows
+- [struct WindowGroup](../windowgroup.md)
   A scene that presents a group of identically structured windows.
-- [struct Window](window.md)
+- [struct Window](../window.md)
   A scene that presents its content in a single, unique window.
-- [struct UtilityWindow](utilitywindow.md)
+- [struct UtilityWindow](../utilitywindow.md)
   A specialized window scene that provides secondary utility to the content of the main scenes of an application.
-- [protocol WindowStyle](windowstyle.md)
+- [protocol WindowStyle](../windowstyle.md)
   A specification for the appearance and interaction of a window.
 
 

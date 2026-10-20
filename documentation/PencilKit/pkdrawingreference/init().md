@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty drawing object.
 
@@ -18,15 +19,20 @@ Creates an empty drawing object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new canvas object that doesn’t contain any data.
 
 ## See Also
 
-- [init(data: Data) throws](pkdrawingreference/init(data:).md)
+### Creating a drawing object
+- [init(data: Data) throws](./init%28data%29.md)
   Creates a drawing object and populates it with previously drawn content.
-- [convenience init(strokes: [PKStroke])](pkdrawingreference/init(strokes:).md)
+- [convenience init(strokes: [PKStroke])](./init%28strokes%29.md)
   Creates a drawing object with the strokes you supply.
 
 

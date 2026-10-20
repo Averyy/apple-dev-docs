@@ -1,7 +1,8 @@
 # topItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The navigation item at the top of the navigation bar’s stack.
 
@@ -9,7 +10,7 @@ The navigation item at the top of the navigation bar’s stack.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The navigation item at the top of the navigation bar’s stack.
 var topItem: UINavigationItem? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UINavigationItem * topItem;
+```
+
 ## See Also
 
-- [func pushItem(UINavigationItem, animated: Bool)](uinavigationbar/pushitem(_:animated:).md)
+### Pushing and popping items
+- [func pushItem(UINavigationItem, animated: Bool)](./pushitem%28_,animated%29.md)
   Pushes the given navigation item onto the navigation bar’s stack and updates the UI.
-- [func popItem(animated: Bool) -> UINavigationItem?](uinavigationbar/popitem(animated:).md)
+- [func popItem(animated: Bool) -> UINavigationItem?](./popitem%28animated%29.md)
   Pops the top item from the navigation bar’s stack and updates the UI.
-- [func setItems([UINavigationItem]?, animated: Bool)](uinavigationbar/setitems(_:animated:).md)
+- [func setItems([UINavigationItem]?, animated: Bool)](./setitems%28_,animated%29.md)
   Replaces the navigation items currently managed by the navigation bar with the specified items.
-- [var items: [UINavigationItem]?](uinavigationbar/items.md)
+- [var items: [UINavigationItem]?](./items.md)
   An array of navigation items managed by the navigation bar.
-- [var backItem: UINavigationItem?](uinavigationbar/backitem.md)
+- [var backItem: UINavigationItem?](./backitem.md)
   The navigation item that is immediately below the topmost item on a navigation bar’s stack.
 
 

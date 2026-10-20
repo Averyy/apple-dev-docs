@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new Scribble item.
 
@@ -14,6 +15,10 @@ Create a new Scribble item.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

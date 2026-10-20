@@ -1,7 +1,8 @@
 # AppCategory.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppCategory.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppCategory.Relationships.Parent](appcategory/relationships-data.dictionary/parent-data.dictionary.md)
+- [object AppCategory.Relationships.Parent](./relationships-data.dictionary/parent-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppCategory.Relationships.Subcategories](appcategory/relationships-data.dictionary/subcategories-data.dictionary.md)
+- [object AppCategory.Relationships.Subcategories](./relationships-data.dictionary/subcategories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -29,7 +30,8 @@ object AppCategory.Relationships
 
 ## See Also
 
-- [object AppCategory.Attributes](appcategory/attributes-data.dictionary.md)
+### Objects
+- [object AppCategory.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Categories resource.
 
 

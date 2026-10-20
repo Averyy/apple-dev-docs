@@ -1,7 +1,8 @@
 # toolbarTitleDisplayMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the toolbar title display mode for this view.
 
@@ -32,11 +33,12 @@ NavigationStack {
 }
 ```
 
-See [`ToolbarTitleDisplayMode`](toolbartitledisplaymode.md) for more information on the different kinds of display modes. This modifier has no effect on macOS.
+See [`ToolbarTitleDisplayMode`](../toolbartitledisplaymode.md) for more information on the different kinds of display modes. This modifier has no effect on macOS.
 
 ## See Also
 
-- [struct ToolbarTitleDisplayMode](toolbartitledisplaymode.md)
+### Configuring the toolbar title display mode
+- [struct ToolbarTitleDisplayMode](../toolbartitledisplaymode.md)
   A type that defines the behavior of title of a toolbar.
 
 

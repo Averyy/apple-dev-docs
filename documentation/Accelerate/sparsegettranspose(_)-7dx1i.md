@@ -1,7 +1,8 @@
 # SparseGetTranspose(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a transposed copy of the specified matrix of complex float values.
 
@@ -20,6 +21,10 @@ Returns a transposed copy of the specified matrix of complex float values.
 func SparseGetTranspose(_ Matrix: SparseMatrix_Complex_Float) -> SparseMatrix_Complex_Float
 ```
 
+```c
+static SparseMatrix_Complex_Float SparseGetTranspose(SparseMatrix_Complex_Float Matrix);
+```
+
 #### Return Value
 
 A copy of matrix with `matrix.structure.attributes.transpose` bit flipped and `matrix.structure.attributes.conjugate_transpose` bit cleared.
@@ -34,15 +39,16 @@ Note that the underlying storage is *not* reference counted, so users must ensur
 
 ## See Also
 
-- [func SparseGetTranspose(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](sparsegettranspose(_:)-1fq2g.md)
+### Complex transpose functions
+- [func SparseGetTranspose(SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](./sparsegettranspose%28_%29-1fq2g.md)
   Returns a transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Float`.
-- [func SparseGetTranspose(SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](sparsegettranspose(_:)-2fuzo.md)
+- [func SparseGetTranspose(SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](./sparsegettranspose%28_%29-2fuzo.md)
   Returns a transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Float`.
-- [func SparseGetTranspose(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](sparsegettranspose(_:)-4nr8u.md)
+- [func SparseGetTranspose(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](./sparsegettranspose%28_%29-4nr8u.md)
   Returns a transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Double`.
-- [func SparseGetTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](sparsegettranspose(_:)-9olfr.md)
+- [func SparseGetTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](./sparsegettranspose%28_%29-9olfr.md)
   Returns a transposed copy of the specified matrix of complex double values.
-- [func SparseGetTranspose(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparsegettranspose(_:)-d0ny.md)
+- [func SparseGetTranspose(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](./sparsegettranspose%28_%29-d0ny.md)
   Returns a transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Double`.
 
 

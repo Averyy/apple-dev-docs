@@ -1,7 +1,8 @@
 # PreprocessingSupervisedTabularEstimator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A supervised tabular estimator that composes a preprocessing transformer and a supervised tabular estimator.
 
@@ -23,61 +24,62 @@ struct PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator> where Pr
 ## Topics
 
 ### Creating an estimator
-- [init(Preprocessor, Estimator)](preprocessingsupervisedtabularestimator/init(_:_:).md)
+- [init(Preprocessor, Estimator)](./preprocessingsupervisedtabularestimator/init%28_,_%29.md)
   Creates a composed supervised tabular estimator from a preprocessing transformer and a supervised tabular estimator.
 ### Getting the properties
-- [var annotationColumnID: ColumnID<Estimator.Annotation>](preprocessingsupervisedtabularestimator/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<Estimator.Annotation>](./preprocessingsupervisedtabularestimator/annotationcolumnid.md)
   The annotation column identifier.
-- [var estimator: Estimator](preprocessingsupervisedtabularestimator/estimator.md)
+- [var estimator: Estimator](./preprocessingsupervisedtabularestimator/estimator.md)
   The estimator.
-- [var preprocessor: Preprocessor](preprocessingsupervisedtabularestimator/preprocessor.md)
+- [var preprocessor: Preprocessor](./preprocessingsupervisedtabularestimator/preprocessor.md)
   The preprocessing transformer.
 ### Preprocesing and fitting
-- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](preprocessingsupervisedtabularestimator/preprocessed(from:eventhandler:).md)
+- [func preprocessed(from: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./preprocessingsupervisedtabularestimator/preprocessed%28from,eventhandler%29.md)
   Preprocesses a data frame of examples.
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingsupervisedtabularestimator/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./preprocessingsupervisedtabularestimator/fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a data frame
-- [func fitted(toPreprocessed: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingsupervisedtabularestimator/fitted(topreprocessed:validateon:eventhandler:).md)
+- [func fitted(toPreprocessed: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer](./preprocessingsupervisedtabularestimator/fitted%28topreprocessed,validateon,eventhandler%29.md)
   Fits a transformer to a data frame of preprocessed examples while validating.
-- [PreprocessingSupervisedTabularEstimator.Annotation](preprocessingsupervisedtabularestimator/annotation.md)
+- [PreprocessingSupervisedTabularEstimator.Annotation](./preprocessingsupervisedtabularestimator/annotation.md)
   The annotation type.
-- [PreprocessingSupervisedTabularEstimator.Input](preprocessingsupervisedtabularestimator/input.md)
+- [PreprocessingSupervisedTabularEstimator.Input](./preprocessingsupervisedtabularestimator/input.md)
   The input type.
-- [PreprocessingSupervisedTabularEstimator.Intermediate](preprocessingsupervisedtabularestimator/intermediate.md)
+- [PreprocessingSupervisedTabularEstimator.Intermediate](./preprocessingsupervisedtabularestimator/intermediate.md)
   The intermediate type.
-- [PreprocessingSupervisedTabularEstimator.Output](preprocessingsupervisedtabularestimator/output.md)
+- [PreprocessingSupervisedTabularEstimator.Output](./preprocessingsupervisedtabularestimator/output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedTabularEstimator](./supervisedtabularestimator.md)
 
 ## See Also
 
-- [protocol TabularTransformer](tabulartransformer.md)
+### Tabular components
+- [protocol TabularTransformer](./tabulartransformer.md)
   A tabular transformer that transforms a data frame.
-- [protocol TabularEstimator](tabularestimator.md)
+- [protocol TabularEstimator](./tabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [protocol SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [protocol SupervisedTabularEstimator](./supervisedtabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [struct ColumnSelector](columnselector.md)
+- [struct ColumnSelector](./columnselector.md)
   An operation that applies an estimator to a selection of columns.
-- [struct ColumnSelectorTransformer](columnselectortransformer.md)
+- [struct ColumnSelectorTransformer](./columnselectortransformer.md)
   A transformer that applies a base transformer to specific columns in a data frame.
-- [enum ColumnSelection](columnselection.md)
+- [enum ColumnSelection](./columnselection.md)
   A selection of columns from a data frame.
-- [struct ColumnConcatenator](columnconcatenator.md)
+- [struct ColumnConcatenator](./columnconcatenator.md)
   A transformer that concatenates every numerical column in a dataframe into to a shaped array for each row.
-- [struct PreprocessingTabularEstimator](preprocessingtabularestimator.md)
+- [struct PreprocessingTabularEstimator](./preprocessingtabularestimator.md)
   An estimator that composes a preprocessing transformer and an estimator.
-- [struct PreprocessingUpdatableSupervisedTabularEstimator](preprocessingupdatablesupervisedtabularestimator.md)
+- [struct PreprocessingUpdatableSupervisedTabularEstimator](./preprocessingupdatablesupervisedtabularestimator.md)
   An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
-- [struct PreprocessingUpdatableTabularEstimator](preprocessingupdatabletabularestimator.md)
+- [struct PreprocessingUpdatableTabularEstimator](./preprocessingupdatabletabularestimator.md)
   An updatable estimator that composes a preprocessing transformer and an updatable estimator.
 
 

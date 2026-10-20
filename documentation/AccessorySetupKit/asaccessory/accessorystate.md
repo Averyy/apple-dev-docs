@@ -1,7 +1,8 @@
 # ASAccessory.AccessoryState
 
 **Framework**: AccessorySetupKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of possible authorization states of an accessory.
 
@@ -15,33 +16,38 @@ An enumeration of possible authorization states of an accessory.
 enum AccessoryState
 ```
 
+```c
+enum ASAccessoryState : NSInteger;
+```
+
 ## Topics
 
 ### Creating a state instance
-- [init?(rawValue: Int)](asaccessory/accessorystate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./accessorystate/init%28rawvalue%29.md)
 ### Accessory states
-- [ASAccessory.AccessoryState.unauthorized](asaccessory/accessorystate/unauthorized.md)
+- [ASAccessory.AccessoryState.unauthorized](./accessorystate/unauthorized.md)
   The accessory is invalid or unauthorized.
-- [ASAccessory.AccessoryState.awaitingAuthorization](asaccessory/accessorystate/awaitingauthorization.md)
+- [ASAccessory.AccessoryState.awaitingAuthorization](./accessorystate/awaitingauthorization.md)
   The accessory is selected, but full authorization is still pending.
-- [ASAccessory.AccessoryState.authorized](asaccessory/accessorystate/authorized.md)
+- [ASAccessory.AccessoryState.authorized](./accessorystate/authorized.md)
   The accessory is authorized and available.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ASAccessory](asaccessory.md)
+### Accessory description
+- [class ASAccessory](../asaccessory.md)
   An accessory discovered by the accessory session.
-- [class ASDiscoveredAccessory](asdiscoveredaccessory.md)
+- [class ASDiscoveredAccessory](../asdiscoveredaccessory.md)
   A discovered accessory, for use in creating a customized picker display item.
 
 

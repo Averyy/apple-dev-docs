@@ -1,7 +1,8 @@
 # samplePositions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the custom sample positions to use in MSAA rendering.
 

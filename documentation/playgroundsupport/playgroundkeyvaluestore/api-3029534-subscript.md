@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Playground Support  
-**Kind**: instsub
+**Kind**: instsub  
+**Role**: Subscript
 
 Reads or stores the value associated with the given key in the key-value store.
 
@@ -15,7 +16,7 @@ Reads or stores the value associated with the given key in the key-value store.
 subscript(key: String) -> PlaygroundValue? { get set }
 ```
 
-#### Return_value
+#### Return Value
 
 The value associated with the `key` parameter.
 
@@ -25,7 +26,8 @@ The value associated with the `key` parameter.
 
 ## See Also
 
-- [static let current: PlaygroundKeyValueStore](playgroundkeyvaluestore/3029533-current.md)
+### Persisting Data
+- [static let current: PlaygroundKeyValueStore](./api-3029533-current.md)
   A reference to the key-value store for the current playground book.
 
 

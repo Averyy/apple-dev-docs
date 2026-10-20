@@ -1,7 +1,8 @@
 # AVRoutePickerViewDelegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods to adopt to respond to route picker view presentation events.
 
@@ -18,24 +19,29 @@ A protocol that defines the methods to adopt to respond to route picker view pre
 protocol AVRoutePickerViewDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVRoutePickerViewDelegate <NSObject>
+```
+
 ## Topics
 
 ### Presenting routes
-- [func routePickerViewWillBeginPresentingRoutes(AVRoutePickerView)](avroutepickerviewdelegate/routepickerviewwillbeginpresentingroutes(_:).md)
+- [func routePickerViewWillBeginPresentingRoutes(AVRoutePickerView)](./avroutepickerviewdelegate/routepickerviewwillbeginpresentingroutes%28_%29.md)
   Tells the delegate that the route picker view is about to begin presenting routes to the user.
-- [func routePickerViewDidEndPresentingRoutes(AVRoutePickerView)](avroutepickerviewdelegate/routepickerviewdidendpresentingroutes(_:).md)
+- [func routePickerViewDidEndPresentingRoutes(AVRoutePickerView)](./avroutepickerviewdelegate/routepickerviewdidendpresentingroutes%28_%29.md)
   Tells the delegate when the route picker view finishes presenting routes to the user.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVRoutePickerView](avroutepickerview.md)
+### Route selection
+- [class AVRoutePickerView](./avroutepickerview.md)
   A view that presents a list of nearby media receivers.
-- [enum AVRoutePickerViewButtonStyle](avroutepickerviewbuttonstyle.md)
+- [enum AVRoutePickerViewButtonStyle](./avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
 
 

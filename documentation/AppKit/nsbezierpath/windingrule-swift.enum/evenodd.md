@@ -1,17 +1,22 @@
 # NSBezierPath.WindingRule.evenOdd
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the even-odd winding rule.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case evenOdd
+```
+
+```c
+NSWindingRuleEvenOdd
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Count the total number of path crossings. If the number of crossings is even, th
 
 ## See Also
 
-- [NSBezierPath.WindingRule.nonZero](nsbezierpath/windingrule-swift.enum/nonzero.md)
+### Constants
+- [NSBezierPath.WindingRule.nonZero](./nonzero.md)
   Specifies the non-zero winding rule.
 
 

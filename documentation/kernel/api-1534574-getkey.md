@@ -1,14 +1,15 @@
 # getKey
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```cpp
 virtual const OSSymbol * getKey(void);
 ```
 

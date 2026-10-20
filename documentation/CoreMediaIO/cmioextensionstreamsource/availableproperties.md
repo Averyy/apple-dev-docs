@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A set of properties available for the stream.
@@ -16,11 +17,16 @@ A set of properties available for the stream.
 var availableProperties: Set<CMIOExtensionProperty> { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSSet<NSString *> * availableProperties;
+```
+
 ## See Also
 
-- [func streamProperties(forProperties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionStreamProperties](cmioextensionstreamsource/streamproperties(forproperties:).md)
+### Managing Stream Properties
+- [func streamProperties(forProperties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionStreamProperties](./streamproperties%28forproperties%29.md)
   Gets the states of specified properties.
-- [func setStreamProperties(CMIOExtensionStreamProperties) throws](cmioextensionstreamsource/setstreamproperties(_:).md)
+- [func setStreamProperties(CMIOExtensionStreamProperties) throws](./setstreamproperties%28_%29.md)
   Sets the property state of a stream.
 
 

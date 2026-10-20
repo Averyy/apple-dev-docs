@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency of the amount.
 
@@ -21,7 +22,8 @@ FinanceKit expresses currencies as three character strings. These are usually IS
 
 ## See Also
 
-- [let amount: Decimal](currencyamount/amount.md)
+### Instance Properties
+- [let amount: Decimal](./amount.md)
   The numeric value of the amount.
 
 

@@ -1,7 +1,8 @@
 # QueryResponse.Result
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The untyped placeholder item shape for the base `QueryResponse` envelope’s `result` array.
 
@@ -10,7 +11,7 @@ The untyped placeholder item shape for the base `QueryResponse` envelope’s `re
 
 ## Declaration
 
-```swift
+```
 object QueryResponse.Result
 ```
 

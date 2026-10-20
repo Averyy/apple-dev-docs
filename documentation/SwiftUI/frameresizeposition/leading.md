@@ -1,7 +1,8 @@
 # FrameResizePosition.leading
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The leading edge of the frame.
 

@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.spin
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rotates around its central y-axis and returns to its original pose.
 

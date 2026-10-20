@@ -1,7 +1,8 @@
 # horizontalSyncConfig
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 kIOSyncPositivePolarity for positive polarity horizontal sync (0 for negative).
 
@@ -10,7 +11,7 @@ kIOSyncPositivePolarity for positive polarity horizontal sync (0 for negative).
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalSyncConfig;
 ```
 

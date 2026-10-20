@@ -1,14 +1,15 @@
 # host_can_has_debugger_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct host_can_has_debugger_info {
     ...
 } host_can_has_debugger_info_data_t;
@@ -17,7 +18,7 @@ typedef struct host_can_has_debugger_info {
 ## Topics
 
 ### Instance Properties
-- [can_has_debugger](host_can_has_debugger_info_data_t/1643794-can_has_debugger.md)
+- [can_has_debugger](./host_can_has_debugger_info_data_t/api-1643794-can_has_debugger.md)
 
 
 ---

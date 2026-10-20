@@ -1,7 +1,8 @@
 # VZBridgedNetworkInterface
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that identifies the supported network interfaces of the host computer.
 
@@ -14,34 +15,38 @@ An object that identifies the supported network interfaces of the host computer.
 class VZBridgedNetworkInterface
 ```
 
+```objc
+@interface VZBridgedNetworkInterface : NSObject
+```
+
 #### Overview
 
-Use a [`VZBridgedNetworkInterface`](vzbridgednetworkinterface.md) object to retrieve the physical interfaces on the host computer. Use a bridged network interface to create a [`VZBridgedNetworkDeviceAttachment`](vzbridgednetworkdeviceattachment.md) object, which maps that interface to one of your virtual machine’s network devices. The host computer and your virtual machine share access to the physical network interface, but communicate over it using distinct network layers.
+Use a [`VZBridgedNetworkInterface`](./vzbridgednetworkinterface.md) object to retrieve the physical interfaces on the host computer. Use a bridged network interface to create a [`VZBridgedNetworkDeviceAttachment`](./vzbridgednetworkdeviceattachment.md) object, which maps that interface to one of your virtual machine’s network devices. The host computer and your virtual machine share access to the physical network interface, but communicate over it using distinct network layers.
 
-You don’t create [`VZBridgedNetworkInterface`](vzbridgednetworkinterface.md) objects directly. Instead, the system creates one object for each physical interface of the host computer and stores those objects in the [`networkInterfaces`](vzbridgednetworkinterface/networkinterfaces.md) property. Iterate over the objects in that property to retrieve the network interfaces you need.
+You don’t create [`VZBridgedNetworkInterface`](./vzbridgednetworkinterface.md) objects directly. Instead, the system creates one object for each physical interface of the host computer and stores those objects in the [`networkInterfaces`](./vzbridgednetworkinterface/networkinterfaces.md) property. Iterate over the objects in that property to retrieve the network interfaces you need.
 
 ## Topics
 
 ### Getting the available interfaces
-- [class var networkInterfaces: [VZBridgedNetworkInterface]](vzbridgednetworkinterface/networkinterfaces.md)
+- [class var networkInterfaces: [VZBridgedNetworkInterface]](./vzbridgednetworkinterface/networkinterfaces.md)
   The bridged network interfaces that you may use in your virtual machine.
 ### Getting the interface description
-- [var identifier: String](vzbridgednetworkinterface/identifier.md)
+- [var identifier: String](./vzbridgednetworkinterface/identifier.md)
   The unique BSD name of this network interface.
-- [var localizedDisplayName: String?](vzbridgednetworkinterface/localizeddisplayname.md)
+- [var localizedDisplayName: String?](./vzbridgednetworkinterface/localizeddisplayname.md)
   A user-visible name for the network interface.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

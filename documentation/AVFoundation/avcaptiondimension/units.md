@@ -1,15 +1,16 @@
 # units
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The units of the coordinate, such as cells or points.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@ The units of the coordinate, such as cells or points.
 var units: AVCaptionUnitsType
 ```
 
+```c
+AVCaptionUnitsType units;
+```
+
 ## See Also
 
-- [var value: CGFloat](avcaptiondimension/value.md)
+### Inspecting the dimensions
+- [var value: CGFloat](./value.md)
   The value of the coordinate or length.
-- [enum AVCaptionUnitsType](avcaptionunitstype.md)
+- [enum AVCaptionUnitsType](../avcaptionunitstype.md)
   A structure that defines a units for caption formats.
 
 

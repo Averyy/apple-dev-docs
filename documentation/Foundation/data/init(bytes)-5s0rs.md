@@ -1,7 +1,8 @@
 # init(bytes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -11,7 +12,9 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift 4.2+
+- Swift 4.2+ - Deprecated in 5.0
+
+> **Deprecated**: use `init(_:)` instead
 
 ## Declaration
 

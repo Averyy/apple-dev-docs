@@ -1,7 +1,8 @@
 # &-(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 The wrapping difference of two vectors.
 
@@ -19,6 +20,8 @@ The wrapping difference of two vectors.
 ```swift
 static func &- (a: SIMD64<Scalar>, b: SIMD64<Scalar>) -> SIMD64<Scalar>
 ```
+
+Available when `Scalar` is `UInt16`.
 
 
 ---

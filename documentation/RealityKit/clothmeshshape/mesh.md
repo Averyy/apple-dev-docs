@@ -1,7 +1,8 @@
 # mesh
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mesh resource that this shape is based off.
 
@@ -18,7 +19,8 @@ var mesh: ClothMeshResource
 
 ## See Also
 
-- [var bias: Float](clothmeshshape/bias.md)
+### Configuring the mesh shape
+- [var bias: Float](./bias.md)
   The distance by which the vertices are extended outwards along the direction of their normals.
 
 

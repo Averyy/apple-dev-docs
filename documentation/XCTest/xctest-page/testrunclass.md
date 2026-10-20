@@ -1,7 +1,8 @@
 # testRunClass
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The test run subclass to instantiate when the test runs, which records the testâ€™s results.
 
@@ -11,17 +12,22 @@ The test run subclass to instantiate when the test runs, which records the testâ
 var testRunClass: AnyClass? { get }
 ```
 
+```objc
+@property (readonly, nullable) Class testRunClass;
+```
+
 #### Discussion
 
 Subclasses must override `testRunClass`.
 
 ## See Also
 
-- [var name: String](xctest/name.md)
+### Examining Test Properties
+- [var name: String](./name.md)
   The name of the test.
-- [var testCaseCount: Int](xctest/testcasecount.md)
+- [var testCaseCount: Int](./testcasecount.md)
   The number of test cases in the test.
-- [var testRun: XCTestRun?](xctest/testrun.md)
+- [var testRun: XCTestRun?](./testrun.md)
   The test run object that executes the test.
 
 

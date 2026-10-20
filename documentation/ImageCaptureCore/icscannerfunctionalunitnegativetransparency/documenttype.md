@@ -1,7 +1,8 @@
 # documentType
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var documentType: ICScannerDocumentType { get set }
+```
+
+```objc
+@property (readwrite) ICScannerDocumentType documentType;
 ```
 
 

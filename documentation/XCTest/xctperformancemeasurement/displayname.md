@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable name for a measurement.
 
@@ -11,9 +12,14 @@ A human-readable name for a measurement.
 var displayName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * displayName;
+```
+
 ## See Also
 
-- [var identifier: String](xctperformancemeasurement/identifier.md)
+### Identifying Measurements
+- [var identifier: String](./identifier.md)
   A unique identifier for a measurement.
 
 

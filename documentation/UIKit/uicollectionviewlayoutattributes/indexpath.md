@@ -1,7 +1,8 @@
 # indexPath
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index path of the item in the collection view.
 
@@ -9,7 +10,7 @@ The index path of the item in the collection view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The index path of the item in the collection view.
 var indexPath: IndexPath { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSIndexPath * indexPath;
+```
+
 #### Discussion
 
 The index path contains the index of the section and the index of the item within that section. These two values uniquely identify the position of the corresponding item in the collection view.
 
 ## See Also
 
-- [var representedElementKind: String?](uicollectionviewlayoutattributes/representedelementkind.md)
+### Identifying the referenced item
+- [var representedElementKind: String?](./representedelementkind.md)
   The layout-specific identifier for the target view.
-- [var representedElementCategory: UICollectionView.ElementCategory](uicollectionviewlayoutattributes/representedelementcategory.md)
+- [var representedElementCategory: UICollectionView.ElementCategory](./representedelementcategory.md)
   The type of the item.
-- [UICollectionView.ElementCategory](uicollectionview/elementcategory.md)
+- [UICollectionView.ElementCategory](../uicollectionview/elementcategory.md)
   Constants specifying the type of view.
 
 

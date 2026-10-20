@@ -1,7 +1,8 @@
 # instantAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func instantAction(with params: MTRActionsClusterInstantActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func instantAction(with params: MTRActionsClusterInstantActionParams) async throws
+```
+
+```objc
+- (void) instantActionWithParams:(MTRActionsClusterInstantActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

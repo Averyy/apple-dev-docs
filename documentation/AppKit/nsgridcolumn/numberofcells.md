@@ -1,7 +1,8 @@
 # numberOfCells
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,14 +13,19 @@
 var numberOfCells: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger numberOfCells;
+```
+
 ## See Also
 
-- [var gridView: NSGridView?](nsgridcolumn/gridview.md)
-- [var isHidden: Bool](nsgridcolumn/ishidden.md)
-- [var leadingPadding: CGFloat](nsgridcolumn/leadingpadding.md)
-- [var trailingPadding: CGFloat](nsgridcolumn/trailingpadding.md)
-- [var width: CGFloat](nsgridcolumn/width.md)
-- [var xPlacement: NSGridCell.Placement](nsgridcolumn/xplacement.md)
+### Instance Properties
+- [var gridView: NSGridView?](./gridview.md)
+- [var isHidden: Bool](./ishidden.md)
+- [var leadingPadding: CGFloat](./leadingpadding.md)
+- [var trailingPadding: CGFloat](./trailingpadding.md)
+- [var width: CGFloat](./width.md)
+- [var xPlacement: NSGridCell.Placement](./xplacement.md)
 
 
 ---

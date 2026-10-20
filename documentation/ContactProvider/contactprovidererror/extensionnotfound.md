@@ -1,7 +1,8 @@
 # ContactProviderError.extensionNotFound
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework couldn’t discover the app’s extension.
 

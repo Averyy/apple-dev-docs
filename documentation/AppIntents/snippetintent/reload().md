@@ -1,7 +1,8 @@
 # reload()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Refreshes the intent’s snippet presentation.
 
@@ -22,7 +23,7 @@ static func reload()
 
 ## Mentions
 
-- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+- [Displaying static and interactive snippets](../displaying-static-and-interactive-snippets.md)
 
 #### Discussion
 

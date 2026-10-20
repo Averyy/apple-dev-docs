@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A style that determines how the content of the navigation item lays out in the navigation bar.
 
@@ -17,9 +18,14 @@ A style that determines how the content of the navigation item lays out in the n
 var style: UINavigationItem.ItemStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UINavigationItemStyle style;
+```
+
 ## See Also
 
-- [UINavigationItem.ItemStyle](uinavigationitem/itemstyle.md)
+### Specifying the navigation style
+- [UINavigationItem.ItemStyle](./itemstyle.md)
   Constants that determine how the content of the navigation item lays out in the navigation bar.
 
 

@@ -1,7 +1,8 @@
 # order
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort order that the comparator uses to compare properties.
 
@@ -22,7 +23,8 @@ var order: SortOrder { get set }
 
 ## See Also
 
-- [let keyPath: any PartialKeyPath<Compared> & Sendable](keypathcomparator/keypath.md)
+### Inspecting Key Path Comparators
+- [let keyPath: any PartialKeyPath<Compared> & Sendable](./keypath.md)
   The key path that the comparator uses to compare properties.
 
 

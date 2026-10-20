@@ -1,7 +1,8 @@
 # generateDilatedDepth(from:commandBuffer:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates dilated depth at the resolution of the segmentation stencil.
 
@@ -13,6 +14,10 @@ Generates dilated depth at the resolution of the segmentation stencil.
 
 ```swift
 func generateDilatedDepth(from frame: ARFrame, commandBuffer: any MTLCommandBuffer) -> any MTLTexture
+```
+
+```objc
+- (id<MTLTexture>) generateDilatedDepthFromFrame:(ARFrame *) frame commandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
 #### Return Value

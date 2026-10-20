@@ -1,7 +1,8 @@
 # deleteCharacters(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the characters in the given range along with their associated attributes.
 
@@ -20,9 +21,13 @@ Deletes the characters in the given range along with their associated attributes
 func deleteCharacters(in range: NSRange)
 ```
 
+```objc
+- (void) deleteCharactersInRange:(NSRange) range;
+```
+
 #### Discussion
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 
 ## Parameters
 
@@ -30,9 +35,11 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## See Also
 
-- [func replaceCharacters(in: NSRange, with: NSAttributedString)](nsmutableattributedstring/replacecharacters(in:with:)-1uaw7.md)
+### Related Documentation
+- [func replaceCharacters(in: NSRange, with: NSAttributedString)](./replacecharacters%28in,with%29-1uaw7.md)
   Replaces the characters and attributes in a given range with the characters and attributes of the given attributed string.
-- [func replaceCharacters(in: NSRange, with: String)](nsmutableattributedstring/replacecharacters(in:with:)-6oq9r.md)
+### Changing Characters
+- [func replaceCharacters(in: NSRange, with: String)](./replacecharacters%28in,with%29-6oq9r.md)
   Replaces the characters in the given range with the characters of the given string.
 
 

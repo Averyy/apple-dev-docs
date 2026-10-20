@@ -1,7 +1,8 @@
 # elementStructType()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a description of the underlying struct when the pointer points to a struct.
 
@@ -19,13 +20,18 @@ Provides a description of the underlying struct when the pointer points to a str
 func elementStructType() -> MTLStructType?
 ```
 
+```objc
+- (MTLStructType *) elementStructType;
+```
+
 #### Return Value
 
 An object that describes the struct. If the pointer does not point to an struct, this method returns `nil`.
 
 ## See Also
 
-- [func elementArrayType() -> MTLArrayType?](mtlpointertype/elementarraytype.md)
+### Obtaining details for complex pointer elements
+- [func elementArrayType() -> MTLArrayType?](./elementarraytype%28%29.md)
   Provides a description of the underlying array when the pointer points to an array.
 
 

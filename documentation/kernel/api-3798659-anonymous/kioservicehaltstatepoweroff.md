@@ -1,7 +1,8 @@
 # kIOServiceHaltStatePowerOff
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIOServiceHaltStatePowerOff = 0x00000001
 ```
 

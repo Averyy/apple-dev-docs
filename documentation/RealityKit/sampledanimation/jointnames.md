@@ -1,7 +1,8 @@
 # jointNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the joints to animate.
 
@@ -11,7 +12,7 @@ The names of the joints to animate.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,23 +20,26 @@ The names of the joints to animate.
 var jointNames: [String] { get set }
 ```
 
+Available when `Value` is `JointTransforms`.
+
 ## See Also
 
-- [var name: String](sampledanimation/name.md)
+### Configuring the animation
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](sampledanimation/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
-- [var blendLayer: Int32](sampledanimation/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
-- [var isRotationAnimated: Bool](sampledanimation/isrotationanimated.md)
+- [var isRotationAnimated: Bool](./isrotationanimated.md)
   A Boolean value that indicates whether the animation observes rotational changes in the entity’s transform.
-- [var isScaleAnimated: Bool](sampledanimation/isscaleanimated.md)
+- [var isScaleAnimated: Bool](./isscaleanimated.md)
   A Boolean value that indicates whether the animation observes changes in the entity’s size.
-- [var isTranslationAnimated: Bool](sampledanimation/istranslationanimated.md)
+- [var isTranslationAnimated: Bool](./istranslationanimated.md)
   A Boolean value that indicates whether the animation observes translational changes in the entity’s transform.
-- [var additive: Bool](sampledanimation/additive.md)
+- [var additive: Bool](./additive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
-- [var tweenMode: TweenMode](sampledanimation/tweenmode.md)
+- [var tweenMode: TweenMode](./tweenmode.md)
   An option that determines how animation frames transition.
 
 

@@ -1,7 +1,8 @@
 # SecurityMessage.KeyType.publicKey
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A public key, sent from the accessory to the host.
 
@@ -16,7 +17,8 @@ case publicKey
 
 ## See Also
 
-- [SecurityMessage.KeyType.encapsulatedKey](securitymessage/keytype-swift.enum/encapsulatedkey.md)
+### Identifying key types
+- [SecurityMessage.KeyType.encapsulatedKey](./encapsulatedkey.md)
   An encapsulated key, sent from the host to the accessory.
 
 

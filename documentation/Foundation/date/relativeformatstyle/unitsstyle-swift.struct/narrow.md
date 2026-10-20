@@ -1,7 +1,8 @@
 # narrow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style that uses the shortest units, such as “2 mo. ago”.
 
@@ -22,11 +23,12 @@ static var narrow: Date.RelativeFormatStyle.UnitsStyle { get }
 
 ## See Also
 
-- [static var abbreviated: Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.struct/abbreviated.md)
+### Modifying a Relative Date Format Units Style
+- [static var abbreviated: Date.RelativeFormatStyle.UnitsStyle](./abbreviated.md)
   A style that uses abbreviated units, such as “2 mo. ago”.
-- [static var spellOut: Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.struct/spellout.md)
+- [static var spellOut: Date.RelativeFormatStyle.UnitsStyle](./spellout.md)
   A style that spells out units, such as “two months ago”.
-- [static var wide: Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.struct/wide.md)
+- [static var wide: Date.RelativeFormatStyle.UnitsStyle](./wide.md)
   A style that uses full representation of units, such as “2 months ago”.
 
 

@@ -1,7 +1,8 @@
 # dithersResult
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that causes the filter to dither the result, to reduce banding.
 
@@ -22,7 +23,8 @@ static var dithersResult: GraphicsContext.BlurOptions { get }
 
 ## See Also
 
-- [static var opaque: GraphicsContext.BlurOptions](graphicscontext/bluroptions/opaque.md)
+### Getting blur options
+- [static var opaque: GraphicsContext.BlurOptions](./opaque.md)
   An option that causes the filter to ensure the result is completely opaque.
 
 

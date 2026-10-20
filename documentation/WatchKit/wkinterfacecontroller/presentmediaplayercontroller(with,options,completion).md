@@ -1,7 +1,8 @@
 # presentMediaPlayerController(with:options:completion:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a modal interface for playing the specified media file.
 
@@ -11,12 +12,20 @@ Displays a modal interface for playing the specified media file.
 ## Declaration
 
 ```swift
+func presentMediaPlayerController(with URL: URL, options: [AnyHashable : Any]? = nil, completion: @escaping (Bool, TimeInterval, (any Error)?) -> Void)
+```
+
+```swift
 func presentMediaPlayerController(with URL: URL, options: [AnyHashable : Any]? = nil) async throws -> (Bool, TimeInterval)
+```
+
+```objc
+- (void) presentMediaPlayerControllerWithURL:(NSURL *) URL options:(NSDictionary *) options completion:(void (^)(BOOL didPlayToEnd, NSTimeInterval endTime, NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -28,7 +37,7 @@ The following table lists the encoding information to use when creating media fi
 
 | Media type | Recommended encoding |
 | --- | --- |
-| Video assets | Video codec: H.264 High Profile ![None](/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Video assets | Video codec: H.264 High Profile ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
 | Audio-only assets | Bit rate: 32 kbps stereo |
 
 > **Note**:  Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
@@ -37,25 +46,30 @@ Any audio you play using this method is routed to a paired Bluetooth audio devic
 
 ## Parameters
 
-- `URL`: The URL of the media file you want to play. The URL must specify a file; streamed media is not supported. The file may contain audio, video, or both. If you specify a URL for a file on a remote server, this method downloads the file first and displays a progress indicator showing the progress of the operation. Because WatchKit uses App Transport Security (ATS) when downloading files from a web server, the file must be on a secure server, and the URL must use the `https` scheme. If your server does not support ATS–level security, download the file yourself before playing it.
-- `options`: An optional dictionary of playback options for the media file. For a list of keys to include in the dictionary, see [`Media Player Options`](media-player-options.md).
-- `completion`: The block to execute when playback ends. Use this block to determine the status of playback and to perform any cleanup. This block has no return value and takes the following parameters: - **didPlayToEnd**: A Boolean value indicating whether the media file finished playing. The value is [`true`](https://developer.apple.com/documentation/swift/true) if the end of the media file was reached or [`false`](https://developer.apple.com/documentation/swift/false) if playback ended prematurely.
-- **endTime**: The time (in seconds) at which playback ended. When the `didPlayToEnd` parameter is [`false`](https://developer.apple.com/documentation/swift/false), you can use the value in this property to determine when playback stopped. You might use that value as the start time if you play the content again.
-- **error**: An error object if a problem occurred. Use the error object to determine the cause of the problem and take any appropriate actions, such as notifying the user.
+- `URL`: The URL of the media file you want to play. The URL must specify a file; streamed media is not supported. The file may contain audio, video, or both.
+
+  If you specify a URL for a file on a remote server, this method downloads the file first and displays a progress indicator showing the progress of the operation. Because WatchKit uses App Transport Security (ATS) when downloading files from a web server, the file must be on a secure server, and the URL must use the `https` scheme. If your server does not support ATS–level security, download the file yourself before playing it.
+- `options`: An optional dictionary of playback options for the media file. For a list of keys to include in the dictionary, see [Media Player Options](../media-player-options.md).
+- `completion`: The block to execute when playback ends. Use this block to determine the status of playback and to perform any cleanup. This block has no return value and takes the following parameters:
+
+  - **didPlayToEnd**: A Boolean value indicating whether the media file finished playing. The value is [`true`](../../Swift/true.md) if the end of the media file was reached or [`false`](../../Swift/false.md) if playback ended prematurely.
+  - **endTime**: The time (in seconds) at which playback ended. When the `didPlayToEnd` parameter is [`false`](../../Swift/false.md), you can use the value in this property to determine when playback stopped. You might use that value as the start time if you play the content again.
+  - **error**: An error object if a problem occurred. Use the error object to determine the cause of the problem and take any appropriate actions, such as notifying the user.
 
 ## See Also
 
-- [Media Player Options](media-player-options.md)
+### Presenting video and audio interfaces
+- [Media Player Options](../media-player-options.md)
   Keys indicating media playback options.
-- [func dismissMediaPlayerController()](wkinterfacecontroller/dismissmediaplayercontroller.md)
+- [func dismissMediaPlayerController()](./dismissmediaplayercontroller%28%29.md)
   Dismisses the media interface controller.
-- [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](wkinterfacecontroller/presentaudiorecordercontroller(withoutputurl:preset:options:completion:).md)
+- [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](./presentaudiorecordercontroller%28withoutputurl,preset,options,completion%29.md)
   Display a standard interface for recording audio from the user’s Apple Watch.
-- [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md)
+- [enum WKAudioRecorderPreset](../wkaudiorecorderpreset.md)
   Constants indicating the quality of audio recordings.
-- [Audio Recording Options](audio-recording-options.md)
+- [Audio Recording Options](../audio-recording-options.md)
   Options to specify when recording audio.
-- [func dismissAudioRecorderController()](wkinterfacecontroller/dismissaudiorecordercontroller.md)
+- [func dismissAudioRecorderController()](./dismissaudiorecordercontroller%28%29.md)
   Dismisses the audio recording interface controller.
 
 

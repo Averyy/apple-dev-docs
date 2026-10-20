@@ -1,7 +1,8 @@
 # now
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current continuous instant.
 

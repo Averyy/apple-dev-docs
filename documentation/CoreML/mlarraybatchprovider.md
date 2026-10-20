@@ -1,7 +1,8 @@
 # MLArrayBatchProvider
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A convenience wrapper for batches of feature providers.
 
@@ -20,6 +21,10 @@ A convenience wrapper for batches of feature providers.
 class MLArrayBatchProvider
 ```
 
+```objc
+@interface MLArrayBatchProvider : NSObject
+```
+
 #### Overview
 
 This batch provider supports an array of feature providers or a dictionary of arrays of feature values.
@@ -27,44 +32,45 @@ This batch provider supports an array of feature providers or a dictionary of ar
 ## Topics
 
 ### Creating a batch provider
-- [init(array: [any MLFeatureProvider])](mlarraybatchprovider/init(array:).md)
+- [init(array: [any MLFeatureProvider])](./mlarraybatchprovider/init%28array%29.md)
   Creates the batch provider based on the array of feature providers.
-- [init(dictionary: [String : [Any]]) throws](mlarraybatchprovider/init(dictionary:).md)
+- [init(dictionary: [String : [Any]]) throws](./mlarraybatchprovider/init%28dictionary%29.md)
   Creates a batch provider based on feature names and their associated arrays of data.
 ### Accessing the feature providers
-- [var array: [any MLFeatureProvider]](mlarraybatchprovider/array.md)
+- [var array: [any MLFeatureProvider]](./mlarraybatchprovider/array.md)
   The array of feature providers.
 ### Initializers
-- [init(featureProviderArray: [any MLFeatureProvider])](mlarraybatchprovider/init(featureproviderarray:).md)
+- [init(featureProviderArray: [any MLFeatureProvider])](./mlarraybatchprovider/init%28featureproviderarray%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MLBatchProvider](mlbatchprovider.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MLBatchProvider](./mlbatchprovider.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Making Predictions with a Sequence of Inputs](making-predictions-with-a-sequence-of-inputs.md)
+### Model inputs and outputs
+- [Making Predictions with a Sequence of Inputs](./making-predictions-with-a-sequence-of-inputs.md)
   Integrate a recurrent neural network model to process sequences of inputs.
-- [class MLFeatureValue](mlfeaturevalue.md)
+- [class MLFeatureValue](./mlfeaturevalue.md)
   A generic wrapper around an underlying value and the value’s type.
-- [struct MLSendableFeatureValue](mlsendablefeaturevalue.md)
+- [struct MLSendableFeatureValue](./mlsendablefeaturevalue.md)
   A sendable feature value.
-- [protocol MLFeatureProvider](mlfeatureprovider.md)
+- [protocol MLFeatureProvider](./mlfeatureprovider.md)
   An interface that represents a collection of values for either a model’s input or its output.
-- [class MLDictionaryFeatureProvider](mldictionaryfeatureprovider.md)
+- [class MLDictionaryFeatureProvider](./mldictionaryfeatureprovider.md)
   A convenience wrapper for the given dictionary of data.
-- [protocol MLBatchProvider](mlbatchprovider.md)
+- [protocol MLBatchProvider](./mlbatchprovider.md)
   An interface that represents a collection of feature providers.
-- [class MLModelAsset](mlmodelasset.md)
+- [class MLModelAsset](./mlmodelasset.md)
   An abstraction of a compiled Core ML model asset.
 
 

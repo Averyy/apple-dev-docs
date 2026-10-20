@@ -1,35 +1,37 @@
 # Exits
 
-**Framework**: Hypervisor
+**Framework**: Hypervisor  
+**Role**: API Collection
 
 Describe virtual machine exit conditions.
 
 ## Topics
 
 ### Descriptor
-- [struct hv_vcpu_exit_t](hv_vcpu_exit_t.md)
+- [struct hv_vcpu_exit_t](./hv_vcpu_exit_t.md)
   Information about an exit from the vCPU to the host.
 ### Exit reasons
-- [struct hv_exit_reason_t](hv_exit_reason_t.md)
+- [struct hv_exit_reason_t](./hv_exit_reason_t.md)
   The type that describes the event that triggered a guest exit to the host.
-- [typealias hv_exception_syndrome_t](hv_exception_syndrome_t.md)
+- [typealias hv_exception_syndrome_t](./hv_exception_syndrome_t.md)
   Type of a vCPU exception syndrome.
-- [typealias hv_exception_address_t](hv_exception_address_t.md)
+- [typealias hv_exception_address_t](./hv_exception_address_t.md)
   Type of a vCPU exception virtual address.
 
 ## See Also
 
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
+### Runtime
+- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](./hv_vcpu_run%28_%29.md)
   Starts the execution of a vCPU.
-- [func hv_vcpus_exit(UnsafeMutablePointer<hv_vcpu_t>, UInt32) -> hv_return_t](hv_vcpus_exit(_:_:).md)
+- [func hv_vcpus_exit(UnsafeMutablePointer<hv_vcpu_t>, UInt32) -> hv_return_t](./hv_vcpus_exit%28_,_%29.md)
   Forces an immediate exit of a set of vCPUs of the VM.
-- [func hv_vcpu_get_pending_interrupt(hv_vcpu_t, hv_interrupt_type_t, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_get_pending_interrupt(_:_:_:).md)
+- [func hv_vcpu_get_pending_interrupt(hv_vcpu_t, hv_interrupt_type_t, UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vcpu_get_pending_interrupt%28_,_,_%29.md)
   Gets pending interrupts for a vCPU.
-- [func hv_vcpu_set_pending_interrupt(hv_vcpu_t, hv_interrupt_type_t, Bool) -> hv_return_t](hv_vcpu_set_pending_interrupt(_:_:_:).md)
+- [func hv_vcpu_set_pending_interrupt(hv_vcpu_t, hv_interrupt_type_t, Bool) -> hv_return_t](./hv_vcpu_set_pending_interrupt%28_,_,_%29.md)
   Sets pending interrupts for a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
+- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vcpu_get_exec_time%28_,_%29.md)
   Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
-- [struct hv_interrupt_type_t](hv_interrupt_type_t.md)
+- [struct hv_interrupt_type_t](./hv_interrupt_type_t.md)
   The type that defines the vCPU’s interrupts.
 
 

@@ -1,7 +1,8 @@
 # appendInterpolation(_:format:align:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated unsigned 32-bit integer.
 
@@ -11,7 +12,7 @@ Appends an interpolated unsigned 32-bit integer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,19 +28,20 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `number`: The unsigned 32-bit integer value to add to the message.
-- `format`: The format to apply to the integer value. You format integers as decimal, hexadecimal, or octal values. If you don’t specify this parameter, the default format uses a decimal value. For more information, see [`OSLogIntegerFormatting`](oslogintegerformatting.md).
+- `format`: The format to apply to the integer value. You format integers as decimal, hexadecimal, or octal values. If you don’t specify this parameter, the default format uses a decimal value. For more information, see [`OSLogIntegerFormatting`](../oslogintegerformatting.md).
 - `align`: The alignment to apply to the value. Use this parameter to specify the width of the column containing the data, and the alignment of the data within that column. If you don’t specify this parameter, the system doesn’t align the value.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> UInt, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-20jin.md)
+### Appending Unsigned Integers
+- [func appendInterpolation(@autoclosure () -> UInt, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-20jin.md)
   Appends an interpolated unsigned integer.
-- [func appendInterpolation(@autoclosure () -> UInt8, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-4qvu9.md)
+- [func appendInterpolation(@autoclosure () -> UInt8, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-4qvu9.md)
   Appends an interpolated unsigned 8-bit integer.
-- [func appendInterpolation(@autoclosure () -> UInt16, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-7k91g.md)
+- [func appendInterpolation(@autoclosure () -> UInt16, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-7k91g.md)
   Appends an interpolated unsigned 16-bit integer.
-- [func appendInterpolation(@autoclosure () -> UInt64, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-81jbm.md)
+- [func appendInterpolation(@autoclosure () -> UInt64, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-81jbm.md)
   Appends an interpolated unsigned 64-bit integer.
 
 

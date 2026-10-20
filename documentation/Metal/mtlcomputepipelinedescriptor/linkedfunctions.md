@@ -1,7 +1,8 @@
 # linkedFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The functions with available function pointers for the next kernel call.
 
@@ -18,6 +19,10 @@ The functions with available function pointers for the next kernel call.
 ```swift
 @NSCopying
 var linkedFunctions: MTLLinkedFunctions? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MTLLinkedFunctions * linkedFunctions;
 ```
 
 

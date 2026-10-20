@@ -1,13 +1,14 @@
 # Primitive3D Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func applying(Pose3D) -> Point3D](point3d/applying(_:)-7ulww.md)
+- [func applying(Pose3D) -> Point3D](./applying%28_%29-7ulww.md)
   Returns a point that results from applying the specified pose.
-- [func unapplying(Pose3D) -> Point3D](point3d/unapplying(_:)-5hk6t.md)
+- [func unapplying(Pose3D) -> Point3D](./unapplying%28_%29-5hk6t.md)
   Returns a point that results from unapplying the specified pose.
 
 

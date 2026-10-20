@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a transformed copy of the value.
 

@@ -1,7 +1,8 @@
 # init(forLocale:usage:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `UnitPressure` which the specified `locale` prefers for the specific `usage`.
 

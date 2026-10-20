@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_ZOOMANDPAN_DISABLE;
 ```
 
 ## See Also
 
-- [SVG_ZOOMANDPAN_MAGNIFY](svgzoomandpan/1632726-svg_zoomandpan_magnify.md)
-- [SVG_ZOOMANDPAN_UNKNOWN](svgzoomandpan/1632330-svg_zoomandpan_unknown.md)
+### Miscellaneous
+- [SVG_ZOOMANDPAN_MAGNIFY](./api-1632726-svg_zoomandpan_magnify.md)
+- [SVG_ZOOMANDPAN_UNKNOWN](./api-1632330-svg_zoomandpan_unknown.md)
 
 
 ---

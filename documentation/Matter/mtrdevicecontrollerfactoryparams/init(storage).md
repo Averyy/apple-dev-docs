@@ -1,7 +1,8 @@
 # init(storage:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(storage: any MTRStorage)
+```
+
+```objc
+- (instancetype) initWithStorage:(id<MTRStorage>) storage;
 ```
 
 

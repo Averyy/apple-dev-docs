@@ -1,7 +1,8 @@
 # hidCountryCode
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The country or region code of the localized hardware.
 
@@ -10,25 +11,26 @@ The country or region code of the localized hardware.
 
 ## Declaration
 
-```swift
+```c
 uint8_t hidCountryCode;
 ```
 
 ## See Also
 
-- [descLen](iousbhiddescriptor/1546208-desclen.md)
+### Getting the Properties
+- [descLen](./api-1546208-desclen.md)
   The size of the descriptor.
-- [descType](iousbhiddescriptor/1546221-desctype.md)
+- [descType](./api-1546221-desctype.md)
   The type of the descriptor.
-- [descVersNum](iousbhiddescriptor/1545993-descversnum.md)
+- [descVersNum](./api-1545993-descversnum.md)
   The verison number of the descriptor.
-- [hidDescriptorLengthHi](iousbhiddescriptor/1546246-hiddescriptorlengthhi.md)
+- [hidDescriptorLengthHi](./api-1546246-hiddescriptorlengthhi.md)
   The high byte length of the descriptor.
-- [hidDescriptorLengthLo](iousbhiddescriptor/1546304-hiddescriptorlengthlo.md)
+- [hidDescriptorLengthLo](./api-1546304-hiddescriptorlengthlo.md)
   The low byte length of the descriptor.
-- [hidDescriptorType](iousbhiddescriptor/1545961-hiddescriptortype.md)
+- [hidDescriptorType](./api-1545961-hiddescriptortype.md)
   The class type of the descriptor.
-- [hidNumDescriptors](iousbhiddescriptor/1546017-hidnumdescriptors.md)
+- [hidNumDescriptors](./api-1546017-hidnumdescriptors.md)
   The number of class descriptors.
 
 

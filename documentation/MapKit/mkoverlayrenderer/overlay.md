@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overlay object containing the data for drawing.
 
@@ -19,17 +20,22 @@ The overlay object containing the data for drawing.
 var overlay: any MKOverlay { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<MKOverlay> overlay;
+```
+
 #### Discussion
 
 The overlay object contains the coordinate at which to draw the overlay and other information that your app provides.
 
 ## See Also
 
-- [var alpha: CGFloat](mkoverlayrenderer/alpha.md)
+### Attributes of the overlay
+- [var alpha: CGFloat](./alpha.md)
   The amount of transparency to apply to the overlay.
-- [var contentScaleFactor: CGFloat](mkoverlayrenderer/contentscalefactor.md)
+- [var contentScaleFactor: CGFloat](./contentscalefactor.md)
   The scale factor for drawing the overlay’s content.
-- [var blendMode: CGBlendMode](mkoverlayrenderer/blendmode.md)
+- [var blendMode: CGBlendMode](./blendmode.md)
   The blend mode to apply to the overlay.
 
 

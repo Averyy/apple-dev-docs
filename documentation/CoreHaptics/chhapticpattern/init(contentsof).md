@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a haptic pattern with the contents of an AHAP file.
 
@@ -19,19 +20,24 @@ Creates a haptic pattern with the contents of an AHAP file.
 init(contentsOf ahapURL: URL) throws
 ```
 
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) ahapURL error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `ahapURL`: A URL to an AHAP file that describes a pattern.
 
 ## See Also
 
-- [init(events: [CHHapticEvent], parameterCurves: [CHHapticParameterCurve]) throws](chhapticpattern/init(events:parametercurves:).md)
+### Creating a Haptic Pattern
+- [init(events: [CHHapticEvent], parameterCurves: [CHHapticParameterCurve]) throws](./init%28events,parametercurves%29.md)
   Constructs a haptic pattern from a series of events and parameter curves.
-- [init(events: [CHHapticEvent], parameters: [CHHapticDynamicParameter]) throws](chhapticpattern/init(events:parameters:).md)
+- [init(events: [CHHapticEvent], parameters: [CHHapticDynamicParameter]) throws](./init%28events,parameters%29.md)
   Constructs a haptic pattern from a series of events and parameters.
-- [init(dictionary: [CHHapticPattern.Key : Any]) throws](chhapticpattern/init(dictionary:).md)
+- [init(dictionary: [CHHapticPattern.Key : Any]) throws](./init%28dictionary%29.md)
   Creates a haptic pattern from a property list dictionary.
-- [CHHapticPattern.Key](chhapticpattern/key.md)
+- [CHHapticPattern.Key](./key.md)
   Constants that define the keys you use to create a haptic pattern dictionary.
 
 

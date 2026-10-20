@@ -1,7 +1,8 @@
 # kAXNaturalLanguageTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFStringRef` value that indicates the language in which the text will be spoken aloud by the system.
 
@@ -12,6 +13,10 @@ A `CFStringRef` value that indicates the language in which the text will be spok
 
 ```swift
 var kAXNaturalLanguageTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXNaturalLanguageTextAttribute;
 ```
 
 #### Discussion

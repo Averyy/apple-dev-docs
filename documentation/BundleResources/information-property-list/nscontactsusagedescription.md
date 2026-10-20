@@ -1,7 +1,8 @@
 # NSContactsUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to their contacts.
 
@@ -11,9 +12,10 @@ A message that tells people why the app is requesting access to their contacts.
 - macOS 10.8+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSContactsUsageDescription` (Privacy - Contacts Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -21,7 +23,8 @@ A message that tells people why the app is requesting access to their contacts.
 
 ## See Also
 
-- [Accessing the contact store](../contacts/accessing-the-contact-store.md)
+### Contacts
+- [Accessing the contact store](../../Contacts/accessing-the-contact-store.md)
   Request permission from the person to read and write their contact data.
 
 

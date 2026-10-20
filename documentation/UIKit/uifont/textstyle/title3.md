@@ -1,7 +1,8 @@
 # title3
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font for third-level hierarchical headings.
 
@@ -19,31 +20,36 @@ The font for third-level hierarchical headings.
 static let title3: UIFont.TextStyle
 ```
 
+```c
+extern UIFontTextStyle const UIFontTextStyleTitle3;
+```
+
 ## See Also
 
-- [static let body: UIFont.TextStyle](uifont/textstyle/body.md)
+### Constants
+- [static let body: UIFont.TextStyle](./body.md)
   The font for body text.
-- [static let callout: UIFont.TextStyle](uifont/textstyle/callout.md)
+- [static let callout: UIFont.TextStyle](./callout.md)
   The font for callouts.
-- [static let caption1: UIFont.TextStyle](uifont/textstyle/caption1.md)
+- [static let caption1: UIFont.TextStyle](./caption1.md)
   The font for standard captions.
-- [static let caption2: UIFont.TextStyle](uifont/textstyle/caption2.md)
+- [static let caption2: UIFont.TextStyle](./caption2.md)
   The font for alternate captions.
-- [static let footnote: UIFont.TextStyle](uifont/textstyle/footnote.md)
+- [static let footnote: UIFont.TextStyle](./footnote.md)
   The font for footnotes.
-- [static let headline: UIFont.TextStyle](uifont/textstyle/headline.md)
+- [static let headline: UIFont.TextStyle](./headline.md)
   The font for headings.
-- [static let subheadline: UIFont.TextStyle](uifont/textstyle/subheadline.md)
+- [static let subheadline: UIFont.TextStyle](./subheadline.md)
   The font for subheadings.
-- [static let largeTitle: UIFont.TextStyle](uifont/textstyle/largetitle.md)
+- [static let largeTitle: UIFont.TextStyle](./largetitle.md)
   The font style for large titles.
-- [static let extraLargeTitle: UIFont.TextStyle](uifont/textstyle/extralargetitle.md)
+- [static let extraLargeTitle: UIFont.TextStyle](./extralargetitle.md)
   The font style for extra large titles.
-- [static let extraLargeTitle2: UIFont.TextStyle](uifont/textstyle/extralargetitle2.md)
+- [static let extraLargeTitle2: UIFont.TextStyle](./extralargetitle2.md)
   The font style for extra extra large titles.
-- [static let title1: UIFont.TextStyle](uifont/textstyle/title1.md)
+- [static let title1: UIFont.TextStyle](./title1.md)
   The font for first-level hierarchical headings.
-- [static let title2: UIFont.TextStyle](uifont/textstyle/title2.md)
+- [static let title2: UIFont.TextStyle](./title2.md)
   The font for second-level hierarchical headings.
 
 

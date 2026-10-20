@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation to flip the image.
 

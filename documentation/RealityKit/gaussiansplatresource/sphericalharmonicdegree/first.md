@@ -1,7 +1,8 @@
 # GaussianSplatResource.SphericalHarmonicDegree.first
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 12 values: three first-order lobes plus the degree-zero diffuse color.
 

@@ -1,7 +1,8 @@
 # videoScaleAndCropFactor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current scale and crop factor the video output uses.
 
@@ -17,13 +18,18 @@ The current scale and crop factor the video output uses.
 var videoScaleAndCropFactor: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat videoScaleAndCropFactor;
+```
+
 #### Discussion
 
 The property only applies to a video connection. You can set this property to a value in the range `[1.0,` ``AVCaptureConnection/videoMaxScaleAndCropFactor```]`. A factor of `1.0` keeps the image at its original. Factors greater than `1.0` scale the image up and center-crop the image to its original dimensions.
 
 ## See Also
 
-- [var videoMaxScaleAndCropFactor: CGFloat](avcaptureconnection/videomaxscaleandcropfactor.md)
+### Scaling a video
+- [var videoMaxScaleAndCropFactor: CGFloat](./videomaxscaleandcropfactor.md)
   The connection’s maximum video scale and crop factor.
 
 

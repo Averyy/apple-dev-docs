@@ -1,7 +1,8 @@
 # UIScene.DestructionCondition
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,17 +20,17 @@ struct DestructionCondition
 ## Topics
 
 ### Type Properties
-- [static var systemDisconnection: UIScene.DestructionCondition](uiscene/destructioncondition/systemdisconnection.md)
-- [static var userInitiatedDismissal: UIScene.DestructionCondition](uiscene/destructioncondition/userinitiateddismissal.md)
+- [static var systemDisconnection: UIScene.DestructionCondition](./destructioncondition/systemdisconnection.md)
+- [static var userInitiatedDismissal: UIScene.DestructionCondition](./destructioncondition/userinitiateddismissal.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

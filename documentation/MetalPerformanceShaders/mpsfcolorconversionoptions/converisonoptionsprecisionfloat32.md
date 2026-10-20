@@ -1,7 +1,8 @@
 # converisonOptionsPrecisionFloat32
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var converisonOptionsPrecisionFloat32: MPSFColorConversionOptions { get }
+```
+
+```c
+MPSFConverisonOptionsPrecisionFloat32
 ```
 
 

@@ -1,7 +1,8 @@
 # AVDisplayDynamicRange
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes how High Dynamic Range (HDR) video content renders.
 
@@ -17,33 +18,38 @@ Describes how High Dynamic Range (HDR) video content renders.
 enum AVDisplayDynamicRange
 ```
 
+```c
+enum AVDisplayDynamicRange : NSInteger;
+```
+
 ## Topics
 
 ### Creating a dynamic range
-- [init?(rawValue: Int)](avdisplaydynamicrange/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avdisplaydynamicrange/init%28rawvalue%29.md)
 ### Dynamic ranges
-- [AVDisplayDynamicRange.automatic](avdisplaydynamicrange/automatic.md)
+- [AVDisplayDynamicRange.automatic](./avdisplaydynamicrange/automatic.md)
   Defines an automatic dynamic range. Indicates that the dynamic range will be set automatically.
-- [AVDisplayDynamicRange.standard](avdisplaydynamicrange/standard.md)
+- [AVDisplayDynamicRange.standard](./avdisplaydynamicrange/standard.md)
   Defines a standard dynamic range. Restricts the video content dynamic range to the standard range regardless of the actual range of the video content.
-- [AVDisplayDynamicRange.constrainedHigh](avdisplaydynamicrange/constrainedhigh.md)
+- [AVDisplayDynamicRange.constrainedHigh](./avdisplaydynamicrange/constrainedhigh.md)
   Defines a constrained high dynamic range. Allows for constrained High Dynamic Range (HDR) video content which is useful for mixing HDR and Standard Dynamic Range (SDR) content.
-- [AVDisplayDynamicRange.high](avdisplaydynamicrange/high.md)
+- [AVDisplayDynamicRange.high](./avdisplaydynamicrange/high.md)
   Defines a high dynamic range. Allows video content to use extended dynamic range if it has dynamic range content.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVDisplayManager](avdisplaymanager.md)
+### Display management
+- [class AVDisplayManager](./avdisplaymanager.md)
   A tvOS management object that controls whether a TV switches modes to match the video’s native mode.
 
 

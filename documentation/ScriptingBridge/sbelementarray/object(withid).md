@@ -1,7 +1,8 @@
 # object(withID:)
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object in the array with the given identifier.
 
@@ -15,13 +16,17 @@ Returns the object in the array with the given identifier.
 func object(withID identifier: Any) -> Any
 ```
 
+```objc
+- (ObjectType) objectWithID:(id) identifier;
+```
+
 #### Return Value
 
 A reference to the identified object or `nil` if could not be found.
 
 #### Discussion
 
-This method is provided as an alternative to [`object(at:)`](https://developer.apple.com/documentation/foundation/nsarray/object(at:)) for applications where an identifier is available instead of (or in addition to) an index. A unique ID is generally more stable than an index. For example, it may be more useful to identify a contact in Address Book by its identifier (which doesn’t change over time) than by its index in the list of contacts (which can change as contacts are added or removed).
+This method is provided as an alternative to [`object(at:)`](../../Foundation/nsarray/object%28at%29.md) for applications where an identifier is available instead of (or in addition to) an index. A unique ID is generally more stable than an index. For example, it may be more useful to identify a contact in Address Book by its identifier (which doesn’t change over time) than by its index in the list of contacts (which can change as contacts are added or removed).
 
 ## Parameters
 
@@ -29,9 +34,10 @@ This method is provided as an alternative to [`object(at:)`](https://developer.a
 
 ## See Also
 
-- [func object(withName: String) -> Any](sbelementarray/object(withname:).md)
+### Getting Objects in the Array
+- [func object(withName: String) -> Any](./object%28withname%29.md)
   Returns the object in the array with the given name.
-- [func object(atLocation: Any) -> Any](sbelementarray/object(atlocation:).md)
+- [func object(atLocation: Any) -> Any](./object%28atlocation%29.md)
   Returns the object at the given location in the receiver.
 
 

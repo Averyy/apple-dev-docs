@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 2D position and orientation of the interaction.
 
@@ -16,7 +17,7 @@ let pose: TableVisualState.Pose2D
 
 #### Discussion
 
-This pose is relative to [`equipmentID`](tabletopinteraction/destination/equipmentid.md).
+This pose is relative to [`equipmentID`](./equipmentid.md).
 
 
 ---

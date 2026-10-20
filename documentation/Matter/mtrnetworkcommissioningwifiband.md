@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningWiFiBand
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 enum MTRNetworkCommissioningWiFiBand
 ```
 
+```c
+enum MTRNetworkCommissioningWiFiBand : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRNetworkCommissioningWiFiBand.band1G](mtrnetworkcommissioningwifiband/band1g.md)
-- [MTRNetworkCommissioningWiFiBand.band2G4](mtrnetworkcommissioningwifiband/band2g4.md)
-- [MTRNetworkCommissioningWiFiBand.band3G65](mtrnetworkcommissioningwifiband/band3g65.md)
-- [MTRNetworkCommissioningWiFiBand.band5G](mtrnetworkcommissioningwifiband/band5g.md)
-- [MTRNetworkCommissioningWiFiBand.band60G](mtrnetworkcommissioningwifiband/band60g.md)
-- [MTRNetworkCommissioningWiFiBand.band6G](mtrnetworkcommissioningwifiband/band6g.md)
+- [MTRNetworkCommissioningWiFiBand.band1G](./mtrnetworkcommissioningwifiband/band1g.md)
+- [MTRNetworkCommissioningWiFiBand.band2G4](./mtrnetworkcommissioningwifiband/band2g4.md)
+- [MTRNetworkCommissioningWiFiBand.band3G65](./mtrnetworkcommissioningwifiband/band3g65.md)
+- [MTRNetworkCommissioningWiFiBand.band5G](./mtrnetworkcommissioningwifiband/band5g.md)
+- [MTRNetworkCommissioningWiFiBand.band60G](./mtrnetworkcommissioningwifiband/band60g.md)
+- [MTRNetworkCommissioningWiFiBand.band6G](./mtrnetworkcommissioningwifiband/band6g.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrnetworkcommissioningwifiband/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrnetworkcommissioningwifiband/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

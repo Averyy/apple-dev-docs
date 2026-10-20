@@ -1,14 +1,15 @@
 # hvg_hcall_output_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct hvg_hcall_output {
     ...
 } hvg_hcall_output_t;
@@ -17,7 +18,7 @@ typedef struct hvg_hcall_output {
 ## Topics
 
 ### Instance Properties
-- [regs](hvg_hcall_output_t/3727948-regs.md)
+- [regs](./hvg_hcall_output_t/api-3727948-regs.md)
 
 
 ---

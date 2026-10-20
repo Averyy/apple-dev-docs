@@ -1,14 +1,15 @@
 # LCK_SLEEP_SPIN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 LCK_SLEEP_SPIN
 ```
 

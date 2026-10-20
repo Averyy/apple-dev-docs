@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a particular point is contained in the region.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether a particular point is contained i
 func contains(_ point: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(CGPoint) point;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point is contained in the region; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the point is contained in the region; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ func contains(_ point: CGPoint) -> Bool
 
 ## See Also
 
-- [var path: CGPath?](skregion/path.md)
+### Interacting with a Region
+- [var path: CGPath?](./path.md)
   Returns a Core Graphics path that defines the region.
 
 

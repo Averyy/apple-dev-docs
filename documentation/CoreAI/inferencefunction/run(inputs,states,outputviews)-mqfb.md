@@ -1,7 +1,8 @@
 # run(inputs:states:outputViews:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the function on the provided input arrays and returns the output values.
 
@@ -24,21 +25,22 @@ The outputs from the function.
 
 #### Discussion
 
-This is a convenience overload that accepts a dictionary of [`NDArray`](ndarray.md) values instead of an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection.
+This is a convenience overload that accepts a dictionary of [`NDArray`](../ndarray.md) values instead of an [`InferenceFunction.Inputs`](./inputs.md) collection.
 
-Any [`NDArray`](ndarray.md) values in the returned outputs have a row-major contiguous layout.
+Any [`NDArray`](../ndarray.md) values in the returned outputs have a row-major contiguous layout.
 
 ## Parameters
 
-- `inputs`: A dictionary that maps input names to their [`NDArray`](ndarray.md) values.
+- `inputs`: A dictionary that maps input names to their [`NDArray`](../ndarray.md) values.
 - `states`: The in-out arguments of the function, which the function reads and writes during inference. You must provide views for all states; omitting any state produces an error.
-- `outputViews`: Pre-allocated output values that the function updates during inference. Outputs with a provided view are updated in-place and are not included in the returned [`InferenceFunction.Outputs`](inferencefunction/outputs.md). Outputs without a provided view produce new values in the returned [`InferenceFunction.Outputs`](inferencefunction/outputs.md).
+- `outputViews`: Pre-allocated output values that the function updates during inference. Outputs with a provided view are updated in-place and are not included in the returned [`InferenceFunction.Outputs`](./outputs.md). Outputs without a provided view produce new values in the returned [`InferenceFunction.Outputs`](./outputs.md).
 
 ## See Also
 
-- [func run(inputs: borrowing InferenceFunction.Inputs, states: consuming InferenceFunction.MutableViews, outputViews: consuming InferenceFunction.MutableViews) async throws -> InferenceFunction.Outputs](inferencefunction/run(inputs:states:outputviews:)-14emi.md)
+### Running inference
+- [func run(inputs: borrowing InferenceFunction.Inputs, states: consuming InferenceFunction.MutableViews, outputViews: consuming InferenceFunction.MutableViews) async throws -> InferenceFunction.Outputs](./run%28inputs,states,outputviews%29-14emi.md)
   Runs the function on the provided input values and returns the output values.
-- [func encode(inputs: [String : InferenceFunction.AsyncValue], states: consuming InferenceFunction.AsyncMutableViews, outputViews: consuming InferenceFunction.AsyncMutableViews, to: ComputeStream) throws -> [String : InferenceFunction.AsyncValue]](inferencefunction/encode(inputs:states:outputviews:to:).md)
+- [func encode(inputs: [String : InferenceFunction.AsyncValue], states: consuming InferenceFunction.AsyncMutableViews, outputViews: consuming InferenceFunction.AsyncMutableViews, to: ComputeStream) throws -> [String : InferenceFunction.AsyncValue]](./encode%28inputs,states,outputviews,to%29.md)
   Encodes the inference onto the provided compute stream, returning async values for the outputs.
 
 

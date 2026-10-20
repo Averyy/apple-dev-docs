@@ -1,7 +1,8 @@
 # PMDestinationType
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Constants that specify a destination for a print job.
 
@@ -14,20 +15,24 @@ Constants that specify a destination for a print job.
 typealias PMDestinationType = UInt16
 ```
 
+```c
+typedef UInt16 PMDestinationType;
+```
+
 ## Topics
 
 ### Constants
-- [var kPMDestinationInvalid: Int](kpmdestinationinvalid.md)
+- [var kPMDestinationInvalid: Int](./kpmdestinationinvalid.md)
   Specifies the destination is invalid.
-- [var kPMDestinationPrinter: Int](kpmdestinationprinter.md)
+- [var kPMDestinationPrinter: Int](./kpmdestinationprinter.md)
   Specifies output to a printer.
-- [var kPMDestinationFile: Int](kpmdestinationfile.md)
+- [var kPMDestinationFile: Int](./kpmdestinationfile.md)
   Specifies output to a file.
-- [var kPMDestinationFax: Int](kpmdestinationfax.md)
+- [var kPMDestinationFax: Int](./kpmdestinationfax.md)
   Specifies output to a fax. This destination is currently not supported.
-- [var kPMDestinationPreview: Int](kpmdestinationpreview.md)
+- [var kPMDestinationPreview: Int](./kpmdestinationpreview.md)
   Specifies output to print preview.
-- [var kPMDestinationProcessPDF: Int](kpmdestinationprocesspdf.md)
+- [var kPMDestinationProcessPDF: Int](./kpmdestinationprocesspdf.md)
   Specifies output to a PDF workflow option.
 
 

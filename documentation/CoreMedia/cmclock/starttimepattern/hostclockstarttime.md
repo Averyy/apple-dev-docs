@@ -1,7 +1,8 @@
 # hostClockStartTime
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host clock time of the next preferred start time.
 

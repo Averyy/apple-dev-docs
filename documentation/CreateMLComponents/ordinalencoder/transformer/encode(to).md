@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes an ordinal encoding transformer.
 
@@ -19,6 +20,8 @@ Encodes an ordinal encoding transformer.
 ```swift
 func encode(to encoder: any Encoder) throws
 ```
+
+Available when `Category` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
 ## Parameters
 

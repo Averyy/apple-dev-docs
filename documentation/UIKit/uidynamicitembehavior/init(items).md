@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a dynamic item behavior with an array of dynamic items.
 
@@ -9,13 +10,17 @@ Initializes a dynamic item behavior with an array of dynamic items.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(items: [any UIDynamicItem])
+```
+
+```objc
+- (instancetype) initWithItems:(NSArray<id<UIDynamicItem>> *) items;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ The initialized dynamic item behavior, or `nil` if there was a problem initializ
 
 ## See Also
 
-- [func addItem(any UIDynamicItem)](uidynamicitembehavior/additem(_:).md)
+### Initializing and managing a dynamic item behavior
+- [func addItem(any UIDynamicItem)](./additem%28_%29.md)
   Adds a dynamic item to the dynamic item behavior’s item array.
-- [func removeItem(any UIDynamicItem)](uidynamicitembehavior/removeitem(_:).md)
+- [func removeItem(any UIDynamicItem)](./removeitem%28_%29.md)
   Removes a specific dynamic item from the dynamic item behavior.
-- [var items: [any UIDynamicItem]](uidynamicitembehavior/items.md)
+- [var items: [any UIDynamicItem]](./items.md)
   Returns the set of dynamic items you’ve added to the dynamic item behavior.
 
 

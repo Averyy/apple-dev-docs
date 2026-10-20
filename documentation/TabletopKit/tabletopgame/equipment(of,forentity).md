@@ -1,7 +1,8 @@
 # equipment(of:forEntity:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the specified equipment type associated with an entity if it exists.
 
@@ -29,11 +30,12 @@ You can use this method to create custom interactions.
 
 ## See Also
 
-- [var equipment: [any Equipment]](tabletopgame/equipment.md)
-- [var equipmentIDs: [EquipmentIdentifier]](tabletopgame/equipmentids.md)
-- [func equipment(matching: EquipmentIdentifier) -> (any Equipment)?](tabletopgame/equipment(matching:).md)
-- [func equipment<E>(of: E.Type) -> [E]](tabletopgame/equipment(of:).md)
-- [func equipment<E>(of: E.Type, matching: EquipmentIdentifier) -> E?](tabletopgame/equipment(of:matching:).md)
+### Adding equipment to the game
+- [var equipment: [any Equipment]](./equipment.md)
+- [var equipmentIDs: [EquipmentIdentifier]](./equipmentids.md)
+- [func equipment(matching: EquipmentIdentifier) -> (any Equipment)?](./equipment%28matching%29.md)
+- [func equipment<E>(of: E.Type) -> [E]](./equipment%28of%29.md)
+- [func equipment<E>(of: E.Type, matching: EquipmentIdentifier) -> E?](./equipment%28of,matching%29.md)
 
 
 ---

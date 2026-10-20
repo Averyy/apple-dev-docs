@@ -1,7 +1,8 @@
 # ComputeNodeGraph.SamplerSettings
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,7 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,27 +22,28 @@ struct SamplerSettings
 ## Topics
 
 ### Initializers
-- [init(texture: MTLTextureType, address: MTLSamplerAddressMode, filter: MTLSamplerMinMagFilter)](computenodegraph/samplersettings/init(texture:address:filter:).md)
+- [init(texture: MTLTextureType, address: MTLSamplerAddressMode, filter: MTLSamplerMinMagFilter)](./samplersettings/init%28texture,address,filter%29.md)
 ### Instance Properties
-- [var address: MTLSamplerAddressMode](computenodegraph/samplersettings/address.md)
-- [var filter: MTLSamplerMinMagFilter](computenodegraph/samplersettings/filter.md)
-- [var texture: MTLTextureType](computenodegraph/samplersettings/texture.md)
+- [var address: MTLSamplerAddressMode](./samplersettings/address.md)
+- [var filter: MTLSamplerMinMagFilter](./samplersettings/filter.md)
+- [var texture: MTLTextureType](./samplersettings/texture.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ComputeNodeGraph.SwizzleChannels](computenodegraph/swizzlechannels.md)
-- [enum AddressSpace](addressspace.md)
+### Graph resources
+- [ComputeNodeGraph.SwizzleChannels](./swizzlechannels.md)
+- [enum AddressSpace](../addressspace.md)
   A GPU memory address space.
 
 

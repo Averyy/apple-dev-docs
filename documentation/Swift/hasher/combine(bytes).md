@@ -1,7 +1,8 @@
 # combine(bytes:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the contents of the given buffer to this hasher, mixing it into the hasher state.
 
@@ -26,7 +27,8 @@ mutating func combine(bytes: UnsafeRawBufferPointer)
 
 ## See Also
 
-- [func combine<H>(borrowing H)](hasher/combine(_:).md)
+### Adding Values
+- [func combine<H>(borrowing H)](./combine%28_%29.md)
   Adds the given value to this hasher, mixing its essential parts into the hasher state.
 
 

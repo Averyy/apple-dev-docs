@@ -1,7 +1,8 @@
 # listItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 For use in a UI list or menu item.
 
@@ -22,11 +23,12 @@ static var listItem: FormatStyleCapitalizationContext { get }
 
 ## See Also
 
-- [static var unknown: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/unknown.md)
-- [static var standalone: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/standalone.md)
+### Customizing Style Behavior
+- [static var unknown: FormatStyleCapitalizationContext](./unknown.md)
+- [static var standalone: FormatStyleCapitalizationContext](./standalone.md)
   For stand-alone usage, such as an isolated name on a calendar page.
-- [static var beginningOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/beginningofsentence.md)
-- [static var middleOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/middleofsentence.md)
+- [static var beginningOfSentence: FormatStyleCapitalizationContext](./beginningofsentence.md)
+- [static var middleOfSentence: FormatStyleCapitalizationContext](./middleofsentence.md)
 
 
 ---

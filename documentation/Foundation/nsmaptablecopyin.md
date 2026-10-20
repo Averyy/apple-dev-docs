@@ -1,9 +1,10 @@
 # NSMapTableCopyIn
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Equivalent to [`copyIn`](nspointerfunctions/options/copyin.md).
+Equivalent to [`copyIn`](./nspointerfunctions/options/copyin.md).
 
 **Availability**:
 - iOS 6.0+
@@ -20,10 +21,15 @@ Equivalent to [`copyIn`](nspointerfunctions/options/copyin.md).
 var NSMapTableCopyIn: NSPointerFunctions.Options { get }
 ```
 
+```c
+static const NSPointerFunctionsOptions NSMapTableCopyIn;
+```
+
 ## See Also
 
-- [static var copyIn: NSPointerFunctions.Options](nspointerfunctions/options/copyin.md)
-  Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](nspointerfunctions/acquirefunction.md)).
+### Copy Option
+- [static var copyIn: NSPointerFunctions.Options](./nspointerfunctions/options/copyin.md)
+  Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](./nspointerfunctions/acquirefunction.md)).
 
 
 ---

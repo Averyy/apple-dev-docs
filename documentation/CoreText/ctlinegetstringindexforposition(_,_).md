@@ -1,7 +1,8 @@
 # CTLineGetStringIndexForPosition(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs hit testing.
 
@@ -20,9 +21,13 @@ Performs hit testing.
 func CTLineGetStringIndexForPosition(_ line: CTLine, _ position: CGPoint) -> CFIndex
 ```
 
+```c
+extern CFIndex CTLineGetStringIndexForPosition(CTLineRef line, CGPoint position);
+```
+
 #### Return Value
 
-The string index for the position, or if the line does not support string access, [`kCFNotFound`](https://developer.apple.com/documentation/corefoundation/kcfnotfound). Relative to the line’s string range, this value can be no less than the first string index and no greater than the last string index plus 1.
+The string index for the position, or if the line does not support string access, [`kCFNotFound`](../CoreFoundation/kcfnotfound.md). Relative to the line’s string range, this value can be no less than the first string index and no greater than the last string index plus 1.
 
 #### Discussion
 
@@ -35,9 +40,10 @@ This function can be used to determine the string index for a mouse click or oth
 
 ## See Also
 
-- [func CTLineGetOffsetForStringIndex(CTLine, CFIndex, UnsafeMutablePointer<CGFloat>?) -> CGFloat](ctlinegetoffsetforstringindex(_:_:_:).md)
+### Getting Line Positioning
+- [func CTLineGetOffsetForStringIndex(CTLine, CFIndex, UnsafeMutablePointer<CGFloat>?) -> CGFloat](./ctlinegetoffsetforstringindex%28_,_,_%29.md)
   Determines the graphical offset or offsets for a string index.
-- [func CTLineEnumerateCaretOffsets(CTLine, (Double, CFIndex, Bool, UnsafeMutablePointer<Bool>) -> Void)](ctlineenumeratecaretoffsets(_:_:).md)
+- [func CTLineEnumerateCaretOffsets(CTLine, (Double, CFIndex, Bool, UnsafeMutablePointer<Bool>) -> Void)](./ctlineenumeratecaretoffsets%28_,_%29.md)
   Enumerates caret offsets for characters in a line.
 
 

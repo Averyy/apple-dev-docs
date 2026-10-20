@@ -1,7 +1,8 @@
 # dateSeparator
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character used to separate the components of a date.
 
@@ -22,11 +23,12 @@ var dateSeparator: Date.ISO8601FormatStyle.DateSeparator { get }
 
 ## See Also
 
-- [var dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator](date/iso8601formatstyle/datetimeseparator-swift.property.md)
+### Modifying an ISO 8601 Format Style
+- [var dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator](./datetimeseparator-swift.property.md)
   The character used to separate the date and time components of an ISO 8601 string representation of a date.
-- [var timeZone: TimeZone](date/iso8601formatstyle/timezone.md)
+- [var timeZone: TimeZone](./timezone.md)
   The time zone used to create and parse date representations.
-- [func dateTimeSeparator(Date.ISO8601FormatStyle.DateTimeSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/datetimeseparator(_:).md)
+- [func dateTimeSeparator(Date.ISO8601FormatStyle.DateTimeSeparator) -> Date.ISO8601FormatStyle](./datetimeseparator%28_%29.md)
   Sets the character that specifies the date and time components.
 
 

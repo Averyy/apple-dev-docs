@@ -1,12 +1,13 @@
 # drawKnob(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the slider knob in the given rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Draws the slider knob in the given rectangle.
 func drawKnob(_ knobRect: NSRect)
 ```
 
+```objc
+- (void) drawKnob:(NSRect) knobRect;
+```
+
 ## Mentions
 
-- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+- [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
 #### Discussion
 
-Before this message is sent, a [`lockFocus()`](nsview/lockfocus().md) message must be sent to the cell’s control view.
+Before this message is sent, a [`lockFocus()`](../nsview/lockfocus%28%29.md) message must be sent to the cell’s control view.
 
 You should not call this method explicitly. It’s included so you can override it in a subclass.
 
@@ -30,16 +35,17 @@ You should not call this method explicitly. It’s included so you can override 
 
 ## See Also
 
-- [func barRect(flipped: Bool) -> NSRect](nsslidercell/barrect(flipped:).md)
+### Displaying the Cell
+- [func barRect(flipped: Bool) -> NSRect](./barrect%28flipped%29.md)
   Returns the rectangle in which the bar is drawn.
-- [func drawTickMarks()](nsslidercell/drawtickmarks.md)
+- [func drawTickMarks()](./drawtickmarks%28%29.md)
   Draws the slider’s tick marks.
-- [func knobRect(flipped: Bool) -> NSRect](nsslidercell/knobrect(flipped:).md)
+- [func knobRect(flipped: Bool) -> NSRect](./knobrect%28flipped%29.md)
   Returns the rectangle in which the slider knob is drawn.
-- [func drawBar(inside: NSRect, flipped: Bool)](nsslidercell/drawbar(inside:flipped:).md)
+- [func drawBar(inside: NSRect, flipped: Bool)](./drawbar%28inside,flipped%29.md)
   Draws the slider’s bar—but not its bezel or knob—inside the specified rectangle.
-- [func drawKnob()](nsslidercell/drawknob.md)
-  Calculates the rectangle in which the knob should be drawn, then calls [`drawKnob(_:)`](nsslidercell/drawknob(_:).md) to actually draw the knob.
+- [func drawKnob()](./drawknob%28%29.md)
+  Calculates the rectangle in which the knob should be drawn, then calls [`drawKnob(_:)`](./drawknob%28_%29.md) to actually draw the knob.
 
 
 ---

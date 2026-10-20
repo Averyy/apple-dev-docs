@@ -1,7 +1,8 @@
 # rotated(by:around:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func rotated(by rotation: Rotation3DFloat, around pivot: Point3DFloat) -> Point3DFloat
+```
+
+```c
+static SPPoint3DFloat SPPoint3DFloatRotateAroundPoint(SPPoint3DFloat point, SPRotation3DFloat rotation, SPPoint3DFloat pivot);
 ```
 
 #### Return Value

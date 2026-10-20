@@ -1,7 +1,8 @@
 # isUserInterfaceEnabled
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -16,9 +17,14 @@
 var isUserInterfaceEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isUserInterfaceEnabled) BOOL userInterfaceEnabled;
+```
+
 ## See Also
 
-- [var authorizationOptions: [URLQueryItem]](asauthorizationsinglesignonrequest/authorizationoptions.md)
+### Setting Options
+- [var authorizationOptions: [URLQueryItem]](./authorizationoptions.md)
   Options that control the authorization process.
 
 

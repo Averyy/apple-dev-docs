@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the content of the entire scrubber, and deselects the currently selected item.
 
@@ -14,9 +15,14 @@ Reloads the content of the entire scrubber, and deselects the currently selected
 func reloadData()
 ```
 
+```objc
+- (void) reloadData;
+```
+
 ## See Also
 
-- [func reloadItems(at: IndexSet)](nsscrubber/reloaditems(at:).md)
+### Reloading content
+- [func reloadItems(at: IndexSet)](./reloaditems%28at%29.md)
   Reloads the items at the specified indexes.
 
 

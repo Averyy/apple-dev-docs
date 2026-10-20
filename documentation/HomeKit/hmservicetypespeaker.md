@@ -1,7 +1,8 @@
 # HMServiceTypeSpeaker
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An audio speaker service.
 
@@ -19,17 +20,22 @@ An audio speaker service.
 let HMServiceTypeSpeaker: String
 ```
 
+```c
+extern NSString * const HMServiceTypeSpeaker;
+```
+
 ## See Also
 
-- [let HMServiceTypeCameraControl: String](hmservicetypecameracontrol.md)
+### Video and Audio
+- [let HMServiceTypeCameraControl: String](./hmservicetypecameracontrol.md)
   A camera control service.
-- [let HMServiceTypeCameraRTPStreamManagement: String](hmservicetypecamerartpstreammanagement.md)
+- [let HMServiceTypeCameraRTPStreamManagement: String](./hmservicetypecamerartpstreammanagement.md)
   A stream management service.
-- [let HMServiceTypeMicrophone: String](hmservicetypemicrophone.md)
+- [let HMServiceTypeMicrophone: String](./hmservicetypemicrophone.md)
   A microphone service.
-- [let HMServiceTypeInputSource: String](hmservicetypeinputsource.md)
+- [let HMServiceTypeInputSource: String](./hmservicetypeinputsource.md)
   An accessory input source service.
-- [let HMServiceTypeTelevision: String](hmservicetypetelevision.md)
+- [let HMServiceTypeTelevision: String](./hmservicetypetelevision.md)
   A television service.
 
 

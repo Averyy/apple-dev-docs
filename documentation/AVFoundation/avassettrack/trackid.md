@@ -1,7 +1,8 @@
 # trackID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistent unique identifier for this track.
 
@@ -20,11 +21,16 @@ The persistent unique identifier for this track.
 var trackID: CMPersistentTrackID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMPersistentTrackID trackID;
+```
+
 ## See Also
 
-- [var mediaType: AVMediaType](avassettrack/mediatype.md)
+### Identifying an asset track
+- [var mediaType: AVMediaType](./mediatype.md)
   The type of media that a track presents.
-- [var asset: AVAsset?](avassettrack/asset.md)
+- [var asset: AVAsset?](./asset.md)
   The asset object that contains this track.
 
 

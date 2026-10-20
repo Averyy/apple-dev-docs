@@ -1,7 +1,8 @@
 # centerIndexPath
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index path of the currently centered item.
 
@@ -12,6 +13,10 @@ The index path of the currently centered item.
 
 ```swift
 var centerIndexPath: IndexPath? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSIndexPath * centerIndexPath;
 ```
 
 #### Discussion

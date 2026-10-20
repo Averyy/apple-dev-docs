@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The specular hit texture this scaler evaluates.
@@ -19,9 +20,13 @@ The specular hit texture this scaler evaluates.
 var specularHitDistanceTexture: (any MTLTexture)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> specularHitDistanceTexture;
+```
+
 #### Discussion
 
-You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`specularHitDistanceTextureUsage`](mtlfxtemporaldenoisedscalerbase/specularhitdistancetextureusage.md) requests and the pixel format that [`specularHitDistanceTextureFormat`](mtlfxtemporaldenoisedscalerdescriptor/specularhitdistancetextureformat.md) requests.
+You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`specularHitDistanceTextureUsage`](./specularhitdistancetextureusage.md) requests and the pixel format that [`specularHitDistanceTextureFormat`](../mtlfxtemporaldenoisedscalerdescriptor/specularhitdistancetextureformat.md) requests.
 
 
 ---

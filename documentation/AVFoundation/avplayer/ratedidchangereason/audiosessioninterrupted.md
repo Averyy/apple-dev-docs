@@ -1,7 +1,8 @@
 # audioSessionInterrupted
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system interrupts the app’s audio session.
 
@@ -19,13 +20,18 @@ The system interrupts the app’s audio session.
 static let audioSessionInterrupted: AVPlayer.RateDidChangeReason
 ```
 
+```c
+extern AVPlayerRateDidChangeReason const AVPlayerRateDidChangeReasonAudioSessionInterrupted;
+```
+
 ## See Also
 
-- [static let appBackgrounded: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/appbackgrounded.md)
+### Rate change reasons
+- [static let appBackgrounded: AVPlayer.RateDidChangeReason](./appbackgrounded.md)
   An app transitions to the background.
-- [static let setRateCalled: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/setratecalled.md)
+- [static let setRateCalled: AVPlayer.RateDidChangeReason](./setratecalled.md)
   An app makes a call to set the player’s rate.
-- [static let setRateFailed: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/setratefailed.md)
+- [static let setRateFailed: AVPlayer.RateDidChangeReason](./setratefailed.md)
   An attempt to change the player’s rate fails.
 
 

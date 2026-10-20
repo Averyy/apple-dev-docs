@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A window ideal size which uses the maximum size of the window’s contents.
 

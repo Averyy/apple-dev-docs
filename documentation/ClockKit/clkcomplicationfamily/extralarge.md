@@ -1,7 +1,8 @@
 # CLKComplicationFamily.extraLarge
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A large square area that ClockKit displays on the X-Large watch face.
 
@@ -14,11 +15,15 @@ A large square area that ClockKit displays on the X-Large watch face.
 case extraLarge
 ```
 
+```c
+CLKComplicationFamilyExtraLarge
+```
+
 #### Discussion
 
 The following figure shows the size and location of the extra-large complication.
 
-![Diagram showing the size and position of an extra-large complication.](/images/com.apple.clockkit/media-2880712@2x.png)
+![Diagram showing the size and position of an extra-large complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2880712@2x.png)
 
 
 ---

@@ -1,7 +1,8 @@
 # CKDBRecordFieldBytesListValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A field value that contains an array of bytes.
 
@@ -10,7 +11,7 @@ A field value that contains an array of bytes.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldBytesListValue {
 	string type;
 	ByteArray[]? value;
@@ -30,18 +31,19 @@ import type { CKDBRecordFieldBytesListValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldbyteslistvalue/type.md)
+- [type](./ckdbrecordfieldbyteslistvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldbyteslistvalue/value.md)
+- [value](./ckdbrecordfieldbyteslistvalue/value.md)
   A field value that contains an array of byte arrays.
 
 ## See Also
 
-- [CKDBRecordFieldBytesValue](ckdbrecordfieldbytesvalue.md)
+### Bytes
+- [CKDBRecordFieldBytesValue](./ckdbrecordfieldbytesvalue.md)
   A field value that contains an array of bytes.
-- [CKDBRecordFieldEncryptedBytesValue](ckdbrecordfieldencryptedbytesvalue.md)
+- [CKDBRecordFieldEncryptedBytesValue](./ckdbrecordfieldencryptedbytesvalue.md)
   The value of the encrypted field of type bytes.
-- [CKDBRecordFieldEncryptedBytesListValue](ckdbrecordfieldencryptedbyteslistvalue.md)
+- [CKDBRecordFieldEncryptedBytesListValue](./ckdbrecordfieldencryptedbyteslistvalue.md)
   The value of the encrypted field of type bytes list.
 
 

@@ -1,7 +1,8 @@
 # init(status:merchantSession:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a payment method update with the specified status and merchant session.
 
@@ -17,6 +18,10 @@ Creates a payment method update with the specified status and merchant session.
 
 ```swift
 init(status: PKPaymentAuthorizationStatus, merchantSession session: PKPaymentMerchantSession?)
+```
+
+```objc
+- (instancetype) initWithStatus:(PKPaymentAuthorizationStatus) status merchantSession:(PKPaymentMerchantSession *) session;
 ```
 
 ## Parameters

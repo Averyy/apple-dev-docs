@@ -1,14 +1,15 @@
 # vfs_get_thread_fs_private
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 int vfs_get_thread_fs_private(uint8_t tag, uint64_t *fs_private);
 ```
 

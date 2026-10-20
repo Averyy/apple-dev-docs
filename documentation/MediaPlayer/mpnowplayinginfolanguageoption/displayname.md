@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for a language option.
 
@@ -20,17 +21,22 @@ The display name for a language option.
 var displayName: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * displayName;
+```
+
 ## See Also
 
-- [var identifier: String?](mpnowplayinginfolanguageoption/identifier.md)
+### Retrieving language option properties
+- [var identifier: String?](./identifier.md)
   The unique identifier for the language option.
-- [var languageOptionCharacteristics: [String]?](mpnowplayinginfolanguageoption/languageoptioncharacteristics.md)
+- [var languageOptionCharacteristics: [String]?](./languageoptioncharacteristics.md)
   The characteristics that describe the content of the language option.
-- [var languageTag: String?](mpnowplayinginfolanguageoption/languagetag.md)
+- [var languageTag: String?](./languagetag.md)
   The abbreviated language code for the language option.
-- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoption/languageoptiontype.md)
+- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](./languageoptiontype.md)
   The type of language option.
-- [enum MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoptiontype.md)
+- [enum MPNowPlayingInfoLanguageOptionType](../mpnowplayinginfolanguageoptiontype.md)
   The language option type to use for the Now Playing item.
 
 

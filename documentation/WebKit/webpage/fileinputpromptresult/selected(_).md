@@ -1,7 +1,8 @@
 # WebPage.FileInputPromptResult.selected(_:)
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signals an affirmative action was produced by the invocation with the specified files.
 

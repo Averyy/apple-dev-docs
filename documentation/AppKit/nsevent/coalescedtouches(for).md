@@ -1,7 +1,8 @@
 # coalescedTouches(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all of the touch objects associated with the specified main touch.
 
@@ -14,9 +15,13 @@ Returns all of the touch objects associated with the specified main touch.
 func coalescedTouches(for touch: NSTouch) -> [NSTouch]
 ```
 
+```objc
+- (NSArray<NSTouch *> *) coalescedTouchesForTouch:(NSTouch *) touch;
+```
+
 #### Return Value
 
-An array that contains the [`NSTouch`](nstouch.md) objects AppKit generated since the last event, but didn’t deliver. This method returns `nil` if the object in the `touch` parameter isn’t associated with the current event.
+An array that contains the [`NSTouch`](../nstouch.md) objects AppKit generated since the last event, but didn’t deliver. This method returns `nil` if the object in the `touch` parameter isn’t associated with the current event.
 
 #### Discussion
 
@@ -30,21 +35,22 @@ AppKit coalesces touches only when they occur in the Touch Bar; it doesn’t coa
 
 ## See Also
 
-- [var phase: NSEvent.Phase](nsevent/phase-swift.property.md)
+### Getting gesture and touch information
+- [var phase: NSEvent.Phase](./phase-swift.property.md)
   The phase of a gesture event, such as a magnify, scroll, or pressure change.
-- [NSEvent.Phase](nsevent/phase-swift.struct.md)
+- [NSEvent.Phase](./phase-swift.struct.md)
   Constants that represent the possible phases during an event phase.
-- [var magnification: CGFloat](nsevent/magnification.md)
+- [var magnification: CGFloat](./magnification.md)
   The amount of change to add to a magnification gesture.
-- [func touches(matching: NSTouch.Phase, in: NSView?) -> Set<NSTouch>](nsevent/touches(matching:in:).md)
+- [func touches(matching: NSTouch.Phase, in: NSView?) -> Set<NSTouch>](./touches%28matching,in%29.md)
   Returns the touch objects associated with the specified phase.
-- [func allTouches() -> Set<NSTouch>](nsevent/alltouches.md)
+- [func allTouches() -> Set<NSTouch>](./alltouches%28%29.md)
   Returns all touch objects associated with the event.
-- [func touches(for: NSView) -> Set<NSTouch>](nsevent/touches(for:).md)
+- [func touches(for: NSView) -> Set<NSTouch>](./touches%28for%29.md)
   Returns the touch objects from the event that belong to the specified view.
-- [class var isMouseCoalescingEnabled: Bool](nsevent/ismousecoalescingenabled.md)
+- [class var isMouseCoalescingEnabled: Bool](./ismousecoalescingenabled.md)
   A Boolean value that indicates whether the system coalesces mouse movement events.
-- [NSEvent.GestureAxis](nsevent/gestureaxis.md)
+- [NSEvent.GestureAxis](./gestureaxis.md)
   Constants that specify the direction of travel for a gesture.
 
 

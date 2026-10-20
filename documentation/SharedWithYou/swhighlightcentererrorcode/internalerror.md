@@ -1,7 +1,8 @@
 # SWHighlightCenterErrorCode.internalError
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reports an internal error.
 
@@ -19,13 +20,18 @@ Reports an internal error.
 case internalError
 ```
 
+```c
+SWHighlightCenterErrorCodeInternalError
+```
+
 ## See Also
 
-- [SWHighlightCenterErrorCode.noError](swhighlightcentererrorcode/noerror.md)
+### Highlight center errors
+- [SWHighlightCenterErrorCode.noError](./noerror.md)
   Reports no error.
-- [SWHighlightCenterErrorCode.invalidURL](swhighlightcentererrorcode/invalidurl.md)
+- [SWHighlightCenterErrorCode.invalidURL](./invalidurl.md)
   Reports an invalid URL error.
-- [SWHighlightCenterErrorCode.accessDenied](swhighlightcentererrorcode/accessdenied.md)
+- [SWHighlightCenterErrorCode.accessDenied](./accessdenied.md)
   Reports and access denied error.
 
 

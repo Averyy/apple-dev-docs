@@ -1,7 +1,8 @@
 # rotated(by:around:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a ray that’s rotated by the specified rotation around a specified pivot.
 

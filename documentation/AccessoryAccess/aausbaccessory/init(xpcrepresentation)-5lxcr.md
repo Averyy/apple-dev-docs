@@ -1,7 +1,8 @@
 # init(XPCRepresentation:)
 
 **Framework**: Accessory Access  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a USB accessory from an XPC representation.
 
@@ -24,9 +25,10 @@ An `AAUSBAccessory` object if the framework decoded the provided `xpc_object_t`,
 
 ## See Also
 
-- [init?(xpcRepresentation: xpc_object_t)](aausbaccessory/init(xpcrepresentation:)-6dmbu.md)
+### Creating USB accessories
+- [init?(xpcRepresentation: xpc_object_t)](./init%28xpcrepresentation%29-6dmbu.md)
   Creates a USB accessory from an XPC representation.
-- [init?(coder: NSCoder)](aausbaccessory/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new USB accessory with the provided coder.
 
 

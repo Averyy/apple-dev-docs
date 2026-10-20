@@ -1,7 +1,8 @@
 # center
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center point of the region.
 
@@ -10,14 +11,14 @@ The center point of the region.
 
 ## Declaration
 
-```swift
+```
 get center(): Coordinate;
 set center(coordinate: CoordinateData);
 ```
 
 #### Discussion
 
-Create a [`Coordinate`](coordinate.md) with a latitude and longitude pair:
+Create a [`Coordinate`](../coordinate.md) with a latitude and longitude pair:
 
 ```javascript
 const center = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
@@ -25,7 +26,8 @@ const center = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitud
 
 ## See Also
 
-- [span](coordinateregion/span.md)
+### Defining the region
+- [span](./span.md)
   The horizontal and vertical span representing the amount of map to display.
 
 

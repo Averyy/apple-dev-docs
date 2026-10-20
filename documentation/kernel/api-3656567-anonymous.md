@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,10 +19,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDUsage_FIDO_InputData](../hiddriverkit/khidusage_fido_inputdata.md)
-- [kHIDUsage_FIDO_OutputData](../hiddriverkit/khidusage_fido_outputdata.md)
-- [kHIDUsage_FIDO_U2FDevice](../hiddriverkit/khidusage_fido_u2fdevice.md)
-- [kHIDUsage_FIDO_Undefined](../hiddriverkit/khidusage_fido_undefined.md)
+- [kHIDUsage_FIDO_InputData](../HIDDriverKit/khidusage_fido_inputdata.md)
+- [kHIDUsage_FIDO_OutputData](../HIDDriverKit/khidusage_fido_outputdata.md)
+- [kHIDUsage_FIDO_U2FDevice](../HIDDriverKit/khidusage_fido_u2fdevice.md)
+- [kHIDUsage_FIDO_Undefined](../HIDDriverKit/khidusage_fido_undefined.md)
 
 
 ---

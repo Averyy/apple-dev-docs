@@ -1,7 +1,8 @@
 # setBounds(_:for:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the bounds for the specified box.
 
@@ -15,8 +16,28 @@ Sets the bounds for the specified box.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func setBounds(_ bounds: CGRect, for box: PDFDisplayBox)
+```
+
+*macOS*
+
 ```swift
 func setBounds(_ bounds: NSRect, for box: PDFDisplayBox)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (void) setBounds:(CGRect) bounds forBox:(PDFDisplayBox) box;
+```
+
+*macOS*
+
+```objc
+- (void) setBounds:(NSRect) bounds forBox:(PDFDisplayBox) box;
 ```
 
 #### Discussion
@@ -27,13 +48,14 @@ To remove a box, pass `NSZeroRect` for the bounds (note that you cannot remove t
 
 ## See Also
 
-- [var document: PDFDocument?](pdfpage/document.md)
+### Getting Information About a Page
+- [var document: PDFDocument?](./document.md)
   Returns the `PDFDocument` object with which the page is associated.
-- [var label: String?](pdfpage/label.md)
+- [var label: String?](./label.md)
   Returns the label for the page.
-- [func bounds(for: PDFDisplayBox) -> CGRect](pdfpage/bounds(for:).md)
+- [func bounds(for: PDFDisplayBox) -> CGRect](./bounds%28for%29.md)
   Returns the bounds for the specified PDF display box.
-- [var rotation: Int](pdfpage/rotation.md)
+- [var rotation: Int](./rotation.md)
   Sets the rotation angle for the page in degrees.
 
 

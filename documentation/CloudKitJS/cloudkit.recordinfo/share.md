@@ -1,7 +1,8 @@
 # share
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shared record.
 
@@ -10,7 +11,7 @@ The shared record.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.Share share;
 ```
 

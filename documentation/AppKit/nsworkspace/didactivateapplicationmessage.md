@@ -1,7 +1,8 @@
 # NSWorkspace.DidActivateApplicationMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,15 +16,15 @@ struct DidActivateApplicationMessage
 ## Topics
 
 ### Initializers
-- [init(application: NSRunningApplication)](nsworkspace/didactivateapplicationmessage/init(application:).md)
+- [init(application: NSRunningApplication)](./didactivateapplicationmessage/init%28application%29.md)
 ### Instance Properties
-- [var application: NSRunningApplication](nsworkspace/didactivateapplicationmessage/application.md)
+- [var application: NSRunningApplication](./didactivateapplicationmessage/application.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

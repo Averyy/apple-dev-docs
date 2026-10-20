@@ -1,6 +1,7 @@
 # Customizing a document-based app’s launch experience
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Add unique elements to your app’s document launch scene.
 
@@ -8,25 +9,25 @@ Add unique elements to your app’s document launch scene.
 
 In iOS 18 and later, you can customize the document browsing experience for your app, such as setting the title and action buttons, configuring the background, and adding custom assets to the scene.
 
-> **Note**:  For information about adopting the document-based launch experience in SwiftUI, read [`Building a document-based app with SwiftUI`](https://developer.apple.com/documentation/swiftui/building-a-document-based-app-with-swiftui).
+> **SwiftUI equivalent**:  For information about adopting the document-based launch experience in SwiftUI, read [Building a document-based app with SwiftUI](../SwiftUI/building-a-document-based-app-with-swiftui.md).
 
-##### Set Up a Document Based App
+##### Set up a document-based app
 
 To create a customized document launch experience, follow these steps:
 
 - Declare your supported document types in the Document Types section of your app target’s Info tab.
 - Set the Supports Document Browser key (`UISupportsDocumentBrowser`) in the Custom iOS Target Properties section of the Info tab.
-- Create a [`UIDocument`](uidocument.md) subclass for each document type your app supports.
-- Create a [`UIDocumentViewController`](uidocumentviewcontroller.md) subclass for your app, and have the subclass adopt the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) protocol.
-- Set your document view subclass as your app’s root view controller. Alternatively, you can embed your [`UIDocumentViewController`](uidocumentviewcontroller.md) subclass in a navigation controller, and set that as the root view controller.
-- Implement your delegate’s [`documentDidOpen()`](uidocumentviewcontroller/documentdidopen().md) method to configure your document view.
-- Configure the launch scene using the document view controller’s [`launchOptions`](uidocumentviewcontroller/launchoptions-swift.property.md) property.
+- Create a [`UIDocument`](./uidocument.md) subclass for each document type your app supports.
+- Create a [`UIDocumentViewController`](./uidocumentviewcontroller.md) subclass for your app, and have the subclass adopt the [`UIDocumentBrowserViewControllerDelegate`](./uidocumentbrowserviewcontrollerdelegate.md) protocol.
+- Set your document view subclass as your app’s root view controller. Alternatively, you can embed your [`UIDocumentViewController`](./uidocumentviewcontroller.md) subclass in a navigation controller, and set that as the root view controller.
+- Implement your delegate’s [`documentDidOpen()`](./uidocumentviewcontroller/documentdidopen%28%29.md) method to configure your document view.
+- Configure the launch scene using the document view controller’s [`launchOptions`](./uidocumentviewcontroller/launchoptions-swift.property.md) property.
 
-When setting the document type, provide a name and the Uniform Type Identifier for your documents. Add the [`CFBundleTypeRole`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes/cfbundletyperole) key with a value of `Viewer` (read-only) or `Editor` (if your app both reads and writes the document type). Finally, add a `UIDocumentClass` key, and set its value to the name of your [`UIDocument`](uidocument.md) subclass for this document type.
+When setting the document type, provide a name and the Uniform Type Identifier for your documents. Add the [`CFBundleTypeRole`](../BundleResources/information-property-list/cfbundledocumenttypes/cfbundletyperole.md) key with a value of `Viewer` (read-only) or `Editor` (if your app both reads and writes the document type). Finally, add a `UIDocumentClass` key, and set its value to the name of your [`UIDocument`](./uidocument.md) subclass for this document type.
 
-![An Xcode screenshot of the app target’s Document Type settings.](/images/com.apple.uikit/customizing-a-document-based-app-s-launch-experience-1@2x.png)
+![An Xcode screenshot of the app target’s Document Type settings.](https://developer.apple.com/tutorials/images/com.apple.uikit/customizing-a-document-based-app-s-launch-experience-1@2x.png)
 
-When implementing your [`documentDidOpen()`](uidocumentviewcontroller/documentdidopen().md) method, verify that you have a valid document and a valid view before updating the view. For more information, see [`UIDocumentViewController`](uidocumentviewcontroller.md).
+When implementing your [`documentDidOpen()`](./uidocumentviewcontroller/documentdidopen%28%29.md) method, verify that you have a valid document and a valid view before updating the view. For more information, see [`UIDocumentViewController`](./uidocumentviewcontroller.md).
 
 ```swift
 override func viewDidLoad() {
@@ -55,11 +56,11 @@ func mySetupTextView() {
 }
 ```
 
-##### Create New Documents
+##### Create new documents
 
-The document viewer uses app intents to create new documents. It also uses the [`UIDocument.CreationIntent`](uidocument/creationintent.md) structure to specify the different ways your app can create documents. [`UIDocument`](uidocument.md) already provides a default intent and the corresponding `.default` enumeration value.
+The document viewer uses app intents to create new documents. It also uses the [`UIDocument.CreationIntent`](./uidocument/creationintent.md) structure to specify the different ways your app can create documents. [`UIDocument`](./uidocument.md) already provides a default intent and the corresponding `.default` enumeration value.
 
-To add your own intents, start by extending [`UIDocument.CreationIntent`](uidocument/creationintent.md) and adding values for your intents.
+To add your own intents, start by extending [`UIDocument.CreationIntent`](./uidocument/creationintent.md) and adding values for your intents.
 
 ```swift
 // Extend the creation intent enumeration to add custom options for document creation.
@@ -68,7 +69,7 @@ extension UIDocument.CreationIntent {
 }
 ```
 
-Then call the [`UIDocument`](uidocument.md) class’s [`createDocumentAction(withIntent:)`](uidocumentviewcontroller/launchoptions-swift.class/createdocumentaction(withintent:).md) method to create the intent. Set the intent’s title, and assign it to your [`UIDocumentViewController.LaunchOptions`](uidocumentviewcontroller/launchoptions-swift.class.md) instance’s [`primaryAction`](uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) or [`secondaryAction`](uidocumentviewcontroller/launchoptions-swift.class/secondaryaction.md) properties. By default, the system automatically sets the document view controller’s [`primaryAction`](uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) to the default create document action.
+Then call the [`UIDocument`](./uidocument.md) class’s [`createDocumentAction(withIntent:)`](./uidocumentviewcontroller/launchoptions-swift.class/createdocumentaction%28withintent%29.md) method to create the intent. Set the intent’s title, and assign it to your [`UIDocumentViewController.LaunchOptions`](./uidocumentviewcontroller/launchoptions-swift.class.md) instance’s [`primaryAction`](./uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) or [`secondaryAction`](./uidocumentviewcontroller/launchoptions-swift.class/secondaryaction.md) properties. By default, the system automatically sets the document view controller’s [`primaryAction`](./uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) to the default create document action.
 
 ```swift
 // Provide an action for the secondary action.
@@ -81,7 +82,7 @@ templateAction.title = "Choose a Template"
 launchOptions.secondaryAction = templateAction
 ```
 
-Finally, implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) protocol’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method. The system calls this method when something triggers one of the create document intents. In your implementation, use the controller’s [`activeDocumentCreationIntent`](uidocumentbrowserviewcontroller/activedocumentcreationintent.md) to determine the intent. Create the document, and then pass the URL and the [`UIDocumentBrowserViewController.ImportMode`](uidocumentbrowserviewcontroller/importmode.md) to the `intentHandler`.
+Finally, implement the [`UIDocumentBrowserViewControllerDelegate`](./uidocumentbrowserviewcontrollerdelegate.md) protocol’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method. The system calls this method when something triggers one of the create document intents. In your implementation, use the controller’s [`activeDocumentCreationIntent`](./uidocumentbrowserviewcontroller/activedocumentcreationintent.md) to determine the intent. Create the document, and then pass the URL and the [`UIDocumentBrowserViewController.ImportMode`](./uidocumentbrowserviewcontroller/importmode.md) to the `intentHandler`.
 
 ```swift
 override func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
@@ -107,17 +108,17 @@ override func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 }
 ```
 
-##### Customize the Document Browsing Experience
+##### Customize the document browsing experience
 
-On iPad, iPhone, and Vision Pro (for compatible iPad apps), the system displays a launch scene that contains a title and any document creation buttons. It also displays the document browser as a sheet over this view. Use your document view controller’s [`launchOptions`](uidocumentviewcontroller/launchoptions-swift.property.md) property to customize this scene as follows:
+On iPad, iPhone, and Vision Pro (for compatible iPad apps), the system displays a launch scene that contains a title and any document creation buttons. It also displays the document browser as a sheet over this view. Use your document view controller’s [`launchOptions`](./uidocumentviewcontroller/launchoptions-swift.property.md) property to customize this scene as follows:
 
-- Set the [`title`](uidocumentviewcontroller/launchoptions-swift.class/title.md) property to change the name that appears in the title view. By default, the controller uses your app’s name.
-- Modify the [`background`](uidocumentviewcontrollerlaunchoptions/background.md) property to configure the scene’s background.
-- Use the [`foregroundAccessoryView`](uidocumentviewcontroller/launchoptions-swift.class/foregroundaccessoryview.md) or [`backgroundAccessoryView`](uidocumentviewcontroller/launchoptions-swift.class/backgroundaccessoryview.md) to place [`UIView`](uiview.md) objects in front of or behind the title view.
-- Set the [`primaryAction`](uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) or [`secondaryAction`](uidocumentviewcontroller/launchoptions-swift.class/secondaryaction.md) properties to add buttons to the title view. If you don’t modify the [`primaryAction`](uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) property, the controller adds a Create Document button as the default primary action.
-- Use [`browserViewController`](uidocumentviewcontroller/launchoptions-swift.class/browserviewcontroller.md) to access and configure the document browser controller.
+- Set the [`title`](./uidocumentviewcontroller/launchoptions-swift.class/title.md) property to change the name that appears in the title view. By default, the controller uses your app’s name.
+- Modify the [`background`](./uidocumentviewcontrollerlaunchoptions/background.md) property to configure the scene’s background.
+- Use the [`foregroundAccessoryView`](./uidocumentviewcontroller/launchoptions-swift.class/foregroundaccessoryview.md) or [`backgroundAccessoryView`](./uidocumentviewcontroller/launchoptions-swift.class/backgroundaccessoryview.md) to place [`UIView`](./uiview.md) objects in front of or behind the title view.
+- Set the [`primaryAction`](./uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) or [`secondaryAction`](./uidocumentviewcontroller/launchoptions-swift.class/secondaryaction.md) properties to add buttons to the title view. If you don’t modify the [`primaryAction`](./uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md) property, the controller adds a Create Document button as the default primary action.
+- Use [`browserViewController`](./uidocumentviewcontroller/launchoptions-swift.class/browserviewcontroller.md) to access and configure the document browser controller.
 
-Typically, you configure the launch options in your view controller’s [`viewDidLoad()`](uiviewcontroller/viewdidload().md) method.
+Typically, you configure the launch options in your view controller’s [`viewDidLoad()`](./uiviewcontroller/viewdidload%28%29.md) method.
 
 ```swift
 override func viewDidLoad() {
@@ -139,25 +140,26 @@ override func viewDidLoad() {
 }
 ```
 
-![A screenshot of the document launch scene with the title set to “My Text Editor”. It has the default primary action and a custom secondary action.](/images/com.apple.uikit/customizing-a-document-based-app-s-launch-experience-2@2x.png)
+![A screenshot of the document launch scene with the title set to “My Text Editor”. It has the default primary action and a custom secondary action.](https://developer.apple.com/tutorials/images/com.apple.uikit/customizing-a-document-based-app-s-launch-experience-2@2x.png)
 
 ## See Also
 
-- [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
+### Documents and directories
+- [Adding a document browser to your app](./adding-a-document-browser-to-your-app.md)
   Give people access to their local or remote documents from within your app.
-- [Providing access to directories](providing-access-to-directories.md)
+- [Providing access to directories](./providing-access-to-directories.md)
   Use a document picker to access the content of a directory outside your app’s container.
-- [Building an app with a document browser](building-an-app-with-a-document-browser.md)
+- [Building an app with a document browser](./building-an-app-with-a-document-browser.md)
   Provide access to on-device and cloud files by adding a document browser to your app.
-- [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
+- [Building a document browser app for custom file formats](./building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
-- [class UIDocumentViewController](uidocumentviewcontroller.md)
+- [class UIDocumentViewController](./uidocumentviewcontroller.md)
   A view controller that manages and presents a document stored locally or in the cloud.
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [class UIDocumentPickerViewController](uidocumentpickerviewcontroller.md)
+- [class UIDocumentPickerViewController](./uidocumentpickerviewcontroller.md)
   A view controller that provides access to documents or destinations outside your app’s sandbox.
-- [class UIDocumentInteractionController](uidocumentinteractioncontroller.md)
+- [class UIDocumentInteractionController](./uidocumentinteractioncontroller.md)
   A view controller that previews, opens, or prints files with a file format that your app can’t handle directly.
 
 

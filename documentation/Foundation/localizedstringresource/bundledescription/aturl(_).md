@@ -1,7 +1,8 @@
 # LocalizedStringResource.BundleDescription.atURL(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bundle located at a specific file URL.
 
@@ -26,9 +27,10 @@ case atURL(URL)
 
 ## See Also
 
-- [LocalizedStringResource.BundleDescription.main](localizedstringresource/bundledescription/main.md)
+### Bundle descriptions
+- [LocalizedStringResource.BundleDescription.main](./main.md)
   The app’s main bundle.
-- [LocalizedStringResource.BundleDescription.forClass(_:)](localizedstringresource/bundledescription/forclass(_:).md)
+- [LocalizedStringResource.BundleDescription.forClass(_:)](./forclass%28_%29.md)
   The bundle for a specific class.
 
 

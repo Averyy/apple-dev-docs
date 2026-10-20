@@ -1,7 +1,8 @@
 # MIDIEventListAdd(_:_:_:_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds an event to an event list.
 
@@ -20,6 +21,10 @@ Adds an event to an event list.
 func MIDIEventListAdd(_ evtlist: UnsafeMutablePointer<MIDIEventList>, _ listSize: Int, _ curPacket: UnsafeMutablePointer<MIDIEventPacket>, _ time: MIDITimeStamp, _ wordCount: Int, _ words: UnsafePointer<UInt32>) -> UnsafeMutablePointer<MIDIEventPacket>
 ```
 
+```c
+extern MIDIEventPacket *MIDIEventListAdd(MIDIEventList *evtlist, ByteCount listSize, MIDIEventPacket *curPacket, MIDITimeStamp time, ByteCount wordCount, const UInt32 *words);
+```
+
 #### Return Value
 
 A packet pointer to pass as the `curPacket` argument in a subsequent call to this function, or `NULL` if there wasn’t room in the packet for the event.
@@ -32,27 +37,28 @@ The maximum size of an event list is 65,536 bytes. Send large SysEx messages in 
 
 - `evtlist`: The event list to which to add the event.
 - `listSize`: The event list’s capacity, in bytes.
-- `curPacket`: A packet pointer returned by a previous call to [`MIDIEventListInit(_:_:)`](midieventlistinit(_:_:).md) or [`MIDIEventListAdd(_:_:_:_:_:_:)`](midieventlistadd(_:_:_:_:_:_:).md) for this packet list.
+- `curPacket`: A packet pointer returned by a previous call to [`MIDIEventListInit(_:_:)`](./midieventlistinit%28_,_%29.md) or [`MIDIEventListAdd(_:_:_:_:_:_:)`](./midieventlistadd%28_,_,_,_,_,_%29.md) for this packet list.
 - `time`: The new event’s time.
 - `wordCount`: The number of valid MIDI 32-bit words.
 - `words`: The new event, which may be a single MIDI event or a partial SysEx event.
 
 ## See Also
 
-- [func MIDIEventListInit(UnsafeMutablePointer<MIDIEventList>, MIDIProtocolID) -> UnsafeMutablePointer<MIDIEventPacket>](midieventlistinit(_:_:).md)
+### Event list management
+- [func MIDIEventListInit(UnsafeMutablePointer<MIDIEventList>, MIDIProtocolID) -> UnsafeMutablePointer<MIDIEventPacket>](./midieventlistinit%28_,_%29.md)
   Initializes an event list.
-- [func MIDIEventPacketNext(UnsafePointer<MIDIEventPacket>) -> UnsafeMutablePointer<MIDIEventPacket>](midieventpacketnext(_:).md)
+- [func MIDIEventPacketNext(UnsafePointer<MIDIEventPacket>) -> UnsafeMutablePointer<MIDIEventPacket>](./midieventpacketnext%28_%29.md)
   Advances a packet pointer to the next packet in memory, if the packet is part of an event list.
-- [func MIDISendEventList(MIDIPortRef, MIDIEndpointRef, UnsafePointer<MIDIEventList>) -> OSStatus](midisendeventlist(_:_:_:).md)
+- [func MIDISendEventList(MIDIPortRef, MIDIEndpointRef, UnsafePointer<MIDIEventList>) -> OSStatus](./midisendeventlist%28_,_,_%29.md)
   Sends MIDI events to a destination.
-- [func MIDIReceivedEventList(MIDIEndpointRef, UnsafePointer<MIDIEventList>) -> OSStatus](midireceivedeventlist(_:_:).md)
+- [func MIDIReceivedEventList(MIDIEndpointRef, UnsafePointer<MIDIEventList>) -> OSStatus](./midireceivedeventlist%28_,_%29.md)
   Distributes incoming MIDI events from a source to its connected client input ports.
-- [struct MIDIEventList](midieventlist.md)
+- [struct MIDIEventList](./midieventlist.md)
   A variable-length list of MIDI event packets.
-- [struct MIDIEventPacket](midieventpacket.md)
+- [struct MIDIEventPacket](./midieventpacket.md)
   A series of simultaneous MIDI events in Universal MIDI Packets (UMP) format.
-- [struct UnsafeMutableMIDIEventListPointer](unsafemutablemidieventlistpointer.md)
-- [struct UnsafeMutableMIDIEventPacketPointer](unsafemutablemidieventpacketpointer.md)
+- [struct UnsafeMutableMIDIEventListPointer](./unsafemutablemidieventlistpointer.md)
+- [struct UnsafeMutableMIDIEventPacketPointer](./unsafemutablemidieventpacketpointer.md)
 
 
 ---

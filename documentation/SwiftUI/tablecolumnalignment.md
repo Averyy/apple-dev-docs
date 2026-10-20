@@ -1,7 +1,8 @@
 # TableColumnAlignment
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the alignment of the content of a table column.
 
@@ -25,36 +26,37 @@ The alignment of a column applies to both its header label as well as the defaul
 ## Topics
 
 ### Getting the alignment
-- [static var automatic: TableColumnAlignment](tablecolumnalignment/automatic.md)
+- [static var automatic: TableColumnAlignment](./tablecolumnalignment/automatic.md)
   The default column alignment.
-- [static var leading: TableColumnAlignment](tablecolumnalignment/leading.md)
+- [static var leading: TableColumnAlignment](./tablecolumnalignment/leading.md)
   Leading column alignment.
-- [static var center: TableColumnAlignment](tablecolumnalignment/center.md)
+- [static var center: TableColumnAlignment](./tablecolumnalignment/center.md)
   Center column alignment.
-- [static var trailing: TableColumnAlignment](tablecolumnalignment/trailing.md)
+- [static var trailing: TableColumnAlignment](./tablecolumnalignment/trailing.md)
   Trailing column alignment.
-- [static var numeric: TableColumnAlignment](tablecolumnalignment/numeric.md)
+- [static var numeric: TableColumnAlignment](./tablecolumnalignment/numeric.md)
   Column alignment appropriate for numeric content.
-- [static func numeric(Locale.NumberingSystem) -> TableColumnAlignment](tablecolumnalignment/numeric(_:).md)
+- [static func numeric(Locale.NumberingSystem) -> TableColumnAlignment](./tablecolumnalignment/numeric%28_%29.md)
   Column alignment appropriate for numeric content.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct TableColumn](tablecolumn.md)
+### Creating columns
+- [struct TableColumn](./tablecolumn.md)
   A column that displays a view for each row in a table.
-- [protocol TableColumnContent](tablecolumncontent.md)
+- [protocol TableColumnContent](./tablecolumncontent.md)
   A type used to represent columns within a table.
-- [struct TableColumnBuilder](tablecolumnbuilder.md)
+- [struct TableColumnBuilder](./tablecolumnbuilder.md)
   A result builder that creates table column content from closures.
-- [struct TableColumnForEach](tablecolumnforeach.md)
+- [struct TableColumnForEach](./tablecolumnforeach.md)
   A structure that computes columns on demand from an underlying collection of identified data.
 
 

@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data-value multidimensional array from another instance.
 
@@ -21,7 +22,7 @@ init?(from dataValue: MLDataValue)
 
 #### Discussion
 
-Use this initializer to create an [`MLDataValue.MultiArrayType`](mldatavalue/multiarraytype.md) from another multiarray instance. You can confirm the data value’s underlying type by retrieving a non-`nil` value from [`multiArrayValue`](mldatavalue/multiarrayvalue.md) or by inspecting the [`type`](mldatavalue/type.md) property.
+Use this initializer to create an [`MLDataValue.MultiArrayType`](../multiarraytype.md) from another multiarray instance. You can confirm the data value’s underlying type by retrieving a non-`nil` value from [`multiArrayValue`](../multiarrayvalue.md) or by inspecting the [`type`](../type.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingSystemAction.other
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The controller home button system action performs some other action.
 
@@ -16,6 +17,10 @@ The controller home button system action performs some other action.
 
 ```swift
 case other
+```
+
+```c
+GCControllerHomeButtonSettingSystemActionOther
 ```
 
 

@@ -1,17 +1,22 @@
 # webView(_:didCancelClientRedirectFor:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a client redirect is cancelled.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didCancelClientRedirectFor frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didCancelClientRedirectForFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

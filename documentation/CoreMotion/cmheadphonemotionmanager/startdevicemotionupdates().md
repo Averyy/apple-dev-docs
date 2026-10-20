@@ -1,7 +1,8 @@
 # startDeviceMotionUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts device-motion updates.
 
@@ -18,18 +19,23 @@ Starts device-motion updates.
 func startDeviceMotionUpdates()
 ```
 
+```objc
+- (void) startDeviceMotionUpdates;
+```
+
 #### Discussion
 
-To receive the latest device-motion data, examine the [`deviceMotion`](cmheadphonemotionmanager/devicemotion.md) property.
+To receive the latest device-motion data, examine the [`deviceMotion`](./devicemotion.md) property.
 
 ## See Also
 
-- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMHeadphoneMotionManager.DeviceMotionHandler)](cmheadphonemotionmanager/startdevicemotionupdates(to:withhandler:).md)
+### Starting and Stopping Updates
+- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMHeadphoneMotionManager.DeviceMotionHandler)](./startdevicemotionupdates%28to,withhandler%29.md)
   Starts device-motion updates with a handler.
-- [func startConnectionStatusUpdates()](cmheadphonemotionmanager/startconnectionstatusupdates.md)
-- [func stopDeviceMotionUpdates()](cmheadphonemotionmanager/stopdevicemotionupdates.md)
+- [func startConnectionStatusUpdates()](./startconnectionstatusupdates%28%29.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
   Stops device-motion updates.
-- [func stopConnectionStatusUpdates()](cmheadphonemotionmanager/stopconnectionstatusupdates.md)
+- [func stopConnectionStatusUpdates()](./stopconnectionstatusupdates%28%29.md)
 
 
 ---

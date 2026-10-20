@@ -1,17 +1,22 @@
 # WKAlertActionHandler
 
 **Framework**: WatchKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to perform in response to an action.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias WKAlertActionHandler = () -> Void
+```
+
+```c
+typedef void (^)(void) WKAlertActionHandler;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This block takes no parameters and returns no value. You use this type of block 
 
 ## See Also
 
-- [enum WKAlertActionStyle](wkalertactionstyle.md)
+### Constants
+- [enum WKAlertActionStyle](./wkalertactionstyle.md)
   Constants indicating the style of the action button.
 
 

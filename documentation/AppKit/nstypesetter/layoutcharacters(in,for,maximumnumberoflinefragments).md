@@ -1,7 +1,8 @@
 # layoutCharacters(in:for:maximumNumberOfLineFragments:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Lays out characters in the given character range for the specified layout manager.
 
@@ -12,6 +13,10 @@ Lays out characters in the given character range for the specified layout manage
 
 ```swift
 func layoutCharacters(in characterRange: NSRange, for layoutManager: NSLayoutManager, maximumNumberOfLineFragments maxNumLines: Int) -> NSRange
+```
+
+```objc
+- (NSRange) layoutCharactersInRange:(NSRange) characterRange forLayoutManager:(NSLayoutManager *) layoutManager maximumNumberOfLineFragments:(NSUInteger) maxNumLines;
 ```
 
 #### Return Value

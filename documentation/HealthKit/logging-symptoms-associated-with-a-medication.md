@@ -1,6 +1,8 @@
 # Logging symptoms associated with a medication
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Sample Code  
+**Download**: [LoggingSymptomsAssociatedWithAMedication.zip](https://docs-assets.developer.apple.com/published/dbe02a347c0c/LoggingSymptomsAssociatedWithAMedication.zip)
 
 Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
@@ -12,14 +14,14 @@ Fetch medications and dose events from the HealthKit store, and create symptom s
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 321: [`Meet the HealthKit Medications API`](https://developer.apple.comhttps://developer.apple.com/wwdc25/321/).
+> **Note**: This sample code project is associated with WWDC25 session 321: [Meet the HealthKit Medications API](https://developer.apple.com/wwdc25/321/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
+2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [Set the bundle ID](../Xcode/preparing-your-app-for-distribution.md) and [Assign the project to a team](../Xcode/preparing-your-app-for-distribution.md).
 
 To play with the sample app:
 
@@ -29,7 +31,7 @@ To play with the sample app:
 4. Build and run the sample app on the iPhone to see the medication list after providing authorization. Tap a medication to see the most-recent dose event and associated symptoms. When tapping a medication, an additional authorization sheet prompts for authorization to access symptoms data.
 5. To add more medications in the Health app and view them in the sample app, add their RxNorm codes to the `SideEffects` dictionary, along with their associated symptoms. For instance, for piroxicam, the RxNorm code is 105929, and the symptoms can be headache, loss of appetite, and nausea. To view the symptoms, modify `SideEffects` by adding the following code:
 
-```None
+```
 "105929": [SymptomModel(name: "Headache", categoryID: .headache),
 			SymptomModel(name: "Diarrhea", categoryID: .diarrhea),
 			SymptomModel(name: "Nausea", categoryID: .nausea)]
@@ -39,21 +41,22 @@ To play with the sample app:
 
 ## See Also
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+### Health data
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
   Create and share HealthKit samples.
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
   Use queries to request sample data from HealthKit.
-- [class HKHealthStore](hkhealthstore.md)
+- [class HKHealthStore](./hkhealthstore.md)
   The access point for all data managed by HealthKit.
-- [Creating a Mobility Health App](creating-a-mobility-health-app.md)
+- [Creating a Mobility Health App](./creating-a-mobility-health-app.md)
   Create a health app that allows a clinical care team to send and receive mobility data.
-- [Data types](data-types.md)
+- [Data types](./data-types.md)
   Specify the kind of data used in HealthKit.
-- [Samples](samples.md)
+- [Samples](./samples.md)
   Create and save health and fitness samples.
-- [Queries](queries.md)
+- [Queries](./queries.md)
   Query health and fitness data.
-- [Visualizing HealthKit State of Mind in visionOS](visualizing-healthkit-state-of-mind-in-visionos.md)
+- [Visualizing HealthKit State of Mind in visionOS](./visualizing-healthkit-state-of-mind-in-visionos.md)
   Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
 
 

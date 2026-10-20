@@ -1,7 +1,8 @@
 # CPRerouteReason.missedTurn
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents rerouting because of a missed turn.
 
@@ -16,11 +17,16 @@ A value that represents rerouting because of a missed turn.
 case missedTurn
 ```
 
+```c
+CPRerouteReasonMissedTurn
+```
+
 ## See Also
 
-- [CPRerouteReason.alternateRoute](cpreroutereason/alternateroute.md)
+### Properties
+- [CPRerouteReason.alternateRoute](./alternateroute.md)
   A value that represents rerouting because an alternate route became available.
-- [CPRerouteReason.offline](cpreroutereason/offline.md)
+- [CPRerouteReason.offline](./offline.md)
   A value that represents rerouting because the system was offline.
 
 

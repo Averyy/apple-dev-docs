@@ -1,7 +1,8 @@
 # allowEvaluation()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces a securely decoded expression to allow evaluation.
 
@@ -20,19 +21,24 @@ Forces a securely decoded expression to allow evaluation.
 func allowEvaluation()
 ```
 
+```objc
+- (void) allowEvaluation;
+```
+
 #### Discussion
 
-When securely decoding an `NSExpression` object encoded using [`NSSecureCoding`](nssecurecoding.md), evaluation is disabled because it is potentially unsafe to evaluate expressions you get out of an archive.
+When securely decoding an `NSExpression` object encoded using [`NSSecureCoding`](../nssecurecoding.md), evaluation is disabled because it is potentially unsafe to evaluate expressions you get out of an archive.
 
 Before you enable evaluation, you should validate key paths, selectors, etc to ensure no erroneous or malicious code will be executed. Once you’ve preflighted the expression, you can enable the expression for evaluation by calling `allowEvaluation`.
 
 ## See Also
 
-- [func expressionValue(with: Any?, context: NSMutableDictionary?) -> Any?](nsexpression/expressionvalue(with:context:).md)
+### Evaluating an Expression
+- [func expressionValue(with: Any?, context: NSMutableDictionary?) -> Any?](./expressionvalue%28with,context%29.md)
   Evaluates an expression using a specified object and context.
-- [var `false`: NSExpression](nsexpression/false.md)
+- [var `false`: NSExpression](./false.md)
   An expression to evalutate if a conditional expression’s predicate evaluates to false.
-- [var `true`: NSExpression](nsexpression/true.md)
+- [var `true`: NSExpression](./true.md)
   An expression to evalutate if a conditional expression’s predicate evaluates to true.
 
 

@@ -1,7 +1,8 @@
 # CMTimeConvertScale(_:timescale:method:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts the source time to a new timescale using the specified rounding method.
 
@@ -20,13 +21,17 @@ Converts the source time to a new timescale using the specified rounding method.
 func CMTimeConvertScale(_ time: CMTime, timescale newTimescale: Int32, method: CMTimeRoundingMethod) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeConvertScale(CMTime time, int32_t newTimescale, CMTimeRoundingMethod method);
+```
+
 #### Return Value
 
 A time structure that represents the time in a new timescale.
 
 #### Discussion
 
-If this operation needs to round the value, it sets the resulting time’s [`hasBeenRounded`](cmtimeflags/hasbeenrounded.md) flag. If the source time is nonnumeric (infinite, indefinite, or invalid), the result is also nonnumeric.
+If this operation needs to round the value, it sets the resulting time’s [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) flag. If the source time is nonnumeric (infinite, indefinite, or invalid), the result is also nonnumeric.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ If this operation needs to round the value, it sets the resulting time’s [`has
 
 ## See Also
 
-- [enum CMTimeRoundingMethod](cmtimeroundingmethod.md)
+### Changing the Timescale
+- [enum CMTimeRoundingMethod](./cmtimeroundingmethod.md)
   An enumeration of rounding methods to use when performing time calculations.
 
 

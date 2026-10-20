@@ -1,7 +1,8 @@
 # init(_:text:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a secure field with a prompt generated from a `Text`.
 
@@ -21,9 +22,23 @@ Creates a secure field with a prompt generated from a `Text`.
 nonisolated init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, text: Binding<String>)
+```
+
+```swift
+@export(implementation)
+nonisolated init<S>(_ title: S, text: Binding<String>) where S : StringProtocol
+```
+
 #### Discussion
 
-Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever someone submits this secure field — for example, by pressing the Return key.
+Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever someone submits this secure field — for example, by pressing the Return key.
 
 ## Parameters
 
@@ -32,11 +47,12 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## See Also
 
-- [init(_:text:prompt:)](securefield/init(_:text:prompt:).md)
+### Creating a secure text field
+- [init(_:text:prompt:)](./init%28_,text,prompt%29.md)
   Creates a secure field with a prompt generated from a `Text`.
-- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](securefield/init(text:prompt:label:).md)
+- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](./init%28text,prompt,label%29.md)
   Creates a secure field with a prompt generated from a `Text`.
-- [init(_:text:onCommit:)](securefield/init(_:text:oncommit:).md)
+- [init(_:text:onCommit:)](./init%28_,text,oncommit%29.md)
   Creates an instance.
 
 

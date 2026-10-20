@@ -1,7 +1,8 @@
 # effectiveRateChanged
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts by a timebase after the effective rate changes.
 
@@ -22,7 +23,8 @@ static let effectiveRateChanged: NSNotification.Name
 
 ## See Also
 
-- [static let timeJumped: NSNotification.Name](cmtimebase/timejumped.md)
+### Notifications
+- [static let timeJumped: NSNotification.Name](./timejumped.md)
   A notification that posts by a timebase after a discontinuous time jump.
 
 

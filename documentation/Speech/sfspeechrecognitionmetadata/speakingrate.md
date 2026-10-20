@@ -1,7 +1,8 @@
 # speakingRate
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of words spoken per minute.
 
@@ -18,13 +19,18 @@ The number of words spoken per minute.
 var speakingRate: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double speakingRate;
+```
+
 ## See Also
 
-- [var averagePauseDuration: TimeInterval](sfspeechrecognitionmetadata/averagepauseduration.md)
+### Getting audio timing information
+- [var averagePauseDuration: TimeInterval](./averagepauseduration.md)
   The average pause duration between words, measured in seconds.
-- [var speechDuration: TimeInterval](sfspeechrecognitionmetadata/speechduration.md)
+- [var speechDuration: TimeInterval](./speechduration.md)
   The duration in seconds of speech in the audio.
-- [var speechStartTimestamp: TimeInterval](sfspeechrecognitionmetadata/speechstarttimestamp.md)
+- [var speechStartTimestamp: TimeInterval](./speechstarttimestamp.md)
   The start timestamp of speech in the audio.
 
 

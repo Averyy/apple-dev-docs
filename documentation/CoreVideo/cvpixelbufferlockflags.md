@@ -1,9 +1,10 @@
 # CVPixelBufferLockFlags
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md).
+The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](./cvpixelbufferlockbaseaddress%28_,_%29.md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](./cvpixelbufferunlockbaseaddress%28_,_%29.md).
 
 **Availability**:
 - iOS 4.0+
@@ -20,37 +21,42 @@ The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbas
 struct CVPixelBufferLockFlags
 ```
 
+```c
+enum CVPixelBufferLockFlags : CVOptionFlags;
+```
+
 ## Topics
 
 ### Constants
-- [static var readOnly: CVPixelBufferLockFlags](cvpixelbufferlockflags/readonly.md)
+- [static var readOnly: CVPixelBufferLockFlags](./cvpixelbufferlockflags/readonly.md)
   A read-only buffer.
 ### Initializers
-- [init(rawValue: CVOptionFlags)](cvpixelbufferlockflags/init(rawvalue:).md)
+- [init(rawValue: CVOptionFlags)](./cvpixelbufferlockflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias CVPixelBuffer](cvpixelbuffer.md)
+### Data Types
+- [typealias CVPixelBuffer](./cvpixelbuffer.md)
   A reference to a Core Video pixel buffer object.
-- [struct CVPlanarComponentInfo](cvplanarcomponentinfo.md)
+- [struct CVPlanarComponentInfo](./cvplanarcomponentinfo.md)
   A structure for describing planar components.
-- [struct CVPlanarPixelBufferInfo](cvplanarpixelbufferinfo.md)
+- [struct CVPlanarPixelBufferInfo](./cvplanarpixelbufferinfo.md)
   A structure for describing planar buffers.
-- [struct CVPlanarPixelBufferInfo_YCbCrPlanar](cvplanarpixelbufferinfo_ycbcrplanar.md)
+- [struct CVPlanarPixelBufferInfo_YCbCrPlanar](./cvplanarpixelbufferinfo_ycbcrplanar.md)
   A structure for describing YCbCr planar buffers.
-- [struct CVPlanarPixelBufferInfo_YCbCrBiPlanar](cvplanarpixelbufferinfo_ycbcrbiplanar.md)
+- [struct CVPlanarPixelBufferInfo_YCbCrBiPlanar](./cvplanarpixelbufferinfo_ycbcrbiplanar.md)
   A structure for describing YCbCr biplanar buffers.
 
 

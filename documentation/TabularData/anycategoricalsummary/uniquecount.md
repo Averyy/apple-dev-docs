@@ -1,7 +1,8 @@
 # uniqueCount
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of unique elements.
 
@@ -22,11 +23,12 @@ var uniqueCount: Int
 
 ## See Also
 
-- [var noneCount: Int](anycategoricalsummary/nonecount.md)
+### Getting Statistical Information
+- [var noneCount: Int](./nonecount.md)
   The number of missing elements in the column.
-- [var someCount: Int](anycategoricalsummary/somecount.md)
+- [var someCount: Int](./somecount.md)
   The number of non-missing elements in the column.
-- [var totalCount: Int](anycategoricalsummary/totalcount.md)
+- [var totalCount: Int](./totalcount.md)
   The total number of elements in the column.
 
 

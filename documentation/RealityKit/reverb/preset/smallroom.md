@@ -1,7 +1,8 @@
 # smallRoom
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reverb of a small room with furniture and other common household items.
 

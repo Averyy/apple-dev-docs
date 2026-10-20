@@ -1,7 +1,8 @@
 # trees
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A material that simulates the acoustic properties of trees.
 
@@ -21,17 +22,18 @@ static let trees: Audio.Material
 
 ## See Also
 
-- [static let water: Audio.Material](audio/material/water.md)
+### Using natural surface materials
+- [static let water: Audio.Material](./water.md)
   A material that simulates the acoustic properties of water.
-- [static let ice: Audio.Material](audio/material/ice.md)
+- [static let ice: Audio.Material](./ice.md)
   A material that simulates the acoustic properties of ice.
-- [static let snow: Audio.Material](audio/material/snow.md)
+- [static let snow: Audio.Material](./snow.md)
   A material that simulates the acoustic properties of snow.
-- [static let sand: Audio.Material](audio/material/sand.md)
+- [static let sand: Audio.Material](./sand.md)
   A material that simulates the acoustic properties of sand.
-- [static let soil: Audio.Material](audio/material/soil.md)
+- [static let soil: Audio.Material](./soil.md)
   A material that simulates the acoustic properties of soil.
-- [static let gravel: Audio.Material](audio/material/gravel.md)
+- [static let gravel: Audio.Material](./gravel.md)
   A material that simulates the acoustic properties of gravel.
 
 

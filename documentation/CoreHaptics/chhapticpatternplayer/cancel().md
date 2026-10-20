@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stops the pattern player immediately and returns the specified error.
@@ -20,11 +21,16 @@ Stops the pattern player immediately and returns the specified error.
 func cancel() throws
 ```
 
+```objc
+- (BOOL) cancelAndReturnError:(NSError **) outError;
+```
+
 ## See Also
 
-- [func start(atTime: TimeInterval) throws](chhapticpatternplayer/start(attime:).md)
+### Starting and Stopping Playback
+- [func start(atTime: TimeInterval) throws](./start%28attime%29.md)
   Starts playing the pattern at the specified time.
-- [func stop(atTime: TimeInterval) throws](chhapticpatternplayer/stop(attime:).md)
+- [func stop(atTime: TimeInterval) throws](./stop%28attime%29.md)
   Stops playing the pattern at the specified time.
 
 

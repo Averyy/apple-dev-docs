@@ -1,7 +1,8 @@
 # MusicPlayer.RepeatMode.none
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The repeat mode is in a disabled state.
 

@@ -1,7 +1,8 @@
 # CKSyncEngineAccountChangeType
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes a change to the device’s iCloud account.
 
@@ -20,27 +21,31 @@ Describes a change to the device’s iCloud account.
 enum CKSyncEngineAccountChangeType
 ```
 
+```c
+enum CKSyncEngineAccountChangeType : NSInteger;
+```
+
 ## Topics
 
 ### Account change types
-- [CKSyncEngineAccountChangeType.signIn](cksyncengineaccountchangetype/signin.md)
+- [CKSyncEngineAccountChangeType.signIn](./cksyncengineaccountchangetype/signin.md)
   A change indicating a sign-in to an iCloud account.
-- [CKSyncEngineAccountChangeType.signOut](cksyncengineaccountchangetype/signout.md)
+- [CKSyncEngineAccountChangeType.signOut](./cksyncengineaccountchangetype/signout.md)
   A change indicating a sign-out of an iCloud account.
-- [CKSyncEngineAccountChangeType.switchAccounts](cksyncengineaccountchangetype/switchaccounts.md)
+- [CKSyncEngineAccountChangeType.switchAccounts](./cksyncengineaccountchangetype/switchaccounts.md)
   A change indicating a switch between two iCloud accounts.
 ### Initializers
-- [init?(rawValue: Int)](cksyncengineaccountchangetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cksyncengineaccountchangetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

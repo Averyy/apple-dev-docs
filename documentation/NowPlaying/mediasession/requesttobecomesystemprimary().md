@@ -1,7 +1,8 @@
 # requestToBecomeSystemPrimary()
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests to make this session the primary system media session.
 
@@ -19,7 +20,7 @@ func requestToBecomeSystemPrimary() async throws
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](../publishing-media-sessions.md)
 
 #### Discussion
 
@@ -35,7 +36,7 @@ For example, if your app has two playing sessions and the user has indicated the
 
 > **Note**: Your app must be in the foreground when calling this method, otherwise this request doesn’t take effect.
 
-> **Note**: [`MediaSessionError.invalidState`](mediasessionerror/invalidstate.md) if the session can’t become application primary. [`MediaSessionError.internalFailure`](mediasessionerror/internalfailure.md) if the system couldn’t promote the session.
+> **Throws**: [`MediaSessionError.invalidState`](../mediasessionerror/invalidstate.md) if the session can’t become application primary. [`MediaSessionError.internalFailure`](../mediasessionerror/internalfailure.md) if the system couldn’t promote the session.
 
 
 ---

@@ -1,7 +1,8 @@
 # Operation.QueuePriority
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants let you prioritize the order in which operations execute.
 
@@ -20,6 +21,10 @@ These constants let you prioritize the order in which operations execute.
 enum QueuePriority
 ```
 
+```c
+enum NSOperationQueuePriority : NSInteger;
+```
+
 #### Overview
 
 You can use these constants to specify the relative ordering of operations that are waiting to be started in an operation queue. You should always use these constants (and not the defined value) for determining priority.
@@ -27,32 +32,33 @@ You can use these constants to specify the relative ordering of operations that 
 ## Topics
 
 ### Constants
-- [Operation.QueuePriority.veryLow](operation/queuepriority-swift.enum/verylow.md)
+- [Operation.QueuePriority.veryLow](./queuepriority-swift.enum/verylow.md)
   Operations receive very low priority for execution.
-- [Operation.QueuePriority.low](operation/queuepriority-swift.enum/low.md)
+- [Operation.QueuePriority.low](./queuepriority-swift.enum/low.md)
   Operations receive low priority for execution.
-- [Operation.QueuePriority.normal](operation/queuepriority-swift.enum/normal.md)
+- [Operation.QueuePriority.normal](./queuepriority-swift.enum/normal.md)
   Operations receive the normal priority for execution.
-- [Operation.QueuePriority.high](operation/queuepriority-swift.enum/high.md)
+- [Operation.QueuePriority.high](./queuepriority-swift.enum/high.md)
   Operations receive high priority for execution.
-- [Operation.QueuePriority.veryHigh](operation/queuepriority-swift.enum/veryhigh.md)
+- [Operation.QueuePriority.veryHigh](./queuepriority-swift.enum/veryhigh.md)
   Operations receive very high priority for execution.
 ### Initializers
-- [init?(rawValue: Int)](operation/queuepriority-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./queuepriority-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum QualityOfService](qualityofservice.md)
+### Constants
+- [enum QualityOfService](../qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
 
 

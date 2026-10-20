@@ -1,12 +1,15 @@
 # gradientPoints
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of points used to determine gradient color changes.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,19 +17,24 @@ An array of points used to determine gradient color changes.
 var gradientPoints: [NSNumber]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSNumber *> * gradientPoints;
+```
+
 #### Discussion
 
-This property is only available when [`colorType`](tvcolor/colortype.md) is set to [`TVColorType.linearGradientTopToBottom`](tvcolortype/lineargradienttoptobottom.md) or [`TVColorType.linearGradientLeftToRight`](tvcolortype/lineargradientlefttoright.md). The points defined in the array determine when a color change occurs using the colors in the [`gradientColors`](tvcolor/gradientcolors.md) property.
+This property is only available when [`colorType`](./colortype.md) is set to [`TVColorType.linearGradientTopToBottom`](../tvcolortype/lineargradienttoptobottom.md) or [`TVColorType.linearGradientLeftToRight`](../tvcolortype/lineargradientlefttoright.md). The points defined in the array determine when a color change occurs using the colors in the [`gradientColors`](./gradientcolors.md) property.
 
 ## See Also
 
-- [var color: UIColor?](tvcolor/color.md)
-  A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object used to color an element.
-- [var colorType: TVColorType](tvcolor/colortype.md)
+### Getting Color Properties
+- [var color: UIColor?](./color.md)
+  A [`UIColor`](../../UIKit/uicolor.md) object used to color an element.
+- [var colorType: TVColorType](./colortype.md)
   The color type for an element.
-- [enum TVColorType](tvcolortype.md)
+- [enum TVColorType](../tvcolortype.md)
   Designates how color for an element is to be displayed.
-- [var gradientColors: [UIColor]?](tvcolor/gradientcolors.md)
+- [var gradientColors: [UIColor]?](./gradientcolors.md)
   An array of colors used to create a gradient for an element.
 
 

@@ -1,17 +1,22 @@
 # readFileContentsType(_:toFile:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads data representing a file’s contents from the receiver and writes it to the specified file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func readFileContentsType(_ type: NSPasteboard.PasteboardType?, toFile filename: String) -> String?
+```
+
+```objc
+- (NSString *) readFileContentsType:(NSPasteboardType) type toFile:(NSString *) filename;
 ```
 
 #### Return Value
@@ -22,11 +27,11 @@ The name of the file into which the data was actually written.
 
 Data of any file contents type should only be read using this method. If data matching the specified type is not found on the pasteboard, data of type `NSFileContentsPboardType` is requested.
 
-> **Note**:  In macOS 10.5 and earlier, the file contents pboard type allowed you to synthesize a pboard type for a file’s contents based on the file’s extension. In macOS 10.5 and later, using the UTI of a file to represent its contents now replaces this functionality.
+> **macOS 10.6 and later**:  In macOS 10.5 and earlier, the file contents pboard type allowed you to synthesize a pboard type for a file’s contents based on the file’s extension. In macOS 10.5 and later, using the UTI of a file to represent its contents now replaces this functionality.
 
 ##### Special Considerations
 
-You must send an [`availableType(from:)`](nspasteboard/availabletype(from:).md) or [`types`](nspasteboard/types.md) message before invoking [`readFileContentsType(_:toFile:)`](nspasteboard/readfilecontentstype(_:tofile:).md).
+You must send an [`availableType(from:)`](./availabletype%28from%29.md) or [`types`](./types.md) message before invoking [`readFileContentsType(_:toFile:)`](./readfilecontentstype%28_,tofile%29.md).
 
 ## Parameters
 
@@ -35,9 +40,11 @@ You must send an [`availableType(from:)`](nspasteboard/availabletype(from:).md) 
 
 ## See Also
 
-- [func writeFileContents(String) -> Bool](nspasteboard/writefilecontents(_:).md)
+### Related Documentation
+- [func writeFileContents(String) -> Bool](./writefilecontents%28_%29.md)
   Writes the contents of the specified file to the pasteboard.
-- [func readFileWrapper() -> FileWrapper?](nspasteboard/readfilewrapper.md)
+### Reading data (macOS 10.5 and earlier)
+- [func readFileWrapper() -> FileWrapper?](./readfilewrapper%28%29.md)
   Reads data representing a file’s contents from the receiver and returns it as a file wrapper.
 
 

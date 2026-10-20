@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.wasFlushedAutomatically(at:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The enqueued media data has been flushed for a reason other than a call to the `flush()` method.
 
@@ -30,7 +31,8 @@ The best practice is to invoke the `flush()` method, in a manner that is seriali
 
 ## See Also
 
-- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.outputConfigurationChanged](avsamplebufferaudiorenderer/receiver/suggestedflushreason/outputconfigurationchanged.md)
+### Flush reasons
+- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.outputConfigurationChanged](./outputconfigurationchanged.md)
   The audio output configuration has changed.
 
 

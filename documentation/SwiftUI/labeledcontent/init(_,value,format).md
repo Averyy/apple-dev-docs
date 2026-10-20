@@ -1,7 +1,8 @@
 # init(_:value:format:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a labeled informational view from a formatted value.
 
@@ -20,9 +21,21 @@ Creates a labeled informational view from a formatted value.
 init<F>(_ titleKey: LocalizedStringKey, value: F.FormatInput, format: F) where F : FormatStyle, F.FormatInput : Equatable, F.FormatOutput == String
 ```
 
+Available when `Label` is `Text` and `Content` is `Text`.
+
+**Other overloads**:
+
+```swift
+init<F>(_ titleResource: LocalizedStringResource, value: F.FormatInput, format: F) where F : FormatStyle, F.FormatInput : Equatable, F.FormatOutput == String
+```
+
+```swift
+init<S, F>(_ title: S, value: F.FormatInput, format: F) where S : StringProtocol, F : FormatStyle, F.FormatInput : Equatable, F.FormatOutput == String
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) label on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See `Text` for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) label on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](../text/init%28_,tablename,bundle,comment%29.md). See `Text` for more information about localizing strings.
 
 ```swift
 Form {
@@ -40,13 +53,14 @@ Form {
 
 ## See Also
 
-- [init(_:content:)](labeledcontent/init(_:content:).md)
+### Creating labeled content
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a labeled view that generates its label from a localized string key.
-- [init(content: () -> Content, label: () -> Label)](labeledcontent/init(content:label:).md)
+- [init(content: () -> Content, label: () -> Label)](./init%28content,label%29.md)
   Creates a standard labeled element, with a view that conveys the value of the element and a label.
-- [init(_:value:)](labeledcontent/init(_:value:).md)
+- [init(_:value:)](./init%28_,value%29.md)
   Creates a labeled informational view.
-- [init(LabeledContentStyleConfiguration)](labeledcontent/init(_:).md)
+- [init(LabeledContentStyleConfiguration)](./init%28_%29.md)
   Creates labeled content based on a labeled content style configuration.
 
 

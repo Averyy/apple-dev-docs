@@ -1,7 +1,8 @@
 # AVCameraCalibrationData
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about the camera characteristics used to capture images and depth data.
 
@@ -19,6 +20,10 @@ Information about the camera characteristics used to capture images and depth da
 class AVCameraCalibrationData
 ```
 
+```objc
+@interface AVCameraCalibrationData : NSObject
+```
+
 #### Overview
 
 Information about the calibration of a camera—such as its pixel focal length, principal point, and lens distortion characteristics—helps to determine the geometric relationships between the camera device and the images it captures. You can use this information to accurately render visual effects into images produced by a camera or perform computer vision tasks such as correcting images for geometric distortions.
@@ -26,51 +31,52 @@ Information about the calibration of a camera—such as its pixel focal length, 
 ## Topics
 
 ### Mapping pixels to scene geometry
-- [var intrinsicMatrix: matrix_float3x3](avcameracalibrationdata/intrinsicmatrix.md)
+- [var intrinsicMatrix: matrix_float3x3](./avcameracalibrationdata/intrinsicmatrix.md)
   A matrix that relates a camera’s internal properties to an ideal pinhole-camera model.
-- [var intrinsicMatrixReferenceDimensions: CGSize](avcameracalibrationdata/intrinsicmatrixreferencedimensions.md)
+- [var intrinsicMatrixReferenceDimensions: CGSize](./avcameracalibrationdata/intrinsicmatrixreferencedimensions.md)
   The image dimensions to which the camera’s intrinsic matrix values are relative.
-- [var extrinsicMatrix: matrix_float4x3](avcameracalibrationdata/extrinsicmatrix.md)
+- [var extrinsicMatrix: matrix_float4x3](./avcameracalibrationdata/extrinsicmatrix.md)
   A matrix relating a camera’s position and orientation to a world or scene coordinate system.
-- [var pixelSize: Float](avcameracalibrationdata/pixelsize.md)
+- [var pixelSize: Float](./avcameracalibrationdata/pixelsize.md)
   The size, in millimeters, of one image pixel.
 ### Correcting for lens distortion
-- [var lensDistortionLookupTable: Data?](avcameracalibrationdata/lensdistortionlookuptable.md)
+- [var lensDistortionLookupTable: Data?](./avcameracalibrationdata/lensdistortionlookuptable.md)
   A map of floating-point values describing radial distortions imparted by the camera lens, for use in rectifying camera images.
-- [var inverseLensDistortionLookupTable: Data?](avcameracalibrationdata/inverselensdistortionlookuptable.md)
+- [var inverseLensDistortionLookupTable: Data?](./avcameracalibrationdata/inverselensdistortionlookuptable.md)
   A map of floating-point values describing radial distortions for use in reapplying camera geometry to a rectified image.
-- [var lensDistortionCenter: CGPoint](avcameracalibrationdata/lensdistortioncenter.md)
+- [var lensDistortionCenter: CGPoint](./avcameracalibrationdata/lensdistortioncenter.md)
   The offset of the distortion center of the camera lens from the top-left corner of the image.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+### Depth data capture
+- [Capturing photos with depth](./capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](./creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
-- [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
+- [Capturing depth using the LiDAR camera](./capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](./avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](./streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](./enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
-- [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
+- [class AVCaptureDepthDataOutput](./avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.
-- [class AVDepthData](avdepthdata.md)
+- [class AVDepthData](./avdepthdata.md)
   A container for per-pixel distance or disparity information captured by compatible camera devices.
 
 

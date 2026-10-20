@@ -1,7 +1,8 @@
 # NSProcessPerformanceProfile
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value describing the device’s performance profile.
 
@@ -19,24 +20,29 @@ A value describing the device’s performance profile.
 struct NSProcessPerformanceProfile
 ```
 
+```c
+typedef NSInteger NSProcessPerformanceProfile;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: Int)](nsprocessperformanceprofile/init(rawvalue:).md)
+- [init(rawValue: Int)](./nsprocessperformanceprofile/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NSDeviceCertification](nsdevicecertification.md)
+### Data types
+- [struct NSDeviceCertification](./nsdevicecertification.md)
 
 
 ---

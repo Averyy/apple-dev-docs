@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The smallest scale factor the temporal scaler can use to generate output textures.
@@ -18,6 +19,10 @@ The smallest scale factor the temporal scaler can use to generate output texture
 
 ```swift
 var inputContentMinScale: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float inputContentMinScale;
 ```
 
 

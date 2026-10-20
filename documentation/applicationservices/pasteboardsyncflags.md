@@ -1,7 +1,8 @@
 # PasteboardSyncFlags
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
@@ -12,19 +13,25 @@
 struct PasteboardSyncFlags
 ```
 
+```c
+typedef enum PasteboardSyncFlags : OptionBits {
+    ...
+} PasteboardSyncFlags;
+```
+
 ## Topics
 
 ### Type Properties
-- [static var clientIsOwner: PasteboardSyncFlags](pasteboardsyncflags/1460509-clientisowner.md)
-- [static var modified: PasteboardSyncFlags](pasteboardsyncflags/1458804-modified.md)
+- [static var clientIsOwner: PasteboardSyncFlags](./pasteboardsyncflags/api-1460509-clientisowner.md)
+- [static var modified: PasteboardSyncFlags](./pasteboardsyncflags/api-1458804-modified.md)
 ### Initializers
-- [init(rawValue: OptionBits)](pasteboardsyncflags/1644060-init.md)
+- [init(rawValue: OptionBits)](./pasteboardsyncflags/api-1644060-init.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [OptionSet](../Swift/optionset.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

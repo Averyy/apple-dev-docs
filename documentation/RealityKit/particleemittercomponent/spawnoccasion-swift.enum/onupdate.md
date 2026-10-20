@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SpawnOccasion.onUpdate
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The spawned effect starts on every tick of the engine.
 

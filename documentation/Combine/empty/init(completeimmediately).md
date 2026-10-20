@@ -1,7 +1,8 @@
 # init(completeImmediately:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty publisher.
 
@@ -26,7 +27,8 @@ init(completeImmediately: Bool = true)
 
 ## See Also
 
-- [init(completeImmediately: Bool, outputType: Output.Type, failureType: Failure.Type)](empty/init(completeimmediately:outputtype:failuretype:).md)
+### Creating an empty publisher
+- [init(completeImmediately: Bool, outputType: Output.Type, failureType: Failure.Type)](./init%28completeimmediately,outputtype,failuretype%29.md)
   Creates an empty publisher with the given completion behavior and output and failure types.
 
 

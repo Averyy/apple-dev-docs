@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a normal object from a custom material’s normal property.
 
@@ -24,7 +25,8 @@ init(_ value: CustomMaterial.Normal)
 
 ## See Also
 
-- [init(texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/normal-swift.struct/init(texture:).md)
+### Creating a normal object
+- [init(texture: PhysicallyBasedMaterial.Texture?)](./init%28texture%29.md)
   Creates an object from a specified texture.
 
 

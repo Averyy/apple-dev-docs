@@ -1,7 +1,8 @@
 # BNNS.DescriptorType
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the input and output types of an arithmetic operation.
 
@@ -11,8 +12,10 @@ Constants that describe the input and output types of an arithmetic operation.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,18 +26,18 @@ enum DescriptorType
 ## Topics
 
 ### Descriptor Types
-- [BNNS.DescriptorType.constant](bnns/descriptortype/constant.md)
+- [BNNS.DescriptorType.constant](./descriptortype/constant.md)
   A constant that doesn’t have a gradient.
-- [BNNS.DescriptorType.parameter](bnns/descriptortype/parameter.md)
+- [BNNS.DescriptorType.parameter](./descriptortype/parameter.md)
   A parameter that’s trainable, such as weights or bias.
-- [BNNS.DescriptorType.sample](bnns/descriptortype/sample.md)
+- [BNNS.DescriptorType.sample](./descriptortype/sample.md)
   A sample such as input or output.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

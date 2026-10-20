@@ -1,7 +1,8 @@
 # AnyRegexOutput
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type-erased, dynamic output of a regular expression match.
 
@@ -27,43 +28,44 @@ When you find a match using regular expression that has `AnyRegexOutput` as its 
 ## Topics
 
 ### Initializers
-- [init<Output>(Regex<Output>.Match)](anyregexoutput/init(_:).md)
+- [init<Output>(Regex<Output>.Match)](./anyregexoutput/init%28_%29.md)
   Creates a dynamic regular expression match output from an existing match.
 ### Instance Methods
-- [func extractValues<Output>(as: Output.Type) -> Output?](anyregexoutput/extractvalues(as:).md)
+- [func extractValues<Output>(as: Output.Type) -> Output?](./anyregexoutput/extractvalues%28as%29.md)
   Returns strongly-typed match output by converting this type-erased output to the specified type, if possible.
 ### Subscripts
-- [subscript(String) -> AnyRegexOutput.Element?](anyregexoutput/subscript(_:)-6qdcr.md)
+- [subscript(String) -> AnyRegexOutput.Element?](./anyregexoutput/subscript%28_%29-6qdcr.md)
   Accesses the capture with the specified name, if a capture with that name exists.
 ### Default Implementations
-- [BidirectionalCollection Implementations](anyregexoutput/bidirectionalcollection-implementations.md)
-- [Collection Implementations](anyregexoutput/collection-implementations.md)
-- [RandomAccessCollection Implementations](anyregexoutput/randomaccesscollection-implementations.md)
-- [Sequence Implementations](anyregexoutput/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./anyregexoutput/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./anyregexoutput/collection-implementations.md)
+- [RandomAccessCollection Implementations](./anyregexoutput/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./anyregexoutput/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct Regex](regex.md)
+### Regular Expressions
+- [struct Regex](./regex.md)
   A regular expression.
-- [struct RegexRepetitionBehavior](regexrepetitionbehavior.md)
+- [struct RegexRepetitionBehavior](./regexrepetitionbehavior.md)
   Specifies how much to attempt to match when using a quantifier.
-- [struct RegexSemanticLevel](regexsemanticlevel.md)
+- [struct RegexSemanticLevel](./regexsemanticlevel.md)
   A semantic level to use during regex matching.
-- [struct RegexWordBoundaryKind](regexwordboundarykind.md)
+- [struct RegexWordBoundaryKind](./regexwordboundarykind.md)
   A word boundary algorithm to use during regex matching.
-- [protocol RegexComponent](regexcomponent.md)
+- [protocol RegexComponent](./regexcomponent.md)
   A type that represents a regular expression.
-- [protocol CustomConsumingRegexComponent](customconsumingregexcomponent.md)
+- [protocol CustomConsumingRegexComponent](./customconsumingregexcomponent.md)
 
 
 ---

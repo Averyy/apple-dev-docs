@@ -1,14 +1,15 @@
 # kHubPortOverCurrent
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHubPortOverCurrent = 0x0008
 ```
 

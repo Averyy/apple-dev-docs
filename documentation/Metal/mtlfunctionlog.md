@@ -1,7 +1,8 @@
 # MTLFunctionLog
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A log entry a Metal device generates when the it runs a command buffer.
 
@@ -19,31 +20,36 @@ A log entry a Metal device generates when the it runs a command buffer.
 protocol MTLFunctionLog : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLFunctionLog <NSObject>
+```
+
 ## Topics
 
 ### Getting the log messsage
-- [var type: MTLFunctionLogType](mtlfunctionlog/type.md)
+- [var type: MTLFunctionLogType](./mtlfunctionlog/type.md)
   The type of message that was logged.
-- [enum MTLFunctionLogType](mtlfunctionlogtype.md)
+- [enum MTLFunctionLogType](./mtlfunctionlogtype.md)
   Options for different kinds of function logs.
 ### Getting execution details
-- [var debugLocation: (any MTLFunctionLogDebugLocation)?](mtlfunctionlog/debuglocation.md)
+- [var debugLocation: (any MTLFunctionLogDebugLocation)?](./mtlfunctionlog/debuglocation.md)
   If known, the location of the logging command within a shader source file.
-- [var encoderLabel: String?](mtlfunctionlog/encoderlabel.md)
+- [var encoderLabel: String?](./mtlfunctionlog/encoderlabel.md)
   The label for the encoder that logged the message.
-- [var function: (any MTLFunction)?](mtlfunctionlog/function.md)
+- [var function: (any MTLFunction)?](./mtlfunctionlog/function.md)
   When known, the function object corresponding to the logged message.
-- [protocol MTLFunctionLogDebugLocation](mtlfunctionlogdebuglocation.md)
+- [protocol MTLFunctionLogDebugLocation](./mtlfunctionlogdebuglocation.md)
   The source code that logged a debug message.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct MTLLogContainer](mtllogcontainer-swift.struct.md)
+### Shader logs
+- [struct MTLLogContainer](./mtllogcontainer-swift.struct.md)
   A collection of logged messages, created when a Metal device runs a command buffer.
 
 

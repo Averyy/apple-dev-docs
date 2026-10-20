@@ -1,11 +1,12 @@
 # BinaryInteger Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init<S>(S.ParseInput, strategy: S) throws](binaryinteger/init(_:strategy:)-1jz6v.md)
+- [init<S>(S.ParseInput, strategy: S) throws](./init%28_,strategy%29-1jz6v.md)
   Initialize an instance by parsing `value` with the given `strategy`.
 
 

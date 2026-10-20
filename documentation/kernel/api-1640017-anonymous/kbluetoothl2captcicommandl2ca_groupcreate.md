@@ -1,14 +1,15 @@
 # kBluetoothL2CAPTCICommandL2CA_GroupCreate
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPTCICommandL2CA_GroupCreate = 0x0006
 ```
 

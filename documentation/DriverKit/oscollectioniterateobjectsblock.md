@@ -1,24 +1,26 @@
 # OSCollectionIterateObjectsBlock
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef _Bool (^)(class OSObject *) OSCollectionIterateObjectsBlock;
 ```
 
 ## See Also
 
-- [iterateObjects](oscollection/iterateobjects.md)
-- [flushCollection](oscollection/flushcollection.md)
+### Accessing Collection Elements
+- [iterateObjects](./oscollection/iterateobjects.md)
+- [flushCollection](./oscollection/flushcollection.md)
 
 
 ---

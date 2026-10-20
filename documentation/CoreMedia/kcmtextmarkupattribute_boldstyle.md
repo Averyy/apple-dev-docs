@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_BoldStyle
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A bold font style.
 
@@ -20,17 +21,22 @@ A bold font style.
 let kCMTextMarkupAttribute_BoldStyle: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_BoldStyle;
+```
+
 #### Discussion
 
 This attribute’s value must be a `CFBoolean`. The default is `kCFBooleanFalse`. If this attribute is `kCFBooleanTrue`, the system renders the text with a bold style in addition to other styles you use.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_ItalicStyle: CFString](kcmtextmarkupattribute_italicstyle.md)
+### Styles
+- [let kCMTextMarkupAttribute_ItalicStyle: CFString](./kcmtextmarkupattribute_italicstyle.md)
   An italic font style.
-- [let kCMTextMarkupAttribute_UnderlineStyle: CFString](kcmtextmarkupattribute_underlinestyle.md)
+- [let kCMTextMarkupAttribute_UnderlineStyle: CFString](./kcmtextmarkupattribute_underlinestyle.md)
   An underline font style.
-- [let kCMTextMarkupAttribute_CharacterEdgeStyle: CFString](kcmtextmarkupattribute_characteredgestyle.md)
+- [let kCMTextMarkupAttribute_CharacterEdgeStyle: CFString](./kcmtextmarkupattribute_characteredgestyle.md)
   A style for character edges.
 
 

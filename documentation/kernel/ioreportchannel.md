@@ -1,7 +1,8 @@
 # IOReportChannel
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,32 +10,43 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+typedef struct IOReportChannel {
+    ...
+} IOReportChannel;
+```
+
+*macOS*
+
+```c
 typedef struct IOReportChannel IOReportChannel;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [channel_id](ioreportchannel/1402786-channel_id.md)
-- [channel_type](ioreportchannel/1402774-channel_type.md)
+- [channel_id](./ioreportchannel/api-1402786-channel_id.md)
+- [channel_type](./ioreportchannel/api-1402774-channel_type.md)
 
 ## See Also
 
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOHistReportInfo](iohistreportinfo.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportInfo](iostatereportinfo.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Reports
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOHistReportInfo](./iohistreportinfo.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportInfo](./iostatereportinfo.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

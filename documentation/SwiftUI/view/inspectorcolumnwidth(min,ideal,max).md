@@ -1,7 +1,8 @@
 # inspectorColumnWidth(min:ideal:max:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a flexible, preferred width for the inspector in a trailing-column presentation.
 
@@ -20,7 +21,7 @@ func inspectorColumnWidth(min: CGFloat? = nil, ideal: CGFloat, max: CGFloat? = n
 
 #### Discussion
 
-Apply this modifier on the content of a [`inspector(isPresented:content:)`](view/inspector(ispresented:content:).md) to specify a preferred flexible width for the column. Use [`inspectorColumnWidth(_:)`](view/inspectorcolumnwidth(_:).md) if you need to specify a fixed width.
+Apply this modifier on the content of a [`inspector(isPresented:content:)`](./inspector%28ispresented,content%29.md) to specify a preferred flexible width for the column. Use [`inspectorColumnWidth(_:)`](./inspectorcolumnwidth%28_%29.md) if you need to specify a fixed width.
 
 The following example shows an editor interface with an inspector, which when presented as a trailing-column, has a preferred width of 225 points, maximum of 400, and a minimum of 150 at which point it will collapse, if allowed.
 
@@ -42,9 +43,10 @@ Only some platforms enable flexible inspector columns. If you specify a width th
 
 ## See Also
 
-- [func inspector<V>(isPresented: Binding<Bool>, content: () -> V) -> some View](view/inspector(ispresented:content:).md)
+### Presenting an inspector
+- [func inspector<V>(isPresented: Binding<Bool>, content: () -> V) -> some View](./inspector%28ispresented,content%29.md)
   Inserts an inspector at the applied position in the view hierarchy.
-- [func inspectorColumnWidth(CGFloat) -> some View](view/inspectorcolumnwidth(_:).md)
+- [func inspectorColumnWidth(CGFloat) -> some View](./inspectorcolumnwidth%28_%29.md)
   Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.
 
 

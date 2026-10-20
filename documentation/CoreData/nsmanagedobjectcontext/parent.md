@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent of the context.
 
@@ -10,7 +11,7 @@ The parent of the context.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The parent of the context.
 var parent: NSManagedObjectContext? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSManagedObjectContext * parentContext;
+```
+
 #### Discussion
 
-`nil` indicates there is no parent context. For more details, see [`Parent store`](nsmanagedobjectcontext#Parent-store.md).
+`nil` indicates there is no parent context. For more details, see [Parent store](../nsmanagedobjectcontext.md#Parent-store).
 
 ## See Also
 
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](nsmanagedobjectcontext/persistentstorecoordinator.md)
+### Configuring a context
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](./persistentstorecoordinator.md)
   The persistent store coordinator of the context.
-- [var name: String?](nsmanagedobjectcontext/name.md)
+- [var name: String?](./name.md)
   The developer-provided name of the context.
-- [var userInfo: NSMutableDictionary](nsmanagedobjectcontext/userinfo.md)
+- [var userInfo: NSMutableDictionary](./userinfo.md)
   The user information for the context.
 
 

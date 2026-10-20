@@ -1,14 +1,15 @@
 # vnode_verify_flags_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum vnode_verify_flags_t : uint32_t {
     ...
 } vnode_verify_flags_t;
@@ -17,10 +18,10 @@ typedef enum vnode_verify_flags_t : uint32_t {
 ## Topics
 
 ### Constants
-- [VNODE_VERIFY_CONTEXT_ALLOC](vnode_verify_flags_t/vnode_verify_context_alloc.md)
-- [VNODE_VERIFY_CONTEXT_FREE](vnode_verify_flags_t/vnode_verify_context_free.md)
-- [VNODE_VERIFY_DEFAULT](vnode_verify_flags_t/vnode_verify_default.md)
-- [VNODE_VERIFY_WITH_CONTEXT](vnode_verify_flags_t/vnode_verify_with_context.md)
+- [VNODE_VERIFY_CONTEXT_ALLOC](./vnode_verify_flags_t/vnode_verify_context_alloc.md)
+- [VNODE_VERIFY_CONTEXT_FREE](./vnode_verify_flags_t/vnode_verify_context_free.md)
+- [VNODE_VERIFY_DEFAULT](./vnode_verify_flags_t/vnode_verify_default.md)
+- [VNODE_VERIFY_WITH_CONTEXT](./vnode_verify_flags_t/vnode_verify_with_context.md)
 
 
 ---

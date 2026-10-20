@@ -1,17 +1,24 @@
 # init(address:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the `NSHost` with the Internet address `address`.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use Network framework instead, see deprecation notice in <Foundation/NSHost.h>
 
 ## Declaration
 
 ```swift
 convenience init(address: String)
+```
+
+```objc
++ (instancetype) hostWithAddress:(NSString *) address;
 ```
 
 #### Return Value
@@ -24,9 +31,10 @@ The host for `address`.
 
 ## See Also
 
-- [class func current() -> Self](host/current.md)
+### Creating Hosts
+- [class func current() -> Self](./current%28%29.md)
   Returns an `NSHost` object representing the host the process is running on.
-- [convenience init(name: String?)](host/init(name:).md)
+- [convenience init(name: String?)](./init%28name%29.md)
   Returns a host with a specific name.
 
 

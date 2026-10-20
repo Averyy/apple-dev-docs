@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceLocalization.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe an Advanced App Clip Experience Localizations resource.
 
@@ -10,7 +11,7 @@ The attributes that describe an Advanced App Clip Experience Localizations resou
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceLocalization.Attributes
 ```
 

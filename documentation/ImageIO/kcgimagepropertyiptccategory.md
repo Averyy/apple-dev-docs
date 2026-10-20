@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCCategory
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The category.
 
@@ -20,27 +21,32 @@ The category.
 let kCGImagePropertyIPTCCategory: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCCategory;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCUrgency: CFString](kcgimagepropertyiptcurgency.md)
+### Image Categorization
+- [let kCGImagePropertyIPTCUrgency: CFString](./kcgimagepropertyiptcurgency.md)
   The urgency level.
-- [let kCGImagePropertyIPTCSubjectReference: CFString](kcgimagepropertyiptcsubjectreference.md)
+- [let kCGImagePropertyIPTCSubjectReference: CFString](./kcgimagepropertyiptcsubjectreference.md)
   The subject.
-- [let kCGImagePropertyIPTCSupplementalCategory: CFString](kcgimagepropertyiptcsupplementalcategory.md)
+- [let kCGImagePropertyIPTCSupplementalCategory: CFString](./kcgimagepropertyiptcsupplementalcategory.md)
   A supplemental category.
-- [let kCGImagePropertyIPTCFixtureIdentifier: CFString](kcgimagepropertyiptcfixtureidentifier.md)
+- [let kCGImagePropertyIPTCFixtureIdentifier: CFString](./kcgimagepropertyiptcfixtureidentifier.md)
   A fixture identifier.
-- [let kCGImagePropertyIPTCKeywords: CFString](kcgimagepropertyiptckeywords.md)
+- [let kCGImagePropertyIPTCKeywords: CFString](./kcgimagepropertyiptckeywords.md)
   Keywords relevant to the image.
-- [let kCGImagePropertyIPTCContentLocationCode: CFString](kcgimagepropertyiptccontentlocationcode.md)
+- [let kCGImagePropertyIPTCContentLocationCode: CFString](./kcgimagepropertyiptccontentlocationcode.md)
   The content location code.
-- [let kCGImagePropertyIPTCContentLocationName: CFString](kcgimagepropertyiptccontentlocationname.md)
+- [let kCGImagePropertyIPTCContentLocationName: CFString](./kcgimagepropertyiptccontentlocationname.md)
   The content location name.
-- [let kCGImagePropertyIPTCEditStatus: CFString](kcgimagepropertyiptceditstatus.md)
+- [let kCGImagePropertyIPTCEditStatus: CFString](./kcgimagepropertyiptceditstatus.md)
   The edit status.
-- [let kCGImagePropertyIPTCEditorialUpdate: CFString](kcgimagepropertyiptceditorialupdate.md)
+- [let kCGImagePropertyIPTCEditorialUpdate: CFString](./kcgimagepropertyiptceditorialupdate.md)
   An editorial update.
-- [let kCGImagePropertyIPTCObjectCycle: CFString](kcgimagepropertyiptcobjectcycle.md)
+- [let kCGImagePropertyIPTCObjectCycle: CFString](./kcgimagepropertyiptcobjectcycle.md)
   The editorial cycle (morning, evening, or both) of the image.
 
 

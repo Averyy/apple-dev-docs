@@ -1,7 +1,8 @@
 # CXXLanguageStandard.gnucxx14
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The identifier for the ISO C++ 2014 language standard with amendments and GNU extensions.
 
@@ -13,35 +14,36 @@ case gnucxx14
 
 ## See Also
 
-- [CXXLanguageStandard.cxx03](cxxlanguagestandard/cxx03.md)
+### Enumeration Cases
+- [CXXLanguageStandard.cxx03](./cxx03.md)
   The identifier for the ISO C++ 1998 language standard with amendments.
-- [CXXLanguageStandard.cxx11](cxxlanguagestandard/cxx11.md)
+- [CXXLanguageStandard.cxx11](./cxx11.md)
   The identifier for the ISO C++ 2011 language standard with amendments.
-- [CXXLanguageStandard.cxx14](cxxlanguagestandard/cxx14.md)
+- [CXXLanguageStandard.cxx14](./cxx14.md)
   The identifier for the ISO C++ 2014 language standard with amendments.
-- [CXXLanguageStandard.cxx1z](cxxlanguagestandard/cxx1z.md)
+- [CXXLanguageStandard.cxx1z](./cxx1z.md)
   The identifier for the ISO C++ 2017 language standard with amendments.
-- [CXXLanguageStandard.cxx98](cxxlanguagestandard/cxx98.md)
+- [CXXLanguageStandard.cxx98](./cxx98.md)
   The identifier for the ISO C++ 1998 language standard with amendments.
-- [CXXLanguageStandard.gnucxx03](cxxlanguagestandard/gnucxx03.md)
+- [CXXLanguageStandard.gnucxx03](./gnucxx03.md)
   The identifier for the ISO C++ 1998 language standard with amendments and GNU extensions.
-- [CXXLanguageStandard.gnucxx11](cxxlanguagestandard/gnucxx11.md)
+- [CXXLanguageStandard.gnucxx11](./gnucxx11.md)
   The identifier for the ISO C++ 2011 language standard with amendments and GNU extensions.
-- [CXXLanguageStandard.gnucxx1z](cxxlanguagestandard/gnucxx1z.md)
+- [CXXLanguageStandard.gnucxx1z](./gnucxx1z.md)
   The identifier for the ISO C++ 2017 language standard with amendments and GNU extensions.
-- [CXXLanguageStandard.gnucxx98](cxxlanguagestandard/gnucxx98.md)
+- [CXXLanguageStandard.gnucxx98](./gnucxx98.md)
   The identifier for the ISO C++ 1998 language standard with amendments and GNU extensions.
-- [CXXLanguageStandard.cxx17](cxxlanguagestandard/cxx17.md)
+- [CXXLanguageStandard.cxx17](./cxx17.md)
   The identifier for the ISO C++ 2017 language standard with amendments.
-- [CXXLanguageStandard.cxx20](cxxlanguagestandard/cxx20.md)
+- [CXXLanguageStandard.cxx20](./cxx20.md)
   The identifier for the ISO C++ 2020 language standard.
-- [CXXLanguageStandard.cxx2b](cxxlanguagestandard/cxx2b.md)
+- [CXXLanguageStandard.cxx2b](./cxx2b.md)
   The identifier for the ISO C++ 2023 draft language standard.
-- [CXXLanguageStandard.gnucxx17](cxxlanguagestandard/gnucxx17.md)
+- [CXXLanguageStandard.gnucxx17](./gnucxx17.md)
   The identifier for the ISO C++ 2017 language standard with amendments and GNU extensions.
-- [CXXLanguageStandard.gnucxx20](cxxlanguagestandard/gnucxx20.md)
+- [CXXLanguageStandard.gnucxx20](./gnucxx20.md)
   The identifier for the ISO C++ 2020 language standard with GNU extensions.
-- [CXXLanguageStandard.gnucxx2b](cxxlanguagestandard/gnucxx2b.md)
+- [CXXLanguageStandard.gnucxx2b](./gnucxx2b.md)
   The identifier for the ISO C++ 2023 draft language standard with GNU extensions.
 
 

@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.notReady
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session has not yet received the `.ready` event from the customer. The merchant must wait for the `.ready` event before sending requests.
 

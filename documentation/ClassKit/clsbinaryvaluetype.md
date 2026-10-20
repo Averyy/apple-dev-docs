@@ -1,7 +1,8 @@
 # CLSBinaryValueType
 
 **Framework**: ClassKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kinds of outcomes that a binary activity item can represent.
 
@@ -18,33 +19,38 @@ The kinds of outcomes that a binary activity item can represent.
 enum CLSBinaryValueType
 ```
 
+```c
+enum CLSBinaryValueType : NSInteger;
+```
+
 ## Topics
 
 ### Value Types
-- [CLSBinaryValueType.passFail](clsbinaryvaluetype/passfail.md)
+- [CLSBinaryValueType.passFail](./clsbinaryvaluetype/passfail.md)
   Pass or fail.
-- [CLSBinaryValueType.trueFalse](clsbinaryvaluetype/truefalse.md)
+- [CLSBinaryValueType.trueFalse](./clsbinaryvaluetype/truefalse.md)
   True or false.
-- [CLSBinaryValueType.yesNo](clsbinaryvaluetype/yesno.md)
+- [CLSBinaryValueType.yesNo](./clsbinaryvaluetype/yesno.md)
   Yes or no.
-- [CLSBinaryValueType.correctIncorrect](clsbinaryvaluetype/correctincorrect.md)
+- [CLSBinaryValueType.correctIncorrect](./clsbinaryvaluetype/correctincorrect.md)
   Correct or incorrect.
 ### Initializers
-- [init?(rawValue: Int)](clsbinaryvaluetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./clsbinaryvaluetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(identifier: String, title: String, type: CLSBinaryValueType)](clsbinaryitem/init(identifier:title:type:).md)
+### Creating Binary Activity Items
+- [init(identifier: String, title: String, type: CLSBinaryValueType)](./clsbinaryitem/init%28identifier,title,type%29.md)
   Initializes a new binary activity item of the given type.
 
 

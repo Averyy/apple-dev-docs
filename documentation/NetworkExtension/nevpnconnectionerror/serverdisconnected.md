@@ -1,7 +1,8 @@
 # NEVPNConnectionError.serverDisconnected
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the VPN connection failed because the VPN server terminated the connection.
 
@@ -19,13 +20,18 @@ An error code that indicates the VPN connection failed because the VPN server te
 case serverDisconnected
 ```
 
+```c
+NEVPNConnectionErrorServerDisconnected
+```
+
 ## See Also
 
-- [NEVPNConnectionError.serverAddressResolutionFailed](nevpnconnectionerror/serveraddressresolutionfailed.md)
+### VPN server error codes
+- [NEVPNConnectionError.serverAddressResolutionFailed](./serveraddressresolutionfailed.md)
   An error code that indicates the VPN connection failed because the system couldn’t determine the VPN server address.
-- [NEVPNConnectionError.serverNotResponding](nevpnconnectionerror/servernotresponding.md)
+- [NEVPNConnectionError.serverNotResponding](./servernotresponding.md)
   An error code that indicates the VPN connection failed because the VPN server isn’t responding.
-- [NEVPNConnectionError.serverDead](nevpnconnectionerror/serverdead.md)
+- [NEVPNConnectionError.serverDead](./serverdead.md)
   An error code that indicates the VPN connection failed because the VPN server has stopped responding.
 
 

@@ -1,7 +1,8 @@
 # RealityViewContentProtocol
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol representing the content of a reality view.
 
@@ -21,50 +22,51 @@ protocol RealityViewContentProtocol
 
 #### Overview
 
-Do not interface with this protocol directly. Instead, use [`RealityViewContent`](realityviewcontent.md) with your [`RealityView`](realityview.md).
+Do not interface with this protocol directly. Instead, use [`RealityViewContent`](./realityviewcontent.md) with your [`RealityView`](./realityview.md).
 
 ## Topics
 
 ### Managing view content
-- [func add(Entity)](realityviewcontentprotocol/add(_:).md)
+- [func add(Entity)](./realityviewcontentprotocol/add%28_%29.md)
   Adds an entity to this content.
-- [func remove(Entity)](realityviewcontentprotocol/remove(_:).md)
+- [func remove(Entity)](./realityviewcontentprotocol/remove%28_%29.md)
   Removes an entity from this content, if present.
-- [associatedtype Entities : EntityCollection](realityviewcontentprotocol/entities-swift.associatedtype.md)
+- [associatedtype Entities : EntityCollection](./realityviewcontentprotocol/entities-swift.associatedtype.md)
   The type of collection used for `entities`.
-- [var entities: Self.Entities](realityviewcontentprotocol/entities-swift.property.md)
+- [var entities: Self.Entities](./realityviewcontentprotocol/entities-swift.property.md)
   A collection of RealityKit entities that this view content renders within the scene.
 ### Handling subscriptions
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> EventSubscription](realityviewcontentprotocol/subscribe(to:on:_:).md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> EventSubscription](./realityviewcontentprotocol/subscribe%28to,on,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene.
-- [func subscribe<E>(to: E.Type, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](realityviewcontentprotocol/subscribe(to:componenttype:_:).md)
+- [func subscribe<E>(to: E.Type, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](./realityviewcontentprotocol/subscribe%28to,componenttype,_%29.md)
   Subscribes to an event type, optionally limited to a specific component type for component events.
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](realityviewcontentprotocol/subscribe(to:on:componenttype:_:).md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](./realityviewcontentprotocol/subscribe%28to,on,componenttype,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or a specific component type for component events.
 
 ## Relationships
 
 ### Conforming Types
-- [RealityViewCameraContent](realityviewcameracontent.md)
-- [RealityViewContent](realityviewcontent.md)
+- [RealityViewCameraContent](./realityviewcameracontent.md)
+- [RealityViewContent](./realityviewcontent.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityView](realityview.md)
+- [struct RealityView](./realityview.md)
   A view that contains RealityKit content.
-- [struct RealityViewContent](realityviewcontent.md)
+- [struct RealityViewContent](./realityviewcontent.md)
   The content of a visionOS reality view.
-- [struct RealityViewCameraContent](realityviewcameracontent.md)
+- [struct RealityViewCameraContent](./realityviewcameracontent.md)
   The content of a reality view that is displayed through a camera.
-- [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
+- [struct RealityViewDefaultPlaceholder](./realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
-- [struct RealityViewEntityCollection](realityviewentitycollection.md)
+- [struct RealityViewEntityCollection](./realityviewentitycollection.md)
   A collection of entities in a RealityView.
-- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+- [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

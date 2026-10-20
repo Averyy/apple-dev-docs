@@ -1,7 +1,8 @@
 # avoidHidingContent
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The avoid hiding content behavior.
 
@@ -26,7 +27,8 @@ In iOS, this will avoid hiding content in the toolbar as it adapts to a search p
 
 ## See Also
 
-- [static var automatic: SearchPresentationToolbarBehavior](searchpresentationtoolbarbehavior/automatic.md)
+### Getting toolbar behaviors
+- [static var automatic: SearchPresentationToolbarBehavior](./automatic.md)
   The automatic behavior.
 
 

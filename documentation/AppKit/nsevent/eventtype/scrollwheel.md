@@ -1,12 +1,13 @@
 # NSEvent.EventType.scrollWheel
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scroll wheel position changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The scroll wheel position changed.
 case scrollWheel
 ```
 
+```c
+NSEventTypeScrollWheel
+```
+
 ## See Also
 
-- [NSEvent.EventType.changeMode](nsevent/eventtype/changemode.md)
+### Getting Other Input Types
+- [NSEvent.EventType.changeMode](./changemode.md)
   The user changed the mode of a connected device.
 
 

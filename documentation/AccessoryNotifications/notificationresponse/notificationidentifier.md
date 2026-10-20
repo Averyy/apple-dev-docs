@@ -1,7 +1,8 @@
 # notificationIdentifier
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the notification.
 
@@ -16,11 +17,12 @@ var notificationIdentifier: String
 
 #### Discussion
 
-This value corresponds to [`notificationIdentifier`](accessorynotification/identifier-swift.struct/notificationidentifier.md) on the accessory notification.
+This value corresponds to [`notificationIdentifier`](../accessorynotification/identifier-swift.struct/notificationidentifier.md) on the accessory notification.
 
 ## See Also
 
-- [var sourceIdentifier: String](notificationresponse/sourceidentifier.md)
+### Identifying the notification
+- [var sourceIdentifier: String](./sourceidentifier.md)
   A bundle identifier for the app that sent the notification.
 
 

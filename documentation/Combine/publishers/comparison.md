@@ -1,7 +1,8 @@
 # Publishers.Comparison
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that republishes items from another publisher only if each new item is in increasing order from the previously-published item.
 
@@ -23,29 +24,30 @@ struct Comparison<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a comparison publisher
-- [init(upstream: Upstream, areInIncreasingOrder: (Upstream.Output, Upstream.Output) -> Bool)](publishers/comparison/init(upstream:areinincreasingorder:).md)
+- [init(upstream: Upstream, areInIncreasingOrder: (Upstream.Output, Upstream.Output) -> Bool)](./comparison/init%28upstream,areinincreasingorder%29.md)
   Creates a publisher that republishes items from another publisher only if each new item is in increasing order from the previously-published item.
 ### Declaring supporting types
-- [Publishers.Comparison.Output](publishers/comparison/output.md)
+- [Publishers.Comparison.Output](./comparison/output.md)
   The kind of values published by this publisher.
-- [Publishers.Comparison.Failure](publishers/comparison/failure.md)
+- [Publishers.Comparison.Failure](./comparison/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/comparison/upstream.md)
+- [let upstream: Upstream](./comparison/upstream.md)
   The publisher from which this publisher receives its elements.
-- [let areInIncreasingOrder: (Upstream.Output, Upstream.Output) -> Bool](publishers/comparison/areinincreasingorder.md)
+- [let areInIncreasingOrder: (Upstream.Output, Upstream.Output) -> Bool](./comparison/areinincreasingorder.md)
   A closure that receives two elements and returns true if they are in increasing order.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Count](publishers/count.md)
+### Applying mathematical operations on elements
+- [Publishers.Count](./count.md)
   A publisher that publishes the number of elements received from the upstream publisher.
-- [Publishers.TryComparison](publishers/trycomparison.md)
+- [Publishers.TryComparison](./trycomparison.md)
   A publisher that republishes items from another publisher only if each new item is in increasing order from the previously-published item, and fails if the ordering logic throws an error.
 
 

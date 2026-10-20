@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentType.dataBuffer
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sample buffer is carrying a block buffer containing bytes.
 

@@ -1,7 +1,8 @@
 # isSingleLineDocument
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that represents whether the active web input field is a single line document.
 
@@ -17,9 +18,14 @@ A Boolean value that represents whether the active web input field is a single l
 optional var isSingleLineDocument: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSingleLineDocument) BOOL singleLineDocument;
+```
+
 ## See Also
 
-- [var isTypingAdaptationEnabled: Bool](beextendedtextinputtraits/istypingadaptationenabled.md)
+### Customizing text input behavior
+- [var isTypingAdaptationEnabled: Bool](./istypingadaptationenabled.md)
   A Boolean value that controls whether the system learns new words and corrections.
 
 

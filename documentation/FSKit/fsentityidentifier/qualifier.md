@@ -1,7 +1,8 @@
 # qualifier
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional piece of data to distinguish entities that otherwise share the same UUID.
 
@@ -14,9 +15,14 @@ An optional piece of data to distinguish entities that otherwise share the same 
 var qualifier: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * qualifier;
+```
+
 ## See Also
 
-- [var uuid: UUID](fsentityidentifier/uuid.md)
+### Inspecting identifier properties
+- [var uuid: UUID](./uuid.md)
   A UUID to uniquely identify this entity.
 
 

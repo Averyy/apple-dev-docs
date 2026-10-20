@@ -1,7 +1,8 @@
 # columnName
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier that represents the summary’s column that contains the column names in a data frame.
 

@@ -1,7 +1,8 @@
 # deltaTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds elapsed since the last update.
 
@@ -11,7 +12,7 @@ The number of seconds elapsed since the last update.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var deltaTime: TimeInterval
 
 ## See Also
 
-- [var scene: Scene](sceneupdatecontext/scene.md)
+### Updating a scene
+- [var scene: Scene](./scene.md)
   The updating scene.
 
 

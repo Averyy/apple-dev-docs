@@ -1,7 +1,8 @@
 # AVMetricPlayerItemVariantSwitchEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents when the player completes a variant switch.
 
@@ -20,49 +21,54 @@ An event that represents when the player completes a variant switch.
 class AVMetricPlayerItemVariantSwitchEvent
 ```
 
+```objc
+@interface AVMetricPlayerItemVariantSwitchEvent : AVMetricEvent
+```
+
 ## Topics
 
 ### Inspecting the event
-- [var didSucceed: Bool](avmetricplayeritemvariantswitchevent/didsucceed.md)
-- [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchevent/fromvariant.md)
-- [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchevent/loadedtimeranges-5lkmg.md)
-- [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchevent/tovariant.md)
-- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/audiorendition.md)
+- [var didSucceed: Bool](./avmetricplayeritemvariantswitchevent/didsucceed.md)
+- [var fromVariant: AVAssetVariant?](./avmetricplayeritemvariantswitchevent/fromvariant.md)
+- [var loadedTimeRanges: [CMTimeRange]](./avmetricplayeritemvariantswitchevent/loadedtimeranges-5lkmg.md)
+- [var toVariant: AVAssetVariant](./avmetricplayeritemvariantswitchevent/tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchevent/audiorendition.md)
   Represents the currently selected video rendition’s identifiers.
-- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/videorendition.md)
+- [var videoRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchevent/videorendition.md)
   Represents the currently selected video rendition’s identifiers.
-- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/subtitlerendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](./avmetricplayeritemvariantswitchevent/subtitlerendition.md)
   Represents the currently selected audio rendition’s identifiers.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricMediaResourceRequestEvent](avmetricmediaresourcerequestevent.md)
+### HTTP Live Streaming
+- [class AVMetricMediaResourceRequestEvent](./avmetricmediaresourcerequestevent.md)
   An event that represents a media resource request.
-- [class AVMetricContentKeyRequestEvent](avmetriccontentkeyrequestevent.md)
+- [class AVMetricContentKeyRequestEvent](./avmetriccontentkeyrequestevent.md)
   An event that represents a live streaming content key resource request.
-- [class AVMetricHLSMediaSegmentRequestEvent](avmetrichlsmediasegmentrequestevent.md)
+- [class AVMetricHLSMediaSegmentRequestEvent](./avmetrichlsmediasegmentrequestevent.md)
   An event that represents a live streaming media segment resource request.
-- [class AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
+- [class AVMetricHLSPlaylistRequestEvent](./avmetrichlsplaylistrequestevent.md)
   An event that represents a live streaming playlist resource request.
-- [class AVMetricPlayerItemVariantSwitchStartEvent](avmetricplayeritemvariantswitchstartevent.md)
+- [class AVMetricPlayerItemVariantSwitchStartEvent](./avmetricplayeritemvariantswitchstartevent.md)
   An event that represents when the player attempts a variant switch.
-- [class AVMetricMediaRendition](avmetricmediarendition.md)
+- [class AVMetricMediaRendition](./avmetricmediarendition.md)
 
 
 ---

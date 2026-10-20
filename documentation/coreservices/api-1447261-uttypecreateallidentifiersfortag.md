@@ -1,7 +1,8 @@
 # UTTypeCreateAllIdentifiersForTag(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an array of all uniform type identifiers for the type indicated by the specified tag.
 
@@ -20,7 +21,11 @@ Creates an array of all uniform type identifiers for the type indicated by the s
 func UTTypeCreateAllIdentifiersForTag(_ inTagClass: CFString, _ inTag: CFString, _ inConformingToUTI: CFString?) -> Unmanaged<CFArray>?
 ```
 
-#### Return_value
+```c
+CFArrayRef UTTypeCreateAllIdentifiersForTag(CFStringRef inTagClass, CFStringRef inTag, CFStringRef inConformingToUTI);
+```
+
+#### Return Value
 
 An array of uniform type identifiers, or `NULL` if inTagClass is not a known tag class
 
@@ -38,7 +43,8 @@ If no result is found, this function creates a dynamic type beginning with the `
 
 ## See Also
 
-- [func UTTypeCopyPreferredTagWithClass(CFString, CFString) -> Unmanaged<CFString>?](1442744-uttypecopypreferredtagwithclass.md)
+### Related Documentation
+- [func UTTypeCopyPreferredTagWithClass(CFString, CFString) -> Unmanaged<CFString>?](./api-1442744-uttypecopypreferredtagwithclass.md)
   Translates a uniform type identifier to a list of tags in a different type classification method.
 
 

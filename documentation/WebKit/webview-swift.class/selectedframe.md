@@ -1,17 +1,24 @@
 # selectedFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame with the active selection.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 var selectedFrame: WebFrame! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebFrame * selectedFrame;
 ```
 
 #### Discussion
@@ -20,15 +27,16 @@ If it doesn’t exist, the frame that contains a non-zero-length selection; othe
 
 ## See Also
 
-- [var isLoading: Bool](webview-swift.class/isloading.md)
+### Getting and Setting Frame Contents
+- [var isLoading: Bool](./isloading.md)
   A Boolean that indicates whether the web view is loading content.
-- [var mainFrameURL: String!](webview-swift.class/mainframeurl.md)
+- [var mainFrameURL: String!](./mainframeurl.md)
   The URL that the main frame loads.
-- [var mainFrameTitle: String!](webview-swift.class/mainframetitle.md)
+- [var mainFrameTitle: String!](./mainframetitle.md)
   The HTML title of the loaded page.
-- [var mainFrameIcon: NSImage!](webview-swift.class/mainframeicon.md)
+- [var mainFrameIcon: NSImage!](./mainframeicon.md)
   The site’s favicon.
-- [var mainFrameDocument: DOMDocument!](webview-swift.class/mainframedocument.md)
+- [var mainFrameDocument: DOMDocument!](./mainframedocument.md)
   The DOM document for the main frame.
 
 

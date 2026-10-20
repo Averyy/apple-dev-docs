@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func subscribe(withController controller: Any?, nodeId: UInt64, minInterval: NSNumber, maxInterval: NSNumber, params: [String : Any]?, shouldCache: Bool, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func subscribe(withController controller: Any?, nodeId: UInt64, minInterval: NSNumber, maxInterval: NSNumber, params: [String : Any]?, shouldCache: Bool) async throws
+```
+
+```objc
+- (void) subscribeWithController:(id) controller nodeId:(uint64_t) nodeId minInterval:(NSNumber *) minInterval maxInterval:(NSNumber *) maxInterval params:(NSDictionary<NSString *,id> *) params shouldCache:(BOOL) shouldCache completion:(MTRStatusCompletion) completion;
 ```
 
 

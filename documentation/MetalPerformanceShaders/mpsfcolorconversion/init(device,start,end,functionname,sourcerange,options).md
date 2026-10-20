@@ -1,7 +1,8 @@
 # init(device:start:end:functionName:sourceRange:options:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@
 convenience init(device: any MTLDevice, start: CGColorSpace, end: CGColorSpace, functionName name: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions = []) throws
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device startColorSpace:(CGColorSpaceRef) start endColorSpace:(CGColorSpaceRef) end functionName:(NSString *) name sourceRange:(const MPSFunctions_AABB *) sourceRange options:(MPSFColorConversionOptions) options error:(NSError **) error;
+```
+
 #### Return Value
 
 On success, a valid MPSFunctionsConversion object. If the conversion can’t be done, for example because it consumes or produces more than four channels, nil will be returned, and an appropriate error code created.
@@ -27,7 +32,7 @@ Initialize a new MPSFunctionsConversion object
 
 Builds a MPSFunctionsConverison object from a starting and ending colorspace. Kicks off an asynchronous compilation task to build a MTLFunction appropriate for the device. Calling the .function or .error propertywill stop and wait for it. Since the compilation task may take a few milliseconds, your application should create the MPSFunctionsConversion object as soon as it knows the conversion will be needed.
 
-```None
+```
          If you would like to make use of  sRGB, PQ and HLG, MTLPixelFormat
          variants to take advantage of hardware features to produce linear color
          from these colorspaces, use the result of CGColorSpaceCreateLinearized(start)

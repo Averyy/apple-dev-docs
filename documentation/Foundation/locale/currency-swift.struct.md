@@ -1,7 +1,8 @@
 # Locale.Currency
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the currency system used by a locale, like dollars or euros.
 
@@ -23,50 +24,51 @@ struct Currency
 ## Topics
 
 ### Creating a currency instance
-- [init(String)](locale/currency-swift.struct/init(_:).md)
+- [init(String)](./currency-swift.struct/init%28_%29.md)
   Creates a currency instance from a BCP 47 identifier.
-- [init(stringLiteral: String)](locale/currency-swift.struct/init(stringliteral:).md)
+- [init(stringLiteral: String)](./currency-swift.struct/init%28stringliteral%29.md)
   Creates a currency instance from a BCP 47 identifier as a string literal.
 ### Examining currency properties
-- [var identifier: String](locale/currency-swift.struct/identifier.md)
+- [var identifier: String](./currency-swift.struct/identifier.md)
   The currency’s identifier.
-- [var isISOCurrency: Bool](locale/currency-swift.struct/isisocurrency.md)
+- [var isISOCurrency: Bool](./currency-swift.struct/isisocurrency.md)
   A Boolean value that indicates whether the currency is in the list of ISO-defined currencies.
 ### Using common currencies
-- [static var isoCurrencies: [Locale.Currency]](locale/currency-swift.struct/isocurrencies.md)
+- [static var isoCurrencies: [Locale.Currency]](./currency-swift.struct/isocurrencies.md)
   An array containing currencies defined by the currency codes in ISO-4217.
-- [static let unknown: Locale.Currency](locale/currency-swift.struct/unknown.md)
+- [static let unknown: Locale.Currency](./currency-swift.struct/unknown.md)
   A representation of an “unknown” currency, for use with transactions that don’t involve any currency.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var currency: Locale.Currency?](locale/currency-swift.property.md)
+### Getting measurement and counting components
+- [var currency: Locale.Currency?](./currency-swift.property.md)
   The currency used by the locale.
-- [var measurementSystem: Locale.MeasurementSystem](locale/measurementsystem-swift.property.md)
+- [var measurementSystem: Locale.MeasurementSystem](./measurementsystem-swift.property.md)
   The measurement system used by the locale, like metric or the US system.
-- [Locale.MeasurementSystem](locale/measurementsystem-swift.struct.md)
+- [Locale.MeasurementSystem](./measurementsystem-swift.struct.md)
   A type that represents the measurement system used by a locale, like metric or the US system.
-- [var numberingSystem: Locale.NumberingSystem](locale/numberingsystem-swift.property.md)
+- [var numberingSystem: Locale.NumberingSystem](./numberingsystem-swift.property.md)
   The numbering system used by the locale.
-- [var availableNumberingSystems: [Locale.NumberingSystem]](locale/availablenumberingsystems.md)
+- [var availableNumberingSystems: [Locale.NumberingSystem]](./availablenumberingsystems.md)
   An array containing all the valid numbering systems for the locale.
-- [Locale.NumberingSystem](locale/numberingsystem-swift.struct.md)
+- [Locale.NumberingSystem](./numberingsystem-swift.struct.md)
   A type that represents the numbering system used in a locale.
 
 

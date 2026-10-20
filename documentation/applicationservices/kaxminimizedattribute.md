@@ -1,7 +1,8 @@
 # kAXMinimizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the window represented by this accessibility object is currently minimized in the Dock. This attribute is recommended for all accessibility objects that represent windows that can be minimized.
 
@@ -12,6 +13,10 @@ Indicates whether the window represented by this accessibility object is current
 
 ```swift
 var kAXMinimizedAttribute: String { get }
+```
+
+```c
+#define kAXMinimizedAttribute
 ```
 
 

@@ -1,20 +1,22 @@
 # bsd_timeout
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void bsd_timeout(void (*)(void *), void *arg, struct timespec *ts);
 ```
 
 ## See Also
 
-- [bsd_untimeout](1519608-bsd_untimeout.md)
+### General
+- [bsd_untimeout](./api-1519608-bsd_untimeout.md)
 
 
 ---

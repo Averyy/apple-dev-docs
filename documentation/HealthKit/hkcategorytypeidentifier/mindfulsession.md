@@ -1,7 +1,8 @@
 # mindfulSession
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category sample type for recording a mindful session.
 
@@ -19,25 +20,31 @@ A category sample type for recording a mindful session.
 static let mindfulSession: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMindfulSession;
+```
+
 #### Discussion
 
-Use a [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md) value with these samples.
+Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with these samples.
 
 ## See Also
 
-- [enum HKCategoryValue](hkcategoryvalue.md)
+### Related Documentation
+- [enum HKCategoryValue](../hkcategoryvalue.md)
   Categories that are undefined.
-- [struct HKCategoryTypeIdentifier](hkcategorytypeidentifier.md)
+- [struct HKCategoryTypeIdentifier](../hkcategorytypeidentifier.md)
   Identifiers for creating category types.
-- [class HKCategoryType](hkcategorytype.md)
+- [class HKCategoryType](../hkcategorytype.md)
   A type that identifies samples that contain a value from a small set of possible values.
-- [class HKCategorySample](hkcategorysample.md)
+- [class HKCategorySample](../hkcategorysample.md)
   A sample with values from a short list of possible values.
-- [static let sleepAnalysis: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepanalysis.md)
+### Mindfulness and sleep
+- [static let sleepAnalysis: HKCategoryTypeIdentifier](./sleepanalysis.md)
   A category sample type for sleep analysis information.
-- [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingwristtemperature.md)
+- [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](../hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
-- [enum HKAppleSleepingBreathingDisturbancesClassification](hkapplesleepingbreathingdisturbancesclassification.md)
+- [enum HKAppleSleepingBreathingDisturbancesClassification](../hkapplesleepingbreathingdisturbancesclassification.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecCSSignatureInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid format for signature.
 
@@ -13,6 +14,10 @@ Invalid format for signature.
 
 ```swift
 var errSecCSSignatureInvalid: OSStatus { get }
+```
+
+```c
+errSecCSSignatureInvalid
 ```
 
 

@@ -1,7 +1,8 @@
 # LayerRendererConfigurationError.unsupportedTrackingAreasUsage
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the layer doesn’t support the current texture usage for tracking areas textures.
 
@@ -17,7 +18,7 @@ case unsupportedTrackingAreasUsage
 
 #### Discussion
 
-Compare the value the [`cp_layer_renderer_configuration_get_tracking_areas_usage`](cp_layer_renderer_configuration_get_tracking_areas_usage.md) function returns and make sure it has at least `MTLTextureUsageShaderRead` and does not contain `MTLTextureUsageShaderAtomic`
+Compare the value the [`cp_layer_renderer_configuration_get_tracking_areas_usage`](../cp_layer_renderer_configuration_get_tracking_areas_usage.md) function returns and make sure it has at least `MTLTextureUsageShaderRead` and does not contain `MTLTextureUsageShaderAtomic`
 
 
 ---

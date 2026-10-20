@@ -1,7 +1,8 @@
 # pmTable
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Color map for this structure.
 
@@ -12,6 +13,10 @@ Color map for this structure.
 
 ```swift
 var pmTable: CTabHandle!
+```
+
+```c
+CTabHandle pmTable;
 ```
 
 

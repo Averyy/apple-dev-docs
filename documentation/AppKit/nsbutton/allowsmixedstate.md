@@ -1,12 +1,13 @@
 # allowsMixedState
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the button allows a mixed state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the button allows a mixed state.
 var allowsMixedState: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsMixedState;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the button has three states (on, off, and mixed), or [`false`](https://developer.apple.com/documentation/swift/false) if the button has two states (on and off). The default value is [`false`](https://developer.apple.com/documentation/swift/false). On and off states (also referred to as alternate and normal) indicate that the button is either clicked or not clicked. Mixed state is typically used for checkboxes or radio buttons. For example, suppose the state of a checkbox is used to denote whether a text field contains bold text. If all of the text in the text field is bold, then the checkbox appears checked (on). If none of the text is bold, then the checkbox appears unchecked (off). If some of the text is bold, then the checkbox contains a dash (mixed).
+The value of this property is [`true`](../../Swift/true.md) if the button has three states (on, off, and mixed), or [`false`](../../Swift/false.md) if the button has two states (on and off). The default value is [`false`](../../Swift/false.md). On and off states (also referred to as alternate and normal) indicate that the button is either clicked or not clicked. Mixed state is typically used for checkboxes or radio buttons. For example, suppose the state of a checkbox is used to denote whether a text field contains bold text. If all of the text in the text field is bold, then the checkbox appears checked (on). If none of the text is bold, then the checkbox appears unchecked (off). If some of the text is bold, then the checkbox contains a dash (mixed).
 
 ## See Also
 
-- [var state: NSControl.StateValue](nsbutton/state.md)
+### Managing button state
+- [var state: NSControl.StateValue](./state.md)
   The button’s state.
-- [func setNextState()](nsbutton/setnextstate.md)
+- [func setNextState()](./setnextstate%28%29.md)
   Sets the button to its next state.
-- [func highlight(Bool)](nsbutton/highlight(_:).md)
+- [func highlight(Bool)](./highlight%28_%29.md)
   Highlights (or unhighlights) the button.
 
 

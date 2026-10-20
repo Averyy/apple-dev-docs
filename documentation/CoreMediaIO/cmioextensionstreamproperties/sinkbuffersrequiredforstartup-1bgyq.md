@@ -1,7 +1,8 @@
 # sinkBuffersRequiredForStartup
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of buffers the stream requires for startup.
 
@@ -19,15 +20,16 @@ var sinkBuffersRequiredForStartup: Int? { get set }
 
 #### Discussion
 
-This property translates to the [`kCMIOStreamPropertyOutputBuffersRequiredForStartup`](kcmiostreampropertyoutputbuffersrequiredforstartup.md) property.
+This property translates to the [`kCMIOStreamPropertyOutputBuffersRequiredForStartup`](../kcmiostreampropertyoutputbuffersrequiredforstartup.md) property.
 
 ## See Also
 
-- [var sinkBufferQueueSize: Int?](cmioextensionstreamproperties/sinkbufferqueuesize-9b80c.md)
+### Configuring Sink Properties
+- [var sinkBufferQueueSize: Int?](./sinkbufferqueuesize-9b80c.md)
   The buffer queue size.
-- [var sinkBufferUnderrunCount: Int?](cmioextensionstreamproperties/sinkbufferunderruncount-1qmbb.md)
+- [var sinkBufferUnderrunCount: Int?](./sinkbufferunderruncount-1qmbb.md)
   The buffer underrun count.
-- [var sinkEndOfData: Int?](cmioextensionstreamproperties/sinkendofdata-8fswu.md)
+- [var sinkEndOfData: Int?](./sinkendofdata-8fswu.md)
   A value that indicates whether the stream has reached its end.
 
 

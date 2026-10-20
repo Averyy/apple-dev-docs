@@ -1,7 +1,8 @@
 # kAXSizeAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The vertical and horizontal dimensions of this accessibility object. This attribute is required for all accessibility objects that are visible on the screen.
 
@@ -12,6 +13,10 @@ The vertical and horizontal dimensions of this accessibility object. This attrib
 
 ```swift
 var kAXSizeAttribute: String { get }
+```
+
+```c
+#define kAXSizeAttribute
 ```
 
 

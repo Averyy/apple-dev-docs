@@ -1,7 +1,8 @@
 # init(x:y:z:w:)
 
 **Framework**: Core Motion  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -19,7 +20,8 @@ init(x: Double, y: Double, z: Double, w: Double)
 
 ## See Also
 
-- [init()](cmquaternion/init.md)
+### Initializing the Quaternion
+- [init()](./init%28%29.md)
 
 
 ---

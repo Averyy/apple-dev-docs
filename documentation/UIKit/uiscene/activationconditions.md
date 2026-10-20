@@ -1,7 +1,8 @@
 # activationConditions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The conditions that define when UIKit activates the scene object.
 
@@ -18,13 +19,18 @@ The conditions that define when UIKit activates the scene object.
 var activationConditions: UISceneActivationConditions { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UISceneActivationConditions * activationConditions;
+```
+
 #### Discussion
 
 Use this property to tell UIKIt when you want it to activate this scene.
 
 ## See Also
 
-- [class UISceneActivationConditions](uisceneactivationconditions.md)
+### Specifying the scene’s activation conditions
+- [class UISceneActivationConditions](../uisceneactivationconditions.md)
   The set of conditions that define when UIKit activates the current scene.
 
 

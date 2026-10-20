@@ -1,7 +1,8 @@
 # AVAssetTrackGroup
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of related tracks in an asset.
 
@@ -20,42 +21,47 @@ A group of related tracks in an asset.
 class AVAssetTrackGroup
 ```
 
+```objc
+@interface AVAssetTrackGroup : NSObject
+```
+
 #### Overview
 
 A track group describes a group of related alternative tracks, only one of which should play at a time. Groups of alternative tracks typically contain variations of the same content, like subtitles in multiple translations.
 
-You can inspect an asset’s track groups by loading the value of its [`trackGroups`](avpartialasyncproperty/trackgroups.md) property.
+You can inspect an asset’s track groups by loading the value of its [`trackGroups`](./avpartialasyncproperty/trackgroups.md) property.
 
 ## Topics
 
 ### Getting track ID values
-- [var trackIDs: [NSNumber]](avassettrackgroup/trackids.md)
+- [var trackIDs: [NSNumber]](./avassettrackgroup/trackids.md)
   The IDs of the tracks in the group.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAsset](avasset.md)
+### Assets
+- [class AVAsset](./avasset.md)
   An object that models timed audiovisual media.
-- [class AVURLAsset](avurlasset.md)
+- [class AVURLAsset](./avurlasset.md)
   An asset that represents media at a local or remote URL.
-- [class AVAssetTrack](avassettrack.md)
+- [class AVAssetTrack](./avassettrack.md)
   An object that models a track of media that an asset contains.
-- [class AVAssetTrackSegment](avassettracksegment.md)
+- [class AVAssetTrackSegment](./avassettracksegment.md)
   An object that represents a time range segment of an asset track.
 
 

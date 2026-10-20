@@ -1,7 +1,8 @@
 # page
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Automatically set the major aligment unit to be the size of the visible domain which is equivalent to a page.
 

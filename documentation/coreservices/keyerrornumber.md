@@ -1,7 +1,8 @@
 # keyErrorNumber
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Error number. Often used to extract error information from a reply Apple event.
 

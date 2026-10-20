@@ -1,7 +1,8 @@
 # HAS_NS_BITMAP_HEADER
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var HAS_NS_BITMAP_HEADER: Int32 { get }
+```
+
+```c
+#define HAS_NS_BITMAP_HEADER
 ```
 
 

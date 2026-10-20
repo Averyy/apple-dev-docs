@@ -1,7 +1,8 @@
 # contextMenuItemSelected(withCommand:in:userInfo:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method the system calls when a user selects one of the app extension’s context menu items.
 
@@ -14,9 +15,13 @@ A method the system calls when a user selects one of the app extension’s conte
 optional func contextMenuItemSelected(withCommand command: String, in page: SFSafariPage, userInfo: [String : Any]? = nil)
 ```
 
+```objc
+- (void) contextMenuItemSelectedWithCommand:(NSString *) command inPage:(SFSafariPage *) page userInfo:(NSDictionary<NSString *,id> *) userInfo;
+```
+
 ## Mentions
 
-- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
+- [Adjusting settings for contextual menu items](../adjusting-settings-for-contextual-menu-items.md)
 
 ## Parameters
 
@@ -26,7 +31,8 @@ optional func contextMenuItemSelected(withCommand command: String, in page: SFSa
 
 ## See Also
 
-- [func validateContextMenuItem(withCommand: String, in: SFSafariPage, userInfo: [String : Any]?, validationHandler: (Bool, String?) -> Void)](sfsafariextensionhandling/validatecontextmenuitem(withcommand:in:userinfo:validationhandler:).md)
+### Responding to Context Menu Selections
+- [func validateContextMenuItem(withCommand: String, in: SFSafariPage, userInfo: [String : Any]?, validationHandler: (Bool, String?) -> Void)](./validatecontextmenuitem%28withcommand,in,userinfo,validationhandler%29.md)
   Validates whether a particular contextual menu item should be displayed.
 
 

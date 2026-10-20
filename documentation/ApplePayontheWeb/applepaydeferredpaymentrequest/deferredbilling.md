@@ -1,7 +1,8 @@
 # deferredBilling
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains details about the deferred payment.
 
@@ -11,7 +12,7 @@ A dictionary that contains details about the deferred payment.
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem deferredBilling;
 ```
 

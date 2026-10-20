@@ -1,7 +1,8 @@
 # expression
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expression to evaluate.
 
@@ -10,7 +11,7 @@ The expression to evaluate.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The expression to evaluate.
 var expression: NSExpression? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSExpression * expression;
+```
+
 ## See Also
 
-- [var resultType: NSAttributeDescription.AttributeType](nsexpressiondescription/resulttype.md)
+### Configuring the Expression Description
+- [var resultType: NSAttributeDescription.AttributeType](./resulttype.md)
   The attribute type of the expression’s result.
-- [var expressionResultType: NSAttributeType](nsexpressiondescription/expressionresulttype.md)
+- [var expressionResultType: NSAttributeType](./expressionresulttype.md)
   The attribute type of the expression’s result.
 
 

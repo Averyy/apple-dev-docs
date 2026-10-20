@@ -1,7 +1,8 @@
 # backgroundView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that is displayed behind the scrubber content.
 
@@ -14,19 +15,24 @@ A view that is displayed behind the scrubber content.
 var backgroundView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * backgroundView;
+```
+
 #### Discussion
 
-The scrubber manages the layout of the background view to match the size of the content area. If this property is non-`nil`, the value of the [`backgroundColor`](nspathcontrol/backgroundcolor.md) property is ignored.
+The scrubber manages the layout of the background view to match the size of the content area. If this property is non-`nil`, the value of the [`backgroundColor`](../nspathcontrol/backgroundcolor.md) property is ignored.
 
 The default value is `nil`.
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nsscrubber/backgroundcolor.md)
+### Configuring the scrubber’s appearance
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The color displayed behind the scrubber content.
-- [var showsAdditionalContentIndicators: Bool](nsscrubber/showsadditionalcontentindicators.md)
+- [var showsAdditionalContentIndicators: Bool](./showsadditionalcontentindicators.md)
   A Boolean value that specifies whether the scrubber should display the existence of additional items beyond the leading and trailing edges.
-- [var showsArrowButtons: Bool](nsscrubber/showsarrowbuttons.md)
+- [var showsArrowButtons: Bool](./showsarrowbuttons.md)
   A Boolean value that specifies whether arrow buttons should be displayed at the leading and trailing edges of the scrubber.
 
 

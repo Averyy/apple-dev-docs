@@ -1,7 +1,8 @@
 # kSecAttrSyncViewHint
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that’s a string that provides a sync view hint.
 
@@ -20,9 +21,13 @@ A key with a value that’s a string that provides a sync view hint.
 let kSecAttrSyncViewHint: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrSyncViewHint;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), and is included as part of the primary key of an item. It can be used to help distinguish Sync Views when defining their queries.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md), and is included as part of the primary key of an item. It can be used to help distinguish Sync Views when defining their queries.
 
 
 ---

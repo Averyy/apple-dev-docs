@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks to see if a node is visible in the camera’s viewport.
 
@@ -20,9 +21,13 @@ Checks to see if a node is visible in the camera’s viewport.
 func contains(_ node: SKNode) -> Bool
 ```
 
+```objc
+- (BOOL) containsNode:(SKNode *) node;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the node in the same scene and inside the camera’s viewport; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the node in the same scene and inside the camera’s viewport; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -30,11 +35,12 @@ The camera must be part of a scene’s node hierarchy and the scene must be pres
 
 ## Parameters
 
-- `node`: An [`SKNode`](sknode.md) object.
+- `node`: An [`SKNode`](../sknode.md) object.
 
 ## See Also
 
-- [func containedNodeSet() -> Set<SKNode>](skcameranode/containednodeset.md)
+### Node Visibility
+- [func containedNodeSet() -> Set<SKNode>](./containednodeset%28%29.md)
   Finds nodes that are visible in the camera’s viewport.
 
 

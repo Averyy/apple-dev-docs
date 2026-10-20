@@ -1,7 +1,8 @@
 # stepFunction
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how and when compute functions fetch data.
 
@@ -19,13 +20,18 @@ Determines how and when compute functions fetch data.
 var stepFunction: MTLStepFunction { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MTLStepFunction stepFunction;
+```
+
 ## See Also
 
-- [var stride: Int](mtlbufferlayoutdescriptor/stride.md)
+### Describing fetch behavior
+- [var stride: Int](./stride.md)
   The number of bytes from one buffer entry to the next.
-- [var stepRate: Int](mtlbufferlayoutdescriptor/steprate.md)
+- [var stepRate: Int](./steprate.md)
   How frequently the step function should load data.
-- [enum MTLStepFunction](mtlstepfunction.md)
+- [enum MTLStepFunction](../mtlstepfunction.md)
   The frequency and locations at which a function fetches attribute data.
 
 

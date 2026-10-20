@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an entry to the end of the history view.
 

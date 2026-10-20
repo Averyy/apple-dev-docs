@@ -1,24 +1,26 @@
 # HearingImpaired
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 HearingImpaired
 ```
 
 ## See Also
 
-- [ClickTrack](videodriverkit/iouservideochannellabel/clicktrack.md)
-- [DialogCentricMix](videodriverkit/iouservideochannellabel/dialogcentricmix.md)
-- [ForeignLanguage](videodriverkit/iouservideochannellabel/foreignlanguage.md)
-- [Haptic](videodriverkit/iouservideochannellabel/haptic.md)
-- [Narration](videodriverkit/iouservideochannellabel/narration.md)
+### Alternate content channels
+- [ClickTrack](./clicktrack.md)
+- [DialogCentricMix](./dialogcentricmix.md)
+- [ForeignLanguage](./foreignlanguage.md)
+- [Haptic](./haptic.md)
+- [Narration](./narration.md)
 
 
 ---

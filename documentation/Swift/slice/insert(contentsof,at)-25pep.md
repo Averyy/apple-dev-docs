@@ -1,7 +1,8 @@
 # insert(contentsOf:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the elements of a sequence into the collection at the specified position.
 
@@ -20,6 +21,8 @@ Inserts the elements of a sequence into the collection at the specified position
 mutating func insert<S>(contentsOf newElements: S, at i: Slice<Base>.Index) where S : Collection, Base.Element == S.Element
 ```
 
+Available when `Base` conforms to `RangeReplaceableCollection`.
+
 #### Discussion
 
 The new elements are inserted before the element currently at the specified index. If you pass the collection’s `endIndex` property as the `index` parameter, the new elements are appended to the collection.
@@ -35,7 +38,7 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 

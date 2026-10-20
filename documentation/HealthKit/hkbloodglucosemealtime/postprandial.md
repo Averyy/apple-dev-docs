@@ -1,7 +1,8 @@
 # HKBloodGlucoseMealTime.postprandial
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A blood glucose sample taken just after eating a meal.
 
@@ -19,9 +20,14 @@ A blood glucose sample taken just after eating a meal.
 case postprandial
 ```
 
+```c
+HKBloodGlucoseMealTimePostprandial
+```
+
 ## See Also
 
-- [HKBloodGlucoseMealTime.preprandial](hkbloodglucosemealtime/preprandial.md)
+### Relative Meal Times
+- [HKBloodGlucoseMealTime.preprandial](./preprandial.md)
   A blood glucose sample taken just before eating a meal.
 
 

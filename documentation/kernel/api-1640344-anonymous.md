@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,79 +18,79 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCIAGP8Capability](3516622-anonymous/kiopciagp8capability.md)
-- [kIOPCIAGPCapability](3516622-anonymous/kiopciagpcapability.md)
-- [kIOPCICPCIHotswapCapability](3516622-anonymous/kiopcicpcihotswapcapability.md)
-- [kIOPCICPCIResourceControlCapability](3516622-anonymous/kiopcicpciresourcecontrolcapability.md)
-- [kIOPCICapabilityIDOffset](1640344-anonymous/kiopcicapabilityidoffset.md)
-- [kIOPCIDebugPortCapability](3516622-anonymous/kiopcidebugportcapability.md)
-- [kIOPCIExpressDeviceSerialNumberCapability](3516622-anonymous/kiopciexpressdeviceserialnumbercapability.md)
-- [kIOPCIExpressErrorReportingCapability](3516622-anonymous/kiopciexpresserrorreportingcapability.md)
-- [kIOPCIExpressL1PMSubstatesCapability](3516622-anonymous/kiopciexpressl1pmsubstatescapability.md)
-- [kIOPCIExpressLatencyTolerenceReportingCapability](3516622-anonymous/kiopciexpresslatencytolerencereportingcapability.md)
-- [kIOPCIExpressPowerBudgetCapability](3516622-anonymous/kiopciexpresspowerbudgetcapability.md)
-- [kIOPCIExpressVirtualChannelCapability](3516622-anonymous/kiopciexpressvirtualchannelcapability.md)
-- [kIOPCIHotplugCapability](3516622-anonymous/kiopcihotplugcapability.md)
-- [kIOPCILDTCapability](3516622-anonymous/kiopcildtcapability.md)
-- [kIOPCIMSICapability](3516622-anonymous/kiopcimsicapability.md)
-- [kIOPCIMSIXCapability](3516622-anonymous/kiopcimsixcapability.md)
-- [kIOPCINextCapabilityOffset](1640344-anonymous/kiopcinextcapabilityoffset.md)
-- [kIOPCIPCIExpressCapability](3516622-anonymous/kiopcipciexpresscapability.md)
-- [kIOPCIPCIXCapability](3516622-anonymous/kiopcipcixcapability.md)
-- [kIOPCIPowerManagementCapability](3516622-anonymous/kiopcipowermanagementcapability.md)
-- [kIOPCISecureCapability](3516622-anonymous/kiopcisecurecapability.md)
-- [kIOPCISlotIDCapability](3516622-anonymous/kiopcislotidcapability.md)
-- [kIOPCIVendorSpecificCapability](3516622-anonymous/kiopcivendorspecificcapability.md)
-- [kIOPCIVitalProductDataCapability](3516622-anonymous/kiopcivitalproductdatacapability.md)
-- [kIOPCICapabilityIDAGP](../pcidriverkit/kiopcicapabilityidagp.md)
+- [kIOPCIAGP8Capability](./api-3516622-anonymous/kiopciagp8capability.md)
+- [kIOPCIAGPCapability](./api-3516622-anonymous/kiopciagpcapability.md)
+- [kIOPCICPCIHotswapCapability](./api-3516622-anonymous/kiopcicpcihotswapcapability.md)
+- [kIOPCICPCIResourceControlCapability](./api-3516622-anonymous/kiopcicpciresourcecontrolcapability.md)
+- [kIOPCICapabilityIDOffset](./api-1640344-anonymous/kiopcicapabilityidoffset.md)
+- [kIOPCIDebugPortCapability](./api-3516622-anonymous/kiopcidebugportcapability.md)
+- [kIOPCIExpressDeviceSerialNumberCapability](./api-3516622-anonymous/kiopciexpressdeviceserialnumbercapability.md)
+- [kIOPCIExpressErrorReportingCapability](./api-3516622-anonymous/kiopciexpresserrorreportingcapability.md)
+- [kIOPCIExpressL1PMSubstatesCapability](./api-3516622-anonymous/kiopciexpressl1pmsubstatescapability.md)
+- [kIOPCIExpressLatencyTolerenceReportingCapability](./api-3516622-anonymous/kiopciexpresslatencytolerencereportingcapability.md)
+- [kIOPCIExpressPowerBudgetCapability](./api-3516622-anonymous/kiopciexpresspowerbudgetcapability.md)
+- [kIOPCIExpressVirtualChannelCapability](./api-3516622-anonymous/kiopciexpressvirtualchannelcapability.md)
+- [kIOPCIHotplugCapability](./api-3516622-anonymous/kiopcihotplugcapability.md)
+- [kIOPCILDTCapability](./api-3516622-anonymous/kiopcildtcapability.md)
+- [kIOPCIMSICapability](./api-3516622-anonymous/kiopcimsicapability.md)
+- [kIOPCIMSIXCapability](./api-3516622-anonymous/kiopcimsixcapability.md)
+- [kIOPCINextCapabilityOffset](./api-1640344-anonymous/kiopcinextcapabilityoffset.md)
+- [kIOPCIPCIExpressCapability](./api-3516622-anonymous/kiopcipciexpresscapability.md)
+- [kIOPCIPCIXCapability](./api-3516622-anonymous/kiopcipcixcapability.md)
+- [kIOPCIPowerManagementCapability](./api-3516622-anonymous/kiopcipowermanagementcapability.md)
+- [kIOPCISecureCapability](./api-3516622-anonymous/kiopcisecurecapability.md)
+- [kIOPCISlotIDCapability](./api-3516622-anonymous/kiopcislotidcapability.md)
+- [kIOPCIVendorSpecificCapability](./api-3516622-anonymous/kiopcivendorspecificcapability.md)
+- [kIOPCIVitalProductDataCapability](./api-3516622-anonymous/kiopcivitalproductdatacapability.md)
+- [kIOPCICapabilityIDAGP](../PCIDriverKit/kiopcicapabilityidagp.md)
   The identifier for the AGP capability.
-- [kIOPCICapabilityIDAGP8](../pcidriverkit/kiopcicapabilityidagp8.md)
+- [kIOPCICapabilityIDAGP8](../PCIDriverKit/kiopcicapabilityidagp8.md)
   The identifier for the AGP 8x capability.
-- [kIOPCICapabilityIDCPCIHotswap](../pcidriverkit/kiopcicapabilityidcpcihotswap.md)
+- [kIOPCICapabilityIDCPCIHotswap](../PCIDriverKit/kiopcicapabilityidcpcihotswap.md)
   The identifier for the CompactPCI hot swap capability.
-- [kIOPCICapabilityIDCPCIResourceControl](../pcidriverkit/kiopcicapabilityidcpciresourcecontrol.md)
+- [kIOPCICapabilityIDCPCIResourceControl](../PCIDriverKit/kiopcicapabilityidcpciresourcecontrol.md)
   The identifier for the CompactPCI central resource control capability.
-- [kIOPCICapabilityIDDebugPort](../pcidriverkit/kiopcicapabilityiddebugport.md)
+- [kIOPCICapabilityIDDebugPort](../PCIDriverKit/kiopcicapabilityiddebugport.md)
   The identifier for the debug port capability.
-- [kIOPCICapabilityIDFPB](../pcidriverkit/kiopcicapabilityidfpb.md)
+- [kIOPCICapabilityIDFPB](../PCIDriverKit/kiopcicapabilityidfpb.md)
   The identifier for the flattening portal bridge capability.
-- [kIOPCICapabilityIDHotplug](../pcidriverkit/kiopcicapabilityidhotplug.md)
+- [kIOPCICapabilityIDHotplug](../PCIDriverKit/kiopcicapabilityidhotplug.md)
   The identifier for the PCI hot plug capability.
-- [kIOPCICapabilityIDLDT](../pcidriverkit/kiopcicapabilityidldt.md)
+- [kIOPCICapabilityIDLDT](../PCIDriverKit/kiopcicapabilityidldt.md)
   The identifier for the HyperTransport capability.
-- [kIOPCICapabilityIDMSI](../pcidriverkit/kiopcicapabilityidmsi.md)
+- [kIOPCICapabilityIDMSI](../PCIDriverKit/kiopcicapabilityidmsi.md)
   The identifier for the MSI capability.
-- [kIOPCICapabilityIDMSIX](../pcidriverkit/kiopcicapabilityidmsix.md)
+- [kIOPCICapabilityIDMSIX](../PCIDriverKit/kiopcicapabilityidmsix.md)
   The identifer for the MSI-X capability.
-- [kIOPCICapabilityIDPCIExpress](../pcidriverkit/kiopcicapabilityidpciexpress.md)
+- [kIOPCICapabilityIDPCIExpress](../PCIDriverKit/kiopcicapabilityidpciexpress.md)
   The identifier for the PCI Express capability.
-- [kIOPCICapabilityIDPCIX](../pcidriverkit/kiopcicapabilityidpcix.md)
+- [kIOPCICapabilityIDPCIX](../PCIDriverKit/kiopcicapabilityidpcix.md)
   The identifier for the PCI-X capability.
-- [kIOPCICapabilityIDPowerManagement](../pcidriverkit/kiopcicapabilityidpowermanagement.md)
+- [kIOPCICapabilityIDPowerManagement](../PCIDriverKit/kiopcicapabilityidpowermanagement.md)
   The identifier for the power management interface.
-- [kIOPCICapabilityIDSecure](../pcidriverkit/kiopcicapabilityidsecure.md)
+- [kIOPCICapabilityIDSecure](../PCIDriverKit/kiopcicapabilityidsecure.md)
   The identifer for the secure device capability.
-- [kIOPCICapabilityIDSlotID](../pcidriverkit/kiopcicapabilityidslotid.md)
+- [kIOPCICapabilityIDSlotID](../PCIDriverKit/kiopcicapabilityidslotid.md)
   The identifier for the slot identification capability.
-- [kIOPCICapabilityIDVendorSpecific](../pcidriverkit/kiopcicapabilityidvendorspecific.md)
+- [kIOPCICapabilityIDVendorSpecific](../PCIDriverKit/kiopcicapabilityidvendorspecific.md)
   The identifier for any vendor-specific capabilities.
-- [kIOPCICapabilityIDVitalProductData](../pcidriverkit/kiopcicapabilityidvitalproductdata.md)
+- [kIOPCICapabilityIDVitalProductData](../PCIDriverKit/kiopcicapabilityidvitalproductdata.md)
   The identifier for the vital product data capability.
-- [kIOPCIExpressCapabilityIDAccessControlServices](../pcidriverkit/kiopciexpresscapabilityidaccesscontrolservices.md)
+- [kIOPCIExpressCapabilityIDAccessControlServices](../PCIDriverKit/kiopciexpresscapabilityidaccesscontrolservices.md)
   The identifier for the access control services extended capability.
-- [kIOPCIExpressCapabilityIDAlternativeRoutingID](../pcidriverkit/kiopciexpresscapabilityidalternativeroutingid.md)
-- [kIOPCIExpressCapabilityIDDeviceSerialNumber](../pcidriverkit/kiopciexpresscapabilityiddeviceserialnumber.md)
+- [kIOPCIExpressCapabilityIDAlternativeRoutingID](../PCIDriverKit/kiopciexpresscapabilityidalternativeroutingid.md)
+- [kIOPCIExpressCapabilityIDDeviceSerialNumber](../PCIDriverKit/kiopciexpresscapabilityiddeviceserialnumber.md)
   The identifier for the device serial number extended capability.
-- [kIOPCIExpressCapabilityIDErrorReporting](../pcidriverkit/kiopciexpresscapabilityiderrorreporting.md)
+- [kIOPCIExpressCapabilityIDErrorReporting](../PCIDriverKit/kiopciexpresscapabilityiderrorreporting.md)
   The identifier for the advanced error reporting extended capability.
-- [kIOPCIExpressCapabilityIDL1PMSubstates](../pcidriverkit/kiopciexpresscapabilityidl1pmsubstates.md)
+- [kIOPCIExpressCapabilityIDL1PMSubstates](../PCIDriverKit/kiopciexpresscapabilityidl1pmsubstates.md)
   The identifier for the L1 power management substates extended capability.
-- [kIOPCIExpressCapabilityIDLatencyTolerenceReporting](../pcidriverkit/kiopciexpresscapabilityidlatencytolerencereporting.md)
+- [kIOPCIExpressCapabilityIDLatencyTolerenceReporting](../PCIDriverKit/kiopciexpresscapabilityidlatencytolerencereporting.md)
   The identifier for the latency tolerance reporting extended capability.
-- [kIOPCIExpressCapabilityIDPowerBudget](../pcidriverkit/kiopciexpresscapabilityidpowerbudget.md)
+- [kIOPCIExpressCapabilityIDPowerBudget](../PCIDriverKit/kiopciexpresscapabilityidpowerbudget.md)
   The identifier for the power budgeting extended capability.
-- [kIOPCIExpressCapabilityIDPrecisionTimeManagement](../pcidriverkit/kiopciexpresscapabilityidprecisiontimemanagement.md)
-- [kIOPCIExpressCapabilityIDVirtualChannel](../pcidriverkit/kiopciexpresscapabilityidvirtualchannel.md)
+- [kIOPCIExpressCapabilityIDPrecisionTimeManagement](../PCIDriverKit/kiopciexpresscapabilityidprecisiontimemanagement.md)
+- [kIOPCIExpressCapabilityIDVirtualChannel](../PCIDriverKit/kiopciexpresscapabilityidvirtualchannel.md)
   The identifier for the virtual channel extended capability.
 
 

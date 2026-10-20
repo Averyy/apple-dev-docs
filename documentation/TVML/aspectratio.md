@@ -1,6 +1,7 @@
 # aspectRatio
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the aspect ratio of an image.
 
@@ -14,15 +15,16 @@ The attribute’s value should correlate with the aspect ratio of the source ima
 <img contentsMode="aspectFit" width="300" height="200" aspectRatio="1.5" src="path to images on your server/Car_Movie_300x200.png"/>
 ```
 
-##### Elements That Use Aspectratio
+##### Elements that Use aspectRatio
 
-- [`contentsMode`](contentsmode.md)
+- [contentsMode](./contentsmode.md)
 
 ## See Also
 
-- [height](image-attributes-height.md)
+### Image Size
+- [height](./image-attributes-height.md)
   Specifies the maximum height for an image.
-- [width](image-attributes-width.md)
+- [width](./image-attributes-width.md)
   Specifies the maximum width for an image element.
 
 

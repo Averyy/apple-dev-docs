@@ -1,17 +1,22 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier string for the table column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var identifier: NSUserInterfaceItemIdentifier { get set }
+```
+
+```objc
+@property (copy) NSUserInterfaceItemIdentifier identifier;
 ```
 
 #### Discussion

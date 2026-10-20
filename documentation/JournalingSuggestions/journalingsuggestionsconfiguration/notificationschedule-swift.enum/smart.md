@@ -1,7 +1,8 @@
 # JournalingSuggestionsConfiguration.NotificationSchedule.smart
 
 **Framework**: Journaling Suggestions  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates the system personalizes the notification schedule for the person.
 
@@ -16,13 +17,14 @@ case smart
 
 ## Mentions
 
-- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+- [Receiving journaling suggestions system notifications](../../receiving-journaling-suggestions-from-system-notifications.md)
 
 ## See Also
 
-- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.md)
+### Identifying a notification schedule
+- [JournalingSuggestionsConfiguration.NotificationSchedule.custom](./custom.md)
   An option that indicates the person chooses a specific notification schedule in Settings.
-- [JournalingSuggestionsConfiguration.NotificationSchedule.off](journalingsuggestionsconfiguration/notificationschedule-swift.enum/off.md)
+- [JournalingSuggestionsConfiguration.NotificationSchedule.off](./off.md)
   An option that indicates the app doesn’t receive notifications.
 
 

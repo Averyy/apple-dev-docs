@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor used to discover the accessory.
 
@@ -14,6 +15,10 @@ The descriptor used to discover the accessory.
 ```swift
 @NSCopying
 var descriptor: ASDiscoveryDescriptor { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) ASDiscoveryDescriptor * descriptor;
 ```
 
 

@@ -1,7 +1,8 @@
 # itemFrame(at:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the frame rectangle for the item located at the specified index.
 
@@ -14,6 +15,10 @@ Returns the frame rectangle for the item located at the specified index.
 func itemFrame(at index: Int) -> NSRect
 ```
 
+```objc
+- (NSRect) itemFrameAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
 The frame rectangle of the item.
@@ -24,11 +29,12 @@ The frame rectangle of the item.
 
 ## See Also
 
-- [func indexOfItem(at: NSPoint) -> Int](ikimagebrowserview/indexofitem(at:).md)
+### Getting Item Information
+- [func indexOfItem(at: NSPoint) -> Int](./indexofitem%28at%29.md)
   Returns the index of the item at the specified location.
-- [func visibleItemIndexes() -> IndexSet!](ikimagebrowserview/visibleitemindexes.md)
+- [func visibleItemIndexes() -> IndexSet!](./visibleitemindexes%28%29.md)
   Returns the indexes of the view’s currently visible items.
-- [func cellForItem(at: Int) -> IKImageBrowserCell!](ikimagebrowserview/cellforitem(at:).md)
+- [func cellForItem(at: Int) -> IKImageBrowserCell!](./cellforitem%28at%29.md)
   Returns the browser cell for the item at the specified index.
 
 

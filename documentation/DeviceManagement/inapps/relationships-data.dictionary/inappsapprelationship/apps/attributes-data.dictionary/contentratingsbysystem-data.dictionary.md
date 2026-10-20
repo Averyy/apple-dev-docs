@@ -1,11 +1,12 @@
 # InApps.Relationships.InAppsAppRelationship.Apps.Attributes.ContentRatingsBySystem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.ContentRatingsBySystem
 ```
 

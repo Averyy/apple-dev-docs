@@ -1,7 +1,8 @@
 # setClasses(_:for:argumentIndex:ofReply:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the classes that can appear within the (numerically) specified collection object argument to the specified method.
 
@@ -20,6 +21,10 @@ Sets the classes that can appear within the (numerically) specified collection o
 func setClasses(_ classes: Set<AnyHashable>, for sel: Selector, argumentIndex arg: Int, ofReply: Bool)
 ```
 
+```objc
+- (void) setClasses:(NSSet<Class> *) classes forSelector:(SEL) sel argumentIndex:(NSUInteger) arg ofReply:(BOOL) ofReply;
+```
+
 #### Discussion
 
 If an argument to a method in your protocol is a collection class (for example, NSArray or NSDictionary), then you must explicitly specify the set of expected classes that may appear within that collection.
@@ -31,7 +36,7 @@ If the expected classes are all property list types, calling this method is opti
 - `classes`: An `NSSet` containing Class objects—for example, `[MyObject class]`.
 - `sel`: Specifies which method in the protocol is being configured.
 - `arg`: Specifies the position (starting at index 0) of the parameter for which you are allowing classes. This may be either the position of a parameter in the method itself or the position in its reply block.
-- `ofReply`: Pass [`true`](https://developer.apple.com/documentation/swift/true) if `arg` is an index into the parameters of the reply block, or [`false`](https://developer.apple.com/documentation/swift/false) if it is an index into the parameters of the method itself.
+- `ofReply`: Pass [`true`](../../Swift/true.md) if `arg` is an index into the parameters of the reply block, or [`false`](../../Swift/false.md) if it is an index into the parameters of the method itself.
 
 
 ---

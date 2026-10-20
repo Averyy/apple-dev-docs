@@ -1,7 +1,8 @@
 # configuration(for:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the MMS configuration for the carrier.
 
@@ -16,13 +17,15 @@ final func configuration(for cellularServiceID: CellularServiceID) async throws 
 
 #### Return Value
 
-An [`MMSService.Configuration`](mmsservice/configuration.md) instance that describes the MMS configuration.
+An [`MMSService.Configuration`](./configuration.md) instance that describes the MMS configuration.
 
 #### Discussion
 
 Fetch the MMS configuration when your app launches and during susbscription change events.
 
-> **Note**: - [`TelephonyMessagingSession.Error.invalidSession`](telephonymessagingsession/error/invalidsession.md) if the session isn’t valid.
+> **Throws**:
+>
+> - [`TelephonyMessagingSession.Error.invalidSession`](../telephonymessagingsession/error/invalidsession.md) if the session isn’t valid.
 
 ## Parameters
 
@@ -30,7 +33,8 @@ Fetch the MMS configuration when your app launches and during susbscription chan
 
 ## See Also
 
-- [MMSService.Configuration](mmsservice/configuration.md)
+### Managing MMS configuration
+- [MMSService.Configuration](./configuration.md)
   A structure that provides information about MMS messages sent and received using the current carrier.
 
 

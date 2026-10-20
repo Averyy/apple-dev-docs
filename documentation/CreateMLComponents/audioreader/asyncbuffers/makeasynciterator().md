@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs an iterator.
 
@@ -21,7 +22,8 @@ func makeAsyncIterator() -> AudioReader.AsyncBuffers.Iterator
 
 ## See Also
 
-- [AudioReader.AsyncBuffers.Iterator](audioreader/asyncbuffers/iterator.md)
+### Creating an iterator
+- [AudioReader.AsyncBuffers.Iterator](./iterator.md)
   An async iterator of audio buffers.
 
 

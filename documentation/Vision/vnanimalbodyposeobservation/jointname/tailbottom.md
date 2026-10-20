@@ -1,7 +1,8 @@
 # tailBottom
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the bottom of the tail.
 
@@ -19,11 +20,16 @@ A joint name that represents the bottom of the tail.
 static let tailBottom: VNAnimalBodyPoseObservation.JointName
 ```
 
+```c
+extern VNAnimalBodyPoseObservationJointName const VNAnimalBodyPoseObservationJointNameTailBottom;
+```
+
 ## See Also
 
-- [static let tailTop: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/tailtop.md)
+### Getting the Tail Joint Names
+- [static let tailTop: VNAnimalBodyPoseObservation.JointName](./tailtop.md)
   A joint name that represents the top of the tail.
-- [static let tailMiddle: VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname/tailmiddle.md)
+- [static let tailMiddle: VNAnimalBodyPoseObservation.JointName](./tailmiddle.md)
   A joint name that represents the middle of the tail.
 
 

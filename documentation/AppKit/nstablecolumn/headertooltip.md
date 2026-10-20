@@ -1,7 +1,8 @@
 # headerToolTip
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that’s displayed in a help tag over the table column header.
 
@@ -12,6 +13,10 @@ The string that’s displayed in a help tag over the table column header.
 
 ```swift
 var headerToolTip: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * headerToolTip;
 ```
 
 #### Discussion

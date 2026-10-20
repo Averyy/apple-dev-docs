@@ -1,7 +1,8 @@
 # payUpFront
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A payment mode of a product discount that applies the discount up front.
 
@@ -24,13 +25,14 @@ static let payUpFront: Product.SubscriptionOffer.PaymentMode
 
 With a Pay Up Front payment mode, subscribers pay a one-time discounted price for a specific duration.
 
-![A timeline titled Pay Up Front that’s divided into three sections. The first section, labeled Introductory price has a longer timespan than the following sections which are both labeled Regular price. The timeline starts with the initial purchase at the introductory price, followed by the first and second renewals, both at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](/images/com.apple.storekit/media-4311773@2x.png)
+![A timeline titled Pay Up Front that’s divided into three sections. The first section, labeled Introductory price has a longer timespan than the following sections which are both labeled Regular price. The timeline starts with the initial purchase at the introductory price, followed by the first and second renewals, both at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-4311773@2x.png)
 
 ## See Also
 
-- [static let freeTrial: Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct/freetrial.md)
+### Getting the payment modes
+- [static let freeTrial: Product.SubscriptionOffer.PaymentMode](./freetrial.md)
   A payment mode of a product discount that indicates a free trial offer.
-- [static let payAsYouGo: Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct/payasyougo.md)
+- [static let payAsYouGo: Product.SubscriptionOffer.PaymentMode](./payasyougo.md)
   A payment mode of a product discount that applies over a single billing period or multiple billing periods.
 
 

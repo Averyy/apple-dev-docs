@@ -1,16 +1,21 @@
 # tcc_modify
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var tcc_modify: UnsafeMutablePointer<es_event_tcc_modify_t> { get set }
+```
+
+```c
+es_event_tcc_modify_t * tcc_modify;
 ```
 
 

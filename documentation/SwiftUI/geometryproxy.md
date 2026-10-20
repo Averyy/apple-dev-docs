@@ -1,7 +1,8 @@
 # GeometryProxy
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
 
@@ -23,58 +24,59 @@ struct GeometryProxy
 ## Topics
 
 ### Accessing geometry characteristics
-- [func bounds(of: NamedCoordinateSpace) -> CGRect?](geometryproxy/bounds(of:).md)
+- [func bounds(of: NamedCoordinateSpace) -> CGRect?](./geometryproxy/bounds%28of%29.md)
   Returns the given coordinate space’s bounds rectangle, converted to the local coordinate space.
-- [var concentricCornerRadii: RectangleCornerRadii?](geometryproxy/concentriccornerradii.md)
+- [var concentricCornerRadii: RectangleCornerRadii?](./geometryproxy/concentriccornerradii.md)
   The concentric corner radii for this view’s bounds relative to the container shape.
-- [func concentricCornerRadii(in: CGRect) -> RectangleCornerRadii?](geometryproxy/concentriccornerradii(in:).md)
+- [func concentricCornerRadii(in: CGRect) -> RectangleCornerRadii?](./geometryproxy/concentriccornerradii%28in%29.md)
   Returns the concentric corner radii for the specified frame relative to the container shape.
-- [var containerCornerInsets: RectangleCornerInsets](geometryproxy/containercornerinsets.md)
+- [var containerCornerInsets: RectangleCornerInsets](./geometryproxy/containercornerinsets.md)
   Returns the corner insets of the container view. Use this value to adjust the geometry of a view based on the overlapping corner insets of the container view. Corner insets may include pieces of system UI as well as the corner radii for windows and presentations.
-- [var size: CGSize](geometryproxy/size.md)
+- [var size: CGSize](./geometryproxy/size.md)
   The size of the container view.
-- [var safeAreaInsets: EdgeInsets](geometryproxy/safeareainsets.md)
+- [var safeAreaInsets: EdgeInsets](./geometryproxy/safeareainsets.md)
   The safe area inset of the container view.
-- [subscript<T>(Anchor<T>) -> T](geometryproxy/subscript(_:).md)
+- [subscript<T>(Anchor<T>) -> T](./geometryproxy/subscript%28_%29.md)
   Resolves the value of an anchor to the container view.
-- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy/transform(in:).md)
+- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](./geometryproxy/transform%28in%29.md)
   The container view’s 3D transform converted to a defined coordinate space.
-- [func frame(in:)](geometryproxy/frame(in:).md)
+- [func frame(in:)](./geometryproxy/frame%28in%29.md)
   Returns the container view’s bounds rectangle, converted to a defined coordinate space.
 ### Inspecting reserved regions
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](./geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](./reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
+- [ReservedRegion.Kind](./reservedregion/kind-swift.struct.md)
   A kind of reserved region.
-- [ReservedRegion.QueryOptions](reservedregion/queryoptions.md)
+- [ReservedRegion.QueryOptions](./reservedregion/queryoptions.md)
   Options for querying reserved regions.
 ### Instance Methods
-- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set) -> EdgeInsets](geometryproxy/contentmargins(for:edges:).md)
+- [func contentMargins(for: ContentMarginGuide, edges: Edge.Set) -> EdgeInsets](./geometryproxy/contentmargins%28for,edges%29.md)
   The insets of a content margin guide for the given edges.
 
 ## See Also
 
-- [struct GeometryReader](geometryreader.md)
+### Measuring a view
+- [struct GeometryReader](./geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryReader3D](geometryreader3d.md)
+- [struct GeometryReader3D](./geometryreader3d.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](./geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](./reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [struct GeometryProxy3D](geometryproxy3d.md)
+- [struct GeometryProxy3D](./geometryproxy3d.md)
   A proxy for access to the size and coordinate space of the container view.
-- [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)
+- [func coordinateSpace(NamedCoordinateSpace) -> some View](./view/coordinatespace%28_%29.md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](./coordinatespace.md)
   A resolved coordinate space created by the coordinate space protocol.
-- [protocol CoordinateSpaceProtocol](coordinatespaceprotocol.md)
+- [protocol CoordinateSpaceProtocol](./coordinatespaceprotocol.md)
   A frame of reference within the layout system.
-- [struct PhysicalMetric](physicalmetric.md)
+- [struct PhysicalMetric](./physicalmetric.md)
   Provides access to a value in points that corresponds to the specified physical measurement.
-- [struct PhysicalMetricsConverter](physicalmetricsconverter.md)
+- [struct PhysicalMetricsConverter](./physicalmetricsconverter.md)
   A physical metrics converter provides conversion between point values and their extent in 3D space, in the form of physical length measurements.
 
 

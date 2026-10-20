@@ -1,7 +1,8 @@
 # IOBluetoothL2CAPChannelTerminated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.0+
@@ -14,9 +15,10 @@ static let IOBluetoothL2CAPChannelTerminated: NSNotification.Name
 
 ## See Also
 
-- [static let IOBluetoothHostControllerPoweredOff: NSNotification.Name](nsnotification/name-swift.struct/iobluetoothhostcontrollerpoweredoff.md)
-- [static let IOBluetoothHostControllerPoweredOn: NSNotification.Name](nsnotification/name-swift.struct/iobluetoothhostcontrollerpoweredon.md)
-- [static let IOBluetoothL2CAPChannelPublished: NSNotification.Name](nsnotification/name-swift.struct/iobluetoothl2capchannelpublished.md)
+### IOBluetooth
+- [static let IOBluetoothHostControllerPoweredOff: NSNotification.Name](./iobluetoothhostcontrollerpoweredoff.md)
+- [static let IOBluetoothHostControllerPoweredOn: NSNotification.Name](./iobluetoothhostcontrollerpoweredon.md)
+- [static let IOBluetoothL2CAPChannelPublished: NSNotification.Name](./iobluetoothl2capchannelpublished.md)
 
 
 ---

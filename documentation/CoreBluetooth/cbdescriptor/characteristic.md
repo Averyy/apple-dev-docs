@@ -1,7 +1,8 @@
 # characteristic
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characteristic to which this descriptor belongs.
 
@@ -18,6 +19,10 @@ The characteristic to which this descriptor belongs.
 
 ```swift
 weak var characteristic: CBCharacteristic? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) CBCharacteristic * characteristic;
 ```
 
 

@@ -1,14 +1,15 @@
 # ReadTOC
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn ReadTOC(IOMemoryDescriptor *buffer, CDTOCFormat format, UInt8 msf, UInt32 trackSessionNumber, UInt16 *actualByteCount);
 ```
 

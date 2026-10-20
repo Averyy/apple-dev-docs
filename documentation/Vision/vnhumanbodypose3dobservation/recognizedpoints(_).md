@@ -1,7 +1,8 @@
 # recognizedPoints(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collection of points for the group name you specify.
 
@@ -19,6 +20,10 @@ Returns a collection of points for the group name you specify.
 func recognizedPoints(_ jointsGroupName: VNHumanBodyPose3DObservation.JointsGroupName) throws -> [VNHumanBodyPose3DObservation.JointName : VNHumanBodyRecognizedPoint3D]
 ```
 
+```objc
+- (NSDictionary<NSString *,VNHumanBodyRecognizedPoint3D *> *) recognizedPointsForJointsGroupName:(VNHumanBodyPose3DObservationJointsGroupName) jointsGroupName error:(NSError **) error;
+```
+
 #### Return Value
 
 A collection of points.
@@ -29,15 +34,16 @@ A collection of points.
 
 ## See Also
 
-- [var availableJointNames: [VNHumanBodyPose3DObservation.JointName]](vnhumanbodypose3dobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNHumanBodyPose3DObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname.md)
+- [VNHumanBodyPose3DObservation.JointName](./jointname.md)
   The joint names for a 3D body pose.
-- [var availableJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](vnhumanbodypose3dobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The available joint group names in the observation.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./jointsgroupname.md)
   The joint group names for a 3D body pose.
-- [func recognizedPoint(VNHumanBodyPose3DObservation.JointName) throws -> VNHumanBodyRecognizedPoint3D](vnhumanbodypose3dobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanBodyPose3DObservation.JointName) throws -> VNHumanBodyRecognizedPoint3D](./recognizedpoint%28_%29.md)
   Returns the point for a joint name that the observation recognizes.
 
 

@@ -1,7 +1,8 @@
 # isFailure
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not this issue should cause the test it’s associated with to be considered a failure.
 
@@ -15,7 +16,7 @@ var isFailure: Bool { get }
 
 The value of this property is `YES` for issues which have a severity level of `.error` or higher. Otherwise, the value of this property is `NO`.
 
-Use this property to determine if an issue should be considered a failure, instead of directly comparing the value of the [`severity`](xctissue-swift.struct/severity-swift.property.md) property.
+Use this property to determine if an issue should be considered a failure, instead of directly comparing the value of the [`severity`](./severity-swift.property.md) property.
 
 
 ---

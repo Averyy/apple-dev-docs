@@ -1,7 +1,8 @@
 # EquatableView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view type that compares itself against its previous value and prevents its child updating if its new value is the same as its old value.
 
@@ -24,23 +25,24 @@ nonisolated struct EquatableView<Content> where Content : Equatable, Content : V
 ## Topics
 
 ### Creating an equatable view
-- [init(content: Content)](equatableview/init(content:).md)
-- [var content: Content](equatableview/content.md)
+- [init(content: Content)](./equatableview/init%28content%29.md)
+- [var content: Content](./equatableview/content.md)
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct AnyView](anyview.md)
+### Supporting view types
+- [struct AnyView](./anyview.md)
   A type-erased view.
-- [struct EmptyView](emptyview.md)
+- [struct EmptyView](./emptyview.md)
   A view that doesn’t contain any content.
-- [struct SubscriptionView](subscriptionview.md)
+- [struct SubscriptionView](./subscriptionview.md)
   A view that subscribes to a publisher with an action.
-- [struct TupleView](tupleview.md)
+- [struct TupleView](./tupleview.md)
   A View created from a swift tuple of View values.
 
 

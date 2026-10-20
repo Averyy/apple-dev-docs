@@ -1,7 +1,8 @@
 # init(block:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an `NSBlockOperation` object and adds the specified block to it.
 
@@ -20,6 +21,10 @@ Creates and returns an `NSBlockOperation` object and adds the specified block to
 convenience init(block: @escaping @Sendable () -> Void)
 ```
 
+```objc
++ (instancetype) blockOperationWithBlock:(void (^)()) block;
+```
+
 #### Return Value
 
 A new block operation object.
@@ -30,10 +35,12 @@ A new block operation object.
 
 ## See Also
 
-- [Threading Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
-- [func addExecutionBlock(() -> Void)](blockoperation/addexecutionblock(_:).md)
+### Related Documentation
+- [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
+### Managing the Blocks in the Operation
+- [func addExecutionBlock(() -> Void)](./addexecutionblock%28_%29.md)
   Adds the specified block to the receiver’s list of blocks to perform.
-- [var executionBlocks: [() -> Void]](blockoperation/executionblocks.md)
+- [var executionBlocks: [() -> Void]](./executionblocks.md)
   The blocks associated with the receiver.
 
 

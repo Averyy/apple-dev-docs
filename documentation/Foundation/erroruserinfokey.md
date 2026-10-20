@@ -1,7 +1,8 @@
 # ErrorUserInfoKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These keys may exist in the user info dictionary.
 
@@ -23,33 +24,34 @@ struct ErrorUserInfoKey
 ## Topics
 
 ### Type Properties
-- [static let NSURLErrorKey: ErrorUserInfoKey](erroruserinfokey/nsurlerrorkey.md)
-- [static let filePathErrorKey: ErrorUserInfoKey](erroruserinfokey/filepatherrorkey.md)
-- [static let helpAnchorErrorKey: ErrorUserInfoKey](erroruserinfokey/helpanchorerrorkey.md)
-- [static let localizedDescriptionKey: ErrorUserInfoKey](erroruserinfokey/localizeddescriptionkey.md)
-- [static let localizedFailureReasonErrorKey: ErrorUserInfoKey](erroruserinfokey/localizedfailurereasonerrorkey.md)
-- [static let localizedRecoveryOptionsErrorKey: ErrorUserInfoKey](erroruserinfokey/localizedrecoveryoptionserrorkey.md)
-- [static let localizedRecoverySuggestionErrorKey: ErrorUserInfoKey](erroruserinfokey/localizedrecoverysuggestionerrorkey.md)
-- [static let recoveryAttempterErrorKey: ErrorUserInfoKey](erroruserinfokey/recoveryattemptererrorkey.md)
-- [static let stringEncodingErrorKey: ErrorUserInfoKey](erroruserinfokey/stringencodingerrorkey.md)
-- [static let underlyingErrorKey: ErrorUserInfoKey](erroruserinfokey/underlyingerrorkey.md)
+- [static let NSURLErrorKey: ErrorUserInfoKey](./erroruserinfokey/nsurlerrorkey.md)
+- [static let filePathErrorKey: ErrorUserInfoKey](./erroruserinfokey/filepatherrorkey.md)
+- [static let helpAnchorErrorKey: ErrorUserInfoKey](./erroruserinfokey/helpanchorerrorkey.md)
+- [static let localizedDescriptionKey: ErrorUserInfoKey](./erroruserinfokey/localizeddescriptionkey.md)
+- [static let localizedFailureReasonErrorKey: ErrorUserInfoKey](./erroruserinfokey/localizedfailurereasonerrorkey.md)
+- [static let localizedRecoveryOptionsErrorKey: ErrorUserInfoKey](./erroruserinfokey/localizedrecoveryoptionserrorkey.md)
+- [static let localizedRecoverySuggestionErrorKey: ErrorUserInfoKey](./erroruserinfokey/localizedrecoverysuggestionerrorkey.md)
+- [static let recoveryAttempterErrorKey: ErrorUserInfoKey](./erroruserinfokey/recoveryattemptererrorkey.md)
+- [static let stringEncodingErrorKey: ErrorUserInfoKey](./erroruserinfokey/stringencodingerrorkey.md)
+- [static let underlyingErrorKey: ErrorUserInfoKey](./erroruserinfokey/underlyingerrorkey.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func setUserInfoValueProvider(forDomain: String, provider: ((any Error, String) -> Any?)?)](nserror/setuserinfovalueprovider(fordomain:provider:).md)
+### Providing Error User Info
+- [class func setUserInfoValueProvider(forDomain: String, provider: ((any Error, String) -> Any?)?)](./nserror/setuserinfovalueprovider%28fordomain,provider%29.md)
   Specifies a block to call when the corresponding property is not present in the user info dictionary.
-- [class func userInfoValueProvider(forDomain: String) -> ((any Error, String) -> Any?)?](nserror/userinfovalueprovider(fordomain:).md)
+- [class func userInfoValueProvider(forDomain: String) -> ((any Error, String) -> Any?)?](./nserror/userinfovalueprovider%28fordomain%29.md)
   Returns any user info provider specified for a given error domain.
-- [typealias UserInfoKey](nserror/userinfokey.md)
+- [typealias UserInfoKey](./nserror/userinfokey.md)
   These keys may exist in the user info dictionary.
 
 

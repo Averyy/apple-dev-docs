@@ -1,7 +1,8 @@
 # allObjects
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the set’s members, or an empty array if the set has no members.
 
@@ -20,29 +21,34 @@ An array containing the set’s members, or an empty array if the set has no mem
 var allObjects: [Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<id> * allObjects;
+```
+
 #### Discussion
 
 The order of the objects in the array is undefined.
 
 ## See Also
 
-- [func anyObject() -> Any?](nsset/anyobject.md)
+### Accessing Set Members
+- [func anyObject() -> Any?](./anyobject%28%29.md)
   Returns one of the objects in the set, or `nil` if the set contains no objects.
-- [func contains(Any) -> Bool](nsset/contains(_:).md)
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the set.
-- [func filtered(using: NSPredicate) -> Set<AnyHashable>](nsset/filtered(using:).md)
+- [func filtered(using: NSPredicate) -> Set<AnyHashable>](./filtered%28using%29.md)
   Evaluates a given predicate against each object in the receiving set and returns a new set containing the objects for which the predicate returns true.
-- [func member(Any) -> Any?](nsset/member(_:).md)
+- [func member(Any) -> Any?](./member%28_%29.md)
   Determines whether a given object is present in the set, and returns that object if it is.
-- [func objectEnumerator() -> NSEnumerator](nsset/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the set.
-- [func enumerateObjects((Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsset/enumerateobjects(_:).md)
+- [func enumerateObjects((Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28_%29.md)
   Executes a given block using each object in the set.
-- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsset/enumerateobjects(options:using:).md)
+- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28options,using%29.md)
   Executes a given block using each object in the set, using the specified enumeration options.
-- [func objects(passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsset/objects(passingtest:).md)
+- [func objects(passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./objects%28passingtest%29.md)
   Returns a set of objects that pass a test in a given block.
-- [func objects(options: NSEnumerationOptions, passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsset/objects(options:passingtest:).md)
+- [func objects(options: NSEnumerationOptions, passingTest: (Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./objects%28options,passingtest%29.md)
   Returns a set of objects that pass a test in a given block, using the specified enumeration options.
 
 

@@ -1,7 +1,8 @@
 # allowsPickingMultipleItems
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value specifying the default selection behavior for a media item picker.
 
@@ -16,19 +17,24 @@ A Boolean value specifying the default selection behavior for a media item picke
 var allowsPickingMultipleItems: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsPickingMultipleItems;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the media item picker allows the selection of multiple media items. When set to [`false`](https://developer.apple.com/documentation/swift/false), the media picker only allows the selection of a single media item. The label for the button that dismisses the picker is “Done” when this value is [`true`](https://developer.apple.com/documentation/swift/true) and “Cancel” when it’s [`false`](https://developer.apple.com/documentation/swift/false).
+When set to [`true`](../../Swift/true.md), the media item picker allows the selection of multiple media items. When set to [`false`](../../Swift/false.md), the media picker only allows the selection of a single media item. The label for the button that dismisses the picker is “Done” when this value is [`true`](../../Swift/true.md) and “Cancel” when it’s [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var showsCloudItems: Bool](mpmediapickercontroller/showsclouditems.md)
+### Using a media item picker
+- [var showsCloudItems: Bool](./showsclouditems.md)
   A Boolean value specifying whether to display iCloud Media Library items for a media picker.
-- [var mediaTypes: MPMediaType](mpmediapickercontroller/mediatypes.md)
+- [var mediaTypes: MPMediaType](./mediatypes.md)
   The media types that media item picker presents.
-- [var prompt: String?](mpmediapickercontroller/prompt.md)
+- [var prompt: String?](./prompt.md)
   A prompt, for the user, that appears above the navigation bar buttons.
-- [var showsItemsWithProtectedAssets: Bool](mpmediapickercontroller/showsitemswithprotectedassets.md)
+- [var showsItemsWithProtectedAssets: Bool](./showsitemswithprotectedassets.md)
   A Boolean value that specifies whether the media item picker displays protected assets.
 
 

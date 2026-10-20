@@ -1,7 +1,8 @@
 # pipeRef
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A reference to the USB pipe.
 
@@ -10,19 +11,20 @@ A reference to the USB pipe.
 
 ## Declaration
 
-```swift
+```c
 UInt32 pipeRef;
 ```
 
 ## See Also
 
-- [buf](iousbbulkpipereq/1546177-buf.md)
+### Getting the Properties
+- [buf](./api-1546177-buf.md)
   A pointer to the request buffer.
-- [size](iousbbulkpipereq/1546366-size.md)
+- [size](./api-1546366-size.md)
   The requested size of the pipe.
-- [noDataTimeout](iousbbulkpipereq/1546036-nodatatimeout.md)
+- [noDataTimeout](./api-1546036-nodatatimeout.md)
   The timeout if no data is available.
-- [completionTimeout](iousbbulkpipereq/1545958-completiontimeout.md)
+- [completionTimeout](./api-1545958-completiontimeout.md)
   The completion timeout value.
 
 

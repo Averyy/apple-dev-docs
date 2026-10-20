@@ -1,7 +1,8 @@
 # isOutgoing
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the call is outgoing.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the call is outgoing.
 var isOutgoing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isOutgoing) BOOL outgoing;
+```
+
 #### Discussion
 
 An outgoing call is a call initiated by the user, as opposed to an incoming call which is received by the telephony provider.
 
 ## See Also
 
-- [var uuid: UUID](cxcall/uuid.md)
+### Accessing Call Attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier for the call.
-- [var hasConnected: Bool](cxcall/hasconnected.md)
+- [var hasConnected: Bool](./hasconnected.md)
   A Boolean value that indicates whether the call has connected.
-- [var hasEnded: Bool](cxcall/hasended.md)
+- [var hasEnded: Bool](./hasended.md)
   A Boolean value that indicates whether the call has ended.
-- [var isOnHold: Bool](cxcall/isonhold.md)
+- [var isOnHold: Bool](./isonhold.md)
   A Boolean value that indicates whether the call is on hold.
 
 

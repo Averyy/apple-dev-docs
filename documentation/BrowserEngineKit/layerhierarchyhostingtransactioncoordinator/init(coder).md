@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transaction coordinator from an encoded representation.
 
@@ -25,7 +26,8 @@ This initializer can fail and return `nil` if the specified `coder` fails to dec
 
 ## See Also
 
-- [init() throws](layerhierarchyhostingtransactioncoordinator/init.md)
+### Creating a transaction coordinator
+- [init() throws](./init%28%29.md)
   Creates a transaction coordinator.
 
 

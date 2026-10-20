@@ -1,7 +1,8 @@
 # JSContextRef
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A JavaScript execution context.
 
@@ -19,6 +20,10 @@ A JavaScript execution context.
 typealias JSContextRef = OpaquePointer
 ```
 
+```c
+typedef const struct OpaqueJSContext * JSContextRef;
+```
+
 #### Discussion
 
 This holds the global object and other execution state.
@@ -26,25 +31,26 @@ This holds the global object and other execution state.
 ## Topics
 
 ### Creating a Context Group
-- [func JSContextGroupCreate() -> JSContextGroupRef!](jscontextgroupcreate().md)
+- [func JSContextGroupCreate() -> JSContextGroupRef!](./jscontextgroupcreate%28%29.md)
   Creates a JavaScript context group.
-- [func JSContextGroupRetain(JSContextGroupRef!) -> JSContextGroupRef!](jscontextgroupretain(_:).md)
+- [func JSContextGroupRetain(JSContextGroupRef!) -> JSContextGroupRef!](./jscontextgroupretain%28_%29.md)
   Retains a JavaScript context group.
-- [func JSContextGroupRelease(JSContextGroupRef!)](jscontextgrouprelease(_:).md)
+- [func JSContextGroupRelease(JSContextGroupRef!)](./jscontextgrouprelease%28_%29.md)
   Releases a JavaScript context group.
 ### Accessing the Global Context
-- [func JSContextGetGlobalContext(JSContextRef!) -> JSGlobalContextRef!](jscontextgetglobalcontext(_:).md)
+- [func JSContextGetGlobalContext(JSContextRef!) -> JSGlobalContextRef!](./jscontextgetglobalcontext%28_%29.md)
   Gets the global context of a JavaScript execution context.
 
 ## See Also
 
-- [typealias JSContextGroupRef](jscontextgroupref.md)
+### JavaScriptCore Engine Interface
+- [typealias JSContextGroupRef](./jscontextgroupref.md)
   A group that associates JavaScript contexts with one another.
-- [typealias JSGlobalContextRef](jsglobalcontextref.md)
+- [typealias JSGlobalContextRef](./jsglobalcontextref.md)
   A global JavaScript execution context.
-- [typealias JSStringRef](jsstringref.md)
+- [typealias JSStringRef](./jsstringref.md)
   A UTF-16 character buffer.
-- [typealias JSClassRef](jsclassref.md)
+- [typealias JSClassRef](./jsclassref.md)
   A JavaScript class.
 
 

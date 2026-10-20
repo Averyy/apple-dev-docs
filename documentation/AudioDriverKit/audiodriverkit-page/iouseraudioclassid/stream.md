@@ -1,7 +1,8 @@
 # Stream
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio stream class.
 
@@ -10,7 +11,7 @@ The identifier for the audio stream class.
 
 ## Declaration
 
-```swift
+```c
 Stream
 ```
 

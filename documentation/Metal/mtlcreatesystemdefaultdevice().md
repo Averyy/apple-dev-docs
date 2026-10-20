@@ -1,7 +1,8 @@
 # MTLCreateSystemDefaultDevice()
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the device instance Metal selects as the default.
 
@@ -10,7 +11,7 @@ Returns the device instance Metal selects as the default.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,10 +20,14 @@ Returns the device instance Metal selects as the default.
 func MTLCreateSystemDefaultDevice() -> (any MTLDevice)?
 ```
 
+```c
+extern id<MTLDevice>MTLCreateSystemDefaultDevice();
+```
+
 ## Mentions
 
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
-- [Getting the default GPU](getting-the-default-gpu.md)
+- [Developing Metal apps that run in Simulator](./developing-metal-apps-that-run-in-simulator.md)
+- [Getting the default GPU](./getting-the-default-gpu.md)
 
 #### Return Value
 
@@ -30,17 +35,18 @@ A device object.
 
 #### Discussion
 
-In macOS, in order for the system to provide a default Metal device object, you need to link to the [`Core Graphics`](https://developer.apple.com/documentation/coregraphics) framework. You usually need to do this explicitly if you’re writing apps that don’t use graphics by default, such as command line tools.
+In macOS, in order for the system to provide a default Metal device object, you need to link to the [Core Graphics](../CoreGraphics/CoreGraphics.md) framework. You usually need to do this explicitly if you’re writing apps that don’t use graphics by default, such as command line tools.
 
 ## See Also
 
-- [Getting the default GPU](getting-the-default-gpu.md)
+### Locating and inspecting a GPU device
+- [Getting the default GPU](./getting-the-default-gpu.md)
   Select the system’s default GPU device on which to run your Metal code.
-- [Detecting GPU features and Metal software versions](detecting-gpu-features-and-metal-software-versions.md)
+- [Detecting GPU features and Metal software versions](./detecting-gpu-features-and-metal-software-versions.md)
   Use the device object’s properties to determine how you perform tasks in Metal.
-- [protocol MTLDevice](mtldevice.md)
+- [protocol MTLDevice](./mtldevice.md)
   The main Metal interface to a GPU that apps use to draw graphics and run computations in parallel.
-- [Multi-GPU systems](multi-gpu-systems.md)
+- [Multi-GPU systems](./multi-gpu-systems.md)
   Locate and work with internal and external GPUs and their displays, video memory, and performance tradeoffs.
 
 

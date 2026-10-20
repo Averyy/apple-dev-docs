@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *reserved;
 ```
 
@@ -15,7 +15,8 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
-- [filterAction](iofilterinterrupteventsource/filteraction.md)
+### Instance Variables
+- [filterAction](./filteraction.md)
 
 
 ---

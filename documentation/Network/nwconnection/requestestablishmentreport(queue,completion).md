@@ -1,7 +1,8 @@
 # requestEstablishmentReport(queue:completion:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a copy of the connection’s establishment report once the connection is in the ready state.
 
@@ -23,15 +24,16 @@ final func requestEstablishmentReport(queue: DispatchQueue, completion: @escapin
 
 ## See Also
 
-- [Collecting Network Connection Metrics](collecting-network-connection-metrics.md)
+### Collecting Connection Metrics
+- [Collecting Network Connection Metrics](../collecting-network-connection-metrics.md)
   Use reports to understand how DNS and protocol handshakes impact connection establishment.
-- [NWConnection.EstablishmentReport](nwconnection/establishmentreport.md)
+- [NWConnection.EstablishmentReport](./establishmentreport.md)
   A report that provides metrics about the establishment of a connection.
-- [func startDataTransferReport() -> NWConnection.PendingDataTransferReport](nwconnection/startdatatransferreport.md)
+- [func startDataTransferReport() -> NWConnection.PendingDataTransferReport](./startdatatransferreport%28%29.md)
   Begins a new data transfer report, which can later be collected.
-- [NWConnection.PendingDataTransferReport](nwconnection/pendingdatatransferreport.md)
+- [NWConnection.PendingDataTransferReport](./pendingdatatransferreport.md)
   An outstanding data transfer report that has yet to be collected.
-- [NWConnection.DataTransferReport](nwconnection/datatransferreport.md)
+- [NWConnection.DataTransferReport](./datatransferreport.md)
   A report that provides metrics about data being sent and received on a connection.
 
 

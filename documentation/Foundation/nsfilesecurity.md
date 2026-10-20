@@ -1,7 +1,8 @@
 # NSFileSecurity
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A stub class that encapsulates security information about a file.
 
@@ -20,37 +21,42 @@ A stub class that encapsulates security information about a file.
 class NSFileSecurity
 ```
 
+```objc
+@interface NSFileSecurity : NSObject
+```
+
 #### Overview
 
-[`NSFileSecurity`](nsfilesecurity.md) contains no methods of its own. Instead, it is transparently bridged to [`CFFileSecurity`](https://developer.apple.com/documentation/corefoundation/cffilesecurity).
+[`NSFileSecurity`](./nsfilesecurity.md) contains no methods of its own. Instead, it is transparently bridged to [`CFFileSecurity`](../CoreFoundation/cffilesecurity.md).
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](nsfilesecurity/init(coder:).md)
+- [init?(coder: NSCoder)](./nsfilesecurity/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 ## See Also
 
-- [class FileHandle](filehandle.md)
+### Managed file access
+- [class FileHandle](./filehandle.md)
   An object-oriented wrapper for a file descriptor.
-- [class NSFileVersion](nsfileversion.md)
+- [class NSFileVersion](./nsfileversion.md)
   A snapshot of a file at a specific point in time.
-- [class FileWrapper](filewrapper.md)
+- [class FileWrapper](./filewrapper.md)
   A representation of a node (a file, directory, or symbolic link) in the file system.
 
 

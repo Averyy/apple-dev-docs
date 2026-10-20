@@ -1,7 +1,8 @@
 # VerifyFirmwarePasswordResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -10,7 +11,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object VerifyFirmwarePasswordResponse.ErrorChainItem
 ```
 
@@ -23,7 +24,8 @@ object VerifyFirmwarePasswordResponse.ErrorChainItem
 
 ## See Also
 
-- [object VerifyFirmwarePasswordResponse.VerifyFirmwarePassword](verifyfirmwarepasswordresponse/verifyfirmwarepassword-data.dictionary.md)
+### Objects
+- [object VerifyFirmwarePasswordResponse.VerifyFirmwarePassword](./verifyfirmwarepassword-data.dictionary.md)
   A dictionary containing the results of the command.
 
 

@@ -1,12 +1,13 @@
 # sendAction()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the action message to the target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,25 @@ Sends the action message to the target.
 func sendAction() -> Bool
 ```
 
+```objc
+- (BOOL) sendAction;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; [`false`](https://developer.apple.com/documentation/swift/false) if no target for the message could be found.
+[`true`](../../Swift/true.md) if successful; [`false`](../../Swift/false.md) if no target for the message could be found.
 
 ## See Also
 
-- [func doDoubleClick(Any?)](nsbrowser/dodoubleclick(_:).md)
+### Related Documentation
+- [func doDoubleClick(Any?)](./dodoubleclick%28_%29.md)
   Responds to double clicks in a column of the browser.
-- [func doClick(Any?)](nsbrowser/doclick(_:).md)
+- [func doClick(Any?)](./doclick%28_%29.md)
   Responds to (single) mouse clicks in a column of the browser.
-- [var doubleAction: Selector?](nsbrowser/doubleaction.md)
+### Managing Actions
+- [var doubleAction: Selector?](./doubleaction.md)
   The browser’s double-click action method.
-- [var sendsActionOnArrowKeys: Bool](nsbrowser/sendsactiononarrowkeys.md)
+- [var sendsActionOnArrowKeys: Bool](./sendsactiononarrowkeys.md)
   A Boolean that indicates whether pressing an arrow key causes an action message to be sent.
 
 

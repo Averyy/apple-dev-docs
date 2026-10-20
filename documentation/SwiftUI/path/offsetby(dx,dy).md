@@ -1,7 +1,8 @@
 # offsetBy(dx:dy:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a path constructed by translating all its points.
 
@@ -31,9 +32,10 @@ A new copy of the path with the offset applied to all points.
 
 ## See Also
 
-- [func applying(CGAffineTransform) -> Path](path/applying(_:).md)
+### Transforming the path
+- [func applying(CGAffineTransform) -> Path](./applying%28_%29.md)
   Returns a path constructed by applying the transform to all points of the path.
-- [func trimmedPath(from: CGFloat, to: CGFloat) -> Path](path/trimmedpath(from:to:).md)
+- [func trimmedPath(from: CGFloat, to: CGFloat) -> Path](./trimmedpath%28from,to%29.md)
   Returns a partial copy of the path.
 
 

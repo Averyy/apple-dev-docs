@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s delegate.
 
@@ -13,6 +14,10 @@ Returns the receiver’s delegate.
 
 ```swift
 unowned(unsafe) var delegate: (any NSSpellServerDelegate)? { get set }
+```
+
+```objc
+@property (assign, nullable) id<NSSpellServerDelegate> delegate;
 ```
 
 

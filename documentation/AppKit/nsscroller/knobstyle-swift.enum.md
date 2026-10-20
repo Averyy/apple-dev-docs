@@ -1,7 +1,8 @@
 # NSScroller.KnobStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specify different knob styles.
 
@@ -14,35 +15,40 @@ Specify different knob styles.
 enum KnobStyle
 ```
 
+```c
+enum NSScrollerKnobStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScroller.KnobStyle.default](nsscroller/knobstyle-swift.enum/default.md)
+- [NSScroller.KnobStyle.default](./knobstyle-swift.enum/default.md)
   Specifies a dark knob with a light border.
-- [NSScroller.KnobStyle.dark](nsscroller/knobstyle-swift.enum/dark.md)
+- [NSScroller.KnobStyle.dark](./knobstyle-swift.enum/dark.md)
   Specifies a dark knob.
-- [NSScroller.KnobStyle.light](nsscroller/knobstyle-swift.enum/light.md)
+- [NSScroller.KnobStyle.light](./knobstyle-swift.enum/light.md)
   Specifies a light knob.
 ### Initializers
-- [init?(rawValue: Int)](nsscroller/knobstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./knobstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScroller.Style](nsscroller/style.md)
+### Constants
+- [NSScroller.Style](./style.md)
   Constants to specify the scroller style.
-- [NSScroller.Part](nsscroller/part.md)
+- [NSScroller.Part](./part.md)
   These constants specify the different parts of the scroller:
-- [NSScroller.UsableParts](nsscroller/usableparts-swift.enum.md)
+- [NSScroller.UsableParts](./usableparts-swift.enum.md)
   These constants specify which parts of the scroller are visible.
 
 

@@ -1,7 +1,8 @@
 # TossableRepresentation.TetrahedronFace.a
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+
@@ -14,9 +15,10 @@ case a
 
 ## See Also
 
-- [TossableRepresentation.TetrahedronFace.b](tossablerepresentation/tetrahedronface/b.md)
-- [TossableRepresentation.TetrahedronFace.c](tossablerepresentation/tetrahedronface/c.md)
-- [TossableRepresentation.TetrahedronFace.d](tossablerepresentation/tetrahedronface/d.md)
+### Faces
+- [TossableRepresentation.TetrahedronFace.b](./b.md)
+- [TossableRepresentation.TetrahedronFace.c](./c.md)
+- [TossableRepresentation.TetrahedronFace.d](./d.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An unknown release.
 
@@ -18,11 +19,16 @@ An unknown release.
 static let unknown: HKFHIRRelease
 ```
 
+```c
+extern HKFHIRRelease const HKFHIRReleaseUnknown;
+```
+
 ## See Also
 
-- [static let dstu2: HKFHIRRelease](hkfhirrelease/dstu2.md)
+### Releases
+- [static let dstu2: HKFHIRRelease](./dstu2.md)
   The Second Draft Standard for Trial Use (DSTU2) release.
-- [static let r4: HKFHIRRelease](hkfhirrelease/r4.md)
+- [static let r4: HKFHIRRelease](./r4.md)
   The Release 4 (R4) release.
 
 

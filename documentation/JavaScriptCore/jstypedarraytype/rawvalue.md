@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value that represents the typed array’s type.
 
@@ -21,9 +22,10 @@ var rawValue: UInt32
 
 ## See Also
 
-- [init(UInt32)](jstypedarraytype/init(_:).md)
+### Initializers
+- [init(UInt32)](./init%28_%29.md)
   Creates a typed array.
-- [init(rawValue: UInt32)](jstypedarraytype/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a typed array with the specified raw value.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: FinanceKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Get alerted when a `BackgroundDeliveryExtension` is about to close.
@@ -25,7 +26,8 @@ This is called when the extension approaches the end of its time window and is a
 
 ## See Also
 
-- [func didReceiveData(for: [FinanceStore.BackgroundDataType]) async](backgrounddeliveryextensionproviding/didreceivedata(for:).md)
+### Instance Methods
+- [func didReceiveData(for: [FinanceStore.BackgroundDataType]) async](./didreceivedata%28for%29.md)
   Handle changes to data within the finance store.
 
 

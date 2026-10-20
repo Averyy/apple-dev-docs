@@ -1,12 +1,13 @@
 # OS_hv_vm_config
 
 **Framework**: Hypervisor  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Creates a virtual machine configuration object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,20 +15,25 @@ Creates a virtual machine configuration object.
 protocol OS_hv_vm_config : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_hv_vm_config <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func hv_vm_config_create() -> hv_vm_config_t](hv_vm_config_create().md)
+### Virtual machine management
+- [func hv_vm_config_create() -> hv_vm_config_t](./hv_vm_config_create%28%29.md)
   Creates a virtual machine configuration object.
-- [func hv_vm_create(hv_vm_config_t?) -> hv_return_t](hv_vm_create(_:).md)
+- [func hv_vm_create(hv_vm_config_t?) -> hv_return_t](./hv_vm_create%28_%29.md)
   Creates a VM instance for the current process.
-- [func hv_vm_destroy() -> hv_return_t](hv_vm_destroy().md)
+- [func hv_vm_destroy() -> hv_return_t](./hv_vm_destroy%28%29.md)
   Destroys the VM instance associated with the current process.
-- [typealias hv_vm_config_t](hv_vm_config_t.md)
+- [typealias hv_vm_config_t](./hv_vm_config_t.md)
   The type that defines a virtual-machine configuration.
 
 

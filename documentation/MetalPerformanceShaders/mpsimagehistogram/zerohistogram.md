@@ -1,7 +1,8 @@
 # zeroHistogram
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether to zero-initialize the histogram results.
 
@@ -19,19 +20,24 @@ Determines whether to zero-initialize the histogram results.
 var zeroHistogram: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL zeroHistogram;
+```
+
 #### Discussion
 
 Determines whether the memory region in which the histogram results are to be written in the histogram buffer are to be zero-initialized or not.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var clipRectSource: MTLRegion](mpsimagehistogram/cliprectsource.md)
+### Properties
+- [var clipRectSource: MTLRegion](./cliprectsource.md)
   The source rectangle to use when reading data.
-- [var histogramInfo: MPSImageHistogramInfo](mpsimagehistogram/histograminfo.md)
+- [var histogramInfo: MPSImageHistogramInfo](./histograminfo.md)
   A structure describing the histogram content.
-- [var minPixelThresholdValue: vector_float4](mpsimagehistogram/minpixelthresholdvalue.md)
+- [var minPixelThresholdValue: vector_float4](./minpixelthresholdvalue.md)
 
 
 ---

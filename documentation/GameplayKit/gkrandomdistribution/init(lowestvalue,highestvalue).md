@@ -1,7 +1,8 @@
 # init(lowestValue:highestValue:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random distribution with the specified lower and upper bounds, using the Arc4 randomizer.
 
@@ -19,13 +20,17 @@ Creates a random distribution with the specified lower and upper bounds, using t
 convenience init(lowestValue lowestInclusive: Int, highestValue highestInclusive: Int)
 ```
 
+```objc
++ (instancetype) distributionWithLowestValue:(NSInteger) lowestInclusive highestValue:(NSInteger) highestInclusive;
+```
+
 #### Return Value
 
 A new random distribution.
 
 #### Discussion
 
-Creating a random source with this method is equivalent to calling the [`init(randomSource:lowestValue:highestValue:)`](gkrandomdistribution/init(randomsource:lowestvalue:highestvalue:).md) initializer and passing a new instance of the [`GKARC4RandomSource`](gkarc4randomsource.md) class for the `source` parameter. Because the newly created distribution uses its own [`GKRandomSource`](gkrandomsource.md) instance, the random behavior of the distribution is independent from that of other randomizers.
+Creating a random source with this method is equivalent to calling the [`init(randomSource:lowestValue:highestValue:)`](./init%28randomsource,lowestvalue,highestvalue%29.md) initializer and passing a new instance of the [`GKARC4RandomSource`](../gkarc4randomsource.md) class for the `source` parameter. Because the newly created distribution uses its own [`GKRandomSource`](../gkrandomsource.md) instance, the random behavior of the distribution is independent from that of other randomizers.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Creating a random source with this method is equivalent to calling the [`init(ra
 
 ## See Also
 
-- [init(randomSource: any GKRandom, lowestValue: Int, highestValue: Int)](gkrandomdistribution/init(randomsource:lowestvalue:highestvalue:).md)
+### Creating a Random Distribution
+- [init(randomSource: any GKRandom, lowestValue: Int, highestValue: Int)](./init%28randomsource,lowestvalue,highestvalue%29.md)
   Initializes a uniform random distribution with the specified lower and upper bounds, using the specified source randomizer.
 
 

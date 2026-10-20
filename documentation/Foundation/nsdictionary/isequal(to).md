@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the contents of the receiving dictionary are equal to the contents of another given dictionary.
 
@@ -20,13 +21,17 @@ Returns a Boolean value that indicates whether the contents of the receiving dic
 func isEqual(to otherDictionary: [AnyHashable : Any]) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToDictionary:(NSDictionary<id,id> *) otherDictionary;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `otherDictionary` are equal to the contents of the receiving dictionary, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the contents of `otherDictionary` are equal to the contents of the receiving dictionary, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Two dictionaries have equal contents if they each hold the same number of entries and, for a given key, the corresponding value objects in each dictionary satisfy the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) test.
+Two dictionaries have equal contents if they each hold the same number of entries and, for a given key, the corresponding value objects in each dictionary satisfy the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) test.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Two dictionaries have equal contents if they each hold the same number of entrie
 
 ## See Also
 
-- [func isEqual(Any?) -> Bool](../objectivec/nsobjectprotocol/isequal(_:).md)
+### Related Documentation
+- [func isEqual(Any?) -> Bool](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
 
 

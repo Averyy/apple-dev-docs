@@ -1,14 +1,15 @@
 # SetProperties_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t SetProperties_Invoke(const IORPC rpc, OSMetaClassBase *target, SetProperties_Handler func);
 ```
 

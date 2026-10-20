@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object to use when handling resource requests.
 
@@ -19,17 +20,22 @@ The delegate object to use when handling resource requests.
 weak var delegate: (any AVAssetResourceLoaderDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<AVAssetResourceLoaderDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate object is responsible for indicating whether or not it is able to handle a resource request. And for those requests it does handle, the delegate object must initiate the loading of the requested resource.
 
 ## See Also
 
-- [func setDelegate((any AVAssetResourceLoaderDelegate)?, queue: dispatch_queue_t?)](avassetresourceloader/setdelegate(_:queue:).md)
+### Accessing the delegate
+- [func setDelegate((any AVAssetResourceLoaderDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Sets the delegate and dispatch queue to use with the resource loader.
-- [protocol AVAssetResourceLoaderDelegate](avassetresourceloaderdelegate.md)
+- [protocol AVAssetResourceLoaderDelegate](../avassetresourceloaderdelegate.md)
   Methods you can implement to handle resource-loading requests coming from a URL asset.
-- [var delegateQueue: dispatch_queue_t?](avassetresourceloader/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue to use when handling resource requests.
 
 

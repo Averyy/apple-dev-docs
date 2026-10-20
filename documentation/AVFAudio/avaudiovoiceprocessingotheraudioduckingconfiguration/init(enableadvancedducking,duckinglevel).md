@@ -1,7 +1,8 @@
 # init(enableAdvancedDucking:duckingLevel:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -18,7 +19,8 @@ init(enableAdvancedDucking: ObjCBool, duckingLevel: AVAudioVoiceProcessingOtherA
 
 ## See Also
 
-- [init()](avaudiovoiceprocessingotheraudioduckingconfiguration/init.md)
+### Creating a ducking configuration
+- [init()](./init%28%29.md)
 
 
 ---

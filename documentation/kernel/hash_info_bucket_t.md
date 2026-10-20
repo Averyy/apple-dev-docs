@@ -1,14 +1,15 @@
 # hash_info_bucket_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct hash_info_bucket {
     ...
 } hash_info_bucket_t;
@@ -17,7 +18,7 @@ typedef struct hash_info_bucket {
 ## Topics
 
 ### Instance Properties
-- [hib_count](hash_info_bucket_t/1561654-hib_count.md)
+- [hib_count](./hash_info_bucket_t/api-1561654-hib_count.md)
 
 
 ---

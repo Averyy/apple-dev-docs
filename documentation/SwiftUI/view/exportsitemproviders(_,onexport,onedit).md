@@ -1,7 +1,8 @@
 # exportsItemProviders(_:onExport:onEdit:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports a read-write item provider for consumption by shortcuts, quick actions, and services.
 
@@ -27,9 +28,10 @@ If the associated view supports selection, the exported item should reflect that
 
 ## See Also
 
-- [func importsItemProviders([UTType], onImport: ([NSItemProvider]) -> Bool) -> some View](view/importsitemproviders(_:onimport:).md)
+### Importing and exporting using item providers
+- [func importsItemProviders([UTType], onImport: ([NSItemProvider]) -> Bool) -> some View](./importsitemproviders%28_,onimport%29.md)
   Enables importing item providers from services, such as Continuity Camera on macOS.
-- [func exportsItemProviders([UTType], onExport: () -> [NSItemProvider]) -> some View](view/exportsitemproviders(_:onexport:).md)
+- [func exportsItemProviders([UTType], onExport: () -> [NSItemProvider]) -> some View](./exportsitemproviders%28_,onexport%29.md)
   Exports a read-only item provider for consumption by shortcuts, quick actions, and services.
 
 

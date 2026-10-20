@@ -1,7 +1,8 @@
 # SCStreamError.Code.invalidParameter
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error message that indicates an operation failed because of an invalid parameter value.
 
@@ -17,6 +18,10 @@ An error message that indicates an operation failed because of an invalid parame
 
 ```swift
 case invalidParameter
+```
+
+```c
+SCStreamErrorInvalidParameter
 ```
 
 

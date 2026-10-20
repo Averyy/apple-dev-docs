@@ -1,14 +1,15 @@
 # registerPMSettingController
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 IOReturn registerPMSettingController(const OSSymbol *settings[], uint32_t supportedPowerSources, IOPMSettingControllerCallback callout, OSObject *target, uintptr_t refcon, OSObject **handle);
 ```
 

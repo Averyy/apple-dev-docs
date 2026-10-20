@@ -1,7 +1,8 @@
 # NSToolbar.DisplayMode.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default display mode.
 
@@ -9,7 +10,7 @@ The default display mode.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The default display mode.
 case `default`
 ```
 
+```c
+NSToolbarDisplayModeDefault
+```
+
 ## See Also
 
-- [NSToolbar.DisplayMode.iconAndLabel](nstoolbar/displaymode-swift.enum/iconandlabel.md)
+### Display modes
+- [NSToolbar.DisplayMode.iconAndLabel](./iconandlabel.md)
   The toolbar displays an icon and label for each item.
-- [NSToolbar.DisplayMode.iconOnly](nstoolbar/displaymode-swift.enum/icononly.md)
+- [NSToolbar.DisplayMode.iconOnly](./icononly.md)
   The toolbar displays only an icon for each item.
-- [NSToolbar.DisplayMode.labelOnly](nstoolbar/displaymode-swift.enum/labelonly.md)
+- [NSToolbar.DisplayMode.labelOnly](./labelonly.md)
   The toolbar displays only a label for each item.
 
 

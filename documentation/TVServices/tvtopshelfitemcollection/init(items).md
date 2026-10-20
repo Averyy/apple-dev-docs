@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item collection object from the specified set of top shelf items.
 
@@ -14,13 +15,17 @@ Creates an item collection object from the specified set of top shelf items.
 init(items: [Item])
 ```
 
+```objc
+- (instancetype) initWithItems:(NSArray<TVTopShelfItem *> *) items;
+```
+
 #### Return Value
 
 A new item collection object containing the specified `items`.
 
 ## Parameters
 
-- `items`: The array of [`TVTopShelfItem`](tvtopshelfitem.md) objects to put in the collection.
+- `items`: The array of [`TVTopShelfItem`](../tvtopshelfitem.md) objects to put in the collection.
 
 
 ---

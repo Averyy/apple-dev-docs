@@ -1,7 +1,8 @@
 # firstMatch(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first match for this regex found in the given string.
 

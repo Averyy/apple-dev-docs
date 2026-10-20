@@ -1,7 +1,8 @@
 # BidStrategyGoal
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Optimization objective a bid strategy targets during Apple Ads auction competition.
 
@@ -10,25 +11,31 @@ Optimization objective a bid strategy targets during Apple Ads auction competiti
 
 ## Declaration
 
-```swift
+```
 string BidStrategyGoal
 ```
 
+## Possible Values
+
+- `IMPRESSION`: The strategy optimizes for maximum ad impressions. Applies to impression-based pricing models such as `MANUAL_CPM`.
+- `INSTALL`: The strategy optimizes for app installs. The system bids more aggressively for queries likely to result in a new install.
+- `TAP`: The strategy optimizes for taps on the ad. Applies to tap-based pricing models such as `MANUAL_CPT`.
+
 ## See Also
 
-- [type AdGroupStatus](adgroupstatus.md)
+- [type AdGroupStatus](./adgroupstatus.md)
   Advertiser-configurable serving status for an ad group.
-- [type AdGroupSystemStatus](adgroupsystemstatus.md)
+- [type AdGroupSystemStatus](./adgroupsystemstatus.md)
   System-derived operational status reflecting whether an ad group is actively serving.
-- [type AdGroupDisplayStatus](adgroupdisplaystatus.md)
+- [type AdGroupDisplayStatus](./adgroupdisplaystatus.md)
   Derived display status for an ad group, combining advertiser-set status with system status.
-- [type AdGroupSystemStatusReason](adgroupsystemstatusreason.md)
+- [type AdGroupSystemStatusReason](./adgroupsystemstatusreason.md)
   Reasons that can cause an ad group’s system status to be `NOT_RUNNING`.
-- [type AdGroupSystemLimitedStatusReason](adgroupsystemlimitedstatusreason.md)
+- [type AdGroupSystemLimitedStatusReason](./adgroupsystemlimitedstatusreason.md)
   Reasons that limit delivery for an ad group without fully stopping it.
-- [type BidStrategyType](bidstrategytype.md)
+- [type BidStrategyType](./bidstrategytype.md)
   Auction participation approach controlling how an ad group or campaign sets and adjusts bids.
-- [type PricingModel](pricingmodel.md)
+- [type PricingModel](./pricingmodel.md)
   The unit of ad delivery that determines billing for an ad group, independent of how the account funds spend.
 
 

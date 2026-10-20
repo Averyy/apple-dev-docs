@@ -1,7 +1,8 @@
 # JSClassRetain(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retains a JavaScript class.
 
@@ -19,25 +20,30 @@ Retains a JavaScript class.
 func JSClassRetain(_ jsClass: JSClassRef!) -> JSClassRef!
 ```
 
+```c
+JSClassRefJSClassRetain(JSClassRef jsClass);
+```
+
 #### Return Value
 
-A [`JSClassRef`](jsclassref.md) that is the same as `jsClass`.
+A [`JSClassRef`](./jsclassref.md) that is the same as `jsClass`.
 
 ## Parameters
 
-- `jsClass`: The [`JSClassRef`](jsclassref.md) to retain.
+- `jsClass`: The [`JSClassRef`](./jsclassref.md) to retain.
 
 ## See Also
 
-- [func JSClassCreate(UnsafePointer<JSClassDefinition>!) -> JSClassRef!](jsclasscreate(_:).md)
+### Working with Classes
+- [func JSClassCreate(UnsafePointer<JSClassDefinition>!) -> JSClassRef!](./jsclasscreate%28_%29.md)
   Creates a JavaScript class.
-- [func JSClassRelease(JSClassRef!)](jsclassrelease(_:).md)
+- [func JSClassRelease(JSClassRef!)](./jsclassrelease%28_%29.md)
   Releases a JavaScript class.
-- [let kJSClassDefinitionEmpty: JSClassDefinition](kjsclassdefinitionempty.md)
+- [let kJSClassDefinitionEmpty: JSClassDefinition](./kjsclassdefinitionempty.md)
   A class definition structure of the current version that contains null pointers and has no attributes.
-- [struct JSClassDefinition](jsclassdefinition.md)
+- [struct JSClassDefinition](./jsclassdefinition.md)
   A structure that contains properties and callbacks that define a type of object.
-- [JSClassAttribute](jsclassattribute.md)
+- [JSClassAttribute](./jsclassattribute.md)
   A JavaScript class attribute.
 
 

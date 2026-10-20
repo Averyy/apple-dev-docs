@@ -1,7 +1,8 @@
 # UnicodeDecodingResult.scalarValue(_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A decoded Unicode scalar value.
 

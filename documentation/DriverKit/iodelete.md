@@ -1,25 +1,26 @@
 # IODelete
 
 **Framework**: DriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Frees the memory associated with a valid, typed array.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define IODelete(ptr, type, count)
 ```
 
 #### Discussion
 
-Use this macro to free memory that you allocated with [`IONew`](ionew.md) or [`IONewZero`](ionewzero.md). It is a programmer error to pass a `NULL` pointer to this macro.
+Use this macro to free memory that you allocated with [`IONew`](./ionew.md) or [`IONewZero`](./ionewzero.md). It is a programmer error to pass a `NULL` pointer to this macro.
 
 ## Parameters
 
@@ -29,11 +30,12 @@ Use this macro to free memory that you allocated with [`IONew`](ionew.md) or [`I
 
 ## See Also
 
-- [IOSafeDeleteNULL](iosafedeletenull.md)
+### Deallocation
+- [IOSafeDeleteNULL](./iosafedeletenull.md)
   Frees the memory associated with a typed array.
-- [OSSafeReleaseNULL](ossafereleasenull.md)
+- [OSSafeReleaseNULL](./ossafereleasenull.md)
   Frees memory that you allocated for a named class.
-- [IOFree](iofree.md)
+- [IOFree](./iofree.md)
   Frees a memory block that contains general-purpose memory.
 
 

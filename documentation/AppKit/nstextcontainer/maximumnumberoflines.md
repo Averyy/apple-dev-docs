@@ -1,7 +1,8 @@
 # maximumNumberOfLines
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of lines that the text container can store.
 
@@ -14,17 +15,22 @@ The maximum number of lines that the text container can store.
 var maximumNumberOfLines: Int { get set }
 ```
 
+```objc
+@property NSUInteger maximumNumberOfLines;
+```
+
 #### Discussion
 
 The layout manager uses the value of this property to determine the maximum number of lines associated with the text container. The default value of this property is `0`, which indicates that there is no limit.
 
 ## See Also
 
-- [var lineFragmentPadding: CGFloat](nstextcontainer/linefragmentpadding.md)
+### Constraining text layout
+- [var lineFragmentPadding: CGFloat](./linefragmentpadding.md)
   The value for the text inset within line fragment rectangles.
-- [func lineFragmentRect(forProposedRect: CGRect, at: Int, writingDirection: NSWritingDirection, remaining: UnsafeMutablePointer<CGRect>?) -> CGRect](nstextcontainer/linefragmentrect(forproposedrect:at:writingdirection:remaining:).md)
+- [func lineFragmentRect(forProposedRect: CGRect, at: Int, writingDirection: NSWritingDirection, remaining: UnsafeMutablePointer<CGRect>?) -> CGRect](./linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md)
   Returns the bounds of a line fragment rectangle inside the text container for the proposed rectangle.
-- [var isSimpleRectangularTextContainer: Bool](nstextcontainer/issimplerectangulartextcontainer.md)
+- [var isSimpleRectangularTextContainer: Bool](./issimplerectangulartextcontainer.md)
   A Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view’s coordinate system axes.
 
 

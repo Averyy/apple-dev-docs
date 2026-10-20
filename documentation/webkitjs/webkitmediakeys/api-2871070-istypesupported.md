@@ -1,7 +1,8 @@
 # isTypeSupported
 
 **Framework**: WebKit JS  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 static boolean isTypeSupported(
     DOMString keySystem, 
     optional DOMString type

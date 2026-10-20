@@ -1,7 +1,8 @@
 # init(forSupplementaryViewOfKind:with:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a layout attributes object that represents the specified supplementary view.
 
@@ -9,13 +10,17 @@ Creates and returns a layout attributes object that represents the specified sup
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 convenience init(forSupplementaryViewOfKind elementKind: String, with indexPath: IndexPath)
+```
+
+```objc
++ (instancetype) layoutAttributesForSupplementaryViewOfKind:(NSString *) elementKind withIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ It is up to you to decide how to use the `indexPath` parameter to identify a giv
 
 ## See Also
 
-- [convenience init(forCellWith: IndexPath)](uicollectionviewlayoutattributes/init(forcellwith:).md)
+### Creating layout attributes
+- [convenience init(forCellWith: IndexPath)](./init%28forcellwith%29.md)
   Creates and returns a layout attributes object that represents a cell with the specified index path.
-- [convenience init(forDecorationViewOfKind: String, with: IndexPath)](uicollectionviewlayoutattributes/init(fordecorationviewofkind:with:).md)
+- [convenience init(forDecorationViewOfKind: String, with: IndexPath)](./init%28fordecorationviewofkind,with%29.md)
   Creates and returns a layout attributes object that represents the specified decoration view.
 
 

@@ -1,19 +1,26 @@
 # immediateDurationWeight
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weight assigned to a risk level indicating the duration of the user’s exposure at immediate distance.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var immediateDurationWeight: Double { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) double immediateDurationWeight;
 ```
 
 #### Discussion
@@ -22,15 +29,16 @@ var immediateDurationWeight: Double { get set }
 
 ## See Also
 
-- [var attenuationDurationThresholds: [NSNumber]](enexposureconfiguration/attenuationdurationthresholds.md)
+### Configuring Duration
+- [var attenuationDurationThresholds: [NSNumber]](./attenuationdurationthresholds.md)
   The configurable signal-loss thresholds for calculating exposure risk.
-- [var mediumDurationWeight: Double](enexposureconfiguration/mediumdurationweight.md)
+- [var mediumDurationWeight: Double](./mediumdurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at medium distance.
-- [var nearDurationWeight: Double](enexposureconfiguration/neardurationweight.md)
+- [var nearDurationWeight: Double](./neardurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at close distance.
-- [var otherDurationWeight: Double](enexposureconfiguration/otherdurationweight.md)
+- [var otherDurationWeight: Double](./otherdurationweight.md)
   The weight assigned to a risk level indicating the duration of the user’s exposure at a large distance.
-- [var daysSinceLastExposureThreshold: Int](enexposureconfiguration/dayssincelastexposurethreshold.md)
+- [var daysSinceLastExposureThreshold: Int](./dayssincelastexposurethreshold.md)
   The number of days to consider when calculating the risk level.
 
 

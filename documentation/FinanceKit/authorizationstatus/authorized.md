@@ -1,7 +1,8 @@
 # AuthorizationStatus.authorized
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person authorized the app to use FinanceKit services.
 
@@ -17,9 +18,10 @@ case authorized
 
 ## See Also
 
-- [AuthorizationStatus.denied](authorizationstatus/denied.md)
+### Enumeration Cases
+- [AuthorizationStatus.denied](./denied.md)
   A person denied the use of FinanceKit services for the app.
-- [AuthorizationStatus.notDetermined](authorizationstatus/notdetermined.md)
+- [AuthorizationStatus.notDetermined](./notdetermined.md)
   A person has not chosen whether the app can use FinanceKit services.
 
 

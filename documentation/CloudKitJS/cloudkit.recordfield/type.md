@@ -1,7 +1,8 @@
 # type
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the field.
 
@@ -10,13 +11,13 @@ The type of the field.
 
 ## Declaration
 
-```swift
+```
 attribute String type;
 ```
 
 #### Discussion
 
-This key is optional when saving a record; otherwise, this key is required. See [`CKValue`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/Types.html#//apple_ref/doc/uid/TP40015240-CH3-SW1) for the JavaScript types you should use for the values of schema field types.
+This key is optional when saving a record; otherwise, this key is required. See [CKValue](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/Types.html#//apple_ref/doc/uid/TP40015240-CH3-SW1) for the JavaScript types you should use for the values of schema field types.
 
 
 ---

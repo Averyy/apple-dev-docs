@@ -1,7 +1,8 @@
 # pattern
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the pattern associated with a color in a pattern color space.
 
@@ -10,7 +11,7 @@ Returns the pattern associated with a color in a pattern color space.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ Returns the pattern associated with a color in a pattern color space.
 var pattern: CGPattern? { get }
 ```
 
+```c
+extern CGPatternRefCGColorGetPattern(CGColorRef color);
+```
+
 ## See Also
 
-- [var alpha: CGFloat](cgcolor/alpha.md)
+### Examining a Color
+- [var alpha: CGFloat](./alpha.md)
   Returns the value of the alpha component associated with a color.
-- [var colorSpace: CGColorSpace?](cgcolor/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   Returns the color space associated with a color.
-- [var components: [CGFloat]?](cgcolor/components.md)
+- [var components: [CGFloat]?](./components.md)
   Returns the values of the color components (including alpha) associated with a color.
-- [var numberOfComponents: Int](cgcolor/numberofcomponents.md)
+- [var numberOfComponents: Int](./numberofcomponents.md)
   Returns the number of color components (including alpha) associated with a color.
 
 

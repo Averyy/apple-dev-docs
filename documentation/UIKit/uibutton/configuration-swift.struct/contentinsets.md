@@ -1,7 +1,8 @@
 # contentInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the button’s content area to its bounds.
 
@@ -10,7 +11,7 @@ The distance from the button’s content area to its bounds.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,11 +25,12 @@ A button has a default inset based on its styling. This property is an additiona
 
 ## See Also
 
-- [var buttonSize: UIButton.Configuration.Size](uibutton/configuration-swift.struct/buttonsize.md)
+### Configuring layout
+- [var buttonSize: UIButton.Configuration.Size](./buttonsize.md)
   A size that requests a preferred size for the button.
-- [UIButton.Configuration.Size](uibutton/configuration-swift.struct/size.md)
+- [UIButton.Configuration.Size](./size.md)
   A predefined size for button elements.
-- [func setDefaultContentInsets()](uibutton/configuration-swift.struct/setdefaultcontentinsets.md)
+- [func setDefaultContentInsets()](./setdefaultcontentinsets%28%29.md)
   Restores the default content insets.
 
 

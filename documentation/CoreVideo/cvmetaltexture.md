@@ -1,7 +1,8 @@
 # CVMetalTexture
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a CoreVideo Metal texture-based image buffer.
 
@@ -19,9 +20,13 @@ A reference to a CoreVideo Metal texture-based image buffer.
 typealias CVMetalTexture = CVImageBuffer
 ```
 
+```c
+typedef CVImageBufferRef CVMetalTextureRef;
+```
+
 #### Discussion
 
-To create and manage CoreVideo Metal textures, see [`CVMetalTextureCache`](cvmetaltexturecache-q3j.md).
+To create and manage CoreVideo Metal textures, see [CVMetalTextureCache](./cvmetaltexturecache-q3j.md).
 
 
 ---

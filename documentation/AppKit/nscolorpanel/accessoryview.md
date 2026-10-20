@@ -1,12 +1,13 @@
 # accessoryView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The accessory view.
 var accessoryView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * accessoryView;
+```
+
 ## See Also
 
-- [var isContinuous: Bool](nscolorpanel/iscontinuous.md)
+### Configuring the color panel
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether the receiver continuously sends the action message to the target.
-- [func setAction(Selector?)](nscolorpanel/setaction(_:).md)
+- [func setAction(Selector?)](./setaction%28_%29.md)
   Sets the color panel’s action message.
-- [func setTarget(Any?)](nscolorpanel/settarget(_:).md)
+- [func setTarget(Any?)](./settarget%28_%29.md)
   Sets the target of the receiver.
-- [var showsAlpha: Bool](nscolorpanel/showsalpha.md)
+- [var showsAlpha: Bool](./showsalpha.md)
   A Boolean value that indicates whether the receiver shows alpha values and an opacity slider.
 
 

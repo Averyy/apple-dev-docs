@@ -1,7 +1,8 @@
 # OSLogEntryLog.Level
 
 **Framework**: OSLog  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The log level at which the entry was generated.
 
@@ -20,37 +21,42 @@ The log level at which the entry was generated.
 enum Level
 ```
 
+```c
+enum OSLogEntryLogLevel : NSInteger;
+```
+
 ## Topics
 
 ### Log Levels
-- [OSLogEntryLog.Level.undefined](oslogentrylog/level-swift.enum/undefined.md)
+- [OSLogEntryLog.Level.undefined](./level-swift.enum/undefined.md)
   The log level was never specified.
-- [OSLogEntryLog.Level.debug](oslogentrylog/level-swift.enum/debug.md)
+- [OSLogEntryLog.Level.debug](./level-swift.enum/debug.md)
   A log level that captures diagnostic information.
-- [OSLogEntryLog.Level.info](oslogentrylog/level-swift.enum/info.md)
+- [OSLogEntryLog.Level.info](./level-swift.enum/info.md)
   The log level that captures additional information.
-- [OSLogEntryLog.Level.notice](oslogentrylog/level-swift.enum/notice.md)
+- [OSLogEntryLog.Level.notice](./level-swift.enum/notice.md)
   The log level that captures notifications.
-- [OSLogEntryLog.Level.error](oslogentrylog/level-swift.enum/error.md)
+- [OSLogEntryLog.Level.error](./level-swift.enum/error.md)
   The log level that captures errors.
-- [OSLogEntryLog.Level.fault](oslogentrylog/level-swift.enum/fault.md)
+- [OSLogEntryLog.Level.fault](./level-swift.enum/fault.md)
   The log level that captures fault information.
 ### Initializers
-- [init?(rawValue: Int)](oslogentrylog/level-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./level-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var level: OSLogEntryLog.Level](oslogentrylog/level-swift.property.md)
+### Accessing Log Levels
+- [var level: OSLogEntryLog.Level](./level-swift.property.md)
   The log level of the entry.
 
 

@@ -1,7 +1,8 @@
 # sequenceValue
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying sequence.
 
@@ -21,11 +22,12 @@ var sequenceValue: MLDataValue.SequenceType? { get }
 
 ## See Also
 
-- [MLDataValue.SequenceType](mldatavalue/sequencetype.md)
+### Accessing array values
+- [MLDataValue.SequenceType](./sequencetype.md)
   A sequence of data values.
-- [var multiArrayValue: MLDataValue.MultiArrayType?](mldatavalue/multiarrayvalue.md)
+- [var multiArrayValue: MLDataValue.MultiArrayType?](./multiarrayvalue.md)
   The underlying multidimensional array.
-- [MLDataValue.MultiArrayType](mldatavalue/multiarraytype.md)
+- [MLDataValue.MultiArrayType](./multiarraytype.md)
   A multidimensional array of data values.
 
 

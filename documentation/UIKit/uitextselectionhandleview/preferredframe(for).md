@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a preferred frame given @c rect based on the current appearance configuration.
@@ -17,6 +18,10 @@ Provides a preferred frame given @c rect based on the current appearance configu
 
 ```swift
 func preferredFrame(for rect: CGRect) -> CGRect
+```
+
+```objc
+- (CGRect) preferredFrameForRect:(CGRect) rect;
 ```
 
 

@@ -1,7 +1,8 @@
 # tile
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A material that simulates the acoustic properties of tile.
 
@@ -21,23 +22,24 @@ static let tile: Audio.Material
 
 ## See Also
 
-- [static let concrete: Audio.Material](audio/material/concrete.md)
+### Using hard surface materials
+- [static let concrete: Audio.Material](./concrete.md)
   A material that simulates the acoustic properties of concrete.
-- [static let brick: Audio.Material](audio/material/brick.md)
+- [static let brick: Audio.Material](./brick.md)
   A material that simulates the acoustic properties of brick.
-- [static let glass: Audio.Material](audio/material/glass.md)
+- [static let glass: Audio.Material](./glass.md)
   A material that simulates the acoustic properties of glass.
-- [static let metal: Audio.Material](audio/material/metal.md)
+- [static let metal: Audio.Material](./metal.md)
   A material that simulates the acoustic properties of metal.
-- [static let marble: Audio.Material](audio/material/marble.md)
+- [static let marble: Audio.Material](./marble.md)
   A material that simulates the acoustic properties of marble.
-- [static let wood: Audio.Material](audio/material/wood.md)
+- [static let wood: Audio.Material](./wood.md)
   A material that simulates the acoustic properties of wood.
-- [static let parquet: Audio.Material](audio/material/parquet.md)
+- [static let parquet: Audio.Material](./parquet.md)
   A material that simulates the acoustic properties of parquet flooring.
-- [static let dryWall: Audio.Material](audio/material/drywall.md)
+- [static let dryWall: Audio.Material](./drywall.md)
   A material that simulates the acoustic properties of drywall.
-- [static let plaster: Audio.Material](audio/material/plaster.md)
+- [static let plaster: Audio.Material](./plaster.md)
   A material that simulates the acoustic properties of plaster.
 
 

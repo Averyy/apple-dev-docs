@@ -1,14 +1,15 @@
 # kThreadWaitParkedWorkQueue
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 kThreadWaitParkedWorkQueue = 0x0f
 ```
 

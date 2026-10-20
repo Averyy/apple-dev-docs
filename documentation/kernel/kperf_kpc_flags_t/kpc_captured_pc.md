@@ -1,14 +1,15 @@
 # KPC_CAPTURED_PC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KPC_CAPTURED_PC
 ```
 

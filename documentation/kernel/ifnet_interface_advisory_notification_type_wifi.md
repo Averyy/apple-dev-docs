@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum ifnet_interface_advisory_notification_type_wifi : uint8_t {
     ...
 };
@@ -17,7 +17,7 @@ enum ifnet_interface_advisory_notification_type_wifi : uint8_t {
 ## Topics
 
 ### Constants
-- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_WIFI_UNDEFINED](ifnet_interface_advisory_notification_type_wifi/if_interface_advisory_notification_type_wifi_undefined.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_WIFI_UNDEFINED](./ifnet_interface_advisory_notification_type_wifi/if_interface_advisory_notification_type_wifi_undefined.md)
 
 
 ---

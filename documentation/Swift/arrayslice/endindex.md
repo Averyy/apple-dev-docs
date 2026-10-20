@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 

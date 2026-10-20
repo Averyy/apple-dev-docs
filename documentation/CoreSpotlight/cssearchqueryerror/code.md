@@ -1,7 +1,8 @@
 # CSSearchQueryError.Code
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that describe reasons a query might fail.
 
@@ -18,29 +19,33 @@ Error codes that describe reasons a query might fail.
 enum Code
 ```
 
+```c
+enum CSSearchQueryErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Getting the error codes
-- [CSSearchQueryError.Code.cancelled](cssearchqueryerror/code/cancelled.md)
+- [CSSearchQueryError.Code.cancelled](./code/cancelled.md)
   The query stopped because someone canceled it.
-- [CSSearchQueryError.Code.indexUnreachable](cssearchqueryerror/code/indexunreachable.md)
+- [CSSearchQueryError.Code.indexUnreachable](./code/indexunreachable.md)
   The index is unreachable.
-- [CSSearchQueryError.Code.invalidQuery](cssearchqueryerror/code/invalidquery.md)
+- [CSSearchQueryError.Code.invalidQuery](./code/invalidquery.md)
   The query is syntactically invalid or specifies items that your app doesn’t have access to.
-- [CSSearchQueryError.Code.unknown](cssearchqueryerror/code/unknown.md)
+- [CSSearchQueryError.Code.unknown](./code/unknown.md)
   An unknown error occurred.
 ### Creating a query error
-- [init?(rawValue: Int)](cssearchqueryerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

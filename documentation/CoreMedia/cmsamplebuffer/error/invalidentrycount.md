@@ -1,7 +1,8 @@
 # invalidEntryCount
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A timing or size value isn’t within the allowed range.
 
@@ -26,35 +27,36 @@ Timing and size values must be `0`, `1`, or the number of samples.
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmsamplebuffer/error/allocationfailed.md)
+### Errors
+- [static let allocationFailed: NSError](./allocationfailed.md)
   The system failed to allocate memory.
-- [static let alreadyHasDataBuffer: NSError](cmsamplebuffer/error/alreadyhasdatabuffer.md)
+- [static let alreadyHasDataBuffer: NSError](./alreadyhasdatabuffer.md)
   You attempted to set data on a sample buffer that already contains media data.
-- [static let arrayTooSmall: NSError](cmsamplebuffer/error/arraytoosmall.md)
+- [static let arrayTooSmall: NSError](./arraytoosmall.md)
   The output array isn’t large enough to hold the requested array.
-- [static let bufferHasNoSampleSizes: NSError](cmsamplebuffer/error/bufferhasnosamplesizes.md)
+- [static let bufferHasNoSampleSizes: NSError](./bufferhasnosamplesizes.md)
   You requested sample sizes on a buffer that doesn’t provide that information.
-- [static let bufferHasNoSampleTimingInfo: NSError](cmsamplebuffer/error/bufferhasnosampletiminginfo.md)
+- [static let bufferHasNoSampleTimingInfo: NSError](./bufferhasnosampletiminginfo.md)
   You requested sample timing on a buffer that doesn’t contain that information.
-- [static let bufferNotReady: NSError](cmsamplebuffer/error/buffernotready.md)
+- [static let bufferNotReady: NSError](./buffernotready.md)
   The system can’t make the buffer’s data ready for use.
-- [static let cannotSubdivide: NSError](cmsamplebuffer/error/cannotsubdivide.md)
+- [static let cannotSubdivide: NSError](./cannotsubdivide.md)
   A sample buffer doesn’t contain sample sizes.
-- [static let dataCanceled: NSError](cmsamplebuffer/error/datacanceled.md)
+- [static let dataCanceled: NSError](./datacanceled.md)
   A sample buffer canceled its data loading operation.
-- [static let dataFailed: NSError](cmsamplebuffer/error/datafailed.md)
+- [static let dataFailed: NSError](./datafailed.md)
   A sample buffer failed to load its data.
-- [static let invalidMediaFormat: NSError](cmsamplebuffer/error/invalidmediaformat.md)
+- [static let invalidMediaFormat: NSError](./invalidmediaformat.md)
   The format of the media doesn’t match the sample buffer’s format description.
-- [static let invalidMediaTypeForOperation: NSError](cmsamplebuffer/error/invalidmediatypeforoperation.md)
+- [static let invalidMediaTypeForOperation: NSError](./invalidmediatypeforoperation.md)
   The media type the format description defines isn’t value for the requested operation.
-- [static let invalidSampleData: NSError](cmsamplebuffer/error/invalidsampledata.md)
+- [static let invalidSampleData: NSError](./invalidsampledata.md)
   The sample buffer contains bad data.
-- [static let invalidated: NSError](cmsamplebuffer/error/invalidated.md)
+- [static let invalidated: NSError](./invalidated.md)
   A sample buffer invalidated its data.
-- [static let requiredParameterMissing: NSError](cmsamplebuffer/error/requiredparametermissing.md)
+- [static let requiredParameterMissing: NSError](./requiredparametermissing.md)
   You didn’t provide a valid value for a required parameter.
-- [static let sampleIndexOutOfRange: NSError](cmsamplebuffer/error/sampleindexoutofrange.md)
+- [static let sampleIndexOutOfRange: NSError](./sampleindexoutofrange.md)
   You specified a sample index that’s outside of the range of samples that the buffer contains.
 
 

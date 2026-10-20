@@ -1,14 +1,15 @@
 # updateOffset
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void updateOffset(OSDictionary *dict, UInt64 value, const char *name);
 ```
 

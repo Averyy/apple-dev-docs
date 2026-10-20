@@ -2,15 +2,20 @@
 
 **Framework**: IOBluetooth  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func connectionComplete(_ device: IOBluetoothDevice!, status: IOReturn)
+```
+
+```objc
+- (void) connectionComplete:(IOBluetoothDevice *) device status:(IOReturn) status;
 ```
 
 

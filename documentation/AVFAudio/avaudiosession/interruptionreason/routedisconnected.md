@@ -1,7 +1,8 @@
 # AVAudioSession.InterruptionReason.routeDisconnected
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system interrupts the audio session due to a disconnection of an audio route.
 
@@ -19,15 +20,20 @@ The system interrupts the audio session due to a disconnection of an audio route
 case routeDisconnected
 ```
 
+```c
+AVAudioSessionInterruptionReasonRouteDisconnected
+```
+
 ## See Also
 
-- [AVAudioSession.InterruptionReason.default](avaudiosession/interruptionreason/default.md)
+### Identifying interruption reasons
+- [AVAudioSession.InterruptionReason.default](./default.md)
   The system interrupts this audio session when it activates another.
-- [AVAudioSession.InterruptionReason.builtInMicMuted](avaudiosession/interruptionreason/builtinmicmuted.md)
+- [AVAudioSession.InterruptionReason.builtInMicMuted](./builtinmicmuted.md)
   The system interrupts the audio session when the device mutes the built-in microphone.
-- [AVAudioSession.InterruptionReason.sceneWasBackgrounded](avaudiosession/interruptionreason/scenewasbackgrounded.md)
+- [AVAudioSession.InterruptionReason.sceneWasBackgrounded](./scenewasbackgrounded.md)
   The system backgrounds the scene and interrupts the audio session.
-- [AVAudioSession.InterruptionReason.appWasSuspended](avaudiosession/interruptionreason/appwassuspended.md)
+- [AVAudioSession.InterruptionReason.appWasSuspended](./appwassuspended.md)
   The system suspends the app and interrupts the audio session.
 
 

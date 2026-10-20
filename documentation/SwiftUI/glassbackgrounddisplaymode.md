@@ -1,7 +1,8 @@
 # GlassBackgroundDisplayMode
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The display mode of a glass background.
 
@@ -16,41 +17,42 @@ enum GlassBackgroundDisplayMode
 
 #### Overview
 
-Use a value of this type to indicate when to display a glass background that you add to a view using a view modifier like [`glassBackgroundEffect(displayMode:)`](view/glassbackgroundeffect(displaymode:).md).
+Use a value of this type to indicate when to display a glass background that you add to a view using a view modifier like [`glassBackgroundEffect(displayMode:)`](./view/glassbackgroundeffect%28displaymode%29.md).
 
 ## Topics
 
 ### Getting the mode
-- [GlassBackgroundDisplayMode.always](glassbackgrounddisplaymode/always.md)
+- [GlassBackgroundDisplayMode.always](./glassbackgrounddisplaymode/always.md)
   Always display the glass material.
-- [GlassBackgroundDisplayMode.implicit](glassbackgrounddisplaymode/implicit.md)
+- [GlassBackgroundDisplayMode.implicit](./glassbackgrounddisplaymode/implicit.md)
   Display the glass material only when the view isn’t already contained in glass.
-- [GlassBackgroundDisplayMode.never](glassbackgrounddisplaymode/never.md)
+- [GlassBackgroundDisplayMode.never](./glassbackgrounddisplaymode/never.md)
   Never display the glass material.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(displaymode:).md)
+### Adding a glass background on views in visionOS
+- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](./view/glassbackgroundeffect%28displaymode%29.md)
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
-- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
+- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](./view/glassbackgroundeffect%28in,displaymode%29.md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
-- [protocol GlassBackgroundEffect](glassbackgroundeffect.md)
+- [protocol GlassBackgroundEffect](./glassbackgroundeffect.md)
   A specification for the appearance of a glass background.
-- [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
+- [struct AutomaticGlassBackgroundEffect](./automaticglassbackgroundeffect.md)
   The automatic glass background effect.
-- [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
+- [struct GlassBackgroundEffectConfiguration](./glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
-- [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+- [struct FeatheredGlassBackgroundEffect](./featheredglassbackgroundeffect.md)
   The feathered glass background effect.
-- [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
+- [struct PlateGlassBackgroundEffect](./plateglassbackgroundeffect.md)
   The plate glass background effect.
 
 

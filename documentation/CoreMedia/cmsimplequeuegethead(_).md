@@ -1,7 +1,8 @@
 # CMSimpleQueueGetHead(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the element at the head of the queue.
 
@@ -20,6 +21,10 @@ Returns the element at the head of the queue.
 func CMSimpleQueueGetHead(_ queue: CMSimpleQueue) -> UnsafeRawPointer?
 ```
 
+```c
+extern const void *CMSimpleQueueGetHead(CMSimpleQueueRef queue);
+```
+
 #### Return Value
 
 The head element.  `NULL` if the queue was empty, or if there was some other error.
@@ -34,9 +39,10 @@ If the queue is empty, the function returns `NULL`.
 
 ## See Also
 
-- [func CMSimpleQueueGetCapacity(CMSimpleQueue) -> Int32](cmsimplequeuegetcapacity(_:).md)
+### Inspecting Queues
+- [func CMSimpleQueueGetCapacity(CMSimpleQueue) -> Int32](./cmsimplequeuegetcapacity%28_%29.md)
   Returns the number of elements that the queue can hold.
-- [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](cmsimplequeuegetcount(_:).md)
+- [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](./cmsimplequeuegetcount%28_%29.md)
   Returns the number of elements currently in the queue.
 
 

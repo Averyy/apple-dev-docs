@@ -1,7 +1,8 @@
 # objectStaticLinkingDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides static linking information for the object stage of the render pipeline.
 
@@ -18,6 +19,10 @@ Provides static linking information for the object stage of the render pipeline.
 ```swift
 @NSCopying
 var objectStaticLinkingDescriptor: MTL4StaticLinkingDescriptor! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTL4StaticLinkingDescriptor * objectStaticLinkingDescriptor;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # OpenImmersiveSpaceAction.Result.userCancelled
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The immersive space didn’t open because the user cancelled the operation.
 
@@ -17,9 +18,10 @@ case userCancelled
 
 ## See Also
 
-- [OpenImmersiveSpaceAction.Result.opened](openimmersivespaceaction/result/opened.md)
+### Getting the result
+- [OpenImmersiveSpaceAction.Result.opened](./opened.md)
   The immersive space opened.
-- [OpenImmersiveSpaceAction.Result.error](openimmersivespaceaction/result/error.md)
+- [OpenImmersiveSpaceAction.Result.error](./error.md)
   The system was unable to open the immersive space.
 
 

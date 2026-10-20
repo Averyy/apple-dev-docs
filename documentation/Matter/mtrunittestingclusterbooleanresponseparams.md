@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterBooleanResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTRUnitTestingClusterBooleanResponseParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterBooleanResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrunittestingclusterbooleanresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrunittestingclusterbooleanresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclusterbooleanresponseparams/timedinvoketimeoutms.md)
-- [var value: NSNumber](mtrunittestingclusterbooleanresponseparams/value.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclusterbooleanresponseparams/timedinvoketimeoutms.md)
+- [var value: NSNumber](./mtrunittestingclusterbooleanresponseparams/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterBooleanResponseParams](mtrtestclusterclusterbooleanresponseparams.md)
+- [MTRTestClusterClusterBooleanResponseParams](./mtrtestclusterclusterbooleanresponseparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

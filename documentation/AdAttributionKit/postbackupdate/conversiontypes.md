@@ -1,7 +1,8 @@
 # conversionTypes
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array conversion type the system uses to determine which postbacks to update with this postback update.
 

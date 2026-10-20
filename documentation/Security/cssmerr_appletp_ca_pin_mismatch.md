@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_CA_PIN_MISMATCH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CSSMERR_APPLETP_CA_PIN_MISMATCH: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_CA_PIN_MISMATCH
 ```
 
 

@@ -1,7 +1,8 @@
 # selectedPages
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of PDF pages that correspond to the selected thumbnails in the thumbnail view.
 
@@ -19,19 +20,24 @@ Returns an array of PDF pages that correspond to the selected thumbnails in the 
 var selectedPages: [PDFPage]? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSArray<PDFPage *> * selectedPages;
+```
+
 #### Return Value
 
 An array of PDF pages that correspond to the thumbnails selected in the thumbnail view.
 
 #### Discussion
 
-If the thumbnail view allows multiple selections (if [`allowsMultipleSelection`](pdfthumbnailview/allowsmultipleselection.md) returns [`true`](https://developer.apple.com/documentation/swift/true)), you can use this method to get the PDF pages that correspond to the selected thumbnails.
+If the thumbnail view allows multiple selections (if [`allowsMultipleSelection`](./allowsmultipleselection.md) returns [`true`](../../Swift/true.md)), you can use this method to get the PDF pages that correspond to the selected thumbnails.
 
 ## See Also
 
-- [var allowsDragging: Bool](pdfthumbnailview/allowsdragging.md)
+### Managing the Behavior of a Thumbnail View
+- [var allowsDragging: Bool](./allowsdragging.md)
   Returns a Boolean value indicating whether users can drag thumbnails (that is, re-order pages in the document) within the thumbnail view.
-- [var allowsMultipleSelection: Bool](pdfthumbnailview/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   Returns a Boolean value indicating whether users can select multiple thumbnails in the thumbnail view at one time.
 
 

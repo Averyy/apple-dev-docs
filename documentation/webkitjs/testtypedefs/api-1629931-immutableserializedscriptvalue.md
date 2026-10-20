@@ -1,14 +1,15 @@
 # immutableSerializedScriptValue
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 attribute SCRIPT_VALUE immutableSerializedScriptValue;
 ```
 

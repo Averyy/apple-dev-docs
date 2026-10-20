@@ -1,14 +1,15 @@
 # task_basic_info_64_2_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct task_basic_info_64_2 *task_basic_info_64_2_t;
 ```
 

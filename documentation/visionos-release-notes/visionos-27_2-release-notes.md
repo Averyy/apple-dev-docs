@@ -1,12 +1,13 @@
 # visionOS 27.2 RC Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 27.2 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
+The visionOS 27.2 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
 ##### Quick Look
 
@@ -14,7 +15,7 @@ The visionOS 27.2 SDK provides support to develop apps for Apple Vision Pro devi
 
 - 3D objects opened from Safari might reposition unexpectedly when you move them. (187035825)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -28,7 +29,8 @@ The visionOS 27.2 SDK provides support to develop apps for Apple Vision Pro devi
 
 ## See Also
 
-- [visionOS 27 Release Notes](visionos-27-release-notes.md)
+### visionOS 27
+- [visionOS 27 Release Notes](./visionos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

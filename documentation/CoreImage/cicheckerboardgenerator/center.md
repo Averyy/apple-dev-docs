@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The center of the effect as x and y coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The center of the effect as x and y coordinates.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var color0: CIColor](cicheckerboardgenerator/color0.md)
+### Instance Properties
+- [var color0: CIColor](./color0.md)
   A color to use for the first set of squares.
-- [var color1: CIColor](cicheckerboardgenerator/color1.md)
+- [var color1: CIColor](./color1.md)
   A color to use for the second set of squares.
-- [var sharpness: Float](cicheckerboardgenerator/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The sharpness of the edges in the pattern.
-- [var width: Float](cicheckerboardgenerator/width.md)
+- [var width: Float](./width.md)
   The width of the squares in the pattern.
 
 

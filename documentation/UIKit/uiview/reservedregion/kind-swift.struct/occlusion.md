@@ -1,7 +1,8 @@
 # occlusion
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A region that covers part of your view.
 
@@ -24,7 +25,8 @@ An occlusion region is an area where an element, such as the Dynamic Island, a c
 
 ## See Also
 
-- [static let division: UIView.ReservedRegion.Kind](uiview/reservedregion/kind-swift.struct/division.md)
+### Getting reserved region kinds
+- [static let division: UIView.ReservedRegion.Kind](./division.md)
   A region that splits your view into separate parts.
 
 

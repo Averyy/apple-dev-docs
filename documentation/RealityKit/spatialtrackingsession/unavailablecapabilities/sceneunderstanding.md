@@ -1,7 +1,8 @@
 # sceneUnderstanding
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type that contains all unavailable scene-understanding capabilities.
 

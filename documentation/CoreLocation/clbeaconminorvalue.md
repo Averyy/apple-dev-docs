@@ -1,7 +1,8 @@
 # CLBeaconMinorValue
 
 **Framework**: Core Location  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The least significant value in a beacon.
 
@@ -20,17 +21,22 @@ The least significant value in a beacon.
 typealias CLBeaconMinorValue = UInt16
 ```
 
+```c
+typedef uint16_t CLBeaconMinorValue;
+```
+
 ## See Also
 
-- [init(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: String)](clbeaconregion/init(beaconidentityconstraint:identifier:).md)
+### Creating a beacon region
+- [init(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: String)](./clbeaconregion/init%28beaconidentityconstraint,identifier%29.md)
   Creates and returns a region object that targets beacons that satisfy the specified beacon identity constraints.
-- [init(uuid: UUID, identifier: String)](clbeaconregion/init(uuid:identifier:)-6hg8v.md)
+- [init(uuid: UUID, identifier: String)](./clbeaconregion/init%28uuid,identifier%29-6hg8v.md)
   Creates and returns a region object that targets beacons with the specified UUID.
-- [init(uuid: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(uuid:major:identifier:)-8ur0j.md)
+- [init(uuid: UUID, major: CLBeaconMajorValue, identifier: String)](./clbeaconregion/init%28uuid,major,identifier%29-8ur0j.md)
   Creates and returns a region object that targets beacons with the specified UUID and major value.
-- [init(uuid: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](clbeaconregion/init(uuid:major:minor:identifier:)-24h7w.md)
+- [init(uuid: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](./clbeaconregion/init%28uuid,major,minor,identifier%29-24h7w.md)
   Creates and returns a region object that targets beacons with the specified UUID, and major and minor values.
-- [typealias CLBeaconMajorValue](clbeaconmajorvalue.md)
+- [typealias CLBeaconMajorValue](./clbeaconmajorvalue.md)
   The most significant value in a beacon.
 
 

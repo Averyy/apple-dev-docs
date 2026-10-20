@@ -1,7 +1,8 @@
 # focusedValue(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused view hierarchy.
 
@@ -21,6 +22,13 @@ nonisolated
 func focusedValue<Value>(_ keyPath: WritableKeyPath<FocusedValues, Value?>, _ value: Value) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func focusedValue<Value>(_ keyPath: WritableKeyPath<FocusedValues, Value?>, _ value: Value?) -> some View
+```
+
 #### Return Value
 
 A modified representation of this view.
@@ -32,13 +40,14 @@ A modified representation of this view.
 
 ## See Also
 
-- [func focusedValue<T>(T?) -> some View](view/focusedvalue(_:).md)
+### Exposing value types to focused views
+- [func focusedValue<T>(T?) -> some View](./focusedvalue%28_%29.md)
   Sets the focused value for the given object type.
-- [func focusedSceneValue<T>(T?) -> some View](view/focusedscenevalue(_:).md)
+- [func focusedSceneValue<T>(T?) -> some View](./focusedscenevalue%28_%29.md)
   Sets the focused value for the given object type at a scene-wide scope.
-- [func focusedSceneValue(_:_:)](view/focusedscenevalue(_:_:).md)
+- [func focusedSceneValue(_:_:)](./focusedscenevalue%28_,_%29.md)
   Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused scene.
-- [struct FocusedValues](focusedvalues.md)
+- [struct FocusedValues](../focusedvalues.md)
   A collection of state exported by the focused scene or view and its ancestors.
 
 

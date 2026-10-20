@@ -1,15 +1,18 @@
 # rangedRegions
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of regions currently being tracked using ranging.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 14.0+
-- macOS 10.15+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- macOS 10.15+ - Deprecated in 10.15
+
+> **Deprecated**: Use [`rangedBeaconConstraints`](./rangedbeaconconstraints.md) instead.
 
 ## Declaration
 
@@ -17,23 +20,28 @@ The set of regions currently being tracked using ranging.
 var rangedRegions: Set<CLRegion> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<__kindof CLRegion *> * rangedRegions;
+```
+
 #### Discussion
 
-The objects in the set are instances of the [`CLBeaconRegion`](clbeaconregion.md) class.
+The objects in the set are instances of the [`CLBeaconRegion`](../clbeaconregion.md) class.
 
 ## Topics
 
 ### Related documentation
-- [func startRangingBeacons(in: CLBeaconRegion)](cllocationmanager/startrangingbeacons(in:).md)
+- [func startRangingBeacons(in: CLBeaconRegion)](./startrangingbeacons%28in%29.md)
   Starts the delivery of notifications for the specified beacon region.
 
 ## See Also
 
-- [var headingAvailable: Bool](cllocationmanager/headingavailable-swift.property.md)
+### Properties
+- [var headingAvailable: Bool](./headingavailable-swift.property.md)
   A Boolean value indicating whether the location manager is able to generate heading-related events.
-- [var locationServicesEnabled: Bool](cllocationmanager/locationservicesenabled-swift.property.md)
+- [var locationServicesEnabled: Bool](./locationservicesenabled-swift.property.md)
   A Boolean value indicating whether location services are enabled on the device.
-- [var purpose: String?](cllocationmanager/purpose.md)
+- [var purpose: String?](./purpose.md)
   An app-provided string that describes the reason for using location services.
 
 

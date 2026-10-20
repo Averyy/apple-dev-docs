@@ -1,7 +1,8 @@
 # String.LocalizationValue.Placeholder.int
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The signed integer type, as used for replacement values with the localized string placeholder syntax.
 
@@ -26,13 +27,14 @@ To insert a signed int into a placeholder, use the syntax `\(placeholder: .int)`
 
 ## See Also
 
-- [String.LocalizationValue.Placeholder.uint](string/localizationvalue/placeholder/uint.md)
+### Placeholder types
+- [String.LocalizationValue.Placeholder.uint](./uint.md)
   The unsigned integer type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.float](string/localizationvalue/placeholder/float.md)
+- [String.LocalizationValue.Placeholder.float](./float.md)
   The single-precision floating-point type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.double](string/localizationvalue/placeholder/double.md)
+- [String.LocalizationValue.Placeholder.double](./double.md)
   The double-precision floating-point type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.object](string/localizationvalue/placeholder/object.md)
+- [String.LocalizationValue.Placeholder.object](./object.md)
   The object type, as used for replacement values with the localized string placeholder syntax.
 
 

@@ -1,19 +1,24 @@
 # AuthorizationRef
 
 **Framework**: System Configuration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AuthorizationRef = OpaquePointer
+```
+
+```c
+typedef const struct AuthorizationOpaqueRef * AuthorizationRef;
 ```
 
 

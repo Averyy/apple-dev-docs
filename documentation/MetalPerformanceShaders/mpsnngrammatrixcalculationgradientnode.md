@@ -1,7 +1,8 @@
 # MPSNNGramMatrixCalculationGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,25 +18,29 @@
 class MPSNNGramMatrixCalculationGradientNode
 ```
 
+```objc
+@interface MPSNNGramMatrixCalculationGradientNode : MPSNNGradientFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpsnngrammatrixcalculationgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, alpha: Float)](mpsnngrammatrixcalculationgradientnode/init(sourcegradient:sourceimage:gradientstate:alpha:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpsnngrammatrixcalculationgradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, alpha: Float)](./mpsnngrammatrixcalculationgradientnode/init%28sourcegradient,sourceimage,gradientstate,alpha%29.md)
 ### Instance Properties
-- [var alpha: Float](mpsnngrammatrixcalculationgradientnode/alpha.md)
+- [var alpha: Float](./mpsnngrammatrixcalculationgradientnode/alpha.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGradientFilterNode](./mpsnngradientfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

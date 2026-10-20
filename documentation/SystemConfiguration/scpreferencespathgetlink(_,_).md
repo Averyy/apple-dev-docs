@@ -1,7 +1,8 @@
 # SCPreferencesPathGetLink(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the link associated with the specified path.
 
@@ -12,6 +13,10 @@ Returns the link associated with the specified path.
 
 ```swift
 func SCPreferencesPathGetLink(_ prefs: SCPreferences, _ path: CFString) -> CFString?
+```
+
+```c
+CFStringRefSCPreferencesPathGetLink(SCPreferencesRef prefs, CFStringRef path);
 ```
 
 #### Return Value
@@ -25,9 +30,10 @@ The link associated with the specified path, or `NULL` if the path is not a link
 
 ## See Also
 
-- [func SCPreferencesPathGetValue(SCPreferences, CFString) -> CFDictionary?](scpreferencespathgetvalue(_:_:).md)
+### Getting or Removing Information Associated with a Path
+- [func SCPreferencesPathGetValue(SCPreferences, CFString) -> CFDictionary?](./scpreferencespathgetvalue%28_,_%29.md)
   Returns the dictionary associated with the specified path.
-- [func SCPreferencesPathRemoveValue(SCPreferences, CFString) -> Bool](scpreferencespathremovevalue(_:_:).md)
+- [func SCPreferencesPathRemoveValue(SCPreferences, CFString) -> Bool](./scpreferencespathremovevalue%28_,_%29.md)
   Removes the data associated with the specified path.
 
 

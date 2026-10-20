@@ -1,7 +1,8 @@
 # IODataQueueEntry
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Represents an entry within the data queue
 
@@ -16,6 +17,12 @@ Represents an entry within the data queue
 
 ```swift
 typealias IODataQueueEntry = _IODataQueueEntry
+```
+
+```c
+typedef struct _IODataQueueEntry {
+    ...
+} IODataQueueEntry;
 ```
 
 #### Discussion

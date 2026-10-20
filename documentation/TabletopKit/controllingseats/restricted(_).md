@@ -1,7 +1,8 @@
 # ControllingSeats.restricted(_:)
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lets players in specific seats interact with the equipment.
 
@@ -16,13 +17,14 @@ case restricted([TableSeatIdentifier])
 
 ## See Also
 
-- [ControllingSeats.any](controllingseats/any.md)
+### Seats
+- [ControllingSeats.any](./any.md)
   Lets players in all seats interact with the equipment.
-- [case restrictedCurrent([TableSeatIdentifier])](controllingseats/restrictedcurrent(_:).md)
+- [case restrictedCurrent([TableSeatIdentifier])](./restrictedcurrent%28_%29.md)
   Lets players in specific seats interact with the equipment if they are currently in turn.
-- [ControllingSeats.inherited](controllingseats/inherited.md)
+- [ControllingSeats.inherited](./inherited.md)
   The value is inherited from the parent. The table implicit value is considered to be `.any`.
-- [ControllingSeats.current](controllingseats/current.md)
+- [ControllingSeats.current](./current.md)
   Lets only seats currently in turn interact with the equipment.
 
 

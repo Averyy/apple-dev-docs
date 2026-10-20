@@ -1,7 +1,8 @@
 # latestRelease
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The artist’s most recent album.
 

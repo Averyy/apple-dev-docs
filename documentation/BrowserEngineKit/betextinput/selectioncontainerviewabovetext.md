@@ -1,7 +1,8 @@
 # selectionContainerViewAboveText
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional view you supply to draw text selection above the text.
 
@@ -17,15 +18,20 @@ An optional view you supply to draw text selection above the text.
 optional var selectionContainerViewAboveText: UIView? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIView * selectionContainerViewAboveText;
+```
+
 #### Discussion
 
-The default value is `nil`. If you supply a view to this property, the framework layers the supplied view above [`textInputView`](betextinput/textinputview.md) to render text selection above the text, and includes text-selection handles in the rendering.
+The default value is `nil`. If you supply a view to this property, the framework layers the supplied view above [`textInputView`](./textinputview.md) to render text selection above the text, and includes text-selection handles in the rendering.
 
-If you implement text selection using a [`textInputView`](betextinput/textinputview.md) subview instead, leave the value `nil`.
+If you implement text selection using a [`textInputView`](./textinputview.md) subview instead, leave the value `nil`.
 
 ## See Also
 
-- [var selectionContainerViewBelowText: UIView?](betextinput/selectioncontainerviewbelowtext.md)
+### Managing selection views
+- [var selectionContainerViewBelowText: UIView?](./selectioncontainerviewbelowtext.md)
   An optional view you supply to draw text selection below the text.
 
 

@@ -1,7 +1,8 @@
 # cube(slices:named:options:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously creates a cube texture resource from face images.
 
@@ -20,14 +21,21 @@ Asynchronously creates a cube texture resource from face images.
 @preconcurrency static func cube(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) async throws -> TextureResource
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func cube(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
+```
+
 #### Discussion
 
 Provide the cube faces in the following order: [`+X`, `-X`, `+Y`, `-Y`, `+Z`, `-Z`].
 
-| ![An illustration of the +X cube face orientation.](/images/com.apple.RealityKit/textureresource-cube-x-orientation.jpg) | ![An illustration of the -X cube face orientation.](/images/com.apple.RealityKit/textureresource-cube-negx-orientation.jpg) | ![An illustration of the +Y cube face orientation.](/images/com.apple.RealityKit/textureresource-cube-y-orientation.jpg) | ![An illustration of the -Y cube face orientation.](/images/com.apple.RealityKit/textureresource-cube-negy-orientation.jpg) | ![An illustration of the +Z cube face orientation.](/images/com.apple.RealityKit/textureresource-cube-z-orientation.jpg) | ![An illustration of the -Z cube face orientation.](/images/com.apple.RealityKit/textureresource-cube-negz-orientation.jpg) |
+| ![An illustration of the +X cube face orientation.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-x-orientation.jpg) | ![An illustration of the -X cube face orientation.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-negx-orientation.jpg) | ![An illustration of the +Y cube face orientation.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-y-orientation.jpg) | ![An illustration of the -Y cube face orientation.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-negy-orientation.jpg) | ![An illustration of the +Z cube face orientation.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-z-orientation.jpg) | ![An illustration of the -Z cube face orientation.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/textureresource-cube-negz-orientation.jpg) |
 | --- | --- | --- | --- | --- | --- |
 
-Use the resulting texture to create an [`EnvironmentResource`](environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
+Use the resulting texture to create an [`EnvironmentResource`](../environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
 
 ```swift
 // Create a cube texture from image slices.

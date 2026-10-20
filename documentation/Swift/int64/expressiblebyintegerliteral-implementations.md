@@ -1,11 +1,12 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(integerLiteral: Self)](int64/init(integerliteral:).md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29.md)
 
 
 ---

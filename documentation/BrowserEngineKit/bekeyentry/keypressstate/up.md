@@ -1,7 +1,8 @@
 # BEKeyEntry.KeyPressState.up
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An entry that indicates the key is up.
 
@@ -17,13 +18,18 @@ An entry that indicates the key is up.
 case up
 ```
 
+```c
+BEKeyPressStateUp
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../../integrating-custom-browser-text-views-with-uikit.md)
 
 ## See Also
 
-- [BEKeyEntry.KeyPressState.down](bekeyentry/keypressstate/down.md)
+### Key states
+- [BEKeyEntry.KeyPressState.down](./down.md)
   An entry that indicates the key is down.
 
 

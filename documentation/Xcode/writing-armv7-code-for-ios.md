@@ -1,6 +1,7 @@
 # Writing ARMv7 code for iOS
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Create ARMv7 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
 
@@ -8,7 +9,7 @@ Create ARMv7 assembly language instructions that adhere to the application binar
 
 The calling conventions for the ARMv7 and ARMv6 environments are nearly identical. As a result, any app you build for the ARMv7 environment is capable of running in the ARMv6 environment and vice versa. However, some ARMv7 environment features deviate from, or extend, the features of the ARMv6 environment.
 
-##### Preserve Specific Registers in Armv7
+##### Preserve specific registers in ARMv7
 
 The ARMv7 architecture preserves the same registers as the ARMv6 architecture, except for the changes and additions in the following table:
 
@@ -18,9 +19,9 @@ The ARMv7 architecture preserves the same registers as the ARMv6 architecture, e
 |  | D8-D15 | Yes | Also known as Q4-Q7 on ARMv7. These registers are accessible from Thumb mode on ARMv7. |
 |  | D16-D31 | No | Also known as Q8-Q15. These registers are available only in ARMv7. |
 
-For additional register preservation guidance, see [`Preserve specific registers in ARMv6`](writing-armv6-code-for-ios#Preserve-specific-registers-in-ARMv6.md).
+For additional register preservation guidance, see [Preserve specific registers in ARMv6](./writing-armv6-code-for-ios.md#Preserve-specific-registers-in-ARMv6).
 
-##### Generate Arm or Thumb Code From the Same Assembly
+##### Generate ARM or Thumb code from the same assembly
 
 The version of Thumb in ARMv7 is compatible with ARM assembly instructions.  Specifically, Thumb is capable of saving and restoring the contents of the VFP registers, and ARMv7 assembly uses a unified set of mnemonics.
 
@@ -47,7 +48,8 @@ pop       {r4-r7, pc}     // Restore R4-R6, saved R7, and
 
 ## See Also
 
-- [Writing ARMv6 code for iOS](writing-armv6-code-for-ios.md)
+### iOS interfaces
+- [Writing ARMv6 code for iOS](./writing-armv6-code-for-ios.md)
   Create ARMv6 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
 
 

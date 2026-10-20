@@ -1,16 +1,11 @@
 ---
-layout: page
-title: Mixing Swift and C++
-official_url: https://swift.org/documentation/cxx-interop/
-redirect_from:
-- /documentation/cxx-interop.html
+source: swiftlang/swift-org-website
+url: https://swift.org/documentation/cxx-interop/
 ---
 
-## Table of Contents
-{:.no_toc}
+# Mixing Swift and C++
 
-* TOC
-{:toc}
+## Table of Contents
 
 ## Introduction
 

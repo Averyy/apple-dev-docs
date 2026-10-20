@@ -1,7 +1,8 @@
 # init(viewController:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a split view item that represents the specified view controller.
 
@@ -14,13 +15,18 @@ Creates a split view item that represents the specified view controller.
 convenience init(viewController: NSViewController)
 ```
 
+```objc
++ (instancetype) splitViewItemWithViewController:(NSViewController *) viewController;
+```
+
 ## See Also
 
-- [convenience init(sidebarWithViewController: NSViewController)](nssplitviewitem/init(sidebarwithviewcontroller:).md)
+### Creating a split view item
+- [convenience init(sidebarWithViewController: NSViewController)](./init%28sidebarwithviewcontroller%29.md)
   Creates a split view item that represents a sidebar for the specified view controller.
-- [convenience init(contentListWithViewController: NSViewController)](nssplitviewitem/init(contentlistwithviewcontroller:).md)
+- [convenience init(contentListWithViewController: NSViewController)](./init%28contentlistwithviewcontroller%29.md)
   Creates a split view item that represents a content list for the specified view controller.
-- [convenience init(inspectorWithViewController: NSViewController)](nssplitviewitem/init(inspectorwithviewcontroller:).md)
+- [convenience init(inspectorWithViewController: NSViewController)](./init%28inspectorwithviewcontroller%29.md)
   Creates a split view item that represents an inspector for the specified view controller.
 
 

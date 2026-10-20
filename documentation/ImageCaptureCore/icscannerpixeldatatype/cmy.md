@@ -1,7 +1,8 @@
 # ICScannerPixelDataType.CMY
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.4+
@@ -12,16 +13,21 @@
 case CMY
 ```
 
+```c
+ICScannerPixelDataTypeCMY
+```
+
 ## See Also
 
-- [ICScannerPixelDataType.BW](icscannerpixeldatatype/bw.md)
-- [ICScannerPixelDataType.CIEXYZ](icscannerpixeldatatype/ciexyz.md)
-- [ICScannerPixelDataType.CMYK](icscannerpixeldatatype/cmyk.md)
-- [ICScannerPixelDataType.gray](icscannerpixeldatatype/gray.md)
-- [ICScannerPixelDataType.palette](icscannerpixeldatatype/palette.md)
-- [ICScannerPixelDataType.RGB](icscannerpixeldatatype/rgb.md)
-- [ICScannerPixelDataType.YUV](icscannerpixeldatatype/yuv.md)
-- [ICScannerPixelDataType.YUVK](icscannerpixeldatatype/yuvk.md)
+### Constants
+- [ICScannerPixelDataType.BW](./bw.md)
+- [ICScannerPixelDataType.CIEXYZ](./ciexyz.md)
+- [ICScannerPixelDataType.CMYK](./cmyk.md)
+- [ICScannerPixelDataType.gray](./gray.md)
+- [ICScannerPixelDataType.palette](./palette.md)
+- [ICScannerPixelDataType.RGB](./rgb.md)
+- [ICScannerPixelDataType.YUV](./yuv.md)
+- [ICScannerPixelDataType.YUVK](./yuvk.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current state of shader validation for the pipeline.
@@ -18,6 +19,10 @@ The current state of shader validation for the pipeline.
 
 ```swift
 var shaderValidation: MTLShaderValidation { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLShaderValidation shaderValidation;
 ```
 
 

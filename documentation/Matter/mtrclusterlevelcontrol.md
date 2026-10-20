@@ -1,7 +1,8 @@
 # MTRClusterLevelControl
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,75 +19,79 @@
 class MTRClusterLevelControl
 ```
 
+```objc
+@interface MTRClusterLevelControl : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusterlevelcontrol/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterlevelcontrol/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclusterlevelcontrol/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterlevelcontrol/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func move(with: MTRLevelControlClusterMoveParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/move(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func move(with: MTRLevelControlClusterMoveParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/move(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func moveToClosestFrequency(with: MTRLevelControlClusterMoveToClosestFrequencyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movetoclosestfrequency(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func moveToClosestFrequency(with: MTRLevelControlClusterMoveToClosestFrequencyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movetoclosestfrequency(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func moveToLevel(with: MTRLevelControlClusterMoveToLevelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movetolevel(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func moveToLevel(with: MTRLevelControlClusterMoveToLevelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movetolevel(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func moveToLevelWithOnOff(with: MTRLevelControlClusterMoveToLevelWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movetolevelwithonoff(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func moveToLevelWithOnOff(with: MTRLevelControlClusterMoveToLevelWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movetolevelwithonoff(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func moveWithOnOff(with: MTRLevelControlClusterMoveWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movewithonoff(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func moveWithOnOff(with: MTRLevelControlClusterMoveWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/movewithonoff(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentFrequency(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributecurrentfrequency(with:).md)
-- [func readAttributeCurrentLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributecurrentlevel(with:).md)
-- [func readAttributeDefaultMoveRate(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributedefaultmoverate(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeMaxFrequency(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributemaxfrequency(with:).md)
-- [func readAttributeMaxLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributemaxlevel(with:).md)
-- [func readAttributeMinFrequency(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeminfrequency(with:).md)
-- [func readAttributeMinLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeminlevel(with:).md)
-- [func readAttributeOffTransitionTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeofftransitiontime(with:).md)
-- [func readAttributeOnLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeonlevel(with:).md)
-- [func readAttributeOnOffTransitionTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeonofftransitiontime(with:).md)
-- [func readAttributeOnTransitionTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeontransitiontime(with:).md)
-- [func readAttributeOptions(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeoptions(with:).md)
-- [func readAttributeRemainingTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributeremainingtime(with:).md)
-- [func readAttributeStartUpCurrentLevel(with: MTRReadParams?) -> [String : Any]?](mtrclusterlevelcontrol/readattributestartupcurrentlevel(with:).md)
-- [func step(with: MTRLevelControlClusterStepParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/step(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func step(with: MTRLevelControlClusterStepParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/step(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func stepWithOnOff(with: MTRLevelControlClusterStepWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/stepwithonoff(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func stepWithOnOff(with: MTRLevelControlClusterStepWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/stepwithonoff(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func stop(with: MTRLevelControlClusterStopParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/stop(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func stop(with: MTRLevelControlClusterStopParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/stop(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func stopWithOnOff(with: MTRLevelControlClusterStopWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlevelcontrol/stopwithonoff(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func stopWithOnOff(with: MTRLevelControlClusterStopWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlevelcontrol/stopwithonoff(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func writeAttributeDefaultMoveRate(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributedefaultmoverate(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeDefaultMoveRate(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributedefaultmoverate(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributeofftransitiontime(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributeofftransitiontime(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeOnLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributeonlevel(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeOnLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributeonlevel(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeOnOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributeonofftransitiontime(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeOnOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributeonofftransitiontime(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeOnTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributeontransitiontime(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeOnTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributeontransitiontime(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeOptions(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributeoptions(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeOptions(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributeoptions(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeStartUpCurrentLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlevelcontrol/writeattributestartupcurrentlevel(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeStartUpCurrentLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlevelcontrol/writeattributestartupcurrentlevel(withvalue:expectedvalueinterval:params:).md)
+- [func move(with: MTRLevelControlClusterMoveParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/move%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func move(with: MTRLevelControlClusterMoveParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/move%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func moveToClosestFrequency(with: MTRLevelControlClusterMoveToClosestFrequencyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movetoclosestfrequency%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func moveToClosestFrequency(with: MTRLevelControlClusterMoveToClosestFrequencyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movetoclosestfrequency%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func moveToLevel(with: MTRLevelControlClusterMoveToLevelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movetolevel%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func moveToLevel(with: MTRLevelControlClusterMoveToLevelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movetolevel%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func moveToLevelWithOnOff(with: MTRLevelControlClusterMoveToLevelWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movetolevelwithonoff%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func moveToLevelWithOnOff(with: MTRLevelControlClusterMoveToLevelWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movetolevelwithonoff%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func moveWithOnOff(with: MTRLevelControlClusterMoveWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movewithonoff%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func moveWithOnOff(with: MTRLevelControlClusterMoveWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/movewithonoff%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentFrequency(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributecurrentfrequency%28with%29.md)
+- [func readAttributeCurrentLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributecurrentlevel%28with%29.md)
+- [func readAttributeDefaultMoveRate(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributedefaultmoverate%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeMaxFrequency(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributemaxfrequency%28with%29.md)
+- [func readAttributeMaxLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributemaxlevel%28with%29.md)
+- [func readAttributeMinFrequency(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeminfrequency%28with%29.md)
+- [func readAttributeMinLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeminlevel%28with%29.md)
+- [func readAttributeOffTransitionTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeofftransitiontime%28with%29.md)
+- [func readAttributeOnLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeonlevel%28with%29.md)
+- [func readAttributeOnOffTransitionTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeonofftransitiontime%28with%29.md)
+- [func readAttributeOnTransitionTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeontransitiontime%28with%29.md)
+- [func readAttributeOptions(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeoptions%28with%29.md)
+- [func readAttributeRemainingTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributeremainingtime%28with%29.md)
+- [func readAttributeStartUpCurrentLevel(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlevelcontrol/readattributestartupcurrentlevel%28with%29.md)
+- [func step(with: MTRLevelControlClusterStepParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/step%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func step(with: MTRLevelControlClusterStepParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/step%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func stepWithOnOff(with: MTRLevelControlClusterStepWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/stepwithonoff%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func stepWithOnOff(with: MTRLevelControlClusterStepWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/stepwithonoff%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func stop(with: MTRLevelControlClusterStopParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/stop%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func stop(with: MTRLevelControlClusterStopParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/stop%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func stopWithOnOff(with: MTRLevelControlClusterStopWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/stopwithonoff%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func stopWithOnOff(with: MTRLevelControlClusterStopWithOnOffParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclusterlevelcontrol/stopwithonoff%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func writeAttributeDefaultMoveRate(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributedefaultmoverate%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeDefaultMoveRate(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributedefaultmoverate%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributeofftransitiontime%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributeofftransitiontime%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeOnLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributeonlevel%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeOnLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributeonlevel%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeOnOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributeonofftransitiontime%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeOnOffTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributeonofftransitiontime%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeOnTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributeontransitiontime%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeOnTransitionTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributeontransitiontime%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeOptions(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributeoptions%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeOptions(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributeoptions%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeStartUpCurrentLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlevelcontrol/writeattributestartupcurrentlevel%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeStartUpCurrentLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlevelcontrol/writeattributestartupcurrentlevel%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

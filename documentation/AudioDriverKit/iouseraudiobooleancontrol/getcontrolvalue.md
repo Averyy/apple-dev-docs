@@ -1,7 +1,8 @@
 # GetControlValue
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the Boolean value of the control.
 
@@ -10,7 +11,7 @@ Gets the Boolean value of the control.
 
 ## Declaration
 
-```swift
+```c
 bool GetControlValue();
 ```
 
@@ -24,7 +25,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetControlValue](iouseraudiobooleancontrol/setcontrolvalue.md)
+### Accessing the Value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the Boolean value of the control.
 
 

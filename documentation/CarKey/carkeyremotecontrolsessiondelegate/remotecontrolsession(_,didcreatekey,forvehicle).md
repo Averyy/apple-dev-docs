@@ -2,6 +2,7 @@
 
 **Framework**: CarKey  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called to notify your app when a new key has been created.
@@ -24,6 +25,12 @@ func remoteControlSession(_ session: CarKeyRemoteControlSession, didCreateKey ke
 - `session`: The current session.
 - `keyID`: The identifier of the key.
 - `vehicleID`: The identifier of the vehicle.
+
+## Default Implementations
+
+### CarKeyRemoteControlSessionDelegate Implementations
+- [func remoteControlSession(CarKeyRemoteControlSession, didCreateKey: String, forVehicle: String)](./remotecontrolsession%28_,didcreatekey,forvehicle%29-1djol.md)
+  Called to notify your app when a new key has been created.
 
 
 ---

@@ -1,7 +1,8 @@
 # spawnedEmitter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attributes affecting secondary particles spawned from the main simulation.
 

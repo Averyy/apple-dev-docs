@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_cpu_architecture {
     ...
 };
@@ -17,8 +17,8 @@ struct stackshot_cpu_architecture {
 ## Topics
 
 ### Instance Properties
-- [cpusubtype](stackshot_cpu_architecture/3553442-cpusubtype.md)
-- [cputype](stackshot_cpu_architecture/3553443-cputype.md)
+- [cpusubtype](./stackshot_cpu_architecture/api-3553442-cpusubtype.md)
+- [cputype](./stackshot_cpu_architecture/api-3553443-cputype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this hand tracking provider.
 
@@ -16,9 +17,10 @@ final var description: String { get }
 
 ## See Also
 
-- [var state: DataProviderState](handtrackingprovider/state.md)
+### Inspecting a hand-tracking provider
+- [var state: DataProviderState](./state.md)
   The current status of data coming from a provider.
-- [func handAnchors(at: TimeInterval) -> (leftHand: HandAnchor?, rightHand: HandAnchor?)](handtrackingprovider/handanchors(at:).md)
+- [func handAnchors(at: TimeInterval) -> (leftHand: HandAnchor?, rightHand: HandAnchor?)](./handanchors%28at%29.md)
   Queries for hand anchors at the provided target timestamp.
 
 

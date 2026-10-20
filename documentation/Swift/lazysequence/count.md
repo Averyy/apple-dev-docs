@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of elements.
 
@@ -20,11 +21,13 @@ Returns the number of elements.
 var count: Int { get }
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Discussion
 
 To check whether a collection is empty, use its `isEmpty` property instead of comparing `count` to zero. Unless the collection guarantees random-access performance, calculating `count` can be an O(*n*) operation.
 
-> **Note**: O(1) if `Self` conforms to `RandomAccessCollection`; O(*n*) otherwise.
+> **Complexity**: O(1) if `Self` conforms to `RandomAccessCollection`; O(*n*) otherwise.
 
 
 ---

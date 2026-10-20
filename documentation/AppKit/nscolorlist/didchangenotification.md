@@ -1,12 +1,13 @@
 # didChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted whenever a color list changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Posted whenever a color list changes.
 class let didChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSColorListDidChangeNotification;
+```
+
 #### Discussion
 
-The notification object is the [`NSColorList`](nscolorlist.md) object that changed. This notification does not contain a `userInfo` dictionary.
+The notification object is the [`NSColorList`](../nscolorlist.md) object that changed. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSColorList.DidChangeMessage`](nscolorlist/didchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSColorList.DidChangeMessage`](./didchangemessage.md).
 
 
 ---

@@ -1,18 +1,21 @@
 # SKStorefront
 
 **Framework**: StoreKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object containing the location and unique identifier of an Apple App Store storefront.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+- tvOS 13.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use [`Storefront`](./storefront.md) instead.
 
 ## Declaration
 
@@ -20,9 +23,13 @@ An object containing the location and unique identifier of an Apple App Store st
 class SKStorefront
 ```
 
+```objc
+@interface SKStorefront : NSObject
+```
+
 #### Overview
 
-In-app products you create through App Store Connect are available for sale in every region with an App Store. You can use the storefront information to determine the customer’s region, and offer in-app products suitable for that region. StoreKit exposes [`SKStorefront`](skstorefront.md) storefront information as a read-only property in [`SKPaymentQueue`](skpaymentqueue.md).
+In-app products you create through App Store Connect are available for sale in every region with an App Store. You can use the storefront information to determine the customer’s region, and offer in-app products suitable for that region. StoreKit exposes [`SKStorefront`](./skstorefront.md) storefront information as a read-only property in [`SKPaymentQueue`](./skpaymentqueue.md).
 
 You must maintain your own list of product identifiers and the storefronts in which you want to make them available.
 
@@ -65,7 +72,7 @@ func fetchProductInfo() {
 
 ##### Listen for Storefront Changes
 
-The storefront value can change at any time. To listen for changes in this value, implement the [`paymentQueueDidChangeStorefront(_:)`](skpaymenttransactionobserver/paymentqueuedidchangestorefront(_:).md) method. The `shouldShow` function is defined in [`Show Products Based on the Current Storefront`](skstorefront#Show-Products-Based-on-the-Current-Storefront.md). Refresh the list of your available products when the storefront changes, as shown below:
+The storefront value can change at any time. To listen for changes in this value, implement the [`paymentQueueDidChangeStorefront(_:)`](./skpaymenttransactionobserver/paymentqueuedidchangestorefront%28_%29.md) method. The `shouldShow` function is defined in [Show Products Based on the Current Storefront](./skstorefront.md#Show-Products-Based-on-the-Current-Storefront). Refresh the list of your available products when the storefront changes, as shown below:
 
 ```swift
 func paymentQueueDidChangeStorefront(_ queue: SKPaymentQueue) {
@@ -82,7 +89,7 @@ func paymentQueueDidChangeStorefront(_ queue: SKPaymentQueue) {
 
 ##### Respond to Storefront Changes
 
-The current storefront can change at any time, including during a transaction. The following code listing determines whether the transaction should continue in the updated storefront. Your delegate’s [`paymentQueue(_:shouldContinue:in:)`](skpaymentqueuedelegate/paymentqueue(_:shouldcontinue:in:).md) method must return quickly, before the call times out. The `shouldShow` function is defined in [`Show Products Based on the Current Storefront`](skstorefront#Show-Products-Based-on-the-Current-Storefront.md).
+The current storefront can change at any time, including during a transaction. The following code listing determines whether the transaction should continue in the updated storefront. Your delegate’s [`paymentQueue(_:shouldContinue:in:)`](./skpaymentqueuedelegate/paymentqueue%28_,shouldcontinue,in%29.md) method must return quickly, before the call times out. The `shouldShow` function is defined in [Show Products Based on the Current Storefront](./skstorefront.md#Show-Products-Based-on-the-Current-Storefront).
 
 ```swift
 SKPaymentQueue.default().delegate = self  // Set your object as the SKPaymentQueue delegate.
@@ -94,7 +101,7 @@ func paymentQueue(_ paymentQueue: SKPaymentQueue,
 }
 ```
 
-If the product isn’t available in the updated storefront, the transaction fails with the error [`SKError.Code.storeProductNotAvailable`](skerror/code/storeproductnotavailable.md). Handle this error in your [`paymentQueue(_:updatedTransactions:)`](skpaymenttransactionobserver/paymentqueue(_:updatedtransactions:).md) method by displaying an alert to let the customer know why the app can’t complete the transaction, as shown below:
+If the product isn’t available in the updated storefront, the transaction fails with the error [`SKError.Code.storeProductNotAvailable`](./skerror/code/storeproductnotavailable.md). Handle this error in your [`paymentQueue(_:updatedTransactions:)`](./skpaymenttransactionobserver/paymentqueue%28_,updatedtransactions%29.md) method by displaying an alert to let the customer know why the app can’t complete the transaction, as shown below:
 
 ```swift
 func paymentQueue(_ queue: SKPaymentQueue,
@@ -111,31 +118,31 @@ func paymentQueue(_ queue: SKPaymentQueue,
 
 ##### Change the App Store Country or Region in the Sandbox Environment
 
-When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test Apple In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [`Test Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev7e89e149d).
+When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test Apple In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [Test Apple In-App Purchases](https://help.apple.com/app-store-connect/#/dev7e89e149d).
 
 > ❗ **Important**:  To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account on the device and sign back in.
 
 ## Topics
 
 ### Identifying the Storefront
-- [var countryCode: String](skstorefront/countrycode.md)
+- [var countryCode: String](./skstorefront/countrycode.md)
   The three-letter code representing the country or region associated with the App Store storefront.
-- [var identifier: String](skstorefront/identifier.md)
+- [var identifier: String](./skstorefront/identifier.md)
   A value defined by Apple that uniquely identifies an App Store storefront.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

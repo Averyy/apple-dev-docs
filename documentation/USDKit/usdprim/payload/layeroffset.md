@@ -1,7 +1,8 @@
 # layerOffset
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time-axis remap applied to the payload’s animation.
 

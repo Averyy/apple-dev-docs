@@ -1,14 +1,15 @@
 # STACKSHOT_SAVE_DYLD_COMPACTINFO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_SAVE_DYLD_COMPACTINFO
 ```
 

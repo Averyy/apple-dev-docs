@@ -1,14 +1,15 @@
 # send_vfs_resolve_file_with_audit_token
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t send_vfs_resolve_file_with_audit_token(mach_port_t nspace_handler_port, uint32_t req_id, uint32_t op, int64_t offset, int64_t size, nspace_path_t path, audit_token_t req_atoken);
 ```
 

@@ -1,35 +1,37 @@
 # kIOPCIDeviceCrashResetType
 
 **Framework**: PCIDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define kIOPCIDeviceCrashResetType
 ```
 
 ## See Also
 
-- [kIOPCIClassMatchKey](kiopciclassmatchkey.md)
-- [kIOPCIDeviceMapperPageSize](kiopcidevicemapperpagesize.md)
-- [kIOPCIDeviceMemoryArrayKey](kiopcidevicememoryarraykey.md)
-- [kIOPCIDeviceMemoryMapBase](kiopcidevicememorymapbase.md)
-- [kIOPCIDeviceMemoryMapSize](kiopcidevicememorymapsize.md)
-- [kIOPCIEndpointPrsnt](kiopciendpointprsnt.md)
-- [kIOPCIExpressCapabilitiesKey](kiopciexpresscapabilitieskey.md)
-- [kIOPCIExpressLinkCapabilitiesKey](kiopciexpresslinkcapabilitieskey.md)
-- [kIOPCIExpressLinkStatusKey](kiopciexpresslinkstatuskey.md)
-- [kIOPCIExpressSlotCapabilitiesKey](kiopciexpressslotcapabilitieskey.md)
-- [kIOPCIExpressSlotStatusKey](kiopciexpressslotstatuskey.md)
-- [kIOPCIKernelMemoryAccess](kiopcikernelmemoryaccess.md)
-- [kIOPCIMatchKey](kiopcimatchkey.md)
-- [kIOPCIPauseCompatibleKey](kiopcipausecompatiblekey.md)
-- [kIOPCIPrimaryMatchKey](kiopciprimarymatchkey.md)
+### Macros
+- [kIOPCIClassMatchKey](./kiopciclassmatchkey.md)
+- [kIOPCIDeviceMapperPageSize](./kiopcidevicemapperpagesize.md)
+- [kIOPCIDeviceMemoryArrayKey](./kiopcidevicememoryarraykey.md)
+- [kIOPCIDeviceMemoryMapBase](./kiopcidevicememorymapbase.md)
+- [kIOPCIDeviceMemoryMapSize](./kiopcidevicememorymapsize.md)
+- [kIOPCIEndpointPrsnt](./kiopciendpointprsnt.md)
+- [kIOPCIExpressCapabilitiesKey](./kiopciexpresscapabilitieskey.md)
+- [kIOPCIExpressLinkCapabilitiesKey](./kiopciexpresslinkcapabilitieskey.md)
+- [kIOPCIExpressLinkStatusKey](./kiopciexpresslinkstatuskey.md)
+- [kIOPCIExpressSlotCapabilitiesKey](./kiopciexpressslotcapabilitieskey.md)
+- [kIOPCIExpressSlotStatusKey](./kiopciexpressslotstatuskey.md)
+- [kIOPCIKernelMemoryAccess](./kiopcikernelmemoryaccess.md)
+- [kIOPCIMatchKey](./kiopcimatchkey.md)
+- [kIOPCIPauseCompatibleKey](./kiopcipausecompatiblekey.md)
+- [kIOPCIPrimaryMatchKey](./kiopciprimarymatchkey.md)
 
 
 ---

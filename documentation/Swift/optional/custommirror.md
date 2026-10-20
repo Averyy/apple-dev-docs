@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom mirror for this instance.
 
@@ -26,11 +27,12 @@ If this type has value semantics, the mirror should be unaffected by subsequent 
 
 ## See Also
 
-- [func hash(into: inout Hasher)](optional/hash(into:).md)
+### Inspecting an Optional
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var unsafelyUnwrapped: Wrapped](optional/unsafelyunwrapped.md)
+- [var unsafelyUnwrapped: Wrapped](./unsafelyunwrapped.md)
   The wrapped value of this instance, unwrapped without checking whether the instance is `nil`.
-- [var debugDescription: String](optional/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of this instance, suitable for debugging.
 
 

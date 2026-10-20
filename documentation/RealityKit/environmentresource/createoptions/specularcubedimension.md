@@ -1,7 +1,8 @@
 # specularCubeDimension
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimension of the computed specular cubemap for material reflections.
 
@@ -29,9 +30,10 @@ A value lower than that of the cubemap helps to reduce the memory footprint in s
 
 ## See Also
 
-- [var compression: EnvironmentResource.Compression](environmentresource/createoptions/compression.md)
+### Accessing the option properties
+- [var compression: EnvironmentResource.Compression](./compression.md)
   The compression to apply to environment textures.
-- [var samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality](environmentresource/createoptions/samplingquality-swift.property.md)
+- [var samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality](./samplingquality-swift.property.md)
   The skybox sampling quality for lighting textures.
 
 

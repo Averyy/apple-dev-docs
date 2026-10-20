@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handle associated with the group.
 

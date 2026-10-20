@@ -1,23 +1,28 @@
 # stride
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The increment, in values, between consecutive elements in each dimension.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var stride: (Int, Int, Int, Int, Int, Int, Int, Int)
+```
+
+```c
+size_t stride[8];
 ```
 
 #### Discussion
@@ -34,25 +39,26 @@ The stride for the first dimension is `1`, for example, the increment between `5
 
 ## See Also
 
-- [var flags: BNNSNDArrayFlags](bnnsndarraydescriptor/flags.md)
+### Accessing the Properties of an Array Descriptor
+- [var flags: BNNSNDArrayFlags](./flags.md)
   Flags that control some behaviors of the n-dimensional array.
-- [var layout: BNNSDataLayout](bnnsndarraydescriptor/layout.md)
+- [var layout: BNNSDataLayout](./layout.md)
   The dimension of the n-dimensional array.
-- [var size: (Int, Int, Int, Int, Int, Int, Int, Int)](bnnsndarraydescriptor/size.md)
+- [var size: (Int, Int, Int, Int, Int, Int, Int, Int)](./size.md)
   The number of values in each dimension.
-- [var data: UnsafeMutableRawPointer?](bnnsndarraydescriptor/data.md)
+- [var data: UnsafeMutableRawPointer?](./data.md)
   A pointer that is optional and points to the underlying data.
-- [var data_type: BNNSDataType](bnnsndarraydescriptor/data_type.md)
+- [var data_type: BNNSDataType](./data_type.md)
   The data type of the n-dimensional array.
-- [var table_data: UnsafeMutableRawPointer?](bnnsndarraydescriptor/table_data.md)
+- [var table_data: UnsafeMutableRawPointer?](./table_data.md)
   The lookup table for indexed data types.
-- [var table_data_type: BNNSDataType](bnnsndarraydescriptor/table_data_type.md)
+- [var table_data_type: BNNSDataType](./table_data_type.md)
   The data type of the lookup table.
-- [var data_scale: Float](bnnsndarraydescriptor/data_scale.md)
+- [var data_scale: Float](./data_scale.md)
   The scale you use to convert integer and unsigned integer data to floating point.
-- [var data_bias: Float](bnnsndarraydescriptor/data_bias.md)
+- [var data_bias: Float](./data_bias.md)
   The bias you use to convert integer and unsigned integer data to floating point.
-- [var shape: BNNS.Shape](bnnsndarraydescriptor/shape.md)
+- [var shape: BNNS.Shape](./shape.md)
   The shape of the n-dimensional array.
 
 

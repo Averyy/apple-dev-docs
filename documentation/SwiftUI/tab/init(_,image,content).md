@@ -1,7 +1,8 @@
 # init(_:image:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tab that you can use in a tab view, with a localized string key label.
 
@@ -20,6 +21,18 @@ Creates a new tab that you can use in a tab view, with a localized string key la
 init(_ titleKey: LocalizedStringKey, image: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
+Available when `Value` is `Never`, `Content` conforms to `View`, and `Label` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+init(_ titleResource: LocalizedStringResource, image: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
+```
+
+```swift
+init<S>(_ title: S, image: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel, S : StringProtocol
+```
+
 ## Parameters
 
 - `titleKey`: The localized string key label for the tab’s tab item.
@@ -28,11 +41,12 @@ init(_ titleKey: LocalizedStringKey, image: String, @ContentBuilder content: () 
 
 ## See Also
 
-- [init(_:image:value:content:)](tab/init(_:image:value:content:).md)
+### Creating a tab with image
+- [init(_:image:value:content:)](./init%28_,image,value,content%29.md)
   Creates a tab that the tab view presents when the tab view’s selection matches the tab’s value, with a localized string key label.
-- [init(_:image:role:content:)](tab/init(_:image:role:content:).md)
+- [init(_:image:role:content:)](./init%28_,image,role,content%29.md)
   Creates a new tab that you can use in a tab view, with a localized string key label.
-- [init(_:image:value:role:content:)](tab/init(_:image:value:role:content:).md)
+- [init(_:image:value:role:content:)](./init%28_,image,value,role,content%29.md)
   Creates a tab that the tab view presents when the tab view’s selection matches the tab’s value, with a localized string key label.
 
 

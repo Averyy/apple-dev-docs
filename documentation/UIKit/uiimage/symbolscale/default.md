@@ -1,7 +1,8 @@
 # UIImage.SymbolScale.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default scale variant that matches the system usage.
 
@@ -19,19 +20,24 @@ The default scale variant that matches the system usage.
 case `default`
 ```
 
+```c
+UIImageSymbolScaleDefault
+```
+
 #### Discussion
 
 UIKit chooses the same scale used for similar content in other parts of the system.
 
 ## See Also
 
-- [UIImage.SymbolScale.unspecified](uiimage/symbolscale/unspecified.md)
+### Symbol image scales
+- [UIImage.SymbolScale.unspecified](./unspecified.md)
   An unspecified scale.
-- [UIImage.SymbolScale.small](uiimage/symbolscale/small.md)
+- [UIImage.SymbolScale.small](./small.md)
   The small variant of the symbol image.
-- [UIImage.SymbolScale.medium](uiimage/symbolscale/medium.md)
+- [UIImage.SymbolScale.medium](./medium.md)
   The medium variant of the symbol image
-- [UIImage.SymbolScale.large](uiimage/symbolscale/large.md)
+- [UIImage.SymbolScale.large](./large.md)
   The large variant of the symbol image.
 
 

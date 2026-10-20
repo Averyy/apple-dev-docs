@@ -1,7 +1,8 @@
 # base
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying data frame.
 
@@ -22,19 +23,20 @@ var base: DataFrame { get }
 
 #### Discussion
 
-For a [`DataFrame`](dataframe.md) instance, this property is equivalent to `self`.
+For a [`DataFrame`](../dataframe.md) instance, this property is equivalent to `self`.
 
 ## See Also
 
-- [var shape: (rows: Int, columns: Int)](dataframe/shape.md)
+### Inspecting a Data Frame
+- [var shape: (rows: Int, columns: Int)](./shape.md)
   The number of rows and columns in the data frame.
-- [var columns: [AnyColumn]](dataframe/columns.md)
+- [var columns: [AnyColumn]](./columns.md)
   The entire data frame as a collection of columns.
-- [var rows: DataFrame.Rows](dataframe/rows-swift.property.md)
+- [var rows: DataFrame.Rows](./rows-swift.property.md)
   The entire data frame as a collection of rows.
-- [DataFrame.Rows](dataframe/rows-swift.struct.md)
+- [DataFrame.Rows](./rows-swift.struct.md)
   A collection of rows in a data frame.
-- [func containsColumn<T>(String, T.Type) -> Bool](dataframe/containscolumn(_:_:).md)
+- [func containsColumn<T>(String, T.Type) -> Bool](./containscolumn%28_,_%29.md)
   Returns a Boolean value indicating whether the data frame contains a column.
 
 

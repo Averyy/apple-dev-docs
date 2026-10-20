@@ -1,7 +1,8 @@
 # JSONReadingOptions
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of JSON file-reading options.
 
@@ -23,22 +24,23 @@ struct JSONReadingOptions
 ## Topics
 
 ### Initializers
-- [init()](jsonreadingoptions/init.md)
+- [init()](./jsonreadingoptions/init%28%29.md)
   Creates a set of options for reading a JSON file.
 ### Instance Properties
-- [var dateParsers: [(String) -> Date?]](jsonreadingoptions/dateparsers.md)
+- [var dateParsers: [(String) -> Date?]](./jsonreadingoptions/dateparsers.md)
   An array of closures that parse a date from a string.
 ### Instance Methods
-- [func addDateParseStrategy<T>(T)](jsonreadingoptions/adddateparsestrategy(_:).md)
+- [func addDateParseStrategy<T>(T)](./jsonreadingoptions/adddateparsestrategy%28_%29.md)
   Adds a date parsing strategy.
 
 ## See Also
 
-- [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(contentsofjsonfile:columns:types:options:).md)
+### Creating a Data Frame from a JSON File
+- [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
-- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(jsondata:columns:types:options:).md)
+- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28jsondata,columns,types,options%29.md)
   Creates a data frame by converting JSON data.
-- [enum JSONType](jsontype.md)
+- [enum JSONType](./jsontype.md)
   Represents the value types in a JSON file.
 
 

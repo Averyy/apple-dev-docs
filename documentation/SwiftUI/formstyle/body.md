@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the appearance and interaction of a form.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](formstyle/makebody(configuration:).md)
+### Creating custom form styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a form.
-- [FormStyle.Configuration](formstyle/configuration.md)
+- [FormStyle.Configuration](./configuration.md)
   The properties of a form instance.
 
 

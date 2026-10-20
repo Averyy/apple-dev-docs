@@ -1,7 +1,8 @@
 # Optional
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents either a wrapped value or the absence of a value.
 
@@ -77,7 +78,7 @@ if imagePaths["star"]?.hasSuffix(".png") == true {
 // Prints "The star image is in PNG format"
 ```
 
-#### Using the Nil Coalescing Operator
+#### Using the Nil-Coalescing Operator
 
 Use the nil-coalescing operator (`??`) to supply a default value in case the `Optional` instance is `nil`. Here a default path is supplied for an image that is missing from `imagePaths`.
 
@@ -119,129 +120,129 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 ## Topics
 
 ### Creating an Optional Value
-- [case some(Wrapped)](optional/some(_:).md)
+- [case some(Wrapped)](./optional/some%28_%29.md)
   The presence of a value, stored as `Wrapped`.
-- [init(consuming Wrapped)](optional/init(_:).md)
+- [init(consuming Wrapped)](./optional/init%28_%29.md)
   Creates an instance that stores the given value.
 ### Creating a Nil Value
-- [Optional.none](optional/none.md)
+- [Optional.none](./optional/none.md)
   The absence of a value.
-- [init(nilLiteral: ())](optional/init(nilliteral:).md)
+- [init(nilLiteral: ())](./optional/init%28nilliteral%29.md)
   Creates an instance initialized with `nil`.
 ### Transforming an Optional Value
-- [func map<E, U>((Wrapped) throws(E) -> U) throws(E) -> U?](optional/map(_:).md)
+- [func map<E, U>((Wrapped) throws(E) -> U) throws(E) -> U?](./optional/map%28_%29.md)
   Evaluates the given closure when this `Optional` instance is not `nil`, passing the unwrapped value as a parameter.
-- [func flatMap<E, U>((Wrapped) throws(E) -> U?) throws(E) -> U?](optional/flatmap(_:).md)
+- [func flatMap<E, U>((Wrapped) throws(E) -> U?) throws(E) -> U?](./optional/flatmap%28_%29.md)
   Evaluates the given closure when this `Optional` instance is not `nil`, passing the unwrapped value as a parameter.
 ### Coalescing Nil Values
-- [func ?? <T>(consuming T?, @autoclosure () throws -> T) rethrows -> T](__(_:_:)-9xjze.md)
+- [func ?? <T>(consuming T?, @autoclosure () throws -> T) rethrows -> T](./opop%28_,_%29-9xjze.md)
   Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default value.
-- [func ?? <T>(consuming T?, @autoclosure () throws -> T?) rethrows -> T?](__(_:_:)-1fjjj.md)
+- [func ?? <T>(consuming T?, @autoclosure () throws -> T?) rethrows -> T?](./opop%28_,_%29-1fjjj.md)
   Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default `Optional` value.
 ### Comparing Optional Values
-- [static func ~= (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/~=(_:_:).md)
+- [static func ~= (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](./optional/tildeeq%28_,_%29.md)
   Returns a Boolean value indicating whether an argument matches `nil`.
 ### Encoding and Decoding
-- [func encode(to: any Encoder) throws](optional/encode(to:).md)
+- [func encode(to: any Encoder) throws](./optional/encode%28to%29.md)
   Encodes this optional value into the given encoder.
-- [init(from: any Decoder) throws](optional/init(from:).md)
+- [init(from: any Decoder) throws](./optional/init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 ### Inspecting an Optional
-- [func hash(into: inout Hasher)](optional/hash(into:).md)
+- [func hash(into: inout Hasher)](./optional/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var unsafelyUnwrapped: Wrapped](optional/unsafelyunwrapped.md)
+- [var unsafelyUnwrapped: Wrapped](./optional/unsafelyunwrapped.md)
   The wrapped value of this instance, unwrapped without checking whether the instance is `nil`.
-- [var debugDescription: String](optional/debugdescription.md)
+- [var debugDescription: String](./optional/debugdescription.md)
   A textual representation of this instance, suitable for debugging.
-- [var customMirror: Mirror](optional/custommirror.md)
+- [var customMirror: Mirror](./optional/custommirror.md)
   The custom mirror for this instance.
 ### Publishing an Optional
-- [var publisher: Optional<Wrapped>.Publisher](optional/publisher-swift.property.md)
+- [var publisher: Optional<Wrapped>.Publisher](./optional/publisher-swift.property.md)
   A Combine publisher that publishes this instance’s value to each subscriber exactly once, if it has any value at all.
-- [Optional.Publisher](optional/publisher-swift.struct.md)
+- [Optional.Publisher](./optional/publisher-swift.struct.md)
   The type of a Combine publisher that publishes the value of a Swift optional instance to each subscriber exactly once, if the instance has any value at all.
 ### Deprecated
-- [var hashValue: Int](optional/hashvalue.md)
+- [var hashValue: Int](./optional/hashvalue.md)
   The hash value.
 ### Operators
-- [static func != (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/!=(_:_:)-6y4t6.md)
+- [static func != (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](./optional/noteq%28_,_%29-6y4t6.md)
   Returns a Boolean value indicating whether the right-hand-side argument is not `nil`.
-- [static func != (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/!=(_:_:)-9e46a.md)
+- [static func != (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](./optional/noteq%28_,_%29-9e46a.md)
   Returns a Boolean value indicating whether the left-hand-side argument is not `nil`.
-- [static func == (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/==(_:_:)-1j2c8.md)
+- [static func == (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](./optional/eqeq%28_,_%29-1j2c8.md)
   Returns a Boolean value indicating whether the right-hand-side argument is `nil`.
-- [static func == (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/==(_:_:)-2tyup.md)
+- [static func == (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](./optional/eqeq%28_,_%29-2tyup.md)
   Returns a Boolean value indicating whether the left-hand-side argument is `nil`.
 ### Instance Methods
-- [func take() -> Optional<Wrapped>](optional/take.md)
+- [func take() -> Optional<Wrapped>](./optional/take%28%29.md)
   Takes the wrapped value being stored in this instance and returns it while also setting the instance to `nil`. If there is no value being stored in this instance, this returns `nil` instead.
 ### Type Aliases
-- [typealias PartiallyGenerated](optional/partiallygenerated.md)
+- [typealias PartiallyGenerated](./optional/partiallygenerated.md)
   A representation of partially generated content for the wrapped type.
-- [typealias Specification](optional/specification.md)
-- [typealias TableRowBody](optional/tablerowbody.md)
-- [typealias TicksCollection](optional/tickscollection.md)
-- [typealias UnwrappedType](optional/unwrappedtype.md)
-- [typealias ValueType](optional/valuetype.md)
+- [typealias Specification](./optional/specification.md)
+- [typealias TableRowBody](./optional/tablerowbody.md)
+- [typealias TicksCollection](./optional/tickscollection.md)
+- [typealias UnwrappedType](./optional/unwrappedtype.md)
+- [typealias ValueType](./optional/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: Wrapped.UnwrappedType.Specification](optional/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: Wrapped.UnwrappedType.Specification](./optional/defaultresolverspecification.md)
 ### Default Implementations
-- [AtomicRepresentable Implementations](optional/atomicrepresentable-implementations.md)
-- [CustomDebugStringConvertible Implementations](optional/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](optional/customreflectable-implementations.md)
-- [Decodable Implementations](optional/decodable-implementations.md)
-- [Encodable Implementations](optional/encodable-implementations.md)
-- [Equatable Implementations](optional/equatable-implementations.md)
-- [ExpressibleByNilLiteral Implementations](optional/expressiblebynilliteral-implementations.md)
-- [Hashable Implementations](optional/hashable-implementations.md)
-- [IntentValueConvertible Implementations](optional/intentvalueconvertible-implementations.md)
-- [IntentValueExpressing Implementations](optional/intentvalueexpressing-implementations.md)
+- [AtomicRepresentable Implementations](./optional/atomicrepresentable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./optional/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./optional/customreflectable-implementations.md)
+- [Decodable Implementations](./optional/decodable-implementations.md)
+- [Encodable Implementations](./optional/encodable-implementations.md)
+- [Equatable Implementations](./optional/equatable-implementations.md)
+- [ExpressibleByNilLiteral Implementations](./optional/expressiblebynilliteral-implementations.md)
+- [Hashable Implementations](./optional/hashable-implementations.md)
+- [IntentValueConvertible Implementations](./optional/intentvalueconvertible-implementations.md)
+- [IntentValueExpressing Implementations](./optional/intentvalueexpressing-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AccessibilityRotorContent](../swiftui/accessibilityrotorcontent.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [AttachmentContent](../realitykit/attachmentcontent.md)
-- [AttributedTextFormattingDefinition](../swiftui/attributedtextformattingdefinition.md)
-- [AxisContent](../charts/axiscontent.md)
-- [AxisMark](../charts/axismark.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Chart3DContent](../charts/chart3dcontent.md)
-- [ChartContent](../charts/chartcontent.md)
-- [Commands](../swiftui/commands.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
-- [CustomizableToolbarContent](../swiftui/customizabletoolbarcontent.md)
-- [Decodable](decodable.md)
-- [DecodableWithConfiguration](../foundation/decodablewithconfiguration.md)
-- [DynamicInstructions](../foundationmodels/dynamicinstructions.md)
-- [Encodable](encodable.md)
-- [EncodableWithConfiguration](../foundation/encodablewithconfiguration.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByNilLiteral](expressiblebynilliteral.md)
-- [Gesture](../swiftui/gesture.md)
-- [Hashable](hashable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [MapContent](../mapkit/mapcontent.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [RelationshipCollection](../swiftdata/relationshipcollection.md)
-- [SceneAccessoryContent](../swiftui/sceneaccessorycontent.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [SliderTickContent](../swiftui/slidertickcontent.md)
-- [StoreContent](../storekit/storecontent.md)
-- [TabContent](../swiftui/tabcontent.md)
-- [TableColumnContent](../swiftui/tablecolumncontent.md)
-- [TableRowContent](../swiftui/tablerowcontent.md)
-- [ToolbarContent](../swiftui/toolbarcontent.md)
-- [View](../swiftui/view.md)
+- [AccessibilityRotorContent](../SwiftUI/accessibilityrotorcontent.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [AttachmentContent](../RealityKit/attachmentcontent.md)
+- [AttributedTextFormattingDefinition](../SwiftUI/attributedtextformattingdefinition.md)
+- [AxisContent](../Charts/axiscontent.md)
+- [AxisMark](../Charts/axismark.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Chart3DContent](../Charts/chart3dcontent.md)
+- [ChartContent](../Charts/chartcontent.md)
+- [Commands](../SwiftUI/commands.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomTestStringConvertible](../Testing/customteststringconvertible.md)
+- [CustomizableToolbarContent](../SwiftUI/customizabletoolbarcontent.md)
+- [Decodable](./decodable.md)
+- [DecodableWithConfiguration](../Foundation/decodablewithconfiguration.md)
+- [DynamicInstructions](../FoundationModels/dynamicinstructions.md)
+- [Encodable](./encodable.md)
+- [EncodableWithConfiguration](../Foundation/encodablewithconfiguration.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByNilLiteral](./expressiblebynilliteral.md)
+- [Gesture](../SwiftUI/gesture.md)
+- [Hashable](./hashable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [MapContent](../MapKit/mapcontent.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [RelationshipCollection](../SwiftData/relationshipcollection.md)
+- [SceneAccessoryContent](../SwiftUI/sceneaccessorycontent.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [SliderTickContent](../SwiftUI/slidertickcontent.md)
+- [StoreContent](../StoreKit/storecontent.md)
+- [TabContent](../SwiftUI/tabcontent.md)
+- [TableColumnContent](../SwiftUI/tablecolumncontent.md)
+- [TableRowContent](../SwiftUI/tablerowcontent.md)
+- [ToolbarContent](../SwiftUI/toolbarcontent.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

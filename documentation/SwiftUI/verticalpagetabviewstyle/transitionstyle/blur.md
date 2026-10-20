@@ -1,7 +1,8 @@
 # blur
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A transition style that blurs content between each tab
 
@@ -16,9 +17,10 @@ static let blur: VerticalPageTabViewStyle.TransitionStyle
 
 ## See Also
 
-- [static let automatic: VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle/automatic.md)
+### Getting the transition styles
+- [static let automatic: VerticalPageTabViewStyle.TransitionStyle](./automatic.md)
   Automatic transition style
-- [static let identity: VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle/identity.md)
+- [static let identity: VerticalPageTabViewStyle.TransitionStyle](./identity.md)
   A transition style that has no animation between each tab
 
 

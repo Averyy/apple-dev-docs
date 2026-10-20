@@ -6,34 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.abs
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.abs.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.abs
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.abs
-
-**array.abs(*self*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: See [abs()](mlx.core.abs.html#mlx.core.abs).
-
-** Contents
+**array.abs(*self*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: See [abs()](mlx.core.abs.md#mlx.core.abs).

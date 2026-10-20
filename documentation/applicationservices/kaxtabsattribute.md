@@ -1,7 +1,8 @@
 # kAXTabsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXTabsAttribute: String { get }
+```
+
+```c
+#define kAXTabsAttribute
 ```
 
 #### Discussion

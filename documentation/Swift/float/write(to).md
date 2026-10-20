@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes a textual representation of this instance into the given output stream.
 
@@ -22,15 +23,16 @@ func write<Target>(to target: inout Target) where Target : TextOutputStream
 
 ## See Also
 
-- [init()](float/init.md)
-- [init(integerLiteral: Int64)](float/init(integerliteral:).md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
+- [init(integerLiteral: Int64)](./init%28integerliteral%29.md)
   Creates an instance initialized to the specified integer value.
-- [init(floatLiteral: Float)](float/init(floatliteral:).md)
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an instance initialized to the specified floating-point value.
-- [init(integerLiteral: Self)](float/init(integerliteral:)-6hc7h.md)
-- [func advanced(by: Float) -> Float](float/advanced(by:).md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29-6hc7h.md)
+- [func advanced(by: Float) -> Float](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [func distance(to: Float) -> Float](float/distance(to:).md)
+- [func distance(to: Float) -> Float](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
 
 

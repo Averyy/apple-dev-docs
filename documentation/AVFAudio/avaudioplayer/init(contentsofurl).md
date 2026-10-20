@@ -1,7 +1,8 @@
 # init(contentsOfURL:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.2+

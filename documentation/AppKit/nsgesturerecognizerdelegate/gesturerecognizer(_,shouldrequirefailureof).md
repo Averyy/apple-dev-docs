@@ -1,7 +1,8 @@
 # gestureRecognizer(_:shouldRequireFailureOf:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the current gesture recognizer must wait to recognize its gesture until the specified gesture recognizer fails.
 
@@ -15,15 +16,19 @@ Asks the delegate if the current gesture recognizer must wait to recognize its g
 optional func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: NSGestureRecognizer) -> Bool
 ```
 
+```objc
+- (BOOL) gestureRecognizer:(NSGestureRecognizer *) gestureRecognizer shouldRequireFailureOfGestureRecognizer:(NSGestureRecognizer *) otherGestureRecognizer;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `otherGestureRecognizer` must fail before `gestureRecognizer` is allowed to recognize its gesture. If you do not implement this method, the default return value is [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `otherGestureRecognizer` must fail before `gestureRecognizer` is allowed to recognize its gesture. If you do not implement this method, the default return value is [`false`](../../Swift/false.md).
 
 #### Discussion
 
 This method is called once per attempt to recognize, so you can change the failure requirements dynamically. The two gesture recognizers do not have to belong to the same view hierarchy.
 
-Returning [`true`](https://developer.apple.com/documentation/swift/true) is guaranteed to set up the failure requirement; returning [`false`](https://developer.apple.com/documentation/swift/false) does not prevent the failure requirement from being set up by the other gesture recognizer.
+Returning [`true`](../../Swift/true.md) is guaranteed to set up the failure requirement; returning [`false`](../../Swift/false.md) does not prevent the failure requirement from being set up by the other gesture recognizer.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Returning [`true`](https://developer.apple.com/documentation/swift/true) is guar
 
 ## See Also
 
-- [func gestureRecognizer(NSGestureRecognizer, shouldBeRequiredToFailBy: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldberequiredtofailby:).md)
+### Setting up failure requirements
+- [func gestureRecognizer(NSGestureRecognizer, shouldBeRequiredToFailBy: NSGestureRecognizer) -> Bool](./gesturerecognizer%28_,shouldberequiredtofailby%29.md)
   Asks the delegate if the current gesture recognizer must fail before another gesture recognizer is allowed to recognize its gesture.
 
 

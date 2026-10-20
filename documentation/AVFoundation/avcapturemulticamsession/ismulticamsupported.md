@@ -1,7 +1,8 @@
 # isMultiCamSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether this device supports multi-camera sessions.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether this device supports multi-camera session
 
 ```swift
 class var isMultiCamSupported: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly, getter=isMultiCamSupported) BOOL multiCamSupported;
 ```
 
 

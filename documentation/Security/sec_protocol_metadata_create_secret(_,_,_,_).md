@@ -1,7 +1,8 @@
 # sec_protocol_metadata_create_secret(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_create_secret(_ metadata: sec_protocol_metadata_t, _ label_len: Int, _ label: UnsafePointer<CChar>, _ exporter_length: Int) -> dispatch_data_t?
+```
+
+```c
+dispatch_data_tsec_protocol_metadata_create_secret(sec_protocol_metadata_t metadata, size_t label_len, const char *label, size_t exporter_length);
 ```
 
 #### Return Value

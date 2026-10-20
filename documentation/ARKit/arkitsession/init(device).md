@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new session connected to the specified device.
 

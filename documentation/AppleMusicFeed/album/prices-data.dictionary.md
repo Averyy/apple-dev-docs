@@ -1,7 +1,8 @@
 # Album.Prices
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of locale to pricing information.
 
@@ -10,15 +11,15 @@ A mapping of locale to pricing information.
 
 ## Declaration
 
-```swift
+```
 object Album.Prices
 ```
 
-#### Data Example
+#### Data example
 
 The feed export is in Parquet format. This data example is in JSON format for illustrative purposes.
 
-```None
+```
 {
 "prices": {
     "fr": [
@@ -42,7 +43,7 @@ The feed export is in Parquet format. This data example is in JSON format for il
 ## Topics
 
 ### Related objects
-- [object Album.Prices.Price](album/prices-data.dictionary/price.md)
+- [object Album.Prices.Price](./prices-data.dictionary/price.md)
   Information about a pricing offer.
 
 ## Properties
@@ -52,27 +53,28 @@ The feed export is in Parquet format. This data example is in JSON format for il
 
 ## See Also
 
-- [object Album.ArtistRole](album/artistrole.md)
+### Related objects
+- [object Album.ArtistRole](./artistrole.md)
   Information about an artist’s role.
-- [object Album.Artworks](album/artworks-data.dictionary.md)
+- [object Album.Artworks](./artworks-data.dictionary.md)
   A mapping of locale to localized album cover art.
-- [object Album.Genre](album/genre.md)
+- [object Album.Genre](./genre.md)
   A genre name and its structure.
-- [object Album.Name](album/name-data.dictionary.md)
+- [object Album.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the album.
-- [object Album.NamePronunciation](album/namepronunciation-data.dictionary.md)
+- [object Album.NamePronunciation](./namepronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific pronunciation-name translation type.
-- [object Album.RecordLabel](album/recordlabel.md)
+- [object Album.RecordLabel](./recordlabel.md)
   Information about a record label.
-- [object Album.RelatedArtist](album/relatedartist.md)
+- [object Album.RelatedArtist](./relatedartist.md)
   Information about a related artist.
-- [object Album.RelatedSong](album/relatedsong.md)
+- [object Album.RelatedSong](./relatedsong.md)
   Information about a related song.
-- [object Album.ReleaseDate](album/releasedate-data.dictionary.md)
+- [object Album.ReleaseDate](./releasedate-data.dictionary.md)
   A mapping of locale to release date for the album.
-- [object Album.TitleVersion](album/titleversion-data.dictionary.md)
+- [object Album.TitleVersion](./titleversion-data.dictionary.md)
   A mapping of locale to translations for the specific title-version translation type.
-- [object Album.TitleVersionPronunciation](album/titleversionpronunciation-data.dictionary.md)
+- [object Album.TitleVersionPronunciation](./titleversionpronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific title-version-pronunciation-name translation type.
 
 

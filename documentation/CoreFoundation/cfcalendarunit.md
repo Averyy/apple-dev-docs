@@ -1,18 +1,19 @@
 # CFCalendarUnit
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 CFCalendarUnit constants are used to specify calendrical units, such as day or month, in various calendar calculations.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,57 +21,62 @@ CFCalendarUnit constants are used to specify calendrical units, such as day or m
 struct CFCalendarUnit
 ```
 
+```c
+enum CFCalendarUnit : CFOptionFlags;
+```
+
 ## Topics
 
 ### Constants
-- [static var era: CFCalendarUnit](cfcalendarunit/era.md)
+- [static var era: CFCalendarUnit](./cfcalendarunit/era.md)
   Specifies the era unit.
-- [static var year: CFCalendarUnit](cfcalendarunit/year.md)
+- [static var year: CFCalendarUnit](./cfcalendarunit/year.md)
   Specifies the year unit.
-- [static var month: CFCalendarUnit](cfcalendarunit/month.md)
+- [static var month: CFCalendarUnit](./cfcalendarunit/month.md)
   Specifies the month unit.
-- [static var day: CFCalendarUnit](cfcalendarunit/day.md)
+- [static var day: CFCalendarUnit](./cfcalendarunit/day.md)
   Specifies the day unit.
-- [static var hour: CFCalendarUnit](cfcalendarunit/hour.md)
+- [static var hour: CFCalendarUnit](./cfcalendarunit/hour.md)
   Specifies the hour unit.
-- [static var minute: CFCalendarUnit](cfcalendarunit/minute.md)
+- [static var minute: CFCalendarUnit](./cfcalendarunit/minute.md)
   Specifies the minute unit.
-- [static var second: CFCalendarUnit](cfcalendarunit/second.md)
+- [static var second: CFCalendarUnit](./cfcalendarunit/second.md)
   Specifies the second unit.
-- [static var week: CFCalendarUnit](cfcalendarunit/week.md)
+- [static var week: CFCalendarUnit](./cfcalendarunit/week.md)
   Specifies the week unit.
-- [static var weekday: CFCalendarUnit](cfcalendarunit/weekday.md)
+- [static var weekday: CFCalendarUnit](./cfcalendarunit/weekday.md)
   Specifies the weekday unit.
-- [static var weekdayOrdinal: CFCalendarUnit](cfcalendarunit/weekdayordinal.md)
+- [static var weekdayOrdinal: CFCalendarUnit](./cfcalendarunit/weekdayordinal.md)
   Specifies the ordinal weekday unit.
-- [static var quarter: CFCalendarUnit](cfcalendarunit/quarter.md)
+- [static var quarter: CFCalendarUnit](./cfcalendarunit/quarter.md)
   Specifies the quarter-year unit.
-- [static var weekOfMonth: CFCalendarUnit](cfcalendarunit/weekofmonth.md)
+- [static var weekOfMonth: CFCalendarUnit](./cfcalendarunit/weekofmonth.md)
   Specifies the original week of a month calendar unit.
-- [static var weekOfYear: CFCalendarUnit](cfcalendarunit/weekofyear.md)
+- [static var weekOfYear: CFCalendarUnit](./cfcalendarunit/weekofyear.md)
   Specifies the original week of the year calendar unit.
-- [static var yearForWeekOfYear: CFCalendarUnit](cfcalendarunit/yearforweekofyear.md)
+- [static var yearForWeekOfYear: CFCalendarUnit](./cfcalendarunit/yearforweekofyear.md)
   Specifies the relative year for a week within a year calendar unit.
 ### Initializers
-- [init(rawValue: CFOptionFlags)](cfcalendarunit/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./cfcalendarunit/init%28rawvalue%29.md)
 ### Type Properties
-- [static var dayOfYear: CFCalendarUnit](cfcalendarunit/dayofyear.md)
+- [static var dayOfYear: CFCalendarUnit](./cfcalendarunit/dayofyear.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Component Wrapping Options](1533520-component-wrapping-options.md)
+### Constants
+- [Component Wrapping Options](./api-1533520-component-wrapping-options.md)
   The wrapping option specifies overflow behavior for calendar components in calendrical calculations
 
 

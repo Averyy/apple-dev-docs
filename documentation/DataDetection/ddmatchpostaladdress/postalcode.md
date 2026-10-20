@@ -1,7 +1,8 @@
 # postalCode
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The postal code in a postal address.
 
@@ -20,15 +21,20 @@ The postal code in a postal address.
 var postalCode: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * postalCode;
+```
+
 ## See Also
 
-- [var street: String?](ddmatchpostaladdress/street.md)
+### Getting postal address information
+- [var street: String?](./street.md)
   The street name in a postal address.
-- [var city: String?](ddmatchpostaladdress/city.md)
+- [var city: String?](./city.md)
   The city name in a postal address.
-- [var state: String?](ddmatchpostaladdress/state.md)
+- [var state: String?](./state.md)
   The state name in a postal address.
-- [var country: String?](ddmatchpostaladdress/country.md)
+- [var country: String?](./country.md)
   The country or region name in a postal address.
 
 

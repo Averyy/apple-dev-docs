@@ -1,7 +1,8 @@
 # GL_EXT_occlusion_query_boolean
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_EXT_occlusion_query_boolean: Int32 { get }
+```
+
+```c
+#define GL_EXT_occlusion_query_boolean
 ```
 
 

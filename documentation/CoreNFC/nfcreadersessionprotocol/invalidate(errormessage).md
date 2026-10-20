@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Closes the reader session and displays an error message to the user.
@@ -17,9 +18,13 @@ Closes the reader session and displays an error message to the user.
 func invalidate(errorMessage: String)
 ```
 
+```objc
+- (void) invalidateSessionWithErrorMessage:(NSString *) errorMessage;
+```
+
 #### Discussion
 
-Use this method to end the reader session and display a message to the user when an error condition occurs after the app successfully reads a tag. This type of error can occur if, for example, the app reads data from an NFC tag, but determines that the data has expired and discards it. The app then calls [`invalidate(errorMessage:)`](nfcreadersessionprotocol/invalidate(errormessage:).md) to end the reader session, and to let the user know why it discarded the data.
+Use this method to end the reader session and display a message to the user when an error condition occurs after the app successfully reads a tag. This type of error can occur if, for example, the app reads data from an NFC tag, but determines that the data has expired and discards it. The app then calls [`invalidate(errorMessage:)`](./invalidate%28errormessage%29.md) to end the reader session, and to let the user know why it discarded the data.
 
 > **Note**:  After invalidating a reader session, you cannot use it to scan and detect other tags.
 
@@ -29,17 +34,18 @@ Use this method to end the reader session and display a message to the user when
 
 ## See Also
 
-- [func begin()](nfcreadersessionprotocol/begin.md)
+### Managing a Reader Session
+- [func begin()](./begin%28%29.md)
   Starts the reader session.
-- [func invalidate()](nfcreadersessionprotocol/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Closes the reader session, which prevents it from being reused.
-- [var alertMessage: String](nfcreadersessionprotocol/alertmessage.md)
+- [var alertMessage: String](./alertmessage.md)
   A custom description that helps users understand how they can use NFC reader mode in your app.
-- [func begin()](nfcreadersessionprotocol/begin.md)
+- [func begin()](./begin%28%29.md)
   Starts the reader session.
-- [func invalidate()](nfcreadersessionprotocol/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Closes the reader session, which prevents it from being reused.
-- [var alertMessage: String](nfcreadersessionprotocol/alertmessage.md)
+- [var alertMessage: String](./alertmessage.md)
   A custom description that helps users understand how they can use NFC reader mode in your app.
 
 

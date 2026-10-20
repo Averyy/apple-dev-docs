@@ -1,7 +1,8 @@
 # UnlitMaterial.Program
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the backing shader compilation required for unlit materials.
 
@@ -42,20 +43,20 @@ let material = UnlitMaterial(program: program)
 ## Topics
 
 ### Structures
-- [UnlitMaterial.Program.Descriptor](unlitmaterial/program-swift.class/descriptor-swift.struct.md)
+- [UnlitMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `UnlitMaterial` programs
 ### Initializers
-- [init(descriptor: UnlitMaterial.Program.Descriptor) async](unlitmaterial/program-swift.class/init(descriptor:).md)
+- [init(descriptor: UnlitMaterial.Program.Descriptor) async](./program-swift.class/init%28descriptor%29.md)
 ### Instance Properties
-- [let descriptor: UnlitMaterial.Program.Descriptor](unlitmaterial/program-swift.class/descriptor-swift.property.md)
+- [let descriptor: UnlitMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.property.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

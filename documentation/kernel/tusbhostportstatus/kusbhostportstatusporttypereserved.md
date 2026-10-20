@@ -1,7 +1,8 @@
 # kUSBHostPortStatusPortTypeReserved
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The reserved port type.
 
@@ -10,7 +11,7 @@ The reserved port type.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusPortTypeReserved = kIOUSBHostPortStatusPortTypeReserved
 ```
 

@@ -1,7 +1,8 @@
 # font
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font for the text.
 
@@ -10,7 +11,7 @@ The font for the text.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,33 +21,34 @@ var font: UIFont { get set }
 
 ## See Also
 
-- [var color: UIColor](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/color.md)
+### Configuring text properties
+- [var color: UIColor](./color.md)
   The color of the text.
-- [var colorTransformer: UIConfigurationColorTransformer?](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/colortransformer.md)
+- [var colorTransformer: UIConfigurationColorTransformer?](./colortransformer.md)
   The color transformer for resolving the text color.
-- [func resolvedColor() -> UIColor](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/resolvedcolor.md)
+- [func resolvedColor() -> UIColor](./resolvedcolor%28%29.md)
   Generates the resolved color for the specified color, using the text color and color transformer.
-- [var alignment: UIListContentConfiguration.TextProperties.TextAlignment](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/alignment.md)
+- [var alignment: UIListContentConfiguration.TextProperties.TextAlignment](./alignment.md)
   The alignment for the text.
-- [var lineBreakMode: NSLineBreakMode](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The line break mode to use for the text.
-- [var numberOfLines: Int](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/numberoflines.md)
+- [var numberOfLines: Int](./numberoflines.md)
   The maximum number of lines for the text.
-- [var adjustsFontSizeToFitWidth: Bool](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth.md)
+- [var adjustsFontSizeToFitWidth: Bool](./adjustsfontsizetofitwidth.md)
   A Boolean value that determines whether the configuration automatically adjusts the font size of the text when necessary to fit in the available width.
-- [var minimumScaleFactor: CGFloat](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/minimumscalefactor.md)
+- [var minimumScaleFactor: CGFloat](./minimumscalefactor.md)
   The smallest multiplier for the font size that the configuration uses to make the text fit.
-- [var allowsDefaultTighteningForTruncation: Bool](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](./allowsdefaulttighteningfortruncation.md)
   A Boolean value that determines whether the configuration tightens the text before truncating.
-- [var adjustsFontForContentSizeCategory: Bool](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/adjustsfontforcontentsizecategory.md)
+- [var adjustsFontForContentSizeCategory: Bool](./adjustsfontforcontentsizecategory.md)
   A Boolean value that determines whether the configuration automatically updates the font when the content size category changes.
-- [UIListContentConfiguration.TextProperties.TextAlignment](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/textalignment.md)
+- [UIListContentConfiguration.TextProperties.TextAlignment](./textalignment.md)
   Constants that specify the visual alignment of the text.
-- [var transform: UIListContentConfiguration.TextProperties.TextTransform](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/transform.md)
+- [var transform: UIListContentConfiguration.TextProperties.TextTransform](./transform.md)
   The transform to apply to the text.
-- [UIListContentConfiguration.TextProperties.TextTransform](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md)
+- [UIListContentConfiguration.TextProperties.TextTransform](./texttransform.md)
   Constants that specify the transform to apply to the text.
-- [var showsExpansionTextWhenTruncated: Bool](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/showsexpansiontextwhentruncated.md)
+- [var showsExpansionTextWhenTruncated: Bool](./showsexpansiontextwhentruncated.md)
   A Boolean value that determines whether the full text displays when the pointer hovers over the truncated text.
 
 

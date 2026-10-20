@@ -1,16 +1,21 @@
 # secondsUntilPasswordExpires
 
 **Framework**: Open Directory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.10+
 
 ## Declaration
 
 ```swift
 var secondsUntilPasswordExpires: Int64 { get }
+```
+
+```objc
+@property (readonly) int64_t secondsUntilPasswordExpires;
 ```
 
 

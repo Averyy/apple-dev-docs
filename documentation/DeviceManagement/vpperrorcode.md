@@ -1,7 +1,8 @@
 # VppErrorCode
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error code.
 
@@ -10,7 +11,7 @@ An error code.
 
 ## Declaration
 
-```swift
+```
 object VppErrorCode
 ```
 
@@ -21,17 +22,18 @@ object VppErrorCode
 
 ## See Also
 
-- [object VppAsset](vppasset.md)
+### Objects and data types
+- [object VppAsset](./vppasset.md)
   A particular asset in the purchase program.
-- [object VppAssignment](vppassignment.md)
+- [object VppAssignment](./vppassignment.md)
   An assignment’s properties and their values.
-- [object VppLicense](vpplicense.md)
+- [object VppLicense](./vpplicense.md)
   A license for a product in the purchase program.
-- [object VppAssociation](vppassociation.md)
+- [object VppAssociation](./vppassociation.md)
   An association between a license and a user or device.
-- [object VppUser](vppuser.md)
+- [object VppUser](./vppuser.md)
   A user within the purchase program.
-- [object VppLocation](vpplocation.md)
+- [object VppLocation](./vpplocation.md)
   A location used for managing purchases.
 
 

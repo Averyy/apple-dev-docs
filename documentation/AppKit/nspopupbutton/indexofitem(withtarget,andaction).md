@@ -1,17 +1,22 @@
 # indexOfItem(withTarget:andAction:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the menu item with the specified target and action.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func indexOfItem(withTarget target: Any?, andAction actionSelector: Selector?) -> Int
+```
+
+```objc
+- (NSInteger) indexOfItemWithTarget:(id) target andAction:(SEL) actionSelector;
 ```
 
 #### Return Value
@@ -29,13 +34,14 @@ If you specify `NULL` for the `actionSelector` parameter, the index of the first
 
 ## See Also
 
-- [func index(of: NSMenuItem) -> Int](nspopupbutton/index(of:).md)
+### Getting the indices of menu items
+- [func index(of: NSMenuItem) -> Int](./index%28of%29.md)
   Returns the index of the specified menu item.
-- [func indexOfItem(withTag: Int) -> Int](nspopupbutton/indexofitem(withtag:).md)
+- [func indexOfItem(withTag: Int) -> Int](./indexofitem%28withtag%29.md)
   Returns the index of the menu item with the specified tag.
-- [func indexOfItem(withTitle: String) -> Int](nspopupbutton/indexofitem(withtitle:).md)
+- [func indexOfItem(withTitle: String) -> Int](./indexofitem%28withtitle%29.md)
   Returns the index of the item with the specified title.
-- [func indexOfItem(withRepresentedObject: Any?) -> Int](nspopupbutton/indexofitem(withrepresentedobject:).md)
+- [func indexOfItem(withRepresentedObject: Any?) -> Int](./indexofitem%28withrepresentedobject%29.md)
   Returns the index of the menu item that holds the specified represented object.
 
 

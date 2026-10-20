@@ -1,7 +1,8 @@
 # directoryEntryCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The count of file system objects in the directory.
 
@@ -28,7 +29,8 @@ Not all file systems can provide this information.
 
 ## See Also
 
-- [var isDirectory: Bool?](urlresourcevalues/isdirectory.md)
+### Directory values
+- [var isDirectory: Bool?](./isdirectory.md)
   A Boolean value that indicates whether the resource is a directory.
 
 

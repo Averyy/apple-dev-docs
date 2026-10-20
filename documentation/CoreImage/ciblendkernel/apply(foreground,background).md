@@ -1,7 +1,8 @@
 # apply(foreground:background:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new image using the blend kernel and specified foreground and background images.
 
@@ -19,9 +20,13 @@ Creates a new image using the blend kernel and specified foreground and backgrou
 func apply(foreground: CIImage, background: CIImage) -> CIImage?
 ```
 
+```objc
+- (CIImage *) applyWithForeground:(CIImage *) foreground background:(CIImage *) background;
+```
+
 #### Return Value
 
-A [`CIImage`](ciimage.md) blending the foreground and background images.  Its extent will be the union of the foreground and background image extents.
+A [`CIImage`](../ciimage.md) blending the foreground and background images.  Its extent will be the union of the foreground and background image extents.
 
 #### Discussion
 

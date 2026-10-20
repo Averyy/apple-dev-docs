@@ -1,7 +1,8 @@
 # left(columns:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Aligns the value on the left side of a column with the specified width.
 
@@ -11,7 +12,7 @@ Aligns the value on the left side of a column with the specified width.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -30,7 +31,8 @@ A string-alignment structure with the specified value.
 
 ## See Also
 
-- [static func right(columns: @autoclosure () -> Int) -> OSLogStringAlignment](oslogstringalignment/right(columns:).md)
+### Getting a Custom String Alignment
+- [static func right(columns: @autoclosure () -> Int) -> OSLogStringAlignment](./right%28columns%29.md)
   Aligns the value on the right side of a column with the specified width.
 
 

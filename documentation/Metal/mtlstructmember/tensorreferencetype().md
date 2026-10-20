@@ -1,7 +1,8 @@
 # tensorReferenceType()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a description of the underlying tensor type when this struct member holds a tensor.
 
@@ -17,6 +18,10 @@ Provides a description of the underlying tensor type when this struct member hol
 
 ```swift
 func tensorReferenceType() -> MTLTensorReferenceType?
+```
+
+```objc
+- (MTLTensorReferenceType *) tensorReferenceType;
 ```
 
 #### Return Value

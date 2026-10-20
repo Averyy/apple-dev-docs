@@ -1,7 +1,8 @@
 # service
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The service to which this characteristic belongs.
 
@@ -18,6 +19,10 @@ The service to which this characteristic belongs.
 
 ```swift
 weak var service: CBService? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) CBService * service;
 ```
 
 

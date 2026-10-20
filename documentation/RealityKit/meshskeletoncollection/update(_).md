@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update an existing skeleton. The old instance is returned.
 

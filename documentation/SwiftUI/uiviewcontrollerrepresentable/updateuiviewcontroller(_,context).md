@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the state of the specified view controller with new information from SwiftUI.
@@ -31,10 +32,11 @@ When the state of your app changes, SwiftUI updates the portions of your interfa
 
 ## See Also
 
-- [func makeUIViewController(context: Self.Context) -> Self.UIViewControllerType](uiviewcontrollerrepresentable/makeuiviewcontroller(context:).md)
+### Creating and updating the view controller
+- [func makeUIViewController(context: Self.Context) -> Self.UIViewControllerType](./makeuiviewcontroller%28context%29.md)
   Creates the view controller object and configures its initial state.
-- [UIViewControllerRepresentable.Context](uiviewcontrollerrepresentable/context.md)
-- [associatedtype UIViewControllerType : UIViewController](uiviewcontrollerrepresentable/uiviewcontrollertype.md)
+- [UIViewControllerRepresentable.Context](./context.md)
+- [associatedtype UIViewControllerType : UIViewController](./uiviewcontrollertype.md)
   The type of view controller to present.
 
 

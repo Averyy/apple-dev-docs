@@ -1,7 +1,8 @@
 # UIEditMenuArrowDirection
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the direction the arrow of the edit menu is pointing.
 
@@ -17,37 +18,42 @@ Constants that describe the direction the arrow of the edit menu is pointing.
 enum UIEditMenuArrowDirection
 ```
 
+```c
+enum UIEditMenuArrowDirection : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIEditMenuArrowDirection.automatic](uieditmenuarrowdirection/automatic.md)
+- [UIEditMenuArrowDirection.automatic](./uieditmenuarrowdirection/automatic.md)
   The arrow is pointing up or down at the object of focus, based on its location in the screen, which is the default.
-- [UIEditMenuArrowDirection.up](uieditmenuarrowdirection/up.md)
+- [UIEditMenuArrowDirection.up](./uieditmenuarrowdirection/up.md)
   The arrow is pointing up at the object of focus.
-- [UIEditMenuArrowDirection.down](uieditmenuarrowdirection/down.md)
+- [UIEditMenuArrowDirection.down](./uieditmenuarrowdirection/down.md)
   The arrow is pointing down at the object of focus.
-- [UIEditMenuArrowDirection.left](uieditmenuarrowdirection/left.md)
+- [UIEditMenuArrowDirection.left](./uieditmenuarrowdirection/left.md)
   The arrow is pointing left at the object of focus.
-- [UIEditMenuArrowDirection.right](uieditmenuarrowdirection/right.md)
+- [UIEditMenuArrowDirection.right](./uieditmenuarrowdirection/right.md)
   The arrow is pointing right at the object of focus.
 ### Initializers
-- [init?(rawValue: Int)](uieditmenuarrowdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uieditmenuarrowdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredArrowDirection: UIEditMenuArrowDirection](uieditmenuconfiguration/preferredarrowdirection.md)
+### Configuring the menu
+- [var preferredArrowDirection: UIEditMenuArrowDirection](./uieditmenuconfiguration/preferredarrowdirection.md)
   The preferred direction the arrow of the edit menu is pointing.
-- [var sourcePoint: CGPoint](uieditmenuconfiguration/sourcepoint.md)
+- [var sourcePoint: CGPoint](./uieditmenuconfiguration/sourcepoint.md)
   The source location of the interaction.
 
 

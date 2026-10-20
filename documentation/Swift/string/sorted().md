@@ -1,7 +1,8 @@
 # sorted()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of the sequence, sorted.
 
@@ -19,6 +20,8 @@ Returns the elements of the sequence, sorted.
 ```swift
 func sorted() -> [Self.Element]
 ```
+
+Available when `Element` conforms to `Comparable`.
 
 #### Return Value
 
@@ -47,17 +50,18 @@ print(descendingStudents)
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements that compare as equal.
 
-> **Note**: O(*n* log *n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n* log *n*), where *n* is the length of the sequence.
 
 ## See Also
 
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](string/sorted(by:).md)
+### Reordering a String’s Characters
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func reversed() -> ReversedCollection<Self>](string/reversed.md)
+- [func reversed() -> ReversedCollection<Self>](./reversed%28%29.md)
   Returns a view presenting the elements of the collection in reverse order.
-- [func shuffled() -> [Self.Element]](string/shuffled.md)
+- [func shuffled() -> [Self.Element]](./shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](string/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
 
 

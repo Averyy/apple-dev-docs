@@ -1,43 +1,44 @@
 # Migrating ClockKit complications to WidgetKit
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 
 #### Overview
 
-With watchOS 9 and later, you can create complications for your watchOS app using SwiftUI views in WidgetKit. WidgetKit provides a modern API for creating and updating glanceable elements — making it an ideal fit for watchOS complications. Because WidgetKit’s design is inspired by ClockKit, if you’ve already designed ClockKit complications for your app, the process feels familiar. Similarly, if you’re already using widgets for iOS, you can quickly set up WidgetKit complications for a watchOS app. In many cases, you can use the same code to display WidgetKit complications in watchOS and widgets on the Lock Screen on iPhone. For more information, see [`Creating accessory widgets and watch complications`](creating-accessory-widgets-and-watch-complications.md).
+With watchOS 9 and later, you can create complications for your watchOS app using SwiftUI views in WidgetKit. WidgetKit provides a modern API for creating and updating glanceable elements — making it an ideal fit for watchOS complications. Because WidgetKit’s design is inspired by ClockKit, if you’ve already designed ClockKit complications for your app, the process feels familiar. Similarly, if you’re already using widgets for iOS, you can quickly set up WidgetKit complications for a watchOS app. In many cases, you can use the same code to display WidgetKit complications in watchOS and widgets on the Lock Screen on iPhone. For more information, see [Creating accessory widgets and watch complications](./creating-accessory-widgets-and-watch-complications.md).
 
-##### Add Widgetkit to Your Project
+##### Add WidgetKit to your project
 
 To convert ClockKit complications to WidgetKit, start by adding a WidgetKit extension to your watchOS project.
 
-![A screenshot showing the Widget Extension selected.](/images/com.apple.WidgetKit/add-widgetkit-watchos@2x.png)
+![A screenshot showing the Widget Extension selected.](https://developer.apple.com/tutorials/images/com.apple.WidgetKit/add-widgetkit-watchos@2x.png)
 
 1. In Xcode, select the project icon in the Project navigator.
 2. Click the “Add a target” button.
 3. In the watchOS tab, select the Widget Extension template and click Next.
 4. Give the new target a name.
-5. If your app dynamically creates the set of [`CLKComplicationDescriptor`](https://developer.apple.com/documentation/clockkit/clkcomplicationdescriptor) objects to support multiple complication types, enable the Include Configuration App Intent option. If you don’t plan to configure your complications using app intents, you can disable this option.
+5. If your app dynamically creates the set of [`CLKComplicationDescriptor`](../ClockKit/clkcomplicationdescriptor.md) objects to support multiple complication types, enable the Include Configuration App Intent option. If you don’t plan to configure your complications using app intents, you can disable this option.
 6. Click Finish.
 
-Xcode creates a new target containing Swift files for the widget, an asset catalog, and an `Info.plist` file for the extension. The WidgetKit template provides you with structures that adopt the [`Widget`](https://developer.apple.com/documentation/swiftui/widget) and [`View`](https://developer.apple.com/documentation/swiftui/view) protocols. It also includes a starting implementation for your [`TimelineProvider`](timelineprovider.md), or [`AppIntentTimelineProvider`](appintenttimelineprovider.md) if you enabled Include Configuration App Intent.
+Xcode creates a new target containing Swift files for the widget, an asset catalog, and an `Info.plist` file for the extension. The WidgetKit template provides you with structures that adopt the [`Widget`](../SwiftUI/widget.md) and [`View`](../SwiftUI/view.md) protocols. It also includes a starting implementation for your [`TimelineProvider`](./timelineprovider.md), or [`AppIntentTimelineProvider`](./appintenttimelineprovider.md) if you enabled Include Configuration App Intent.
 
-![A screenshot of a Widget Extension that contains support for custom app intent definitions: an intent timeline provider and custom app intent.](/images/com.apple.WidgetKit/configurable-complication-extension@2x.png)
+![A screenshot of a Widget Extension that contains support for custom app intent definitions: an intent timeline provider and custom app intent.](https://developer.apple.com/tutorials/images/com.apple.WidgetKit/configurable-complication-extension@2x.png)
 
-> ❗ **Important**: After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](https://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrator/getwidgetconfiguration(from:completionhandler:)), while migrating complications from ClockKit to WidgetKit.
+> ❗ **Important**: After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](../ClockKit/clkcomplicationwidgetmigrator/getwidgetconfiguration%28from,completionhandler%29.md), while migrating complications from ClockKit to WidgetKit.
 
-##### Configure Your Timeline Provider
+##### Configure your timeline provider
 
 The template creates a `Provider` structure that adopts the `TimelineProvider` or `AppIntentTimelineProvider` protocol, and provides a default implementation for the protocol’s methods. WidgetKit calls these methods to get the data needed to create the widget view.
 
 > **Note**: WidgetKit’s daily budget for reloading the timeline works differently than ClockKit’s. Your widget-based complication receives up to 75 updates per day, based on how often they’re viewed. If you have a complication on the Apple Watch face, it’s always considered viewed, so your budget tends towards the higher end of that range.
 
-In each of the protocol methods, your app needs to create and return one or more [`TimelineEntry`](timelineentry.md) instances:
+In each of the protocol methods, your app needs to create and return one or more [`TimelineEntry`](./timelineentry.md) instances:
 
-- **[`placeholder(in:)`](timelineprovider/placeholder(in:).md)**: Returns a single entry for your complication’s placeholder. By default, the system redacts all the content in the placeholder’s widget.
-- **[`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md)**: Returns a single timeline entry for your app.
-- **[`getTimeline(in:completion:)`](timelineprovider/gettimeline(in:completion:).md)**: Returns an array of timeline entries. WidgetKit uses this timeline to automatically update your complication over time.
+- **[`placeholder(in:)`](./timelineprovider/placeholder%28in%29.md)**: Returns a single entry for your complication’s placeholder. By default, the system redacts all the content in the placeholder’s widget.
+- **[`getSnapshot(in:completion:)`](./timelineprovider/getsnapshot%28in,completion%29.md)**: Returns a single timeline entry for your app.
+- **[`getTimeline(in:completion:)`](./timelineprovider/gettimeline%28in,completion%29.md)**: Returns an array of timeline entries. WidgetKit uses this timeline to automatically update your complication over time.
 
 The template provides a timeline entry that contains the date when the system should display it. Add any extra properties that you need for your complications.
 
@@ -49,7 +50,7 @@ struct CoffeeTrackerEntry: TimelineEntry {
 }
 ```
 
-Then, begin updating the timeline provider’s methods. For the placeholder, the system automatically redacts all of the widget’s content, unless you explicitly mark items with the [`unredacted()`](https://developer.apple.com/documentation/swiftui/view/unredacted()) view modifier in your complication’s SwiftUI view. As a result, you may want to provide generic data that fills out the redacted version.
+Then, begin updating the timeline provider’s methods. For the placeholder, the system automatically redacts all of the widget’s content, unless you explicitly mark items with the [`unredacted()`](../SwiftUI/view/unredacted%28%29.md) view modifier in your complication’s SwiftUI view. As a result, you may want to provide generic data that fills out the redacted version.
 
 ```swift
 func placeholder(in context: Context) -> SimpleEntry {
@@ -63,7 +64,7 @@ func placeholder(in context: Context) -> SimpleEntry {
 
 The system can display the placeholder when the watch is locked, when it’s in Always On mode, and when it can’t otherwise display a live version of your complication.
 
-For the snapshot, return a single entry. In general, you want to return the current state of your app. However, the system also uses the snapshot when displaying your complication in the complication picker. When returning your snapshot entry, be sure to check the `context` parameter [`isPreview`](timelineprovidercontext/ispreview.md) property. This property indicates whether the snapshot will be used in the complication picker. If this is `true`, provide generic data that shows your app’s typical appearance.
+For the snapshot, return a single entry. In general, you want to return the current state of your app. However, the system also uses the snapshot when displaying your complication in the complication picker. When returning your snapshot entry, be sure to check the `context` parameter [`isPreview`](./timelineprovidercontext/ispreview.md) property. This property indicates whether the snapshot will be used in the complication picker. If this is `true`, provide generic data that shows your app’s typical appearance.
 
 ```swift
 func getSnapshot(in context: Context, completion: @escaping (CoffeeTrackerEntry) -> Void) {
@@ -97,7 +98,7 @@ func getSnapshot(in context: Context, completion: @escaping (CoffeeTrackerEntry)
 }
 ```
 
-For the timeline, create an array of entries, and then create a [`Timeline`](timeline.md) instance from that array. You can also select a reload policy for the timeline. By default, the system reloads the timeline when you reach its end. However, in the example below, the system only reloads the timeline when you explicitly request it.
+For the timeline, create an array of entries, and then create a [`Timeline`](./timeline.md) instance from that array. You can also select a reload policy for the timeline. By default, the system reloads the timeline when you reach its end. However, in the example below, the system only reloads the timeline when you explicitly request it.
 
 ```swift
 func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
@@ -139,11 +140,11 @@ func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) ->
 }
 ```
 
-For more information, see [`Making a configurable widget`](making-a-configurable-widget.md) and [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md).
+For more information, see [Making a configurable widget](./making-a-configurable-widget.md) and [Keeping a widget up to date](./keeping-a-widget-up-to-date.md).
 
-##### Support Multiple Complications
+##### Support multiple complications
 
-If your app provides a static set of widgets, you can define multiple widgets using a [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle) protocol. For example, the code listing below provides three complications: one that displays the user’s current caffeine dose, one that provides the total number of cups of coffee for the day, and one that provides both. Each widget can then support a different subset of the available families.
+If your app provides a static set of widgets, you can define multiple widgets using a [`WidgetBundle`](../SwiftUI/widgetbundle.md) protocol. For example, the code listing below provides three complications: one that displays the user’s current caffeine dose, one that provides the total number of cups of coffee for the day, and one that provides both. Each widget can then support a different subset of the available families.
 
 ```swift
 @main
@@ -160,7 +161,7 @@ However, if you need to dynamically configure a set of complications, provide a 
 
 WidgetKit uses app intents for customizable properties, the same method that Siri Suggestions and Siri Shortcuts use to customize those interactions. In iOS, the app intents describe elements that the user can customize. For WidgetKit complications in watchOS, these intents aren’t user configurable. Instead, they represent items that your app can dynamically configure.
 
-To customize the widgets, implement your [`AppIntentTimelineProvider`](appintenttimelineprovider.md) structure’s [`recommendations()`](appintenttimelineprovider/recommendations().md) method to return an array of [`AppIntentRecommendation`](appintentrecommendation.md) instances.
+To customize the widgets, implement your [`AppIntentTimelineProvider`](./appintenttimelineprovider.md) structure’s [`recommendations()`](./appintenttimelineprovider/recommendations%28%29.md) method to return an array of [`AppIntentRecommendation`](./appintentrecommendation.md) instances.
 
 ```swift
 func recommendations() -> [AppIntentRecommendation<ConfigurationAppIntent>] {
@@ -176,15 +177,15 @@ func recommendations() -> [AppIntentRecommendation<ConfigurationAppIntent>] {
 }
 ```
 
-For more information, see [`Making a configurable widget`](making-a-configurable-widget.md).
+For more information, see [Making a configurable widget](./making-a-configurable-widget.md).
 
-##### Design the Complication Using Swiftui
+##### Design the complication using SwiftUI
 
 Use SwiftUI static views, such as text, shapes, or images, to create your complication’s content. You can also add render effects like blurs and gradients, but keep in mind that complications only have one or two frames in which to render the effect.
 
 Because complications show a snapshot of the app’s data at a particular point in time, they don’t support features like animation. Additionally, if the user touches your complication, the system launches your app instead of passing the touch event to the SwiftUI views, so a complication can’t use interactive elements like buttons or switches.
 
-Start by updating your [`Widget`](https://developer.apple.com/documentation/swiftui/widget) structure.
+Start by updating your [`Widget`](../SwiftUI/widget.md) structure.
 
 ```swift
 struct CaffeineComplication: Widget {
@@ -209,14 +210,14 @@ WidgetKit reduces the number of families you need to support. In some cases, a W
 
 | ClockKit family | WidgetKit family |
 | --- | --- |
-| [`CLKComplicationFamily.graphicRectangular`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/graphicrectangular) | [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrectangular.md) |
-| [`CLKComplicationFamily.graphicCorner`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/graphiccorner) | [`WidgetFamily.accessoryCorner`](widgetfamily/accessorycorner.md) |
-| [`CLKComplicationFamily.graphicCircular`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/graphiccircular), [`CLKComplicationFamily.graphicBezel`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/graphicbezel), [`CLKComplicationFamily.graphicExtraLarge`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/graphicextralarge) | [`WidgetFamily.accessoryCircular`](widgetfamily/accessorycircular.md) |
-| [`CLKComplicationFamily.utilitarianSmallFlat`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/utilitariansmallflat), [`CLKComplicationFamily.utilitarianLarge`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/utilitarianlarge) | [`WidgetFamily.accessoryInline`](widgetfamily/accessoryinline.md) |
+| [`CLKComplicationFamily.graphicRectangular`](../ClockKit/clkcomplicationfamily/graphicrectangular.md) | [`WidgetFamily.accessoryRectangular`](./widgetfamily/accessoryrectangular.md) |
+| [`CLKComplicationFamily.graphicCorner`](../ClockKit/clkcomplicationfamily/graphiccorner.md) | [`WidgetFamily.accessoryCorner`](./widgetfamily/accessorycorner.md) |
+| [`CLKComplicationFamily.graphicCircular`](../ClockKit/clkcomplicationfamily/graphiccircular.md), [`CLKComplicationFamily.graphicBezel`](../ClockKit/clkcomplicationfamily/graphicbezel.md), [`CLKComplicationFamily.graphicExtraLarge`](../ClockKit/clkcomplicationfamily/graphicextralarge.md) | [`WidgetFamily.accessoryCircular`](./widgetfamily/accessorycircular.md) |
+| [`CLKComplicationFamily.utilitarianSmallFlat`](../ClockKit/clkcomplicationfamily/utilitariansmallflat.md), [`CLKComplicationFamily.utilitarianLarge`](../ClockKit/clkcomplicationfamily/utilitarianlarge.md) | [`WidgetFamily.accessoryInline`](./widgetfamily/accessoryinline.md) |
 
-> **Note**: watchOS 9 and later no longer shows families like [`CLKComplicationFamily.circularSmall`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/circularsmall), [`CLKComplicationFamily.modularSmall`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/modularsmall), or [`CLKComplicationFamily.modularLarge`](https://developer.apple.com/documentation/clockkit/clkcomplicationfamily/modularlarge) on watch faces.
+> **Note**: watchOS 9 and later no longer shows families like [`CLKComplicationFamily.circularSmall`](../ClockKit/clkcomplicationfamily/circularsmall.md), [`CLKComplicationFamily.modularSmall`](../ClockKit/clkcomplicationfamily/modularsmall.md), or [`CLKComplicationFamily.modularLarge`](../ClockKit/clkcomplicationfamily/modularlarge.md) on watch faces.
 
-Use the [`widgetFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/widgetfamily) environment value to determine the complication’s family. You can provide a different SwiftUI view for each family. You can also get the family from the context passed to your timeline provider’s [`getTimeline(in:completion:)`](timelineprovider/gettimeline(in:completion:).md), [`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md), and [`placeholder(in:)`](timelineprovider/placeholder(in:).md) methods.
+Use the [`widgetFamily`](../SwiftUI/environmentvalues/widgetfamily.md) environment value to determine the complication’s family. You can provide a different SwiftUI view for each family. You can also get the family from the context passed to your timeline provider’s [`getTimeline(in:completion:)`](./timelineprovider/gettimeline%28in,completion%29.md), [`getSnapshot(in:completion:)`](./timelineprovider/getsnapshot%28in,completion%29.md), and [`placeholder(in:)`](./timelineprovider/placeholder%28in%29.md) methods.
 
 ```swift
 struct CaffeineComplicationView: View {
@@ -247,7 +248,7 @@ struct CaffeineComplicationView: View {
 }
 ```
 
-Then, check the [`WidgetRenderingMode`](widgetrenderingmode.md) environmental value to determine whether your complication is rendered in full color or using accent colors. Modify your design to best suit the current rendering mode.
+Then, check the [`WidgetRenderingMode`](./widgetrenderingmode.md) environmental value to determine whether your complication is rendered in full color or using accent colors. Modify your design to best suit the current rendering mode.
 
 ```swift
 struct MyCircularComplication: View {
@@ -279,21 +280,21 @@ struct MyCircularComplication: View {
 }
 ```
 
-In [`accented`](widgetrenderingmode/accented.md) mode, you can explicitly partition your view into an accented group and the default group by adding the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/swiftui/view/widgetaccentable(_:)) view modifier to part of your complication’s view hierarchy. For more information, see [`Creating accessory widgets and watch complications`](creating-accessory-widgets-and-watch-complications.md) and [`Creating views for widgets, Live Activities, and watch complications`](creating-views-for-widgets-live-activities-and-watch-complications.md).
+In [`accented`](./widgetrenderingmode/accented.md) mode, you can explicitly partition your view into an accented group and the default group by adding the [`widgetAccentable(_:)`](../SwiftUI/view/widgetaccentable%28_%29.md) view modifier to part of your complication’s view hierarchy. For more information, see [Creating accessory widgets and watch complications](./creating-accessory-widgets-and-watch-complications.md) and [Creating views for widgets, Live Activities, and watch complications](./creating-views-for-widgets-live-activities-and-watch-complications.md).
 
-When designing your WidgetKit complications, build your complication views so that they can adapt to different sizes. For example, you can use [`ViewThatFits`](https://developer.apple.com/documentation/swiftui/viewthatfits) to provide a set of different-sized views, letting the system pick the best fit for the current context.
+When designing your WidgetKit complications, build your complication views so that they can adapt to different sizes. For example, you can use [`ViewThatFits`](../SwiftUI/viewthatfits.md) to provide a set of different-sized views, letting the system pick the best fit for the current context.
 
-You can add a standard background to your complication by adding a [`AccessoryWidgetBackground`](accessorywidgetbackground.md) in a [`ZStack`](https://developer.apple.com/documentation/swiftui/zstack) behind your widget’s content, and you can also add additional information to circular and corner complications using a [`widgetLabel(label:)`](https://developer.apple.com/documentation/swiftui/view/widgetlabel(label:)). Use the widget label to add gauges, progress views, or text along the inside curve of the corner view, or to add an image and text along the bezel of the Infograph watch face.
+You can add a standard background to your complication by adding a [`AccessoryWidgetBackground`](./accessorywidgetbackground.md) in a [`ZStack`](../SwiftUI/zstack.md) behind your widget’s content, and you can also add additional information to circular and corner complications using a [`widgetLabel(label:)`](../SwiftUI/view/widgetlabel%28label%29.md). Use the widget label to add gauges, progress views, or text along the inside curve of the corner view, or to add an image and text along the bezel of the Infograph watch face.
 
-Finally, consider how Always On affects your complications. You may need to redact sensitive information, or adjust the widget’s appearance for reduced luminance. You can explicitly redact sensitive information using the [`privacySensitive(_:)`](https://developer.apple.com/documentation/swiftui/view/privacysensitive(_:)) view modifier. If you do, the system displays the redacted version of your view during Always On. For more information, see [`Designing your app for the Always On state`](https://developer.apple.com/documentation/watchos-apps/designing-your-app-for-the-always-on-state).
+Finally, consider how Always On affects your complications. You may need to redact sensitive information, or adjust the widget’s appearance for reduced luminance. You can explicitly redact sensitive information using the [`privacySensitive(_:)`](../SwiftUI/view/privacysensitive%28_%29.md) view modifier. If you do, the system displays the redacted version of your view during Always On. For more information, see [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md).
 
-> **Note**: If you don’t use the [`privacySensitive(_:)`](https://developer.apple.com/documentation/swiftui/view/privacysensitive(_:)) view modifier anywhere in your view hierarchy, the system displays a placeholder instead of a live complication. By default, the placeholder redacts all of your complication’s content.
+> **Note**: If you don’t use the [`privacySensitive(_:)`](../SwiftUI/view/privacysensitive%28_%29.md) view modifier anywhere in your view hierarchy, the system displays a placeholder instead of a live complication. By default, the placeholder redacts all of your complication’s content.
 
-#### Migrate Complications on a Watch Face
+#### Migrate complications on a watch face
 
-When users upgrade your app, you need to transition them from the old ClockKit complications to your new WidgetKit complications. Start by implementing your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource) type’s [`widgetMigrator`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource/widgetmigrator) method. Use your implementation to return an instance that conforms to the [`CLKComplicationWidgetMigrator`](https://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrator) protocol.
+When users upgrade your app, you need to transition them from the old ClockKit complications to your new WidgetKit complications. Start by implementing your [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) type’s [`widgetMigrator`](../ClockKit/clkcomplicationdatasource/widgetmigrator.md) method. Use your implementation to return an instance that conforms to the [`CLKComplicationWidgetMigrator`](../ClockKit/clkcomplicationwidgetmigrator.md) protocol.
 
-For example, update your data source so that it conforms to the [`CLKComplicationWidgetMigrator`](https://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrator) protocol.
+For example, update your data source so that it conforms to the [`CLKComplicationWidgetMigrator`](../ClockKit/clkcomplicationwidgetmigrator.md) protocol.
 
 ```swift
 class ComplicationController: NSObject, CLKComplicationDataSource, CLKComplicationWidgetMigrator {
@@ -301,7 +302,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource, CLKComplicati
 }
 ```
 
-Then, have the [`widgetMigrator`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource/widgetmigrator) property return `self`.
+Then, have the [`widgetMigrator`](../ClockKit/clkcomplicationdatasource/widgetmigrator.md) property return `self`.
 
 ```swift
 var widgetMigrator: CLKComplicationWidgetMigrator {
@@ -309,7 +310,7 @@ var widgetMigrator: CLKComplicationWidgetMigrator {
 }
 ```
 
-Finally, implement the [`getWidgetConfiguration(from:completionHandler:)`](https://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrator/getwidgetconfiguration(from:completionhandler:)) method. This method determines the best WidgetKit configuration for the given complication descriptor. This example uses the Swift async version of the method:
+Finally, implement the [`getWidgetConfiguration(from:completionHandler:)`](../ClockKit/clkcomplicationwidgetmigrator/getwidgetconfiguration%28from,completionhandler%29.md) method. This method determines the best WidgetKit configuration for the given complication descriptor. This example uses the Swift async version of the method:
 
 ```swift
 func widgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor) async -> CLKComplicationWidgetMigrationConfiguration? {
@@ -338,24 +339,25 @@ func widgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor)
 
 ## See Also
 
-- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
+### Accessory and watchOS widgets
+- [Creating accessory widgets and watch complications](./creating-accessory-widgets-and-watch-complications.md)
   Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
-- [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
+- [struct AccessoryWidgetGroup](./accessorywidgetgroup.md)
   A view type that has a label at the top and three content views masked with a circle or rounded square.
-- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+- [struct AccessoryWidgetGroupStyle](./accessorywidgetgroupstyle.md)
   The style for an accessory widget group view.
 - [func widgetCurvesContent(Bool) -> some View
-](../swiftui/view/widgetcurvescontent(_:).md)
+](../SwiftUI/view/widgetcurvescontent%28_%29.md)
   Displays the widget’s content along a curve if the context allows it.
-- [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
+- [func widgetLabel(_:)](../SwiftUI/view/widgetlabel%28_%29.md)
   Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
 - [func widgetLabel<Label>(label: () -> Label) -> some View
-](../swiftui/view/widgetlabel(label:).md)
+](../SwiftUI/view/widgetlabel%28label%29.md)
   Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
-- [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
+- [var showsWidgetLabel: Bool](../SwiftUI/environmentvalues/showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
 - [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
-](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+](../SwiftUI/view/accessorywidgetgroupstyle%28_%29.md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 
 

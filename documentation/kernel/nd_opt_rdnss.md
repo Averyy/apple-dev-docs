@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nd_opt_rdnss {
     ...
 };
@@ -17,11 +17,11 @@ struct nd_opt_rdnss {
 ## Topics
 
 ### Instance Properties
-- [nd_opt_rdnss_addr](nd_opt_rdnss/3754154-nd_opt_rdnss_addr.md)
-- [nd_opt_rdnss_len](nd_opt_rdnss/3754155-nd_opt_rdnss_len.md)
-- [nd_opt_rdnss_lifetime](nd_opt_rdnss/3754156-nd_opt_rdnss_lifetime.md)
-- [nd_opt_rdnss_reserved](nd_opt_rdnss/3754157-nd_opt_rdnss_reserved.md)
-- [nd_opt_rdnss_type](nd_opt_rdnss/3754158-nd_opt_rdnss_type.md)
+- [nd_opt_rdnss_addr](./nd_opt_rdnss/api-3754154-nd_opt_rdnss_addr.md)
+- [nd_opt_rdnss_len](./nd_opt_rdnss/api-3754155-nd_opt_rdnss_len.md)
+- [nd_opt_rdnss_lifetime](./nd_opt_rdnss/api-3754156-nd_opt_rdnss_lifetime.md)
+- [nd_opt_rdnss_reserved](./nd_opt_rdnss/api-3754157-nd_opt_rdnss_reserved.md)
+- [nd_opt_rdnss_type](./nd_opt_rdnss/api-3754158-nd_opt_rdnss_type.md)
 
 
 ---

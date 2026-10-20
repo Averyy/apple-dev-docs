@@ -1,14 +1,15 @@
 # kIOUserMIDIDriverUserClientType
 
 **Framework**: MIDIDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 #define kIOUserMIDIDriverUserClientType
 ```
 

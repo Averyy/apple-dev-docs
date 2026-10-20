@@ -1,11 +1,12 @@
 # Anonymous
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var CSSM_ACL_SUBJECT_TYPE_PARTITION: Int](cssm_acl_subject_type_partition.md)
+- [var CSSM_ACL_SUBJECT_TYPE_PARTITION: Int](./cssm_acl_subject_type_partition.md)
 
 
 ---

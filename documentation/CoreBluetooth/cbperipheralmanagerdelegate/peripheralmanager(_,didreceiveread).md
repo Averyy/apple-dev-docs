@@ -1,7 +1,8 @@
 # peripheralManager(_:didReceiveRead:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a local peripheral received an Attribute Protocol (ATT) read request for a characteristic with a dynamic value.
 
@@ -20,18 +21,23 @@ Tells the delegate that a local peripheral received an Attribute Protocol (ATT) 
 optional func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest)
 ```
 
+```objc
+- (void) peripheralManager:(CBPeripheralManager *) peripheral didReceiveReadRequest:(CBATTRequest *) request;
+```
+
 #### Discussion
 
-When you receive this callback, call the [`respond(to:withResult:)`](cbperipheralmanager/respond(to:withresult:).md) method of the [`CBPeripheralManager`](cbperipheralmanager.md) class exactly once to respond to the read request.
+When you receive this callback, call the [`respond(to:withResult:)`](../cbperipheralmanager/respond%28to,withresult%29.md) method of the [`CBPeripheralManager`](../cbperipheralmanager.md) class exactly once to respond to the read request.
 
 ## Parameters
 
 - `peripheral`: The peripheral manager that received the request.
-- `request`: A [`CBATTRequest`](cbattrequest.md) object that represents a request to read a characteristic’s value.
+- `request`: A [`CBATTRequest`](../cbattrequest.md) object that represents a request to read a characteristic’s value.
 
 ## See Also
 
-- [func peripheralManager(CBPeripheralManager, didReceiveWrite: [CBATTRequest])](cbperipheralmanagerdelegate/peripheralmanager(_:didreceivewrite:).md)
+### Receiving Read and Write Requests
+- [func peripheralManager(CBPeripheralManager, didReceiveWrite: [CBATTRequest])](./peripheralmanager%28_,didreceivewrite%29.md)
   Tells the delegate that a local peripheral device received an Attribute Protocol (ATT) write request for a characteristic with a dynamic value.
 
 

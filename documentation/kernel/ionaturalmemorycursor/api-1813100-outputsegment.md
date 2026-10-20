@@ -7,7 +7,7 @@ Outputs the given segment into the output segments array in natural byte order.
 
 ## Declaration
 
-```swift
+```c
 static void outputSegment(
  PhysicalSegmentsegment, 
  void *segments, 
@@ -22,11 +22,12 @@ static void outputSegment(
 
 ## See Also
 
-- [getPhysicalSegments](ionaturalmemorycursor/1813076-getphysicalsegments.md)
+### Miscellaneous
+- [getPhysicalSegments](./api-1813076-getphysicalsegments.md)
   Generates a CPU natural physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](ionaturalmemorycursor/1813089-initwithspecification.md)
+- [initWithSpecification](./api-1813089-initwithspecification.md)
   Primary initializer for the IONaturalMemoryCursor class.
-- [withSpecification](ionaturalmemorycursor/1813112-withspecification.md)
+- [withSpecification](./api-1813112-withspecification.md)
   Creates and initializes an IONaturalMemoryCursor in one operation.
 
 

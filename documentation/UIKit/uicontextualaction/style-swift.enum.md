@@ -1,7 +1,8 @@
 # UIContextualAction.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the style information that applies to the action button.
 
@@ -17,33 +18,38 @@ Constants indicating the style information that applies to the action button.
 enum Style
 ```
 
+```c
+enum UIContextualActionStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [UIContextualAction.Style.normal](uicontextualaction/style-swift.enum/normal.md)
+- [UIContextualAction.Style.normal](./style-swift.enum/normal.md)
   A normal action.
-- [UIContextualAction.Style.destructive](uicontextualaction/style-swift.enum/destructive.md)
+- [UIContextualAction.Style.destructive](./style-swift.enum/destructive.md)
   An action that deletes data or performs some type of destructive task.
 ### Initializers
-- [init?(rawValue: Int)](uicontextualaction/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var handler: UIContextualAction.Handler](uicontextualaction/handler-swift.property.md)
+### Getting the configuration details
+- [var handler: UIContextualAction.Handler](./handler-swift.property.md)
   The handler block to execute when the user selects the action.
-- [UIContextualAction.Handler](uicontextualaction/handler-swift.typealias.md)
+- [UIContextualAction.Handler](./handler-swift.typealias.md)
   The handler block to call in response to the selection of an action.
-- [var style: UIContextualAction.Style](uicontextualaction/style-swift.property.md)
+- [var style: UIContextualAction.Style](./style-swift.property.md)
   The style that applies to the action button.
 
 

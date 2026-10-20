@@ -1,12 +1,13 @@
 # Modify rotation and positioning programmatically
 
-**Framework**: DockKit
+**Framework**: DockKit  
+**Role**: Article
 
 Perform custom control of the dock accessory.
 
 #### Overview
 
-You can implement your own inference and tracking to directly control the velocity or position of the docking station. To do this, use [`setSystemTrackingEnabled(_:)`](dockaccessorymanager/setsystemtrackingenabled(_:).md) to prevent system from automatically tracking subjects.
+You can implement your own inference and tracking to directly control the velocity or position of the docking station. To do this, use [`setSystemTrackingEnabled(_:)`](./dockaccessorymanager/setsystemtrackingenabled%28_%29.md) to prevent system from automatically tracking subjects.
 
 ```swift
 do {
@@ -16,9 +17,9 @@ do {
 }
 ```
 
-After disabling tracking, use [`accessoryStateChanges`](dockaccessorymanager/accessorystatechanges.md) to iterate through the available accessories and find the one you wish to interact with.
+After disabling tracking, use [`accessoryStateChanges`](./dockaccessorymanager/accessorystatechanges.md) to iterate through the available accessories and find the one you wish to interact with.
 
-Once you identify the accessory of interest use [`setAngularVelocity(_:)`](dockaccessory/setangularvelocity(_:).md), [`setOrientation(_:duration:relative:)`](dockaccessory/setorientation(_:duration:relative:)-2epe2.md) and [`setOrientation(_:duration:relative:)`](dockaccessory/setorientation(_:duration:relative:)-6b0fl.md) to directly control the speed and position of the accessory:
+Once you identify the accessory of interest use [`setAngularVelocity(_:)`](./dockaccessory/setangularvelocity%28_%29.md), [`setOrientation(_:duration:relative:)`](./dockaccessory/setorientation%28_,duration,relative%29-2epe2.md) and [`setOrientation(_:duration:relative:)`](./dockaccessory/setorientation%28_,duration,relative%29-6b0fl.md) to directly control the speed and position of the accessory:
 
 ```swift
 do {
@@ -46,7 +47,8 @@ Changes to the tracking are local to the app, and are changeable dynamically any
 
 ## See Also
 
-- [Track custom objects in a frame](track-custom-objects-in-a-frame.md)
+### Customizing tracking behavior
+- [Track custom objects in a frame](./track-custom-objects-in-a-frame.md)
   Use your machine learning model to focus on a specific subject.
 
 

@@ -1,7 +1,8 @@
 # init(info:callbacks:options:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new PostScript converter.
 
@@ -13,6 +14,10 @@ Creates a new PostScript converter.
 
 ```swift
 init?(info: UnsafeMutableRawPointer?, callbacks: UnsafePointer<CGPSConverterCallbacks>, options: CFDictionary?)
+```
+
+```c
+extern CGPSConverterRefCGPSConverterCreate(void *info, const CGPSConverterCallbacks *callbacks, CFDictionaryRef options);
 ```
 
 #### Return Value

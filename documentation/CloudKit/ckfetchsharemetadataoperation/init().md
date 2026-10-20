@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty fetch share metadata operation.
 
@@ -20,9 +21,14 @@ Creates an empty fetch share metadata operation.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(shareURLs: [URL])](ckfetchsharemetadataoperation/init(shareurls:).md)
+### Creating an Operation
+- [convenience init(shareURLs: [URL])](./init%28shareurls%29.md)
   Creates an operation for fetching the metadata for the specified shares.
 
 

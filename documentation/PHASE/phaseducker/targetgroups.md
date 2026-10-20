@@ -1,7 +1,8 @@
 # targetGroups
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sounds that reduce in volume.
 
@@ -19,9 +20,14 @@ The sounds that reduce in volume.
 var targetGroups: Set<PHASEGroup> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<PHASEGroup *> * targetGroups;
+```
+
 ## See Also
 
-- [var sourceGroups: Set<PHASEGroup>](phaseducker/sourcegroups.md)
+### Specifying Sounds
+- [var sourceGroups: Set<PHASEGroup>](./sourcegroups.md)
   The sounds that determine volume reduction.
 
 

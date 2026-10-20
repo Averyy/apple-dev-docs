@@ -1,7 +1,8 @@
 # LAPolicy.deviceOwnerAuthenticationWithWristDetection
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User authentication with wrist detection on watchOS.
 
@@ -14,9 +15,13 @@ User authentication with wrist detection on watchOS.
 case deviceOwnerAuthenticationWithWristDetection
 ```
 
+```c
+LAPolicyDeviceOwnerAuthenticationWithWristDetection
+```
+
 #### Discussion
 
-You use the [`LAPolicy.deviceOwnerAuthenticationWithWristDetection`](lapolicy/deviceownerauthenticationwithwristdetection.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](lacontext/evaluatepolicy(_:localizedreason:reply:).md) method to authenticate a user on watchOS.
+You use the [`LAPolicy.deviceOwnerAuthenticationWithWristDetection`](./deviceownerauthenticationwithwristdetection.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](../lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to authenticate a user on watchOS.
 
 Policy evaluation fails if the user hasn’t set or entered the passcode on their watch or if the watch previously detected its removal from the user’s wrist.
 
@@ -42,13 +47,14 @@ do {
 
 ## See Also
 
-- [LAPolicy.deviceOwnerAuthenticationWithBiometrics](lapolicy/deviceownerauthenticationwithbiometrics.md)
+### Policies
+- [LAPolicy.deviceOwnerAuthenticationWithBiometrics](./deviceownerauthenticationwithbiometrics.md)
   User authentication with biometry.
-- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](lapolicy/deviceownerauthenticationwithwatch.md)
+- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](./deviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
+- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](./deviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
-- [LAPolicy.deviceOwnerAuthentication](lapolicy/deviceownerauthentication.md)
+- [LAPolicy.deviceOwnerAuthentication](./deviceownerauthentication.md)
   User authentication with biometry, Apple Watch, or the device passcode.
 
 

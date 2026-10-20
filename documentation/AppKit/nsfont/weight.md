@@ -1,12 +1,13 @@
 # NSFont.Weight
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 System-defined font-weight values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,65 +15,70 @@ System-defined font-weight values.
 struct Weight
 ```
 
+```c
+typedef CGFloat NSFontWeight;
+```
+
 ## Topics
 
 ### Font Weights
-- [static let ultraLight: NSFont.Weight](nsfont/weight/ultralight.md)
+- [static let ultraLight: NSFont.Weight](./weight/ultralight.md)
   The font weight for system ultra light font.
-- [static let thin: NSFont.Weight](nsfont/weight/thin.md)
+- [static let thin: NSFont.Weight](./weight/thin.md)
   The font weight for system thin font.
-- [static let light: NSFont.Weight](nsfont/weight/light.md)
+- [static let light: NSFont.Weight](./weight/light.md)
   The font weight for system light font.
-- [static let regular: NSFont.Weight](nsfont/weight/regular.md)
+- [static let regular: NSFont.Weight](./weight/regular.md)
   The font weight for system regular font.
-- [static let medium: NSFont.Weight](nsfont/weight/medium.md)
+- [static let medium: NSFont.Weight](./weight/medium.md)
   The font weight for system medium font.
-- [static let semibold: NSFont.Weight](nsfont/weight/semibold.md)
+- [static let semibold: NSFont.Weight](./weight/semibold.md)
   The font weight for system semibold font.
-- [static let bold: NSFont.Weight](nsfont/weight/bold.md)
+- [static let bold: NSFont.Weight](./weight/bold.md)
   The font weight for system bold font.
-- [static let heavy: NSFont.Weight](nsfont/weight/heavy.md)
+- [static let heavy: NSFont.Weight](./weight/heavy.md)
   The font weight for system heavy font.
-- [static let black: NSFont.Weight](nsfont/weight/black.md)
+- [static let black: NSFont.Weight](./weight/black.md)
   The font weight for system black font.
 ### Initializers
-- [init(CGFloat)](nsfont/weight/init(_:).md)
-- [init(rawValue: CGFloat)](nsfont/weight/init(rawvalue:).md)
+- [init(CGFloat)](./weight/init%28_%29.md)
+- [init(rawValue: CGFloat)](./weight/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func preferredFont(forTextStyle: NSFont.TextStyle, options: [NSFont.TextStyleOptionKey : Any]) -> NSFont](nsfont/preferredfont(fortextstyle:options:).md)
+### Creating System Fonts
+- [class func preferredFont(forTextStyle: NSFont.TextStyle, options: [NSFont.TextStyleOptionKey : Any]) -> NSFont](./preferredfont%28fortextstyle,options%29.md)
   Returns the font associated with the text style.
-- [class func systemFont(ofSize: CGFloat) -> NSFont](nsfont/systemfont(ofsize:).md)
+- [class func systemFont(ofSize: CGFloat) -> NSFont](./systemfont%28ofsize%29.md)
   Returns the standard system font with the specified size.
-- [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](nsfont/systemfont(ofsize:weight:).md)
+- [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](./systemfont%28ofsize,weight%29.md)
   Returns the standard system font with the specified size and weight.
-- [class func boldSystemFont(ofSize: CGFloat) -> NSFont](nsfont/boldsystemfont(ofsize:).md)
+- [class func boldSystemFont(ofSize: CGFloat) -> NSFont](./boldsystemfont%28ofsize%29.md)
   Returns the standard system font in boldface type with the specified size.
-- [class func monospacedSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](nsfont/monospacedsystemfont(ofsize:weight:).md)
+- [class func monospacedSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](./monospacedsystemfont%28ofsize,weight%29.md)
   Returns a monospace version of the system font with the specified size and weight.
-- [class func monospacedDigitSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](nsfont/monospaceddigitsystemfont(ofsize:weight:).md)
+- [class func monospacedDigitSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](./monospaceddigitsystemfont%28ofsize,weight%29.md)
   Returns a version of the standard system font that contains monospaced digit glyphs.
-- [class var systemFontSize: CGFloat](nsfont/systemfontsize.md)
+- [class var systemFontSize: CGFloat](./systemfontsize.md)
   Returns the size of the standard system font.
-- [class var smallSystemFontSize: CGFloat](nsfont/smallsystemfontsize.md)
+- [class var smallSystemFontSize: CGFloat](./smallsystemfontsize.md)
   Returns the size of the standard small system font.
-- [NSFont.TextStyle](nsfont/textstyle.md)
+- [NSFont.TextStyle](./textstyle.md)
   Constants that specify the preferred text styles you use with fonts.
-- [NSFont.TextStyleOptionKey](nsfont/textstyleoptionkey.md)
+- [NSFont.TextStyleOptionKey](./textstyleoptionkey.md)
   The options that you apply when requesting the font or font descriptor of a preferred text style.
 
 

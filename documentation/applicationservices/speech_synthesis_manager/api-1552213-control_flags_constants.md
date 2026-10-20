@@ -6,14 +6,14 @@ Flags that indicate which synthesizer features are active.
 
 #### Overview
 
-These constants are used in the `controlFlags` parameterof the [`SpeakBuffer`](1552252-speakbuffer.md) functionand in the `synthFlagsl` fieldof the [`SpeechVersionInfo`](speechversioninfo.md) structure. 
+These constants are used in the `controlFlags` parameterof the [`SpeakBuffer`](../api-1552252-speakbuffer.md) functionand in the `synthFlagsl` fieldof the [`SpeechVersionInfo`](../speechversioninfo.md) structure. 
 
 ## Topics
 
 ### Constants
-- [var kNoEndingProsody: Int32](knoendingprosody.md)
-- [var kNoSpeechInterrupt: Int32](knospeechinterrupt.md)
-- [var kPreflightThenPause: Int32](kpreflightthenpause.md)
+- [var kNoEndingProsody: Int32](../knoendingprosody.md)
+- [var kNoSpeechInterrupt: Int32](../knospeechinterrupt.md)
+- [var kPreflightThenPause: Int32](../kpreflightthenpause.md)
 
 
 ---

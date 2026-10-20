@@ -1,7 +1,8 @@
 # init(buffer:bufferStartTime:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio input object for audio that may be discontiguous with previous input.
 
@@ -23,11 +24,15 @@ init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)
 
 The audio buffer must not overlap or precede other audio input, as determined by the `bufferStartTime` value.
 
-> ❗ **Important**: If the buffer is converted from other differently-formatted audio, ensure that the buffer’s start time is accurate. Some conversion algorithms can use a “priming” method that may shift some audio to a later converted buffer. This shift will misalign the original and converted audio buffers; the original buffer’s start time would not be usable as the `bufferStartTime` value for the converted buffer.
+> ❗ **Important**: If the buffer is converted from other differently-formatted audio, ensure that the buffer’s start time is accurate.
+>
+> Some conversion algorithms can use a “priming” method that may shift some audio to a later converted buffer. This shift will misalign the original and converted audio buffers; the original buffer’s start time would not be usable as the `bufferStartTime` value for the converted buffer.
 
-> 💡 **Tip**: Convert an `AVAudioTime` instance to a `CMTime` instance with this code. ```swift
-CMTime(value: avAudioTime.sampleTime, timescale: CMTimeScale(avAudioTime.sampleRate))
-```
+> 💡 **Tip**: Convert an `AVAudioTime` instance to a `CMTime` instance with this code.
+>
+> ```swift
+> CMTime(value: avAudioTime.sampleTime, timescale: CMTimeScale(avAudioTime.sampleRate))
+> ```
 
 ## Parameters
 
@@ -36,9 +41,10 @@ CMTime(value: avAudioTime.sampleTime, timescale: CMTimeScale(avAudioTime.sampleR
 
 ## See Also
 
-- [init(buffer: CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](analyzerinput/init(buffer:)-3nt02.md)
+### Creating an input element
+- [init(buffer: CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](./init%28buffer%29-3nt02.md)
   Creates an audio input object.
-- [init(buffer: AVAudioPCMBuffer)](analyzerinput/init(buffer:)-2ysg3.md)
+- [init(buffer: AVAudioPCMBuffer)](./init%28buffer%29-2ysg3.md)
   Creates an audio input object.
 
 

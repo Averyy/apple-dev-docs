@@ -1,7 +1,8 @@
 # continuationToken
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the last batch of results.
 
@@ -10,7 +11,7 @@ The location of the last batch of results.
 
 ## Declaration
 
-```swift
+```
 attribute string? continuationToken;
 ```
 

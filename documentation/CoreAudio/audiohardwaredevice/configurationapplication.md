@@ -1,12 +1,13 @@
 # configurationApplication
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A String that contains the bundle ID for an application that provides a GUI for configuring the device. By default, the value of this property is the bundle ID for Audio MIDI Setup.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

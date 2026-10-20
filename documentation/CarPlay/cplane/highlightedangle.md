@@ -1,7 +1,8 @@
 # highlightedAngle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var highlightedAngle: Measurement<UnitAngle>? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSMeasurement<NSUnitAngle *> * highlightedAngle;
 ```
 
 

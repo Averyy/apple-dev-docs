@@ -1,14 +1,15 @@
 # kUSB_EPDesc_bmAttributes_SyncType_Shift
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kUSB_EPDesc_bmAttributes_SyncType_Shift = USBBitRangePhase(2, 3)
 ```
 

@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle to display for the user’s location annotation.
 
@@ -19,9 +20,14 @@ The subtitle to display for the user’s location annotation.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 ## See Also
 
-- [var title: String?](mkuserlocation/title.md)
+### Accessing the user’s location annotation
+- [var title: String?](./title.md)
   The title to display for the user’s location annotation.
 
 

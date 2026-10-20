@@ -1,7 +1,8 @@
 # setGuestProvisioning(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets guest provisioning options with validation.
 
@@ -14,6 +15,10 @@ Sets guest provisioning options with validation.
 func setGuestProvisioning(_ guestProvisioningOptions: VZMacGuestProvisioningOptions?) throws
 ```
 
+```objc
+- (BOOL) setGuestProvisioningOptions:(VZMacGuestProvisioningOptions *) guestProvisioningOptions error:(NSError **) error;
+```
+
 #### Discussion
 
 This method validates the provisioning options before setting them. If validation fails, the current options remain unchanged.
@@ -24,7 +29,8 @@ This method validates the provisioning options before setting them. If validatio
 
 ## See Also
 
-- [class VZMacGuestProvisioningOptions](vzmacguestprovisioningoptions.md)
+### Related Documentation
+- [class VZMacGuestProvisioningOptions](../vzmacguestprovisioningoptions.md)
   The configuration for guest setup during macOS virtual machine startup.
 
 

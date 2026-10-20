@@ -1,7 +1,8 @@
 # Invocation
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Properties that clients include in requests to all intent endpoints.
 
@@ -10,14 +11,14 @@ Properties that clients include in requests to all intent endpoints.
 
 ## Declaration
 
-```swift
+```
 object Invocation
 ```
 
 ## Topics
 
 ### Accessing the Details of a Request
-- [object Invocation.Params](invocation/params-data.dictionary.md)
+- [object Invocation.Params](./invocation/params-data.dictionary.md)
   The parameters of a client’s request.
 
 ## Properties
@@ -29,19 +30,20 @@ object Invocation
 ## Relationships
 
 ### Inherited By
-- [AddMediaIntentHandlingInvocation](addmediaintenthandlinginvocation.md)
-- [PlayMediaIntentHandlingInvocation](playmediaintenthandlinginvocation.md)
-- [UpdateMediaAffinityIntentHandlingInvocation](updatemediaaffinityintenthandlinginvocation.md)
+- [AddMediaIntentHandlingInvocation](./addmediaintenthandlinginvocation.md)
+- [PlayMediaIntentHandlingInvocation](./playmediaintenthandlinginvocation.md)
+- [UpdateMediaAffinityIntentHandlingInvocation](./updatemediaaffinityintenthandlinginvocation.md)
 
 ## See Also
 
-- [object Session](session.md)
+### Requests
+- [object Session](./session.md)
   Information the client provides about a sequence of requests and responses to process an intent.
-- [object Constraints](constraints.md)
+- [object Constraints](./constraints.md)
   Client-originated limitations on how to process a request, such as including explicit content and how much content the client device can receive in a response.
-- [object PlayerContext](playercontext.md)
+- [object PlayerContext](./playercontext.md)
   Information about the current playback content.
-- [object InvocationResponse](invocationresponse.md)
+- [object InvocationResponse](./invocationresponse.md)
   Properties to include in responses from all intent endpoints.
 
 

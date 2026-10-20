@@ -1,7 +1,8 @@
 # statistics(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the statistics calculated for matching samples added to the workout.
 
@@ -9,7 +10,7 @@ Returns the statistics calculated for matching samples added to the workout.
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -19,15 +20,20 @@ Returns the statistics calculated for matching samples added to the workout.
 func statistics(for quantityType: HKQuantityType) -> HKStatistics?
 ```
 
+```objc
+- (HKStatistics *) statisticsForType:(HKQuantityType *) quantityType;
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 ## See Also
 
-- [func add([HKSample], completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/add(_:completion:).md)
+### Associating samples with the workout
+- [func add([HKSample], completion: (Bool, (any Error)?) -> Void)](./add%28_,completion%29.md)
   Adds a sample to be associated with the workout.
-- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](hkworkoutbuilder/seriesbuilder(for:).md)
+- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](./seriesbuilder%28for%29.md)
   Returns the series builder for the specified type, creating a new builder, if necessary.
 
 

@@ -1,22 +1,23 @@
 # eIOAccelSurfaceStateBits
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum eIOAccelSurfaceStateBits eIOAccelSurfaceStateBits;
 ```
 
 ## Topics
 
 ### Constants
-- [kIOAccelSurfaceStateIdleBit](eioaccelsurfacestatebits/kioaccelsurfacestateidlebit.md)
-- [kIOAccelSurfaceStateNone](eioaccelsurfacestatebits/kioaccelsurfacestatenone.md)
+- [kIOAccelSurfaceStateIdleBit](./eioaccelsurfacestatebits/kioaccelsurfacestateidlebit.md)
+- [kIOAccelSurfaceStateNone](./eioaccelsurfacestatebits/kioaccelsurfacestatenone.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature display priority using the specified floating point value.
 
@@ -25,7 +26,8 @@ init(_ rawValue: Float)
 
 ## See Also
 
-- [init(rawValue: Float)](mkfeaturedisplaypriority/init(rawvalue:).md)
+### Creating Feature Display Priorities
+- [init(rawValue: Float)](./init%28rawvalue%29.md)
   Creates a feature display priority using the specified raw floating point value.
 
 

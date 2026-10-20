@@ -1,7 +1,8 @@
 # cursorHotSpotX
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Cursor's hotspot.
 
@@ -10,7 +11,7 @@ Cursor's hotspot.
 
 ## Declaration
 
-```swift
+```c
 UInt16 cursorHotSpotX;
 ```
 

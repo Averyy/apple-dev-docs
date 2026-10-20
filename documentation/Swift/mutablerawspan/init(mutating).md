@@ -1,7 +1,8 @@
 # init(mutating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Mutate the elements of a typed span as bytes.
 

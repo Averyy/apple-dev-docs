@@ -1,16 +1,17 @@
 # MLCConvolutionLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that applies a convolution over a signal.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,46 +19,51 @@ A layer that applies a convolution over a signal.
 class MLCConvolutionLayer
 ```
 
+```objc
+@interface MLCConvolutionLayer : MLCLayer
+```
+
 ## Topics
 
 ### Creating Convolution Layers
-- [convenience init?(weights: MLCTensor, biases: MLCTensor?, descriptor: MLCConvolutionDescriptor)](mlcconvolutionlayer/init(weights:biases:descriptor:).md)
+- [convenience init?(weights: MLCTensor, biases: MLCTensor?, descriptor: MLCConvolutionDescriptor)](./mlcconvolutionlayer/init%28weights,biases,descriptor%29.md)
   Creates a convolution layer with the weights, biases, and descriptor you specify.
-- [class MLCConvolutionDescriptor](mlcconvolutiondescriptor.md)
+- [class MLCConvolutionDescriptor](./mlcconvolutiondescriptor.md)
   A configuration object you use to create a convolution or fully connected layer.
 ### Inspecting Convolution Layers
-- [var descriptor: MLCConvolutionDescriptor](mlcconvolutionlayer/descriptor.md)
+- [var descriptor: MLCConvolutionDescriptor](./mlcconvolutionlayer/descriptor.md)
   The configuration object you use to create the convolution layer.
-- [var weights: MLCTensor](mlcconvolutionlayer/weights.md)
+- [var weights: MLCTensor](./mlcconvolutionlayer/weights.md)
   The weights tensor you use for the convolution layer.
-- [var biases: MLCTensor?](mlcconvolutionlayer/biases.md)
+- [var biases: MLCTensor?](./mlcconvolutionlayer/biases.md)
   The biases tensor you use for the convolution layer.
-- [var weightsParameter: MLCTensorParameter](mlcconvolutionlayer/weightsparameter.md)
+- [var weightsParameter: MLCTensorParameter](./mlcconvolutionlayer/weightsparameter.md)
   The weights tensor parameter you use for optimizer updates.
-- [var biasesParameter: MLCTensorParameter?](mlcconvolutionlayer/biasesparameter.md)
+- [var biasesParameter: MLCTensorParameter?](./mlcconvolutionlayer/biasesparameter.md)
   The biases tensor parameter you use for optimizer updates.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCLSTMLayer](mlclstmlayer.md)
+### Convolution and Recurrent Layers
+- [class MLCLSTMLayer](./mlclstmlayer.md)
   A layer that represents long short-term memory (LSTM) networks.
-- [class MLCPoolingLayer](mlcpoolinglayer.md)
+- [class MLCPoolingLayer](./mlcpoolinglayer.md)
   A layer that summarizes the average presence of a feature.
-- [class MLCUpsampleLayer](mlcupsamplelayer.md)
+- [class MLCUpsampleLayer](./mlcupsamplelayer.md)
   A layer that applies upsampling with the shape you specify.
-- [class MLCEmbeddingLayer](mlcembeddinglayer.md)
+- [class MLCEmbeddingLayer](./mlcembeddinglayer.md)
   A layer that stores a word embedding.
 
 

@@ -1,14 +1,15 @@
 # SetMemoryDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetMemoryDescriptor(IOMemoryDescriptor *memoryDescriptor, uint32_t index);
 ```
 

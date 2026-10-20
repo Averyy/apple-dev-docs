@@ -1,7 +1,8 @@
 # graph
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compiled animation graph that backs this component.
 

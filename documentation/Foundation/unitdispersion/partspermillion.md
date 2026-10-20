@@ -1,7 +1,8 @@
 # partsPerMillion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The parts per million unit.
 
@@ -19,6 +20,10 @@ The parts per million unit.
 ```swift
 @NSCopying
 class var partsPerMillion: UnitDispersion { get }
+```
+
+```objc
+@property (class, copy, readonly) NSUnitDispersion * partsPerMillion;
 ```
 
 

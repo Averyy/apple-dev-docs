@@ -1,7 +1,8 @@
 # FeaturePrintObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that provides the recognized feature print.
 
@@ -23,34 +24,34 @@ struct FeaturePrintObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNFeaturePrintObservation)](featureprintobservation/init(_:).md)
+- [init(VNFeaturePrintObservation)](./featureprintobservation/init%28_%29.md)
   Creates a feature print observation.
 ### Inspecting an observation
-- [let data: Data](featureprintobservation/data.md)
+- [let data: Data](./featureprintobservation/data.md)
   The feature print data.
-- [let elementCount: Int](featureprintobservation/elementcount.md)
+- [let elementCount: Int](./featureprintobservation/elementcount.md)
   The total number of elements in the data.
-- [let elementType: ElementType](featureprintobservation/elementtype.md)
+- [let elementType: ElementType](./featureprintobservation/elementtype.md)
   The type of each element in the data.
-- [enum ElementType](elementtype.md)
+- [enum ElementType](./elementtype.md)
   The type of element in feature print data.
 ### Getting the distance
-- [func distance(to: FeaturePrintObservation) throws -> Double](featureprintobservation/distance(to:).md)
+- [func distance(to: FeaturePrintObservation) throws -> Double](./featureprintobservation/distance%28to%29.md)
   Computes the distance between two feature print observations.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

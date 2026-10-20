@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassVideoSink
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassVideoSink = 0x1304
 ```
 

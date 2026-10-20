@@ -1,7 +1,8 @@
 # subtitleHighlightRanges
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ranges of characters to highlight in the subtitle string.
 
@@ -20,17 +21,22 @@ The ranges of characters to highlight in the subtitle string.
 var subtitleHighlightRanges: [NSValue] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<NSValue *> * subtitleHighlightRanges;
+```
+
 #### Discussion
 
-This property contains an array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects, each of which contains an [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) type defining a range of characters in the [`subtitle`](mklocalsearchcompletion/subtitle.md) string. Use this property to identify the ranges of characters in the subtitle string that you want to highlight. Highlighting the matching text of a search completion is optional, but it’s a best practice for providing helpful information to the user.
+This property contains an array of [`NSValue`](../../Foundation/nsvalue.md) objects, each of which contains an [`NSRange`](../../Foundation/nsrange-c.struct.md) type defining a range of characters in the [`subtitle`](./subtitle.md) string. Use this property to identify the ranges of characters in the subtitle string that you want to highlight. Highlighting the matching text of a search completion is optional, but it’s a best practice for providing helpful information to the user.
 
 ## See Also
 
-- [var title: String](mklocalsearchcompletion/title.md)
+### Getting the search completions
+- [var title: String](./title.md)
   The title string associated with the point of interest.
-- [var subtitle: String](mklocalsearchcompletion/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   The subtitle (if any) associated with the point of interest.
-- [var titleHighlightRanges: [NSValue]](mklocalsearchcompletion/titlehighlightranges.md)
+- [var titleHighlightRanges: [NSValue]](./titlehighlightranges.md)
   The ranges of characters to highlight in the title string.
 
 

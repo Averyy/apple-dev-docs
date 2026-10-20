@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierFaxClass2Support
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierFaxClass2Support = 0x0304
 ```
 

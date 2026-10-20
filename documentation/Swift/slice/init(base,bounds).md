@@ -1,7 +1,8 @@
 # init(base:bounds:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view into the given collection that allows access to elements within the specified range.
 

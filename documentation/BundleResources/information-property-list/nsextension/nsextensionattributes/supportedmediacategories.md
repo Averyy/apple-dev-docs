@@ -1,7 +1,8 @@
 # SupportedMediaCategories
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Types of media supported by an app extension’s media-playing intents.
 
@@ -12,9 +13,18 @@ Types of media supported by an app extension’s media-playing intents.
 - visionOS 1.0+
 - watchOS 6.0+
 
+## Details
 
+- **Name**: `SupportedMediaCategories`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `INMediaCategoryAudiobooks`: Audiobooks
+- `INMediaCategoryMusic`: Music
+- `INMediaCategoryGeneral`: General
+- `INMediaCategoryPodcasts`: Podcasts
+- `INMediaCategoryRadio`: Radio
 
 #### Discussion
 
@@ -24,7 +34,8 @@ To specify this information in Xcode, add [`INPlayMediaIntent`](https://develope
 
 ## See Also
 
-- [IntentsSupported](information-property-list/nsextension/intentssupported.md)
+### Intents
+- [IntentsSupported](../intentssupported.md)
   The names of the intents that an extension supports.
 
 

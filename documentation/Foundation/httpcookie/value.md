@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie’s string value.
 
@@ -20,11 +21,16 @@ The cookie’s string value.
 var value: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * value;
+```
+
 ## See Also
 
-- [var name: String](httpcookie/name.md)
+### Getting cookie metadata
+- [var name: String](./name.md)
   The cookie’s name.
-- [var version: Int](httpcookie/version.md)
+- [var version: Int](./version.md)
   The cookie’s version.
 
 

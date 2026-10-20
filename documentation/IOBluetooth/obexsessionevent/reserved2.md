@@ -1,15 +1,20 @@
 # reserved2
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var reserved2: UnsafeMutableRawPointer!
+```
+
+```c
+void * reserved2;
 ```
 
 

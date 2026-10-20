@@ -1,6 +1,8 @@
 # Handling Different Data Types in Core Data
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Sample Code  
+**Download**: [HandlingDifferentDataTypesInCoreData.zip](https://docs-assets.developer.apple.com/published/73ed48112035/HandlingDifferentDataTypesInCoreData.zip)
 
 Create, store, and present records for a variety of data types.
 
@@ -16,7 +18,7 @@ Many apps need to persist and present different kinds of information. Core Data 
 
 This sample shows how to handle all these data types, by creating and presenting a set of book records. After you launch it, this sample automatically generates the records if they don’t already exist, and shows them in a list. The records are grouped by their published month and can be searched with their canonical form of title.
 
-##### Derive a Non Persistent Value Using a Transient Attribute
+##### Derive a Non-Persistent Value Using a Transient Attribute
 
 A `Transient` attribute is derived from one or multiple stored attributes in the same entity. As its name implies, a `Transient` attribute isn’t persisted to the store, so an app can use it to provide a new attribute based on the stored ones, without consuming extra storage space.
 
@@ -61,7 +63,7 @@ The `getter` method of `publishMonthID` recalculates the value if `primitivePubl
 
 With these two methods, `publishMonthID` is associated with `publishDate` and always stays current.
 
-In the case where `publishMonthID` is [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift), the following code ensures that the observations are triggered when `publishDate` changes.
+In the case where `publishMonthID` is [`key-value observed`](../Swift/using-key-value-observing-in-swift.md), the following code ensures that the observations are triggered when `publishDate` changes.
 
 ```swift
 class func keyPathsForValuesAffectingPublishMonthID() -> Set<String> {
@@ -73,7 +75,7 @@ class func keyPathsForValuesAffectingPublishMonthID() -> Set<String> {
 
 This sample uses a `Derived` attribute, `canonicalTitle`, to support searching the canonical form of book titles. `canonicalTitle` is configured as the canonical form of  `title` by setting the following expression as the value of the `Derivation` field shown Xcode’s Data Model Inspector.
 
-```None
+```
 canonical:(title)
 ```
 
@@ -81,7 +83,7 @@ canonical:(title)
 
 `Derived` attributes are only updated when the user saves the managed context. Concretely, `canonicalTitle` won’t change if the sample app changes the `title` attribute without saving it.
 
-##### Configure and Implement a Non Standard Data Type
+##### Configure and Implement a Non-Standard Data Type
 
 `Transformable` attributes store objects with a non-standard type, or a type that isn’t in the attribute type list in Xcode’s Data Model Inspector. To implement a `Transformable` attribute, configure it by setting its type to `Transformable` and specifying the transformer and custom class name in Data Model Inspector, then register a transformer with code before an app loads its Core Data stack.
 
@@ -113,13 +115,14 @@ cell.price.text = book.price?.description(withLocale: Locale.current)
 
 ## See Also
 
-- [Creating a Core Data model](creating-a-core-data-model.md)
+### Essentials
+- [Creating a Core Data model](./creating-a-core-data-model.md)
   Define your app’s object structure with a data model file.
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
   Set up the classes that manage and persist your app’s objects.
-- [Core Data stack](core-data-stack.md)
+- [Core Data stack](./core-data-stack.md)
   Manage and persist your app’s model layer.
-- [Linking Data Between Two Core Data Stores](linking-data-between-two-core-data-stores.md)
+- [Linking Data Between Two Core Data Stores](./linking-data-between-two-core-data-stores.md)
   Organize data in two different stores and implement a link between them.
 
 

@@ -1,7 +1,8 @@
 # filterPackets
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates that the system applies the filter to packets of network data.
 
@@ -14,11 +15,16 @@ A Boolean value that indicates that the system applies the filter to packets of 
 var filterPackets: Bool { get set }
 ```
 
+```objc
+@property BOOL filterPackets;
+```
+
 ## See Also
 
-- [var filterBrowsers: Bool](nefilterproviderconfiguration/filterbrowsers.md)
+### Configuring filter behavior
+- [var filterBrowsers: Bool](./filterbrowsers.md)
   A Boolean value that indicates that the system applies the filter to flows of network data originated from WebKit browser objects.
-- [var filterSockets: Bool](nefilterproviderconfiguration/filtersockets.md)
+- [var filterSockets: Bool](./filtersockets.md)
   A Boolean value that indicates that the system applies the filter to flows of network data originated from sockets.
 
 

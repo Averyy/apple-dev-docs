@@ -1,7 +1,8 @@
 # kJSTypedArrayTypeBigInt64Array
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -17,9 +18,14 @@
 var kJSTypedArrayTypeBigInt64Array: JSTypedArrayType { get }
 ```
 
+```c
+kJSTypedArrayTypeBigInt64Array
+```
+
 ## See Also
 
-- [var kJSTypedArrayTypeBigUint64Array: JSTypedArrayType](kjstypedarraytypebiguint64array.md)
+### Constants
+- [var kJSTypedArrayTypeBigUint64Array: JSTypedArrayType](./kjstypedarraytypebiguint64array.md)
 
 
 ---

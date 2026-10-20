@@ -1,7 +1,8 @@
 # maxSamplerStateBindCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the number of sampler state-binding slots for the argument table.
 
@@ -17,6 +18,10 @@ Determines the number of sampler state-binding slots for the argument table.
 
 ```swift
 var maxSamplerStateBindCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxSamplerStateBindCount;
 ```
 
 #### Discussion

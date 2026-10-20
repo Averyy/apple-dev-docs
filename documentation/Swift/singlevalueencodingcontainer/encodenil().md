@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a null value.
@@ -23,9 +24,9 @@ mutating func encodeNil() throws
 
 #### Discussion
 
-> **Note**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
 
-> **Note**: May not be called after a previous `self.encode(_:)` call.
+> **Precondition**: May not be called after a previous `self.encode(_:)` call.
 
 
 ---

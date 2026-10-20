@@ -1,7 +1,8 @@
 # quantityType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quantity type for this sample.
 
@@ -20,15 +21,20 @@ The quantity type for this sample.
 var quantityType: HKQuantityType { get }
 ```
 
+```objc
+@property (copy, readonly) HKQuantityType * quantityType;
+```
+
 #### Discussion
 
-This property contains a reference to the [`sampleType`](hksample/sampletype.md) property that is cast as an [`HKQuantityType`](hkquantitytype.md) object.
+This property contains a reference to the [`sampleType`](../hksample/sampletype.md) property that is cast as an [`HKQuantityType`](../hkquantitytype.md) object.
 
 ## See Also
 
-- [var quantity: HKQuantity](hkquantitysample/quantity.md)
+### Getting Property Data
+- [var quantity: HKQuantity](./quantity.md)
   The quantity for this sample.
-- [var count: Int](hkquantitysample/count.md)
+- [var count: Int](./count.md)
   The number of quantities contained in this sample.
 
 

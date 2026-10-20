@@ -1,7 +1,8 @@
 # mediaPresentationSettings(for:complementaryToLanguage:settings:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an array of media presentation settings that can be effective at the same time as the specified language and settings for other selectors of the receiver.
 
@@ -20,6 +21,10 @@ Provides an array of media presentation settings that can be effective at the sa
 func mediaPresentationSettings(for selector: AVMediaPresentationSelector, complementaryToLanguage language: String?, settings: [AVMediaPresentationSetting]) -> [AVMediaPresentationSetting]
 ```
 
+```objc
+- (NSArray<AVMediaPresentationSetting *> *) mediaPresentationSettingsForSelector:(AVMediaPresentationSelector *) selector complementaryToLanguage:(NSString *) language settings:(NSArray<AVMediaPresentationSetting *> *) settings;
+```
+
 #### Discussion
 
 If the content is authored to provide a collection of AVMediaSelectionOptions that include one or more with all of the combinations of media characteristics of the specified AVMediaPresentationSettings together with all of the settings of the specified AVMediaPresentationSelector, this method will return all of the settings for that selector. However, if one or more of the available combinations are not possessed by any of the AVMediaSelectionOptions, it will return fewer.
@@ -32,11 +37,12 @@ If the content is authored to provide a collection of AVMediaSelectionOptions th
 
 ## See Also
 
-- [var availableLanguages: [String]](avcustommediaselectionscheme/availablelanguages.md)
+### Inspecting the scheme
+- [var availableLanguages: [String]](./availablelanguages.md)
   Provides available language choices.
-- [var selectors: [AVMediaPresentationSelector]](avcustommediaselectionscheme/selectors.md)
+- [var selectors: [AVMediaPresentationSelector]](./selectors.md)
   Provides custom settings.
-- [var shouldOfferLanguageSelection: Bool](avcustommediaselectionscheme/shouldofferlanguageselection.md)
+- [var shouldOfferLanguageSelection: Bool](./shouldofferlanguageselection.md)
   Indicates whether an alternative selection interface should provide a menu of language choices.
 
 

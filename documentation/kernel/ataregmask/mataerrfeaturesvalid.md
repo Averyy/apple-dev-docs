@@ -1,14 +1,15 @@
 # mATAErrFeaturesValid
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 mATAErrFeaturesValid = 1 << bATAErrFeaturesValid
 ```
 

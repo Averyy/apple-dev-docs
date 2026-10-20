@@ -1,7 +1,8 @@
 # navigation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for navigation actions.
 
@@ -25,19 +26,20 @@ Navigation actions allow the user to move between contexts. For example, the for
 
 In macOS and in Mac Catalyst apps, the system places navigation items in the leading edge of the toolbar ahead of the inline title if that is present in the toolbar.
 
-In iOS, iPadOS, and tvOS, navigation items appear in the leading edge of the navigation bar. If a system navigation item such as a back button is present in a compact width, it instead appears in the [`primaryAction`](toolbaritemplacement/primaryaction.md) placement.
+In iOS, iPadOS, and tvOS, navigation items appear in the leading edge of the navigation bar. If a system navigation item such as a back button is present in a compact width, it instead appears in the [`primaryAction`](./primaryaction.md) placement.
 
 ## See Also
 
-- [static let primaryAction: ToolbarItemPlacement](toolbaritemplacement/primaryaction.md)
+### Getting placement for specific actions
+- [static let primaryAction: ToolbarItemPlacement](./primaryaction.md)
   A placement for the primary action.
-- [static let secondaryAction: ToolbarItemPlacement](toolbaritemplacement/secondaryaction.md)
+- [static let secondaryAction: ToolbarItemPlacement](./secondaryaction.md)
   A placement for secondary actions.
-- [static let confirmationAction: ToolbarItemPlacement](toolbaritemplacement/confirmationaction.md)
+- [static let confirmationAction: ToolbarItemPlacement](./confirmationaction.md)
   A placement for confirmation actions in a modal interface.
-- [static let cancellationAction: ToolbarItemPlacement](toolbaritemplacement/cancellationaction.md)
+- [static let cancellationAction: ToolbarItemPlacement](./cancellationaction.md)
   A placement for cancellation actions in a modal interface.
-- [static let destructiveAction: ToolbarItemPlacement](toolbaritemplacement/destructiveaction.md)
+- [static let destructiveAction: ToolbarItemPlacement](./destructiveaction.md)
   A placement for destructive actions in a modal interface.
 
 

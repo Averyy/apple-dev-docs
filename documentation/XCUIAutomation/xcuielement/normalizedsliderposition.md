@@ -1,18 +1,19 @@
 # normalizedSliderPosition
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the position of the slider’s indicator as a normalized value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,13 +22,18 @@ Returns the position of the slider’s indicator as a normalized value.
 var normalizedSliderPosition: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat normalizedSliderPosition;
+```
+
 #### Discussion
 
 A value of `0` corresponds to the minimum value of the slider, and `1` corresponds to its maximum value.
 
 ## See Also
 
-- [func adjust(toNormalizedSliderPosition: CGFloat)](xcuielement/adjust(tonormalizedsliderposition:).md)
+### Interacting with sliders
+- [func adjust(toNormalizedSliderPosition: CGFloat)](./adjust%28tonormalizedsliderposition%29.md)
   Manipulates the UI to change the value the slider displays to a new value, based on a normalized position.
 
 

@@ -1,7 +1,8 @@
 # protectedContentOriginalFormat
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 FourCharCode number representing the original format
 

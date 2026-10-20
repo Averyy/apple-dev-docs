@@ -1,7 +1,8 @@
 # MLActivityClassifier.ModelParameters.Validation.none
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An empty validation dataset that skips the model validation phase after training.
 
@@ -16,9 +17,10 @@ case none
 
 ## See Also
 
-- [MLActivityClassifier.ModelParameters.Validation.split(strategy:)](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum/split(strategy:).md)
+### Specifying validation data
+- [MLActivityClassifier.ModelParameters.Validation.split(strategy:)](./split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the training data.
-- [MLActivityClassifier.ModelParameters.Validation.dataSource(_:)](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum/datasource(_:).md)
+- [MLActivityClassifier.ModelParameters.Validation.dataSource(_:)](./datasource%28_%29.md)
   A validation dataset represented by a data source.
 
 

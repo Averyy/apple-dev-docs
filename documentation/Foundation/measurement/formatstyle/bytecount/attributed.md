@@ -1,7 +1,8 @@
 # attributed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed format style based on the byte count format style.
 
@@ -22,11 +23,12 @@ var attributed: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount { 
 
 #### Discussion
 
-Use this modifier to create a [`ByteCountFormatStyle.Attributed`](bytecountformatstyle/attributed-swift.struct.md) instance, which formats values as [`AttributedString`](attributedstring.md) instances. These attributed strings contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
+Use this modifier to create a [`ByteCountFormatStyle.Attributed`](../../../bytecountformatstyle/attributed-swift.struct.md) instance, which formats values as [`AttributedString`](../../../attributedstring.md) instances. These attributed strings contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](../../../attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
 
 ## See Also
 
-- [Measurement.AttributedStyle.ByteCount](measurement/attributedstyle/bytecount.md)
+### Creating attributed strings
+- [Measurement.AttributedStyle.ByteCount](../../attributedstyle/bytecount.md)
   A format style that converts byte counts into attributed strings.
 
 

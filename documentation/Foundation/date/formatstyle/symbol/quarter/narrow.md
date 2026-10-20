@@ -1,7 +1,8 @@
 # narrow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shortest representation of a quarter.
 
@@ -26,13 +27,14 @@ This custom format style conveys the shortest representation of a quarter. For e
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/abbreviated.md)
+### Modifying a Quarter
+- [static var abbreviated: Date.FormatStyle.Symbol.Quarter](./abbreviated.md)
   The abbreviated representation of a quarter.
-- [static var oneDigit: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/onedigit.md)
+- [static var oneDigit: Date.FormatStyle.Symbol.Quarter](./onedigit.md)
   The one-digit representation of a quarter.
-- [static var twoDigits: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Quarter](./twodigits.md)
   The two-digit representation of a quarter.
-- [static var wide: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.Quarter](./wide.md)
   The full representation of a quarter.
 
 

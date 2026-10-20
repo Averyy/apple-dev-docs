@@ -1,16 +1,17 @@
 # usesBiases
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether you use bias weights.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,23 +19,28 @@ A Boolean that indicates whether you use bias weights.
 var usesBiases: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL usesBiases;
+```
+
 ## See Also
 
-- [var batchFirst: Bool](mlclstmdescriptor/batchfirst.md)
+### Inspecting LSTM Descriptors
+- [var batchFirst: Bool](./batchfirst.md)
   A Boolean that indicates whether the input and output shape is batch first.
-- [var dropout: Float](mlclstmdescriptor/dropout.md)
+- [var dropout: Float](./dropout.md)
   The dropout probability.
-- [var hiddenSize: Int](mlclstmdescriptor/hiddensize.md)
+- [var hiddenSize: Int](./hiddensize.md)
   The number of features in the hidden state.
-- [var inputSize: Int](mlclstmdescriptor/inputsize.md)
+- [var inputSize: Int](./inputsize.md)
   The number of expected features in the input.
-- [var isBidirectional: Bool](mlclstmdescriptor/isbidirectional.md)
+- [var isBidirectional: Bool](./isbidirectional.md)
   A Boolean that indicates whether the layer is bidirectional.
-- [var layerCount: Int](mlclstmdescriptor/layercount.md)
+- [var layerCount: Int](./layercount.md)
   The number of recurrent layers.
-- [var resultMode: MLCLSTMResultMode](mlclstmdescriptor/resultmode.md)
+- [var resultMode: MLCLSTMResultMode](./resultmode.md)
   The mode that indicates whether the layer produces a single result tensor or three result tensors — final output, last hidden state, and the cell state.
-- [var returnsSequences: Bool](mlclstmdescriptor/returnssequences.md)
+- [var returnsSequences: Bool](./returnssequences.md)
   A Boolean that indicates whether the layer returns output for all sequences.
 
 

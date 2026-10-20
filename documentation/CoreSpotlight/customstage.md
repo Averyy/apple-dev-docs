@@ -1,7 +1,8 @@
 # CustomStage
 
 **Framework**: Core Spotlight  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A custom processing stage the Spotlight search tool uses to identify search results.
 
@@ -20,7 +21,7 @@ protocol CustomStage : Generable, Decodable, Encodable, Sendable
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
 #### Overview
 
@@ -59,7 +60,7 @@ extension CustomStage where Self == SentimentStage {
 
 To make your custom stage available to a model, include it in the configuration of the Spotlight search tool you associate with your Foundation model’s session. The following example configures the Spotlight search tool with two separate instances of the sentiment stage from the previous example. The first instance scores items across all sentiments while the second instance scores items only on the positivity scale.
 
-```None
+```
 let tool = SpotlightSearchTool(configuration: .init(
       customStages: [.sentiment(), .sentiment(mode: "positive")]
 ))
@@ -70,51 +71,52 @@ The model builds tool pipelines dynamically, and can run multiple stages in para
 ## Topics
 
 ### Getting the stage metadata
-- [static var name: String](customstage/name.md)
+- [static var name: String](./customstage/name.md)
   The name of the stage as you want it to appear in the pipeline.
-- [static var description: String](customstage/description.md)
+- [static var description: String](./customstage/description.md)
   A human-readable description of what this stage does.
-- [static var inputTypes: [SearchPipelineDataType]](customstage/inputtypes.md)
+- [static var inputTypes: [SearchPipelineDataType]](./customstage/inputtypes.md)
   The data types this stage accepts as input.
-- [static var outputType: SearchPipelineDataType](customstage/outputtype.md)
+- [static var outputType: SearchPipelineDataType](./customstage/outputtype.md)
   The data type this stage produces as output.
 ### Performing the stage behavior
-- [func execute(items: [SearchableItem]) async throws -> SearchPipelineData](customstage/execute(items:).md)
+- [func execute(items: [SearchableItem]) async throws -> SearchPipelineData](./customstage/execute%28items%29.md)
   Generates output data from an array of searchable items from the app’s Spotlight index.
-- [func execute(scoredItems: [ScoredSearchableItem]) async throws -> SearchPipelineData](customstage/execute(scoreditems:).md)
+- [func execute(scoredItems: [ScoredSearchableItem]) async throws -> SearchPipelineData](./customstage/execute%28scoreditems%29.md)
   Generates output data from an array of scored searchable items.
-- [func execute(text: String) async throws -> SearchPipelineData](customstage/execute(text:).md)
+- [func execute(text: String) async throws -> SearchPipelineData](./customstage/execute%28text%29.md)
   Generates output data from the specified input string.
-- [func execute(count: Int) async throws -> SearchPipelineData](customstage/execute(count:).md)
+- [func execute(count: Int) async throws -> SearchPipelineData](./customstage/execute%28count%29.md)
   Generates output data from the specified count value.
-- [func execute(groupedItems: [SearchableItemAttribute : [SearchableItem]]) async throws -> SearchPipelineData](customstage/execute(groupeditems:).md)
+- [func execute(groupedItems: [SearchableItemAttribute : [SearchableItem]]) async throws -> SearchPipelineData](./customstage/execute%28groupeditems%29.md)
   Generates output data from the specified dictionary of attributes and searchable items.
-- [func execute(table: SearchResultsTable) async throws -> SearchPipelineData](customstage/execute(table:).md)
+- [func execute(table: SearchResultsTable) async throws -> SearchPipelineData](./customstage/execute%28table%29.md)
   Generates output data from the specified tabular data.
 ### Instance Methods
-- [func execute(statistic: String, value: Double) async throws -> SearchPipelineData](customstage/execute(statistic:value:).md)
+- [func execute(statistic: String, value: Double) async throws -> SearchPipelineData](./customstage/execute%28statistic,value%29.md)
   Generates output data from the specified statistical value.
 
 ## Relationships
 
 ### Inherits From
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Generable](../foundationmodels/generable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Generable](../FoundationModels/generable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SearchPipelineData](searchpipelinedata.md)
+### Tool customization
+- [struct SearchPipelineData](./searchpipelinedata.md)
   The type you use to store the output from a custom stage.
-- [enum SearchPipelineDataType](searchpipelinedatatype.md)
+- [enum SearchPipelineDataType](./searchpipelinedatatype.md)
   Data types that a pipeline stage accepts or produces.
-- [struct ScoredSearchableItem](scoredsearchableitem.md)
+- [struct ScoredSearchableItem](./scoredsearchableitem.md)
   A searchable item paired with a caller-assigned relevance score.
 
 

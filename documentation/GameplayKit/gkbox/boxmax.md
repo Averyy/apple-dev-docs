@@ -1,7 +1,8 @@
 # boxMax
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner of the box with the highest coordinate values (in most coordinate systems, the near-upper-right corner).
 
@@ -19,9 +20,14 @@ The corner of the box with the highest coordinate values (in most coordinate sys
 var boxMax: vector_float3
 ```
 
+```c
+vector_float3 boxMax;
+```
+
 ## See Also
 
-- [var boxMin: vector_float3](gkbox/boxmin.md)
+### Instance Properties
+- [var boxMin: vector_float3](./boxmin.md)
   The corner of the box with the lowest coordinate values (in most coordinate systems, the far-lower-left corner).
 
 

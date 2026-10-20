@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_shared_cache_loadinfo {
     ...
 };
@@ -17,10 +17,10 @@ struct dyld_shared_cache_loadinfo {
 ## Topics
 
 ### Instance Properties
-- [sharedCacheSlidFirstMapping](dyld_shared_cache_loadinfo/3736278-sharedcacheslidfirstmapping.md)
-- [sharedCacheSlide](dyld_shared_cache_loadinfo/3736279-sharedcacheslide.md)
-- [sharedCacheUUID](dyld_shared_cache_loadinfo/3736280-sharedcacheuuid.md)
-- [sharedCacheUnreliableSlidBaseAddress](dyld_shared_cache_loadinfo/3736281-sharedcacheunreliableslidbaseadd.md)
+- [sharedCacheSlidFirstMapping](./dyld_shared_cache_loadinfo/api-3736278-sharedcacheslidfirstmapping.md)
+- [sharedCacheSlide](./dyld_shared_cache_loadinfo/api-3736279-sharedcacheslide.md)
+- [sharedCacheUUID](./dyld_shared_cache_loadinfo/api-3736280-sharedcacheuuid.md)
+- [sharedCacheUnreliableSlidBaseAddress](./dyld_shared_cache_loadinfo/api-3736281-sharedcacheunreliableslidbaseadd.md)
 
 
 ---

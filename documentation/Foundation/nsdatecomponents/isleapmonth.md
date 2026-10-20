@@ -1,7 +1,8 @@
 # isLeapMonth
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the month is a leap month.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether the month is a leap month.
 var isLeapMonth: Bool { get set }
 ```
 
+```objc
+@property (getter=isLeapMonth) BOOL leapMonth;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the month is a leap month, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the month is a leap month, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var era: Int](nsdatecomponents/era.md)
+### Accessing Years and Months
+- [var era: Int](./era.md)
   The number of eras.
-- [var year: Int](nsdatecomponents/year.md)
+- [var year: Int](./year.md)
   The number of years.
-- [var yearForWeekOfYear: Int](nsdatecomponents/yearforweekofyear.md)
+- [var yearForWeekOfYear: Int](./yearforweekofyear.md)
   The ISO 8601 week-numbering year.
-- [var quarter: Int](nsdatecomponents/quarter.md)
+- [var quarter: Int](./quarter.md)
   The number of quarters.
-- [var month: Int](nsdatecomponents/month.md)
+- [var month: Int](./month.md)
   The number of months.
 
 

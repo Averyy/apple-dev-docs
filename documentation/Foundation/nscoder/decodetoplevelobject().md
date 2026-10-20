@@ -1,18 +1,21 @@
 # decodeTopLevelObject()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a previously-encoded object.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 10.11+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 9.0+ - Deprecated in 27.2
+- iPadOS 9.0+ - Deprecated in 27.2
+- Mac Catalyst 9.0+ - Deprecated in 27.2
+- macOS 10.11+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use decodeTopLevelObject(of:forKey:) instead
 
 ## Declaration
 
@@ -27,15 +30,16 @@ The decoded object, or `nil` if decoding fails.
 
 ## See Also
 
-- [func decodeObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) -> DecodedObjectType?](nscoder/decodeobject(of:forkey:)-7tmft.md)
+### Decoding Top-Level Objects
+- [func decodeObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) -> DecodedObjectType?](./decodeobject%28of,forkey%29-7tmft.md)
   Decode an object as an expected type, failing if the archived type doesn’t match.
-- [func decodeObject(of: [AnyClass]?, forKey: String) -> Any?](nscoder/decodeobject(of:forkey:)-roif.md)
+- [func decodeObject(of: [AnyClass]?, forKey: String) -> Any?](./decodeobject%28of,forkey%29-roif.md)
   Decode an object as one of several expected types, failing if the archived type doesn’t match any of the types.
-- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:).md)
+- [func decodeTopLevelObject(forKey: String) throws -> Any?](./decodetoplevelobject%28forkey%29.md)
   Decodes the previously-encoded object associated by a key.
-- [func decodeTopLevelObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) throws -> DecodedObjectType?](nscoder/decodetoplevelobject(of:forkey:)-3w6pd.md)
+- [func decodeTopLevelObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) throws -> DecodedObjectType?](./decodetoplevelobject%28of,forkey%29-3w6pd.md)
   Decode an object as one of several expected types, failing if the archived type does not match.
-- [func decodeTopLevelObject(of: [AnyClass]?, forKey: String) throws -> Any?](nscoder/decodetoplevelobject(of:forkey:)-5lnnn.md)
+- [func decodeTopLevelObject(of: [AnyClass]?, forKey: String) throws -> Any?](./decodetoplevelobject%28of,forkey%29-5lnnn.md)
   Decode an object as one of several expected types, failing if the archived type does not match.
 
 

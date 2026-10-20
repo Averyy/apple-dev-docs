@@ -1,7 +1,8 @@
 # kAXSheetRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A sheet.
 
@@ -12,6 +13,10 @@ A sheet.
 
 ```swift
 var kAXSheetRole: String { get }
+```
+
+```c
+#define kAXSheetRole
 ```
 
 

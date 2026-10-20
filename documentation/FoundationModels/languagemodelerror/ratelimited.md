@@ -1,7 +1,8 @@
 # LanguageModelError.RateLimited
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a rate limiting event.
 
@@ -22,25 +23,26 @@ struct RateLimited
 ## Topics
 
 ### Creating an error instance
-- [init(resetDate: Date?, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/ratelimited/init(resetdate:debugdescription:metadata:).md)
+- [init(resetDate: Date?, debugDescription: String, metadata: [String : any Sendable])](./ratelimited/init%28resetdate,debugdescription,metadata%29.md)
   Creates information describing a rate-limiting event.
 ### Inspecting rate-limit errors
-- [var metadata: [String : any Sendable]](languagemodelerror/ratelimited/metadata.md)
+- [var metadata: [String : any Sendable]](./ratelimited/metadata.md)
   Additional information about the failure, keyed by name.
-- [var resetDate: Date?](languagemodelerror/ratelimited/resetdate.md)
+- [var resetDate: Date?](./ratelimited/resetdate.md)
   The date after which retrying is likely to succeed, if known.
-- [var debugDescription: String](languagemodelerror/ratelimited/debugdescription.md)
+- [var debugDescription: String](./ratelimited/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case rateLimited(LanguageModelError.RateLimited)](languagemodelerror/ratelimited(_:).md)
+### Session rate limited error
+- [case rateLimited(LanguageModelError.RateLimited)](./ratelimited%28_%29.md)
   The session has been rate limited.
 
 

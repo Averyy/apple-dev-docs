@@ -1,40 +1,42 @@
 # BluetoothLEScan
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef enum BluetoothLEScan BluetoothLEScan;
 ```
 
 ## Topics
 
 ### Constants
-- [BluetoothLEScanDisable](bluetoothlescan/bluetoothlescandisable.md)
-- [BluetoothLEScanEnable](bluetoothlescan/bluetoothlescanenable.md)
+- [BluetoothLEScanDisable](./bluetoothlescan/bluetoothlescandisable.md)
+- [BluetoothLEScanEnable](./bluetoothlescan/bluetoothlescanenable.md)
 
 ## See Also
 
-- [BluetoothLEAddressType](bluetoothleaddresstype.md)
-- [BluetoothLEAdvertisingType](bluetoothleadvertisingtype.md)
-- [BluetoothLEConnectionInterval](bluetoothleconnectioninterval.md)
-- [BluetoothLEFeatureBits](bluetoothlefeaturebits.md)
-- [BluetoothLEScanDuplicateFilter](bluetoothlescanduplicatefilter.md)
-- [BluetoothLEScanFilter](bluetoothlescanfilter.md)
-- [BluetoothLEScanType](bluetoothlescantype.md)
-- [BluetoothLESecurityManagerCommandCode](bluetoothlesecuritymanagercommandcode.md)
-- [BluetoothLESecurityManagerIOCapability](bluetoothlesecuritymanageriocapability.md)
-- [BluetoothLESecurityManagerKeyDistributionFormat](bluetoothlesecuritymanagerkeydistributionformat.md)
-- [BluetoothLESecurityManagerKeypressNotificationType](bluetoothlesecuritymanagerkeypressnotificationtype.md)
-- [BluetoothLESecurityManagerOOBData](bluetoothlesecuritymanageroobdata.md)
-- [BluetoothLESecurityManagerPairingFailedReasonCode](bluetoothlesecuritymanagerpairingfailedreasoncode.md)
-- [BluetoothLESecurityManagerUserInputCapability](bluetoothlesecuritymanageruserinputcapability.md)
-- [BluetoothLESecurityManagerUserOutputCapability](bluetoothlesecuritymanageruseroutputcapability.md)
+### Bluetooth LE
+- [BluetoothLEAddressType](./bluetoothleaddresstype.md)
+- [BluetoothLEAdvertisingType](./bluetoothleadvertisingtype.md)
+- [BluetoothLEConnectionInterval](./bluetoothleconnectioninterval.md)
+- [BluetoothLEFeatureBits](./bluetoothlefeaturebits.md)
+- [BluetoothLEScanDuplicateFilter](./bluetoothlescanduplicatefilter.md)
+- [BluetoothLEScanFilter](./bluetoothlescanfilter.md)
+- [BluetoothLEScanType](./bluetoothlescantype.md)
+- [BluetoothLESecurityManagerCommandCode](./bluetoothlesecuritymanagercommandcode.md)
+- [BluetoothLESecurityManagerIOCapability](./bluetoothlesecuritymanageriocapability.md)
+- [BluetoothLESecurityManagerKeyDistributionFormat](./bluetoothlesecuritymanagerkeydistributionformat.md)
+- [BluetoothLESecurityManagerKeypressNotificationType](./bluetoothlesecuritymanagerkeypressnotificationtype.md)
+- [BluetoothLESecurityManagerOOBData](./bluetoothlesecuritymanageroobdata.md)
+- [BluetoothLESecurityManagerPairingFailedReasonCode](./bluetoothlesecuritymanagerpairingfailedreasoncode.md)
+- [BluetoothLESecurityManagerUserInputCapability](./bluetoothlesecuritymanageruserinputcapability.md)
+- [BluetoothLESecurityManagerUserOutputCapability](./bluetoothlesecuritymanageruseroutputcapability.md)
 
 
 ---

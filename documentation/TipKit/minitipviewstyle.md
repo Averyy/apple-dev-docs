@@ -1,7 +1,8 @@
 # MiniTipViewStyle
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default style for a TipView.
 
@@ -24,16 +25,17 @@ The default style for a TipView.
 ## Relationships
 
 ### Conforms To
-- [TipViewStyle](tipviewstyle.md)
+- [TipViewStyle](./tipviewstyle.md)
 
 ## See Also
 
+### View Style
 - [func tipViewStyle(some TipViewStyle) -> some View
-](../swiftui/view/tipviewstyle(_:).md)
+](../SwiftUI/view/tipviewstyle%28_%29.md)
   Sets the given style for TipView within the view hierarchy.
-- [protocol TipViewStyle](tipviewstyle.md)
+- [protocol TipViewStyle](./tipviewstyle.md)
   A type that applies custom appearance to all tips within a view hierarchy.
-- [struct TipViewStyleConfiguration](tipviewstyleconfiguration.md)
+- [struct TipViewStyleConfiguration](./tipviewstyleconfiguration.md)
   The container type that holds a tip’s configuration.
 
 

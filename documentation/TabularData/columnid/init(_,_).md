@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a column identifier.
 

@@ -1,7 +1,8 @@
 # NEDNSProxyManagerError.configurationDisabled
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disabled DNS proxy configuration.
 
@@ -18,13 +19,18 @@ Disabled DNS proxy configuration.
 case configurationDisabled
 ```
 
+```c
+NEDNSProxyManagerErrorConfigurationDisabled
+```
+
 ## See Also
 
-- [NEDNSProxyManagerError.configurationInvalid](nednsproxymanagererror/configurationinvalid.md)
+### Enumeration Cases
+- [NEDNSProxyManagerError.configurationInvalid](./configurationinvalid.md)
   Invalid DNS proxy configuration that cannot be stored.
-- [NEDNSProxyManagerError.configurationStale](nednsproxymanagererror/configurationstale.md)
+- [NEDNSProxyManagerError.configurationStale](./configurationstale.md)
   Outdated DNS proxy configuration that needs to be loaded.
-- [NEDNSProxyManagerError.configurationCannotBeRemoved](nednsproxymanagererror/configurationcannotberemoved.md)
+- [NEDNSProxyManagerError.configurationCannotBeRemoved](./configurationcannotberemoved.md)
   Unremovable DNS proxy configuration.
 
 

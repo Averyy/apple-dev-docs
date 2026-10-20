@@ -1,7 +1,8 @@
 # blendLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which the framework composites the animation.
 
@@ -11,7 +12,7 @@ The order in which the framework composites the animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,11 +26,12 @@ The framework applies multiple animations on the same target in ascending order 
 
 ## See Also
 
-- [var source: (any AnimationDefinition)?](animationview/source.md)
+### Configuring the animation view
+- [var source: (any AnimationDefinition)?](./source.md)
   The original animation that this structure modifies.
-- [var name: String](animationview/name.md)
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](animationview/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the animated property.
 
 

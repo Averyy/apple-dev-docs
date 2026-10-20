@@ -1,7 +1,8 @@
 # fractionalWidth(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a dimension that is computed as a fraction of the width of the containing group.
 
@@ -14,13 +15,18 @@ Creates a dimension that is computed as a fraction of the width of the containin
 class func fractionalWidth(_ fractionalWidth: CGFloat) -> Self
 ```
 
+```objc
++ (instancetype) fractionalWidthDimension:(CGFloat) fractionalWidth;
+```
+
 ## See Also
 
-- [class func absolute(CGFloat) -> Self](nscollectionlayoutdimension/absolute(_:).md)
+### Creating a dimension
+- [class func absolute(CGFloat) -> Self](./absolute%28_%29.md)
   Creates a dimension with an absolute point value.
-- [class func estimated(CGFloat) -> Self](nscollectionlayoutdimension/estimated(_:).md)
+- [class func estimated(CGFloat) -> Self](./estimated%28_%29.md)
   Creates a dimension with an estimated point value.
-- [class func fractionalHeight(CGFloat) -> Self](nscollectionlayoutdimension/fractionalheight(_:).md)
+- [class func fractionalHeight(CGFloat) -> Self](./fractionalheight%28_%29.md)
   Creates a dimension that is computed as a fraction of the height of the containing group.
 
 

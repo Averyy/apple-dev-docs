@@ -1,7 +1,8 @@
 # vfs_authcache_ttl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine the time-to-live of cached authorized credentials for files in this filesystem.
 
@@ -10,11 +11,11 @@ Determine the time-to-live of cached authorized credentials for files in this fi
 
 ## Declaration
 
-```swift
+```c
 int vfs_authcache_ttl(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Cache lifetime in seconds. CACHED_RIGHT_INFINITE_TTL indicates that credentials never expire.
 

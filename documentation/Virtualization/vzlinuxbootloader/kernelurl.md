@@ -1,7 +1,8 @@
 # kernelURL
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the Linux kernel file.
 
@@ -12,6 +13,10 @@ The URL of the Linux kernel file.
 
 ```swift
 var kernelURL: URL { get set }
+```
+
+```objc
+@property (copy) NSURL * kernelURL;
 ```
 
 

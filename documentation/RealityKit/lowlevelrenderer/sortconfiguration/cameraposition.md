@@ -1,7 +1,8 @@
 # cameraPosition
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera position used to compute per-instance back-to-front sort distances for transparent draw calls.
 
@@ -19,7 +20,8 @@ var cameraPosition: SIMD3<Float> { get set }
 
 ## See Also
 
-- [init(cameraPosition: SIMD3<Float>)](lowlevelrenderer/sortconfiguration/init(cameraposition:).md)
+### Creating a sort configuration
+- [init(cameraPosition: SIMD3<Float>)](./init%28cameraposition%29.md)
   Creates a sort configuration with the given camera position.
 
 

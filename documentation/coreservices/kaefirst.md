@@ -1,7 +1,8 @@
 # kAEFirst
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The first element in the specified container.
 

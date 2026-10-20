@@ -1,7 +1,8 @@
 # replaceVertices(at:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the entire contents of a vertex buffer synchronously on the CPU.
 
@@ -21,7 +22,7 @@ final func replaceVertices<R, E>(at index: Int, _ body: @_lifetime(0: copy 0) (i
 
 You pass a closure that receives a mutable span representing the contents of the vertex buffer. Upon entry the buffer’s contents are undefined; the closure is responsible for populating it with valid data. This span is valid only for the duration of the closure.
 
-> **Note**: Any error thrown by `body`.
+> **Throws**: Any error thrown by `body`.
 
 ## Parameters
 
@@ -30,13 +31,14 @@ You pass a closure that receives a mutable span representing the contents of the
 
 ## See Also
 
-- [func readVertices<R, E>(at: Int, (RawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/readvertices(at:_:).md)
+### Accessing vertex data
+- [func readVertices<R, E>(at: Int, (RawSpan) throws(E) -> R) throws(E) -> R](./readvertices%28at,_%29.md)
   Reads the current contents of a vertex buffer synchronously on the CPU.
-- [func updateVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updatevertices(at:_:).md)
+- [func updateVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](./updatevertices%28at,_%29.md)
   Updates a vertex buffer in place synchronously on the CPU.
-- [func readVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readvertices(at:commandbuffer:).md)
+- [func readVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./readvertices%28at,commandbuffer%29.md)
   Returns a Metal buffer containing the current contents of the vertex buffer for GPU read operations.
-- [func replaceVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/replacevertices(at:commandbuffer:).md)
+- [func replaceVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./replacevertices%28at,commandbuffer%29.md)
   Returns a Metal buffer you populate on the GPU with the new contents of the vertex buffer.
 
 

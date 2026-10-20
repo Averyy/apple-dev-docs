@@ -1,7 +1,8 @@
 # ATSFontFamilyIterator
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias ATSFontFamilyIterator = OpaquePointer
+```
+
+```c
+typedef struct ATSFontFamilyIterator_ *ATSFontFamilyIterator;
 ```
 
 

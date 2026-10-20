@@ -1,7 +1,8 @@
 # PacerWorkout
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A workout in which a person covers a specific distance in a given time.
 
@@ -21,33 +22,34 @@ struct PacerWorkout
 ## Topics
 
 ### Creating a new pacer workout
-- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, distance: Measurement<UnitLength>, time: Measurement<UnitDuration>)](pacerworkout/init(activity:location:distance:time:).md)
+- [init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType, distance: Measurement<UnitLength>, time: Measurement<UnitDuration>)](./pacerworkout/init%28activity,location,distance,time%29.md)
   Creates a new pacer workout for the specified distance and time.
-- [static func supportsActivity(HKWorkoutActivityType) -> Bool](pacerworkout/supportsactivity(_:).md)
+- [static func supportsActivity(HKWorkoutActivityType) -> Bool](./pacerworkout/supportsactivity%28_%29.md)
   Returns a Boolean value that indicates whether the system supports pacer workouts for the given workout activity type.
 ### Accessing workout data
-- [var activity: HKWorkoutActivityType](pacerworkout/activity.md)
+- [var activity: HKWorkoutActivityType](./pacerworkout/activity.md)
   The workout activity type.
-- [var location: HKWorkoutSessionLocationType](pacerworkout/location.md)
+- [var location: HKWorkoutSessionLocationType](./pacerworkout/location.md)
   The workout location.
-- [var distance: Measurement<UnitLength>](pacerworkout/distance.md)
+- [var distance: Measurement<UnitLength>](./pacerworkout/distance.md)
   A length measurement representing the distance goal.
-- [var time: Measurement<UnitDuration>](pacerworkout/time.md)
+- [var time: Measurement<UnitDuration>](./pacerworkout/time.md)
   A time measurement representing the time goal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SingleGoalWorkout](singlegoalworkout.md)
+### Common workouts
+- [struct SingleGoalWorkout](./singlegoalworkout.md)
   A workout with a single goal.
-- [struct SwimBikeRunWorkout](swimbikerunworkout.md)
+- [struct SwimBikeRunWorkout](./swimbikerunworkout.md)
   A workout for multisport activities that include running, biking, and swimming.
 
 

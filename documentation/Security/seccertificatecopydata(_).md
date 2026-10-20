@@ -1,7 +1,8 @@
 # SecCertificateCopyData(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a DER representation of a certificate given a certificate object.
 
@@ -20,13 +21,17 @@ Returns a DER representation of a certificate given a certificate object.
 func SecCertificateCopyData(_ certificate: SecCertificate) -> CFData
 ```
 
+```c
+CFDataRefSecCertificateCopyData(SecCertificateRef certificate);
+```
+
 ## Mentions
 
-- [Storing a DER-Encoded X.509 Certificate](storing-a-der-encoded-x-509-certificate.md)
+- [Storing a DER-Encoded X.509 Certificate](./storing-a-der-encoded-x-509-certificate.md)
 
 #### Return Value
 
-The DER representation of the certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it. Returns `nil` if the data passed in the `certificate` parameter is not a valid certificate object.
+The DER representation of the certificate. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it. Returns `nil` if the data passed in the `certificate` parameter is not a valid certificate object.
 
 ## Parameters
 

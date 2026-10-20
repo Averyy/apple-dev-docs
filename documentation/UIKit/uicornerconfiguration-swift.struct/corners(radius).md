@@ -1,7 +1,8 @@
 # corners(radius:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that applies the given radius independently to all corners.
 
@@ -24,11 +25,12 @@ Use a container concentric radius to allow each individual corner to resolve to 
 
 ## Parameters
 
-- `radius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents a radius to apply to each corner.
+- `radius`: A [`UICornerRadius`](../uicornerradius-swift.struct.md) that represents a radius to apply to each corner.
 
 ## See Also
 
-- [static func corners(topLeftRadius: UICornerRadius?, topRightRadius: UICornerRadius?, bottomLeftRadius: UICornerRadius?, bottomRightRadius: UICornerRadius?) -> UICornerConfiguration](uicornerconfiguration-swift.struct/corners(topleftradius:toprightradius:bottomleftradius:bottomrightradius:).md)
+### Configuring independent corners
+- [static func corners(topLeftRadius: UICornerRadius?, topRightRadius: UICornerRadius?, bottomLeftRadius: UICornerRadius?, bottomRightRadius: UICornerRadius?) -> UICornerConfiguration](./corners%28topleftradius,toprightradius,bottomleftradius,bottomrightradius%29.md)
   A configuration with independent radii for each corner.
 
 

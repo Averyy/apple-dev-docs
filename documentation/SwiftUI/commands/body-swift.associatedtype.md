@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of commands that represents the body of this command hierarchy.
@@ -21,11 +22,12 @@ associatedtype Body : Commands
 
 #### Discussion
 
-When you create custom commands, Swift infers this type from your implementation of the required [`body`](commands/body-swift.property.md) property.
+When you create custom commands, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 
 ## See Also
 
-- [var body: Self.Body](commands/body-swift.property.md)
+### Implementing commands
+- [var body: Self.Body](./body-swift.property.md)
   The contents of the command hierarchy.
 
 

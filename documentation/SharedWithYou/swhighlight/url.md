@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The surfaced content URL for the highlight.
 
@@ -19,9 +20,14 @@ The surfaced content URL for the highlight.
 var url: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var identifier: any NSCopying & NSSecureCoding](swhighlight/identifier.md)
+### Viewing highlight attributes
+- [var identifier: any NSCopying & NSSecureCoding](./identifier.md)
   The unique identifier for the highlight.
 
 

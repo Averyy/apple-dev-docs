@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding region of the barcode.
 

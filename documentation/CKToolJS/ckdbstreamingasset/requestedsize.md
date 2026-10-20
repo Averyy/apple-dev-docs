@@ -1,7 +1,8 @@
 # requestedSize
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested size of streaming asset.
 
@@ -10,7 +11,7 @@ The requested size of streaming asset.
 
 ## Declaration
 
-```swift
+```
 attribute Int64? requestedSize;
 ```
 

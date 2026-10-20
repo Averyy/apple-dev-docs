@@ -1,7 +1,8 @@
 # CoordinateOrigin.lowerLeft
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The origin at the lower-left corner of the image.
 
@@ -22,7 +23,8 @@ case lowerLeft
 
 ## See Also
 
-- [CoordinateOrigin.upperLeft](coordinateorigin/upperleft.md)
+### Getting the origins
+- [CoordinateOrigin.upperLeft](./upperleft.md)
   The origin at the upper-left corner of the image.
 
 

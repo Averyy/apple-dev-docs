@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration of this assessment which contains options for display of marks and their point values.
 
@@ -9,7 +10,7 @@ The configuration of this assessment which contains options for display of marks
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var configuration: some AssignableDocumentConfiguration { get set }
 
 ## See Also
 
-- [AssignableDocument.Configuration](assignabledocument/configuration-swift.typealias.md)
+### Getting the configuration
+- [AssignableDocument.Configuration](./configuration-swift.typealias.md)
   The configuration for an assessment which contains options for display of marks and their point values.
-- [AssignableDocument.CorrectMarkType](assignabledocument/correctmarktype.md)
+- [AssignableDocument.CorrectMarkType](./correctmarktype.md)
   The glyph to use that represents a correct mark.
 
 

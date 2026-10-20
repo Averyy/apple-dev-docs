@@ -1,18 +1,19 @@
 # controlNumber
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The control number to affect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The control number to affect.
 var controlNumber: UInt16
 ```
 
+```c
+UInt16 controlNumber;
+```
+
 ## See Also
 
-- [var controlType: MIDITransformControlType](midicontroltransform/controltype.md)
+### Configuring a Control Transform
+- [var controlType: MIDITransformControlType](./controltype.md)
   The type of control specified by the control number.
-- [var remappedControlType: MIDITransformControlType](midicontroltransform/remappedcontroltype.md)
+- [var remappedControlType: MIDITransformControlType](./remappedcontroltype.md)
   The remapped control type.
-- [var transform: MIDITransformType](midicontroltransform/transform.md)
+- [var transform: MIDITransformType](./transform.md)
   The type of transformation to apply to the event values.
-- [var param: Int16](midicontroltransform/param.md)
+- [var param: Int16](./param.md)
   An argument to the transformation method.
 
 

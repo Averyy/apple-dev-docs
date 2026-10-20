@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt32 fAlignMask;
 ```
 
@@ -15,18 +15,19 @@ Alignment restriction mask.
 
 ## See Also
 
-- [fMemory](iodmacommand/private_accessors/fmemory.md)
-- [reserved](iodmacommand/private_accessors/reserved.md)
-- [fRefCon](iodmacommand/private_accessors/frefcon.md)
-- [fOutSeg](iodmacommand/private_accessors/foutseg.md)
-- [fNumSegments](iodmacommand/private_accessors/fnumsegments.md)
-- [fNumAddressBits](iodmacommand/private_accessors/fnumaddressbits.md)
-- [fMaxTransferSize](iodmacommand/private_accessors/fmaxtransfersize.md)
-- [fMaxSegmentSize](iodmacommand/private_accessors/fmaxsegmentsize.md)
-- [fMappingOptions](iodmacommand/private_accessors/fmappingoptions.md)
-- [fBypassMask](iodmacommand/private_accessors/fbypassmask.md)
-- [fActive](iodmacommand/private_accessors/factive.md)
-- [fMapper](iodmacommand/private_accessors/fmapper.md)
+### Fields
+- [fMemory](./fmemory.md)
+- [reserved](./reserved.md)
+- [fRefCon](./frefcon.md)
+- [fOutSeg](./foutseg.md)
+- [fNumSegments](./fnumsegments.md)
+- [fNumAddressBits](./fnumaddressbits.md)
+- [fMaxTransferSize](./fmaxtransfersize.md)
+- [fMaxSegmentSize](./fmaxsegmentsize.md)
+- [fMappingOptions](./fmappingoptions.md)
+- [fBypassMask](./fbypassmask.md)
+- [fActive](./factive.md)
+- [fMapper](./fmapper.md)
 
 
 ---

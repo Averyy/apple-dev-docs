@@ -1,7 +1,8 @@
 # Product.SubscriptionPeriod.Unit.FormatStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,20 +22,21 @@ struct FormatStyle
 ## Topics
 
 ### Formatting subscription period units
-- [func format(Product.SubscriptionPeriod.Unit) -> String](product/subscriptionperiod/unit-swift.enum/formatstyle/format(_:).md)
+- [func format(Product.SubscriptionPeriod.Unit) -> String](./formatstyle/format%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](../foundation/formatstyle.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [FormatStyle](../../../../Foundation/formatstyle.md)
+- [Hashable](../../../../Swift/hashable.md)
 
 ## See Also
 
-- [func formatted<S>(S) -> S.FormatOutput](product/subscriptionperiod/unit-swift.enum/formatted(_:).md)
+### Getting the formatted description
+- [func formatted<S>(S) -> S.FormatOutput](./formatted%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setTileGroup(_:andTileDefinition:forColumn:row:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the tile group and tile definition at the specified tile index.
 
@@ -20,11 +21,15 @@ Set the tile group and tile definition at the specified tile index.
 func setTileGroup(_ tileGroup: SKTileGroup, andTileDefinition tileDefinition: SKTileDefinition, forColumn column: Int, row: Int)
 ```
 
+```objc
+- (void) setTileGroup:(SKTileGroup *) tileGroup andTileDefinition:(SKTileDefinition *) tileDefinition forColumn:(NSUInteger) column row:(NSUInteger) row;
+```
+
 #### Discussion
 
 This function is for use when you’re creating a tile map programmatically, versus creating it ahead of time with the scene editor.
 
-When [`enableAutomapping`](sktilemapnode/enableautomapping.md) is set to `true`, the surrounding tiles of a painted area will be controlled by the tile group, too. When automapping is disabled, just the tile definition will be placed without modify any of the neighboring tiles.
+When [`enableAutomapping`](./enableautomapping.md) is set to `true`, the surrounding tiles of a painted area will be controlled by the tile group, too. When automapping is disabled, just the tile definition will be placed without modify any of the neighboring tiles.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ When [`enableAutomapping`](sktilemapnode/enableautomapping.md) is set to `true`,
 
 ## See Also
 
-- [var enableAutomapping: Bool](sktilemapnode/enableautomapping.md)
+### Defining a Tile Map’s Contents
+- [var enableAutomapping: Bool](./enableautomapping.md)
   When creating a tile map node programmatically, specifies whether the tile map uses automapping behavior like the scene editor.
-- [func fill(with: SKTileGroup?)](sktilemapnode/fill(with:).md)
+- [func fill(with: SKTileGroup?)](./fill%28with%29.md)
   When creating a tile map node programmatically, this function performs a fill operation with the specified tile group.
-- [func setTileGroup(SKTileGroup?, forColumn: Int, row: Int)](sktilemapnode/settilegroup(_:forcolumn:row:).md)
+- [func setTileGroup(SKTileGroup?, forColumn: Int, row: Int)](./settilegroup%28_,forcolumn,row%29.md)
   Set the tile group at the specified tile index.
 
 

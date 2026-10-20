@@ -1,7 +1,8 @@
 # multiplayerDelegate
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 2.0+
@@ -14,9 +15,10 @@ weak final var multiplayerDelegate: (any TabletopGame.MultiplayerDelegate)? { ge
 
 ## See Also
 
-- [func attachNetworkCoordinator(some TabletopNetworkSessionCoordinator)](tabletopgame/attachnetworkcoordinator(_:).md)
-- [func detachNetworkCoordinator()](tabletopgame/detachnetworkcoordinator.md)
-- [TabletopGame.MultiplayerDelegate](tabletopgame/multiplayerdelegate-swift.protocol.md)
+### Supporting multiple players
+- [func attachNetworkCoordinator(some TabletopNetworkSessionCoordinator)](./attachnetworkcoordinator%28_%29.md)
+- [func detachNetworkCoordinator()](./detachnetworkcoordinator%28%29.md)
+- [TabletopGame.MultiplayerDelegate](./multiplayerdelegate-swift.protocol.md)
   An object that handles players joining multiplayer games.
 
 

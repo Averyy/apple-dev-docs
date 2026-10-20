@@ -1,7 +1,8 @@
 # PKConvertedBezierPointReference
 
 **Framework**: PencilKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information about a B-spline control point converted from a Bézier path.
 
@@ -18,38 +19,42 @@ An object that provides information about a B-spline control point converted fro
 class PKConvertedBezierPointReference
 ```
 
+```objc
+@interface PKConvertedBezierPoint : NSObject
+```
+
 #### Overview
 
 `PKConvertedBezierPointReference` is passed to the `pointProvider` block of `PKStrokePathReference/initWithBezierPath:creationDate:pointProvider:` so you can initialize each `PKStrokePoint` of the resulting path with appropriate values. A single instance is reused for each point in the conversion.
 
-In Swift, use the equivalent value type [`PKStrokePath.ConvertedBezierPoint`](pkstrokepath-swift.struct/convertedbezierpoint.md) instead.
+In Swift, use the equivalent value type [`PKStrokePath.ConvertedBezierPoint`](./pkstrokepath-swift.struct/convertedbezierpoint.md) instead.
 
 ## Topics
 
 ### Getting the point data
-- [var index: Int](pkconvertedbezierpointreference/index.md)
+- [var index: Int](./pkconvertedbezierpointreference/index.md)
   The index of the point along the path.
-- [var pointCount: Int](pkconvertedbezierpointreference/pointcount.md)
+- [var pointCount: Int](./pkconvertedbezierpointreference/pointcount.md)
   The total number of B-Spline control points in the path.
-- [var location: CGPoint](pkconvertedbezierpointreference/location.md)
+- [var location: CGPoint](./pkconvertedbezierpointreference/location.md)
   The location of the cubic uniform B-Spline control point.
-- [var bezierSegmentIndex: Int](pkconvertedbezierpointreference/beziersegmentindex.md)
+- [var bezierSegmentIndex: Int](./pkconvertedbezierpointreference/beziersegmentindex.md)
   The index of the Bézier segment the point originates from, not including `move to` elements.
 ### Using Swift types
-- [PKStrokePath.ConvertedBezierPoint](pkstrokepath-swift.struct/convertedbezierpoint.md)
+- [PKStrokePath.ConvertedBezierPoint](./pkstrokepath-swift.struct/convertedbezierpoint.md)
   Information about a B-spline control point converted from a Bézier path.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

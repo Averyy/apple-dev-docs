@@ -1,7 +1,8 @@
 # interItemSpacing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space between the items in the group.
 
@@ -17,6 +18,10 @@ The amount of space between the items in the group.
 ```swift
 @NSCopying
 var interItemSpacing: NSCollectionLayoutSpacing? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSCollectionLayoutSpacing * interItemSpacing;
 ```
 
 

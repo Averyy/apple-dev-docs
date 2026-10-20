@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Always set this field to -2.
 
@@ -12,6 +13,10 @@ Always set this field to -2.
 
 ```swift
 var version: Int16
+```
+
+```c
+short version;
 ```
 
 

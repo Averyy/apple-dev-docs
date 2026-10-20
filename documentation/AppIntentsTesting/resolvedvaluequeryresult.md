@@ -1,7 +1,8 @@
 # ResolvedValueQueryResult
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The result of an intent value query.
 
@@ -22,7 +23,7 @@ struct ResolvedValueQueryResult
 
 #### Overview
 
-Use the resolved value query result to verify that your [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) returns the expected results as shown in the following example:
+Use the resolved value query result to verify that your [`IntentValueQuery`](../AppIntents/intentvaluequery.md) returns the expected results as shown in the following example:
 
 ```swift
 let result = try await searchQuery.values(for: "Arizona")
@@ -38,18 +39,19 @@ let entity: AnyAppEntity =
 ## Topics
 
 ### Accessing query results
-- [let items: DynamicPropertyPathCollection](resolvedvaluequeryresult/items.md)
+- [let items: DynamicPropertyPathCollection](./resolvedvaluequeryresult/items.md)
   The results that the query returns.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ResolvedIntentResult](resolvedintentresult.md)
+### Intent and query result verification
+- [struct ResolvedIntentResult](./resolvedintentresult.md)
   A type-safe result from performing an app intent.
 
 

@@ -1,7 +1,8 @@
 # matchedPayload
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If not nil, the payload (from possibly multiple payloads represented by the provided setupPayload) that represents the commissionee we successfully established PASE with.  This will only be non-nil after successful PASE establishment.
 
@@ -18,6 +19,10 @@ If not nil, the payload (from possibly multiple payloads represented by the prov
 
 ```swift
 var matchedPayload: MTRSetupPayload? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) MTRSetupPayload * matchedPayload;
 ```
 
 

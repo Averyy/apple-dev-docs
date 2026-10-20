@@ -1,7 +1,8 @@
 # queryRecords
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collection of records matching the provided query.
 
@@ -10,7 +11,7 @@ Returns a collection of records matching the provided query.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise queryRecords(
 	QueryRecordsParams params
 );
@@ -120,23 +121,24 @@ try {
 
 ## See Also
 
-- [acceptRecord](promisesapi/acceptrecord.md)
+### Record Management
+- [acceptRecord](./acceptrecord.md)
   Accepts a share on behalf of the current user.
-- [createRecord](promisesapi/createrecord.md)
+- [createRecord](./createrecord.md)
   Creates a new record.
-- [deleteRecord](promisesapi/deleterecord.md)
+- [deleteRecord](./deleterecord.md)
   Deletes a single record.
-- [deleteRecordsByQuery](promisesapi/deleterecordsbyquery.md)
+- [deleteRecordsByQuery](./deleterecordsbyquery.md)
   Deletes records matching the provided query.
-- [getRecord](promisesapi/getrecord.md)
+- [getRecord](./getrecord.md)
   Returns a record’s details.
-- [lookupRecords](promisesapi/lookuprecords.md)
+- [lookupRecords](./lookuprecords.md)
   Fetches multiple records by record name.
-- [queryRecordChanges](promisesapi/queryrecordchanges.md)
+- [queryRecordChanges](./queryrecordchanges.md)
   Returns records that changed since a specified sync token or since a zone was created.
-- [resolveRecord](promisesapi/resolverecord.md)
+- [resolveRecord](./resolverecord.md)
   Fetches information about records given their shortGuid properties.
-- [updateRecord](promisesapi/updaterecord.md)
+- [updateRecord](./updaterecord.md)
   Updates an existing record.
 
 

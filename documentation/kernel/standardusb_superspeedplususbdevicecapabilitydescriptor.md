@@ -1,14 +1,15 @@
 # StandardUSB::SuperSpeedPlusUSBDeviceCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::SuperSpeedPlusUSBDeviceCapabilityDescriptor {
     ...
 } StandardUSB::SuperSpeedPlusUSBDeviceCapabilityDescriptor;
@@ -17,11 +18,11 @@ typedef struct StandardUSB::SuperSpeedPlusUSBDeviceCapabilityDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bReserved](standardusb_superspeedplususbdevicecapabilitydescriptor/3794140-breserved.md)
-- [bmAttributes](standardusb_superspeedplususbdevicecapabilitydescriptor/3794141-bmattributes.md)
-- [bmSublinkSpeedAttr](standardusb_superspeedplususbdevicecapabilitydescriptor/3794142-bmsublinkspeedattr.md)
-- [wFunctionalitySupport](standardusb_superspeedplususbdevicecapabilitydescriptor/3794143-wfunctionalitysupport.md)
-- [wReserved](standardusb_superspeedplususbdevicecapabilitydescriptor/3794144-wreserved.md)
+- [bReserved](./standardusb_superspeedplususbdevicecapabilitydescriptor/api-3794140-breserved.md)
+- [bmAttributes](./standardusb_superspeedplususbdevicecapabilitydescriptor/api-3794141-bmattributes.md)
+- [bmSublinkSpeedAttr](./standardusb_superspeedplususbdevicecapabilitydescriptor/api-3794142-bmsublinkspeedattr.md)
+- [wFunctionalitySupport](./standardusb_superspeedplususbdevicecapabilitydescriptor/api-3794143-wfunctionalitysupport.md)
+- [wReserved](./standardusb_superspeedplususbdevicecapabilitydescriptor/api-3794144-wreserved.md)
 
 
 ---

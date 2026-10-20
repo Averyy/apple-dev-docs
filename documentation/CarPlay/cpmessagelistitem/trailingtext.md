@@ -1,7 +1,8 @@
 # trailingText
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list item’s supplementary text.
 
@@ -16,15 +17,20 @@ The list item’s supplementary text.
 var trailingText: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * trailingText;
+```
+
 #### Discussion
 
 The list item displays any supplementaty text in its trailing region.
 
 ## See Also
 
-- [var text: String?](cpmessagelistitem/text.md)
+### Managing Content
+- [var text: String?](./text.md)
   The list item’s primary text.
-- [var detailText: String?](cpmessagelistitem/detailtext.md)
+- [var detailText: String?](./detailtext.md)
   The list item’s secondary text.
 
 

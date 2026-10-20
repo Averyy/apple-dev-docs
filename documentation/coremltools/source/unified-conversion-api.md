@@ -6,22 +6,7 @@ url: https://apple.github.io/coremltools/docs-guides/source/unified-conversion-a
 
 # Core ML Tools API Overview
 
-**
-
-- [.md](../_sources/source/unified-conversion-api.md)
-- **
-
-.pdf
-
-**
-
-# Core ML Tools API Overview
-
- Table of contents 
-
-# Core ML Tools API Overview
-
-Core ML Tools is the [coremltools](https://apple.github.io/coremltools/index.md) Python package for macOS (10.13+) and Linux. It includes the [Unified Conversion API](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry) for converting deep learning models and neural networks to [Core ML](https://developer.apple.com/documentation/coreml).
+Core ML Tools is the [coremltools](https://apple.github.io/coremltools/index.html) Python package for macOS (10.13+) and Linux. It includes the [Unified Conversion API](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry) for converting deep learning models and neural networks to [Core ML](https://developer.apple.com/documentation/coreml).
 
 For example, you can use the Unified Conversion API to convert TensorFlow and PyTorch source model frameworks to Core ML. For the conversion parameters, see the [convert()](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#coremltools.converters._converters_entry.convert) method.
 

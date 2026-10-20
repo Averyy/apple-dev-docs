@@ -1,23 +1,28 @@
 # x_padding
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The X padding.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 14.0 (renamed: BNNSLayerParametersConvolution)
+- iPadOS 10.0+ - Deprecated in 14.0 (renamed: BNNSLayerParametersConvolution)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: BNNSLayerParametersConvolution)
+- macOS 10.12+ - Deprecated in 11.0 (renamed: BNNSLayerParametersConvolution)
+- tvOS 10.0+ - Deprecated in 14.0 (renamed: BNNSLayerParametersConvolution)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: BNNSLayerParametersConvolution)
+- watchOS 3.0+ - Deprecated in 7.0 (renamed: BNNSLayerParametersConvolution)
 
 ## Declaration
 
 ```swift
 var x_padding: Int
+```
+
+```c
+size_t x_padding;
 ```
 
 #### Discussion
@@ -26,25 +31,26 @@ Virtual 0 values added to the left and right of each channel of the input stack.
 
 ## See Also
 
-- [var activation: BNNSActivation](bnnsconvolutionlayerparameters/activation.md)
+### Instance Properties
+- [var activation: BNNSActivation](./activation.md)
   The layer activation function.
-- [var bias: BNNSLayerData](bnnsconvolutionlayerparameters/bias.md)
+- [var bias: BNNSLayerData](./bias.md)
   Layer bias, one for each output channel.
-- [var in_channels: Int](bnnsconvolutionlayerparameters/in_channels.md)
+- [var in_channels: Int](./in_channels.md)
   The number of input channels.
-- [var k_height: Int](bnnsconvolutionlayerparameters/k_height.md)
+- [var k_height: Int](./k_height.md)
   The height of the convolution kernel.
-- [var k_width: Int](bnnsconvolutionlayerparameters/k_width.md)
+- [var k_width: Int](./k_width.md)
   The width of the convolution kernel.
-- [var out_channels: Int](bnnsconvolutionlayerparameters/out_channels.md)
+- [var out_channels: Int](./out_channels.md)
   The number of output channels.
-- [var weights: BNNSLayerData](bnnsconvolutionlayerparameters/weights.md)
+- [var weights: BNNSLayerData](./weights.md)
   Convolution weights.
-- [var x_stride: Int](bnnsconvolutionlayerparameters/x_stride.md)
+- [var x_stride: Int](./x_stride.md)
   The X increment in the input image.
-- [var y_padding: Int](bnnsconvolutionlayerparameters/y_padding.md)
+- [var y_padding: Int](./y_padding.md)
   The Y padding.
-- [var y_stride: Int](bnnsconvolutionlayerparameters/y_stride.md)
+- [var y_stride: Int](./y_stride.md)
   The Y increment in the input image.
 
 

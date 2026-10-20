@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the library.
 
@@ -17,9 +18,10 @@ If the type is unspecified, the Swift Package Manager automatically chooses a ty
 
 ## See Also
 
-- [let targets: [String]](product/library/targets.md)
+### Describing a Library Product
+- [let targets: [String]](./targets.md)
   The names of the targets in this product.
-- [Product.Library.LibraryType](product/library/librarytype.md)
+- [Product.Library.LibraryType](./librarytype.md)
   The different types of a library product.
 
 

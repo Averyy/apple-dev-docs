@@ -1,7 +1,8 @@
 # init(for:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a browser that will browse for the service specified by a BrowserProvider, with parameters.
 

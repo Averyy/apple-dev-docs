@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.CloseCode
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of codes used upon closing a WebSocket connection.
 
@@ -23,33 +24,34 @@ enum CloseCode
 ## Topics
 
 ### Close Code Types
-- [init(rawValue: UInt16) throws](nwprotocolwebsocket/closecode/init(rawvalue:).md)
+- [init(rawValue: UInt16) throws](./closecode/init%28rawvalue%29.md)
   Initializes a close code with a raw value.
-- [case protocolCode(NWProtocolWebSocket.CloseCode.Defined)](nwprotocolwebsocket/closecode/protocolcode(_:).md)
+- [case protocolCode(NWProtocolWebSocket.CloseCode.Defined)](./closecode/protocolcode%28_%29.md)
   A well-known close code reserved by the protocol (values 1000-2999).
-- [NWProtocolWebSocket.CloseCode.Defined](nwprotocolwebsocket/closecode/defined.md)
+- [NWProtocolWebSocket.CloseCode.Defined](./closecode/defined.md)
   Well-known close code values.
-- [NWProtocolWebSocket.CloseCode.applicationCode(_:)](nwprotocolwebsocket/closecode/applicationcode(_:).md)
+- [NWProtocolWebSocket.CloseCode.applicationCode(_:)](./closecode/applicationcode%28_%29.md)
   A close code in the range reserved for applications and frameworks (3000-3999).
-- [NWProtocolWebSocket.CloseCode.privateCode(_:)](nwprotocolwebsocket/closecode/privatecode(_:).md)
+- [NWProtocolWebSocket.CloseCode.privateCode(_:)](./closecode/privatecode%28_%29.md)
   A close code in the private-use range (4000-4999).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(opcode: NWProtocolWebSocket.Opcode)](nwprotocolwebsocket/metadata/init(opcode:).md)
+### Sending Messages
+- [init(opcode: NWProtocolWebSocket.Opcode)](./metadata/init%28opcode%29.md)
   Initializes a WebSocket message with a specific type code.
-- [NWProtocolWebSocket.Opcode](nwprotocolwebsocket/opcode.md)
+- [NWProtocolWebSocket.Opcode](./opcode.md)
   Types of messages that you send and receive on a WebSocket connection.
-- [func setPongHandler(DispatchQueue, handler: (NWError?) -> Void)](nwprotocolwebsocket/metadata/setponghandler(_:handler:).md)
+- [func setPongHandler(DispatchQueue, handler: (NWError?) -> Void)](./metadata/setponghandler%28_,handler%29.md)
   Sets a handler on a Ping message to be invoked when the corresponding Pong message is received.
-- [var closeCode: NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/metadata/closecode.md)
+- [var closeCode: NWProtocolWebSocket.CloseCode](./metadata/closecode.md)
   The close code on a WebSocket message.
 
 

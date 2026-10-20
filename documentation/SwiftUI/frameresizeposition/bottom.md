@@ -1,7 +1,8 @@
 # FrameResizePosition.bottom
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bottom edge of the frame.
 

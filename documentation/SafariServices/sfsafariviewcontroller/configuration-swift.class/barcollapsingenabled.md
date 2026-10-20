@@ -1,7 +1,8 @@
 # barCollapsingEnabled
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -14,11 +15,16 @@
 var barCollapsingEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL barCollapsingEnabled;
+```
+
 ## See Also
 
-- [var entersReaderIfAvailable: Bool](sfsafariviewcontroller/configuration-swift.class/entersreaderifavailable.md)
+### Configuring a Safari View Controller
+- [var entersReaderIfAvailable: Bool](./entersreaderifavailable.md)
   A value that specifies whether Safari should enter Reader mode, if it is available.
-- [var eventAttribution: UIEventAttribution?](sfsafariviewcontroller/configuration-swift.class/eventattribution.md)
+- [var eventAttribution: UIEventAttribution?](./eventattribution.md)
   An object you use to send tap event attribution data to the browser for Private Click Measurement.
 
 

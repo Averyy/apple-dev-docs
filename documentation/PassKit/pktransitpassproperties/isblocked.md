@@ -1,7 +1,8 @@
 # isBlocked
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the pass issuer disabled the pass.
 
@@ -10,8 +11,10 @@ A Boolean value that indicates the pass issuer disabled the pass.
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
 - macOS 11.3+
-- visionOS ?+
+- visionOS
 - watchOS 7.5+
+
+> **Deprecated**: Use `PKStoredValuePassProperties` property [`blocked`](../pkstoredvaluepassproperties/blocked.md) instead.
 
 ## Declaration
 
@@ -25,11 +28,12 @@ A blocked pass isn’t accepted at a transit terminal.
 
 ## See Also
 
-- [var expirationDate: Date?](pktransitpassproperties/expirationdate.md)
+### Getting pass status
+- [var expirationDate: Date?](./expirationdate.md)
   The date that the transit card expires.
-- [var isInStation: Bool](pktransitpassproperties/isinstation.md)
+- [var isInStation: Bool](./isinstation.md)
   A Boolean value that indicates whether the transit pass has tapped in at a station and has not tapped out.
-- [var isBlacklisted: Bool](pktransitpassproperties/isblacklisted.md)
+- [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the transit pass issuer disabled the pass.
 
 

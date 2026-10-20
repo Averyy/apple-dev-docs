@@ -1,15 +1,16 @@
 # popoverController(_:willRepositionPopoverTo:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the popover controller needs to change the popover’s location in its view.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 7.0+ - Deprecated in 9.0
+- iPadOS 7.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
 
 ## Declaration
 
@@ -17,9 +18,13 @@ Tells the delegate that the popover controller needs to change the popover’s l
 optional func popoverController(_ popoverController: UIPopoverController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>)
 ```
 
+```objc
+- (void) popoverController:(UIPopoverController *) popoverController willRepositionPopoverToRect:(CGRect *) rect inView:(UIView **) view;
+```
+
 #### Discussion
 
-For popovers that were presented using the [`present(from:in:permittedArrowDirections:animated:)`](uipopovercontroller/present(from:in:permittedarrowdirections:animated:).md) method, the popover controller calls this method when the interface orientation changes. Your delegate can use this method to adjust the proposed position of the popover. The popover controller does not call this method if you presented the popover from a bar button item.
+For popovers that were presented using the [`present(from:in:permittedArrowDirections:animated:)`](../uipopovercontroller/present%28from,in,permittedarrowdirections,animated%29.md) method, the popover controller calls this method when the interface orientation changes. Your delegate can use this method to adjust the proposed position of the popover. The popover controller does not call this method if you presented the popover from a bar button item.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ For popovers that were presented using the [`present(from:in:permittedArrowDirec
 
 ## See Also
 
-- [func popoverControllerShouldDismissPopover(UIPopoverController) -> Bool](uipopovercontrollerdelegate/popovercontrollershoulddismisspopover(_:).md)
+### Deprecated
+- [func popoverControllerShouldDismissPopover(UIPopoverController) -> Bool](./popovercontrollershoulddismisspopover%28_%29.md)
   Asks the delegate if the popover should be dismissed.
-- [func popoverControllerDidDismissPopover(UIPopoverController)](uipopovercontrollerdelegate/popovercontrollerdiddismisspopover(_:).md)
+- [func popoverControllerDidDismissPopover(UIPopoverController)](./popovercontrollerdiddismisspopover%28_%29.md)
   Tells the delegate that the popover was dismissed.
 
 

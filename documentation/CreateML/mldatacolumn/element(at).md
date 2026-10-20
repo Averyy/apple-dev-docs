@@ -1,7 +1,8 @@
 # element(at:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accesses the element at the given index.
 
@@ -19,6 +20,8 @@ Accesses the element at the given index.
 func element(at index: Int) -> Element?
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
 #### Return Value
 
 The `Element` at the given index; otherwise, `nil`.
@@ -29,7 +32,8 @@ The `Element` at the given index; otherwise, `nil`.
 
 ## See Also
 
-- [subscript(_:)](mldatacolumn/subscript(_:).md)
+### Getting an element
+- [subscript(_:)](./subscript%28_%29.md)
   Accesses the element at the given row.
 
 

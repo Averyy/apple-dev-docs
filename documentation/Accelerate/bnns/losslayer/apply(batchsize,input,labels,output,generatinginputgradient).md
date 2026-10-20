@@ -1,7 +1,8 @@
 # apply(batchSize:input:labels:output:generatingInputGradient:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the layer to a set of input objects, writing the result to a set of output objects.
 
@@ -11,8 +12,10 @@ Applies the layer to a set of input objects, writing the result to a set of outp
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

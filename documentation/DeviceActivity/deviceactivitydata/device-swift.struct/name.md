@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the name of the device set by the person.
 
@@ -18,7 +19,8 @@ var name: String?
 
 ## See Also
 
-- [var model: DeviceActivityData.Device.Model](deviceactivitydata/device-swift.struct/model-swift.property.md)
+### Identifying the device
+- [var model: DeviceActivityData.Device.Model](./model-swift.property.md)
   Access the model of the device.
 
 

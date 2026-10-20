@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioSMPTETimeRunning](1646404-anonymous/kioaudiosmptetimerunning.md)
-- [kIOAudioSMPTETimeValid](1646404-anonymous/kioaudiosmptetimevalid.md)
+- [kIOAudioSMPTETimeRunning](./api-1646404-anonymous/kioaudiosmptetimerunning.md)
+- [kIOAudioSMPTETimeValid](./api-1646404-anonymous/kioaudiosmptetimevalid.md)
 
 
 ---

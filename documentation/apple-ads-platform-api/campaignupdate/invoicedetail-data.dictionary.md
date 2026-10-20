@@ -1,7 +1,8 @@
 # CampaignUpdate.InvoiceDetail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for updating the invoice details of a budget order.
 
@@ -10,7 +11,7 @@ The request body for updating the invoice details of a budget order.
 
 ## Declaration
 
-```swift
+```
 object CampaignUpdate.InvoiceDetail
 ```
 
@@ -18,7 +19,7 @@ object CampaignUpdate.InvoiceDetail
 
 To change the billing contact details on an existing Line of Credit invoice record, use this object. Omit a field to leave its current value unchanged.
 
-See [`InvoiceDetailUpdate`](invoicedetailupdate.md) for the full field reference.
+See [`InvoiceDetailUpdate`](../invoicedetailupdate.md) for the full field reference.
 
 ## Properties
 

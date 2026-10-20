@@ -1,13 +1,16 @@
 # init(forWritingWithMutableData:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 11.0
+- iPadOS 2.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Use NSKeyedArchiver instead
 
 ## Declaration
 

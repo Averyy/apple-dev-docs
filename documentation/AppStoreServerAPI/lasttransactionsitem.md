@@ -1,7 +1,8 @@
 # lastTransactionsItem
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The most recent App Store-signed transaction information and App Store-signed renewal information for an auto-renewable subscription.
 
@@ -10,20 +11,20 @@ The most recent App Store-signed transaction information and App Store-signed re
 
 ## Declaration
 
-```swift
+```
 object lastTransactionsItem
 ```
 
 ## Topics
 
 ### Data Types
-- [type originalTransactionId](originaltransactionid.md)
+- [type originalTransactionId](./originaltransactionid.md)
   The original transaction identifier of a purchase.
-- [type status](status.md)
+- [type status](./status.md)
   The status of an auto-renewable subscription.
-- [type JWSRenewalInfo](jwsrenewalinfo.md)
+- [type JWSRenewalInfo](./jwsrenewalinfo.md)
   Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
-- [type JWSTransaction](jwstransaction.md)
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
 ## Properties
@@ -35,7 +36,8 @@ object lastTransactionsItem
 
 ## See Also
 
-- [subscriptionGroupIdentifier](subscriptiongroupidentifieritem/subscriptiongroupidentifier.md)
+### Object and Data Types
+- [subscriptionGroupIdentifier](./subscriptiongroupidentifieritem/subscriptiongroupidentifier.md)
 
 
 ---

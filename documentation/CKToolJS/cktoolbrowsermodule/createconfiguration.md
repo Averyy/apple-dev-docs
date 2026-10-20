@@ -1,7 +1,8 @@
 # createConfiguration
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 This function creates an instance of `Configuration` with suitable values for use in web browsers.
 
@@ -10,7 +11,7 @@ This function creates an instance of `Configuration` with suitable values for us
 
 ## Declaration
 
-```swift
+```
 static Configuration createConfiguration();
 ```
 

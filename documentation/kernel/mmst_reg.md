@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mmst_reg {
     ...
 };
@@ -17,8 +17,8 @@ struct mmst_reg {
 ## Topics
 
 ### Instance Properties
-- [mmst_reg](mmst_reg/1397167-mmst_reg.md)
-- [mmst_rsrv](mmst_reg/1397432-mmst_rsrv.md)
+- [mmst_reg](./mmst_reg/api-1397167-mmst_reg.md)
+- [mmst_rsrv](./mmst_reg/api-1397432-mmst_rsrv.md)
 
 
 ---

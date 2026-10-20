@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.ComponentRange
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Range of colors supported by pixel components.
 
@@ -23,20 +24,20 @@ enum ComponentRange
 ## Topics
 
 ### Enumeration Cases
-- [CVPixelFormatDescription.ComponentRange.full](cvpixelformatdescription/componentrange-swift.enum/full.md)
+- [CVPixelFormatDescription.ComponentRange.full](./componentrange-swift.enum/full.md)
   Indicates that this component represents the nominal range of values in a color component using the full range of (usually integer) values. For example, in 8 bit YCbCr formats, full range indicates that the -1.0 to 1.0 range for chroma components is represented by the values 0 to 255.
-- [CVPixelFormatDescription.ComponentRange.video](cvpixelformatdescription/componentrange-swift.enum/video.md)
+- [CVPixelFormatDescription.ComponentRange.video](./componentrange-swift.enum/video.md)
   Indicates that this component represents the nominal range of values in a color component using a reduced range of (usually integer) values. For example, in 8-bit YCbCr formats, video range indicates that a -1.0 to 1.0 range for chroma components is represented by the values 16 to 240, while the range of luma components is typically 16 to 235.  Values outside this range are still used for certain signaling purposes.
-- [CVPixelFormatDescription.ComponentRange.wide](cvpixelformatdescription/componentrange-swift.enum/wide.md)
+- [CVPixelFormatDescription.ComponentRange.wide](./componentrange-swift.enum/wide.md)
   Indicates that this component represents the nominal range of values in a color component using a dramatically reduced range of integer values, in order to allow expression of values broadly outside the normal -1.0 to 1.0 and/or 0.0 to 1.0 ranges.  For example, formats supporting Extended sRGB allow component values that are less than 0.0 or greater than 1.0 in order to depict colors outside the sRGB colorimetry.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

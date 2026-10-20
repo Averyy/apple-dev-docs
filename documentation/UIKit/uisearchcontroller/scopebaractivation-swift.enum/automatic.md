@@ -1,7 +1,8 @@
 # UISearchController.ScopeBarActivation.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode in which the system automatically determines when to show and hide the scope bar.
 
@@ -17,13 +18,18 @@ A mode in which the system automatically determines when to show and hide the sc
 case automatic
 ```
 
+```c
+UISearchControllerScopeBarActivationAutomatic
+```
+
 ## See Also
 
-- [UISearchController.ScopeBarActivation.manual](uisearchcontroller/scopebaractivation-swift.enum/manual.md)
+### Constants
+- [UISearchController.ScopeBarActivation.manual](./manual.md)
   A mode that gives you manual control over when to show and hide the scope bar.
-- [UISearchController.ScopeBarActivation.onTextEntry](uisearchcontroller/scopebaractivation-swift.enum/ontextentry.md)
+- [UISearchController.ScopeBarActivation.onTextEntry](./ontextentry.md)
   A mode in which the search controller shows the scope bar when typing begins in the search field, and hides it after search cancellation.
-- [UISearchController.ScopeBarActivation.onSearchActivation](uisearchcontroller/scopebaractivation-swift.enum/onsearchactivation.md)
+- [UISearchController.ScopeBarActivation.onSearchActivation](./onsearchactivation.md)
   A mode in which the search controller shows the scope bar when search becomes active, and hides it after search cancellation.
 
 

@@ -1,7 +1,8 @@
 # MKCircle
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A circular overlay with a configurable radius that you center on a geographic coordinate.
 
@@ -20,44 +21,49 @@ A circular overlay with a configurable radius that you center on a geographic co
 class MKCircle
 ```
 
+```objc
+@interface MKCircle : MKShape
+```
+
 #### Overview
 
-This class defines the portion of the map that the overlay covers. To draw the region, return an [`MKCircleRenderer`](mkcirclerenderer.md) object from the [`mapView(_:rendererFor:)`](mkmapviewdelegate/mapview(_:rendererfor:).md) method of your map view delegate.
+This class defines the portion of the map that the overlay covers. To draw the region, return an [`MKCircleRenderer`](./mkcirclerenderer.md) object from the [`mapView(_:rendererFor:)`](./mkmapviewdelegate/mapview%28_,rendererfor%29.md) method of your map view delegate.
 
 ## Topics
 
 ### Creating a circle overlay
-- [convenience init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](mkcircle/init(center:radius:).md)
+- [convenience init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](./mkcircle/init%28center,radius%29.md)
   Creates and returns a circle object using the specified coordinate and radius.
-- [convenience init(mapRect: MKMapRect)](mkcircle/init(maprect:).md)
+- [convenience init(mapRect: MKMapRect)](./mkcircle/init%28maprect%29.md)
   Creates and returns a circle object that derives the circular area from the specified rectangle.
 ### Accessing the overlay’s attributes
-- [var coordinate: CLLocationCoordinate2D](mkcircle/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D](./mkcircle/coordinate.md)
   The center point of the circular area, specified as a latitude and longitude.
-- [var radius: CLLocationDistance](mkcircle/radius.md)
+- [var radius: CLLocationDistance](./mkcircle/radius.md)
   The radius of the circular area, in meters.
-- [var boundingMapRect: MKMapRect](mkcircle/boundingmaprect.md)
+- [var boundingMapRect: MKMapRect](./mkcircle/boundingmaprect.md)
   The bounding rectangle of the circular area.
 ### Initializers
-- [convenience init(centerCoordinate: CLLocationCoordinate2D, radius: CLLocationDistance)](mkcircle/init(centercoordinate:radius:).md)
+- [convenience init(centerCoordinate: CLLocationCoordinate2D, radius: CLLocationDistance)](./mkcircle/init%28centercoordinate,radius%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MKShape](mkshape.md)
+- [MKShape](./mkshape.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MKAnnotation](mkannotation.md)
-- [MKOverlay](mkoverlay.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKAnnotation](./mkannotation.md)
+- [MKOverlay](./mkoverlay.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKCircleRenderer](mkcirclerenderer.md)
+### Circular overlays
+- [class MKCircleRenderer](./mkcirclerenderer.md)
   The visual representation of a circular overlay.
 
 

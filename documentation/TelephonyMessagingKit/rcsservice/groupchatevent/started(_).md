@@ -1,7 +1,8 @@
 # RCSService.GroupChatEvent.started(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Group chat started.
 
@@ -16,15 +17,16 @@ case started(RCSService.GroupChatStartedEvent)
 
 ## See Also
 
-- [RCSService.GroupChatStartedEvent](rcsservice/groupchatstartedevent.md)
+### Chat life cycle events
+- [RCSService.GroupChatStartedEvent](../groupchatstartedevent.md)
   Event triggered when group chat is started.
-- [case ended(RCSService.GroupChatEndedEvent)](rcsservice/groupchatevent/ended(_:).md)
+- [case ended(RCSService.GroupChatEndedEvent)](./ended%28_%29.md)
   Group chat ended.
-- [RCSService.GroupChatEndedEvent](rcsservice/groupchatendedevent.md)
+- [RCSService.GroupChatEndedEvent](../groupchatendedevent.md)
   Event triggered when a group chat is ended.
-- [case subjectUpdated(RCSService.GroupChatSubjectUpdatedEvent)](rcsservice/groupchatevent/subjectupdated(_:).md)
+- [case subjectUpdated(RCSService.GroupChatSubjectUpdatedEvent)](./subjectupdated%28_%29.md)
   Group chat’s subject was updated.
-- [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
+- [RCSService.GroupChatSubjectUpdatedEvent](../groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
 
 

@@ -1,7 +1,8 @@
 # init(graph:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a component that drives skeletal animation on an entity using the supplied compiled animation graph.
 
@@ -21,11 +22,11 @@ init(graph: AnimationGraphResource)
 
 #### Discussion
 
-Per-instance evaluation state initializes when the entity becomes active in a scene, so accessors such as [`activeNodes`](animationgraphcomponent/activenodes.md) return an empty array until the first evaluation tick has run.
+Per-instance evaluation state initializes when the entity becomes active in a scene, so accessors such as [`activeNodes`](./activenodes.md) return an empty array until the first evaluation tick has run.
 
 ## Parameters
 
-- `graph`: The compiled [`AnimationGraphResource`](animationgraphresource.md) that drives this component.
+- `graph`: The compiled [`AnimationGraphResource`](../animationgraphresource.md) that drives this component.
 
 
 ---

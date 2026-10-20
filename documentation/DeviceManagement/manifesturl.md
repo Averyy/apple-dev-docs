@@ -1,7 +1,8 @@
 # ManifestURL
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The URL to the app manifest.
 
@@ -16,20 +17,20 @@ The URL to the app manifest.
 
 ## Declaration
 
-```swift
+```
 object ManifestURL
 ```
 
 ## Mentions
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
-- [Installing packages](installing-packages.md)
+- [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
+- [Installing packages](./installing-packages.md)
 
 #### Discussion
 
 Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both SHA-256 and MD5 hash properties are present, the device uses only the SHA-256 hashes to verify the manifest data.
 
-##### Example Manifest
+##### Example manifest
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,7 +77,7 @@ Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both
 ## Topics
 
 ### Objects
-- [object ManifestURL.ItemsItem](manifesturl/itemsitem.md)
+- [object ManifestURL.ItemsItem](./manifesturl/itemsitem.md)
   An array of dictionaries representing what the manifest installs.
 
 ## Properties
@@ -85,7 +86,8 @@ Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both
 
 ## See Also
 
-- [object PasswordHash](passwordhash.md)
+### Miscellaneous data formats
+- [object PasswordHash](./passwordhash.md)
   A dictionary that contains the password hash for the account.
 
 

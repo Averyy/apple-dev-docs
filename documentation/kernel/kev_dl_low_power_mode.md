@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_dl_low_power_mode {
     ...
 };
@@ -17,8 +17,8 @@ struct kev_dl_low_power_mode {
 ## Topics
 
 ### Instance Properties
-- [link_data](kev_dl_low_power_mode/3943815-link_data.md)
-- [low_power_event](kev_dl_low_power_mode/3943816-low_power_event.md)
+- [link_data](./kev_dl_low_power_mode/api-3943815-link_data.md)
+- [low_power_event](./kev_dl_low_power_mode/api-3943816-low_power_event.md)
 
 
 ---

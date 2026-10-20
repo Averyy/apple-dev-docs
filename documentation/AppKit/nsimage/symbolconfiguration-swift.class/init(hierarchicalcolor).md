@@ -1,7 +1,8 @@
 # init(hierarchicalColor:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hierarchical color configuration using the color you specify.
 
@@ -12,6 +13,10 @@ Creates a hierarchical color configuration using the color you specify.
 
 ```swift
 convenience init(hierarchicalColor: NSColor)
+```
+
+```objc
++ (instancetype) configurationWithHierarchicalColor:(NSColor *) hierarchicalColor;
 ```
 
 #### Return Value
@@ -32,9 +37,10 @@ If the symbol doesnâ€™t have a palette variant, this color configuration doesnâ€
 
 ## See Also
 
-- [convenience init(paletteColors: [NSColor])](nsimage/symbolconfiguration-swift.class/init(palettecolors:).md)
+### Creating a Color Configuration
+- [convenience init(paletteColors: [NSColor])](./init%28palettecolors%29.md)
   Creates a color configuration by specifying a palette of colors.
-- [class func preferringMulticolor() -> Self](nsimage/symbolconfiguration-swift.class/preferringmulticolor.md)
+- [class func preferringMulticolor() -> Self](./preferringmulticolor%28%29.md)
   Creates a configuration that specifies that the symbol should prefer its multicolor variant if one exists.
 
 

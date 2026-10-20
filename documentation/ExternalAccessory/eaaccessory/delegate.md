@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that acts as the delegate of the accessory.
 
@@ -19,13 +20,18 @@ The object that acts as the delegate of the accessory.
 unowned(unsafe) var delegate: (any EAAccessoryDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) id<EAAccessoryDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate receives notifications about changes to the status of the accessory object. The delegate must adopt the [`EAAccessoryDelegate`](eaaccessorydelegate.md) protocol.
+The delegate receives notifications about changes to the status of the accessory object. The delegate must adopt the [`EAAccessoryDelegate`](../eaaccessorydelegate.md) protocol.
 
 ## See Also
 
-- [protocol EAAccessoryDelegate](eaaccessorydelegate.md)
+### Responding to Disconnection Events
+- [protocol EAAccessoryDelegate](../eaaccessorydelegate.md)
   A protocol that defines an optional method for receiving notifications when the associated accessory object is disconnected.
 
 

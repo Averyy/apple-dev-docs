@@ -1,7 +1,8 @@
 # CLSProgressReportingCapability.Kind.binary
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A binary outcome for the task, like true or false.
 
@@ -18,19 +19,24 @@ A binary outcome for the task, like true or false.
 case binary
 ```
 
+```c
+CLSProgressReportingCapabilityKindBinary
+```
+
 #### Discussion
 
-Add this capability to indicate that a context reports a binary condition at the end of a task, like pass or fail, using a [`CLSBinaryItem`](clsbinaryitem.md) instance.
+Add this capability to indicate that a context reports a binary condition at the end of a task, like pass or fail, using a [`CLSBinaryItem`](../../clsbinaryitem.md) instance.
 
 ## See Also
 
-- [CLSProgressReportingCapability.Kind.duration](clsprogressreportingcapability/kind-swift.enum/duration.md)
+### Reporting capabilities
+- [CLSProgressReportingCapability.Kind.duration](./duration.md)
   Time spent performing the task.
-- [CLSProgressReportingCapability.Kind.percent](clsprogressreportingcapability/kind-swift.enum/percent.md)
+- [CLSProgressReportingCapability.Kind.percent](./percent.md)
   The percentage of the total task that has been completed.
-- [CLSProgressReportingCapability.Kind.quantity](clsprogressreportingcapability/kind-swift.enum/quantity.md)
+- [CLSProgressReportingCapability.Kind.quantity](./quantity.md)
   A discrete value.
-- [CLSProgressReportingCapability.Kind.score](clsprogressreportingcapability/kind-swift.enum/score.md)
+- [CLSProgressReportingCapability.Kind.score](./score.md)
   A score.
 
 

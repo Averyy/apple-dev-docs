@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the current user activity with the system.
 
@@ -14,9 +15,14 @@ Registers the current user activity with the system.
 func update(_ userActivity: NSUserActivity)
 ```
 
+```objc
+- (void) updateUserActivity:(NSUserActivity *) userActivity;
+```
+
 ## See Also
 
-- [func invalidateUserActivity()](wkinterfacecontroller/invalidateuseractivity.md)
+### Coordinating Handoff activity
+- [func invalidateUserActivity()](./invalidateuseractivity%28%29.md)
   Invalidates the most recent user activity.
 
 

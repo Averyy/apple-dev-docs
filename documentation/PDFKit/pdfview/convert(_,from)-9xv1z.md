@@ -1,7 +1,8 @@
 # convert(_:from:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a rectangle from page space to view space.
 
@@ -15,8 +16,28 @@ Converts a rectangle from page space to view space.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func convert(_ rect: CGRect, from page: PDFPage) -> CGRect
+```
+
+*macOS*
+
 ```swift
 func convert(_ rect: NSRect, from page: PDFPage) -> NSRect
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (CGRect) convertRect:(CGRect) rect fromPage:(PDFPage *) page;
+```
+
+*macOS*
+
+```objc
+- (NSRect) convertRect:(NSRect) rect fromPage:(PDFPage *) page;
 ```
 
 #### Discussion
@@ -25,13 +46,14 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [func page(for: CGPoint, nearest: Bool) -> PDFPage?](pdfview/page(for:nearest:).md)
+### Converting Page and View Points
+- [func page(for: CGPoint, nearest: Bool) -> PDFPage?](./page%28for,nearest%29.md)
   Returns the page containing a point specified in view coordinates.
-- [func convert(CGPoint, to: PDFPage) -> CGPoint](pdfview/convert(_:to:)-9twqk.md)
+- [func convert(CGPoint, to: PDFPage) -> CGPoint](./convert%28_,to%29-9twqk.md)
   Converts a point from view space to page space.
-- [func convert(CGRect, to: PDFPage) -> CGRect](pdfview/convert(_:to:)-8cp0c.md)
+- [func convert(CGRect, to: PDFPage) -> CGRect](./convert%28_,to%29-8cp0c.md)
   Converts a rectangle from view space to page space.
-- [func convert(CGPoint, from: PDFPage) -> CGPoint](pdfview/convert(_:from:)-4evlx.md)
+- [func convert(CGPoint, from: PDFPage) -> CGPoint](./convert%28_,from%29-4evlx.md)
   Converts a point from page space to view space.
 
 

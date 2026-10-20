@@ -1,7 +1,8 @@
 # RelevantContext.HeadphonesCondition
 
 **Framework**: RelevanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that indicates whether a person’s headphones are connected.
 
@@ -23,12 +24,13 @@ struct HeadphonesCondition
 ## Topics
 
 ### Conditions
-- [static var connected: RelevantContext.HeadphonesCondition](relevantcontext/headphonescondition/connected.md)
+- [static var connected: RelevantContext.HeadphonesCondition](./headphonescondition/connected.md)
   A person’s headphones are connected to the device.
 
 ## See Also
 
-- [static func hardware(headphones: RelevantContext.HeadphonesCondition) -> RelevantContext](relevantcontext/hardware(headphones:).md)
+### Hardware clues
+- [static func hardware(headphones: RelevantContext.HeadphonesCondition) -> RelevantContext](./hardware%28headphones%29.md)
   Tells the system a widget is relevant when a person’s headphones are connected.
 
 

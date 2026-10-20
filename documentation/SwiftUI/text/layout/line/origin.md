@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin of the line.
 

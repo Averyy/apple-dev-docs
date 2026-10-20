@@ -1,7 +1,8 @@
 # VNElementTypeSize(_:)
 
 **Framework**: Vision  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the size of a feature print element.
 
@@ -19,15 +20,20 @@ Returns the size of a feature print element.
 func VNElementTypeSize(_ elementType: VNElementType) -> Int
 ```
 
+```c
+extern NSUInteger VNElementTypeSize(VNElementType elementType);
+```
+
 ## Parameters
 
 - `elementType`: The type of element.
 
 ## See Also
 
-- [var elementType: VNElementType](vnfeatureprintobservation/elementtype.md)
+### Determining Types of Feature Prints
+- [var elementType: VNElementType](./vnfeatureprintobservation/elementtype.md)
   The type of each element in the data.
-- [enum VNElementType](vnelementtype.md)
+- [enum VNElementType](./vnelementtype.md)
   An enumeration of the type of element in feature print data.
 
 

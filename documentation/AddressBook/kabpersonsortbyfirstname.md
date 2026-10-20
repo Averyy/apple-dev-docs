@@ -1,14 +1,15 @@
 # kABPersonSortByFirstName
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Order by first name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ Order by first name.
 var kABPersonSortByFirstName: Int { get }
 ```
 
+```c
+kABPersonSortByFirstName
+```
+
 ## See Also
 
-- [var kABPersonSortByLastName: Int](kabpersonsortbylastname.md)
+### Constants
+- [var kABPersonSortByLastName: Int](./kabpersonsortbylastname.md)
   Order by last name.
 
 

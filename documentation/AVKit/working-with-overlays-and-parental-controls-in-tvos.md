@@ -1,6 +1,8 @@
 # Working with overlays and parental controls in tvOS
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: Sample Code  
+**Download**: [WorkingWithOverlaysAndParentalControlsInTvOS.zip](https://docs-assets.developer.apple.com/published/1dd35d609d9b/WorkingWithOverlaysAndParentalControlsInTvOS.zip)
 
 Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
 
@@ -10,9 +12,9 @@ Add interactive overlays, parental controls, and livestream channel flipping usi
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`503: Delivering Intuitive Media Playback with AVKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/503/).
+> **Note**: This sample code project is associated with WWDC 2019 session [503: Delivering Intuitive Media Playback with AVKit](https://developer.apple.com/videos/play/wwdc19/503/).
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 Only navigation from live streaming supports channel flipping, so you need to replace the assets in this sample with your live content to demonstrate this behavior.
 
@@ -27,17 +29,18 @@ By default, the sample demonstrates automatic support for parental controls. Act
 
 The first demo video has a rating of PG, and the second has a rating of PG-13. You can find or edit these ratings in `MainViewController.swift`.
 
-This sample also demonstrates explicit support for parental restrictions by directly calling [`requestPlaybackRestrictionsAuthorization(_:)`](https://developer.apple.com/documentation/avfoundation/avplayeritem/requestplaybackrestrictionsauthorization(_:)). You can test explicit support by changing the value of `checkParentalControlsExplicitly` in the sample.
+This sample also demonstrates explicit support for parental restrictions by directly calling [`playerItem.requestPlaybackRestrictionsAuthorization(_ completion)`](../AVFoundation/avplayeritem/requestplaybackrestrictionsauthorization%28_%29.md). You can test explicit support by changing the value of `checkParentalControlsExplicitly` in the sample.
 
 ## See Also
 
-- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
+### Content proposals and parental controls
+- [Presenting content proposals in tvOS](./presenting-content-proposals-in-tvos.md)
   Display a preview of an upcoming media item at the conclusion of the currently playing media item.
-- [class AVContentProposal](avcontentproposal.md)
+- [class AVContentProposal](./avcontentproposal.md)
   An object that describes the content to propose playing after the current item finishes.
-- [enum AVContentProposalAction](avcontentproposalaction.md)
+- [enum AVContentProposalAction](./avcontentproposalaction.md)
   Constant that indicate the action a user takes when dismissing a content proposal.
-- [class AVContentProposalViewController](avcontentproposalviewcontroller.md)
+- [class AVContentProposalViewController](./avcontentproposalviewcontroller.md)
   A view controller that proposes content to watch next.
 
 

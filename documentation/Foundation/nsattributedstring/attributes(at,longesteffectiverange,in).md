@@ -1,7 +1,8 @@
 # attributes(at:longestEffectiveRange:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the attributes for the character at the specified index and, by reference, the range where the attributes apply.
 
@@ -20,13 +21,17 @@ Returns the attributes for the character at the specified index and, by referenc
 func attributes(at location: Int, longestEffectiveRange range: NSRangePointer?, in rangeLimit: NSRange) -> [NSAttributedString.Key : Any]
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) attributesAtIndex:(NSUInteger) location longestEffectiveRange:(NSRangePointer) range inRange:(NSRange) rangeLimit;
+```
+
 #### Discussion
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if `index` or any part of `rangeLimit` lies beyond the end of the receiver’s characters.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `index` or any part of `rangeLimit` lies beyond the end of the receiver’s characters.
 
-If you don’t need the range information, it’s far more efficient to use the [`attributes(at:effectiveRange:)`](nsattributedstring/attributes(at:effectiverange:).md) method to retrieve the attribute value.
+If you don’t need the range information, it’s far more efficient to use the [`attributes(at:effectiveRange:)`](./attributes%28at,effectiverange%29.md) method to retrieve the attribute value.
 
-For a list of possible attributes, see [`NSAttributedString.Key`](nsattributedstring/key.md).
+For a list of possible attributes, see [`NSAttributedString.Key`](./key.md).
 
 ## Parameters
 
@@ -36,17 +41,18 @@ For a list of possible attributes, see [`NSAttributedString.Key`](nsattributedst
 
 ## See Also
 
-- [func attributes(at: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](nsattributedstring/attributes(at:effectiverange:).md)
+### Getting attributes for a range of text
+- [func attributes(at: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](./attributes%28at,effectiverange%29.md)
   Returns the attributes for the character at the specified index.
-- [func attribute(NSAttributedString.Key, at: Int, effectiveRange: NSRangePointer?) -> Any?](nsattributedstring/attribute(_:at:effectiverange:).md)
+- [func attribute(NSAttributedString.Key, at: Int, effectiveRange: NSRangePointer?) -> Any?](./attribute%28_,at,effectiverange%29.md)
   Returns the value for an attribute with the specified name of the character at the specified index and, by reference, the range where the attribute applies.
-- [func attribute(NSAttributedString.Key, at: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](nsattributedstring/attribute(_:at:longesteffectiverange:in:).md)
+- [func attribute(NSAttributedString.Key, at: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](./attribute%28_,at,longesteffectiverange,in%29.md)
   Returns the value for the attribute with the specified name of the character at the specified index and, by reference, the range where the attribute applies.
-- [func enumerateAttribute(NSAttributedString.Key, in: NSRange, options: NSAttributedString.EnumerationOptions, using: (Any?, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsattributedstring/enumerateattribute(_:in:options:using:).md)
+- [func enumerateAttribute(NSAttributedString.Key, in: NSRange, options: NSAttributedString.EnumerationOptions, using: (Any?, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateattribute%28_,in,options,using%29.md)
   Executes the specified closure or block for each range of a particular attribute in the attributed string.
-- [func enumerateAttributes(in: NSRange, options: NSAttributedString.EnumerationOptions, using: ([NSAttributedString.Key : Any], NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsattributedstring/enumerateattributes(in:options:using:).md)
+- [func enumerateAttributes(in: NSRange, options: NSAttributedString.EnumerationOptions, using: ([NSAttributedString.Key : Any], NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateattributes%28in,options,using%29.md)
   Executes the specified closure or block for each range of attributes in the attributed string.
-- [NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions.md)
+- [NSAttributedString.EnumerationOptions](./enumerationoptions.md)
   Options for enumerating attributes.
 
 

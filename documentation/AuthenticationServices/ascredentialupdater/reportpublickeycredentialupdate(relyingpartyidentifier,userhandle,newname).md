@@ -1,16 +1,19 @@
 # reportPublicKeyCredentialUpdate(relyingPartyIdentifier:userHandle:newName:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides credential managers with an update to a credential’s name, such as when changing the user name or email address on an account.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.2
+- iPadOS 26.0+ - Deprecated in 26.2
+- Mac Catalyst 26.0+ - Deprecated in 26.2
+- macOS 26.0+ - Deprecated in 26.2
+- visionOS 26.0+ - Deprecated in 26.2
+
+> **Deprecated**: Use `ASCredentialDataManager` instead
 
 ## Declaration
 
@@ -22,7 +25,7 @@ final func reportPublicKeyCredentialUpdate(relyingPartyIdentifier: String, userH
 
 This call shares the updated credential data with all credential managers installed on the system.
 
-> **Note**: This method throws [`ASAuthorizationError`](asauthorizationerror-swift.struct.md) if the system failed to accept the update.
+> **Throws**: This method throws [`ASAuthorizationError`](../asauthorizationerror-swift.struct.md) if the system failed to accept the update.
 
 ## Parameters
 

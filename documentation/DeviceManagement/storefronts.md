@@ -1,7 +1,8 @@
 # Storefronts
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a region that the content is available in, and supported languages for that region.
 
@@ -10,14 +11,14 @@ A resource object that represents a region that the content is available in, and
 
 ## Declaration
 
-```swift
+```
 object Storefronts
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Storefronts.Attributes](storefronts/attributes-data.dictionary.md)
+- [object Storefronts.Attributes](./storefronts/attributes-data.dictionary.md)
   The attributes for the storefronts resource.
 
 ## Properties
@@ -27,9 +28,12 @@ object Storefronts
 - `id` (string) *(required)*: The identifier for the storefronts resource.
 - `type` (string) *(required)*: The type of the resource. The only allowed value is `storefronts`.
 
+  **Allowed Values**: `storefronts`
+
 ## See Also
 
-- [object StorefrontsResponse](storefrontsresponse.md)
+### Handling the response
+- [object StorefrontsResponse](./storefrontsresponse.md)
   The response to a storefront request.
 
 

@@ -1,7 +1,8 @@
 # SecProtocolType.POP3S
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates POP3 over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates POP3 over TLS/SSL.
 
 ```swift
 case POP3S
+```
+
+```c
+kSecProtocolTypePOP3S
 ```
 
 

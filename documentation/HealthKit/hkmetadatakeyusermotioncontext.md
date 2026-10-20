@@ -1,7 +1,8 @@
 # HKMetadataKeyUserMotionContext
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The person’s motion during the sample’s time period.
 
@@ -19,10 +20,14 @@ The person’s motion during the sample’s time period.
 let HKMetadataKeyUserMotionContext: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyUserMotionContext;
+```
+
 ## Topics
 
 ### Valid motion contexts
-- [enum HKUserMotionContext](hkusermotioncontext.md)
+- [enum HKUserMotionContext](./hkusermotioncontext.md)
   The type of motion performed during the sample.
 
 

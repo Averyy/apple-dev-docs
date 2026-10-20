@@ -1,7 +1,8 @@
 # viabilityUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives updates when data can be sent and received.
 
@@ -23,11 +24,12 @@ final var viabilityUpdateHandler: (@Sendable (Bool) -> Void)? { get set }
 
 ## See Also
 
-- [var currentPath: NWPath?](nwconnection/currentpath.md)
+### Handling Path Updates
+- [var currentPath: NWPath?](./currentpath.md)
   The network path the connection is using.
-- [var pathUpdateHandler: ((NWPath) -> Void)?](nwconnection/pathupdatehandler.md)
+- [var pathUpdateHandler: ((NWPath) -> Void)?](./pathupdatehandler.md)
   A handler that receives network path updates.
-- [var betterPathUpdateHandler: ((Bool) -> Void)?](nwconnection/betterpathupdatehandler.md)
+- [var betterPathUpdateHandler: ((Bool) -> Void)?](./betterpathupdatehandler.md)
   A handler that receives updates when an alternative network path is preferred over the current path.
 
 

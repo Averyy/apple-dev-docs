@@ -1,17 +1,22 @@
 # webFrame
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the `WebFrame` that contains the plug-in.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var webFrame: WebFrame! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebFrame * webFrame;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ Only implemented by containers that are based on the WebKit’s plug-in architec
 
 ## See Also
 
-- [var webPlugInContainerSelectionColor: NSColor!](nsobject-swift.class/webplugincontainerselectioncolor.md)
+### Obtaining information about the container
+- [var webPlugInContainerSelectionColor: NSColor!](./webplugincontainerselectioncolor.md)
   Returns the plug-in selection color.
 
 

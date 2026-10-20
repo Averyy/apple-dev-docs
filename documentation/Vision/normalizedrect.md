@@ -1,7 +1,8 @@
 # NormalizedRect
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The location and dimensions of a rectangle.
 
@@ -22,65 +23,66 @@ struct NormalizedRect
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
 
 ## Topics
 
 ### Creating a normalized rectangle
-- [init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)](normalizedrect/init(x:y:width:height:).md)
+- [init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)](./normalizedrect/init%28x,y,width,height%29.md)
   Creates a rectangle with the specified coordinates.
-- [init(imageRect: CGRect, in: CGSize)](normalizedrect/init(imagerect:in:).md)
+- [init(imageRect: CGRect, in: CGSize)](./normalizedrect/init%28imagerect,in%29.md)
   Creates a normalized rectangle from a rectangle in an image coordinate space.
-- [init(imageRect: CGRect, in: CGSize, normalizedTo: NormalizedRect)](normalizedrect/init(imagerect:in:normalizedto:).md)
+- [init(imageRect: CGRect, in: CGSize, normalizedTo: NormalizedRect)](./normalizedrect/init%28imagerect,in,normalizedto%29.md)
   Creates a rectangle normalized to a region of interest in an image from a rectangle in an image coordinate space.
-- [init(normalizedRect: CGRect)](normalizedrect/init(normalizedrect:).md)
+- [init(normalizedRect: CGRect)](./normalizedrect/init%28normalizedrect%29.md)
   Creates a rectangle from the specified Core Graphics rectangle.
-- [static var fullImage: NormalizedRect](normalizedrect/fullimage.md)
+- [static var fullImage: NormalizedRect](./normalizedrect/fullimage.md)
   A normalized rectangle with an origin at zero and a width and height of one.
 ### Inspecting a normalized rectangle
-- [let cgRect: CGRect](normalizedrect/cgrect.md)
+- [let cgRect: CGRect](./normalizedrect/cgrect.md)
   The normalized rectangle as a Core Graphics rectangle.
-- [var origin: CGPoint](normalizedrect/origin.md)
+- [var origin: CGPoint](./normalizedrect/origin.md)
   The lower left-hand corner of the rectangle.
-- [var width: CGFloat](normalizedrect/width.md)
+- [var width: CGFloat](./normalizedrect/width.md)
   The width of the rectangle.
-- [var height: CGFloat](normalizedrect/height.md)
+- [var height: CGFloat](./normalizedrect/height.md)
   The height of the rectangle.
 ### Converting rectangles
-- [func toImageCoordinates(CGSize, origin: CoordinateOrigin) -> CGRect](normalizedrect/toimagecoordinates(_:origin:).md)
+- [func toImageCoordinates(CGSize, origin: CoordinateOrigin) -> CGRect](./normalizedrect/toimagecoordinates%28_,origin%29.md)
   Converts a rectangle in normalized coordinates into image coordinates.
-- [func toImageCoordinates(from: NormalizedRect, imageSize: CGSize, origin: CoordinateOrigin) -> CGRect](normalizedrect/toimagecoordinates(from:imagesize:origin:).md)
+- [func toImageCoordinates(from: NormalizedRect, imageSize: CGSize, origin: CoordinateOrigin) -> CGRect](./normalizedrect/toimagecoordinates%28from,imagesize,origin%29.md)
   Converts a rectangle normalized to a region within an image into full image coordinates.
 ### Flipping a normalized rectangle
-- [func verticallyFlipped() -> NormalizedRect](normalizedrect/verticallyflipped.md)
+- [func verticallyFlipped() -> NormalizedRect](./normalizedrect/verticallyflipped%28%29.md)
   Returns a normalized rectangle with the origin flipped between the top and bottom of the image.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NormalizedPoint](normalizedpoint.md)
+### Image locations and regions
+- [struct NormalizedPoint](./normalizedpoint.md)
   A point in a 2D coordinate system.
-- [typealias NormalizedRegion](normalizedregion.md)
+- [typealias NormalizedRegion](./normalizedregion.md)
   A polygon composed of normalized points.
-- [struct NormalizedCircle](normalizedcircle.md)
+- [struct NormalizedCircle](./normalizedcircle.md)
   The center point and radius of a 2D circle.
-- [protocol BoundingBoxProviding](boundingboxproviding.md)
+- [protocol BoundingBoxProviding](./boundingboxproviding.md)
   A protocol for objects that have a bounding box.
-- [protocol BoundingRegionProviding](boundingregionproviding.md)
+- [protocol BoundingRegionProviding](./boundingregionproviding.md)
   A protocol for objects that have a defined boundary in an image.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+- [protocol QuadrilateralProviding](./quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
-- [enum CoordinateOrigin](coordinateorigin.md)
+- [enum CoordinateOrigin](./coordinateorigin.md)
   The origin of a coordinate system relative to an image.
 
 

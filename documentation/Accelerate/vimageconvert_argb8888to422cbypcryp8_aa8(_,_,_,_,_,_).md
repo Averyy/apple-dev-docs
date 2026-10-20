@@ -1,7 +1,8 @@
 # vImageConvert_ARGB8888To422CbYpCrYp8_AA8(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an 8-bit-per-channel, 4-channel ARGB buffer to an 8-bit-per-channel 4:2:2 CbYpCrYp buffer and an 8-bit alpha buffer.
 
@@ -20,32 +21,37 @@ Converts an 8-bit-per-channel, 4-channel ARGB buffer to an 8-bit-per-channel 4:2
 func vImageConvert_ARGB8888To422CbYpCrYp8_AA8(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ destA: UnsafePointer<vImage_Buffer>, _ info: UnsafePointer<vImage_ARGBToYpCbCr>, _ permuteMap: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_ARGB8888To422CbYpCrYp8_AA8(const vImage_Buffer *src, const vImage_Buffer *dest, const vImage_Buffer *destA, const vImage_ARGBToYpCbCr *info, const uint8_t permuteMap[4], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the CbYpCrYp destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the CbYpCrYp destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `destA`: A pointer to the alpha destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the alpha destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `info`: A [`vImage_ARGBToYpCbCr`](vimage_argbtoypcbcr.md) structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
+- `dest`: A pointer to the CbYpCrYp destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the CbYpCrYp destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `destA`: A pointer to the alpha destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the alpha destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `info`: A [`vImage_ARGBToYpCbCr`](./vimage_argbtoypcbcr.md) structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
 - `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageConvert_ARGB8888To422CbYpCrYp8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb8888to422cbypcryp8(_:_:_:_:_:).md)
+### Converting to 4:2:2
+- [func vImageConvert_ARGB8888To422CbYpCrYp8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888to422cbypcryp8%28_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel ARGB buffer to an 8-bit-per-channel 4:2:2 CbCrYp buffer.
-- [func vImageConvert_ARGB8888To422YpCbYpCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb8888to422ypcbypcr8(_:_:_:_:_:).md)
+- [func vImageConvert_ARGB8888To422YpCbYpCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888to422ypcbypcr8%28_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel ARGB buffer to an 8-bit-per-channel 4:2:2 YpCbYpCr buffer.
-- [func vImageConvert_ARGB8888To422CbYpCrYp16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb8888to422cbypcryp16(_:_:_:_:_:).md)
+- [func vImageConvert_ARGB8888To422CbYpCrYp16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888to422cbypcryp16%28_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel ARGB buffer to a 16-bit-per-channel 4:2:2 CbYpCrYp buffer.
-- [func vImageConvert_ARGB8888To422CrYpCbYpCbYpCbYpCrYpCrYp10(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb8888to422crypcbypcbypcbypcrypcryp10(_:_:_:_:_:).md)
+- [func vImageConvert_ARGB8888To422CrYpCbYpCbYpCbYpCrYpCrYp10(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888to422crypcbypcbypcbypcrypcryp10%28_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel ARGB buffer to a 10-bit-per-channel 4:2:2 CrYpCbYpCbYpCbYpCrYpCrYp buffer.
-- [func vImageConvert_ARGB16UTo422CbYpCrYp16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb16uto422cbypcryp16(_:_:_:_:_:).md)
+- [func vImageConvert_ARGB16UTo422CbYpCrYp16(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb16uto422cbypcryp16%28_,_,_,_,_%29.md)
   Converts an unsigned 16-bit-per-channel, 4-channel ARGB buffer to a 16-bit-per-channel 4:2:2 CbYpCrYp buffer.
-- [func vImageConvert_ARGB16Q12To422CrYpCbYpCbYpCbYpCrYpCrYp10(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb16q12to422crypcbypcbypcbypcrypcryp10(_:_:_:_:_:).md)
+- [func vImageConvert_ARGB16Q12To422CrYpCbYpCbYpCbYpCrYpCrYp10(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb16q12to422crypcbypcbypcbypcrypcryp10%28_,_,_,_,_%29.md)
   Converts a fixed-point 16-bit-per-channel, 4-channel ARGB buffer to a 10-bit-per-channel 4:2:2 CrYpCbYpCbYpCbYpCrYpCrYp buffer.
 
 

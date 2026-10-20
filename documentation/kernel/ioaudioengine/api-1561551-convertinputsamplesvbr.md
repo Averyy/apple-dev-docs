@@ -1,14 +1,15 @@
 # convertInputSamplesVBR
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn convertInputSamplesVBR(const void *sampleBuf, void *destBuf, UInt32 firstSampleFrame, UInt32 & numSampleFrames, const IOAudioStreamFormat *streamFormat, IOAudioStream *audioStream);
 ```
 

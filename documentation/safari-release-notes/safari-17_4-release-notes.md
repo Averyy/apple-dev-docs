@@ -1,6 +1,7 @@
 # Safari 17.4 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 5, 2024 — 17.4  (19618.1.15)
 
@@ -26,7 +27,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed: Removed the default ARIA-level heading for a heading role, matching removal from ARIA specifications.  (119059172)
 - Fixed text missing from accessibility labels for many common shadow DOM scenarios.  (120223342)
 
-##### Autofill
+##### AutoFill
 
 ###### New Features
 
@@ -43,7 +44,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 
 - Fixed loading a ⌘Click fragment link in a background tab.  (119079650)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -110,7 +111,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 
 - Fixed viewport units to be correct after entering and exiting fullscreen mode on iOS, iPadOS, and in visionOS.  (120496571)
 
-##### Html
+##### HTML
 
 ###### Resolved Issues
 
@@ -118,7 +119,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed `<progress>` to use the page’s preferred rendering update interval.  (118976548)
 - Fixed missing support for the `direction` attribute in the list of attributes whose values are matched case-insensitively with attribute selectors.  (119432066)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -245,7 +246,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 
 - Fixed cases where website data is unexpectedly evicted.  (119818267)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -261,7 +262,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 
 - Removed support for SVGRenderingIntent.  (102516681)
 
-##### Urls
+##### URLs
 
 ###### Resolved Issues
 
@@ -278,7 +279,7 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed style invalidation for animations.  (118500247)
 - Fixed a paused animation where `currentTime` is changed to 0 not restarting when unpaused.  (118826588)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -339,20 +340,22 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed Home Screen Web Apps in Simulator to be listed under a “Home Screen Web Apps” section in the device submenu of the Develop menu.  (117742935)
 - Fixed the `tan()` function to not trigger the color picker.  (118724061)
 
-##### Webauthn
+##### WebAuthn
 
 ###### New Features
 
 - Added support for `getClientCapabilities()`.  (119058559)
 
-##### Webgl
+##### WebGL
 
 ###### New Features
 
-- Added support for new WebGL extensions: - `EXT_clip_control`
-- `EXT_depth_clamp`
-- `EXT_polygon_offset_clamp`
-- `WEBGL_polygon_mode`  (118110035)
+- Added support for new WebGL extensions:
+
+  - `EXT_clip_control`
+  - `EXT_depth_clamp`
+  - `EXT_polygon_offset_clamp`
+  - `WEBGL_polygon_mode`  (118110035)
 
 ###### Resolved Issues
 
@@ -361,13 +364,13 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 - Fixed WebGL OffscreenCanvas returning the previously created WebGL1 context when asking for WebGL2.  (119028794)
 - Fixed WebGL to be available in nested workers.  (120279728)
 
-##### Webkit
+##### WebKit
 
 ###### Resolved Issues
 
 - Fixed HTML content not displaying in a Simulator, affecting projects using the web extension project template.  (121338366)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -377,17 +380,18 @@ Safari 17.4 is available for iOS 17.4, iPadOS 17.4, visionOS 1.1, macOS Sonoma, 
 
 ## See Also
 
-- [Safari 17.6 Release Notes](safari-17_6-release-notes.md)
+### Version 17
+- [Safari 17.6 Release Notes](./safari-17_6-release-notes.md)
   Released July 29, 2024 — 17.6 (19618.3.11)
-- [Safari 17.5 Release Notes](safari-17_5-release-notes.md)
+- [Safari 17.5 Release Notes](./safari-17_5-release-notes.md)
   Released May 13, 2024 — 17.5 (19618.2.12)
-- [Safari 17.3 Release Notes](safari-17_3-release-notes.md)
+- [Safari 17.3 Release Notes](./safari-17_3-release-notes.md)
   Released January 22, 2024 — Version 17.3 (19617.2.4)
-- [Safari 17.2 Release Notes](safari-17_2-release-notes.md)
+- [Safari 17.2 Release Notes](./safari-17_2-release-notes.md)
   Released December 11, 2023 — Version 17.2 (19617.1.17)
-- [Safari 17.1 Release Notes](safari-17_1-release-notes.md)
+- [Safari 17.1 Release Notes](./safari-17_1-release-notes.md)
   Released October 25, 2023 — Version 17.1 (19616.2.9)
-- [Safari 17 Release Notes](safari-17-release-notes.md)
+- [Safari 17 Release Notes](./safari-17-release-notes.md)
   Released September 18, 2023 — Version 17 (19616.1.27)
 
 

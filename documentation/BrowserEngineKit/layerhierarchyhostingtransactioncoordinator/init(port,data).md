@@ -1,7 +1,8 @@
 # init(port:data:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transaction coordinator using a Mach port reference and serialized data.
 
@@ -15,9 +16,13 @@ Creates a transaction coordinator using a Mach port reference and serialized dat
 init(port: mach_port_t, data: Data) throws
 ```
 
+```objc
++ (BELayerHierarchyHostingTransactionCoordinator *) coordinatorWithPort:(mach_port_t) port data:(NSData *) data error:(NSError **) error;
+```
+
 #### Discussion
 
-Use this initializer to reconstruct a transaction coordinator that your app serializes using [`encode(_:)`](layerhierarchyhostingtransactioncoordinator/encode(_:).md) in another process.
+Use this initializer to reconstruct a transaction coordinator that your app serializes using [`encode(_:)`](./encode%28_%29.md) in another process.
 
 This method takes ownership of the Mach port send right, even if an error occurs; don’t use or deallocate the port after calling this method.
 
@@ -28,7 +33,8 @@ This method takes ownership of the Mach port send right, even if an error occurs
 
 ## See Also
 
-- [func encode((mach_port_t, Data) -> Void)](layerhierarchyhostingtransactioncoordinator/encode(_:).md)
+### Sharing a transaction coordinator using Mach
+- [func encode((mach_port_t, Data) -> Void)](./encode%28_%29.md)
   Serializes the transaction coordinator into a Mach port reference and accompanying data.
 
 

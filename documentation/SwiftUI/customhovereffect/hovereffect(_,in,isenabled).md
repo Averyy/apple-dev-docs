@@ -1,7 +1,8 @@
 # hoverEffect(_:in:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies this effect in parallel with the given `effect`.
 
@@ -16,7 +17,7 @@ func hoverEffect(_ effect: some CustomHoverEffect, in group: HoverEffectGroup? =
 
 #### Discussion
 
-Use `hoverEffect(_:)` to combine two effects into a single effect that applies both effects in parallel. Modifiers like [`hoverEffectDisabled(_:)`](customhovereffect/hovereffectdisabled(_:).md) applied to `effect` will not apply to this effect.
+Use `hoverEffect(_:)` to combine two effects into a single effect that applies both effects in parallel. Modifiers like [`hoverEffectDisabled(_:)`](./hovereffectdisabled%28_%29.md) applied to `effect` will not apply to this effect.
 
 For example, in the following effect only the `ScaleUpEffect` is disabled, since modifiers applied to that effect are applied independently.
 
@@ -47,19 +48,20 @@ struct ScaleUpEffect: CustomHoverEffect {
 
 ## Parameters
 
-- `effect`: A [`CustomHoverEffect`](customhovereffect.md) to combine with this effect.
-- `group`: An optional [`HoverEffectGroup`](hovereffectgroup.md) to add this effect to.
+- `effect`: A [`CustomHoverEffect`](../customhovereffect.md) to combine with this effect.
+- `group`: An optional [`HoverEffectGroup`](../hovereffectgroup.md) to add this effect to.
 - `isEnabled`: Whether `effect` is enabled or not.
 
 ## See Also
 
-- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](customhovereffect/hovereffect(in:isenabled:body:)-swift.method.md)
+### Creating custom hover effects
+- [func hoverEffect(in: HoverEffectGroup?, isEnabled: Bool, body: (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some CustomHoverEffect](./hovereffect%28in,isenabled,body%29-swift.method.md)
   Applies a hover effect based on the current phase.
-- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(_:)-swift.method.md)
+- [func hoverEffectGroup(HoverEffectGroup?) -> some CustomHoverEffect](./hovereffectgroup%28_%29-swift.method.md)
   Activates this effect as part of an effect group.
-- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](customhovereffect/hovereffectgroup(id:in:behavior:)-swift.method.md)
+- [func hoverEffectGroup(id: String?, in: Namespace.ID, behavior: HoverEffectGroup.Behavior) -> some CustomHoverEffect](./hovereffectgroup%28id,in,behavior%29-swift.method.md)
   Activates this effect as part of an effect group.
-- [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](customhovereffect/hovereffectdisabled(_:).md)
+- [func hoverEffectDisabled(Bool) -> some CustomHoverEffect](./hovereffectdisabled%28_%29.md)
   Disables this hover effect.
 
 

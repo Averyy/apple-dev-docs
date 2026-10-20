@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates an entry in the object shader argument table with a new location within the entry’s current buffer.
@@ -20,32 +21,39 @@ Updates an entry in the object shader argument table with a new location within 
 func setObjectBufferOffset(_ offset: Int, index: Int)
 ```
 
+```objc
+- (void) setObjectBufferOffset:(NSUInteger) offset atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 The command this method encodes changes the offset for a mesh buffer that already has a previous assignment from one of your earlier commands.
 
 For more information, see:
 
-- [`setObjectBuffer(_:offset:index:)`](mtlrendercommandencoder/setobjectbuffer(_:offset:index:).md)
-- [`setObjectBuffers(_:offsets:range:)`](mtlrendercommandencoder/setobjectbuffers(_:offsets:range:).md) (Swift)
-- [`setObjectBuffers:offsets:withRange:`](mtlrendercommandencoder/setobjectbuffers:offsets:withrange:.md) (Objective-C)
+- [`setObjectBuffer(_:offset:index:)`](./setobjectbuffer%28_,offset,index%29.md)
+- [`setObjectBuffers(_:offsets:range:)`](./setobjectbuffers%28_,offsets,range%29.md) (Swift)
+- [`setObjectBuffers:offsets:withRange:`](./setobjectbuffers_offsets_withrange_.md) (Objective-C)
 
-The command can also adjust the offset for an entry that you previously set with the [`setObjectBytes(_:length:index:)`](mtlrendercommandencoder/setobjectbytes(_:length:index:).md) method.
+The command can also adjust the offset for an entry that you previously set with the [`setObjectBytes(_:length:index:)`](./setobjectbytes%28_,length,index%29.md) method.
 
 > 💡 **Tip**:  If you’re only updating an offset, this method is typically more efficient than rebinding a buffer or byte block with the methods above.
 
 ## Parameters
 
-- `offset`: An integer that represents the location, in bytes, from the start of `buffer` where the object shader argument data begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
-- `index`: An integer that represents the entry in the object shader argument table for buffers that already stores a record of an [`MTLBuffer`](mtlbuffer.md).
+- `offset`: An integer that represents the location, in bytes, from the start of `buffer` where the object shader argument data begins.
+
+  See the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `index`: An integer that represents the entry in the object shader argument table for buffers that already stores a record of an [`MTLBuffer`](../mtlbuffer.md).
 
 ## See Also
 
-- [func setObjectBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlrendercommandencoder/setobjectbuffer(_:offset:index:).md)
+### Assigning buffers for object shaders
+- [func setObjectBuffer((any MTLBuffer)?, offset: Int, index: Int)](./setobjectbuffer%28_,offset,index%29.md)
   Assigns a buffer to an entry in the object shader argument table.
-- [func setObjectBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlrendercommandencoder/setobjectbuffers(_:offsets:range:).md)
+- [func setObjectBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setobjectbuffers%28_,offsets,range%29.md)
   Assigns multiple buffers to a range of entries in the object shader argument table.
-- [func setObjectBytes(UnsafeRawPointer, length: Int, index: Int)](mtlrendercommandencoder/setobjectbytes(_:length:index:).md)
+- [func setObjectBytes(UnsafeRawPointer, length: Int, index: Int)](./setobjectbytes%28_,length,index%29.md)
   Creates a buffer from bytes and assigns it to an entry in the object shader argument table.
 
 

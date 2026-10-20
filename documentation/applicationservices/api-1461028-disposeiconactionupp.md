@@ -1,7 +1,8 @@
 # DisposeIconActionUPP(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func DisposeIconActionUPP(_ userUPP: IconActionUPP!)
+```
+
+```c
+void DisposeIconActionUPP(IconActionUPP userUPP);
 ```
 
 

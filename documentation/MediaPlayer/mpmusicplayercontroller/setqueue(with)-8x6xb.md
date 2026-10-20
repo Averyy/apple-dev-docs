@@ -1,7 +1,8 @@
 # setQueue(with:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a music player’s playback queue using with media items identified by the store identifiers.
 
@@ -18,9 +19,13 @@ Sets a music player’s playback queue using with media items identified by the 
 func setQueue(with storeIDs: [String])
 ```
 
+```objc
+- (void) setQueueWithStoreIDs:(NSArray<NSString *> *) storeIDs;
+```
+
 #### Discussion
 
-To begin playback after establishing a playback queue, call [`prepareToPlay()`](mpmediaplayback/preparetoplay().md).
+To begin playback after establishing a playback queue, call [`prepareToPlay()`](../mpmediaplayback/preparetoplay%28%29.md).
 
 ## Parameters
 
@@ -28,11 +33,12 @@ To begin playback after establishing a playback queue, call [`prepareToPlay()`](
 
 ## See Also
 
-- [func setQueue(with: MPMediaQuery)](mpmusicplayercontroller/setqueue(with:)-5rii3.md)
+### Setting up a playback queue
+- [func setQueue(with: MPMediaQuery)](./setqueue%28with%29-5rii3.md)
   Sets a music player’s playback queue based on a media query.
-- [func setQueue(with: MPMediaItemCollection)](mpmusicplayercontroller/setqueue(with:)-xlwk.md)
+- [func setQueue(with: MPMediaItemCollection)](./setqueue%28with%29-xlwk.md)
   Sets a music player’s playback queue using a media item collection.
-- [func setQueue(with: MPMusicPlayerQueueDescriptor)](mpmusicplayercontroller/setqueue(with:)-1izmj.md)
+- [func setQueue(with: MPMusicPlayerQueueDescriptor)](./setqueue%28with%29-1izmj.md)
   Set the music player’s playback queue using media items that fit the queue descriptor properties.
 
 

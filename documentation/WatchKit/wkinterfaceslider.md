@@ -1,7 +1,8 @@
 # WKInterfaceSlider
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface element that lets users select a single floating-point value from a range of values.
 
@@ -12,6 +13,10 @@ An interface element that lets users select a single floating-point value from a
 
 ```swift
 class WKInterfaceSlider
+```
+
+```objc
+@interface WKInterfaceSlider : WKInterfaceObject
 ```
 
 #### Overview
@@ -61,7 +66,7 @@ Xcode lets you configure information about your slider in your storyboard file. 
 | Maximum | The largest numerical value allowed by the slider. |
 | Steps | The number of steps between the minimum and maximum values. The slider uses the number of steps to determine how much to increment or decrement the value when the user interacts with the slider controls. |
 | Continuous | The display style for the slider. When enabled, the slider value displays its value using a solid bar. When disabled, the slider displays its value using discrete steps. |
-| Color | The color of the slider bar. You can also set the color programmatically using the [`setColor(_:)`](wkinterfaceslider/setcolor(_:).md) method. |
+| Color | The color of the slider bar. You can also set the color programmatically using the [`setColor(_:)`](./wkinterfaceslider/setcolor%28_%29.md) method. |
 | Min Image | The name of the image to display next to the minimum value of the slider. This image must be bundled in the WatchKit app. |
 | Max Image | The name of the image to display next to the maximum value of the slider. This image must be bundled with your WatchKit app. |
 | Enabled | A checkbox indicating whether the slider is enabled and whether it sends events when its value changes. |
@@ -69,49 +74,50 @@ Xcode lets you configure information about your slider in your storyboard file. 
 ## Topics
 
 ### Setting the Slider Value
-- [func setValue(Float)](wkinterfaceslider/setvalue(_:).md)
+- [func setValue(Float)](./wkinterfaceslider/setvalue%28_%29.md)
   Changes the value of the slider.
-- [func setColor(UIColor?)](wkinterfaceslider/setcolor(_:).md)
+- [func setColor(UIColor?)](./wkinterfaceslider/setcolor%28_%29.md)
   Sets the color of the slider bar.
-- [func setNumberOfSteps(Int)](wkinterfaceslider/setnumberofsteps(_:).md)
+- [func setNumberOfSteps(Int)](./wkinterfaceslider/setnumberofsteps%28_%29.md)
   Sets the number of steps for the slider.
 ### Enabling the Slider
-- [func setEnabled(Bool)](wkinterfaceslider/setenabled(_:).md)
+- [func setEnabled(Bool)](./wkinterfaceslider/setenabled%28_%29.md)
   Enables or disables the slider.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md)
+### Controls
+- [class WKInterfaceLabel](./wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md)
+- [class WKInterfaceDate](./wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md)
+- [class WKInterfaceTimer](./wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceButton](wkinterfacebutton.md)
+- [class WKInterfaceButton](./wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
+- [class WKInterfaceAuthorizationAppleIDButton](./wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
+- [class WKInterfacePaymentButton](./wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md)
+- [class WKInterfaceTextField](./wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSwitch](wkinterfaceswitch.md)
+- [class WKInterfaceSwitch](./wkinterfaceswitch.md)
   An interface element that toggles between an On and Off state.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
+- [class WKInterfaceActivityRing](./wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
-- [class WKInterfaceMap](wkinterfacemap.md)
+- [class WKInterfaceMap](./wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

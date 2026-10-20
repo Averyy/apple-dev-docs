@@ -1,7 +1,8 @@
 # startPoint
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting point along the envelope’s duration.
 
@@ -19,15 +20,20 @@ The starting point along the envelope’s duration.
 var startPoint: simd_double2 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_double2 startPoint;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the [`init(startPoint:segments:)`](phaseenvelope/init(startpoint:segments:).md) argument.
+The framework sets the value of this property to the [`init(startPoint:segments:)`](./init%28startpoint,segments%29.md) argument.
 
 ## See Also
 
-- [func evaluate(x: Double) -> Double](phaseenvelope/evaluate(x:).md)
+### Inspecting the Envelope
+- [func evaluate(x: Double) -> Double](./evaluate%28x%29.md)
   Provides the height of the envelope for an input value.
-- [var segments: [PHASEEnvelopeSegment]](phaseenvelope/segments.md)
+- [var segments: [PHASEEnvelopeSegment]](./segments.md)
   An array of the envelope’s segments.
 
 

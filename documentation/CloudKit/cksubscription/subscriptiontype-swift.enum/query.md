@@ -1,7 +1,8 @@
 # CKSubscription.SubscriptionType.query
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the subscription is query-based.
 
@@ -10,7 +11,7 @@ A constant that indicates the subscription is query-based.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 6.0+
 
@@ -20,11 +21,16 @@ A constant that indicates the subscription is query-based.
 case query
 ```
 
+```c
+CKSubscriptionTypeQuery
+```
+
 ## See Also
 
-- [CKSubscription.SubscriptionType.database](cksubscription/subscriptiontype-swift.enum/database.md)
+### Subscription Types
+- [CKSubscription.SubscriptionType.database](./database.md)
   A constant that indicates the subscription is database-based.
-- [CKSubscription.SubscriptionType.recordZone](cksubscription/subscriptiontype-swift.enum/recordzone.md)
+- [CKSubscription.SubscriptionType.recordZone](./recordzone.md)
   A constant that indicates the subscription is zone-based.
 
 

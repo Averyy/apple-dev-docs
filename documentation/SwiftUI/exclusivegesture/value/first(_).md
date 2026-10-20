@@ -1,7 +1,8 @@
 # ExclusiveGesture.Value.first(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The first of two gestures succeeded.
 
@@ -22,7 +23,8 @@ case first(First.Value)
 
 ## See Also
 
-- [ExclusiveGesture.Value.second(_:)](exclusivegesture/value/second(_:).md)
+### Getting gesture values
+- [ExclusiveGesture.Value.second(_:)](./second%28_%29.md)
   The second of two gestures succeeded.
 
 

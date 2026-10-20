@@ -1,14 +1,15 @@
 # ifnetem_corruption_p
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t ifnetem_corruption_p;
 ```
 

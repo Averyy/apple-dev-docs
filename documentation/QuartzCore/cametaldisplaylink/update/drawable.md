@@ -1,7 +1,8 @@
 # drawable
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal drawable your app uses to render the next frame.
 
@@ -19,9 +20,14 @@ The Metal drawable your app uses to render the next frame.
 var drawable: any CAMetalDrawable { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<CAMetalDrawable> drawable;
+```
+
 ## See Also
 
-- [var targetTimestamp: CFTimeInterval](cametaldisplaylink/update/targettimestamp.md)
+### Drawing the Next Frame
+- [var targetTimestamp: CFTimeInterval](./targettimestamp.md)
   A deadline that indicates when your app needs to finish rendering to the drawable.
 
 

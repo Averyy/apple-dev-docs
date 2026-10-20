@@ -1,6 +1,7 @@
 # image
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An image file for which the runtime should search.
 
@@ -14,9 +15,9 @@ Assign this property a path to a PNG or JPEG file.
 uniform asset image
 ```
 
-##### Define a Reference Image
+##### Define a reference image
 
-The following [`Preliminary_ReferenceImage`](preliminary-referenceimage.md) assigns this property a file named `image.png`.
+The following [Preliminary_ReferenceImage](./preliminary-referenceimage.md) assigns this property a file named `image.png`.
 
 ```other
 def Preliminary_ReferenceImage "ImageReference"
@@ -28,7 +29,8 @@ def Preliminary_ReferenceImage "ImageReference"
 
 ## See Also
 
-- [physicalWidth](physicalwidth.md)
+### Properties
+- [physicalWidth](./physicalwidth.md)
   An image’s width in centimeters.
 
 

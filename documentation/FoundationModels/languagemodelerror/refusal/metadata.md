@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the failure, keyed by name.
 
@@ -21,7 +22,8 @@ var metadata: [String : any Sendable]
 
 ## See Also
 
-- [var debugDescription: String](languagemodelerror/refusal/debugdescription.md)
+### Inspecting refusal errors
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

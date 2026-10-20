@@ -1,7 +1,8 @@
 # previewLayer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer that displays a camera preview the coordinator calculates a video rotation angle for.
 
@@ -18,13 +19,18 @@ The layer that displays a camera preview the coordinator calculates a video rota
 weak var previewLayer: CALayer? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) CALayer * previewLayer;
+```
+
 #### Discussion
 
-The coordinator updates its [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) property by monitoring the layer and the physical rotation of [`device`](avcapturedevice/rotationcoordinator/device.md).
+The coordinator updates its [`videoRotationAngleForHorizonLevelPreview`](./videorotationangleforhorizonlevelpreview.md) property by monitoring the layer and the physical rotation of [`device`](./device.md).
 
 ## See Also
 
-- [var device: AVCaptureDevice?](avcapturedevice/rotationcoordinator/device.md)
+### Inspecting a coordinator’s configuration
+- [var device: AVCaptureDevice?](./device.md)
   The capture device the coordinator monitors to track its physical rotation.
 
 

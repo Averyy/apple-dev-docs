@@ -1,7 +1,8 @@
 # XMLDocument.ContentKind.xhtml
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The document output is XHTML.
 
@@ -15,17 +16,22 @@ The document output is XHTML.
 case xhtml
 ```
 
+```c
+NSXMLDocumentXHTMLKind
+```
+
 #### Discussion
 
 This is set automatically if the `NSXMLDocumentTidyHTML` option is set and NSXML detects HTML.
 
 ## See Also
 
-- [XMLDocument.ContentKind.html](xmldocument/contentkind/html.md)
+### Enumeration Cases
+- [XMLDocument.ContentKind.html](./html.md)
   Outputs empty tags in HTML without a close tag, such as `<br>`.
-- [XMLDocument.ContentKind.text](xmldocument/contentkind/text.md)
+- [XMLDocument.ContentKind.text](./text.md)
   Outputs the string value of the document by extracting the string values from all text nodes.
-- [XMLDocument.ContentKind.xml](xmldocument/contentkind/xml.md)
+- [XMLDocument.ContentKind.xml](./xml.md)
   The default type of document content type, which is XML.
 
 

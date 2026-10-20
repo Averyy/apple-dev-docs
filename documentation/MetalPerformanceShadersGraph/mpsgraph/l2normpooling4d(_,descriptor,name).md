@@ -1,7 +1,8 @@
 # L2NormPooling4D(_:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 4D L2-norm pooling operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 4D L2-norm pooling operation and returns the result tensor.
 
 ```swift
 func L2NormPooling4D(_ source: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) L2NormPooling4DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

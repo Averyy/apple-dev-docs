@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kATSUseCaretOrigins: Int](katsusecaretorigins.md)
-- [var kATSUseDeviceOrigins: Int](katsusedeviceorigins.md)
-- [var kATSUseFractionalOrigins: Int](katsusefractionalorigins.md)
-- [var kATSUseOriginFlags: Int](katsuseoriginflags.md)
+- [var kATSUseCaretOrigins: Int](../katsusecaretorigins.md)
+- [var kATSUseDeviceOrigins: Int](../katsusedeviceorigins.md)
+- [var kATSUseFractionalOrigins: Int](../katsusefractionalorigins.md)
+- [var kATSUseOriginFlags: Int](../katsuseoriginflags.md)
 
 
 ---

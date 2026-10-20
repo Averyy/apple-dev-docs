@@ -1,7 +1,8 @@
 # invalidateAttributes(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates attributes in the specified range.
 
@@ -18,9 +19,13 @@ Invalidates attributes in the specified range.
 func invalidateAttributes(in range: NSRange)
 ```
 
+```objc
+- (void) invalidateAttributesInRange:(NSRange) range;
+```
+
 #### Discussion
 
-Called from [`processEditing()`](nstextstorage/processediting().md) to invalidate attributes when the text storage changes. If the receiver isn’t lazy, this method calls [`fixAttributes(in:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/fixattributes(in:)). If lazy attribute fixing is in effect, this method instead records the range needing fixing.
+Called from [`processEditing()`](./processediting%28%29.md) to invalidate attributes when the text storage changes. If the receiver isn’t lazy, this method calls [`fixAttributes(in:)`](../../Foundation/nsmutableattributedstring/fixattributes%28in%29.md). If lazy attribute fixing is in effect, this method instead records the range needing fixing.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Called from [`processEditing()`](nstextstorage/processediting().md) to invalidat
 
 ## See Also
 
-- [func ensureAttributesAreFixed(in: NSRange)](nstextstorage/ensureattributesarefixed(in:).md)
+### Fixing the string attributes
+- [func ensureAttributesAreFixed(in: NSRange)](./ensureattributesarefixed%28in%29.md)
   Ensures that attribute fixing occurs in the specified range.
-- [var fixesAttributesLazily: Bool](nstextstorage/fixesattributeslazily.md)
+- [var fixesAttributesLazily: Bool](./fixesattributeslazily.md)
   A Boolean value that indicates whether the text storage object fixes attributes lazily.
 
 

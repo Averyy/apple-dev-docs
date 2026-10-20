@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.arabic
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Arabic in the HID specification.
 

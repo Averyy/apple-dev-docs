@@ -1,7 +1,8 @@
 # IntentWidgetFamily.accessoryInline
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A flat widget that contains a single row of text and an optional image.
 
@@ -10,7 +11,7 @@ A flat widget that contains a single row of text and an optional image.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

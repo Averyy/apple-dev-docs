@@ -1,7 +1,8 @@
 # minuteForecast
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minute-by-minute forecast.
 
@@ -26,13 +27,14 @@ Depending upon region support and data availability, this may be `nil`.
 
 ## See Also
 
-- [var availability: WeatherAvailability](weather/availability.md)
+### Getting the forecast
+- [var availability: WeatherAvailability](./availability.md)
   Flags containing information about data availability and attribution.
-- [var currentWeather: CurrentWeather](weather/currentweather.md)
+- [var currentWeather: CurrentWeather](./currentweather.md)
   The current weather forecast.
-- [var dailyForecast: Forecast<DayWeather>](weather/dailyforecast.md)
+- [var dailyForecast: Forecast<DayWeather>](./dailyforecast.md)
   The daily forecast.
-- [var hourlyForecast: Forecast<HourWeather>](weather/hourlyforecast.md)
+- [var hourlyForecast: Forecast<HourWeather>](./hourlyforecast.md)
   The hourly forecast.
 
 

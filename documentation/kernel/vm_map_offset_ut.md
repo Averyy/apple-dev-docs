@@ -1,14 +1,15 @@
 # vm_map_offset_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef vm_map_offset_t vm_map_offset_ut;
 ```
 

@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the gesture in radians.
 
@@ -14,13 +15,18 @@ The rotation of the gesture in radians.
 var rotation: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat rotation;
+```
+
 #### Discussion
 
-This property contains the current rotation in effect for the gesture. Changing the value in this property also updates the value in the [`rotationInDegrees`](nsrotationgesturerecognizer/rotationindegrees.md) property.
+This property contains the current rotation in effect for the gesture. Changing the value in this property also updates the value in the [`rotationInDegrees`](./rotationindegrees.md) property.
 
 ## See Also
 
-- [var rotationInDegrees: CGFloat](nsrotationgesturerecognizer/rotationindegrees.md)
+### Interpreting the gesture
+- [var rotationInDegrees: CGFloat](./rotationindegrees.md)
   The rotation of the gesture in degrees.
 
 

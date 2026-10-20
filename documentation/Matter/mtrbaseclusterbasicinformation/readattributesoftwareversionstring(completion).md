@@ -1,7 +1,8 @@
 # readAttributeSoftwareVersionString(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSoftwareVersionString(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSoftwareVersionString() async throws -> String
+```
+
+```objc
+- (void) readAttributeSoftwareVersionStringWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

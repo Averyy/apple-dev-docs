@@ -1,7 +1,8 @@
 # condensed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.10+
@@ -12,11 +13,16 @@
 static let condensed: NSFont.Width
 ```
 
+```c
+extern const NSFontWidth NSFontWidthCondensed;
+```
+
 ## See Also
 
-- [static let compressed: NSFont.Width](nsfont/width/compressed.md)
-- [static let expanded: NSFont.Width](nsfont/width/expanded.md)
-- [static let standard: NSFont.Width](nsfont/width/standard.md)
+### Type Properties
+- [static let compressed: NSFont.Width](./compressed.md)
+- [static let expanded: NSFont.Width](./expanded.md)
+- [static let standard: NSFont.Width](./standard.md)
 
 
 ---

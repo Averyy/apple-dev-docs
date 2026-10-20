@@ -1,16 +1,17 @@
 # isRecordZoneNotification
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value indicating whether this notification is a [`CloudKit.RecordZoneNotification`](cloudkit.recordzonenotification.md) object.
+A Boolean value indicating whether this notification is a [`CloudKit.RecordZoneNotification`](../cloudkit.recordzonenotification.md) object.
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isRecordZoneNotification;
 ```
 
@@ -20,7 +21,8 @@ This property is `true`.
 
 ## See Also
 
-- [notificationType](cloudkit.recordzonenotification/notificationtype.md)
+### Getting the Notification Type
+- [notificationType](./notificationtype.md)
   The type of notification.
 
 

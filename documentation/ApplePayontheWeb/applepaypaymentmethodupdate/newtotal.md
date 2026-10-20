@@ -1,7 +1,8 @@
 # newTotal
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The new total that results from the user’s change to the payment method.
 
@@ -11,7 +12,7 @@ The new total that results from the user’s change to the payment method.
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem newTotal;
 ```
 
@@ -21,11 +22,12 @@ Calculate the total for the payment, as it may change after the user updated the
 
 ## See Also
 
-- [newLineItems](applepaypaymentmethodupdate/newlineitems.md)
+### Updating payment method properties
+- [newLineItems](./newlineitems.md)
   An optional list of updated line items for the payment request that results from the user’s change to the payment method.
-- [errors](applepaypaymentmethodupdate/errors.md)
+- [errors](./errors.md)
   A list of customized errors you provide that results from the user’s change to the payment method.
-- [newShippingMethods](applepaypaymentmethodupdate/newshippingmethods.md)
+- [newShippingMethods](./newshippingmethods.md)
   The updated list of available shipping methods that results from the user’s change to the payment method.
 
 

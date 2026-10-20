@@ -1,7 +1,8 @@
 # BetaTesterBuildsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,7 +11,7 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BetaTesterBuildsLinkagesRequest.Data
 ```
 
@@ -18,6 +19,8 @@ object BetaTesterBuildsLinkagesRequest.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `builds`
 
 
 ---

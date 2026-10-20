@@ -1,10 +1,11 @@
 # kBluetoothHCIEventPacketHeaderSize
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,16 +13,21 @@
 var kBluetoothHCIEventPacketHeaderSize: Int { get }
 ```
 
+```c
+kBluetoothHCIEventPacketHeaderSize
+```
+
 ## See Also
 
-- [var kBluetoothHCICommandPacketHeaderSize: Int](kbluetoothhcicommandpacketheadersize.md)
-- [var kBluetoothHCICommandPacketMaxDataSize: Int](kbluetoothhcicommandpacketmaxdatasize.md)
-- [var kBluetoothHCIDataPacketHeaderSize: Int](kbluetoothhcidatapacketheadersize.md)
-- [var kBluetoothHCIDataPacketMaxDataSize: Int](kbluetoothhcidatapacketmaxdatasize.md)
-- [var kBluetoothHCIEventPacketMaxDataSize: Int](kbluetoothhcieventpacketmaxdatasize.md)
-- [var kBluetoothHCIMaxCommandPacketSize: Int](kbluetoothhcimaxcommandpacketsize.md)
-- [var kBluetoothHCIMaxDataPacketSize: Int](kbluetoothhcimaxdatapacketsize.md)
-- [var kBluetoothHCIMaxEventPacketSize: Int](kbluetoothhcimaxeventpacketsize.md)
+### Constants
+- [var kBluetoothHCICommandPacketHeaderSize: Int](./kbluetoothhcicommandpacketheadersize.md)
+- [var kBluetoothHCICommandPacketMaxDataSize: Int](./kbluetoothhcicommandpacketmaxdatasize.md)
+- [var kBluetoothHCIDataPacketHeaderSize: Int](./kbluetoothhcidatapacketheadersize.md)
+- [var kBluetoothHCIDataPacketMaxDataSize: Int](./kbluetoothhcidatapacketmaxdatasize.md)
+- [var kBluetoothHCIEventPacketMaxDataSize: Int](./kbluetoothhcieventpacketmaxdatasize.md)
+- [var kBluetoothHCIMaxCommandPacketSize: Int](./kbluetoothhcimaxcommandpacketsize.md)
+- [var kBluetoothHCIMaxDataPacketSize: Int](./kbluetoothhcimaxdatapacketsize.md)
+- [var kBluetoothHCIMaxEventPacketSize: Int](./kbluetoothhcimaxeventpacketsize.md)
 
 
 ---

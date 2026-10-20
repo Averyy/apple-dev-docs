@@ -1,7 +1,8 @@
 # shouldAddToSelection
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the tab should be added to the current tab selection.
 
@@ -18,9 +19,13 @@ Indicates whether the tab should be added to the current tab selection.
 var shouldAddToSelection: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL shouldAddToSelection;
+```
+
 #### Discussion
 
-If this property is `YES`, the tab should be part of the current selection, but not necessarily become the active tab unless [`shouldBeActive`](wkwebextension/tabconfiguration/shouldbeactive.md) is also `YES`. If this property is `NO`, the tab shouldn’t be part of the current selection.
+If this property is `YES`, the tab should be part of the current selection, but not necessarily become the active tab unless [`shouldBeActive`](./shouldbeactive.md) is also `YES`. If this property is `NO`, the tab shouldn’t be part of the current selection.
 
 
 ---

@@ -1,7 +1,8 @@
 # DockAccessory.TrackingStates.Element
 
 **Framework**: DockKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A tracking session state.
 

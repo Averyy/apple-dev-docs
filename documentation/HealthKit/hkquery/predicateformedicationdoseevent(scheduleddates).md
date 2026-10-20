@@ -1,7 +1,8 @@
 # predicateForMedicationDoseEvent(scheduledDates:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func predicateForMedicationDoseEvent(scheduledDates: Set<Date>) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForMedicationDoseEventWithScheduledDates:(NSSet<NSDate *> *) scheduledDates;
 ```
 
 #### Discussion

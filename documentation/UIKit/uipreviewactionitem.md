@@ -1,7 +1,8 @@
 # UIPreviewActionItem
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the styles you can apply to peek quick actions and peek quick action groups, and defines a read-only accessor for the user-visible title of a peek quick action.
 
@@ -19,34 +20,39 @@ A set of methods that defines the styles you can apply to peek quick actions and
 protocol UIPreviewActionItem : NSObjectProtocol
 ```
 
+```objc
+@protocol UIPreviewActionItem <NSObject>
+```
+
 #### Overview
 
 > ❗ **Important**:  Don’t adopt this protocol in custom classes.
 
-The [`UIPreviewActionItem`](uipreviewactionitem.md) protocol is adopted by the [`UIPreviewAction`](uipreviewaction.md) and [`UIPreviewActionGroup`](uipreviewactiongroup.md) classes.
+The [`UIPreviewActionItem`](./uipreviewactionitem.md) protocol is adopted by the [`UIPreviewAction`](./uipreviewaction.md) and [`UIPreviewActionGroup`](./uipreviewactiongroup.md) classes.
 
 ## Topics
 
 ### Accessing peek quick action properties
-- [var title: String](uipreviewactionitem/title.md)
+- [var title: String](./uipreviewactionitem/title.md)
   The peek quick action item’s title.
 ### Constants
-- [UIPreviewAction.Style](uipreviewaction/style.md)
+- [UIPreviewAction.Style](./uipreviewaction/style.md)
   The style for a peek quick action.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UIPreviewAction](uipreviewaction.md)
-- [UIPreviewActionGroup](uipreviewactiongroup.md)
+- [UIPreviewAction](./uipreviewaction.md)
+- [UIPreviewActionGroup](./uipreviewactiongroup.md)
 
 ## See Also
 
-- [class UIPreviewInteraction](uipreviewinteraction.md)
+### 3D Touch interactions
+- [class UIPreviewInteraction](./uipreviewinteraction.md)
   A class that registers a view to provide a custom user experience in response to 3D Touch interactions.
-- [protocol UIPreviewInteractionDelegate](uipreviewinteractiondelegate.md)
+- [protocol UIPreviewInteractionDelegate](./uipreviewinteractiondelegate.md)
   A set of methods for communicating the progress of a preview interaction.
 
 

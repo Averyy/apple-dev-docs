@@ -1,7 +1,8 @@
 # scalerFlags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 If the mode is scaled, kIOScaleStretchToFit may be set to allow stretching. kIOScaleRotateFlags is mask which may have the value given by kIOScaleRotate90, kIOScaleRotate180, kIOScaleRotate270 to display a rotated framebuffer.
 
@@ -10,7 +11,7 @@ If the mode is scaled, kIOScaleStretchToFit may be set to allow stretching. kIOS
 
 ## Declaration
 
-```swift
+```c
 UInt32 scalerFlags;
 ```
 

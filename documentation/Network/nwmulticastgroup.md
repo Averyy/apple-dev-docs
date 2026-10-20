@@ -1,7 +1,8 @@
 # NWMulticastGroup
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor for a group you use to join an IP multicast group on a local network.
 
@@ -27,33 +28,34 @@ class NWMulticastGroup
 ## Topics
 
 ### Essentials
-- [com.apple.developer.networking.multicast](../bundleresources/entitlements/com.apple.developer.networking.multicast.md)
+- [com.apple.developer.networking.multicast](../BundleResources/entitlements/com.apple.developer.networking.multicast.md)
   A Boolean value that indicates whether an app can send or receive IP multicast traffic.
 ### Defining Multicast Groups
-- [init(for: [NWEndpoint], from: NWEndpoint?, disableUnicast: Bool) throws](nwmulticastgroup/init(for:from:disableunicast:).md)
+- [init(for: [NWEndpoint], from: NWEndpoint?, disableUnicast: Bool) throws](./nwmulticastgroup/init%28for,from,disableunicast%29.md)
   Initializes a multicast group with a set of multicast addresses.
 ### Inspecting Multicast Groups
-- [var members: [NWEndpoint]](nwmulticastgroup/members.md)
+- [var members: [NWEndpoint]](./nwmulticastgroup/members.md)
   The set of IP multicast group addresses that the connection group joins.
-- [let sourceFilter: NWEndpoint?](nwmulticastgroup/sourcefilter.md)
+- [let sourceFilter: NWEndpoint?](./nwmulticastgroup/sourcefilter.md)
   An optional address endpoint you provide to filter received multicast packets.
-- [let isUnicastDisabled: Bool](nwmulticastgroup/isunicastdisabled.md)
+- [let isUnicastDisabled: Bool](./nwmulticastgroup/isunicastdisabled.md)
   A Boolean that specifies whether the connection group rejects unicast traffic.
 
 ## Relationships
 
 ### Conforms To
-- [NWGroupDescriptor](nwgroupdescriptor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NWGroupDescriptor](./nwgroupdescriptor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(with: any NWGroupDescriptor, using: NWParameters)](nwconnectiongroup/init(with:using:).md)
+### Establishing Group Connectivity
+- [init(with: any NWGroupDescriptor, using: NWParameters)](./nwconnectiongroup/init%28with,using%29.md)
   Initializes a new connection group with a group identifier.
-- [protocol NWGroupDescriptor](nwgroupdescriptor.md)
+- [protocol NWGroupDescriptor](./nwgroupdescriptor.md)
   A protocol that defines a group of endpoints with which you can communicate, such as a multicast group.
-- [func start(queue: DispatchQueue)](nwconnectiongroup/start(queue:).md)
+- [func start(queue: DispatchQueue)](./nwconnectiongroup/start%28queue%29.md)
   Joins the group, registers to receive messages, and sets the queue on you handle group events.
 
 

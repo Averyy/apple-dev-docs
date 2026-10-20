@@ -1,7 +1,8 @@
 # MaterialColorParameter.texture(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A texture resource.
 
@@ -11,7 +12,7 @@ A texture resource.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ case texture(TextureResource)
 
 ## See Also
 
-- [MaterialColorParameter.color(_:)](materialcolorparameter/color(_:)-7gx04.md)
+### Selecting color parameters
+- [MaterialColorParameter.color(_:)](./color%28_%29-7gx04.md)
   A color value in macOS.
 
 

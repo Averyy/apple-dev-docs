@@ -1,10 +1,11 @@
 # BluetoothLEConnectionIntervalMin
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var BluetoothLEConnectionIntervalMin: BluetoothLEConnectionInterval { get }
 ```
 
+```c
+BluetoothLEConnectionIntervalMin
+```
+
 ## See Also
 
-- [var BluetoothLEConnectionIntervalMax: BluetoothLEConnectionInterval](bluetoothleconnectionintervalmax.md)
+### Constants
+- [var BluetoothLEConnectionIntervalMax: BluetoothLEConnectionInterval](./bluetoothleconnectionintervalmax.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # compileModel(at:completionHandler:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Compile a model for a device.
 
@@ -26,7 +27,8 @@ class func compileModel(at url: URL, completionHandler handler: @escaping (Resul
 
 ## See Also
 
-- [class compileModel(at:)](mlmodel/compilemodel(at:).md)
+### Compiling a model
+- [class compileModel(at:)](./compilemodel%28at%29.md)
 
 
 ---

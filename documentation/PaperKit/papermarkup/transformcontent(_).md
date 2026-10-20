@@ -1,7 +1,8 @@
 # transformContent(_:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms the contents of this paper with the specified transform.
 

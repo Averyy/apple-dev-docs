@@ -1,7 +1,8 @@
 # PreviewSession.Event.didClose
 
 **Framework**: Quick Look  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session did close.
 

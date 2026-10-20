@@ -1,7 +1,8 @@
 # ReservedRegion.ID
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for a reserved region.
 
@@ -27,23 +28,24 @@ Compare identifiers to find out whether two values describe the same reserved re
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: ReservedRegion.ID](reservedregion/id-swift.property.md)
+### Getting the region’s identity and kind
+- [var id: ReservedRegion.ID](./id-swift.property.md)
   The identifier of the region.
-- [var kind: ReservedRegion.Kind](reservedregion/kind-swift.property.md)
+- [var kind: ReservedRegion.Kind](./kind-swift.property.md)
   The kind of the region.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
+- [ReservedRegion.Kind](./kind-swift.struct.md)
   A kind of reserved region.
 
 

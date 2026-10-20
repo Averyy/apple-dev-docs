@@ -1,7 +1,8 @@
 # NSEdgeInsetsZero
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An edge insets structure with a zero inset on each edge.
 
@@ -15,6 +16,10 @@ An edge insets structure with a zero inset on each edge.
 
 ```swift
 let NSEdgeInsetsZero: NSEdgeInsets
+```
+
+```c
+extern const NSEdgeInsets NSEdgeInsetsZero;
 ```
 
 

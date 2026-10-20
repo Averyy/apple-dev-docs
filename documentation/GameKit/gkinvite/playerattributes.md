@@ -1,7 +1,8 @@
 # playerAttributes
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player attributes for the match.
 
@@ -19,19 +20,32 @@ The player attributes for the match.
 var playerAttributes: UInt32 { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) uint32_t playerAttributes;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) uint32_t playerAttributes;
+```
+
 #### Discussion
 
-The value of this property matches the [`playerAttributes`](gkmatchrequest/playerattributes.md) property of the match request that the other player uses to create the match.
+The value of this property matches the [`playerAttributes`](../gkmatchrequest/playerattributes.md) property of the match request that the other player uses to create the match.
 
 ## See Also
 
-- [var sender: GKPlayer](gkinvite/sender.md)
+### Getting Properties
+- [var sender: GKPlayer](./sender.md)
   The player who sends the invitation.
-- [var playerGroup: Int](gkinvite/playergroup.md)
+- [var playerGroup: Int](./playergroup.md)
   The player group for the match.
-- [var isHosted: Bool](gkinvite/ishosted.md)
+- [var isHosted: Bool](./ishosted.md)
   A Boolean value that indicates whether you host the game on your own servers.
-- [var inviter: String](gkinvite/inviter.md)
+- [var inviter: String](./inviter.md)
   The identifier for the player who sends the invitation.
 
 

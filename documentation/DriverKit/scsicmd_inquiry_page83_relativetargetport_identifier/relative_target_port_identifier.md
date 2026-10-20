@@ -1,17 +1,18 @@
 # RELATIVE_TARGET_PORT_IDENTIFIER
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 UInt16 RELATIVE_TARGET_PORT_IDENTIFIER;
 ```
 

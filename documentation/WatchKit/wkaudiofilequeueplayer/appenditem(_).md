@@ -1,17 +1,22 @@
 # appendItem(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified item to the end of the queue.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 func appendItem(_ item: WKAudioFilePlayerItem)
+```
+
+```objc
+- (void) appendItem:(WKAudioFilePlayerItem *) item;
 ```
 
 ## Parameters
@@ -20,13 +25,14 @@ func appendItem(_ item: WKAudioFilePlayerItem)
 
 ## See Also
 
-- [var items: [WKAudioFilePlayerItem]](wkaudiofilequeueplayer/items.md)
+### Managing Items
+- [var items: [WKAudioFilePlayerItem]](./items.md)
   The array of queued items.
-- [func advanceToNextItem()](wkaudiofilequeueplayer/advancetonextitem.md)
+- [func advanceToNextItem()](./advancetonextitem%28%29.md)
   Ends playback of the current item and begins playing the next item in the queue.
-- [func removeItem(WKAudioFilePlayerItem)](wkaudiofilequeueplayer/removeitem(_:).md)
+- [func removeItem(WKAudioFilePlayerItem)](./removeitem%28_%29.md)
   Removes the specified item from the queue.
-- [func removeAllItems()](wkaudiofilequeueplayer/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items from the queue.
 
 

@@ -1,7 +1,8 @@
 # daily
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A daily display frequency.
 

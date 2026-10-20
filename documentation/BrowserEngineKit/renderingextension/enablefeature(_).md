@@ -1,7 +1,8 @@
 # enableFeature(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables the specified feature.
 

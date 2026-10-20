@@ -1,29 +1,31 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## See Also
 
-- [retain](osobject/retain.md)
+### Managing the Object Lifecycle
+- [retain](./retain.md)
   Retains the OSObject instance
-- [release](osobject/release.md)
+- [release](./release.md)
   Releases the OSObject instance
-- [free](osobject/free.md)
-- [OSObjectPtr](osobjectptr.md)
-- [OSObjectRef](osobjectref.md)
+- [free](./free.md)
+- [OSObjectPtr](../osobjectptr.md)
+- [OSObjectRef](../osobjectref.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setLoops(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a Boolean value indicating whether the movie plays in a continuous loop.
 
@@ -14,19 +15,24 @@ Sets a Boolean value indicating whether the movie plays in a continuous loop.
 func setLoops(_ loops: Bool)
 ```
 
+```objc
+- (void) setLoops:(BOOL) loops;
+```
+
 ## Parameters
 
-- `loops`: A Boolean value indicating the looping behavior. Specify [`true`](https://developer.apple.com/documentation/swift/true) to play the movie in a continuous loop or [`false`](https://developer.apple.com/documentation/swift/false) to play the movie once and then stop playback. Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+- `loops`: A Boolean value indicating the looping behavior. Specify [`true`](../../Swift/true.md) to play the movie in a continuous loop or [`false`](../../Swift/false.md) to play the movie once and then stop playback. Defaults to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func setAutoplays(Bool)](wkinterfaceinlinemovie/setautoplays(_:).md)
+### Setting Movie Properties
+- [func setAutoplays(Bool)](./setautoplays%28_%29.md)
   Sets a Boolean value indicating whether the movie automatically begins playing as soon as the scene is presented.
-- [func setMovieURL(URL)](wkinterfaceinlinemovie/setmovieurl(_:).md)
+- [func setMovieURL(URL)](./setmovieurl%28_%29.md)
   Sets the URL of the movie to play.
-- [func setPosterImage(WKImage?)](wkinterfaceinlinemovie/setposterimage(_:).md)
+- [func setPosterImage(WKImage?)](./setposterimage%28_%29.md)
   Sets the poster image to display for the movie.
-- [func setVideoGravity(WKVideoGravity)](wkinterfaceinlinemovie/setvideogravity(_:).md)
+- [func setVideoGravity(WKVideoGravity)](./setvideogravity%28_%29.md)
   Sets the resizing behavior for the movie content.
 
 

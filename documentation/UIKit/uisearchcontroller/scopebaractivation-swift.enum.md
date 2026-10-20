@@ -1,7 +1,8 @@
 # UISearchController.ScopeBarActivation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the modes for showing and hiding the scope bar.
 
@@ -17,55 +18,60 @@ Constants that specify the modes for showing and hiding the scope bar.
 enum ScopeBarActivation
 ```
 
+```c
+enum UISearchControllerScopeBarActivation : NSInteger;
+```
+
 #### Overview
 
-You use these constants with the [`scopeBarActivation`](uisearchcontroller/scopebaractivation-swift.property.md) property.
+You use these constants with the [`scopeBarActivation`](./scopebaractivation-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UISearchController.ScopeBarActivation.automatic](uisearchcontroller/scopebaractivation-swift.enum/automatic.md)
+- [UISearchController.ScopeBarActivation.automatic](./scopebaractivation-swift.enum/automatic.md)
   A mode in which the system automatically determines when to show and hide the scope bar.
-- [UISearchController.ScopeBarActivation.manual](uisearchcontroller/scopebaractivation-swift.enum/manual.md)
+- [UISearchController.ScopeBarActivation.manual](./scopebaractivation-swift.enum/manual.md)
   A mode that gives you manual control over when to show and hide the scope bar.
-- [UISearchController.ScopeBarActivation.onTextEntry](uisearchcontroller/scopebaractivation-swift.enum/ontextentry.md)
+- [UISearchController.ScopeBarActivation.onTextEntry](./scopebaractivation-swift.enum/ontextentry.md)
   A mode in which the search controller shows the scope bar when typing begins in the search field, and hides it after search cancellation.
-- [UISearchController.ScopeBarActivation.onSearchActivation](uisearchcontroller/scopebaractivation-swift.enum/onsearchactivation.md)
+- [UISearchController.ScopeBarActivation.onSearchActivation](./scopebaractivation-swift.enum/onsearchactivation.md)
   A mode in which the search controller shows the scope bar when search becomes active, and hides it after search cancellation.
 ### Initializers
-- [init?(rawValue: Int)](uisearchcontroller/scopebaractivation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scopebaractivation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var obscuresBackgroundDuringPresentation: Bool](uisearchcontroller/obscuresbackgroundduringpresentation.md)
+### Configuring the search interface
+- [var obscuresBackgroundDuringPresentation: Bool](./obscuresbackgroundduringpresentation.md)
   A Boolean indicating whether to obscure the underlying content during a search.
-- [var hidesNavigationBarDuringPresentation: Bool](uisearchcontroller/hidesnavigationbarduringpresentation.md)
+- [var hidesNavigationBarDuringPresentation: Bool](./hidesnavigationbarduringpresentation.md)
   A Boolean indicating whether to hide the navigation bar when searching.
-- [var automaticallyShowsCancelButton: Bool](uisearchcontroller/automaticallyshowscancelbutton.md)
+- [var automaticallyShowsCancelButton: Bool](./automaticallyshowscancelbutton.md)
   A Boolean indicating whether the search controller manages the visibility of the search bar’s cancel button.
-- [var automaticallyShowsSearchResultsController: Bool](uisearchcontroller/automaticallyshowssearchresultscontroller.md)
+- [var automaticallyShowsSearchResultsController: Bool](./automaticallyshowssearchresultscontroller.md)
   A Boolean indicating whether the search controller manages the visibility of its results controller.
-- [var showsSearchResultsController: Bool](uisearchcontroller/showssearchresultscontroller.md)
+- [var showsSearchResultsController: Bool](./showssearchresultscontroller.md)
   A Boolean indicating whether the search results controller is visible when the search controller is active.
-- [var searchBarPlacement: UINavigationItem.SearchBarPlacement](uisearchcontroller/searchbarplacement.md)
+- [var searchBarPlacement: UINavigationItem.SearchBarPlacement](./searchbarplacement.md)
   The placement of the search bar in the navigation bar.
-- [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md)
+- [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](./ignoressearchsuggestionsforsearchbarplacementstacked.md)
   A Boolean value you use to specify whether the search controller prevents search suggestions from displaying for a stacked search bar.
-- [var scopeBarActivation: UISearchController.ScopeBarActivation](uisearchcontroller/scopebaractivation-swift.property.md)
+- [var scopeBarActivation: UISearchController.ScopeBarActivation](./scopebaractivation-swift.property.md)
   A mode that determines when the search controller shows and hides the scope bar.
-- [var automaticallyShowsScopeBar: Bool](uisearchcontroller/automaticallyshowsscopebar.md)
+- [var automaticallyShowsScopeBar: Bool](./automaticallyshowsscopebar.md)
   A Boolean indicating whether the search controller manages the visibility of the search bar’s scope bar.
-- [var dimsBackgroundDuringPresentation: Bool](uisearchcontroller/dimsbackgroundduringpresentation.md)
+- [var dimsBackgroundDuringPresentation: Bool](./dimsbackgroundduringpresentation.md)
   A Boolean indicating whether to dim the underlying content during a search.
 
 

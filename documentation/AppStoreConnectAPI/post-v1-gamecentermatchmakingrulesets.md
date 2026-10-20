@@ -1,7 +1,8 @@
 # Create a Rule Set
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a rule set to contain matchmaking rules and teams.
 
@@ -14,7 +15,7 @@ Create a rule set to contain matchmaking rules and teams.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1//gameCenterMatchmakingRuleSets
 {
     “data”: {
@@ -77,11 +78,27 @@ POST https://api.appstoreconnect.apple.com/v1//gameCenterMatchmakingRuleSets
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRuleSets`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterMatchmakingRuleSetCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterMatchmakingRuleSetResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Modify a Rule Set](patch-v1-gamecentermatchmakingrulesets-_id_.md)
+### Creating, modifying, and deleting rule sets
+- [Modify a Rule Set](./patch-v1-gamecentermatchmakingrulesets-_id_.md)
   Update the attributes of a rule set.
-- [Delete a Rule Set](delete-v1-gamecentermatchmakingrulesets-_id_.md)
+- [Delete a Rule Set](./delete-v1-gamecentermatchmakingrulesets-_id_.md)
   Delete a rule set along with its matchmaking rules and teams.
 
 

@@ -1,7 +1,8 @@
 # isObservationEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If observers of this observed object should be notified when the produced image changes.
 
@@ -23,7 +24,8 @@ final var isObservationEnabled: Bool { get set }
 
 ## See Also
 
-- [let objectWillChange: PassthroughSubject<Void, Never>](imagerenderer/objectwillchange.md)
+### Producing a stream of images
+- [let objectWillChange: PassthroughSubject<Void, Never>](./objectwillchange.md)
   A publisher that informs subscribers of changes to the image.
 
 

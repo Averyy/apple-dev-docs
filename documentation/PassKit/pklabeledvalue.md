@@ -1,7 +1,8 @@
 # PKLabeledValue
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that can represent a detail about a payment card or other item.
 
@@ -9,7 +10,7 @@ An object that can represent a detail about a payment card or other item.
 - iOS 10.1+
 - iPadOS 10.1+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 3.1+
 
@@ -19,44 +20,49 @@ An object that can represent a detail about a payment card or other item.
 class PKLabeledValue
 ```
 
+```objc
+@interface PKLabeledValue : NSObject
+```
+
 #### Overview
 
-See [`cardDetails`](pkaddpaymentpassrequestconfiguration/carddetails.md).
+See [`cardDetails`](./pkaddpaymentpassrequestconfiguration/carddetails.md).
 
 ## Topics
 
 ### Creating a labeled value
-- [init(label: String, value: String)](pklabeledvalue/init(label:value:).md)
+- [init(label: String, value: String)](./pklabeledvalue/init%28label,value%29.md)
   Instantiates a new labeled value object with the specified label and value strings.
 ### Labeled value properties
-- [var label: String](pklabeledvalue/label.md)
+- [var label: String](./pklabeledvalue/label.md)
   A string that contains the label for the value.
-- [var value: String](pklabeledvalue/value.md)
+- [var value: String](./pklabeledvalue/value.md)
   A string that contains the value associated with a label.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKObject](pkobject.md)
+### Common data types
+- [class PKObject](./pkobject.md)
   An opaque type that acts as the superclass for the pass object.
-- [class PKAddPassButton](pkaddpassbutton.md)
+- [class PKAddPassButton](./pkaddpassbutton.md)
   Provides a button that enables users to add passes to Wallet.
-- [struct AddPassToWalletButton](addpasstowalletbutton.md)
+- [struct AddPassToWalletButton](./addpasstowalletbutton.md)
   A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
-- [struct AddPassToWalletButtonFilter](addpasstowalletbuttonfilter.md)
-- [struct AddPassToWalletButtonResponse](addpasstowalletbuttonresponse.md)
-- [struct AddPassToWalletButtonStyle](addpasstowalletbuttonstyle.md)
+- [struct AddPassToWalletButtonFilter](./addpasstowalletbuttonfilter.md)
+- [struct AddPassToWalletButtonResponse](./addpasstowalletbuttonresponse.md)
+- [struct AddPassToWalletButtonStyle](./addpasstowalletbuttonstyle.md)
 
 
 ---

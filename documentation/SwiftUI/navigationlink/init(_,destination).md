@@ -1,7 +1,8 @@
 # init(_:destination:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a navigation link that presents a destination view, with a text label that the link generates from a localized string key.
 
@@ -19,6 +20,30 @@ Creates a navigation link that presents a destination view, with a text label th
 ```swift
 @export(implementation)
 nonisolated init(_ titleKey: LocalizedStringKey, @ContentBuilder destination: () -> Destination)
+```
+
+Available when `Label` is `Text` and `Destination` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder destination: () -> Destination)
+```
+
+```swift
+@export(implementation)
+nonisolated init<S>(_ title: S, @ContentBuilder destination: () -> Destination) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, destination: Destination)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, destination: Destination) where S : StringProtocol
 ```
 
 ## Parameters

@@ -1,14 +1,15 @@
 # IFNET_IPV6_FRAGMENT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IFNET_IPV6_FRAGMENT = 0x00000080
 ```
 

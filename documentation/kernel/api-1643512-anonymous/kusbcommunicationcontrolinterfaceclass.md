@@ -1,14 +1,15 @@
 # kUSBCommunicationControlInterfaceClass
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kUSBCommunicationControlInterfaceClass = 2
 ```
 

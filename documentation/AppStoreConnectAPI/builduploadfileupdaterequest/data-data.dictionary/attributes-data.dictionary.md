@@ -1,7 +1,8 @@
 # BuildUploadFileUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you update for a build upload file resource.
 
@@ -10,7 +11,7 @@ Attributes that you update for a build upload file resource.
 
 ## Declaration
 
-```swift
+```
 object BuildUploadFileUpdateRequest.Data.Attributes
 ```
 

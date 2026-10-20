@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keychain version.
 
@@ -15,9 +16,13 @@ The keychain version.
 var version: UInt32
 ```
 
+```c
+UInt32 version;
+```
+
 #### Discussion
 
-Use [`SEC_KEYCHAIN_SETTINGS_VERS1`](sec_keychain_settings_vers1.md).
+Use [`SEC_KEYCHAIN_SETTINGS_VERS1`](../sec_keychain_settings_vers1.md).
 
 
 ---

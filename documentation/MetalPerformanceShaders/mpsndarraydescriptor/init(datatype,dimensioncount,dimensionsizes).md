@@ -1,7 +1,8 @@
 # init(dataType:dimensionCount:dimensionSizes:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(dataType: MPSDataType, dimensionCount numberOfDimensions: Int, dimensionSizes: UnsafeMutablePointer<Int>)
+```
+
+```objc
++ (instancetype) descriptorWithDataType:(MPSDataType) dataType dimensionCount:(NSUInteger) numberOfDimensions dimensionSizes:(NSUInteger *) dimensionSizes;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(mapView:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a compass button and associates it with the specified map view.
 
@@ -16,6 +17,10 @@ Creates a compass button and associates it with the specified map view.
 
 ```swift
 convenience init(mapView: MKMapView?)
+```
+
+```objc
++ (instancetype) compassButtonWithMapView:(MKMapView *) mapView;
 ```
 
 #### Return Value

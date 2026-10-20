@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All property specs (attributes and relationships) on this prim.
 

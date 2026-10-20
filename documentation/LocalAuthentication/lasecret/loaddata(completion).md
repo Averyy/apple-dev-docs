@@ -1,7 +1,8 @@
 # loadData(completion:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves data stored in a secret.
 
@@ -15,14 +16,26 @@ Retrieves data stored in a secret.
 ## Declaration
 
 ```swift
+func loadData(completion handler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 var rawData: Data { get async throws }
+```
+
+```objc
+- (void) loadDataWithCompletion:(void (^)(NSData *, NSError *)) handler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-var rawData: Data { get async throws }
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> var rawData: Data { get async throws }
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 

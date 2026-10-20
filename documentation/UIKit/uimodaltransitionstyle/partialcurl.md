@@ -1,7 +1,8 @@
 # UIModalTransitionStyle.partialCurl
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 3.2+
@@ -15,17 +16,22 @@
 case partialCurl
 ```
 
+```c
+UIModalTransitionStylePartialCurl
+```
+
 #### Discussion
 
 When the view controller is presented, one corner of the current view curls up to reveal the presented view underneath. On dismissal, the curled up page unfurls itself back on top of the presented view. A view controller presented using this transition is itself prevented from presenting any additional view controllers.
 
-This transition style is supported only if the parent view controller is presenting a full-screen view and you use the [`UIModalPresentationStyle.fullScreen`](uimodalpresentationstyle/fullscreen.md) modal presentation style. Attempting to use a different form factor for the parent view or a different presentation style triggers an exception.
+This transition style is supported only if the parent view controller is presenting a full-screen view and you use the [`UIModalPresentationStyle.fullScreen`](../uimodalpresentationstyle/fullscreen.md) modal presentation style. Attempting to use a different form factor for the parent view or a different presentation style triggers an exception.
 
 ## See Also
 
-- [UIModalTransitionStyle.coverVertical](uimodaltransitionstyle/coververtical.md)
-- [UIModalTransitionStyle.flipHorizontal](uimodaltransitionstyle/fliphorizontal.md)
-- [UIModalTransitionStyle.crossDissolve](uimodaltransitionstyle/crossdissolve.md)
+### Constants
+- [UIModalTransitionStyle.coverVertical](./coververtical.md)
+- [UIModalTransitionStyle.flipHorizontal](./fliphorizontal.md)
+- [UIModalTransitionStyle.crossDissolve](./crossdissolve.md)
 
 
 ---

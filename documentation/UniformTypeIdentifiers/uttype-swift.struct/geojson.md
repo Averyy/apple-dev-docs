@@ -1,7 +1,8 @@
 # geoJSON
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A GeoJSON file.
 

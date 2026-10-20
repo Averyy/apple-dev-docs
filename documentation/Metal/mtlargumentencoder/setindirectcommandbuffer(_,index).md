@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a reference to an indirect command buffer into the argument buffer.
@@ -20,14 +21,19 @@ Encodes a reference to an indirect command buffer into the argument buffer.
 func setIndirectCommandBuffer(_ indirectCommandBuffer: (any MTLIndirectCommandBuffer)?, index: Int)
 ```
 
+```objc
+- (void) setIndirectCommandBuffer:(id<MTLIndirectCommandBuffer>) indirectCommandBuffer atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `indirectCommandBuffer`: An indirect command-buffer the method encodes.
-- `index`: The index of an inline, constant-data argument within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of an inline, constant-data argument within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 ## See Also
 
-- [func setIndirectCommandBuffers([(any MTLIndirectCommandBuffer)?], range: Range<Int>)](mtlargumentencoder/setindirectcommandbuffers(_:range:).md)
+### Encoding indirect command buffers
+- [func setIndirectCommandBuffers([(any MTLIndirectCommandBuffer)?], range: Range<Int>)](./setindirectcommandbuffers%28_,range%29.md)
   Encodes an array of indirect command buffers into the argument buffer.
 
 

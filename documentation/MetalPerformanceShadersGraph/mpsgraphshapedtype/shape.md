@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Shape of the shaped type.
 
@@ -17,6 +18,10 @@ The Shape of the shaped type.
 
 ```swift
 var shape: [NSNumber]? { get set }
+```
+
+```objc
+@property (atomic, copy, readwrite, nullable) MPSShape * shape;
 ```
 
 

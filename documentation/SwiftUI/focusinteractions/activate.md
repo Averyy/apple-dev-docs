@@ -1,7 +1,8 @@
 # activate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view has a primary action that can be activated via focus gestures.
 
@@ -26,9 +27,10 @@ On macOS and iOS, focus-driven activation interactions are only possible when al
 
 ## See Also
 
-- [static var automatic: FocusInteractions](focusinteractions/automatic.md)
+### Creating the interaction types
+- [static var automatic: FocusInteractions](./automatic.md)
   The view supports whatever focus-driven interactions are commonly expected for interactive content on the current platform.
-- [static let edit: FocusInteractions](focusinteractions/edit.md)
+- [static let edit: FocusInteractions](./edit.md)
   The view captures input from non-spatial sources like a keyboard or Digital Crown.
 
 

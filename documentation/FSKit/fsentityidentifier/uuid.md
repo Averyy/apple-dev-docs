@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UUID to uniquely identify this entity.
 
@@ -14,9 +15,14 @@ A UUID to uniquely identify this entity.
 var uuid: UUID { get set }
 ```
 
+```objc
+@property (copy) NSUUID * uuid;
+```
+
 ## See Also
 
-- [var qualifier: Data?](fsentityidentifier/qualifier.md)
+### Inspecting identifier properties
+- [var qualifier: Data?](./qualifier.md)
   An optional piece of data to distinguish entities that otherwise share the same UUID.
 
 

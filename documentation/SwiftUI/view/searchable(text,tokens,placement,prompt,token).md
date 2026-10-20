@@ -1,7 +1,8 @@
 # searchable(text:tokens:placement:prompt:token:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks this view as searchable with text and tokens.
 
@@ -19,13 +20,30 @@ Marks this view as searchable with text and tokens.
 nonisolated func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringResource, @ContentBuilder token: @escaping (C.Element) -> T) -> some View where C : RandomAccessCollection, C : RangeReplaceableCollection, T : View, C.Element : Identifiable
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: S, @ContentBuilder token: @escaping (C.Element) -> T) -> some View where C : RandomAccessCollection, C : RangeReplaceableCollection, T : View, S : StringProtocol, C.Element : Identifiable
+```
+
+```swift
+nonisolated
+func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey, @ContentBuilder token: @escaping (C.Element) -> T) -> some View where C : RandomAccessCollection, C : RangeReplaceableCollection, T : View, C.Element : Identifiable
+```
+
+```swift
+nonisolated
+func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: Text? = nil, @ContentBuilder token: @escaping (C.Element) -> T) -> some View where C : RandomAccessCollection, C : RangeReplaceableCollection, T : View, C.Element : Identifiable
+```
+
 ## Mentions
 
-- [Performing a search operation](performing-a-search-operation.md)
+- [Performing a search operation](../performing-a-search-operation.md)
 
 #### Discussion
 
-For more information about using searchable modifiers, see [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
+For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 
 ## Parameters
 
@@ -37,15 +55,16 @@ For more information about using searchable modifiers, see [`Adding a search int
 
 ## See Also
 
-- [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
+### Searching your app’s data model
+- [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md)
   Present an interface that people can use to search for content in your app.
-- [Performing a search operation](performing-a-search-operation.md)
+- [Performing a search operation](../performing-a-search-operation.md)
   Update search results based on search text and optional tokens that you store.
-- [func searchable(text:placement:prompt:)](view/searchable(text:placement:prompt:).md)
+- [func searchable(text:placement:prompt:)](./searchable%28text,placement,prompt%29.md)
   Marks this view as searchable, which configures the display of a search field.
-- [func searchable(text:editableTokens:placement:prompt:token:)](view/searchable(text:editabletokens:placement:prompt:token:).md)
+- [func searchable(text:editableTokens:placement:prompt:token:)](./searchable%28text,editabletokens,placement,prompt,token%29.md)
   Marks this view as searchable, which configures the display of a search field.
-- [struct SearchFieldPlacement](searchfieldplacement.md)
+- [struct SearchFieldPlacement](../searchfieldplacement.md)
   The placement of a search field in a view hierarchy.
 
 

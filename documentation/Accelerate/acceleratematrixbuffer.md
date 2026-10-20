@@ -1,7 +1,8 @@
 # AccelerateMatrixBuffer
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -21,30 +22,31 @@ protocol AccelerateMatrixBuffer<Element>
 ## Topics
 
 ### Associated Types
-- [associatedtype Element](acceleratematrixbuffer/element.md)
+- [associatedtype Element](./acceleratematrixbuffer/element.md)
 ### Instance Properties
-- [var accelerateMatrixOrder: AccelerateMatrixOrder](acceleratematrixbuffer/acceleratematrixorder.md)
-- [var columnCount: Int](acceleratematrixbuffer/columncount.md)
-- [var leadingDimension: Int](acceleratematrixbuffer/leadingdimension.md)
-- [var rowCount: Int](acceleratematrixbuffer/rowcount.md)
+- [var accelerateMatrixOrder: AccelerateMatrixOrder](./acceleratematrixbuffer/acceleratematrixorder.md)
+- [var columnCount: Int](./acceleratematrixbuffer/columncount.md)
+- [var leadingDimension: Int](./acceleratematrixbuffer/leadingdimension.md)
+- [var rowCount: Int](./acceleratematrixbuffer/rowcount.md)
 ### Instance Methods
-- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R](acceleratematrixbuffer/withunsafebufferpointer(_:).md)
+- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R](./acceleratematrixbuffer/withunsafebufferpointer%28_%29.md)
 
 ## Relationships
 
 ### Inherited By
-- [AccelerateMutableMatrixBuffer](acceleratemutablematrixbuffer.md)
+- [AccelerateMutableMatrixBuffer](./acceleratemutablematrixbuffer.md)
 ### Conforming Types
-- [vImage.PixelBuffer](vimage/pixelbuffer.md)
+- [vImage.PixelBuffer](./vimage/pixelbuffer.md)
 
 ## See Also
 
-- [protocol AccelerateBuffer](acceleratebuffer.md)
+### Essentials
+- [protocol AccelerateBuffer](./acceleratebuffer.md)
   A type that represents an immutable buffer.
-- [protocol AccelerateMutableBuffer](acceleratemutablebuffer.md)
+- [protocol AccelerateMutableBuffer](./acceleratemutablebuffer.md)
   A type that represents a mutable buffer.
-- [protocol AccelerateMutableMatrixBuffer](acceleratemutablematrixbuffer.md)
-- [enum AccelerateMatrixOrder](acceleratematrixorder.md)
+- [protocol AccelerateMutableMatrixBuffer](./acceleratemutablematrixbuffer.md)
+- [enum AccelerateMatrixOrder](./acceleratematrixorder.md)
 
 
 ---

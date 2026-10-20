@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDisplayModeDefaultFlag](1645149-anonymous/kdisplaymodedefaultflag.md)
-- [kDisplayModeSafeFlag](1645149-anonymous/kdisplaymodesafeflag.md)
-- [kDisplayModeValidFlag](1645149-anonymous/kdisplaymodevalidflag.md)
+- [kDisplayModeDefaultFlag](./api-1645149-anonymous/kdisplaymodedefaultflag.md)
+- [kDisplayModeSafeFlag](./api-1645149-anonymous/kdisplaymodesafeflag.md)
+- [kDisplayModeValidFlag](./api-1645149-anonymous/kdisplaymodevalidflag.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # startItem
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Designates the media item to play first.
 
@@ -17,15 +18,20 @@ Designates the media item to play first.
 var startItem: MPMediaItem? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) MPMediaItem * startItem;
+```
+
 #### Discussion
 
-When this property isn’t set, the value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) and the first item in the queue is the first item to play.
+When this property isn’t set, the value is [`nil`](../../ObjectiveC/nil-227m0.md) and the first item in the queue is the first item to play.
 
 ## See Also
 
-- [var itemCollection: MPMediaItemCollection](mpmusicplayermediaitemqueuedescriptor/itemcollection.md)
+### Media item queue descriptor properties
+- [var itemCollection: MPMediaItemCollection](./itemcollection.md)
   Contains the media item collection used to create the queue descriptor.
-- [var query: MPMediaQuery](mpmusicplayermediaitemqueuedescriptor/query.md)
+- [var query: MPMediaQuery](./query.md)
   Contains the media items found by the query used to create the queue descriptor.
 
 

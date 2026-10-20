@@ -1,7 +1,8 @@
 # control
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The control point that defines the curve in unit coordinate space.
 

@@ -1,17 +1,24 @@
 # title
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the title of the notification.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
 ```swift
 var title: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * title;
 ```
 
 #### Discussion
@@ -20,17 +27,18 @@ This value should be localized because it is presented to the user. The string i
 
 ## See Also
 
-- [var subtitle: String?](nsusernotification/subtitle.md)
+### Display Information
+- [var subtitle: String?](./subtitle.md)
   Specifies the subtitle of the notification.
-- [var informativeText: String?](nsusernotification/informativetext.md)
+- [var informativeText: String?](./informativetext.md)
   The body text of the notification.
-- [var contentImage: NSImage?](nsusernotification/contentimage.md)
+- [var contentImage: NSImage?](./contentimage.md)
   Image shown in the content of the notification.
-- [var identifier: String?](nsusernotification/identifier.md)
+- [var identifier: String?](./identifier.md)
   A string that uniquely identifies a notification.
-- [var response: NSAttributedString?](nsusernotification/response.md)
+- [var response: NSAttributedString?](./response.md)
   The response with which the user responded to a notification.
-- [var responsePlaceholder: String?](nsusernotification/responseplaceholder.md)
+- [var responsePlaceholder: String?](./responseplaceholder.md)
   Optional placeholder string for inline reply field.
 
 

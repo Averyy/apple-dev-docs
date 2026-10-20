@@ -1,7 +1,8 @@
 # adaptedAsSupervised(annotationColumnID:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exposes this tabular estimator as a supervised tabular estimator.
 
@@ -22,9 +23,10 @@ func adaptedAsSupervised<Annotation>(annotationColumnID: ColumnID<Annotation>) -
 
 ## See Also
 
-- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Self.Transformer](tabularestimator/fitted(to:eventhandler:).md)
+### Adapting and fitting
+- [func fitted(to: DataFrame, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a data frame
-- [func fitted(to:)](tabularestimator/fitted(to:).md)
+- [func fitted(to:)](./fitted%28to%29.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # vm_behavior_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.2+
 
 ## Declaration
 
-```swift
+```c
 typedef vm_behavior_t vm_behavior_ut;
 ```
 

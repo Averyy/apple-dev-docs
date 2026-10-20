@@ -1,7 +1,8 @@
 # setClass(_:forClassName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a translation mapping on this unarchiver to decode objects encoded with a given class name as instances of a given class instead.
 
@@ -20,9 +21,13 @@ Sets a translation mapping on this unarchiver to decode objects encoded with a g
 func setClass(_ cls: AnyClass?, forClassName codedName: String)
 ```
 
+```objc
+- (void) setClass:(Class) cls forClassName:(NSString *) codedName;
+```
+
 #### Discussion
 
-When decoding, the receiver’s translation map overrides any translation that may also be present in the class’s map (see [`setClass(_:forClassName:)`](nskeyedunarchiver/setclass(_:forclassname:)-swift.type.method.md)).
+When decoding, the receiver’s translation map overrides any translation that may also be present in the class’s map (see [`setClass(_:forClassName:)`](./setclass%28_,forclassname%29-swift.type.method.md)).
 
 ## Parameters
 
@@ -31,11 +36,12 @@ When decoding, the receiver’s translation map overrides any translation that m
 
 ## See Also
 
-- [class func setClass(AnyClass?, forClassName: String)](nskeyedunarchiver/setclass(_:forclassname:)-swift.type.method.md)
+### Managing Class Names
+- [class func setClass(AnyClass?, forClassName: String)](./setclass%28_,forclassname%29-swift.type.method.md)
   Sets a global translation mapping to decode objects encoded with a given class name as instances of a given class instead.
-- [class func `class`(forClassName: String) -> AnyClass?](nskeyedunarchiver/class(forclassname:)-swift.type.method.md)
+- [class func `class`(forClassName: String) -> AnyClass?](./class%28forclassname%29-swift.type.method.md)
   Returns the class from which this unarchiver instantiates an encoded object with a given class name.
-- [func `class`(forClassName: String) -> AnyClass?](nskeyedunarchiver/class(forclassname:)-swift.method.md)
+- [func `class`(forClassName: String) -> AnyClass?](./class%28forclassname%29-swift.method.md)
   Returns the class from which this unarchiver instantiates an encoded object with a given class name.
 
 

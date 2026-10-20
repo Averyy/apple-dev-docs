@@ -1,7 +1,8 @@
 # keychain
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the keychain in which the event occurred. If the event did not involve a keychain, this field is not valid.
 
@@ -12,6 +13,10 @@ A reference to the keychain in which the event occurred. If the event did not in
 
 ```swift
 var keychain: Unmanaged<SecKeychain>
+```
+
+```c
+SecKeychainRef keychain;
 ```
 
 

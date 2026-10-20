@@ -1,22 +1,29 @@
 # VSSubscriptionAccessLevel.unknown
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default access level.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS ?+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0
+- iPadOS 11.0+ - Deprecated in 18.0
+- Mac Catalyst 11.0+ - Deprecated in 18.0
+- macOS
+- tvOS 11.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use VSUserAccount and VSUserAccountType instead.
 
 ## Declaration
 
 ```swift
 case unknown
+```
+
+```c
+VSSubscriptionAccessLevelUnknown
 ```
 
 #### Discussion
@@ -25,9 +32,10 @@ case unknown
 
 ## See Also
 
-- [VSSubscriptionAccessLevel.freeWithAccount](vssubscriptionaccesslevel/freewithaccount.md)
+### Subscription Tiers
+- [VSSubscriptionAccessLevel.freeWithAccount](./freewithaccount.md)
   The user has access to free content with a valid account.
-- [VSSubscriptionAccessLevel.paid](vssubscriptionaccesslevel/paid.md)
+- [VSSubscriptionAccessLevel.paid](./paid.md)
   The user has access to content that requires a paid subscription.
 
 

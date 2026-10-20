@@ -1,6 +1,7 @@
 # Processing the JSON Web Encryption (JWE) login response
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Validate the encrypted response.
 
@@ -20,36 +21,37 @@ Content-Type: application/platformsso-login-response+jwt; charset=utf-8
 ewogI...luEng
 ```
 
-For more information, see [`Creating a JSON Web Encryption (JWE) login response`](creating-a-json-web-encryption-jwe-login-response.md).
+For more information, see [Creating a JSON Web Encryption (JWE) login response](./creating-a-json-web-encryption-jwe-login-response.md).
 
-##### Validate the Id Token
+##### Validate the ID token
 
-The `id_token` is a JSON Object Signing and Encryption (JOSE) object that the IdP signs using either RS256 or ES256 algorithms per RFC 7515 using compact serialization. The system retrieves the signing keys from the [`jwksEndpointURL`](asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md).
+The `id_token` is a JSON Object Signing and Encryption (JOSE) object that the IdP signs using either RS256 or ES256 algorithms per RFC 7515 using compact serialization. The system retrieves the signing keys from the [`jwksEndpointURL`](./asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md).
 
 The following table specifies the values that the system uses to validate the ID token:
 
 | Key | Value | Notes |
 | --- | --- | --- |
 | `nonce` | The `nonce` value from the login request. | Required. |
-| `iss` | Must match the [`issuer`](asauthorizationproviderextensionloginconfiguration/issuer.md). | Required. |
-| `aud` | Must match the [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md) or must contain the [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md). | Required. |
-| `azp` | If present, must match the [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md). | Required only if `aud` is an array. |
+| `iss` | Must match the [`issuer`](./asauthorizationproviderextensionloginconfiguration/issuer.md). | Required. |
+| `aud` | Must match the [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md) or must contain the [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md). | Required. |
+| `azp` | If present, must match the [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md). | Required only if `aud` is an array. |
 | `iat` | Must be in past. | Required. |
 | `exp` | Must be in the future. | Required. |
 | `nbf` | If present, must be in the past. | Optional. |
-| `groups` or [`groupResponseClaimName`](asauthorizationproviderextensionloginconfiguration/groupresponseclaimname.md) | The requested group membership for the user. | Optional. |
+| `groups` or [`groupResponseClaimName`](./asauthorizationproviderextensionloginconfiguration/groupresponseclaimname.md) | The requested group membership for the user. | Optional. |
 
-If validation succeeds, the system saves the response tokens to the keychain using the keychain data-protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.com/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly) and checks the Kerberos mapping.
+If validation succeeds, the system saves the response tokens to the keychain using the keychain data-protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](../Security/ksecattraccessibleafterfirstunlockthisdeviceonly.md) and checks the Kerberos mapping.
 
 For a group membership request, the system adds the user to the groups that the IdP supplies in the `id_token`, and it removes the user from the groups not returned. The system ignores groups that you didn’t specify in the Device Management profile.
 
-For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/devicemanagement/configuring-platform-single-sign-on).
+For more information, see [Configuring Platform Single Sign-on](../DeviceManagement/configuring-platform-single-sign-on.md).
 
 ## See Also
 
-- [Creating a JSON Web Encryption (JWE) login response](creating-a-json-web-encryption-jwe-login-response.md)
+### Login response
+- [Creating a JSON Web Encryption (JWE) login response](./creating-a-json-web-encryption-jwe-login-response.md)
   Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).
-- [Performing encryption verification](performing-encryption-verification.md)
+- [Performing encryption verification](./performing-encryption-verification.md)
   Verify the login request and create a JSON Web Encryption (JWE) response.
 
 

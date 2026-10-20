@@ -1,17 +1,18 @@
 # depth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value for the z-axis dimension.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A value for the z-axis dimension.
 var depth: Int
 ```
 
+```c
+NSUInteger depth;
+```
+
 ## See Also
 
-- [var width: Int](mtlsize/width.md)
+### Accessing a size’s dimensions
+- [var width: Int](./width.md)
   A value for the x-axis dimension.
-- [var height: Int](mtlsize/height.md)
+- [var height: Int](./height.md)
   A value for the y-axis dimension.
 
 

@@ -1,7 +1,8 @@
 # concurrent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the enumeration processes dragging items concurrently.
 
@@ -14,9 +15,14 @@ A constant that indicates the enumeration processes dragging items concurrently.
 static var concurrent: NSDraggingItemEnumerationOptions { get }
 ```
 
+```c
+NSDraggingItemEnumerationConcurrent
+```
+
 ## See Also
 
-- [static var clearNonenumeratedImages: NSDraggingItemEnumerationOptions](nsdraggingitemenumerationoptions/clearnonenumeratedimages.md)
+### Constants
+- [static var clearNonenumeratedImages: NSDraggingItemEnumerationOptions](./clearnonenumeratedimages.md)
   A constant that indicates the enumeration clears the image components provider for all dragging items that don’t meet the classes and search options criteria.
 
 

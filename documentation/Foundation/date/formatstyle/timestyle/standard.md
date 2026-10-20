@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A time style with all components except the time zone represented.
 
@@ -26,11 +27,12 @@ A `standard` time style represents the hour, minute, second, and day period comp
 
 ## See Also
 
-- [static let complete: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/complete.md)
+### Modifying a Time Style
+- [static let complete: Date.FormatStyle.TimeStyle](./complete.md)
   A time style with all components represented.
-- [static let omitted: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/omitted.md)
+- [static let omitted: Date.FormatStyle.TimeStyle](./omitted.md)
   A time style with no time-related components represented.
-- [static let shortened: Date.FormatStyle.TimeStyle](date/formatstyle/timestyle/shortened.md)
+- [static let shortened: Date.FormatStyle.TimeStyle](./shortened.md)
   A shortened time style with only the hour, minute, and day period components represented.
 
 

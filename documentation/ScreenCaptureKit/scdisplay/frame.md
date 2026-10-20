@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame of the display.
 
@@ -15,11 +16,16 @@ The frame of the display.
 var frame: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect frame;
+```
+
 ## See Also
 
-- [var width: Int](scdisplay/width.md)
+### Accessing dimensions
+- [var width: Int](./width.md)
   The width of the display in points.
-- [var height: Int](scdisplay/height.md)
+- [var height: Int](./height.md)
   The height of the display in points.
 
 

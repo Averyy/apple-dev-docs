@@ -1,6 +1,7 @@
 # AAC encoding background
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 AAC requires data beyond the source PCM audio samples in order to correctly encode and decode audio samples due to the nature of the encoding algorithm.
 
@@ -15,7 +16,7 @@ The common practice is to propagate the encoder delay in the AAC bitstream. When
 
 The following figure gives an example of a typical encoded AAC audio bitstream. The upper portion of the illustration represents the AAC encoded domain with equal-sized AAC packets, the lower portion represents the PCM sample domain:
 
-![A diagram with two vertically-stacked horizontal sequences illustrating an audio bistream. The top sequence contains square boxes with rounded corners lined up next to each other. Above the sequence is a caption that highlights one box and says “Access unit 1024 samples”. The first two boxes in the sequence are filled with a light color. The third box is filled vertically with the light color for a small part of the box, and the rest is filled with a dark color. The fourth through sixth boxes are filled with the dark color. The last box in the sequence is partially filled with the dark color, then filled with the lighter color. The second sequence starts with a light blue background, and a solid blue horizontal line in the middle. It extends from the beginning of the sequence, and ends where the third box in the sequence above changes color. The next part of the sequence shows a red line, starting from the end of the blue line, then proceeding a wave pattern. The red line ends where the last box in the sequence above changes color. The end of the sequence has a light blue background with a solid blue line in the middle.](/images/com.apple.qtff/encoded-aac-audio@2x.png)
+![A diagram with two vertically-stacked horizontal sequences illustrating an audio bistream. The top sequence contains square boxes with rounded corners lined up next to each other. Above the sequence is a caption that highlights one box and says “Access unit 1024 samples”. The first two boxes in the sequence are filled with a light color. The third box is filled vertically with the light color for a small part of the box, and the rest is filled with a dark color. The fourth through sixth boxes are filled with the dark color. The last box in the sequence is partially filled with the dark color, then filled with the lighter color. The second sequence starts with a light blue background, and a solid blue horizontal line in the middle. It extends from the beginning of the sequence, and ends where the third box in the sequence above changes color. The next part of the sequence shows a red line, starting from the end of the blue line, then proceeding a wave pattern. The red line ends where the last box in the sequence above changes color. The end of the sequence has a light blue background with a solid blue line in the middle.](https://developer.apple.com/tutorials/images/com.apple.qtff/encoded-aac-audio@2x.png)
 
 The source audio to be encoded, shown as the red waveform, is 5389 samples long. You can see how it is represented with the blue priming and remainder samples against the fixed size access units – AAC packets – drawn above it.
 
@@ -33,15 +34,16 @@ Therefore, to correctly extract the original 5389 samples of source audio, the f
 
 ## See Also
 
-- [The timing and synchronization problem](the_timing_and_synchronization_problem.md)
+### Handling encoder delay
+- [The timing and synchronization problem](./the_timing_and_synchronization_problem.md)
   Trim the silent priming samples to preserve correct synchronization.
-- [Historical solution for implicit encoder delay](historical_solution_implicit_encoder_delay.md)
+- [Historical solution for implicit encoder delay](./historical_solution_implicit_encoder_delay.md)
   Implicit encoder delay uses the most common delay of 2112 audio samples.
-- [Using track structures to represent encoder delay explicitly](using_track_structures_to_represent_encode_delay_explictly.md)
+- [Using track structures to represent encoder delay explicitly](./using_track_structures_to_represent_encode_delay_explictly.md)
   Represent encoder delay explicitly with an edit list atom and sample group structures.
-- [Representing encoder delay explicitly](example_representing_encoder_delay_explicitly.md)
+- [Representing encoder delay explicitly](./example_representing_encoder_delay_explicitly.md)
   Review an example that represents the temporal position of 5 seconds of 48kHz PCM audio encoded in a 48kHz AAC sound track.
-- [Representing encoder delay with track structures](summary_using_track_structures_to_represent_encoder_delay.md)
+- [Representing encoder delay with track structures](./summary_using_track_structures_to_represent_encoder_delay.md)
   Use sample group structures to represent encoder delay for AAC sound tracks.
 
 

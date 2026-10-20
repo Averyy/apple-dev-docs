@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for the `Int32` instance.
 
@@ -13,6 +14,8 @@ A custom playground Quick Look for the `Int32` instance.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: Int32.customPlaygroundQuickLook will be removed in a future Swift version
 
 ## Declaration
 

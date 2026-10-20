@@ -1,7 +1,8 @@
 # VZUSBController
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a USB controller in a VM.
 
@@ -14,44 +15,49 @@ A class that represents a USB controller in a VM.
 class VZUSBController
 ```
 
+```objc
+@interface VZUSBController : NSObject
+```
+
 #### Overview
 
-Don’t create a `VZUSBController` directly. You need to first configure USB controllers on a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) through a subclass of [`VZUSBControllerConfiguration`](vzusbcontrollerconfiguration.md). When you create a [`VZVirtualMachine`](vzvirtualmachine.md) from the configuration, the USB controllers are available through the [`usbControllers`](vzvirtualmachine/usbcontrollers.md) property.
+Don’t create a `VZUSBController` directly. You need to first configure USB controllers on a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZUSBControllerConfiguration`](./vzusbcontrollerconfiguration.md). When you create a [`VZVirtualMachine`](./vzvirtualmachine.md) from the configuration, the USB controllers are available through the [`usbControllers`](./vzvirtualmachine/usbcontrollers.md) property.
 
-The concrete type of a `VZUSBController` corresponds to the type the configuration uses. For example, a [`VZXHCIControllerConfiguration`](vzxhcicontrollerconfiguration.md) leads to a device of type [`VZXHCIController`](vzxhcicontroller.md).
+The concrete type of a `VZUSBController` corresponds to the type the configuration uses. For example, a [`VZXHCIControllerConfiguration`](./vzxhcicontrollerconfiguration.md) leads to a device of type [`VZXHCIController`](./vzxhcicontroller.md).
 
 ## Topics
 
 ### Instance properties
-- [var usbDevices: [any VZUSBDevice]](vzusbcontroller/usbdevices.md)
+- [var usbDevices: [any VZUSBDevice]](./vzusbcontroller/usbdevices.md)
   The list of attached USB devices for the controller.
 ### Attaching and detaching devices
-- [func attach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](vzusbcontroller/attach(device:completionhandler:).md)
+- [func attach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](./vzusbcontroller/attach%28device,completionhandler%29.md)
   Attaches a USB device to the controller.
-- [func detach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](vzusbcontroller/detach(device:completionhandler:).md)
+- [func detach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](./vzusbcontroller/detach%28device,completionhandler%29.md)
   Detaches a USB device from the controller.
 ### Protocols
-- [VZUSBController.Delegate](vzusbcontroller/delegate-swift.protocol.md)
+- [VZUSBController.Delegate](./vzusbcontroller/delegate-swift.protocol.md)
 ### Instance Properties
-- [var delegate: (any VZUSBController.Delegate)?](vzusbcontroller/delegate-swift.property.md)
+- [var delegate: (any VZUSBController.Delegate)?](./vzusbcontroller/delegate-swift.property.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZXHCIController](vzxhcicontroller.md)
+- [VZXHCIController](./vzxhcicontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZXHCIController](vzxhcicontroller.md)
+### Controllers
+- [class VZXHCIController](./vzxhcicontroller.md)
   A class that represents a USB Extensible Host Controller Interface (XHCI) controller in a VM.
 
 

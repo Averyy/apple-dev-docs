@@ -313,7 +313,7 @@ The `grid` array for this `Matrix` instance
 is effectively a flattened version of the matrix,
 as read from top left to bottom right:
 
-![](subscriptMatrix01)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/subscriptMatrix01@2x.png)
 
 Values in the matrix can be set by passing row and column values into the subscript,
 separated by a comma:
@@ -342,7 +342,7 @@ a value of `1.5` in the top right position of the matrix
 and `3.2` in the bottom left position
 (where `row` is `1` and `column` is `0`):
 
-![](subscriptMatrix02)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/subscriptMatrix02@2x.png)
 
 The `Matrix` subscript's getter and setter both contain an assertion
 to check that the subscript's  `row` and `column` values are valid.

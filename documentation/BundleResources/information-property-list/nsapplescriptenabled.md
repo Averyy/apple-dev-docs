@@ -1,16 +1,18 @@
 # NSAppleScriptEnabled
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether AppleScript is enabled.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSAppleScriptEnabled` (Scriptable)
+- **Type**: boolean
 
 
 ---

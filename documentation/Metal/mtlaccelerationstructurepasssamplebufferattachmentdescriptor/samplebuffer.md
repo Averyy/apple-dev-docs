@@ -1,7 +1,8 @@
 # sampleBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A specialized memory buffer that the GPU uses to store its counter data during the acceleration structure pass.
 
@@ -19,13 +20,17 @@ A specialized memory buffer that the GPU uses to store its counter data during t
 var sampleBuffer: (any MTLCounterSampleBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLCounterSampleBuffer> sampleBuffer;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-The property defaults to `nil`, which means the GPU doesn’t save any GPU counter information during the acceleration structure pass. See [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) and [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md) for more information.
+The property defaults to `nil`, which means the GPU doesn’t save any GPU counter information during the acceleration structure pass. See [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) and [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md) for more information.
 
 
 ---

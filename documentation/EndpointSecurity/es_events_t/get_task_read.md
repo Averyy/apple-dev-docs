@@ -1,13 +1,14 @@
 # get_task_read
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates the retrieval of a task’s read port.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Properties of an event that indicates the retrieval of a task’s read port.
 var get_task_read: es_event_get_task_read_t { get set }
 ```
 
+```c
+es_event_get_task_read_t get_task_read;
+```
+
 ## See Also
 
-- [var get_task: es_event_get_task_t](es_events_t/get_task.md)
+### Task Port Events
+- [var get_task: es_event_get_task_t](./get_task.md)
   Properties of an event that indicates the retrieval of a task’s control port.
-- [var get_task_inspect: es_event_get_task_inspect_t](es_events_t/get_task_inspect.md)
+- [var get_task_inspect: es_event_get_task_inspect_t](./get_task_inspect.md)
   Properties of an event that indicates the retrieval of a task’s inspect port.
-- [var get_task_name: es_event_get_task_name_t](es_events_t/get_task_name.md)
+- [var get_task_name: es_event_get_task_name_t](./get_task_name.md)
   Properties of an event that indicates the retrieval of a task’s name port.
 
 

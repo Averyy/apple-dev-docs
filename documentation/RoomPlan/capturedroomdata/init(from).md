@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates captured room data by deserializing the decoder of a prior scan.
 
@@ -17,7 +18,7 @@ init(from decoder: any Decoder) throws
 
 #### Discussion
 
-To serialize a scan, call [`encode(to:)`](capturedroomdata/encode(to:).md).
+To serialize a scan, call [`encode(to:)`](./encode%28to%29.md).
 
 ## Parameters
 

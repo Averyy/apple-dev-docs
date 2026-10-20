@@ -1,7 +1,8 @@
 # AVCaptureOutput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for objects that provide media output destinations for a capture session.
 
@@ -19,9 +20,13 @@ An abstract superclass for objects that provide media output destinations for a 
 class AVCaptureOutput
 ```
 
+```objc
+@interface AVCaptureOutput : NSObject
+```
+
 ## Mentions
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Setting up a capture session](./setting-up-a-capture-session.md)
 
 #### Overview
 
@@ -32,74 +37,75 @@ A capture output can have multiple connections, one for each stream of media tha
 ## Topics
 
 ### Accessing connections
-- [var connections: [AVCaptureConnection]](avcaptureoutput/connections.md)
+- [var connections: [AVCaptureConnection]](./avcaptureoutput/connections.md)
   The capture output object’s connections.
-- [func connection(with: AVMediaType) -> AVCaptureConnection?](avcaptureoutput/connection(with:).md)
+- [func connection(with: AVMediaType) -> AVCaptureConnection?](./avcaptureoutput/connection%28with%29.md)
   Returns the first connection with an input port of a specified media type.
-- [AVCaptureOutput.DataDroppedReason](avcaptureoutput/datadroppedreason.md)
+- [AVCaptureOutput.DataDroppedReason](./avcaptureoutput/datadroppedreason.md)
   Constants that define reasons for why the system dropped a frame.
 ### Managing deferred start
-- [var isDeferredStartEnabled: Bool](avcaptureoutput/isdeferredstartenabled.md)
+- [var isDeferredStartEnabled: Bool](./avcaptureoutput/isdeferredstartenabled.md)
   A Boolean value that indicates whether to defer starting this capture output.
-- [var isDeferredStartSupported: Bool](avcaptureoutput/isdeferredstartsupported.md)
+- [var isDeferredStartSupported: Bool](./avcaptureoutput/isdeferredstartsupported.md)
   A `BOOL` value that indicates whether the output supports deferred start.
 ### Converting between coordinate systems
-- [func transformedMetadataObject(for: AVMetadataObject, connection: AVCaptureConnection) -> AVMetadataObject?](avcaptureoutput/transformedmetadataobject(for:connection:).md)
+- [func transformedMetadataObject(for: AVMetadataObject, connection: AVCaptureConnection) -> AVMetadataObject?](./avcaptureoutput/transformedmetadataobject%28for,connection%29.md)
   Converts a metadata object’s visual properties to layer coordinates.
-- [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](avcaptureoutput/metadataoutputrectconverted(fromoutputrect:).md)
+- [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](./avcaptureoutput/metadataoutputrectconverted%28fromoutputrect%29.md)
   Converts a rectangle in the capture output object’s coordinate system to one in the coordinate system used for metadata outputs.
-- [func outputRectConverted(fromMetadataOutputRect: CGRect) -> CGRect](avcaptureoutput/outputrectconverted(frommetadataoutputrect:).md)
+- [func outputRectConverted(fromMetadataOutputRect: CGRect) -> CGRect](./avcaptureoutput/outputrectconverted%28frommetadataoutputrect%29.md)
   Converts a rectangle in the coordinate system used for metadata outputs to one in the capture output object’s coordinate system.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVCaptureAudioDataOutput](avcaptureaudiodataoutput.md)
-- [AVCaptureAudioPreviewOutput](avcaptureaudiopreviewoutput.md)
-- [AVCaptureBroadcastVideoOutput](avcapturebroadcastvideooutput.md)
-- [AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
-- [AVCaptureFileOutput](avcapturefileoutput.md)
-- [AVCaptureMetadataOutput](avcapturemetadataoutput.md)
-- [AVCapturePhotoOutput](avcapturephotooutput.md)
-- [AVCaptureStillImageOutput](avcapturestillimageoutput.md)
-- [AVCaptureVideoDataOutput](avcapturevideodataoutput.md)
+- [AVCaptureAudioDataOutput](./avcaptureaudiodataoutput.md)
+- [AVCaptureAudioPreviewOutput](./avcaptureaudiopreviewoutput.md)
+- [AVCaptureBroadcastVideoOutput](./avcapturebroadcastvideooutput.md)
+- [AVCaptureDepthDataOutput](./avcapturedepthdataoutput.md)
+- [AVCaptureFileOutput](./avcapturefileoutput.md)
+- [AVCaptureMetadataOutput](./avcapturemetadataoutput.md)
+- [AVCapturePhotoOutput](./avcapturephotooutput.md)
+- [AVCaptureStillImageOutput](./avcapturestillimageoutput.md)
+- [AVCaptureVideoDataOutput](./avcapturevideodataoutput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+### Capture sessions
+- [Setting up a capture session](./setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
-- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
-- [AVCam: Building a camera app](avcam-building-a-camera-app.md)
+- [AVCam: Building a camera app](./avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [Building a responsive camera app that launches quickly](building-a-responsive-camera-app-that-launches-quickly.md)
+- [Building a responsive camera app that launches quickly](./building-a-responsive-camera-app-that-launches-quickly.md)
   Show a camera preview sooner by deferring capture output setup and postponing noncritical interface elements.
-- [Capturing Cinematic video](capturing-cinematic-video.md)
+- [Capturing Cinematic video](./capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
-- [Supporting Center Stage front camera in your iOS app](supporting-center-stage-front-camera-in-your-ios-app.md)
+- [Supporting Center Stage front camera in your iOS app](./supporting-center-stage-front-camera-in-your-ios-app.md)
   Enable Center Stage for photos and videos on the iPhone front camera.
-- [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
+- [AVMultiCamPiP: Capturing from Multiple Cameras](./avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](./avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
-- [Registering a camera capture accessory on iPhone Duo](registering-a-camera-capture-accessory-on-iphone-duo.md)
+- [Registering a camera capture accessory on iPhone Duo](./registering-a-camera-capture-accessory-on-iphone-duo.md)
   Provide content to the person in front of the camera by pairing it with your capture interface.
-- [class AVCaptureSession](avcapturesession.md)
+- [class AVCaptureSession](./avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
-- [class AVCaptureMultiCamSession](avcapturemulticamsession.md)
+- [class AVCaptureMultiCamSession](./avcapturemulticamsession.md)
   A capture session that supports simultaneous capture from multiple inputs of the same media type.
-- [class AVCaptureInput](avcaptureinput.md)
+- [class AVCaptureInput](./avcaptureinput.md)
   An abstract superclass for objects that provide input data to a capture session.
-- [class AVCaptureConnection](avcaptureconnection.md)
+- [class AVCaptureConnection](./avcaptureconnection.md)
   An object that represents a connection from a capture input to a capture output.
 
 

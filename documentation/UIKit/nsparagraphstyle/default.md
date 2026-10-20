@@ -1,7 +1,8 @@
 # default
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default paragraph style.
 
@@ -18,6 +19,10 @@ The default paragraph style.
 ```swift
 @NSCopying
 class var `default`: NSParagraphStyle { get }
+```
+
+```objc
+@property (class, nonatomic, copy, readonly) NSParagraphStyle * defaultParagraphStyle;
 ```
 
 #### Discussion

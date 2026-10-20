@@ -1,7 +1,8 @@
 # userInfoValueProvider(forDomain:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns any user info provider specified for a given error domain.
 
@@ -20,6 +21,10 @@ Returns any user info provider specified for a given error domain.
 class func userInfoValueProvider(forDomain errorDomain: String) -> (@Sendable (any Error, String) -> Any?)?
 ```
 
+```objc
++ (id (^)(NSError *, NSString *)) userInfoValueProviderForDomain:(NSErrorDomain) errorDomain;
+```
+
 #### Return Value
 
 The user info provider of the error domain, or `nil` if none is specified.
@@ -30,11 +35,12 @@ The user info provider of the error domain, or `nil` if none is specified.
 
 ## See Also
 
-- [class func setUserInfoValueProvider(forDomain: String, provider: ((any Error, String) -> Any?)?)](nserror/setuserinfovalueprovider(fordomain:provider:).md)
+### Providing Error User Info
+- [class func setUserInfoValueProvider(forDomain: String, provider: ((any Error, String) -> Any?)?)](./setuserinfovalueprovider%28fordomain,provider%29.md)
   Specifies a block to call when the corresponding property is not present in the user info dictionary.
-- [struct ErrorUserInfoKey](erroruserinfokey.md)
+- [struct ErrorUserInfoKey](../erroruserinfokey.md)
   These keys may exist in the user info dictionary.
-- [typealias UserInfoKey](nserror/userinfokey.md)
+- [typealias UserInfoKey](./userinfokey.md)
   These keys may exist in the user info dictionary.
 
 

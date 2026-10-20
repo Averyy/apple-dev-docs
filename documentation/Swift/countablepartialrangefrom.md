@@ -1,7 +1,8 @@
 # CountablePartialRangeFrom
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,10 +21,11 @@ typealias CountablePartialRangeFrom<Bound> = PartialRangeFrom<Bound> where Bound
 
 ## See Also
 
-- [typealias DictionaryIndex](dictionaryindex.md)
-- [typealias SetIndex](setindex.md)
-- [typealias CountableClosedRange](countableclosedrange.md)
-- [typealias CountableRange](countablerange.md)
+### Deprecated
+- [typealias DictionaryIndex](./dictionaryindex.md)
+- [typealias SetIndex](./setindex.md)
+- [typealias CountableClosedRange](./countableclosedrange.md)
+- [typealias CountableRange](./countablerange.md)
 
 
 ---

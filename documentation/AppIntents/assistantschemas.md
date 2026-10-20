@@ -1,7 +1,8 @@
 # AssistantSchemas
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -21,91 +22,92 @@ enum AssistantSchemas
 ## Topics
 
 ### Protocols
-- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
+- [AssistantSchemas.AssistantIntent](./assistantschemas/assistantintent.md)
   Assistant schema conformance for types you use for assistant functionality.
-- [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
+- [AssistantSchemas.BooksEntity](./assistantschemas/booksentity.md)
   Assistant schema conformance for app entities that describe ebooks or audiobooks.
-- [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
+- [AssistantSchemas.BooksEnum](./assistantschemas/booksenum.md)
   Assistant schema conformance for types you use to describe ebooks or audiobooks.
-- [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
+- [AssistantSchemas.BooksIntent](./assistantschemas/booksintent.md)
   Assistant schema conformance for app intents that offer ebook and audiobook functionality.
-- [AssistantSchemas.BrowserEntity](assistantschemas/browserentity.md)
+- [AssistantSchemas.BrowserEntity](./assistantschemas/browserentity.md)
   Assistant schema conformance for app entities that describe data for web browsing functionality.
-- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
+- [AssistantSchemas.BrowserEnum](./assistantschemas/browserenum.md)
   Assistant schema conformance for types you use for web browsing functionality.
-- [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
+- [AssistantSchemas.BrowserIntent](./assistantschemas/browserintent.md)
   Assistant schema conformance for app intents that offer web browsing functionality.
-- [AssistantSchemas.CameraEnum](assistantschemas/cameraenum.md)
+- [AssistantSchemas.CameraEnum](./assistantschemas/cameraenum.md)
   Assistant schema conformance for types you use for camera functionality.
-- [AssistantSchemas.CameraIntent](assistantschemas/cameraintent.md)
+- [AssistantSchemas.CameraIntent](./assistantschemas/cameraintent.md)
   Assistant schema conformance for app intents that offer camera functionality.
-- [AssistantSchemas.Entity](assistantschemas/entity.md)
-- [AssistantSchemas.Enum](assistantschemas/enum.md)
-- [AssistantSchemas.FilesEntity](assistantschemas/filesentity.md)
+- [AssistantSchemas.Entity](./assistantschemas/entity.md)
+- [AssistantSchemas.Enum](./assistantschemas/enum.md)
+- [AssistantSchemas.FilesEntity](./assistantschemas/filesentity.md)
   Assistant schema conformance for app entities that describe files.
-- [AssistantSchemas.FilesIntent](assistantschemas/filesintent.md)
+- [AssistantSchemas.FilesIntent](./assistantschemas/filesintent.md)
   Assistant schema conformance for app intents that offer file management functionality.
-- [AssistantSchemas.Intent](assistantschemas/intent.md)
-- [AssistantSchemas.JournalEntity](assistantschemas/journalentity.md)
+- [AssistantSchemas.Intent](./assistantschemas/intent.md)
+- [AssistantSchemas.JournalEntity](./assistantschemas/journalentity.md)
   Assistant schema conformance for app entities that describe journaling data.
-- [AssistantSchemas.JournalIntent](assistantschemas/journalintent.md)
+- [AssistantSchemas.JournalIntent](./assistantschemas/journalintent.md)
   Assistant schema conformance for app intents that offer journaling functionality.
-- [AssistantSchemas.MailEntity](assistantschemas/mailentity.md)
+- [AssistantSchemas.MailEntity](./assistantschemas/mailentity.md)
   Assistant schema conformance for app entities that describe email.
-- [AssistantSchemas.MailIntent](assistantschemas/mailintent.md)
+- [AssistantSchemas.MailIntent](./assistantschemas/mailintent.md)
   Assistant schema conformance for app intents that offer email functionality.
-- [AssistantSchemas.Model](assistantschemas/model.md)
-- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
+- [AssistantSchemas.Model](./assistantschemas/model.md)
+- [AssistantSchemas.PhotosEntity](./assistantschemas/photosentity.md)
   Assistant schema conformance for app entities that describe media assets.
-- [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
+- [AssistantSchemas.PhotosEnum](./assistantschemas/photosenum.md)
   Assistant schema conformance for types you use to describe photos and videos.
-- [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
+- [AssistantSchemas.PhotosIntent](./assistantschemas/photosintent.md)
   Assistant schema conformance for app intents that offer photo and video functionality.
-- [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
+- [AssistantSchemas.PresentationEntity](./assistantschemas/presentationentity.md)
   Assistant schema conformance for app entities that describe presentation data.
-- [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
+- [AssistantSchemas.PresentationIntent](./assistantschemas/presentationintent.md)
   Assistant schema conformance for app intents that offer presentation functionality.
-- [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
+- [AssistantSchemas.ReaderEntity](./assistantschemas/readerentity.md)
   Assistant schema conformance for app entities that describe documents.
-- [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)
+- [AssistantSchemas.ReaderEnum](./assistantschemas/readerenum.md)
   Assistant schema conformance for types you use to describe documents.
-- [AssistantSchemas.ReaderIntent](assistantschemas/readerintent.md)
+- [AssistantSchemas.ReaderIntent](./assistantschemas/readerintent.md)
   Assistant schema conformance for app intents that offer document viewing and editing functionality.
-- [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
+- [AssistantSchemas.SpreadsheetEntity](./assistantschemas/spreadsheetentity.md)
   Assistant schema conformance for app entities that describe spreadsheet data.
-- [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
+- [AssistantSchemas.SpreadsheetIntent](./assistantschemas/spreadsheetintent.md)
   Assistant schema conformance for app intents that offer spreadsheet functionality.
-- [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
+- [AssistantSchemas.SystemIntent](./assistantschemas/systemintent.md)
   Assistant schema conformance for types you use for system functionality.
-- [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
+- [AssistantSchemas.VisualIntelligenceIntent](./assistantschemas/visualintelligenceintent.md)
   Assistant schema conformance for app intents that match visual intelligence intents.
-- [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
+- [AssistantSchemas.WhiteboardEntity](./assistantschemas/whiteboardentity.md)
   Assistant schema conformance for app entities that describe data for whiteboard functionality.
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
+- [AssistantSchemas.WhiteboardEnum](./assistantschemas/whiteboardenum.md)
   Assistant schema conformance for whiteboard types.
-- [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
+- [AssistantSchemas.WhiteboardIntent](./assistantschemas/whiteboardintent.md)
   Assistant schema conformance for app intents that offer whiteboard functionality.
-- [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
+- [AssistantSchemas.WordProcessorEntity](./assistantschemas/wordprocessorentity.md)
   Assistant schema conformance for app entities that describe text documents.
-- [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
+- [AssistantSchemas.WordProcessorIntent](./assistantschemas/wordprocessorintent.md)
   Assistant schema conformance for app intents that offer word processing functionality.
 ### Structures
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchemas.EntitySchema](./assistantschemas/entityschema.md)
+- [AssistantSchemas.EnumSchema](./assistantschemas/enumschema.md)
+- [AssistantSchemas.IntentSchema](./assistantschemas/intentschema.md)
 
 ## See Also
 
-- [protocol AssistantEnum](assistantenum.md)
+### Previous schema types
+- [protocol AssistantEnum](./assistantenum.md)
   A value that Apple Intelligence and Siri use to fulfill a person’s request.
-- [protocol AssistantEntity](assistantentity.md)
+- [protocol AssistantEntity](./assistantentity.md)
   An app entity that Apple Intelligence can discover to fulfill a person’s request.
-- [protocol AssistantIntent](assistantintent.md)
+- [protocol AssistantIntent](./assistantintent.md)
   An app intent that Siri performs to fulfill a person’s request.
-- [protocol AssistantSchemaEnum](assistantschemaenum.md)
-- [protocol AssistantSchemaEntity](assistantschemaentity.md)
-- [protocol AssistantSchemaIntent](assistantschemaintent.md)
-- [struct AssistantSchema](assistantschema.md)
+- [protocol AssistantSchemaEnum](./assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](./assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](./assistantschemaintent.md)
+- [struct AssistantSchema](./assistantschema.md)
 
 
 ---

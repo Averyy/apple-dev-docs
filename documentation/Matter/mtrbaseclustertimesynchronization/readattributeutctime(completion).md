@@ -1,7 +1,8 @@
 # readAttributeUTCTime(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeUTCTime(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeUTCTime() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeUTCTimeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

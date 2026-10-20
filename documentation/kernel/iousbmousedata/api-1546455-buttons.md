@@ -1,7 +1,8 @@
 # buttons
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The value of the mouse buttons.
 
@@ -10,15 +11,16 @@ The value of the mouse buttons.
 
 ## Declaration
 
-```swift
+```c
 UInt16 buttons;
 ```
 
 ## See Also
 
-- [XDelta](iousbmousedata/1546115-xdelta.md)
+### Getting the Properties
+- [XDelta](./api-1546115-xdelta.md)
   The delta value of the X position.
-- [YDelta](iousbmousedata/1546189-ydelta.md)
+- [YDelta](./api-1546189-ydelta.md)
   The delta value of the Y position.
 
 

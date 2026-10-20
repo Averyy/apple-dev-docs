@@ -1,7 +1,8 @@
 # DragSession.Phase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The phase of the current drag session
 
@@ -21,27 +22,27 @@ enum Phase
 ## Topics
 
 ### Enumeration Cases
-- [DragSession.Phase.active](dragsession/phase-swift.enum/active.md)
+- [DragSession.Phase.active](./phase-swift.enum/active.md)
   The drag has moved to a new location.
-- [DragSession.Phase.dataTransferCompleted](dragsession/phase-swift.enum/datatransfercompleted.md)
+- [DragSession.Phase.dataTransferCompleted](./phase-swift.enum/datatransfercompleted.md)
   Dragged items have been transferred. You can remove temporary items, perform any cleanup if needed.
-- [DragSession.Phase.ended(_:)](dragsession/phase-swift.enum/ended(_:).md)
+- [DragSession.Phase.ended(_:)](./phase-swift.enum/ended%28_%29.md)
   The drag has ended.
-- [DragSession.Phase.ending(_:)](dragsession/phase-swift.enum/ending(_:).md)
+- [DragSession.Phase.ending(_:)](./phase-swift.enum/ending%28_%29.md)
   The drag is about to finish.
-- [DragSession.Phase.initial](dragsession/phase-swift.enum/initial.md)
+- [DragSession.Phase.initial](./phase-swift.enum/initial.md)
   The drag session is about to begin
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

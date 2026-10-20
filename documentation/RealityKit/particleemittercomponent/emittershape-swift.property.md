@@ -1,7 +1,8 @@
 # emitterShape
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the region of space where the system spawns new particles. Defaults to plane.
 

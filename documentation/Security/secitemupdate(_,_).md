@@ -1,7 +1,8 @@
 # SecItemUpdate(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Modifies items that match a search query.
 
@@ -20,19 +21,23 @@ Modifies items that match a search query.
 func SecItemUpdate(_ query: CFDictionary, _ attributesToUpdate: CFDictionary) -> OSStatus
 ```
 
+```c
+OSStatus SecItemUpdate(CFDictionaryRef query, CFDictionaryRef attributesToUpdate);
+```
+
 ## Mentions
 
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
+- [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-The query dictionary for update can’t contain [`Item return result keys`](item-return-result-keys.md), because [`SecItemUpdate(_:_:)`](secitemupdate(_:_:).md) only returns a status.
+The query dictionary for update can’t contain [Item return result keys](./item-return-result-keys.md), because [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md) only returns a status.
 
-##### Performance Considerations
+##### Performance considerations
 
 `SecItemUpdate` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemUpdate` from a background dispatch queue or `async` function:
 
@@ -61,10 +66,12 @@ private func updateKeychainItem(searchAttributes attrs: CFDictionary, update upd
 
 ## Parameters
 
-- `query`: A dictionary that describes the search for the keychain items you want to update. A typical `query` dictionary consists of: - **The item’s class.** Specify the kind of item you want, for example a password, a certificate, or a cryptographic key, using one of the class values in [`Item class keys and values`](item-class-keys-and-values.md).
-- **Attributes.** Narrow the search by indicating the attributes that the found item or items should have. The more attributes you specify, the more refined the results, but not all attributes apply to all item classes. For the attributes applicable to the keychain item you’re updating, see the entry for the item’s class in [`Item class values`](item-class-keys-and-values#Item-class-values.md).
-- **Search parameters.** Condition the search in a variety of ways. For example, you can limit the results to a specific number of items, control case sensitivity when matching string attributes, or search only among a particular set of items. See [`Search attribute keys and values`](search-attribute-keys-and-values.md) for the complete list of possible search parameters.
-- `attributesToUpdate`: A dictionary containing the attributes whose values should update, along with the new values. Only real keychain attributes are permitted in this dictionary (no “meta” attributes are allowed.) For the attributes applicable to the keychain item you’re updating, see the entry for the item’s class in [`Item class values`](item-class-keys-and-values#Item-class-values.md).
+- `query`: A dictionary that describes the search for the keychain items you want to update. A typical `query` dictionary consists of:
+
+  - **The item’s class.** Specify the kind of item you want, for example a password, a certificate, or a cryptographic key, using one of the class values in [Item class keys and values](./item-class-keys-and-values.md).
+  - **Attributes.** Narrow the search by indicating the attributes that the found item or items should have. The more attributes you specify, the more refined the results, but not all attributes apply to all item classes. For the attributes applicable to the keychain item you’re updating, see the entry for the item’s class in [Item class values](./item-class-keys-and-values.md#Item-class-values).
+  - **Search parameters.** Condition the search in a variety of ways. For example, you can limit the results to a specific number of items, control case sensitivity when matching string attributes, or search only among a particular set of items. See [Search attribute keys and values](./search-attribute-keys-and-values.md) for the complete list of possible search parameters.
+- `attributesToUpdate`: A dictionary containing the attributes whose values should update, along with the new values. Only real keychain attributes are permitted in this dictionary (no “meta” attributes are allowed.) For the attributes applicable to the keychain item you’re updating, see the entry for the item’s class in [Item class values](./item-class-keys-and-values.md#Item-class-values).
 
 
 ---

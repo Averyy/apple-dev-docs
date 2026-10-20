@@ -1,7 +1,8 @@
 # formPropertyID
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the property ID for an element’s property.
 

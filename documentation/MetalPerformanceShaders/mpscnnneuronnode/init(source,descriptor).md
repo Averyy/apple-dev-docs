@@ -1,7 +1,8 @@
 # init(source:descriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(source sourceNode: MPSNNImageNode, descriptor: MPSNNNeuronDescriptor)
+```
+
+```objc
++ (instancetype) nodeWithSource:(MPSNNImageNode *) sourceNode descriptor:(MPSNNNeuronDescriptor *) descriptor;
 ```
 
 

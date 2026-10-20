@@ -1,7 +1,8 @@
 # kAXSelectedTextChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that a different set of text was selected.
 
@@ -12,6 +13,10 @@ Notification that a different set of text was selected.
 
 ```swift
 var kAXSelectedTextChangedNotification: String { get }
+```
+
+```c
+#define kAXSelectedTextChangedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A merchant URL.
 
@@ -16,17 +17,22 @@ A merchant URL.
 var url: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSURL * url;
+```
+
 #### Discussion
 
-The maximum length of the URL is 64 characters, including the schema. To disable the merchant URL, set [`url`](nfcvascommandconfiguration/url.md) to `nil.`
+The maximum length of the URL is 64 characters, including the schema. To disable the merchant URL, set [`url`](./url.md) to `nil.`
 
 ## See Also
 
-- [var mode: NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.property.md)
+### Setting Configuration Items
+- [var mode: NFCVASCommandConfiguration.Mode](./mode-swift.property.md)
   A VAS protocol mode.
-- [typealias VASMode](vasmode.md)
+- [typealias VASMode](../vasmode.md)
   Constants that indicate the VAS protocol mode.
-- [var passTypeIdentifier: String](nfcvascommandconfiguration/passtypeidentifier.md)
+- [var passTypeIdentifier: String](./passtypeidentifier.md)
   A type identifier for the Wallet Pass.
 
 

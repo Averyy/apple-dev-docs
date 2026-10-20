@@ -1,7 +1,8 @@
 # drawTextHighlightBackground(for:origin:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func drawTextHighlightBackground(for textRange: NSTextRange, origin: NSPoint)
+```
+
+```objc
+- (void) drawTextHighlightBackgroundForTextRange:(NSTextRange *) textRange origin:(NSPoint) origin;
 ```
 
 

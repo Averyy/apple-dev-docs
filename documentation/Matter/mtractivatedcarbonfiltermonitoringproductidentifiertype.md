@@ -1,7 +1,8 @@
 # MTRActivatedCarbonFilterMonitoringProductIdentifierType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 enum MTRActivatedCarbonFilterMonitoringProductIdentifierType
 ```
 
+```c
+enum MTRActivatedCarbonFilterMonitoringProductIdentifierType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.EAN](mtractivatedcarbonfiltermonitoringproductidentifiertype/ean.md)
-- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.GTIN14](mtractivatedcarbonfiltermonitoringproductidentifiertype/gtin14.md)
-- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.GTIN8](mtractivatedcarbonfiltermonitoringproductidentifiertype/gtin8.md)
-- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.OEM](mtractivatedcarbonfiltermonitoringproductidentifiertype/oem.md)
-- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.UPC](mtractivatedcarbonfiltermonitoringproductidentifiertype/upc.md)
+- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.EAN](./mtractivatedcarbonfiltermonitoringproductidentifiertype/ean.md)
+- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.GTIN14](./mtractivatedcarbonfiltermonitoringproductidentifiertype/gtin14.md)
+- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.GTIN8](./mtractivatedcarbonfiltermonitoringproductidentifiertype/gtin8.md)
+- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.OEM](./mtractivatedcarbonfiltermonitoringproductidentifiertype/oem.md)
+- [MTRActivatedCarbonFilterMonitoringProductIdentifierType.UPC](./mtractivatedcarbonfiltermonitoringproductidentifiertype/upc.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtractivatedcarbonfiltermonitoringproductidentifiertype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtractivatedcarbonfiltermonitoringproductidentifiertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

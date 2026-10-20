@@ -1,7 +1,8 @@
 # init(abbreviation:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a time zone identified by a given abbreviation.
 

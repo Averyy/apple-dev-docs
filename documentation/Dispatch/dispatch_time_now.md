@@ -1,21 +1,26 @@
 # DISPATCH_TIME_NOW
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var DISPATCH_TIME_NOW: UInt64 { get }
+```
+
+```c
+#define DISPATCH_TIME_NOW
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ Indicates a time that occurs immediately.
 
 ## See Also
 
-- [var DISPATCH_TIME_FOREVER: UInt64](dispatch_time_forever.md)
+### Well-Defined Times
+- [var DISPATCH_TIME_FOREVER: UInt64](./dispatch_time_forever.md)
 
 
 ---

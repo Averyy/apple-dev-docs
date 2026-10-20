@@ -1,7 +1,8 @@
 # width
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the texture image for the base mipmap level, in pixels.
 

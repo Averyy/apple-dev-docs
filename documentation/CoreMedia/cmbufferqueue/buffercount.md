@@ -1,7 +1,8 @@
 # bufferCount
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The count of buffers in the queue.
 
@@ -22,13 +23,14 @@ var bufferCount: CMItemCount { get }
 
 ## See Also
 
-- [var isEmpty: Bool](cmbufferqueue/isempty.md)
+### Inspecting a Queue
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the queue contains buffers.
-- [var head: CMBuffer?](cmbufferqueue/head.md)
+- [var head: CMBuffer?](./head.md)
   The element at the head of the queue.
-- [var containsEndOfData: Bool](cmbufferqueue/containsendofdata.md)
+- [var containsEndOfData: Bool](./containsendofdata.md)
   A Boolean value that indicates whether the buffer has its end-of-data state set.
-- [var isAtEndOfData: Bool](cmbufferqueue/isatendofdata.md)
+- [var isAtEndOfData: Bool](./isatendofdata.md)
   A Boolean value that indicates whether that queue is at the end of its data.
 
 

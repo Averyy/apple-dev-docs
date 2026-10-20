@@ -1,7 +1,8 @@
 # UITabBar.ItemPositioning
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify tab bar item positioning.
 
@@ -9,7 +10,7 @@ Constants that specify tab bar item positioning.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,35 +19,40 @@ Constants that specify tab bar item positioning.
 enum ItemPositioning
 ```
 
+```c
+enum UITabBarItemPositioning : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITabBar.ItemPositioning.automatic](uitabbar/itempositioning-swift.enum/automatic.md)
+- [UITabBar.ItemPositioning.automatic](./itempositioning-swift.enum/automatic.md)
   Specifies automatic tab bar item positioning according to the user interface idiom, as follows:
-- [UITabBar.ItemPositioning.fill](uitabbar/itempositioning-swift.enum/fill.md)
+- [UITabBar.ItemPositioning.fill](./itempositioning-swift.enum/fill.md)
   Distribute items across the entire width of the tab bar.
-- [UITabBar.ItemPositioning.centered](uitabbar/itempositioning-swift.enum/centered.md)
+- [UITabBar.ItemPositioning.centered](./itempositioning-swift.enum/centered.md)
   Center items in the available space.
 ### Initializers
-- [init?(rawValue: Int)](uitabbar/itempositioning-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./itempositioning-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var itemPositioning: UITabBar.ItemPositioning](uitabbar/itempositioning-swift.property.md)
+### Customizing item spacing
+- [var itemPositioning: UITabBar.ItemPositioning](./itempositioning-swift.property.md)
   The positioning scheme for the tab bar items in the tab bar.
-- [var itemSpacing: CGFloat](uitabbar/itemspacing.md)
+- [var itemSpacing: CGFloat](./itemspacing.md)
   The amount of space (in points) to use between tab bar items.
-- [var itemWidth: CGFloat](uitabbar/itemwidth.md)
+- [var itemWidth: CGFloat](./itemwidth.md)
   The width (in points) of tab bar items.
 
 

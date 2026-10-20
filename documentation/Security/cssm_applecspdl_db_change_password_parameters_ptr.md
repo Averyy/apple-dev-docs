@@ -1,7 +1,8 @@
 # CSSM_APPLECSPDL_DB_CHANGE_PASSWORD_PARAMETERS_PTR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CSSM_APPLECSPDL_DB_CHANGE_PASSWORD_PARAMETERS_PTR = UnsafeMutablePointer<cssm_applecspdl_db_change_password_parameters>
+```
+
+```c
+typedef struct cssm_applecspdl_db_change_password_parameters * CSSM_APPLECSPDL_DB_CHANGE_PASSWORD_PARAMETERS_PTR;
 ```
 
 

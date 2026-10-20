@@ -1,7 +1,8 @@
 # popover
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Prefer a popover appearance when adapting for size classes.
 
@@ -22,13 +23,14 @@ static var popover: PresentationAdaptation { get }
 
 ## See Also
 
-- [static var automatic: PresentationAdaptation](presentationadaptation/automatic.md)
+### Getting adaptation strategies
+- [static var automatic: PresentationAdaptation](./automatic.md)
   Use the default presentation adaptation.
-- [static var none: PresentationAdaptation](presentationadaptation/none.md)
+- [static var none: PresentationAdaptation](./none.md)
   Don’t adapt for the size class, if possible.
-- [static var fullScreenCover: PresentationAdaptation](presentationadaptation/fullscreencover.md)
+- [static var fullScreenCover: PresentationAdaptation](./fullscreencover.md)
   Prefer a full-screen-cover appearance when adapting for size classes.
-- [static var sheet: PresentationAdaptation](presentationadaptation/sheet.md)
+- [static var sheet: PresentationAdaptation](./sheet.md)
   Prefer a sheet appearance when adapting for size classes.
 
 

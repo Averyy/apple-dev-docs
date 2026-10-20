@@ -1,18 +1,19 @@
 # NSPersistentCloudKitContainerSchemaInitializationOptions
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that control the behavior when promoting the container’s schema to CloudKit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,32 +21,37 @@ Options that control the behavior when promoting the container’s schema to Clo
 struct NSPersistentCloudKitContainerSchemaInitializationOptions
 ```
 
+```c
+enum NSPersistentCloudKitContainerSchemaInitializationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions](nspersistentcloudkitcontainerschemainitializationoptions/dryrun.md)
+- [static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions](./nspersistentcloudkitcontainerschemainitializationoptions/dryrun.md)
   A flag that indicates the container validates the model and generates the records, but doesn’t upload them to CloudKit.
-- [static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions](nspersistentcloudkitcontainerschemainitializationoptions/printschema.md)
+- [static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions](./nspersistentcloudkitcontainerschemainitializationoptions/printschema.md)
   Prints the generated records to the console.
 ### Initializers
-- [init(rawValue: UInt)](nspersistentcloudkitcontainerschemainitializationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nspersistentcloudkitcontainerschemainitializationoptions/init%28rawvalue%29.md)
   Creates the schema initialization options using the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func initializeCloudKitSchema(options: NSPersistentCloudKitContainerSchemaInitializationOptions) throws](nspersistentcloudkitcontainer/initializecloudkitschema(options:).md)
+### Promoting Your Schema
+- [func initializeCloudKitSchema(options: NSPersistentCloudKitContainerSchemaInitializationOptions) throws](./nspersistentcloudkitcontainer/initializecloudkitschema%28options%29.md)
   Creates the CloudKit schema for all stores in the container that manage a CloudKit database.
 
 

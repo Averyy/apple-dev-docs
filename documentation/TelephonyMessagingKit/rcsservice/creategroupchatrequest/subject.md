@@ -1,7 +1,8 @@
 # subject
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Subject to be used for group chat.
 
@@ -16,9 +17,10 @@ var subject: String
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/creategroupchatrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var participants: [RCSHandle.URI]](rcsservice/creategroupchatrequest/participants.md)
+- [var participants: [RCSHandle.URI]](./participants.md)
   List of participants in the group chat.
 
 

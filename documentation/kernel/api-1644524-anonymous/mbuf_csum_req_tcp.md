@@ -1,14 +1,15 @@
 # MBUF_CSUM_REQ_TCP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 MBUF_CSUM_REQ_TCP = 0x0002
 ```
 

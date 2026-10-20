@@ -1,7 +1,8 @@
 # setNeuronType(_:parameterA:parameterB:parameterC:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setNeuronType(_ neuronType: MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)
+```
+
+```objc
+- (void) setNeuronType:(MPSCNNNeuronType) neuronType parameterA:(float) parameterA parameterB:(float) parameterB parameterC:(float) parameterC;
 ```
 
 

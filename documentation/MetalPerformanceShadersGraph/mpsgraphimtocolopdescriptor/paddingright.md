@@ -1,7 +1,8 @@
 # paddingRight
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the padding in width dimension on the right side.
 
@@ -17,6 +18,10 @@ The property that defines the padding in width dimension on the right side.
 
 ```swift
 var paddingRight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingRight;
 ```
 
 

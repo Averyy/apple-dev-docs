@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Renewal information for subscriptions that use the Advanced Commerce API.
 
@@ -23,29 +24,30 @@ struct AdvancedCommerceInfo
 ## Topics
 
 ### Structures
-- [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item.md)
+- [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item](./advancedcommerceinfo-swift.struct/item.md)
   The developer-defined product that was purchased.
 ### Instance Properties
-- [let consistencyToken: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/consistencytoken.md)
-- [let description: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/description.md)
-- [let displayName: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/displayname.md)
-- [let items: [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item]](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/items.md)
+- [let consistencyToken: String](./advancedcommerceinfo-swift.struct/consistencytoken.md)
+- [let description: String](./advancedcommerceinfo-swift.struct/description.md)
+- [let displayName: String](./advancedcommerceinfo-swift.struct/displayname.md)
+- [let items: [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item]](./advancedcommerceinfo-swift.struct/items.md)
   The items included in this subscription.
-- [let period: SubscriptionPeriod](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/period.md)
-- [let requestReferenceID: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/requestreferenceid.md)
-- [let taxCode: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/taxcode.md)
+- [let period: SubscriptionPeriod](./advancedcommerceinfo-swift.struct/period.md)
+- [let requestReferenceID: String](./advancedcommerceinfo-swift.struct/requestreferenceid.md)
+- [let taxCode: String](./advancedcommerceinfo-swift.struct/taxcode.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let advancedCommerceInfo: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo?](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.property.md)
+### Getting renewal information for Advanced Commerce API
+- [let advancedCommerceInfo: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo?](./advancedcommerceinfo-swift.property.md)
   Renewal information for a subscription that uses the Advanced Commerce API.
 
 

@@ -1,7 +1,8 @@
 # cornerConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A configuration that defines the corners of the view.
 
@@ -21,15 +22,16 @@ A configuration that defines the corners of the view.
 
 #### Discussion
 
-For more information on how to configure view corners, see [`UICornerConfiguration`](uicornerconfiguration-swift.struct.md).
+For more information on how to configure view corners, see [`UICornerConfiguration`](../uicornerconfiguration-swift.struct.md).
 
 ## See Also
 
-- [struct UICornerConfiguration](uicornerconfiguration-swift.struct.md)
+### Configuring a view’s corners
+- [struct UICornerConfiguration](../uicornerconfiguration-swift.struct.md)
   A configuration that defines how corner radii are mapped to the corners of a rectangle.
-- [struct UICornerRadius](uicornerradius-swift.struct.md)
+- [struct UICornerRadius](../uicornerradius-swift.struct.md)
   A type that represents the radius the system uses to round a corner.
-- [func effectiveRadius(corner: UIRectCorner) -> CGFloat](uiview/effectiveradius(corner:).md)
+- [func effectiveRadius(corner: UIRectCorner) -> CGFloat](./effectiveradius%28corner%29.md)
   Returns the effective radius for the corner you provide, calculated using the view’s current corner configuration.
 
 

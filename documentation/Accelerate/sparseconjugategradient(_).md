@@ -1,7 +1,8 @@
 # SparseConjugateGradient(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a conjugate gradient (CG) method with specified options.
 
@@ -20,15 +21,19 @@ Returns a conjugate gradient (CG) method with specified options.
 func SparseConjugateGradient(_ options: SparseCGOptions) -> SparseIterativeMethod
 ```
 
+```c
+static SparseIterativeMethod SparseConjugateGradient(SparseCGOptions options);
+```
+
 #### Return Value
 
-A [`SparseIterativeMethod`](sparseiterativemethod.md) structure that represents a default conjugate gradient method.
+A [`SparseIterativeMethod`](./sparseiterativemethod.md) structure that represents a default conjugate gradient method.
 
 #### Discussion
 
 Use CG to solve *Ax = b* when *A* is symmetric positive-definite. The method may break down or fail to converge if *A* isn’t positive-definite.
 
-For square, full-rank, unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md). For rectangular or singular systems, use [`SparseLSMR(_:)`](sparselsmr(_:).md).
+For square, full-rank, unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](./sparsegmres%28_%29.md). For rectangular or singular systems, use [`SparseLSMR(_:)`](./sparselsmr%28_%29.md).
 
 ## Parameters
 
@@ -36,9 +41,10 @@ For square, full-rank, unsymmetric or indefinite equations, use [`SparseGMRES(_:
 
 ## See Also
 
-- [func SparseConjugateGradient() -> SparseIterativeMethod](sparseconjugategradient().md)
+### Sparse Iterative Methods for Symmetric Positive-Definite Coefficient Matrices
+- [func SparseConjugateGradient() -> SparseIterativeMethod](./sparseconjugategradient%28%29.md)
   Returns a conjugate gradient (CG) method.
-- [struct SparseCGOptions](sparsecgoptions.md)
+- [struct SparseCGOptions](./sparsecgoptions.md)
   Options for creating a conjugate gradient (CG) method.
 
 

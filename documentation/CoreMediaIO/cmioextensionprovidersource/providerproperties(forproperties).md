@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the state of provider properties.
@@ -16,6 +17,10 @@ Gets the state of provider properties.
 func providerProperties(forProperties properties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionProviderProperties
 ```
 
+```objc
+- (CMIOExtensionProviderProperties *) providerPropertiesForProperties:(NSSet<NSString *> *) properties error:(NSError **) outError;
+```
+
 #### Return Value
 
 A provider properties object that contains the state of the requested properties.
@@ -26,9 +31,10 @@ A provider properties object that contains the state of the requested properties
 
 ## See Also
 
-- [var availableProperties: Set<CMIOExtensionProperty>](cmioextensionprovidersource/availableproperties.md)
+### Configuring Properties
+- [var availableProperties: Set<CMIOExtensionProperty>](./availableproperties.md)
   A set of available properties for a provider.
-- [func setProviderProperties(CMIOExtensionProviderProperties) throws](cmioextensionprovidersource/setproviderproperties(_:).md)
+- [func setProviderProperties(CMIOExtensionProviderProperties) throws](./setproviderproperties%28_%29.md)
   Set the state of provider properties.
 
 

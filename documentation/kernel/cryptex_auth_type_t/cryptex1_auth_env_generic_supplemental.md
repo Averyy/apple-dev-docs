@@ -1,14 +1,15 @@
 # CRYPTEX1_AUTH_ENV_GENERIC_SUPPLEMENTAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 CRYPTEX1_AUTH_ENV_GENERIC_SUPPLEMENTAL
 ```
 

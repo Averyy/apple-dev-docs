@@ -1,7 +1,8 @@
 # SpatialTrackingSession.Configuration
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for configuring the spatial tracking session.
 
@@ -19,45 +20,46 @@ struct Configuration
 ## Topics
 
 ### Structures
-- [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
+- [SpatialTrackingSession.Configuration.AnchorCapability](./configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
-- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
+- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](./configuration/sceneunderstandingcapability.md)
   Defines how system behaviors use scene understanding.
 ### Initializers
-- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>)](spatialtrackingsession/configuration/init(tracking:).md)
+- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>)](./configuration/init%28tracking%29.md)
   Creates a configuration with a set of anchor capabilities.
-- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>, sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>)](spatialtrackingsession/configuration/init(tracking:sceneunderstanding:).md)
+- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>, sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>)](./configuration/init%28tracking,sceneunderstanding%29.md)
   Creates a configuration with a set of anchor capabilities and scene understanding capabilities.
-- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>, sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>, camera: SpatialTrackingSession.Configuration.Camera)](spatialtrackingsession/configuration/init(tracking:sceneunderstanding:camera:).md)
+- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>, sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>, camera: SpatialTrackingSession.Configuration.Camera)](./configuration/init%28tracking,sceneunderstanding,camera%29.md)
   Creates a configuration with anchor capabilities, scene-understanding capabilities, and camera feeds.
 ### Instance Properties
-- [var debugDescription: String](spatialtrackingsession/configuration/debugdescription.md)
+- [var debugDescription: String](./configuration/debugdescription.md)
   A human-readable description of the configuration.
 ### Instance Methods
-- [func arConfiguration() -> ARConfiguration?](spatialtrackingsession/configuration/arconfiguration.md)
-- [func supportedConfiguration() -> SpatialTrackingSession.Configuration](spatialtrackingsession/configuration/supportedconfiguration.md)
+- [func arConfiguration() -> ARConfiguration?](./configuration/arconfiguration%28%29.md)
+- [func supportedConfiguration() -> SpatialTrackingSession.Configuration](./configuration/supportedconfiguration%28%29.md)
 ### Enumerations
-- [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
+- [SpatialTrackingSession.Configuration.Camera](./configuration/camera.md)
   Defines the camera feed the RealityView renders.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [class SpatialTrackingSession](spatialtrackingsession.md)
+### Spatial tracking
+- [class SpatialTrackingSession](../spatialtrackingsession.md)
   An object that incorporates spatial tracking capabilities into your RealityKit apps.
-- [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
+- [SpatialTrackingSession.Configuration.AnchorCapability](./configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
-- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
+- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](./configuration/sceneunderstandingcapability.md)
   Defines how system behaviors use scene understanding.
-- [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
+- [SpatialTrackingSession.Configuration.Camera](./configuration/camera.md)
   Defines the camera feed the RealityView renders.
-- [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)
+- [SpatialTrackingSession.UnavailableCapabilities](./unavailablecapabilities.md)
   A type that contains the unavailable capabilities of the current spatial tracking session.
 
 

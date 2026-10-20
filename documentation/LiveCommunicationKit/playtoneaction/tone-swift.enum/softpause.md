@@ -1,7 +1,8 @@
 # PlayToneAction.Tone.softPause
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person entered a soft pause.
 
@@ -24,9 +25,10 @@ A comma (,) indicates a soft pause. When a person enters a soft pause, the syste
 
 ## See Also
 
-- [PlayToneAction.Tone.hardPause](playtoneaction/tone-swift.enum/hardpause.md)
+### Keypad tones
+- [PlayToneAction.Tone.hardPause](./hardpause.md)
   A person entered a hard pause.
-- [PlayToneAction.Tone.single](playtoneaction/tone-swift.enum/single.md)
+- [PlayToneAction.Tone.single](./single.md)
   A person entered a digit.
 
 

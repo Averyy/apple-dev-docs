@@ -1,7 +1,8 @@
 # recordClass(fromUniqueId:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the class name of the record that matches the given unique ID.
 
@@ -12,6 +13,10 @@ Returns the class name of the record that matches the given unique ID.
 
 ```swift
 func recordClass(fromUniqueId uniqueId: String!) -> String!
+```
+
+```objc
+- (NSString *) recordClassFromUniqueId:(NSString *) uniqueId;
 ```
 
 #### Return Value

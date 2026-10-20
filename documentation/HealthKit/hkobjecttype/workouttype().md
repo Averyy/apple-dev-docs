@@ -1,9 +1,10 @@
 # workoutType()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Returns the shared [`HKWorkoutType`](hkworkouttype.md) object.
+Returns the shared [`HKWorkoutType`](../hkworkouttype.md) object.
 
 **Availability**:
 - iOS 8.0+
@@ -19,13 +20,17 @@ Returns the shared [`HKWorkoutType`](hkworkouttype.md) object.
 class func workoutType() -> HKWorkoutType
 ```
 
+```objc
++ (HKWorkoutType *) workoutType;
+```
+
 #### Return Value
 
-The shared [`HKWorkoutType`](hkworkouttype.md) instance.
+The shared [`HKWorkoutType`](../hkworkouttype.md) instance.
 
 #### Discussion
 
-This method returns an instance of the [`HKWorkoutType`](hkworkouttype.md) concrete subclass. HealthKit uses workout types to create samples that store information about individual workouts. Use workout type instances to create workout objects that you can save in the HealthKit store.  For more information, see [`HKWorkoutType`](hkworkouttype.md).
+This method returns an instance of the [`HKWorkoutType`](../hkworkouttype.md) concrete subclass. HealthKit uses workout types to create samples that store information about individual workouts. Use workout type instances to create workout objects that you can save in the HealthKit store.  For more information, see [`HKWorkoutType`](../hkworkouttype.md).
 
 In HealthKit, all workouts use the same workout type.
 

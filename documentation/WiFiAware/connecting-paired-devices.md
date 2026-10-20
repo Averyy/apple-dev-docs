@@ -1,6 +1,7 @@
 # Connecting devices for peer-to-peer Wi-Fi
 
-**Framework**: Wi-Fi Aware
+**Framework**: Wi-Fi Aware  
+**Role**: Article
 
 Make outgoing and accept incoming secure connections with paired devices.
 
@@ -10,23 +11,23 @@ With the Wi-Fi Aware™ technology, your app can securely establish peer-to-peer
 
 For your app to pair devices, or ask the person using your app for access to existing devices, you can use either of the following two methods:
 
-- [`DeviceDiscoveryUI`](https://developer.apple.comhttps://developer.apple.com/documentation/devicediscoveryui): Pair any kind of device for device-to-device and app-to-app use cases, such as file transfer and media streaming.
-- [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit): Pair a person’s personal hardware accessory with the accessory’s companion app, such as for setup and accessory management.
+- [DeviceDiscoveryUI](../DeviceDiscoveryUI/DeviceDiscoveryUI.md): Pair any kind of device for device-to-device and app-to-app use cases, such as file transfer and media streaming.
+- [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md): Pair a person’s personal hardware accessory with the accessory’s companion app, such as for setup and accessory management.
 
-After a person pairs a device or grants your app access to a device, the system adds the device to your app’s [`WAPairedDevice.Devices`](wapaireddevice/devices.md) collection, which is accessible through the [`allDevices`](wapaireddevice/alldevices.md) APIs.
+After a person pairs a device or grants your app access to a device, the system adds the device to your app’s [`WAPairedDevice.Devices`](./wapaireddevice/devices.md) collection, which is accessible through the [`allDevices`](./wapaireddevice/alldevices.md) APIs.
 
-##### Connect Paired Devices
+##### Connect paired devices
 
-After your app pairs devices, it can initiate secure peer-to-peer Wi-Fi connections between those devices on demand. The Wi-Fi Aware framework integrates with the [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) framework to provide Wi-Fi Aware connections and related functionality, extending several common networking primitives:
+After your app pairs devices, it can initiate secure peer-to-peer Wi-Fi connections between those devices on demand. The Wi-Fi Aware framework integrates with the [Network](../Network/Network.md) framework to provide Wi-Fi Aware connections and related functionality, extending several common networking primitives:
 
-- [`NetworkBrowser`](https://developer.apple.com/documentation/network/networkbrowser) subscribes to Wi-Fi Aware services on paired devices, and makes outgoing secure connections to them.
-- [`NetworkListener`](https://developer.apple.com/documentation/network/networklistener) publishes Wi-Fi Aware services to paired devices, and accepts incoming secure connections from them.
-- [`NetworkConnection`](https://developer.apple.com/documentation/network/networkconnection) opens a secure, high-performance data connection to Wi-Fi Aware devices.
-- [`NWParameters`](https://developer.apple.com/documentation/network/nwparameters) configures Wi-Fi Aware parameters.
-- [`NWPath`](https://developer.apple.com/documentation/network/nwpath) fetches Wi-Fi Aware connection statuses and performance metrics.
-- [`NWError`](https://developer.apple.com/documentation/network/nwerror) fetches Wi-Fi Aware error statuses.
+- [`NetworkBrowser`](../Network/networkbrowser.md) subscribes to Wi-Fi Aware services on paired devices, and makes outgoing secure connections to them.
+- [`NetworkListener`](../Network/networklistener.md) publishes Wi-Fi Aware services to paired devices, and accepts incoming secure connections from them.
+- [`NetworkConnection`](../Network/networkconnection.md) opens a secure, high-performance data connection to Wi-Fi Aware devices.
+- [`NWParameters`](../Network/nwparameters.md) configures Wi-Fi Aware parameters.
+- [`NWPath`](../Network/nwpath.md) fetches Wi-Fi Aware connection statuses and performance metrics.
+- [`NWError`](../Network/nwerror.md) fetches Wi-Fi Aware error statuses.
 
-##### Create a Listener to Publish
+##### Create a listener to publish
 
 The following code example creates a `NetworkListener` that publishes the `_example-service._tcp` service over Wi-Fi Aware, and accepts incoming connections from the specified paired devices:
 
@@ -55,7 +56,7 @@ using: {
 }
 ```
 
-##### Create a Browser to Subscribe
+##### Create a browser to subscribe
 
 The following code example creates a `NetworkBrowser` that subscribes for the `_example-service._tcp` service over Wi-Fi Aware, and provides browse results that the system can use to make outgoing connections to the specified paired devices:
 
@@ -86,7 +87,7 @@ let endpoint = try await browser.run { waEndpoints in
 }
 ```
 
-##### Make a Connection
+##### Make a connection
 
 The following code example creates a `NetworkConnection` to a discovered Wi-Fi Aware endpoint:
 
@@ -105,7 +106,7 @@ let connection = NetworkConnection(
 // The run closure on the `NetworkListener` device receives the incoming connection.
 ```
 
-##### Monitor Connection Performance
+##### Monitor connection performance
 
 The following code example gets the Wi-Fi Aware performance report from the current path of a connection.
 
@@ -117,9 +118,9 @@ if let wifiAwarePath = try await connection.currentPath?.wifiAware {
 }
 ```
 
-##### Get Wi Fi Aware Errors
+##### Get Wi-Fi Aware errors
 
-The following code example gets the Wi-Fi Aware specific error code from the [`NWError`](https://developer.apple.com/documentation/network/nwerror) reported by the Network framework as part of the state updates provided for the `NetworkBrowser`, `NetworkListener` and `NetworkConnection` instances.
+The following code example gets the Wi-Fi Aware specific error code from the [`NWError`](../Network/nwerror.md) reported by the Network framework as part of the state updates provided for the `NetworkBrowser`, `NetworkListener` and `NetworkConnection` instances.
 
 ```swift
 .onStateUpdate { _, state in
@@ -134,13 +135,14 @@ The following code example gets the Wi-Fi Aware specific error code from the [`N
 
 ## See Also
 
-- [Building peer-to-peer apps](building-peer-to-peer-apps.md)
+### Essentials
+- [Building peer-to-peer apps](./building-peer-to-peer-apps.md)
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
-- [Adopting Wi-Fi Aware](adopting-wi-fi-aware.md)
+- [Adopting Wi-Fi Aware](./adopting-wi-fi-aware.md)
   Add entitlements and declare your app’s services.
-- [com.apple.developer.wifi-aware](../bundleresources/entitlements/com.apple.developer.wifi-aware.md)
+- [com.apple.developer.wifi-aware](../BundleResources/entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
-- [WiFiAwareServices](../bundleresources/information-property-list/wifiawareservices.md)
+- [WiFiAwareServices](../BundleResources/information-property-list/wifiawareservices.md)
   Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 
 

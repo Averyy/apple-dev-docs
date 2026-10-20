@@ -1,7 +1,8 @@
 # providerConfiguration
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing keys and values defined by the Tunnel Provider developer.
 
@@ -19,13 +20,18 @@ A dictionary containing keys and values defined by the Tunnel Provider developer
 var providerConfiguration: [String : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary<NSString *,id> * providerConfiguration;
+```
+
 #### Discussion
 
-All of the keys and values in this dictionary must conform to the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) and [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocols.
+All of the keys and values in this dictionary must conform to the [`NSSecureCoding`](../../Foundation/nssecurecoding.md) and [`NSCopying`](../../Foundation/nscopying.md) protocols.
 
 ## See Also
 
-- [var providerBundleIdentifier: String?](netunnelproviderprotocol/providerbundleidentifier.md)
+### Accessing the tunnel configuration
+- [var providerBundleIdentifier: String?](./providerbundleidentifier.md)
   A string identifying the specific Tunnel Provider extension that should be used with this configuration.
 
 

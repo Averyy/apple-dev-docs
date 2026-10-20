@@ -1,7 +1,8 @@
 # dpad
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s directional pad element.
 
@@ -19,15 +20,20 @@ The controller’s directional pad element.
 var dpad: GCControllerDirectionPad { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) GCControllerDirectionPad * dpad;
+```
+
 #### Discussion
 
 The directional pad in the micro gamepad profile reports analog directional information.
 
 ## See Also
 
-- [var reportsAbsoluteDpadValues: Bool](gcmicrogamepad/reportsabsolutedpadvalues.md)
+### Getting directional pad inputs
+- [var reportsAbsoluteDpadValues: Bool](./reportsabsolutedpadvalues.md)
   A Boolean value that indicates whether the directional pad reports absolute or relative values.
-- [var allowsRotation: Bool](gcmicrogamepad/allowsrotation.md)
+- [var allowsRotation: Bool](./allowsrotation.md)
   A Boolean value that indicates whether the profile reports the directional pad values relative to its current orientation.
 
 

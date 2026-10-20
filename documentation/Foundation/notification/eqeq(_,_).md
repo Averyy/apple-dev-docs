@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compare two notifications for equality.
 

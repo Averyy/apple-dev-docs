@@ -1,7 +1,8 @@
 # creator
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The synthesizer that is required to use the voice. This is equivalent to the value contained in the `synthManufacturer` field of a speech version information structure and that contained in the `synthCreator` field of a speech extension data structure. The set of `OSType` values specified entirely by space characters and lowercase letters is reserved.
 
@@ -12,6 +13,10 @@ The synthesizer that is required to use the voice. This is equivalent to the val
 
 ```swift
 var creator: OSType
+```
+
+```c
+OSType creator;
 ```
 
 

@@ -1,7 +1,8 @@
 # supportsMPE
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the audio unit supports multi-dimensional polyphonic expression.
 
@@ -19,17 +20,30 @@ A Boolean value that indicates whether the audio unit supports multi-dimensional
 var supportsMPE: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL supportsMPE;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL supportsMPE;
+```
+
 ## See Also
 
-- [var musicalContextBlock: AUHostMusicalContextBlock?](auaudiounit/musicalcontextblock.md)
+### Providing Data to the Host
+- [var musicalContextBlock: AUHostMusicalContextBlock?](./musicalcontextblock.md)
   A callback to the host for musical context information.
-- [var transportStateBlock: AUHostTransportStateBlock?](auaudiounit/transportstateblock.md)
+- [var transportStateBlock: AUHostTransportStateBlock?](./transportstateblock.md)
   A callback to the host for transport state information.
-- [var contextName: String?](auaudiounit/contextname.md)
+- [var contextName: String?](./contextname.md)
   Information about the host context in which the audio unit is connected, for display in the audio unit’s view.
-- [typealias AUHostMusicalContextBlock](auhostmusicalcontextblock.md)
+- [typealias AUHostMusicalContextBlock](../auhostmusicalcontextblock.md)
   A block through which hosts provide musical tempo, time signature, and beat position.
-- [typealias AUHostTransportStateBlock](auhosttransportstateblock.md)
+- [typealias AUHostTransportStateBlock](../auhosttransportstateblock.md)
   A block through which hosts provide information about their transport state.
 
 

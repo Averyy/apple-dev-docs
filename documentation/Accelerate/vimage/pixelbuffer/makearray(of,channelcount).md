@@ -1,7 +1,8 @@
 # makeArray(of:channelCount:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of `width * height * channelCount` values that’s a copy of the buffer’s visible contents.
 
@@ -11,7 +12,7 @@ Returns an array of `width * height * channelCount` values that’s a copy of th
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Returns an array of `width * height * channelCount` values that’s a copy of th
 ```swift
 func makeArray<U>(of scalarType: U.Type, channelCount: Int) -> [U]
 ```
+
+Available when `Format` is `vImage.DynamicPixelFormat`.
 
 #### Return Value
 

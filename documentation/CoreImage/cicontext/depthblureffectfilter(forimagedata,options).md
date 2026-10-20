@@ -1,9 +1,10 @@
 # depthBlurEffectFilter(forImageData:options:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect.
+Create a [`CIFilter`](../cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect.
 
 **Availability**:
 - iOS 12.0+
@@ -19,6 +20,10 @@ Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image d
 func depthBlurEffectFilter(forImageData data: Data, options: [AnyHashable : Any]? = nil) -> CIFilter?
 ```
 
+```objc
+- (CIFilter *) depthBlurEffectFilterForImageData:(NSData *) data options:(NSDictionary *) options;
+```
+
 #### Discussion
 
 The receiver context is used to render the image in order to get the facial landmarks used to create the effect.
@@ -30,14 +35,15 @@ The receiver context is used to render the image in order to get the facial land
 
 ## See Also
 
-- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, glassesMatte: CIImage?, gainMap: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:glassesmatte:gainmap:orientation:options:).md)
-  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
-- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:orientation:options:).md)
-  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
-- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:orientation:options:).md)
-  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
-- [func depthBlurEffectFilter(forImageURL: URL, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(forimageurl:options:).md)
-  Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image URL that can be used to apply a depth blur effect.
+### Creating Depth Blur Filters
+- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, glassesMatte: CIImage?, gainMap: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](./depthblureffectfilter%28for,disparityimage,portraiteffectsmatte,hairsemanticsegmentation,glassesmatte,gainmap,orientation,options%29.md)
+  Create a [`CIFilter`](../cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
+- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](./depthblureffectfilter%28for,disparityimage,portraiteffectsmatte,hairsemanticsegmentation,orientation,options%29.md)
+  Create a [`CIFilter`](../cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
+- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](./depthblureffectfilter%28for,disparityimage,portraiteffectsmatte,orientation,options%29.md)
+  Create a [`CIFilter`](../cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.
+- [func depthBlurEffectFilter(forImageURL: URL, options: [AnyHashable : Any]?) -> CIFilter?](./depthblureffectfilter%28forimageurl,options%29.md)
+  Create a [`CIFilter`](../cifilter-swift.class.md) instance for the supplied image URL that can be used to apply a depth blur effect.
 
 
 ---

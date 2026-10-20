@@ -1,7 +1,8 @@
 # preferSmallMeshFiles
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reduce meshes’ file size via quantization and compression.
 

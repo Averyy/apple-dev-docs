@@ -1,7 +1,8 @@
 # device
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the IOBluetoothDevice.
 
@@ -12,6 +13,10 @@ Return the IOBluetoothDevice.
 
 ```swift
 var device: IOBluetoothDevice! { get }
+```
+
+```objc
+@property (retain, readonly) IOBluetoothDevice * device;
 ```
 
 #### Return Value

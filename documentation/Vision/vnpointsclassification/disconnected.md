@@ -1,7 +1,8 @@
 # VNPointsClassification.disconnected
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -17,10 +18,15 @@
 case disconnected
 ```
 
+```c
+VNPointsClassificationDisconnected
+```
+
 ## See Also
 
-- [VNPointsClassification.closedPath](vnpointsclassification/closedpath.md)
-- [VNPointsClassification.openPath](vnpointsclassification/openpath.md)
+### Enumeration Cases
+- [VNPointsClassification.closedPath](./closedpath.md)
+- [VNPointsClassification.openPath](./openpath.md)
 
 
 ---

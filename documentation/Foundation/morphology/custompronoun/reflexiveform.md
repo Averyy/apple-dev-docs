@@ -1,18 +1,21 @@
 # reflexiveForm
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reflexive pronoun form to apply when using this custom pronoun behavior.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 12.0+ - Deprecated in 14.0
+- tvOS 15.0+ - Deprecated in 17.0
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 8.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use TermOfAddress instead
 
 ## Declaration
 
@@ -26,13 +29,14 @@ The English pronoun “herself” is an example of the reflexive form.
 
 ## See Also
 
-- [var subjectForm: String?](morphology/custompronoun/subjectform.md)
+### Determining Pronoun Forms
+- [var subjectForm: String?](./subjectform.md)
   The subject pronoun form to apply when using this custom pronoun behavior.
-- [var objectForm: String?](morphology/custompronoun/objectform.md)
+- [var objectForm: String?](./objectform.md)
   The object pronoun form to apply when using this custom pronoun behavior.
-- [var possessiveForm: String?](morphology/custompronoun/possessiveform.md)
+- [var possessiveForm: String?](./possessiveform.md)
   The posessive pronoun form to apply when using this custom pronoun behavior.
-- [var possessiveAdjectiveForm: String?](morphology/custompronoun/possessiveadjectiveform.md)
+- [var possessiveAdjectiveForm: String?](./possessiveadjectiveform.md)
   The posessive adjective pronoun form to apply when using this custom pronoun behavior.
 
 

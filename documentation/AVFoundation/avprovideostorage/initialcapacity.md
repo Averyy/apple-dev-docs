@@ -1,7 +1,8 @@
 # initialCapacity
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Initial size of Pro Video Storage in bytes.
 
@@ -18,6 +19,10 @@ Initial size of Pro Video Storage in bytes.
 var initialCapacity: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger initialCapacity;
+```
+
 #### Return Value
 
 0 if Pro Video Storage is not configured or -1 if there was a failure while extracting information from it.
@@ -28,9 +33,10 @@ The initial capacity is defined by the user via the Settings app.
 
 ## See Also
 
-- [var remainingCapacity: Int](avprovideostorage/remainingcapacity.md)
+### Inspecting capacity
+- [var remainingCapacity: Int](./remainingcapacity.md)
   Current size of Pro Video Storage in bytes.
-- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](avprovideostorage/replenishcapacity(completionhandler:).md)
+- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](./replenishcapacity%28completionhandler%29.md)
   Performs a best-effort attempt to restore Pro Video Storage to the initial capacity specified by the user in Settings app.
 
 

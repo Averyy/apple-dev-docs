@@ -1,7 +1,8 @@
 # queueSize
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Size of this queue.
 
@@ -12,6 +13,10 @@ Size of this queue.
 
 ```swift
 var queueSize: UInt16 { get }
+```
+
+```objc
+@property (readonly) uint16_t queueSize;
 ```
 
 #### Discussion

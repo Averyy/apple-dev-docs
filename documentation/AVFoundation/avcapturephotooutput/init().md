@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new photo capture output object.
 
@@ -16,6 +17,10 @@ Creates a new photo capture output object.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

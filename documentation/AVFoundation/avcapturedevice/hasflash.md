@@ -1,7 +1,8 @@
 # hasFlash
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture device has a flash.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether the capture device has a flash.
 var hasFlash: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasFlash;
+```
+
 #### Discussion
 
 This property is key-value observable.
 
 ## See Also
 
-- [var isFlashAvailable: Bool](avcapturedevice/isflashavailable.md)
+### Configuring flash settings
+- [var isFlashAvailable: Bool](./isflashavailable.md)
   A Boolean value that indicates whether the flash is currently available for use.
-- [var isFlashActive: Bool](avcapturedevice/isflashactive.md)
+- [var isFlashActive: Bool](./isflashactive.md)
   A Boolean value that indicates whether the flash is currently active.
-- [var flashMode: AVCaptureDevice.FlashMode](avcapturedevice/flashmode-swift.property.md)
+- [var flashMode: AVCaptureDevice.FlashMode](./flashmode-swift.property.md)
   The device’s current flash mode.
-- [func isFlashModeSupported(AVCaptureDevice.FlashMode) -> Bool](avcapturedevice/isflashmodesupported(_:).md)
+- [func isFlashModeSupported(AVCaptureDevice.FlashMode) -> Bool](./isflashmodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the device supports the given flash mode.
-- [AVCaptureDevice.FlashMode](avcapturedevice/flashmode-swift.enum.md)
+- [AVCaptureDevice.FlashMode](./flashmode-swift.enum.md)
   Constants that specify the flash modes of a capture device.
 
 

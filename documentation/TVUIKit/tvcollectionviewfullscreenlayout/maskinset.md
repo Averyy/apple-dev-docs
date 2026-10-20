@@ -1,7 +1,8 @@
 # maskInset
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge insets of the cell mask.
 
@@ -14,6 +15,10 @@ The edge insets of the cell mask.
 var maskInset: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIEdgeInsets maskInset;
+```
+
 #### Discussion
 
 Use the `maskInset` property to create a mask around the cell that is only revealed when the cell is brought into focus.
@@ -22,7 +27,8 @@ The default value of this property is `UIEdgeInsetsMake(32.0, 120.0, 0.0, 120.0)
 
 ## See Also
 
-- [var maskAmount: CGFloat](tvcollectionviewfullscreenlayout/maskamount.md)
+### Configuring cell masks
+- [var maskAmount: CGFloat](./maskamount.md)
   The amount by which to mask the cells in a collection view.
 
 

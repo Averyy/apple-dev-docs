@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ParticleColor.constant(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The particle will remain the given color throughout its lifetime.
 

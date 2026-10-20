@@ -1,7 +1,8 @@
 # surfaceClassification
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the surface classification of this plane.
 

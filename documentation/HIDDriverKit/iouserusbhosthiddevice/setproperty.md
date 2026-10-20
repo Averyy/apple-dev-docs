@@ -1,17 +1,18 @@
 # setProperty
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the specified property on the corresponding kernel object.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setProperty(OSObject *key, OSObject *value);
 ```
 
@@ -22,15 +23,16 @@ virtual void setProperty(OSObject *key, OSObject *value);
 
 ## See Also
 
-- [setProtocol](iouserusbhosthiddevice/setprotocol.md)
+### Configuring the Device
+- [setProtocol](./setprotocol.md)
   Sets the active protocol to use for communicating with the USB device.
-- [setIdle](iouserusbhosthiddevice/setidle.md)
+- [setIdle](./setidle.md)
   Sets the device’s idle time.
-- [setIdlePolicy](iouserusbhosthiddevice/setidlepolicy.md)
+- [setIdlePolicy](./setidlepolicy.md)
   Sets the amount of idle time that must pass before suspending the device.
-- [reset](iouserusbhosthiddevice/reset.md)
+- [reset](./reset.md)
   Resets the USB device.
-- [USBIdlePolicyType](usbidlepolicytype.md)
+- [USBIdlePolicyType](../usbidlepolicytype.md)
   Constants that specify whether to apply the idle policy to an interface or pipe.
 
 

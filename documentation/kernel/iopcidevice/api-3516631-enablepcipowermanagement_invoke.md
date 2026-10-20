@@ -1,14 +1,15 @@
 # EnablePCIPowerManagement_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t EnablePCIPowerManagement_Invoke(const IORPC rpc, OSMetaClassBase *target, EnablePCIPowerManagement_Handler func);
 ```
 

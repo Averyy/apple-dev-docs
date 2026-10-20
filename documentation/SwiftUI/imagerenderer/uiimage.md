@@ -1,7 +1,8 @@
 # uiImage
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current contents of the view, rasterized as a UIKit image.
 
@@ -20,17 +21,20 @@ The current contents of the view, rasterized as a UIKit image.
 final var uiImage: UIImage? { get }
 ```
 
+Available when `Content` conforms to `View`.
+
 #### Discussion
 
 The renderer notifies its `objectWillChange` publisher when the contents of the image may have changed.
 
 ## See Also
 
-- [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](imagerenderer/render(rasterizationscale:renderer:).md)
+### Rendering images
+- [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](./render%28rasterizationscale,renderer%29.md)
   Draws the renderer’s current contents to an arbitrary Core Graphics context.
-- [var cgImage: CGImage?](imagerenderer/cgimage.md)
+- [var cgImage: CGImage?](./cgimage.md)
   The current contents of the view, rasterized as a Core Graphics image.
-- [var nsImage: NSImage?](imagerenderer/nsimage.md)
+- [var nsImage: NSImage?](./nsimage.md)
   The current contents of the view, rasterized as an AppKit image.
 
 

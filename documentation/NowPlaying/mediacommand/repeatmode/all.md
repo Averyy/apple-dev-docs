@@ -1,7 +1,8 @@
 # MediaCommand.RepeatMode.all
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player repeats the current container or playlist indefinitely.
 

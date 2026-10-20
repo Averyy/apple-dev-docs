@@ -1,7 +1,8 @@
 # subscriptionUpdates
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An asynchronous sequence to use for observing updates to the current state of the user’s subscription to Apple Music.
 

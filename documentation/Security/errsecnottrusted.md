@@ -1,7 +1,8 @@
 # errSecNotTrusted
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The trust policy is not trusted.
 
@@ -18,6 +19,10 @@ The trust policy is not trusted.
 
 ```swift
 var errSecNotTrusted: OSStatus { get }
+```
+
+```c
+errSecNotTrusted
 ```
 
 

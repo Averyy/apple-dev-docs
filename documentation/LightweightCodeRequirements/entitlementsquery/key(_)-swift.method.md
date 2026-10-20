@@ -1,7 +1,8 @@
 # key(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match the specified key in a nested dictionary
 

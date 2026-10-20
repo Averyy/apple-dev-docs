@@ -1,7 +1,8 @@
 # insertionPointColor
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color for the text cursor at the insertion point.
 
@@ -17,11 +18,16 @@ A color for the text cursor at the insertion point.
 optional var insertionPointColor: UIColor? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIColor * insertionPointColor;
+```
+
 ## See Also
 
-- [var selectionHandleColor: UIColor?](beextendedtextinputtraits/selectionhandlecolor.md)
+### Customizing text input visuals
+- [var selectionHandleColor: UIColor?](./selectionhandlecolor.md)
   A color that customizes the look of the handle.
-- [var selectionHighlightColor: UIColor?](beextendedtextinputtraits/selectionhighlightcolor.md)
+- [var selectionHighlightColor: UIColor?](./selectionhighlightcolor.md)
   The highlight color of a rectangle.
 
 

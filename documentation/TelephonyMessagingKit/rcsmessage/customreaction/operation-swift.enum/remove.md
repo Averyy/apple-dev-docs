@@ -1,7 +1,8 @@
 # RCSMessage.CustomReaction.Operation.remove
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation type for removing a custom reaction.
 

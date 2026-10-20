@@ -1,17 +1,22 @@
 # prepareForTransition(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the layout object to be installed in the collection view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func prepareForTransition(from oldLayout: NSCollectionViewLayout)
+```
+
+```objc
+- (void) prepareForTransitionFromLayout:(NSCollectionViewLayout *) oldLayout;
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ Prior to transitioning to a new layout object, the collection view calls this me
 
 ## See Also
 
-- [func prepareForTransition(to: NSCollectionViewLayout)](nscollectionviewlayout/preparefortransition(to:).md)
+### Transitioning Between Layouts
+- [func prepareForTransition(to: NSCollectionViewLayout)](./preparefortransition%28to%29.md)
   Prepares the layout object to be uninstalled from the collection view.
-- [func finalizeLayoutTransition()](nscollectionviewlayout/finalizelayouttransition.md)
+- [func finalizeLayoutTransition()](./finalizelayouttransition%28%29.md)
   Performs any final steps related to a layout transition before the transition animations actually occur.
 
 

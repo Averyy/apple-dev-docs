@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from a decoder.
 
@@ -18,6 +19,8 @@ Creates a new instance from a decoder.
 ```swift
 init(from decoder: any Decoder) throws
 ```
+
+Available when `Value` conforms to `AnimatableData`.
 
 #### Discussion
 

@@ -1,18 +1,19 @@
 # messageSize
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the message including its ID.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The size of the message including its ID.
 var messageSize: UInt32
 ```
 
+```c
+UInt32 messageSize;
+```
+
 ## See Also
 
-- [enum MIDINotificationMessageID](midinotificationmessageid.md)
+### Inspecting the Notification
+- [enum MIDINotificationMessageID](../midinotificationmessageid.md)
   The types of state changes the system supports.
-- [var messageID: MIDINotificationMessageID](midinotification/messageid.md)
+- [var messageID: MIDINotificationMessageID](./messageid.md)
   An identifier that describes the type of state change.
 
 

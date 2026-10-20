@@ -1,7 +1,8 @@
 # generate(message:previousMessages:)
 
 **Framework**: Suggested Actions  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Fetches and caches suggested actions for the provided message.
 
@@ -21,7 +22,7 @@ static func generate(message: SuggestedActionsMessage, previousMessages: [Sugges
 
 #### Discussion
 
-Call this method ahead of presenting a [`SuggestedActionsView`](suggestedactionsview.md) to generate and cache suggested actions for future use. When you later initialize the view with a [`SuggestedActionsMessage`](suggestedactionsmessage.md) that has a matching `id`, the view uses the cached result and renders immediately without displaying a loading indicator.
+Call this method ahead of presenting a [`SuggestedActionsView`](../suggestedactionsview.md) to generate and cache suggested actions for future use. When you later initialize the view with a [`SuggestedActionsMessage`](../suggestedactionsmessage.md) that has a matching `id`, the view uses the cached result and renders immediately without displaying a loading indicator.
 
 Generate suggested actions for future use when you know that a person is likely to see them soon, for example, when someone opens a conversation.
 
@@ -51,13 +52,14 @@ class ChatManager {
 ## Parameters
 
 - `message`: The message that you want to generate suggested actions for.
-- `previousMessages`: An array of messages that precede the provided `message`. The Suggested Actions framework uses them as context to generate suggested actions for the `message`. The system limits the number of previous messages it considers to the value of [`previousMessagesLimit`](suggestedactionsmessage/previousmessageslimit.md). This parameter defaults to an empty array if you don’t include previous messages.
+- `previousMessages`: An array of messages that precede the provided `message`. The Suggested Actions framework uses them as context to generate suggested actions for the `message`. The system limits the number of previous messages it considers to the value of [`previousMessagesLimit`](../suggestedactionsmessage/previousmessageslimit.md). This parameter defaults to an empty array if you don’t include previous messages.
 
 ## See Also
 
-- [init(message: SuggestedActionsMessage, previousMessages: [SuggestedActionsMessage])](suggestedactionsview/init(message:previousmessages:).md)
+### Displaying suggested actions
+- [init(message: SuggestedActionsMessage, previousMessages: [SuggestedActionsMessage])](./init%28message,previousmessages%29.md)
   Creates a view that shows suggested actions for the specified message.
-- [struct SuggestedActionsMessage](suggestedactionsmessage.md)
+- [struct SuggestedActionsMessage](../suggestedactionsmessage.md)
   A representation of the message you use as context for suggested actions.
 
 

@@ -1,12 +1,13 @@
 # validateUserInterfaceItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the receiver can handle the action method for a user interface item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns whether the receiver can handle the action method for a user interface i
 func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver can handle the action method; [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](../../Swift/true.md) if the receiver can handle the action method; [`false`](../../Swift/false.md) if it cannot.
 
 ## Parameters
 
-- `item`: The user interface item to validate. You can send `item` the [`action`](nsvalidateduserinterfaceitem/action.md) and [`tag`](nsvalidateduserinterfaceitem/tag.md) messages.
+- `item`: The user interface item to validate. You can send `item` the [`action`](../nsvalidateduserinterfaceitem/action.md) and [`tag`](../nsvalidateduserinterfaceitem/tag.md) messages.
 
 
 ---

@@ -1,7 +1,8 @@
 # AVCaptureDevice.InputSource
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A distinct input source on a capture device.
 
@@ -14,6 +15,10 @@ A distinct input source on a capture device.
 class InputSource
 ```
 
+```objc
+@interface AVCaptureDeviceInputSource : NSObject
+```
+
 #### Overview
 
 A capture device may optionally present an array of input sources that represent distinct mutually exclusive inputs to the device. For example, an audio capture device might have ADAT optical and analog input sources; a video capture device might have an HDMI or component input source.
@@ -21,28 +26,29 @@ A capture device may optionally present an array of input sources that represent
 ## Topics
 
 ### Accessing properties
-- [var inputSourceID: String](avcapturedevice/inputsource/inputsourceid.md)
+- [var inputSourceID: String](./inputsource/inputsourceid.md)
   An identifier for an input source.
-- [var localizedName: String](avcapturedevice/inputsource/localizedname.md)
+- [var localizedName: String](./inputsource/localizedname.md)
   A localized, human-readable name for the input source.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var inputSources: [AVCaptureDevice.InputSource]](avcapturedevice/inputsources.md)
+### Configuring input sources
+- [var inputSources: [AVCaptureDevice.InputSource]](./inputsources.md)
   An array of input sources that the device supports.
-- [var activeInputSource: AVCaptureDevice.InputSource?](avcapturedevice/activeinputsource.md)
+- [var activeInputSource: AVCaptureDevice.InputSource?](./activeinputsource.md)
   The currently active input source of the device.
 
 

@@ -1,6 +1,7 @@
 # Recommendations Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
 
@@ -9,7 +10,7 @@ Query budget and Target CPA recommendations, then apply or dismiss them to adjus
 
 #### Overview
 
-The Recommendations API returns recommendations for target CPA adjustments and daily budget increases to help you improve your campaigns’ performance. Unlike [`Suggestions Endpoints`](suggestions-endpoints.md), recommendations are stateful; each one has a lifecycle you apply or dismiss, and the system tracks the outcome. For historical performance metrics, see [`Managing Reports`](reports.md). For market-level signals like impression share, see [`Insights Endpoints`](insights-endpoints.md).
+The Recommendations API returns recommendations for target CPA adjustments and daily budget increases to help you improve your campaigns’ performance. Unlike [Suggestions Endpoints](./suggestions-endpoints.md), recommendations are stateful; each one has a lifecycle you apply or dismiss, and the system tracks the outcome. For historical performance metrics, see [Managing Reports](./reports.md). For market-level signals like impression share, see [Insights Endpoints](./insights-endpoints.md).
 
 #### Explore the Available Endpoints
 
@@ -21,12 +22,12 @@ The following endpoints let you query, apply, and dismiss recommendations:
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/recommendations/daily-budgets/query` | Returns daily budget recommendations using [`Query Daily Budget Recommendations`](query-daily-budget-recommendations.md). Recommends an increased daily budget for campaigns that may have more opportunities, and includes historical and expected performance metrics. |
-| `POST` | `/v1/recommendations/daily-budgets/apply` | Applies a daily budget recommendation using [`Apply Daily Budget Recommendations`](apply-daily-budget-recommendations.md) and updates the campaign’s daily budget. |
-| `POST` | `/v1/recommendations/daily-budgets/dismiss` | Dismisses a daily budget recommendation using [`Dismiss Daily Budget Recommendations`](dismiss-daily-budget-recommendations.md). |
-| `POST` | `/v1/recommendations/target-cpas/query` | Returns target CPA recommendations using [`Query Target CPA Recommendations`](query-target-cpa-recommendations.md). Recommends an adjusted target cost-per-acquisition for campaigns using a Maximize Conversions bid strategy. The system sets bids automatically to try to meet the target; the target itself isn’t a bid. |
-| `POST` | `/v1/recommendations/target-cpas/apply` | Applies a target CPA recommendation using [`Apply Target CPA Recommendations`](apply-target-cpa-recommendations.md). |
-| `POST` | `/v1/recommendations/target-cpas/dismiss` | Dismisses a target CPA recommendation using [`Dismiss Target CPA Recommendations`](dismiss-target-cpa-recommendations.md). |
+| `POST` | `/v1/recommendations/daily-budgets/query` | Returns daily budget recommendations using [`Query Daily Budget Recommendations`](./query-daily-budget-recommendations.md). Recommends an increased daily budget for campaigns that may have more opportunities, and includes historical and expected performance metrics. |
+| `POST` | `/v1/recommendations/daily-budgets/apply` | Applies a daily budget recommendation using [`Apply Daily Budget Recommendations`](./apply-daily-budget-recommendations.md) and updates the campaign’s daily budget. |
+| `POST` | `/v1/recommendations/daily-budgets/dismiss` | Dismisses a daily budget recommendation using [`Dismiss Daily Budget Recommendations`](./dismiss-daily-budget-recommendations.md). |
+| `POST` | `/v1/recommendations/target-cpas/query` | Returns target CPA recommendations using [`Query Target CPA Recommendations`](./query-target-cpa-recommendations.md). Recommends an adjusted target cost-per-acquisition for campaigns using a Maximize Conversions bid strategy. The system sets bids automatically to try to meet the target; the target itself isn’t a bid. |
+| `POST` | `/v1/recommendations/target-cpas/apply` | Applies a target CPA recommendation using [`Apply Target CPA Recommendations`](./apply-target-cpa-recommendations.md). |
+| `POST` | `/v1/recommendations/target-cpas/dismiss` | Dismisses a target CPA recommendation using [`Dismiss Target CPA Recommendations`](./dismiss-target-cpa-recommendations.md). |
 
 ##### Track the Recommendation Lifecycle
 
@@ -47,7 +48,7 @@ The following table lists the possible `state` values:
 
 ##### Recommendation Category
 
-Every recommendation read object carries a `recommendationType` field using the [`RecommendationCategory`](recommendationcategory.md) enum. Each optimization area has a merged category and a system category (algorithm-generated, prefixed `S`). This field isn’t a filterable field on the query endpoints below; see each endpoint’s Filterable Fields table for what you can query on.
+Every recommendation read object carries a `recommendationType` field using the [`RecommendationCategory`](./recommendationcategory.md) enum. Each optimization area has a merged category and a system category (algorithm-generated, prefixed `S`). This field isn’t a filterable field on the query endpoints below; see each endpoint’s Filterable Fields table for what you can query on.
 
 The following table lists each optimization area’s merged and system categories:
 
@@ -61,7 +62,7 @@ Only `DAILYCAP` and `TCPA` have corresponding query, apply, and dismiss endpoint
 
 ##### Query Recommendations
 
-All recommendation types use a `POST /query` pattern with the [`RecommendationQueryRequest`](recommendationqueryrequest.md) body. Two filters are mandatory on every request:
+All recommendation types use a `POST /query` pattern with the [`RecommendationQueryRequest`](./recommendationqueryrequest.md) body. Two filters are mandatory on every request:
 
 - The `promotedObjectId` field is the ID of the promoted object being queried. Use the app Adam ID when `promotedObjectType` is `APPSTORE_APP`, or the brand ID when it’s `BUSINESS_BRAND`.
 - The `promotedObjectType` field is the type of the promoted object (for example, `APPSTORE_APP`).
@@ -114,7 +115,7 @@ The following table shows what each apply endpoint changes:
 
 | Endpoint | Action Taken |
 | --- | --- |
-| `/v1/recommendations/daily-budgets/apply` | Updates the campaign’s daily budget. See [`Campaign.DailyBudget`](campaign/dailybudget-data.dictionary.md). |
+| `/v1/recommendations/daily-budgets/apply` | Updates the campaign’s daily budget. See [`Campaign.DailyBudget`](./campaign/dailybudget-data.dictionary.md). |
 | `/v1/recommendations/target-cpas/apply` | Updates the target CPA the campaign’s Maximize Conversions auto-bidding uses. This isn’t a field on Campaign or AdGroup. The applied value is only visible in this endpoint’s history response. |
 
 Required fields on every apply item are `id`, `promotedObjectId`, and `promotedObjectType`.
@@ -129,30 +130,32 @@ Apply and dismiss operations return a history object rather than the original re
 
 ## Topics
 
-- [Query Target CPA Recommendations](query-target-cpa-recommendations.md)
+- [Query Target CPA Recommendations](./query-target-cpa-recommendations.md)
   Retrieve target cost-per-acquisition recommendations for campaigns using a Maximize Conversions bid strategy.
-- [Apply Target CPA Recommendations](apply-target-cpa-recommendations.md)
+- [Apply Target CPA Recommendations](./apply-target-cpa-recommendations.md)
   Apply one or more target CPA recommendations.
-- [Dismiss Target CPA Recommendations](dismiss-target-cpa-recommendations.md)
+- [Dismiss Target CPA Recommendations](./dismiss-target-cpa-recommendations.md)
   Dismiss one or more target CPA recommendations without changing the campaign’s bid strategy.
-- [Query Daily Budget Recommendations](query-daily-budget-recommendations.md)
+- [Query Daily Budget Recommendations](./query-daily-budget-recommendations.md)
   Retrieve daily budget recommendations for campaigns that may have more opportunities.
-- [Apply Daily Budget Recommendations](apply-daily-budget-recommendations.md)
+- [Apply Daily Budget Recommendations](./apply-daily-budget-recommendations.md)
   Apply one or more daily budget recommendations, updating the campaign’s daily budget to the suggested amount.
-- [Dismiss Daily Budget Recommendations](dismiss-daily-budget-recommendations.md)
+- [Dismiss Daily Budget Recommendations](./dismiss-daily-budget-recommendations.md)
   Dismiss one or more daily budget recommendations without changing the campaign’s budget.
 
 ## See Also
 
-- [Suggestions Endpoints](suggestions-endpoints.md)
+### Related Documentation
+- [Suggestions Endpoints](./suggestions-endpoints.md)
   Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
-- [Managing Reports](reports.md)
+- [Managing Reports](./reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
-- [Insights Endpoints](insights-endpoints.md)
+- [Insights Endpoints](./insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
-- [Recommendations Data Objects](recommendations-data-objects.md)
+### Recommendations
+- [Recommendations Data Objects](./recommendations-data-objects.md)
   Read budget and Target CPA recommendations and their history, and build the requests that apply them.
-- [Recommendations Query and Filter Objects](recommendations-query-filter-objects.md)
+- [Recommendations Query and Filter Objects](./recommendations-query-filter-objects.md)
   Filter, sort, and paginate recommendation queries by status, state, and category.
 
 

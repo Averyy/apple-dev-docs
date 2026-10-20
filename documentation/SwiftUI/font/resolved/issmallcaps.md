@@ -1,7 +1,8 @@
 # isSmallCaps
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `true` if all of the resolved font’s characters use small caps.
 

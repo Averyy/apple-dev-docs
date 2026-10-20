@@ -1,14 +1,15 @@
 # vlr_parent
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 char vlr_parent[16];
 ```
 

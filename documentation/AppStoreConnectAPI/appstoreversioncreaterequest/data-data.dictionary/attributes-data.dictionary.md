@@ -1,7 +1,8 @@
 # AppStoreVersionCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionCreateRequest.Data.Attributes
 ```
 
@@ -19,14 +20,15 @@ object AppStoreVersionCreateRequest.Data.Attributes
 - `copyright` (string)
 - `earliestReleaseDate` (date-time)
 - `platform` (Platform) *(required)*
-- `releaseType` (string)
-- `reviewType` (string)
-- `usesIdfa` (boolean)
+- `releaseType` (string): **Allowed Values**: `MANUAL`, `AFTER_APPROVAL`, `SCHEDULED`
+- `reviewType` (string): **Allowed Values**: `APP_STORE`, `NOTARIZATION`
+- `usesIdfa` (boolean) *(deprecated)*
 - `versionString` (string) *(required)*
 
 ## See Also
 
-- [object AppStoreVersionCreateRequest.Data.Relationships](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

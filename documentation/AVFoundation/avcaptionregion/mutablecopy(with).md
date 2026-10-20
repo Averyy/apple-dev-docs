@@ -1,7 +1,8 @@
 # mutableCopy(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a mutable copy of a caption region.
 
@@ -15,6 +16,10 @@ Creates a mutable copy of a caption region.
 
 ```swift
 func mutableCopy(with zone: NSZone? = nil) -> Any
+```
+
+```objc
+- (id) mutableCopyWithZone:(NSZone *) zone;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ This method throws an exception if the caption region contains an identifier.
 
 ## See Also
 
-- [func encode(with: NSCoder)](avcaptionregion/encode(with:).md)
+### Processing regions
+- [func encode(with: NSCoder)](./encode%28with%29.md)
   Encodes the region using the specified encoder.
-- [func isEqual(Any) -> Bool](avcaptionregion/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./isequal%28_%29.md)
   Returns a Boolean value that indicates whether an object equals another.
 
 

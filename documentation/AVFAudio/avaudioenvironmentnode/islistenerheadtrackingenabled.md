@@ -1,7 +1,8 @@
 # isListenerHeadTrackingEnabled
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the listener orientation is automatically rotated based on head orientation.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the listener orientation is automatically
 var isListenerHeadTrackingEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isListenerHeadTrackingEnabled) BOOL listenerHeadTrackingEnabled;
+```
+
 #### Discussion
 
-To enable head tracking, your app must have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.coremotion.head-pose) entitlement.
+To enable head tracking, your app must have the [`com.apple.developer.coremotion.head-pose`](../../BundleResources/entitlements/com.apple.developer.coremotion.head-pose.md) entitlement.
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to enable head tracking with compatible AirPods.
+Set this value to [`true`](../../Swift/true.md) to enable head tracking with compatible AirPods.
 
 ## See Also
 
-- [var listenerPosition: AVAudio3DPoint](avaudioenvironmentnode/listenerposition.md)
+### Positioning the listener
+- [var listenerPosition: AVAudio3DPoint](./listenerposition.md)
   The listener’s position in the 3D environment.
-- [var listenerAngularOrientation: AVAudio3DAngularOrientation](avaudioenvironmentnode/listenerangularorientation.md)
+- [var listenerAngularOrientation: AVAudio3DAngularOrientation](./listenerangularorientation.md)
   The listener’s angular orientation in the environment.
-- [var listenerVectorOrientation: AVAudio3DVectorOrientation](avaudioenvironmentnode/listenervectororientation.md)
+- [var listenerVectorOrientation: AVAudio3DVectorOrientation](./listenervectororientation.md)
   The listener’s vector orientation in the environment.
 
 

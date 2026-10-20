@@ -1,7 +1,8 @@
 # mutableBytes
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable raw span over the memory represented by this span.
 
@@ -19,6 +20,8 @@ A mutable raw span over the memory represented by this span.
 ```swift
 var mutableBytes: MutableRawSpan { mutating get }
 ```
+
+Available when `Element` conforms to `ConvertibleFromBytes` and `ConvertibleToBytes`.
 
 #### Return Value
 

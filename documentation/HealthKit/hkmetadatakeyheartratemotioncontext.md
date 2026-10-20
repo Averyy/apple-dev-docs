@@ -1,7 +1,8 @@
 # HKMetadataKeyHeartRateMotionContext
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user’s activity level when the heart rate sample was measured.
 
@@ -19,21 +20,27 @@ The user’s activity level when the heart rate sample was measured.
 let HKMetadataKeyHeartRateMotionContext: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyHeartRateMotionContext;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an [`HKHeartRateMotionContext`](hkheartratemotioncontext.md) as its value.
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) containing an [`HKHeartRateMotionContext`](./hkheartratemotioncontext.md) as its value.
 
 ## Topics
 
 ### Valid Motion Contexts
-- [enum HKHeartRateMotionContext](hkheartratemotioncontext.md)
+- [enum HKHeartRateMotionContext](./hkheartratemotioncontext.md)
   Values that indicate the user’s level of activity when the heart rate sample was measured.
 
 ## See Also
 
-- [static let heartRate: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartrate.md)
+### Related Documentation
+- [static let heartRate: HKQuantityTypeIdentifier](./hkquantitytypeidentifier/heartrate.md)
   A quantity sample type that measures the user’s heart rate.
-- [let HKMetadataKeyHeartRateSensorLocation: String](hkmetadatakeyheartratesensorlocation.md)
+### Metadata Keys
+- [let HKMetadataKeyHeartRateSensorLocation: String](./hkmetadatakeyheartratesensorlocation.md)
   The location where a specific heart rate reading was taken.
 
 

@@ -1,7 +1,8 @@
 # SystemShortcut.UnwrappedType
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+
@@ -16,9 +17,10 @@ typealias UnwrappedType = SystemShortcut
 
 ## See Also
 
-- [static let defaultResolverSpecification: EmptyResolverSpecification<SystemShortcut>](systemshortcut/defaultresolverspecification.md)
-- [SystemShortcut.Specification](systemshortcut/specification.md)
-- [SystemShortcut.ValueType](systemshortcut/valuetype.md)
+### Resolving the type
+- [static let defaultResolverSpecification: EmptyResolverSpecification<SystemShortcut>](./defaultresolverspecification.md)
+- [SystemShortcut.Specification](./specification.md)
+- [SystemShortcut.ValueType](./valuetype.md)
 
 
 ---

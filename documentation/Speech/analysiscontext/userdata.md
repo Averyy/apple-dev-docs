@@ -1,7 +1,8 @@
 # userData
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of application-specific contextual information.
 
@@ -21,7 +22,8 @@ final var userData: [AnalysisContext.UserDataTag : any Sendable] { get set }
 
 ## See Also
 
-- [AnalysisContext.UserDataTag](analysiscontext/userdatatag.md)
+### Preserving app-specific context
+- [AnalysisContext.UserDataTag](./userdatatag.md)
 
 
 ---

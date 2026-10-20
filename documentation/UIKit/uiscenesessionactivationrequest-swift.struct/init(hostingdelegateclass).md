@@ -1,7 +1,8 @@
 # init(hostingDelegateClass:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene.
 
@@ -22,7 +23,7 @@ init?<D>(hostingDelegateClass: D.Type) where D : UIHostingSceneDelegate
 
 The first scene declared in the `rootScene` property of your hosting delegate class will be activated by this request.
 
-```None
+```
 class HostingSceneDelegate: UIHostingSceneDelegate {
     static var rootScene: some Scene {
         WindowGroup() {

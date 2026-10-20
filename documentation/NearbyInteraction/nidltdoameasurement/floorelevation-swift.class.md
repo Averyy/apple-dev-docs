@@ -1,7 +1,8 @@
 # NIDLTDOAMeasurement.FloorElevation
 
 **Framework**: Nearby Interaction  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes how high off the ground DL-TDOA anchors reside in the environment.
 
@@ -16,46 +17,51 @@ An object that describes how high off the ground DL-TDOA anchors reside in the e
 class FloorElevation
 ```
 
+```objc
+@interface NIDLTDOAMeasurementFloorElevation : NSObject
+```
+
 #### Overview
 
-Floor elevation specifies the vertical position of DL-TDOA anchors. In multi-story deployments, [`floorNumber`](nidltdoameasurement/floorelevation-swift.class/floornumber.md) specifies the floor that the anchor resides on. The  [`height`](nidltdoameasurement/floorelevation-swift.class/height.md) property describes the anchor’s elevation off of the floor, in meters.
+Floor elevation specifies the vertical position of DL-TDOA anchors. In multi-story deployments, [`floorNumber`](./floorelevation-swift.class/floornumber.md) specifies the floor that the anchor resides on. The  [`height`](./floorelevation-swift.class/height.md) property describes the anchor’s elevation off of the floor, in meters.
 
-Negative [`floorNumber`](nidltdoameasurement/floorelevation-swift.class/floornumber.md) values indicate areas below ground level, for example, a basement or parking level.
+Negative [`floorNumber`](./floorelevation-swift.class/floornumber.md) values indicate areas below ground level, for example, a basement or parking level.
 
 ## Topics
 
 ### Accessing floor elevation components
-- [var floorNumber: Int](nidltdoameasurement/floorelevation-swift.class/floornumber.md)
+- [var floorNumber: Int](./floorelevation-swift.class/floornumber.md)
   The floor number on which the anchor resides.
-- [var height: Double](nidltdoameasurement/floorelevation-swift.class/height.md)
+- [var height: Double](./floorelevation-swift.class/height.md)
   The height above the floor in meters.
 ### Creating a floor elevation
-- [init?(coder: NSCoder)](nidltdoameasurement/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var coordinates: simd_double3](nidltdoameasurement/coordinates.md)
+### Locating the anchor
+- [var coordinates: simd_double3](./coordinates.md)
   A triplet that represents the location in 3D space of the anchor that provides the measurement.
-- [var coordinatesType: NIDLTDOACoordinatesType](nidltdoameasurement/coordinatestype.md)
+- [var coordinatesType: NIDLTDOACoordinatesType](./coordinatestype.md)
   The type of coordinate system that the measurement conforms to.
-- [var signalStrength: Double](nidltdoameasurement/signalstrength.md)
+- [var signalStrength: Double](./signalstrength.md)
   A value that represents the received signal strength, in dBm, from the anchor that provides the measurement.
-- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](nidltdoameasurement/floorelevation-swift.property.md)
+- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](./floorelevation-swift.property.md)
   The floor elevation information for the anchor, if available.
 
 

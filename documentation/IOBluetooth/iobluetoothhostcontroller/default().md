@@ -1,17 +1,22 @@
 # default()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets the default HCI controller object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func `default`() -> Self!
+```
+
+```objc
++ (instancetype) defaultController;
 ```
 
 #### Return Value

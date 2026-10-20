@@ -1,7 +1,8 @@
 # contentMinSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A window resizability that’s partially derived from the window’s content.
 
@@ -27,9 +28,10 @@ Windows that use this resizability have:
 
 ## See Also
 
-- [static var automatic: WindowResizability](windowresizability/automatic.md)
+### Getting the resizability
+- [static var automatic: WindowResizability](./automatic.md)
   The automatic window resizability.
-- [static var contentSize: WindowResizability](windowresizability/contentsize.md)
+- [static var contentSize: WindowResizability](./contentsize.md)
   A window resizability that’s derived from the window’s content.
 
 

@@ -1,7 +1,8 @@
 # areKeysAvailable(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether all contact property values for the specified keys are fetched.
 
@@ -19,13 +20,17 @@ Determines whether all contact property values for the specified keys are fetche
 func areKeysAvailable(_ keyDescriptors: [any CNKeyDescriptor]) -> Bool
 ```
 
+```objc
+- (BOOL) areKeysAvailable:(NSArray<id<CNKeyDescriptor>> *) keyDescriptors;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if all the values are fetched; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if all the values are fetched; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The [`isKeyAvailable(_:)`](cncontact/iskeyavailable(_:).md) or [`areKeysAvailable(_:)`](cncontact/arekeysavailable(_:).md) methods are used where you are not certain of the keys that when fetched. If this method returns [`false`](https://developer.apple.com/documentation/swift/false), refetch the contact using the contact identifier and the keys you want to fetch. Accessing a property that was not fetched will throw an [`CNContactPropertyNotFetchedExceptionName`](cncontactpropertynotfetchedexceptionname.md) exception.
+The [`isKeyAvailable(_:)`](./iskeyavailable%28_%29.md) or [`areKeysAvailable(_:)`](./arekeysavailable%28_%29.md) methods are used where you are not certain of the keys that when fetched. If this method returns [`false`](../../Swift/false.md), refetch the contact using the contact identifier and the keys you want to fetch. Accessing a property that was not fetched will throw an [`CNContactPropertyNotFetchedExceptionName`](../cncontactpropertynotfetchedexceptionname.md) exception.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ The [`isKeyAvailable(_:)`](cncontact/iskeyavailable(_:).md) or [`areKeysAvailabl
 
 ## See Also
 
-- [func isKeyAvailable(String) -> Bool](cncontact/iskeyavailable(_:).md)
+### Checking the Availability of Data
+- [func isKeyAvailable(String) -> Bool](./iskeyavailable%28_%29.md)
   Determines whether the contact property value for the specified key is fetched.
 
 

@@ -1,7 +1,8 @@
 # HMNetworkConfigurationProfile
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A profile that provides information about network protection for an accessory.
 
@@ -19,44 +20,49 @@ A profile that provides information about network protection for an accessory.
 class HMNetworkConfigurationProfile
 ```
 
+```objc
+@interface HMNetworkConfigurationProfile : HMAccessoryProfile
+```
+
 #### Overview
 
 To increase security, HomeKit can restrict network access for specific accessories, including access to other accessories in the home, and to the internet. However, an accessory your app controls might need network access to carry out certain functions, like downloading new firmware.
 
-Check the [`isNetworkAccessRestricted`](hmnetworkconfigurationprofile/isnetworkaccessrestricted.md) property of an accessory’s network configuration profile to find out if an accessory has restricted access. You can use this information to ask the user to relax network restrictions in the Home app.
+Check the [`isNetworkAccessRestricted`](./hmnetworkconfigurationprofile/isnetworkaccessrestricted.md) property of an accessory’s network configuration profile to find out if an accessory has restricted access. You can use this information to ask the user to relax network restrictions in the Home app.
 
 ## Topics
 
 ### Restricting network access
-- [var isNetworkAccessRestricted: Bool](hmnetworkconfigurationprofile/isnetworkaccessrestricted.md)
+- [var isNetworkAccessRestricted: Bool](./hmnetworkconfigurationprofile/isnetworkaccessrestricted.md)
   An indication of whether the accessory’s access to the network is restricted.
 ### Listening for access changes
-- [var delegate: (any HMNetworkConfigurationProfileDelegate)?](hmnetworkconfigurationprofile/delegate.md)
+- [var delegate: (any HMNetworkConfigurationProfileDelegate)?](./hmnetworkconfigurationprofile/delegate.md)
   A delegate that HomeKit tells about changes in the state of network access.
-- [protocol HMNetworkConfigurationProfileDelegate](hmnetworkconfigurationprofiledelegate.md)
+- [protocol HMNetworkConfigurationProfileDelegate](./hmnetworkconfigurationprofiledelegate.md)
   An interface that your app adopts to receive notifications about changes in the state of network access.
 
 ## Relationships
 
 ### Inherits From
-- [HMAccessoryProfile](hmaccessoryprofile.md)
+- [HMAccessoryProfile](./hmaccessoryprofile.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var profiles: [HMAccessoryProfile]](hmaccessory/profiles.md)
+### Managing accessory profiles
+- [var profiles: [HMAccessoryProfile]](./hmaccessory/profiles.md)
   An array of profiles implemented by the accessory.
-- [class HMAccessoryProfile](hmaccessoryprofile.md)
+- [class HMAccessoryProfile](./hmaccessoryprofile.md)
   A profile that certain accessories implement.
-- [class HMCameraProfile](hmcameraprofile.md)
+- [class HMCameraProfile](./hmcameraprofile.md)
   A camera profile that interacts with an accessory’s camera.
 
 

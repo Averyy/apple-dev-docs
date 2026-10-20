@@ -1,7 +1,8 @@
 # isExternalSyncSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the device input supports being configured to follow an external sync device.
 
@@ -18,19 +19,24 @@ Indicates whether the device input supports being configured to follow an extern
 var isExternalSyncSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isExternalSyncSupported) BOOL externalSyncSupported;
+```
+
 #### Discussion
 
-See [`follow(_:videoFrameDuration:delegate:)`](avcapturedeviceinput/follow(_:videoframeduration:delegate:).md) for more information on external sync.
+See [`follow(_:videoFrameDuration:delegate:)`](./follow%28_,videoframeduration,delegate%29.md) for more information on external sync.
 
 ## See Also
 
-- [func follow(AVExternalSyncDevice, videoFrameDuration: CMTime, delegate: (any AVExternalSyncDeviceDelegate)?)](avcapturedeviceinput/follow(_:videoframeduration:delegate:).md)
+### Synchronizing with external devices
+- [func follow(AVExternalSyncDevice, videoFrameDuration: CMTime, delegate: (any AVExternalSyncDeviceDelegate)?)](./follow%28_,videoframeduration,delegate%29.md)
   Configures the the device input to follow an external sync device at the given frame duration.
-- [func unfollowExternalSyncDevice()](avcapturedeviceinput/unfollowexternalsyncdevice.md)
+- [func unfollowExternalSyncDevice()](./unfollowexternalsyncdevice%28%29.md)
   Discontinues external sync.
-- [var activeExternalSyncVideoFrameDuration: CMTime](avcapturedeviceinput/activeexternalsyncvideoframeduration.md)
+- [var activeExternalSyncVideoFrameDuration: CMTime](./activeexternalsyncvideoframeduration.md)
   The receiver’s external sync frame duration (the reciprocal of its frame rate) when being driven by an external sync device.
-- [var externalSyncDevice: AVExternalSyncDevice?](avcapturedeviceinput/externalsyncdevice.md)
+- [var externalSyncDevice: AVExternalSyncDevice?](./externalsyncdevice.md)
   The external sync device currently being followed by this input.
 
 

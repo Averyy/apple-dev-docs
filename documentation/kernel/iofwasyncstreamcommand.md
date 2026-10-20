@@ -1,7 +1,8 @@
 # IOFWAsyncStreamCommand
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Send an async stream packet
 
@@ -10,30 +11,30 @@ Send an async stream packet
 
 ## Declaration
 
-```swift
+```cpp
 class IOFWAsyncStreamCommand : IOFWCommand
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- complete](iofwasyncstreamcommand/1563840-complete.md)
-- [- execute](iofwasyncstreamcommand/1563906-execute.md)
-- [- failOnReset](iofwasyncstreamcommand/1563772-failonreset.md)
-- [- free](iofwasyncstreamcommand/1563750-free.md)
-- [- getMetaClass](iofwasyncstreamcommand/1563762-getmetaclass.md)
-- [- gotAck](iofwasyncstreamcommand/1563899-gotack.md)
-- [- initAll](iofwasyncstreamcommand/1563895-initall.md)
-- [- initAll](iofwasyncstreamcommand/3516549-initall.md)
-- [- reinit](iofwasyncstreamcommand/1563898-reinit.md)
-- [- reinit](iofwasyncstreamcommand/3516550-reinit.md)
-- [- setGeneration](iofwasyncstreamcommand/1563813-setgeneration.md)
-- [- updateGeneration](iofwasyncstreamcommand/1563793-updategeneration.md)
+- [- complete](./iofwasyncstreamcommand/api-1563840-complete.md)
+- [- execute](./iofwasyncstreamcommand/api-1563906-execute.md)
+- [- failOnReset](./iofwasyncstreamcommand/api-1563772-failonreset.md)
+- [- free](./iofwasyncstreamcommand/api-1563750-free.md)
+- [- getMetaClass](./iofwasyncstreamcommand/api-1563762-getmetaclass.md)
+- [- gotAck](./iofwasyncstreamcommand/api-1563899-gotack.md)
+- [- initAll](./iofwasyncstreamcommand/api-1563895-initall.md)
+- [- initAll](./iofwasyncstreamcommand/api-3516549-initall.md)
+- [- reinit](./iofwasyncstreamcommand/api-1563898-reinit.md)
+- [- reinit](./iofwasyncstreamcommand/api-3516550-reinit.md)
+- [- setGeneration](./iofwasyncstreamcommand/api-1563813-setgeneration.md)
+- [- updateGeneration](./iofwasyncstreamcommand/api-1563793-updategeneration.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOFWCommand](iofwcommand.md)
+- [IOFWCommand](./iofwcommand.md)
 
 
 ---

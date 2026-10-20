@@ -1,7 +1,8 @@
 # init(mass:stiffness:damping:initialVelocity:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a timing parameters object with the specified spring stiffness, mass, damping coefficient, and initial velocity.
 
@@ -18,6 +19,10 @@ Creates a timing parameters object with the specified spring stiffness, mass, da
 init(mass: CGFloat, stiffness: CGFloat, damping: CGFloat, initialVelocity velocity: CGVector)
 ```
 
+```objc
+- (instancetype) initWithMass:(CGFloat) mass stiffness:(CGFloat) stiffness damping:(CGFloat) damping initialVelocity:(CGVector) velocity;
+```
+
 #### Return Value
 
 An initialized spring timing parameters object or `nil` if the object could not be created.
@@ -31,17 +36,20 @@ The damping ratio for the spring is computed from the formula `damping` / (2 * s
 - `mass`: The effective mass of the animated property. This value must be greater than `0`.
 - `stiffness`: The spring stiffness coefficient. Higher values correspond to a stiffer spring that yields a greater amount of force for moving objects.
 - `damping`: The damping force to apply to the spring’s motion. This value is used to compute the damping ratio.
-- `velocity`: The target property’s initial rate of change at the start of the spring animation. If the target property doesn’t change, specify a vector with `dx` and `dy` components of `0`. For details about how to calculate this velocity, see [`initialVelocity`](uispringtimingparameters/initialvelocity.md).
+- `velocity`: The target property’s initial rate of change at the start of the spring animation. If the target property doesn’t change, specify a vector with `dx` and `dy` components of `0`.
+
+  For details about how to calculate this velocity, see [`initialVelocity`](./initialvelocity.md).
 
 ## See Also
 
-- [init()](uispringtimingparameters/init.md)
+### Initializing a spring timing parameters object
+- [init()](./init%28%29.md)
   Creates a default timing parameters object.
-- [convenience init(dampingRatio: CGFloat)](uispringtimingparameters/init(dampingratio:).md)
+- [convenience init(dampingRatio: CGFloat)](./init%28dampingratio%29.md)
   Creates a timing parameters object with the specified damping ratio.
-- [init(dampingRatio: CGFloat, initialVelocity: CGVector)](uispringtimingparameters/init(dampingratio:initialvelocity:).md)
+- [init(dampingRatio: CGFloat, initialVelocity: CGVector)](./init%28dampingratio,initialvelocity%29.md)
   Creates a timing parameters object with the specified damping ratio and initial velocity.
-- [init?(coder: NSCoder)](uispringtimingparameters/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a timing parameters object from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # nominalHeight
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of visible pixel rows.
 
@@ -10,7 +11,7 @@ Number of visible pixel rows.
 
 ## Declaration
 
-```swift
+```c
 UInt32 nominalHeight;
 ```
 

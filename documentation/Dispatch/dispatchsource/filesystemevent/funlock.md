@@ -1,18 +1,19 @@
 # funlock
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The unlocking of the file system object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,21 +23,22 @@ static let funlock: DispatchSource.FileSystemEvent
 
 ## See Also
 
-- [static let all: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/all.md)
+### File System Event Flags
+- [static let all: DispatchSource.FileSystemEvent](./all.md)
   All changes related to the file system object.
-- [static let attrib: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/attrib.md)
+- [static let attrib: DispatchSource.FileSystemEvent](./attrib.md)
   Changes to the metadata of the file system object.
-- [static let delete: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/delete.md)
+- [static let delete: DispatchSource.FileSystemEvent](./delete.md)
   The deletion of the file system object.
-- [static let extend: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/extend.md)
+- [static let extend: DispatchSource.FileSystemEvent](./extend.md)
   Changes to the size of the file system object.
-- [static let link: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/link.md)
+- [static let link: DispatchSource.FileSystemEvent](./link.md)
   Changes to the link count of the file system object.
-- [static let rename: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/rename.md)
+- [static let rename: DispatchSource.FileSystemEvent](./rename.md)
   Changes to the name of the file system object.
-- [static let revoke: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/revoke.md)
+- [static let revoke: DispatchSource.FileSystemEvent](./revoke.md)
   The revocation of the file system object.
-- [static let write: DispatchSource.FileSystemEvent](dispatchsource/filesystemevent/write.md)
+- [static let write: DispatchSource.FileSystemEvent](./write.md)
   The writing of data to the file system object.
 
 

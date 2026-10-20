@@ -1,7 +1,8 @@
 # ToolExpectation.PartiallyGenerated.expectation(name:arguments:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated single tool expectation with an optional name and arguments.
 

@@ -1,7 +1,8 @@
 # timer(countingDownIn:showsHours:maxFieldCount:maxPrecision:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func timer(countingDownIn interval: Range<Date>, showsHours: Bool = true, maxFieldCount: Int = 3, maxPrecision: Duration = .seconds(1)) -> SystemFormatStyle.Timer
 ```
+
+Available when `Self` is `SystemFormatStyle.Timer`.
 
 
 ---

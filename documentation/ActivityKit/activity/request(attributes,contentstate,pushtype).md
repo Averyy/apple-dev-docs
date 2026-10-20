@@ -1,13 +1,16 @@
 # request(attributes:contentState:pushType:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Requests and starts a Live Activity.
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
+- iOS 16.1+ - Deprecated in 16.2
+- iPadOS 16.1+ - Deprecated in 16.2
+
+> **Deprecated**: Use request(attributes:content:pushType:) instead
 
 ## Declaration
 
@@ -21,33 +24,34 @@ The object that represents the started Live Activity.
 
 #### Discussion
 
-Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [`App Intents`](https://developer.apple.com/documentation/appintents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/appintents/liveactivityintent).
+Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [App Intents](../../AppIntents/AppIntents.md) and start the Live Activity using a [`LiveActivityIntent`](../../AppIntents/liveactivityintent.md).
 
-If your Live Activity displays image assets, the system requires them to use a resolution that’s smaller or equal to the size of the Live Activity presentation for a device. If you use an image asset that’s larger than the size of the Live Activity presentation, the system may fail to start the Live Activity. For information about the sizes of Live Activity presentations, see [`Human Interface Guidelines > Live Activities`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities).
+If your Live Activity displays image assets, the system requires them to use a resolution that’s smaller or equal to the size of the Live Activity presentation for a device. If you use an image asset that’s larger than the size of the Live Activity presentation, the system may fail to start the Live Activity. For information about the sizes of Live Activity presentations, see [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities).
 
-For additional information on starting a Live Activity, see [`Displaying live data with Live Activities`](displaying-live-data-with-live-activities.md).
+For additional information on starting a Live Activity, see [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md).
 
-> **Note**: [`ActivityAuthorizationError`](activityauthorizationerror.md) if the app can’t start a new Live Activity. For example, [`ActivityAuthorizationError.denied`](activityauthorizationerror/denied.md) indicates that a person deactivated Live Activities for the app.
+> **Throws**: [`ActivityAuthorizationError`](../activityauthorizationerror.md) if the app can’t start a new Live Activity. For example, [`ActivityAuthorizationError.denied`](../activityauthorizationerror/denied.md) indicates that a person deactivated Live Activities for the app.
 
 ## Parameters
 
 - `attributes`: A set of attributes that describe the Live Activity and its static content.
 - `contentState`: A structure that describes the dynamic content of the Live Activity that changes over time.
-- `pushType`: A value that indicates whether the Live Activity receives updates to its dynamic content with ActivityKit push notifications. Pass `nil` to start a Live Activity that only receives updates from the app with the [`update(_:)`](activity/update(_:).md) function. To start a Live Activity that receives updates to its dynamic content with ActivityKit push notifications in addition to the [`update(_:)`](activity/update(_:).md) function, pass [`token`](pushtype/token.md) to this parameter.
+- `pushType`: A value that indicates whether the Live Activity receives updates to its dynamic content with ActivityKit push notifications. Pass `nil` to start a Live Activity that only receives updates from the app with the [`update(_:)`](./update%28_%29.md) function. To start a Live Activity that receives updates to its dynamic content with ActivityKit push notifications in addition to the [`update(_:)`](./update%28_%29.md) function, pass [`token`](../pushtype/token.md) to this parameter.
 
 ## See Also
 
-- [func update(using: Activity<Attributes>.ContentState) async](activity/update(using:).md)
+### Deprecated
+- [func update(using: Activity<Attributes>.ContentState) async](./update%28using%29.md)
   Updates the dynamic content of the Live Activity.
-- [func update(using: Activity<Attributes>.ContentState, alertConfiguration: AlertConfiguration?) async](activity/update(using:alertconfiguration:).md)
+- [func update(using: Activity<Attributes>.ContentState, alertConfiguration: AlertConfiguration?) async](./update%28using,alertconfiguration%29.md)
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
-- [func end(using: Activity<Attributes>.ContentState?, dismissalPolicy: ActivityUIDismissalPolicy) async](activity/end(using:dismissalpolicy:).md)
+- [func end(using: Activity<Attributes>.ContentState?, dismissalPolicy: ActivityUIDismissalPolicy) async](./end%28using,dismissalpolicy%29.md)
   Ends an active Live Activity.
-- [var contentState: Activity<Attributes>.ContentState](activity/contentstate-swift.property.md)
+- [var contentState: Activity<Attributes>.ContentState](./contentstate-swift.property.md)
   The dynamic content of a Live Activity.
-- [var contentStateUpdates: Activity<Attributes>.ContentStateUpdates](activity/contentstateupdates-swift.property.md)
+- [var contentStateUpdates: Activity<Attributes>.ContentStateUpdates](./contentstateupdates-swift.property.md)
   An asynchronous sequence you use to observe changes to the dynamic content of a Live Activity.
-- [Activity.ContentStateUpdates](activity/contentstateupdates-swift.struct.md)
+- [Activity.ContentStateUpdates](./contentstateupdates-swift.struct.md)
   A structure that offers functionality to observe changes to the dynamic content of a Live Activity.
 
 

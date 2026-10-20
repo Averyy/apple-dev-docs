@@ -1,7 +1,8 @@
 # sorted(on:order:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name.
 
@@ -24,11 +25,11 @@ func sorted(on columnName: String, order: Order = .ascending) -> DataFrame
 
 This is a convenience method that only works for columns of the following types:
 
-- [`Bool`](https://developer.apple.com/documentation/swift/bool)
-- [`Int`](https://developer.apple.com/documentation/swift/int)
-- [`Float`](https://developer.apple.com/documentation/swift/float)
-- [`Double`](https://developer.apple.com/documentation/swift/double)
-- [`Date`](https://developer.apple.com/documentation/foundation/date)
+- [`Bool`](../../Swift/bool.md)
+- [`Int`](../../Swift/int.md)
+- [`Float`](../../Swift/float.md)
+- [`Double`](../../Swift/double.md)
+- [`Date`](../../Foundation/date.md)
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
 
@@ -39,13 +40,14 @@ This is a convenience method that only works for columns of the following types:
 
 ## See Also
 
-- [func sorted<T>(on: String, T.Type, order: Order) -> DataFrame](dataframeprotocol/sorted(on:_:order:)-8d7rr.md)
+### Creating a Data Frame by Sorting a Column
+- [func sorted<T>(on: String, T.Type, order: Order) -> DataFrame](./sorted%28on,_,order%29-8d7rr.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type.
-- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](dataframeprotocol/sorted(on:_:by:).md)
+- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](./sorted%28on,_,by%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type, with a predicate.
-- [func sorted<T>(on: ColumnID<T>, order: Order) -> DataFrame](dataframeprotocol/sorted(on:order:)-5nl5c.md)
+- [func sorted<T>(on: ColumnID<T>, order: Order) -> DataFrame](./sorted%28on,order%29-5nl5c.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier.
-- [func sorted<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows -> DataFrame](dataframeprotocol/sorted(on:by:).md)
+- [func sorted<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows -> DataFrame](./sorted%28on,by%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier, with a predicate.
 
 

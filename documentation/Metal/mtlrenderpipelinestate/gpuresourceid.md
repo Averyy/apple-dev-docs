@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An unique identifier that represents the pipeline state, which you can add to an argument buffer.
@@ -20,11 +21,16 @@ An unique identifier that represents the pipeline state, which you can add to an
 var gpuResourceID: MTLResourceID { get }
 ```
 
+```objc
+@property (readonly) MTLResourceID gpuResourceID;
+```
+
 ## See Also
 
-- [var device: any MTLDevice](mtlrenderpipelinestate/device.md)
+### Identifying a pipeline state
+- [var device: any MTLDevice](./device.md)
   The device instance that creates the pipeline state.
-- [var label: String?](mtlrenderpipelinestate/label.md)
+- [var label: String?](./label.md)
   A string that helps you identify the render pipeline state during debugging.
 
 

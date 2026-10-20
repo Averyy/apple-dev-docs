@@ -2,6 +2,7 @@
 
 **Framework**: GameplayKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The player whose turn it currently is in the game.
@@ -20,13 +21,18 @@ The player whose turn it currently is in the game.
 var activePlayer: (any GKGameModelPlayer)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<GKGameModelPlayer> activePlayer;
+```
+
 #### Discussion
 
-This player is responsible for the next move. GameplayKit assumes that the next call to the [`apply(_:)`](gkgamemodel/apply(_:).md) method will perform a move on behalf of this player.
+This player is responsible for the next move. GameplayKit assumes that the next call to the [`apply(_:)`](./apply%28_%29.md) method will perform a move on behalf of this player.
 
 ## See Also
 
-- [var players: [any GKGameModelPlayer]?](gkgamemodel/players.md)
+### Keeping Track of Players
+- [var players: [any GKGameModelPlayer]?](./players.md)
   The players currently in the game.
 
 

@@ -1,7 +1,8 @@
 # CMTimeMapTimeFromRangeToRange(_:fromRange:toRange:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Translates a time through a mapping from two time ranges.
 
@@ -18,6 +19,10 @@ Translates a time through a mapping from two time ranges.
 
 ```swift
 func CMTimeMapTimeFromRangeToRange(_ t: CMTime, fromRange: CMTimeRange, toRange: CMTimeRange) -> CMTime
+```
+
+```c
+extern CMTime CMTimeMapTimeFromRangeToRange(CMTime t, CMTimeRange fromRange, CMTimeRange toRange);
 ```
 
 #### Return Value
@@ -42,15 +47,16 @@ If either `CMTimeRange` argument is empty, the function returns an invalid `CMTi
 
 ## See Also
 
-- [func CMTimeClampToRange(CMTime, range: CMTimeRange) -> CMTime](cmtimeclamptorange(_:range:).md)
+### Utility Functions
+- [func CMTimeClampToRange(CMTime, range: CMTimeRange) -> CMTime](./cmtimeclamptorange%28_,range%29.md)
   Returns the nearest time value inside the time range.
-- [func CMTimeMapDurationFromRangeToRange(CMTime, fromRange: CMTimeRange, toRange: CMTimeRange) -> CMTime](cmtimemapdurationfromrangetorange(_:fromrange:torange:).md)
+- [func CMTimeMapDurationFromRangeToRange(CMTime, fromRange: CMTimeRange, toRange: CMTimeRange) -> CMTime](./cmtimemapdurationfromrangetorange%28_,fromrange,torange%29.md)
   Translates a duration through a mapping from two time ranges.
-- [func CMTimeRangeCopyAsDictionary(CMTimeRange, allocator: CFAllocator?) -> CFDictionary?](cmtimerangecopyasdictionary(_:allocator:).md)
+- [func CMTimeRangeCopyAsDictionary(CMTimeRange, allocator: CFAllocator?) -> CFDictionary?](./cmtimerangecopyasdictionary%28_,allocator%29.md)
   Returns a dictionary representation of a time range.
-- [func CMTimeRangeCopyDescription(allocator: CFAllocator?, range: CMTimeRange) -> CFString?](cmtimerangecopydescription(allocator:range:).md)
+- [func CMTimeRangeCopyDescription(allocator: CFAllocator?, range: CMTimeRange) -> CFString?](./cmtimerangecopydescription%28allocator,range%29.md)
   Returns a string with a description of a time range.
-- [func CMTimeRangeShow(CMTimeRange)](cmtimerangeshow(_:).md)
+- [func CMTimeRangeShow(CMTimeRange)](./cmtimerangeshow%28_%29.md)
   Prints a description of the time range to standard error.
 
 

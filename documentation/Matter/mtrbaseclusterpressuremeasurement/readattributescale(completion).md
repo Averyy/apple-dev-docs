@@ -1,7 +1,8 @@
 # readAttributeScale(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeScale(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeScale() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeScaleWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

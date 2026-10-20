@@ -1,7 +1,8 @@
 # UICommand
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A menu element that performs its action in a selector.
 
@@ -19,9 +20,13 @@ A menu element that performs its action in a selector.
 class UICommand
 ```
 
+```objc
+@interface UICommand : UIMenuElement
+```
+
 #### Overview
 
-Create a [`UICommand`](uicommand.md) object when you want a menu element that performs its action in a selector available in the responder chain.
+Create a [`UICommand`](./uicommand.md) object when you want a menu element that performs its action in a selector available in the responder chain.
 
 ```swift
 // Create a selector-based action to use as a menu element.
@@ -38,82 +43,83 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
 ## Topics
 
 ### Creating a command
-- [convenience init(title: String, subtitle: String?, image: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:subtitle:image:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](./uicommand/init%28title,subtitle,image,action,propertylist,alternates,discoverabilitytitle,attributes,state%29.md)
   Creates a command with the specified title, subtitle, image, action, property list, alternative commands, discoverability title, attributes, and state.
-- [convenience init(title: String, image: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:image:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
+- [convenience init(title: String, image: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](./uicommand/init%28title,image,action,propertylist,alternates,discoverabilitytitle,attributes,state%29.md)
   Creates a command with the specified title, image, action, property list, alternative commands, discoverability title, attributes, and state.
-- [init?(coder: NSCoder)](uicommand/init(coder:).md)
+- [init?(coder: NSCoder)](./uicommand/init%28coder%29.md)
   Creates a command from data in an unarchiver.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 ### Getting information about the command
-- [var title: String](uicommand/title.md)
+- [var title: String](./uicommand/title.md)
   The command’s title.
-- [var image: UIImage?](uicommand/image.md)
+- [var image: UIImage?](./uicommand/image.md)
   The command’s image.
-- [var action: Selector](uicommand/action.md)
+- [var action: Selector](./uicommand/action.md)
   The selector identifying the action method called after the user selects the command.
-- [var discoverabilityTitle: String?](uicommand/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./uicommand/discoverabilitytitle.md)
   An elaborated title that explains the purpose of the command.
-- [var attributes: UIMenuElement.Attributes](uicommand/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./uicommand/attributes.md)
   The attributes indicating the style of the command.
-- [var state: UIMenuElement.State](uicommand/state.md)
+- [var state: UIMenuElement.State](./uicommand/state.md)
   The state of the command.
 ### Getting command alternatives
-- [var alternates: [UICommandAlternate]](uicommand/alternates.md)
+- [var alternates: [UICommandAlternate]](./uicommand/alternates.md)
   An array of alternative actions to take for the command.
-- [class UICommandAlternate](uicommandalternate.md)
+- [class UICommandAlternate](./uicommandalternate.md)
   An object representing an alternative action for a command.
 ### Associating data
-- [var propertyList: Any?](uicommand/propertylist.md)
+- [var propertyList: Any?](./uicommand/propertylist.md)
   An object that contains data to associate with the command.
-- [let UICommandTagShare: String](uicommandtagshare.md)
+- [let UICommandTagShare: String](./uicommandtagshare.md)
   A value that identifies a command as a Share menu.
 ### Initializers
-- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:subtitle:image:selectedimage:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
-- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:subtitle:image:selectedimage:preferredimagevisibility:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](./uicommand/init%28title,subtitle,image,selectedimage,action,propertylist,alternates,discoverabilitytitle,attributes,state%29.md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](./uicommand/init%28title,subtitle,image,selectedimage,preferredimagevisibility,action,propertylist,alternates,discoverabilitytitle,attributes,state%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIMenuElement](uimenuelement.md)
+- [UIMenuElement](./uimenuelement.md)
 ### Inherited By
-- [UIKeyCommand](uikeycommand.md)
+- [UIKeyCommand](./uikeycommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](uiaccessibilityidentification.md)
-- [UIMenuLeaf](uimenuleaf.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
+- [UIMenuLeaf](./uimenuleaf.md)
 
 ## See Also
 
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+### Menu elements and keyboard shortcuts
+- [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [Adopting menus and UIActions in your user interface](adopting-menus-and-uiactions-in-your-user-interface.md)
+- [Adopting menus and UIActions in your user interface](./adopting-menus-and-uiactions-in-your-user-interface.md)
   Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
-- [class UIMenuElement](uimenuelement.md)
+- [class UIMenuElement](./uimenuelement.md)
   An object representing a menu, action, or command.
-- [class UIAction](uiaction.md)
+- [class UIAction](./uiaction.md)
   A menu element that performs its action in a closure.
-- [class UIKeyCommand](uikeycommand.md)
+- [class UIKeyCommand](./uikeycommand.md)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
-- [class UIDeferredMenuElement](uideferredmenuelement.md)
+- [class UIDeferredMenuElement](./uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
-- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
-- [UIMenuElement.Attributes](uimenuelement/attributes.md)
+- [UIDeferredMenuElement.Provider](./uideferredmenuelement/provider.md)
+- [UIMenuElement.Attributes](./uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
-- [UIMenuElement.State](uimenuelement/state.md)
+- [UIMenuElement.State](./uimenuelement/state.md)
   Constants that indicate the state of an action- or command-based menu element.
-- [protocol UIMenuLeaf](uimenuleaf.md)
+- [protocol UIMenuLeaf](./uimenuleaf.md)
   An interface for an object that represents a menu element without child elements.
 
 

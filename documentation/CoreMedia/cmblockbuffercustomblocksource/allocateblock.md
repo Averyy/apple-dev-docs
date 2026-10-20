@@ -1,7 +1,8 @@
 # AllocateBlock
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function to allocate memory.
 
@@ -20,13 +21,18 @@ The function to allocate memory.
 var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?
 ```
 
+```c
+void *(*)(void *, unsigned long) AllocateBlock;
+```
+
 ## See Also
 
-- [var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?](cmblockbuffercustomblocksource/freeblock.md)
+### Properties
+- [var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?](./freeblock.md)
   A function to call once when the `CMBlockBuffer` is disposed.
-- [var refCon: UnsafeMutableRawPointer?](cmblockbuffercustomblocksource/refcon.md)
+- [var refCon: UnsafeMutableRawPointer?](./refcon.md)
   Contextual information passed to both the allocate and free function calls.
-- [var version: UInt32](cmblockbuffercustomblocksource/version.md)
+- [var version: UInt32](./version.md)
 
 
 ---

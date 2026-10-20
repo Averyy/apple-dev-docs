@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:sidebarAction:group:acceptItemsFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive the drop from into the `sidebarAction` using the specified session. This is only called if the drop operation returned from `tabBarController:sidebar:sidebarAction:operationForAcceptingItemsFromDropSession` is valid for a drop.
 
@@ -15,6 +16,10 @@ Receive the drop from into the `sidebarAction` using the specified session. This
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, sidebarAction: UIAction, group: UITabGroup, acceptItemsFrom session: any UIDropSession)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar sidebarAction:(UIAction *) sidebarAction group:(UITabGroup *) group acceptItemsFromDropSession:(id<UIDropSession>) session;
 ```
 
 

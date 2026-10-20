@@ -1,7 +1,8 @@
 # NEDNSProtocol.TLS
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The DNS server uses DNS-over-TLS.
 
@@ -19,11 +20,16 @@ The DNS server uses DNS-over-TLS.
 case TLS
 ```
 
+```c
+NEDNSProtocolTLS
+```
+
 ## See Also
 
-- [NEDNSProtocol.cleartext](nednsprotocol/cleartext.md)
+### DNS protocols
+- [NEDNSProtocol.cleartext](./cleartext.md)
   The DNS server uses cleartext UDP or TCP over port 53.
-- [NEDNSProtocol.HTTPS](nednsprotocol/https.md)
+- [NEDNSProtocol.HTTPS](./https.md)
   The DNS server uses DNS-over-HTTPS.
 
 

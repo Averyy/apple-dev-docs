@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the data value is valid.
 
@@ -21,7 +22,8 @@ var isValid: Bool { get }
 
 ## See Also
 
-- [MLDataValue.invalid](mldatavalue/invalid.md)
+### Handling errors
+- [MLDataValue.invalid](./invalid.md)
   An invalid value.
 
 

@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an Apple event descriptor that represents the receiver.
 
@@ -15,13 +16,17 @@ Returns an Apple event descriptor that represents the receiver.
 var descriptor: NSAppleEventDescriptor? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSAppleEventDescriptor * descriptor;
+```
+
 #### Return Value
 
 An Apple event descriptor of type `typeObjectSpecifier`.
 
 #### Discussion
 
-If the receiver was created with [`init(descriptor:)`](nsscriptobjectspecifier/init(descriptor:).md), the passed-in descriptor is returned. Otherwise, a new descriptor is created and returned, autoreleased.
+If the receiver was created with [`init(descriptor:)`](./init%28descriptor%29.md), the passed-in descriptor is returned. Otherwise, a new descriptor is created and returned, autoreleased.
 
 
 ---

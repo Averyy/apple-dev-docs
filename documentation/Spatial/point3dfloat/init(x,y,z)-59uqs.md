@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a point from the specified values.
 

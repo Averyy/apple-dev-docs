@@ -1,7 +1,8 @@
 # endMarkedContentSequence()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func endMarkedContentSequence()
+```
+
+```c
+extern void CGPDFContextEndMarkedContentSequence(CGContextRef context);
 ```
 
 

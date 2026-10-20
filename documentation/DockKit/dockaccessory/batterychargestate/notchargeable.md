@@ -1,7 +1,8 @@
 # DockAccessory.BatteryChargeState.notChargeable
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The battery is not a chargeable battery.
 

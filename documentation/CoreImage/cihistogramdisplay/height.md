@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var height: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float height;
+```
+
 ## See Also
 
-- [var highLimit: Float](cihistogramdisplay/highlimit.md)
-- [var inputImage: CIImage?](cihistogramdisplay/inputimage.md)
+### Instance Properties
+- [var highLimit: Float](./highlimit.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var lowLimit: Float](cihistogramdisplay/lowlimit.md)
+- [var lowLimit: Float](./lowlimit.md)
 
 
 ---

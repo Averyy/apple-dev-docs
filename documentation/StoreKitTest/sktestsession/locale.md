@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that determines the localization metadata the test environment uses.
 
@@ -20,17 +21,22 @@ The value that determines the localization metadata the test environment uses.
 var locale: Locale { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSLocale * locale;
+```
+
 #### Discussion
 
-This value determines the locale the test environment uses when it fetches localized metadata for [`SKProductsRequest`](https://developer.apple.com/documentation/storekit/skproductsrequest). You provide localized metadata in your StoreKit configuration file.
+This value determines the locale the test environment uses when it fetches localized metadata for [`SKProductsRequest`](../../StoreKit/skproductsrequest.md). You provide localized metadata in your StoreKit configuration file.
 
-Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md) to revert all settings to those in the configuration file.
+Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](./resettodefaultstate%28%29.md) to revert all settings to those in the configuration file.
 
 ## See Also
 
-- [var storefront: String](sktestsession/storefront.md)
+### Configuring the test environment
+- [var storefront: String](./storefront.md)
   The three-letter code that represents the region associated with the App Store storefront.
-- [var disableDialogs: Bool](sktestsession/disabledialogs.md)
+- [var disableDialogs: Bool](./disabledialogs.md)
   A Boolean value that determines whether the testing environment disables dialogs during automated testing.
 
 

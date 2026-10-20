@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of this sequence.
 
@@ -20,9 +21,11 @@ Returns an iterator over the elements of this sequence.
 func makeIterator() -> LazyDropWhileSequence<Base>.Iterator
 ```
 
+Available when `Base` conforms to `Sequence`.
+
 #### Discussion
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 
 ---

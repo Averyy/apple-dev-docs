@@ -1,14 +1,15 @@
 # THREAD_CALL_OPTIONS_ONCE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 THREAD_CALL_OPTIONS_ONCE = 0x00000001
 ```
 

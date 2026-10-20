@@ -1,7 +1,8 @@
 # RCSService.RemoteCapabilities.Availability.available
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Remote end is available.
 
@@ -16,7 +17,8 @@ case available
 
 ## See Also
 
-- [RCSService.RemoteCapabilities.Availability.unavailable](rcsservice/remotecapabilities/availability-swift.enum/unavailable.md)
+### Determining availability
+- [RCSService.RemoteCapabilities.Availability.unavailable](./unavailable.md)
   Remote end is not available.
 
 

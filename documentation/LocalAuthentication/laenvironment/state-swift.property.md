@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The environment state information.
 
@@ -17,6 +18,10 @@ The environment state information.
 
 ```swift
 var state: LAEnvironment.State { get }
+```
+
+```objc
+@property (nonatomic, readonly) LAEnvironmentState * state;
 ```
 
 

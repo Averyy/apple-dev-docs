@@ -1,6 +1,7 @@
 # Movie-level relationships among tracks
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Handling tracks with more than one associated metadata track.
 
@@ -14,15 +15,16 @@ If a metadata track does not have a relationship to another track defined by a t
 
 ## See Also
 
-- [Overview of timed metadata](overview_of_timed_metadata.md)
+### Storing timed metadata media
+- [Overview of timed metadata](./overview_of_timed_metadata.md)
   Synchronize metadata references to media tracks for particular media time periods with timed metadata.
-- [Timed metadata sample description](timed_metadata_sample_descriptions.md)
+- [Timed metadata sample description](./timed_metadata_sample_descriptions.md)
   An atom that defines how to interpret timed metadata media samples.
-- [Timed metadata sample data format](timed_metadata_sample_data_format.md)
+- [Timed metadata sample data format](./timed_metadata_sample_data_format.md)
   A concatenation of one or more atoms that structure a timed metadata media sample.
-- [Constant-size timed metadata sample data](constant-size_timed_metadata_sample_data.md)
+- [Constant-size timed metadata sample data](./constant-size_timed_metadata_sample_data.md)
   Create metadata tracks with samples that have the same size.
-- [Combining multiple streams of metadata into the same track](combining_multiple_streams_of_metadata_into_the_same_track.md)
+- [Combining multiple streams of metadata into the same track](./combining_multiple_streams_of_metadata_into_the_same_track.md)
   Introduce new metadata samples with the union of all metadata values from combined tracks.
 
 

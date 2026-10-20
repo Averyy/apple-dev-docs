@@ -1,7 +1,8 @@
 # SemanticTagType.WifiNetwork
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains information required to connect to a Wi-Fi network. Optionally, this object may contain keys required to perform authentication with captive portal.
 
@@ -12,7 +13,7 @@ An object that contains information required to connect to a Wi-Fi network. Opti
 
 ## Declaration
 
-```swift
+```
 object SemanticTagType.WifiNetwork
 ```
 
@@ -25,15 +26,16 @@ object SemanticTagType.WifiNetwork
 
 ## See Also
 
-- [object SemanticTagType.CurrencyAmount](semantictagtype/currencyamount-data.dictionary.md)
+### Using semantic tag data types
+- [object SemanticTagType.CurrencyAmount](./currencyamount-data.dictionary.md)
   An object that represents an amount of money and type of currency.
-- [object SemanticTagType.EventDateInfo](semantictagtype/eventdateinfo-data.dictionary.md)
+- [object SemanticTagType.EventDateInfo](./eventdateinfo-data.dictionary.md)
   An object that represents a date for an event.
-- [object SemanticTagType.Location](semantictagtype/location-data.dictionary.md)
+- [object SemanticTagType.Location](./location-data.dictionary.md)
   An object that represents the coordinates of a location.
-- [object SemanticTagType.PersonNameComponents](semantictagtype/personnamecomponents-data.dictionary.md)
+- [object SemanticTagType.PersonNameComponents](./personnamecomponents-data.dictionary.md)
   An object that represents the parts of a person’s name.
-- [object SemanticTagType.Seat](semantictagtype/seat-data.dictionary.md)
+- [object SemanticTagType.Seat](./seat-data.dictionary.md)
   An object that represents the identification of a seat for a transit journey or an event.
 
 

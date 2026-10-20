@@ -1,7 +1,8 @@
 # init(directionalEdgeInsets:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(directionalEdgeInsets insets: NSDirectionalEdgeInsets)
+```
+
+```objc
++ (NSValue *) valueWithDirectionalEdgeInsets:(NSDirectionalEdgeInsets) insets;
 ```
 
 

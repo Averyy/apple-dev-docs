@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The end point for routing directions.
 
@@ -10,29 +11,30 @@ The end point for routing directions.
 
 ## Declaration
 
-```swift
+```
 destination: string | CoordinateData | Place;
 ```
 
 #### Discussion
 
-The destination can be a string that’s an address, a coordinate, or a [`Place`](place.md) object.
+The destination can be a string that’s an address, a coordinate, or a [`Place`](../place.md) object.
 
 ## See Also
 
-- [origin](directionsrequest/origin.md)
+### Directions request
+- [origin](./origin.md)
   The starting point for routing directions.
-- [arrivalDate](directionsrequest/arrivaldate.md)
+- [arrivalDate](./arrivaldate.md)
   The arrival date for the trip.
-- [departureDate](directionsrequest/departuredate.md)
+- [departureDate](./departuredate.md)
   The departure date for the trip.
-- [requestsAlternateRoutes](directionsrequest/requestsalternateroutes.md)
+- [requestsAlternateRoutes](./requestsalternateroutes.md)
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
-- [transportType](directionsrequest/transporttype.md)
+- [transportType](./transporttype.md)
   The mode of transportation the directions apply to.
-- [avoidTolls](directionsrequest/avoidtolls.md)
+- [avoidTolls](./avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [signal](directionsrequest/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

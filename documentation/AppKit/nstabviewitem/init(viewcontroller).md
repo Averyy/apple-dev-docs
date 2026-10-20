@@ -1,7 +1,8 @@
 # init(viewController:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 convenience init(viewController: NSViewController)
+```
+
+```objc
++ (instancetype) tabViewItemWithViewController:(NSViewController *) viewController;
 ```
 
 

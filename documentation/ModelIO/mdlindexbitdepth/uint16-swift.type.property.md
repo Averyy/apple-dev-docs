@@ -1,7 +1,8 @@
 # uint16
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var uint16: MDLIndexBitDepth { get }
+```
+
+```c
+MDLIndexBitDepthUint16
 ```
 
 

@@ -1,7 +1,8 @@
 # searchScopes(_:activation:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the search scopes for this view with the specified activation strategy.
 
@@ -22,7 +23,7 @@ func searchScopes<V, S>(_ scope: Binding<V>, activation: SearchScopeActivation, 
 
 ## Mentions
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+- [Scoping a search operation](../scoping-a-search-operation.md)
 
 #### Discussion
 
@@ -54,14 +55,14 @@ ProductList()
     }
 ```
 
-SwiftUI uses this binding and view to add a [`Picker`](picker.md) below the search field. In iOS, macOS, and tvOS, the picker appears below the search field when search is active. To ensure that the picker operates correctly, match the type of the scope binding with the type of each view’s tag. Then condition your search on the current value of the `scope` state property.
+SwiftUI uses this binding and view to add a [`Picker`](../picker.md) below the search field. In iOS, macOS, and tvOS, the picker appears below the search field when search is active. To ensure that the picker operates correctly, match the type of the scope binding with the type of each view’s tag. Then condition your search on the current value of the `scope` state property.
 
 By default, the appearance of scopes varies by platform:
 
 - In iOS and iPadOS, search scopes appear when someone enters text into the search field and disappear when someone cancels the search.
 - In macOS, search scopes appear when SwiftUI presents search and disappear when someone cancels the search.
 
-However, you can use the `activation` parameter with a value of [`onTextEntry`](searchscopeactivation/ontextentry.md) or [`onSearchPresentation`](searchscopeactivation/onsearchpresentation.md) to configure this behavior:
+However, you can use the `activation` parameter with a value of [`onTextEntry`](../searchscopeactivation/ontextentry.md) or [`onSearchPresentation`](../searchscopeactivation/onsearchpresentation.md) to configure this behavior:
 
 ```swift
 .searchScopes($scope, activation: .onSearchPresentation) {
@@ -70,21 +71,22 @@ However, you can use the `activation` parameter with a value of [`onTextEntry`](
 }
 ```
 
-For more information about using searchable modifiers, see [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
+For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 
 ## Parameters
 
 - `scope`: The active scope of the search field.
 - `activation`: The activation style of the search field’s scopes.
-- `scopes`: A content builder that represents the scoping options SwiftUI uses to populate a [`Picker`](picker.md).
+- `scopes`: A content builder that represents the scoping options SwiftUI uses to populate a [`Picker`](../picker.md).
 
 ## See Also
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+### Limiting search scope
+- [Scoping a search operation](../scoping-a-search-operation.md)
   Divide the search space into a few broad categories.
-- [func searchScopes<V, S>(Binding<V>, scopes: () -> S) -> some View](view/searchscopes(_:scopes:).md)
+- [func searchScopes<V, S>(Binding<V>, scopes: () -> S) -> some View](./searchscopes%28_,scopes%29.md)
   Configures the search scopes for this view.
-- [struct SearchScopeActivation](searchscopeactivation.md)
+- [struct SearchScopeActivation](../searchscopeactivation.md)
   The ways that searchable modifiers can show or hide search scopes.
 
 

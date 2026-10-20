@@ -1,7 +1,8 @@
 # summary()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a categorical summary of the column slice’s elements.
 
@@ -20,11 +21,14 @@ Generates a categorical summary of the column slice’s elements.
 func summary() -> CategoricalSummary<WrappedElement>
 ```
 
+Available when `WrappedElement` conforms to `Hashable`.
+
 ## See Also
 
-- [func numericSummary() -> NumericSummary<Double>](discontiguouscolumnslice/numericsummary-3r7pn.md)
+### Summarizing a Column Slice
+- [func numericSummary() -> NumericSummary<Double>](./numericsummary%28%29-3r7pn.md)
   Generates a numeric summary of the integer column slice’s elements.
-- [func numericSummary() -> NumericSummary<WrappedElement>](discontiguouscolumnslice/numericsummary-4b7m0.md)
+- [func numericSummary() -> NumericSummary<WrappedElement>](./numericsummary%28%29-4b7m0.md)
   Generates a numeric summary of the floating-point column slice’s elements.
 
 

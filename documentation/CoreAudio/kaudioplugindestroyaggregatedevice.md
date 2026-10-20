@@ -1,11 +1,12 @@
 # kAudioPlugInDestroyAggregateDevice
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var kAudioPlugInDestroyAggregateDevice: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioPlugInDestroyAggregateDevice
+```
+
 ## See Also
 
-- [var kAudioPlugInCreateAggregateDevice: AudioObjectPropertySelector](kaudioplugincreateaggregatedevice.md)
+### Constants
+- [var kAudioPlugInCreateAggregateDevice: AudioObjectPropertySelector](./kaudioplugincreateaggregatedevice.md)
 
 
 ---

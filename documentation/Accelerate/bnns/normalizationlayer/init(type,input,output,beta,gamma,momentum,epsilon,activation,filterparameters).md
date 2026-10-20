@@ -1,7 +1,8 @@
 # init(type:input:output:beta:gamma:momentum:epsilon:activation:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new normalization layer.
 
@@ -11,8 +12,10 @@ Returns a new normalization layer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,7 @@ convenience init?(type normalization: BNNS.NormalizationType, input: BNNSNDArray
 
 #### Discussion
 
-> ❗ **Important**:  The gamma and beta descriptors must match the shape of input up to the normalizaton axis. The input and output descriptors must have a layout of [`BNNS.DataLayout.imageCHW`](bnns/datalayout/imagechw.md). The gamma, beta, moving mean, and moving variance descriptors must have a `size[0]` that’s the same as the number of input channels. All arrays must have a data type of `float`.
+> ❗ **Important**:  The gamma and beta descriptors must match the shape of input up to the normalizaton axis. The input and output descriptors must have a layout of [`BNNS.DataLayout.imageCHW`](../datalayout/imagechw.md). The gamma, beta, moving mean, and moving variance descriptors must have a `size[0]` that’s the same as the number of input channels. All arrays must have a data type of `float`.
 
 ## Parameters
 

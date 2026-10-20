@@ -1,7 +1,8 @@
 # MTLTensorDataType.int8
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit signed integer data type.
 
@@ -17,6 +18,10 @@ An 8-bit signed integer data type.
 
 ```swift
 case int8
+```
+
+```c
+MTLTensorDataTypeInt8
 ```
 
 

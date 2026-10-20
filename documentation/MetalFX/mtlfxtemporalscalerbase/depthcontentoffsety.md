@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The vertical offset, in pixels, of the region within the depth texture to use as input.
@@ -17,6 +18,10 @@ The vertical offset, in pixels, of the region within the depth texture to use as
 
 ```swift
 var depthContentOffsetY: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger depthContentOffsetY;
 ```
 
 

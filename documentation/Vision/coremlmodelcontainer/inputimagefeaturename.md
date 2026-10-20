@@ -1,7 +1,8 @@
 # inputImageFeatureName
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the feature value that Vision sets from the request handler.
 

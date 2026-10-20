@@ -1,22 +1,27 @@
 # PHASEAsset.AssetType.resident
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sound asset that plays after fully loading in memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case resident
+```
+
+```c
+PHASEAssetTypeResident
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ If the sound asset is in memory, the framework prepares it for playback. If the 
 
 ## See Also
 
-- [PHASEAsset.AssetType.streamed](phaseasset/assettype/streamed.md)
+### Types
+- [PHASEAsset.AssetType.streamed](./streamed.md)
   A sound asset that streams from disk into memory as it plays.
 
 

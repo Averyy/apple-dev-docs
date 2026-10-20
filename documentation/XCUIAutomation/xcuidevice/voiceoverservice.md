@@ -1,7 +1,8 @@
 # voiceOverService
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides access to VoiceOver for UI testing.
 
@@ -19,6 +20,10 @@ Provides access to VoiceOver for UI testing.
 
 ```swift
 var voiceOverService: XCUIVoiceOverService { get }
+```
+
+```objc
+@property (readonly) XCUIVoiceOverService * voiceOverService;
 ```
 
 

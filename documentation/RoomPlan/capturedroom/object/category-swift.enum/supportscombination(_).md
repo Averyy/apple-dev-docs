@@ -1,7 +1,8 @@
 # supportsCombination(_:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a category supports the given attribute combination.
 
@@ -18,7 +19,7 @@ func supportsCombination(_ attributes: [any CapturedRoomAttribute]) -> Bool
 
 #### Discussion
 
-Only compatible attributes can pair up in association with a 3D model, for example, with the [`CapturedRoom.ModelProvider`](capturedroom/modelprovider.md) function [`setModelFileURL(_:for:)`](capturedroom/modelprovider/setmodelfileurl(_:for:)-8xio.md). These [`CapturedRoom.ModelProvider`](capturedroom/modelprovider.md) functions for `setModelFileURL` and `modelFileURL` throw [`CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported`](capturedroom/modelprovider/error/attributecombinationnotsupported.md) if no object category supports all of the attributes in the arguments to their call.
+Only compatible attributes can pair up in association with a 3D model, for example, with the [`CapturedRoom.ModelProvider`](../../modelprovider.md) function [`setModelFileURL(_:for:)`](../../modelprovider/setmodelfileurl%28_,for%29-8xio.md). These [`CapturedRoom.ModelProvider`](../../modelprovider.md) functions for `setModelFileURL` and `modelFileURL` throw [`CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported`](../../modelprovider/error/attributecombinationnotsupported.md) if no object category supports all of the attributes in the arguments to their call.
 
 ## Parameters
 
@@ -26,9 +27,10 @@ Only compatible attributes can pair up in association with a 3D model, for examp
 
 ## See Also
 
-- [var supportedAttributeTypes: [any CapturedRoomAttribute.Type]](capturedroom/object/category-swift.enum/supportedattributetypes.md)
+### Determining supported attributes
+- [var supportedAttributeTypes: [any CapturedRoomAttribute.Type]](./supportedattributetypes.md)
   Defines the attributes types compatible with a particular object category.
-- [var supportedCombinations: [[any CapturedRoomAttribute]]](capturedroom/object/category-swift.enum/supportedcombinations.md)
+- [var supportedCombinations: [[any CapturedRoomAttribute]]](./supportedcombinations.md)
   An array of supported attributes that differs by category.
 
 

@@ -1,7 +1,8 @@
 # maxDatagramFrameSize(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the max_datagram_frame_size transport parameter on a QUIC connection.
 

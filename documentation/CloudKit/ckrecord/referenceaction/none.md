@@ -1,7 +1,8 @@
 # CKRecord.ReferenceAction.none
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reference action that has no cascading behavior.
 
@@ -10,7 +11,7 @@ A reference action that has no cascading behavior.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,13 +21,18 @@ A reference action that has no cascading behavior.
 case none
 ```
 
+```c
+CKReferenceActionNone
+```
+
 #### Discussion
 
 No action occurs when you delete a record that the current record references. Deleting a parent record doesn’t delete that record’s children. The `CKReference` object still contains the ID of the deleted record and doesn’t update.
 
 ## See Also
 
-- [CKRecord.ReferenceAction.deleteSelf](ckrecord/referenceaction/deleteself.md)
+### Deletion Reference Actions
+- [CKRecord.ReferenceAction.deleteSelf](./deleteself.md)
   A reference action that cascades deletions.
 
 

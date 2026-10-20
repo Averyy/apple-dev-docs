@@ -1,7 +1,8 @@
 # age
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The earliest version of the Unicode Standard in which the scalar was assigned.
 
@@ -24,7 +25,7 @@ var age: Unicode.Version? { get }
 
 This value is `nil` for code points that have not yet been assigned.
 
-This property corresponds to the “Age” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Age” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

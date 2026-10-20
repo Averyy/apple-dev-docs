@@ -1,7 +1,8 @@
 # errSecMissingAttributeBlockSize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A block size attribute is missing.
 
@@ -18,6 +19,10 @@ A block size attribute is missing.
 
 ```swift
 var errSecMissingAttributeBlockSize: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeBlockSize
 ```
 
 

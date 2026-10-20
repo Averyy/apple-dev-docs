@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSBundle` object initialized to correspond to the specified file URL.
 
@@ -17,6 +18,10 @@ Returns an `NSBundle` object initialized to correspond to the specified file URL
 
 ```swift
 convenience init?(url: URL)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
 ```
 
 #### Return Value

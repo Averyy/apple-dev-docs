@@ -1,7 +1,8 @@
 # function
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A MTLFunction that you can link into your shader
 
@@ -17,6 +18,10 @@ A MTLFunction that you can link into your shader
 
 ```swift
 var function: (any MTLFunction)? { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nullable) id<MTLFunction> function;
 ```
 
 

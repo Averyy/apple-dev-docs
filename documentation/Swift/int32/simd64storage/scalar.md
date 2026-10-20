@@ -1,7 +1,8 @@
 # Int32.SIMD64Storage.Scalar
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+

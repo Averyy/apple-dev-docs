@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a linear regressor model to a sequence of annotated features.
 
@@ -26,12 +27,13 @@ The fitted linear regressor model.
 
 ## Parameters
 
-- `input`: A sequence of examples used for fitting the regressor. For faster processing, instead of passing a sequence of shaped arrays, consider passing a single shaped array containing all the training examples. For example instead of passing `N` shaped arrays with shape `[M]`, pass a single shaped array with shape `[N, M]`. See [`fitted(to:validateOn:eventHandler:)`](multivariatelinearregressor/fitted(to:validateon:eventhandler:)-82szq.md).
+- `input`: A sequence of examples used for fitting the regressor. For faster processing, instead of passing a sequence of shaped arrays, consider passing a single shaped array containing all the training examples. For example instead of passing `N` shaped arrays with shape `[M]`, pass a single shaped array with shape `[N, M]`. See [`fitted(to:validateOn:eventHandler:)`](./fitted%28to,validateon,eventhandler%29-82szq.md).
 - `eventHandler`: An event handler. This method reports mean squared errors.
 
 ## See Also
 
-- [func fitted(to:validateOn:eventHandler:)](multivariatelinearregressor/fitted(to:validateon:eventhandler:).md)
+### Fitting
+- [func fitted(to:validateOn:eventHandler:)](./fitted%28to,validateon,eventhandler%29.md)
   Fits a linear regressor model to shaped arrays of features and annotations.
 
 

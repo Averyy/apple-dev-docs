@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The URL of the presented file or directory.
@@ -21,6 +22,10 @@ The URL of the presented file or directory.
 var presentedItemURL: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * presentedItemURL;
+```
+
 #### Discussion
 
 File presenters must implement this property and use it to return the file or directory of interest. If this object presents a group of related files that all reside in the same directory, specify the URL of the directory instead of creating separate presenter objects for each file. For example, a single-window application that manages multiple files inside a project directory should monitor the project directory.
@@ -29,9 +34,10 @@ The URL associated with your item may be requested by objects not associated wit
 
 ## See Also
 
-- [var presentedItemOperationQueue: OperationQueue](nsfilepresenter/presenteditemoperationqueue.md)
+### Accessing File Presenter Attributes
+- [var presentedItemOperationQueue: OperationQueue](./presenteditemoperationqueue.md)
   The operation queue in which to execute presenter-related messages.
-- [var primaryPresentedItemURL: URL?](nsfilepresenter/primarypresenteditemurl.md)
+- [var primaryPresentedItemURL: URL?](./primarypresenteditemurl.md)
   The URL of a secondary item’s primary presented file or directory.
 
 

@@ -1,7 +1,8 @@
 # currentRenderingQuality(forRequested:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines the actual print-rendering quality according to the requested rendering quality.
 
@@ -17,9 +18,14 @@ Determines the actual print-rendering quality according to the requested renderi
 func currentRenderingQuality(forRequested requestedRenderingQuality: UIPrintRenderingQuality) -> UIPrintRenderingQuality
 ```
 
+```objc
+- (UIPrintRenderingQuality) currentRenderingQualityForRequestedRenderingQuality:(UIPrintRenderingQuality) requestedRenderingQuality;
+```
+
 ## See Also
 
-- [enum UIPrintRenderingQuality](uiprintrenderingquality.md)
+### Managing the rendering quality
+- [enum UIPrintRenderingQuality](../uiprintrenderingquality.md)
   Constants that represent the rendering quality for a print operation.
 
 

@@ -1,7 +1,8 @@
 # scribbleInteractionDidFinishWriting(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that the user stops writing in the view, after Scribble transcribes and enters the last word.
 
@@ -16,6 +17,10 @@ Informs the delegate that the user stops writing in the view, after Scribble tra
 optional func scribbleInteractionDidFinishWriting(_ interaction: UIScribbleInteraction)
 ```
 
+```objc
+- (void) scribbleInteractionDidFinishWriting:(UIScribbleInteraction *) interaction;
+```
+
 #### Discussion
 
 Use this to reset placeholders or other UI elements, if appropriate, to their state from before the user started writing.
@@ -26,7 +31,8 @@ Use this to reset placeholders or other UI elements, if appropriate, to their st
 
 ## See Also
 
-- [func scribbleInteractionWillBeginWriting(UIScribbleInteraction)](uiscribbleinteractiondelegate/scribbleinteractionwillbeginwriting(_:).md)
+### Tracking Scribble input
+- [func scribbleInteractionWillBeginWriting(UIScribbleInteraction)](./scribbleinteractionwillbeginwriting%28_%29.md)
   Informs the delegate when the user begins writing in the view.
 
 

@@ -1,16 +1,17 @@
 # MIDIMessageType.sysEx
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@
 case sysEx
 ```
 
+```c
+kMIDIMessageTypeSysEx
+```
+
 ## See Also
 
-- [MIDIMessageType.channelVoice1](midimessagetype/channelvoice1.md)
-- [MIDIMessageType.channelVoice2](midimessagetype/channelvoice2.md)
-- [MIDIMessageType.data128](midimessagetype/data128.md)
-- [MIDIMessageType.system](midimessagetype/system.md)
-- [MIDIMessageType.utility](midimessagetype/utility.md)
+### Message Types
+- [MIDIMessageType.channelVoice1](./channelvoice1.md)
+- [MIDIMessageType.channelVoice2](./channelvoice2.md)
+- [MIDIMessageType.data128](./data128.md)
+- [MIDIMessageType.system](./system.md)
+- [MIDIMessageType.utility](./utility.md)
 
 
 ---

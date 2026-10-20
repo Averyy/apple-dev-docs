@@ -1,7 +1,8 @@
 # MTRHEPAFilterMonitoringProductIdentifierType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 enum MTRHEPAFilterMonitoringProductIdentifierType
 ```
 
+```c
+enum MTRHEPAFilterMonitoringProductIdentifierType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRHEPAFilterMonitoringProductIdentifierType.EAN](mtrhepafiltermonitoringproductidentifiertype/ean.md)
-- [MTRHEPAFilterMonitoringProductIdentifierType.GTIN14](mtrhepafiltermonitoringproductidentifiertype/gtin14.md)
-- [MTRHEPAFilterMonitoringProductIdentifierType.GTIN8](mtrhepafiltermonitoringproductidentifiertype/gtin8.md)
-- [MTRHEPAFilterMonitoringProductIdentifierType.OEM](mtrhepafiltermonitoringproductidentifiertype/oem.md)
-- [MTRHEPAFilterMonitoringProductIdentifierType.UPC](mtrhepafiltermonitoringproductidentifiertype/upc.md)
+- [MTRHEPAFilterMonitoringProductIdentifierType.EAN](./mtrhepafiltermonitoringproductidentifiertype/ean.md)
+- [MTRHEPAFilterMonitoringProductIdentifierType.GTIN14](./mtrhepafiltermonitoringproductidentifiertype/gtin14.md)
+- [MTRHEPAFilterMonitoringProductIdentifierType.GTIN8](./mtrhepafiltermonitoringproductidentifiertype/gtin8.md)
+- [MTRHEPAFilterMonitoringProductIdentifierType.OEM](./mtrhepafiltermonitoringproductidentifiertype/oem.md)
+- [MTRHEPAFilterMonitoringProductIdentifierType.UPC](./mtrhepafiltermonitoringproductidentifiertype/upc.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrhepafiltermonitoringproductidentifiertype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrhepafiltermonitoringproductidentifiertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

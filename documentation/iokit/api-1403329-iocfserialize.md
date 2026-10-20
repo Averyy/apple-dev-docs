@@ -1,7 +1,8 @@
 # IOCFSerialize(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 func IOCFSerialize(_ object: CFTypeRef!, _ options: CFOptionFlags) -> CFData!
+```
+
+```c
+CFDataRef IOCFSerialize(CFTypeRef object, CFOptionFlags options);
 ```
 
 

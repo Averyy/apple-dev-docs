@@ -1,7 +1,8 @@
 # PMOrientation
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Constants that specify page orientation.
 
@@ -14,14 +15,18 @@ Constants that specify page orientation.
 typealias PMOrientation = UInt16
 ```
 
+```c
+typedef UInt16 PMOrientation;
+```
+
 ## Topics
 
 ### Constants
-- [var kPMPortrait: Int](kpmportrait.md)
+- [var kPMPortrait: Int](./kpmportrait.md)
   Specifies portrait (vertical) page orientation. Portrait orientation performs no alteration of the logical page.
-- [var kPMLandscape: Int](kpmlandscape.md)
-- [var kPMReversePortrait: Int](kpmreverseportrait.md)
-- [var kPMReverseLandscape: Int](kpmreverselandscape.md)
+- [var kPMLandscape: Int](./kpmlandscape.md)
+- [var kPMReversePortrait: Int](./kpmreverseportrait.md)
+- [var kPMReverseLandscape: Int](./kpmreverselandscape.md)
 
 
 ---

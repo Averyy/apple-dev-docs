@@ -1,7 +1,8 @@
 # allowsAirPlayForMediaPlayback
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the web view allows media playback over AirPlay.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the web view allows media playback over A
 var allowsAirPlayForMediaPlayback: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsAirPlayForMediaPlayback;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsInlineMediaPlayback: Bool](wkwebviewconfiguration/allowsinlinemediaplayback.md)
+### Setting media playback preferences
+- [var allowsInlineMediaPlayback: Bool](./allowsinlinemediaplayback.md)
   A Boolean value that indicates whether HTML5 videos play inline or use the native full-screen controller.
-- [var allowsPictureInPictureMediaPlayback: Bool](wkwebviewconfiguration/allowspictureinpicturemediaplayback.md)
+- [var allowsPictureInPictureMediaPlayback: Bool](./allowspictureinpicturemediaplayback.md)
   A Boolean value that indicates whether HTML5 videos can play Picture in Picture.
-- [var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes](wkwebviewconfiguration/mediatypesrequiringuseractionforplayback.md)
+- [var mediaTypesRequiringUserActionForPlayback: WKAudiovisualMediaTypes](./mediatypesrequiringuseractionforplayback.md)
   The media types that require a user gesture to begin playing.
-- [struct WKAudiovisualMediaTypes](wkaudiovisualmediatypes.md)
+- [struct WKAudiovisualMediaTypes](../wkaudiovisualmediatypes.md)
   The media types that require a user gesture to begin playing.
 
 

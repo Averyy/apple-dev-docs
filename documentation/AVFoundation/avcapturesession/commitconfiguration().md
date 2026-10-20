@@ -1,7 +1,8 @@
 # commitConfiguration()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Commits one or more changes to a running capture session’s configuration in a single atomic update.
 
@@ -19,13 +20,18 @@ Commits one or more changes to a running capture session’s configuration in a 
 func commitConfiguration()
 ```
 
+```objc
+- (void) commitConfiguration;
+```
+
 ## Mentions
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Setting up a capture session](../setting-up-a-capture-session.md)
 
 ## See Also
 
-- [func beginConfiguration()](avcapturesession/beginconfiguration.md)
+### Configuring a session
+- [func beginConfiguration()](./beginconfiguration%28%29.md)
   Marks the beginning of changes to a running capture session’s configuration to perform in a single atomic update.
 
 

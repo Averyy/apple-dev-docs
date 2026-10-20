@@ -1,7 +1,8 @@
 # AVCaptureMovieFileOutput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A capture output that records video and audio to a QuickTime movie file.
 
@@ -18,10 +19,14 @@ A capture output that records video and audio to a QuickTime movie file.
 class AVCaptureMovieFileOutput
 ```
 
+```objc
+@interface AVCaptureMovieFileOutput : AVCaptureFileOutput
+```
+
 ## Mentions
 
-- [Recording movies in alternative formats](recording-movies-in-alternative-formats.md)
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Recording movies in alternative formats](./recording-movies-in-alternative-formats.md)
+- [Setting up a capture session](./setting-up-a-capture-session.md)
 
 #### Overview
 
@@ -30,76 +35,77 @@ A movie file output provides a complete file recording interface for writing med
 ## Topics
 
 ### Creating a movie file output
-- [init()](avcapturemoviefileoutput/init.md)
+- [init()](./avcapturemoviefileoutput/init%28%29.md)
   Creates a new of movie file output.
 ### Configuring movies
-- [var movieFragmentInterval: CMTime](avcapturemoviefileoutput/moviefragmentinterval.md)
+- [var movieFragmentInterval: CMTime](./avcapturemoviefileoutput/moviefragmentinterval.md)
   The number of seconds of output that are written per fragment.
-- [var metadata: [AVMetadataItem]?](avcapturemoviefileoutput/metadata.md)
+- [var metadata: [AVMetadataItem]?](./avcapturemoviefileoutput/metadata.md)
   The metadata for the output file.
 ### Managing output settings
-- [func supportedOutputSettingsKeys(for: AVCaptureConnection) -> [String]](avcapturemoviefileoutput/supportedoutputsettingskeys(for:).md)
+- [func supportedOutputSettingsKeys(for: AVCaptureConnection) -> [String]](./avcapturemoviefileoutput/supportedoutputsettingskeys%28for%29.md)
   Returns a list of supported keys to use in the output settings dictionary.
-- [func outputSettings(for: AVCaptureConnection) -> [String : Any]](avcapturemoviefileoutput/outputsettings(for:).md)
+- [func outputSettings(for: AVCaptureConnection) -> [String : Any]](./avcapturemoviefileoutput/outputsettings%28for%29.md)
   Returns the settings the output uses to encode media from the specified connection.
-- [func setOutputSettings([String : Any]?, for: AVCaptureConnection)](avcapturemoviefileoutput/setoutputsettings(_:for:).md)
+- [func setOutputSettings([String : Any]?, for: AVCaptureConnection)](./avcapturemoviefileoutput/setoutputsettings%28_,for%29.md)
   Sets the options the output uses to encode media from the given connection while recording.
-- [var availableVideoCodecTypes: [AVVideoCodecType]](avcapturemoviefileoutput/availablevideocodectypes.md)
+- [var availableVideoCodecTypes: [AVVideoCodecType]](./avcapturemoviefileoutput/availablevideocodectypes.md)
   The video codecs types the output supports for recording movie files.
 ### Enabling spatial capture
-- [var isSpatialVideoCaptureSupported: Bool](avcapturemoviefileoutput/isspatialvideocapturesupported.md)
+- [var isSpatialVideoCaptureSupported: Bool](./avcapturemoviefileoutput/isspatialvideocapturesupported.md)
   A Boolean value that indicates whether a movie file output supports capturing spatial videos.
-- [var isSpatialVideoCaptureEnabled: Bool](avcapturemoviefileoutput/isspatialvideocaptureenabled.md)
+- [var isSpatialVideoCaptureEnabled: Bool](./avcapturemoviefileoutput/isspatialvideocaptureenabled.md)
   A Boolean value that indicates whether a movie file output captures spatial videos.
 ### Setting orientation
-- [func recordsVideoOrientationAndMirroringChangesAsMetadataTrack(for: AVCaptureConnection) -> Bool](avcapturemoviefileoutput/recordsvideoorientationandmirroringchangesasmetadatatrack(for:).md)
+- [func recordsVideoOrientationAndMirroringChangesAsMetadataTrack(for: AVCaptureConnection) -> Bool](./avcapturemoviefileoutput/recordsvideoorientationandmirroringchangesasmetadatatrack%28for%29.md)
   A Boolean value that indicates whether the movie file output records video orientation and mirroring information as a metadata track.
-- [func setRecordsVideoOrientationAndMirroringChangesAsMetadataTrack(Bool, for: AVCaptureConnection)](avcapturemoviefileoutput/setrecordsvideoorientationandmirroringchangesasmetadatatrack(_:for:).md)
+- [func setRecordsVideoOrientationAndMirroringChangesAsMetadataTrack(Bool, for: AVCaptureConnection)](./avcapturemoviefileoutput/setrecordsvideoorientationandmirroringchangesasmetadatatrack%28_,for%29.md)
   Sets whether the movie file output creates a timed metadata track to capture changes to the connection’s video orientation and mirroring.
 ### Restricting camera switching
-- [var isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled: Bool](avcapturemoviefileoutput/isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md)
+- [var isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled: Bool](./avcapturemoviefileoutput/isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md)
   A Boolean value that indicates whether to restrict constituent device switching behavior during recording.
-- [func setPrimaryConstituentDeviceSwitchingBehaviorForRecording(AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions)](avcapturemoviefileoutput/setprimaryconstituentdeviceswitchingbehaviorforrecording(_:restrictedswitchingbehaviorconditions:).md)
+- [func setPrimaryConstituentDeviceSwitchingBehaviorForRecording(AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions)](./avcapturemoviefileoutput/setprimaryconstituentdeviceswitchingbehaviorforrecording%28_,restrictedswitchingbehaviorconditions%29.md)
   Sets the camera switching behavior to use during recording.
-- [var primaryConstituentDeviceSwitchingBehaviorForRecording: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](avcapturemoviefileoutput/primaryconstituentdeviceswitchingbehaviorforrecording.md)
+- [var primaryConstituentDeviceSwitchingBehaviorForRecording: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](./avcapturemoviefileoutput/primaryconstituentdeviceswitchingbehaviorforrecording.md)
   The camera switching behavior to use for recording.
-- [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturemoviefileoutput/primaryconstituentdevicerestrictedswitchingbehaviorconditionsforrecording.md)
+- [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./avcapturemoviefileoutput/primaryconstituentdevicerestrictedswitchingbehaviorconditionsforrecording.md)
   The conditions during which camera switching may occur while recording.
 ### Instance Properties
-- [var automaticallyAdjustsCinematicVideoMetadataCaptureEnabled: Bool](avcapturemoviefileoutput/automaticallyadjustscinematicvideometadatacaptureenabled.md)
+- [var automaticallyAdjustsCinematicVideoMetadataCaptureEnabled: Bool](./avcapturemoviefileoutput/automaticallyadjustscinematicvideometadatacaptureenabled.md)
   Controls whether cinematic video metadata capture is automatically managed by the framework.
-- [var isCinematicVideoMetadataCaptureEnabled: Bool](avcapturemoviefileoutput/iscinematicvideometadatacaptureenabled.md)
+- [var isCinematicVideoMetadataCaptureEnabled: Bool](./avcapturemoviefileoutput/iscinematicvideometadatacaptureenabled.md)
   Indicates whether cinematic video metadata is captured to movie files.
-- [var isCinematicVideoMetadataCaptureSupported: Bool](avcapturemoviefileoutput/iscinematicvideometadatacapturesupported.md)
+- [var isCinematicVideoMetadataCaptureSupported: Bool](./avcapturemoviefileoutput/iscinematicvideometadatacapturesupported.md)
   Returns whether capturing cinematic video metadata to the movie file is supported in the current session configuration.
-- [var isProVideoStorageSupported: Bool](avcapturemoviefileoutput/isprovideostoragesupported.md)
+- [var isProVideoStorageSupported: Bool](./avcapturemoviefileoutput/isprovideostoragesupported.md)
   Whether this movie file output supports writing to Pro Video Storage in its current configuration.
-- [var usesProVideoStorage: Bool](avcapturemoviefileoutput/usesprovideostorage.md)
+- [var usesProVideoStorage: Bool](./avcapturemoviefileoutput/usesprovideostorage.md)
   Whether this movie file output is configured to write to Pro Video Storage.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureFileOutput](avcapturefileoutput.md)
+- [AVCaptureFileOutput](./avcapturefileoutput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Recording movies in alternative formats](recording-movies-in-alternative-formats.md)
+### File capture
+- [Recording movies in alternative formats](./recording-movies-in-alternative-formats.md)
   Change the default format for capturing movie files.
-- [class AVCaptureAudioFileOutput](avcaptureaudiofileoutput.md)
+- [class AVCaptureAudioFileOutput](./avcaptureaudiofileoutput.md)
   A capture output that records audio and saves the recorded audio to a file.
-- [class AVCaptureFileOutput](avcapturefileoutput.md)
+- [class AVCaptureFileOutput](./avcapturefileoutput.md)
   The abstract superclass for capture outputs that can record captured data to a file.
-- [protocol AVCaptureFileOutputDelegate](avcapturefileoutputdelegate.md)
+- [protocol AVCaptureFileOutputDelegate](./avcapturefileoutputdelegate.md)
   Methods for monitoring or controlling the output of a media file capture.
-- [protocol AVCaptureFileOutputRecordingDelegate](avcapturefileoutputrecordingdelegate.md)
+- [protocol AVCaptureFileOutputRecordingDelegate](./avcapturefileoutputrecordingdelegate.md)
   Methods for responding to events that occur while recording captured media to a file.
 
 

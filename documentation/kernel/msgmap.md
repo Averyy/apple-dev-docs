@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct msgmap {
     ...
 };
@@ -17,7 +17,7 @@ struct msgmap {
 ## Topics
 
 ### Instance Properties
-- [next](msgmap/1529564-next.md)
+- [next](./msgmap/api-1529564-next.md)
 
 
 ---

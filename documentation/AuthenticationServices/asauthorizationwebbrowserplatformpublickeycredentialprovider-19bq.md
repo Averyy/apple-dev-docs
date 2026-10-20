@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A mechanism you use to provide public key credential requests to a browser app.
 
@@ -20,16 +21,16 @@ protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider
 ## Topics
 
 ### Creating requests
-- [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialassertionrequest(clientdata:).md)
+- [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialassertionrequest%28clientdata%29.md)
   Create a credential assertion request, for authenticating to the relying party.
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata:name:userid:).md)
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest%28clientdata,name,userid%29.md)
   Create a credential registration request, for registering a new passkey with the relying party.
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata:name:userid:requeststyle:).md)
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest%28clientdata,name,userid,requeststyle%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [ASAuthorizationPlatformPublicKeyCredentialProvider](asauthorizationplatformpublickeycredentialprovider.md)
+- [ASAuthorizationPlatformPublicKeyCredentialProvider](./asauthorizationplatformpublickeycredentialprovider.md)
 
 
 ---

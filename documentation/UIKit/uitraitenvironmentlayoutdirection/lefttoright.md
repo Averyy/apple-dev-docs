@@ -1,7 +1,8 @@
 # UITraitEnvironmentLayoutDirection.leftToRight
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A left-to-right layout direction.
 
@@ -18,11 +19,16 @@ A left-to-right layout direction.
 case leftToRight
 ```
 
+```c
+UITraitEnvironmentLayoutDirectionLeftToRight
+```
+
 ## See Also
 
-- [UITraitEnvironmentLayoutDirection.unspecified](uitraitenvironmentlayoutdirection/unspecified.md)
+### Constants
+- [UITraitEnvironmentLayoutDirection.unspecified](./unspecified.md)
   An unknown layout direction.
-- [UITraitEnvironmentLayoutDirection.rightToLeft](uitraitenvironmentlayoutdirection/righttoleft.md)
+- [UITraitEnvironmentLayoutDirection.rightToLeft](./righttoleft.md)
   A right-to-left layout direction.
 
 

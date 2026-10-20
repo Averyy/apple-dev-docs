@@ -1,7 +1,8 @@
 # init(_:value:formatter:prompt:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text field that applies a formatter to a bound value, with a label generated from a localized title string resource.
 
@@ -21,13 +22,27 @@ Creates a text field that applies a formatter to a bound value, with a label gen
 nonisolated init<V>(_ titleResource: LocalizedStringResource, value: Binding<V>, formatter: Formatter, prompt: Text?)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<S, V>(_ title: S, value: Binding<V>, formatter: Formatter, prompt: Text?) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<V>(_ titleKey: LocalizedStringKey, value: Binding<V>, formatter: Formatter, prompt: Text?)
+```
+
 #### Discussion
 
-Use this initializer to create a text field that binds to a bound value, using a [`Formatter`](https://developer.apple.com/documentation/foundation/formatter) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the formatter can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
+Use this initializer to create a text field that binds to a bound value, using a [`Formatter`](../../Foundation/formatter.md) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the formatter can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
 
-Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
+Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever the user submits this text field.
 
-The following example uses a [`Double`](https://developer.apple.com/documentation/swift/double) as the bound value, and a [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) instance to convert to and from a string representation. The formatter uses the [`NumberFormatter.Style.decimal`](https://developer.apple.com/documentation/foundation/numberformatter/style/decimal) style, to allow entering a fractional part. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
+The following example uses a [`Double`](../../Swift/double.md) as the bound value, and a [`NumberFormatter`](../../Foundation/numberformatter.md) instance to convert to and from a string representation. The formatter uses the [`NumberFormatter.Style.decimal`](../../Foundation/numberformatter/style/decimal.md) style, to allow entering a fractional part. As the user types, the bound value updates, which in turn updates three [`Text`](../text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
 
 ```swift
 @State private var myDouble: Double = 0.673
@@ -60,13 +75,14 @@ var body: some View {
 
 ## See Also
 
-- [init(_:value:format:prompt:)](textfield/init(_:value:format:prompt:).md)
+### Creating a text field with a value
+- [init(_:value:format:prompt:)](./init%28_,value,format,prompt%29.md)
   Creates a text field that applies a format style to a bound value, with a label generated from a localized title string resource.
-- [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
+- [init(value:format:prompt:label:)](./init%28value,format,prompt,label%29.md)
   Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
-- [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
+- [init(_:value:formatter:)](./init%28_,value,formatter%29.md)
   Create an instance which binds over an arbitrary type, `V`.
-- [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](textfield/init(value:formatter:prompt:label:).md)
+- [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](./init%28value,formatter,prompt,label%29.md)
   Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 
 

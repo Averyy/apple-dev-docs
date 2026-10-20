@@ -1,7 +1,8 @@
 # TVTopShelfContent
 
 **Framework**: TV Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol that objects adopt to provide content for the top shelf.
 
@@ -14,26 +15,31 @@ The protocol that objects adopt to provide content for the top shelf.
 protocol TVTopShelfContent : NSObjectProtocol
 ```
 
+```objc
+@protocol TVTopShelfContent <NSObject>
+```
+
 #### Overview
 
-Don’t adopt this protocol in your own classes. The TVServices framework adopts this protocol in classes that can contain top shelf content, such as the [`TVTopShelfCarouselContent`](tvtopshelfcarouselcontent.md) class.
+Don’t adopt this protocol in your own classes. The TVServices framework adopts this protocol in classes that can contain top shelf content, such as the [`TVTopShelfCarouselContent`](./tvtopshelfcarouselcontent.md) class.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [TVTopShelfCarouselContent](tvtopshelfcarouselcontent.md)
-- [TVTopShelfInsetContent](tvtopshelfinsetcontent.md)
-- [TVTopShelfSectionedContent](tvtopshelfsectionedcontent.md)
+- [TVTopShelfCarouselContent](./tvtopshelfcarouselcontent.md)
+- [TVTopShelfInsetContent](./tvtopshelfinsetcontent.md)
+- [TVTopShelfSectionedContent](./tvtopshelfsectionedcontent.md)
 
 ## See Also
 
-- [class TVTopShelfItem](tvtopshelfitem.md)
+### Common types
+- [class TVTopShelfItem](./tvtopshelfitem.md)
   An item that uses an image to represent a movie, show, or other content in the top shelf.
-- [class TVTopShelfAction](tvtopshelfaction.md)
+- [class TVTopShelfAction](./tvtopshelfaction.md)
   An action to perform in response to user interactions with an item in the top shelf.
-- [class TVTopShelfObject](tvtopshelfobject.md)
+- [class TVTopShelfObject](./tvtopshelfobject.md)
   An abstract base class for describing top shelf items and item collections.
 
 

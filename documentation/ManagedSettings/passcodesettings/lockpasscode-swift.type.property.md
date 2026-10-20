@@ -1,7 +1,8 @@
 # lockPasscode
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the setting that prevents the user from changing their passcode.
 
@@ -18,11 +19,12 @@ static let lockPasscode: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `lockPasscode` to access metadata for [`lockPasscode`](passcodesettings/lockpasscode-swift.property.md). The default value is `false`.
+Use `lockPasscode` to access metadata for [`lockPasscode`](./lockpasscode-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var lockPasscode: Bool?](passcodesettings/lockpasscode-swift.property.md)
+### Blocking passcode changes
+- [var lockPasscode: Bool?](./lockpasscode-swift.property.md)
   A Boolean value that indicates whether to prevent changing the device passcode.
 
 

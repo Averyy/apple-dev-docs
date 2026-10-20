@@ -1,7 +1,8 @@
 # errSecCSUnsupportedDigestAlgorithm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature digest algorithm(s) specified are not supported.
 
@@ -13,6 +14,10 @@ The signature digest algorithm(s) specified are not supported.
 
 ```swift
 var errSecCSUnsupportedDigestAlgorithm: OSStatus { get }
+```
+
+```c
+errSecCSUnsupportedDigestAlgorithm
 ```
 
 

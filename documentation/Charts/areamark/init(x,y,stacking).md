@@ -1,7 +1,8 @@
 # init(x:y:stacking:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an area mark using the specified horizontal and vertical positions.
 
@@ -36,17 +37,18 @@ Chart(cheeseburgerCost) { cost in
 
 The resulting chart automatically scales and labels the axes based on the data, and fills the area under the data points with a default color:
 
-![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](/images/com.apple.Charts/AreaMark-1-macOS@2x.png)
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-1-macOS@2x.png)
 
 ## Parameters
 
 - `x`: The horizontal position for the mark.
 - `y`: The vertical position for the mark.
-- `stacking`: The way in which the chart stacks area regions. The default is [`standard`](markstackingmethod/standard.md).
+- `stacking`: The way in which the chart stacks area regions. The default is [`standard`](../markstackingmethod/standard.md).
 
 ## See Also
 
-- [init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>, stacking: MarkStackingMethod)](areamark/init(x:y:series:stacking:).md)
+### Creating an area mark
+- [init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>, stacking: MarkStackingMethod)](./init%28x,y,series,stacking%29.md)
   Creates an area mark and associates it with the specified series.
 
 

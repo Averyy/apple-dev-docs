@@ -1,18 +1,19 @@
 # particleAngularVelocity
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial spin rate, in degrees per second, of newly spawned particles. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,29 +21,34 @@ The initial spin rate, in degrees per second, of newly spawned particles. Animat
 var particleAngularVelocity: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat particleAngularVelocity;
+```
+
 #### Discussion
 
-A particle’s angle (or orientation) is independent from its direction of motion. For example, a smoke effect may use a small image of a cloud for each particle, which stays at the same angle as the smoke rises, but a snow effect may use an image that flips and rotates as each snowflake falls. The [`orientationMode`](scnparticlesystem/orientationmode.md) property determines whether and how particles are allowed to rotate, and the [`particleAngle`](scnparticlesystem/particleangle.md) and [`particleAngularVelocity`](scnparticlesystem/particleangularvelocity.md) properties determine rotation angles and rates. You can randomize the rotations of newly spawned particles with the [`particleAngleVariation`](scnparticlesystem/particleanglevariation.md) property.
+A particle’s angle (or orientation) is independent from its direction of motion. For example, a smoke effect may use a small image of a cloud for each particle, which stays at the same angle as the smoke rises, but a snow effect may use an image that flips and rotates as each snowflake falls. The [`orientationMode`](./orientationmode.md) property determines whether and how particles are allowed to rotate, and the [`particleAngle`](./particleangle.md) and [`particleAngularVelocity`](./particleangularvelocity.md) properties determine rotation angles and rates. You can randomize the rotations of newly spawned particles with the [`particleAngleVariation`](./particleanglevariation.md) property.
 
 The default value is `0.0` degrees per second, specifying no rotation.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var particleAngle: CGFloat](scnparticlesystem/particleangle.md)
+### Managing Particle Motion
+- [var particleAngle: CGFloat](./particleangle.md)
   The rotation angle, in degrees, of newly spawned particles. Animatable.
-- [var particleAngleVariation: CGFloat](scnparticlesystem/particleanglevariation.md)
+- [var particleAngleVariation: CGFloat](./particleanglevariation.md)
   The range, in degrees of randomized initial particle angles. Animatable.
-- [var particleVelocity: CGFloat](scnparticlesystem/particlevelocity.md)
+- [var particleVelocity: CGFloat](./particlevelocity.md)
   The initial speed, in units per second, for newly spawned particles. Animatable.
-- [var particleVelocityVariation: CGFloat](scnparticlesystem/particlevelocityvariation.md)
+- [var particleVelocityVariation: CGFloat](./particlevelocityvariation.md)
   The range, in units per second, of randomized initial particle speeds. Animatable.
-- [var particleAngularVelocityVariation: CGFloat](scnparticlesystem/particleangularvelocityvariation.md)
+- [var particleAngularVelocityVariation: CGFloat](./particleangularvelocityvariation.md)
   The range, in degrees per second, of randomized initial angular velocities for particles. Animatable.
-- [var particleLifeSpan: CGFloat](scnparticlesystem/particlelifespan.md)
+- [var particleLifeSpan: CGFloat](./particlelifespan.md)
   The duration, in seconds, for which each particle is rendered before being removed from the scene. Animatable.
-- [var particleLifeSpanVariation: CGFloat](scnparticlesystem/particlelifespanvariation.md)
+- [var particleLifeSpanVariation: CGFloat](./particlelifespanvariation.md)
   The range, in seconds, of randomized particle life spans. Animatable.
 
 

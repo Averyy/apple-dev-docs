@@ -1,21 +1,22 @@
 # InAppPurchaseV2.Relationships.Images
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseV2.Relationships.Images
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseV2.Relationships.Images.Data](inapppurchasev2/relationships-data.dictionary/images-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships.Images.Data](./images-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

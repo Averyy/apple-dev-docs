@@ -1,14 +1,15 @@
 # si_mountingowner
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 thread_t si_mountingowner;
 ```
 

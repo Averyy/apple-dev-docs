@@ -1,7 +1,8 @@
 # ManagedContentView
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.2+
@@ -19,25 +20,26 @@ struct ManagedContentView<Icon> where Icon : View
 ## Topics
 
 ### Creating views
-- [init(primaryLabel: LocalizedStringKey, secondaryLabel: LocalizedStringKey, tertiaryLabel: LocalizedStringKey, quaternaryLabel: LocalizedStringKey, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](managedcontentview/init(primarylabel:secondarylabel:tertiarylabel:quaternarylabel:offerstate:offeraction:icon:)-4blv1.md)
+- [init(primaryLabel: LocalizedStringKey, secondaryLabel: LocalizedStringKey, tertiaryLabel: LocalizedStringKey, quaternaryLabel: LocalizedStringKey, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](./managedcontentview/init%28primarylabel,secondarylabel,tertiarylabel,quaternarylabel,offerstate,offeraction,icon%29-4blv1.md)
   Create a view with the layout of a managed app view and customized labels using localized string keys.
-- [init(primaryLabel: any StringProtocol, secondaryLabel: any StringProtocol, tertiaryLabel: any StringProtocol, quaternaryLabel: any StringProtocol, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](managedcontentview/init(primarylabel:secondarylabel:tertiarylabel:quaternarylabel:offerstate:offeraction:icon:)-8l3xw.md)
+- [init(primaryLabel: any StringProtocol, secondaryLabel: any StringProtocol, tertiaryLabel: any StringProtocol, quaternaryLabel: any StringProtocol, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](./managedcontentview/init%28primarylabel,secondarylabel,tertiarylabel,quaternarylabel,offerstate,offeraction,icon%29-8l3xw.md)
   Create a content view with the layout of a managed app view and customized labels using strings.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct ManagedAppView](managedappview.md)
+### View creation
+- [struct ManagedAppView](./managedappview.md)
   A view that displays a managed app.
-- [struct ManagedContentOfferState](managedcontentofferstate.md)
+- [struct ManagedContentOfferState](./managedcontentofferstate.md)
   The state for a managed content view offer.
-- [struct ManagedContentStyle](managedcontentstyle.md)
+- [struct ManagedContentStyle](./managedcontentstyle.md)
   A type that applies a custom appearance to the managed content view.
 
 

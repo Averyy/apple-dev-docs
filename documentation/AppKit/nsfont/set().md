@@ -1,17 +1,22 @@
 # set()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets this font as the font for the current graphics context.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func set()
+```
+
+```objc
+- (void) set;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This method sets the font for the graphics system but does not affect the higher
 
 ## See Also
 
-- [func set(in: NSGraphicsContext)](nsfont/set(in:).md)
+### Using a Font to Draw
+- [func set(in: NSGraphicsContext)](./set%28in%29.md)
   Sets this font as the font for the specified graphics context.
 
 

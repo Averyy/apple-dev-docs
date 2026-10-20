@@ -1,7 +1,8 @@
 # databaseScope
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of database.
 
@@ -20,13 +21,18 @@ The type of database.
 var databaseScope: CKDatabase.Scope { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CKDatabaseScope databaseScope;
+```
+
 #### Discussion
 
-For possible values, see [`CKDatabase.Scope`](ckdatabase/scope.md).
+For possible values, see [`CKDatabase.Scope`](./scope.md).
 
 ## See Also
 
-- [CKDatabase.Scope](ckdatabase/scope.md)
+### Getting the Database Type
+- [CKDatabase.Scope](./scope.md)
   Constants that represent the scope of a database.
 
 

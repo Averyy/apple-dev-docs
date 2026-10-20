@@ -1,18 +1,19 @@
 # convexSweepTest(with:from:to:options:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for physics bodies in the space formed by moving a convex shape through the physics world.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Searches for physics bodies in the space formed by moving a convex shape through
 func convexSweepTest(with shape: SCNPhysicsShape, from: SCNMatrix4, to: SCNMatrix4, options: [SCNPhysicsWorld.TestOption : Any]? = nil) -> [SCNPhysicsContact]
 ```
 
+```objc
+- (NSArray<SCNPhysicsContact *> *) convexSweepTestWithShape:(SCNPhysicsShape *) shape fromTransform:(SCNMatrix4) from toTransform:(SCNMatrix4) to options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
-An array of [`SCNPhysicsContact`](scnphysicscontact.md) objects describing any contacts that would occur when moving the physics shape through the physics world.
+An array of [`SCNPhysicsContact`](../scnphysicscontact.md) objects describing any contacts that would occur when moving the physics shape through the physics world.
 
 #### Discussion
 
@@ -45,14 +50,15 @@ if (contacts.count == 0) {
 
 ## Parameters
 
-- `shape`: A physics shape. This shape must enclose a convex volume. For details on creating shapes that satisfy this requirement, see [`SCNPhysicsShape`](scnphysicsshape.md).
+- `shape`: A physics shape. This shape must enclose a convex volume. For details on creating shapes that satisfy this requirement, see [`SCNPhysicsShape`](../scnphysicsshape.md).
 - `from`: A transform matrix representing the initial position and orientation of the shape.
 - `to`: A transform matrix representing the final position and orientation of the shape.
 - `options`: A dictionary of options affecting the test, or `nil` to use default options. For applicable keys and the possible values, see `Physics Test Options Keys`.
 
 ## See Also
 
-- [func rayTestWithSegment(from: SCNVector3, to: SCNVector3, options: [SCNPhysicsWorld.TestOption : Any]?) -> [SCNHitTestResult]](scnphysicsworld/raytestwithsegment(from:to:options:).md)
+### Searching for Physics Bodies
+- [func rayTestWithSegment(from: SCNVector3, to: SCNVector3, options: [SCNPhysicsWorld.TestOption : Any]?) -> [SCNHitTestResult]](./raytestwithsegment%28from,to,options%29.md)
   Searches for physics bodies along a line segment between two points in the physics world.
 
 

@@ -1,7 +1,8 @@
 # init(bufferRadius:minCoordinate:maxCoordinate:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a graph to cover the specified area.
 
@@ -19,15 +20,19 @@ Initializes a graph to cover the specified area.
 init(bufferRadius: Float, minCoordinate min: vector_float2, maxCoordinate max: vector_float2)
 ```
 
+```objc
+- (instancetype) initWithBufferRadius:(float) bufferRadius minCoordinate:(vector_float2) min maxCoordinate:(vector_float2) max;
+```
+
 #### Return Value
 
 A new mesh graph.
 
 #### Discussion
 
-A newly created graph contains no obstacles and no graph nodes. First, use the [`addObstacles(_:)`](gkmeshgraph/addobstacles(_:).md) method to add obstacles. Next, use the [`triangulate()`](gkmeshgraph/triangulate().md) method to fill the open space between obstacles with a web of graph nodes, allowing pathfinding operations to result in smooth paths around obstacles.
+A newly created graph contains no obstacles and no graph nodes. First, use the [`addObstacles(_:)`](./addobstacles%28_%29.md) method to add obstacles. Next, use the [`triangulate()`](./triangulate%28%29.md) method to fill the open space between obstacles with a web of graph nodes, allowing pathfinding operations to result in smooth paths around obstacles.
 
-Use the `bufferRadius` parameter to take the size of potential travelers into account when determining navigability. For example, if a game character that will use pathfinding has a radius of 20 units (in the same coordinate space you use to define obstacles), specify a buffer radius of 20. As a result, the graph will consider any points within 20 units of an obstacle non-navigable—that is, pathfinding in the graph will not result in any positions that lie inside this buffer region, so you can safely set the character’s center point to the location of a node returned from the [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method without the character overlapping any obstacles.
+Use the `bufferRadius` parameter to take the size of potential travelers into account when determining navigability. For example, if a game character that will use pathfinding has a radius of 20 units (in the same coordinate space you use to define obstacles), specify a buffer radius of 20. As a result, the graph will consider any points within 20 units of an obstacle non-navigable—that is, pathfinding in the graph will not result in any positions that lie inside this buffer region, so you can safely set the character’s center point to the location of a node returned from the [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method without the character overlapping any obstacles.
 
 ## Parameters
 
@@ -37,7 +42,8 @@ Use the `bufferRadius` parameter to take the size of potential travelers into ac
 
 ## See Also
 
-- [init(bufferRadius: Float, minCoordinate: vector_float2, maxCoordinate: vector_float2, nodeClass: AnyClass)](gkmeshgraph/init(bufferradius:mincoordinate:maxcoordinate:nodeclass:).md)
+### Creating a Graph
+- [init(bufferRadius: Float, minCoordinate: vector_float2, maxCoordinate: vector_float2, nodeClass: AnyClass)](./init%28bufferradius,mincoordinate,maxcoordinate,nodeclass%29.md)
   Initializes a graph to cover the specified area, using the specified node class.
 
 

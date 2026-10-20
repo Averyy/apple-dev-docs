@@ -1,7 +1,8 @@
 # subject(at:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the subject at the given point within the overlay view’s image, if one exists.
 
@@ -21,7 +22,7 @@ The subject that resides at `point`; or, `nil`, if no subject resides at `point`
 
 #### Discussion
 
-This method works for interaction types that include [`imageSubject`](imageanalysisoverlayview/interactiontypes/imagesubject.md).
+This method works for interaction types that include [`imageSubject`](./interactiontypes/imagesubject.md).
 
 The following code retrieves a subject image given a screen point, for instance, where a person clicks:
 
@@ -44,11 +45,12 @@ if let subjectObject = try await overlayView.subject(at: viewPoint) {
 
 ## See Also
 
-- [var subjects: Set<ImageAnalysisOverlayView.Subject>](imageanalysisoverlayview/subjects.md)
+### Accessing image subjects
+- [var subjects: Set<ImageAnalysisOverlayView.Subject>](./subjects.md)
   The set of all subjects the framework identifies in an image.
-- [ImageAnalysisOverlayView.Subject](imageanalysisoverlayview/subject.md)
+- [ImageAnalysisOverlayView.Subject](./subject.md)
   An area of interest in an image that the framework identifies as a primary focal point.
-- [func image(for: Set<ImageAnalysisOverlayView.Subject>) async throws -> NSImage](imageanalysisoverlayview/image(for:).md)
+- [func image(for: Set<ImageAnalysisOverlayView.Subject>) async throws -> NSImage](./image%28for%29.md)
   Provides an image asynchronously that contains the given subjects with the background removed.
 
 

@@ -1,7 +1,8 @@
 # LPErrorDomain
 
 **Framework**: Link Presentation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Link Presentation errors.
 
@@ -20,11 +21,16 @@ The domain for Link Presentation errors.
 let LPErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const LPErrorDomain;
+```
+
 ## See Also
 
-- [struct LPError](lperror.md)
+### Errors
+- [struct LPError](./lperror.md)
   An error returned by the LinkPresentation framework.
-- [LPError.Code](lperror/code.md)
+- [LPError.Code](./lperror/code.md)
   Possible error values that can be returned from LinkPresentation APIs.
 
 

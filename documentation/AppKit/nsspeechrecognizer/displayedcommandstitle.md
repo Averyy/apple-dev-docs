@@ -1,17 +1,22 @@
 # displayedCommandsTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the commands section in the Speech Commands window or `nil` if there is no title.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var displayedCommandsTitle: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * displayedCommandsTitle;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ When this property is a non-empty string, commands are displayed in the Speech C
 
 ## See Also
 
-- [var commands: [String]?](nsspeechrecognizer/commands.md)
+### Configuring Speech Recognizers
+- [var commands: [String]?](./commands.md)
   An array of strings defining the commands for which the speech recognizer object should listen.
-- [var listensInForegroundOnly: Bool](nsspeechrecognizer/listensinforegroundonly.md)
+- [var listensInForegroundOnly: Bool](./listensinforegroundonly.md)
   A Boolean value that indicates whether the speech recognizer object should only enable its commands when its application is the frontmost one.
-- [var blocksOtherRecognizers: Bool](nsspeechrecognizer/blocksotherrecognizers.md)
+- [var blocksOtherRecognizers: Bool](./blocksotherrecognizers.md)
   A Boolean value that indicates whether the speech recognizer object should block all other recognizers (that is, other applications attempting to understand spoken commands) when listening.
 
 

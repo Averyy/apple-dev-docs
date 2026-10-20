@@ -1,7 +1,8 @@
 # NSZeroRect
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An `NSRect` structure set to `0` in width and height.
 
@@ -13,6 +14,10 @@ An `NSRect` structure set to `0` in width and height.
 
 ```swift
 let NSZeroRect: NSRect
+```
+
+```c
+extern const NSRect NSZeroRect;
 ```
 
 

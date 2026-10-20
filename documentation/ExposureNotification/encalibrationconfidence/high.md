@@ -1,14 +1,17 @@
 # ENCalibrationConfidence.high
 
 **Framework**: Exposure Notification  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The highest confidence in the calibration data.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The highest confidence in the calibration data.
 case high
 ```
 
+```c
+ENCalibrationConfidenceHigh
+```
+
 ## See Also
 
-- [ENCalibrationConfidence.medium](encalibrationconfidence/medium.md)
+### Enumeration Cases
+- [ENCalibrationConfidence.medium](./medium.md)
   The medium confidence in the calibration data.
-- [ENCalibrationConfidence.low](encalibrationconfidence/low.md)
+- [ENCalibrationConfidence.low](./low.md)
   The average confidence in the calibration data.
-- [ENCalibrationConfidence.lowest](encalibrationconfidence/lowest.md)
+- [ENCalibrationConfidence.lowest](./lowest.md)
   No confidence in the calibration data.
 
 

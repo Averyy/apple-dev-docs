@@ -1,7 +1,8 @@
 # featureType
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of map feature this annotation represents.
 
@@ -17,13 +18,18 @@ The type of map feature this annotation represents.
 var featureType: MKMapFeatureAnnotation.FeatureType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKMapFeatureType featureType;
+```
+
 ## See Also
 
-- [MKMapFeatureAnnotation.FeatureType](mkmapfeatureannotation/featuretype-swift.enum.md)
+### Customizing the annotation
+- [MKMapFeatureAnnotation.FeatureType](./featuretype-swift.enum.md)
   Values that describe the kinds of features visible on the map.
-- [var iconStyle: MKIconStyle?](mkmapfeatureannotation/iconstyle.md)
+- [var iconStyle: MKIconStyle?](./iconstyle.md)
   The icon style of a feature annotation.
-- [var pointOfInterestCategory: MKPointOfInterestCategory?](mkmapfeatureannotation/pointofinterestcategory.md)
+- [var pointOfInterestCategory: MKPointOfInterestCategory?](./pointofinterestcategory.md)
   The feature annotation’s point of interest category.
 
 

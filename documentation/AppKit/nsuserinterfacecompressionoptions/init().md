@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an option object containing no options.
 
@@ -14,17 +15,22 @@ Creates an option object containing no options.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 Use this initializer to create the empty option set.
 
 ## See Also
 
-- [init(options: Set<NSUserInterfaceCompressionOptions>)](nsuserinterfacecompressionoptions/init(options:).md)
+### Creating a compression option
+- [init(options: Set<NSUserInterfaceCompressionOptions>)](./init%28options%29.md)
   Creates an option object that represents the union of the supplied options.
-- [init(identifier: String)](nsuserinterfacecompressionoptions/init(identifier:).md)
+- [init(identifier: String)](./init%28identifier%29.md)
   Creates an option object with the given identifier string.
-- [init(coder: NSCoder)](nsuserinterfacecompressionoptions/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an option object from data in an unarchiver.
 
 

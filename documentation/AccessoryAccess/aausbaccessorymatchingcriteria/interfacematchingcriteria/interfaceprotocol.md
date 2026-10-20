@@ -1,7 +1,8 @@
 # interfaceProtocol
 
 **Framework**: Accessory Access  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that represents the interface protocol.
 
@@ -16,21 +17,22 @@ var interfaceProtocol: Int?
 
 ## See Also
 
-- [var bcdDevice: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/bcddevice.md)
+### Interface characteristics
+- [var bcdDevice: Int?](./bcddevice.md)
   The 2-byte Binary-Coded Decimal (BCD) value defined by the manufacturer to indicate the device revision or version number.
-- [var configurationValue: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/configurationvalue.md)
+- [var configurationValue: Int?](./configurationvalue.md)
   The value that represents the configuration.
-- [var interfaceClass: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/interfaceclass.md)
+- [var interfaceClass: Int?](./interfaceclass.md)
   The value that represents the interface class.
-- [var interfaceNumber: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/interfacenumber.md)
+- [var interfaceNumber: Int?](./interfacenumber.md)
   The value that represents the interface number.
-- [var interfaceSubClass: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/interfacesubclass.md)
+- [var interfaceSubClass: Int?](./interfacesubclass.md)
   The value that represents the interface subclass.
-- [var productID: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/productid.md)
+- [var productID: Int?](./productid.md)
   The value that represents the product ID.
-- [var speed: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/speed.md)
+- [var speed: Int?](./speed.md)
   The value that represents the interface speed.
-- [var vendorID: Int?](aausbaccessorymatchingcriteria/interfacematchingcriteria/vendorid.md)
+- [var vendorID: Int?](./vendorid.md)
   The value that represents the vendor ID.
 
 

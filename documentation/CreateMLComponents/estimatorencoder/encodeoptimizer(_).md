@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes an estimator optimizer.
@@ -27,7 +28,8 @@ Optimizers are used when fitting an estimator and usually contain state informat
 
 ## See Also
 
-- [func encode<T>(T) throws](estimatorencoder/encode(_:).md)
+### Encoding values
+- [func encode<T>(T) throws](./encode%28_%29.md)
   Encodes a value.
 
 

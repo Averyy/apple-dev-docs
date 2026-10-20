@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that identifies the constraint.
 
@@ -9,13 +10,17 @@ The name that identifies the constraint.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var identifier: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * identifier;
 ```
 
 #### Discussion

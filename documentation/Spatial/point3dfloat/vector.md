@@ -1,7 +1,8 @@
 # vector
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var vector: simd_float3 { get set }
+```
+
+```c
+simd_float3 vector;
 ```
 
 

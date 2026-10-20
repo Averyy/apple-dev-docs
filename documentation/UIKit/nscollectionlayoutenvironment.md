@@ -1,7 +1,8 @@
 # NSCollectionLayoutEnvironment
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol used to provide information about the layout’s container and environment traits, such as size classes and display scale factor.
 
@@ -17,6 +18,10 @@ A protocol used to provide information about the layout’s container and enviro
 ```swift
 @MainActor
 protocol NSCollectionLayoutEnvironment : NSObjectProtocol
+```
+
+```objc
+@protocol NSCollectionLayoutEnvironment <NSObject>
 ```
 
 #### Overview
@@ -54,22 +59,23 @@ UICollectionViewCompositionalLayout *layout = [[UICollectionViewCompositionalLay
 ## Topics
 
 ### Getting the layout’s container
-- [var container: any NSCollectionLayoutContainer](nscollectionlayoutenvironment/container.md)
+- [var container: any NSCollectionLayoutContainer](./nscollectionlayoutenvironment/container.md)
   Information about the layout’s container, such as its size and content insets.
 ### Getting the trait collection
-- [var traitCollection: UITraitCollection](nscollectionlayoutenvironment/traitcollection.md)
+- [var traitCollection: UITraitCollection](./nscollectionlayoutenvironment/traitcollection.md)
   The traits that describe the current environment of the layout, such as the size classes and display scale factor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UICollectionViewCompositionalLayoutConfiguration](uicollectionviewcompositionallayoutconfiguration.md)
+### Configuration
+- [class UICollectionViewCompositionalLayoutConfiguration](./uicollectionviewcompositionallayoutconfiguration.md)
   An object that defines scroll direction, section spacing, and headers or footers for the layout.
-- [typealias UICollectionViewCompositionalLayoutSectionProvider](uicollectionviewcompositionallayoutsectionprovider.md)
+- [typealias UICollectionViewCompositionalLayoutSectionProvider](./uicollectionviewcompositionallayoutsectionprovider.md)
   A closure that creates and returns each of the layout’s sections.
 
 

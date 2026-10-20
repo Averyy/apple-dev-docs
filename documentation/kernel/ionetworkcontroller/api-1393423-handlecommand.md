@@ -1,14 +1,15 @@
 # handleCommand
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn handleCommand(void *target, void *param0, void *param1, void *param2, void *param3);
 ```
 

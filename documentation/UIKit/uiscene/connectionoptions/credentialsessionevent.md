@@ -1,7 +1,8 @@
 # credentialSessionEvent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A CredentialSession event has triggered a UIKit scene creation.
 

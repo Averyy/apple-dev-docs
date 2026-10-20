@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Property_ConnectionType_Integrated
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Property_ConnectionType_Integrated = 0x0830
 ```
 

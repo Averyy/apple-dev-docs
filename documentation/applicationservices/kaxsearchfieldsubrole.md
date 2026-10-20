@@ -1,7 +1,8 @@
 # kAXSearchFieldSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A search field. 
 
@@ -12,6 +13,10 @@ A search field.
 
 ```swift
 var kAXSearchFieldSubrole: String { get }
+```
+
+```c
+#define kAXSearchFieldSubrole
 ```
 
 

@@ -1,12 +1,15 @@
 # SecEncryptTransformGetTypeID()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique identifier of the opaque type to which an encryption transform belongs.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns the unique identifier of the opaque type to which an encryption transfor
 func SecEncryptTransformGetTypeID() -> CFTypeID
 ```
 
+```c
+CFTypeID SecEncryptTransformGetTypeID();
+```
+
 #### Return Value
 
-A value that identifies the opaque type of a [`SecTransform`](sectransform.md) object meant for encryption.
+A value that identifies the opaque type of a [`SecTransform`](./sectransform.md) object meant for encryption.
 
 
 ---

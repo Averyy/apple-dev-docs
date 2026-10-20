@@ -1,7 +1,8 @@
 # SecProtocolType.httpProxy
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates HTTP proxy.
 
@@ -13,6 +14,10 @@ Indicates HTTP proxy.
 
 ```swift
 case httpProxy
+```
+
+```c
+kSecProtocolTypeHTTPProxy
 ```
 
 

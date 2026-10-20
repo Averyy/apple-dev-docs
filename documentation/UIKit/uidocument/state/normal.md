@@ -1,15 +1,16 @@
 # normal
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The document is open, editing is enabled, and there are no conflicts or errors associated with it.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,17 +18,22 @@ The document is open, editing is enabled, and there are no conflicts or errors a
 static var normal: UIDocument.State { get }
 ```
 
+```c
+UIDocumentStateNormal
+```
+
 ## See Also
 
-- [static var closed: UIDocument.State](uidocument/state/closed.md)
+### Constants
+- [static var closed: UIDocument.State](./closed.md)
   There was an error in reading the document.
-- [static var inConflict: UIDocument.State](uidocument/state/inconflict.md)
+- [static var inConflict: UIDocument.State](./inconflict.md)
   Conflicts exist for the document file located at the file URL.
-- [static var savingError: UIDocument.State](uidocument/state/savingerror.md)
+- [static var savingError: UIDocument.State](./savingerror.md)
   There was an error in saving or reverting the document.
-- [static var editingDisabled: UIDocument.State](uidocument/state/editingdisabled.md)
+- [static var editingDisabled: UIDocument.State](./editingdisabled.md)
   The document is busy and it isn’t currently safe for user edits.
-- [static var progressAvailable: UIDocument.State](uidocument/state/progressavailable.md)
+- [static var progressAvailable: UIDocument.State](./progressavailable.md)
   The document is being downloaded or uploaded and progress information is available.
 
 

@@ -1,7 +1,8 @@
 # tokens(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the search field’s tokens that are within a given range.
 
@@ -15,6 +16,10 @@ Returns the search field’s tokens that are within a given range.
 
 ```swift
 func tokens(in textRange: UITextRange) -> [UISearchToken]
+```
+
+```objc
+- (NSArray<UISearchToken *> *) tokensInRange:(UITextRange *) textRange;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ Use this method to find out which tokens are included in the user’s current se
 
 ## See Also
 
-- [var tokenBackgroundColor: UIColor!](uisearchtextfield/tokenbackgroundcolor.md)
+### Customizing token behavior
+- [var tokenBackgroundColor: UIColor!](./tokenbackgroundcolor.md)
   The background color for all tokens in the search text field.
-- [func positionOfToken(at: Int) -> UITextPosition](uisearchtextfield/positionoftoken(at:).md)
+- [func positionOfToken(at: Int) -> UITextPosition](./positionoftoken%28at%29.md)
   Converts a token index into a text position.
 
 

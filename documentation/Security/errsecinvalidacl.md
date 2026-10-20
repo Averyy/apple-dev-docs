@@ -1,7 +1,8 @@
 # errSecInvalidACL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid access control list was detected.
 
@@ -18,6 +19,10 @@ An invalid access control list was detected.
 
 ```swift
 var errSecInvalidACL: OSStatus { get }
+```
+
+```c
+errSecInvalidACL
 ```
 
 

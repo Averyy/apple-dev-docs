@@ -1,7 +1,8 @@
 # countourAtIndexPath(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the contour object at the specified index, irrespective of hierarchy.
 
@@ -30,9 +31,10 @@ The contour object at the specified index path, or `nil` if the index path is in
 
 ## See Also
 
-- [ContoursObservation.Contour](contoursobservation/contour.md)
+### Getting the contours
+- [ContoursObservation.Contour](./contour.md)
   An object that represents a detected contour in an image.
-- [func contourAtIndex(Int) -> ContoursObservation.Contour?](contoursobservation/contouratindex(_:).md)
+- [func contourAtIndex(Int) -> ContoursObservation.Contour?](./contouratindex%28_%29.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
 
 

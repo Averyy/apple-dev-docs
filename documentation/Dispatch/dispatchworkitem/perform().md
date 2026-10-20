@@ -1,7 +1,8 @@
 # perform()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the work item’s block synchronously on the current thread.
 
@@ -10,9 +11,9 @@ Executes the work item’s block synchronously on the current thread.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

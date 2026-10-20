@@ -1,7 +1,8 @@
 # effect(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A post processing effect mode that accepts a conforming type for post processing.
 

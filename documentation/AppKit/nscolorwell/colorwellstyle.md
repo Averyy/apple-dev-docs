@@ -1,7 +1,8 @@
 # colorWellStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance and interaction style to apply to the color well.
 
@@ -14,17 +15,22 @@ The appearance and interaction style to apply to the color well.
 var colorWellStyle: NSColorWell.Style { get set }
 ```
 
+```objc
+@property (assign) NSColorWellStyle colorWellStyle;
+```
+
 #### Discussion
 
-The value of this property determines how the color well presents itself, and how interactions affect it. For details, see [`NSColorWell.Style`](nscolorwell/style.md).
+The value of this property determines how the color well presents itself, and how interactions affect it. For details, see [`NSColorWell.Style`](./style.md).
 
 ## See Also
 
-- [NSColorWell.Style](nscolorwell/style.md)
+### Configuring the appearance
+- [NSColorWell.Style](./style.md)
   Constants that specify the appearance and interaction modes for a color well.
-- [var image: NSImage?](nscolorwell/image.md)
+- [var image: NSImage?](./image.md)
   The image to display on the button portion of a color well that adopts the expanded style.
-- [var isBordered: Bool](nscolorwell/isbordered.md)
+- [var isBordered: Bool](./isbordered.md)
   A Boolean value that determines whether the color well has a border.
 
 

@@ -1,7 +1,8 @@
 # DeviceAnchor.TrackingState.tracked
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework is currently tracking both the anchor’s position and its orientation.
 
@@ -17,9 +18,10 @@ case tracked
 
 ## See Also
 
-- [DeviceAnchor.TrackingState.orientationTracked](deviceanchor/trackingstate-swift.enum/orientationtracked.md)
+### Tracking states
+- [DeviceAnchor.TrackingState.orientationTracked](./orientationtracked.md)
   The framework is currently only tracking the anchor’s orientation.
-- [DeviceAnchor.TrackingState.untracked](deviceanchor/trackingstate-swift.enum/untracked.md)
+- [DeviceAnchor.TrackingState.untracked](./untracked.md)
   The framework isn’t tracking this anchor.
 
 

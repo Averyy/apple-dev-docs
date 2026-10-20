@@ -1,15 +1,18 @@
 # statusBarHidden(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the visibility of the status bar.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use .toolbarVisibility(_, for: .statusBar) instead
 
 ## Declaration
 
@@ -24,17 +27,18 @@ nonisolated func statusBarHidden(_ hidden: Bool = true) -> some View
 
 ## See Also
 
-- [func labelsHidden() -> some View](view/labelshidden.md)
+### Hiding system elements
+- [func labelsHidden() -> some View](./labelshidden%28%29.md)
   Hides the labels of any controls contained within this view.
-- [func labelsVisibility(Visibility) -> some View](view/labelsvisibility(_:).md)
+- [func labelsVisibility(Visibility) -> some View](./labelsvisibility%28_%29.md)
   Controls the visibility of labels of any controls contained within this view.
-- [var labelsVisibility: Visibility](environmentvalues/labelsvisibility.md)
-  The labels visibility set by [`labelsVisibility(_:)`](view/labelsvisibility(_:).md).
-- [func menuIndicator(Visibility) -> some View](view/menuindicator(_:).md)
+- [var labelsVisibility: Visibility](../environmentvalues/labelsvisibility.md)
+  The labels visibility set by [`labelsVisibility(_:)`](./labelsvisibility%28_%29.md).
+- [func menuIndicator(Visibility) -> some View](./menuindicator%28_%29.md)
   Sets the menu indicator visibility for controls within this view.
-- [func persistentSystemOverlays(Visibility) -> some View](view/persistentsystemoverlays(_:).md)
+- [func persistentSystemOverlays(Visibility) -> some View](./persistentsystemoverlays%28_%29.md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
-- [enum Visibility](visibility.md)
+- [enum Visibility](../visibility.md)
   The visibility of a UI element, chosen automatically based on the platform, current context, and other factors.
 
 

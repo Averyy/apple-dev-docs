@@ -1,7 +1,8 @@
 # BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage identifying the background asset to which a new version belongs.
 
@@ -10,14 +11,14 @@ The resource linkage identifying the background asset to which a new version bel
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset.Data](backgroundassetversioncreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundasset-data.dictionary/data-data.dictionary.md)
+- [object BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset.Data](./backgroundasset-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

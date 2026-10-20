@@ -1,7 +1,8 @@
 # MLTensor.PaddingMode.reflection
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pads the input tensor using the reflection of the input boundary.
 
@@ -22,9 +23,10 @@ case reflection
 
 ## See Also
 
-- [MLTensor.PaddingMode.constant(_:)](mltensor/paddingmode/constant(_:).md)
+### Padding modes
+- [MLTensor.PaddingMode.constant(_:)](./constant%28_%29.md)
   Pads the input tensor boundaries with a constant value.
-- [MLTensor.PaddingMode.symmetric](mltensor/paddingmode/symmetric.md)
+- [MLTensor.PaddingMode.symmetric](./symmetric.md)
   Pads the input tensor using the reflection of the input, including the edge value.
 
 

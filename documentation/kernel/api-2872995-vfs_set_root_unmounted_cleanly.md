@@ -1,14 +1,15 @@
 # vfs_set_root_unmounted_cleanly
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 void vfs_set_root_unmounted_cleanly(void);
 ```
 

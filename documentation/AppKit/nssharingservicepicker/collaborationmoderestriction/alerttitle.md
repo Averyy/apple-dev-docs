@@ -1,7 +1,8 @@
 # alertTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the alert if a reason for disabling is provided
 
@@ -12,6 +13,10 @@ The title of the alert if a reason for disabling is provided
 
 ```swift
 var alertTitle: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * alertTitle;
 ```
 
 

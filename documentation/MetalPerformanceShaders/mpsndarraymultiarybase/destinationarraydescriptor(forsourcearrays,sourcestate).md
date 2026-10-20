@@ -1,7 +1,8 @@
 # destinationArrayDescriptor(forSourceArrays:sourceState:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func destinationArrayDescriptor(forSourceArrays sources: [MPSNDArray], sourceState state: MPSState?) -> MPSNDArrayDescriptor
+```
+
+```objc
+- (MPSNDArrayDescriptor *) destinationArrayDescriptorForSourceArrays:(NSArray<MPSNDArray *> *) sources sourceState:(MPSState *) state;
 ```
 
 

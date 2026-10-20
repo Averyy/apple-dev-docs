@@ -1,7 +1,8 @@
 # selector
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for identifying the font feature selector.
 
@@ -21,15 +22,16 @@ static let selector: UIFontDescriptor.FeatureKey
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object specifying the font feature selector such as common ligature, traditional character shape, or other font feature.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object specifying the font feature selector such as common ligature, traditional character shape, or other font feature.
 
 ## See Also
 
-- [static let type: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/type.md)
+### Keys
+- [static let type: UIFontDescriptor.FeatureKey](./type.md)
   A key for identifying the font feature type.
-- [static let featureIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/featureidentifier.md)
+- [static let featureIdentifier: UIFontDescriptor.FeatureKey](./featureidentifier.md)
   A key for identifying a font feature type.
-- [static let typeIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/typeidentifier.md)
+- [static let typeIdentifier: UIFontDescriptor.FeatureKey](./typeidentifier.md)
   A key for identifying the font feature selector.
 
 

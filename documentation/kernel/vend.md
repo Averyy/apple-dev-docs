@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct vend {
     ...
 };
@@ -17,9 +17,9 @@ struct vend {
 ## Topics
 
 ### Instance Properties
-- [v_flags](vend/3753863-v_flags.md)
-- [v_magic](vend/3753864-v_magic.md)
-- [v_unused](vend/3753865-v_unused.md)
+- [v_flags](./vend/api-3753863-v_flags.md)
+- [v_magic](./vend/api-3753864-v_magic.md)
+- [v_unused](./vend/api-3753865-v_unused.md)
 
 
 ---

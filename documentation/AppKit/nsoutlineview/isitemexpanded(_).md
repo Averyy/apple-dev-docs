@@ -1,12 +1,13 @@
 # isItemExpanded(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a given item is expanded.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value that indicates whether a given item is expanded.
 func isItemExpanded(_ item: Any?) -> Bool
 ```
 
+```objc
+- (BOOL) isItemExpanded:(id) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `item` is expanded, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `item` is expanded, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -24,9 +29,11 @@ func isItemExpanded(_ item: Any?) -> Bool
 
 ## See Also
 
-- [func expandItem(Any?)](nsoutlineview/expanditem(_:).md)
+### Related Documentation
+- [func expandItem(Any?)](./expanditem%28_%29.md)
   Expands a given item.
-- [func isExpandable(Any?) -> Bool](nsoutlineview/isexpandable(_:).md)
+### Working with Expandability
+- [func isExpandable(Any?) -> Bool](./isexpandable%28_%29.md)
   Returns a Boolean value that indicates whether a given item is expandable.
 
 

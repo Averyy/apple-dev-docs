@@ -1,7 +1,8 @@
 # SWHighlightMembershipEventTrigger.addedCollaborator
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signifies the system added a collaborator.
 
@@ -18,14 +19,19 @@ Signifies the system added a collaborator.
 case addedCollaborator
 ```
 
+```c
+SWHighlightMembershipEventTriggerAddedCollaborator
+```
+
 ## Mentions
 
-- [Adding custom collaboration to your app](adding-custom-collaboration-to-your-app.md)
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding custom collaboration to your app](../adding-custom-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](../adding-shared-content-collaboration-to-your-app.md)
 
 ## See Also
 
-- [SWHighlightMembershipEventTrigger.removedCollaborator](swhighlightmembershipeventtrigger/removedcollaborator.md)
+### Collaborator actions
+- [SWHighlightMembershipEventTrigger.removedCollaborator](./removedcollaborator.md)
   Signifies the system removed a collaborator.
 
 

@@ -1,7 +1,8 @@
 # kIOBluetoothServiceBrowserControllerOptionsNone
 
 **Framework**: IOBluetooth UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,19 @@
 var kIOBluetoothServiceBrowserControllerOptionsNone: Int { get }
 ```
 
+```c
+kIOBluetoothServiceBrowserControllerOptionsNone
+```
+
 #### Discussion
 
 - no options set.
 
 ## See Also
 
-- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
+### Constants
+- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](./kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](./kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
 
 
 ---

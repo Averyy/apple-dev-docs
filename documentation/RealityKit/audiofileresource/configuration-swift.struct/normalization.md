@@ -1,7 +1,8 @@
 # normalization
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stores the normalization portion of the configuration.
 
@@ -21,7 +22,8 @@ var normalization: AudioResource.Normalization?
 
 ## See Also
 
-- [var calibration: AudioResource.Calibration?](audiofileresource/configuration-swift.struct/calibration.md)
+### Controlling the volume
+- [var calibration: AudioResource.Calibration?](./calibration.md)
   Stores the calibration setting that the system applies to the audio resource, ensuring optimal playback quality.
 
 

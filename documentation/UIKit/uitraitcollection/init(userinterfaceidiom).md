@@ -1,7 +1,8 @@
 # init(userInterfaceIdiom:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trait collection that contains only a specified interface idiom.
 
@@ -9,7 +10,7 @@ Creates a trait collection that contains only a specified interface idiom.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,45 +19,50 @@ Creates a trait collection that contains only a specified interface idiom.
 init(userInterfaceIdiom idiom: UIUserInterfaceIdiom)
 ```
 
+```objc
++ (UITraitCollection *) traitCollectionWithUserInterfaceIdiom:(UIUserInterfaceIdiom) idiom;
+```
+
 #### Return Value
 
 A new trait collection containing only a specified user interface idiom trait.
 
 ## Parameters
 
-- `idiom`: A [`UIUserInterfaceIdiom`](uiuserinterfaceidiom.md) value specifying the user interface idiom for the new trait collection.
+- `idiom`: A [`UIUserInterfaceIdiom`](../uiuserinterfaceidiom.md) value specifying the user interface idiom for the new trait collection.
 
 ## See Also
 
-- [init()](uitraitcollection/init.md)
+### Creating a trait collection
+- [init()](./init%28%29.md)
   Creates a trait collection whose traits are set to their default (unspecified) values.
-- [init(horizontalSizeClass: UIUserInterfaceSizeClass)](uitraitcollection/init(horizontalsizeclass:).md)
+- [init(horizontalSizeClass: UIUserInterfaceSizeClass)](./init%28horizontalsizeclass%29.md)
   Creates a trait collection that contains only a specified horizontal size class.
-- [init(verticalSizeClass: UIUserInterfaceSizeClass)](uitraitcollection/init(verticalsizeclass:).md)
+- [init(verticalSizeClass: UIUserInterfaceSizeClass)](./init%28verticalsizeclass%29.md)
   Creates a trait collection that contains only a specified vertical size class.
-- [init(userInterfaceStyle: UIUserInterfaceStyle)](uitraitcollection/init(userinterfacestyle:).md)
+- [init(userInterfaceStyle: UIUserInterfaceStyle)](./init%28userinterfacestyle%29.md)
   Creates a trait collection that contains only the specified user interface style trait.
-- [init(accessibilityContrast: UIAccessibilityContrast)](uitraitcollection/init(accessibilitycontrast:).md)
+- [init(accessibilityContrast: UIAccessibilityContrast)](./init%28accessibilitycontrast%29.md)
   Creates a trait collection that contains only the specified accessibility contrast trait.
-- [init(userInterfaceLevel: UIUserInterfaceLevel)](uitraitcollection/init(userinterfacelevel:).md)
+- [init(userInterfaceLevel: UIUserInterfaceLevel)](./init%28userinterfacelevel%29.md)
   Creates a trait collection that contains only the specified user interface level trait.
-- [init(legibilityWeight: UILegibilityWeight)](uitraitcollection/init(legibilityweight:).md)
+- [init(legibilityWeight: UILegibilityWeight)](./init%28legibilityweight%29.md)
   Creates a trait collection that contains only the specified legibility weight trait.
-- [init(forceTouchCapability: UIForceTouchCapability)](uitraitcollection/init(forcetouchcapability:).md)
+- [init(forceTouchCapability: UIForceTouchCapability)](./init%28forcetouchcapability%29.md)
   Creates a trait collection that contains only a specified force touch capability trait.
-- [init(displayScale: CGFloat)](uitraitcollection/init(displayscale:).md)
+- [init(displayScale: CGFloat)](./init%28displayscale%29.md)
   Creates a trait collection that contains only a specified display scale.
-- [init(displayGamut: UIDisplayGamut)](uitraitcollection/init(displaygamut:).md)
+- [init(displayGamut: UIDisplayGamut)](./init%28displaygamut%29.md)
   Creates a trait collection that contains only the specified display gamut trait.
-- [init(layoutDirection: UITraitEnvironmentLayoutDirection)](uitraitcollection/init(layoutdirection:).md)
+- [init(layoutDirection: UITraitEnvironmentLayoutDirection)](./init%28layoutdirection%29.md)
   Creates a trait collection that contains only the specified layout direction trait.
-- [init(preferredContentSizeCategory: UIContentSizeCategory)](uitraitcollection/init(preferredcontentsizecategory:).md)
+- [init(preferredContentSizeCategory: UIContentSizeCategory)](./init%28preferredcontentsizecategory%29.md)
   Creates a trait collection that contains only the specified content size category trait.
-- [init(activeAppearance: UIUserInterfaceActiveAppearance)](uitraitcollection/init(activeappearance:).md)
+- [init(activeAppearance: UIUserInterfaceActiveAppearance)](./init%28activeappearance%29.md)
   Creates a trait collection that contains only the specified active appearance trait.
-- [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](uitraitcollection/init(toolbaritempresentationsize:).md)
+- [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](./init%28toolbaritempresentationsize%29.md)
   Creates a trait collection that contains only the specified toolbar item presentation size trait.
-- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:)-5zqph.md)
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](./init%28hdrheadroomusagelimit%29-5zqph.md)
 
 
 ---

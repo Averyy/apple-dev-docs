@@ -1,7 +1,8 @@
 # kIOUSB30HubPortStatusCodeExt
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port status code extension.
 
@@ -10,7 +11,7 @@ The port status code extension.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubPortStatusCodeExt = 2
 ```
 

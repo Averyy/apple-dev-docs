@@ -1,12 +1,13 @@
 # localizedColorNameComponent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized version of the color name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,49 @@ The localized version of the color name.
 var localizedColorNameComponent: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * localizedColorNameComponent;
+```
+
 #### Discussion
 
-Use the value in this property when displaying the color name in your user interface. Access this property only for colors in the [`named`](nscolorspacename/named.md) color space. Accessing it for other color types raises an exception.
+Use the value in this property when displaying the color name in your user interface. Access this property only for colors in the [`named`](../nscolorspacename/named.md) color space. Accessing it for other color types raises an exception.
 
 ## See Also
 
-- [init?(catalogName: NSColorList.Name, colorName: NSColor.Name)](nscolor/init(catalogname:colorname:).md)
+### Related Documentation
+- [init?(catalogName: NSColorList.Name, colorName: NSColor.Name)](./init%28catalogname,colorname%29.md)
   Creates a color object using the specified asset catalog and color names.
-- [var alphaComponent: CGFloat](nscolor/alphacomponent.md)
+### Retrieving individual components
+- [var alphaComponent: CGFloat](./alphacomponent.md)
   The alpha (opacity) component value of the color.
-- [var whiteComponent: CGFloat](nscolor/whitecomponent.md)
+- [var whiteComponent: CGFloat](./whitecomponent.md)
   The white component value of the color.
-- [var redComponent: CGFloat](nscolor/redcomponent.md)
+- [var redComponent: CGFloat](./redcomponent.md)
   The red component value of the color.
-- [var greenComponent: CGFloat](nscolor/greencomponent.md)
+- [var greenComponent: CGFloat](./greencomponent.md)
   The green component value of the color.
-- [var blueComponent: CGFloat](nscolor/bluecomponent.md)
+- [var blueComponent: CGFloat](./bluecomponent.md)
   The blue component value of the color.
-- [var cyanComponent: CGFloat](nscolor/cyancomponent.md)
+- [var cyanComponent: CGFloat](./cyancomponent.md)
   The cyan component value of the color.
-- [var magentaComponent: CGFloat](nscolor/magentacomponent.md)
+- [var magentaComponent: CGFloat](./magentacomponent.md)
   The magenta component value of the color.
-- [var yellowComponent: CGFloat](nscolor/yellowcomponent.md)
+- [var yellowComponent: CGFloat](./yellowcomponent.md)
   The yellow component value of the color.
-- [var blackComponent: CGFloat](nscolor/blackcomponent.md)
+- [var blackComponent: CGFloat](./blackcomponent.md)
   The black component value of the color.
-- [var hueComponent: CGFloat](nscolor/huecomponent.md)
+- [var hueComponent: CGFloat](./huecomponent.md)
   The hue component value of the color.
-- [var saturationComponent: CGFloat](nscolor/saturationcomponent.md)
+- [var saturationComponent: CGFloat](./saturationcomponent.md)
   The saturation component value of the color.
-- [var brightnessComponent: CGFloat](nscolor/brightnesscomponent.md)
+- [var brightnessComponent: CGFloat](./brightnesscomponent.md)
   The brightness component value of the color.
-- [var catalogNameComponent: NSColorList.Name](nscolor/catalognamecomponent.md)
+- [var catalogNameComponent: NSColorList.Name](./catalognamecomponent.md)
   The catalog containing the color’s name.
-- [var localizedCatalogNameComponent: String](nscolor/localizedcatalognamecomponent.md)
+- [var localizedCatalogNameComponent: String](./localizedcatalognamecomponent.md)
   The localized version of the catalog name containing the color.
-- [var colorNameComponent: NSColor.Name](nscolor/colornamecomponent.md)
+- [var colorNameComponent: NSColor.Name](./colornamecomponent.md)
   The name of the color.
 
 

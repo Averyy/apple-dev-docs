@@ -1,7 +1,8 @@
 # AVSampleBufferDisplayLayer
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that displays compressed or uncompressed video frames.
 
@@ -20,68 +21,73 @@ An object that displays compressed or uncompressed video frames.
 class AVSampleBufferDisplayLayer
 ```
 
+```objc
+@interface AVSampleBufferDisplayLayer : CALayer
+```
+
 ## Topics
 
 ### Accessing the video renderer
-- [var sampleBufferRenderer: AVSampleBufferVideoRenderer](avsamplebufferdisplaylayer/samplebufferrenderer.md)
+- [var sampleBufferRenderer: AVSampleBufferVideoRenderer](./avsamplebufferdisplaylayer/samplebufferrenderer.md)
   An object that enqueues video sample buffers for rendering.
 ### Configuring the layer
-- [var isReadyForDisplay: Bool](avsamplebufferdisplaylayer/isreadyfordisplay.md)
+- [var isReadyForDisplay: Bool](./avsamplebufferdisplaylayer/isreadyfordisplay.md)
   A Boolean value that indicates whether the first video frame is ready for display.
-- [var controlTimebase: CMTimebase?](avsamplebufferdisplaylayer/controltimebase.md)
+- [var controlTimebase: CMTimebase?](./avsamplebufferdisplaylayer/controltimebase.md)
   A timebase that determines how the layer interprets timestamps.
-- [var videoGravity: AVLayerVideoGravity](avsamplebufferdisplaylayer/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./avsamplebufferdisplaylayer/videogravity.md)
   A value that indicates how the layer displays video within its bounds.
-- [struct AVLayerVideoGravity](avlayervideogravity.md)
+- [struct AVLayerVideoGravity](./avlayervideogravity.md)
   A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
 ### Protecting content
-- [var preventsCapture: Bool](avsamplebufferdisplaylayer/preventscapture.md)
+- [var preventsCapture: Bool](./avsamplebufferdisplaylayer/preventscapture.md)
   A Boolean value that indicates whether the layer protects against screen capture.
-- [var isOutputObscuredDueToInsufficientExternalProtection: Bool](avsamplebufferdisplaylayer/isoutputobscuredduetoinsufficientexternalprotection.md)
+- [var isOutputObscuredDueToInsufficientExternalProtection: Bool](./avsamplebufferdisplaylayer/isoutputobscuredduetoinsufficientexternalprotection.md)
   A Boolean value that indicates whether the system obscures decoded output due to insufficient external protection on the current device.
 ### Preventing backgrounding
-- [var preventsDisplaySleepDuringVideoPlayback: Bool](avsamplebufferdisplaylayer/preventsdisplaysleepduringvideoplayback.md)
+- [var preventsDisplaySleepDuringVideoPlayback: Bool](./avsamplebufferdisplaylayer/preventsdisplaysleepduringvideoplayback.md)
   A Boolean value that indicates whether the layer prevents the system from sleeping during video playback.
-- [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](avsamplebufferdisplaylayer/preventsautomaticbackgroundingduringvideoplayback.md)
+- [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](./avsamplebufferdisplaylayer/preventsautomaticbackgroundingduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents the system from automatically backgrounding an app.
 ### Handling errors
-- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../foundation/nsnotification/name-swift.struct/avsamplebufferdisplaylayerfailedtodecode.md)
+- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/avsamplebufferdisplaylayerfailedtodecode.md)
   A notification the system posts when a sample buffer display layer fails to decode.
-- [let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String](avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md)
+- [let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String](./avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md)
   The key for the corresponding error.
 ### Deprecated
-- [Deprecated symbols](avsamplebufferdisplaylayer-deprecated-symbols.md)
+- [Deprecated symbols](./avsamplebufferdisplaylayer-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Inherits From
-- [CALayer](../quartzcore/calayer.md)
+- [CALayer](../QuartzCore/calayer.md)
 ### Conforms To
-- [AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
-- [CAMediaTiming](../quartzcore/camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AVQueuedSampleBufferRendering](./avqueuedsamplebufferrendering.md)
+- [CAMediaTiming](../QuartzCore/camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
+### Presentation
+- [protocol AVQueuedSampleBufferRendering](./avqueuedsamplebufferrendering.md)
   Methods you can implement to enqueue sample buffers for presentation.
-- [class AVSampleBufferRenderSynchronizer](avsamplebufferrendersynchronizer.md)
+- [class AVSampleBufferRenderSynchronizer](./avsamplebufferrendersynchronizer.md)
   An object used to synchronize multiple queued sample buffers to a single timeline.
-- [class AVSampleBufferVideoRenderer](avsamplebuffervideorenderer.md)
+- [class AVSampleBufferVideoRenderer](./avsamplebuffervideorenderer.md)
   An object that enqueues video sample buffers for rendering.
-- [class AVSampleBufferAudioRenderer](avsamplebufferaudiorenderer.md)
+- [class AVSampleBufferAudioRenderer](./avsamplebufferaudiorenderer.md)
   An object used to decompress audio and play compressed or uncompressed audio.
 
 

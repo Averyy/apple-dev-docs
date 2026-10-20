@@ -1,7 +1,8 @@
 # InferenceValue.NamedMutableViews
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of named mutable views into inference values.
 
@@ -25,14 +26,15 @@ Each view can only be taken once to ensure exclusive access.
 ## Topics
 
 ### Accessing views
-- [func take(String) -> InferenceValue.MutableView?](inferencevalue/namedmutableviews/take(_:).md)
+- [func take(String) -> InferenceValue.MutableView?](./namedmutableviews/take%28_%29.md)
   Takes the mutable view for the specified value.
 
 ## See Also
 
-- [InferenceValue.View](inferencevalue/view.md)
+### Accessing views
+- [InferenceValue.View](./view.md)
   A borrowed, read-only view of an inference value.
-- [InferenceValue.MutableView](inferencevalue/mutableview.md)
+- [InferenceValue.MutableView](./mutableview.md)
   A borrowed, mutable view of an inference value.
 
 

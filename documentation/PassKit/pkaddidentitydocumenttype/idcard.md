@@ -1,17 +1,18 @@
 # PKAddIdentityDocumentType.idCard
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A generic pass that represents a person’s identification.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A generic pass that represents a person’s identification.
 case idCard
 ```
 
+```c
+PKAddIdentityDocumentTypeIDCard
+```
+
 ## See Also
 
-- [PKAddIdentityDocumentType.mDL](pkaddidentitydocumenttype/mdl.md)
+### Types of identity documents
+- [PKAddIdentityDocumentType.mDL](./mdl.md)
   A pass that represents a driver’s license or government-issued identification.
-- [PKAddIdentityDocumentType.photoID](pkaddidentitydocumenttype/photoid.md)
+- [PKAddIdentityDocumentType.photoID](./photoid.md)
   A pass to use for personal identification.
 
 

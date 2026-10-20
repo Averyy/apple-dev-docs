@@ -1,7 +1,8 @@
 # abort()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells a PostScript converter to abort a conversion at the next available opportunity.
 
@@ -15,13 +16,18 @@ Tells a PostScript converter to abort a conversion at the next available opportu
 func abort() -> Bool
 ```
 
+```c
+extern bool CGPSConverterAbort(CGPSConverterRef converter);
+```
+
 #### Return Value
 
 A Boolean value that indicates whether the converter is currently converting data (`true` if it is).
 
 ## See Also
 
-- [func convert(CGDataProvider, consumer: CGDataConsumer, options: CFDictionary?) -> Bool](cgpsconverter/convert(_:consumer:options:).md)
+### Instance Methods
+- [func convert(CGDataProvider, consumer: CGDataConsumer, options: CFDictionary?) -> Bool](./convert%28_,consumer,options%29.md)
   Uses a PostScript converter to convert PostScript data to PDF data.
 
 

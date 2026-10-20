@@ -1,7 +1,8 @@
 # channelLabel
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the physical location of this channel.
 
@@ -19,13 +20,18 @@ A description of the physical location of this channel.
 var channelLabel: AudioChannelLabel { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AudioChannelLabel channelLabel;
+```
+
 ## See Also
 
-- [var channelName: String](avaudiosessionchanneldescription/channelname.md)
+### Getting the channel information
+- [var channelName: String](./channelname.md)
   The descriptive name for the channel.
-- [var channelNumber: Int](avaudiosessionchanneldescription/channelnumber.md)
+- [var channelNumber: Int](./channelnumber.md)
   The index of this channel in its owning port’s array of channels.
-- [var owningPortUID: String](avaudiosessionchanneldescription/owningportuid.md)
+- [var owningPortUID: String](./owningportuid.md)
   The unique identifier (UID) for this channel’s owning port.
 
 

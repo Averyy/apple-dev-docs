@@ -1,7 +1,8 @@
 # ImmersiveCameraLensDefinition.STMapType.equirectangular
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents an equirectangular lens projection type.
 

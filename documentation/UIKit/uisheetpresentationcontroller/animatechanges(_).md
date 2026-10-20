@@ -1,7 +1,8 @@
 # animateChanges(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Animates the UI changes to the sheet’s properties.
 
@@ -15,6 +16,10 @@ Animates the UI changes to the sheet’s properties.
 
 ```swift
 func animateChanges(_ changes: () -> Void)
+```
+
+```objc
+- (void) animateChanges:(void (^)()) changes;
 ```
 
 #### Discussion

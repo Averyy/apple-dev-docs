@@ -1,7 +1,8 @@
 # kLSItemDisplayKind
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The localized kind string that describes the item’s type.
 
@@ -15,27 +16,32 @@ The localized kind string that describes the item’s type.
 let kLSItemDisplayKind: CFString!
 ```
 
+```c
+const CFStringRef kLSItemDisplayKind;
+```
+
 #### Discussion
 
-Use [`LSCopyKindStringForURL(_:_:)`](1447481-lscopykindstringforurl.md) or the URL resource property [`kCFURLLocalizedTypeDescriptionKey`](https://developer.apple.com/documentation/corefoundation/kcfurllocalizedtypedescriptionkey)/[`localizedTypeDescriptionKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/localizedtypedescriptionkey) instead.
+Use [`LSCopyKindStringForURL(_:_:)`](./api-1447481-lscopykindstringforurl.md) or the URL resource property [`kCFURLLocalizedTypeDescriptionKey`](../CoreFoundation/kcfurllocalizedtypedescriptionkey.md)/[`localizedTypeDescriptionKey`](../Foundation/urlresourcekey/localizedtypedescriptionkey.md) instead.
 
 ## See Also
 
-- [let kLSItemContentType: CFString!](klsitemcontenttype.md)
+### Deprecated Constants
+- [let kLSItemContentType: CFString!](./klsitemcontenttype.md)
   The item’s content type identifier, which is a uniform type identifier string.
-- [let kLSItemFileType: CFString!](klsitemfiletype.md)
+- [let kLSItemFileType: CFString!](./klsitemfiletype.md)
   The item’s file type.
-- [let kLSItemFileCreator: CFString!](klsitemfilecreator.md)
+- [let kLSItemFileCreator: CFString!](./klsitemfilecreator.md)
   The item’s file creator.
-- [let kLSItemExtension: CFString!](klsitemextension.md)
+- [let kLSItemExtension: CFString!](./klsitemextension.md)
   The item’s filename extension.
-- [let kLSItemDisplayName: CFString!](klsitemdisplayname.md)
+- [let kLSItemDisplayName: CFString!](./klsitemdisplayname.md)
   The item’s name to display to the user. The display name reflects localization and extension hiding that may be in effect.
-- [let kLSItemRoleHandlerDisplayName: CFString!](klsitemrolehandlerdisplayname.md)
+- [let kLSItemRoleHandlerDisplayName: CFString!](./klsitemrolehandlerdisplayname.md)
   The display name of the application that is set to handle this item, subject to the role mask.
-- [let kLSItemIsInvisible: CFString!](klsitemisinvisible.md)
+- [let kLSItemIsInvisible: CFString!](./klsitemisinvisible.md)
   A Boolean value that indicates the item is hidden from users.
-- [let kLSItemExtensionIsHidden: CFString!](klsitemextensionishidden.md)
+- [let kLSItemExtensionIsHidden: CFString!](./klsitemextensionishidden.md)
   A Boolean value that indicates the item’s extension is hidden.
 
 

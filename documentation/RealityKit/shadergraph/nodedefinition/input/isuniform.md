@@ -1,7 +1,8 @@
 # isUniform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the value is uniform and must be set at compile-time
 

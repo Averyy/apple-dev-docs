@@ -1,7 +1,8 @@
 # CNGroupIdentifierKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifier of the group.
 
@@ -19,17 +20,22 @@ The identifier of the group.
 let CNGroupIdentifierKey: String
 ```
 
+```c
+extern NSString * const CNGroupIdentifierKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNGroupNameKey: String](cngroupnamekey.md)
+### Groups and Containers
+- [let CNGroupNameKey: String](./cngroupnamekey.md)
   The name of the group.
-- [let CNContainerNameKey: String](cncontainernamekey.md)
+- [let CNContainerNameKey: String](./cncontainernamekey.md)
   The name of the container.
-- [let CNContainerTypeKey: String](cncontainertypekey.md)
+- [let CNContainerTypeKey: String](./cncontainertypekey.md)
   The type of the container.
 
 

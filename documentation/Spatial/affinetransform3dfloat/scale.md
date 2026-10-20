@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var scale: Size3DFloat { get }
+```
+
+```c
+static SPSize3DFloat SPAffineTransform3DFloatGetScale(SPAffineTransform3DFloat transform);
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the request to detect contours.
 
@@ -19,9 +20,14 @@ The results of the request to detect contours.
 var results: [VNContoursObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNContoursObservation *> * results;
+```
+
 ## See Also
 
-- [class VNContoursObservation](vncontoursobservation.md)
+### Accessing the Results
+- [class VNContoursObservation](../vncontoursobservation.md)
   An object that represents the detected contours in an image.
 
 

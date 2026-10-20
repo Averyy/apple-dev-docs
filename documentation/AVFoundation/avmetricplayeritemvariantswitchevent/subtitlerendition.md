@@ -1,7 +1,8 @@
 # subtitleRendition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents the currently selected audio rendition’s identifiers.
 
@@ -20,19 +21,24 @@ Represents the currently selected audio rendition’s identifiers.
 var subtitleRendition: AVMetricMediaRendition { get }
 ```
 
+```objc
+@property (readonly) AVMetricMediaRendition * subtitleRendition;
+```
+
 #### Discussion
 
 Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
 
 ## See Also
 
-- [var didSucceed: Bool](avmetricplayeritemvariantswitchevent/didsucceed.md)
-- [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchevent/fromvariant.md)
-- [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchevent/loadedtimeranges-5lkmg.md)
-- [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchevent/tovariant.md)
-- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/audiorendition.md)
+### Inspecting the event
+- [var didSucceed: Bool](./didsucceed.md)
+- [var fromVariant: AVAssetVariant?](./fromvariant.md)
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-5lkmg.md)
+- [var toVariant: AVAssetVariant](./tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
   Represents the currently selected video rendition’s identifiers.
-- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchevent/videorendition.md)
+- [var videoRendition: AVMetricMediaRendition](./videorendition.md)
   Represents the currently selected video rendition’s identifiers.
 
 

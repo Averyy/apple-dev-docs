@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that tracks the progress of the file transfer.
 
@@ -18,11 +19,16 @@ An object that tracks the progress of the file transfer.
 var progress: Progress { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSProgress * progress;
+```
+
 ## See Also
 
-- [var isTransferring: Bool](wcsessionfiletransfer/istransferring.md)
+### Managing the File Transfer
+- [var isTransferring: Bool](./istransferring.md)
   A Boolean value indicating whether the file is still being transferred.
-- [func cancel()](wcsessionfiletransfer/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the file transfer.
 
 

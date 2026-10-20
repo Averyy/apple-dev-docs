@@ -1,7 +1,8 @@
 # andDisplayErrors
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that launch and open failures be displayed in the UI.
 

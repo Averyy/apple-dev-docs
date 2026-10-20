@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object specified to receive peripheral events.
 
@@ -20,19 +21,24 @@ The delegate object specified to receive peripheral events.
 weak var delegate: (any CBPeripheralManagerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CBPeripheralManagerDelegate> delegate;
+```
+
 #### Discussion
 
-For information about how to implement your peripheral manager delegate, see [`CBPeripheralManagerDelegate`](cbperipheralmanagerdelegate.md).
+For information about how to implement your peripheral manager delegate, see [`CBPeripheralManagerDelegate`](../cbperipheralmanagerdelegate.md).
 
 ## See Also
 
-- [convenience init()](cbperipheralmanager/init.md)
+### Initializing a Peripheral Manager
+- [convenience init()](./init%28%29.md)
   Initializes the peripheral manager without a delegate.
-- [convenience init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?)](cbperipheralmanager/init(delegate:queue:).md)
+- [convenience init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?)](./init%28delegate,queue%29.md)
   Initializes the peripheral manager with a specified delegate and dispatch queue.
-- [init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](cbperipheralmanager/init(delegate:queue:options:).md)
+- [init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](./init%28delegate,queue,options%29.md)
   Initializes the peripheral manager with a specified delegate, dispatch queue, and initialization options.
-- [Peripheral Manager Initialization Options](peripheral-manager-initialization-options.md)
+- [Peripheral Manager Initialization Options](../peripheral-manager-initialization-options.md)
   Keys used to specify options when creating a peripheral manager.
 
 

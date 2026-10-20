@@ -226,9 +226,8 @@
       "hash": "0995ecf24840a1e2ecbce0904e6ec186c7fad726b5cf1c093bc276af58e041d5"
     },
     "https://developer.apple.com/documentation/xcode/autosizing_views_for_localization_in_ios": {
-      "etag": "W/\"c70913aecee8f23eee547a268a946373\"",
       "file_path": "documentation/Xcode/autosizing_views_for_localization_in_ios.md",
-      "hash": "48a454c8c92ac4934d71ff75a4cd9deeeda23d9f0660c6bea3071c52d267bcb5"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/xcode/build-settings-reference": {
       "etag": "\"8407a-65d55ad851225-df\"",
@@ -506,9 +505,8 @@
       "hash": "f1d980beb84e0e2b2245d78fe9114132907ee263499437bd4378f5be91c56016"
     },
     "https://developer.apple.com/documentation/xcode/configuring_your_app_to_use_alternate_app_icons": {
-      "etag": "W/\"83739bccf1485f19edeb280c5a2779a0\"",
       "file_path": "documentation/Xcode/configuring_your_app_to_use_alternate_app_icons.md",
-      "hash": "db4a6ee4756c72c9aac82be058d2a65affe262573a17b66c2373c42f4d7c5473"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/xcode/conforming-to-mach-ipc-security-restrictions": {
       "etag": "\"37ef-6590231d8b898-df\"",
@@ -1116,9 +1114,8 @@
       "hash": "3dc52c788745a8e206c07f73c32eb410641cafb1bee4e76c3fd5f7770a998d3a"
     },
     "https://developer.apple.com/documentation/xcode/localization-friendly_layouts_in_macos": {
-      "etag": "W/\"f8a39853122309307c455384551155c2\"",
       "file_path": "documentation/Xcode/localization-friendly_layouts_in_macos.md",
-      "hash": "342424c2ba69fc0754d40ffe2750fcff602562242654079f7f37f8739b5a9318"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog": {
       "etag": "\"69a2-65d55ad88ce16-df\"",
@@ -1591,9 +1588,8 @@
       "hash": "792fb9bef92c610ad3310bf6d82c7081e564a7d5a859a67712b1ff813ee16a2a"
     },
     "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode": {
-      "etag": "W/\"3d5d69e3f89ff00133ad62edd0fde63f\"",
       "file_path": "documentation/Xcode/slothcreator_building_docc_documentation_in_xcode.md",
-      "hash": "40cbbaca806704fef6977bcad84ab29fb32d79e61ed6c6d982b311e8a4afc3dc"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/xcode/source-code-management-setup": {
       "etag": "\"23b8-6590231d0fdd0-df\"",
@@ -2081,9 +2077,8 @@
       "hash": "0995ecf24840a1e2ecbce0904e6ec186c7fad726b5cf1c093bc276af58e041d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/autosizing_views_for_localization_in_ios.json": {
-      "etag": "W/\"c70913aecee8f23eee547a268a946373\"",
       "file_path": "documentation/Xcode/autosizing_views_for_localization_in_ios.md",
-      "hash": "48a454c8c92ac4934d71ff75a4cd9deeeda23d9f0660c6bea3071c52d267bcb5"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/build-settings-reference.json": {
       "etag": "\"8407a-65d55ad851225-df\"",
@@ -2361,9 +2356,8 @@
       "hash": "f1d980beb84e0e2b2245d78fe9114132907ee263499437bd4378f5be91c56016"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/configuring_your_app_to_use_alternate_app_icons.json": {
-      "etag": "W/\"83739bccf1485f19edeb280c5a2779a0\"",
       "file_path": "documentation/Xcode/configuring_your_app_to_use_alternate_app_icons.md",
-      "hash": "db4a6ee4756c72c9aac82be058d2a65affe262573a17b66c2373c42f4d7c5473"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/conforming-to-mach-ipc-security-restrictions.json": {
       "etag": "\"37ef-6590231d8b898-df\"",
@@ -2966,9 +2960,8 @@
       "hash": "3dc52c788745a8e206c07f73c32eb410641cafb1bee4e76c3fd5f7770a998d3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/localization-friendly_layouts_in_macos.json": {
-      "etag": "W/\"f8a39853122309307c455384551155c2\"",
       "file_path": "documentation/Xcode/localization-friendly_layouts_in_macos.md",
-      "hash": "342424c2ba69fc0754d40ffe2750fcff602562242654079f7f37f8739b5a9318"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/localization.json": {
       "etag": "\"5e9f-6590231c99d3b-df\"",
@@ -3446,9 +3439,8 @@
       "hash": "792fb9bef92c610ad3310bf6d82c7081e564a7d5a859a67712b1ff813ee16a2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/slothcreator_building_docc_documentation_in_xcode.json": {
-      "etag": "W/\"3d5d69e3f89ff00133ad62edd0fde63f\"",
       "file_path": "documentation/Xcode/slothcreator_building_docc_documentation_in_xcode.md",
-      "hash": "40cbbaca806704fef6977bcad84ab29fb32d79e61ed6c6d982b311e8a4afc3dc"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/source-code-management-setup.json": {
       "etag": "\"23b8-6590231d0fdd0-df\"",
@@ -3712,6 +3704,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 742
   }
 }

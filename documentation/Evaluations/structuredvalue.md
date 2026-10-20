@@ -1,7 +1,8 @@
 # StructuredValue
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type-safe representation of JSON values.
 
@@ -33,48 +34,49 @@ This type is not `@Generable` due to its recursive array or dictionary structure
 ## Topics
 
 ### Primitive values
-- [StructuredValue.string(_:)](structuredvalue/string(_:).md)
+- [StructuredValue.string(_:)](./structuredvalue/string%28_%29.md)
   A string value.
-- [StructuredValue.int(_:)](structuredvalue/int(_:).md)
+- [StructuredValue.int(_:)](./structuredvalue/int%28_%29.md)
   An integer value.
-- [StructuredValue.double(_:)](structuredvalue/double(_:).md)
+- [StructuredValue.double(_:)](./structuredvalue/double%28_%29.md)
   A double-precision floating-point value.
-- [StructuredValue.bool(_:)](structuredvalue/bool(_:).md)
+- [StructuredValue.bool(_:)](./structuredvalue/bool%28_%29.md)
   A Boolean value.
-- [StructuredValue.null](structuredvalue/null.md)
+- [StructuredValue.null](./structuredvalue/null.md)
   A null value.
 ### Collection values
-- [case array([StructuredValue])](structuredvalue/array(_:).md)
+- [case array([StructuredValue])](./structuredvalue/array%28_%29.md)
   An array of `StructuredValue` instances.
-- [case dictionary([String : StructuredValue])](structuredvalue/dictionary(_:).md)
+- [case dictionary([String : StructuredValue])](./structuredvalue/dictionary%28_%29.md)
   A dictionary with string keys and `StructuredValue` instances as values.
 ### Accessing the underlying value
-- [var value: Any](structuredvalue/value.md)
+- [var value: Any](./structuredvalue/value.md)
   The underlying value.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [ExpressibleByBooleanLiteral](../swift/expressiblebybooleanliteral.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [ExpressibleByBooleanLiteral](../Swift/expressiblebybooleanliteral.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ArgumentValue](argumentvalue.md)
+### Supporting types
+- [enum ArgumentValue](./argumentvalue.md)
   A primitive, generable value type for argument specifications.
 
 

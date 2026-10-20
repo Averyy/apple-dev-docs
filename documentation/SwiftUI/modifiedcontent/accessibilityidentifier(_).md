@@ -1,7 +1,8 @@
 # accessibilityIdentifier(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses the string you specify to identify the view.
 
@@ -20,6 +21,8 @@ Uses the string you specify to identify the view.
 nonisolated
 func accessibilityIdentifier(_ identifier: String) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 #### Discussion
 

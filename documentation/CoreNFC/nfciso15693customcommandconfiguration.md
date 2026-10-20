@@ -1,7 +1,8 @@
 # NFCISO15693CustomCommandConfiguration
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -14,6 +15,10 @@
 class NFCISO15693CustomCommandConfiguration
 ```
 
+```objc
+@interface NFCISO15693CustomCommandConfiguration : NFCTagCommandConfiguration
+```
+
 #### Overview
 
 Configuration options for the Manufacturer Custom command.
@@ -21,25 +26,25 @@ Configuration options for the Manufacturer Custom command.
 ## Topics
 
 ### Initializers
-- [init(manufacturerCode: Int, customCommandCode: Int, requestParameters: Data?)](nfciso15693customcommandconfiguration/init(manufacturercode:customcommandcode:requestparameters:).md)
-- [init(manufacturerCode: Int, customCommandCode: Int, requestParameters: Data?, maximumRetries: Int, retryInterval: TimeInterval)](nfciso15693customcommandconfiguration/init(manufacturercode:customcommandcode:requestparameters:maximumretries:retryinterval:).md)
+- [init(manufacturerCode: Int, customCommandCode: Int, requestParameters: Data?)](./nfciso15693customcommandconfiguration/init%28manufacturercode,customcommandcode,requestparameters%29.md)
+- [init(manufacturerCode: Int, customCommandCode: Int, requestParameters: Data?, maximumRetries: Int, retryInterval: TimeInterval)](./nfciso15693customcommandconfiguration/init%28manufacturercode,customcommandcode,requestparameters,maximumretries,retryinterval%29.md)
 ### Instance Properties
-- [var customCommandCode: Int](nfciso15693customcommandconfiguration/customcommandcode.md)
-- [var manufacturerCode: Int](nfciso15693customcommandconfiguration/manufacturercode.md)
-- [var requestParameters: Data](nfciso15693customcommandconfiguration/requestparameters.md)
+- [var customCommandCode: Int](./nfciso15693customcommandconfiguration/customcommandcode.md)
+- [var manufacturerCode: Int](./nfciso15693customcommandconfiguration/manufacturercode.md)
+- [var requestParameters: Data](./nfciso15693customcommandconfiguration/requestparameters.md)
 
 ## Relationships
 
 ### Inherits From
-- [NFCTagCommandConfiguration](nfctagcommandconfiguration.md)
+- [NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

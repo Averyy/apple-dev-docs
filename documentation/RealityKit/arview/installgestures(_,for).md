@@ -1,7 +1,8 @@
 # installGestures(_:for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Installs standard gestures onto the given entity, configured to be recognized simultaneously.
 
@@ -28,7 +29,8 @@ The set of gesture recognizers created to handle the requested gestures.
 
 ## See Also
 
-- [func gestureRecognizer(UIGestureRecognizer, shouldRecognizeSimultaneouslyWith: UIGestureRecognizer) -> Bool](arview/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md)
+### Adding gesture recognizers to entities
+- [func gestureRecognizer(UIGestureRecognizer, shouldRecognizeSimultaneouslyWith: UIGestureRecognizer) -> Bool](./gesturerecognizer%28_,shouldrecognizesimultaneouslywith%29.md)
 
 
 ---

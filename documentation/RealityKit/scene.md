@@ -1,7 +1,8 @@
 # Scene
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container that holds the collection of entities that an AR view renders.
 
@@ -11,7 +12,7 @@ A container that holds the collection of entities that an AR view renders.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,86 +23,87 @@ A container that holds the collection of entities that an AR view renders.
 
 #### Overview
 
-You don’t create a [`Scene`](scene.md) instance directly. Instead, you get the one and only scene associated with a view from the [`scene`](arview/scene.md) property of an [`ARView`](arview.md) instance.
+You don’t create a [`Scene`](./scene.md) instance directly. Instead, you get the one and only scene associated with a view from the [`scene`](./arview/scene.md) property of an [`ARView`](./arview.md) instance.
 
-![Block diagram showing the scene as a property of an AR view, with anchor](/images/com.apple.RealityKit/Scene-1@2x.png)
+![Block diagram showing the scene as a property of an AR view, with anchor](https://developer.apple.com/tutorials/images/com.apple.RealityKit/Scene-1@2x.png)
 
-To add content to the view’s scene, you first create and add one or more [`AnchorEntity`](anchorentity.md) instances to the scene’s [`anchors`](scene/anchors.md) collection. Anchors tell RealityKit how to pin virtual content to real world objects, like flat surfaces or images. You then add a hierarchy of other [`Entity`](entity.md) instances to each anchor to indicate the geometry and behaviors that RealityKit should render at a given anchor point.
+To add content to the view’s scene, you first create and add one or more [`AnchorEntity`](./anchorentity.md) instances to the scene’s [`anchors`](./scene/anchors.md) collection. Anchors tell RealityKit how to pin virtual content to real world objects, like flat surfaces or images. You then add a hierarchy of other [`Entity`](./entity.md) instances to each anchor to indicate the geometry and behaviors that RealityKit should render at a given anchor point.
 
 ## Topics
 
 ### Identifying the scene
-- [var name: String](scene/name.md)
+- [var name: String](./scene/name.md)
   A name for the scene.
 ### Adding and removing anchors
-- [var anchors: Scene.AnchorCollection](scene/anchors.md)
+- [var anchors: Scene.AnchorCollection](./scene/anchors.md)
   The collection of anchors contained in the scene.
-- [func addAnchor(any HasAnchoring)](scene/addanchor(_:).md)
+- [func addAnchor(any HasAnchoring)](./scene/addanchor%28_%29.md)
   Adds an anchor to the scene’s list of anchors.
-- [func removeAnchor(any HasAnchoring)](scene/removeanchor(_:).md)
+- [func removeAnchor(any HasAnchoring)](./scene/removeanchor%28_%29.md)
   Removes the specified anchor from the scene.
 ### Finding entities
-- [func findEntity(named: String) -> Entity?](scene/findentity(named:).md)
+- [func findEntity(named: String) -> Entity?](./scene/findentity%28named%29.md)
   Searches the scene’s anchor entity hierarchies for an entity with the given name.
-- [func performQuery(EntityQuery) -> QueryResult<Entity>](scene/performquery(_:).md)
+- [func performQuery(EntityQuery) -> QueryResult<Entity>](./scene/performquery%28_%29.md)
   Returns all entities of the scene which pass the query.
-- [func findEntity(id: Entity.ID) -> Entity?](scene/findentity(id:).md)
+- [func findEntity(id: Entity.ID) -> Entity?](./scene/findentity%28id%29.md)
   Returns `Entity` with the given `Entity.ID` in the `Scene`.
 ### Detecting intersections
-- [func raycast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/raycast(origin:direction:length:query:mask:relativeto:).md)
+- [func raycast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](./scene/raycast%28origin,direction,length,query,mask,relativeto%29.md)
   Performs a ray cast against all the geometry in the scene for a ray of a given origin, direction, and length.
-- [func raycast(from: SIMD3<Float>, to: SIMD3<Float>, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/raycast(from:to:query:mask:relativeto:).md)
+- [func raycast(from: SIMD3<Float>, to: SIMD3<Float>, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](./scene/raycast%28from,to,query,mask,relativeto%29.md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
-- [func convexCast(convexShape: ShapeResource, fromPosition: SIMD3<Float>, fromOrientation: simd_quatf, toPosition: SIMD3<Float>, toOrientation: simd_quatf, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/convexcast(convexshape:fromposition:fromorientation:toposition:toorientation:query:mask:relativeto:).md)
+- [func convexCast(convexShape: ShapeResource, fromPosition: SIMD3<Float>, fromOrientation: simd_quatf, toPosition: SIMD3<Float>, toOrientation: simd_quatf, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](./scene/convexcast%28convexshape,fromposition,fromorientation,toposition,toorientation,query,mask,relativeto%29.md)
   Performs a convex shape cast against all the geometry in the scene.
-- [func pixelCast(from: SIMD3<Float>, to: SIMD3<Float>) async throws -> PixelCastHit?](scene/pixelcast(from:to:).md)
+- [func pixelCast(from: SIMD3<Float>, to: SIMD3<Float>) async throws -> PixelCastHit?](./scene/pixelcast%28from,to%29.md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
-- [func pixelCast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float) async throws -> PixelCastHit?](scene/pixelcast(origin:direction:length:).md)
+- [func pixelCast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float) async throws -> PixelCastHit?](./scene/pixelcast%28origin,direction,length%29.md)
   Performs a ray cast against all the geometry in the scene for a ray of a given origin, direction, and length.
 ### Synchronizing entities with other devices
-- [var synchronizationService: (any SynchronizationService)?](scene/synchronizationservice.md)
+- [var synchronizationService: (any SynchronizationService)?](./scene/synchronizationservice.md)
   The service to use for network synchronization.
 ### Publishing and subscribing to events
-- [func publisher<E>(for: E.Type, on: (any EventSource)?) -> Scene.Publisher<E>](scene/publisher(for:on:).md)
+- [func publisher<E>(for: E.Type, on: (any EventSource)?) -> Scene.Publisher<E>](./scene/publisher%28for,on%29.md)
   Generates a publisher for events of the specified type.
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:_:).md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> any Cancellable](./scene/subscribe%28to,on,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene.
-- [func publisher<E>(for: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?) -> Scene.Publisher<E>](scene/publisher(for:on:componenttype:).md)
+- [func publisher<E>(for: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?) -> Scene.Publisher<E>](./scene/publisher%28for,on,componenttype%29.md)
   Returns a `Publisher` for events of the specified type in a `Scene`.
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:componenttype:_:).md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> any Cancellable](./scene/subscribe%28to,on,componenttype,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or limited to a specific component type for component events.
 ### Accessing the command queue
-- [var commandQueue: (any MTLCommandQueue)?](scene/commandqueue.md)
+- [var commandQueue: (any MTLCommandQueue)?](./scene/commandqueue.md)
   If this scene uses a MTLCommandQueue for rendering, returns it.
 ### Structures
-- [struct AnchorCollection](scene/anchorcollection.md)
+- [struct AnchorCollection](./scene/anchorcollection.md)
   A collection of anchor entities.
-- [struct Publisher](scene/publisher.md)
+- [struct Publisher](./scene/publisher.md)
   A publisher for the given event type in the scene.
 ### Instance Properties
-- [var timebase: CMTimebase](scene/timebase.md)
+- [var timebase: CMTimebase](./scene/timebase.md)
   The default timebase for the scene, useful for driving custom times managed by the user which are derived from the scene time.
 ### Default Implementations
-- [Equatable Implementations](scene/equatable-implementations.md)
-- [Hashable Implementations](scene/hashable-implementations.md)
+- [Equatable Implementations](./scene/equatable-implementations.md)
+- [Hashable Implementations](./scene/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
-- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [EventSource](eventsource.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CoordinateSpace3D](../Spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../Spatial/coordinatespace3dfloat.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [EventSource](./eventsource.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnchorCollection](scene/anchorcollection.md)
+### Scene management
+- [struct AnchorCollection](./scene/anchorcollection.md)
   A collection of anchor entities.
 
 

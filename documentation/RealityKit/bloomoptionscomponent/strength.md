@@ -1,7 +1,8 @@
 # strength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of the bloom effect.
 
@@ -30,9 +31,10 @@ Higher values create a more pronounced glow effect. The values can be be in the 
 
 ## See Also
 
-- [var threshold: Float](bloomoptionscomponent/threshold.md)
+### Configuring the bloom effect
+- [var threshold: Float](./threshold.md)
   The brightness threshold for bloom activation.
-- [var blurRadius: Float](bloomoptionscomponent/blurradius.md)
+- [var blurRadius: Float](./blurradius.md)
   The width of the bloom blur kernel as a percentage of viewport height
 
 

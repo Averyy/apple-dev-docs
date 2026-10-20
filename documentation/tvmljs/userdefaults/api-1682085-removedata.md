@@ -1,7 +1,8 @@
 # removeData
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Removes the data associated with a particular key.
 
@@ -10,7 +11,7 @@ Removes the data associated with a particular key.
 
 ## Declaration
 
-```swift
+```
 void removeData(
     in String key
 );
@@ -22,9 +23,10 @@ void removeData(
 
 ## See Also
 
-- [getData](userdefaults/1682084-getdata.md)
+### Modifying User Defaults
+- [getData](./api-1682084-getdata.md)
   Returns the data associated with a particular key.
-- [setData](userdefaults/1682089-setdata.md)
+- [setData](./api-1682089-setdata.md)
   Stores the data for a given key.
 
 

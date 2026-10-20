@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size and alignment requirements to contain the coordinate transformation information in this rate map.
@@ -20,19 +21,24 @@ The size and alignment requirements to contain the coordinate transformation inf
 var parameterDataSizeAndAlign: MTLSizeAndAlign { get }
 ```
 
+```objc
+@property (readonly) MTLSizeAndAlign parameterBufferSizeAndAlign;
+```
+
 ## Mentions
 
-- [Scaling variable rasterization rate content](scaling-variable-rasterization-rate-content.md)
+- [Scaling variable rasterization rate content](../scaling-variable-rasterization-rate-content.md)
 
 #### Discussion
 
-To convert coordinate values inside your shader, pass the rate map data into the shader in an [`MTLBuffer`](mtlbuffer.md) instance. The buffer location where you store the parameter information needs at least the size and alignment this property provides.
+To convert coordinate values inside your shader, pass the rate map data into the shader in an [`MTLBuffer`](../mtlbuffer.md) instance. The buffer location where you store the parameter information needs at least the size and alignment this property provides.
 
-You can convert between screen space and physical fragment space by binding the buffer to the shader with type `rasterization_rate_map_data`, then constructing `rasterization_rate_map_decoder` with the buffer data. For more details, see the “Variable Rasterization Rate” section of the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+You can convert between screen space and physical fragment space by binding the buffer to the shader with type `rasterization_rate_map_data`, then constructing `rasterization_rate_map_decoder` with the buffer data. For more details, see the “Variable Rasterization Rate” section of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 
-- [func copyParameterData(buffer: any MTLBuffer, offset: Int)](mtlrasterizationratemap/copyparameterdata(buffer:offset:).md)
+### Obtaining coordinate transformation data
+- [func copyParameterData(buffer: any MTLBuffer, offset: Int)](./copyparameterdata%28buffer,offset%29.md)
   Copies the parameter data into the provided buffer.
 
 

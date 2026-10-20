@@ -1,7 +1,8 @@
 # MediaDeviceExtensionConfiguration
 
 **Framework**: Media Device  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Configuration for the app extension.
 
@@ -19,17 +20,18 @@ protocol MediaDeviceExtensionConfiguration : AppExtensionConfiguration
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+### Essentials
+- [Creating a media device extension](./creating-a-media-device-extension.md)
   Provide a way for people to find, connect to, and control your media device by adding a device extension in your iOS app.
-- [Routing media to third-party devices](../avsystemrouting/routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](../AVSystemRouting/routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
-- [protocol MediaDeviceExtension](mediadeviceextension.md)
+- [protocol MediaDeviceExtension](./mediadeviceextension.md)
   A protocol that defines the requirements of a media device extension that discovers, activates, and plays media on a remote device.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_export_net_args {
     ...
 };
@@ -17,11 +17,11 @@ struct nfs_export_net_args {
 ## Topics
 
 ### Instance Properties
-- [nxna_addr](nfs_export_net_args/3944810-nxna_addr.md)
-- [nxna_cred](nfs_export_net_args/3944811-nxna_cred.md)
-- [nxna_flags](nfs_export_net_args/3944812-nxna_flags.md)
-- [nxna_mask](nfs_export_net_args/3944813-nxna_mask.md)
-- [nxna_sec](nfs_export_net_args/3944814-nxna_sec.md)
+- [nxna_addr](./nfs_export_net_args/api-3944810-nxna_addr.md)
+- [nxna_cred](./nfs_export_net_args/api-3944811-nxna_cred.md)
+- [nxna_flags](./nfs_export_net_args/api-3944812-nxna_flags.md)
+- [nxna_mask](./nfs_export_net_args/api-3944813-nxna_mask.md)
+- [nxna_sec](./nfs_export_net_args/api-3944814-nxna_sec.md)
 
 
 ---

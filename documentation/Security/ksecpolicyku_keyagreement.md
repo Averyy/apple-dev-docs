@@ -1,7 +1,8 @@
 # kSecPolicyKU_KeyAgreement
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used for key agreement.
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used for key agreemen
 
 ```swift
 let kSecPolicyKU_KeyAgreement: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_KeyAgreement;
 ```
 
 

@@ -1,7 +1,8 @@
 # MusicCatalogChart
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains popular items in the Apple Music catalog.
 
@@ -23,29 +24,29 @@ struct MusicCatalogChart<MusicItemType> where MusicItemType : MusicCatalogChartR
 ## Topics
 
 ### Instance Properties
-- [let id: String](musiccatalogchart/id.md)
+- [let id: String](./musiccatalogchart/id.md)
   The unique identifier for the catalog chart.
-- [let items: MusicItemCollection<MusicItemType>](musiccatalogchart/items.md)
+- [let items: MusicItemCollection<MusicItemType>](./musiccatalogchart/items.md)
   The items for the catalog chart.
-- [let kind: MusicCatalogChartKind](musiccatalogchart/kind.md)
+- [let kind: MusicCatalogChartKind](./musiccatalogchart/kind.md)
   The kind of catalog chart.
-- [let title: String](musiccatalogchart/title.md)
+- [let title: String](./musiccatalogchart/title.md)
   The title for the catalog chart.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

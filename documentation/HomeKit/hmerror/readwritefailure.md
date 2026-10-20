@@ -1,7 +1,8 @@
 # readWriteFailure
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating a failed read/write operation.
 
@@ -21,7 +22,8 @@ static var readWriteFailure: HMError.Code { get }
 
 ## See Also
 
-- [static var readWritePartialSuccess: HMError.Code](hmerror/readwritepartialsuccess.md)
+### Detecting read and write errors
+- [static var readWritePartialSuccess: HMError.Code](./readwritepartialsuccess.md)
   An error indicating a partially successful read/write operation.
 
 

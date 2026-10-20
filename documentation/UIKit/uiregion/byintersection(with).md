@@ -1,7 +1,8 @@
 # byIntersection(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new region containing only the area occupied by both the specified region and current region.
 
@@ -18,6 +19,10 @@ Returns a new region containing only the area occupied by both the specified reg
 func byIntersection(with region: UIRegion) -> Self
 ```
 
+```objc
+- (instancetype) regionByIntersectionWithRegion:(UIRegion *) region;
+```
+
 #### Return Value
 
 A new region that contains only the points that are in both the current region and the shape specified by the `region` parameter.
@@ -28,11 +33,12 @@ A new region that contains only the points that are in both the current region a
 
 ## See Also
 
-- [func inverse() -> Self](uiregion/inverse.md)
+### Creating complex regions
+- [func inverse() -> Self](./inverse%28%29.md)
   Returns a new region that’s the mathematical inverse of the current region.
-- [func byDifference(from: UIRegion) -> Self](uiregion/bydifference(from:).md)
+- [func byDifference(from: UIRegion) -> Self](./bydifference%28from%29.md)
   Returns a new region created by subtracting the specified region from the current region.
-- [func byUnion(with: UIRegion) -> Self](uiregion/byunion(with:).md)
+- [func byUnion(with: UIRegion) -> Self](./byunion%28with%29.md)
   Returns a new region containing the combined areas of the specified region and the current region.
 
 

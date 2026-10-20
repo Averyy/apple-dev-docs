@@ -1,7 +1,8 @@
 # kJSTypeNull
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unique null value.
 
@@ -19,19 +20,24 @@ The unique null value.
 var kJSTypeNull: JSType { get }
 ```
 
+```c
+kJSTypeNull
+```
+
 ## See Also
 
-- [var kJSTypeUndefined: JSType](kjstypeundefined.md)
+### Constants
+- [var kJSTypeUndefined: JSType](./kjstypeundefined.md)
   The unique undefined value.
-- [var kJSTypeBoolean: JSType](kjstypeboolean.md)
+- [var kJSTypeBoolean: JSType](./kjstypeboolean.md)
   A primitive Boolean value.
-- [var kJSTypeNumber: JSType](kjstypenumber.md)
+- [var kJSTypeNumber: JSType](./kjstypenumber.md)
   A primitive number value.
-- [var kJSTypeString: JSType](kjstypestring.md)
+- [var kJSTypeString: JSType](./kjstypestring.md)
   A primitive string value.
-- [var kJSTypeObject: JSType](kjstypeobject.md)
+- [var kJSTypeObject: JSType](./kjstypeobject.md)
   An object value.
-- [var kJSTypeSymbol: JSType](kjstypesymbol.md)
+- [var kJSTypeSymbol: JSType](./kjstypesymbol.md)
   A primitive symbol value.
 
 

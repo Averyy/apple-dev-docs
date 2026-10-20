@@ -1,12 +1,13 @@
 # suppressesIncrementalRendering
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether incremental rendering should be suppressed.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean that indicates whether incremental rendering should be suppressed.
 var suppressesIncrementalRendering: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL suppressesIncrementalRendering;
+```
+
 #### Discussion
 
-Pass [`true`](https://developer.apple.com/documentation/swift/true) to suppress incremental rendering, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+Pass [`true`](../../Swift/true.md) to suppress incremental rendering, or [`false`](../../Swift/false.md) otherwise.
 
 
 ---

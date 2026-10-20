@@ -1,7 +1,8 @@
 # antialiasing
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables or disables an antialiasing effect which smooths the edges of virtual content.
 

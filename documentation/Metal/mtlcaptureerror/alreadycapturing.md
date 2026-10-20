@@ -1,7 +1,8 @@
 # MTLCaptureError.alreadyCapturing
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A capture error that indicates the session is already in progress.
 
@@ -19,11 +20,16 @@ A capture error that indicates the session is already in progress.
 case alreadyCapturing
 ```
 
+```c
+MTLCaptureErrorAlreadyCapturing
+```
+
 ## See Also
 
-- [MTLCaptureError.invalidDescriptor](mtlcaptureerror/invaliddescriptor.md)
+### Errors
+- [MTLCaptureError.invalidDescriptor](./invaliddescriptor.md)
   A capture error that indicates your descriptor has invalid properties.
-- [MTLCaptureError.notSupported](mtlcaptureerror/notsupported.md)
+- [MTLCaptureError.notSupported](./notsupported.md)
   A capture error that indicates the capture options you’re requesting aren’t available.
 
 

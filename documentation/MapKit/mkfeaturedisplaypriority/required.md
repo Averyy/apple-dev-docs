@@ -1,7 +1,8 @@
 # required
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant indicating that the item is required.
 
@@ -19,15 +20,20 @@ A constant indicating that the item is required.
 static var required: MKFeatureDisplayPriority { get }
 ```
 
+```c
+static const MKFeatureDisplayPriority MKFeatureDisplayPriorityRequired;
+```
+
 #### Discussion
 
 An annotation view with this priority does not participate in clustering.
 
 ## See Also
 
-- [static var defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
+### Priorities
+- [static var defaultHigh: MKFeatureDisplayPriority](./defaulthigh.md)
   A constant indicating that the item’s display priority is high.
-- [static var defaultLow: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaultlow.md)
+- [static var defaultLow: MKFeatureDisplayPriority](./defaultlow.md)
   A constant indicating that the item’s display priority is low.
 
 

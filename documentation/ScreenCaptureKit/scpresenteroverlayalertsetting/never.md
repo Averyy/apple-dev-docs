@@ -1,7 +1,8 @@
 # SCPresenterOverlayAlertSetting.never
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Never display an alert when using Presenter Overlay.
 
@@ -15,11 +16,16 @@ Never display an alert when using Presenter Overlay.
 case never
 ```
 
+```c
+SCPresenterOverlayAlertSettingNever
+```
+
 ## See Also
 
-- [SCPresenterOverlayAlertSetting.always](scpresenteroverlayalertsetting/always.md)
+### Alerting Presenters
+- [SCPresenterOverlayAlertSetting.always](./always.md)
   Always display an alert when using Presenter Overlay.
-- [SCPresenterOverlayAlertSetting.system](scpresenteroverlayalertsetting/system.md)
+- [SCPresenterOverlayAlertSetting.system](./system.md)
   Displays an alert when using Presenter Overlay based on the System Settings.
 
 

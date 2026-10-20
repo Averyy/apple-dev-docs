@@ -1,7 +1,8 @@
 # main
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A stage that represents where the system performs the main functionality.
 
@@ -19,9 +20,14 @@ A stage that represents where the system performs the main functionality.
 static let main: VNComputeStage
 ```
 
+```c
+extern VNComputeStage const VNComputeStageMain;
+```
+
 ## See Also
 
-- [static let postProcessing: VNComputeStage](vncomputestage/postprocessing.md)
+### Get the Compute Stages
+- [static let postProcessing: VNComputeStage](./postprocessing.md)
   A stage that represents where the system performs additional analysis from the main compute stage.
 
 

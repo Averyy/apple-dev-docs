@@ -1,14 +1,15 @@
 # ml_page_protection_type
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 ml_page_protection_t ml_page_protection_type(void);
 ```
 

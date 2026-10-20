@@ -1,14 +1,15 @@
 # kUSB3TypeMicroBConnector
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kUSB3TypeMicroBConnector = 0x05
 ```
 

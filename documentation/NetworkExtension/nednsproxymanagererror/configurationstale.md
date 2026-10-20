@@ -1,7 +1,8 @@
 # NEDNSProxyManagerError.configurationStale
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Outdated DNS proxy configuration that needs to be loaded.
 
@@ -18,17 +19,22 @@ Outdated DNS proxy configuration that needs to be loaded.
 case configurationStale
 ```
 
+```c
+NEDNSProxyManagerErrorConfigurationStale
+```
+
 #### Discussion
 
-You must load the configuration with a call to [`loadFromPreferences(completionHandler:)`](nednsproxymanager/loadfrompreferences(completionhandler:).md) before you can save it.
+You must load the configuration with a call to [`loadFromPreferences(completionHandler:)`](../nednsproxymanager/loadfrompreferences%28completionhandler%29.md) before you can save it.
 
 ## See Also
 
-- [NEDNSProxyManagerError.configurationInvalid](nednsproxymanagererror/configurationinvalid.md)
+### Enumeration Cases
+- [NEDNSProxyManagerError.configurationInvalid](./configurationinvalid.md)
   Invalid DNS proxy configuration that cannot be stored.
-- [NEDNSProxyManagerError.configurationDisabled](nednsproxymanagererror/configurationdisabled.md)
+- [NEDNSProxyManagerError.configurationDisabled](./configurationdisabled.md)
   Disabled DNS proxy configuration.
-- [NEDNSProxyManagerError.configurationCannotBeRemoved](nednsproxymanagererror/configurationcannotberemoved.md)
+- [NEDNSProxyManagerError.configurationCannotBeRemoved](./configurationcannotberemoved.md)
   Unremovable DNS proxy configuration.
 
 

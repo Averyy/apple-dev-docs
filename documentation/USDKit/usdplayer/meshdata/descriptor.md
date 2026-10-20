@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Low-level mesh descriptor.
 

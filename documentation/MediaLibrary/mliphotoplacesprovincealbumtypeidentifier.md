@@ -1,13 +1,16 @@
 # MLiPhotoPlacesProvinceAlbumTypeIdentifier
 
 **Framework**: Media Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A media group that represents a Places album for a province or state in iPhoto. A province or state album is nested in a country or region album.
 
 **Availability**:
 - Mac Catalyst 13.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.15
+
+> **Deprecated**: MediaLibrary.framework will be removed in a future OS version. Use Photos.framework or iTunesLibrary.framework instead.
 
 ## Declaration
 
@@ -15,37 +18,42 @@ A media group that represents a Places album for a province or state in iPhoto. 
 let MLiPhotoPlacesProvinceAlbumTypeIdentifier: String
 ```
 
+```c
+extern NSString * const MLiPhotoPlacesProvinceAlbumTypeIdentifier;
+```
+
 ## See Also
 
-- [let MLiPhotoRootGroupTypeIdentifier: String](mliphotorootgrouptypeidentifier.md)
+### Constants
+- [let MLiPhotoRootGroupTypeIdentifier: String](./mliphotorootgrouptypeidentifier.md)
   The root media group for iPhoto.
-- [let MLiPhotoAlbumTypeIdentifier: String](mliphotoalbumtypeidentifier.md)
+- [let MLiPhotoAlbumTypeIdentifier: String](./mliphotoalbumtypeidentifier.md)
   A media group that represents an album in iPhoto.
-- [let MLiPhotoSmartAlbumTypeIdentifier: String](mliphotosmartalbumtypeidentifier.md)
+- [let MLiPhotoSmartAlbumTypeIdentifier: String](./mliphotosmartalbumtypeidentifier.md)
   A media group that represents a smart album in iPhoto.
-- [let MLiPhotoLibraryAlbumTypeIdentifier: String](mliphotolibraryalbumtypeidentifier.md)
+- [let MLiPhotoLibraryAlbumTypeIdentifier: String](./mliphotolibraryalbumtypeidentifier.md)
   The media group that represents the Photos album in iPhoto.
-- [let MLiPhotoFolderAlbumTypeIdentifier: String](mliphotofolderalbumtypeidentifier.md)
+- [let MLiPhotoFolderAlbumTypeIdentifier: String](./mliphotofolderalbumtypeidentifier.md)
   A media group that represents a folder in iPhoto.
-- [let MLiPhotoEventAlbumTypeIdentifier: String](mliphotoeventalbumtypeidentifier.md)
+- [let MLiPhotoEventAlbumTypeIdentifier: String](./mliphotoeventalbumtypeidentifier.md)
   A media group that represents an event in iPhoto.
-- [let MLiPhotoEventsFolderTypeIdentifier: String](mliphotoeventsfoldertypeidentifier.md)
+- [let MLiPhotoEventsFolderTypeIdentifier: String](./mliphotoeventsfoldertypeidentifier.md)
   The media group that represents the Events album in iPhoto.
-- [let MLiPhotoLastViewedEventAlbumTypeIdentifier: String](mliphotolastviewedeventalbumtypeidentifier.md)
+- [let MLiPhotoLastViewedEventAlbumTypeIdentifier: String](./mliphotolastviewedeventalbumtypeidentifier.md)
   The media group that represents the last viewed event in iPhoto.
-- [let MLiPhotoLastImportAlbumTypeIdentifier: String](mliphotolastimportalbumtypeidentifier.md)
+- [let MLiPhotoLastImportAlbumTypeIdentifier: String](./mliphotolastimportalbumtypeidentifier.md)
   The media group that represents the Last Import album in iPhoto.
-- [let MLiPhotoLastNMonthsAlbumTypeIdentifier: String](mliphotolastnmonthsalbumtypeidentifier.md)
+- [let MLiPhotoLastNMonthsAlbumTypeIdentifier: String](./mliphotolastnmonthsalbumtypeidentifier.md)
   The media group that represents the recent content album in iPhoto, known as the Last *N* Months album. The value for *N* is usually 12 (settable in iPhoto > Preferences > General).
-- [let MLiPhotoFlaggedAlbumTypeIdentifier: String](mliphotoflaggedalbumtypeidentifier.md)
+- [let MLiPhotoFlaggedAlbumTypeIdentifier: String](./mliphotoflaggedalbumtypeidentifier.md)
   The media group that represents the album of flagged media in iPhoto.
-- [let MLiPhotoSubscribedAlbumTypeIdentifier: String](mliphotosubscribedalbumtypeidentifier.md)
+- [let MLiPhotoSubscribedAlbumTypeIdentifier: String](./mliphotosubscribedalbumtypeidentifier.md)
   A media group that represents a subscribed album in iPhoto.
-- [let MLiPhotoSlideShowAlbumTypeIdentifier: String](mliphotoslideshowalbumtypeidentifier.md)
+- [let MLiPhotoSlideShowAlbumTypeIdentifier: String](./mliphotoslideshowalbumtypeidentifier.md)
   A media group that represents a slideshow album in iPhoto.
-- [let MLiPhotoPhotoStreamAlbumTypeIdentifier: String](mliphotophotostreamalbumtypeidentifier.md)
+- [let MLiPhotoPhotoStreamAlbumTypeIdentifier: String](./mliphotophotostreamalbumtypeidentifier.md)
   A media group that represents a photo stream in iPhoto.
-- [let MLiPhotoFacesAlbumTypeIdentifier: String](mliphotofacesalbumtypeidentifier.md)
+- [let MLiPhotoFacesAlbumTypeIdentifier: String](./mliphotofacesalbumtypeidentifier.md)
   A media group that represents a Faces album in iPhoto. Individual Faces albums are nested in the main Faces album.
 
 

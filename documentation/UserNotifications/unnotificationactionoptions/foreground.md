@@ -1,7 +1,8 @@
 # foreground
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The action causes the app to launch in the foreground.
 
@@ -19,15 +20,20 @@ The action causes the app to launch in the foreground.
 static var foreground: UNNotificationActionOptions { get }
 ```
 
+```c
+UNNotificationActionOptionForeground
+```
+
 #### Discussion
 
 When the user selects an action containing this option, the system brings the app to the foreground, asking the user to unlock the device as needed. Use this option for actions that require the user to interact further with your app. Do not use this option simply to bring your app to the foreground.
 
 ## See Also
 
-- [static var authenticationRequired: UNNotificationActionOptions](unnotificationactionoptions/authenticationrequired.md)
+### Constants
+- [static var authenticationRequired: UNNotificationActionOptions](./authenticationrequired.md)
   The action can be performed only on an unlocked device.
-- [static var destructive: UNNotificationActionOptions](unnotificationactionoptions/destructive.md)
+- [static var destructive: UNNotificationActionOptions](./destructive.md)
   The action performs a destructive task.
 
 

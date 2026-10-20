@@ -1,7 +1,8 @@
 # wantsSoftwareDimming
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the screen may be dimmed lower than the hardware is normally capable of by emulating it in software.
 
@@ -16,13 +17,18 @@ A Boolean value that indicates whether the screen may be dimmed lower than the h
 var wantsSoftwareDimming: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL wantsSoftwareDimming;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Enabling it may cause a loss in performance.
+The default value is [`false`](../../Swift/false.md). Enabling it may cause a loss in performance.
 
 ## See Also
 
-- [var brightness: CGFloat](uiscreen/brightness.md)
+### Managing brightness
+- [var brightness: CGFloat](./brightness.md)
   The brightness level of the screen.
 
 

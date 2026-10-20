@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range for the timed metadata.
 
@@ -20,9 +21,14 @@ The time range for the timed metadata.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeRange timeRange;
+```
+
 ## See Also
 
-- [var items: [AVMetadataItem]](avtimedmetadatagroup/items.md)
+### Accessing group attributes
+- [var items: [AVMetadataItem]](./items.md)
   An array of metadata items in the timed metadata group.
 
 

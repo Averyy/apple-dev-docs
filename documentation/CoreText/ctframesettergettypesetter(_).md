@@ -1,7 +1,8 @@
 # CTFramesetterGetTypesetter(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the typesetter object being used by the framesetter.
 
@@ -20,6 +21,10 @@ Returns the typesetter object being used by the framesetter.
 func CTFramesetterGetTypesetter(_ framesetter: CTFramesetter) -> CTTypesetter
 ```
 
+```c
+extern CTTypesetterRefCTFramesetterGetTypesetter(CTFramesetterRef framesetter);
+```
+
 #### Return Value
 
 A reference to a CTTypesetter object if the call was successful; otherwise, `NULL`. The framesetter maintains a reference to the returned object, which should not be released by the caller.
@@ -34,7 +39,8 @@ Each framesetter uses a typesetter internally to perform line breaking and other
 
 ## See Also
 
-- [func CTFramesetterCreateFrame(CTFramesetter, CFRange, CGPath, CFDictionary?) -> CTFrame](ctframesettercreateframe(_:_:_:_:).md)
+### Creating Frames
+- [func CTFramesetterCreateFrame(CTFramesetter, CFRange, CGPath, CFDictionary?) -> CTFrame](./ctframesettercreateframe%28_,_,_,_%29.md)
   Creates an immutable frame using a framesetter.
 
 

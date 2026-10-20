@@ -1,7 +1,8 @@
 # isIncrementalSearchingEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if incremental searching is enabled.
 
@@ -14,19 +15,24 @@ Determines if incremental searching is enabled.
 var isIncrementalSearchingEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isIncrementalSearchingEnabled) BOOL incrementalSearchingEnabled;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), then the find bar will do incremental searches. If it returns [`false`](https://developer.apple.com/documentation/swift/false), then the find bar will behave regularly.
+If [`true`](../../Swift/true.md), then the find bar will do incremental searches. If it returns [`false`](../../Swift/false.md), then the find bar will behave regularly.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class func drawIncrementalMatchHighlight(in: NSRect)](nstextfinder/drawincrementalmatchhighlight(in:).md)
+### Incremental Search Configuration
+- [class func drawIncrementalMatchHighlight(in: NSRect)](./drawincrementalmatchhighlight%28in%29.md)
   Override this method to draw custom highlighting.
-- [var incrementalMatchRanges: [NSValue]](nstextfinder/incrementalmatchranges.md)
+- [var incrementalMatchRanges: [NSValue]](./incrementalmatchranges.md)
   Array of incremental search matches posted on the main queue, which have been found during a background search.
-- [var incrementalSearchingShouldDimContentView: Bool](nstextfinder/incrementalsearchingshoulddimcontentview.md)
+- [var incrementalSearchingShouldDimContentView: Bool](./incrementalsearchingshoulddimcontentview.md)
   Determines the type of incremental search feedback to be presented
 
 

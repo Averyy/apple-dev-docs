@@ -1,9 +1,10 @@
 # anyOf(requirement:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Create a [`OnDiskCodeRequirement`](ondiskcoderequirement.md) that requires matching any of the provided constraints.
+Create a [`OnDiskCodeRequirement`](../ondiskcoderequirement.md) that requires matching any of the provided constraints.
 
 **Availability**:
 - iOS 17.4+

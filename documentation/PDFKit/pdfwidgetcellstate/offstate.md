@@ -1,7 +1,8 @@
 # PDFWidgetCellState.offState
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The button widget is in an unselected state.
 
@@ -10,7 +11,7 @@ The button widget is in an unselected state.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ The button widget is in an unselected state.
 case offState
 ```
 
+```c
+kPDFWidgetOffState
+```
+
 ## See Also
 
-- [PDFWidgetCellState.onState](pdfwidgetcellstate/onstate.md)
+### Choosing a Cell State
+- [PDFWidgetCellState.onState](./onstate.md)
   The button widget is in a selected state.
-- [PDFWidgetCellState.mixedState](pdfwidgetcellstate/mixedstate.md)
+- [PDFWidgetCellState.mixedState](./mixedstate.md)
   The button widget is in a mixed state, neither on nor off.
 
 

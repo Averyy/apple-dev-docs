@@ -1,7 +1,8 @@
 # remove(withName:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Invalidates the designated app pasteboard.
 
@@ -17,6 +18,10 @@ Invalidates the designated app pasteboard.
 class func remove(withName pasteboardName: UIPasteboard.Name)
 ```
 
+```objc
++ (void) removePasteboardWithName:(UIPasteboardName) pasteboardName;
+```
+
 #### Discussion
 
 Invalidation of an app pasteboard frees up all resources used by it. Once a pasteboard is invalidated, you cannot use the it; `UIPasteboard` ignores any calls to it. The method has no effect if called with the name of a system pasteboard.
@@ -27,11 +32,12 @@ Invalidation of an app pasteboard frees up all resources used by it. Once a past
 
 ## See Also
 
-- [class var general: UIPasteboard](uipasteboard/general.md)
+### Getting and removing pasteboards
+- [class var general: UIPasteboard](./general.md)
   The systemwide general pasteboard, which you use for general copy-paste operations.
-- [init?(name: UIPasteboard.Name, create: Bool)](uipasteboard/init(name:create:).md)
+- [init?(name: UIPasteboard.Name, create: Bool)](./init%28name,create%29.md)
   Returns a pasteboard that you identify by name, optionally creating it if it doesn’t exist.
-- [class func withUniqueName() -> UIPasteboard](uipasteboard/withuniquename.md)
+- [class func withUniqueName() -> UIPasteboard](./withuniquename%28%29.md)
   Returns an app pasteboard that you identify by a unique system-generated name.
 
 

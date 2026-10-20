@@ -1,7 +1,8 @@
 # init(point:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a graph node with the specified point.
 
@@ -19,13 +20,17 @@ Initializes a graph node with the specified point.
 init(point: vector_float3)
 ```
 
+```objc
+- (instancetype) initWithPoint:(vector_float3) point;
+```
+
 #### Return Value
 
 A new graph node representing the specified point.
 
 #### Discussion
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
@@ -33,7 +38,8 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## See Also
 
-- [class func node(withPoint: vector_float3) -> Self](gkgraphnode3d/node(withpoint:).md)
+### Creating a Graph Node
+- [class func node(withPoint: vector_float3) -> Self](./node%28withpoint%29.md)
   Creates a graph node with the specified point.
 
 

@@ -1,16 +1,17 @@
 # masterTimebase
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 13.0+ - Deprecated in 15.0 (renamed: sourceTimebase)
+- iPadOS 13.0+ - Deprecated in 15.0 (renamed: sourceTimebase)
+- Mac Catalyst 13.0+ - Deprecated in 15.0 (renamed: sourceTimebase)
+- macOS 10.15+ - Deprecated in 12.0 (renamed: sourceTimebase)
+- tvOS 13.0+ - Deprecated in 15.0 (renamed: sourceTimebase)
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 8.0 (renamed: sourceTimebase)
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var masterTimebase: CMTimebase? { get }
 
 ## See Also
 
-- [var master: any CMSyncProtocol](cmtimebase/master.md)
-- [var masterClock: CMClock?](cmtimebase/masterclock.md)
-- [var ultimateMasterClock: CMClock](cmtimebase/ultimatemasterclock.md)
+### Deprecations
+- [var master: any CMSyncProtocol](./master.md)
+- [var masterClock: CMClock?](./masterclock.md)
+- [var ultimateMasterClock: CMClock](./ultimatemasterclock.md)
 
 
 ---

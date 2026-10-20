@@ -1,7 +1,8 @@
 # makeSendRight()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a send right for a given receive right.
 
@@ -19,6 +20,8 @@ Create a send right for a given receive right.
 ```swift
 func makeSendRight() -> Mach.Port<Mach.SendRight>
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

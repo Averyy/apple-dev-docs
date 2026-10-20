@@ -1,7 +1,8 @@
 # dailySummary(for:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns day weather summaries for the requested location, for the past 30 days, including the present day.
 
@@ -26,7 +27,7 @@ The requested day weather summaries.
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. The following example will get a daily weather summary for New York City.
 

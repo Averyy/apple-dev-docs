@@ -1,7 +1,8 @@
 # argmin()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the element with the lowest value.
 
@@ -16,13 +17,24 @@ Returns the index of the element with the lowest value.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS, watchOS*
+
+```swift
+func argmin() -> Base.Index?
+```
+
+*Mac Catalyst*
+
 ```swift
 func argmin() -> FilledColumn<Base>.Index?
 ```
 
+Available when `Base` conforms to `OptionalColumnProtocol` and `Base.WrappedElement` conforms to `Comparable`.
+
 ## See Also
 
-- [func argmax() -> FilledColumn<Base>.Index?](filledcolumn/argmax.md)
+### Finding an Element Index
+- [func argmax() -> FilledColumn<Base>.Index?](./argmax%28%29.md)
   Returns the index of the element with the highest value.
 
 

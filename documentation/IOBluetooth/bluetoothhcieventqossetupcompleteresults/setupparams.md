@@ -1,15 +1,20 @@
 # setupParams
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var setupParams: BluetoothHCIQualityOfServiceSetupParams
+```
+
+```c
+BluetoothHCIQualityOfServiceSetupParams setupParams;
 ```
 
 

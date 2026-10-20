@@ -1,20 +1,22 @@
 # PCIDriverKit Data Types
 
-**Framework**: PCIDriverKit
+**Framework**: PCIDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [IOPCIBARType](iopcibartype.md)
-- [IOPCILinkSpeed](iopcilinkspeed.md)
-- [IOPCIMemoryRange](iopcimemoryrange.md)
-- [IOPCISaveDeviceStateOptions](iopcisavedevicestateoptions.md)
-- [tIOPCILinkControlASPMBits](tiopcilinkcontrolaspmbits.md)
+- [IOPCIBARType](./iopcibartype.md)
+- [IOPCILinkSpeed](./iopcilinkspeed.md)
+- [IOPCIMemoryRange](./iopcimemoryrange.md)
+- [IOPCISaveDeviceStateOptions](./iopcisavedevicestateoptions.md)
+- [tIOPCILinkControlASPMBits](./tiopcilinkcontrolaspmbits.md)
 
 ## See Also
 
-- [PCIDriverKit Enumerations](pcidriverkit-enumerations.md)
-- [PCIDriverKit Macros](pcidriverkit-macros.md)
+### Reference
+- [PCIDriverKit Enumerations](./pcidriverkit-enumerations.md)
+- [PCIDriverKit Macros](./pcidriverkit-macros.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # networkError
 
 **Framework**: AdServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The server is unable to provide a token because the internet isn’t available.
 
@@ -24,11 +25,12 @@ To receive an attribution token, you must have unimpeded internet access. Make s
 
 ## See Also
 
-- [static var internalError: AAAttributionError.Code](aaattributionerror/internalerror.md)
+### Error codes
+- [static var internalError: AAAttributionError.Code](./internalerror.md)
   The server is unable to provide a token because of an internal error.
-- [static var platformNotSupported: AAAttributionError.Code](aaattributionerror/platformnotsupported.md)
+- [static var platformNotSupported: AAAttributionError.Code](./platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
-- [AAAttributionError.Code](aaattributionerror/code.md)
+- [AAAttributionError.Code](./code.md)
   The error code that the parent class issues.
 
 

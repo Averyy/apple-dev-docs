@@ -1,7 +1,8 @@
 # BetaGroup.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes with values that describe a beta group update request.
 
@@ -10,13 +11,13 @@ Attributes with values that describe a beta group update request.
 
 ## Declaration
 
-```swift
+```
 object BetaGroup.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 1.5 release notes](app-store-connect-api-1-5-release-notes.md)
+- [App Store Connect API 1.5 release notes](../app-store-connect-api-1-5-release-notes.md)
 
 ## Properties
 
@@ -35,9 +36,11 @@ object BetaGroup.Attributes
 
 ## See Also
 
-- [Beta Groups](beta-groups.md)
+### Related Documentation
+- [Beta Groups](../beta-groups.md)
   Groups of beta testers that have access to one or more builds.
-- [object BetaGroup.Relationships](betagroup/relationships-data.dictionary.md)
+### Objects
+- [object BetaGroup.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # init(mutating:shape:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `MLShapedArraySlice` using a pixel buffer as the backing storage.
 
@@ -71,9 +72,10 @@ assert(slice2[scalarAt: 0] == 0)
 
 ## See Also
 
-- [init(scalar: Scalar)](mlshapedarrayslice/init(scalar:).md)
+### Creating a shaped array slice
+- [init(scalar: Scalar)](./init%28scalar%29.md)
   Creates a shaped array slice with exactly one value and zero dimensions.
-- [init<S>(scalars: S, shape: [Int])](mlshapedarrayslice/init(scalars:shape:).md)
+- [init<S>(scalars: S, shape: [Int])](./init%28scalars,shape%29.md)
   Initialize with a sequence and the shape.
 
 

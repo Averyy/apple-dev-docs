@@ -1,7 +1,8 @@
 # tileSize
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of each tile used to create the layer’s content.
 
@@ -17,6 +18,10 @@ The maximum size of each tile used to create the layer’s content.
 
 ```swift
 var tileSize: CGSize { get set }
+```
+
+```objc
+@property CGSize tileSize;
 ```
 
 #### Discussion

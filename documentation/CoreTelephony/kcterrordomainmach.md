@@ -1,7 +1,8 @@
 # kCTErrorDomainMach
 
 **Framework**: Core Telephony  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain value for errors reported by Mach.
 
@@ -17,15 +18,20 @@ The domain value for errors reported by Mach.
 var kCTErrorDomainMach: Int { get }
 ```
 
+```c
+kCTErrorDomainMach
+```
+
 #### Discussion
 
 Mach error codes are listed in `mach/error.h`.
 
 ## See Also
 
-- [var kCTErrorDomainNoError: Int](kcterrordomainnoerror.md)
+### Error Domains
+- [var kCTErrorDomainNoError: Int](./kcterrordomainnoerror.md)
   The domain value indicating there is no error.
-- [var kCTErrorDomainPOSIX: Int](kcterrordomainposix.md)
+- [var kCTErrorDomainPOSIX: Int](./kcterrordomainposix.md)
   The domain value for errors from POSIX.
 
 

@@ -1,7 +1,8 @@
 # moneyAmounts
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of money amounts and currencies that the data detection system identifies.
 
@@ -16,7 +17,8 @@ var moneyAmounts: [DDMatchMoneyAmount] { get }
 
 ## See Also
 
-- [var number: Double?](nspasteboard/detectedvalues/number.md)
+### Numeric values
+- [var number: Double?](./number.md)
   A number that the data detection system identifies.
 
 

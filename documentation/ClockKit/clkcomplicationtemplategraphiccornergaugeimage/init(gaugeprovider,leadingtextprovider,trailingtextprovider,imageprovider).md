@@ -1,17 +1,22 @@
 # init(gaugeProvider:leadingTextProvider:trailingTextProvider:imageProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template that has a gauge with leading and trailing text and an image.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, trailingTextProvider: CLKTextProvider?, imageProvider: CLKFullColorImageProvider)
+```
+
+```objc
+- (instancetype) initWithGaugeProvider:(CLKGaugeProvider *) gaugeProvider leadingTextProvider:(CLKTextProvider *) leadingTextProvider trailingTextProvider:(CLKTextProvider *) trailingTextProvider imageProvider:(CLKFullColorImageProvider *) imageProvider;
 ```
 
 ## Parameters
@@ -23,7 +28,8 @@ init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, tra
 
 ## See Also
 
-- [init(gaugeProvider: CLKGaugeProvider, imageProvider: CLKFullColorImageProvider)](clkcomplicationtemplategraphiccornergaugeimage/init(gaugeprovider:imageprovider:).md)
+### Creating the Template
+- [init(gaugeProvider: CLKGaugeProvider, imageProvider: CLKFullColorImageProvider)](./init%28gaugeprovider,imageprovider%29.md)
   Creates a new template that has a gauge and an image.
 
 

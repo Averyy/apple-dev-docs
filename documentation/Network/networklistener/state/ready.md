@@ -1,7 +1,8 @@
 # NetworkListener.State.ready
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ready listeners are able to receive incoming connections Bonjour service may not yet be registered
 

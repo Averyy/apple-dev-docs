@@ -1,7 +1,8 @@
 # MTLCommandBufferStatus
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The discrete states for a command buffer that represent its life cycle stages.
 
@@ -10,7 +11,7 @@ The discrete states for a command buffer that represent its life cycle stages.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,39 +20,44 @@ The discrete states for a command buffer that represent its life cycle stages.
 enum MTLCommandBufferStatus
 ```
 
+```c
+enum MTLCommandBufferStatus : NSUInteger;
+```
+
 ## Topics
 
 ### Command buffer states
-- [MTLCommandBufferStatus.notEnqueued](mtlcommandbufferstatus/notenqueued.md)
+- [MTLCommandBufferStatus.notEnqueued](./mtlcommandbufferstatus/notenqueued.md)
   A command buffer’s initial state, which indicates its command queue isn’t reserving a place for it.
-- [MTLCommandBufferStatus.enqueued](mtlcommandbufferstatus/enqueued.md)
+- [MTLCommandBufferStatus.enqueued](./mtlcommandbufferstatus/enqueued.md)
   A command buffer’s second state, which indicates its command queue is reserving a place for it.
-- [MTLCommandBufferStatus.committed](mtlcommandbufferstatus/committed.md)
+- [MTLCommandBufferStatus.committed](./mtlcommandbufferstatus/committed.md)
   A command buffer’s third state, which indicates the command queue is preparing to schedule the command buffer by resolving its dependencies.
-- [MTLCommandBufferStatus.scheduled](mtlcommandbufferstatus/scheduled.md)
+- [MTLCommandBufferStatus.scheduled](./mtlcommandbufferstatus/scheduled.md)
   A command buffer’s fourth state, which indicates the command buffer has its resources ready and is waiting for the GPU to run its commands.
-- [MTLCommandBufferStatus.completed](mtlcommandbufferstatus/completed.md)
+- [MTLCommandBufferStatus.completed](./mtlcommandbufferstatus/completed.md)
   A command buffer’s successful, final state, which indicates the GPU finished running the command buffer’s commands without any problems.
-- [MTLCommandBufferStatus.error](mtlcommandbufferstatus/error.md)
+- [MTLCommandBufferStatus.error](./mtlcommandbufferstatus/error.md)
   A command buffer’s unsuccessful, final state, which indicates the GPU stopped running the buffer’s commands because of a runtime issue.
 ### Initializers
-- [init?(rawValue: UInt)](mtlcommandbufferstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlcommandbufferstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var status: MTLCommandBufferStatus](mtlcommandbuffer/status.md)
+### Troubleshooting a command buffer
+- [var status: MTLCommandBufferStatus](./mtlcommandbuffer/status.md)
   The command buffer’s current state.
-- [Command buffer debugging](command-buffer-debugging.md)
+- [Command buffer debugging](./command-buffer-debugging.md)
   Properties and methods for programmatically debugging runtime issues with a command buffer.
 
 

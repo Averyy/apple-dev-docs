@@ -1,7 +1,8 @@
 # init(name:authority:)
 
 **Framework**: Collaboration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the identity object with the given name from the specified identity authority.
 
@@ -12,6 +13,10 @@ Returns the identity object with the given name from the specified identity auth
 
 ```swift
 init?(name: String, authority: CBIdentityAuthority)
+```
+
+```objc
++ (CBIdentity *) identityWithName:(NSString *) name authority:(CBIdentityAuthority *) authority;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ The name is compared against all valid identity names, including full names, sho
 
 ## See Also
 
-- [init?(persistentReference: Data)](cbidentity/init(persistentreference:).md)
+### Finding Identities
+- [init?(persistentReference: Data)](./init%28persistentreference%29.md)
   Returns the identity object matching the persistent reference data.
-- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:)-13vns.md)
+- [init?(uuidString: String, authority: CBIdentityAuthority)](./init%28uuidstring,authority%29-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
 
 

@@ -1,7 +1,8 @@
 # location
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout location.
 
@@ -20,11 +21,12 @@ var location: HKWorkoutSessionLocationType
 
 ## See Also
 
-- [var activity: HKWorkoutActivityType](singlegoalworkout/activity.md)
+### Accessing workout data
+- [var activity: HKWorkoutActivityType](./activity.md)
   The workout activity type.
-- [var swimmingLocation: HKWorkoutSwimmingLocationType](singlegoalworkout/swimminglocation.md)
+- [var swimmingLocation: HKWorkoutSwimmingLocationType](./swimminglocation.md)
   For swimming workouts, the workout’s swimming location.
-- [var goal: WorkoutGoal](singlegoalworkout/goal.md)
+- [var goal: WorkoutGoal](./goal.md)
   The goal for the workout.
 
 

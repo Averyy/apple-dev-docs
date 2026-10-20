@@ -1,7 +1,8 @@
 # cardBackgroundColor
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -12,6 +13,10 @@
 
 ```swift
 var cardBackgroundColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIColor * cardBackgroundColor;
 ```
 
 

@@ -1,7 +1,8 @@
 # presentOfferCodeRedeemSheet(from:options:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
 
@@ -17,20 +18,20 @@ static func presentOfferCodeRedeemSheet(from window: NSWindow, options: Set<Rede
 
 ## Mentions
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 
 #### Return Value
 
-A [`VerificationResult`](verificationresult.md) containing the [`Transaction`](transaction.md) that the redemption produces.
+A [`VerificationResult`](../verificationresult.md) containing the [`Transaction`](../transaction.md) that the redemption produces.
 
 #### Discussion
 
-> **Note**: [`StoreKitError`](storekiterror.md) if the system cannot present the sheet or the redemption fails.
+> **Throws**: [`StoreKitError`](../storekiterror.md) if the system cannot present the sheet or the redemption fails.
 
 ## Parameters
 
 - `window`: The `NSWindow` that StoreKit uses to display the offer code redemption sheet.
-- `options`: A set of [`RedeemOption`](redeemoption.md) values to configure the offer code redemption.
+- `options`: A set of [`RedeemOption`](../redeemoption.md) values to configure the offer code redemption.
 
 
 ---

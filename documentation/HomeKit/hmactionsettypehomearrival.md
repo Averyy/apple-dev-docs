@@ -1,7 +1,8 @@
 # HMActionSetTypeHomeArrival
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies the HomeArrival built-in action set.
 
@@ -19,13 +20,18 @@ Specifies the HomeArrival built-in action set.
 let HMActionSetTypeHomeArrival: String
 ```
 
+```c
+extern NSString * const HMActionSetTypeHomeArrival;
+```
+
 ## See Also
 
-- [let HMActionSetTypeHomeDeparture: String](hmactionsettypehomedeparture.md)
+### Built-in Types
+- [let HMActionSetTypeHomeDeparture: String](./hmactionsettypehomedeparture.md)
   Specifies the HomeDeparture built-in action set.
-- [let HMActionSetTypeSleep: String](hmactionsettypesleep.md)
+- [let HMActionSetTypeSleep: String](./hmactionsettypesleep.md)
   Specifies the Sleep built-in action set.
-- [let HMActionSetTypeWakeUp: String](hmactionsettypewakeup.md)
+- [let HMActionSetTypeWakeUp: String](./hmactionsettypewakeup.md)
   Specifies the WakeUp built-in action set.
 
 

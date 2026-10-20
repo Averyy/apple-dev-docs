@@ -1,7 +1,8 @@
 # subscript(of:)
 
 **Framework**: TabletopKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the identifiers and corresponding states of all equipment that conform to the given type.
 

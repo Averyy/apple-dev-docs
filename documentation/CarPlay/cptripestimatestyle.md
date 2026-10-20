@@ -1,7 +1,8 @@
 # CPTripEstimateStyle
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of display styles for trip estimates.
 
@@ -16,35 +17,40 @@ The set of display styles for trip estimates.
 enum CPTripEstimateStyle
 ```
 
+```c
+enum CPTripEstimateStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Styles
-- [CPTripEstimateStyle.light](cptripestimatestyle/light.md)
+- [CPTripEstimateStyle.light](./cptripestimatestyle/light.md)
   The light trip estimate display style.
-- [CPTripEstimateStyle.dark](cptripestimatestyle/dark.md)
+- [CPTripEstimateStyle.dark](./cptripestimatestyle/dark.md)
   The dark trip estimate display style.
 ### Initializers
-- [init?(rawValue: UInt)](cptripestimatestyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./cptripestimatestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func updateEstimates(CPTravelEstimates, for: CPTrip)](cpmaptemplate/updateestimates(_:for:).md)
+### Providing Trip Estimates
+- [func updateEstimates(CPTravelEstimates, for: CPTrip)](./cpmaptemplate/updateestimates%28_,for%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip.
-- [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](cpmaptemplate/update(_:for:with:).md)
+- [func update(CPTravelEstimates, for: CPTrip, with: CPTimeRemainingColor)](./cpmaptemplate/update%28_,for,with%29.md)
   Updates travel estimates, such as arrival time and the remaining time and distance for a trip, with the specified time-remaining color.
-- [enum CPTimeRemainingColor](cptimeremainingcolor.md)
+- [enum CPTimeRemainingColor](./cptimeremainingcolor.md)
   The color the system uses when displaying the time remaining for a trip.
-- [var tripEstimateStyle: CPTripEstimateStyle](cpmaptemplate/tripestimatestyle.md)
+- [var tripEstimateStyle: CPTripEstimateStyle](./cpmaptemplate/tripestimatestyle.md)
   The style that the map template uses when displaying trip estimates during active nagivation.
 
 

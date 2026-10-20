@@ -1,7 +1,8 @@
 # canAddSecureElementPass(configuration:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether PassKit can create a Secure Element pass using the specified configuration.
 
@@ -17,9 +18,13 @@ Returns a Boolean value that indicates whether PassKit can create a Secure Eleme
 class func canAddSecureElementPass(configuration: PKAddSecureElementPassConfiguration) -> Bool
 ```
 
+```objc
++ (BOOL) canAddSecureElementPassWithConfiguration:(PKAddSecureElementPassConfiguration *) configuration;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if PassKit validates the configuration; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if PassKit validates the configuration; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 

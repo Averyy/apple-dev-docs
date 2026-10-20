@@ -1,7 +1,8 @@
 # axisBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The bar axis behavior of the toolbar item.
 
@@ -44,7 +45,8 @@ If both horizontal & vertical bars are present and the item is `.verticalPreferr
 
 ## See Also
 
-- [func customizationBehavior(ToolbarCustomizationBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/customizationbehavior(_:).md)
+### Customizing behaviors
+- [func customizationBehavior(ToolbarCustomizationBehavior) -> some CustomizableToolbarContent](./customizationbehavior%28_%29.md)
   Configures the customization behavior of customizable toolbar content.
 
 

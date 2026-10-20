@@ -1,7 +1,8 @@
 # imageBrowserView()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view the receiver uses to display the cell.
 
@@ -12,6 +13,10 @@ Returns the view the receiver uses to display the cell.
 
 ```swift
 func imageBrowserView() -> IKImageBrowserView!
+```
+
+```objc
+- (IKImageBrowserView *) imageBrowserView;
 ```
 
 #### Return Value

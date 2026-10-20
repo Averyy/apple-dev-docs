@@ -1,7 +1,8 @@
 # MTRThermostatUserInterfaceConfigurationKeypadLockout
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -18,27 +19,31 @@
 enum MTRThermostatUserInterfaceConfigurationKeypadLockout
 ```
 
+```c
+enum MTRThermostatUserInterfaceConfigurationKeypadLockout : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout1](mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout1.md)
-- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout2](mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout2.md)
-- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout3](mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout3.md)
-- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout4](mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout4.md)
-- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout5](mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout5.md)
-- [MTRThermostatUserInterfaceConfigurationKeypadLockout.noLockout](mtrthermostatuserinterfaceconfigurationkeypadlockout/nolockout.md)
+- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout1](./mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout1.md)
+- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout2](./mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout2.md)
+- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout3](./mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout3.md)
+- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout4](./mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout4.md)
+- [MTRThermostatUserInterfaceConfigurationKeypadLockout.lockout5](./mtrthermostatuserinterfaceconfigurationkeypadlockout/lockout5.md)
+- [MTRThermostatUserInterfaceConfigurationKeypadLockout.noLockout](./mtrthermostatuserinterfaceconfigurationkeypadlockout/nolockout.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatuserinterfaceconfigurationkeypadlockout/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatuserinterfaceconfigurationkeypadlockout/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

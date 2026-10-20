@@ -1,14 +1,15 @@
 # cpuid_xsave_leafp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 cpuid_xsave_leaf_t *cpuid_xsave_leafp;
 ```
 

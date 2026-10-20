@@ -1,12 +1,13 @@
 # isDescendant(of:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the view is a subview of the specified view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns a Boolean value that indicates whether the view is a subview of the spec
 func isDescendant(of view: NSView) -> Bool
 ```
 
+```objc
+- (BOOL) isDescendantOf:(NSView *) view;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view is a subview, or distant subview, of the specified view.
+[`true`](../../Swift/true.md) if the view is a subview, or distant subview, of the specified view.
 
 #### Discussion
 
-The method returns [`true`](https://developer.apple.com/documentation/swift/true) if the view is either an immediate or distant subview of `aView`.
+The method returns [`true`](../../Swift/true.md) if the view is either an immediate or distant subview of `aView`.
 
 ## Parameters
 
@@ -28,19 +33,20 @@ The method returns [`true`](https://developer.apple.com/documentation/swift/true
 
 ## See Also
 
-- [var superview: NSView?](nsview/superview.md)
+### Getting the Related Objects
+- [var superview: NSView?](./superview.md)
   The view that is the parent of the current view.
-- [var subviews: [NSView]](nsview/subviews.md)
+- [var subviews: [NSView]](./subviews.md)
   The array of views embedded in the current view.
-- [var window: NSWindow?](nsview/window.md)
+- [var window: NSWindow?](./window.md)
   The view’s window object, if it is installed in a window.
-- [var opaqueAncestor: NSView?](nsview/opaqueancestor.md)
+- [var opaqueAncestor: NSView?](./opaqueancestor.md)
   The view’s closest opaque ancestor, which might be the view itself.
-- [func ancestorShared(with: NSView) -> NSView?](nsview/ancestorshared(with:).md)
+- [func ancestorShared(with: NSView) -> NSView?](./ancestorshared%28with%29.md)
   Returns the closest ancestor shared by the view and another specified view.
-- [var enclosingMenuItem: NSMenuItem?](nsview/enclosingmenuitem.md)
+- [var enclosingMenuItem: NSMenuItem?](./enclosingmenuitem.md)
   The menu item containing the view or any of its superviews in the view hierarchy.
-- [var enclosingScrollView: NSScrollView?](nsview/enclosingscrollview.md)
+- [var enclosingScrollView: NSScrollView?](./enclosingscrollview.md)
   The nearest ancestor scroll view that contains the current view.
 
 

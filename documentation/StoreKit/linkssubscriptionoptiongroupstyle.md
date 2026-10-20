@@ -1,7 +1,8 @@
 # LinksSubscriptionOptionGroupStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,20 +22,21 @@ struct LinksSubscriptionOptionGroupStyle
 ## Topics
 
 ### Getting the links style
-- [static var links: LinksSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/links.md)
+- [static var links: LinksSubscriptionOptionGroupStyle](./subscriptionoptiongroupstyle/links.md)
 ### Creating the style
-- [init()](linkssubscriptionoptiongroupstyle/init.md)
+- [init()](./linkssubscriptionoptiongroupstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [SubscriptionOptionGroupStyle](subscriptionoptiongroupstyle.md)
+- [SubscriptionOptionGroupStyle](./subscriptionoptiongroupstyle.md)
 
 ## See Also
 
-- [struct AutomaticSubscriptionOptionGroupStyle](automaticsubscriptionoptiongroupstyle.md)
-- [struct TabsSubscriptionOptionGroupStyle](tabssubscriptionoptiongroupstyle.md)
-- [struct SubscriptionOptionGroupStyleOutput](subscriptionoptiongroupstyleoutput.md)
+### Supporting types
+- [struct AutomaticSubscriptionOptionGroupStyle](./automaticsubscriptionoptiongroupstyle.md)
+- [struct TabsSubscriptionOptionGroupStyle](./tabssubscriptionoptiongroupstyle.md)
+- [struct SubscriptionOptionGroupStyleOutput](./subscriptionoptiongroupstyleoutput.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # completionDueDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The deadline by which the coordinator expects the delegate to complete execution of a command.
 
@@ -19,6 +20,10 @@ The deadline by which the coordinator expects the delegate to complete execution
 var completionDueDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * completionDueDate;
+```
+
 #### Discussion
 
 A command that expects buffering in preparation for playback requires that the delegate call the command’s completion handler by the deadline. The delegate needs to complete the command by this date to keep up with the group. Alternatively, have the delegate begin a stall recovery suspension, and communicate that state to the other participants.
@@ -27,7 +32,8 @@ Completing the command after this date means that the coordinator likely sends a
 
 ## See Also
 
-- [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorbufferingcommand/anticipatedplaybackrate.md)
+### Accessing command details
+- [var anticipatedPlaybackRate: Float](./anticipatedplaybackrate.md)
   The rate at which the coordinator expects the current item to play.
 
 

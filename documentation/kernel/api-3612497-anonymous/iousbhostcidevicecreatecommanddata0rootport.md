@@ -1,14 +1,15 @@
 # IOUSBHostCIDeviceCreateCommandData0RootPort
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIDeviceCreateCommandData0RootPort = IOUSBBitRange(0, 3)
 ```
 

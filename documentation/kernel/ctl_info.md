@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ctl_info {
     ...
 };
@@ -21,9 +21,9 @@ This structure is used with the CTLIOCGINFO ioctl to translate from a kernel con
 ## Topics
 
 ### Fields
-- [ctl_id](ctl_info/1809204-ctl_id.md)
+- [ctl_id](./ctl_info/api-1809204-ctl_id.md)
   The kernel control id, filled out upon return.
-- [ctl_name](ctl_info/1809207-ctl_name.md)
+- [ctl_name](./ctl_info/api-1809207-ctl_name.md)
   The kernel control name to find.
 
 

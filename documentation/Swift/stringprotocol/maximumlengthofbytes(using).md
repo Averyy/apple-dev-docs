@@ -1,7 +1,8 @@
 # maximumLengthOfBytes(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the maximum number of bytes needed to store the `String` in a given encoding.
 

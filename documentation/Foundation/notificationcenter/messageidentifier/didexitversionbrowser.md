@@ -1,7 +1,8 @@
 # didExitVersionBrowser
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didExitVersionBrowser: NotificationCenter.BaseMessageIdentifier<NSWindow.DidExitVersionBrowserMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidExitVersionBrowserMessage>`.
 
 
 ---

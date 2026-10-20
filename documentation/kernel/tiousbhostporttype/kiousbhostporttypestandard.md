@@ -1,7 +1,8 @@
 # kIOUSBHostPortTypeStandard
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The standard type.
 
@@ -10,7 +11,7 @@ The standard type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortTypeStandard = 0
 ```
 

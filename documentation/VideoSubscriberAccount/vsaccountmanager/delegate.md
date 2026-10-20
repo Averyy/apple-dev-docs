@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the account manager object.
 
@@ -9,7 +10,7 @@ The delegate of the account manager object.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,15 +20,20 @@ The delegate of the account manager object.
 weak var delegate: (any VSAccountManagerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<VSAccountManagerDelegate> delegate;
+```
+
 #### Discussion
 
 The system notifies the delegate when the app needs to present or dismiss authentication views, or decide whether to authenticate the person with their chosen provider.
 
-The delegate must adopt the [`VSAccountManagerDelegate`](vsaccountmanagerdelegate.md) protocol.
+The delegate must adopt the [`VSAccountManagerDelegate`](../vsaccountmanagerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol VSAccountManagerDelegate](vsaccountmanagerdelegate.md)
+### Responding to account manager requests
+- [protocol VSAccountManagerDelegate](../vsaccountmanagerdelegate.md)
   The methods you use to respond to authentication view controller requests.
 
 

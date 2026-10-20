@@ -1,7 +1,8 @@
 # touchCapabilities
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var touchCapabilities: NSScreen.TouchCapabilities { get }
+```
+
+```objc
+@property (readonly) NSScreenTouchCapabilities touchCapabilities;
 ```
 
 

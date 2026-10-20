@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean values that indicates whether a device supports the room-tracking provider.
 
@@ -16,7 +17,8 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](roomtrackingprovider/requiredauthorizations.md)
+### Type properties
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   An array of authorization types the room-tracking provider requires.
 
 

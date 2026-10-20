@@ -1,7 +1,8 @@
 # generationOptions
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Generation options that control sampling behavior.
 
@@ -21,17 +22,18 @@ var generationOptions: GenerationOptions
 
 ## See Also
 
-- [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
+### Configuring a generation request
+- [var id: UUID](./id.md)
   A request id for logging and tracing purposes.
-- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata to attach to the request.
-- [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
+- [var contextOptions: ContextOptions](./contextoptions.md)
   Settings that configure how the model is prompted.
-- [var enabledToolDefinitions: [Transcript.ToolDefinition]](languagemodelexecutorgenerationrequest/enabledtooldefinitions.md)
+- [var enabledToolDefinitions: [Transcript.ToolDefinition]](./enabledtooldefinitions.md)
   The subset of tool definitions that the model is allowed to call.
-- [var schema: GenerationSchema?](languagemodelexecutorgenerationrequest/schema.md)
+- [var schema: GenerationSchema?](./schema.md)
   An optional schema dictating the required output format.
-- [var transcript: Transcript](languagemodelexecutorgenerationrequest/transcript.md)
+- [var transcript: Transcript](./transcript.md)
   A transcript to generate the next entry for.
 
 

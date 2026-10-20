@@ -1,12 +1,13 @@
 # NSApplication.DelegateReply.cancel
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the user cancelled the operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Indicates the user cancelled the operation.
 case cancel
 ```
 
+```c
+NSApplicationDelegateReplyCancel
+```
+
 ## See Also
 
-- [NSApplication.DelegateReply.success](nsapplication/delegatereply/success.md)
+### Constants
+- [NSApplication.DelegateReply.success](./success.md)
   Indicates the operation succeeded.
-- [NSApplication.DelegateReply.failure](nsapplication/delegatereply/failure.md)
+- [NSApplication.DelegateReply.failure](./failure.md)
   Indicates an error occurred processing the operation.
 
 

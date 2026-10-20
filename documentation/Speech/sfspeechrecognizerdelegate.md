@@ -1,7 +1,8 @@
 # SFSpeechRecognizerDelegate
 
 **Framework**: Speech  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that you adopt in your objects to track the availability of a speech recognizer.
 
@@ -18,6 +19,10 @@ A protocol that you adopt in your objects to track the availability of a speech 
 protocol SFSpeechRecognizerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SFSpeechRecognizerDelegate <NSObject>
+```
+
 #### Overview
 
 A speech recognizer’s availability can change due to the device’s Internet connection or other factors. Use this protocol’s optional method to track those changes and provide an appropriate response. For example, when speech recognition becomes unavailable, you might disable related features in your app.
@@ -25,23 +30,24 @@ A speech recognizer’s availability can change due to the device’s Internet c
 ## Topics
 
 ### Monitoring speech recognizer availability
-- [func speechRecognizer(SFSpeechRecognizer, availabilityDidChange: Bool)](sfspeechrecognizerdelegate/speechrecognizer(_:availabilitydidchange:).md)
+- [func speechRecognizer(SFSpeechRecognizer, availabilityDidChange: Bool)](./sfspeechrecognizerdelegate/speechrecognizer%28_,availabilitydidchange%29.md)
   Tells the delegate that the availability of its associated speech recognizer changed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
+### Essentials
+- [Asking Permission to Use Speech Recognition](./asking-permission-to-use-speech-recognition.md)
   Ask the user’s permission to perform speech recognition using Apple’s servers.
-- [class SFSpeechRecognizer](sfspeechrecognizer.md)
+- [class SFSpeechRecognizer](./sfspeechrecognizer.md)
   An object you use to check for the availability of the speech recognition service, and to initiate the speech recognition process.
-- [enum SFSpeechRecognitionTaskHint](sfspeechrecognitiontaskhint.md)
+- [enum SFSpeechRecognitionTaskHint](./sfspeechrecognitiontaskhint.md)
   The type of task for which you are using speech recognition.
-- [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
+- [enum SFSpeechRecognizerAuthorizationStatus](./sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
 
 

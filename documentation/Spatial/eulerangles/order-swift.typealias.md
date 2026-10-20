@@ -1,7 +1,8 @@
 # EulerAngles.Order
 
 **Framework**: Spatial  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that specifies the order of the angles.
 
@@ -11,7 +12,7 @@ A type that specifies the order of the angles.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,12 +24,12 @@ typealias Order = __SPEulerAngleOrder
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # write(toFile:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the style transfer model as a Core ML model file to the file path.
 
@@ -25,7 +26,8 @@ func write(toFile path: String, metadata: MLModelMetadata? = .init()) throws
 
 ## See Also
 
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlstyletransfer/write(to:metadata:).md)
+### Saving a style transfer model
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./write%28to,metadata%29.md)
   Exports the style transfer model as a Core ML model file to a location in the file system.
 
 

@@ -1,7 +1,8 @@
 # Color table atom ('ctab')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that defines a list of preferred colors for displaying the movie on devices that support only 256 colors.
 
@@ -13,38 +14,39 @@ The layout of a color table atom is as follows.
 
 | Data field | Bytes |
 | --- | --- |
-| [`Size`](color_table_atom/size.md) | 4 |
-| [`Type`](color_table_atom/type.md) | 4 |
-| [`Color table seed`](color_table_atom/color_table_seed.md) | 4 |
-| [`Color table flags`](color_table_atom/color_table_flags.md) | 2 |
-| [`Color table size`](color_table_atom/color_table_size.md) | 2 |
-| [`Color array`](color_table_atom/color_array.md) | Variable |
+| [`Size`](./color_table_atom/size.md) | 4 |
+| [`Type`](./color_table_atom/type.md) | 4 |
+| [`Color table seed`](./color_table_atom/color_table_seed.md) | 4 |
+| [`Color table flags`](./color_table_atom/color_table_flags.md) | 2 |
+| [`Color table size`](./color_table_atom/color_table_size.md) | 2 |
+| [`Color array`](./color_table_atom/color_array.md) | Variable |
 
 ## Topics
 
 ### Data fields
-- [Size](color_table_atom/size.md)
+- [Size](./color_table_atom/size.md)
   A 32-bit integer that specifies the number of bytes in this color table atom.
-- [Type](color_table_atom/type.md)
+- [Type](./color_table_atom/type.md)
   A 32-bit integer that identifies the atom type.
-- [Color table seed](color_table_atom/color_table_seed.md)
+- [Color table seed](./color_table_atom/color_table_seed.md)
   A 32-bit integer.
-- [Color table flags](color_table_atom/color_table_flags.md)
+- [Color table flags](./color_table_atom/color_table_flags.md)
   A 16-bit integer.
-- [Color table size](color_table_atom/color_table_size.md)
+- [Color table size](./color_table_atom/color_table_size.md)
   A 16-bit integer that indicates the number of colors in the following color array.
-- [Color array](color_table_atom/color_array.md)
+- [Color array](./color_table_atom/color_array.md)
   An array of colors.
 
 ## See Also
 
-- [Movie atom ('moov')](movie_atom.md)
+### Describing movies
+- [Movie atom ('moov')](./movie_atom.md)
   An atom that specifies the information that defines a movie.
-- [Movie header atom ('mvhd')](movie_header_atom.md)
+- [Movie header atom ('mvhd')](./movie_header_atom.md)
   An atom that specifies the characteristics of an entire QuickTime movie.
-- [User data atoms](user_data_atoms.md)
+- [User data atoms](./user_data_atoms.md)
   Atoms you use to define and store data associated with a QuickTime object.
-- [Interleaving movie data](interleaving_movie_data.md)
+- [Interleaving movie data](./interleaving_movie_data.md)
   Interleave data in your movie for optimal playback.
 
 

@@ -1,7 +1,8 @@
 # UnexpectedEndpointType
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error generated when an unexpected endpoint type is supplied.
 
@@ -23,16 +24,16 @@ struct UnexpectedEndpointType
 ## Topics
 
 ### Initializers
-- [init(endpoint: NWEndpoint)](unexpectedendpointtype/init(endpoint:).md)
+- [init(endpoint: NWEndpoint)](./unexpectedendpointtype/init%28endpoint%29.md)
 ### Instance Properties
-- [let endpoint: NWEndpoint](unexpectedendpointtype/endpoint.md)
+- [let endpoint: NWEndpoint](./unexpectedendpointtype/endpoint.md)
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

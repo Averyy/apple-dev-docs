@@ -1,18 +1,19 @@
 # SCNBlendMode
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Modes that describe how SceneKit blends source colors rendered using a material with destination colors already in a rendering target, used by the [`blendMode`](scnmaterial/blendmode.md) property.
+Modes that describe how SceneKit blends source colors rendered using a material with destination colors already in a rendering target, used by the [`blendMode`](./scnmaterial/blendmode.md) property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,45 +21,50 @@ Modes that describe how SceneKit blends source colors rendered using a material 
 enum SCNBlendMode
 ```
 
+```c
+enum SCNBlendMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SCNBlendMode.alpha](scnblendmode/alpha.md)
+- [SCNBlendMode.alpha](./scnblendmode/alpha.md)
   Blend by multiplying source and destination color values by their corresponding alpha values.
-- [SCNBlendMode.add](scnblendmode/add.md)
+- [SCNBlendMode.add](./scnblendmode/add.md)
   Blend by adding the source color to the destination color.
-- [SCNBlendMode.subtract](scnblendmode/subtract.md)
+- [SCNBlendMode.subtract](./scnblendmode/subtract.md)
   Blend by subtracting the source color from the destination color.
-- [SCNBlendMode.multiply](scnblendmode/multiply.md)
+- [SCNBlendMode.multiply](./scnblendmode/multiply.md)
   Blend by multiplying the source color with the background color.
-- [SCNBlendMode.screen](scnblendmode/screen.md)
+- [SCNBlendMode.screen](./scnblendmode/screen.md)
   Blend by multiplying the inverse of the source color with the inverse of the destination color.
-- [SCNBlendMode.replace](scnblendmode/replace.md)
+- [SCNBlendMode.replace](./scnblendmode/replace.md)
   Blend by replacing the destination color with the source color, ignoring alpha.
 ### Enumeration Cases
-- [SCNBlendMode.max](scnblendmode/max.md)
+- [SCNBlendMode.max](./scnblendmode/max.md)
 ### Initializers
-- [init?(rawValue: Int)](scnblendmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnblendmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var transparency: CGFloat](scnmaterial/transparency.md)
+### Managing Opacity and Blending
+- [var transparency: CGFloat](./scnmaterial/transparency.md)
   The uniform transparency of the material. Animatable.
-- [var transparencyMode: SCNTransparencyMode](scnmaterial/transparencymode.md)
+- [var transparencyMode: SCNTransparencyMode](./scnmaterial/transparencymode.md)
   The mode SceneKit uses to calculate transparency for the material.
-- [enum SCNTransparencyMode](scntransparencymode.md)
-  The modes SceneKit uses to calculate the opacity of pixels rendered with a material, used by the [`transparencyMode`](scnmaterial/transparencymode.md) property.
-- [var blendMode: SCNBlendMode](scnmaterial/blendmode.md)
+- [enum SCNTransparencyMode](./scntransparencymode.md)
+  The modes SceneKit uses to calculate the opacity of pixels rendered with a material, used by the [`transparencyMode`](./scnmaterial/transparencymode.md) property.
+- [var blendMode: SCNBlendMode](./scnmaterial/blendmode.md)
   The mode that determines how pixel colors rendered using this material blend with other pixel colors in the rendering target.
 
 

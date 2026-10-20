@@ -1,7 +1,8 @@
 # addSuite(named:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts settings for the specified domain into the search list of the current object.
 
@@ -20,21 +21,26 @@ Inserts settings for the specified domain into the search list of the current ob
 func addSuite(named suiteName: String)
 ```
 
+```objc
+- (void) addSuiteNamed:(NSString *) suiteName;
+```
+
 #### Discussion
 
 This method inserts the domain for your custom suite of settings after the app domain and before the global domain. This arrangement causes the `UserDefaults` object to return your app-specific settings first, followed by settings from the specified suite. If you call this method multiple times, the `UserDefaults` object searches your suites in the order you added them.
 
-This method doesn’t affect the destination for write operations. If you want to write settings to a custom suite, use the [`init(suiteName:)`](userdefaults/init(suitename:).md) initializer to construct a `UserDefaults` object specifically for that suite.
+This method doesn’t affect the destination for write operations. If you want to write settings to a custom suite, use the [`init(suiteName:)`](./init%28suitename%29.md) initializer to construct a `UserDefaults` object specifically for that suite.
 
-> ❗ **Important**: An app that accesses settings in a suite must also have the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups).
+> ❗ **Important**: An app that accesses settings in a suite must also have the [App Groups entitlement](../../BundleResources/entitlements/com.apple.security.application-groups.md).
 
 ## Parameters
 
-- `suiteName`: The bundle identifier for the domain you want to add. You don’t need to specify a bundle identifier for another app. Instead, you might specify the app group identifier you use to share data between multiple apps or between your app and an app extension. Don’t specify your app’s bundle identifier or the [`globalDomain`](userdefaults/globaldomain.md) identifier in this parameter.
+- `suiteName`: The bundle identifier for the domain you want to add. You don’t need to specify a bundle identifier for another app. Instead, you might specify the app group identifier you use to share data between multiple apps or between your app and an app extension. Don’t specify your app’s bundle identifier or the [`globalDomain`](./globaldomain.md) identifier in this parameter.
 
 ## See Also
 
-- [func removeSuite(named: String)](userdefaults/removesuite(named:).md)
+### Adding and removing search domains
+- [func removeSuite(named: String)](./removesuite%28named%29.md)
   Removes the specified domain from the search list of the current object.
 
 

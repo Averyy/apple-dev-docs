@@ -1,7 +1,8 @@
 # verticalSpacing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical distance between adjacent subviews.
 
@@ -26,9 +27,10 @@ Set this value to `nil` to use default vertical distances between subviews.
 
 ## See Also
 
-- [var alignment: Alignment](gridlayout/alignment.md)
+### Getting the grid’s properties
+- [var alignment: Alignment](./alignment.md)
   The alignment of subviews.
-- [var horizontalSpacing: CGFloat?](gridlayout/horizontalspacing.md)
+- [var horizontalSpacing: CGFloat?](./horizontalspacing.md)
   The horizontal distance between adjacent subviews.
 
 

@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance, suitable for debugging.
 
@@ -22,11 +23,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [func hash(into: inout Hasher)](optional/hash(into:).md)
+### Inspecting an Optional
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var unsafelyUnwrapped: Wrapped](optional/unsafelyunwrapped.md)
+- [var unsafelyUnwrapped: Wrapped](./unsafelyunwrapped.md)
   The wrapped value of this instance, unwrapped without checking whether the instance is `nil`.
-- [var customMirror: Mirror](optional/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
 
 

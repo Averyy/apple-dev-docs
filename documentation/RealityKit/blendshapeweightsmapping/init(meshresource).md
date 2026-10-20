@@ -1,7 +1,8 @@
 # init(meshResource:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mapping from the given MeshResource.
 

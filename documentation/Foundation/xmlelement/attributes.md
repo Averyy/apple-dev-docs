@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets all attributes of the receiver at once, replacing any existing attribute nodes.
 
@@ -15,27 +16,32 @@ Sets all attributes of the receiver at once, replacing any existing attribute no
 var attributes: [XMLNode]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSXMLNode *> * attributes;
+```
+
 #### Discussion
 
-To set attributes in an element node using an [`NSDictionary`](nsdictionary.md) object as the input parameter, see [`setAttributesWith(_:)`](xmlelement/setattributeswith(_:).md).
+To set attributes in an element node using an [`NSDictionary`](../nsdictionary.md) object as the input parameter, see [`setAttributesWith(_:)`](./setattributeswith%28_%29.md).
 
 ## Parameters
 
-- `attributes`: An array of [`XMLNode`](xmlnode.md) objects of kind [`XMLNode.Kind.attribute`](xmlnode/kind-swift.enum/attribute.md). If there are attribute nodes with the same name, the first attribute with that name is used. Send this message with `attributes` as `nil` to remove all attributes.
+- `attributes`: An array of [`XMLNode`](../xmlnode.md) objects of kind [`XMLNode.Kind.attribute`](../xmlnode/kind-swift.enum/attribute.md). If there are attribute nodes with the same name, the first attribute with that name is used. Send this message with `attributes` as `nil` to remove all attributes.
 
 ## See Also
 
-- [func addAttribute(XMLNode)](xmlelement/addattribute(_:).md)
+### Handling Attributes
+- [func addAttribute(XMLNode)](./addattribute%28_%29.md)
   Adds an attribute node to the receiver.
-- [func attribute(forName: String) -> XMLNode?](xmlelement/attribute(forname:).md)
+- [func attribute(forName: String) -> XMLNode?](./attribute%28forname%29.md)
   Returns the attribute node of the receiver with the specified name.
-- [func attribute(forLocalName: String, uri: String?) -> XMLNode?](xmlelement/attribute(forlocalname:uri:).md)
+- [func attribute(forLocalName: String, uri: String?) -> XMLNode?](./attribute%28forlocalname,uri%29.md)
   Returns the attribute node of the receiver that is identified by a local name and URI.
-- [func removeAttribute(forName: String)](xmlelement/removeattribute(forname:).md)
+- [func removeAttribute(forName: String)](./removeattribute%28forname%29.md)
   Removes an attribute node identified by name.
-- [func setAttributesWith([String : String])](xmlelement/setattributeswith(_:).md)
+- [func setAttributesWith([String : String])](./setattributeswith%28_%29.md)
   Sets the attributes of the receiver based on the key-value pairs specified in the passed dictionary.
-- [func setAttributesAs([AnyHashable : Any])](xmlelement/setattributesas(_:).md)
+- [func setAttributesAs([AnyHashable : Any])](./setattributesas%28_%29.md)
   Sets the attributes of the receiver based on the key-value pairs specified in the passed-in dictionary.
 
 

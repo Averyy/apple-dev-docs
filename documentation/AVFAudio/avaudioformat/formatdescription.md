@@ -1,7 +1,8 @@
 # formatDescription
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio format description to use with Core Media APIs.
 
@@ -20,13 +21,18 @@ The audio format description to use with Core Media APIs.
 var formatDescription: CMAudioFormatDescription { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMAudioFormatDescriptionRef formatDescription;
+```
+
 ## See Also
 
-- [var sampleRate: Double](avaudioformat/samplerate.md)
+### Getting audio format values
+- [var sampleRate: Double](./samplerate.md)
   The audio format sampling rate, in hertz.
-- [var channelCount: AVAudioChannelCount](avaudioformat/channelcount.md)
+- [var channelCount: AVAudioChannelCount](./channelcount.md)
   The number of channels of audio data.
-- [var channelLayout: AVAudioChannelLayout?](avaudioformat/channellayout.md)
+- [var channelLayout: AVAudioChannelLayout?](./channellayout.md)
   The underlying audio channel layout.
 
 

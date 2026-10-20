@@ -1,7 +1,8 @@
 # currentOrder
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Gets the customized order of the promotion info objects the represent promoted products.
 
@@ -18,15 +19,15 @@ static var currentOrder: [Product.PromotionInfo] { get async throws }
 
 ## Mentions
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 
-This asynchronous array returns a list of [`Product.PromotionInfo`](product/promotioninfo.md) objects in the custom order they appear in on the device.
+This asynchronous array returns a list of [`Product.PromotionInfo`](../promotioninfo.md) objects in the custom order they appear in on the device.
 
 > **Note**:  This list is empty if you don’t override the order, and the App Store displays the products in their default order.
 
-For information about setting the default order using App Store Connect, see [`Promote Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
+For information about setting the default order using App Store Connect, see [Promote Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases).
 
 
 ---

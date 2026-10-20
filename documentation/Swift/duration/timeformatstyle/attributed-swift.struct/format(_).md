@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a locale-aware attributed string representation from a duration value.
 
@@ -26,7 +27,7 @@ A string representation of the duration, according to the style’s pattern and 
 
 #### Discussion
 
-Use this method when you want to create a format style and repeatedly use it to format different durations. For one-off cases with default formatting, call the [`formatted(_:)`](duration/formatted(_:).md) method of [`Duration`](duration.md) instead.
+Use this method when you want to create a format style and repeatedly use it to format different durations. For one-off cases with default formatting, call the [`formatted(_:)`](../../formatted%28_%29.md) method of [`Duration`](../../../duration.md) instead.
 
 ## Parameters
 

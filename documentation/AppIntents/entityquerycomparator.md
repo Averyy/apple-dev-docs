@@ -1,7 +1,8 @@
 # EntityQueryComparator
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for all concrete entity query comparators.
 
@@ -11,7 +12,7 @@ The base class for all concrete entity query comparators.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ class EntityQueryComparator<Property, PropertyType, InputType, ComparatorMapping
 
 #### Overview
 
-An entity query comparator specifies a particular query comparison that can be made against a [`EntityQueryProperty`](entityqueryproperty.md). For each query property comparator, `mappingTransform` maps the user-supplied `Value` at runtime into a `ComparatorMappingType` type of your choice.
+An entity query comparator specifies a particular query comparison that can be made against a [`EntityQueryProperty`](./entityqueryproperty.md). For each query property comparator, `mappingTransform` maps the user-supplied `Value` at runtime into a `ComparatorMappingType` type of your choice.
 
-The following example illustrates the declaration of a [`EntityQueryProperty`](entityqueryproperty.md) on a fictional `IntentPersonEntity` that allows finding entities by strict equality or prefix on the entity `firstName` property by defining its supported `EntityQueryComparator`s:
+The following example illustrates the declaration of a [`EntityQueryProperty`](./entityqueryproperty.md) on a fictional `IntentPersonEntity` that allows finding entities by strict equality or prefix on the entity `firstName` property by defining its supported `EntityQueryComparator`s:
 
 ```swift
 Property(\.$firstName) {
@@ -45,31 +46,32 @@ Property(\.$firstName) {
 
 #### Resolvers
 
-Additionally, you can supply a set of [`Resolver`](resolver.md)s to fine-tune how the system will transform a user’s supplied value into into the target `Value` type.
+Additionally, you can supply a set of [`Resolver`](./resolver.md)s to fine-tune how the system will transform a user’s supplied value into into the target `Value` type.
 
 ## Relationships
 
 ### Inherited By
-- [ContainsComparator](containscomparator.md)
-- [EqualToComparator](equaltocomparator.md)
-- [GreaterThanComparator](greaterthancomparator.md)
-- [GreaterThanOrEqualToComparator](greaterthanorequaltocomparator.md)
-- [HasPrefixComparator](hasprefixcomparator.md)
-- [HasSuffixComparator](hassuffixcomparator.md)
-- [IsBetweenComparator](isbetweencomparator.md)
-- [LessThanComparator](lessthancomparator.md)
-- [LessThanOrEqualToComparator](lessthanorequaltocomparator.md)
-- [NotEqualToComparator](notequaltocomparator.md)
+- [ContainsComparator](./containscomparator.md)
+- [EqualToComparator](./equaltocomparator.md)
+- [GreaterThanComparator](./greaterthancomparator.md)
+- [GreaterThanOrEqualToComparator](./greaterthanorequaltocomparator.md)
+- [HasPrefixComparator](./hasprefixcomparator.md)
+- [HasSuffixComparator](./hassuffixcomparator.md)
+- [IsBetweenComparator](./isbetweencomparator.md)
+- [LessThanComparator](./lessthancomparator.md)
+- [LessThanOrEqualToComparator](./lessthanorequaltocomparator.md)
+- [NotEqualToComparator](./notequaltocomparator.md)
 
 ## See Also
 
-- [static func buildBlock(AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>...) -> [AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>]](entityquerycomparatorsbuilder/buildblock(_:).md)
-- [struct AnyEntityQueryComparator](anyentityquerycomparator.md)
+### Building query comparators
+- [static func buildBlock(AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>...) -> [AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>]](./entityquerycomparatorsbuilder/buildblock%28_%29.md)
+- [struct AnyEntityQueryComparator](./anyentityquerycomparator.md)
   A type that erases the type information of the underlying query comparator.
-- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-4g6f9.md)
-- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-5tlbq.md)
-- [static func buildExpression<InputType>(ContainsComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-6v6cj.md)
-- [static func buildExpression<InputType>(IsBetweenComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-8jx4k.md)
+- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-4g6f9.md)
+- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-5tlbq.md)
+- [static func buildExpression<InputType>(ContainsComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-6v6cj.md)
+- [static func buildExpression<InputType>(IsBetweenComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-8jx4k.md)
 
 
 ---

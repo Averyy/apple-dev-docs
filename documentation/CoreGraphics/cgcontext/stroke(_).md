@@ -1,7 +1,8 @@
 # stroke(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Paints a rectangular path.
 
@@ -10,7 +11,7 @@ Paints a rectangular path.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Paints a rectangular path.
 
 ```swift
 func stroke(_ rect: CGRect)
+```
+
+```c
+extern void CGContextStrokeRect(CGContextRef c, CGRect rect);
 ```
 
 #### Discussion
@@ -30,19 +35,20 @@ The line width and stroke color of the context’s graphics state are used to pa
 
 ## See Also
 
-- [func clear(CGRect)](cgcontext/clear(_:).md)
+### Drawing Shapes
+- [func clear(CGRect)](./clear%28_%29.md)
   Paints a transparent rectangle.
-- [func fill(CGRect)](cgcontext/fill(_:)-7a0rk.md)
+- [func fill(CGRect)](./fill%28_%29-7a0rk.md)
   Paints the area contained within the provided rectangle, using the fill color in the current graphics state.
-- [func fill([CGRect])](cgcontext/fill(_:)-6jc4y.md)
+- [func fill([CGRect])](./fill%28_%29-6jc4y.md)
   Paints the areas contained within the provided rectangles, using the fill color in the current graphics state.
-- [func fillEllipse(in: CGRect)](cgcontext/fillellipse(in:).md)
+- [func fillEllipse(in: CGRect)](./fillellipse%28in%29.md)
   Paints the area of the ellipse that fits inside the provided rectangle, using the fill color in the current graphics state.
-- [func stroke(CGRect, width: CGFloat)](cgcontext/stroke(_:width:).md)
+- [func stroke(CGRect, width: CGFloat)](./stroke%28_,width%29.md)
   Paints a rectangular path, using the specified line width.
-- [func strokeEllipse(in: CGRect)](cgcontext/strokeellipse(in:).md)
+- [func strokeEllipse(in: CGRect)](./strokeellipse%28in%29.md)
   Strokes an ellipse that fits inside the specified rectangle.
-- [func strokeLineSegments(between: [CGPoint])](cgcontext/strokelinesegments(between:).md)
+- [func strokeLineSegments(between: [CGPoint])](./strokelinesegments%28between%29.md)
   Strokes a sequence of line segments.
 
 

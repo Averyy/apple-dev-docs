@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether VoiceOver is currently enabled.
 
@@ -19,6 +20,10 @@ Whether VoiceOver is currently enabled.
 
 ```swift
 var isEnabled: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isEnabled) BOOL enabled;
 ```
 
 

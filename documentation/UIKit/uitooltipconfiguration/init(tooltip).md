@@ -1,7 +1,8 @@
 # init(toolTip:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tooltip configuration and sets the tooltip text.
 
@@ -15,6 +16,10 @@ Creates a tooltip configuration and sets the tooltip text.
 
 ```swift
 convenience init(toolTip: String)
+```
+
+```objc
++ (instancetype) configurationWithToolTip:(NSString *) toolTip;
 ```
 
 #### Discussion
@@ -31,7 +36,8 @@ let configuration = UIToolTipConfiguration(toolTip: "The color is \(colorName)."
 
 ## See Also
 
-- [convenience init(toolTip: String, in: CGRect)](uitooltipconfiguration/init(tooltip:in:).md)
+### Creating a tooltip configuration
+- [convenience init(toolTip: String, in: CGRect)](./init%28tooltip,in%29.md)
   Creates a tooltip configuration, and sets the tooltip text and hover region within the view or control.
 
 

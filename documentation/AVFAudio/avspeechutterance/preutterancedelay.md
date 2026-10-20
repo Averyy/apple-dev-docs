@@ -1,7 +1,8 @@
 # preUtteranceDelay
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time the speech synthesizer pauses before speaking the utterance.
 
@@ -10,7 +11,7 @@ The amount of time the speech synthesizer pauses before speaking the utterance.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ The amount of time the speech synthesizer pauses before speaking the utterance.
 var preUtteranceDelay: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval preUtteranceDelay;
+```
+
 #### Discussion
 
-When multiple utterances exist in the queue, the speech synthesizer pauses a minimum amount of time equal to the sum of the current utterance’s [`postUtteranceDelay`](avspeechutterance/postutterancedelay.md) and the next utterance’s `preUtteranceDelay`.
+When multiple utterances exist in the queue, the speech synthesizer pauses a minimum amount of time equal to the sum of the current utterance’s [`postUtteranceDelay`](./postutterancedelay.md) and the next utterance’s `preUtteranceDelay`.
 
 ## See Also
 
-- [var rate: Float](avspeechutterance/rate.md)
+### Configuring utterance timing
+- [var rate: Float](./rate.md)
   The rate the speech synthesizer uses when speaking the utterance.
-- [let AVSpeechUtteranceMinimumSpeechRate: Float](avspeechutteranceminimumspeechrate.md)
+- [let AVSpeechUtteranceMinimumSpeechRate: Float](../avspeechutteranceminimumspeechrate.md)
   The minimum rate the speech synthesizer uses when speaking an utterance.
-- [let AVSpeechUtteranceMaximumSpeechRate: Float](avspeechutterancemaximumspeechrate.md)
+- [let AVSpeechUtteranceMaximumSpeechRate: Float](../avspeechutterancemaximumspeechrate.md)
   The maximum rate the speech synthesizer uses when speaking an utterance.
-- [let AVSpeechUtteranceDefaultSpeechRate: Float](avspeechutterancedefaultspeechrate.md)
+- [let AVSpeechUtteranceDefaultSpeechRate: Float](../avspeechutterancedefaultspeechrate.md)
   The default rate the speech synthesizer uses when speaking an utterance.
-- [var postUtteranceDelay: TimeInterval](avspeechutterance/postutterancedelay.md)
+- [var postUtteranceDelay: TimeInterval](./postutterancedelay.md)
   The amount of time the speech synthesizer pauses after speaking an utterance before handling the next utterance in the queue.
 
 

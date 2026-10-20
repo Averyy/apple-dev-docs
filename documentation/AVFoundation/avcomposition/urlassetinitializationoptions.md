@@ -1,7 +1,8 @@
 # urlAssetInitializationOptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options you used to create a composition.
 
@@ -18,6 +19,10 @@ The options you used to create a composition.
 
 ```swift
 var urlAssetInitializationOptions: [String : Any] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * URLAssetInitializationOptions;
 ```
 
 

@@ -1,7 +1,8 @@
 # BNNS.ConvolutionPadding
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe convolution padding modes.
 
@@ -11,8 +12,10 @@ Constants that describe convolution padding modes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,12 +26,12 @@ enum ConvolutionPadding
 ## Topics
 
 ### Convolution Padding Modes
-- [case asymmetric(left: Int, right: Int, up: Int, down: Int)](bnns/convolutionpadding/asymmetric(left:right:up:down:).md)
+- [case asymmetric(left: Int, right: Int, up: Int, down: Int)](./convolutionpadding/asymmetric%28left,right,up,down%29.md)
   A padding mode that supports individual padding values for each side.
-- [BNNS.ConvolutionPadding.symmetric(x:y:)](bnns/convolutionpadding/symmetric(x:y:).md)
+- [BNNS.ConvolutionPadding.symmetric(x:y:)](./convolutionpadding/symmetric%28x,y%29.md)
   A padding mode that provides symmetric padding.
 ### Special Values
-- [static var zero: BNNS.ConvolutionPadding](bnns/convolutionpadding/zero.md)
+- [static var zero: BNNS.ConvolutionPadding](./convolutionpadding/zero.md)
   A padding mode with zero padding on all sides.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type-erased collection that wraps the given collection.
 
@@ -22,7 +23,7 @@ init<C>(_ base: C) where Element == C.Element, C : BidirectionalCollection
 
 #### Discussion
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 ## Parameters
 

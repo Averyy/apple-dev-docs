@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of errors for the coupon code that the user must resolve.
 
@@ -16,6 +17,10 @@ An array of errors for the coupon code that the user must resolve.
 
 ```swift
 var errors: [any Error]! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) NSArray<NSError *> * errors;
 ```
 
 

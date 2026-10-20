@@ -1,7 +1,8 @@
 # Cellular
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures cellular settings.
 
@@ -13,7 +14,7 @@ The payload that configures cellular settings.
 
 ## Declaration
 
-```swift
+```
 object Cellular
 ```
 
@@ -21,7 +22,7 @@ object Cellular
 
 Specify `com.apple.cellular` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ Specify `com.apple.cellular` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -75,9 +76,9 @@ Specify `com.apple.cellular` as the payload type.
 ## Topics
 
 ### Objects
-- [object Cellular.APNsItem](cellular/apnsitem.md)
+- [object Cellular.APNsItem](./cellular/apnsitem.md)
   A dictionary that contains details about an access point name (APN) configuration.
-- [object Cellular.AttachAPN](cellular/attachapn-data.dictionary.md)
+- [object Cellular.AttachAPN](./cellular/attachapn-data.dictionary.md)
   A dictionary that contains details about an attach access point name (APN) configuration.
 
 ## Properties
@@ -87,23 +88,24 @@ Specify `com.apple.cellular` as the payload type.
 
 ## See Also
 
-- [object CellularPrivateNetwork](cellularprivatenetwork.md)
+### Networking
+- [object CellularPrivateNetwork](./cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCachingService](contentcachingservice.md)
+- [object ContentCachingService](./contentcachingservice.md)
   The payload that configures the Content Caching service.
-- [object DNSSettings](dnssettings.md)
+- [object DNSSettings](./dnssettings.md)
   The payload that configures encrypted DNS settings.
-- [object Domains](domains.md)
+- [object Domains](./domains.md)
   The payload that configures the domains under an organization’s management.
-- [object Firewall](firewall.md)
+- [object Firewall](./firewall.md)
   The payload that configures the firewall.
-- [object NetworkUsageRules](networkusagerules.md)
+- [object NetworkUsageRules](./networkusagerules.md)
   The payload that configures network-usage rules.
-- [object Relay](relay.md)
+- [object Relay](./relay.md)
   The payload that configures relay settings.
-- [object WiFi](wifi.md)
+- [object WiFi](./wifi.md)
   The payload that configures Wi-Fi settings.
-- [object WiFiManagedSettings](wifimanagedsettings.md)
+- [object WiFiManagedSettings](./wifimanagedsettings.md)
   The payload that configures managed Wi-Fi settings.
 
 

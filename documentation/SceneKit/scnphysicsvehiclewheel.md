@@ -1,18 +1,19 @@
 # SCNPhysicsVehicleWheel
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The appearance and physical characteristics of an individual wheel associated with an physics vehicle behavior.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,21 @@ The appearance and physical characteristics of an individual wheel associated wi
 class SCNPhysicsVehicleWheel
 ```
 
+```objc
+@interface SCNPhysicsVehicleWheel : NSObject
+```
+
 #### Overview
 
-To use wheels in a vehicle simulation, include them when creating an [`SCNPhysicsVehicle`](scnphysicsvehicle.md) object with the [`init(chassisBody:wheels:)`](scnphysicsvehicle/init(chassisbody:wheels:).md) initializer, then add the vehicle object to your scene’s physics world using the physics world’s [`addBehavior(_:)`](scnphysicsworld/addbehavior(_:).md) method.
+To use wheels in a vehicle simulation, include them when creating an [`SCNPhysicsVehicle`](./scnphysicsvehicle.md) object with the [`init(chassisBody:wheels:)`](./scnphysicsvehicle/init%28chassisbody,wheels%29.md) initializer, then add the vehicle object to your scene’s physics world using the physics world’s [`addBehavior(_:)`](./scnphysicsworld/addbehavior%28_%29.md) method.
 
 ##### Creating a Wheel
 
-You create a wheel with an [`SCNNode`](scnnode.md) object whose contents provide the wheel’s visual representation—a geometry that rotates when the simulated vehicle rolls along a surface. The node representing a wheel must be a child of the node containing the physics body that serves as the vehicle’s chassis, and each wheel in a vehicle must reference a unique node. Typically, you load a scene file that contains a node hierarchy representing the vehicle and all of its wheels. Next, you designate which nodes serve as the body and wheels.
+You create a wheel with an [`SCNNode`](./scnnode.md) object whose contents provide the wheel’s visual representation—a geometry that rotates when the simulated vehicle rolls along a surface. The node representing a wheel must be a child of the node containing the physics body that serves as the vehicle’s chassis, and each wheel in a vehicle must reference a unique node. Typically, you load a scene file that contains a node hierarchy representing the vehicle and all of its wheels. Next, you designate which nodes serve as the body and wheels.
 
-Because the [`SCNPhysicsVehicle`](scnphysicsvehicle.md) behavior that a wheel is attached to manages its participation in the physics simulation, you don’t need to attach a physics body to the [`SCNNode`](scnnode.md) object representing a wheel.
+Because the [`SCNPhysicsVehicle`](./scnphysicsvehicle.md) behavior that a wheel is attached to manages its participation in the physics simulation, you don’t need to attach a physics body to the [`SCNNode`](./scnnode.md) object representing a wheel.
 
-##### Changing a Wheels Physical Properties
+##### Changing a Wheel’s Physical Properties
 
 The properties of a wheel define the geometry of its connection to the vehicle and simulate its size, traction, and suspension. You can change these properties after the wheel and the vehicle containing it have been added to the physics world. In this way, you can simulate effects such as variable suspension and flat tires.
 
@@ -39,58 +44,59 @@ The properties of a wheel define the geometry of its connection to the vehicle a
 ## Topics
 
 ### Creating a Wheel
-- [convenience init(node: SCNNode)](scnphysicsvehiclewheel/init(node:).md)
+- [convenience init(node: SCNNode)](./scnphysicsvehiclewheel/init%28node%29.md)
   Creates a wheel object.
 ### Managing a Wheel’s Connection to a Vehicle
-- [var connectionPosition: SCNVector3](scnphysicsvehiclewheel/connectionposition.md)
+- [var connectionPosition: SCNVector3](./scnphysicsvehiclewheel/connectionposition.md)
   The position of the wheel’s connection to the vehicle’s chassis.
-- [var axle: SCNVector3](scnphysicsvehiclewheel/axle.md)
+- [var axle: SCNVector3](./scnphysicsvehiclewheel/axle.md)
   The direction of the axis that the wheel spins around to move the vehicle.
-- [var steeringAxis: SCNVector3](scnphysicsvehiclewheel/steeringaxis.md)
+- [var steeringAxis: SCNVector3](./scnphysicsvehiclewheel/steeringaxis.md)
   The direction of the axis that the wheel pivots around to steer the vehicle.
 ### Simulating Wheel Size
-- [var radius: CGFloat](scnphysicsvehiclewheel/radius.md)
+- [var radius: CGFloat](./scnphysicsvehiclewheel/radius.md)
   The radius of the wheel.
 ### Simulating Traction
-- [var frictionSlip: CGFloat](scnphysicsvehiclewheel/frictionslip.md)
+- [var frictionSlip: CGFloat](./scnphysicsvehiclewheel/frictionslip.md)
   The traction between the wheel and any surface in contact with it.
 ### Simulating Suspension
-- [var suspensionStiffness: CGFloat](scnphysicsvehiclewheel/suspensionstiffness.md)
+- [var suspensionStiffness: CGFloat](./scnphysicsvehiclewheel/suspensionstiffness.md)
   The spring coefficient of the suspension between the vehicle and the wheel.
-- [var suspensionCompression: CGFloat](scnphysicsvehiclewheel/suspensioncompression.md)
+- [var suspensionCompression: CGFloat](./scnphysicsvehiclewheel/suspensioncompression.md)
   The coefficient that limits the speed of the suspension returning to its rest length when compressed.
-- [var suspensionDamping: CGFloat](scnphysicsvehiclewheel/suspensiondamping.md)
+- [var suspensionDamping: CGFloat](./scnphysicsvehiclewheel/suspensiondamping.md)
   The damping ratio that limits oscillation in the vehicle’s suspension.
-- [var maximumSuspensionTravel: CGFloat](scnphysicsvehiclewheel/maximumsuspensiontravel.md)
+- [var maximumSuspensionTravel: CGFloat](./scnphysicsvehiclewheel/maximumsuspensiontravel.md)
   The maximum distance that the wheel is allowed to move up or down relative to its connection point, in centimeters.
-- [var maximumSuspensionForce: CGFloat](scnphysicsvehiclewheel/maximumsuspensionforce.md)
+- [var maximumSuspensionForce: CGFloat](./scnphysicsvehiclewheel/maximumsuspensionforce.md)
   The maximum force of the suspension between the vehicle and the wheel, in newtons.
-- [var suspensionRestLength: CGFloat](scnphysicsvehiclewheel/suspensionrestlength.md)
+- [var suspensionRestLength: CGFloat](./scnphysicsvehiclewheel/suspensionrestlength.md)
   The resting length of the suspension, in meters.
 ### Inspecting the Wheel Node
-- [var node: SCNNode](scnphysicsvehiclewheel/node.md)
+- [var node: SCNNode](./scnphysicsvehiclewheel/node.md)
   The node providing the wheel’s visual representation.
 ### Initializers
-- [init?(coder: NSCoder)](scnphysicsvehiclewheel/init(coder:).md)
+- [init?(coder: NSCoder)](./scnphysicsvehiclewheel/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SCNPhysicsVehicle](scnphysicsvehicle.md)
+### Vehicle Simulation
+- [class SCNPhysicsVehicle](./scnphysicsvehicle.md)
   A physics behavior that modifies a physics body to behave like a car, motorcycle, or other wheeled vehicle.
 
 

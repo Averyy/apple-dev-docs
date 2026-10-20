@@ -1,7 +1,8 @@
 # distortionShader(_:maxSampleOffset:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that applies `shader` as a geometric distortion effect on the location of each pixel.
 
@@ -40,9 +41,10 @@ where `position` is the user-space coordinates of the destination pixel applied 
 
 ## See Also
 
-- [static func colorShader(Shader) -> GraphicsContext.Filter](graphicscontext/filter/colorshader(_:).md)
+### Using a custom Metal shader
+- [static func colorShader(Shader) -> GraphicsContext.Filter](./colorshader%28_%29.md)
   Returns a filter that applies `shader` to the color of each source pixel.
-- [static func layerShader(Shader, maxSampleOffset: CGSize) -> GraphicsContext.Filter](graphicscontext/filter/layershader(_:maxsampleoffset:).md)
+- [static func layerShader(Shader, maxSampleOffset: CGSize) -> GraphicsContext.Filter](./layershader%28_,maxsampleoffset%29.md)
   Returns a filter that applies `shader` to the contents of the source layer.
 
 

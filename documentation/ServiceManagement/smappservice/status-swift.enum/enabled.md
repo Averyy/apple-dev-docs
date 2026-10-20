@@ -1,7 +1,8 @@
 # SMAppService.Status.enabled
 
 **Framework**: Service Management  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service has been successfully registered and is eligible to run.
 
@@ -15,13 +16,18 @@ The service has been successfully registered and is eligible to run.
 case enabled
 ```
 
+```c
+SMAppServiceStatusEnabled
+```
+
 ## See Also
 
-- [SMAppService.Status.notRegistered](smappservice/status-swift.enum/notregistered.md)
+### Constants
+- [SMAppService.Status.notRegistered](./notregistered.md)
   The service hasn’t registered with the Service Management framework, or the service attempted to reregister after it was already registered.
-- [SMAppService.Status.requiresApproval](smappservice/status-swift.enum/requiresapproval.md)
+- [SMAppService.Status.requiresApproval](./requiresapproval.md)
   The service has been successfully registered, but the user needs to take action in System Preferences.
-- [SMAppService.Status.notFound](smappservice/status-swift.enum/notfound.md)
+- [SMAppService.Status.notFound](./notfound.md)
   An error occurred and the framework couldn’t find this service.
 
 

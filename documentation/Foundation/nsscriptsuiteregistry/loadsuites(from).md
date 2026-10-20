@@ -1,9 +1,10 @@
 # loadSuites(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Loads the suite definitions in bundle `aBundle`, invoking [`loadSuite(with:from:)`](nsscriptsuiteregistry/loadsuite(with:from:).md) for each suite found.
+Loads the suite definitions in bundle `aBundle`, invoking [`loadSuite(with:from:)`](./loadsuite%28with,from%29.md) for each suite found.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,13 +16,18 @@ Loads the suite definitions in bundle `aBundle`, invoking [`loadSuite(with:from:
 func loadSuites(from bundle: Bundle)
 ```
 
+```objc
+- (void) loadSuitesFromBundle:(NSBundle *) bundle;
+```
+
 #### Discussion
 
 If errors occur while method is parsing a suite-definition file, the method logs error messages to the console.
 
 ## See Also
 
-- [func loadSuite(with: [AnyHashable : Any], from: Bundle)](nsscriptsuiteregistry/loadsuite(with:from:).md)
+### Loading Suites
+- [func loadSuite(with: [AnyHashable : Any], from: Bundle)](./loadsuite%28with,from%29.md)
   Loads the suite definition encapsulated in `dictionary`; previously, this suite definition was parsed from a `.scriptSuite` property list contained in a framework or in `bundle`.
 
 

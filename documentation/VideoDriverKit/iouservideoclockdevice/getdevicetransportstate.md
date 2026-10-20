@@ -1,7 +1,8 @@
 # GetDeviceTransportState
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the transport state of the device.
 
@@ -10,7 +11,7 @@ Gets the transport state of the device.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoDeviceTransportState GetDeviceTransportState();
 ```
 
@@ -20,7 +21,8 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [IOUserVideoDeviceTransportState](videodriverkit/iouservideodevicetransportstate.md)
+### Working with transport states
+- [IOUserVideoDeviceTransportState](../videodriverkit-page/iouservideodevicetransportstate.md)
   The current transport state of the device.
 
 

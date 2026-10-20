@@ -1,7 +1,8 @@
 # onChange(of:initial:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a modifier for this view that fires an action when a specific value changes.
 
@@ -21,9 +22,16 @@ nonisolated
 func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping () -> Void) -> some View where V : Equatable
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping (V, V) -> Void) -> some View where V : Equatable
+```
+
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
 #### Return Value
 
@@ -63,7 +71,8 @@ struct PlayerView: View {
 
 ## See Also
 
-- [func onReceive<P>(P, perform: (P.Output) -> Void) -> some View](view/onreceive(_:perform:).md)
+### Responding to data changes
+- [func onReceive<P>(P, perform: (P.Output) -> Void) -> some View](./onreceive%28_,perform%29.md)
   Adds an action to perform when this view detects data emitted by the given publisher.
 
 

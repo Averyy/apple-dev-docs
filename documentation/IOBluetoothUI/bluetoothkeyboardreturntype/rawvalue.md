@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: IOBluetooth UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -14,10 +15,11 @@ var rawValue: UInt32
 
 ## See Also
 
-- [var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardansireturn.md)
-- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardisoreturn.md)
-- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardjisreturn.md)
-- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardnoreturn.md)
+### Instance Properties
+- [var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType](../kbluetoothkeyboardansireturn.md)
+- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](../kbluetoothkeyboardisoreturn.md)
+- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](../kbluetoothkeyboardjisreturn.md)
+- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](../kbluetoothkeyboardnoreturn.md)
 
 
 ---

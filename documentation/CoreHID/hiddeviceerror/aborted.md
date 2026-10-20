@@ -1,7 +1,8 @@
 # HIDDeviceError.aborted
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request was aborted.
 

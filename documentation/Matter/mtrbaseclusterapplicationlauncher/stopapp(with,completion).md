@@ -1,7 +1,8 @@
 # stopApp(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stopApp(with params: MTRApplicationLauncherClusterStopAppParams?, completion: @escaping @Sendable (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func stopApp(with params: MTRApplicationLauncherClusterStopAppParams?) async throws -> MTRApplicationLauncherClusterLauncherResponseParams
+```
+
+```objc
+- (void) stopAppWithParams:(MTRApplicationLauncherClusterStopAppParams *) params completion:(void (^)(MTRApplicationLauncherClusterLauncherResponseParams *data, NSError *error)) completion;
 ```
 
 

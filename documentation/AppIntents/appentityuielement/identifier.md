@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the app entity that represents the UI element.
 

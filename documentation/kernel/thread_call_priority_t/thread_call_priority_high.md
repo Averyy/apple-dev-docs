@@ -1,14 +1,15 @@
 # THREAD_CALL_PRIORITY_HIGH
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 THREAD_CALL_PRIORITY_HIGH = 0
 ```
 

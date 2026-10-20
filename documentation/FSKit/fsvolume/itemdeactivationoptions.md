@@ -1,7 +1,8 @@
 # FSVolume.ItemDeactivationOptions
 
 **Framework**: FSKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options to specify the item deactivation policy.
 
@@ -14,6 +15,10 @@ Options to specify the item deactivation policy.
 struct ItemDeactivationOptions
 ```
 
+```c
+enum FSItemDeactivationOptions : NSUInteger;
+```
+
 #### Overview
 
 Callers may want to set a deactivation policy because `FSVolume/ItemDeactivation/deactivateItem(_:)` processing blocks the kernel. Setting a deactivation policy allows the file system to take action at a definitive point in the item’s life cycle. These options allow the file system to instruct the FSKit kernel of which circumstances require the expense of a round-trip call to the module.
@@ -23,30 +28,31 @@ Callers may want to set a deactivation policy because `FSVolume/ItemDeactivation
 ## Topics
 
 ### Declaring deactivation options
-- [static var forRemovedItems: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/forremoveditems.md)
+- [static var forRemovedItems: FSVolume.ItemDeactivationOptions](./itemdeactivationoptions/forremoveditems.md)
   An option to process deactivation for open-unlinked items at the moment of last close.
-- [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/forpreallocateditems.md)
+- [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](./itemdeactivationoptions/forpreallocateditems.md)
   An option to process deactivation for for files with preallocated space.
-- [static var always: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/always.md)
+- [static var always: FSVolume.ItemDeactivationOptions](./itemdeactivationoptions/always.md)
   An option to always perform deactivation calls.
 ### Working with raw values
-- [init(rawValue: UInt)](fsvolume/itemdeactivationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./itemdeactivationoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var itemDeactivationPolicy: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivation/itemdeactivationpolicy.md)
+### Setting deactivation policy
+- [var itemDeactivationPolicy: FSVolume.ItemDeactivationOptions](./itemdeactivation/itemdeactivationpolicy.md)
   A property that tells FSKit to which types of items the deactivation applies, if any.
 
 

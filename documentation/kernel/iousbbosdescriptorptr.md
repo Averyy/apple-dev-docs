@@ -1,7 +1,8 @@
 # IOUSBBOSDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a structure for storing a binary object store (BOS) descriptor.
 
@@ -10,13 +11,14 @@ A pointer to a structure for storing a binary object store (BOS) descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBBOSDescriptor *IOUSBBOSDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBBOSDescriptor](iousbbosdescriptor.md)
+### BOS Descriptors
+- [IOUSBBOSDescriptor](./iousbbosdescriptor.md)
   The structure for storing a binary object store (BOS) descriptor.
 
 

@@ -1,7 +1,8 @@
 # ForecastPeriodSummary
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The summary for a specified period in the minute forecast.
 
@@ -10,7 +11,7 @@ The summary for a specified period in the minute forecast.
 
 ## Declaration
 
-```swift
+```
 object ForecastPeriodSummary
 ```
 
@@ -24,7 +25,8 @@ object ForecastPeriodSummary
 
 ## See Also
 
-- [object ForecastMinute](forecastminute.md)
+### Obtaining minute-to-minute forecast weather
+- [object ForecastMinute](./forecastminute.md)
   The precipitation forecast for a specified minute.
 
 

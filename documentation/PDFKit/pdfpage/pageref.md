@@ -1,7 +1,8 @@
 # pageRef
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var pageRef: CGPDFPage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CGPDFPageRef pageRef;
+```
+
 ## See Also
 
-- [var dataRepresentation: Data?](pdfpage/datarepresentation.md)
+### Instance Properties
+- [var dataRepresentation: Data?](./datarepresentation.md)
   Returns the PDF data (that is, a PDF document) representing this page. This method does not preserve external page links.
 
 

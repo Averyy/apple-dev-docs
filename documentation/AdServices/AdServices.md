@@ -1,7 +1,8 @@
 # AdServices
 
 **Framework**: AdServices  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Attribute app-download campaigns that originate from the App Store on iOS devices.
 
@@ -18,27 +19,27 @@ The Apple Ads Attribution API is a solution that combines the `AdServices` frame
 
 The following diagram illustrates using the AdServices framework in combination with a RESTful endpoint to retrieve attribution data:
 
-![A diagram showing the sequence of interaction between the AdServices framework and RESTful API.](/images/com.apple.AdServices/ad_services-1@2x.png)
+![A diagram showing the sequence of interaction between the AdServices framework and RESTful API.](https://developer.apple.com/tutorials/images/com.apple.AdServices/ad_services-1@2x.png)
 
 - In step 1, request a token from the `AdServices` framework.
 - In step 2, the `AdServices` framework generates a token.
-- In step 3, use the token in a RESTful API request to retrieve an attribution record from Apple’s attribution server. For more detail, see [`attributionToken()`](aaattribution/attributiontoken().md).
-- In step 4, the attribution record that returns has key-value pairs that correspond to your campaigns in the Apple Ads Campaign Management API. For more detail, see [`Attribution payload descriptions`](aaattribution/attributiontoken()#Attribution-payload-descriptions.md).
+- In step 3, use the token in a RESTful API request to retrieve an attribution record from Apple’s attribution server. For more detail, see [`attributionToken()`](./aaattribution/attributiontoken%28%29.md).
+- In step 4, the attribution record that returns has key-value pairs that correspond to your campaigns in the Apple Ads Campaign Management API. For more detail, see [Attribution payload descriptions](./aaattribution/attributiontoken%28%29.md#Attribution-payload-descriptions).
 
 ## Topics
 
 ### Essentials
-- [Changelog](changelog.md)
+- [Changelog](./changelog.md)
   A log of Ad Services framework updates.
 ### Tokens
-- [class AAAttribution](aaattribution.md)
+- [class AAAttribution](./aaattribution.md)
   The parent class that the framework uses to request a token.
 ### Errors
-- [struct AAAttributionError](aaattributionerror.md)
+- [struct AAAttributionError](./aaattributionerror.md)
   The error code that the parent class issues.
-- [let AAAttributionErrorDomain: String](aaattributionerrordomain.md)
+- [let AAAttributionErrorDomain: String](./aaattributionerrordomain.md)
   The framework attribution error domain.
-- [AAAttributionError.Code](aaattributionerror/code.md)
+- [AAAttributionError.Code](./aaattributionerror/code.md)
   The error code that the parent class issues.
 
 

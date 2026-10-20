@@ -1,7 +1,8 @@
 # capsule(style:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A capsule shape aligned inside the frame of the view containing it.
 
@@ -21,23 +22,26 @@ A capsule shape aligned inside the frame of the view containing it.
 static func capsule(style: RoundedCornerStyle) -> Self
 ```
 
+Available when `Self` is `Capsule`.
+
 #### Discussion
 
 A capsule shape is equivalent to a rounded rectangle where the corner radius is chosen as half the length of the rectangle’s smallest edge.
 
 ## See Also
 
-- [static var buttonBorder: ButtonBorderShape](shape/buttonborder.md)
+### Getting standard shapes
+- [static var buttonBorder: ButtonBorderShape](./buttonborder.md)
   A shape that defers to the environment to determine the resolved button border shape.
-- [static var capsule: Capsule](shape/capsule.md)
+- [static var capsule: Capsule](./capsule.md)
   A capsule shape aligned inside the frame of the view containing it.
-- [static var circle: Circle](shape/circle.md)
+- [static var circle: Circle](./circle.md)
   A circle centered on the frame of the view containing it.
-- [static var containerRelative: ContainerRelativeShape](shape/containerrelative.md)
+- [static var containerRelative: ContainerRelativeShape](./containerrelative.md)
   A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
-- [static var ellipse: Ellipse](shape/ellipse.md)
+- [static var ellipse: Ellipse](./ellipse.md)
   An ellipse aligned inside the frame of the view containing it.
-- [static var textInputBorder: TextInputBorderShape](shape/textinputborder.md)
+- [static var textInputBorder: TextInputBorderShape](./textinputborder.md)
   A shape that defers to the environment to determine the resolved text input border shape.
 
 

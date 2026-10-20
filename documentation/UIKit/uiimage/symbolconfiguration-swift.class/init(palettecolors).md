@@ -1,7 +1,8 @@
 # init(paletteColors:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color configuration with a color scheme from a palette of multiple colors.
 
@@ -19,6 +20,10 @@ Creates a color configuration with a color scheme from a palette of multiple col
 convenience init(paletteColors: [UIColor])
 ```
 
+```objc
++ (instancetype) configurationWithPaletteColors:(NSArray<UIColor *> *) paletteColors;
+```
+
 #### Discussion
 
 When you create an image with this configuration, the system applies each color to the corresponding layer in the symbol layer hierarchy.
@@ -27,10 +32,10 @@ If the symbol has only two nonconsecutive layers (primary and tertiary), specify
 
 For this color configuration to have an effect, your symbol image must have the following:
 
-- Its [`renderingMode`](uiimage/renderingmode-swift.property.md) set to [`UIImage.RenderingMode.alwaysTemplate`](uiimage/renderingmode-swift.enum/alwaystemplate.md) or [`UIImage.RenderingMode.automatic`](uiimage/renderingmode-swift.enum/automatic.md).
+- Its [`renderingMode`](../renderingmode-swift.property.md) set to [`UIImage.RenderingMode.alwaysTemplate`](../renderingmode-swift.enum/alwaystemplate.md) or [`UIImage.RenderingMode.automatic`](../renderingmode-swift.enum/automatic.md).
 - Hierarchical layer annotations. If your symbol doesn’t have hierarchical layer annotations, the resulting image is a monochrome (template) symbol image.
 
-This color configuration can’t combine with hierarchical color configurations that you create with [`init(hierarchicalColor:)`](uiimage/symbolconfiguration-swift.class/init(hierarchicalcolor:).md). If you attempt to combine this configuration with a hierarchical color configuration, the last configuration that you specify takes precedence, overwriting the previous color configuration.
+This color configuration can’t combine with hierarchical color configurations that you create with [`init(hierarchicalColor:)`](./init%28hierarchicalcolor%29.md). If you attempt to combine this configuration with a hierarchical color configuration, the last configuration that you specify takes precedence, overwriting the previous color configuration.
 
 ## Parameters
 
@@ -38,11 +43,12 @@ This color configuration can’t combine with hierarchical color configurations 
 
 ## See Also
 
-- [convenience init(hierarchicalColor: UIColor)](uiimage/symbolconfiguration-swift.class/init(hierarchicalcolor:).md)
+### Creating a color configuration
+- [convenience init(hierarchicalColor: UIColor)](./init%28hierarchicalcolor%29.md)
   Creates a color configuration with a color scheme that originates from one color.
-- [class func preferringMulticolor() -> Self](uiimage/symbolconfiguration-swift.class/preferringmulticolor.md)
+- [class func preferringMulticolor() -> Self](./preferringmulticolor%28%29.md)
   Creates a color configuration that specifies that the symbol image uses its multicolor variant, if one exists.
-- [class func preferringMonochrome() -> Self](uiimage/symbolconfiguration-swift.class/preferringmonochrome.md)
+- [class func preferringMonochrome() -> Self](./preferringmonochrome%28%29.md)
   Creates a color configuration that specifies that the symbol image uses its monochrome variant.
 
 

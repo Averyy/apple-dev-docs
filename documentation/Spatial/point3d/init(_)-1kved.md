@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point from the specified single-precision vector.
 
@@ -11,7 +12,7 @@ Creates a point from the specified single-precision vector.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,21 +27,22 @@ init(_ xyz: simd_float3)
 
 ## See Also
 
-- [init()](point3d/init.md)
+### Creating a 3D point structure
+- [init()](./init%28%29.md)
   Creates a point.
-- [init(x: Double, y: Double, z: Double)](point3d/init(x:y:z:)-3lary.md)
+- [init(x: Double, y: Double, z: Double)](./init%28x,y,z%29-3lary.md)
   Creates a point from the specified double-precision values.
-- [init<T>(x: T, y: T, z: T)](point3d/init(x:y:z:)-28jhw.md)
+- [init<T>(x: T, y: T, z: T)](./init%28x,y,z%29-28jhw.md)
   Creates a point from the specified floating-point values.
-- [init(vector: simd_double3)](point3d/init(vector:).md)
+- [init(vector: simd_double3)](./init%28vector%29.md)
   Creates a point from the specified double-precision vector.
-- [init(Size3D)](point3d/init(_:)-1f1ha.md)
+- [init(Size3D)](./init%28_%29-1f1ha.md)
   Creates a point from the specified Spatial size structure.
-- [init(Vector3D)](point3d/init(_:)-34plj.md)
+- [init(Vector3D)](./init%28_%29-34plj.md)
   Creates a point from the specified Spatial vector.
-- [init(simd_double3)](point3d/init(_:)-4gu20.md)
+- [init(simd_double3)](./init%28_%29-4gu20.md)
   Creates a point from the specified double-precision vector.
-- [init(SphericalCoordinates3D)](point3d/init(_:)-50tw4.md)
+- [init(SphericalCoordinates3D)](./init%28_%29-50tw4.md)
   Returns a Spatial point that represents the Cartesian coordinates of the specified spherical coordinates structure.
 
 

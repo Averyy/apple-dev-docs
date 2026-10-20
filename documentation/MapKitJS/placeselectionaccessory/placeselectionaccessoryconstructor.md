@@ -1,7 +1,8 @@
 # new PlaceSelectionAccessory(options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a new place selection accessory.
 
@@ -10,7 +11,7 @@ Creates a new place selection accessory.
 
 ## Declaration
 
-```swift
+```
 constructor(options?: PlaceSelectionAccessoryOptions);
 ```
 

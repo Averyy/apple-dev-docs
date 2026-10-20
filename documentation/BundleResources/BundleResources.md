@@ -1,7 +1,8 @@
 # Bundle Resources
 
 **Framework**: Bundle Resources  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Resources located in an app, framework, or plugin bundle.
 
@@ -21,17 +22,17 @@ A *bundle* is a directory with a standardized hierarchical structure that holds 
 ## Topics
 
 ### Property Lists
-- [Entitlements](entitlements.md)
+- [Entitlements](./entitlements.md)
   Key-value pairs that grant an executable permission to use a service or technology.
-- [Information Property List](information-property-list.md)
+- [Information Property List](./information-property-list.md)
   A resource containing key-value pairs that identify and configure a bundle.
-- [Privacy manifest files](privacy-manifest-files.md)
+- [Privacy manifest files](./privacy-manifest-files.md)
   Describe the data your app or third-party SDK collects and the required reasons APIs it uses.
 ### Structure
-- [Placing content in a bundle](placing-content-in-a-bundle.md)
+- [Placing content in a bundle](./placing-content-in-a-bundle.md)
   Place bundle content in the correct location based on its type.
 ### Universal links service
-- [object applinks](applinks.md)
+- [object applinks](./applinks.md)
   The root object for a universal links service definition.
 
 

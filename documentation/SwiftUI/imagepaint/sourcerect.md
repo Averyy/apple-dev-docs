@@ -1,7 +1,8 @@
 # sourceRect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unit-space rectangle defining how much of the source image to draw.
 
@@ -26,9 +27,10 @@ The results are undefined if this rectangle selects areas outside the `[0, 1]` r
 
 ## See Also
 
-- [var image: Image](imagepaint/image.md)
+### Configuring the image paint style
+- [var image: Image](./image.md)
   The image to be drawn.
-- [var scale: CGFloat](imagepaint/scale.md)
+- [var scale: CGFloat](./scale.md)
   A scale factor applied to the image while being drawn.
 
 

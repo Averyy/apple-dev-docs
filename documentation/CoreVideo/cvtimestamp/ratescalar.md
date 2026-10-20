@@ -1,7 +1,8 @@
 # rateScalar
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current rate of the device as measured by the timestamps, divided by the nominal rate.
 
@@ -20,22 +21,27 @@ The current rate of the device as measured by the timestamps, divided by the nom
 var rateScalar: Double
 ```
 
+```c
+double rateScalar;
+```
+
 ## See Also
 
-- [var flags: UInt64](cvtimestamp/flags.md)
+### Properties
+- [var flags: UInt64](./flags.md)
   A bit field containing additional information about the timestamp.
-- [var hostTime: UInt64](cvtimestamp/hosttime.md)
+- [var hostTime: UInt64](./hosttime.md)
   The system time measured by the timestamp.
-- [var reserved: UInt64](cvtimestamp/reserved.md)
+- [var reserved: UInt64](./reserved.md)
   Reserved. Do not use.
-- [var smpteTime: CVSMPTETime](cvtimestamp/smptetime.md)
+- [var smpteTime: CVSMPTETime](./smptetime.md)
   The SMPTE time representation of the timestamp.
-- [var version: UInt32](cvtimestamp/version.md)
+- [var version: UInt32](./version.md)
   The current `CVTimeStamp` structure is version 0. Some functions require you to specify a version when passing in a timestamp structure to be filled.
-- [var videoRefreshPeriod: Int64](cvtimestamp/videorefreshperiod.md)
-- [var videoTime: Int64](cvtimestamp/videotime.md)
+- [var videoRefreshPeriod: Int64](./videorefreshperiod.md)
+- [var videoTime: Int64](./videotime.md)
   The start of a frame (or field for interlaced video).
-- [var videoTimeScale: Int32](cvtimestamp/videotimescale.md)
+- [var videoTimeScale: Int32](./videotimescale.md)
   The scale (in units per second) of the `videoTimeScale` and `videoRefreshPeriod` fields.
 
 

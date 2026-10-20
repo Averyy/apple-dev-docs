@@ -1,7 +1,8 @@
 # AttributedString.AttributeRunBoundaries.character(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+

@@ -1,7 +1,8 @@
 # CLKComplicationFamily.circularSmall
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A small circular area that ClockKit displays on the Color watch face.
 
@@ -14,11 +15,15 @@ A small circular area that ClockKit displays on the Color watch face.
 case circularSmall
 ```
 
+```c
+CLKComplicationFamilyCircularSmall
+```
+
 #### Discussion
 
 The following figure shows the size and location of the circular small complication.
 
-![Diagram showing the size and position of a circular small complication.](/images/com.apple.clockkit/media-2933721@2x.png)
+![Diagram showing the size and position of a circular small complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2933721@2x.png)
 
 
 ---

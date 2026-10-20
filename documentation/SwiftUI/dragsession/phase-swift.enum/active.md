@@ -1,7 +1,8 @@
 # DragSession.Phase.active
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drag has moved to a new location.
 

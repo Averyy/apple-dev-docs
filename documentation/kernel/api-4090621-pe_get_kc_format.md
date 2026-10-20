@@ -1,14 +1,15 @@
 # PE_get_kc_format
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 bool PE_get_kc_format(kc_kind_t type, kc_format_t *format);
 ```
 

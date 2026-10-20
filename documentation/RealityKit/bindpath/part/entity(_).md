@@ -1,7 +1,8 @@
 # BindPath.Part.entity(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A path component for a nested entity.
 
@@ -11,7 +12,7 @@ A path component for a nested entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ This path component indicates that another component follows, which either conta
 
 ## See Also
 
-- [BindPath.Part.anchorEntity(_:)](bindpath/part/anchorentity(_:).md)
+### Choosing the path component
+- [BindPath.Part.anchorEntity(_:)](./anchorentity%28_%29.md)
   A path component for the scene’s anchor entity.
-- [BindPath.Part.jointTransforms](bindpath/part/jointtransforms.md)
+- [BindPath.Part.jointTransforms](./jointtransforms.md)
   A path component to animate joint transforms.
-- [BindPath.Part.parameter(_:)](bindpath/part/parameter(_:).md)
+- [BindPath.Part.parameter(_:)](./parameter%28_%29.md)
   A path component to animate a named parameter.
-- [BindPath.Part.scene(_:)](bindpath/part/scene(_:).md)
+- [BindPath.Part.scene(_:)](./scene%28_%29.md)
   A path component for a nested scene.
-- [BindPath.Part.transform](bindpath/part/transform.md)
+- [BindPath.Part.transform](./transform.md)
   A path component to animate a transform.
 
 

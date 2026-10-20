@@ -1,7 +1,8 @@
 # addingProduct(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of adding the product of the two given values to this value, computed without intermediate rounding.
 
@@ -20,7 +21,7 @@ The product of `lhs` and `rhs`, added to this value.
 
 #### Discussion
 
-This method is equivalent to the C `fma` function and implements the `fusedMultiplyAdd` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This method is equivalent to the C `fma` function and implements the `fusedMultiplyAdd` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

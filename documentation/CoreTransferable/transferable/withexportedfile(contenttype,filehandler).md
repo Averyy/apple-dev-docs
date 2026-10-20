@@ -1,7 +1,8 @@
 # withExportedFile(contentType:fileHandler:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Using the type’s `Transferable` conformance implementation, exports a value by writing it to disk and removes when not needed.
 
@@ -22,7 +23,7 @@ func withExportedFile<Result>(contentType: UTType?, fileHandler: (URL) async thr
 
 #### Discussion
 
-This converts a [`Transferable`](transferable.md) item into a temporary file, and removes it after `fileHandler` closure returns. The default implementation of this function is available to all types that conform to `Transferable` protocol.
+This converts a [`Transferable`](../transferable.md) item into a temporary file, and removes it after `fileHandler` closure returns. The default implementation of this function is available to all types that conform to `Transferable` protocol.
 
 ## Parameters
 

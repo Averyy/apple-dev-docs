@@ -1,6 +1,8 @@
 # Transferring Data Between Bluetooth Low Energy Devices
 
-**Framework**: Core Bluetooth
+**Framework**: Core Bluetooth  
+**Role**: Sample Code  
+**Download**: [TransferringDataBetweenBluetoothLowEnergyDevices.zip](https://docs-assets.developer.apple.com/published/68b84653b34e/TransferringDataBetweenBluetoothLowEnergyDevices.zip)
 
 Create a Bluetooth low energy central and peripheral device, and allow them to discover each other and exchange data.
 
@@ -12,7 +14,7 @@ Create a Bluetooth low energy central and peripheral device, and allow them to d
 
 #### Overview
 
-This sample shows how to transfer data between two iOS devices, with one acting as a Bluetooth central and the other as a peripheral, by using a [`CBCharacteristic`](cbcharacteristic.md) on the peripheral side that changes its value. The value change is automatically picked up on the central side. The sample also shows how the central side can write data to a [`CBCharacteristic`](cbcharacteristic.md) on the peripheral side.
+This sample shows how to transfer data between two iOS devices, with one acting as a Bluetooth central and the other as a peripheral, by using a [`CBCharacteristic`](./cbcharacteristic.md) on the peripheral side that changes its value. The value change is automatically picked up on the central side. The sample also shows how the central side can write data to a [`CBCharacteristic`](./cbcharacteristic.md) on the peripheral side.
 
 This sample shows how to handle flow control in this scenario. It also covers a rudimentary way to use the Received Signal Strength Indicator (RSSI) value to determine whether data transfer is feasible.
 
@@ -26,14 +28,14 @@ This sample shows how to handle flow control in this scenario. It also covers a 
 
 ##### Discover Bluetooth Peripherals and Connect to Them
 
-The device running in central mode creates a [`CBCentralManager`](cbcentralmanager.md), assigning the `CentralViewController` as the manager’s delegate. It calls [`scanForPeripherals(withServices:options:)`](cbcentralmanager/scanforperipherals(withservices:options:).md) to discover other Bluetooth devices, passing in the UUID of the service it’s searching for.
+The device running in central mode creates a [`CBCentralManager`](./cbcentralmanager.md), assigning the `CentralViewController` as the manager’s delegate. It calls [`scanForPeripherals`](./cbcentralmanager/scanforperipherals%28withservices,options%29.md) to discover other Bluetooth devices, passing in the UUID of the service it’s searching for.
 
 ```swift
 centralManager.scanForPeripherals(withServices: [TransferService.serviceUUID],
                                    options: [CBCentralManagerScanOptionAllowDuplicatesKey: true])
 ```
 
-When the central manager discovers a peripheral with a matching service UUID, it calls [`centralManager(_:didDiscover:advertisementData:rssi:)`](cbcentralmanagerdelegate/centralmanager(_:diddiscover:advertisementdata:rssi:).md). The sample’s implementation of this method uses the `rssi` (Received Signal Strength Indicator) parameter to determine whether the signal is strong enough to transfer data. RSSI values are provided as negative numbers, with a theortetical maximum of `0`. The sample proceeds with transfer if the `rssi` is greater than or equal to `-50`. If the peripheral’s signal is strong enough, the method saves the peripheral as the property `discoveredPeripheral` and calls [`connect(_:options:)`](cbcentralmanager/connect(_:options:).md) to connect to it.
+When the central manager discovers a peripheral with a matching service UUID, it calls [`centralManager(_:didDiscover:advertisementData:rssi:)`](./cbcentralmanagerdelegate/centralmanager%28_,diddiscover,advertisementdata,rssi%29.md). The sample’s implementation of this method uses the `rssi` (Received Signal Strength Indicator) parameter to determine whether the signal is strong enough to transfer data. RSSI values are provided as negative numbers, with a theortetical maximum of `0`. The sample proceeds with transfer if the `rssi` is greater than or equal to `-50`. If the peripheral’s signal is strong enough, the method saves the peripheral as the property `discoveredPeripheral` and calls [`connect`](./cbcentralmanager/connect%28_,options%29.md) to connect to it.
 
 ```swift
 func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral,
@@ -62,11 +64,11 @@ func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPerip
 }
 ```
 
-##### When the Peripheral Receives a Connection Send the Data
+##### When the Peripheral Receives a Connection, Send the Data
 
-The device running in peripheral mode creates a [`CBPeripheralManager`](cbperipheralmanager.md) and assigns its `PeripheralViewController` as the manager’s delegate.
+The device running in peripheral mode creates a [`CBPeripheralManager`](./cbperipheralmanager.md) and assigns its `PeripheralViewController` as the manager’s delegate.
 
-When the [`peripheralManagerDidUpdateState(_:)`](cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_:).md) method indicates that Bluetooth has powered on, the sample calls a private `setupPeripheral()` method to create a [`CBMutableCharacteristic`](cbmutablecharacteristic.md) called `transferCharacteristic`. It then creates a [`CBMutableService`](cbmutableservice.md) from the characteristic and adds the service to the [`CBPeripheralManager`](cbperipheralmanager.md).
+When the [`peripheralManagerDidUpdateState`](./cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate%28_%29.md) method indicates that Bluetooth has powered on, the sample calls a private `setupPeripheral()` method to create a [`CBMutableCharacteristic`](./cbmutablecharacteristic.md) called `transferCharacteristic`. It then creates a [`CBMutableService`](./cbmutableservice.md) from the characteristic and adds the service to the [`CBPeripheralManager`](./cbperipheralmanager.md).
 
 ```swift
 private func setupPeripheral() {
@@ -94,7 +96,7 @@ private func setupPeripheral() {
 }
 ```
 
-The user interface provides a [`UISwitch`](https://developer.apple.com/documentation/uikit/uiswitch) that starts or stops advertising of the peripheral’s service UUID.
+The user interface provides a [`UISwitch`](../UIKit/uiswitch.md) that starts or stops advertising of the peripheral’s service UUID.
 
 ```swift
 @IBAction func switchChanged(_ sender: Any) {
@@ -109,11 +111,11 @@ The user interface provides a [`UISwitch`](https://developer.apple.com/documenta
 
 Once the central device discovers and connects to the peripheral, the peripheral side sends the data from the text field to the central. `PeripheralViewController` sends the data in chunks — each sized to the maximum value the central can receive — by setting the value of its `transferCharacteristic` property to the latest chunk. When finished, it sends the value `EOM` (for “end of message”).
 
-##### When the Central Receives the Data Update the User Interface
+##### When the Central Receives the Data, Update the User Interface
 
-Back on the central device, a call to the central manager delegate’s [`peripheral(_:didDiscoverCharacteristicsFor:error:)`](cbperipheraldelegate/peripheral(_:diddiscovercharacteristicsfor:error:).md) tells the app that it has discovered the peripheral’s transfer characteristic. The sample’s implementation of this method calls [`setNotifyValue(_:for:)`](cbperipheral/setnotifyvalue(_:for:).md) to start receiving updates to the characteristic’s value.
+Back on the central device, a call to the central manager delegate’s [`peripheral(_:didDiscoverCharacteristicsFor:Error:`](./cbperipheraldelegate/peripheral%28_,diddiscovercharacteristicsfor,error%29.md) tells the app that it has discovered the peripheral’s transfer characteristic. The sample’s implementation of this method calls [`setNotifyValue(_:for:)`](./cbperipheral/setnotifyvalue%28_,for%29.md) to start receiving updates to the characteristic’s value.
 
-When the value does update — meaning text is available — the central manager calls the delegate method [`peripheral(_:didUpdateValueFor:error:)`](cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1xyna.md). The sample looks to see if the data is a chunk or an end-of-message marker. If the data is a chunk, the code appends the chunk to an internal buffer containing the peripheral’s message. If the data is an end-of-message marker, it converts the buffer to a string and sets it as the contents of the text field.
+When the value does update — meaning text is available — the central manager calls the delegate method [`peripheral(_:didUpdateValueFor:error)`](./cbperipheraldelegate/peripheral%28_,didupdatevaluefor,error%29-1xyna.md). The sample looks to see if the data is a chunk or an end-of-message marker. If the data is a chunk, the code appends the chunk to an internal buffer containing the peripheral’s message. If the data is an end-of-message marker, it converts the buffer to a string and sets it as the contents of the text field.
 
 ```swift
 func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {

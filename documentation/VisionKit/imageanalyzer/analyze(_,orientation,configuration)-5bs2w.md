@@ -1,7 +1,8 @@
 # analyze(_:orientation:configuration:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data for providing a Live Text interaction with an image in the specified orientation.
 
@@ -26,17 +27,18 @@ The data items that the analyzer finds in the image.
 
 ## See Also
 
-- [func analyze(UIImage, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](imageanalyzer/analyze(_:configuration:).md)
+### Finding items in images
+- [func analyze(UIImage, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](./analyze%28_,configuration%29.md)
   Returns the data for providing a Live Text interaction with an image.
-- [func analyze(CGImage, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](imageanalyzer/analyze(_:orientation:configuration:)-ufrs.md)
+- [func analyze(CGImage, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](./analyze%28_,orientation,configuration%29-ufrs.md)
   Returns the data for providing a Live Text interaction with a Core Graphics image in the specified orientation.
-- [func analyze(CVPixelBuffer, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](imageanalyzer/analyze(_:orientation:configuration:)-2ezqw.md)
+- [func analyze(CVPixelBuffer, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](./analyze%28_,orientation,configuration%29-2ezqw.md)
   Returns the data for providing a Live Text interaction with a pixel buffer image in the specified orientation.
-- [func analyze(CIImage, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](imageanalyzer/analyze(_:orientation:configuration:)-4h43g.md)
+- [func analyze(CIImage, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](./analyze%28_,orientation,configuration%29-4h43g.md)
   Returns the data for providing a Live Text interaction with a bitmap image in the specified orientation.
-- [func analyze(UIImage, orientation: UIImage.Orientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](imageanalyzer/analyze(_:orientation:configuration:)-fcjz.md)
+- [func analyze(UIImage, orientation: UIImage.Orientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](./analyze%28_,orientation,configuration%29-fcjz.md)
   Returns the data for providing a Live Text interaction with an image in the specified orientation.
-- [func analyze(imageAt: URL, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](imageanalyzer/analyze(imageat:orientation:configuration:).md)
+- [func analyze(imageAt: URL, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis](./analyze%28imageat,orientation,configuration%29.md)
   Returns the data for providing a Live Text interaction with an image at a URL and in the specified orientation.
 
 

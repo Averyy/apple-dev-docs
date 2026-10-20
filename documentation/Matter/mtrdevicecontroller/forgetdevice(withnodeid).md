@@ -1,7 +1,8 @@
 # forgetDevice(withNodeID:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forget any information we have about the device with the given node ID.  That includes clearing any information we have stored about it.
 
@@ -18,6 +19,10 @@ Forget any information we have about the device with the given node ID.  That in
 
 ```swift
 func forgetDevice(withNodeID nodeID: NSNumber)
+```
+
+```objc
+- (void) forgetDeviceWithNodeID:(NSNumber *) nodeID;
 ```
 
 

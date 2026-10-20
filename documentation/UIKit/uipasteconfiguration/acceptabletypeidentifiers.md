@@ -1,7 +1,8 @@
 # acceptableTypeIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of UTI strings that specify the types accepted by the paste configuration.
 
@@ -15,6 +16,10 @@ An array of UTI strings that specify the types accepted by the paste configurati
 
 ```swift
 var acceptableTypeIdentifiers: [String] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * acceptableTypeIdentifiers;
 ```
 
 

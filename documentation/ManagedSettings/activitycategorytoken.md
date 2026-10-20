@@ -1,7 +1,8 @@
 # ActivityCategoryToken
 
 **Framework**: Managed Settings  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A token that represents a category of app or website activity.
 
@@ -18,11 +19,12 @@ typealias ActivityCategoryToken = Token<ActivityCategory>
 
 #### Discussion
 
-Use `ActivityCategoryToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](https://developer.apple.com/documentation/familycontrols/familyactivityselection) provides tokens that devices within the same Family Sharing group can use to identify applications.
+Use `ActivityCategoryToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](../FamilyControls/familyactivityselection.md) provides tokens that devices within the same Family Sharing group can use to identify applications.
 
 ## See Also
 
-- [struct ActivityCategory](activitycategory.md)
+### Categories
+- [struct ActivityCategory](./activitycategory.md)
   An activity’s category, such as Entertainment or Social.
 
 

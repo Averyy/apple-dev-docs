@@ -1,20 +1,27 @@
 # init(proximityUUID:major:minor:identifier:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a region object that targets a beacon with the specified proximity ID, major value, and minor value.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.15+ - Deprecated in 10.15
+
+> **Deprecated**: Use [`init(uuid:major:minor:identifier:)`](./init%28uuid,major,minor,identifier%29-24h7w.md) instead.
 
 ## Declaration
 
 ```swift
 init(proximityUUID: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)
+```
+
+```objc
+- (instancetype) initWithProximityUUID:(NSUUID *) proximityUUID major:(CLBeaconMajorValue) major minor:(CLBeaconMinorValue) minor identifier:(NSString *) identifier;
 ```
 
 #### Return Value
@@ -34,11 +41,12 @@ This method creates a region that reports the beacon with the specified `proximi
 
 ## See Also
 
-- [init(proximityUUID: UUID, identifier: String)](clbeaconregion/init(proximityuuid:identifier:).md)
+### Deprecated
+- [init(proximityUUID: UUID, identifier: String)](./init%28proximityuuid,identifier%29.md)
   Creates and returns a region object that targets a beacon with the specified UUID.
-- [init(proximityUUID: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(proximityuuid:major:identifier:).md)
+- [init(proximityUUID: UUID, major: CLBeaconMajorValue, identifier: String)](./init%28proximityuuid,major,identifier%29.md)
   Creates and returns a region object that targets a beacon with the specified proximity ID and major value.
-- [var proximityUUID: UUID](clbeaconregion/proximityuuid.md)
+- [var proximityUUID: UUID](./proximityuuid.md)
   The unique ID of the beacons you’re targeting.
 
 

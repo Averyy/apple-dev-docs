@@ -1,7 +1,8 @@
 # driversLicenseRawData(retaining:notRetaining:issuerIdentifiers:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request which retrieves mobile driver’s license elements from the holder and returns the raw response data for processing.
 
@@ -15,6 +16,8 @@ A request which retrieves mobile driver’s license elements from the holder and
 ```swift
 static func driversLicenseRawData(retaining retainedElements: [MobileDriversLicenseRawDataRequest.Element] = [], notRetaining nonRetainedElements: [MobileDriversLicenseRawDataRequest.Element] = [], issuerIdentifiers: [Data] = []) -> Self
 ```
+
+Available when `Self` is `MobileDriversLicenseRawDataRequest`.
 
 
 ---

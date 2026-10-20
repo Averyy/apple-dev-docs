@@ -1,7 +1,8 @@
 # invalidParameter
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating the object is invalid for the given operation.
 
@@ -25,11 +26,12 @@ For example, the home object issues an error when attempting to add a room that 
 
 ## See Also
 
-- [static var missingParameter: HMError.Code](hmerror/missingparameter.md)
+### Detecting parameter errors
+- [static var missingParameter: HMError.Code](./missingparameter.md)
   An error indicating a missing parameter.
-- [static var nilParameter: HMError.Code](hmerror/nilparameter.md)
+- [static var nilParameter: HMError.Code](./nilparameter.md)
   An error indicating that nil was passed for an operation that does not accept nil.
-- [static var unconfiguredParameter: HMError.Code](hmerror/unconfiguredparameter.md)
+- [static var unconfiguredParameter: HMError.Code](./unconfiguredparameter.md)
   An error indicating an unconfigured parameter.
 
 

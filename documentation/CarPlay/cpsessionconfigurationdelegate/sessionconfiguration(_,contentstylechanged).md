@@ -1,7 +1,8 @@
 # sessionConfiguration(_:contentStyleChanged:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the vehicle changed its selected content style.
 
@@ -14,6 +15,10 @@ Tells the delegate that the vehicle changed its selected content style.
 
 ```swift
 optional func sessionConfiguration(_ sessionConfiguration: CPSessionConfiguration, contentStyleChanged contentStyle: CPContentStyle)
+```
+
+```objc
+- (void) sessionConfiguration:(CPSessionConfiguration *) sessionConfiguration contentStyleChanged:(CPContentStyle) contentStyle;
 ```
 
 #### Discussion

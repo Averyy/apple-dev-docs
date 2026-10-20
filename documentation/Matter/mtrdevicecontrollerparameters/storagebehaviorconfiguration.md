@@ -1,7 +1,8 @@
 # storageBehaviorConfiguration
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the storage behavior configuration - see MTRDeviceStorageBehaviorConfiguration.h for details
 
@@ -19,6 +20,10 @@ Sets the storage behavior configuration - see MTRDeviceStorageBehaviorConfigurat
 ```swift
 @NSCopying
 var storageBehaviorConfiguration: MTRDeviceStorageBehaviorConfiguration? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MTRDeviceStorageBehaviorConfiguration * storageBehaviorConfiguration;
 ```
 
 #### Discussion

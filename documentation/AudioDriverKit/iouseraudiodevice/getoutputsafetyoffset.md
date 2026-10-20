@@ -1,7 +1,8 @@
 # GetOutputSafetyOffset
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the output safety offset of the device.
 
@@ -10,13 +11,13 @@ Returns the output safety offset of the device.
 
 ## Declaration
 
-```swift
+```c
 uint32_t GetOutputSafetyOffset();
 ```
 
 #### Return Value
 
-The output safety offset value, as a [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t).
+The output safety offset value, as a [`uint32_t`](../../kernel/uint32_t.md).
 
 #### Discussion
 
@@ -24,11 +25,12 @@ The safety offset indicates the number for frames ahead of the current hardware 
 
 ## See Also
 
-- [SetInputSafetyOffset](iouseraudiodevice/setinputsafetyoffset.md)
+### Working with Safety Offset Behvaior
+- [SetInputSafetyOffset](./setinputsafetyoffset.md)
   Specifies the input safety offset of the device.
-- [GetInputSafetyOffset](iouseraudiodevice/getinputsafetyoffset.md)
+- [GetInputSafetyOffset](./getinputsafetyoffset.md)
   Returns the input safety offset of the device.
-- [SetOutputSafetyOffset](iouseraudiodevice/setoutputsafetyoffset.md)
+- [SetOutputSafetyOffset](./setoutputsafetyoffset.md)
   Specifies the output safety offset of the device.
 
 

@@ -1,7 +1,8 @@
 # pauseAllMediaPlayback(completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses playback of all media in the web view.
 
@@ -15,7 +16,15 @@ Pauses playback of all media in the web view.
 ## Declaration
 
 ```swift
+func pauseAllMediaPlayback(completionHandler: (@MainActor @Sendable () -> Void)? = nil)
+```
+
+```swift
 func pauseAllMediaPlayback() async
+```
+
+```objc
+- (void) pauseAllMediaPlaybackWithCompletionHandler:(void (^)(void)) completionHandler;
 ```
 
 ## Parameters
@@ -24,13 +33,14 @@ func pauseAllMediaPlayback() async
 
 ## See Also
 
-- [func requestMediaPlaybackState(completionHandler: (WKMediaPlaybackState) -> Void)](wkwebview/requestmediaplaybackstate(completionhandler:).md)
+### Interacting with media
+- [func requestMediaPlaybackState(completionHandler: (WKMediaPlaybackState) -> Void)](./requestmediaplaybackstate%28completionhandler%29.md)
   Requests the playback status of media in the web view.
-- [func setAllMediaPlaybackSuspended(Bool, completionHandler: (() -> Void)?)](wkwebview/setallmediaplaybacksuspended(_:completionhandler:).md)
+- [func setAllMediaPlaybackSuspended(Bool, completionHandler: (() -> Void)?)](./setallmediaplaybacksuspended%28_,completionhandler%29.md)
   Changes whether the webpage is suspending playback of all media in the page.
-- [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](wkwebview/closeallmediapresentations(completionhandler:).md)
+- [func closeAllMediaPresentations(completionHandler: (() -> Void)?)](./closeallmediapresentations%28completionhandler%29.md)
   Closes all media the web view is presenting, including picture-in-picture video and fullscreen video.
-- [enum WKMediaPlaybackState](wkmediaplaybackstate.md)
+- [enum WKMediaPlaybackState](../wkmediaplaybackstate.md)
   An enumeration that describes whether an audio or video presentation is playing, paused, or suspended.
 
 

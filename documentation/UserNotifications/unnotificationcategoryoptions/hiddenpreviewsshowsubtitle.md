@@ -1,7 +1,8 @@
 # hiddenPreviewsShowSubtitle
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Show the notification’s subtitle, even if the user has disabled notification previews for the app.
 
@@ -18,9 +19,14 @@ Show the notification’s subtitle, even if the user has disabled notification p
 static var hiddenPreviewsShowSubtitle: UNNotificationCategoryOptions { get }
 ```
 
+```c
+UNNotificationCategoryOptionHiddenPreviewsShowSubtitle
+```
+
 ## See Also
 
-- [static var hiddenPreviewsShowTitle: UNNotificationCategoryOptions](unnotificationcategoryoptions/hiddenpreviewsshowtitle.md)
+### Managing hidden preview behavior
+- [static var hiddenPreviewsShowTitle: UNNotificationCategoryOptions](./hiddenpreviewsshowtitle.md)
   Show the notification’s title, even if the user has disabled notification previews for the app.
 
 

@@ -1,6 +1,7 @@
 # contentsMode
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies how an image is expanded to fill its containing element.
 
@@ -36,7 +37,7 @@ Use the `contentsMode` attribute to specify how the image is scaled within its b
 </document>
 ```
 
-> ❗ **Important**: When using the `aspectFit` value, you must also include the [`aspectRatio`](aspectratio.md) attribute for the content to scale appropriately.
+> ❗ **Important**: When using the `aspectFit` value, you must also include the [aspectRatio](./aspectratio.md) attribute for the content to scale appropriately.
 
 ##### Values
 
@@ -44,21 +45,22 @@ Use the `contentsMode` attribute to specify how the image is scaled within its b
 - **aspectFitBB**: The image scales to fit in the bounding box using fixed aspect ratio. The output bounding box keeps its specified size. Any unfilled area of the bounding box is white.
 - **aspectFill**: The image scales to fill in the bounding box using fixed aspect ratio. Portions of the image may be clipped.
 
-##### Elements That Use Contentsmode
+##### Elements That Use contentsMode
 
-- [`img`](img.md)
+- [img](./img.md)
 
 ## See Also
 
-- [aspectFill](aspectfill.md)
+### Image Display
+- [aspectFill](./aspectfill.md)
   Stretches an image to fill the containing bounding box.
-- [opaque](opaque.md)
+- [opaque](./opaque.md)
   Indicates whether an image has a transparent background.
-- [mode](mode.md)
+- [mode](./mode.md)
   Specifies how an image is displayed.
-- [type](type.md)
+- [type](./type.md)
   Specifies how a badge is drawn.
-- [value](value.md)
+- [value](./value.md)
   Specifies the value used for a fillable element.
 
 

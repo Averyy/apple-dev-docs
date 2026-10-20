@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the completion percentage of the transition.
@@ -19,21 +20,26 @@ Updates the completion percentage of the transition.
 func updateInteractiveTransition(_ percentComplete: CGFloat)
 ```
 
+```objc
+- (void) updateInteractiveTransition:(CGFloat) percentComplete;
+```
+
 #### Discussion
 
-While tracking user events, gesture recognizers or your interactive animator objects should call this method regularly to update the progress toward completing the transition. If, during tracking, the interactions cross a threshold that you consider signifies the completion or cancellation of the transition, stop tracking events and call the [`finishInteractiveTransition()`](uiviewcontrollercontexttransitioning/finishinteractivetransition().md) or [`cancelInteractiveTransition()`](uiviewcontrollercontexttransitioning/cancelinteractivetransition().md) method.
+While tracking user events, gesture recognizers or your interactive animator objects should call this method regularly to update the progress toward completing the transition. If, during tracking, the interactions cross a threshold that you consider signifies the completion or cancellation of the transition, stop tracking events and call the [`finishInteractiveTransition()`](./finishinteractivetransition%28%29.md) or [`cancelInteractiveTransition()`](./cancelinteractivetransition%28%29.md) method.
 
 ## See Also
 
-- [func completeTransition(Bool)](uiviewcontrollercontexttransitioning/completetransition(_:).md)
+### Reporting the transition progress
+- [func completeTransition(Bool)](./completetransition%28_%29.md)
   Notifies the system that the transition animation is done.
-- [func pauseInteractiveTransition()](uiviewcontrollercontexttransitioning/pauseinteractivetransition.md)
+- [func pauseInteractiveTransition()](./pauseinteractivetransition%28%29.md)
   Tells the system to pause the animations.
-- [func finishInteractiveTransition()](uiviewcontrollercontexttransitioning/finishinteractivetransition.md)
+- [func finishInteractiveTransition()](./finishinteractivetransition%28%29.md)
   Notifies the system that user interactions signaled the completion of the transition.
-- [func cancelInteractiveTransition()](uiviewcontrollercontexttransitioning/cancelinteractivetransition.md)
+- [func cancelInteractiveTransition()](./cancelinteractivetransition%28%29.md)
   Notifies the system that user interactions canceled the transition.
-- [var transitionWasCancelled: Bool](uiviewcontrollercontexttransitioning/transitionwascancelled.md)
+- [var transitionWasCancelled: Bool](./transitionwascancelled.md)
   Returns a Boolean value indicating whether the transition was canceled.
 
 

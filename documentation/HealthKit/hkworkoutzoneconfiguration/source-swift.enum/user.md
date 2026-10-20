@@ -1,7 +1,8 @@
 # HKWorkoutZoneConfiguration.Source.user
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A case that indicates the person configured the zones manually in Health Settings.
 
@@ -21,9 +22,10 @@ case user
 
 ## See Also
 
-- [HKWorkoutZoneConfiguration.Source.system](hkworkoutzoneconfiguration/source-swift.enum/system.md)
+### Identifying the source
+- [HKWorkoutZoneConfiguration.Source.system](./system.md)
   A case that indicates the system generated the zones automatically.
-- [HKWorkoutZoneConfiguration.Source.app](hkworkoutzoneconfiguration/source-swift.enum/app.md)
+- [HKWorkoutZoneConfiguration.Source.app](./app.md)
   A case that indicates an app provided the zones for a specific workout.
 
 

@@ -1,7 +1,8 @@
 # NSCollectionViewDiffableDataSource.ItemProvider
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns an item for a collection view from its diffable data source.
 
@@ -26,7 +27,8 @@ A non-`nil` configured item object. The item provider must return a valid item o
 
 ## See Also
 
-- [init(collectionView: NSCollectionView, itemProvider: NSCollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ItemProvider)](nscollectionviewdiffabledatasource-axww/init(collectionview:itemprovider:).md)
+### Creating a Diffable Data Source
+- [init(collectionView: NSCollectionView, itemProvider: NSCollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ItemProvider)](./init%28collectionview,itemprovider%29.md)
   Creates a diffable data source with the specified item provider, and connects it to the specified collection view.
 
 

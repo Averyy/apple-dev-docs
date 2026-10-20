@@ -1,7 +1,8 @@
 # Pass.Beacons
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the identifier of a Bluetooth Low Energy beacon the system uses to show a relevant pass.
 
@@ -12,7 +13,7 @@ An object that represents the identifier of a Bluetooth Low Energy beacon the sy
 
 ## Declaration
 
-```swift
+```
 object Pass.Beacons
 ```
 
@@ -25,11 +26,12 @@ object Pass.Beacons
 
 ## See Also
 
-- [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)
+### Adding relevance
+- [Showing a Pass on the Lock Screen](../showing-a-pass-on-the-lock-screen.md)
   Add information to your pass so the system can display it on the Lock Screen at a relevant time and place.
-- [object Pass.Locations](pass/locations-data.dictionary.md)
+- [object Pass.Locations](./locations-data.dictionary.md)
   An object that represents a location that the system uses to show a relevant pass.
-- [object Pass.RelevantDates](pass/relevantdates-data.dictionary.md)
+- [object Pass.RelevantDates](./relevantdates-data.dictionary.md)
   An object that represents a date interval that the system uses to show a relevant pass.
 
 

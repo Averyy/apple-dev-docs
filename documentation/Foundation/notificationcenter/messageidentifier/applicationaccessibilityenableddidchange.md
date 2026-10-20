@@ -1,7 +1,8 @@
 # applicationAccessibilityEnabledDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Shorthand identifier for `AccessibilitySettings/ApplicationAccessibilityEnabledDidChangeMessage`.
 
@@ -19,6 +20,8 @@ Shorthand identifier for `AccessibilitySettings/ApplicationAccessibilityEnabledD
 ```swift
 static var applicationAccessibilityEnabledDidChange: NotificationCenter.BaseMessageIdentifier<AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage>`.
 
 
 ---

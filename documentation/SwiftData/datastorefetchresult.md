@@ -1,7 +1,8 @@
 # DataStoreFetchResult
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,27 +23,28 @@ struct DataStoreFetchResult<ModelType, SnapshotType> where ModelType : Persisten
 ## Topics
 
 ### Initializers
-- [init(descriptor: FetchDescriptor<ModelType>, fetchedSnapshots: [SnapshotType], relatedSnapshots: [PersistentIdentifier : SnapshotType])](datastorefetchresult/init(descriptor:fetchedsnapshots:relatedsnapshots:).md)
+- [init(descriptor: FetchDescriptor<ModelType>, fetchedSnapshots: [SnapshotType], relatedSnapshots: [PersistentIdentifier : SnapshotType])](./datastorefetchresult/init%28descriptor,fetchedsnapshots,relatedsnapshots%29.md)
 ### Instance Properties
-- [let descriptor: FetchDescriptor<ModelType>](datastorefetchresult/descriptor.md)
-- [let fetchedSnapshots: [SnapshotType]](datastorefetchresult/fetchedsnapshots.md)
-- [let relatedSnapshots: [PersistentIdentifier : SnapshotType]](datastorefetchresult/relatedsnapshots.md)
+- [let descriptor: FetchDescriptor<ModelType>](./datastorefetchresult/descriptor.md)
+- [let fetchedSnapshots: [SnapshotType]](./datastorefetchresult/fetchedsnapshots.md)
+- [let relatedSnapshots: [PersistentIdentifier : SnapshotType]](./datastorefetchresult/relatedsnapshots.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](datastore/fetch(_:).md)
-- [struct DataStoreFetchRequest](datastorefetchrequest.md)
-- [associatedtype Snapshot : DataStoreSnapshot](datastore/snapshot.md)
-- [protocol DataStoreSnapshot](datastoresnapshot.md)
-- [typealias DataStoreSnapshotValue](datastoresnapshotvalue.md)
-- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](datastore/fetchcount(_:).md)
-- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](datastore/fetchidentifiers(_:).md)
+### Processing fetch requests
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](./datastore/fetch%28_%29.md)
+- [struct DataStoreFetchRequest](./datastorefetchrequest.md)
+- [associatedtype Snapshot : DataStoreSnapshot](./datastore/snapshot.md)
+- [protocol DataStoreSnapshot](./datastoresnapshot.md)
+- [typealias DataStoreSnapshotValue](./datastoresnapshotvalue.md)
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](./datastore/fetchcount%28_%29.md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](./datastore/fetchidentifiers%28_%29.md)
 
 
 ---

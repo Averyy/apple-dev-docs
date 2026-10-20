@@ -1,7 +1,8 @@
 # VTPixelTransferSessionTransferImage(_:from:to:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies and/or converts an image from one pixel buffer to another.
 
@@ -17,6 +18,10 @@ Copies and/or converts an image from one pixel buffer to another.
 
 ```swift
 func VTPixelTransferSessionTransferImage(_ session: VTPixelTransferSession, from sourceBuffer: CVPixelBuffer, to destinationBuffer: CVPixelBuffer) -> OSStatus
+```
+
+```c
+extern OSStatus VTPixelTransferSessionTransferImage(VTPixelTransferSessionRef session, CVPixelBufferRef sourceBuffer, CVPixelBufferRef destinationBuffer);
 ```
 
 #### Return Value

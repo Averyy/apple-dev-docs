@@ -1,6 +1,8 @@
 # Encoding video for offline transcoding
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: Sample Code  
+**Download**: [EncodingVideoForOfflineTranscoding.zip](https://docs-assets.developer.apple.com/published/bc249586dec4/EncodingVideoForOfflineTranscoding.zip)
 
 Configure a compression session to transcode video in offline workflows.
 
@@ -12,7 +14,7 @@ Configure a compression session to transcode video in offline workflows.
 
 This sample code project demonstrates how to configure and use a `VTCompressionSession` object to encode video for offline transcoding.
 
-##### Create a Compression Session
+##### Create a compression session
 
 Create a `VTCompressionSession` object and specify the required dimensions and `codecType`. Optionally, specify `sourceImageBufferAttributes` to provide a description of the source pixel buffers.
 
@@ -36,7 +38,7 @@ guard err == noErr, let compressionSession = compressionSessionOut else {
 }
 ```
 
-##### Configure the Compression Session
+##### Configure the compression session
 
 Get the suggested encoder settings dictionary for the encode preset.
 
@@ -219,13 +221,13 @@ private func configureVTCompressionSession(session: VTCompressionSession, option
 }
 ```
 
-##### Encode Video Frames
+##### Encode video frames
 
 Call `VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:infoFlagsOut:outputHandler:)` and submit each uncompressed frame to the `VTCompressionSession` object for encoding. The object calls the `outputHandler` block for each encoded frame. Check whether a frame drop or error occurs after frame encoding.
 
 Call `VTCompressionSessionCompleteFrames(_:untilPresentationTimeStamp:)` to indicate to the `VTCompressionSession` object that the app submitted all uncompressed video frames for encoding.
 
-##### Perform Compression and Encoding
+##### Perform compression and encoding
 
 You can use the movie file `/Assets/video.m4v` to test this app. Copy the file to your desktop or other working directory, and then open Terminal to that directory and run the following command, where `xxx` is a unique string that Xcode generates. Use autocomplete before the `xxx` component to complete the path for that directory.
 
@@ -235,17 +237,18 @@ Pass the `--help` option for additional configuration options.
 
 ## See Also
 
-- [Encoding video for low-latency conferencing](encoding-video-for-low-latency-conferencing.md)
+### Compression
+- [Encoding video for low-latency conferencing](./encoding-video-for-low-latency-conferencing.md)
   Configure a compression session to optimize encoding for video-conferencing apps.
-- [Encoding video for live streaming](encoding-video-for-live-streaming.md)
+- [Encoding video for live streaming](./encoding-video-for-live-streaming.md)
   Configure a compression session to encode video for live streaming.
-- [VTCompressionSession](vtcompressionsession-api-collection.md)
+- [VTCompressionSession](./vtcompressionsession-api-collection.md)
   An object that compresses video data.
-- [VTDecompressionSession](vtdecompressionsession-api-collection.md)
+- [VTDecompressionSession](./vtdecompressionsession-api-collection.md)
   An object that decompresses video data.
-- [VTFrameSilo](vtframesilo-api-collection.md)
+- [VTFrameSilo](./vtframesilo-api-collection.md)
   An object that stores sample buffers from a multipass encoding session.
-- [VTMultiPassStorage](vtmultipassstorage-api-collection.md)
+- [VTMultiPassStorage](./vtmultipassstorage-api-collection.md)
   An object that stores video encoding metadata from a multipass encoding session.
 
 

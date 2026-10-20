@@ -1,14 +1,15 @@
 # ether_addr_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ether_addr {
     ...
 } ether_addr_t;
@@ -17,7 +18,7 @@ typedef struct ether_addr {
 ## Topics
 
 ### Instance Properties
-- [octet](ether_addr_t/1518365-octet.md)
+- [octet](./ether_addr_t/api-1518365-octet.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ProgressReporting
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for objects that report progress using a single progress instance.
 
@@ -20,37 +21,42 @@ An interface for objects that report progress using a single progress instance.
 protocol ProgressReporting : NSObjectProtocol
 ```
 
+```objc
+@protocol NSProgressReporting <NSObject>
+```
+
 #### Overview
 
-Create the returned progress object using [`ProgressReporting`](progressreporting.md). The resulting object has no parent allowing the caller to add it to a progress tree using [`ProgressReporting`](progressreporting.md).
+Create the returned progress object using [`ProgressReporting`](./progressreporting.md). The resulting object has no parent allowing the caller to add it to a progress tree using [`ProgressReporting`](./progressreporting.md).
 
-You can return a single progress object or a progress tree. If you are creating a progress tree, add the children to the returned progress object as described in [`Reporting Progress for Multiple Operations`](progress#Reporting-Progress-for-Multiple-Operations.md).
+You can return a single progress object or a progress tree. If you are creating a progress tree, add the children to the returned progress object as described in [Reporting Progress for Multiple Operations](./progress.md#Reporting-Progress-for-Multiple-Operations).
 
-You are responsible for setting and updating the [`ProgressReporting`](progressreporting.md) of any [`Progress`](progress.md) object you create.
+You are responsible for setting and updating the [`ProgressReporting`](./progressreporting.md) of any [`Progress`](./progress.md) object you create.
 
 ## Topics
 
 ### Custom Class Progress
-- [var progress: Progress](progressreporting/progress.md)
+- [var progress: Progress](./progressreporting/progress.md)
   The progress object returned by the class.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSBundleResourceRequest](nsbundleresourcerequest.md)
-- [OperationQueue](operationqueue.md)
-- [URLSessionDataTask](urlsessiondatatask.md)
-- [URLSessionDownloadTask](urlsessiondownloadtask.md)
-- [URLSessionStreamTask](urlsessionstreamtask.md)
-- [URLSessionTask](urlsessiontask.md)
-- [URLSessionUploadTask](urlsessionuploadtask.md)
-- [URLSessionWebSocketTask](urlsessionwebsockettask.md)
+- [NSBundleResourceRequest](./nsbundleresourcerequest.md)
+- [OperationQueue](./operationqueue.md)
+- [URLSessionDataTask](./urlsessiondatatask.md)
+- [URLSessionDownloadTask](./urlsessiondownloadtask.md)
+- [URLSessionStreamTask](./urlsessionstreamtask.md)
+- [URLSessionTask](./urlsessiontask.md)
+- [URLSessionUploadTask](./urlsessionuploadtask.md)
+- [URLSessionWebSocketTask](./urlsessionwebsockettask.md)
 
 ## See Also
 
-- [class Progress](progress.md)
+### Progress
+- [class Progress](./progress.md)
   An object that conveys ongoing progress to the user for a specified task.
 
 

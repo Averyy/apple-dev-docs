@@ -1,7 +1,8 @@
 # includeQueries
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the search results include queries.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the search results include queries.
 
 ## Declaration
 
-```swift
+```
 get includeQueries(): boolean;
 set includeQueries(value: boolean);
 ```

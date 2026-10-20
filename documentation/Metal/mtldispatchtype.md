@@ -1,7 +1,8 @@
 # MTLDispatchType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of dispatch method to use when calling encoded functions.
 
@@ -19,35 +20,40 @@ The type of dispatch method to use when calling encoded functions.
 enum MTLDispatchType
 ```
 
+```c
+enum MTLDispatchType : NSUInteger;
+```
+
 ## Topics
 
 ### Execution dispatch types
-- [MTLDispatchType.concurrent](mtldispatchtype/concurrent.md)
+- [MTLDispatchType.concurrent](./mtldispatchtype/concurrent.md)
   Sets a command encoder to dispatch encoded commands concurrently during your pass.
-- [MTLDispatchType.serial](mtldispatchtype/serial.md)
+- [MTLDispatchType.serial](./mtldispatchtype/serial.md)
   Sets a command encoder to dispatch encoded commands serially during your pass.
 ### Initializers
-- [init?(rawValue: UInt)](mtldispatchtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtldispatchtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLComputePassDescriptor](mtlcomputepassdescriptor.md)
+### Configuring a compute pass
+- [class MTLComputePassDescriptor](./mtlcomputepassdescriptor.md)
   A description of how to dispatch execution of pass commands and GPU performance sampling.
-- [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)
+- [struct MTLDispatchThreadgroupsIndirectArguments](./mtldispatchthreadgroupsindirectarguments.md)
   The data layout required for arguments needed to specify the size of threadgroups.
-- [class MTLComputePassSampleBufferAttachmentDescriptor](mtlcomputepasssamplebufferattachmentdescriptor.md)
+- [class MTLComputePassSampleBufferAttachmentDescriptor](./mtlcomputepasssamplebufferattachmentdescriptor.md)
   A configuration that instructs the GPU where to store counter data from the beginning and end of a compute pass.
-- [class MTLComputePassSampleBufferAttachmentDescriptorArray](mtlcomputepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLComputePassSampleBufferAttachmentDescriptorArray](./mtlcomputepasssamplebufferattachmentdescriptorarray.md)
   A container that stores an array of sample buffer attachments for a compute pass.
 
 

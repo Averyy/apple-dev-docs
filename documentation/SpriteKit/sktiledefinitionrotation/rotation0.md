@@ -1,7 +1,8 @@
 # SKTileDefinitionRotation.rotation0
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,11 +19,16 @@
 case rotation0
 ```
 
+```c
+SKTileDefinitionRotation0
+```
+
 ## See Also
 
-- [SKTileDefinitionRotation.rotation180](sktiledefinitionrotation/rotation180.md)
-- [SKTileDefinitionRotation.rotation270](sktiledefinitionrotation/rotation270.md)
-- [SKTileDefinitionRotation.rotation90](sktiledefinitionrotation/rotation90.md)
+### Enumeration Cases
+- [SKTileDefinitionRotation.rotation180](./rotation180.md)
+- [SKTileDefinitionRotation.rotation270](./rotation270.md)
+- [SKTileDefinitionRotation.rotation90](./rotation90.md)
 
 
 ---

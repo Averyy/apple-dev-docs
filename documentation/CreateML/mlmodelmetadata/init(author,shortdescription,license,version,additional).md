@@ -1,7 +1,8 @@
 # init(author:shortDescription:license:version:additional:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new metadata instance for a machine learning model.
 

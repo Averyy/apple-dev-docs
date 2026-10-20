@@ -1,7 +1,8 @@
 # data(forTag:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Encodes a specified tag using BER-TLV tag encoding rules.
 
@@ -18,6 +19,10 @@ Encodes a specified tag using BER-TLV tag encoding rules.
 
 ```swift
 class func data(forTag tag: TKTLVTag) -> Data
+```
+
+```objc
++ (NSData *) dataForTag:(TKTLVTag) tag;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # NotificationCenter.BaseMessageIdentifier
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for use when defining optional Message identifiers.
 
@@ -22,25 +23,26 @@ struct BaseMessageIdentifier<MessageType>
 
 #### Overview
 
-See [`NotificationCenter.MessageIdentifier`](notificationcenter/messageidentifier.md) for an example of how to use this type when defining your own message identifiers.
+See [`NotificationCenter.MessageIdentifier`](./messageidentifier.md) for an example of how to use this type when defining your own message identifiers.
 
 ## Topics
 
 ### Creating an identifier for a main actor message
-- [init()](notificationcenter/basemessageidentifier/init-66tt2.md)
+- [init()](./basemessageidentifier/init%28%29-66tt2.md)
 ### Creating an identifier for an asynchronous message
-- [init()](notificationcenter/basemessageidentifier/init-2yi72.md)
+- [init()](./basemessageidentifier/init%28%29-2yi72.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MessageIdentifier](notificationcenter/messageidentifier.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MessageIdentifier](./messageidentifier.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NotificationCenter.MessageIdentifier](notificationcenter/messageidentifier.md)
+### Using message identifiers
+- [NotificationCenter.MessageIdentifier](./messageidentifier.md)
   An optional identifier to associate a given message with a given type.
 
 

@@ -1,7 +1,8 @@
 # newIndexKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 18.0+
@@ -11,6 +12,10 @@
 
 ```swift
 static let newIndexKey: NSToolbarUserInfoKey
+```
+
+```c
+extern NSToolbarUserInfoKey const NSToolbarNewIndexKey;
 ```
 
 

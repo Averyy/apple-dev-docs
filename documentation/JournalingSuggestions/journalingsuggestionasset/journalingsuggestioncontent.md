@@ -2,6 +2,7 @@
 
 **Framework**: Journaling Suggestions  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 Represents a generic content type for journaling suggestions.

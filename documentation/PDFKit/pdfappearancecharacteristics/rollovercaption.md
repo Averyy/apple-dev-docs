@@ -1,7 +1,8 @@
 # rolloverCaption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text that the widget annotation displays when the user hovers the pointer over it.
 
@@ -19,23 +20,28 @@ The text that the widget annotation displays when the user hovers the pointer ov
 var rolloverCaption: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * rolloverCaption;
+```
+
 ## See Also
 
-- [var backgroundColor: UIColor?](pdfappearancecharacteristics/backgroundcolor.md)
+### Configuring a Widget’s Appearance
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the widget annotation.
-- [var borderColor: UIColor?](pdfappearancecharacteristics/bordercolor.md)
+- [var borderColor: UIColor?](./bordercolor.md)
   The border color of the widget annotation.
-- [var caption: String?](pdfappearancecharacteristics/caption.md)
+- [var caption: String?](./caption.md)
   The text that the button widget annotation displays when the user isn’t interacting with it.
-- [var controlType: PDFWidgetControlType](pdfappearancecharacteristics/controltype.md)
+- [var controlType: PDFWidgetControlType](./controltype.md)
   The type of button widget annotation.
-- [var downCaption: String?](pdfappearancecharacteristics/downcaption.md)
+- [var downCaption: String?](./downcaption.md)
   The text that the button widget annotation displays when the user holds down on it.
-- [var rotation: Int](pdfappearancecharacteristics/rotation.md)
+- [var rotation: Int](./rotation.md)
   The number of degrees, in multiples of 90, that the widget annotation rotates counterclockwise relative to the page.
-- [var appearanceCharacteristicsKeyValues: [AnyHashable : Any]](pdfappearancecharacteristics/appearancecharacteristicskeyvalues.md)
+- [var appearanceCharacteristicsKeyValues: [AnyHashable : Any]](./appearancecharacteristicskeyvalues.md)
   A dictionary that contains a deep copy of the appearance characteristic key-value pairs.
-- [struct PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey.md)
+- [struct PDFAppearanceCharacteristicsKey](../pdfappearancecharacteristicskey.md)
   Keys to control a widget’s appearance.
 
 

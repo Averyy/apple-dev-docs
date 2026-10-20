@@ -1,7 +1,8 @@
 # AEMenuBarItem
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Identifies a menu bar item that can remain visible during an assessment session.
 
@@ -15,42 +16,46 @@ Identifies a menu bar item that can remain visible during an assessment session.
 struct AEMenuBarItem
 ```
 
+```c
+typedef NSString * AEMenuBarItem;
+```
+
 #### Overview
 
-Use these constants with [`allowedMenuBarItems`](aeassessmentconfiguration/allowedmenubaritems.md) to control which menu bar items stay visible while [`allowsMenuBar`](aeassessmentconfiguration/allowsmenubar.md) is enabled. To allow a third-party menu extra, use its bundle identifier as the raw value.
+Use these constants with [`allowedMenuBarItems`](./aeassessmentconfiguration/allowedmenubaritems.md) to control which menu bar items stay visible while [`allowsMenuBar`](./aeassessmentconfiguration/allowsmenubar.md) is enabled. To allow a third-party menu extra, use its bundle identifier as the raw value.
 
 ## Topics
 
 ### Initializers
-- [init(String)](aemenubaritem/init(_:).md)
-- [init(rawValue: String)](aemenubaritem/init(rawvalue:).md)
+- [init(String)](./aemenubaritem/init%28_%29.md)
+- [init(rawValue: String)](./aemenubaritem/init%28rawvalue%29.md)
 ### Type Properties
-- [static let battery: AEMenuBarItem](aemenubaritem/battery.md)
+- [static let battery: AEMenuBarItem](./aemenubaritem/battery.md)
   The Battery system menu bar item.
-- [static let bluetooth: AEMenuBarItem](aemenubaritem/bluetooth.md)
+- [static let bluetooth: AEMenuBarItem](./aemenubaritem/bluetooth.md)
   The Bluetooth system menu bar item.
-- [static let clock: AEMenuBarItem](aemenubaritem/clock.md)
+- [static let clock: AEMenuBarItem](./aemenubaritem/clock.md)
   The Clock system menu bar item.
-- [static let displays: AEMenuBarItem](aemenubaritem/displays.md)
+- [static let displays: AEMenuBarItem](./aemenubaritem/displays.md)
   The Displays system menu bar item.
-- [static let keyboard: AEMenuBarItem](aemenubaritem/keyboard.md)
+- [static let keyboard: AEMenuBarItem](./aemenubaritem/keyboard.md)
   The Input Menu system menu bar item, which selects keyboard layouts.
-- [static let volume: AEMenuBarItem](aemenubaritem/volume.md)
+- [static let volume: AEMenuBarItem](./aemenubaritem/volume.md)
   The Volume system menu bar item.
-- [static let wifi: AEMenuBarItem](aemenubaritem/wifi.md)
+- [static let wifi: AEMenuBarItem](./aemenubaritem/wifi.md)
   The Wi-Fi system menu bar item.
 ### Type Methods
-- [static func menuBarExtra(bundleIdentifier: String) -> AEMenuBarItem](aemenubaritem/menubarextra(bundleidentifier:).md)
+- [static func menuBarExtra(bundleIdentifier: String) -> AEMenuBarItem](./aemenubaritem/menubarextra%28bundleidentifier%29.md)
   Creates a menu bar extra item representing a custom menu extra.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

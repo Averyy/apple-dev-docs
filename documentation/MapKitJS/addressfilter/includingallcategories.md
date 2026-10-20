@@ -1,7 +1,8 @@
 # includingAllCategories
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 A value that includes all address categories.
 
@@ -10,17 +11,18 @@ A value that includes all address categories.
 
 ## Declaration
 
-```swift
+```
 static includingAllCategories: () => AddressFilter;
 ```
 
 ## See Also
 
-- [excluding(categories)](addressfilter/excluding.md)
+### Creating filters
+- [excluding(categories)](./excluding.md)
   A list of categories to exclude from a search.
-- [including(categories)](addressfilter/including.md)
+- [including(categories)](./including.md)
   A list of categories to include in a search.
-- [excludingAllCategories](addressfilter/excludingallcategories.md)
+- [excludingAllCategories](./excludingallcategories.md)
   A value that excludes all address categories.
 
 

@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An icon to display in the center of the shield.
 
@@ -18,9 +19,10 @@ let icon: UIImage?
 
 ## See Also
 
-- [let backgroundBlurStyle: UIBlurEffect.Style?](shieldconfiguration/backgroundblurstyle.md)
+### Configure the visual style
+- [let backgroundBlurStyle: UIBlurEffect.Style?](./backgroundblurstyle.md)
   A blur style to apply to the background of the shield.
-- [let backgroundColor: UIColor?](shieldconfiguration/backgroundcolor.md)
+- [let backgroundColor: UIColor?](./backgroundcolor.md)
   A color for a shield to use in the background blur effect.
 
 

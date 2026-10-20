@@ -1,7 +1,8 @@
 # updateCounter(matching:value:context:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -12,9 +13,12 @@
 static func updateCounter(matching counterID: ScoreCounter.Identifier, value: Int64, context: UInt64 = 0) -> Self
 ```
 
+Available when `Self` is `UpdateCounterAction`.
+
 ## See Also
 
-- [static func updateCounter(ScoreCounter, context: UInt64) -> Self](tabletopaction/updatecounter(_:context:).md)
+### Keeping score
+- [static func updateCounter(ScoreCounter, context: UInt64) -> Self](./updatecounter%28_,context%29.md)
 
 
 ---

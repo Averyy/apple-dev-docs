@@ -1,7 +1,8 @@
 # invalidatedSupplementaryIndexPaths
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing the supplementary views whose layout attributes are invalid.
 
@@ -14,21 +15,26 @@ A dictionary containing the supplementary views whose layout attributes are inva
 var invalidatedSupplementaryIndexPaths: [NSCollectionView.SupplementaryElementKind : Set<IndexPath>]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDictionary<NSString *,NSSet<NSIndexPath *> *> * invalidatedSupplementaryIndexPaths;
+```
+
 #### Discussion
 
-The keys in this dictionary are the element kind strings of the supplementary views. The value for each key is an [`NSSet`](https://developer.apple.com/documentation/foundation/nsset) object containing one or more [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which identifies the section containing the supplementary view.
+The keys in this dictionary are the element kind strings of the supplementary views. The value for each key is an [`NSSet`](../../Foundation/nsset.md) object containing one or more [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which identifies the section containing the supplementary view.
 
 ## See Also
 
-- [func invalidateItems(at: Set<IndexPath>)](nscollectionviewlayoutinvalidationcontext/invalidateitems(at:).md)
+### Invalidating Specific Items
+- [func invalidateItems(at: Set<IndexPath>)](./invalidateitems%28at%29.md)
   Marks the specified items as invalid so that their layout information can be updated.
-- [func invalidateSupplementaryElements(ofKind: NSCollectionView.SupplementaryElementKind, at: Set<IndexPath>)](nscollectionviewlayoutinvalidationcontext/invalidatesupplementaryelements(ofkind:at:).md)
+- [func invalidateSupplementaryElements(ofKind: NSCollectionView.SupplementaryElementKind, at: Set<IndexPath>)](./invalidatesupplementaryelements%28ofkind,at%29.md)
   Marks the specified supplementary views as invalid so that their layout information can be updated.
-- [func invalidateDecorationElements(ofKind: NSCollectionView.DecorationElementKind, at: Set<IndexPath>)](nscollectionviewlayoutinvalidationcontext/invalidatedecorationelements(ofkind:at:).md)
+- [func invalidateDecorationElements(ofKind: NSCollectionView.DecorationElementKind, at: Set<IndexPath>)](./invalidatedecorationelements%28ofkind,at%29.md)
   Marks the specified decoration views as invalid so that their layout information can be updated.
-- [var invalidatedItemIndexPaths: Set<IndexPath>?](nscollectionviewlayoutinvalidationcontext/invalidateditemindexpaths.md)
+- [var invalidatedItemIndexPaths: Set<IndexPath>?](./invalidateditemindexpaths.md)
   The set of items whose layout attributes are invalid.
-- [var invalidatedDecorationIndexPaths: [NSCollectionView.DecorationElementKind : Set<IndexPath>]?](nscollectionviewlayoutinvalidationcontext/invalidateddecorationindexpaths.md)
+- [var invalidatedDecorationIndexPaths: [NSCollectionView.DecorationElementKind : Set<IndexPath>]?](./invalidateddecorationindexpaths.md)
   A dictionary containing the decoration views whose layout attributes are invalid.
 
 

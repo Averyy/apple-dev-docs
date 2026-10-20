@@ -1,16 +1,17 @@
 # AtomicRepresentable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [UnsafeMutablePointer.AtomicRepresentation](unsafemutablepointer/atomicrepresentation.md)
+- [UnsafeMutablePointer.AtomicRepresentation](./atomicrepresentation.md)
   The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 ### Type Methods
-- [static func decodeAtomicRepresentation(consuming UnsafeMutablePointer<Pointee>.AtomicRepresentation) -> UnsafeMutablePointer<Pointee>](unsafemutablepointer/decodeatomicrepresentation(_:).md)
+- [static func decodeAtomicRepresentation(consuming UnsafeMutablePointer<Pointee>.AtomicRepresentation) -> UnsafeMutablePointer<Pointee>](./decodeatomicrepresentation%28_%29.md)
   Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation` storage instance returned from an atomic operation.
-- [static func encodeAtomicRepresentation(consuming UnsafeMutablePointer<Pointee>) -> UnsafeMutablePointer<Pointee>.AtomicRepresentation](unsafemutablepointer/encodeatomicrepresentation(_:).md)
+- [static func encodeAtomicRepresentation(consuming UnsafeMutablePointer<Pointee>) -> UnsafeMutablePointer<Pointee>.AtomicRepresentation](./encodeatomicrepresentation%28_%29.md)
   Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type to be used for atomic operations.
 
 

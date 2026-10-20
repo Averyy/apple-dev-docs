@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with the components of a URL.
 

@@ -1,7 +1,8 @@
 # receiveTime
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which a packet was received, in nanoseconds, based on `CLOCK_MONOTONIC_RAW`.
 
@@ -22,7 +23,8 @@ var receiveTime: UInt64 { get }
 
 ## See Also
 
-- [var shouldCalculateReceiveTime: Bool](nwprotocolip/options/shouldcalculatereceivetime.md)
+### Related Documentation
+- [var shouldCalculateReceiveTime: Bool](../options/shouldcalculatereceivetime.md)
   A Boolean that indicates whether a connection delivers receive timestamps for IP packets.
 
 

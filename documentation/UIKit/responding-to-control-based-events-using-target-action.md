@@ -1,6 +1,7 @@
 # Responding to control-based events using target-action
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 
@@ -12,13 +13,13 @@ User interactions generate thousands of events for your app. Every swipe of the 
 
 Use `target-action` to connect events directly from controls in your UI to methods in your code.
 
-##### Designate an Object to Handle Control Related Events
+##### Designate an object to handle control-related events
 
 When a person interacts with your control, the control needs to know where to send the event. The destination for the event is the *target*. View controllers make good targets because they’re adept at handling user interactions, as well as hosting UI controls.
 
-![A diagram that depicts the relationship between a control and its corresponding target and action. The control on the left has one arrow pointing to its target on the right, which is a view controller. Underneath this is a parallel arrow pointing from the control on the left to its action method on the right, which is a function with the name buttonTapped.](/images/com.apple.uikit/media-4142878@2x.png)
+![A diagram that depicts the relationship between a control and its corresponding target and action. The control on the left has one arrow pointing to its target on the right, which is a view controller. Underneath this is a parallel arrow pointing from the control on the left to its action method on the right, which is a function with the name buttonTapped.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4142878@2x.png)
 
-##### Define the Action Methods You Use to Respond to Events
+##### Define the action methods you use to respond to events
 
 With a control assigned to the target, provide a function to call on that target when the event occurs. This is the *action* method.
 
@@ -52,7 +53,7 @@ Action methods have a distinct signature:
 
 Xcode uses the `@IBAction` keyword to connect controls in Interface Builder to functions in your code. The keyword also bridges the Swift and Objective-C runtimes, enabling Swift code to call into Objective-C, which is where the target-action functionality lives.
 
-The `sender` parameter defines where the event comes from; for example, a button. Use the generic type `Any` to allow any control to call the action method, or specify the `sender` type when you need more information about the control for event processing. For example, set the `sender` type to [`UISlider`](uislider.md) to read the slider thumb value when someone moves the slider left or right.
+The `sender` parameter defines where the event comes from; for example, a button. Use the generic type `Any` to allow any control to call the action method, or specify the `sender` type when you need more information about the control for event processing. For example, set the `sender` type to [`UISlider`](./uislider.md) to read the slider thumb value when someone moves the slider left or right.
 
 **Swift**:
 
@@ -82,9 +83,9 @@ The `sender` parameter defines where the event comes from; for example, a button
 }
 ```
 
-UIKit also supports coupling action methods to specific event types (see [`UIControl.Event`](uicontrol/event.md)). For example, to set up target-action for a user dragging their finger inside the bounds of a control, register for the event type [`touchDragInside`](uicontrol/event/touchdraginside.md).
+UIKit also supports coupling action methods to specific event types (see [`UIControl.Event`](./uicontrol/event.md)). For example, to set up target-action for a user dragging their finger inside the bounds of a control, register for the event type [`touchDragInside`](./uicontrol/event/touchdraginside.md).
 
-##### Connect Controls to the Action Methods in Interface Builder
+##### Connect controls to the action methods in Interface Builder
 
 With the `target` and `action` methods defined, you’re ready to connect them visually to the controls in Interface Builder.
 
@@ -92,21 +93,21 @@ With the `target` and `action` methods defined, you’re ready to connect them v
 2. Control-drag the control to the view controller in the document outline.
 3. Select the action method that the control connects to.
 
-![A screenshot showing how to connect a control to an action in Xcode using Interface Builder. The screenshot consists of Xcode’s document outline view on the left displaying a connection to the view controller, with the Interface Builder canvas on the right containing a single button. A Control-drag arrow connects the button on the canvas to the view controller in the document outline. An alternate arrow connects the button on the canvas to the view controller icon in Interface Builder canvas.](/images/com.apple.uikit/responding-to-control-based-events-using-target-action-1@2x.png)
+![A screenshot showing how to connect a control to an action in Xcode using Interface Builder. The screenshot consists of Xcode’s document outline view on the left displaying a connection to the view controller, with the Interface Builder canvas on the right containing a single button. A Control-drag arrow connects the button on the canvas to the view controller in the document outline. An alternate arrow connects the button on the canvas to the view controller icon in Interface Builder canvas.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-1@2x.png)
 
-![A screenshot in Xcode showing a modal alert of connection options after completing a Control-drag action. The modal lists several action segue options including Show, Show Detail, and Present Modally. An arrow points to the signInButtonTapped option.](/images/com.apple.uikit/responding-to-control-based-events-using-target-action-2@2x.png)
+![A screenshot in Xcode showing a modal alert of connection options after completing a Control-drag action. The modal lists several action segue options including Show, Show Detail, and Present Modally. An arrow points to the signInButtonTapped option.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-2@2x.png)
 
 You can verify that the control and action are connected by moving the pointer over the circular dot to the left of the action method. When you do, Xcode highlights the control.
 
-![A screenshot in Xcode showing how moving the pointer over an action method in the code editor highlights the control it’s connected to in Interface Builder. Interface Builder is on the left with a highlighted button. The Assistant code editor is open on the right with the mouse tip hovering over the grey circle immediately to the left of the function definition.](/images/com.apple.uikit/responding-to-control-based-events-using-target-action-3@2x.png)
+![A screenshot in Xcode showing how moving the pointer over an action method in the code editor highlights the control it’s connected to in Interface Builder. Interface Builder is on the left with a highlighted button. The Assistant code editor is open on the right with the mouse tip hovering over the grey circle immediately to the left of the function definition.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-3@2x.png)
 
 Another way to connect is to Control-drag the control from Interface Builder into the view controller.
 
-![A screenshot in Xcode showing how Control-dragging a control from Interface Builder into the Assistant editor generates the target-action method. Interface Builder is open on the left. The Assistant editor is open beside it on the right. An arrow points from the button into the code editor with the words Control-drag appearing above it.](/images/com.apple.uikit/responding-to-control-based-events-using-target-action-4@2x.png)
+![A screenshot in Xcode showing how Control-dragging a control from Interface Builder into the Assistant editor generates the target-action method. Interface Builder is open on the left. The Assistant editor is open beside it on the right. An arrow points from the button into the code editor with the words Control-drag appearing above it.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-4@2x.png)
 
 Enter the name of the `action` method you’d like the control to call and then click Connect.
 
-![A screenshot in Xcode showing a modal alert resulting from a Control-drag action between Interface Builder and the Assistant editor. The modal alert shows the fields Connection, Object, Name, Type, Event, and Arguments. Two buttons appear at the bottom: a Cancel button on the left and a Connect button on the right.](/images/com.apple.uikit/responding-to-control-based-events-using-target-action-5@2x.png)
+![A screenshot in Xcode showing a modal alert resulting from a Control-drag action between Interface Builder and the Assistant editor. The modal alert shows the fields Connection, Object, Name, Type, Event, and Arguments. Two buttons appear at the bottom: a Cancel button on the left and a Connect button on the right.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-5@2x.png)
 
 The following table lists the parameters available for configuration.
 
@@ -116,16 +117,16 @@ The following table lists the parameters available for configuration.
 | Object | The `target` or object your control is connecting to. |
 | Name | The name of the function, or `action`, your control calls when the event occurs. |
 | Type | The type of the control sending the event. Choose `Any` if you don’t require any further information regarding the control’s state. Specify the control type if you require more information from the control for event processing. |
-| Event | The [`UIEvent`](uievent.md) associated with the action. This feature is only available in UIKit. |
+| Event | The [`UIEvent`](./uievent.md) associated with the action. This feature is only available in UIKit. |
 | Arguments | The arguments to include in the signature of your target-action method. Choose None to include no arguments. Choose Sender to pass in the control type as the sender. Choose Sender and Event to pass in both the control type and the event that caused the action. This feature is available only in UIKit. |
 
 Connecting the target-action this way ensures the method signature and parameters are correct as Xcode generates the action method for you.
 
-![A screenshot in Xcode showing the generated code resulting from a Control-drag action from Interface Builder into the Assistant code editor. Interface Builder is open on the left. The Assistant editor is open beside it on the right, and inside the editor is the generated code. An arrow with the title Generated is pointing to the newly generated code.](/images/com.apple.uikit/responding-to-control-based-events-using-target-action-6@2x.png)
+![A screenshot in Xcode showing the generated code resulting from a Control-drag action from Interface Builder into the Assistant code editor. Interface Builder is open on the left. The Assistant editor is open beside it on the right, and inside the editor is the generated code. An arrow with the title Generated is pointing to the newly generated code.](https://developer.apple.com/tutorials/images/com.apple.uikit/responding-to-control-based-events-using-target-action-6@2x.png)
 
-##### Connect a Control to Your Code Programmatically
+##### Connect a control to your code programmatically
 
-In UIKit, use the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method to set up target-action programmatically on a control:
+In UIKit, use the [`addTarget(_:action:for:)`](./uicontrol/addtarget%28_,action,for%29.md) method to set up target-action programmatically on a control:
 
 **Swift**:
 
@@ -248,29 +249,30 @@ class ViewController: NSViewController {
 @end
 ```
 
-##### Enable Other Objects to Respond to Control Related Events
+##### Enable other objects to respond to control-related events
 
-When the object hosting the control isn’t the one you want handling the event, invoke the responder chain by passing in `nil` as the target. This causes the control to search the responder chain for the specified action method and invoke it when found. For more information, see [`Using responders and the responder chain to handle events`](using-responders-and-the-responder-chain-to-handle-events.md).
+When the object hosting the control isn’t the one you want handling the event, invoke the responder chain by passing in `nil` as the target. This causes the control to search the responder chain for the specified action method and invoke it when found. For more information, see [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md).
 
 ## See Also
 
-- [class UIControl](uicontrol.md)
+### Controls
+- [class UIControl](./uicontrol.md)
   The base class for controls, which are visual elements that convey a specific action or intention in response to user interactions.
-- [class UIButton](uibutton.md)
+- [class UIButton](./uibutton.md)
   A control that executes your custom code in response to user interactions.
-- [class UIColorWell](uicolorwell.md)
+- [class UIColorWell](./uicolorwell.md)
   A control that displays a color picker.
-- [class UIDatePicker](uidatepicker.md)
+- [class UIDatePicker](./uidatepicker.md)
   A control for inputting date and time values.
-- [class UIPageControl](uipagecontrol.md)
+- [class UIPageControl](./uipagecontrol.md)
   A control that displays a horizontal series of dots, each of which corresponds to a page in the app’s document or other data-model entity.
-- [class UISegmentedControl](uisegmentedcontrol.md)
+- [class UISegmentedControl](./uisegmentedcontrol.md)
   A horizontal control that consists of multiple segments, each segment functioning as a discrete button.
-- [class UISlider](uislider.md)
+- [class UISlider](./uislider.md)
   A control for selecting a single value from a continuous range of values.
-- [class UIStepper](uistepper.md)
+- [class UIStepper](./uistepper.md)
   A control for incrementing or decrementing a value.
-- [class UISwitch](uiswitch.md)
+- [class UISwitch](./uiswitch.md)
   A control that offers a binary choice, such as on/off.
 
 

@@ -1,14 +1,15 @@
 # IOUSBHostCIIsochronousTransferData1Buffer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIIsochronousTransferData1Buffer = IOUSBHostCINormalTransferData1Buffer
 ```
 

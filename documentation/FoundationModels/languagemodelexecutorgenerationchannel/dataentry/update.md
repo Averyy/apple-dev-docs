@@ -1,9 +1,10 @@
 # LanguageModelExecutorGenerationChannel.DataEntry.Update
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The content carried by an [`update(contentType:content:metadata:)`](languagemodelexecutorgenerationchannel/dataentry/action-swift.struct/update(contenttype:content:metadata:).md) action.
+The content carried by an [`update(contentType:content:metadata:)`](./action-swift.struct/update%28contenttype,content,metadata%29.md) action.
 
 **Availability**:
 - iOS 27.2+
@@ -22,18 +23,18 @@ struct Update
 ## Topics
 
 ### Instance Properties
-- [var content: Data](languagemodelexecutorgenerationchannel/dataentry/update/content.md)
+- [var content: Data](./update/content.md)
   A raw binary representation of the entry.
-- [var contentType: UTType](languagemodelexecutorgenerationchannel/dataentry/update/contenttype.md)
-  A `UTType` identifying how to interpret [`content`](languagemodelexecutorgenerationchannel/dataentry/update/content.md).
-- [var metadata: GeneratedContent](languagemodelexecutorgenerationchannel/dataentry/update/metadata.md)
+- [var contentType: UTType](./update/contenttype.md)
+  A `UTType` identifying how to interpret [`content`](./update/content.md).
+- [var metadata: GeneratedContent](./update/metadata.md)
   Metadata pertinent to the entry.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

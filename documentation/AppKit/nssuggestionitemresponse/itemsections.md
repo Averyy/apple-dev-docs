@@ -1,7 +1,8 @@
 # itemSections
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items (organized in sections) representing the results of the search request
 

@@ -1,7 +1,8 @@
 # setNeedsDisplay(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the specified portion of the overlay at all zoom scales.
 
@@ -19,6 +20,10 @@ Invalidates the specified portion of the overlay at all zoom scales.
 func setNeedsDisplay(_ mapRect: MKMapRect)
 ```
 
+```objc
+- (void) setNeedsDisplayInMapRect:(MKMapRect) mapRect;
+```
+
 #### Discussion
 
 Marking a rectangle as invalid causes that portion of the overlay to be redrawn during the next update cycle. This method invalidates the overlay regardless of the current zoom scale associated with the map.
@@ -29,13 +34,14 @@ Marking a rectangle as invalid causes that portion of the overlay to be redrawn 
 
 ## See Also
 
-- [func canDraw(MKMapRect, zoomScale: MKZoomScale) -> Bool](mkoverlayrenderer/candraw(_:zoomscale:).md)
+### Drawing the overlay
+- [func canDraw(MKMapRect, zoomScale: MKZoomScale) -> Bool](./candraw%28_,zoomscale%29.md)
   Returns a Boolean value that indicates whether the overlay view is ready to draw its content.
-- [func draw(MKMapRect, zoomScale: MKZoomScale, in: CGContext)](mkoverlayrenderer/draw(_:zoomscale:in:).md)
+- [func draw(MKMapRect, zoomScale: MKZoomScale, in: CGContext)](./draw%28_,zoomscale,in%29.md)
   Draws the overlay’s contents at the specified location on the map.
-- [func setNeedsDisplay()](mkoverlayrenderer/setneedsdisplay.md)
+- [func setNeedsDisplay()](./setneedsdisplay%28%29.md)
   Invalidates the entire contents of the overlay for all zoom scales.
-- [func setNeedsDisplay(MKMapRect, zoomScale: MKZoomScale)](mkoverlayrenderer/setneedsdisplay(_:zoomscale:).md)
+- [func setNeedsDisplay(MKMapRect, zoomScale: MKZoomScale)](./setneedsdisplay%28_,zoomscale%29.md)
   Invalidates the specified portion of the overlay, but only at the specified zoom scale.
 
 

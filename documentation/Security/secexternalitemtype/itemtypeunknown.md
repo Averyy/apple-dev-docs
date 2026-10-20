@@ -1,7 +1,8 @@
 # SecExternalItemType.itemTypeUnknown
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the caller does not know the type of information being imported or exported.
 
@@ -12,6 +13,10 @@ Indicates that the caller does not know the type of information being imported o
 
 ```swift
 case itemTypeUnknown
+```
+
+```c
+kSecItemTypeUnknown
 ```
 
 

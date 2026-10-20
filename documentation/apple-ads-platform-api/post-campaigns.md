@@ -1,7 +1,8 @@
 # Create a Campaign
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a new advertising campaign with a promoted object, budget, targeting, and bid strategy configuration.
 
@@ -10,21 +11,21 @@ Create a new advertising campaign with a promoted object, budget, targeting, and
 
 #### Discussion
 
-This endpoint creates a new campaign with a promoted object, budget, targeting, and bid strategy configuration. Every campaign identifies what it promotes through two immutable fields set at creation, `promotedObjectType` and `promotedObjectId`. You can’t change these fields after you create the campaign. To advertise a different app or brand, create a new campaign. For a full comparison of App Store and Apple Maps campaigns, including supported placements, supply sources, and creative sources, see the [`Campaigns Endpoints`](campaigns-endpoints.md) overview.
+This endpoint creates a new campaign with a promoted object, budget, targeting, and bid strategy configuration. Every campaign identifies what it promotes through two immutable fields set at creation, `promotedObjectType` and `promotedObjectId`. You can’t change these fields after you create the campaign. To advertise a different app or brand, create a new campaign. For a full comparison of App Store and Apple Maps campaigns, including supported placements, supply sources, and creative sources, see the [Campaigns Endpoints](./campaigns-endpoints.md) overview.
 
 The `promotedObjectType` field determines which kind of object `promotedObjectId` points to:
 
-- APPSTORE_APP: The campaign promotes an iOS app. `promotedObjectId` is the app’s `adamId`, retrieved from [`Search for Apps`](searches-for-a-list-of-apps.md). See [`Campaigns Endpoints`](campaigns-endpoints.md) for eligibility requirements before creating the campaign.
-- BUSINESS_BRAND: The campaign promotes a brand and its business locations on Apple Maps. `promotedObjectId` is the brand’s unique identifier, retrieved from [`Query Brands`](query-brands.md) or `GET /v1/advertiser-resources?resourceType=BUSINESS_BRAND`. See [`Campaigns Endpoints`](campaigns-endpoints.md) for eligibility requirements before creating the campaign.
+- APPSTORE_APP: The campaign promotes an iOS app. `promotedObjectId` is the app’s `adamId`, retrieved from [`Search for Apps`](./searches-for-a-list-of-apps.md). See [Campaigns Endpoints](./campaigns-endpoints.md) for eligibility requirements before creating the campaign.
+- BUSINESS_BRAND: The campaign promotes a brand and its business locations on Apple Maps. `promotedObjectId` is the brand’s unique identifier, retrieved from [`Query Brands`](./query-brands.md) or `GET /v1/advertiser-resources?resourceType=BUSINESS_BRAND`. See [Campaigns Endpoints](./campaigns-endpoints.md) for eligibility requirements before creating the campaign.
 
 | Campaign Type | Required Fields | `promotedObjectType` | `promotedObjectId` |
 | --- | --- | --- | --- |
-| App Store | `adAccountId`, `billingEvent`, `bidStrategy`, `dailyBudget`, `name`, `promotedObjectId`, `promotedObjectType`, `startTime`, `endTime`, `targeting` | `APPSTORE_APP` | The app’s `adamId`. Retrieve it from [`Search for Apps`](searches-for-a-list-of-apps.md). |
-| Apple Maps | `adAccountId`, `billingEvent`, `bidStrategy`, `dailyBudget`, `name`, `promotedObjectId`, `promotedObjectType`, `startTime`, `endTime`, `targeting` | `BUSINESS_BRAND` | The brand’s unique identifier. Retrieve it from [`Query Brands`](query-brands.md) or `GET /v1/advertiser-resources?resourceType=BUSINESS_BRAND`. |
+| App Store | `adAccountId`, `billingEvent`, `bidStrategy`, `dailyBudget`, `name`, `promotedObjectId`, `promotedObjectType`, `startTime`, `endTime`, `targeting` | `APPSTORE_APP` | The app’s `adamId`. Retrieve it from [`Search for Apps`](./searches-for-a-list-of-apps.md). |
+| Apple Maps | `adAccountId`, `billingEvent`, `bidStrategy`, `dailyBudget`, `name`, `promotedObjectId`, `promotedObjectType`, `startTime`, `endTime`, `targeting` | `BUSINESS_BRAND` | The brand’s unique identifier. Retrieve it from [`Query Brands`](./query-brands.md) or `GET /v1/advertiser-resources?resourceType=BUSINESS_BRAND`. |
 
-Within `bidStrategy`, `bidStrategyType` and `bidStrategyGoal` are both required and must correspond per the pairings in [`BidStrategy`](bidstrategy.md) (for example, `MAX_CONVERSIONS` → `INSTALL`, `MANUAL_CPT` → `TAP`). Omitting either field, or sending a goal that doesn’t match the type, returns an error.
+Within `bidStrategy`, `bidStrategyType` and `bidStrategyGoal` are both required and must correspond per the pairings in [`BidStrategy`](./bidstrategy.md) (for example, `MAX_CONVERSIONS` → `INSTALL`, `MANUAL_CPT` → `TAP`). Omitting either field, or sending a goal that doesn’t match the type, returns an error.
 
-For Apple Maps campaigns, decide the placement targeting at create time. Targeting both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` requires omitting `supplyPlacement` from `targeting` entirely, and this choice can’t be widened later through an update. A campaign created with a single Maps placement stays limited to that placement. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for details.
+For Apple Maps campaigns, decide the placement targeting at create time. Targeting both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` requires omitting `supplyPlacement` from `targeting` entirely, and this choice can’t be widened later through an update. A campaign created with a single Maps placement stays limited to that placement. See [`CampaignTargetingCreate.SupplyPlacement`](./campaigntargetingcreate/supplyplacement-data.dictionary.md) for details.
 
 #### Payload Examples
 
@@ -222,7 +223,7 @@ POST /v1/campaigns
 
 **App Store — Maximize Conversions**:
 
-An app campaign using the automated `MAX_CONVERSIONS` bid strategy, which optimizes bids toward installs while billing per tap. See [`BidStrategy`](bidstrategy.md) for the full type and goal pairings and [`Query Target CPA Suggestion`](query-target-cpa-suggestion.md) for a data-driven starting target CPA.
+An app campaign using the automated `MAX_CONVERSIONS` bid strategy, which optimizes bids toward installs while billing per tap. See [`BidStrategy`](./bidstrategy.md) for the full type and goal pairings and [`Query Target CPA Suggestion`](./query-target-cpa-suggestion.md) for a data-driven starting target CPA.
 
 > **Note**: Uses `bidStrategyType: MAX_CONVERSIONS` with `bidStrategyGoal: INSTALL`.
 
@@ -792,19 +793,36 @@ POST /v1/campaigns
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `CampaignCreate`
+
+## Responses
+
+- `200` OK (`CampaignResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Query Campaigns](post-campaigns-query.md)
+- [Query Campaigns](./post-campaigns-query.md)
   Query campaigns using filters, sorting, and pagination.
-- [Get a Campaign](get-campaigns-_id_.md)
+- [Get a Campaign](./get-campaigns-_id_.md)
   Retrieve a single campaign by its unique identifier.
-- [Update a Campaign](put-campaigns-_id_.md)
+- [Update a Campaign](./put-campaigns-_id_.md)
   Update a campaign’s name, status, budget, targeting, or bid strategy.
-- [Delete a Campaign](delete-campaigns-_id_.md)
+- [Delete a Campaign](./delete-campaigns-_id_.md)
   Soft-delete a campaign by its unique identifier, cascading to its ad groups, keywords, and ads.
-- [Get Legacy App Limited Status Reason Details](get-campaigns-_id_-legacy-app-limited-status-reason-details.md)
+- [Get Legacy App Limited Status Reason Details](./get-campaigns-_id_-legacy-app-limited-status-reason-details.md)
   Return a map of country or region codes to their associated limited-status reason for legacy app campaigns.
 
 

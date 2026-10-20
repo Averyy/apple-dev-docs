@@ -1,7 +1,8 @@
 # protectedDataWillBecomeUnavailableNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts shortly before protected files are locked down and become inaccessible.
 
@@ -9,7 +10,7 @@ A notification that posts shortly before protected files are locked down and bec
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ nonisolated
 class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIApplicationProtectedDataWillBecomeUnavailable;
+```
+
 #### Discussion
 
 Upon receiving this notification, clients should release any references to protected files. This notification does not contain a `userInfo` dictionary.
 
 ## See Also
 
-- [var isProtectedDataAvailable: Bool](uiapplication/isprotecteddataavailable.md)
+### Accessing protected content
+- [var isProtectedDataAvailable: Bool](./isprotecteddataavailable.md)
   A Boolean value that indicates whether content protection is active.
-- [class let protectedDataDidBecomeAvailableNotification: NSNotification.Name](uiapplication/protecteddatadidbecomeavailablenotification.md)
+- [class let protectedDataDidBecomeAvailableNotification: NSNotification.Name](./protecteddatadidbecomeavailablenotification.md)
   A notification that posts when the protected files become available for your code to access.
 
 

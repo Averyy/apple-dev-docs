@@ -1,7 +1,8 @@
 # listItemDelimiter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The delimiter used when declaring the current list item.
 
@@ -18,6 +19,10 @@ The delimiter used when declaring the current list item.
 
 ```swift
 static let listItemDelimiter: NSAttributedString.Key
+```
+
+```c
+extern NSAttributedStringKey const NSListItemDelimiterAttributeName;
 ```
 
 

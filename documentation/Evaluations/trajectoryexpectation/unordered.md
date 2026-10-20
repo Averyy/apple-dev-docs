@@ -1,7 +1,8 @@
 # unordered
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tool calls that must occur at some point, regardless of position.
 
@@ -22,11 +23,12 @@ var unordered: [ToolExpectation]
 
 ## See Also
 
-- [var ordered: [ToolExpectation]](trajectoryexpectation/ordered.md)
+### Combining expectations
+- [var ordered: [ToolExpectation]](./ordered.md)
   Tool call steps that must be satisfied in sequential order.
-- [var disallowed: [ToolExpectation]](trajectoryexpectation/disallowed.md)
+- [var disallowed: [ToolExpectation]](./disallowed.md)
   Tools that the model must NOT call.
-- [var allowsAdditionalCalls: Bool](trajectoryexpectation/allowsadditionalcalls.md)
+- [var allowsAdditionalCalls: Bool](./allowsadditionalcalls.md)
   A Boolean value that indicates whether to allow tool calls that don’t match any expectation.
 
 

@@ -1,7 +1,8 @@
 # copy(colorSpace:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of a bitmap image, replacing its colorspace.
 
@@ -10,7 +11,7 @@ Creates a copy of a bitmap image, replacing its colorspace.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a copy of a bitmap image, replacing its colorspace.
 func copy(colorSpace space: CGColorSpace) -> CGImage?
 ```
 
+```c
+extern CGImageRefCGImageCreateCopyWithColorSpace(CGImageRef image, CGColorSpaceRef space);
+```
+
 #### Return Value
 
-A new CGImage that is a copy of the image passed as the `image` parameter but with its color space replaced by that specified by the `colorspace` parameter. Returns `NULL` if `image` is an image mask, or if the number of components of `colorspace` is not the same as the number of components of the colorspace of `image`. In Objective-C, you’re responsible for releasing this object using [`CGImageRelease`](cgimagerelease.md).
+A new CGImage that is a copy of the image passed as the `image` parameter but with its color space replaced by that specified by the `colorspace` parameter. Returns `NULL` if `image` is an image mask, or if the number of components of `colorspace` is not the same as the number of components of the colorspace of `image`. In Objective-C, you’re responsible for releasing this object using [`CGImageRelease`](../cgimagerelease.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A new CGImage that is a copy of the image passed as the `image` parameter but wi
 
 ## See Also
 
-- [func copy() -> CGImage?](cgimage/copy.md)
+### Copying an image
+- [func copy() -> CGImage?](./copy%28%29.md)
   Creates a copy of a bitmap image.
 
 

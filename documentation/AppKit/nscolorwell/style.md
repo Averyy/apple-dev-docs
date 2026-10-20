@@ -1,7 +1,8 @@
 # NSColorWell.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the appearance and interaction modes for a color well.
 
@@ -14,35 +15,40 @@ Constants that specify the appearance and interaction modes for a color well.
 enum Style
 ```
 
+```c
+enum NSColorWellStyle : NSInteger;
+```
+
 ## Topics
 
 ### Getting the Style Option
-- [NSColorWell.Style.default](nscolorwell/style/default.md)
+- [NSColorWell.Style.default](./style/default.md)
   The default style for color wells.
-- [NSColorWell.Style.minimal](nscolorwell/style/minimal.md)
+- [NSColorWell.Style.minimal](./style/minimal.md)
   A style that adds minimal adornments to the color well.
-- [NSColorWell.Style.expanded](nscolorwell/style/expanded.md)
+- [NSColorWell.Style.expanded](./style/expanded.md)
   A style that supports a color picker popover for fast interactions, and adds a dedicated button to display the color panel.
 ### Initializers
-- [init?(rawValue: Int)](nscolorwell/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var colorWellStyle: NSColorWell.Style](nscolorwell/colorwellstyle.md)
+### Configuring the appearance
+- [var colorWellStyle: NSColorWell.Style](./colorwellstyle.md)
   The appearance and interaction style to apply to the color well.
-- [var image: NSImage?](nscolorwell/image.md)
+- [var image: NSImage?](./image.md)
   The image to display on the button portion of a color well that adopts the expanded style.
-- [var isBordered: Bool](nscolorwell/isbordered.md)
+- [var isBordered: Bool](./isbordered.md)
   A Boolean value that determines whether the color well has a border.
 
 

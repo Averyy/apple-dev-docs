@@ -1,14 +1,15 @@
 # IOUserAudioIOOperation
 
 **Framework**: AudioDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserAudioIOOperation;
 ```
 

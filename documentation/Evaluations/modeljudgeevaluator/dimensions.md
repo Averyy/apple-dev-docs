@@ -1,7 +1,8 @@
 # dimensions
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimensions this evaluator scores.
 
@@ -22,9 +23,10 @@ let dimensions: [ScoreDimension]
 
 ## See Also
 
-- [let scoringMode: ScoringMode](modeljudgeevaluator/scoringmode.md)
-  The scoring constraint mode. See [`ScoringMode`](scoringmode.md).
-- [enum ScoringMode](scoringmode.md)
+### Inspecting the evaluator
+- [let scoringMode: ScoringMode](./scoringmode.md)
+  The scoring constraint mode. See [`ScoringMode`](../scoringmode.md).
+- [enum ScoringMode](../scoringmode.md)
   The scoring constraint mode for a model evaluator.
 
 

@@ -1,7 +1,8 @@
 # Set.Index
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The position of an element in a set.
 
@@ -21,25 +22,28 @@ The position of an element in a set.
 struct Index
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## Topics
 
 ### Default Implementations
-- [Comparable Implementations](set/index/comparable-implementations.md)
-- [Equatable Implementations](set/index/equatable-implementations.md)
-- [Hashable Implementations](set/index/hashable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
+- [Hashable Implementations](./index/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [struct Iterator](set/iterator.md)
+### Supporting Types
+- [struct Iterator](./iterator.md)
   An iterator over the members of a `Set<Element>`.
 
 

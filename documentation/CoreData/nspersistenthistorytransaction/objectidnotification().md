@@ -1,7 +1,8 @@
 # objectIDNotification()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains a notification for use in merging the transaction’s changes into a managed object context.
 
@@ -20,9 +21,13 @@ Obtains a notification for use in merging the transaction’s changes into a man
 func objectIDNotification() -> Notification
 ```
 
+```objc
+- (NSNotification *) objectIDNotification;
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ An `NSManagedObjectContextDidSaveObjectIDsNotification` notification.
 
 #### Discussion
 
-To merge the relevant changes into your view context, first obtain a notification by calling `objectIDNotification()` on the transaction. Then, pass the notification to [`mergeChanges(fromContextDidSave:)`](nsmanagedobjectcontext/mergechanges(fromcontextdidsave:).md).
+To merge the relevant changes into your view context, first obtain a notification by calling `objectIDNotification()` on the transaction. Then, pass the notification to [`mergeChanges(fromContextDidSave:)`](../nsmanagedobjectcontext/mergechanges%28fromcontextdidsave%29.md).
 
 
 ---

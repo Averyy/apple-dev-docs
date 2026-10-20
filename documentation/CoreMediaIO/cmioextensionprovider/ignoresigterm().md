@@ -1,7 +1,8 @@
 # ignoreSIGTERM()
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - Mac Catalyst 17.0+
@@ -13,9 +14,14 @@
 class func ignoreSIGTERM()
 ```
 
+```objc
++ (void) ignoreSIGTERM;
+```
+
 ## See Also
 
-- [class func stopService(provider: CMIOExtensionProvider)](cmioextensionprovider/stopservice(provider:).md)
+### Type Methods
+- [class func stopService(provider: CMIOExtensionProvider)](./stopservice%28provider%29.md)
 
 
 ---

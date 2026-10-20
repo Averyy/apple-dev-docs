@@ -1,7 +1,8 @@
 # resizeTo
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void resizeTo(
     optional unrestricted float width, 
     optional unrestricted float height

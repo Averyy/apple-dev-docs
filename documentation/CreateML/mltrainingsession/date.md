@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time when you created this training session.
 
@@ -21,7 +22,8 @@ final var date: Date { get }
 
 ## See Also
 
-- [let parameters: MLTrainingSessionParameters](mltrainingsession/parameters.md)
+### Inspecting a session
+- [let parameters: MLTrainingSessionParameters](./parameters.md)
   The parameters you used to create the training session.
 
 

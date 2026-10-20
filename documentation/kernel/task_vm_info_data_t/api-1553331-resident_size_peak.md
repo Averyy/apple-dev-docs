@@ -1,14 +1,15 @@
 # resident_size_peak
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_size_t resident_size_peak;
 ```
 

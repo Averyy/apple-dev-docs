@@ -1,7 +1,8 @@
 # VNTrackRectangleRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
 
@@ -19,6 +20,10 @@ An image-analysis request that tracks movement of a previously identified rectan
 class VNTrackRectangleRequest
 ```
 
+```objc
+@interface VNTrackRectangleRequest : VNTrackingRequest
+```
+
 #### Overview
 
 Use this type of request to track the bounding boxes of rectangles throughout a sequence of images. Vision returns locations for rectangles found in all orientations and sizes.
@@ -26,38 +31,39 @@ Use this type of request to track the bounding boxes of rectangles throughout a 
 ## Topics
 
 ### Initializing a Rectangle Tracking Request
-- [convenience init(rectangleObservation: VNRectangleObservation)](vntrackrectanglerequest/init(rectangleobservation:).md)
+- [convenience init(rectangleObservation: VNRectangleObservation)](./vntrackrectanglerequest/init%28rectangleobservation%29.md)
   Creates a new rectangle tracking request with a rectangle observation.
-- [init(rectangleObservation: VNRectangleObservation, completionHandler: VNRequestCompletionHandler?)](vntrackrectanglerequest/init(rectangleobservation:completionhandler:).md)
+- [init(rectangleObservation: VNRectangleObservation, completionHandler: VNRequestCompletionHandler?)](./vntrackrectanglerequest/init%28rectangleobservation,completionhandler%29.md)
   Creates a new rectangle tracking request with a rectangle observation.
 ### Identifying Request Revisions
-- [var VNTrackRectangleRequestRevision1: Int](vntrackrectanglerequestrevision1.md)
+- [var VNTrackRectangleRequestRevision1: Int](./vntrackrectanglerequestrevision1.md)
   A constant for specifying revision 1 of the rectangling tracking request.
 
 ## Relationships
 
 ### Inherits From
-- [VNTrackingRequest](vntrackingrequest.md)
+- [VNTrackingRequest](./vntrackingrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Tracking the User’s Face in Real Time](tracking-the-user-s-face-in-real-time.md)
+### Object tracking
+- [Tracking the User’s Face in Real Time](./tracking-the-user-s-face-in-real-time.md)
   Detect and track faces from the selfie cam feed in real time.
-- [Tracking Multiple Objects or Rectangles in Video](tracking-multiple-objects-or-rectangles-in-video.md)
+- [Tracking Multiple Objects or Rectangles in Video](./tracking-multiple-objects-or-rectangles-in-video.md)
   Apply Vision algorithms to track objects or rectangles throughout a video.
-- [class VNTrackingRequest](vntrackingrequest.md)
+- [class VNTrackingRequest](./vntrackingrequest.md)
   The abstract superclass for image-analysis requests that track unique features across multiple images or video frames.
-- [class VNTrackObjectRequest](vntrackobjectrequest.md)
+- [class VNTrackObjectRequest](./vntrackobjectrequest.md)
   An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
-- [class VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [class VNDetectedObjectObservation](./vndetectedobjectobservation.md)
   An observation that provides the position and extent of an image feature that an image- analysis request detects.
 
 

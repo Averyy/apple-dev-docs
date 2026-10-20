@@ -1,7 +1,8 @@
 # age
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An element that represents the user’s age, in years.
 
@@ -17,13 +18,18 @@ An element that represents the user’s age, in years.
 class var age: PKIdentityElement { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) PKIdentityElement * ageElement;
+```
+
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+- [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
 ## See Also
 
-- [class func age(atLeast: Int) -> Self](pkidentityelement/age(atleast:).md)
+### Getting an age identity element
+- [class func age(atLeast: Int) -> Self](./age%28atleast%29.md)
   Returns an element that represents the user’s age is at least the age you specify.
 
 

@@ -1,9 +1,10 @@
 # customMirror
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A mirror that reflects the [`CGFloat`](cgfloat-swift.struct.md) instance.
+A mirror that reflects the [`CGFloat`](../cgfloat-swift.struct.md) instance.
 
 **Availability**:
 - iOS 2.0+
@@ -11,7 +12,7 @@ A mirror that reflects the [`CGFloat`](cgfloat-swift.struct.md) instance.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration

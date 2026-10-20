@@ -1,7 +1,8 @@
 # fFrameCounts
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The frame counts.
 
@@ -10,21 +11,22 @@ The frame counts.
 
 ## Declaration
 
-```swift
+```c
 IOUSBIsocFrame *fFrameCounts;
 ```
 
 ## See Also
 
-- [fBufSize](iousbisocstruct/1546463-fbufsize.md)
+### Getting the Properties
+- [fBufSize](./api-1546463-fbufsize.md)
   The buffer size.
-- [fBuffer](iousbisocstruct/1546499-fbuffer.md)
+- [fBuffer](./api-1546499-fbuffer.md)
   The buffer pointer.
-- [fNumFrames](iousbisocstruct/1545923-fnumframes.md)
+- [fNumFrames](./api-1545923-fnumframes.md)
   The number of frames.
-- [fPipe](iousbisocstruct/1546217-fpipe.md)
+- [fPipe](./api-1546217-fpipe.md)
   The pipe value.
-- [fStartFrame](iousbisocstruct/1546384-fstartframe.md)
+- [fStartFrame](./api-1546384-fstartframe.md)
   The starting frame.
 
 

@@ -1,7 +1,8 @@
 # HMPresenceEventType
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The user presence type that triggers a presence event.
 
@@ -19,42 +20,47 @@ The user presence type that triggers a presence event.
 enum HMPresenceEventType
 ```
 
+```c
+enum HMPresenceEventType : NSUInteger;
+```
+
 ## Topics
 
 ### Specifying presence type
-- [HMPresenceEventType.everyEntry](hmpresenceeventtype/everyentry.md)
+- [HMPresenceEventType.everyEntry](./hmpresenceeventtype/everyentry.md)
   Triggers the event every time a user enters the home.
-- [HMPresenceEventType.everyExit](hmpresenceeventtype/everyexit.md)
+- [HMPresenceEventType.everyExit](./hmpresenceeventtype/everyexit.md)
   Triggers the event every time a user leaves the home.
-- [HMPresenceEventType.firstEntry](hmpresenceeventtype/firstentry.md)
+- [HMPresenceEventType.firstEntry](./hmpresenceeventtype/firstentry.md)
   Triggers an event for the first user entering the home.
-- [HMPresenceEventType.lastExit](hmpresenceeventtype/lastexit.md)
+- [HMPresenceEventType.lastExit](./hmpresenceeventtype/lastexit.md)
   Triggers an event when the last user leaves the home.
 ### Using presence as a predicate
-- [static var atHome: HMPresenceEventType](hmpresenceeventtype/athome.md)
+- [static var atHome: HMPresenceEventType](./hmpresenceeventtype/athome.md)
   Triggers the event when at least one user is in the home.
-- [static var notAtHome: HMPresenceEventType](hmpresenceeventtype/notathome.md)
+- [static var notAtHome: HMPresenceEventType](./hmpresenceeventtype/notathome.md)
   Triggers the event when there are no users in the home.
 ### Initializers
-- [init?(rawValue: UInt)](hmpresenceeventtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hmpresenceeventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMPresenceEvent](hmpresenceevent.md)
+### User presence
+- [class HMPresenceEvent](./hmpresenceevent.md)
   An event that triggers based on the presence of users in the home.
-- [class HMMutablePresenceEvent](hmmutablepresenceevent.md)
+- [class HMMutablePresenceEvent](./hmmutablepresenceevent.md)
   A mutable event that triggers based on the presence of users in the home.
-- [enum HMPresenceEventUserType](hmpresenceeventusertype.md)
+- [enum HMPresenceEventUserType](./hmpresenceeventusertype.md)
   The group of users that triggers a presence event.
 
 

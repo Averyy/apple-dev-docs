@@ -1,7 +1,8 @@
 # dashPattern
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 static let dashPattern: PDFBorderKey
 ```
 
+```c
+extern PDFBorderKey PDFBorderKeyDashPattern;
+```
+
 ## See Also
 
-- [static let lineWidth: PDFBorderKey](pdfborderkey/linewidth.md)
-- [static let style: PDFBorderKey](pdfborderkey/style.md)
+### Type Properties
+- [static let lineWidth: PDFBorderKey](./linewidth.md)
+- [static let style: PDFBorderKey](./style.md)
 
 
 ---

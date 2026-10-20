@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timestamp representing when the beacon was observed.
 
@@ -15,6 +16,10 @@ A timestamp representing when the beacon was observed.
 
 ```swift
 var timestamp: Date { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDate * timestamp;
 ```
 
 

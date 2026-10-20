@@ -1,7 +1,8 @@
 # NSCoderErrorMaximum
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The end of the range of error codes reserved for coder errors.
 
@@ -22,13 +23,14 @@ var NSCoderErrorMaximum: Int { get }
 
 ## See Also
 
-- [var NSCoderErrorMinimum: Int](nscodererrorminimum-swift.var.md)
+### Error Codes
+- [var NSCoderErrorMinimum: Int](./nscodererrorminimum-swift.var.md)
   The start of the range of error codes reserved for coder errors.
-- [var NSCoderReadCorruptError: Int](nscoderreadcorrupterror-swift.var.md)
+- [var NSCoderReadCorruptError: Int](./nscoderreadcorrupterror-swift.var.md)
   Decoding failed due to corrupt data.
-- [var NSCoderValueNotFoundError: Int](nscodervaluenotfounderror-swift.var.md)
+- [var NSCoderValueNotFoundError: Int](./nscodervaluenotfounderror-swift.var.md)
   The requested data wasn’t found.
-- [var NSCoderInvalidValueError: Int](nscoderinvalidvalueerror-swift.var.md)
+- [var NSCoderInvalidValueError: Int](./nscoderinvalidvalueerror-swift.var.md)
   Data wasn’t valid to encode.
 
 

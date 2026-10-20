@@ -1,7 +1,8 @@
 # SetFirmwarePasswordCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to change or clear the firmware password on a device.
 
@@ -10,14 +11,14 @@ The command to change or clear the firmware password on a device.
 
 ## Declaration
 
-```swift
+```
 object SetFirmwarePasswordCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object SetFirmwarePasswordCommand.Command](setfirmwarepasswordcommand/command-data.dictionary.md)
+- [object SetFirmwarePasswordCommand.Command](./setfirmwarepasswordcommand/command-data.dictionary.md)
   The command to change or clear the firmware password on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object SetFirmwarePasswordCommand
 
 ## See Also
 
-- [object SetFirmwarePasswordResponse](setfirmwarepasswordresponse.md)
+### Commands and responses
+- [object SetFirmwarePasswordResponse](./setfirmwarepasswordresponse.md)
   A response from the device after it processes the command to change or clear the firmware password on a device.
 
 

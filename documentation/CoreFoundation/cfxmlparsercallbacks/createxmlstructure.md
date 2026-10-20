@@ -1,17 +1,22 @@
 # createXMLStructure
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Called when an XML structure is created.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var createXMLStructure: CFXMLParserCreateXMLStructureCallBack!
+```
+
+```c
+CFXMLParserCreateXMLStructureCallBack createXMLStructure;
 ```
 
 

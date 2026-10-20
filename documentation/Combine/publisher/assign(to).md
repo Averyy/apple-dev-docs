@@ -1,7 +1,8 @@
 # assign(to:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Republishes elements received from a publisher, by assigning them to a property marked as a publisher.
 
@@ -20,11 +21,13 @@ Republishes elements received from a publisher, by assigning them to a property 
 func assign(to published: inout Published<Self.Output>.Publisher)
 ```
 
+Available when `Failure` is `Never`.
+
 #### Discussion
 
-Use this operator when you want to receive elements from a publisher and republish them through a property marked with the `@Published` attribute. The `assign(to:)` operator manages the life cycle of the subscription, canceling the subscription automatically when the [`Published`](published.md) instance deinitializes. Because of this, the `assign(to:)` operator doesn’t return an [`AnyCancellable`](anycancellable.md) that you’re responsible for like [`assign(to:on:)`](publisher/assign(to:on:).md) does.
+Use this operator when you want to receive elements from a publisher and republish them through a property marked with the `@Published` attribute. The `assign(to:)` operator manages the life cycle of the subscription, canceling the subscription automatically when the [`Published`](../published.md) instance deinitializes. Because of this, the `assign(to:)` operator doesn’t return an [`AnyCancellable`](../anycancellable.md) that you’re responsible for like [`assign(to:on:)`](./assign%28to,on%29.md) does.
 
-The example below shows a model class that receives elements from an internal [`Timer.TimerPublisher`](https://developer.apple.com/documentation/foundation/timer/timerpublisher), and assigns them to a `@Published` property called `lastUpdated`. Because the `to` parameter has the `inout` keyword, you need to use the `&` operator when calling this method.
+The example below shows a model class that receives elements from an internal [`Timer.TimerPublisher`](../../Foundation/timer/timerpublisher.md), and assigns them to a `@Published` property called `lastUpdated`. Because the `to` parameter has the `inout` keyword, you need to use the `&` operator when calling this method.
 
 ```swift
 class MyModel: ObservableObject {
@@ -37,7 +40,7 @@ class MyModel: ObservableObject {
 }
 ```
 
-If you instead implemented `MyModel` with `assign(to: lastUpdated, on: self)`, storing the returned [`AnyCancellable`](anycancellable.md) instance could cause a reference cycle, because the [`Subscribers.Assign`](subscribers/assign.md) subscriber would hold a strong reference to `self`. Using `assign(to:)` solves this problem.
+If you instead implemented `MyModel` with `assign(to: lastUpdated, on: self)`, storing the returned [`AnyCancellable`](../anycancellable.md) instance could cause a reference cycle, because the [`Subscribers.Assign`](../subscribers/assign.md) subscriber would hold a strong reference to `self`. Using `assign(to:)` solves this problem.
 
 While the `to` parameter uses the `inout` keyword, this method doesn’t replace a reference type passed to it. Instead, this notation indicates that the operator may modify members of the assigned object, as seen in the following example:
 
@@ -55,11 +58,12 @@ While the `to` parameter uses the `inout` keyword, this method doesn’t replace
 
 ## See Also
 
-- [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](publisher/assign(to:on:).md)
+### Connecting simple subscribers
+- [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](./assign%28to,on%29.md)
   Assigns each element from a publisher to a property on an object.
-- [func sink(receiveCompletion: (Subscribers.Completion<Self.Failure>) -> Void, receiveValue: (Self.Output) -> Void) -> AnyCancellable](publisher/sink(receivecompletion:receivevalue:).md)
+- [func sink(receiveCompletion: (Subscribers.Completion<Self.Failure>) -> Void, receiveValue: (Self.Output) -> Void) -> AnyCancellable](./sink%28receivecompletion,receivevalue%29.md)
   Attaches a subscriber with closure-based behavior.
-- [func sink(receiveValue: (Self.Output) -> Void) -> AnyCancellable](publisher/sink(receivevalue:).md)
+- [func sink(receiveValue: (Self.Output) -> Void) -> AnyCancellable](./sink%28receivevalue%29.md)
   Attaches a subscriber with closure-based behavior to a publisher that never fails.
 
 

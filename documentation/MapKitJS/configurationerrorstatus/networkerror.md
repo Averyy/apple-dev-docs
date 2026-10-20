@@ -1,7 +1,8 @@
 # NetworkError
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status that indicates MapKit JS encountered a network error during initialization.
 
@@ -10,7 +11,7 @@ An error status that indicates MapKit JS encountered a network error during init
 
 ## Declaration
 
-```swift
+```
 readonly NetworkError: "Network Error";
 ```
 

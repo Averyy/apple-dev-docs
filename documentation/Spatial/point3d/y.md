@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y-coordinate value.
 
@@ -22,12 +23,13 @@ var y: Double { get set }
 
 ## See Also
 
-- [var x: Double](point3d/x.md)
+### Inspecting a 3D point’s properties
+- [var x: Double](./x.md)
   The x-coordinate value.
-- [var z: Double](point3d/z.md)
+- [var z: Double](./z.md)
   The z-coordinate value.
-- [var vector: simd_double3](point3d/vector.md)
-- [var magnitudeSquared: Double](point3d/magnitudesquared.md)
+- [var vector: simd_double3](./vector.md)
+- [var magnitudeSquared: Double](./magnitudesquared.md)
 
 
 ---

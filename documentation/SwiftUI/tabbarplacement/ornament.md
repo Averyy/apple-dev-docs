@@ -1,7 +1,8 @@
 # ornament
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Tab view displaying as an ornament.
 

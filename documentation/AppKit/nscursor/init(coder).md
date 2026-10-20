@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,9 +16,14 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(image: UIImage, hotSpot: NSPoint)](nscursor/init(image:hotspot:).md)
+### Initializing a new cursor
+- [init(image: UIImage, hotSpot: NSPoint)](./init%28image,hotspot%29.md)
   Initializes a cursor with the given image and hot spot.
 
 

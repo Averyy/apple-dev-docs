@@ -1,6 +1,7 @@
 # Accessibility Inspector
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: Developer Tool
 
 Reveal how your app represents itself to people using accessibility features.
 
@@ -10,18 +11,18 @@ Use Accessibility Inspector to display, query, and test accessibility informatio
 
 To use Accessibility Inspector, open Xcode and choose Xcode > Open Developer Tool > Accessibility Inspector.
 
-![None](/images/com.apple.Accessibility/accessibility-inspector-overview@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-inspector-overview@2x.png)
 
 ## Topics
 
 ### App inspection
-- [Inspecting the accessibility of the screens in your app](inspecting-the-accessibility-of-screens.md)
+- [Inspecting the accessibility of the screens in your app](./inspecting-the-accessibility-of-screens.md)
   Focus on your app with Accessibility Inspector and investigate potential issues on each screen.
 ### Accessibility audits
-- [Performing accessibility audits for your app](performing-accessibility-audits-for-your-app.md)
+- [Performing accessibility audits for your app](./performing-accessibility-audits-for-your-app.md)
   Audit your app for common accessibility issues with Accessibility Inspector.
 ### Accessibility feature testing
-- [Testing system accessibility features in your app](testing-system-accessibility-features-in-your-app.md)
+- [Testing system accessibility features in your app](./testing-system-accessibility-features-in-your-app.md)
   Confirm that your app provides a good experience for everyone by testing system accessibility settings in Accessibility Inspector.
 
 

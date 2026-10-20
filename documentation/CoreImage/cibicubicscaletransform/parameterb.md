@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value of B to use for the cubic resampling function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The value of B to use for the cubic resampling function.
 var parameterB: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float parameterB;
+```
+
 ## See Also
 
-- [var aspectRatio: Float](cibicubicscaletransform/aspectratio.md)
+### Instance Properties
+- [var aspectRatio: Float](./aspectratio.md)
   The additional horizontal scaling factor to use on the image.
-- [var inputImage: CIImage?](cibicubicscaletransform/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var parameterC: Float](cibicubicscaletransform/parameterc.md)
+- [var parameterC: Float](./parameterc.md)
   The value of C to use for the cubic resampling function.
-- [var scale: Float](cibicubicscaletransform/scale.md)
+- [var scale: Float](./scale.md)
   The scaling factor to use on the image.
 
 

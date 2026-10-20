@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerNikonFocusDistance
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The focus distance.
 
@@ -20,33 +21,38 @@ The focus distance.
 let kCGImagePropertyMakerNikonFocusDistance: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerNikonFocusDistance;
+```
+
 ## See Also
 
-- [let kCGImagePropertyMakerNikonISOSetting: CFString](kcgimagepropertymakernikonisosetting.md)
+### Program Settings
+- [let kCGImagePropertyMakerNikonISOSetting: CFString](./kcgimagepropertymakernikonisosetting.md)
   The ISO setting.
-- [let kCGImagePropertyMakerNikonISOSelection: CFString](kcgimagepropertymakernikonisoselection.md)
+- [let kCGImagePropertyMakerNikonISOSelection: CFString](./kcgimagepropertymakernikonisoselection.md)
   The ISO selection.
-- [let kCGImagePropertyMakerNikonColorMode: CFString](kcgimagepropertymakernikoncolormode.md)
+- [let kCGImagePropertyMakerNikonColorMode: CFString](./kcgimagepropertymakernikoncolormode.md)
   The color mode.
-- [let kCGImagePropertyMakerNikonQuality: CFString](kcgimagepropertymakernikonquality.md)
+- [let kCGImagePropertyMakerNikonQuality: CFString](./kcgimagepropertymakernikonquality.md)
   The quality setting.
-- [let kCGImagePropertyMakerNikonWhiteBalanceMode: CFString](kcgimagepropertymakernikonwhitebalancemode.md)
+- [let kCGImagePropertyMakerNikonWhiteBalanceMode: CFString](./kcgimagepropertymakernikonwhitebalancemode.md)
   The white balance mode.
-- [let kCGImagePropertyMakerNikonSharpenMode: CFString](kcgimagepropertymakernikonsharpenmode.md)
+- [let kCGImagePropertyMakerNikonSharpenMode: CFString](./kcgimagepropertymakernikonsharpenmode.md)
   The sharpening mode.
-- [let kCGImagePropertyMakerNikonFocusMode: CFString](kcgimagepropertymakernikonfocusmode.md)
+- [let kCGImagePropertyMakerNikonFocusMode: CFString](./kcgimagepropertymakernikonfocusmode.md)
   The focus mode.
-- [let kCGImagePropertyMakerNikonFlashSetting: CFString](kcgimagepropertymakernikonflashsetting.md)
+- [let kCGImagePropertyMakerNikonFlashSetting: CFString](./kcgimagepropertymakernikonflashsetting.md)
   The flash setting.
-- [let kCGImagePropertyMakerNikonImageAdjustment: CFString](kcgimagepropertymakernikonimageadjustment.md)
+- [let kCGImagePropertyMakerNikonImageAdjustment: CFString](./kcgimagepropertymakernikonimageadjustment.md)
   The image adjustment setting.
-- [let kCGImagePropertyMakerNikonShootingMode: CFString](kcgimagepropertymakernikonshootingmode.md)
+- [let kCGImagePropertyMakerNikonShootingMode: CFString](./kcgimagepropertymakernikonshootingmode.md)
   The shooting mode.
-- [let kCGImagePropertyMakerNikonDigitalZoom: CFString](kcgimagepropertymakernikondigitalzoom.md)
+- [let kCGImagePropertyMakerNikonDigitalZoom: CFString](./kcgimagepropertymakernikondigitalzoom.md)
   The digital zoom setting.
-- [let kCGImagePropertyMakerNikonShutterCount: CFString](kcgimagepropertymakernikonshuttercount.md)
+- [let kCGImagePropertyMakerNikonShutterCount: CFString](./kcgimagepropertymakernikonshuttercount.md)
   The number of times the shutter has been actuated.
-- [let kCGImagePropertyMakerNikonFlashExposureComp: CFString](kcgimagepropertymakernikonflashexposurecomp.md)
+- [let kCGImagePropertyMakerNikonFlashExposureComp: CFString](./kcgimagepropertymakernikonflashexposurecomp.md)
   The flash exposure compensation.
 
 

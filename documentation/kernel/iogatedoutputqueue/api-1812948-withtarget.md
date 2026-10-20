@@ -7,14 +7,14 @@ Factory method that constructs and initializes an IOGatedOutputQueue object.
 
 ## Declaration
 
-```swift
+```c
 static IOGatedOutputQueue * withTarget(
  IONetworkController *target, 
  IOWorkLoop *workloop, 
  UInt32 capacity = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns an IOGatedOutputQueue object on success, or 0 otherwise.
 
@@ -26,21 +26,22 @@ Returns an IOGatedOutputQueue object on success, or 0 otherwise.
 
 ## See Also
 
-- [free](iogatedoutputqueue/1812925-free.md)
+### Miscellaneous
+- [free](./api-1812925-free.md)
   Frees the IOGatedOutputQueue object.
-- [init](iogatedoutputqueue/1812930-init.md)
+- [init](./api-1812930-init.md)
   Initializes an IOGatedOutputQueue object.
-- [output(IOMbufQueue *, UInt32 *)](iogatedoutputqueue/1812936-output.md)
+- [output(IOMbufQueue *, UInt32 *)](./api-1812936-output.md)
   Transfers all packets in the mbuf queue to the target.
-- [output(void *)](iogatedoutputqueue/1812941-output.md)
+- [output(void *)](./api-1812941-output.md)
   Overrides the method inherited from IOOutputQueue.
-- [scheduleServiceThread](iogatedoutputqueue/1812945-scheduleservicethread.md)
+- [scheduleServiceThread](./api-1812945-scheduleservicethread.md)
   Overrides the method inherited from IOOutputQueue.
-- [withTarget(IONetworkController *, IOWorkLoop *, UInt32, UInt32)](iogatedoutputqueue/1812950-withtarget.md)
+- [withTarget(IONetworkController *, IOWorkLoop *, UInt32, UInt32)](./api-1812950-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32)](iogatedoutputqueue/1812954-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32)](./api-1812954-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32, UInt32)](iogatedoutputqueue/1812957-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32, UInt32)](./api-1812957-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
 
 

@@ -1,21 +1,22 @@
 # GameCenterActivityCreateRequest.Data.Relationships.Versions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.3+
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityCreateRequest.Data.Relationships.Versions
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityCreateRequest.Data.Relationships.Versions.Data](gamecenteractivitycreaterequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+- [object GameCenterActivityCreateRequest.Data.Relationships.Versions.Data](./versions-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

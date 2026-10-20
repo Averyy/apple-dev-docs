@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Telephony  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -23,9 +24,10 @@ init?(rawValue: Int)
 
 ## See Also
 
-- [CTCellularPlanCapability.dataAndVoice](ctcellularplancapability/dataandvoice.md)
+### Defining cellular data plans
+- [CTCellularPlanCapability.dataAndVoice](./dataandvoice.md)
   The cellular plan is available for data and voice.
-- [CTCellularPlanCapability.dataOnly](ctcellularplancapability/dataonly.md)
+- [CTCellularPlanCapability.dataOnly](./dataonly.md)
   The cellular plan is available for data only.
 
 

@@ -2,22 +2,27 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The scaling factor to use on the image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var scale: Float { get set }
+```
+
+```objc
+@property (nonatomic) float scale;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ Values less than 1.0 scale down the images. Values greater than 1.0 scale up the
 
 ## See Also
 
-- [var aspectRatio: Float](cilanczosscaletransform/aspectratio.md)
+### Instance Properties
+- [var aspectRatio: Float](./aspectratio.md)
   The additional horizontal scaling factor to use on the image.
-- [var inputImage: CIImage?](cilanczosscaletransform/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

@@ -1,12 +1,13 @@
 # takePasswordFrom(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unlocks with the password from the specified sender.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -15,9 +16,14 @@ Unlocks with the password from the specified sender.
 func takePasswordFrom(_ sender: Any)
 ```
 
+```objc
+- (void) takePasswordFrom:(id) sender;
+```
+
 ## See Also
 
-- [var document: PDFDocument?](pdfview/document.md)
+### Associating a Document with a View
+- [var document: PDFDocument?](./document.md)
   Returns the document associated with a `PDFView` object.
 
 

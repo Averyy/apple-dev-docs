@@ -1,7 +1,8 @@
 # NavigationMeshResource.PathNode.Category
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The categories of path nodes.
 
@@ -22,22 +23,23 @@ enum Category
 ## Topics
 
 ### Identifying node categories
-- [NavigationMeshResource.PathNode.Category.meshPoint](navigationmeshresource/pathnode/category-swift.enum/meshpoint.md)
+- [NavigationMeshResource.PathNode.Category.meshPoint](./category-swift.enum/meshpoint.md)
   A regular point on the Navigation Mesh.
-- [NavigationMeshResource.PathNode.Category.offMeshConnection](navigationmeshresource/pathnode/category-swift.enum/offmeshconnection.md)
+- [NavigationMeshResource.PathNode.Category.offMeshConnection](./category-swift.enum/offmeshconnection.md)
   A point that is part of an off-mesh connection.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var category: NavigationMeshResource.PathNode.Category](navigationmeshresource/pathnode/category-swift.property.md)
+### Categorizing path nodes
+- [var category: NavigationMeshResource.PathNode.Category](./category-swift.property.md)
   The category of the node.
 
 

@@ -1,7 +1,8 @@
 # withContiguousMutableStorageIfAvailable(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a closure on the collection’s contiguous storage.
 
@@ -19,6 +20,8 @@ Executes a closure on the collection’s contiguous storage.
 ```swift
 mutating func withContiguousMutableStorageIfAvailable<R>(_ body: (inout UnsafeMutableBufferPointer<Slice<Base>.Element>) throws -> R) rethrows -> R?
 ```
+
+Available when `Base` conforms to `MutableCollection`.
 
 #### Return Value
 

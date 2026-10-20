@@ -1,19 +1,26 @@
 # sensorReader(_:didCompleteFetch:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the delegate with a completed fetch request.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
 ```swift
 optional func sensorReader(_ reader: SRSensorReader, didCompleteFetch fetchRequest: SRFetchRequest)
+```
+
+```objc
+- (void) sensorReader:(SRSensorReader *) reader didCompleteFetch:(SRFetchRequest *) fetchRequest;
 ```
 
 ## Parameters
@@ -23,9 +30,10 @@ optional func sensorReader(_ reader: SRSensorReader, didCompleteFetch fetchReque
 
 ## See Also
 
-- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, didFetchResult: SRFetchResult<AnyObject>) -> Bool](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md)
+### Reading Recorded Data
+- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, didFetchResult: SRFetchResult<AnyObject>) -> Bool](./sensorreader%28_,fetching,didfetchresult%29.md)
   Provides the delegate with a fetch result.
-- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, failedWithError: any Error)](srsensorreaderdelegate/sensorreader(_:fetching:failedwitherror:).md)
+- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, failedWithError: any Error)](./sensorreader%28_,fetching,failedwitherror%29.md)
   Provides the delegate with a fetch failure reason.
 
 

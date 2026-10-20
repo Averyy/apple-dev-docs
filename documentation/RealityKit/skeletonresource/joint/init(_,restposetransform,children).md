@@ -1,7 +1,8 @@
 # init(_:restPoseTransform:children:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a joint with the provided name, rest pose transform, and optional children.
 
@@ -21,7 +22,7 @@ init(_ name: String, restPoseTransform: Transform = .identity, @SkeletonResource
 
 #### Discussion
 
-> **Note**: If any children share the same name.
+> **Throws**: If any children share the same name.
 
 ## Parameters
 

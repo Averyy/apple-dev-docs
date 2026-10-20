@@ -1,7 +1,8 @@
 # LAEnvironment
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,37 +18,41 @@
 class LAEnvironment
 ```
 
+```objc
+@interface LAEnvironment : NSObject
+```
+
 ## Topics
 
 ### Classes
-- [LAEnvironment.Mechanism](laenvironment/mechanism.md)
-- [LAEnvironment.MechanismBiometry](laenvironment/mechanismbiometry.md)
-- [LAEnvironment.MechanismCompanion](laenvironment/mechanismcompanion.md)
-- [LAEnvironment.MechanismUserPassword](laenvironment/mechanismuserpassword.md)
-- [LAEnvironment.State](laenvironment/state-swift.class.md)
+- [LAEnvironment.Mechanism](./laenvironment/mechanism.md)
+- [LAEnvironment.MechanismBiometry](./laenvironment/mechanismbiometry.md)
+- [LAEnvironment.MechanismCompanion](./laenvironment/mechanismcompanion.md)
+- [LAEnvironment.MechanismUserPassword](./laenvironment/mechanismuserpassword.md)
+- [LAEnvironment.State](./laenvironment/state-swift.class.md)
 ### Protocols
-- [LAEnvironment.Observer](laenvironment/observer.md)
+- [LAEnvironment.Observer](./laenvironment/observer.md)
 ### Instance Properties
-- [var state: LAEnvironment.State](laenvironment/state-swift.property.md)
+- [var state: LAEnvironment.State](./laenvironment/state-swift.property.md)
   The environment state information.
 ### Instance Methods
-- [func addObserver(any LAEnvironment.Observer)](laenvironment/addobserver(_:).md)
-- [func removeObserver(any LAEnvironment.Observer)](laenvironment/removeobserver(_:).md)
+- [func addObserver(any LAEnvironment.Observer)](./laenvironment/addobserver%28_%29.md)
+- [func removeObserver(any LAEnvironment.Observer)](./laenvironment/removeobserver%28_%29.md)
 ### Type Properties
-- [class var currentUser: LAEnvironment](laenvironment/currentuser.md)
+- [class var currentUser: LAEnvironment](./laenvironment/currentuser.md)
   Environment of the current user.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

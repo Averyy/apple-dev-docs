@@ -1,7 +1,8 @@
 # vImageCGImageFormat_IsEqual(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two vImage Core Graphics image formats are equal.
 
@@ -20,18 +21,23 @@ Returns a Boolean value that indicates whether two vImage Core Graphics image fo
 func vImageCGImageFormat_IsEqual(_ f1: UnsafePointer<vImage_CGImageFormat>!, _ f2: UnsafePointer<vImage_CGImageFormat>!) -> Bool
 ```
 
+```c
+Boolean vImageCGImageFormat_IsEqual(const vImage_CGImageFormat *f1, const vImage_CGImageFormat *f2);
+```
+
 #### Return Value
 
 A Boolean value that indicates whether two vImage Core Graphics image formats are equal.
 
 ## Parameters
 
-- `f1`: The first [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure. If [`colorSpace`](vimage_cgimageformat/colorspace.md) is `nil`, the function uses sRGB.
-- `f2`: The second [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure. If [`colorSpace`](vimage_cgimageformat/colorspace.md) is `nil`, the function uses sRGB.
+- `f1`: The first [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure. If [`colorSpace`](./vimage_cgimageformat/colorspace.md) is `nil`, the function uses sRGB.
+- `f2`: The second [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure. If [`colorSpace`](./vimage_cgimageformat/colorspace.md) is `nil`, the function uses sRGB.
 
 ## See Also
 
-- [func vImageCGImageFormat_GetComponentCount(UnsafePointer<vImage_CGImageFormat>) -> UInt32](vimagecgimageformat_getcomponentcount(_:).md)
+### Querying Core Graphics image format attributes
+- [func vImageCGImageFormat_GetComponentCount(UnsafePointer<vImage_CGImageFormat>) -> UInt32](./vimagecgimageformat_getcomponentcount%28_%29.md)
   Calculates the number of color and alpha channels for a specified image format.
 
 

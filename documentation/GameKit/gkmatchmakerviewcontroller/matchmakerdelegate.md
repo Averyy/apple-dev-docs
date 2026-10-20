@@ -1,7 +1,8 @@
 # matchmakerDelegate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that handles matchmaker view controller changes.
 
@@ -19,9 +20,13 @@ The object that handles matchmaker view controller changes.
 weak var matchmakerDelegate: (any GKMatchmakerViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<GKMatchmakerViewControllerDelegate> matchmakerDelegate;
+```
+
 ## Mentions
 
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ You must set the delegate for GameKit to notify you when players accept their in
 
 ## See Also
 
-- [protocol GKMatchmakerViewControllerDelegate](gkmatchmakerviewcontrollerdelegate.md)
+### Setting the delegate
+- [protocol GKMatchmakerViewControllerDelegate](../gkmatchmakerviewcontrollerdelegate.md)
   An object that handles when the status of matchmaking changes.
 
 

@@ -1,7 +1,8 @@
 # power(_:unit:metric:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,6 +16,8 @@
 ```swift
 static func power(_ value: Double, unit: UnitPower, metric: WorkoutAlertMetric) -> Self
 ```
+
+Available when `Self` is `PowerThresholdAlert`.
 
 
 ---

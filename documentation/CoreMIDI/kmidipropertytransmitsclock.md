@@ -1,7 +1,8 @@
 # kMIDIPropertyTransmitsClock
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the device or entity transmits MIDI beat clock messages.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the device or entity transmits MIDI beat 
 let kMIDIPropertyTransmitsClock: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyTransmitsClock;
+```
+
 ## See Also
 
-- [let kMIDIPropertyTransmitsMTC: CFString](kmidipropertytransmitsmtc.md)
+### Timing
+- [let kMIDIPropertyTransmitsMTC: CFString](./kmidipropertytransmitsmtc.md)
   A Boolean value that indicates whether the device or entity transmits MIDI Time Code messages.
-- [let kMIDIPropertyReceivesMTC: CFString](kmidipropertyreceivesmtc.md)
+- [let kMIDIPropertyReceivesMTC: CFString](./kmidipropertyreceivesmtc.md)
   A Boolean value that indicates whether the device or entity responds to MIDI Time Code messages.
-- [let kMIDIPropertyReceivesClock: CFString](kmidipropertyreceivesclock.md)
+- [let kMIDIPropertyReceivesClock: CFString](./kmidipropertyreceivesclock.md)
   A Boolean value that indicates whether the device or entity responds to MIDI beat clock messages.
-- [let kMIDIPropertyAdvanceScheduleTimeMuSec: CFString](kmidipropertyadvancescheduletimemusec.md)
+- [let kMIDIPropertyAdvanceScheduleTimeMuSec: CFString](./kmidipropertyadvancescheduletimemusec.md)
   The recommended number of microseconds in advance that clients should schedule output.
 
 

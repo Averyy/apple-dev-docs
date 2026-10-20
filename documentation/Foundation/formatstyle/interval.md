@@ -1,7 +1,8 @@
 # interval
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting a date interval.
 
@@ -20,11 +21,13 @@ A style for formatting a date interval.
 static var interval: Date.IntervalFormatStyle { get }
 ```
 
+Available when `Self` is `Date.IntervalFormatStyle`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`Date.IntervalFormatStyle`](date/intervalformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/range/formatted(_:)) method of a `Range<Date>`.
+Use this type property when the call point allows the use of [`Date.IntervalFormatStyle`](../date/intervalformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/range/formatted%28_%29.md) method of a `Range<Date>`.
 
-The folllowing example uses [`interval`](formatstyle/interval.md) to create a date interval string with specific styling of the day, month, and weekday components, omitting the year and time.
+The folllowing example uses [`interval`](./interval.md) to create a date interval string with specific styling of the day, month, and weekday components, omitting the year and time.
 
 ```swift
 if let today = Calendar.current.date(byAdding: .day, value: -120, to: Date()),
@@ -46,25 +49,26 @@ if let today = Calendar.current.date(byAdding: .day, value: -120, to: Date()),
 
 ## See Also
 
-- [static var dateTime: Date.FormatStyle](formatstyle/datetime.md)
+### Applying date and time styles
+- [static var dateTime: Date.FormatStyle](./datetime.md)
   A style for formatting a date and time.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](../date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](../date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
-- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
+- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](./verbatim%28_,locale,timezone,calendar%29.md)
   Returns a style for formatting a date with an explicitly-specified style.
-- [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
+- [struct VerbatimFormatStyle](../date/verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](../date/intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](formatstyle/relative(presentation:unitsstyle:).md)
+- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](./relative%28presentation,unitsstyle%29.md)
   Returns a style for formatting a date as relative to the current date.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](../date/relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](formatstyle/components(style:fields:).md)
+- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](./components%28style,fields%29.md)
   Returns a style for formatting a date interval in terms of specific date components.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](../date/componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 
 

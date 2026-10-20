@@ -1,12 +1,13 @@
 # flagsChanged
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask for flags-changed events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A mask for flags-changed events.
 static var flagsChanged: NSEvent.EventTypeMask { get }
 ```
 
+```c
+NSEventMaskFlagsChanged
+```
+
 ## See Also
 
-- [static var appKitDefined: NSEvent.EventTypeMask](nsevent/eventtypemask/appkitdefined.md)
+### Getting System Events
+- [static var appKitDefined: NSEvent.EventTypeMask](./appkitdefined.md)
   A mask for AppKit–defined events.
-- [static var applicationDefined: NSEvent.EventTypeMask](nsevent/eventtypemask/applicationdefined.md)
+- [static var applicationDefined: NSEvent.EventTypeMask](./applicationdefined.md)
   A mask for app-defined events.
-- [static var cursorUpdate: NSEvent.EventTypeMask](nsevent/eventtypemask/cursorupdate.md)
+- [static var cursorUpdate: NSEvent.EventTypeMask](./cursorupdate.md)
   A mask for cursor-update events.
-- [static var periodic: NSEvent.EventTypeMask](nsevent/eventtypemask/periodic.md)
+- [static var periodic: NSEvent.EventTypeMask](./periodic.md)
   A mask for periodic events.
-- [static var systemDefined: NSEvent.EventTypeMask](nsevent/eventtypemask/systemdefined.md)
+- [static var systemDefined: NSEvent.EventTypeMask](./systemdefined.md)
   A mask for system-defined events.
 
 

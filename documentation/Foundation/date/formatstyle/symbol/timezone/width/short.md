@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.TimeZone.Width.short
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A short timezone representation.
 
@@ -22,7 +23,8 @@ case short
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.TimeZone.Width.long](date/formatstyle/symbol/timezone/width/long.md)
+### Modifying Time Zones
+- [Date.FormatStyle.Symbol.TimeZone.Width.long](./long.md)
   A long timezone representation.
 
 

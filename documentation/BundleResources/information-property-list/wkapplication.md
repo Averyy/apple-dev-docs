@@ -1,26 +1,29 @@
 # WKApplication
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - watchOS 7.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `WKApplication`
+- **Type**: boolean
 
 ## See Also
 
-- [LSMinimumSystemVersion](information-property-list/lsminimumsystemversion.md)
+### Operating system version
+- [LSMinimumSystemVersion](./lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
-- [LSMinimumSystemVersionByArchitecture](information-property-list/lsminimumsystemversionbyarchitecture.md)
+- [LSMinimumSystemVersionByArchitecture](./lsminimumsystemversionbyarchitecture.md)
   The minimum version of macOS required for the app to run on a set of architectures.
-- [MinimumOSVersion](information-property-list/minimumosversion.md)
+- [MinimumOSVersion](./minimumosversion.md)
   The minimum version of the operating system required for the app to run in iOS, iPadOS, tvOS, and watchOS.
-- [LSRequiresIPhoneOS](information-property-list/lsrequiresiphoneos.md)
+- [LSRequiresIPhoneOS](./lsrequiresiphoneos.md)
   A Boolean value indicating whether the app must run in iOS.
-- [WKWatchKitApp](information-property-list/wkwatchkitapp.md)
+- [WKWatchKitApp](./wkwatchkitapp.md)
   A Boolean value that indicates whether the bundle is a watchOS app.
 
 

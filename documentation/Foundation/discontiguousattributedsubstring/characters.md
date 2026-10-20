@@ -1,7 +1,8 @@
 # characters
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characters of the discontiguous attributed string, as a view into the underlying string.
 

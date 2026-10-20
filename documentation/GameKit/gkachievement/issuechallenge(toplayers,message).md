@@ -1,21 +1,26 @@
 # issueChallenge(toPlayers:message:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Issues an achievement challenge to a list of players.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 6.0+
-- macOS 10.8+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 7.0
+- iPadOS 6.0+ - Deprecated in 7.0
+- Mac Catalyst 6.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 func issueChallenge(toPlayers playerIDs: [String]?, message: String?)
+```
+
+```objc
+- (void) issueChallengeToPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message;
 ```
 
 #### Discussion
@@ -31,9 +36,10 @@ If you mark the achievement as hidden, or if the challenged player already earne
 
 ## See Also
 
-- [func report(completionHandler: (((any Error)?) -> Void)?)](gkachievement/report(completionhandler:).md)
+### Deprecated Methods
+- [func report(completionHandler: (((any Error)?) -> Void)?)](./report%28completionhandler%29.md)
   Reports the player’s progress to Game Center.
-- [func selectChallengeablePlayerIDs([String]?, withCompletionHandler: (([String]?, (any Error)?) -> Void)?)](gkachievement/selectchallengeableplayerids(_:withcompletionhandler:).md)
+- [func selectChallengeablePlayerIDs([String]?, withCompletionHandler: (([String]?, (any Error)?) -> Void)?)](./selectchallengeableplayerids%28_,withcompletionhandler%29.md)
   Finds the subset of players who can earn an achievement.
 
 

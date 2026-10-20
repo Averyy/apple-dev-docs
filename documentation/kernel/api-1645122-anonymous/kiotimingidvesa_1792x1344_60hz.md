@@ -1,14 +1,15 @@
 # kIOTimingIDVESA_1792x1344_60hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOTimingIDVESA_1792x1344_60hz = 296
 ```
 

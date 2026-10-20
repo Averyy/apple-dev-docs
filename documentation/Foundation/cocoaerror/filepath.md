@@ -1,7 +1,8 @@
 # filePath
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file path associated with the error, if any.
 

@@ -1,7 +1,8 @@
 # sign
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sign of the floating-point value.
 
@@ -33,9 +34,10 @@ Don’t use this property to check whether a floating point value is negative. F
 
 ## See Also
 
-- [var magnitude: Float](float/magnitude-swift.property.md)
+### Finding the Sign and Magnitude
+- [var magnitude: Float](./magnitude-swift.property.md)
   The magnitude of this value.
-- [typealias Magnitude](float/magnitude-swift.typealias.md)
+- [typealias Magnitude](./magnitude-swift.typealias.md)
   A type that can represent the absolute value of any possible value of the conforming type.
 
 

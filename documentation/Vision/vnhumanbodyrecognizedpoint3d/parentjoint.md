@@ -1,7 +1,8 @@
 # parentJoint
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent joint in the observation.
 
@@ -19,9 +20,13 @@ The parent joint in the observation.
 var parentJoint: VNHumanBodyPose3DObservation.JointName { get }
 ```
 
+```objc
+@property (readonly) VNHumanBodyPose3DObservationJointName parentJoint;
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
 
 ---

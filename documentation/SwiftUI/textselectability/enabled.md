@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A selectability value that enables text selection by a person using your app.
 
@@ -19,11 +20,13 @@ A selectability value that enables text selection by a person using your app.
 static var enabled: EnabledTextSelectability { get }
 ```
 
+Available when `Self` is `EnabledTextSelectability`.
+
 #### Discussion
 
 Enabling text selection allows people to perform actions on the text content, such as copying and sharing. Enable text selection in views where those operations are useful, such as copying unique IDs or error messages. This allows people to paste the data into emails or documents.
 
-The following example enables text selection on the second of two [`Text`](text.md) views in a [`VStack`](vstack.md).
+The following example enables text selection on the second of two [`Text`](../text.md) views in a [`VStack`](../vstack.md).
 
 ```swift
 VStack {
@@ -36,7 +39,8 @@ VStack {
 
 ## See Also
 
-- [static var disabled: DisabledTextSelectability](textselectability/disabled.md)
+### Getting selectability options
+- [static var disabled: DisabledTextSelectability](./disabled.md)
   A selectability value that disables text selection by the person using your app.
 
 

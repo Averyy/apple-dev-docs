@@ -1,7 +1,8 @@
 # VNImageAestheticsScoresObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the overall score of aesthetic attributes for an image.
 
@@ -19,33 +20,38 @@ An object that represents the overall score of aesthetic attributes for an image
 class VNImageAestheticsScoresObservation
 ```
 
+```objc
+@interface VNImageAestheticsScoresObservation : VNObservation
+```
+
 ## Topics
 
 ### Parsing Observation Content
-- [var overallScore: Float](vnimageaestheticsscoresobservation/overallscore.md)
+- [var overallScore: Float](./vnimageaestheticsscoresobservation/overallscore.md)
   A score which incorporates aesthetic score, failure score, and utility labels.
-- [var isUtility: Bool](vnimageaestheticsscoresobservation/isutility.md)
+- [var isUtility: Bool](./vnimageaestheticsscoresobservation/isutility.md)
   A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 ## Relationships
 
 ### Inherits From
-- [VNObservation](vnobservation.md)
+- [VNObservation](./vnobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [var results: [VNImageAestheticsScoresObservation]?](vncalculateimageaestheticsscoresrequest/results.md)
+### Accessing the results
+- [var results: [VNImageAestheticsScoresObservation]?](./vncalculateimageaestheticsscoresrequest/results.md)
   The results of the aesthetics request.
 
 

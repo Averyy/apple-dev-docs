@@ -1,7 +1,8 @@
 # renewalInfo
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signed renewal information for the auto-renewable subscription.
 
@@ -22,19 +23,20 @@ let renewalInfo: VerificationResult<Product.SubscriptionInfo.RenewalInfo>
 
 ## Mentions
 
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
-- [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
-- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../../../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
+- [Testing Apple In-App Purchases in Xcode](../../../testing-in-app-purchases-in-xcode.md)
 
 ## See Also
 
-- [let state: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/status-swift.struct/state.md)
+### Getting subscription status information
+- [let state: Product.SubscriptionInfo.RenewalState](./state.md)
   The renewal state of the auto-renewable subscription.
-- [let transaction: VerificationResult<Transaction>](product/subscriptioninfo/status-swift.struct/transaction.md)
+- [let transaction: VerificationResult<Transaction>](./transaction.md)
   The latest transaction for the subscription group.
-- [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
+- [Product.SubscriptionInfo.RenewalInfo](../renewalinfo.md)
   The renewal information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
+- [Product.SubscriptionInfo.RenewalState](../renewalstate.md)
   The renewal states of auto-renewable subscriptions.
 
 

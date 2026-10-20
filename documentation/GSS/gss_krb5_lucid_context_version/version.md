@@ -1,7 +1,8 @@
 # version
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The structure version number.
 
@@ -16,6 +17,10 @@ The structure version number.
 
 ```swift
 var version: OM_uint32
+```
+
+```c
+OM_uint32 version;
 ```
 
 

@@ -1,18 +1,19 @@
 # MKCoordinateRegion
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A rectangular geographic region that centers around a specific latitude and longitude.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,40 +21,45 @@ A rectangular geographic region that centers around a specific latitude and long
 struct MKCoordinateRegion
 ```
 
+```c
+typedef struct { ... } MKCoordinateRegion;
+```
+
 ## Topics
 
 ### Creating a region
-- [init()](mkcoordinateregion/init.md)
+- [init()](./mkcoordinateregion/init%28%29.md)
   Creates a coordinate region.
-- [init(center: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance)](mkcoordinateregion/init(center:latitudinalmeters:longitudinalmeters:).md)
+- [init(center: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance)](./mkcoordinateregion/init%28center,latitudinalmeters,longitudinalmeters%29.md)
   Creates a new coordinate region from the specified coordinate and distance values.
-- [init(MKMapRect)](mkcoordinateregion/init(_:).md)
+- [init(MKMapRect)](./mkcoordinateregion/init%28_%29.md)
   Returns the region that corresponds to the specified map rectangle.
-- [init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)](mkcoordinateregion/init(center:span:).md)
+- [init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)](./mkcoordinateregion/init%28center,span%29.md)
   Creates a coordinate region with a span around the specified center coordinate.
 ### Getting the region coordinates
-- [var center: CLLocationCoordinate2D](mkcoordinateregion/center.md)
+- [var center: CLLocationCoordinate2D](./mkcoordinateregion/center.md)
   The center point of the region.
-- [var span: MKCoordinateSpan](mkcoordinateregion/span.md)
+- [var span: MKCoordinateSpan](./mkcoordinateregion/span.md)
   The horizontal and vertical span representing the amount of map to display.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MKCoordinateSpan](mkcoordinatespan.md)
+### Map coordinates
+- [struct MKCoordinateSpan](./mkcoordinatespan.md)
   The width and height of a map region.
-- [struct MKMapRect](mkmaprect.md)
+- [struct MKMapRect](./mkmaprect.md)
   A rectangular area on a two-dimensional map projection.
-- [struct MKMapPoint](mkmappoint.md)
+- [struct MKMapPoint](./mkmappoint.md)
   A point on a two-dimensional map projection.
-- [struct MKMapSize](mkmapsize.md)
+- [struct MKMapSize](./mkmapsize.md)
   Width and height information on a two-dimensional map projection.
-- [class MKDistanceFormatter](mkdistanceformatter.md)
+- [class MKDistanceFormatter](./mkdistanceformatter.md)
   A utility object that converts between a geographic distance and a string-based expression of that distance.
 
 

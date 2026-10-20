@@ -1,7 +1,8 @@
 # ButtonSizing
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The sizing behavior of `Button`s and other button-like controls.
 
@@ -23,40 +24,41 @@ struct ButtonSizing
 ## Topics
 
 ### Type Properties
-- [static var automatic: ButtonSizing](buttonsizing/automatic.md)
+- [static var automatic: ButtonSizing](./buttonsizing/automatic.md)
   The default button sizing behavior appropriate for the button’s contextual placement and platform.
-- [static var fitted: ButtonSizing](buttonsizing/fitted.md)
+- [static var fitted: ButtonSizing](./buttonsizing/fitted.md)
   Sizes a button along its primary axis to fit its inner content, compressing if necessary.
-- [static var flexible: ButtonSizing](buttonsizing/flexible.md)
+- [static var flexible: ButtonSizing](./buttonsizing/flexible.md)
   Sizes a button flexibly along its primary axis, filling its available space by expanding or compressing beyond its ideal size.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Button](button.md)
+### Creating buttons
+- [struct Button](./button.md)
   A control that initiates an action.
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+- [func buttonStyle(_:)](./view/buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [func buttonBorderShape(ButtonBorderShape) -> some View](view/buttonbordershape(_:).md)
+- [func buttonBorderShape(ButtonBorderShape) -> some View](./view/buttonbordershape%28_%29.md)
   Sets the border shape for buttons in this view.
-- [struct ButtonBorderShape](buttonbordershape.md)
+- [struct ButtonBorderShape](./buttonbordershape.md)
   A shape used to draw a button’s border.
-- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
+- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](./view/buttonrepeatbehavior%28_%29.md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
+- [struct ButtonRepeatBehavior](./buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](./environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./view/buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonRole](buttonrole.md)
+- [struct ButtonRole](./buttonrole.md)
   A value that describes the purpose of a button.
 
 

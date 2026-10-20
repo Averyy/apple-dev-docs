@@ -1,7 +1,8 @@
 # insertItems(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts new items at the specified index paths.
 
@@ -9,7 +10,7 @@ Inserts new items at the specified index paths.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ Inserts new items at the specified index paths.
 func insertItems(at indexPaths: [IndexPath])
 ```
 
+```objc
+- (void) insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 #### Discussion
 
 Call this method to insert one or more new items into the collection view. You might do this when your data source object receives data for new items or in response to user interactions with the collection view. The collection view gets the layout information for the new cells as part of calling this method. And if the layout information indicates that the cells should appear onscreen, the collection view asks your data source to provide the appropriate views, animating them into position as needed.
 
-You can also call this method from a block passed to the [`performBatchUpdates(_:completion:)`](uicollectionview/performbatchupdates(_:completion:).md) method when you want to animate multiple separate changes into place at the same time. See the description of that method for more information.
+You can also call this method from a block passed to the [`performBatchUpdates(_:completion:)`](./performbatchupdates%28_,completion%29.md) method when you want to animate multiple separate changes into place at the same time. See the description of that method for more information.
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which contains a section index and item index at which to insert a new cell. This parameter must not be `nil`.
+- `indexPaths`: An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which contains a section index and item index at which to insert a new cell. This parameter must not be `nil`.
 
 ## See Also
 
-- [func moveItem(at: IndexPath, to: IndexPath)](uicollectionview/moveitem(at:to:).md)
+### Inserting, moving, and deleting Items
+- [func moveItem(at: IndexPath, to: IndexPath)](./moveitem%28at,to%29.md)
   Moves an item from one location to another in the collection view.
-- [func deleteItems(at: [IndexPath])](uicollectionview/deleteitems(at:).md)
+- [func deleteItems(at: [IndexPath])](./deleteitems%28at%29.md)
   Deletes the items at the specified index paths.
 
 

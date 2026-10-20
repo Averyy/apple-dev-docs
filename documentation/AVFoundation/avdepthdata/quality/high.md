@@ -1,7 +1,8 @@
 # AVDepthData.Quality.high
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The depth map is a good candidate for rendering high-quality depth effects or reconstructing a 3D scene.
 
@@ -19,11 +20,16 @@ The depth map is a good candidate for rendering high-quality depth effects or re
 case high
 ```
 
+```c
+AVDepthDataQualityHigh
+```
+
 #### Discussion
 
 ## See Also
 
-- [AVDepthData.Quality.low](avdepthdata/quality/low.md)
+### Depth quality values
+- [AVDepthData.Quality.low](./low.md)
   The depth map is a poor candidate for rendering high-quality depth effects or reconstructing a 3D scene.
 
 

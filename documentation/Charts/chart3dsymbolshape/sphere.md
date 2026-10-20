@@ -1,7 +1,8 @@
 # sphere
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sphere symbol.
 
@@ -17,6 +18,8 @@ Sphere symbol.
 ```swift
 static var sphere: BasicChart3DSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChart3DSymbolShape`.
 
 
 ---

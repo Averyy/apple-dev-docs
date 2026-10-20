@@ -1,7 +1,8 @@
 # ignoreUnknownCharacters
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Modify the decoding algorithm so that it ignores unknown non-Base-64 bytes, including line ending characters.
 
@@ -18,6 +19,10 @@ Modify the decoding algorithm so that it ignores unknown non-Base-64 bytes, incl
 
 ```swift
 static var ignoreUnknownCharacters: NSData.Base64DecodingOptions { get }
+```
+
+```c
+NSDataBase64DecodingIgnoreUnknownCharacters
 ```
 
 

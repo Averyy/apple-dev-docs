@@ -1,7 +1,8 @@
 # setToolbarItemsNeedUpdate()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Updates the enabled states and badges of toolbar items.
 
@@ -14,9 +15,13 @@ Updates the enabled states and badges of toolbar items.
 class func setToolbarItemsNeedUpdate()
 ```
 
+```objc
++ (void) setToolbarItemsNeedUpdate;
+```
+
 #### Discussion
 
-This method calls the [`validateToolbarItem(in:validationHandler:)`](sfsafariextensionhandling/validatetoolbaritem(in:validationhandler:).md) method on the extension’s principal object for each open window. See [`SFSafariExtensionHandling`](sfsafariextensionhandling.md).
+This method calls the [`validateToolbarItem(in:validationHandler:)`](../sfsafariextensionhandling/validatetoolbaritem%28in,validationhandler%29.md) method on the extension’s principal object for each open window. See [`SFSafariExtensionHandling`](../sfsafariextensionhandling.md).
 
 
 ---

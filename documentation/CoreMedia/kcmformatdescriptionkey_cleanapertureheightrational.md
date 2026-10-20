@@ -1,7 +1,8 @@
 # kCMFormatDescriptionKey_CleanApertureHeightRational
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that identifies the clean aperture height rational value.
 
@@ -20,21 +21,26 @@ A key that identifies the clean aperture height rational value.
 let kCMFormatDescriptionKey_CleanApertureHeightRational: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionKey_CleanApertureHeightRational;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionKey_CleanApertureHeight: CFString](kcmformatdescriptionkey_cleanapertureheight-swift.var.md)
+### Constants
+- [let kCMFormatDescriptionKey_CleanApertureHeight: CFString](./kcmformatdescriptionkey_cleanapertureheight-swift.var.md)
   A key that identifies the clean aperture height value.
-- [let kCMFormatDescriptionKey_CleanApertureHorizontalOffset: CFString](kcmformatdescriptionkey_cleanaperturehorizontaloffset-swift.var.md)
+- [let kCMFormatDescriptionKey_CleanApertureHorizontalOffset: CFString](./kcmformatdescriptionkey_cleanaperturehorizontaloffset-swift.var.md)
   A key that describes the clean aperture height horizontal offset value.
-- [let kCMFormatDescriptionKey_CleanApertureHorizontalOffsetRational: CFString](kcmformatdescriptionkey_cleanaperturehorizontaloffsetrational.md)
+- [let kCMFormatDescriptionKey_CleanApertureHorizontalOffsetRational: CFString](./kcmformatdescriptionkey_cleanaperturehorizontaloffsetrational.md)
   A key that identifies the clean aperture horizontal offset rational value.
-- [let kCMFormatDescriptionKey_CleanApertureVerticalOffset: CFString](kcmformatdescriptionkey_cleanapertureverticaloffset-swift.var.md)
+- [let kCMFormatDescriptionKey_CleanApertureVerticalOffset: CFString](./kcmformatdescriptionkey_cleanapertureverticaloffset-swift.var.md)
   A key that identifies the clean aperture vertical offset value.
-- [let kCMFormatDescriptionKey_CleanApertureVerticalOffsetRational: CFString](kcmformatdescriptionkey_cleanapertureverticaloffsetrational.md)
+- [let kCMFormatDescriptionKey_CleanApertureVerticalOffsetRational: CFString](./kcmformatdescriptionkey_cleanapertureverticaloffsetrational.md)
   A key that identifies the clean aperture vertical offset rational value.
-- [let kCMFormatDescriptionKey_CleanApertureWidth: CFString](kcmformatdescriptionkey_cleanaperturewidth-swift.var.md)
+- [let kCMFormatDescriptionKey_CleanApertureWidth: CFString](./kcmformatdescriptionkey_cleanaperturewidth-swift.var.md)
   A key that identifies the clean aperture width value.
-- [let kCMFormatDescriptionKey_CleanApertureWidthRational: CFString](kcmformatdescriptionkey_cleanaperturewidthrational.md)
+- [let kCMFormatDescriptionKey_CleanApertureWidthRational: CFString](./kcmformatdescriptionkey_cleanaperturewidthrational.md)
   A key that identifies the clean aperture width rational value.
 
 

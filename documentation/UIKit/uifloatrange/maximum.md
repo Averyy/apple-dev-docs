@@ -1,21 +1,26 @@
 # maximum
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum range of motion for sliding and pin attachments.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var maximum: CGFloat
+```
+
+```c
+CGFloat maximum;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ For sliding attachments, it represents the number of points to move along the ax
 
 ## See Also
 
-- [var minimum: CGFloat](uifloatrange/minimum.md)
+### Getting the range values
+- [var minimum: CGFloat](./minimum.md)
   The minimum range of motion for sliding and pin attachments.
 
 

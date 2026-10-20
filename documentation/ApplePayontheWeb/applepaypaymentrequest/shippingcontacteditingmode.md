@@ -1,7 +1,8 @@
 # shippingContactEditingMode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the shipping mode prevents the user from editing the shipping address.
 
@@ -11,13 +12,13 @@ A value that indicates whether the shipping mode prevents the user from editing 
 
 ## Declaration
 
-```swift
+```
 ApplePayShippingContactEditingMode shippingContactEditingMode;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
+- [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
 #### Discussion
 
@@ -60,13 +61,14 @@ let applePayPaymentRequest = {
 
 ## See Also
 
-- [requiredBillingContactFields](applepaypaymentrequest/requiredbillingcontactfields.md)
+### Requesting billing and shipping contact information
+- [requiredBillingContactFields](./requiredbillingcontactfields.md)
   The fields of billing information the user must provide to process the transaction.
-- [requiredShippingContactFields](applepaypaymentrequest/requiredshippingcontactfields.md)
+- [requiredShippingContactFields](./requiredshippingcontactfields.md)
   The fields of shipping information the user must provide to fulfill the order.
-- [ApplePayContactField](applepaycontactfield.md)
+- [ApplePayContactField](../applepaycontactfield.md)
   Field names for requesting contact information in a payment request.
-- [ApplePayShippingContactEditingMode](applepayshippingcontacteditingmode.md)
+- [ApplePayShippingContactEditingMode](../applepayshippingcontacteditingmode.md)
   Values that indicate whether the shipping mode prevents the user from editing fields of the shipping address.
 
 

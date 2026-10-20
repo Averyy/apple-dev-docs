@@ -1,7 +1,8 @@
 # mapView
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map view associated with the button.
 
@@ -15,6 +16,10 @@ The map view associated with the button.
 
 ```swift
 weak var mapView: MKMapView? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) MKMapView * mapView;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -19,10 +20,11 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [static var layerLeftEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layerleftedge.md)
-- [static var layerRightEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layerrightedge.md)
-- [static var layerBottomEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layerbottomedge.md)
-- [static var layerTopEdge: CAEdgeAntialiasingMask](caedgeantialiasingmask/layertopedge.md)
+### Constants
+- [static var layerLeftEdge: CAEdgeAntialiasingMask](./layerleftedge.md)
+- [static var layerRightEdge: CAEdgeAntialiasingMask](./layerrightedge.md)
+- [static var layerBottomEdge: CAEdgeAntialiasingMask](./layerbottomedge.md)
+- [static var layerTopEdge: CAEdgeAntialiasingMask](./layertopedge.md)
 
 
 ---

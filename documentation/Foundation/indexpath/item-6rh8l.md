@@ -1,7 +1,8 @@
 # item
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item of this index path, when used with `NSCollectionView`.
 
@@ -16,7 +17,7 @@ var item: Int { get set }
 
 #### Discussion
 
-> **Note**: The index path must have exactly two elements.
+> **Precondition**: The index path must have exactly two elements.
 
 
 ---

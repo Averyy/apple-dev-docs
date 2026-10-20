@@ -1,7 +1,8 @@
 # DiskImage.Format.asif
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apple sparse image format (ASIF).
 
@@ -16,7 +17,8 @@ case asif
 
 ## See Also
 
-- [struct ASIFCreationConfiguration](asifcreationconfiguration.md)
+### Related Documentation
+- [struct ASIFCreationConfiguration](../../asifcreationconfiguration.md)
   The configuration to use to create Apple sparse image format (ASIF) disk images.
 
 

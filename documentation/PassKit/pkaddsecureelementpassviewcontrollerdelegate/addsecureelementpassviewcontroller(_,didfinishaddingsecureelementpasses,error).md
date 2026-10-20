@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when PassKit finishes adding one or more Secure Element passes.
@@ -18,15 +19,20 @@ Tells the delegate when PassKit finishes adding one or more Secure Element passe
 func addSecureElementPassViewController(_ controller: PKAddSecureElementPassViewController, didFinishAddingSecureElementPasses passes: [PKSecureElementPass]?, error: (any Error)?)
 ```
 
+```objc
+- (void) addSecureElementPassViewController:(PKAddSecureElementPassViewController *) controller didFinishAddingSecureElementPasses:(NSArray<PKSecureElementPass *> *) passes error:(NSError *) error;
+```
+
 ## Parameters
 
 - `controller`: The view controller that requests PassKit to add passes.
 - `passes`: If addition succeeds, the array of Secure Element passes that PassKit adds; otherwise, `nil`.
-- `error`: If addition fails, an error that describes the failure; otherwise, `nil`. See [`PKAddSecureElementPassError`](pkaddsecureelementpasserror.md) for more information.
+- `error`: If addition fails, an error that describes the failure; otherwise, `nil`. See [`PKAddSecureElementPassError`](../pkaddsecureelementpasserror.md) for more information.
 
 ## See Also
 
-- [func addSecureElementPassViewController(PKAddSecureElementPassViewController, didFinishAdding: PKSecureElementPass?, error: (any Error)?)](pkaddsecureelementpassviewcontrollerdelegate/addsecureelementpassviewcontroller(_:didfinishadding:error:).md)
+### Responding to pass addition
+- [func addSecureElementPassViewController(PKAddSecureElementPassViewController, didFinishAdding: PKSecureElementPass?, error: (any Error)?)](./addsecureelementpassviewcontroller%28_,didfinishadding,error%29.md)
   Tells the delegate when PassKit finishes adding a Secure Element pass.
 
 

@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Size of the buffer in pixels
 

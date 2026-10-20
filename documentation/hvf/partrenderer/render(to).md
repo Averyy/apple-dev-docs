@@ -1,7 +1,8 @@
 # render(to:)
 
 **Framework**: hvf  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Render the current part using the current parameters using the supplied render context If the PartRenderer was created using reusable, all input parameters are intact afterwards; otherwise they are destroyed Returns true if rendering was successful
 

@@ -1,7 +1,8 @@
 # systemActions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of supported accessibility actions.
 
@@ -11,7 +12,7 @@ The set of supported accessibility actions.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

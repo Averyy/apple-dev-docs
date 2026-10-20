@@ -1,7 +1,8 @@
 # storeBytes(of:toByteOffset:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores a value’s bytes into the buffer pointer slice’s raw memory at the specified byte offset.
 
@@ -19,6 +20,8 @@ Stores a value’s bytes into the buffer pointer slice’s raw memory at the spe
 ```swift
 func storeBytes<T>(of value: T, toByteOffset offset: Int = 0, as type: T.Type)
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Discussion
 

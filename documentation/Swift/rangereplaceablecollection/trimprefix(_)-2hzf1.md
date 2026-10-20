@@ -1,7 +1,8 @@
 # trimPrefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the initial elements matching the regex from the start of this collection, if the initial elements match, using the given closure to create the regex.
 
@@ -19,6 +20,8 @@ Removes the initial elements matching the regex from the start of this collectio
 ```swift
 mutating func trimPrefix(@RegexComponentBuilder _ content: () -> some RegexComponent)
 ```
+
+Available when `Self` conforms to `BidirectionalCollection` and `SubSequence` is `Substring`.
 
 ## Parameters
 

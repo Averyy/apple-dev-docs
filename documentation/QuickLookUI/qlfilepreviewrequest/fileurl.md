@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that indicates the content to preview.
 
@@ -12,6 +13,10 @@ The URL that indicates the content to preview.
 
 ```swift
 var fileURL: URL { get }
+```
+
+```objc
+@property (readonly) NSURL * fileURL;
 ```
 
 

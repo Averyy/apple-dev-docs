@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a chart composed of a series of identifiable marks.
 
@@ -23,18 +24,19 @@ init<Data, C>(_ data: Data, @ContentBuilder content: @escaping (Data.Element) ->
 
 #### Discussion
 
-This initializer wraps the data that you provide as input in an implicit [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) structure. If you need to represent more than one series in your chart, use [`init(content:)`](chart/init(content:).md) instead.
+This initializer wraps the data that you provide as input in an implicit [`ForEach`](../../SwiftUI/foreach.md) structure. If you need to represent more than one series in your chart, use [`init(content:)`](./init%28content%29.md) instead.
 
 ## Parameters
 
-- `data`: A collection of data that conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
+- `data`: A collection of data that conforms to the [`Identifiable`](../../Swift/identifiable.md) protocol.
 - `content`: The mark that the chart should draw for each element in the data collection.
 
 ## See Also
 
-- [init(content: () -> Content)](chart/init(content:).md)
+### Creating a chart
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates a chart composed of any number of data series and individual marks.
-- [init<Data, ID, C>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> C)](chart/init(_:id:content:).md)
+- [init<Data, ID, C>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> C)](./init%28_,id,content%29.md)
   Creates a chart composed of a series of marks.
 
 

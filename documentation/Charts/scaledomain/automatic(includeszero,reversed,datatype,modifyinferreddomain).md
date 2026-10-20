@@ -1,7 +1,8 @@
 # automatic(includesZero:reversed:dataType:modifyInferredDomain:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a scale domain configuration that infers the scale domain from data.
 
@@ -19,6 +20,8 @@ Creates a scale domain configuration that infers the scale domain from data.
 ```swift
 static func automatic<DataValue>(includesZero: Bool? = nil, reversed: Bool? = nil, dataType: DataValue.Type, modifyInferredDomain: @escaping (inout [DataValue]) -> Void) -> AutomaticScaleDomain where DataValue : Plottable
 ```
+
+Available when `Self` is `AutomaticScaleDomain`.
 
 #### Discussion
 

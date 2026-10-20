@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.QuotaUsage
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The usage quota state for a Private Cloud Compute language model.
 
@@ -26,29 +27,30 @@ A quota describes the model’s per-user request budget and where the caller cur
 ## Topics
 
 ### Inspecting the quota limit
-- [var isLimitReached: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/islimitreached.md)
+- [var isLimitReached: Bool](./quotausage-swift.struct/islimitreached.md)
   A Boolean value that indicates whether the usage limit has been reached.
-- [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.property.md)
+- [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](./quotausage-swift.struct/limitincreasesuggestion-swift.property.md)
   A suggestion the user can act on to increase their quota.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.struct.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](./quotausage-swift.struct/limitincreasesuggestion-swift.struct.md)
   An offer that a user can act on to increase their quota for a language model.
 ### Getting the quota status
-- [var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.property.md)
+- [var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status](./quotausage-swift.struct/status-swift.property.md)
   The current quota status.
-- [PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum.md)
+- [PrivateCloudComputeLanguageModel.QuotaUsage.Status](./quotausage-swift.struct/status-swift.enum.md)
   The quota status of a language model.
-- [var resetDate: Date?](privatecloudcomputelanguagemodel/quotausage-swift.struct/resetdate.md)
+- [var resetDate: Date?](./quotausage-swift.struct/resetdate.md)
   The date at which the quota refreshes.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var quotaUsage: PrivateCloudComputeLanguageModel.QuotaUsage](privatecloudcomputelanguagemodel/quotausage-swift.property.md)
+### Getting the quota
+- [var quotaUsage: PrivateCloudComputeLanguageModel.QuotaUsage](./quotausage-swift.property.md)
   The usage quota for this model.
 
 

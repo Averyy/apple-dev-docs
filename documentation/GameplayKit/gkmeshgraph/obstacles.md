@@ -1,7 +1,8 @@
 # obstacles
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of obstacle objects in the graph, each of which describes a polygon-shaped impassable area.
 
@@ -19,11 +20,16 @@ The list of obstacle objects in the graph, each of which describes a polygon-sha
 var obstacles: [GKPolygonObstacle] { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<GKPolygonObstacle *> * obstacles;
+```
+
 ## See Also
 
-- [func addObstacles([GKPolygonObstacle])](gkmeshgraph/addobstacles(_:).md)
+### Working with Obstacles
+- [func addObstacles([GKPolygonObstacle])](./addobstacles%28_%29.md)
   Adds new obstacles to the graph.
-- [func removeObstacles([GKPolygonObstacle])](gkmeshgraph/removeobstacles(_:).md)
+- [func removeObstacles([GKPolygonObstacle])](./removeobstacles%28_%29.md)
   Removes the specified obstacle from the graph.
 
 

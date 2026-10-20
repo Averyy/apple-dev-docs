@@ -1,18 +1,19 @@
 # audioMix
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio mix parameters to be applied during playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,19 +22,24 @@ The audio mix parameters to be applied during playback.
 var audioMix: AVAudioMix? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVAudioMix * audioMix;
+```
+
 #### Discussion
 
 An audio mix can only be used with file-based media and is not supported for use with media served using HTTP Live Streaming.
 
 ## See Also
 
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avplayeritem/audiotimepitchalgorithm.md)
+### Configuring audio
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](./allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
-- [struct AVAudioSpatializationFormats](avaudiospatializationformats.md)
+- [struct AVAudioSpatializationFormats](../avaudiospatializationformats.md)
   A structure that defines the spatialization formats that a player item supports.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](./isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
 
 

@@ -1,7 +1,8 @@
 # detail
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -20,8 +21,9 @@ static var detail: NavigationSplitViewColumn { get }
 
 ## See Also
 
-- [static var sidebar: NavigationSplitViewColumn](navigationsplitviewcolumn/sidebar.md)
-- [static var content: NavigationSplitViewColumn](navigationsplitviewcolumn/content.md)
+### Getting a column
+- [static var sidebar: NavigationSplitViewColumn](./sidebar.md)
+- [static var content: NavigationSplitViewColumn](./content.md)
 
 
 ---

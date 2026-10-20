@@ -1,7 +1,8 @@
 # NSPinnedCAIdentities
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A list of allowed Certificate Authority certificates for a given domain name.
 
@@ -11,13 +12,14 @@ A list of allowed Certificate Authority certificates for a given domain name.
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `NSPinnedCAIdentities`
+- **Type**: array of dictionary 
 
 #### Discussion
 
-Provide an array of dictionaries as the value for this key. Each dictionary in the array contains the [`SPKI-SHA256-BASE64`](information-property-list/nspinnedcaidentities/spki-sha256-base64.md) key with a value that represents the Base64-encoded SHA-256 digest of an X.509 certificate’s DER-encoded ASN.1 Subject Public Key Info (SPKI) structure.
+Provide an array of dictionaries as the value for this key. Each dictionary in the array contains the [`SPKI-SHA256-BASE64`](./nspinnedcaidentities/spki-sha256-base64.md) key with a value that represents the Base64-encoded SHA-256 digest of an X.509 certificate’s DER-encoded ASN.1 Subject Public Key Info (SPKI) structure.
 
 ```console
 NSPinnedCAIdentities : Array {
@@ -29,17 +31,18 @@ NSPinnedCAIdentities : Array {
 
 When making a network connection to a named domain, App Transport Security (ATS) blocks the connection unless it can find the SPKI digest of at least one Certificate Authority (CA) or sub-CA certificate in the chain presented by the server.
 
-You must include this key or the [`NSPinnedLeafIdentities`](information-property-list/nspinnedleafidentities.md) key or both in each domain-specific [`NSPinnedDomains`](information-property-list/nsapptransportsecurity/nspinneddomains.md) subdictionary. If you include both, then both must produce a match.
+You must include this key or the [`NSPinnedLeafIdentities`](./nspinnedleafidentities.md) key or both in each domain-specific [`NSPinnedDomains`](./nsapptransportsecurity/nspinneddomains.md) subdictionary. If you include both, then both must produce a match.
 
 ## Topics
 
 ### Key Digests
-- [SPKI-SHA256-BASE64](information-property-list/nspinnedcaidentities/spki-sha256-base64.md)
+- [SPKI-SHA256-BASE64](./nspinnedcaidentities/spki-sha256-base64.md)
   The digest of an X.509 certificate’s Subject Public Key Info structure.
 
 ## See Also
 
-- [NSPinnedLeafIdentities](information-property-list/nspinnedleafidentities.md)
+### Identities
+- [NSPinnedLeafIdentities](./nspinnedleafidentities.md)
   A list of allowed leaf certificates for a given domain name.
 
 

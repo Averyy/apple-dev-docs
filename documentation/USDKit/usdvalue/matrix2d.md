@@ -1,7 +1,8 @@
 # USDValue.Matrix2d
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 2x2 matrix of double-precision floating-point values.
 
@@ -23,32 +24,32 @@ struct Matrix2d
 ## Topics
 
 ### Initializers
-- [init(Double, Double, Double, Double)](usdvalue/matrix2d/init(_:_:_:_:).md)
+- [init(Double, Double, Double, Double)](./matrix2d/init%28_,_,_,_%29.md)
   Creates a matrix from individual element values in row-major order.
-- [init(diagonal: Double)](usdvalue/matrix2d/init(diagonal:).md)
+- [init(diagonal: Double)](./matrix2d/init%28diagonal%29.md)
   Creates a diagonal matrix with `s` on the diagonal and zeros elsewhere.
 ### Subscripts
-- [subscript(Int) -> USDValue.Matrix2d.VectorType](usdvalue/matrix2d/subscript(_:).md)
+- [subscript(Int) -> USDValue.Matrix2d.VectorType](./matrix2d/subscript%28_%29.md)
   Accesses the row at the specified index.
-- [subscript(column _: Int) -> USDValue.Matrix2d.VectorType](usdvalue/matrix2d/subscript(column:).md)
+- [subscript(column _: Int) -> USDValue.Matrix2d.VectorType](./matrix2d/subscript%28column%29.md)
   Accesses the column at the specified index.
 ### Type Aliases
-- [USDValue.Matrix2d.VectorType](usdvalue/matrix2d/vectortype.md)
+- [USDValue.Matrix2d.VectorType](./matrix2d/vectortype.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

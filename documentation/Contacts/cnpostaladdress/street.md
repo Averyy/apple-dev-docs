@@ -1,7 +1,8 @@
 # street
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The street name in a postal address.
 
@@ -19,25 +20,38 @@ The street name in a postal address.
 var street: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * street;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * street;
+```
+
 #### Discussion
 
 Multiline addresses are delimited by carriage returns (that is, “\n”).
 
 ## See Also
 
-- [var city: String](cnpostaladdress/city.md)
+### Getting the Parts of a Postal Address
+- [var city: String](./city.md)
   The city name in a postal address.
-- [var state: String](cnpostaladdress/state.md)
+- [var state: String](./state.md)
   The state name in a postal address.
-- [var postalCode: String](cnpostaladdress/postalcode.md)
+- [var postalCode: String](./postalcode.md)
   The postal code in a postal address.
-- [var country: String](cnpostaladdress/country.md)
+- [var country: String](./country.md)
   The country or region name in a postal address.
-- [var isoCountryCode: String](cnpostaladdress/isocountrycode.md)
+- [var isoCountryCode: String](./isocountrycode.md)
   The ISO country code for the country or region in a postal address, using the ISO 3166-1 alpha-2 standard.
-- [var subAdministrativeArea: String](cnpostaladdress/subadministrativearea.md)
+- [var subAdministrativeArea: String](./subadministrativearea.md)
   The subadministrative area (such as a county or other region) in a postal address.
-- [var subLocality: String](cnpostaladdress/sublocality.md)
+- [var subLocality: String](./sublocality.md)
   Additional information associated with the location, typically defined at the city or town level, in a postal address.
 
 

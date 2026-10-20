@@ -1,7 +1,8 @@
 # bonjour(name:type:domain:txtRecord:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a Bonjour service to advertise.
 
@@ -19,6 +20,8 @@ Create a Bonjour service to advertise.
 ```swift
 static func bonjour(name: String? = nil, type: String, domain: String? = nil, txtRecord: NWTXTRecord? = nil) -> BonjourListenerProvider
 ```
+
+Available when `Self` is `BonjourListenerProvider`.
 
 #### Discussion
 

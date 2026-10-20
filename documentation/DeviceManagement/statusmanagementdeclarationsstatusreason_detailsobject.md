@@ -1,7 +1,8 @@
 # StatusManagementDeclarationsStatusReason_DetailsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains further details about this error.
 
@@ -16,7 +17,7 @@ A dictionary that contains further details about this error.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementDeclarationsStatusReason_DetailsObject
 ```
 

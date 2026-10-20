@@ -1,7 +1,8 @@
 # MathSettingsCalculator_BasicModeObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 If present, configures the basic mode of the calculator. Basic mode is always enabled.
 
@@ -13,7 +14,7 @@ If present, configures the basic mode of the calculator. Basic mode is always en
 
 ## Declaration
 
-```swift
+```
 object MathSettingsCalculator_BasicModeObject
 ```
 
@@ -21,15 +22,18 @@ object MathSettingsCalculator_BasicModeObject
 
 - `AddSquareRoot` (boolean) *(required)*: Add the square root button to the basic calculator by replacing the +/- button. Normally, the square root button is available in scientific mode, so this key can be used to make it available when the scientific mode is restricted.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object MathSettingsCalculator_InputModesObject](mathsettingscalculator_inputmodesobject.md)
+### Objects
+- [object MathSettingsCalculator_InputModesObject](./mathsettingscalculator_inputmodesobject.md)
   If present, controls global input options of the calculator. If not present, all input modes are enabled.
-- [object MathSettingsCalculator_MathNotesModeObject](mathsettingscalculator_mathnotesmodeobject.md)
+- [object MathSettingsCalculator_MathNotesModeObject](./mathsettingscalculator_mathnotesmodeobject.md)
   If present, configures the Math Notes mode of the calculator. If not present, Math Notes mode is enabled.
-- [object MathSettingsCalculator_ProgrammerModeObject](mathsettingscalculator_programmermodeobject.md)
+- [object MathSettingsCalculator_ProgrammerModeObject](./mathsettingscalculator_programmermodeobject.md)
   If present, configures the programmer mode of the calculator. If not present, programmer mode is enabled.
-- [object MathSettingsCalculator_ScientificModeObject](mathsettingscalculator_scientificmodeobject.md)
+- [object MathSettingsCalculator_ScientificModeObject](./mathsettingscalculator_scientificmodeobject.md)
   If present, configures the scientific mode of the calculator. If not present, scientific mode is enabled.
 
 

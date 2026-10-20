@@ -1,7 +1,8 @@
 # LACredentialType.smartCardPIN
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.4+
@@ -17,9 +18,14 @@
 case smartCardPIN
 ```
 
+```c
+LACredentialTypeSmartCardPIN
+```
+
 ## See Also
 
-- [LACredentialType.applicationPassword](lacredentialtype/applicationpassword.md)
+### Cases
+- [LACredentialType.applicationPassword](./applicationpassword.md)
   Specifies that a password is provided by the application.
 
 

@@ -1,7 +1,8 @@
 # init(activity:location:displayName:warmup:blocks:cooldown:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new custom workout.
 
@@ -29,11 +30,12 @@ init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType = .
 
 ## See Also
 
-- [static func supportsActivity(HKWorkoutActivityType) -> Bool](customworkout/supportsactivity(_:).md)
+### Creating custom workouts
+- [static func supportsActivity(HKWorkoutActivityType) -> Bool](./supportsactivity%28_%29.md)
   Returns a Boolean value that indicates whether the system supports the specified workout activity .
-- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
+- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./supportsalert%28_,activity,location%29.md)
   Returns a Boolean value that indicates whether the system supports the specified alert for the given activity type and location.
-- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsgoal(_:activity:location:).md)
+- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./supportsgoal%28_,activity,location%29.md)
   Returns a Boolean value that indicates whether the system supports the specified goal for the given activity type and location.
 
 

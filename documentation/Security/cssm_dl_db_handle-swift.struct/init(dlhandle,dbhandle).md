@@ -1,7 +1,8 @@
 # init(DLHandle:DBHandle:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+

@@ -1,7 +1,8 @@
 # ICScannerColorDataFormatType.chunky
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.4+
@@ -12,9 +13,14 @@
 case chunky
 ```
 
+```c
+ICScannerColorDataFormatTypeChunky
+```
+
 ## See Also
 
-- [ICScannerColorDataFormatType.planar](icscannercolordataformattype/planar.md)
+### Constants
+- [ICScannerColorDataFormatType.planar](./planar.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AsyncMapSequence.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence.
 
@@ -19,6 +20,8 @@ The type of element produced by this asynchronous sequence.
 ```swift
 typealias Element = Transformed
 ```
+
+Available when `Base` conforms to `AsyncSequence`.
 
 #### Discussion
 

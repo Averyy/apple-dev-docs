@@ -1,7 +1,8 @@
 # MKAddressRepresentations.ContextStyle.full
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents the full context style.
 
@@ -20,15 +21,20 @@ The value that represents the full context style.
 case full
 ```
 
+```c
+MKAddressRepresentationsContextStyleFull
+```
+
 #### Discussion
 
-The value that tells the framework to include all relevant context. For example, when used with [`cityWithContext(_:)`](mkaddressrepresentations/citywithcontext(_:).md) MapKit always includes the region name if the device is in that region.
+The value that tells the framework to include all relevant context. For example, when used with [`cityWithContext(_:)`](../citywithcontext%28_%29.md) MapKit always includes the region name if the device is in that region.
 
 ## See Also
 
-- [MKAddressRepresentations.ContextStyle.automatic](mkaddressrepresentations/contextstyle/automatic.md)
+### Available context styles
+- [MKAddressRepresentations.ContextStyle.automatic](./automatic.md)
   The value that represents the automatic context style.
-- [MKAddressRepresentations.ContextStyle.short](mkaddressrepresentations/contextstyle/short.md)
+- [MKAddressRepresentations.ContextStyle.short](./short.md)
   The value that represents the short context style.
 
 

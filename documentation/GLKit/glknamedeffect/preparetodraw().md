@@ -2,6 +2,7 @@
 
 **Framework**: GLKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prepares an effect for OpenGL ES rendering.
@@ -16,6 +17,10 @@ Prepares an effect for OpenGL ES rendering.
 
 ```swift
 func prepareToDraw()
+```
+
+```objc
+- (void) prepareToDraw;
 ```
 
 #### Discussion

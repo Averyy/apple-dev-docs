@@ -1,7 +1,8 @@
 # AVVideoCompositionInstruction.Configuration
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configurable properties for initializing a new AVVideoCompositionInstruction instance.
 
@@ -22,28 +23,29 @@ struct Configuration
 ## Topics
 
 ### Creating a configuration
-- [init(backgroundColor: CGColor?, enablePostProcessing: Bool, layerInstructions: [AVVideoCompositionLayerInstruction], requiredSourceSampleDataTrackIDs: [CMPersistentTrackID], timeRange: CMTimeRange)](avvideocompositioninstruction-swift.class/configuration/init(backgroundcolor:enablepostprocessing:layerinstructions:requiredsourcesampledatatrackids:timerange:).md)
+- [init(backgroundColor: CGColor?, enablePostProcessing: Bool, layerInstructions: [AVVideoCompositionLayerInstruction], requiredSourceSampleDataTrackIDs: [CMPersistentTrackID], timeRange: CMTimeRange)](./configuration/init%28backgroundcolor,enablepostprocessing,layerinstructions,requiredsourcesampledatatrackids,timerange%29.md)
 ### Inspecting the configuration
-- [var backgroundColor: CGColor?](avvideocompositioninstruction-swift.class/configuration/backgroundcolor.md)
+- [var backgroundColor: CGColor?](./configuration/backgroundcolor.md)
   The background color of the composition.
-- [var enablePostProcessing: Bool](avvideocompositioninstruction-swift.class/configuration/enablepostprocessing.md)
+- [var enablePostProcessing: Bool](./configuration/enablepostprocessing.md)
   A Boolean value that indicates whether the composition enables post-processing.
-- [var layerInstructions: [AVVideoCompositionLayerInstruction]](avvideocompositioninstruction-swift.class/configuration/layerinstructions.md)
+- [var layerInstructions: [AVVideoCompositionLayerInstruction]](./configuration/layerinstructions.md)
   Instructions that specify how to layer and compose video frames from source tracks.
-- [var requiredSourceSampleDataTrackIDs: [CMPersistentTrackID]](avvideocompositioninstruction-swift.class/configuration/requiredsourcesampledatatrackids.md)
+- [var requiredSourceSampleDataTrackIDs: [CMPersistentTrackID]](./configuration/requiredsourcesampledatatrackids.md)
   The identifiers of source sample data tracks that the compositor requires to compose frames for the instruction.
-- [var timeRange: CMTimeRange](avvideocompositioninstruction-swift.class/configuration/timerange.md)
+- [var timeRange: CMTimeRange](./configuration/timerange.md)
   The time range to which the instruction applies.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(configuration: AVVideoCompositionInstruction.Configuration)](avvideocompositioninstruction-swift.class/init(configuration:).md)
+### Creating an instruction
+- [convenience init(configuration: AVVideoCompositionInstruction.Configuration)](./init%28configuration%29.md)
   Initialize an AVVideoCompositionInstruction with a configuration.
 
 

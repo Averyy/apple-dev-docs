@@ -1,7 +1,8 @@
 # https(host:path:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a callback object that matches against HTTPS URLs with the given host and path.
 
@@ -20,6 +21,10 @@ Creates a callback object that matches against HTTPS URLs with the given host an
 class func https(host: String, path: String) -> Self
 ```
 
+```objc
++ (instancetype) callbackWithHTTPSHost:(NSString *) host path:(NSString *) path;
+```
+
 #### Discussion
 
 The following example creates a session that requires a callback with an `https://` URL:
@@ -35,12 +40,13 @@ let session = ASWebAuthenticationSession(
 
 ## Parameters
 
-- `host`: The host that the app requires in the callback URL. The host must be a member of a domain associated with the app, as described in [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
+- `host`: The host that the app requires in the callback URL. The host must be a member of a domain associated with the app, as described in [Supporting associated domains](../../../Xcode/supporting-associated-domains.md).
 - `path`: The path that the app requires in the callback URL.
 
 ## See Also
 
-- [class func customScheme(String) -> Self](aswebauthenticationsession/callback/customscheme(_:).md)
+### Creating callbacks
+- [class func customScheme(String) -> Self](./customscheme%28_%29.md)
   Creates a callback object that matches against URLs with the given custom scheme.
 
 

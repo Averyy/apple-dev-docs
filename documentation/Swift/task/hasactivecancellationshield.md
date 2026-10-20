@@ -1,7 +1,8 @@
 # hasActiveCancellationShield
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 
@@ -20,9 +21,11 @@ Checks if the current task is executing in a scope with a task cancellation shie
 static var hasActiveCancellationShield: Bool { get }
 ```
 
+Available when `Success` is `Never` and `Failure` is `Never`.
+
 #### Discussion
 
-An active task cancellation shield prevents a task’s ability to observe if it was cancelled, i.e. the [`isCancelled`](task/iscancelled-swift.type.property.md) property will always return `false` when the task is executing with an active shield.
+An active task cancellation shield prevents a task’s ability to observe if it was cancelled, i.e. the [`isCancelled`](./iscancelled-swift.type.property.md) property will always return `false` when the task is executing with an active shield.
 
 This property is primarily aimed at  debugging and understanding cancellation behavior in complex call hierarchies, and should not be used in regular control flow.
 
@@ -30,15 +33,16 @@ Returns `true` when executing within a task that has an active cancellation shie
 
 Cancellation shields are not automatically inherited by child tasks; each child task must install its own shield if needed if it, independently, wanted to ignore cancellation during a specific scope.
 
-> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
+> **See Also**: `withTaskCancellationShield(operation:)-(()->Value)`
 
-> **Note**: [`hasActiveCancellationShield`](unsafecurrenttask/hasactivecancellationshield.md)
+> **See Also**: [`hasActiveCancellationShield`](../unsafecurrenttask/hasactivecancellationshield.md)
 
 ## See Also
 
-- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
+### Shielding Tasks from Cancellation
+- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](../withtaskcancellationshield%28operation%29-2lzl8.md)
   Enters a scope in which a task cancellation shield is active.
-- [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
+- [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](../withtaskcancellationshield%28operation%29-8zlgh.md)
   Enters a scope in which a task cancellation shield is active.
 
 

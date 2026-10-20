@@ -1,7 +1,8 @@
 # MTLTensorDataType.none
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An invalid data type.
 
@@ -17,6 +18,10 @@ An invalid data type.
 
 ```swift
 case none
+```
+
+```c
+MTLTensorDataTypeNone
 ```
 
 

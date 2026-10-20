@@ -1,7 +1,8 @@
 # UpdateAppAccountTokenRequest
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body that contains an app account token value.
 
@@ -10,17 +11,17 @@ The request body that contains an app account token value.
 
 ## Declaration
 
-```swift
+```
 object UpdateAppAccountTokenRequest
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-This is the request body for the [`Set App Account Token`](set-app-account-token.md) endpoint.
+This is the request body for the [`Set App Account Token`](./set-app-account-token.md) endpoint.
 
 ## Properties
 
@@ -28,7 +29,8 @@ This is the request body for the [`Set App Account Token`](set-app-account-token
 
 ## See Also
 
-- [Set App Account Token](set-app-account-token.md)
+### App Account Token
+- [Set App Account Token](./set-app-account-token.md)
   Sets the app account token value for a purchase the customer makes outside of your app, or updates its value in an existing transaction.
 
 

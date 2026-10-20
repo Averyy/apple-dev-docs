@@ -1,7 +1,8 @@
 # equationCoefficients
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coefficients of the parabolic equation.
 
@@ -26,11 +27,12 @@ This equation describes the parabola on which the detected contour is traveling.
 
 ## See Also
 
-- [let detectedPoints: [NormalizedPoint]](trajectoryobservation/detectedpoints.md)
+### Inspecting an observation
+- [let detectedPoints: [NormalizedPoint]](./detectedpoints.md)
   The centroid points of the detected contour along the trajectory.
-- [let projectedPoints: [NormalizedPoint]](trajectoryobservation/projectedpoints.md)
+- [let projectedPoints: [NormalizedPoint]](./projectedpoints.md)
   The centroids of the calculated trajectory from the detected points.
-- [let movingAverageRadius: CGFloat](trajectoryobservation/movingaverageradius.md)
+- [let movingAverageRadius: CGFloat](./movingaverageradius.md)
   The moving average radius of the object the request is tracking.
 
 

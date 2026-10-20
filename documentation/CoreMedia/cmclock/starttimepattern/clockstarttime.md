@@ -1,7 +1,8 @@
 # clockStartTime
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clock time of the next preferred start time.
 

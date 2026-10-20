@@ -1,7 +1,8 @@
 # showsIndicator
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the toolbar item displays an indicator of additional functionality.
 
@@ -17,15 +18,20 @@ A Boolean value that determines whether the toolbar item displays an indicator o
 var showsIndicator: Bool { get set }
 ```
 
+```objc
+@property BOOL showsIndicator;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the menu toolbar item shows an indicator that additional functionality is available.
+If [`true`](../../Swift/true.md), the menu toolbar item shows an indicator that additional functionality is available.
 
 ## See Also
 
-- [var menu: NSMenu](nsmenutoolbaritem/menu.md)
+### Configuring a menu toolbar item
+- [var menu: NSMenu](./menu.md)
   The menu presented from the toolbar item.
-- [var itemMenu: UIMenu](nsmenutoolbaritem/itemmenu.md)
+- [var itemMenu: UIMenu](./itemmenu.md)
 
 
 ---

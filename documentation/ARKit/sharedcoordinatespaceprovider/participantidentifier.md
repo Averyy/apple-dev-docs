@@ -1,7 +1,8 @@
 # participantIdentifier
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the identifier of the local participant.
 

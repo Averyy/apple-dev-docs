@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -20,17 +21,18 @@ var pixelBuffer: CVReadOnlyPixelBuffer { get }
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var cgImage: CGImage](pixelbufferobservation/cgimage.md)
+- [var cgImage: CGImage](./cgimage.md)
   A Core Graphics image created from the pixel buffer observation.
-- [var pixelFormat: OSType](pixelbufferobservation/pixelformat.md)
+- [var pixelFormat: OSType](./pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var size: CGSize](pixelbufferobservation/size.md)
+- [var size: CGSize](./size.md)
   The size of the image.
 
 

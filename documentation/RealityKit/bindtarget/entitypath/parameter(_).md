@@ -1,7 +1,8 @@
 # parameter(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a bind target for a particular animated property.
 
@@ -11,7 +12,7 @@ Provides a bind target for a particular animated property.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,11 +26,12 @@ func parameter(_ name: String) -> BindTarget
 
 ## See Also
 
-- [var jointTransforms: BindTarget](bindtarget/entitypath/jointtransforms.md)
+### Accessing a bind target
+- [var jointTransforms: BindTarget](./jointtransforms.md)
   A bind target for the entity’s joint transforms.
-- [var transform: BindTarget](bindtarget/entitypath/transform.md)
+- [var transform: BindTarget](./transform.md)
   A bind target for the entity’s transform.
-- [var `self`: BindTarget](bindtarget/entitypath/self.md)
+- [var `self`: BindTarget](./self.md)
   A bind target for the entity.
 
 

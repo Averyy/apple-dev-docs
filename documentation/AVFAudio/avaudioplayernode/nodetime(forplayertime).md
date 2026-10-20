@@ -1,7 +1,8 @@
 # nodeTime(forPlayerTime:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts from player time to node time.
 
@@ -20,13 +21,17 @@ Converts from player time to node time.
 func nodeTime(forPlayerTime playerTime: AVAudioTime) -> AVAudioTime?
 ```
 
+```objc
+- (AVAudioTime *) nodeTimeForPlayerTime:(AVAudioTime *) playerTime;
+```
+
 #### Return Value
 
 A node time, or `nil` if the player isn’t playing.
 
 #### Discussion
 
-For more information about this method and its inverse [`playerTime(forNodeTime:)`](avaudioplayernode/playertime(fornodetime:).md), see [`Player timeline`](avaudioplayernode#Player-timeline.md).
+For more information about this method and its inverse [`playerTime(forNodeTime:)`](./playertime%28fornodetime%29.md), see [Player timeline](../avaudioplayernode.md#Player-timeline).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ For more information about this method and its inverse [`playerTime(forNodeTime:
 
 ## See Also
 
-- [func playerTime(forNodeTime: AVAudioTime) -> AVAudioTime?](avaudioplayernode/playertime(fornodetime:).md)
+### Converting node and player times
+- [func playerTime(forNodeTime: AVAudioTime) -> AVAudioTime?](./playertime%28fornodetime%29.md)
   Converts from node time to player time.
 
 

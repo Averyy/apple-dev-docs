@@ -1,7 +1,8 @@
 # totalItemCountKey
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key that accesses the total item count value.
 
@@ -21,11 +22,12 @@ static let totalItemCountKey: ProgressUserInfoKey
 
 ## See Also
 
-- [static let elapsedTimeKey: ProgressUserInfoKey](mlprogress/elapsedtimekey.md)
+### Accessing general information
+- [static let elapsedTimeKey: ProgressUserInfoKey](./elapsedtimekey.md)
   The key that accesses the elapsed time value.
-- [static let phaseKey: ProgressUserInfoKey](mlprogress/phasekey.md)
+- [static let phaseKey: ProgressUserInfoKey](./phasekey.md)
   The key that accesses the current phase value.
-- [static let itemCountKey: ProgressUserInfoKey](mlprogress/itemcountkey.md)
+- [static let itemCountKey: ProgressUserInfoKey](./itemcountkey.md)
   The key that accesses the current item count value.
 
 

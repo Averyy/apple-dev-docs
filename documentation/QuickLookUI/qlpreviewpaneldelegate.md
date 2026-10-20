@@ -1,7 +1,8 @@
 # QLPreviewPanelDelegate
 
 **Framework**: Quick Look UI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for the delegate of the Quick Look preview panel.
 
@@ -14,6 +15,10 @@ A protocol for the delegate of the Quick Look preview panel.
 protocol QLPreviewPanelDelegate : NSWindowDelegate
 ```
 
+```objc
+@protocol QLPreviewPanelDelegate <NSWindowDelegate>
+```
+
 #### Overview
 
 You can implement these methods to perform custom tasks in response to events in the preview panel.
@@ -21,30 +26,31 @@ You can implement these methods to perform custom tasks in response to events in
 ## Topics
 
 ### Optional Methods
-- [func previewPanel(QLPreviewPanel!, handle: NSEvent!) -> Bool](qlpreviewpaneldelegate/previewpanel(_:handle:).md)
+- [func previewPanel(QLPreviewPanel!, handle: NSEvent!) -> Bool](./qlpreviewpaneldelegate/previewpanel%28_,handle%29.md)
   Handles an event that the preview panel receives, but doesn’t handle.
-- [func previewPanel(QLPreviewPanel!, sourceFrameOnScreenFor: (any QLPreviewItem)!) -> NSRect](qlpreviewpaneldelegate/previewpanel(_:sourceframeonscreenfor:).md)
+- [func previewPanel(QLPreviewPanel!, sourceFrameOnScreenFor: (any QLPreviewItem)!) -> NSRect](./qlpreviewpaneldelegate/previewpanel%28_,sourceframeonscreenfor%29.md)
   Returns the screen rectangle for a given preview item.
-- [func previewPanel(QLPreviewPanel!, transitionImageFor: (any QLPreviewItem)!, contentRect: UnsafeMutablePointer<NSRect>!) -> Any!](qlpreviewpaneldelegate/previewpanel(_:transitionimagefor:contentrect:).md)
+- [func previewPanel(QLPreviewPanel!, transitionImageFor: (any QLPreviewItem)!, contentRect: UnsafeMutablePointer<NSRect>!) -> Any!](./qlpreviewpaneldelegate/previewpanel%28_,transitionimagefor,contentrect%29.md)
   Returns the image to use for the transition zoom effect for a given item.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSWindowDelegate](../appkit/nswindowdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSWindowDelegate](../AppKit/nswindowdelegate.md)
 
 ## See Also
 
-- [class QLPreviewPanel](qlpreviewpanel.md)
+### Previews
+- [class QLPreviewPanel](./qlpreviewpanel.md)
   A class that implements the Quick Look preview panel to display a preview of a list of items.
-- [class QLPreviewView](qlpreviewview.md)
+- [class QLPreviewView](./qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
-- [protocol QLPreviewItem](qlpreviewitem.md)
+- [protocol QLPreviewItem](./qlpreviewitem.md)
   A protocol that defines a set of properties you implement to make a preview of your app’s content.
-- [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
+- [protocol QLPreviewPanelDataSource](./qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
-- [typealias QLPreviewItemLoadingBlock](qlpreviewitemloadingblock.md)
+- [typealias QLPreviewItemLoadingBlock](./qlpreviewitemloadingblock.md)
   A type that defines a block used to load a Quick Look preview item.
 
 

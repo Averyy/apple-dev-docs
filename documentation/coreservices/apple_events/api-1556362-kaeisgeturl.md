@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var KAEISHandleCGI: OSType](kaeishandlecgi.md)
-- [var kAEISGetURL: OSType](kaeisgeturl.md)
+- [var KAEISHandleCGI: OSType](../kaeishandlecgi.md)
+- [var kAEISGetURL: OSType](../kaeisgeturl.md)
 
 
 ---

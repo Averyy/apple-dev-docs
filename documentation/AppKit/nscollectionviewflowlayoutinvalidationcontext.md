@@ -1,7 +1,8 @@
 # NSCollectionViewFlowLayoutInvalidationContext
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that identifies the portions of a flow layout object that need to be updated.
 
@@ -14,39 +15,44 @@ An object that identifies the portions of a flow layout object that need to be u
 class NSCollectionViewFlowLayoutInvalidationContext
 ```
 
+```objc
+@interface NSCollectionViewFlowLayoutInvalidationContext : NSCollectionViewLayoutInvalidationContext
+```
+
 #### Overview
 
-Layout objects use invalidation contexts to optimize the layout process and avoid unnecessary work. You use this class to specify whether the [`NSCollectionViewFlowLayout`](nscollectionviewflowlayout.md) object should fetch new size information from its delegate. You can also prevent the flow layout object from updating its layout information altogether.
+Layout objects use invalidation contexts to optimize the layout process and avoid unnecessary work. You use this class to specify whether the [`NSCollectionViewFlowLayout`](./nscollectionviewflowlayout.md) object should fetch new size information from its delegate. You can also prevent the flow layout object from updating its layout information altogether.
 
-When you want to invalidate your flow layout object, call the [`invalidationContextClass`](nscollectionviewlayout/invalidationcontextclass.md) method of your layout object and instantiate the resulting class. (The implementation of that method in [`NSCollectionViewFlowLayout`](nscollectionviewflowlayout.md) returns this class.) After instantiating this class, set the properties to appropriate values and pass the object to the [`invalidateLayout(with:)`](nscollectionviewlayout/invalidatelayout(with:).md) method of the layout object.
+When you want to invalidate your flow layout object, call the [`invalidationContextClass`](./nscollectionviewlayout/invalidationcontextclass.md) method of your layout object and instantiate the resulting class. (The implementation of that method in [`NSCollectionViewFlowLayout`](./nscollectionviewflowlayout.md) returns this class.) After instantiating this class, set the properties to appropriate values and pass the object to the [`invalidateLayout(with:)`](./nscollectionviewlayout/invalidatelayout%28with%29.md) method of the layout object.
 
 ## Topics
 
 ### Invalidating the Flow Layout
-- [var invalidateFlowLayoutAttributes: Bool](nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md)
+- [var invalidateFlowLayoutAttributes: Bool](./nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutattributes.md)
   A Boolean value indicating whether the flow layout object should invalidate its current attributes.
-- [var invalidateFlowLayoutDelegateMetrics: Bool](nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutdelegatemetrics.md)
+- [var invalidateFlowLayoutDelegateMetrics: Bool](./nscollectionviewflowlayoutinvalidationcontext/invalidateflowlayoutdelegatemetrics.md)
   A Boolean value indicating whether the flow layout object should fetch new size information from its delegate.
 
 ## Relationships
 
 ### Inherits From
-- [NSCollectionViewLayoutInvalidationContext](nscollectionviewlayoutinvalidationcontext.md)
+- [NSCollectionViewLayoutInvalidationContext](./nscollectionviewlayoutinvalidationcontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSCollectionViewUpdateItem](nscollectionviewupdateitem.md)
+### Updates
+- [class NSCollectionViewUpdateItem](./nscollectionviewupdateitem.md)
   A description of a single change to make to an item in a collection view.
-- [class NSCollectionViewLayoutInvalidationContext](nscollectionviewlayoutinvalidationcontext.md)
+- [class NSCollectionViewLayoutInvalidationContext](./nscollectionviewlayoutinvalidationcontext.md)
   An object that identifies the portions of your layout that need to be updated.
 
 

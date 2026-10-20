@@ -1,11 +1,12 @@
 # ExecutionPolicy Constants
 
-**Framework**: Execution Policy
+**Framework**: Execution Policy  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let EPErrorDomain: String](eperrordomain.md)
+- [let EPErrorDomain: String](./eperrordomain.md)
 
 
 ---

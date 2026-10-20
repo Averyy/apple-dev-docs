@@ -1,7 +1,8 @@
 # MPRemoteCommandHandlerStatus.noActionableNowPlayingItem
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested command couldn’t execute because no Now Playing item is available.
 
@@ -20,15 +21,20 @@ The requested command couldn’t execute because no Now Playing item is availabl
 case noActionableNowPlayingItem
 ```
 
+```c
+MPRemoteCommandHandlerStatusNoActionableNowPlayingItem
+```
+
 ## See Also
 
-- [MPRemoteCommandHandlerStatus.success](mpremotecommandhandlerstatus/success.md)
+### Constants
+- [MPRemoteCommandHandlerStatus.success](./success.md)
   The requested command executed successfully.
-- [MPRemoteCommandHandlerStatus.noSuchContent](mpremotecommandhandlerstatus/nosuchcontent.md)
+- [MPRemoteCommandHandlerStatus.noSuchContent](./nosuchcontent.md)
   The requested command couldn’t execute because its required content isn’t available.
-- [MPRemoteCommandHandlerStatus.deviceNotFound](mpremotecommandhandlerstatus/devicenotfound.md)
+- [MPRemoteCommandHandlerStatus.deviceNotFound](./devicenotfound.md)
   The requested command couldn’t execute because a required device isn’t available.
-- [MPRemoteCommandHandlerStatus.commandFailed](mpremotecommandhandlerstatus/commandfailed.md)
+- [MPRemoteCommandHandlerStatus.commandFailed](./commandfailed.md)
   The requested command failed to execute.
 
 

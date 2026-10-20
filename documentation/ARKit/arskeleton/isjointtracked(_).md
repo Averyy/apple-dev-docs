@@ -1,7 +1,8 @@
 # isJointTracked(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you whether ARKit tracks a joint at a particular index.
 
@@ -15,15 +16,20 @@ Tells you whether ARKit tracks a joint at a particular index.
 func isJointTracked(_ jointIndex: Int) -> Bool
 ```
 
+```objc
+- (BOOL) isJointTracked:(NSInteger) jointIndex;
+```
+
 #### Discussion
 
 Use this function to determine which joints ARKit tracks using a particular index.
 
 ## See Also
 
-- [var definition: ARSkeletonDefinition](arskeleton/definition.md)
+### Getting Joint Information
+- [var definition: ARSkeletonDefinition](./definition.md)
   The particular configuration of joints that define a body’s current state.
-- [ARSkeleton.JointName](arskeleton/jointname.md)
+- [ARSkeleton.JointName](./jointname.md)
   A name identifier for a joint.
 
 

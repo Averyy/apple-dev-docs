@@ -1,7 +1,8 @@
 # UITextFormattingViewController.FormattingStyle
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -17,17 +18,17 @@ struct FormattingStyle
 ## Topics
 
 ### Initializers
-- [init(styleKey: String, title: LocalizedStringResource, attributes: AttributeContainer)](uitextformattingviewcontroller/formattingstyle/init(stylekey:title:attributes:)-1qfz2.md)
-- [init(styleKey: String, title: LocalizedStringResource, attributes: [NSAttributedString.Key : Any])](uitextformattingviewcontroller/formattingstyle/init(stylekey:title:attributes:)-2wwuo.md)
+- [init(styleKey: String, title: LocalizedStringResource, attributes: AttributeContainer)](./formattingstyle/init%28stylekey,title,attributes%29-1qfz2.md)
+- [init(styleKey: String, title: LocalizedStringResource, attributes: [NSAttributedString.Key : Any])](./formattingstyle/init%28stylekey,title,attributes%29-2wwuo.md)
 ### Instance Properties
-- [let attributes: AttributeContainer](uitextformattingviewcontroller/formattingstyle/attributes.md)
-- [let styleKey: String](uitextformattingviewcontroller/formattingstyle/stylekey.md)
-- [let title: LocalizedStringResource](uitextformattingviewcontroller/formattingstyle/title.md)
+- [let attributes: AttributeContainer](./formattingstyle/attributes.md)
+- [let styleKey: String](./formattingstyle/stylekey.md)
+- [let title: LocalizedStringResource](./formattingstyle/title.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

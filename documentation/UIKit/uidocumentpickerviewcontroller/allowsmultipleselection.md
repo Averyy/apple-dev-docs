@@ -1,7 +1,8 @@
 # allowsMultipleSelection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user can select more than one document at a time.
 
@@ -17,17 +18,22 @@ A Boolean value that determines whether the user can select more than one docume
 var allowsMultipleSelection: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsMultipleSelection;
+```
+
 #### Discussion
 
-By default, this property is [`false`](https://developer.apple.com/documentation/swift/false).
+By default, this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var delegate: (any UIDocumentPickerDelegate)?](uidocumentpickerviewcontroller/delegate.md)
+### Getting the user-selected document
+- [var delegate: (any UIDocumentPickerDelegate)?](./delegate.md)
   An object that acts as the delegate of the view controller.
-- [protocol UIDocumentPickerDelegate](uidocumentpickerdelegate.md)
+- [protocol UIDocumentPickerDelegate](../uidocumentpickerdelegate.md)
   A set of methods for tracking when the user selects a document or destination, or cancels the operation.
-- [var directoryURL: URL?](uidocumentpickerviewcontroller/directoryurl.md)
+- [var directoryURL: URL?](./directoryurl.md)
   The initial directory that the document picker displays.
 
 

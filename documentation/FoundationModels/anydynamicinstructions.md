@@ -1,7 +1,8 @@
 # AnyDynamicInstructions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dynamic instructions type that’s type-erased.
 
@@ -22,25 +23,26 @@ struct AnyDynamicInstructions
 ## Topics
 
 ### Creating dynamic instructions
-- [init(any DynamicInstructions)](anydynamicinstructions/init(_:).md)
+- [init(any DynamicInstructions)](./anydynamicinstructions/init%28_%29.md)
   Creates an instance from the dynamic instructions you specify.
-- [init(erasing: some DynamicInstructions)](anydynamicinstructions/init(erasing:).md)
+- [init(erasing: some DynamicInstructions)](./anydynamicinstructions/init%28erasing%29.md)
   Creates an instance from the dynamic instructions you specify.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicInstructions](dynamicinstructions.md)
+- [DynamicInstructions](./dynamicinstructions.md)
 
 ## See Also
 
-- [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+### Building dynamic instructions
+- [struct DynamicInstructionsBuilder](./dynamicinstructionsbuilder.md)
   A result builder that combines tools and other content into dynamic instructions.
-- [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
+- [struct EmptyDynamicInstructions](./emptydynamicinstructions.md)
   An empty dynamic instructions type.
-- [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
+- [struct ConditionalDynamicInstructions](./conditionaldynamicinstructions.md)
   A dynamic instructions type that conditionally selects between two conditions.
-- [struct TupleDynamicInstructions](tupledynamicinstructions.md)
+- [struct TupleDynamicInstructions](./tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
 
 

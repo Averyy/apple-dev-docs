@@ -1,17 +1,22 @@
 # setupPanelShouldHandleMediaReservations(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This delegate method allows the delegate to control how media reservations are handled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setupPanelShouldHandleMediaReservations(_ aPanel: DRSetupPanel!) -> Bool
+```
+
+```objc
+- (BOOL) setupPanelShouldHandleMediaReservations:(DRSetupPanel *) aPanel;
 ```
 
 #### Return Value

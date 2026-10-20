@@ -1,14 +1,15 @@
 # kauth_null_guid
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 guid_t kauth_null_guid;
 ```
 

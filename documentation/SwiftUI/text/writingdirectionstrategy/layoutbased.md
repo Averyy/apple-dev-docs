@@ -1,7 +1,8 @@
 # layoutBased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The writing direction following the general UI layout direction.
 
@@ -22,7 +23,7 @@ static let layoutBased: Text.WritingDirectionStrategy
 
 #### Discussion
 
-This writing direction follows the [`layoutDirection`](environmentvalues/layoutdirection.md) in the view hierarchy.
+This writing direction follows the [`layoutDirection`](../../environmentvalues/layoutdirection.md) in the view hierarchy.
 
 
 ---

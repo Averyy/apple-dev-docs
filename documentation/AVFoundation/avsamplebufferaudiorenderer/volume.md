@@ -1,23 +1,28 @@
 # volume
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current audio volume for the audio renderer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var volume: Float { get set }
+```
+
+```objc
+@property (nonatomic) float volume;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ Use this property for frequent vloume changes; for example, a volume knob or fad
 
 ## See Also
 
-- [var isMuted: Bool](avsamplebufferaudiorenderer/ismuted.md)
+### Managing audio output
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether audio for the renderer is in a muted state.
-- [var audioOutputDeviceUniqueID: String?](avsamplebufferaudiorenderer/audiooutputdeviceuniqueid.md)
+- [var audioOutputDeviceUniqueID: String?](./audiooutputdeviceuniqueid.md)
   The unique identifier of the output device used to play audio.
 
 

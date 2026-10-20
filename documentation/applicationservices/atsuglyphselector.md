@@ -1,7 +1,8 @@
 # ATSUGlyphSelector
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSUGlyphSelector
 ```
 
+```c
+typedef struct ATSUGlyphSelector {
+    ...
+} ATSUGlyphSelector;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsuglyphselector/1459028-init.md)
-- [init(collection: GlyphCollection, glyphID: GlyphID)](atsuglyphselector/1459219-init.md)
+- [init()](./atsuglyphselector/api-1459028-init.md)
+- [init(collection: GlyphCollection, glyphID: GlyphID)](./atsuglyphselector/api-1459219-init.md)
 ### Instance Properties
-- [var collection: GlyphCollection](atsuglyphselector/1452061-collection.md)
-- [var glyphID: GlyphID](atsuglyphselector/1452296-glyphid.md)
+- [var collection: GlyphCollection](./atsuglyphselector/api-1452061-collection.md)
+- [var glyphID: GlyphID](./atsuglyphselector/api-1452296-glyphid.md)
 
 
 ---

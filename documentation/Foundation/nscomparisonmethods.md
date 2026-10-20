@@ -17,37 +17,39 @@ This method should return `NSOrderedAscending` if the receiver is less than `obj
 ## Topics
 
 ### Performing comparisons
-- [func doesContain(Any) -> Bool](../objectivec/nsobject-swift.class/doescontain(_:).md)
+- [func doesContain(Any) -> Bool](../ObjectiveC/nsobject-swift.class/doescontain%28_%29.md)
   Returns a Boolean value that indicates whether the receiver contains a given object.
-- [func isCaseInsensitiveLike(String) -> Bool](../objectivec/nsobject-swift.class/iscaseinsensitivelike(_:).md)
+- [func isCaseInsensitiveLike(String) -> Bool](../ObjectiveC/nsobject-swift.class/iscaseinsensitivelike%28_%29.md)
   Returns a Boolean value that indicates whether receiver is considered to be “like” a given string when the case of characters in the receiver is ignored.
-- [func isEqual(to: Any?) -> Bool](../objectivec/nsobject-swift.class/isequal(to:).md)
+- [func isEqual(to: Any?) -> Bool](../ObjectiveC/nsobject-swift.class/isequal%28to%29.md)
   Returns a Boolean value that indicates whether the receiver is equal to another given object.
-- [func isGreaterThan(Any?) -> Bool](../objectivec/nsobject-swift.class/isgreaterthan(_:).md)
+- [func isGreaterThan(Any?) -> Bool](../ObjectiveC/nsobject-swift.class/isgreaterthan%28_%29.md)
   Returns a Boolean value that indicates whether the receiver is greater than another given object.
-- [func isGreaterThanOrEqual(to: Any?) -> Bool](../objectivec/nsobject-swift.class/isgreaterthanorequal(to:).md)
+- [func isGreaterThanOrEqual(to: Any?) -> Bool](../ObjectiveC/nsobject-swift.class/isgreaterthanorequal%28to%29.md)
   Returns a Boolean value that indicates whether the receiver is greater than or equal to another given object.
-- [func isLessThan(Any?) -> Bool](../objectivec/nsobject-swift.class/islessthan(_:).md)
+- [func isLessThan(Any?) -> Bool](../ObjectiveC/nsobject-swift.class/islessthan%28_%29.md)
   Returns a Boolean value that indicates whether the receiver is less than another given object.
-- [func isLessThanOrEqual(to: Any?) -> Bool](../objectivec/nsobject-swift.class/islessthanorequal(to:).md)
+- [func isLessThanOrEqual(to: Any?) -> Bool](../ObjectiveC/nsobject-swift.class/islessthanorequal%28to%29.md)
   Returns a Boolean value that indicates whether the receiver is less than or equal to another given object.
-- [func isLike(String) -> Bool](../objectivec/nsobject-swift.class/islike(_:).md)
+- [func isLike(String) -> Bool](../ObjectiveC/nsobject-swift.class/islike%28_%29.md)
   Returns a Boolean value that indicates whether the receiver is “like” another given object.
-- [func isNotEqual(to: Any?) -> Bool](../objectivec/nsobject-swift.class/isnotequal(to:).md)
+- [func isNotEqual(to: Any?) -> Bool](../ObjectiveC/nsobject-swift.class/isnotequal%28to%29.md)
   Returns a Boolean value that indicates whether the receiver is not equal to another given object.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [NSScriptingComparisonMethods](../objectivec/nsscriptingcomparisonmethods.md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### NSObject Script Support
+- [NSScriptingComparisonMethods](../ObjectiveC/nsscriptingcomparisonmethods.md)
   A collection of methods useful for comparing script objects.
-- [NSScriptKeyValueCoding](../objectivec/nsscriptkeyvaluecoding.md)
+- [NSScriptKeyValueCoding](../ObjectiveC/nsscriptkeyvaluecoding.md)
   A collection of methods that provide additional capabilities for working with key-value coding.
-- [NSScriptObjectSpecifiers](nsscriptobjectspecifiers.md)
+- [NSScriptObjectSpecifiers](./nsscriptobjectspecifiers.md)
   A collection of methods providing additional object specifier functionality.
-- [class NSScriptCoercionHandler](nsscriptcoercionhandler.md)
+- [class NSScriptCoercionHandler](./nsscriptcoercionhandler.md)
   A mechanism for converting one kind of scripting data to another.
-- [class NSScriptExecutionContext](nsscriptexecutioncontext.md)
+- [class NSScriptExecutionContext](./nsscriptexecutioncontext.md)
   The context in which the current script command is executed.
 
 

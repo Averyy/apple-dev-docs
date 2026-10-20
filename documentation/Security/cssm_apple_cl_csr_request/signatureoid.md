@@ -1,7 +1,8 @@
 # signatureOid
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var signatureOid: SecAsn1Oid
+```
+
+```c
+SecAsn1Oid signatureOid;
 ```
 
 

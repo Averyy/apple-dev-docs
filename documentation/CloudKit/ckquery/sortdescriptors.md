@@ -1,7 +1,8 @@
 # sortDescriptors
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort descriptors for organizing the query’s results.
 
@@ -10,7 +11,7 @@ The sort descriptors for organizing the query’s results.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ The sort descriptors for organizing the query’s results.
 
 ```swift
 var sortDescriptors: [NSSortDescriptor]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ The order of the items in the array defines the order that CloudKit applies the 
 
 ## See Also
 
-- [var recordType: CKRecord.RecordType](ckquery/recordtype-6ajii.md)
+### Accessing the Query Parameters
+- [var recordType: CKRecord.RecordType](./recordtype-6ajii.md)
   The record type to search.
-- [var predicate: NSPredicate](ckquery/predicate.md)
+- [var predicate: NSPredicate](./predicate.md)
   The predicate to use for matching records.
 
 

@@ -1,7 +1,8 @@
 # Bowling
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for bowling lanes.
 
@@ -10,7 +11,7 @@ The point-of-interest category for bowling lanes.
 
 ## Declaration
 
-```swift
+```
 readonly Bowling: "Bowling";
 ```
 

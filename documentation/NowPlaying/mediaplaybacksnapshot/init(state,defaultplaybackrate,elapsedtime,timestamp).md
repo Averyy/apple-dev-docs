@@ -1,7 +1,8 @@
 # init(state:defaultPlaybackRate:elapsedTime:timestamp:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback snapshot with the specified state and timing.
 
@@ -22,9 +23,9 @@ init(state: MediaPlaybackSnapshot.PlaybackState, defaultPlaybackRate: Float = 1.
 
 #### Discussion
 
-> **Note**: When `state` is `.playing(let rate)`, `rate` must be finite and non-zero.
+> **Precondition**: When `state` is `.playing(let rate)`, `rate` must be finite and non-zero.
 
-> **Note**: `defaultPlaybackRate` must be finite and greater than `0`.
+> **Precondition**: `defaultPlaybackRate` must be finite and greater than `0`.
 
 ## Parameters
 

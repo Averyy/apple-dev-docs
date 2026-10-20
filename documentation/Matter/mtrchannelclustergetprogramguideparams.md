@@ -1,7 +1,8 @@
 # MTRChannelClusterGetProgramGuideParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,32 +19,36 @@
 class MTRChannelClusterGetProgramGuideParams
 ```
 
+```objc
+@interface MTRChannelClusterGetProgramGuideParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var channelList: [Any]?](mtrchannelclustergetprogramguideparams/channellist.md)
-- [var data: Data?](mtrchannelclustergetprogramguideparams/data.md)
-- [var endTime: NSNumber?](mtrchannelclustergetprogramguideparams/endtime.md)
-- [var pageToken: MTRChannelClusterPageTokenStruct?](mtrchannelclustergetprogramguideparams/pagetoken.md)
-- [var recordingFlag: NSNumber?](mtrchannelclustergetprogramguideparams/recordingflag.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrchannelclustergetprogramguideparams/serversideprocessingtimeout.md)
+- [var channelList: [Any]?](./mtrchannelclustergetprogramguideparams/channellist.md)
+- [var data: Data?](./mtrchannelclustergetprogramguideparams/data.md)
+- [var endTime: NSNumber?](./mtrchannelclustergetprogramguideparams/endtime.md)
+- [var pageToken: MTRChannelClusterPageTokenStruct?](./mtrchannelclustergetprogramguideparams/pagetoken.md)
+- [var recordingFlag: NSNumber?](./mtrchannelclustergetprogramguideparams/recordingflag.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrchannelclustergetprogramguideparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var startTime: NSNumber?](mtrchannelclustergetprogramguideparams/starttime.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrchannelclustergetprogramguideparams/timedinvoketimeoutms.md)
+- [var startTime: NSNumber?](./mtrchannelclustergetprogramguideparams/starttime.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrchannelclustergetprogramguideparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

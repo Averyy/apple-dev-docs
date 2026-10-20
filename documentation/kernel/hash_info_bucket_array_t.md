@@ -1,14 +1,15 @@
 # hash_info_bucket_array_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef hash_info_bucket_t *hash_info_bucket_array_t;
 ```
 

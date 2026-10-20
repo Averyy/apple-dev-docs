@@ -1,7 +1,8 @@
 # AskError.notAvailable
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.2+

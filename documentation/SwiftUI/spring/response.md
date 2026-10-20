@@ -1,7 +1,8 @@
 # response
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stiffness of the spring, defined as an approximate duration in seconds.
 
@@ -22,19 +23,20 @@ var response: Double { get }
 
 ## See Also
 
-- [var bounce: Double](spring/bounce.md)
+### Getting spring characteristics
+- [var bounce: Double](./bounce.md)
   How bouncy the spring is.
-- [var damping: Double](spring/damping.md)
+- [var damping: Double](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
-- [var dampingRatio: Double](spring/dampingratio.md)
+- [var dampingRatio: Double](./dampingratio.md)
   The amount of drag applied, as a fraction of the amount needed to produce critical damping.
-- [var duration: TimeInterval](spring/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The perceptual duration, which defines the pace of the spring.
-- [var mass: Double](spring/mass.md)
+- [var mass: Double](./mass.md)
   The mass of the object attached to the end of the spring.
-- [var settlingDuration: TimeInterval](spring/settlingduration.md)
+- [var settlingDuration: TimeInterval](./settlingduration.md)
   The estimated duration required for the spring system to be considered at rest.
-- [var stiffness: Double](spring/stiffness.md)
+- [var stiffness: Double](./stiffness.md)
   The spring stiffness coefficient.
 
 

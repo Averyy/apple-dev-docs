@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct bdevsw {
     ...
 };
@@ -17,13 +17,13 @@ struct bdevsw {
 ## Topics
 
 ### Instance Properties
-- [d_close](bdevsw/1458019-d_close.md)
-- [d_dump](bdevsw/1458029-d_dump.md)
-- [d_ioctl](bdevsw/1458021-d_ioctl.md)
-- [d_open](bdevsw/1457976-d_open.md)
-- [d_psize](bdevsw/1457985-d_psize.md)
-- [d_strategy](bdevsw/1457992-d_strategy.md)
-- [d_type](bdevsw/1458006-d_type.md)
+- [d_close](./bdevsw/api-1458019-d_close.md)
+- [d_dump](./bdevsw/api-1458029-d_dump.md)
+- [d_ioctl](./bdevsw/api-1458021-d_ioctl.md)
+- [d_open](./bdevsw/api-1457976-d_open.md)
+- [d_psize](./bdevsw/api-1457985-d_psize.md)
+- [d_strategy](./bdevsw/api-1457992-d_strategy.md)
+- [d_type](./bdevsw/api-1458006-d_type.md)
 
 
 ---

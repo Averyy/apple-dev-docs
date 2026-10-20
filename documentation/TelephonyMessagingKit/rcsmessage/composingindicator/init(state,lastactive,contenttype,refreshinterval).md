@@ -1,7 +1,8 @@
 # init(state:lastActive:contentType:refreshInterval:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

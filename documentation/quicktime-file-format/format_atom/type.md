@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit field.
 
@@ -11,9 +12,10 @@ Contains the four-character code `'frma'`.
 
 ## See Also
 
-- [Size](format_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the format atom.
-- [Data format](format_atom/data_format.md)
+- [Data format](./data_format.md)
   A 32-bit integer indicating the format of the stored data.
 
 

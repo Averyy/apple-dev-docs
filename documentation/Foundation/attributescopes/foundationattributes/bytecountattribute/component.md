@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.ByteCountAttribute.Component
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,20 +22,20 @@ enum Component
 ## Topics
 
 ### Enumeration Cases
-- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.actualByteCount](attributescopes/foundationattributes/bytecountattribute/component/actualbytecount.md)
-- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.spelledOutValue](attributescopes/foundationattributes/bytecountattribute/component/spelledoutvalue.md)
-- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.unit(_:)](attributescopes/foundationattributes/bytecountattribute/component/unit(_:).md)
-- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.value](attributescopes/foundationattributes/bytecountattribute/component/value.md)
+- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.actualByteCount](./component/actualbytecount.md)
+- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.spelledOutValue](./component/spelledoutvalue.md)
+- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.unit(_:)](./component/unit%28_%29.md)
+- [AttributeScopes.FoundationAttributes.ByteCountAttribute.Component.value](./component/value.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # au_mask_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct au_mask {
     ...
 } au_mask_t;
@@ -17,8 +18,8 @@ typedef struct au_mask {
 ## Topics
 
 ### Instance Properties
-- [am_failure](au_mask_t/1520321-am_failure.md)
-- [am_success](au_mask_t/1520191-am_success.md)
+- [am_failure](./au_mask_t/api-1520321-am_failure.md)
+- [am_success](./au_mask_t/api-1520191-am_success.md)
 
 
 ---

@@ -1,20 +1,25 @@
 # isLandscape
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user interface is currently presented in a landscape orientation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
 ```swift
 var isLandscape: Bool { get }
+```
+
+```c
+static BOOL UIInterfaceOrientationIsLandscape(UIInterfaceOrientation orientation);
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ The interface orientation can be different than the device orientation. You typi
 
 ## See Also
 
-- [var isPortrait: Bool](uiinterfaceorientation/isportrait.md)
+### Interface orientation
+- [var isPortrait: Bool](./isportrait.md)
   A Boolean value that indicates whether the user interface is currently presented in a portrait orientation.
 
 

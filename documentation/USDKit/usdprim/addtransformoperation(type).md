@@ -1,7 +1,8 @@
 # addTransformOperation(type:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a transform operation of the given kind to this prim’s transform stack.
 
@@ -25,9 +26,10 @@ Creates the corresponding `xformOp:*` attribute and appends its name to the prim
 
 ## See Also
 
-- [func applyAPISchema(USDToken) throws](usdprim/applyapischema(_:).md)
+### Applying schemas and transforms
+- [func applyAPISchema(USDToken) throws](./applyapischema%28_%29.md)
   Applies a single-apply API schema to this prim.
-- [func applyAPISchema(USDToken, instanceName: USDToken) throws](usdprim/applyapischema(_:instancename:).md)
+- [func applyAPISchema(USDToken, instanceName: USDToken) throws](./applyapischema%28_,instancename%29.md)
   Applies a multi-apply API schema to this prim with the given instance name.
 
 

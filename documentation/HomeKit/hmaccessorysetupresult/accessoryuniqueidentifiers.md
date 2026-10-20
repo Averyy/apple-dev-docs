@@ -1,7 +1,8 @@
 # accessoryUniqueIdentifiers
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The values corresponding to accessories that are set up.
 
@@ -16,13 +17,18 @@ The values corresponding to accessories that are set up.
 var accessoryUniqueIdentifiers: [UUID] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSUUID *> * accessoryUniqueIdentifiers;
+```
+
 #### Discussion
 
-Usually only one accessory is set up at a time, but adding an accessory bridge can result in multiple accessories being set up at once. See [`uniqueIdentifier`](hmhome/uniqueidentifier.md) for more information.
+Usually only one accessory is set up at a time, but adding an accessory bridge can result in multiple accessories being set up at once. See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 
 ## See Also
 
-- [var homeUniqueIdentifier: UUID](hmaccessorysetupresult/homeuniqueidentifier.md)
+### Getting results
+- [var homeUniqueIdentifier: UUID](./homeuniqueidentifier.md)
   The home that accessories were added to.
 
 

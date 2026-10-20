@@ -1,7 +1,8 @@
 # connection
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connection currently performing encoding or decoding.
 
@@ -20,9 +21,14 @@ The connection currently performing encoding or decoding.
 var connection: NSXPCConnection? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSXPCConnection * connection;
+```
+
 ## See Also
 
-- [var userInfo: (any NSObjectProtocol)?](nsxpccoder/userinfo.md)
+### Inspecting the Coder
+- [var userInfo: (any NSObjectProtocol)?](./userinfo.md)
   An optional user information object associated with the coder.
 
 

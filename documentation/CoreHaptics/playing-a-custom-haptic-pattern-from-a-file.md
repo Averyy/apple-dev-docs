@@ -1,6 +1,8 @@
 # Playing a Custom Haptic Pattern from a File
 
-**Framework**: Core Haptics
+**Framework**: Core Haptics  
+**Role**: Sample Code  
+**Download**: [PlayingACustomHapticPatternFromAFile.zip](https://docs-assets.developer.apple.com/published/21755acf0d86/PlayingACustomHapticPatternFromAFile.zip)
 
 Sample predesigned Apple Haptic Audio Pattern files, and learn how to play your own.
 
@@ -16,7 +18,7 @@ This app, HapticSampler, describes how to load files formatted as Apple Haptic A
 
 The user interface, defined in `Main.storyboard`, consists of eight buttons, each of which loads and plays a different haptic pattern. AHAP files for eight custom patterns are bundled in the Xcode project. For example, the Sparkle.ahap file defines a haptic pattern with the following intensity and sharpness variations:
 
-![A diagram of the haptic intensity and sharpness variations for the pattern defined in Sparkle.ahap.](/images/com.apple.corehaptics/HapticSparkle@2x.png)
+![A diagram of the haptic intensity and sharpness variations for the pattern defined in Sparkle.ahap.](https://developer.apple.com/tutorials/images/com.apple.corehaptics/HapticSparkle@2x.png)
 
 You can examine and modify the AHAP file parameters in Xcode or a text editor.
 
@@ -24,7 +26,7 @@ You can examine and modify the AHAP file parameters in Xcode or a text editor.
 
 ##### Configure the App to Play Haptics
 
-HapticSampler checks for device compatibility and sets up an instance of [`CHHapticEngine`](chhapticengine.md) on launch.
+HapticSampler checks for device compatibility and sets up an instance of [`CHHapticEngine`](./chhapticengine.md) on launch.
 
 ```swift
 // Create and configure a haptic engine.
@@ -38,7 +40,7 @@ do {
 }
 ```
 
-See [`Preparing your app to play haptics`](preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
+See [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
 
 ##### Start the Haptic Engine
 
@@ -58,9 +60,9 @@ Tap one of the buttons in the app to load the AHAP file associated with that but
 try engine?.start()
 ```
 
-##### Play the Ahap
+##### Play the AHAP
 
-Assuming the engine has started, call the engine’s method, [`playPattern(from:)`](chhapticengine/playpattern(from:)-6m9m5.md), passing it the URL to playing the file.
+Assuming the engine has started, call the engine’s method, [`playPattern(from:)`](./chhapticengine/playpattern%28from%29-6m9m5.md), passing it the URL to playing the file.
 
 ```swift
 // Tell the engine to play a pattern.
@@ -77,7 +79,7 @@ Core Haptics layers simultaneously playing haptics automatically. If you don’t
 
 ##### Create Advanced Pattern Players for More Granular Control
 
-To have more granular control over individual haptics, such as configuring their pausing, resuming, and seeking behavior, create and maintain advanced pattern players using [`CHHapticAdvancedPatternPlayer`](chhapticadvancedpatternplayer.md) instead of using [`playPattern(from:)`](chhapticengine/playpattern(from:)-6m9m5.md).
+To have more granular control over individual haptics, such as configuring their pausing, resuming, and seeking behavior, create and maintain advanced pattern players using [`CHHapticAdvancedPatternPlayer`](./chhapticadvancedpatternplayer.md) instead of using [`playPattern(from:)`](./chhapticengine/playpattern%28from%29-6m9m5.md).
 
 ```swift
 advancedPlayer = try hapticEngine.makeAdvancedPlayer(with: ahapPattern)
@@ -92,7 +94,8 @@ Alternatively, you can write an AHAP file from scratch in a text editor, using t
 
 ## See Also
 
-- [Representing haptic patterns in AHAP files](representing-haptic-patterns-in-ahap-files.md)
+### File-based haptics
+- [Representing haptic patterns in AHAP files](./representing-haptic-patterns-in-ahap-files.md)
   Understand the Apple Haptic and Audio Pattern (AHAP) file format.
 
 

@@ -1,53 +1,55 @@
 # Testing
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Test matchmaking rules using sample data.
 
 #### Overview
 
-Use the Testing APIs to apply matchmaking rules to sample match requests and player properties. For more information, see [`Testing matchmaking rules`](https://developer.apple.com/documentation/gamekit/testing-matchmaking-rules).
+Use the Testing APIs to apply matchmaking rules to sample match requests and player properties. For more information, see [Testing matchmaking rules](../GameKit/testing-matchmaking-rules.md).
 
 ## Topics
 
 ### Applying rule sets to sample requests
-- [Test a Rule Set](post-v1-gamecentermatchmakingrulesettests.md)
+- [Test a Rule Set](./post-v1-gamecentermatchmakingrulesettests.md)
   Apply the given rule set to the given sample match requests.
 ### Objects
-- [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)
+- [object GameCenterMatchmakingRuleSetTestCreateRequest](./gamecentermatchmakingrulesettestcreaterequest.md)
   The request body for testing the rules in a rule set.
-- [object GameCenterMatchmakingTestRequest](gamecentermatchmakingtestrequest.md)
+- [object GameCenterMatchmakingTestRequest](./gamecentermatchmakingtestrequest.md)
   The type and ID of test matchmaking request.
-- [object GameCenterMatchmakingRuleSetTestResponse](gamecentermatchmakingrulesettestresponse.md)
+- [object GameCenterMatchmakingRuleSetTestResponse](./gamecentermatchmakingrulesettestresponse.md)
   The response body for testing a rule set.
-- [object GameCenterMatchmakingRuleSetTest](gamecentermatchmakingrulesettest.md)
+- [object GameCenterMatchmakingRuleSetTest](./gamecentermatchmakingrulesettest.md)
   A test run of a Game Center matchmaking rule set using simulated player properties to validate the rules.
-- [object GameCenterMatchmakingTestRequestInlineCreate](gamecentermatchmakingtestrequestinlinecreate.md)
+- [object GameCenterMatchmakingTestRequestInlineCreate](./gamecentermatchmakingtestrequestinlinecreate.md)
   A data structure that represents a sample match request for testing a rule set.
-- [object GameCenterMatchmakingTestPlayerProperty](gamecentermatchmakingtestplayerproperty.md)
+- [object GameCenterMatchmakingTestPlayerProperty](./gamecentermatchmakingtestplayerproperty.md)
   A simulated player attribute used when testing Game Center matchmaking rule sets.
-- [object GameCenterMatchmakingTestPlayerPropertyInlineCreate](gamecentermatchmakingtestplayerpropertyinlinecreate.md)
+- [object GameCenterMatchmakingTestPlayerPropertyInlineCreate](./gamecentermatchmakingtestplayerpropertyinlinecreate.md)
   A resource object that represents a player’s properties when you create a request.
-- [object GameCenterMatchmakingTeamAssignment](gamecentermatchmakingteamassignment.md)
+- [object GameCenterMatchmakingTeamAssignment](./gamecentermatchmakingteamassignment.md)
   The assignment of a player to a specific team during a Game Center matchmaking session.
-- [object Location](location.md)
+- [object Location](./location.md)
   A representation of a device location.
-- [object Property](property.md)
+- [object Property](./property.md)
   A representation of a game-specific property.
 
 ## See Also
 
-- [Rules](rules.md)
+### Matchmaking rules
+- [Rules](./rules.md)
   Manage the matchmaking rules that Game Center uses to find players.
-- [Expressions](expressions.md)
+- [Expressions](./expressions.md)
   Write expressions that query the match requests in a queue to find the best players for a match.
-- [Rule sets](rule-sets.md)
+- [Rule sets](./rule-sets.md)
   Manage the rule sets that you add matchmaking rules and teams to.
-- [Queues](queues.md)
+- [Queues](./queues.md)
   Manage the queues that contain matchmaking rule sets and that you submit match requests to.
-- [Teams](teams.md)
+- [Teams](./teams.md)
   Manage the teams that you add to matchmaking rule sets.
-- [Metrics](metrics.md)
+- [Metrics](./metrics.md)
   Analyze data about matchmaking rules.
 
 

@@ -1,7 +1,8 @@
 # bandPart(lowerBandCount:upperBandCount:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new tensor with the same shape where everything outside a central band in each innermost matrix is set to zero.
 
@@ -70,13 +71,14 @@ t.bandPart(lowerBandCount: -1, upperBandCount: 0)
 
 ## See Also
 
-- [func expandingShape(at:)](mltensor/expandingshape(at:).md)
+### Accessing the extended tensor, sign and reciprocal
+- [func expandingShape(at:)](./expandingshape%28at%29.md)
   Returns a shape-expanded tensor with a dimension of 1 inserted at the specified shape indices.
-- [func tiled(multiples: [Int]) -> MLTensor](mltensor/tiled(multiples:).md)
+- [func tiled(multiples: [Int]) -> MLTensor](./tiled%28multiples%29.md)
   Returns a tensor by replicating its elements multiple times.
-- [func sign() -> MLTensor](mltensor/sign.md)
+- [func sign() -> MLTensor](./sign%28%29.md)
   Returns the sign of the tensor’s elements.
-- [func reciprocal() -> MLTensor](mltensor/reciprocal.md)
+- [func reciprocal() -> MLTensor](./reciprocal%28%29.md)
   Computes the reciprocal of the tensor’s elements.
 
 

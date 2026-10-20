@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client when an Apple device has been locked, and media is unavailable until the restriction has been removed.
@@ -19,9 +20,14 @@ Tells the client when an Apple device has been locked, and media is unavailable 
 func cameraDeviceDidEnableAccessRestriction(_ device: ICDevice)
 ```
 
+```objc
+- (void) cameraDeviceDidEnableAccessRestriction:(ICDevice *) device;
+```
+
 ## See Also
 
-- [func cameraDeviceDidRemoveAccessRestriction(ICDevice)](iccameradevicedelegate/cameradevicedidremoveaccessrestriction(_:).md)
+### Responding to Access Restrictions
+- [func cameraDeviceDidRemoveAccessRestriction(ICDevice)](./cameradevicedidremoveaccessrestriction%28_%29.md)
   Tells the client when an Apple device has been unlocked, paired to the host, and media is available.
 
 

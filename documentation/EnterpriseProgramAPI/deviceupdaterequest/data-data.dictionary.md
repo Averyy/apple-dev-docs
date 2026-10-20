@@ -1,27 +1,28 @@
 # DeviceUpdateRequest.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object DeviceUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object DeviceUpdateRequest.Data.Attributes](deviceupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object DeviceUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 ## Properties
 
 - `attributes` (DeviceUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `devices`
 
 
 ---

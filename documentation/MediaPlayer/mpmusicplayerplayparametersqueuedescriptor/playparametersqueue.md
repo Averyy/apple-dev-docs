@@ -1,7 +1,8 @@
 # playParametersQueue
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the play parameters returned from querying MusicKit.
 
@@ -18,11 +19,16 @@ An array containing the play parameters returned from querying MusicKit.
 var playParametersQueue: [MPMusicPlayerPlayParameters] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<MPMusicPlayerPlayParameters *> * playParametersQueue;
+```
+
 ## See Also
 
-- [var startItemPlayParameters: MPMusicPlayerPlayParameters?](mpmusicplayerplayparametersqueuedescriptor/startitemplayparameters.md)
+### Accessing the play parameters
+- [var startItemPlayParameters: MPMusicPlayerPlayParameters?](./startitemplayparameters.md)
   The item identified by the play parameters to play first.
-- [class MPMusicPlayerPlayParameters](mpmusicplayerplayparameters.md)
+- [class MPMusicPlayerPlayParameters](../mpmusicplayerplayparameters.md)
   The MusicKit parameters that describe items to play.
 
 

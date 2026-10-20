@@ -1,7 +1,8 @@
 # ASGeneratedPassword
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.2+
@@ -15,37 +16,41 @@
 class ASGeneratedPassword
 ```
 
+```objc
+@interface ASGeneratedPassword : NSObject
+```
+
 ## Topics
 
 ### Structures
-- [ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.struct.md)
+- [ASGeneratedPassword.Kind](./asgeneratedpassword/kind-swift.struct.md)
 ### Initializers
-- [init?(coder: NSCoder)](asgeneratedpassword/init(coder:).md)
-- [init(kind: ASGeneratedPassword.Kind, value: String)](asgeneratedpassword/init(kind:value:).md)
+- [init?(coder: NSCoder)](./asgeneratedpassword/init%28coder%29.md)
+- [init(kind: ASGeneratedPassword.Kind, value: String)](./asgeneratedpassword/init%28kind,value%29.md)
 ### Instance Properties
-- [var kind: ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.property.md)
+- [var kind: ASGeneratedPassword.Kind](./asgeneratedpassword/kind-swift.property.md)
   The kind of password that this represents.
-- [var localizedName: String](asgeneratedpassword/localizedname.md)
+- [var localizedName: String](./asgeneratedpassword/localizedname.md)
   The user-visible description of this password, derived from the kind.
-- [var value: String](asgeneratedpassword/value.md)
+- [var value: String](./asgeneratedpassword/value.md)
   The value of the password.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

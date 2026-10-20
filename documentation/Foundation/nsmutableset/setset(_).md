@@ -1,7 +1,8 @@
 # setSet(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Empties the receiving set, then adds each object contained in another given set.
 
@@ -20,17 +21,22 @@ Empties the receiving set, then adds each object contained in another given set.
 func setSet(_ otherSet: Set<AnyHashable>)
 ```
 
+```objc
+- (void) setSet:(NSSet<id> *) otherSet;
+```
+
 ## Parameters
 
 - `otherSet`: The set whose members replace the receiving set’s content.
 
 ## See Also
 
-- [func union(Set<AnyHashable>)](nsmutableset/union(_:).md)
+### Combining and recombining sets
+- [func union(Set<AnyHashable>)](./union%28_%29.md)
   Adds each object in another given set to the receiving set, if not present.
-- [func minus(Set<AnyHashable>)](nsmutableset/minus(_:).md)
+- [func minus(Set<AnyHashable>)](./minus%28_%29.md)
   Removes each object in another given set from the receiving set, if present.
-- [func intersect(Set<AnyHashable>)](nsmutableset/intersect(_:).md)
+- [func intersect(Set<AnyHashable>)](./intersect%28_%29.md)
   Removes from the receiving set each object that isn’t a member of another given set.
 
 

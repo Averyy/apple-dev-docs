@@ -1,7 +1,8 @@
 # textLists
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text lists that contain the paragraph.
 
@@ -14,9 +15,14 @@ The text lists that contain the paragraph.
 var textLists: [NSTextList] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSTextList *> * textLists;
+```
+
 ## See Also
 
-- [var textBlocks: [NSTextBlock]](nsparagraphstyle/textblocks.md)
+### Getting text block and list information
+- [var textBlocks: [NSTextBlock]](./textblocks.md)
   The text blocks that contain the paragraph.
 
 

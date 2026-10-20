@@ -1,7 +1,8 @@
 # MSUPIRequest
 
 **Framework**: Messages  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 class MSUPIRequest
 ```
 
+```objc
+@interface MSUPIRequest : NSObject
+```
+
 #### Overview
 
 Request for UPI (Unified Payments Interface) device validation.
@@ -23,24 +28,24 @@ In order to use this API, you must use the managed entitlement `com.apple.develo
 ## Topics
 
 ### Initializers
-- [init(validationToken: String, recipients: [String])](msupirequest/init(validationtoken:recipients:).md)
+- [init(validationToken: String, recipients: [String])](./msupirequest/init%28validationtoken,recipients%29.md)
 ### Instance Properties
-- [var recipients: [String]](msupirequest/recipients.md)
-- [var validationToken: String](msupirequest/validationtoken.md)
+- [var recipients: [String]](./msupirequest/recipients.md)
+- [var validationToken: String](./msupirequest/validationtoken.md)
 ### Instance Methods
-- [func send(completionHandler: (Bool) -> Void)](msupirequest/send(completionhandler:).md)
+- [func send(completionHandler: (Bool) -> Void)](./msupirequest/send%28completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

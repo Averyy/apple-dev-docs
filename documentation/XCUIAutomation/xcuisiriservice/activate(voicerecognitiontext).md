@@ -1,7 +1,8 @@
 # activate(voiceRecognitionText:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the Siri UI, if it’s not currently active, and accepts a string that is then processed as if it’s recognized speech.
 
@@ -15,6 +16,10 @@ Presents the Siri UI, if it’s not currently active, and accepts a string that 
 
 ```swift
 func activate(voiceRecognitionText text: String)
+```
+
+```objc
+- (void) activateWithVoiceRecognitionText:(NSString *) text;
 ```
 
 ## Parameters

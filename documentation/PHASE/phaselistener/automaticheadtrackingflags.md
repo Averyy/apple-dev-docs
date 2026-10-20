@@ -1,7 +1,8 @@
 # automaticHeadTrackingFlags
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var automaticHeadTrackingFlags: PHASEAutomaticHeadTrackingFlags { get set }
+```
+
+```objc
+@property (nonatomic, assign) PHASEAutomaticHeadTrackingFlags automaticHeadTrackingFlags;
 ```
 
 #### Discussion

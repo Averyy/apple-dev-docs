@@ -1,7 +1,8 @@
 # kernelWidth
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var kernelWidth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger kernelWidth;
+```
+
 ## See Also
 
-- [var kernelHeight: Int](mpscnnspatialnormalizationnode/kernelheight.md)
+### Instance Properties
+- [var kernelHeight: Int](./kernelheight.md)
 
 
 ---

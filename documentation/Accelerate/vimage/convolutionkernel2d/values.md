@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kernel weights or structuring element values that must contain `height * width` elements.
 
@@ -11,7 +12,7 @@ The kernel weights or structuring element values that must contain `height * wid
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let values: [ComponentType]
 
 ## See Also
 
-- [let width: vImagePixelCount](vimage/convolutionkernel2d/width.md)
+### Instance Properties
+- [let width: vImagePixelCount](./width.md)
   The width of the kernel that must be a positive, odd number.
-- [let height: vImagePixelCount](vimage/convolutionkernel2d/height.md)
+- [let height: vImagePixelCount](./height.md)
   The height of the kernel that must be a positive, odd number.
 
 

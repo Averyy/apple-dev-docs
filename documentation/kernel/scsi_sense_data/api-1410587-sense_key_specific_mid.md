@@ -1,14 +1,15 @@
 # SENSE_KEY_SPECIFIC_MID
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 UInt8 SENSE_KEY_SPECIFIC_MID;
 ```
 

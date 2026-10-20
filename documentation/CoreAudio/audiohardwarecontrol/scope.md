@@ -1,12 +1,13 @@
 # scope
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An AudioObjectPropertyScope that indicates which part of the owning device the control applies to.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # collectionViewLayout
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout object used to initialize the collection view controller.
 
@@ -9,7 +10,7 @@ The layout object used to initialize the collection view controller.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The layout object used to initialize the collection view controller.
 var collectionViewLayout: UICollectionViewLayout { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UICollectionViewLayout * collectionViewLayout;
+```
+
 #### Discussion
 
-This property contains the layout object you passed to the [`init(collectionViewLayout:)`](uicollectionviewcontroller/init(collectionviewlayout:).md) method. The layout object in this property isn’t updated to reflect changes to the collection view itself. You can use this property to refer to the layout object you originally configured the collection view to use.
+This property contains the layout object you passed to the [`init(collectionViewLayout:)`](./init%28collectionviewlayout%29.md) method. The layout object in this property isn’t updated to reflect changes to the collection view itself. You can use this property to refer to the layout object you originally configured the collection view to use.
 
 ## See Also
 
-- [var collectionView: UICollectionView!](uicollectionviewcontroller/collectionview.md)
+### Getting the collection view
+- [var collectionView: UICollectionView!](./collectionview.md)
   The collection view object managed by this view controller.
 
 

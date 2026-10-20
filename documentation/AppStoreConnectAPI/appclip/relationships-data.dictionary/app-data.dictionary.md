@@ -1,7 +1,8 @@
 # AppClip.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the App Clips and the Apps resource.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the App Clips and the 
 
 ## Declaration
 
-```swift
+```
 object AppClip.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClip.Relationships.App.Data](appclip/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object AppClip.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Apps resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppClip.Relationships.App
 
 ## See Also
 
-- [object AppClip.Relationships.AppClipDefaultExperiences](appclip/relationships-data.dictionary/appclipdefaultexperiences-data.dictionary.md)
+### Objects
+- [object AppClip.Relationships.AppClipDefaultExperiences](./appclipdefaultexperiences-data.dictionary.md)
   The data and links that describe the relationship between the App Clips and the Default App Clip Experiences resources.
 
 

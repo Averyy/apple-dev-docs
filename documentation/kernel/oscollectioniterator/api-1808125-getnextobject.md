@@ -7,11 +7,11 @@ Advances to and returns the next object in the iteration.
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSObject * getNextObject();
 ```
 
-#### Return_value
+#### Return Value
 
 The next object in the iteration context, `NULL` if there is no next object or if the iterator is no longer valid.
 
@@ -23,15 +23,16 @@ Subclasses must implement this pure virtual function to check for validity with 
 
 ## See Also
 
-- [free](oscollectioniterator/1808113-free.md)
+### Miscellaneous
+- [free](./api-1808113-free.md)
   Releases or deallocates any resources used by the OSCollectionIterator object.
-- [initWithCollection](oscollectioniterator/1808147-initwithcollection.md)
+- [initWithCollection](./api-1808147-initwithcollection.md)
   Initializes an OSCollectionIterator for the provided collection object.
-- [isValid](oscollectioniterator/1808157-isvalid.md)
+- [isValid](./api-1808157-isvalid.md)
   Checks that the collection hasn't been modified during iteration.
-- [reset](oscollectioniterator/1808170-reset.md)
+- [reset](./api-1808170-reset.md)
   Resets the iterator to the beginning of the collection, as if it had just been created.
-- [withCollection](oscollectioniterator/1808183-withcollection.md)
+- [withCollection](./api-1808183-withcollection.md)
   Creates and initializes an OSCollectionIterator for the provided collection object.
 
 

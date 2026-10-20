@@ -1,7 +1,8 @@
 # numberOfSections(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks your data source object to provide the total number of sections.
 
@@ -13,6 +14,10 @@ Asks your data source object to provide the total number of sections.
 ```swift
 @MainActor
 optional func numberOfSections(in collectionView: NSCollectionView) -> Int
+```
+
+```objc
+- (NSInteger) numberOfSectionsInCollectionView:(NSCollectionView *) collectionView;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ Implement this method when the organization of your data requires more than one 
 
 ## See Also
 
-- [func collectionView(NSCollectionView, numberOfItemsInSection: Int) -> Int](nscollectionviewdatasource/collectionview(_:numberofitemsinsection:).md)
+### Getting the Number of Sections and Items
+- [func collectionView(NSCollectionView, numberOfItemsInSection: Int) -> Int](./collectionview%28_,numberofitemsinsection%29.md)
   Asks your data source object to provide the number of items in the specified section.
 
 

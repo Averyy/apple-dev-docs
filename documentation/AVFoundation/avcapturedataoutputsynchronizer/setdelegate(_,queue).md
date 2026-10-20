@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Designates a delegate object to receive synchronized data and a dispatch queue for delivering that data.
 
@@ -17,11 +18,15 @@ Designates a delegate object to receive synchronized data and a dispatch queue f
 func setDelegate(_ delegate: (any AVCaptureDataOutputSynchronizerDelegate)?, queue delegateCallbackQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVCaptureDataOutputSynchronizerDelegate>) delegate queue:(dispatch_queue_t) delegateCallbackQueue;
+```
+
 #### Discussion
 
 The data output synchronizer gathers data from its data outputs, and when it determines that all data has been received for a given timestamp, it vends collections of synchronized data by calling delegate methods on the specified dispatch queue.
 
-The [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) class overrides all the data outputs’ own delegates and callbacks. Data outputs under the control of a data output synchronizer do not fire delegate callbacks. Delegate callbacks are restored to individual data outputs only if you clear the synchronizer’s delegate and callback queue by calling this method and passing `nil` for both parameters.
+The [`AVCaptureDataOutputSynchronizer`](../avcapturedataoutputsynchronizer.md) class overrides all the data outputs’ own delegates and callbacks. Data outputs under the control of a data output synchronizer do not fire delegate callbacks. Delegate callbacks are restored to individual data outputs only if you clear the synchronizer’s delegate and callback queue by calling this method and passing `nil` for both parameters.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ The [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) clas
 
 ## See Also
 
-- [var delegate: (any AVCaptureDataOutputSynchronizerDelegate)?](avcapturedataoutputsynchronizer/delegate.md)
+### Receiving synchronized capture data
+- [var delegate: (any AVCaptureDataOutputSynchronizerDelegate)?](./delegate.md)
   A delegate object that receives synchronized capture data.
-- [var delegateCallbackQueue: dispatch_queue_t?](avcapturedataoutputsynchronizer/delegatecallbackqueue.md)
+- [var delegateCallbackQueue: dispatch_queue_t?](./delegatecallbackqueue.md)
   A dispatch queue for delivering synchronized capture data.
-- [protocol AVCaptureDataOutputSynchronizerDelegate](avcapturedataoutputsynchronizerdelegate.md)
+- [protocol AVCaptureDataOutputSynchronizerDelegate](../avcapturedataoutputsynchronizerdelegate.md)
   Methods for receiving captured data from multiple capture outputs synchronized to the same timestamp.
 
 

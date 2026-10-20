@@ -1,7 +1,8 @@
 # TextureResource.Format.NormalEncoding.wy
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A normal map with the X and Y components of a surface normal in the tangent space of the surface that RealityKit encodes in the alpha and green channels of a texture.
 
@@ -25,7 +26,8 @@ Each component value is between `0.0` and `1.0`.
 
 ## See Also
 
-- [TextureResource.Format.NormalEncoding.xy](textureresource/format/normalencoding/xy.md)
+### Normal profiles
+- [TextureResource.Format.NormalEncoding.xy](./xy.md)
   A normal map with the X and Y components of a surface normal in the tangent space of the surface that RealityKit encodes in the red and green channels of a texture.
 
 

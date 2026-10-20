@@ -1,22 +1,27 @@
 # AudioFile_WriteProc
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-A callback for writing file data when used in conjunction with the [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](audiofileopenwithcallbacks(_:_:_:_:_:_:_:).md) or [`AudioFileCreateWithURL(_:_:_:_:_:)`](audiofilecreatewithurl(_:_:_:_:_:).md) functions.
+A callback for writing file data when used in conjunction with the [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](./audiofileopenwithcallbacks%28_,_,_,_,_,_,_%29.md) or [`AudioFileCreateWithURL(_:_:_:_:_:)`](./audiofilecreatewithurl%28_,_,_,_,_%29.md) functions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AudioFile_WriteProc = (UnsafeMutableRawPointer, Int64, UInt32, UnsafeRawPointer, UnsafeMutablePointer<UInt32>) -> OSStatus
+```
+
+```c
+typedef int (*)(void *, long long, unsigned int, const void *, unsigned int *) AudioFile_WriteProc;
 ```
 
 #### Return Value
@@ -33,7 +38,7 @@ This callback function is invoked when Audio File Services needs to write data.
 
 ## Parameters
 
-- `inClientData`: A pointer to the client data as set in the `inClientData` parameter to [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](audiofileopenwithcallbacks(_:_:_:_:_:_:_:).md) or[`AudioFileInitializeWithCallbacks(_:_:_:_:_:_:_:_:_:)`](audiofileinitializewithcallbacks(_:_:_:_:_:_:_:_:_:).md).
+- `inClientData`: A pointer to the client data as set in the `inClientData` parameter to [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](./audiofileopenwithcallbacks%28_,_,_,_,_,_,_%29.md) or[`AudioFileInitializeWithCallbacks(_:_:_:_:_:_:_:_:_:)`](./audiofileinitializewithcallbacks%28_,_,_,_,_,_,_,_,_%29.md).
 - `inPosition`: An offset into the data from which to read.
 - `requestCount`: The number of bytes to write.
 - `buffer`: A pointer to the buffer containing the data to write.
@@ -41,11 +46,12 @@ This callback function is invoked when Audio File Services needs to write data.
 
 ## See Also
 
-- [typealias AudioFile_ReadProc](audiofile_readproc.md)
-  Reads audio data when used in conjunction with the [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](audiofileopenwithcallbacks(_:_:_:_:_:_:_:).md) or [`AudioFileInitializeWithCallbacks(_:_:_:_:_:_:_:_:_:)`](audiofileinitializewithcallbacks(_:_:_:_:_:_:_:_:_:).md) functions.)
-- [typealias AudioFile_GetSizeProc](audiofile_getsizeproc.md)
+### Callbacks
+- [typealias AudioFile_ReadProc](./audiofile_readproc.md)
+  Reads audio data when used in conjunction with the [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](./audiofileopenwithcallbacks%28_,_,_,_,_,_,_%29.md) or [`AudioFileInitializeWithCallbacks(_:_:_:_:_:_:_:_:_:)`](./audiofileinitializewithcallbacks%28_,_,_,_,_,_,_,_,_%29.md) functions.)
+- [typealias AudioFile_GetSizeProc](./audiofile_getsizeproc.md)
   Gets file data size.
-- [typealias AudioFile_SetSizeProc](audiofile_setsizeproc.md)
+- [typealias AudioFile_SetSizeProc](./audiofile_setsizeproc.md)
   Sets file data size.
 
 

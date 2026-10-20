@@ -1,7 +1,8 @@
 # onGeometryChange(for:of:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to be performed when a value, created from a geometry proxy, changes.
 
@@ -21,13 +22,20 @@ Adds an action to be performed when a value, created from a geometry proxy, chan
 @preconcurrency nonisolated func onGeometryChange<T>(for type: T.Type, of transform: @escaping @Sendable (GeometryProxy) -> T, action: @escaping (T) -> Void) -> some View where T : Equatable, T : Sendable
 ```
 
+**Other overloads**:
+
+```swift
+@preconcurrency
+nonisolated func onGeometryChange<T>(for type: T.Type, of transform: @escaping @Sendable (GeometryProxy) -> T, action: @escaping (T, T) -> Void) -> some View where T : Equatable, T : Sendable
+```
+
 #### Discussion
 
-The geometry of a view can change frequently, especially if the view is contained within a [`ScrollView`](scrollview.md) and that scroll view is scrolling.
+The geometry of a view can change frequently, especially if the view is contained within a [`ScrollView`](../scrollview.md) and that scroll view is scrolling.
 
 You should avoid updating large parts of your app whenever the scroll geometry changes. To aid in this, you provide two closures to this modifier:
 
-- transform: This converts a value of [`GeometryProxy`](geometryproxy.md) to your own data type.
+- transform: This converts a value of [`GeometryProxy`](../geometryproxy.md) to your own data type.
 - action: This provides the data type you created in `of` and is called whenever the data type changes.
 
 For example, you can use this modifier to know how much of a view is visible on screen. In the following example, the data type you convert to is a `Bool` and the action is called whenever the `Bool` changes.
@@ -61,13 +69,15 @@ struct VideoView: View {
 }
 ```
 
-For easily responding to geometry changes of a scroll view, see the [`onScrollGeometryChange(for:of:action:)`](view/onscrollgeometrychange(for:of:action:).md) modifier.
+For easily responding to geometry changes of a scroll view, see the [`onScrollGeometryChange(for:of:action:)`](./onscrollgeometrychange%28for,of,action%29.md) modifier.
 
 ## Parameters
 
-- `type`: The type of value transformed from a [`GeometryProxy`](geometryproxy.md).
-- `transform`: A closure that transforms a [`GeometryProxy`](geometryproxy.md) to your type.
-- `action`: A closure to run when the transformed data changes. - **newValue**: The new value that failed the comparison check.
+- `type`: The type of value transformed from a [`GeometryProxy`](../geometryproxy.md).
+- `transform`: A closure that transforms a [`GeometryProxy`](../geometryproxy.md) to your type.
+- `action`: A closure to run when the transformed data changes.
+
+  - **newValue**: The new value that failed the comparison check.
 
 
 ---

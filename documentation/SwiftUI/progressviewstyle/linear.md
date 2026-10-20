@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A progress view that visually indicates its progress using a horizontal bar.
 
@@ -21,11 +22,14 @@ A progress view that visually indicates its progress using a horizontal bar.
 nonisolated static var linear: LinearProgressViewStyle { get }
 ```
 
+Available when `Self` is `LinearProgressViewStyle`.
+
 ## See Also
 
-- [static var automatic: DefaultProgressViewStyle](progressviewstyle/automatic.md)
+### Getting built-in progress view styles
+- [static var automatic: DefaultProgressViewStyle](./automatic.md)
   The default progress view style in the current context of the view being styled.
-- [static var circular: CircularProgressViewStyle](progressviewstyle/circular.md)
+- [static var circular: CircularProgressViewStyle](./circular.md)
   The style of a progress view that uses a circular gauge to indicate the partial completion of an activity.
 
 

@@ -1,11 +1,12 @@
 # WritePacketsFDF
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,21 +14,26 @@
 typealias WritePacketsFDF = (UnsafeMutableRawPointer, DarwinBoolean, UInt32, UnsafePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeRawPointer) -> OSStatus
 ```
 
+```c
+typedef int (*)(void *, unsigned char, unsigned int, const struct AudioStreamPacketDescription *, long long, unsigned int *, const void *) WritePacketsFDF;
+```
+
 ## See Also
 
-- [struct ExtendedControlEvent](extendedcontrolevent.md)
-- [typealias MIDIEndpointRef](../coremidi/midiendpointref.md)
+### Data Types
+- [struct ExtendedControlEvent](./extendedcontrolevent.md)
+- [typealias MIDIEndpointRef](../CoreMIDI/midiendpointref.md)
   A MIDI source or destination an entity owns.
-- [typealias MagicCookieInfo](magiccookieinfo.md)
+- [typealias MagicCookieInfo](./magiccookieinfo.md)
   A structure holding magic cookie information.
-- [typealias NoteInstanceID](noteinstanceid.md)
-- [typealias ReadBytesFDF](readbytesfdf.md)
-- [typealias ReadPacketDataFDF](readpacketdatafdf.md)
-- [typealias ReadPacketsFDF](readpacketsfdf.md)
-- [typealias SetPropertyFDF](setpropertyfdf.md)
-- [typealias SetUserDataFDF](setuserdatafdf.md)
-- [typealias WriteBytesFDF](writebytesfdf.md)
-- [typealias AudioSessionPropertyID](audiosessionpropertyid.md)
+- [typealias NoteInstanceID](./noteinstanceid.md)
+- [typealias ReadBytesFDF](./readbytesfdf.md)
+- [typealias ReadPacketDataFDF](./readpacketdatafdf.md)
+- [typealias ReadPacketsFDF](./readpacketsfdf.md)
+- [typealias SetPropertyFDF](./setpropertyfdf.md)
+- [typealias SetUserDataFDF](./setuserdatafdf.md)
+- [typealias WriteBytesFDF](./writebytesfdf.md)
+- [typealias AudioSessionPropertyID](./audiosessionpropertyid.md)
   The data type for an audio session property identifier.
 
 

@@ -1,7 +1,8 @@
 # hertzUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring frequency in hertz with the provided prefix.
 
@@ -19,17 +20,22 @@ Returns a HealthKit unit for measuring frequency in hertz with the provided pref
 class func hertzUnit(with prefix: HKMetricPrefix) -> Self
 ```
 
+```objc
++ (instancetype) hertzUnitWithMetricPrefix:(HKMetricPrefix) prefix;
+```
+
 #### Discussion
 
 Hertz represent cycles per second.
 
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 ## See Also
 
-- [class func hertz() -> Self](hkunit/hertz.md)
+### Constructing frequency units
+- [class func hertz() -> Self](./hertz%28%29.md)
   Returns a HealthKit unit for measuring frequency in hertz.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean that indicates whether the joint is active.
@@ -24,7 +25,7 @@ var isActive: Bool { get }
 
 Inactive joints do not participate in the physics simulation.
 
-One example is a joint that does not reference any [`Entity`](entity.md) with [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), or when one or both the referenced entities are not active.
+One example is a joint that does not reference any [`Entity`](../entity.md) with [`PhysicsBodyMode.dynamic`](../physicsbodymode/dynamic.md), or when one or both the referenced entities are not active.
 
 
 ---

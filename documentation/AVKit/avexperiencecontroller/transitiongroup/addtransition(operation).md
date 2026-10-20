@@ -1,7 +1,8 @@
 # addTransition(operation:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a transition to the group, suspending it until all transitions are ready to run together.
 
@@ -16,9 +17,9 @@ mutating func addTransition(operation: sending @escaping @isolated(any) () async
 
 #### Discussion
 
-Call [`transition(to:)`](avexperiencecontroller/transition(to:).md) on an [`AVExperienceController`](avexperiencecontroller.md) within the operation closure. The transition suspends until all transitions have been added to the group, then perform together with the others.
+Call [`transition(to:)`](../transition%28to%29.md) on an [`AVExperienceController`](../../avexperiencecontroller.md) within the operation closure. The transition suspends until all transitions have been added to the group, then perform together with the others.
 
-[`withTransitionGroup(body:)`](avexperiencecontroller/withtransitiongroup(body:).md) includes the value you return from the closure in the order transitions were added.
+[`withTransitionGroup(body:)`](../withtransitiongroup%28body%29.md) includes the value you return from the closure in the order transitions were added.
 
 ```swift
 group.addTransition {

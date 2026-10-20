@@ -1,7 +1,8 @@
 # AnchorStateEvents.WillUnanchor.Reason
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -20,18 +21,18 @@ enum Reason
 ## Topics
 
 ### Enumeration Cases
-- [AnchorStateEvents.WillUnanchor.Reason.anchorDisqualified](anchorstateevents/willunanchor/reason-swift.enum/anchordisqualified.md)
+- [AnchorStateEvents.WillUnanchor.Reason.anchorDisqualified](./reason-swift.enum/anchordisqualified.md)
   Anchor is removed from session or loses tracking
-- [AnchorStateEvents.WillUnanchor.Reason.authorizationFailed](anchorstateevents/willunanchor/reason-swift.enum/authorizationfailed.md)
+- [AnchorStateEvents.WillUnanchor.Reason.authorizationFailed](./reason-swift.enum/authorizationfailed.md)
   Anchor type is not authorized
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

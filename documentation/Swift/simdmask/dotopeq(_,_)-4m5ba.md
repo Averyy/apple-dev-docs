@@ -1,7 +1,8 @@
 # .^=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Replaces `a` with the pointwise exclusive or of `a` and `b`.
 
@@ -19,6 +20,8 @@ Replaces `a` with the pointwise exclusive or of `a` and `b`.
 ```swift
 static func .^= (a: inout SIMDMask<Storage>, b: SIMDMask<Storage>)
 ```
+
+Available when `Storage` is `SIMD32<Int>`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # DeviceActivityReportBuilder
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.
 
@@ -20,34 +21,35 @@ struct DeviceActivityReportBuilder
 ## Topics
 
 ### Type Methods
-- [static func buildBlock<Scene>(Scene) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:).md)
-- [static func buildBlock<S0, S1>(S0, S1) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:).md)
-- [static func buildBlock<S0, S1, S2>(S0, S1, S2) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3>(S0, S1, S2, S3) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4>(S0, S1, S2, S3, S4) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5>(S0, S1, S2, S3, S4, S5) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6>(S0, S1, S2, S3, S4, S5, S6) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7>(S0, S1, S2, S3, S4, S5, S6, S7) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8>(S0, S1, S2, S3, S4, S5, S6, S7, S8) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19) -> some DeviceActivityReportScene](deviceactivityreportbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock<Scene>(Scene) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_%29.md)
+- [static func buildBlock<S0, S1>(S0, S1) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_%29.md)
+- [static func buildBlock<S0, S1, S2>(S0, S1, S2) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3>(S0, S1, S2, S3) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4>(S0, S1, S2, S3, S4) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5>(S0, S1, S2, S3, S4, S5) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6>(S0, S1, S2, S3, S4, S5, S6) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7>(S0, S1, S2, S3, S4, S5, S6, S7) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8>(S0, S1, S2, S3, S4, S5, S6, S7, S8) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19>(S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19) -> some DeviceActivityReportScene](./deviceactivityreportbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
 
 ## See Also
 
-- [struct DeviceActivityReport](deviceactivityreport.md)
+### Report activity
+- [struct DeviceActivityReport](./deviceactivityreport.md)
   A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
-- [protocol DeviceActivityReportExtension](deviceactivityreportextension.md)
+- [protocol DeviceActivityReportExtension](./deviceactivityreportextension.md)
   An app extension that reports device activity data.
-- [protocol DeviceActivityReportScene](deviceactivityreportscene.md)
+- [protocol DeviceActivityReportScene](./deviceactivityreportscene.md)
   Defines a custom device activity report scene.
 
 

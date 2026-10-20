@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOVideoBooleanControlClassIDDirection](1646204-anonymous/kiovideobooleancontrolclassiddirection.md)
-- [kIOVideoBooleanControlClassIDJack](1646204-anonymous/kiovideobooleancontrolclassidjack.md)
+- [kIOVideoBooleanControlClassIDDirection](./api-1646204-anonymous/kiovideobooleancontrolclassiddirection.md)
+- [kIOVideoBooleanControlClassIDJack](./api-1646204-anonymous/kiovideobooleancontrolclassidjack.md)
 
 
 ---

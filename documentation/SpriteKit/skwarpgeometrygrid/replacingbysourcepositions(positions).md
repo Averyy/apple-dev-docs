@@ -1,7 +1,8 @@
 # replacingBySourcePositions(positions:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of this grid, updated with the argument source positions.
 
@@ -11,7 +12,7 @@ Returns a copy of this grid, updated with the argument source positions.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ A new warp geometry grid.
 
 ## See Also
 
-- [func destPosition(at: Int) -> vector_float2](skwarpgeometrygrid/destposition(at:).md)
+### Accessing or Setting Grid Vertices
+- [func destPosition(at: Int) -> vector_float2](./destposition%28at%29.md)
   Returns the destination position of a vertex.
-- [func replacingByDestinationPositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](skwarpgeometrygrid/replacingbydestinationpositions(positions:).md)
+- [func replacingByDestinationPositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](./replacingbydestinationpositions%28positions%29.md)
   Returns a copy of this grid, updated with the argument destination positions.
-- [func sourcePosition(at: Int) -> vector_float2](skwarpgeometrygrid/sourceposition(at:).md)
+- [func sourcePosition(at: Int) -> vector_float2](./sourceposition%28at%29.md)
   Returns the source position of a vertex.
 
 

@@ -1,7 +1,8 @@
 # init(_:annotationsColumnName:featuresColumnName:resultsColumnName:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an adaptor that converts a regular estimator to a tabular estimator.
 

@@ -1,7 +1,8 @@
 # WebPage.JavaScriptConfirmResult.ok
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signals an affirmative action was produced by the invocation.
 

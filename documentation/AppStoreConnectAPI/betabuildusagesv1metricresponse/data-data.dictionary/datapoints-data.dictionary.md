@@ -1,7 +1,8 @@
 # BetaBuildUsagesV1MetricResponse.Data.DataPoints
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The time-series data points for the beta build usage metric, each containing install and crash counts.
 
@@ -10,14 +11,14 @@ The time-series data points for the beta build usage metric, each containing ins
 
 ## Declaration
 
-```swift
+```
 object BetaBuildUsagesV1MetricResponse.Data.DataPoints
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values](betabuildusagesv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
+- [object BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values](./datapoints-data.dictionary/values-data.dictionary.md)
   The install and crash count values within a single data point of the beta build usage metric.
 
 ## Properties

@@ -1,7 +1,8 @@
 # init(options:locale:order:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `String.Comparator` with the given `CompareOptions` and `Locale`.
 

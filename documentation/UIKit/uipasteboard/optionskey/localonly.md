@@ -1,7 +1,8 @@
 # localOnly
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that specifies that the pasteboard items should not be available to other devices through the Handoff feature.
 
@@ -17,13 +18,18 @@ A Boolean value that specifies that the pasteboard items should not be available
 static let localOnly: UIPasteboard.OptionsKey
 ```
 
+```c
+extern UIPasteboardOption const UIPasteboardOptionLocalOnly;
+```
+
 #### Description
 
-The value is expressed as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) type.
+The value is expressed as an [`NSNumber`](../../../Foundation/nsnumber.md) type.
 
 ## See Also
 
-- [static let expirationDate: UIPasteboard.OptionsKey](uipasteboard/optionskey/expirationdate.md)
+### Constants
+- [static let expirationDate: UIPasteboard.OptionsKey](./expirationdate.md)
   The time and date that you want the system to remove the pasteboard items from the pasteboard.
 
 

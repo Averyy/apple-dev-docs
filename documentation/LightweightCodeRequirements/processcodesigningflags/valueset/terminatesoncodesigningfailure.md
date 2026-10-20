@@ -1,7 +1,8 @@
 # terminatesOnCodeSigningFailure
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Code signing failures on page in should cause the process to be terminated.
 

@@ -1,7 +1,8 @@
 # rtfd
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents Rich Text Format Directory documents.
 
@@ -26,15 +27,16 @@ RTFD is RTF with content embedded in its on-disk format.
 
 The identifier for this type is `com.apple.rtfd`.
 
-This type conforms to [`UTTypePackage`](uttypepackage.md) and [`UTTypeCompositeContent`](uttypecompositecontent.md).
+This type conforms to [`UTTypePackage`](../uttypepackage.md) and [`UTTypeCompositeContent`](../uttypecompositecontent.md).
 
 ## See Also
 
-- [static var pdf: UTType](uttype-swift.struct/pdf.md)
+### Application files
+- [static var pdf: UTType](./pdf.md)
   A type that represents Adobe Portable Document Format (PDF) documents.
-- [static var flatRTFD: UTType](uttype-swift.struct/flatrtfd.md)
+- [static var flatRTFD: UTType](./flatrtfd.md)
   A type that represents flattened Rich Text Format Directory documents.
-- [static var epub: UTType](uttype-swift.struct/epub.md)
+- [static var epub: UTType](./epub.md)
   A type that represents data in the electronic publication (EPUB) format.
 
 

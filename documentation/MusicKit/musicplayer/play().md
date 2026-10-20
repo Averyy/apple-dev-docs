@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates playback from the current queue.
 

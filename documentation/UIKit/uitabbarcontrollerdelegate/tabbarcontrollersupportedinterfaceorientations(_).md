@@ -1,7 +1,8 @@
 # tabBarControllerSupportedInterfaceOrientations(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to allow the delegate to provide the complete set of supported interface orientations for the tab bar controller.
 
@@ -16,9 +17,13 @@ Called to allow the delegate to provide the complete set of supported interface 
 optional func tabBarControllerSupportedInterfaceOrientations(_ tabBarController: UITabBarController) -> UIInterfaceOrientationMask
 ```
 
+```objc
+- (UIInterfaceOrientationMask) tabBarControllerSupportedInterfaceOrientations:(UITabBarController *) tabBarController;
+```
+
 #### Return Value
 
-One of the [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md) constants that represents the set of interface orientations supported by the tab bar controller.
+One of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that represents the set of interface orientations supported by the tab bar controller.
 
 ## Parameters
 
@@ -26,9 +31,11 @@ One of the [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md) constan
 
 ## See Also
 
-- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](uiviewcontroller/supportedinterfaceorientations.md)
+### Related Documentation
+- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](../uiviewcontroller/supportedinterfaceorientations.md)
   The interface orientations that the view controller supports.
-- [func tabBarControllerPreferredInterfaceOrientationForPresentation(UITabBarController) -> UIInterfaceOrientation](uitabbarcontrollerdelegate/tabbarcontrollerpreferredinterfaceorientationforpresentation(_:).md)
+### Overriding view rotation settings
+- [func tabBarControllerPreferredInterfaceOrientationForPresentation(UITabBarController) -> UIInterfaceOrientation](./tabbarcontrollerpreferredinterfaceorientationforpresentation%28_%29.md)
   Called to allow the delegate to provide the preferred orientation for presentation of the tab bar controller.
 
 

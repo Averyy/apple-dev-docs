@@ -1,7 +1,8 @@
 # Axis
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The horizontal or vertical dimension in a 2D coordinate system.
 
@@ -24,43 +25,44 @@ enum Axis
 ## Topics
 
 ### Getting axes
-- [Axis.horizontal](axis/horizontal.md)
+- [Axis.horizontal](./axis/horizontal.md)
   The horizontal dimension.
-- [Axis.vertical](axis/vertical.md)
+- [Axis.vertical](./axis/vertical.md)
   The vertical dimension.
 ### Getting all axes
-- [struct Set](axis/set.md)
+- [struct Set](./axis/set.md)
   An efficient set of axes.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Angle](angle.md)
+### Accessing geometric constructs
+- [struct Angle](./angle.md)
   A geometric angle whose value you access in either radians or degrees.
-- [struct UnitPoint](unitpoint.md)
+- [struct UnitPoint](./unitpoint.md)
   A normalized 2D point in a view’s coordinate space.
-- [struct UnitPoint3D](unitpoint3d.md)
+- [struct UnitPoint3D](./unitpoint3d.md)
   A normalized 3D point in a view’s coordinate space.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   An opaque value derived from an anchor source and a particular view.
-- [protocol DepthAlignmentID](depthalignmentid.md)
+- [protocol DepthAlignmentID](./depthalignmentid.md)
   A type that defines a custom depth alignment guide.
-- [struct Alignment3D](alignment3d.md)
+- [struct Alignment3D](./alignment3d.md)
   An alignment in all three axes.
-- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+- [struct GeometryProxyCoordinateSpace3D](./geometryproxycoordinatespace3d.md)
   A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 

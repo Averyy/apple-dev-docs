@@ -1,7 +1,8 @@
 # MTL4CompilerTaskStatus.finished
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The compiler task is finished.
 
@@ -17,6 +18,10 @@ The compiler task is finished.
 
 ```swift
 case finished
+```
+
+```c
+MTL4CompilerTaskStatusFinished
 ```
 
 

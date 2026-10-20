@@ -1,7 +1,8 @@
 # IntentValueConvertibleWrapper
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types that wrap another intent value that supports conversion.
 
@@ -51,28 +52,29 @@ struct LandmarkEntity: IntentValueConvertibleWrapper {
 ## Topics
 
 ### Associated Types
-- [associatedtype BaseValue : IntentValueConvertible](intentvalueconvertiblewrapper/basevalue-swift.associatedtype.md)
+- [associatedtype BaseValue : IntentValueConvertible](./intentvalueconvertiblewrapper/basevalue-swift.associatedtype.md)
   The underlying type that provides protocol conformance.
 ### Initializers
-- [init(baseValue: Self.BaseValue) throws](intentvalueconvertiblewrapper/init(basevalue:).md)
+- [init(baseValue: Self.BaseValue) throws](./intentvalueconvertiblewrapper/init%28basevalue%29.md)
   Creates a new instance that wraps the specified base value.
 ### Instance Properties
-- [var baseValue: Self.BaseValue](intentvalueconvertiblewrapper/basevalue-swift.property.md)
+- [var baseValue: Self.BaseValue](./intentvalueconvertiblewrapper/basevalue-swift.property.md)
   The underlying value that this type wraps.
 
 ## Relationships
 
 ### Inherits From
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IntentValueConvertible](intentvalueconvertible.md)
+### Type conversions
+- [protocol IntentValueConvertible](./intentvalueconvertible.md)
   A protocol that allows the system to use types to as app intent parameters or properties.
-- [protocol IntentValueExpressing](intentvalueexpressing.md)
+- [protocol IntentValueExpressing](./intentvalueexpressing.md)
   A protocol for types that can create intent value expressions.
 
 

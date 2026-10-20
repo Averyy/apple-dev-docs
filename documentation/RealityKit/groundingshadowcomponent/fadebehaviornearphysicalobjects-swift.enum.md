@@ -1,7 +1,8 @@
 # GroundingShadowComponent.FadeBehaviorNearPhysicalObjects
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the behavior of an entity’s grounding shadow when it’s near physical objects.
 
@@ -20,18 +21,18 @@ enum FadeBehaviorNearPhysicalObjects
 ## Topics
 
 ### Enumeration Cases
-- [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/constant.md)
+- [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant](./fadebehaviornearphysicalobjects-swift.enum/constant.md)
   A grounding shadow behavior that doesn’t fade when an entity is near physical objects.
-- [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.default](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/default.md)
+- [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.default](./fadebehaviornearphysicalobjects-swift.enum/default.md)
   The default grounding shadow behavior for the device’s platform.
-- [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.fade](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/fade.md)
+- [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.fade](./fadebehaviornearphysicalobjects-swift.enum/fade.md)
   A grounding shadow behavior that fades when an entity is near physical objects.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

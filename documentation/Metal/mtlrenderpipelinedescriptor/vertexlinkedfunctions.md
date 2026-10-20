@@ -1,7 +1,8 @@
 # vertexLinkedFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Functions that you can specify as function arguments for the vertex shader when encoding commands that use the pipeline.
 
@@ -20,9 +21,14 @@ Functions that you can specify as function arguments for the vertex shader when 
 var vertexLinkedFunctions: MTLLinkedFunctions! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) MTLLinkedFunctions * vertexLinkedFunctions;
+```
+
 ## See Also
 
-- [var fragmentLinkedFunctions: MTLLinkedFunctions!](mtlrenderpipelinedescriptor/fragmentlinkedfunctions.md)
+### Specifying callable functions for the pipeline
+- [var fragmentLinkedFunctions: MTLLinkedFunctions!](./fragmentlinkedfunctions.md)
   Functions that you can specify as function arguments for the fragment shader when encoding commands that use the pipeline.
 
 

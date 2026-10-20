@@ -1,7 +1,8 @@
 # Curve25519.KeyAgreement.PublicKey.HPKEEphemeralPrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the ephemeral private key associated with this public key.
 

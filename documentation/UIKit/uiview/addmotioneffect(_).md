@@ -1,7 +1,8 @@
 # addMotionEffect(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins applying a motion effect to the view.
 
@@ -9,7 +10,7 @@ Begins applying a motion effect to the view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Begins applying a motion effect to the view.
 func addMotionEffect(_ effect: UIMotionEffect)
 ```
 
+```objc
+- (void) addMotionEffect:(UIMotionEffect *) effect;
+```
+
 #### Discussion
 
-The system animates the transition to the motion effect’s values using the present [`UIView`](uiview.md) animation context. The motion effect’s keyPath/value pairs are applied to the view’s presentation layer.
+The system animates the transition to the motion effect’s values using the present [`UIView`](../uiview.md) animation context. The motion effect’s keyPath/value pairs are applied to the view’s presentation layer.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ The system animates the transition to the motion effect’s values using the pre
 
 ## See Also
 
-- [var motionEffects: [UIMotionEffect]](uiview/motioneffects.md)
+### Using motion effects
+- [var motionEffects: [UIMotionEffect]](./motioneffects.md)
   The array of motion effects for the view.
-- [func removeMotionEffect(UIMotionEffect)](uiview/removemotioneffect(_:).md)
+- [func removeMotionEffect(UIMotionEffect)](./removemotioneffect%28_%29.md)
   Stops applying a motion effect to the view.
 
 

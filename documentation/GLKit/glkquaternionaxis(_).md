@@ -1,7 +1,8 @@
 # GLKQuaternionAxis(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the axis of rotation of a quaternion.
 
@@ -17,6 +18,10 @@ Returns the axis of rotation of a quaternion.
 func GLKQuaternionAxis(_ quaternion: GLKQuaternion) -> GLKVector3
 ```
 
+```c
+GLKVector3 GLKQuaternionAxis(GLKQuaternion quaternion);
+```
+
 #### Return Value
 
 The axis of rotation.
@@ -27,9 +32,10 @@ The axis of rotation.
 
 ## See Also
 
-- [func GLKQuaternionLength(GLKQuaternion) -> Float](glkquaternionlength(_:).md)
+### Retrieving Information About a Quaternion
+- [func GLKQuaternionLength(GLKQuaternion) -> Float](./glkquaternionlength%28_%29.md)
   Returns the length of a quaternion.
-- [func GLKQuaternionAngle(GLKQuaternion) -> Float](glkquaternionangle(_:).md)
+- [func GLKQuaternionAngle(GLKQuaternion) -> Float](./glkquaternionangle%28_%29.md)
   Returns the rotation angle of a quaternion.
 
 

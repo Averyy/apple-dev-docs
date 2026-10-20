@@ -1,7 +1,8 @@
 # matmul(_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Multiplies two tensors together using matrix multiplication.
 
@@ -67,21 +68,22 @@ m6.shape // is [3, 1, 1, 2]
 
 ## See Also
 
-- [func exp() -> MLTensor](mltensor/exp.md)
+### Computing the exponent, pow and square root
+- [func exp() -> MLTensor](./exp%28%29.md)
   Computes the natural exponent of the tensor’s elements.
-- [func exp2() -> MLTensor](mltensor/exp2.md)
+- [func exp2() -> MLTensor](./exp2%28%29.md)
   Computes the exponent with base two of the tensor’s elements.
-- [func pow(_:)](mltensor/pow(_:).md)
+- [func pow(_:)](./pow%28_%29.md)
   Computes element-wise power of each element with `exponent`.
-- [func rsqrt() -> MLTensor](mltensor/rsqrt.md)
+- [func rsqrt() -> MLTensor](./rsqrt%28%29.md)
   Computes reverse square root of the tensor’s elements.
-- [func squared() -> MLTensor](mltensor/squared.md)
+- [func squared() -> MLTensor](./squared%28%29.md)
   Computes square of the tensor’s elements.
-- [func squareRoot() -> MLTensor](mltensor/squareroot.md)
+- [func squareRoot() -> MLTensor](./squareroot%28%29.md)
   Computes square root of the tensor’s elements.
-- [func log() -> MLTensor](mltensor/log.md)
+- [func log() -> MLTensor](./log%28%29.md)
   Computes the natural logarithm of the tensor’s elements.
-- [func round() -> MLTensor](mltensor/round.md)
+- [func round() -> MLTensor](./round%28%29.md)
   Rounds the tensor’s elements.
 
 

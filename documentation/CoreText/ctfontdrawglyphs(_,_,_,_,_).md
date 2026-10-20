@@ -1,7 +1,8 @@
 # CTFontDrawGlyphs(_:_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Renders the given glyphs of a font at the specified positions in the supplied graphics context.
 
@@ -20,6 +21,10 @@ Renders the given glyphs of a font at the specified positions in the supplied gr
 func CTFontDrawGlyphs(_ font: CTFont, _ glyphs: UnsafePointer<CGGlyph>, _ positions: UnsafePointer<CGPoint>, _ count: Int, _ context: CGContext)
 ```
 
+```c
+extern void CTFontDrawGlyphs(CTFontRef font, const CGGlyph glyphs[], const CGPoint positions[], size_t count, CGContextRef context);
+```
+
 #### Discussion
 
 This function modifies graphics state including font, text size, and text matrix if these attributes are specified in `font`. These attributes are not restored.
@@ -27,16 +32,17 @@ This function modifies graphics state including font, text size, and text matrix
 ## Parameters
 
 - `font`: The font with glyphs to render. If the font has a size or matrix attribute, `context` is set with these values.
-- `glyphs`: The glyphs to be rendered. The glyphs should be the result of proper Unicode text layout operations (such as with `CTLine`). Functions such as [`CTFontGetGlyphsForCharacters(_:_:_:_:)`](ctfontgetglyphsforcharacters(_:_:_:_:).md) do not perform any Unicode text layout.
+- `glyphs`: The glyphs to be rendered. The glyphs should be the result of proper Unicode text layout operations (such as with `CTLine`). Functions such as [`CTFontGetGlyphsForCharacters(_:_:_:_:)`](./ctfontgetglyphsforcharacters%28_,_,_,_%29.md) do not perform any Unicode text layout.
 - `positions`: The positions (origins) for each glyph in `glyphs`. The positions are in user space. The number of positions passed in must match the number of glyphs (in `glyphs`).
 - `count`: The number of glyphs to be rendered from the `glyphs` array.
 - `context`: The graphics context used to render the glyphs.
 
 ## See Also
 
-- [func CTFontGetGlyphsForCharacters(CTFont, UnsafePointer<UniChar>, UnsafeMutablePointer<CGGlyph>, CFIndex) -> Bool](ctfontgetglyphsforcharacters(_:_:_:_:).md)
+### Working with Glyphs
+- [func CTFontGetGlyphsForCharacters(CTFont, UnsafePointer<UniChar>, UnsafeMutablePointer<CGGlyph>, CFIndex) -> Bool](./ctfontgetglyphsforcharacters%28_,_,_,_%29.md)
   Performs basic character-to-glyph mapping.
-- [func CTFontGetLigatureCaretPositions(CTFont, CGGlyph, UnsafeMutablePointer<CGFloat>?, CFIndex) -> CFIndex](ctfontgetligaturecaretpositions(_:_:_:_:).md)
+- [func CTFontGetLigatureCaretPositions(CTFont, CGGlyph, UnsafeMutablePointer<CGFloat>?, CFIndex) -> CFIndex](./ctfontgetligaturecaretpositions%28_,_,_,_%29.md)
   Returns caret positions within a glyph.
 
 

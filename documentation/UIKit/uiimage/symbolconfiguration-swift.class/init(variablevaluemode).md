@@ -1,7 +1,8 @@
 # init(variableValueMode:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a symbol configuration with a preferred variable value mode.
 
@@ -17,6 +18,10 @@ Initializes a symbol configuration with a preferred variable value mode.
 
 ```swift
 convenience init(variableValueMode: UIImage.SymbolVariableValueMode)
+```
+
+```objc
++ (instancetype) configurationWithVariableValueMode:(UIImageSymbolVariableValueMode) variableValueMode;
 ```
 
 

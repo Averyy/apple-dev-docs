@@ -1,7 +1,8 @@
 # cmMCEightSpace
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An eight-channel multichannel (HiFi) data color space.
 

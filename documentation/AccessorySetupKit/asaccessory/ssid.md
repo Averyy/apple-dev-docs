@@ -1,7 +1,8 @@
 # ssid
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory’s Wi-Fi SSID, if any.
 
@@ -15,9 +16,13 @@ The accessory’s Wi-Fi SSID, if any.
 var ssid: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * SSID;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 #### Discussion
 
@@ -25,9 +30,10 @@ Use this identifier to establish a connection to the accessory.
 
 ## See Also
 
-- [var bluetoothIdentifier: UUID?](asaccessory/bluetoothidentifier.md)
+### Accessing identifiers
+- [var bluetoothIdentifier: UUID?](./bluetoothidentifier.md)
   The accessory’s unique Bluetooth identifier, if any.
-- [var bluetoothTransportBridgingIdentifier: Data?](asaccessory/bluetoothtransportbridgingidentifier.md)
+- [var bluetoothTransportBridgingIdentifier: Data?](./bluetoothtransportbridgingidentifier.md)
   The accessory’s Bluetooth identifier, if any, for use when bridging classic transport profiles.
 
 

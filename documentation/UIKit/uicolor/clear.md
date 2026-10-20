@@ -1,7 +1,8 @@
 # clear
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A color object with grayscale and alpha values that are both `0.0`.
 
@@ -9,7 +10,7 @@ A color object with grayscale and alpha values that are both `0.0`.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ A color object with grayscale and alpha values that are both `0.0`.
 
 ```swift
 class var clear: UIColor { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIColor * clearColor;
 ```
 
 

@@ -1,7 +1,8 @@
 # canMakePayments(usingNetworks:capabilities:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether the user can make payments using a card from the specified network with the specified capabilities.
 
@@ -19,9 +20,13 @@ Returns whether the user can make payments using a card from the specified netwo
 class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork], capabilities capabilties: PKMerchantCapability) -> Bool
 ```
 
+```objc
++ (BOOL) canMakePaymentsUsingNetworks:(NSArray<NSString *> *) supportedNetworks capabilities:(PKMerchantCapability) capabilties;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true), if the device supports Apple Pay and the user has added a compatible card; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md), if the device supports Apple Pay and the user has added a compatible card; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -32,19 +37,20 @@ Use this method to see whether the user can make payments using a card from one 
 ## Parameters
 
 - `supportedNetworks`: An array of payment networks, as listed in Payment Networks.
-- `capabilties`: A bitmask of capability values. For a list of possible values, see [`PKMerchantCapability`](pkmerchantcapability.md).
+- `capabilties`: A bitmask of capability values. For a list of possible values, see [`PKMerchantCapability`](../pkmerchantcapability.md).
 
 ## See Also
 
-- [class func canMakePayments() -> Bool](pkpaymentauthorizationcontroller/canmakepayments.md)
+### Determining whether the user can make payments or disbursements
+- [class func canMakePayments() -> Bool](./canmakepayments%28%29.md)
   Returns whether the user can make payments.
-- [class func canMakePayments(usingNetworks: [PKPaymentNetwork]) -> Bool](pkpaymentauthorizationcontroller/canmakepayments(usingnetworks:).md)
+- [class func canMakePayments(usingNetworks: [PKPaymentNetwork]) -> Bool](./canmakepayments%28usingnetworks%29.md)
   Returns whether the user can make payments through the specified network.
-- [class func supportsDisbursements() -> Bool](pkpaymentauthorizationcontroller/supportsdisbursements.md)
+- [class func supportsDisbursements() -> Bool](./supportsdisbursements%28%29.md)
   Returns a Boolean value that indicates whether this device can process disbursement requests.
-- [class func supportsDisbursements(using: [PKPaymentNetwork]) -> Bool](pkpaymentauthorizationcontroller/supportsdisbursements(using:).md)
+- [class func supportsDisbursements(using: [PKPaymentNetwork]) -> Bool](./supportsdisbursements%28using%29.md)
   Returns a Boolean value that indicates whether this device can process disbursement requests using the specified payment network brands.
-- [class func supportsDisbursements(using: [PKPaymentNetwork], capabilities: PKMerchantCapability) -> Bool](pkpaymentauthorizationcontroller/supportsdisbursements(using:capabilities:).md)
+- [class func supportsDisbursements(using: [PKPaymentNetwork], capabilities: PKMerchantCapability) -> Bool](./supportsdisbursements%28using,capabilities%29.md)
   Returns a Boolean value indicating whether this device can process disbursement requests using the specified payment network brands and capabilities.
 
 

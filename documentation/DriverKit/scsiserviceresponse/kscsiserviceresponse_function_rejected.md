@@ -1,17 +1,18 @@
 # kSCSIServiceResponse_FUNCTION_REJECTED
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceResponse_FUNCTION_REJECTED
 ```
 
@@ -21,11 +22,12 @@ The task management function was rejected.
 
 ## See Also
 
-- [kSCSIServiceResponse_Request_In_Process](scsiserviceresponse/kscsiserviceresponse_request_in_process.md)
-- [kSCSIServiceResponse_SERVICE_DELIVERY_OR_TARGET_FAILURE](scsiserviceresponse/kscsiserviceresponse_service_delivery_or_target_failure.md)
-- [kSCSIServiceResponse_TASK_COMPLETE](scsiserviceresponse/kscsiserviceresponse_task_complete.md)
-- [kSCSIServiceResponse_LINK_COMMAND_COMPLETE](scsiserviceresponse/kscsiserviceresponse_link_command_complete.md)
-- [kSCSIServiceResponse_FUNCTION_COMPLETE](scsiserviceresponse/kscsiserviceresponse_function_complete.md)
+### Constants
+- [kSCSIServiceResponse_Request_In_Process](./kscsiserviceresponse_request_in_process.md)
+- [kSCSIServiceResponse_SERVICE_DELIVERY_OR_TARGET_FAILURE](./kscsiserviceresponse_service_delivery_or_target_failure.md)
+- [kSCSIServiceResponse_TASK_COMPLETE](./kscsiserviceresponse_task_complete.md)
+- [kSCSIServiceResponse_LINK_COMMAND_COMPLETE](./kscsiserviceresponse_link_command_complete.md)
+- [kSCSIServiceResponse_FUNCTION_COMPLETE](./kscsiserviceresponse_function_complete.md)
 
 
 ---

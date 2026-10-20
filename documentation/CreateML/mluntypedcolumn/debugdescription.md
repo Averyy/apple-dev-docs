@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the column for debugging.
 
@@ -21,11 +22,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mluntypedcolumn/description.md)
+### Getting a description of an untyped column
+- [var description: String](./description.md)
   A text representation of the column.
-- [var playgroundDescription: Any](mluntypedcolumn/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the column shown in a playground.
-- [var customMirror: Mirror](mluntypedcolumn/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A view of the column for Xcode Playgrounds and lldb.
 
 

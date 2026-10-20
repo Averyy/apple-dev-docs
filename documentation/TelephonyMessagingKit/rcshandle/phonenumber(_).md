@@ -1,7 +1,8 @@
 # phoneNumber(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes a URI handle instance with the given phone number.
 

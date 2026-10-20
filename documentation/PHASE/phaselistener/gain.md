@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Modifies the volume of all audio playback for the listener’s mixers.
 
@@ -17,6 +18,10 @@ Modifies the volume of all audio playback for the listener’s mixers.
 
 ```swift
 var gain: Double { get set }
+```
+
+```objc
+@property (nonatomic, assign) double gain;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # encode(commandBuffer:sourceTexture:destinationTexture:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a kernel into a command buffer, out of place.
 
@@ -19,6 +20,10 @@ Encodes a kernel into a command buffer, out of place.
 func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)
 ```
 
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) sourceTexture destinationTexture:(id<MTLTexture>) destinationTexture;
+```
+
 ## Parameters
 
 - `commandBuffer`: A valid command buffer to receive the encoded kernel.
@@ -27,12 +32,13 @@ func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, 
 
 ## See Also
 
-- [func encode(commandBuffer: any MTLCommandBuffer, inPlaceTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md)
+### Methods
+- [func encode(commandBuffer: any MTLCommandBuffer, inPlaceTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](./encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md)
   This method attempts to apply a kernel in place on a texture.
-- [typealias MPSCopyAllocator](mpscopyallocator.md)
+- [typealias MPSCopyAllocator](../mpscopyallocator.md)
   A block to make a copy of a source texture for filters that can only execute out of place.
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationImage: MPSImage)](mpsunaryimagekernel/encode(commandbuffer:sourceimage:destinationimage:).md)
-- [func sourceRegion(destinationSize: MTLSize) -> MPSRegion](mpsunaryimagekernel/sourceregion(destinationsize:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationImage: MPSImage)](./encode%28commandbuffer,sourceimage,destinationimage%29.md)
+- [func sourceRegion(destinationSize: MTLSize) -> MPSRegion](./sourceregion%28destinationsize%29.md)
   Determines the region of the source texture that will be read for an encode operation.
 
 

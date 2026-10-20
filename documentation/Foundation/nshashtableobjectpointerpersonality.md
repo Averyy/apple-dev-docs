@@ -1,9 +1,10 @@
 # NSHashTableObjectPointerPersonality
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Equal to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
+Equal to [`objectPointerPersonality`](./nspointerfunctions/options/objectpointerpersonality.md).
 
 **Availability**:
 - iOS 6.0+
@@ -20,14 +21,19 @@ Equal to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpe
 var NSHashTableObjectPointerPersonality: NSPointerFunctions.Options { get }
 ```
 
+```c
+static const NSPointerFunctionsOptions NSHashTableObjectPointerPersonality;
+```
+
 ## See Also
 
-- [var NSHashTableStrongMemory: NSPointerFunctions.Options](nshashtablestrongmemory.md)
-  Equal to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [var NSHashTableCopyIn: NSPointerFunctions.Options](nshashtablecopyin.md)
-  Equal to [`copyIn`](nspointerfunctions/options/copyin.md).
-- [var NSHashTableWeakMemory: NSPointerFunctions.Options](nshashtableweakmemory.md)
-  Equal to [`weakMemory`](nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
+### Constants
+- [var NSHashTableStrongMemory: NSPointerFunctions.Options](./nshashtablestrongmemory.md)
+  Equal to [`strongMemory`](./nspointerfunctions/options/strongmemory.md).
+- [var NSHashTableCopyIn: NSPointerFunctions.Options](./nshashtablecopyin.md)
+  Equal to [`copyIn`](./nspointerfunctions/options/copyin.md).
+- [var NSHashTableWeakMemory: NSPointerFunctions.Options](./nshashtableweakmemory.md)
+  Equal to [`weakMemory`](./nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](./nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
 
 
 ---

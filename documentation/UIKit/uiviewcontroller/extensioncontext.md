@@ -1,7 +1,8 @@
 # extensionContext
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the extension context of the view controller.
 
@@ -9,13 +10,17 @@ Returns the extension context of the view controller.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var extensionContext: NSExtensionContext? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSExtensionContext * extensionContext;
 ```
 
 #### Discussion

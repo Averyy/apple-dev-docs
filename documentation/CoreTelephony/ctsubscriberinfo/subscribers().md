@@ -1,7 +1,8 @@
 # subscribers()
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the cellular network subscribers.
 
@@ -16,13 +17,18 @@ Returns the cellular network subscribers.
 class func subscribers() -> [CTSubscriber]
 ```
 
+```objc
++ (NSArray<CTSubscriber *> *) subscribers;
+```
+
 #### Return Value
 
-An array of [`CTSubscriber`](ctsubscriber.md) instances.
+An array of [`CTSubscriber`](../ctsubscriber.md) instances.
 
 ## See Also
 
-- [class func subscriber() -> CTSubscriber](ctsubscriberinfo/subscriber.md)
+### Getting Subscriber Information
+- [class func subscriber() -> CTSubscriber](./subscriber%28%29.md)
   Returns the cellular network subscribers.
 
 

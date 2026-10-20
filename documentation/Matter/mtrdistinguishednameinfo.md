@@ -1,7 +1,8 @@
 # MTRDistinguishedNameInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,29 +19,33 @@
 class MTRDistinguishedNameInfo
 ```
 
+```objc
+@interface MTRDistinguishedNameInfo : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var caseAuthenticatedTags: Set<NSNumber>](mtrdistinguishednameinfo/caseauthenticatedtags.md)
-- [var fabricID: NSNumber?](mtrdistinguishednameinfo/fabricid.md)
-- [var intermediateCACertificateID: NSNumber?](mtrdistinguishednameinfo/intermediatecacertificateid.md)
-- [var nodeID: NSNumber?](mtrdistinguishednameinfo/nodeid.md)
-- [var rootCACertificateID: NSNumber?](mtrdistinguishednameinfo/rootcacertificateid.md)
+- [var caseAuthenticatedTags: Set<NSNumber>](./mtrdistinguishednameinfo/caseauthenticatedtags.md)
+- [var fabricID: NSNumber?](./mtrdistinguishednameinfo/fabricid.md)
+- [var intermediateCACertificateID: NSNumber?](./mtrdistinguishednameinfo/intermediatecacertificateid.md)
+- [var nodeID: NSNumber?](./mtrdistinguishednameinfo/nodeid.md)
+- [var rootCACertificateID: NSNumber?](./mtrdistinguishednameinfo/rootcacertificateid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

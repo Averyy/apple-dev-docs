@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The names of the available joint groupings in the observation.
@@ -23,7 +24,8 @@ var availableJointsGroupNames: [Self.PoseJointsGroupName] { get }
 
 ## See Also
 
-- [associatedtype PoseJointsGroupName : CaseIterable, RawRepresentable](poseproviding/posejointsgroupname.md)
+### Getting the joint group names
+- [associatedtype PoseJointsGroupName : CaseIterable, RawRepresentable](./posejointsgroupname.md)
   A type that represents a joint group name.
 
 

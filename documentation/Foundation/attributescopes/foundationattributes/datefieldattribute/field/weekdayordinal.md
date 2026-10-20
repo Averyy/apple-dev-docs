@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.weekdayOrdinal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ordinal position of the weekday unit within the month unit. For example, `2` in “2nd Wednesday in July”
 

@@ -1,14 +1,15 @@
 # errorDescription
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message describing what error occurred.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ var errorDescription: String? { get }
 
 ## See Also
 
-- [var failureReason: String?](energykiterror/failurereason.md)
+### Reading error messages
+- [var failureReason: String?](./failurereason.md)
   A localized message providing text if the person requests help.
-- [var helpAnchor: String?](energykiterror/helpanchor.md)
+- [var helpAnchor: String?](./helpanchor.md)
   A localized message providing text if the user requests help
-- [var recoverySuggestion: String?](energykiterror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A localized message describing how to recover from the failure.
 
 

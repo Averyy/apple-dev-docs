@@ -1,7 +1,8 @@
 # persistentIdentifier
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistent identifier for this entity type.
 

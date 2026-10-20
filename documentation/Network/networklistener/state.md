@@ -1,7 +1,8 @@
 # NetworkListener.State
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,23 +22,23 @@ enum State
 ## Topics
 
 ### Enumeration Cases
-- [NetworkListener.State.cancelled](networklistener/state/cancelled.md)
+- [NetworkListener.State.cancelled](./state/cancelled.md)
   Cancelled listeners have been invalidated by the client and will send no more events
-- [NetworkListener.State.failed(_:)](networklistener/state/failed(_:).md)
+- [NetworkListener.State.failed(_:)](./state/failed%28_%29.md)
   Failed listeners are no longer able to receive incoming connections
-- [NetworkListener.State.ready](networklistener/state/ready.md)
+- [NetworkListener.State.ready](./state/ready.md)
   Ready listeners are able to receive incoming connections Bonjour service may not yet be registered
-- [NetworkListener.State.setup](networklistener/state/setup.md)
+- [NetworkListener.State.setup](./state/setup.md)
   Prior to start, the listener will be in the setup state
-- [NetworkListener.State.waiting(_:)](networklistener/state/waiting(_:).md)
+- [NetworkListener.State.waiting(_:)](./state/waiting%28_%29.md)
   Waiting listeners do not have a viable network
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

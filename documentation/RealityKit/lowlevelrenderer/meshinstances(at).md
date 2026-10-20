@@ -1,7 +1,8 @@
 # meshInstances(at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
 
@@ -19,7 +20,7 @@ final func meshInstances(at index: Int) -> LowLevelMeshInstanceArray?
 
 #### Return Value
 
-The [`LowLevelMeshInstanceArray`](lowlevelmeshinstancearray.md) at `index`, or `nil` if the slot is unoccupied.
+The [`LowLevelMeshInstanceArray`](../lowlevelmeshinstancearray.md) at `index`, or `nil` if the slot is unoccupied.
 
 ## Parameters
 
@@ -27,9 +28,10 @@ The [`LowLevelMeshInstanceArray`](lowlevelmeshinstancearray.md) at `index`, or `
 
 ## See Also
 
-- [func setMeshInstances(LowLevelMeshInstanceArray?, at: Int) throws(LowLevelRendererError)](lowlevelrenderer/setmeshinstances(_:at:).md)
+### Managing mesh instances
+- [func setMeshInstances(LowLevelMeshInstanceArray?, at: Int) throws(LowLevelRendererError)](./setmeshinstances%28_,at%29.md)
   Assigns a mesh instance array to the given slot index.
-- [var meshInstancesArrayCount: Int](lowlevelrenderer/meshinstancesarraycount.md)
+- [var meshInstancesArrayCount: Int](./meshinstancesarraycount.md)
   The number of mesh instance array slots.
 
 

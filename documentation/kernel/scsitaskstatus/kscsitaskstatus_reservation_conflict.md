@@ -1,14 +1,15 @@
 # kSCSITaskStatus_RESERVATION_CONFLICT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskStatus_RESERVATION_CONFLICT = 0x18
 ```
 

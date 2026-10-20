@@ -1,7 +1,8 @@
 # errSecDeviceVerifyFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A device verification failure has occurred.
 
@@ -18,6 +19,10 @@ A device verification failure has occurred.
 
 ```swift
 var errSecDeviceVerifyFailed: OSStatus { get }
+```
+
+```c
+errSecDeviceVerifyFailed
 ```
 
 

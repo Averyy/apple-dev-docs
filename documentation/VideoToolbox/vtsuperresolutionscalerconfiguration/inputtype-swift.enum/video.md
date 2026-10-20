@@ -1,7 +1,8 @@
 # VTSuperResolutionScalerConfiguration.InputType.video
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case video
+```
+
+```c
+VTSuperResolutionScalerConfigurationInputTypeVideo
 ```
 
 

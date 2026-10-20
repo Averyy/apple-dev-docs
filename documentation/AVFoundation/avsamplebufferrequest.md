@@ -1,7 +1,8 @@
 # AVSampleBufferRequest
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a sample buffer creation request.
 
@@ -20,52 +21,57 @@ An object that describes a sample buffer creation request.
 class AVSampleBufferRequest
 ```
 
+```objc
+@interface AVSampleBufferRequest : NSObject
+```
+
 ## Topics
 
 ### Creating a request
-- [init(start: AVSampleCursor)](avsamplebufferrequest/init(start:).md)
+- [init(start: AVSampleCursor)](./avsamplebufferrequest/init%28start%29.md)
   Creates a newly allocated sample buffer request with the specified sample cursor.
 ### Configuring sample buffer request parameters
-- [var direction: AVSampleBufferRequest.Direction](avsamplebufferrequest/direction-swift.property.md)
+- [var direction: AVSampleBufferRequest.Direction](./avsamplebufferrequest/direction-swift.property.md)
   The buffer sample direction.
-- [AVSampleBufferRequest.Direction](avsamplebufferrequest/direction-swift.enum.md)
+- [AVSampleBufferRequest.Direction](./avsamplebufferrequest/direction-swift.enum.md)
   The modes that describe the buffer request direction.
-- [var limitCursor: AVSampleCursor?](avsamplebufferrequest/limitcursor.md)
+- [var limitCursor: AVSampleCursor?](./avsamplebufferrequest/limitcursor.md)
   The limiting position for sample loading.
-- [var maxSampleCount: Int](avsamplebufferrequest/maxsamplecount.md)
+- [var maxSampleCount: Int](./avsamplebufferrequest/maxsamplecount.md)
   The maximum number of samples to load.
-- [var mode: AVSampleBufferRequest.Mode](avsamplebufferrequest/mode-swift.property.md)
+- [var mode: AVSampleBufferRequest.Mode](./avsamplebufferrequest/mode-swift.property.md)
   The sample buffer request mode.
-- [AVSampleBufferRequest.Mode](avsamplebufferrequest/mode-swift.enum.md)
+- [AVSampleBufferRequest.Mode](./avsamplebufferrequest/mode-swift.enum.md)
   The modes in which a sample buffer generator processes a request.
-- [var overrideTime: CMTime](avsamplebufferrequest/overridetime.md)
+- [var overrideTime: CMTime](./avsamplebufferrequest/overridetime.md)
   The deadline for sample data and output PTS for the sample buffer.
-- [var preferredMinSampleCount: Int](avsamplebufferrequest/preferredminsamplecount.md)
+- [var preferredMinSampleCount: Int](./avsamplebufferrequest/preferredminsamplecount.md)
   The preferred minimum number of samples to load.
-- [var startCursor: AVSampleCursor](avsamplebufferrequest/startcursor.md)
+- [var startCursor: AVSampleCursor](./avsamplebufferrequest/startcursor.md)
   The starting cursor position.
 ### Initializers
-- [init(startCursor: AVSampleCursor)](avsamplebufferrequest/init(startcursor:).md)
+- [init(startCursor: AVSampleCursor)](./avsamplebufferrequest/init%28startcursor%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Playing custom audio with your own player](../avfaudio/playing-custom-audio-with-your-own-player.md)
+### Sample buffer generation
+- [Playing custom audio with your own player](../AVFAudio/playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
-- [class AVSampleBufferGenerator](avsamplebuffergenerator.md)
+- [class AVSampleBufferGenerator](./avsamplebuffergenerator.md)
   An object that creates sample buffers.
-- [class AVSampleBufferGeneratorBatch](avsamplebuffergeneratorbatch.md)
+- [class AVSampleBufferGeneratorBatch](./avsamplebuffergeneratorbatch.md)
   An object that generates sample buffers in a batch.
 
 

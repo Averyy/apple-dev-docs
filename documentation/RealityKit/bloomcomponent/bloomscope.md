@@ -1,7 +1,8 @@
 # BloomComponent.BloomScope
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,21 +21,22 @@ struct BloomScope
 ## Topics
 
 ### Accessing bloom scopes
-- [static let hierarchical: BloomComponent.BloomScope](bloomcomponent/bloomscope/hierarchical.md)
+- [static let hierarchical: BloomComponent.BloomScope](./bloomscope/hierarchical.md)
   Bloom is restricted to the bounding box of the attached entity’s mesh hierarchy.
-- [static let unbounded: BloomComponent.BloomScope](bloomcomponent/bloomscope/unbounded.md)
+- [static let unbounded: BloomComponent.BloomScope](./bloomscope/unbounded.md)
   Bloom is computed on the entire screen with no bounding box restriction.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var scope: BloomComponent.BloomScope](bloomcomponent/scope.md)
+### Configuring the bloom scope
+- [var scope: BloomComponent.BloomScope](./scope.md)
   The scope of where bloom will be computed
 
 

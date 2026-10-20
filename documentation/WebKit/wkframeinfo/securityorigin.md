@@ -1,7 +1,8 @@
 # securityOrigin
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s security origin.
 
@@ -18,17 +19,22 @@ The frame’s security origin.
 var securityOrigin: WKSecurityOrigin { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKSecurityOrigin * securityOrigin;
+```
+
 #### Discussion
 
-The [`WKSecurityOrigin`](wksecurityorigin.md) object consists of a host name, a protocol, and a port number.
+The [`WKSecurityOrigin`](../wksecurityorigin.md) object consists of a host name, a protocol, and a port number.
 
 ## See Also
 
-- [var isMainFrame: Bool](wkframeinfo/ismainframe.md)
+### Inspecting frame information
+- [var isMainFrame: Bool](./ismainframe.md)
   A Boolean value indicating whether the frame is the web site’s main frame or a subframe.
-- [var request: URLRequest](wkframeinfo/request.md)
+- [var request: URLRequest](./request.md)
   The frame’s current request.
-- [var webView: WKWebView?](wkframeinfo/webview.md)
+- [var webView: WKWebView?](./webview.md)
   The web view that contains this frame and the containing webpage.
 
 

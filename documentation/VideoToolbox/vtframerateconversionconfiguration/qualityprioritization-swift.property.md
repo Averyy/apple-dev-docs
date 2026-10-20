@@ -1,7 +1,8 @@
 # qualityPrioritization
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies whether to prioritize quality or performance.
 
@@ -17,20 +18,25 @@ A value that specifies whether to prioritize quality or performance.
 var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTFrameRateConversionConfigurationQualityPrioritization qualityPrioritization;
+```
+
 ## See Also
 
-- [var frameWidth: Int](vtframerateconversionconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   The width of a source frame in pixels.
-- [var frameHeight: Int](vtframerateconversionconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   The height of a source frame in pixels.
-- [var usePrecomputedFlow: Bool](vtframerateconversionconfiguration/useprecomputedflow.md)
+- [var usePrecomputedFlow: Bool](./useprecomputedflow.md)
   A Boolean value to indicates whether the optical flow will be provided by the user.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
-- [VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [VTFrameRateConversionConfiguration.QualityPrioritization](./qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 
 

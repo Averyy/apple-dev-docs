@@ -1,7 +1,8 @@
 # id
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the region.
 
@@ -26,11 +27,12 @@ Use the identifier to tell whether a region you saw in an earlier query is still
 
 ## See Also
 
-- [ReservedRegion.ID](reservedregion/id-swift.struct.md)
+### Getting the region’s identity and kind
+- [ReservedRegion.ID](./id-swift.struct.md)
   An identifier for a reserved region.
-- [var kind: ReservedRegion.Kind](reservedregion/kind-swift.property.md)
+- [var kind: ReservedRegion.Kind](./kind-swift.property.md)
   The kind of the region.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
+- [ReservedRegion.Kind](./kind-swift.struct.md)
   A kind of reserved region.
 
 

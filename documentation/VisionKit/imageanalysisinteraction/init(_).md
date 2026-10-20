@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interaction for Live Text actions with the specified delegate.
 
@@ -24,7 +25,8 @@ convenience init(_ delegate: any ImageAnalysisInteractionDelegate)
 
 ## See Also
 
-- [init()](imageanalysisinteraction/init.md)
+### Creating an image interaction
+- [init()](./init%28%29.md)
   Creates an interaction for Live Text actions with items in an image.
 
 

@@ -1,7 +1,8 @@
 # AVMovieWritingOptions
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines options to control the writing of a movie header to a destination URL.
 
@@ -19,36 +20,41 @@ A structure that defines options to control the writing of a movie header to a d
 struct AVMovieWritingOptions
 ```
 
+```c
+enum AVMovieWritingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Writing options
-- [static var addMovieHeaderToDestination: AVMovieWritingOptions](avmoviewritingoptions/addmovieheadertodestination.md)
+- [static var addMovieHeaderToDestination: AVMovieWritingOptions](./avmoviewritingoptions/addmovieheadertodestination.md)
   The new movie header overwrites any existing movie header.
-- [static var truncateDestinationToMovieHeaderOnly: AVMovieWritingOptions](avmoviewritingoptions/truncatedestinationtomovieheaderonly.md)
+- [static var truncateDestinationToMovieHeaderOnly: AVMovieWritingOptions](./avmoviewritingoptions/truncatedestinationtomovieheaderonly.md)
   The movie header overwrites all existing data and creates a pure reference movie file.
 ### Initializers
-- [init(rawValue: UInt)](avmoviewritingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./avmoviewritingoptions/init%28rawvalue%29.md)
   Creates a movie writing options structure.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func `is`(compatibleWithFileType: AVFileType) -> Bool](avmovie/is(compatiblewithfiletype:).md)
+### Creating and writing headers
+- [func `is`(compatibleWithFileType: AVFileType) -> Bool](./avmovie/is%28compatiblewithfiletype%29.md)
   Returns a Boolean value that indicates whether the system can create a movie header of the specified type.
-- [func makeMovieHeader(fileType: AVFileType) throws -> Data](avmovie/makemovieheader(filetype:).md)
+- [func makeMovieHeader(fileType: AVFileType) throws -> Data](./avmovie/makemovieheader%28filetype%29.md)
   Creates a header for a movie for the specified file type.
-- [func writeHeader(to: URL, fileType: AVFileType, options: AVMovieWritingOptions) throws](avmovie/writeheader(to:filetype:options:).md)
+- [func writeHeader(to: URL, fileType: AVFileType, options: AVMovieWritingOptions) throws](./avmovie/writeheader%28to,filetype,options%29.md)
   Writes the movie header to the specified URL.
 
 

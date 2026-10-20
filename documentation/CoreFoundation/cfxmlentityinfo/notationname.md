@@ -1,17 +1,22 @@
 # notationName
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `NULL` if `entityType` is parsed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var notationName: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef notationName;
 ```
 
 

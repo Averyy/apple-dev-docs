@@ -1,7 +1,8 @@
 # becomeActive()
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells a context to become the active context.
 
@@ -18,9 +19,13 @@ Tells a context to become the active context.
 func becomeActive()
 ```
 
+```objc
+- (void) becomeActive;
+```
+
 ## Mentions
 
-- [Informing ClassKit that a task is about to begin](informing-classkit-that-a-task-is-about-to-begin.md)
+- [Informing ClassKit that a task is about to begin](../informing-classkit-that-a-task-is-about-to-begin.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ Only one context can be active at a time, so if you tell a context to become act
 
 ## See Also
 
-- [Informing ClassKit that a task is about to begin](informing-classkit-that-a-task-is-about-to-begin.md)
+### Activating and deactivating a context
+- [Informing ClassKit that a task is about to begin](../informing-classkit-that-a-task-is-about-to-begin.md)
   Activate and deactivate contexts according to user interaction.
-- [func resignActive()](clscontext/resignactive.md)
+- [func resignActive()](./resignactive%28%29.md)
   Tells a context to stop being the active context.
-- [var isActive: Bool](clscontext/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean indicating whether the context is active.
 
 

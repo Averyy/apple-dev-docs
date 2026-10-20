@@ -1,7 +1,8 @@
 # init(widthInPixels:heightInPixels:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Virtio graphics device with the specified dimensions.
 
@@ -12,6 +13,10 @@ Creates a Virtio graphics device with the specified dimensions.
 
 ```swift
 init(widthInPixels: Int, heightInPixels: Int)
+```
+
+```objc
+- (instancetype) initWithWidthInPixels:(NSInteger) widthInPixels heightInPixels:(NSInteger) heightInPixels;
 ```
 
 ## Parameters

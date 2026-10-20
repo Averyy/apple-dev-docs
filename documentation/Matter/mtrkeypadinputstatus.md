@@ -1,7 +1,8 @@
 # MTRKeypadInputStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,24 +19,28 @@
 enum MTRKeypadInputStatus
 ```
 
+```c
+enum MTRKeypadInputStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRKeypadInputStatus.invalidKeyInCurrentState](mtrkeypadinputstatus/invalidkeyincurrentstate.md)
-- [MTRKeypadInputStatus.success](mtrkeypadinputstatus/success.md)
-- [MTRKeypadInputStatus.unsupportedKey](mtrkeypadinputstatus/unsupportedkey.md)
+- [MTRKeypadInputStatus.invalidKeyInCurrentState](./mtrkeypadinputstatus/invalidkeyincurrentstate.md)
+- [MTRKeypadInputStatus.success](./mtrkeypadinputstatus/success.md)
+- [MTRKeypadInputStatus.unsupportedKey](./mtrkeypadinputstatus/unsupportedkey.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrkeypadinputstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrkeypadinputstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

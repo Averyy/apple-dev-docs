@@ -1,7 +1,8 @@
 # perform(_:target:argument:order:modes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the sending of a message on the receiver.
 
@@ -18,6 +19,10 @@ Schedules the sending of a message on the receiver.
 
 ```swift
 func perform(_ aSelector: Selector, target: Any, argument arg: Any?, order: Int, modes: [RunLoop.Mode])
+```
+
+```objc
+- (void) performSelector:(SEL) aSelector target:(id) target argument:(id) arg order:(NSUInteger) order modes:(NSArray<NSString *> *) modes;
 ```
 
 #### Discussion
@@ -38,13 +43,14 @@ Use this method if you want multiple messages to be sent after the current event
 
 ## See Also
 
-- [func perform(() -> Void)](runloop/perform(_:).md)
+### Scheduling and Canceling Tasks
+- [func perform(() -> Void)](./perform%28_%29.md)
   Schedules a block that the run loop invokes.
-- [func perform(inModes: [RunLoop.Mode], block: () -> Void)](runloop/perform(inmodes:block:).md)
+- [func perform(inModes: [RunLoop.Mode], block: () -> Void)](./perform%28inmodes,block%29.md)
   Schedules a block that the run loop invokes when it’s running in any of the specified modes.
-- [func cancelPerform(Selector, target: Any, argument: Any?)](runloop/cancelperform(_:target:argument:).md)
+- [func cancelPerform(Selector, target: Any, argument: Any?)](./cancelperform%28_,target,argument%29.md)
   Cancels the sending of a previously scheduled message.
-- [func cancelPerformSelectors(withTarget: Any)](runloop/cancelperformselectors(withtarget:).md)
+- [func cancelPerformSelectors(withTarget: Any)](./cancelperformselectors%28withtarget%29.md)
   Cancels all outstanding ordered performs scheduled with a given target.
 
 

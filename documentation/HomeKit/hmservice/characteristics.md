@@ -1,7 +1,8 @@
 # characteristics
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of characteristics for the service.
 
@@ -19,9 +20,14 @@ An array of characteristics for the service.
 var characteristics: [HMCharacteristic] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMCharacteristic *> * characteristics;
+```
+
 ## See Also
 
-- [class HMCharacteristic](hmcharacteristic.md)
+### Getting service characteristics
+- [class HMCharacteristic](../hmcharacteristic.md)
   A specific characteristic of a service, like the brightness of a dimmable light or its color temperature.
 
 

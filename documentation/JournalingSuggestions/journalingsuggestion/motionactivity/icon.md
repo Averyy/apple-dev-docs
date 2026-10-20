@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to an image on disk that depicts the motion activity.
 
@@ -16,7 +17,8 @@ var icon: URL?
 
 ## See Also
 
-- [var date: DateInterval?](journalingsuggestion/motionactivity/date.md)
+### Accessing motion summary information
+- [var date: DateInterval?](./date.md)
   The range of time in which the motion activity takes place.
 
 

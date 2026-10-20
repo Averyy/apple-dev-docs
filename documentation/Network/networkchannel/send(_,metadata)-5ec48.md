@@ -1,7 +1,8 @@
 # send(_:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send a text frame on a WebSocket connection.
 
@@ -19,6 +20,8 @@ Send a text frame on a WebSocket connection.
 ```swift
 func send(_ content: String, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

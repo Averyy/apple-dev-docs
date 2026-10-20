@@ -1,7 +1,8 @@
 # automaticallyRearrangesObjects
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates if the receiver automatically rearranges its content to correspond to the current sort descriptors and filter predicates
 
@@ -14,15 +15,20 @@ A Boolean that indicates if the receiver automatically rearranges its content to
 var automaticallyRearrangesObjects: Bool { get set }
 ```
 
+```objc
+@property BOOL automaticallyRearrangesObjects;
+```
+
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var automaticRearrangementKeyPaths: [String]?](nsarraycontroller/automaticrearrangementkeypaths.md)
+### Automatic Content Rearranging
+- [var automaticRearrangementKeyPaths: [String]?](./automaticrearrangementkeypaths.md)
   An array of key paths that trigger automatic content sorting or filtering
-- [func didChangeArrangementCriteria()](nsarraycontroller/didchangearrangementcriteria.md)
+- [func didChangeArrangementCriteria()](./didchangearrangementcriteria%28%29.md)
   Invoked when any criteria for arranging objects change.
 
 

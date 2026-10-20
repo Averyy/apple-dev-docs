@@ -1,7 +1,8 @@
 # findAction(forAnswers:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the decision tree, following the branches corresponding to each of the specified answers, and returns the resulting action object.
 
@@ -19,6 +20,10 @@ Searches the decision tree, following the branches corresponding to each of the 
 func findAction(forAnswers answers: [AnyHashable : any NSObjectProtocol]) -> (any NSObjectProtocol)?
 ```
 
+```objc
+- (id<NSObject>) findActionForAnswers:(NSDictionary<id<NSObject>,id<NSObject>> *) answers;
+```
+
 #### Return Value
 
 The action object resulting from the decision-making process.
@@ -27,11 +32,11 @@ The action object resulting from the decision-making process.
 
 Actions can be any type of object relevant to your game; you define action objects when creating the tree. Typically, an action object is a string or simple value type identifying the result of the decision-making process in the context of your game.
 
-In a manually created decision tree, an action is the “attribute” of a leaf node in the tree. That is, if you create a node using a method such as [`createBranch(value:attribute:)`](gkdecisionnode/createbranch(value:attribute:).md), and create no further branches from that node, the `attribute` parameter of that node is treated as an action when evaluating the tree.
+In a manually created decision tree, an action is the “attribute” of a leaf node in the tree. That is, if you create a node using a method such as [`createBranch(value:attribute:)`](../gkdecisionnode/createbranch%28value,attribute%29.md), and create no further branches from that node, the `attribute` parameter of that node is treated as an action when evaluating the tree.
 
-In an automatically learned decision tree, you provide action values with the [`init(examples:actions:attributes:)`](gkdecisiontree/init(examples:actions:attributes:).md) initializer.
+In an automatically learned decision tree, you provide action values with the [`init(examples:actions:attributes:)`](./init%28examples,actions,attributes%29.md) initializer.
 
-> **Note**:  If a tree contains random branches (defined with the [`createBranch(weight:attribute:)`](gkdecisionnode/createbranch(weight:attribute:).md) method), you do not need to provide an answer for the corresponding attribute when finding an action.
+> **Note**:  If a tree contains random branches (defined with the [`createBranch(weight:attribute:)`](../gkdecisionnode/createbranch%28weight,attribute%29.md) method), you do not need to provide an answer for the corresponding attribute when finding an action.
 
 ## Parameters
 
@@ -39,7 +44,8 @@ In an automatically learned decision tree, you provide action values with the [`
 
 ## See Also
 
-- [var randomSource: GKRandomSource](gkdecisiontree/randomsource.md)
+### Evaluating a Tree to Make Decisions
+- [var randomSource: GKRandomSource](./randomsource.md)
   The randomizer to be used when evaluating parts of the tree that branch randomly.
 
 

@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mix group.
 

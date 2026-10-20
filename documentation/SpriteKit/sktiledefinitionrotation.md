@@ -1,7 +1,8 @@
 # SKTileDefinitionRotation
 
 **Framework**: SpriteKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The allowed rotations for a given tile.
 
@@ -20,29 +21,34 @@ The allowed rotations for a given tile.
 enum SKTileDefinitionRotation
 ```
 
+```c
+enum SKTileDefinitionRotation : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SKTileDefinitionRotation.rotation0](sktiledefinitionrotation/rotation0.md)
-- [SKTileDefinitionRotation.rotation180](sktiledefinitionrotation/rotation180.md)
-- [SKTileDefinitionRotation.rotation270](sktiledefinitionrotation/rotation270.md)
-- [SKTileDefinitionRotation.rotation90](sktiledefinitionrotation/rotation90.md)
+- [SKTileDefinitionRotation.rotation0](./sktiledefinitionrotation/rotation0.md)
+- [SKTileDefinitionRotation.rotation180](./sktiledefinitionrotation/rotation180.md)
+- [SKTileDefinitionRotation.rotation270](./sktiledefinitionrotation/rotation270.md)
+- [SKTileDefinitionRotation.rotation90](./sktiledefinitionrotation/rotation90.md)
 ### Initializers
-- [init?(rawValue: UInt)](sktiledefinitionrotation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./sktiledefinitionrotation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var rotation: SKTileDefinitionRotation](sktiledefinition/rotation.md)
+### Rotating a Tile
+- [var rotation: SKTileDefinitionRotation](./sktiledefinition/rotation.md)
   The rotation of the tile definition in 90˚ increments.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIORangePixelEncodingNotSupported](2937388-anonymous/kiorangepixelencodingnotsupported.md)
-- [kIORangePixelEncodingRGB444](2937388-anonymous/kiorangepixelencodingrgb444.md)
-- [kIORangePixelEncodingYCbCr420](2937388-anonymous/kiorangepixelencodingycbcr420.md)
-- [kIORangePixelEncodingYCbCr422](2937388-anonymous/kiorangepixelencodingycbcr422.md)
-- [kIORangePixelEncodingYCbCr444](2937388-anonymous/kiorangepixelencodingycbcr444.md)
+- [kIORangePixelEncodingNotSupported](./api-2937388-anonymous/kiorangepixelencodingnotsupported.md)
+- [kIORangePixelEncodingRGB444](./api-2937388-anonymous/kiorangepixelencodingrgb444.md)
+- [kIORangePixelEncodingYCbCr420](./api-2937388-anonymous/kiorangepixelencodingycbcr420.md)
+- [kIORangePixelEncodingYCbCr422](./api-2937388-anonymous/kiorangepixelencodingycbcr422.md)
+- [kIORangePixelEncodingYCbCr444](./api-2937388-anonymous/kiorangepixelencodingycbcr444.md)
 
 
 ---

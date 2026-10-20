@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The roughness texture this scaler evaluates.
@@ -19,9 +20,13 @@ The roughness texture this scaler evaluates.
 var roughnessTexture: (any MTLTexture)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> roughnessTexture;
+```
+
 #### Discussion
 
-You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`roughnessTextureUsage`](mtlfxtemporaldenoisedscalerbase/roughnesstextureusage.md) requests and the pixel format that [`roughnessTextureFormat`](mtlfxtemporaldenoisedscalerdescriptor/roughnesstextureformat.md) requests.
+You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`roughnessTextureUsage`](./roughnesstextureusage.md) requests and the pixel format that [`roughnessTextureFormat`](../mtlfxtemporaldenoisedscalerdescriptor/roughnesstextureformat.md) requests.
 
 
 ---

@@ -1,18 +1,21 @@
 # init(_:showsIndicators:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use the ScrollView(_:content:) initializer and the scrollIndicators(:_) modifier
 
 ## Declaration
 
@@ -29,7 +32,8 @@ init(_ axes: Axis.Set = .vertical, showsIndicators: Bool = true, @ContentBuilder
 
 ## See Also
 
-- [init(Axis.Set, content: () -> Content)](scrollview/init(_:content:).md)
+### Creating a scroll view
+- [init(Axis.Set, content: () -> Content)](./init%28_,content%29.md)
   Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 
 

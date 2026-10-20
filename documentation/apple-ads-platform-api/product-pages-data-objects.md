@@ -1,6 +1,7 @@
 # Product Pages Data Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Reference the response objects returned by product page endpoints.
 
@@ -9,22 +10,23 @@ Reference the response objects returned by product page endpoints.
 
 ## Topics
 
-- [object ProductPageDetails](productpagedetails.md)
+- [object ProductPageDetails](./productpagedetails.md)
   Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
-- [object ProductPageDetailsResponse](productpagedetailsresponse.md)
+- [object ProductPageDetailsResponse](./productpagedetailsresponse.md)
   Response object for a single product page retrieval.
-- [object ProductPageDetailsQueryResponse](productpagedetailsqueryresponse.md)
+- [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
-- [object ProductPageLocaleDetails](productpagelocaledetails.md)
+- [object ProductPageLocaleDetails](./productpagelocaledetails.md)
   Locale-specific metadata for an App Store product page.
-- [object ProductPageLocaleDetailsQueryResponse](productpagelocaledetailsqueryresponse.md)
+- [object ProductPageLocaleDetailsQueryResponse](./productpagelocaledetailsqueryresponse.md)
   Paginated response object for the product page locale details query.
-- [object DeviceAssetGroup](deviceassetgroup.md)
+- [object DeviceAssetGroup](./deviceassetgroup.md)
   Represents assets organized by device type with fallback device information.
 
 ## See Also
 
-- [Product Pages Endpoints](product-pages-endpoints.md)
+### Product Pages
+- [Product Pages Endpoints](./product-pages-endpoints.md)
   Retrieve product pages and their localized details.
 
 

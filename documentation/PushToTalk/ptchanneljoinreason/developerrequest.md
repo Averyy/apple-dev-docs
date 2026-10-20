@@ -1,7 +1,8 @@
 # PTChannelJoinReason.developerRequest
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A join reason that indicates the app calls the join channel method while in the foreground.
 
@@ -16,9 +17,14 @@ A join reason that indicates the app calls the join channel method while in the 
 case developerRequest
 ```
 
+```c
+PTChannelJoinReasonDeveloperRequest
+```
+
 ## See Also
 
-- [PTChannelJoinReason.channelRestoration](ptchanneljoinreason/channelrestoration.md)
+### Join reasons
+- [PTChannelJoinReason.channelRestoration](./channelrestoration.md)
   A join reason that indicates the app rejoined a channel through channel restoration.
 
 

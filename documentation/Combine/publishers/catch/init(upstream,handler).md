@@ -1,7 +1,8 @@
 # init(upstream:handler:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher.
 

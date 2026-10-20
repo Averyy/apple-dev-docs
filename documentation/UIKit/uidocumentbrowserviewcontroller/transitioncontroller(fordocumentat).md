@@ -1,7 +1,8 @@
 # transitionController(forDocumentAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a transition controller that provides the standard system-loading and segue animations for the document browser.
 
@@ -17,25 +18,30 @@ Creates a transition controller that provides the standard system-loading and se
 func transitionController(forDocumentAt documentURL: URL) -> UIDocumentBrowserTransitionController
 ```
 
+```objc
+- (UIDocumentBrowserTransitionController *) transitionControllerForDocumentAtURL:(NSURL *) documentURL;
+```
+
 #### Return Value
 
-Returns a newly instantiated transition controller. Its [`loadingProgress`](uidocumentbrowsertransitioncontroller/loadingprogress.md) and [`targetView`](uidocumentbrowsertransitioncontroller/targetview.md) properties are both set to `nil`.
+Returns a newly instantiated transition controller. Its [`loadingProgress`](../uidocumentbrowsertransitioncontroller/loadingprogress.md) and [`targetView`](../uidocumentbrowsertransitioncontroller/targetview.md) properties are both set to `nil`.
 
 #### Discussion
 
 For the animations to function properly, you must maintain a strong reference to the transition controller until all the animation sequences are complete.
 
-For more about using the transition controller, see [`UIDocumentBrowserTransitionController`](uidocumentbrowsertransitioncontroller.md).
+For more about using the transition controller, see [`UIDocumentBrowserTransitionController`](../uidocumentbrowsertransitioncontroller.md).
 
 > **Note**:  In Mac apps built with Mac Catalyst, the transition controller doesn’t generate animations. macOS doesn’t use animations when opening or closing documents.
 
 ## Parameters
 
-- `documentURL`: The URL of a document. Only use URLs provided by the document browser (for example, URLs passed to the delegate’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md)method’s completion block).
+- `documentURL`: The URL of a document. Only use URLs provided by the document browser (for example, URLs passed to the delegate’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](../uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md)method’s completion block).
 
 ## See Also
 
-- [class UIDocumentBrowserTransitionController](uidocumentbrowsertransitioncontroller.md)
+### Animating transitions
+- [class UIDocumentBrowserTransitionController](../uidocumentbrowsertransitioncontroller.md)
   An object that implements the standard loading and transition animations for a document browser.
 
 

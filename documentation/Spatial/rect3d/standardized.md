@@ -1,7 +1,8 @@
 # standardized
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle with positive dimensions.
 
@@ -20,15 +21,20 @@ A rectangle with positive dimensions.
 var standardized: Rect3D { get }
 ```
 
+```c
+static SPRect3D SPRect3DStandardize(SPRect3D rect);
+```
+
 ## See Also
 
-- [var integral: Rect3D](rect3d/integral.md)
+### Creating derived 3D rectangles
+- [var integral: Rect3D](./integral.md)
   Returns the smallest rectangle after converting the source rectangle values to integers.
-- [func formInset(by: Size3D)](rect3d/forminset(by:).md)
+- [func formInset(by: Size3D)](./forminset%28by%29.md)
   Insets the rectangle by the specified size.
-- [func inset(by: Size3D) -> Rect3D](rect3d/inset(by:).md)
+- [func inset(by: Size3D) -> Rect3D](./inset%28by%29.md)
   Returns a new rectangle with the same center point after applying the specified inset amount.
-- [func intersection(Rect3D) -> Rect3D?](rect3d/intersection(_:).md)
+- [func intersection(Rect3D) -> Rect3D?](./intersection%28_%29.md)
   Returns the intersection of two rectangles.
 
 

@@ -1,7 +1,8 @@
 # textDraggableView(_:dragSessionDidEnd:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the drag session has ended.
 
@@ -17,6 +18,10 @@ Tells the delegate that the drag session has ended.
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, dragSessionDidEnd session: any UIDragSession, with operation: UIDropOperation)
 ```
 
+```objc
+- (void) textDraggableView:(UIView<UITextDraggable> *) textDraggableView dragSessionDidEnd:(id<UIDragSession>) session withOperation:(UIDropOperation) operation;
+```
+
 ## Parameters
 
 - `textDraggableView`: The text view where the drag activity was started.
@@ -25,7 +30,8 @@ optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggabl
 
 ## See Also
 
-- [func textDraggableView(any UIView & UITextDraggable, dragSessionWillBegin: any UIDragSession)](uitextdragdelegate/textdraggableview(_:dragsessionwillbegin:).md)
+### Handling drag session notifications
+- [func textDraggableView(any UIView & UITextDraggable, dragSessionWillBegin: any UIDragSession)](./textdraggableview%28_,dragsessionwillbegin%29.md)
   Tells the delegate that the text has been lifted out of the text view and the user is beginning to drag the text.
 
 

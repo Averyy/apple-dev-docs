@@ -1,7 +1,8 @@
 # removeOverlay(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a single overlay object from the map.
 
@@ -19,6 +20,10 @@ Removes a single overlay object from the map.
 func removeOverlay(_ overlay: any MKOverlay)
 ```
 
+```objc
+- (void) removeOverlay:(id<MKOverlay>) overlay;
+```
+
 #### Discussion
 
 This method removes the overlay regardless of the level that it’s in. Removing an overlay also removes its corresponding renderer, if one is in use. If the specified overlay isn’t associated with the map view, this method does nothing.
@@ -29,11 +34,13 @@ This method removes the overlay regardless of the level that it’s in. Removing
 
 ## See Also
 
-- [func addOverlay(any MKOverlay)](mkmapview/addoverlay(_:).md)
+### Related Documentation
+- [func addOverlay(any MKOverlay)](./addoverlay%28_%29.md)
   Adds a single overlay object to the map.
-- [func addOverlays([any MKOverlay])](mkmapview/addoverlays(_:).md)
+- [func addOverlays([any MKOverlay])](./addoverlays%28_%29.md)
   Adds an array of overlay objects to the map.
-- [func removeOverlays([any MKOverlay])](mkmapview/removeoverlays(_:).md)
+### Removing overlays
+- [func removeOverlays([any MKOverlay])](./removeoverlays%28_%29.md)
   Removes one or more overlay objects from the map.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the modes dictionary associated with the input method.
@@ -13,6 +14,10 @@ Returns the modes dictionary associated with the input method.
 
 ```swift
 func modes(_ sender: Any!) -> [AnyHashable : Any]!
+```
+
+```objc
+- (NSDictionary *) modes:(id) sender;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(_:store:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property that can read and write an Optional boolean user default.
 
@@ -20,6 +21,46 @@ Creates a property that can read and write an Optional boolean user default.
 init(_ key: String, store: UserDefaults? = nil) where Value == Bool?
 ```
 
+Available when `Value` conforms to `ExpressibleByNilLiteral`.
+
+**Other overloads**:
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == Data?
+```
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == Date?
+```
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == Double?
+```
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == Int?
+```
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == PersistentIdentifier?
+```
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == String?
+```
+
+```swift
+init(_ key: String, store: UserDefaults? = nil) where Value == URL?
+```
+
+```swift
+init<R>(_ key: String, store: UserDefaults? = nil) where Value == R?, R : RawRepresentable, R.RawValue == Int
+```
+
+```swift
+init<R>(_ key: String, store: UserDefaults? = nil) where Value == R?, R : RawRepresentable, R.RawValue == String
+```
+
 #### Discussion
 
 Defaults to nil if there is no restored value.
@@ -31,7 +72,8 @@ Defaults to nil if there is no restored value.
 
 ## See Also
 
-- [init(wrappedValue:_:store:)](appstorage/init(wrappedvalue:_:store:).md)
+### Storing a value
+- [init(wrappedValue:_:store:)](./init%28wrappedvalue,_,store%29.md)
   Creates a property that can save and restore tab sidebar customizations.
 
 

@@ -1,7 +1,8 @@
 # keepalive
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set the QUIC connection keepalive interval.
 
@@ -19,6 +20,8 @@ Set the QUIC connection keepalive interval.
 ```swift
 final var keepalive: NWProtocolQUIC.Metadata.KeepAliveBehavior { get set }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

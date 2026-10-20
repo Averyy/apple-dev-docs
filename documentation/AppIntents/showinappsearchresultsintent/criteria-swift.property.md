@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The information to use when performing the search.
@@ -12,7 +13,7 @@ The information to use when performing the search.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -23,12 +24,13 @@ var criteria: Self.Criteria { get set }
 
 #### Discussion
 
-Use this property to get the search terms or other criteria to use when you perform a search. You specify the search criteria you support when you define your custom type. For example, set the type of this property to [`StringSearchCriteria`](stringsearchcriteria.md) to match items against a string value.
+Use this property to get the search terms or other criteria to use when you perform a search. You specify the search criteria you support when you define your custom type. For example, set the type of this property to [`StringSearchCriteria`](../stringsearchcriteria.md) to match items against a string value.
 
 ## See Also
 
-- [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
-- [protocol SearchCriteria](searchcriteria.md)
+### Providing the search criteria
+- [associatedtype Criteria : SearchCriteria](./criteria-swift.associatedtype.md)
+- [protocol SearchCriteria](../searchcriteria.md)
   An interface for defining the criteria to use when searching your app’s content.
 
 

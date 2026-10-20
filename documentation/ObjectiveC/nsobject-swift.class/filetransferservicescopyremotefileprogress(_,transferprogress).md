@@ -1,15 +1,20 @@
 # fileTransferServicesCopyRemoteFileProgress(_:transferProgress:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesCopyRemoteFileProgress(_ inServices: OBEXFileTransferServices!, transferProgress inProgressDescription: [AnyHashable : Any]!)
+```
+
+```objc
+- (void) fileTransferServicesCopyRemoteFileProgress:(OBEXFileTransferServices *) inServices transferProgress:(NSDictionary *) inProgressDescription;
 ```
 
 

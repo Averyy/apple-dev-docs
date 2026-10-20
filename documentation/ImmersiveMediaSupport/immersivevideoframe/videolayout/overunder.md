@@ -1,7 +1,8 @@
 # ImmersiveVideoFrame.VideoLayout.overUnder
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents over-under video layout.
 

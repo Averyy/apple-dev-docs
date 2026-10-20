@@ -1,7 +1,8 @@
 # drawableQueue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drawable queue that replaces the texture.
 
@@ -11,7 +12,7 @@ The drawable queue that replaces the texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

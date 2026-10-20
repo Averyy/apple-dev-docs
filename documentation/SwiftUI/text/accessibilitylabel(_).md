@@ -1,7 +1,8 @@
 # accessibilityLabel(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a label to the view that describes its contents.
 
@@ -19,6 +20,23 @@ Adds a label to the view that describes its contents.
 ```swift
 @export(implementation)
 nonisolated func accessibilityLabel(_ label: LocalizedStringResource) -> Text
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityLabel(_ label: Text) -> Text
+```
+
+```swift
+nonisolated
+func accessibilityLabel(_ labelKey: LocalizedStringKey) -> Text
+```
+
+```swift
+nonisolated
+func accessibilityLabel<S>(_ label: S) -> Text where S : StringProtocol
 ```
 
 #### Discussion
@@ -40,9 +58,10 @@ var body: some View {
 
 ## See Also
 
-- [func accessibilityHeading(AccessibilityHeadingLevel) -> Text](text/accessibilityheading(_:).md)
+### Providing accessibility information
+- [func accessibilityHeading(AccessibilityHeadingLevel) -> Text](./accessibilityheading%28_%29.md)
   Sets the accessibility level of this heading.
-- [func accessibilityTextContentType(AccessibilityTextContentType) -> Text](text/accessibilitytextcontenttype(_:).md)
+- [func accessibilityTextContentType(AccessibilityTextContentType) -> Text](./accessibilitytextcontenttype%28_%29.md)
   Sets an accessibility text content type.
 
 

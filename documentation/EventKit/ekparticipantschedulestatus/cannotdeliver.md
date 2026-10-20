@@ -1,17 +1,18 @@
 # EKParticipantScheduleStatus.cannotDeliver
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The invitation wasn’t delivered because the system is unsure of how to deliver it.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,23 +20,28 @@ The invitation wasn’t delivered because the system is unsure of how to deliver
 case cannotDeliver
 ```
 
+```c
+EKParticipantScheduleStatusCannotDeliver
+```
+
 ## See Also
 
-- [EKParticipantScheduleStatus.none](ekparticipantschedulestatus/none.md)
+### Constants
+- [EKParticipantScheduleStatus.none](./none.md)
   The invitation hasn’t been sent yet.
-- [EKParticipantScheduleStatus.pending](ekparticipantschedulestatus/pending.md)
+- [EKParticipantScheduleStatus.pending](./pending.md)
   The invitation is in the process of being sent.
-- [EKParticipantScheduleStatus.sent](ekparticipantschedulestatus/sent.md)
+- [EKParticipantScheduleStatus.sent](./sent.md)
   The invitation has been sent, but it’s unclear if it was successfully delivered.
-- [EKParticipantScheduleStatus.delivered](ekparticipantschedulestatus/delivered.md)
+- [EKParticipantScheduleStatus.delivered](./delivered.md)
   The invitation has been sent and successfully delivered.
-- [EKParticipantScheduleStatus.recipientNotRecognized](ekparticipantschedulestatus/recipientnotrecognized.md)
+- [EKParticipantScheduleStatus.recipientNotRecognized](./recipientnotrecognized.md)
   The invitation wasn’t delivered because the source doesn’t recognize the recipient.
-- [EKParticipantScheduleStatus.noPrivileges](ekparticipantschedulestatus/noprivileges.md)
+- [EKParticipantScheduleStatus.noPrivileges](./noprivileges.md)
   The invitation wasn’t delivered because of insufficient privileges.
-- [EKParticipantScheduleStatus.deliveryFailed](ekparticipantschedulestatus/deliveryfailed.md)
+- [EKParticipantScheduleStatus.deliveryFailed](./deliveryfailed.md)
   The invitation wasn’t delivered due to a temporary failure.
-- [EKParticipantScheduleStatus.recipientNotAllowed](ekparticipantschedulestatus/recipientnotallowed.md)
+- [EKParticipantScheduleStatus.recipientNotAllowed](./recipientnotallowed.md)
   The invitation wasn’t delivered because scheduling with the participant isn’t allowed.
 
 

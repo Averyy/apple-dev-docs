@@ -1,7 +1,8 @@
 # WAError.deviceNoLongerAvailable(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if a device is no longer available.
 
@@ -18,7 +19,8 @@ case deviceNoLongerAvailable(WAError.DeviceNoLongerAvailableDetails)
 
 ## See Also
 
-- [WAError.DeviceNoLongerAvailableDetails](waerror/devicenolongeravailabledetails.md)
+### Checking for unavailable device
+- [WAError.DeviceNoLongerAvailableDetails](./devicenolongeravailabledetails.md)
   The optional details describing the unavailable device.
 
 

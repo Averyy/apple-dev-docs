@@ -1,7 +1,8 @@
 # CMTimeMinimum(_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the lesser of two time values.
 
@@ -20,6 +21,10 @@ Returns the lesser of two time values.
 func CMTimeMinimum(_ time1: CMTime, _ time2: CMTime) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeMinimum(CMTime time1, CMTime time2);
+```
+
 #### Return Value
 
 The lesser of the two times.
@@ -31,9 +36,10 @@ The lesser of the two times.
 
 ## See Also
 
-- [func CMTimeCompare(CMTime, CMTime) -> Int32](cmtimecompare(_:_:).md)
+### Comparing Times
+- [func CMTimeCompare(CMTime, CMTime) -> Int32](./cmtimecompare%28_,_%29.md)
   Returns the numerical relationship of two times.
-- [func CMTimeMaximum(CMTime, CMTime) -> CMTime](cmtimemaximum(_:_:).md)
+- [func CMTimeMaximum(CMTime, CMTime) -> CMTime](./cmtimemaximum%28_,_%29.md)
   Returns the greater of two time values.
 
 

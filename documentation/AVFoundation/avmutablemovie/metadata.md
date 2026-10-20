@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata items for all metadata identifiers for which a value is available.
 
@@ -19,21 +20,26 @@ An array of metadata items for all metadata identifiers for which a value is ava
 var metadata: [AVMetadataItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
+```
+
 #### Discussion
 
-You can filter the metadata items by language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md) method, or by identifier with the [`metadataItems(from:filteredByIdentifier:)`](avmetadataitem/metadataitems(from:filteredbyidentifier:).md) method.
+You can filter the metadata items by language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md) method, or by identifier with the [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method.
 
 ## See Also
 
-- [var commonMetadata: [AVMetadataItem]](avmutablemovie/commonmetadata.md)
+### Accessing metadata
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   The metadata items an asset contains for common metadata identifiers that provide a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avmutablemovie/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   The metadata formats this asset contains.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avmutablemovie/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns an array of metadata items from the container with the specified format.
-- [var creationDate: AVMetadataItem?](avmutablemovie/creationdate.md)
+- [var creationDate: AVMetadataItem?](./creationdate.md)
   A metadata item that indicates the asset’s creation date.
-- [var lyrics: String?](avmutablemovie/lyrics.md)
+- [var lyrics: String?](./lyrics.md)
   The lyrics of the asset in a language suitable for the current locale.
 
 

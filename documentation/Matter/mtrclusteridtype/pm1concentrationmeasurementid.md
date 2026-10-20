@@ -1,7 +1,8 @@
 # MTRClusterIDType.pm1ConcentrationMeasurementID
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 case pm1ConcentrationMeasurementID
+```
+
+```c
+MTRClusterIDTypePM1ConcentrationMeasurementID
 ```
 
 

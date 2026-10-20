@@ -1,7 +1,8 @@
 # ethernetChannel
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 13.0+

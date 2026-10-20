@@ -1,7 +1,8 @@
 # UIContentInsetsReference.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content insets use the system default reference point.
 
@@ -18,19 +19,24 @@ Content insets use the system default reference point.
 case automatic
 ```
 
+```c
+UIContentInsetsReferenceAutomatic
+```
+
 #### Discussion
 
 When you set this value on a section in a collection view, the section defaults to using the content insets reference value of the collection view.
 
 ## See Also
 
-- [UIContentInsetsReference.none](uicontentinsetsreference/none.md)
+### Constants
+- [UIContentInsetsReference.none](./none.md)
   Content insets don’t have a reference point in relation to other insets.
-- [UIContentInsetsReference.safeArea](uicontentinsetsreference/safearea.md)
+- [UIContentInsetsReference.safeArea](./safearea.md)
   Content insets use a reference point in relation to the safe area.
-- [UIContentInsetsReference.layoutMargins](uicontentinsetsreference/layoutmargins.md)
+- [UIContentInsetsReference.layoutMargins](./layoutmargins.md)
   Content insets use a reference point in relation to the layout margins.
-- [UIContentInsetsReference.readableContent](uicontentinsetsreference/readablecontent.md)
+- [UIContentInsetsReference.readableContent](./readablecontent.md)
   Content insets use a reference point in relation to the readable content guide.
 
 

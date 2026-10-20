@@ -1,6 +1,7 @@
 # Performing encryption verification
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Verify the login request and create a JSON Web Encryption (JWE) response.
 
@@ -40,7 +41,7 @@ Use this device encryption key:
 }
 ```
 
-##### Sign the Login Request
+##### Sign the login request
 
 Note how the system signs the following login JSON Web Token (JWT) using the device-signing key:
 
@@ -74,26 +75,38 @@ The signed and encoded login JWT output is:
 ewogICJraWQiIDogIldzOW1LeW5aeHlVU05YWXRNR0FqakxPK0pnMTZIQ2EvNXBKTzB1ZE5XSjQ9IiwKICAieDVjIiA6ICJNSUlCaERDQ0FTbWdBd0lCQWdJQkFUQUtCZ2dxaGtqT1BRUURBakEzTVJRd0VnWURWUVFERXd0a1pYWnBZMlVnZEdWemRERUxNQWtHQTFVRUJoTUNWVk14RWpBUUJnTlZCQW9UQ1VGd2NHeGxJRWx1WXpBZUZ3MHlNakEyTWpNeE56STFNekZhRncweU16QTJNak14TnpJMU16RmFNRGN4RkRBU0JnTlZCQU1UQzJSbGRtbGpaU0IwWlhOME1Rc3dDUVlEVlFRR0V3SlZVekVTTUJBR0ExVUVDaE1KUVhCd2JHVWdTVzVqTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFZ0s2MEVneFQrRWlweUFnU2xySEcwTGdGVnJnbmQ4VVhBdkxPZ3lrSnRtczhBalB0aXNmaEhIUFd1Vitmb2x5ZkJLWVVOVVpqVWhLVWFlWXJVMWZtKzZNbU1DUXdFZ1lEVlIwVEFRSC9CQWd3QmdFQi93SUJBREFPQmdOVkhROEJBZjhFQkFNQ0I0QXdDZ1lJS29aSXpqMEVBd0lEU1FBd1JnSWhBTXdHT1l3Z2Y1eEd4TmNaTEwvWTRwaEE2NncvUFNWTGVRWWhlYzJKVFFGMUFpRUFsTlNVRHljdnYwRHdEUVlVNHdVcGNvL0dCdWhjNG1QbWxpMytEVCtwMUlzPSIsCiAgInR5cCIgOiAiSldUIiwKICAiYWxnIiA6ICJFUzI1NiIKfQ.ewogICJpYXQiIDogIjE2NTYwMDUxMzIiLAogICJqd2VfY3J5cHRvIiA6IHsKICAgICJhbGciIDogIkVDREgtRVMiLAogICAgImVuYyIgOiAiQTI1NkdDTSIsCiAgICAiYXB2IiA6ICJBQUFBQlVGd2NHeGxBQUFBUVFSTy1RODRmakt4eXRJTFdzVmktY0ZVOWd5ck5IVzhweVQyRzNnUHNyLUFCT0RKVXJsSF8teWVpNDc5QlFVOVl5dFA3Q2hnZUZtTUhTZ2pyWjB4QU1NLUFBQUFKRVJFUmpZNE1UY3hMVFF3T1VRdE5FVXlReTA1TVVZd0xUbEZOREpFTnpjME5UTTJOUSIKICB9LAogICJwYXNzd29yZCIgOiAiYmFyIiwKICAicmVxdWVzdF9ub25jZSIgOiAiQXdBQkFBQUFBQUFEQU96X0JBRHZfeHRndV9TTTFNdm9xMDJQWXpfWWZYeHg1RkFnY0xITE5pa0g2Z2pyQld3Y3FuUldfaGF4cU85SkNpUGF0NUtma1RpbHkwNFM4RUgzQVF3VnNXQ3hIWVFnQUEiLAogICJzY29wZSIgOiAib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHVybjphcHBsZTpwbGF0Zm9ybXNzbyIsCiAgImdyYW50X3R5cGUiIDogInBhc3N3b3JkIiwKICAidXNlcm5hbWUiIDogImZvbyIsCiAgImF1ZCIgOiAiaHR0cHM6Ly9sb2NhbGhvc3QuYXBwbGUuY29tOjg4ODgvYXV0aC90b2tlbiIsCiAgImNsaWVudF9pZCIgOiAiYWFmZjE1MjQtZmEzNS00MGM1LTk0ZTMtMmIyMzNjNWYyOTY1IiwKICAibm9uY2UiIDogIkRERjY4MTcxLTQwOUQtNEUyQy05MUYwLTlFNDJENzc0NTM2NSIKfQ.JMD4NkC0bwrQ0GZI66EMo50Rwgfj3fewTc_6836zWbyvNwcCSNmL9hKIgJx-oFoiwZ0dtYYN5KPI3MHLg3-GBw
 ```
 
-##### Encrypt the Response
+##### Encrypt the response
 
 Use the following ephemeral key, response header, and plain text to generate a sample encrypted response. The plain text is encrypted and all data values are base-64 URL encoded.
 
-- **Ephemeral key**: `{` `“y” : “erf9nEkEC8SiuwP-7f7udD7CnX5KEauVIfBPoqnmlYo”,` `“d” : “okDfU7IYlFXoEKgqu-79iy-AR55omCKzVKlFCXy8z5c”,` `“kid” : “lssbzDeX5i7SjBnCsHVKrzAMnEvEmVwZeyJQqoGdS4E=”,` `“x” : “VIXdgu3x0eLgEVtROZ5YQ4GUS8WZQT-3HPqX2FPoY4I”,` `“kty” : “EC”,` `“crv” : “P-256”`
+- **Ephemeral key**: `{`
+
+  `“y” : “erf9nEkEC8SiuwP-7f7udD7CnX5KEauVIfBPoqnmlYo”,`
+
+  `“d” : “okDfU7IYlFXoEKgqu-79iy-AR55omCKzVKlFCXy8z5c”,`
+
+  `“kid” : “lssbzDeX5i7SjBnCsHVKrzAMnEvEmVwZeyJQqoGdS4E=”,`
+
+  `“x” : “VIXdgu3x0eLgEVtROZ5YQ4GUS8WZQT-3HPqX2FPoY4I”,`
+
+  `“kty” : “EC”,`
+
+  `“crv” : “P-256”`
 
 `}`
 
 - **Response header**: `ewogICJlbmMiIDogIkEyNTZHQ00iLAogICJraWQiIDogInBTY251engzeDg1RXlwNkN0SzlVUUFEeE9zQUdUUDcyeTAyVGczbTFzazg9IiwKICAiZXBrIiA6IHsKICAgICJ5IiA6ICJlcmY5bkVrRUM4U2l1d1AtN2Y3dWREN0NuWDVLRWF1VklmQlBvcW5tbFlvIiwKICAgICJ4IiA6ICJWSVhkZ3UzeDBlTGdFVnRST1o1WVE0R1VTOFdaUVQtM0hQcVgyRlBvWTRJIiwKICAgICJrdHkiIDogIkVDIiwKICAgICJjcnYiIDogIlAtMjU2IgogIH0sCiAgImFwdSIgOiAiQUFBQUJVRlFVRXhGQUFBQVFRUlVoZDJDN2ZIUjR1QVJXMUU1bmxoRGdaUkx4WmxCUDdjYy1wZllVLWhqZ25xM19aeEpCQXZFb3JzRF91My03blEtd3AxLVNoR3JsU0h3VDZLcDVwV0siLAogICJ0eXAiIDogIkpXVCIsCiAgImFsZyIgOiAiRUNESC1FUyIKfQ`
 - **Plain text**: `ewogICJyZWZyZXNoX3Rva2VuIiA6ICJBd0FCQUFBQXZQTTFLYVBsckVxZEZTQnpqcWZUR0FNeFpHVVRkTTB0NEI0IiwKICAiaWRfdG9rZW4iIDogImV3b2dJQ0owZVhBaUlEb2dJa3BYVkNJc0NpQWdJbUZzWnlJZ09pQWlVbE15TlRZaUxBb2dJQ0pyYVdRaUlEb2dJblYwYzB0aGVsWklVSFk0VFhoRFIwOXhORmcxWW14VFp6RjFRVFpCYkhWV2NYaE5SVWxTTjB0bGVUZzlJZ3A5LmV3b2dJQ0p1YjI1alpTSWdPaUFpUkVSR05qZ3hOekV0TkRBNVJDMDBSVEpETFRreFJqQXRPVVUwTWtRM056UTFNelkxSWl3S0lDQWlhV0YwSWlBNklDSXhOalUyTURBMU1UTXlJaXdLSUNBaWJtSm1JaUE2SUNJeE5qVTJNREExTVRNeUlpd0tJQ0FpZFhCdUlpQTZJQ0ptYjI4aUxBb2dJQ0psZUhBaUlEb2dJakUyTlRZd01EVTBNeklpTEFvZ0lDSmhkV1FpSURvZ0ltRmhabVl4TlRJMExXWmhNelV0TkRCak5TMDVOR1V6TFRKaU1qTXpZelZtTWprMk5TSXNDaUFnSW1semN5SWdPaUFpYUhSMGNITTZMeTltYjI4dWFYTnpkV1Z5TG1OdmJTSUtmUS5HMi1EcWhBaUoxaTZPS3JYdjh2ZzVWcjhWWXFxcW1ZdnZ1U2FQSmZ3c0xEb3QyaXZIdzJhbGp5WG5na05WaDYtTmtrZXZHWnRJUnFTcE9yMGY5czB6XzlmazJmajJzb3lHOWlOMFJoSmNJLV9xSG9hTGxrZWFDNFF2WTZ4alZRMnVqOG5iUnBIRVN4VGRoSi1LSjZfMm1BVGk3NVZxUmlfV3NBMElLZnhCaGc4Y01aS25lMF9pTTRoRERqQVFQR2N2SWtMcG5nT1BTbWRHbUxNUkZVU0twVVBQYmt0QzRHa0Y0T1VBZXJFS0VORFdlZHhpU2pCa2VwOW1ZVV9MdDNFM2o0RU1ZVFVyTDNZeU1XTGotdnRUY2ttVTJCZHNvMHlfbnlfMDhpWWdPVXJ2OGJwdlkxQTdoc1NwZWM5ZTYwMWRKSHAxekx3NVppbzhjVVl0MnFKalEiLAogICJleHBpcmVzX29uIiA6ICIxNjU2MDMzOTMyIiwKICAidG9rZW5fdHlwZSIgOiAiQmVhcmVyIiwKICAiZXhwaXJlc19pbiIgOiAyODgwMCwKICAicmVmcmVzaF90b2tlbl9leHBpcmVzX2luIiA6IDI4ODAwCn0`
 
-##### Perform Diffie Hellman Key Exchange
+##### Perform Diffie-Hellman key exchange
 
 Diffie–Hellman key exchange is a method to securely exchange cryptographic keys over a public channel.
 
-Use the device encryption public key and the ephemeral private key to perform Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/security/seckeyalgorithm/ecdhkeyexchangestandard)).
+Use the device encryption public key and the ephemeral private key to perform Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](../Security/seckeyalgorithm/ecdhkeyexchangestandard.md)).
 
 - **Exchanged key (output)**: `L87ywmD3aLpVlXsqAvq7udyr4s6M0y9MjQCytE71epA`
 
-##### Perform Concatkdf
+##### Perform ConcatKDF
 
 ConcatKDF is a concatenation Key Derivation Function (KDF) to derive a shared key from the result of performing Diffie-Hellman key exchange.
 
@@ -106,7 +119,7 @@ Perform ConcatKDF using the key exchange result, algorithm, `PartyUInfo`, and `P
 - **ConcatKDF data before SHA-256 hash**: `AAAAAS_O8sJg92i6VZV7KgL6u7ncq-LOjNMvTI0AsrRO9XqQAAAAB0EyNTZHQ00AAABOAAAABUFQUExFAAAAQQRUhd2C7fHR4uARW1E5nlhDgZRLxZlBP7cc-pfYU-hjgnq3_ZxJBAvEorsD_u3-7nQ-wp1-ShGrlSHwT6Kp5pWKAAAAdgAAAAVBcHBsZQAAAEEETvkPOH4yscrSC1rFYvnBVPYMqzR1vKck9ht4D7K_gATgyVK5R__snouO_QUFPWMrT-woYHhZjB0oI62dMQDDPgAAACREREY2ODE3MS00MDlELTRFMkMtOTFGMC05RTQyRDc3NDUzNjUAAAEA`
 - **Computed key (output)**: `kh36uWSGH25r09lLf3m5l3TLS5xKAs-h3UCdbTKheCY`
 
-##### Encrypt the Plain Text
+##### Encrypt the plain text
 
 The system uses the key from ConcatKDF with the Initialization Vector (IV) and the Additional Authentication Data (AAD) to encrypt the plain text using AESGCM. The AAD is the ASCII-encoded response header per RFC 7516 Section 5.1, Step 14. The response header was already base-64 URL encoded. Here are the values that these code snippets use, and the output:
 
@@ -116,7 +129,7 @@ The system uses the key from ConcatKDF with the Initialization Vector (IV) and t
 - **Cipher text (output)**: `MHlVmPIlP5Tz9pKKMLJfHTKkWtHpP1Y8YKAdT7iuRN09bTNRgArfPLIlo7WkUolOGoU3oV07p3m3cOmTzmVqOmVs0dXlEVZlF21TX_hjN2sj5RpC4tWBdKVdoCej4u0Brkgypw0jXtKUzjIM2HcE-8Yy4fC-ixTnescR1M3eM_6IWRR1MtEYTy1C7JrBcw9gZVSmvC1DpeH49gYw9FkIQUpdnfvyreVU0DfvqhABvp29fpVmQqoaENoLuqDt0Ajfko5LWRz3sLcZipoZ0gdRgwQpcNLnBUYAZs5D7t8Yuay2CZjAoTZcbFv4F8Mrg2BgEncVwhC9jTEVGe3GinlsziPdSVIt-7lXbV99yk2qX0eYb4ItScWgUfl3y_p623Xtr3AOxlslahF7fm8PN3sAJnwb_aQQxeeQZQyRZKD9uMHHUTMZeoJbXxV1KdGgQMYdW0Z40_WYFtqT8UwboptazbZX02GOmz2gO7JSe0OHgLCPAfvp9Ah2apYrEDqp01tYwhCG8SNuBB_sXPuJx-euUuxu70s1809k44A_hAc_iYDPwTBpAXBLOiuJIxVZgy54WNNiP_WqBImjsA1ioE7Mrvqkn-DnkM0NP2rt1GvaZ-IpUNgAXKudjiT51guQLnRcr9r3pNmmIaUrqKepMJdAYqUbc9PjYUus7RX-20r5pudVi8Ef0Tg5y9Hk3f7sfiX9peBea_L5yQP-tjXJN8lITRBFCtvvsTb0ALVbKTTHiItmYFxl7XzAljiOMiXEKDKwb0VqOtkU4Ljdz2_M7mW0sT1M6_8XZ6dn3W9RMAeqmLnKlxU5gxj0rK5C8Dnok-I2jOlDzr7uS01WBmaln4E2MTRLyGsdUhXk6JLewtomMTrM7dfq1x6iZubbV8fOk4ayKlEh6xQONPfUXAnr-OB45gllZ2GWNaipd9nwJyGnktSQYpjHiMgl-eKQ3nwwD6Tnj9yYZgvq-D5_DUknvk1XMGTF1CAKaGWDWvf4t2LTyxLld6qgDKyrQWYVKRbHY5LtUqlQjTUP9WGVCNnojVfEIVJIxGXspgL_QwViuBBkmHa_IEd18UE68_yhtBh1dxi_K3td6AG01_Fm1UgYNhi4SPHJqA22zJQ397HdAAGk1bYk5IacY9qyqpVXPBRhEE92DG5oDZcCUB9li87NWRJIaF46Q1z5S2ROSBimBi-nyOX5G4DpgrPjst3lK7NacpssjdPk2fDh3XXKu2r4RXBr7l7hweuwKNgyzPBoTZ37dadYKz1MpxO5Ag43xLzTougLDkVrS5w`
 - **Tag (output)**: `4dpX5cVdPodXep2NyC2Vyg`
 
-##### Verify the Login Jwe Response
+##### Verify the login JWE response
 
 Check the response to confirm that it matches the following output when formatted as a JWE with compact serialization. The system formats the response per RFC 7516 Section 5.1, Step 19. The JWE encrypted key is empty because the system uses direct key agreement:
 
@@ -124,15 +137,16 @@ Check the response to confirm that it matches the following output when formatte
 ewogICJlbmMiIDogIkEyNTZHQ00iLAogICJraWQiIDogInBTY251engzeDg1RXlwNkN0SzlVUUFEeE9zQUdUUDcyeTAyVGczbTFzazg9IiwKICAiZXBrIiA6IHsKICAgICJ5IiA6ICJlcmY5bkVrRUM4U2l1d1AtN2Y3dWREN0NuWDVLRWF1VklmQlBvcW5tbFlvIiwKICAgICJ4IiA6ICJWSVhkZ3UzeDBlTGdFVnRST1o1WVE0R1VTOFdaUVQtM0hQcVgyRlBvWTRJIiwKICAgICJrdHkiIDogIkVDIiwKICAgICJjcnYiIDogIlAtMjU2IgogIH0sCiAgImFwdSIgOiAiQUFBQUJVRlFVRXhGQUFBQVFRUlVoZDJDN2ZIUjR1QVJXMUU1bmxoRGdaUkx4WmxCUDdjYy1wZllVLWhqZ25xM19aeEpCQXZFb3JzRF91My03blEtd3AxLVNoR3JsU0h3VDZLcDVwV0siLAogICJ0eXAiIDogIkpXVCIsCiAgImFsZyIgOiAiRUNESC1FUyIKfQ..cFAKroCUiODyXmdK.Clpc69y98u7GwODBB9u4ZIcxyOY-MHlVmPIlP5Tz9pKKMLJfHTKkWtHpP1Y8YKAdT7iuRN09bTNRgArfPLIlo7WkUolOGoU3oV07p3m3cOmTzmVqOmVs0dXlEVZlF21TX_hjN2sj5RpC4tWBdKVdoCej4u0Brkgypw0jXtKUzjIM2HcE-8Yy4fC-ixTnescR1M3eM_6IWRR1MtEYTy1C7JrBcw9gZVSmvC1DpeH49gYw9FkIQUpdnfvyreVU0DfvqhABvp29fpVmQqoaENoLuqDt0Ajfko5LWRz3sLcZipoZ0gdRgwQpcNLnBUYAZs5D7t8Yuay2CZjAoTZcbFv4F8Mrg2BgEncVwhC9jTEVGe3GinlsziPdSVIt-7lXbV99yk2qX0eYb4ItScWgUfl3y_p623Xtr3AOxlslahF7fm8PN3sAJnwb_aQQxeeQZQyRZKD9uMHHUTMZeoJbXxV1KdGgQMYdW0Z40_WYFtqT8UwboptazbZX02GOmz2gO7JSe0OHgLCPAfvp9Ah2apYrEDqp01tYwhCG8SNuBB_sXPuJx-euUuxu70s1809k44A_hAc_iYDPwTBpAXBLOiuJIxVZgy54WNNiP_WqBImjsA1ioE7Mrvqkn-DnkM0NP2rt1GvaZ-IpUNgAXKudjiT51guQLnRcr9r3pNmmIaUrqKepMJdAYqUbc9PjYUus7RX-20r5pudVi8Ef0Tg5y9Hk3f7sfiX9peBea_L5yQP-tjXJN8lITRBFCtvvsTb0ALVbKTTHiItmYFxl7XzAljiOMiXEKDKwb0VqOtkU4Ljdz2_M7mW0sT1M6_8XZ6dn3W9RMAeqmLnKlxU5gxj0rK5C8Dnok-I2jOlDzr7uS01WBmaln4E2MTRLyGsdUhXk6JLewtomMTrM7dfq1x6iZubbV8fOk4ayKlEh6xQONPfUXAnr-OB45gllZ2GWNaipd9nwJyGnktSQYpjHiMgl-eKQ3nwwD6Tnj9yYZgvq-D5_DUknvk1XMGTF1CAKaGWDWvf4t2LTyxLld6qgDKyrQWYVKRbHY5LtUqlQjTUP9WGVCNnojVfEIVJIxGXspgL_QwViuBBkmHa_IEd18UE68_yhtBh1dxi_K3td6AG01_Fm1UgYNhi4SPHJqA22zJQ397HdAAGk1bYk5IacY9qyqpVXPBRhEE92DG5oDZcCUB9li87NWRJIaF46Q1z5S2ROSBimBi-nyOX5G4DpgrPjst3lK7NacpssjdPk2fDh3XXKu2r4RXBr7l7hweuwKNgyzPBoTZ37dadYKz1MpxO5Ag43xLzTougLDkVrS5w.4dpX5cVdPodXep2NyC2Vyg
 ```
 
-##### Decrypt the Jwe
+##### Decrypt the JWE
 
-The system calculates the key differently when decrypting the JWE. For decryption, the system performs Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/security/seckeyalgorithm/ecdhkeyexchangestandard)) using the device encryption private key and the ephemeral public key from the JWE header. The other inputs for ConcatKDF are the same and the system uses the calculated key for AESGCM decryption using the fields from the encrypted JWE.
+The system calculates the key differently when decrypting the JWE. For decryption, the system performs Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](../Security/seckeyalgorithm/ecdhkeyexchangestandard.md)) using the device encryption private key and the ephemeral public key from the JWE header. The other inputs for ConcatKDF are the same and the system uses the calculated key for AESGCM decryption using the fields from the encrypted JWE.
 
 ## See Also
 
-- [Creating a JSON Web Encryption (JWE) login response](creating-a-json-web-encryption-jwe-login-response.md)
+### Login response
+- [Creating a JSON Web Encryption (JWE) login response](./creating-a-json-web-encryption-jwe-login-response.md)
   Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).
-- [Processing the JSON Web Encryption (JWE) login response](processing-the-json-web-encryption-jwe-login-response.md)
+- [Processing the JSON Web Encryption (JWE) login response](./processing-the-json-web-encryption-jwe-login-response.md)
   Validate the encrypted response.
 
 

@@ -1,16 +1,21 @@
 # pubkey_hash
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var pubkey_hash: es_string_token_t
+```
+
+```c
+es_string_token_t pubkey_hash;
 ```
 
 

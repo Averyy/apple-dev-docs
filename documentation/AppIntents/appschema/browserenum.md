@@ -1,7 +1,8 @@
 # AppSchema.BrowserEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the browser domain.
 
@@ -21,19 +22,20 @@ protocol BrowserEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var clearHistoryTimeFrame: some AppSchemaEnum](appschema/browserenum/clearhistorytimeframe.md)
+- [var clearHistoryTimeFrame: some AppSchemaEnum](./browserenum/clearhistorytimeframe.md)
   An enum schema for a clear history time frame parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var clearHistoryTimeFrame: some AppSchemaEnum](appschema/browserenum/clearhistorytimeframe.md)
+### Types for static parameters
+- [var clearHistoryTimeFrame: some AppSchemaEnum](./browserenum/clearhistorytimeframe.md)
   An enum schema for a clear history time frame parameter.
 
 

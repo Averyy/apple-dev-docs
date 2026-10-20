@@ -1,7 +1,8 @@
 # init(title:description:default:requestValueDialog:requestDisambiguationDialog:inputConnectionBehavior:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter for a collection of app entities.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter for a collection of app entities.
 ```swift
 convenience init<Entity>(title: LocalizedStringResource, description: LocalizedStringResource? = nil, default defaultValue: Value.UnwrappedType? = nil, requestValueDialog: IntentDialog? = nil, requestDisambiguationDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default) where Entity : AppEntity, Value.ValueType == EntityCollection<Entity>
 ```
+
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 ## Parameters
 

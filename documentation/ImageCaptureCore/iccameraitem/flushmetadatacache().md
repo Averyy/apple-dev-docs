@@ -1,7 +1,8 @@
 # flushMetadataCache()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the item’s cached metadata.
 
@@ -18,15 +19,20 @@ Deletes the item’s cached metadata.
 func flushMetadataCache()
 ```
 
+```objc
+- (void) flushMetadataCache;
+```
+
 ## See Also
 
-- [func requestMetadata()](iccameraitem/requestmetadata.md)
+### Requesting Metadata
+- [func requestMetadata()](./requestmetadata%28%29.md)
   Requests metadata for the item.
-- [var metadata: [AnyHashable : Any]?](iccameraitem/metadata.md)
+- [var metadata: [AnyHashable : Any]?](./metadata.md)
   The item’s metadata.
-- [var metadataIfAvailable: [String : Any]?](iccameraitem/metadataifavailable.md)
+- [var metadataIfAvailable: [String : Any]?](./metadataifavailable.md)
   The item’s metadata if it is readily available.
-- [struct ICCameraItemMetadataOption](iccameraitemmetadataoption.md)
+- [struct ICCameraItemMetadataOption](../iccameraitemmetadataoption.md)
   An option for the item’s metadata.
 
 

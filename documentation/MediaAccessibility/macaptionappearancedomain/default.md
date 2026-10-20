@@ -1,7 +1,8 @@
 # MACaptionAppearanceDomain.default
 
 **Framework**: Media Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system default value for the setting should be returned.
 
@@ -19,9 +20,14 @@ The system default value for the setting should be returned.
 case `default`
 ```
 
+```c
+kMACaptionAppearanceDomainDefault
+```
+
 ## See Also
 
-- [MACaptionAppearanceDomain.user](macaptionappearancedomain/user.md)
+### Constants
+- [MACaptionAppearanceDomain.user](./user.md)
   The user’s preferred value for the setting should be returned.
 
 

@@ -1,7 +1,8 @@
 # ColorSyncProfileSetTag(_:_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a tag in a mutable profile.
 
@@ -20,6 +21,10 @@ Sets a tag in a mutable profile.
 func ColorSyncProfileSetTag(_ prof: ColorSyncMutableProfile!, _ signature: CFString!, _ data: CFData!)
 ```
 
+```c
+extern void ColorSyncProfileSetTag(ColorSyncMutableProfileRef prof, CFStringRef signature, CFDataRef data);
+```
+
 ## Parameters
 
 - `prof`: The profile in which to set the tag.
@@ -28,15 +33,16 @@ func ColorSyncProfileSetTag(_ prof: ColorSyncMutableProfile!, _ signature: CFStr
 
 ## See Also
 
-- [func ColorSyncProfileContainsTag(ColorSyncProfile!, CFString!) -> Bool](colorsyncprofilecontainstag(_:_:).md)
+### Managing tags and the header
+- [func ColorSyncProfileContainsTag(ColorSyncProfile!, CFString!) -> Bool](./colorsyncprofilecontainstag%28_,_%29.md)
   Returns a Boolean value indicating whether a profile contains a given tag.
-- [func ColorSyncProfileCopyTag(ColorSyncProfile!, CFString!) -> Unmanaged<CFData>?](colorsyncprofilecopytag(_:_:).md)
+- [func ColorSyncProfileCopyTag(ColorSyncProfile!, CFString!) -> Unmanaged<CFData>?](./colorsyncprofilecopytag%28_,_%29.md)
   Copies a tag from a profile.
-- [func ColorSyncProfileCopyTagSignatures(ColorSyncProfile!) -> Unmanaged<CFArray>?](colorsyncprofilecopytagsignatures(_:).md)
+- [func ColorSyncProfileCopyTagSignatures(ColorSyncProfile!) -> Unmanaged<CFArray>?](./colorsyncprofilecopytagsignatures%28_%29.md)
   Copies the tag signatures of a profile.
-- [func ColorSyncProfileRemoveTag(ColorSyncMutableProfile!, CFString!)](colorsyncprofileremovetag(_:_:).md)
+- [func ColorSyncProfileRemoveTag(ColorSyncMutableProfile!, CFString!)](./colorsyncprofileremovetag%28_,_%29.md)
   Removes a tag from a mutable profile.
-- [func ColorSyncProfileSetHeader(ColorSyncMutableProfile!, CFData!)](colorsyncprofilesetheader(_:_:).md)
+- [func ColorSyncProfileSetHeader(ColorSyncMutableProfile!, CFData!)](./colorsyncprofilesetheader%28_,_%29.md)
   Sets the header of a mutable profile.
 
 

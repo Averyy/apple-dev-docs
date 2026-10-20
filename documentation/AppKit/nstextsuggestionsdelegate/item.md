@@ -1,7 +1,8 @@
 # NSTextSuggestionsDelegate.Item
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A suggestion item with the same suggestion item type as the delegate.
 

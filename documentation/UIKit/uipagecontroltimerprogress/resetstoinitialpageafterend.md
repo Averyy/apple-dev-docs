@@ -1,7 +1,8 @@
 # resetsToInitialPageAfterEnd
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the page control should loop back to page 0 after the last page. Default is NO.
 
@@ -16,6 +17,10 @@ Determines if the page control should loop back to page 0 after the last page. D
 
 ```swift
 var resetsToInitialPageAfterEnd: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL resetsToInitialPageAfterEnd;
 ```
 
 

@@ -1,7 +1,8 @@
 # replaceTextStorage(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the layout manager’s current text storage object with the specified object.
 
@@ -14,9 +15,13 @@ Replaces the layout manager’s current text storage object with the specified o
 func replaceTextStorage(_ newTextStorage: NSTextStorage)
 ```
 
+```objc
+- (void) replaceTextStorage:(NSTextStorage *) newTextStorage;
+```
+
 #### Discussion
 
-Use this method to update the text storage uniformly for a group of related layout manager objects. Unlike changing the value in the textStorage property, this method replaces the text storage for all [`NSLayoutManager`](nslayoutmanager.md) objects that share the current layout manager’s [`NSTextStorage`](nstextstorage.md) object.
+Use this method to update the text storage uniformly for a group of related layout manager objects. Unlike changing the value in the textStorage property, this method replaces the text storage for all [`NSLayoutManager`](../nslayoutmanager.md) objects that share the current layout manager’s [`NSTextStorage`](../nstextstorage.md) object.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ Use this method to update the text storage uniformly for a group of related layo
 
 ## See Also
 
-- [var textStorage: NSTextStorage?](nslayoutmanager/textstorage.md)
+### Accessing the text storage
+- [var textStorage: NSTextStorage?](./textstorage.md)
   The text storage object that contains the content to lay out.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Video  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 **Availability**:

@@ -1,7 +1,8 @@
 # AppExtensionPoint.Capabilities
 
 **Framework**: ExtensionFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The capabilities that an your extension implements
 
@@ -27,16 +28,16 @@ When creating a binding in your app extension, use this type to specify the capa
 ## Topics
 
 ### Structures
-- [AppExtensionPoint.Capabilities.Builder](appextensionpoint/capabilities/builder.md)
+- [AppExtensionPoint.Capabilities.Builder](./capabilities/builder.md)
 ### Initializers
-- [init(() -> AppExtensionPoint.Capabilities)](appextensionpoint/capabilities/init(_:).md)
+- [init(() -> AppExtensionPoint.Capabilities)](./capabilities/init%28_%29.md)
   Creates capabilities specifying the
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the reader session is started and ready to use.
@@ -17,9 +18,13 @@ A Boolean value that indicates whether the reader session is started and ready t
 var isReady: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isReady) BOOL ready;
+```
+
 #### Discussion
 
-As soon as a reader session is successfully activated, radio-frequency discovery polling begins. When a tag is detected, [`readerSession:didDetectTags:`](nfcreadersessiondelegate/readersession:diddetecttags:.md) is called.
+As soon as a reader session is successfully activated, radio-frequency discovery polling begins. When a tag is detected, [`readerSession:didDetectTags:`](../nfcreadersessiondelegate/readersession_diddetecttags_.md) is called.
 
 
 ---

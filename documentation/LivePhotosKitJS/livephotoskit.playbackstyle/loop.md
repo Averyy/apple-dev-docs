@@ -1,24 +1,26 @@
 # LOOP
 
 **Framework**: LivePhotosKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - LivePhotosKit JS 1.5+
 
 ## Declaration
 
-```swift
+```
 const PlaybackStyleLiteral LOOP;
 ```
 
 ## See Also
 
-- [FULL](livephotoskit.playbackstyle/full.md)
+### Enumeration Cases
+- [FULL](./full.md)
   Play the entire motion content including transition effects at the start and end.
-- [HINT](livephotoskit.playbackstyle/hint.md)
+- [HINT](./hint.md)
   Play a short section of the motion content.
-- [default](livephotoskit.playbackstyle/default.md)
+- [default](./default.md)
 
 
 ---

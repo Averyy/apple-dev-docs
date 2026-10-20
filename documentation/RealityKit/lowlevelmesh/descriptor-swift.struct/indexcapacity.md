@@ -1,7 +1,8 @@
 # indexCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of indices to allocate space for.
 
@@ -21,13 +22,14 @@ var indexCapacity: Int
 
 #### Discussion
 
-You can specify ranges of indices to display dynamically with [`parts`](lowlevelmesh/parts.md).
+You can specify ranges of indices to display dynamically with [`parts`](../parts.md).
 
 ## See Also
 
-- [var vertexCapacity: Int](lowlevelmesh/descriptor-swift.struct/vertexcapacity.md)
+### Defining the descriptor’s limits
+- [var vertexCapacity: Int](./vertexcapacity.md)
   The number of vertices to allocate space for.
-- [static let maxVertexBufferCount: Int](lowlevelmesh/descriptor-swift.struct/maxvertexbuffercount.md)
+- [static let maxVertexBufferCount: Int](./maxvertexbuffercount.md)
   The maximum number of separate buffers the system supports.
 
 

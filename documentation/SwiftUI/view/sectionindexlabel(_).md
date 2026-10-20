@@ -1,7 +1,8 @@
 # sectionIndexLabel(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the label that is used in a section index to point to this section, typically only a single character long.
 
@@ -21,6 +22,13 @@ Sets the label that is used in a section index to point to this section, typical
 nonisolated func sectionIndexLabel(_ label: Text?) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated func sectionIndexLabel<S>(_ label: S?) -> some View where S : StringProtocol
+```
+
 #### Discussion
 
 - See also `listSectionIndexVisibility(_:)`
@@ -31,7 +39,8 @@ nonisolated func sectionIndexLabel(_ label: Text?) -> some View
 
 ## See Also
 
-- [func listSectionIndexVisibility(Visibility) -> some View](view/listsectionindexvisibility(_:).md)
+### Configuring a section index
+- [func listSectionIndexVisibility(Visibility) -> some View](./listsectionindexvisibility%28_%29.md)
   Changes the visibility of the list section index.
 
 

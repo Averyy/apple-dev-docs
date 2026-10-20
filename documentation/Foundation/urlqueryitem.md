@@ -1,7 +1,8 @@
 # URLQueryItem
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single name-value pair from the query portion of a URL.
 
@@ -23,36 +24,37 @@ struct URLQueryItem
 ## Topics
 
 ### Creating Query Items
-- [init(name: String, value: String?)](urlqueryitem/init(name:value:).md)
+- [init(name: String, value: String?)](./urlqueryitem/init%28name,value%29.md)
   Creates a new query item with the name and value you specify.
 ### Accessing the Item’s Components
-- [var name: String](urlqueryitem/name.md)
+- [var name: String](./urlqueryitem/name.md)
   The name of the query item.
-- [var value: String?](urlqueryitem/value.md)
+- [var value: String?](./urlqueryitem/value.md)
   The value for the query item.
 ### Using Reference Types
-- [class NSURLQueryItem](nsurlqueryitem.md)
+- [class NSURLQueryItem](./nsurlqueryitem.md)
   An object representing a single name/value pair for an item in the query portion of a URL.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct URL](url.md)
+### URLs
+- [struct URL](./url.md)
   A value that identifies the location of a resource, such as an item on a remote server or the path to a local file.
-- [struct URLComponents](urlcomponents.md)
+- [struct URLComponents](./urlcomponents.md)
   A structure that parses URLs into and constructs URLs from their constituent parts.
 
 

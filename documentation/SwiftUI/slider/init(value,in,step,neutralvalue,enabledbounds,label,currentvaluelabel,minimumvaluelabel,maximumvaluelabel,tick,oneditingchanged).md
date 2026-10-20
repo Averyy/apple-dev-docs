@@ -1,7 +1,8 @@
 # init(value:in:step:neutralValue:enabledBounds:label:currentValueLabel:minimumValueLabel:maximumValueLabel:tick:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to select a value from a given range, subject to a step increment, which displays the provided labels and customizable ticks.
 
@@ -19,6 +20,8 @@ Creates a slider to select a value from a given range, subject to a step increme
 nonisolated
 init<V>(value: Binding<V>, in bounds: ClosedRange<V>, step: V.Stride = 1, neutralValue: V? = nil, enabledBounds: ClosedRange<V>? = nil, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> some View = { EmptyView() }, @ContentBuilder minimumValueLabel: () -> ValueLabel = { EmptyView() }, @ContentBuilder maximumValueLabel: () -> ValueLabel = { EmptyView() }, tick: (V) -> SliderTick<V>? = { _ in nil }, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : BinaryFloatingPoint, V.Stride : BinaryFloatingPoint
 ```
+
+Available when `Label` conforms to `View` and `ValueLabel` conforms to `View`.
 
 #### Discussion
 

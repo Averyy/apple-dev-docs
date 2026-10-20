@@ -1,7 +1,8 @@
 # backwardFlow
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The backward optical flow pixel buffer that was provided when the object was created.
 
@@ -19,9 +20,14 @@ The backward optical flow pixel buffer that was provided when the object was cre
 var backwardFlow: CVPixelBuffer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CVPixelBufferRef backwardFlow;
+```
+
 ## See Also
 
-- [var forwardFlow: CVPixelBuffer](vtframeprocessoropticalflow/forwardflow.md)
+### Inspecting the configuration
+- [var forwardFlow: CVPixelBuffer](./forwardflow.md)
   The forward optical flow pixel that was provided when the object was created.
 
 

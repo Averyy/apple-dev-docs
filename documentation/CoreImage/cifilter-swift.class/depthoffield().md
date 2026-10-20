@@ -1,7 +1,8 @@
 # depthOfField()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Simulates a depth of field effect.
 
@@ -19,6 +20,10 @@ Simulates a depth of field effect.
 class func depthOfField() -> any CIFilter & CIDepthOfField
 ```
 
+```objc
++ (CIFilter<CIDepthOfField> *) depthOfFieldFilter;
+```
+
 #### Return Value
 
 The modified image.
@@ -29,12 +34,12 @@ This method applies the depth of field filter to an image. The effect simulates 
 
 The depth of field filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`point0`**: A set of coordinates marking the first point to be focused on as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
-- **`point1`**: A set of coordinates marking the second point to be focused on as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
-- **`unsharpMaskRadius`**: A `float` representing the radius of the unsharpened mask effect applied to the in-focus area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`unsharpMaskIntensity`**: A `float` representing the intensity of the unsharp mask effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`point0`**: A set of coordinates marking the first point to be focused on as a [`CGPoint`](../../CoreFoundation/cgpoint.md).
+- **`point1`**: A set of coordinates marking the second point to be focused on as a [`CGPoint`](../../CoreFoundation/cgpoint.md).
+- **`unsharpMaskRadius`**: A `float` representing the radius of the unsharpened mask effect applied to the in-focus area of effect as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`unsharpMaskIntensity`**: A `float` representing the intensity of the unsharp mask effect as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that results in the center cilantro being in focus while gradually blurring to the top and bottom of the image:
 
@@ -51,39 +56,40 @@ func depthOfField(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a pile of cilantro. The photo on the left is clear and crisp with good lighting. In the photo on the right, a depth of field filter is applied, resulting in the cilantro in the image’s periphery becoming blurred while the center remains in focus.](/images/com.apple.coreimage/media-3599997@2x.png)
+![Two photographs of a pile of cilantro. The photo on the left is clear and crisp with good lighting. In the photo on the right, a depth of field filter is applied, resulting in the cilantro in the image’s periphery becoming blurred while the center remains in focus.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3599997@2x.png)
 
 ## See Also
 
-- [class func blendWithAlphaMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithalphamask.md)
+### Filters
+- [class func blendWithAlphaMask() -> any CIFilter & CIBlendWithMask](./blendwithalphamask%28%29.md)
   Blends two images by using an alpha mask image.
-- [class func blendWithBlueMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithbluemask.md)
+- [class func blendWithBlueMask() -> any CIFilter & CIBlendWithMask](./blendwithbluemask%28%29.md)
   Blends two images by using a blue mask image.
-- [class func blendWithMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithmask.md)
+- [class func blendWithMask() -> any CIFilter & CIBlendWithMask](./blendwithmask%28%29.md)
   Blends two images by using a mask image.
-- [class func blendWithRedMask() -> any CIFilter & CIBlendWithMask](cifilter-swift.class/blendwithredmask.md)
+- [class func blendWithRedMask() -> any CIFilter & CIBlendWithMask](./blendwithredmask%28%29.md)
   Blends two images by using a red mask image.
-- [class func bloom() -> any CIFilter & CIBloom](cifilter-swift.class/bloom.md)
+- [class func bloom() -> any CIFilter & CIBloom](./bloom%28%29.md)
   Adjusts an image’s colors by applying a blur effect.
-- [class func cannyEdgeDetector() -> any CIFilter & CICannyEdgeDetector](cifilter-swift.class/cannyedgedetector.md)
+- [class func cannyEdgeDetector() -> any CIFilter & CICannyEdgeDetector](./cannyedgedetector%28%29.md)
   Applies the Canny edge-detection algorithm to an image.
-- [class func comicEffect() -> any CIFilter & CIComicEffect](cifilter-swift.class/comiceffect.md)
+- [class func comicEffect() -> any CIFilter & CIComicEffect](./comiceffect%28%29.md)
   Creates an image with a comic book effect.
-- [class func coreMLModel() -> any CIFilter & CICoreMLModel](cifilter-swift.class/coremlmodel.md)
+- [class func coreMLModel() -> any CIFilter & CICoreMLModel](./coremlmodel%28%29.md)
   Filters an image with a Core ML model.
-- [class func crystallize() -> any CIFilter & CICrystallize](cifilter-swift.class/crystallize.md)
+- [class func crystallize() -> any CIFilter & CICrystallize](./crystallize%28%29.md)
   Creates an image made with a series of colorful polygons.
-- [class func edges() -> any CIFilter & CIEdges](cifilter-swift.class/edges.md)
+- [class func edges() -> any CIFilter & CIEdges](./edges%28%29.md)
   Hilghlights edges of objects found within an image.
-- [class func edgeWork() -> any CIFilter & CIEdgeWork](cifilter-swift.class/edgework.md)
+- [class func edgeWork() -> any CIFilter & CIEdgeWork](./edgework%28%29.md)
   Produces a black-and-white image that looks similar to a woodblock print.
-- [class func gaborGradients() -> any CIFilter & CIGaborGradients](cifilter-swift.class/gaborgradients.md)
+- [class func gaborGradients() -> any CIFilter & CIGaborGradients](./gaborgradients%28%29.md)
   Highlights textures in an image.
-- [class func gloom() -> any CIFilter & CIGloom](cifilter-swift.class/gloom.md)
+- [class func gloom() -> any CIFilter & CIGloom](./gloom%28%29.md)
   Adjusts an image’s color by applying a gloom filter.
-- [class func heightFieldFromMask() -> any CIFilter & CIHeightFieldFromMask](cifilter-swift.class/heightfieldfrommask.md)
+- [class func heightFieldFromMask() -> any CIFilter & CIHeightFieldFromMask](./heightfieldfrommask%28%29.md)
   Creates a realistic shaded height-field image.
-- [class func hexagonalPixellate() -> any CIFilter & CIHexagonalPixellate](cifilter-swift.class/hexagonalpixellate.md)
+- [class func hexagonalPixellate() -> any CIFilter & CIHexagonalPixellate](./hexagonalpixellate%28%29.md)
   Creates an image made of a series of colorful hexagons.
 
 

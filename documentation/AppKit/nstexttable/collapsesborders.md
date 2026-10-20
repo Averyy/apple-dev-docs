@@ -1,7 +1,8 @@
 # collapsesBorders
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the text table borders are collapsible.
 
@@ -14,9 +15,13 @@ A Boolean value indicating whether the text table borders are collapsible.
 var collapsesBorders: Bool { get set }
 ```
 
+```objc
+@property BOOL collapsesBorders;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the text table borders are collapsible.
+The value of this property is [`true`](../../Swift/true.md) when the text table borders are collapsible.
 
 
 ---

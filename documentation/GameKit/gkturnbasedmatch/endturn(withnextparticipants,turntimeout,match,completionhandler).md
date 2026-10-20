@@ -1,7 +1,8 @@
 # endTurn(withNextParticipants:turnTimeout:match:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Passes the turn from the current participant to the next participant.
 
@@ -17,29 +18,42 @@ Passes the turn from the current participant to the next participant.
 ## Declaration
 
 ```swift
+func endTurn(withNextParticipants nextParticipants: [GKTurnBasedParticipant], turnTimeout timeout: TimeInterval, match matchData: Data, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func endTurn(withNextParticipants nextParticipants: [GKTurnBasedParticipant], turnTimeout timeout: TimeInterval, match matchData: Data) async throws
+```
+
+```objc
+- (void) endTurnWithNextParticipants:(NSArray<GKTurnBasedParticipant *> *) nextParticipants turnTimeout:(NSTimeInterval) timeout matchData:(NSData *) matchData completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
-Invoke this method only when the local player is the current participant. To receive turn-based events that this method generates, register a listener that conforms to the [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) protocol with the local player. See [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
+Invoke this method only when the local player is the current participant. To receive turn-based events that this method generates, register a listener that conforms to the [`GKTurnBasedEventListener`](../gkturnbasedeventlistener.md) protocol with the local player. See [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md).
 
 ## Parameters
 
-- `nextParticipants`: Match participants in the order you want Game Center to pass the turn. Game Center passes the turn to the next participant in the array when communication fails or a participant doesn’t finish their turn within the time limit. Elements in this array must be in the [`participants`](gkturnbasedmatch/participants.md) property.
+- `nextParticipants`: Match participants in the order you want Game Center to pass the turn. Game Center passes the turn to the next participant in the array when communication fails or a participant doesn’t finish their turn within the time limit. Elements in this array must be in the [`participants`](./participants.md) property.
 - `timeout`: The length of time a participant has to complete their turn before Game Center passes the turn to the next participant. The maximum value is 90 days.
 - `matchData`: Your game-specific data representing the match state. For example, include information needed for the next participant to take their turn in this object. Don’t pass `nil` as this parameter.
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameter:
+
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [func saveCurrentTurn(withMatch: Data, completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/savecurrentturn(withmatch:completionhandler:).md)
+### Ending Turns and Saving Data
+- [func saveCurrentTurn(withMatch: Data, completionHandler: (((any Error)?) -> Void)?)](./savecurrentturn%28withmatch,completionhandler%29.md)
   Saves your match data in Game Center without ending the turn.
-- [Turn Timeouts](turn-timeouts.md)
+- [Turn Timeouts](../turn-timeouts.md)
   A timeout for a player to take their turn.
 
 

@@ -1,7 +1,8 @@
 # bitwiseOR(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elementwise bitwise OR of binary representations of two integer tensors.
 
@@ -17,6 +18,10 @@ Returns the elementwise bitwise OR of binary representations of two integer tens
 
 ```swift
 func bitwiseOR(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) bitwiseORWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

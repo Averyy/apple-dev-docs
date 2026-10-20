@@ -1,7 +1,8 @@
 # loudnessResults
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An async sequence that yields loudness analysis results as they become available.
 
@@ -27,11 +28,12 @@ The sequence ends when the caller receives a `nil` result. You can use the loudn
 
 ## See Also
 
-- [MusicUnderstandingSession.SessionResult](musicunderstandingsession/sessionresult.md)
+### Getting analysis results
+- [MusicUnderstandingSession.SessionResult](./sessionresult.md)
   The aggregated results for all analysis types that a music understanding session performs.
-- [MusicUnderstandingSession.RangedValue](musicunderstandingsession/rangedvalue.md)
+- [MusicUnderstandingSession.RangedValue](./rangedvalue.md)
   A structure that pairs a value over a time range.
-- [MusicUnderstandingSession.TimedValue](musicunderstandingsession/timedvalue.md)
+- [MusicUnderstandingSession.TimedValue](./timedvalue.md)
   A structure that pairs a value with a time.
 
 

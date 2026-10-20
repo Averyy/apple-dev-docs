@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Feedback.objectTooClose
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The camera is too close to the object and it cannot be tracked well.
 

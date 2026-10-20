@@ -1,7 +1,8 @@
 # dismiss()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the current interface controller from the screen.
 
@@ -14,21 +15,26 @@ Dismisses the current interface controller from the screen.
 func dismiss()
 ```
 
+```objc
+- (void) dismissController;
+```
+
 #### Discussion
 
 Call this method when you want to dismiss an interface controller that you presented modally. Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func presentController(withName: String, context: Any?)](wkinterfacecontroller/presentcontroller(withname:context:).md)
+### Presenting interface controllers modally
+- [func presentController(withName: String, context: Any?)](./presentcontroller%28withname,context%29.md)
   Presents a single interface controller modally.
-- [func presentController(withNames: [String], contexts: [Any]?)](wkinterfacecontroller/presentcontroller(withnames:contexts:).md)
+- [func presentController(withNames: [String], contexts: [Any]?)](./presentcontroller%28withnames,contexts%29.md)
   Presents a page-based interface modally.
-- [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/presentcontroller(withnamesandcontexts:).md)
+- [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](./presentcontroller%28withnamesandcontexts%29.md)
   Presents a page-based interface modally.
-- [func presentAlert(withTitle: String?, message: String?, preferredStyle: WKAlertControllerStyle, actions: [WKAlertAction])](wkinterfacecontroller/presentalert(withtitle:message:preferredstyle:actions:).md)
+- [func presentAlert(withTitle: String?, message: String?, preferredStyle: WKAlertControllerStyle, actions: [WKAlertAction])](./presentalert%28withtitle,message,preferredstyle,actions%29.md)
   Presents an alert or action sheet over the current interface controller.
-- [enum WKAlertControllerStyle](wkalertcontrollerstyle.md)
+- [enum WKAlertControllerStyle](../wkalertcontrollerstyle.md)
   Constants indicating the styles for standard system alerts.
 
 

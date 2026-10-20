@@ -1,7 +1,8 @@
 # AlarmManager.AlarmUpdates.Iterator
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A nested type that iterates over the elements of this sequence.
 
@@ -19,19 +20,20 @@ struct Iterator
 ## Topics
 
 ### Interating a function
-- [func next() async -> AlarmManager.AlarmUpdates.Element?](alarmmanager/alarmupdates-swift.struct/iterator/next.md)
+- [func next() async -> AlarmManager.AlarmUpdates.Element?](./iterator/next%28%29.md)
   Returns the next element in the sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](./makeasynciterator%28%29.md)
   Returns an async iterator over the elements of this sequence.
-- [AlarmManager.AlarmUpdates.Element](alarmmanager/alarmupdates-swift.struct/element.md)
+- [AlarmManager.AlarmUpdates.Element](./element.md)
   A type representing the sequence’s elements.
 
 

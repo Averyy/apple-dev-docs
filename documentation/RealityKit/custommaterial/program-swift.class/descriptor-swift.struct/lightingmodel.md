@@ -1,7 +1,8 @@
 # lightingModel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Modes that describe how materials using created `CustomMaterial.Program` will interact with light within the RealityKit scene.
 

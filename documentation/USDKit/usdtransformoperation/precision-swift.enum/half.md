@@ -1,7 +1,8 @@
 # USDTransformOperation.Precision.half
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Half precision (16-bit).
 

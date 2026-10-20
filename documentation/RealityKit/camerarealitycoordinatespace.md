@@ -1,7 +1,8 @@
 # CameraRealityCoordinateSpace
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The coordinate space that represents the scene’s active camera.
 
@@ -21,23 +22,24 @@ struct CameraRealityCoordinateSpace
 ## Topics
 
 ### Initializers
-- [init()](camerarealitycoordinatespace/init.md)
+- [init()](./camerarealitycoordinatespace/init%28%29.md)
   Creates a camera coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [RealityCoordinateSpace](realitycoordinatespace.md)
+- [RealityCoordinateSpace](./realitycoordinatespace.md)
 
 ## See Also
 
-- [protocol RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
+### Coordinate space conversions
+- [protocol RealityCoordinateSpaceConverting](./realitycoordinatespaceconverting.md)
   A value that can be converted between SwiftUI `CoordinateSpace` and RealityKit `Entity`.
-- [struct SceneRealityCoordinateSpace](scenerealitycoordinatespace.md)
+- [struct SceneRealityCoordinateSpace](./scenerealitycoordinatespace.md)
   The coordinate space that represents the center of a RealityKit scene.
-- [protocol RealityCoordinateSpace](realitycoordinatespace.md)
+- [protocol RealityCoordinateSpace](./realitycoordinatespace.md)
   A 3D coordinate space that exists within a RealityKit hierarchy.
-- [protocol RealityCoordinateSpaceProjecting](realitycoordinatespaceprojecting.md)
+- [protocol RealityCoordinateSpaceProjecting](./realitycoordinatespaceprojecting.md)
   A protocol for coordinate spaces that can project 2D points to and from 3D.
 
 

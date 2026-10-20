@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the rectangle.
 
@@ -22,11 +23,12 @@ var width: CGFloat { get }
 
 ## See Also
 
-- [let cgRect: CGRect](normalizedrect/cgrect.md)
+### Inspecting a normalized rectangle
+- [let cgRect: CGRect](./cgrect.md)
   The normalized rectangle as a Core Graphics rectangle.
-- [var origin: CGPoint](normalizedrect/origin.md)
+- [var origin: CGPoint](./origin.md)
   The lower left-hand corner of the rectangle.
-- [var height: CGFloat](normalizedrect/height.md)
+- [var height: CGFloat](./height.md)
   The height of the rectangle.
 
 

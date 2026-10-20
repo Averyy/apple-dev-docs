@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a video RAW processor factory.
@@ -13,6 +14,10 @@ Creates a video RAW processor factory.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

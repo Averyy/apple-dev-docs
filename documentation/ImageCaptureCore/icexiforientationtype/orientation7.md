@@ -1,16 +1,17 @@
 # ICEXIFOrientationType.orientation7
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rotated 90° CW and flipped vertically
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,21 +19,26 @@ Rotated 90° CW and flipped vertically
 case orientation7
 ```
 
+```c
+ICEXIFOrientation7
+```
+
 ## See Also
 
-- [ICEXIFOrientationType.orientation1](icexiforientationtype/orientation1.md)
+### Constants
+- [ICEXIFOrientationType.orientation1](./orientation1.md)
   Normal
-- [ICEXIFOrientationType.orientation2](icexiforientationtype/orientation2.md)
+- [ICEXIFOrientationType.orientation2](./orientation2.md)
   Flipped horizontally
-- [ICEXIFOrientationType.orientation3](icexiforientationtype/orientation3.md)
+- [ICEXIFOrientationType.orientation3](./orientation3.md)
   Rotated 180°
-- [ICEXIFOrientationType.orientation4](icexiforientationtype/orientation4.md)
+- [ICEXIFOrientationType.orientation4](./orientation4.md)
   Flipped vertically
-- [ICEXIFOrientationType.orientation5](icexiforientationtype/orientation5.md)
+- [ICEXIFOrientationType.orientation5](./orientation5.md)
   Rotated 90° CCW and flipped vertically
-- [ICEXIFOrientationType.orientation6](icexiforientationtype/orientation6.md)
+- [ICEXIFOrientationType.orientation6](./orientation6.md)
   Rotated 90° CCW
-- [ICEXIFOrientationType.orientation8](icexiforientationtype/orientation8.md)
+- [ICEXIFOrientationType.orientation8](./orientation8.md)
   Rotated 90° CW
 
 

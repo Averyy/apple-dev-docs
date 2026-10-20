@@ -1,16 +1,19 @@
 # perform(_:)
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a request to the vehicle to start an action that has a separate stopping point.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.3+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.3+ - Deprecated in 15.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use perform(enduringAction:continuationStrategy:) instead
 
 ## Declaration
 
@@ -30,7 +33,8 @@ Use the returned object to get the execution status of the initial request, and 
 
 ## See Also
 
-- [func perform(RemoteKeylessEntryAction) throws -> RemoteKeylessEntryAction.ExecutionRequest](carkeyremotecontrolsession/perform(_:)-8ac0c.md)
+### Performing Vehicle-Related Actions
+- [func perform(RemoteKeylessEntryAction) throws -> RemoteKeylessEntryAction.ExecutionRequest](./perform%28_%29-8ac0c.md)
   Sends a request to the vehicle to perform a one-time action.
 
 

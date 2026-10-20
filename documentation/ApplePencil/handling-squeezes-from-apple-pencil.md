@@ -1,6 +1,7 @@
 # Handling squeezes from Apple Pencil
 
-**Framework**: Apple Pencil
+**Framework**: Apple Pencil  
+**Role**: Article
 
 Detect and respond to squeezes a person makes on Apple Pencil Pro.
 
@@ -8,17 +9,17 @@ Detect and respond to squeezes a person makes on Apple Pencil Pro.
 
 You can use Apple Pencil interactions to allow people to access functionality in your app quickly. Squeezing Apple Pencil Pro lets a person perform actions such as showing a contextual palette without moving the pencil to another location on the screen.
 
-![An illustration showing a hand squeezing Apple Pencil near the tip.](/images/com.apple.ApplePencil/apple-pencil-squeeze@2x.png)
+![An illustration showing a hand squeezing Apple Pencil near the tip.](https://developer.apple.com/tutorials/images/com.apple.ApplePencil/apple-pencil-squeeze@2x.png)
 
 > **Note**: Only Apple Pencil Pro supports squeeze interactions.
 
-##### Register for a Squeeze
+##### Register for a squeeze
 
 To respond to squeezes from Apple Pencil Pro in your app, you need to register your view to receive squeeze interactions.
 
 **SwiftUI**:
 
-Add an [`onPencilSqueeze(perform:)`](https://developer.apple.com/documentation/swiftui/view/onpencilsqueeze(perform:)) view modifier to your view.
+Add an [`onPencilSqueeze(perform:)`](../SwiftUI/view/onpencilsqueeze%28perform%29.md) view modifier to your view.
 
 ```swift
 MyView()
@@ -29,7 +30,7 @@ MyView()
 
 **UIKit**:
 
-Create a [`UIPencilInteraction`](https://developer.apple.com/documentation/uikit/uipencilinteraction) object, passing an object that implements the [`UIPencilInteractionDelegate`](https://developer.apple.com/documentation/uikit/uipencilinteractiondelegate) protocol to the `delegate` parameter. Then, add the interaction to your view.
+Create a [`UIPencilInteraction`](../UIKit/uipencilinteraction.md) object, passing an object that implements the [`UIPencilInteractionDelegate`](../UIKit/uipencilinteractiondelegate.md) protocol to the `delegate` parameter. Then, add the interaction to your view.
 
 ```swift
 class ViewController: UIViewController, UIPencilInteractionDelegate {
@@ -45,7 +46,7 @@ class ViewController: UIViewController, UIPencilInteractionDelegate {
 }
 ```
 
-##### Check the Preferred Squeeze Action
+##### Check the preferred squeeze action
 
 A person can choose which action they prefer to perform when they squeeze Apple Pencil Pro. They choose this preference in Settings > Apple Pencil > Actions > Squeeze. In addition to drawing-specific actions like switching drawing tools, people can configure the preferred action for squeeze to perform any App Shortcut, including pre-configured shortcuts you provide for your app.
 
@@ -53,7 +54,7 @@ In your app, you can check the value of this preferred action for squeeze.
 
 **SwiftUI**:
 
-To check the preferred action, use the [`preferredPencilSqueezeAction`](https://developer.apple.com/documentation/swiftui/environmentvalues/preferredpencilsqueezeaction) environment value. For possible values, see [`PencilPreferredAction`](https://developer.apple.com/documentation/swiftui/pencilpreferredaction).
+To check the preferred action, use the [`preferredPencilSqueezeAction`](../SwiftUI/environmentvalues/preferredpencilsqueezeaction.md) environment value. For possible values, see [`PencilPreferredAction`](../SwiftUI/pencilpreferredaction.md).
 
 ```swift
 @Environment(\.preferredPencilSqueezeAction) private var preferredAction
@@ -61,15 +62,15 @@ To check the preferred action, use the [`preferredPencilSqueezeAction`](https://
 
 **UIKit**:
 
-To check the preferred action, use the [`preferredSqueezeAction`](https://developer.apple.com/documentation/uikit/uipencilinteraction/preferredsqueezeaction) class property on [`UIPencilInteraction`](https://developer.apple.com/documentation/uikit/uipencilinteraction). For possible values, see [`UIPencilPreferredAction`](https://developer.apple.com/documentation/uikit/uipencilpreferredaction).
+To check the preferred action, use the [`preferredSqueezeAction`](../UIKit/uipencilinteraction/preferredsqueezeaction.md) class property on [`UIPencilInteraction`](../UIKit/uipencilinteraction.md). For possible values, see [`UIPencilPreferredAction`](../UIKit/uipencilpreferredaction.md).
 
 ```swift
 UIPencilInteraction.preferredSqueezeAction
 ```
 
-##### Choose the Action to Perform
+##### Choose the action to perform
 
-When possible, perform the preferred action to provide a consistent user experience across apps that support squeezes. If the preferred action doesn’t make sense in your app, consider giving people a way to specify a custom action that’s suitable for your app. For design guidance, read Human Interface Guidelines > Apple Pencil and Scribble > [`Squeeze`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble#Squeeze).
+When possible, perform the preferred action to provide a consistent user experience across apps that support squeezes. If the preferred action doesn’t make sense in your app, consider giving people a way to specify a custom action that’s suitable for your app. For design guidance, read Human Interface Guidelines > Apple Pencil and Scribble > [Squeeze](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble#Squeeze).
 
 The following code shows a snippet from a drawing app that provides custom drawing tools. This app allows a person to configure a custom action to quickly swap to their favorite custom drawing tool instead of using the systemwide preferred action for squeezes. This app also supports the preferred actions to ignore squeezes, switch to the previous tool, and show a custom contextual palette near the Apple Pencil Pro tip.
 
@@ -196,11 +197,38 @@ func pencilInteraction(_ interaction: UIPencilInteraction,
 }
 ```
 
-###### Related Articles
+#### See Also
 
-###### Related Reference in Swiftui
+###### Related articles
 
-###### Related Reference in Uikit
+- [Handling double taps from Apple Pencil](./handling-double-taps-from-apple-pencil.md)
+  Detect and respond to double taps a person makes on Apple Pencil.
+
+###### Related reference in SwiftUI
+
+- [`onPencilSqueeze(perform:)`](../SwiftUI/view/onpencilsqueeze%28perform%29.md)
+  Adds an action to perform when the user squeezes their Apple Pencil.
+- [`PencilSqueezeGesturePhase`](../SwiftUI/pencilsqueezegesturephase.md)
+  Describes the phase and value of an Apple Pencil squeeze gesture.
+- [`PencilSqueezeGestureValue`](../SwiftUI/pencilsqueezegesturevalue.md)
+  Describes the value of an Apple Pencil squeeze gesture.
+- [`PencilPreferredAction`](../SwiftUI/pencilpreferredaction.md)
+  An action that the user prefers to perform after double-tapping their Apple Pencil.
+- [`PencilHoverPose`](../SwiftUI/pencilhoverpose.md)
+  A value describing the location and distance of an Apple Pencil hovering in the area above a view’s bounds.
+
+###### Related reference in UIKit
+
+- [`UIPencilInteraction`](../UIKit/uipencilinteraction.md)
+  An interaction that tells your app when a person double-taps or squeezes Apple Pencil.
+- [`UIPencilInteractionDelegate`](../UIKit/uipencilinteractiondelegate.md)
+  The interface an object implements to handle double taps or squeezes a person makes on Apple Pencil.
+- [`UIPencilInteraction.Squeeze`](../UIKit/uipencilinteraction/squeeze.md)
+  An interaction that represents a squeeze on Apple Pencil.
+- [`UIPencilInteraction.Phase`](../UIKit/uipencilinteraction/phase.md)
+  Constants that describe the phases of an interaction on Apple Pencil.
+- [`UIPencilHoverPose`](../UIKit/uipencilhoverpose.md)
+  An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
 
 ---

@@ -1,7 +1,8 @@
 # radiusStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the stride, in bytes, between radii in the radius buffer.
 
@@ -19,9 +20,13 @@ Sets the stride, in bytes, between radii in the radius buffer.
 var radiusStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger radiusStride;
+```
+
 #### Discussion
 
-You are responsible for ensuring this property is set to a multiple of the size corresponding to the [`radiusFormat`](mtl4accelerationstructuremotioncurvegeometrydescriptor/radiusformat.md). All keyframes share the same radius stride.
+You are responsible for ensuring this property is set to a multiple of the size corresponding to the [`radiusFormat`](./radiusformat.md). All keyframes share the same radius stride.
 
 This property defaults to `0` bytes, indicating that the radii are tightly packed.
 

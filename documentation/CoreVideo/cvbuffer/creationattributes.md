@@ -1,7 +1,8 @@
 # CVBuffer.CreationAttributes
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Attributes needed for creating a pixel buffer.
 
@@ -23,34 +24,34 @@ struct CreationAttributes
 ## Topics
 
 ### Initializers
-- [init?(CVBuffer.Attributes)](cvbuffer/creationattributes/init(_:).md)
-  Convert Attributes to CreationAttributes. This init will fail if [`pixelFormatType`](cvbuffer/creationattributes/pixelformattype.md) or [`size`](cvbuffer/creationattributes/size.md) properties are absent.
-- [init(pixelFormatType: CVPixelFormatType, size: CVImageSize, compatibility: CVPixelFormatDescription.Compatibility, bytesPerRowAlignment: Int?, planeAlignment: Int?, extendedPixels: CVPixelBufferPadding?)](cvbuffer/creationattributes/init(pixelformattype:size:compatibility:bytesperrowalignment:planealignment:extendedpixels:).md)
+- [init?(CVBuffer.Attributes)](./creationattributes/init%28_%29.md)
+  Convert Attributes to CreationAttributes. This init will fail if [`pixelFormatType`](./creationattributes/pixelformattype.md) or [`size`](./creationattributes/size.md) properties are absent.
+- [init(pixelFormatType: CVPixelFormatType, size: CVImageSize, compatibility: CVPixelFormatDescription.Compatibility, bytesPerRowAlignment: Int?, planeAlignment: Int?, extendedPixels: CVPixelBufferPadding?)](./creationattributes/init%28pixelformattype,size,compatibility,bytesperrowalignment,planealignment,extendedpixels%29.md)
 ### Instance Properties
-- [var backing: CVBuffer.CreationAttributes.Backing](cvbuffer/creationattributes/backing-swift.property.md)
+- [var backing: CVBuffer.CreationAttributes.Backing](./creationattributes/backing-swift.property.md)
   Defines how the memory for the pixel buffer backing is allocated. IOSurface backed pixel buffers can be shared between CPU and GPU also across process boundaries. Defaults to `Backing.ioSurface`.
-- [var bytesPerRowAlignment: Int?](cvbuffer/creationattributes/bytesperrowalignment.md)
+- [var bytesPerRowAlignment: Int?](./creationattributes/bytesperrowalignment.md)
   The number of bytes per row in the pixel buffer must be a multiple of this number.
-- [var compatibility: CVPixelFormatDescription.Compatibility](cvbuffer/creationattributes/compatibility.md)
+- [var compatibility: CVPixelFormatDescription.Compatibility](./creationattributes/compatibility.md)
   Defines interoperability of pixel buffers with other frameworks
-- [var extendedPixels: CVPixelBufferPadding?](cvbuffer/creationattributes/extendedpixels.md)
+- [var extendedPixels: CVPixelBufferPadding?](./creationattributes/extendedpixels.md)
   Sets the amount of extended pixel padding in the pixel buffer.
-- [var pixelFormatType: CVPixelFormatType](cvbuffer/creationattributes/pixelformattype.md)
+- [var pixelFormatType: CVPixelFormatType](./creationattributes/pixelformattype.md)
   Format of the pixel buffer bytes
-- [var planeAlignment: Int?](cvbuffer/creationattributes/planealignment.md)
+- [var planeAlignment: Int?](./creationattributes/planealignment.md)
   Planes start on a byte number that’s a multiple of this value.
-- [var size: CVImageSize](cvbuffer/creationattributes/size.md)
+- [var size: CVImageSize](./creationattributes/size.md)
   Size of the buffer in pixels
 ### Enumerations
-- [CVBuffer.CreationAttributes.Backing](cvbuffer/creationattributes/backing-swift.enum.md)
+- [CVBuffer.CreationAttributes.Backing](./creationattributes/backing-swift.enum.md)
   Type of backing storage used by the pixel buffer
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

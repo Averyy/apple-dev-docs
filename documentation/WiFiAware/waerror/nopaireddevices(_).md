@@ -1,7 +1,8 @@
 # WAError.noPairedDevices(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if your app doesn’t have access to any paired devices.
 
@@ -18,7 +19,8 @@ case noPairedDevices(WAError.NoPairedDevicesDetails)
 
 ## See Also
 
-- [WAError.NoPairedDevicesDetails](waerror/nopaireddevicesdetails.md)
+### Checking if paired devices are present or specified
+- [WAError.NoPairedDevicesDetails](./nopaireddevicesdetails.md)
   The optional details describing the lack of paired devices.
 
 

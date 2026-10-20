@@ -1,7 +1,8 @@
 # remediateVerdict(withRemediationURLMapKey:remediationButtonTextMapKey:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a verdict to drop the current chunk of network data and all subsequent data for the current flow, and provides a remediation URL.
 
@@ -17,6 +18,10 @@ Creates a verdict to drop the current chunk of network data and all subsequent d
 class func remediateVerdict(withRemediationURLMapKey remediationURLMapKey: String?, remediationButtonTextMapKey: String?) -> NEFilterDataVerdict
 ```
 
+```objc
++ (NEFilterDataVerdict *) remediateVerdictWithRemediationURLMapKey:(NSString *) remediationURLMapKey remediationButtonTextMapKey:(NSString *) remediationButtonTextMapKey;
+```
+
 #### Return Value
 
 A `NEFilterDataVerdict` object.
@@ -25,27 +30,28 @@ A `NEFilterDataVerdict` object.
 
 When the Filter Data Provider returns this verdict from one of its data filtering methods, the system resolves the verdict as follows:
 
-1. The system uses the verdict’s `remediationURLMapKey` and `remediationButtonTextMapKey` to look up the remediation URL parameters in the [`remediationMap`](nefiltercontrolprovider/remediationmap.md) dictionary set by the Filter Control Provider.
+1. The system uses the verdict’s `remediationURLMapKey` and `remediationButtonTextMapKey` to look up the remediation URL parameters in the [`remediationMap`](../nefiltercontrolprovider/remediationmap.md) dictionary set by the Filter Control Provider.
 2. The system then inserts the remediation URL parameters into the block page and presents it to the user.
 
 The user can tap the URL to appeal the decision to drop the flow. This starts the remediation process, if your app provides one.
 
 ## Parameters
 
-- `remediationURLMapKey`: The key in the Filter Control Provider’s [`remediationMap`](nefiltercontrolprovider/remediationmap.md) dictionary corresponding to the URL of the remediation link to give to the user.
+- `remediationURLMapKey`: The key in the Filter Control Provider’s [`remediationMap`](../nefiltercontrolprovider/remediationmap.md) dictionary corresponding to the URL of the remediation link to give to the user.
 - `remediationButtonTextMapKey`: The key in the Filter Control Provider’s `remediationMap` dictionary that corresponds to the text of the remediation link text to give to the user.
 
 ## See Also
 
-- [class func allow() -> NEFilterDataVerdict](nefilterdataverdict/allow.md)
+### Creating data verdicts
+- [class func allow() -> NEFilterDataVerdict](./allow%28%29.md)
   Creates a verdict that tells the system to pass the current chunk of network data and all subsequent data for the current flow to its final destination.
-- [class func drop() -> NEFilterDataVerdict](nefilterdataverdict/drop.md)
+- [class func drop() -> NEFilterDataVerdict](./drop%28%29.md)
   Creates a verdict that tells the system to drop the current chunk of network data and all subsequent data for the current flow.
-- [class func pause() -> NEFilterDataVerdict](nefilterdataverdict/pause.md)
+- [class func pause() -> NEFilterDataVerdict](./pause%28%29.md)
   Creates a verdict that tells the system to pause the flow.
-- [class func needRules() -> NEFilterDataVerdict](nefilterdataverdict/needrules.md)
+- [class func needRules() -> NEFilterDataVerdict](./needrules%28%29.md)
   Creates a verdict that tells the system that the Filter Control Provider needs to update the rules before making a decision about the flow’s data.
-- [init(passBytes: Int, peekBytes: Int)](nefilterdataverdict/init(passbytes:peekbytes:).md)
+- [init(passBytes: Int, peekBytes: Int)](./init%28passbytes,peekbytes%29.md)
   Creates a verdict that tells the system to pass a chunk of network data to its final destination, and specifies the next chunk of data to provide.
 
 

@@ -1,6 +1,7 @@
 # Understanding Browser Support
 
-**Framework**: MapKit JS
+**Framework**: MapKit JS  
+**Role**: Article
 
 Supported browsers and compatibility information for MapKit JS.
 
@@ -8,14 +9,14 @@ Supported browsers and compatibility information for MapKit JS.
 
 MapKit JS works best with the latest versions of the following browsers, depending on your device.
 
-##### On Your Mac or Pc
+##### On your Mac or PC
 
 - Safari (macOS only)
 - Edge
 - Chrome
 - Firefox
 
-##### On Your Mobile Device
+##### On your mobile device
 
 - Safari (iOS or iPadOS only)
 - Edge
@@ -24,13 +25,14 @@ MapKit JS works best with the latest versions of the following browsers, dependi
 
 ## See Also
 
-- [Displaying place information using the Maps Embed API](displaying-place-information-using-the-maps-embed-api.md)
+### Essentials
+- [Displaying place information using the Maps Embed API](./displaying-place-information-using-the-maps-embed-api.md)
   Show place information on a map using a URL.
-- [Creating a Maps token](creating-a-maps-token.md)
+- [Creating a Maps token](./creating-a-maps-token.md)
   Generate your token to access MapKit services with proper authorization.
-- [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
+- [Loading the latest version of MapKit JS](./loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
-- [class mapkit](mapkit.md)
+- [class mapkit](./mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 
 

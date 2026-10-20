@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.Status.disconnected(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session has disconnected or failed to connect to a streaming endpoint.
 
@@ -16,7 +17,7 @@ case disconnected(FoveatedStreamingSession.DisconnectReason)
 
 #### Discussion
 
-The [`FoveatedStreamingSession`](foveatedstreamingsession.md) enters this state after you call [`disconnect()`](foveatedstreamingsession/disconnect().md) or because the connection has been interrupted.
+The [`FoveatedStreamingSession`](../../foveatedstreamingsession.md) enters this state after you call [`disconnect()`](../disconnect%28%29.md) or because the connection has been interrupted.
 
 
 ---

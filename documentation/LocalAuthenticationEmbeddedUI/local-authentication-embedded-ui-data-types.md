@@ -1,11 +1,12 @@
 # Local Authentication Embedded UI Data Types
 
-**Framework**: Local Authentication Embedded UI
+**Framework**: Local Authentication Embedded UI  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias LAPresentationContext](lapresentationcontext.md)
+- [typealias LAPresentationContext](./lapresentationcontext.md)
 
 
 ---

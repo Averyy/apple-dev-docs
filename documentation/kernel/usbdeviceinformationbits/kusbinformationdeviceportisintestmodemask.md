@@ -1,7 +1,8 @@
 # kUSBInformationDevicePortIsInTestModeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is in test mode.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is in test mode.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDevicePortIsInTestModeMask = (1 << kUSBInformationDevicePortIsInTestModeBit)
 ```
 

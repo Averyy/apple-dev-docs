@@ -1,7 +1,8 @@
 # database
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated database.
 
@@ -11,7 +12,7 @@ The associated database.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ Multiple sync engines can run in the same process, each targeting a different da
 
 ## See Also
 
-- [var state: CKSyncEngine.State](cksyncengine-5sie5/state-swift.property.md)
+### Accessing the engine’s attributes
+- [var state: CKSyncEngine.State](./state-swift.property.md)
   A collection of state properties used to efficiently manage sync engine operation.
-- [CKSyncEngine.State](cksyncengine-5sie5/state-swift.class.md)
+- [CKSyncEngine.State](./state-swift.class.md)
   An object that manages the sync engine’s state.
 
 

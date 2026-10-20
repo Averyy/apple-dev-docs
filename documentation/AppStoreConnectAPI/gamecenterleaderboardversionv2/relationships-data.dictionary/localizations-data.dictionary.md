@@ -1,7 +1,8 @@
 # GameCenterLeaderboardVersionV2.Relationships.Localizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the localizations of the Game Center leaderboard version v2.
 
@@ -10,7 +11,7 @@ The data and links that describe the localizations of the Game Center leaderboar
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardVersionV2.Relationships.Localizations
 ```
 
@@ -23,7 +24,7 @@ object GameCenterLeaderboardVersionV2.Relationships.Localizations
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardVersionV2.Relationships.Localizations.Data](gamecenterleaderboardversionv2/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2.Relationships.Localizations.Data](./localizations-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -33,7 +34,8 @@ object GameCenterLeaderboardVersionV2.Relationships.Localizations
 
 ## See Also
 
-- [object GameCenterLeaderboardVersionV2.Relationships.Leaderboard](gamecenterleaderboardversionv2/relationships-data.dictionary/leaderboard-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardVersionV2.Relationships.Leaderboard](./leaderboard-data.dictionary.md)
   The data that describes the leaderboard of the Game Center leaderboard version v2.
 
 

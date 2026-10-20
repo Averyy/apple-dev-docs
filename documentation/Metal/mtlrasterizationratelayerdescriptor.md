@@ -1,7 +1,8 @@
 # MTLRasterizationRateLayerDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The minimum rasterization rates to apply to sections of a layer in the render target.
 
@@ -19,6 +20,10 @@ The minimum rasterization rates to apply to sections of a layer in the render ta
 class MTLRasterizationRateLayerDescriptor
 ```
 
+```objc
+@interface MTLRasterizationRateLayerDescriptor : NSObject
+```
+
 #### Overview
 
 Use a layer map to divide the logical viewport coordinate system into a 2D grid of equal-sized rectangles, and choose different rasterization rates for each cell.
@@ -30,38 +35,39 @@ In the layer map, you provide separate rasterization rates for the grid’s rows
 ## Topics
 
 ### Creating a layer rasterization rate descriptor
-- [init(sampleCount: MTLSize)](mtlrasterizationratelayerdescriptor/init(samplecount:).md)
+- [init(sampleCount: MTLSize)](./mtlrasterizationratelayerdescriptor/init%28samplecount%29.md)
   Initializes the layer map with an empty grid.
-- [convenience init(horizontal: [Float], vertical: [Float])](mtlrasterizationratelayerdescriptor/init(horizontal:vertical:).md)
+- [convenience init(horizontal: [Float], vertical: [Float])](./mtlrasterizationratelayerdescriptor/init%28horizontal,vertical%29.md)
   Initializes a layer rate map with a set of horizontal and vertical rasterization rates.
 ### Inspecting the layer rate function parameters
-- [var sampleCount: MTLSize](mtlrasterizationratelayerdescriptor/samplecount.md)
+- [var sampleCount: MTLSize](./mtlrasterizationratelayerdescriptor/samplecount.md)
   The number of rows and columns in the layer map.
-- [var maxSampleCount: MTLSize](mtlrasterizationratelayerdescriptor/maxsamplecount.md)
+- [var maxSampleCount: MTLSize](./mtlrasterizationratelayerdescriptor/maxsamplecount.md)
   The maximum number of rows and columns in the layer map.
-- [var horizontal: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/horizontal.md)
+- [var horizontal: MTLRasterizationRateSampleArray](./mtlrasterizationratelayerdescriptor/horizontal.md)
   The horizontal rasterization rates for the layer map’s rows.
-- [var vertical: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/vertical.md)
+- [var vertical: MTLRasterizationRateSampleArray](./mtlrasterizationratelayerdescriptor/vertical.md)
   The vertical rasterization rates for the layer map’s rows.
-- [class MTLRasterizationRateSampleArray](mtlrasterizationratesamplearray.md)
+- [class MTLRasterizationRateSampleArray](./mtlrasterizationratesamplearray.md)
   An array instance that contains rasterization rates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [subscript(Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratelayerarray/subscript(_:).md)
+### Accessing members of the array
+- [subscript(Int) -> MTLRasterizationRateLayerDescriptor?](./mtlrasterizationratelayerarray/subscript%28_%29.md)
   Retrieves the sample value at the specified index.
 
 

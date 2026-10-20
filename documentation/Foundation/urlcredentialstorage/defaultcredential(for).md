@@ -1,7 +1,8 @@
 # defaultCredential(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the default credential for the specified protection space.
 
@@ -20,13 +21,17 @@ Returns the default credential for the specified protection space.
 func defaultCredential(for space: URLProtectionSpace) -> URLCredential?
 ```
 
+```objc
+- (NSURLCredential *) defaultCredentialForProtectionSpace:(NSURLProtectionSpace *) space;
+```
+
 #### Return Value
 
 The default credential for `space` or `nil` if no default has been set.
 
 #### Discussion
 
-If you override this method, also override [`getDefaultCredential(for:task:completionHandler:)`](urlcredentialstorage/getdefaultcredential(for:task:completionhandler:).md).
+If you override this method, also override [`getDefaultCredential(for:task:completionHandler:)`](./getdefaultcredential%28for,task,completionhandler%29.md).
 
 ## Parameters
 
@@ -34,11 +39,12 @@ If you override this method, also override [`getDefaultCredential(for:task:compl
 
 ## See Also
 
-- [func getDefaultCredential(for: URLProtectionSpace, task: URLSessionTask, completionHandler: (URLCredential?) -> Void)](urlcredentialstorage/getdefaultcredential(for:task:completionhandler:).md)
+### Getting and setting default credentials
+- [func getDefaultCredential(for: URLProtectionSpace, task: URLSessionTask, completionHandler: (URLCredential?) -> Void)](./getdefaultcredential%28for,task,completionhandler%29.md)
   Gets the default credential for the specified protection space, which is being accessed by the given task, and passes it to the provided completion handler.
-- [func setDefaultCredential(URLCredential, for: URLProtectionSpace)](urlcredentialstorage/setdefaultcredential(_:for:).md)
+- [func setDefaultCredential(URLCredential, for: URLProtectionSpace)](./setdefaultcredential%28_,for%29.md)
   Sets the default credential for a specified protection space.
-- [func setDefaultCredential(URLCredential, for: URLProtectionSpace, task: URLSessionTask)](urlcredentialstorage/setdefaultcredential(_:for:task:).md)
+- [func setDefaultCredential(URLCredential, for: URLProtectionSpace, task: URLSessionTask)](./setdefaultcredential%28_,for,task%29.md)
   Sets the default credential for a given protection space, which is being accessed by the given task.
 
 

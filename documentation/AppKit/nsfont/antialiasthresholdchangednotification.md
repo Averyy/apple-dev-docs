@@ -1,12 +1,13 @@
 # antialiasThresholdChangedNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted after the threshold for antialiasing changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Posted after the threshold for antialiasing changes.
 class let antialiasThresholdChangedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSAntialiasThresholdChangedNotification;
+```
+
 ## See Also
 
-- [class let fontSetChangedNotification: NSNotification.Name](nsfont/fontsetchangednotification.md)
+### Responding to Font-Related Notifications
+- [class let fontSetChangedNotification: NSNotification.Name](./fontsetchangednotification.md)
   Posted after the currently-set font changes.
 
 

@@ -1,7 +1,8 @@
 # vertexIndicesPerTriangle
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Vertex indices for each triangle, stored as three consecutive indices per triangle.
 

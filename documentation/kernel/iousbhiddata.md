@@ -1,7 +1,8 @@
 # IOUSBHIDData
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Data related to the mouse and keyboard.
 
@@ -10,29 +11,30 @@ Data related to the mouse and keyboard.
 
 ## Declaration
 
-```swift
+```c
 typedef union IOUSBHIDData IOUSBHIDData;
 ```
 
 ## Topics
 
 ### Getting the Properties
-- [kbd](iousbhiddata/1545955-kbd.md)
+- [kbd](./iousbhiddata/api-1545955-kbd.md)
   The USB keyboard data structure.
-- [mouse](iousbhiddata/1546419-mouse.md)
+- [mouse](./iousbhiddata/api-1546419-mouse.md)
   The USB mouse data structure.
 
 ## See Also
 
-- [IOUSBHIDDataPtr](iousbhiddataptr.md)
+### HID Descriptors
+- [IOUSBHIDDataPtr](./iousbhiddataptr.md)
   A pointer to a structure related to mouse and keyboard data.
-- [IOUSBHIDDescriptor](iousbhiddescriptor.md)
+- [IOUSBHIDDescriptor](./iousbhiddescriptor.md)
   A structure that defines the USB HID descriptor.
-- [IOUSBHIDDescriptorPtr](iousbhiddescriptorptr.md)
+- [IOUSBHIDDescriptorPtr](./iousbhiddescriptorptr.md)
   A pointer to a structure that defines the USB HID descriptor.
-- [IOUSBHIDReportDesc](iousbhidreportdesc.md)
+- [IOUSBHIDReportDesc](./iousbhidreportdesc.md)
   A structure that defines the USB HID report descriptor header.
-- [IOUSBHIDReportDescPtr](iousbhidreportdescptr.md)
+- [IOUSBHIDReportDescPtr](./iousbhidreportdescptr.md)
   A pointer to a structure that defines the USB HID report descriptor header.
 
 

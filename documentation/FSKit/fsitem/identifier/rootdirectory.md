@@ -1,7 +1,8 @@
 # FSItem.Identifier.rootDirectory
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The item identifier for the root directory.
 
@@ -14,11 +15,16 @@ The item identifier for the root directory.
 case rootDirectory
 ```
 
+```c
+FSItemIDRootDirectory
+```
+
 ## See Also
 
-- [FSItem.Identifier.invalid](fsitem/identifier/invalid.md)
+### Working with special identifiers
+- [FSItem.Identifier.invalid](./invalid.md)
   The identifier for an invalid item.
-- [FSItem.Identifier.parentOfRoot](fsitem/identifier/parentofroot.md)
+- [FSItem.Identifier.parentOfRoot](./parentofroot.md)
   The identifier for an item that serves as the parent of the root directory.
 
 

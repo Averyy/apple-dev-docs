@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a classification on a shaped array of input features.
 
@@ -19,6 +20,12 @@ Performs a classification on a shaped array of input features.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> ClassificationDistribution<Label>
 ```
 
+**Other overloads**:
+
+```swift
+func applied(to input: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler? = nil) async throws -> AnyTemporalSequence<ClassificationDistribution<Label>>
+```
+
 #### Return Value
 
 A classification distribution.
@@ -30,9 +37,10 @@ A classification distribution.
 
 ## See Also
 
-- [func export(to: URL) throws](timeseriesclassifier/model/export(to:).md)
+### Applying and exporting
+- [func export(to: URL) throws](./export%28to%29.md)
   Exports this transformer as a CoreML model package.
-- [func export(to: URL, metadata: ModelMetadata) throws](timeseriesclassifier/model/export(to:metadata:).md)
+- [func export(to: URL, metadata: ModelMetadata) throws](./export%28to,metadata%29.md)
   Exports this transformer as a CoreML model package with user-supplied metadata.
 
 

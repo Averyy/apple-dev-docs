@@ -1,7 +1,8 @@
 # kSCSICmd_SEARCH_DATA_HIGH_12
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_SEARCH_DATA_HIGH_12 = 0xB0
 ```
 

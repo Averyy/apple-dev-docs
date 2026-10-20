@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies your app when the Live Text button’s visibility changes.
@@ -24,11 +25,18 @@ func interaction(_ interaction: ImageAnalysisInteraction, liveTextButtonDidChang
 - `interaction`: The interaction object for which the Live Text button appears.
 - `visible`: `true` if the Live Text button appears; otherwise,`false`.
 
+## Default Implementations
+
+### ImageAnalysisInteractionDelegate Implementations
+- [func interaction(ImageAnalysisInteraction, liveTextButtonDidChangeToVisible: Bool)](./interaction%28_,livetextbuttondidchangetovisible%29-51zmv.md)
+  A default, blank implementation for when the Live Text button appears or disappears.
+
 ## See Also
 
-- [func interaction(ImageAnalysisInteraction, highlightSelectedItemsDidChange: Bool)](imageanalysisinteractiondelegate/interaction(_:highlightselecteditemsdidchange:).md)
+### Tracking interface changes
+- [func interaction(ImageAnalysisInteraction, highlightSelectedItemsDidChange: Bool)](./interaction%28_,highlightselecteditemsdidchange%29.md)
   Notifies your app when recognized items in the image appear highlighted as a result of a person tapping the Live Text button.
-- [func textSelectionDidChange(ImageAnalysisInteraction)](imageanalysisinteractiondelegate/textselectiondidchange(_:).md)
+- [func textSelectionDidChange(ImageAnalysisInteraction)](./textselectiondidchange%28_%29.md)
   Notifies your app when the interaction’s text selection changes.
 
 

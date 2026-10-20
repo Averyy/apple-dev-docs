@@ -1,7 +1,8 @@
 # Publishers.HandleEvents
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that performs the specified closures when publisher events occur.
 
@@ -23,37 +24,38 @@ struct HandleEvents<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating an event-handling publisher
-- [init(upstream: Upstream, receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Publishers.HandleEvents<Upstream>.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Publishers.HandleEvents<Upstream>.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?)](publishers/handleevents/init(upstream:receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:).md)
+- [init(upstream: Upstream, receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Publishers.HandleEvents<Upstream>.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Publishers.HandleEvents<Upstream>.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?)](./handleevents/init%28upstream,receivesubscription,receiveoutput,receivecompletion,receivecancel,receiverequest%29.md)
   Creates a publisher that performs the specified closures when publisher events occur.
 ### Declaring supporting types
-- [Publishers.HandleEvents.Output](publishers/handleevents/output.md)
+- [Publishers.HandleEvents.Output](./handleevents/output.md)
   The kind of values published by this publisher.
-- [Publishers.HandleEvents.Failure](publishers/handleevents/failure.md)
+- [Publishers.HandleEvents.Failure](./handleevents/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/handleevents/upstream.md)
+- [let upstream: Upstream](./handleevents/upstream.md)
   The publisher from which this publisher receives elements.
-- [var receiveSubscription: ((any Subscription) -> Void)?](publishers/handleevents/receivesubscription.md)
+- [var receiveSubscription: ((any Subscription) -> Void)?](./handleevents/receivesubscription.md)
   A closure that executes when the publisher receives the subscription from the upstream publisher.
-- [var receiveOutput: ((Publishers.HandleEvents<Upstream>.Output) -> Void)?](publishers/handleevents/receiveoutput.md)
+- [var receiveOutput: ((Publishers.HandleEvents<Upstream>.Output) -> Void)?](./handleevents/receiveoutput.md)
   A closure that executes when the publisher receives a value from the upstream publisher.
-- [var receiveCompletion: ((Subscribers.Completion<Publishers.HandleEvents<Upstream>.Failure>) -> Void)?](publishers/handleevents/receivecompletion.md)
+- [var receiveCompletion: ((Subscribers.Completion<Publishers.HandleEvents<Upstream>.Failure>) -> Void)?](./handleevents/receivecompletion.md)
   A closure that executes when the upstream publisher finishes normally or terminates with an error.
-- [var receiveCancel: (() -> Void)?](publishers/handleevents/receivecancel.md)
+- [var receiveCancel: (() -> Void)?](./handleevents/receivecancel.md)
   A closure that executes when the downstream receiver cancels publishing.
-- [var receiveRequest: ((Subscribers.Demand) -> Void)?](publishers/handleevents/receiverequest.md)
+- [var receiveRequest: ((Subscribers.Demand) -> Void)?](./handleevents/receiverequest.md)
   A closure that executes when the publisher receives a request for more elements.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Breakpoint](publishers/breakpoint.md)
+### Debugging
+- [Publishers.Breakpoint](./breakpoint.md)
   A publisher that raises a debugger signal when a provided closure needs to stop the process in the debugger.
-- [Publishers.Print](publishers/print.md)
+- [Publishers.Print](./print.md)
   A publisher that prints log messages for all publishing events, optionally prefixed with a given string.
 
 

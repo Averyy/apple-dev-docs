@@ -1,7 +1,8 @@
 # disassociate()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disassociates from the current network.
 
@@ -12,6 +13,10 @@ Disassociates from the current network.
 
 ```swift
 func disassociate()
+```
+
+```objc
+- (void) disassociate;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a blend shape weights data instance in the set based on its name. If blend shape weights data with this ID does not exist, does nothing.
 

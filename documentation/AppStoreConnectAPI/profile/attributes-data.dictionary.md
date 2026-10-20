@@ -1,7 +1,8 @@
 # Profile.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Profiles resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Profiles resource.
 
 ## Declaration
 
-```swift
+```
 object Profile.Attributes
 ```
 
@@ -21,13 +22,14 @@ object Profile.Attributes
 - `profileContent` (string)
 - `uuid` (string)
 - `createdDate` (date-time)
-- `profileState` (string)
-- `profileType` (string)
+- `profileState` (string): **Allowed Values**: `ACTIVE`, `INVALID`
+- `profileType` (string): **Allowed Values**: `IOS_APP_DEVELOPMENT`, `IOS_APP_STORE`, `IOS_APP_ADHOC`, `IOS_APP_INHOUSE`, `MAC_APP_DEVELOPMENT`, `MAC_APP_STORE`, `MAC_APP_DIRECT`, `TVOS_APP_DEVELOPMENT`, `TVOS_APP_STORE`, `TVOS_APP_ADHOC`, `TVOS_APP_INHOUSE`, `MAC_CATALYST_APP_DEVELOPMENT`, `MAC_CATALYST_APP_STORE`, `MAC_CATALYST_APP_DIRECT`
 - `expirationDate` (date-time)
 
 ## See Also
 
-- [object Profile.Relationships](profile/relationships-data.dictionary.md)
+### Objects
+- [object Profile.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

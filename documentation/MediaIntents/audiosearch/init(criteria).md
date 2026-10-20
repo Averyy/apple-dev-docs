@@ -1,7 +1,8 @@
 # init(criteria:)
 
 **Framework**: Media Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio search with a person’s search criteria.
 

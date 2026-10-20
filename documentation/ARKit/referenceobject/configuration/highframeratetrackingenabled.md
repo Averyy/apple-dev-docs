@@ -1,7 +1,8 @@
 # highFrameRateTrackingEnabled
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to enable high frame-rate tracking for this object.
 

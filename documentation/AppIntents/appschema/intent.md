@@ -1,7 +1,8 @@
 # AppSchema.Intent
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,33 +22,33 @@ struct Intent
 ## Relationships
 
 ### Conforms To
-- [AppSchema.AssistantIntent](appschema/assistantintent.md)
-- [AppSchema.AudioIntent](appschema/audiointent.md)
-- [AppSchema.BooksIntent](appschema/booksintent.md)
-- [AppSchema.BrowserIntent](appschema/browserintent.md)
-- [AppSchema.CalendarIntent](appschema/calendarintent.md)
-- [AppSchema.CameraIntent](appschema/cameraintent.md)
-- [AppSchema.ClockIntent](appschema/clockintent.md)
-- [AppSchema.FilesIntent](appschema/filesintent.md)
-- [AppSchema.JournalIntent](appschema/journalintent.md)
-- [AppSchema.Kind](appschema/kind.md)
-- [AppSchema.MailIntent](appschema/mailintent.md)
-- [AppSchema.MapsIntent](appschema/mapsintent.md)
-- [AppSchema.MessagesIntent](appschema/messagesintent.md)
-- [AppSchema.NotesIntent](appschema/notesintent.md)
-- [AppSchema.PhoneIntent](appschema/phoneintent.md)
-- [AppSchema.PhotosIntent](appschema/photosintent.md)
-- [AppSchema.PresentationIntent](appschema/presentationintent.md)
-- [AppSchema.ReaderIntent](appschema/readerintent.md)
-- [AppSchema.RemindersIntent](appschema/remindersintent.md)
-- [AppSchema.SpreadsheetIntent](appschema/spreadsheetintent.md)
-- [AppSchema.SystemIntent](appschema/systemintent.md)
-- [AppSchema.VisualIntelligenceIntent](appschema/visualintelligenceintent.md)
-- [AppSchema.WhiteboardIntent](appschema/whiteboardintent.md)
-- [AppSchema.WordProcessorIntent](appschema/wordprocessorintent.md)
-- [AppSchemaIntent](appschemaintent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AppSchema.AssistantIntent](./assistantintent.md)
+- [AppSchema.AudioIntent](./audiointent.md)
+- [AppSchema.BooksIntent](./booksintent.md)
+- [AppSchema.BrowserIntent](./browserintent.md)
+- [AppSchema.CalendarIntent](./calendarintent.md)
+- [AppSchema.CameraIntent](./cameraintent.md)
+- [AppSchema.ClockIntent](./clockintent.md)
+- [AppSchema.FilesIntent](./filesintent.md)
+- [AppSchema.JournalIntent](./journalintent.md)
+- [AppSchema.Kind](./kind.md)
+- [AppSchema.MailIntent](./mailintent.md)
+- [AppSchema.MapsIntent](./mapsintent.md)
+- [AppSchema.MessagesIntent](./messagesintent.md)
+- [AppSchema.NotesIntent](./notesintent.md)
+- [AppSchema.PhoneIntent](./phoneintent.md)
+- [AppSchema.PhotosIntent](./photosintent.md)
+- [AppSchema.PresentationIntent](./presentationintent.md)
+- [AppSchema.ReaderIntent](./readerintent.md)
+- [AppSchema.RemindersIntent](./remindersintent.md)
+- [AppSchema.SpreadsheetIntent](./spreadsheetintent.md)
+- [AppSchema.SystemIntent](./systemintent.md)
+- [AppSchema.VisualIntelligenceIntent](./visualintelligenceintent.md)
+- [AppSchema.WhiteboardIntent](./whiteboardintent.md)
+- [AppSchema.WordProcessorIntent](./wordprocessorintent.md)
+- [AppSchemaIntent](../appschemaintent.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of updates to scene meshes that the scene reconstruction provider detects.
 
@@ -16,7 +17,8 @@ final var anchorUpdates: AnchorUpdateSequence<MeshAnchor> { get }
 
 ## See Also
 
-- [var state: DataProviderState](scenereconstructionprovider/state.md)
+### Observing scene reconstruction
+- [var state: DataProviderState](./state.md)
   A value that indicates whether the scene reconstruction provider is currently supplying anchor updates.
 
 

@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.TimeZone
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies a format for the time zone in a date format style.
 
@@ -22,19 +23,19 @@ struct TimeZone
 
 #### Overview
 
-The type [`Date.FormatStyle.Symbol.TimeZone`](date/formatstyle/symbol/timezone.md) includes static factory variables and methods that create custom [`Date.FormatStyle.Symbol.TimeZone`](date/formatstyle/symbol/timezone.md) objects:
+The type [`Date.FormatStyle.Symbol.TimeZone`](./timezone.md) includes static factory variables and methods that create custom [`Date.FormatStyle.Symbol.TimeZone`](./timezone.md) objects:
 
 | Factory variable | Description |
 | --- | --- |
-| [`specificName(_:)`](date/formatstyle/symbol/timezone/specificname(_:).md) | The specific, non-location representation of a timezone. For example, `CDT` (`short`), `Central Daylight Time` (`long`). |
-| [`genericName(_:)`](date/formatstyle/symbol/timezone/genericname(_:).md) | The generic, non-location representation of a timezone. For example, `CT` (`short`), `Central Time` (`long`). |
-| [`iso8601(_:)`](date/formatstyle/symbol/timezone/iso8601(_:).md) | The ISO 8601 representation of the timezone with hours, minutes, and optional seconds. For example, `-0500` (`short`), `-05:00` (`long`). |
-| [`localizedGMT(_:)`](date/formatstyle/symbol/timezone/localizedgmt(_:).md) | The localized GMT format representation of a timezone. For example, `GMT-5` (`short`), `GMT-05:00` (`long`). |
-| [`identifier(_:)`](date/formatstyle/symbol/timezone/identifier(_:).md) | The timezone identifier. For example, `uschi` (`short`), `America/Chicago` (`long`). |
-| [`exemplarLocation`](date/formatstyle/symbol/timezone/exemplarlocation.md) | The exemplar city for a timezone. For example, `Chicago`. |
-| [`genericLocation`](date/formatstyle/symbol/timezone/genericlocation.md) | The generic location representation of a timezone. For example, `Chicago Time`. |
+| [`specificName(_:)`](./timezone/specificname%28_%29.md) | The specific, non-location representation of a timezone. For example, `CDT` (`short`), `Central Daylight Time` (`long`). |
+| [`genericName(_:)`](./timezone/genericname%28_%29.md) | The generic, non-location representation of a timezone. For example, `CT` (`short`), `Central Time` (`long`). |
+| [`iso8601(_:)`](./timezone/iso8601%28_%29.md) | The ISO 8601 representation of the timezone with hours, minutes, and optional seconds. For example, `-0500` (`short`), `-05:00` (`long`). |
+| [`localizedGMT(_:)`](./timezone/localizedgmt%28_%29.md) | The localized GMT format representation of a timezone. For example, `GMT-5` (`short`), `GMT-05:00` (`long`). |
+| [`identifier(_:)`](./timezone/identifier%28_%29.md) | The timezone identifier. For example, `uschi` (`short`), `America/Chicago` (`long`). |
+| [`exemplarLocation`](./timezone/exemplarlocation.md) | The exemplar city for a timezone. For example, `Chicago`. |
+| [`genericLocation`](./timezone/genericlocation.md) | The generic location representation of a timezone. For example, `Chicago Time`. |
 
-To customize the hour format in a string representation of a `Date`, use [`timeZone(_:)`](date/formatstyle/timezone(_:).md). The following example shows a variety of [`Date.FormatStyle.Symbol.TimeZone`](date/formatstyle/symbol/timezone.md) format styles applied to a date.
+To customize the hour format in a string representation of a `Date`, use [`timeZone(_:)`](../timezone%28_%29.md). The following example shows a variety of [`Date.FormatStyle.Symbol.TimeZone`](./timezone.md) format styles applied to a date.
 
 ```swift
 let meetingDate = Date() // Feb 9, 2021 at 7:00 PM
@@ -72,76 +73,77 @@ meetingDate.formatted(Date.FormatStyle().timeZone(.genericLocation))
 
 ```
 
-If you don’t provide a format, the system formats a timezone using the short [`specificName(_:)`](date/formatstyle/symbol/timezone/specificname(_:).md) static function with the width [`Date.FormatStyle.Symbol.TimeZone.Width.short`](date/formatstyle/symbol/timezone/width/short.md).
+If you don’t provide a format, the system formats a timezone using the short [`specificName(_:)`](./timezone/specificname%28_%29.md) static function with the width [`Date.FormatStyle.Symbol.TimeZone.Width.short`](./timezone/width/short.md).
 
-For more information about formatting dates, see the [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see the [`Date.FormatStyle`](../../formatstyle.md).
 
 ## Topics
 
 ### Modifying a Time Zone
-- [static func specificName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/specificname(_:).md)
+- [static func specificName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./timezone/specificname%28_%29.md)
   Returns the specific, non-location representation of a timezone.
-- [static func genericName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericname(_:).md)
+- [static func genericName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./timezone/genericname%28_%29.md)
   Returns the generic, non-location representation of a timezone.
-- [static func iso8601(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/iso8601(_:).md)
+- [static func iso8601(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./timezone/iso8601%28_%29.md)
   Creates the ISO 8601 representation of the timezone with hours, minutes, and optional seconds.
-- [static func localizedGMT(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/localizedgmt(_:).md)
+- [static func localizedGMT(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./timezone/localizedgmt%28_%29.md)
   Returns the localized GMT format representation of a timezone.
-- [static func identifier(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/identifier(_:).md)
+- [static func identifier(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./timezone/identifier%28_%29.md)
   Returns the timezone identifier.
-- [static var exemplarLocation: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/exemplarlocation.md)
+- [static var exemplarLocation: Date.FormatStyle.Symbol.TimeZone](./timezone/exemplarlocation.md)
   The exemplar city for a timezone.
-- [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericlocation.md)
+- [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](./timezone/genericlocation.md)
   The generic location representation of a timezone.
 ### Comparing Time Zones
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Enumerations
-- [Date.FormatStyle.Symbol.TimeZone.Width](date/formatstyle/symbol/timezone/width.md)
+- [Date.FormatStyle.Symbol.TimeZone.Width](./timezone/width.md)
   A type representing the width of a timezone in a format style.
 ### Type Properties
-- [static let omitted: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/omitted.md)
+- [static let omitted: Date.FormatStyle.Symbol.TimeZone](./timezone/omitted.md)
   The option for not including the symbol in the formatted output.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear.md)
+### Modifying Date Style Format Symbols
+- [Date.FormatStyle.Symbol.CyclicYear](./cyclicyear.md)
   A type that specifies a format for a cyclic year in a date format style.
-- [Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day.md)
+- [Date.FormatStyle.Symbol.Day](./day.md)
   A type that specifies the format for a day in a date format style.
-- [Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear.md)
+- [Date.FormatStyle.Symbol.DayOfYear](./dayofyear.md)
   A type that specifies the format for the day of the year in a date format style.
-- [Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod.md)
+- [Date.FormatStyle.Symbol.DayPeriod](./dayperiod.md)
   A type that specifies a format for the time period in a date format style.
-- [Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era.md)
+- [Date.FormatStyle.Symbol.Era](./era.md)
   A type that specifies a format for the era in a date format style.
-- [Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour.md)
+- [Date.FormatStyle.Symbol.Hour](./hour.md)
   A type that specifies a format for the hour in a date format style.
-- [Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute.md)
+- [Date.FormatStyle.Symbol.Minute](./minute.md)
   A type that specifies the format for the minutes in a date format style.
-- [Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month.md)
+- [Date.FormatStyle.Symbol.Month](./month.md)
   A type that specifies a format for the month in a date format style.
-- [Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter.md)
+- [Date.FormatStyle.Symbol.Quarter](./quarter.md)
   A type that specifies the format for the quarter in a date format style.
-- [Date.FormatStyle.Symbol.Second](date/formatstyle/symbol/second.md)
+- [Date.FormatStyle.Symbol.Second](./second.md)
   A type that specifies the format for the seconds in a date format style.
-- [Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction.md)
+- [Date.FormatStyle.Symbol.SecondFraction](./secondfraction.md)
   A type that specifies the format for the second fraction in a date format style.
-- [Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth.md)
+- [Date.FormatStyle.Symbol.StandaloneMonth](./standalonemonth.md)
   A type that specifies the format for a standalone month.
-- [Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter.md)
+- [Date.FormatStyle.Symbol.StandaloneQuarter](./standalonequarter.md)
   A type that specifies the format for a standalone quarter.
-- [Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday.md)
+- [Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday.md)
   A type that specifies the format for a standalone weekday.
-- [Date.FormatStyle.Symbol.VerbatimHour](date/formatstyle/symbol/verbatimhour.md)
+- [Date.FormatStyle.Symbol.VerbatimHour](./verbatimhour.md)
   A type that specifies a format for the hour in a date format style.
 
 

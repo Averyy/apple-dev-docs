@@ -1,7 +1,8 @@
 # doNotOutputFrame
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that hints to the decoder whether or not it should emit an image buffer for the frame.
 
@@ -14,13 +15,18 @@ A Boolean value that hints to the decoder whether or not it should emit an image
 var doNotOutputFrame: Bool { get set }
 ```
 
+```objc
+@property (readwrite) BOOL doNotOutputFrame;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the decoder emits [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) instead of a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40) instance.
+If [`true`](../../Swift/true.md), the decoder emits [`nil`](../../ObjectiveC/nil-227m0.md) instead of a [CVImageBuffer](../../CoreVideo/cvimagebuffer-q40.md) instance.
 
 ## See Also
 
-- [var realTimePlayback: Bool](medecodeframeoptions/realtimeplayback.md)
+### Inspecting frame decoding options
+- [var realTimePlayback: Bool](./realtimeplayback.md)
   A Boolean value that hints to the decoder to use a low-power mode that can’t decode faster than 1x real-time.
 
 

@@ -1,7 +1,8 @@
 # Metadata key table atom ('keys')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that contains a table of keys and mappings to payload data in the corresponding timed metadata media samples.
 
@@ -25,31 +26,32 @@ The layout of a metadata key table atom is as follows:
 
 | Data field | Bytes |
 | --- | --- |
-| [`Size`](metadata_key_table_atom/size.md) | 4 |
-| [`Type`](metadata_key_table_atom/type.md) = `'keys'` | 4 |
-| [`Metadata key table`](metadata_key_table_atom/metadata_key_table.md) | variable |
+| [`Size`](./metadata_key_table_atom/size.md) | 4 |
+| [`Type`](./metadata_key_table_atom/type.md) = `'keys'` | 4 |
+| [`Metadata key table`](./metadata_key_table_atom/metadata_key_table.md) | variable |
 
 ## Topics
 
 ### Data fields
-- [Size](metadata_key_table_atom/size.md)
+- [Size](./metadata_key_table_atom/size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_key_table_atom/type.md)
+- [Type](./metadata_key_table_atom/type.md)
   A 32-bit unsigned integer value.
-- [Metadata key table](metadata_key_table_atom/metadata_key_table.md)
+- [Metadata key table](./metadata_key_table_atom/metadata_key_table.md)
   An array of metadata key atoms.
 
 ## See Also
 
-- [Bit rate atom ('btrt')](bit_rate_atom.md)
+### Describing timed metadata
+- [Bit rate atom ('btrt')](./bit_rate_atom.md)
   An atom that signals the bit rate information of a stream.
-- [Metadata key atom](metadata_key_atom.md)
+- [Metadata key atom](./metadata_key_atom.md)
   An atom that contains a key that corresponds to the timed metadata track containing it.
-- [Metadata key declaration atom ('keyd')](metadata_key_declaration_atom.md)
+- [Metadata key declaration atom ('keyd')](./metadata_key_declaration_atom.md)
   An atom that holds the key namespace and key value of that namespace for the given values.
-- [Metadata datatype definition atom ('dtyp')](metadata_datatype_definition_atom.md)
+- [Metadata datatype definition atom ('dtyp')](./metadata_datatype_definition_atom.md)
   An atom you use to specify the data type of the metadata key atom’s value.
-- [Metadata locale atom ('loca')](metadata_locale_atom.md)
+- [Metadata locale atom ('loca')](./metadata_locale_atom.md)
   An atom that tags a metadata value with a locale.
 
 

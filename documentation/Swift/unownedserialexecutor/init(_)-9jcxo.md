@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Automatically opt-in to complex equality semantics if the Executor implements `Equatable`.
 

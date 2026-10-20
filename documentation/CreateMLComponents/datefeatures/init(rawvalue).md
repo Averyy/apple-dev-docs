@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature from a raw value.
 

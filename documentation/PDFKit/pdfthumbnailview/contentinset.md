@@ -1,7 +1,8 @@
 # contentInset
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -16,9 +17,14 @@
 var contentInset: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets contentInset;
+```
+
 ## See Also
 
-- [var layoutMode: PDFThumbnailLayoutMode](pdfthumbnailview/layoutmode.md)
+### Instance Properties
+- [var layoutMode: PDFThumbnailLayoutMode](./layoutmode.md)
 
 
 ---

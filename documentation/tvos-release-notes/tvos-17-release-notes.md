@@ -1,33 +1,40 @@
 # tvOS 17 Release Notes
 
-**Framework**: tvOS Release Notes
+**Framework**: tvOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 17. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [`Xcode 15 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes).
+The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 17. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [Xcode 15 Release Notes](../Xcode-Release-Notes/xcode-15-release-notes.md).
 
 ##### Accelerate
 
 ###### New Features
 
-- Spatial - Introduced trigonometry functions for [`Spatial angle type`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/angle2d#4180998).
-- Introduced spherical linear interpolation for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d/4157007-slerp).
-- Introduced  swing-twist decomposition for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d#4130747).
-- BNNS - Introduced [`BNNSRandomFillCategoricalFloat`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4126856-bnnsrandomfillcategoricalfloat) that fills a tensor with random values from the categorical distributions with event probabilities.
-- Introduced [`k-nearest neighbors calculation`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/bnns#4164142).
-- vImage - Introduced [`vImageConvolveFloatKernel_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172614-vimageconvolvefloatkernel_argb88) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
-- Introduced [`vImageSepConvolve_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172615-vimagesepconvolve_argb8888) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
-- Added flood fill, perspective transform, and new lookup table transforms to [`vImage.PixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/vimage/pixelbuffer).  (105830806)
+- Spatial
 
-##### Camera and Avfoundation Capture
+  - Introduced trigonometry functions for [Spatial angle type](../Spatial/angle2d.md#4180998).
+  - Introduced spherical linear interpolation for [Spatial rotations](../Spatial/rotation3d/api-4157007-slerp.md).
+  - Introduced  swing-twist decomposition for [Spatial rotations](../Spatial/rotation3d.md#4130747).
+- BNNS
+
+  - Introduced [BNNSRandomFillCategoricalFloat](../Accelerate/api-4126856-bnnsrandomfillcategoricalfloat.md) that fills a tensor with random values from the categorical distributions with event probabilities.
+  - Introduced [k-nearest neighbors calculation](../Accelerate/bnns.md#4164142).
+- vImage
+
+  - Introduced [vImageConvolveFloatKernel_ARGB8888](../Accelerate/api-4172614-vimageconvolvefloatkernel_argb88.md) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
+  - Introduced [vImageSepConvolve_ARGB8888](../Accelerate/api-4172615-vimagesepconvolve_argb8888.md) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
+  - Added flood fill, perspective transform, and new lookup table transforms to [vImage.PixelBuffer](../Accelerate/vimage/pixelbuffer.md).  (105830806)
+
+##### Camera and AVFoundation Capture
 
 ###### Resolved Issues
 
 - Fixed: On iPhone 14 and 14 Plus models third-party camera applications might fail to capture images, and the built-in Camera app and third-party applications using the new Deferred Processing API might fail to process final images.  (113158045)
 
-##### Continuity Camera on Apple Tv
+##### Continuity Camera on Apple TV
 
 ###### Resolved Issues
 
@@ -37,13 +44,13 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: When using Center Stage in a group Facetime call, people at the edge of the frame will be cropped out.   (109850731)
 - Fixed: Unsupported iPads might recieve a Continuity Camera notificaition.  (110136942)
 
-##### Facetime Handoff
+##### Facetime handoff
 
 ###### Resolved Issues
 
 - Fixed: Facetime handoff to another device might result in call drop or no media.  (110126569)
 
-##### Facetime on Apple Tv
+##### FaceTime on Apple TV
 
 ###### Resolved Issues
 
@@ -56,7 +63,7 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: Video effects buttons on self-view during a FaceTime call might not work.  (110801792)
 - Fixed: FaceTime call might end suddenly within first minute.   (111099303)
 
-##### Facetime on Appletv
+##### FaceTime on AppleTV
 
 ###### Resolved Issues
 
@@ -86,7 +93,7 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - Fixed: MP3 files with malformed ID3 tags will fail to play  (110230071)
 
-##### Networkextension
+##### NetworkExtension
 
 ###### Deprecations
 
@@ -98,44 +105,50 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 ###### New Features
 
 - iPhone and iPad devices running iOS 17 beta support joining wired 802.1X networks. Apple TV devices running tvOS 17 beta also support joining wired 802.1X networks.  (12867782)
-- `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [`Resumable Uploads for HTTP`](https://developer.apple.comhttps://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
+- `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [Resumable Uploads for HTTP](https://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
 - Apple devices now support connection to 802.1X networks using EAP-TLS with TLS 1.3 (EAP-TLS 1.3). EAP-TLS 1.3 further improves security and privacy by always providing forward secrecy, never disclosing the peer identity, and by mandating use of revocation checking when compared to EAP-TLS with earlier versions of TLS.  (74526852)
 
 ###### Resolved Issues
 
-- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/security/preventing_insecure_network_connections). Exceptions can be made using [`NSExceptionDomains`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
+- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [Preventing Insecure Network Connections](../Security/preventing_insecure_network_connections.md). Exceptions can be made using [NSExceptionDomains](../BundleResources/information_property_list/nsapptransportsecurity/nsexceptiondomains.md), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
 - Fixed: For apps linked on or after iOS 17 beta, macOS 14 beta, watchOS 10 beta, and tvOS 17 beta, the `Transfer-Encoding` header field of a streamed `HTTP/1` request is set to `chunked` instead of `Chunked`.  (107390029)
 
-##### Shareplay
+##### SharePlay
 
 ###### Resolved Issues
 
 - Fixed: Starting SharePlay content between two Apple TVs results in one TV receiving a notification with “pseud…” as the name for the other TV.  This only occurs on first attempt and subsequent SharePlay actions are correct.  (108926589)
 
-##### Shazamkit
+##### ShazamKit
 
 ###### Resolved Issues
 
 - Fixed: `SHManagedSession.State` is unavailable.  (109670750)
 - Fixed: `SHLibrary.default.items` is unavailable.  (109670918)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [`Transaction`](https://developer.apple.com﻿https://developer.apple.com/documentation/storekit/transaction) value for a subscription to access the full status information.  (102064614)
+- Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [Transaction](https://developer.apple.com﻿https://developer.apple.com/documentation/storekit/transaction) value for a subscription to access the full status information.  (102064614)
 - StoreKit 2 now provides a collection of UI components to help merchandise in-app purchases. Use `ProductView`, `StoreView` and `SubscriptionStoreView` to add in-app purchases to an app with just a few lines of code.  (102066107)
 - Users can access in-app purchase product metadata and entitlement information from a SwiftUI view using new view modifier APIs in StoreKit. Declare a view as dependent on a single product or collection of products using `storeProductTask(for:priority:action:)` or `storeProductsTask(for:priority:action:)` respectively. Declare a view as dependent on the current entitlement for a product using `currentEntitlementTask(for:priority:action:)`. Declare a view as dependent on the status of a subscription group with `subscriptionStatusTask(for:priority:action:)`. All of the modifiers will start a task to load the data before the view appears, and provide your action with the state of the task as it progresses and whenever the data changes.  (102397222)
-- User have access to the new `groupLevel` property of [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) to understand the level of service of a subscription plan.  (103885148)
-- Users have access to the new `reason`, and `storefront` properties on [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [`RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo) to understand if and when a subscription will renew next.  (104246730)
-- Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) to get the localized display name of a subscription plan’s group.  (105689964)
-- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [`init(id:icon:placeholderIcon:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview/4202217-init), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [`init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)``](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview/4203382-init) to provide an icon view for each phase.  (110470147)
-- The following StoreKit types are renamed: • `DefaultProductViewStyle` is renamed to [`AutomaticProductViewStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductviewstyle) • `DefaultSubscriptionStoreMarketingContent` is renamed to [`AutomaticSubscriptionStoreMarketingContent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticsubscriptionstoremarketingcontent) • `DefaultProductPlaceholderIcon` is renamed to [`AutomaticProductPlaceholderIcon`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon)  (111185321)
+- User have access to the new `groupLevel` property of [Product.SubscriptionInfo](../StoreKit/product/subscriptioninfo.md) to understand the level of service of a subscription plan.  (103885148)
+- Users have access to the new `reason`, and `storefront` properties on [Transaction](../StoreKit/transaction.md) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [RenewalInfo](../StoreKit/product/subscriptioninfo/renewalinfo.md) to understand if and when a subscription will renew next.  (104246730)
+- Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) to get the localized display name of a subscription plan’s group.  (105689964)
+- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [init(id:icon:placeholderIcon:)](../StoreKit/productview/api-4202217-init.md), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)`](../StoreKit/storeview/api-4203382-init.md) to provide an icon view for each phase.  (110470147)
+- The following StoreKit types are renamed:
+
+  • `DefaultProductViewStyle` is renamed to [AutomaticProductViewStyle](../StoreKit/automaticproductviewstyle.md)
+
+  • `DefaultSubscriptionStoreMarketingContent` is renamed to [AutomaticSubscriptionStoreMarketingContent](../StoreKit/automaticsubscriptionstoremarketingcontent.md)
+
+  • `DefaultProductPlaceholderIcon` is renamed to [AutomaticProductPlaceholderIcon](../StoreKit/automaticproductplaceholdericon.md)  (111185321)
 
 ###### Resolved Issues
 
-- Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
-- Fixed issue where [`StoreView`](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
+- Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
+- Fixed issue where [StoreView](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
 
 ##### Swift
 
@@ -151,20 +164,24 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Use `chartXSelection`, `chartYSelection` and `chartAngleSelection` to enable selection on a chart. If needed, use `chartGesture` to override the default gesture for selection.  (79083764)
 - Swift Charts now supports creating pie charts and donut charts using the new `SectorMark` API.  (102309263)
 - Pass an `AnnotationOverflowResolution` to the `annotation` modifier to specify how to align an annotation when it would otherwise overflow the bounds of the chart or the plot.  (106009062)
-- Use `ChartProxy.plotContainerFrame` to obtain the visible portion of the plot in a scrollable chart. ```swift
- Chart { ... }
- .chartScrollableAxes(.horizontal)
- .chartOverlay { proxy in
-     GeometryReader { geometry in
-         if let plotContainerFrame = proxy.plotContainerFrame {
-             let frame = geometry[plotContainerFrame]
-             Path(frame)
-                 .stroke(.black, lineWidth: 1)
-                 .allowsHitTesting(false)
-         }
-     }
- }
-``` (109675790)
+- Use `ChartProxy.plotContainerFrame` to obtain the visible portion of the plot in a scrollable chart.
+
+  ```swift
+   Chart { ... }
+   .chartScrollableAxes(.horizontal)
+   .chartOverlay { proxy in
+       GeometryReader { geometry in
+           if let plotContainerFrame = proxy.plotContainerFrame {
+               let frame = geometry[plotContainerFrame]
+               Path(frame)
+                   .stroke(.black, lineWidth: 1)
+                   .allowsHitTesting(false)
+           }
+       }
+   }
+  ```
+
+  (109675790)
 
 ###### Resolved Issues
 
@@ -182,17 +199,27 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - Annotations on a scrollable chart might be clipped.  (109164195)
 
-##### Swiftdata
+##### SwiftData
 
 ###### New Features
 
-- Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.) For example, specifying a filter predicate as a parameter to the `@Query` attribute will now require explicitly providing the model type used in the predicate, i.e. `#Predicate<ModelType> { … }` instead of `#Predicate { … }`: ```swift
- @Query(filter: #Predicate<Person> { ... }) var people: [Person]
-``` Another example: passing a sort descriptor or key path will now require explicitly providing the model type used for the root type of the key path, i.e. `\ModelType.property` instead of `\.property`: ```swift
- @Query(sort: [SortDescriptor(\Person.name)]) var people: [Person]
- 
- @Query(sort: \Person.name) var people: [Person]
-``` In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
+- Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.)
+
+  For example, specifying a filter predicate as a parameter to the `@Query` attribute will now require explicitly providing the model type used in the predicate, i.e. `#Predicate<ModelType> { … }` instead of `#Predicate { … }`:
+
+  ```swift
+   @Query(filter: #Predicate<Person> { ... }) var people: [Person]
+  ```
+
+  Another example: passing a sort descriptor or key path will now require explicitly providing the model type used for the root type of the key path, i.e. `\ModelType.property` instead of `\.property`:
+
+  ```swift
+   @Query(sort: [SortDescriptor(\Person.name)]) var people: [Person]
+   
+   @Query(sort: \Person.name) var people: [Person]
+  ```
+
+  In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
 
 ###### Resolved Issues
 
@@ -219,9 +246,11 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)
 
-##### Swiftui
+  **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+
+##### SwiftUI
 
 ###### New Features
 
@@ -234,7 +263,9 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 - During gesture change callbacks, velocity will automatically be tracked so that it can be applied to animations that finish when the gesture finishes.  (103371523)
 - When two Text are vertically adjacent (for example in a VStack with no spacer in between) SwiftUI will automatically calculate appropriate spacing. To opt-out if this behavior either place a Spacer or specify spacing parameter to the container view.  (104782785)
 - For apps built using the macOS 14 SDK, using `DismissAction` to close a window will default to using `DismissBehavior.interactive`.  (105406945)
-- A `NavigationSplitView` collapses into a single column in some situations, such as on iPhone, Apple Watch, or iPad in slide-over. When this happens the columns of the split view are arranged into a stack. By default, the split view automatically decides which column appears as the top of this stack based on the contents of the columns. It considers whether any embedded `List` views have selections and whether any embedded `NavigationStack` views have non-empty paths. `NavigationSplitView` provides new initializers that give users control over which column of the split view appears on top. Use initializers like `NavigationSplitView(preferredTopColumn:sidebar:content:detail:)` or `NavigationSplitView(preferredTopColumn:sidebar:detail:)` and provide a binding specifying the column that should be visible when the split view is collapsed into a stack. When using an app pops the stack, SwiftUI updates the binding.  (106241051)
+- A `NavigationSplitView` collapses into a single column in some situations, such as on iPhone, Apple Watch, or iPad in slide-over. When this happens the columns of the split view are arranged into a stack. By default, the split view automatically decides which column appears as the top of this stack based on the contents of the columns. It considers whether any embedded `List` views have selections and whether any embedded `NavigationStack` views have non-empty paths.
+
+  `NavigationSplitView` provides new initializers that give users control over which column of the split view appears on top. Use initializers like `NavigationSplitView(preferredTopColumn:sidebar:content:detail:)` or `NavigationSplitView(preferredTopColumn:sidebar:detail:)` and provide a binding specifying the column that should be visible when the split view is collapsed into a stack. When using an app pops the stack, SwiftUI updates the binding.  (106241051)
 - When using `@Environment(\.self)` to capture an entire `EnvironmentValues`, SwiftUI will now track which properties are accessed to only invalidate the property when those properties change.  (106310433)
 - Use the new `navigationDestination(item:destination:)` overload to present a navigation destination when a bound item is non-`nil`, or to dismiss the destination when the bound item becomes `nil` again.  (106319528)
 - Shapes now default to mirroring when in a right to left layout direction.   (107405880)
@@ -247,7 +278,11 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: Scroll environment properties like isScrollEnabled and scrollDismissesKeyboardMode are no longer propagated past nested scroll views.  (99195890)
 - Fixed: Previously it was possible for views animating their removal via a transition to be drawn above a view with the same zIndex that has not yet been removed. This was unintentional and has now been updated: views transitioning out of the view hierarchy are always drawn below non-removed views with the same zIndex.  (101085960)
 - Fixed: LazyVGrid or LazyHGrid has an improved layout when used with fixedSize().  (103075945)
-- Fixed: The new `.navigationDestination(item:content:)` modifier now works correctly both inside a `NavigationStack` and outside a stack but inside a column of a `NavigationSplitView`. Inside a stack, setting the bound item to a non-nil value will push a view onto the stack immediate above the view containing the modifier. Setting the bound item to a nil value will pop the view. Outside a stack but inside a column of a `NavigationSplitView`, setting the bound item to a non-nil value will replace the root view of the subsequent column. Setting the bound item to a nil value will restore the original root view.  (106106406)
+- Fixed: The new `.navigationDestination(item:content:)` modifier now works correctly both inside a `NavigationStack` and outside a stack but inside a column of a `NavigationSplitView`.
+
+  Inside a stack, setting the bound item to a non-nil value will push a view onto the stack immediate above the view containing the modifier. Setting the bound item to a nil value will pop the view.
+
+  Outside a stack but inside a column of a `NavigationSplitView`, setting the bound item to a non-nil value will replace the root view of the subsequent column. Setting the bound item to a nil value will restore the original root view.  (106106406)
 - Fixed: In some circumstances, the first view pushed onto a `NavigationStack` or collapsed `NavigationSplitView` might fail to animate.  (106602046)
 - Fixed: When a flexible frame modifier (e.g. frame(minHeight: 100, maxHeight: 200)) is used inside a scroll view the modified view could end up truncating content. This would most often be visible with the content view being a VStack with multiline text.  (107014454)
 - Fixed: When scrolling to the end of a scroll view using ScrollViewReader, the final offset will be clamped to the scroll view’s total content size and no longer overscroll.  (107558652) (FB12094127)
@@ -257,7 +292,9 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)
+
+  **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
 
 ##### Symbol Effects
 
@@ -265,13 +302,13 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - Fixed: In the objective-C API in Symbols.framework, requesting `effectWithWholeSymbol` on `NSSymbolPulseEffect` and `NSSymbolBounceEffect` will result in the effect being configured to animate by layer instead.  (109284710)
 
-##### Tipkit
+##### TipKit
 
 ###### Resolved Issues
 
 - Fixed: Tips and TipKit views will not display on Apple TV hardware.  (108286122)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -288,7 +325,7 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed:  `VNDetectHumanBodyPose3DRequest` now returns results for images/frames of people without depth metadata or camera intrinsics explicitly provided.  (109723859)
 - Fixed issue with `cameraOriginMatrix`  so a 180 rotation around x axis is no longer required. Please reference updated sample code for WWDC Session 111241.  (110726503)
 
-##### Wi Fi
+##### Wi-Fi
 
 ###### Resolved Issues
 
@@ -296,17 +333,18 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ## See Also
 
-- [tvOS 17.6 Release Notes](tvos-17_6-release-notes.md)
+### tvOS 17
+- [tvOS 17.6 Release Notes](./tvos-17_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 17.5 Release Notes](tvos-17_5-release-notes.md)
+- [tvOS 17.5 Release Notes](./tvos-17_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 17.4 Release Notes](tvos-17_4-release-notes.md)
+- [tvOS 17.4 Release Notes](./tvos-17_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 17.3 Release Notes](tvos-17_3-release-notes.md)
+- [tvOS 17.3 Release Notes](./tvos-17_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 17.2 Release Notes](tvos-17_2-release-notes.md)
+- [tvOS 17.2 Release Notes](./tvos-17_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 17.1 Release Notes](tvos-17_1-release-notes.md)
+- [tvOS 17.1 Release Notes](./tvos-17_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

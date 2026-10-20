@@ -1,7 +1,8 @@
 # metadataItem(frameTimeRange:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds a metadata item containing the presentation commands active at the start of the specified frame’s time range.
 

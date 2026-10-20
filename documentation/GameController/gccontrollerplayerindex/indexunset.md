@@ -1,7 +1,8 @@
 # GCControllerPlayerIndex.indexUnset
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default index for a player on a controller.
 
@@ -19,15 +20,20 @@ The default index for a player on a controller.
 case indexUnset
 ```
 
+```c
+GCControllerPlayerIndexUnset
+```
+
 ## See Also
 
-- [GCControllerPlayerIndex.index1](gccontrollerplayerindex/index1.md)
+### Player indices
+- [GCControllerPlayerIndex.index1](./index1.md)
   Player one is using the controller.
-- [GCControllerPlayerIndex.index2](gccontrollerplayerindex/index2.md)
+- [GCControllerPlayerIndex.index2](./index2.md)
   Player two is using the controller.
-- [GCControllerPlayerIndex.index3](gccontrollerplayerindex/index3.md)
+- [GCControllerPlayerIndex.index3](./index3.md)
   Player three is using the controller.
-- [GCControllerPlayerIndex.index4](gccontrollerplayerindex/index4.md)
+- [GCControllerPlayerIndex.index4](./index4.md)
   Player four is using the controller.
 
 

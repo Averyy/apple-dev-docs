@@ -1,7 +1,8 @@
 # connectionTimeout(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the timeout for TCP connection establishment.
 

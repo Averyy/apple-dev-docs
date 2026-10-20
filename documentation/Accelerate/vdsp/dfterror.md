@@ -1,7 +1,8 @@
 # vDSP.DFTError
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -21,37 +22,38 @@ enum DFTError
 ## Topics
 
 ### Enumeration Cases
-- [vDSP.DFTError.invalidInterleavedCount(count:)](vdsp/dfterror/invalidinterleavedcount(count:).md)
-- [case invalidSplitComplexCount(count: Int, transformType: vDSP.DFTTransformType)](vdsp/dfterror/invalidsplitcomplexcount(count:transformtype:).md)
+- [vDSP.DFTError.invalidInterleavedCount(count:)](./dfterror/invalidinterleavedcount%28count%29.md)
+- [case invalidSplitComplexCount(count: Int, transformType: vDSP.DFTTransformType)](./dfterror/invalidsplitcomplexcount%28count,transformtype%29.md)
 ### Instance Properties
-- [var errorDescription: String?](vdsp/dfterror/errordescription.md)
+- [var errorDescription: String?](./dfterror/errordescription.md)
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [vDSP.DCTTransformType](vdsp/dcttransformtype.md)
+### Enumerations
+- [vDSP.DCTTransformType](./dcttransformtype.md)
   An enumeration that describes the discrete cosine transform types.
-- [vDSP.DFTTransformType](vdsp/dfttransformtype.md)
+- [vDSP.DFTTransformType](./dfttransformtype.md)
   Discrete Fourier transform types.
-- [vDSP.FourierTransformDirection](vdsp/fouriertransformdirection.md)
+- [vDSP.FourierTransformDirection](./fouriertransformdirection.md)
   Fast Fourier transform directions.
-- [vDSP.IntegrationRule](vdsp/integrationrule.md)
+- [vDSP.IntegrationRule](./integrationrule.md)
   Integration rules.
-- [vDSP.Radix](vdsp/radix.md)
+- [vDSP.Radix](./radix.md)
   Fast Fourier transform radices.
-- [vDSP.RoundingMode](vdsp/roundingmode.md)
+- [vDSP.RoundingMode](./roundingmode.md)
   Floating point to integer conversion rounding modes.
-- [vDSP.SortOrder](vdsp/sortorder.md)
+- [vDSP.SortOrder](./sortorder.md)
   Constants that specify the sorting order.
-- [vDSP.ThresholdRule](vdsp/thresholdrule.md)
+- [vDSP.ThresholdRule](./thresholdrule.md)
   Constants that specify vector threshold rules.
-- [vDSP.WindowSequence](vdsp/windowsequence.md)
+- [vDSP.WindowSequence](./windowsequence.md)
   Constants that specify window sequence functions.
 
 

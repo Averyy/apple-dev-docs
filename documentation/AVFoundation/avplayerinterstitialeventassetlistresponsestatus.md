@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEventAssetListResponseStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the status of the asset list response for an interstitial event.
 
@@ -20,31 +21,36 @@ Constants that describe the status of the asset list response for an interstitia
 enum AVPlayerInterstitialEventAssetListResponseStatus
 ```
 
+```c
+enum AVPlayerInterstitialEventAssetListResponseStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status values
-- [AVPlayerInterstitialEventAssetListResponseStatus.available](avplayerinterstitialeventassetlistresponsestatus/available.md)
+- [AVPlayerInterstitialEventAssetListResponseStatus.available](./avplayerinterstitialeventassetlistresponsestatus/available.md)
   Indicates that a valid asset list response is available.
-- [AVPlayerInterstitialEventAssetListResponseStatus.cleared](avplayerinterstitialeventassetlistresponsestatus/cleared.md)
+- [AVPlayerInterstitialEventAssetListResponseStatus.cleared](./avplayerinterstitialeventassetlistresponsestatus/cleared.md)
   Indicates that the system cleared the asset list response.
-- [AVPlayerInterstitialEventAssetListResponseStatus.unavailable](avplayerinterstitialeventassetlistresponsestatus/unavailable.md)
+- [AVPlayerInterstitialEventAssetListResponseStatus.unavailable](./avplayerinterstitialeventassetlistresponsestatus/unavailable.md)
   Indicates that the asset list response is unavailable.
 ### Initializers
-- [init?(rawValue: Int)](avplayerinterstitialeventassetlistresponsestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avplayerinterstitialeventassetlistresponsestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let assetListResponseStatusDidChangeNotification: NSNotification.Name](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangenotification.md)
+### Monitoring the asset list response
+- [class let assetListResponseStatusDidChangeNotification: NSNotification.Name](./avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangenotification.md)
   A notification the system posts when the status of an interstitial event’s asset list response changes.
 
 

@@ -1,7 +1,8 @@
 # productType
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The type of product in the transaction, whether it’s a one-time buy, or a subscription.
 
@@ -10,9 +11,14 @@ The type of product in the transaction, whether it’s a one-time buy, or a subs
 
 ## Declaration
 
-```swift
+```
 string productType
 ```
+
+## Possible Values
+
+- `ONE_TIME_BUY`
+- `SUBSCRIPTION`
 
 #### Discussion
 
@@ -22,9 +28,10 @@ Use  `ONE_TIME_BUY` for in-app products that customers purchase once. Use `SUBSC
 
 ## See Also
 
-- [type productIdentifier](productidentifier.md)
+### Providing product info
+- [type productIdentifier](./productidentifier.md)
   A string that identifies the product.
-- [type quantity](quantity.md)
+- [type quantity](./quantity.md)
   The quantity of the product the customer purchased in a single transaction.
 
 

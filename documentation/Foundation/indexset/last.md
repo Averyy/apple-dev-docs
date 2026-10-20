@@ -1,7 +1,8 @@
 # last
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The last integer in `self`, or nil if `self` is empty.
 
@@ -22,15 +23,16 @@ var last: IndexSet.Element? { get }
 
 ## See Also
 
-- [var count: Int](indexset/count.md)
+### Counting Indexes
+- [var count: Int](./count.md)
   Returns the number of integers in `self`.
-- [let endIndex: IndexSet.RangeView.Index](indexset/rangeview-swift.struct/endindex.md)
+- [let endIndex: IndexSet.RangeView.Index](./rangeview-swift.struct/endindex.md)
   The ending index in the range.
-- [var first: IndexSet.Element?](indexset/first.md)
+- [var first: IndexSet.Element?](./first.md)
   The first integer in `self`, or nil if `self` is empty.
-- [var isEmpty: Bool](indexset/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   Returns `true` if self contains no values.
-- [let startIndex: IndexSet.RangeView.Index](indexset/rangeview-swift.struct/startindex.md)
+- [let startIndex: IndexSet.RangeView.Index](./rangeview-swift.struct/startindex.md)
   The beginning index in the range.
 
 

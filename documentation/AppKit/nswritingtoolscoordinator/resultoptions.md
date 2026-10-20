@@ -1,7 +1,8 @@
 # resultOptions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of content the system generates for your custom text view.
 
@@ -14,17 +15,22 @@ The type of content the system generates for your custom text view.
 var resultOptions: NSWritingToolsResultOptions { get }
 ```
 
+```objc
+@property (readonly) NSWritingToolsResultOptions resultOptions;
+```
+
 #### Discussion
 
-This property contains the set of options that Writing Tools outputs for your view. Writing Tools takes the value in the [`preferredResultOptions`](nswritingtoolscoordinator/preferredresultoptions.md) property into consideration when determining this value.
+This property contains the set of options that Writing Tools outputs for your view. Writing Tools takes the value in the [`preferredResultOptions`](./preferredresultoptions.md) property into consideration when determining this value.
 
 ## See Also
 
-- [var preferredBehavior: NSWritingToolsBehavior](nswritingtoolscoordinator/preferredbehavior.md)
+### Configuring the experience
+- [var preferredBehavior: NSWritingToolsBehavior](./preferredbehavior.md)
   The level of Writing Tools support you want the system to provide for your view.
-- [var behavior: NSWritingToolsBehavior](nswritingtoolscoordinator/behavior.md)
+- [var behavior: NSWritingToolsBehavior](./behavior.md)
   The actual level of Writing Tools support the system provides for your view.
-- [var preferredResultOptions: NSWritingToolsResultOptions](nswritingtoolscoordinator/preferredresultoptions.md)
+- [var preferredResultOptions: NSWritingToolsResultOptions](./preferredresultoptions.md)
   The type of content you allow Writing Tools to generate for your custom text view.
 
 

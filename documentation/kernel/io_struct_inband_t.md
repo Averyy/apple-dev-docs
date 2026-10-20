@@ -1,14 +1,15 @@
 # io_struct_inband_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef char io_struct_inband_t[4096];
 ```
 

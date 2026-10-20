@@ -1,7 +1,8 @@
 # IMKCandidatesLocationHint
 
 **Framework**: InputMethodKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Hints that suggest where to place the candidates window.
 
@@ -14,6 +15,10 @@ Hints that suggest where to place the candidates window.
 typealias IMKCandidatesLocationHint = Int
 ```
 
+```c
+typedef NSUInteger IMKCandidatesLocationHint;
+```
+
 #### Discussion
 
 The Input Method Kit uses the hint to place the candidates window in a location that is in the vicinity of the hint location, but that also ensures that the candidates window is fully visible.
@@ -21,14 +26,15 @@ The Input Method Kit uses the hint to place the candidates window in a location 
 ## Topics
 
 ### Constants
-- [var kIMKLocateCandidatesAboveHint: Int](kimklocatecandidatesabovehint.md)
-- [var kIMKLocateCandidatesBelowHint: Int](kimklocatecandidatesbelowhint.md)
-- [var kIMKLocateCandidatesLeftHint: Int](kimklocatecandidateslefthint.md)
-- [var kIMKLocateCandidatesRightHint: Int](kimklocatecandidatesrighthint.md)
+- [var kIMKLocateCandidatesAboveHint: Int](./kimklocatecandidatesabovehint.md)
+- [var kIMKLocateCandidatesBelowHint: Int](./kimklocatecandidatesbelowhint.md)
+- [var kIMKLocateCandidatesLeftHint: Int](./kimklocatecandidateslefthint.md)
+- [var kIMKLocateCandidatesRightHint: Int](./kimklocatecandidatesrighthint.md)
 
 ## See Also
 
-- [typealias IMKCandidatePanelType](imkcandidatepaneltype.md)
+### Constants
+- [typealias IMKCandidatePanelType](./imkcandidatepaneltype.md)
   Types of candidates windows provide by the Input Method Kit.
 
 

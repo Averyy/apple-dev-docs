@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the image size increases to support accessibility content size categories.
@@ -20,9 +21,13 @@ A Boolean value that indicates whether the image size increases to support acces
 var adjustsImageSizeForAccessibilityContentSizeCategory: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL adjustsImageSizeForAccessibilityContentSizeCategory;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the current object scales its image to an appropriate accessibility content size category. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the current object displays its image at the regular content sizes.
+When the value of this property is [`true`](../../Swift/true.md), the current object scales its image to an appropriate accessibility content size category. When the value of this property is [`false`](../../Swift/false.md), the current object displays its image at the regular content sizes.
 
 
 ---

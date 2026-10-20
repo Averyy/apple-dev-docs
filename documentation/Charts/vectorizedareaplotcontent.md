@@ -1,7 +1,8 @@
 # VectorizedAreaPlotContent
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque vectorized chart content type.
 
@@ -28,16 +29,17 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VectorizedChartContent](vectorizedchartcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VectorizedChartContent](./vectorizedchartcontent.md)
 
 ## See Also
 
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+### Supporting types
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [struct FunctionAreaPlotContent](functionareaplotcontent.md)
+- [struct FunctionAreaPlotContent](./functionareaplotcontent.md)
 
 
 ---

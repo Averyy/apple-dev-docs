@@ -1,7 +1,8 @@
 # loose
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Constant line height based on a multiple of the point size that is perceived as loose.
 

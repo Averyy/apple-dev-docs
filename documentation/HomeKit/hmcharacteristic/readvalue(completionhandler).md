@@ -1,7 +1,8 @@
 # readValue(completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the value for the characteristic.
 
@@ -16,24 +17,35 @@ Reads the value for the characteristic.
 ## Declaration
 
 ```swift
+func readValue(completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func readValue() async throws
+```
+
+```objc
+- (void) readValueWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
 
-The value is available from the [`value`](hmcharacteristic/value.md) property after completion of the request.
+The value is available from the [`value`](./value.md) property after completion of the request.
 
 ## Parameters
 
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var value: Any?](hmcharacteristic/value.md)
+### Controlling a characteristic
+- [var value: Any?](./value.md)
   The current value of the characteristic.
-- [func writeValue(Any?, completionHandler: ((any Error)?) -> Void)](hmcharacteristic/writevalue(_:completionhandler:).md)
+- [func writeValue(Any?, completionHandler: ((any Error)?) -> Void)](./writevalue%28_,completionhandler%29.md)
   Modifies the value of the characteristic.
-- [func updateAuthorizationData(Data?, completionHandler: ((any Error)?) -> Void)](hmcharacteristic/updateauthorizationdata(_:completionhandler:).md)
+- [func updateAuthorizationData(Data?, completionHandler: ((any Error)?) -> Void)](./updateauthorizationdata%28_,completionhandler%29.md)
   Sets or clears authorization data used when writing to the characteristic.
 
 

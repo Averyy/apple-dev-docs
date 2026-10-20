@@ -1,7 +1,8 @@
 # UIStatusBarStyle.lightContent
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A light status bar, intended for use on dark backgrounds.
 
@@ -17,11 +18,16 @@ A light status bar, intended for use on dark backgrounds.
 case lightContent
 ```
 
+```c
+UIStatusBarStyleLightContent
+```
+
 ## See Also
 
-- [UIStatusBarStyle.default](uistatusbarstyle/default.md)
+### Constants
+- [UIStatusBarStyle.default](./default.md)
   A style that automatically selects an appearance for the status bar and updates it dynamically to maintain contrast with the content below it.
-- [UIStatusBarStyle.darkContent](uistatusbarstyle/darkcontent.md)
+- [UIStatusBarStyle.darkContent](./darkcontent.md)
   A dark status bar, intended for use on light backgrounds.
 
 

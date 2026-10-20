@@ -1,7 +1,8 @@
 # SecCSDigestAlgorithm.codeSignatureHashSHA256Truncated
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 case codeSignatureHashSHA256Truncated
+```
+
+```c
+kSecCodeSignatureHashSHA256Truncated
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: CryptoTokenKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a new Smart Card is detected.
@@ -19,6 +20,10 @@ Tells the delegate that a new Smart Card is detected.
 
 ```swift
 func tokenDriver(_ driver: TKSmartCardTokenDriver, createTokenFor smartCard: TKSmartCard, aid AID: Data?) throws -> TKSmartCardToken
+```
+
+```objc
+- (TKSmartCardToken *) tokenDriver:(TKSmartCardTokenDriver *) driver createTokenForSmartCard:(TKSmartCard *) smartCard AID:(NSData *) AID error:(NSError **) error;
 ```
 
 #### Return Value

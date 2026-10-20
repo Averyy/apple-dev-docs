@@ -1,14 +1,15 @@
 # UIDocumentMenuOrder.first
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The top item in the document menu.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
@@ -16,9 +17,14 @@ The top item in the document menu.
 case first
 ```
 
+```c
+UIDocumentMenuOrderFirst
+```
+
 ## See Also
 
-- [UIDocumentMenuOrder.last](uidocumentmenuorder/last.md)
+### Constants
+- [UIDocumentMenuOrder.last](./last.md)
   The bottom item in the document menu.
 
 

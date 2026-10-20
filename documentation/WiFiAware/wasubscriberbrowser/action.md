@@ -1,7 +1,8 @@
 # WASubscriberBrowser.Action
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure that configures the Wi-Fi Aware subscriber operation the network browser performs.
 
@@ -20,7 +21,7 @@ struct Action
 
 The configuration includes the service and devices it operates on.
 
-The [`WASubscriberBrowser.Action`](wasubscriberbrowser/action.md) is the first component of the `.wifiAware()` instruction to a `NetworkBrowser`.
+The [`WASubscriberBrowser.Action`](./action.md) is the first component of the `.wifiAware()` instruction to a `NetworkBrowser`.
 
 The code below is an example of creating a `NetworkBrowser`:
 
@@ -31,20 +32,21 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
 ## Topics
 
 ### Creating a browser
-- [static func connecting(to: WASubscriberBrowser.Devices, from: WASubscribableService) -> WASubscriberBrowser.Action](wasubscriberbrowser/action/connecting(to:from:).md)
+- [static func connecting(to: WASubscriberBrowser.Devices, from: WASubscribableService) -> WASubscriberBrowser.Action](./action/connecting%28to,from%29.md)
   Subscribes to the provided service over Wi-Fi, providing browse results for connecting to the specified paired devices if available.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WASubscriberBrowser](wasubscriberbrowser.md)
+### Subscriber
+- [struct WASubscriberBrowser](../wasubscriberbrowser.md)
   The structure that configures a network browser to subscribe to a Wi-Fi Aware service and make outgoing connections to paired devices.
-- [WASubscriberBrowser.Devices](wasubscriberbrowser/devices.md)
+- [WASubscriberBrowser.Devices](./devices.md)
   The structure that determines the devices to connect to.
 
 

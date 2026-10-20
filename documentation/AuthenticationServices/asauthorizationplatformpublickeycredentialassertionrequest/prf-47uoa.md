@@ -1,7 +1,8 @@
 # prf
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,9 +19,10 @@ var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput? { get set }
 
 ## See Also
 
-- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md)
+### Accessing request properties
+- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](./allowedcredentials.md)
   The array of allowed credentials.
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](./largeblob-9kvvl.md)
   The request’s binary large object value.
 
 

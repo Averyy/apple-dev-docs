@@ -1,7 +1,8 @@
 # address
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The photo ID holder’s address on record with the issuer.
 

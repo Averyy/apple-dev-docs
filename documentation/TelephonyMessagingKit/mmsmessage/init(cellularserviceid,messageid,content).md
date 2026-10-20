@@ -1,7 +1,8 @@
 # init(cellularServiceID:messageID:content:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an MMS message for sending to a receipient.
 

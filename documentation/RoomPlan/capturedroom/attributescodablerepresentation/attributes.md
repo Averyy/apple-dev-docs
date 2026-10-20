@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of object attributes.
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of URI.
 
@@ -16,13 +17,14 @@ let type: RCSService.Business.URIEntry.URIType
 
 ## See Also
 
-- [let uri: URL](rcsservice/business/urientry/uri.md)
+### Accessing URI properties
+- [let uri: URL](./uri.md)
   URI provided by business.
-- [RCSService.Business.URIEntry.URIType](rcsservice/business/urientry/uritype.md)
+- [RCSService.Business.URIEntry.URIType](./uritype.md)
   Enumeration representing the type of URI.
-- [let label: RCSService.Business.URIEntry.Label](rcsservice/business/urientry/label-swift.property.md)
+- [let label: RCSService.Business.URIEntry.Label](./label-swift.property.md)
   Label for URI.
-- [RCSService.Business.URIEntry.Label](rcsservice/business/urientry/label-swift.enum.md)
+- [RCSService.Business.URIEntry.Label](./label-swift.enum.md)
   Enumeration representing the URI label.
 
 

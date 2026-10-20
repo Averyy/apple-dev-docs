@@ -1,7 +1,8 @@
 # CAClockRemoveListener(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,11 +13,16 @@
 func CAClockRemoveListener(_ inCAClock: CAClockRef, _ inListenerProc: CAClockListenerProc, _ inUserData: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus CAClockRemoveListener(CAClockRef inCAClock, CAClockListenerProc inListenerProc, void *inUserData);
+```
+
 ## See Also
 
-- [func CAClockAddListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](caclockaddlistener(_:_:_:).md)
-- [typealias CAClockListenerProc](caclocklistenerproc.md)
-- [enum CAClockMessage](caclockmessage.md)
+### Adding and Removing Listeners
+- [func CAClockAddListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](./caclockaddlistener%28_,_,_%29.md)
+- [typealias CAClockListenerProc](./caclocklistenerproc.md)
+- [enum CAClockMessage](./caclockmessage.md)
 
 
 ---

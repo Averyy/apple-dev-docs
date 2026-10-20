@@ -1,7 +1,8 @@
 # disallowPartialType(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -20,8 +21,9 @@ mutating func disallowPartialType(_ type: any Any.Type)
 
 ## See Also
 
-- [func disallowKeyPathsForPropertiesProvided<T>(by: T.Type, recursive: Bool)](predicatecodableconfiguration/disallowkeypathsforpropertiesprovided(by:recursive:).md)
-- [func disallowType(any Any.Type)](predicatecodableconfiguration/disallowtype(_:).md)
+### Disallowing types and key paths
+- [func disallowKeyPathsForPropertiesProvided<T>(by: T.Type, recursive: Bool)](./disallowkeypathsforpropertiesprovided%28by,recursive%29.md)
+- [func disallowType(any Any.Type)](./disallowtype%28_%29.md)
 
 
 ---

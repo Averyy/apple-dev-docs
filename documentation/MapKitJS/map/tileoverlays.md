@@ -1,7 +1,8 @@
 # tileOverlays
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all of the map’s tile overlays.
 
@@ -10,7 +11,7 @@ An array of all of the map’s tile overlays.
 
 ## Declaration
 
-```swift
+```
 get tileOverlays(): TileOverlay[];
 set tileOverlays(tileOverlays: TileOverlay[]);
 ```
@@ -21,13 +22,14 @@ You can set this attribute to a new (possibly empty) array of tile overlays, to 
 
 ## See Also
 
-- [addTileOverlay(tileOverlay)](map/addtileoverlay.md)
+### Adding and removing tile overlays
+- [addTileOverlay(tileOverlay)](./addtileoverlay.md)
   Adds a tile overlay to the map.
-- [addTileOverlays(tileOverlays)](map/addtileoverlays.md)
+- [addTileOverlays(tileOverlays)](./addtileoverlays.md)
   Adds an array of tile overlays to the map.
-- [removeTileOverlay(tileOverlay)](map/removetileoverlay.md)
+- [removeTileOverlay(tileOverlay)](./removetileoverlay.md)
   Removes a tile overlay from the map.
-- [removeTileOverlays(tileOverlays)](map/removetileoverlays.md)
+- [removeTileOverlays(tileOverlays)](./removetileoverlays.md)
   Removes an array of tile overlays from the map.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty property wrapper that loads the window controller’s window before accessing the property.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [init(wrappedValue: Value)](nswindowcontroller/windowloading/init(wrappedvalue:).md)
+### Creating a WindowLoading Property Wrapper
+- [init(wrappedValue: Value)](./init%28wrappedvalue%29.md)
   Creates a property wrapper that loads the window controller’s window before accessing the property.
 
 

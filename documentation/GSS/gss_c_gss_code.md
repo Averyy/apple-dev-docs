@@ -1,7 +1,8 @@
 # GSS_C_GSS_CODE
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that indicates the named status code comes from a GSS-API call.
 
@@ -18,23 +19,28 @@ A flag that indicates the named status code comes from a GSS-API call.
 var GSS_C_GSS_CODE: Int32 { get }
 ```
 
+```c
+#define GSS_C_GSS_CODE
+```
+
 ## See Also
 
-- [typealias OM_uint32](om_uint32.md)
+### Status and Error Creation
+- [typealias OM_uint32](./om_uint32.md)
   A 32-bit unsigned integer.
-- [typealias OM_uint64](om_uint64.md)
+- [typealias OM_uint64](./om_uint64.md)
   A 64-bit unsigned integer.
-- [typealias gss_uint32](gss_uint32.md)
+- [typealias gss_uint32](./gss_uint32.md)
   A 32-bit unsigned integer.
-- [typealias gss_status_id_t](gss_status_id_t.md)
+- [typealias gss_status_id_t](./gss_status_id_t.md)
   A pointer to a status result.
-- [var GSS_C_MECH_CODE: Int32](gss_c_mech_code.md)
+- [var GSS_C_MECH_CODE: Int32](./gss_c_mech_code.md)
   A flag that indicates the status code comes from a call to an underlying mechanism, such as Kerberos.
-- [var GSS_S_COMPLETE: Int32](gss_s_complete.md)
+- [var GSS_S_COMPLETE: Int32](./gss_s_complete.md)
   The operation completed without error.
-- [func gss_display_status(UnsafeMutablePointer<OM_uint32>, OM_uint32, Int32, gss_OID?, UnsafeMutablePointer<OM_uint32>, gss_buffer_t) -> OM_uint32](gss_display_status(_:_:_:_:_:_:).md)
+- [func gss_display_status(UnsafeMutablePointer<OM_uint32>, OM_uint32, Int32, gss_OID?, UnsafeMutablePointer<OM_uint32>, gss_buffer_t) -> OM_uint32](./gss_display_status%28_,_,_,_,_,_%29.md)
   Returns a human readable string for a status code.
-- [func GSSCreateError(gss_const_OID, OM_uint32, OM_uint32) -> Unmanaged<CFError>?](gsscreateerror(_:_:_:).md)
+- [func GSSCreateError(gss_const_OID, OM_uint32, OM_uint32) -> Unmanaged<CFError>?](./gsscreateerror%28_,_,_%29.md)
   Returns an error object based on GSS-API major and minor status codes.
 
 

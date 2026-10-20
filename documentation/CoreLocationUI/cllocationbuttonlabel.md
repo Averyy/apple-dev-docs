@@ -1,7 +1,8 @@
 # CLLocationButtonLabel
 
 **Framework**: CoreLocationUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the text of the button label.
 
@@ -16,37 +17,42 @@ Constants that specify the text of the button label.
 enum CLLocationButtonLabel
 ```
 
+```c
+enum CLLocationButtonLabel : NSInteger;
+```
+
 ## Topics
 
 ### Customizing label styles
-- [CLLocationButtonLabel.none](cllocationbuttonlabel/none.md)
+- [CLLocationButtonLabel.none](./cllocationbuttonlabel/none.md)
   A style that doesn’t display a text label.
-- [CLLocationButtonLabel.currentLocation](cllocationbuttonlabel/currentlocation.md)
+- [CLLocationButtonLabel.currentLocation](./cllocationbuttonlabel/currentlocation.md)
   A button label with the text *Current Location*.
-- [CLLocationButtonLabel.sendCurrentLocation](cllocationbuttonlabel/sendcurrentlocation.md)
+- [CLLocationButtonLabel.sendCurrentLocation](./cllocationbuttonlabel/sendcurrentlocation.md)
   A button label with the text *Send Current Location*.
-- [CLLocationButtonLabel.sendMyCurrentLocation](cllocationbuttonlabel/sendmycurrentlocation.md)
+- [CLLocationButtonLabel.sendMyCurrentLocation](./cllocationbuttonlabel/sendmycurrentlocation.md)
   A button label with the text *Send My Current Location*.
-- [CLLocationButtonLabel.shareCurrentLocation](cllocationbuttonlabel/sharecurrentlocation.md)
+- [CLLocationButtonLabel.shareCurrentLocation](./cllocationbuttonlabel/sharecurrentlocation.md)
   A button label with the text *Share Current Location*.
-- [CLLocationButtonLabel.shareMyCurrentLocation](cllocationbuttonlabel/sharemycurrentlocation.md)
+- [CLLocationButtonLabel.shareMyCurrentLocation](./cllocationbuttonlabel/sharemycurrentlocation.md)
   A button label with the text *Share My Current Location*.
 ### Initializers
-- [init?(rawValue: Int)](cllocationbuttonlabel/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cllocationbuttonlabel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CLLocationButtonIcon](cllocationbuttonicon.md)
+### Button customization
+- [enum CLLocationButtonIcon](./cllocationbuttonicon.md)
   Constants that specify styles for the location arrow icon on the button.
 
 

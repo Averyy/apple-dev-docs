@@ -1,7 +1,8 @@
 # SMSService.CriticalMessageStateNotification.State.sent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service sent the message successfully.
 

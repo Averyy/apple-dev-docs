@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for specifying whether the particle color is a single color, or if the particle should take a random color in the given range.
 
@@ -22,19 +23,19 @@ enum ColorValue
 ## Topics
 
 ### Enumeration Cases
-- [case random(a: ParticleEmitterComponent.ParticleEmitter.Color, b: ParticleEmitterComponent.ParticleEmitter.Color)](particleemittercomponent/particleemitter/particlecolor/colorvalue/random(a:b:)-1muv6.md)
+- [case random(a: ParticleEmitterComponent.ParticleEmitter.Color, b: ParticleEmitterComponent.ParticleEmitter.Color)](./colorvalue/random%28a,b%29-1muv6.md)
   The system will choose a random color for each particle between the given two Colors.
-- [case random(a: ParticleEmitterComponent.ParticleEmitter.Color, b: ParticleEmitterComponent.ParticleEmitter.Color)](particleemittercomponent/particleemitter/particlecolor/colorvalue/random(a:b:)-6g22v.md)
+- [case random(a: ParticleEmitterComponent.ParticleEmitter.Color, b: ParticleEmitterComponent.ParticleEmitter.Color)](./colorvalue/random%28a,b%29-6g22v.md)
   The system will choose a random color for each particle between the given two Colors.
-- [ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue.single(_:)](particleemittercomponent/particleemitter/particlecolor/colorvalue/single(_:)-58m53.md)
+- [ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue.single(_:)](./colorvalue/single%28_%29-58m53.md)
   The particle will be the given Color.
-- [ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue.single(_:)](particleemittercomponent/particleemitter/particlecolor/colorvalue/single(_:)-65g3i.md)
+- [ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue.single(_:)](./colorvalue/single%28_%29-65g3i.md)
   The particle will be the given Color.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../../Swift/equatable.md)
 
 
 ---

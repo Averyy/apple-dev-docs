@@ -1,7 +1,8 @@
 # readAttributeNullableInt24s(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableInt24s(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableInt24s() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNullableInt24sWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

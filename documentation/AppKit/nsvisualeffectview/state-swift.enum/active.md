@@ -1,7 +1,8 @@
 # NSVisualEffectView.State.active
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The backdrop should always appear active.
 
@@ -14,11 +15,16 @@ The backdrop should always appear active.
 case active
 ```
 
+```c
+NSVisualEffectStateActive
+```
+
 ## See Also
 
-- [NSVisualEffectView.State.followsWindowActiveState](nsvisualeffectview/state-swift.enum/followswindowactivestate.md)
+### Visual Effect View States
+- [NSVisualEffectView.State.followsWindowActiveState](./followswindowactivestate.md)
   The backdrop should automatically appear active when the window is active, and inactive when it is not.
-- [NSVisualEffectView.State.inactive](nsvisualeffectview/state-swift.enum/inactive.md)
+- [NSVisualEffectView.State.inactive](./inactive.md)
   The backdrop should always appear inactive.
 
 

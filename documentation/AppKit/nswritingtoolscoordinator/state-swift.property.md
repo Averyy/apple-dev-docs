@@ -1,7 +1,8 @@
 # state
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current level of Writing Tools activity in your view.
 
@@ -14,15 +15,20 @@ The current level of Writing Tools activity in your view.
 var state: NSWritingToolsCoordinator.State { get }
 ```
 
+```objc
+@property (readonly) NSWritingToolsCoordinatorState state;
+```
+
 #### Discussion
 
-Use this property to determine when Writing Tools is actively making changes to your view. During the course of Writing Tools interactions, the system reports state changes to the delegate’s [`writingToolsCoordinator(_:willChangeTo:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:willchangeto:completion:).md) method and updates this property accordingly.
+Use this property to determine when Writing Tools is actively making changes to your view. During the course of Writing Tools interactions, the system reports state changes to the delegate’s [`writingToolsCoordinator(_:willChangeTo:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,willchangeto,completion%29.md) method and updates this property accordingly.
 
 ## See Also
 
-- [func stopWritingTools()](nswritingtoolscoordinator/stopwritingtools.md)
+### Managing the current state
+- [func stopWritingTools()](./stopwritingtools%28%29.md)
   Stops the current Writing Tools operation and dismisses the system UI.
-- [NSWritingToolsCoordinator.State](nswritingtoolscoordinator/state-swift.enum.md)
+- [NSWritingToolsCoordinator.State](./state-swift.enum.md)
   The states that indicate the current activity, if any, Writing Tools is performing in your view.
 
 

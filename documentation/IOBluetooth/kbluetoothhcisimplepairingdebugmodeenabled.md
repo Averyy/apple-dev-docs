@@ -1,10 +1,11 @@
 # kBluetoothHCISimplePairingDebugModeEnabled
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothHCISimplePairingDebugModeEnabled: BluetoothSimplePairingDebugModes { get }
 ```
 
+```c
+kBluetoothHCISimplePairingDebugModeEnabled
+```
+
 ## See Also
 
-- [var kBluetoothHCISimplePairingDebugModeDisabled: BluetoothSimplePairingDebugModes](kbluetoothhcisimplepairingdebugmodedisabled.md)
+### Constants
+- [var kBluetoothHCISimplePairingDebugModeDisabled: BluetoothSimplePairingDebugModes](./kbluetoothhcisimplepairingdebugmodedisabled.md)
 
 
 ---

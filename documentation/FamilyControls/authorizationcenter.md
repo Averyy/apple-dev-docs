@@ -1,7 +1,8 @@
 # AuthorizationCenter
 
 **Framework**: Family Controls  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The center for requesting authorization to provide parental controls.
 
@@ -23,9 +24,9 @@ To authorize your app so that it can provide parental controls, access the share
 let center = AuthorizationCenter.shared
 ```
 
-> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md) or [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md) methods. This capability adds the [`Family Controls`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls) entitlement to your app. In a compatible iPad or iPhone app running in visionOS, authorization attempts always fail. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](./authorizationcenter/requestauthorization%28for%29.md) or [`revokeAuthorization(completionHandler:)`](./authorizationcenter/revokeauthorization%28completionhandler%29.md) methods. This capability adds the [`Family Controls`](../BundleResources/entitlements/com.apple.developer.family-controls.md) entitlement to your app. In a compatible iPad or iPhone app running in visionOS, authorization attempts always fail. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-Next, to request authorization to provide parental controls, call [`requestAuthorization(completionHandler:)`](authorizationcenter/requestauthorization(completionhandler:).md)
+Next, to request authorization to provide parental controls, call [`requestAuthorization(completionHandler:)`](./authorizationcenter/requestauthorization%28completionhandler%29.md)
 
 ```swift
 center.requestAuthorization { result in
@@ -38,7 +39,7 @@ center.requestAuthorization { result in
 }
 ```
 
-or [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md).
+or [`requestAuthorization(for:)`](./authorizationcenter/requestauthorization%28for%29.md).
 
 ```swift
 do {
@@ -54,41 +55,42 @@ If you’re authenticating an `individual` who hasn’t previously authorized yo
 
 After your app has been authorized, additional calls to `requestAuthorization(for:)` don’t display the authentication sheet or ask to authorize that individual using Face ID or Touch ID. Instead, the system sets the authorization status.
 
-To observe changes to the authorization status, use the [`authorizationStatus`](authorizationcenter/authorizationstatus.md) property.
+To observe changes to the authorization status, use the [`authorizationStatus`](./authorizationcenter/authorizationstatus.md) property.
 
-The status may change due to external events, such as a child graduating to an adult account, or a parent or guardian changing the status in Settings. You can also revoke authorization by calling [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md)
+The status may change due to external events, such as a child graduating to an adult account, or a parent or guardian changing the status in Settings. You can also revoke authorization by calling [`revokeAuthorization(completionHandler:)`](./authorizationcenter/revokeauthorization%28completionhandler%29.md)
 
 ## Topics
 
 ### Accessing the shared center
-- [static let shared: AuthorizationCenter](authorizationcenter/shared.md)
+- [static let shared: AuthorizationCenter](./authorizationcenter/shared.md)
   The shared center for requesting and revoking authorization.
 ### Requesting and revoking authorization
-- [func requestAuthorization(for: FamilyControlsMember) async throws](authorizationcenter/requestauthorization(for:).md)
+- [func requestAuthorization(for: FamilyControlsMember) async throws](./authorizationcenter/requestauthorization%28for%29.md)
   Requests authorization to provide parental controls for a child or individual.
-- [func revokeAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/revokeauthorization(completionhandler:).md)
+- [func revokeAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](./authorizationcenter/revokeauthorization%28completionhandler%29.md)
   Revokes authorization to provide parental controls.
 ### Tracking authorization changes
-- [var authorizationStatus: AuthorizationStatus](authorizationcenter/authorizationstatus.md)
+- [var authorizationStatus: AuthorizationStatus](./authorizationcenter/authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
-- [var $authorizationStatus: Published<AuthorizationStatus>.Publisher](authorizationcenter/$authorizationstatus.md)
+- [var $authorizationStatus: Published<AuthorizationStatus>.Publisher](./authorizationcenter/dollarauthorizationstatus.md)
   A publisher for the authorization status property.
 ### Deprecated APIs
-- [func requestAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](authorizationcenter/requestauthorization(completionhandler:).md)
+- [func requestAuthorization(completionHandler: (Result<Void, any Error>) -> Void)](./authorizationcenter/requestauthorization%28completionhandler%29.md)
   Requests authorization to provide parental controls for a child.
 
 ## Relationships
 
 ### Conforms To
-- [ObservableObject](../combine/observableobject.md)
+- [ObservableObject](../Combine/observableobject.md)
 
 ## See Also
 
-- [enum AuthorizationStatus](authorizationstatus.md)
+### Authorizations
+- [enum AuthorizationStatus](./authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
-- [Family Controls](../bundleresources/entitlements/com.apple.developer.family-controls.md)
+- [Family Controls](../BundleResources/entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
-- [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
+- [Requesting the Family Controls entitlement](./requesting-the-family-controls-entitlement.md)
   Register your app and its Screen Time API app extensions to use Family Controls.
 
 

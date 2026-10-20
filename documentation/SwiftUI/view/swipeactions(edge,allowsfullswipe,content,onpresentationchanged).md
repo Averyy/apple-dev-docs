@@ -1,7 +1,8 @@
 # swipeActions(edge:allowsFullSwipe:content:onPresentationChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds custom swipe actions to a row in a list or container, notifying you when the actions are revealed or dismissed.
 
@@ -44,14 +45,15 @@ The closure is called with `true` when the row’s swipe actions become visible 
 
 ## Parameters
 
-- `edge`: The edge of the view to associate the swipe actions with. The default is [`HorizontalEdge.trailing`](horizontaledge/trailing.md).
+- `edge`: The edge of the view to associate the swipe actions with. The default is [`HorizontalEdge.trailing`](../horizontaledge/trailing.md).
 - `allowsFullSwipe`: A Boolean value that indicates whether a full swipe automatically performs the first action. The default is `true`.
 - `content`: The content of the swipe actions.
 - `onPresentationChanged`: A closure called when the swipe actions are revealed or dismissed.
 
 ## See Also
 
-- [func swipeActionsContainer() -> some View](view/swipeactionscontainer.md)
+### Container controls
+- [func swipeActionsContainer() -> some View](./swipeactionscontainer%28%29.md)
   Coordinates swipe action dismissal and mutual exclusion across rows in a container.
 
 

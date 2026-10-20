@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asynchronously creates a specialized shader function.
@@ -17,7 +18,15 @@ Asynchronously creates a specialized shader function.
 ## Declaration
 
 ```swift
+func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: @escaping @Sendable ((any MTLFunction)?, (any Error)?) -> Void)
+```
+
+```swift
 func makeFunction(name: String, constantValues: MTLFunctionConstantValues) async throws -> any MTLFunction
+```
+
+```objc
+- (void) newFunctionWithName:(NSString *) name constantValues:(MTLFunctionConstantValues *) constantValues completionHandler:(void (^)(id<MTLFunction>function, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -28,18 +37,21 @@ Function constant values are first looked up by their index, then by their name.
 
 - `name`: The name of the specialized function.
 - `constantValues`: The set of constant values assigned to the function constants. Compilation fails if you don’t provide valid constant values for all required function constants.
-- `completionHandler`: A block of code that Metal calls after it creates the specialized function. - **function**: A specialized function, or `nil` if an error occurred.
-- **error**: An error object that describes compilation problems, if any. This object contains compiler errors if the specialized function is `nil`, and compiler warnings if Metal created the specialized function with warnings. If Metal created the function without errors or warnings, this error object is `nil`.
+- `completionHandler`: A block of code that Metal calls after it creates the specialized function.
+
+  - **function**: A specialized function, or `nil` if an error occurred.
+  - **error**: An error object that describes compilation problems, if any. This object contains compiler errors if the specialized function is `nil`, and compiler warnings if Metal created the specialized function with warnings. If Metal created the function without errors or warnings, this error object is `nil`.
 
 ## See Also
 
-- [func makeFunction(name: String) -> (any MTLFunction)?](mtllibrary/makefunction(name:).md)
+### Creating shader function instances
+- [func makeFunction(name: String) -> (any MTLFunction)?](./makefunction%28name%29.md)
   Creates an instance that represents a shader function in the library.
-- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](mtllibrary/makefunction(name:constantvalues:).md)
+- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](./makefunction%28name,constantvalues%29.md)
   Synchronously creates a specialized shader function.
-- [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(descriptor:completionhandler:).md)
+- [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](./makefunction%28descriptor,completionhandler%29.md)
   Asynchronously creates an object representing a shader function, using the specified descriptor.
-- [func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction](mtllibrary/makefunction(descriptor:).md)
+- [func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction](./makefunction%28descriptor%29.md)
   Synchronously creates an object representing a shader function, using the specified descriptor.
 
 

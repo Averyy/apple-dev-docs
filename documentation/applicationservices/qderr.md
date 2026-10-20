@@ -1,7 +1,8 @@
 # QDErr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDErr = Int16
+```
+
+```c
+typedef short QDErr;
 ```
 
 

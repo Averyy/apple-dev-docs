@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.format14Bayer_GBRG
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A little-endian 14-bit Bayer pixel format with even rows ordered green-blue and odd rows ordered red-green.
 
@@ -11,7 +12,7 @@ A little-endian 14-bit Bayer pixel format with even rows ordered green-blue and 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case format14Bayer_GBRG
 
 ## See Also
 
-- [vImageCVImageFormat.Format.format14Bayer_BGGR](vimagecvimageformat/format/format14bayer_bggr.md)
+### Bayer format constants
+- [vImageCVImageFormat.Format.format14Bayer_BGGR](./format14bayer_bggr.md)
   A little-endian 14-bit Bayer pixel format with even rows ordered blue-green and odd rows ordered green-red.
-- [vImageCVImageFormat.Format.format14Bayer_GRBG](vimagecvimageformat/format/format14bayer_grbg.md)
+- [vImageCVImageFormat.Format.format14Bayer_GRBG](./format14bayer_grbg.md)
   A little-endian 14-bit Bayer pixel format with even rows ordered green-red and odd rows ordered blue-green.
-- [vImageCVImageFormat.Format.format14Bayer_RGGB](vimagecvimageformat/format/format14bayer_rggb.md)
+- [vImageCVImageFormat.Format.format14Bayer_RGGB](./format14bayer_rggb.md)
   A little-endian 14-bit Bayer pixel format with even rows ordered red-green and odd rows ordered green-blue.
 
 

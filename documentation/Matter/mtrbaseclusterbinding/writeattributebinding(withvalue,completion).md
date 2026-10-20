@@ -1,7 +1,8 @@
 # writeAttributeBinding(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeBinding(withValue value: [Any], completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeBinding(withValue value: [Any]) async throws
+```
+
+```objc
+- (void) writeAttributeBindingWithValue:(NSArray *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

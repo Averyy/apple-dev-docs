@@ -1,7 +1,8 @@
 # updateSpeechVoices()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Updates the voices your app provides to the system.
 
@@ -18,6 +19,10 @@ Updates the voices your app provides to the system.
 
 ```swift
 class func updateSpeechVoices()
+```
+
+```objc
++ (void) updateSpeechVoices;
 ```
 
 #### Discussion

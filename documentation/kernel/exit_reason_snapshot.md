@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct exit_reason_snapshot {
     ...
 };
@@ -17,9 +17,9 @@ struct exit_reason_snapshot {
 ## Topics
 
 ### Instance Properties
-- [ers_code](exit_reason_snapshot/1644408-ers_code.md)
-- [ers_flags](exit_reason_snapshot/1644403-ers_flags.md)
-- [ers_namespace](exit_reason_snapshot/1644306-ers_namespace.md)
+- [ers_code](./exit_reason_snapshot/api-1644408-ers_code.md)
+- [ers_flags](./exit_reason_snapshot/api-1644403-ers_flags.md)
+- [ers_namespace](./exit_reason_snapshot/api-1644306-ers_namespace.md)
 
 
 ---

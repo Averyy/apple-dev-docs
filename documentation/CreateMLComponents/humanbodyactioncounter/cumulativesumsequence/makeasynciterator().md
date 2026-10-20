@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs an iterator.
 
@@ -21,7 +22,8 @@ func makeAsyncIterator() -> HumanBodyActionCounter.CumulativeSumSequence.Iterato
 
 ## See Also
 
-- [HumanBodyActionCounter.CumulativeSumSequence.Iterator](humanbodyactioncounter/cumulativesumsequence/iterator.md)
+### Creating an iterator
+- [HumanBodyActionCounter.CumulativeSumSequence.Iterator](./iterator.md)
   An async iterator of cumulative count sequence.
 
 

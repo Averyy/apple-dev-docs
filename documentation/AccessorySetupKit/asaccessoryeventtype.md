@@ -1,14 +1,15 @@
 # ASAccessoryEventType
 
 **Framework**: AccessorySetupKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of the types of events encountered during accessory discovery
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,60 +17,65 @@ An enumeration of the types of events encountered during accessory discovery
 enum ASAccessoryEventType
 ```
 
+```c
+enum ASAccessoryEventType : NSInteger;
+```
+
 ## Topics
 
 ### Creating an event type instance
-- [init?(rawValue: Int)](asaccessoryeventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./asaccessoryeventtype/init%28rawvalue%29.md)
 ### Accessory events
-- [ASAccessoryEventType.accessoryAdded](asaccessoryeventtype/accessoryadded.md)
+- [ASAccessoryEventType.accessoryAdded](./asaccessoryeventtype/accessoryadded.md)
   The session added an accessory.
-- [ASAccessoryEventType.accessoryChanged](asaccessoryeventtype/accessorychanged.md)
+- [ASAccessoryEventType.accessoryChanged](./asaccessoryeventtype/accessorychanged.md)
   The properties of an accessory changed.
-- [ASAccessoryEventType.accessoryRemoved](asaccessoryeventtype/accessoryremoved.md)
+- [ASAccessoryEventType.accessoryRemoved](./asaccessoryeventtype/accessoryremoved.md)
   The session removed an accessory.
 ### Life cycle events
-- [ASAccessoryEventType.activated](asaccessoryeventtype/activated.md)
+- [ASAccessoryEventType.activated](./asaccessoryeventtype/activated.md)
   The discovery session activated.
-- [ASAccessoryEventType.invalidated](asaccessoryeventtype/invalidated.md)
+- [ASAccessoryEventType.invalidated](./asaccessoryeventtype/invalidated.md)
   The discovery session invalidated.
 ### Discovery events
-- [ASAccessoryEventType.accessoryDiscovered](asaccessoryeventtype/accessorydiscovered.md)
+- [ASAccessoryEventType.accessoryDiscovered](./asaccessoryeventtype/accessorydiscovered.md)
   The session discovered an accessory.
 ### Picker events
-- [ASAccessoryEventType.pickerDidPresent](asaccessoryeventtype/pickerdidpresent.md)
+- [ASAccessoryEventType.pickerDidPresent](./asaccessoryeventtype/pickerdidpresent.md)
   The discovery session picker appeared.
-- [ASAccessoryEventType.pickerDidDismiss](asaccessoryeventtype/pickerdiddismiss.md)
+- [ASAccessoryEventType.pickerDidDismiss](./asaccessoryeventtype/pickerdiddismiss.md)
   The discovery session picker dismissed.
-- [ASAccessoryEventType.pickerSetupBridging](asaccessoryeventtype/pickersetupbridging.md)
+- [ASAccessoryEventType.pickerSetupBridging](./asaccessoryeventtype/pickersetupbridging.md)
   The discovery session picker started bridging with an accessory.
-- [ASAccessoryEventType.pickerSetupPairing](asaccessoryeventtype/pickersetuppairing.md)
+- [ASAccessoryEventType.pickerSetupPairing](./asaccessoryeventtype/pickersetuppairing.md)
   The discovery session picker started pairing with a Bluetooth accessory.
-- [ASAccessoryEventType.pickerSetupFailed](asaccessoryeventtype/pickersetupfailed.md)
+- [ASAccessoryEventType.pickerSetupFailed](./asaccessoryeventtype/pickersetupfailed.md)
   The discovery session picker setup failed.
-- [ASAccessoryEventType.pickerSetupRename](asaccessoryeventtype/pickersetuprename.md)
+- [ASAccessoryEventType.pickerSetupRename](./asaccessoryeventtype/pickersetuprename.md)
   The discovery session picker started renaming an accessory.
 ### Migration events
-- [ASAccessoryEventType.migrationComplete](asaccessoryeventtype/migrationcomplete.md)
+- [ASAccessoryEventType.migrationComplete](./asaccessoryeventtype/migrationcomplete.md)
   The migration of an accessory completed.
 ### Unclassified events
-- [ASAccessoryEventType.unknown](asaccessoryeventtype/unknown.md)
+- [ASAccessoryEventType.unknown](./asaccessoryeventtype/unknown.md)
   An unknown event occurred.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ASAccessoryEvent](asaccessoryevent.md)
+### Accessory discovery
+- [class ASAccessoryEvent](./asaccessoryevent.md)
   Properties of an event encountered during accessory discovery.
-- [class ASDiscoveryDescriptor](asdiscoverydescriptor.md)
+- [class ASDiscoveryDescriptor](./asdiscoverydescriptor.md)
   Descriptive traits used to discover accessories.
 
 

@@ -1,7 +1,8 @@
 # CMSEncoderCopyEncapsulatedContentType(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the object identifier for the encapsulated data of a signed message.
 
@@ -14,9 +15,13 @@ Obtains the object identifier for the encapsulated data of a signed message.
 func CMSEncoderCopyEncapsulatedContentType(_ cmsEncoder: CMSEncoder, _ eContentTypeOut: UnsafeMutablePointer<CFData?>) -> OSStatus
 ```
 
+```c
+OSStatus CMSEncoderCopyEncapsulatedContentType(CMSEncoderRef cmsEncoder, CFDataRef*eContentTypeOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 

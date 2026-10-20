@@ -1,7 +1,8 @@
 # steps
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of steps a person takes.
 
@@ -16,9 +17,10 @@ var steps: Int
 
 ## See Also
 
-- [JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct.md)
+### Inspecting motion details
+- [JournalingSuggestion.MotionActivity.MovementType](./movementtype-swift.struct.md)
   The movement activity type that the phone records when it detects motion.
-- [var movementType: JournalingSuggestion.MotionActivity.MovementType?](journalingsuggestion/motionactivity/movementtype-swift.property.md)
+- [var movementType: JournalingSuggestion.MotionActivity.MovementType?](./movementtype-swift.property.md)
   The specific type of movement associated with the activity.
 
 

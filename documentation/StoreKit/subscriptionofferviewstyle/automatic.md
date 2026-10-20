@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,9 +16,12 @@ nonisolated
 static var automatic: AutomaticSubscriptionOfferViewStyle { get }
 ```
 
+Available when `Self` is `AutomaticSubscriptionOfferViewStyle`.
+
 ## See Also
 
-- [static var compact: CompactSubscriptionOfferViewStyle](subscriptionofferviewstyle/compact.md)
+### Type Properties
+- [static var compact: CompactSubscriptionOfferViewStyle](./compact.md)
 
 
 ---

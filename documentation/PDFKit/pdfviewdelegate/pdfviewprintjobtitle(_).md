@@ -1,7 +1,8 @@
 # pdfViewPrintJobTitle(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides the job title used when the `PDFView` is printed.
 
@@ -12,6 +13,10 @@ Overrides the job title used when the `PDFView` is printed.
 
 ```swift
 optional func pdfViewPrintJobTitle(_ sender: PDFView) -> String
+```
+
+```objc
+- (NSString *) PDFViewPrintJobTitle:(PDFView *) sender;
 ```
 
 

@@ -1,7 +1,8 @@
 # rootJoint
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root joint of the skeleton hierarchy.
 
@@ -25,9 +26,10 @@ final var rootJoint: SkeletonResource.Joint { get }
 
 ## See Also
 
-- [SkeletonResource.Joint](skeletonresource/joint.md)
+### Defining the joint hierarchy
+- [SkeletonResource.Joint](./joint.md)
   Describes a single joint of a `Skeleton`
-- [SkeletonResource.JointBuilder](skeletonresource/jointbuilder.md)
+- [SkeletonResource.JointBuilder](./jointbuilder.md)
   A result builder for declaratively constructing the children of a joint.
 
 

@@ -1,16 +1,17 @@
 # UINavigationItem.BackButtonDisplayMode.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The navigation item attempts to display a specific title, a generic title, or no title for the Back button, depending on the space available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,16 @@ The navigation item attempts to display a specific title, a generic title, or no
 case `default`
 ```
 
+```c
+UINavigationItemBackButtonDisplayModeDefault
+```
+
 #### Discussion
 
-When you set the [`backButtonDisplayMode`](uinavigationitem/backbuttondisplaymode-swift.property.md) property to this value, the navigation item attempts to display these titles for its Back button in the following order:
+When you set the [`backButtonDisplayMode`](../backbuttondisplaymode-swift.property.md) property to this value, the navigation item attempts to display these titles for its Back button in the following order:
 
-- [`backButtonTitle`](uinavigationitem/backbuttontitle.md)
-- [`title`](uinavigationitem/title.md)
+- [`backButtonTitle`](../backbuttontitle.md)
+- [`title`](../title.md)
 - A generic title, such as *Back*
 - No title
 
@@ -31,9 +36,10 @@ The navigation item selects the most appropriate title for the Back button accor
 
 ## See Also
 
-- [UINavigationItem.BackButtonDisplayMode.generic](uinavigationitem/backbuttondisplaymode-swift.enum/generic.md)
+### Constants
+- [UINavigationItem.BackButtonDisplayMode.generic](./generic.md)
   The navigation item attempts to display a generic title or no title for the Back button, depending on the space available.
-- [UINavigationItem.BackButtonDisplayMode.minimal](uinavigationitem/backbuttondisplaymode-swift.enum/minimal.md)
+- [UINavigationItem.BackButtonDisplayMode.minimal](./minimal.md)
   The navigation item displays the Back button indicator instead of a title.
 
 

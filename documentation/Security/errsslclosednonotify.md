@@ -1,7 +1,8 @@
 # errSSLClosedNoNotify
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The server closed the session with no notification.
 
@@ -18,6 +19,10 @@ The server closed the session with no notification.
 
 ```swift
 var errSSLClosedNoNotify: OSStatus { get }
+```
+
+```c
+errSSLClosedNoNotify
 ```
 
 

@@ -1,7 +1,8 @@
 # NotificationQueue
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A notification center buffer.
 
@@ -20,6 +21,10 @@ A notification center buffer.
 class NotificationQueue
 ```
 
+```objc
+@interface NSNotificationQueue : NSObject
+```
+
 #### Overview
 
 Whereas a notification center distributes notifications when posted, notifications placed into the queue can be delayed until the end of the current pass through the run loop or until the run loop is idle. Duplicate notifications can be coalesced so that only one notification is sent although multiple notifications are posted.
@@ -31,41 +36,42 @@ Every thread has a default notification queue, which is associated with the defa
 ## Topics
 
 ### Creating Notification Queues
-- [init(notificationCenter: NotificationCenter)](notificationqueue/init(notificationcenter:).md)
+- [init(notificationCenter: NotificationCenter)](./notificationqueue/init%28notificationcenter%29.md)
   Initializes and returns a notification queue for the specified notification center.
 ### Getting the Default Queue
-- [class var `default`: NotificationQueue](notificationqueue/default.md)
+- [class var `default`: NotificationQueue](./notificationqueue/default.md)
   Returns the default notification queue for the current thread.
 ### Managing Notifications
-- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle, coalesceMask: NotificationQueue.NotificationCoalescing, forModes: [RunLoop.Mode]?)](notificationqueue/enqueue(_:postingstyle:coalescemask:formodes:).md)
+- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle, coalesceMask: NotificationQueue.NotificationCoalescing, forModes: [RunLoop.Mode]?)](./notificationqueue/enqueue%28_,postingstyle,coalescemask,formodes%29.md)
   Adds a notification to the notification queue with a specified posting style, criteria for coalescing, and run loop mode.
-- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle)](notificationqueue/enqueue(_:postingstyle:).md)
+- [func enqueue(Notification, postingStyle: NotificationQueue.PostingStyle)](./notificationqueue/enqueue%28_,postingstyle%29.md)
   Adds a notification to the notification queue with a specified posting style.
-- [func dequeueNotifications(matching: Notification, coalesceMask: Int)](notificationqueue/dequeuenotifications(matching:coalescemask:).md)
+- [func dequeueNotifications(matching: Notification, coalesceMask: Int)](./notificationqueue/dequeuenotifications%28matching,coalescemask%29.md)
   Removes all notifications from the queue that match a provided notification using provided matching criteria.
 ### Constants
-- [NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing.md)
+- [NotificationQueue.NotificationCoalescing](./notificationqueue/notificationcoalescing.md)
   The constants that specify how notifications are coalesced.
-- [NotificationQueue.PostingStyle](notificationqueue/postingstyle.md)
+- [NotificationQueue.PostingStyle](./notificationqueue/postingstyle.md)
   The constants that specify when notifications are posted.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct Notification](notification.md)
+### Notifications
+- [struct Notification](./notification.md)
   A container for information broadcast through a notification center to all registered observers.
-- [class NotificationCenter](notificationcenter.md)
+- [class NotificationCenter](./notificationcenter.md)
   A notification dispatch mechanism that enables the broadcast of information to registered observers.
 
 

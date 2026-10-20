@@ -1,12 +1,13 @@
 # NSPasteboardWriting
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the interface for retrieving a representation of an object that can be written to a pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,53 +15,58 @@ A set of methods that defines the interface for retrieving a representation of a
 protocol NSPasteboardWriting : NSObjectProtocol
 ```
 
+```objc
+@protocol NSPasteboardWriting <NSObject>
+```
+
 #### Overview
 
-The Cocoa framework classes [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`NSColor`](nscolor.md), [`NSSound`](nssound.md), [`NSImage`](nsimage.md), and [`NSPasteboardItem`](nspasteboarditem.md) implement this protocol. You can make your custom class conform to this protocol so that you can write instances of the class to a pasteboard using the [`writeObjects(_:)`](nspasteboard/writeobjects(_:).md) method of [`NSPasteboard`](nspasteboard.md).
+The Cocoa framework classes [`NSString`](../Foundation/nsstring.md), [`NSAttributedString`](../Foundation/nsattributedstring.md), [`NSURL`](../Foundation/nsurl.md), [`NSColor`](./nscolor.md), [`NSSound`](./nssound.md), [`NSImage`](./nsimage.md), and [`NSPasteboardItem`](./nspasteboarditem.md) implement this protocol. You can make your custom class conform to this protocol so that you can write instances of the class to a pasteboard using the [`writeObjects(_:)`](./nspasteboard/writeobjects%28_%29.md) method of [`NSPasteboard`](./nspasteboard.md).
 
 ## Topics
 
 ### Required Methods
-- [func writableTypes(for: NSPasteboard) -> [NSPasteboard.PasteboardType]](nspasteboardwriting/writabletypes(for:).md)
+- [func writableTypes(for: NSPasteboard) -> [NSPasteboard.PasteboardType]](./nspasteboardwriting/writabletypes%28for%29.md)
   Returns an array of UTI strings of data types the receiver can write to a given pasteboard.
-- [func writingOptions(forType: NSPasteboard.PasteboardType, pasteboard: NSPasteboard) -> NSPasteboard.WritingOptions](nspasteboardwriting/writingoptions(fortype:pasteboard:).md)
+- [func writingOptions(forType: NSPasteboard.PasteboardType, pasteboard: NSPasteboard) -> NSPasteboard.WritingOptions](./nspasteboardwriting/writingoptions%28fortype,pasteboard%29.md)
   Returns options for writing data of a specified type to a given pasteboard.
-- [NSPasteboard.WritingOptions](nspasteboard/writingoptions.md)
+- [NSPasteboard.WritingOptions](./nspasteboard/writingoptions.md)
   Type to specify options for writing to a pasteboard.
 ### Property List for Type
-- [func pasteboardPropertyList(forType: NSPasteboard.PasteboardType) -> Any?](nspasteboardwriting/pasteboardpropertylist(fortype:).md)
+- [func pasteboardPropertyList(forType: NSPasteboard.PasteboardType) -> Any?](./nspasteboardwriting/pasteboardpropertylist%28fortype%29.md)
   Returns a property list object to represent the receiver on a pasteboard as an object of a specified type.
 ### Constants
-- [Pasteboard Writing Options](pasteboard-writing-options.md)
-  Constant to specify options for writing to a pasteboard, used by [`writingOptions(forType:pasteboard:)`](nspasteboardwriting/writingoptions(fortype:pasteboard:).md).
-- [NSPasteboard.WritingOptions](nspasteboard/writingoptions.md)
+- [Pasteboard Writing Options](./pasteboard-writing-options.md)
+  Constant to specify options for writing to a pasteboard, used by [`writingOptions(forType:pasteboard:)`](./nspasteboardwriting/writingoptions%28fortype,pasteboard%29.md).
+- [NSPasteboard.WritingOptions](./nspasteboard/writingoptions.md)
   Type to specify options for writing to a pasteboard.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSColor](nscolor.md)
-- [NSFilePromiseProvider](nsfilepromiseprovider.md)
-- [NSImage](nsimage.md)
-- [NSPasteboardItem](nspasteboarditem.md)
-- [NSSound](nssound.md)
-- [NSTextStorage](nstextstorage.md)
+- [NSColor](./nscolor.md)
+- [NSFilePromiseProvider](./nsfilepromiseprovider.md)
+- [NSImage](./nsimage.md)
+- [NSPasteboardItem](./nspasteboarditem.md)
+- [NSSound](./nssound.md)
+- [NSTextStorage](./nstextstorage.md)
 
 ## See Also
 
-- [class NSPasteboard](nspasteboard.md)
+### Pasteboard
+- [class NSPasteboard](./nspasteboard.md)
   An object that transfers data to and from the pasteboard server.
-- [class NSPasteboardItem](nspasteboarditem.md)
+- [class NSPasteboardItem](./nspasteboarditem.md)
   An item on a pasteboard.
-- [protocol NSPasteboardReading](nspasteboardreading.md)
+- [protocol NSPasteboardReading](./nspasteboardreading.md)
   A set of methods that defines the interface for initializing an object from a pasteboard.
-- [protocol NSPasteboardItemDataProvider](nspasteboarditemdataprovider.md)
+- [protocol NSPasteboardItemDataProvider](./nspasteboarditemdataprovider.md)
   A set of methods implemented by the data provider of a pasteboard item to provide the data for a particular UTI type.
-- [NSPasteboard.ContentsOptions](nspasteboard/contentsoptions.md)
+- [NSPasteboard.ContentsOptions](./nspasteboard/contentsoptions.md)
   Options for preparing the pasteboard.
-- [protocol NSPasteboardTypeOwner](nspasteboardtypeowner.md)
+- [protocol NSPasteboardTypeOwner](./nspasteboardtypeowner.md)
   An object that serves as a data provider for data types that use lazy data fulfillment from a pasteboard request.
 
 

@@ -1,17 +1,24 @@
 # setNumberOfRows(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the number of rows in the composition picker view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func setNumberOfRows(_ rows: Int)
+```
+
+```objc
+- (void) setNumberOfRows:(NSUInteger) rows;
 ```
 
 ## Parameters
@@ -20,11 +27,12 @@ func setNumberOfRows(_ rows: Int)
 
 ## See Also
 
-- [func setNumberOfColumns(Int)](qccompositionpickerview/setnumberofcolumns(_:).md)
+### Working with Columns and Rows
+- [func setNumberOfColumns(Int)](./setnumberofcolumns%28_%29.md)
   Sets the number of columns in the composition picker view.
-- [func numberOfColumns() -> Int](qccompositionpickerview/numberofcolumns.md)
+- [func numberOfColumns() -> Int](./numberofcolumns%28%29.md)
   Retrieves the number of columns in the composition picker view.
-- [func numberOfRows() -> Int](qccompositionpickerview/numberofrows.md)
+- [func numberOfRows() -> Int](./numberofrows%28%29.md)
   Retrieves the number of rows in the composition picker view.
 
 

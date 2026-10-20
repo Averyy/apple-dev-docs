@@ -1,7 +1,8 @@
 # BrandsReportingAdGroup
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Ad group metadata for brands report rows.
 
@@ -10,7 +11,7 @@ Ad group metadata for brands report rows.
 
 ## Declaration
 
-```swift
+```
 object BrandsReportingAdGroup
 ```
 
@@ -75,11 +76,11 @@ The `campaign` field embeds a lightweight `ReportingCampaignMin` for parent camp
 ## Topics
 
 ### Type Aliases
-- [type BrandsReportingAdGroup.PricingModel](brandsreportingadgroup/pricingmodel-data.typealias.md)
+- [type BrandsReportingAdGroup.PricingModel](./brandsreportingadgroup/pricingmodel-data.typealias.md)
   The unit of ad delivery the ad group is charged for, as captured at report time.
-- [type BrandsReportingAdGroup.Status](brandsreportingadgroup/status-data.typealias.md)
+- [type BrandsReportingAdGroup.Status](./brandsreportingadgroup/status-data.typealias.md)
   Advertiser-configurable serving status of the ad group at report time.
-- [type BrandsReportingAdGroup.SystemStatus](brandsreportingadgroup/systemstatus-data.typealias.md)
+- [type BrandsReportingAdGroup.SystemStatus](./brandsreportingadgroup/systemstatus-data.typealias.md)
   System-derived operational status of the ad group at report time.
 
 ## Properties
@@ -97,48 +98,52 @@ The `campaign` field embeds a lightweight `ReportingCampaignMin` for parent camp
 - `automatedKeywordsRequired` (boolean): Whether automated keywords are required for this ad group.
 - `pricingModel` (BrandsReportingAdGroup.PricingModel): Possible values: `CPA`, `CPM`, `CPT`.
 - `displayStatus` (string): System-computed, rolled-up delivery state combining ad group and campaign conditions.
+
+  **Allowed Values**: `CAMPAIGN_ON_HOLD`, `DELETED`, `LIMITED`, `ON_HOLD`, `PAUSED`, `PROCESSING`, `RUNNING`
 - `modificationTime` (date-time): Timestamp of the ad group’s last modification (ISO 8601).
 - `creationTime` (date-time): Timestamp when the ad group was created (ISO 8601).
 - `startTime` (date-time): Ad group start time.
 - `endTime` (date-time): Ad group end time.
-- `campaign` (ReportingCampaignMin): See [`ReportingCampaignMin`](reportingcampaignmin.md) for details.
-- `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](reportingbidstrategy.md) for details.
-- `targeting` (BrandsTargetingProjection): See [`BrandsTargetingProjection`](brandstargetingprojection.md) for details.
+- `campaign` (ReportingCampaignMin): See [`ReportingCampaignMin`](./reportingcampaignmin.md) for details.
+- `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](./reportingbidstrategy.md) for details.
+- `targeting` (BrandsTargetingProjection): See [`BrandsTargetingProjection`](./brandstargetingprojection.md) for details.
 - `deviceClass` (string): Device class groupBy dimension value.
+
+  **Allowed Values**: `IPHONE`, `IPAD`
 - `locationId` (string): Location ID groupBy dimension value.
 - `supplyPlacement` (string): Supply placement groupBy dimension value.
 
 ## See Also
 
-- [object BrandsReportingRequest](brandsreportingrequest.md)
+- [object BrandsReportingRequest](./brandsreportingrequest.md)
   Request body for brands reporting queries.
-- [object BrandsReportingCampaign](brandsreportingcampaign.md)
+- [object BrandsReportingCampaign](./brandsreportingcampaign.md)
   Campaign metadata for Apple Maps report rows.
-- [object BrandsReportingAd](brandsreportingad.md)
+- [object BrandsReportingAd](./brandsreportingad.md)
   Ad metadata for brands report rows.
-- [object BrandsReportingCreative](brandsreportingcreative.md)
+- [object BrandsReportingCreative](./brandsreportingcreative.md)
   Creative metadata for brands ads.
-- [object BrandsReportingKeyword](brandsreportingkeyword.md)
+- [object BrandsReportingKeyword](./brandsreportingkeyword.md)
   Keyword metadata for brands report rows, extending the base reporting keyword with brands-only internal fields.
-- [object BrandsReportingSearchTerm](brandsreportingsearchterm.md)
+- [object BrandsReportingSearchTerm](./brandsreportingsearchterm.md)
   Search term metadata for brands report rows, extending the base reporting search term with brands-only internal fields.
-- [object BrandsCampaignReportResponse](brandscampaignreportresponse.md)
+- [object BrandsCampaignReportResponse](./brandscampaignreportresponse.md)
   The top-level response envelope for Apple Maps campaign-level reports.
-- [object BrandsCampaignReportRow](brandscampaignreportrow.md)
+- [object BrandsCampaignReportRow](./brandscampaignreportrow.md)
   A single row in an Apple Maps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object BrandsCampaignReportSummary](brandscampaignreportsummary.md)
+- [object BrandsCampaignReportSummary](./brandscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apple Maps campaign report.
-- [object BrandsCampaignResultContainer](brandscampaignresultcontainer.md)
+- [object BrandsCampaignResultContainer](./brandscampaignresultcontainer.md)
   Wraps the array of Apple Maps campaign report rows along with a grand-total summary.
-- [object BrandsAdGroupReportResponse](brandsadgroupreportresponse.md)
+- [object BrandsAdGroupReportResponse](./brandsadgroupreportresponse.md)
   The top-level response envelope for brands ad group reports.
-- [object BrandsAdGroupReportRow](brandsadgroupreportrow.md)
+- [object BrandsAdGroupReportRow](./brandsadgroupreportrow.md)
   A single row in a Brands (Apple Maps) ad group report, pairing ad group metadata with total and granular performance metrics.
-- [object BrandsAdGroupReportSummary](brandsadgroupreportsummary.md)
+- [object BrandsAdGroupReportSummary](./brandsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in a Brands ad group report.
-- [object BrandsAdGroupResultContainer](brandsadgroupresultcontainer.md)
+- [object BrandsAdGroupResultContainer](./brandsadgroupresultcontainer.md)
   Wraps the array of Brands ad group report rows along with a grand-total summary.
-- [object BrandsAdReportResponse](brandsadreportresponse.md)
+- [object BrandsAdReportResponse](./brandsadreportresponse.md)
   The top-level response envelope for brands ad-level reports.
 
 

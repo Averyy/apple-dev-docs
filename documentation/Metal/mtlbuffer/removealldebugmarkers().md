@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes all debug marker strings from the buffer.
@@ -20,9 +21,14 @@ Removes all debug marker strings from the buffer.
 func removeAllDebugMarkers()
 ```
 
+```objc
+- (void) removeAllDebugMarkers;
+```
+
 ## See Also
 
-- [func addDebugMarker(String, range: Range<Int>)](mtlbuffer/adddebugmarker(_:range:).md)
+### Debugging buffers
+- [func addDebugMarker(String, range: Range<Int>)](./adddebugmarker%28_,range%29.md)
   Adds a debug marker string to a specific buffer range.
 
 

@@ -1,7 +1,8 @@
 # init(status:errors:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the result with the status code and list of errors.
 
@@ -17,6 +18,10 @@ Initializes the result with the status code and list of errors.
 
 ```swift
 init(status: PKPaymentAuthorizationStatus, errors: [any Error]?)
+```
+
+```objc
+- (instancetype) initWithStatus:(PKPaymentAuthorizationStatus) status errors:(NSArray<NSError *> *) errors;
 ```
 
 ## Parameters

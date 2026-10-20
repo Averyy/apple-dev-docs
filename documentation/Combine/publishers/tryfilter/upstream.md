@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let isIncluded: (Upstream.Output) throws -> Bool](publishers/tryfilter/isincluded.md)
+### Inspecting publisher properties
+- [let isIncluded: (Upstream.Output) throws -> Bool](./isincluded.md)
   An error-throwing closure that indicates whether this filter should republish an element.
 
 

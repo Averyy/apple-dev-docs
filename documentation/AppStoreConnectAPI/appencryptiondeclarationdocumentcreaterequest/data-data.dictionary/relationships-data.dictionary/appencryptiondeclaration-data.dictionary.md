@@ -1,21 +1,22 @@
 # AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.2+
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration.Data](appencryptiondeclarationdocumentcreaterequest/data-data.dictionary/relationships-data.dictionary/appencryptiondeclaration-data.dictionary/data-data.dictionary.md)
+- [object AppEncryptionDeclarationDocumentCreateRequest.Data.Relationships.AppEncryptionDeclaration.Data](./appencryptiondeclaration-data.dictionary/data-data.dictionary.md)
   The request body you use to create an app encryption declaration document.
 
 ## Properties

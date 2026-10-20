@@ -1,7 +1,8 @@
 # lengthOfBytes(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of bytes required to store the `String` in a given encoding.
 

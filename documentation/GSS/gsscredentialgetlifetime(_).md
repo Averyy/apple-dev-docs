@@ -1,7 +1,8 @@
 # GSSCredentialGetLifetime(_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the remaining time in seconds before the credential expires.
 
@@ -18,9 +19,13 @@ Returns the remaining time in seconds before the credential expires.
 func GSSCredentialGetLifetime(_ cred: gss_cred_id_t) -> OM_uint32
 ```
 
+```c
+OM_uint32 GSSCredentialGetLifetime(gss_cred_id_t cred);
+```
+
 #### Return Value
 
-The time in seconds that the credential has before it expires. The time is 0 if the call fails, or [`GSS_C_INDEFINITE`](gss_c_indefinite.md) if the credential never expires.
+The time in seconds that the credential has before it expires. The time is 0 if the call fails, or [`GSS_C_INDEFINITE`](./gss_c_indefinite.md) if the credential never expires.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ The time in seconds that the credential has before it expires. The time is 0 if 
 
 ## See Also
 
-- [func gss_inquire_cred(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_usage_t>?, UnsafeMutablePointer<gss_OID_set?>?) -> OM_uint32](gss_inquire_cred(_:_:_:_:_:_:).md)
+### Inquiries
+- [func gss_inquire_cred(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_usage_t>?, UnsafeMutablePointer<gss_OID_set?>?) -> OM_uint32](./gss_inquire_cred%28_,_,_,_,_,_%29.md)
   Obtains information about a credential.
-- [func gss_inquire_cred_by_mech(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, gss_OID, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_usage_t>?) -> OM_uint32](gss_inquire_cred_by_mech(_:_:_:_:_:_:_:).md)
+- [func gss_inquire_cred_by_mech(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, gss_OID, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_usage_t>?) -> OM_uint32](./gss_inquire_cred_by_mech%28_,_,_,_,_,_,_%29.md)
   Obtains per-mechanism information about a credential.
-- [func gss_inquire_cred_by_oid(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t, gss_OID, UnsafeMutablePointer<gss_buffer_set_t?>) -> OM_uint32](gss_inquire_cred_by_oid(_:_:_:_:).md)
+- [func gss_inquire_cred_by_oid(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t, gss_OID, UnsafeMutablePointer<gss_buffer_set_t?>) -> OM_uint32](./gss_inquire_cred_by_oid%28_,_,_,_%29.md)
   Inquires about a particular characteristic of a credential.
 
 

@@ -1,7 +1,8 @@
 # batteryState
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of a device’s battery.
 
@@ -19,11 +20,16 @@ The state of a device’s battery.
 var batteryState: GCDeviceBattery.State { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCDeviceBatteryState batteryState;
+```
+
 ## See Also
 
-- [var batteryLevel: Float](gcdevicebattery/batterylevel.md)
+### Getting the battery level and state
+- [var batteryLevel: Float](./batterylevel.md)
   The charge level of a device’s battery.
-- [GCDeviceBattery.State](gcdevicebattery/state.md)
+- [GCDeviceBattery.State](./state.md)
   A state that indicates whether a device’s battery has power and is charging.
 
 

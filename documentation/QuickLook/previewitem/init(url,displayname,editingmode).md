@@ -1,7 +1,8 @@
 # init(url:displayName:editingMode:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a preview item from a URL and, optionally, a displayName and editingMode.
 

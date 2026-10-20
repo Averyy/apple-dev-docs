@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SensorKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sensor from a raw value.
 

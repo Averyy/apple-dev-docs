@@ -1,7 +1,8 @@
 # AVMetricPlayerItemRateChangeEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents when the playback rate changes.
 
@@ -20,40 +21,45 @@ An event that represents when the playback rate changes.
 class AVMetricPlayerItemRateChangeEvent
 ```
 
+```objc
+@interface AVMetricPlayerItemRateChangeEvent : AVMetricEvent
+```
+
 ## Topics
 
 ### Inspecting the event
-- [var previousRate: Double](avmetricplayeritemratechangeevent/previousrate.md)
-- [var rate: Double](avmetricplayeritemratechangeevent/rate.md)
-- [var variant: AVAssetVariant?](avmetricplayeritemratechangeevent/variant.md)
+- [var previousRate: Double](./avmetricplayeritemratechangeevent/previousrate.md)
+- [var rate: Double](./avmetricplayeritemratechangeevent/rate.md)
+- [var variant: AVAssetVariant?](./avmetricplayeritemratechangeevent/variant.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Inherited By
-- [AVMetricPlayerItemSeekDidCompleteEvent](avmetricplayeritemseekdidcompleteevent.md)
-- [AVMetricPlayerItemSeekEvent](avmetricplayeritemseekevent.md)
-- [AVMetricPlayerItemStallEvent](avmetricplayeritemstallevent.md)
+- [AVMetricPlayerItemSeekDidCompleteEvent](./avmetricplayeritemseekdidcompleteevent.md)
+- [AVMetricPlayerItemSeekEvent](./avmetricplayeritemseekevent.md)
+- [AVMetricPlayerItemStallEvent](./avmetricplayeritemstallevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+### Transport control
+- [class AVMetricPlayerItemPlaybackSummaryEvent](./avmetricplayeritemplaybacksummaryevent.md)
   An event that represents the combined metrics for the entire playback session.
-- [class AVMetricPlayerItemSeekDidCompleteEvent](avmetricplayeritemseekdidcompleteevent.md)
+- [class AVMetricPlayerItemSeekDidCompleteEvent](./avmetricplayeritemseekdidcompleteevent.md)
   An event that represents when the playback seek completes.
-- [class AVMetricPlayerItemSeekEvent](avmetricplayeritemseekevent.md)
+- [class AVMetricPlayerItemSeekEvent](./avmetricplayeritemseekevent.md)
   An event that represents when a playback seek occurs.
 
 

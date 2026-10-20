@@ -1,7 +1,8 @@
 # JSObjectHasInstanceCallback
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The callback type for checking whether an object is an instance of a particular type.
 
@@ -19,9 +20,13 @@ The callback type for checking whether an object is an instance of a particular 
 typealias JSObjectHasInstanceCallback = (JSContextRef?, JSObjectRef?, JSValueRef?, UnsafeMutablePointer<JSValueRef?>?) -> Bool
 ```
 
+```c
+typedef _Bool (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, const struct OpaqueJSValue *, const struct OpaqueJSValue **) JSObjectHasInstanceCallback;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `possibleInstance` is an instance of `constructor` according to the JavaScript `instanceof` expression; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if `possibleInstance` is an instance of `constructor` according to the JavaScript `instanceof` expression; otherwise, [`false`](../Swift/false.md).
 
 #### Discussion
 
@@ -33,48 +38,49 @@ bool HasInstance(JSContextRef ctx, JSObjectRef constructor, JSValueRef possibleI
 
 If the JavaScript expression `someValue instanceof myObject` invokes your callback, it sets `constructor` to `myObject`, and `possibleInstance` to `someValue`.
 
-If this callback is `NULL`, `instanceof` expressions that target your object return [`false`](https://developer.apple.com/documentation/swift/false).
+If this callback is `NULL`, `instanceof` expressions that target your object return [`false`](../Swift/false.md).
 
-Standard JavaScript practice calls for objects that implement the [`callAsConstructor`](jsclassdefinition/callasconstructor.md) callback to implement the [`hasInstance`](jsclassdefinition/hasinstance.md) callback, as well.
+Standard JavaScript practice calls for objects that implement the [`callAsConstructor`](./jsclassdefinition/callasconstructor.md) callback to implement the [`hasInstance`](./jsclassdefinition/hasinstance.md) callback, as well.
 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `constructor`: The [`JSObjectRef`](jsobjectref.md) that is the target of the `instanceof` expression.
-- `possibleInstance`: The [`JSValueRef`](jsvalueref.md) to test to determine if it’s an instance of `constructor`.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
+- `constructor`: The [`JSObjectRef`](./jsobjectref.md) that is the target of the `instanceof` expression.
+- `possibleInstance`: The [`JSValueRef`](./jsvalueref.md) to test to determine if it’s an instance of `constructor`.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 
-- [var initialize: JSObjectInitializeCallback!](jsclassdefinition/initialize.md)
+### Managing Callbacks
+- [var initialize: JSObjectInitializeCallback!](./jsclassdefinition/initialize.md)
   The callback for creating the object.
-- [typealias JSObjectInitializeCallback](jsobjectinitializecallback.md)
+- [typealias JSObjectInitializeCallback](./jsobjectinitializecallback.md)
   The callback type for first creating an object.
-- [var finalize: JSObjectFinalizeCallback!](jsclassdefinition/finalize.md)
+- [var finalize: JSObjectFinalizeCallback!](./jsclassdefinition/finalize.md)
   The callback for preparing the object for garbage collection.
-- [typealias JSObjectFinalizeCallback](jsobjectfinalizecallback.md)
+- [typealias JSObjectFinalizeCallback](./jsobjectfinalizecallback.md)
   The callback type for finalizing an object (preparing it for garbage collection).
-- [var hasProperty: JSObjectHasPropertyCallback!](jsclassdefinition/hasproperty.md)
+- [var hasProperty: JSObjectHasPropertyCallback!](./jsclassdefinition/hasproperty.md)
   The callback for determining whether an object has a property.
-- [typealias JSObjectHasPropertyCallback](jsobjecthaspropertycallback.md)
+- [typealias JSObjectHasPropertyCallback](./jsobjecthaspropertycallback.md)
   The callback type for determining whether an object has a property.
-- [var getProperty: JSObjectGetPropertyCallback!](jsclassdefinition/getproperty.md)
+- [var getProperty: JSObjectGetPropertyCallback!](./jsclassdefinition/getproperty.md)
   The callback for getting a property’s value.
-- [typealias JSObjectGetPropertyCallback](jsobjectgetpropertycallback.md)
+- [typealias JSObjectGetPropertyCallback](./jsobjectgetpropertycallback.md)
   The callback type for getting a property’s value.
-- [var setProperty: JSObjectSetPropertyCallback!](jsclassdefinition/setproperty.md)
+- [var setProperty: JSObjectSetPropertyCallback!](./jsclassdefinition/setproperty.md)
   The callback for setting a property’s value.
-- [typealias JSObjectSetPropertyCallback](jsobjectsetpropertycallback.md)
+- [typealias JSObjectSetPropertyCallback](./jsobjectsetpropertycallback.md)
   The callback type for setting a property’s value.
-- [var deleteProperty: JSObjectDeletePropertyCallback!](jsclassdefinition/deleteproperty.md)
+- [var deleteProperty: JSObjectDeletePropertyCallback!](./jsclassdefinition/deleteproperty.md)
   The callback for deleting a property.
-- [typealias JSObjectDeletePropertyCallback](jsobjectdeletepropertycallback.md)
+- [typealias JSObjectDeletePropertyCallback](./jsobjectdeletepropertycallback.md)
   The callback type for deleting a property.
-- [var getPropertyNames: JSObjectGetPropertyNamesCallback!](jsclassdefinition/getpropertynames.md)
+- [var getPropertyNames: JSObjectGetPropertyNamesCallback!](./jsclassdefinition/getpropertynames.md)
   The callback for collecting the names of an object’s properties.
-- [typealias JSObjectGetPropertyNamesCallback](jsobjectgetpropertynamescallback.md)
+- [typealias JSObjectGetPropertyNamesCallback](./jsobjectgetpropertynamescallback.md)
   The callback type for collecting the names of an object’s properties.
-- [var callAsFunction: JSObjectCallAsFunctionCallback!](jsclassdefinition/callasfunction.md)
+- [var callAsFunction: JSObjectCallAsFunctionCallback!](./jsclassdefinition/callasfunction.md)
   The callback for calling an object as a function.
 
 

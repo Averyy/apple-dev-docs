@@ -1,7 +1,8 @@
 # scattering(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new audio material with the provided scattering data.
 
@@ -23,7 +24,7 @@ func scattering(_ data: Audio.Scattering) -> Audio.Material
 
 Example usage:
 
-```None
+```
 let material: Audio.Material = .wood.scattering([500: 0.3, 1000: 0.4, 4000: 0.5])
 ```
 

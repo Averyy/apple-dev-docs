@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: Link Presentation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`LinkMetadata`](linkmetadata.md) value from a [`LPLinkMetadata`](lplinkmetadata.md) instance.
+Creates a [`LinkMetadata`](../linkmetadata.md) value from a [`LPLinkMetadata`](../lplinkmetadata.md) instance.
 
 **Availability**:
 - iOS 26.4+

@@ -1,7 +1,8 @@
 # isEmoji
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar has an emoji presentation, whether or not it is the default.
 
@@ -38,7 +39,7 @@ The final result is true because the ASCII digits have non-default emoji present
 
 Because of this behavior, testing `isEmoji` alone on a single scalar is insufficient to determine if a unit of text is rendered as an emoji; a correct test requires inspecting multiple scalars in a `Character`. In addition to checking whether the base scalar has `isEmoji == true`, you must also check its default presentation (see `isEmojiPresentation`) and determine whether it is followed by a variation selector that would modify the presentation.
 
-This property corresponds to the “Emoji” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Emoji” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

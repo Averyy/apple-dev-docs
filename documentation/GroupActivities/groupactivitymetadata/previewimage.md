@@ -1,7 +1,8 @@
 # previewImage
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display for the current activity.
 
@@ -25,11 +26,12 @@ Use this property to specify an image for the activity. For example, you might d
 
 ## See Also
 
-- [var title: String?](groupactivitymetadata/title.md)
+### Presenting the activity
+- [var title: String?](./title.md)
   The localized string to display as the title of your activity.
-- [var subtitle: String?](groupactivitymetadata/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The localized string that provides additional information about the activity.
-- [var fallbackURL: URL?](groupactivitymetadata/fallbackurl.md)
+- [var fallbackURL: URL?](./fallbackurl.md)
   A URL that offers participants a way to identify or join the activity from a web browser.
 
 

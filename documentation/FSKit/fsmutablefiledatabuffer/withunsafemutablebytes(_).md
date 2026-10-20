@@ -1,7 +1,8 @@
 # withUnsafeMutableBytes(_:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the given closure with an unsafe pointer to the underlying bytes of the data buffer.
 
@@ -20,7 +21,8 @@ func withUnsafeMutableBytes<R, E>(_ body: (UnsafeMutableRawBufferPointer) throws
 
 ## See Also
 
-- [var length: Int](fsmutablefiledatabuffer/length.md)
+### Accessing buffer properties
+- [var length: Int](./length.md)
   The data length of the buffer.
 
 

@@ -1,7 +1,8 @@
 # kUSBHostPortConnectionSpeedLow
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The low speed connection.
 
@@ -10,7 +11,7 @@ The low speed connection.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortConnectionSpeedLow = kIOUSBHostConnectionSpeedLow
 ```
 

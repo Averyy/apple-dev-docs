@@ -1,7 +1,8 @@
 # imageURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The URL for an image in Markdown text.
 
@@ -20,19 +21,24 @@ The URL for an image in Markdown text.
 static let imageURL: NSAttributedString.Key
 ```
 
+```c
+extern NSAttributedStringKey const NSImageURLAttributeName;
+```
+
 #### Discussion
 
-The value of this key is an [`NSURL`](nsurl.md) with the link to the image.
+The value of this key is an [`NSURL`](../../nsurl.md) with the link to the image.
 
 ## See Also
 
-- [static let inlinePresentationIntent: NSAttributedString.Key](nsattributedstring/key/inlinepresentationintent.md)
+### Getting Markdown attribute keys
+- [static let inlinePresentationIntent: NSAttributedString.Key](./inlinepresentationintent.md)
   An attribute that provides details for an inline Markdown element.
-- [static let presentationIntentAttributeName: NSAttributedString.Key](nsattributedstring/key/presentationintentattributename.md)
+- [static let presentationIntentAttributeName: NSAttributedString.Key](./presentationintentattributename.md)
   An attribute that provides details for a block-level Markdown element.
-- [static let markdownSourcePosition: NSAttributedString.Key](nsattributedstring/key/markdownsourceposition.md)
+- [static let markdownSourcePosition: NSAttributedString.Key](./markdownsourceposition.md)
   The position in a Markdown source string corresponding to some attributed text.
-- [static let alternateDescription: NSAttributedString.Key](nsattributedstring/key/alternatedescription.md)
+- [static let alternateDescription: NSAttributedString.Key](./alternatedescription.md)
   An alternate description for a URL or image.
 
 

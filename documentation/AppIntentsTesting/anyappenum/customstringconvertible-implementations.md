@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: App Intents Testing
+**Framework**: App Intents Testing  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](anyappenum/description.md)
+- [var description: String](./description.md)
   A textual representation of this app enumeration value.
 
 

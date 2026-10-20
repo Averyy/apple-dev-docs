@@ -1,7 +1,8 @@
 # keyAttributes
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing zero or more key attributes for an imported key.
 
@@ -14,9 +15,13 @@ An array containing zero or more key attributes for an imported key.
 var keyAttributes: Unmanaged<CFArray>?
 ```
 
+```c
+CFArrayRef keyAttributes;
+```
+
 #### Discussion
 
-Valid values are [`kSecAttrIsPermanent`](ksecattrispermanent.md), [`kSecAttrIsSensitive`](ksecattrissensitive.md), and [`kSecAttrIsExtractable`](ksecattrisextractable.md). If you set this attribute array to `NULL`, the following defaults are used:
+Valid values are [`kSecAttrIsPermanent`](../ksecattrispermanent.md), [`kSecAttrIsSensitive`](../ksecattrissensitive.md), and [`kSecAttrIsExtractable`](../ksecattrisextractable.md). If you set this attribute array to `NULL`, the following defaults are used:
 
 - The item is marked permanent if a keychain is specified.
 - The item is marked sensitive if it is a private key.

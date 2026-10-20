@@ -1,7 +1,8 @@
 # interface
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interface associated with this host, such as the interface scope stored in an IPv6 address.
 

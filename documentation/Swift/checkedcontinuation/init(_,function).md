@@ -1,9 +1,10 @@
 # init(_:function:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert a non-copyable continuation to a [`CheckedContinuation`](checkedcontinuation.md)
+Convert a non-copyable continuation to a [`CheckedContinuation`](../checkedcontinuation.md)
 
 **Availability**:
 - iOS 27.0+
@@ -19,6 +20,8 @@ Convert a non-copyable continuation to a [`CheckedContinuation`](checkedcontinua
 ```swift
 init(_ continuation: consuming Continuation<T, E>, function: String = #function)
 ```
+
+Available when `E` conforms to `Error`.
 
 #### Discussion
 

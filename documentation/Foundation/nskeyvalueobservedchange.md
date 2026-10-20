@@ -1,7 +1,8 @@
 # NSKeyValueObservedChange
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -21,39 +22,40 @@ struct NSKeyValueObservedChange<Value>
 ## Topics
 
 ### Instance Properties
-- [let indexes: IndexSet?](nskeyvalueobservedchange/indexes.md)
+- [let indexes: IndexSet?](./nskeyvalueobservedchange/indexes.md)
   indexes will be nil unless the observed KeyPath refers to an ordered to-many property
-- [let isPrior: Bool](nskeyvalueobservedchange/isprior.md)
+- [let isPrior: Bool](./nskeyvalueobservedchange/isprior.md)
   ‘isPrior’ will be true if this change observation is being sent before the change happens, due to .prior being passed to `observe()`
-- [let kind: NSKeyValueObservedChange<Value>.Kind](nskeyvalueobservedchange/kind-swift.property.md)
-- [let newValue: Value?](nskeyvalueobservedchange/newvalue.md)
+- [let kind: NSKeyValueObservedChange<Value>.Kind](./nskeyvalueobservedchange/kind-swift.property.md)
+- [let newValue: Value?](./nskeyvalueobservedchange/newvalue.md)
   newValue and oldValue will only be non-nil if .new/.old is passed to `observe()`. In general, get the most up to date value by accessing it directly on the observed object instead.
-- [let oldValue: Value?](nskeyvalueobservedchange/oldvalue.md)
+- [let oldValue: Value?](./nskeyvalueobservedchange/oldvalue.md)
 ### Type Aliases
-- [NSKeyValueObservedChange.Kind](nskeyvalueobservedchange/kind-swift.typealias.md)
+- [NSKeyValueObservedChange.Kind](./nskeyvalueobservedchange/kind-swift.typealias.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+### Structures
+- [struct AsyncCharacterSequence](./asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](./asynclinesequence.md)
   An asynchronous sequence of lines of text.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](./asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct Expression](expression.md)
-- [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+- [struct Expression](./expression.md)
+- [struct NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey.md)
   A type that represents a key in the formatting context dictionary.
-- [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
+- [struct NSKeyValueChangeKey](./nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
-- [struct NSKeyValueOperator](nskeyvalueoperator.md)
-  These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
-- [struct PresentationIntent](presentationintent.md)
+- [struct NSKeyValueOperator](./nskeyvalueoperator.md)
+  These constants define the available array operators. See [Using Collection Operators](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+- [struct PresentationIntent](./presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
 

@@ -1,7 +1,8 @@
 # NSWritingToolsBehavior.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to prevent Writing Tools from modifying the text in the view.
 
@@ -14,17 +15,22 @@ An option to prevent Writing Tools from modifying the text in the view.
 case none
 ```
 
+```c
+NSWritingToolsBehaviorNone
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for AppKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 ## See Also
 
-- [NSWritingToolsBehavior.default](nswritingtoolsbehavior/default.md)
+### Getting the Writing Tools behaviors
+- [NSWritingToolsBehavior.default](./default.md)
   An option to let the system determine the best way to enable Writing Tools for the view.
-- [NSWritingToolsBehavior.complete](nswritingtoolsbehavior/complete.md)
+- [NSWritingToolsBehavior.complete](./complete.md)
   An option to provide the complete Writing Tools experience for the text view.
-- [NSWritingToolsBehavior.limited](nswritingtoolsbehavior/limited.md)
+- [NSWritingToolsBehavior.limited](./limited.md)
   An option to provide a limited, overlay-panel experience for the text view.
 
 

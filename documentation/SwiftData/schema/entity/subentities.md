@@ -1,7 +1,8 @@
 # subentities
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,8 +22,9 @@ final var subentities: Set<Schema.Entity>
 
 ## See Also
 
-- [var superentity: Schema.Entity?](schema/entity/superentity.md)
-- [var superentityName: String?](schema/entity/superentityname.md)
+### Configuring the inheritance chain
+- [var superentity: Schema.Entity?](./superentity.md)
+- [var superentityName: String?](./superentityname.md)
 
 
 ---

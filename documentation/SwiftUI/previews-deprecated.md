@@ -1,35 +1,36 @@
 # Deprecated
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Review deprecated preview symbols and their replacements.
 
 ## Topics
 
 ### Defining a preview
-- [protocol PreviewProvider](previewprovider.md)
+- [protocol PreviewProvider](./previewprovider.md)
   A type that produces view previews in Xcode.
-- [enum PreviewPlatform](previewplatform.md)
+- [enum PreviewPlatform](./previewplatform.md)
   Platforms that can run the preview.
-- [func previewDisplayName(String?) -> some View](view/previewdisplayname(_:).md)
+- [func previewDisplayName(String?) -> some View](./view/previewdisplayname%28_%29.md)
   Sets a user visible name to show in the canvas for a preview.
 ### Customizing a preview
-- [func previewDevice(PreviewDevice?) -> some View](view/previewdevice(_:).md)
+- [func previewDevice(PreviewDevice?) -> some View](./view/previewdevice%28_%29.md)
   Overrides the device for a preview.
-- [struct PreviewDevice](previewdevice.md)
+- [struct PreviewDevice](./previewdevice.md)
   A simulator device that runs a preview.
-- [func previewLayout(PreviewLayout) -> some View](view/previewlayout(_:).md)
+- [func previewLayout(PreviewLayout) -> some View](./view/previewlayout%28_%29.md)
   Overrides the size of the container for the preview.
-- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](view/previewinterfaceorientation(_:).md)
+- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](./view/previewinterfaceorientation%28_%29.md)
   Overrides the orientation of the preview.
-- [struct InterfaceOrientation](interfaceorientation.md)
+- [struct InterfaceOrientation](./interfaceorientation.md)
   The orientation of the interface from the user’s perspective.
 ### Setting a context
-- [func previewContext<C>(C) -> some View](view/previewcontext(_:).md)
+- [func previewContext<C>(C) -> some View](./view/previewcontext%28_%29.md)
   Declares a context for the preview.
-- [protocol PreviewContext](previewcontext.md)
+- [protocol PreviewContext](./previewcontext.md)
   A context type for use with a preview.
-- [protocol PreviewContextKey](previewcontextkey.md)
+- [protocol PreviewContextKey](./previewcontextkey.md)
   A key type for a preview context.
 
 

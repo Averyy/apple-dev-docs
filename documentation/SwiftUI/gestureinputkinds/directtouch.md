@@ -1,7 +1,8 @@
 # directTouch
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person is touching content directly.
 
@@ -27,17 +28,18 @@ Examples:
 - touching a screen directly with fingers,
 - directly touching or pinching content in visionOS.
 
-> **Note**: In visionOS, you can further customize what hand motions your gesture recognizes using [`handActivationBehavior(_:)`](gesture/handactivationbehavior(_:).md).
+> **Note**: In visionOS, you can further customize what hand motions your gesture recognizes using [`handActivationBehavior(_:)`](../gesture/handactivationbehavior%28_%29.md).
 
 ## See Also
 
-- [static let all: GestureInputKinds](gestureinputkinds/all.md)
+### Gesture input options
+- [static let all: GestureInputKinds](./all.md)
   All possible gesture input kinds, present and future.
-- [static let indirectTouch: GestureInputKinds](gestureinputkinds/indirecttouch.md)
+- [static let indirectTouch: GestureInputKinds](./indirecttouch.md)
   A person is touching content indirectly.
-- [static let pencil: GestureInputKinds](gestureinputkinds/pencil.md)
+- [static let pencil: GestureInputKinds](./pencil.md)
   A person is touching content directly with an Apple Pencil, or an other supported pencil device.
-- [static let pointer: GestureInputKinds](gestureinputkinds/pointer.md)
+- [static let pointer: GestureInputKinds](./pointer.md)
   A person is pressing a mouse or a trackpad button while the pointer is pointing at content.
 
 

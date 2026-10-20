@@ -1,7 +1,8 @@
 # MTL4LogicalToPhysicalColorAttachmentMappingState.inherited
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deduces the color attachment mapping by inheriting it from the color attachment map of the current encoder.
 
@@ -19,12 +20,16 @@ Deduces the color attachment mapping by inheriting it from the color attachment 
 case inherited
 ```
 
+```c
+MTL4LogicalToPhysicalColorAttachmentMappingStateInherited
+```
+
 #### Discussion
 
 This setting instructs the pipeline state to inherit the color attachment map of the current render encoder:
 
-- For an [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md), call its [`setColorAttachmentMap(_:)`](mtl4rendercommandencoder/setcolorattachmentmap(_:).md) method.
-- For an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), call its [`setColorAttachmentMap(_:)`](mtlrendercommandencoder/setcolorattachmentmap(_:).md) method.
+- For an [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md), call its [`setColorAttachmentMap(_:)`](../mtl4rendercommandencoder/setcolorattachmentmap%28_%29.md) method.
+- For an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md), call its [`setColorAttachmentMap(_:)`](../mtlrendercommandencoder/setcolorattachmentmap%28_%29.md) method.
 
 
 ---

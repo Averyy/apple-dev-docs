@@ -1,7 +1,8 @@
 # init(account:appleItemID:alternativeDistributionPackage:isUpdate:appShareURL:requestAgeException:)
 
 **Framework**: MarketplaceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an install metadata object with the given app information and exception request indicator.
 
@@ -17,17 +18,18 @@ init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: 
 
 ## Mentions
 
-- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+- [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
 #### Discussion
 
-If the identifier refers to an app that has an age rating beyond the maximum allowed for the device (see [`maximumAllowedAgeRating`](applibrary/maximumallowedagerating.md)), pass `true` for the `requestAgeException` argument.
+If the identifier refers to an app that has an age rating beyond the maximum allowed for the device (see [`maximumAllowedAgeRating`](../applibrary/maximumallowedagerating.md)), pass `true` for the `requestAgeException` argument.
 
-If your app sets the `requestAgeException` argument to `true` when it’s not needed, the framework throws [`MarketplaceKitError.ageRatingExceptionNotNeeded`](marketplacekiterror/ageratingexceptionnotneeded.md). Alternatively, if your app fails to set the `requestAgeException` argument to `true` when it is needed, the framework throws  [`MarketplaceKitError.cancelled`](marketplacekiterror/cancelled.md).
+If your app sets the `requestAgeException` argument to `true` when it’s not needed, the framework throws [`MarketplaceKitError.ageRatingExceptionNotNeeded`](../marketplacekiterror/ageratingexceptionnotneeded.md). Alternatively, if your app fails to set the `requestAgeException` argument to `true` when it is needed, the framework throws  [`MarketplaceKitError.cancelled`](../marketplacekiterror/cancelled.md).
 
 ## See Also
 
-- [init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: URL, isUpdate: Bool)](installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:).md)
+### Initializing an install metadata instance
+- [init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: URL, isUpdate: Bool)](./init%28account,appleitemid,alternativedistributionpackage,isupdate%29.md)
   Initializes an install metadata object with the given app information.
 
 

@@ -1,7 +1,8 @@
 # modelContext
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,8 +22,9 @@ var modelContext: ModelContext? { get }
 
 ## See Also
 
-- [var persistentModelID: PersistentIdentifier](persistentmodel/persistentmodelid.md)
-- [struct PersistentIdentifier](persistentidentifier.md)
+### Identifying the model instance
+- [var persistentModelID: PersistentIdentifier](./persistentmodelid.md)
+- [struct PersistentIdentifier](../persistentidentifier.md)
   A type that describes the aggregate identity of a SwiftData model.
 
 

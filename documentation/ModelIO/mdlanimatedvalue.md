@@ -1,7 +1,8 @@
 # MDLAnimatedValue
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,42 +18,46 @@
 class MDLAnimatedValue
 ```
 
+```objc
+@interface MDLAnimatedValue : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var interpolation: MDLAnimatedValueInterpolation](mdlanimatedvalue/interpolation.md)
-- [var keyTimes: [NSNumber]](mdlanimatedvalue/keytimes.md)
-- [var maximumTime: TimeInterval](mdlanimatedvalue/maximumtime.md)
-- [var minimumTime: TimeInterval](mdlanimatedvalue/minimumtime.md)
-- [var precision: MDLDataPrecision](mdlanimatedvalue/precision.md)
-- [var timeSampleCount: Int](mdlanimatedvalue/timesamplecount.md)
-- [var times: [TimeInterval]](mdlanimatedvalue/times.md)
+- [var interpolation: MDLAnimatedValueInterpolation](./mdlanimatedvalue/interpolation.md)
+- [var keyTimes: [NSNumber]](./mdlanimatedvalue/keytimes.md)
+- [var maximumTime: TimeInterval](./mdlanimatedvalue/maximumtime.md)
+- [var minimumTime: TimeInterval](./mdlanimatedvalue/minimumtime.md)
+- [var precision: MDLDataPrecision](./mdlanimatedvalue/precision.md)
+- [var timeSampleCount: Int](./mdlanimatedvalue/timesamplecount.md)
+- [var times: [TimeInterval]](./mdlanimatedvalue/times.md)
 ### Instance Methods
-- [func clear()](mdlanimatedvalue/clear.md)
-- [func isAnimated() -> Bool](mdlanimatedvalue/isanimated.md)
+- [func clear()](./mdlanimatedvalue/clear%28%29.md)
+- [func isAnimated() -> Bool](./mdlanimatedvalue/isanimated%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MDLAnimatedMatrix4x4](mdlanimatedmatrix4x4.md)
-- [MDLAnimatedQuaternion](mdlanimatedquaternion.md)
-- [MDLAnimatedQuaternionArray](mdlanimatedquaternionarray.md)
-- [MDLAnimatedScalar](mdlanimatedscalar.md)
-- [MDLAnimatedScalarArray](mdlanimatedscalararray.md)
-- [MDLAnimatedVector2](mdlanimatedvector2.md)
-- [MDLAnimatedVector3](mdlanimatedvector3.md)
-- [MDLAnimatedVector3Array](mdlanimatedvector3array.md)
-- [MDLAnimatedVector4](mdlanimatedvector4.md)
+- [MDLAnimatedMatrix4x4](./mdlanimatedmatrix4x4.md)
+- [MDLAnimatedQuaternion](./mdlanimatedquaternion.md)
+- [MDLAnimatedQuaternionArray](./mdlanimatedquaternionarray.md)
+- [MDLAnimatedScalar](./mdlanimatedscalar.md)
+- [MDLAnimatedScalarArray](./mdlanimatedscalararray.md)
+- [MDLAnimatedVector2](./mdlanimatedvector2.md)
+- [MDLAnimatedVector3](./mdlanimatedvector3.md)
+- [MDLAnimatedVector3Array](./mdlanimatedvector3array.md)
+- [MDLAnimatedVector4](./mdlanimatedvector4.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

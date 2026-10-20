@@ -1,7 +1,8 @@
 # addChildContext(_:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specifed context as a child of the context receiving the method call.
 
@@ -18,9 +19,13 @@ Adds the specifed context as a child of the context receiving the method call.
 func addChildContext(_ child: CLSContext)
 ```
 
+```objc
+- (void) addChildContext:(CLSContext *) child;
+```
+
 #### Discussion
 
-You don’t need to call this method directly. Instead, use the [`CLSDataStoreDelegate`](clsdatastoredelegate.md) protocol to build contexts.
+You don’t need to call this method directly. Instead, use the [`CLSDataStoreDelegate`](../clsdatastoredelegate.md) protocol to build contexts.
 
 ## Parameters
 
@@ -28,13 +33,14 @@ You don’t need to call this method directly. Instead, use the [`CLSDataStoreDe
 
 ## See Also
 
-- [var identifierPath: [String]](clscontext/identifierpath.md)
+### Managing context hierarchy
+- [var identifierPath: [String]](./identifierpath.md)
   The identifier path that locates the context within the data store’s context hierarchy.
-- [var parent: CLSContext?](clscontext/parent.md)
+- [var parent: CLSContext?](./parent.md)
   The direct ancestor of this context.
-- [func removeFromParent()](clscontext/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the context from its parent.
-- [func descendant(matchingIdentifierPath: [String], completion: (CLSContext?, (any Error)?) -> Void)](clscontext/descendant(matchingidentifierpath:completion:).md)
+- [func descendant(matchingIdentifierPath: [String], completion: (CLSContext?, (any Error)?) -> Void)](./descendant%28matchingidentifierpath,completion%29.md)
   Finds the context with the given identifier path relative to this context.
 
 

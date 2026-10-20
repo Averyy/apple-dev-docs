@@ -1,7 +1,8 @@
 # appTransactionId
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unique identifier of the app download transaction.
 
@@ -10,19 +11,19 @@ The unique identifier of the app download transaction.
 
 ## Declaration
 
-```swift
+```
 string appTransactionId
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-To get app transaction information, call [`Get App Transaction Info`](get-app-transaction-info.md) and provide the `appTransactionId`.
+To get app transaction information, call [`Get App Transaction Info`](./get-app-transaction-info.md) and provide the `appTransactionId`.
 
-For more information, see [`appTransactionID`](https://developer.apple.com/documentation/storekit/apptransaction/apptransactionid).
+For more information, see [`appTransactionID`](../StoreKit/apptransaction/apptransactionid.md).
 
 
 ---

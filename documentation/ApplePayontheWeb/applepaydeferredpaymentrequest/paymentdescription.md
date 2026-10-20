@@ -1,7 +1,8 @@
 # paymentDescription
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the deferred payment.
 
@@ -11,7 +12,7 @@ A description of the deferred payment.
 
 ## Declaration
 
-```swift
+```
 required DOMString paymentDescription;
 ```
 
@@ -21,11 +22,12 @@ Use a plain language description that explains what the payment is for, for exam
 
 ## See Also
 
-- [billingAgreement](applepaydeferredpaymentrequest/billingagreement.md)
+### Describing a deferred payment
+- [billingAgreement](./billingagreement.md)
   The localized billing agreement the framework displays to the user prior to payment authorization.
-- [freeCancellationDate](applepaydeferredpaymentrequest/freecancellationdate.md)
+- [freeCancellationDate](./freecancellationdate.md)
   The time zone at the destination location of the payment.
-- [freeCancellationDateTimeZone](applepaydeferredpaymentrequest/freecancellationdatetimezone.md)
+- [freeCancellationDateTimeZone](./freecancellationdatetimezone.md)
   The time zone at the destination location of the payment.
 
 

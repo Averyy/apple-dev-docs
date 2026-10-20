@@ -1,7 +1,8 @@
 # sleep(until:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Blocks the current thread until the time specified.
 
@@ -20,6 +21,10 @@ Blocks the current thread until the time specified.
 class func sleep(until date: Date)
 ```
 
+```objc
++ (void) sleepUntilDate:(NSDate *) date;
+```
+
 #### Discussion
 
 No run loop processing occurs while the thread is blocked.
@@ -30,13 +35,15 @@ No run loop processing occurs while the thread is blocked.
 
 ## See Also
 
-- [class var current: Thread](thread/current.md)
+### Related Documentation
+- [class var current: Thread](./current.md)
   Returns the thread object representing the current thread of execution.
-- [class func sleep(forTimeInterval: TimeInterval)](thread/sleep(fortimeinterval:).md)
+### Stopping a Thread
+- [class func sleep(forTimeInterval: TimeInterval)](./sleep%28fortimeinterval%29.md)
   Sleeps the thread for a given time interval.
-- [class func exit()](thread/exit.md)
+- [class func exit()](./exit%28%29.md)
   Terminates the current thread.
-- [func cancel()](thread/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Changes the cancelled state of the receiver to indicate that it should exit.
 
 

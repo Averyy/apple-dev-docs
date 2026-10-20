@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items in the range.
 
@@ -26,7 +27,8 @@ This value can be `0` to represent an empty range. For type compatibility with t
 
 ## See Also
 
-- [var location: Int](nsrange-swift.typealias/location.md)
+### Accessing range properties
+- [var location: Int](./location.md)
   The index of the first member of the range.
 
 

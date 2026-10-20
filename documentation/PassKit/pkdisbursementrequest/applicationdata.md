@@ -1,7 +1,8 @@
 # applicationData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional merchant-supplied information about the disbursement request.
 
@@ -18,9 +19,13 @@ Optional merchant-supplied information about the disbursement request.
 var applicationData: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSData * applicationData;
+```
+
 #### Discussion
 
-The system hashes the data and includes it in the resulting [`PKPaymentToken`](pkpaymenttoken.md).
+The system hashes the data and includes it in the resulting [`PKPaymentToken`](../pkpaymenttoken.md).
 
 
 ---

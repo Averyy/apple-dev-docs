@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.SliceIndex
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that the BNNS graph builder uses to specify slice indices.
 
@@ -23,7 +24,7 @@ protocol SliceIndex
 ## Relationships
 
 ### Conforming Types
-- [BNNSGraph.Builder.SliceRange](bnnsgraph/builder/slicerange.md)
+- [BNNSGraph.Builder.SliceRange](./slicerange.md)
 
 
 ---

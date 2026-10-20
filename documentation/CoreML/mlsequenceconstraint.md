@@ -1,7 +1,8 @@
 # MLSequenceConstraint
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The constraints for a sequence feature.
 
@@ -20,47 +21,52 @@ The constraints for a sequence feature.
 class MLSequenceConstraint
 ```
 
+```objc
+@interface MLSequenceConstraint : NSObject
+```
+
 ## Topics
 
 ### Accessing the constraints
-- [var valueDescription: MLFeatureDescription](mlsequenceconstraint/valuedescription.md)
+- [var valueDescription: MLFeatureDescription](./mlsequenceconstraint/valuedescription.md)
   The description that all sequence elements must match.
-- [var countRange: NSRange](mlsequenceconstraint/countrange.md)
+- [var countRange: NSRange](./mlsequenceconstraint/countrange.md)
   The range of values allowed for the sequence’s length.
 ### Initializers
-- [init?(coder: NSCoder)](mlsequenceconstraint/init(coder:).md)
+- [init?(coder: NSCoder)](./mlsequenceconstraint/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+### Accessing feature constraints
+- [var stateConstraint: MLStateConstraint?](./mlfeaturedescription/stateconstraint.md)
   The state feature value constraint.
-- [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
+- [var imageConstraint: MLImageConstraint?](./mlfeaturedescription/imageconstraint.md)
   The size and format constraints for an image feature.
-- [class MLImageConstraint](mlimageconstraint.md)
+- [class MLImageConstraint](./mlimageconstraint.md)
   The width, height, and pixel format constraints of an image feature.
-- [var dictionaryConstraint: MLDictionaryConstraint?](mlfeaturedescription/dictionaryconstraint.md)
+- [var dictionaryConstraint: MLDictionaryConstraint?](./mlfeaturedescription/dictionaryconstraint.md)
   The constraint for a dictionary feature.
-- [class MLDictionaryConstraint](mldictionaryconstraint.md)
+- [class MLDictionaryConstraint](./mldictionaryconstraint.md)
   The constraint on the keys for a dictionary feature.
-- [var multiArrayConstraint: MLMultiArrayConstraint?](mlfeaturedescription/multiarrayconstraint.md)
+- [var multiArrayConstraint: MLMultiArrayConstraint?](./mlfeaturedescription/multiarrayconstraint.md)
   The constraints on a multidimensional array feature.
-- [class MLMultiArrayConstraint](mlmultiarrayconstraint.md)
+- [class MLMultiArrayConstraint](./mlmultiarrayconstraint.md)
   The shape and data type constraints for a multidimensional array feature.
-- [var sequenceConstraint: MLSequenceConstraint?](mlfeaturedescription/sequenceconstraint.md)
+- [var sequenceConstraint: MLSequenceConstraint?](./mlfeaturedescription/sequenceconstraint.md)
   The constraints for a sequence feature.
 
 

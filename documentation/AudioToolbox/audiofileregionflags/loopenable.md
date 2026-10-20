@@ -1,17 +1,18 @@
 # loopEnable
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If set, the region is looped. You must set one or both of the remaining flags must also be set for the region to be looped.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ If set, the region is looped. You must set one or both of the remaining flags mu
 static var loopEnable: AudioFileRegionFlags { get }
 ```
 
+```c
+kAudioFileRegionFlag_LoopEnable
+```
+
 ## See Also
 
-- [static var playBackward: AudioFileRegionFlags](audiofileregionflags/playbackward.md)
+### Constants
+- [static var playBackward: AudioFileRegionFlags](./playbackward.md)
   If set, the region is played backward.
-- [static var playForward: AudioFileRegionFlags](audiofileregionflags/playforward.md)
+- [static var playForward: AudioFileRegionFlags](./playforward.md)
   If set, the region is played forward.
 
 

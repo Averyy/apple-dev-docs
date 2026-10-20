@@ -1,7 +1,8 @@
 # embeddedThumbnailPhotoFormat
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary describing the data format for a preview-sized image accompanying the captured photo.
 
@@ -17,15 +18,20 @@ A dictionary describing the data format for a preview-sized image accompanying t
 var embeddedThumbnailPhotoFormat: [String : Any]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDictionary<NSString *,id> * embeddedThumbnailPhotoFormat;
+```
+
 #### Discussion
 
-See [`Video settings`](video-settings.md) for possible keys and values.
+See [Video settings](../video-settings.md) for possible keys and values.
 
-If you requested an embedded thumbnail image by specifying the [`embeddedThumbnailPhotoFormat`](avcapturephotosettings/embeddedthumbnailphotoformat.md) property of your photo settings when requesting capture, this property’s value is the resolved video settings dictionary for the embedded thumbnail image. If you did not request an embedded thumbnail image, this property’s value is `nil`.
+If you requested an embedded thumbnail image by specifying the [`embeddedThumbnailPhotoFormat`](../avcapturephotosettings/embeddedthumbnailphotoformat.md) property of your photo settings when requesting capture, this property’s value is the resolved video settings dictionary for the embedded thumbnail image. If you did not request an embedded thumbnail image, this property’s value is `nil`.
 
 ## See Also
 
-- [var previewPixelBuffer: CVPixelBuffer?](avcapturephoto/previewpixelbuffer.md)
+### Accessing preview photo data
+- [var previewPixelBuffer: CVPixelBuffer?](./previewpixelbuffer.md)
   The pixel data for a preview-sized version of the photo, if requested.
 
 

@@ -1,7 +1,8 @@
 # customAction(_:context:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 26.0+
@@ -11,6 +12,8 @@
 ```swift
 static func customAction(_ customAction: some CustomAction, context: UInt64 = 0) -> Self
 ```
+
+Available when `Self` is `AnyCustomAction`.
 
 
 ---

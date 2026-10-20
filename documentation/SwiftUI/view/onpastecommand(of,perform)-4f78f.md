@@ -1,18 +1,28 @@
 # onPasteCommand(of:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform in response to the system’s Paste command.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`onPasteCommand(of:perform:)`](./onpastecommand%28of,perform%29-9s227.md) instead.
 
 ## Declaration
 
 ```swift
 nonisolated
 func onPasteCommand(of supportedTypes: [String], perform payloadAction: @escaping ([NSItemProvider]) -> Void) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onPasteCommand(of supportedContentTypes: [UTType], perform payloadAction: @escaping ([NSItemProvider]) -> Void) -> some View
 ```
 
 #### Return Value

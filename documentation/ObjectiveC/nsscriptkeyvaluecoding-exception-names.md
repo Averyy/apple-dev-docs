@@ -7,15 +7,16 @@ Exceptions raised by key-value coding methods.
 ## Topics
 
 ### Constants
-- [let NSOperationNotSupportedForKeyException: String](../foundation/nsoperationnotsupportedforkeyexception.md)
+- [let NSOperationNotSupportedForKeyException: String](../Foundation/nsoperationnotsupportedforkeyexception.md)
 
 ## See Also
 
-- [NSKeyValueBindingCreation](nskeyvaluebindingcreation.md)
+### Key-Value Coding
+- [NSKeyValueBindingCreation](./nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
-- [NSKeyValueCoding](nskeyvaluecoding.md)
+- [NSKeyValueCoding](./nskeyvaluecoding.md)
   A mechanism by which you can access the properties of an object indirectly by name or key.
-- [NSScriptKeyValueCoding](nsscriptkeyvaluecoding.md)
+- [NSScriptKeyValueCoding](./nsscriptkeyvaluecoding.md)
   A collection of methods that provide additional capabilities for working with key-value coding.
 
 

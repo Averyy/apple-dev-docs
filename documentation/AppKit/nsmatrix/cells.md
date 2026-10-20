@@ -1,17 +1,22 @@
 # cells
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the cells of the matrix.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var cells: [NSCell] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSCell *> * cells;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ The cells in the array are row-ordered; that is, the first row of cells appears 
 
 ## See Also
 
-- [var selectedCells: [NSCell]](nsmatrix/selectedcells.md)
+### Finding Cells
+- [var selectedCells: [NSCell]](./selectedcells.md)
   An array containing all of the matrix’s highlighted cells plus its selected cell.
-- [var selectedColumn: Int](nsmatrix/selectedcolumn.md)
+- [var selectedColumn: Int](./selectedcolumn.md)
   The column number of the selected cell.
-- [var selectedRow: Int](nsmatrix/selectedrow.md)
+- [var selectedRow: Int](./selectedrow.md)
   The row number of the selected cell.
-- [func cell(atRow: Int, column: Int) -> NSCell?](nsmatrix/cell(atrow:column:).md)
+- [func cell(atRow: Int, column: Int) -> NSCell?](./cell%28atrow,column%29.md)
   Returns the cell at the specified row and column.
-- [func cell(withTag: Int) -> NSCell?](nsmatrix/cell(withtag:).md)
+- [func cell(withTag: Int) -> NSCell?](./cell%28withtag%29.md)
   Searches the receiver and returns the last cell matching the specified tag.
 
 

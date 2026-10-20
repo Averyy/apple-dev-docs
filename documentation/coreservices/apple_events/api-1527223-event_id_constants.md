@@ -13,21 +13,21 @@ Only a small number of event IDs are shown here. For a more complete listing, se
 ## Topics
 
 ### Constants
-- [var kAEOpenApplication: AEEventID](kaeopenapplication.md)
+- [var kAEOpenApplication: AEEventID](../kaeopenapplication.md)
   Event that launches an application.
-- [var kAEReopenApplication: OSType](kaereopenapplication.md)
+- [var kAEReopenApplication: OSType](../kaereopenapplication.md)
   Event that reopens an application. Sent, for example, when your application is running and a user clicks your application icon in the Dock.
-- [var kAEOpenDocuments: AEEventID](kaeopendocuments.md)
-- [var kAEPrintDocuments: AEEventID](kaeprintdocuments.md)
+- [var kAEOpenDocuments: AEEventID](../kaeopendocuments.md)
+- [var kAEPrintDocuments: AEEventID](../kaeprintdocuments.md)
   Event that provides an application with a list of documents to print.
-- [var kAEOpenContents: AEEventID](kaeopencontents.md)
-- [var kAEQuitApplication: AEEventID](kaequitapplication.md)
+- [var kAEOpenContents: AEEventID](../kaeopencontents.md)
+- [var kAEQuitApplication: AEEventID](../kaequitapplication.md)
   Event that causes the application to quit.
-- [var kAEAnswer: AEEventID](kaeanswer.md)
+- [var kAEAnswer: AEEventID](../kaeanswer.md)
   Event that is a reply Apple event.
-- [var kAEApplicationDied: AEEventID](kaeapplicationdied.md)
+- [var kAEApplicationDied: AEEventID](../kaeapplicationdied.md)
   Event sent by the Process Manager to an application that launched another application when the launched application quits or terminates.
-- [var kAEShowPreferences: AEEventID](kaeshowpreferences.md)
+- [var kAEShowPreferences: AEEventID](../kaeshowpreferences.md)
 
 
 ---

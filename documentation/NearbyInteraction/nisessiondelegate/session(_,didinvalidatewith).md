@@ -1,7 +1,8 @@
 # session(_:didInvalidateWith:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies you of an invalidated session.
 
@@ -17,9 +18,13 @@ Notifies you of an invalidated session.
 optional func session(_ session: NISession, didInvalidateWith error: any Error)
 ```
 
+```objc
+- (void) session:(NISession *) session didInvalidateWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 #### Discussion
 

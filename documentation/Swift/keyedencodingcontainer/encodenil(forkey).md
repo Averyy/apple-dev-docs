@@ -1,7 +1,8 @@
 # encodeNil(forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a null value for the given key.
 
@@ -22,7 +23,7 @@ mutating func encodeNil(forKey key: KeyedEncodingContainer<K>.Key) throws
 
 #### Discussion
 
-> **Note**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
 
 ## Parameters
 

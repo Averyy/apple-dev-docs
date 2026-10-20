@@ -1,7 +1,8 @@
 # GCHapticsLocality
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The location of one or more haptics actuators on a game controller.
 
@@ -19,6 +20,10 @@ The location of one or more haptics actuators on a game controller.
 struct GCHapticsLocality
 ```
 
+```c
+typedef NSString * GCHapticsLocality;
+```
+
 #### Discussion
 
 Use this symbol to specify the location of the actuators when creating a haptic engine.
@@ -26,38 +31,39 @@ Use this symbol to specify the location of the actuators when creating a haptic 
 ## Topics
 
 ### Localities
-- [static let `default`: GCHapticsLocality](gchapticslocality/default.md)
+- [static let `default`: GCHapticsLocality](./gchapticslocality/default.md)
   The default location of a haptics actuator on a game controller.
-- [static let all: GCHapticsLocality](gchapticslocality/all.md)
+- [static let all: GCHapticsLocality](./gchapticslocality/all.md)
   All locations of haptics actuators on a game controller.
-- [static let handles: GCHapticsLocality](gchapticslocality/handles.md)
+- [static let handles: GCHapticsLocality](./gchapticslocality/handles.md)
   All handles on a game controller.
-- [static let leftHandle: GCHapticsLocality](gchapticslocality/lefthandle.md)
+- [static let leftHandle: GCHapticsLocality](./gchapticslocality/lefthandle.md)
   The left handle on a game controller.
-- [static let rightHandle: GCHapticsLocality](gchapticslocality/righthandle.md)
+- [static let rightHandle: GCHapticsLocality](./gchapticslocality/righthandle.md)
   The right handle on a game controller.
-- [static let triggers: GCHapticsLocality](gchapticslocality/triggers.md)
+- [static let triggers: GCHapticsLocality](./gchapticslocality/triggers.md)
   All triggers on a game controller.
-- [static let leftTrigger: GCHapticsLocality](gchapticslocality/lefttrigger.md)
+- [static let leftTrigger: GCHapticsLocality](./gchapticslocality/lefttrigger.md)
   The left trigger on a game controller.
-- [static let rightTrigger: GCHapticsLocality](gchapticslocality/righttrigger.md)
+- [static let rightTrigger: GCHapticsLocality](./gchapticslocality/righttrigger.md)
   The right trigger on a game controller.
 ### Initializers
-- [init(rawValue: String)](gchapticslocality/init(rawvalue:).md)
+- [init(rawValue: String)](./gchapticslocality/init%28rawvalue%29.md)
   Creates a locality structure with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var supportedLocalities: Set<GCHapticsLocality>](gcdevicehaptics/supportedlocalities.md)
+### Getting the localities
+- [var supportedLocalities: Set<GCHapticsLocality>](./gcdevicehaptics/supportedlocalities.md)
   The locations of haptic actuators on the device.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique hardware identifier of the tag.
@@ -17,15 +18,20 @@ The unique hardware identifier of the tag.
 var identifier: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * identifier;
+```
+
 #### Discussion
 
-The [`identifier`](nfciso15693tag/identifier.md) data is in big-endian byte order.
+The [`identifier`](./identifier.md) data is in big-endian byte order.
 
 ## See Also
 
-- [var icManufacturerCode: Int](nfciso15693tag/icmanufacturercode.md)
+### Getting Tag Information
+- [var icManufacturerCode: Int](./icmanufacturercode.md)
   The IC manufacturer code of the tag.
-- [var icSerialNumber: Data](nfciso15693tag/icserialnumber.md)
+- [var icSerialNumber: Data](./icserialnumber.md)
   The IC serial number assigned to the tag by the manufacturer.
 
 

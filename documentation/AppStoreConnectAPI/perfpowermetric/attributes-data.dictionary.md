@@ -1,7 +1,8 @@
 # PerfPowerMetric.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Power and Performance Metrics resource.
 
@@ -10,15 +11,17 @@ Attributes that describe a Power and Performance Metrics resource.
 
 ## Declaration
 
-```swift
+```
 object PerfPowerMetric.Attributes
 ```
 
 ## Properties
 
 - `deviceType` (string): A string that represents the device type.
-- `metricType` (string): For more information about metric types, see [`MetricCategory`](metriccategory.md).
-- `platform` (string)
+- `metricType` (string): For more information about metric types, see [`MetricCategory`](../metriccategory.md).
+
+  **Allowed Values**: `DISK`, `HANG`, `BATTERY`, `LAUNCH`, `MEMORY`, `ANIMATION`, `TERMINATION`, `STORAGE`
+- `platform` (string): **Allowed Values**: `IOS`
 
 
 ---

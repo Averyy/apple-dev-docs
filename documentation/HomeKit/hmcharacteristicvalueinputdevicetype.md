@@ -1,7 +1,8 @@
 # HMCharacteristicValueInputDeviceType
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Categories of input devices.
 
@@ -19,35 +20,39 @@ Categories of input devices.
 enum HMCharacteristicValueInputDeviceType
 ```
 
+```c
+enum HMCharacteristicValueInputDeviceType : NSInteger;
+```
+
 ## Topics
 
 ### Input devices
-- [HMCharacteristicValueInputDeviceType.audioSystem](hmcharacteristicvalueinputdevicetype/audiosystem.md)
+- [HMCharacteristicValueInputDeviceType.audioSystem](./hmcharacteristicvalueinputdevicetype/audiosystem.md)
   An audio system input device.
-- [HMCharacteristicValueInputDeviceType.none](hmcharacteristicvalueinputdevicetype/none.md)
+- [HMCharacteristicValueInputDeviceType.none](./hmcharacteristicvalueinputdevicetype/none.md)
   No input device.
-- [HMCharacteristicValueInputDeviceType.other](hmcharacteristicvalueinputdevicetype/other.md)
+- [HMCharacteristicValueInputDeviceType.other](./hmcharacteristicvalueinputdevicetype/other.md)
   An input device that doesn’t fit classifications.
-- [HMCharacteristicValueInputDeviceType.playback](hmcharacteristicvalueinputdevicetype/playback.md)
+- [HMCharacteristicValueInputDeviceType.playback](./hmcharacteristicvalueinputdevicetype/playback.md)
   A playback control input device.
-- [HMCharacteristicValueInputDeviceType.recording](hmcharacteristicvalueinputdevicetype/recording.md)
+- [HMCharacteristicValueInputDeviceType.recording](./hmcharacteristicvalueinputdevicetype/recording.md)
   A recording input device.
-- [HMCharacteristicValueInputDeviceType.tuner](hmcharacteristicvalueinputdevicetype/tuner.md)
+- [HMCharacteristicValueInputDeviceType.tuner](./hmcharacteristicvalueinputdevicetype/tuner.md)
   A tuner input device.
-- [HMCharacteristicValueInputDeviceType.tv](hmcharacteristicvalueinputdevicetype/tv.md)
+- [HMCharacteristicValueInputDeviceType.tv](./hmcharacteristicvalueinputdevicetype/tv.md)
   A television input device.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueinputdevicetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueinputdevicetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

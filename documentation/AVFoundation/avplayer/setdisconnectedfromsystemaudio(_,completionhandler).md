@@ -1,7 +1,8 @@
 # setDisconnectedFromSystemAudio(_:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes whether the player is disconnected from system audio. This method allows you to dynamically change the player’s system audio connection. The operation is asynchronous. Each call to this method will invoke its own completion handler when the operation completes. When changing from `false` to `true`, you should typically call this method first, then deactivate the `AVAudioSession` to allow other audio to resume.
 
@@ -19,7 +20,7 @@ nonisolated
 func setDisconnectedFromSystemAudio(_ disconnected: Bool, completionHandler: (@Sendable () -> Void)? = nil)
 ```
 
-#### Using the Completion Handler
+#### Using the completion handler
 
 In a scenario where changing the value from `false` to `true` should also allow other system audio to resume, you should only deactivate the audio session once the player has disconnected from system audio.
 

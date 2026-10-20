@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group resource from an array of audio file resources (backward compatibility).
 
@@ -24,7 +25,7 @@ Creates a group resource from an array of audio file resources (backward compati
 
 This initializer maintains backward compatibility with existing code that doesnâ€™t specify configuration.
 
-> **Note**: An error if the provided array is empty or if the underlying audio assets do not have matching channel layouts.
+> **Throws**: An error if the provided array is empty or if the underlying audio assets do not have matching channel layouts.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ This initializer maintains backward compatibility with existing code that doesnâ
 
 ## See Also
 
-- [convenience init(named: String, from: String, in: Bundle) async throws](audiofilegroupresource/init(named:from:in:).md)
+### Creating a resource
+- [convenience init(named: String, from: String, in: Bundle) async throws](./init%28named,from,in%29.md)
   Initializes an audio resource from a Reality Composer Pro project.
-- [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](audiofilegroupresource/load(named:from:in:).md)
+- [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](./load%28named,from,in%29.md)
   Loads an audio resource from a Reality Composer Pro project.
 
 

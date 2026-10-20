@@ -1,7 +1,8 @@
 # errAuthorizationInteractionNotAllowed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Security Server denied authorization because no user interaction is allowed.
 
@@ -13,6 +14,10 @@ The Security Server denied authorization because no user interaction is allowed.
 
 ```swift
 var errAuthorizationInteractionNotAllowed: OSStatus { get }
+```
+
+```c
+errAuthorizationInteractionNotAllowed
 ```
 
 

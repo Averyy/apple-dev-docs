@@ -1,14 +1,15 @@
 # withAttributes
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```c
 static IOAudioPort * withAttributes(UInt32 portType, const char *portName, UInt32 subType, OSDictionary *properties);
 ```
 

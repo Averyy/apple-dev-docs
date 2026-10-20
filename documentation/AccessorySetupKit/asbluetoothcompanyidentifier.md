@@ -1,14 +1,15 @@
 # ASBluetoothCompanyIdentifier
 
 **Framework**: AccessorySetupKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type used to identify a Bluetooth accessory provider.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,43 +17,48 @@ The type used to identify a Bluetooth accessory provider.
 struct ASBluetoothCompanyIdentifier
 ```
 
+```c
+typedef uint16_t ASBluetoothCompanyIdentifier;
+```
+
 ## Topics
 
 ### Creating an identifier
-- [init(UInt16)](asbluetoothcompanyidentifier/init(_:).md)
-- [init(rawValue: UInt16)](asbluetoothcompanyidentifier/init(rawvalue:).md)
+- [init(UInt16)](./asbluetoothcompanyidentifier/init%28_%29.md)
+- [init(rawValue: UInt16)](./asbluetoothcompanyidentifier/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bluetoothCompanyIdentifier: ASBluetoothCompanyIdentifier](asdiscoverydescriptor/bluetoothcompanyidentifier.md)
+### Specifying Bluetooth properties
+- [var bluetoothCompanyIdentifier: ASBluetoothCompanyIdentifier](./asdiscoverydescriptor/bluetoothcompanyidentifier.md)
   The accessory’s 16-bit Bluetooth Company Identifier.
-- [var bluetoothManufacturerDataBlob: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatablob.md)
+- [var bluetoothManufacturerDataBlob: Data?](./asdiscoverydescriptor/bluetoothmanufacturerdatablob.md)
   A byte buffer that matches the accessory’s Bluetooth manufacturer data.
-- [var bluetoothManufacturerDataMask: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatamask.md)
+- [var bluetoothManufacturerDataMask: Data?](./asdiscoverydescriptor/bluetoothmanufacturerdatamask.md)
   The accessory’s Bluetooth manufacturer data mask.
-- [var bluetoothServiceDataBlob: Data?](asdiscoverydescriptor/bluetoothservicedatablob.md)
+- [var bluetoothServiceDataBlob: Data?](./asdiscoverydescriptor/bluetoothservicedatablob.md)
   A byte buffer that matches the accessory’s Bluetooth service data.
-- [var bluetoothServiceDataMask: Data?](asdiscoverydescriptor/bluetoothservicedatamask.md)
+- [var bluetoothServiceDataMask: Data?](./asdiscoverydescriptor/bluetoothservicedatamask.md)
   The accessory’s Bluetooth service data mask.
-- [var bluetoothNameSubstring: String?](asdiscoverydescriptor/bluetoothnamesubstring.md)
+- [var bluetoothNameSubstring: String?](./asdiscoverydescriptor/bluetoothnamesubstring.md)
   The accessory’s over-the-air Bluetooth name substring.
-- [var bluetoothNameSubstringCompareOptions: NSString.CompareOptions](asdiscoverydescriptor/bluetoothnamesubstringcompareoptions.md)
+- [var bluetoothNameSubstringCompareOptions: NSString.CompareOptions](./asdiscoverydescriptor/bluetoothnamesubstringcompareoptions.md)
   The accessory’s over-the-air Bluetooth name substring compare options.
-- [var bluetoothServiceUUID: CBUUID?](asdiscoverydescriptor/bluetoothserviceuuid.md)
+- [var bluetoothServiceUUID: CBUUID?](./asdiscoverydescriptor/bluetoothserviceuuid.md)
   The accessory’s Bluetooth service UUID.
-- [var bluetoothRange: ASDiscoveryDescriptor.Range](asdiscoverydescriptor/bluetoothrange.md)
+- [var bluetoothRange: ASDiscoveryDescriptor.Range](./asdiscoverydescriptor/bluetoothrange.md)
   A property that tells the session to discover accessories within a specific Bluetooth range.
-- [ASDiscoveryDescriptor.Range](asdiscoverydescriptor/range.md)
+- [ASDiscoveryDescriptor.Range](./asdiscoverydescriptor/range.md)
   The Bluetooth range in which to discover accessories.
 
 

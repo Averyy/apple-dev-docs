@@ -1,7 +1,8 @@
 # MobilePhotoIDDataRequest.Response
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the response information from a successful photo ID data request.
 
@@ -19,20 +20,20 @@ struct Response
 ## Topics
 
 ### Structures
-- [MobilePhotoIDDataRequest.Response.DocumentElements](mobilephotoiddatarequest/response/documentelements-swift.struct.md)
+- [MobilePhotoIDDataRequest.Response.DocumentElements](./response/documentelements-swift.struct.md)
   A type that contains the document elements from a successful photo ID data request.
 ### Instance Properties
-- [let documentElements: MobilePhotoIDDataRequest.Response.DocumentElements](mobilephotoiddatarequest/response/documentelements-swift.property.md)
+- [let documentElements: MobilePhotoIDDataRequest.Response.DocumentElements](./response/documentelements-swift.property.md)
   The document elements from a successful photo ID data request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MobileDocumentDataResponse](mobiledocumentdataresponse.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [MobileDocumentDataResponse](../mobiledocumentdataresponse.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

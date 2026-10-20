@@ -1,7 +1,8 @@
 # phoneOrEmailAddress
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact’s phone number or email address.
 
@@ -16,13 +17,18 @@ The contact’s phone number or email address.
 var phoneOrEmailAddress: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * phoneOrEmailAddress;
+```
+
 #### Discussion
 
 When the user selects the list item, Siri launches the message compose flow and uses this property’s value as the recipient’s contact information.
 
 ## See Also
 
-- [var conversationIdentifier: String?](cpmessagelistitem/conversationidentifier.md)
+### Managing the Message Context
+- [var conversationIdentifier: String?](./conversationidentifier.md)
   The conversation’s unique identifier.
 
 

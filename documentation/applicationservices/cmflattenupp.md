@@ -1,7 +1,8 @@
 # CMFlattenUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer to a data-flattening callback.
 
@@ -14,9 +15,13 @@ Defines a universal procedure pointer to a data-flattening callback.
 typealias CMFlattenUPP = CMFlattenProcPtr
 ```
 
+```c
+typedef CMFlattenProcPtr CMFlattenUPP;
+```
+
 #### Discussion
 
-For more information, see the description of the [`CMFlattenProcPtr`](cmflattenprocptr.md) callback function.
+For more information, see the description of the [`CMFlattenProcPtr`](./cmflattenprocptr.md) callback function.
 
 
 ---

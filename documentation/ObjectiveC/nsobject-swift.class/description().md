@@ -1,7 +1,8 @@
 # description()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string that represents the contents of the receiving class.
 
@@ -20,6 +21,10 @@ Returns a string that represents the contents of the receiving class.
 class func description() -> String
 ```
 
+```objc
++ (NSString *) description;
+```
+
 #### Return Value
 
 A string that represents the contents of the receiving class.
@@ -32,7 +37,8 @@ The debugger’s print-object command invokes this method to produce a textual d
 
 ## See Also
 
-- [var description: String](nsobjectprotocol/description.md)
+### Related Documentation
+- [var description: String](../nsobjectprotocol/description.md)
   A textual representation of the receiver.
 
 

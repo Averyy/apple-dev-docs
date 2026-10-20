@@ -1,7 +1,8 @@
 # requestDenied
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the request was denied.
 
@@ -20,13 +21,14 @@ static var requestDenied: UISceneError.Code { get }
 
 ## See Also
 
-- [static var multipleScenesNotSupported: UISceneError.Code](uisceneerror/multiplescenesnotsupported.md)
+### Identifying an error cause
+- [static var multipleScenesNotSupported: UISceneError.Code](./multiplescenesnotsupported.md)
   An error that indicates multiple scenes aren’t supported.
-- [static var geometryRequestUnsupported: UISceneError.Code](uisceneerror/geometryrequestunsupported.md)
+- [static var geometryRequestUnsupported: UISceneError.Code](./geometryrequestunsupported.md)
   An error that indicates the geometry request is invalid or unsupported.
-- [static var geometryRequestDenied: UISceneError.Code](uisceneerror/geometryrequestdenied.md)
+- [static var geometryRequestDenied: UISceneError.Code](./geometryrequestdenied.md)
   An error that indicates the geometry request is valid but the system denied the request.
-- [UISceneError.Code](uisceneerror/code.md)
+- [UISceneError.Code](./code.md)
   Error codes for issues with scenes.
 
 

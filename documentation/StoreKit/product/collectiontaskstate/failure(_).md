@@ -1,7 +1,8 @@
 # Product.CollectionTaskState.failure(_:)
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task failed with an error.
 
@@ -22,9 +23,10 @@ case failure(any Error)
 
 ## See Also
 
-- [Product.CollectionTaskState.loading](product/collectiontaskstate/loading.md)
+### Collection task states
+- [Product.CollectionTaskState.loading](./loading.md)
   The task is loading the collection in the background.
-- [Product.CollectionTaskState.success(_:unavailable:)](product/collectiontaskstate/success(_:unavailable:).md)
+- [Product.CollectionTaskState.success(_:unavailable:)](./success%28_,unavailable%29.md)
   The task completed loading the collection.
 
 

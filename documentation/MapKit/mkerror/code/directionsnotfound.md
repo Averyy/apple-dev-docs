@@ -1,7 +1,8 @@
 # MKError.Code.directionsNotFound
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework couldn’t find the specified directions.
 
@@ -20,17 +21,22 @@ The framework couldn’t find the specified directions.
 case directionsNotFound
 ```
 
+```c
+MKErrorDirectionsNotFound
+```
+
 ## See Also
 
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
+### Constants
+- [MKError.Code.decodingFailed](./decodingfailed.md)
   GeoJSON decoding failed.
-- [MKError.Code.loadingThrottled](mkerror/code/loadingthrottled.md)
+- [MKError.Code.loadingThrottled](./loadingthrottled.md)
   The data didn’t load because data throttling is in effect.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
+- [MKError.Code.placemarkNotFound](./placemarknotfound.md)
   The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
+- [MKError.Code.serverFailure](./serverfailure.md)
   The map server was unable to return the desired information.
-- [MKError.Code.unknown](mkerror/code/unknown.md)
+- [MKError.Code.unknown](./unknown.md)
   An unknown error occurred.
 
 

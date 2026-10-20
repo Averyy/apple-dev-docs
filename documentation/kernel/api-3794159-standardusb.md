@@ -1,14 +1,15 @@
 # StandardUSB::getEndpointDirection
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 uint8_t StandardUSB::getEndpointDirection(const EndpointDescriptor *descriptor);
 ```
 

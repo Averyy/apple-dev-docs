@@ -1,7 +1,8 @@
 # mimeType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIME type of the response.
 
@@ -20,6 +21,10 @@ The MIME type of the response.
 var mimeType: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * MIMEType;
+```
+
 #### Discussion
 
 The MIME type is often provided by the response’s originating source. However, that value may be changed or corrected by a protocol implementation if it can be determined that the response’s source reported the information incorrectly.
@@ -28,13 +33,14 @@ If the response’s originating source does not provide a MIME type, an attempt 
 
 ## See Also
 
-- [var expectedContentLength: Int64](urlresponse/expectedcontentlength.md)
+### Getting the response properties
+- [var expectedContentLength: Int64](./expectedcontentlength.md)
   The expected length of the response’s content.
-- [var suggestedFilename: String?](urlresponse/suggestedfilename.md)
+- [var suggestedFilename: String?](./suggestedfilename.md)
   A suggested filename for the response data.
-- [var textEncodingName: String?](urlresponse/textencodingname.md)
+- [var textEncodingName: String?](./textencodingname.md)
   The name of the text encoding provided by the response’s originating source.
-- [var url: URL?](urlresponse/url.md)
+- [var url: URL?](./url.md)
   The URL for the response.
 
 

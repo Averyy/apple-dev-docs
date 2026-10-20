@@ -1,7 +1,8 @@
 # external
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An external device type.
 
@@ -19,13 +20,18 @@ An external device type.
 static let external: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeExternal;
+```
+
 #### Discussion
 
 On iPad, external devices are those that conform to the UVC (USB Video Class) specification.
 
 ## See Also
 
-- [static let externalUnknown: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/externalunknown.md)
+### External devices
+- [static let externalUnknown: AVCaptureDevice.DeviceType](./externalunknown.md)
   An unknown external device type.
 
 

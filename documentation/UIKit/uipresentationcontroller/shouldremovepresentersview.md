@@ -1,7 +1,8 @@
 # shouldRemovePresentersView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the presenting view controller’s view should be removed when the presentation animations finish.
 
@@ -9,7 +10,7 @@ A Boolean value indicating whether the presenting view controller’s view shoul
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,30 @@ A Boolean value indicating whether the presenting view controller’s view shoul
 var shouldRemovePresentersView: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL shouldRemovePresentersView;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view should be removed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if the view should be removed or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). If you implement a presentation that does not cover the presenting view controller’s content entirely, override this method and return [`false`](https://developer.apple.com/documentation/swift/false).
+The default implementation of this method returns [`false`](../../Swift/false.md). If you implement a presentation that does not cover the presenting view controller’s content entirely, override this method and return [`false`](../../Swift/false.md).
 
 If you override this method, do not call `super`.
 
 ## See Also
 
-- [var presentationStyle: UIModalPresentationStyle](uipresentationcontroller/presentationstyle.md)
+### Getting the presentation attributes
+- [var presentationStyle: UIModalPresentationStyle](./presentationstyle.md)
   The presentation style of the presented view controller.
-- [func adaptivePresentationStyle(for: UITraitCollection) -> UIModalPresentationStyle](uipresentationcontroller/adaptivepresentationstyle(for:).md)
+- [func adaptivePresentationStyle(for: UITraitCollection) -> UIModalPresentationStyle](./adaptivepresentationstyle%28for%29.md)
   Returns the presentation style to use for the specified set of traits.
-- [var adaptivePresentationStyle: UIModalPresentationStyle](uipresentationcontroller/adaptivepresentationstyle.md)
+- [var adaptivePresentationStyle: UIModalPresentationStyle](./adaptivepresentationstyle.md)
   Returns the presentation style to use when the presented view controller becomes horizontally compact.
-- [var shouldPresentInFullscreen: Bool](uipresentationcontroller/shouldpresentinfullscreen.md)
+- [var shouldPresentInFullscreen: Bool](./shouldpresentinfullscreen.md)
   A Boolean value indicating whether the presentation covers the entire screen.
 
 

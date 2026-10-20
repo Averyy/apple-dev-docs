@@ -1,7 +1,8 @@
 # NSExtensionHostDidEnterBackground
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the extension’s host app begins running in the background.
 
@@ -19,19 +20,24 @@ Posted when the extension’s host app begins running in the background.
 static let NSExtensionHostDidEnterBackground: NSNotification.Name
 ```
 
+```c
+extern NSString * const NSExtensionHostDidEnterBackgroundNotification;
+```
+
 #### Discussion
 
 Extensions can use this notification to stop tasks and prepare the extension to be suspended. The `object` parameter contains the `NSExtensionContext` object. This notification does not contain a `userInfo` dictionary.
 
-Extensions receive only a short amount of time to perform any background work. If you need more time to complete critical tasks, use the methods of the [`ProcessInfo`](processinfo.md) class to request that time.
+Extensions receive only a short amount of time to perform any background work. If you need more time to complete critical tasks, use the methods of the [`ProcessInfo`](../../processinfo.md) class to request that time.
 
 ## See Also
 
-- [static let NSExtensionHostDidBecomeActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostdidbecomeactive.md)
+### Working with notifications
+- [static let NSExtensionHostDidBecomeActive: NSNotification.Name](./nsextensionhostdidbecomeactive.md)
   Posted when the extension’s host app moves from the inactive to the active state.
-- [static let NSExtensionHostWillResignActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillresignactive.md)
+- [static let NSExtensionHostWillResignActive: NSNotification.Name](./nsextensionhostwillresignactive.md)
   Posted when the extension’s host app moves from the active to the inactive state.
-- [static let NSExtensionHostWillEnterForeground: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillenterforeground.md)
+- [static let NSExtensionHostWillEnterForeground: NSNotification.Name](./nsextensionhostwillenterforeground.md)
   Posted when the extension’s host app begins running in the foreground.
 
 

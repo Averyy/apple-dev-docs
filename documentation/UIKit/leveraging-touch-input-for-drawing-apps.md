@@ -1,6 +1,8 @@
 # Leveraging touch input for drawing apps
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [LeveragingTouchInputForDrawingApps.zip](https://docs-assets.developer.apple.com/published/72f431f71f59/LeveragingTouchInputForDrawingApps.zip)
 
 Capture touches as a series of strokes and render them efficiently on a drawing canvas.
 
@@ -18,7 +20,7 @@ This sample project, Speed Sketch, shows how to render a series of strokes a use
 - Improve drawing performance.
 - Enhance the app for Apple Pencil.
 
-##### Distinguish Between Finger and Apple Pencil Touches
+##### Distinguish between finger and Apple Pencil touches
 
 With Speed Sketch, users can draw by moving their finger or Apple Pencil across the screen, and the system reports the touches to the app. Speed Sketch captures these touches using the custom gesture recognizer, `StrokeGestureRecognizer`.
 
@@ -75,7 +77,7 @@ override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 }
 ```
 
-The [`touchesBegan(_:with:)`](uigesturerecognizer/touchesbegan(_:with:).md) method sets a timer to give other gesture recognizers, such as pan and pinch, time to handle touches that the user makes with their finger. This behavior is unique to drawing apps such as Speed Sketch that start capturing and drawing a stroke the moment the user touches the screen.
+The [`touchesBegan(_:with:)`](./uigesturerecognizer/touchesbegan%28_,with%29.md) method sets a timer to give other gesture recognizers, such as pan and pinch, time to handle touches that the user makes with their finger. This behavior is unique to drawing apps such as Speed Sketch that start capturing and drawing a stroke the moment the user touches the screen.
 
 In order to track finger and Apple Pencil touches separately, Speed Sketch uses two instances of `StrokeGestureRecognizer`: one for finger touches and the other to track touches coming from Apple Pencil.
 
@@ -98,7 +100,7 @@ func setupStrokeGestureRecognizer(isForPencil: Bool) -> StrokeGestureRecognizer 
 }
 ```
 
-The gesture recognizer distinguishes between the touch types by setting the [`allowedTouchTypes`](uigesturerecognizer/allowedtouchtypes.md) property to [`UITouch.TouchType.pencil`](uitouch/touchtype/pencil.md) when tracking Apple Pencil touches, and to [`UITouch.TouchType.direct`](uitouch/touchtype/direct.md) when tracking touches from a finger.
+The gesture recognizer distinguishes between the touch types by setting the [`allowedTouchTypes`](./uigesturerecognizer/allowedtouchtypes.md) property to [`UITouch.TouchType.pencil`](./uitouch/touchtype/pencil.md) when tracking Apple Pencil touches, and to [`UITouch.TouchType.direct`](./uitouch/touchtype/direct.md) when tracking touches from a finger.
 
 ```swift
 var isForPencil: Bool = false {
@@ -134,11 +136,11 @@ var pencilMode = false {
 }
 ```
 
-##### Improve Drawing Performance
+##### Improve drawing performance
 
 The stroke gesture recognizer receives touch events from the system. For most apps, the time span between each touch event is enough to handle the gesture. However, users of drawing apps expect greater precision, which requires the app to gather all the touches reported since the last delivered touch event.
 
-To gather the additional touches, Speed Sketch calls the [`coalescedTouches(for:)`](uievent/coalescedtouches(for:).md) method. This method returns an array of [`UITouch`](uitouch.md) objects representing the touches received by the system but not delivered in the last event. The additional touches allow Speed Sketch to provide a smoother rendering of the stroke by storing the coalesced touches as part of the stroke’s data sample.
+To gather the additional touches, Speed Sketch calls the [`coalescedTouches(for:)`](./uievent/coalescedtouches%28for%29.md) method. This method returns an array of [`UITouch`](./uitouch.md) objects representing the touches received by the system but not delivered in the last event. The additional touches allow Speed Sketch to provide a smoother rendering of the stroke by storing the coalesced touches as part of the stroke’s data sample.
 
 ```swift
 if collectsCoalescedTouches {
@@ -155,7 +157,7 @@ if collectsCoalescedTouches {
 }
 ```
 
-In addition to coalesced touches, Speed Sketch uses touch data predicted by the system as a way to enhance the perceived accuracy of the app’s drawing capabilities. Speed Sketch retrieves the predicted touches by calling the [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) method for the event, then saves the touches as part of the data sample for the stroke.
+In addition to coalesced touches, Speed Sketch uses touch data predicted by the system as a way to enhance the perceived accuracy of the app’s drawing capabilities. Speed Sketch retrieves the predicted touches by calling the [`predictedTouches(for:)`](./uievent/predictedtouches%28for%29.md) method for the event, then saves the touches as part of the data sample for the stroke.
 
 ```swift
 if usesPredictedSamples && stroke.state == .active {
@@ -287,13 +289,13 @@ func drawDebugMarkings(in context: CGContext, fromSample: StrokeSample) {
 }
 ```
 
-Starting with the second generation Apple Pencil, users can double tap their finger on Apple Pencil to request an action from the app (see [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information). When possible, apps should honor the system settings for double-tap actions on Apple Pencil, which include:
+Starting with the second generation Apple Pencil, users can double tap their finger on Apple Pencil to request an action from the app (see [Apple Pencil interactions](./apple-pencil-interactions.md) for more information). When possible, apps should honor the system settings for double-tap actions on Apple Pencil, which include:
 
 - Switching to the eraser or the last used tool
 - Displaying a color pallet
 - Ignoring double tap
 
-Speed Sketch doesn’t have an eraser tool or color pallet, but it does have different drawing tools: Calligraphy, Ink, and Debug. When the user’s preferred double-tap action is [`UIPencilPreferredAction.switchPrevious`](uipencilpreferredaction/switchprevious.md) and the user double-taps their finger on Apple Pencil, Speed Sketch switches to the tool last used by the user. The sample app ignores the other preferred actions.
+Speed Sketch doesn’t have an eraser tool or color pallet, but it does have different drawing tools: Calligraphy, Ink, and Debug. When the user’s preferred double-tap action is [`UIPencilPreferredAction.switchPrevious`](./uipencilpreferredaction/switchprevious.md) and the user double-taps their finger on Apple Pencil, Speed Sketch switches to the tool last used by the user. The sample app ignores the other preferred actions.
 
 ```swift
 func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {
@@ -303,7 +305,7 @@ func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {
 }
 ```
 
-In order for Speed Sketch to receive the double-tap event, it adds a [`UIPencilInteraction`](uipencilinteraction.md) object to the canvas view.
+In order for Speed Sketch to receive the double-tap event, it adds a [`UIPencilInteraction`](./uipencilinteraction.md) object to the canvas view.
 
 ```swift
 let pencilInteraction = UIPencilInteraction()
@@ -313,15 +315,16 @@ view.addInteraction(pencilInteraction)
 
 ## See Also
 
-- [Handling touches in your view](handling-touches-in-your-view.md)
+### Touches
+- [Handling touches in your view](./handling-touches-in-your-view.md)
   Use touch events directly on a view subclass if touch handling is intricately linked to the view’s content.
-- [Handling input from Apple Pencil](handling-input-from-apple-pencil.md)
+- [Handling input from Apple Pencil](./handling-input-from-apple-pencil.md)
   Learn how to detect and respond to touches from Apple Pencil.
-- [Tracking the force of 3D Touch events](tracking-the-force-of-3d-touch-events.md)
+- [Tracking the force of 3D Touch events](./tracking-the-force-of-3d-touch-events.md)
   Manipulate your content based on the force of touches.
-- [Illustrating the force, altitude, and azimuth properties of touch input](illustrating-the-force-altitude-and-azimuth-properties-of-touch-input.md)
+- [Illustrating the force, altitude, and azimuth properties of touch input](./illustrating-the-force-altitude-and-azimuth-properties-of-touch-input.md)
   Capture Apple Pencil and touch input in views.
-- [class UITouch](uitouch.md)
+- [class UITouch](./uitouch.md)
   An object representing the location, size, movement, and force of a touch occurring on the screen.
 
 

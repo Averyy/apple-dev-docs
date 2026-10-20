@@ -1,7 +1,8 @@
 # init(_:color:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new ink, specifying its type and color.
 
@@ -16,14 +17,15 @@ init(_ inkType: PKInk.InkType, color: NSColor = NSColor.black)
 
 ## Parameters
 
-- `inkType`: The type of ink represented by one of the available [`PKInkingTool.InkType`](pkinkingtool-swift.struct/inktype-swift.enum.md) enumerations.
+- `inkType`: The type of ink represented by one of the available [`PKInkingTool.InkType`](../pkinkingtool-swift.struct/inktype-swift.enum.md) enumerations.
 - `color`: The color of the ink, defaults to black.
 
 ## See Also
 
-- [init(PKInk.InkType, color: UIColor)](pkink-swift.struct/init(_:color:)-2rx09.md)
+### Creating an ink object
+- [init(PKInk.InkType, color: UIColor)](./init%28_,color%29-2rx09.md)
   Creates a new ink, specifying its type and color.
-- [typealias InkType](pkink-swift.struct/inktype-swift.typealias.md)
+- [typealias InkType](./inktype-swift.typealias.md)
   A type alias referring to the ink type of an inking tool.
 
 

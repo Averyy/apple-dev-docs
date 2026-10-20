@@ -1,7 +1,8 @@
 # NSLightweightMigrationStage
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a series of models suitable for lightweight migration.
 
@@ -20,36 +21,41 @@ An object that describes a series of models suitable for lightweight migration.
 class NSLightweightMigrationStage
 ```
 
+```objc
+@interface NSLightweightMigrationStage : NSMigrationStage
+```
+
 #### Overview
 
-Use [`NSLightweightMigrationStage`](nslightweightmigrationstage.md) when you have a series of models to migrate and those models are compatible with lightweight migrations. Instances of this class supplement your custom migration stages and help maintain a consistent stage order for the entire migration.
+Use [`NSLightweightMigrationStage`](./nslightweightmigrationstage.md) when you have a series of models to migrate and those models are compatible with lightweight migrations. Instances of this class supplement your custom migration stages and help maintain a consistent stage order for the entire migration.
 
 ## Topics
 
 ### Creating a migration stage
-- [convenience init([String])](nslightweightmigrationstage/init(_:).md)
+- [convenience init([String])](./nslightweightmigrationstage/init%28_%29.md)
   Creates a lightweight migration stage with the specified version checksums.
 ### Accessing the checksums
-- [var versionChecksums: [String]](nslightweightmigrationstage/versionchecksums.md)
+- [var versionChecksums: [String]](./nslightweightmigrationstage/versionchecksums.md)
   The array of version checksums.
 
 ## Relationships
 
 ### Inherits From
-- [NSMigrationStage](nsmigrationstage.md)
+- [NSMigrationStage](./nsmigrationstage.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSCustomMigrationStage](nscustommigrationstage.md)
+### Migration stages
+- [class NSCustomMigrationStage](./nscustommigrationstage.md)
   An object that enables you to participate in the migration between two versions of the same model.
-- [class NSMigrationStage](nsmigrationstage.md)
+- [class NSMigrationStage](./nsmigrationstage.md)
   An abstract base class for describing an individual stage of a migration.
 
 

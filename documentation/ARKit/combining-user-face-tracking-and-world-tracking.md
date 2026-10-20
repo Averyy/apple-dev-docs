@@ -1,6 +1,8 @@
 # Combining user face-tracking and world tracking
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [CombiningUserFaceTrackingAndWorldTracking.zip](https://docs-assets.developer.apple.com/published/c1797a649cd8/CombiningUserFaceTrackingAndWorldTracking.zip)
 
 Track the user’s face in an app that displays an AR experience with the rear camera.
 
@@ -15,11 +17,11 @@ When tracking users’ faces in a world-tracking session, ARKit incorporates inf
 
 To demonstrate applying the user’s face while world-tracking, this sample app lets the user place robot heads that reflect the user’s facial expression.
 
-![Screenshot of three virtual objects placed in the physical environment, each reflecting a different expression that mimic the user’s expression at the time of placing the object.](/images/com.apple.arkit/world-and-face-screenshot.jpg)
+![Screenshot of three virtual objects placed in the physical environment, each reflecting a different expression that mimic the user’s expression at the time of placing the object.](https://developer.apple.com/tutorials/images/com.apple.arkit/world-and-face-screenshot.jpg)
 
-#### Configure and Start the Session
+#### Configure and start the session
 
-This app tracks the user’s face in a world-tracking session on iOS 13 and iPad OS 13 or later, on devices with a front TrueDepth camera that return `true` to [`supportsUserFaceTracking`](arworldtrackingconfiguration/supportsuserfacetracking.md). To prevent the app from running an unsupported configuration, check whether the iOS device supports simultaneous world and user face-tracking.
+This app tracks the user’s face in a world-tracking session on iOS 13 and iPad OS 13 or later, on devices with a front TrueDepth camera that return `true` to [`supportsUserFaceTracking`](./arworldtrackingconfiguration/supportsuserfacetracking.md). To prevent the app from running an unsupported configuration, check whether the iOS device supports simultaneous world and user face-tracking.
 
 ```swift
 guard ARWorldTrackingConfiguration.supportsUserFaceTracking else {
@@ -30,7 +32,7 @@ guard ARWorldTrackingConfiguration.supportsUserFaceTracking else {
 
 If the device running the app doesn’t support user face-tracking in a world-tracking session, the sample project will stop. In your app, consider gracefully degrading the AR experience in this case, such as by presenting the user with an error message and continuing the experience without it.
 
-The sample app sets the [`userFaceTrackingEnabled`](arworldtrackingconfiguration/userfacetrackingenabled.md) property to `true` on the world-tracking configuration when app loads the view controller.
+The sample app sets the [`userFaceTrackingEnabled`](./arworldtrackingconfiguration/userfacetrackingenabled.md) property to `true` on the world-tracking configuration when app loads the view controller.
 
 ```swift
 configuration.userFaceTrackingEnabled = true
@@ -45,9 +47,9 @@ override func viewWillAppear(_ animated: Bool) {
 }
 ```
 
-#### Preview Virtual Content in the Physical Environment
+#### Preview virtual content in the physical environment
 
-The app checks whether a robot head preview exists and creates one if not. ARKit calls the implementation of [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-9v2kw.md) every frame, which makes it a good location for a periodic check.
+The app checks whether a robot head preview exists and creates one if not. ARKit calls the implementation of [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-9v2kw.md) every frame, which makes it a good location for a periodic check.
 
 ```swift
 func session(_ session: ARSession, didUpdate frame: ARFrame) {
@@ -57,7 +59,7 @@ func session(_ session: ARSession, didUpdate frame: ARFrame) {
     //...
 ```
 
-#### Detect Changes in the Users Expression
+#### Detect changes in the user’s expression
 
 ARKit provides the app with an updated anchor when the user changes their expression, position, or orientation with respect to the world. If there’s an active robot head preview, the app applies these changes to the head.
 
@@ -67,7 +69,7 @@ func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
 }
 ```
 
-#### Inspect Expression Information
+#### Inspect expression information
 
 In the robot head’s `update(with faceAnchor:)` function, the app reads the user’s current expression by interpreting the anchor’s *blend shapes*.
 
@@ -75,7 +77,7 @@ In the robot head’s `update(with faceAnchor:)` function, the app reads the use
 let blendShapes = faceAnchor.blendShapes
 ```
 
-Blend shapes are `Float` values normalized within the range `[0..1]`, with `0` representing the facial feature’s rest position, and `1` representing the opposite––the feature in its most pronounced state. To begin processing the values, the app stores them locally by accessing the anchor’s [`blendShapes`](arfaceanchor/blendshapes.md) array.
+Blend shapes are `Float` values normalized within the range `[0..1]`, with `0` representing the facial feature’s rest position, and `1` representing the opposite––the feature in its most pronounced state. To begin processing the values, the app stores them locally by accessing the anchor’s [`blendShapes`](./arfaceanchor/blendshapes.md) array.
 
 ```swift
 guard let eyeBlinkLeft = blendShapes[.eyeBlinkLeft] as? Float,
@@ -88,7 +90,7 @@ guard let eyeBlinkLeft = blendShapes[.eyeBlinkLeft] as? Float,
     else { return }
 ```
 
-#### React to the Users Expression
+#### React to the user’s expression
 
 Blend shape values can apply in unique ways depending on an app’s requirements. The sample app uses blend shapes to make the robot head appear to mimic the user’s expression, such as applying the brow and lip values to offset the robot’s brow and lip positions.
 
@@ -107,7 +109,7 @@ eyeLeftEntity.scale.z = 1 - eyeBlinkLeft
 eyeRightEntity.scale.z = 1 - eyeBlinkRight
 ```
 
-#### Position the Robot Head
+#### Position the robot head
 
 In addition to capturing the user’s expression using the front camera, ARKit records the position of the user’s face with respect to the world. By design, the user’s face anchor is always located behind the rear camera. To serve the goal of mimicking the user with the robot head, the sample app applies the face anchor’s position to make the robot head always visible. First, it sets the robot head’s initial position equal to that of the camera.
 
@@ -128,7 +130,7 @@ let faceTransformFromCamera = simd_mul(simd_inverse(cameraTransform), faceAnchor
 self.position.z = -faceTransformFromCamera.columns.3.z
 ```
 
-#### Orient the Robot Head
+#### Orient the robot head
 
 The sample app also uses the anchor’s orientation to direct the front of the robot’s head continually toward the camera. It starts by accessing the anchor’s orientation.
 
@@ -148,7 +150,7 @@ To effect the change, the app applies the updated Euler angles to the robot head
 self.orientation = mirroredRotation.rotation
 ```
 
-#### Capture the Expression By Placing the Head
+#### Capture the expression by placing the head
 
 To demonstrate the variety of expressions tracked during the session, the sample app places the robot head in the physical environment when the user taps the screen. When the app initially previews the expressions, it positions the robot head at a fixed offset from the camera. When the user taps the screen, the app reanchors the robot head by updating its position to its current world location.
 
@@ -181,13 +183,14 @@ func session(_ session: ARSession, didUpdate frame: ARFrame) {
 
 When the app sets `headPreview` to `nil`, it creates another robot head preview, continuing the user’s ability to place objects and archive additional facial expressions.
 
-> **Note**: For more detail about placing virtual content in the real world, see [`Placing objects and handling 3D interaction`](placing-objects-and-handling-3d-interaction.md).
+> **Note**: For more detail about placing virtual content in the real world, see [Placing objects and handling 3D interaction](./placing-objects-and-handling-3d-interaction.md).
 
 ## See Also
 
-- [Tracking and visualizing faces](tracking-and-visualizing-faces.md)
+### Face Tracking
+- [Tracking and visualizing faces](./tracking-and-visualizing-faces.md)
   Detect faces in a front-camera AR experience, overlay virtual content, and animate facial expressions in real-time.
-- [class ARFaceAnchor](arfaceanchor.md)
+- [class ARFaceAnchor](./arfaceanchor.md)
   An anchor for a unique face that is visible in the front-facing camera.
 
 

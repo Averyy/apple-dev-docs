@@ -1,7 +1,8 @@
 # kMDExporterAvaliable
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A CFBoolean that indicates if an exporter is available for this UTI type.
 
@@ -12,6 +13,10 @@ A CFBoolean that indicates if an exporter is available for this UTI type.
 
 ```swift
 let kMDExporterAvaliable: CFString!
+```
+
+```c
+const CFStringRef kMDExporterAvaliable;
 ```
 
 

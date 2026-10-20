@@ -1,7 +1,8 @@
 # DockAccessory.TrackedPerson
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The state of a tracked person in the active tracking session.
 
@@ -20,23 +21,23 @@ struct TrackedPerson
 ## Topics
 
 ### Instance Properties
-- [var identifier: UUID](dockaccessory/trackedperson/identifier.md)
+- [var identifier: UUID](./trackedperson/identifier.md)
   A unique identifier representing the tracked person. This identifier persists as long as the dock tracks the person. The value is random and doesn’t persist across sessions.
-- [var lookingAtCameraConfidence: Double?](dockaccessory/trackedperson/lookingatcameraconfidence.md)
+- [var lookingAtCameraConfidence: Double?](./trackedperson/lookingatcameraconfidence.md)
   The confidence of the person looking directly at the camera. The range is from `0.0` to `1.0`, or `nil` if the framework hasn’t calculated the score.
-- [var rect: CGRect](dockaccessory/trackedperson/rect.md)
+- [var rect: CGRect](./trackedperson/rect.md)
   The bounding box rectangle of the tracked person’s face in the frame.
-- [var saliencyRank: Int?](dockaccessory/trackedperson/saliencyrank.md)
+- [var saliencyRank: Int?](./trackedperson/saliencyrank.md)
   The saliency rank of the person the dock is tracking. A lower rank indicates higher importance of the person. This property is `nil` if the saliency ranking isn’t set or the person isn’t salient.
-- [var speakingConfidence: Double?](dockaccessory/trackedperson/speakingconfidence.md)
+- [var speakingConfidence: Double?](./trackedperson/speakingconfidence.md)
   The confidence score of the person speaking at the moment of tracking. The range is from `0.0` to `1.0`, or `nil` if the framework hasn’t calculated the score.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

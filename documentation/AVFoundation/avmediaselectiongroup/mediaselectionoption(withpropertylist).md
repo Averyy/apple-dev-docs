@@ -1,7 +1,8 @@
 # mediaSelectionOption(withPropertyList:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the media selection options that match the given property list.
 
@@ -20,19 +21,24 @@ Returns the media selection options that match the given property list.
 func mediaSelectionOption(withPropertyList plist: Any) -> AVMediaSelectionOption?
 ```
 
+```objc
+- (AVMediaSelectionOption *) mediaSelectionOptionWithPropertyList:(id) plist;
+```
+
 #### Return Value
 
-An [`AVMediaSelectionOption`](avmediaselectionoption.md) object containing the properites passed by `plist`. Returns `nil` when no match is found.
+An [`AVMediaSelectionOption`](../avmediaselectionoption.md) object containing the properites passed by `plist`. Returns `nil` when no match is found.
 
 ## Parameters
 
-- `plist`: A property list previously obtained from an option in the group using [`propertyList()`](avmediaselectionoption/propertylist().md) (`AVMediaSelectionOption`).
+- `plist`: A property list previously obtained from an option in the group using [`propertyList()`](../avmediaselectionoption/propertylist%28%29.md) (`AVMediaSelectionOption`).
 
 ## See Also
 
-- [var options: [AVMediaSelectionOption]](avmediaselectiongroup/options.md)
+### Accessing media selection options
+- [var options: [AVMediaSelectionOption]](./options.md)
   A collection of mutually exclusive media selection options
-- [var defaultOption: AVMediaSelectionOption?](avmediaselectiongroup/defaultoption.md)
+- [var defaultOption: AVMediaSelectionOption?](./defaultoption.md)
   The default option in the group.
 
 

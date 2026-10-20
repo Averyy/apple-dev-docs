@@ -1,7 +1,8 @@
 # byteCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of initialized bytes in this span.
 

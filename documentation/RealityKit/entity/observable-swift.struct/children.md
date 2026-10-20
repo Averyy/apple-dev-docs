@@ -1,7 +1,8 @@
 # children
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of child entities, allowing observation of its contents
 

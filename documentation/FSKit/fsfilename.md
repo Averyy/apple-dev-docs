@@ -1,7 +1,8 @@
 # FSFileName
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The name of a file, expressed as a data buffer.
 
@@ -14,56 +15,61 @@ The name of a file, expressed as a data buffer.
 class FSFileName
 ```
 
+```objc
+@interface FSFileName : NSObject
+```
+
 #### Overview
 
 `FSFileName` is the class that carries filenames from the kernel to `FSModule` instances, and carries names back to the kernel as part of directory enumeration.
 
-A filename is usually a valid UTF-8 sequence, but can be an arbitrary byte sequence that doesn’t conform to that format. As a result, the [`data`](fsfilename/data.md) property always contains a value, but the [`string`](fsfilename/string.md) property may be empty. An `FSModule` can receive an `FSFileName` that isn’t valid UTF-8 in two cases:
+A filename is usually a valid UTF-8 sequence, but can be an arbitrary byte sequence that doesn’t conform to that format. As a result, the [`data`](./fsfilename/data.md) property always contains a value, but the [`string`](./fsfilename/string.md) property may be empty. An `FSModule` can receive an `FSFileName` that isn’t valid UTF-8 in two cases:
 
 1. A program passes erroneous data to a system call. The `FSModule` treats this situation as an error.
-2. An `FSModule` lacks the character encoding used for a file name. This situation occurs because some file system formats consider a filename to be an arbitrary “bag of bytes,” and leave character encoding up to the operating system. Without encoding information, the `FSModule` can only pass back the names it finds on disk. In this case, the behavior of upper layers such as [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) is unspecified. However, the `FSModule` must support looking up such names and using them as the source name of rename operations. The `FSModule` must also be able to support filenames that are derivatives of filenames returned from directory enumeration. Derivative filenames include Apple Double filenames (`"._Name"`), and editor backup filenames.
+2. An `FSModule` lacks the character encoding used for a file name. This situation occurs because some file system formats consider a filename to be an arbitrary “bag of bytes,” and leave character encoding up to the operating system. Without encoding information, the `FSModule` can only pass back the names it finds on disk. In this case, the behavior of upper layers such as [`FileManager`](../Foundation/filemanager.md) is unspecified. However, the `FSModule` must support looking up such names and using them as the source name of rename operations. The `FSModule` must also be able to support filenames that are derivatives of filenames returned from directory enumeration. Derivative filenames include Apple Double filenames (`"._Name"`), and editor backup filenames.
 
 > ❗ **Important**: Don’t subclass this class.
 
 ## Topics
 
 ### Creating a filename
-- [convenience init(bytes: UnsafeBufferPointer<CChar>)](fsfilename/init(bytes:).md)
-- [convenience init(cString: UnsafeBufferPointer<CChar>)](fsfilename/init(cstring:).md)
-- [convenience init(data: Data)](fsfilename/init(data:).md)
+- [convenience init(bytes: UnsafeBufferPointer<CChar>)](./fsfilename/init%28bytes%29.md)
+- [convenience init(cString: UnsafeBufferPointer<CChar>)](./fsfilename/init%28cstring%29.md)
+- [convenience init(data: Data)](./fsfilename/init%28data%29.md)
   Creates a filename by copying a character sequence data object.
-- [convenience init(string: String)](fsfilename/init(string:).md)
+- [convenience init(string: String)](./fsfilename/init%28string%29.md)
   Creates a filename by copying a character sequence from a string instance.
 ### Accessing filename properties
-- [var data: Data](fsfilename/data.md)
+- [var data: Data](./fsfilename/data.md)
   The byte sequence of the filename, as a data object.
-- [var string: String?](fsfilename/string.md)
+- [var string: String?](./fsfilename/string.md)
   The filename, represented as a Unicode string.
-- [var debugDescription: String](fsfilename/debugdescription.md)
+- [var debugDescription: String](./fsfilename/debugdescription.md)
   The filename, represented as a potentially lossy conversion to a string.
 ### Initializers
-- [init?(coder: NSCoder)](fsfilename/init(coder:).md)
+- [init?(coder: NSCoder)](./fsfilename/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class FSUnaryFileSystem](fsunaryfilesystem.md)
+### File systems
+- [class FSUnaryFileSystem](./fsunaryfilesystem.md)
   An abstract base class for implementing a minimal file system.
-- [protocol FSFileSystemBase](fsfilesystembase.md)
+- [protocol FSFileSystemBase](./fsfilesystembase.md)
   A protocol containing functionality supplied by FSKit to file system implementations.
 
 

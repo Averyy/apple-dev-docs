@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Insert elements at the end of an identified parent menu.
@@ -17,6 +18,10 @@ Insert elements at the end of an identified parent menu.
 
 ```swift
 func insertElements(_ childElements: [UIMenuElement], atEndOfMenu parentIdentifier: UIMenu.Identifier)
+```
+
+```objc
+- (void) insertElements:(NSArray<UIMenuElement *> *) childElements atEndOfMenuForIdentifier:(UIMenuIdentifier) parentIdentifier;
 ```
 
 ## Parameters

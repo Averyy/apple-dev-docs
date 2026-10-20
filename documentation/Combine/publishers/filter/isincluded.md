@@ -1,7 +1,8 @@
 # isIncluded
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that indicates whether to republish an element.
 
@@ -22,7 +23,8 @@ let isIncluded: (Upstream.Output) -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/filter/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

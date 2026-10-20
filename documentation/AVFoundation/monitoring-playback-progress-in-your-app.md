@@ -1,18 +1,19 @@
 # Monitoring playback progress in your app
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Observe the playback of a media asset to update your app’s user-interface state.
 
 #### Overview
 
-Media playback apps commonly need to monitor playback progress to drive the state of player UI or perform other actions. Monitoring this state requires a higher level of time precision than key-value observing can deliver, so [`AVPlayer`](avplayer.md) provides specific API to observe playback time. This article describes how you can observe this state at regular intervals or as playback crosses specific time boundaries.
+Media playback apps commonly need to monitor playback progress to drive the state of player UI or perform other actions. Monitoring this state requires a higher level of time precision than key-value observing can deliver, so [`AVPlayer`](./avplayer.md) provides specific API to observe playback time. This article describes how you can observe this state at regular intervals or as playback crosses specific time boundaries.
 
-##### Observe the Current Playback Time at Regular Intervals
+##### Observe the current playback time at regular intervals
 
 The most common way to observe a player’s current time is at regular intervals. Observing it this way is useful when driving the state of a time display in a player’s user interface.
 
-To observe the player’s current time at regular intervals, call its [`addPeriodicTimeObserver(forInterval:queue:using:)`](avplayer/addperiodictimeobserver(forinterval:queue:using:).md) method. This method takes a [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value that represents the interval at which to observe the time, a serial dispatch queue, and a callback that the player invokes at the specified time interval. The following example adds an observer that the player calls every half-second during normal playback:
+To observe the player’s current time at regular intervals, call its [`addPeriodicTimeObserver(forInterval:queue:using:)`](./avplayer/addperiodictimeobserver%28forinterval,queue,using%29.md) method. This method takes a [`CMTime`](../CoreMedia/cmtime.md) value that represents the interval at which to observe the time, a serial dispatch queue, and a callback that the player invokes at the specified time interval. The following example adds an observer that the player calls every half-second during normal playback:
 
 ```swift
 @Published private(set) var duration: TimeInterval = 0.0
@@ -42,13 +43,13 @@ private func removePeriodicTimeObserver() {
 }
 ```
 
-Always pair a call to the player’s [`addPeriodicTimeObserver(forInterval:queue:using:)`](avplayer/addperiodictimeobserver(forinterval:queue:using:).md) method with a call to [`removeTimeObserver(_:)`](avplayer/removetimeobserver(_:).md) when you’re finished monitoring the state. Failing to observe this rule results in undefined behavior.
+Always pair a call to the player’s [`addPeriodicTimeObserver(forInterval:queue:using:)`](./avplayer/addperiodictimeobserver%28forinterval,queue,using%29.md) method with a call to [`removeTimeObserver(_:)`](./avplayer/removetimeobserver%28_%29.md) when you’re finished monitoring the state. Failing to observe this rule results in undefined behavior.
 
-##### Observe the Playback of Specific Times Within a Media Presentation
+##### Observe the playback of specific times within a media presentation
 
 Another way to observe the player is when it crosses specific times boundaries during playback. You can respond to the passage of these times by updating your player UI or performing other actions.
 
-To have the player notify your app as it cross specific points in the media timeline, call the player’s [`addBoundaryTimeObserver(forTimes:queue:using:)`](avplayer/addboundarytimeobserver(fortimes:queue:using:).md) method. This method takes an array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects that wrap [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) values that define your boundary times, a serial dispatch queue, and a callback closure. The following example shows how to define boundary times for each quarter of playback:
+To have the player notify your app as it cross specific points in the media timeline, call the player’s [`addBoundaryTimeObserver(forTimes:queue:using:)`](./avplayer/addboundarytimeobserver%28fortimes,queue,using%29.md) method. This method takes an array of [`NSValue`](../Foundation/nsvalue.md) objects that wrap [`CMTime`](../CoreMedia/cmtime.md) values that define your boundary times, a serial dispatch queue, and a callback closure. The following example shows how to define boundary times for each quarter of playback:
 
 ```swift
 /// Adds an observer of the player traversing specific times during standard playback.
@@ -78,15 +79,16 @@ private func addBoundaryTimeObserver() async throws {
 }
 ```
 
-If you add either a periodic or boundary time observer, you need to remove observation by calling [`removeTimeObserver(_:)`](avplayer/removetimeobserver(_:).md) when complete.
+If you add either a periodic or boundary time observer, you need to remove observation by calling [`removeTimeObserver(_:)`](./avplayer/removetimeobserver%28_%29.md) when complete.
 
 ## See Also
 
-- [Using HEVC video with alpha](using-hevc-video-with-alpha.md)
+### Presentation
+- [Using HEVC video with alpha](./using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
-- [class AVPlayerLayer](avplayerlayer.md)
+- [class AVPlayerLayer](./avplayerlayer.md)
   An object that presents the visual contents of a player object.
-- [class AVSynchronizedLayer](avsynchronizedlayer.md)
+- [class AVSynchronizedLayer](./avsynchronizedlayer.md)
   A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback.
 
 

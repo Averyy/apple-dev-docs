@@ -1,24 +1,26 @@
 # kSCSIParallelFeature_NegotitiationUnchanged
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A result that indicates the controller negotiation state didn’t change.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelFeature_NegotitiationUnchanged
 ```
 
 ## See Also
 
-- [kSCSIParallelFeature_NegotitiationSuccess](scsiparallelfeatureresult/kscsiparallelfeature_negotitiationsuccess.md)
+### Results
+- [kSCSIParallelFeature_NegotitiationSuccess](./kscsiparallelfeature_negotitiationsuccess.md)
   A result that indicates the controller negotiated successfully.
-- [kSCSIParallelFeature_NegotitiationCleared](scsiparallelfeatureresult/kscsiparallelfeature_negotitiationcleared.md)
+- [kSCSIParallelFeature_NegotitiationCleared](./kscsiparallelfeature_negotitiationcleared.md)
   A result that indicates the controller cleared negotiation.
 
 

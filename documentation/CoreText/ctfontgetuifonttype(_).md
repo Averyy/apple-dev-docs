@@ -1,7 +1,8 @@
 # CTFontGetUIFontType(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func CTFontGetUIFontType(_ font: CTFont) -> CTFontUIFontType
+```
+
+```c
+extern CTFontUIFontType CTFontGetUIFontType(CTFontRef font);
 ```
 
 #### Discussion

@@ -1,18 +1,21 @@
 # BNNSDirectApplyActivationBatch(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies an activation filter to a set of input objects, writing out the result to a set of output objects.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Applies an activation filter to a set of input objects, writing out the result t
 func BNNSDirectApplyActivationBatch(_ layer_params: UnsafePointer<BNNSLayerParametersActivation>, _ filter_params: UnsafePointer<BNNSFilterParameters>?, _ batch_size: Int, _ in_stride: Int, _ out_stride: Int) -> Int32
 ```
 
+```c
+int BNNSDirectApplyActivationBatch(const BNNSLayerParametersActivation *layer_params, const BNNSFilterParameters *filter_params, size_t batch_size, size_t in_stride, size_t out_stride);
+```
+
 #### Discussion
 
-Calling this function is equal to calling [`BNNSFilterCreateLayerActivation(_:_:)`](bnnsfiltercreatelayeractivation(_:_:).md), [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](bnnsfilterapplybatch(_:_:_:_:_:_:).md), and [`BNNSFilterDestroy(_:)`](bnnsfilterdestroy(_:).md).
+Calling this function is equal to calling [`BNNSFilterCreateLayerActivation(_:_:)`](./bnnsfiltercreatelayeractivation%28_,_%29.md), [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](./bnnsfilterapplybatch%28_,_,_,_,_,_%29.md), and [`BNNSFilterDestroy(_:)`](./bnnsfilterdestroy%28_%29.md).
 
 ## Parameters
 
@@ -34,20 +41,21 @@ Calling this function is equal to calling [`BNNSFilterCreateLayerActivation(_:_:
 
 ## See Also
 
-- [func BNNSFilterCreateVectorActivationLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatevectoractivationlayer(_:_:_:_:).md)
-- [class ActivationLayer](bnns/activationlayer.md)
+### Activation layers
+- [func BNNSFilterCreateVectorActivationLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatevectoractivationlayer%28_,_,_,_%29.md)
+- [class ActivationLayer](./bnns/activationlayer.md)
   A layer object that wraps an activation filter and manages its deinitialization.
-- [struct BNNSActivationFunction](bnnsactivationfunction.md)
+- [struct BNNSActivationFunction](./bnnsactivationfunction.md)
   Constants that describe activation functions.
-- [struct BNNSActivation](bnnsactivation.md)
+- [struct BNNSActivation](./bnnsactivation.md)
   A set of parameters that describe common activation functions.
-- [struct BNNSLayerParametersActivation](bnnslayerparametersactivation.md)
+- [struct BNNSLayerParametersActivation](./bnnslayerparametersactivation.md)
   A set of parameters that define an activation layer.
-- [func BNNSFilterCreateLayerActivation(UnsafePointer<BNNSLayerParametersActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayeractivation(_:_:).md)
+- [func BNNSFilterCreateLayerActivation(UnsafePointer<BNNSLayerParametersActivation>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayeractivation%28_,_%29.md)
   Returns a new activation layer.
-- [static func applyActivation(activation: BNNS.ActivationFunction, axes: [Int], input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](bnns/applyactivation(activation:axes:input:output:batchsize:filterparameters:).md)
+- [static func applyActivation(activation: BNNS.ActivationFunction, axes: [Int], input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](./bnns/applyactivation%28activation,axes,input,output,batchsize,filterparameters%29.md)
   Applies an activation function on the specified axes.
-- [static func applyActivation(activation: BNNS.ActivationFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](bnns/applyactivation(activation:input:output:batchsize:filterparameters:).md)
+- [static func applyActivation(activation: BNNS.ActivationFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, batchSize: Int, filterParameters: BNNSFilterParameters?) throws](./bnns/applyactivation%28activation,input,output,batchsize,filterparameters%29.md)
   Applies the specified activation function.
 
 

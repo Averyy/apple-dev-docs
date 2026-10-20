@@ -1,7 +1,8 @@
 # MTRPM10ConcentrationMeasurementMeasurementUnit.UGM3
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 case UGM3
+```
+
+```c
+MTRPM10ConcentrationMeasurementMeasurementUnitUGM3
 ```
 
 

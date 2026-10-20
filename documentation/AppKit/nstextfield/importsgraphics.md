@@ -1,12 +1,13 @@
 # importsGraphics
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the user can drag image files into the text field.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that controls whether the user can drag image files into the tex
 var importsGraphics: Bool { get set }
 ```
 
+```objc
+@property BOOL importsGraphics;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field accepts dragged images; if [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t. You can add images programmatically regardless of this setting.
+If [`true`](../../Swift/true.md), the text field accepts dragged images; if [`false`](../../Swift/false.md), it doesn’t. You can add images programmatically regardless of this setting.
 
 ## See Also
 
-- [var allowsEditingTextAttributes: Bool](nstextfield/allowseditingtextattributes.md)
+### Controlling rich text behavior
+- [var allowsEditingTextAttributes: Bool](./allowseditingtextattributes.md)
   A Boolean value that controls whether the user can change font attributes of the text field’s string.
 
 

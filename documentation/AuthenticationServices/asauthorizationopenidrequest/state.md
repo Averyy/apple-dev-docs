@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Data that’s returned to you unmodified in the corresponding credential after a successful authentication.
 
@@ -18,6 +19,10 @@ Data that’s returned to you unmodified in the corresponding credential after a
 
 ```swift
 var state: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * state;
 ```
 
 

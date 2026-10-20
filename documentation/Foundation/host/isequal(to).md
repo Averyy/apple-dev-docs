@@ -1,12 +1,15 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the receiver represents the same host as another `NSHost` object.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use Network framework instead, see deprecation notice in <Foundation/NSHost.h>
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Indicates whether the receiver represents the same host as another `NSHost` obje
 func isEqual(to aHost: Host) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToHost:(NSHost *) aHost;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the receiver and `host` share at least one network address; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) when the receiver and `host` share at least one network address; [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 
@@ -24,7 +31,8 @@ func isEqual(to aHost: Host) -> Bool
 
 ## See Also
 
-- [var addresses: [String]](host/addresses.md)
+### Related Documentation
+- [var addresses: [String]](./addresses.md)
   Returns all the network addresses of the receiver.
 
 

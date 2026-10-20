@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Mutes the audio output for the specified device.
@@ -20,11 +21,11 @@ func muteDevice(_ device: MediaOutputDevice)
 
 #### Discussion
 
-Called when a device reports `true` for [`canMute`](mediaoutputdevice/canmute.md).
+Called when a device reports `true` for [`canMute`](../mediaoutputdevice/canmute.md).
 
 #### Grouping
 
-For a group of devices, individual device volume mute should influence the group mute. For a group of devices, all devices in the group must report `true` for [`canMute`](mediaoutputdevice/canmute.md).
+For a group of devices, individual device volume mute should influence the group mute. For a group of devices, all devices in the group must report `true` for [`canMute`](../mediaoutputdevice/canmute.md).
 
 ## Parameters
 

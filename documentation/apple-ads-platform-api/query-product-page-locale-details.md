@@ -1,7 +1,8 @@
 # Query Product Page Locale Details
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Queries the localized content associated with a custom product page.
 
@@ -16,7 +17,7 @@ To preview how a product page creative will appear across different locales befo
 
 The endpoint requires a filter on `productPageId`. Omitting the `languageCode` filter returns locale details for all supported languages of the product page. Add a `languageCode` filter to retrieve a specific locale.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -28,7 +29,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `language` | string | `EQUALS` |  | Filter to a specific language identifier, such as `en`, `fr`, or `yue`. |
 | `languageCode` | string | `EQUALS` |  | Filter to a specific locale, such as `en-US`, `fr-FR`, or `zh-Hans`. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 Keep the following constraints in mind when querying locale details:
 
@@ -198,19 +199,34 @@ Keep the following constraints in mind when querying locale details:
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-See [`QueryRequest`](queryrequest.md).
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+See [`QueryRequest`](./queryrequest.md).
+
+## Responses
+
+- `200` OK (`ProductPageLocaleDetailsQueryResponse`, `application/json`)
+- `400` Bad Request (`ProductPageLocaleDetailsQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Product Pages](query-product-pages.md)
+- [Query Product Pages](./query-product-pages.md)
   Queries App Store product pages available to your account.
-- [Get Product Page by ID](get-product-page-by-id.md)
+- [Get Product Page by ID](./get-product-page-by-id.md)
   Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
-- [Query App Locale Details](query-default-product-page-locale-details-by-adam-id.md)
+- [Query App Locale Details](./query-default-product-page-locale-details-by-adam-id.md)
   Return the default product page locale details for an app identified by its adamId.
 
 

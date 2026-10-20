@@ -1,7 +1,8 @@
 # useClientPointer
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that instructs the filter to use pointers to data you provide at creation time.
 
@@ -11,7 +12,7 @@ A flag that instructs the filter to use pointers to data you provide at creation
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ Set this flag to instruct the filter to keep the pointers you provide at creatio
 
 If not set, the filter creation function allocates buffers and keeps an internal copy of the data. In that case, you don’t have to keep the pointers valid after the you’ve created the filter.
 
-The following code returns a convolution layer with [`useClientPointer`](bnnsflags/useclientpointer.md) set:
+The following code returns a convolution layer with [`useClientPointer`](./useclientpointer.md) set:
 
 ```swift
 let weights: [Float] = [ ... ]
@@ -78,7 +79,7 @@ let convolutionLayer = weights.withUnsafeBufferPointer { weightsPtr -> BNNSFilte
 }
 ```
 
-If either `weights` or `bias` mutate before calling [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](bnnsfilterapplybatch(_:_:_:_:_:_:).md), the filter uses the new values. However, the convolution layer works with its internal copies of weights and bias if you pass a `flags` of `0`, and subsequent changes have no effect.
+If either `weights` or `bias` mutate before calling [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](../bnnsfilterapplybatch%28_,_,_,_,_,_%29.md), the filter uses the new values. However, the convolution layer works with its internal copies of weights and bias if you pass a `flags` of `0`, and subsequent changes have no effect.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(traitCollection:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -14,6 +15,10 @@
 
 ```swift
 convenience init(traitCollection: UITraitCollection?)
+```
+
+```objc
++ (instancetype) configurationWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
 

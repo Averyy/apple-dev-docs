@@ -1,12 +1,15 @@
 # dock
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The level for the dock.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Deprecated. There is no replacement.
 
 ## Declaration
 
@@ -14,25 +17,30 @@ The level for the dock.
 static var dock: NSWindow.Level { get }
 ```
 
+```c
+static const NSWindowLevel NSDockWindowLevel;
+```
+
 ## See Also
 
-- [static var floating: NSWindow.Level](nswindow/level-swift.struct/floating.md)
+### Constants
+- [static var floating: NSWindow.Level](./floating.md)
   Useful for floating palettes.
-- [static var mainMenu: NSWindow.Level](nswindow/level-swift.struct/mainmenu.md)
+- [static var mainMenu: NSWindow.Level](./mainmenu.md)
   Reserved for the application’s main menu.
-- [static var modalPanel: NSWindow.Level](nswindow/level-swift.struct/modalpanel.md)
+- [static var modalPanel: NSWindow.Level](./modalpanel.md)
   The level for a modal panel.
-- [static var normal: NSWindow.Level](nswindow/level-swift.struct/normal.md)
+- [static var normal: NSWindow.Level](./normal.md)
   The default level for `NSWindow` objects.
-- [static var popUpMenu: NSWindow.Level](nswindow/level-swift.struct/popupmenu.md)
+- [static var popUpMenu: NSWindow.Level](./popupmenu.md)
   The level for a pop-up menu.
-- [static var screenSaver: NSWindow.Level](nswindow/level-swift.struct/screensaver.md)
+- [static var screenSaver: NSWindow.Level](./screensaver.md)
   The level for a screen saver.
-- [static var statusBar: NSWindow.Level](nswindow/level-swift.struct/statusbar.md)
+- [static var statusBar: NSWindow.Level](./statusbar.md)
   The level for a status window.
-- [static var submenu: NSWindow.Level](nswindow/level-swift.struct/submenu.md)
+- [static var submenu: NSWindow.Level](./submenu.md)
   Reserved for submenus. Synonymous with `NSTornOffMenuWindowLevel`, which is preferred.
-- [static var tornOffMenu: NSWindow.Level](nswindow/level-swift.struct/tornoffmenu.md)
+- [static var tornOffMenu: NSWindow.Level](./tornoffmenu.md)
   The level for a torn-off menu. Synonymous with `NSSubmenuWindowLevel`.
 
 

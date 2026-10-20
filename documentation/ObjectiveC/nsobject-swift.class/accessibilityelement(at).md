@@ -1,20 +1,25 @@
 # accessibilityElement(at:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func accessibilityElement(at index: Int) -> Any?
+```
+
+```objc
+- (id) accessibilityElementAtIndex:(NSInteger) index;
 ```
 
 

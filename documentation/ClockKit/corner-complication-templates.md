@@ -1,6 +1,7 @@
 # Corner complication templates
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: API Collection
 
 Display graphically rich data in the watch face’s corner.
 
@@ -8,42 +9,43 @@ Display graphically rich data in the watch face’s corner.
 
 The graphic corner templates display gauges, images, and text in the watch face’s corner.
 
-![An illustration of templates in all four corners, including curved text and gauges.](/images/com.apple.clockkit/media-3744078@2x.png)
+![An illustration of templates in all four corners, including curved text and gauges.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3744078@2x.png)
 
 The tinted versions of the templates are shown below:
 
-![An illustration that shows tinted versions of templates in all four corners, including curved text and gauges.](/images/com.apple.clockkit/media-3744091@2x.png)
+![An illustration that shows tinted versions of templates in all four corners, including curved text and gauges.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3744091@2x.png)
 
 ## Topics
 
 ### Text and image
-- [class CLKComplicationTemplateGraphicCornerCircularImage](clkcomplicationtemplategraphiccornercircularimage.md)
+- [class CLKComplicationTemplateGraphicCornerCircularImage](./clkcomplicationtemplategraphiccornercircularimage.md)
   A template for displaying an image in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerCircularView](clkcomplicationtemplategraphiccornercircularview.md)
+- [class CLKComplicationTemplateGraphicCornerCircularView](./clkcomplicationtemplategraphiccornercircularview.md)
   A template for displaying a SwiftUI view in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerStackText](clkcomplicationtemplategraphiccornerstacktext.md)
+- [class CLKComplicationTemplateGraphicCornerStackText](./clkcomplicationtemplategraphiccornerstacktext.md)
   A template for displaying stacked text in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerTextImage](clkcomplicationtemplategraphiccornertextimage.md)
+- [class CLKComplicationTemplateGraphicCornerTextImage](./clkcomplicationtemplategraphiccornertextimage.md)
   A template for displaying an image and text in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerTextView](clkcomplicationtemplategraphiccornertextview.md)
+- [class CLKComplicationTemplateGraphicCornerTextView](./clkcomplicationtemplategraphiccornertextview.md)
   A template for displaying a SwiftUI view and text in the clock face’s corner.
 ### Gauges
-- [class CLKComplicationTemplateGraphicCornerGaugeImage](clkcomplicationtemplategraphiccornergaugeimage.md)
+- [class CLKComplicationTemplateGraphicCornerGaugeImage](./clkcomplicationtemplategraphiccornergaugeimage.md)
   A template for displaying an image and a gauge in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerGaugeView](clkcomplicationtemplategraphiccornergaugeview.md)
+- [class CLKComplicationTemplateGraphicCornerGaugeView](./clkcomplicationtemplategraphiccornergaugeview.md)
   A template for displaying a SwiftUI view and a gauge in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerGaugeText](clkcomplicationtemplategraphiccornergaugetext.md)
+- [class CLKComplicationTemplateGraphicCornerGaugeText](./clkcomplicationtemplategraphiccornergaugetext.md)
   A template for displaying text and a gauge in the clock face’s corner.
 
 ## See Also
 
-- [Circular complication templates](circular-complication-templates.md)
+### Graphic template families
+- [Circular complication templates](./circular-complication-templates.md)
   Display graphical data in a compact circle.
-- [Rectangular complication templates.](rectangular-complication-templates.md)
+- [Rectangular complication templates.](./rectangular-complication-templates.md)
   Displays large, rectangular complications for charts, images, or multiple lines of text.
-- [Extra large circular templates](extra-large-circular-templates.md)
+- [Extra large circular templates](./extra-large-circular-templates.md)
   Display large, easy-to-read content on the X-Large watch face.
-- [class CLKComplicationTemplateGraphicBezelCircularText](clkcomplicationtemplategraphicbezelcirculartext.md)
+- [class CLKComplicationTemplateGraphicBezelCircularText](./clkcomplicationtemplategraphicbezelcirculartext.md)
   A template for displaying a circular complication with text along the bezel.
 
 

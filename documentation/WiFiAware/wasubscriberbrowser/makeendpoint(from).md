@@ -1,7 +1,8 @@
 # makeEndpoint(from:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a connectable Wi-Fi Aware endpoint from a browse result.
 
@@ -22,7 +23,7 @@ A `WAEndpoint` that you can connect to, or `nil` if it can’t be created.
 
 #### Discussion
 
-> **Note**: An error if the result isn’t valid.
+> **Throws**: An error if the result isn’t valid.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ A `WAEndpoint` that you can connect to, or `nil` if it can’t be created.
 
 ## See Also
 
-- [func makeDescriptor() -> NWBrowser.Descriptor](wasubscriberbrowser/makedescriptor.md)
+### Creating browser implementation details
+- [func makeDescriptor() -> NWBrowser.Descriptor](./makedescriptor%28%29.md)
   Makes a descriptor that can create a network browser for a Wi-Fi Aware subscribe operation.
-- [func configureParameters(NWParameters?) -> NWParameters](wasubscriberbrowser/configureparameters(_:).md)
+- [func configureParameters(NWParameters?) -> NWParameters](./configureparameters%28_%29.md)
   Returns the parameters to use to configure the Wi-Fi Aware subscriber and the subsequent connection.
 
 

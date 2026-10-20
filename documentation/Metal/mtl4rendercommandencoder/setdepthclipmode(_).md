@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Controls the behavior for fragments outside of the near or far planes.
@@ -20,21 +21,26 @@ Controls the behavior for fragments outside of the near or far planes.
 func setDepthClipMode(_ depthClipMode: MTLDepthClipMode)
 ```
 
+```objc
+- (void) setDepthClipMode:(MTLDepthClipMode) depthClipMode;
+```
+
 ## Parameters
 
-- `depthClipMode`: [`MTLDepthClipMode`](mtldepthclipmode.md) to set.
+- `depthClipMode`: [`MTLDepthClipMode`](../mtldepthclipmode.md) to set.
 
 ## See Also
 
-- [func setDepthStencilState((any MTLDepthStencilState)?)](mtl4rendercommandencoder/setdepthstencilstate(_:).md)
+### Configuring depth and stencil behavior
+- [func setDepthStencilState((any MTLDepthStencilState)?)](./setdepthstencilstate%28_%29.md)
   Configures this encoder with a depth stencil state that applies to your subsequent draw commands.
-- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtl4rendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](./setdepthbias%28_,slopescale,clamp%29.md)
   Configures the adjustments a render pass applies to depth values from fragment shader functions by a scaling factor and bias.
-- [func setDepthTestBounds(ClosedRange<Float>)](mtl4rendercommandencoder/setdepthtestbounds(_:).md)
+- [func setDepthTestBounds(ClosedRange<Float>)](./setdepthtestbounds%28_%29.md)
   Configures the range for depth bounds testing.
-- [func setStencilReferenceValue(UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(_:).md)
+- [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures this encoder with a reference value for stencil testing.
-- [func setStencilReferenceValue(front: UInt32, back: UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(front:back:).md)
+- [func setStencilReferenceValue(front: UInt32, back: UInt32)](./setstencilreferencevalue%28front,back%29.md)
   Configures the encoder with different stencil test reference values for front-facing and back-facing primitives.
 
 

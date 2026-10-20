@@ -1,7 +1,8 @@
 # init(description:default:requestValueDialog:inputConnectionBehavior:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter.
 ```swift
 convenience init(description: LocalizedStringResource? = nil, default defaultValue: [Value.ValueType?], requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default)
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, `Value.UnwrappedType` conforms to `Collection`, and `Value.ValueType` is `URL`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # UITabAccessory.Environment.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The trait collection is from a view that is not in an active tab accessory environment.
 
@@ -14,6 +15,10 @@ The trait collection is from a view that is not in an active tab accessory envir
 
 ```swift
 case none
+```
+
+```c
+UITabAccessoryEnvironmentNone
 ```
 
 

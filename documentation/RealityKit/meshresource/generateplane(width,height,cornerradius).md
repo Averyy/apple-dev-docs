@@ -1,7 +1,8 @@
 # generatePlane(width:height:cornerRadius:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new rectangle mesh with the specified dimensions in the entity’s xy-plane.
 
@@ -11,7 +12,7 @@ Creates a new rectangle mesh with the specified dimensions in the entity’s xy-
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -38,7 +39,8 @@ The rectangle is centered at the entity’s origin and aligned with its x and y 
 
 ## See Also
 
-- [static func generatePlane(width: Float, depth: Float, cornerRadius: Float) -> MeshResource](meshresource/generateplane(width:depth:cornerradius:).md)
+### Creating a plane
+- [static func generatePlane(width: Float, depth: Float, cornerRadius: Float) -> MeshResource](./generateplane%28width,depth,cornerradius%29.md)
   Creates a new rectangle mesh with the specified dimensions in the entity’s xz-plane.
 
 

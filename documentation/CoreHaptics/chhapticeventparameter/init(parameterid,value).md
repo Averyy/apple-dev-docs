@@ -1,7 +1,8 @@
 # init(parameterID:value:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a haptic event parameter from its ID and value.
 
@@ -19,6 +20,10 @@ Creates a haptic event parameter from its ID and value.
 init(parameterID: CHHapticEvent.ParameterID, value: Float)
 ```
 
+```objc
+- (instancetype) initWithParameterID:(CHHapticEventParameterID) parameterID value:(float) value;
+```
+
 ## Parameters
 
 - `parameterID`: The ID indicating the type of the event parameter.
@@ -26,7 +31,8 @@ init(parameterID: CHHapticEvent.ParameterID, value: Float)
 
 ## See Also
 
-- [CHHapticEvent.ParameterID](chhapticevent/parameterid.md)
+### Creating an Event Parameter
+- [CHHapticEvent.ParameterID](../chhapticevent/parameterid.md)
   An identifier for an event parameter.
 
 

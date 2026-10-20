@@ -1,17 +1,18 @@
 # CompleteInputReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the results of an asynchronous request for an input report.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteInputReport(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
@@ -27,21 +28,22 @@ If an asynchronous request for an input report was successful, this method handl
 
 ## See Also
 
-- [newReportDescriptor](iouserusbhosthiddevice/newreportdescriptor.md)
+### Managing Device Reports
+- [newReportDescriptor](./newreportdescriptor.md)
   Returns the data in the HID device’s report descriptor.
-- [getReport](iouserusbhosthiddevice/getreport-6stqs.md)
+- [getReport](./getreport-6stqs.md)
   Gets a report from the HID device.
-- [getReport](iouserusbhosthiddevice/getreport-2v8zk.md)
+- [getReport](./getreport-2v8zk.md)
   Gets a report from the HID device.
-- [setReport](iouserusbhosthiddevice/setreport.md)
+- [setReport](./setreport.md)
   Sends a report to the HID device.
-- [initInputReport](iouserusbhosthiddevice/initinputreport.md)
+- [initInputReport](./initinputreport.md)
   Starts reading the input report from the device.
-- [scheduleInputReportRetry](iouserusbhosthiddevice/scheduleinputreportretry.md)
+- [scheduleInputReportRetry](./scheduleinputreportretry.md)
   Retries a previous request for an input report.
-- [cancelInputReportRetry](iouserusbhosthiddevice/cancelinputreportretry.md)
+- [cancelInputReportRetry](./cancelinputreportretry.md)
   Cancels a retry attempt for an input report request.
-- [TimerOccurred](iouserusbhosthiddevice/timeroccurred.md)
+- [TimerOccurred](./timeroccurred.md)
   Handles timeout-related actions when retrying input report requests.
 
 

@@ -1,7 +1,8 @@
 # GLclampf
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLclampf = Float
+```
+
+```c
+typedef float GLclampf;
 ```
 
 

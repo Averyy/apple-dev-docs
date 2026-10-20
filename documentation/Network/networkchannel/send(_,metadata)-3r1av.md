@@ -1,7 +1,8 @@
 # send(_:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send binary frame on a WebSocket connection.
 
@@ -19,6 +20,8 @@ Send binary frame on a WebSocket connection.
 ```swift
 func send<Content>(_ content: Content, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws where Content : DataProtocol
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

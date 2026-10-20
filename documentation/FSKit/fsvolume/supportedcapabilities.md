@@ -1,7 +1,8 @@
 # FSVolume.SupportedCapabilities
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
 
@@ -14,80 +15,85 @@ A type that represents capabilities supported by a volume, such as hard and symb
 class SupportedCapabilities
 ```
 
+```objc
+@interface FSVolumeSupportedCapabilities : NSObject
+```
+
 ## Topics
 
 ### Declaring identifier capabilities
-- [var supportsPersistentObjectIDs: Bool](fsvolume/supportedcapabilities/supportspersistentobjectids.md)
+- [var supportsPersistentObjectIDs: Bool](./supportedcapabilities/supportspersistentobjectids.md)
   A Boolean property that indicates whether the volume supports persistent object identifiers and can look up file system objects by their IDs.
-- [var supports64BitObjectIDs: Bool](fsvolume/supportedcapabilities/supports64bitobjectids.md)
+- [var supports64BitObjectIDs: Bool](./supportedcapabilities/supports64bitobjectids.md)
   A Boolean property that indicates whether the volume supports 64-bit object IDs.
-- [var supportsDocumentID: Bool](fsvolume/supportedcapabilities/supportsdocumentid.md)
+- [var supportsDocumentID: Bool](./supportedcapabilities/supportsdocumentid.md)
   A Boolean property that indicates whether the volume supports document IDs for document revisions.
 ### Declaring linking capabilities
-- [var supportsSymbolicLinks: Bool](fsvolume/supportedcapabilities/supportssymboliclinks.md)
+- [var supportsSymbolicLinks: Bool](./supportedcapabilities/supportssymboliclinks.md)
   A Boolean property that indicates whether the volume supports symbolic links.
-- [var supportsHardLinks: Bool](fsvolume/supportedcapabilities/supportshardlinks.md)
+- [var supportsHardLinks: Bool](./supportedcapabilities/supportshardlinks.md)
   A Boolean property that indicates whether the volume supports hard links.
 ### Declaring journaling capabilities
-- [var supportsJournal: Bool](fsvolume/supportedcapabilities/supportsjournal.md)
+- [var supportsJournal: Bool](./supportedcapabilities/supportsjournal.md)
   A Boolean property that indicates whether the volume supports a journal used to speed recovery in case of unplanned restart, such as a power outage or crash.
-- [var supportsActiveJournal: Bool](fsvolume/supportedcapabilities/supportsactivejournal.md)
+- [var supportsActiveJournal: Bool](./supportedcapabilities/supportsactivejournal.md)
   A Boolean property that indicates whether the volume currently uses a journal for speeding recovery after an unplanned shutdown.
 ### Declaring root capabilites
-- [var doesNotSupportRootTimes: Bool](fsvolume/supportedcapabilities/doesnotsupportroottimes.md)
+- [var doesNotSupportRootTimes: Bool](./supportedcapabilities/doesnotsupportroottimes.md)
   A Boolean property that indicates the volume doesn’t store reliable times for the root directory.
 ### Declaring file capabilities
-- [var supportsSparseFiles: Bool](fsvolume/supportedcapabilities/supportssparsefiles.md)
+- [var supportsSparseFiles: Bool](./supportedcapabilities/supportssparsefiles.md)
   A Boolean property that indicates whether the volume supports sparse files.
-- [var supportsZeroRuns: Bool](fsvolume/supportedcapabilities/supportszeroruns.md)
+- [var supportsZeroRuns: Bool](./supportedcapabilities/supportszeroruns.md)
   A Boolean property that indicates whether the volume supports zero runs
-- [var supportsFastStatFS: Bool](fsvolume/supportedcapabilities/supportsfaststatfs.md)
+- [var supportsFastStatFS: Bool](./supportedcapabilities/supportsfaststatfs.md)
   A Boolean property that indicates whether the volume supports fast results when fetching file system statistics.
-- [var supports2TBFiles: Bool](fsvolume/supportedcapabilities/supports2tbfiles.md)
+- [var supports2TBFiles: Bool](./supportedcapabilities/supports2tbfiles.md)
   A Boolean property that indicates whether the volume supports file sizes larger than 4GB, and potentially up to 2TB.
-- [var supportsOpenDenyModes: Bool](fsvolume/supportedcapabilities/supportsopendenymodes.md)
+- [var supportsOpenDenyModes: Bool](./supportedcapabilities/supportsopendenymodes.md)
   A Boolean property that indicates whether the volume supports open deny modes.
-- [var supportsHiddenFiles: Bool](fsvolume/supportedcapabilities/supportshiddenfiles.md)
+- [var supportsHiddenFiles: Bool](./supportedcapabilities/supportshiddenfiles.md)
   A Boolean property that indicates whether the volume supports hidden files.
-- [var doesNotSupportImmutableFiles: Bool](fsvolume/supportedcapabilities/doesnotsupportimmutablefiles.md)
+- [var doesNotSupportImmutableFiles: Bool](./supportedcapabilities/doesnotsupportimmutablefiles.md)
   A Boolean property that indicates the volume doesn’t support immutable files.
-- [var doesNotSupportSettingFilePermissions: Bool](fsvolume/supportedcapabilities/doesnotsupportsettingfilepermissions.md)
+- [var doesNotSupportSettingFilePermissions: Bool](./supportedcapabilities/doesnotsupportsettingfilepermissions.md)
   A Boolean property that indicates the volume doesn’t set file permissions.
 ### Declaring volume capabilities
-- [var supportsSharedSpace: Bool](fsvolume/supportedcapabilities/supportssharedspace.md)
+- [var supportsSharedSpace: Bool](./supportedcapabilities/supportssharedspace.md)
   A Boolean property that indicates whether the volume supports multiple logical file systems that share space in a single “partition.”
-- [var supportsVolumeGroups: Bool](fsvolume/supportedcapabilities/supportsvolumegroups.md)
+- [var supportsVolumeGroups: Bool](./supportedcapabilities/supportsvolumegroups.md)
   A Boolean property that indicates whether the volume supports volume groups.
-- [var doesNotSupportVolumeSizes: Bool](fsvolume/supportedcapabilities/doesnotsupportvolumesizes.md)
+- [var doesNotSupportVolumeSizes: Bool](./supportedcapabilities/doesnotsupportvolumesizes.md)
   A Boolean property that indicates the volume doesn’t support certain volume size reports.
 ### Working with case sensitivity
-- [var caseFormat: FSVolume.CaseFormat](fsvolume/supportedcapabilities/caseformat.md)
+- [var caseFormat: FSVolume.CaseFormat](./supportedcapabilities/caseformat.md)
   A value that indicates the volume’s support for case sensitivity.
-- [FSVolume.CaseFormat](fsvolume/caseformat.md)
+- [FSVolume.CaseFormat](./caseformat.md)
   An enumeration of case-sensitivity support types.
 ### Initializers
-- [init?(coder: NSCoder)](fsvolume/supportedcapabilities/init(coder:).md)
+- [init?(coder: NSCoder)](./supportedcapabilities/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/handler/supportedvolumecapabilities.md)
-- [var volumeStatistics: FSStatFSResult](fsvolume/handler/volumestatistics.md)
+### Inspecting required volume properties
+- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](./handler/supportedvolumecapabilities.md)
+- [var volumeStatistics: FSStatFSResult](./handler/volumestatistics.md)
   A property that provides up-to-date statistics of the volume.
-- [class FSStatFSResult](fsstatfsresult.md)
+- [class FSStatFSResult](../fsstatfsresult.md)
   A type used to report a volume’s statistics.
 
 

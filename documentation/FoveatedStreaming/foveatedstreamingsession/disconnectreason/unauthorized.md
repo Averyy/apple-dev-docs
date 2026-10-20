@@ -1,7 +1,8 @@
 # unauthorized
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A disconnect reason indicating the person denied authorization of the foveated streaming session.
 

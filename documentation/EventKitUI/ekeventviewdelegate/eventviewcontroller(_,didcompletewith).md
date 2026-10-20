@@ -2,6 +2,7 @@
 
 **Framework**: EventKit UI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when closing the event view controller.
@@ -18,14 +19,19 @@ Invoked when closing the event view controller.
 func eventViewController(_ controller: EKEventViewController, didCompleteWith action: EKEventViewAction)
 ```
 
+```objc
+- (void) eventViewController:(EKEventViewController *) controller didCompleteWithAction:(EKEventViewAction) action;
+```
+
 ## Parameters
 
 - `controller`: The event view controller to close.
-- `action`: The action taken to prompt closing the event view controller. See [`EKEventViewAction`](ekeventviewaction.md) for a list of possible values.
+- `action`: The action taken to prompt closing the event view controller. See [`EKEventViewAction`](../ekeventviewaction.md) for a list of possible values.
 
 ## See Also
 
-- [enum EKEventViewAction](ekeventviewaction.md)
+### Responding to the Interface’s Dismissal
+- [enum EKEventViewAction](../ekeventviewaction.md)
   Describes the action taken to close the event view controller.
 
 

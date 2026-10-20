@@ -1,7 +1,8 @@
 # target
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language to translate content into.
 
@@ -19,11 +20,12 @@ var target: Locale.Language?
 
 #### Discussion
 
-If left to its default value of `nil`, the session picks a target language according to the `source` and the person’s [`preferredLanguages`](https://developer.apple.com/documentation/foundation/locale/preferredlanguages). Changing this value cancels the previous tasks and creates a new one.
+If left to its default value of `nil`, the session picks a target language according to the `source` and the person’s [`preferredLanguages`](../../../Foundation/locale/preferredlanguages.md). Changing this value cancels the previous tasks and creates a new one.
 
 ## See Also
 
-- [var source: Locale.Language?](translationsession/configuration/source.md)
+### Specifying translation languages
+- [var source: Locale.Language?](./source.md)
   The language to translate content from.
 
 

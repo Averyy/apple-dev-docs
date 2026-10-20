@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components object by parsing a URL in string form.
 
@@ -20,6 +21,10 @@ Creates a URL components object by parsing a URL in string form.
 init?(string URLString: String)
 ```
 
+```objc
+- (instancetype) initWithString:(NSString *) URLString;
+```
+
 #### Return Value
 
 Returns the initialized URL components object, or `nil` if the URL string could not be parsed.
@@ -30,11 +35,12 @@ Returns the initialized URL components object, or `nil` if the URL string could 
 
 ## See Also
 
-- [init()](nsurlcomponents/init.md)
+### Creating URL components
+- [init()](./init%28%29.md)
   Creates a URL components object with all components left undefined.
-- [init?(string: String, encodingInvalidCharacters: Bool)](nsurlcomponents/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](./init%28url,resolvingagainstbaseurl%29-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
 
 

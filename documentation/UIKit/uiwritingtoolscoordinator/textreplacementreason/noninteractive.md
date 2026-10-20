@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextReplacementReason.noninteractive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to replace the text in your view without animating the change.
 
@@ -17,13 +18,18 @@ An option to replace the text in your view without animating the change.
 case noninteractive
 ```
 
+```c
+UIWritingToolsCoordinatorTextReplacementReasonNoninteractive
+```
+
 #### Discussion
 
 When Writing Tools requests a noninteractive change in your delegate’s `UIWritingToolsCoordinator/Delegate/writingToolsCoordinator(_:replaceRange:inContext:proposedText:reason:animationParameters:completion:)` method, update your view’s text storage without animating the change.
 
 ## See Also
 
-- [UIWritingToolsCoordinator.TextReplacementReason.interactive](uiwritingtoolscoordinator/textreplacementreason/interactive.md)
+### Getting the reasons
+- [UIWritingToolsCoordinator.TextReplacementReason.interactive](./interactive.md)
   An option to animate the replacement of text in your view.
 
 

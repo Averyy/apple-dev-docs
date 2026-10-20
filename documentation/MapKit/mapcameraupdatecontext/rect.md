@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A map rectangle that approximates the view of the map’s camera.
 
@@ -11,7 +12,7 @@ A map rectangle that approximates the view of the map’s camera.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let rect: MKMapRect
 
 ## See Also
 
-- [let camera: MapCamera](mapcameraupdatecontext/camera.md)
+### Accessing information about the camera
+- [let camera: MapCamera](./camera.md)
   The current map camera.
-- [let region: MKCoordinateRegion](mapcameraupdatecontext/region.md)
+- [let region: MKCoordinateRegion](./region.md)
   A map region that approximates the view of the map’s camera.
 
 

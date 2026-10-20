@@ -1,7 +1,8 @@
 # UISemanticContentAttribute.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default value for views.
 
@@ -18,19 +19,24 @@ The default value for views.
 case unspecified
 ```
 
+```c
+UISemanticContentAttributeUnspecified
+```
+
 #### Discussion
 
 The view is flipped when switching between left-to-right and right-to-left layouts.
 
 ## See Also
 
-- [UISemanticContentAttribute.playback](uisemanticcontentattribute/playback.md)
+### Constants
+- [UISemanticContentAttribute.playback](./playback.md)
   A view representing the playback controls, such as Play, Rewind, or Fast Forward buttons or playhead scrubbers.
-- [UISemanticContentAttribute.spatial](uisemanticcontentattribute/spatial.md)
+- [UISemanticContentAttribute.spatial](./spatial.md)
   A view representing a directional control, such as a segment control for text alignment, or a D-pad control for a game.
-- [UISemanticContentAttribute.forceLeftToRight](uisemanticcontentattribute/forcelefttoright.md)
+- [UISemanticContentAttribute.forceLeftToRight](./forcelefttoright.md)
   A view that’s always displayed using a left-to-right layout.
-- [UISemanticContentAttribute.forceRightToLeft](uisemanticcontentattribute/forcerighttoleft.md)
+- [UISemanticContentAttribute.forceRightToLeft](./forcerighttoleft.md)
   A view that’s always displayed using a right-to-left layout.
 
 

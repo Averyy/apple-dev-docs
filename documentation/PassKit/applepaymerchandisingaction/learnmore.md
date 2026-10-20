@@ -1,7 +1,8 @@
 # learnMore
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays a simple info sheet on the learn more details
 

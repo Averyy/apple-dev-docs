@@ -1,7 +1,8 @@
 # MusicAuthorization.Status.notDetermined
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has yet to decide whether to authorize the current app to use MusicKit.
 

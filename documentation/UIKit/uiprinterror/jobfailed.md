@@ -1,7 +1,8 @@
 # jobFailed
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An internal error occurred with the print job.
 
@@ -19,13 +20,14 @@ static var jobFailed: UIPrintError.Code { get }
 
 ## See Also
 
-- [UIPrintError.Code](uiprinterror/code.md)
+### Accessing error codes
+- [UIPrintError.Code](./code.md)
   Constants that specify the print error code.
-- [static var notAvailable: UIPrintError.Code](uiprinterror/notavailable.md)
+- [static var notAvailable: UIPrintError.Code](./notavailable.md)
   The device doesn’t support printing.
-- [static var noContent: UIPrintError.Code](uiprinterror/nocontent.md)
+- [static var noContent: UIPrintError.Code](./nocontent.md)
   UIKit hasn’t assigned a print formatter, page renderer, or printing item to print.
-- [static var unknownImageFormat: UIPrintError.Code](uiprinterror/unknownimageformat.md)
+- [static var unknownImageFormat: UIPrintError.Code](./unknownimageformat.md)
   An image is in a format that UIKit doesn’t recognize for printing.
 
 

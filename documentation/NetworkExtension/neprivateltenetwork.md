@@ -1,7 +1,8 @@
 # NEPrivateLTENetwork
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The parameters of a private LTE network.
 
@@ -17,40 +18,45 @@ The parameters of a private LTE network.
 class NEPrivateLTENetwork
 ```
 
+```objc
+@interface NEPrivateLTENetwork : NSObject
+```
+
 #### Overview
 
-Populate your manager’s [`matchPrivateLTENetworks`](neapppushmanager/matchprivateltenetworks.md) with an array of objects of this type. The system starts the provider when the device’s current private LTE provider matches the properties of any member of the array.
+Populate your manager’s [`matchPrivateLTENetworks`](./neapppushmanager/matchprivateltenetworks.md) with an array of objects of this type. The system starts the provider when the device’s current private LTE provider matches the properties of any member of the array.
 
 ## Topics
 
 ### Accessing network properties
-- [var mobileCountryCode: String](neprivateltenetwork/mobilecountrycode.md)
+- [var mobileCountryCode: String](./neprivateltenetwork/mobilecountrycode.md)
   The Mobile Country Code (MCC) of the private LTE network.
-- [var mobileNetworkCode: String](neprivateltenetwork/mobilenetworkcode.md)
+- [var mobileNetworkCode: String](./neprivateltenetwork/mobilenetworkcode.md)
   The Mobile Network Code (MNC) of the private LTE network.
-- [var trackingAreaCode: String?](neprivateltenetwork/trackingareacode.md)
+- [var trackingAreaCode: String?](./neprivateltenetwork/trackingareacode.md)
   The Tracking Area Code of the private LTE network.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var matchSSIDs: [String]](neapppushmanager/matchssids.md)
+### Matching Wi-Fi networks
+- [var matchSSIDs: [String]](./neapppushmanager/matchssids.md)
   An array of Wi-Fi SSID strings that the system matches for local push activation.
-- [var matchPrivateLTENetworks: [NEPrivateLTENetwork]](neapppushmanager/matchprivateltenetworks.md)
+- [var matchPrivateLTENetworks: [NEPrivateLTENetwork]](./neapppushmanager/matchprivateltenetworks.md)
   An array of private LTE networks that the system matches for local push activation.
 
 

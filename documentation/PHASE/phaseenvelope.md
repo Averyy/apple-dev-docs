@@ -1,7 +1,8 @@
 # PHASEEnvelope
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of segments that connect to graph a complex curve over a linear input.
 
@@ -19,17 +20,21 @@ A collection of segments that connect to graph a complex curve over a linear inp
 class PHASEEnvelope
 ```
 
+```objc
+@interface PHASEEnvelope : NSObject
+```
+
 #### Overview
 
-In traditional audio uses, an *envelope* defines a complex graph that determines the volume of audio data over an input duration. PHASE uses envelopes in a similar way. Given a value on the envelope’s input axis, the [`evaluate(x:)`](phaseenvelope/evaluate(x:).md) function plots and returns the result on the output axis. The following are possible uses of this class:
+In traditional audio uses, an *envelope* defines a complex graph that determines the volume of audio data over an input duration. PHASE uses envelopes in a similar way. Given a value on the envelope’s input axis, the [`evaluate(x:)`](./phaseenvelope/evaluate%28x%29.md) function plots and returns the result on the output axis. The following are possible uses of this class:
 
-- Sound event nodes, such as [`PHASEBlendNodeDefinition`](phaseblendnodedefinition.md), can shape their volume using an envelope; see [`addRange(envelope:subtree:)`](phaseblendnodedefinition/addrange(envelope:subtree:).md).
-- Distance models shape sounds with a 3D position using an envelope; see [`PHASEEnvelopeDistanceModelParameters`](phaseenvelopedistancemodelparameters.md).
-- An envelope can do more than shape audio. To gradually change an envelope’s input value over time, use the [`PHASEMappedMetaParameterDefinition`](phasemappedmetaparameterdefinition.md) class, which creates a function with a metaparameter value as input. An app can use the numeric result for any purpose. For example, the x-axis can be distance and the y-axis can be playback rate.
+- Sound event nodes, such as [`PHASEBlendNodeDefinition`](./phaseblendnodedefinition.md), can shape their volume using an envelope; see [`addRange(envelope:subtree:)`](./phaseblendnodedefinition/addrange%28envelope,subtree%29.md).
+- Distance models shape sounds with a 3D position using an envelope; see [`PHASEEnvelopeDistanceModelParameters`](./phaseenvelopedistancemodelparameters.md).
+- An envelope can do more than shape audio. To gradually change an envelope’s input value over time, use the [`PHASEMappedMetaParameterDefinition`](./phasemappedmetaparameterdefinition.md) class, which creates a function with a metaparameter value as input. An app can use the numeric result for any purpose. For example, the x-axis can be distance and the y-axis can be playback rate.
 
-At runtime, PHASE determines whether a particular member of the [`segments`](phaseenvelope/segments.md) array slopes up or down along the domain depending on the envelope’s particular use case.
+At runtime, PHASE determines whether a particular member of the [`segments`](./phaseenvelope/segments.md) array slopes up or down along the domain depending on the envelope’s particular use case.
 
-##### Create an Envelope and Shape Its Curve
+##### Create an Envelope and Shape its Curve
 
 To use an envelope in your app, define its shape by defining a series of segments. Each segment specifies a curve that collectively connect to form a graph. The following code creates an envelope with a single segment that’s shaped like the lettter *s:*
 
@@ -74,47 +79,48 @@ PHASEEnvelope* envelope = [[PHASEEnvelope alloc]
     segments:segments];
 ```
 
-The graph flexes at runtime depending on the source content on which the envelope operates. A [`PHASEEnvelope`](phaseenvelope.md) doesn’t constrain the [`evaluate(x:)`](phaseenvelope/evaluate(x:).md) function’s output to predertermined values. Instead, PHASE applies the envelope’s curves to the source content as a rate of change.
+The graph flexes at runtime depending on the source content on which the envelope operates. A [`PHASEEnvelope`](./phaseenvelope.md) doesn’t constrain the [`evaluate(x:)`](./phaseenvelope/evaluate%28x%29.md) function’s output to predertermined values. Instead, PHASE applies the envelope’s curves to the source content as a rate of change.
 
 ## Topics
 
 ### Creating an Envelope
-- [init?(startPoint: simd_double2, segments: [PHASEEnvelopeSegment])](phaseenvelope/init(startpoint:segments:).md)
+- [init?(startPoint: simd_double2, segments: [PHASEEnvelopeSegment])](./phaseenvelope/init%28startpoint,segments%29.md)
   Creates an envelope with a start point and segments.
 ### Inspecting the Envelope
-- [func evaluate(x: Double) -> Double](phaseenvelope/evaluate(x:).md)
+- [func evaluate(x: Double) -> Double](./phaseenvelope/evaluate%28x%29.md)
   Provides the height of the envelope for an input value.
-- [var segments: [PHASEEnvelopeSegment]](phaseenvelope/segments.md)
+- [var segments: [PHASEEnvelopeSegment]](./phaseenvelope/segments.md)
   An array of the envelope’s segments.
-- [var startPoint: simd_double2](phaseenvelope/startpoint.md)
+- [var startPoint: simd_double2](./phaseenvelope/startpoint.md)
   The starting point along the envelope’s duration.
 ### Bounding the Input
-- [var domain: PHASENumericPair](phaseenvelope/domain.md)
+- [var domain: PHASENumericPair](./phaseenvelope/domain.md)
   The range of the envelope’s possible input values.
-- [var range: PHASENumericPair](phaseenvelope/range.md)
+- [var range: PHASENumericPair](./phaseenvelope/range.md)
   The bounds of the output value.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEEnvelopeSegment](phaseenvelopesegment.md)
+### Dynamic Sound Control
+- [class PHASEEnvelopeSegment](./phaseenvelopesegment.md)
   A curved portion of an envelope.
-- [enum PHASECurveType](phasecurvetype.md)
+- [enum PHASECurveType](./phasecurvetype.md)
   Options that apply a mathematical function to an input value.
-- [class PHASENumericPair](phasenumericpair.md)
+- [class PHASENumericPair](./phasenumericpair.md)
   An ordered pair that defines a bounding box for an envelope.
-- [Playback Parameterization](playback-parameterization.md)
+- [Playback Parameterization](./playback-parameterization.md)
   Change the characteristics of in-flight audio by adjusting its properties at runtime.
 
 

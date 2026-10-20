@@ -1,7 +1,8 @@
 # resolutions
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of resolution steps performed during connection establishment, in order from first resolved to last resolved.
 
@@ -22,7 +23,8 @@ let resolutions: [NWConnection.EstablishmentReport.Resolution]
 
 ## See Also
 
-- [NWConnection.EstablishmentReport.Resolution](nwconnection/establishmentreport/resolution.md)
+### Inspecting Resolution
+- [NWConnection.EstablishmentReport.Resolution](./resolution.md)
   A description of a single DNS resolution step.
 
 

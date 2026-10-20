@@ -1,7 +1,8 @@
 # replies
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The replies from recipients of the exchange request.
 
@@ -20,15 +21,28 @@ The replies from recipients of the exchange request.
 var replies: [GKTurnBasedExchangeReply]? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<GKTurnBasedExchangeReply *> * replies;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) NSArray<GKTurnBasedExchangeReply *> * replies;
+```
+
 ## See Also
 
-- [func reply(withLocalizableMessageKey: String, arguments: [String], data: Data, completionHandler: (((any Error)?) -> Void)?)](gkturnbasedexchange/reply(withlocalizablemessagekey:arguments:data:completionhandler:).md)
+### Replying to Exchange Requests
+- [func reply(withLocalizableMessageKey: String, arguments: [String], data: Data, completionHandler: (((any Error)?) -> Void)?)](./reply%28withlocalizablemessagekey,arguments,data,completionhandler%29.md)
   Replies to an exchange request on behalf of a recipient.
-- [var status: GKTurnBasedExchangeStatus](gkturnbasedexchange/status.md)
+- [var status: GKTurnBasedExchangeStatus](./status.md)
   The status of the exchange request.
-- [enum GKTurnBasedExchangeStatus](gkturnbasedexchangestatus.md)
+- [enum GKTurnBasedExchangeStatus](../gkturnbasedexchangestatus.md)
   The status of an exchange or reply.
-- [var completionDate: Date?](gkturnbasedexchange/completiondate.md)
+- [var completionDate: Date?](./completiondate.md)
   The date when all recipients of the exchange request reply.
 
 

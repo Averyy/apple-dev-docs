@@ -1,18 +1,19 @@
 # init(bytes:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new dispatch data object from the specified memory buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,12 +27,13 @@ init(bytes buffer: UnsafeRawBufferPointer)
 
 ## See Also
 
-- [init(bytesNoCopy: UnsafeRawBufferPointer, deallocator: DispatchData.Deallocator)](dispatchdata/init(bytesnocopy:deallocator:)-vfoe.md)
+### Creating a Dispatch Data Structure
+- [init(bytesNoCopy: UnsafeRawBufferPointer, deallocator: DispatchData.Deallocator)](./init%28bytesnocopy,deallocator%29-vfoe.md)
   Creates a new dispatch data object using the specified memory buffer and deallocator.
-- [func withUnsafeBytes<Result, ContentType>(body: (UnsafePointer<ContentType>) throws -> Result) rethrows -> Result](dispatchdata/withunsafebytes(body:).md)
-- [DispatchData.Deallocator](dispatchdata/deallocator.md)
+- [func withUnsafeBytes<Result, ContentType>(body: (UnsafePointer<ContentType>) throws -> Result) rethrows -> Result](./withunsafebytes%28body%29.md)
+- [DispatchData.Deallocator](./deallocator.md)
   Memory deallocators for dispatch data objects.
-- [static let empty: DispatchData](dispatchdata/empty.md)
+- [static let empty: DispatchData](./empty.md)
   A dispatch data object representing a zero-length memory region.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The preferred animation style triggered when the user taps the preview.
@@ -18,9 +19,14 @@ The preferred animation style triggered when the user taps the preview.
 var preferredCommitStyle: UIContextMenuInteractionCommitStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIContextMenuInteractionCommitStyle preferredCommitStyle;
+```
+
 ## See Also
 
-- [enum UIContextMenuInteractionCommitStyle](uicontextmenuinteractioncommitstyle.md)
+### Specifying the Commit Style
+- [enum UIContextMenuInteractionCommitStyle](../uicontextmenuinteractioncommitstyle.md)
   Constants that control the interaction commit style.
 
 

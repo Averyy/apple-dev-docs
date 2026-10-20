@@ -1,7 +1,8 @@
 # cancelInteraction(matching:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel the local or remote interaction matching the given identifier. This causes any actions added to it to be rolled back, and releases the controlled equipment and any tossed equipment.
 
@@ -16,7 +17,8 @@ func cancelInteraction(matching interactionID: TabletopInteraction.Identifier)
 
 ## See Also
 
-- [func cancelAllInteractions()](tabletopgame/cancelallinteractions.md)
+### Canceling interactions
+- [func cancelAllInteractions()](./cancelallinteractions%28%29.md)
   Cancels all local and remote interactions. This releases control of all the equipment and rolls back all the actions added to the canceled interaction.
 
 

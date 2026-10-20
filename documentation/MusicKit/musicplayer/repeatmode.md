@@ -1,7 +1,8 @@
 # MusicPlayer.RepeatMode
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The repeat modes for the music player.
 
@@ -22,20 +23,20 @@ enum RepeatMode
 ## Topics
 
 ### Enumeration Cases
-- [MusicPlayer.RepeatMode.all](musicplayer/repeatmode/all.md)
+- [MusicPlayer.RepeatMode.all](./repeatmode/all.md)
   The music player is repeating the currently playing collection, such as an album or a playlist.
-- [MusicPlayer.RepeatMode.none](musicplayer/repeatmode/none.md)
+- [MusicPlayer.RepeatMode.none](./repeatmode/none.md)
   The repeat mode is in a disabled state.
-- [MusicPlayer.RepeatMode.one](musicplayer/repeatmode/one.md)
+- [MusicPlayer.RepeatMode.one](./repeatmode/one.md)
   The music player is repeating the currently playing entry.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

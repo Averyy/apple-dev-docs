@@ -1,7 +1,8 @@
 # systemFrame
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current frame of the scene, in system coordinates.
 
@@ -14,17 +15,22 @@ The current frame of the scene, in system coordinates.
 var systemFrame: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect systemFrame;
+```
+
 #### Discussion
 
 This property represents the current frame of the scene in the system coordinate space, where an origin of `(0, 0)` corresponds to the top-left corner of the main display.
 
 ## See Also
 
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/geometry/coordinatespace.md)
+### Accessing scene geometry
+- [var coordinateSpace: any UICoordinateSpace](./coordinatespace.md)
   The coordinate space of the scene
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/geometry/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   The current interface orientation for the scene.
-- [var isInterfaceOrientationLocked: Bool](uiwindowscene/geometry/isinterfaceorientationlocked.md)
+- [var isInterfaceOrientationLocked: Bool](./isinterfaceorientationlocked.md)
   If the scene’s interface orientation is locked and preventing changes. To express a preference for this value, override  `UIViewController`’s `prefersInterfaceOrientationLocked`.
 
 

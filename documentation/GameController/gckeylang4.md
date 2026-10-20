@@ -1,7 +1,8 @@
 # GCKeyLANG4
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard code for the fourth language key.
 
@@ -19,23 +20,28 @@ The keyboard code for the fourth language key.
 let GCKeyLANG4: String
 ```
 
+```c
+extern NSString * const GCKeyLANG4;
+```
+
 ## See Also
 
-- [let GCKeyLANG1: String](gckeylang1.md)
+### Language Keys
+- [let GCKeyLANG1: String](./gckeylang1.md)
   The keyboard code for the first language key.
-- [let GCKeyLANG2: String](gckeylang2.md)
+- [let GCKeyLANG2: String](./gckeylang2.md)
   The keyboard code for the second language key.
-- [let GCKeyLANG3: String](gckeylang3.md)
+- [let GCKeyLANG3: String](./gckeylang3.md)
   The keyboard code for the third language key.
-- [let GCKeyLANG5: String](gckeylang5.md)
+- [let GCKeyLANG5: String](./gckeylang5.md)
   The keyboard code for the fifth language key.
-- [let GCKeyLANG6: String](gckeylang6.md)
+- [let GCKeyLANG6: String](./gckeylang6.md)
   The keyboard code for the sixth language key.
-- [let GCKeyLANG7: String](gckeylang7.md)
+- [let GCKeyLANG7: String](./gckeylang7.md)
   The keyboard code for the seventh language key.
-- [let GCKeyLANG8: String](gckeylang8.md)
+- [let GCKeyLANG8: String](./gckeylang8.md)
   The keyboard code for the eighth language key.
-- [let GCKeyLANG9: String](gckeylang9.md)
+- [let GCKeyLANG9: String](./gckeylang9.md)
   The keyboard code for the ninth language key.
 
 

@@ -1,7 +1,8 @@
 # cameraTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform of the currently active camera.
 
@@ -21,7 +22,8 @@ The transform of the currently active camera.
 
 ## See Also
 
-- [var cameraMode: ARView.CameraMode](arview/cameramode-swift.property.md)
+### Managing the camera
+- [var cameraMode: ARView.CameraMode](./cameramode-swift.property.md)
   A setting that chooses between the AR session’s camera and a virtual one.
 
 

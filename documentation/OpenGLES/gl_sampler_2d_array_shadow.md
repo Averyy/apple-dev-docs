@@ -1,7 +1,8 @@
 # GL_SAMPLER_2D_ARRAY_SHADOW
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_SAMPLER_2D_ARRAY_SHADOW: Int32 { get }
+```
+
+```c
+#define GL_SAMPLER_2D_ARRAY_SHADOW
 ```
 
 

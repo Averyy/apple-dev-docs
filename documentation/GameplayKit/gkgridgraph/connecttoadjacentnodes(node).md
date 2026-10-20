@@ -1,7 +1,8 @@
 # connectToAdjacentNodes(node:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified node to the graph, connecting it to its nearest neighbors in the grid.
 
@@ -19,6 +20,10 @@ Adds the specified node to the graph, connecting it to its nearest neighbors in 
 func connectToAdjacentNodes(node: GKGridGraphNode)
 ```
 
+```objc
+- (void) connectNodeToAdjacentNodes:(GKGridGraphNode *) node;
+```
+
 #### Discussion
 
 Nodes attached through this method do not become part of the grid itself, but instead can represent positions of game entities in the grid. Use nodes connected in this way to find paths between such positions.
@@ -29,7 +34,8 @@ Nodes attached through this method do not become part of the grid itself, but in
 
 ## See Also
 
-- [func node(atGridPosition: vector_int2) -> NodeType?](gkgridgraph/node(atgridposition:).md)
+### Working with Nodes
+- [func node(atGridPosition: vector_int2) -> NodeType?](./node%28atgridposition%29.md)
   Returns the node in the graph at the specified grid coordinates.
 
 

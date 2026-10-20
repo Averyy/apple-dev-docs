@@ -1,16 +1,18 @@
 # SFSafariCorrespondingIOSExtensionBundleIdentifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string bundle ID that identifies the corresponding content blocker extension or Safari web extension on iOS.
 
 **Availability**:
 - macOS 13.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `SFSafariCorrespondingIOSExtensionBundleIdentifier` (Safari - Associated iOS Extension Bundle Identifier)
+- **Type**: string
 
 #### Discussion
 
@@ -18,15 +20,16 @@ To enable extension syncing for your macOS content blocker extension or Safari w
 
 Only add this to your `Info.plist` if the bundle ID for your macOS app is different from the bundle ID for your iOS app.
 
-For more information, see [`Syncing Safari web extensions across devices and platforms`](https://developer.apple.com/documentation/safariservices/syncing-safari-web-extensions-across-devices-and-platforms).
+For more information, see [Syncing Safari web extensions across devices and platforms](../../SafariServices/syncing-safari-web-extensions-across-devices-and-platforms.md).
 
 ## See Also
 
-- [SFSafariCorrespondingIOSAppBundleIdentifier](information-property-list/sfsafaricorrespondingiosappbundleidentifier.md)
+### Safari services
+- [SFSafariCorrespondingIOSAppBundleIdentifier](./sfsafaricorrespondingiosappbundleidentifier.md)
   A string bundle ID that identifies the corresponding iOS app that contains a content blocker or Safari web extension.
-- [SFSafariCorrespondingMacOSAppBundleIdentifier](information-property-list/sfsafaricorrespondingmacosappbundleidentifier.md)
+- [SFSafariCorrespondingMacOSAppBundleIdentifier](./sfsafaricorrespondingmacosappbundleidentifier.md)
   A string bundle ID that identifies the corresponding macOS app that contains a content blocker or Safari web extension.
-- [SFSafariCorrespondingMacOSExtensionBundleIdentifier](information-property-list/sfsafaricorrespondingmacosextensionbundleidentifier.md)
+- [SFSafariCorrespondingMacOSExtensionBundleIdentifier](./sfsafaricorrespondingmacosextensionbundleidentifier.md)
   A string bundle ID that identifies the corresponding content blocker extension or Safari web extension on macOS.
 
 

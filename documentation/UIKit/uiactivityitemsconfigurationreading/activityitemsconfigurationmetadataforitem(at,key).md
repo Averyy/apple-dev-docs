@@ -1,7 +1,8 @@
 # activityItemsConfigurationMetadataForItem(at:key:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the configuration for a particular item for the specified metadata key.
 
@@ -17,15 +18,20 @@ Returns the configuration for a particular item for the specified metadata key.
 optional func activityItemsConfigurationMetadataForItem(at index: Int, key: UIActivityItemsConfigurationMetadataKey) -> Any?
 ```
 
+```objc
+- (id) activityItemsConfigurationMetadataForItemAtIndex:(NSInteger) index key:(UIActivityItemsConfigurationMetadataKey) key;
+```
+
 ## See Also
 
-- [var itemProvidersForActivityItemsConfiguration: [NSItemProvider]](uiactivityitemsconfigurationreading/itemprovidersforactivityitemsconfiguration.md)
+### Managing the Configuration
+- [var itemProvidersForActivityItemsConfiguration: [NSItemProvider]](./itemprovidersforactivityitemsconfiguration.md)
   The item providers for the configuration.
-- [var applicationActivitiesForActivityItemsConfiguration: [UIActivity]?](uiactivityitemsconfigurationreading/applicationactivitiesforactivityitemsconfiguration.md)
+- [var applicationActivitiesForActivityItemsConfiguration: [UIActivity]?](./applicationactivitiesforactivityitemsconfiguration.md)
   The application activities, if any, for the configuration.
-- [func activityItemsConfigurationMetadata(key: UIActivityItemsConfigurationMetadataKey) -> Any?](uiactivityitemsconfigurationreading/activityitemsconfigurationmetadata(key:).md)
+- [func activityItemsConfigurationMetadata(key: UIActivityItemsConfigurationMetadataKey) -> Any?](./activityitemsconfigurationmetadata%28key%29.md)
   Returns the configuration for the specified metadata key.
-- [struct UIActivityItemsConfigurationMetadataKey](uiactivityitemsconfigurationmetadatakey.md)
+- [struct UIActivityItemsConfigurationMetadataKey](../uiactivityitemsconfigurationmetadatakey.md)
   A structure that defines keys for the metadata associated with an activity items configuration.
 
 

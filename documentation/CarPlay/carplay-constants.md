@@ -1,18 +1,20 @@
 # CarPlay Constants
 
-**Framework**: CarPlay
+**Framework**: CarPlay  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let CPGridTemplateMaximumItems: Int](cpgridtemplatemaximumitems.md)
+- [let CPGridTemplateMaximumItems: Int](./cpgridtemplatemaximumitems.md)
   The maximum number of buttons that a grid template displays.
-- [let CPMaximumListSectionImageSize: CGSize](cpmaximumlistsectionimagesize.md)
+- [let CPMaximumListSectionImageSize: CGSize](./cpmaximumlistsectionimagesize.md)
   The maximum size of an image in a list section.
 
 ## See Also
 
-- [CarPlay Enumerations](carplay-enumerations.md)
+### Reference
+- [CarPlay Enumerations](./carplay-enumerations.md)
 
 
 ---

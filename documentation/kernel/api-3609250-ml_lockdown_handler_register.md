@@ -1,14 +1,15 @@
 # ml_lockdown_handler_register
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t ml_lockdown_handler_register(lockdown_handler_t, void *);
 ```
 

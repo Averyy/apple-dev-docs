@@ -1,7 +1,8 @@
 # oldScaleFactorUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An NSNumber containing the old scale factor.
 
@@ -14,10 +15,15 @@ An NSNumber containing the old scale factor.
 class let oldScaleFactorUserInfoKey: String
 ```
 
+```c
+extern NSString * const NSBackingPropertyOldScaleFactorKey;
+```
+
 ## See Also
 
-- [class let oldColorSpaceUserInfoKey: String](nswindow/oldcolorspaceuserinfokey.md)
-  An [`NSColorSpace`](nscolorspace.md) instance containing the old colorspace.
+### Constants
+- [class let oldColorSpaceUserInfoKey: String](./oldcolorspaceuserinfokey.md)
+  An [`NSColorSpace`](../nscolorspace.md) instance containing the old colorspace.
 
 
 ---

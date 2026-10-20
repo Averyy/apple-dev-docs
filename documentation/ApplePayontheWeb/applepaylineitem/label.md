@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A required value that’s a short, localized description of the line item.
 
@@ -11,7 +12,7 @@ A required value that’s a short, localized description of the line item.
 
 ## Declaration
 
-```swift
+```
 DOMString label;
 ```
 
@@ -23,11 +24,12 @@ Omit any punctuation and whitespace after the label. The framework formats the l
 
 ## See Also
 
-- [amount](applepaylineitem/amount.md)
+### Setting line item properties
+- [amount](./amount.md)
   A required value that’s the monetary amount of the line item.
-- [type](applepaylineitem/type.md)
+- [type](./type.md)
   A value that indicates whether the line item is final or pending.
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](../applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 
 

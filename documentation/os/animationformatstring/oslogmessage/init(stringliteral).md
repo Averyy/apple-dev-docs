@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a log message using a string literal.
 
@@ -11,7 +12,7 @@ Creates a log message using a string literal.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

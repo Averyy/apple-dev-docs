@@ -1,7 +1,8 @@
 # AllocRef
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var AllocRef: UnsafeMutableRawPointer!
+```
+
+```c
+void * AllocRef;
 ```
 
 

@@ -1,7 +1,8 @@
 # tableView(_:dropSessionDidEnd:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the drag operation ends.
 
@@ -17,6 +18,10 @@ Notifies the delegate when the drag operation ends.
 optional func tableView(_ tableView: UITableView, dropSessionDidEnd session: any UIDropSession)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView dropSessionDidEnd:(id<UIDropSession>) session;
+```
+
 #### Discussion
 
 The table view calls this method at the conclusion of a drag that was over the table view at one point. Use it to clean up any state information that you used to handle the drag. This method is called regardless of whether the data was actually dropped onto the table view.
@@ -28,11 +33,12 @@ The table view calls this method at the conclusion of a drag that was over the t
 
 ## See Also
 
-- [func tableView(UITableView, dropSessionDidUpdate: any UIDropSession, withDestinationIndexPath: IndexPath?) -> UITableViewDropProposal](uitableviewdropdelegate/tableview(_:dropsessiondidupdate:withdestinationindexpath:).md)
+### Tracking the drag movements
+- [func tableView(UITableView, dropSessionDidUpdate: any UIDropSession, withDestinationIndexPath: IndexPath?) -> UITableViewDropProposal](./tableview%28_,dropsessiondidupdate,withdestinationindexpath%29.md)
   Proposes how to handle a drop at the specified location in the table view.
-- [func tableView(UITableView, dropSessionDidEnter: any UIDropSession)](uitableviewdropdelegate/tableview(_:dropsessiondidenter:).md)
+- [func tableView(UITableView, dropSessionDidEnter: any UIDropSession)](./tableview%28_,dropsessiondidenter%29.md)
   Notifies the delegate when dragged content enters the table view’s bounds rectangle.
-- [func tableView(UITableView, dropSessionDidExit: any UIDropSession)](uitableviewdropdelegate/tableview(_:dropsessiondidexit:).md)
+- [func tableView(UITableView, dropSessionDidExit: any UIDropSession)](./tableview%28_,dropsessiondidexit%29.md)
   Notifies the delegate when dragged content exits the table view’s bounds rectangle.
 
 

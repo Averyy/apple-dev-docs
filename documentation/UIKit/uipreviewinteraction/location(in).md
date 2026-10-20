@@ -1,7 +1,8 @@
 # location(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the touch that started the interaction.
 
@@ -17,17 +18,21 @@ Returns the location of the touch that started the interaction.
 func location(in coordinateSpace: (any UICoordinateSpace)?) -> CGPoint
 ```
 
+```objc
+- (CGPoint) locationInCoordinateSpace:(id<UICoordinateSpace>) coordinateSpace;
+```
+
 #### Return Value
 
-The [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) that represents the current location of the touch, translated into the requested coordinate space.
+The [`CGPoint`](../../CoreFoundation/cgpoint.md) that represents the current location of the touch, translated into the requested coordinate space.
 
 #### Discussion
 
 Use this method to establish the current location of the touch that triggered the preview interaction.
 
-> **Note**:  [`UIView`](uiview.md) adopts the [`UICoordinateSpace`](uicoordinatespace.md) protocol, so you can find the touch location within a view in the view hierarchy.
+> **Note**:  [`UIView`](../uiview.md) adopts the [`UICoordinateSpace`](../uicoordinatespace.md) protocol, so you can find the touch location within a view in the view hierarchy.
 
-When the preview interaction isn’t running, calling this method returns an invalid point. You must therefore only call this method in response to one of the delegate callbacks specified in [`UIPreviewInteractionDelegate`](uipreviewinteractiondelegate.md).
+When the preview interaction isn’t running, calling this method returns an invalid point. You must therefore only call this method in response to one of the delegate callbacks specified in [`UIPreviewInteractionDelegate`](../uipreviewinteractiondelegate.md).
 
 ## Parameters
 
@@ -35,9 +40,10 @@ When the preview interaction isn’t running, calling this method returns an inv
 
 ## See Also
 
-- [var view: UIView?](uipreviewinteraction/view.md)
+### Handling preview interactions
+- [var view: UIView?](./view.md)
   The view from which the preview interaction receives touch events.
-- [func cancel()](uipreviewinteraction/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the current preview interaction.
 
 

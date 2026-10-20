@@ -1,21 +1,22 @@
 # WebhookPingCreateRequest.Data.Relationships.Webhook
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object WebhookPingCreateRequest.Data.Relationships.Webhook
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object WebhookPingCreateRequest.Data.Relationships.Webhook.Data](webhookpingcreaterequest/data-data.dictionary/relationships-data.dictionary/webhook-data.dictionary/data-data.dictionary.md)
+- [object WebhookPingCreateRequest.Data.Relationships.Webhook.Data](./webhook-data.dictionary/data-data.dictionary.md)
   The request body you use to create a webhook ping.
 
 ## Properties

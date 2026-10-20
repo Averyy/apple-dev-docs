@@ -1,7 +1,8 @@
 # canAdd(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether you can add the output to the asset reader.
 
@@ -19,9 +20,13 @@ Determines whether you can add the output to the asset reader.
 func canAdd(_ output: AVAssetReaderOutput) -> Bool
 ```
 
+```objc
+- (BOOL) canAddOutput:(AVAssetReaderOutput *) output;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can add the output; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you can add the output; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -33,9 +38,10 @@ You may only add outputs that retrieve media data from the asset that you associ
 
 ## See Also
 
-- [func add(AVAssetReaderOutput)](avassetreader/add(_:).md)
+### Managing outputs
+- [func add(AVAssetReaderOutput)](./add%28_%29.md)
   Adds an output to the reader.
-- [var outputs: [AVAssetReaderOutput]](avassetreader/outputs.md)
+- [var outputs: [AVAssetReaderOutput]](./outputs.md)
   The outputs from which you read media data.
 
 

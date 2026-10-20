@@ -1,14 +1,15 @@
 # GenresResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.2+
 
 ## Declaration
 
-```swift
+```
 object GenresResponse
 ```
 
@@ -18,9 +19,10 @@ object GenresResponse
 
 ## See Also
 
-- [object UnauthorizedResponse](unauthorizedresponse.md)
+### Responses
+- [object UnauthorizedResponse](./unauthorizedresponse.md)
   A response that indicates an incorrect authorization header.
-- [object ErrorsResponse](errorsresponse.md)
+- [object ErrorsResponse](./errorsresponse.md)
   The collection of errors that occurred while processing the request.
 
 

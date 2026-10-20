@@ -1,7 +1,8 @@
 # first
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A symmetric key that’s unique to the passkey and derives from the first input, if specified.
 
@@ -20,7 +21,8 @@ let first: SymmetricKey?
 
 ## See Also
 
-- [let second: SymmetricKey?](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/second.md)
+### Accessing symmetric keys
+- [let second: SymmetricKey?](./second.md)
   A second symmetric key that’s unique to the passkey, and derives from the second input, if specified.
 
 

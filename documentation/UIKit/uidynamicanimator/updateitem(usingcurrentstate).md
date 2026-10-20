@@ -1,7 +1,8 @@
 # updateItem(usingCurrentState:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks a dynamic animator to read the current state of a dynamic item, replacing the animator’s internal representation of the item’s state.
 
@@ -9,13 +10,17 @@ Asks a dynamic animator to read the current state of a dynamic item, replacing t
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func updateItem(usingCurrentState item: any UIDynamicItem)
+```
+
+```objc
+- (void) updateItemUsingCurrentState:(id<UIDynamicItem>) item;
 ```
 
 #### Discussion
@@ -28,13 +33,14 @@ A dynamic animator automatically reads the initial state (position and rotation)
 
 ## See Also
 
-- [var elapsedTime: TimeInterval](uidynamicanimator/elapsedtime.md)
+### Accessing a dynamic animator’s state
+- [var elapsedTime: TimeInterval](./elapsedtime.md)
   Returns the time interval since the dynamic animator started running.
-- [var isRunning: Bool](uidynamicanimator/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   Returns true if the dynamic animator is running.
-- [var behaviors: [UIDynamicBehavior]](uidynamicanimator/behaviors.md)
+- [var behaviors: [UIDynamicBehavior]](./behaviors.md)
   The dynamic behaviors managed by a dynamic animator.
-- [var referenceView: UIView?](uidynamicanimator/referenceview.md)
+- [var referenceView: UIView?](./referenceview.md)
   The view that a dynamic animator was initialized with.
 
 

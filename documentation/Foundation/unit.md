@@ -1,7 +1,8 @@
 # Unit
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class representing a unit of measure.
 
@@ -20,54 +21,59 @@ An abstract class representing a unit of measure.
 class Unit
 ```
 
+```objc
+@interface NSUnit : NSObject
+```
+
 #### Overview
 
-Each instance of an [`Unit`](unit.md) subclass consists of a [`symbol`](unit/symbol.md), which can be used to create string representations of [`NSMeasurement`](nsmeasurement.md) objects with the [`MeasurementFormatter`](measurementformatter.md) class.
+Each instance of an [`Unit`](./unit.md) subclass consists of a [`symbol`](./unit/symbol.md), which can be used to create string representations of [`NSMeasurement`](./nsmeasurement.md) objects with the [`MeasurementFormatter`](./measurementformatter.md) class.
 
-The [`Dimension`](dimension.md) subclass is an abstract class that represents a dimensional unit, which can be converted into different units of the same type. The Foundation framework provides several concrete [`Dimension`](dimension.md) subclasses to represent the most common physical quantities, including mass, length, duration, and speed.
+The [`Dimension`](./dimension.md) subclass is an abstract class that represents a dimensional unit, which can be converted into different units of the same type. The Foundation framework provides several concrete [`Dimension`](./dimension.md) subclasses to represent the most common physical quantities, including mass, length, duration, and speed.
 
 ##### Subclassing Notes
 
-[`Unit`](unit.md) is intended for subclassing. For dimensional units, you should use one of the Apple provided [`Dimension`](dimension.md) subclasses listed in Table 1 of [`Dimension`](dimension.md), or create a custom subclass of [`Dimension`](dimension.md). You can create a direct subclass of [`Unit`](unit.md) to represent a custom dimensionless unit, such as a count, score, or ratio.
+[`Unit`](./unit.md) is intended for subclassing. For dimensional units, you should use one of the Apple provided [`Dimension`](./dimension.md) subclasses listed in Table 1 of [`Dimension`](./dimension.md), or create a custom subclass of [`Dimension`](./dimension.md). You can create a direct subclass of [`Unit`](./unit.md) to represent a custom dimensionless unit, such as a count, score, or ratio.
 
 ## Topics
 
 ### Accessing Properties
-- [var symbol: String](unit/symbol.md)
+- [var symbol: String](./unit/symbol.md)
   The symbolic representation of the unit.
 ### Creating Units
-- [init(symbol: String)](unit/init(symbol:).md)
+- [init(symbol: String)](./unit/init%28symbol%29.md)
   Initializes a new unit with the specified symbol.
 ### Initializers
-- [init?(coder: NSCoder)](unit/init(coder:).md)
+- [init?(coder: NSCoder)](./unit/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [Dimension](dimension.md)
-- [UnitEnergy.EnergyKit](unitenergy/energykit.md)
+- [Dimension](./dimension.md)
+- [UnitEnergy.EnergyKit](./unitenergy/energykit.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Measurement](measurement.md)
+### Essentials
+- [struct Measurement](./measurement.md)
   A numeric quantity labeled with a unit of measure, with support for unit conversion and unit-aware calculations.
-- [class NSMeasurement](nsmeasurement.md)
+- [class NSMeasurement](./nsmeasurement.md)
   A numeric quantity labeled with a unit of measure, with support for unit conversion and unit-aware calculations.
-- [class Dimension](dimension.md)
+- [class Dimension](./dimension.md)
   An abstract class representing a dimensional unit of measure.
 
 

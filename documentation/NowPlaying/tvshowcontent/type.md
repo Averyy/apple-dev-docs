@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type (always video for TV shows).
 

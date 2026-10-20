@@ -1,6 +1,7 @@
 # Regenerating your app’s indexes on demand
 
-**Framework**: Core Spotlight
+**Framework**: Core Spotlight  
+**Role**: Article
 
 Create an app extension to maintain your app’s indexes and regenerate them as needed.
 
@@ -10,7 +11,7 @@ Keeping your app’s indexes up to date requires periodic maintenance. An app th
 
 A reindexing app extension is an important tool for keeping your indexes up to date at all times. Include this app extension in your app bundle, and make sure it has access to all of your app’s indexable data.
 
-##### Add a Reindexing App Extension to Your App
+##### Add a reindexing app extension to your app
 
 Xcode provides a template to make it easy to add a reindexing app extension to your app. Add this template to your project using the following steps:
 
@@ -22,7 +23,7 @@ Xcode provides a template to make it easy to add a reindexing app extension to y
 6. Give your app extension a name and configure the other options.
 7. Click Finish.
 
-The CoreSpotlight Delegate template contains empty implementations for the key functions of the [`CSSearchableIndexDelegate`](cssearchableindexdelegate.md) protocol, including the methods you use to update the index. Add your custom code to these methods, and make sure to call the acknowledgement handlers for your main indexing functions, as shown:
+The CoreSpotlight Delegate template contains empty implementations for the key functions of the [`CSSearchableIndexDelegate`](./cssearchableindexdelegate.md) protocol, including the methods you use to update the index. Add your custom code to these methods, and make sure to call the acknowledgement handlers for your main indexing functions, as shown:
 
 ```swift
 import CoreSpotlight
@@ -46,9 +47,9 @@ class MyIndexingExtension: CSIndexExtensionRequestHandler {
 }
 ```
 
-For information about how to add content to your app’s indexes, see [`Adding your app’s content to Spotlight indexes`](adding-your-app-s-content-to-spotlight-indexes.md).
+For information about how to add content to your app’s indexes, see [Adding your app’s content to Spotlight indexes](./adding-your-app-s-content-to-spotlight-indexes.md).
 
-##### Debug Your App Extension Code
+##### Debug your app extension code
 
 Verify your app extension behaves as expected using the Xcode debugger. Start by building your app extension and attaching the debugger to it.
 
@@ -61,7 +62,7 @@ Verify your app extension behaves as expected using the Xcode debugger. Start by
 
 Because you can’t predict when the system will run your app extension, you need to force the system to run it immediately using the `mdutil` command-line tool. Open Terminal and run that command with the `-cr` option, followed by the bundle identifier of your app extension. Here’s an example of this command:
 
-```None
+```
 mdutil -cr com.example.MyApp.MyIndexingExtension
 ```
 
@@ -69,9 +70,10 @@ The `mdutil` tool starts the reindexing process for the app extension you specif
 
 ## See Also
 
-- [class CSIndexExtensionRequestHandler](csindexextensionrequesthandler.md)
+### Spotlight app extensions
+- [class CSIndexExtensionRequestHandler](./csindexextensionrequesthandler.md)
   An interface that implements an index-maintenance app extension.
-- [class CSImportExtension](csimportextension.md)
+- [class CSImportExtension](./csimportextension.md)
   An object that provides searchable attributes for file types that the app supports.
 
 

@@ -1,7 +1,8 @@
 # init(identifier:displayName:value:polarity:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a performance measurement for a single iteration with the value and polarity.
 
@@ -19,6 +20,10 @@ Initializes a performance measurement for a single iteration with the value and 
 convenience init(identifier: String, displayName: String, value: Measurement<Unit>, polarity: XCTPerformanceMeasurement.Polarity)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier displayName:(NSString *) displayName value:(NSMeasurement *) value polarity:(XCTPerformanceMeasurementPolarity) polarity;
+```
+
 ## Parameters
 
 - `identifier`: A unique identifier for the measurement.
@@ -28,11 +33,12 @@ convenience init(identifier: String, displayName: String, value: Measurement<Uni
 
 ## See Also
 
-- [init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String)](xctperformancemeasurement/init(identifier:displayname:doublevalue:unitsymbol:).md)
+### Initializing a Measurement
+- [init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String)](./init%28identifier,displayname,doublevalue,unitsymbol%29.md)
   Initializes a performance measurement for a single iteration with the value and unit of measurement.
-- [convenience init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String, polarity: XCTPerformanceMeasurement.Polarity)](xctperformancemeasurement/init(identifier:displayname:doublevalue:unitsymbol:polarity:).md)
+- [convenience init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String, polarity: XCTPerformanceMeasurement.Polarity)](./init%28identifier,displayname,doublevalue,unitsymbol,polarity%29.md)
   Initializes a performance measurement for a single iteration with the value, unit of measurement, and polarity.
-- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>)](xctperformancemeasurement/init(identifier:displayname:value:).md)
+- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>)](./init%28identifier,displayname,value%29.md)
   Initializes a performance measurement for a single iteration with the value.
 
 

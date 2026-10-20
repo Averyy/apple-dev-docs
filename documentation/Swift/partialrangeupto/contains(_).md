@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the given element is contained within the range expression.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the given element is contained within
 ```swift
 func contains(_ element: Bound) -> Bool
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

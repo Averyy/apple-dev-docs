@@ -1,7 +1,8 @@
 # RecognizedTextObservation.Direction
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum representing which direction the text is read.
 
@@ -22,32 +23,33 @@ enum Direction
 ## Topics
 
 ### Directions
-- [RecognizedTextObservation.Direction.leftToRight](recognizedtextobservation/direction/lefttoright.md)
-- [RecognizedTextObservation.Direction.rightToLeft](recognizedtextobservation/direction/righttoleft.md)
-- [RecognizedTextObservation.Direction.topToBottom](recognizedtextobservation/direction/toptobottom.md)
+- [RecognizedTextObservation.Direction.leftToRight](./direction/lefttoright.md)
+- [RecognizedTextObservation.Direction.rightToLeft](./direction/righttoleft.md)
+- [RecognizedTextObservation.Direction.topToBottom](./direction/toptobottom.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](recognizedtextobservation/boundingregion.md)
+### Inspecting an observation
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   The bounding region of the text.
-- [let isTitle: Bool](recognizedtextobservation/istitle.md)
+- [let isTitle: Bool](./istitle.md)
   Whether this text is the title of the document.
-- [let recognitionLanguages: [Locale.Language]](recognizedtextobservation/recognitionlanguages.md)
+- [let recognitionLanguages: [Locale.Language]](./recognitionlanguages.md)
   The languages in which the recognized text was written.
-- [let shouldWrapToNextLine: Bool?](recognizedtextobservation/shouldwraptonextline.md)
+- [let shouldWrapToNextLine: Bool?](./shouldwraptonextline.md)
   Whether the text continues on the next line.
-- [let textDirection: RecognizedTextObservation.Direction?](recognizedtextobservation/textdirection.md)
-- [var transcript: String](recognizedtextobservation/transcript.md)
+- [let textDirection: RecognizedTextObservation.Direction?](./textdirection.md)
+- [var transcript: String](./transcript.md)
   The top text candidate as a string.
 
 

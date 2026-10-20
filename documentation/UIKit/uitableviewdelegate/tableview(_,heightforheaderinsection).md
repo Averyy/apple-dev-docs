@@ -1,7 +1,8 @@
 # tableView(_:heightForHeaderInSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the height to use for the header of a particular section.
 
@@ -18,9 +19,13 @@ Asks the delegate for the height to use for the header of a particular section.
 optional func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
 ```
 
+```objc
+- (CGFloat) tableView:(UITableView *) tableView heightForHeaderInSection:(NSInteger) section;
+```
+
 ## Mentions
 
-- [Adding headers and footers to table sections](adding-headers-and-footers-to-table-sections.md)
+- [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
 #### Return Value
 
@@ -28,7 +33,7 @@ A nonnegative floating-point value that specifies the height (in points) of the 
 
 #### Discussion
 
-Use this method to specify the height of custom header views returned by your [`tableView(_:viewForHeaderInSection:)`](uitableviewdelegate/tableview(_:viewforheaderinsection:).md) method.
+Use this method to specify the height of custom header views returned by your [`tableView(_:viewForHeaderInSection:)`](./tableview%28_,viewforheaderinsection%29.md) method.
 
 ## Parameters
 
@@ -37,15 +42,17 @@ Use this method to specify the height of custom header views returned by your [`
 
 ## See Also
 
-- [func tableView(UITableView, estimatedHeightForHeaderInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:estimatedheightforheaderinsection:).md)
+### Related Documentation
+- [func tableView(UITableView, estimatedHeightForHeaderInSection: Int) -> CGFloat](./tableview%28_,estimatedheightforheaderinsection%29.md)
   Asks the delegate for the estimated height of the header of a particular section.
-- [func tableView(UITableView, viewForHeaderInSection: Int) -> UIView?](uitableviewdelegate/tableview(_:viewforheaderinsection:).md)
+- [func tableView(UITableView, viewForHeaderInSection: Int) -> UIView?](./tableview%28_,viewforheaderinsection%29.md)
   Asks the delegate for a view to display in the header of the specified section of the table view.
-- [func tableView(UITableView, heightForRowAt: IndexPath) -> CGFloat](uitableviewdelegate/tableview(_:heightforrowat:).md)
+### Providing header, footer, and row heights
+- [func tableView(UITableView, heightForRowAt: IndexPath) -> CGFloat](./tableview%28_,heightforrowat%29.md)
   Asks the delegate for the height to use for a row in a specified location.
-- [func tableView(UITableView, heightForFooterInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:heightforfooterinsection:).md)
+- [func tableView(UITableView, heightForFooterInSection: Int) -> CGFloat](./tableview%28_,heightforfooterinsection%29.md)
   Asks the delegate for the height to use for the footer of a particular section.
-- [class let automaticDimension: CGFloat](uitableview/automaticdimension.md)
+- [class let automaticDimension: CGFloat](../uitableview/automaticdimension.md)
   A constant representing the default value for a given dimension.
 
 

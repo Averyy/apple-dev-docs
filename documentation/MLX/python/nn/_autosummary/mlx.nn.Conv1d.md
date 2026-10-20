@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 
 # mlx.nn.Conv1d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Conv1d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Conv1d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Conv1d
-
 **class Conv1d(*in_channels: int*, *out_channels: int*, *kernel_size: int*, *stride: int = 1*, *padding: int = 0*, *dilation: int = 1*, *groups: int = 1*, *bias: bool = True*)**
 : Applies a 1-dimensional convolution over the multi-channel input sequence.
 The channels are expected to be last i.e. the input shape should be `NLC` where:
@@ -58,5 +31,3 @@ Default: `1`.
 Default: `True`
 
 Methods
-
-** Contents

@@ -1,7 +1,8 @@
 # targetText
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The translated text.
 
@@ -19,11 +20,12 @@ let targetText: String
 
 ## See Also
 
-- [let sourceText: String](translationsession/response/sourcetext.md)
+### Getting translation results
+- [let sourceText: String](./sourcetext.md)
   The original text to translate from.
-- [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
+- [let attributedSourceText: AttributedString?](./attributedsourcetext.md)
   The original translated text, including style formatting and links.
-- [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
+- [let attributedTargetText: AttributedString?](./attributedtargettext.md)
   The translated formatted text.
 
 

@@ -1,7 +1,8 @@
 # originFromAnchorTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position and orientation of a world anchor.
 
@@ -16,9 +17,10 @@ var originFromAnchorTransform: simd_float4x4 { get }
 
 ## See Also
 
-- [var isTracked: Bool](worldanchor/istracked.md)
+### Inspecting a world anchor
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking a world anchor.
-- [var description: String](worldanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

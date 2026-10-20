@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.ActiveReason.lowerElectricityRatesAvailable
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates charging starts because lower electricity rates become available.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case lowerElectricityRatesAvailable
 
 ## See Also
 
-- [ElectricVehicleChargingReason.ActiveReason.cleanerEnergyAvailable](electricvehiclechargingreason/activereason/cleanerenergyavailable.md)
+### Grid and rate optimization
+- [ElectricVehicleChargingReason.ActiveReason.cleanerEnergyAvailable](./cleanerenergyavailable.md)
   A reason that indicates charging starts because cleaner energy becomes available on the grid.
 
 

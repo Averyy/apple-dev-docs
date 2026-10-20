@@ -1,7 +1,8 @@
 # init(name:condition:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new enabled trait.
 

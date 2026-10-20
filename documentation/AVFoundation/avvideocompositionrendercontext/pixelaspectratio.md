@@ -1,7 +1,8 @@
 # pixelAspectRatio
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel aspect ratio for rendered frames.
 
@@ -19,13 +20,18 @@ The pixel aspect ratio for rendered frames.
 var pixelAspectRatio: AVPixelAspectRatio { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVPixelAspectRatio pixelAspectRatio;
+```
+
 ## See Also
 
-- [var edgeWidths: AVEdgeWidths](avvideocompositionrendercontext/edgewidths.md)
+### Getting pixel and edge width information
+- [var edgeWidths: AVEdgeWidths](./edgewidths.md)
   The width of the edge processing region on the left, top, right, and bottom edges, in pixels.
-- [struct AVEdgeWidths](avedgewidths.md)
+- [struct AVEdgeWidths](../avedgewidths.md)
   A structure that defines edge processing region widths.
-- [struct AVPixelAspectRatio](avpixelaspectratio.md)
+- [struct AVPixelAspectRatio](../avpixelaspectratio.md)
   A structure that defines a pixel aspect ratio for a rendering context.
 
 

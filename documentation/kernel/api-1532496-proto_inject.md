@@ -1,18 +1,19 @@
 # proto_inject
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t proto_inject(protocol_family_t protocol, mbuf_t packet);
 ```
 
-#### Return_value
+#### Return Value
 
 A errno error on failure. Unless proto_inject returns zero, the caller is responsible for freeing the mbuf.
 

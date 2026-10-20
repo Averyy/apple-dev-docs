@@ -1,7 +1,8 @@
 # errSessionAuthorizationDenied
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Authorization denied.
 
@@ -13,6 +14,10 @@ Authorization denied.
 
 ```swift
 var errSessionAuthorizationDenied: OSStatus { get }
+```
+
+```c
+errSessionAuthorizationDenied
 ```
 
 

@@ -1,7 +1,8 @@
 # builtInDualCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A built-in camera device type that consists of a wide-angle and telephoto camera.
 
@@ -17,9 +18,13 @@ A built-in camera device type that consists of a wide-angle and telephoto camera
 static let builtInDualCamera: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInDualCamera;
+```
+
 ## Mentions
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](../../capturing-photos-with-depth.md)
 
 #### Discussion
 
@@ -32,29 +37,30 @@ This device type supports the following features:
 
 It doesn’t support the features below:
 
-- Setting a [`AVCaptureDevice.ExposureMode.custom`](avcapturedevice/exposuremode-swift.enum/custom.md) exposure mode or manual exposure bracketing.
-- Locking focus with a lens position to a value other than [`currentLensPosition`](avcapturedevice/currentlensposition.md).
-- Locking automatic white balance with device white balance gains other than [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md).
+- Setting a [`AVCaptureDevice.ExposureMode.custom`](../exposuremode-swift.enum/custom.md) exposure mode or manual exposure bracketing.
+- Locking focus with a lens position to a value other than [`currentLensPosition`](../currentlensposition.md).
+- Locking automatic white balance with device white balance gains other than [`currentWhiteBalanceGains`](../currentwhitebalancegains.md).
 
 Even when locked, exposure duration, ISO, aperture, white balance gains, or lens position may change when the device switches from one camera to the other. The overall exposure, white balance, and focus position however should be consistent.
 
-You can only retrieve devices of this type using an [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) or by calling [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md).
+You can only retrieve devices of this type using an [`AVCaptureDevice.DiscoverySession`](../discoverysession.md) or by calling [`default(_:for:position:)`](../default%28_,for,position%29.md).
 
 ## See Also
 
-- [static let builtInWideAngleCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md)
+### Cameras
+- [static let builtInWideAngleCamera: AVCaptureDevice.DeviceType](./builtinwideanglecamera.md)
   A built-in wide-angle camera device type.
-- [static let builtInUltraWideCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinultrawidecamera.md)
+- [static let builtInUltraWideCamera: AVCaptureDevice.DeviceType](./builtinultrawidecamera.md)
   A built-in camera device type with a shorter focal length than a wide-angle camera.
-- [static let builtInTelephotoCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtintelephotocamera.md)
+- [static let builtInTelephotoCamera: AVCaptureDevice.DeviceType](./builtintelephotocamera.md)
   A built-in camera device type with a longer focal length than a wide-angle camera.
-- [static let builtInDualWideCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtindualwidecamera.md)
+- [static let builtInDualWideCamera: AVCaptureDevice.DeviceType](./builtindualwidecamera.md)
   A built-in camera device type that consists of two cameras of fixed focal length, one ultrawide angle and one wide angle.
-- [static let builtInTripleCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtintriplecamera.md)
+- [static let builtInTripleCamera: AVCaptureDevice.DeviceType](./builtintriplecamera.md)
   A built-in camera device type that consists of three cameras of fixed focal length, one ultrawide angle, one wide angle, and one telephoto.
-- [static let continuityCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/continuitycamera.md)
+- [static let continuityCamera: AVCaptureDevice.DeviceType](./continuitycamera.md)
   A Continuity Camera device type.
-- [static let builtInDuoCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinduocamera.md)
+- [static let builtInDuoCamera: AVCaptureDevice.DeviceType](./builtinduocamera.md)
   A built-in dual camera device type.
 
 

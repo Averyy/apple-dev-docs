@@ -1,7 +1,8 @@
 # CPMessageTrailingItem.mute
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Show a muted speaker icon.
 
@@ -16,9 +17,14 @@ Show a muted speaker icon.
 case mute
 ```
 
+```c
+CPMessageTrailingItemMute
+```
+
 ## See Also
 
-- [CPMessageTrailingItem.none](cpmessagetrailingitem/none.md)
+### Trailing Items
+- [CPMessageTrailingItem.none](./none.md)
   Don’t show a trailing item.
 
 

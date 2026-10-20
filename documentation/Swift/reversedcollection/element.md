@@ -1,7 +1,8 @@
 # ReversedCollection.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a valid position in the collection.
 
@@ -19,6 +20,8 @@ A type that represents a valid position in the collection.
 ```swift
 typealias Element = Base.Element
 ```
+
+Available when `Base` conforms to `BidirectionalCollection`.
 
 #### Discussion
 

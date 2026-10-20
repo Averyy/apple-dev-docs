@@ -1,7 +1,8 @@
 # VerifyFirmwarePasswordCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to verify the firmware password on a device.
 
@@ -10,14 +11,14 @@ The command to verify the firmware password on a device.
 
 ## Declaration
 
-```swift
+```
 object VerifyFirmwarePasswordCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object VerifyFirmwarePasswordCommand.Command](verifyfirmwarepasswordcommand/command-data.dictionary.md)
+- [object VerifyFirmwarePasswordCommand.Command](./verifyfirmwarepasswordcommand/command-data.dictionary.md)
   The command to verify the firmware password on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object VerifyFirmwarePasswordCommand
 
 ## See Also
 
-- [object VerifyFirmwarePasswordResponse](verifyfirmwarepasswordresponse.md)
+### Commands and responses
+- [object VerifyFirmwarePasswordResponse](./verifyfirmwarepasswordresponse.md)
   A response from the device after it processes the command to verify the firmware password on a device.
 
 

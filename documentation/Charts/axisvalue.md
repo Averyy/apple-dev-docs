@@ -1,7 +1,8 @@
 # AxisValue
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value for an axis mark.
 
@@ -23,32 +24,33 @@ struct AxisValue
 ## Topics
 
 ### Instance Properties
-- [var count: Int](axisvalue/count.md)
+- [var count: Int](./axisvalue/count.md)
   The number of values on this axis.
-- [var index: Int](axisvalue/index.md)
+- [var index: Int](./axisvalue/index.md)
   The index of the value along the axis.
 ### Instance Methods
-- [func `as`<P>(P.Type) -> P?](axisvalue/as(_:).md)
+- [func `as`<P>(P.Type) -> P?](./axisvalue/as%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AxisMark](axismark.md)
+### Axis marks
+- [protocol AxisMark](./axismark.md)
   A type that serves as the basic building block for the elements of an axis.
-- [struct AxisTick](axistick.md)
+- [struct AxisTick](./axistick.md)
   A mark that a chart draws on an axis to indicate a reference point along that axis.
-- [struct AxisGridLine](axisgridline.md)
+- [struct AxisGridLine](./axisgridline.md)
   A line that a chart draws across its plot area to indicate a reference point along a particular axis.
-- [struct AxisValueLabel](axisvaluelabel.md)
+- [struct AxisValueLabel](./axisvaluelabel.md)
   A label that describes the value for an axis mark.
-- [struct AnyAxisMark](anyaxismark.md)
+- [struct AnyAxisMark](./anyaxismark.md)
   A type-erased axis mark.
-- [struct AxisMarkBuilder](axismarkbuilder.md)
+- [struct AxisMarkBuilder](./axismarkbuilder.md)
   A result builder that constructs axis marks and overrides default marks.
 
 

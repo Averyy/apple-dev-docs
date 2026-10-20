@@ -1,7 +1,8 @@
 # kVTDecompressionProperty_OnlyTheseFrames_IFrames
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,11 +18,16 @@
 let kVTDecompressionProperty_OnlyTheseFrames_IFrames: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionProperty_OnlyTheseFrames_IFrames;
+```
+
 ## See Also
 
-- [let kVTDecompressionProperty_OnlyTheseFrames_AllFrames: CFString](kvtdecompressionproperty_onlytheseframes_allframes.md)
-- [let kVTDecompressionProperty_OnlyTheseFrames_KeyFrames: CFString](kvtdecompressionproperty_onlytheseframes_keyframes.md)
-- [let kVTDecompressionProperty_OnlyTheseFrames_NonDroppableFrames: CFString](kvtdecompressionproperty_onlytheseframes_nondroppableframes.md)
+### Frame Constants
+- [let kVTDecompressionProperty_OnlyTheseFrames_AllFrames: CFString](./kvtdecompressionproperty_onlytheseframes_allframes.md)
+- [let kVTDecompressionProperty_OnlyTheseFrames_KeyFrames: CFString](./kvtdecompressionproperty_onlytheseframes_keyframes.md)
+- [let kVTDecompressionProperty_OnlyTheseFrames_NonDroppableFrames: CFString](./kvtdecompressionproperty_onlytheseframes_nondroppableframes.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AppEnum(schema:)
 
 **Framework**: App Intents  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 A Swift macro you use to make sure your app enum conforms to a schema.
 
@@ -23,13 +24,14 @@ A Swift macro you use to make sure your app enum conforms to a schema.
 
 ## Mentions
 
-- [Making actions and content discoverable by Apple Intelligence](making-actions-and-content-discoverable-by-apple-intelligence.md)
+- [Making actions and content discoverable by Apple Intelligence](./making-actions-and-content-discoverable-by-apple-intelligence.md)
 
 ## See Also
 
-- [macro AppIntent<T>(schema: T)](appintent(schema:).md)
+### Markup macros
+- [macro AppIntent<T>(schema: T)](./appintent%28schema%29.md)
   A Swift macro you use to make sure your app intent conforms to an schema.
-- [macro AppEntity<T>(schema: T)](appentity(schema:).md)
+- [macro AppEntity<T>(schema: T)](./appentity%28schema%29.md)
   A Swift macro you use to make sure your app entity conforms to a schema.
 
 

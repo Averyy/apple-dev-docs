@@ -1,7 +1,8 @@
 # headings
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 System Rotor allowing users to iterate through all headings.
 
@@ -22,7 +23,8 @@ static var headings: AccessibilitySystemRotor { get }
 
 ## See Also
 
-- [static func headings(level: AccessibilityHeadingLevel) -> AccessibilitySystemRotor](accessibilitysystemrotor/headings(level:).md)
+### Iterating through headings
+- [static func headings(level: AccessibilityHeadingLevel) -> AccessibilitySystemRotor](./headings%28level%29.md)
   System Rotors allowing users to iterate through all headings, of various heading levels.
 
 

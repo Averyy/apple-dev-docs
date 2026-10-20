@@ -1,7 +1,8 @@
 # clamped(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of this range clamped to the given limiting range.
 
@@ -19,6 +20,8 @@ Returns a copy of this range clamped to the given limiting range.
 ```swift
 func clamped(to limits: Range<Bound>) -> Range<Bound>
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # sourceName
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name of the layer that the constraint is calculated relative to.
 
@@ -15,15 +16,20 @@ Name of the layer that the constraint is calculated relative to.
 var sourceName: String { get }
 ```
 
+```objc
+@property (readonly) NSString * sourceName;
+```
+
 ## See Also
 
-- [var attribute: CAConstraintAttribute](caconstraint/attribute.md)
+### Accessing Constraint Values
+- [var attribute: CAConstraintAttribute](./attribute.md)
   The attribute the constraint affects.
-- [var offset: CGFloat](caconstraint/offset.md)
+- [var offset: CGFloat](./offset.md)
   Offset value of the constraint attribute.
-- [var scale: CGFloat](caconstraint/scale.md)
+- [var scale: CGFloat](./scale.md)
   Scale factor of the constraint attribute.
-- [var sourceAttribute: CAConstraintAttribute](caconstraint/sourceattribute.md)
+- [var sourceAttribute: CAConstraintAttribute](./sourceattribute.md)
   The constraint attribute of the layer the receiver is calculated relative to
 
 

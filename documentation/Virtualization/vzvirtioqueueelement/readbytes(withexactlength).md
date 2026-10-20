@@ -1,7 +1,8 @@
 # readBytes(withExactLength:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the number of bytes you specify from the read buffers and return result as a data object.
 
@@ -14,9 +15,13 @@ Reads the number of bytes you specify from the read buffers and return result as
 func readBytes(withExactLength exactLength: Int) throws -> Data
 ```
 
+```objc
+- (NSData *) readBytesWithExactLength:(NSUInteger) exactLength error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object filled with the memory that the framework read, or `nil` if the read failed.
+An [`NSData`](../../Foundation/nsdata.md) object filled with the memory that the framework read, or `nil` if the read failed.
 
 #### Discussion
 

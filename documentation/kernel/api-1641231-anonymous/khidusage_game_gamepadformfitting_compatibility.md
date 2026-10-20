@@ -1,14 +1,15 @@
 # kHIDUsage_Game_GamepadFormFitting_Compatibility
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Game_GamepadFormFitting_Compatibility = 0x39
 ```
 

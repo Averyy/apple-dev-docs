@@ -1,7 +1,8 @@
 # BGContinuedProcessingTaskRequest.SubmissionStrategy
 
 **Framework**: Background Tasks  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The ways your app suggests the system handle your task’s submission under varying conditions.
 
@@ -16,36 +17,41 @@ The ways your app suggests the system handle your task’s submission under vary
 enum SubmissionStrategy
 ```
 
+```c
+enum BGContinuedProcessingTaskRequestSubmissionStrategy : NSInteger;
+```
+
 #### Overview
 
-The Continuous Background Task request ([`BGContinuedProcessingTaskRequest`](bgcontinuedprocessingtaskrequest.md)) property [`strategy`](bgcontinuedprocessingtaskrequest/strategy.md) is of this type.
+The Continuous Background Task request ([`BGContinuedProcessingTaskRequest`](../bgcontinuedprocessingtaskrequest.md)) property [`strategy`](./strategy.md) is of this type.
 
-For more information on submission strategies, see [`Performing long-running tasks on iOS and iPadOS`](performing-long-running-tasks-on-ios-and-ipados.md).
+For more information on submission strategies, see [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md).
 
 ## Topics
 
 ### Choosing a strategy
-- [BGContinuedProcessingTaskRequest.SubmissionStrategy.fail](bgcontinuedprocessingtaskrequest/submissionstrategy/fail.md)
+- [BGContinuedProcessingTaskRequest.SubmissionStrategy.fail](./submissionstrategy/fail.md)
   An option that fails the submission of a continuous background task if the system can’t run it immediately.
-- [BGContinuedProcessingTaskRequest.SubmissionStrategy.queue](bgcontinuedprocessingtaskrequest/submissionstrategy/queue.md)
+- [BGContinuedProcessingTaskRequest.SubmissionStrategy.queue](./submissionstrategy/queue.md)
   An option that queues a continuous background task to begin as soon as possible.
 ### Creating a strategy
-- [init?(rawValue: Int)](bgcontinuedprocessingtaskrequest/submissionstrategy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./submissionstrategy/init%28rawvalue%29.md)
   Creates a submission strategy.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var strategy: BGContinuedProcessingTaskRequest.SubmissionStrategy](bgcontinuedprocessingtaskrequest/strategy.md)
+### Choosing a processing strategy
+- [var strategy: BGContinuedProcessingTaskRequest.SubmissionStrategy](./strategy.md)
   The submission strategy for the scheduler to abide by.
 
 

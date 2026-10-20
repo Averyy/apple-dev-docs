@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the combined depth and stencil state.
@@ -11,7 +12,7 @@ Configures the combined depth and stencil state.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,27 +21,32 @@ Configures the combined depth and stencil state.
 func setDepthStencilState(_ depthStencilState: (any MTLDepthStencilState)?)
 ```
 
+```objc
+- (void) setDepthStencilState:(id<MTLDepthStencilState>) depthStencilState;
+```
+
 #### Discussion
 
-This method changes the combined depth and stencil state for the render command encoder that’s compatible with its depth and stencil attachment configuration. For example, if the new state enables depth testing or depth writing, the render pass needs to have a depth attachment. Similarly, if the new state enables stencil testing or stencil writing, the render pass’s stencil needs to have a stencil attachment. You create depth and stencil attachments for a render pass by assigning the [`depthAttachment`](mtlrenderpassdescriptor/depthattachment.md) and [`stencilAttachment`](mtlrenderpassdescriptor/stencilattachment.md) properties of the [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance that creates it.
+This method changes the combined depth and stencil state for the render command encoder that’s compatible with its depth and stencil attachment configuration. For example, if the new state enables depth testing or depth writing, the render pass needs to have a depth attachment. Similarly, if the new state enables stencil testing or stencil writing, the render pass’s stencil needs to have a stencil attachment. You create depth and stencil attachments for a render pass by assigning the [`depthAttachment`](../mtlrenderpassdescriptor/depthattachment.md) and [`stencilAttachment`](../mtlrenderpassdescriptor/stencilattachment.md) properties of the [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) instance that creates it.
 
-Pass `nil` to clear the state from the previous call, which restores a state that’s equivalent to the default values of an [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance’s properties.
+Pass `nil` to clear the state from the previous call, which restores a state that’s equivalent to the default values of an [`MTLDepthStencilDescriptor`](../mtldepthstencildescriptor.md) instance’s properties.
 
 ## Parameters
 
-- `depthStencilState`: An instance that conforms to the [`MTLDepthStencilState`](mtldepthstencilstate.md) protocol.
+- `depthStencilState`: An instance that conforms to the [`MTLDepthStencilState`](../mtldepthstencilstate.md) protocol.
 
 ## See Also
 
-- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtlrendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
+### Configuring depth and stencil behavior
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](./setdepthbias%28_,slopescale,clamp%29.md)
   Configures the adjustments a render pass applies to depth values from fragment functions by a scaling factor and bias.
-- [func setDepthClipMode(MTLDepthClipMode)](mtlrendercommandencoder/setdepthclipmode(_:).md)
+- [func setDepthClipMode(MTLDepthClipMode)](./setdepthclipmode%28_%29.md)
   Configures how the render pipeline handles fragments outside the near and far planes of the view frustum.
-- [func setDepthTestBounds(ClosedRange<Float>)](mtlrendercommandencoder/setdepthtestbounds(_:).md)
+- [func setDepthTestBounds(ClosedRange<Float>)](./setdepthtestbounds%28_%29.md)
   Configures the range for depth bounds testing.
-- [func setStencilReferenceValue(UInt32)](mtlrendercommandencoder/setstencilreferencevalue(_:).md)
+- [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures the same comparison value for front- and back-facing primitives.
-- [func setStencilReferenceValues(front: UInt32, back: UInt32)](mtlrendercommandencoder/setstencilreferencevalues(front:back:).md)
+- [func setStencilReferenceValues(front: UInt32, back: UInt32)](./setstencilreferencevalues%28front,back%29.md)
   Configures different comparison values for front- and back-facing primitives.
 
 

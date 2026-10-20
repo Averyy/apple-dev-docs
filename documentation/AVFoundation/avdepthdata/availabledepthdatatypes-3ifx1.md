@@ -1,7 +1,8 @@
 # availableDepthDataTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of depth data formats to which you can convert this depth data.
 
@@ -22,15 +23,16 @@ var availableDepthDataTypes: [OSType] { get }
 
 #### Discussion
 
-Use the [`converting(toDepthDataType:)`](avdepthdata/converting(todepthdatatype:).md) method to obtain a converted depth data object using one of the types in this list.
+Use the [`converting(toDepthDataType:)`](./converting%28todepthdatatype%29.md) method to obtain a converted depth data object using one of the types in this list.
 
 ## See Also
 
-- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avdepthdata/applyingexiforientation(_:).md)
+### Transforming and processing
+- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](./applyingexiforientation%28_%29.md)
   Returns a derivative depth data object by mirroring or rotating it to the specified orientation.
-- [func converting(toDepthDataType: OSType) -> Self](avdepthdata/converting(todepthdatatype:).md)
+- [func converting(toDepthDataType: OSType) -> Self](./converting%28todepthdatatype%29.md)
   Returns a derivative depth data object by converting the depth data map to the specified data type.
-- [func replacingDepthDataMap(with: CVPixelBuffer) throws -> Self](avdepthdata/replacingdepthdatamap(with:).md)
+- [func replacingDepthDataMap(with: CVPixelBuffer) throws -> Self](./replacingdepthdatamap%28with%29.md)
   Returns a derivative depth data object by replacing the depth data map.
 
 

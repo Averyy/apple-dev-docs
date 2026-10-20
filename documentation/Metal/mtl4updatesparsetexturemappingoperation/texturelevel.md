@@ -1,7 +1,8 @@
 # textureLevel
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the mipmap level in the texture to update.
 
@@ -19,9 +20,13 @@ The index of the mipmap level in the texture to update.
 var textureLevel: Int
 ```
 
+```c
+NSUInteger textureLevel;
+```
+
 #### Discussion
 
-Provide a value between `0` and the texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md).
+Provide a value between `0` and the texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md).
 
 
 ---

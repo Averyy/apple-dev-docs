@@ -1,17 +1,18 @@
 # EKParticipantRole.nonParticipant
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant does not have an active role in the event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The participant does not have an active role in the event.
 case nonParticipant
 ```
 
+```c
+EKParticipantRoleNonParticipant
+```
+
 ## See Also
 
-- [EKParticipantRole.unknown](ekparticipantrole/unknown.md)
+### Constants
+- [EKParticipantRole.unknown](./unknown.md)
   The participant’s role is unknown.
-- [EKParticipantRole.required](ekparticipantrole/required.md)
+- [EKParticipantRole.required](./required.md)
   The participant’s attendance is required.
-- [EKParticipantRole.optional](ekparticipantrole/optional.md)
+- [EKParticipantRole.optional](./optional.md)
   The participant’s attendance is optional.
-- [EKParticipantRole.chair](ekparticipantrole/chair.md)
+- [EKParticipantRole.chair](./chair.md)
   The participant is the chair of the event.
 
 

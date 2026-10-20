@@ -1,7 +1,8 @@
 # AVCaptureOutput.DataDroppedReason.outOfBuffers
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system dropped data because the capture output exhausted its internal pool of memory buffers.
 
@@ -19,17 +20,22 @@ The system dropped data because the capture output exhausted its internal pool o
 case outOfBuffers
 ```
 
+```c
+AVCaptureOutputDataDroppedReasonOutOfBuffers
+```
+
 #### Discussion
 
 This situation typically indicates that your delegate object is holding on to captured data buffers for too long. If you need to perform extended processing of captured data, copy that data into buffers whose lifetimes you manage instead of relying on buffers vended by the capture output.
 
 ## See Also
 
-- [AVCaptureOutput.DataDroppedReason.none](avcaptureoutput/datadroppedreason/none.md)
+### Reasons
+- [AVCaptureOutput.DataDroppedReason.none](./none.md)
   The system didn’t drop data.
-- [AVCaptureOutput.DataDroppedReason.lateData](avcaptureoutput/datadroppedreason/latedata.md)
+- [AVCaptureOutput.DataDroppedReason.lateData](./latedata.md)
   The system dropped data because you’ve configured capture output to drop data when delegate queue is in a blocked state, and there’s data to deliver.
-- [AVCaptureOutput.DataDroppedReason.discontinuity](avcaptureoutput/datadroppedreason/discontinuity.md)
+- [AVCaptureOutput.DataDroppedReason.discontinuity](./discontinuity.md)
   The system dropped data because the device providing data experienced a discontinuity, and the output lost an unknown number of data objects.
 
 

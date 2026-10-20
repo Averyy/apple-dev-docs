@@ -1,7 +1,8 @@
 # kAudioUnitProperty_SpatialMixerPersonalizedHRTFMode
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -17,19 +18,24 @@
 var kAudioUnitProperty_SpatialMixerPersonalizedHRTFMode: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_SpatialMixerPersonalizedHRTFMode
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_ReverbRoomType: AudioUnitPropertyID](kaudiounitproperty_reverbroomtype.md)
-- [var kAudioUnitProperty_SpatialMixerAttenuationCurve: AudioUnitPropertyID](kaudiounitproperty_spatialmixerattenuationcurve.md)
-- [var kAudioUnitProperty_SpatialMixerDistanceParams: AudioUnitPropertyID](kaudiounitproperty_spatialmixerdistanceparams.md)
-- [var kAudioUnitProperty_SpatialMixerRenderingFlags: AudioUnitPropertyID](kaudiounitproperty_spatialmixerrenderingflags.md)
-- [var kAudioUnitProperty_SpatializationAlgorithm: AudioUnitPropertyID](kaudiounitproperty_spatializationalgorithm.md)
-- [var kAudioUnitProperty_UsesInternalReverb: AudioUnitPropertyID](kaudiounitproperty_usesinternalreverb.md)
-- [var kAudioUnitProperty_SpatialMixerOutputType: AudioUnitPropertyID](kaudiounitproperty_spatialmixeroutputtype.md)
-- [var kAudioUnitProperty_SpatialMixerPointSourceInHeadMode: AudioUnitPropertyID](kaudiounitproperty_spatialmixerpointsourceinheadmode.md)
-- [var kAudioUnitProperty_SpatialMixerSourceMode: AudioUnitPropertyID](kaudiounitproperty_spatialmixersourcemode.md)
-- [var kAudioUnitProperty_SpatialMixerAnyInputIsUsingPersonalizedHRTF: AudioUnitPropertyID](kaudiounitproperty_spatialmixeranyinputisusingpersonalizedhrtf.md)
-- [var kAudioUnitProperty_SpatialMixerEnableHeadTracking: AudioUnitPropertyID](kaudiounitproperty_spatialmixerenableheadtracking.md)
+### Constants
+- [var kAudioUnitProperty_ReverbRoomType: AudioUnitPropertyID](./kaudiounitproperty_reverbroomtype.md)
+- [var kAudioUnitProperty_SpatialMixerAttenuationCurve: AudioUnitPropertyID](./kaudiounitproperty_spatialmixerattenuationcurve.md)
+- [var kAudioUnitProperty_SpatialMixerDistanceParams: AudioUnitPropertyID](./kaudiounitproperty_spatialmixerdistanceparams.md)
+- [var kAudioUnitProperty_SpatialMixerRenderingFlags: AudioUnitPropertyID](./kaudiounitproperty_spatialmixerrenderingflags.md)
+- [var kAudioUnitProperty_SpatializationAlgorithm: AudioUnitPropertyID](./kaudiounitproperty_spatializationalgorithm.md)
+- [var kAudioUnitProperty_UsesInternalReverb: AudioUnitPropertyID](./kaudiounitproperty_usesinternalreverb.md)
+- [var kAudioUnitProperty_SpatialMixerOutputType: AudioUnitPropertyID](./kaudiounitproperty_spatialmixeroutputtype.md)
+- [var kAudioUnitProperty_SpatialMixerPointSourceInHeadMode: AudioUnitPropertyID](./kaudiounitproperty_spatialmixerpointsourceinheadmode.md)
+- [var kAudioUnitProperty_SpatialMixerSourceMode: AudioUnitPropertyID](./kaudiounitproperty_spatialmixersourcemode.md)
+- [var kAudioUnitProperty_SpatialMixerAnyInputIsUsingPersonalizedHRTF: AudioUnitPropertyID](./kaudiounitproperty_spatialmixeranyinputisusingpersonalizedhrtf.md)
+- [var kAudioUnitProperty_SpatialMixerEnableHeadTracking: AudioUnitPropertyID](./kaudiounitproperty_spatialmixerenableheadtracking.md)
 
 
 ---

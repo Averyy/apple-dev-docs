@@ -1,14 +1,15 @@
 # idle_tickle
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 idle_tickle_t *idle_tickle;
 ```
 

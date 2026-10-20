@@ -1,14 +1,15 @@
 # init(superOffPeak:offPeak:partialPeak:onPeak:criticalPeak:unknown:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the energy peak data.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the input specular albedo for this denoiser scaler.
@@ -17,6 +18,10 @@ The pixel format of the input specular albedo for this denoiser scaler.
 
 ```swift
 var specularAlbedoTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat specularAlbedoTextureFormat;
 ```
 
 

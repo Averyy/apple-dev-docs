@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a draw command that renders multiple instances of tessellated patches.
@@ -20,23 +21,32 @@ Encodes a draw command that renders multiple instances of tessellated patches.
 func drawPatches(numberOfPatchControlPoints: Int, patchStart: Int, patchCount: Int, patchIndexBuffer: (any MTLBuffer)?, patchIndexBufferOffset: Int, instanceCount: Int, baseInstance: Int)
 ```
 
+```objc
+- (void) drawPatches:(NSUInteger) numberOfPatchControlPoints patchStart:(NSUInteger) patchStart patchCount:(NSUInteger) patchCount patchIndexBuffer:(id<MTLBuffer>) patchIndexBuffer patchIndexBufferOffset:(NSUInteger) patchIndexBufferOffset instanceCount:(NSUInteger) instanceCount baseInstance:(NSUInteger) baseInstance;
+```
+
 #### Discussion
 
-The method records the encoder’s current rendering state and resources the command needs as it runs. You can safely change the encoder’s render pipeline state to encode other commands after calling this method. Subsequent changes to the state don’t affect the commands already in the encoder’s [`MTLCommandBuffer`](mtlcommandbuffer.md).
+The method records the encoder’s current rendering state and resources the command needs as it runs. You can safely change the encoder’s render pipeline state to encode other commands after calling this method. Subsequent changes to the state don’t affect the commands already in the encoder’s [`MTLCommandBuffer`](../mtlcommandbuffer.md).
 
 ## Parameters
 
 - `numberOfPatchControlPoints`: The number of control points for each patch, which needs to be in the range `[0, 32]`.
 - `patchStart`: The first patch the command draws.
 - `patchCount`: The number of patches the command draws for each instance.
-- `patchIndexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the indices to patches.
+- `patchIndexBuffer`: An [`MTLBuffer`](../mtlbuffer.md) instance that contains the indices to patches.
 - `patchIndexBufferOffset`: An integer that represents the location, in bytes, from the start of `patchIndexBuffer` where the patch indices begin.
 - `instanceCount`: The number of times the command draws `patchCount` patches.
-- `baseInstance`: The lowest value the command passes to your vertex shader’s parameter with the `instance_id` attribute. The command assigns each drawing instance a unique `instance_id` value that increases from `baseInstance` through `(baseInstance + instanceCount - 1)`. Your shader can use that value to identify which instance the vertex belongs to. For more information about the `instance_id` argument attribute for vertex shaders, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+- `baseInstance`: The lowest value the command passes to your vertex shader’s parameter with the `instance_id` attribute.
+
+  The command assigns each drawing instance a unique `instance_id` value that increases from `baseInstance` through `(baseInstance + instanceCount - 1)`. Your shader can use that value to identify which instance the vertex belongs to.
+
+  For more information about the `instance_id` argument attribute for vertex shaders, see the [Metal Shading Language Specification (PDF)](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 
-- [func drawPatches(numberOfPatchControlPoints: Int, patchIndexBuffer: (any MTLBuffer)?, patchIndexBufferOffset: Int, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)](mtlrendercommandencoder/drawpatches(numberofpatchcontrolpoints:patchindexbuffer:patchindexbufferoffset:indirectbuffer:indirectbufferoffset:).md)
+### Drawing with tessellation patches
+- [func drawPatches(numberOfPatchControlPoints: Int, patchIndexBuffer: (any MTLBuffer)?, patchIndexBufferOffset: Int, indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)](./drawpatches%28numberofpatchcontrolpoints,patchindexbuffer,patchindexbufferoffset,indirectbuffer,indirectbufferoffset%29.md)
   Encodes a draw command that renders multiple instances of tessellated patches with indirect arguments.
 
 

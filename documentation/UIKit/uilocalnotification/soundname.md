@@ -1,15 +1,18 @@
 # soundName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the file containing the sound to play when an alert is displayed.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 10.0
+- iPadOS 4.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- watchOS 2.0+ - Deprecated in 3.0
+
+> **Deprecated**: For more information, see [`UILocalNotification`](../uilocalnotification.md).
 
 ## Declaration
 
@@ -17,17 +20,22 @@ The name of the file containing the sound to play when an alert is displayed.
 var soundName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * soundName;
+```
+
 #### Discussion
 
-For this property, specify the filename (including extension) of a sound resource in the app’s main bundle or [`UILocalNotificationDefaultSoundName`](uilocalnotificationdefaultsoundname.md) to request the default system sound. When the system displays an alert for a local notification or badges an app icon, it plays this sound. The default value is `nil` (no sound). Sounds that last longer than 30 seconds are not supported. If you specify a file with a sound that plays over 30 seconds, the default sound is played instead.
+For this property, specify the filename (including extension) of a sound resource in the app’s main bundle or [`UILocalNotificationDefaultSoundName`](../uilocalnotificationdefaultsoundname.md) to request the default system sound. When the system displays an alert for a local notification or badges an app icon, it plays this sound. The default value is `nil` (no sound). Sounds that last longer than 30 seconds are not supported. If you specify a file with a sound that plays over 30 seconds, the default sound is played instead.
 
-For information on valid sound resources, see [`Registering, Scheduling, and Handling User Notifications`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/IPhoneOSClientImp.html#//apple_ref/doc/uid/TP40008194-CH103) in [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
+For information on valid sound resources, see [Registering, Scheduling, and Handling User Notifications](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/IPhoneOSClientImp.html#//apple_ref/doc/uid/TP40008194-CH103) in [Local and Remote Notification Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
 
 ## See Also
 
-- [var applicationIconBadgeNumber: Int](uilocalnotification/applicationiconbadgenumber.md)
+### Configuring other parts of the notification
+- [var applicationIconBadgeNumber: Int](./applicationiconbadgenumber.md)
   The number to display as the app’s icon badge.
-- [var userInfo: [AnyHashable : Any]?](uilocalnotification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary for passing custom information to the notified app.
 
 

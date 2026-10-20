@@ -1,7 +1,8 @@
 # isSelfContained
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the track references sample data only within its container file.
 
@@ -20,23 +21,26 @@ A Boolean value that indicates whether the track references sample data only wit
 static var isSelfContained: AVAsyncProperty<Root, Bool> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [static var formatDescriptions: AVAsyncProperty<Root, [CMFormatDescription]>](avpartialasyncproperty/formatdescriptions.md)
+### Loading track information
+- [static var formatDescriptions: AVAsyncProperty<Root, [CMFormatDescription]>](./formatdescriptions.md)
   The format descriptions of the media samples that a track references.
-- [static var isPlayable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isplayable-6txa5.md)
+- [static var isPlayable: AVAsyncProperty<Root, Bool>](./isplayable-6txa5.md)
   A Boolean value that indicates whether the track is playable in the current environment.
-- [static var isDecodable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isdecodable.md)
+- [static var isDecodable: AVAsyncProperty<Root, Bool>](./isdecodable.md)
   A Boolean value that indicates whether the track is decodable in the current environment.
-- [static var isEnabled: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isenabled.md)
+- [static var isEnabled: AVAsyncProperty<Root, Bool>](./isenabled.md)
   A Boolean value that indicates whether the track is in an enabled state.
-- [static var totalSampleDataLength: AVAsyncProperty<Root, Int64>](avpartialasyncproperty/totalsampledatalength.md)
+- [static var totalSampleDataLength: AVAsyncProperty<Root, Int64>](./totalsampledatalength.md)
   The total number of bytes of sample data the track requires.
-- [static var mediaCharacteristics: AVAsyncProperty<Root, [AVMediaCharacteristic]>](avpartialasyncproperty/mediacharacteristics.md)
+- [static var mediaCharacteristics: AVAsyncProperty<Root, [AVMediaCharacteristic]>](./mediacharacteristics.md)
   The media characteristics for the track.
 
 

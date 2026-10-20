@@ -1,7 +1,8 @@
 # widgetFamily
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The template of the widget — small, medium, or large.
 
@@ -25,13 +26,14 @@ Use this value to retrieve the widget size that the user chose for a widget.
 
 ## See Also
 
-- [var showsWidgetContainerBackground: Bool](environmentvalues/showswidgetcontainerbackground.md)
+### Widgets
+- [var showsWidgetContainerBackground: Bool](./showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
-- [var showsWidgetLabel: Bool](environmentvalues/showswidgetlabel.md)
+- [var showsWidgetLabel: Bool](./showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
-- [var widgetRenderingMode: WidgetRenderingMode](environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](./widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](./widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
 
 

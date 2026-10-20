@@ -1,12 +1,15 @@
 # drawsBackground()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the composition parameter view draws its background.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Returns whether the composition parameter view draws its background.
 func drawsBackground() -> Bool
 ```
 
+```objc
+- (BOOL) drawsBackground;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view draws its background; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the view draws its background; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func setDrawsBackground(Bool)](qccompositionparameterview/setdrawsbackground(_:).md)
+### Managing Background Drawing
+- [func setDrawsBackground(Bool)](./setdrawsbackground%28_%29.md)
   Sets whether the composition parameter view draws its background.
 
 

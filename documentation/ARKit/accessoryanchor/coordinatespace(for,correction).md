@@ -1,7 +1,8 @@
 # coordinateSpace(for:correction:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The coordinate space of a location on this accessory.
 

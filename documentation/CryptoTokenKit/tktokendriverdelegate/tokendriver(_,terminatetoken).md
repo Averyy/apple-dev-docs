@@ -1,7 +1,8 @@
 # tokenDriver(_:terminateToken:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to terminate the token you specify.
 
@@ -20,6 +21,10 @@ Tells the delegate to terminate the token you specify.
 optional func tokenDriver(_ driver: TKTokenDriver, terminateToken token: TKToken)
 ```
 
+```objc
+- (void) tokenDriver:(TKTokenDriver *) driver terminateToken:(TKToken *) token;
+```
+
 ## Parameters
 
 - `driver`: The token driver.
@@ -27,7 +32,8 @@ optional func tokenDriver(_ driver: TKTokenDriver, terminateToken token: TKToken
 
 ## See Also
 
-- [func tokenDriver(TKTokenDriver, tokenFor: TKToken.Configuration) throws -> TKToken](tktokendriverdelegate/tokendriver(_:tokenfor:).md)
+### Creating and Removing Tokens
+- [func tokenDriver(TKTokenDriver, tokenFor: TKToken.Configuration) throws -> TKToken](./tokendriver%28_,tokenfor%29.md)
   Creates a new token for the configuration you specify.
 
 

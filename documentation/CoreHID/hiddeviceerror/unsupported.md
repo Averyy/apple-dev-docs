@@ -1,7 +1,8 @@
 # HIDDeviceError.unsupported
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request with the provided arguments isn’t supported.
 

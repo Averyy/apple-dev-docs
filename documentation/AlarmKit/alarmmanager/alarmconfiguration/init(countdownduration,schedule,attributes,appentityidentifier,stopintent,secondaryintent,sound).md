@@ -1,7 +1,8 @@
 # init(countdownDuration:schedule:attributes:appEntityIdentifier:stopIntent:secondaryIntent:sound:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration that behaves like a countdown.
 
@@ -15,6 +16,8 @@ Creates a configuration that behaves like a countdown.
 ```swift
 init(countdownDuration: Alarm.CountdownDuration? = nil, schedule: Alarm.Schedule? = nil, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier? = nil, stopIntent: (any LiveActivityIntent)? = nil, secondaryIntent: (any LiveActivityIntent)? = nil, sound: AlertConfiguration.AlertSound = .default)
 ```
+
+Available when `Metadata` conforms to `AlarmMetadata`.
 
 ## Parameters
 

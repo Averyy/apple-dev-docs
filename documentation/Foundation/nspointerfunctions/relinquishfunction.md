@@ -1,7 +1,8 @@
 # relinquishFunction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function used to relinquish memory.
 
@@ -20,17 +21,22 @@ The function used to relinquish memory.
 var relinquishFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Void)? { get set }
 ```
 
+```objc
+@property (nullable) void (*)(const void *, unsigned long (*)(const void *)) relinquishFunction;
+```
+
 #### Discussion
 
 This specifies the function to use when an item is removed from a table or pointer array.
 
 ## See Also
 
-- [var acquireFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?, ObjCBool) -> UnsafeMutableRawPointer)?](nspointerfunctions/acquirefunction.md)
+### Memory Configuration
+- [var acquireFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?, ObjCBool) -> UnsafeMutableRawPointer)?](./acquirefunction.md)
   The function used to acquire memory.
-- [var usesStrongWriteBarrier: Bool](nspointerfunctions/usesstrongwritebarrier.md)
+- [var usesStrongWriteBarrier: Bool](./usesstrongwritebarrier.md)
   Specifies whether, in a garbage collected environment, pointers should be assigned using a strong write barrier.
-- [var usesWeakReadAndWriteBarriers: Bool](nspointerfunctions/usesweakreadandwritebarriers.md)
+- [var usesWeakReadAndWriteBarriers: Bool](./usesweakreadandwritebarriers.md)
   Specifies whether, in a garbage collected environment, pointers should use weak read and write barriers.
 
 

@@ -1,7 +1,8 @@
 # makeListenerEndpoint(forServiceName:itemURL:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func makeListenerEndpoint(forServiceName serviceName: NSFileProviderServiceName, itemURL: URL) throws -> NSXPCListenerEndpoint
+```
+
+```objc
+- (NSXPCListenerEndpoint *) makeListenerEndpointForServiceName:(NSFileProviderServiceName) serviceName itemURL:(NSURL *) itemURL andReturnError:(NSError **) error;
 ```
 
 

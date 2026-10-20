@@ -1,23 +1,25 @@
 # headIndex
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 volatile uint32_t headIndex;
 ```
 
 ## See Also
 
-- [entryCount](iostreambufferqueue/entrycount.md)
-- [tailIndex](iostreambufferqueue/tailindex.md)
-- [queue](iostreambufferqueue/queue.md)
-- [IOStreamBufferQueueEntry](iostreambufferqueueentry.md)
+### Accessing queue contents
+- [entryCount](./entrycount.md)
+- [tailIndex](./tailindex.md)
+- [queue](./queue.md)
+- [IOStreamBufferQueueEntry](../iostreambufferqueueentry.md)
 
 
 ---

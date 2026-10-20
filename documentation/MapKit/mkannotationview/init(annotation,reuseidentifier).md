@@ -1,7 +1,8 @@
 # init(annotation:reuseIdentifier:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new annotation view.
 
@@ -19,13 +20,17 @@ Creates and returns a new annotation view.
 init(annotation: (any MKAnnotation)?, reuseIdentifier: String?)
 ```
 
+```objc
+- (instancetype) initWithAnnotation:(id<MKAnnotation>) annotation reuseIdentifier:(NSString *) reuseIdentifier;
+```
+
 #### Return Value
 
 The initialized annotation view, or `nil` if there’s a problem initializing the object.
 
 #### Discussion
 
-The reuse identifier provides a way for you to improve performance by recycling annotation views as the map scrolls on and off of the map. As MapKit no longer needs views, the map view moves them to a reuse queue. When a new annotation becomes visible, your app can request a view for that annotation by passing the appropriate reuse identifier string to the [`dequeueReusableAnnotationView(withIdentifier:)`](mkmapview/dequeuereusableannotationview(withidentifier:).md) method of [`MKMapView`](mkmapview.md).
+The reuse identifier provides a way for you to improve performance by recycling annotation views as the map scrolls on and off of the map. As MapKit no longer needs views, the map view moves them to a reuse queue. When a new annotation becomes visible, your app can request a view for that annotation by passing the appropriate reuse identifier string to the [`dequeueReusableAnnotationView(withIdentifier:)`](../mkmapview/dequeuereusableannotationview%28withidentifier%29.md) method of [`MKMapView`](../mkmapview.md).
 
 ## Parameters
 
@@ -34,12 +39,14 @@ The reuse identifier provides a way for you to improve performance by recycling 
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [init?(coder: NSCoder)](mkannotationview/init(coder:).md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating and preparing an annotation view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates an annotation view using data from the specified unarchiver.
-- [func prepareForReuse()](mkannotationview/prepareforreuse.md)
+- [func prepareForReuse()](./prepareforreuse%28%29.md)
   Calls this method when removing the view from the reuse queue.
-- [func prepareForDisplay()](mkannotationview/preparefordisplay.md)
+- [func prepareForDisplay()](./preparefordisplay%28%29.md)
   Notifies the annotation view that the map view is about to display it.
 
 

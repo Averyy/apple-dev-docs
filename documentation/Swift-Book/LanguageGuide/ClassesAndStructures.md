@@ -410,7 +410,7 @@ setting the width of `cinema` to `2048`
 doesn't affect the width stored in `hd`,
 as shown in the figure below:
 
-![](sharedStateStruct)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/sharedStateStruct@2x.png)
 
 The same behavior applies to enumerations:
 
@@ -519,7 +519,7 @@ Because classes are reference types,
 Effectively, they're just two different names for the same single instance,
 as shown in the figure below:
 
-![](sharedStateClass)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/sharedStateClass@2x.png)
 
 Checking the `frameRate` property of `tenEighty`
 shows that it correctly reports the new frame rate of `30.0`

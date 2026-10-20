@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Indicates whether playback is active.
@@ -20,7 +21,7 @@ var isPlaying: Bool { get set }
 
 #### Discussion
 
-Setting this to `true` should start playback; setting it to `false` should pause it. This property reflects playback intent — it should remain `true` while [`isBuffering`](avplaybackuserinterfaceplaybackcontrollable-9he54/isbuffering.md) is `true`, indicating that playback should resume automatically once sufficient data is available.
+Setting this to `true` should start playback; setting it to `false` should pause it. This property reflects playback intent — it should remain `true` while [`isBuffering`](./isbuffering.md) is `true`, indicating that playback should resume automatically once sufficient data is available.
 
 
 ---

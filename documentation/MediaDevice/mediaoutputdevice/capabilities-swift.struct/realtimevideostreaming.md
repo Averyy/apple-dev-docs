@@ -1,7 +1,8 @@
 # realtimeVideoStreaming
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Capable of receiving video samples and processing them in realtime.
 
@@ -18,7 +19,7 @@ static let realtimeVideoStreaming: MediaOutputDevice.Capabilities
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 
 ---

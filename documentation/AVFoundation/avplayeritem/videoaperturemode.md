@@ -1,7 +1,8 @@
 # videoApertureMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video aperture mode to apply during playback.
 
@@ -20,17 +21,22 @@ nonisolated
 var videoApertureMode: AVVideoApertureMode { get set }
 ```
 
+```objc
+@property (copy) AVVideoApertureMode videoApertureMode;
+```
+
 #### Discussion
 
-The default value for this property is [`cleanAperture`](avvideoaperturemode/cleanaperture.md).
+The default value for this property is [`cleanAperture`](../avvideoaperturemode/cleanaperture.md).
 
 ## See Also
 
-- [var presentationSize: CGSize](avplayeritem/presentationsize.md)
+### Configuring presentation
+- [var presentationSize: CGSize](./presentationsize.md)
   The size at which the visual portion of the item is presented by the player.
-- [var preferredMaximumResolution: CGSize](avplayeritem/preferredmaximumresolution.md)
+- [var preferredMaximumResolution: CGSize](./preferredmaximumresolution.md)
   The desired maximum resolution of a video that is to be downloaded.
-- [struct AVVideoApertureMode](avvideoaperturemode.md)
+- [struct AVVideoApertureMode](../avvideoaperturemode.md)
   A value that describes how a video is scaled or cropped.
 
 

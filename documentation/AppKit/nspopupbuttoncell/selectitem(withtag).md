@@ -1,12 +1,13 @@
 # selectItem(withTag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the menu item with the specified tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,19 @@ Selects the menu item with the specified tag.
 func selectItem(withTag tag: Int) -> Bool
 ```
 
+```objc
+- (BOOL) selectItemWithTag:(NSInteger) tag;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item was successfully selected; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the item was successfully selected; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If no item with the specified tag is found, this method returns [`false`](https://developer.apple.com/documentation/swift/false) and leaves the menu state unchanged.
+If no item with the specified tag is found, this method returns [`false`](../../Swift/false.md) and leaves the menu state unchanged.
 
-You typically assign tags to menu items from Interface Builder, but you can also assign them programmatically using the setTag: method of [`NSMenuItem`](nsmenuitem.md).
+You typically assign tags to menu items from Interface Builder, but you can also assign them programmatically using the setTag: method of [`NSMenuItem`](../nsmenuitem.md).
 
 ## Parameters
 
@@ -30,19 +35,20 @@ You typically assign tags to menu items from Interface Builder, but you can also
 
 ## See Also
 
-- [func select(NSMenuItem?)](nspopupbuttoncell/select(_:).md)
+### Dealing with selection
+- [func select(NSMenuItem?)](./select%28_%29.md)
   Selects the specified menu item.
-- [func selectItem(at: Int)](nspopupbuttoncell/selectitem(at:).md)
+- [func selectItem(at: Int)](./selectitem%28at%29.md)
   Selects the item in the menu at the specified index.
-- [func selectItem(withTitle: String)](nspopupbuttoncell/selectitem(withtitle:).md)
+- [func selectItem(withTitle: String)](./selectitem%28withtitle%29.md)
   Selects the item with the specified title.
-- [func setTitle(String?)](nspopupbuttoncell/settitle(_:).md)
+- [func setTitle(String?)](./settitle%28_%29.md)
   Sets the string displayed in the receiver when the user isn’t pressing the mouse button.
-- [var selectedItem: NSMenuItem?](nspopupbuttoncell/selecteditem.md)
+- [var selectedItem: NSMenuItem?](./selecteditem.md)
   The menu item last selected by the user.
-- [var indexOfSelectedItem: Int](nspopupbuttoncell/indexofselecteditem.md)
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the item last selected by the user.
-- [func synchronizeTitleAndSelectedItem()](nspopupbuttoncell/synchronizetitleandselecteditem.md)
+- [func synchronizeTitleAndSelectedItem()](./synchronizetitleandselecteditem%28%29.md)
   Synchronizes the pop-up button’s displayed item with the currently selected menu item.
 
 

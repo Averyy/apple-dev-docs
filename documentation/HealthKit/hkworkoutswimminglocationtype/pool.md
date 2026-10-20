@@ -1,7 +1,8 @@
 # HKWorkoutSwimmingLocationType.pool
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user swam in a pool.
 
@@ -19,11 +20,16 @@ The user swam in a pool.
 case pool
 ```
 
+```c
+HKWorkoutSwimmingLocationTypePool
+```
+
 ## See Also
 
-- [HKWorkoutSwimmingLocationType.openWater](hkworkoutswimminglocationtype/openwater.md)
+### Swimming Locations
+- [HKWorkoutSwimmingLocationType.openWater](./openwater.md)
   The user swam in open water like a lake or ocean.
-- [HKWorkoutSwimmingLocationType.unknown](hkworkoutswimminglocationtype/unknown.md)
+- [HKWorkoutSwimmingLocationType.unknown](./unknown.md)
   The swimming location could not be determined.
 
 

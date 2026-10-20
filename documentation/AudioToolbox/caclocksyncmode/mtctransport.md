@@ -1,10 +1,11 @@
 # CAClockSyncMode.mtcTransport
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case mtcTransport
 ```
 
+```c
+kCAClockSyncMode_MTCTransport
+```
+
 ## See Also
 
-- [CAClockSyncMode.internal](caclocksyncmode/internal.md)
-- [CAClockSyncMode.midiClockTransport](caclocksyncmode/midiclocktransport.md)
+### Constants
+- [CAClockSyncMode.internal](./internal.md)
+- [CAClockSyncMode.midiClockTransport](./midiclocktransport.md)
 
 
 ---

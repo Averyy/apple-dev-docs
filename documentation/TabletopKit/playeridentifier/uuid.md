@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A universally unique value to identify a player.
 

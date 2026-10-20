@@ -1,7 +1,8 @@
 # CertificateCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object CertificateCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object CertificateCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object CertificateCreateRequest.Data.Relationships](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object CertificateCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
 
 
 ---

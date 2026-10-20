@@ -1,7 +1,8 @@
 # print
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Corresponds to the “print” media type.
 

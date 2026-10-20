@@ -1,7 +1,8 @@
 # slopes
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How the framework determines the slope at each control point.
 

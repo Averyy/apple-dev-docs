@@ -1,7 +1,8 @@
 # gss_iter_creds(_:_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Iterates over all credentials.
 
@@ -18,23 +19,28 @@ Iterates over all credentials.
 func gss_iter_creds(_ min_stat: UnsafeMutablePointer<OM_uint32>, _ flags: OM_uint32, _ mech: gss_const_OID?, _ useriter: @escaping (gss_OID?, gss_cred_id_t?) -> Void) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_iter_creds(OM_uint32 *min_stat, OM_uint32 flags, gss_const_OID mech, void (^useriter)(gss_OID , gss_cred_id_t ));
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a description of other status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
 #### Discussion
 
-Use the [`gss_iter_creds_f(_:_:_:_:_:)`](gss_iter_creds_f(_:_:_:_:_:).md) function if you want to track the callbacks using a user-supplied context.
+Use the [`gss_iter_creds_f(_:_:_:_:_:)`](./gss_iter_creds_f%28_,_,_,_,_%29.md) function if you want to track the callbacks using a user-supplied context.
 
 ## Parameters
 
 - `flags`: No flags are currently defined. Pass 0 for this parameter.
 - `mech`: The mechanism type of credentials to iterate over. Pass in `GSS_C_NO_OID_SET` to iterate over all credentials.
-- `useriter`: A block that is called once for each credential. The block receives the credential’s mechanism and a copy of the credential as input on each iteration. Free the copy’s memory with a call to [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it. The block is called one final time with `NULL` inputs upon reaching the end of the list.
+- `useriter`: A block that is called once for each credential. The block receives the credential’s mechanism and a copy of the credential as input on each iteration. Free the copy’s memory with a call to [`gss_release_cred(_:_:)`](./gss_release_cred%28_,_%29.md) when you are done with it. The block is called one final time with `NULL` inputs upon reaching the end of the list.
 
 ## See Also
 
-- [func gss_iter_creds_f(UnsafeMutablePointer<OM_uint32>, OM_uint32, gss_const_OID?, UnsafeMutableRawPointer?, (UnsafeMutableRawPointer?, gss_OID?, gss_cred_id_t?) -> Void) -> OM_uint32](gss_iter_creds_f(_:_:_:_:_:).md)
+### Iteration
+- [func gss_iter_creds_f(UnsafeMutablePointer<OM_uint32>, OM_uint32, gss_const_OID?, UnsafeMutableRawPointer?, (UnsafeMutableRawPointer?, gss_OID?, gss_cred_id_t?) -> Void) -> OM_uint32](./gss_iter_creds_f%28_,_,_,_,_%29.md)
   Iterates over all credentials with a user context.
 
 

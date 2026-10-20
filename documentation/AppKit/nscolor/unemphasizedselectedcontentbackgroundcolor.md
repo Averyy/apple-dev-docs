@@ -1,7 +1,8 @@
 # unemphasizedSelectedContentBackgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for selected and unemphasized content.
 
@@ -14,17 +15,22 @@ The color to use for selected and unemphasized content.
 class var unemphasizedSelectedContentBackgroundColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * unemphasizedSelectedContentBackgroundColor;
+```
+
 #### Discussion
 
 Use this color when the window containing the content is not key, or when the view containing the content does not have key focus.
 
 ## See Also
 
-- [class var linkColor: NSColor](nscolor/linkcolor.md)
+### Content colors
+- [class var linkColor: NSColor](./linkcolor.md)
   The color to use for links.
-- [class var separatorColor: NSColor](nscolor/separatorcolor.md)
+- [class var separatorColor: NSColor](./separatorcolor.md)
   The color to use for separators between different sections of content.
-- [class var selectedContentBackgroundColor: NSColor](nscolor/selectedcontentbackgroundcolor.md)
+- [class var selectedContentBackgroundColor: NSColor](./selectedcontentbackgroundcolor.md)
   The color to use for the background of selected and emphasized content.
 
 

@@ -1,7 +1,8 @@
 # init(strength:smoothness:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a turbulence force effect.
 

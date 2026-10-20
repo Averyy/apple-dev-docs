@@ -1,7 +1,8 @@
 # CWSecurity.OWE
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.7+
@@ -12,9 +13,14 @@
 case OWE
 ```
 
+```c
+kCWSecurityOWE
+```
+
 ## See Also
 
-- [CWSecurity.oweTransition](cwsecurity/owetransition.md)
+### Enumeration Cases
+- [CWSecurity.oweTransition](./owetransition.md)
 
 
 ---

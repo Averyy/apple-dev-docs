@@ -1,24 +1,26 @@
 # strsep
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 char * strsep(char **, const char *);
 ```
 
 ## See Also
 
-- [strchr](1579345-strchr.md)
-- [strlen](1579342-strlen.md)
-- [strnlen](1579340-strnlen.md)
-- [strnstr](1579346-strnstr.md)
-- [strprefix](1579348-strprefix.md)
+### String Contents
+- [strchr](./api-1579345-strchr.md)
+- [strlen](./api-1579342-strlen.md)
+- [strnlen](./api-1579340-strnlen.md)
+- [strnstr](./api-1579346-strnstr.md)
+- [strprefix](./api-1579348-strprefix.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x-coordinate for the point.
 
@@ -19,9 +20,14 @@ The x-coordinate for the point.
 var x: Float
 ```
 
+```c
+float x;
+```
+
 ## See Also
 
-- [var y: Float](gcpoint2/y.md)
+### Accessing coordinates
+- [var y: Float](./y.md)
   The y-coordinate for the point.
 
 

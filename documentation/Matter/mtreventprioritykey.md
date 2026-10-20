@@ -1,7 +1,8 @@
 # MTREventPriorityKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTREventPriorityKey: String
+```
+
+```c
+extern NSString * const MTREventPriorityKey;
 ```
 
 

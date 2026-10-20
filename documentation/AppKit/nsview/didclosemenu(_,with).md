@@ -1,7 +1,8 @@
 # didCloseMenu(_:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after a contextual menu that was displayed from the receiving view has been closed.
 
@@ -14,9 +15,13 @@ Called after a contextual menu that was displayed from the receiving view has be
 func didCloseMenu(_ menu: NSMenu, with event: NSEvent?)
 ```
 
+```objc
+- (void) didCloseMenu:(NSMenu *) menu withEvent:(NSEvent *) event;
+```
+
 #### Discussion
 
-This method is called only if the contextual menu had been opened and the view has previously received the [`willOpenMenu(_:with:)`](nsview/willopenmenu(_:with:).md) method. When the view receives [`didCloseMenu(_:with:)`](nsview/didclosemenu(_:with:).md), it should reset its visual state, if necessary. For example, if a table view selected a row in response to a contextual menu being displayed, this method could deselect the row.
+This method is called only if the contextual menu had been opened and the view has previously received the [`willOpenMenu(_:with:)`](./willopenmenu%28_,with%29.md) method. When the view receives [`didCloseMenu(_:with:)`](./didclosemenu%28_,with%29.md), it should reset its visual state, if necessary. For example, if a table view selected a row in response to a contextual menu being displayed, this method could deselect the row.
 
 ## Parameters
 
@@ -25,11 +30,12 @@ This method is called only if the contextual menu had been opened and the view h
 
 ## See Also
 
-- [func menu(for: NSEvent) -> NSMenu?](nsview/menu(for:).md)
+### Managing Contextual Menus
+- [func menu(for: NSEvent) -> NSMenu?](./menu%28for%29.md)
   Overridden by subclasses to return a context-sensitive pop-up menu for a given mouse-down event.
-- [class var defaultMenu: NSMenu?](nsview/defaultmenu.md)
+- [class var defaultMenu: NSMenu?](./defaultmenu.md)
   Overridden by subclasses to return the default pop-up menu for instances of the receiving class.
-- [func willOpenMenu(NSMenu, with: NSEvent)](nsview/willopenmenu(_:with:).md)
+- [func willOpenMenu(NSMenu, with: NSEvent)](./willopenmenu%28_,with%29.md)
   Called just before a contextual menu for a view is opened on screen.
 
 

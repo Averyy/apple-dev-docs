@@ -1,22 +1,25 @@
 # cancel(promise)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a request using the provided request promise.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use `AbortSignal` instead. Pass an `AbortSignal` to the service method’s options to cancel requests.
 
 ## Declaration
 
-```swift
+```
 cancel(promise: Promise<unknown>): boolean;
 ```
 
 ## Mentions
 
-- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+- [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
 #### Return Value
 
@@ -28,7 +31,7 @@ Sometimes you need to cancel a request, either because a person initiates the ca
 
 The preferred way to cancel a request is to use an `AbortSignal`. Pass the `signal` property of an `AbortController` to the service method’s options, and call `abort()` on the controller when you need to cancel the request.
 
-Alternatively, you can cancel a request by passing its returned promise to the [`cancel()`](service/cancel.md) method:
+Alternatively, you can cancel a request by passing its returned promise to the [`cancel()`](./cancel.md) method:
 
 ```javascript
 const search = new mapkit.Search();

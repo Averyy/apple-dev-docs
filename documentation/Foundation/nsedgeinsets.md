@@ -1,7 +1,8 @@
 # NSEdgeInsets
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of the distance between the edges of two rectangles.
 
@@ -15,6 +16,10 @@ A description of the distance between the edges of two rectangles.
 struct NSEdgeInsets
 ```
 
+```c
+typedef struct NSEdgeInsets { ... } NSEdgeInsets;
+```
+
 #### Overview
 
 Edge insets describe the distance between the edges of one rectangle to a related rectangle that can be described by measuring a constant but edge-specific distance from each edge.
@@ -24,46 +29,47 @@ A common use for this structure is to describe the relationship between a viewâ€
 ## Topics
 
 ### Creating an edge insets structure
-- [init(top: Double, left: Double, bottom: Double, right: Double)](nsedgeinsets/init(top:left:bottom:right:).md)
+- [init(top: Double, left: Double, bottom: Double, right: Double)](./nsedgeinsets/init%28top,left,bottom,right%29.md)
   Creates an edge insets structure with the specified inset values.
-- [func NSEdgeInsetsMake(Double, Double, Double, Double) -> NSEdgeInsets](nsedgeinsetsmake(_:_:_:_:).md)
+- [func NSEdgeInsetsMake(Double, Double, Double, Double) -> NSEdgeInsets](./nsedgeinsetsmake%28_,_,_,_%29.md)
   Creates an edge insets structure with the specified inset values.
-- [init()](nsedgeinsets/init.md)
+- [init()](./nsedgeinsets/init%28%29.md)
   Creates an edge insets structure.
 ### Specifying the edge insets
-- [var bottom: Double](nsedgeinsets/bottom.md)
+- [var bottom: Double](./nsedgeinsets/bottom.md)
   The distance from the bottom of the source rectangle to the bottom of the result rectangle.
-- [var left: Double](nsedgeinsets/left.md)
+- [var left: Double](./nsedgeinsets/left.md)
   The distance from the left side of the source rectangle to the left side of the result rectangle.
-- [var right: Double](nsedgeinsets/right.md)
+- [var right: Double](./nsedgeinsets/right.md)
   The distance from the right side of the source rectangle to the right side of the result rectangle.
-- [var top: Double](nsedgeinsets/top.md)
+- [var top: Double](./nsedgeinsets/top.md)
   The distance from the top of the source rectangle to the top of the result rectangle.
 ### Comparing edge insets
-- [func NSEdgeInsetsEqual(NSEdgeInsets, NSEdgeInsets) -> Bool](nsedgeinsetsequal(_:_:).md)
+- [func NSEdgeInsetsEqual(NSEdgeInsets, NSEdgeInsets) -> Bool](./nsedgeinsetsequal%28_,_%29.md)
   Returns a Boolean value that indicates whether two edge insets structures are equal.
 ### Getting the zero constant
-- [let NSEdgeInsetsZero: NSEdgeInsets](nsedgeinsetszero.md)
+- [let NSEdgeInsetsZero: NSEdgeInsets](./nsedgeinsetszero.md)
   An edge insets structure with a zero inset on each edge.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGFloat](../corefoundation/cgfloat-swift.struct.md)
+### Geometry
+- [struct CGFloat](../CoreFoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
-- [typealias NSPoint](nspoint.md)
+- [typealias NSPoint](./nspoint.md)
   A point in a Cartesian coordinate system.
-- [typealias NSSize](nssize.md)
+- [typealias NSSize](./nssize.md)
   A two-dimensional size.
-- [typealias NSRect](nsrect.md)
+- [typealias NSRect](./nsrect.md)
   A rectangle.
-- [struct AffineTransform](affinetransform.md)
+- [struct AffineTransform](./affinetransform.md)
   A graphics coordinate transformation.
 
 

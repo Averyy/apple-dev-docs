@@ -1,7 +1,8 @@
 # ICScannerFeatureType.template
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A group of one or more rectangular scan areas that can be used with a scanner functional unit.
 
@@ -14,13 +15,18 @@ A group of one or more rectangular scan areas that can be used with a scanner fu
 case template
 ```
 
+```c
+ICScannerFeatureTypeTemplate
+```
+
 ## See Also
 
-- [ICScannerFeatureType.boolean](icscannerfeaturetype/boolean.md)
+### Constants
+- [ICScannerFeatureType.boolean](./boolean.md)
   A feature with a value of YES or NO.
-- [ICScannerFeatureType.enumeration](icscannerfeaturetype/enumeration.md)
+- [ICScannerFeatureType.enumeration](./enumeration.md)
   A feature that can have one of several discrete values, strings, or numbers.
-- [ICScannerFeatureType.range](icscannerfeaturetype/range.md)
+- [ICScannerFeatureType.range](./range.md)
   A feature with a value that lies within a range.
 
 

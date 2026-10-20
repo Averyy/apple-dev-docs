@@ -7,11 +7,11 @@ Frees all packets currently held in a synchronized queue and releases them back 
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 lockFlush();
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the number of packets freed.
 
@@ -21,45 +21,46 @@ The size of the queue is cleared to zero. A spinlock is used to synchronize acce
 
 ## See Also
 
-- [dequeue](iopacketqueue/1810464-dequeue.md)
+### Miscellaneous
+- [dequeue](./api-1810464-dequeue.md)
   Removes a single packet from the head of the queue.
-- [dequeueAll](iopacketqueue/1810493-dequeueall.md)
+- [dequeueAll](./api-1810493-dequeueall.md)
   Removes all packets from the queue and returns the head of the packet chain.
-- [enqueue(IOPacketQueue *)](iopacketqueue/1810512-enqueue.md)
+- [enqueue(IOPacketQueue *)](./api-1810512-enqueue.md)
   Removes all packets from the specified queue, and adds them to the tail of this queue.
-- [enqueue(mbuf_t)](iopacketqueue/1810538-enqueue.md)
+- [enqueue(mbuf_t)](./api-1810538-enqueue.md)
   Adds a chain of packets to the tail of the queue.
-- [enqueueWithDrop](iopacketqueue/1810567-enqueuewithdrop.md)
+- [enqueueWithDrop](./api-1810567-enqueuewithdrop.md)
   Adds a chain of packets to the tail of the queue.
-- [flush](iopacketqueue/1810584-flush.md)
+- [flush](./api-1810584-flush.md)
   Frees all packets currently held in the queue and releases them back to the free mbuf pool.
-- [free](iopacketqueue/1810608-free.md)
+- [free](./api-1810608-free.md)
   Frees the IOPacketQueue object.
-- [getCapacity](iopacketqueue/1810646-getcapacity.md)
+- [getCapacity](./api-1810646-getcapacity.md)
   Gets the current capacity of the queue.
-- [getSize](iopacketqueue/1810665-getsize.md)
+- [getSize](./api-1810665-getsize.md)
   Gets the size of the queue.
-- [initWithCapacity](iopacketqueue/1810679-initwithcapacity.md)
+- [initWithCapacity](./api-1810679-initwithcapacity.md)
   Initializes an IOPacketQueue object.
-- [lockDequeue](iopacketqueue/1810698-lockdequeue.md)
+- [lockDequeue](./api-1810698-lockdequeue.md)
   Removes a single packet from the head of a synchronized queue.
-- [lockDequeueAll](iopacketqueue/1810717-lockdequeueall.md)
+- [lockDequeueAll](./api-1810717-lockdequeueall.md)
   Removes all packets from a synchronized queue and returns the head of the packet chain.
-- [lockEnqueue](iopacketqueue/1810734-lockenqueue.md)
+- [lockEnqueue](./api-1810734-lockenqueue.md)
   Adds a chain of packets to the tail of a synchronized queue.
-- [lockEnqueueWithDrop](iopacketqueue/1810758-lockenqueuewithdrop.md)
+- [lockEnqueueWithDrop](./api-1810758-lockenqueuewithdrop.md)
   Adds a chain of packets to the tail of a synchronized queue.
-- [lockPrepend](iopacketqueue/1810813-lockprepend.md)
+- [lockPrepend](./api-1810813-lockprepend.md)
   Adds a chain of packets to the head of a synchronized queue.
-- [peek](iopacketqueue/1810837-peek.md)
+- [peek](./api-1810837-peek.md)
   Examines the packet at the head of the queue without removing it from the queue.
-- [prepend(IOPacketQueue *)](iopacketqueue/1810853-prepend.md)
+- [prepend(IOPacketQueue *)](./api-1810853-prepend.md)
   Removes all packets from the specified queue, and adds them to the head of this queue.
-- [prepend(mbuf_t)](iopacketqueue/1810881-prepend.md)
+- [prepend(mbuf_t)](./api-1810881-prepend.md)
   Adds a chain of packets to the head of the queue.
-- [setCapacity](iopacketqueue/1810899-setcapacity.md)
+- [setCapacity](./api-1810899-setcapacity.md)
   Changes the capacity of the queue.
-- [withCapacity](iopacketqueue/1810920-withcapacity.md)
+- [withCapacity](./api-1810920-withcapacity.md)
   Factory method that constructs and initializes an IOPacketQueue object.
 
 

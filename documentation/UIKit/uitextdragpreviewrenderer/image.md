@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image of the text drag preview that’s rendered by the layout manager.
 
@@ -15,6 +16,10 @@ The image of the text drag preview that’s rendered by the layout manager.
 
 ```swift
 var image: UIImage { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIImage * image;
 ```
 
 

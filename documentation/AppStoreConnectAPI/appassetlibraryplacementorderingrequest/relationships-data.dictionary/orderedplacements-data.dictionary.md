@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementOrderingRequest.Relationships.OrderedPlacements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The placements for the app asset library placement ordering request, in display order.
 
@@ -10,14 +11,14 @@ The placements for the app asset library placement ordering request, in display 
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementOrderingRequest.Relationships.OrderedPlacements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryPlacementOrderingRequest.Relationships.OrderedPlacements.Data](appassetlibraryplacementorderingrequest/relationships-data.dictionary/orderedplacements-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequest.Relationships.OrderedPlacements.Data](./orderedplacements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

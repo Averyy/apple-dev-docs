@@ -1,7 +1,8 @@
 # shouldCreateBinaryCompatibilitySymlink
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var shouldCreateBinaryCompatibilitySymlink: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) BOOL shouldCreateBinaryCompatibilitySymlink;
 ```
 
 

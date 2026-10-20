@@ -1,7 +1,8 @@
 # AVVideoProfileLevelH264Baseline31
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A baseline-level 3.1 profile.
 
@@ -19,31 +20,36 @@ A baseline-level 3.1 profile.
 let AVVideoProfileLevelH264Baseline31: String
 ```
 
+```c
+extern NSString * const AVVideoProfileLevelH264Baseline31;
+```
+
 ## See Also
 
-- [let AVVideoProfileLevelKey: String](avvideoprofilelevelkey.md)
+### Profile level
+- [let AVVideoProfileLevelKey: String](./avvideoprofilelevelkey.md)
   A key to access the video profile.
-- [let AVVideoProfileLevelH264High40: String](avvideoprofilelevelh264high40.md)
+- [let AVVideoProfileLevelH264High40: String](./avvideoprofilelevelh264high40.md)
   A high-level 4.0 profile.
-- [let AVVideoProfileLevelH264High41: String](avvideoprofilelevelh264high41.md)
+- [let AVVideoProfileLevelH264High41: String](./avvideoprofilelevelh264high41.md)
   A high-level 4.1 profile.
-- [let AVVideoProfileLevelH264Main30: String](avvideoprofilelevelh264main30.md)
+- [let AVVideoProfileLevelH264Main30: String](./avvideoprofilelevelh264main30.md)
   A main-level 3.0 profile.
-- [let AVVideoProfileLevelH264Main31: String](avvideoprofilelevelh264main31.md)
+- [let AVVideoProfileLevelH264Main31: String](./avvideoprofilelevelh264main31.md)
   A main-level 3.1 profile.
-- [let AVVideoProfileLevelH264Main32: String](avvideoprofilelevelh264main32.md)
+- [let AVVideoProfileLevelH264Main32: String](./avvideoprofilelevelh264main32.md)
   A main-level 3.2 profile.
-- [let AVVideoProfileLevelH264Main41: String](avvideoprofilelevelh264main41.md)
+- [let AVVideoProfileLevelH264Main41: String](./avvideoprofilelevelh264main41.md)
   A main-level 4.1 profile.
-- [let AVVideoProfileLevelH264Baseline30: String](avvideoprofilelevelh264baseline30.md)
+- [let AVVideoProfileLevelH264Baseline30: String](./avvideoprofilelevelh264baseline30.md)
   A baseline-level 3.0 profile.
-- [let AVVideoProfileLevelH264Baseline41: String](avvideoprofilelevelh264baseline41.md)
+- [let AVVideoProfileLevelH264Baseline41: String](./avvideoprofilelevelh264baseline41.md)
   A baseline-level 4.1 profile.
-- [let AVVideoProfileLevelH264HighAutoLevel: String](avvideoprofilelevelh264highautolevel.md)
+- [let AVVideoProfileLevelH264HighAutoLevel: String](./avvideoprofilelevelh264highautolevel.md)
   A high profile auto level profile.
-- [let AVVideoProfileLevelH264MainAutoLevel: String](avvideoprofilelevelh264mainautolevel.md)
+- [let AVVideoProfileLevelH264MainAutoLevel: String](./avvideoprofilelevelh264mainautolevel.md)
   A main profile auto level profile.
-- [let AVVideoProfileLevelH264BaselineAutoLevel: String](avvideoprofilelevelh264baselineautolevel.md)
+- [let AVVideoProfileLevelH264BaselineAutoLevel: String](./avvideoprofilelevelh264baselineautolevel.md)
   A baseline auto level profile.
 
 

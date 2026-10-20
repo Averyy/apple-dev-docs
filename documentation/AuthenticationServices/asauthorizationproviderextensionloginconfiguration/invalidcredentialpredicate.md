@@ -1,7 +1,8 @@
 # invalidCredentialPredicate
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate string that identifies invalid credential errors.
 
@@ -14,9 +15,13 @@ The predicate string that identifies invalid credential errors.
 var invalidCredentialPredicate: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * invalidCredentialPredicate;
+```
+
 ## Mentions
 
-- [Creating a JSON Web Encryption (JWE) login response](creating-a-json-web-encryption-jwe-login-response.md)
+- [Creating a JSON Web Encryption (JWE) login response](../creating-a-json-web-encryption-jwe-login-response.md)
 
 #### Discussion
 
@@ -24,7 +29,8 @@ If the server returns an HTTP 400 or HTTP 401 error when authenticating, the sys
 
 ## See Also
 
-- [var accountDisplayName: String?](asauthorizationproviderextensionloginconfiguration/accountdisplayname.md)
+### Obtaining the recommended configuration
+- [var accountDisplayName: String?](./accountdisplayname.md)
   The display name for the account.
 
 

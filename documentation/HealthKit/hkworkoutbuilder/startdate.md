@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout’s start date and time.
 
@@ -9,7 +10,7 @@ The workout’s start date and time.
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -19,11 +20,16 @@ The workout’s start date and time.
 var startDate: Date? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDate * startDate;
+```
+
 ## See Also
 
-- [func beginCollection(withStart: Date, completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/begincollection(withstart:completion:).md)
+### Starting the workout
+- [func beginCollection(withStart: Date, completion: (Bool, (any Error)?) -> Void)](./begincollection%28withstart,completion%29.md)
   Sets the workout’s start date and begins building the workout.
-- [func elapsedTime(at: Date) -> TimeInterval](hkworkoutbuilder/elapsedtime(at:).md)
+- [func elapsedTime(at: Date) -> TimeInterval](./elapsedtime%28at%29.md)
   Calculates the duration of the workout at the specified time.
 
 

@@ -1,7 +1,8 @@
 # CSVType.boolean
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Boolean type.
 

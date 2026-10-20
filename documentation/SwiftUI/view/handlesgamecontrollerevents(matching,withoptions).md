@@ -1,7 +1,8 @@
 # handlesGameControllerEvents(matching:withOptions:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the game controllers events which should be delivered through the GameController framework when the view or one of its descendants has focus.
 
@@ -28,7 +29,8 @@ SpriteView(scene: MyGameScene())
 
 ## See Also
 
-- [func handlesGameControllerEvents(matching: GCUIEventTypes) -> some View](view/handlesgamecontrollerevents(matching:).md)
+### Game controller
+- [func handlesGameControllerEvents(matching: GCUIEventTypes) -> some View](./handlesgamecontrollerevents%28matching%29.md)
   Specifies the game controllers events which should be delivered through the GameController framework when the view, or one of its descendants has focus.
 
 

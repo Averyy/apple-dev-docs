@@ -1,7 +1,8 @@
 # NSColorWell.Style.expanded
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that supports a color picker popover for fast interactions, and adds a dedicated button to display the color panel.
 
@@ -14,15 +15,20 @@ A style that supports a color picker popover for fast interactions, and adds a d
 case expanded
 ```
 
+```c
+NSColorWellStyleExpanded
+```
+
 #### Discussion
 
-This style displays a dedicated button and a rectangular area with the selected color. Clicks in the dedicated button always display the system color panel. Clicks in the color area display a popover with a color picker. If you specified a custom action using the [`pulldownAction`](nscolorwell/pulldownaction.md) and [`pulldownTarget`](nscolorwell/pulldowntarget.md) properties, clicks in the color area execute your action method instead.
+This style displays a dedicated button and a rectangular area with the selected color. Clicks in the dedicated button always display the system color panel. Clicks in the color area display a popover with a color picker. If you specified a custom action using the [`pulldownAction`](../pulldownaction.md) and [`pulldownTarget`](../pulldowntarget.md) properties, clicks in the color area execute your action method instead.
 
 ## See Also
 
-- [NSColorWell.Style.default](nscolorwell/style/default.md)
+### Getting the Style Option
+- [NSColorWell.Style.default](./default.md)
   The default style for color wells.
-- [NSColorWell.Style.minimal](nscolorwell/style/minimal.md)
+- [NSColorWell.Style.minimal](./minimal.md)
   A style that adds minimal adornments to the color well.
 
 

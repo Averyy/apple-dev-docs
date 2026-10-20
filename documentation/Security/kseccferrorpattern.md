@@ -1,7 +1,8 @@
 # kSecCFErrorPattern
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string containing a regular expression that’s part of a resource specification that did not parse correctly.
 
@@ -13,6 +14,10 @@ A key whose value is a string containing a regular expression that’s part of a
 
 ```swift
 let kSecCFErrorPattern: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorPattern;
 ```
 
 #### Discussion

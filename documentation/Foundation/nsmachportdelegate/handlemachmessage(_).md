@@ -1,7 +1,8 @@
 # handleMachMessage(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Process an incoming Mach message.
 
@@ -20,11 +21,15 @@ Process an incoming Mach message.
 optional func handleMachMessage(_ msg: UnsafeMutableRawPointer)
 ```
 
+```objc
+- (void) handleMachMessage:(void *) msg;
+```
+
 #### Discussion
 
 The delegate should interpret this data as a pointer to a Mach message beginning with a msg_header_t structure and should handle the message appropriately.
 
-The delegate should implement either `handleMachMessage:` or the [`PortDelegate`](portdelegate.md) protocol method handlePortMessage:.
+The delegate should implement either `handleMachMessage:` or the [`PortDelegate`](../portdelegate.md) protocol method handlePortMessage:.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ The delegate should implement either `handleMachMessage:` or the [`PortDelegate`
 
 ## See Also
 
-- [Distributed Objects Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
+### Related Documentation
+- [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
 
 
 ---

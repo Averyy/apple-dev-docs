@@ -1,7 +1,8 @@
 # FSGenericURLResource
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A resource that represents an abstract URL.
 
@@ -12,6 +13,10 @@ A resource that represents an abstract URL.
 
 ```swift
 class FSGenericURLResource
+```
+
+```objc
+@interface FSGenericURLResource : FSResource
 ```
 
 #### Overview
@@ -31,35 +36,36 @@ Use the `Info.plist` key `FSSupportedSchemes` to provide an array of case-insens
 ## Topics
 
 ### Creating a generic URL resource
-- [init(url: URL)](fsgenericurlresource/init(url:)-2cmhi.md)
+- [init(url: URL)](./fsgenericurlresource/init%28url%29-2cmhi.md)
   Creates a generic URL resource with the given URL.
 ### Accessing resource properties
-- [var url: URL](fsgenericurlresource/url.md)
+- [var url: URL](./fsgenericurlresource/url.md)
   The URL represented by the resource.
 ### Initializers
-- [init(URL: URL)](fsgenericurlresource/init(url:)-3957q.md)
+- [init(URL: URL)](./fsgenericurlresource/init%28url%29-3957q.md)
 
 ## Relationships
 
 ### Inherits From
-- [FSResource](fsresource.md)
+- [FSResource](./fsresource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class FSResource](fsresource.md)
+### Resources
+- [class FSResource](./fsresource.md)
   An abstract resource a file system uses to provide data for a volume.
-- [class FSBlockDeviceResource](fsblockdeviceresource.md)
+- [class FSBlockDeviceResource](./fsblockdeviceresource.md)
   A resource that represents a block storage disk partition.
-- [class FSPathURLResource](fspathurlresource.md)
+- [class FSPathURLResource](./fspathurlresource.md)
   A resource that represents a path in the system file space.
 
 

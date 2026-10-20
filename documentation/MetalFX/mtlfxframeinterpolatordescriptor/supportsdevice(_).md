@@ -1,7 +1,8 @@
 # supportsDevice(_:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Queries whether a Metal device supports frame interpolation.
 
@@ -18,9 +19,13 @@ Queries whether a Metal device supports frame interpolation.
 class func supportsDevice(_ device: any MTLDevice) -> Bool
 ```
 
+```objc
++ (BOOL) supportsDevice:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports frame interpolation, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the device supports frame interpolation, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 

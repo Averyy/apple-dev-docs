@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set containing placements with the apps main content, excluding the menu placement.
 
@@ -22,7 +23,8 @@ static var content: SearchSuggestionsPlacement.Set { get }
 
 ## See Also
 
-- [static var menu: SearchSuggestionsPlacement.Set](searchsuggestionsplacement/set/menu.md)
+### Getting placement sets
+- [static var menu: SearchSuggestionsPlacement.Set](./menu.md)
   A set containing the menu display mode.
 
 

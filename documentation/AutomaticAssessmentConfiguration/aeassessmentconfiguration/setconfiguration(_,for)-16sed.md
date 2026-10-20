@@ -1,7 +1,8 @@
 # setConfiguration(_:for:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an executable participant to the list of participants available during an assessment.
 
@@ -15,11 +16,15 @@ Adds an executable participant to the list of participants available during an a
 func setConfiguration(_ configuration: AEAssessmentBinaryExecutableConfiguration, for binaryExecutable: AEAssessmentBinaryExecutable)
 ```
 
+```objc
+- (void) setConfiguration:(AEAssessmentBinaryExecutableConfiguration *) configuration forBinaryExecutable:(AEAssessmentBinaryExecutable *) binaryExecutable;
+```
+
 #### Discussion
 
-Ignores an executable whose [`binaryExecutableURL`](aeassessmentbinaryexecutable/binaryexecutableurl.md) isn’t a file URL.
+Ignores an executable whose [`binaryExecutableURL`](../aeassessmentbinaryexecutable/binaryexecutableurl.md) isn’t a file URL.
 
-> **Note**: [`AEAssessmentBinaryExecutable`](aeassessmentbinaryexecutable.md)
+> **See Also**: [`AEAssessmentBinaryExecutable`](../aeassessmentbinaryexecutable.md)
 
 ## Parameters
 

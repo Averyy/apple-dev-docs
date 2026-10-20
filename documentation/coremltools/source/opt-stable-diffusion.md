@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-stable-diffusion
 
 # Optimizing StableDiffusion Model
 
-**
-
-- [.md](../_sources/source/opt-stable-diffusion.md)
-- **
-
-.pdf
-
-**
-
-# Optimizing StableDiffusion Model
-
- Table of contents 
-
-## Contents
-
-# Optimizing StableDiffusion Model
-
 In this tutorial, we will explore how we can use Core ML Tools APIs for compressing a Stable Diffusion model for deployment on an iPhone.
 The model takes a natural language description, known as a prompt, and produces an image matching that description.
 
@@ -49,6 +32,8 @@ python -m python_coreml_stable_diffusion.pipeline --prompt "cat in a tuxedo, oil
 --model-version stabilityai/stable-diffusion-xl-base-1.0
 ```
 
+![../_images/sdxl-base.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-base.png)
+
 ## Palettizing CoreML Model
 
 ### Scalar palettization
@@ -72,16 +57,16 @@ Trying with nbits equal to 8, 6 & 4 bits we see the following results:
 
 | Config | Model Size | Image |
 | --- | --- | --- |
-| 8-bit (per tensor) | 2.40 GB |  |
-| 6-bit (per-tensor) | 1.80 GB |  |
-| 4-bit (per-tensor) | 1.21 GB |  |
+| 8-bit (per tensor) | 2.40 GB | ![../_images/sdxl-8bit.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-8bit.png) |
+| 6-bit (per-tensor) | 1.80 GB | ![../_images/sdxl-6bit.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-6bit.png) |
+| 4-bit (per-tensor) | 1.21 GB | ![../_images/sdxl-4bit.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-4bit.png) |
 
 Applying 8bit palettization can reduce the model size to be about half of the `float16` model, but it is still much too large to consider iOS integration.
 With 6bit we can finally run this model on an iPad. With 4bit compression we are unable to get a good image anymore, meaning the model isn’t accurate.
 
 ### Grouped channel palettization
 
-Let’s try to regain the accuracy loss from 4 bit palettization by applying the [per_grouped_channel](opt-palettization-overview.html#granularity) palettization, which increases the number of LUTs (look up tables) per weight tensor.
+Let’s try to regain the accuracy loss from 4 bit palettization by applying the [per_grouped_channel](opt-palettization-overview.md#granularity) palettization, which increases the number of LUTs (look up tables) per weight tensor.
 
 ```
 op_config = cto.coreml.OpPalettizerConfig(
@@ -101,17 +86,17 @@ Experimenting with group_size equal to 4, 16 & 32 we see the following results:
 
 | Config | Model Size | Image |
 | --- | --- | --- |
-| 4-bit (per-tensor) | 1.21 GB |  |
-| 4-bit (group_size=4) | 1.22 GB |  |
-| 4-bit (group_size=16) | 1.21 GB |  |
-| 4-bit (group_size=32) | 1.21 GB |  |
+| 4-bit (per-tensor) | 1.21 GB | ![../_images/sdxl-4bit.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-4bit.png) |
+| 4-bit (group_size=4) | 1.22 GB | ![../_images/sdxl-4bit-gs4.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-4bit-gs4.png) |
+| 4-bit (group_size=16) | 1.21 GB | ![../_images/sdxl-4bit-gs16.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-4bit-gs16.png) |
+| 4-bit (group_size=32) | 1.21 GB | ![../_images/sdxl-4bit-gs32.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-4bit-gs32.png) |
 
 We see that images generated with grouped channel palettization are much better than one generated with scalar palettization. We are able to reclaim most of the accuracy back, with a very slight increase in size. This increase is due to the little bit of extra space taken by the additional lookup tables.
 
 ## Joint compression
 
 In this section, we aim to further compress the model using joint compression techniques. We’ll utilize the `ct.optimize.torch.*` APIs to compress the PyTorch model.
-The process involves two main steps: pruning the model using calibration data with [SparseGPT](opt-pruning-algos.html#sparsegpt), followed by data-free palettization of the pruned model using [PostTrainingPalettizer](opt-palettization-algos.html#k-means).
+The process involves two main steps: pruning the model using calibration data with [SparseGPT](opt-pruning-algos.md#sparsegpt), followed by data-free palettization of the pruned model using [PostTrainingPalettizer](opt-palettization-algos.md#k-means).
 
 ### Pruning with SparseGPT
 
@@ -121,14 +106,20 @@ We adjust the forward interface for the down, mid, and up blocks to ensure that 
 Here are some code snippets highlighting the changes for reference:
 
 **CrossAttnDownBlock2D**
+![sdxl-down-block](https://apple.github.io/coremltools/docs-guides/_images/sdxl-down-block.png)
 
 **UNetMidBlock2DCrossAttn**
+![sdxl-down-block](https://apple.github.io/coremltools/docs-guides/_images/sdxl-mid-block.png)
 
 **UpBlock2D**
+![sdxl-down-block](https://apple.github.io/coremltools/docs-guides/_images/sdxl-up-block.png)
 
 We accordingly adjust the top-level module that invokes the various down, mid, and up blocks.
 
 **UNet2DConditionModel**
+![sdxl-top-level](https://apple.github.io/coremltools/docs-guides/_images/sdxl-top-level-down.png)
+![sdxl-top-level](https://apple.github.io/coremltools/docs-guides/_images/sdxl-top-level-mid.png)
+![sdxl-top-level](https://apple.github.io/coremltools/docs-guides/_images/sdxl-top-level-up.png)
 
 The model is then compressed at the granularity of the down, mid, and up blocks using the `layers` setting in [LayerwiseCompressorConfig](https://apple.github.io/coremltools/source/coremltools.optimize.torch.pruning.html#coremltools.optimize.torch.layerwise_compression.LayerwiseCompressorConfig). In practice, this means that once a down block is fully compressed, its quantized outputs are used as inputs for the next block, and so on.
 We used the following text prompts to calibrate the model. Samples from all timesteps were used for calibration.
@@ -189,10 +180,10 @@ The `sparse_palettized_model` generated above can be converted to produce a join
 
 | Config | Model Size | Image |
 | --- | --- | --- |
-| 40% Sparsity, 4-bit (group_size=4) | 1.04 GB |  |
-| 40% Sparsity, 4-bit (group_size=16) | 1.03 GB |  |
-| 50% Sparsity, 4-bit (group_size=4) | 942 MB |  |
-| 50% Sparsity, 4-bit (group_size=16) | 933 MB |  |
+| 40% Sparsity, 4-bit (group_size=4) | 1.04 GB | ![../_images/sdxl-0.4sparse-4bit-gs4.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-0.4sparse-4bit-gs4.png) |
+| 40% Sparsity, 4-bit (group_size=16) | 1.03 GB | ![../_images/sdxl-0.4sparse-4bit-gs16.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-0.4sparse-4bit-gs16.png) |
+| 50% Sparsity, 4-bit (group_size=4) | 942 MB | ![../_images/sdxl-0.5sparse-4bit-gs4.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-0.5sparse-4bit-gs4.png) |
+| 50% Sparsity, 4-bit (group_size=16) | 933 MB | ![../_images/sdxl-0.5sparse-4bit-gs16.png](https://apple.github.io/coremltools/docs-guides/_images/sdxl-0.5sparse-4bit-gs16.png) |
 
 To summarize, we were able to use post training palettization to compress SDXL UNet model from `4.8GB` to `1.2GB` in size. We were able to regain accuracy lost from 4-bit palettization by using per grouped channel LUT.
 With joint compression, we are able to further bring down the model size to `1GB`, while still generating decent accuracy images with 40% sparsity.
@@ -200,5 +191,3 @@ With joint compression, we are able to further bring down the model size to `1GB
 [[1](#id1)]
 
 All images shown in this article have been generated on macOS 15.0. The image outputs can vary based on platform, backend, number of inference steps, etc.
-
-** Contents

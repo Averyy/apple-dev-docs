@@ -1,7 +1,8 @@
 # NSOpenStepUnicodeReservedBase
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies lower bound for a Unicode character range reserved for Apple’s corporate use (the range is `0xF400–0xF8FF`).
 
@@ -18,6 +19,10 @@ Specifies lower bound for a Unicode character range reserved for Apple’s corpo
 
 ```swift
 var NSOpenStepUnicodeReservedBase: Int { get }
+```
+
+```c
+NSOpenStepUnicodeReservedBase
 ```
 
 

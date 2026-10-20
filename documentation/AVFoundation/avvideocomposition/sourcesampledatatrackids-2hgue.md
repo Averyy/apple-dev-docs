@@ -1,7 +1,8 @@
 # sourceSampleDataTrackIDs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of source sample data tracks in the composition that the object requires to compose frames.
 
@@ -22,7 +23,8 @@ The identifiers of source sample data tracks in the composition that the object 
 
 ## See Also
 
-- [var sourceTrackIDForFrameTiming: CMPersistentTrackID](avvideocomposition/sourcetrackidforframetiming.md)
+### Identifying source tracks
+- [var sourceTrackIDForFrameTiming: CMPersistentTrackID](./sourcetrackidforframetiming.md)
   An identifier of the source track from which the video composition derives frame timing.
 
 

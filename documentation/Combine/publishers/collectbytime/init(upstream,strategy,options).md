@@ -1,7 +1,8 @@
 # init(upstream:strategy:options:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that buffers and periodically publishes its items.
 

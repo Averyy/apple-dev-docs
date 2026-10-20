@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer that stores the matrix data.
 
@@ -19,20 +20,25 @@ The buffer that stores the matrix data.
 var data: any MTLBuffer { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) id<MTLBuffer> data;
+```
+
 ## See Also
 
-- [var device: any MTLDevice](mpsmatrix/device.md)
+### Properties
+- [var device: any MTLDevice](./device.md)
   The device on which the matrix will be used.
-- [var rows: Int](mpsmatrix/rows.md)
+- [var rows: Int](./rows.md)
   The number of rows in the matrix.
-- [var columns: Int](mpsmatrix/columns.md)
+- [var columns: Int](./columns.md)
   The number of columns in the matrix.
-- [var dataType: MPSDataType](mpsmatrix/datatype.md)
+- [var dataType: MPSDataType](./datatype.md)
   The type of the values in the matrix.
-- [var rowBytes: Int](mpsmatrix/rowbytes.md)
+- [var rowBytes: Int](./rowbytes.md)
   The stride, in bytes, between corresponding elements of consecutive rows in the matrix.
-- [var matrices: Int](mpsmatrix/matrices.md)
-- [var matrixBytes: Int](mpsmatrix/matrixbytes.md)
+- [var matrices: Int](./matrices.md)
+- [var matrixBytes: Int](./matrixbytes.md)
 
 
 ---

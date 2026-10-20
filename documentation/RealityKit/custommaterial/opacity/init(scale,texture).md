@@ -1,7 +1,8 @@
 # init(scale:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that defines the opacity of an entity using a single value, a UV-mapped image texture, or both.
 
@@ -22,7 +23,7 @@ init(scale: Float = 1.0, texture: CustomMaterial.Texture? = nil)
 
 Both `scale` and `texture` are available to the material’s surface shader function, but RealityKit draws the entity fully opaque unless the surface shader function calls `params.surface().set_opacity()`.
 
-The following Metal code demonstrates how to emulate the blending logic RealityKit uses to render entities with a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) in your custom material’s surface shader function:
+The following Metal code demonstrates how to emulate the blending logic RealityKit uses to render entities with a [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md) in your custom material’s surface shader function:
 
 ```swift
     // Retrieve the opacity scale and threshold from the CustomMaterial.
@@ -63,9 +64,10 @@ The following Metal code demonstrates how to emulate the blending logic RealityK
 
 ## See Also
 
-- [init(floatLiteral: Float)](custommaterial/opacity/init(floatliteral:).md)
+### Creating an opacity object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an opacity object from a single value.
-- [init(PhysicallyBasedMaterial.Opacity)](custommaterial/opacity/init(_:).md)
+- [init(PhysicallyBasedMaterial.Opacity)](./init%28_%29.md)
   Creates an object from the opacity property of an existing physically based material.
 
 

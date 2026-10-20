@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn unmap(
  IOService *client, 
  IOStorageExtent *extents, 
@@ -13,7 +13,7 @@ virtual IOReturn unmap(
  UInt32 options = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the operation.
 
@@ -29,15 +29,16 @@ Delete unused data from the storage object at the specified byte offsets, synchr
 
 ## See Also
 
-- [copyPhysicalExtent](iopartitionscheme/1810278-copyphysicalextent.md)
-- [handleClose](iopartitionscheme/1810310-handleclose.md)
-- [handleIsOpen](iopartitionscheme/1810337-handleisopen.md)
-- [handleOpen](iopartitionscheme/1810366-handleopen.md)
-- [lockPhysicalExtents](iopartitionscheme/1810387-lockphysicalextents.md)
-- [read](iopartitionscheme/1810409-read.md)
-- [synchronizeCache](iopartitionscheme/1810446-synchronizecache.md)
-- [unlockPhysicalExtents](iopartitionscheme/1810496-unlockphysicalextents.md)
-- [write](iopartitionscheme/1810601-write.md)
+### Miscellaneous
+- [copyPhysicalExtent](./api-1810278-copyphysicalextent.md)
+- [handleClose](./api-1810310-handleclose.md)
+- [handleIsOpen](./api-1810337-handleisopen.md)
+- [handleOpen](./api-1810366-handleopen.md)
+- [lockPhysicalExtents](./api-1810387-lockphysicalextents.md)
+- [read](./api-1810409-read.md)
+- [synchronizeCache](./api-1810446-synchronizecache.md)
+- [unlockPhysicalExtents](./api-1810496-unlockphysicalextents.md)
+- [write](./api-1810601-write.md)
 
 
 ---

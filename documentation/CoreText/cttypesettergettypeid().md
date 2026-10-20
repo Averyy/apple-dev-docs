@@ -1,7 +1,8 @@
 # CTTypesetterGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the typesetter object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the typesetter object.
 
 ```swift
 func CTTypesetterGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTTypesetterGetTypeID();
 ```
 
 

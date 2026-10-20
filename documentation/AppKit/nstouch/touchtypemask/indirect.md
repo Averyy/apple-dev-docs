@@ -1,7 +1,8 @@
 # indirect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An indirect touch that is not on a screen, like a digitizer touch.
 
@@ -14,9 +15,14 @@ An indirect touch that is not on a screen, like a digitizer touch.
 static var indirect: NSTouch.TouchTypeMask { get }
 ```
 
+```c
+NSTouchTypeMaskIndirect
+```
+
 ## See Also
 
-- [static var direct: NSTouch.TouchTypeMask](nstouch/touchtypemask/direct.md)
+### Masking the Touch Types
+- [static var direct: NSTouch.TouchTypeMask](./direct.md)
   A direct touch from a user’s finger on a screen.
 
 

@@ -1,7 +1,8 @@
 # init(make:update:placeholder:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reality view for iOS and macOS, with an optional update closure and placeholder view.
 
@@ -19,9 +20,18 @@ nonisolated
 init<P>(make: @escaping @MainActor @Sendable (inout RealityViewCameraContent) async -> Void, update: (@MainActor (inout RealityViewCameraContent) -> Void)? = nil, @ViewBuilder placeholder: () -> P) where Content == RealityViewCameraContent.Body<P>, P : View
 ```
 
+Available when `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<P>(make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void, update: (@MainActor (inout RealityViewContent) -> Void)? = nil, @ViewBuilder placeholder: () -> P) where Content == RealityViewContent.Body<P>, P : View
+```
+
 #### Discussion
 
-For example, your app can asynchronously load an [`Entity`](entity.md) from a `.reality` or `.usdz` file, and display a [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) while the system loads the file:
+For example, your app can asynchronously load an [`Entity`](../entity.md) from a `.reality` or `.usdz` file, and display a [`ProgressView`](../../SwiftUI/progressview.md) while the system loads the file:
 
 ```swift
 RealityView { content in
@@ -37,11 +47,12 @@ RealityView { content in
 
 - `make`: An asynchronous closure that configures the initial content of the new `RealityView`. This closure is asynchronous to keep your app’s UI responsive while you load content to populate this view.
 - `update`: An optional closure that updates the `RealityView` instance’s content as the view’s state changes.
-- `placeholder`: A temporary view that the [`RealityView`](realityview.md) displays until your closure for the `make` parameter completes. For example, you can display a loading indicator with a [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) instance as a placeholder.
+- `placeholder`: A temporary view that the [`RealityView`](../realityview.md) displays until your closure for the `make` parameter completes. For example, you can display a loading indicator with a [`ProgressView`](../../SwiftUI/progressview.md) instance as a placeholder.
 
 ## See Also
 
-- [init(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?)](realityview/init(make:update:)-234sv.md)
+### Creating a reality view for iOS and macOS
+- [init(make: (inout RealityViewCameraContent) async -> Void, update: ((inout RealityViewCameraContent) -> Void)?)](./init%28make,update%29-234sv.md)
   Creates a reality view for iOS and macOS, with an optional update closure.
 
 

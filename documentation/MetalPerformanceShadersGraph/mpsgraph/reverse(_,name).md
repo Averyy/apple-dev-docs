@@ -1,7 +1,8 @@
 # reverse(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a reverse operation and returns the result tensor.
 
@@ -19,13 +20,17 @@ Creates a reverse operation and returns the result tensor.
 func reverse(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) reverseTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object.
 
 #### Discussion
 
-Reverses a tensor on all axes. Semantics based on [`TensorFlow reverse op`](https://developer.apple.comhttps://www.tensorflow.org/api_docs/python/tf/reverse).
+Reverses a tensor on all axes. Semantics based on [TensorFlow reverse op](https://www.tensorflow.org/api_docs/python/tf/reverse).
 
 ## Parameters
 

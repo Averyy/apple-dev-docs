@@ -1,7 +1,8 @@
 # defaultLaunchBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the default launch behavior for this scene.
 
@@ -24,7 +25,7 @@ On platforms that do not support multiple windows, this value is ignored.
 
 On platforms other than macOS, there must be at least one scene that presents itself. If no scenes are defined to present, the first scene will be presented, regardless of the value provided to this modifier.
 
-> **Note**: During app launch, on platforms other than macOS, the system will only consider scenes whose role matches the [`UIApplicationPreferredDefaultSceneSessionRole`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationpreferreddefaultscenesessionrole) key in the application scene manifest of the `Info.plist` file. For instance, a volumetric window would need the `UIWindowSceneSessionRoleVolumetricApplication` role.
+> **Note**: During app launch, on platforms other than macOS, the system will only consider scenes whose role matches the [`UIApplicationPreferredDefaultSceneSessionRole`](../../BundleResources/information-property-list/uiapplicationpreferreddefaultscenesessionrole.md) key in the application scene manifest of the `Info.plist` file. For instance, a volumetric window would need the `UIWindowSceneSessionRoleVolumetricApplication` role.
 
 On macOS, this behavior will also be used to determine which scene is presented when clicking on the icon of a running application with no visible windows.
 
@@ -48,23 +49,24 @@ struct MyApp: App {
 }
 ```
 
-The default value for all scenes if you do not apply this modifier is [`automatic`](scenelaunchbehavior/automatic.md). With that strategy, a scene will only present itself if it is the first scene defined by the app, and no other scenes have presented themselves.
+The default value for all scenes if you do not apply this modifier is [`automatic`](../scenelaunchbehavior/automatic.md). With that strategy, a scene will only present itself if it is the first scene defined by the app, and no other scenes have presented themselves.
 
 ## See Also
 
-- [struct WindowVisibilityToggle](windowvisibilitytoggle.md)
+### Configuring window visibility
+- [struct WindowVisibilityToggle](../windowvisibilitytoggle.md)
   A specialized button for toggling the visibility of a window.
-- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](scene/restorationbehavior(_:).md)
+- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](./restorationbehavior%28_%29.md)
   Sets the restoration behavior for this scene.
-- [struct SceneLaunchBehavior](scenelaunchbehavior.md)
+- [struct SceneLaunchBehavior](../scenelaunchbehavior.md)
   The launch behavior for a scene.
-- [struct SceneRestorationBehavior](scenerestorationbehavior.md)
+- [struct SceneRestorationBehavior](../scenerestorationbehavior.md)
   The restoration behavior for a scene.
-- [func persistentSystemOverlays(Visibility) -> some Scene](scene/persistentsystemoverlays(_:).md)
+- [func persistentSystemOverlays(Visibility) -> some Scene](./persistentsystemoverlays%28_%29.md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
-- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](../view/windowtoolbarfullscreenvisibility%28_%29.md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
-- [struct WindowToolbarFullScreenVisibility](windowtoolbarfullscreenvisibility.md)
+- [struct WindowToolbarFullScreenVisibility](../windowtoolbarfullscreenvisibility.md)
   The visibility of the window toolbar with respect to full screen mode.
 
 

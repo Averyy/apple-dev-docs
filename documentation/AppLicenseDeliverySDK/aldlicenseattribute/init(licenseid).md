@@ -1,7 +1,8 @@
 # init(licenseID:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a license attribue
 
@@ -13,7 +14,7 @@ init(licenseID: UInt64)
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
 ## Parameters
 

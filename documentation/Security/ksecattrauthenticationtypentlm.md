@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeNTLM
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Windows NT LAN Manager authentication.
 
@@ -18,6 +19,10 @@ Windows NT LAN Manager authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeNTLM: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeNTLM;
 ```
 
 

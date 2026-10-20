@@ -1,7 +1,8 @@
 # stat(_:_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the C `stat()` function.
 

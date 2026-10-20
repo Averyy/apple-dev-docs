@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The command queue that creates the command buffer.
@@ -11,7 +12,7 @@ The command queue that creates the command buffer.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The command queue that creates the command buffer.
 var commandQueue: any MTLCommandQueue { get }
 ```
 
+```objc
+@property (readonly) id<MTLCommandQueue> commandQueue;
+```
+
 #### Discussion
 
 Each command buffer can only submit its commands to the queue that creates it.
 
 ## See Also
 
-- [var label: String?](mtlcommandbuffer/label.md)
+### Identifying the command buffer
+- [var label: String?](./label.md)
   An optional name that can help you identify the command buffer.
-- [var device: any MTLDevice](mtlcommandbuffer/device.md)
+- [var device: any MTLDevice](./device.md)
   The GPU device that indirectly owns the command buffer because you create it from a command queue the device also owns.
 
 

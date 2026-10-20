@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reflectiveness as a UV-mapped image texture.
 
@@ -20,7 +21,8 @@ var texture: CustomMaterial.Texture?
 
 ## See Also
 
-- [var scale: Float](custommaterial/metallic-swift.struct/scale.md)
+### Accessing metallic data
+- [var scale: Float](./scale.md)
   The reflectiveness value for the entire entity or a multiplier for the metallic texture.
 
 

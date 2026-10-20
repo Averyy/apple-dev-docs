@@ -1,7 +1,8 @@
 # recordAccelerometer(forDuration:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins recording accelerometer data for the specified period of time.
 
@@ -15,6 +16,10 @@ Begins recording accelerometer data for the specified period of time.
 
 ```swift
 func recordAccelerometer(forDuration duration: TimeInterval)
+```
+
+```objc
+- (void) recordAccelerometerForDuration:(NSTimeInterval) duration;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypeClass
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type class.
 
@@ -10,7 +11,7 @@ The type class.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypeClass = (kIOUSBDeviceRequestTypeValueClass << kIOUSBDeviceRequestTypePhase)
 ```
 

@@ -1,7 +1,8 @@
 # spatialTracking
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The camera that displays virtual RealityKit content and camera passthrough, with tracking capabilities.
 

@@ -1,7 +1,8 @@
 # VideoReader.CameraConfiguration.PixelFormat.yCbCr8BiPlanarFullRange420
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +19,8 @@ case yCbCr8BiPlanarFullRange420
 
 ## See Also
 
-- [VideoReader.CameraConfiguration.PixelFormat.bgra32](videoreader/cameraconfiguration/pixelformat-swift.enum/bgra32.md)
+### Pixel formats
+- [VideoReader.CameraConfiguration.PixelFormat.bgra32](./bgra32.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # addHeldCall()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds held calls to the current conversation.
 
@@ -14,11 +15,16 @@ Adds held calls to the current conversation.
 func addHeldCall()
 ```
 
+```objc
+- (void) addHeldCall;
+```
+
 ## See Also
 
-- [func holdCall()](iobluetoothhandsfreedevice/holdcall.md)
+### Holding Calls
+- [func holdCall()](./holdcall%28%29.md)
   Places all active calls on hold and accepts a held or waiting call.
-- [func placeAllOthers(onHold: Int32)](iobluetoothhandsfreedevice/placeallothers(onhold:).md)
+- [func placeAllOthers(onHold: Int32)](./placeallothers%28onhold%29.md)
   Places all calls except the call with the specified index on hold.
 
 

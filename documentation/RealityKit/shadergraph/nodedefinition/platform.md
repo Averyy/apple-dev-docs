@@ -1,7 +1,8 @@
 # ShaderGraph.NodeDefinition.Platform
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -18,20 +19,20 @@ enum Platform
 ## Topics
 
 ### Enumeration Cases
-- [ShaderGraph.NodeDefinition.Platform.iOS](shadergraph/nodedefinition/platform/ios.md)
-- [ShaderGraph.NodeDefinition.Platform.macOS](shadergraph/nodedefinition/platform/macos.md)
-- [ShaderGraph.NodeDefinition.Platform.tvOS](shadergraph/nodedefinition/platform/tvos.md)
-- [ShaderGraph.NodeDefinition.Platform.visionOS](shadergraph/nodedefinition/platform/visionos.md)
-- [ShaderGraph.NodeDefinition.Platform.watchOS](shadergraph/nodedefinition/platform/watchos.md)
+- [ShaderGraph.NodeDefinition.Platform.iOS](./platform/ios.md)
+- [ShaderGraph.NodeDefinition.Platform.macOS](./platform/macos.md)
+- [ShaderGraph.NodeDefinition.Platform.tvOS](./platform/tvos.md)
+- [ShaderGraph.NodeDefinition.Platform.visionOS](./platform/visionos.md)
+- [ShaderGraph.NodeDefinition.Platform.watchOS](./platform/watchos.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
 
 
 ---

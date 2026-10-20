@@ -1,7 +1,8 @@
 # pickerView(_:viewForRow:forComponent:reusing:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the picker view when it needs the view to use for a given row in a given component.
 
@@ -17,9 +18,13 @@ Called by the picker view when it needs the view to use for a given row in a giv
 optional func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView
 ```
 
+```objc
+- (UIView *) pickerView:(UIPickerView *) pickerView viewForRow:(NSInteger) row forComponent:(NSInteger) component reusingView:(UIView *) view;
+```
+
 #### Return Value
 
-A view object to use as the content of `row`. The object can be any subclass of [`UIView`](uiview.md), such as [`UILabel`](uilabel.md), [`UIImageView`](uiimageview.md), or even a custom view.
+A view object to use as the content of `row`. The object can be any subclass of [`UIView`](../uiview.md), such as [`UILabel`](../uilabel.md), [`UIImageView`](../uiimageview.md), or even a custom view.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ If the previously used view (the `view` parameter) is adequate, return that. If 
 
 ## See Also
 
-- [func pickerView(UIPickerView, titleForRow: Int, forComponent: Int) -> String?](uipickerviewdelegate/pickerview(_:titleforrow:forcomponent:).md)
+### Setting the content of component rows
+- [func pickerView(UIPickerView, titleForRow: Int, forComponent: Int) -> String?](./pickerview%28_,titleforrow,forcomponent%29.md)
   Called by the picker view when it needs the title to use for a given row in a given component.
-- [func pickerView(UIPickerView, attributedTitleForRow: Int, forComponent: Int) -> NSAttributedString?](uipickerviewdelegate/pickerview(_:attributedtitleforrow:forcomponent:).md)
+- [func pickerView(UIPickerView, attributedTitleForRow: Int, forComponent: Int) -> NSAttributedString?](./pickerview%28_,attributedtitleforrow,forcomponent%29.md)
   Called by the picker view when it needs the styled title to use for a given row in a given component.
 
 

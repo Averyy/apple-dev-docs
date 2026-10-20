@@ -1,7 +1,8 @@
 # MTLSamplePositionMake(_:_:)
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new sample position on a subpixel grid.
 
@@ -19,6 +20,10 @@ Returns a new sample position on a subpixel grid.
 func MTLSamplePositionMake(_ x: Float, _ y: Float) -> MTLSamplePosition
 ```
 
+```c
+static MTLSamplePosition MTLSamplePositionMake(float x, float y);
+```
+
 #### Return Value
 
 The new sample position.
@@ -30,9 +35,10 @@ The new sample position.
 
 ## See Also
 
-- [func setSamplePositions([MTLSamplePosition])](mtlrenderpassdescriptor/setsamplepositions(_:).md)
+### Using programmable sample positions
+- [func setSamplePositions([MTLSamplePosition])](./mtlrenderpassdescriptor/setsamplepositions%28_%29.md)
   Sets the programmable sample positions for a render pass.
-- [func getSamplePositions() -> [MTLSamplePosition]](mtlrenderpassdescriptor/getsamplepositions.md)
+- [func getSamplePositions() -> [MTLSamplePosition]](./mtlrenderpassdescriptor/getsamplepositions%28%29.md)
   Returns the programmable sample positions set for a render pass.
 
 

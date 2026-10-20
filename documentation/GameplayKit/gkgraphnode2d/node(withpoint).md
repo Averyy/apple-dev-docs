@@ -1,7 +1,8 @@
 # node(withPoint:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a graph node with the specified point.
 
@@ -19,6 +20,10 @@ Creates a graph node with the specified point.
 class func node(withPoint point: vector_float2) -> Self
 ```
 
+```objc
++ (instancetype) nodeWithPoint:(vector_float2) point;
+```
+
 #### Return Value
 
 A new graph node representing the specified point.
@@ -29,7 +34,8 @@ A new graph node representing the specified point.
 
 ## See Also
 
-- [init(point: vector_float2)](gkgraphnode2d/init(point:).md)
+### Creating a Graph Node
+- [init(point: vector_float2)](./init%28point%29.md)
   Initializes a graph node with the specified point.
 
 

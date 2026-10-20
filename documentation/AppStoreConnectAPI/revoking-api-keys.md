@@ -1,6 +1,7 @@
 # Revoking API Keys
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Revoke unused, lost, or compromised private keys.
 
@@ -12,7 +13,7 @@ Revoke an API key immediately if it becomes inactive, lost, or compromised. A re
 
 ##### Revoking Team Keys
 
-To revoke a team API key, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) with an Admin account.
+To revoke a team API key, log in to [App Store Connect](https://appstoreconnect.apple.com/) with an Admin account.
 
 1. Select Users and Access, then select the Keys tab.
 2. Click Edit next to the list of Active keys.
@@ -21,7 +22,7 @@ To revoke a team API key, log in to [`App Store Connect`](https://developer.appl
 
 ##### Revoking Individual Keys
 
-There are two ways to revoke an individual API key, depending on your role. Begin both methods by logging in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/).
+There are two ways to revoke an individual API key, depending on your role. Begin both methods by logging in to [App Store Connect](https://appstoreconnect.apple.com/).
 
 To revoke keys for another user, as an Admin:
 
@@ -42,15 +43,16 @@ To revoke your own key:
 
 ## See Also
 
-- [Creating API Keys for App Store Connect API](creating-api-keys-for-app-store-connect-api.md)
+### Essentials
+- [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
   Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
-- [Identifying Rate Limits](identifying-rate-limits.md)
+- [Identifying Rate Limits](./identifying-rate-limits.md)
   Recognize the rate limits that REST API responses provide and handle them in your code.
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
+- [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md)
   Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
-- [App Store Connect API Release Notes](app-store-connect-api-release-notes.md)
+- [App Store Connect API Release Notes](./app-store-connect-api-release-notes.md)
   Learn about new features and updates in the App Store Connect API.
 
 

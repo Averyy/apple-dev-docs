@@ -1,7 +1,8 @@
 # incomingMessageNotifications
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of incoming message notifications produced by this service.
 
@@ -16,11 +17,12 @@ final var incomingMessageNotifications: some AsyncSequence<SMSService.IncomingMe
 
 #### Discussion
 
-Iterate over this sequence with a `for`-`await`-`in` loop to receive [`SMSService.IncomingMessageNotification`](smsservice/incomingmessagenotification.md) instances that indicate the arrival of incoming messages.
+Iterate over this sequence with a `for`-`await`-`in` loop to receive [`SMSService.IncomingMessageNotification`](./incomingmessagenotification.md) instances that indicate the arrival of incoming messages.
 
 ## See Also
 
-- [SMSService.IncomingMessageNotification](smsservice/incomingmessagenotification.md)
+### Receiving messages
+- [SMSService.IncomingMessageNotification](./incomingmessagenotification.md)
   A structure that contains information about an incoming SMS message.
 
 

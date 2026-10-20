@@ -1,7 +1,8 @@
 # visibleCells
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of visible cells currently displayed by the collection view.
 
@@ -9,7 +10,7 @@ An array of visible cells currently displayed by the collection view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ An array of visible cells currently displayed by the collection view.
 var visibleCells: [UICollectionViewCell] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<__kindof UICollectionViewCell *> * visibleCells;
+```
+
 #### Return Value
 
-An array of [`UICollectionViewCell`](uicollectionviewcell.md) objects. If no cells are visible, this method returns an empty array.
+An array of [`UICollectionViewCell`](../uicollectionviewcell.md) objects. If no cells are visible, this method returns an empty array.
 
 #### Discussion
 
@@ -28,11 +33,13 @@ This method returns the complete list of visible cells displayed by the collecti
 
 ## See Also
 
-- [var indexPathsForVisibleItems: [IndexPath]](uicollectionview/indexpathsforvisibleitems.md)
+### Related Documentation
+- [var indexPathsForVisibleItems: [IndexPath]](./indexpathsforvisibleitems.md)
   An array of the visible items in the collection view.
-- [var numberOfSections: Int](uicollectionview/numberofsections.md)
+### Getting the state of the collection view
+- [var numberOfSections: Int](./numberofsections.md)
   The number of sections displayed by the collection view.
-- [func numberOfItems(inSection: Int) -> Int](uicollectionview/numberofitems(insection:).md)
+- [func numberOfItems(inSection: Int) -> Int](./numberofitems%28insection%29.md)
   Fetches the count of items in the specified section.
 
 

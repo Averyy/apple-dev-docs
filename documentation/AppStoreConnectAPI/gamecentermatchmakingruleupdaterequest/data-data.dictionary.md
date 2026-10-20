@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to modify a rule.
 
@@ -10,21 +11,21 @@ The data structure of the request body you use to modify a rule.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleUpdateRequest.Data.Attributes](gamecentermatchmakingruleupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingRuleUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes of a rule that you modify.
 
 ## Properties
 
 - `attributes` (GameCenterMatchmakingRuleUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*: A unique identifier for the rule.
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterMatchmakingRules`
 
 
 ---

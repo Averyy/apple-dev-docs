@@ -1,7 +1,8 @@
 # userCancelled
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,7 +16,8 @@ static var userCancelled: ASError.Code { get }
 
 ## See Also
 
-- [static var userRestricted: ASError.Code](aserror/userrestricted.md)
+### Cancellation and permission errors
+- [static var userRestricted: ASError.Code](./userrestricted.md)
 
 
 ---

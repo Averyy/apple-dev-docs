@@ -1,13 +1,14 @@
 # Deprecated symbols
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated methods
-- [func requestValue(IntentDialog?) -> any Error](intentparameter/requestvalue(_:)-70qzm.md)
+- [func requestValue(IntentDialog?) -> any Error](./intentparameter/requestvalue%28_%29-70qzm.md)
   Request a value from the user for this parameter.
 
 

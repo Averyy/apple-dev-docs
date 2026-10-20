@@ -1,23 +1,26 @@
 # SpendRow
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The reporting response metrics.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object SpendRow
 ```
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 2](apple-search-ads-campaign-management-api-2.md)
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Ads Campaign Management API 2](./apple-search-ads-campaign-management-api-2.md)
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
 ## Properties
 
@@ -25,11 +28,25 @@ object SpendRow
 - `avgCPT` (Money): The average cost-per-tap (CPT) is the ratio of spend over taps.
 - `impressions` (int64): The number of times your ad appears in App Store search results within the reporting period.
 - `localSpend` (Money): The total spend of a campaign in the currency the organization uses.
-- `tapInstallCPI` (Money): Prior to API 5, this was the `avgCPA` field. The total campaign spend divided by the number of tap-through installs within the reporting period.
-- `tapInstallRate` (double): Prior to API 5, this was the `conversionRate` field. The total number of tap-through installs divided by the total number of taps within the reporting period.
-- `tapInstalls` (int64): Prior to API 5, this was the `installs` field. The total number of new downloads and redownloads from people who tapped your ad within a 30-day attribution window.
-- `tapNewDownloads` (int64): Prior to API 5, this was the `newDownloads` field. New downloads from people who tapped your ad within a 30-day attribution window. The API counts new downloads when someone downloads your app to a device where your app hasn’t previously been installed.
-- `tapRedownloads` (int64): Prior to API 5, this was the `redownloads` field. Redownloads from people who tapped your ad within a 30-day attribution window. The API counts redownloads when someone downloads your app, deletes it, and downloads it again on the same device, or a different one, following an ad tap.
+- `tapInstallCPI` (Money): Prior to API 5, this was the `avgCPA` field.
+
+  The total campaign spend divided by the number of tap-through installs within the reporting period.
+- `tapInstallRate` (double): Prior to API 5, this was the `conversionRate` field.
+
+  The total number of tap-through installs divided by the total number of taps within the reporting period.
+- `tapInstalls` (int64): Prior to API 5, this was the `installs` field.
+
+  The total number of new downloads and redownloads from people who tapped your ad within a 30-day attribution window.
+- `tapNewDownloads` (int64): Prior to API 5, this was the `newDownloads` field.
+
+  New downloads from people who tapped your ad within a 30-day attribution window.
+
+  The API counts new downloads when someone downloads your app to a device where your app hasn’t previously been installed.
+- `tapRedownloads` (int64): Prior to API 5, this was the `redownloads` field.
+
+  Redownloads from people who tapped your ad within a 30-day attribution window.
+
+  The API counts redownloads when someone downloads your app, deletes it, and downloads it again on the same device, or a different one, following an ad tap.
 - `taps` (int64): The number of times people tap your ad within the reporting period.
 - `tapPreOrdersPlaced` (int64): The total number of pre-orders placed by users who tapped your ad. A pre-order placed (tap-through) is counted when a user has tapped your ad and authenticated with Face ID, Touch ID, or their passcode to allow the app to be downloaded on release day, within a 30-day window of the ad tap, and within 60 days of the app download. This does not account for any pre-orders canceled after the pre-order has been placed.
 - `totalAvgCPI` (Money): The total campaign spend divided by the total number of installs within the reporting period.
@@ -46,35 +63,36 @@ object SpendRow
 
 ## See Also
 
-- [object ReportingRequest](reportingrequest.md)
+### Reports Request and Response Objects
+- [object ReportingRequest](./reportingrequest.md)
   The report request body.
-- [object ReportingResponseBody](reportingresponsebody.md)
+- [object ReportingResponseBody](./reportingresponsebody.md)
   The container object for the report response body.
-- [object ReportingResponse](reportingresponse.md)
+- [object ReportingResponse](./reportingresponse.md)
   The container object of report metrics.
-- [object ReportingDataResponse](reportingdataresponse.md)
+- [object ReportingDataResponse](./reportingdataresponse.md)
   The total metrics for a report.
-- [object GrandTotalsRow](grandtotalsrow.md)
+- [object GrandTotalsRow](./grandtotalsrow.md)
   The summary of cumulative metrics.
-- [object ExtendedSpendRow](extendedspendrow.md)
+- [object ExtendedSpendRow](./extendedspendrow.md)
   The descriptions of metrics with dates.
-- [object Row](row.md)
+- [object Row](./row.md)
   The report metrics by time granularity.
-- [object ReportingCampaign](reportingcampaign.md)
+- [object ReportingCampaign](./reportingcampaign.md)
   The response to a request to fetch campaign-level reports.
-- [object ReportingAdGroup](reportingadgroup.md)
+- [object ReportingAdGroup](./reportingadgroup.md)
   The response to a request to fetch ad group-level reports.
-- [object ReportingKeyword](reportingkeyword.md)
+- [object ReportingKeyword](./reportingkeyword.md)
   The response to a request to fetch keyword-level reports.
-- [object ReportingSearchTerm](reportingsearchterm.md)
+- [object ReportingSearchTerm](./reportingsearchterm.md)
   The response to a request to fetch search term-level reports.
-- [object ReportingAd](reportingad.md)
+- [object ReportingAd](./reportingad.md)
   The response to a request to fetch ad-level reports.
-- [object CampaignAppDetail](campaignappdetail.md)
+- [object CampaignAppDetail](./campaignappdetail.md)
   The app data to fetch from campaign-level reports.
-- [object InsightsObject](insightsobject.md)
+- [object InsightsObject](./insightsobject.md)
   The container object for bid recommendations.
-- [object KeywordInsights](keywordinsights.md)
+- [object KeywordInsights](./keywordinsights.md)
   The object that contains bid recommendations.
 
 

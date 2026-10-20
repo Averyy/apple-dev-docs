@@ -1,7 +1,8 @@
 # init(upstream:other:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that ignores elements from the upstream publisher until it receives an element from another publisher.
 

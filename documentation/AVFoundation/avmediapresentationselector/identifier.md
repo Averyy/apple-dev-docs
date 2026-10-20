@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides the authored identifier for the selector.
 
@@ -20,9 +21,14 @@ Provides the authored identifier for the selector.
 var identifier: String { get }
 ```
 
+```objc
+@property (readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [func displayName(forLocaleIdentifier: String) -> String](avmediapresentationselector/displayname(forlocaleidentifier:).md)
+### Identifying the selector
+- [func displayName(forLocaleIdentifier: String) -> String](./displayname%28forlocaleidentifier%29.md)
   Returns the display name for the selector that best matches the specified locale identifier.
 
 

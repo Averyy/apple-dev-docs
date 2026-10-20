@@ -1,7 +1,8 @@
 # ExpandedWindowToolbarStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A window toolbar style which displays its title bar area above the toolbar.
 
@@ -16,27 +17,28 @@ struct ExpandedWindowToolbarStyle
 
 #### Overview
 
-You can also use [`expanded`](windowtoolbarstyle/expanded.md) to construct this style.
+You can also use [`expanded`](./windowtoolbarstyle/expanded.md) to construct this style.
 
 ## Topics
 
 ### Creating the window toolbar style
-- [init()](expandedwindowtoolbarstyle/init.md)
+- [init()](./expandedwindowtoolbarstyle/init%28%29.md)
   Creates an expanded window toolbar style.
 
 ## Relationships
 
 ### Conforms To
-- [WindowToolbarStyle](windowtoolbarstyle.md)
+- [WindowToolbarStyle](./windowtoolbarstyle.md)
 
 ## See Also
 
-- [struct DefaultWindowToolbarStyle](defaultwindowtoolbarstyle.md)
+### Supporting types
+- [struct DefaultWindowToolbarStyle](./defaultwindowtoolbarstyle.md)
   The default window toolbar style.
-- [struct UnifiedWindowToolbarStyle](unifiedwindowtoolbarstyle.md)
+- [struct UnifiedWindowToolbarStyle](./unifiedwindowtoolbarstyle.md)
   A window toolbar style which displays its toolbar and title bar inline.
-- [struct UnifiedCompactWindowToolbarStyle](unifiedcompactwindowtoolbarstyle.md)
-  A window toolbar style similar to [`unified`](windowtoolbarstyle/unified.md), but with a more compact vertical sizing.
+- [struct UnifiedCompactWindowToolbarStyle](./unifiedcompactwindowtoolbarstyle.md)
+  A window toolbar style similar to [`unified`](./windowtoolbarstyle/unified.md), but with a more compact vertical sizing.
 
 
 ---

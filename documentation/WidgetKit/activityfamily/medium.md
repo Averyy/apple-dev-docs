@@ -1,7 +1,8 @@
 # ActivityFamily.medium
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A size family of a Live Activity on iOS and macOS.
 
@@ -17,7 +18,8 @@ case medium
 
 ## See Also
 
-- [ActivityFamily.small](activityfamily/small.md)
+### Accessing system families
+- [ActivityFamily.small](./small.md)
   A size family of a Live Activity on watchOS.
 
 

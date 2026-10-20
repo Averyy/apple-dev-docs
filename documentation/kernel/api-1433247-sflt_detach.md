@@ -1,18 +1,19 @@
 # sflt_detach
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15
 
 ## Declaration
 
-```swift
+```c
 errno_t sflt_detach(socket_t socket, sflt_handle handle);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success otherwise the errno error.
 

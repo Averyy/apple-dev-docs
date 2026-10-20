@@ -1,7 +1,8 @@
 # RetargetingConfiguration
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for retargeting skeletal animations between different skeletons.
 
@@ -21,14 +22,14 @@ class RetargetingConfiguration
 
 #### Overview
 
-[`RetargetingConfiguration`](retargetingconfiguration.md) enables the transfer of animations from one skeleton to another, automatically mapping joints and adapting poses to accommodate different skeletal structures. This is particularly useful for applying animations across different character models or creatures.
+[`RetargetingConfiguration`](./retargetingconfiguration.md) enables the transfer of animations from one skeleton to another, automatically mapping joints and adapting poses to accommodate different skeletal structures. This is particularly useful for applying animations across different character models or creatures.
 
 #### Usage
 
 Create configurations using the static factory methods for common skeleton types:
 
-- [`automatchBiped(_:to:jointOffsets:)`](retargetingconfiguration/automatchbiped(_:to:jointoffsets:).md) for humanoid/bipedal characters
-- [`automatchQuadruped(_:sourceTransform:to:targetTransform:jointOffsets:)`](retargetingconfiguration/automatchquadruped(_:sourcetransform:to:targettransform:jointoffsets:).md) for four-legged creatures
+- [`automatchBiped(_:to:jointOffsets:)`](./retargetingconfiguration/automatchbiped%28_,to,jointoffsets%29.md) for humanoid/bipedal characters
+- [`automatchQuadruped(_:sourceTransform:to:targetTransform:jointOffsets:)`](./retargetingconfiguration/automatchquadruped%28_,sourcetransform,to,targettransform,jointoffsets%29.md) for four-legged creatures
 
 #### Example
 
@@ -64,21 +65,22 @@ do {
 ## Topics
 
 ### Creating a configuration
-- [static func automatchBiped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](retargetingconfiguration/automatchbiped(_:sourcetransform:to:targettransform:jointoffsets:).md)
+- [static func automatchBiped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](./retargetingconfiguration/automatchbiped%28_,sourcetransform,to,targettransform,jointoffsets%29.md)
   Creates a retargeting configuration for bipedal characters with custom root transforms.
-- [static func automatchBiped(SkeletonResource, to: SkeletonResource, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](retargetingconfiguration/automatchbiped(_:to:jointoffsets:).md)
+- [static func automatchBiped(SkeletonResource, to: SkeletonResource, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](./retargetingconfiguration/automatchbiped%28_,to,jointoffsets%29.md)
   Creates a retargeting configuration for bipedal characters using automatic joint matching.
-- [static func automatchQuadruped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](retargetingconfiguration/automatchquadruped(_:sourcetransform:to:targettransform:jointoffsets:).md)
+- [static func automatchQuadruped(SkeletonResource, sourceTransform: Transform, to: SkeletonResource, targetTransform: Transform, jointOffsets: [String : simd_quatf]) throws -> RetargetingConfiguration](./retargetingconfiguration/automatchquadruped%28_,sourcetransform,to,targettransform,jointoffsets%29.md)
   Creates a retargeting configuration for quadrupedal characters using automatic joint matching.
 ### Accessing the skeletons
-- [var sourceSkeleton: SkeletonResource](retargetingconfiguration/sourceskeleton.md)
+- [var sourceSkeleton: SkeletonResource](./retargetingconfiguration/sourceskeleton.md)
   The skeleton the source animation targets.
-- [var targetSkeleton: SkeletonResource](retargetingconfiguration/targetskeleton.md)
+- [var targetSkeleton: SkeletonResource](./retargetingconfiguration/targetskeleton.md)
   The skeleton the retargeting animates.
 
 ## See Also
 
-- [class SkeletonResource](skeletonresource.md)
+### Skeletons and retargeting
+- [class SkeletonResource](./skeletonresource.md)
   A self-contained skeleton asset for animating characters and articulated objects.
 
 

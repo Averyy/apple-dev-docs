@@ -1,7 +1,8 @@
 # verifyIdentity
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A button label that describes verifying identity with Apple Wallet.
 
@@ -9,7 +10,7 @@ A button label that describes verifying identity with Apple Wallet.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ static let verifyIdentity: VerifyIdentityWithWalletButtonLabel
 
 ## See Also
 
-- [static let `continue`: VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel/continue.md)
+### Getting standard labels
+- [static let `continue`: VerifyIdentityWithWalletButtonLabel](./continue.md)
   A button label that describes continuing with Apple Wallet.
-- [static let verify: VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel/verify.md)
+- [static let verify: VerifyIdentityWithWalletButtonLabel](./verify.md)
   A button label that describes verifying with Apple Wallet.
-- [static let verifyAge: VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel/verifyage.md)
+- [static let verifyAge: VerifyIdentityWithWalletButtonLabel](./verifyage.md)
   A button label that describes verifying age with Apple Wallet.
 
 

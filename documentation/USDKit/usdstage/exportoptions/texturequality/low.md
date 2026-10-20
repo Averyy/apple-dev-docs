@@ -1,7 +1,8 @@
 # low
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Aggressively reduces the texture file size. Some visual details may be suppressed to reach the smallest file size.
 

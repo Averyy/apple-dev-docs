@@ -1,14 +1,15 @@
 # dispatchMultiAxisPointerEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchMultiAxisPointerEvent(AbsoluteTime timeStamp, UInt32 buttonState, IOFixed x, IOFixed y, IOFixed z, IOFixed rX, IOFixed rY, IOFixed rZ, IOOptionBits options);
 ```
 

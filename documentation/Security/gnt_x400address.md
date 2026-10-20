@@ -1,7 +1,8 @@
 # GNT_X400Address
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var GNT_X400Address: __CE_GeneralNameType { get }
+```
+
+```c
+GNT_X400Address
 ```
 
 

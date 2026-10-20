@@ -1,7 +1,8 @@
 # init(doubleValue:unit:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new measurement with a specified double-precision floating-point value and unit.
 
@@ -18,6 +19,10 @@ Initializes a new measurement with a specified double-precision floating-point v
 
 ```swift
 init(doubleValue: Double, unit: Unit)
+```
+
+```objc
+- (instancetype) initWithDoubleValue:(double) doubleValue unit:(UnitType) unit;
 ```
 
 #### Return Value

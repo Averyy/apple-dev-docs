@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera to use when taking the map snapshot.
 
@@ -21,15 +22,20 @@ The camera to use when taking the map snapshot.
 var camera: MKMapCamera { get set }
 ```
 
+```objc
+@property (nonatomic, copy) MKMapCamera * camera;
+```
+
 #### Discussion
 
 Specify a camera object if you want to change the pitch, altitude, or heading information applied to the map.
 
 ## See Also
 
-- [var region: MKCoordinateRegion](mkmapsnapshotter/options/region.md)
+### Configuring the snapshot region
+- [var region: MKCoordinateRegion](./region.md)
   The area of the map that you want to capture.
-- [var mapRect: MKMapRect](mkmapsnapshotter/options/maprect.md)
+- [var mapRect: MKMapRect](./maprect.md)
   The map rectangle that you want to capture.
 
 

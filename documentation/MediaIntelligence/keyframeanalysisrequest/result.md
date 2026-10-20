@@ -1,7 +1,8 @@
 # KeyFrameAnalysisRequest.Result
 
 **Framework**: Media Intelligence  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The output of a key frame analysis.
 
@@ -21,20 +22,20 @@ struct Result
 
 #### Overview
 
-[`KeyFrameAnalysisRequest.Result`](keyframeanalysisrequest/result.md) contains the timestamp of the frame the framework selects as the best representative of the video. Use this [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value to seek a player to that position or to extract a thumbnail.
+[`KeyFrameAnalysisRequest.Result`](./result.md) contains the timestamp of the frame the framework selects as the best representative of the video. Use this [`CMTime`](../../CoreMedia/cmtime.md) value to seek a player to that position or to extract a thumbnail.
 
 ## Topics
 
 ### Inspecting the result
-- [let timestamp: CMTime](keyframeanalysisrequest/result/timestamp.md)
+- [let timestamp: CMTime](./result/timestamp.md)
   The timestamp of the key frame.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VideoAnalyzer.Result](videoanalyzer/result.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [VideoAnalyzer.Result](../videoanalyzer/result.md)
 
 
 ---

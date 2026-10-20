@@ -1,14 +1,15 @@
 # warmCPU
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn warmCPU(uint64_t abstime);
 ```
 

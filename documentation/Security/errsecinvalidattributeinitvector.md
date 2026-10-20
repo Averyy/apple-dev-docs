@@ -1,7 +1,8 @@
 # errSecInvalidAttributeInitVector
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An init vector attribute is not valid.
 
@@ -18,6 +19,10 @@ An init vector attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeInitVector: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeInitVector
 ```
 
 

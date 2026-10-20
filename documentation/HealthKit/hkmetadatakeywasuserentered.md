@@ -1,7 +1,8 @@
 # HKMetadataKeyWasUserEntered
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates whether the sample was entered by the user.
 
@@ -19,18 +20,23 @@ A key that indicates whether the sample was entered by the user.
 let HKMetadataKeyWasUserEntered: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyWasUserEntered;
+```
+
 #### Discussion
 
-Set this key’s value to [`true`](https://developer.apple.com/documentation/swift/true) if the sample was entered by the user; otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this key’s value to [`true`](../Swift/true.md) if the sample was entered by the user; otherwise, set it to [`false`](../Swift/false.md).
 
 ## See Also
 
-- [let HKMetadataKeyExternalUUID: String](hkmetadatakeyexternaluuid.md)
+### General Keys
+- [let HKMetadataKeyExternalUUID: String](./hkmetadatakeyexternaluuid.md)
   A unique identifier for an HKObject that is set by its source.
-- [let HKMetadataKeyTimeZone: String](hkmetadatakeytimezone.md)
+- [let HKMetadataKeyTimeZone: String](./hkmetadatakeytimezone.md)
   The user’s time zone when the HealthKit object was created.
-- [let HKMetadataKeyQuantityClampedToLowerBound: String](hkmetadatakeyquantityclampedtolowerbound.md)
-- [let HKMetadataKeyQuantityClampedToUpperBound: String](hkmetadatakeyquantityclampedtoupperbound.md)
+- [let HKMetadataKeyQuantityClampedToLowerBound: String](./hkmetadatakeyquantityclampedtolowerbound.md)
+- [let HKMetadataKeyQuantityClampedToUpperBound: String](./hkmetadatakeyquantityclampedtoupperbound.md)
 
 
 ---

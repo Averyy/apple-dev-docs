@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle for a shield to display below the title.
 
@@ -22,9 +23,10 @@ Use a `subtitle` to provide more information, such as the reason for shielding t
 
 ## See Also
 
-- [let title: ShieldConfiguration.Label?](shieldconfiguration/title.md)
+### Configure the text content
+- [let title: ShieldConfiguration.Label?](./title.md)
   The title of the shield to display below the icon.
-- [ShieldConfiguration.Label](shieldconfiguration/label.md)
+- [ShieldConfiguration.Label](./label.md)
   The appearance of text labels within a shield.
 
 

@@ -1,7 +1,8 @@
 # auxiliaryButtons
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional additional buttons on the mouse.
 
@@ -19,17 +20,22 @@ The optional additional buttons on the mouse.
 var auxiliaryButtons: [GCControllerButtonInput]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<GCControllerButtonInput *> * auxiliaryButtons;
+```
+
 #### Discussion
 
 If the mouse doesn’t have additional buttons, this property is `nil`.
 
 ## See Also
 
-- [var leftButton: GCControllerButtonInput](gcmouseinput/leftbutton.md)
+### Accessing Buttons
+- [var leftButton: GCControllerButtonInput](./leftbutton.md)
   The left button on the mouse.
-- [var rightButton: GCControllerButtonInput?](gcmouseinput/rightbutton.md)
+- [var rightButton: GCControllerButtonInput?](./rightbutton.md)
   The optional right button on the mouse.
-- [var middleButton: GCControllerButtonInput?](gcmouseinput/middlebutton.md)
+- [var middleButton: GCControllerButtonInput?](./middlebutton.md)
   The optional middle button on the mouse.
 
 

@@ -1,7 +1,8 @@
 # removeOutput(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an output from a capture session.
 
@@ -19,6 +20,10 @@ Removes an output from a capture session.
 func removeOutput(_ output: AVCaptureOutput)
 ```
 
+```objc
+- (void) removeOutput:(AVCaptureOutput *) output;
+```
+
 #### Discussion
 
 You can call this method while the session is running.
@@ -29,11 +34,12 @@ You can call this method while the session is running.
 
 ## See Also
 
-- [var outputs: [AVCaptureOutput]](avcapturesession/outputs.md)
+### Configuring outputs
+- [var outputs: [AVCaptureOutput]](./outputs.md)
   The output destinations to which a captures session sends its data.
-- [func canAddOutput(AVCaptureOutput) -> Bool](avcapturesession/canaddoutput(_:).md)
+- [func canAddOutput(AVCaptureOutput) -> Bool](./canaddoutput%28_%29.md)
   Determines whether you can add an output to a session.
-- [func addOutput(AVCaptureOutput)](avcapturesession/addoutput(_:).md)
+- [func addOutput(AVCaptureOutput)](./addoutput%28_%29.md)
   Adds an output to the capture session.
 
 

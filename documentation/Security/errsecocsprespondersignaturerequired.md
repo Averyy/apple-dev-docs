@@ -1,7 +1,8 @@
 # errSecOCSPResponderSignatureRequired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) responder requires a signature.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) responder requires a signature.
 
 ```swift
 var errSecOCSPResponderSignatureRequired: OSStatus { get }
+```
+
+```c
+errSecOCSPResponderSignatureRequired
 ```
 
 

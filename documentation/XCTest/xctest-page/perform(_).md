@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a specific test.
 
@@ -9,6 +10,10 @@ Executes a specific test.
 
 ```swift
 func perform(_ run: XCTestRun)
+```
+
+```objc
+- (void) performTest:(XCTestRun *) run;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ Must be overridden by subclasses.
 
 ## See Also
 
-- [func run()](xctest/run.md)
+### Running Tests
+- [func run()](./run%28%29.md)
   Creates a test run instance and starts the test.
 
 

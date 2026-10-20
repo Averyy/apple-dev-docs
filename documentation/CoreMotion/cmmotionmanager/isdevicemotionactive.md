@@ -1,7 +1,8 @@
 # isDeviceMotionActive
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the app is receiving updates from the device-motion service.
 
@@ -18,19 +19,25 @@ A Boolean value that determines whether the app is receiving updates from the de
 var isDeviceMotionActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isDeviceMotionActive) BOOL deviceMotionActive;
+```
+
 #### Discussion
 
-This property indicates whether [`startDeviceMotionUpdates(to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md) or [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md) has been called since the last time [`stopDeviceMotionUpdates()`](cmmotionmanager/stopdevicemotionupdates().md) was called.
+This property indicates whether [`startDeviceMotionUpdates(to:withHandler:)`](./startdevicemotionupdates%28to,withhandler%29.md) or [`startDeviceMotionUpdates()`](./startdevicemotionupdates%28%29.md) has been called since the last time [`stopDeviceMotionUpdates()`](./stopdevicemotionupdates%28%29.md) was called.
 
 ## See Also
 
-- [var isDeviceMotionAvailable: Bool](cmmotionmanager/isdevicemotionavailable.md)
+### Related Documentation
+- [var isDeviceMotionAvailable: Bool](./isdevicemotionavailable.md)
   A Boolean value that indicates whether the device-motion service is available on the device.
-- [var isAccelerometerActive: Bool](cmmotionmanager/isaccelerometeractive.md)
+### Determining Which Services Are Active
+- [var isAccelerometerActive: Bool](./isaccelerometeractive.md)
   A Boolean value that indicates whether accelerometer updates are currently happening.
-- [var isGyroActive: Bool](cmmotionmanager/isgyroactive.md)
+- [var isGyroActive: Bool](./isgyroactive.md)
   A Boolean value that determines whether gyroscope updates are currently happening.
-- [var isMagnetometerActive: Bool](cmmotionmanager/ismagnetometeractive.md)
+- [var isMagnetometerActive: Bool](./ismagnetometeractive.md)
   A Boolean value that determines whether magnetometer updates are currently happening.
 
 

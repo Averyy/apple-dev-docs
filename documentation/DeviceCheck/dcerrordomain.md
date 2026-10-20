@@ -1,7 +1,8 @@
 # DCErrorDomain
 
 **Framework**: DeviceCheck  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for errors associated with DeviceCheck APIs.
 
@@ -20,11 +21,16 @@ The error domain for errors associated with DeviceCheck APIs.
 let DCErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const DCErrorDomain;
+```
+
 ## See Also
 
-- [struct DCError](dcerror-swift.struct.md)
+### Errors
+- [struct DCError](./dcerror-swift.struct.md)
   A type that indicates when DeviceCheck encounters an error.
-- [DCError.Code](dcerror-swift.struct/code.md)
+- [DCError.Code](./dcerror-swift.struct/code.md)
   DeviceCheck error codes.
 
 

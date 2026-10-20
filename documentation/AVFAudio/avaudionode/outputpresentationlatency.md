@@ -1,7 +1,8 @@
 # outputPresentationLatency
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum render pipeline latency downstream of the node, in seconds.
 
@@ -20,17 +21,22 @@ The maximum render pipeline latency downstream of the node, in seconds.
 var outputPresentationLatency: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval outputPresentationLatency;
+```
+
 #### Discussion
 
 This latency describes the maximum time it takes to present the audio at the output of a node.
 
 ## See Also
 
-- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](avaudionode/withauaudiounit(_:).md)
+### Getting audio node properties
+- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](./withauaudiounit%28_%29.md)
   Provides scoped access to the node’s AUAudioUnit
-- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
+- [var auAudioUnit: AUAudioUnit](./auaudiounit-1gu8g.md)
   An audio unit object that wraps or underlies the implementation’s audio unit.
-- [var latency: TimeInterval](avaudionode/latency.md)
+- [var latency: TimeInterval](./latency.md)
   The processing latency of the node, in seconds.
 
 

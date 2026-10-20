@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the converter so you can convert a new audio stream.
 
@@ -18,6 +19,10 @@ Resets the converter so you can convert a new audio stream.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 

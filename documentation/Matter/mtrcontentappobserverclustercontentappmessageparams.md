@@ -1,7 +1,8 @@
 # MTRContentAppObserverClusterContentAppMessageParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 class MTRContentAppObserverClusterContentAppMessageParams
 ```
 
+```objc
+@interface MTRContentAppObserverClusterContentAppMessageParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var data: String?](mtrcontentappobserverclustercontentappmessageparams/data.md)
-- [var encodingHint: String](mtrcontentappobserverclustercontentappmessageparams/encodinghint.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrcontentappobserverclustercontentappmessageparams/serversideprocessingtimeout.md)
+- [var data: String?](./mtrcontentappobserverclustercontentappmessageparams/data.md)
+- [var encodingHint: String](./mtrcontentappobserverclustercontentappmessageparams/encodinghint.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrcontentappobserverclustercontentappmessageparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var timedInvokeTimeoutMs: NSNumber?](mtrcontentappobserverclustercontentappmessageparams/timedinvoketimeoutms.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrcontentappobserverclustercontentappmessageparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

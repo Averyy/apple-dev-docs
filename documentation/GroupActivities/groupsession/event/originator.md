@@ -1,7 +1,8 @@
 # originator
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant that initiated the event.
 

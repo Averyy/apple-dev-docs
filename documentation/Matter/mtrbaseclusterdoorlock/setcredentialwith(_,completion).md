@@ -1,7 +1,8 @@
 # setCredentialWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setCredentialWith(_ params: MTRDoorLockClusterSetCredentialParams, completion: @escaping @Sendable (MTRDoorLockClusterSetCredentialResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func setCredentialWith(_ params: MTRDoorLockClusterSetCredentialParams) async throws -> MTRDoorLockClusterSetCredentialResponseParams
+```
+
+```objc
+- (void) setCredentialWithParams:(MTRDoorLockClusterSetCredentialParams *) params completion:(void (^)(MTRDoorLockClusterSetCredentialResponseParams *data, NSError *error)) completion;
 ```
 
 

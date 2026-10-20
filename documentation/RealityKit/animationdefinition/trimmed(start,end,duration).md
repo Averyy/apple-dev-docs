@@ -1,7 +1,8 @@
 # trimmed(start:end:duration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Edits the animation duration according to the specified time.
 
@@ -11,7 +12,7 @@ Edits the animation duration according to the specified time.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,7 @@ A version of the animation shortened or lengthened according to the specified ti
 
 #### Discussion
 
-If an argument property lies outside the underlying [`duration`](animationdefinition/duration.md), the animation plays back according to the characteristics of its [`repeatMode`](animationdefinition/repeatmode.md).
+If an argument property lies outside the underlying [`duration`](./duration.md), the animation plays back according to the characteristics of its [`repeatMode`](./repeatmode.md).
 
 ## Parameters
 
@@ -35,19 +36,20 @@ If an argument property lies outside the underlying [`duration`](animationdefini
 
 ## See Also
 
-- [var speed: Float](animationdefinition/speed.md)
+### Timing the animation
+- [var speed: Float](./speed.md)
   A factor that increases or decreases the animation’s rate of playback.
-- [var delay: TimeInterval](animationdefinition/delay.md)
+- [var delay: TimeInterval](./delay.md)
   An amount of time that elapses before the animation plays.
-- [var duration: TimeInterval](animationdefinition/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](animationdefinition/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animation begins within the duration.
-- [var trimDuration: TimeInterval?](animationdefinition/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the source animation’s duration.
-- [var trimStart: TimeInterval?](animationdefinition/trimstart.md)
+- [var trimStart: TimeInterval?](./trimstart.md)
   The time, in seconds, at which the animation plays.
-- [var trimEnd: TimeInterval?](animationdefinition/trimend.md)
+- [var trimEnd: TimeInterval?](./trimend.md)
   The time, in seconds, at which the source animation stops.
 
 

@@ -1,7 +1,8 @@
 # sortCategory
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort category of this mesh instance.
 
@@ -19,7 +20,8 @@ final var sortCategory: LowLevelMeshInstance.SortCategory { get set }
 
 ## See Also
 
-- [LowLevelMeshInstance.SortCategory](lowlevelmeshinstance/sortcategory-swift.enum.md)
+### Sorting instances
+- [LowLevelMeshInstance.SortCategory](./sortcategory-swift.enum.md)
   The sort category of this mesh instance.
 
 

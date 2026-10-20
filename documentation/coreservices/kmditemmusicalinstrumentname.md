@@ -1,7 +1,8 @@
 # kMDItemMusicalInstrumentName
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the name of instrument relative to the instrument category. A CFString.
 
@@ -12,6 +13,10 @@ Specifies the name of instrument relative to the instrument category. A CFString
 
 ```swift
 let kMDItemMusicalInstrumentName: CFString!
+```
+
+```c
+const CFStringRef kMDItemMusicalInstrumentName;
 ```
 
 #### Discussion

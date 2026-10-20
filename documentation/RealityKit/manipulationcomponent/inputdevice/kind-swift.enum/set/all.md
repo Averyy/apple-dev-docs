@@ -1,7 +1,8 @@
 # all
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set of all available input device kinds.
 

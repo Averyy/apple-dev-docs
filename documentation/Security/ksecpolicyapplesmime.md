@@ -1,7 +1,8 @@
 # kSecPolicyAppleSMIME
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Basic X509 plus email address verification and `KeyUsage` enforcement per RFC 2632.
 
@@ -18,6 +19,10 @@ Basic X509 plus email address verification and `KeyUsage` enforcement per RFC 26
 
 ```swift
 let kSecPolicyAppleSMIME: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleSMIME;
 ```
 
 

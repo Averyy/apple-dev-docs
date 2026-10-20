@@ -1,7 +1,8 @@
 # when(platforms:configuration:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a build setting condition.
 
@@ -21,13 +22,14 @@ static func when(platforms: [Platform], configuration: BuildConfiguration) -> Bu
 
 ## See Also
 
-- [static func when(platforms: [Platform]) -> BuildSettingCondition](buildsettingcondition/when(platforms:).md)
+### Checking for a Build Condition
+- [static func when(platforms: [Platform]) -> BuildSettingCondition](./when%28platforms%29.md)
   Creates a build setting condition.
-- [static func when(configuration: BuildConfiguration) -> BuildSettingCondition](buildsettingcondition/when(configuration:).md)
+- [static func when(configuration: BuildConfiguration) -> BuildSettingCondition](./when%28configuration%29.md)
   Creates a build setting condition.
-- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?, traits: Set<String>?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:traits:).md)
+- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?, traits: Set<String>?) -> BuildSettingCondition](./when%28platforms,configuration,traits%29.md)
   Creates a build setting condition.
-- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:)-2991l.md)
+- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?) -> BuildSettingCondition](./when%28platforms,configuration%29-2991l.md)
   Creates a build setting condition.
 
 

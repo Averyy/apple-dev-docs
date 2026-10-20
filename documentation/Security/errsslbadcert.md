@@ -1,7 +1,8 @@
 # errSSLBadCert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Bad certificate format.
 
@@ -18,6 +19,10 @@ Bad certificate format.
 
 ```swift
 var errSSLBadCert: OSStatus { get }
+```
+
+```c
+errSSLBadCert
 ```
 
 

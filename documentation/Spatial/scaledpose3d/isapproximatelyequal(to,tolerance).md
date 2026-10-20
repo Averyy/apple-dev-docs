@@ -1,7 +1,8 @@
 # isApproximatelyEqual(to:tolerance:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether two scaled poses are equal within a specified tolerance.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether two scaled poses are equal within
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ func isApproximatelyEqual(to other: ScaledPose3D, tolerance: Double = sqrt(.ulpO
 
 ## See Also
 
-- [static func == (ScaledPose3D, ScaledPose3D) -> Bool](scaledpose3d/==(_:_:).md)
+### Comparing values
+- [static func == (ScaledPose3D, ScaledPose3D) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

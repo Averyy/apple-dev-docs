@@ -1,7 +1,8 @@
 # IOUSBHostIsochronousTransactionCompletionHandler
 
 **Framework**: IOUSBHost  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,12 +14,17 @@
 typealias IOUSBHostIsochronousTransactionCompletionHandler = (IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousTransaction>) -> Void
 ```
 
+```c
+typedef void (^)(int, struct IOUSBHostIsochronousTransaction *) IOUSBHostIsochronousTransactionCompletionHandler;
+```
+
 ## See Also
 
-- [typealias IOUSBHostCIDoorbell](iousbhostcidoorbell.md)
-- [typealias IOUSBHostCIPortStatus](iousbhostciportstatus.md)
-- [typealias IOUSBHostControllerInterfaceCommandHandler](iousbhostcontrollerinterfacecommandhandler.md)
-- [typealias IOUSBHostControllerInterfaceDoorbellHandler](iousbhostcontrollerinterfacedoorbellhandler.md)
+### Data Types
+- [typealias IOUSBHostCIDoorbell](./iousbhostcidoorbell.md)
+- [typealias IOUSBHostCIPortStatus](./iousbhostciportstatus.md)
+- [typealias IOUSBHostControllerInterfaceCommandHandler](./iousbhostcontrollerinterfacecommandhandler.md)
+- [typealias IOUSBHostControllerInterfaceDoorbellHandler](./iousbhostcontrollerinterfacedoorbellhandler.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ApplePayShippingContactEditingMode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate whether the shipping mode prevents the user from editing fields of the shipping address.
 
@@ -11,7 +12,7 @@ Values that indicate whether the shipping mode prevents the user from editing fi
 
 ## Declaration
 
-```swift
+```
 enum ApplePayShippingContactEditingMode
 ```
 
@@ -28,18 +29,19 @@ The values for the contact editing mode:
 ## Topics
 
 ### Enumeration Cases
-- [enabled](applepayshippingcontacteditingmode/enabled.md)
-- [storePickup](applepayshippingcontacteditingmode/storepickup.md)
+- [enabled](./applepayshippingcontacteditingmode/enabled.md)
+- [storePickup](./applepayshippingcontacteditingmode/storepickup.md)
 
 ## See Also
 
-- [requiredBillingContactFields](applepaypaymentrequest/requiredbillingcontactfields.md)
+### Requesting billing and shipping contact information
+- [requiredBillingContactFields](./applepaypaymentrequest/requiredbillingcontactfields.md)
   The fields of billing information the user must provide to process the transaction.
-- [requiredShippingContactFields](applepaypaymentrequest/requiredshippingcontactfields.md)
+- [requiredShippingContactFields](./applepaypaymentrequest/requiredshippingcontactfields.md)
   The fields of shipping information the user must provide to fulfill the order.
-- [shippingContactEditingMode](applepaypaymentrequest/shippingcontacteditingmode.md)
+- [shippingContactEditingMode](./applepaypaymentrequest/shippingcontacteditingmode.md)
   A value that indicates whether the shipping mode prevents the user from editing the shipping address.
-- [ApplePayContactField](applepaycontactfield.md)
+- [ApplePayContactField](./applepaycontactfield.md)
   Field names for requesting contact information in a payment request.
 
 

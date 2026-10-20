@@ -1,7 +1,8 @@
 # removeConnections(to:bidirectional:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the connections from this node to the specified nodes.
 
@@ -19,20 +20,25 @@ Removes the connections from this node to the specified nodes.
 func removeConnections(to nodes: [GKGraphNode], bidirectional: Bool)
 ```
 
+```objc
+- (void) removeConnectionsToNodes:(NSArray<GKGraphNode *> *) nodes bidirectional:(BOOL) bidirectional;
+```
+
 #### Discussion
 
-In GameplayKit, the connections between nodes in a graph are directional. For example, if the [`connectedNodes`](gkgraphnode/connectednodes.md) list of Node A contains Node B, then a traveler on the graph can move directly from Node A to Node B. For the reverse to also be true, the [`connectedNodes`](gkgraphnode/connectednodes.md) list of Node B must contain Node A. When calling this method to remove a connection from one node to another, use the `bidirectional` parameter to choose whether to automatically remove the reverse connection as well.
+In GameplayKit, the connections between nodes in a graph are directional. For example, if the [`connectedNodes`](./connectednodes.md) list of Node A contains Node B, then a traveler on the graph can move directly from Node A to Node B. For the reverse to also be true, the [`connectedNodes`](./connectednodes.md) list of Node B must contain Node A. When calling this method to remove a connection from one node to another, use the `bidirectional` parameter to choose whether to automatically remove the reverse connection as well.
 
 ## Parameters
 
 - `nodes`: The nodes connected to this node whose connections are to be removed.
-- `bidirectional`: [`true`](https://developer.apple.com/documentation/swift/true) to remove connections in both directions if they exist; [`false`](https://developer.apple.com/documentation/swift/false) to remove only connections from this node to each of the specified nodes.
+- `bidirectional`: [`true`](../../Swift/true.md) to remove connections in both directions if they exist; [`false`](../../Swift/false.md) to remove only connections from this node to each of the specified nodes.
 
 ## See Also
 
-- [var connectedNodes: [GKGraphNode]](gkgraphnode/connectednodes.md)
+### Working with Connections
+- [var connectedNodes: [GKGraphNode]](./connectednodes.md)
   The list of other nodes connected to this node.
-- [func addConnections(to: [GKGraphNode], bidirectional: Bool)](gkgraphnode/addconnections(to:bidirectional:).md)
+- [func addConnections(to: [GKGraphNode], bidirectional: Bool)](./addconnections%28to,bidirectional%29.md)
   Connects this node to all nodes in the specified list.
 
 

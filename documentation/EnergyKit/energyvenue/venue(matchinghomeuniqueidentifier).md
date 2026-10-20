@@ -1,14 +1,15 @@
 # venue(matchingHomeUniqueIdentifier:)
 
 **Framework**: EnergyKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an energy venue for the given HomeKit identifier.
 
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,7 @@ static func venue(matchingHomeUniqueIdentifier: UUID) async throws -> EnergyVenu
 
 #### Discussion
 
-This method throws [`EnergyKitError.venueUnavailable`](energykiterror/venueunavailable.md) if the framework can’t provide the requested venue.
+This method throws [`EnergyKitError.venueUnavailable`](../energykiterror/venueunavailable.md) if the framework can’t provide the requested venue.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ This method throws [`EnergyKitError.venueUnavailable`](energykiterror/venueunava
 
 ## See Also
 
-- [static func venue(for: UUID) async throws -> EnergyVenue](energyvenue/venue(for:).md)
+### Returning electricity sites
+- [static func venue(for: UUID) async throws -> EnergyVenue](./venue%28for%29.md)
   Returns an electricity venue for the given venue identifier.
 
 

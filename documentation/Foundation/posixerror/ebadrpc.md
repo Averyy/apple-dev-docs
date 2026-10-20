@@ -1,7 +1,8 @@
 # EBADRPC
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 RPC struct is bad.
 

@@ -1,7 +1,8 @@
 # init(trainingData:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sound classifier with a training dataset represented by a data source.
 
@@ -18,9 +19,15 @@ Creates a sound classifier with a training dataset represented by a data source.
 init(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters = ModelParameters()) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: [String : [URL]], parameters: MLSoundClassifier.ModelParameters = ModelParameters()) throws
+```
+
 #### Discussion
 
-Use this initializer to train a sound classifier with an [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md). For example, you can organize your audio files into labeled directories. See [`MLSoundClassifier.DataSource.labeledDirectories(at:)`](mlsoundclassifier/datasource/labeleddirectories(at:).md).
+Use this initializer to train a sound classifier with an [`MLSoundClassifier.DataSource`](./datasource.md). For example, you can organize your audio files into labeled directories. See [`MLSoundClassifier.DataSource.labeledDirectories(at:)`](./datasource/labeleddirectories%28at%29.md).
 
 ```swift
 // Get the Documents directory URL.
@@ -54,8 +61,8 @@ let soundClassifier = try MLSoundClassifier(trainingData: trainingData)
 
 ## Parameters
 
-- `trainingData`: An [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md) instance that contains a collection of labeled audio files.
-- `parameters`: An [`MLSoundClassifier.ModelParameters`](mlsoundclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `trainingData`: An [`MLSoundClassifier.DataSource`](./datasource.md) instance that contains a collection of labeled audio files.
+- `parameters`: An [`MLSoundClassifier.ModelParameters`](./modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

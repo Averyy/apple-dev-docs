@@ -1,7 +1,8 @@
 # Locale.IdentifierType.icu
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The type of identifiers that follow ICU (International Components for Unicode) conventions.
 
@@ -26,9 +27,10 @@ An example of this type is `th_TH@calendar=gregorian;numbers=thai`.
 
 ## See Also
 
-- [Locale.IdentifierType.cldr](locale/identifiertype/cldr.md)
+### Standard Identifier Types
+- [Locale.IdentifierType.cldr](./cldr.md)
   The type of identifiers that follow CLDR (Common Locale Data Repository) conventions.
-- [Locale.IdentifierType.bcp47](locale/identifiertype/bcp47.md)
+- [Locale.IdentifierType.bcp47](./bcp47.md)
   The type of BCP 47 language identifiers.
 
 

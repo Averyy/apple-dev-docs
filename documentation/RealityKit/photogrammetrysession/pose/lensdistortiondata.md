@@ -1,7 +1,8 @@
 # lensDistortionData
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If available, the estimated lens distortion data for the associated input image.  This can be used to rectify the image for computer vision applications.  If not available, this is nil.
 

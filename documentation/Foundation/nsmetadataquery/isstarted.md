@@ -1,7 +1,8 @@
 # isStarted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the query has started. (read-only)
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the query has started. (read-only)
 var isStarted: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isStarted) BOOL started;
+```
+
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) when the receiver has executed the `startQuery` method; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property contains [`true`](../../Swift/true.md) when the receiver has executed the `startQuery` method; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func start() -> Bool](nsmetadataquery/start.md)
+### Running queries
+- [func start() -> Bool](./start%28%29.md)
   Attempts to start the query.
-- [var isGathering: Bool](nsmetadataquery/isgathering.md)
+- [var isGathering: Bool](./isgathering.md)
   A Boolean value that indicates whether the receiver is in the initial gathering phase of the query. (read-only)
-- [var isStopped: Bool](nsmetadataquery/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the query has stopped.
-- [func stop()](nsmetadataquery/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the receiver’s current query from gathering any further results.
 
 

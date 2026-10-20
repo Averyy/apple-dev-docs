@@ -1,7 +1,8 @@
 # SVGEllipseElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGEllipseElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cx](svgellipseelement/1632592-cx.md)
-- [cy](svgellipseelement/1632049-cy.md)
-- [rx](svgellipseelement/1631982-rx.md)
-- [ry](svgellipseelement/1629631-ry.md)
+- [cx](./svgellipseelement/api-1632592-cx.md)
+- [cy](./svgellipseelement/api-1632049-cy.md)
+- [rx](./svgellipseelement/api-1631982-rx.md)
+- [ry](./svgellipseelement/api-1629631-ry.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

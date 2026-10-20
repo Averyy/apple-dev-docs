@@ -1,7 +1,8 @@
 # segmentCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Declares the number of curve segments.
 
@@ -17,6 +18,10 @@ Declares the number of curve segments.
 
 ```swift
 var segmentCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger segmentCount;
 ```
 
 #### Discussion

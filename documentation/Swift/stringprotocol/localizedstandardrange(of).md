@@ -1,7 +1,8 @@
 # localizedStandardRange(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the range of the first occurrence of a given string, taking the current locale into account.  Returns `nil` if the string was not found.
 

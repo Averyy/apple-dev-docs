@@ -1,17 +1,22 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets and returns the identifier.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var identifier: NSUserInterfaceItemIdentifier? { get set }
+```
+
+```objc
+@property (copy, nullable) NSUserInterfaceItemIdentifier identifier;
 ```
 
 #### Discussion

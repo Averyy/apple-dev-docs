@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a queue you use to submit rendering and computation commands to a GPU that has a fixed number of uncompleted command buffers.
@@ -11,7 +12,7 @@ Creates a queue you use to submit rendering and computation commands to a GPU th
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,13 @@ Creates a queue you use to submit rendering and computation commands to a GPU th
 func makeCommandQueue(maxCommandBufferCount: Int) -> (any MTLCommandQueue)?
 ```
 
+```objc
+- (id<MTLCommandQueue>) newCommandQueueWithMaxCommandBufferCount:(NSUInteger) maxCommandBufferCount;
+```
+
 #### Return Value
 
-A new [`MTLCommandQueue`](mtlcommandqueue.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLCommandQueue`](../mtlcommandqueue.md) instance if the method completed successfully; otherwise `nil`.
 
 #### Discussion
 
@@ -34,7 +39,8 @@ A Command queue can only submit commands to the GPU device instance that created
 
 ## See Also
 
-- [func makeCommandQueue() -> (any MTLCommandQueue)?](mtldevice/makecommandqueue.md)
+### Creating command queues
+- [func makeCommandQueue() -> (any MTLCommandQueue)?](./makecommandqueue%28%29.md)
   Creates a queue you use to submit rendering and computation commands to a GPU.
 
 

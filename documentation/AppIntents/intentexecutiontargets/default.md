@@ -1,7 +1,8 @@
 # default
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system performs the intent or query in any available target.
 
@@ -22,11 +23,12 @@ static var `default`: IntentExecutionTargets { get }
 
 ## See Also
 
-- [static var appIntentsExtension: IntentExecutionTargets](intentexecutiontargets/appintentsextension.md)
+### Specifying the target
+- [static var appIntentsExtension: IntentExecutionTargets](./appintentsextension.md)
   The system performs the intent or query in your app intents extension.
-- [static var main: IntentExecutionTargets](intentexecutiontargets/main.md)
+- [static var main: IntentExecutionTargets](./main.md)
   The system performs the intent or query in the main app process.
-- [static var widgetKitExtension: IntentExecutionTargets](intentexecutiontargets/widgetkitextension.md)
+- [static var widgetKitExtension: IntentExecutionTargets](./widgetkitextension.md)
   The system performs the intent or query in a widget extension.
 
 

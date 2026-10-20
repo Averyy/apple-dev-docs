@@ -1,7 +1,8 @@
 # MLProgress.Metric
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Metrics you use to evaluate a model’s performance during a training session.
 
@@ -22,46 +23,47 @@ enum Metric
 ## Topics
 
 ### Retrieving metric keys
-- [MLProgress.Metric.accuracy](mlprogress/metric/accuracy.md)
+- [MLProgress.Metric.accuracy](./metric/accuracy.md)
   The metric for the model’s accuracy.
-- [MLProgress.Metric.contentLoss](mlprogress/metric/contentloss.md)
+- [MLProgress.Metric.contentLoss](./metric/contentloss.md)
   The metric for the style transfer model’s content loss.
-- [MLProgress.Metric.loss](mlprogress/metric/loss.md)
+- [MLProgress.Metric.loss](./metric/loss.md)
   The metric for the model’s loss.
-- [MLProgress.Metric.maximumError](mlprogress/metric/maximumerror.md)
+- [MLProgress.Metric.maximumError](./metric/maximumerror.md)
   The metric for the model’s maximum error.
-- [MLProgress.Metric.rootMeanSquaredError](mlprogress/metric/rootmeansquarederror.md)
+- [MLProgress.Metric.rootMeanSquaredError](./metric/rootmeansquarederror.md)
   The metric for the model’s root mean squared error (RMSE).
-- [MLProgress.Metric.styleLoss](mlprogress/metric/styleloss.md)
+- [MLProgress.Metric.styleLoss](./metric/styleloss.md)
   The metric for the style transfer model’s style loss.
-- [MLProgress.Metric.stylizedImageURL](mlprogress/metric/stylizedimageurl.md)
+- [MLProgress.Metric.stylizedImageURL](./metric/stylizedimageurl.md)
   The location of the stylized image content in the file system.
-- [MLProgress.Metric.validationAccuracy](mlprogress/metric/validationaccuracy.md)
+- [MLProgress.Metric.validationAccuracy](./metric/validationaccuracy.md)
   The metric for the model’s validation accuracy.
-- [MLProgress.Metric.validationLoss](mlprogress/metric/validationloss.md)
+- [MLProgress.Metric.validationLoss](./metric/validationloss.md)
   The metric for the model’s validation loss.
-- [MLProgress.Metric.validationMaximumError](mlprogress/metric/validationmaximumerror.md)
+- [MLProgress.Metric.validationMaximumError](./metric/validationmaximumerror.md)
   The metric for the model’s validation maximum error.
-- [MLProgress.Metric.validationRootMeanSquaredError](mlprogress/metric/validationrootmeansquarederror.md)
+- [MLProgress.Metric.validationRootMeanSquaredError](./metric/validationrootmeansquarederror.md)
   The metric for the model’s validation root mean squared error (RMSE).
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var metrics: [MLProgress.Metric : Any]](mlcheckpoint/metrics.md)
+### Assessing a checkpoint
+- [var metrics: [MLProgress.Metric : Any]](../mlcheckpoint/metrics.md)
   Measurements of the model’s performance at the time the session saved the checkpoint.
 
 

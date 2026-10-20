@@ -1,26 +1,27 @@
 # Working with the Animation Graph
 
-**Framework**: Reality Composer Pro
+**Framework**: Reality Composer Pro  
+**Role**: Article
 
 Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 
 #### Overview
 
-Use animation graphs to create custom animations in a visual, node-based, code-free workflow. Using the Animation Graph, you can create tags and conditions to control the flow between different animation states. For general Graph Editor navigation and features, see [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
+Use animation graphs to create custom animations in a visual, node-based, code-free workflow. Using the Animation Graph, you can create tags and conditions to control the flow between different animation states. For general Graph Editor navigation and features, see [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md).
 
-![Screenshot of animation graph](/images/RealityComposerPro/AnimationGraph@2x.png)
+![Screenshot of animation graph](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationGraph@2x.png)
 
-#### Create an Animation Graph
+#### Create an animation graph
 
 In the Project Browser, Control-click a folder and choose **New** > **Animation** > **Animation Graph**. Enter a name for the animation graph, then double-click it to open it in the Animation Graph Editor.
 
 In the Inspector, click **Skeleton Definition** to select the skeleton definition you want to use. For imported entities, Reality Composer Pro creates the skeleton definition when you import the entity — including all dependencies such as blend masks and inverse kinematic rigs. Then select a **Preview Entity** to control which entity appears in the preview window. Change this option to preview your animations for different entities that share the same skeleton definition. Note that this will populate automatically when you add the skeleton definition, and that you need to set a definition before changing the preview.
 
-#### Add Animation Graph Inputs
+#### Add Animation Graph inputs
 
 Inputs provide a variety of parameters that can control the animation that plays at runtime. For example, an Input parameter named Jump can trigger a jumping animation.
 
-#### Add an Input
+#### Add an input
 
 In the Inspector, under **Inputs**, click **[+]** to add an input. Choose an **Input Parameter** type:
 
@@ -34,9 +35,9 @@ In the Inspector, under **Inputs**, click **[+]** to add an input. Choose an **I
 
 Click the name field to update the parameter name if needed, then set the **Default Value** and toggle **Read Only** as appropriate.
 
-![Screenshot of adding an input modal](/images/RealityComposerPro/AddInput@2x.png)
+![Screenshot of adding an input modal](https://developer.apple.com/tutorials/images/RealityComposerPro/AddInput@2x.png)
 
-#### Add and Configure a State Machine Node
+#### Add and configure a State Machine node
 
 A State Machine node defines the states your animation can occupy and the conditions that trigger transitions between them.
 
@@ -51,92 +52,105 @@ To add a tag to the state, click **[+]** next to **Tags**, click the Tag field a
 - **On Enter and Exit** — The state machine activates the tag when the entity enters the state and when the entity exits the state.
 - **While Active** — The state machine keeps the tag active as long as the entity remains in the specified state.
 
-![Screenshot of the State Machine editor showing tag activation options (On Enter, On Exit, On Enter and Exit, While Active)](/images/RealityComposerPro/Conditions@2x.png)
+![Screenshot of the State Machine editor showing tag activation options (On Enter, On Exit, On Enter and Exit, While Active)](https://developer.apple.com/tutorials/images/RealityComposerPro/Conditions@2x.png)
 
 > 💡 **Tip**: When editing a State Machine, click a State to view or change its associated tags and properties.
 
-#### Use Animation Graph Tags
+#### Use animation graph tags
 
 Attach tags to animation states using a State Machine node, then use those tags as conditions to trigger state transitions. For example, while an entity is in a state called `CarryingHeavyObject`, the state machine tags the current state with `HeavilyEncumbered`. When the `HeavilyEncumbered` tag is active, you can trigger a different animation state.
 
 Tags activate using the same options described in the State Machine section above: On Enter, On Exit, On Enter and Exit, and While Active.
 
-#### Add an Animation Graph Tag
+#### Add an animation graph tag
 
 In the Inspector panel, under **Tags**, click **[+]** to add a tag. Choose the **Type**: Internal, Play Audio, or Enable/Disable Entity. Click the name field to enter a name for the tag.
 
-![Screenshot of the Inspector panel showing the Add Tag section with Internal, Play Audio, and Enable/Disable Entity tag type options](/images/RealityComposerPro/AddTag@2x.png)
+![Screenshot of the Inspector panel showing the Add Tag section with Internal, Play Audio, and Enable/Disable Entity tag type options](https://developer.apple.com/tutorials/images/RealityComposerPro/AddTag@2x.png)
 
-#### Edit or Delete Animation Graph Tags
+#### Edit or delete animation graph tags
 
 To edit a tag, click it and then edit its properties in the Inspector. To delete a tag, click to select it and then click **[-]**.
 
-#### Connect Conduits Between States
+#### Connect conduits between states
 
 A conduit is a transition state that lets you route multiple states through a shared condition, so you define the condition once rather than repeating it on each state-to-state transition. A conduit can also branch to multiple different destination states.
 
 Click the edge of a state and drag the arrow to another state.
 
-#### Add a Condition to a Conduit
+#### Add a condition to a conduit
 
 Control-click anywhere in the empty space and choose **Add Conduit**, then drag an arrow from the edge of the conduit to a State.
 
 Control-click the conduit connector, choose **Add Condition**, and select a condition type (Bool, Finished, Float, and so on).
 
-![Screenshot of the context menu for adding a condition to a conduit](/images/RealityComposerPro/Transitions@2x.png)
+![Screenshot of the context menu for adding a condition to a conduit](https://developer.apple.com/tutorials/images/RealityComposerPro/Transitions@2x.png)
 
 In the Inspector, under **Conditions**, configure your condition. Click the operator icon to change the comparison operator (==, !=, and so on). Click **Settings** to compare against a fixed value or a parameter.
 
-![Screenshot of the condition editor panel showing a configured condition with operator settings](/images/RealityComposerPro/AddCondition@2x.png)
+![Screenshot of the condition editor panel showing a configured condition with operator settings](https://developer.apple.com/tutorials/images/RealityComposerPro/AddCondition@2x.png)
 
 > 💡 **Tip**: The editor displays different conditions in different colors — for example, trigger conditions appear as blue, while boolean conditions appear as green.
 
-#### Preview Your Animation
+#### Preview your animation
 
 In the Animation Graph, at the top of the screen, click **Debug Graph** and then click **Play**.
 
 Preview how your animations appear and watch the visual flow between nodes — indicated by animated connectors in the Animation Graph — as the entity enters and exits states. In the Inspector panel **Tags** section, watch tags activate and deactivate — indicated by pulsing dots next to the tag names — as your animation plays.
 
-![Screenshot activating the debug menu](/images/RealityComposerPro/DebugGraph@2x.png)
+![Screenshot activating the debug menu](https://developer.apple.com/tutorials/images/RealityComposerPro/DebugGraph@2x.png)
 
-#### Apply an Animation Graph to an Entity
+#### Apply an animation graph to an entity
 
 In the Scene Hierarchy, click an entity. In the Inspector, click **Add Component** and choose **Animation Graph**. Click the **Animation Graph** field and select the animation graph you want to apply from the pop-up menu.
 
-![Screenshot of the animation graph component](/images/RealityComposerPro/AnimGraphComponent@2x.png)
+![Screenshot of the animation graph component](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimGraphComponent@2x.png)
 
-#### Animation Graph Nodes
+#### Animation graph nodes
 
 The Animation Graph Editor provides a range of nodes organized by category. Each node performs a specific operation on poses, skeletons, or animation data.
 
-- Blend nodes - **Add** — Adds two poses.
-- **Blend 1D** — Blends a number of samples from child nodes distributed along a single axis.
-- **Blend Mask** — Filters a pose by applying per-joint weights from a blend mask.
-- **Subtract** — Subtracts one pose from another.
-- Control flow nodes - **State Machine** — Evaluates a state machine.
-- Inverse Kinematics (IK) nodes - **Constraint Parameters** — Parameters for a single named rig constraint.
-- **Foot Placement** — Adjusts foot positions on terrain using inverse kinematics and constraints.
-- **Full Body IK Node** — Full body inverse kinematics solver node with output pose based on the child pose and rig-defined constraints.
-- **Joint Parameters** — Parameters for a single named rig joint.
-- Modifier nodes - **Motion Warping** — Adjusts animation playback speed to ensure root motion reaches a target position.
-- **Root Motion Generation** — Moves the root joint to the desired position and orientation over time.
-- Output nodes - **Final Pose** — The final pose of the animation.
-- Source nodes - **Animation Clip** — Represents an animation clip at edit time. Plays an animation resource using keyframes.
-- **Bind Pose** — Returns the bind pose of the current skeleton.
+- Blend nodes
+
+  - **Add** — Adds two poses.
+  - **Blend 1D** — Blends a number of samples from child nodes distributed along a single axis.
+  - **Blend Mask** — Filters a pose by applying per-joint weights from a blend mask.
+  - **Subtract** — Subtracts one pose from another.
+- Control flow nodes
+
+  - **State Machine** — Evaluates a state machine.
+- Inverse Kinematics (IK) nodes
+
+  - **Constraint Parameters** — Parameters for a single named rig constraint.
+  - **Foot Placement** — Adjusts foot positions on terrain using inverse kinematics and constraints.
+  - **Full Body IK Node** — Full body inverse kinematics solver node with output pose based on the child pose and rig-defined constraints.
+  - **Joint Parameters** — Parameters for a single named rig joint.
+- Modifier nodes
+
+  - **Motion Warping** — Adjusts animation playback speed to ensure root motion reaches a target position.
+  - **Root Motion Generation** — Moves the root joint to the desired position and orientation over time.
+- Output nodes
+
+  - **Final Pose** — The final pose of the animation.
+- Source nodes
+
+  - **Animation Clip** — Represents an animation clip at edit time. Plays an animation resource using keyframes.
+  - **Bind Pose** — Returns the bind pose of the current skeleton.
 
 ## See Also
 
-- [Creating animation sequences](creating-animation-sequences.md)
+### Animation
+- [Creating animation sequences](./creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
-- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+- [Creating animation sequences for auto-play](./creating-animation-sequences-for-autoplay.md)
   Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
-- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+- [Building multi-track animation sequences](./building-multi-track-animation-sequences.md)
   Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
-- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+- [Building an advanced Animation Graph](./building-an-advanced-animation-graph.md)
   Drive a character’s locomotion state machine from a Script Graph at runtime.
-- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+- [Building a navmesh in Reality Composer Pro](./building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
-- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
+- [Defining a behavior with Behavior Trees](./defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 
 

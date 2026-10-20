@@ -1,7 +1,8 @@
 # applyGamma(linearParameters:exponentialParameters:boundary:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a piecewise gamma calculation to an 8-bit pixel buffer.
 
@@ -11,7 +12,7 @@ Applies a piecewise gamma calculation to an 8-bit pixel buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Applies a piecewise gamma calculation to an 8-bit pixel buffer.
 ```swift
 func applyGamma(linearParameters: (scale: Float, bias: Float), exponentialParameters: (scale: Float, preBias: Float, gamma: Float, postBias: Float), boundary: Pixel_8, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` is `UInt8`.
 
 #### Discussion
 
@@ -80,7 +83,8 @@ print(buffer.array)
 
 ## See Also
 
-- [func applyGamma(linearParameters: (scale: Float, bias: Float), exponentialParameters: (scale: Float, preBias: Float, gamma: Float, postBias: Float), boundary: Float, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/applygamma(linearparameters:exponentialparameters:boundary:destination:)-8r0ro.md)
+### Applying piecewise gamma
+- [func applyGamma(linearParameters: (scale: Float, bias: Float), exponentialParameters: (scale: Float, preBias: Float, gamma: Float, postBias: Float), boundary: Float, destination: vImage.PixelBuffer<Format>)](./applygamma%28linearparameters,exponentialparameters,boundary,destination%29-8r0ro.md)
   Applies a piecewise gamma calculation to a 32-bit pixel buffer.
 
 

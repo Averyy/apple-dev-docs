@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current position of the expression.
 
@@ -16,9 +17,14 @@ The current position of the expression.
 var value: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double value;
+```
+
 ## See Also
 
-- [var identifier: String](srfacemetricsexpression/identifier.md)
+### Getting the expression identifier and analysis
+- [var identifier: String](./identifier.md)
   An identifier for the facial expression.
 
 

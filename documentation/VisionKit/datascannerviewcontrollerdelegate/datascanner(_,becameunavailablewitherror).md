@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Responds when the data scanner becomes unavailable and stops scanning.
@@ -20,12 +21,18 @@ func dataScanner(_ dataScanner: DataScannerViewController, becameUnavailableWith
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 ## Parameters
 
 - `dataScanner`: The data scanner that’s not available.
 - `error`: Describes an error if it occurs.
+
+## Default Implementations
+
+### DataScannerViewControllerDelegate Implementations
+- [func dataScanner(DataScannerViewController, becameUnavailableWithError: DataScannerViewController.ScanningUnavailable)](./datascanner%28_,becameunavailablewitherror%29-89v47.md)
+  A default, blank implementation for when the data scanner becomes unavailable and stops scanning.
 
 
 ---

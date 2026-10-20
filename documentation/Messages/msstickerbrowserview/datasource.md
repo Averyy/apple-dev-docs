@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sticker browser’s data source.
 
@@ -16,15 +17,20 @@ The sticker browser’s data source.
 weak var dataSource: (any MSStickerBrowserViewDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MSStickerBrowserViewDataSource> dataSource;
+```
+
 #### Discussion
 
-If you are using an [`MSStickerBrowserViewController`](msstickerbrowserviewcontroller.md) object, the controller automatically sets itself as the data source for the sticker browser view that it provides. If you instantiate and display your own sticker browser view, this property defaults to `nil`, and you must assign a data source.
+If you are using an [`MSStickerBrowserViewController`](../msstickerbrowserviewcontroller.md) object, the controller automatically sets itself as the data source for the sticker browser view that it provides. If you instantiate and display your own sticker browser view, this property defaults to `nil`, and you must assign a data source.
 
 ## See Also
 
-- [protocol MSStickerBrowserViewDataSource](msstickerbrowserviewdatasource.md)
+### Managing the Sticker Collection Contents
+- [protocol MSStickerBrowserViewDataSource](../msstickerbrowserviewdatasource.md)
   The protocol for dynamically providing stickers to a browser view.
-- [func reloadData()](msstickerbrowserview/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Asks the sticker browser to reload its data from the data source.
 
 

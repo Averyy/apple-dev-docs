@@ -1,9 +1,10 @@
 # kUCKeySequenceDataIndexFormat
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The format of a structure of type [`UCKeySequenceDataIndex`](uckeysequencedataindex.md).
+The format of a structure of type [`UCKeySequenceDataIndex`](./uckeysequencedataindex.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

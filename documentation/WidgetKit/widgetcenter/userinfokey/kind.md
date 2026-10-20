@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key you use to access the widget’s kind. The value matches the `kind` property specified in the widget’s configuration.
 
@@ -21,7 +22,8 @@ static let kind: String
 
 ## See Also
 
-- [static let family: String](widgetcenter/userinfokey/family.md)
+### Describing a widget
+- [static let family: String](./family.md)
   A key you use to access the widget’s family.
 
 

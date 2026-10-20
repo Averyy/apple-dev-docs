@@ -1,7 +1,8 @@
 # symbology
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbology of the observed barcode.
 
@@ -17,6 +18,10 @@ The symbology of the observed barcode.
 
 ```swift
 var symbology: VNBarcodeSymbology { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) VNBarcodeSymbology symbology;
 ```
 
 

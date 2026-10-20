@@ -1,7 +1,8 @@
 # init(validation:algorithm:language:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates model parameters.
 
@@ -22,9 +23,10 @@ init(validation: MLWordTagger.ModelParameters.ValidationData = .split(strategy: 
 
 ## See Also
 
-- [MLWordTagger.ModelAlgorithmType](mlwordtagger/modelalgorithmtype.md)
+### Creating parameters
+- [MLWordTagger.ModelAlgorithmType](../modelalgorithmtype.md)
   The algorithm type.
-- [MLWordTagger.ModelParameters.ValidationData](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLWordTagger.ModelParameters.ValidationData](./validationdata-swift.enum.md)
   The validation data.
 
 

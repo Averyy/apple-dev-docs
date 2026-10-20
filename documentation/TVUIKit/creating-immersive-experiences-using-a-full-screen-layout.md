@@ -1,6 +1,8 @@
 # Creating immersive experiences using a full-screen layout
 
-**Framework**: TVUIKit
+**Framework**: TVUIKit  
+**Role**: Sample Code  
+**Download**: [CreatingImmersiveExperiencesUsingAFullScreenLayout.zip](https://docs-assets.developer.apple.com/published/6d260bba65c6/CreatingImmersiveExperiencesUsingAFullScreenLayout.zip)
 
 Display content with a collection view that maximizes the tvOS experience.
 
@@ -10,17 +12,18 @@ Display content with a collection view that maximizes the tvOS experience.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room with tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
+> **Note**: This sample code project is associated with WWDC 2019 session [211: Mastering the Living Room with tvOS](https://developer.apple.com/videos/play/wwdc19/211/).
 
 ## See Also
 
-- [class TVCollectionViewFullScreenLayout](tvcollectionviewfullscreenlayout.md)
+### Collections of content
+- [class TVCollectionViewFullScreenLayout](./tvcollectionviewfullscreenlayout.md)
   A collection view layout that organizes items into a browsable, full-screen display format.
-- [protocol TVCollectionViewDelegateFullScreenLayout](tvcollectionviewdelegatefullscreenlayout.md)
+- [protocol TVCollectionViewDelegateFullScreenLayout](./tvcollectionviewdelegatefullscreenlayout.md)
   Methods that send notifications of events during cell transitions.
-- [class TVCollectionViewFullScreenCell](tvcollectionviewfullscreencell.md)
+- [class TVCollectionViewFullScreenCell](./tvcollectionviewfullscreencell.md)
   A full-screen cell to use in full-screen display format.
-- [class TVCollectionViewFullScreenLayoutAttributes](tvcollectionviewfullscreenlayoutattributes.md)
+- [class TVCollectionViewFullScreenLayoutAttributes](./tvcollectionviewfullscreenlayoutattributes.md)
   Attributes to manage the appearance of the collection view’s layout.
 
 

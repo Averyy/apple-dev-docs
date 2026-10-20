@@ -1,7 +1,8 @@
 # GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The link representations of the queue results.
 
@@ -10,7 +11,7 @@ The link representations of the queue results.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links
 ```
 

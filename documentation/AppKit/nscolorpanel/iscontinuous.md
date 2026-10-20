@@ -1,12 +1,13 @@
 # isContinuous
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver continuously sends the action message to the target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean value indicating whether the receiver continuously sends the action me
 var isContinuous: Bool { get set }
 ```
 
+```objc
+@property (getter=isContinuous) BOOL continuous;
+```
+
 ## See Also
 
-- [var accessoryView: NSView?](nscolorpanel/accessoryview.md)
+### Configuring the color panel
+- [var accessoryView: NSView?](./accessoryview.md)
   The accessory view.
-- [func setAction(Selector?)](nscolorpanel/setaction(_:).md)
+- [func setAction(Selector?)](./setaction%28_%29.md)
   Sets the color panel’s action message.
-- [func setTarget(Any?)](nscolorpanel/settarget(_:).md)
+- [func setTarget(Any?)](./settarget%28_%29.md)
   Sets the target of the receiver.
-- [var showsAlpha: Bool](nscolorpanel/showsalpha.md)
+- [var showsAlpha: Bool](./showsalpha.md)
   A Boolean value that indicates whether the receiver shows alpha values and an opacity slider.
 
 

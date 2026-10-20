@@ -1,7 +1,8 @@
 # availableVideoPixelFormatTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video pixel formats the output supports.
 
@@ -21,17 +22,18 @@ var availableVideoPixelFormatTypes: [OSType] { get }
 
 #### Discussion
 
-This value contains an array of video formats, in unspecified order, that the output supports. You can set the format by specifying it as the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) entry in the output’s [`videoSettings`](avcapturevideodataoutput/videosettings.md) dictionary.
+This value contains an array of video formats, in unspecified order, that the output supports. You can set the format by specifying it as the [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md) entry in the output’s [`videoSettings`](./videosettings.md) dictionary.
 
-> **Note**:  The contents of this list may change if the video capture device’s [`activeFormat`](avcapturedevice/activeformat.md) value changes.
+> **Note**:  The contents of this list may change if the video capture device’s [`activeFormat`](../avcapturedevice/activeformat.md) value changes.
 
 ## See Also
 
-- [var availableVideoCodecTypes: [AVVideoCodecType]](avcapturevideodataoutput/availablevideocodectypes.md)
+### Retrieving supported video types
+- [var availableVideoCodecTypes: [AVVideoCodecType]](./availablevideocodectypes.md)
   The video codecs that the output supports.
-- [func availableVideoCodecTypesForAssetWriter(writingTo: AVFileType) -> [AVVideoCodecType]](avcapturevideodataoutput/availablevideocodectypesforassetwriter(writingto:).md)
+- [func availableVideoCodecTypesForAssetWriter(writingTo: AVFileType) -> [AVVideoCodecType]](./availablevideocodectypesforassetwriter%28writingto%29.md)
   The video codecs that the output supports for writing video to the output file.
-- [struct AVVideoCodecType](avvideocodectype.md)
+- [struct AVVideoCodecType](../avvideocodectype.md)
   A set of constants that describe the codecs the system supports for video capture.
 
 

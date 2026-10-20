@@ -1,7 +1,8 @@
 # requiresDNSSECValidation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a request requires DNSSEC validation during DNS lookup.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether a request requires DNSSEC validation duri
 
 ```swift
 var requiresDNSSECValidation: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL requiresDNSSECValidation;
 ```
 
 #### Discussion

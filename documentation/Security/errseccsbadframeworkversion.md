@@ -1,7 +1,8 @@
 # errSecCSBadFrameworkVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The embedded framework contains a modified or invalid version.
 
@@ -13,6 +14,10 @@ The embedded framework contains a modified or invalid version.
 
 ```swift
 var errSecCSBadFrameworkVersion: OSStatus { get }
+```
+
+```c
+errSecCSBadFrameworkVersion
 ```
 
 

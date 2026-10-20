@@ -1,7 +1,8 @@
 # init(size:edgeRadius:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rounded box shape with the given size and edge radius.
 

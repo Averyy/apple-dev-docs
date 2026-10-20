@@ -2,18 +2,19 @@
 
 **Framework**: Core Data  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The array of objects in the section.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,9 +22,14 @@ The array of objects in the section.
 var objects: [Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray * objects;
+```
+
 ## See Also
 
-- [var numberOfObjects: Int](nsfetchedresultssectioninfo/numberofobjects.md)
+### Accessing Objects
+- [var numberOfObjects: Int](./numberofobjects.md)
   The number of objects (rows) in the section.
 
 

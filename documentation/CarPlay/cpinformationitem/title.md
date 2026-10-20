@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text that the template displays as the item’s title.
 
@@ -16,9 +17,14 @@ The text that the template displays as the item’s title.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var detail: String?](cpinformationitem/detail.md)
+### Accessing the Item’s Attributes
+- [var detail: String?](./detail.md)
   The text that the template displays below or beside the item’s title.
 
 

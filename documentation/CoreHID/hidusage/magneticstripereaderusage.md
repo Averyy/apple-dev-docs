@@ -1,7 +1,8 @@
 # HIDUsage.MagneticStripeReaderUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,29 +16,29 @@ enum MagneticStripeReaderUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.MagneticStripeReaderUsage.msrDeviceReadOnly](hidusage/magneticstripereaderusage/msrdevicereadonly.md)
-- [HIDUsage.MagneticStripeReaderUsage.track1Data](hidusage/magneticstripereaderusage/track1data.md)
-- [HIDUsage.MagneticStripeReaderUsage.track1Length](hidusage/magneticstripereaderusage/track1length.md)
-- [HIDUsage.MagneticStripeReaderUsage.track2Data](hidusage/magneticstripereaderusage/track2data.md)
-- [HIDUsage.MagneticStripeReaderUsage.track2Length](hidusage/magneticstripereaderusage/track2length.md)
-- [HIDUsage.MagneticStripeReaderUsage.track3Data](hidusage/magneticstripereaderusage/track3data.md)
-- [HIDUsage.MagneticStripeReaderUsage.track3Length](hidusage/magneticstripereaderusage/track3length.md)
-- [HIDUsage.MagneticStripeReaderUsage.trackData](hidusage/magneticstripereaderusage/trackdata.md)
-- [HIDUsage.MagneticStripeReaderUsage.trackJISData](hidusage/magneticstripereaderusage/trackjisdata.md)
-- [HIDUsage.MagneticStripeReaderUsage.trackJISLength](hidusage/magneticstripereaderusage/trackjislength.md)
+- [HIDUsage.MagneticStripeReaderUsage.msrDeviceReadOnly](./magneticstripereaderusage/msrdevicereadonly.md)
+- [HIDUsage.MagneticStripeReaderUsage.track1Data](./magneticstripereaderusage/track1data.md)
+- [HIDUsage.MagneticStripeReaderUsage.track1Length](./magneticstripereaderusage/track1length.md)
+- [HIDUsage.MagneticStripeReaderUsage.track2Data](./magneticstripereaderusage/track2data.md)
+- [HIDUsage.MagneticStripeReaderUsage.track2Length](./magneticstripereaderusage/track2length.md)
+- [HIDUsage.MagneticStripeReaderUsage.track3Data](./magneticstripereaderusage/track3data.md)
+- [HIDUsage.MagneticStripeReaderUsage.track3Length](./magneticstripereaderusage/track3length.md)
+- [HIDUsage.MagneticStripeReaderUsage.trackData](./magneticstripereaderusage/trackdata.md)
+- [HIDUsage.MagneticStripeReaderUsage.trackJISData](./magneticstripereaderusage/trackjisdata.md)
+- [HIDUsage.MagneticStripeReaderUsage.trackJISLength](./magneticstripereaderusage/trackjislength.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/magneticstripereaderusage/page.md)
+- [static let page: UInt16](./magneticstripereaderusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

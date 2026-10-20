@@ -1,16 +1,17 @@
 # UIImage.Orientation.up
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The original pixel data matches the image’s intended display orientation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -19,29 +20,35 @@ The original pixel data matches the image’s intended display orientation.
 case up
 ```
 
+```c
+UIImageOrientationUp
+```
+
 #### Discussion
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears correctly “right side up”. That is, this orientation is an identity value.
 
-![An image in up orientation can be presented for display without rotating or flipping.](/images/com.apple.uikit/media-2948308@2x.png)
+![An image in up orientation can be presented for display without rotating or flipping.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2948308@2x.png)
 
 ## See Also
 
-- [CGImagePropertyOrientation.up](../imageio/cgimagepropertyorientation/up.md)
+### Related Documentation
+- [CGImagePropertyOrientation.up](../../../ImageIO/cgimagepropertyorientation/up.md)
   The encoded image data matches the image’s intended display orientation.
-- [UIImage.Orientation.down](uiimage/orientation/down.md)
+### Image orientations
+- [UIImage.Orientation.down](./down.md)
   The image has been rotated 180° from the orientation of its original pixel data.
-- [UIImage.Orientation.left](uiimage/orientation/left.md)
+- [UIImage.Orientation.left](./left.md)
   The image has been rotated 90° counterclockwise from the orientation of its original pixel data.
-- [UIImage.Orientation.right](uiimage/orientation/right.md)
+- [UIImage.Orientation.right](./right.md)
   The image has been rotated 90° clockwise from the orientation of its original pixel data.
-- [UIImage.Orientation.upMirrored](uiimage/orientation/upmirrored.md)
+- [UIImage.Orientation.upMirrored](./upmirrored.md)
   The image has been horizontally flipped from the orientation of its original pixel data.
-- [UIImage.Orientation.downMirrored](uiimage/orientation/downmirrored.md)
+- [UIImage.Orientation.downMirrored](./downmirrored.md)
   The image has been vertically flipped from the orientation of its original pixel data.
-- [UIImage.Orientation.leftMirrored](uiimage/orientation/leftmirrored.md)
+- [UIImage.Orientation.leftMirrored](./leftmirrored.md)
   The image has been rotated 90° clockwise and flipped horizontally from the orientation of its original pixel data.
-- [UIImage.Orientation.rightMirrored](uiimage/orientation/rightmirrored.md)
+- [UIImage.Orientation.rightMirrored](./rightmirrored.md)
   The image has been rotated 90° counterclockwise and flipped horizontally from the orientation of its original pixel data.
 
 

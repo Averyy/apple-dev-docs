@@ -1,7 +1,8 @@
 # componentCount
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of components across all dimensions.
 

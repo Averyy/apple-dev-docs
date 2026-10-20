@@ -1,7 +1,8 @@
 # sphericalHarmonicsCoefficients
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Data describing the estimated lighting environment in all directions.
 
@@ -15,6 +16,10 @@ Data describing the estimated lighting environment in all directions.
 var sphericalHarmonicsCoefficients: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * sphericalHarmonicsCoefficients;
+```
+
 #### Discussion
 
 Spherical harmonics provide a compact mathematical model for the global lighting environment around a point in space, describing the distribution and colors of multiple directional light sources. When used in a renderer that supports environment-based lighting, spherical harmonics provide much less high-frequency detail than a cube map texture, but make much more efficient use of GPU resources.
@@ -23,9 +28,10 @@ ARKit provides second-level spherical harmonics in separate red, green, and blue
 
 ## See Also
 
-- [var primaryLightDirection: simd_float3](ardirectionallightestimate/primarylightdirection.md)
+### Examining Light Parameters
+- [var primaryLightDirection: simd_float3](./primarylightdirection.md)
   A vector indicating the orientation of the strongest directional light source in the scene.
-- [var primaryLightIntensity: CGFloat](ardirectionallightestimate/primarylightintensity.md)
+- [var primaryLightIntensity: CGFloat](./primarylightintensity.md)
   The estimated intensity, in lumens, of the strongest directional light source in the scene.
 
 

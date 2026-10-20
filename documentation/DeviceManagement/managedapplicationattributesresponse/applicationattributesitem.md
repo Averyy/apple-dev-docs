@@ -1,7 +1,8 @@
 # ManagedApplicationAttributesResponse.ApplicationAttributesItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains a managed app attributes item.
 
@@ -15,24 +16,27 @@ A dictionary that contains a managed app attributes item.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationAttributesResponse.ApplicationAttributesItem
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationAttributesResponse.ApplicationAttributesItem.Attributes](managedapplicationattributesresponse/applicationattributesitem/attributes-data.dictionary.md)
+- [object ManagedApplicationAttributesResponse.ApplicationAttributesItem.Attributes](./applicationattributesitem/attributes-data.dictionary.md)
   A dictionary that contains a managed app’s attributes.
 
 ## Properties
 
 - `Attributes` (ManagedApplicationAttributesResponse.ApplicationAttributesItem.Attributes): The app’s attributes.
-- `Identifier` (string) *(required)*: The app’s bundle identifier. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with.
+- `Identifier` (string) *(required)*: The app’s bundle identifier.
+
+  > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with.
 
 ## See Also
 
-- [object ManagedApplicationAttributesResponse.ErrorChainItem](managedapplicationattributesresponse/errorchainitem.md)
+### Objects
+- [object ManagedApplicationAttributesResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

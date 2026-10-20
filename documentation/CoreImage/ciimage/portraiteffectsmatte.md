@@ -1,7 +1,8 @@
 # portraitEffectsMatte
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portrait effects matte associated with the image.
 
@@ -19,19 +20,24 @@ The portrait effects matte associated with the image.
 var portraitEffectsMatte: AVPortraitEffectsMatte? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVPortraitEffectsMatte * portraitEffectsMatte;
+```
+
 #### Discussion
 
-[`AVPortraitEffectsMatte`](https://developer.apple.com/documentation/avfoundation/avportraiteffectsmatte) representation of portrait effects.
+[`AVPortraitEffectsMatte`](../../AVFoundation/avportraiteffectsmatte.md) representation of portrait effects.
 
 ## See Also
 
-- [var cgImage: CGImage?](ciimage/cgimage.md)
+### Accessing Original Image Content
+- [var cgImage: CGImage?](./cgimage.md)
   The CoreGraphics image object this image was created from, if applicable.
-- [var pixelBuffer: CVPixelBuffer?](ciimage/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   The CoreVideo pixel buffer this image was created from, if applicable.
-- [var depthData: AVDepthData?](ciimage/depthdata.md)
+- [var depthData: AVDepthData?](./depthdata.md)
   Depth data associated with the image.
-- [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](ciimage/semanticsegmentationmatte.md)
+- [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](./semanticsegmentationmatte.md)
 
 
 ---

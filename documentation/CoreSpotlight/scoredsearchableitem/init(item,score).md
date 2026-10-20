@@ -1,7 +1,8 @@
 # init(item:score:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the type with the specified item and score values.
 

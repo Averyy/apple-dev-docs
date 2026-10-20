@@ -1,7 +1,8 @@
 # kSecACLAuthorizationMAC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Create or verify a message authentication code.
 
@@ -12,6 +13,10 @@ Create or verify a message authentication code.
 
 ```swift
 let kSecACLAuthorizationMAC: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationMAC;
 ```
 
 

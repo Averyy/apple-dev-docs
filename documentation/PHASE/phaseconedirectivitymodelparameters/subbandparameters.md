@@ -1,7 +1,8 @@
 # subbandParameters
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of frequencies that describe varying sound emission across the spectrum.
 
@@ -19,9 +20,13 @@ An array of frequencies that describe varying sound emission across the spectrum
 var subbandParameters: [PHASEConeDirectivityModelSubbandParameters] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<PHASEConeDirectivityModelSubbandParameters *> * subbandParameters;
+```
+
 #### Discussion
 
-This property is read only. The framework sets the value to the argument you supply the [`init(subbandParameters:)`](phaseconedirectivitymodelparameters/init(subbandparameters:).md) initializer.
+This property is read only. The framework sets the value to the argument you supply the [`init(subbandParameters:)`](./init%28subbandparameters%29.md) initializer.
 
 
 ---

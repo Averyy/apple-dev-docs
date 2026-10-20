@@ -1,7 +1,8 @@
 # NavigationLink
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that controls a navigation presentation.
 
@@ -23,13 +24,13 @@ struct NavigationLink<Label, Destination> where Label : View, Destination : View
 
 ## Mentions
 
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
+- [Displaying data in lists](./displaying-data-in-lists.md)
+- [Understanding the navigation stack](./understanding-the-navigation-stack.md)
 
 #### Overview
 
-People click or tap a navigation link to present a view inside a [`NavigationStack`](navigationstack.md) or [`NavigationSplitView`](navigationsplitview.md). You control the visual appearance of the link by providing view content in the link’s `label` closure. For example, you can use a [`Label`](label.md) to display a link:
+People click or tap a navigation link to present a view inside a [`NavigationStack`](./navigationstack.md) or [`NavigationSplitView`](./navigationsplitview.md). You control the visual appearance of the link by providing view content in the link’s `label` closure. For example, you can use a [`Label`](./label.md) to display a link:
 
 ```swift
 NavigationLink {
@@ -39,7 +40,7 @@ NavigationLink {
 }
 ```
 
-For a link composed only of text, you can use one of the convenience initializers that takes a string and creates a [`Text`](text.md) view for you:
+For a link composed only of text, you can use one of the convenience initializers that takes a string and creates a [`Text`](./text.md) view for you:
 
 ```swift
 NavigationLink("Work Folder") {
@@ -47,7 +48,7 @@ NavigationLink("Work Folder") {
 }
 ```
 
-##### Link to a Destination View
+##### Link to a destination view
 
 You can perform navigation by initializing a link with a destination view that you provide in the `destination` closure. For example, consider a `ColorDetail` view that fills itself with a color:
 
@@ -61,7 +62,7 @@ struct ColorDetail: View {
 }
 ```
 
-The following [`NavigationStack`](navigationstack.md) presents three links to color detail views:
+The following [`NavigationStack`](./navigationstack.md) presents three links to color detail views:
 
 ```swift
 NavigationStack {
@@ -74,9 +75,9 @@ NavigationStack {
 }
 ```
 
-##### Create a Presentation Link
+##### Create a presentation link
 
-Alternatively, you can use a navigation link to perform navigation based on a presented data value. To support this, use the [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) view modifier inside a navigation stack to associate a view with a kind of data, and then present a value of that data type from a navigation link. The following example reimplements the previous example as a series of presentation links:
+Alternatively, you can use a navigation link to perform navigation based on a presented data value. To support this, use the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) view modifier inside a navigation stack to associate a view with a kind of data, and then present a value of that data type from a navigation link. The following example reimplements the previous example as a series of presentation links:
 
 ```swift
 NavigationStack {
@@ -94,7 +95,7 @@ NavigationStack {
 
 Separating the view from the data facilitates programmatic navigation because you can manage navigation state by recording the presented data.
 
-##### Control a Presentation Link Programmatically
+##### Control a presentation link programmatically
 
 To navigate programmatically, introduce a state variable that tracks the items on a stack. For example, you can create an array of colors to store the stack state from the previous example, and initialize it as an empty array to start with an empty stack:
 
@@ -102,7 +103,7 @@ To navigate programmatically, introduce a state variable that tracks the items o
 @State private var colors: [Color] = []
 ```
 
-Then pass a [`Binding`](binding.md) to the state to the navigation stack:
+Then pass a [`Binding`](./binding.md) to the state to the navigation stack:
 
 ```swift
 NavigationStack(path: $colors) {
@@ -110,7 +111,7 @@ NavigationStack(path: $colors) {
 }
 ```
 
-You can use the array to observe the current state of the stack. You can also modify the array to change the contents of the stack. For example, you can programmatically add [`blue`](shapestyle/blue.md) to the array, and navigation to a new color detail view using the following method:
+You can use the array to observe the current state of the stack. You can also modify the array to change the contents of the stack. For example, you can programmatically add [`blue`](./shapestyle/blue.md) to the array, and navigation to a new color detail view using the following method:
 
 ```swift
 func showBlue() {
@@ -118,9 +119,9 @@ func showBlue() {
 }
 ```
 
-##### Coordinate with a List
+##### Coordinate with a list
 
-You can also use a navigation link to control [`List`](list.md) selection in a [`NavigationSplitView`](navigationsplitview.md):
+You can also use a navigation link to control [`List`](./list.md) selection in a [`NavigationSplitView`](./navigationsplitview.md):
 
 ```swift
 let colors: [Color] = [.mint, .pink, .teal]
@@ -146,42 +147,43 @@ The list coordinates with the navigation logic so that changing the selection st
 ## Topics
 
 ### Presenting a destination view
-- [init(_:destination:)](navigationlink/init(_:destination:).md)
+- [init(_:destination:)](./navigationlink/init%28_,destination%29.md)
   Creates a navigation link that presents a destination view, with a text label that the link generates from a localized string key.
 ### Presenting a value
-- [init(_:value:)](navigationlink/init(_:value:).md)
+- [init(_:value:)](./navigationlink/init%28_,value%29.md)
   Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string resource.
-- [init(value:label:)](navigationlink/init(value:label:).md)
+- [init(value:label:)](./navigationlink/init%28value,label%29.md)
   Creates a navigation link that presents the view corresponding to a codable value.
 ### Configuring the link
-- [func isDetailLink(Bool) -> some View](navigationlink/isdetaillink(_:).md)
+- [func isDetailLink(Bool) -> some View](./navigationlink/isdetaillink%28_%29.md)
   Sets the navigation link to present its destination as the detail component of the containing navigation view.
 ### Deprecated
-- [Deprecated symbols](navigationlink-deprecated.md)
+- [Deprecated symbols](./navigationlink-deprecated.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Bringing robust navigation structure to your SwiftUI app](bringing-robust-navigation-structure-to-your-swiftui-app.md)
+### Presenting views in columns
+- [Bringing robust navigation structure to your SwiftUI app](./bringing-robust-navigation-structure-to-your-swiftui-app.md)
   Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
+- [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
   Improve navigation behavior in your app by replacing navigation views with navigation stacks and navigation split views.
-- [struct NavigationSplitView](navigationsplitview.md)
+- [struct NavigationSplitView](./navigationsplitview.md)
   A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
-- [func navigationSplitViewStyle<S>(S) -> some View](view/navigationsplitviewstyle(_:).md)
+- [func navigationSplitViewStyle<S>(S) -> some View](./view/navigationsplitviewstyle%28_%29.md)
   Sets the style for navigation split views within this view.
-- [func navigationSplitViewColumnWidth(CGFloat) -> some View](view/navigationsplitviewcolumnwidth(_:).md)
+- [func navigationSplitViewColumnWidth(CGFloat) -> some View](./view/navigationsplitviewcolumnwidth%28_%29.md)
   Sets a fixed, preferred width for the column containing this view.
-- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/navigationsplitviewcolumnwidth(min:ideal:max:).md)
+- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](./view/navigationsplitviewcolumnwidth%28min,ideal,max%29.md)
   Sets a flexible, preferred width for the column containing this view.
-- [struct NavigationSplitViewVisibility](navigationsplitviewvisibility.md)
+- [struct NavigationSplitViewVisibility](./navigationsplitviewvisibility.md)
   The visibility of the leading columns in a navigation split view.
-- [struct NavigationView](navigationview.md)
+- [struct NavigationView](./navigationview.md)
   A view for presenting a stack of views that represents a visible path in a navigation hierarchy.
 
 

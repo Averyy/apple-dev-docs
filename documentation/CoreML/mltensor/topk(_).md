@@ -1,7 +1,8 @@
 # topK(_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the *k* largest values along the last axis of the tensor.
 

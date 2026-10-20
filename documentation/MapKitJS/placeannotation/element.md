@@ -1,7 +1,8 @@
 # element
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotation’s element in the DOM.
 
@@ -10,7 +11,7 @@ The annotation’s element in the DOM.
 
 ## Declaration
 
-```swift
+```
 get element(): HTMLElement;
 ```
 

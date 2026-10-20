@@ -1,7 +1,8 @@
 # kMDItemTheme
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Theme of the this item. A CFString.
 
@@ -12,6 +13,10 @@ Theme of the this item. A CFString.
 
 ```swift
 let kMDItemTheme: CFString!
+```
+
+```c
+const CFStringRef kMDItemTheme;
 ```
 
 

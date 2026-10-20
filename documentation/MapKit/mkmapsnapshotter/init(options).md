@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a snapshotter object based on the specified options.
 
@@ -20,17 +21,22 @@ Creates and returns a snapshotter object based on the specified options.
 init(options: MKMapSnapshotter.Options)
 ```
 
+```objc
+- (instancetype) initWithOptions:(MKMapSnapshotOptions *) options;
+```
+
 #### Return Value
 
 An initialized snapshotter object.
 
 ## Parameters
 
-- `options`: The options to use when capturing the map imagery. See [`MKMapSnapshotter.Options`](mkmapsnapshotter/options.md). This parameter may not be `nil`.
+- `options`: The options to use when capturing the map imagery. See [`MKMapSnapshotter.Options`](./options.md). This parameter may not be `nil`.
 
 ## See Also
 
-- [MKMapSnapshotter.Options](mkmapsnapshotter/options.md)
+### Creating a snapshotter object
+- [MKMapSnapshotter.Options](./options.md)
   The options the snapshotter initializer uses to create a snapshotter to capture map-based imagery.
 
 

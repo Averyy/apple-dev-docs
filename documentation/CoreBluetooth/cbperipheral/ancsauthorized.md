@@ -1,7 +1,8 @@
 # ancsAuthorized
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the remote device has authorization to receive data over ANCS protocol.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates if the remote device has authorization to receive
 var ancsAuthorized: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL ancsAuthorized;
+```
+
 #### Discussion
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), a user authorization sets this value to [`true`](https://developer.apple.com/documentation/swift/true), which results in a call to the delegate’s [`centralManager(_:didUpdateANCSAuthorizationFor:)`](cbcentralmanagerdelegate/centralmanager(_:didupdateancsauthorizationfor:).md) method.
+If this value is [`false`](../../Swift/false.md), a user authorization sets this value to [`true`](../../Swift/true.md), which results in a call to the delegate’s [`centralManager(_:didUpdateANCSAuthorizationFor:)`](../cbcentralmanagerdelegate/centralmanager%28_,didupdateancsauthorizationfor%29.md) method.
 
 
 ---

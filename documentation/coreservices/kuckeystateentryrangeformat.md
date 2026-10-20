@@ -1,9 +1,10 @@
 # kUCKeyStateEntryRangeFormat
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Specifies that the entry format is that of a structure of type [`UCKeyStateEntryRange`](uckeystateentryrange.md). Use this format for complex (multiple) dead-key states, as in the hex input and Hangul input keyboard layouts.
+Specifies that the entry format is that of a structure of type [`UCKeyStateEntryRange`](./uckeystateentryrange.md). Use this format for complex (multiple) dead-key states, as in the hex input and Hangul input keyboard layouts.
 
 **Availability**:
 - Mac Catalyst 13.0+

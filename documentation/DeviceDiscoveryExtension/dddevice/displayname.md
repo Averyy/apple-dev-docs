@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name for the device to display to the user.
 
@@ -9,7 +10,7 @@ A name for the device to display to the user.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A name for the device to display to the user.
 var displayName: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSString * displayName;
+```
+
 ## See Also
 
-- [var identifier: String](dddevice/identifier.md)
+### Identifying the device
+- [var identifier: String](./identifier.md)
   A unique identifier for the device.
-- [var category: DDDevice.Category](dddevice/category-swift.property.md)
+- [var category: DDDevice.Category](./category-swift.property.md)
   An option that determies the icon that the picker UI displays for the device.
-- [DDDevice.Category](dddevice/category-swift.enum.md)
+- [DDDevice.Category](./category-swift.enum.md)
   An option that determines the icon for the device in the picker UI.
 
 

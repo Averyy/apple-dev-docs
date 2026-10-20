@@ -1,7 +1,8 @@
 # annotations
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all the annotations on the map.
 
@@ -10,14 +11,14 @@ An array of all the annotations on the map.
 
 ## Declaration
 
-```swift
+```
 get annotations(): Annotation[];
 set annotations(annotations: Annotation[]);
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
@@ -25,19 +26,20 @@ You can set this property to a new (possibly empty) array of annotations, which 
 
 ## See Also
 
-- [selectedAnnotation](map/selectedannotation.md)
+### Annotating the map
+- [selectedAnnotation](./selectedannotation.md)
   The selected annotation.
-- [annotationForCluster](map/annotationforcluster.md)
+- [annotationForCluster](./annotationforcluster.md)
   A delegate method for modifying an annotation that represents a group of annotations that the framework combines into a cluster.
-- [annotationsInMapRect(mapRect)](map/annotationsinmaprect.md)
+- [annotationsInMapRect(mapRect)](./annotationsinmaprect.md)
   Returns the list of annotation objects within the specified map rectangle.
-- [addAnnotation(annotation)](map/addannotation.md)
+- [addAnnotation(annotation)](./addannotation.md)
   Adds an annotation to the map.
-- [addAnnotations(annotations)](map/addannotations.md)
+- [addAnnotations(annotations)](./addannotations.md)
   Adds an array of annotations to the map.
-- [removeAnnotation(annotation)](map/removeannotation.md)
+- [removeAnnotation(annotation)](./removeannotation.md)
   Removes an annotation from the map.
-- [removeAnnotations(annotations)](map/removeannotations.md)
+- [removeAnnotations(annotations)](./removeannotations.md)
   Removes multiple annotations from the map.
 
 

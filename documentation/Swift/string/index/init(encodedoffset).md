@@ -1,7 +1,8 @@
 # init(encodedOffset:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new index at the specified code unit offset.
 
@@ -13,7 +14,9 @@ Creates a new index at the specified code unit offset.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.2
+
+> **Deprecated**: encodedOffset has been deprecated as most common usage is incorrect. Use String.Index(utf16Offset:in:) to achieve the same behavior.
 
 ## Declaration
 

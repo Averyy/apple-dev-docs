@@ -1,7 +1,8 @@
 # NSLayoutManager.ControlCharacterAction
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe actions for control characters.
 
@@ -14,48 +15,53 @@ Constants that describe actions for control characters.
 struct ControlCharacterAction
 ```
 
+```c
+enum NSControlCharacterAction : NSInteger;
+```
+
 #### Overview
 
-These constants [`layoutManager(_:shouldUse:forControlCharacterAt:)`](nslayoutmanagerdelegate/layoutmanager(_:shoulduse:forcontrolcharacterat:).md) delegate method uses.
+These constants [`layoutManager(_:shouldUse:forControlCharacterAt:)`](../nslayoutmanagerdelegate/layoutmanager%28_,shoulduse,forcontrolcharacterat%29.md) delegate method uses.
 
 ## Topics
 
 ### Actions
-- [static var containerBreak: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/containerbreak.md)
+- [static var containerBreak: NSLayoutManager.ControlCharacterAction](./controlcharacteraction/containerbreak.md)
   An action that triggers a break in layout for the current container.
-- [static var horizontalTab: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/horizontaltab.md)
+- [static var horizontalTab: NSLayoutManager.ControlCharacterAction](./controlcharacteraction/horizontaltab.md)
   An action that inserts a horizontal tab.
-- [static var lineBreak: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/linebreak.md)
+- [static var lineBreak: NSLayoutManager.ControlCharacterAction](./controlcharacteraction/linebreak.md)
   An action that causes a line break.
-- [static var paragraphBreak: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/paragraphbreak.md)
+- [static var paragraphBreak: NSLayoutManager.ControlCharacterAction](./controlcharacteraction/paragraphbreak.md)
   An action that causes a paragraph break.
-- [static var whitespace: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/whitespace.md)
+- [static var whitespace: NSLayoutManager.ControlCharacterAction](./controlcharacteraction/whitespace.md)
   An action that adds whitespace.
-- [static var zeroAdvancement: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/zeroadvancement.md)
+- [static var zeroAdvancement: NSLayoutManager.ControlCharacterAction](./controlcharacteraction/zeroadvancement.md)
   An action that removes the glyph from layout.
 ### Initializers
-- [init(rawValue: Int)](nslayoutmanager/controlcharacteraction/init(rawvalue:).md)
+- [init(rawValue: Int)](./controlcharacteraction/init%28rawvalue%29.md)
   Creates a new control character action with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func layoutManagerDidInvalidateLayout(NSLayoutManager)](nslayoutmanagerdelegate/layoutmanagerdidinvalidatelayout(_:).md)
+### Invalidating glyphs and layout
+- [func layoutManagerDidInvalidateLayout(NSLayoutManager)](../nslayoutmanagerdelegate/layoutmanagerdidinvalidatelayout%28_%29.md)
   Informs the delegate when the specified layout manager invalidates layout information (not glyph information).
-- [func layoutManager(NSLayoutManager, shouldGenerateGlyphs: UnsafePointer<CGGlyph>, properties: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes: UnsafePointer<Int>, font: NSFont, forGlyphRange: NSRange) -> Int](nslayoutmanagerdelegate/layoutmanager(_:shouldgenerateglyphs:properties:characterindexes:font:forglyphrange:).md)
+- [func layoutManager(NSLayoutManager, shouldGenerateGlyphs: UnsafePointer<CGGlyph>, properties: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes: UnsafePointer<Int>, font: NSFont, forGlyphRange: NSRange) -> Int](../nslayoutmanagerdelegate/layoutmanager%28_,shouldgenerateglyphs,properties,characterindexes,font,forglyphrange%29.md)
   Enables customization of the initial glyph generation process.
-- [func layoutManager(NSLayoutManager, shouldUse: NSLayoutManager.ControlCharacterAction, forControlCharacterAt: Int) -> NSLayoutManager.ControlCharacterAction](nslayoutmanagerdelegate/layoutmanager(_:shoulduse:forcontrolcharacterat:).md)
+- [func layoutManager(NSLayoutManager, shouldUse: NSLayoutManager.ControlCharacterAction, forControlCharacterAt: Int) -> NSLayoutManager.ControlCharacterAction](../nslayoutmanagerdelegate/layoutmanager%28_,shoulduse,forcontrolcharacterat%29.md)
   Returns the control character action for the control character at the specified character index.
 
 

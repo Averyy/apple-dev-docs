@@ -1,7 +1,8 @@
 # schemaVersionNumber
 
 **Framework**: Trust Insights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested schema version.
 
@@ -17,11 +18,12 @@ var schemaVersionNumber: Int { get }
 
 ## See Also
 
-- [var insightTypeIdentifier: String](insightevaluator/insightrequest/insighttypeidentifier.md)
+### Insight request properties
+- [var insightTypeIdentifier: String](./insighttypeidentifier.md)
   The identifier for the type of insight requested.
-- [let modelVersion: InsightEvaluator.ModelVersion](insightevaluator/insightrequest/modelversion.md)
+- [let modelVersion: InsightEvaluator.ModelVersion](./modelversion.md)
   The requested model version.
-- [var schemaVersion: InsightType.SchemaVersion](insightevaluator/insightrequest/schemaversion.md)
+- [var schemaVersion: InsightType.SchemaVersion](./schemaversion.md)
   An integer that indicates the schema version the framework should use to perform the evaluation.
 
 

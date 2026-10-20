@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifdevmtu {
     ...
 };
@@ -17,9 +17,9 @@ struct ifdevmtu {
 ## Topics
 
 ### Instance Properties
-- [ifdm_current](ifdevmtu/1563968-ifdm_current.md)
-- [ifdm_max](ifdevmtu/1564001-ifdm_max.md)
-- [ifdm_min](ifdevmtu/1563974-ifdm_min.md)
+- [ifdm_current](./ifdevmtu/api-1563968-ifdm_current.md)
+- [ifdm_max](./ifdevmtu/api-1564001-ifdm_max.md)
+- [ifdm_min](./ifdevmtu/api-1563974-ifdm_min.md)
 
 
 ---

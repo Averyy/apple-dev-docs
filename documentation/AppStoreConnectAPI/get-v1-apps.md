@@ -1,7 +1,8 @@
 # List apps
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Find and list apps in App Store Connect.
 
@@ -10,12 +11,12 @@ Find and list apps in App Store Connect.
 
 ## Mentions
 
-- [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
-- [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Creating alternative distribution packages](./creating-alternative-distribution-packages.md)
+- [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
+- [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
+- [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
+- [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
 
 #### Discussion
 
@@ -23,7 +24,7 @@ Find and list apps in App Store Connect.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps?limit=2
 ```
 
@@ -501,81 +502,137 @@ https://api.appstoreconnect.apple.com/v1/apps?limit=2
 
 ## Parameters
 
+### Query Parameters
+
 - `fields[apps]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
 - `fields[betaLicenseAgreements]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `agreementText`, `app`
 - `filter[bundleId]` ([string]): Attributes, relationships, and IDs by which to filter.
 - `filter[id]` ([string]): Attributes, relationships, and IDs by which to filter.
 - `filter[name]` ([string]): Attributes, relationships, and IDs by which to filter.
 - `filter[sku]` ([string]): Attributes, relationships, and IDs by which to filter.
 - `include` ([string]): Relationship data to include in the response.
+
+  **Allowed Values**: `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaGroups`, `appStoreVersions`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `endUserLicenseAgreement`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `androidToIosAppMappingDetails`
 - `limit` (integer): Number of resources to return.
+
+  **Maximum**: `200`
 - `sort` ([string]): Attributes by which to sort.
+
+  **Allowed Values**: `name`, `-name`, `bundleId`, `-bundleId`, `sku`, `-sku`
 - `fields[preReleaseVersions]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `version`, `platform`, `builds`, `app`
 - `limit[preReleaseVersions]` (integer): Number of included related resources to return.
+
+  **Maximum**: `50`
 - `fields[betaAppReviewDetails]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `contactFirstName`, `contactLastName`, `contactPhone`, `contactEmail`, `demoAccountName`, `demoAccountPassword`, `demoAccountRequired`, `notes`, `app`
 - `fields[betaAppLocalizations]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `feedbackEmail`, `marketingUrl`, `privacyPolicyUrl`, `tvOsPrivacyPolicy`, `description`, `locale`, `app`
 - `fields[builds]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `version`, `uploadedDate`, `expirationDate`, `expired`, `minOsVersion`, `lsMinimumSystemVersion`, `computedMinMacOsVersion`, `computedMinVisionOsVersion`, `iconAssetToken`, `processingState`, `buildAudienceType`, `usesNonExemptEncryption`, `preReleaseVersion`, `individualTesters`, `betaGroups`, `betaBuildLocalizations`, `appEncryptionDeclaration`, `betaAppReviewSubmission`, `app`, `buildBetaDetail`, `appStoreVersion`, `icons`, `buildBundles`, `buildUpload`, `perfPowerMetrics`, `diagnosticSignatures`
 - `fields[betaGroups]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `name`, `createdDate`, `isInternalGroup`, `hasAccessToAllBuilds`, `publicLinkEnabled`, `publicLinkId`, `publicLinkLimitEnabled`, `publicLinkLimit`, `publicLink`, `feedbackEnabled`, `iosBuildsAvailableForAppleSiliconMac`, `iosBuildsAvailableForAppleVision`, `app`, `builds`, `betaTesters`, `betaRecruitmentCriteria`, `betaRecruitmentCriterionCompatibleBuildCheck`
 - `limit[builds]` (integer): Number of included related resources to return.
+
+  **Maximum**: `50`
 - `limit[betaGroups]` (integer): Number of included related resources to return.
+
+  **Maximum**: `50`
 - `limit[betaAppLocalizations]` (integer): Number of included related resources to return.
-- `limit[appStoreVersions]` (integer)
-- `limit[appInfos]` (integer)
+
+  **Maximum**: `50`
+- `limit[appStoreVersions]` (integer): **Maximum**: `50`
+- `limit[appInfos]` (integer): **Maximum**: `50`
 - `fields[endUserLicenseAgreements]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `agreementText`, `app`, `territories`
 - `fields[appStoreVersions]` ([string]): Fields to return for included related types. Note: `appStoreState` is deprecated, use `appVersionState` instead.
+
+  **Allowed Values**: `platform`, `versionString`, `appStoreState`, `appVersionState`, `copyright`, `reviewType`, `releaseType`, `earliestReleaseDate`, `usesIdfa`, `downloadable`, `createdDate`, `app`, `appStoreVersionLocalizations`, `build`, `appStoreVersionPhasedRelease`, `gameCenterAppVersion`, `routingAppCoverage`, `appStoreReviewDetail`, `appStoreVersionSubmission`, `appClipDefaultExperience`, `appStoreVersionExperiments`, `appStoreVersionExperimentsV2`, `customerReviews`, `alternativeDistributionPackage`
 - `fields[appInfos]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `appStoreState`, `state`, `appStoreAgeRating`, `australiaAgeRating`, `brazilAgeRating`, `brazilAgeRatingV2`, `franceAgeRating`, `koreaAgeRating`, `app`, `ageRatingDeclaration`, `appInfoLocalizations`, `primaryCategory`, `primarySubcategoryOne`, `primarySubcategoryTwo`, `secondaryCategory`, `secondarySubcategoryOne`, `secondarySubcategoryTwo`, `territoryAgeRatings`
 - `filter[appStoreVersions]` ([string]): Fields to return for included related types.
 - `filter[appStoreVersions.platform]` ([string]): Fields to return for included related types.
-- `filter[appStoreVersions.appStoreState]` ([string])
-- `limit[gameCenterEnabledVersions]` (integer)
-- `fields[gameCenterEnabledVersions]` ([string]): Fields to return for included related types.
-- `exists[gameCenterEnabledVersions]` (boolean)
-- `limit[inAppPurchases]` (integer)
+
+  **Allowed Values**: `IOS`, `MAC_OS`, `TV_OS`, `VISION_OS`
+- `filter[appStoreVersions.appStoreState]` ([string]) *(deprecated)*: **Allowed Values**: `ACCEPTED`, `DEVELOPER_REMOVED_FROM_SALE`, `DEVELOPER_REJECTED`, `IN_REVIEW`, `INVALID_BINARY`, `METADATA_REJECTED`, `PENDING_APPLE_RELEASE`, `PENDING_CONTRACT`, `PENDING_DEVELOPER_RELEASE`, `PREPARE_FOR_SUBMISSION`, `PREORDER_READY_FOR_SALE`, `PROCESSING_FOR_APP_STORE`, `READY_FOR_REVIEW`, `READY_FOR_SALE`, `REJECTED`, `REMOVED_FROM_SALE`, `WAITING_FOR_EXPORT_COMPLIANCE`, `WAITING_FOR_REVIEW`, `REPLACED_WITH_NEW_VERSION`, `NOT_APPLICABLE`
+- `limit[gameCenterEnabledVersions]` (integer) *(deprecated)*: **Maximum**: `50`
+- `fields[gameCenterEnabledVersions]` ([string]) *(deprecated)*: Fields to return for included related types.
+
+  **Allowed Values**: `platform`, `versionString`, `iconAsset`, `compatibleVersions`, `app`
+- `exists[gameCenterEnabledVersions]` (boolean) *(deprecated)*
+- `limit[inAppPurchases]` (integer) *(deprecated)*: **Maximum**: `50`
 - `fields[inAppPurchases]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `referenceName`, `productId`, `inAppPurchaseType`, `state`, `apps`, `name`, `reviewNote`, `familySharable`, `contentHosting`, `inAppPurchaseLocalizations`, `pricePoints`, `content`, `appStoreReviewScreenshot`, `promotedPurchase`, `iapPriceSchedule`, `inAppPurchaseAvailability`, `images`, `offerCodes`, `versions`
 - `fields[ciProducts]` ([string]): Fields to return for included related types.
-- `limit[appClips]` (integer)
-- `fields[appClips]` ([string])
-- `fields[reviewSubmissions]` ([string])
-- `fields[appCustomProductPages]` ([string])
-- `fields[appEvents]` ([string])
-- `limit[appCustomProductPages]` (integer)
-- `limit[appEvents]` (integer)
-- `limit[reviewSubmissions]` (integer)
-- `fields[subscriptionGracePeriods]` ([string])
-- `fields[promotedPurchases]` ([string])
-- `fields[subscriptionGroups]` ([string])
-- `limit[inAppPurchasesV2]` (integer)
-- `limit[promotedPurchases]` (integer)
-- `limit[subscriptionGroups]` (integer)
-- `fields[appStoreVersionExperiments]` ([string])
-- `limit[appStoreVersionExperimentsV2]` (integer)
-- `fields[appEncryptionDeclarations]` ([string])
-- `limit[appEncryptionDeclarations]` (integer)
-- `fields[gameCenterDetails]` ([string])
+
+  **Allowed Values**: `name`, `createdDate`, `productType`, `app`, `bundleId`, `workflows`, `primaryRepositories`, `additionalRepositories`, `buildRuns`
+- `limit[appClips]` (integer): **Maximum**: `50`
+- `fields[appClips]` ([string]): **Allowed Values**: `bundleId`, `app`, `appClipDefaultExperiences`, `appClipAdvancedExperiences`
+- `fields[reviewSubmissions]` ([string]): **Allowed Values**: `platform`, `submittedDate`, `state`, `app`, `items`, `appStoreVersionForReview`, `submittedByActor`, `lastUpdatedByActor`
+- `fields[appCustomProductPages]` ([string]): **Allowed Values**: `name`, `url`, `visible`, `app`, `appCustomProductPageVersions`
+- `fields[appEvents]` ([string]): **Allowed Values**: `referenceName`, `badge`, `eventState`, `deepLink`, `purchaseRequirement`, `primaryLocale`, `priority`, `purpose`, `territorySchedules`, `archivedTerritorySchedules`, `localizations`
+- `limit[appCustomProductPages]` (integer): **Maximum**: `50`
+- `limit[appEvents]` (integer): **Maximum**: `50`
+- `limit[reviewSubmissions]` (integer): **Maximum**: `50`
+- `fields[subscriptionGracePeriods]` ([string]): **Allowed Values**: `optIn`, `sandboxOptIn`, `duration`, `renewalType`
+- `fields[promotedPurchases]` ([string]): **Allowed Values**: `visibleForAllUsers`, `enabled`, `state`, `inAppPurchaseV2`, `subscription`
+- `fields[subscriptionGroups]` ([string]): **Allowed Values**: `referenceName`, `subscriptions`, `subscriptionGroupLocalizations`, `versions`
+- `limit[inAppPurchasesV2]` (integer): **Maximum**: `50`
+- `limit[promotedPurchases]` (integer): **Maximum**: `50`
+- `limit[subscriptionGroups]` (integer): **Maximum**: `50`
+- `fields[appStoreVersionExperiments]` ([string]): **Allowed Values**: `name`, `platform`, `trafficProportion`, `state`, `reviewRequired`, `startDate`, `endDate`, `app`, `latestControlVersion`, `controlVersions`, `appStoreVersionExperimentTreatments`
+- `limit[appStoreVersionExperimentsV2]` (integer): **Maximum**: `50`
+- `fields[appEncryptionDeclarations]` ([string]): **Allowed Values**: `appDescription`, `createdDate`, `usesEncryption`, `exempt`, `containsProprietaryCryptography`, `containsThirdPartyCryptography`, `availableOnFrenchStore`, `platform`, `uploadedDate`, `documentUrl`, `documentName`, `documentType`, `appEncryptionDeclarationState`, `codeValue`, `app`, `builds`, `appEncryptionDeclarationDocument`
+- `limit[appEncryptionDeclarations]` (integer): **Maximum**: `50`
+- `fields[gameCenterDetails]` ([string]): **Allowed Values**: `arcadeEnabled`, `challengeEnabled`, `app`, `gameCenterAppVersions`, `gameCenterGroup`, `gameCenterLeaderboards`, `gameCenterLeaderboardsV2`, `gameCenterLeaderboardSets`, `gameCenterLeaderboardSetsV2`, `gameCenterAchievements`, `gameCenterAchievementsV2`, `gameCenterActivities`, `gameCenterChallenges`, `defaultLeaderboard`, `defaultLeaderboardV2`, `defaultGroupLeaderboard`, `defaultGroupLeaderboardV2`, `achievementReleases`, `activityReleases`, `challengeReleases`, `leaderboardReleases`, `leaderboardSetReleases`, `blockedPlayers`, `challengesMinimumPlatformVersions`
 - `filter[appStoreVersions.appVersionState]` ([string]): This filter is deprecated.
-- `fields[androidToIosAppMappingDetails]` ([string])
-- `filter[reviewSubmissions.platform]` ([string])
-- `filter[reviewSubmissions.state]` ([string])
-- `limit[androidToIosAppMappingDetails]` (integer)
-- `fields[buildIcons]` ([string])
+
+  **Allowed Values**: `ACCEPTED`, `DEVELOPER_REJECTED`, `IN_REVIEW`, `INVALID_BINARY`, `METADATA_REJECTED`, `PENDING_APPLE_RELEASE`, `PENDING_DEVELOPER_RELEASE`, `PREPARE_FOR_SUBMISSION`, `PROCESSING_FOR_DISTRIBUTION`, `READY_FOR_DISTRIBUTION`, `READY_FOR_REVIEW`, `REJECTED`, `REPLACED_WITH_NEW_VERSION`, `WAITING_FOR_EXPORT_COMPLIANCE`, `WAITING_FOR_REVIEW`
+- `fields[androidToIosAppMappingDetails]` ([string]): **Allowed Values**: `packageName`, `appSigningKeyPublicCertificateSha256Fingerprints`
+- `filter[reviewSubmissions.platform]` ([string]): **Allowed Values**: `IOS`, `MAC_OS`, `TV_OS`, `VISION_OS`
+- `filter[reviewSubmissions.state]` ([string]): **Allowed Values**: `READY_FOR_REVIEW`, `WAITING_FOR_REVIEW`, `IN_REVIEW`, `UNRESOLVED_ISSUES`, `CANCELING`, `COMPLETING`, `COMPLETE`
+- `limit[androidToIosAppMappingDetails]` (integer): **Maximum**: `50`
+- `fields[buildIcons]` ([string]): **Allowed Values**: `iconAsset`, `iconType`, `masked`, `name`
+
+## Responses
+
+- `200` OK (`AppsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read app information](get-v1-apps-_id_.md)
+### Related Documentation
+- [Read app information](./get-v1-apps-_id_.md)
   Get information about a specific app.
-- [Modify an app](patch-v1-apps-_id_.md)
+- [Modify an app](./patch-v1-apps-_id_.md)
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
-- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](./get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](./get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
-- [Read app information](get-v1-apps-_id_.md)
+### Getting and modifying app information
+- [Read app information](./get-v1-apps-_id_.md)
   Get information about a specific app.
-- [Modify an app](patch-v1-apps-_id_.md)
+- [Modify an app](./patch-v1-apps-_id_.md)
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
-- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](./get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](./get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
 
 

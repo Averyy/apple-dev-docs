@@ -1,7 +1,8 @@
 # CTParagraphStyleCreateCopy(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable copy of a paragraph style.
 
@@ -20,6 +21,10 @@ Creates an immutable copy of a paragraph style.
 func CTParagraphStyleCreateCopy(_ paragraphStyle: CTParagraphStyle) -> CTParagraphStyle
 ```
 
+```c
+extern CTParagraphStyleRefCTParagraphStyleCreateCopy(CTParagraphStyleRef paragraphStyle);
+```
+
 #### Return Value
 
 A valid reference to an immutable CTParagraphStyle object that is a copy of the one passed into `paragraphStyle`, If the `paragraphStyle` reference is valid; otherwise `NULL`, if any error occurred, including being supplied with an invalid reference.
@@ -30,7 +35,8 @@ A valid reference to an immutable CTParagraphStyle object that is a copy of the 
 
 ## See Also
 
-- [func CTParagraphStyleCreate(UnsafePointer<CTParagraphStyleSetting>?, Int) -> CTParagraphStyle](ctparagraphstylecreate(_:_:).md)
+### Creating Paragraph Styles
+- [func CTParagraphStyleCreate(UnsafePointer<CTParagraphStyleSetting>?, Int) -> CTParagraphStyle](./ctparagraphstylecreate%28_,_%29.md)
   Creates an immutable paragraph style.
 
 

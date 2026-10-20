@@ -1,7 +1,8 @@
 # kev_class
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The event's class.
 
@@ -10,15 +11,16 @@ The event's class.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t kev_class;
 ```
 
 ## See Also
 
-- [vendor_code](kev_msg/1446947-vendor_code.md)
+### Fields
+- [vendor_code](./api-1446947-vendor_code.md)
   The vendor code assigned by kev_vendor_code_find.
-- [dv](kev_msg/1446996-dv.md)
+- [dv](./api-1446996-dv.md)
   An array of vectors describing additional data to be appended to the kernel event.
 
 

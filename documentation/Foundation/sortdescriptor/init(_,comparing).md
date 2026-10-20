@@ -1,7 +1,8 @@
 # init(_:comparing:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sort descriptor using a sort descriptor and a type that you specify.
 
@@ -22,9 +23,9 @@ init?(_ descriptor: NSSortDescriptor, comparing comparedType: Compared.Type) whe
 
 #### Discussion
 
-Returns `nil` if there isn’t a [`SortDescriptor`](sortdescriptor.md) equivalent to the [`NSSortDescriptor`](nssortdescriptor.md) you specify, or if the selector to [`NSSortDescriptor`](nssortdescriptor.md) isn’t one of the standard string comparison algorithms or `compare(_:)`.
+Returns `nil` if there isn’t a [`SortDescriptor`](../sortdescriptor.md) equivalent to the [`NSSortDescriptor`](../nssortdescriptor.md) you specify, or if the selector to [`NSSortDescriptor`](../nssortdescriptor.md) isn’t one of the standard string comparison algorithms or `compare(_:)`.
 
-The comparison for the created [`SortDescriptor`](sortdescriptor.md) uses the selector to the associated [`NSSortDescriptor`](nssortdescriptor.md) directly, so in cases where the comparison of [`NSSortDescriptor`](nssortdescriptor.md) might crash, the [`SortDescriptor`](sortdescriptor.md) comparison crashes as well.
+The comparison for the created [`SortDescriptor`](../sortdescriptor.md) uses the selector to the associated [`NSSortDescriptor`](../nssortdescriptor.md) directly, so in cases where the comparison of [`NSSortDescriptor`](../nssortdescriptor.md) might crash, the [`SortDescriptor`](../sortdescriptor.md) comparison crashes as well.
 
 ## Parameters
 

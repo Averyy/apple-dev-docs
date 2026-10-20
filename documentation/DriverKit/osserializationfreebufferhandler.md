@@ -1,26 +1,28 @@
 # OSSerializationFreeBufferHandler
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef void (^)(const void *, unsigned long) OSSerializationFreeBufferHandler;
 ```
 
 ## See Also
 
-- [OSCreateSerializationFromBytes](oscreateserializationfrombytes.md)
-- [OSCreateSerializationFromObject](oscreateserializationfromobject.md)
-- [free](osserialization/free.md)
-- [OSSerializationPtr](osserializationptr.md)
+### Creating a Serialization Object
+- [OSCreateSerializationFromBytes](./oscreateserializationfrombytes.md)
+- [OSCreateSerializationFromObject](./oscreateserializationfromobject.md)
+- [free](./osserialization/free.md)
+- [OSSerializationPtr](./osserializationptr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kUSBReEnumerateReleaseDeviceMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask to release the device.
 
@@ -10,7 +11,7 @@ The mask to release the device.
 
 ## Declaration
 
-```swift
+```c
 kUSBReEnumerateReleaseDeviceMask = ( 1 << kUSBReEnumerateReleaseDeviceBit)
 ```
 

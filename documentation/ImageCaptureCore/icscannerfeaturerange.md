@@ -1,7 +1,8 @@
 # ICScannerFeatureRange
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A feature with a value that lies within a range.
 
@@ -14,38 +15,43 @@ A feature with a value that lies within a range.
 class ICScannerFeatureRange
 ```
 
+```objc
+@interface ICScannerFeatureRange : ICScannerFeature
+```
+
 ## Topics
 
 ### Instance Properties
-- [var currentValue: CGFloat](icscannerfeaturerange/currentvalue.md)
-- [var defaultValue: CGFloat](icscannerfeaturerange/defaultvalue.md)
-- [var maxValue: CGFloat](icscannerfeaturerange/maxvalue.md)
-- [var minValue: CGFloat](icscannerfeaturerange/minvalue.md)
-- [var stepSize: CGFloat](icscannerfeaturerange/stepsize.md)
+- [var currentValue: CGFloat](./icscannerfeaturerange/currentvalue.md)
+- [var defaultValue: CGFloat](./icscannerfeaturerange/defaultvalue.md)
+- [var maxValue: CGFloat](./icscannerfeaturerange/maxvalue.md)
+- [var minValue: CGFloat](./icscannerfeaturerange/minvalue.md)
+- [var stepSize: CGFloat](./icscannerfeaturerange/stepsize.md)
 
 ## Relationships
 
 ### Inherits From
-- [ICScannerFeature](icscannerfeature.md)
+- [ICScannerFeature](./icscannerfeature.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ICScannerFeature](icscannerfeature.md)
+### Features
+- [class ICScannerFeature](./icscannerfeature.md)
   An abstract class that describes a scanner feature.
-- [class ICScannerFeatureBoolean](icscannerfeatureboolean.md)
+- [class ICScannerFeatureBoolean](./icscannerfeatureboolean.md)
   A feature with a value of `YES` or `NO`.
-- [class ICScannerFeatureEnumeration](icscannerfeatureenumeration.md)
+- [class ICScannerFeatureEnumeration](./icscannerfeatureenumeration.md)
   A feature that can have one of several discrete values, strings or numbers.
-- [class ICScannerFeatureTemplate](icscannerfeaturetemplate.md)
+- [class ICScannerFeatureTemplate](./icscannerfeaturetemplate.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
-- [enum ICScannerFeatureType](icscannerfeaturetype.md)
+- [enum ICScannerFeatureType](./icscannerfeaturetype.md)
   The types of scanner features.
 
 

@@ -1,7 +1,8 @@
 # MEMessageSecurityError
 
 **Framework**: MailKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
@@ -15,21 +16,21 @@ struct MEMessageSecurityError
 ## Topics
 
 ### Type Properties
-- [static var decodingError: MEMessageSecurityError.Code](memessagesecurityerror/decodingerror.md)
-- [static var encodingError: MEMessageSecurityError.Code](memessagesecurityerror/encodingerror.md)
-- [static var errorDomain: String](memessagesecurityerror/errordomain.md)
+- [static var decodingError: MEMessageSecurityError.Code](./memessagesecurityerror/decodingerror.md)
+- [static var encodingError: MEMessageSecurityError.Code](./memessagesecurityerror/encodingerror.md)
+- [static var errorDomain: String](./memessagesecurityerror/errordomain.md)
 ### Enumerations
-- [MEMessageSecurityError.Code](memessagesecurityerror/code.md)
+- [MEMessageSecurityError.Code](./memessagesecurityerror/code.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

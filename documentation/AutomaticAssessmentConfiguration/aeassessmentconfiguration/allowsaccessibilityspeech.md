@@ -1,19 +1,24 @@
 # allowsAccessibilitySpeech
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow the speech-related accessibility features during an assessment.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
+- iOS 14.0+ - Deprecated in 27.0
+- iPadOS 14.0+ - Deprecated in 27.0
+- Mac Catalyst 14.0+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 var allowsAccessibilitySpeech: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsAccessibilitySpeech;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ A device reads text aloud for users who need it. In particular, users can enable
 - Speak Screen
 - Typing Feedback > Speak Words
 
-An assessment session disables these features by default, but you can allow them by setting [`allowsAccessibilitySpeech`](aeassessmentconfiguration/allowsaccessibilityspeech.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+An assessment session disables these features by default, but you can allow them by setting [`allowsAccessibilitySpeech`](./allowsaccessibilityspeech.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 ## See Also
 
-- [var allowsDictation: Bool](aeassessmentconfiguration/allowsdictation.md)
+### Allowing accessibility
+- [var allowsDictation: Bool](./allowsdictation.md)
   A Boolean value that indicates whether to allow the use of dictation during an assessment.
 
 

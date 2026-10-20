@@ -1,7 +1,8 @@
 # Curator.Kind.external
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the curator is an external, third-party curator.
 

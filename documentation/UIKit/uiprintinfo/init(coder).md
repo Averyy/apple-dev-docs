@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a print info object from data in an unarchiver.
 
@@ -17,13 +18,18 @@ Creates a print info object from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [class func printInfo() -> UIPrintInfo](uiprintinfo/printinfo.md)
+### Creating a print info object
+- [class func printInfo() -> UIPrintInfo](./printinfo%28%29.md)
   Returns a print-information object initialized with default values.
-- [init(dictionary: [AnyHashable : Any]?)](uiprintinfo/init(dictionary:).md)
+- [init(dictionary: [AnyHashable : Any]?)](./init%28dictionary%29.md)
   Returns a print-information object that is initialized with the data in the passed-in dictionary.
-- [var dictionaryRepresentation: [AnyHashable : Any]](uiprintinfo/dictionaryrepresentation.md)
+- [var dictionaryRepresentation: [AnyHashable : Any]](./dictionaryrepresentation.md)
   A dictionary representation of a print-information object.
 
 

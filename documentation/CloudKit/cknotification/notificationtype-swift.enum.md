@@ -1,7 +1,8 @@
 # CKNotification.NotificationType
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the type of event that generates the push notification.
 
@@ -10,7 +11,7 @@ Constants that indicate the type of event that generates the push notification.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,39 +21,44 @@ Constants that indicate the type of event that generates the push notification.
 enum NotificationType
 ```
 
+```c
+enum CKNotificationType : NSInteger;
+```
+
 ## Topics
 
 ### Notification Types
-- [CKNotification.NotificationType.query](cknotification/notificationtype-swift.enum/query.md)
+- [CKNotification.NotificationType.query](./notificationtype-swift.enum/query.md)
   A notification that CloudKit generates from a query subscription’s predicate.
-- [CKNotification.NotificationType.database](cknotification/notificationtype-swift.enum/database.md)
+- [CKNotification.NotificationType.database](./notificationtype-swift.enum/database.md)
   A notification that CloudKit generates when the contents of a database change.
-- [CKNotification.NotificationType.recordZone](cknotification/notificationtype-swift.enum/recordzone.md)
+- [CKNotification.NotificationType.recordZone](./notificationtype-swift.enum/recordzone.md)
   A notification that CloudKit generates when the contents of a record zone change.
-- [CKNotification.NotificationType.readNotification](cknotification/notificationtype-swift.enum/readnotification.md)
+- [CKNotification.NotificationType.readNotification](./notificationtype-swift.enum/readnotification.md)
   A notification that your app marks as read.
 ### Initializers
-- [init?(rawValue: Int)](cknotification/notificationtype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./notificationtype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var notificationID: CKNotification.ID?](cknotification/notificationid.md)
+### Identifying the Notification
+- [var notificationID: CKNotification.ID?](./notificationid.md)
   The notification’s ID.
-- [CKNotification.ID](cknotification/id.md)
+- [CKNotification.ID](./id.md)
   An object that uniquely identifies a push notification that a container sends.
-- [var notificationType: CKNotification.NotificationType](cknotification/notificationtype-swift.property.md)
+- [var notificationType: CKNotification.NotificationType](./notificationtype-swift.property.md)
   The type of event that generates the notification.
-- [var containerIdentifier: String?](cknotification/containeridentifier.md)
+- [var containerIdentifier: String?](./containeridentifier.md)
   The ID of the container with the content that triggers the notification.
 
 

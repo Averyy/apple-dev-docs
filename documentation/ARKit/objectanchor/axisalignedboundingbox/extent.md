@@ -1,7 +1,8 @@
 # extent
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the bounding box.
 
@@ -16,11 +17,12 @@ var extent: SIMD3<Float> { get }
 
 ## See Also
 
-- [var center: SIMD3<Float>](objectanchor/axisalignedboundingbox/center.md)
+### Inspecting the bounding box
+- [var center: SIMD3<Float>](./center.md)
   The center of the bounding box.
-- [var max: SIMD3<Float>](objectanchor/axisalignedboundingbox/max.md)
+- [var max: SIMD3<Float>](./max.md)
   The maximum coordinates for the bounding box.
-- [var min: SIMD3<Float>](objectanchor/axisalignedboundingbox/min.md)
+- [var min: SIMD3<Float>](./min.md)
   Minimum coordinates for the bounding box.
 
 

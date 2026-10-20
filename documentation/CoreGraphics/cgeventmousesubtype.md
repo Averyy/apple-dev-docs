@@ -1,13 +1,14 @@
 # CGEventMouseSubtype
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants used with the [`CGEventField.mouseEventSubtype`](cgeventfield/mouseeventsubtype.md) event field.
+Constants used with the [`CGEventField.mouseEventSubtype`](./cgeventfield/mouseeventsubtype.md) event field.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,62 +16,67 @@ Constants used with the [`CGEventField.mouseEventSubtype`](cgeventfield/mouseeve
 enum CGEventMouseSubtype
 ```
 
+```c
+enum CGEventMouseSubtype : uint32_t;
+```
+
 #### Overview
 
-Tablets may generate specially annotated mouse events that contain values associated with the [`CGEventField.mouseEventSubtype`](cgeventfield/mouseeventsubtype.md) event field. To learn how to set these values, see the function [`setIntegerValueField(_:value:)`](cgevent/setintegervaluefield(_:value:).md).
+Tablets may generate specially annotated mouse events that contain values associated with the [`CGEventField.mouseEventSubtype`](./cgeventfield/mouseeventsubtype.md) event field. To learn how to set these values, see the function [`setIntegerValueField(_:value:)`](./cgevent/setintegervaluefield%28_,value%29.md).
 
 ## Topics
 
 ### Constants
-- [CGEventMouseSubtype.defaultType](cgeventmousesubtype/defaulttype.md)
+- [CGEventMouseSubtype.defaultType](./cgeventmousesubtype/defaulttype.md)
   Specifies that the event is an ordinary mouse event, and does not contain additional tablet device information.
-- [CGEventMouseSubtype.tabletPoint](cgeventmousesubtype/tabletpoint.md)
+- [CGEventMouseSubtype.tabletPoint](./cgeventmousesubtype/tabletpoint.md)
   Specifies that the mouse event originated from a tablet device, and that the various `kCGTabletEvent` field selectors may be used to obtain tablet-specific data from the mouse event.
-- [CGEventMouseSubtype.tabletProximity](cgeventmousesubtype/tabletproximity.md)
+- [CGEventMouseSubtype.tabletProximity](./cgeventmousesubtype/tabletproximity.md)
 ### Initializers
-- [init?(rawValue: UInt32)](cgeventmousesubtype/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./cgeventmousesubtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGCaptureOptions](cgcaptureoptions.md)
+### Enumerations
+- [struct CGCaptureOptions](./cgcaptureoptions.md)
   Configuration parameters that are used when capturing displays.
-- [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
+- [enum CGColorConversionInfoTransformType](./cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
-- [enum CGColorRenderingIntent](cgcolorrenderingintent.md)
+- [enum CGColorRenderingIntent](./cgcolorrenderingintent.md)
   Handling options for colors that are not located within the destination color space of a graphics context.
-- [struct CGConfigureOption](cgconfigureoption.md)
+- [struct CGConfigureOption](./cgconfigureoption.md)
   The scope of the changes in a display configuration transaction.
-- [struct CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags.md)
+- [struct CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags.md)
   The configuration parameters that are passed to a display reconfiguration callback function.
-- [enum CGDisplayStreamFrameStatus](cgdisplaystreamframestatus.md)
+- [enum CGDisplayStreamFrameStatus](./cgdisplaystreamframestatus.md)
   Describes a frame update event.
-- [enum CGDisplayStreamUpdateRectType](cgdisplaystreamupdaterecttype.md)
+- [enum CGDisplayStreamUpdateRectType](./cgdisplaystreamupdaterecttype.md)
   Use these constants to determine which rectangles your app is interested in.
-- [enum CGError](cgerror.md)
+- [enum CGError](./cgerror.md)
   A uniform type for result codes returned by functions in Core Graphics.
-- [enum CGEventField](cgeventfield.md)
+- [enum CGEventField](./cgeventfield.md)
   Constants used as keys to access specialized fields in low-level events.
-- [struct CGEventFilterMask](cgeventfiltermask.md)
+- [struct CGEventFilterMask](./cgeventfiltermask.md)
   Specify masks for classes of low-level events that can be filtered during event suppression states.
-- [struct CGEventFlags](cgeventflags.md)
+- [struct CGEventFlags](./cgeventflags.md)
   Constants that indicate the modifier key state at the time an event is created, as well as other event-related states.
-- [enum CGEventSourceStateID](cgeventsourcestateid.md)
+- [enum CGEventSourceStateID](./cgeventsourcestateid.md)
   Constants that specify the possible source states of an event source.
-- [enum CGEventSuppressionState](cgeventsuppressionstate.md)
+- [enum CGEventSuppressionState](./cgeventsuppressionstate.md)
   Specify the event suppression states that can occur after posting an event.
-- [enum CGEventTapLocation](cgeventtaplocation.md)
+- [enum CGEventTapLocation](./cgeventtaplocation.md)
   Constants that specify possible tapping points for events.
-- [enum CGEventTapOptions](cgeventtapoptions.md)
+- [enum CGEventTapOptions](./cgeventtapoptions.md)
   Constants that specify whether a new event tap is an active filter or a passive listener.
 
 

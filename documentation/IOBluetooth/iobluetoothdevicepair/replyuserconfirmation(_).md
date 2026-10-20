@@ -1,17 +1,22 @@
 # replyUserConfirmation(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This is the required reply to the devicePairingUserConfirmationRequest delegate message.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func replyUserConfirmation(_ reply: Bool)
+```
+
+```objc
+- (void) replyUserConfirmation:(BOOL) reply;
 ```
 
 ## Parameters

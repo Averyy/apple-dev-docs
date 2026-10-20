@@ -1,7 +1,8 @@
 # getBytes(_:range:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies a range of bytes from the data object into a given buffer.
 
@@ -20,9 +21,13 @@ Copies a range of bytes from the data object into a given buffer.
 func getBytes(_ buffer: UnsafeMutableRawPointer, range: NSRange)
 ```
 
+```objc
+- (void) getBytes:(void *) buffer range:(NSRange) range;
+```
+
 #### Discussion
 
-If `range` isn’t within the receiver’s range of bytes, an [`rangeException`](nsexceptionname/rangeexception.md) is raised.
+If `range` isn’t within the receiver’s range of bytes, an [`rangeException`](../nsexceptionname/rangeexception.md) is raised.
 
 ## Parameters
 
@@ -31,15 +36,17 @@ If `range` isn’t within the receiver’s range of bytes, an [`rangeException`]
 
 ## See Also
 
-- [var description: String](nsdata/description.md)
+### Related Documentation
+- [var description: String](./description.md)
   A string that contains a hexadecimal representation of the data object’s contents in a property list format.
-- [var bytes: UnsafeRawPointer](nsdata/bytes.md)
+### Accessing Underlying Bytes
+- [var bytes: UnsafeRawPointer](./bytes.md)
   A pointer to the data object’s contents.
-- [func enumerateBytes((UnsafeRawPointer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdata/enumeratebytes(_:).md)
+- [func enumerateBytes((UnsafeRawPointer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratebytes%28_%29.md)
   Enumerates each range of bytes in the data object using a block.
-- [func getBytes(UnsafeMutableRawPointer)](nsdata/getbytes(_:).md)
+- [func getBytes(UnsafeMutableRawPointer)](./getbytes%28_%29.md)
   Copies a data object’s contents into a given buffer.
-- [func getBytes(UnsafeMutableRawPointer, length: Int)](nsdata/getbytes(_:length:).md)
+- [func getBytes(UnsafeMutableRawPointer, length: Int)](./getbytes%28_,length%29.md)
   Copies a number of bytes from the start of the data object into a given buffer.
 
 

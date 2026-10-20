@@ -1,7 +1,8 @@
 # kMDItemRedEyeOnOff
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates if red-eye reduction was used to take the picture. A CFBoolean.
 
@@ -12,6 +13,10 @@ Indicates if red-eye reduction was used to take the picture. A CFBoolean.
 
 ```swift
 let kMDItemRedEyeOnOff: CFString!
+```
+
+```c
+const CFStringRef kMDItemRedEyeOnOff;
 ```
 
 #### Discussion

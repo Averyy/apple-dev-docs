@@ -1,7 +1,8 @@
 # optionalPermissionMatchPatterns
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of websites that the extension may need access to for optional functionality.
 
@@ -16,6 +17,10 @@ The set of websites that the extension may need access to for optional functiona
 
 ```swift
 var optionalPermissionMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<WKWebExtensionMatchPattern *> * optionalPermissionMatchPatterns;
 ```
 
 #### Discussion

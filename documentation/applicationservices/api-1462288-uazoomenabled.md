@@ -1,7 +1,8 @@
 # UAZoomEnabled()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines if the Universal Access zoom feature is enabled.
 
@@ -14,13 +15,18 @@ Determines if the Universal Access zoom feature is enabled.
 func UAZoomEnabled() -> Bool
 ```
 
-#### Return_value
+```c
+Boolean UAZoomEnabled(void);
+```
+
+#### Return Value
 
 Returns `true` if the Universal Access zoom feature is on, `false` if the zoom feature is off or if the user has zoomed all the way out.
 
 ## See Also
 
-- [func UAZoomChangeFocus(UnsafePointer<CGRect>!, UnsafePointer<CGRect>!, UAZoomChangeFocusType) -> OSStatus](1458830-uazoomchangefocus.md)
+### Miscellaneous
+- [func UAZoomChangeFocus(UnsafePointer<CGRect>!, UnsafePointer<CGRect>!, UAZoomChangeFocusType) -> OSStatus](./api-1458830-uazoomchangefocus.md)
   Tells the Universal Access zoom feature where it should focus.
 
 

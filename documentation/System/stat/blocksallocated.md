@@ -1,7 +1,8 @@
 # blocksAllocated
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of 512-byte blocks allocated
 

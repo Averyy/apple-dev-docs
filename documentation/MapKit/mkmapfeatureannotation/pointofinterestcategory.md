@@ -1,7 +1,8 @@
 # pointOfInterestCategory
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature annotation’s point of interest category.
 
@@ -17,13 +18,18 @@ The feature annotation’s point of interest category.
 var pointOfInterestCategory: MKPointOfInterestCategory? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MKPointOfInterestCategory pointOfInterestCategory;
+```
+
 ## See Also
 
-- [var featureType: MKMapFeatureAnnotation.FeatureType](mkmapfeatureannotation/featuretype-swift.property.md)
+### Customizing the annotation
+- [var featureType: MKMapFeatureAnnotation.FeatureType](./featuretype-swift.property.md)
   The type of map feature this annotation represents.
-- [MKMapFeatureAnnotation.FeatureType](mkmapfeatureannotation/featuretype-swift.enum.md)
+- [MKMapFeatureAnnotation.FeatureType](./featuretype-swift.enum.md)
   Values that describe the kinds of features visible on the map.
-- [var iconStyle: MKIconStyle?](mkmapfeatureannotation/iconstyle.md)
+- [var iconStyle: MKIconStyle?](./iconstyle.md)
   The icon style of a feature annotation.
 
 

@@ -1,16 +1,17 @@
 # kCIAttributeTypeImage
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A [`CIImage`](ciimage.md) object.
+A [`CIImage`](./ciimage.md) object.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ A [`CIImage`](ciimage.md) object.
 let kCIAttributeTypeImage: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypeImage;
+```
+
 ## See Also
 
-- [let kCIAttributeTypeTransform: String](kciattributetypetransform.md)
+### Constants
+- [let kCIAttributeTypeTransform: String](./kciattributetypetransform.md)
   The transform type of an attribute.
 
 

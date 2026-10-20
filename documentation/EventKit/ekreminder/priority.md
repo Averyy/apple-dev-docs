@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reminder’s priority.
 
@@ -19,17 +20,22 @@ The reminder’s priority.
 var priority: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger priority;
+```
+
 ## See Also
 
-- [enum EKReminderPriority](ekreminderpriority.md)
+### Accessing Reminder Properties
+- [enum EKReminderPriority](../ekreminderpriority.md)
   The priority of the reminder.
-- [var startDateComponents: DateComponents?](ekreminder/startdatecomponents.md)
+- [var startDateComponents: DateComponents?](./startdatecomponents.md)
   The start date of the task.
-- [var dueDateComponents: DateComponents?](ekreminder/duedatecomponents.md)
+- [var dueDateComponents: DateComponents?](./duedatecomponents.md)
   The date by which the reminder should be completed.
-- [var isCompleted: Bool](ekreminder/iscompleted.md)
+- [var isCompleted: Bool](./iscompleted.md)
   A Boolean value determining whether or not the reminder is marked completed.
-- [var completionDate: Date?](ekreminder/completiondate.md)
+- [var completionDate: Date?](./completiondate.md)
   The date on which the reminder was completed.
 
 

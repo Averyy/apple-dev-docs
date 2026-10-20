@@ -1,7 +1,8 @@
 # load(from:options:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the file the URL references and adds the events to the sequence.
 
@@ -19,6 +20,10 @@ Loads the file the URL references and adds the events to the sequence.
 func load(from fileURL: URL, options: AVMusicSequenceLoadOptions = []) throws
 ```
 
+```objc
+- (BOOL) loadFromURL:(NSURL *) fileURL options:(AVMusicSequenceLoadOptions) options error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `fileURL`: The URL to the file.
@@ -26,9 +31,10 @@ func load(from fileURL: URL, options: AVMusicSequenceLoadOptions = []) throws
 
 ## See Also
 
-- [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-8o58w.md)
+### Managing sequence load options
+- [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](./load%28from,options%29-8o58w.md)
   Parses the data and adds its events to the sequence.
-- [struct AVMusicSequenceLoadOptions](avmusicsequenceloadoptions.md)
+- [struct AVMusicSequenceLoadOptions](../avmusicsequenceloadoptions.md)
   A structure that defines whether data on different MIDI channels map to multiple tracks, or whether the framework preserves the tracks as they are.
 
 

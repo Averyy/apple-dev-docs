@@ -1,14 +1,15 @@
 # kIOAccelSurfaceModeColorDepthYUV
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurfaceModeColorDepthYUV = 0x00000006
 ```
 

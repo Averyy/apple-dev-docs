@@ -1,7 +1,8 @@
 # emissionDirection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction particles are emitted when birthDirection is set to World or Local. Defaults to (0.0, 1.0, 0.0).
 

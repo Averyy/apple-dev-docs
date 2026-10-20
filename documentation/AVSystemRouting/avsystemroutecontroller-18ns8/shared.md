@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared system routing controller instance.
 
@@ -18,7 +19,7 @@ final class var shared: AVSystemRouteController { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 
 ---

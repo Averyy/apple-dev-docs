@@ -1,7 +1,8 @@
 # deviceObject
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,9 +17,14 @@
 static let deviceObject: MIDICIDeviceManager.DictionaryKey
 ```
 
+```c
+extern MIDICIDeviceManagerDictionaryKey MIDICIDeviceObjectKey;
+```
+
 ## See Also
 
-- [static let profileObject: MIDICIDeviceManager.DictionaryKey](midicidevicemanager/dictionarykey/profileobject.md)
+### Type Properties
+- [static let profileObject: MIDICIDeviceManager.DictionaryKey](./profileobject.md)
 
 
 ---

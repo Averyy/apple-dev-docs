@@ -1,7 +1,8 @@
 # init(name:image:)
 
 **Framework**: Push to Talk  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a participant with the name and image you specify.
 
@@ -14,6 +15,10 @@ Creates a participant with the name and image you specify.
 
 ```swift
 init(name: String, image: UIImage?)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name image:(UIImage *) image;
 ```
 
 ## Parameters

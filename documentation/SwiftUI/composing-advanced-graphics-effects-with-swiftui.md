@@ -1,6 +1,8 @@
 # Composing advanced graphics effects with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [ComposingAdvancedGraphicsEffectsWithSwiftUI.zip](https://docs-assets.developer.apple.com/published/f2a8a000f840/ComposingAdvancedGraphicsEffectsWithSwiftUI.zip)
 
 Create compelling visuals in your app by combining graphical effects.
 
@@ -14,7 +16,7 @@ Create compelling visuals in your app by combining graphical effects.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 322: [`Compose advanced graphics effects with SwiftUI`](https://developer.apple.comhttp://developer.apple.com/videos/play/wwdc2026/322/).
+> **Note**: This sample code project is associated with WWDC26 session 322: [Compose advanced graphics effects with SwiftUI](http://developer.apple.com/videos/play/wwdc2026/322/).
 
 
 ---

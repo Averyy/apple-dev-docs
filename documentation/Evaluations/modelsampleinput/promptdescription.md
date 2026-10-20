@@ -1,7 +1,8 @@
 # promptDescription
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the prompt, synthesized from prompt segments.
 

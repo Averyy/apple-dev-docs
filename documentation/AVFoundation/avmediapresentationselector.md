@@ -1,7 +1,8 @@
 # AVMediaPresentationSelector
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
 
@@ -20,6 +21,10 @@ For content that has been authored with the express intent of offering an altern
 class AVMediaPresentationSelector
 ```
 
+```objc
+@interface AVMediaPresentationSelector : NSObject
+```
+
 #### Overview
 
 Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
@@ -27,46 +32,47 @@ Subclasses of this type that are used from Swift must fulfill the requirements o
 ## Topics
 
 ### Identifying the selector
-- [var identifier: String](avmediapresentationselector/identifier.md)
+- [var identifier: String](./avmediapresentationselector/identifier.md)
   Provides the authored identifier for the selector.
-- [func displayName(forLocaleIdentifier: String) -> String](avmediapresentationselector/displayname(forlocaleidentifier:).md)
+- [func displayName(forLocaleIdentifier: String) -> String](./avmediapresentationselector/displayname%28forlocaleidentifier%29.md)
   Returns the display name for the selector that best matches the specified locale identifier.
 ### Accessing settings
-- [var settings: [AVMediaPresentationSetting]](avmediapresentationselector/settings.md)
+- [var settings: [AVMediaPresentationSetting]](./avmediapresentationselector/settings.md)
   Provides selectable mutually exclusive settings for the selector.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+### Media selection
+- [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
   Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
-- [class AVMediaSelection](avmediaselection.md)
+- [class AVMediaSelection](./avmediaselection.md)
   An object that represents a complete rendition of media selection options on an asset.
-- [class AVMediaSelectionGroup](avmediaselectiongroup.md)
+- [class AVMediaSelectionGroup](./avmediaselectiongroup.md)
   An object that represents a collection of mutually exclusive options for the presentation of media within an asset.
-- [class AVMediaSelectionOption](avmediaselectionoption.md)
+- [class AVMediaSelectionOption](./avmediaselectionoption.md)
   An object that represents a specific option for the presentation of media within a group of options.
-- [class AVMutableMediaSelection](avmutablemediaselection.md)
+- [class AVMutableMediaSelection](./avmutablemediaselection.md)
   A mutable object that represents a complete rendition of media selection options on an asset.
-- [class AVPlayerMediaSelectionCriteria](avplayermediaselectioncriteria.md)
+- [class AVPlayerMediaSelectionCriteria](./avplayermediaselectioncriteria.md)
   An object that specifies the preferred languages and media characteristics for a player.
-- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+- [class AVCustomMediaSelectionScheme](./avcustommediaselectionscheme.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
-- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+- [class AVMediaPresentationSetting](./avmediapresentationsetting.md)
   For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
 
 

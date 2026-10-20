@@ -1,7 +1,8 @@
 # realityViewCameraControls(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds gestures that control the position and direction of a virtual camera.
 
@@ -24,9 +25,10 @@ You can use a drag gesture from a mouse, trackpad, or screen touches with iOS an
 
 ## See Also
 
-- [var realityViewCameraControls: CameraControls](environmentvalues/realityviewcameracontrols.md)
+### Configuring camera controls
+- [var realityViewCameraControls: CameraControls](../environmentvalues/realityviewcameracontrols.md)
   The camera controls for the reality view.
-- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](view/realityviewlayoutbehavior(_:).md)
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](./realityviewlayoutbehavior%28_%29.md)
   A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 
 

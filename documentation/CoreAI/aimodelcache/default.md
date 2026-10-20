@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared cache scoped to your app bundle.
 
@@ -20,11 +21,11 @@ static let `default`: AIModelCache
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Discussion
 
-The shared specialized asset cache for your app bundle. The framework uses this cache by default whenever specialization happens automatically, such as during [`init(contentsOf:options:)`](aimodel/init(contentsof:options:).md).
+The shared specialized asset cache for your app bundle. The framework uses this cache by default whenever specialization happens automatically, such as during [`init(contentsOf:options:)`](../aimodel/init%28contentsof,options%29.md).
 
 
 ---

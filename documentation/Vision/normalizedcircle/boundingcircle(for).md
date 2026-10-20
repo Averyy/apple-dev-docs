@@ -1,7 +1,8 @@
 # boundingCircle(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the smallest circle that encloses the points you specify.
 

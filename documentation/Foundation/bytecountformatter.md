@@ -1,7 +1,8 @@
 # ByteCountFormatter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatter that converts a byte count value into a localized description that is formatted with the appropriate byte modifier (KB, MB, GB and so on).
 
@@ -20,63 +21,67 @@ A formatter that converts a byte count value into a localized description that i
 class ByteCountFormatter
 ```
 
+```objc
+@interface NSByteCountFormatter : NSFormatter
+```
+
 #### Overview
 
-> 💡 **Tip**:  In Swift, you can use [`ByteCountFormatStyle`](bytecountformatstyle.md) or [`Measurement.FormatStyle.ByteCount`](measurement/formatstyle/bytecount.md) rather than [`ByteCountFormatter`](bytecountformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
+> 💡 **Tip**:  In Swift, you can use [`ByteCountFormatStyle`](./bytecountformatstyle.md) or [`Measurement.FormatStyle.ByteCount`](./measurement/formatstyle/bytecount.md) rather than [`ByteCountFormatter`](./bytecountformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
 ## Topics
 
 ### Creating Strings from Byte Count
-- [class func string(fromByteCount: Int64, countStyle: ByteCountFormatter.CountStyle) -> String](bytecountformatter/string(frombytecount:countstyle:).md)
+- [class func string(fromByteCount: Int64, countStyle: ByteCountFormatter.CountStyle) -> String](./bytecountformatter/string%28frombytecount,countstyle%29.md)
   Converts a byte count into the specified string format without creating an `NSNumber` object.
-- [func string(fromByteCount: Int64) -> String](bytecountformatter/string(frombytecount:).md)
+- [func string(fromByteCount: Int64) -> String](./bytecountformatter/string%28frombytecount%29.md)
   Converts a byte count into a string without creating an `NSNumber` object.
 ### Setting Formatting Styles
-- [var formattingContext: Formatter.Context](bytecountformatter/formattingcontext.md)
+- [var formattingContext: Formatter.Context](./bytecountformatter/formattingcontext.md)
   Specify the formatting context for the formatted string.
-- [var countStyle: ByteCountFormatter.CountStyle](bytecountformatter/countstyle-swift.property.md)
+- [var countStyle: ByteCountFormatter.CountStyle](./bytecountformatter/countstyle-swift.property.md)
   Specify the number of bytes to be used for kilobytes.
-- [var allowsNonnumericFormatting: Bool](bytecountformatter/allowsnonnumericformatting.md)
+- [var allowsNonnumericFormatting: Bool](./bytecountformatter/allowsnonnumericformatting.md)
   Determines whether to allow more natural display of some values.
-- [var includesActualByteCount: Bool](bytecountformatter/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./bytecountformatter/includesactualbytecount.md)
   Determines whether to include the number of bytes after the formatted string.
-- [var isAdaptive: Bool](bytecountformatter/isadaptive.md)
+- [var isAdaptive: Bool](./bytecountformatter/isadaptive.md)
   Determines the display style of the size representation.
-- [var allowedUnits: ByteCountFormatter.Units](bytecountformatter/allowedunits.md)
+- [var allowedUnits: ByteCountFormatter.Units](./bytecountformatter/allowedunits.md)
   Specify the units that can be used in the output.
-- [var includesCount: Bool](bytecountformatter/includescount.md)
+- [var includesCount: Bool](./bytecountformatter/includescount.md)
   Determines whether to include the count in the resulting formatted string.
-- [var includesUnit: Bool](bytecountformatter/includesunit.md)
+- [var includesUnit: Bool](./bytecountformatter/includesunit.md)
   Determines whether to include the units in the resulting formatted string.
-- [var zeroPadsFractionDigits: Bool](bytecountformatter/zeropadsfractiondigits.md)
+- [var zeroPadsFractionDigits: Bool](./bytecountformatter/zeropadsfractiondigits.md)
   Determines whether to zero pad fraction digits so a consistent number of characters is displayed in a representation.
 ### Constants
-- [ByteCountFormatter.Units](bytecountformatter/units.md)
+- [ByteCountFormatter.Units](./bytecountformatter/units.md)
   Specifies the units appropriate for the formatter to display. Specifying any units explicitly causes just those units to be used in showing the number.
-- [ByteCountFormatter.CountStyle](bytecountformatter/countstyle-swift.enum.md)
+- [ByteCountFormatter.CountStyle](./bytecountformatter/countstyle-swift.enum.md)
   Specifies display of file or storage byte counts. The display style is platform specific.
 ### Instance Methods
-- [func string(for: Any?) -> String?](bytecountformatter/string(for:).md)
+- [func string(for: Any?) -> String?](./bytecountformatter/string%28for%29.md)
   Formats `obj` as a byte count (if `obj` is an `NSNumber`) or specific byte measurement (if `obj` is an `NSMeasurement`) using the receiver’s settings.
-- [func string(from: Measurement<UnitInformationStorage>) -> String](bytecountformatter/string(from:).md)
+- [func string(from: Measurement<UnitInformationStorage>) -> String](./bytecountformatter/string%28from%29.md)
   Formats the value of the given measurement using the receiver’s `countStyle`.
 ### Type Methods
-- [class func string(from: Measurement<UnitInformationStorage>, countStyle: ByteCountFormatter.CountStyle) -> String](bytecountformatter/string(from:countstyle:).md)
+- [class func string(from: Measurement<UnitInformationStorage>, countStyle: ByteCountFormatter.CountStyle) -> String](./bytecountformatter/string%28from,countstyle%29.md)
   Formats the value of the given measurement using the given `countStyle`.
 
 ## Relationships
 
 ### Inherits From
-- [Formatter](formatter.md)
+- [Formatter](./formatter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # distortionEffect(_:maxSampleOffset:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new visual effect that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 
@@ -43,9 +44,10 @@ where `position` is the user-space coordinates of the destination pixel applied 
 
 ## See Also
 
-- [func blur(radius: CGFloat, opaque: Bool) -> some VisualEffect](visualeffect/blur(radius:opaque:).md)
+### Applying other effects
+- [func blur(radius: CGFloat, opaque: Bool) -> some VisualEffect](./blur%28radius,opaque%29.md)
   Applies a Gaussian blur to the view.
-- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](visualeffect/layereffect(_:maxsampleoffset:isenabled:).md)
+- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some VisualEffect](./layereffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new visual effect that applies `shader` to `self` as a filter on the raster layer created from `self`.
 
 

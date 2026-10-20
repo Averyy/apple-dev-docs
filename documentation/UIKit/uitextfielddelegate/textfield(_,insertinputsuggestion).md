@@ -1,7 +1,8 @@
 # textField(_:insertInputSuggestion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the keyboard delivers an input suggestion.
 
@@ -16,9 +17,13 @@ Tells the delegate when the keyboard delivers an input suggestion.
 optional func textField(_ textField: UITextField, insertInputSuggestion inputSuggestion: UIInputSuggestion)
 ```
 
+```objc
+- (void) textField:(UITextField *) textField insertInputSuggestion:(UIInputSuggestion *) inputSuggestion;
+```
+
 ## Mentions
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+- [Adopting Smart Reply in your messaging or email app](../adopting-smart-reply-in-your-messaging-or-email-app.md)
 
 ## Parameters
 

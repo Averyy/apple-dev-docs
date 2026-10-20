@@ -1,7 +1,8 @@
 # UICellAccessory.OutlineDisclosureOptions.Style.header
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The style to use for a section header.
 
@@ -9,7 +10,7 @@ The style to use for a section header.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ When using this style, a tap anywhere in the header toggles the expansion state 
 
 ## See Also
 
-- [UICellAccessory.OutlineDisclosureOptions.Style.automatic](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/automatic.md)
+### Constants
+- [UICellAccessory.OutlineDisclosureOptions.Style.automatic](./automatic.md)
   The system automatically determines the style depending on whether the cell’s configuration is as a section header.
-- [UICellAccessory.OutlineDisclosureOptions.Style.cell](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/cell.md)
+- [UICellAccessory.OutlineDisclosureOptions.Style.cell](./cell.md)
   The style to use for a selectable cell with nested children.
 
 

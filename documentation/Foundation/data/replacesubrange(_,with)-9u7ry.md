@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a region of bytes in the data with new bytes from a collection.
 
@@ -33,9 +34,10 @@ Precondition: The bounds of `subrange` must be valid indices of the collection.
 
 ## See Also
 
-- [func replaceSubrange<SourceType>(Range<Data.Index>, with: UnsafeBufferPointer<SourceType>)](data/replacesubrange(_:with:)-9nzh.md)
+### Replacing a Range of Bytes
+- [func replaceSubrange<SourceType>(Range<Data.Index>, with: UnsafeBufferPointer<SourceType>)](./replacesubrange%28_,with%29-9nzh.md)
   Replaces a region of bytes in the data with new bytes from a buffer.
-- [func replaceSubrange(Range<Data.Index>, with: UnsafeRawPointer, count: Int)](data/replacesubrange(_:with:count:).md)
+- [func replaceSubrange(Range<Data.Index>, with: UnsafeRawPointer, count: Int)](./replacesubrange%28_,with,count%29.md)
   Replaces a region of bytes in the data with bytes from memory.
 
 

@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Provides the collection of currently supported algorithms or configuration revisions for the class of configuration.
 
@@ -17,17 +18,22 @@ Provides the collection of currently supported algorithms or configuration revis
 class var supportedRevisions: IndexSet { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSIndexSet * supportedRevisions;
+```
+
 #### Discussion
 
 A property you use to introspect at runtime which revisions are available for each configuration.
 
 ## See Also
 
-- [var revision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.property.md)
+### Inspecting revision information
+- [var revision: VTSuperResolutionScalerConfiguration.Revision](./revision-swift.property.md)
   The specific algorithm or configuration revision you use to perform the request.
-- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTSuperResolutionScalerConfiguration.Revision](./defaultrevision.md)
   Provides the default revision of a specific algorithm or configuration.
-- [VTSuperResolutionScalerConfiguration.Revision](vtsuperresolutionscalerconfiguration/revision-swift.enum.md)
+- [VTSuperResolutionScalerConfiguration.Revision](./revision-swift.enum.md)
   Available algorithm revisions.
 
 

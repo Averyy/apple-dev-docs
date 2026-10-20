@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.tolist
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.array.tolist.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.array.tolist
-
- Table of contents 
-
-## Contents
-
-# mlx.core.array.tolist
-
 **array.tolist(*self*) → list_or_scalar**
 : Convert the array to a Python [list](https://docs.python.org/3/builtins/stdtypes.html#list).
 
@@ -46,5 +19,3 @@ The value type of the list corresponding to the last dimension is either
 
 Return type:
 [list](https://docs.python.org/3/builtins/stdtypes.html#list)
-
-** Contents

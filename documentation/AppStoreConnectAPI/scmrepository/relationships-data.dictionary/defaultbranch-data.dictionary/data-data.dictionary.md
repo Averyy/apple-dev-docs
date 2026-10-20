@@ -1,7 +1,8 @@
 # ScmRepository.Relationships.DefaultBranch.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Git References resource that represents the repository’s default branch.
 
@@ -10,7 +11,7 @@ The type and ID of a related Git References resource that represents the reposit
 
 ## Declaration
 
-```swift
+```
 object ScmRepository.Relationships.DefaultBranch.Data
 ```
 
@@ -18,6 +19,8 @@ object ScmRepository.Relationships.DefaultBranch.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Git References resource that represents the default branch.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `scmGitReferences`
 
 
 ---

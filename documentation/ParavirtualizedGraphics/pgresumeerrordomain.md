@@ -1,7 +1,8 @@
 # PGResumeErrorDomain
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for suspend-resume actions.
 
@@ -15,17 +16,22 @@ The error domain for suspend-resume actions.
 let PGResumeErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const PGResumeErrorDomain;
+```
+
 ## See Also
 
-- [func willSuspend()](pgdevice/willsuspend.md)
+### Suspending and Resuming Graphics Processing
+- [func willSuspend()](./pgdevice/willsuspend%28%29.md)
   Notifies the virtual graphics device to start suspending graphics activities.
-- [func finishSuspend() -> Data?](pgdevice/finishsuspend.md)
+- [func finishSuspend() -> Data?](./pgdevice/finishsuspend%28%29.md)
   Notifies the virtualized graphics device to finish suspending graphics activities.
-- [func willResume(withSuspendState: Data, error: NSErrorPointer) -> Bool](pgdevice/willresume(withsuspendstate:error:).md)
+- [func willResume(withSuspendState: Data, error: NSErrorPointer) -> Bool](./pgdevice/willresume%28withsuspendstate,error%29.md)
   Tells a new device object to load a previously saved device’s suspend state.
-- [func didResume()](pgdevice/didresume.md)
+- [func didResume()](./pgdevice/didresume%28%29.md)
   Tells the device object to finish any remaining work to resume processing of a previously saved device’s suspend state.
-- [enum PGResumeErrorCode](pgresumeerrorcode.md)
+- [enum PGResumeErrorCode](./pgresumeerrorcode.md)
   Error codes for suspend-resume actions.
 
 

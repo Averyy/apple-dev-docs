@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The transform’s rotation. This is `nil` if the transform isn’t scale-rotate-translate.

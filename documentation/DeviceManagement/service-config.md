@@ -1,7 +1,8 @@
 # Service Config
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Provides the full list of web service URLs, notification types, request limits, and possible error codes.
 
@@ -10,11 +11,11 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 ## Mentions
 
-- [Managing users](managing-users.md)
-- [Getting app and book information (Legacy)](getting-app-and-book-information-legacy.md)
-- [Getting started with the management API](getting-started-with-the-management-api.md)
-- [Managing assets](managing-assets.md)
-- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+- [Managing users](./managing-users.md)
+- [Getting app and book information (Legacy)](./getting-app-and-book-information-legacy.md)
+- [Getting started with the management API](./getting-started-with-the-management-api.md)
+- [Managing assets](./managing-assets.md)
+- [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 
 #### Discussion
 
@@ -22,7 +23,7 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 **Request**:
 
-```None
+```
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/config'
 ```
 
@@ -223,17 +224,17 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/confi
 }
 ```
 
-##### Request Limits
+##### Request limits
 
-Some request-parameter limits are dynamic and can change without notice. Read their current values from the `limits` section of [`ServiceConfigResponse`](serviceconfigresponse.md).
+Some request-parameter limits are dynamic and can change without notice. Read their current values from the `limits` section of [`ServiceConfigResponse`](./serviceconfigresponse.md).
 
-The following keys are specific to [`ManageAssetsRequest`](manageassetsrequest.md):
+The following keys are specific to [`ManageAssetsRequest`](./manageassetsrequest.md):
 
 - **`maxAssets`**: The maximum number of unique assets in a manage request.
 - **`maxClientUserIds`**: The maximum number of unique user identifiers in a manage request.
 - **`maxSerialNumbers`**: The maximum number of unique device identifiers in a manage request.
 
-The following keys are specific to [`RevokeAssetsRequest`](revokeassetsrequest.md):
+The following keys are specific to [`RevokeAssetsRequest`](./revokeassetsrequest.md):
 
 - **`maxRevokeClientUserIds`**: The maximum number of unique user identifiers in a revoke request.
 - **`maxRevokeSerialNumbers`**: The maximum number of unique serial numbers in a revoke request.
@@ -247,7 +248,7 @@ The following keys are specific to subscription management requests:
 - **`maxSubscriptions`**: The maximum number of unique subscriptions in a subscription management request.
 - **`maxSubscriptionClientUserIds`**: The maximum number of unique user identifiers in a subscription management request.
 
-The following keys are specific to [`Client Config`](client-config-71glv.md):
+The following keys are specific to [`Client Config`](./client-config-71glv.md):
 
 - **`maxNotificationLength`**: The maximum length of the notification URL or authentication token.
 - **`maxMdmNameLength`**: The maximum length of the `name` value in `mdmInfo`.
@@ -261,21 +262,27 @@ The following keys are general to all requests:
 ## Topics
 
 ### Response
-- [object ServiceConfigResponse](serviceconfigresponse.md)
+- [object ServiceConfigResponse](./serviceconfigresponse.md)
   The service configuration for the Asset Management API.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
-- [Apps and books metadata for organizations](apps-and-books-metadata-for-organizations.md)
+- [Apps and books metadata for organizations](./apps-and-books-metadata-for-organizations.md)
   Get metadata for apps and books your organization owns.
 
 ## Endpoint
 
 `GET https://vpp.itunes.apple.com/mdm/v2/service/config`
 
+## Responses
+
+- `200` OK (`ServiceConfigResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
+
 ## See Also
 
-- [Client Config](client-config-4szk1.md)
+### Configuration management
+- [Client Config](./client-config-4szk1.md)
   Store client-specific information on the server.
 
 

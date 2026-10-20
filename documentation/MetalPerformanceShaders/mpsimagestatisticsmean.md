@@ -1,7 +1,8 @@
 # MPSImageStatisticsMean
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel that computes the mean for a given region of an image.
 
@@ -19,34 +20,39 @@ A kernel that computes the mean for a given region of an image.
 class MPSImageStatisticsMean
 ```
 
+```objc
+@interface MPSImageStatisticsMean : MPSUnaryImageKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagestatisticsmean/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsimagestatisticsmean/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagestatisticsmean/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsimagestatisticsmean/init%28device%29.md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsimagestatisticsmean/cliprectsource.md)
+- [var clipRectSource: MTLRegion](./mpsimagestatisticsmean/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageStatisticsMeanAndVariance](mpsimagestatisticsmeanandvariance.md)
+### Image Statistics Filters
+- [class MPSImageStatisticsMeanAndVariance](./mpsimagestatisticsmeanandvariance.md)
   A kernel that computes the mean and variance for a given region of an image.
-- [class MPSImageStatisticsMinAndMax](mpsimagestatisticsminandmax.md)
+- [class MPSImageStatisticsMinAndMax](./mpsimagestatisticsminandmax.md)
   A kernel that computes the minimum and maximum pixel values for a given region of an image.
 
 

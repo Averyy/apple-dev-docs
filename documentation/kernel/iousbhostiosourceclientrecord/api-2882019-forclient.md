@@ -1,7 +1,8 @@
 # forClient
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The client pointer.
 
@@ -10,15 +11,16 @@ The client pointer.
 
 ## Declaration
 
-```swift
+```c
 IOService *forClient;
 ```
 
 ## See Also
 
-- [link](iousbhostiosourceclientrecord/2882016-link.md)
+### Getting the Properties
+- [link](./api-2882016-link.md)
   The client record link.
-- [outstandingIO](iousbhostiosourceclientrecord/2882018-outstandingio.md)
+- [outstandingIO](./api-2882018-outstandingio.md)
   The outstanding input/output value.
 
 

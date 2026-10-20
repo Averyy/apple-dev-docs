@@ -1,7 +1,8 @@
 # target
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The target to pass to the action function.
 
@@ -10,15 +11,16 @@ The target to pass to the action function.
 
 ## Declaration
 
-```swift
+```c
 void *target;
 ```
 
 ## See Also
 
-- [action](iousbisoccompletion/1546485-action.md)
+### Getting the Properties
+- [action](./api-1546485-action.md)
   The function to call.
-- [parameter](iousbisoccompletion/1546572-parameter.md)
+- [parameter](./api-1546572-parameter.md)
   The parameter to pass to the action function.
 
 

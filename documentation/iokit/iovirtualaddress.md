@@ -1,7 +1,8 @@
 # IOVirtualAddress
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOVirtualAddress = mach_vm_address_t
+```
+
+```c
+typedef mach_vm_address_t IOVirtualAddress;
 ```
 
 

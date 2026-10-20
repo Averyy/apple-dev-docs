@@ -1,6 +1,7 @@
 # Handling an iCloud Container’s Data
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: Article
 
 Inspect and manage your app’s iCloud container data using the CloudKit Database app.
 
@@ -10,9 +11,9 @@ You can use the CloudKit Database app to inspect data within a public iCloud con
 
 Don’t use the CloudKit Database app as a general data editor. Although you can create, modify, and delete records using the CloudKit Dashboard app, the intent of this functionality is to help you debug your schema during the design phase.
 
-##### Find and Inspect Records
+##### Find and inspect records
 
-Use the CloudKit Database app to search for records of a particular record type within a zone of the chosen database. To  search for records in this way, you must first add a queryable index for that record type’s `recordName`. For more information, see the [`Enable querying for your record type`](inspecting-and-editing-an-icloud-container-s-schema#Enable-querying-for-your-record-type.md) section of [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md).
+Use the CloudKit Database app to search for records of a particular record type within a zone of the chosen database. To  search for records in this way, you must first add a queryable index for that record type’s `recordName`. For more information, see the [Enable querying for your record type](./inspecting-and-editing-an-icloud-container-s-schema.md#Enable-querying-for-your-record-type) section of [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 
 To search for records of a record type:
 
@@ -24,11 +25,11 @@ To search for records of a record type:
 6. Click the Query Records button, and view the results.
 7. Expand a record’s disclosure triangle to view its details.
 
-![A screenshot showing a container’s records on the data management page of the CloudKit Database app.](/images/com.apple.cloudkit/media-3699103@2x.png)
+![A screenshot showing a container’s records on the data management page of the CloudKit Database app.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699103@2x.png)
 
-> **Note**:  If you get the error, `“Field recordName is not marked queryable,”` see the [`Enable querying for your record type`](inspecting-and-editing-an-icloud-container-s-schema#Enable-querying-for-your-record-type.md) section of [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md).
+> **Note**:  If you get the error, `“Field recordName is not marked queryable,”` see the [Enable querying for your record type](./inspecting-and-editing-an-icloud-container-s-schema.md#Enable-querying-for-your-record-type) section of [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 
-##### Create a Record
+##### Create a record
 
 You can create records in public databases in either the development or production environment. If your developer account is also an iCloud account, you can do the same for your private database.
 
@@ -40,9 +41,9 @@ To create a new record:
 4. Select the database, type, and zone you’re creating a record for.
 5. Enter values in the Fields area, and click Save.
 
-![A screenshot showing a container’s data management page in the CloudKit Database app. The screenshot highlights the Add options and the New Record dialog.](/images/com.apple.cloudkit/media-3699105@2x.png)
+![A screenshot showing a container’s data management page in the CloudKit Database app. The screenshot highlights the Add options and the New Record dialog.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699105@2x.png)
 
-##### Modify or Delete a Record
+##### Modify or delete a record
 
 In the development and production environment, you can modify and delete records in public databases. If your developer account is also an iCloud account, you can do the same for your private or shared databases.
 
@@ -58,15 +59,16 @@ To modify or delete an existing record:
 8. To edit a record, enter new values in the text fields and click Save.
 9. To delete a record, click the Delete button. Then, in the dialog that appears, click Delete to confirm the deletion.
 
-![A screenshot showing a container’s data management page in the CloudKit Dashboard app. The screenshot highlights the Records menu item in the Data section on the left, as well as the Record Details dialog on the right.](/images/com.apple.cloudkit/media-3699098@2x.png)
+![A screenshot showing a container’s data management page in the CloudKit Dashboard app. The screenshot highlights the Records menu item in the Data section on the left, as well as the Record Details dialog on the right.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699098@2x.png)
 
 ## See Also
 
-- [Inspecting and Editing an iCloud Container’s Schema](inspecting-and-editing-an-icloud-container-s-schema.md)
+### Container Management
+- [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md)
   Review and edit the schema for your app’s container using the CloudKit Database app.
-- [Deploying an iCloud Container’s Schema](deploying-an-icloud-container-s-schema.md)
+- [Deploying an iCloud Container’s Schema](./deploying-an-icloud-container-s-schema.md)
   Reset your container’s state during development and deploy your container’s schema to production.
-- [Obtaining an API Token for an iCloud Container](obtaining-an-api-token-for-an-icloud-container.md)
+- [Obtaining an API Token for an iCloud Container](./obtaining-an-api-token-for-an-icloud-container.md)
   Generate an API token to access CloudKit web services or use CloudKit JS.
 
 

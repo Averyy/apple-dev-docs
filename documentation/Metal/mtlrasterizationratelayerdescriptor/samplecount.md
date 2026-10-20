@@ -1,7 +1,8 @@
 # sampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows and columns in the layer map.
 
@@ -19,21 +20,26 @@ The number of rows and columns in the layer map.
 var sampleCount: MTLSize { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLSize sampleCount;
+```
+
 #### Discussion
 
-The [`sampleCount`](mtlrasterizationratelayerdescriptor/samplecount.md) property splits the logical viewport coordinate space into a 2D grid of equal-sized cells. Its [`depth`](mtlsize/depth.md) value is always `0`.
+The [`sampleCount`](./samplecount.md) property splits the logical viewport coordinate space into a 2D grid of equal-sized cells. Its [`depth`](../mtlsize/depth.md) value is always `0`.
 
-The default value is the same as [`maxSampleCount`](mtlrasterizationratelayerdescriptor/maxsamplecount.md).
+The default value is the same as [`maxSampleCount`](./maxsamplecount.md).
 
 ## See Also
 
-- [var maxSampleCount: MTLSize](mtlrasterizationratelayerdescriptor/maxsamplecount.md)
+### Inspecting the layer rate function parameters
+- [var maxSampleCount: MTLSize](./maxsamplecount.md)
   The maximum number of rows and columns in the layer map.
-- [var horizontal: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/horizontal.md)
+- [var horizontal: MTLRasterizationRateSampleArray](./horizontal.md)
   The horizontal rasterization rates for the layer map’s rows.
-- [var vertical: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/vertical.md)
+- [var vertical: MTLRasterizationRateSampleArray](./vertical.md)
   The vertical rasterization rates for the layer map’s rows.
-- [class MTLRasterizationRateSampleArray](mtlrasterizationratesamplearray.md)
+- [class MTLRasterizationRateSampleArray](../mtlrasterizationratesamplearray.md)
   An array instance that contains rasterization rates.
 
 

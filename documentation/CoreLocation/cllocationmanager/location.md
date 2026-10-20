@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recently retrieved user location.
 
@@ -21,6 +22,10 @@ The most recently retrieved user location.
 var location: CLLocation? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CLLocation * location;
+```
+
 #### Discussion
 
 The value of this property is `nil` if no location data has ever been retrieved.
@@ -32,12 +37,13 @@ It is always a good idea to check the timestamp of the location stored in this p
 ## Topics
 
 ### Related documentation
-- [func startUpdatingLocation()](cllocationmanager/startupdatinglocation.md)
+- [func startUpdatingLocation()](./startupdatinglocation%28%29.md)
   Starts the generation of updates that report the user’s current location.
 
 ## See Also
 
-- [var heading: CLHeading?](cllocationmanager/heading.md)
+### Getting recent location and heading data
+- [var heading: CLHeading?](./heading.md)
   The most recently reported heading.
 
 

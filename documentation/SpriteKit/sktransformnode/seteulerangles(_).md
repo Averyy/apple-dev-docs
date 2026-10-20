@@ -1,7 +1,8 @@
 # setEulerAngles(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -18,12 +19,17 @@
 func setEulerAngles(_ euler: vector_float3)
 ```
 
+```objc
+- (void) setEulerAngles:(vector_float3) euler;
+```
+
 ## See Also
 
-- [var xRotation: CGFloat](sktransformnode/xrotation.md)
-- [var yRotation: CGFloat](sktransformnode/yrotation.md)
-- [func setQuaternion(simd_quatf)](sktransformnode/setquaternion(_:).md)
-- [func setRotationMatrix(matrix_float3x3)](sktransformnode/setrotationmatrix(_:).md)
+### Rotating Child Nodes
+- [var xRotation: CGFloat](./xrotation.md)
+- [var yRotation: CGFloat](./yrotation.md)
+- [func setQuaternion(simd_quatf)](./setquaternion%28_%29.md)
+- [func setRotationMatrix(matrix_float3x3)](./setrotationmatrix%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.golf
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for playing golf.
 
@@ -19,19 +20,24 @@ The constant for playing golf.
 case golf
 ```
 
+```c
+HKWorkoutActivityTypeGolf
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.climbing](hkworkoutactivitytype/climbing.md)
+### Outdoor activities
+- [HKWorkoutActivityType.climbing](./climbing.md)
   The constant for climbing.
-- [HKWorkoutActivityType.equestrianSports](hkworkoutactivitytype/equestriansports.md)
+- [HKWorkoutActivityType.equestrianSports](./equestriansports.md)
   The constant for activities that involve riding a horse, including polo, horse racing, and horse riding.
-- [HKWorkoutActivityType.fishing](hkworkoutactivitytype/fishing.md)
+- [HKWorkoutActivityType.fishing](./fishing.md)
   The constant for fishing.
-- [HKWorkoutActivityType.hiking](hkworkoutactivitytype/hiking.md)
+- [HKWorkoutActivityType.hiking](./hiking.md)
   The constant for hiking.
-- [HKWorkoutActivityType.hunting](hkworkoutactivitytype/hunting.md)
+- [HKWorkoutActivityType.hunting](./hunting.md)
   The constant for hunting.
-- [HKWorkoutActivityType.play](hkworkoutactivitytype/play.md)
+- [HKWorkoutActivityType.play](./play.md)
   The constant for play-based activities like tag, dodgeball, hopscotch, tetherball, and playing on a jungle gym.
 
 

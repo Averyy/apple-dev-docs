@@ -1,7 +1,8 @@
 # vDSP_vclr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Populates a single-precision vector with zeros.
 
@@ -10,13 +11,13 @@ Populates a single-precision vector with zeros.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_vclr(float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
 #### Discussion
 
-The [`vDSP_vclr`](https://developer.apple.com/documentation/accelerate/vdsp_vclr) and [`vDSP_vclrD`](https://developer.apple.com/documentation/accelerate/vdsp_vclrd) functions populate a vector with zeros. 
+The [`vDSP_vclr`](../Accelerate/vdsp_vclr.md) and [`vDSP_vclrD`](../Accelerate/vdsp_vclrd.md) functions populate a vector with zeros. 
 
 The following code shows how to clear the array c, setting the value of each element to zero:
 

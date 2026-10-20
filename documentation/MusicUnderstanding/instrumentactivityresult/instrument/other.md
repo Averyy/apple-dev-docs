@@ -1,7 +1,8 @@
 # other
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to use to obtain other instrument activity from an instrument activity result.
 

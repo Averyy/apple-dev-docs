@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.SecurityPolicy.owe
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows Opportunistic Wireless Encryption (OWE), providing encryption without authentication.
 

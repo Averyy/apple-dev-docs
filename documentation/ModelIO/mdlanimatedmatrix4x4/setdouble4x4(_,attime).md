@@ -1,7 +1,8 @@
 # setDouble4x4(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setDouble4x4(_ value: matrix_double4x4, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setDouble4x4:(matrix_double4x4) value atTime:(NSTimeInterval) time;
 ```
 
 

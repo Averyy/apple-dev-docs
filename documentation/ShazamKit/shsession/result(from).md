@@ -1,7 +1,8 @@
 # result(from:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an asynchronous match with a signature you specify.
 
@@ -22,7 +23,7 @@ func result(from signature: SHSignature) async -> SHSession.Result
 
 #### Return Value
 
-A [`SHSession.Result`](shsession/result.md) enum that indicates the result.
+A [`SHSession.Result`](./result.md) enum that indicates the result.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ A [`SHSession.Result`](shsession/result.md) enum that indicates the result.
 
 ## See Also
 
-- [SHSession.Result](shsession/result.md)
+### Returning queries
+- [SHSession.Result](./result.md)
   Identifies the result from an asynchronous sequence result.
 
 

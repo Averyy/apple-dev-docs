@@ -1,7 +1,8 @@
 # init(unsafeBlockBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a readonly block buffer from an existing block buffer.
 
@@ -22,11 +23,11 @@ init(unsafeBlockBuffer: sending CMBlockBuffer)
 
 #### Discussion
 
-This init will make sure that all memory referenced by `unsafeBlockBuffer` is allocated by calling [`assureBlockMemory()`](cmblockbuffer/assureblockmemory().md).
+This init will make sure that all memory referenced by `unsafeBlockBuffer` is allocated by calling [`assureBlockMemory()`](../cmblockbuffer/assureblockmemory%28%29.md).
 
 ## Parameters
 
-- `unsafeBlockBuffer`: The [`CMBlockBuffer`](cmblockbuffer.md) which will be subsumed by the new instance.
+- `unsafeBlockBuffer`: The [`CMBlockBuffer`](../cmblockbuffer.md) which will be subsumed by the new instance.
 
 
 ---

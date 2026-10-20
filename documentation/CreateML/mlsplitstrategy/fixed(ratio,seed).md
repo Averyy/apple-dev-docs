@@ -1,7 +1,8 @@
 # MLSplitStrategy.fixed(ratio:seed:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Create ML uses a portion of your training dataset to create a validation dataset based on the ratio.
 
@@ -25,9 +26,10 @@ The ratio is a value in the range `[0.0, 1.0]` that determines how much of the t
 
 ## See Also
 
-- [MLSplitStrategy.automatic](mlsplitstrategy/automatic.md)
+### Partitioning data
+- [MLSplitStrategy.automatic](./automatic.md)
   Create ML automatically decides how much of your training dataset it uses for a validation dataset.
-- [func resolve(count: Int) -> (ratio: Double, seed: Int)](mlsplitstrategy/resolve(count:).md)
+- [func resolve(count: Int) -> (ratio: Double, seed: Int)](./resolve%28count%29.md)
   Resolves this split strategy for a specific element count.
 
 

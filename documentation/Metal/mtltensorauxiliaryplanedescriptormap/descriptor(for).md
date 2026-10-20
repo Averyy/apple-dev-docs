@@ -1,7 +1,8 @@
 # descriptor(for:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the auxiliary plane descriptor for the given plane type, or `nil` if none has been set.
 
@@ -17,6 +18,10 @@ Returns the auxiliary plane descriptor for the given plane type, or `nil` if non
 
 ```swift
 func descriptor(for plane: MTLTensorPlaneType) -> MTLTensorAuxiliaryPlaneDescriptor?
+```
+
+```objc
+- (MTLTensorAuxiliaryPlaneDescriptor *) descriptorForPlane:(MTLTensorPlaneType) plane;
 ```
 
 #### Return Value

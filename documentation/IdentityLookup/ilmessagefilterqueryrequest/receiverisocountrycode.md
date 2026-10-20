@@ -1,7 +1,8 @@
 # receiverISOCountryCode
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ISO Country Code of the receiving phone number, in format specified by the ISO 3166-2 standard.
 
@@ -17,11 +18,16 @@ The ISO Country Code of the receiving phone number, in format specified by the I
 var receiverISOCountryCode: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * receiverISOCountryCode;
+```
+
 ## See Also
 
-- [var sender: String?](ilmessagefilterqueryrequest/sender.md)
+### Getting Information About a Message
+- [var sender: String?](./sender.md)
   The sender of the message.
-- [var messageBody: String?](ilmessagefilterqueryrequest/messagebody.md)
+- [var messageBody: String?](./messagebody.md)
   The body of a message received from an unknown sender.
 
 

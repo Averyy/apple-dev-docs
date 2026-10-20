@@ -1,7 +1,8 @@
 # SignInWithAppleButton.Style
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure that defines styles that you use to control the button’s appearance.
 
@@ -23,18 +24,19 @@ struct Style
 ## Topics
 
 ### Styles
-- [static let black: SignInWithAppleButton.Style](signinwithapplebutton/style/black.md)
+- [static let black: SignInWithAppleButton.Style](./style/black.md)
   The constant that defines a black button.
-- [static let white: SignInWithAppleButton.Style](signinwithapplebutton/style/white.md)
+- [static let white: SignInWithAppleButton.Style](./style/white.md)
   The constant that defines a white button.
-- [static let whiteOutline: SignInWithAppleButton.Style](signinwithapplebutton/style/whiteoutline.md)
+- [static let whiteOutline: SignInWithAppleButton.Style](./style/whiteoutline.md)
   The constant that defines a white-outlined button.
 
 ## See Also
 
-- [init(SignInWithAppleButton.Label, onRequest: (ASAuthorizationAppleIDRequest) -> Void, onCompletion: (Result<ASAuthorization, any Error>) -> Void)](signinwithapplebutton/init(_:onrequest:oncompletion:).md)
+### Creating a button
+- [init(SignInWithAppleButton.Label, onRequest: (ASAuthorizationAppleIDRequest) -> Void, onCompletion: (Result<ASAuthorization, any Error>) -> Void)](./init%28_,onrequest,oncompletion%29.md)
   Creates a Sign in with Apple button.
-- [SignInWithAppleButton.Label](signinwithapplebutton/label.md)
+- [SignInWithAppleButton.Label](./label.md)
   The label that appears on the button.
 
 

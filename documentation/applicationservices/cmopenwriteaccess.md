@@ -1,7 +1,8 @@
 # cmOpenWriteAccess
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Open the profile for writing. The total size of the profile is specified in the `size` parameter. 
 

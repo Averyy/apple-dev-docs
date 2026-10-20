@@ -1,7 +1,8 @@
 # followsUndockedKeyboard
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines if the layout guide tracks the keyboard when it’s undocked from the bottom of the screen.
 
@@ -17,9 +18,13 @@ A Boolean value that determines if the layout guide tracks the keyboard when it�
 var followsUndockedKeyboard: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL followsUndockedKeyboard;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false); the guide tracks the keyboard only when docked. When the keyboard is off screen or undocked, the guide’s [`topAnchor`](uilayoutguide/topanchor.md) matches the [`bottomAnchor`](uilayoutguide/bottomanchor.md) of [`safeAreaLayoutGuide`](uiview/safearealayoutguide.md). To follow all keyboard anchors even when undocked or floating, set [`followsUndockedKeyboard`](uikeyboardlayoutguide/followsundockedkeyboard.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`false`](../../Swift/false.md); the guide tracks the keyboard only when docked. When the keyboard is off screen or undocked, the guide’s [`topAnchor`](../uilayoutguide/topanchor.md) matches the [`bottomAnchor`](../uilayoutguide/bottomanchor.md) of [`safeAreaLayoutGuide`](../uiview/safearealayoutguide.md). To follow all keyboard anchors even when undocked or floating, set [`followsUndockedKeyboard`](./followsundockedkeyboard.md) to [`true`](../../Swift/true.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # minute
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the minute unit.
 
@@ -20,17 +21,22 @@ Identifier for the minute unit.
 static var minute: NSCalendar.Unit { get }
 ```
 
+```c
+NSCalendarUnitMinute
+```
+
 #### Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitMinute`.
 
 ## See Also
 
-- [static var hour: NSCalendar.Unit](nscalendar/unit/hour.md)
+### Specifying Hours, Minutes, and Seconds
+- [static var hour: NSCalendar.Unit](./hour.md)
   Identifier for the hour unit.
-- [static var second: NSCalendar.Unit](nscalendar/unit/second.md)
+- [static var second: NSCalendar.Unit](./second.md)
   Identifier for the second unit.
-- [static var nanosecond: NSCalendar.Unit](nscalendar/unit/nanosecond.md)
+- [static var nanosecond: NSCalendar.Unit](./nanosecond.md)
   Identifier for the nanosecond unit.
 
 

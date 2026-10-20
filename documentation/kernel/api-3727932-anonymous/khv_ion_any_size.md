@@ -1,14 +1,15 @@
 # kHV_ION_ANY_SIZE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kHV_ION_ANY_SIZE = (1u << 2)
 ```
 

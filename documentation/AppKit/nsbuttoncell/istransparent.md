@@ -1,12 +1,13 @@
 # isTransparent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the button is transparent.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ A Boolean value that indicates if the button is transparent.
 var isTransparent: Bool { get set }
 ```
 
+```objc
+@property (getter=isTransparent) BOOL transparent;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the button is transparent, when it is [`false`](https://developer.apple.com/documentation/swift/false), the button is not transparent. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the button is transparent, when it is [`false`](../../Swift/false.md), the button is not transparent. The default value is [`false`](../../Swift/false.md).
 
 Setting this property redraws the button if necessary. A transparent button tracks the mouse and sends its action, but doesn’t draw. A transparent button is useful for sensitizing an area on the screen so that an action gets sent to a target when the area receives a mouse click.
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nsbuttoncell/backgroundcolor.md)
+### Managing Graphics Attributes
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The background color of the button.
-- [var bezelStyle: NSButton.BezelStyle](nsbuttoncell/bezelstyle.md)
+- [var bezelStyle: NSButton.BezelStyle](./bezelstyle.md)
   The appearance of the button’s border, if it has one.
-- [var imageDimsWhenDisabled: Bool](nsbuttoncell/imagedimswhendisabled.md)
+- [var imageDimsWhenDisabled: Bool](./imagedimswhendisabled.md)
   A Boolean value that indicates if the button’s image and text appear “dim” when the button is disabled.
-- [var isOpaque: Bool](nsbuttoncell/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates if the button is opaque.
-- [var showsBorderOnlyWhileMouseInside: Bool](nsbuttoncell/showsborderonlywhilemouseinside.md)
+- [var showsBorderOnlyWhileMouseInside: Bool](./showsborderonlywhilemouseinside.md)
   A Boolean value that indicates if the button displays its border only when the pointer is over it.
 
 

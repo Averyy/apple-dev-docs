@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kNdrvTypeIsBlockStorage](1645420-anonymous/kndrvtypeisblockstorage.md)
-- [kNdrvTypeIsBusBridge](1645420-anonymous/kndrvtypeisbusbridge.md)
-- [kNdrvTypeIsGeneric](1645420-anonymous/kndrvtypeisgeneric.md)
-- [kNdrvTypeIsNetworking](1645420-anonymous/kndrvtypeisnetworking.md)
-- [kNdrvTypeIsParallel](1645420-anonymous/kndrvtypeisparallel.md)
-- [kNdrvTypeIsSerial](1645420-anonymous/kndrvtypeisserial.md)
-- [kNdrvTypeIsSound](1645420-anonymous/kndrvtypeissound.md)
-- [kNdrvTypeIsVideo](1645420-anonymous/kndrvtypeisvideo.md)
+- [kNdrvTypeIsBlockStorage](./api-1645420-anonymous/kndrvtypeisblockstorage.md)
+- [kNdrvTypeIsBusBridge](./api-1645420-anonymous/kndrvtypeisbusbridge.md)
+- [kNdrvTypeIsGeneric](./api-1645420-anonymous/kndrvtypeisgeneric.md)
+- [kNdrvTypeIsNetworking](./api-1645420-anonymous/kndrvtypeisnetworking.md)
+- [kNdrvTypeIsParallel](./api-1645420-anonymous/kndrvtypeisparallel.md)
+- [kNdrvTypeIsSerial](./api-1645420-anonymous/kndrvtypeisserial.md)
+- [kNdrvTypeIsSound](./api-1645420-anonymous/kndrvtypeissound.md)
+- [kNdrvTypeIsVideo](./api-1645420-anonymous/kndrvtypeisvideo.md)
 
 
 ---

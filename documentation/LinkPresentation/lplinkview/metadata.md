@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata from which to generate a rich presentation.
 
@@ -18,6 +19,10 @@ The metadata from which to generate a rich presentation.
 ```swift
 @NSCopying
 var metadata: LPLinkMetadata { get set }
+```
+
+```objc
+@property (nonatomic, copy) LPLinkMetadata * metadata;
 ```
 
 #### Discussion

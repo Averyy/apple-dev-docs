@@ -1,7 +1,8 @@
 # addSubtract(_:_:addResult:subtractResult:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the single-precision element-wise sum and subtraction of two vectors.
 
@@ -11,7 +12,7 @@ Calculates the single-precision element-wise sum and subtraction of two vectors.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -35,7 +36,7 @@ This function calculates the addition and subtraction of the first `N` elements 
 
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation, addition and subtraction, with three boxes of each. The bottom row represents the output vectors, O0 and O1, as three boxes of each. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.](/images/com.apple.accelerate/media-4336937@2x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation, addition and subtraction, with three boxes of each. The bottom row represents the output vectors, O0 and O1, as three boxes of each. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4336937@2x.png)
 
 The following code shows an example of using this function:
 
@@ -66,7 +67,8 @@ The following code shows an example of using this function:
 
 ## See Also
 
-- [static func addSubtract<S, T, U, V>(S, T, addResult: inout U, subtractResult: inout V)](vdsp/addsubtract(_:_:addresult:subtractresult:)-avzd.md)
+### Addition and Subtraction
+- [static func addSubtract<S, T, U, V>(S, T, addResult: inout U, subtractResult: inout V)](./addsubtract%28_,_,addresult,subtractresult%29-avzd.md)
   Calculates the double-precision element-wise sum and subtraction of two vectors.
 
 

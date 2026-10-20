@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token driver delegate.
 
@@ -20,13 +21,18 @@ The token driver delegate.
 weak var delegate: (any TKTokenDriverDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<TKTokenDriverDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol TKTokenDriverDelegate](tktokendriverdelegate.md)
+### Responding to Token Creation
+- [protocol TKTokenDriverDelegate](../tktokendriverdelegate.md)
   The interface that a token driver delegate implements to respond to token creation events.
-- [TKTokenDriver.ClassID](tktokendriver/classid.md)
+- [TKTokenDriver.ClassID](./classid.md)
   The type of the class identifier for the token driver.
-- [TKTokenDriver.Configuration](tktokendriver/configuration.md)
+- [TKTokenDriver.Configuration](./configuration.md)
   A configuration for one class of token.
 
 

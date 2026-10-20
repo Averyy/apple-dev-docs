@@ -1,9 +1,10 @@
 # archiveExtension
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The standard filename extension for exported [`ARReferenceObject`](arreferenceobject.md) instances.
+The standard filename extension for exported [`ARReferenceObject`](../arreferenceobject.md) instances.
 
 **Availability**:
 - iOS 12.0+
@@ -15,13 +16,18 @@ The standard filename extension for exported [`ARReferenceObject`](arreferenceob
 class let archiveExtension: String
 ```
 
+```c
+extern NSString * const ARReferenceObjectArchiveExtension;
+```
+
 #### Discussion
 
-Use this filename extension when constructing a URL to save a reference object file with the [`export(to:previewImage:)`](arreferenceobject/export(to:previewimage:).md) method.
+Use this filename extension when constructing a URL to save a reference object file with the [`export(to:previewImage:)`](./export%28to,previewimage%29.md) method.
 
 ## See Also
 
-- [func export(to: URL, previewImage: UIImage?) throws](arreferenceobject/export(to:previewimage:).md)
+### Saving Recorded Objects
+- [func export(to: URL, previewImage: UIImage?) throws](./export%28to,previewimage%29.md)
   Writes a binary representation of the object to the specified file URL.
 
 

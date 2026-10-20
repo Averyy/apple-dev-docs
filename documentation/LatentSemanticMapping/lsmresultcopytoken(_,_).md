@@ -1,13 +1,14 @@
 # LSMResultCopyToken(_:_:)
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the token for the n-th best (zero-based) result.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Returns the token for the n-th best (zero-based) result.
 func LSMResultCopyToken(_ result: LSMResult, _ n: CFIndex) -> Unmanaged<CFData>?
 ```
 
+```c
+CFDataRefLSMResultCopyToken(LSMResultRef result, CFIndex n);
+```
+
 ## See Also
 
-- [func LSMResultCopyTokenCluster(LSMResult, CFIndex) -> Unmanaged<CFArray>?](lsmresultcopytokencluster(_:_:).md)
+### Getting a Result
+- [func LSMResultCopyTokenCluster(LSMResult, CFIndex) -> Unmanaged<CFArray>?](./lsmresultcopytokencluster%28_,_%29.md)
   Returns the cluster of tokens for the n-th best (zero-based) result.
-- [func LSMResultCopyWord(LSMResult, CFIndex) -> Unmanaged<CFString>?](lsmresultcopyword(_:_:).md)
+- [func LSMResultCopyWord(LSMResult, CFIndex) -> Unmanaged<CFString>?](./lsmresultcopyword%28_,_%29.md)
   Returns the word for the n-th best (zero-based) result.
-- [func LSMResultCopyWordCluster(LSMResult, CFIndex) -> Unmanaged<CFArray>?](lsmresultcopywordcluster(_:_:).md)
+- [func LSMResultCopyWordCluster(LSMResult, CFIndex) -> Unmanaged<CFArray>?](./lsmresultcopywordcluster%28_,_%29.md)
   Returns the cluster of words for the n-th best (zero-based) result.
 
 

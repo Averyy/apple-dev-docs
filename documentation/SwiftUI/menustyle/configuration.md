@@ -1,7 +1,8 @@
 # MenuStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a menu.
 
@@ -21,9 +22,10 @@ typealias Configuration = MenuStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](menustyle/makebody(configuration:).md)
+### Creating custom menu styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a menu.
-- [associatedtype Body : View](menustyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a menu.
 
 

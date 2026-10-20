@@ -1,7 +1,8 @@
 # AppEventResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify an in-app event.
 
@@ -10,7 +11,7 @@ The response body for endpoints that create, read, or modify an in-app event.
 
 ## Declaration
 
-```swift
+```
 object AppEventResponse
 ```
 
@@ -22,17 +23,18 @@ object AppEventResponse
 
 ## See Also
 
-- [object AppEvent](appevent.md)
+### Objects and types
+- [object AppEvent](./appevent.md)
   A time-limited promotional or informational event for an app, displayed to customers on the App Store product page.
-- [object AppEventCreateRequest](appeventcreaterequest.md)
+- [object AppEventCreateRequest](./appeventcreaterequest.md)
   The request body you use to create an app event.
-- [object AppEventUpdateRequest](appeventupdaterequest.md)
+- [object AppEventUpdateRequest](./appeventupdaterequest.md)
   The request body you use to update an app event update request.
-- [object AppEventsResponse](appeventsresponse.md)
+- [object AppEventsResponse](./appeventsresponse.md)
   The response body for endpoints that list in-app events for an app.
-- [type AppEventAssetType](appeventassettype.md)
+- [type AppEventAssetType](./appeventassettype.md)
   A string that represents the type of asset for an app event.
-- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationsLinkagesResponse](./appeventlocalizationslinkagesresponse.md)
 
 
 ---

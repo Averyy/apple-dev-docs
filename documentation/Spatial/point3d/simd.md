@@ -1,7 +1,8 @@
 # simd
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A simd three-element vector that contains the x-, y-, and z-coordinate values.
 
@@ -11,7 +12,7 @@ A simd three-element vector that contains the x-, y-, and z-coordinate values.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var simd: simd_double3 { get set }
 
 ## See Also
 
-- [func rotation(to: Point3D) -> Rotation3D](point3d/rotation(to:).md)
+### Deprecated symbols
+- [func rotation(to: Point3D) -> Rotation3D](./rotation%28to%29.md)
   Returns the rotation around the origin from the first point to the second point.
-- [var origin: Point3D](point3d/origin.md)
+- [var origin: Point3D](./origin.md)
 
 
 ---

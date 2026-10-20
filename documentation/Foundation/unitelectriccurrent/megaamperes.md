@@ -1,7 +1,8 @@
 # megaamperes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The megaamperes unit of electric current.
 
@@ -21,15 +22,20 @@ The megaamperes unit of electric current.
 class var megaamperes: UnitElectricCurrent { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitElectricCurrent * megaamperes;
+```
+
 ## See Also
 
-- [class var kiloamperes: UnitElectricCurrent](unitelectriccurrent/kiloamperes.md)
+### Accessing Predefined Units
+- [class var kiloamperes: UnitElectricCurrent](./kiloamperes.md)
   The kiloamperes unit of electric current.
-- [class var amperes: UnitElectricCurrent](unitelectriccurrent/amperes.md)
+- [class var amperes: UnitElectricCurrent](./amperes.md)
   The amperes unit of electric current.
-- [class var milliamperes: UnitElectricCurrent](unitelectriccurrent/milliamperes.md)
+- [class var milliamperes: UnitElectricCurrent](./milliamperes.md)
   The milliamperes unit of electric current.
-- [class var microamperes: UnitElectricCurrent](unitelectriccurrent/microamperes.md)
+- [class var microamperes: UnitElectricCurrent](./microamperes.md)
   The microamperes unit of electric current.
 
 

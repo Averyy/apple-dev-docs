@@ -1,7 +1,8 @@
 # node
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SpriteKit node managed by the component.
 
@@ -19,9 +20,13 @@ The SpriteKit node managed by the component.
 var node: SKNode { get set }
 ```
 
+```objc
+@property (nonatomic, strong) SKNode * node;
+```
+
 #### Discussion
 
-When you add this component to a [`GKEntity`](gkentity.md) object, the component automatically sets the [`entity`](https://developer.apple.com/documentation/spritekit/sknode/entity) property of its SpriteKit node to point to that entity.
+When you add this component to a [`GKEntity`](../gkentity.md) object, the component automatically sets the [`entity`](../../SpriteKit/sknode/entity.md) property of its SpriteKit node to point to that entity.
 
 
 ---

@@ -1,7 +1,8 @@
 # NetworkVPNIKEV2
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a VPN using the IKEv2 sub-type.
 
@@ -15,7 +16,7 @@ The declaration to configure a VPN using the IKEv2 sub-type.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIKEV2
 ```
 
@@ -23,7 +24,7 @@ object NetworkVPNIKEV2
 
 Specify `com.apple.configuration.network.vpn.ikev2` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +36,7 @@ Specify `com.apple.configuration.network.vpn.ikev2` as the declaration type.
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Examples
+##### Configuration examples
 
 **Shared secret**:
 
@@ -91,21 +92,21 @@ This configuration sets up an IKEv2 VPN using certificate-based machine authenti
 ## Topics
 
 ### Objects
-- [object NetworkVPNIKEV2AuthenticationObject](networkvpnikev2authenticationobject.md)
+- [object NetworkVPNIKEV2AuthenticationObject](./networkvpnikev2authenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIKEV2DNSObject](networkvpnikev2dnsobject.md)
+- [object NetworkVPNIKEV2DNSObject](./networkvpnikev2dnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIKEV2IdleObject](networkvpnikev2idleobject.md)
+- [object NetworkVPNIKEV2IdleObject](./networkvpnikev2idleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIKEV2NetworkRoutingObject](networkvpnikev2networkroutingobject.md)
+- [object NetworkVPNIKEV2NetworkRoutingObject](./networkvpnikev2networkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNIKEV2OnDemandObject](networkvpnikev2ondemandobject.md)
+- [object NetworkVPNIKEV2OnDemandObject](./networkvpnikev2ondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](networkvpnikev2postquantumkeyexchangeobject.md)
+- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](./networkvpnikev2postquantumkeyexchangeobject.md)
   Post Quantum Key Exchange settings.
-- [object NetworkVPNIKEV2ProxiesObject](networkvpnikev2proxiesobject.md)
+- [object NetworkVPNIKEV2ProxiesObject](./networkvpnikev2proxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNIKEV2SecurityAssociationParametersObject](networkvpnikev2securityassociationparametersobject.md)
+- [object NetworkVPNIKEV2SecurityAssociationParametersObject](./networkvpnikev2securityassociationparametersobject.md)
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 
 ## Properties
@@ -113,56 +114,79 @@ This configuration sets up an IKEv2 VPN using certificate-based machine authenti
 - `Authentication` (NetworkVPNIKEV2AuthenticationObject) *(required)*: Settings that control authentication.
 - `ChildSecurityAssociationParameters` (NetworkVPNIKEV2SecurityAssociationParametersObject): The `ChildSecurityAssociationParameters` dictionaries.
 - `DisableMOBIKE` (boolean): If `true`, the system disables MOBIKE.
+
+  **Default**: `false`
 - `DisableRedirect` (boolean): If `true`, the system disables IKEv2 redirect. If not set, the system redirects an IKEv2 connection when it receives a redirect request from the server.
+
+  **Default**: `false`
 - `DNS` (NetworkVPNIKEV2DNSObject): A dictionary to use for all VPN types.
 - `EnableCertificateRevocationCheck` (boolean): If `true`, the system performs a certificate revocation check for IKEv2 connections. This is a best-effort revocation check and server response timeouts won’t cause it to fail.
-- `EnableFallback` (boolean): If `true`, the system enables a tunnel over cellular data to carry traffic that’s eligible for Wi-Fi Assist and also requires VPN. Enabling fallback requires that the server support multiple tunnels for a single user. Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+
+  **Default**: `false`
+- `EnableFallback` (boolean): If `true`, the system enables a tunnel over cellular data to carry traffic that’s eligible for Wi-Fi Assist and also requires VPN.
+
+  Enabling fallback requires that the server support multiple tunnels for a single user.
+
+  Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+
+  **Default**: `false`
 - `EnablePFS` (boolean): If `true`,  enables Perfect Forward Secrecy (PFS) for IKEv2 Connections.
+
+  **Default**: `false`
 - `EnforceStrictAlgorithmSelection` (boolean): If set to `true`, the device doesn’t allow DES, 3DES, and Diffie-Hellman groups less than 14. Also the device requires the encryption algorithm specified in `IKESecurityAssociationParameters` to be at least as cryptographically strong as the algorithm specified in `ChildSecurityAssociationParameters`. The device rejects this configuration if these requirements aren’t met.
+
+  **Default**: `false`
 - `HostName` (string) *(required)*: The IP address or hostname of the VPN server.
 - `Idle` (NetworkVPNIKEV2IdleObject): Specifies details about how the system handles idle VPN connections.
 - `IKESecurityAssociationParameters` (NetworkVPNIKEV2SecurityAssociationParametersObject): These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 - `LocalIdentifier` (string) *(required)*: Identifier of the IKEv2 client.
 - `MTU` (integer): The Maximum Transmission Unit (MTU) specifies the maximum size in bytes of each packet that the system sends over the IKEv2 VPN interface.
-- `NetworkRouting` (NetworkVPNIKEV2NetworkRoutingObject): Specifies details about how the VPN routes different types of network traffic. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+  **Default**: `1280`; **Minimum**: `1280`; **Maximum**: `1400`
+- `NetworkRouting` (NetworkVPNIKEV2NetworkRoutingObject): Specifies details about how the VPN routes different types of network traffic.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 - `OnDemand` (NetworkVPNIKEV2OnDemandObject): Specifies details about how the system controls on-demand VPN.
 - `PostQuantumKeyExchange` (NetworkVPNIKEV2PostQuantumKeyExchangeObject): Post Quantum Key Exchange settings.
 - `Proxies` (NetworkVPNIKEV2ProxiesObject): The dictionary to use to configure `Proxies` for use with `VPN`.
 - `RemoteIdentifier` (string) *(required)*: The remote identifier.
 - `UseConfigurationAttributeInternalIPSubnet` (boolean): If `true`, negotiations should use IKEv2 Configuration Attribute `INTERNAL_IP4_SUBNET` and `INTERNAL_IP6_SUBNET`.
+
+  **Default**: `false`
 - `VisibleName` (string) *(required)*: The name of the VPN connection that the system displays on the device.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

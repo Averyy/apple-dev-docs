@@ -1,7 +1,8 @@
 # CTCellularPlanStatusAvailability
 
 **Framework**: Core Telephony  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate whether the device has a cellular plan for the given phone number.
 
@@ -16,35 +17,40 @@ Constants that indicate whether the device has a cellular plan for the given pho
 enum CTCellularPlanStatusAvailability
 ```
 
+```c
+enum CTCellularPlanStatusAvailability : NSInteger;
+```
+
 #### Overview
 
-The [`getHintForPhoneNumber(_:completion:)`](ctcellularplanstatus/gethintforphonenumber(_:completion:).md) method returns this value alongside a [`CTCellularPlanStatusAvailabilityConfidence`](ctcellularplanstatusavailabilityconfidence.md) value in its completion handler.
+The [`getHintForPhoneNumber(_:completion:)`](./ctcellularplanstatus/gethintforphonenumber%28_,completion%29.md) method returns this value alongside a [`CTCellularPlanStatusAvailabilityConfidence`](./ctcellularplanstatusavailabilityconfidence.md) value in its completion handler.
 
 ## Topics
 
 ### Determining availability
-- [CTCellularPlanStatusAvailability.available](ctcellularplanstatusavailability/available.md)
+- [CTCellularPlanStatusAvailability.available](./ctcellularplanstatusavailability/available.md)
   A status that indicates the phone number has an active cellular plan on the device.
-- [CTCellularPlanStatusAvailability.unavailable](ctcellularplanstatusavailability/unavailable.md)
+- [CTCellularPlanStatusAvailability.unavailable](./ctcellularplanstatusavailability/unavailable.md)
   A status that indicates the phone number’s cellular plan is inactive or the system can’t determine the status.
 ### Creating an availability state
-- [init?(rawValue: Int)](ctcellularplanstatusavailability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ctcellularplanstatusavailability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func getHintForPhoneNumber(String, completion: (CTCellularPlanStatusAvailability, CTCellularPlanStatusAvailabilityConfidence, (any Error)?) -> Void)](ctcellularplanstatus/gethintforphonenumber(_:completion:).md)
+### Getting a cellular plan status hint
+- [class func getHintForPhoneNumber(String, completion: (CTCellularPlanStatusAvailability, CTCellularPlanStatusAvailabilityConfidence, (any Error)?) -> Void)](./ctcellularplanstatus/gethintforphonenumber%28_,completion%29.md)
   Provides an estimate of the system’s confidence of the existence of an active cellular plan for the device’s phone number.
-- [enum CTCellularPlanStatusAvailabilityConfidence](ctcellularplanstatusavailabilityconfidence.md)
+- [enum CTCellularPlanStatusAvailabilityConfidence](./ctcellularplanstatusavailabilityconfidence.md)
   Constants that indicate the system’s confidence that the device has a cellular plan for a given phone number.
 
 

@@ -1,7 +1,8 @@
 # update(repeating:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates every element of this buffer slice’s initialized memory.
 
@@ -19,6 +20,8 @@ Updates every element of this buffer slice’s initialized memory.
 ```swift
 func update<Element>(repeating repeatedValue: Element) where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # ExtensibleSSOExtensionDataObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary of arbitrary data passed through to the app extension.
 
@@ -14,13 +15,14 @@ A dictionary of arbitrary data passed through to the app extension.
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSSOExtensionDataObject
 ```
 
 ## See Also
 
-- [object ExtensibleSSOPlatformSSOObject](extensiblessoplatformssoobject.md)
+### Objects
+- [object ExtensibleSSOPlatformSSOObject](./extensiblessoplatformssoobject.md)
   The dictionary to configure Platform SSO.
 
 

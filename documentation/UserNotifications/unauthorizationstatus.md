@@ -1,7 +1,8 @@
 # UNAuthorizationStatus
 
 **Framework**: User Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating whether the app is allowed to schedule notifications.
 
@@ -20,35 +21,40 @@ Constants indicating whether the app is allowed to schedule notifications.
 enum UNAuthorizationStatus
 ```
 
+```c
+enum UNAuthorizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status
-- [UNAuthorizationStatus.notDetermined](unauthorizationstatus/notdetermined.md)
+- [UNAuthorizationStatus.notDetermined](./unauthorizationstatus/notdetermined.md)
   The user hasn’t yet made a choice about whether the app is allowed to schedule notifications.
-- [UNAuthorizationStatus.denied](unauthorizationstatus/denied.md)
+- [UNAuthorizationStatus.denied](./unauthorizationstatus/denied.md)
   The app isn’t authorized to schedule or receive notifications.
-- [UNAuthorizationStatus.authorized](unauthorizationstatus/authorized.md)
+- [UNAuthorizationStatus.authorized](./unauthorizationstatus/authorized.md)
   The app is authorized to schedule or receive notifications.
-- [UNAuthorizationStatus.provisional](unauthorizationstatus/provisional.md)
+- [UNAuthorizationStatus.provisional](./unauthorizationstatus/provisional.md)
   The application is provisionally authorized to post noninterruptive user notifications.
-- [UNAuthorizationStatus.ephemeral](unauthorizationstatus/ephemeral.md)
+- [UNAuthorizationStatus.ephemeral](./unauthorizationstatus/ephemeral.md)
   The app is authorized to schedule or receive notifications for a limited amount of time.
 ### Initializers
-- [init?(rawValue: Int)](unauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var authorizationStatus: UNAuthorizationStatus](unnotificationsettings/authorizationstatus.md)
+### Getting the Authorization Status
+- [var authorizationStatus: UNAuthorizationStatus](./unnotificationsettings/authorizationstatus.md)
   The app’s ability to schedule and receive local and remote notifications.
 
 

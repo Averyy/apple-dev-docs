@@ -1,10 +1,11 @@
 # BluetoothHCITimeoutValues
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,42 +13,47 @@
 struct BluetoothHCITimeoutValues
 ```
 
+```c
+enum BluetoothHCITimeoutValues : unsigned int;
+```
+
 ## Topics
 
 ### Constants
-- [var kDefaultPageTimeout: BluetoothHCITimeoutValues](kdefaultpagetimeout.md)
+- [var kDefaultPageTimeout: BluetoothHCITimeoutValues](./kdefaultpagetimeout.md)
 ### Initializers
-- [init(UInt32)](bluetoothhcitimeoutvalues/init(_:).md)
-- [init(rawValue: UInt32)](bluetoothhcitimeoutvalues/init(rawvalue:).md)
+- [init(UInt32)](./bluetoothhcitimeoutvalues/init%28_%29.md)
+- [init(rawValue: UInt32)](./bluetoothhcitimeoutvalues/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](bluetoothhcitimeoutvalues/rawvalue.md)
+- [var rawValue: UInt32](./bluetoothhcitimeoutvalues/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias BluetoothAFHMode](bluetoothafhmode.md)
-- [typealias BluetoothAirMode](bluetoothairmode.md)
-- [typealias BluetoothAllowRoleSwitch](bluetoothallowroleswitch.md)
-- [typealias BluetoothAuthenticationRequirements](bluetoothauthenticationrequirements.md)
-- [struct BluetoothAuthenticationRequirementsValues](bluetoothauthenticationrequirementsvalues.md)
-- [typealias BluetoothClassOfDevice](bluetoothclassofdevice.md)
-- [typealias BluetoothClockOffset](bluetoothclockoffset.md)
-- [struct BluetoothCompanyIdentifers](bluetoothcompanyidentifers.md)
-- [typealias BluetoothConnectionHandle](bluetoothconnectionhandle.md)
-- [typealias BluetoothDeviceClassMajor](bluetoothdeviceclassmajor.md)
-- [typealias BluetoothDeviceClassMinor](bluetoothdeviceclassminor.md)
-- [typealias BluetoothDeviceName](bluetoothdevicename.md)
-- [typealias BluetoothEncryptionEnable](bluetoothencryptionenable.md)
-- [struct BluetoothFeatureBits](bluetoothfeaturebits.md)
-- [typealias BluetoothHCIACLDataByteCount](bluetoothhciacldatabytecount.md)
+### Data Types
+- [typealias BluetoothAFHMode](./bluetoothafhmode.md)
+- [typealias BluetoothAirMode](./bluetoothairmode.md)
+- [typealias BluetoothAllowRoleSwitch](./bluetoothallowroleswitch.md)
+- [typealias BluetoothAuthenticationRequirements](./bluetoothauthenticationrequirements.md)
+- [struct BluetoothAuthenticationRequirementsValues](./bluetoothauthenticationrequirementsvalues.md)
+- [typealias BluetoothClassOfDevice](./bluetoothclassofdevice.md)
+- [typealias BluetoothClockOffset](./bluetoothclockoffset.md)
+- [struct BluetoothCompanyIdentifers](./bluetoothcompanyidentifers.md)
+- [typealias BluetoothConnectionHandle](./bluetoothconnectionhandle.md)
+- [typealias BluetoothDeviceClassMajor](./bluetoothdeviceclassmajor.md)
+- [typealias BluetoothDeviceClassMinor](./bluetoothdeviceclassminor.md)
+- [typealias BluetoothDeviceName](./bluetoothdevicename.md)
+- [typealias BluetoothEncryptionEnable](./bluetoothencryptionenable.md)
+- [struct BluetoothFeatureBits](./bluetoothfeaturebits.md)
+- [typealias BluetoothHCIACLDataByteCount](./bluetoothhciacldatabytecount.md)
 
 
 ---

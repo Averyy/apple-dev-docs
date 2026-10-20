@@ -1,6 +1,8 @@
 # Handling Keyboard Events from a Human Interface Device
 
-**Framework**: HIDDriverKit
+**Framework**: HIDDriverKit  
+**Role**: Sample Code  
+**Download**: [HandlingKeyboardEventsFromAHumanInterfaceDevice.zip](https://docs-assets.developer.apple.com/published/40a242cdc60b/HandlingKeyboardEventsFromAHumanInterfaceDevice.zip)
 
 Process keyboard-related data from a human interface device and dispatch events to the system.
 
@@ -13,19 +15,19 @@ Process keyboard-related data from a human interface device and dispatch events 
 
 The human interface device (HID) specification defines how hardware, such as keyboards and mice, communicates information to a host computer. HID hardware comes in a variety of types, and corresponds to an expected type of usage. Each device communicates this usage information, along with data values, to the host computer. A driver processes the data and uses it to dispatch relevant events to the operating system.
 
-The HIDKeyboardDriver sample implements an event service that processes keyboard-related data. The event service is a subclass of [`IOUserHIDEventService`](iouserhideventservice.md), which processes the incoming device data and turns it into a set of easily accessible element objects. The sample iterates over these objects looking for changes to the data. For example, when the user presses or releases a key, the keyboard reports that change to the sample’s event service. The sample forwards the data to the system as part of an event, which the system then dispatches to relevant apps.
+The HIDKeyboardDriver sample implements an event service that processes keyboard-related data. The event service is a subclass of [`IOUserHIDEventService`](./iouserhideventservice.md), which processes the incoming device data and turns it into a set of easily accessible element objects. The sample iterates over these objects looking for changes to the data. For example, when the user presses or releases a key, the keyboard reports that change to the sample’s event service. The sample forwards the data to the system as part of an event, which the system then dispatches to relevant apps.
 
-For details about working with HID hardware, see the HID specification at [`https://www.usb.org/`](https://developer.apple.comhttps://www.usb.org/).
+For details about working with HID hardware, see the HID specification at [https://www.usb.org/](https://www.usb.org/).
 
 ##### Configure the Sample Code Project
 
 You can’t use automatic code signing for this sample app. You must create an explicit App ID and provisioning profile, and your provisioning profile must contain the following set of entitlements:
 
-- [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.family.hid.eventservice)
-- [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.transport.hid)
-- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit)
+- [`com.apple.developer.driverkit.family.hid.eventservice`](../BundleResources/entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
+- [`com.apple.developer.driverkit.transport.hid`](../BundleResources/entitlements/com.apple.developer.driverkit.transport.hid.md)
+- [`com.apple.developer.driverkit`](../BundleResources/entitlements/com.apple.developer.driverkit.md)
 
-Request these entitlements from Apple, and use them to configure a provisioning profile for the sample. See [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development).
+Request these entitlements from Apple, and use them to configure a provisioning profile for the sample. See [Requesting Entitlements for DriverKit Development](../DriverKit/requesting-entitlements-for-driverkit-development.md).
 
 To test this sample with custom keyboard hardware, update the `IOKitPersonalities` dictionary in the driver’s `Info.plist` file. The `HIDKeyboardDriver` personality contains hypothetical values of the kind of keys to include. Change the values of the `VendorID` and `ProductID` keys to match values from your own custom hardware. You can also change the `PrimaryUsagePage` and `PrimaryUsage` keys to support different device usages. Leave the other keys unchanged.
 
@@ -38,21 +40,21 @@ Enabling developer mode allows you to run and debug the HIDKeyboardApp in place,
 
 After you install the DriverKit extension, you can verify its installation by running the `systemextensionsctl list` command in Terminal. You can also use that tool to uninstall your extension or reset the state of your system extensions.
 
-Note: If an error occurs during the installation process, the app writes an appropriate error message to the Xcode console. If you get an unknown error, verify that the  [`OSBundleUsageDescriptionKey`](https://developer.apple.com/documentation/systemextensions/osbundleusagedescriptionkey) key in the driver’s `Info.plist` file has the correct spelling.
+Note: If an error occurs during the installation process, the app writes an appropriate error message to the Xcode console. If you get an unknown error, verify that the  [OSBundleUsageDescription](../SystemExtensions/osbundleusagedescriptionkey.md) key in the driver’s `Info.plist` file has the correct spelling.
 
-For additional information, see [`Debugging and testing system extensions`](https://developer.apple.com/documentation/driverkit/debugging-and-testing-system-extensions).
+For additional information, see [Debugging and Testing System Extensions](../DriverKit/debugging-and-testing-system-extensions.md).
 
 ##### Start Up the Event Service
 
-After matching an event service to a device, the system calls the [`Start`](iouserhideventservice/start.md) method of that service. The [`Start`](iouserhideventservice/start.md) method verifies that the event service is able to run, and puts it into the running state.
+After matching an event service to a device, the system calls the [`Start`](./iouserhideventservice/start.md) method of that service. The [`Start`](./iouserhideventservice/start.md) method verifies that the event service is able to run, and puts it into the running state.
 
 The `Start` method of `HIDKeyboardDriver` performs three tasks:
 
-1. It calls the [`Start`](iouserhideventservice/start.md) method of its parent class.
-2. It calls the [`getElements`](iouserhideventservice/getelements.md) method to create the initial set of [`IOHIDElement`](iohidelement.md) objects.
+1. It calls the [`Start`](./iouserhideventservice/start.md) method of its parent class.
+2. It calls the [`getElements`](./iouserhideventservice/getelements.md) method to create the initial set of [`IOHIDElement`](./iohidelement.md) objects.
 3. It caches the subset of element objects that contain keyboard data.
 
-After each step, the `Start` method checks the result to see if the step was successful. If any step fails, the sample calls the inherited [`Stop`](iouserhideventservice/stop.md) method to stop the event service. For example, it stops the event service if it is unable to retrieve the element objects or if none of the objects contains keyboard data.
+After each step, the `Start` method checks the result to see if the step was successful. If any step fails, the sample calls the inherited [`Stop`](./iouserhideventservice/stop.md) method to stop the event service. For example, it stops the event service if it is unable to retrieve the element objects or if none of the objects contains keyboard data.
 
 ```c++
 kern_return_t
@@ -67,11 +69,11 @@ IMPL(HIDKeyboardDriver, Start)
     }
 ```
 
-Notice that the implementation of the `Start` method includes the [`IMPL`](https://developer.apple.com/documentation/driverkit/impl) macro instead of the normal list of parameters. This macro provides binding between the kernel (which calls the method), and the method itself (which runs in user space). The [`SUPERDISPATCH`](https://developer.apple.com/documentation/driverkit/superdispatch) macro provides a similar binding in the other direction. The sample uses it to call inherited methods that run in the kernel, such as the [`Start`](iouserhideventservice/start.md) method of [`IOUserHIDEventService`](iouserhideventservice.md).
+Notice that the implementation of the `Start` method includes the [`IMPL`](../DriverKit/impl.md) macro instead of the normal list of parameters. This macro provides binding between the kernel (which calls the method), and the method itself (which runs in user space). The [`SUPERDISPATCH`](../DriverKit/superdispatch.md) macro provides a similar binding in the other direction. The sample uses it to call inherited methods that run in the kernel, such as the [`Start`](./iouserhideventservice/start.md) method of [`IOUserHIDEventService`](./iouserhideventservice.md).
 
-##### Identify Keyboard Related Elements
+##### Identify Keyboard-Related Elements
 
-The [`IOUserHIDEventService`](iouserhideventservice.md) class automatically handles incoming reports from the device, turning the raw bytes of the report into a set of [`IOHIDElement`](iohidelement.md) objects. Each element object contains details about a particular piece of data that the device supports. For example, some elements from a keyboard contain the current state of a specific key.
+The [`IOUserHIDEventService`](./iouserhideventservice.md) class automatically handles incoming reports from the device, turning the raw bytes of the report into a set of [`IOHIDElement`](./iohidelement.md) objects. Each element object contains details about a particular piece of data that the device supports. For example, some elements from a keyboard contain the current state of a specific key.
 
 At startup, the sample calls `parseKeyboardElement` for all relevant element objects. That method checks the HID-defined usage value for each element, and saves a reference to all keyboard elements. During subsequent parsing, the event service examines only the objects in its cached collections, instead of all element objects.
 
@@ -108,9 +110,9 @@ exit:
 
 ##### Dispatch a Keyboard Event Using the Element Data
 
-When HID hardware detects changes in its state, it reports the details of those changes to the system. When the system receives a new report from the device, it forwards that report to the relevant drivers. In a custom subclass of [`IOUserHIDEventService`](iouserhideventservice.md), the [`handleReport`](iouserhideventservice/handlereport.md) method receives the report data and processes it.
+When HID hardware detects changes in its state, it reports the details of those changes to the system. When the system receives a new report from the device, it forwards that report to the relevant drivers. In a custom subclass of [`IOUserHIDEventService`](./iouserhideventservice.md), the [`handleReport`](./iouserhideventservice/handlereport.md) method receives the report data and processes it.
 
-The `HIDKeyboardDriver` class overrides [`handleReport`](iouserhideventservice/handlereport.md) and dispatches new reports immediately to its custom `handleKeyboardReport` method. This custom method iterates over the array of cached keyboard elements and uses each element’s timestamp and report ID to determine whether the element contains new data. If it does, the `handleKeyboardReport` method calls the inherited [`dispatchKeyboardEvent`](iohideventservice/dispatchkeyboardevent.md) method to dispatch the event information to the system.
+The `HIDKeyboardDriver` class overrides [`handleReport`](./iouserhideventservice/handlereport.md) and dispatches new reports immediately to its custom `handleKeyboardReport` method. This custom method iterates over the array of cached keyboard elements and uses each element’s timestamp and report ID to determine whether the element contains new data. If it does, the `handleKeyboardReport` method calls the inherited [`dispatchKeyboardEvent`](./iohideventservice/dispatchkeyboardevent.md) method to dispatch the event information to the system.
 
 ```c++
 // Get the previous value of the element.
@@ -133,13 +135,14 @@ os_log(OS_LOG_DEFAULT,
 dispatchKeyboardEvent(timestamp, usagePage, usage, value, 0, true);
 ```
 
-Unlike other inherited methods, the [`IOHIDEventService`](iohideventservice.md) class defines the [`dispatchKeyboardEvent`](iohideventservice/dispatchkeyboardevent.md) method as a local method to the driver. Because it is a local method, the sample doesn’t use the [`SUPERDISPATCH`](https://developer.apple.com/documentation/driverkit/superdispatch) macro to call it.
+Unlike other inherited methods, the [`IOHIDEventService`](./iohideventservice.md) class defines the [`dispatchKeyboardEvent`](./iohideventservice/dispatchkeyboardevent.md) method as a local method to the driver. Because it is a local method, the sample doesn’t use the [`SUPERDISPATCH`](../DriverKit/superdispatch.md) macro to call it.
 
 ## See Also
 
-- [com.apple.developer.driverkit.transport.hid](../bundleresources/entitlements/com.apple.developer.driverkit.transport.hid.md)
+### Essentials
+- [com.apple.developer.driverkit.transport.hid](../BundleResources/entitlements/com.apple.developer.driverkit.transport.hid.md)
   A Boolean value that indicates whether the driver communicates with human interface devices.
-- [Handling Stylus Input from a Human Interface Device](handling-stylus-input-from-a-human-interface-device.md)
+- [Handling Stylus Input from a Human Interface Device](./handling-stylus-input-from-a-human-interface-device.md)
   Process stylus-related input from a human interface device and dispatch events to the system.
 
 

@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: DiskImageKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a layer to this disk image, creating or extending a stack.
 
@@ -16,7 +17,7 @@ consuming func appending(_ layer: consuming DiskImage) throws -> any StackedImag
 
 #### Return Value
 
-A [`StackedImage`](stackedimage.md) containing all layers.
+A [`StackedImage`](../stackedimage.md) containing all layers.
 
 #### Discussion
 
@@ -24,7 +25,7 @@ A [`StackedImage`](stackedimage.md) containing all layers.
 
 This method creates a stacked disk image by appending a layer to either a base image or an existing stacked image. When the image is already a stacked image, the framework adds the new layer on top of the existing stack.
 
-> **Note**: [`IncompatibleStackingError`](incompatiblestackingerror.md) if the appended layer isn’t compatible with the stack.
+> **Throws**: [`IncompatibleStackingError`](../incompatiblestackingerror.md) if the appended layer isn’t compatible with the stack.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ This method creates a stacked disk image by appending a layer to either a base i
 
 ## See Also
 
-- [DiskImage.StackableLayer](diskimage/stackablelayer.md)
+### Appending layers and resizing existing images
+- [DiskImage.StackableLayer](./stackablelayer.md)
   A marker protocol that stackable disk image layer configuration objects conform to.
 
 

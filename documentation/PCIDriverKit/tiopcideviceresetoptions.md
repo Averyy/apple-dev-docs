@@ -1,21 +1,22 @@
 # tIOPCIDeviceResetOptions
 
 **Framework**: PCIDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum tIOPCIDeviceResetOptions : unsigned int { ... } tIOPCIDeviceResetOptions;
 ```
 
 #### Overview
 
-```None
+```
         any attached client drivers. Devices with reset-initiated personality changes should use this option.
 
         This option causes the reset function to initiate the asynchronous termination process, but not block on its completion.
@@ -24,24 +25,25 @@ typedef enum tIOPCIDeviceResetOptions : unsigned int { ... } tIOPCIDeviceResetOp
 ## Topics
 
 ### Enumeration Cases
-- [kIOPCIDeviceResetOptionNone](tiopcideviceresetoptions/kiopcideviceresetoptionnone.md)
-- [kIOPCIDeviceResetOptionTerminate](tiopcideviceresetoptions/kiopcideviceresetoptionterminate.md)
+- [kIOPCIDeviceResetOptionNone](./tiopcideviceresetoptions/kiopcideviceresetoptionnone.md)
+- [kIOPCIDeviceResetOptionTerminate](./tiopcideviceresetoptions/kiopcideviceresetoptionterminate.md)
 
 ## See Also
 
-- [Anonymous](anonymous-enum.md)
-- [tIOPCIAccessOptions](tiopciaccessoptions.md)
-- [tIOPCIDeviceResetTypes](tiopcideviceresettypes.md)
-- [tIOPCILinkSpeed](tiopcilinkspeed.md)
-- [IOPCIBARType](iopcibartype.md)
-- [IOPCILinkSpeed](iopcilinkspeed.md)
-- [IOPCIMemoryRange](iopcimemoryrange.md)
-- [IOPCISaveDeviceStateOptions](iopcisavedevicestateoptions.md)
-- [tIOPCIAccessOptions](tiopciaccessoptions.md)
-- [tIOPCIDeviceResetTypes](tiopcideviceresettypes.md)
-- [tIOPCILinkControlASPMBits](tiopcilinkcontrolaspmbits.md)
-- [tIOPCILinkSpeed](tiopcilinkspeed.md)
-- [Interrupt Types](interrupt-types-enum.md)
+### Enumerations
+- [Anonymous](./anonymous-enum.md)
+- [tIOPCIAccessOptions](./tiopciaccessoptions.md)
+- [tIOPCIDeviceResetTypes](./tiopcideviceresettypes.md)
+- [tIOPCILinkSpeed](./tiopcilinkspeed.md)
+- [IOPCIBARType](./iopcibartype.md)
+- [IOPCILinkSpeed](./iopcilinkspeed.md)
+- [IOPCIMemoryRange](./iopcimemoryrange.md)
+- [IOPCISaveDeviceStateOptions](./iopcisavedevicestateoptions.md)
+- [tIOPCIAccessOptions](./tiopciaccessoptions.md)
+- [tIOPCIDeviceResetTypes](./tiopcideviceresettypes.md)
+- [tIOPCILinkControlASPMBits](./tiopcilinkcontrolaspmbits.md)
+- [tIOPCILinkSpeed](./tiopcilinkspeed.md)
+- [Interrupt Types](./interrupt-types-enum.md)
   Interrupt types that the device supports.
 
 

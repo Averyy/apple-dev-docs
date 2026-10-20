@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the user deactivates a device via a user interface.
@@ -20,11 +21,11 @@ func deactivateDevice(_ device: MediaOutputDevice, session: MediaOutputSession)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Grouping
 
-The device should be removed from its modifiable group. [`updateDevices(_:)`](mediadeviceroutingmanager/updatedevices(_:).md) should be called to update the state of group information.
+The device should be removed from its modifiable group. [`updateDevices(_:)`](../mediadeviceroutingmanager/updatedevices%28_%29.md) should be called to update the state of group information.
 
 ## Parameters
 

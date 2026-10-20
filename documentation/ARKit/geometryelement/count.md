@@ -1,7 +1,8 @@
 # count
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of primitives in the Metal buffer for a geometry element.
 
@@ -16,15 +17,16 @@ var count: Int { get }
 
 ## See Also
 
-- [var buffer: any MTLBuffer](geometryelement/buffer.md)
+### Rendering geometry elements
+- [var buffer: any MTLBuffer](./buffer.md)
   A Metal buffer that contains index data that defines the geometry of an object.
-- [var primitive: GeometryElement.Primitive](geometryelement/primitive-swift.property.md)
+- [var primitive: GeometryElement.Primitive](./primitive-swift.property.md)
   Get the type of the geometry element.
-- [GeometryElement.Primitive](geometryelement/primitive-swift.enum.md)
+- [GeometryElement.Primitive](./primitive-swift.enum.md)
   The kind of primitive, lines or triangles, that a geometry element contains.
-- [var bytesPerIndex: Int](geometryelement/bytesperindex.md)
+- [var bytesPerIndex: Int](./bytesperindex.md)
   The number of bytes that represent an index value.
-- [var description: String](geometryelement/description.md)
+- [var description: String](./description.md)
   A textual representation of this geometry element.
 
 

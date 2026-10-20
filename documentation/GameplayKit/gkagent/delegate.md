@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that prepares for or responds to updates in the agent simulation.
 
@@ -19,9 +20,13 @@ An object that prepares for or responds to updates in the agent simulation.
 weak var delegate: (any GKAgentDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<GKAgentDelegate> delegate;
+```
+
 #### Discussion
 
-When you call the agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method (directly or through an entity or component system), the agent sends messages to its delegate before and after evaluating its goals and updating its position and direction to match. You can use the methods in the [`GKAgentDelegate`](gkagentdelegate.md) protocol to update the visual representation of an agent, or to change the agent’s position and direction based on external influences such as a SpriteKit or SceneKit physics simulation.
+When you call the agent’s [`update(deltaTime:)`](../gkcomponent/update%28deltatime%29.md) method (directly or through an entity or component system), the agent sends messages to its delegate before and after evaluating its goals and updating its position and direction to match. You can use the methods in the [`GKAgentDelegate`](../gkagentdelegate.md) protocol to update the visual representation of an agent, or to change the agent’s position and direction based on external influences such as a SpriteKit or SceneKit physics simulation.
 
 
 ---

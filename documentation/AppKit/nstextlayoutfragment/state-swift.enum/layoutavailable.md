@@ -1,7 +1,8 @@
 # NSTextLayoutFragment.State.layoutAvailable
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Measurements for the text line fragments and layout fragment are available.
 
@@ -14,13 +15,18 @@ Measurements for the text line fragments and layout fragment are available.
 case layoutAvailable
 ```
 
+```c
+NSTextLayoutFragmentStateLayoutAvailable
+```
+
 ## See Also
 
-- [NSTextLayoutFragment.State.calculatedUsageBounds](nstextlayoutfragment/state-swift.enum/calculatedusagebounds.md)
+### Constants that describe layout bounds
+- [NSTextLayoutFragment.State.calculatedUsageBounds](./calculatedusagebounds.md)
   The layout fragment measurements are available without text line fragments.
-- [NSTextLayoutFragment.State.estimatedUsageBounds](nstextlayoutfragment/state-swift.enum/estimatedusagebounds.md)
+- [NSTextLayoutFragment.State.estimatedUsageBounds](./estimatedusagebounds.md)
   The text layout manager hasn’t performed a full layout yet for the region covered by this layout fragment and is returning an estimated bounds.
-- [NSTextLayoutFragment.State.none](nstextlayoutfragment/state-swift.enum/none.md)
+- [NSTextLayoutFragment.State.none](./none.md)
   No layout information is available.
 
 

@@ -1,7 +1,8 @@
 # Modify a subscription image
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Commit the asset upload for a subscription image configured with the v2 API.
 
@@ -10,8 +11,8 @@ Commit the asset upload for a subscription image configured with the v2 API.
 
 ## Mentions
 
-- [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
-- [Working with subscription versions](working-with-subscription-versions.md)
+- [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
+- [Working with subscription versions](./working-with-subscription-versions.md)
 
 ## Endpoint
 
@@ -19,15 +20,34 @@ Commit the asset upload for a subscription image configured with the v2 API.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionImageV2UpdateRequest`
+
+## Responses
+
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `200` OK (`SubscriptionImageV2Response`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a subscription image](post-v2-subscriptionimages.md)
+### Endpoints
+- [Create a subscription image](./post-v2-subscriptionimages.md)
   Reserve a promotion image for an auto-renewable subscription configured with the v2 API and prepare its asset upload.
-- [Read subscription image information](get-v2-subscriptionimages-_id_.md)
+- [Read subscription image information](./get-v2-subscriptionimages-_id_.md)
   Get the metadata for a subscription image configured with the v2 API, including the asset upload state.
-- [Delete a subscription image](delete-v2-subscriptionimages-_id_.md)
+- [Delete a subscription image](./delete-v2-subscriptionimages-_id_.md)
   Delete a subscription image configured with the v2 API.
 
 

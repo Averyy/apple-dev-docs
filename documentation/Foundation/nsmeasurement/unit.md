@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit of measure.
 
@@ -21,9 +22,14 @@ The unit of measure.
 var unit: Unit { get }
 ```
 
+```objc
+@property (copy, readonly) UnitType unit;
+```
+
 ## See Also
 
-- [var doubleValue: Double](nsmeasurement/doublevalue.md)
+### Accessing Unit and Value
+- [var doubleValue: Double](./doublevalue.md)
   The measurement value, represented as a double-precision floating-point number.
 
 

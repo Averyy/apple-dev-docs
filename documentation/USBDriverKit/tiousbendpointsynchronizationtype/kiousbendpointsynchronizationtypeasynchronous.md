@@ -1,22 +1,24 @@
 # kIOUSBEndpointSynchronizationTypeAsynchronous
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointSynchronizationTypeAsynchronous
 ```
 
 ## See Also
 
-- [kIOUSBEndpointSynchronizationTypeNone](tiousbendpointsynchronizationtype/kiousbendpointsynchronizationtypenone.md)
-- [kIOUSBEndpointSynchronizationTypeAdaptive](tiousbendpointsynchronizationtype/kiousbendpointsynchronizationtypeadaptive.md)
-- [kIOUSBEndpointSynchronizationTypeSynchronous](tiousbendpointsynchronizationtype/kiousbendpointsynchronizationtypesynchronous.md)
+### Getting the Synchronization Types
+- [kIOUSBEndpointSynchronizationTypeNone](./kiousbendpointsynchronizationtypenone.md)
+- [kIOUSBEndpointSynchronizationTypeAdaptive](./kiousbendpointsynchronizationtypeadaptive.md)
+- [kIOUSBEndpointSynchronizationTypeSynchronous](./kiousbendpointsynchronizationtypesynchronous.md)
 
 
 ---

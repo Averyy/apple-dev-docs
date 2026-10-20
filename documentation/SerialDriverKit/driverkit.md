@@ -1,21 +1,22 @@
 # driverkit
 
 **Framework**: SerialDriverKit  
-**Kind**: namespace
+**Kind**: namespace  
+**Role**: Namespace
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```cpp
 namespace driverkit;
 ```
 
 ## Topics
 
 ### Namespaces
-- [serial](driverkit/serial.md)
+- [serial](./driverkit/serial.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # hlg(ambientViewingEnvironment:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+
@@ -14,6 +15,10 @@
 
 ```swift
 class func hlg(ambientViewingEnvironment data: Data) -> CAEDRMetadata
+```
+
+```objc
++ (CAEDRMetadata *) HLGMetadataWithAmbientViewingEnvironment:(NSData *) data;
 ```
 
 

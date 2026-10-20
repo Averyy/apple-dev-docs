@@ -1,7 +1,8 @@
 # GCPhysicalInputProfile
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for controller profiles that support physical buttons, thumbsticks, and directional pads.
 
@@ -19,6 +20,10 @@ The base class for controller profiles that support physical buttons, thumbstick
 class GCPhysicalInputProfile
 ```
 
+```objc
+@interface GCPhysicalInputProfile : NSObject
+```
+
 #### Overview
 
 This class provides properties and methods for accessing common elements of controllers, and for creating snapshots of profiles.
@@ -26,97 +31,98 @@ This class provides properties and methods for accessing common elements of cont
 ## Topics
 
 ### Getting the device
-- [var device: (any GCDevice)?](gcphysicalinputprofile/device.md)
+- [var device: (any GCDevice)?](./gcphysicalinputprofile/device.md)
   The physical device that the profile represents.
 ### Getting change information
-- [var lastEventTimestamp: TimeInterval](gcphysicalinputprofile/lasteventtimestamp.md)
+- [var lastEventTimestamp: TimeInterval](./gcphysicalinputprofile/lasteventtimestamp.md)
   The time of the most recent change to an element’s value.
-- [var valueDidChangeHandler: ((GCPhysicalInputProfile, GCControllerElement) -> Void)?](gcphysicalinputprofile/valuedidchangehandler.md)
+- [var valueDidChangeHandler: ((GCPhysicalInputProfile, GCControllerElement) -> Void)?](./gcphysicalinputprofile/valuedidchangehandler.md)
   The block that the profile calls when an element’s value changes.
 ### Accessing elements by name or key
-- [var elements: [String : GCControllerElement]](gcphysicalinputprofile/elements.md)
+- [var elements: [String : GCControllerElement]](./gcphysicalinputprofile/elements.md)
   The elements in the profile as key-value pairs for lookup by name.
-- [var buttons: [String : GCControllerButtonInput]](gcphysicalinputprofile/buttons.md)
+- [var buttons: [String : GCControllerButtonInput]](./gcphysicalinputprofile/buttons.md)
   The buttons in the profile as key-value pairs for lookup by name.
-- [var axes: [String : GCControllerAxisInput]](gcphysicalinputprofile/axes.md)
+- [var axes: [String : GCControllerAxisInput]](./gcphysicalinputprofile/axes.md)
   The axes in the profile as key-value pairs for lookup by name.
-- [var dpads: [String : GCControllerDirectionPad]](gcphysicalinputprofile/dpads.md)
+- [var dpads: [String : GCControllerDirectionPad]](./gcphysicalinputprofile/dpads.md)
   The directional pads in the profile as key-value pairs for lookup by name.
-- [var touchpads: [String : GCControllerTouchpad]](gcphysicalinputprofile/touchpads.md)
+- [var touchpads: [String : GCControllerTouchpad]](./gcphysicalinputprofile/touchpads.md)
   The touchpads in the profile as key-value pairs for lookup by name.
-- [subscript(String) -> GCControllerElement?](gcphysicalinputprofile/subscript(_:).md)
+- [subscript(String) -> GCControllerElement?](./gcphysicalinputprofile/subscript%28_%29.md)
   Returns the element that the key specifies.
 ### Getting elements by type
-- [var allElements: Set<GCControllerElement>](gcphysicalinputprofile/allelements.md)
+- [var allElements: Set<GCControllerElement>](./gcphysicalinputprofile/allelements.md)
   The elements in the profile.
-- [var allButtons: Set<GCControllerButtonInput>](gcphysicalinputprofile/allbuttons.md)
+- [var allButtons: Set<GCControllerButtonInput>](./gcphysicalinputprofile/allbuttons.md)
   The buttons in the profile.
-- [var allAxes: Set<GCControllerAxisInput>](gcphysicalinputprofile/allaxes.md)
+- [var allAxes: Set<GCControllerAxisInput>](./gcphysicalinputprofile/allaxes.md)
   The axes in the profile.
-- [var allDpads: Set<GCControllerDirectionPad>](gcphysicalinputprofile/alldpads.md)
+- [var allDpads: Set<GCControllerDirectionPad>](./gcphysicalinputprofile/alldpads.md)
   The directional pads in the profile.
-- [var allTouchpads: Set<GCControllerTouchpad>](gcphysicalinputprofile/alltouchpads.md)
+- [var allTouchpads: Set<GCControllerTouchpad>](./gcphysicalinputprofile/alltouchpads.md)
   The touchpads in the profile.
 ### Setting snapshot values
-- [func capture() -> Self](gcphysicalinputprofile/capture.md)
+- [func capture() -> Self](./gcphysicalinputprofile/capture%28%29.md)
   Returns a snapshot of the profile with its current element values.
-- [func setStateFromPhysicalInput(GCPhysicalInputProfile)](gcphysicalinputprofile/setstatefromphysicalinput(_:).md)
+- [func setStateFromPhysicalInput(GCPhysicalInputProfile)](./gcphysicalinputprofile/setstatefromphysicalinput%28_%29.md)
   Copies the input values from a specified physical input profile to a snapshot of the profile.
 ### Remapping input elements
-- [var hasRemappedElements: Bool](gcphysicalinputprofile/hasremappedelements.md)
+- [var hasRemappedElements: Bool](./gcphysicalinputprofile/hasremappedelements.md)
   A Boolean value that indicates whether the user remaps elements in this profile.
-- [func mappedElementAlias(forPhysicalInputName: String) -> String](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md)
+- [func mappedElementAlias(forPhysicalInputName: String) -> String](./gcphysicalinputprofile/mappedelementalias%28forphysicalinputname%29.md)
   Returns the name of the input element to which the user remaps the given physical element.
-- [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md)
+- [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](./gcphysicalinputprofile/mappedphysicalinputnames%28forelementalias%29.md)
   Returns the physical input elements to which the user remaps the given input element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [GCExtendedGamepad](gcextendedgamepad.md)
-- [GCGamepad](gcgamepad.md)
-- [GCKeyboardInput](gckeyboardinput.md)
-- [GCMicroGamepad](gcmicrogamepad.md)
-- [GCMouseInput](gcmouseinput.md)
+- [GCExtendedGamepad](./gcextendedgamepad.md)
+- [GCGamepad](./gcgamepad.md)
+- [GCKeyboardInput](./gckeyboardinput.md)
+- [GCMicroGamepad](./gcmicrogamepad.md)
+- [GCMouseInput](./gcmouseinput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var extendedGamepad: GCExtendedGamepad?](gccontroller/extendedgamepad.md)
+### Accessing controller profiles
+- [var extendedGamepad: GCExtendedGamepad?](./gccontroller/extendedgamepad.md)
   The extended gamepad profile.
-- [class GCKeyboardInput](gckeyboardinput.md)
+- [class GCKeyboardInput](./gckeyboardinput.md)
   A controller profile that uses the keyboard as the input device.
-- [class GCMouseInput](gcmouseinput.md)
+- [class GCMouseInput](./gcmouseinput.md)
   A controller profile that tracks input from a mouse.
-- [class GCExtendedGamepad](gcextendedgamepad.md)
+- [class GCExtendedGamepad](./gcextendedgamepad.md)
   A controller profile that supports the extended set of gamepad controls.
-- [class GCDualShockGamepad](gcdualshockgamepad.md)
+- [class GCDualShockGamepad](./gcdualshockgamepad.md)
   A controller profile that supports the DualShock 4 controller.
-- [class GCXboxGamepad](gcxboxgamepad.md)
+- [class GCXboxGamepad](./gcxboxgamepad.md)
   A controller profile that supports the Xbox controller.
-- [class GCDualSenseGamepad](gcdualsensegamepad.md)
+- [class GCDualSenseGamepad](./gcdualsensegamepad.md)
   A controller profile that supported the DualSense controller.
-- [var microGamepad: GCMicroGamepad?](gccontroller/microgamepad.md)
+- [var microGamepad: GCMicroGamepad?](./gccontroller/microgamepad.md)
   The micro gamepad profile.
-- [class GCMicroGamepad](gcmicrogamepad.md)
+- [class GCMicroGamepad](./gcmicrogamepad.md)
   A controller profile that supports the Siri Remote.
-- [class GCDirectionalGamepad](gcdirectionalgamepad.md)
+- [class GCDirectionalGamepad](./gcdirectionalgamepad.md)
   A profile that supports only the directional pad, without motion or rotation.
-- [var motion: GCMotion?](gccontroller/motion.md)
+- [var motion: GCMotion?](./gccontroller/motion.md)
   The motion input profile.
-- [var physicalInputProfile: GCPhysicalInputProfile](gccontroller/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gccontroller/physicalinputprofile.md)
   The physical input profile for the controller.
-- [var gamepad: GCGamepad?](gccontroller/gamepad.md)
+- [var gamepad: GCGamepad?](./gccontroller/gamepad.md)
   The gamepad profile.
 
 

@@ -1,14 +1,15 @@
 # kIOAccelSurfaceModeColorDepth1555
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurfaceModeColorDepth1555 = 0x00000003
 ```
 

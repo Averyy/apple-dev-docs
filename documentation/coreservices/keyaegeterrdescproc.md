@@ -1,9 +1,10 @@
 # keyAEGetErrDescProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Get error descriptor callback function. See [`OSLGetErrDescProcPtr`](oslgeterrdescprocptr.md).
+Get error descriptor callback function. See [`OSLGetErrDescProcPtr`](./oslgeterrdescprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

@@ -1,7 +1,8 @@
 # apply(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the layout of the arranged view to respect the provided layout attributes.
 
@@ -12,6 +13,10 @@ Updates the layout of the arranged view to respect the provided layout attribute
 
 ```swift
 func apply(_ layoutAttributes: NSScrubberLayoutAttributes)
+```
+
+```objc
+- (void) applyLayoutAttributes:(NSScrubberLayoutAttributes *) layoutAttributes;
 ```
 
 ## Parameters

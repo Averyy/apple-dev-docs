@@ -1,9 +1,10 @@
 # init(values:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`HIDDeviceClient.ProvideElementUpdate`](hiddeviceclient/provideelementupdate.md).
+Creates a [`HIDDeviceClient.ProvideElementUpdate`](../provideelementupdate.md).
 
 **Availability**:
 - macOS 15.0+

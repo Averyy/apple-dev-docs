@@ -1,7 +1,8 @@
 # permissions
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The permissions given to this accessor.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Accesses an element and a multidimensional location.
@@ -25,9 +26,16 @@ subscript<C>(scalarAt indices: C) -> Self.Scalar where C : Collection, C.Element
 
 - `indices`: An integer collection that represents a position in the shaped array in which each integer is an index in the corresponding dimension.
 
+## Default Implementations
+
+### MLShapedArrayProtocol Implementations
+- [subscript(scalarAt _: Int...) -> Self.Scalar](./subscript%28scalarat%29-6yvwm.md)
+  The scalar value at the indices.
+
 ## See Also
 
-- [subscript(_:)](mlshapedarrayprotocol/subscript(_:).md)
+### Accessing elements
+- [subscript(_:)](./subscript%28_%29.md)
   A slice of the shaped array for the selected leading axes.
 
 

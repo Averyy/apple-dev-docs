@@ -1,7 +1,8 @@
 # init(controlPoints:creationDate:strokePathID:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stroke path with the specified control points and a unique identifier.
 
@@ -16,6 +17,10 @@ Creates a stroke path with the specified control points and a unique identifier.
 
 ```swift
 convenience init(controlPoints: [PKStrokePoint], creationDate: Date, strokePathID: UUID)
+```
+
+```objc
+- (instancetype) initWithControlPoints:(NSArray<PKStrokePoint *> *) controlPoints creationDate:(NSDate *) creationDate strokePathID:(NSUUID *) strokePathID;
 ```
 
 #### Discussion

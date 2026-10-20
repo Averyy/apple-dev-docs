@@ -1,7 +1,8 @@
 # stageUtilization
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The common name for the counter set that contains hardware utilization measurements from various render stages.
 
@@ -19,28 +20,33 @@ The common name for the counter set that contains hardware utilization measureme
 static let stageUtilization: MTLCommonCounterSet
 ```
 
+```c
+extern MTLCommonCounterSet MTLCommonCounterSetStageUtilization;
+```
+
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 
 The stage utilization counter set contains the following counters:
 
-- [`totalCycles`](mtlcommoncounter/totalcycles.md)
-- [`vertexCycles`](mtlcommoncounter/vertexcycles.md)
-- [`fragmentCycles`](mtlcommoncounter/fragmentcycles.md)
-- [`tessellationCycles`](mtlcommoncounter/tessellationcycles.md)
-- [`postTessellationVertexCycles`](mtlcommoncounter/posttessellationvertexcycles.md)
-- [`renderTargetWriteCycles`](mtlcommoncounter/rendertargetwritecycles.md)
+- [`totalCycles`](../mtlcommoncounter/totalcycles.md)
+- [`vertexCycles`](../mtlcommoncounter/vertexcycles.md)
+- [`fragmentCycles`](../mtlcommoncounter/fragmentcycles.md)
+- [`tessellationCycles`](../mtlcommoncounter/tessellationcycles.md)
+- [`postTessellationVertexCycles`](../mtlcommoncounter/posttessellationvertexcycles.md)
+- [`renderTargetWriteCycles`](../mtlcommoncounter/rendertargetwritecycles.md)
 
-Use this name to check whether a GPU device supports the corresponding counter set (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+Use this name to check whether a GPU device supports the corresponding counter set (see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 
 ## See Also
 
-- [static let timestamp: MTLCommonCounterSet](mtlcommoncounterset/timestamp.md)
+### Common counter set names
+- [static let timestamp: MTLCommonCounterSet](./timestamp.md)
   The common name for the counter set that contains the timestamp counter.
-- [static let statistic: MTLCommonCounterSet](mtlcommoncounterset/statistic.md)
+- [static let statistic: MTLCommonCounterSet](./statistic.md)
   The common name for the counter set that contains GPU workload statistics.
 
 

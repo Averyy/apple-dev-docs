@@ -1,7 +1,8 @@
 # addSubtree(_:weight:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a node tree that’s one of the random-selection options.
 
@@ -17,6 +18,10 @@ Adds a node tree that’s one of the random-selection options.
 
 ```swift
 func addSubtree(_ subtree: PHASESoundEventNodeDefinition, weight: NSNumber)
+```
+
+```objc
+- (void) addSubtree:(PHASESoundEventNodeDefinition *) subtree weight:(NSNumber *) weight;
 ```
 
 ## Parameters

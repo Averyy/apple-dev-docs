@@ -1,7 +1,8 @@
 # index(ofSectionTitled:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the ordered index of the section with the given title, or `nil` if not found.
 
@@ -22,7 +23,7 @@ func index(ofSectionTitled title: SectionTitle) -> Int?
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

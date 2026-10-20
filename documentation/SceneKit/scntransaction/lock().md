@@ -1,23 +1,28 @@
 # lock()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Attempts to acquire a recursive spinlock to ensure the validity of values you retrieve during the transaction.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func lock()
+```
+
+```objc
++ (void) lock;
 ```
 
 #### Discussion
@@ -30,7 +35,7 @@ For example, consider the following operation:
 _node.position = SCNVector3Make(_node.position.x, _node.position.y + 10, _node.position.z);
 ```
 
-The intent of this line is to move a node by ten units. But if another thread modifies the node’s [`position`](scnnode/position.md) property concurrently, the new position value could be unexpected. If your app modifies the scene graph from multiple threads, use a transaction lock to ensure that your modifications take effect as intended.
+The intent of this line is to move a node by ten units. But if another thread modifies the node’s [`position`](../scnnode/position.md) property concurrently, the new position value could be unexpected. If your app modifies the scene graph from multiple threads, use a transaction lock to ensure that your modifications take effect as intended.
 
 ```objc
 [SCNTransaction lock];
@@ -38,11 +43,12 @@ _node.position = SCNVector3Make(_node.position.x, _node.position.y + 10, _node.p
 [SCNTransaction unlock];
 ```
 
-If another thread currently holds a lock on the transaction, calling [`lock()`](scntransaction/lock().md) has no effect.
+If another thread currently holds a lock on the transaction, calling [`lock()`](./lock%28%29.md) has no effect.
 
 ## See Also
 
-- [class func unlock()](scntransaction/unlock.md)
+### Managing Concurrency
+- [class func unlock()](./unlock%28%29.md)
   Relinquishes a previously acquired transaction lock.
 
 

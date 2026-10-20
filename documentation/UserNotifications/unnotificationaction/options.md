@@ -1,7 +1,8 @@
 # options
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behaviors associated with the action.
 
@@ -19,13 +20,26 @@ The behaviors associated with the action.
 var options: UNNotificationActionOptions { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UNNotificationActionOptions options;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) UNNotificationActionOptions options;
+```
+
 #### Discussion
 
 You app should define options for an action when your app requires the corresponding behavior.
 
 ## See Also
 
-- [struct UNNotificationActionOptions](unnotificationactionoptions.md)
+### Getting Options
+- [struct UNNotificationActionOptions](../unnotificationactionoptions.md)
   The behaviors you can apply to an action.
 
 

@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The function to call.
 
@@ -10,15 +11,16 @@ The function to call.
 
 ## Declaration
 
-```swift
+```c
 IOUSBLowLatencyIsocCompletionAction action;
 ```
 
 ## See Also
 
-- [target](iousblowlatencyisoccompletion/1545965-target.md)
+### Getting the Properties
+- [target](./api-1545965-target.md)
   The target to pass to the action function.
-- [parameter](iousblowlatencyisoccompletion/1546029-parameter.md)
+- [parameter](./api-1546029-parameter.md)
   The parameter to pass to the action function.
 
 

@@ -1,7 +1,8 @@
 # boundingBox
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box that describes the spatial location of the object.
 
@@ -21,7 +22,8 @@ let boundingBox: CGRect
 
 ## See Also
 
-- [let label: Label](objectdetectionannotation/annotation/label.md)
+### Getting the properties
+- [let label: Label](./label.md)
   The object label.
 
 

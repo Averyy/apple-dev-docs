@@ -1,7 +1,8 @@
 # AttributedString.MarkdownSourcePosition
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The position of attributed string text in its original Markdown source string.
 
@@ -23,29 +24,29 @@ struct MarkdownSourcePosition
 ## Topics
 
 ### Creating a Markdown Source Position
-- [init(startLine: Int, startColumn: Int, endLine: Int, endColumn: Int)](attributedstring/markdownsourceposition/init(startline:startcolumn:endline:endcolumn:).md)
+- [init(startLine: Int, startColumn: Int, endLine: Int, endColumn: Int)](./markdownsourceposition/init%28startline,startcolumn,endline,endcolumn%29.md)
   Creates a Markdown source position instance from its start and end line and column.
 ### Inspecting Markdown Source Position Properties
-- [let startLine: Int](attributedstring/markdownsourceposition/startline.md)
+- [let startLine: Int](./markdownsourceposition/startline.md)
   The line where the text begins in the Markdown source.
-- [let startColumn: Int](attributedstring/markdownsourceposition/startcolumn.md)
+- [let startColumn: Int](./markdownsourceposition/startcolumn.md)
   The column where the text begins in the Markdown source.
-- [let endLine: Int](attributedstring/markdownsourceposition/endline.md)
+- [let endLine: Int](./markdownsourceposition/endline.md)
   The line where the text ends in the Markdown source.
-- [let endColumn: Int](attributedstring/markdownsourceposition/endcolumn.md)
+- [let endColumn: Int](./markdownsourceposition/endcolumn.md)
   The column where the text ends in the Markdown source.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

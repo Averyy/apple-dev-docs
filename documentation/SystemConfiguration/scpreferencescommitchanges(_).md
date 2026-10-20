@@ -1,7 +1,8 @@
 # SCPreferencesCommitChanges(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Commits changes made to the configuration preferences to persistent storage.
 
@@ -14,15 +15,19 @@ Commits changes made to the configuration preferences to persistent storage.
 func SCPreferencesCommitChanges(_ prefs: SCPreferences) -> Bool
 ```
 
+```c
+Boolean SCPreferencesCommitChanges(SCPreferencesRef prefs);
+```
+
 #### Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
 
 #### Discussion
 
-Implicit calls to the [`SCPreferencesLock(_:_:)`](scpreferenceslock(_:_:).md) and [`SCPreferencesUnlock(_:)`](scpreferencesunlock(_:).md) functions are made if exclusive access has not already been established.
+Implicit calls to the [`SCPreferencesLock(_:_:)`](./scpreferenceslock%28_,_%29.md) and [`SCPreferencesUnlock(_:)`](./scpreferencesunlock%28_%29.md) functions are made if exclusive access has not already been established.
 
-> **Note**:  This function commits changes to persistent storage. To apply the changes to the running system, use the [`SCPreferencesApplyChanges(_:)`](scpreferencesapplychanges(_:).md) function.
+> **Note**:  This function commits changes to persistent storage. To apply the changes to the running system, use the [`SCPreferencesApplyChanges(_:)`](./scpreferencesapplychanges%28_%29.md) function.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ Implicit calls to the [`SCPreferencesLock(_:_:)`](scpreferenceslock(_:_:).md) an
 
 ## See Also
 
-- [func SCPreferencesApplyChanges(SCPreferences) -> Bool](scpreferencesapplychanges(_:).md)
+### Applying and Committing Changes
+- [func SCPreferencesApplyChanges(SCPreferences) -> Bool](./scpreferencesapplychanges%28_%29.md)
   Requests that the currently stored configuration preferences be applied to the active configuration.
-- [func SCPreferencesSynchronize(SCPreferences)](scpreferencessynchronize(_:).md)
+- [func SCPreferencesSynchronize(SCPreferences)](./scpreferencessynchronize%28_%29.md)
   Synchronizes accessed preferences with committed changes.
 
 

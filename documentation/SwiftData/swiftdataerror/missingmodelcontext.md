@@ -1,7 +1,8 @@
 # missingModelContext
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ static let missingModelContext: SwiftDataError
 
 ## See Also
 
-- [static let modelValidationFailure: SwiftDataError](swiftdataerror/modelvalidationfailure.md)
+### Context errors
+- [static let modelValidationFailure: SwiftDataError](./modelvalidationfailure.md)
 
 
 ---

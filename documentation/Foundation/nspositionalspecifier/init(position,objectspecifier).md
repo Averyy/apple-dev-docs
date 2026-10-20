@@ -1,7 +1,8 @@
 # init(position:objectSpecifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a positional specifier with a given position relative to another given specifier.
 
@@ -15,6 +16,10 @@ Initializes a positional specifier with a given position relative to another giv
 init(position: NSPositionalSpecifier.InsertionPosition, objectSpecifier specifier: NSScriptObjectSpecifier)
 ```
 
+```objc
+- (instancetype) initWithPosition:(NSInsertionPosition) position objectSpecifier:(NSScriptObjectSpecifier *) specifier;
+```
+
 #### Return Value
 
 An initialized positional specifier with the position specified by `position` relative to the object specified by `specifier`.
@@ -26,7 +31,8 @@ An initialized positional specifier with the position specified by `position` re
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

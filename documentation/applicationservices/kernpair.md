@@ -1,7 +1,8 @@
 # KernPair
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,15 +13,21 @@
 struct KernPair
 ```
 
+```c
+typedef struct KernPair {
+    ...
+} KernPair;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](kernpair/1463574-init.md)
-- [init(kernFirst: CChar, kernSecond: CChar, kernWidth: Int16)](kernpair/1463010-init.md)
+- [init()](./kernpair/api-1463574-init.md)
+- [init(kernFirst: CChar, kernSecond: CChar, kernWidth: Int16)](./kernpair/api-1463010-init.md)
 ### Instance Properties
-- [var kernFirst: CChar](kernpair/1459592-kernfirst.md)
-- [var kernSecond: CChar](kernpair/1461967-kernsecond.md)
-- [var kernWidth: Int16](kernpair/1463405-kernwidth.md)
+- [var kernFirst: CChar](./kernpair/api-1459592-kernfirst.md)
+- [var kernSecond: CChar](./kernpair/api-1461967-kernsecond.md)
+- [var kernWidth: Int16](./kernpair/api-1463405-kernwidth.md)
 
 
 ---

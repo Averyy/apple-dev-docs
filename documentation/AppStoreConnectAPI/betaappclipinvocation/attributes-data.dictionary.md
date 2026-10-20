@@ -1,7 +1,8 @@
 # BetaAppClipInvocation.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Beta App Clip Invocations resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Beta App Clip Invocations resource.
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocation.Attributes
 ```
 
@@ -20,7 +21,8 @@ object BetaAppClipInvocation.Attributes
 
 ## See Also
 
-- [object BetaAppClipInvocation.Relationships](betaappclipinvocation/relationships-data.dictionary.md)
+### Objects
+- [object BetaAppClipInvocation.Relationships](./relationships-data.dictionary.md)
   The relationships of the Beta App Clip Invocations resource you included in the request and those on which you can operate.
 
 

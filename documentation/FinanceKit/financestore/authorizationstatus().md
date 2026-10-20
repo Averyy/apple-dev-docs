@@ -1,7 +1,8 @@
 # authorizationStatus()
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks the authorization status for the calling application.
 
@@ -17,13 +18,14 @@ func authorizationStatus() async throws -> AuthorizationStatus
 
 #### Return Value
 
-An [`AuthorizationStatus`](authorizationstatus.md) value that indicates the current state of authorization.
+An [`AuthorizationStatus`](../authorizationstatus.md) value that indicates the current state of authorization.
 
 ## See Also
 
-- [func requestAuthorization() async throws -> AuthorizationStatus](financestore/requestauthorization.md)
+### Authorization
+- [func requestAuthorization() async throws -> AuthorizationStatus](./requestauthorization%28%29.md)
   Prompts a person to give FinanceKit authorization to access financial data.
-- [enum AuthorizationStatus](authorizationstatus.md)
+- [enum AuthorizationStatus](../authorizationstatus.md)
 
 
 ---

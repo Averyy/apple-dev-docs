@@ -1,7 +1,8 @@
 # IntentPerson.Identifier.unknown
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unknown identifier, as in the case where the `IntentPerson` simply wraps a `Handle`.
 
@@ -11,7 +12,7 @@ Unknown identifier, as in the case where the `IntentPerson` simply wraps a `Hand
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # addRemainderToTopRight
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,23 +18,28 @@
 static var addRemainderToTopRight: MPSNNPaddingMethod { get }
 ```
 
+```c
+MPSNNPaddingMethodAddRemainderToTopRight
+```
+
 ## See Also
 
-- [static var addRemainderToBottomLeft: MPSNNPaddingMethod](mpsnnpaddingmethod/addremaindertobottomleft.md)
-- [static var addRemainderToBottomRight: MPSNNPaddingMethod](mpsnnpaddingmethod/addremaindertobottomright.md)
-- [static var addRemainderToMask: MPSNNPaddingMethod](mpsnnpaddingmethod/addremaindertomask.md)
-- [static var alignBottomRight: MPSNNPaddingMethod](mpsnnpaddingmethod/alignbottomright.md)
-- [static var alignMask: MPSNNPaddingMethod](mpsnnpaddingmethod/alignmask.md)
-- [static var alignTopLeft: MPSNNPaddingMethod](mpsnnpaddingmethod/aligntopleft.md)
-- [static var align_reserved: MPSNNPaddingMethod](mpsnnpaddingmethod/align_reserved.md)
-- [static var custom: MPSNNPaddingMethod](mpsnnpaddingmethod/custom.md)
-- [static var sizeFull: MPSNNPaddingMethod](mpsnnpaddingmethod/sizefull.md)
-- [static var sizeMask: MPSNNPaddingMethod](mpsnnpaddingmethod/sizemask.md)
-- [static var sizeSame: MPSNNPaddingMethod](mpsnnpaddingmethod/sizesame.md)
-- [static var size_reserved: MPSNNPaddingMethod](mpsnnpaddingmethod/size_reserved.md)
-- [static var excludeEdges: MPSNNPaddingMethod](mpsnnpaddingmethod/excludeedges.md)
-- [static var centered: MPSNNPaddingMethod](mpsnnpaddingmethod/centered.md)
-- [static var customAllowForNodeFusion: MPSNNPaddingMethod](mpsnnpaddingmethod/customallowfornodefusion.md)
+### Type Properties
+- [static var addRemainderToBottomLeft: MPSNNPaddingMethod](./addremaindertobottomleft.md)
+- [static var addRemainderToBottomRight: MPSNNPaddingMethod](./addremaindertobottomright.md)
+- [static var addRemainderToMask: MPSNNPaddingMethod](./addremaindertomask.md)
+- [static var alignBottomRight: MPSNNPaddingMethod](./alignbottomright.md)
+- [static var alignMask: MPSNNPaddingMethod](./alignmask.md)
+- [static var alignTopLeft: MPSNNPaddingMethod](./aligntopleft.md)
+- [static var align_reserved: MPSNNPaddingMethod](./align_reserved.md)
+- [static var custom: MPSNNPaddingMethod](./custom.md)
+- [static var sizeFull: MPSNNPaddingMethod](./sizefull.md)
+- [static var sizeMask: MPSNNPaddingMethod](./sizemask.md)
+- [static var sizeSame: MPSNNPaddingMethod](./sizesame.md)
+- [static var size_reserved: MPSNNPaddingMethod](./size_reserved.md)
+- [static var excludeEdges: MPSNNPaddingMethod](./excludeedges.md)
+- [static var centered: MPSNNPaddingMethod](./centered.md)
+- [static var customAllowForNodeFusion: MPSNNPaddingMethod](./customallowfornodefusion.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Tips.Rule.CompoundOperation.conjunction
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Type used for `and` rules.
 

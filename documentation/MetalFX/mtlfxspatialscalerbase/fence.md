@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional fence that you provide to synchronize your app’s untracked resources.
@@ -18,6 +19,10 @@ An optional fence that you provide to synchronize your app’s untracked resourc
 
 ```swift
 var fence: (any MTLFence)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLFence> fence;
 ```
 
 

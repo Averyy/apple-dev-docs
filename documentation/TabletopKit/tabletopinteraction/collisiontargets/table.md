@@ -1,7 +1,8 @@
 # table
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The table
 

@@ -1,7 +1,8 @@
 # LabeledContentStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a labeled content instance.
 
@@ -24,11 +25,12 @@ A type-erased label of a labeled content instance.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: LabeledContentStyleConfiguration.Label](labeledcontentstyleconfiguration/label-swift.property.md)
+### Configuring the label
+- [let label: LabeledContentStyleConfiguration.Label](./label-swift.property.md)
   The label of the labeled content instance.
 
 

@@ -1,6 +1,8 @@
 # VoIP calling with CallKit
 
-**Framework**: CallKit
+**Framework**: CallKit  
+**Role**: Sample Code  
+**Download**: [MakingAndReceivingVoIPCallsWithCallKit.zip](https://docs-assets.developer.apple.com/published/8e99045a90e2/MakingAndReceivingVoIPCallsWithCallKit.zip)
 
 Use the CallKit framework to integrate native VoIP calling.
 
@@ -13,7 +15,7 @@ Use the CallKit framework to integrate native VoIP calling.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC16 session [`230: Enhancing VoIP Apps with CallKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2016/230/).
+> **Note**: This sample code project is associated with WWDC16 session [230: Enhancing VoIP Apps with CallKit](https://developer.apple.com/videos/play/wwdc2016/230/).
 
 This sample code project must be run on a physical device.
 
@@ -23,17 +25,18 @@ Before you run the sample code project in Xcode, check to be sure your device ha
 
 ## See Also
 
-- [class CXProvider](cxprovider.md)
+### Essentials
+- [class CXProvider](./cxprovider.md)
   An object that represents a telephony provider.
-- [protocol CXProviderDelegate](cxproviderdelegate.md)
+- [protocol CXProviderDelegate](./cxproviderdelegate.md)
   A collection of methods that a telephony provider object calls.
-- [class CXProviderConfiguration](cxproviderconfiguration.md)
+- [class CXProviderConfiguration](./cxproviderconfiguration.md)
   An encapsulation of the configuration of a provider object.
-- [Making and receiving VoIP calls](making-and-receiving-voip-calls.md)
+- [Making and receiving VoIP calls](./making-and-receiving-voip-calls.md)
   Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
-- [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
+- [Preparing your app to be the default calling app](./preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
-- [CallKit updates](../updates/callkit.md)
+- [CallKit updates](../Updates/callkit.md)
   Learn about important changes to CallKit.
 
 

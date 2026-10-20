@@ -1,16 +1,17 @@
 # ParallelTaskCompletion
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to the system that the extension has completed an asynchronous request.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void ParallelTaskCompletion(OSAction *action, SCSIUserParallelResponse response);
 ```
 
@@ -20,16 +21,17 @@ Your driver extension class invokes this method to complete an asynchronous requ
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the asynchronous request that the system specifies in a [`UserProcessParallelTask`](iouserscsiparallelinterfacecontroller/userprocessparalleltask.md).
+- `action`: A pointer to the [`OSAction`](../../DriverKit/osaction.md) object of the asynchronous request that the system specifies in a [`UserProcessParallelTask`](./userprocessparalleltask.md).
 - `response`: The result of the asychronous request.
 
 ## See Also
 
-- [UserProcessParallelTask](iouserscsiparallelinterfacecontroller/userprocessparalleltask.md)
+### Managing tasks
+- [UserProcessParallelTask](./userprocessparalleltask.md)
   Processes a parallel task in response to a call from the framework.
-- [SCSIUserParallelTask](scsiuserparalleltask.md)
+- [SCSIUserParallelTask](../scsiuserparalleltask.md)
   The properties of a parallel task to perform.
-- [SCSIUserParallelResponse](scsiuserparallelresponse.md)
+- [SCSIUserParallelResponse](../scsiuserparallelresponse.md)
   The properties of a completed request.
 
 

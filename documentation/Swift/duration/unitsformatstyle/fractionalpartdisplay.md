@@ -1,7 +1,8 @@
 # fractionalPartDisplay
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy for displaying a duration if it cannot be represented exactly with the allowed units.
 
@@ -22,7 +23,8 @@ var fractionalPartDisplay: Duration.UnitsFormatStyle.FractionalPartDisplayStrate
 
 ## See Also
 
-- [Duration.UnitsFormatStyle.FractionalPartDisplayStrategy](duration/unitsformatstyle/fractionalpartdisplaystrategy.md)
+### Working with fractional values
+- [Duration.UnitsFormatStyle.FractionalPartDisplayStrategy](./fractionalpartdisplaystrategy.md)
   A strategy that determines how to format the fractional part of a duration if the allowed units can’t represent it exactly.
 
 

@@ -1,7 +1,8 @@
 # GCInputDirectionalDpad
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the controller’s primary directional pad element.
 
@@ -19,15 +20,21 @@ The name of the controller’s primary directional pad element.
 let GCInputDirectionalDpad: String
 ```
 
+```c
+extern NSString * const GCInputDirectionalDpad;
+```
+
 #### Discussion
 
 For the second-generation Siri Remote and later, this represents the entire touch surface including the inner and outer rings.
 
 ## See Also
 
-- [var dpad: GCControllerDirectionPad](gcmicrogamepad/dpad.md)
+### Related Documentation
+- [var dpad: GCControllerDirectionPad](./gcmicrogamepad/dpad.md)
   The controller’s directional pad element.
-- [let GCInputDirectionalCardinalDpad: String](gcinputdirectionalcardinaldpad.md)
+### Directional Pad Names
+- [let GCInputDirectionalCardinalDpad: String](./gcinputdirectionalcardinaldpad.md)
   The name of the controller’s optional secondary directional pad element.
 
 

@@ -1,7 +1,8 @@
 # FrameResizePosition.bottomLeading
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bottom leading corner of the frame.
 

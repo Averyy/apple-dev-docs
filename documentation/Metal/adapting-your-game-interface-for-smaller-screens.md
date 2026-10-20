@@ -1,12 +1,13 @@
 # Adapting your game interface for smaller screens
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Make text legible on all devices the player chooses to run your game on.
 
 #### Overview
 
-Great games create engaging, immersive experiences through thoughtful design. Develop a game that’s responsive and easy to use by considering all aspects of design, including display sizes, device orientation, and text legibility. It’s crucial to plan this phase as early as possible and allocate sufficient resources and time within your team to ensure effective adaptation. For platform-specific design guidance, see [`Human Interface Guidelines > Platforms`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/platforms).
+Great games create engaging, immersive experiences through thoughtful design. Develop a game that’s responsive and easy to use by considering all aspects of design, including display sizes, device orientation, and text legibility. It’s crucial to plan this phase as early as possible and allocate sufficient resources and time within your team to ensure effective adaptation. For platform-specific design guidance, see [Human Interface Guidelines > Platforms](https://developer.apple.com/design/human-interface-guidelines/platforms).
 
 Menus and labels — which can display a combination of text, symbols, or interface icons — are ubiquitous throughout a game’s interface, so most players already know how to use them. Utilizing menus and labels consistently in your game can help make your experience feel familiar and easy to learn.
 
@@ -17,9 +18,9 @@ Consider the best practices below to ensure that your in-game menus and UI compo
 - Handle multiple interaction methods.
 - Test on all supported devices.
 
-In addition to menus and labels, take advantage of high-resolution displays, Apple silicon, external game controllers, headphones, and speakers. To learn more about creating games for Apple platforms, see [`Games Pathway`](https://developer.apple.comhttps://developer.apple.com/games/pathway/).
+In addition to menus and labels, take advantage of high-resolution displays, Apple silicon, external game controllers, headphones, and speakers. To learn more about creating games for Apple platforms, see [Games Pathway](https://developer.apple.com/games/pathway/).
 
-##### Render Adaptable Menus and Labels
+##### Render adaptable menus and labels
 
 Apple devices have a variety of screen characteristics, such as sizes, resolutions, and aspect ratios. When people download your game from the App Store, they expect to enjoy it on all their devices, whether they use iPhone SE or iPad Pro. Making the menus and labels in your game look and work great on every screen is important.
 
@@ -29,8 +30,8 @@ The system-provided UI frameworks, such as SwiftUI, UIKit, and AppKit, have the 
 
 Whenever possible, use the menus and labels the UI frameworks provide to implement your app’s UI, and configure them in the following way so they automatically adapt to the platforms:
 
-- Adopt the layout mechanism the UI frameworks provide to let the system position your menus and labels. Avoid using fixed-size UI elements. For more information, see [`Human Interface Guidelines > Layout`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout).
-- Adopt text styles when setting up your menus and labels. Avoid using fixed-size fonts. For more information, see [`Scaling fonts automatically`](https://developer.apple.com/documentation/uikit/scaling-fonts-automatically).
+- Adopt the layout mechanism the UI frameworks provide to let the system position your menus and labels. Avoid using fixed-size UI elements. For more information, see [Human Interface Guidelines > Layout](https://developer.apple.com/design/human-interface-guidelines/layout).
+- Adopt text styles when setting up your menus and labels. Avoid using fixed-size fonts. For more information, see [Scaling fonts automatically](../UIKit/scaling-fonts-automatically.md).
 
 For apps that draw menus and labels with code or implement them using middleware, make the menus and labels adaptable by doing the following:
 
@@ -40,7 +41,7 @@ For apps that draw menus and labels with code or implement them using middleware
 
 When drawing text for your menus and labels:
 
-- Choose an appropriate font and size so the text is comfortably legible. For more information, see [`Human Interface Guidelines > Typography`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/typography).
+- Choose an appropriate font and size so the text is comfortably legible. For more information, see [Human Interface Guidelines > Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 - Update the text size when the user changes the preferred content size.
 - Make the text no smaller than the recommended minimum text size for each platform so it’s readable on all devices.
 
@@ -70,37 +71,38 @@ func sizeOfFontInDrawablePixels(with layer: CAMetalLayer, fontSizeInPoints: CGFl
 }
 ```
 
-##### Handle Multiple Interaction Methods
+##### Handle multiple interaction methods
 
-Consider how your game handles interactions with different input methods, like mouse, keyboard, game controllers, touch, and spatial user interactions. Take advantage of the [`Game Controller`](https://developer.apple.com/documentation/gamecontroller) framework to create a unified approach to handling these interactions for your players. To learn more about receiving controller input by either polling or callbacks, see [`Handling input events`](https://developer.apple.com/documentation/gamecontroller/handling-input-events).
+Consider how your game handles interactions with different input methods, like mouse, keyboard, game controllers, touch, and spatial user interactions. Take advantage of the [Game Controller](../GameController/GameController.md) framework to create a unified approach to handling these interactions for your players. To learn more about receiving controller input by either polling or callbacks, see [Handling input events](../GameController/handling-input-events.md).
 
 Below are considerations for smaller devices:
 
 - Consider menu navigation element size. Ensure that these elements are large enough, especially for touch input, even if the proportions remain unchanged.
 - Use accessibility APIs and developer tools. Deliver high-quality experiences for everyone, including players with disabilities.
 
-Take advantage of built-in accessibility features like Multi-Touch, VoiceOver, Switch Control, Guided Access, Text to Speech, closed-captioned or audio-described video, and more. See [`Accessibility`](https://developer.apple.comhttps://developer.apple.com/accessibility/) for more information about building accessible games on Apple platforms.
+Take advantage of built-in accessibility features like Multi-Touch, VoiceOver, Switch Control, Guided Access, Text to Speech, closed-captioned or audio-described video, and more. See [Accessibility](https://developer.apple.com/accessibility/) for more information about building accessible games on Apple platforms.
 
-##### Test on All Supported Devices
+##### Test on all supported devices
 
 Use a physical device to test the behavior and user experience for your game’s menus on every supported device. Otherwise, use Simulator or an approximated environment on Mac, with proper display resolution, scale, and interaction methods. For more guidance on testing your game in Simulator, see the resources below:
 
-- [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices)
-- doc://com.apple.documentation/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices
-- doc://com.apple.documentation/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator
-- [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub)
+- [Running your app on simulated or physical devices](../Xcode/running-your-app-on-simulated-or-physical-devices.md)
+- https://developer.apple.com/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices
+- https://developer.apple.com/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator
+- [Device Hub](../Xcode/device-hub.md)
 
 If you use middleware in your games, follow their guidelines on testing multiple form factors.
 
 ## See Also
 
-- [Managing your game window for Metal in macOS](managing-your-game-window-for-metal-in-macos.md)
+### Presentation
+- [Managing your game window for Metal in macOS](./managing-your-game-window-for-metal-in-macos.md)
   Set up a window and view for optimally displaying your Metal content.
-- [Managing your Metal app window in iPadOS](managing-your-metal-app-window-in-ipados.md)
+- [Managing your Metal app window in iPadOS](./managing-your-metal-app-window-in-ipados.md)
   Set up a window that handles dynamically resizing your Metal content.
-- [Onscreen presentation](onscreen-presentation.md)
+- [Onscreen presentation](./onscreen-presentation.md)
   Show the output from a GPU’s rendering pass to the user in your app.
-- [HDR content](hdr-content.md)
+- [HDR content](./hdr-content.md)
   Take advantage of high dynamic range to present more vibrant colors in your apps and games.
 
 

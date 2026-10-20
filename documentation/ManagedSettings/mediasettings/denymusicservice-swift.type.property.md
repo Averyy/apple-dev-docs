@@ -1,7 +1,8 @@
 # denyMusicService
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with denying access to Apple Music.
 
@@ -18,11 +19,12 @@ static let denyMusicService: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyMusicService` to access the metadata for [`denyMusicService`](mediasettings/denymusicservice-swift.property.md). The default value is `false`.
+Use `denyMusicService` to access the metadata for [`denyMusicService`](./denymusicservice-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyMusicService: Bool?](mediasettings/denymusicservice-swift.property.md)
+### Denying the Apple Music Service
+- [var denyMusicService: Bool?](./denymusicservice-swift.property.md)
   A Boolean value that indicates whether to prevent the user from accessing Apple Music’s streaming content.
 
 

@@ -1,7 +1,8 @@
 # init(name:subdirectory:locale:bundle:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL resource from the given bundle, name, and subdirectory, optionally specifying a locale.
 
@@ -24,8 +25,8 @@ init(name: String, subdirectory: String? = nil, locale: Locale = .current, bundl
 
 - `name`: The name of the resource in the bundle. This should include both the resource name and its extension, to avoid confusion.
 - `subdirectory`: The subdirectory, if any, of the resource.
-- `locale`: The locale of the resource, as provided by the process that creates the resource. This defaults to [`current`](locale/current.md).
-- `bundle`: The bundle containing the resource. This defaults to [`main`](bundle/main.md).
+- `locale`: The locale of the resource, as provided by the process that creates the resource. This defaults to [`current`](../locale/current.md).
+- `bundle`: The bundle containing the resource. This defaults to [`main`](../bundle/main.md).
 
 
 ---

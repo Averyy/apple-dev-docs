@@ -1,7 +1,8 @@
 # connecting(to:from:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Subscribes to the provided service over Wi-Fi, providing browse results for connecting to the specified paired devices if available.
 
@@ -22,7 +23,7 @@ A new `Action` configuring this operation.
 
 #### Discussion
 
-When subscribing, the `NetworkBrowser` provides a [`WAEndpoint`](waendpoint.md) for each discovered paired device, and the app can then create a `NetworkConnection` object to connect to each. Data path parameters including the [`WAPerformanceMode`](waperformancemode.md) are set when creating the connection, using [`WAParameters`](waparameters.md) written into the [`NWParameters`](https://developer.apple.com/documentation/network/nwparameters) for the `NetworkConnection`.
+When subscribing, the `NetworkBrowser` provides a [`WAEndpoint`](../../waendpoint.md) for each discovered paired device, and the app can then create a `NetworkConnection` object to connect to each. Data path parameters including the [`WAPerformanceMode`](../../waperformancemode.md) are set when creating the connection, using [`WAParameters`](../../waparameters.md) written into the [`NWParameters`](../../../Network/nwparameters.md) for the `NetworkConnection`.
 
 ## Parameters
 

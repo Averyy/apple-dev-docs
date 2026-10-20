@@ -20506,9 +20506,8 @@
       "hash": "8e5f8df536936165d0096d1d319f2c3ab9cac23fffeb98aa436457c5badd92ef"
     },
     "https://developer.apple.com/documentation/security/seccertificatecopypublickey(_:_:)": {
-      "etag": "W/\"9c736e390743fbd173b495fc8ebd5388\"",
       "file_path": "documentation/Security/seccertificatecopypublickey(_,_).md",
-      "hash": "4e2ecd390809c0c49b8770eb46a2d6ffbb5ed4c8ac553183f1d3cf8b604050ed"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:)": {
       "etag": "\"4b0d-65d55d4220c2a-df\"",
@@ -20516,9 +20515,8 @@
       "hash": "38e157ee40f4519fdec7c049a49c1d9b8c47a3c3bc58db93d2d0302e813525b5"
     },
     "https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:_:)": {
-      "etag": "W/\"ed9cb6578174b876ac0fc13dce4328e2\"",
       "file_path": "documentation/Security/seccertificatecopyserialnumber(_,_).md",
-      "hash": "6fbe486d12c043a3dfd788c8def99dee574bb9efffbb62da2a07b49a013a33c2"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/security/seccertificatecopyserialnumberdata(_:_:)": {
       "etag": "\"3c1c-65d55d4a6e9c7-df\"",
@@ -46570,9 +46568,8 @@
       "hash": "8e5f8df536936165d0096d1d319f2c3ab9cac23fffeb98aa436457c5badd92ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopypublickey(_:_:).json": {
-      "etag": "W/\"9c736e390743fbd173b495fc8ebd5388\"",
       "file_path": "documentation/Security/seccertificatecopypublickey(_,_).md",
-      "hash": "4e2ecd390809c0c49b8770eb46a2d6ffbb5ed4c8ac553183f1d3cf8b604050ed"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopyserialnumber(_:).json": {
       "etag": "\"4b0d-65d55d4220c2a-df\"",
@@ -46580,9 +46577,8 @@
       "hash": "38e157ee40f4519fdec7c049a49c1d9b8c47a3c3bc58db93d2d0302e813525b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopyserialnumber(_:_:).json": {
-      "etag": "W/\"ed9cb6578174b876ac0fc13dce4328e2\"",
       "file_path": "documentation/Security/seccertificatecopyserialnumber(_,_).md",
-      "hash": "6fbe486d12c043a3dfd788c8def99dee574bb9efffbb62da2a07b49a013a33c2"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/security/seccertificatecopyserialnumberdata(_:_:).json": {
       "etag": "\"3c1c-65d55d4a6e9c7-df\"",
@@ -52006,6 +52002,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 10407
   }
 }

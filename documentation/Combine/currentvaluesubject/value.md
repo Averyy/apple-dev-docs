@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value wrapped by this subject, published as a new element whenever it changes.
 

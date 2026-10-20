@@ -1,7 +1,8 @@
 # PD_RS232_PARITY_ANY
 
 **Framework**: SerialDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Discard the parity bit.
 
@@ -10,23 +11,24 @@ Discard the parity bit.
 
 ## Declaration
 
-```swift
+```c
 #define PD_RS232_PARITY_ANY
 ```
 
 ## See Also
 
-- [PD_RS232_PARITY_DEFAULT](pd_rs232_parity_default.md)
+### Parity Options
+- [PD_RS232_PARITY_DEFAULT](./pd_rs232_parity_default.md)
   The default parity setting.
-- [PD_RS232_PARITY_NONE](pd_rs232_parity_none.md)
+- [PD_RS232_PARITY_NONE](./pd_rs232_parity_none.md)
   No parity bit.
-- [PD_RS232_PARITY_ODD](pd_rs232_parity_odd.md)
+- [PD_RS232_PARITY_ODD](./pd_rs232_parity_odd.md)
   An odd parity bit.
-- [PD_RS232_PARITY_EVEN](pd_rs232_parity_even.md)
+- [PD_RS232_PARITY_EVEN](./pd_rs232_parity_even.md)
   An even parity bit.
-- [PD_RS232_PARITY_MARK](pd_rs232_parity_mark.md)
+- [PD_RS232_PARITY_MARK](./pd_rs232_parity_mark.md)
   The mark state.
-- [PD_RS232_PARITY_SPACE](pd_rs232_parity_space.md)
+- [PD_RS232_PARITY_SPACE](./pd_rs232_parity_space.md)
   The space state.
 
 

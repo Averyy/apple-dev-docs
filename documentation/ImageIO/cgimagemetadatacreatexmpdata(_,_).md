@@ -1,7 +1,8 @@
 # CGImageMetadataCreateXMPData(_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a data object that contains the metadata object’s contents serialized into the XMP format.
 
@@ -20,9 +21,13 @@ Returns a data object that contains the metadata object’s contents serialized 
 func CGImageMetadataCreateXMPData(_ metadata: CGImageMetadata, _ options: CFDictionary?) -> CFData?
 ```
 
+```c
+extern CFDataRefCGImageMetadataCreateXMPData(CGImageMetadataRef metadata, CFDictionaryRef options);
+```
+
 #### Return Value
 
-A [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object with an XMP representation of the metadata, or `NULL` if an error occurs.
+A [`CFData`](../CoreFoundation/cfdata.md) object with an XMP representation of the metadata, or `NULL` if an error occurs.
 
 #### Discussion
 

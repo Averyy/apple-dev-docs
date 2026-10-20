@@ -1,7 +1,8 @@
 # anonymousGuestPlayer(withIdentifier:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a guest player with the specified identifier.
 
@@ -19,6 +20,10 @@ Creates a guest player with the specified identifier.
 class func anonymousGuestPlayer(withIdentifier guestIdentifier: String) -> Self
 ```
 
+```objc
++ (instancetype) anonymousGuestPlayerWithIdentifier:(NSString *) guestIdentifier;
+```
+
 #### Return Value
 
 A player object that represents the guest.
@@ -33,7 +38,8 @@ You can treat a guest player the same as an initialized player in regard to matc
 
 ## See Also
 
-- [var guestIdentifier: String?](gkplayer/guestidentifier.md)
+### Creating a guest player
+- [var guestIdentifier: String?](./guestidentifier.md)
   A developer-created string that identifies a guest player.
 
 

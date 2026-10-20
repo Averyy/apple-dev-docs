@@ -1,7 +1,8 @@
 # AVMutableMetadataItem
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable metadata item for an audiovisual asset or for one of its tracks.
 
@@ -20,80 +21,85 @@ A mutable metadata item for an audiovisual asset or for one of its tracks.
 class AVMutableMetadataItem
 ```
 
+```objc
+@interface AVMutableMetadataItem : AVMetadataItem
+```
+
 #### Overview
 
-You can initialize a mutable metadata item from an existing [`AVMetadataItem`](avmetadataitem.md) object or with a one or more of the basic properties of a metadata item: a key, a key space, a locale, and a value.
+You can initialize a mutable metadata item from an existing [`AVMetadataItem`](./avmetadataitem.md) object or with a one or more of the basic properties of a metadata item: a key, a key space, a locale, and a value.
 
 ## Topics
 
 ### Identifying metadata items
-- [var identifier: AVMetadataIdentifier?](avmutablemetadataitem/identifier.md)
+- [var identifier: AVMetadataIdentifier?](./avmutablemetadataitem/identifier.md)
   Indicates the identifier of the metadata item.
 ### Accessing keys and key spaces
-- [var key: (any NSCopying & NSObjectProtocol)?](avmutablemetadataitem/key.md)
+- [var key: (any NSCopying & NSObjectProtocol)?](./avmutablemetadataitem/key.md)
   The key for a mutable metadata item.
-- [var keySpace: AVMetadataKeySpace?](avmutablemetadataitem/keyspace.md)
+- [var keySpace: AVMetadataKeySpace?](./avmutablemetadataitem/keyspace.md)
   The key space of the metadata item’s key.
 ### Accessing values
-- [var value: (any NSCopying & NSObjectProtocol)?](avmutablemetadataitem/value.md)
+- [var value: (any NSCopying & NSObjectProtocol)?](./avmutablemetadataitem/value.md)
   The value for the mutable metadata item.
-- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](avmutablemetadataitem/extraattributes.md)
+- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](./avmutablemetadataitem/extraattributes.md)
   A dictionary of additional attributes for a metadata item.
-- [var dataType: String?](avmutablemetadataitem/datatype.md)
+- [var dataType: String?](./avmutablemetadataitem/datatype.md)
   The data type of the metadata item’s value.
-- [var stringValue: String?](avmutablemetadataitem/stringvalue.md)
+- [var stringValue: String?](./avmutablemetadataitem/stringvalue.md)
   The value of the metadata item as a string.
-- [var numberValue: NSNumber?](avmutablemetadataitem/numbervalue.md)
+- [var numberValue: NSNumber?](./avmutablemetadataitem/numbervalue.md)
   The value of the metadata item as a number.
-- [var dateValue: Date?](avmutablemetadataitem/datevalue.md)
+- [var dateValue: Date?](./avmutablemetadataitem/datevalue.md)
   The value of the metadata item as a date.
-- [var dataValue: Data?](avmutablemetadataitem/datavalue.md)
+- [var dataValue: Data?](./avmutablemetadataitem/datavalue.md)
   The value of the metadata item as a data value.
 ### Accessing timing
-- [var time: CMTime](avmutablemetadataitem/time.md)
+- [var time: CMTime](./avmutablemetadataitem/time.md)
   The timestamp for a mutable metadata item.
-- [var startDate: Date?](avmutablemetadataitem/startdate.md)
+- [var startDate: Date?](./avmutablemetadataitem/startdate.md)
   The start date of the timed metadata.
-- [var duration: CMTime](avmutablemetadataitem/duration.md)
+- [var duration: CMTime](./avmutablemetadataitem/duration.md)
   The duration of a mutable metadata item.
 ### Accessing language support
-- [var locale: Locale?](avmutablemetadataitem/locale.md)
+- [var locale: Locale?](./avmutablemetadataitem/locale.md)
   The locale for a mutable metadata item.
-- [var extendedLanguageTag: String?](avmutablemetadataitem/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./avmutablemetadataitem/extendedlanguagetag.md)
   The IETF BCP 47 (RFC 4646) language identifier of the metadata item.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataItem](avmetadataitem.md)
+- [AVMetadataItem](./avmetadataitem.md)
 ### Conforms To
-- [AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Retrieving media metadata](retrieving-media-metadata.md)
+### Metadata
+- [Retrieving media metadata](./retrieving-media-metadata.md)
   Load descriptive metadata for media assets and their tracks.
-- [class AVMetadataItem](avmetadataitem.md)
+- [class AVMetadataItem](./avmetadataitem.md)
   A metadata item for an audiovisual asset or one of its tracks.
-- [struct AVMetadataIdentifier](avmetadataidentifier.md)
+- [struct AVMetadataIdentifier](./avmetadataidentifier.md)
   A structure that defines identifiers for metadata formats.
-- [struct AVMetadataKey](avmetadatakey.md)
+- [struct AVMetadataKey](./avmetadatakey.md)
   A structure that defines a metadata key.
-- [struct AVMetadataKeySpace](avmetadatakeyspace.md)
+- [struct AVMetadataKeySpace](./avmetadatakeyspace.md)
   A structure that defines a metadata key space.
-- [struct AVMetadataExtraAttributeKey](avmetadataextraattributekey.md)
+- [struct AVMetadataExtraAttributeKey](./avmetadataextraattributekey.md)
   A structure that defines keys for extra metadata attributes.
-- [struct AVMetadataFormat](avmetadataformat.md)
+- [struct AVMetadataFormat](./avmetadataformat.md)
   A structure that defines metadata formats.
-- [class AVMetadataItemFilter](avmetadataitemfilter.md)
+- [class AVMetadataItemFilter](./avmetadataitemfilter.md)
   An object that filters selected information from a metadata item.
 
 

@@ -1,7 +1,8 @@
 # latitude
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 26.0+
@@ -14,8 +15,9 @@ var latitude: Angle2D { get }
 
 ## See Also
 
-- [var longitude: Angle2D](tossablerepresentation/sphereface/longitude.md)
-- [var restingOrientation: Rotation3D](tossablerepresentation/sphereface/restingorientation.md)
+### Getting the sphere face properties
+- [var longitude: Angle2D](./longitude.md)
+- [var restingOrientation: Rotation3D](./restingorientation.md)
   Provides the resting orientation for when this face is in contact with the table.
 
 

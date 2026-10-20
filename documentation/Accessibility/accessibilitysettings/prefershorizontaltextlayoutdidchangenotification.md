@@ -1,7 +1,8 @@
 # prefersHorizontalTextLayoutDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the system setting to prefer horizontal text for languages that support both vertical and horizontal text layout changes.
 
@@ -22,9 +23,10 @@ static var prefersHorizontalTextLayoutDidChangeNotification: Notification.Name {
 
 ## See Also
 
-- [Horizontal text](horizontal-text.md)
+### Customizing vertical text layout
+- [Horizontal text](../horizontal-text.md)
   Lay out vertical text horizontally in your app when people turn on the Prefer Horizontal Text setting.
-- [static var prefersHorizontalTextLayout: Bool](accessibilitysettings/prefershorizontaltextlayout.md)
+- [static var prefersHorizontalTextLayout: Bool](./prefershorizontaltextlayout.md)
   A Boolean value that indicates whether the system setting to prefer horizontal text for languages that support both vertical and horizontal text layout is on.
 
 

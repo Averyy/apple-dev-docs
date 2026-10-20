@@ -1,7 +1,8 @@
 # AppSchema.ReaderEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the reader domain.
 
@@ -21,19 +22,20 @@ protocol ReaderEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var documentKind: some AppSchemaEnum](appschema/readerenum/documentkind.md)
+- [var documentKind: some AppSchemaEnum](./readerenum/documentkind.md)
   An enum schema for a document kind parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var documentKind: some AppSchemaEnum](appschema/readerenum/documentkind.md)
+### Types for static parameters
+- [var documentKind: some AppSchemaEnum](./readerenum/documentkind.md)
   An enum schema for a document kind parameter.
 
 

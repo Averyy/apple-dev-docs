@@ -2,17 +2,22 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when a web view’s host window is about to change.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func viewWillMove(toHostWindow hostWindow: NSWindow!)
+```
+
+```objc
+- (void) viewWillMoveToHostWindow:(NSWindow *) hostWindow;
 ```
 
 ## Parameters
@@ -21,9 +26,11 @@ func viewWillMove(toHostWindow hostWindow: NSWindow!)
 
 ## See Also
 
-- [var hostWindow: NSWindow!](webview-swift.class/hostwindow.md)
+### Related Documentation
+- [var hostWindow: NSWindow!](../webview-swift.class/hostwindow.md)
   The receiver’s host window.
-- [func viewDidMoveToHostWindow()](webdocumentview/viewdidmovetohostwindow.md)
+### Attaching to a window
+- [func viewDidMoveToHostWindow()](./viewdidmovetohostwindow%28%29.md)
   Invoked when a web view’s host window is set.
 
 

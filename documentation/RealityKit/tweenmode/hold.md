@@ -1,7 +1,8 @@
 # TweenMode.hold
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates a keyframe changes to the next abruptly.
 
@@ -11,7 +12,7 @@ An option that indicates a keyframe changes to the next abruptly.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ case hold
 
 ## See Also
 
-- [TweenMode.linear](tweenmode/linear.md)
+### Choosing a mode between frames
+- [TweenMode.linear](./linear.md)
   An option that indicates that a keyframe changes to the next gradually.
 
 

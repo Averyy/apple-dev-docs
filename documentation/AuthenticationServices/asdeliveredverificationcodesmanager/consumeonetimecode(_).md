@@ -1,7 +1,8 @@
 # consumeOneTimeCode(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Mark a one-time code as “consumed” by the current process.
 
@@ -24,7 +25,7 @@ A code should only be marked as consumed if it was submitted to a service for th
 
 Consuming a code will mark a code’s containing message as read in the Messages and Mail apps. Depending on the user’s preference, this may also delete the code’s containing message.
 
-> **Note**: `ASDeliveredVerificationCodesManager.VerificationError` if the system failed to accept the update.
+> **Throws**: `ASDeliveredVerificationCodesManager.VerificationError` if the system failed to accept the update.
 
 > **Note**: Only consume codes that you submit to a service. You should make a best effort to ensure it is accepted before calling this.
 

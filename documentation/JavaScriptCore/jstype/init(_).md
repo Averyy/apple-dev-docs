@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a JavaScript type.
 
@@ -21,9 +22,10 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](jstype/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a JavaScript type with the specified raw value.
-- [var rawValue: UInt32](jstype/rawvalue.md)
+- [var rawValue: UInt32](./rawvalue.md)
   The raw value that represents the JavaScript type.
 
 

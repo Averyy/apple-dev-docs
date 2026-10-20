@@ -1,7 +1,8 @@
 # GKGraphNode3D
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A node in a navigation graph, associated with a point in continuous 3D space.
 
@@ -19,52 +20,57 @@ A node in a navigation graph, associated with a point in continuous 3D space.
 class GKGraphNode3D
 ```
 
+```objc
+@interface GKGraphNode3D : GKGraphNode
+```
+
 #### Overview
 
-Together, a network of nodes form a graph that describes the navigability of a game world. Use graph nodes with a [`GKGraph`](gkgraph.md) object to perform actions that relate to the network of nodes as a whole, such as pathfinding to determine routes through the network.
+Together, a network of nodes form a graph that describes the navigability of a game world. Use graph nodes with a [`GKGraph`](./gkgraph.md) object to perform actions that relate to the network of nodes as a whole, such as pathfinding to determine routes through the network.
 
-To learn more about graphs and pathfinding, see [`Pathfinding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+To learn more about graphs and pathfinding, see [Pathfinding](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Creating a Graph Node
-- [init(point: vector_float3)](gkgraphnode3d/init(point:).md)
+- [init(point: vector_float3)](./gkgraphnode3d/init%28point%29.md)
   Initializes a graph node with the specified point.
-- [class func node(withPoint: vector_float3) -> Self](gkgraphnode3d/node(withpoint:).md)
+- [class func node(withPoint: vector_float3) -> Self](./gkgraphnode3d/node%28withpoint%29.md)
   Creates a graph node with the specified point.
 ### Inspecting a Node’s Position
-- [var position: vector_float3](gkgraphnode3d/position.md)
+- [var position: vector_float3](./gkgraphnode3d/position.md)
   The position of the node in continuous 2D space.
 
 ## Relationships
 
 ### Inherits From
-- [GKGraphNode](gkgraphnode.md)
+- [GKGraphNode](./gkgraphnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class GKGraph](gkgraph.md)
+### Pathfinding
+- [class GKGraph](./gkgraph.md)
   A collection of nodes that describes the navigability of a game world and provides *pathfinding* methods to search for routes through that space.
-- [class GKObstacleGraph](gkobstaclegraph.md)
+- [class GKObstacleGraph](./gkobstaclegraph.md)
   A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles.
-- [class GKMeshGraph](gkmeshgraph.md)
+- [class GKMeshGraph](./gkmeshgraph.md)
   A navigation graph for 2D game worlds that creates a space-filling network for smooth pathfinding around obstacles.
-- [class GKGridGraph](gkgridgraph.md)
+- [class GKGridGraph](./gkgridgraph.md)
   A navigation graph for 2D game worlds where movement is constrained to an integer grid.
-- [class GKGraphNode](gkgraphnode.md)
+- [class GKGraphNode](./gkgraphnode.md)
   A single node in a navigation graph for use in pathfinding.
-- [class GKGraphNode2D](gkgraphnode2d.md)
+- [class GKGraphNode2D](./gkgraphnode2d.md)
   A node in a navigation graph, associated with a point in continuous 2D space.
-- [class GKGridGraphNode](gkgridgraphnode.md)
+- [class GKGridGraphNode](./gkgridgraphnode.md)
   A node in a navigation graph, associated with a position on a discrete two-dimensional grid.
 
 

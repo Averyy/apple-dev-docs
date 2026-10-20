@@ -1,7 +1,8 @@
 # init(track:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that supplies sample references.
 
@@ -17,6 +18,10 @@ Creates an object that supplies sample references.
 
 ```swift
 init(track: AVAssetTrack)
+```
+
+```objc
+- (instancetype) initWithTrack:(AVAssetTrack *) track;
 ```
 
 ## Parameters

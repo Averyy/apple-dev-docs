@@ -1,7 +1,8 @@
 # UITitlebarSeparatorStyle.shadow
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style indicating that the title bar separator is a shadow.
 
@@ -14,13 +15,18 @@ A style indicating that the title bar separator is a shadow.
 case shadow
 ```
 
+```c
+UITitlebarSeparatorStyleShadow
+```
+
 ## See Also
 
-- [UITitlebarSeparatorStyle.automatic](uititlebarseparatorstyle/automatic.md)
+### Styles
+- [UITitlebarSeparatorStyle.automatic](./automatic.md)
   A style indicating that the system determines the type of separator.
-- [UITitlebarSeparatorStyle.line](uititlebarseparatorstyle/line.md)
+- [UITitlebarSeparatorStyle.line](./line.md)
   A style indicating that the title bar separator is a line.
-- [UITitlebarSeparatorStyle.none](uititlebarseparatorstyle/none.md)
+- [UITitlebarSeparatorStyle.none](./none.md)
   A style indicating that there’s no title bar separator.
 
 

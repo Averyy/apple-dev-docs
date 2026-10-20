@@ -1,7 +1,8 @@
 # sink
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An audio stream sink that defines how the host handles audio data produced by the guest.
 
@@ -14,15 +15,20 @@ An audio stream sink that defines how the host handles audio data produced by th
 var sink: VZAudioOutputStreamSink? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZAudioOutputStreamSink * sink;
+```
+
 #### Discussion
 
 Not specifying a sink results in a default handler that suppresses the audio. The default is `nil`.
 
 ## See Also
 
-- [class VZAudioOutputStreamSink](vzaudiooutputstreamsink.md)
+### Related Documentation
+- [class VZAudioOutputStreamSink](../vzaudiooutputstreamsink.md)
   The base class for an audio output stream sink.
-- [class VZHostAudioOutputStreamSink](vzhostaudiooutputstreamsink.md)
+- [class VZHostAudioOutputStreamSink](../vzhostaudiooutputstreamsink.md)
   Host audio output stream sink plays audio to the host system’s default output device.
 
 

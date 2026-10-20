@@ -1,7 +1,8 @@
 # SigningIdentifier
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A constraint that tests whether the provided signing identifier matches the signature attached to the code.
 
@@ -22,59 +23,60 @@ struct SigningIdentifier
 
 #### Overview
 
-The signing identifier is referred to as simply the “Identifier” in codesign –dump output. The signing identifier is matched byte for byte (i.e. no unicode normalization occurs). Signing identifiers can be claimed by multiple signers. To check a signing identifier securely you should also require a [`ValidationCategory`](validationcategory.md) constraint and for non-Apple code a [`TeamIdentifier`](teamidentifier.md) constraint.
+The signing identifier is referred to as simply the “Identifier” in codesign –dump output. The signing identifier is matched byte for byte (i.e. no unicode normalization occurs). Signing identifiers can be claimed by multiple signers. To check a signing identifier securely you should also require a [`ValidationCategory`](./validationcategory.md) constraint and for non-Apple code a [`TeamIdentifier`](./teamidentifier.md) constraint.
 
 ## Topics
 
 ### Initializers
-- [init(String)](signingidentifier/init(_:).md)
+- [init(String)](./signingidentifier/init%28_%29.md)
   Matches if the provided string matches the signing identifier of the code.
-- [init(from: any Decoder) throws](signingidentifier/init(from:).md)
+- [init(from: any Decoder) throws](./signingidentifier/init%28from%29.md)
   Create a new instance by decoding from the given decoder
 ### Instance Methods
-- [func encode(to: any Encoder) throws](signingidentifier/encode(to:).md)
+- [func encode(to: any Encoder) throws](./signingidentifier/encode%28to%29.md)
   Encodes this value into the given encoder
 ### Type Aliases
-- [SigningIdentifier.DataType](signingidentifier/datatype.md)
+- [SigningIdentifier.DataType](./signingidentifier/datatype.md)
   The basic input data type for this constraint: String.
-- [SigningIdentifier.OutType](signingidentifier/outtype.md)
-  The type of this constraint: [`SigningIdentifier`](signingidentifier.md).
+- [SigningIdentifier.OutType](./signingidentifier/outtype.md)
+  The type of this constraint: [`SigningIdentifier`](./signingidentifier.md).
 ### Type Methods
-- [static func `in`(SigningIdentifier.DataType...) -> SigningIdentifier.OutType](signingidentifier/in(_:)-57h8m.md)
+- [static func `in`(SigningIdentifier.DataType...) -> SigningIdentifier.OutType](./signingidentifier/in%28_%29-57h8m.md)
   Matches if the signing identifier of the code matches any of the provided signing identifiers.
-- [static func `in`([SigningIdentifier.DataType]) -> SigningIdentifier.OutType](signingidentifier/in(_:)-57qq8.md)
+- [static func `in`([SigningIdentifier.DataType]) -> SigningIdentifier.OutType](./signingidentifier/in%28_%29-57qq8.md)
   Matches if the signing identifier of the code matches any of the provided signing identifiers.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [LaunchConstraint](launchconstraint.md)
-- [OnDiskConstraint](ondiskconstraint.md)
-- [ProcessConstraint](processconstraint.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [LaunchConstraint](./launchconstraint.md)
+- [OnDiskConstraint](./ondiskconstraint.md)
+- [ProcessConstraint](./processconstraint.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CodeDirectoryHash](codedirectoryhash.md)
+### Testing properties of executable code
+- [struct CodeDirectoryHash](./codedirectoryhash.md)
   A constraint that matches the hash of a code directory of a code file or of a running or launching process.
-- [class EntitlementsQuery](entitlementsquery.md)
+- [class EntitlementsQuery](./entitlementsquery.md)
   A constraint that tests values in the entitlements dictionary associated with a process or code file.
-- [struct InfoPlistHash](infoplisthash.md)
+- [struct InfoPlistHash](./infoplisthash.md)
   A constraint that tests the specified hash against the Information property list hash stored in the code signature of the process or code file.
-- [struct IsInitProcess](isinitprocess.md)
+- [struct IsInitProcess](./isinitprocess.md)
   A constraint that tests whether a process is the operating system’s initial process.
-- [struct IsMainBinary](ismainbinary.md)
+- [struct IsMainBinary](./ismainbinary.md)
   A constraint that tests whether a code file is a main binary.
-- [struct IsSIPProtected](issipprotected.md)
+- [struct IsSIPProtected](./issipprotected.md)
   A constraint that tests whether a code file or process is on a volume protected by System Integrity Protection (SIP).
-- [struct PlatformType](platformtype.md)
+- [struct PlatformType](./platformtype.md)
   A constraint that tests whether a code file or running process targets a given platform.
-- [struct TeamIdentifier](teamidentifier.md)
+- [struct TeamIdentifier](./teamidentifier.md)
   A constraint that tests whether the provided team identifier matches the team identified in the code signature.
-- [struct ValidationCategory](validationcategory.md)
+- [struct ValidationCategory](./validationcategory.md)
   A constraint that tests whether a code file or running process is signed in a way that conforms to the specified validation category.
 
 

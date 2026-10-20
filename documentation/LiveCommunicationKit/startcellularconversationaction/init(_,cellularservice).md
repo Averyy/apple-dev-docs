@@ -1,7 +1,8 @@
 # init(_:cellularService:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that initiates a cellular network conversation.
 
@@ -27,7 +28,8 @@ If you don’t provide an cellular service, the system chooses a service for the
 
 ## See Also
 
-- [init(ConversationHistoryManager.RecentConversation)](startcellularconversationaction/init(_:).md)
+### Request creation
+- [init(ConversationHistoryManager.RecentConversation)](./init%28_%29.md)
   Creates an action that initiates a cellular conversation using information from a recent conversation.
 
 

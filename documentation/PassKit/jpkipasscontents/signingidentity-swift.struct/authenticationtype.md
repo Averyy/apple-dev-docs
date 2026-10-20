@@ -1,7 +1,8 @@
 # JPKIPassContents.SigningIdentity.AuthenticationType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the valid user authentication request options for the signing identity.
 
@@ -18,14 +19,15 @@ enum AuthenticationType
 ## Topics
 
 ### Case for authentication
-- [JPKIPassContents.SigningIdentity.AuthenticationType.password(_:)](jpkipasscontents/signingidentity-swift.struct/authenticationtype/password(_:).md)
+- [JPKIPassContents.SigningIdentity.AuthenticationType.password(_:)](./authenticationtype/password%28_%29.md)
   Reads the signing identity using the password.
 
 ## See Also
 
-- [let signingIdentity: JPKIPassContents.SigningIdentity?](jpkipasscontents/signingidentity-swift.property.md)
+### Signing identity authentication
+- [let signingIdentity: JPKIPassContents.SigningIdentity?](../signingidentity-swift.property.md)
   Allows access to the signing identity, if present in the JPKI applet.
-- [func changePassword(from: String, to: String) async throws](jpkipasscontents/signingidentity-swift.struct/changepassword(from:to:).md)
+- [func changePassword(from: String, to: String) async throws](./changepassword%28from,to%29.md)
   A function that allows you to change the password associated with the signing identity.
 
 

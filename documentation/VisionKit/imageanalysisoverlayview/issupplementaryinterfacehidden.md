@@ -1,7 +1,8 @@
 # isSupplementaryInterfaceHidden
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view hides supplementary interface objects.
 
@@ -17,17 +18,18 @@ final var isSupplementaryInterfaceHidden: Bool { get set }
 
 #### Discussion
 
-Supplementary interface objects include the Live Text button and the interface for Quick Actions, depending on the item type. Setting this property invokes the [`setSupplementaryInterfaceHidden(_:animated:)`](imageanalysisoverlayview/setsupplementaryinterfacehidden(_:animated:).md) method, passing this property value and `true` for the animated parameter.
+Supplementary interface objects include the Live Text button and the interface for Quick Actions, depending on the item type. Setting this property invokes the [`setSupplementaryInterfaceHidden(_:animated:)`](./setsupplementaryinterfacehidden%28_,animated%29.md) method, passing this property value and `true` for the animated parameter.
 
 ## See Also
 
-- [var liveTextButtonVisible: Bool](imageanalysisoverlayview/livetextbuttonvisible.md)
+### Querying the interface state
+- [var liveTextButtonVisible: Bool](./livetextbuttonvisible.md)
   A Boolean value that indicates whether the Live Text button appears.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisoverlayview/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [func hasSupplementaryInterface(at: CGPoint) -> Bool](imageanalysisoverlayview/hassupplementaryinterface(at:).md)
+- [func hasSupplementaryInterface(at: CGPoint) -> Bool](./hassupplementaryinterface%28at%29.md)
   Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
-- [var selectableItemsHighlighted: Bool](imageanalysisoverlayview/selectableitemshighlighted.md)
+- [var selectableItemsHighlighted: Bool](./selectableitemshighlighted.md)
   A Boolean value that indicates whether the overlay view highlights actionable text or data that the analyzer detects in text.
 
 

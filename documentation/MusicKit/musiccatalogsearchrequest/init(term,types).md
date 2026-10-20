@@ -1,7 +1,8 @@
 # init(term:types:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a catalog search request for a specified search term and list of catalog searchable types.
 

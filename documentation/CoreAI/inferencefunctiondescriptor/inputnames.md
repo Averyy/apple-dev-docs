@@ -1,7 +1,8 @@
 # inputNames
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the function’s inputs.
 
@@ -20,9 +21,10 @@ var inputNames: [String] { get }
 
 ## See Also
 
-- [var inputCount: Int](inferencefunctiondescriptor/inputcount.md)
+### Describing inputs
+- [var inputCount: Int](./inputcount.md)
   The number of inputs the function accepts.
-- [func inputDescriptor(of: String) -> InferenceValue.Descriptor?](inferencefunctiondescriptor/inputdescriptor(of:).md)
+- [func inputDescriptor(of: String) -> InferenceValue.Descriptor?](./inputdescriptor%28of%29.md)
   Returns the descriptor for the specified input.
 
 

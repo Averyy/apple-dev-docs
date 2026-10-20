@@ -1,7 +1,8 @@
 # reportAllAcceptedPublicKeyCredentials(forRelyingParty:userHandle:acceptedCredentialIDs:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receives a report from the system that a relying party sent a snapshot of all accepted credentials for an account.
 
@@ -18,9 +19,13 @@ Receives a report from the system that a relying party sent a snapshot of all ac
 func reportAllAcceptedPublicKeyCredentials(forRelyingParty relyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])
 ```
 
+```objc
+- (void) reportAllAcceptedPublicKeyCredentialsForRelyingParty:(NSString *) relyingParty userHandle:(NSData *) userHandle acceptedCredentialIDs:(NSArray<NSData *> *) acceptedCredentialIDs;
+```
+
 #### Discussion
 
-The system calls this method when a relying party sends a list of accepted credentials by calling [`reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier:userHandle:acceptedCredentialIDs:)`](ascredentialupdater/reportallacceptedpublickeycredentials(relyingpartyidentifier:userhandle:acceptedcredentialids:).md). Your manager can hide or remove any credential that’s absent from the `acceptedCredentialIDs` array.
+The system calls this method when a relying party sends a list of accepted credentials by calling [`reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier:userHandle:acceptedCredentialIDs:)`](../ascredentialupdater/reportallacceptedpublickeycredentials%28relyingpartyidentifier,userhandle,acceptedcredentialids%29.md). Your manager can hide or remove any credential that’s absent from the `acceptedCredentialIDs` array.
 
 > ❗ **Important**: Perform any updates in the background and don’t show a blocking UI or any error.
 
@@ -42,11 +47,12 @@ Info.plist
 
 ## See Also
 
-- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](ascredentialproviderviewcontroller/reportpublickeycredentialupdate(forrelyingparty:userhandle:newname:).md)
+### Receiving credential updates
+- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](./reportpublickeycredentialupdate%28forrelyingparty,userhandle,newname%29.md)
   Receives a report from the system that a relying party indicated that a passkey’s user name updated.
-- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](ascredentialproviderviewcontroller/reportunknownpublickeycredential(forrelyingparty:credentialid:).md)
+- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](./reportunknownpublickeycredential%28forrelyingparty,credentialid%29.md)
   Receives a report from the system that a relying party indicated a passkey credential is invalid.
-- [func reportUnusedPasswordCredential(forDomain: String, userName: String)](ascredentialproviderviewcontroller/reportunusedpasswordcredential(fordomain:username:).md)
+- [func reportUnusedPasswordCredential(forDomain: String, userName: String)](./reportunusedpasswordcredential%28fordomain,username%29.md)
   Receives a report from the system that a relying party indicatd that a password credential isn’t needed anymore for a given user name.
 
 

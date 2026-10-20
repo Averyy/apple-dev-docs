@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a string to the attributed string.
 
@@ -26,13 +27,14 @@ mutating func append(_ s: some AttributedStringProtocol)
 
 ## See Also
 
-- [static func + (AttributedString, AttributedString) -> AttributedString](attributedstring/+(_:_:)-8sbsq.md)
+### Combining Attributed Strings
+- [static func + (AttributedString, AttributedString) -> AttributedString](./plus%28_,_%29-8sbsq.md)
   Concatenates two attributed strings.
-- [static func + (AttributedString, some AttributedStringProtocol) -> AttributedString](attributedstring/+(_:_:)-drfc.md)
+- [static func + (AttributedString, some AttributedStringProtocol) -> AttributedString](./plus%28_,_%29-drfc.md)
   Concatenates two attributed strings or substrings.
-- [static func += (inout AttributedString, AttributedString)](attributedstring/+=(_:_:)-4dk88.md)
+- [static func += (inout AttributedString, AttributedString)](./pluseq%28_,_%29-4dk88.md)
   Appends an attributed string to another attributed string.
-- [static func += (inout AttributedString, some AttributedStringProtocol)](attributedstring/+=(_:_:)-6yimu.md)
+- [static func += (inout AttributedString, some AttributedStringProtocol)](./pluseq%28_,_%29-6yimu.md)
   Appends an attributed string or substring to another attributed string.
 
 

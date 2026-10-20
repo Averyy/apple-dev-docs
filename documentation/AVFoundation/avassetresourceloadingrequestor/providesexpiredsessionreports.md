@@ -1,7 +1,8 @@
 # providesExpiredSessionReports
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the requestor provides expired session reports.
 
@@ -19,9 +20,14 @@ A Boolean value that indicates whether the requestor provides expired session re
 var providesExpiredSessionReports: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL providesExpiredSessionReports;
+```
+
 ## See Also
 
-- [class AVContentKeySession](avcontentkeysession.md)
+### Related Documentation
+- [class AVContentKeySession](../avcontentkeysession.md)
   An object that creates and tracks decryption keys for media data.
 
 

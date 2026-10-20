@@ -1,7 +1,8 @@
 # visualEffect3D(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies effects to this view, while providing access to layout information through a 3D geometry proxy.
 
@@ -36,11 +37,12 @@ ContentView()
 
 ## See Also
 
-- [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](view/visualeffect(_:).md)
+### Applying effects based on geometry
+- [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](./visualeffect%28_%29.md)
   Applies effects to this view, while providing access to layout information through a geometry proxy.
-- [protocol VisualEffect](visualeffect.md)
+- [protocol VisualEffect](../visualeffect.md)
   Visual Effects change the visual appearance of a view without changing its ancestors or descendents.
-- [struct EmptyVisualEffect](emptyvisualeffect.md)
+- [struct EmptyVisualEffect](../emptyvisualeffect.md)
   The base visual effect that you apply additional effect to.
 
 

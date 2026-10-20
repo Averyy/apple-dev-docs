@@ -1,14 +1,15 @@
 # proc_orig_ppidversion
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 int proc_orig_ppidversion(proc_t);
 ```
 

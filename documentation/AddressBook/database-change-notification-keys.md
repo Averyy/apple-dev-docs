@@ -1,22 +1,24 @@
 # Database change notification keys
 
-**Framework**: Address Book
+**Framework**: Address Book  
+**Role**: API Collection
 
 Keys contained by the user-info dictionary of the notifications posted by the Address Book framework.
 
 ## Topics
 
 ### Constants
-- [let kABInsertedRecords: String](kabinsertedrecords.md)
+- [let kABInsertedRecords: String](./kabinsertedrecords.md)
   Records that have been inserted.
-- [let kABUpdatedRecords: String](kabupdatedrecords.md)
+- [let kABUpdatedRecords: String](./kabupdatedrecords.md)
   Records that have been updated.
-- [let kABDeletedRecords: String](kabdeletedrecords.md)
+- [let kABDeletedRecords: String](./kabdeletedrecords.md)
   Records that have been deleted.
 
 ## See Also
 
-- [Errors](1529225-errors.md)
+### Constants
+- [Errors](./api-1529225-errors.md)
   Errors codes returned by the Address Book Framework.
 
 

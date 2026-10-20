@@ -1,7 +1,8 @@
 # horizontalAccuracy
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of uncertainty for the location, measured in meters.
 
@@ -20,6 +21,10 @@ The radius of uncertainty for the location, measured in meters.
 var horizontalAccuracy: CLLocationAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationAccuracy horizontalAccuracy;
+```
+
 #### Discussion
 
 The location’s latitude and longitude identify the center of the circle, and this value indicates the radius of that circle. A negative value indicates that the latitude and longitude are invalid.
@@ -30,9 +35,10 @@ In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `a
 
 ## See Also
 
-- [var verticalAccuracy: CLLocationAccuracy](cllocation/verticalaccuracy.md)
+### Getting the location accuracy
+- [var verticalAccuracy: CLLocationAccuracy](./verticalaccuracy.md)
   The validity of the altitude values, and their estimated uncertainty, measured in meters.
-- [typealias CLLocationAccuracy](cllocationaccuracy.md)
+- [typealias CLLocationAccuracy](../cllocationaccuracy.md)
   The accuracy of a geographical coordinate.
 
 

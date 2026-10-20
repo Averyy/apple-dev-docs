@@ -1,9 +1,10 @@
 # normalizedTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-See [`normalizedTime`](animationstateprotocol/normalizedtime.md)
+See [`normalizedTime`](../animationstateprotocol/normalizedtime.md)
 
 **Availability**:
 - iOS 18.0+

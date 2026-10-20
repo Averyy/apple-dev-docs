@@ -1,7 +1,8 @@
 # insert(phraseCountGenerator:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a stream of samples to the body of training data.
 
@@ -29,9 +30,10 @@ This class accumulates text data that will later be used to train a language mod
 
 ## See Also
 
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](sfcustomlanguagemodeldata/templatephrasecountgenerator.md)
+### Adding parameterized sample data with a generator
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator](./templatephrasecountgenerator.md)
   A `PhraseCountGenerator` that produces `PhraseCount` values based on templates.
-- [SFCustomLanguageModelData.PhraseCountGenerator](sfcustomlanguagemodeldata/phrasecountgenerator.md)
+- [SFCustomLanguageModelData.PhraseCountGenerator](./phrasecountgenerator.md)
   Abstract base class defining the interface for classes that generate `PhraseCount` via an iterator.
 
 

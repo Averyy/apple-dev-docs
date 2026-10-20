@@ -1,7 +1,8 @@
 # OutputSpan.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents an initialized index in an `OutputSpan`.
 

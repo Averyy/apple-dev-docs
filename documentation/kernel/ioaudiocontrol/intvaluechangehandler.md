@@ -7,7 +7,7 @@ Handler function used to make a notification when a value is to be changed.
 
 ## Declaration
 
-```swift
+```c
 typedef IOReturn ( *IntValueChangeHandler)(
    OSObject *target,
    IOAudioControl *audioControl,
@@ -15,7 +15,7 @@ typedef IOReturn ( *IntValueChangeHandler)(
    SInt32 newValue);
 ```
 
-#### Return_value
+#### Return Value
 
 Must return kIOReturnSuccess when the hardware is successfully updated.
 

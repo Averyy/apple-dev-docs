@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an instance of the drop-while sequence iterator.
 
@@ -19,6 +20,8 @@ Creates an instance of the drop-while sequence iterator.
 ```swift
 func makeAsyncIterator() -> AsyncDropWhileSequence<Base>.Iterator
 ```
+
+Available when `Base` conforms to `AsyncSequence`.
 
 
 ---

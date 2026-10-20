@@ -1,12 +1,13 @@
 # CFXMLAttributeDeclarationInfo
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains information about an element attribute definition.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,49 +15,54 @@ Contains information about an element attribute definition.
 struct CFXMLAttributeDeclarationInfo
 ```
 
+```c
+typedef struct { ... } CFXMLAttributeDeclarationInfo;
+```
+
 #### Overview
 
-This structure is part of the definition of the [`CFXMLAttributeListDeclarationInfo`](cfxmlattributelistdeclarationinfo.md) structure.
+This structure is part of the definition of the [`CFXMLAttributeListDeclarationInfo`](./cfxmlattributelistdeclarationinfo.md) structure.
 
 ## Topics
 
 ### Initializers
-- [init()](cfxmlattributedeclarationinfo/init.md)
-- [init(attributeName: Unmanaged<CFString>!, typeString: Unmanaged<CFString>!, defaultString: Unmanaged<CFString>!)](cfxmlattributedeclarationinfo/init(attributename:typestring:defaultstring:).md)
+- [init()](./cfxmlattributedeclarationinfo/init%28%29.md)
+- [init(attributeName: Unmanaged<CFString>!, typeString: Unmanaged<CFString>!, defaultString: Unmanaged<CFString>!)](./cfxmlattributedeclarationinfo/init%28attributename,typestring,defaultstring%29.md)
 ### Instance Properties
-- [var attributeName: Unmanaged<CFString>!](cfxmlattributedeclarationinfo/attributename.md)
+- [var attributeName: Unmanaged<CFString>!](./cfxmlattributedeclarationinfo/attributename.md)
   The name of the attribute.
-- [var defaultString: Unmanaged<CFString>!](cfxmlattributedeclarationinfo/defaultstring.md)
+- [var defaultString: Unmanaged<CFString>!](./cfxmlattributedeclarationinfo/defaultstring.md)
   The attribute’s default value.
-- [var typeString: Unmanaged<CFString>!](cfxmlattributedeclarationinfo/typestring.md)
+- [var typeString: Unmanaged<CFString>!](./cfxmlattributedeclarationinfo/typestring.md)
   Describes the declaration of a single attribute.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CFXMLAttributeListDeclarationInfo](cfxmlattributelistdeclarationinfo.md)
+### Data Types
+- [struct CFXMLAttributeListDeclarationInfo](./cfxmlattributelistdeclarationinfo.md)
   Contains a list of the attributes associated with an element.
-- [struct CFXMLDocumentInfo](cfxmldocumentinfo.md)
+- [struct CFXMLDocumentInfo](./cfxmldocumentinfo.md)
   Contains the source URL and text encoding information for the XML document.
-- [struct CFXMLDocumentTypeInfo](cfxmldocumenttypeinfo.md)
+- [struct CFXMLDocumentTypeInfo](./cfxmldocumenttypeinfo.md)
   Contains the external ID of the DTD.
-- [struct CFXMLElementInfo](cfxmlelementinfo.md)
+- [struct CFXMLElementInfo](./cfxmlelementinfo.md)
   Contains a list of element attributes packaged as CFDictionary key/value pairs.
-- [struct CFXMLElementTypeDeclarationInfo](cfxmlelementtypedeclarationinfo.md)
+- [struct CFXMLElementTypeDeclarationInfo](./cfxmlelementtypedeclarationinfo.md)
   Contains a description of the element type.
-- [struct CFXMLEntityInfo](cfxmlentityinfo.md)
+- [struct CFXMLEntityInfo](./cfxmlentityinfo.md)
   Contains information describing an XML entity.
-- [struct CFXMLEntityReferenceInfo](cfxmlentityreferenceinfo.md)
+- [struct CFXMLEntityReferenceInfo](./cfxmlentityreferenceinfo.md)
   Contains information describing an XML entity reference.
-- [struct CFXMLExternalID](cfxmlexternalid.md)
+- [struct CFXMLExternalID](./cfxmlexternalid.md)
   Contains the system and public IDs for an external entity reference.
-- [struct CFXMLNotationInfo](cfxmlnotationinfo.md)
+- [struct CFXMLNotationInfo](./cfxmlnotationinfo.md)
   Contains the external ID of the notation.
-- [struct CFXMLProcessingInstructionInfo](cfxmlprocessinginstructioninfo.md)
+- [struct CFXMLProcessingInstructionInfo](./cfxmlprocessinginstructioninfo.md)
   Contains the text of the processing instruction.
 
 

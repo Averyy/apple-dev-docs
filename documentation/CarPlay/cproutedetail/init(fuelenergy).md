@@ -1,7 +1,8 @@
 # init(fuelEnergy:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for fuel energy content.
 
@@ -14,6 +15,10 @@ Creates additional route information for fuel energy content.
 
 ```swift
 convenience init(fuelEnergy: Measurement<UnitEnergy>)
+```
+
+```objc
++ (instancetype) routeDetailWithFuelEnergy:(NSMeasurement<NSUnitEnergy *> *) fuelEnergy;
 ```
 
 #### Return Value
@@ -30,8 +35,10 @@ Hydrogen fuel cell vehicles often express fuel capacity in kilowatt-hours of ene
 
 ## Parameters
 
-- `fuelEnergy`: A measurement representing the fuel energy using @c NSUnitEnergy. Common units: - @c NSUnitEnergy.kilowattHours for hydrogen fuel cells
-- @c NSUnitEnergy.megajoules for alternative energy measurements
+- `fuelEnergy`: A measurement representing the fuel energy using @c NSUnitEnergy. Common units:
+
+  - @c NSUnitEnergy.kilowattHours for hydrogen fuel cells
+  - @c NSUnitEnergy.megajoules for alternative energy measurements
 
 
 ---

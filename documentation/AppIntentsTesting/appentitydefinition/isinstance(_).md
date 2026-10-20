@@ -1,7 +1,8 @@
 # isInstance(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates that the provided entity instance matches this entity definition’s type.
 

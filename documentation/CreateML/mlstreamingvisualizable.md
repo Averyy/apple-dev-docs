@@ -1,7 +1,8 @@
 # MLStreamingVisualizable
 
 **Framework**: Create ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A sequence of image visualizations for machine learning types.
 
@@ -17,20 +18,21 @@ protocol MLStreamingVisualizable : MLVisualizable
 ## Topics
 
 ### Seeing the next visualization
-- [var hasFinishedStreaming: Bool](mlstreamingvisualizable/hasfinishedstreaming.md)
+- [var hasFinishedStreaming: Bool](./mlstreamingvisualizable/hasfinishedstreaming.md)
   A Boolean value that indicates whether the stream has provided its final iteration.
-- [func nextIteration()](mlstreamingvisualizable/nextiteration.md)
+- [func nextIteration()](./mlstreamingvisualizable/nextiteration%28%29.md)
   Advances the visualization stream to the next iteration.
 
 ## Relationships
 
 ### Inherits From
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [MLVisualizable](mlvisualizable.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [MLVisualizable](./mlvisualizable.md)
 
 ## See Also
 
-- [protocol MLVisualizable](mlvisualizable.md)
+### Visualization protocols
+- [protocol MLVisualizable](./mlvisualizable.md)
   An image visualization of machine learning types.
 
 

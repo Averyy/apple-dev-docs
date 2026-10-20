@@ -1,7 +1,8 @@
 # NetServiceBrowserDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface a net service browser uses to inform a delegate about the state of service discovery.
 
@@ -19,36 +20,41 @@ The interface a net service browser uses to inform a delegate about the state of
 protocol NetServiceBrowserDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSNetServiceBrowserDelegate <NSObject>
+```
+
 #### Overview
 
-Delegates of [`NetServiceBrowser`](netservicebrowser.md) instances optionally implement these methods.
+Delegates of [`NetServiceBrowser`](./netservicebrowser.md) instances optionally implement these methods.
 
 ## Topics
 
 ### Using Network Service Browsers
-- [func netServiceBrowser(NetServiceBrowser, didFindDomain: String, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didfinddomain:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didFindDomain: String, moreComing: Bool)](./netservicebrowserdelegate/netservicebrowser%28_,didfinddomain,morecoming%29.md)
   Tells the delegate the sender found a domain.
-- [func netServiceBrowser(NetServiceBrowser, didRemoveDomain: String, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didremovedomain:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didRemoveDomain: String, moreComing: Bool)](./netservicebrowserdelegate/netservicebrowser%28_,didremovedomain,morecoming%29.md)
   Tells the delegate the a domain has disappeared or has become unavailable.
-- [func netServiceBrowser(NetServiceBrowser, didFind: NetService, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didfind:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didFind: NetService, moreComing: Bool)](./netservicebrowserdelegate/netservicebrowser%28_,didfind,morecoming%29.md)
   Tells the delegate the sender found a service.
-- [func netServiceBrowser(NetServiceBrowser, didRemove: NetService, moreComing: Bool)](netservicebrowserdelegate/netservicebrowser(_:didremove:morecoming:).md)
+- [func netServiceBrowser(NetServiceBrowser, didRemove: NetService, moreComing: Bool)](./netservicebrowserdelegate/netservicebrowser%28_,didremove,morecoming%29.md)
   Tells the delegate a service has disappeared or has become unavailable.
-- [func netServiceBrowserWillSearch(NetServiceBrowser)](netservicebrowserdelegate/netservicebrowserwillsearch(_:).md)
+- [func netServiceBrowserWillSearch(NetServiceBrowser)](./netservicebrowserdelegate/netservicebrowserwillsearch%28_%29.md)
   Tells the delegate that a search is commencing.
-- [func netServiceBrowser(NetServiceBrowser, didNotSearch: [String : NSNumber])](netservicebrowserdelegate/netservicebrowser(_:didnotsearch:).md)
+- [func netServiceBrowser(NetServiceBrowser, didNotSearch: [String : NSNumber])](./netservicebrowserdelegate/netservicebrowser%28_,didnotsearch%29.md)
   Tells the delegate that a search was not successful.
-- [func netServiceBrowserDidStopSearch(NetServiceBrowser)](netservicebrowserdelegate/netservicebrowserdidstopsearch(_:).md)
+- [func netServiceBrowserDidStopSearch(NetServiceBrowser)](./netservicebrowserdelegate/netservicebrowserdidstopsearch%28_%29.md)
   Tells the delegate that a search was stopped.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NetServiceBrowser](netservicebrowser.md)
+### Service Discovery
+- [class NetServiceBrowser](./netservicebrowser.md)
   A network service browser that finds published services on a network using multicast DNS.
 
 

@@ -1,7 +1,8 @@
 # DeviceActivityData.WebDomainActivity
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Activity data for a web domain.
 
@@ -19,23 +20,24 @@ struct WebDomainActivity
 ## Topics
 
 ### Identifying the web domain
-- [var webDomain: WebDomain](deviceactivitydata/webdomainactivity/webdomain.md)
+- [var webDomain: WebDomain](./webdomainactivity/webdomain.md)
   Access the web domain that accumulated the activity.
 ### Measuring activity
-- [var totalActivityDuration: TimeInterval](deviceactivitydata/webdomainactivity/totalactivityduration.md)
+- [var totalActivityDuration: TimeInterval](./webdomainactivity/totalactivityduration.md)
   Access the total activity time for this web domain.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [DeviceActivityData.ApplicationActivity](deviceactivitydata/applicationactivity.md)
+### Organizing activity by type
+- [DeviceActivityData.ApplicationActivity](./applicationactivity.md)
   Activity data for an application.
-- [DeviceActivityData.CategoryActivity](deviceactivitydata/categoryactivity.md)
+- [DeviceActivityData.CategoryActivity](./categoryactivity.md)
   Categorized representation of application and web domain activity.
 
 

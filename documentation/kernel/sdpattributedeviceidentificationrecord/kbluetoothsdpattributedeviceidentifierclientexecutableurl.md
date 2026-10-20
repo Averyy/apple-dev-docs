@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeDeviceIdentifierClientExecutableURL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeDeviceIdentifierClientExecutableURL = 0x000B
 ```
 

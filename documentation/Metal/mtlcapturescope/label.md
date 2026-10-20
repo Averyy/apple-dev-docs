@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that helps you identify the capture scope.
@@ -20,15 +21,20 @@ A string that helps you identify the capture scope.
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 #### Discussion
 
-Setting a capture scope’s label makes it easier to find in Xcode. See [`Creating and using custom capture scopes`](https://developer.apple.com/documentation/xcode/creating-and-using-custom-capture-scopes) for more information.
+Setting a capture scope’s label makes it easier to find in Xcode. See [Creating and using custom capture scopes](../../Xcode/creating-and-using-custom-capture-scopes.md) for more information.
 
 ## See Also
 
-- [var device: any MTLDevice](mtlcapturescope/device.md)
+### Identifying the capture scope
+- [var device: any MTLDevice](./device.md)
   The device object from which you created the capture scope.
-- [var commandQueue: (any MTLCommandQueue)?](mtlcapturescope/commandqueue.md)
+- [var commandQueue: (any MTLCommandQueue)?](./commandqueue.md)
   The command queue that this capture scope uses to limit which commands are recorded.
 
 

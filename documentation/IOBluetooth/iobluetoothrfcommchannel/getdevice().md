@@ -1,17 +1,22 @@
 # getDevice()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the Bluetooth Device that carries the rfcomm data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getDevice() -> IOBluetoothDevice!
+```
+
+```objc
+- (IOBluetoothDevice *) getDevice;
 ```
 
 #### Return Value

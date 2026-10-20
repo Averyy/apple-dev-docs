@@ -1,7 +1,8 @@
 # AudioFileStreamOpen(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates and opens a new audio file stream parser.
 
@@ -19,6 +20,10 @@ Creates and opens a new audio file stream parser.
 func AudioFileStreamOpen(_ inClientData: UnsafeMutableRawPointer?, _ inPropertyListenerProc: AudioFileStream_PropertyListenerProc, _ inPacketsProc: AudioFileStream_PacketsProc, _ inFileTypeHint: AudioFileTypeID, _ outAudioFileStream: UnsafeMutablePointer<AudioFileStreamID?>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileStreamOpen(void *inClientData, AudioFileStream_PropertyListenerProc inPropertyListenerProc, AudioFileStream_PacketsProc inPacketsProc, AudioFileTypeID inFileTypeHint, AudioFileStreamID*outAudioFileStream);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -26,20 +31,23 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inClientData`: A pointer to a value or structure to be passed to your callback functions.
-- `inPropertyListenerProc`: Your property-listener callback. Whenever the parser finds the value of a property in the data stream, it calls your property listener with the property ID. You can then call the [`AudioFileStreamGetPropertyInfo(_:_:_:_:)`](audiofilestreamgetpropertyinfo(_:_:_:_:).md) and [`AudioFileStreamGetProperty(_:_:_:_:)`](audiofilestreamgetproperty(_:_:_:_:).md) functions to get the value of the property.
+- `inPropertyListenerProc`: Your property-listener callback. Whenever the parser finds the value of a property in the data stream, it calls your property listener with the property ID. You can then call the [`AudioFileStreamGetPropertyInfo(_:_:_:_:)`](./audiofilestreamgetpropertyinfo%28_,_,_,_%29.md) and [`AudioFileStreamGetProperty(_:_:_:_:)`](./audiofilestreamgetproperty%28_,_,_,_%29.md) functions to get the value of the property.
 - `inPacketsProc`: Your audio-data callback. Whenever the parser finds audio data packets in the data stream, it passes the data to your audio-data callback.
-- `inFileTypeHint`: An audio file type hint. If the audio file stream that you intend to pass to the parser is of a type that the parser cannot easily or uniquely determine from the data (such as ADTS or AC3), you can use this parameter to indicate the type. Possible values are listed in the [`AudioFileTypeID`](audiofiletypeid.md) enumeration in [`Audio File Services`](audio-file-services.md). If you do not know the audio file type, pass `0`.
+- `inFileTypeHint`: An audio file type hint. If the audio file stream that you intend to pass to the parser is of a type that the parser cannot easily or uniquely determine from the data (such as ADTS or AC3), you can use this parameter to indicate the type. Possible values are listed in the [`AudioFileTypeID`](./audiofiletypeid.md) enumeration in [Audio File Services](./audio-file-services.md).
+
+  If you do not know the audio file type, pass `0`.
 - `outAudioFileStream`: On output, an opaque object representing the audio file stream parser. This object is referred to in this document as the audio file stream parser ID. You need to pass this ID in to other functions in the Audio File Stream API.
 
 ## See Also
 
-- [func AudioFileStreamGetPropertyInfo(AudioFileStreamID, AudioFileStreamPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](audiofilestreamgetpropertyinfo(_:_:_:_:).md)
+### Related Documentation
+- [func AudioFileStreamGetPropertyInfo(AudioFileStreamID, AudioFileStreamPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./audiofilestreamgetpropertyinfo%28_,_,_,_%29.md)
   Retrieves information about a property value.
-- [typealias AudioFileStream_PropertyListenerProc](audiofilestream_propertylistenerproc.md)
+- [typealias AudioFileStream_PropertyListenerProc](./audiofilestream_propertylistenerproc.md)
   Invoked by an audio file stream parser when it finds a property value in the audio file stream.
-- [func AudioFileStreamGetProperty(AudioFileStreamID, AudioFileStreamPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilestreamgetproperty(_:_:_:_:).md)
+- [func AudioFileStreamGetProperty(AudioFileStreamID, AudioFileStreamPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilestreamgetproperty%28_,_,_,_%29.md)
   Retrieves the value of the specified property.
-- [typealias AudioFileStream_PacketsProc](audiofilestream_packetsproc.md)
+- [typealias AudioFileStream_PacketsProc](./audiofilestream_packetsproc.md)
   Invoked by an audio file stream parser when it finds audio data in the audio file stream.
 
 

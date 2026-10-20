@@ -1,7 +1,8 @@
 # kAXWindowsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of accessibility objects representing this application’s windows. This attribute is recommended for all application-level accessibility objects.
 
@@ -12,6 +13,10 @@ An array of accessibility objects representing this application’s windows. Thi
 
 ```swift
 var kAXWindowsAttribute: String { get }
+```
+
+```c
+#define kAXWindowsAttribute
 ```
 
 

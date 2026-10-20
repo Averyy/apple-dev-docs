@@ -1,7 +1,8 @@
 # widgetFieldType
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of widget annotation, such as button, choice, or text.
 
@@ -10,7 +11,7 @@ The type of widget annotation, such as button, choice, or text.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,25 +20,30 @@ The type of widget annotation, such as button, choice, or text.
 var widgetFieldType: PDFAnnotationWidgetSubtype { get set }
 ```
 
+```objc
+@property (nonatomic, copy) PDFAnnotationWidgetSubtype widgetFieldType;
+```
+
 ## Mentions
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+- [Adding Widgets to a PDF Document](../adding-widgets-to-a-pdf-document.md)
 
 ## See Also
 
-- [var widgetStringValue: String?](pdfannotation/widgetstringvalue.md)
+### Configuring Widget Annotations
+- [var widgetStringValue: String?](./widgetstringvalue.md)
   The string value of the widget annotation.
-- [var widgetDefaultStringValue: String?](pdfannotation/widgetdefaultstringvalue.md)
+- [var widgetDefaultStringValue: String?](./widgetdefaultstringvalue.md)
   The string value that the widget reverts to when performing a reset form action.
-- [var fieldName: String?](pdfannotation/fieldname.md)
+- [var fieldName: String?](./fieldname.md)
   The widget identifier for form annotation actions and behaviors.
-- [var backgroundColor: UIColor?](pdfannotation/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The color of the widget’s background.
-- [var isReadOnly: Bool](pdfannotation/isreadonly.md)
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that determines whether the widget is editable.
-- [enum PDFWidgetControlType](pdfwidgetcontroltype.md)
+- [enum PDFWidgetControlType](../pdfwidgetcontroltype.md)
   The types of annotation buttons.
-- [class PDFAppearanceCharacteristics](pdfappearancecharacteristics.md)
+- [class PDFAppearanceCharacteristics](../pdfappearancecharacteristics.md)
   An object that represents appearance characteristics of a widget annotation.
 
 

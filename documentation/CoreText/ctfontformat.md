@@ -1,18 +1,19 @@
 # CTFontFormat
 
 **Framework**: Core Text  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The recognized format of the font.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,47 +21,53 @@ The recognized format of the font.
 enum CTFontFormat
 ```
 
+```c
+enum CTFontFormat : uint32_t;
+```
+
 #### Overview
 
-Use the values of this enumeration for [`kCTFontFormatAttribute`](kctfontformatattribute.md).
+Use the values of this enumeration for [`kCTFontFormatAttribute`](./kctfontformatattribute.md).
 
 ## Topics
 
 ### Font Formats
-- [CTFontFormat.unrecognized](ctfontformat/unrecognized.md)
+- [CTFontFormat.unrecognized](./ctfontformat/unrecognized.md)
   The font is not a recognized format.
-- [CTFontFormat.openTypePostScript](ctfontformat/opentypepostscript.md)
+- [CTFontFormat.openTypePostScript](./ctfontformat/opentypepostscript.md)
   The font is an OpenType format containing PostScript data.
-- [CTFontFormat.openTypeTrueType](ctfontformat/opentypetruetype.md)
+- [CTFontFormat.openTypeTrueType](./ctfontformat/opentypetruetype.md)
   The font is an OpenType format containing TrueType data.
-- [CTFontFormat.trueType](ctfontformat/truetype.md)
+- [CTFontFormat.trueType](./ctfontformat/truetype.md)
   The font is a recognized TrueType format.
-- [CTFontFormat.postScript](ctfontformat/postscript.md)
+- [CTFontFormat.postScript](./ctfontformat/postscript.md)
   The font is a recognized PostScript format.
-- [CTFontFormat.bitmap](ctfontformat/bitmap.md)
+- [CTFontFormat.bitmap](./ctfontformat/bitmap.md)
   The font is a bitmap-only format.
 ### Initializers
-- [init?(rawValue: UInt32)](ctfontformat/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./ctfontformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let kCTFontFormatAttribute: CFString](kctfontformatattribute.md)
+### Related Documentation
+- [let kCTFontFormatAttribute: CFString](./kctfontformatattribute.md)
   The recognized format of the font.
-- [Font Attributes](font-attributes.md)
+### Accessing Font Attributes
+- [Font Attributes](./font-attributes.md)
   The keys for accessing font attributes from a font descriptor.
-- [enum CTFontOrientation](ctfontorientation.md)
+- [enum CTFontOrientation](./ctfontorientation.md)
   The intended rendering orientation of the font for obtaining glyph metrics.
-- [typealias CTFontPriority](ctfontpriority.md)
+- [typealias CTFontPriority](./ctfontpriority.md)
   The priority of font descriptors when resolving duplicates and sorting match results.
 
 

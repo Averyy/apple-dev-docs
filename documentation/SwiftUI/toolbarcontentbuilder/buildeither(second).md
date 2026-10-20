@@ -1,7 +1,8 @@
 # buildEither(second:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -18,13 +19,20 @@
 static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent> where TrueContent : CustomizableToolbarContent, FalseContent : CustomizableToolbarContent
 ```
 
+**Other overloads**:
+
+```swift
+static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent> where TrueContent : ToolbarContent, FalseContent : ToolbarContent
+```
+
 ## See Also
 
-- [static buildIf(_:)](toolbarcontentbuilder/buildif(_:).md)
-- [static buildEither(first:)](toolbarcontentbuilder/buildeither(first:).md)
-- [static buildExpression(_:)](toolbarcontentbuilder/buildexpression(_:).md)
+### Building conditional toolbar content
+- [static buildIf(_:)](./buildif%28_%29.md)
+- [static buildEither(first:)](./buildeither%28first%29.md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static buildLimitedAvailability(_:)](toolbarcontentbuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./buildlimitedavailability%28_%29.md)
 
 
 ---

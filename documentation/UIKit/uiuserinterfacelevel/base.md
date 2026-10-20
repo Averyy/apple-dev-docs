@@ -1,7 +1,8 @@
 # UIUserInterfaceLevel.base
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The level for your window’s main content.
 
@@ -17,11 +18,16 @@ The level for your window’s main content.
 case base
 ```
 
+```c
+UIUserInterfaceLevelBase
+```
+
 ## See Also
 
-- [UIUserInterfaceLevel.unspecified](uiuserinterfacelevel/unspecified.md)
+### Interface levels
+- [UIUserInterfaceLevel.unspecified](./unspecified.md)
   An unspecified interface level.
-- [UIUserInterfaceLevel.elevated](uiuserinterfacelevel/elevated.md)
+- [UIUserInterfaceLevel.elevated](./elevated.md)
   The level for content visually above your window’s main content.
 
 

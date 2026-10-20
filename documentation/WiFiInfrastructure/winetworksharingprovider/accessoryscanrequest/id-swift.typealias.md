@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.AccessoryScanRequest.ID
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of value that uniquely identifies this scan request.
 
@@ -18,7 +19,8 @@ typealias ID = UInt64
 
 ## See Also
 
-- [var id: WINetworkSharingProvider.AccessoryScanRequest.ID](winetworksharingprovider/accessoryscanrequest/id-swift.property.md)
+### Identifying a scan request
+- [var id: WINetworkSharingProvider.AccessoryScanRequest.ID](./id-swift.property.md)
   A stable identifier that uniquely identifies this scan request.
 
 
